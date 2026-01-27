@@ -1,0 +1,4 @@
+.env.local
+temp_code
+output
+auth.json

@@ -1,0 +1,3 @@
+;/*FB_PKG_DELIM*/
+
+__d("IgProfileActionFalcoEvent",["FalcoLoggerInternal","getFalcoLogPolicy_DO_NOT_USE"],(function(t,n,r,o,a,i,l){"use strict";var e=r("getFalcoLogPolicy_DO_NOT_USE")("5612"),s=o("FalcoLoggerInternal").create("ig_profile_action",e),u=s;l.default=u}),98);
