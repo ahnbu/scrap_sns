@@ -348,7 +348,6 @@ def run():
         def process_network_post(post):
             nonlocal stop_code_found  # 외부 변수 수정 가능하도록
             if not post: return
-            pk = post.get("pk")
             code = post.get("code")
             
             # ⛔ UPDATE ONLY 모드: stop_codes 중 하나 발견 시 중단
@@ -358,7 +357,7 @@ def run():
                 return
             
             # 이미 수집된 목록에 있는지 확인 (중복 방지)
-            if any(p['pk'] == pk for p in collected_data):
+            if any(p['code'] == code for p in collected_data):
                 return
 
             user = post.get("user", {})
@@ -372,7 +371,6 @@ def run():
                  images.append(post.get("video_versions", [{}])[0].get("url", ""))
 
             post_info = {
-                "pk": pk,
                 "code": post.get("code"),
                 "username": user.get("username"),
                 "text": caption.get("text") if caption else "",
@@ -437,7 +435,6 @@ def run():
                                     images.append(src)
 
                             post_info = {
-                                "pk": f"dom_{code}",
                                 "code": code,
                                 "username": username,
                                 "text": cleaned_text,
