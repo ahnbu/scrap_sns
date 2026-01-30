@@ -65,222 +65,227 @@ async function main() {
     // Wait for content to load
     await page.waitForSelector('div[data-pressable-container="true"]', { timeout: 10000 }).catch(() => console.log('Timeout waiting for selector, proceeding anyway.'));
 
-    // improved scraping logic
-    const items = await page.evaluate(() => {
-        function cleanText(rawText, username) {
-            let lines = rawText.split('\n');
-            const cleanedLines = [];
+    const TARGET_COUNT = 30;
+    let collectedItems = new Map();
+    let noNewItemsCount = 0;
+    const MAX_NO_NEW_ITEMS = 5;
 
-            // 1. Remove username from the first line if present
-            if (lines.length > 0 && lines[0].trim() === username) {
-                lines.shift();
+    // --- [Sweet Spot] 네트워크 패킷 캡처 핸들러 추가 ---
+    page.on('response', async (response) => {
+        const url = response.url();
+        if (url.includes('graphql/query')) {
+            try {
+                const json = await response.json();
+                const edges = json.data?.xdt_text_app_viewer?.saved_media?.edges || 
+                              json.data?.viewer?.saved_media?.edges || [];
+                
+                if (edges.length > 0) {
+                    console.log(`[Network] Detected ${edges.length} items from packet!`);
+                    edges.forEach(edge => {
+                        const post = edge.node;
+                        const code = post.code;
+                        if (code && !collectedItems.has(code)) {
+                            const username = post.user?.username || 'Unknown';
+                            const fullText = post.caption?.text || '';
+                            const images = post.image_versions2?.candidates?.map(c => c.url) || [];
+                            
+                            // 원본 데이터가 비디오인 경우 추가
+                            if (post.video_versions && post.video_versions.length > 0) {
+                                images.push(post.video_versions[0].url);
+                            }
+
+                            collectedItems.set(code, {
+                                code,
+                                username,
+                                time_text: new Date(post.taken_at * 1000).toISOString().split('T')[0],
+                                post_url: `https://www.threads.net/@${username}/post/${code}`,
+                                images: [...new Set(images)],
+                                full_text: fullText,
+                                source: 'packet'
+                            });
+                        }
+                    });
+                }
+            } catch (e) {
+                // GraphQL 응답이 JSON이 아니거나 파싱 실패 시 무시
             }
+        }
+    });
+    // ------------------------------------------------
 
-            const datePatterns = [
-                /^\d+시간$/, /^\d+분$/, /^\d+일$/,
-                /^\d{4}-\d{2}-\d{2}$/, /^\d+주$/,
-                /^AI Threads$/, /^수정됨$/
-            ];
+    console.log(`Starting collection. Target: ${TARGET_COUNT} items (Packet + DOM).`);
 
-            let isBodyStarted = false;
+    while (collectedItems.size < TARGET_COUNT && noNewItemsCount < MAX_NO_NEW_ITEMS) {
+        const currentBatch = await page.evaluate(() => {
+            const posts = [];
+            const articleElements = document.querySelectorAll('div[data-pressable-container="true"]');
+            
+            articleElements.forEach((el) => {
+                // 1. Username Extraction
+                let username = 'Unknown';
+                const userLink = el.querySelector('a[href^="/@"]');
+                if (userLink) {
+                     username = userLink.innerText.split('\n')[0];
+                } else {
+                    const userElement = el.querySelector('h2') || el.querySelector('span[style*="font-weight: 600"]');
+                    if (userElement) username = userElement.innerText;
+                }
 
-            for (let i = 0; i < lines.length; i++) {
-                let line = lines[i].trim();
-                // Skip empty lines
-                if (!line) continue;
+                // 2. Post Link & Timestamp
+                let postUrl = '';
+                let timeText = '';
+                const postLinks = Array.from(el.querySelectorAll('a[href*="/post/"]'));
+                if (postLinks.length > 0) {
+                    postUrl = postLinks[0].href;
+                    timeText = postLinks[0].innerText;
+                }
 
-                let isMetadata = false;
-                for (const pattern of datePatterns) {
-                    if (pattern.test(line)) {
-                        isMetadata = true;
-                        break;
+                // 3. Images and Media
+                const images = [];
+                const imgTags = el.querySelectorAll('img');
+                imgTags.forEach(img => {
+                    if (img.alt && img.alt.includes('Profile picture')) return;
+                    if (img.clientWidth > 50 && img.clientHeight > 50) {
+                        images.push(img.src);
+                    }
+                });
+
+                // 4. Date Conversion Logic
+                function convertRelativeDate(text) {
+                    if (!text) return '';
+                    const now = new Date();
+                    if (text.includes('시간') || text.includes('분')) {
+                        return now.toISOString().split('T')[0];
+                    }
+                    const dayMatch = text.match(/(\d+)일/);
+                    if (dayMatch) {
+                        const days = parseInt(dayMatch[1], 10);
+                        const targetDate = new Date(now);
+                        targetDate.setDate(now.getDate() - days);
+                        return targetDate.toISOString().split('T')[0];
+                    }
+                    const weekMatch = text.match(/(\d+)주/);
+                    if (weekMatch) {
+                        const weeks = parseInt(weekMatch[1], 10);
+                        const targetDate = new Date(now);
+                        targetDate.setDate(now.getDate() - (weeks * 7));
+                        return targetDate.toISOString().split('T')[0];
+                    }
+                    return text;
+                }
+
+                const formattedDate = convertRelativeDate(timeText);
+
+                // 5. Full Text cleaning
+                const rawText = el.innerText;
+                let lines = rawText.split('\n').map(l => l.trim()).filter(l => l);
+
+                if (username === 'Unknown' || username === '') {
+                    if (lines.length > 0) username = lines[0];
+                }
+
+                const cleanedLines = [];
+                const datePatterns = [
+                    /^\d+시간$/, /^\d+분$/, /^\d+일$/, /^\d+주$/, /^\d+년$/,
+                    /^\d{4}-\d{2}-\d{2}$/,
+                    /^AI Threads$/, /^수정됨$/
+                ];
+
+                let isBodyStarted = false;
+                let startIndex = 0;
+                if (lines.length > 0 && lines[0] === username) {
+                    startIndex = 1;
+                }
+
+                for (let i = startIndex; i < lines.length; i++) {
+                    let line = lines[i];
+                    let isMetadata = false;
+                    for (const pattern of datePatterns) {
+                        if (pattern.test(line)) {
+                            isMetadata = true;
+                            break;
+                        }
+                    }
+                    if (!isBodyStarted && isMetadata) continue;
+                    if (!isMetadata) isBodyStarted = true;
+                    if (isBodyStarted) {
+                        if (/^\d+$/.test(line) || /^\d+\/\d+$/.test(line)) continue;
+                        if (line === '더 보기' || line === 'See more') continue;
+                        cleanedLines.push(line);
+                    }
+                }
+                
+                const fullText = cleanedLines.join('\n');
+
+                let code = '';
+                if (postUrl) {
+                    const parts = postUrl.split('/post/');
+                    if (parts.length > 1) {
+                        code = parts[1].split('/')[0].split('?')[0];
                     }
                 }
 
-                // If body hasn't started and this is metadata, skip it
-                if (!isBodyStarted && isMetadata) continue;
-                
-                // If body hasn't started and this is NOT metadata, start body
-                if (!isBodyStarted && !isMetadata) isBodyStarted = true;
-
-                if (isBodyStarted) {
-                    // Skip page numbers (e.g., "1", "1/4") or simple counters
-                    if (/^\d+$/.test(line) || /^\d+\/\d+$/.test(line)) continue;
-                    cleanedLines.push(line);
+                if (code) {
+                    posts.push({
+                        code,
+                        username,
+                        time_text: formattedDate,
+                        post_url: postUrl,
+                        images,
+                        full_text: fullText,
+                        source: 'dom'
+                    });
                 }
+            });
+            return posts;
+        });
+
+        let addedInThisBatch = 0;
+        for (const item of currentBatch) {
+            if (!collectedItems.has(item.code)) {
+                collectedItems.set(item.code, item);
+                addedInThisBatch++;
             }
-            return cleanedLines.join('\n').trim();
         }
 
-        const posts = [];
-        // Threads uses 'div[data-pressable-container="true"]' for the clickable area of posts
-        const articleElements = document.querySelectorAll('div[data-pressable-container="true"]');
-        
-        articleElements.forEach((el, index) => {
-            if (index >= 5) return; // Limit to 5
-            
-            // 1. Username Extraction
-            // Look for the profile link which starts with /@
-            let username = 'Unknown';
-            const userLink = el.querySelector('a[href^="/@"]');
-            if (userLink) {
-                 // The text sometimes contains the ID and name, take the first line or specific span
-                 username = userLink.innerText.split('\n')[0];
-            } else {
-                // Fallback: look for h2 or bold text
-                const userElement = el.querySelector('h2') || el.querySelector('span[style*="font-weight: 600"]');
-                if (userElement) username = userElement.innerText;
-            }
+        console.log(`Current items: ${collectedItems.size}/${TARGET_COUNT} (+${addedInThisBatch} new)`);
 
-            // 2. Post Link & Timestamp
-            // The timestamp is usually a link to the post itself (contains /post/)
-            let postUrl = '';
-            let timeText = '';
-            // Find links that contain /post/ and are NOT inside the quoted post (if any)
-            const postLinks = Array.from(el.querySelectorAll('a[href*="/post/"]'));
-            if (postLinks.length > 0) {
-                // The first time link is usually the post's own link
-                postUrl = postLinks[0].href;
-                timeText = postLinks[0].innerText;
-            }
+        if (addedInThisBatch === 0) {
+            noNewItemsCount++;
+            console.log(`No new items found. (${noNewItemsCount}/${MAX_NO_NEW_ITEMS})`);
+        } else {
+            noNewItemsCount = 0;
+        }
 
-            // 3. Images and Media
-            const images = [];
-            const imgTags = el.querySelectorAll('img');
-            imgTags.forEach(img => {
-                // Filter out small icons or likely profile pictures (heuristic: typically small or square with specific classes)
-                // Threads images in posts are usually larger. Let's capture likely content images.
-                // Profile pics often have alt text like "Profile picture of..."
-                if (img.alt && img.alt.includes('Profile picture')) return;
-                if (img.clientWidth > 50 && img.clientHeight > 50) {
-                    images.push(img.src);
-                }
-            });
+        if (collectedItems.size >= TARGET_COUNT) break;
 
-            // 4. Full Text cleaning & Username extraction fallback
-            const rawText = el.innerText;
-            let lines = rawText.split('\n').map(l => l.trim()).filter(l => l);
-
-            // If username wasn't found via selector, take the first line
-            if (username === 'Unknown' || username === '') {
-                if (lines.length > 0) {
-                    username = lines[0];
-                }
-            }
-
-            // Date Conversion Logic
-            function convertRelativeDate(text) {
-                if (!text) return '';
-                const now = new Date();
-                
-                // Hours or Minutes -> Today
-                if (text.includes('시간') || text.includes('분')) {
-                    return now.toISOString().split('T')[0];
-                }
-                
-                // Days -> Subtract days
-                const dayMatch = text.match(/(\d+)일/);
-                if (dayMatch) {
-                    const days = parseInt(dayMatch[1], 10);
-                    const targetDate = new Date(now);
-                    targetDate.setDate(now.getDate() - days);
-                    return targetDate.toISOString().split('T')[0];
-                }
-
-                // Weeks -> Subtract weeks * 7
-                const weekMatch = text.match(/(\d+)주/);
-                if (weekMatch) {
-                    const weeks = parseInt(weekMatch[1], 10);
-                    const targetDate = new Date(now);
-                    targetDate.setDate(now.getDate() - (weeks * 7));
-                    return targetDate.toISOString().split('T')[0];
-                }
-
-                return text;
-            }
-
-            const formattedDate = convertRelativeDate(timeText);
-
-            // Cleaning Logic
-
-            // Cleaning Logic
-            const cleanedLines = [];
-            const datePatterns = [
-                /^\d+시간$/, /^\d+분$/, /^\d+일$/, /^\d+주$/, /^\d+년$/,
-                /^\d{4}-\d{2}-\d{2}$/,
-                /^AI Threads$/, /^수정됨$/
-            ];
-
-            let isBodyStarted = false;
-            
-            // Skip the first line if it matches the username (it usually does)
-            let startIndex = 0;
-            if (lines.length > 0 && lines[0] === username) {
-                startIndex = 1;
-            }
-
-            for (let i = startIndex; i < lines.length; i++) {
-                let line = lines[i];
-                
-                let isMetadata = false;
-                for (const pattern of datePatterns) {
-                    if (pattern.test(line)) {
-                        isMetadata = true;
-                        break;
-                    }
-                }
-
-                // Skip metadata before body starts
-                if (!isBodyStarted && isMetadata) continue;
-                
-                // If it's not metadata, body has started
-                if (!isMetadata) isBodyStarted = true;
-
-                if (isBodyStarted) {
-                    // Skip counters and page numbers
-                    if (/^\d+$/.test(line) || /^\d+\/\d+$/.test(line)) continue;
-                    // Skip "See more" or "더 보기" text often found at the end
-                    if (line === '더 보기' || line === 'See more') continue;
-                    
-                    cleanedLines.push(line);
-                }
-            }
-            
-            const fullText = cleanedLines.join('\n');
-
-            // Extract code from postUrl
-            let code = '';
-            if (postUrl) {
-                const parts = postUrl.split('/post/');
-                if (parts.length > 1) {
-                    code = parts[1].split('/')[0].split('?')[0];
-                }
-            }
-
-            posts.push({
-                index: index + 1,
-                code,
-                username,
-                time_text: formattedDate,
-                post_url: postUrl,
-                images,
-                full_text: fullText
-            });
+        // Scroll down to load more content
+        console.log('Scrolling down...');
+        await page.evaluate(() => {
+            window.scrollBy(0, window.innerHeight * 2);
         });
-        return posts;
-    });
+        
+        // Wait for potential network requests and DOM updates
+        await page.waitForTimeout(3000);
+    }
 
-    console.log('--- Scraped Items ---');
-    console.log(JSON.stringify(items, null, 2));
+    const finalItems = Array.from(collectedItems.values()).slice(0, TARGET_COUNT).map((item, idx) => ({
+        index: idx + 1,
+        ...item
+    }));
+
+    console.log(`--- Finished! Collected ${finalItems.length} items ---`);
     
     // Save to file
-    fs.writeFileSync('output2/scraped_items_playwriter.json', JSON.stringify(items, null, 2));
+    if (!fs.existsSync('output2')) {
+        fs.mkdirSync('output2');
+    }
+    fs.writeFileSync('output2/scraped_items_playwriter.json', JSON.stringify(finalItems, null, 2));
     console.log('Saved to output2/scraped_items_playwriter.json');
 
   } catch (error) {
     console.error('Error:', error);
   } finally {
-    // Don't close the browser!
     server.close();
     console.log('Relay Server Closed.');
     process.exit(0); 
