@@ -1,0 +1,305 @@
+{
+    "metadata": {
+        "version": "1.0",
+        "crawled_at": "2026-01-30T17:50:19.398313",
+        "total_count": 18,
+        "max_sequence_id": 18,
+        "first_code": "DUGJxoEkbWv",
+        "last_code": null,
+        "crawl_mode": "update only",
+        "legacy_data_count": 0,
+        "verified_data_count": 18,
+        "merge_history": []
+    },
+    "posts": [
+        {
+            "code": "DUGJxoEkbWv",
+            "username": "planum.one",
+            "like_count": -1,
+            "reply_count": -1,
+            "repost_count": -1,
+            "quote_count": -1,
+            "posted_at": null,
+            "images": [],
+            "source": "initial_dom",
+            "sequence_id": 18,
+            "crawled_at": "2026-01-30T17:49:45.555019",
+            "full_text": "클로드 코드\n19시간\nClaude Code 장기 기억 시스템 구축하기\n문제: AI의 \"단기기억 상실\"\nClaude Code는 세션이 끝나면 모든 컨텍스트를 잃습니다.\n- 어제 뭘 했는지 모름\n- 프로젝트 구조를 처음부터 다시 탐색\n- 같은 실수 반복\n긴 프로젝트에서 매번 \"지난번에 우리 뭐 했었는데...\"라고 설명하는 건 비효율적입니다.\n👌 해결책은?\n2파일 인수인계 시스템!\n프로젝트/\n├── handoff.md     ← 현재 상태 (200줄 이하)\n└── CHANGELOG.md   ← 과거 히스토리 (무제한)\nhandoff.md = 단기 기억\n- 현재 버전, 빌드 상태, URL\n- 최근 1-2개 작업 요약\n- 알려진 이슈\n- 다음 TODO\nCHANGELOG.md = 장기 기억\n- 날짜별 모든 변경 이력\n- 의사결정 배경\n- 삭제된 기능 히스토리\n---\n핵심: 자동화 규칙 설정\n~/.claude/CLAUDE.md (전역 설정)에 추가:\n# 작업 인수인계 규칙\n## 세션 시작 시 (필수)\nhandoff.md가 있으면 **반드시 먼저 읽기**\n## 세션 종료 시 (필수)\n작업 완료 시 **자동으로** handoff.md 업데이트\n- ❌ \"업데이트할까요?\" 질문 금지\n- ❌ 사용자 요청까지 대기 금지\n## handoff.md 구조 (200줄 이하)\n- 현재 상태\n- 최근 작업 1-2개\n- 알려진 이슈\n- TODO\n## CHANGELOG.md\n- 과거 히스토리는 여기에 누적\n- handoff는 항상 간결하게\n---\n왜 200줄 제한인가?\n실제 경험:\n- 내 handoff.md가 1,700줄까지 커짐\n- Claude가 읽다가 토큰 한도 초과로 실패\n- 정작 필요한 \"현재 상태\"를 찾으려면 스크롤 필요\n해결 후:\n- 60줄로 축소\n- 세션 시작 시 즉시 컨텍스트 파악\n- 과거 이력 필요하면 CHANGELOG 참조\n---\n실제 효과\nBefore:\n나: \"어제 작업 이어서 해줘\"\nClaude: \"어떤 작업이었나요?\"\n나: \"렌더링 진행률 버그...\"\nClaude: \"파일 위치가 어디죠?\"\n(5분간 컨텍스트 설명)\nAfter:\n나: \"어제 작업 이어서 해줘\"\nClaude: (handoff.md 읽음)\nClaude: \"렌더링 진행률 수정 작업이군요.\nroute.ts에서 0-1을 0-100으로 변환하는\n부분 계속하겠습니다.\"\n(즉시 작업 시작)\n---\n추가 팁\n1. 프로젝트별 CLAUDE.md도 활용\n- 기술 스택, 컨벤션, 배포 규칙 등\n- handoff와 역할 분리\n2. TODO는 handoff에만\n- 별도 TODO.md 만들지 말 것\n- 파편화되면 관리 어려움\n3. 버전 번호 기록\n- handoff에 현재 버전 명시\n- CHANGELOG에 버전별 구분\n---\nAI 에이전트도 결국 문서화가 생명입니다.\n사람 팀원에게 인수인계하듯, Claude에게도 잘 정리된 문서를 넘겨주세요.\n더 보기",
+            "post_url": "https://www.threads.net/@planum.one/post/DUGJxoEkbWv"
+        },
+        {
+            "code": "DUGCUWLCUFc",
+            "username": "slowsoyang",
+            "like_count": -1,
+            "reply_count": -1,
+            "repost_count": -1,
+            "quote_count": -1,
+            "posted_at": null,
+            "images": [
+                "https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/625033874_17912305671279062_533169754929075828_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTgzNHgxMDI0LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QE-qVdxul3Mv4cEMiQm0qZ9bx03HvIZRjdl09m98T1BPlVDKrapGnEU-hsyLidKKLI&_nc_ohc=aqnOAu9l24YQ7kNvwFJJJu8&_nc_gid=b7KLEmMWRjnM3wBVMu84Jw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMDc1MTUyODE2MDQ3NzUzMg%3D%3D.3-ccb7-5&oh=00_AfpWhAyiR1XBN_j0lbZlJDPF8zzcuEjTzLoXJDW645_i2Q&oe=69823A39&_nc_sid=10d13b"
+            ],
+            "source": "initial_dom",
+            "sequence_id": 17,
+            "crawled_at": "2026-01-30T17:49:45.555019",
+            "full_text": "난 요즘 이게 정말 궁금했어.\n처음에 안티그래비티 쓸 때는\n신박한 놀랍고, 재밌고, 긍정적인 생각 뿐이었는데\n옵시디언에 노션까지 잘 연결해서 쓰던 어느날,\n노션이 안되더라구. n8n 연결도 안되고.\n안티그래비티는 계속 \"가능하다. 된다.\",\n\"이렇게 해보자. 저렇게 해보자.\" 그러는데,\n갑자기\n정신이 번쩍 들더라.\n/",
+            "post_url": "https://www.threads.net/@slowsoyang/post/DUGCUWLCUFc"
+        },
+        {
+            "code": "DUDz4LoDyoB",
+            "username": "builder.inkeun",
+            "like_count": -1,
+            "reply_count": -1,
+            "repost_count": -1,
+            "quote_count": -1,
+            "posted_at": null,
+            "images": [
+                "https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/622501197_17941465695107400_5502790498560722459_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNDk2eDE2NC5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QE-qVdxul3Mv4cEMiQm0qZ9bx03HvIZRjdl09m98T1BPlVDKrapGnEU-hsyLidKKLI&_nc_ohc=t3ct4FX532cQ7kNvwG7vopj&_nc_gid=b7KLEmMWRjnM3wBVMu84Jw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMDEyNTA3MDA4NjMxODU5Mw%3D%3D.3-ccb7-5&oh=00_Afq9QXIHfinEsrIh_zpA81FCQ000lYaCRO802ZdfIXnu0w&oe=69823167&_nc_sid=10d13b"
+            ],
+            "source": "initial_dom",
+            "sequence_id": 16,
+            "crawled_at": "2026-01-30T17:49:45.555019",
+            "full_text": "드디어 평생 풀지 못한 숙제를 해결했다.\n클로드 갓코드..",
+            "post_url": "https://www.threads.net/@builder.inkeun/post/DUDz4LoDyoB"
+        },
+        {
+            "code": "DUFFc5Tkb5E",
+            "username": "je0_1229",
+            "like_count": -1,
+            "reply_count": -1,
+            "repost_count": -1,
+            "quote_count": -1,
+            "posted_at": null,
+            "images": [],
+            "source": "initial_dom",
+            "sequence_id": 15,
+            "crawled_at": "2026-01-30T17:49:45.555019",
+            "full_text": "강사이야기\n1일\n혹시 아래 주제로 출강하고 있는 강사님들 있어?\n- 구글 AI로 프레젠테이션 만들기\n- Google Workspace 교육\n- 바이브코딩 (with Google AI Studio)\n출강하는 방법에 대한 세미나를 열 계획인데 댓글에 \"구글\"이라고 남기면 세미나 참여하는 법 알려줄게\n/",
+            "post_url": "https://www.threads.net/@je0_1229/post/DUFFc5Tkb5E"
+        },
+        {
+            "code": "DUCgoCoE_bt",
+            "username": "jinsimcode",
+            "like_count": -1,
+            "reply_count": -1,
+            "repost_count": -1,
+            "quote_count": -1,
+            "posted_at": null,
+            "images": [],
+            "source": "initial_dom",
+            "sequence_id": 14,
+            "crawled_at": "2026-01-30T17:49:45.555019",
+            "full_text": "바이브 코딩으로 웹 만들때 쓰는 개사기 조합\n1. Agentation 크롬익스텐션\n2. opencode 연동\n3. Playwriter 크롬익스텐션 (playwight 아님, 용어주의!)\n4. 웹 디자인 용어 복붙 사이트\n제발 이 조합을 사용해봐라. \"제발\"\n자세한 설명 댓글\n/",
+            "post_url": "https://www.threads.net/@jinsimcode/post/DUCgoCoE_bt"
+        },
+        {
+            "code": "DUDvQcJkoSP",
+            "username": "gyeol_hh",
+            "like_count": -1,
+            "reply_count": -1,
+            "repost_count": -1,
+            "quote_count": -1,
+            "posted_at": null,
+            "images": [
+                "https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/623298323_17936646063119810_5273506464574487056_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMjE2MHgxMTE4LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QE-qVdxul3Mv4cEMiQm0qZ9bx03HvIZRjdl09m98T1BPlVDKrapGnEU-hsyLidKKLI&_nc_ohc=xc2pBA7KrGIQ7kNvwH0J02Y&_nc_gid=b7KLEmMWRjnM3wBVMu84Jw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMDEwNDc0MTg5NzI4NDc0Nw%3D%3D.3-ccb7-5&oh=00_Afozs5gOusBPcRjxn-nhWG3VliHW8l5GzeiR5G5DIRJXYA&oe=69825885&_nc_sid=10d13b",
+                "https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/622770612_17936646510119810_3867461567510352954_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMzcyeDEwMi5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QE-qVdxul3Mv4cEMiQm0qZ9bx03HvIZRjdl09m98T1BPlVDKrapGnEU-hsyLidKKLI&_nc_ohc=iuO2nagsIYEQ7kNvwH_at1M&_nc_gid=b7KLEmMWRjnM3wBVMu84Jw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMDEwNDc0MTMxMDA1Mjk3NA%3D%3D.3-ccb7-5&oh=00_AfotZw6Tpaac8D-toUtsv87iDEZDOVkyAN08lj2KBemmOw&oe=6982350D&_nc_sid=10d13b"
+            ],
+            "source": "initial_dom",
+            "sequence_id": 13,
+            "crawled_at": "2026-01-30T17:49:45.555019",
+            "full_text": "AI에게 브라우저 조작시킬때 Playwright MCP말고\nPlaywriter MCP를 써!!\n연말정산도 클로드 코드한테 시켜버리자고~~~\n/",
+            "post_url": "https://www.threads.net/@gyeol_hh/post/DUDvQcJkoSP"
+        },
+        {
+            "code": "DUDRj9ugTab",
+            "username": "1228229y",
+            "like_count": -1,
+            "reply_count": -1,
+            "repost_count": -1,
+            "quote_count": -1,
+            "posted_at": null,
+            "images": [
+                "https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/622647668_17856475521603176_4561169787725884767_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTY3OHgxNDQwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QE-qVdxul3Mv4cEMiQm0qZ9bx03HvIZRjdl09m98T1BPlVDKrapGnEU-hsyLidKKLI&_nc_ohc=GUhtMXJcJFoQ7kNvwGvpDOW&_nc_gid=b7KLEmMWRjnM3wBVMu84Jw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxOTk3NDE0NzE5MTE1ODQyNw%3D%3D.3-ccb7-5&oh=00_AfojCj0yUThxEl_P6thXY41WLEF1Yivy1KeAgjULsQCmug&oe=69824663&_nc_sid=10d13b"
+            ],
+            "source": "initial_dom",
+            "sequence_id": 12,
+            "crawled_at": "2026-01-30T17:49:45.555019",
+            "full_text": "요즘 인기있는 모든 MCP 가 모아져있는 사이트!\n저장해두고 참고해보세요✅\n1️⃣TrendRadar : 35개 플랫폼 트렌드 실시간 수집\n예: \"요즘 AI 분야 핫한 주제 뭐야?\"\n2️⃣Context7 : 최신 문서/코드 예제 자동 검색\n예: \"React 19 새 기능 알려줘\"\n3️⃣MindsDB : DB에 AI 기능 추가\n예: \"이 데이터로 예측 모델 만들어줘\"\n4️⃣Superpowers : 코딩 에이전트 종합 툴킷\n파일 수정, 터미널 실행 등 올인원\n5️⃣GitHub : 깃허브 완전 자동화\n예: \"이번 주 버그 이슈 정리해줘\"\n/",
+            "post_url": "https://www.threads.net/@1228229y/post/DUDRj9ugTab"
+        },
+        {
+            "code": "DS4TktPD6BP",
+            "username": "eddmpython",
+            "like_count": -1,
+            "reply_count": -1,
+            "repost_count": -1,
+            "quote_count": -1,
+            "posted_at": null,
+            "images": [],
+            "source": "initial_dom",
+            "sequence_id": 11,
+            "crawled_at": "2026-01-30T17:49:45.555019",
+            "full_text": "@gpt_minje님에게 남긴 답글\n선생님께선 이미 능력자에 활용을 잘하시니\n벡터임베딩 + llm RAG방향으로 가보시죠 ㅎㅎ\n데이터 스크래핑 잘하시나요?\nhttp요청 뿐만아니라 데이터 모으는 자동화는 많이 있죠\n1. requests, httpx같은 호출형\n2. pydoll, selenium, playwrite같은 브라우저형\n3. botasaurus, browser-use같은 AI브라우저형\n다양하게 이용해보세요 그렇게 모은 비정형데이터를 모으고 정리하는걸 txt에 하면 정리가 힘듭니다.\n이런 데이터는 sql보다 pandas나 polars를 추천드립니다. contents컬럼에 비정형데이터를 밀어넣고 메타정보는 다른 컬럼에 넣는거죠! 이걸 parquet에 저장하고 폴더로 잘 관리하세요! 원본데이터입니다.\nlancedb는 이렇게 정리된 parquet을 읽어서 벡터화해줍니다. GPU가 없다면 colab노트북을 이용해보세요 무료에서도 쓸만합니다.\n그다음은 llm붙이는거죠!!!!! ㅎㅎㅎㅎ 마음에 드실지",
+            "post_url": "https://www.threads.net/@eddmpython/post/DS4TktPD6BP"
+        },
+        {
+            "code": "DUCrNqMk8vz",
+            "username": "jinsimcode",
+            "like_count": -1,
+            "reply_count": -1,
+            "repost_count": -1,
+            "quote_count": -1,
+            "posted_at": null,
+            "images": [],
+            "source": "initial_dom",
+            "sequence_id": 10,
+            "crawled_at": "2026-01-30T17:49:45.555019",
+            "full_text": "AI에게 브라우저 조작시킬때 필수적으로 알아야하는 것.\nPlaywright, Claude Code 확장프로그램을 쓰지 말기.\nPlaywriter를 쓰기.\n[ Playwright MCP ]\n매번 새 브라우저 창을 띄우므로, 로그인 필요한 사이트 접속시 매번 로그인 할 필요.\n[ Playwriter MCP ]\n내가 쓰고있는 브라우저 바로 이용. 이미 로그인 된 사이트는 즉시 사용가능\n[ Claude Code 확장 ]\n스크린샷을 통해 원하는 X,Y 좌표계산 하여 동작. 잘못클릭 되는 경우 많음. 창을 조금만 움직여도 클릭안됨. 반응형 웹 디자인은 진짜 어려움\n[ Playwriter MCP ]\n웹 내부 태그 이용 선택. 원하는 요소를 아주 정확하게 선택, 조작가능.\n/",
+            "post_url": "https://www.threads.net/@jinsimcode/post/DUCrNqMk8vz"
+        },
+        {
+            "code": "DUC8laUCQ5M",
+            "username": "hinjiroffffff",
+            "like_count": -1,
+            "reply_count": -1,
+            "repost_count": -1,
+            "quote_count": -1,
+            "posted_at": null,
+            "images": [
+                "https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/624413375_1522558482147037_6868524356227679958_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDM3Ni5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QE-qVdxul3Mv4cEMiQm0qZ9bx03HvIZRjdl09m98T1BPlVDKrapGnEU-hsyLidKKLI&_nc_ohc=q47Aph7bATQQ7kNvwHQswED&_nc_gid=b7KLEmMWRjnM3wBVMu84Jw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxOTg4MTg4NzYyODMzMjYyMA%3D%3D.3-ccb7-5&oh=00_AfrRg0Ew8yzXKdT8vnINqtcQ3riBEZ6MoNmIyT3Gvmyp_w&oe=69825373&_nc_sid=10d13b"
+            ],
+            "source": "initial_dom",
+            "sequence_id": 9,
+            "crawled_at": "2026-01-30T17:49:45.555019",
+            "full_text": "유튜브 영상 링크를 첨부하면\nGemini가 초 단위로 영상을 분석하고 피드백합니다.\n유튜브 전문 컨설턴트를 고용한 것 같았어요.\n유튜버가 바로 써먹을 수 있는 프롬프트를 정리했습니다.\n/",
+            "post_url": "https://www.threads.net/@hinjiroffffff/post/DUC8laUCQ5M"
+        },
+        {
+            "code": "DUAmX2YkSSm",
+            "username": "lazypencil_lab",
+            "like_count": -1,
+            "reply_count": -1,
+            "repost_count": -1,
+            "quote_count": -1,
+            "posted_at": null,
+            "images": [
+                "https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/622833762_17851049256623170_7248693224818511512_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTI4MHg3MjAuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QE-qVdxul3Mv4cEMiQm0qZ9bx03HvIZRjdl09m98T1BPlVDKrapGnEU-hsyLidKKLI&_nc_ohc=xdwALA3zQeEQ7kNvwHU_WP3&_nc_gid=b7KLEmMWRjnM3wBVMu84Jw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxOTIyMTI0ODcxOTc5MTI3MA%3D%3D.3-ccb7-5&oh=00_AfqU3OANZRiIhxJ5EuZlpbeG6-I04m3dP9Xv5aH4lJWBLA&oe=698231F3&_nc_sid=10d13b"
+            ],
+            "source": "initial_dom",
+            "sequence_id": 8,
+            "crawled_at": "2026-01-30T17:49:45.555019",
+            "full_text": "\"제미나이 + 노트북LM으로 고퀄리티 PPT 10분컷\"\n강의 영상 만들다 보면\n꼭 필요한 게 슬라이드 화면입니다.\n녹음·촬영·편집하기도 바쁜데\n슬라이드까지 직접 만들기엔 도저히 시간이 없습니다.\n이제, 슬라이드 직접 만들지 마세요.\n구글의 노트북 LM + 재미나이 조합이면 10분이면 끝납니다.\n주제만 AI에게 던지면\n자료 조사 → 구조 → 디자인까지 자동.\n외주 맡기면 몇십만 원 나올 퀄리티를\n무료로 바로 뽑아줍니다.\n저처럼 디자인 감각 없는 사람도\n바로 따라 할 수 있게,\n노트북 LM·재미나이 사용법을\n4단계로 정리했습니다.\n/",
+            "post_url": "https://www.threads.net/@lazypencil_lab/post/DUAmX2YkSSm"
+        },
+        {
+            "code": "DUAvS3CkiXu",
+            "username": "itszoejeong",
+            "like_count": -1,
+            "reply_count": -1,
+            "repost_count": -1,
+            "quote_count": -1,
+            "posted_at": null,
+            "images": [],
+            "source": "initial_dom",
+            "sequence_id": 7,
+            "crawled_at": "2026-01-30T17:49:45.555019",
+            "full_text": "@lazypencil_lab님에게 남긴 답글\n노트북lm에서 만든 슬라이드가 압도적으로 예쁘고 구성도 인포그래픽도 논리도 좋은데.. 하 이거 어떻게 섞어 쓸 방도가 없을까요",
+            "post_url": "https://www.threads.net/@itszoejeong/post/DUAvS3CkiXu"
+        },
+        {
+            "code": "DUBeqaViJkN",
+            "username": "iamdrtk",
+            "like_count": -1,
+            "reply_count": -1,
+            "repost_count": -1,
+            "quote_count": -1,
+            "posted_at": null,
+            "images": [],
+            "source": "initial_dom",
+            "sequence_id": 6,
+            "crawled_at": "2026-01-30T17:49:45.555019",
+            "full_text": "@ai.winey_ny님에게 남긴 답글\n공유해 주신 노션 local MCP 설치하고 나도 뭔가 해보고 싶어서 Obsidian MCP를 만들었습니다.\n[Claude AI로 옵시디언 노트 읽고 쓰기]\n옵시디언에 ai을 연결해 사용하고 싶었는데 남들이 만든건 모두 과금 API를 사용하는 방법들 뿐이라 포기했다가..\n되는 것:\n✅ 노트 검색 (제목 + 내용 전체)\n✅ 노트 생성/수정/삭제\n✅ 태그 관리\n✅ 폴더 탐색\n필요한 것:\n- Obsidian 앱 (당연히)\n- Claude Desktop 앱\n- Python 3.10 이상\n- 터미널 조금 만질 줄 알면 됨\n설치:\n터미널에서 3줄이면 끝\ngit clone github.com/drtkn…\ncd obsidian-mcp\nuv sync\n그 다음 Claude Desktop 설정 파일에 경로 추가하면 됨\n(자세한 건 GitHub README 참고)\ngithub.com/drtkn…\ngithub.com\nGitHub - drtknoh-sudo/obsidian-mcp: MCP server for Obsidian - full read/write access to your vault",
+            "post_url": "https://www.threads.net/@iamdrtk/post/DUBeqaViJkN"
+        },
+        {
+            "code": "DT-VHfnEshJ",
+            "username": "ai.winey_ny",
+            "like_count": -1,
+            "reply_count": -1,
+            "repost_count": -1,
+            "quote_count": -1,
+            "posted_at": null,
+            "images": [
+                "https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/621182938_17923722858215877_3568766855420601921_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uODg4eDc3OS5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QE-qVdxul3Mv4cEMiQm0qZ9bx03HvIZRjdl09m98T1BPlVDKrapGnEU-hsyLidKKLI&_nc_ohc=IUDTk66JYS8Q7kNvwHtZrql&_nc_gid=b7KLEmMWRjnM3wBVMu84Jw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxODU4MjQwODAxMTM2ODUyMQ%3D%3D.3-ccb7-5&oh=00_AfrHdzuXNibr6uqk51wWFRAIX9thzRHf3ACG-n-1cK1FhQ&oe=69825A72&_nc_sid=10d13b"
+            ],
+            "source": "initial_dom",
+            "sequence_id": 5,
+            "crawled_at": "2026-01-30T17:49:45.555019",
+            "full_text": "API 토큰 없이 Notion 2만 페이지를 4.8초만에 읽었습니다 🤯\n노션 많이 쓰시는 분들은 저장해두고 담에 꼭 따라해보세요.\nNotion MCP 쓸 때마다 토큰 엄청 먹어서\n스트레스 받는 분들 많죠?\n저도 그랬는데, 로컬 캐시로 우회했어요.\n🔥 노션에 로컬캐시가 있는 이유\nNotion 데스크톱 앱은 오프라인 지원을 위해\n로컬 SQLite 데이터베이스를 유지해요.\n(오프라인에서도 최근 본 페이지에 접근 가능하게 하기 위함)\n매번 노션 페이지를 읽고 탐색하며 토큰을 왕창 쓰는 방식이 아닌\n로컬의 캐시를 읽는 MCP 서버를 만들었습니다.\n👏 결과:\n- API 호출 0\n- Rate limit 없음\n- 오프라인에서도 동작\n- 2만 페이지 로드 4.8초\n설치 방법은 댓글에 남겨뒀어요\n/",
+            "post_url": "https://www.threads.net/@ai.winey_ny/post/DT-VHfnEshJ"
+        },
+        {
+            "code": "DUALirekrKe",
+            "username": "freainer",
+            "like_count": -1,
+            "reply_count": -1,
+            "repost_count": -1,
+            "quote_count": -1,
+            "posted_at": null,
+            "images": [
+                "https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/622001042_17914961028268077_2492664739367294999_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTI4MHg3MjAuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QE-qVdxul3Mv4cEMiQm0qZ9bx03HvIZRjdl09m98T1BPlVDKrapGnEU-hsyLidKKLI&_nc_ohc=Q_DDVw45Bo0Q7kNvwGc0jLz&_nc_gid=b7KLEmMWRjnM3wBVMu84Jw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxOTEwMzI0NTY2Nzg0MDY3MA%3D%3D.3-ccb7-5&oh=00_AfoQZ77OENDp1XLUI5iLP2W5ZL9gyhFBfayGotizVIgABA&oe=69822F84&_nc_sid=10d13b"
+            ],
+            "source": "initial_dom",
+            "sequence_id": 4,
+            "crawled_at": "2026-01-30T17:49:45.555019",
+            "full_text": "클로드 쓰는 콘텐츠 크리에이터라면 이 MCP 5개는 알아야 합니다.\nClaude나 Cursor 쓰면서 MCP 안 쓰고 있다면?\n생산성 50% 이상 낭비 중입니다.\n1️⃣ FireSEO\n→ SEO 분석을 대화로: \"이 키워드 경쟁 분석해줘\"\n→ Semrush/Ahrefs 대비 1/10 가격 ($29/월)\n→ 키워드 리서치, SERP 분석, 경쟁사 분석 한번에\n2️⃣ Notion MCP (공식)\n→ \"오늘 블로그 아이디어 정리해줘\" → 자동 페이지 생성\n→ 콘텐츠 캘린더 자동 관리\n3️⃣ WordPress MCP\n→ \"이 글 SEO 최적화해서 발행해줘\" → 끝\n→ 메타 태그, 카테고리, 태그 자동 설정\n4️⃣ Canva MCP (공식)\n→ \"인스타 배너 3종 만들어줘\" → AI가 디자인 생성\n→ 템플릿 자동 채우기, 리사이즈\n→ 대량 썸네일 제작에 최고\n5️⃣ ElevenLabs MCP (공식)\n→ 블로그 → 팟캐스트 변환\n→ TTS, 보이스 클로닝\n링크는 댓글에\n/",
+            "post_url": "https://www.threads.net/@freainer/post/DUALirekrKe"
+        },
+        {
+            "code": "DUAlKDLD9rN",
+            "username": "gimminseog67",
+            "like_count": -1,
+            "reply_count": -1,
+            "repost_count": -1,
+            "quote_count": -1,
+            "posted_at": null,
+            "images": [
+                "https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/621665002_17871928404521221_2024189751116162218_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTc5Mng0MzAuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QE-qVdxul3Mv4cEMiQm0qZ9bx03HvIZRjdl09m98T1BPlVDKrapGnEU-hsyLidKKLI&_nc_ohc=hjIvq44hODsQ7kNvwGX_vAd&_nc_gid=b7KLEmMWRjnM3wBVMu84Jw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxOTIxNTkwMjMzMjY3MjcxNw%3D%3D.3-ccb7-5&oh=00_Afrv3sMFeqnp1uBxSAzTwQYM3Ad1naQx83ABhhQ9p0x1wQ&oe=69823421&_nc_sid=10d13b"
+            ],
+            "source": "initial_dom",
+            "sequence_id": 3,
+            "crawled_at": "2026-01-30T17:49:45.555019",
+            "full_text": "github.com/affaa…\n클로드 코드 해커톤 우승자의 레시피라고 합니다. 구글 Antigravity 용으로 개조해서 사용하니까, 오류가 상당히 줄어드네요...!",
+            "post_url": "https://www.threads.net/@gimminseog67/post/DUAlKDLD9rN"
+        },
+        {
+            "code": "DT_mtLmk6ix",
+            "username": "ody_daddy",
+            "like_count": -1,
+            "reply_count": -1,
+            "repost_count": -1,
+            "quote_count": -1,
+            "posted_at": null,
+            "images": [],
+            "source": "initial_dom",
+            "sequence_id": 2,
+            "crawled_at": "2026-01-30T17:49:45.555019",
+            "full_text": "바이브코딩 Vibe coding\n3일\n출근길 쓰레드) 구글 Stitch로 회의 시간 반토막 내기.\n구글 Stitch가 Gemini 3.0을 먹더니 물이 올랐다.\n단순히 \"이런 UI 그려줘\" 수준이 아니라,\n기획-디자인-개발의 핑퐁 게임을 끝내는 도구로 진화함.\n최근 업데이트로 피그마 내보내기랑\n프론트엔드 코드 추출이 기가 막히게 좋아졌다.\n/\nblog.google\nBring your app ideas to life with Gemini 3 in Stitch.",
+            "post_url": "https://www.threads.net/@ody_daddy/post/DT_mtLmk6ix"
+        },
+        {
+            "code": null,
+            "username": null,
+            "like_count": 0,
+            "reply_count": 0,
+            "repost_count": 0,
+            "quote_count": 0,
+            "posted_at": null,
+            "images": [],
+            "source": "network",
+            "sequence_id": 1,
+            "crawled_at": "2026-01-30T17:49:45.555019",
+            "full_text": "",
+            "post_url": "https://www.threads.net/@None/post/None"
+        }
+    ]
+}

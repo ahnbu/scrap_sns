@@ -74,6 +74,15 @@ def clean_text(full_text, username):
 
     return "\n".join(cleaned_lines).strip()
 
+def format_timestamp(ts):
+    """Unix timestamp를 YYYY-MM-DD HH:MM:SS 형식과 YYYY-MM-DD 형식으로 변환"""
+    if not ts: return None, None
+    try:
+        dt = datetime.fromtimestamp(int(ts))
+        return dt.strftime('%Y-%m-%d %H:%M:%S'), dt.strftime('%Y-%m-%d')
+    except:
+        return None, None
+
 def find_latest_full_file():
     """output 폴더에서 최신 threads_py_full_*.json 파일 찾기"""
     pattern = f"{OUTPUT_DIR}/threads_py_full_*.json"
@@ -133,6 +142,20 @@ def update_full_version(new_data, stop_code, crawl_start_time):
             else:
                 # 레거시 구조 (배열만 있음)
                 existing_posts = existing_content
+            
+            # [필드명 변환] 레거시 필드명(text, url)을 새 필드명(full_text, post_url)으로 통일
+            for post in existing_posts:
+                if 'text' in post and 'full_text' not in post:
+                    post['full_text'] = post.pop('text')
+                if 'url' in post and 'post_url' not in post:
+                    post['post_url'] = post.pop('url')
+                
+                # [타임스탬프 변환] posted_at(unix ts) -> created_at, time_text
+                if 'posted_at' in post and not post.get('created_at'):
+                    ts = post.pop('posted_at')
+                    created_at, time_text = format_timestamp(ts)
+                    post['created_at'] = created_at
+                    post['time_text'] = time_text
         
         # 3. 기존 데이터의 code 집합 생성 및 최대 sequence_id 찾기
         existing_codes = {post['code'] for post in existing_posts}
@@ -331,28 +354,46 @@ def run():
                         json_data = response.json()
                         data_part = json_data.get("data", {})
                         if not data_part: return
+
+                        # 구조 1: edges 방식 (xdt_text_app_viewer)
                         viewer = data_part.get("xdt_text_app_viewer") or data_part.get("viewer")
-                        if not viewer: return
-                        saved_media = viewer.get("saved_media")
-                        if not saved_media: return
-                        edges = saved_media.get("edges", [])
-                        if edges:
-                            print(f"\n⚡ [네트워크 감지] 추가 데이터 {len(edges)}개 포착!")
-                            for edge in edges:
-                                # 목표 개수 체크
-                                if TARGET_LIMIT > 0 and len(collected_data) >= TARGET_LIMIT:
-                                    break
-                                node = edge.get("node", {})
-                                if node:
-                                    # JS 방식대로 node를 직접 처리 (thread_items 배열을 거치지 않음)
-                                    process_network_post(node)
+                        if viewer and viewer.get("saved_media"):
+                            edges = viewer["saved_media"].get("edges", [])
+                            if edges:
+                                for edge in edges:
+                                    if TARGET_LIMIT > 0 and len(collected_data) >= TARGET_LIMIT: break
+                                    node = edge.get("node", {})
+                                    if node: process_network_post(node)
+
+                        # 구조 2: sections 방식 (최신 JS 방식)
+                        saved_posts = data_part.get("text_post_app_user_saved_posts", {})
+                        sections = saved_posts.get("sections", [])
+                        if sections:
+                            for section in sections:
+                                items = section.get("items", [])
+                                for item in items:
+                                    if TARGET_LIMIT > 0 and len(collected_data) >= TARGET_LIMIT: break
+                                    thread_items = item.get("thread_items", [])
+                                    if thread_items:
+                                        post = thread_items[0].get("post", {})
+                                        if post: process_network_post(post)
                 except: pass
 
-        def process_network_post(post):
-            nonlocal stop_code_found  # 외부 변수 수정 가능하도록
-            if not post: return
-            code = post.get("code")
+        def process_network_post(node):
+            nonlocal stop_code_found
+            if not node: return
             
+            # 구조 파악: node 자체가 post인지, 아니면 thread_items를 포함한 껍데기인지 확인
+            post = node
+            if not post.get("code"):
+                thread_items = node.get("thread_items", [])
+                if thread_items:
+                    post = thread_items[0].get("post", {})
+            
+            code = post.get("code")
+            if not code:
+                return # 유효한 코드가 없으면 수집 대상이 아님
+
             # ⛔ UPDATE ONLY 모드: stop_codes 중 하나 발견 시 중단
             if stop_codes and code in stop_codes:
                 print(f"✋ 기준 게시물 발견! (code: {code}) - 크롤링 중단")
@@ -373,21 +414,30 @@ def run():
             if post.get("video_versions"):
                  images.append(post.get("video_versions", [{}])[0].get("url", ""))
 
+            created_at, time_text = format_timestamp(post.get("taken_at"))
+
             post_info = {
                 "code": post.get("code"),
                 "username": user.get("username"),
-                "text": caption.get("text") if caption else "",
+                "full_text": caption.get("text") if caption else "",
                 "like_count": post.get("like_count", 0),
                 "reply_count": extra_info.get("direct_reply_count", 0),
                 "repost_count": extra_info.get("repost_count", 0),
                 "quote_count": extra_info.get("quote_count", 0),
-                "posted_at": post.get("taken_at"),
-                "url": f"https://www.threads.net/@{user.get('username')}/post/{post.get('code')}",
+                "created_at": created_at,
+                "time_text": time_text,
+                "post_url": f"https://www.threads.net/@{user.get('username')}/post/{post.get('code')}",
                 "images": images,
                 "source": "network"
             }
+
+            # 유효성 검사: 텍스트가 없고 이미지도 제대로 없는 경우 제외
+            if not post_info['full_text'] and not any("http" in img and "null.jpg" not in img for img in post_info['images']):
+                return
+
             collected_data.append(post_info)
-            print(f"   + [Network] [{post_info['code']}] {post_info['text'][:15]}... (현재 {len(collected_data)}/{TARGET_LIMIT if TARGET_LIMIT else '무제한'})")
+            msg = post_info['full_text'].replace('\n', ' ')[:15]
+            print(f"   + [Network] [{post_info['code']}] {msg}... (현재 {len(collected_data)}/{TARGET_LIMIT if TARGET_LIMIT else '무제한'})")
 
         page.on("response", handle_response)
 
@@ -440,13 +490,14 @@ def run():
                             post_info = {
                                 "code": code,
                                 "username": username,
-                                "text": cleaned_text,
+                                "full_text": cleaned_text,
                                 "like_count": -1,
                                 "reply_count": -1,
                                 "repost_count": -1,
                                 "quote_count": -1,
-                                "posted_at": None,
-                                "url": f"https://www.threads.net{href}",
+                                "created_at": None,
+                                "time_text": None,
+                                "post_url": f"https://www.threads.net{href}",
                                 "images": list(set(images)),
                                 "source": "initial_dom"
                             }
@@ -582,13 +633,14 @@ def run():
 
         end_time_dt = datetime.now()
         duration = end_time_dt - start_time_dt
-        hours, remainder = divmod(int(duration.total_seconds()), 3600)
-        minutes, _ = divmod(remainder, 60)
+        total_seconds = int(duration.total_seconds())
+        hours, remainder = divmod(total_seconds, 3600)
+        minutes, seconds = divmod(remainder, 60)
 
         print("\n" + "="*40)
         print(f"시작시간 : {start_time_dt.strftime('%Y-%m-%d %H:%M:%S')}")
         print(f"종료시간 : {end_time_dt.strftime('%Y-%m-%d %H:%M:%S')}")
-        print(f"소요시간: {hours:02d}:{minutes:02d}")
+        print(f"소요시간: {hours:02d}:{minutes:02d}:{seconds:02d}")
         print("="*40)
 
 if __name__ == "__main__":

@@ -37,6 +37,25 @@ function updateFullVersion(newData, stopCode, crawlStartTime) {
       existingPosts = content; // 레거시
     }
 
+    // [필드명 변환] 레거시 필드명(text, url)을 새 필드명(full_text, post_url)으로 통일
+    existingPosts.forEach(post => {
+      if (post.text && !post.full_text) {
+        post.full_text = post.text;
+        delete post.text;
+      }
+      if (post.url && !post.post_url) {
+        post.post_url = post.url;
+        delete post.url;
+      }
+      // [타임스탬프 변환] posted_at(unix ts) -> created_at, time_text
+      if (post.posted_at && !post.created_at) {
+        const dt = new Date(post.posted_at * 1000);
+        post.created_at = dt.toISOString().replace('T', ' ').split('.')[0];
+        post.time_text = dt.toISOString().split('T')[0];
+        delete post.posted_at;
+      }
+    });
+
     // 레거시 sequence_id 부여
     const hasLegacy = existingPosts.some(p => !p.hasOwnProperty('sequence_id'));
     if (hasLegacy) {
@@ -225,7 +244,13 @@ async function main() {
                 if (edges.length > 0) {
                     console.log(`⚡ [네트워크 감지] 추가 데이터 ${edges.length}개 포착!`);
                     for (const edge of edges) {
-                        const post = edge.node;
+                        let post = edge.node;
+                        if (!post.code) {
+                            const threadItems = post.thread_items || [];
+                            if (threadItems.length > 0) {
+                                post = threadItems[0].post || {};
+                            }
+                        }
                         const code = post.code;
                         
                         if (code) {
@@ -246,10 +271,12 @@ async function main() {
                                     images.push(post.video_versions[0].url);
                                 }
 
+                                const post_dt = new Date(post.taken_at * 1000);
                                 collectedItems.set(code, {
                                     code,
                                     username,
-                                    time_text: new Date(post.taken_at * 1000).toISOString().split('T')[0],
+                                    created_at: post_dt.toISOString().replace('T', ' ').split('.')[0],
+                                    time_text: post_dt.toISOString().split('T')[0],
                                     post_url: `https://www.threads.net/@${username}/post/${code}`,
                                     images: [...new Set(images)],
                                     full_text: fullText,
@@ -477,8 +504,10 @@ async function main() {
   } finally {
     const endTimestamp = new Date();
     const durationMs = endTimestamp - startTimestamp;
-    const hours = Math.floor(durationMs / 3600000);
-    const minutes = Math.floor((durationMs % 3600000) / 60000);
+    const totalSeconds = Math.floor(durationMs / 1000);
+    const hours = Math.floor(totalSeconds / 3600);
+    const minutes = Math.floor((totalSeconds % 3600) / 60);
+    const seconds = totalSeconds % 60;
     
     const formatDate = (date) => {
         const y = date.getFullYear();
@@ -493,7 +522,7 @@ async function main() {
     console.log('\n' + '='.repeat(40));
     console.log(`시작시간 : ${formatDate(startTimestamp)}`);
     console.log(`종료시간 : ${formatDate(endTimestamp)}`);
-    console.log(`소요시간: ${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}`);
+    console.log(`소요시간: ${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`);
     console.log('='.repeat(40));
 
     server.close();
