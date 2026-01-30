@@ -23,7 +23,9 @@ load_dotenv('.env.local')
 # ===========================
 # ⚙️ 설정 (여기만 수정하세요)
 # ===========================
-OUTPUT_FILE = f"output/threads_saved_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+OUTPUT_DIR = "output_threads/python"
+# 수집 완료 후 저장될 파일명 (임시 - 증분 업데이트 파일)
+OUTPUT_FILE = f"{OUTPUT_DIR}/update/threads_py_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
 AUTH_FILE = "auth.json"
 THREADS_ID = os.getenv("THREADS_ID")
 THREADS_PW = os.getenv("THREADS_PW")
@@ -73,8 +75,8 @@ def clean_text(full_text, username):
     return "\n".join(cleaned_lines).strip()
 
 def find_latest_full_file():
-    """output 폴더에서 최신 threads_saved_full_*.json 파일 찾기"""
-    pattern = "output/threads_saved_full_*.json"
+    """output 폴더에서 최신 threads_py_full_*.json 파일 찾기"""
+    pattern = f"{OUTPUT_DIR}/threads_py_full_*.json"
     files = glob.glob(pattern)
     
     if not files:
@@ -100,7 +102,7 @@ def update_full_version(new_data, stop_code, crawl_start_time):
     오늘 날짜로 새로운 Full 파일 생성 (메타데이터 포함)
     """
     today = datetime.now().strftime('%Y%m%d')
-    today_full = f"output/threads_saved_full_{today}.json"
+    today_full = f"{OUTPUT_DIR}/threads_py_full_{today}.json"
     
     # 1. 오늘 날짜 Full 파일이 이미 있는지 확인
     if os.path.exists(today_full):
@@ -271,10 +273,11 @@ def manage_login(context, page):
         print("✅ 자동 로그인 성공!")
 
 def run():
+    start_time_dt = datetime.now()
     collected_data = []
     stop_codes = []  # 중단 기준 code 리스트
     stop_code_found = False  # 중단 플래그
-    crawl_start_time = datetime.now().isoformat()  # 크롤링 시작 시간
+    crawl_start_time = start_time_dt.isoformat()  # 크롤링 시작 시간
     
     # "update only" 모드: 최신 full 파일의 최상단 code 가져오기
     if CRAWL_MODE == "update only":
@@ -340,9 +343,9 @@ def run():
                                 if TARGET_LIMIT > 0 and len(collected_data) >= TARGET_LIMIT:
                                     break
                                 node = edge.get("node", {})
-                                thread_items = node.get("thread_items", [])
-                                if thread_items:
-                                    process_network_post(thread_items[0].get("post", {}))
+                                if node:
+                                    # JS 방식대로 node를 직접 처리 (thread_items 배열을 거치지 않음)
+                                    process_network_post(node)
                 except: pass
 
         def process_network_post(post):
@@ -537,7 +540,7 @@ def run():
             else:
                 # "all" 모드는 현재 결과를 새로운 full로 저장 (메타데이터 포함)
                 today = datetime.now().strftime('%Y%m%d')
-                full_filename = f"output/threads_saved_full_{today}.json"
+                full_filename = f"{OUTPUT_DIR}/threads_py_full_{today}.json"
                 os.makedirs(os.path.dirname(full_filename), exist_ok=True)
                 
                 # sequence_id와 crawled_at 부여 (역순)
@@ -576,6 +579,17 @@ def run():
             print("\n😭 수집된 데이터가 없습니다.")
 
         browser.close()
+
+        end_time_dt = datetime.now()
+        duration = end_time_dt - start_time_dt
+        hours, remainder = divmod(int(duration.total_seconds()), 3600)
+        minutes, _ = divmod(remainder, 60)
+
+        print("\n" + "="*40)
+        print(f"시작시간 : {start_time_dt.strftime('%Y-%m-%d %H:%M:%S')}")
+        print(f"종료시간 : {end_time_dt.strftime('%Y-%m-%d %H:%M:%S')}")
+        print(f"소요시간: {hours:02d}:{minutes:02d}")
+        print("="*40)
 
 if __name__ == "__main__":
     run()

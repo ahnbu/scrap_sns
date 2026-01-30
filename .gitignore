@@ -1,6 +1,6 @@
 .env.local
 temp_code
 tmp
-output
-output2
+output_threads
+output_threads_js
 auth.json
