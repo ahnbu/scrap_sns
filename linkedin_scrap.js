@@ -108,9 +108,10 @@ function saveFullFile(path, posts, history, startTime, mode) {
 async function main() {
   const startTimestamp = new Date();
   // Settings
-  const TARGET_LIMIT = 2; // Reduced for debugging
-  const CRAWL_MODE = "update only";
-  const MAX_NO_NEW_ITEMS = 5;
+  const TARGET_LIMIT = 30; // Reduced for debugging
+  // const CRAWL_MODE = "update only";  // all, update only
+  const CRAWL_MODE = "all";  // all, update only
+  const MAX_NO_NEW_ITEMS = 5; // 스크롤 최대 시도 횟수
 
   const crawlStartTime = new Date().toISOString();
   console.log('🚀 Relay 서버 시작 중...');
@@ -417,9 +418,16 @@ async function main() {
 
         if (stopCodeFound || (TARGET_LIMIT > 0 && collectedItems.size >= TARGET_LIMIT)) break;
 
-        console.log('⬇️ 스크롤 중...');
+        console.log('⬇️ 스크롤 및 다음 버튼 확인 중...');
         await page.evaluate(() => {
             window.scrollBy(0, window.innerHeight * 1.5);
+            
+            // "결과 더보기" 버튼 찾기 및 클릭 (LinkedIn 특정 UI 대응)
+            const loadMoreButton = document.querySelector('.scaffold-finite-scroll__load-button');
+            if (loadMoreButton && loadMoreButton.offsetParent !== null) { // 보이는 상태인지 확인
+                console.log('🔘 [Action] 결과 더보기 버튼 클릭');
+                loadMoreButton.click();
+            }
         });
         
         // Random usage simulation
