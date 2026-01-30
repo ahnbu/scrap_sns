@@ -272,7 +272,7 @@ def manage_login(context, page):
 
 def run():
     collected_data = []
-    stop_code = None  # 중단 기준 code
+    stop_codes = []  # 중단 기준 code 리스트
     stop_code_found = False  # 중단 플래그
     crawl_start_time = datetime.now().isoformat()  # 크롤링 시작 시간
     
@@ -292,8 +292,9 @@ def run():
                             posts = full_data
                         
                         if posts:
-                            stop_code = posts[0]['code']
-                            print(f"🔄 UPDATE ONLY 모드: '{stop_code}'까지만 수집합니다.")
+                            # 최신순 5개 추출 (삭제 방지용 징검다리 전략)
+                            stop_codes = [p['code'] for p in posts[:5]]
+                            print(f"🔄 UPDATE ONLY 모드: {stop_codes} 중 하나라도 발견 시 수집을 중단합니다.")
             except Exception as e:
                 print(f"⚠️ Full 파일 읽기 실패: {e}")
         else:
@@ -350,9 +351,9 @@ def run():
             pk = post.get("pk")
             code = post.get("code")
             
-            # ⛔ UPDATE ONLY 모드: stop_code 발견 시 중단
-            if stop_code and code == stop_code:
-                print(f"✋ 기준 게시물 발견! (code: {stop_code}) - 크롤링 중단")
+            # ⛔ UPDATE ONLY 모드: stop_codes 중 하나 발견 시 중단
+            if stop_codes and code in stop_codes:
+                print(f"✋ 기준 게시물 발견! (code: {code}) - 크롤링 중단")
                 stop_code_found = True
                 return
             
@@ -385,7 +386,7 @@ def run():
                 "source": "network"
             }
             collected_data.append(post_info)
-            print(f"   + [Network] {post_info['text'][:15]}... (현재 {len(collected_data)}/{TARGET_LIMIT if TARGET_LIMIT else '무제한'})")
+            print(f"   + [Network] [{post_info['code']}] {post_info['text'][:15]}... (현재 {len(collected_data)}/{TARGET_LIMIT if TARGET_LIMIT else '무제한'})")
 
         page.on("response", handle_response)
 
@@ -417,9 +418,9 @@ def run():
                             username = parts[1].replace('@', '')
                             code = parts[3].split('?')[0]
                             
-                            # ⛔ UPDATE ONLY 모드: stop_code 발견 시 중단
-                            if stop_code and code == stop_code:
-                                print(f"✋ 기준 게시물 발견! (code: {stop_code}) - DOM 스캔 중단")
+                            # ⛔ UPDATE ONLY 모드: stop_codes 중 하나 발견 시 중단
+                            if stop_codes and code in stop_codes:
+                                print(f"✋ 기준 게시물 발견! (code: {code}) - DOM 스캔 중단")
                                 stop_code_found = True
                                 break
                             
@@ -450,7 +451,7 @@ def run():
                                 "source": "initial_dom"
                             }
                             collected_data.append(post_info)
-                            print(f"   + [DOM] {cleaned_text.replace('\n', ' ')[:15]}... (현재 {len(collected_data)}/{TARGET_LIMIT if TARGET_LIMIT else '무제한'})")
+                            print(f"   + [DOM] [{code}] {cleaned_text.replace('\n', ' ')[:15]}... (현재 {len(collected_data)}/{TARGET_LIMIT if TARGET_LIMIT else '무제한'})")
                 except: continue
         except Exception as e:
             print(f"⚠️ DOM 스캔 오류: {e}")
@@ -532,7 +533,10 @@ def run():
             
             # [2] Full 버전 업데이트
             if CRAWL_MODE == "update only":
-                update_full_version(final_list, stop_code, crawl_start_time)
+                # 병합 로직에는 stop_codes 중 발견된 특정 코드를 전달할 수도 있으나, 
+                # 현재 update_full_version은 단순히 중복 제거 기반이므로 리스트의 첫 번째 요소를 대표로 전달
+                representative_stop = stop_codes[0] if stop_codes else None
+                update_full_version(final_list, representative_stop, crawl_start_time)
             else:
                 # "all" 모드는 현재 결과를 새로운 full로 저장 (메타데이터 포함)
                 today = datetime.now().strftime('%Y%m%d')
