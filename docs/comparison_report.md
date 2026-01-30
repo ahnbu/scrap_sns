@@ -1,0 +1,9 @@
+# Scraped Data Comparison Report
+
+| Code | Playwriter (New, Cleaned) | Legacy (Old, Raw) | Analysis |
+|---|---|---|---|
+| DUGJxoEkbWv | 클로드 코드<br>15시간<br>Claude Code 장기 기억 시스템 구축하기<br>문제: AI의 "단기기억 상실"<br>Claude Code는 세션이 끝나면 모든 컨텍스트를 잃습니다.<br>- 어제 뭘 했는지 모름<br>- 프로젝트 구조를 처음부터 다시 탐색<br>- 같은 실수 반복<br>긴 프로젝트에서 매번 "지난번에 우리 뭐 했었는데..."라고 설명... | 클로드 코드<br>14시간<br>Claude Code 장기 기억 시스템 구축하기<br>문제: AI의 "단기기억 상실"<br>Claude Code는 세션이 끝나면 모든 컨텍스트를 잃습니다.<br>- 어제 뭘 했는지 모름<br>- 프로젝트 구조를 처음부터 다시 탐색<br>- 같은 실수 반복<br>긴 프로젝트에서 매번 "지난번에 우리 뭐 했었는데..."라고 설명... | ❌ Mismatch (Len Diff: -5) |
+| DUGCUWLCUFc | 난 요즘 이게 정말 궁금했어.<br>처음에 안티그래비티 쓸 때는<br>신박한 놀랍고, 재밌고, 긍정적인 생각 뿐이었는데<br>옵시디언에 노션까지 잘 연결해서 쓰던 어느날,<br>노션이 안되더라구. n8n 연결도 안되고.<br>안티그래비티는 계속 "가능하다. 된다.",<br>"이렇게 해보자. 저렇게 해보자." 그러는데,<br>갑자기<br>정신이 번쩍 들더라.... | 난 요즘 이게 정말 궁금했어.<br>처음에 안티그래비티 쓸 때는<br>신박한 놀랍고, 재밌고, 긍정적인 생각 뿐이었는데<br>옵시디언에 노션까지 잘 연결해서 쓰던 어느날,<br>노션이 안되더라구. n8n 연결도 안되고.<br>안티그래비티는 계속 "가능하다. 된다.",<br>"이렇게 해보자. 저렇게 해보자." 그러는데,<br>갑자기<br>정신이 번쩍 들더라.... | ✅ Perfect Match |
+| DUDz4LoDyoB | 드디어 평생 풀지 못한 숙제를 해결했다.<br>클로드 갓코드.. | 드디어 평생 풀지 못한 숙제를 해결했다.<br>클로드 갓코드.. | ✅ Perfect Match |
+| DUFFc5Tkb5E | 강사이야기<br>1일<br>혹시 아래 주제로 출강하고 있는 강사님들 있어?<br>- 구글 AI로 프레젠테이션 만들기<br>- Google Workspace 교육<br>- 바이브코딩 (with Google AI Studio)<br>출강하는 방법에 대한 세미나를 열 계획인데 댓글에 "구글"이라고 남기면 세미나 참여하는 법 알려줄게<br>/ | 강사이야기<br>1일<br>혹시 아래 주제로 출강하고 있는 강사님들 있어?<br>- 구글 AI로 프레젠테이션 만들기<br>- Google Workspace 교육<br>- 바이브코딩 (with Google AI Studio)<br>출강하는 방법에 대한 세미나를 열 계획인데 댓글에 "구글"이라고 남기면 세미나 참여하는 법 알려줄게<br>/ | ✅ Perfect Match |
+| DUCgoCoE_bt | 바이브 코딩으로 웹 만들때 쓰는 개사기 조합<br>1. Agentation 크롬익스텐션<br>2. opencode 연동<br>3. Playwriter 크롬익스텐션 (playwight 아님, 용어주의!)<br>4. 웹 디자인 용어 복붙 사이트<br>제발 이 조합을 사용해봐라. "제발"<br>자세한 설명 댓글<br>/ | 바이브 코딩으로 웹 만들때 쓰는 개사기 조합<br>1. Agentation 크롬익스텐션<br>2. opencode 연동<br>3. Playwriter 크롬익스텐션 (playwight 아님, 용어주의!)<br>4. 웹 디자인 용어 복붙 사이트<br>제발 이 조합을 사용해봐라. "제발"<br>자세한 설명 댓글<br>/ | ✅ Perfect Match |
