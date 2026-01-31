@@ -26,7 +26,7 @@ load_dotenv('.env.local')
 OUTPUT_DIR = "output_threads/python"
 # 수집 완료 후 저장될 파일명 (임시 - 증분 업데이트 파일)
 OUTPUT_FILE = f"{OUTPUT_DIR}/update/threads_py_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
-AUTH_FILE = "auth.json"
+AUTH_FILE = "auth/auth_threads.json"
 THREADS_ID = os.getenv("THREADS_ID")
 THREADS_PW = os.getenv("THREADS_PW")
 

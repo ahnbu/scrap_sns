@@ -9,12 +9,14 @@ from playwright.sync_api import sync_playwright
 # --- 설정 ---
 TARGET_URL = "https://www.linkedin.com/my-items/saved-posts/"
 LOGIN_URL = "https://www.linkedin.com/login"
-AUTH_FILE = "auth_linkedin.json"
-DATA_DIR = "d:/Vibe_Coding/sns_crawler/data"
-OUTPUT_FILE = os.path.join(DATA_DIR, "linkedin_saved.json")
-OUTPUT_FULL_FILE = os.path.join(DATA_DIR, "linkedin_saved_full.json")
-TARGET_LIMIT = 50   # 초기 테스트용 제한
-CRAWL_MODE = "update only" # "all" or "update only"
+AUTH_FILE = "auth/auth_linkedin.json"
+DATA_DIR = "d:/Vibe_Coding/scrap_sns/output_linkedin/python"
+UPDATE_DIR = os.path.join(DATA_DIR, "update")
+TARGET_LIMIT = 0   # 초기 테스트용 제한
+# CRAWL_MODE = "update only" # "all" or "update only"
+CRAWL_MODE = "all" # "all" or "update only"
+CRAWL_START_TIME = datetime.now()
+INCLUDE_IMAGES = False     # 이미지 크롤링 포함 여부 (기본값: False)
 
 # --- 헬퍼 함수 ---
 def load_json(filepath):
@@ -72,21 +74,23 @@ class LinkedinScraper:
         
         # 기존 데이터 로드 (증분 업데이트용)
         self.existing_codes = set()
-        if CRAWL_MODE == "update only":
-            full_data = load_json(OUTPUT_FULL_FILE)
-            for p in full_data:
+        self.max_sequence_id = 0
+        
+        # 전체 파일 경로 (가장 최근 날짜 파일 찾기)
+        self.full_file_path = self.get_latest_full_file()
+        
+        if CRAWL_MODE == "update only" and self.full_file_path:
+            full_data_obj = load_json(self.full_file_path)
+            full_posts = full_data_obj.get("posts", []) if isinstance(full_data_obj, dict) else full_data_obj
+            
+            for p in full_posts:
                 if "code" in p:
                     self.existing_codes.add(p["code"])
-                    
-            # 개별 파일들도 체크
-            for file_path in glob.glob(os.path.join(DATA_DIR, "linkedin_saved_*.json")):
-                if "full" not in file_path:
-                    partial_data = load_json(file_path)
-                    for p in partial_data:
-                        if "code" in p:
-                            self.existing_codes.add(p["code"])
-                            
-            print(f"📊 기존 데이터 {len(self.existing_codes)}개 로드됨 (중복 제외).")
+            
+            if isinstance(full_data_obj, dict):
+                self.max_sequence_id = full_data_obj.get("metadata", {}).get("max_sequence_id", 0)
+            
+            print(f"📊 기존 데이터 {len(self.existing_codes)}개 로드됨. 현재 max_sequence_id: {self.max_sequence_id}")
 
     def manage_login(self, page):
         """로그인 처리 및 세션 관리"""
@@ -196,23 +200,24 @@ class LinkedinScraper:
 
             # 4. 이미지
             images = []
-            embedded = item.get("entityEmbeddedObject", {})
-            img_obj = embedded.get("image", {})
-            if img_obj:
-                img_attrs = img_obj.get("attributes", [])
-                for attr in img_attrs:
-                    detail = attr.get("detailData", {})
-                    vector_img = detail.get("vectorImage", {})
-                    if vector_img:
-                        root_url = vector_img.get("rootUrl", "")
-                        artifacts = vector_img.get("artifacts", [])
-                        # 가장 큰 이미지 찾기
-                        if artifacts:
-                            sorted_artifacts = sorted(artifacts, key=lambda x: x.get("width", 0), reverse=True)
-                            best_artifact = sorted_artifacts[0]
-                            path_segment = best_artifact.get("fileIdentifyingUrlPathSegment", "")
-                            full_img_url = root_url + path_segment
-                            images.append(full_img_url)
+            if INCLUDE_IMAGES:
+                embedded = item.get("entityEmbeddedObject", {})
+                img_obj = embedded.get("image", {})
+                if img_obj:
+                    img_attrs = img_obj.get("attributes", [])
+                    for attr in img_attrs:
+                        detail = attr.get("detailData", {})
+                        vector_img = detail.get("vectorImage", {})
+                        if vector_img:
+                            root_url = vector_img.get("rootUrl", "")
+                            artifacts = vector_img.get("artifacts", [])
+                            # 가장 큰 이미지 찾기
+                            if artifacts:
+                                sorted_artifacts = sorted(artifacts, key=lambda x: x.get("width", 0), reverse=True)
+                                best_artifact = sorted_artifacts[0]
+                                path_segment = best_artifact.get("fileIdentifyingUrlPathSegment", "")
+                                full_img_url = root_url + path_segment
+                                images.append(full_img_url)
 
             # 5. 게시물 링크
             # navigationUrl
@@ -221,12 +226,12 @@ class LinkedinScraper:
             post_data = {
                 "code": activity_id,
                 "username": username,
-                "text": clean_text(text),
+                "full_text": clean_text(text),
                 "date": date_str,
                 "images": images,
                 "user_link": user_link,
                 "post_url": post_url,
-                "collected_at": datetime.now().isoformat(),
+                "collected_at": CRAWL_START_TIME.isoformat(),
                 "source": "network"
             }
             
@@ -237,6 +242,16 @@ class LinkedinScraper:
         except Exception as e:
             # print(f"Error parsing item: {e}")
             pass
+
+    def get_latest_full_file(self):
+        if not os.path.exists(DATA_DIR):
+            return None
+        files = [f for f in os.listdir(DATA_DIR) if f.startswith("linkedin_python_full_") and f.endswith(".json")]
+        if not files:
+            return None
+        # 날짜순 정렬 (파일명에 YYYYMMDD가 포함되어 있으므로 문자열 정렬 가능)
+        files.sort(reverse=True)
+        return os.path.join(DATA_DIR, files[0])
 
     def run(self):
         print("🚀 링크드인 스크래퍼 시작 (Network 모드)")
@@ -263,7 +278,7 @@ class LinkedinScraper:
             # 초기 로딩 대기
             time.sleep(5)
             
-            while len(self.posts) < TARGET_LIMIT:
+            while TARGET_LIMIT == 0 or len(self.posts) < TARGET_LIMIT:
                 # 스크롤 다운
                 page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
                 print(f"   ⬇️ 스크롤 다운... (현재 {len(self.posts)}개)")
@@ -279,48 +294,104 @@ class LinkedinScraper:
                     print("🛑 더 이상 새로운 데이터가 없습니다.")
                     break
                 
-                if len(self.posts) >= TARGET_LIMIT:
+                if TARGET_LIMIT > 0 and len(self.posts) >= TARGET_LIMIT:
                     break
 
             self.save_results()
             browser.close()
 
     def save_results(self):
-        # 1. 이번 실행 데이터 저장
-        if self.posts:
-            save_json(OUTPUT_FILE, self.posts)
-            print(f"💾 수집된 데이터 저장 완료: {OUTPUT_FILE} ({len(self.posts)}개)")
-        
-        # 2. 전체 데이터 병합
-        self.update_full_version()
+        if not self.posts:
+            print("ℹ️ 수집된 새로운 데이터가 없습니다.")
+            return
 
-    def update_full_version(self):
+        # 1. 시퀀스 ID 부여
+        # JS 방식: maxExistingSeq + newItems.length - i
+        # Python에서도 동일한 규칙 적용
+        new_posts = sorted(self.posts, key=lambda x: x['code']) # Snowflake ID 기준 시간순
+        for i, post in enumerate(new_posts):
+            self.max_sequence_id += 1
+            post["sequence_id"] = self.max_sequence_id
+
+        # 2. 업데이트 파일 저장 (타임스탬프 적용: YYYYMMDD_HHMMSS)
+        timestamp = CRAWL_START_TIME.strftime("%Y%m%d_%H%M%S")
+        update_file = os.path.join(UPDATE_DIR, f"linkedin_python_update_{timestamp}.json")
+        
+        # JS 방식과 유사하게 index 추가
+        final_indexed_posts = []
+        for idx, post in enumerate(self.posts):
+            final_indexed_posts.append({"index": idx + 1, **post})
+
+        save_json(update_file, final_indexed_posts)
+        print(f"💾 업데이트 데이터 저장 완료: {update_file} ({len(self.posts)}개)")
+        
+        # 3. 전체 데이터 병합 및 저장
+        date_str = CRAWL_START_TIME.strftime("%Y%m%d")
+        self.update_full_version(date_str)
+
+    def update_full_version(self, date_str):
         print("🔄 전체 데이터 병합 중...")
-        seen_codes = set()
-        final_list = []
+        
+        # 기존 전체 데이터 로드
+        old_posts = []
+        existing_merge_history = []
+        source_filename = None
 
-        # 기존 전체 파일 로드
-        old_full_data = load_json(OUTPUT_FULL_FILE)
+        if self.full_file_path:
+            source_filename = os.path.basename(self.full_file_path)
+            old_data_obj = load_json(self.full_file_path)
+            if isinstance(old_data_obj, dict):
+                old_posts = old_data_obj.get("posts", [])
+                existing_merge_history = old_data_obj.get("metadata", {}).get("merge_history", [])
+            else:
+                old_posts = old_data_obj
+
+        # 중복 제거 및 신규 추가
+        # JS 방식: newItems는 기존에 없는 것들만, 신규를 앞에 배치
+        existing_codes = {p["code"] for p in old_posts}
+        new_items = [p for p in self.posts if p["code"] not in existing_codes]
+        duplicate_count = len(self.posts) - len(new_items)
         
-        # 최신 Full 데이터가 우선 (혹시 모르니)
-        # 하지만 보통은 [신규] + [구형] 순으로 저장함
+        final_posts = new_items + old_posts
         
-        # 1. 신규 데이터 추가
-        for post in self.posts:
-            code = post.get("code")
-            if code and code not in seen_codes:
-                final_list.append(post)
-                seen_codes.add(code)
+        # sequence_id 기준으로 내림차순 정렬 (최신순)
+        final_posts.sort(key=lambda x: x.get("sequence_id", 0), reverse=True)
+
+        # merge_history 업데이트
+        merge_history = list(existing_merge_history)
+        if new_items:
+            merge_history.append({
+                "merged_at": datetime.now().isoformat(),
+                "new_items_count": len(new_items),
+                "duplicates_removed": duplicate_count,
+                "source_file": source_filename,
+                "crawl_mode": CRAWL_MODE
+            })
+
+        full_file = os.path.join(DATA_DIR, f"linkedin_python_full_{date_str}.json")
         
-        # 2. 기존 데이터 추가 (중복 제외)
-        for post in old_full_data:
-            code = post.get("code")
-            if code and code not in seen_codes:
-                final_list.append(post)
-                seen_codes.add(code)
+        # 메타데이터 구조 (JS 버전 참고)
+        legacy_count = len([p for p in final_posts if "collected_at" not in p])
+        verified_count = len(final_posts) - legacy_count
+
+        full_data = {
+            "metadata": {
+                "version": "1.0",
+                "crawled_at": datetime.now().isoformat(),
+                "total_count": len(final_posts),
+                "max_sequence_id": self.max_sequence_id,
+                "first_code": final_posts[0]["code"] if final_posts else None,
+                "last_code": final_posts[-1]["code"] if final_posts else None,
+                "crawl_mode": CRAWL_MODE,
+                "legacy_data_count": legacy_count,
+                "verified_data_count": verified_count,
+                "merge_history": merge_history
+            },
+            "posts": final_posts
+        }
         
-        save_json(OUTPUT_FULL_FILE, final_list)
-        print(f"💾 전체 데이터 파일 업데이트 완료: {OUTPUT_FULL_FILE} (총 {len(final_list)}개)")
+        save_json(full_file, full_data)
+        print(f"💾 전체 데이터 파일 저장 완료: {full_file} (총 {len(final_posts)}개)")
 
 if __name__ == "__main__":
     scraper = LinkedinScraper()
