@@ -12,11 +12,12 @@ LOGIN_URL = "https://www.linkedin.com/login"
 AUTH_FILE = "auth/auth_linkedin.json"
 DATA_DIR = "d:/Vibe_Coding/scrap_sns/output_linkedin/python"
 UPDATE_DIR = os.path.join(DATA_DIR, "update")
-TARGET_LIMIT = 0   # 초기 테스트용 제한
-# CRAWL_MODE = "update only" # "all" or "update only"
-CRAWL_MODE = "all" # "all" or "update only"
+
+# 스크랩 설정
+TARGET_LIMIT = 0       # 0 = 무제한
+CRAWL_MODE = "all"     # "all" or "update"
 CRAWL_START_TIME = datetime.now()
-INCLUDE_IMAGES = False     # 이미지 크롤링 포함 여부 (기본값: False)
+INCLUDE_IMAGES = False # 이미지 크롤링 포함 여부
 
 # --- 헬퍼 함수 ---
 def load_json(filepath):
@@ -191,9 +192,13 @@ class LinkedinScraper:
             actor_url_full = item.get("actorNavigationUrl", "")
             user_link = actor_url_full.split("?")[0]
             
-            # primarySubtitle: 이름/헤드라인 (예: "Hong GilDong")
-            author_obj = item.get("primarySubtitle", {})
-            username = author_obj.get("text", "")
+            # title: 이름 (예: "Hong GilDong")
+            title_obj = item.get("title", {})
+            username = title_obj.get("text", "")
+
+            # primarySubtitle: 프로필 슬로건/헤드라인
+            subtitle_obj = item.get("primarySubtitle", {})
+            profile_slogan = subtitle_obj.get("text", "")
             
             # 3. 날짜 (Activity ID 기반)
             date_str = get_date_from_snowflake_id(activity_id)
@@ -226,11 +231,12 @@ class LinkedinScraper:
             post_data = {
                 "code": activity_id,
                 "username": username,
-                "full_text": clean_text(text),
                 "date": date_str,
+                "full_text": clean_text(text),
+                "post_url": post_url,
+                "profile_slogan": profile_slogan,
                 "images": images,
                 "user_link": user_link,
-                "post_url": post_url,
                 "collected_at": CRAWL_START_TIME.isoformat(),
                 "source": "network"
             }
