@@ -15,9 +15,11 @@ UPDATE_DIR = os.path.join(DATA_DIR, "update")
 
 # 스크랩 설정
 TARGET_LIMIT = 0       # 0 = 무제한
-CRAWL_MODE = "all"     # "all" or "update"
+# CRAWL_MODE = "all"     # "all" or "update"
+CRAWL_MODE = "update"     # "all" or "update"
 CRAWL_START_TIME = datetime.now()
-INCLUDE_IMAGES = False # 이미지 크롤링 포함 여부
+# INCLUDE_IMAGES = False # 이미지 크롤링 포함 여부
+INCLUDE_IMAGES = True # 이미지 크롤링 포함 여부
 
 # --- 헬퍼 함수 ---
 def load_json(filepath):
@@ -55,15 +57,14 @@ def get_date_from_snowflake_id(id_str):
     """
     try:
         id_int = int(id_str)
-        # 상위 41비트? 아니면 쉬프트? 
         # LinkedIn Snowflake: 첫 41비트가 타임스탬프 (epoch ms)
         # 정확히는: id >> 22 (하위 22비트가 시퀀스/샤드정보)
         timestamp_ms = id_int >> 22
         # Epoch(1970) 기준 ms -> datetime
         dt = datetime.fromtimestamp(timestamp_ms / 1000)
-        return dt.strftime('%Y-%m-%d')
+        return dt.strftime('%Y-%m-%d %H:%M:%S')
     except:
-        return datetime.now().strftime('%Y-%m-%d')
+        return datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
 # --- 메인 클래스 ---
 class LinkedinScraper:
@@ -231,13 +232,14 @@ class LinkedinScraper:
             post_data = {
                 "code": activity_id,
                 "username": username,
-                "date": date_str,
+                "created_at": date_str,
                 "full_text": clean_text(text),
                 "post_url": post_url,
                 "profile_slogan": profile_slogan,
                 "images": images,
                 "user_link": user_link,
-                "collected_at": CRAWL_START_TIME.isoformat(),
+                "crawled_at": CRAWL_START_TIME.isoformat(),
+                "content_type": "carousel" if len(images) > 1 else ("image" if images else "text"),
                 "source": "network"
             }
             

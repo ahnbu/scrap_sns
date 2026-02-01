@@ -408,17 +408,45 @@ def run():
             caption = post.get("caption", {})
             extra_info = post.get("text_post_app_info", {})
             
+            # 미디어 추출 및 타입 결정
             images = []
-            if post.get("image_versions2"):
-                images = [img["url"] for img in post.get("image_versions2", {}).get("candidates", [])]
-            if post.get("video_versions"):
-                 images.append(post.get("video_versions", [{}])[0].get("url", ""))
+            video_versions = post.get("video_versions", [])
+            carousel_media = post.get("carousel_media", [])
+            image_versions2 = post.get("image_versions2", {})
+
+            content_type = "text"
+            
+            if carousel_media:
+                content_type = "carousel"
+                for item in carousel_media:
+                    candidates = item.get("image_versions2", {}).get("candidates", [])
+                    if candidates:
+                        # 해상도순 정렬 (width 기준)
+                        best = sorted(candidates, key=lambda x: x.get("width", 0), reverse=True)[0]
+                        images.append(best["url"])
+                    # 캐러셀 내 비디오 처리
+                    if item.get("video_versions"):
+                        images.append(item["video_versions"][0]["url"])
+                        
+            elif video_versions:
+                content_type = "video"
+                # 비디오 썸네일 or 비디오 URL? 기존 로직은 비디오 URL을 images에 포함
+                images.append(video_versions[0]["url"])
+                # 썸네일도 추가하고 싶다면 logic 추가
+                
+            elif image_versions2:
+                content_type = "image"
+                candidates = image_versions2.get("candidates", [])
+                if candidates:
+                    best = sorted(candidates, key=lambda x: x.get("width", 0), reverse=True)[0]
+                    images.append(best["url"])
 
             created_at, time_text = format_timestamp(post.get("taken_at"))
 
             post_info = {
                 "code": post.get("code"),
                 "username": user.get("username"),
+                "user_link": f"https://www.threads.net/@{user.get('username')}",
                 "full_text": caption.get("text") if caption else "",
                 "like_count": post.get("like_count", 0),
                 "reply_count": extra_info.get("direct_reply_count", 0),
@@ -428,6 +456,7 @@ def run():
                 "time_text": time_text,
                 "post_url": f"https://www.threads.net/@{user.get('username')}/post/{post.get('code')}",
                 "images": images,
+                "content_type": content_type,
                 "source": "network"
             }
 
@@ -490,6 +519,7 @@ def run():
                             post_info = {
                                 "code": code,
                                 "username": username,
+                                "user_link": f"https://www.threads.net/@{username}",
                                 "full_text": cleaned_text,
                                 "like_count": -1,
                                 "reply_count": -1,
@@ -499,6 +529,7 @@ def run():
                                 "time_text": None,
                                 "post_url": f"https://www.threads.net{href}",
                                 "images": list(set(images)),
+                                "content_type": "carousel" if len(images) > 1 else ("image" if images else "text"),
                                 "source": "initial_dom"
                             }
                             collected_data.append(post_info)
