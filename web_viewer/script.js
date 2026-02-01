@@ -75,6 +75,50 @@ document.addEventListener('DOMContentLoaded', () => {
 
     refreshBtn.addEventListener('click', fetchData);
 
+    // Run Scraper functionality
+    const runScrapBtn = document.getElementById('runScrapBtn');
+    runScrapBtn.addEventListener('click', async () => {
+        if (!confirm('스크래핑을 시작하시겠습니까? (이 작업은 수 분이 소요될 수 있습니다)')) return;
+
+        // UI State: Loading
+        const originalContent = runScrapBtn.innerHTML;
+        runScrapBtn.disabled = true;
+        runScrapBtn.classList.add('opacity-50', 'cursor-not-allowed');
+        runScrapBtn.innerHTML = `
+            <span class="material-symbols-outlined text-[20px] animate-spin text-primary">sync</span>
+            <span class="font-medium whitespace-nowrap">Running...</span>
+        `;
+
+        try {
+            // First, check if server is running
+            const statusCheck = await fetch('http://localhost:5000/api/status').catch(() => null);
+            if (!statusCheck || !statusCheck.ok) {
+                alert('Flask 서버가 실행되고 있지 않습니다. 터미널에서 "python server.py"를 실행해주세요.');
+                return;
+            }
+
+            const response = await fetch('http://localhost:5000/api/run-scrap', {
+                method: 'POST'
+            });
+            const result = await response.json();
+
+            if (result.status === 'success') {
+                alert('스크래핑이 완료되었습니다! 데이터를 새로고침합니다.');
+                fetchData(); // Refresh feed
+            } else {
+                alert(`에러 발생: ${result.message}`);
+            }
+        } catch (error) {
+            console.error('Scraping Error:', error);
+            alert('서버와 통신 중 오류가 발생했습니다.');
+        } finally {
+            // Restore UI State
+            runScrapBtn.disabled = false;
+            runScrapBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+            runScrapBtn.innerHTML = originalContent;
+        }
+    });
+
     // Modal Events
     closeModal.addEventListener('click', hideModal);
     imageModal.addEventListener('click', (e) => {

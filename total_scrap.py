@@ -5,6 +5,12 @@ import sys
 import glob
 import json
 from datetime import datetime
+import io
+
+# Windows 터미널 인코딩 문제 해결을 위한 설정
+if sys.platform == 'win32':
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
+    sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8', errors='replace')
 
 OUTPUT_THREADS_DIR = "output_threads/python"
 OUTPUT_LINKEDIN_DIR = "output_linkedin/python"

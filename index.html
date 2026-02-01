@@ -5,6 +5,7 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <meta name="referrer" content="no-referrer" />
   <title>SNS Feed Viewer</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
   
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -104,7 +105,7 @@
               <span class="material-symbols-outlined text-[16px]">expand_more</span>
             </button>
             <!-- Dropdown -->
-            <div id="sortDropdown" class="absolute right-0 top-full mt-2 w-48 bg-[#1E1E24] border border-white/10 rounded-xl shadow-xl overflow-hidden hidden transform origin-top transition-all">
+            <div id="sortDropdown" class="absolute left-0 md:right-0 top-full mt-2 w-48 bg-[#1E1E24] border border-white/10 rounded-xl shadow-xl overflow-hidden hidden transform origin-top transition-all">
               <button data-sort="date" class="block w-full text-left px-4 py-3 text-sm text-gray-300 hover:bg-white/5 hover:text-white transition-colors active-sort">
                 Latest (Date)
               </button>
@@ -114,10 +115,17 @@
             </div>
           </div>
 
-          <div class="hidden lg:flex items-center gap-4 text-sm text-gray-400 pl-4 border-l border-white/10">
-            <span id="totalPostsCount">Loading...</span>
-            <button id="refreshBtn" class="hover:text-white transition-colors">
-              <span class="material-symbols-outlined">refresh</span>
+          <div class="flex items-center gap-2 text-sm text-gray-400 md:pl-4 md:border-l md:border-white/10 w-full md:w-auto justify-end">
+            <span id="totalPostsCount" class="mr-auto md:mr-2 text-xs md:text-sm">Loading...</span>
+            
+            <button id="runScrapBtn" class="flex items-center gap-2 px-3 md:px-4 py-2 rounded-xl bg-surface-glass hover:bg-surface-glass-hover text-gray-300 hover:text-white border border-border-glass transition-all hover:scale-105 group active:scale-95">
+              <span class="material-symbols-outlined text-[18px] md:text-[20px] text-primary group-hover:animate-pulse">rocket_launch</span>
+              <span class="font-medium whitespace-nowrap text-xs md:text-sm">Run Scrap</span>
+            </button>
+            
+            <button id="refreshBtn" class="flex items-center gap-2 px-3 md:px-4 py-2 rounded-xl bg-surface-glass hover:bg-surface-glass-hover text-gray-300 hover:text-white border border-border-glass transition-all hover:scale-105 group active:scale-95">
+              <span class="material-symbols-outlined text-[18px] md:text-[20px] text-gray-400 group-hover:rotate-180 transition-transform duration-500">update</span>
+              <span class="font-medium whitespace-nowrap text-xs md:text-sm">Refresh</span>
             </button>
           </div>
         </div>
