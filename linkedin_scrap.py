@@ -15,8 +15,8 @@ UPDATE_DIR = os.path.join(DATA_DIR, "update")
 
 # 스크랩 설정
 TARGET_LIMIT = 0       # 0 = 무제한
-# CRAWL_MODE = "all"     # "all" or "update"
-CRAWL_MODE = "update"     # "all" or "update"
+# CRAWL_MODE = "all"     # "all" or "update only"
+CRAWL_MODE = "update only"     # "all" or "update only"
 CRAWL_START_TIME = datetime.now()
 # INCLUDE_IMAGES = False # 이미지 크롤링 포함 여부
 INCLUDE_IMAGES = True # 이미지 크롤링 포함 여부
@@ -81,10 +81,15 @@ class LinkedinScraper:
         # 전체 파일 경로 (가장 최근 날짜 파일 찾기)
         self.full_file_path = self.get_latest_full_file()
         
+        self.stop_codes = []
+            
         if CRAWL_MODE == "update only" and self.full_file_path:
             full_data_obj = load_json(self.full_file_path)
             full_posts = full_data_obj.get("posts", []) if isinstance(full_data_obj, dict) else full_data_obj
             
+            # 기준 게시물 (최신 5개) 추출 for Stop Condition
+            self.stop_codes = [p.get("code") for p in full_posts[:5] if p.get("code")]
+
             for p in full_posts:
                 if "code" in p:
                     self.existing_codes.add(p["code"])
@@ -93,6 +98,8 @@ class LinkedinScraper:
                 self.max_sequence_id = full_data_obj.get("metadata", {}).get("max_sequence_id", 0)
             
             print(f"📊 기존 데이터 {len(self.existing_codes)}개 로드됨. 현재 max_sequence_id: {self.max_sequence_id}")
+            if self.stop_codes:
+                print(f"🔄 UPDATE ONLY 모드: {self.stop_codes} 중 하나라도 발견 시 수집을 중단합니다.")
 
     def manage_login(self, page):
         """로그인 처리 및 세션 관리"""
@@ -180,8 +187,12 @@ class LinkedinScraper:
                 return
 
             # 중복 체크 (기존 수집 데이터)
-            if CRAWL_MODE == "update only" and activity_id in self.existing_codes:
-                # print(f"   ⏭️ 이미 수집된 게시물 (Skip): {activity_id}")
+            if activity_id in self.existing_codes:
+                # UPDATE ONLY 모드이고, stop_codes에 포함된 경우 조기 종료 트리거
+                if CRAWL_MODE == "update only" and activity_id in self.stop_codes:
+                     if not self.stopped_early:
+                        print(f"   🛑 기준 게시물 발견 ({activity_id}) - 조기 종료 예정")
+                        self.stopped_early = True
                 return
 
             # 1. 텍스트 (summary.text)
@@ -262,6 +273,7 @@ class LinkedinScraper:
         return os.path.join(DATA_DIR, files[0])
 
     def run(self):
+        start_time_dt = datetime.now()
         print("🚀 링크드인 스크래퍼 시작 (Network 모드)")
         
         with sync_playwright() as p:
@@ -292,6 +304,10 @@ class LinkedinScraper:
                 print(f"   ⬇️ 스크롤 다운... (현재 {len(self.posts)}개)")
                 time.sleep(3) # 네트워크 요청 대기
                 
+                if self.stopped_early:
+                    print("🛑 기준 게시물을 모두 확인하여 수집을 종료합니다.")
+                    break
+                
                 if len(self.posts) == last_count:
                     no_new_data_count += 1
                 else:
@@ -307,6 +323,18 @@ class LinkedinScraper:
 
             self.save_results()
             browser.close()
+
+        end_time_dt = datetime.now()
+        duration = end_time_dt - start_time_dt
+        total_seconds = int(duration.total_seconds())
+        hours, remainder = divmod(total_seconds, 3600)
+        minutes, seconds = divmod(remainder, 60)
+
+        print("\n" + "="*40)
+        print(f"시작시간 : {start_time_dt.strftime('%Y-%m-%d %H:%M:%S')}")
+        print(f"종료시간 : {end_time_dt.strftime('%Y-%m-%d %H:%M:%S')}")
+        print(f"소요시간: {hours:02d}:{minutes:02d}:{seconds:02d}")
+        print("="*40)
 
     def save_results(self):
         if not self.posts:
