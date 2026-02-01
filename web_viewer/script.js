@@ -119,6 +119,83 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // Download Functionality
+    const downloadBtn = document.getElementById('downloadBtn');
+    const downloadDropdown = document.getElementById('downloadDropdown');
+
+    if (downloadBtn && downloadDropdown) {
+        downloadBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            downloadDropdown.classList.toggle('hidden');
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!downloadBtn.contains(e.target) && !downloadDropdown.contains(e.target)) {
+                downloadDropdown.classList.add('hidden');
+            }
+        });
+
+        document.querySelectorAll('[data-action^="download-"]').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const action = e.currentTarget.dataset.action;
+                const [_, scope, format] = action.split('-'); // e.g., download-filtered-json
+                downloadData(scope, format);
+                downloadDropdown.classList.add('hidden');
+            });
+        });
+    }
+
+    function downloadData(scope, format) {
+        const postsToSave = scope === 'all' ? allPosts : getFilteredPosts();
+        
+        if (postsToSave.length === 0) {
+            alert('저장할 데이터가 없습니다.');
+            return;
+        }
+
+        const dateStr = new Date().toISOString().slice(0, 10);
+        let content = '';
+        let filename = `sns_data_${scope}_${dateStr}.${format === 'json' ? 'json' : 'md'}`;
+        let mimeType = format === 'json' ? 'application/json' : 'text/markdown';
+
+        // Map data to required fields
+        const mappedData = postsToSave.map(post => {
+            const dateObj = post._dateObj || new Date(post.created_at || post.crawled_at);
+            return {
+                author: post.username,
+                date: dateObj.toISOString().slice(0, 10), // yyyy-mm-dd
+                body: post.full_text,
+                link: post.post_url,
+                platform: post.sns_platform
+            };
+        });
+
+        if (format === 'json') {
+            content = JSON.stringify(mappedData, null, 2);
+        } else {
+            // Markdown Format
+            content = mappedData.map(item => {
+                return `## [${item.date}] ${item.author} (${item.platform})
+[Original Link](${item.link})
+
+${item.body}
+
+---`;
+            }).join('\n\n');
+        }
+
+        // Trigger Download
+        const blob = new Blob([content], { type: mimeType });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = filename;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    }
+
     // Modal Events
     closeModal.addEventListener('click', hideModal);
     imageModal.addEventListener('click', (e) => {
@@ -186,9 +263,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    function renderPosts() {
-        // 1. Filter Data
-        let filtered = allPosts.filter(post => {
+    function getFilteredPosts() {
+        return allPosts.filter(post => {
             const matchesSearch = 
                 (post.full_text || '').toLowerCase().includes(searchQuery) ||
                 (post.username || '').toLowerCase().includes(searchQuery);
@@ -199,6 +275,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
             return matchesSearch && matchesFilter;
         });
+    }
+
+    function renderPosts() {
+        // 1. Filter Data
+        let filtered = getFilteredPosts();
 
         // 2. Sort Data
         if (currentSort === 'date') {
