@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Social Feed Dashboard Variant 1</title>
+  <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#7f0df2",
+            "background-light": "#f7f5f8", // Not used heavily in this specific dark design but kept for config compliance
+            "background-dark": "#121212", // Deep charcoal
+            "surface-glass": "rgba(255, 255, 255, 0.03)",
+            "surface-glass-hover": "rgba(255, 255, 255, 0.07)",
+            "border-glass": "rgba(255, 255, 255, 0.08)",
+          },
+          fontFamily: {
+            "display": ["Spline Sans", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem", // slightly more rounded for glassmorphism
+            "lg": "0.75rem",
+            "xl": "1rem",
+            "full": "9999px"
+          },
+          backdropBlur: {
+            xs: '2px',
+          }
+        },
+      },
+    }
+  </script>
+  <style>
+    /* Custom scrollbar for webkit */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #121212;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #333;
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+
+    /* Glassmorphism Utilities */
+    .glass-panel {
+      background: rgba(30, 30, 35, 0.4);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .glass-card {
+      background: linear-gradient(145deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s;
+    }
+
+    .glass-card:hover {
+      transform: translateY(-4px);
+      background: linear-gradient(145deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.03) 100%);
+      box-shadow: 0 12px 40px 0 rgba(127, 13, 242, 0.15);
+      /* Primary color glow */
+      border-color: rgba(127, 13, 242, 0.3);
+    }
+
+    /* Ambient Background */
+    .ambient-bg {
+      background-color: #121212;
+      background-image:
+        radial-gradient(circle at 15% 50%, rgba(127, 13, 242, 0.15) 0%, transparent 40%),
+        radial-gradient(circle at 85% 10%, rgba(56, 189, 248, 0.1) 0%, transparent 35%);
+      background-attachment: fixed;
+    }
+  </style>
+</head>
+
+<body class="font-display text-white ambient-bg min-h-screen flex flex-col overflow-hidden">
+  <!-- Main Layout -->
+  <div class="flex h-screen w-full">
+    <!-- Sidebar Navigation (Glassmorphism) -->
+    <aside
+      class="w-20 lg:w-64 glass-panel border-r-0 border-t-0 border-b-0 border-r border-border-glass z-20 flex flex-col justify-between py-6 shrink-0 transition-all duration-300">
+      <!-- Brand -->
+      <div class="flex items-center justify-center lg:justify-start lg:px-6 mb-8 gap-3">
+        <div
+          class="size-10 rounded-xl bg-gradient-to-br from-primary to-purple-400 flex items-center justify-center shadow-lg shadow-primary/30">
+          <span class="material-symbols-outlined text-white" style="font-size: 24px;">hub</span>
+        </div>
+        <h1 class="hidden lg:block text-xl font-bold tracking-tight text-white">Nexus</h1>
+      </div>
+      <!-- Navigation Links -->
+      <nav class="flex flex-col gap-2 px-3">
+        <a class="flex items-center gap-4 px-3 lg:px-4 py-3 rounded-xl bg-primary/20 text-primary border border-primary/20 transition-all group"
+          href="#">
+          <span class="material-symbols-outlined group-hover:scale-110 transition-transform">dashboard</span>
+          <span class="hidden lg:block font-medium">Dashboard</span>
+        </a>
+        <a class="flex items-center gap-4 px-3 lg:px-4 py-3 rounded-xl hover:bg-surface-glass-hover text-gray-400 hover:text-white transition-all group"
+          href="#">
+          <span class="material-symbols-outlined group-hover:scale-110 transition-transform">rss_feed</span>
+          <span class="hidden lg:block font-medium">Feeds</span>
+        </a>
+        <a class="flex items-center gap-4 px-3 lg:px-4 py-3 rounded-xl hover:bg-surface-glass-hover text-gray-400 hover:text-white transition-all group"
+          href="#">
+          <span class="material-symbols-outlined group-hover:scale-110 transition-transform">schedule_send</span>
+          <span class="hidden lg:block font-medium">Scheduled</span>
+        </a>
+        <a class="flex items-center gap-4 px-3 lg:px-4 py-3 rounded-xl hover:bg-surface-glass-hover text-gray-400 hover:text-white transition-all group"
+          href="#">
+          <span class="material-symbols-outlined group-hover:scale-110 transition-transform">analytics</span>
+          <span class="hidden lg:block font-medium">Analytics</span>
+        </a>
+        <a class="flex items-center gap-4 px-3 lg:px-4 py-3 rounded-xl hover:bg-surface-glass-hover text-gray-400 hover:text-white transition-all group"
+          href="#">
+          <span class="material-symbols-outlined group-hover:scale-110 transition-transform">group</span>
+          <span class="hidden lg:block font-medium">Audience</span>
+        </a>
+      </nav>
+      <!-- User Profile (Bottom) -->
+      <div class="mt-auto px-3">
+        <div
+          class="flex items-center gap-3 p-2 rounded-xl hover:bg-surface-glass-hover cursor-pointer transition-colors">
+          <div class="size-10 rounded-full bg-cover bg-center ring-2 ring-primary/50"
+            data-alt="User profile picture of a man"
+            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB63L-f__z2EKz3dXAlzC3ZklX-R9tUDnnEvB7CHzD_QUJwwoDuWnjpGsIxFs-ravbNWOQX-UaSqxRMWx-EQsIa4dGe2NVbXhnZvS_Ji8DXi3TebA2RyFufiZdkV9LMhCKwc4rxAfAbXW30QxcS35xFJs17tiaejfz1Ephod33mPAwZC4rASLSXB9AfNLB1Shr8hAe9txTLLeTBYnFxND6GyMvVMDVei2MN_Kdc2D1YiQWWAfGoe5KYQ23NJqh0Mbyl6h5M2q4L58rJ')">
+          </div>
+          <div class="hidden lg:flex flex-col">
+            <span class="text-sm font-semibold text-white">Alex Morgan</span>
+            <span class="text-xs text-gray-400">@alexm_design</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <!-- Main Content Area -->
+    <main class="flex-1 flex flex-col relative overflow-hidden">
+      <!-- Top Header (Search & Filters) -->
+      <header class="w-full px-6 py-5 flex flex-col md:flex-row md:items-center justify-between gap-4 z-10">
+        <!-- Search Bar -->
+        <div class="relative w-full md:max-w-md group">
+          <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+            <span
+              class="material-symbols-outlined text-gray-400 group-focus-within:text-primary transition-colors">search</span>
+          </div>
+          <input
+            class="block w-full pl-10 pr-3 py-3 border border-border-glass rounded-xl leading-5 bg-surface-glass text-white placeholder-gray-500 focus:outline-none focus:bg-surface-glass-hover focus:ring-1 focus:ring-primary/50 focus:border-primary/50 sm:text-sm transition-all"
+            placeholder="Search social trends, hashtags, users..." type="text" />
+        </div>
+        <!-- Chips/Filters -->
+        <div class="flex items-center gap-2 overflow-x-auto pb-2 md:pb-0 no-scrollbar">
+          <button
+            class="px-4 py-2 rounded-full bg-primary text-white text-sm font-medium border border-primary shadow-lg shadow-primary/25 transition-transform hover:scale-105 whitespace-nowrap">
+            All Posts
+          </button>
+          <button
+            class="flex items-center gap-2 px-4 py-2 rounded-full bg-surface-glass hover:bg-surface-glass-hover text-gray-300 hover:text-white text-sm font-medium border border-border-glass transition-all hover:border-gray-600 whitespace-nowrap group">
+            <span class="material-symbols-outlined text-[18px] group-hover:text-[#1DA1F2]">flutter_dash</span>
+            Twitter
+          </button>
+          <button
+            class="flex items-center gap-2 px-4 py-2 rounded-full bg-surface-glass hover:bg-surface-glass-hover text-gray-300 hover:text-white text-sm font-medium border border-border-glass transition-all hover:border-gray-600 whitespace-nowrap group">
+            <span class="material-symbols-outlined text-[18px] group-hover:text-[#0A66C2]">work</span>
+            LinkedIn
+          </button>
+          <button
+            class="flex items-center gap-2 px-4 py-2 rounded-full bg-surface-glass hover:bg-surface-glass-hover text-gray-300 hover:text-white text-sm font-medium border border-border-glass transition-all hover:border-gray-600 whitespace-nowrap group">
+            <span class="material-symbols-outlined text-[18px] group-hover:text-[#E1306C]">photo_camera</span>
+            Instagram
+          </button>
+          <button
+            class="flex items-center gap-2 px-4 py-2 rounded-full bg-surface-glass hover:bg-surface-glass-hover text-gray-300 hover:text-white text-sm font-medium border border-border-glass transition-all hover:border-gray-600 whitespace-nowrap group">
+            <span class="material-symbols-outlined text-[18px] group-hover:text-white">alternate_email</span>
+            Threads
+          </button>
+        </div>
+        <!-- Notification Bell -->
+        <button
+          class="hidden md:flex relative p-2 rounded-full bg-surface-glass hover:bg-surface-glass-hover text-gray-300 transition-colors">
+          <span class="material-symbols-outlined">notifications</span>
+          <span class="absolute top-2 right-2 size-2 bg-primary rounded-full ring-2 ring-[#121212]"></span>
+        </button>
+      </header>
+      <!-- Scrollable Feed Area -->
+      <div class="flex-1 overflow-y-auto px-6 pb-20 scroll-smooth">
+        <!-- Masonry Grid Layout -->
+        <div class="columns-1 md:columns-2 lg:columns-3 xl:columns-4 gap-6 space-y-6 mx-auto max-w-[1600px]">
+          <!-- Card 1: Instagram (Image Heavy) -->
+          <article class="break-inside-avoid glass-card rounded-2xl p-4 flex flex-col gap-4">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <div class="size-10 rounded-full bg-cover bg-center border border-white/10"
+                  data-alt="Portrait of a young woman"
+                  style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCNPQagXhvVinbzFDDerdD17lI_Gv3bHzGsaFHdwyv4lyUq-JENMvwTwaIp49n4wLqbT3wh7zY9_YP_k4LONQxbBGNN5xnV25bO3G6mVhEWYdG9TLHsd_o-VkHcgNfJs362rP9FoSLv_fWI86huzpFT2JY7v03sUlER2LismP3QCcPmEUu7FfPM0gMpLAK5KOj0YNIv2KKMC6AbB-0Zy8dpC71T5V2UjWTCRThlsYYld0uBrNAxwkZpWrKD_R2sFRjAR0wEjT8PSp8U')">
+                </div>
+                <div>
+                  <h3 class="text-sm font-semibold text-white">Sarah Jenkins</h3>
+                  <p class="text-xs text-gray-400">@sarah_j • 2h</p>
+                </div>
+              </div>
+              <span class="material-symbols-outlined text-gray-500 text-[20px]">more_horiz</span>
+            </div>
+            <div class="rounded-xl overflow-hidden relative group/image">
+              <div class="absolute inset-0 bg-black/20 group-hover/image:bg-transparent transition-colors z-10"></div>
+              <div
+                class="w-full h-64 bg-cover bg-center transform group-hover/image:scale-105 transition-transform duration-500"
+                data-alt="Majestic mountain landscape at sunset"
+                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBERpGCz1kJVZScHPGaPY6PXZd2OLviyaa1PudW1BF_jcfEFQXrqJlePy_8vEpeqwgMSxZIwLk4PyFF9jaVtwW1N1bM8zmOzmT3bma88glp-NPhlTWTvNlGCrH2R3aAalWajl6IEJmlWxG8USV9zE9cbqwittkR7aVwZWp3p6CVVukgfaKatCQxWumlKGkY0Vko-tdjFH66gTn90gi5FiSa16lfaJnyhyoik4OMCwVfFWp9T1SKEJR7oJm1xJPB7G5kNFung4RRW8pL')">
+              </div>
+              <div class="absolute bottom-3 left-3 z-20">
+                <span class="bg-black/50 backdrop-blur-md px-2 py-1 rounded text-xs text-white flex items-center gap-1">
+                  <span class="material-symbols-outlined text-[14px]">photo_camera</span>
+                  Instagram
+                </span>
+              </div>
+            </div>
+            <p class="text-sm text-gray-200 leading-relaxed">Chasing sunsets in the Dolomites. The light was absolutely
+              magical today! ✨ #travel #nature #photography</p>
+            <div class="flex items-center justify-between pt-2 border-t border-white/5">
+              <div class="flex gap-4 text-gray-400">
+                <button class="flex items-center gap-1 hover:text-primary transition-colors group">
+                  <span class="material-symbols-outlined text-[20px] group-hover:fill-current">favorite</span>
+                  <span class="text-xs">2.4k</span>
+                </button>
+                <button class="flex items-center gap-1 hover:text-blue-400 transition-colors">
+                  <span class="material-symbols-outlined text-[20px]">chat_bubble</span>
+                  <span class="text-xs">124</span>
+                </button>
+              </div>
+              <button class="hover:text-white text-gray-400 transition-colors">
+                <span class="material-symbols-outlined text-[20px]">share</span>
+              </button>
+            </div>
+          </article>
+          <!-- Card 2: Twitter/X (Text Only) -->
+          <article class="break-inside-avoid glass-card rounded-2xl p-5 flex flex-col gap-3 relative overflow-hidden">
+            <!-- Decorative accent -->
+            <div class="absolute top-0 left-0 w-1 h-full bg-[#1DA1F2]"></div>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <div class="size-10 rounded-full bg-cover bg-center border border-white/10"
+                  data-alt="Portrait of a man with glasses"
+                  style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDoAFSKDdSNZRrB_tjhuX3EQYatesrw-spjuqyIUu0L-pGQeH2CP4wd1ibUmoa3ZC7f0UIN119W0-FOeo_MFWBkkuwh0o2h_9LsEc3nLwFcV85HfYBUWkmPXZ1PBEw2yg4huCbFynFi4i8BP_gAzZ0QTkCpEkAVa0InhNMkdJNor91kPWTfxawqXi0IlSeH0u3xw5Em9V52patB6BN2BLp22iABG5VOXOjc2yxnL8SdMCtJwpENkPi8PULNwAxcg904PABtvPUST79g')">
+                </div>
+                <div>
+                  <h3 class="text-sm font-semibold text-white">DevTips Daily</h3>
+                  <p class="text-xs text-gray-400">@devtips • 45m</p>
+                </div>
+              </div>
+              <span class="material-symbols-outlined text-[#1DA1F2] text-[20px]">flutter_dash</span>
+            </div>
+            <p class="text-base text-white leading-relaxed font-light">
+              Just dropped a new tutorial on advanced CSS Grid layouts. The `minmax()` function is honestly a game
+              changer for responsive design without media queries. Check it out! 🚀 <span class="text-[#1DA1F2]">#webdev
+                #css #coding</span>
+            </p>
+            <div class="flex items-center justify-between pt-2 mt-1">
+              <div class="flex gap-6 text-gray-400 w-full">
+                <button class="flex items-center gap-1.5 hover:text-green-400 transition-colors">
+                  <span class="material-symbols-outlined text-[18px]">repeat</span>
+                  <span class="text-xs">85</span>
+                </button>
+                <button class="flex items-center gap-1.5 hover:text-pink-500 transition-colors group">
+                  <span class="material-symbols-outlined text-[18px] group-hover:text-pink-500">favorite</span>
+                  <span class="text-xs">420</span>
+                </button>
+                <button class="flex items-center gap-1.5 hover:text-blue-400 transition-colors ml-auto">
+                  <span class="material-symbols-outlined text-[18px]">bar_chart</span>
+                  <span class="text-xs">12.5k</span>
+                </button>
+              </div>
+            </div>
+          </article>
+          <!-- Card 3: LinkedIn (Professional/Article) -->
+          <article class="break-inside-avoid glass-card rounded-2xl p-4 flex flex-col gap-3">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <div class="size-10 rounded-full bg-cover bg-center border border-white/10"
+                  data-alt="Professional woman in business attire"
+                  style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDmh-OtpmYHceKhYkbykcrd5K3QlqIfwlygT7qPIdSaedq_AtN-X7jp23mzbmSZj5PV8oeD-Q01VMbJzy3gXw-c2QtyOFodEH0Vmv_GY0JUPoxQv8IPmBC-RCu8rUdLRHf5NyAsOGw7-mMdeDMFTox-_15GzwOCtdPqTIVnBYwTBwXRRFnrhdhbrDCk4b_MmTEQNYWyzhUrVVNkdt9CltiecQIIa5iQpqOGE6mvtOR5ISaJTUGbvvMxjVOLzhquX3b3UzEqAJwxlLpr')">
+                </div>
+                <div>
+                  <h3 class="text-sm font-semibold text-white">Elena Rodriguez</h3>
+                  <p class="text-xs text-gray-400">Product Director @ TechFlow • 5h</p>
+                </div>
+              </div>
+              <span class="material-symbols-outlined text-[#0A66C2] text-[24px]">work</span>
+            </div>
+            <p class="text-sm text-gray-200">
+              We're thrilled to announce our Series B funding round led by Sequoia! This milestone is a testament to the
+              hard work of our incredible team. We're hiring across all roles!
+            </p>
+            <div
+              class="rounded-lg bg-white/5 border border-white/5 p-3 flex gap-3 items-center hover:bg-white/10 transition-colors cursor-pointer">
+              <div class="size-16 rounded bg-cover bg-center shrink-0" data-alt="Team meeting in a modern office"
+                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDoJ0YxOwwuSPLbqL0rx9grwxiqLR8TNTUrieoh2y2yAuiYLa3QcqnAJlkovLAu1nthZHvYGAE6dvRp1Ccrn1pnaQE9xmOt46tkJzQNfU3gkUjLzy5hGPtTz3Shui26IoGjBpUBdHdXIMdvEDBYvGM_QY3GV0dm34WuZHNdyxzE7kIJ5iMysa6qTpmUwbCyJ2HhW66Yf3e3y5oKjBEtxB0nn_aCCncJ1DhfPiL1RS_gv6l1moHtC-ON0lqrrQES7YFxEDC1vKdom65d')">
+              </div>
+              <div class="flex flex-col overflow-hidden">
+                <h4 class="text-sm font-bold text-white truncate">TechFlow Raises $50M Series B</h4>
+                <p class="text-xs text-gray-400 truncate">techflow.io/blog</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 text-gray-400 text-xs mt-1">
+              <span>👍 👏 ❤️ 843 reactions</span>
+              <span class="ml-auto">45 comments</span>
+            </div>
+          </article>
+          <!-- Card 4: Threads (Minimal) -->
+          <article class="break-inside-avoid glass-card rounded-2xl p-5 flex flex-col gap-3">
+            <div class="flex items-start justify-between">
+              <div class="flex gap-3">
+                <div class="size-10 rounded-full bg-cover bg-center border border-white/10"
+                  data-alt="Man with beard profile"
+                  style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCdJnOUSOhWj6EJU923qFvsRfIS00TvwVtyTAf7oxM2FQXVS0Fe3ZOHgfhukaeDQUc5-IbDSdB7yllxbMdBDyemKsMkFxSTZ_4WGfPmL5bgJTFZ2sBZ2ZClZ8x9mjYyJ3FaHKv1RFHih9G5KFW3LCVa-nuA-redS288c05ocB6_bL88Ut1ChO_e0ok5PiDqAyWgKYXhgtwaw4AgRnjb4Uyy3N9bxFXtDd0yBip5ys_WcB1VOlQGhURuqDI1okho2tfTDloArvfpC7ey')">
+                </div>
+                <div class="flex flex-col">
+                  <div class="flex items-center gap-1">
+                    <h3 class="text-sm font-semibold text-white">Marcus</h3>
+                    <span class="material-symbols-outlined text-blue-400 text-[14px] filled">verified</span>
+                  </div>
+                  <p class="text-xs text-gray-400">3h ago</p>
+                </div>
+              </div>
+              <span class="material-symbols-outlined text-white text-[20px]">alternate_email</span>
+            </div>
+            <p class="text-sm text-gray-100">
+              Designing for dark mode isn't just about inverting colors. It's about managing depth, hierarchy, and
+              preventing eye strain with softer contrast.
+            </p>
+            <div class="flex items-center gap-4 pt-2">
+              <button class="flex items-center gap-1 text-gray-400 hover:text-white transition-colors">
+                <span class="material-symbols-outlined text-[20px]">favorite_border</span>
+              </button>
+              <button class="flex items-center gap-1 text-gray-400 hover:text-white transition-colors">
+                <span class="material-symbols-outlined text-[20px]">mode_comment</span>
+              </button>
+              <button class="flex items-center gap-1 text-gray-400 hover:text-white transition-colors">
+                <span class="material-symbols-outlined text-[20px]">autorenew</span>
+              </button>
+              <button class="flex items-center gap-1 text-gray-400 hover:text-white transition-colors ml-auto">
+                <span class="material-symbols-outlined text-[20px]">send</span>
+              </button>
+            </div>
+          </article>
+          <!-- Card 5: Video Content -->
+          <article class="break-inside-avoid glass-card rounded-2xl p-4 flex flex-col gap-4">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <div class="size-10 rounded-full bg-cover bg-center border border-white/10"
+                  data-alt="Woman with curly hair"
+                  style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA8VeRU-EOr7QY-tENMPDXM33zBSwmlINt0eATQA8bwrndztBzFgA56GBmwNqqzd9SCr2qMCFzbfKBD9YFQr1-AySoFqrZtc_FWMPeWYYz9eERZA3xPPfvsXA9pC5hTkfNN_MUOhUWjZvM86ZCpyVStiaXe_vjVsg00uD6AMklallP8Dinjn_SVPChZDIOeZBpJZl88OqqvzPkWye59vAUeeD_FPR_SegnuHl91mEQKh7aZ4NkNeejRzjwWCDpI1IPUNKn338z3j8Zo')">
+                </div>
+                <div>
+                  <h3 class="text-sm font-semibold text-white">Creative Studio</h3>
+                  <p class="text-xs text-gray-400">@creative_std • 6h</p>
+                </div>
+              </div>
+              <span
+                class="bg-red-500/20 text-red-400 px-2 py-0.5 rounded text-[10px] font-bold tracking-wider uppercase border border-red-500/20">Live</span>
+            </div>
+            <div class="rounded-xl overflow-hidden relative group cursor-pointer">
+              <div class="w-full aspect-video bg-cover bg-center" data-alt="Abstract colorful neon lights"
+                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCZ169dOeMbAkJ8ZwcQVO8TCSluPjxlYUWyHAiFnog9iHB8YkaCWB3Usa-gAVckRF7F7daoxsdAWn4jfS0PdeAPlAmDuGPMcM0eGIHxFL9YfzCziY8s7txnR8OTqPnxoaFtLd3C8rHB0U28qB26MJnxjhFghPFOVHQGUeqWkZRkCziMVcnSyi57d6B5kZ4c2jACFBm4cFq6lPGP9ib_0Sy0dfxxdWbC7CbJq8kvt1AulQvH4cr-CuFyAHbdgxDQKErop_iGPnnftx-t')">
+              </div>
+              <div
+                class="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/30 transition-colors">
+                <div
+                  class="size-12 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <span class="material-symbols-outlined text-white text-[32px] pl-1">play_arrow</span>
+                </div>
+              </div>
+            </div>
+            <p class="text-sm text-gray-200">Behind the scenes of our latest motion graphics project. The render times
+              were insane! 🎞️</p>
+          </article>
+          <!-- Card 6: Twitter Text -->
+          <article class="break-inside-avoid glass-card rounded-2xl p-5 flex flex-col gap-3 relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-1 h-full bg-[#1DA1F2]"></div>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <div class="size-10 rounded-full bg-cover bg-center border border-white/10" data-alt="Smiling man"
+                  style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDayWRdxzr8mMd6Yk3dO6VCZ7AVsY8piYV0o0xuSlGae-cHLA3lErelqp_byYLi8P-nJxXUSFOedD4teMbohz-3HhlZRbWo7SdafTcm1nuLQzFsHxKRotTy0FYmszwRahoEPun4hwScmydxEzLvqHUuf5y_HedL354LXdHoqq8-ozgep-BoheAQW_v4sPEZw4rUfHQumzSZS5KYbVQ2E4vbx6SjlCIQvopJohvEwMzLY1LcLNKEkNiQ50VavO4sq-cUIZg2fkA8qHFM')">
+                </div>
+                <div>
+                  <h3 class="text-sm font-semibold text-white">Jason Code</h3>
+                  <p class="text-xs text-gray-400">@jasoncode • 1h</p>
+                </div>
+              </div>
+              <span class="material-symbols-outlined text-[#1DA1F2] text-[20px]">flutter_dash</span>
+            </div>
+            <p class="text-base text-white leading-relaxed font-light">
+              Anyone else feel like the hardest part of a side project is naming the variables? 😂
+            </p>
+            <div class="flex items-center justify-between pt-2 mt-1 border-t border-white/5">
+              <div class="flex gap-6 text-gray-400 w-full pt-1">
+                <button class="flex items-center gap-1.5 hover:text-green-400 transition-colors">
+                  <span class="material-symbols-outlined text-[18px]">chat_bubble</span>
+                  <span class="text-xs">12</span>
+                </button>
+                <button class="flex items-center gap-1.5 hover:text-pink-500 transition-colors">
+                  <span class="material-symbols-outlined text-[18px]">favorite</span>
+                  <span class="text-xs">89</span>
+                </button>
+              </div>
+            </div>
+          </article>
+          <!-- Card 7: Gallery Post -->
+          <article class="break-inside-avoid glass-card rounded-2xl p-4 flex flex-col gap-4">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <div class="size-10 rounded-full bg-cover bg-center border border-white/10"
+                  data-alt="Young woman looking at camera"
+                  style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCzSapbStUJqIrc8oCCsntwBvdC-APG3KhITTeAtWP65hgpjmYkhI4_FObqbYQVd250NYFS5NDIxuVuGAumQSAWPd_jRz0yAKeeJ9NIFoyIaQxdqo8gVWv60M0R1kKjZYk1r7-8Ibdx-zajcR0S2HqjIOQuagZ-EQj4b4-8MV4T_H06fkPnG35d8EBrkE0gfRHqB-56KINnN12718j7NopnuemXcoHuB68ha9n-zYV1EMyGlfh9eQk3FS4lhPtepq3PzEL1k5FElI73')">
+                </div>
+                <div>
+                  <h3 class="text-sm font-semibold text-white">Emma Travels</h3>
+                  <p class="text-xs text-gray-400">@emmatravels • 1d</p>
+                </div>
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-2 rounded-xl overflow-hidden">
+              <div class="aspect-square bg-cover bg-center" data-alt="Plane window view"
+                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCE-kzMItNHMe3M1d4hE0bpSe6HKi4fnXtoaZvyqj4c2htYeupMtBKuipUcPDUDt8po34og7KWSN8wccSXmXlx_rLQ4JxMvNJszO20FhwF4RJGTDpRL5S7lE6vjWak9xeqP1UPvWb-iz02w5KeurSF_PdgVvWevA3KNYJ4lYN3_yCgl35zhDb9LwdwDwBEpjW9TLlDYODny1ZSd4_aS_QhWm0N5-BsupQKqNwwjstihoEGWwq3zHkTvywPbcswnIsy54V9xoElFV612')">
+              </div>
+              <div class="aspect-square bg-cover bg-center" data-alt="Swiss alps landscape"
+                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDRnJ_IAaTYEYqnhNirbZVRZPlq-ADKZQVx4PxJx8kkyzprCHsq9HdwiRTdwIbtvK4NBYRZOMlx9KKLN6uVP-ow2Hedsf99UpzezYtfS1NO_H9OMLLRBlMJ3fwKHOHiJaZjRyEx8rWGEh4FrfKGQNq388AHTZPCWITc1jfYJtWh1GubTTUoVtML0VOxTJVjg3mPya-2-kqTy62CKK7s9VLtfb5esyeGQpeyNVGpyMiUv6AGiZ8ioA1qI97YIGDyvfxBEiiwLwbHXg5a')">
+              </div>
+              <div class="aspect-square bg-cover bg-center" data-alt="Hotel pool view"
+                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDgC7awpgrXgh3EUTR6D3S4RY_Df6_NeusO_SBWcc_kXOqXcGbolfmy7Q0pX3AHAWgC07O6Zr5p2AQjVPuODUPmLVgXdPJp-ca1ru3qxaDlx647MVwFxv_N8Omaejz5mEvi2W90cSbKYX6NMLREo63HNE07FbXcU1sr46b59POuTTMpYc8B1J1NT4ZD_R7Hsm8YJLtJ8gWQ6hpprU4YHkvjlCmzxuFFDaW-lIi4FAjlXPg_Dxv_M8djvm1D0-VZNn1mCRBy9poVDf3h')">
+              </div>
+              <div class="aspect-square bg-cover bg-center relative" data-alt="Beach sunset"
+                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDDI52WHsbOa6GXGYy1Lh9V2HppsgkDevkz33iTfidFL0I5KeUGt3WOeHZ2mU_RAkmqSrVf_Db39WOkHDq_wlgcxViBaBPvATSzjglpfCJllueb1jzaTVDIUyY6yyIG2CWoXkSI9xgk-bmILqi-4FgmEgMkYPLp7iIzc-Pl532VsnBw3XVdvqxBun0EawevksigDiaNq_utT50PSH2Kx2rx_v_kXh6HBk3c5qCjoB8zeDsIsEcJX69xP34pGbuqwUUjMYO-d7Eb9KdS')">
+                <div class="absolute inset-0 bg-black/50 flex items-center justify-center">
+                  <span class="text-white font-bold text-lg">+3</span>
+                </div>
+              </div>
+            </div>
+            <p class="text-sm text-gray-200">Photo dump from last week's adventure. Missing this already! 🌍✈️</p>
+            <div class="flex items-center justify-between pt-2">
+              <div class="flex -space-x-2">
+                <div class="size-6 rounded-full ring-2 ring-[#211b27] bg-gray-300 bg-cover" data-alt="User avatar 1"
+                  style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBNQguGvBtAHXfIho5_h4A-6KPlKX2Ve_NF_Rb5q4xbYIJFD5GPToBDPx31ljN3uOGUDyOqM6zdCRX0HlyxNiv0wcPvu14Ris1MmtyT5Hxwhrq6A0a0JLpDjFPIZY5C0ipaoKlBZfUtWW29my4hWdHE4rDTlGKSGPDcvyShhhpjfNnR03NALhicgxTPXOZl-PkO1b826ZhvGQ94FJ-uRv_2UOK723UR836AzAQLA1Q4oBFwNp06qw4FZHb4dsGW6ddil_0v4a20_myv')">
+                </div>
+                <div class="size-6 rounded-full ring-2 ring-[#211b27] bg-gray-300 bg-cover" data-alt="User avatar 2"
+                  style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuByohtu_fy9jb7THJzCujBaxSmjuuyrt2_tLfiC94V3kMYuLiO9QfDXjdwqaBOCn7yXQo0u2_Vop51ZK9gU-4ozHDXpF975w4OT2IhaWoD8TBT7OJ_UKabMqFhvJc5qVQ6Pylfr1yEjR0kgcrxVtr7xpFA-p4l5Ylz93hBIBUURjLa_H0_ooi2tHHOlLNN1VjJQO8Y1XewRA0rjzR7EPVHaB3FVaR31LIQPvxY7VKyDb7xJucBYM4evxE83G5In_U09EGGJc4rj4PMq')">
+                </div>
+                <div class="size-6 rounded-full ring-2 ring-[#211b27] bg-gray-300 bg-cover" data-alt="User avatar 3"
+                  style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAvoxlZu_D6J0uQHqRXSVIi80-gTZyvxzFOsfWK9wpIgoqGi_k4I2fJtsqQeBuziW3D8IYErxTip2IIYfSJurtXknWOqMKIogAmUyWE2HWB14fW9aM6naNUoDsT9DtlYIoeYWEoh4tqoil3-2d1y6kQ5yY74s6f0SZIwxgc_vOCdSLCtsgdkXwdGlAPXIFKUYq6P-QN3PIVTmM6XybO-e63KcOXIpE6dg1AhXhtUhwBemg1kAkeWBp8fHB0bX-lHgLrlYO_GmajjZiY')">
+                </div>
+              </div>
+              <div class="text-xs text-gray-400">Liked by <strong>alexm_design</strong> and <strong>1,203
+                  others</strong></div>
+            </div>
+          </article>
+        </div>
+      </div>
+      <!-- Floating Action Button -->
+      <button
+        class="absolute bottom-8 right-8 size-14 rounded-full bg-primary hover:bg-purple-600 text-white shadow-[0_0_20px_rgba(127,13,242,0.6)] flex items-center justify-center transition-all hover:scale-110 group z-30">
+        <span class="material-symbols-outlined text-[28px] group-hover:rotate-90 transition-transform">add</span>
+      </button>
+    </main>
+  </div>
+</body>
+
+</html>
