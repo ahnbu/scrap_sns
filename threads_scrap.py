@@ -14,7 +14,7 @@ import time
 import re
 import os
 import glob
-from datetime import datetime
+from datetime import datetime, timedelta
 from dotenv import load_dotenv
 
 # 환경 변수 로드
@@ -88,6 +88,33 @@ def format_timestamp(ts):
         return dt.strftime('%Y-%m-%d %H:%M:%S'), dt.strftime('%Y-%m-%d')
     except:
         return None, None
+
+def parse_relative_time(relative_str, base_time):
+    """
+    "1주", "3일", "5시간" 등 상대적 시간을 절대 시간 문자열로 변환
+    """
+    if not relative_str: return None, None
+    
+    # 이미 절대 날짜인 경우 (예: 2024-01-01)
+    if re.match(r'^\d{4}-\d{2}-\d{2}$', relative_str):
+        return f"{relative_str} 00:00:00", relative_str
+
+    match = re.search(r'(\d+)\s*(분|시간|일|주|개월|년)', relative_str)
+    if not match: return None, None
+    
+    value = int(match.group(1))
+    unit = match.group(2)
+    
+    if unit == "분": delta = timedelta(minutes=value)
+    elif unit == "시간": delta = timedelta(hours=value)
+    elif unit == "일": delta = timedelta(days=value)
+    elif unit == "주": delta = timedelta(weeks=value)
+    elif unit == "개월": delta = timedelta(days=value * 30)
+    elif unit == "년": delta = timedelta(days=value * 365)
+    else: return None, None
+    
+    target_time = base_time - delta
+    return target_time.strftime('%Y-%m-%d %H:%M:%S'), target_time.strftime('%Y-%m-%d')
 
 def find_latest_full_file():
     """output 폴더에서 최신 threads_py_full_*.json 파일 찾기"""
@@ -462,6 +489,7 @@ def run():
 
             post_info = {
                 "code": post.get("code"),
+                "pk": post.get("pk"),
                 "username": user.get("username"),
                 "user_link": f"https://www.threads.net/@{user.get('username')}",
                 "full_text": caption.get("text") if caption else "",
@@ -471,8 +499,9 @@ def run():
                 "quote_count": extra_info.get("quote_count", 0),
                 "created_at": created_at,
                 "time_text": time_text,
-                "post_url": f"https://www.threads.net/@{user.get('username')}/post/{post.get('code')}",
+                "post_url": f"https://www.threads.net/t/{post.get('code')}",
                 "images": images,
+                "media_type": post.get("media_type"),
                 "content_type": content_type,
                 "source": "network"
             }
@@ -507,7 +536,9 @@ def run():
 
                 try:
                     raw_text = element.inner_text()
+                    lines = raw_text.split('\n')
                     link_locator = element.locator('a[href*="/post/"]').first
+
                     if link_locator.count() > 0:
                         href = link_locator.get_attribute("href")
                         parts = href.split('/')
@@ -521,6 +552,16 @@ def run():
                                 stop_code_found = True
                                 break
                             
+                            # [날짜 추출] 상대적 시간 감지
+                            relative_date_str = None
+                            date_patterns = [r'^\d+시간$', r'^\d+분$', r'^\d+일$', r'^\d+주$', r'^\d{4}-\d{2}-\d{2}$']
+                            for line in lines[1:4]: # 이름 바로 다음 몇 줄 확인
+                                line = line.strip()
+                                if any(re.match(ptr, line) for ptr in date_patterns):
+                                    relative_date_str = line
+                                    break
+                            
+                            created_at, time_text = parse_relative_time(relative_date_str, start_time_dt)
                             cleaned_text = clean_text(raw_text, username)
                             
                             # 중복 체크 (code 기준)
@@ -535,6 +576,7 @@ def run():
 
                             post_info = {
                                 "code": code,
+                                "pk": None, # DOM에서는 PK 알 수 없음
                                 "username": username,
                                 "user_link": f"https://www.threads.net/@{username}",
                                 "full_text": cleaned_text,
@@ -542,10 +584,11 @@ def run():
                                 "reply_count": -1,
                                 "repost_count": -1,
                                 "quote_count": -1,
-                                "created_at": None,
-                                "time_text": None,
-                                "post_url": f"https://www.threads.net{href}",
+                                "created_at": created_at,
+                                "time_text": time_text,
+                                "post_url": f"https://www.threads.net/t/{code}",
                                 "images": list(set(images)),
+                                "media_type": None,
                                 "content_type": "carousel" if len(images) > 1 else ("image" if images else "text"),
                                 "source": "initial_dom"
                             }

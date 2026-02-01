@@ -250,10 +250,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Date Logic
         const dateObj = post._dateObj;
-        const isRecent = (new Date() - dateObj) < (1000 * 60 * 60 * 24 * 2); // 2 days
         const dateLabel = post.created_at 
             ? dateObj.toLocaleDateString() 
-            : `(Crawled) ${dateObj.toLocaleDateString()}`;
+            : (post.time_text ? post.time_text : `(Crawled) ${dateObj.toLocaleDateString()}`);
+
+
 
         // --- Header ---
         const header = document.createElement('div');

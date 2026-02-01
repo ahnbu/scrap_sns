@@ -15,8 +15,8 @@ UPDATE_DIR = os.path.join(DATA_DIR, "update")
 
 # 스크랩 설정
 TARGET_LIMIT = 0       # 0 = 무제한
-# CRAWL_MODE = "all"     # "all" or "update only"
-CRAWL_MODE = "update only"     # "all" or "update only"
+CRAWL_MODE = "all"     # "all" or "update only"
+# CRAWL_MODE = "update only"     # "all" or "update only"
 CRAWL_START_TIME = datetime.now()
 # INCLUDE_IMAGES = False # 이미지 크롤링 포함 여부
 INCLUDE_IMAGES = True # 이미지 크롤링 포함 여부
@@ -70,7 +70,41 @@ def get_date_from_snowflake_id(id_str):
         dt = datetime.fromtimestamp(timestamp_ms / 1000)
         return dt.strftime('%Y-%m-%d %H:%M:%S')
     except:
-        return datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        return None
+
+def parse_relative_time(relative_str, base_time):
+    """
+    "1주", "3일", "5시간" 등 상대적 시간을 절대 시간 문자열로 변환
+    """
+    if not relative_str:
+        return None
+        
+    # 숫자와 단위 추출 (예: "1주", "10분", "2개월")
+    match = re.search(r'(\d+)\s*(분|시간|일|주|개월|년)', relative_str)
+    if not match:
+        return None
+        
+    value = int(match.group(1))
+    unit = match.group(2)
+    
+    if unit == "분":
+        delta = timedelta(minutes=value)
+    elif unit == "시간":
+        delta = timedelta(hours=value)
+    elif unit == "일":
+        delta = timedelta(days=value)
+    elif unit == "주":
+        delta = timedelta(weeks=value)
+    elif unit == "개월":
+        delta = timedelta(days=value * 30) # 근사치
+    elif unit == "년":
+        delta = timedelta(days=value * 365) # 근사치
+    else:
+        return None
+        
+    target_time = base_time - delta
+    return target_time.strftime('%Y-%m-%d %H:%M:%S')
+
 
 # --- 메인 클래스 ---
 class LinkedinScraper:
@@ -241,20 +275,31 @@ class LinkedinScraper:
                                 path_segment = best_artifact.get("fileIdentifyingUrlPathSegment", "")
                                 full_img_url = root_url + path_segment
                                 images.append(full_img_url)
+                        
+                        # Strategy 2: imageUrl.url (Fallback)
+                        image_url_obj = detail.get("imageUrl", {})
+                        if image_url_obj and image_url_obj.get("url"):
+                            images.append(image_url_obj.get("url"))
+
 
             # 5. 게시물 링크
             # navigationUrl
             post_url = item.get("navigationUrl", "")
             
+            # 4. 상대적 시간 (UI 표시용)
+            time_text = item.get("secondarySubtitle", {}).get("text", "").replace(" • ", "").strip()
+
             post_data = {
                 "code": activity_id,
                 "username": username,
                 "created_at": date_str,
+                "time_text": time_text,
                 "full_text": clean_text(text),
                 "post_url": post_url,
                 "profile_slogan": profile_slogan,
-                "images": images,
+                "images": list(set(images)),
                 "user_link": user_link,
+
                 "crawled_at": CRAWL_START_TIME.isoformat(),
                 "content_type": "carousel" if len(images) > 1 else ("image" if images else "text"),
                 "source": "network"
