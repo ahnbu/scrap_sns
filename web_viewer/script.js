@@ -143,12 +143,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
         try {
             // Check if data loaded from data.js
+            // ⚠️ 강제 JSON Fetch 모드: data.js가 오래된 데이터일 수 있으므로 항상 JSON 파일을 로드합니다.
             if (typeof snsFeedData !== 'undefined') {
                 allPosts = Array.isArray(snsFeedData) ? snsFeedData : (snsFeedData.posts || []);
                 
                 // Pre-process dates for consistent sorting
                 allPosts.forEach(post => {
-                    const dateStr = post.created_at || post.crawled_at;
+                    let dateStr = post.created_at || post.crawled_at;
+                    // Ensure ISO format for consistent parsing (replace space with T)
+                    if (dateStr && dateStr.includes(' ') && !dateStr.includes('T')) {
+                        dateStr = dateStr.replace(' ', 'T');
+                    }
                     post._dateObj = dateStr ? new Date(dateStr) : new Date(0);
                     post._seqId = post.sequence_id || 0;
                 });
@@ -164,7 +169,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 // Pre-process dates for consistent sorting (also for fallback)
                 allPosts.forEach(post => {
-                    const dateStr = post.created_at || post.crawled_at;
+                    let dateStr = post.created_at || post.crawled_at;
+                    if (dateStr && dateStr.includes(' ') && !dateStr.includes('T')) {
+                        dateStr = dateStr.replace(' ', 'T');
+                    }
                     post._dateObj = dateStr ? new Date(dateStr) : new Date(0);
                     post._seqId = post.sequence_id || 0;
                 });
@@ -250,9 +258,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Date Logic
         const dateObj = post._dateObj;
-        const dateLabel = post.created_at 
-            ? dateObj.toLocaleDateString() 
-            : (post.time_text ? post.time_text : `(Crawled) ${dateObj.toLocaleDateString()}`);
+        const options = { year: 'numeric', month: 'numeric', day: 'numeric' };
+        
+        let dateLabel;
+        if (post.created_at) {
+            dateLabel = dateObj.toLocaleDateString('ko-KR', options);
+        } else if (post.time_text) {
+            dateLabel = post.time_text;
+        } else {
+            dateLabel = `${dateObj.toLocaleDateString('ko-KR', options)}`;
+        }
 
 
 
@@ -310,7 +325,12 @@ document.addEventListener('DOMContentLoaded', () => {
         if (post.images && post.images.length > 0) {
             // Use Image Proxy to bypass CORS/CORP issues specially for Instagram/Threads CDN
             const originalUrl = post.images[0];
-            const imgUrl = `https://images.weserv.nl/?url=${encodeURIComponent(originalUrl)}&output=webp`;
+            let imgUrl = `https://images.weserv.nl/?url=${encodeURIComponent(originalUrl)}&output=webp`;
+            
+            // LinkedIn images (licdn.com) often work better directly without proxy
+            if (originalUrl.includes('licdn.com')) {
+                imgUrl = originalUrl;
+            }
             
             const moreCount = post.images.length - 1;
             

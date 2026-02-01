@@ -128,6 +128,18 @@ def save_total(new_posts, threads_count, linkedin_count):
     else:
         print("   이번 실행에서 새로운 업데이트가 없습니다.")
 
+    # 4. 웹 뷰어용 data.js 자동 갱신 (CORS 문제 해결 및 로컬 실행 지원)
+    data_js_path = os.path.join("web_viewer", "data.js")
+    try:
+        # JSON 데이터 로드 (위의 total_data를 재사용하면 좋지만, 함수 구조상 다시 구성)
+        js_content = "const snsFeedData = " + json.dumps(total_data, ensure_ascii=False, indent=2) + ";"
+        
+        with open(data_js_path, 'w', encoding='utf-8') as f:
+            f.write(js_content)
+        print(f"   🌐 web_viewer/data.js 자동 갱신 완료")
+    except Exception as e:
+        print(f"   ⚠️ data.js 갱신 실패: {e}")
+
 def run():
     run_scrapers()
     merged_results_data = merge_results()

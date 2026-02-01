@@ -42,8 +42,8 @@ TARGET_LIMIT = 0
 # 🔄 크롤링 범위 설정
 # - "all": 처음부터 끝까지 전체 수집
 # - "update only": 최신 full 버전의 최상단 code까지만 수집 (신규 게시물만)
+# CRAWL_MODE = "all"  # "all" 또는 "update only"
 CRAWL_MODE = "update only"  # "all" 또는 "update only"
-#CRAWL_MODE = "all"  # "all" 또는 "update only"
 
 # ===========================
 

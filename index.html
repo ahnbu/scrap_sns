@@ -1,183 +1,304 @@
-<!DOCTYPE html>
+<!doctype html>
 <html class="dark" lang="ko">
-<head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <meta name="referrer" content="no-referrer" />
-  <title>SNS Feed Viewer</title>
-  <link rel="icon" type="image/png" href="favicon.png" />
-  
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
-  
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  <script>
-    tailwind.config = {
-      darkMode: "class",
-      theme: {
-        extend: {
-          colors: {
-            "primary": "#7f0df2",
-            "background-light": "#f7f5f8",
-            "background-dark": "#121212",
-            "surface-glass": "rgba(255, 255, 255, 0.03)",
-            "surface-glass-hover": "rgba(255, 255, 255, 0.07)",
-            "border-glass": "rgba(255, 255, 255, 0.08)",
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta name="referrer" content="no-referrer" />
+    <title>SNS Feed Viewer</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Scripts -->
+    <script src="web_viewer/data.js"></script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#7f0df2",
+              "background-light": "#f7f5f8",
+              "background-dark": "#121212",
+              "surface-glass": "rgba(255, 255, 255, 0.03)",
+              "surface-glass-hover": "rgba(255, 255, 255, 0.07)",
+              "border-glass": "rgba(255, 255, 255, 0.08)",
+            },
+            fontFamily: {
+              display: ["Spline Sans", "sans-serif"],
+              body: ["Inter", "sans-serif"],
+            },
+            backdropBlur: {
+              xs: "2px",
+            },
           },
-          fontFamily: {
-            "display": ["Spline Sans", "sans-serif"],
-            "body": ["Inter", "sans-serif"]
-          },
-          backdropBlur: {
-            xs: '2px',
-          }
         },
-      },
-    }
-  </script>
-  
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="web_viewer/style.css">
-</head>
+      };
+    </script>
 
-<body class="font-display text-white ambient-bg min-h-screen flex flex-col">
-  
-  <!-- Main Content Area -->
-  <main class="w-full flex-1 flex flex-col relative min-h-screen">
-    
-    <!-- Top Header (Search & Filters) -->
-    <header class="sticky top-0 z-40 w-full bg-background-dark/90 backdrop-blur-xl border-b border-white/5 shadow-lg shadow-black/5 transition-all duration-300">
-      <div class="max-w-[1800px] mx-auto px-6 py-4 flex flex-col md:flex-row md:items-center justify-between gap-4">
-      
-      <!-- Brand & Search -->
-      <div class="flex items-center gap-6 w-full md:w-auto">
-        <div class="flex items-center gap-3">
-          <div class="size-10 rounded-xl bg-gradient-to-br from-primary to-purple-400 flex items-center justify-center shadow-lg shadow-primary/30 shrink-0">
-            <span class="material-symbols-outlined text-white">hub</span>
-          </div>
-          <h1 class="text-xl font-bold tracking-tight text-white hidden sm:block">SNS Feed</h1>
-        </div>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="web_viewer/style.css" />
+  </head>
 
-        <!-- Search Bar -->
-        <div class="relative w-full md:w-96 group">
-          <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-            <span class="material-symbols-outlined text-gray-400 group-focus-within:text-primary transition-colors">search</span>
-          </div>
-          <input id="searchInput"
-            class="block w-full pl-10 pr-3 py-2.5 border border-border-glass rounded-xl leading-5 bg-surface-glass text-white placeholder-gray-500 focus:outline-none focus:bg-surface-glass-hover focus:ring-1 focus:ring-primary/50 focus:border-primary/50 sm:text-sm transition-all"
-            placeholder="Search keywords, users..." type="text" />
-        </div>
-      </div>
+  <body class="font-display text-white ambient-bg min-h-screen flex flex-col">
+    <!-- Main Content Area -->
+    <main class="w-full flex-1 flex flex-col relative min-h-screen">
+      <!-- Top Header (Search & Filters) -->
+      <header
+        class="sticky top-0 z-40 w-full bg-background-dark/90 backdrop-blur-xl border-b border-white/5 shadow-lg shadow-black/5 transition-all duration-300"
+      >
+        <div
+          class="max-w-[1800px] mx-auto px-6 py-4 flex flex-col md:flex-row md:items-center justify-between gap-4"
+        >
+          <!-- Brand & Search -->
+          <div class="flex items-center gap-6 w-full md:w-auto">
+            <div class="flex items-center gap-3">
+              <div
+                class="size-10 rounded-xl bg-gradient-to-br from-primary to-purple-400 flex items-center justify-center shadow-lg shadow-primary/30 shrink-0"
+              >
+                <span class="material-symbols-outlined text-white">hub</span>
+              </div>
+              <h1
+                class="text-xl font-bold tracking-tight text-white hidden sm:block"
+              >
+                SNS Feed
+              </h1>
+            </div>
 
-      <!-- Main Filters Row -->
-      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 w-full">
-        <!-- Chips/Filters -->
-        <div class="flex items-center gap-2 overflow-x-auto pb-2 md:pb-0 no-scrollbar flex-1" id="filterContainer">
-          <button data-filter="all"
-            class="filter-chip active px-4 py-2 rounded-full bg-surface-glass text-gray-300 hover:text-white text-sm font-medium border border-border-glass transition-all hover:scale-105 whitespace-nowrap">
-            All
-          </button>
-          <button data-filter="linkedin"
-            class="filter-chip flex items-center gap-2 px-4 py-2 rounded-full bg-surface-glass hover:bg-surface-glass-hover text-gray-300 hover:text-white text-sm font-medium border border-border-glass transition-all whitespace-nowrap group">
-            <span class="material-symbols-outlined text-[18px] text-[#0A66C2]">work</span>
-            LinkedIn
-          </button>
-          <button data-filter="threads"
-            class="filter-chip flex items-center gap-2 px-4 py-2 rounded-full bg-surface-glass hover:bg-surface-glass-hover text-gray-300 hover:text-white text-sm font-medium border border-border-glass transition-all whitespace-nowrap group">
-            <span class="material-symbols-outlined text-[18px] text-white">alternate_email</span>
-            Threads
-          </button>
-          <button data-filter="instagram"
-            class="filter-chip flex items-center gap-2 px-4 py-2 rounded-full bg-surface-glass hover:bg-surface-glass-hover text-gray-300 hover:text-white text-sm font-medium border border-border-glass transition-all whitespace-nowrap group">
-            <span class="material-symbols-outlined text-[18px] text-[#E1306C]">photo_camera</span>
-            Instagram
-          </button>
-        </div>
-
-        <!-- Sort & Refresh -->
-        <div class="flex items-center gap-3 shrink-0">
-          <div class="relative group z-20">
-            <button id="sortBtn" class="flex items-center gap-2 px-4 py-2 rounded-full bg-surface-glass hover:bg-surface-glass-hover text-gray-300 hover:text-white text-sm font-medium border border-border-glass transition-all">
-              <span class="material-symbols-outlined text-[18px]">sort</span>
-              <span id="currentSortLabel">Latest (Date)</span>
-              <span class="material-symbols-outlined text-[16px]">expand_more</span>
-            </button>
-            <!-- Dropdown -->
-            <div id="sortDropdown" class="absolute left-0 md:right-0 top-full mt-2 w-48 bg-[#1E1E24] border border-white/10 rounded-xl shadow-xl overflow-hidden hidden transform origin-top transition-all">
-              <button data-sort="date" class="block w-full text-left px-4 py-3 text-sm text-gray-300 hover:bg-white/5 hover:text-white transition-colors active-sort">
-                Latest (Date)
-              </button>
-              <button data-sort="saved" class="block w-full text-left px-4 py-3 text-sm text-gray-300 hover:bg-white/5 hover:text-white transition-colors">
-                Saved Order
-              </button>
+            <!-- Search Bar -->
+            <div class="relative w-full md:w-96 group">
+              <div
+                class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
+              >
+                <span
+                  class="material-symbols-outlined text-gray-400 group-focus-within:text-primary transition-colors"
+                  >search</span
+                >
+              </div>
+              <input
+                id="searchInput"
+                class="block w-full pl-10 pr-3 py-2.5 border border-border-glass rounded-xl leading-5 bg-surface-glass text-white placeholder-gray-500 focus:outline-none focus:bg-surface-glass-hover focus:ring-1 focus:ring-primary/50 focus:border-primary/50 sm:text-sm transition-all"
+                placeholder="Search keywords, users..."
+                type="text"
+              />
             </div>
           </div>
 
-          <div class="flex items-center gap-2 text-sm text-gray-400 md:pl-4 md:border-l md:border-white/10 w-full md:w-auto justify-end">
-            <span id="totalPostsCount" class="mr-auto md:mr-2 text-xs md:text-sm">Loading...</span>
-            
-            <button id="runScrapBtn" class="flex items-center gap-2 px-3 md:px-4 py-2 rounded-xl bg-surface-glass hover:bg-surface-glass-hover text-gray-300 hover:text-white border border-border-glass transition-all hover:scale-105 group active:scale-95">
-              <span class="material-symbols-outlined text-[18px] md:text-[20px] text-primary group-hover:animate-pulse">rocket_launch</span>
-              <span class="font-medium whitespace-nowrap text-xs md:text-sm">Run Scrap</span>
-            </button>
-            
-            <button id="refreshBtn" class="flex items-center gap-2 px-3 md:px-4 py-2 rounded-xl bg-surface-glass hover:bg-surface-glass-hover text-gray-300 hover:text-white border border-border-glass transition-all hover:scale-105 group active:scale-95">
-              <span class="material-symbols-outlined text-[18px] md:text-[20px] text-gray-400 group-hover:rotate-180 transition-transform duration-500">update</span>
-              <span class="font-medium whitespace-nowrap text-xs md:text-sm">Refresh</span>
-            </button>
+          <!-- Main Filters Row -->
+          <div
+            class="flex flex-col md:flex-row md:items-center justify-between gap-4 w-full"
+          >
+            <!-- Chips/Filters -->
+            <div
+              class="flex items-center gap-2 overflow-x-auto pb-2 md:pb-0 no-scrollbar flex-1"
+              id="filterContainer"
+            >
+              <button
+                data-filter="all"
+                class="filter-chip active px-4 py-2 rounded-full bg-surface-glass text-gray-300 hover:text-white text-sm font-medium border border-border-glass transition-all hover:scale-105 whitespace-nowrap"
+              >
+                All
+              </button>
+              <button
+                data-filter="linkedin"
+                class="filter-chip flex items-center gap-2 px-4 py-2 rounded-full bg-surface-glass hover:bg-surface-glass-hover text-gray-300 hover:text-white text-sm font-medium border border-border-glass transition-all whitespace-nowrap group"
+              >
+                <span
+                  class="material-symbols-outlined text-[18px] text-[#0A66C2]"
+                  >work</span
+                >
+                LinkedIn
+              </button>
+              <button
+                data-filter="threads"
+                class="filter-chip flex items-center gap-2 px-4 py-2 rounded-full bg-surface-glass hover:bg-surface-glass-hover text-gray-300 hover:text-white text-sm font-medium border border-border-glass transition-all whitespace-nowrap group"
+              >
+                <span class="material-symbols-outlined text-[18px] text-white"
+                  >alternate_email</span
+                >
+                Threads
+              </button>
+              <button
+                data-filter="instagram"
+                class="filter-chip flex items-center gap-2 px-4 py-2 rounded-full bg-surface-glass hover:bg-surface-glass-hover text-gray-300 hover:text-white text-sm font-medium border border-border-glass transition-all whitespace-nowrap group"
+              >
+                <span
+                  class="material-symbols-outlined text-[18px] text-[#E1306C]"
+                  >photo_camera</span
+                >
+                Instagram
+              </button>
+            </div>
+
+            <!-- Sort & Refresh -->
+            <div class="flex items-center gap-3 shrink-0">
+              <div class="relative group z-20">
+                <button
+                  id="sortBtn"
+                  class="flex items-center gap-2 px-4 py-2 rounded-full bg-surface-glass hover:bg-surface-glass-hover text-gray-300 hover:text-white text-sm font-medium border border-border-glass transition-all"
+                >
+                  <span class="material-symbols-outlined text-[18px]"
+                    >sort</span
+                  >
+                  <span id="currentSortLabel">Latest (Date)</span>
+                  <span class="material-symbols-outlined text-[16px]"
+                    >expand_more</span
+                  >
+                </button>
+                <!-- Dropdown -->
+                <div
+                  id="sortDropdown"
+                  class="absolute left-0 md:right-0 top-full mt-2 w-48 bg-[#1E1E24] border border-white/10 rounded-xl shadow-xl overflow-hidden hidden transform origin-top transition-all"
+                >
+                  <button
+                    data-sort="date"
+                    class="block w-full text-left px-4 py-3 text-sm text-gray-300 hover:bg-white/5 hover:text-white transition-colors active-sort"
+                  >
+                    Latest (Date)
+                  </button>
+                  <button
+                    data-sort="saved"
+                    class="block w-full text-left px-4 py-3 text-sm text-gray-300 hover:bg-white/5 hover:text-white transition-colors"
+                  >
+                    Saved Order
+                  </button>
+                </div>
+              </div>
+
+              <div
+                class="flex items-center gap-2 text-sm text-gray-400 md:pl-4 md:border-l md:border-white/10 w-full md:w-auto justify-end"
+              >
+                <span
+                  id="totalPostsCount"
+                  class="mr-auto md:mr-2 text-xs md:text-sm"
+                  >Loading...</span
+                >
+
+                <button
+                  id="runScrapBtn"
+                  class="flex items-center gap-2 px-3 md:px-4 py-2 rounded-xl bg-surface-glass hover:bg-surface-glass-hover text-gray-300 hover:text-white border border-border-glass transition-all hover:scale-105 group active:scale-95"
+                >
+                  <span
+                    class="material-symbols-outlined text-[18px] md:text-[20px] text-primary group-hover:animate-pulse"
+                    >rocket_launch</span
+                  >
+                  <span class="font-medium whitespace-nowrap text-xs md:text-sm"
+                    >Run Scrap</span
+                  >
+                </button>
+
+                <button
+                  id="refreshBtn"
+                  class="flex items-center gap-2 px-3 md:px-4 py-2 rounded-xl bg-surface-glass hover:bg-surface-glass-hover text-gray-300 hover:text-white border border-border-glass transition-all hover:scale-105 group active:scale-95"
+                >
+                  <span
+                    class="material-symbols-outlined text-[18px] md:text-[20px] text-gray-400 group-hover:rotate-180 transition-transform duration-500"
+                    >update</span
+                  >
+                  <span class="font-medium whitespace-nowrap text-xs md:text-sm"
+                    >Refresh</span
+                  >
+                </button>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      </div>
-    </header>
+      </header>
 
-    <!-- Scrollable Feed Area -->
-    <div class="w-full max-w-[1800px] mx-auto px-6 py-8 pb-20" id="feedContainer">
-      <!-- Masonry Grid Layout -->
-      <!-- We use individual columns for JS-based distribution to solve vertical stacking order issue -->
-      <div class="flex flex-col md:flex-row gap-6 mx-auto max-w-[1800px]" id="masonryGrid">
-        <!-- Columns will be injected by JS -->
-        <div class="masonry-col flex-1 flex flex-col gap-6 min-w-0"></div> <!-- Col 1 -->
-        <div class="masonry-col flex-1 flex flex-col gap-6 min-w-0 hidden md:flex"></div> <!-- Col 2 -->
-        <div class="masonry-col flex-1 flex flex-col gap-6 min-w-0 hidden lg:flex"></div> <!-- Col 3 -->
-        <div class="masonry-col flex-1 flex flex-col gap-6 min-w-0 hidden 2xl:flex"></div> <!-- Col 4 -->
-      </div>
-      
+      <!-- Scrollable Feed Area -->
+      <div
+        class="w-full max-w-[1800px] mx-auto px-6 py-8 pb-20"
+        id="feedContainer"
+      >
+        <!-- Masonry Grid Layout -->
+        <!-- We use individual columns for JS-based distribution to solve vertical stacking order issue -->
+        <div
+          class="flex flex-col md:flex-row gap-6 mx-auto max-w-[1800px]"
+          id="masonryGrid"
+        >
+          <!-- Columns will be injected by JS -->
+          <div class="masonry-col flex-1 flex flex-col gap-6 min-w-0"></div>
+          <!-- Col 1 -->
+          <div
+            class="masonry-col flex-1 flex flex-col gap-6 min-w-0 hidden md:flex"
+          ></div>
+          <!-- Col 2 -->
+          <div
+            class="masonry-col flex-1 flex flex-col gap-6 min-w-0 hidden lg:flex"
+          ></div>
+          <!-- Col 3 -->
+          <div
+            class="masonry-col flex-1 flex flex-col gap-6 min-w-0 hidden 2xl:flex"
+          ></div>
+          <!-- Col 4 -->
+        </div>
 
-      
-      <!-- No Results -->
-      <div id="noResults" class="hidden flex flex-col items-center justify-center py-20 text-gray-500 gap-2">
-        <span class="material-symbols-outlined text-5xl opacity-50">search_off</span>
-        <p class="text-lg">No posts found matching your criteria.</p>
+        <!-- No Results -->
+        <div
+          id="noResults"
+          class="hidden flex flex-col items-center justify-center py-20 text-gray-500 gap-2"
+        >
+          <span class="material-symbols-outlined text-5xl opacity-50"
+            >search_off</span
+          >
+          <p class="text-lg">No posts found matching your criteria.</p>
+        </div>
       </div>
 
+      <!-- Floating Action Button (Scroll to Top) -->
+      <button
+        onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+        class="fixed bottom-8 right-8 size-12 rounded-full bg-primary/80 hover:bg-primary text-white shadow-[0_0_20px_rgba(127,13,242,0.4)] flex items-center justify-center transition-all hover:scale-110 z-30 backdrop-blur-sm cursor-pointer"
+      >
+        <span class="material-symbols-outlined">arrow_upward</span>
+      </button>
+    </main>
+
+    <!-- Image Modal -->
+    <div
+      id="imageModal"
+      class="fixed inset-0 z-50 hidden bg-black/90 backdrop-blur-xl flex items-center justify-center p-4 transition-opacity duration-300 opacity-0 pointer-events-none"
+    >
+      <button
+        id="closeModal"
+        class="absolute top-6 right-6 text-white/70 hover:text-white transition-colors z-50"
+      >
+        <span class="material-symbols-outlined text-4xl">close</span>
+      </button>
+
+      <div
+        class="relative w-full max-w-7xl h-full flex items-center justify-center"
+      >
+        <img
+          id="modalImage"
+          src=""
+          class="max-w-full max-h-[90vh] rounded-lg shadow-2xl object-contain transition-transform duration-300 scale-95"
+          alt="Full view"
+        />
+
+        <div
+          class="absolute bottom-4 left-0 right-0 text-center pointer-events-none"
+        >
+          <p
+            id="modalCaption"
+            class="inline-block bg-black/50 backdrop-blur-md px-4 py-2 rounded-full text-white text-sm max-w-2xl truncate"
+          ></p>
+        </div>
+      </div>
     </div>
 
-    <!-- Floating Action Button (Scroll to Top) -->
-    <button onclick="window.scrollTo({top:0, behavior:'smooth'})"
-      class="fixed bottom-8 right-8 size-12 rounded-full bg-primary/80 hover:bg-primary text-white shadow-[0_0_20px_rgba(127,13,242,0.4)] flex items-center justify-center transition-all hover:scale-110 z-30 backdrop-blur-sm cursor-pointer">
-      <span class="material-symbols-outlined">arrow_upward</span>
-    </button>
-  </main>
-
-  <!-- Image Modal -->
-  <div id="imageModal" class="fixed inset-0 z-50 hidden bg-black/90 backdrop-blur-xl flex items-center justify-center p-4 transition-opacity duration-300 opacity-0 pointer-events-none">
-    <button id="closeModal" class="absolute top-6 right-6 text-white/70 hover:text-white transition-colors z-50">
-      <span class="material-symbols-outlined text-4xl">close</span>
-    </button>
-    
-    <div class="relative w-full max-w-7xl h-full flex items-center justify-center">
-      <img id="modalImage" src="" class="max-w-full max-h-[90vh] rounded-lg shadow-2xl object-contain transition-transform duration-300 scale-95" alt="Full view">
-      
-      <div class="absolute bottom-4 left-0 right-0 text-center pointer-events-none">
-         <p id="modalCaption" class="inline-block bg-black/50 backdrop-blur-md px-4 py-2 rounded-full text-white text-sm max-w-2xl truncate"></p>
-      </div>
-    </div>
-  </div>
-
-  <script src="web_viewer/data.js"></script>
-  <script src="web_viewer/script.js"></script>
-</body>
+    <script src="web_viewer/data.js"></script>
+    <script src="web_viewer/script.js"></script>
+  </body>
 </html>
