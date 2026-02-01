@@ -21,6 +21,12 @@ CRAWL_START_TIME = datetime.now()
 # INCLUDE_IMAGES = False # 이미지 크롤링 포함 여부
 INCLUDE_IMAGES = True # 이미지 크롤링 포함 여부
 
+# 브라우저 UI 설정
+WINDOW_X = 0           # 화면 가로 위치 (모니터 왼쪽 기준 px)
+WINDOW_Y = 520         # 화면 세로 위치 (모니터 위쪽 기준 px)
+WINDOW_WIDTH = 900     # 브라우저 너비
+WINDOW_HEIGHT = 500    # 브라우저 높이
+
 # --- 헬퍼 함수 ---
 def load_json(filepath):
     if os.path.exists(filepath):
@@ -277,9 +283,17 @@ class LinkedinScraper:
         print("🚀 링크드인 스크래퍼 시작 (Network 모드)")
         
         with sync_playwright() as p:
-            browser = p.chromium.launch(headless=False)
+            browser = p.chromium.launch(
+                headless=False,
+                args=[
+                    f"--window-position={WINDOW_X},{WINDOW_Y}",
+                    f"--window-size={WINDOW_WIDTH},{WINDOW_HEIGHT}"
+                ]
+            )
             
-            context_options = {"viewport": {"width": 1280, "height": 1000}}
+            # viewport를 None으로 설정하면 브라우저 창 크기에 따라 자동으로 조절됨 (또는 고정값 사용 가능)
+            # 여기서는 창 크기와 비례하도록 설정하거나 특정 해상도 고정
+            context_options = {"viewport": {"width": WINDOW_WIDTH, "height": WINDOW_HEIGHT}}
             if os.path.exists(AUTH_FILE):
                 context_options["storage_state"] = AUTH_FILE
             

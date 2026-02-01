@@ -20,6 +20,12 @@ from dotenv import load_dotenv
 # 환경 변수 로드
 load_dotenv('.env.local')
 
+# 브라우저 UI 설정
+WINDOW_X = 0           # 화면 가로 위치 (모니터 왼쪽 기준 px)
+WINDOW_Y = 0           # 화면 세로 위치 (모니터 위쪽 기준 px)
+WINDOW_WIDTH = 900     # 브라우저 너비
+WINDOW_HEIGHT = 500    # 브라우저 높이
+
 # ===========================
 # ⚙️ 설정 (여기만 수정하세요)
 # ===========================
@@ -329,12 +335,23 @@ def run():
 
     with sync_playwright() as p:
         print("🚀 브라우저 실행 중...")
-        browser = p.chromium.launch(headless=False)
+        browser = p.chromium.launch(
+            headless=False,
+            args=[
+                f"--window-position={WINDOW_X},{WINDOW_Y}",
+                f"--window-size={WINDOW_WIDTH},{WINDOW_HEIGHT}"
+            ]
+        )
+        
+        # viewport를 None으로 설정 (창 크기 따라감) 또는 고정
+        context_opts = {
+            "viewport": {"width": WINDOW_WIDTH, "height": WINDOW_HEIGHT}
+        }
         
         if os.path.exists(AUTH_FILE):
-            context = browser.new_context(viewport={"width": 1280, "height": 1000}, storage_state=AUTH_FILE)
-        else:
-            context = browser.new_context(viewport={"width": 1280, "height": 1000})
+            context_opts["storage_state"] = AUTH_FILE
+            
+        context = browser.new_context(**context_opts)
 
         page = context.new_page()
 
