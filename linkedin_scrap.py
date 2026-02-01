@@ -15,8 +15,8 @@ UPDATE_DIR = os.path.join(DATA_DIR, "update")
 
 # 스크랩 설정
 TARGET_LIMIT = 0       # 0 = 무제한
-CRAWL_MODE = "all"     # "all" or "update only"
-# CRAWL_MODE = "update only"     # "all" or "update only"
+# CRAWL_MODE = "all"     # "all" or "update only"
+CRAWL_MODE = "update only"     # "all" or "update only"
 CRAWL_START_TIME = datetime.now()
 # INCLUDE_IMAGES = False # 이미지 크롤링 포함 여부
 INCLUDE_IMAGES = True # 이미지 크롤링 포함 여부
@@ -358,10 +358,23 @@ class LinkedinScraper:
             time.sleep(5)
             
             while TARGET_LIMIT == 0 or len(self.posts) < TARGET_LIMIT:
-                # 스크롤 다운
-                page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-                print(f"   ⬇️ 스크롤 다운... (현재 {len(self.posts)}개)")
-                time.sleep(3) # 네트워크 요청 대기
+                # 1. 먼저 "결과 더보기" 버튼 찾기
+                try:
+                    show_more_btn = page.locator('button:has-text("결과 더보기"), button:has-text("Show more results")')
+                    if show_more_btn.count() > 0:
+                        show_more_btn.first.click()
+                        print(f"   🔘 '결과 더보기' 버튼 클릭 (현재 {len(self.posts)}개)")
+                        time.sleep(3)
+                    else:
+                        # 2. 버튼이 없으면 스크롤
+                        page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+                        print(f"   ⬇️ 스크롤 다운... (현재 {len(self.posts)}개)")
+                        time.sleep(3)
+                except Exception as e:
+                    # 버튼 찾기 실패 시 기본 스크롤
+                    page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+                    print(f"   ⬇️ 스크롤 다운... (현재 {len(self.posts)}개)")
+                    time.sleep(3)
                 
                 if self.stopped_early:
                     print("🛑 기준 게시물을 모두 확인하여 수집을 종료합니다.")
@@ -466,7 +479,7 @@ class LinkedinScraper:
         full_file = os.path.join(DATA_DIR, f"linkedin_python_full_{date_str}.json")
         
         # 메타데이터 구조 (JS 버전 참고)
-        legacy_count = len([p for p in final_posts if "collected_at" not in p])
+        legacy_count = len([p for p in final_posts if "crawled_at" not in p])
         verified_count = len(final_posts) - legacy_count
 
         full_data = {
