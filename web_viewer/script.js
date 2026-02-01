@@ -155,7 +155,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const dateStr = new Date().toISOString().slice(0, 10);
         let content = '';
-        let filename = `sns_data_${scope}_${dateStr}.${format === 'json' ? 'json' : 'md'}`;
+        
+        let filenameLabel = scope;
+        if (scope === 'filtered' && searchQuery) {
+            // Sanitize: allow Korean, alphanumeric, replace spaces with underscore
+            const safeQuery = searchQuery.replace(/[^a-zA-Z0-9가-힣\s]/g, '').trim().replace(/\s+/g, '_');
+            if (safeQuery) filenameLabel = safeQuery;
+        }
+
+        let filename = `sns_data_${filenameLabel}_${dateStr}.${format === 'json' ? 'json' : 'md'}`;
         let mimeType = format === 'json' ? 'application/json' : 'text/markdown';
 
         // Map data to required fields
