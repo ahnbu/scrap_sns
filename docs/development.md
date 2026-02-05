@@ -212,3 +212,21 @@ graph TD
 - **렌더링 방식 변경**: `background-image` 대신 `img` 태그와 `object-fit: cover` 조합을 사용하여 브라우저의 전역 에러 핸들링 기능을 활용하도록 개선했습니다.
 - **프록시 최적화**: 구형 `weserv.nl` 도메인에서 최신 고성능 도메인인 `wsrv.nl`로 교체하여 초기 로딩 지연 시간을 단축했습니다.
 - **보안 정책(Referrer Policy) 조정**: `index.html`에 `<meta name="referrer" content="no-referrer">`를 설정하여 Meta CDN의 직접 접근 시 발생하는 403 Forbidden 에러를 최소화했습니다.
+
+---
+
+## 8. 메뉴 아이콘 깨짐(FOUT) 현상 분석 및 해결 (2026-02-05)
+
+### 🔍 이슈 현상
+
+- 페이지 로딩 시 상단 메뉴 아이콘이 잠시 "search", "hub" 등의 **텍스트로 노출**되었다가 아이콘으로 변환되는 현상 발생 (Flash of Unstyled Text).
+
+### 🛠️ 원인 분석
+
+- **Google Fonts 로딩 옵션**: `Material Symbols` 폰트를 로드할 때 `display=swap` 옵션을 사용.
+- **동작 원리**: `swap`은 폰트 파일 다운로드 전까지 브라우저 기본 폰트로 텍스트를 먼저 보여주므로, 아이콘 폰트(Ligatures)가 적용되기 전의 원본 텍스트가 노출됨.
+
+### 🚀 해결책
+
+- `index.html`의 폰트 링크 옵션을 **`display=block`**으로 변경.
+- **효과**: 폰트 로딩 전까지 텍스트를 숨김 처리하여, 로딩 완료 후 아이콘이 즉시 나타나도록 개선 (깔끔한 시각적 경험).

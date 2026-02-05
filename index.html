@@ -13,7 +13,7 @@
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=block"
       rel="stylesheet"
     />
 
@@ -362,27 +362,78 @@
     <!-- Management Modal -->
     <div
       id="managementModal"
-      class="fixed inset-0 z-50 hidden bg-black/60 flex items-center justify-center p-6 transition-opacity duration-300 opacity-0 pointer-events-none"
+      class="fixed inset-0 z-50 hidden bg-black/80 flex items-center justify-center p-8 md:p-16 transition-opacity duration-300 opacity-0 pointer-events-none"
     >
-      <div class="relative w-full max-w-2xl bg-[#1E1E24] border border-white/10 rounded-3xl shadow-2xl flex flex-col max-h-[85vh] overflow-hidden">
-        <header class="p-8 border-b border-white/5 flex items-center justify-between">
-          <div class="flex items-center gap-4">
-            <div class="size-10 rounded-xl bg-primary/20 flex items-center justify-center">
-              <span class="material-symbols-outlined text-primary">visibility</span>
+      <div class="relative w-full max-w-2xl bg-[#1E1E24] border border-white/10 rounded-[40px] shadow-2xl flex flex-col max-h-[85vh] overflow-hidden">
+        <header class="p-8 border-b border-white/5 flex items-center justify-between shrink-0">
+          <div class="flex items-center gap-5">
+            <div class="size-12 rounded-2xl bg-primary/20 flex items-center justify-center">
+              <span id="settingsModalIcon" class="material-symbols-outlined text-primary text-[28px]">settings</span>
             </div>
-            <h2 class="text-xl font-bold tracking-tight">Hidden Posts</h2>
+            <h2 id="settingsModalTitle" class="text-2xl font-bold tracking-tight">Settings</h2>
           </div>
-          <button id="closeManagementModal" class="size-10 rounded-full flex items-center justify-center text-gray-400 hover:text-white hover:bg-white/10 transition-all">
-            <span class="material-symbols-outlined">close</span>
+          <button id="closeManagementModal" class="size-12 rounded-full flex items-center justify-center text-gray-500 hover:text-white hover:bg-white/10 transition-all">
+            <span class="material-symbols-outlined text-[28px]">close</span>
           </button>
         </header>
 
-        <div id="invisiblePostsList" class="flex-1 overflow-y-auto p-8 flex flex-col gap-5 no-scrollbar">
-          <!-- Hidden items will be injected here -->
+        <!-- Tab Navigation -->
+        <div class="flex gap-3 px-8 pt-4 border-b border-white/5 shrink-0">
+          <button class="tab-btn active pb-3 text-base font-semibold border-b-2 border-primary text-white transition-all" data-target="tabHidden">숨김 게시물</button>
+          <button class="tab-btn pb-3 text-base font-semibold border-b-2 border-transparent text-gray-500 hover:text-gray-300 transition-all" data-target="tabAutoTag">자동 태그</button>
         </div>
 
-        <footer class="p-4 border-t border-white/5 text-center text-xs text-gray-500 italic">
-          Hidden posts are not shown in the main feed but can be restored here.
+        <!-- Tab Content: Hidden Posts -->
+        <div id="tabHidden" class="tab-pane flex-1 overflow-y-auto no-scrollbar">
+          <div id="invisiblePostsList" class="p-8 flex flex-col gap-6">
+            <!-- Hidden items will be injected here -->
+          </div>
+          <p id="noHiddenPosts" class="p-20 text-center text-gray-500 hidden text-lg">숨김 처리된 게시물이 없습니다.</p>
+        </div>
+
+        <!-- Tab Content: Auto Tagging -->
+        <div id="tabAutoTag" class="tab-pane hidden flex-1 flex flex-col overflow-hidden">
+          <div class="flex-1 overflow-y-auto p-8 flex flex-col gap-8 no-scrollbar">
+            <div class="bg-primary/5 border border-primary/20 rounded-3xl p-6 flex gap-5">
+              <span class="material-symbols-outlined text-primary text-[24px]">info</span>
+              <p class="text-sm text-gray-400 leading-relaxed">
+                키워드가 포함된 게시물에 자동으로 태그를 부여합니다. 규칙을 추가한 후 <strong>Run</strong> 버튼을 누르면 기존 게시물에도 일괄 적용됩니다.
+              </p>
+            </div>
+
+            <!-- Add Rule Form -->
+            <div class="flex flex-col gap-6 p-6 bg-white/5 rounded-[32px] border border-white/5">
+              <h3 class="text-xs font-bold text-gray-500 tracking-[0.1em] uppercase">Add New Rule</h3>
+              <div class="flex flex-col md:flex-row gap-4">
+                <input id="autoTagKeyword" type="text" placeholder="Keyword (e.g. AI)" class="flex-1 px-5 py-3.5 rounded-2xl bg-black/40 border border-white/10 text-sm focus:border-primary/50 outline-none transition-all placeholder:text-gray-600">
+                <input id="autoTagTagName" type="text" placeholder="Tag Name" class="flex-1 px-5 py-3.5 rounded-2xl bg-black/40 border border-white/10 text-sm focus:border-primary/50 outline-none transition-all placeholder:text-gray-600">
+                <button id="addAutoTagRuleBtn" class="px-8 py-3.5 rounded-2xl bg-primary hover:bg-primary-hover text-white text-sm font-bold transition-all shadow-xl shadow-primary/30 active:scale-95">Add</button>
+              </div>
+            </div>
+
+            <!-- Rules List -->
+            <div class="flex flex-col gap-5">
+              <h3 class="text-xs font-bold text-gray-500 tracking-[0.1em] uppercase">Active Rules</h3>
+              <div id="autoTagRulesList" class="flex flex-col gap-3">
+                <!-- Rules injected by JS -->
+              </div>
+            </div>
+          </div>
+
+          <div class="p-8 border-t border-white/5 bg-black/20 flex items-center justify-between shrink-0">
+            <div class="flex flex-col gap-1">
+              <span class="text-xs font-bold text-gray-400 uppercase tracking-widest">Manual batch update</span>
+              <span class="text-xs text-gray-600 italic">Apply current rules to all existing posts</span>
+            </div>
+            <button id="runBatchAutoTagBtn" class="flex items-center gap-3 px-8 py-4 rounded-2xl bg-white/5 hover:bg-white/10 text-white text-sm font-bold border border-white/10 transition-all hover:scale-[1.02] active:scale-95 shadow-xl">
+              <span class="material-symbols-outlined text-[20px]">bolt</span>
+              Run Batch Update
+            </button>
+          </div>
+        </div>
+
+        <footer id="modalFooter" class="p-8 border-t border-white/5 text-center text-[11px] text-gray-600 font-medium tracking-wide shrink-0">
+          Settings are saved locally in your browser to preserve your privacy.
         </footer>
       </div>
     </div>

@@ -246,6 +246,52 @@ ${item.body}
     });
 
     // --- Core Functions ---
+    /**
+     * 자동 태그 규칙을 게시물에 적용
+     * @param {Array} posts - 대상 게시물
+     * @param {boolean} silent - true면 알림 없음, false면 결과 알림 및 렌더링
+     */
+    function applyAutoTags(posts, silent = true) {
+        const rules = JSON.parse(localStorage.getItem('sns_auto_tag_rules') || '[]');
+        if (rules.length === 0) return 0;
+
+        let updateCount = 0;
+        posts.forEach(post => {
+            const text = (post.full_text || '').toLowerCase();
+            const url = post.post_url;
+            
+            if (!postTags[url]) postTags[url] = [];
+            let tags = postTags[url];
+            let modified = false;
+
+            rules.forEach(rule => {
+                const keyword = rule.keyword.toLowerCase();
+                const tagName = rule.tag;
+                if (text.includes(keyword) && !tags.includes(tagName)) {
+                    tags.push(tagName);
+                    modified = true;
+                }
+            });
+
+            if (modified) {
+                postTags[url] = tags;
+                updateCount++;
+            }
+        });
+
+        if (updateCount > 0) {
+            localStorage.setItem('sns_tags', JSON.stringify(postTags));
+            updateGlobalTags();
+            if (!silent) {
+                alert(`총 ${updateCount}개의 게시물에 새로운 태그가 적용되었습니다.`);
+                renderPosts();
+            }
+        } else if (!silent) {
+            alert('새롭게 적용할 태그가 없습니다.');
+        }
+
+        return updateCount;
+    }
 
     async function fetchData() {
         noResults.classList.add('hidden');
@@ -256,43 +302,31 @@ ${item.body}
             // ⚠️ 강제 JSON Fetch 모드: data.js가 오래된 데이터일 수 있으므로 항상 JSON 파일을 로드합니다.
             if (typeof snsFeedData !== 'undefined') {
                 allPosts = Array.isArray(snsFeedData) ? snsFeedData : (snsFeedData.posts || []);
-                
-                // Pre-process dates for consistent sorting
-                allPosts.forEach(post => {
-                    let dateStr = post.created_at || post.crawled_at;
-                    // Ensure ISO format for consistent parsing (replace space with T)
-                    if (dateStr && dateStr.includes(' ') && !dateStr.includes('T')) {
-                        dateStr = dateStr.replace(' ', 'T');
-                    }
-                    post._dateObj = dateStr ? new Date(dateStr) : new Date(0);
-                    post._seqId = post.sequence_id || 0;
-                });
-
-                totalPostsCount.textContent = `${allPosts.length} 건`;
-                renderPosts();
             } else {
                 // Fallback to fetch for server environments if data.js missing
                 const response = await fetch(feedJsonPath);
                 if (!response.ok) throw new Error('Failed to load JSON');
                 const data = await response.json();
                 allPosts = Array.isArray(data) ? data : (data.posts || []);
-                
-                // Pre-process dates for consistent sorting (also for fallback)
-                allPosts.forEach(post => {
-                    let dateStr = post.created_at || post.crawled_at;
-                    if (dateStr && dateStr.includes(' ') && !dateStr.includes('T')) {
-                        dateStr = dateStr.replace(' ', 'T');
-                    }
-                    post._dateObj = dateStr ? new Date(dateStr) : new Date(0);
-                    post._seqId = post.sequence_id || 0;
-                });
-
-                totalPostsCount.textContent = `${allPosts.length} 건`;
-                renderPosts();
             }
+
+            // Pre-process
+            allPosts.forEach(post => {
+                let dateStr = post.created_at || post.crawled_at;
+                if (dateStr && dateStr.includes(' ') && !dateStr.includes('T')) {
+                    dateStr = dateStr.replace(' ', 'T');
+                }
+                post._dateObj = dateStr ? new Date(dateStr) : new Date(0);
+                post._seqId = post.sequence_id || 0;
+            });
+
+            // ✨ 자동 태그 적용 (로드 시 자동 수행)
+            applyAutoTags(allPosts, true);
+
+            totalPostsCount.textContent = `${allPosts.length} 건`;
+            renderPosts();
         } catch (error) {
             console.error('Error loading data:', error);
-            // Error UI logic could go here if needed, but keeping it simple as requested
         }
     }
 
@@ -861,7 +895,11 @@ ${item.body}
             managementModal.classList.add('show');
             document.body.classList.add('modal-open');
         });
+        
+        // Default to Hidden Posts tab
+        switchTab('tabHidden');
         renderInvisibleList();
+        renderAutoTagRules();
     }
 
     function hideManagementModal() {
@@ -872,36 +910,60 @@ ${item.body}
         }, 300);
     }
 
+    // Tab Switching
+    function switchTab(targetId) {
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            if (btn.dataset.target === targetId) {
+                btn.classList.add('active', 'border-primary', 'text-white');
+                btn.classList.remove('border-transparent', 'text-gray-500');
+            } else {
+                btn.classList.remove('active', 'border-primary', 'text-white');
+                btn.classList.add('border-transparent', 'text-gray-500');
+            }
+        });
+
+        document.querySelectorAll('.tab-pane').forEach(pane => {
+            pane.classList.toggle('hidden', pane.id !== targetId);
+        });
+
+        // Update Header Icon/Title based on tab
+        const icon = document.getElementById('settingsModalIcon');
+        const title = document.getElementById('settingsModalTitle');
+        if (targetId === 'tabHidden') {
+            icon.textContent = 'visibility';
+            title.textContent = 'Hidden Posts';
+        } else {
+            icon.textContent = 'labels';
+            title.textContent = 'Auto Tagging';
+        }
+    }
+
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.addEventListener('click', () => switchTab(btn.dataset.target));
+    });
+
     function renderInvisibleList() {
         invisiblePostsList.innerHTML = '';
+        const noHiddenPosts = document.getElementById('noHiddenPosts');
         
         if (invisiblePosts.size === 0) {
-            invisiblePostsList.innerHTML = `
-                <div class="flex flex-col items-center justify-center py-20 text-gray-500 gap-3 w-full">
-                    <span class="material-symbols-outlined text-6xl opacity-20">visibility</span>
-                    <p class="text-sm font-medium tracking-tight">숨겨진 게시글이 없습니다.</p>
-                </div>
-            `;
+            noHiddenPosts.classList.remove('hidden');
+            invisiblePostsList.classList.add('hidden');
             return;
         }
 
-        // Find posts that are in the invisible set
+        noHiddenPosts.classList.add('hidden');
+        invisiblePostsList.classList.remove('hidden');
+
         const hiddenItems = allPosts.filter(post => invisiblePosts.has(post.post_url));
-        
         hiddenItems.forEach(post => {
             const item = document.createElement('div');
             item.className = 'invisible-post-item w-full';
-            
             const platform = (post.sns_platform || 'other').toLowerCase();
             let icon = 'link';
             let iconColor = '#888';
-            if (platform.includes('thread')) {
-                icon = 'alternate_email';
-                iconColor = '#fff';
-            } else if (platform.includes('linkedin')) {
-                icon = 'work';
-                iconColor = '#0A66C2';
-            }
+            if (platform.includes('thread')) { icon = 'alternate_email'; iconColor = '#fff'; }
+            else if (platform.includes('linkedin')) { icon = 'work'; iconColor = '#0A66C2'; }
             
             item.innerHTML = `
                 <span class="material-symbols-outlined text-[20px] shrink-0" style="color: ${iconColor}">${icon}</span>
@@ -918,13 +980,73 @@ ${item.body}
                 const url = e.target.dataset.url;
                 invisiblePosts.delete(url);
                 localStorage.setItem('sns_invisible_posts', JSON.stringify([...invisiblePosts]));
-                renderInvisibleList(); // Refresh modal list
-                renderPosts(); // Refresh main feed
+                renderInvisibleList();
+                renderPosts();
             });
-            
             invisiblePostsList.appendChild(item);
         });
     }
+
+    // --- Auto Tagging Rules UI ---
+    function renderAutoTagRules() {
+        const rules = JSON.parse(localStorage.getItem('sns_auto_tag_rules') || '[]');
+        const container = document.getElementById('autoTagRulesList');
+        container.innerHTML = '';
+
+        if (rules.length === 0) {
+            container.innerHTML = '<p class="text-center py-10 text-gray-600 text-sm italic">No rules defined yet.</p>';
+            return;
+        }
+
+        rules.forEach((rule, index) => {
+            const div = document.createElement('div');
+            div.className = 'flex items-center justify-between p-4 bg-white/5 rounded-2xl border border-white/5 group/rule';
+            div.innerHTML = `
+                <div class="flex items-center gap-3">
+                    <div class="px-3 py-1 rounded-lg bg-primary/10 border border-primary/20 text-primary text-[10px] font-bold uppercase">Keyword</div>
+                    <span class="text-sm font-medium text-white">${rule.keyword}</span>
+                    <span class="material-symbols-outlined text-gray-600 text-sm">arrow_forward</span>
+                    <div class="px-3 py-1 rounded-lg bg-green-400/10 border border-green-400/20 text-green-400 text-[10px] font-bold uppercase">Tag</div>
+                    <span class="text-sm font-medium text-white">${rule.tag}</span>
+                </div>
+                <button class="delete-rule-btn opacity-0 group-hover/rule:opacity-100 p-2 text-gray-500 hover:text-red-400 transition-all" data-index="${index}">
+                    <span class="material-symbols-outlined text-[20px]">delete</span>
+                </button>
+            `;
+            div.querySelector('.delete-rule-btn').addEventListener('click', () => {
+                rules.splice(index, 1);
+                localStorage.setItem('sns_auto_tag_rules', JSON.stringify(rules));
+                renderAutoTagRules();
+            });
+            container.appendChild(div);
+        });
+    }
+
+    // Add Rule
+    document.getElementById('addAutoTagRuleBtn').addEventListener('click', () => {
+        const keywordInput = document.getElementById('autoTagKeyword');
+        const tagInput = document.getElementById('autoTagTagName');
+        const keyword = keywordInput.value.trim();
+        const tag = tagInput.value.trim();
+
+        if (!keyword || !tag) {
+            alert('Please enter both keyword and tag name.');
+            return;
+        }
+
+        const rules = JSON.parse(localStorage.getItem('sns_auto_tag_rules') || '[]');
+        rules.push({ keyword, tag });
+        localStorage.setItem('sns_auto_tag_rules', JSON.stringify(rules));
+
+        keywordInput.value = '';
+        tagInput.value = '';
+        renderAutoTagRules();
+    });
+
+    // Batch Update
+    document.getElementById('runBatchAutoTagBtn').addEventListener('click', () => {
+        applyAutoTags(allPosts, false); // silent = false to show alert
+    });
 
     // Logo / Home Logic
     const logoHome = document.getElementById('logoHome');
