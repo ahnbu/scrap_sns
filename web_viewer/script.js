@@ -414,7 +414,9 @@ ${item.body}
         if (post.images && post.images.length > 0) {
             // Use Image Proxy to bypass CORS/CORP issues specially for Instagram/Threads CDN
             const originalUrl = post.images[0];
-            let imgUrl = `https://images.weserv.nl/?url=${encodeURIComponent(originalUrl)}&output=webp`;
+            const isVideo = originalUrl.toLowerCase().includes('.mp4');
+            
+            let imgUrl = `https://wsrv.nl/?url=${encodeURIComponent(originalUrl)}&output=webp`;
             
             // LinkedIn images (licdn.com) often work better directly without proxy
             if (originalUrl.includes('licdn.com')) {
@@ -425,23 +427,41 @@ ${item.body}
             
             const imageDiv = document.createElement('div');
             imageDiv.className = 'rounded-xl overflow-hidden relative group/image mt-2 border border-white/5 bg-black/20';
-            imageDiv.innerHTML = `
-                <div class="w-full h-48 bg-cover bg-center cursor-zoom-in transition-transform duration-500 group-hover/image:scale-105"
-                     style="background-image: url('${imgUrl}'); background-color: #222;"
-                     data-src="${imgUrl}"
-                     data-original="${originalUrl}"
-                     data-caption="${post.username}: ${post.full_text?.slice(0,50)}..."></div>
-                ${moreCount > 0 ? `
-                <div class="absolute top-2 right-2 bg-black/60 backdrop-blur-sm px-2 py-1 rounded text-xs text-white flex items-center gap-1 pointer-events-none">
-                    <span class="material-symbols-outlined text-[12px]">filter</span>
-                    +${moreCount}
-                </div>` : ''}
-            `;
             
-            // Image click handler
-            imageDiv.querySelector('div').addEventListener('click', (e) => {
-                showModal(e.target.dataset.src, e.target.dataset.caption);
-            });
+            if (isVideo) {
+                // Placeholder for video posts
+                imageDiv.innerHTML = `
+                    <div class="w-full min-h-[200px] flex flex-col items-center justify-center bg-black/40 cursor-pointer py-10" 
+                         onclick="window.open('${post.post_url}', '_blank')">
+                        <span class="material-symbols-outlined text-4xl text-white/50 mb-2">play_circle</span>
+                        <span class="text-xs text-white/40">Video Post (Click to view)</span>
+                    </div>
+                `;
+            } else {
+                const placeholderImg = "https://placehold.co/400x300/222/555?text=Image+Unavailable";
+                imageDiv.innerHTML = `
+                    <img src="${imgUrl}" 
+                         class="w-full h-auto max-h-[600px] object-contain cursor-zoom-in transition-transform duration-500 group-hover/image:scale-105"
+                         data-src="${imgUrl}"
+                         data-original="${originalUrl}"
+                         data-caption="${post.username}: ${post.full_text?.slice(0,50)}..."
+                         onerror="if(this.src!=='${originalUrl}'){this.src='${originalUrl}';console.log('Proxy failed, trying original');}else{this.src='${placeholderImg}';this.onerror=null;console.log('All attempts failed');}"
+                         alt="SNS Post Image">
+                    ${moreCount > 0 ? `
+                    <div class="absolute top-2 right-2 bg-black/60 backdrop-blur-sm px-2 py-1 rounded text-xs text-white flex items-center gap-1 pointer-events-none">
+                        <span class="material-symbols-outlined text-[12px]">filter</span>
+                        +${moreCount}
+                    </div>` : ''}
+                `;
+                
+                // Image click handler (only for actual images)
+                const imgEl = imageDiv.querySelector('img');
+                if (imgEl) {
+                    imgEl.addEventListener('click', (e) => {
+                        showModal(e.target.dataset.src, e.target.dataset.caption);
+                    });
+                }
+            }
             
             article.appendChild(header);
             article.appendChild(content);
@@ -467,7 +487,25 @@ ${item.body}
 
     // Modal Logic
     function showModal(src, caption) {
+        // Apply fallback also for modal
+        modalImage.onerror = function() {
+            if (this.src !== this.dataset.original && this.dataset.original) {
+                console.log('Modal proxy failed, trying original');
+                this.src = this.dataset.original;
+            } else {
+                this.onerror = null; // Prevent infinite loop
+            }
+        };
+        
         modalImage.src = src;
+        // Store original URL if it was proxied, to use in fallback
+        if (src.includes('wsrv.nl')) {
+             const urlParams = new URLSearchParams(new URL(src).search);
+             modalImage.dataset.original = urlParams.get('url');
+        } else {
+             modalImage.dataset.original = '';
+        }
+
         modalCaption.textContent = caption || '';
         imageModal.classList.remove('hidden');
         // Small delay to allow display:block to apply before opacity transition

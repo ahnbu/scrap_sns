@@ -33,3 +33,23 @@ const updatedUser = { ...user, active: true };
 
 - 변수와 함수 이름은 그 역할을 명확히 설명할 수 있도록 상세하게 짓습니다.
 - 코드 내 `console.log` 등 디버깅용 코드는 최종 제출 전 반드시 삭제합니다.
+
+## 4. 문서화 및 주석 (Documentation & Comments)
+
+코드의 의도를 명확히 하여 유지보수성을 높이고 AI 에이전트와의 협업 효율을 극대화합니다.
+
+- **Why, not What**: 코드가 '무엇을 하는지'보다 '왜 이 코드가 존재하는지'에 집중하여 주석을 작성하십시오. 단순한 동작 설명은 코드 자체로 드러나야 합니다.
+- **복잡한 로직 설명**: 트릭이 사용되었거나 복잡한 알고리즘이 포함된 로직에는 반드시 상세한 설명을 추가하십시오.
+- **TODO 관리**: 향후 개선이 필요하거나 미완성인 부분은 `TODO:` 키워드를 사용하여 명시하십시오.
+- **JSDoc 기반 문서화**: 함수 정의 시 JSDoc 형식을 사용하여 매개변수와 반환값의 역할을 설명하십시오.
+
+```typescript
+/**
+ * 사용자의 총 포인트를 계산합니다.
+ * @param userId - 사용자의 고유 ID
+ * @returns 획득한 총 포인트 점수
+ */
+function calculateUserPoints(userId: string): number {
+  // implementation
+}
+```
