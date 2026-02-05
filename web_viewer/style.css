@@ -286,8 +286,10 @@ body.modal-open {
 /* Global Tag Cloud */
 #globalTagsContainer {
   margin-bottom: -1rem;
-  justify-content: flex-start;
+  display: flex !important;
+  justify-content: flex-start !important;
   align-items: center;
+  width: 100%;
 }
 
 .global-tag-chip {
@@ -341,4 +343,69 @@ body.modal-open {
 
 .glass-card.minimized {
   background: rgba(30, 30, 35, 0.3); /* Slightly more transparent when minimized */
+}
+
+/* Management Modal Styles */
+#managementModal.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.invisible-post-item {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.25rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 16px;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.invisible-post-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
+  transform: translateX(4px);
+}
+
+.restore-btn {
+  margin-left: auto;
+  padding: 0.6rem 1.2rem;
+  background: rgba(127, 13, 242, 0.1);
+  border: 1px solid rgba(127, 13, 242, 0.2);
+  border-radius: 10px;
+  color: #a855f7;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.restore-btn:hover {
+  background: #7f0df2;
+  border-color: #7f0df2;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(127, 13, 242, 0.3);
+}
+
+.invisible-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.invisible-content h4 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #f3f4f6;
+  margin-bottom: 0.35rem;
+}
+
+.invisible-content p {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.4);
+  line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }

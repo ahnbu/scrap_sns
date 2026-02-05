@@ -14,6 +14,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalCaption = document.getElementById('modalCaption');
     const closeModal = document.getElementById('closeModal');
 
+    // Management Modal elements
+    const settingsBtn = document.getElementById('settingsBtn');
+    const managementModal = document.getElementById('managementModal');
+    const closeManagementModalBtn = document.getElementById('closeManagementModal');
+    const invisiblePostsList = document.getElementById('invisiblePostsList');
+
     let allPosts = [];
     let currentFilter = 'all';
     let searchQuery = '';
@@ -21,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Load states from localStorage
     const favorites = new Set(JSON.parse(localStorage.getItem('sns_favorites') || '[]'));
+    const invisiblePosts = new Set(JSON.parse(localStorage.getItem('sns_invisible_posts') || '[]'));
     const foldedPosts = new Set(JSON.parse(localStorage.getItem('sns_folded_posts') || '[]'));
     const postTags = JSON.parse(localStorage.getItem('sns_tags') || '{}');
     let currentTag = null;
@@ -261,7 +268,7 @@ ${item.body}
                     post._seqId = post.sequence_id || 0;
                 });
 
-                totalPostsCount.textContent = `${allPosts.length} items`;
+                totalPostsCount.textContent = `${allPosts.length} 건`;
                 renderPosts();
             } else {
                 // Fallback to fetch for server environments if data.js missing
@@ -280,7 +287,7 @@ ${item.body}
                     post._seqId = post.sequence_id || 0;
                 });
 
-                totalPostsCount.textContent = `${allPosts.length} items`;
+                totalPostsCount.textContent = `${allPosts.length} 건`;
                 renderPosts();
             }
         } catch (error) {
@@ -300,8 +307,9 @@ ${item.body}
                 (currentFilter === 'favorites' ? favorites.has(post.post_url) : (post.sns_platform || '').toLowerCase() === currentFilter);
 
             const matchesTag = !currentTag || (postTags[post.post_url] || []).includes(currentTag);
+            const matchesVisibility = !invisiblePosts.has(post.post_url);
 
-            return matchesSearch && matchesFilter && matchesTag;
+            return matchesSearch && matchesFilter && matchesTag && matchesVisibility;
         });
     }
 
@@ -429,6 +437,9 @@ ${item.body}
                         ${isFolded ? 'expand_more' : 'expand_less'}
                     </span>
                 </button>
+                <button class="invisible-btn p-1.5 rounded-lg hover:bg-white/10 transition-colors text-gray-400 hover:text-red-400" data-url="${post.post_url}" title="Hide post">
+                    <span class="material-symbols-outlined text-[20px]">visibility</span>
+                </button>
                 <button class="favorite-btn p-1.5 rounded-lg hover:bg-white/10 transition-colors group/fav" data-url="${post.post_url}">
                     <span class="material-symbols-outlined text-[20px] ${isFavorited ? 'text-yellow-400 fill-1' : 'text-gray-500 group-hover/fav:text-yellow-400'} transition-all">
                         ${isFavorited ? 'star' : 'star'}
@@ -469,6 +480,25 @@ ${item.body}
             
             localStorage.setItem('sns_favorites', JSON.stringify([...favorites]));
             updateGlobalTags(); // Update global tags to reflect favorite/tag changes if needed (though favorites doesn't affect tags currently)
+        });
+
+        // --- Invisible Toggle Handler ---
+        const invisibleBtn = header.querySelector('.invisible-btn');
+        invisibleBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const url = post.post_url;
+            
+            if (confirm('이 게시글을 피드에서 숨기시겠습니까? (추후 설정에서 복구 가능)')) {
+                invisiblePosts.add(url);
+                localStorage.setItem('sns_invisible_posts', JSON.stringify([...invisiblePosts]));
+                
+                // Add fade-out animation
+                article.style.opacity = '0';
+                article.style.transform = 'scale(0.9)';
+                article.style.transition = 'all 0.3s ease';
+                
+                setTimeout(() => renderPosts(), 300);
+            }
         });
 
         // --- Content Text ---
@@ -763,7 +793,7 @@ ${item.body}
             return;
         }
 
-        container.innerHTML = '<span class="global-tag-label">Tags:</span>';
+        container.innerHTML = '';
         
         sortedTags.forEach(tag => {
             const tagBtn = document.createElement('button');
@@ -823,4 +853,87 @@ ${item.body}
             modalImage.src = '';
         }, 300);
     }
+
+    // --- Management Modal Functions ---
+    function openManagementModal() {
+        managementModal.classList.remove('hidden');
+        requestAnimationFrame(() => {
+            managementModal.classList.add('show');
+            document.body.classList.add('modal-open');
+        });
+        renderInvisibleList();
+    }
+
+    function hideManagementModal() {
+        managementModal.classList.remove('show');
+        document.body.classList.remove('modal-open');
+        setTimeout(() => {
+            managementModal.classList.add('hidden');
+        }, 300);
+    }
+
+    function renderInvisibleList() {
+        invisiblePostsList.innerHTML = '';
+        
+        if (invisiblePosts.size === 0) {
+            invisiblePostsList.innerHTML = `
+                <div class="flex flex-col items-center justify-center py-20 text-gray-500 gap-3 w-full">
+                    <span class="material-symbols-outlined text-6xl opacity-20">visibility</span>
+                    <p class="text-sm font-medium tracking-tight">숨겨진 게시글이 없습니다.</p>
+                </div>
+            `;
+            return;
+        }
+
+        // Find posts that are in the invisible set
+        const hiddenItems = allPosts.filter(post => invisiblePosts.has(post.post_url));
+        
+        hiddenItems.forEach(post => {
+            const item = document.createElement('div');
+            item.className = 'invisible-post-item w-full';
+            
+            const platform = (post.sns_platform || 'other').toLowerCase();
+            let icon = 'link';
+            let iconColor = '#888';
+            if (platform.includes('thread')) {
+                icon = 'alternate_email';
+                iconColor = '#fff';
+            } else if (platform.includes('linkedin')) {
+                icon = 'work';
+                iconColor = '#0A66C2';
+            }
+            
+            item.innerHTML = `
+                <span class="material-symbols-outlined text-[20px] shrink-0" style="color: ${iconColor}">${icon}</span>
+                <div class="invisible-content">
+                    <h4 class="truncate">${post.username || 'Unknown'}</h4>
+                    <p class="truncate text-xs opacity-60">${(post.full_text || 'No content').slice(0, 100)}</p>
+                </div>
+                <button class="restore-btn hover:scale-105 active:scale-95 transition-all shrink-0" data-url="${post.post_url}">
+                    Restore
+                </button>
+            `;
+            
+            item.querySelector('.restore-btn').addEventListener('click', (e) => {
+                const url = e.target.dataset.url;
+                invisiblePosts.delete(url);
+                localStorage.setItem('sns_invisible_posts', JSON.stringify([...invisiblePosts]));
+                renderInvisibleList(); // Refresh modal list
+                renderPosts(); // Refresh main feed
+            });
+            
+            invisiblePostsList.appendChild(item);
+        });
+    }
+
+    // Logo / Home Logic
+    const logoHome = document.getElementById('logoHome');
+    if (logoHome) logoHome.addEventListener('click', () => location.reload());
+
+    // Settings Event Listeners
+    if (settingsBtn) settingsBtn.addEventListener('click', openManagementModal);
+    if (closeManagementModalBtn) closeManagementModalBtn.addEventListener('click', hideManagementModal);
+    managementModal.addEventListener('click', (e) => {
+        if (e.target === managementModal) hideManagementModal();
+    });
 });
