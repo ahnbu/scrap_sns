@@ -212,7 +212,7 @@ body.modal-open {
   padding: 0 0.5rem;
   height: 24px;
   line-height: 22px;
-  font-size: 11px;
+  font-size: 0.75rem !important;
   color: white;
   width: 58px;
   transition: all 0.3s;
@@ -221,7 +221,7 @@ body.modal-open {
 
 .tag-input::placeholder {
   color: rgba(255, 255, 255, 0.4);
-  font-size: 11px;
+  font-size: 0.65rem;
 }
 
 .tag-input:focus {
