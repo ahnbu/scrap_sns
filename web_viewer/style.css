@@ -209,12 +209,19 @@ body.modal-open {
   background: rgba(255, 255, 255, 0.03);
   border: 1px dashed rgba(255, 255, 255, 0.1);
   border-radius: 9999px !important;
-  padding: 0.25rem 0.75rem;
-  font-size: 0.75rem;
+  padding: 0 0.5rem;
+  height: 24px;
+  line-height: 22px;
+  font-size: 11px;
   color: white;
-  width: 100px;
+  width: 58px;
   transition: all 0.3s;
   outline: none;
+}
+
+.tag-input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 11px;
 }
 
 .tag-input:focus {
