@@ -19,6 +19,13 @@ document.addEventListener('DOMContentLoaded', () => {
     let searchQuery = '';
     let currentSort = 'date'; // 'date' (latest first) or 'saved' (sequence_id desc)
 
+    // Favorites state
+    let favorites = new Set(JSON.parse(localStorage.getItem('sns_favorites') || '[]'));
+
+    // Tags state
+    let postTags = JSON.parse(localStorage.getItem('sns_tags') || '{}');
+    let currentTag = null;
+
     // Initialize
     fetchData();
 
@@ -279,13 +286,18 @@ ${item.body}
             
             const matchesFilter = 
                 currentFilter === 'all' || 
-                (post.sns_platform || '').toLowerCase() === currentFilter;
+                (currentFilter === 'favorites' ? favorites.has(post.post_url) : (post.sns_platform || '').toLowerCase() === currentFilter);
 
-            return matchesSearch && matchesFilter;
+            const matchesTag = !currentTag || (postTags[post.post_url] || []).includes(currentTag);
+
+            return matchesSearch && matchesFilter && matchesTag;
         });
     }
 
     function renderPosts() {
+        // Update global tags first to ensure the list is fresh
+        updateGlobalTags();
+        
         // 1. Filter Data
         let filtered = getFilteredPosts();
 
@@ -363,9 +375,23 @@ ${item.body}
         // --- Header ---
         const header = document.createElement('div');
         header.className = 'flex items-center justify-between';
+        
+        let iconHtml;
+        if (platform.includes('linkedin')) {
+            iconHtml = `
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#0A66C2">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+            `;
+        } else {
+            iconHtml = `<span class="material-symbols-outlined text-[20px]" style="color: ${platformConfig.color}">${platformConfig.icon}</span>`;
+        }
+
+        const isFavorited = favorites.has(post.post_url);
+
         header.innerHTML = `
             <div class="flex items-center gap-3">
-                <span class="material-symbols-outlined text-[20px]" style="color: ${platformConfig.color}">${platformConfig.icon}</span>
+                ${iconHtml}
                 <div class="min-w-0">
                     <h3 class="text-sm font-semibold text-white truncate max-w-[150px]">${post.username || 'Unknown'}</h3>
                     <p class="text-xs text-gray-400 truncate" title="${post.created_at || post.crawled_at}">
@@ -373,7 +399,45 @@ ${item.body}
                     </p>
                 </div>
             </div>
+            <button class="favorite-btn p-1.5 rounded-lg hover:bg-white/10 transition-colors group/fav" data-url="${post.post_url}">
+                <span class="material-symbols-outlined text-[20px] ${isFavorited ? 'text-yellow-400 fill-1' : 'text-gray-500 group-hover/fav:text-yellow-400'} transition-all">
+                    ${isFavorited ? 'star' : 'star'}
+                </span>
+            </button>
         `;
+
+        const favBtn = header.querySelector('.favorite-btn');
+        favBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const url = post.post_url;
+            const icon = favBtn.querySelector('span');
+            
+            if (favorites.has(url)) {
+                favorites.delete(url);
+                icon.classList.remove('text-yellow-400', 'fill-1');
+                icon.classList.add('text-gray-500');
+                if (currentFilter === 'favorites') {
+                    // Smoothly remove the card if we're in the favorites view
+                    article.style.opacity = '0';
+                    article.style.transform = 'scale(0.9)';
+                    setTimeout(() => renderPosts(), 200);
+                }
+            } else {
+                favorites.add(url);
+                icon.classList.add('text-yellow-400', 'fill-1');
+                icon.classList.remove('text-gray-500');
+                
+                // Add a little pop animation
+                icon.animate([
+                    { transform: 'scale(1)' },
+                    { transform: 'scale(1.4)' },
+                    { transform: 'scale(1)' }
+                ], { duration: 300, easing: 'cubic-bezier(0.175, 0.885, 0.32, 1.275)' });
+            }
+            
+            localStorage.setItem('sns_favorites', JSON.stringify([...favorites]));
+            updateGlobalTags(); // Update global tags to reflect favorite/tag changes if needed (though favorites doesn't affect tags currently)
+        });
 
         // --- Content Text ---
         const content = document.createElement('div');
@@ -411,6 +475,7 @@ ${item.body}
         }
 
         // --- Images ---
+        let imageDiv = null;
         if (post.images && post.images.length > 0) {
             // Use Image Proxy to bypass CORS/CORP issues specially for Instagram/Threads CDN
             const originalUrl = post.images[0];
@@ -425,7 +490,7 @@ ${item.body}
             
             const moreCount = post.images.length - 1;
             
-            const imageDiv = document.createElement('div');
+            imageDiv = document.createElement('div');
             imageDiv.className = 'rounded-xl overflow-hidden relative group/image mt-2 border border-white/5 bg-black/20';
             
             if (isVideo) {
@@ -462,14 +527,128 @@ ${item.body}
                     });
                 }
             }
-            
-            article.appendChild(header);
-            article.appendChild(content);
-            article.appendChild(imageDiv);
-        } else {
-            article.appendChild(header);
-            article.appendChild(content);
         }
+
+        // --- Tags Section ---
+        const tagsWrapper = document.createElement('div');
+        tagsWrapper.className = 'flex flex-col gap-2 mt-2';
+        
+        function renderTags(container, url) {
+            container.innerHTML = '';
+            // Clear any lingering suggestions when re-rendering tags
+            if (container.parentElement) {
+                const existingSuggestions = container.parentElement.querySelectorAll('.tag-suggestions');
+                existingSuggestions.forEach(s => s.remove());
+            }
+            const tags = postTags[url] || [];
+            
+            tags.forEach(tag => {
+                const tagChip = document.createElement('div');
+                tagChip.className = 'tag-chip';
+                tagChip.innerHTML = `
+                    <span>${tag}</span>
+                    <span class="tag-remove material-symbols-outlined text-[12px]" data-tag="${tag}">close</span>
+                `;
+                tagChip.querySelector('.tag-remove').addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const tagToRemove = e.currentTarget.dataset.tag;
+                    postTags[url] = postTags[url].filter(t => t !== tagToRemove);
+                    if (postTags[url].length === 0) delete postTags[url];
+                    localStorage.setItem('sns_tags', JSON.stringify(postTags));
+                    renderTags(container, url);
+                    updateGlobalTags();
+                });
+                container.appendChild(tagChip);
+            });
+
+            // Add Input / Add Button
+            const addBtn = document.createElement('button');
+            addBtn.className = 'tag-add-btn';
+            addBtn.innerHTML = `<span class="material-symbols-outlined text-[14px]">add</span>Tag`;
+            
+            addBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                addBtn.style.display = 'none';
+                
+                const input = document.createElement('input');
+                input.className = 'tag-input';
+                input.placeholder = 'Add tag...';
+                input.type = 'text';
+                
+                container.appendChild(input);
+                input.focus();
+
+                // Suggestions logic
+                const allExistingTags = new Set();
+                Object.values(postTags).forEach(tags => tags.forEach(tag => allExistingTags.add(tag)));
+                const postExistingTags = new Set(postTags[url] || []);
+                const suggestions = Array.from(allExistingTags)
+                    .filter(tag => !postExistingTags.has(tag))
+                    .sort();
+
+                let suggestionsDiv = null;
+                if (suggestions.length > 0) {
+                    suggestionsDiv = document.createElement('div');
+                    suggestionsDiv.className = 'tag-suggestions w-full'; // Ensure full width
+                    suggestions.forEach(tag => {
+                        const item = document.createElement('div');
+                        item.className = 'suggestion-item';
+                        item.textContent = tag;
+                        item.addEventListener('mousedown', (ev) => {
+                            ev.preventDefault();
+                            if (!postTags[url]) postTags[url] = [];
+                            postTags[url].push(tag);
+                            localStorage.setItem('sns_tags', JSON.stringify(postTags));
+                            renderTags(container, url);
+                            updateGlobalTags();
+                        });
+                        suggestionsDiv.appendChild(item);
+                    });
+                    // Clear any existing suggestions in this post card first
+                    const existingSuggestions = container.parentElement.querySelectorAll('.tag-suggestions');
+                    existingSuggestions.forEach(s => s.remove());
+                    
+                    container.parentElement.appendChild(suggestionsDiv);
+                }
+
+                const handleAdd = () => {
+                    const val = input.value.trim();
+                    if (val) {
+                        if (!postTags[url]) postTags[url] = [];
+                        if (!postTags[url].includes(val)) {
+                            postTags[url].push(val);
+                            localStorage.setItem('sns_tags', JSON.stringify(postTags));
+                            updateGlobalTags();
+                        }
+                    }
+                    renderTags(container, url);
+                };
+
+                input.addEventListener('keydown', (ev) => {
+                    if (ev.key === 'Enter') handleAdd();
+                    if (ev.key === 'Escape') renderTags(container, url);
+                });
+                
+                input.addEventListener('blur', () => {
+                    // Small delay to allow suggestion click to fire
+                    setTimeout(handleAdd, 150);
+                });
+            });
+            
+            container.appendChild(addBtn);
+        }
+
+        const tagContainer = document.createElement('div');
+        tagContainer.className = 'tag-container';
+        renderTags(tagContainer, post.post_url);
+        tagsWrapper.appendChild(tagContainer);
+        
+        article.appendChild(header);
+        article.appendChild(content);
+        if (imageDiv) {
+            article.appendChild(imageDiv);
+        }
+        article.appendChild(tagsWrapper);
 
         // --- Footer (Actions) ---
         const footer = document.createElement('div');
@@ -483,6 +662,43 @@ ${item.body}
         article.appendChild(footer);
 
         return article;
+    }
+
+    function updateGlobalTags() {
+        const container = document.getElementById('globalTagsContainer');
+        if (!container) return;
+
+        // Extract unique tags
+        const allUniqueTags = new Set();
+        Object.values(postTags).forEach(tags => tags.forEach(tag => allUniqueTags.add(tag)));
+        
+        const sortedTags = Array.from(allUniqueTags).sort();
+        
+        if (sortedTags.length === 0) {
+            container.innerHTML = '';
+            return;
+        }
+
+        container.innerHTML = '<span class="global-tag-label">Tags:</span>';
+        
+        sortedTags.forEach(tag => {
+            const tagBtn = document.createElement('button');
+            tagBtn.className = `global-tag-chip ${currentTag === tag ? 'active' : ''}`;
+            tagBtn.textContent = tag;
+            tagBtn.addEventListener('click', () => {
+                if (currentTag === tag) {
+                    currentTag = null; // Unselect
+                } else {
+                    currentTag = tag;
+                }
+                renderPosts();
+            });
+            container.appendChild(tagBtn);
+        });
+
+        if (currentTag && !allUniqueTags.has(currentTag)) {
+            currentTag = null; // If selected tag was deleted
+        }
     }
 
     // Modal Logic

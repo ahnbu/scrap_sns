@@ -84,13 +84,19 @@
                 All
               </button>
               <button
+                data-filter="favorites"
+                class="filter-chip flex items-center gap-2 px-4 py-2 rounded-full bg-surface-glass hover:bg-surface-glass-hover text-gray-300 hover:text-white text-sm font-medium border border-border-glass transition-all whitespace-nowrap group"
+              >
+                <span class="material-symbols-outlined text-[18px] text-yellow-400">star</span>
+                Favorites
+              </button>
+              <button
                 data-filter="linkedin"
                 class="filter-chip flex items-center gap-2 px-4 py-2 rounded-full bg-surface-glass hover:bg-surface-glass-hover text-gray-300 hover:text-white text-sm font-medium border border-border-glass transition-all whitespace-nowrap group"
               >
-                <span
-                  class="material-symbols-outlined text-[18px] text-[#0A66C2]"
-                  >work</span
-                >
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="#0A66C2">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>                
                 LinkedIn
               </button>
               <button
@@ -124,7 +130,7 @@
                   <span class="material-symbols-outlined text-[18px]"
                     >sort</span
                   >
-                  <span id="currentSortLabel">Latest (Date)</span>
+                  <span id="currentSortLabel">최근순</span>
                   <span class="material-symbols-outlined text-[16px]"
                     >expand_more</span
                   >
@@ -138,13 +144,13 @@
                     data-sort="date"
                     class="block w-full text-left px-4 py-3 text-sm text-gray-300 hover:bg-white/5 hover:text-white transition-colors active-sort"
                   >
-                    Latest (Date)
+                    최근순
                   </button>
                   <button
                     data-sort="saved"
                     class="block w-full text-left px-4 py-3 text-sm text-gray-300 hover:bg-white/5 hover:text-white transition-colors"
                   >
-                    Saved Order
+                    저장순
                   </button>
                 </div>
               </div>
@@ -260,6 +266,11 @@
           </div>
         </div>
       </header>
+
+      <!-- Global Tag Filter Area -->
+      <div id="globalTagsContainer" class="max-w-[1800px] px-6 py-2 flex flex-wrap gap-2 justify-start items-center min-h-[50px]">
+        <!-- Tags will be injected by JS -->
+      </div>
 
       <!-- Scrollable Feed Area -->
       <div
