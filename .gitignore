@@ -6,3 +6,4 @@ output_linkedin/
 auth/
 auth.json
 output_total/
+node_modules/
