@@ -208,7 +208,7 @@ body.modal-open {
 .tag-input {
   background: rgba(255, 255, 255, 0.03);
   border: 1px dashed rgba(255, 255, 255, 0.1);
-  border-radius: 9999px;
+  border-radius: 9999px !important;
   padding: 0.25rem 0.75rem;
   font-size: 0.75rem;
   color: white;

@@ -3,6 +3,8 @@ temp_code/
 
 tmp/
 auth/
+docs/temp/
+docs/old/
 
 # Data
 output_linkedin/

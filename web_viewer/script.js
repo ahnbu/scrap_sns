@@ -251,46 +251,87 @@ ${item.body}
      * @param {Array} posts - 대상 게시물
      * @param {boolean} silent - true면 알림 없음, false면 결과 알림 및 렌더링
      */
-    function applyAutoTags(posts, silent = true) {
-        const rules = JSON.parse(localStorage.getItem('sns_auto_tag_rules') || '[]');
-        if (rules.length === 0) return 0;
+    async function applyAutoTags(posts, silent = true, onProgress = null) {
+        const manualRules = JSON.parse(localStorage.getItem('sns_auto_tag_rules') || '[]');
+        
+        // 1. Collect all unique tags from existing posts (Implicit Rules)
+        const existingTags = new Set();
+        Object.values(postTags).forEach(tags => tags.forEach(tag => existingTags.add(tag)));
+        
+        // 2. Combine Rules: Manual Rules + Implicit Rules (Keyword = Tag)
+        // We use a Map to ensure unique keywords (Manual rules take precedence if duplicates exist, though less likely)
+        const allRules = new Map();
+        
+        // Add implicit rules first
+        existingTags.forEach(tag => {
+            allRules.set(tag.toLowerCase(), tag); // Keyword: tag (lower), Tag: tag (original case)
+        });
+
+        // Add/Overwrite with manual rules
+        manualRules.forEach(rule => {
+            allRules.set(rule.keyword.toLowerCase(), rule.tag);
+        });
+
+        if (allRules.size === 0) return 0;
 
         let updateCount = 0;
-        posts.forEach(post => {
-            const text = (post.full_text || '').toLowerCase();
-            const url = post.post_url;
+        let debugStats = { hits: 0, skips: 0, distinctTags: existingTags.size };
+        
+        const total = posts.length;
+        const CHUNK_SIZE = 100;
+        
+        for (let i = 0; i < total; i += CHUNK_SIZE) {
+            const chunk = posts.slice(i, i + CHUNK_SIZE);
             
-            if (!postTags[url]) postTags[url] = [];
-            let tags = postTags[url];
-            let modified = false;
+            chunk.forEach(post => {
+                const text = (post.full_text || '').toLowerCase();
+                const url = post.post_url;
+                
+                if (!postTags[url]) postTags[url] = [];
+                let tags = postTags[url];
+                let modified = false;
 
-            rules.forEach(rule => {
-                const keyword = rule.keyword.toLowerCase();
-                const tagName = rule.tag;
-                if (text.includes(keyword) && !tags.includes(tagName)) {
-                    tags.push(tagName);
-                    modified = true;
+                allRules.forEach((tagName, keyword) => {
+                    // Escape special regex chars
+                    const escaped = keyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                    // Boundary: Start or Non-Word-Char + Keyword + Non-Word-Char or End
+                    // Word Chars: a-z, 0-9, _, Korean(가-힣)
+                    const pattern = new RegExp(`(^|[^a-z0-9_가-힣])${escaped}(?![a-z0-9_가-힣])`, 'i');
+                    
+                    if (pattern.test(text)) {
+                        if (!tags.includes(tagName)) {
+                            tags.push(tagName);
+                            modified = true;
+                            updateCount++;
+                        } else {
+                            debugStats.skips++;
+                        }
+                        debugStats.hits++;
+                    }
+                });
+
+                if (modified) {
+                    postTags[url] = tags;
                 }
             });
 
-            if (modified) {
-                postTags[url] = tags;
-                updateCount++;
+            // Update Progress
+            if (onProgress) {
+                const percent = Math.min(100, Math.round(((i + chunk.length) / total) * 100));
+                onProgress(percent);
+                await new Promise(requestAnimationFrame); // Yield to UI
             }
-        });
+        }
 
         if (updateCount > 0) {
             localStorage.setItem('sns_tags', JSON.stringify(postTags));
             updateGlobalTags();
             if (!silent) {
-                alert(`총 ${updateCount}개의 게시물에 새로운 태그가 적용되었습니다.`);
                 renderPosts();
             }
-        } else if (!silent) {
-            alert('새롭게 적용할 태그가 없습니다.');
-        }
-
-        return updateCount;
+        } 
+        
+        return { count: updateCount, ruleCount: allRules.size, stats: debugStats };
     }
 
     async function fetchData() {
@@ -675,7 +716,7 @@ ${item.body}
                 addBtn.style.display = 'none';
                 
                 const input = document.createElement('input');
-                input.className = 'tag-input';
+                input.className = 'tag-input rounded-full';
                 input.placeholder = 'Add tag...';
                 input.type = 'text';
                 
@@ -927,15 +968,7 @@ ${item.body}
         });
 
         // Update Header Icon/Title based on tab
-        const icon = document.getElementById('settingsModalIcon');
-        const title = document.getElementById('settingsModalTitle');
-        if (targetId === 'tabHidden') {
-            icon.textContent = 'visibility';
-            title.textContent = 'Hidden Posts';
-        } else {
-            icon.textContent = 'labels';
-            title.textContent = 'Auto Tagging';
-        }
+
     }
 
     document.querySelectorAll('.tab-btn').forEach(btn => {
@@ -989,35 +1022,89 @@ ${item.body}
 
     // --- Auto Tagging Rules UI ---
     function renderAutoTagRules() {
-        const rules = JSON.parse(localStorage.getItem('sns_auto_tag_rules') || '[]');
+        const manualRules = JSON.parse(localStorage.getItem('sns_auto_tag_rules') || '[]');
         const container = document.getElementById('autoTagRulesList');
         container.innerHTML = '';
+        
+        // 1. Collect and Merge Rules
+        const mergedRules = [];
+        
+        // A. Manual Rules
+        manualRules.forEach((rule, index) => {
+            mergedRules.push({
+                type: 'manual',
+                keyword: rule.keyword,
+                tag: rule.tag,
+                index: index
+            });
+        });
+        
+        // B. Implicit Rules (from Tags)
+        const existingTags = new Set();
+        Object.values(postTags).forEach(tags => tags.forEach(tag => existingTags.add(tag)));
+        
+        existingTags.forEach(tag => {
+            // Only add if not covered by manual rules (exact match)
+            const exists = manualRules.some(r => r.keyword.toLowerCase() === tag.toLowerCase() && r.tag === tag);
+            if (!exists) {
+                mergedRules.push({
+                    type: 'auto',
+                    keyword: tag, // Keyword is the tag itself
+                    tag: tag,
+                    index: -1
+                });
+            }
+        });
+        
+        // Sort: Manual first, then alphabetical by tag
+        mergedRules.sort((a, b) => {
+            if (a.type !== b.type) return a.type === 'manual' ? -1 : 1;
+            return a.tag.localeCompare(b.tag);
+        });
 
-        if (rules.length === 0) {
+        if (mergedRules.length === 0) {
             container.innerHTML = '<p class="text-center py-10 text-gray-600 text-sm italic">No rules defined yet.</p>';
             return;
         }
 
-        rules.forEach((rule, index) => {
+        mergedRules.forEach(rule => {
+            const isManual = rule.type === 'manual';
+            const badgeColor = isManual ? 'bg-primary/10 border-primary/20 text-primary' : 'bg-blue-400/10 border-blue-400/20 text-blue-400';
+            const badgeLabel = isManual ? 'Manual' : 'Auto';
+            
             const div = document.createElement('div');
-            div.className = 'flex items-center justify-between p-4 bg-white/5 rounded-2xl border border-white/5 group/rule';
+            div.className = 'flex items-center justify-between p-4 bg-white/5 rounded-2xl border border-white/5 group/rule hover:bg-white/10 transition-colors';
+            
             div.innerHTML = `
                 <div class="flex items-center gap-3">
-                    <div class="px-3 py-1 rounded-lg bg-primary/10 border border-primary/20 text-primary text-[10px] font-bold uppercase">Keyword</div>
+                    <div class="px-2 py-0.5 rounded text-[10px] font-bold uppercase border ${badgeColor}">${badgeLabel}</div>
+                    ${!isManual ? `<div class="text-[10px] text-gray-500 uppercase font-bold tracking-wider">Tag</div>` : `<div class="px-2 py-0.5 rounded bg-gray-700/50 text-gray-400 text-[10px] font-bold border border-white/10">Key</div>`}
                     <span class="text-sm font-medium text-white">${rule.keyword}</span>
+                    
+                    ${isManual ? `
                     <span class="material-symbols-outlined text-gray-600 text-sm">arrow_forward</span>
-                    <div class="px-3 py-1 rounded-lg bg-green-400/10 border border-green-400/20 text-green-400 text-[10px] font-bold uppercase">Tag</div>
+                    <div class="px-2 py-0.5 rounded bg-green-900/30 text-green-400 text-[10px] font-bold border border-green-500/20">Tag</div>
                     <span class="text-sm font-medium text-white">${rule.tag}</span>
+                    ` : ''}
                 </div>
-                <button class="delete-rule-btn opacity-0 group-hover/rule:opacity-100 p-2 text-gray-500 hover:text-red-400 transition-all" data-index="${index}">
+                
+                ${isManual ? `
+                <button class="delete-rule-btn opacity-0 group-hover/rule:opacity-100 p-2 text-gray-500 hover:text-red-400 transition-all" data-index="${rule.index}">
                     <span class="material-symbols-outlined text-[20px]">delete</span>
-                </button>
+                </button>` : `
+                <div class="opacity-0 group-hover/rule:opacity-100 cursor-help" title="Generated from existing tag">
+                    <span class="material-symbols-outlined text-[18px] text-gray-600">auto_awesome</span>
+                </div>
+                `}
             `;
-            div.querySelector('.delete-rule-btn').addEventListener('click', () => {
-                rules.splice(index, 1);
-                localStorage.setItem('sns_auto_tag_rules', JSON.stringify(rules));
-                renderAutoTagRules();
-            });
+            
+            if (isManual) {
+                div.querySelector('.delete-rule-btn').addEventListener('click', () => {
+                    manualRules.splice(rule.index, 1);
+                    localStorage.setItem('sns_auto_tag_rules', JSON.stringify(manualRules));
+                    renderAutoTagRules();
+                });
+            }
             container.appendChild(div);
         });
     }
@@ -1044,8 +1131,47 @@ ${item.body}
     });
 
     // Batch Update
-    document.getElementById('runBatchAutoTagBtn').addEventListener('click', () => {
-        applyAutoTags(allPosts, false); // silent = false to show alert
+    document.getElementById('runBatchAutoTagBtn').addEventListener('click', async () => {
+        if (!confirm(`총 ${allPosts.length}개의 게시물에 대해 자동 태그 규칙을 적용하시겠습니까?`)) return;
+
+        const btn = document.getElementById('runBatchAutoTagBtn');
+        const statusArea = document.getElementById('batchUpdateStatus');
+        const progressBar = document.getElementById('batchProgressBar');
+        const progressPercent = document.getElementById('batchProgressPercent');
+        const resultMessage = document.getElementById('batchResultMessage');
+
+        // Reset UI
+        btn.disabled = true;
+        statusArea.classList.remove('hidden');
+        progressBar.style.width = '0%';
+        progressPercent.textContent = '0%';
+        resultMessage.classList.add('hidden');
+        
+        // Run
+        // Run
+        const { count, ruleCount, stats } = await applyAutoTags(allPosts, false, (percent) => {
+            progressBar.style.width = `${percent}%`;
+            progressPercent.textContent = `${percent}%`;
+        });
+
+        // Done
+        progressBar.style.width = '100%';
+        progressPercent.textContent = '100%';
+        
+        let msg = count > 0 
+            ? `완료! 총 ${count}개의 태그가 추가되었습니다.` 
+            : `완료! 새로 적용된 태그가 없습니다.`;
+            
+        // Add debug info
+        msg += ` (규칙: ${ruleCount}, 감지: ${stats.hits}, 중복건너뜀: ${stats.skips})`;
+        
+        resultMessage.textContent = msg;
+        resultMessage.classList.remove('hidden');
+
+        // Re-enable button after 500ms
+        setTimeout(() => {
+            btn.disabled = false;
+        }, 500);
     });
 
     // Logo / Home Logic

@@ -243,6 +243,10 @@ CRAWL_MODE = "update only"  # "all" 또는 "update only"
 - **통합 뷰**: Threads와 LinkedIn 데이터를 한 곳에서 확인
 - **필터링 & 정렬**: 플랫폼별 필터링 및 날짜순 정렬
 - **로컬 실행 지원**: 별도의 서버 없이 `index.html` 파일 실행만으로 작동 (`data.js` 자동 연동)
+- **⚡ 스마트 자동 태그 (Smart Auto-Tagging)**:
+  - 기존 태그를 학습하여 본문에 해당 키워드가 있으면 자동 태그 부여
+  - **단어 단위 매칭(Regex)** 알고리즘으로 정확도 향상 (예: 'IT'가 'Visit'과 매칭되지 않음)
+  - 대량 게시물 일괄 업데이트(Batch Update) 지원
 
 ### 사용 방법
 
@@ -527,6 +531,14 @@ python linkedin_scrap.py
 
 최근 프로젝트 변경 사항입니다.
 
+- **2026-02-05 (v10.1)**
+  - **feat**: **스마트 자동 태그 시스템 (Smart Auto-Tagging)** 구현
+    - 기존 태그를 자동 규칙으로 활용 (Implicit Rules)
+    - **단어 단위(Whole Word) 매칭** 정규식 도입 (오탐지 제거)
+    - 대량 게시물 업데이트를 위한 비동기 Batch Update UI 및 프로그레스 바 추가
+  - **style**: 웹 뷰어 UI 개선 (Settings 모달 레이아웃 재설계, Tailwind CDN 전환)
+  - **docs**: 자동 태그 시스템 기술 명세 추가 (`docs/development.md`)
+
 - **2026-02-01 (v10.0)**
   - **feat**: 웹 뷰어(Web Viewer) 기능 고도화 (Masonry, Filter, 날짜 표시 개선)
   - **fix**: LinkedIn 스크래퍼 "결과 더보기" 버튼 자동 클릭 로직 추가 (10개 제한 해결)
@@ -563,6 +575,6 @@ python linkedin_scrap.py
 
 ---
 
-**마지막 업데이트**: 2026-02-01  
-**버전**: 10.0  
+**마지막 업데이트**: 2026-02-05
+**버전**: 10.1
 **작성자**: Vibe Coding
