@@ -1,9 +1,18 @@
 .env.local
 temp_code/
+
 tmp/
-output_threads/
-output_linkedin/
 auth/
-auth.json
+
+# Data
+output_linkedin/
+output_threads/
 output_total/
+web_viewer/images/
+
+# Python
+**/*.pyc
+__pycache__/
+
+# Node
 node_modules/

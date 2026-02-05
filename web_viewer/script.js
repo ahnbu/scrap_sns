@@ -17,14 +17,24 @@ document.addEventListener('DOMContentLoaded', () => {
     let allPosts = [];
     let currentFilter = 'all';
     let searchQuery = '';
-    let currentSort = 'date'; // 'date' (latest first) or 'saved' (sequence_id desc)
+    let currentSort = localStorage.getItem('sns_sort_order') || 'date'; // Persist sort order
 
-    // Favorites state
-    let favorites = new Set(JSON.parse(localStorage.getItem('sns_favorites') || '[]'));
-
-    // Tags state
-    let postTags = JSON.parse(localStorage.getItem('sns_tags') || '{}');
+    // Load states from localStorage
+    const favorites = new Set(JSON.parse(localStorage.getItem('sns_favorites') || '[]'));
+    const foldedPosts = new Set(JSON.parse(localStorage.getItem('sns_folded_posts') || '[]'));
+    const postTags = JSON.parse(localStorage.getItem('sns_tags') || '{}');
     let currentTag = null;
+
+    // Sync Initial Sort UI
+    function syncSortUI() {
+        const activeSortBtn = document.querySelector(`[data-sort="${currentSort}"]`);
+        if (activeSortBtn) {
+            document.getElementById('currentSortLabel').textContent = activeSortBtn.textContent.trim();
+            document.querySelectorAll('[data-sort]').forEach(b => b.classList.remove('font-bold', 'text-primary'));
+            activeSortBtn.classList.add('font-bold', 'text-primary');
+        }
+    }
+    syncSortUI();
 
     // Initialize
     fetchData();
@@ -68,6 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('[data-sort]').forEach(btn => {
         btn.addEventListener('click', (e) => {
             currentSort = e.target.dataset.sort;
+            localStorage.setItem('sns_sort_order', currentSort); // Save to storage
             document.getElementById('currentSortLabel').textContent = e.target.textContent.trim();
             // Close dropdown
             document.getElementById('sortDropdown').classList.add('hidden');
@@ -308,6 +319,14 @@ ${item.body}
             filtered.sort((a, b) => b._seqId - a._seqId); // Descending ID
             // If sequence_id is not reliable, use original index (but filter breaks original index access)
             // Assuming sequence_id is reliable.
+        } else if (currentSort === 'favorites') {
+            filtered.sort((a, b) => {
+                const aFav = favorites.has(a.post_url);
+                const bFav = favorites.has(b.post_url);
+                if (aFav && !bFav) return -1;
+                if (!aFav && bFav) return 1;
+                return b._dateObj - a._dateObj; // Secondary sort by date
+            });
         }
 
         // 3. UI Updates
@@ -388,6 +407,11 @@ ${item.body}
         }
 
         const isFavorited = favorites.has(post.post_url);
+        const isFolded = foldedPosts.has(post.post_url) && !searchQuery; // Show content if searching
+
+        if (isFolded) {
+            article.classList.add('minimized');
+        }
 
         header.innerHTML = `
             <div class="flex items-center gap-3">
@@ -399,12 +423,20 @@ ${item.body}
                     </p>
                 </div>
             </div>
-            <button class="favorite-btn p-1.5 rounded-lg hover:bg-white/10 transition-colors group/fav" data-url="${post.post_url}">
-                <span class="material-symbols-outlined text-[20px] ${isFavorited ? 'text-yellow-400 fill-1' : 'text-gray-500 group-hover/fav:text-yellow-400'} transition-all">
-                    ${isFavorited ? 'star' : 'star'}
-                </span>
-            </button>
+            <div class="flex items-center gap-1">
+                <button class="fold-btn p-1.5 rounded-lg hover:bg-white/10 text-gray-400" data-url="${post.post_url}" title="${isFolded ? 'Unfold card' : 'Fold card'}">
+                    <span class="material-symbols-outlined text-[20px]">
+                        ${isFolded ? 'expand_more' : 'expand_less'}
+                    </span>
+                </button>
+                <button class="favorite-btn p-1.5 rounded-lg hover:bg-white/10 transition-colors group/fav" data-url="${post.post_url}">
+                    <span class="material-symbols-outlined text-[20px] ${isFavorited ? 'text-yellow-400 fill-1' : 'text-gray-500 group-hover/fav:text-yellow-400'} transition-all">
+                        ${isFavorited ? 'star' : 'star'}
+                    </span>
+                </button>
+            </div>
         `;
+
 
         const favBtn = header.querySelector('.favorite-btn');
         favBtn.addEventListener('click', (e) => {
@@ -441,6 +473,8 @@ ${item.body}
 
         // --- Content Text ---
         const content = document.createElement('div');
+        if (isFolded) content.classList.add('hidden-content');
+        
         const cleanText = (post.full_text || '').replace(/\n/g, '<br>');
         const isLongText = (post.full_text || '').length > 150; // Simple length check
         
@@ -483,8 +517,12 @@ ${item.body}
             
             let imgUrl = `https://wsrv.nl/?url=${encodeURIComponent(originalUrl)}&output=webp`;
             
-            // LinkedIn images (licdn.com) often work better directly without proxy
-            if (originalUrl.includes('licdn.com')) {
+            // 1. Try Local Image first
+            if (post.local_images && post.local_images.length > 0) {
+                imgUrl = post.local_images[0];
+            } 
+            // 2. LinkedIn images (licdn.com) often work better directly without proxy
+            else if (originalUrl.includes('licdn.com')) {
                 imgUrl = originalUrl;
             }
             
@@ -492,6 +530,7 @@ ${item.body}
             
             imageDiv = document.createElement('div');
             imageDiv.className = 'rounded-xl overflow-hidden relative group/image mt-2 border border-white/5 bg-black/20';
+            if (isFolded) imageDiv.classList.add('hidden-content');
             
             if (isVideo) {
                 // Placeholder for video posts
@@ -532,6 +571,7 @@ ${item.body}
         // --- Tags Section ---
         const tagsWrapper = document.createElement('div');
         tagsWrapper.className = 'flex flex-col gap-2 mt-2';
+        if (isFolded) tagsWrapper.classList.add('hidden-content');
         
         function renderTags(container, url) {
             container.innerHTML = '';
@@ -653,6 +693,7 @@ ${item.body}
         // --- Footer (Actions) ---
         const footer = document.createElement('div');
         footer.className = 'flex items-center gap-4 pt-3 mt-auto border-t border-white/5 text-gray-500 text-xs';
+        if (isFolded) footer.classList.add('hidden-content');
         footer.innerHTML = `
             <a href="${post.post_url || '#'}" target="_blank" class="flex items-center gap-1 hover:text-primary transition-colors ml-auto">
                 <span>View Original</span>
@@ -660,6 +701,49 @@ ${item.body}
             </a>
         `;
         article.appendChild(footer);
+
+        // *** Fold Toggle Handler ***
+        const foldBtn = header.querySelector('.fold-btn');
+        foldBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const url = post.post_url;
+            
+            // Toggle state
+            const isCurrentlyFolded = foldedPosts.has(url);
+            if (isCurrentlyFolded) {
+                foldedPosts.delete(url);
+            } else {
+                foldedPosts.add(url);
+            }
+            localStorage.setItem('sns_folded_posts', JSON.stringify([...foldedPosts]));
+            
+            // Update UI directly
+            const newFoldedState = !isCurrentlyFolded;
+            
+            // Update button icon/tooltip
+            const icon = foldBtn.querySelector('span');
+            icon.textContent = newFoldedState ? 'expand_more' : 'expand_less';
+            foldBtn.setAttribute('title', newFoldedState ? 'Unfold card' : 'Fold card');
+            
+            // Toggle minimized class on card
+            if (newFoldedState) {
+                article.classList.add('minimized');
+            } else {
+                article.classList.remove('minimized');
+            }
+            
+            // Toggle hidden-content class on actual elements
+            const elementsToToggle = [content, tagsWrapper, footer];
+            if (imageDiv) elementsToToggle.push(imageDiv);
+            
+            elementsToToggle.forEach(el => {
+                if (newFoldedState) {
+                    el.classList.add('hidden-content');
+                } else {
+                    el.classList.remove('hidden-content');
+                }
+            });
+        });
 
         return article;
     }

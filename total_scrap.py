@@ -128,8 +128,6 @@ def save_total(new_posts, threads_count, linkedin_count):
     else:
         print("   이번 실행에서 새로운 업데이트가 없습니다.")
 
-    # 4. 웹 뷰어용 data.js 자동 갱신 (CORS 문제 해결 및 로컬 실행 지원)
-    data_js_path = os.path.join("web_viewer", "data.js")
     try:
         # JSON 데이터 로드 (위의 total_data를 재사용하면 좋지만, 함수 구조상 다시 구성)
         js_content = "const snsFeedData = " + json.dumps(total_data, ensure_ascii=False, indent=2) + ";"
@@ -140,11 +138,103 @@ def save_total(new_posts, threads_count, linkedin_count):
     except Exception as e:
         print(f"   ⚠️ data.js 갱신 실패: {e}")
 
+import requests
+import hashlib
+
+def download_images(posts):
+    print("\n🖼️ 이미지 로컬 다운로드 시작...")
+    
+    # 이미지 저장 경로 (웹 뷰어 기준 relative path 사용을 위해 web_viewer 내부로 지정)
+    # 실제 파일 시스템 경로: d:/Vibe_Coding/scrap_sns/web_viewer/images
+    # 웹 접근 경로: images/filename.jpg
+    fs_img_dir = os.path.join("web_viewer", "images")
+    os.makedirs(fs_img_dir, exist_ok=True)
+    
+    count = 0
+    total_images = sum(len(p.get('images', [])) for p in posts)
+    
+    # 헤더 설정 (403 방지)
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Referer": "https://www.threads.net/"
+    }
+
+    processed = 0
+    
+    for post in posts:
+        remote_images = post.get('images', [])
+        if not remote_images: 
+            continue
+            
+        local_images = []
+        
+        for img_url in remote_images:
+            processed += 1
+            # 비디오 제외 (mp4 등)
+            if '.mp4' in img_url.lower():
+                continue
+                
+            try:
+                # 1. 고유 파일명 생성 (MD5)
+                # URL에서 확장자 추출 시도, 없으면 jpg 가정
+                ext = '.jpg'
+                if '.png' in img_url.lower(): ext = '.png'
+                elif '.webp' in img_url.lower(): ext = '.webp'
+                elif '.jpeg' in img_url.lower(): ext = '.jpeg'
+                
+                # facebook/meta CDN URL은 만료시간 등 파라미터가 바뀌므로, URL 전체보다는 식별자 부분만 해싱하면 좋으나,
+                # 간단하게 URL 전체 해싱 (중복 다운로드 좀 있어도 안전함)
+                file_hash = hashlib.md5(img_url.encode('utf-8')).hexdigest()
+                filename = f"{file_hash}{ext}"
+                
+                fs_path = os.path.join(fs_img_dir, filename)
+                web_path = f"web_viewer/images/{filename}"
+                
+                # 2. 파일 존재 여부 확인
+                if not os.path.exists(fs_path):
+                    # 3. 다운로드
+                    # print(f"   ⬇️ 다운로드: {filename} ({processed}/{total_images})", end="\r")
+                    
+                    # LinkedIn 이미지는 Referer 없이 요청해야 잘 될 때도 있음
+                    curr_headers = headers.copy()
+                    if 'licdn.com' in img_url:
+                        curr_headers = {"User-Agent": headers["User-Agent"]}
+                        
+                    response = requests.get(img_url, headers=curr_headers, timeout=10)
+                    if response.status_code == 200:
+                        with open(fs_path, 'wb') as f:
+                            f.write(response.content)
+                        count += 1
+                    else:
+                        # 실패하면 원본 URL 사용 (local_images에 추가 X -> 프론트가 fallback)
+                        # print(f"   ⚠️ 다운로드 실패({response.status_code}): {img_url}")
+                        pass
+                
+                # 성공했거나 이미 있으면 로컬 경로 추가 (파일이 실제 있을 때만)
+                if os.path.exists(fs_path):
+                    local_images.append(web_path)
+                    
+            except Exception as e:
+                # print(f"   ⚠️ 에러: {e}")
+                pass
+                
+        # 포스트에 로컬 이미지 리스트 추가 (저장할 JSON에 포함됨)
+        if local_images:
+            post['local_images'] = local_images
+
+    print(f"✅ 이미지 다운로드 완료: 신규 {count}개 저장됨.")
+
+
 def run():
     run_scrapers()
     merged_results_data = merge_results()
     if merged_results_data[0]:
-        save_total(merged_results_data[0], merged_results_data[1], merged_results_data[2])
+        posts, threads_count, linkedin_count = merged_results_data
+        
+        # 이미지 다운로드 수행 (posts 객체를 직접 수정 - local_images 추가)
+        download_images(posts)
+        
+        save_total(posts, threads_count, linkedin_count)
 
 if __name__ == "__main__":
     run()

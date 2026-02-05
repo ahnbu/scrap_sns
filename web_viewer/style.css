@@ -99,6 +99,7 @@
 .line-clamp-4 {
   display: -webkit-box;
   -webkit-line-clamp: 4;
+  line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -321,4 +322,23 @@ body.modal-open {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   margin-right: 0.5rem;
+}
+
+/* Visibility Toggle */
+.hidden-content {
+  display: none !important;
+}
+
+.fold-btn {
+  opacity: 0.5;
+  transition: all 0.2s;
+}
+
+.fold-btn:hover {
+  opacity: 1;
+  color: white;
+}
+
+.glass-card.minimized {
+  background: rgba(30, 30, 35, 0.3); /* Slightly more transparent when minimized */
 }
