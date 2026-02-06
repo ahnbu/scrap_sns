@@ -267,17 +267,23 @@ ${item.body}
         Object.values(postTags).forEach(tags => tags.forEach(tag => existingTags.add(tag)));
         
         // 2. Combine Rules: Manual Rules + Implicit Rules (Keyword = Tag)
-        // We use a Map to ensure unique keywords (Manual rules take precedence if duplicates exist, though less likely)
         const allRules = new Map();
         
+        // Helper to validate rule
+        const isValidRule = (kw) => kw && kw.trim().length > 0;
+
         // Add implicit rules first
         existingTags.forEach(tag => {
-            allRules.set(tag.toLowerCase(), tag); // Keyword: tag (lower), Tag: tag (original case)
+            if (isValidRule(tag)) {
+                allRules.set(tag.toLowerCase(), tag);
+            }
         });
 
         // Add/Overwrite with manual rules
         manualRules.forEach(rule => {
-            allRules.set(rule.keyword.toLowerCase(), rule.tag);
+            if (isValidRule(rule.keyword)) {
+                allRules.set(rule.keyword.toLowerCase(), rule.tag);
+            }
         });
 
         if (allRules.size === 0) return 0;
@@ -300,13 +306,9 @@ ${item.body}
                 let modified = false;
 
                 allRules.forEach((tagName, keyword) => {
-                    // Escape special regex chars
-                    const escaped = keyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-                    // Boundary: Start or Non-Word-Char + Keyword + Non-Word-Char or End
-                    // Word Chars: a-z, 0-9, _, Korean(가-힣)
-                    const pattern = new RegExp(`(^|[^a-z0-9_가-힣])${escaped}(?![a-z0-9_가-힣])`, 'i');
-                    
-                    if (pattern.test(text)) {
+                    // Use simple includes() for partial matching as requested by user
+                    // This matches "AI" in "AI", "AInews", "GenAI", etc.
+                    if (text.includes(keyword)) {
                         if (!tags.includes(tagName)) {
                             tags.push(tagName);
                             modified = true;
@@ -352,12 +354,32 @@ ${item.body}
         let loadMode = 'unknown';
 
         try {
-            // 1순위: 서버 API 호출 (최신 데이터)
-            const serverResponse = await fetch('http://localhost:5000/api/latest-data');
-            if (serverResponse.ok) {
-                data = await serverResponse.json();
+            // 1순위: 서버 API 호출 (최신 데이터 + 태그 통합 로드)
+            const [postsRes, tagsRes] = await Promise.all([
+                fetch('http://localhost:5000/api/latest-data'),
+                fetch('http://localhost:5000/api/get-tags')
+            ]);
+
+            if (postsRes.ok) {
+                data = await postsRes.json();
                 loadMode = 'live';
-                console.log('✨ Live Mode: Loaded from server');
+                console.log('✨ Live Mode: Loaded posts from server');
+                
+                if (tagsRes.ok) {
+                    const serverTags = await tagsRes.json();
+                    console.log('🔗 Loaded tags from server sync:', Object.keys(serverTags).length);
+                    // Merge server tags into postTags
+                    Object.assign(postTags, serverTags);
+                    
+                    // Cleanup: Remove empty/invalid tags from all postTags
+                    Object.keys(postTags).forEach(url => {
+                        postTags[url] = postTags[url].filter(t => t && t.trim().length > 0);
+                        if (postTags[url].length === 0) delete postTags[url];
+                    });
+
+                    localStorage.setItem('sns_tags', JSON.stringify(postTags));
+                    syncTagsToServer(); // Update server with cleaned data if needed
+                }
             } else {
                 throw new Error('Server response not OK');
             }
@@ -761,6 +783,7 @@ ${item.body}
                     localStorage.setItem('sns_tags', JSON.stringify(postTags));
                     renderTags(container, url);
                     updateGlobalTags();
+                    syncTagsToServer(); // Real-time sync
                 });
                 container.appendChild(tagChip);
             });
@@ -805,6 +828,7 @@ ${item.body}
                             localStorage.setItem('sns_tags', JSON.stringify(postTags));
                             renderTags(container, url);
                             updateGlobalTags();
+                            syncTagsToServer(); // Real-time sync
                         });
                         suggestionsDiv.appendChild(item);
                     });
@@ -823,6 +847,7 @@ ${item.body}
                             postTags[url].push(val);
                             localStorage.setItem('sns_tags', JSON.stringify(postTags));
                             updateGlobalTags();
+                            syncTagsToServer(); // Real-time sync
                         }
                     }
                     renderTags(container, url);
@@ -989,6 +1014,7 @@ ${item.body}
     }
 
     // --- Management Modal Functions ---
+    // --- Server Sync Functions ---
     async function syncTagsToServer() {
         try {
             const tags = JSON.parse(localStorage.getItem('sns_tags') || '{}');
@@ -1015,7 +1041,7 @@ ${item.body}
             document.body.classList.add('modal-open');
         });
         
-        // Sync tags to server for export (Request 1)
+        // Sync tags to server for export
         syncTagsToServer();
 
         // Default to Hidden Posts tab

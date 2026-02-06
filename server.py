@@ -13,6 +13,21 @@ CORS(app)
 
 OUTPUT_TOTAL_DIR = "output_total"
 
+@app.route('/api/get-tags', methods=['GET'])
+def get_tags():
+    """web_viewer/sns_tags.json 파일을 읽어서 반환합니다."""
+    try:
+        export_path = os.path.join("web_viewer", "sns_tags.json")
+        if not os.path.exists(export_path):
+            return jsonify({}) # 파일이 없으면 빈 객체 반환
+            
+        with open(export_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        return jsonify(data)
+    except Exception as e:
+        print(f"⚠️ 태그 불러오기 중 에러 발생: {str(e)}")
+        return jsonify({"error": str(e)}), 500
+
 @app.route('/api/save-tags', methods=['POST'])
 def save_tags():
     """클라이언트로부터 받은 태그 데이터를 docs/sns_tags_export.json 파일로 저장합니다."""
@@ -21,11 +36,11 @@ def save_tags():
         if not data:
             return jsonify({"status": "error", "message": "No data received"}), 400
 
-        docs_dir = "docs"
-        if not os.path.exists(docs_dir):
-            os.makedirs(docs_dir)
+        target_dir = "web_viewer"
+        if not os.path.exists(target_dir):
+            os.makedirs(target_dir)
 
-        export_path = os.path.join(docs_dir, "sns_tags_export.json")
+        export_path = os.path.join(target_dir, "sns_tags.json")
         
         with open(export_path, 'w', encoding='utf-8') as f:
             json.dump(data, f, indent=4, ensure_ascii=False)
