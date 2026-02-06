@@ -30,6 +30,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const invisiblePosts = new Set(JSON.parse(localStorage.getItem('sns_invisible_posts') || '[]'));
     const foldedPosts = new Set(JSON.parse(localStorage.getItem('sns_folded_posts') || '[]'));
     const postTags = JSON.parse(localStorage.getItem('sns_tags') || '{}');
+    
+    // Cleanup 'undefined' key from postTags if it exists (remnant of failed migration)
+    if (postTags['undefined']) {
+        console.warn('🧹 Cleaning up invalid "undefined" key from localStorage tags');
+        delete postTags['undefined'];
+        localStorage.setItem('sns_tags', JSON.stringify(postTags));
+    }
+    
     let currentTag = null;
 
     // Sync Initial Sort UI
@@ -285,7 +293,7 @@ ${item.body}
             
             chunk.forEach(post => {
                 const text = (post.full_text || '').toLowerCase();
-                const url = post.post_url;
+                const url = post.post_url || post.source_url || post.code;
                 
                 if (!postTags[url]) postTags[url] = [];
                 let tags = postTags[url];
@@ -423,12 +431,14 @@ ${item.body}
                 (post.full_text || '').toLowerCase().includes(searchQuery) ||
                 (post.username || '').toLowerCase().includes(searchQuery);
             
+            const postUrl = post.post_url || post.source_url || post.code;
+            
             const matchesFilter = 
                 currentFilter === 'all' || 
-                (currentFilter === 'favorites' ? favorites.has(post.post_url) : (post.sns_platform || '').toLowerCase() === currentFilter);
+                (currentFilter === 'favorites' ? favorites.has(postUrl) : (post.sns_platform || '').toLowerCase() === currentFilter);
 
-            const matchesTag = !currentTag || (postTags[post.post_url] || []).includes(currentTag);
-            const matchesVisibility = !invisiblePosts.has(post.post_url);
+            const matchesTag = !currentTag || (postTags[postUrl] || []).includes(currentTag);
+            const matchesVisibility = !invisiblePosts.has(postUrl);
 
             return matchesSearch && matchesFilter && matchesTag && matchesVisibility;
         });
@@ -450,8 +460,10 @@ ${item.body}
             // Assuming sequence_id is reliable.
         } else if (currentSort === 'favorites') {
             filtered.sort((a, b) => {
-                const aFav = favorites.has(a.post_url);
-                const bFav = favorites.has(b.post_url);
+                const aUrl = a.post_url || a.source_url || a.code;
+                const bUrl = b.post_url || b.source_url || b.code;
+                const aFav = favorites.has(aUrl);
+                const bFav = favorites.has(bUrl);
                 if (aFav && !bFav) return -1;
                 if (!aFav && bFav) return 1;
                 return b._dateObj - a._dateObj; // Secondary sort by date
@@ -535,8 +547,9 @@ ${item.body}
             iconHtml = `<span class="material-symbols-outlined text-[20px]" style="color: ${platformConfig.color}">${platformConfig.icon}</span>`;
         }
 
-        const isFavorited = favorites.has(post.post_url);
-        const isFolded = foldedPosts.has(post.post_url) && !searchQuery; // Show content if searching
+        const postUrl = post.post_url || post.source_url || post.code;
+        const isFavorited = favorites.has(postUrl);
+        const isFolded = foldedPosts.has(postUrl) && !searchQuery; // Show content if searching
 
         if (isFolded) {
             article.classList.add('minimized');
@@ -553,15 +566,15 @@ ${item.body}
                 </div>
             </div>
             <div class="flex items-center gap-1">
-                <button class="fold-btn p-1.5 rounded-lg hover:bg-white/10 text-gray-400" data-url="${post.post_url}" title="${isFolded ? 'Unfold card' : 'Fold card'}">
+                <button class="fold-btn p-1.5 rounded-lg hover:bg-white/10 text-gray-400" data-url="${postUrl}" title="${isFolded ? 'Unfold card' : 'Fold card'}">
                     <span class="material-symbols-outlined text-[20px]">
                         ${isFolded ? 'expand_more' : 'expand_less'}
                     </span>
                 </button>
-                <button class="invisible-btn p-1.5 rounded-lg hover:bg-white/10 transition-colors text-gray-400 hover:text-red-400" data-url="${post.post_url}" title="Hide post">
+                <button class="invisible-btn p-1.5 rounded-lg hover:bg-white/10 transition-colors text-gray-400 hover:text-red-400" data-url="${postUrl}" title="Hide post">
                     <span class="material-symbols-outlined text-[20px]">visibility</span>
                 </button>
-                <button class="favorite-btn p-1.5 rounded-lg hover:bg-white/10 transition-colors group/fav" data-url="${post.post_url}">
+                <button class="favorite-btn p-1.5 rounded-lg hover:bg-white/10 transition-colors group/fav" data-url="${postUrl}">
                     <span class="material-symbols-outlined text-[20px] ${isFavorited ? 'text-yellow-400 fill-1' : 'text-gray-500 group-hover/fav:text-yellow-400'} transition-all">
                         ${isFavorited ? 'star' : 'star'}
                     </span>
@@ -607,7 +620,7 @@ ${item.body}
         const invisibleBtn = header.querySelector('.invisible-btn');
         invisibleBtn.addEventListener('click', (e) => {
             e.stopPropagation();
-            const url = post.post_url;
+            const url = postUrl;
             
             if (confirm('이 게시글을 피드에서 숨기시겠습니까? (추후 설정에서 복구 가능)')) {
                 invisiblePosts.add(url);
@@ -631,7 +644,7 @@ ${item.body}
         
         content.innerHTML = `
             <div class="relative ${isLongText ? 'cursor-pointer group/text' : ''}">
-                <p class="text-sm text-gray-200 leading-relaxed font-light ${isLongText ? 'line-clamp-4' : ''} transition-all select-none" id="text-${post.post_url}">
+                <p class="text-sm text-gray-200 leading-relaxed font-light ${isLongText ? 'line-clamp-4' : ''} transition-all select-none" id="text-${postUrl}">
                     ${cleanText}
                 </p>
                 ${isLongText ? `
@@ -687,7 +700,7 @@ ${item.body}
                 // Placeholder for video posts
                 imageDiv.innerHTML = `
                     <div class="w-full min-h-[200px] flex flex-col items-center justify-center bg-black/40 cursor-pointer py-10" 
-                         onclick="window.open('${post.post_url}', '_blank')">
+                         onclick="window.open('${postUrl}', '_blank')">
                         <span class="material-symbols-outlined text-4xl text-white/50 mb-2">play_circle</span>
                         <span class="text-xs text-white/40">Video Post (Click to view)</span>
                     </div>
@@ -831,7 +844,7 @@ ${item.body}
 
         const tagContainer = document.createElement('div');
         tagContainer.className = 'tag-container';
-        renderTags(tagContainer, post.post_url);
+        renderTags(tagContainer, postUrl);
         tagsWrapper.appendChild(tagContainer);
         
         article.appendChild(header);
@@ -846,7 +859,7 @@ ${item.body}
         footer.className = 'flex items-center gap-4 pt-3 mt-auto border-t border-white/5 text-gray-500 text-xs';
         if (isFolded) footer.classList.add('hidden-content');
         footer.innerHTML = `
-            <a href="${post.post_url || '#'}" target="_blank" class="flex items-center gap-1 hover:text-primary transition-colors ml-auto">
+            <a href="${postUrl || '#'}" target="_blank" class="flex items-center gap-1 hover:text-primary transition-colors ml-auto">
                 <span>View Original</span>
                 <span class="material-symbols-outlined text-[16px]">open_in_new</span>
             </a>

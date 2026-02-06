@@ -154,7 +154,7 @@ async def process_network_post_async(node, master_pk, code):
             "full_text": caption.get("text") if caption else "",
             "created_at": created_at,
             "images_count": len(images),
-            "source_url": f"https://www.threads.net/t/{p_code}"
+            "post_url": f"https://www.threads.net/t/{p_code}"
         }
         
         if post_info['full_text'] or images:
