@@ -232,9 +232,12 @@ def update_simple_version(new_data, stop_code, crawl_start_time):
     
     full_data = {"metadata": metadata, "posts": merged_posts}
     
-    with open(today_simple, "w", encoding="utf-8") as f:
-        json.dump(full_data, f, ensure_ascii=False, indent=4)
-    print(f"📦 Simple 버전 저장 완료: {today_simple}")
+    try:
+        with open(today_simple, "w", encoding="utf-8") as f:
+            json.dump(full_data, f, ensure_ascii=False, indent=4)
+        print(f"📦 Simple 버전 저장 완료: {today_simple}")
+    except Exception as e:
+        print(f"⚠️ Simple 버전 저장 실패: {e}")
     return today_simple
 
 
@@ -296,6 +299,10 @@ def run():
                             # 최신순 5개 추출 (삭제 방지용 징검다리 전략)
                             stop_codes = [p['code'] for p in posts[:5]]
                             print(f"🔄 UPDATE ONLY 모드: {stop_codes} 중 하나라도 발견 시 수집을 중단합니다.")
+            except json.JSONDecodeError as e:
+                print(f"⚠️ Simple 파일 인코딩/형식 오류 (삭제 권장): {e}")
+                # 오류 발생 시 백업하거나 무시하고 전체 수집으로 전환
+                stop_codes = []
             except Exception as e:
                 print(f"⚠️ Simple 파일 읽기 실패: {e}")
         else:
@@ -591,16 +598,16 @@ def run():
                     print(f"\n🎉 목표 수집 개수({TARGET_LIMIT}개) 도달! 스크롤 종료.")
                     break
                 
-                # ⛔ UPDATE ONLY 모드: stop_code 발견 시 스크롤 중단
-                if stop_code_found:
-                    print(f"\n✋ 기준 게시물 수집 완료! 스크롤 종료")
-                    break
-
                 try:
                     if page.is_closed(): break
                     page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
                     print(f"⬇️ 스크롤 {i}회차...", end="\r")
                     time.sleep(3)
+
+                    # ⛔ UPDATE ONLY 모드: stop_code 발견 시 스크롤 중단
+                    if stop_code_found:
+                        print(f"\n✋ 기준 게시물 발견! (스크롤 중단)")
+                        break
 
                     current_len = len(collected_data)
                     if current_len > last_len:

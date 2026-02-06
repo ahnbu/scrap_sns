@@ -8,9 +8,12 @@ docs/old/
 docs/stitch/
 
 # Data
-output_linkedin/
-output_threads/
-output_total/
+output_linkedin/js/
+output_linkedin/debug/
+output_linkedin/python/update
+output_threads/js/
+output_threads/python/update/
+output_total/update/
 web_viewer/images/
 
 # Python
