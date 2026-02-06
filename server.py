@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, render_template, send_from_directory
+from flask import Flask, jsonify, render_template, send_from_directory, request
 from flask_cors import CORS
 import subprocess
 import os
@@ -12,6 +12,29 @@ app = Flask(__name__)
 CORS(app)
 
 OUTPUT_TOTAL_DIR = "output_total"
+
+@app.route('/api/save-tags', methods=['POST'])
+def save_tags():
+    """클라이언트로부터 받은 태그 데이터를 docs/sns_tags_export.json 파일로 저장합니다."""
+    try:
+        data = request.json
+        if not data:
+            return jsonify({"status": "error", "message": "No data received"}), 400
+
+        docs_dir = "docs"
+        if not os.path.exists(docs_dir):
+            os.makedirs(docs_dir)
+
+        export_path = os.path.join(docs_dir, "sns_tags_export.json")
+        
+        with open(export_path, 'w', encoding='utf-8') as f:
+            json.dump(data, f, indent=4, ensure_ascii=False)
+            
+        print(f"💾 태그 데이터가 {export_path}에 저장되었습니다.")
+        return jsonify({"status": "success", "message": f"Saved to {export_path}"})
+    except Exception as e:
+        print(f"⚠️ 태그 저장 중 에러 발생: {str(e)}")
+        return jsonify({"status": "error", "message": str(e)}), 500
 
 @app.route('/api/latest-data', methods=['GET'])
 def get_latest_data():

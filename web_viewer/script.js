@@ -989,6 +989,25 @@ ${item.body}
     }
 
     // --- Management Modal Functions ---
+    async function syncTagsToServer() {
+        try {
+            const tags = JSON.parse(localStorage.getItem('sns_tags') || '{}');
+            const response = await fetch('http://localhost:5000/api/save-tags', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(tags)
+            });
+            const result = await response.json();
+            if (result.status === 'success') {
+                console.log('📤 Tags synced to server successfully');
+            } else {
+                console.error('Failed to sync tags:', result.message);
+            }
+        } catch (error) {
+            console.error('Error syncing tags to server:', error);
+        }
+    }
+
     function openManagementModal() {
         managementModal.classList.remove('hidden');
         requestAnimationFrame(() => {
@@ -996,6 +1015,9 @@ ${item.body}
             document.body.classList.add('modal-open');
         });
         
+        // Sync tags to server for export (Request 1)
+        syncTagsToServer();
+
         // Default to Hidden Posts tab
         switchTab('tabHidden');
         renderInvisibleList();
