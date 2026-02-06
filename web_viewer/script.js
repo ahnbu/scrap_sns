@@ -596,6 +596,9 @@ ${item.body}
                 <button class="invisible-btn p-1.5 rounded-lg hover:bg-white/10 transition-colors text-gray-400 hover:text-red-400" data-url="${postUrl}" title="Hide post">
                     <span class="material-symbols-outlined text-[20px]">visibility</span>
                 </button>
+                <button class="copy-btn p-1.5 rounded-lg hover:bg-white/10 transition-colors text-gray-400 hover:text-primary" data-url="${postUrl}" title="Copy text">
+                    <span class="material-symbols-outlined text-[20px]">content_copy</span>
+                </button>
                 <button class="favorite-btn p-1.5 rounded-lg hover:bg-white/10 transition-colors group/fav" data-url="${postUrl}">
                     <span class="material-symbols-outlined text-[20px] ${isFavorited ? 'text-yellow-400 fill-1' : 'text-gray-500 group-hover/fav:text-yellow-400'} transition-all">
                         ${isFavorited ? 'star' : 'star'}
@@ -634,8 +637,33 @@ ${item.body}
                 ], { duration: 300, easing: 'cubic-bezier(0.175, 0.885, 0.32, 1.275)' });
             }
             
-            localStorage.setItem('sns_favorites', JSON.stringify([...favorites]));
+        localStorage.setItem('sns_favorites', JSON.stringify([...favorites]));
             updateGlobalTags(); // Update global tags to reflect favorite/tag changes if needed (though favorites doesn't affect tags currently)
+        });
+
+        // --- Copy Text Handler ---
+        const copyBtn = header.querySelector('.copy-btn');
+        copyBtn.addEventListener('click', async (e) => {
+            e.stopPropagation();
+            const textToCopy = post.full_text || '';
+            const icon = copyBtn.querySelector('span');
+
+            try {
+                await navigator.clipboard.writeText(textToCopy);
+                
+                // Visual Feedback
+                const originalIcon = icon.textContent;
+                icon.textContent = 'check';
+                icon.classList.add('text-green-400');
+                
+                setTimeout(() => {
+                    icon.textContent = originalIcon;
+                    icon.classList.remove('text-green-400');
+                }, 2000);
+            } catch (err) {
+                console.error('Failed to copy: ', err);
+                alert('복사에 실패했습니다.');
+            }
         });
 
         // --- Invisible Toggle Handler ---
