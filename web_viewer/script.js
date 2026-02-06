@@ -110,47 +110,73 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Run Scraper functionality
     const runScrapBtn = document.getElementById('runScrapBtn');
-    runScrapBtn.addEventListener('click', async () => {
-        if (!confirm('스크래핑을 시작하시겠습니까? (이 작업은 수 분이 소요될 수 있습니다)')) return;
+    const scrapDropdown = document.getElementById('scrapDropdown');
 
-        // UI State: Loading
-        const originalContent = runScrapBtn.innerHTML;
-        runScrapBtn.disabled = true;
-        runScrapBtn.classList.add('opacity-50', 'cursor-not-allowed');
-        runScrapBtn.innerHTML = `
-            <span class="material-symbols-outlined text-[20px] animate-spin text-primary">sync</span>
-            <span class="font-medium whitespace-nowrap">Running...</span>
-        `;
+    if (runScrapBtn && scrapDropdown) {
+        runScrapBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            scrapDropdown.classList.toggle('hidden');
+        });
 
-        try {
-            // First, check if server is running
-            const statusCheck = await fetch('http://localhost:5000/api/status').catch(() => null);
-            if (!statusCheck || !statusCheck.ok) {
-                alert('Flask 서버가 실행되고 있지 않습니다. 터미널에서 "python server.py"를 실행해주세요.');
-                return;
+        document.addEventListener('click', (e) => {
+            if (!runScrapBtn.contains(e.target) && !scrapDropdown.contains(e.target)) {
+                scrapDropdown.classList.add('hidden');
             }
+        });
 
-            const response = await fetch('http://localhost:5000/api/run-scrap', {
-                method: 'POST'
+        document.querySelectorAll('[data-mode]').forEach(btn => {
+            btn.addEventListener('click', async (e) => {
+                const mode = e.currentTarget.dataset.mode;
+                const modeLabel = mode === 'all' ? '전체 크롤링' : '최근 업데이트';
+                
+                if (!confirm(`${modeLabel}을 시작하시겠습니까? (이 작업은 수 분이 소요될 수 있습니다)`)) return;
+
+                scrapDropdown.classList.add('hidden');
+
+                // UI State: Loading
+                const originalContent = runScrapBtn.innerHTML;
+                runScrapBtn.disabled = true;
+                runScrapBtn.classList.add('opacity-50', 'cursor-not-allowed');
+                runScrapBtn.innerHTML = `
+                    <span class="material-symbols-outlined text-[20px] animate-spin text-primary">sync</span>
+                    <span class="font-medium text-xs whitespace-nowrap">Running...</span>
+                `;
+
+                try {
+                    // First, check if server is running
+                    const statusCheck = await fetch('http://localhost:5000/api/status').catch(() => null);
+                    if (!statusCheck || !statusCheck.ok) {
+                        alert('Flask 서버가 실행되고 있지 않습니다. 터미널에서 "python server.py"를 실행해주세요.');
+                        return;
+                    }
+
+                    const response = await fetch('http://localhost:5000/api/run-scrap', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({ mode: mode })
+                    });
+                    const result = await response.json();
+
+                    if (result.status === 'success') {
+                        alert(`${modeLabel}이 완료되었습니다! 데이터를 새로고침합니다.`);
+                        fetchData(); // Refresh feed
+                    } else {
+                        alert(`에러 발생: ${result.message}`);
+                    }
+                } catch (error) {
+                    console.error('Scraping Error:', error);
+                    alert('서버와 통신 중 오류가 발생했습니다.');
+                } finally {
+                    // Restore UI State
+                    runScrapBtn.disabled = false;
+                    runScrapBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+                    runScrapBtn.innerHTML = originalContent;
+                }
             });
-            const result = await response.json();
-
-            if (result.status === 'success') {
-                alert('스크래핑이 완료되었습니다! 데이터를 새로고침합니다.');
-                fetchData(); // Refresh feed
-            } else {
-                alert(`에러 발생: ${result.message}`);
-            }
-        } catch (error) {
-            console.error('Scraping Error:', error);
-            alert('서버와 통신 중 오류가 발생했습니다.');
-        } finally {
-            // Restore UI State
-            runScrapBtn.disabled = false;
-            runScrapBtn.classList.remove('opacity-50', 'cursor-not-allowed');
-            runScrapBtn.innerHTML = originalContent;
-        }
-    });
+        });
+    }
 
     // Download Functionality
     const downloadBtn = document.getElementById('downloadBtn');

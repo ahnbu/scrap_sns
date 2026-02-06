@@ -40,7 +40,7 @@
             },
             backdropBlur: {
               xs: "2px",
-            }
+            },
           },
         },
       };
@@ -62,7 +62,11 @@
         >
           <!-- Brand & Search -->
           <div class="flex items-center gap-6 w-full md:w-auto">
-            <div id="logoHome" class="flex items-center gap-3 cursor-pointer hover:scale-105 active:scale-95 transition-all" title="Home">
+            <div
+              id="logoHome"
+              class="flex items-center gap-3 cursor-pointer hover:scale-105 active:scale-95 transition-all"
+              title="Home"
+            >
               <div
                 class="size-10 rounded-xl bg-gradient-to-br from-primary to-purple-400 flex items-center justify-center shadow-lg shadow-primary/30 shrink-0"
               >
@@ -109,16 +113,27 @@
                 class="filter-chip flex items-center justify-center size-10 rounded-full bg-surface-glass hover:bg-surface-glass-hover text-gray-300 hover:text-white border border-border-glass transition-all whitespace-nowrap group"
                 title="Favorites"
               >
-                <span class="material-symbols-outlined text-[18px] text-yellow-400">star</span>
+                <span
+                  class="material-symbols-outlined text-[18px] text-yellow-400"
+                  >star</span
+                >
               </button>
               <button
                 data-filter="linkedin"
                 class="filter-chip flex items-center justify-center size-10 rounded-full bg-surface-glass hover:bg-surface-glass-hover text-gray-300 hover:text-white border border-border-glass transition-all whitespace-nowrap group"
                 title="LinkedIn"
               >
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="#0A66C2">
-                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                </svg>                
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="#0A66C2"
+                >
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                  />
+                </svg>
               </button>
               <button
                 data-filter="threads"
@@ -260,16 +275,51 @@
                   </div>
                 </div>
 
-                <button
-                  id="runScrapBtn"
-                  class="flex items-center gap-2 px-3 md:px-4 py-2 rounded-xl bg-surface-glass hover:bg-surface-glass-hover text-gray-300 hover:text-white border border-border-glass transition-all hover:scale-105 group active:scale-95"
-                  title="Run Scrap"
-                >
-                  <span
-                    class="material-symbols-outlined text-[18px] md:text-[20px] text-primary group-hover:animate-pulse"
-                    >rocket_launch</span
+                <!-- Run Scrap Button Group -->
+                <div class="relative group z-20">
+                  <button
+                    id="runScrapBtn"
+                    class="flex items-center gap-2 px-3 md:px-4 py-2 rounded-xl bg-surface-glass hover:bg-surface-glass-hover text-gray-300 hover:text-white border border-border-glass transition-all hover:scale-105 group active:scale-95"
+                    title="Run Scrap"
                   >
-                </button>
+                    <span
+                      class="material-symbols-outlined text-[18px] md:text-[20px] text-primary group-hover:animate-pulse"
+                      >rocket_launch</span
+                    >
+                    <span class="material-symbols-outlined text-[16px]"
+                      >expand_more</span
+                    >
+                  </button>
+                  <!-- Scrap Dropdown -->
+                  <div
+                    id="scrapDropdown"
+                    class="absolute right-0 top-full mt-2 w-48 bg-[#1E1E24] border border-white/10 rounded-xl shadow-xl overflow-hidden hidden transform origin-top transition-all"
+                  >
+                    <div
+                      class="px-4 py-2 text-xs font-semibold text-gray-500 border-b border-white/5"
+                    >
+                      Scraping Mode
+                    </div>
+                    <button
+                      data-mode="update"
+                      class="block w-full text-left px-4 py-3 text-sm text-gray-300 hover:bg-white/5 hover:text-white transition-colors flex items-center gap-2"
+                    >
+                      <span class="material-symbols-outlined text-[18px]"
+                        >update</span
+                      >
+                      최근 업데이트 (Update)
+                    </button>
+                    <button
+                      data-mode="all"
+                      class="block w-full text-left px-4 py-3 text-sm text-gray-300 hover:bg-white/5 hover:text-white transition-colors flex items-center gap-2"
+                    >
+                      <span class="material-symbols-outlined text-[18px]"
+                        >select_all</span
+                      >
+                      전체 크롤링 (All)
+                    </button>
+                  </div>
+                </div>
 
                 <button
                   id="refreshBtn"
@@ -299,7 +349,10 @@
       </header>
 
       <!-- Global Tag Filter Area -->
-      <div id="globalTagsContainer" class="max-w-[1800px] mx-auto px-6 py-2 flex flex-wrap gap-2 justify-start items-center min-h-[50px]">
+      <div
+        id="globalTagsContainer"
+        class="max-w-[1800px] mx-auto px-6 py-2 flex flex-wrap gap-2 justify-start items-center min-h-[50px]"
+      >
         <!-- Tags will be injected by JS -->
       </div>
 
@@ -390,94 +443,175 @@
       id="managementModal"
       class="fixed inset-0 z-50 hidden bg-black/80 flex items-center justify-center p-8 md:p-16 transition-opacity duration-300 opacity-0 pointer-events-none"
     >
-      <div class="relative w-full max-w-2xl bg-[#1E1E24] border border-white/10 rounded-3xl shadow-2xl flex flex-col max-h-[85vh] overflow-hidden">
-        <header class="p-8 border-b border-white/5 flex items-center justify-between shrink-0">
+      <div
+        class="relative w-full max-w-2xl bg-[#1E1E24] border border-white/10 rounded-3xl shadow-2xl flex flex-col max-h-[85vh] overflow-hidden"
+      >
+        <header
+          class="p-8 border-b border-white/5 flex items-center justify-between shrink-0"
+        >
           <div class="flex items-center gap-5">
-            <div class="size-12 rounded-2xl bg-primary/20 flex items-center justify-center">
-              <span class="material-symbols-outlined text-primary text-[28px]">settings</span>
+            <div
+              class="size-12 rounded-2xl bg-primary/20 flex items-center justify-center"
+            >
+              <span class="material-symbols-outlined text-primary text-[28px]"
+                >settings</span
+              >
             </div>
             <h2 class="text-2xl font-bold tracking-tight">Settings</h2>
           </div>
-          <button id="closeManagementModal" class="size-12 rounded-full flex items-center justify-center text-gray-500 hover:text-white hover:bg-white/10 transition-all">
+          <button
+            id="closeManagementModal"
+            class="size-12 rounded-full flex items-center justify-center text-gray-500 hover:text-white hover:bg-white/10 transition-all"
+          >
             <span class="material-symbols-outlined text-[28px]">close</span>
           </button>
         </header>
 
         <!-- Tab Navigation -->
         <div class="flex gap-3 px-8 pt-4 border-b border-white/5 shrink-0">
-          <button class="tab-btn active pb-3 text-base font-semibold border-b-2 border-primary text-white transition-all" data-target="tabHidden">숨김 게시물</button>
-          <button class="tab-btn pb-3 text-base font-semibold border-b-2 border-transparent text-gray-500 hover:text-gray-300 transition-all" data-target="tabAutoTag">자동 태그</button>
+          <button
+            class="tab-btn active pb-3 text-base font-semibold border-b-2 border-primary text-white transition-all"
+            data-target="tabHidden"
+          >
+            숨김 게시물
+          </button>
+          <button
+            class="tab-btn pb-3 text-base font-semibold border-b-2 border-transparent text-gray-500 hover:text-gray-300 transition-all"
+            data-target="tabAutoTag"
+          >
+            자동 태그
+          </button>
         </div>
 
         <!-- Tab Content: Hidden Posts -->
-        <div id="tabHidden" class="tab-pane flex-1 overflow-y-auto no-scrollbar">
+        <div
+          id="tabHidden"
+          class="tab-pane flex-1 overflow-y-auto no-scrollbar"
+        >
           <div id="invisiblePostsList" class="p-8 flex flex-col gap-6">
             <!-- Hidden items will be injected here -->
           </div>
-          <p id="noHiddenPosts" class="p-20 text-center text-gray-500 hidden text-lg">숨김 처리된 게시물이 없습니다.</p>
+          <p
+            id="noHiddenPosts"
+            class="p-20 text-center text-gray-500 hidden text-lg"
+          >
+            숨김 처리된 게시물이 없습니다.
+          </p>
         </div>
 
         <!-- Tab Content: Auto Tagging -->
-        <div id="tabAutoTag" class="tab-pane hidden flex-1 flex flex-col overflow-hidden relative">
-          
+        <div
+          id="tabAutoTag"
+          class="tab-pane hidden flex-1 flex flex-col overflow-hidden relative"
+        >
           <!-- Top Fixed Section: Batch Update -->
           <div class="p-6 border-b border-white/5 bg-black/20 shrink-0">
             <div class="flex items-center justify-between">
               <div class="flex flex-col gap-1">
-                <span class="text-xs font-bold text-gray-400 uppercase tracking-widest">Manual batch update</span>
-                <span class="text-xs text-gray-600 italic">Apply current rules to all existing posts</span>
+                <span
+                  class="text-xs font-bold text-gray-400 uppercase tracking-widest"
+                  >Manual batch update</span
+                >
+                <span class="text-xs text-gray-600 italic"
+                  >Apply current rules to all existing posts</span
+                >
               </div>
-              <button id="runBatchAutoTagBtn"
-                class="flex items-center gap-3 px-6 py-3 rounded-xl bg-white/5 hover:bg-white/10 text-white text-xs font-bold border border-white/10 transition-all hover:scale-[1.02] active:scale-95 shadow-xl disabled:opacity-50 disabled:cursor-not-allowed">
+              <button
+                id="runBatchAutoTagBtn"
+                class="flex items-center gap-3 px-6 py-3 rounded-xl bg-white/5 hover:bg-white/10 text-white text-xs font-bold border border-white/10 transition-all hover:scale-[1.02] active:scale-95 shadow-xl disabled:opacity-50 disabled:cursor-not-allowed"
+              >
                 <span class="material-symbols-outlined text-[18px]">bolt</span>
                 Tag 일괄 업데이트
               </button>
             </div>
-            
+
             <!-- Progress & Status Area (Inline) -->
-            <div id="batchUpdateStatus" class="mt-4 pt-4 border-t border-white/5 hidden animate-fade-in">
+            <div
+              id="batchUpdateStatus"
+              class="mt-4 pt-4 border-t border-white/5 hidden animate-fade-in"
+            >
               <div class="flex items-center justify-between mb-2">
-                <span id="batchStatusText" class="text-[10px] font-semibold text-gray-400 uppercase tracking-widest">Processing...</span>
-                <span id="batchProgressPercent" class="text-[10px] font-bold text-primary">0%</span>
+                <span
+                  id="batchStatusText"
+                  class="text-[10px] font-semibold text-gray-400 uppercase tracking-widest"
+                  >Processing...</span
+                >
+                <span
+                  id="batchProgressPercent"
+                  class="text-[10px] font-bold text-primary"
+                  >0%</span
+                >
               </div>
               <div class="w-full h-1.5 bg-white/5 rounded-full overflow-hidden">
-                <div id="batchProgressBar" class="h-full bg-primary transition-all duration-300 ease-out" style="width: 0%"></div>
+                <div
+                  id="batchProgressBar"
+                  class="h-full bg-primary transition-all duration-300 ease-out"
+                  style="width: 0%"
+                ></div>
               </div>
-              <p id="batchResultMessage" class="text-xs text-gray-300 mt-2 text-center hidden"></p>
+              <p
+                id="batchResultMessage"
+                class="text-xs text-gray-300 mt-2 text-center hidden"
+              ></p>
             </div>
           </div>
 
           <!-- Scrollable Content -->
           <div class="flex-1 overflow-y-auto min-h-0 custom-scrollbar">
             <div class="p-8 flex flex-col gap-8">
-              
               <!-- Add Rule Form -->
-              <div class="flex flex-col gap-5 p-6 bg-white/5 rounded-[24px] border border-white/5 shrink-0">
-                <h3 class="text-xs font-bold text-gray-500 tracking-[0.1em] uppercase">Add New Rule</h3>
+              <div
+                class="flex flex-col gap-5 p-6 bg-white/5 rounded-[24px] border border-white/5 shrink-0"
+              >
+                <h3
+                  class="text-xs font-bold text-gray-500 tracking-[0.1em] uppercase"
+                >
+                  Add New Rule
+                </h3>
                 <div class="flex flex-col gap-3">
                   <div class="flex gap-3">
-                    <input id="autoTagKeyword" type="text" placeholder="Keyword (e.g. AI)" class="flex-1 px-4 py-3 rounded-xl bg-black/40 border border-white/10 text-sm focus:border-primary/50 outline-none transition-all placeholder:text-gray-600">
-                    <input id="autoTagTagName" type="text" placeholder="Tag Name" class="flex-1 px-4 py-3 rounded-xl bg-black/40 border border-white/10 text-sm focus:border-primary/50 outline-none transition-all placeholder:text-gray-600">
+                    <input
+                      id="autoTagKeyword"
+                      type="text"
+                      placeholder="Keyword (e.g. AI)"
+                      class="flex-1 px-4 py-3 rounded-xl bg-black/40 border border-white/10 text-sm focus:border-primary/50 outline-none transition-all placeholder:text-gray-600"
+                    />
+                    <input
+                      id="autoTagTagName"
+                      type="text"
+                      placeholder="Tag Name"
+                      class="flex-1 px-4 py-3 rounded-xl bg-black/40 border border-white/10 text-sm focus:border-primary/50 outline-none transition-all placeholder:text-gray-600"
+                    />
                   </div>
-                  <button id="addAutoTagRuleBtn" class="w-full py-3 rounded-xl bg-primary hover:bg-primary-hover text-white text-sm font-bold transition-all shadow-lg active:scale-95">Add Rule</button>
+                  <button
+                    id="addAutoTagRuleBtn"
+                    class="w-full py-3 rounded-xl bg-primary hover:bg-primary-hover text-white text-sm font-bold transition-all shadow-lg active:scale-95"
+                  >
+                    Add Rule
+                  </button>
                 </div>
               </div>
 
               <!-- Rules List -->
               <div class="flex flex-col gap-4 pb-10">
                 <div class="flex items-center justify-between px-1">
-                  <h3 class="text-xs font-bold text-gray-500 tracking-[0.1em] uppercase">Active Rules</h3>
-                  <span class="text-[10px] text-gray-600 bg-white/5 px-2 py-1 rounded-lg border border-white/5">Auto-detected from tags</span>
+                  <h3
+                    class="text-xs font-bold text-gray-500 tracking-[0.1em] uppercase"
+                  >
+                    Active Rules
+                  </h3>
+                  <span
+                    class="text-[10px] text-gray-600 bg-white/5 px-2 py-1 rounded-lg border border-white/5"
+                    >Auto-detected from tags</span
+                  >
                 </div>
                 <div id="autoTagRulesList" class="flex flex-col gap-3">
                   <!-- Rules injected by JS -->
                 </div>
               </div>
-              
             </div>
           </div>
         </div>
-
 
         <!-- <footer id="modalFooter" class="p-8 border-t border-white/5 text-center text-[11px] text-gray-600 font-medium tracking-wide shrink-0">
           Settings are saved locally in your browser to preserve your privacy.

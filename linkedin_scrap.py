@@ -11,7 +11,7 @@ from playwright.sync_api import sync_playwright
 TARGET_URL = "https://www.linkedin.com/my-items/saved-posts/"
 LOGIN_URL = "https://www.linkedin.com/login"
 AUTH_FILE = "auth/auth_linkedin.json"
-DATA_DIR = "d:/Vibe_Coding/scrap_sns/output_linkedin/python"
+DATA_DIR = "output_linkedin/python"
 UPDATE_DIR = os.path.join(DATA_DIR, "update")
 
 # 스크랩 설정
@@ -21,8 +21,8 @@ TARGET_LIMIT = 0       # 0 = 무제한
 parser = argparse.ArgumentParser(description='LinkedIn 스크래퍼')
 parser.add_argument('--mode', choices=['all', 'update'], default='update', help='크롤링 모드 (all: 전체, update: 증분)')
 args = parser.parse_args()
-CRAWL_MODE = "update only" if args.mode == "update" else "all"
-
+# CRAWL_MODE = "update only" if args.mode == "update" else "all"
+CRAWL_MODE = "all"
 CRAWL_START_TIME = datetime.now()
 INCLUDE_IMAGES = True # 이미지 크롤링 포함 여부
 
@@ -50,11 +50,15 @@ def save_json(filepath, data):
 def clean_text(text):
     if not text:
         return ""
-    # 불필요한 공백/개행 제거
-    text = re.sub(r'\s+', ' ', text).strip()
+    
     # "…더보기" 같은 UI 텍스트 제거
     text = text.replace("…더보기", "")
-    return text
+    
+    # 줄바꿈은 유지하면서 각 줄의 앞뒤 공백만 제거하고, 여러 개의 공백을 하나로 합침
+    lines = text.split('\n')
+    cleaned_lines = [re.sub(r'[ \t]+', ' ', line).strip() for line in lines]
+    
+    return "\n".join(cleaned_lines).strip()
 
 def extract_urn_id(urn):
     # urn:li:activity:7422622332021604353 -> 7422622332021604353
@@ -243,6 +247,13 @@ class LinkedinScraper:
             # 1. 텍스트 (summary.text)
             text_obj = item.get("summary", {})
             text = text_obj.get("text", "")
+            
+            # DEBUG: 개행 문자 포함 여부 확인
+            if text:
+                has_newline = "\n" in text
+                print(f"   🔍 [Debug] Activity {activity_id} - Raw text has newline: {has_newline}")
+                if not has_newline and len(text) > 100:
+                    print(f"   🔍 [Debug] Raw text (truncated): {text[:100]}...")
             
             # 2. 작성자 및 링크
             # actorNavigationUrl: https://www.linkedin.com/in/abcd...?
@@ -459,13 +470,17 @@ class LinkedinScraper:
             else:
                 old_posts = old_data_obj
 
-        # 중복 제거 및 신규 추가
-        # JS 방식: newItems는 기존에 없는 것들만, 신규를 앞에 배치
-        existing_codes = {p["code"] for p in old_posts}
-        new_items = [p for p in self.posts if p["code"] not in existing_codes]
-        duplicate_count = len(self.posts) - len(new_items)
-        
-        final_posts = new_items + old_posts
+        if CRAWL_MODE == "all":
+            # ALL 모드일 때는 기존 데이터를 무시하고 새로 수집한 것으로 대체 (개행 등 변경사항 반영)
+            final_posts = self.posts
+            duplicate_count = 0
+            new_items = self.posts
+        else:
+            # UPDATE 모드일 때는 기존에 없는 것만 추가
+            existing_codes = {p["code"] for p in old_posts}
+            new_items = [p for p in self.posts if p["code"] not in existing_codes]
+            duplicate_count = len(self.posts) - len(new_items)
+            final_posts = new_items + old_posts
         
         # sequence_id 기준으로 내림차순 정렬 (최신순)
         final_posts.sort(key=lambda x: x.get("sequence_id", 0), reverse=True)

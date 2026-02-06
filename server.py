@@ -90,7 +90,11 @@ def run_scrap():
         # 여기서는 완료될 때까지 기다렸다가 결과를 응답함 (단, 시간이 오래 걸리면 타임아웃 발생 가능)
         # 실시간 진행 상황을 보려면 로그를 파일로 저장하거나 다른 방식이 필요할 수 있음
         
-        print(f"🚀 UI 요청으로 {script_path} 실행 중...")
+        # 요청에서 mode 파라미터 가져오기 (기본값: update)
+        data = request.json or {}
+        mode = data.get('mode', 'update')
+        
+        print(f"🚀 UI 요청으로 {script_path} 실행 중... (모드: {mode})")
         
         # subprocess.run을 사용하여 실행 결과 대기
         # Windows 환경의 인코딩 문제를 방지하기 위해 env 설정 및 errors='replace' 추가
@@ -98,7 +102,7 @@ def run_scrap():
         env["PYTHONIOENCODING"] = "utf-8"
         
         process = subprocess.run(
-            [sys.executable, script_path],
+            [sys.executable, script_path, "--mode", mode],
             capture_output=True,
             text=True,
             encoding='utf-8',

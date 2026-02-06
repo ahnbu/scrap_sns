@@ -154,7 +154,7 @@ async def process_network_post_async(node, master_pk, code):
             "full_text": caption.get("text") if caption else "",
             "created_at": created_at,
             "images_count": len(images),
-            "post_url": f"https://www.threads.net/t/{p_code}"
+            "post_url": f"https://www.threads.com/@{user.get('username')}/post/{p_code}"
         }
         
         if post_info['full_text'] or images:
@@ -173,9 +173,12 @@ class Progress:
             cls.current += 1
             return cls.current, cls.total
 
-async def worker(context, semaphore, code, collected_data, results_lock):
+async def worker(context, semaphore, code, username, collected_data, results_lock):
     """Async worker for a single URL"""
-    url = f"https://www.threads.net/t/{code}" # Redirects to clean URL usually
+    if username:
+        url = f"https://www.threads.com/@{username}/post/{code}"
+    else:
+        url = f"https://www.threads.net/t/{code}" # Fallback
     
     async with semaphore:
         curr, total = await Progress.increment()
@@ -484,12 +487,18 @@ async def run():
         semaphore = asyncio.Semaphore(CONCURRENCY_LIMIT)
         
         # 1. 수집 대상 식별 (pending_list + 미수집 Full 항목)
-        targets = []
+        # 1. 수집 대상 식별 (pending_list + 미수집 Full 항목) - Username 확보 포함
+        target_map = {} # {code: username}
+
         if os.path.exists(PENDING_FILE):
              with open(PENDING_FILE, 'r', encoding='utf-8') as f:
                  pending_data = json.load(f)
-                 targets = [item['code'] for item in pending_data]
-                 print(f"📂 [Queue] {len(targets)} targets loaded from {PENDING_FILE}")
+                 for item in pending_data:
+                     code = item.get('code')
+                     username = item.get('username')
+                     if code:
+                         target_map[code] = username
+                 print(f"📂 [Queue] {len(target_map)} targets loaded from {PENDING_FILE}")
 
         # 🔍 이미 상세 수집(Merged)된 항목은 제외하는 필터링 및 미수집 항목 추가
         final_targets = []
@@ -498,40 +507,46 @@ async def run():
                 with open(latest_full_path, 'r', encoding='utf-8') as f:
                     f_data = json.load(f)
                     
-                    # Full DB에서 미수집된(False) 항목들도 수집 대상에 포함 (pending_list가 없을 대비)
-                    unmerged_codes = [p['code'] for p in f_data.get('posts', []) if not p.get('is_merged_thread')]
+                    # Full DB에서 미수집된(False) 항목들도 수집 대상에 포함
+                    for p in f_data.get('posts', []):
+                        if not p.get('is_merged_thread'):
+                             code = p['code']
+                             username = p.get('username')
+                             
+                             # 기존에 없거나, 기존에 username이 없는 경우 업데이트
+                             if code not in target_map or not target_map[code]:
+                                 target_map[code] = username
                     
-                    # 중복 없이 합치기
-                    all_potential_targets = list(dict.fromkeys(targets + unmerged_codes))
-                    
-                    # 최종 필터링 (다시 한번 확인)
+                    # 최종 필터링: 이미 Merged된 항목 제거
                     merged_codes = {p['code'] for p in f_data.get('posts', []) if p.get('is_merged_thread')}
-                    final_targets = [t for t in all_potential_targets if t not in merged_codes]
                     
-                    skip_count = len(all_potential_targets) - len(final_targets)
+                    final_target_codes = [c for c in target_map.keys() if c not in merged_codes]
+                    final_targets = [{'code': c, 'username': target_map[c]} for c in final_target_codes]
+                    
+                    skip_count = len(target_map) - len(final_targets)
                     if skip_count > 0:
                         print(f"⏩ [Skip] 이미 상세 수집된 {skip_count}개의 게시물은 건너뜁니다.")
             else:
-                final_targets = targets
+                final_targets = [{'code': c, 'username': u} for c, u in target_map.items()]
         except Exception as e:
             print(f"⚠️ [Error] 대상 필터링 중 오류: {e}")
-            final_targets = targets
+            final_targets = [{'code': c, 'username': u} for c, u in target_map.items()]
 
         # 1차 시도 실행
         Progress.total = len(final_targets)
         Progress.current = 0
-        tasks = [worker(context, semaphore, code, collected_data, results_lock) for code in final_targets]
+        tasks = [worker(context, semaphore, item['code'], item['username'], collected_data, results_lock) for item in final_targets]
         await asyncio.gather(*tasks)
         
         # 실패 건 식별 및 2차 시도 (Retry)
         scraped_codes = {item['root_code'] for item in collected_data}
-        retry_targets = [c for c in final_targets if c not in scraped_codes]
+        retry_targets = [item for item in final_targets if item['code'] not in scraped_codes]
         
         if retry_targets:
             print(f"\n⚠️ {len(retry_targets)}건 수집 실패. 2차 시도(재시도)를 시작합니다...")
             Progress.total = len(retry_targets)
             Progress.current = 0
-            retry_tasks = [worker(context, semaphore, code, collected_data, results_lock) for code in retry_targets]
+            retry_tasks = [worker(context, semaphore, item['code'], item['username'], collected_data, results_lock) for item in retry_targets]
             await asyncio.gather(*retry_tasks)
         
         await browser.close()

@@ -91,13 +91,53 @@ THREADS_PW=your_password
 
 ### 4. 실행
 
-```bash
-# Threads 수집
-python threads_scrap.py
+#### 개별 스크래퍼 실행
 
-# LinkedIn 수집
-python linkedin_scrap.py
+```bash
+# Threads만 수집
+python threads_scrap.py --mode update
+
+# LinkedIn만 수집
+python linkedin_scrap.py --mode all
 ```
+
+#### 통합 실행 (권장)
+
+**A. 정기 수집 (스크래핑 + 병합)**
+
+새로운 게시물을 수집하고 자동으로 병합합니다.
+
+```bash
+# 증분 업데이트 (기본값, 빠름)
+python total_scrap.py --mode update
+
+# 전체 재수집 (느림)
+python total_scrap.py --mode all
+```
+
+- ✅ 자동화된 전체 파이프라인
+- ✅ 정기 실행에 적합
+- ⚠️ 시간이 오래 걸림 (수 분)
+
+**B. 병합 전용 (빠른 업데이트)**
+
+이미 수집된 데이터만 병합하여 웹 뷰어를 업데이트합니다.
+
+```bash
+python merge_and_update.py
+```
+
+- ✅ 매우 빠름 (수 초)
+- ✅ 데이터 수정 후 즉시 반영
+- ⚠️ 새로운 게시물 수집은 하지 않음
+
+**언제 어떤 스크립트를 사용할까?**
+
+| 상황                                 | 추천 스크립트                  |
+| ------------------------------------ | ------------------------------ |
+| 새로운 게시물 수집 필요              | `total_scrap.py`               |
+| 데이터 파일 수정 후 웹 뷰어 업데이트 | `merge_and_update.py`          |
+| 정기 스케줄 실행                     | `total_scrap.py --mode update` |
 
 ---
 
