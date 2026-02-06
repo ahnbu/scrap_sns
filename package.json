@@ -4,6 +4,14 @@
     "playwright-core": "^1.58.0",
     "playwriter": "^0.0.56"
   },
+  "scripts": {
+    "start": "python server.py",
+    "view": "run_viewer.bat",
+    "stop": "stop_viewer.bat",
+    "scrap:threads": "python threads_scrap.py",
+    "scrap:linkedin": "python linkedin_scrap.py",
+    "scrap:all": "python total_scrap.py"
+  },
   "devDependencies": {
     "@tailwindcss/container-queries": "^0.1.1",
     "@tailwindcss/forms": "^0.5.11",

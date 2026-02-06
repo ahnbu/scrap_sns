@@ -153,16 +153,16 @@ Threads는 사용자의 브라우저 메모리를 절약하기 위해 **'가상 
 
 ```mermaid
 graph TD
-    A[사용자 로그인] --> B[브라우저 실행 (Playwright)]
-    B --> C{네트워크 감시 시작}
-    C --> D[자동 스크롤 (Scroll Down)]
-    D --> E[Threads 서버로 GraphQL 요청 발생]
-    E --> F[서버가 JSON 데이터 응답]
-    F --> G[🚀 응답 데이터 가로채기 (Intercept)]
-    G --> H[데이터 파싱 및 중복 제거]
-    H --> I[파일 저장 (JSON/CSV)]
+    A["사용자 로그인"] --> B["브라우저 실행 (Playwright)"]
+    B --> C{"네트워크 감시 시작"}
+    C --> D["자동 스크롤 (Scroll Down)"]
+    D --> E["Threads 서버로 GraphQL 요청 발생"]
+    E --> F["서버가 JSON 데이터 응답"]
+    F --> G["🚀 응답 데이터 가로채기 (Intercept)"]
+    G --> H["데이터 파싱 및 중복 제거"]
+    H --> I["파일 저장 (JSON/CSV)"]
     I --> D
-    D -- 더 이상 데이터 없음 --> J[수집 종료]
+    D -- "더 이상 데이터 없음" --> J["수집 종료"]
 ```
 
 ### 5. PM이 알아두어야 할 제약 사항 및 리스크

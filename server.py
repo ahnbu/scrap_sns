@@ -1,13 +1,40 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, render_template, send_from_directory
 from flask_cors import CORS
 import subprocess
 import os
 import sys
+import glob
+import json
 
 # Flask 앱 설정
 app = Flask(__name__)
 # CORS 허용 (로컬 index.html에서 요청 가능하도록)
 CORS(app)
+
+OUTPUT_TOTAL_DIR = "output_total"
+
+@app.route('/api/latest-data', methods=['GET'])
+def get_latest_data():
+    """가장 최신의 total_full_*.json 파일을 찾아 반환합니다."""
+    try:
+        # 1. output_total 내의 total_full_*.json 파일 검색
+        pattern = os.path.join(OUTPUT_TOTAL_DIR, "total_full_*.json")
+        files = glob.glob(pattern)
+        
+        if not files:
+            return jsonify({"error": "데이터 파일을 찾을 수 없습니다."}), 404
+            
+        # 2. 파일명 기준으로 정렬 (날짜가 포함되어 있으므로 최신순 정렬 가능)
+        files.sort(reverse=True)
+        latest_file = files[0]
+        
+        # 3. 파일 읽기 및 반환
+        with open(latest_file, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+            
+        return jsonify(data)
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
 
 @app.route('/api/run-scrap', methods=['POST'])
 def run_scrap():

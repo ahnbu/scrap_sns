@@ -5,6 +5,7 @@ tmp/
 auth/
 docs/temp/
 docs/old/
+docs/stitch/
 
 # Data
 output_linkedin/

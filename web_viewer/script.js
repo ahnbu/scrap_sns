@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const feedJsonPath = 'output_total/total_full_20260201.json';
+    // const feedJsonPath = 'output_total/total_full_20260201.json'; // ❌ 삭제됨 (동적 로딩으로 변경)
     const masonryGrid = document.getElementById('masonryGrid');
     const loadingIndicator = document.getElementById('loadingIndicator');
     const noResults = document.getElementById('noResults');
@@ -334,40 +334,86 @@ ${item.body}
         return { count: updateCount, ruleCount: allRules.size, stats: debugStats };
     }
 
+    // --- Data Loading ---
     async function fetchData() {
-        noResults.classList.add('hidden');
-        masonryGrid.innerHTML = ''; 
+        if (loadingIndicator) loadingIndicator.classList.remove('hidden');
+        if (noResults) noResults.classList.add('hidden');
+        if (masonryGrid) masonryGrid.innerHTML = ''; 
+        
+        let data = null;
+        let loadMode = 'unknown';
 
         try {
-            // Check if data loaded from data.js
-            // ⚠️ 강제 JSON Fetch 모드: data.js가 오래된 데이터일 수 있으므로 항상 JSON 파일을 로드합니다.
-            if (typeof snsFeedData !== 'undefined') {
-                allPosts = Array.isArray(snsFeedData) ? snsFeedData : (snsFeedData.posts || []);
+            // 1순위: 서버 API 호출 (최신 데이터)
+            const serverResponse = await fetch('http://localhost:5000/api/latest-data');
+            if (serverResponse.ok) {
+                data = await serverResponse.json();
+                loadMode = 'live';
+                console.log('✨ Live Mode: Loaded from server');
             } else {
-                // Fallback to fetch for server environments if data.js missing
-                const response = await fetch(feedJsonPath);
-                if (!response.ok) throw new Error('Failed to load JSON');
-                const data = await response.json();
-                allPosts = Array.isArray(data) ? data : (data.posts || []);
+                throw new Error('Server response not OK');
             }
-
-            // Pre-process
-            allPosts.forEach(post => {
-                let dateStr = post.created_at || post.crawled_at;
-                if (dateStr && dateStr.includes(' ') && !dateStr.includes('T')) {
-                    dateStr = dateStr.replace(' ', 'T');
-                }
-                post._dateObj = dateStr ? new Date(dateStr) : new Date(0);
-                post._seqId = post.sequence_id || 0;
-            });
-
-            // ✨ 자동 태그 적용 (로드 시 자동 수행)
-            applyAutoTags(allPosts, true);
-
-            totalPostsCount.textContent = `${allPosts.length} 건`;
-            renderPosts();
         } catch (error) {
-            console.error('Error loading data:', error);
+            // 2순위: 로컬 data.js 폴백
+            console.warn('📡 Server unavailable, falling back to local data.js');
+            if (typeof window.snsFeedData !== 'undefined') {
+                data = window.snsFeedData;
+                loadMode = 'offline';
+                console.log('📦 Offline Mode: Loaded from data.js');
+            } else if (typeof snsFeedData !== 'undefined') {
+                // 핸들링 보완: window 생략된 경우 대비
+                data = snsFeedData;
+                loadMode = 'offline';
+                console.log('📦 Offline Mode: Loaded from data.js (global)');
+            } else {
+                // 3순위: 데이터 없음 에러
+                console.error('❌ Data load failed: No source available');
+                if (noResults) {
+                    noResults.innerHTML = `
+                        <div class="text-center p-12">
+                            <span class="material-symbols-outlined text-gray-500 text-6xl mb-4">cloud_off</span>
+                            <p class="text-xl text-gray-300">데이터를 불러올 수 없습니다.</p>
+                            <p class="text-sm text-gray-500 mt-2">서버가 실행 중인지 확인하거나 data.js 파일이 존재하는지 확인하세요.</p>
+                        </div>
+                    `;
+                    noResults.classList.remove('hidden');
+                }
+                if (loadingIndicator) loadingIndicator.classList.add('hidden');
+                return;
+            }
+        }
+
+        // 데이터 적용
+        allPosts = Array.isArray(data) ? data : (data.posts || []);
+        
+        // Pre-process (날짜 포맷 정규화)
+        allPosts.forEach(post => {
+            let dateStr = post.created_at || post.crawled_at;
+            if (dateStr && typeof dateStr === 'string' && dateStr.includes(' ') && !dateStr.includes('T')) {
+                dateStr = dateStr.replace(' ', 'T');
+            }
+            post._dateObj = dateStr ? new Date(dateStr) : new Date(0);
+            post._seqId = post.sequence_id || 0;
+        });
+
+        // 자동 태그 적용 및 렌더링
+        await applyAutoTags(allPosts, true);
+        
+        if (totalPostsCount) {
+            totalPostsCount.textContent = `${allPosts.length} 건`;
+        }
+        
+        renderPosts();
+        
+        if (loadingIndicator) loadingIndicator.classList.add('hidden');
+        
+        // 모드 알림 토스트 (오프라인일 때만)
+        if (loadMode === 'offline') {
+            const toast = document.createElement('div');
+            toast.className = 'fixed bottom-6 right-6 bg-yellow-500/10 border border-yellow-500/30 text-yellow-300 px-4 py-2 rounded-xl text-xs backdrop-blur-md z-50 animate-fade-in-up';
+            toast.innerHTML = '📂 Offline Mode: 로컬 데이터 로드됨';
+            document.body.appendChild(toast);
+            setTimeout(() => toast.remove(), 4000);
         }
     }
 

@@ -129,6 +129,7 @@ def save_total(new_posts, threads_count, linkedin_count):
         print("   이번 실행에서 새로운 업데이트가 없습니다.")
 
     try:
+        data_js_path = os.path.join('web_viewer', 'data.js')
         # JSON 데이터 로드 (위의 total_data를 재사용하면 좋지만, 함수 구조상 다시 구성)
         js_content = "const snsFeedData = " + json.dumps(total_data, ensure_ascii=False, indent=2) + ";"
         

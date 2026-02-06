@@ -1,13 +1,106 @@
 const snsFeedData = {
   "metadata": {
-    "updated_at": "2026-02-05T12:03:24.312839",
-    "total_count": 365,
-    "threads_count": 211,
+    "updated_at": "2026-02-06T11:45:28.127585",
+    "total_count": 369,
+    "threads_count": 215,
     "linkedin_count": 154,
-    "new_items_count": 39,
-    "image_backfilled_at": "2026-02-05T13:44:16.535848"
+    "new_items_count": 1
   },
   "posts": [
+    {
+      "code": "DUX8tp_EvRN",
+      "pk": null,
+      "username": "bellman.pub",
+      "user_link": "https://www.threads.net/@bellman.pub",
+      "full_text": "🚀 oh-my-claudecode v4.0.0 릴리즈\n드디어 Claude Code에서 Codex + Gemini 동시 사용 가능!\n✨ 각 모델이 잘하는 걸 맡김:\n• Codex → 코드 리뷰, 플래닝, 분석\n• Gemini → 디자인, 글쓰기, 비전\n• Claude → 오케스트레이션\n이제\n@yeon.gyu.kim\n의 OmO 부러워하지 마세요\n전부 공식 cli를 콜하는 mcp니까, 밴과 ToS 위반도 두려워하지 마세요\n이제 가난에 허덕이지 마세요\n20불짜리 각 한개씩만 구독하세요.\ngithub.com/Yeach…\ngithub.com\nGitHub - Yeachan-Heo/oh-my-claudecode: Multi-agent orchestration for Claude Code with 5 execution modes: Autopilot (autonomous), Ultrapilot (3-5x parallel), Swarm (coordinated agents), Pipeline (sequential chains), Ecomode (token-efficient). 31+...",
+      "like_count": -1,
+      "reply_count": -1,
+      "repost_count": -1,
+      "quote_count": -1,
+      "created_at": "2026-02-05 20:45:10",
+      "time_text": "2026-02-05",
+      "post_url": "https://www.threads.net/t/DUX8tp_EvRN",
+      "images": [],
+      "media_type": null,
+      "content_type": "text",
+      "source": "initial_dom",
+      "sequence_id": 215,
+      "crawled_at": "2026-02-06T11:45:10.209560",
+      "sns_platform": "threads"
+    },
+    {
+      "code": "DUZLMwvkojo",
+      "pk": null,
+      "username": "specal1849",
+      "user_link": "https://www.threads.net/@specal1849",
+      "full_text": "다른건 필요없다 opus 4.6 기념으로 이런걸 주네요\n클로드 사용자분들 얼른 설정-사용량에 들어가셔서\n$50 무료 크레딧 받으십셔\ncodex5.3 이랑 같이주네 도파민이 팽팽돕니다!!!",
+      "like_count": -1,
+      "reply_count": -1,
+      "repost_count": -1,
+      "quote_count": -1,
+      "created_at": "2026-02-06 08:17:10",
+      "time_text": "2026-02-06",
+      "post_url": "https://www.threads.net/t/DUZLMwvkojo",
+      "images": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/627661158_17893452990406917_6374298405845732879_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTIzMXg4NTQuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmNhbmFyeSJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QFY8s24LbAvtyZjY3uKlBLWG0fKpVTCwNqoLaByVjAfLUQYEhnPI_vbEWSgTrOfccw&_nc_ohc=zda3P2HljRAQ7kNvwGTaBgD&_nc_gid=GDOzqYr8katrOM_bn5-i8g&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyNjEzODYxMzkxMTAyOTk5Mg%3D%3D.3-ccb7-5&oh=00_AftDzHsS7z0z-9gLxEMbEsKpDvnp7K2X4AhoqZJ766D8fQ&oe=698B2A1E&_nc_sid=10d13b"
+      ],
+      "media_type": null,
+      "content_type": "image",
+      "source": "initial_dom",
+      "sequence_id": 214,
+      "crawled_at": "2026-02-06T11:17:10.182397",
+      "sns_platform": "threads",
+      "local_images": [
+        "web_viewer/images/46340ab83a30411b6b16e37eac40e8ad.jpg"
+      ]
+    },
+    {
+      "code": "DUWSRnukzT3",
+      "pk": null,
+      "username": "gaebalsaybal",
+      "user_link": "https://www.threads.net/@gaebalsaybal",
+      "full_text": "바이브코딩 Vibe coding\n1일\n37만원 짜리 Claude 1개월 결제 후기:\nClaude Max plan을 사용하며 매 주 새로운 제품을 출시 자동화를 구축함\n1주일에 1개씩 소프트웨어를 출시하다보니 아이디어를 생각하기도 귀찮아짐\n그래서 아이디어도 자동화함.\n다른나라엔 있는데 우리나라에만 없는 소프트웨어를 한국화해서 만들기\n이게 왜 좋냐면\n1. 이미 검증된 아이디어임\n2. ui/ux고민 안해도 됨\n자세한 파이프라인은 다음과 같아:\n/",
+      "like_count": -1,
+      "reply_count": -1,
+      "repost_count": -1,
+      "quote_count": -1,
+      "created_at": "2026-02-05 11:17:10",
+      "time_text": "2026-02-05",
+      "post_url": "https://www.threads.net/t/DUWSRnukzT3",
+      "images": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/626758539_17846285301682596_6608512263687030938_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTgyOHgyNTIuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmNhbmFyeSJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QFY8s24LbAvtyZjY3uKlBLWG0fKpVTCwNqoLaByVjAfLUQYEhnPI_vbEWSgTrOfccw&_nc_ohc=B8Q7HGyJImIQ7kNvwGdQJzK&_nc_gid=GDOzqYr8katrOM_bn5-i8g&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyNTMyNTMwOTIyMzQ0OTg0Nw%3D%3D.3-ccb7-5&oh=00_Afu6kJ6THc_nLtXyWChoJBNWL1mSrRzu2kCN0f4vd7zUZg&oe=698B321D&_nc_sid=10d13b"
+      ],
+      "media_type": null,
+      "content_type": "image",
+      "source": "initial_dom",
+      "sequence_id": 213,
+      "crawled_at": "2026-02-06T11:17:10.182397",
+      "sns_platform": "threads",
+      "local_images": [
+        "web_viewer/images/6c186f8463ccf41301cf32f04c0f697f.jpg"
+      ]
+    },
+    {
+      "code": "DUW_dl0Eg8K",
+      "pk": null,
+      "username": "jun6_cat",
+      "user_link": "https://www.threads.net/@jun6_cat",
+      "full_text": "소신발언 하자면 코딩 초보자를 위한 바이브코딩 추천 언어와 프레임워크로 Ruby on Rails 8버전이 최고임.\nNext.js는 진짜 비추천 한다.\nReact랑 Next.js는 버전 업데이트가 빠른데 그때마다 패러다임이 너무 많이 바뀌어서 하위호환성이 너무 떨어짐. 그래서 최신버전을 다룰때는 AI가 기대만큼 엄청 잘하진 못함.\n그리고 React와 Typescript 특유의 장황하고 지저분한 코드는 한번 꼬이면 답도 없다.",
+      "like_count": -1,
+      "reply_count": -1,
+      "repost_count": -1,
+      "quote_count": -1,
+      "created_at": "2026-02-05 12:17:10",
+      "time_text": "2026-02-05",
+      "post_url": "https://www.threads.net/t/DUW_dl0Eg8K",
+      "images": [],
+      "media_type": null,
+      "content_type": "text",
+      "source": "initial_dom",
+      "sequence_id": 212,
+      "crawled_at": "2026-02-06T11:17:10.182397",
+      "sns_platform": "threads"
+    },
     {
       "code": "DT_1J1ukXjz",
       "pk": null,
