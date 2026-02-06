@@ -3,6 +3,7 @@ import time
 import os
 import glob
 import re
+import argparse
 from datetime import datetime, timedelta
 from playwright.sync_api import sync_playwright
 
@@ -15,10 +16,14 @@ UPDATE_DIR = os.path.join(DATA_DIR, "update")
 
 # 스크랩 설정
 TARGET_LIMIT = 0       # 0 = 무제한
-# CRAWL_MODE = "all"     # "all" or "update only"
-CRAWL_MODE = "update only"     # "all" or "update only"
+
+# CLI 인자 파싱
+parser = argparse.ArgumentParser(description='LinkedIn 스크래퍼')
+parser.add_argument('--mode', choices=['all', 'update'], default='update', help='크롤링 모드 (all: 전체, update: 증분)')
+args = parser.parse_args()
+CRAWL_MODE = "update only" if args.mode == "update" else "all"
+
 CRAWL_START_TIME = datetime.now()
-# INCLUDE_IMAGES = False # 이미지 크롤링 포함 여부
 INCLUDE_IMAGES = True # 이미지 크롤링 포함 여부
 
 # 브라우저 UI 설정

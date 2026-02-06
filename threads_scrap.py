@@ -14,6 +14,7 @@ import time
 import re
 import os
 import glob
+import argparse
 from datetime import datetime, timedelta
 from dotenv import load_dotenv
 
@@ -37,12 +38,15 @@ THREADS_ID = os.getenv("THREADS_ID")
 THREADS_PW = os.getenv("THREADS_PW")
 
 # ✨ 테스트용 제한 개수 (0으로 설정하면 제한 없이 끝까지 수집)
-TARGET_LIMIT = 0
+TARGET_LIMIT = 0  # 테스트용으로 5개만 수집
 
-# 🔄 크롤링 범위 설정
+# 🔄 크롤링 범위 설정 (CLI 인자로 받음)
 # - "all": 처음부터 끝까지 전체 수집
-# - "update only": 최신 full 버전의 최상단 code까지만 수집 (신규 게시물만)
-CRAWL_MODE = "all"  # "all" 또는 "update only"
+# - "update": 최신 full 버전의 최상단 code까지만 수집 (신규 게시물만)
+parser = argparse.ArgumentParser(description='Threads 스크래퍼')
+parser.add_argument('--mode', choices=['all', 'update'], default='all', help='크롤링 모드 (all: 전체, update: 증분)')
+args = parser.parse_args()
+CRAWL_MODE = "update only" if args.mode == "update" else "all"
 
 # ===========================
 

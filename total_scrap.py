@@ -4,6 +4,7 @@ import os
 import sys
 import glob
 import json
+import argparse
 from datetime import datetime
 import io
 
@@ -15,6 +16,11 @@ if sys.platform == 'win32':
 OUTPUT_THREADS_DIR = "output_threads/python"
 OUTPUT_LINKEDIN_DIR = "output_linkedin/python"
 OUTPUT_TOTAL_DIR = "output_total"
+
+# CLI 인자 파싱
+parser = argparse.ArgumentParser(description='통합 SNS 스크래퍼')
+parser.add_argument('--mode', choices=['all', 'update'], default='update', help='크롤링 모드 (all: 전체, update: 증분)')
+args = parser.parse_args()
 
 def load_json(path):
     if not path or not os.path.exists(path): return {}
@@ -31,12 +37,12 @@ def find_latest_full_file(directory, pattern):
     files.sort(reverse=True)
     return files[0]
 
-def run_scrapers():
-    print("병렬 스크래퍼 실행 시작...")
+def run_scrapers(mode='update'):
+    print(f"병렬 스크래퍼 실행 시작... (모드: {mode})")
     
     # 1단계: Producer 실행 (URL 목록 확보)
-    print("   [Pass 1] Producer 실행: threads_scrap.py")
-    subprocess.run(["python", "threads_scrap.py"])
+    print(f"   [Pass 1] Producer 실행: threads_scrap.py --mode {mode}")
+    subprocess.run(["python", "threads_scrap.py", "--mode", mode])
 
     # 2단계: Consumer 실행 (상세 수집 및 자동 통합)
     # scrap_single_post.py는 내부적으로 promote 및 sync_to_total까지 수행함
@@ -45,7 +51,7 @@ def run_scrapers():
 
     # 3단계: 기타 스크래퍼 병렬 실행 (LinkedIn 등)
     scrapers = [
-        ["python", "linkedin_scrap.py"]
+        ["python", "linkedin_scrap.py", "--mode", mode]
     ]
     
     processes = []
@@ -58,6 +64,7 @@ def run_scrapers():
     for p in processes:
         p.wait()
     print("모든 스크래퍼 실행 완료.")
+
 
 def merge_results():
     print("\n결과 병합 중...")
@@ -236,7 +243,7 @@ def download_images(posts):
 
 def run():
     # 1. 스크래퍼 순차 실행 (Producer -> Consumer -> Others)
-    run_scrapers()
+    run_scrapers(mode=args.mode)
 
     # 2. 결과 병합 (스크래퍼가 업데이트한 최신 파일들을 다시 로드)
     print("\n최신 수집 데이터 기반 최종 병합을 시작합니다...")
