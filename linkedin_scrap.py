@@ -22,8 +22,8 @@ CRAWL_START_TIME = datetime.now()
 INCLUDE_IMAGES = True # 이미지 크롤링 포함 여부
 
 # 브라우저 UI 설정
-WINDOW_X = 0           # 화면 가로 위치 (모니터 왼쪽 기준 px)
-WINDOW_Y = 520         # 화면 세로 위치 (모니터 위쪽 기준 px)
+WINDOW_X = 5000           # 화면 가로 위치 (모니터 왼쪽 기준 px)
+WINDOW_Y = 200         # 화면 세로 위치 (모니터 위쪽 기준 px)
 WINDOW_WIDTH = 900     # 브라우저 너비
 WINDOW_HEIGHT = 500    # 브라우저 높이
 

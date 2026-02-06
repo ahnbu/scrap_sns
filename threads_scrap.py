@@ -21,7 +21,7 @@ from dotenv import load_dotenv
 load_dotenv('.env.local')
 
 # 브라우저 UI 설정
-WINDOW_X = 0           # 화면 가로 위치 (모니터 왼쪽 기준 px)
+WINDOW_X = 5000           # 화면 가로 위치 (모니터 왼쪽 기준 px)
 WINDOW_Y = 0           # 화면 세로 위치 (모니터 위쪽 기준 px)
 WINDOW_WIDTH = 900     # 브라우저 너비
 WINDOW_HEIGHT = 500    # 브라우저 높이
@@ -31,7 +31,7 @@ WINDOW_HEIGHT = 500    # 브라우저 높이
 # ===========================
 OUTPUT_DIR = "output_threads/python"
 # 수집 완료 후 저장될 파일명 (임시 - 증분 업데이트 파일)
-OUTPUT_FILE = f"{OUTPUT_DIR}/update/threads_py_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+OUTPUT_FILE = f"{OUTPUT_DIR}/update/threads_py_simple_update_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
 AUTH_FILE = "auth/auth_threads.json"
 THREADS_ID = os.getenv("THREADS_ID")
 THREADS_PW = os.getenv("THREADS_PW")
@@ -42,8 +42,7 @@ TARGET_LIMIT = 0
 # 🔄 크롤링 범위 설정
 # - "all": 처음부터 끝까지 전체 수집
 # - "update only": 최신 full 버전의 최상단 code까지만 수집 (신규 게시물만)
-# CRAWL_MODE = "all"  # "all" 또는 "update only"
-CRAWL_MODE = "update only"  # "all" 또는 "update only"
+CRAWL_MODE = "all"  # "all" 또는 "update only"
 
 # ===========================
 
@@ -116,9 +115,9 @@ def parse_relative_time(relative_str, base_time):
     target_time = base_time - delta
     return target_time.strftime('%Y-%m-%d %H:%M:%S'), target_time.strftime('%Y-%m-%d')
 
-def find_latest_full_file():
-    """output 폴더에서 최신 threads_py_full_*.json 파일 찾기"""
-    pattern = f"{OUTPUT_DIR}/threads_py_full_*.json"
+def find_latest_simple_file():
+    """output 폴더에서 최신 threads_py_simple_full_*.json 파일 찾기"""
+    pattern = f"{OUTPUT_DIR}/threads_py_simple_full_*.json"
     files = glob.glob(pattern)
     
     if not files:
@@ -127,7 +126,7 @@ def find_latest_full_file():
     # 파일명에서 날짜 추출 후 정렬
     file_info = []
     for file in files:
-        match = re.search(r'_full_(\d{8})', file)
+        match = re.search(r'_simple_full_(\d{8})', file)
         if match:
             date_str = match.group(1)
             mtime = os.path.getmtime(file)
@@ -138,162 +137,101 @@ def find_latest_full_file():
     
     return file_info[0][0] if file_info else None
 
-def update_full_version(new_data, stop_code, crawl_start_time):
+def update_simple_version(new_data, stop_code, crawl_start_time):
     """
-    기존 Full 파일을 읽어와서 신규 데이터와 병합한 후,
-    오늘 날짜로 새로운 Full 파일 생성 (메타데이터 포함)
+    기존 Simple Full 파일을 읽어와서 신규 데이터와 병합한 후,
+    오늘 날짜로 새로운 Simple Full 파일 생성 (메타데이터 포함)
     """
     today = datetime.now().strftime('%Y%m%d')
-    today_full = f"{OUTPUT_DIR}/threads_py_full_{today}.json"
+    today_simple = f"{OUTPUT_DIR}/threads_py_simple_full_{today}.json"
     
-    # 1. 오늘 날짜 Full 파일이 이미 있는지 확인
-    if os.path.exists(today_full):
-        print(f"\n⚠️ 오늘 날짜의 Full 파일이 이미 존재합니다: {today_full}")
+    # 1. 오늘 날짜 Simple Full 파일이 이미 있는지 확인
+    if os.path.exists(today_simple):
+        print(f"\n⚠️ 오늘 날짜의 Simple Full 파일이 이미 존재합니다: {today_simple}")
         print(f"   기존 파일을 최신 버전으로 사용하여 병합합니다.")
-        latest_full = today_full
+        latest_simple = today_simple
     else:
-        latest_full = find_latest_full_file()
+        latest_simple = find_latest_simple_file()
     
-    # 2. 기존 Full 파일 읽기
+    # 2. 기존 Simple 파일 읽기
     existing_posts = []
     existing_merge_history = []
     source_filename = None
     
-    if latest_full:
-        print(f"📂 기존 Full 파일 로드: {latest_full}")
-        source_filename = os.path.basename(latest_full)
+    if latest_simple:
+        print(f"📂 기존 Simple 파일 로드: {latest_simple}")
+        source_filename = os.path.basename(latest_simple)
         
-        with open(latest_full, 'r', encoding='utf-8') as f:
+        with open(latest_simple, 'r', encoding='utf-8') as f:
             existing_content = json.load(f)
             
-            # 기존 파일이 메타데이터 구조인지 확인
+            # 메타데이터 구조인지 확인
             if isinstance(existing_content, dict) and 'posts' in existing_content:
                 existing_posts = existing_content['posts']
-                # 기존 merge_history 가져오기
                 if 'metadata' in existing_content and 'merge_history' in existing_content['metadata']:
                     existing_merge_history = existing_content['metadata']['merge_history']
             else:
-                # 레거시 구조 (배열만 있음)
                 existing_posts = existing_content
-            
-            # [필드명 변환] 레거시 필드명(text, url)을 새 필드명(full_text, post_url)으로 통일
-            for post in existing_posts:
-                if 'text' in post and 'full_text' not in post:
-                    post['full_text'] = post.pop('text')
-                if 'url' in post and 'post_url' not in post:
-                    post['post_url'] = post.pop('url')
-                
-                # [타임스탬프 변환] posted_at(unix ts) -> created_at, time_text
-                if 'posted_at' in post and not post.get('created_at'):
-                    ts = post.pop('posted_at')
-                    created_at, time_text = format_timestamp(ts)
-                    post['created_at'] = created_at
-                    post['time_text'] = time_text
-        
-        # 3. 기존 데이터의 code 집합 생성 및 최대 sequence_id 찾기
-        existing_codes = {post['code'] for post in existing_posts}
-        max_existing_seq = max((p.get('sequence_id', 0) for p in existing_posts), default=0)
-        
-        # 3-1. 레거시 데이터 처리 (sequence_id가 없는 경우 한 번만 부여)
-        has_legacy = any('sequence_id' not in p for p in existing_posts)
-        if has_legacy:
-            print(f"   📋 레거시 데이터 발견 - sequence_id 부여 중...")
-            total_existing = len(existing_posts)
-            for i, post in enumerate(existing_posts):
-                if 'sequence_id' not in post:
-                    post['sequence_id'] = total_existing - i  # 역순: 최신이 큰 번호
-                    post['crawled_at'] = None  # 레거시는 시간 정보 없음
-            max_existing_seq = total_existing
-        
-        # 4. 신규 데이터에서 중복 필터링 및 sequence_id, crawled_at 추가
-        new_items = []
-        duplicate_count = 0
-        
-        for post in new_data:
-            # 기존에 없는 것만 추가
-            if post['code'] not in existing_codes:
-                new_items.append(post)
-            else:
-                duplicate_count += 1
-                print(f"   ⚠️ 중복 제거: {post['code']}")
-        
-        # 4-1. 신규 데이터에 sequence_id와 crawled_at 부여 (역순)
-        new_count = len(new_items)
-        for i, post in enumerate(new_items):
-            post['sequence_id'] = max_existing_seq + new_count - i  # 예: 105, 104, 103...
-            post['crawled_at'] = crawl_start_time
-        
-        # 5. 병합: [신규 필터링] + [기존] (순서 유지)
-        merged_posts = new_items + existing_posts
-        
-        print(f"✅ 병합 완료: {len(new_items)}개 신규 추가 + {len(existing_posts)}개 기존 = {len(merged_posts)}개")
-        if duplicate_count > 0:
-            print(f"   (중복 {duplicate_count}개 자동 제거됨)")
     else:
-        # Full 파일 없으면 현재 데이터를 그대로 사용
-        print("⚠️ 기존 Full 파일 없음 - 현재 결과를 Full로 저장")
-        
-        # sequence_id와 crawled_at 부여 (역순)
-        total_count = len(new_data)
-        for i, post in enumerate(new_data):
-            post['sequence_id'] = total_count - i  # 역순
-            post['crawled_at'] = crawl_start_time
-        
-        merged_posts = new_data
-        new_items = new_data
+        # [Backfill] Simple 파일이 없으면 Thread Full 파일에서 역으로 가져오기
+        print("🔍 [Backfill] Simple 파일이 없어 Thread Full 파일에서 기초 목록을 생성합니다...")
+        thread_full_files = glob.glob(f"{OUTPUT_DIR}/threads_py_full_*.json")
+        if thread_full_files:
+            thread_full_files.sort(reverse=True)
+            latest_thread_full = thread_full_files[0]
+            try:
+                with open(latest_thread_full, 'r', encoding='utf-8') as f:
+                    full_content = json.load(f)
+                    full_posts = full_content.get('posts', [])
+                    # 상세 정보는 빼고 기초 정보만 Simple로 변환
+                    for p in full_posts:
+                        simple_item = {
+                            "code": p['code'],
+                            "username": p.get('username'),
+                            "full_text": p.get('full_text', '')[:100] + "...", # 스니펫화
+                            "created_at": p.get('created_at'),
+                            "post_url": p.get('post_url'),
+                            "source": "backfill_from_full"
+                        }
+                        existing_posts.append(simple_item)
+                print(f"✅ {len(existing_posts)}개의 과거 항목을 Thread Full에서 Simple Full로 복구했습니다.")
+            except Exception as e:
+                print(f"⚠️ Backfill 실패: {e}")
+        else:
+            print("⚠️ 기존 Simple 및 Thread Full 파일 없음 - 현재 결과를 Simple로 저장")
+
+    # 중복 제거 및 병합
+    existing_codes = {post['code'] for post in existing_posts}
+    new_items = [p for p in new_data if p['code'] not in existing_codes]
+    duplicate_count = len(new_data) - len(new_items)
     
-    # 6. 메타데이터 생성
+    merged_posts = new_items + existing_posts
+    if new_items:
+        print(f"✅ Simple 병합 완료: {len(new_items)}개 신규 추가 + {len(existing_posts)}개 기존 = {len(merged_posts)}개")
+    elif not existing_posts:
+        print(f"✅ 초기 Simple 생성: {len(merged_posts)}개 저장 예정")
+    
+    # 메타데이터 및 저장
     now = datetime.now().isoformat()
-    legacy_count = sum(1 for p in merged_posts if not p.get('crawled_at'))
-    verified_count = sum(1 for p in merged_posts if p.get('crawled_at'))
-    max_sequence_id = max((p.get('sequence_id', 0) for p in merged_posts), default=0)
-    
-    # 7. merge_history 생성
-    merge_history = existing_merge_history.copy()
-    
-    # 새 병합 이벤트 추가 (실제로 신규 데이터가 있을 때만)
-    if latest_full and len(new_items) > 0:
-        merge_event = {
-            "merged_at": now,
-            "new_items_count": len(new_items),
-            "duplicates_removed": duplicate_count if 'duplicate_count' in locals() else 0,
-            "source_file": source_filename,
-            "stop_code": stop_code
-        }
-        merge_history.append(merge_event)
-    
     metadata = {
         "version": "1.0",
         "crawled_at": now,
         "total_count": len(merged_posts),
-        "max_sequence_id": max_sequence_id,
-        "first_code": merged_posts[0]['code'] if merged_posts else None,
-        "last_code": merged_posts[-1]['code'] if merged_posts else None,
-        "crawl_mode": "update only",
-        "legacy_data_count": legacy_count,
-        "verified_data_count": verified_count,
-        "merge_history": merge_history
+        "source_file_count": len(new_items),
+        "merge_history": existing_merge_history + [{
+            "merged_at": now,
+            "new_items_count": len(new_items),
+            "duplicates_removed": duplicate_count,
+            "stop_code": stop_code
+        }] if latest_simple and new_items else existing_merge_history
     }
     
-    # 8. 최종 구조 생성
-    full_data = {
-        "metadata": metadata,
-        "posts": merged_posts
-    }
+    full_data = {"metadata": metadata, "posts": merged_posts}
     
-    # 8. 파일 저장
-    os.makedirs(os.path.dirname(today_full), exist_ok=True)
-    with open(today_full, "w", encoding="utf-8") as f:
+    with open(today_simple, "w", encoding="utf-8") as f:
         json.dump(full_data, f, ensure_ascii=False, indent=4)
-    
-    action = "업데이트" if latest_full == today_full else "생성"
-    print(f"\n📦 Full 버전 {action}: {today_full}")
-    print(f"   📊 데이터 품질: 타임스탬프 있음 {verified_count}개 / 레거시 {legacy_count}개")
-    print(f"   🔢 Sequence ID 범위: 1 ~ {max_sequence_id}")
-    if latest_full and latest_full != today_full:
-        print(f"   (기존 파일 '{latest_full}' 은 보존됨)")
-    
-    return today_full
+    print(f"📦 Simple 버전 저장 완료: {today_simple}")
+    return today_simple
 
 
 def manage_login(context, page):
@@ -335,12 +273,12 @@ def run():
     stop_code_found = False  # 중단 플래그
     crawl_start_time = start_time_dt.isoformat()  # 크롤링 시작 시간
     
-    # "update only" 모드: 최신 full 파일의 최상단 code 가져오기
+    # "update only" 모드: 최신 Simple 파일의 최상단 code 가져오기
     if CRAWL_MODE == "update only":
-        latest_full = find_latest_full_file()
-        if latest_full:
+        latest_simple = find_latest_simple_file()
+        if latest_simple:
             try:
-                with open(latest_full, 'r', encoding='utf-8') as f:
+                with open(latest_simple, 'r', encoding='utf-8') as f:
                     full_data = json.load(f)
                     if full_data:
                         # 메타데이터 구조인지 확인
@@ -355,9 +293,9 @@ def run():
                             stop_codes = [p['code'] for p in posts[:5]]
                             print(f"🔄 UPDATE ONLY 모드: {stop_codes} 중 하나라도 발견 시 수집을 중단합니다.")
             except Exception as e:
-                print(f"⚠️ Full 파일 읽기 실패: {e}")
+                print(f"⚠️ Simple 파일 읽기 실패: {e}")
         else:
-            print("⚠️ Full 파일 없음 - 전체 수집으로 전환")
+            print("⚠️ Simple 파일 없음 - 전체 수집으로 전환")
  
 
     with sync_playwright() as p:
@@ -417,102 +355,139 @@ def run():
                                 items = section.get("items", [])
                                 for item in items:
                                     if TARGET_LIMIT > 0 and len(collected_data) >= TARGET_LIMIT: break
-                                    thread_items = item.get("thread_items", [])
-                                    if thread_items:
-                                        post = thread_items[0].get("post", {})
-                                        if post: process_network_post(post)
+                                    # item 자체를 넘겨야 thread_items 전체를 볼 수 있음
+                                    process_network_post(item)
                 except: pass
 
         def process_network_post(node):
             nonlocal stop_code_found
             if not node: return
             
-            # 구조 파악: node 자체가 post인지, 아니면 thread_items를 포함한 껍데기인지 확인
-            post = node
-            if not post.get("code"):
-                thread_items = node.get("thread_items", [])
-                if thread_items:
-                    post = thread_items[0].get("post", {})
+            # 1. 포스트 목록 확보 (단일 포스트 or 스레드)
+            posts_to_process = []
             
-            code = post.get("code")
-            if not code:
-                return # 유효한 코드가 없으면 수집 대상이 아님
+            # thread_items가 있는 경우 (스레드/답글 구조)
+            thread_items = node.get("thread_items", [])
+            if thread_items:
+                posts_to_process = [item.get("post", {}) for item in thread_items]
+            else:
+                # 단일 포스트인 경우 (또는 node 자체가 post인 경우)
+                # post 필드가 있으면 그걸 쓰고, 없으면 node 자체를 시도
+                post = node.get("post") or node
+                posts_to_process = [post]
 
-            # ⛔ UPDATE ONLY 모드: stop_codes 중 하나 발견 시 중단
-            if stop_codes and code in stop_codes:
-                print(f"✋ 기준 게시물 발견! (code: {code}) - 크롤링 중단")
-                stop_code_found = True
-                return
-            
-            # 이미 수집된 목록에 있는지 확인 (중복 방지)
-            if any(p['code'] == code for p in collected_data):
-                return
+            if not posts_to_process: return
 
-            user = post.get("user", {})
-            caption = post.get("caption", {})
-            extra_info = post.get("text_post_app_info", {})
+            # 2. Root Post(첫 번째 글) 식별
+            root_post = posts_to_process[0]
+            root_code = root_post.get("code")
+            root_user_pk = root_post.get("user", {}).get("pk")
             
-            # 미디어 추출 및 타입 결정
-            images = []
-            video_versions = post.get("video_versions", [])
-            carousel_media = post.get("carousel_media", [])
-            image_versions2 = post.get("image_versions2", {})
+            if not root_code: return
 
-            content_type = "text"
-            
-            if carousel_media:
-                content_type = "carousel"
-                for item in carousel_media:
-                    candidates = item.get("image_versions2", {}).get("candidates", [])
+            # 3. 스레드 순회하며 수집
+            for i, post in enumerate(posts_to_process):
+                # 목표 개수 체크
+                if TARGET_LIMIT > 0 and len(collected_data) >= TARGET_LIMIT: return
+
+                code = post.get("code")
+                if not code: continue
+
+                # ⛔ UPDATE ONLY 모드: stop_codes 중 하나 발견 시 중단
+                if stop_codes and code in stop_codes:
+                    print(f"✋ 기준 게시물 발견! (code: {code}) - 크롤링 중단")
+                    stop_code_found = True
+                    return # 함수 종료
+                
+                # 이미 수집된 목록에 있는지 확인 (중복 방지)
+                if any(p['code'] == code for p in collected_data):
+                    continue
+
+                # ==================================================
+                # 🛡️ [필터링 로직] 작성자 및 답글 대상 검증
+                # ==================================================
+                current_user_pk = post.get("user", {}).get("pk")
+                
+                # 조건 1: 작성자가 Root 작성자와 동일해야 함
+                if current_user_pk != root_user_pk:
+                    continue 
+
+                # 조건 2: 답글인 경우, '누구에게 쓴 답글인가' 확인 (타인 답글 제외)
+                # 첫 번째 글(Root)은 무조건 수집 (i==0)
+                if i > 0:
+                    text_post_app_info = post.get("text_post_app_info", {})
+                    reply_to_author_id = text_post_app_info.get("reply_to_author", {}).get("id")
+                    
+                    # '내 글에 대한 답글'이 아니면 건너뜀 (타인 댓글에 대한 답글 등)
+                    # 단, reply_to_author 정보가 없으면(None) 그냥 수집 (안전장치)
+                    if reply_to_author_id and reply_to_author_id != root_user_pk:
+                        continue
+                # ==================================================
+
+                user = post.get("user", {})
+                caption = post.get("caption", {})
+                extra_info = post.get("text_post_app_info", {})
+                
+                # 미디어 추출 및 타입 결정
+                images = []
+                video_versions = post.get("video_versions", [])
+                carousel_media = post.get("carousel_media", [])
+                image_versions2 = post.get("image_versions2", {})
+
+                content_type = "text"
+                
+                if carousel_media:
+                    content_type = "carousel"
+                    for item in carousel_media:
+                        candidates = item.get("image_versions2", {}).get("candidates", [])
+                        if candidates:
+                            best = sorted(candidates, key=lambda x: x.get("width", 0), reverse=True)[0]
+                            images.append(best["url"])
+                        if item.get("video_versions"):
+                            images.append(item["video_versions"][0]["url"])
+                            
+                elif video_versions:
+                    content_type = "video"
+                    images.append(video_versions[0]["url"])
+                    
+                elif image_versions2:
+                    content_type = "image"
+                    candidates = image_versions2.get("candidates", [])
                     if candidates:
-                        # 해상도순 정렬 (width 기준)
                         best = sorted(candidates, key=lambda x: x.get("width", 0), reverse=True)[0]
                         images.append(best["url"])
-                    # 캐러셀 내 비디오 처리
-                    if item.get("video_versions"):
-                        images.append(item["video_versions"][0]["url"])
-                        
-            elif video_versions:
-                content_type = "video"
-                # 비디오 썸네일 or 비디오 URL? 기존 로직은 비디오 URL을 images에 포함
-                images.append(video_versions[0]["url"])
-                # 썸네일도 추가하고 싶다면 logic 추가
-                
-            elif image_versions2:
-                content_type = "image"
-                candidates = image_versions2.get("candidates", [])
-                if candidates:
-                    best = sorted(candidates, key=lambda x: x.get("width", 0), reverse=True)[0]
-                    images.append(best["url"])
 
-            created_at, time_text = format_timestamp(post.get("taken_at"))
+                created_at, time_text = format_timestamp(post.get("taken_at"))
 
-            post_info = {
-                "code": post.get("code"),
-                "pk": post.get("pk"),
-                "username": user.get("username"),
-                "user_link": f"https://www.threads.net/@{user.get('username')}",
-                "full_text": caption.get("text") if caption else "",
-                "like_count": post.get("like_count", 0),
-                "reply_count": extra_info.get("direct_reply_count", 0),
-                "repost_count": extra_info.get("repost_count", 0),
-                "quote_count": extra_info.get("quote_count", 0),
-                "created_at": created_at,
-                "time_text": time_text,
-                "post_url": f"https://www.threads.net/t/{post.get('code')}",
-                "images": images,
-                "media_type": post.get("media_type"),
-                "content_type": content_type,
-                "source": "network"
-            }
+                post_info = {
+                    "code": code,
+                    "root_code": root_code, # 그룹화용 필드
+                    "pk": post.get("pk"),
+                    "username": user.get("username"),
+                    "user_link": f"https://www.threads.net/@{user.get('username')}",
+                    "full_text": caption.get("text") if caption else "",
+                    "like_count": post.get("like_count", 0),
+                    "reply_count": extra_info.get("direct_reply_count", 0),
+                    "repost_count": extra_info.get("repost_count", 0),
+                    "quote_count": extra_info.get("quote_count", 0),
+                    "created_at": created_at,
+                    "time_text": time_text,
+                    "post_url": f"https://www.threads.net/t/{code}",
+                    "images": images,
+                    "media_type": post.get("media_type"),
+                    "content_type": content_type,
+                    "source": "network",
+                    "sequence_id": 0 # 나중에 일괄 부여
+                }
 
-            # 유효성 검사: 텍스트가 없고 이미지도 제대로 없는 경우 제외
-            if not post_info['full_text'] and not any("http" in img and "null.jpg" not in img for img in post_info['images']):
-                return
+                # 유효성 검사: 텍스트가 없고 이미지도 없는 경우 제외
+                if not post_info['full_text'] and not post_info['images']:
+                    continue
 
-            collected_data.append(post_info)
-            msg = post_info['full_text'].replace('\n', ' ')[:15]
-            print(f"   + [Network] [{post_info['code']}] {msg}... (현재 {len(collected_data)}/{TARGET_LIMIT if TARGET_LIMIT else '무제한'})")
+                collected_data.append(post_info)
+                msg = post_info['full_text'].replace('\n', ' ')[:15]
+                prefix = "└─" if i > 0 else "■ root"
+                print(f"   + [Net] {prefix} [{code}] root:{root_code} | {msg}... ({len(collected_data)}개)")
 
         page.on("response", handle_response)
 
@@ -673,50 +648,49 @@ def run():
             print(f"   - Network 기반: {net_cnt}개")
             print(f"   - DOM 기반: {dom_cnt}개")
             
-            # [2] Full 버전 업데이트
+            # [추가] 🎨 2-Pass 연동을 위해 pending_list.json 저장
+            try:
+                pending_list = []
+                seen_in_pending = set()
+                for p in final_list:
+                    code = p.get('code')
+                    if code and code not in seen_in_pending:
+                        pending_list.append({
+                            "code": code,
+                            "username": p.get('username'),
+                            "captured_at": datetime.now().isoformat()
+                        })
+                        seen_in_pending.add(code)
+                
+                if pending_list:
+                    with open("pending_list.json", "w", encoding="utf-8") as f:
+                        json.dump(pending_list, f, ensure_ascii=False, indent=4)
+                    print(f"📂 [2-Pass] {len(pending_list)}개의 작업이 pending_list.json에 저장되었습니다.")
+            except Exception as e:
+                print(f"⚠️ [2-Pass] pending_list 저장 실패: {e}")
+
+            # [2] Simple 버전 업데이트
             if CRAWL_MODE == "update only":
-                # 병합 로직에는 stop_codes 중 발견된 특정 코드를 전달할 수도 있으나, 
-                # 현재 update_full_version은 단순히 중복 제거 기반이므로 리스트의 첫 번째 요소를 대표로 전달
                 representative_stop = stop_codes[0] if stop_codes else None
-                update_full_version(final_list, representative_stop, crawl_start_time)
+                update_simple_version(final_list, representative_stop, crawl_start_time)
             else:
-                # "all" 모드는 현재 결과를 새로운 full로 저장 (메타데이터 포함)
+                # "all" 모드는 현재 결과를 새로운 Simple Full로 저장
                 today = datetime.now().strftime('%Y%m%d')
-                full_filename = f"{OUTPUT_DIR}/threads_py_full_{today}.json"
-                os.makedirs(os.path.dirname(full_filename), exist_ok=True)
+                simple_filename = f"{OUTPUT_DIR}/threads_py_simple_full_{today}.json"
+                os.makedirs(os.path.dirname(simple_filename), exist_ok=True)
                 
-                # sequence_id와 crawled_at 부여 (역순)
-                total_count = len(final_list)
-                for i, post in enumerate(final_list):
-                    post['sequence_id'] = total_count - i  # 역순: 최신(배열 0번)이 최대값
-                    post['crawled_at'] = crawl_start_time
-                
-                # 메타데이터 생성
-                now = datetime.now().isoformat()
-                max_sequence_id = total_count
                 metadata = {
                     "version": "1.0",
-                    "crawled_at": now,
-                    "total_count": total_count,
-                    "max_sequence_id": max_sequence_id,
-                    "first_code": final_list[0]['code'] if final_list else None,
-                    "last_code": final_list[-1]['code'] if final_list else None,
-                    "crawl_mode": "all",
-                    "legacy_data_count": 0,
-                    "verified_data_count": total_count,
-                    "merge_history": []  # "all" 모드는 병합이 없으므로 빈 배열
+                    "crawled_at": datetime.now().isoformat(),
+                    "total_count": len(final_list),
+                    "crawl_mode": "all"
                 }
                 
-                full_data = {
-                    "metadata": metadata,
-                    "posts": final_list
-                }
+                save_data = {"metadata": metadata, "posts": final_list}
                 
-                with open(full_filename, "w", encoding="utf-8") as f:
-                    json.dump(full_data, f, ensure_ascii=False, indent=4)
-                print(f"\n📦 Full 버전 생성: {full_filename}")
-                print(f"   📊 데이터 품질: 타임스탬프 있음 {total_count}개 / 레거시 0개")
-                print(f"   🔢 Sequence ID 범위: 1 ~ {max_sequence_id}")
+                with open(simple_filename, "w", encoding="utf-8") as f:
+                    json.dump(save_data, f, ensure_ascii=False, indent=4)
+                print(f"\n📦 Simple Full 버전 생성 완료: {simple_filename}")
         else:
             print("\n😭 수집된 데이터가 없습니다.")
 

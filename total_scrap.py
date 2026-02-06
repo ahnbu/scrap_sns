@@ -32,33 +32,41 @@ def find_latest_full_file(directory, pattern):
     return files[0]
 
 def run_scrapers():
-    print("🚀 병렬 스크래퍼 실행 시작...")
+    print("병렬 스크래퍼 실행 시작...")
     
-    # 실행 명령어 정의
+    # 1단계: Producer 실행 (URL 목록 확보)
+    print("   [Pass 1] Producer 실행: threads_scrap.py")
+    subprocess.run(["python", "threads_scrap.py"])
+
+    # 2단계: Consumer 실행 (상세 수집 및 자동 통합)
+    # scrap_single_post.py는 내부적으로 promote 및 sync_to_total까지 수행함
+    print("   [Pass 2] Consumer 실행: scrap_single_post.py")
+    subprocess.run(["python", "scrap_single_post.py"])
+
+    # 3단계: 기타 스크래퍼 병렬 실행 (LinkedIn 등)
     scrapers = [
-        ["python", "threads_scrap.py"],
         ["python", "linkedin_scrap.py"]
     ]
     
     processes = []
     for cmd in scrapers:
-        print(f"   ▶️ 실행 중: {' '.join(cmd)}")
+        print(f"   실행 중: {' '.join(cmd)}")
         p = subprocess.Popen(cmd)
         processes.append(p)
         
-    print(f"⏳ {len(processes)}개의 스크래퍼가 완료되기를 기다리는 중...")
+    print(f"{len(processes)}개의 스크래퍼가 완료되기를 기다리는 중...")
     for p in processes:
         p.wait()
-    print("✅ 모든 스크래퍼 실행 완료.")
+    print("모든 스크래퍼 실행 완료.")
 
 def merge_results():
-    print("\n🔄 결과 병합 중...")
+    print("\n결과 병합 중...")
     
     latest_threads = find_latest_full_file(OUTPUT_THREADS_DIR, "threads_py_full_*.json")
     latest_linkedin = find_latest_full_file(OUTPUT_LINKEDIN_DIR, "linkedin_python_full_*.json")
     
     if not latest_threads or not latest_linkedin:
-        print("⚠️ Full 파일을 찾을 수 없어 병합할 수 없습니다.")
+        print("Full 파일을 찾을 수 없어 병합할 수 없습니다.")
         return None, 0, 0
 
     print(f"   Threads 파일: {os.path.basename(latest_threads)}")
@@ -87,7 +95,7 @@ def save_total(new_posts, threads_count, linkedin_count):
     
     prev_codes = set()
     if prev_total_file:
-        print(f"   📉 이전 Total 파일 로드: {os.path.basename(prev_total_file)}")
+        print(f"   이전 Total 파일 로드: {os.path.basename(prev_total_file)}")
         prev_data = load_json(prev_total_file)
         prev_posts_list = prev_data.get('posts', []) if isinstance(prev_data, dict) else prev_data
         for p in prev_posts_list:
@@ -114,7 +122,7 @@ def save_total(new_posts, threads_count, linkedin_count):
     
     with open(total_filename, 'w', encoding='utf-8') as f:
         json.dump(total_data, f, ensure_ascii=False, indent=4)
-    print(f"💾 Total Full 저장 완료: {total_filename} (총 {len(new_posts)}개, Threads: {threads_count}, LinkedIn: {linkedin_count})")
+    print(f"Total Full 저장 완료: {total_filename} (총 {len(new_posts)}개, Threads: {threads_count}, LinkedIn: {linkedin_count})")
     
     if new_items:
         update_dir = os.path.join(OUTPUT_TOTAL_DIR, "update")
@@ -124,7 +132,7 @@ def save_total(new_posts, threads_count, linkedin_count):
         
         with open(update_filename, 'w', encoding='utf-8') as f:
             json.dump(new_items, f, ensure_ascii=False, indent=4)
-        print(f"✨ 업데이트 저장 완료: {update_filename} (신규 {len(new_items)}개)")
+        print(f"업데이트 저장 완료: {update_filename} (신규 {len(new_items)}개)")
     else:
         print("   이번 실행에서 새로운 업데이트가 없습니다.")
 
@@ -137,13 +145,13 @@ def save_total(new_posts, threads_count, linkedin_count):
             f.write(js_content)
         print(f"   🌐 web_viewer/data.js 자동 갱신 완료")
     except Exception as e:
-        print(f"   ⚠️ data.js 갱신 실패: {e}")
+        print(f"   data.js 갱신 실패: {e}")
 
 import requests
 import hashlib
 
 def download_images(posts):
-    print("\n🖼️ 이미지 로컬 다운로드 시작...")
+    print("\n이미지 로컬 다운로드 시작...")
     
     # 이미지 저장 경로 (웹 뷰어 기준 relative path 사용을 위해 web_viewer 내부로 지정)
     # 실제 파일 시스템 경로: d:/Vibe_Coding/scrap_sns/web_viewer/images
@@ -223,18 +231,24 @@ def download_images(posts):
         if local_images:
             post['local_images'] = local_images
 
-    print(f"✅ 이미지 다운로드 완료: 신규 {count}개 저장됨.")
+    print(f"이미지 다운로드 완료: 신규 {count}개 저장됨.")
 
 
 def run():
+    # 1. 스크래퍼 순차 실행 (Producer -> Consumer -> Others)
     run_scrapers()
+
+    # 2. 결과 병합 (스크래퍼가 업데이트한 최신 파일들을 다시 로드)
+    print("\n최신 수집 데이터 기반 최종 병합을 시작합니다...")
     merged_results_data = merge_results()
+    
     if merged_results_data[0]:
         posts, threads_count, linkedin_count = merged_results_data
         
-        # 이미지 다운로드 수행 (posts 객체를 직접 수정 - local_images 추가)
+        # 3. 이미지 다운로드 수행 (posts 객체를 직접 수정 - local_images 추가)
         download_images(posts)
         
+        # 4. 최종 Total 파일 및 data.js 저장
         save_total(posts, threads_count, linkedin_count)
 
 if __name__ == "__main__":

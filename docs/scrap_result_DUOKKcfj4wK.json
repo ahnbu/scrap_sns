@@ -1,0 +1,26 @@
+[
+    {
+        "code": "DUOKKcfj4wK",
+        "root_code": "DUOKKcfj4wK",
+        "username": "seulgi.kaang",
+        "full_text": "25년 프롬프트: OO 주제로 PPT 만들어줘\n\n26년 프롬프트: \nClaude Code나 안티그래비티용 PPT 자동생성 시스템 만들어줘.\n프로젝트 구조(.claude/skills/, dev/active/, templates/, output/), \nCLAUDE.md, skill-rules.json, \nhooks(자동 스킬 활성화, 품질 체크) 자동 셋업 스크립트 작성.\n\nppt-creator, content-analyzer 스킬(각 500줄 이하 메인 + resources/로 분리), strategic-ppt-architect/ppt-design-specialist/quality-reviewer 에이전트, \n/ppt-plan /ppt-create 슬래시 커맨드 구현.\n\n참고자료 분석 → 목차 생성 → \ndev docs 작성(plan/context/tasks) → 단계별 PPT 제작 워크플로우 포함.",
+        "created_at": "2026-02-02 01:00:45",
+        "sequence_id": 0
+    },
+    {
+        "code": "DUOKaU9Dzbh",
+        "root_code": "DUOKaU9Dzbh",
+        "username": "seulgi.kaang",
+        "full_text": "1. Skills (스킬)\n- 무엇? Claude가 참고하는 \"작업 매뉴얼\"\n- 왜 필요? 일관된 품질/패턴으로 작업하게 만듦\n- 예시: ppt-creator 스킬 = \"PPT 만들 때 이렇게 해라\"는 가이드\n\n2. Hooks (훅)\n- 무엇? 특정 시점에 자동 실행되는 체크 시스템\n- 왜 필요? Claude가 실수/누락 없이 작업하도록 감시\n- 예시: 파일 수정 후 자동으로 에러 체크, 스킬 자동 활성화\n\n3. Agents (에이전트)\n- 무엇? 특정 역할만 하는 전문 Claude 분신\n- 왜 필요? 복잡한 작업을 역할별로 나눠서 처리\n- 예시: strategic-ppt-architect = 기획만, quality-reviewer = 검토만",
+        "created_at": "2026-02-02 01:02:55",
+        "sequence_id": 1
+    },
+    {
+        "code": "DUOKayEjwbX",
+        "root_code": "DUOKaU9Dzbh",
+        "username": "seulgi.kaang",
+        "full_text": "4. Dev Docs (개발 문서)\n- 무엇? 작업 계획/진행상황을 기록하는 3개 파일 (plan/context/tasks)\n- 왜 필요? Claude가 긴 작업 중 \"뭐하고 있었지?\" 안 까먹게\n- 예시: 대화 끊겨도 문서 보고 이어서 작업 가능\n\n5. Slash Commands (슬래시 명령어)\n- 무엇? /ppt-plan 같은 단축 명령어\n- 왜 필요? 긴 프롬프트 매번 안 쓰고 한 줄로 실행\n- 예시: /ppt-create → 전체 PPT 생성 워크플로우 자동 실행\n\n6. skill-rules.json\n- 무엇? \"이런 단어 나오면 이 스킬 켜라\" 규칙 모음\n- 왜 필요? 사용자가 말 안 해도 Claude가 알아서 적절한 스킬 사용\n- 예시: \"PPT 만들어\" → 자동으로 ppt-creator 스킬 활성화",
+        "created_at": "2026-02-02 01:02:59",
+        "sequence_id": 2
+    }
+]
