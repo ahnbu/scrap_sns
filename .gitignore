@@ -1,4 +1,5 @@
 .env.local
+docs/.pdca-snapshots
 temp_code/
 
 tmp/
@@ -15,6 +16,8 @@ output_threads/js/
 output_threads/python/update/
 output_total/update/
 web_viewer/images/
+output_linkedin_user/temp/
+output_linkedin_user/gb-jeong/python/update/
 
 # Python
 **/*.pyc

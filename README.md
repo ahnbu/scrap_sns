@@ -97,9 +97,22 @@ THREADS_PW=your_password
 # Threads만 수집
 python threads_scrap.py --mode update
 
-# LinkedIn만 수집
+# LinkedIn 저장된 게시물 수집
 python linkedin_scrap.py --mode all
+
+# LinkedIn 특정 사용자 활동 수집
+# 예: https://www.linkedin.com/in/gb-jeong/recent-activity/all/
+python linkedin_scrap_by_user.py --user gb-jeong --limit 20 --duration 7d
 ```
+
+#### LinkedIn 사용자 스크래퍼 옵션 (`linkedin_scrap_by_user.py`)
+
+| 옵션         | 설명                                  | 예시              |
+| :----------- | :------------------------------------ | :---------------- |
+| `--user`     | LinkedIn 사용자 ID (slug)             | `gb-jeong`        |
+| `--limit`    | 수집할 최대 게시물 개수 (0: 무제한)   | `50`              |
+| `--duration` | 수집 기간 (d: 일, m: 월, y: 년)       | `30d`, `3m`, `1y` |
+| `--after`    | 특정 기간 이후의 글만 수집 (건너뛰기) | `7d`              |
 
 #### 통합 실행 (권장)
 

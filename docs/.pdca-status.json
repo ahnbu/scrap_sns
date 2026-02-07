@@ -3,16 +3,37 @@
   "lastUpdated": "2026-02-07T10:04:48.823Z",
   "activeFeatures": [],
   "primaryFeature": null,
-  "features": {},
+  "features": {
+    "linkedin_load_more_button_improvement": {
+      "status": "completed",
+      "phases": {
+        "plan": {
+          "status": "completed",
+          "date": "2026-02-07T22:22:00Z"
+        }
+      },
+      "currentPhase": "report"
+    },
+    "linkedin_user_data_merge": {
+      "status": "completed",
+      "phases": {
+        "plan": {
+          "status": "completed",
+          "date": "2026-02-07T22:33:30Z"
+        }
+      },
+      "currentPhase": "report"
+    }
+  },
   "pipeline": {
     "currentPhase": 1,
     "level": "Starter",
     "phaseHistory": []
   },
   "session": {
-    "startedAt": "2026-02-07T09:56:41.633Z",
+    "startedAt": "2026-02-07T13:38:34.397Z",
     "onboardingCompleted": false,
-    "lastActivity": "2026-02-07T10:04:48.822Z"
+    "lastActivity": "2026-02-07T13:38:34.397Z"
   },
   "history": [
     {
