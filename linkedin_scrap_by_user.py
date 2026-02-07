@@ -33,10 +33,10 @@ CRAWL_START_TIME = datetime.now()
 INCLUDE_IMAGES = True
 
 # 브라우저 UI 설정
-WINDOW_X = 5000
-WINDOW_Y = 200
+WINDOW_X = 1000
+WINDOW_Y = 0
 WINDOW_WIDTH = 1000
-WINDOW_HEIGHT = 800
+WINDOW_HEIGHT = 1000
 
 # --- 헬퍼 함수 ---
 def parse_duration(duration_str):
@@ -420,9 +420,16 @@ class LinkedinUserScraper:
             
             while not self.stopped_early:
                 try:
-                    show_more_btn = page.locator('button:has-text("결과 더보기"), button:has-text("Show more results")')
-                    if show_more_btn.count() > 0:
-                        show_more_btn.first.click()
+                    # '결과 더보기' 버튼 탐지 (클래스 우선)
+                    load_more_btn = page.locator('button.scaffold-finite-scroll__load-button')
+                    
+                    # 텍스트 기반 폴백 탐색
+                    if load_more_btn.count() == 0:
+                        load_more_btn = page.locator('button:has-text("결과 더보기"), button:has-text("Show more results")')
+
+                    if load_more_btn.count() > 0 and load_more_btn.first.is_visible():
+                        print("   🖱️ '결과 더보기' 버튼 클릭")
+                        load_more_btn.first.click()
                         time.sleep(3)
                     else:
                         page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
