@@ -2,8 +2,8 @@ import json
 import os
 
 # Paths
-json_path = r'd:\Vibe_Coding\scrap_sns\output_total\total_full_20260201.json'
-js_output_path = r'd:\Vibe_Coding\scrap_sns\web_viewer\data.js'
+json_path = r'd:\vibe-coding\scrap_sns\output_total\total_full_20260201.json'
+js_output_path = r'd:\vibe-coding\scrap_sns\web_viewer\data.js'
 
 print(f"Reading JSON from: {json_path}")
 

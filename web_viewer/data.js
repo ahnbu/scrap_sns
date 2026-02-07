@@ -1,12 +1,267 @@
 const snsFeedData = {
   "metadata": {
-    "updated_at": "2026-02-06T19:31:10.028464",
-    "total_count": 406,
-    "threads_count": 252,
-    "linkedin_count": 154,
-    "new_items_count": 0
+    "updated_at": "2026-02-06T19:37:45.864910",
+    "total_count": 424,
+    "threads_count": 269,
+    "linkedin_count": 155,
+    "new_items_count": 1
   },
   "posts": [
+    {
+      "code": "DSEhurTk84N",
+      "root_code": "DSEhu-lE8kp",
+      "username": "programmingzombie",
+      "full_text": "사업은 덧셈이 아니라 곱셈입니다. \n\n내가 개발을 아무리 잘해도(100), 디자인이나 마케팅이 없다면(0) 수익은 없습니다. \n[ 개발(100) x 디자인(0) x 마케팅(0) = 0 ] \n\n개발자 마인드에서 벗어나야 하는 이유가 여기에 있습니다. 스스로 부족한 영역을 객관적으로 찾으세요. 그 '0'의 영역을 최소 1로 만들지 못한다면, 결과는 언제나 0일 수밖에 없습니다.\n\n그리고 개발, 디자인, 마케팅 뿐 아니라 다양한 요소들이 존재합니다. 다양한 부분들을 추가로 정리해보았습니다.\n\n---\n\n1. 기획 (Market Need)\n아무리 잘 만들고(개발), 예쁘고(디자인), 널리 알렸어도(마케팅), 사람들이 원하지 않는 것이라면 수익은 0입니다.\n\n[ 개발(100) x 기획(0) = 쓸모없는 고퀄리티 앱 ]\n\n핵심: 시장성 검증, 타겟 유저 설정, 경쟁 앱 분석.\n\n2. 비즈니스 모델 (BM / Pricing)\n앱을 사용하는 유저는 많은데 돈을 벌 방법이 설계되어 있지 않다면 수익은 0입니다. 광고를 어디에 배치할지, 인앱 결제 상품을 얼마에 팔지 설계하는 것은 개발과는 전혀 다른 영역입니다.\n\n[ 사용자(100) x BM(0) = 자선 사업 ]\n\n핵심: 광고 효율 최적화(eCPM), 적절한 가격 정책, 유료화 설계.\n\n---\n\n3. 운영 및 CS (Retention)\n출시 초기에는 유입이 되어도, 버그 대응이 늦거나 유저 피드백을 무시하면 평점이 1점대로 떨어집니다. 스토어 평점이 망가지면 신규 유입이 끊겨 결국 수익이 0으로 수렴합니다.\n\n[ 신규유입(100) x 운영(0) = 밑 빠진 독 ]\n\n핵심: 리뷰 답글, 빠른 버그 픽스, 업데이트 주기 관리.(처음부터 잘 설계하면 문제가 없을 수도 있음)\n\n4. 정책 및 리스크 관리 (Policy)\n이건 정말 무서운 '0'입니다. 앱이 대박이 났어도 구글/애플의 정책을 위반하여 계정이 정지(Terminate) 당하면 그 즉시 수익은 0이 됩니다. 특히 1인 개발자는 애드몹(AdMob) 제한이나 스토어 삭제 이슈에 매우 취약합니다.\n\n[ 월수익 1억 x 계정정지(0) = 0 ]\n\n핵심: 저작권 준수, 스토어 정책 모니터링, 무효 트래픽 관리.\n\n---\n\n5. 데이터 분석 (Business Intelligence)\n초기에는 감으로 할 수 있지만, 수익을 극대화하려면 철저한 계산이 필수입니다. 광고 지출(Cost) 대비 수익(Revenue), eCPM의 등락을 분석하지 않고 마케팅만 태운다면, 앱은 성장하는 것 같아도 통장은 비어가는 상황이 발생합니다. 최적화를 못 하면 0이 아니라 마이너스(적자)가 될 수 있습니다.\n\n[ 마케팅열정(100) x 분석능력(0) = 적자 ]\n\n핵심: ROAS(광고비 대비 매출) 관리, eCPM 하락 원인 분석 및 대응.",
+      "created_at": "2025-12-10 14:11:29",
+      "images_count": 0,
+      "post_url": "https://www.threads.com/@programmingzombie/post/DSEhurTk84N",
+      "images": [],
+      "is_merged_thread": true,
+      "original_item_count": 4,
+      "sequence_id": 253,
+      "crawled_at": null,
+      "sns_platform": "threads"
+    },
+    {
+      "code": "DTBq2CnkwCp",
+      "root_code": "DTBvORnkpUy",
+      "username": "alex_ai_mcp",
+      "full_text": "제미나이 동적뷰로 목업 해보고\n\n이건 만들어 놓으면 편하고 예쁘겠다 싶어서\n\n안티그래비티로 후딱 만들었어요.\n\n이제 크롬을 열면 제 스타일의 즐겨찾기 \n\n시작화면이 떠요 \n\n아래에 포스트잇도 3개 추가해서\n\n메모도 가능하게 만들었어요\n\n만족스러운 바이브코딩이에요\n\n---\n\n동적뷰와 안티그래비티로 나만의 크롬 UI만들기\nhttps://youtu.be/y8tJ0ddiaqc",
+      "created_at": "2026-01-03 08:07:25",
+      "images_count": 1,
+      "post_url": "https://www.threads.com/@alex_ai_mcp/post/DTBq2CnkwCp",
+      "images": [],
+      "is_merged_thread": true,
+      "original_item_count": 2,
+      "sequence_id": 254,
+      "crawled_at": null,
+      "sns_platform": "threads"
+    },
+    {
+      "code": "DTSa9qcEptv",
+      "root_code": "DTSa9uLEg9_",
+      "username": "yourgpt3650",
+      "full_text": "마지막 검증 단계 – 이거 안 하면 또 망해\n\n프롬프트\n“위 5가지 방법으로 나온 아이디어들 중에서\n\n이번 주에 바로 실행 가능한 것 1개\n가장 차별화된 것 1개\n실패해도 타격이 가장 적은 것 1개를 골라줘\n\n각 아이디어마다\n첫 3일 동안 뭘 하면 되는지\n아주 구체적인 행동 리스트로 정리해줘\n\n이 중 하나만 선택한다면\n왜 그걸 먼저 해야 하는지도 설명해줘”\n\n---\n\n챗지피티에게 아이디어 좀 줘라고 묻는 실수는 이제 그만\n\n막연한 요청 = 쓸모없는 답변 공장\n\n대신 이 5가지 발상 프롬프트로 바로 써먹을 수 있는 팔리는 아이디어만 뽑아봐\n\n---\n\n1. 이종 결합 – 안 섞으면 안 나온다\n\n프롬프트\n“내 분야 [현재 분야]와\n전혀 상관없는 분야 [타 분야: 예-호텔, 게임, 아이돌]의\n성공 요소를 강제로 결합해줘\n\n예를 들어\n‘치과 + 호텔 컨시어지’\n‘영어 공부 + RPG 레벨업 시스템’처럼\n완전히 다른 조합으로 생각해줘\n\n이 두 개념이 합쳐졌을 때 나올 수 있는\n가장 신선한 서비스 아이디어 3가지를 제시해줘\n\n각 아이디어마다\n타겟 고객 1줄\n예상 가격대\n이번 주 안에 해볼 수 있는\n아주 작은 프로토타입까지 같이 써줘”\n\n---\n\n2. 극한의 제약 – 조건을 걸어야 실행된다\n\n프롬프트\n“지금 나에게\n예산 0원\n시간 24시간\n주요 채널은 [인스타그램 / 스레드 / 오프라인 커뮤니티 중 선택]\n이라는 제약이 있다고 가정해줘\n\n이 조건에서\n내 목표 [목표: 예-구독자 모으기, 상품 홍보]를\n달성할 수 있는\n가장 현실적인 아이디어 5가지를 만들어줘\n\n돈 쓰는 방법 말고\n아이디어와 행동만으로\n사람들이 반응하게 만드는 방식으로 짜줘”\n\n---\n\n3. 거꾸로 생각하기 – 망하는 법부터 지워라\n\n프롬프트\n“내 프로젝트 [프로젝트명]가\n처참하게 실패하는 방법 10가지를\n아주 구체적으로 나열해줘\n\n각 실패마다\n실제로 있었을 법한 상황 예시도 붙여줘\n\n이제 그 실패 요인들을\n전부 반대로 뒤집어서\n절대 망하지 않게 만드는\n핵심 전략으로 다시 정리해줘\n\n남들이 말하는 ‘잘하는 법’ 말고\n리스크를 제거하는 관점에서 정리해줘”\n\n---\n\n4. 비즈니스 모델 복제 – 잘된 구조를 훔쳐라\n\n프롬프트\n“넷플릭스(구독)\n우버(중개)\n코스트코(멤버십)\n같은 검증된 비즈니스 모델을\n\n내 아이템 [아이템]에 그대로 적용해보면\n각각 어떤 형태가 되는지 시뮬레이션해줘\n\n구독으로 팔면 어떻게 달라지고\n중개 구조로 바꾸면 뭐가 바뀌는지 설명해줘\n\n각 모델마다\n현재 방식 대비\n고객이 느끼는 차이점과\n왜 더 매력적인지 한 줄로 정리해줘”\n\n---\n\n5. 사소한 불편 확대 – 사람들은 여기서 돈 낸다\n\n프롬프트\n“먼저\n내 고객들이 최근 1주일 안에\n우리 서비스나 제품을 쓰다가\n‘아 그냥 말자’ 하고 포기한 순간 5가지를 찾아줘\n구체적인 행동 기준으로 정리해줘\n\n그 포기 순간들을\n아주 미세한 불편 요소로 바꿔서 다시 정리해줘\n\n그 불편 하나만 집요하게 해결했을 때\n나올 수 있는 틈새 아이디어를 제시해줘\n\n그리고 그 아이디어의 핵심을\n고객이 공감할 만한\n한 문장 카피로 만들어줘”\n\n---\n\nCHATGPT, AI와 관련된 더 많은 정보를 원한다면 아래 링크 꼭 확인해봐!\n\n좋은 강의 = 좋은결과\n\nhttps://litt.ly/yourgpt3650",
+      "created_at": "2026-01-09 20:13:07",
+      "images_count": 0,
+      "post_url": "https://www.threads.com/@yourgpt3650/post/DTSa9qcEptv",
+      "images": [],
+      "is_merged_thread": true,
+      "original_item_count": 8,
+      "sequence_id": 255,
+      "crawled_at": null,
+      "sns_platform": "threads"
+    },
+    {
+      "code": "DT6r--5j5Pp",
+      "root_code": "DT6sAONj9K8",
+      "username": "choi.openai",
+      "full_text": "주소 :\npencil.dev\n\n---\n\n디자인과 코딩의 경계가 허물어지고 있습니다.\nClaude Code 위에서 작동하며 디자인을 즉시 코드로 변환해 주는 \"Pencil\"이 출시되었습니다.\n\nFigma 에서 작업한 시안을 복사해 붙여넣기만 하면, 픽셀 하나 틀어짐 없이 내 프로젝트 규칙에 맞는 코드로 완벽하게 변환해 줍니다.\n배우지 않으면 뒤쳐지는 시대입니다.",
+      "created_at": "2026-01-25 11:31:28",
+      "images_count": 0,
+      "post_url": "https://www.threads.com/@choi.openai/post/DT6r--5j5Pp",
+      "images": [],
+      "is_merged_thread": true,
+      "original_item_count": 2,
+      "sequence_id": 256,
+      "crawled_at": null,
+      "sns_platform": "threads"
+    },
+    {
+      "code": "DT5ScNij4Uw",
+      "root_code": "DT6c3mrEwmC",
+      "username": "hajae.code",
+      "full_text": "AI 코딩 실력이 늘지 않는 치명적인 이유\n\n다들 AI가 다 해줄 거라 믿지만\n프로젝트가 커지면 AI는 길을 잃습니다.\n\n\"이거 만들어줘\"라고 대충 던지는\n'바이브 코딩'의 유통기한은 100줄까지입니다.\n\n그 이상을 원한다면 'SDD'를 알아야 합니다.",
+      "created_at": "2026-01-24 22:29:02",
+      "images_count": 0,
+      "post_url": "https://www.threads.com/@hajae.code/post/DT5ScNij4Uw",
+      "images": [],
+      "is_merged_thread": true,
+      "original_item_count": 1,
+      "sequence_id": 257,
+      "crawled_at": null,
+      "sns_platform": "threads"
+    },
+    {
+      "code": "DT93hEfj7TV",
+      "root_code": "DT93hKjDzNI",
+      "username": "seulgi.kaang",
+      "full_text": "요기! PDF 매뉴얼:\nhttps://drive.google.com/drive/folders/1d8LFr31jRjWzwQ040CroMAc6doADxuGC?usp=sharing\n💬퇴근후AI 단톡방에서 나눈 팁: https://open.kakao.com/o/gzdwHNQh\n📣2월 시작하는 AI 기초-중급 4주 챌린지에서 AI Studio, 클로드코드, 안티그래비티 사용법 기본도 다룰 예정이니 많은 참여 부탁 :) (1월 28일 신청 마감)\nhttps://www.latpeed.com/products/2BE6H\n\n---\n\n[📥 클로드코드 설치 매뉴얼 배포]\n\n클로드코드 설치도 진짜 쉽고\n설치만 하고 나면\n프롬프트 > 결과물\n보는 것 똑같음\n\n그 이후 고도화도\nAI한테 조언 얻어가며\n진행하고!\n\n그래도 매뉴얼 필요하다면:",
+      "created_at": "2026-01-26 17:09:58",
+      "images_count": 0,
+      "post_url": "https://www.threads.com/@seulgi.kaang/post/DT93hEfj7TV",
+      "images": [],
+      "is_merged_thread": true,
+      "original_item_count": 2,
+      "sequence_id": 258,
+      "crawled_at": null,
+      "sns_platform": "threads"
+    },
+    {
+      "code": "DUAmXxokePp",
+      "root_code": "DUAmX2YkSSm",
+      "username": "lazypencil_lab",
+      "full_text": "1️⃣ 자료 수집은 ‘Notebook LM’\n이미 자료가 있다면 PDF, 문서, 유튜브 링크까지 싹 다 넣으세요.\nNotebook LM 내용을 읽고 핵심만 딱 정리해 줍니다.\n자료가 없으면 ‘Deep Research’ 기능을 써보세요.\n주제만 던지면 조사부터 정리까지 알아서 다 해줍니다.\n\n---\n\n2️⃣ 슬라이드 제작은 ‘Gemini’\n먼저 ‘도구 > 캔버스’ 모드부터 켜세요.\nNotebook LM에서 정리한 자료를 그대로 불러와서\n“강의용 슬라이드로 한글로 구조화해줘”라고 요청합니다.\n이때 목적, 대상, 색상을 구체적으로 적어주면 퀄리티가 높아집니다.\n\n---\n\n4️⃣ 나노바나나로 이미지 수정\n밋밋한 이미지는 구글 슬라이드 안에서 나노바나나로 수정할 수 있습니다.\n스톡 이미지 검색·교체도 가능합니다.\n\n---\n\n이제 슬라이드는 AI한테 맡기고\n우리는 내용과 전달에만 집중하면 됩니다.\n\n앞으로도\n제가 직접 써보고, 실무에 진짜 도움 됐던 AI 사용법\n정리해서 계속 공유할게요.\n\n---\n\n\"제미나이 + 노트북LM으로 고퀄리티 PPT 10분컷\"\n\n강의 영상 만들다 보면 \n꼭 필요한 게 슬라이드 화면입니다.\n\n녹음·촬영·편집하기도 바쁜데\n슬라이드까지 직접 만들기엔 도저히 시간이 없습니다.\n\n이제, 슬라이드 직접 만들지 마세요.\n구글의 노트북 LM + 재미나이 조합이면 10분이면 끝납니다.\n\n주제만 AI에게 던지면\n자료 조사 → 구조 → 디자인까지 자동.\n외주 맡기면 몇십만 원 나올 퀄리티를\n무료로 바로 뽑아줍니다.\n\n저처럼 디자인 감각 없는 사람도\n바로 따라 할 수 있게,\n노트북 LM·재미나이 사용법을\n4단계로 정리했습니다.\n\n---\n\n3️⃣ 구글 슬라이드에서 디테일 수정\n‘슬라이드로 내보내기’ 버튼을 누르면\n구글 슬라이드에서 폰트나 배치를 내 맘대로 수정할 수 있습니다.\n파워포인트(.pptx)로 다운로드도 가능합니다.",
+      "created_at": "2026-01-27 18:37:52",
+      "images_count": 0,
+      "post_url": "https://www.threads.com/@lazypencil_lab/post/DUAmXxokePp",
+      "images": [],
+      "is_merged_thread": true,
+      "original_item_count": 6,
+      "sequence_id": 259,
+      "crawled_at": null,
+      "sns_platform": "threads"
+    },
+    {
+      "code": "DS35eB9j40f",
+      "root_code": "DS4TktPD6BP",
+      "username": "eddmpython",
+      "full_text": "파이썬 편하게 공부하고 싶으신분들 eddmpython으로 모여주세요~ㅎ",
+      "created_at": "2025-12-30 13:00:12",
+      "images_count": 0,
+      "post_url": "https://www.threads.com/@eddmpython/post/DS35eB9j40f",
+      "images": [],
+      "is_merged_thread": true,
+      "original_item_count": 1,
+      "sequence_id": 260,
+      "crawled_at": null,
+      "sns_platform": "threads"
+    },
+    {
+      "code": "DUIde2xEySD",
+      "root_code": "DUIde6ZE-Zy",
+      "username": "guuu.dev",
+      "full_text": "비용 걱정 없는 사용량?\n\n“API 비용 안 내도 되잖아”라고 생각할 수 있어 💸\n근데 현실은 반대야.\n이미 프론티어 상용 모델들이 가성비 면에서 오픈 모델을 오래전에 앞질렀어.\nGPT-OSS 20B만 해도 16GB GPU가 필요하고\n5060 Ti급에서 돌려보면 토큰 출력 속도에서 바로 실망하게 돼 😅\n120B 모델은 80GB VRAM이 있어야 하는데\n가격을 보면 한숨만 나와\n\n---\n\n성능의 한계\n\n운 좋게도 나는 120B 모델을 쓸 수 있는 환경이지만,\nClaude Opus 4.5랑 비교하면 작업 시간이 최소 3배는 걸려 ⏱️\n한 번에 제대로 처리하는 게 쉽지 않고\n상용 모델은 2번이면 끝날 일을\n로컬 LLM은 4번, 5번 시도하는 느낌\n이게 쌓이면 피로도가 꽤 커. 저절로 손이 안가.\n역체감이 쩔거든 🥲\n\n---\n\n토큰을 많이 쓰는 작업일수록 품질이 중요해.\n\n토큰을 많이 쓴다는 건 결국 컨텍스트가 길어진다는 뜻이잖아 \n근데 로컬 LLM은 컨텍스트가 커질수록 품질이 너무 빨리 무너져.\n길게 보고, 여러 조건을 동시에 처리하는 코딩 작업에서는 이 차이가 생각보다 훨씬 크게 느껴져.\n\n---\n\n보안 이야기\n\n물론 법이나 회사 정책,\n혹은 진짜 민감한 개인 정보라면 로컬이 의미 있을 수 있어 🔐\n근데 현실적으로는 우리가 이미 클라우드에\n사진 문서 일정 메일 다 올려두고 살고 있잖아.\n결국 편리함 앞에서 어느 정도는 타협하게 돼.\n\n---\n\nLocal LLM은 재미있고, 실험적이고, 배울 건 많아.\n하지만 대부분의 사람에게는 시간, 비용, 효율 면에서 상용 모델이 훨씬 나아.\n로컬은 취미나 연구용, 일은 그냥 잘 되는 도구로 하는 게 마음 편해 😌\n\n---\n\n끝으로 GPT-OSS 20B ,120B 돌릴 장비 구매 고민하는 사람들한테 한 마디 하자면, 비용 뽕 뽑는 것 보다 API 비용이 더 빨리 내려갈걸? 😁\n\n---\n\n대부분의 사람들은 Local LLM을 쓸 이유가 없어!\n\nLocal LLM 때문에 맥 미니나 그래픽카드 사서 돌려볼까 고민하는 사람들 꽤 있을 거야 🤔\n근데 솔직히 말하면, 대부분은 결국 포기하게 돼.\nGPT-OSS 120B 모델을 꽤 미친 듯이 써본 입장에서\n왜 그런지 한 번 정리해볼게.",
+      "created_at": "2026-01-30 19:54:07",
+      "images_count": 0,
+      "post_url": "https://www.threads.com/@guuu.dev/post/DUIde2xEySD",
+      "images": [],
+      "is_merged_thread": true,
+      "original_item_count": 7,
+      "sequence_id": 261,
+      "crawled_at": null,
+      "sns_platform": "threads"
+    },
+    {
+      "code": "DUIEKu_gZ64",
+      "root_code": "DUIEGGAAagR",
+      "username": "hinjiroffffff",
+      "full_text": "1. 이탈 방지 프롬프트\n→ 시청지속시간을 높이는데 도움을 줍니다.\n\n---\n\n2. 청출어람 프롬프트\n→ 부족한 부분을 이해하고 더 나은 영상을 만듭니다.\n\n---\n\n3. 답변 퀄리티를 200% 높이는 방법\n→ 1번과 2번 프롬프트에서 지정한 페르소나가 다릅니다. 한 채팅창에서 물어보면 Ai가 혼동하고 답변의 퀄리티가 떨어집니다. 새로운 페이지를 열어 각 전문가를 따로 만난다는 생각으로 대화해주세요.\n\n---\n\n프롬프트 하나로 영상을 딸깍하고 만들 수 없습니다. '사람들이 왜 이 영상에서 반응했을까?'를 스스로 고민하고 학습하는 과정이 꼭 필요합니다. \n\n위 프롬프트는 참고하고 싶은 영상을 공부한다는 마음으로 사용해주시면 좋겠습니다. 다른 크리에이터가 열심히 만든 영상을 카피하기 위해 사용되지 않았으면 합니다.\n\n저를 팔로우 하시고, 다른 글도 읽어보세요.\n유튜버의 시행착오를 예방할 수 있을거예요 🫶\n\n@hinjiroffffff\n\n---\n\n참고하고 싶은 유튜브 영상 링크를 \nGemini에게 전달하세요.\n\n그리고 이 프롬프트를 넣으면\n해당 영상을 분석하고 떡상한 이유를 모조리 추출합니다.\n\n유튜버가 바로 써먹을 수 있는 프롬프트를 정리했습니다.",
+      "created_at": "2026-01-30 16:12:55",
+      "images_count": 0,
+      "post_url": "https://www.threads.com/@hinjiroffffff/post/DUIEKu_gZ64",
+      "images": [],
+      "is_merged_thread": true,
+      "original_item_count": 5,
+      "sequence_id": 262,
+      "crawled_at": null,
+      "sns_platform": "threads"
+    },
+    {
+      "code": "DUKPelTgSau",
+      "root_code": "DUKPfu1Aa6T",
+      "username": "hinjiroffffff",
+      "full_text": "유튜버에게 필요한 확장 프로그램을 정리했습니다.\n알아내는데 300일이 걸렸지만, 여러분은 바로 사용하세요.\n\n---\n\n1. vidiQ\n→ 감이 아닌 데이터로 유튜브 트렌드를 읽으세요. 내 분야에서 현재 어떤 주제의 조회수가 잘 나오는지 알 수 있어요.\n\n---\n\n2. Youtube Summary\n→ 영상의 대본을 바로 추출할 수 있어요. 가장 중요한 대본 초반 10초를 보고 공부해보세요.\n\n---\n\n3. Thumbs up, thumbnail preview\n→ 클릭률을 높일 수 있어요. 내 썸네일이 실제 유튜브 홈 화면에서 어떻게 보이는지 미리 확인할 수 있거든요.\n\n---\n\n4. Screenshot youtube\n→ 클릭 한 번으로 유튜브 화면을 캡쳐할 수 있어요. 깔끔하게 잘려서 자주 사용 중이에요.\n\n---\n\n5. Ostendo\n→ 참고하고 싶은 썸네일이 있나요? 클릭 한 번으로 썸네일을 다운로드, 복사 할 수 있어요.\n\n---\n\n매우 만족하면서 사용 중인 프로그램들이에요.\n저장하고 꼭 사용해보시는 것을 추쳔드릴게요!\n\n저를 팔로우 하시고, 다른 글도 읽어보세요.\n유튜버라면 도움이 될 글을 쓰고 있어요 🫶",
+      "created_at": "2026-01-31 12:30:14",
+      "images_count": 1,
+      "post_url": "https://www.threads.com/@hinjiroffffff/post/DUKPelTgSau",
+      "images": [],
+      "is_merged_thread": true,
+      "original_item_count": 7,
+      "sequence_id": 263,
+      "crawled_at": null,
+      "sns_platform": "threads"
+    },
+    {
+      "code": "DUK7uIXkklz",
+      "root_code": "DULCfk1EqLV",
+      "username": "starcomo",
+      "full_text": "개발 초보 고수들에게..\n\n개발 개꿀팁 하나 더 줄게 ㅋㅋ\n이거 완전 대박이야 ㅋ\n\nAi한테 뭐 새로 만들어달라고 할때\n기획을 3번 업그레이드 해달라고해",
+      "created_at": "2026-01-31 18:56:50",
+      "images_count": 0,
+      "post_url": "https://www.threads.com/@starcomo/post/DUK7uIXkklz",
+      "images": [],
+      "is_merged_thread": true,
+      "original_item_count": 1,
+      "sequence_id": 264,
+      "crawled_at": null,
+      "sns_platform": "threads"
+    },
+    {
+      "code": "DUQTVuyD1V9",
+      "root_code": "DUQeA6CDzDP",
+      "username": "stormleehj",
+      "full_text": "뭔가는 하고 있는데 체계적인 기록은\n귀찮아서 잘 못하는 저는 요새 이렇게 합니다.\n\n\"안티그라비티 + 옵시디언\"\n\n요새는 안티그라비티에서 주로 작업하는데\n그 안에서 오고 간 채팅 이력과 커밋 기록들을\n일자별로 알아서 정리해 달라고 합니다.\n\n최근에서야 옵시디언을 써보면서 알게 된 건데\n로컬 폴더 구조라 안티그라비티와 연결하기도 편하고\ngit으로 관리할 수 있다는 장점도 있는데요.\n\n노션도 좋지만 노션 AI까지 쓰기에 부담이면\n안티그라비티+옵시디언도 꽤 괜찮은 조합인 것 같습니다.",
+      "created_at": "2026-02-02 20:59:25",
+      "images_count": 1,
+      "post_url": "https://www.threads.com/@stormleehj/post/DUQTVuyD1V9",
+      "images": [],
+      "is_merged_thread": true,
+      "original_item_count": 1,
+      "sequence_id": 265,
+      "crawled_at": null,
+      "sns_platform": "threads"
+    },
+    {
+      "code": "DUQf50aEXFZ",
+      "root_code": "DUQf51ekbqu",
+      "username": "mega_fluke",
+      "full_text": "oh-my-ag 에 공감 많이해주셔서 감사합니다🙇‍♂️\n\n그래서 \n바이브코딩으로 시작 하시는분들 \n개발자분들 모두에게 도움될만한걸 가져왔어요. \n\n프로젝트 하나시작하려면 세팅만 한세월 걸리는데\n웹 풀스택 ~ flutter 기반 모바일까지 딸깍 할수있는걸\n들고왔습니다. \n(사실 이미 공유했는데 설명도 대충하고 oh-my-ag에 묻혀서 아무도모르시는듯..)\n속는셈치고라도 써보시면 빠른세팅에 기분이좋아질거에요..\n\n---\n\n새 프로젝트 시작할 때마다 auth, DB, infra 처음부터 세팅하는거 지긋지긋해서 만들었습니다.\n그냥 AI한테 맡기자니 뭐 슬롯머신도아니고 \n구조도 없는 개판된 코드보면 속터져서 \nAI 에이전트 부려먹기좋은 구조로 만들었고 잘 쓰고있습니다.\n\n---\n\n(이 레포가 필요한 이유 = 안 쓰면 나중에 고생함)\n일단 아무것도 모르고 시작해도 AI가 땡깡피우는 걸 \n방지하는 가이드라인이랄까요..\n그리고 oh-my-ag 와 잘 맞게 설계돼있어서 같이쓰시면 AI가 헛소리를 좀 덜하는걸 보실거에요\n추가로..\nBun 기반의 속도와 Pic2Cook 같은 실제 프로젝트를 돌리며 검증된 아키텍처입니다 '_'\n\n다시한번 감사합니다🙇‍♂️\n\n스레드 좋아요보다 깃 스타가 더좋아요..! ⭐️🤤\nhttps://github.com/first-fluke/fullstack-starter",
+      "created_at": "2026-02-02 22:49:12",
+      "images_count": 0,
+      "post_url": "https://www.threads.com/@mega_fluke/post/DUQf50aEXFZ",
+      "images": [],
+      "is_merged_thread": true,
+      "original_item_count": 3,
+      "sequence_id": 266,
+      "crawled_at": null,
+      "sns_platform": "threads"
+    },
+    {
+      "code": "DUL4ogEko_E",
+      "root_code": "DUL4o2SEm78",
+      "username": "mega_fluke",
+      "full_text": "PM / FE / BE / Mobile / QA / Debug\n프롬프팅 하나로 쭉 이어서 가능합니다. \n\nGemini pro 3.0으로도 꽤나 잘돼요. (쿼타 박살나서 opus 못쓴지 사흘째)\n한 번 테스트해보시고 비난이던 칭찬이던 관심부탁드립니다. 피드백 반영하여 계속 개선 중입니다.\n\n코드는 거짓말을 하지않지만.. 이놈들은 좀 하니까..\n\nGitHub\nhttps://github.com/first-fluke/oh-my-ag\n\n---\n\n아 그리고 AI-native 로 서비스 개발하면서 만든\n풀스택 스타터 템플릿도 같이 공유합니다!\n\nhttps://news.hada.io/topic?id=25691\n\n---\n\n요즘 안티그래비티 저만 이럽니까\n클로드 쿼타는 순식간에 녹고\nGemini로 돌리면 Skill이나 Rule도 무시하고\n시키지도 않은거 하고 자랑하고 무한반복돌고..\n\n클코에선 서브에이전트로 병렬처리도 되는데 안티그래비티에서는 왜안되냐!!!\n\n싶어서 안티그래비티용 서브 에이전트 오케스트레이터 를 만들었습니다🤞🏻",
+      "created_at": "2026-02-01 03:49:05",
+      "images_count": 0,
+      "post_url": "https://www.threads.com/@mega_fluke/post/DUL4ogEko_E",
+      "images": [],
+      "is_merged_thread": true,
+      "original_item_count": 3,
+      "sequence_id": 267,
+      "crawled_at": null,
+      "sns_platform": "threads"
+    },
+    {
+      "code": "DTUq6Lpj-zt",
+      "root_code": "DTUrUKhCfkX",
+      "username": "qjc.ai",
+      "full_text": "2026년 1월 9일, AI 코딩 도구 판도가 하루 만에 뒤집혔습니다.\n\n한 회사는 문을 닫았고, 한 회사는 문을 열었어요.\n\n---\n\n1/ 새벽 2시 20분이었습니다.\n\nAnthropic이 OpenCode의 Claude Max OAuth 연결을 직접 차단했어요.\n\nOpenCode가 뭐냐면요. GitHub 스타 5만 8천 개 받은 오픈소스 AI 코딩 도구예요. Claude Code 무료 대안이라고 개발자들 사이에서 엄청 화제였거든요.\n\n그 핵심 기능을 Anthropic이 칼로 잘라버린 거예요.\n\n---\n\n2/ GitHub Issue가 바로 올라왔어요.\n\n298명이 좋아요를 눌렀습니다.\n\n\"왜 막는 거냐\" \"어제까지 잘 됐는데\" \"구독 결제했는데 이게 뭐냐\"\n\n커뮤니티가 발칵 뒤집혔어요.\n\n---\n\n3/ 그런데 같은 날 반전이 있었습니다.\n\n오후 1시 40분.\n\nOpenCode 창시자 dax가 트윗을 올렸어요.\n\n\"we are working with openai\"\n\nOpenAI와 협력 중이라고요.\n\n---\n\n4/ 그리고 7시간 뒤.\n\nOpenCode v1.1.11이 출시됐습니다.\n\n릴리즈 노트 첫 줄이요.\n\n\"Add Codex authentication support\"\n\nChatGPT Plus랑 Pro 구독으로 OpenCode를 쓸 수 있게 된 거예요.\n\n우회가 아니에요. 공식이에요.\n\n---\n\n5/ 같은 날 벌어진 일을 정리하면요.\n\nAnthropic은 서드파티 접근을 막았어요.\n\nOpenAI는 서드파티와 손을 잡았어요.\n\n완전히 반대 방향이에요.\n\n---\n\n6/ 근데 진짜 궁금한 건 따로 있잖아요.\n\nOhMyOpenCode 아시죠?\n\nOpenCode를 스테로이드 맞은 수준으로 업그레이드해주는 플러그인이에요.\n\n한국인 개발자가 만들었고요. GitHub 스타 9천 5백 개예요.\n\nClaude가 막혔으면 이것도 못 쓰는 거 아니냐고요.\n\n---\n\n7/ 공식 FAQ를 확인해봤습니다.\n\n\"You can use Oh My OpenCode with just one provider.\"\n\n한 프로바이더만 있어도 된대요.\n\nClaude 없어도 돼요.\n\n---\n\n8/ 이렇게 설치하면 됩니다.\n\nbunx oh-my-opencode install --claude=no --chatgpt=yes\n\nChatGPT만으로 작동해요.\n\n메인 에이전트 시지프스가 GPT 5.2로 돌아가요.\n\n---\n\n9/ 성능 차이가 있냐고요.\n\n솔직히 말씀드릴게요. 있어요.\n\n복잡한 리팩토링에서 Claude Opus 4.5가 더 나아요. 컨텍스트 길이도 200k 대 128k로 Claude가 길고요.\n\n근데요.\n\n---\n\n10/ OhMyOpenCode의 핵심 기능은 모델 독립적이에요.\n\nTodo Continuation 있죠. 에이전트가 중간에 멈추면 자동으로 다시 시작하는 거요.\n\nRalph Loop 있죠. 작업 완료될 때까지 자동 반복하는 거요.\n\n이거 다 GPT로도 똑같이 돼요.\n\n---\n\n11/ 가장 좋은 조합을 알려드릴게요.\n\nChatGPT랑 Gemini 같이 쓰는 거예요.\n\nbunx oh-my-opencode install --claude=no --chatgpt=yes --gemini=yes\n\n시지프스는 GPT 5.2가 맡고요.\n\n프론트엔드 작업은 Gemini 3 Pro가 맡아요.\n\n병렬 처리가 더 다양해집니다.\n\n---\n\n12/ 그럼 Claude Code는 어떻게 해야 하냐고요.\n\nClaude Code는 여전히 가장 안정적인 선택이에요.\n\nAnthropic 공식이니까요. 차단당할 일이 없어요.\n\n만든 사람이 Boris Cherny라는 분인데요. Anthropic 엔지니어예요.\n\n---\n\n13/ 이 분 방식이 검증되어 있어요.\n\n터미널 5개 열어놓고 Git Worktree로 병렬 개발해요.\n\n코딩 끝나면 /clear로 대화 기록을 지워요.\n\n그다음 새로운 눈으로 검증해요.\n\n이 피드백 루프가 있으면 품질이 2배에서 3배 올라간다고 했어요.\n\n---\n\n14/ 상황별로 정리해드릴게요.\n\nClaude 구독만 있다. Claude Code 쓰세요. Boris 방식 따라하시면 돼요.\n\nChatGPT 구독만 있다. OpenCode에 OhMyOpenCode 붙여서 쓰세요. GPT로도 충분해요.\n\n둘 다 있다. Claude Code 메인으로 쓰고 OpenCode를 서브로 쓰세요.\n\n---\n\n15/ 비용도 비교해드릴게요.\n\nClaude Code는 Claude Max 월 100달러예요. Pro는 월 20달러고요.\n\nOpenCode에 ChatGPT 붙이면 ChatGPT Plus 월 20달러예요.\n\nOpenCode에 Gemini 붙이면 Google One AI Premium 월 20달러예요.\n\nOpenCode 자체는 무료예요.\n\n---\n\n16/ 근데 OpenCode에 문제가 있긴 해요.\n\nCPU 사용량 폭주 이슈가 계속 보고되고 있어요.\n\n어떤 분은 OpenCode 두 개 프로세스가 CPU 1030%를 먹고 있었대요.\n\n쓰실 거면 CPU 모니터링 하세요.\n\n---\n\n17/ 결론이요.\n\n이틀 만에 판도가 바뀌었어요.\n\n가장 안전한 선택은 Claude Code예요. 공식이니까요.\n\n비용 아끼고 싶으면 OpenCode에 ChatGPT 붙이세요. 이것도 이제 공식이에요.\n\nClaude Max로 OpenCode 쓰려던 분들은요. 지금은 우회해야 해요. 언제 또 막힐지 몰라요.\n\nChatGPT로 갈아타는 게 속 편해요.\n\n---\n\n18/ 여러분은 AI 코딩 도구 어떤 조합으로 쓰고 계세요?\n\nClaude Code vs OpenCode 경험담 들려주세요.",
+      "created_at": "2026-01-10 17:10:56",
+      "images_count": 0,
+      "post_url": "https://www.threads.com/@qjc.ai/post/DTUq6Lpj-zt",
+      "images": [],
+      "is_merged_thread": true,
+      "original_item_count": 19,
+      "sequence_id": 268,
+      "crawled_at": null,
+      "sns_platform": "threads"
+    },
+    {
+      "code": "DTjxDSCkeae",
+      "root_code": "DTk7flMEgrz",
+      "username": "gogosing__77",
+      "full_text": "나는 Gemini가 처음 나왔을 때부터 써왔다.\n\n대부분은 아직도 “상세페이지 만들어줘”에서 끝난다.\n이거 공개 안 하려고 했는데…\n\nGemini에 아래 7개 질문만 던지면\n상세페이지 견적 40만 원을 안 써도 된다.\n\n---\n\n상세페이지 비용이 비싼 이유는\n디자인 실력 때문이 아니다.\n\n기획이 없기 때문이다.\n그래서 대부분은\n구조도 없이 디자인부터 시작한다.\n\n나는 그 기획을\nGemini에게 먼저 시킨다.\n\n아래 질문은\n그대로 복붙해서 바로 쓰는 질문이다.\n\n---\n\n1/ 역할부터 설계자로 고정해라\n“너는 전환율 높은 상세페이지를 설계하는 마케팅 전략가야.\n디자인을 그리기 전에,\n이 페이지가 왜 팔려야 하는지를 구조로 먼저 정리해줘.\n지금은 전체 페이지가 아니라 판매 구조 설계가 목적이야.”\n\n---\n\n2/ 상품을 설명하지 말고 상황으로 정의해라\n“이 상품은 [상품명]이고,\n타겟은 [타겟]이야.\n이 사람들이 지금 가장 불편해하는 상황 3가지를 먼저 정리하고,\n왜 아직 해결되지 않았는지도 같이 설명해줘.”\n\n---\n\n3/ 상세페이지 전체 흐름을 먼저 짜게 해라\n“상세페이지를 아래 흐름으로 설계해줘.\n\n1.문제 인식\n2.공감 증폭\n3.잘못된 선택 지적\n4.해결책 제시\n5.기대 결과\n6.신뢰 근거\n7.행동 유도\n각 구간이 왜 필요한지도 함께 설명해줘.”\n\n---\n\n4/ 각 섹션 문장을 초안으로 뽑아라\n“위 흐름에 맞춰\n각 섹션에 들어갈 문장을 초안으로 작성해줘.\n한 섹션당 2~3문장,\n과장 없이 읽히는 말투로.”\n\n---\n\n5/ 작업지시서 수준으로 정리해라\n“이제 이 페이지를 디자인한다고 가정하고,\n각 섹션별로\n목적 / 강조 포인트 / 시각적으로 표현해야 할 핵심을 정리해줘.\n디자이너에게 그대로 전달할 수 있을 정도로.”\n\n---\n\n6/ 텍스트만으로도 바로 쓰게 정리해라\n“위 내용을\n텍스트 중심 상세페이지로 바로 써먹을 수 있게\n문단 간격, 문장 길이, 강조 포인트를 고려해 다시 정리해줘.\n노션·업페이지·블로그에 바로 붙일 수 있는 형태로.”\n\n---\n\n7/ 비용이 줄어드는 이유를 요약해라\n“왜 이 과정을 거치면\n상세페이지 견적 40만 원을 안 써도 되는지\n초보자도 이해할 수 있게 3줄로 요약해줘.”\n\n대부분은\n“상세페이지 만들어줘”에서 끝난다.\n\n하지만 이렇게 질문하면\n기획이 먼저 완성된다.\n\n그래서 디자인은\n처음부터 새로 만드는 일이 아니라\n정리하는 일이 된다.\n\n결과적으로\n비용이 줄어든다.",
+      "created_at": "2026-01-16 13:53:13",
+      "images_count": 0,
+      "post_url": "https://www.threads.com/@gogosing__77/post/DTjxDSCkeae",
+      "images": [],
+      "is_merged_thread": true,
+      "original_item_count": 9,
+      "sequence_id": 269,
+      "crawled_at": null,
+      "sns_platform": "threads"
+    },
     {
       "code": "DSEhurTk84N",
       "root_code": "DSEhu-lE8kp",
@@ -3894,68 +4149,6 @@ const snsFeedData = {
       "sns_platform": "threads"
     },
     {
-      "index": 1,
-      "code": "7423556087586603009",
-      "username": "HOJUN NAM",
-      "created_at": "2026-02-01 11:41:34",
-      "time_text": "5일",
-      "full_text": "1번 4번 😱",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7423556087586603009?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7423556087586603009%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "Management support Of Economychosun at Chosunbiz",
-      "images": [
-        "https://media.licdn.com/dms/image/v2/D5622AQGej2_npfQgkg/feedshare-shrink_800/B56ZwXE7SDIwAg-/0/1769913693490?e=1772064000&v=beta&t=7OnlTkkjCzzif5rf0Sh_X_NAbfGQQ2kG3zgCfXGTokU"
-      ],
-      "user_link": "https://www.linkedin.com/in/ACoAAAf6XY0B7OOmUGuE03uR5HSlffa5td7-K_g",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "image",
-      "source": "network",
-      "sequence_id": 145,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/6c05080b81132a7f671d4a166fd59173.jpg"
-      ]
-    },
-    {
-      "index": 2,
-      "code": "7424206243277381632",
-      "username": "정구봉 Goobong Jeong",
-      "created_at": "2026-02-03 06:45:03",
-      "time_text": "3일",
-      "full_text": "팀어텐션과 같이 성장할 분들을 만나기 클럽을 만들었습니다. \"10x to 100x 클럽\", \"Claude Code as OS 클럽\". 제가 찾아낸 성장의 방정식은 \"Show and Prove\"입니다.\n\n1. 10x to 100x 클럽은 개발자를 위한 자리입니다.\n토큰 소비 철학, 모델 선택 방법, 자동화된 개발 시스템, Ralph 같은 long running agent 등. 사전에 선정된 주제 중 하나를 골라 관점을 공유합니다.\n\n10x 하고 있다면 이미 테크닉은 충분합니다. 우리에게 필요한 것은 성장할 수 있는 환경입니다. 만드는 비용이 극도로 낮아진 지금, 진짜 필요한 건 대담한 아이디어와 서로를 지탱하는 커뮤니티입니다.\n신청 폼: https://lnkd.in/guhTYBv7\n\n2. Claude Code as OS 클럽은 비개발자를 위한 자리입니다.\nAI를 나만의 OS로 만든 경험, 조직의 AI Adoption Rate 올린 경험, 비개발 영역에서 Claude Code 활용한 경험 등. 사전 선정된 주제를 바탕으로 관점을 공유합니다. 특히 주변 PM/대표님들에게 비슷한 니즈를 많이 들어서 만들게 되었습니다.\n\nClaude Code 비개발 활용에는 레벨이 있습니다.\n1. MCP로 Slack, Notion, Jira 등 툴을 연결해서 컨텍스트 한 번에 처리하기\n2. 로컬에 컨텍스트 쌓고 Skills로 워크플로우 자동화하기\n3. 나에게 최적화된 SW(예, Pencil)를 만들어서 생산성 10배 올리기\n\n레벨 2에서 3으로 올리는 챌린지를 같이 할 동료를 찾습니다.\n\n신청 폼: https://lnkd.in/gXXdugBy\n\n3. 두 달동안 격주로 본인의 관점을 발제하고, 각자 프로젝트 업데이트를 공유합니다.\n서로의 관점에 자극받고, 프로젝트 챌린지로 밀도 있게 성장하고 싶습니다.\n\n지난 2개월 동안, AI 빌리버들과 피자 먹는 모임을 했습니다. 덕분에 Anthropic 후원 스킬톤을 기획하고 스피커로 모실 수 있었어요. 이 끈끈한 관계를 확장하고 싶어서 클럽을 엽니다.\n\n서로 챌린지하면서 나만의 관점을 날카롭게 깎아낸다면, 10배 더 성장할 수 있다고 생각합니다.\n내 관점을 더 단단하게 만들 분들, 좋은 리얼 케이스를 같이 공유할 분들을 만나고 싶습니다.",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7424206243277381632?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7424206243277381632%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "Claude Code for all of your work",
-      "images": [
-        "https://media.licdn.com/dms/image/sync/v2/D5627AQEqFSORFLXRqg/articleshare-shrink_1280_800/B56ZwfOFeEKYAQ-/0/1770050314434?e=1770976800&v=beta&t=R7a-NTo46WXEK7yWR_v1LOlt8RKceSIq7t1sdeoIwNU"
-      ],
-      "user_link": "https://www.linkedin.com/in/ACoAACY7KJQBDtSTk6IuIwZY6ntBGJx1fCYwsYI",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "image",
-      "source": "network",
-      "sequence_id": 151,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/e9c810d98affadf54e2a8ccbc20cc634.jpg"
-      ]
-    },
-    {
-      "index": 3,
-      "code": "7423236500034764800",
-      "username": "Soojung Shin (신수정)",
-      "created_at": "2026-01-31 14:31:38",
-      "time_text": "6일",
-      "full_text": "기록하지 않은 커리어는 자산이 되지 않는다--\n\n장면1. 얼마 전, 작년 말 대기업 임원으로 퇴임하신 50대 한 분이 찾아오셨다.\n글로벌 대기업과 국내 대기업을 두루 경험했고, 전문성도 탄탄한 분이었다. 나는 그분께 책 한 권을 써보시라고 권했다. 그러자 이런 답이 돌아왔다. “쓸게 마땅치 않습니다. 제가 기록해 놓은 게 없어서요.” 회사에 다닐 때 노트에 메모는 했지만, 퇴임하면서 다시 쓸 일도 없을 것 같아 모두 버리셨다는 것이다.\n\n장면2. 2년 전쯤, 또 다른 분이 찾아오셨다. 이분 역시 글로벌 컨설팅 펌을 거쳐 대기업 임원으로 퇴임한 50대였다. 차이가 있다면, 이분은 임원 생활 3년 동안 자신이 시도한 것, 배운 것, 좌절, 고민의 흔적을 모두 기록해 두셨다. 그 기록을 바탕으로 DX 관련 책을 쓰셨다. 읽어보니 단번에 알 수 있었다. ‘아, 이건 현장에 있었던 사람이 쓴 책이다.’ 이 책은 곧 강의로 이어졌고, 강의는 다시 자문과 프로젝트로 연결되었다. 퇴임 이후의 두 번째 커리어가 자연스럽게 열렸다.\n\n장면3. 최근에도 여러 대기업에서 신사업을 담당했던 분이 퇴임하며 책을 쓰셨다. 내게 추천사 요청이 있어 읽어보았는데 10년 가까운 경험이 놀라울 만큼 생생했다. 사실은 실패 내용이 대부분이라 오히려 신사업을 도전하는 후배들에게 실전적인 도움이 될 만한 기록이었다. 어떻게 가능했을까? 역시 답은 같았다. “틈틈이 기록해 두었습니다.”\n\n물론, 책을 쓴다고 베셀이 될 가능성은 매우 매우 낮다. 그러나 분명 후배들이나 사회에 도움이 되고 자신에게도 새로운 명함이 된다. 작더라도 어떤 가능성이 올지 모른다.\n\n그래서 나는 40대 이상의 직장인을 만나면 반드시 ‘기록’을 이야기한다. 일하면서 시도, 성공한 것, 실패한 것, 후회, 배운 점. 이를 직장생활 중 SNS에 올리라는 것은 아니다. 이를 원치 않는 기업이 많고 비밀유지 이슈도 있기 때문이다.\n\n그러나 개인 블로그든, 비공개 메모든 다양한 방식으로 남길 수 있다. 짧은 메모 형태라도 좋다. 중요한 건 남겨두는 것이다. 이 기록은 언젠가 책의 재료가 되고, 강의의 자료가 되고, 타인을 돕고 나눌 수 있는 자산이 된다.\n\n수십 년 직장생활을 했는데 남길 수 있는 역사와 전문성이 없다면, 그건 개인의 커리어에 문제가 있을 수도 있지만 기록의 부재일 가능성이 크다.\n\n그리고 한 가지를 더 강조한다. 반드시 디지털로 기록하라고. 나 역시 과거에는 노트에 수없이 적었다. 지금은 거의 남아 있지 않다. 그래서 요즘은 노트에 적은 것도 반드시 사진을 찍어 업로드한다.\n\n사람의 기억은 믿을 수 없다. 기억만으로 쓰는 회고는 과거를 미화하거나 왜곡하기 쉽다. 최근의 기억만 과도하게 부각되기도 한다. 그래서 기록이 필요하다.\n\n독서도 마찬가지다. 나 역시 책을 많이 읽었지만 기록하지 않던 시절의 책들은 거의 인용할 수 없다. 어느 순간부터 간략히 기록하기 시작했고, 지금은 약 600권의 독서 메모가 쌓여 있다. 책을 쓰거나 아이디어가 떠오를 때 검색해서 바로 활용한다.\n\n처음부터 길게 쓰려고 하면 지속되지 않는다. 하루 혹은 일주일에 3~4줄이면 충분하다. 젊을수록 좋다. 하지만 그렇지 않더라도 40대 이상이라면 반드시 시작해야 한다.\n\n기록은 과거를 정리하는 일이 아니라, 미래의 선택지를 늘리는 일이다.\n\np.s. 댓글은 서로에게 도움됩니다.",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7423236500034764800?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7423236500034764800%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
-      "images": [],
-      "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "text",
-      "source": "network",
-      "sequence_id": 143,
-      "sns_platform": "linkedin"
-    },
-    {
-      "index": 4,
       "code": "7424635662231945216",
       "username": "BZCF - 비즈까페",
       "created_at": "2026-02-04 11:11:24",
@@ -3967,83 +4160,16 @@ const snsFeedData = {
         "https://media.licdn.com/dms/image/v2/D5622AQHfutx8ZVlmdA/feedshare-shrink_2048_1536/B56ZwmayopIQAk-/0/1770171083606?e=1772064000&v=beta&t=vkHMUdfk0b_f7zu_kH-OIptybdMmfinki-uUN6ZrZw4"
       ],
       "user_link": "https://www.linkedin.com/in/ACoAADosSpABPU4--68Ki5nk1NUfCtpau6AMoJs",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "image",
       "source": "network",
-      "sequence_id": 154,
+      "sequence_id": 155,
       "sns_platform": "linkedin",
       "local_images": [
         "web_viewer/images/93049d93a0b3b13bfcdaeea191adc9fe.jpg"
       ]
     },
     {
-      "index": 5,
-      "code": "7424016182380470272",
-      "username": "윤썸원",
-      "created_at": "2026-02-02 18:09:49",
-      "time_text": "4일",
-      "full_text": "<요즘 직장인분들에게 공유하고 싶은 말들>\n\n1. AI 발전 등으로, 이젠 ‘기술’보다 ‘태도’가 더 중요해지고 있습니다. 그리고 기술은 점점 더 쉽게 배울 수 있지만, 좋은 태도를 가지는 건 그보다 훨씬 어렵습니다.\n\n2. 이젠 스스로를 ‘1인 법인’으로 생각하고, 대우하세요. 그래야 회사 밖에서도 경쟁력을 가질 수 있습니다.\n\n3. 일을 할 땐 ‘공적 마인드’를 갖추는 것이 중요합니다. 자신의 사적 이익만을 쫓는 사람보다 세상과 고객에게 기여한 사람이 결국엔 더 크게 성장하기 때문입니다.\n\n4. 워라밸만큼이나, 재미와 의미 사이에서의 균형을 찾아보세요. 의미만 추구하다 보면 지치기 쉽고, 너무 재미와 쾌락만 추구하다 보면 허무해지기 쉽습니다.\n\n5. 어떤 일을 할 땐 스스로 마감 시간을 정해보세요. 일은 스스로에게 주어진 시간 만큼 팽창합니다. 그래서 그게 어떤 일이든 마감 시간을 정해놓고 하면, 효율이 비약적으로 증가합니다. 드라마 <굿 파트너>의 작가, 최유나 변호사가 일하는 방법입니다.\n\n6. 체크리스트를 활용하세요. 체크리스트 없이 일한다는 건 뭐가 중요한지 모르고 일한다는 뜻입니다.\n\n7. 완벽주의는 가급적 빨리 버리고, 일단 끝내고 수정하세요. 그리고 뭐가 구린지 기록하고, 질문하세요.\n\n8. 레이 달리오가 강조하듯, ‘고통+성찰=발전’입니다. 고통을 성장의 기회로 만든 사람만이 크게 성장합니다.\n\n9. 도제와 독학, 둘 중 하나만으로는 불충분합니다. 진정한 대가가 되려면 둘 모두가 필요합니다.\n\n10. AI 시대에 진정한 차이는, 질문 능력과 현장 경험에서 나옵니다.\n\n11. 좋은 동료가 있으면 성공할 확률은 7배나 높아지고, 사람들과 좋은 대화를 하려면 미리 대화 주제를 준비해야 합니다.\n\n12. 온라인에선 더 격식을 차리는 게 좋습니다. 온라인에선 무례한 단답, 비꼬는 말, 공개적 비난은 스스로를 갉아먹는 일입니다.\n\n13. 리더는, 단순히 업무를 지시하는 게 아니라, 구성원들의 마음에 불을 지필 수 있어야 합니다.\n\n++썸원 멤버십 회원분들에게 전해드리는 ‘1월 썸원 노트(Notebook Lm)’를 토대로 작성했습니다.",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7424016182380470272?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7424016182380470272%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "프로젝트 썸원 Content Owner",
-      "images": [
-        "https://media.licdn.com/dms/image/v2/D5622AQE878gMVDlGKA/feedshare-shrink_1280/B56ZwdnYN3KsAc-/0/1770023388442?e=1772064000&v=beta&t=W2fdg89yxWfuv_ROstNZjqW1T2DODjm3t9TKzYPh1Ig"
-      ],
-      "user_link": "https://www.linkedin.com/in/ACoAACC2D84BJpzxT2C5mrDCykqwVjBnKqPntLo",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "image",
-      "source": "network",
-      "sequence_id": 147,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/2e907cc1ec5b9ac6bf98bb773ad23211.jpg"
-      ]
-    },
-    {
-      "index": 6,
-      "code": "7424076125506740224",
-      "username": "김덕중",
-      "created_at": "2026-02-02 22:08:00",
-      "time_text": "3일",
-      "full_text": "여러분들은 좋은 프롬프트를 어디에 저장하시나요? 메모장이나 개인의 노트에 저장하시기도 하겠지만 구글 Keep을 사용해 보세요. 저는 구글 Keep을 프롬프트 라이브러리로 사용하고 있습니다.\n구글 제미나이에서 특정 프롬프트를 사용할 일이 있으면 @ 를 입력하고 구글 Keep을 선택 한 다음, 저장된 프롬프트를 입력해서 바로 호출 할수 있습니다.\n(예시 입력 : @Google Keep 컨설팅 프롬프트 1을 사용해서 AI 실버산업을 분석해줘)",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7424076125506740224?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7424076125506740224%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "숙명여대 겸임교수, Firb AI 연구소장",
-      "images": [
-        "https://media.licdn.com/dms/image/v2/D5622AQG1dOpXuJv0cQ/feedshare-shrink_2048_1536/B56Zwed5M0KYAo-/0/1770037680142?e=1772064000&v=beta&t=YKthEOim3bgycDXLqBki6PhdzUxoNwKfJ0CvsSAK4iE"
-      ],
-      "user_link": "https://www.linkedin.com/in/ACoAAAwBOVMBDI50rE9wyD4tsMaGWkV-85Sqd50",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "image",
-      "source": "network",
-      "sequence_id": 149,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/a499121c349073d64617214a68ece641.jpg"
-      ]
-    },
-    {
-      "index": 7,
-      "code": "7424462704150634496",
-      "username": "최진규",
-      "created_at": "2026-02-03 23:44:08",
-      "time_text": "2일",
-      "full_text": "\"예쁜 쓰레기를 만드는 사람의 특징\"\n\n내가 TV 소프트웨어를 개발하던 시절, 우리 팀은 경쟁사와의 출시 경쟁에서 이기기 위해 6개월 동안 야근을 했다. 심지어 휴가조차 단 한 번도 쓰지 않았다. 우리는 가격 경쟁력을 갖추기 위해 당시 한국보다 인건비가 낮으면서 개발능력을 갖춘 인도, 베트남, 중국, 인도네시아 개발자들과 팀을 구성해 타임존을 활용한 릴레이 개발 체제를 만들었다. 즉, 한국에서 개발한 코드를 형상관리 서버에 올린 후 퇴근하면, 아침을 맞은 인도에서 테스트를 하는 방식이었다.\n\n우리의 자부심은 품질이었다. 일반적으로 제품의 결함이 완전히 0이 되는 경우는 없다. 하지만 우리 팀은 개발팀 내에 별도의 테스트 인력까지 추가 배치하며 품질에 집착했다. 그 결과 소프트웨어에 있어서는 사소한 우려사항을 제외하고 치명적 결함이 한 건도 없는 제품을 만들어냈다.\n\n그런데, 우리와 동일한 칩을 사용해 개발한 경쟁사 제품은 한 달 먼저 출시했다. 먼저 출시된 경쟁사 제품을 구매해서 분해하고 테스트해 보니, 개발자로서 양심이 있는지 의심스러울 정도로 미흡했다. 하드웨어는 양호했으나 소프트웨어는 완성도가 낮았다. 그런데 충격적인 것은 이 시점부터 내가 만든 제품군이 국내 1위 자리를 경쟁사에 내주기 시작했다는 것이다. 이유는 간단했다. 경쟁사는 시장을 고려한 제품이고, 우리는 기능적으로 높은 품질의 제품이었다. 우리가 완벽하다고 믿은 기능들은 고객이 원하는 것이 아니었다. 기술적으로는 우수했지만, 사야 할 이유가 없는 제품을 만든 것이다.\n\n예쁜 쓰레기를 만든 원인은 바로 ‘고객 없는 완벽주의’였다.\n\n다시는 이러한 실수를 하지 않기 위해 나는 일을 할 때 두 가지 질문을 한다.\n\n- 밸리데이션(Validation): 우리가 \"올바른 제품\"을 만들고 있는가?(Are we building the right product?)\n\n- 베리피케이션(Verification): 우리가 제품을 \"올바르게 만들고\" 있는가?(Are we building the product right?)\n\n많은 사람들이 나처럼 밸리데이션을 놓친다. 벨리테이션을 놓치고 베리피케이션에만 충실하면, 원치 않는 서비스를 훌륭하게 만드는 일이 벌어진다. 다시 말해, 목적지가 아닌 잘못된 곳에 빠르고 안전하게 잘 도착하는 일과 같다.\n\n아래 삽화를 보며 생각해보자.\n고객이 원하는 70% 품질의 서비스가, 아무도 원하지 않는 100% 품질의 서비스보다 가치 있다.",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7424462704150634496?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7424462704150634496%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "SK AX | Learning and Development, Growth",
-      "images": [
-        "https://media.licdn.com/dms/image/v2/D5622AQGWRCDGO-QWDQ/feedshare-shrink_2048_1536/B56Zwj9fG2KsAo-/0/1770129847193?e=1772064000&v=beta&t=4_cx23b7J_U1oJ-X_01HLPA9AsoesZG1aLNSBbcDRDE"
-      ],
-      "user_link": "https://www.linkedin.com/in/ACoAACO8Fs4BmCpyrtbIxshmSJfd_r8Puv1oL34",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "image",
-      "source": "network",
-      "sequence_id": 152,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/c47db89adf18ab19b997b88287d3c9b1.jpg"
-      ]
-    },
-    {
-      "index": 8,
       "code": "7424482472438120448",
       "username": "정구봉 Goobong Jeong",
       "created_at": "2026-02-04 01:02:41",
@@ -4055,17 +4181,74 @@ const snsFeedData = {
         "https://media.licdn.com/dms/image/v2/D5622AQHEltjKiFI3Qg/feedshare-shrink_1280/B56ZwkPeIwHIAg-/0/1770134561633?e=1772064000&v=beta&t=glRShRUV9SmrTgR0ql-jYJGwlPGtT8IVPaL9iqu2jBM"
       ],
       "user_link": "https://www.linkedin.com/in/ACoAACY7KJQBDtSTk6IuIwZY6ntBGJx1fCYwsYI",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "image",
       "source": "network",
-      "sequence_id": 153,
+      "sequence_id": 154,
       "sns_platform": "linkedin",
       "local_images": [
         "web_viewer/images/0ea93d86431d3bdbc7d048e0d577d408.jpg"
       ]
     },
     {
-      "index": 9,
+      "code": "7424462704150634496",
+      "username": "최진규",
+      "created_at": "2026-02-03 23:44:08",
+      "time_text": "2일",
+      "full_text": "\"예쁜 쓰레기를 만드는 사람의 특징\"\n\n내가 TV 소프트웨어를 개발하던 시절, 우리 팀은 경쟁사와의 출시 경쟁에서 이기기 위해 6개월 동안 야근을 했다. 심지어 휴가조차 단 한 번도 쓰지 않았다. 우리는 가격 경쟁력을 갖추기 위해 당시 한국보다 인건비가 낮으면서 개발능력을 갖춘 인도, 베트남, 중국, 인도네시아 개발자들과 팀을 구성해 타임존을 활용한 릴레이 개발 체제를 만들었다. 즉, 한국에서 개발한 코드를 형상관리 서버에 올린 후 퇴근하면, 아침을 맞은 인도에서 테스트를 하는 방식이었다.\n\n우리의 자부심은 품질이었다. 일반적으로 제품의 결함이 완전히 0이 되는 경우는 없다. 하지만 우리 팀은 개발팀 내에 별도의 테스트 인력까지 추가 배치하며 품질에 집착했다. 그 결과 소프트웨어에 있어서는 사소한 우려사항을 제외하고 치명적 결함이 한 건도 없는 제품을 만들어냈다.\n\n그런데, 우리와 동일한 칩을 사용해 개발한 경쟁사 제품은 한 달 먼저 출시했다. 먼저 출시된 경쟁사 제품을 구매해서 분해하고 테스트해 보니, 개발자로서 양심이 있는지 의심스러울 정도로 미흡했다. 하드웨어는 양호했으나 소프트웨어는 완성도가 낮았다. 그런데 충격적인 것은 이 시점부터 내가 만든 제품군이 국내 1위 자리를 경쟁사에 내주기 시작했다는 것이다. 이유는 간단했다. 경쟁사는 시장을 고려한 제품이고, 우리는 기능적으로 높은 품질의 제품이었다. 우리가 완벽하다고 믿은 기능들은 고객이 원하는 것이 아니었다. 기술적으로는 우수했지만, 사야 할 이유가 없는 제품을 만든 것이다.\n\n예쁜 쓰레기를 만든 원인은 바로 ‘고객 없는 완벽주의’였다.\n\n다시는 이러한 실수를 하지 않기 위해 나는 일을 할 때 두 가지 질문을 한다.\n\n- 밸리데이션(Validation): 우리가 \"올바른 제품\"을 만들고 있는가?(Are we building the right product?)\n\n- 베리피케이션(Verification): 우리가 제품을 \"올바르게 만들고\" 있는가?(Are we building the product right?)\n\n많은 사람들이 나처럼 밸리데이션을 놓친다. 벨리테이션을 놓치고 베리피케이션에만 충실하면, 원치 않는 서비스를 훌륭하게 만드는 일이 벌어진다. 다시 말해, 목적지가 아닌 잘못된 곳에 빠르고 안전하게 잘 도착하는 일과 같다.\n\n아래 삽화를 보며 생각해보자.\n고객이 원하는 70% 품질의 서비스가, 아무도 원하지 않는 100% 품질의 서비스보다 가치 있다.",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7424462704150634496?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7424462704150634496%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "SK AX | Learning and Development, Growth",
+      "images": [
+        "https://media.licdn.com/dms/image/v2/D5622AQGWRCDGO-QWDQ/feedshare-shrink_2048_1536/B56Zwj9fG2KsAo-/0/1770129847193?e=1772064000&v=beta&t=4_cx23b7J_U1oJ-X_01HLPA9AsoesZG1aLNSBbcDRDE"
+      ],
+      "user_link": "https://www.linkedin.com/in/ACoAACO8Fs4BmCpyrtbIxshmSJfd_r8Puv1oL34",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "image",
+      "source": "network",
+      "sequence_id": 153,
+      "sns_platform": "linkedin",
+      "local_images": [
+        "web_viewer/images/c47db89adf18ab19b997b88287d3c9b1.jpg"
+      ]
+    },
+    {
+      "code": "7424423567607603204",
+      "username": "류장근",
+      "created_at": "2026-02-03 21:08:37",
+      "time_text": "2일",
+      "full_text": "AI에게 시키는 건 쉬운데, 검토하는 건 왜 이렇게 괴로울까요? 그 이유를 찾았습니다.\n\n클로드 코드로 바이브 코딩을 하다 보면, 초반에는 그냥 막 시켜도 꽤 많은 게 나옵니다. 말만 하면 코드와 문서가 뚝딱 만들어지니 커밋도 순식간에 늘어나죠. 하지만 어느 순간 쎄한 느낌이 찾아옵니다. 커밋은 수십 개가 쌓였는데, 이게 진짜 완성된 건지 아니면 AI가 혼자 시도만 반복한 건지 구분이 안 가는 상황을 만나게 됩니다. \"그럴듯해 보이지만 실제로 돌아가는가?\"라는 의문이 드는 시점부터는 AI 성능의 문제가 아닙니다. 그때부터는 온전히 사람의 '판단력'이 병목이 됩니다.\n\n안 보여서 못 판단하는 게 아니라, 너무 많이 보여서 판단을 못 하는 상태. 이게 우리가 겪는 본질적인 문제입니다. AI는 요청 로그, 중간 결과, diff를 쉼 없이 뱉어내지만, 정작 사람이 이를 소화할 시야는 가려져 있기 때문입니다.\n\n저는 '얼마나 많이 시켰느냐'보다 '지금 내가 무엇을 보고 판단하느냐'를 생산성의 핵심으로 정의했습니다. 제가 직접 구축해 사용 중인, 판단력을 높여주는 3가지 구조를 공유합니다.\n\n1. 요청사항을 한눈에 파악하기 위해 '마크다운 칸반'으로 관리 체계 구축.\n단순히 프롬프트를 던지고 잊어버리는 게 아니라, 마크다운 기반 칸반 앱을 직접 만들어 쓰고 있습니다. 마크다운 문서를 칸반 보드 형태로 관리하며 '요청-진행-완료'의 상태를 정의합니다. 그리고 로컬 파일과 웹을 동기화해두고 카드 상태를 바꾸면 자동으로 개발이 시작되도록 트리거를 연결했습니다. 이렇게 요청의 상태를 시각화하면, \"방금 뭘 시켰더라?\" 하며 히스토리를 뒤지는 리소스를 획기적으로 줄일 수 있습니다.\n\n2. 결과물 검증을 위한 'Scalar를 활용한 API 문서 자동화'\nAI가 코드를 설계 의도대로 짰는지 확인하는 가장 확실한 방법은 문서를 검토하는 것입니다. 이전에는 Swagger를 사용했지만, 최근엔 가독성이 뛰어난 Scalar를 도입해 코드에서 스키마만 정의하면 API 문서가 자동으로 생성되도록 했습니다. SSOT(Single Source of Truth, 딱 하나의 출처) 관점에서 코드와 문서를 하나의 기준으로 묶으니 \"이 설계가 맞는가?\" 를 즉각 판단할 수 있게 됐습니다. 보는 눈이 편해지니 판단의 속도도 올라가더군요.\n\n3. 코드 추적을 위해 'Git 커밋 로그와 칸반 카드'를 자동 연동.\n작업 단위별로 코드가 변하는 과정이 흩어져 있으면 맥락을 놓치기 쉽습니다. 그래서 저는 Git 커밋 메시지가 관련 칸반 카드 아래에 자동으로 연결되도록 구조를 잡아 사용하고 있습니다. 특정 작업 카드 하나만 열면 그로 인해 파생된 모든 커밋이 연결되어 보이니, \"이 요청 하나가 전체 시스템을 어떻게 바꿨는가\"를 한눈에 장악할 수 있습니다.\n\n이 세 가지 구조가 연결되면 요청부터 결과 확인, 그리고 최종 검토까지의 전 과정이 하나의 흐름으로 보이기 시작합니다. AI의 내부 작동 원리를 다 이해하지 못해도, 이 데이터 흐름만 명확하면 \"이대로 완료해도 되는가?\"에 대한 의사결정을 매우 날카롭게 내릴 수 있습니다.\n\n결국 바이브 코딩의 생산성은 AI를 다루는 기술보다, '판단을 잘할 수 있는 구조를 설계하는 역량'에서 갈립니다. 누가 더 명확한 데이터를 보고, 정확한 피드백을 주느냐가 최종 퀄리티를 결정하기 때문입니다.\n\n여러분은 AI가 쏟아내는 결과물들을 어떤 시스템 안에서 검증하고 계신가요? 여러분만의 '보는 구조'나 효율적인 셋업 노하우가 있다면 댓글로 나눠주세요. 함께 고민하며 더 나은 구조를 만들어보고 싶습니다.",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7424423567607603204?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7424423567607603204%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "CEO @ BATI.AI | Global Commerce Intelligence for Beauty Brands",
+      "images": [],
+      "user_link": "https://www.linkedin.com/in/ACoAACZfqCcB7Tmya601YQuGRqiAzlUKO_u-pro",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "text",
+      "source": "network",
+      "sequence_id": 152,
+      "sns_platform": "linkedin"
+    },
+    {
+      "code": "7424206243277381632",
+      "username": "정구봉 Goobong Jeong",
+      "created_at": "2026-02-03 06:45:03",
+      "time_text": "3일",
+      "full_text": "팀어텐션과 같이 성장할 분들을 만나기 클럽을 만들었습니다. \"10x to 100x 클럽\", \"Claude Code as OS 클럽\". 제가 찾아낸 성장의 방정식은 \"Show and Prove\"입니다.\n\n1. 10x to 100x 클럽은 개발자를 위한 자리입니다.\n토큰 소비 철학, 모델 선택 방법, 자동화된 개발 시스템, Ralph 같은 long running agent 등. 사전에 선정된 주제 중 하나를 골라 관점을 공유합니다.\n\n10x 하고 있다면 이미 테크닉은 충분합니다. 우리에게 필요한 것은 성장할 수 있는 환경입니다. 만드는 비용이 극도로 낮아진 지금, 진짜 필요한 건 대담한 아이디어와 서로를 지탱하는 커뮤니티입니다.\n신청 폼: https://lnkd.in/guhTYBv7\n\n2. Claude Code as OS 클럽은 비개발자를 위한 자리입니다.\nAI를 나만의 OS로 만든 경험, 조직의 AI Adoption Rate 올린 경험, 비개발 영역에서 Claude Code 활용한 경험 등. 사전 선정된 주제를 바탕으로 관점을 공유합니다. 특히 주변 PM/대표님들에게 비슷한 니즈를 많이 들어서 만들게 되었습니다.\n\nClaude Code 비개발 활용에는 레벨이 있습니다.\n1. MCP로 Slack, Notion, Jira 등 툴을 연결해서 컨텍스트 한 번에 처리하기\n2. 로컬에 컨텍스트 쌓고 Skills로 워크플로우 자동화하기\n3. 나에게 최적화된 SW(예, Pencil)를 만들어서 생산성 10배 올리기\n\n레벨 2에서 3으로 올리는 챌린지를 같이 할 동료를 찾습니다.\n\n신청 폼: https://lnkd.in/gXXdugBy\n\n3. 두 달동안 격주로 본인의 관점을 발제하고, 각자 프로젝트 업데이트를 공유합니다.\n서로의 관점에 자극받고, 프로젝트 챌린지로 밀도 있게 성장하고 싶습니다.\n\n지난 2개월 동안, AI 빌리버들과 피자 먹는 모임을 했습니다. 덕분에 Anthropic 후원 스킬톤을 기획하고 스피커로 모실 수 있었어요. 이 끈끈한 관계를 확장하고 싶어서 클럽을 엽니다.\n\n서로 챌린지하면서 나만의 관점을 날카롭게 깎아낸다면, 10배 더 성장할 수 있다고 생각합니다.\n내 관점을 더 단단하게 만들 분들, 좋은 리얼 케이스를 같이 공유할 분들을 만나고 싶습니다.",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7424206243277381632?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7424206243277381632%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "Claude Code for all of your work",
+      "images": [
+        "https://media.licdn.com/dms/image/sync/v2/D5627AQEqFSORFLXRqg/articleshare-shrink_1280_800/B56ZwfOFeEKYAQ-/0/1770050314434?e=1770980400&v=beta&t=HCkZAPYR8qtHNwK-KtH-aGwId9YXHhvw_a5tOSEjBno"
+      ],
+      "user_link": "https://www.linkedin.com/in/ACoAACY7KJQBDtSTk6IuIwZY6ntBGJx1fCYwsYI",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "image",
+      "source": "network",
+      "sequence_id": 151,
+      "sns_platform": "linkedin",
+      "local_images": [
+        "web_viewer/images/b6cfd674f072a2f225f0dd6742167a6f.jpg"
+      ]
+    },
+    {
       "code": "7424102643498774528",
       "username": "홍민지Hong Minji",
       "created_at": "2026-02-02 23:53:23",
@@ -4077,7 +4260,7 @@ const snsFeedData = {
         "https://media.licdn.com/dms/image/v2/D5622AQH1zbV2iTlLuw/feedshare-shrink_2048_1536/B56Zwe2Ai0HUAk-/0/1770044001543?e=1772064000&v=beta&t=CrM_72PQ7hDYmcaLrbjdq2FQikEd0sRKPsxtDwpypmk"
       ],
       "user_link": "https://www.linkedin.com/in/ACoAADhcEVQBJOMtD7wMMWcOw9aFJeD_ao2VW0Y",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "image",
       "source": "network",
       "sequence_id": 150,
@@ -4087,7 +4270,27 @@ const snsFeedData = {
       ]
     },
     {
-      "index": 10,
+      "code": "7424076125506740224",
+      "username": "김덕중",
+      "created_at": "2026-02-02 22:08:00",
+      "time_text": "3일",
+      "full_text": "여러분들은 좋은 프롬프트를 어디에 저장하시나요? 메모장이나 개인의 노트에 저장하시기도 하겠지만 구글 Keep을 사용해 보세요. 저는 구글 Keep을 프롬프트 라이브러리로 사용하고 있습니다.\n구글 제미나이에서 특정 프롬프트를 사용할 일이 있으면 @ 를 입력하고 구글 Keep을 선택 한 다음, 저장된 프롬프트를 입력해서 바로 호출 할수 있습니다.\n(예시 입력 : @Google Keep 컨설팅 프롬프트 1을 사용해서 AI 실버산업을 분석해줘)",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7424076125506740224?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7424076125506740224%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "숙명여대 겸임교수, Firb AI 연구소장",
+      "images": [
+        "https://media.licdn.com/dms/image/v2/D5622AQG1dOpXuJv0cQ/feedshare-shrink_2048_1536/B56Zwed5M0KYAo-/0/1770037680142?e=1772064000&v=beta&t=YKthEOim3bgycDXLqBki6PhdzUxoNwKfJ0CvsSAK4iE"
+      ],
+      "user_link": "https://www.linkedin.com/in/ACoAAAwBOVMBDI50rE9wyD4tsMaGWkV-85Sqd50",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "image",
+      "source": "network",
+      "sequence_id": 149,
+      "sns_platform": "linkedin",
+      "local_images": [
+        "web_viewer/images/a499121c349073d64617214a68ece641.jpg"
+      ]
+    },
+    {
       "code": "7424044841904447488",
       "username": "최진규",
       "created_at": "2026-02-02 20:03:42",
@@ -4099,7 +4302,7 @@ const snsFeedData = {
         "https://media.licdn.com/dms/image/v2/D5622AQFOyHeFEYQa6w/feedshare-shrink_2048_1536/B56ZweBcOOIoAk-/0/1770030220654?e=1772064000&v=beta&t=b4T4O2C4r6awZ3DbXORZrC-9RXYKbHs7AHQN_5VZEhc"
       ],
       "user_link": "https://www.linkedin.com/in/ACoAACO8Fs4BmCpyrtbIxshmSJfd_r8Puv1oL34",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "image",
       "source": "network",
       "sequence_id": 148,
@@ -4109,51 +4312,27 @@ const snsFeedData = {
       ]
     },
     {
-      "index": 11,
-      "code": "7423134165010763776",
-      "username": "정구봉 Goobong Jeong",
-      "created_at": "2026-01-31 07:45:00",
-      "time_text": "6일",
-      "full_text": "AI 최신 소식을 어떻게 팔로업하냐는 질문을 많이 받았습니다. 그냥 많이 읽으려고 노력했는데, 더 잘하려고 내부 프로덕트+MCP를 만들어서 쓰고 있습니다.\n1. 1-page digest를 먼저 훑어보기(메일, 슬랙, 웹페이지)\n2. Claude Code에서 Contents hub MCP 연결하기\n3. Skills: /contents-hub 미리 정의한 content lens로 컨텐츠 클러스터링하고 관심사를 선택\n4. 흥미로운 건 원문까지 Claude가 직접 읽어옴\n5. 반응, 댓글까지 파악\n\n여기까지 5분도 안 걸립니다.\n\n오늘 이렇게 발견한 것 중 하나가 Every의 AI 프로젝트 매니저였는데요. CLAUDE.md 파일을 Job Description으로 쓴다는 게 재밌더라고요.\n\nAI 소식 팔로업하려고 X, Youtube, RSS를 직접 보지는 않습니다. 관심 가는 정보 빠르게 캐치해서 Claude Code 로 같이 분석합니다.\nHoYeon Lee 가 General Engineer 로 개발하고 있는 제품입니다.",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7423134165010763776?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7423134165010763776%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "Claude Code for all of your work",
+      "code": "7424016182380470272",
+      "username": "윤썸원",
+      "created_at": "2026-02-02 18:09:49",
+      "time_text": "4일",
+      "full_text": "<요즘 직장인분들에게 공유하고 싶은 말들>\n\n1. AI 발전 등으로, 이젠 ‘기술’보다 ‘태도’가 더 중요해지고 있습니다. 그리고 기술은 점점 더 쉽게 배울 수 있지만, 좋은 태도를 가지는 건 그보다 훨씬 어렵습니다.\n\n2. 이젠 스스로를 ‘1인 법인’으로 생각하고, 대우하세요. 그래야 회사 밖에서도 경쟁력을 가질 수 있습니다.\n\n3. 일을 할 땐 ‘공적 마인드’를 갖추는 것이 중요합니다. 자신의 사적 이익만을 쫓는 사람보다 세상과 고객에게 기여한 사람이 결국엔 더 크게 성장하기 때문입니다.\n\n4. 워라밸만큼이나, 재미와 의미 사이에서의 균형을 찾아보세요. 의미만 추구하다 보면 지치기 쉽고, 너무 재미와 쾌락만 추구하다 보면 허무해지기 쉽습니다.\n\n5. 어떤 일을 할 땐 스스로 마감 시간을 정해보세요. 일은 스스로에게 주어진 시간 만큼 팽창합니다. 그래서 그게 어떤 일이든 마감 시간을 정해놓고 하면, 효율이 비약적으로 증가합니다. 드라마 <굿 파트너>의 작가, 최유나 변호사가 일하는 방법입니다.\n\n6. 체크리스트를 활용하세요. 체크리스트 없이 일한다는 건 뭐가 중요한지 모르고 일한다는 뜻입니다.\n\n7. 완벽주의는 가급적 빨리 버리고, 일단 끝내고 수정하세요. 그리고 뭐가 구린지 기록하고, 질문하세요.\n\n8. 레이 달리오가 강조하듯, ‘고통+성찰=발전’입니다. 고통을 성장의 기회로 만든 사람만이 크게 성장합니다.\n\n9. 도제와 독학, 둘 중 하나만으로는 불충분합니다. 진정한 대가가 되려면 둘 모두가 필요합니다.\n\n10. AI 시대에 진정한 차이는, 질문 능력과 현장 경험에서 나옵니다.\n\n11. 좋은 동료가 있으면 성공할 확률은 7배나 높아지고, 사람들과 좋은 대화를 하려면 미리 대화 주제를 준비해야 합니다.\n\n12. 온라인에선 더 격식을 차리는 게 좋습니다. 온라인에선 무례한 단답, 비꼬는 말, 공개적 비난은 스스로를 갉아먹는 일입니다.\n\n13. 리더는, 단순히 업무를 지시하는 게 아니라, 구성원들의 마음에 불을 지필 수 있어야 합니다.\n\n++썸원 멤버십 회원분들에게 전해드리는 ‘1월 썸원 노트(Notebook Lm)’를 토대로 작성했습니다.",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7424016182380470272?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7424016182380470272%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "프로젝트 썸원 Content Owner",
       "images": [
-        "https://media.licdn.com/dms/image/v2/D5605AQHk4rApZb3K0Q/videocover-high/B56ZwPWdeaIQBc-/0/1769784074783?e=1770976800&v=beta&t=G_raCcJes5t5mGiCWPttl_2TlVt79UizfPJ_DM2F2Zc"
+        "https://media.licdn.com/dms/image/v2/D5622AQE878gMVDlGKA/feedshare-shrink_1280/B56ZwdnYN3KsAc-/0/1770023388442?e=1772064000&v=beta&t=W2fdg89yxWfuv_ROstNZjqW1T2DODjm3t9TKzYPh1Ig"
       ],
-      "user_link": "https://www.linkedin.com/in/ACoAACY7KJQBDtSTk6IuIwZY6ntBGJx1fCYwsYI",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "user_link": "https://www.linkedin.com/in/ACoAACC2D84BJpzxT2C5mrDCykqwVjBnKqPntLo",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "image",
       "source": "network",
-      "sequence_id": 140,
+      "sequence_id": 147,
       "sns_platform": "linkedin",
       "local_images": [
-        "web_viewer/images/7e768490ee8f22ca633b3daa48f4e7da.jpg"
+        "web_viewer/images/2e907cc1ec5b9ac6bf98bb773ad23211.jpg"
       ]
     },
     {
-      "index": 12,
-      "code": "7422971668609966080",
-      "username": "한성국",
-      "created_at": "2026-01-30 20:59:17",
-      "time_text": "6일",
-      "full_text": "제안서 작성, RFP 하나로 1분 만에 끝냈습니다\n(📌유튜브 영상은 2월 8일(일) 공유를 목표로 하고 있습니다)\n\n대행사에서 제안서 하나 쓰려면\nRFP 분석하고, 시장 조사하고,\n기획 정리하고, 슬라이드 만들고...\n이게 며칠은 기본으로 걸리잖아요.\n\n그래서 이번에 클로드코드로\n입찰 경쟁 제안서 에이전트를 만들었습니다.\n\n프로세스는 딱 3단계입니다.\n① RFP 분석\n② 시장 현황 분석 및 상황 분석\n③ 제안서 작성\n\nRFP 파일 하나만 넣으면\n1분 이내에 제안서가 완성됩니다.\n현재 완성도는 70% 정도인데,\n\n조금만 더 보완하면\n90%는 에이전트가 만들고\n나머지 10%는 디자인 제작물 추가하고\n다듬는 정도로 제안서 하나를 완성할 수 있을 것 같습니다.\n\n제안서 쓰느라 며칠씩 야근하셨던 분들,\n이 과정 정리해서 유튜브로 공유할게요.\n\n필요하신 분은 댓글로 \"저요!\" 남겨주세요 🙌",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7422971668609966080?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7422971668609966080%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "이커머스 운영 비용을 절반으로 줄이는 AI 시스템을 공유합니다",
-      "images": [
-        "https://media.licdn.com/dms/image/v2/D5605AQGN49gdU-tS8g/videocover-high/B56ZwOxXLqHUBY-/0/1769774348982?e=1770976800&v=beta&t=TVXhgQzV_OrybpufAxM7GkFNWOIygvyFej17FVjnNYQ"
-      ],
-      "user_link": "https://www.linkedin.com/in/ACoAAEYsARgBdQazrHf4u7lcZ1nlSjTNE7YbpOs",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "image",
-      "source": "network",
-      "sequence_id": 139,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/bd1893baa119286e27de22f05ab7fc04.jpg"
-      ]
-    },
-    {
-      "index": 13,
       "code": "7423840081410678784",
       "username": "정구봉 Goobong Jeong",
       "created_at": "2026-02-02 06:30:03",
@@ -4165,7 +4344,7 @@ const snsFeedData = {
         "https://media.licdn.com/dms/image/v2/D5622AQF8DDDJiumprQ/feedshare-shrink_2048_1536/B56ZwZokv_KIAk-/0/1769956593388?e=1772064000&v=beta&t=p24Vfi0xdRT7RlI1o8MxI6uExydmP_Ynabjui2LFRB8"
       ],
       "user_link": "https://www.linkedin.com/in/ACoAACY7KJQBDtSTk6IuIwZY6ntBGJx1fCYwsYI",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "image",
       "source": "network",
       "sequence_id": 146,
@@ -4175,24 +4354,27 @@ const snsFeedData = {
       ]
     },
     {
-      "index": 14,
-      "code": "7423161763308707840",
-      "username": "한성국",
-      "created_at": "2026-01-31 09:34:40",
-      "time_text": "6일",
-      "full_text": "맥미니 하나로 24시간 일하는 AI 비서를 만들어보려 합니다.\n(📌유튜브 영상은 2월 15일(일) 공유를 목표로 하고 있습니다)\n\n외부 미팅이 많아서 노트북을 항상 들고 다니는데,\nAI 작업은 계속 돌아가야 하는 상황이거든요.\n\n그래서 집에 Mac Mini를 두고\n텔레그램으로 언제 어디서든\n작업을 요청하는 구조를 구상 중이에요.\n\n미팅 중에 \"API 만들어놔\" → 끝나면 완성\n이동 중에 \"보고서 정리해줘\" → 도착하면 완료\n자기 전에 \"내일 콘텐츠 기획해놔\" → 아침에 확인\n\n노트북 앞에 앉아야만 AI 작업이 가능한 게 아니라,\n폰 하나로 언제든 AI 비서한테 일을 시키는 구조요.\n\n1인 운영자에게 이건 인건비 0원짜리 직원이 생기는 거예요.\n직접 구축해보고 실제로 써본 다음\n과정 전체를 유튜브로 공유해보겠습니다.\n\n이 구조 궁금하신 분들은 댓글로 \"저요\" 남겨주세요!",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7423161763308707840?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7423161763308707840%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "이커머스 운영 비용을 절반으로 줄이는 AI 시스템을 공유합니다",
-      "images": [],
-      "user_link": "https://www.linkedin.com/in/ACoAAEYsARgBdQazrHf4u7lcZ1nlSjTNE7YbpOs",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "text",
+      "code": "7423556087586603009",
+      "username": "HOJUN NAM",
+      "created_at": "2026-02-01 11:41:34",
+      "time_text": "5일",
+      "full_text": "1번 4번 😱",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7423556087586603009?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7423556087586603009%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "Management support Of Economychosun at Chosunbiz",
+      "images": [
+        "https://media.licdn.com/dms/image/v2/D5622AQGej2_npfQgkg/feedshare-shrink_800/B56ZwXE7SDIwAg-/0/1769913693490?e=1772064000&v=beta&t=7OnlTkkjCzzif5rf0Sh_X_NAbfGQQ2kG3zgCfXGTokU"
+      ],
+      "user_link": "https://www.linkedin.com/in/ACoAAAf6XY0B7OOmUGuE03uR5HSlffa5td7-K_g",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "image",
       "source": "network",
-      "sequence_id": 141,
-      "sns_platform": "linkedin"
+      "sequence_id": 145,
+      "sns_platform": "linkedin",
+      "local_images": [
+        "web_viewer/images/6c05080b81132a7f671d4a166fd59173.jpg"
+      ]
     },
     {
-      "index": 15,
       "code": "7423290982298828800",
       "username": "Sihyun Kim",
       "created_at": "2026-01-31 18:08:08",
@@ -4204,7 +4386,7 @@ const snsFeedData = {
         "https://media.licdn.com/dms/image/v2/D5622AQE-mODl-ACjxg/feedshare-shrink_1280/B56ZwTTz7KIcAc-/0/1769850486772?e=1772064000&v=beta&t=mNbv2xY_8Wh5AuP880LUZav7otLs1EV2PMeBUPy-G5Y"
       ],
       "user_link": "https://www.linkedin.com/in/ACoAABMRqukBBpLan7UG0wx717QG0JmBGlYF0u0",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "image",
       "source": "network",
       "sequence_id": 144,
@@ -4214,29 +4396,22 @@ const snsFeedData = {
       ]
     },
     {
-      "index": 16,
-      "code": "7422400422361096192",
-      "username": "한성국",
-      "created_at": "2026-01-29 07:09:22",
-      "time_text": "1주",
-      "full_text": "입찰 제안서 작성, 에이전트로 자동화합니다.\n\n광고대행사 다닐 때\n가장 시간이 많이 걸렸던 업무가\n바로 제안서 작성이었어요.\n\n자료 조사부터 경쟁사 분석,\n전략 기획까지 하다 보면\n며칠이 훌쩍 지나가더라고요.\n\n그래서 이번에\n클로드코드와 AI 에이전트를 활용해\n입찰 제안서 자동화 시스템을 구축하고 있습니다.\n\n기존에는\n① 시장 조사\n② 경쟁사 분석\n③ 전략 수립\n④ 제안서 작성\n이 과정을 전부 수작업으로 했는데\n\n이제는\n① 기본 정보 입력\n② 에이전트가 리서치 + 초안 작성\n③ 검토 후 수정\n이렇게 바뀝니다.\n\n어느 정도의 결과물이 나올지\n직접 만들면서 공유해드릴게요… 더 보기",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7422400422361096192?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7422400422361096192%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "이커머스 운영 비용을 절반으로 줄이는 AI 시스템을 공유합니다",
-      "images": [
-        "https://media.licdn.com/dms/image/v2/D5622AQFOCdK1U8rHHQ/feedshare-shrink_2048_1536/B56ZwGp2smJwAk-/0/1769638161387?e=1772064000&v=beta&t=g8TEYQcVhdi68mwGmc7U9mIGHShaexnGnPjC7cvNJaY"
-      ],
-      "user_link": "https://www.linkedin.com/in/ACoAAEYsARgBdQazrHf4u7lcZ1nlSjTNE7YbpOs",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "image",
+      "code": "7423236500034764800",
+      "username": "Soojung Shin (신수정)",
+      "created_at": "2026-01-31 14:31:38",
+      "time_text": "6일",
+      "full_text": "기록하지 않은 커리어는 자산이 되지 않는다--\n\n장면1. 얼마 전, 작년 말 대기업 임원으로 퇴임하신 50대 한 분이 찾아오셨다.\n글로벌 대기업과 국내 대기업을 두루 경험했고, 전문성도 탄탄한 분이었다. 나는 그분께 책 한 권을 써보시라고 권했다. 그러자 이런 답이 돌아왔다. “쓸게 마땅치 않습니다. 제가 기록해 놓은 게 없어서요.” 회사에 다닐 때 노트에 메모는 했지만, 퇴임하면서 다시 쓸 일도 없을 것 같아 모두 버리셨다는 것이다.\n\n장면2. 2년 전쯤, 또 다른 분이 찾아오셨다. 이분 역시 글로벌 컨설팅 펌을 거쳐 대기업 임원으로 퇴임한 50대였다. 차이가 있다면, 이분은 임원 생활 3년 동안 자신이 시도한 것, 배운 것, 좌절, 고민의 흔적을 모두 기록해 두셨다. 그 기록을 바탕으로 DX 관련 책을 쓰셨다. 읽어보니 단번에 알 수 있었다. ‘아, 이건 현장에 있었던 사람이 쓴 책이다.’ 이 책은 곧 강의로 이어졌고, 강의는 다시 자문과 프로젝트로 연결되었다. 퇴임 이후의 두 번째 커리어가 자연스럽게 열렸다.\n\n장면3. 최근에도 여러 대기업에서 신사업을 담당했던 분이 퇴임하며 책을 쓰셨다. 내게 추천사 요청이 있어 읽어보았는데 10년 가까운 경험이 놀라울 만큼 생생했다. 사실은 실패 내용이 대부분이라 오히려 신사업을 도전하는 후배들에게 실전적인 도움이 될 만한 기록이었다. 어떻게 가능했을까? 역시 답은 같았다. “틈틈이 기록해 두었습니다.”\n\n물론, 책을 쓴다고 베셀이 될 가능성은 매우 매우 낮다. 그러나 분명 후배들이나 사회에 도움이 되고 자신에게도 새로운 명함이 된다. 작더라도 어떤 가능성이 올지 모른다.\n\n그래서 나는 40대 이상의 직장인을 만나면 반드시 ‘기록’을 이야기한다. 일하면서 시도, 성공한 것, 실패한 것, 후회, 배운 점. 이를 직장생활 중 SNS에 올리라는 것은 아니다. 이를 원치 않는 기업이 많고 비밀유지 이슈도 있기 때문이다.\n\n그러나 개인 블로그든, 비공개 메모든 다양한 방식으로 남길 수 있다. 짧은 메모 형태라도 좋다. 중요한 건 남겨두는 것이다. 이 기록은 언젠가 책의 재료가 되고, 강의의 자료가 되고, 타인을 돕고 나눌 수 있는 자산이 된다.\n\n수십 년 직장생활을 했는데 남길 수 있는 역사와 전문성이 없다면, 그건 개인의 커리어에 문제가 있을 수도 있지만 기록의 부재일 가능성이 크다.\n\n그리고 한 가지를 더 강조한다. 반드시 디지털로 기록하라고. 나 역시 과거에는 노트에 수없이 적었다. 지금은 거의 남아 있지 않다. 그래서 요즘은 노트에 적은 것도 반드시 사진을 찍어 업로드한다.\n\n사람의 기억은 믿을 수 없다. 기억만으로 쓰는 회고는 과거를 미화하거나 왜곡하기 쉽다. 최근의 기억만 과도하게 부각되기도 한다. 그래서 기록이 필요하다.\n\n독서도 마찬가지다. 나 역시 책을 많이 읽었지만 기록하지 않던 시절의 책들은 거의 인용할 수 없다. 어느 순간부터 간략히 기록하기 시작했고, 지금은 약 600권의 독서 메모가 쌓여 있다. 책을 쓰거나 아이디어가 떠오를 때 검색해서 바로 활용한다.\n\n처음부터 길게 쓰려고 하면 지속되지 않는다. 하루 혹은 일주일에 3~4줄이면 충분하다. 젊을수록 좋다. 하지만 그렇지 않더라도 40대 이상이라면 반드시 시작해야 한다.\n\n기록은 과거를 정리하는 일이 아니라, 미래의 선택지를 늘리는 일이다.\n\np.s. 댓글은 서로에게 도움됩니다.",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7423236500034764800?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7423236500034764800%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
+      "images": [],
+      "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "text",
       "source": "network",
-      "sequence_id": 132,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/51eee5547faa709833bc2adc18a5ec08.jpg"
-      ]
+      "sequence_id": 143,
+      "sns_platform": "linkedin"
     },
     {
-      "index": 17,
       "code": "7423161860318851072",
       "username": "한성국",
       "created_at": "2026-01-31 09:35:03",
@@ -4246,53 +4421,71 @@ const snsFeedData = {
       "profile_slogan": "이커머스 운영 비용을 절반으로 줄이는 AI 시스템을 공유합니다",
       "images": [],
       "user_link": "https://www.linkedin.com/in/ACoAAEYsARgBdQazrHf4u7lcZ1nlSjTNE7YbpOs",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "text",
       "source": "network",
       "sequence_id": 142,
       "sns_platform": "linkedin"
     },
     {
-      "index": 18,
-      "code": "7422768008177074177",
-      "username": "Kyunghun Lee",
-      "created_at": "2026-01-30 07:30:01",
-      "time_text": "1주",
-      "full_text": "SaaS 주식은 반토막, AI 스타트업은 수십 배 멀티플\n\n2026년 1월, HubSpot 주가는 1년 만에 51% 하락했습니다. 같은 기간 Harvey는 밸류에이션이 30억에서 80억 달러로 뛰며 매출 대비 80배 멀티플을 받고 있습니다. 공개 시장 SaaS는 역사상 최악, 비공개 AI 스타트업은 역사상 최고. 같은 시대, 같은 소프트웨어 산업입니다. Morgan Stanley의 SaaS 지수는 2026년 들어 18일 만에 15% 하락했습니다. 2022년 이후 최악의 시작입니다. 같은 기간 나스닥 100은 사상 최고치 근처입니다. 단순한 주가 조정일까요? 아니면 지난 10여년간 유효했던 SaaS 투자 공식 자체가 무너지고 있는 것일까요?\n\n1. 숫자가 말하는 것\n\n2026년 들어 단 18일 만에 Atlassian은 27% 하락했습니다. Jira를 모르는 개발 조직이 없는 회사입니다. Intuit는 18% 하락. TurboTax, QuickBooks, Mailchimp를 가진 회사입니다. Adobe는 15% 하락. 크리에이티브 툴의 독점 기업입니다. Monday.com은 44% 하락. ServiceNow는 36% 하락. 이들은 카테고리를 정의하고, 현금을 창출하고, 해자를 가진 비즈니스들입니다. 그런데 시장은 이들을 매출 대비 6-12배 수준으로 평가합니다.\n\n반면 AI 네이티브 회사들을 보겠습니다. Harvey는 ARR 1억 달러에 80억 달러 밸류에이션, 80배 멀티플입니다. ElevenLabs는 ARR 3.3억 달러에 110억 달러 협상 중, 약 33배입니다. Cursor는 ARR 10억 달러에 293억 달러 밸류에이션, 약 29배입니다. 전통 SaaS 대비 3-10배 높은 멀티플입니다.\n\n2. 투자 논리의 붕괴\n\n15년간 SaaS 투자 논리는 명확했습니다. 지금은 빠르게 성장하고, 나중에 현금을 수확한다. 적자를 감수하며 고객을 확보하면, 언젠가 그 고객들이 안정적인 현금흐름이 된다. 많은 SaaS 회사가 투자자와 직원에게 이 꿈을 셀링했습니다. 하지만 이제 AI가 이 공식의 양쪽 모두를 위협합니다. 단기적으로는 그 성장이 더 싼 AI 솔루션에 추월당하지 않을까? 장기적으로는 수확할 것이 남아있기는 할까에 대한 우려가 커지고 있습니다. Melius Research의 Ben Reitzes는 이 현상을 클레이튼 크리스텐슨의 혁신기업의 딜레마로 규정했습니다. 기존 SaaS 회사들은 AI-last, seat-first입니다. 그들의 수익 모델이 바로 그들을 가두는 감옥이 됩니다.\n\n3. SaaS의 본질: Heuristics + APIs + CRUD\n\n기존 SaaS가 하는 일을 분해하면 세 가지입니다. Heuristics. 규칙 기반 로직입니다. 마감 3일 전에 알림을 보내고, 리드 점수가 70 이상이면 영업팀에 배정합니다. APIs. 시스템 간 연결입니다. Zapier가 하는 일, 각종 인테그레이션이 하는 일입니다. CRUD. 데이터를 생성하고, 읽고, 수정하고, 삭제합니다. SaaS의 가치는 무엇이었을까요? 이 복잡한 로직과 데이터 조작을 사람이 쉽게 쓸 수 있도록 UI로 감싼 것입니다.\n\n4. AI가 우회하는 것\n\nLLM과 Function Calling이 등장하면서 흐름이 바뀝니다. UI 레이어가 우회됩니다. Heuristics는 LLM이 자연어로 규칙을 이해하고 실행합니다. 마감 3일 전에 알림이라고 코딩할 필요 없이, 중요한 마감이 다가오면 알려줘라고 말하면 됩니다. APIs는 LLM이 직접 호출합니다. Function calling입니다. CRUD는 LLM이 데이터를 직접 조작합니다. 태스크 관리 도구를 예로 들어보겠습니다. 사람이 AI 에이전트에게 이번 주 할 일 정리해줘라고 말하면, 에이전트가 캘린더와 이메일을 읽고 직접 태스크를 관리합니다. 사람이 보드를 열어서 카드를 드래그할 필요가 없어집니다. 태스크 관리 UI라는 중간 레이어 자체가 불필요해질 수 있습니다.\n\n5. 시스템 오브 레코드인가\n\n모든 SaaS가 똑같이 위험한 것은 아닙니다. 핵심 질문이 있습니다. 그 제품이 시스템 오브 레코드인가? Salesforce CRM은 고객 데이터의 진실의 원천입니다. AI에게 고객 정보 알려줘라고 하면, 그 데이터가 있는 곳을 조회해야 합니다. Workday는 HR 데이터의 진실의 원천입니다. 직원 정보, 급여 정보가 거기 있습니다. 하지만 태스크 관리 도구는? 이번 주 태스크 보여줘라는 질문에 AI 에이전트는 캘린더와 이메일에서 직접 추론할 수 있습니다. 별도의 태스크 데이터베이스가 필수가 아닙니다. 태스크 관리, 소셜 미디어 관리 같은 seat-based application 카테고리가 가장 취약합니다. 이들은 시스템 오브 레코드가 아닙니다. 없어도 되는 레이어입니다.\n\n6. 3계층으로 보는 승자와 패자\n\nAI 시대의 소프트웨어 스택을 세 계층으로 나눠보면 시장의 판단이 명확해집니다. UI와 워크플로우 레이어는 가치가 하락하고 있습니다. AI 에이전트가 우회하는 지점입니다. 데이터 레이어는 가치가 유지됩니다. AI 에이전트도 데이터를 저장하고 읽어야 합니다. 컴퓨팅 인프라 레이어는 가치가 상승하고 있습니다. 2026년 들어 Lam Research +30%, ASML +27%, Micron +27%. 전부 인프라 레이어입니다. IDC는 2028년까지 순수 seat-based pricing이 소멸할 것으로 예측합니다. 사람 수에 따라 돈을 받는 모델은 사람이 직접 UI를 쓸 때만 유효합니다.\n\n7. 결국 무엇이 바뀌었나\n\nD.A. Davidson의 Gil Luria는 이렇게 말합니다. \"AI가 아직 이 비즈니스들을 실제로 파괴하지는 않았다. 하지만 시장의 컨센서스는 AI가 모든 것을 파괴할 것이라는 쪽이다.\" 아직 실제로 파괴되지 않았습니다. 하지만 시장은 이미 파괴를 가격에 반영하고 있습니다. Heuristics + APIs + CRUD를 UI로 감싸서 seat 단위로 파는 시대. 그 시대가 끝나가고 있습니다.",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7422768008177074177?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7422768008177074177%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "CAIO & Deputy CEO @ Channel Corp | AI × B2B SaaS",
+      "code": "7423161763308707840",
+      "username": "한성국",
+      "created_at": "2026-01-31 09:34:40",
+      "time_text": "6일",
+      "full_text": "맥미니 하나로 24시간 일하는 AI 비서를 만들어보려 합니다.\n(📌유튜브 영상은 2월 15일(일) 공유를 목표로 하고 있습니다)\n\n외부 미팅이 많아서 노트북을 항상 들고 다니는데,\nAI 작업은 계속 돌아가야 하는 상황이거든요.\n\n그래서 집에 Mac Mini를 두고\n텔레그램으로 언제 어디서든\n작업을 요청하는 구조를 구상 중이에요.\n\n미팅 중에 \"API 만들어놔\" → 끝나면 완성\n이동 중에 \"보고서 정리해줘\" → 도착하면 완료\n자기 전에 \"내일 콘텐츠 기획해놔\" → 아침에 확인\n\n노트북 앞에 앉아야만 AI 작업이 가능한 게 아니라,\n폰 하나로 언제든 AI 비서한테 일을 시키는 구조요.\n\n1인 운영자에게 이건 인건비 0원짜리 직원이 생기는 거예요.\n직접 구축해보고 실제로 써본 다음\n과정 전체를 유튜브로 공유해보겠습니다.\n\n이 구조 궁금하신 분들은 댓글로 \"저요\" 남겨주세요!",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7423161763308707840?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7423161763308707840%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "이커머스 운영 비용을 절반으로 줄이는 AI 시스템을 공유합니다",
       "images": [],
-      "user_link": "https://www.linkedin.com/in/ACoAAA5RhH4BjDv2vMF1Onz2ppvG6jeLmEGo93E",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "user_link": "https://www.linkedin.com/in/ACoAAEYsARgBdQazrHf4u7lcZ1nlSjTNE7YbpOs",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "text",
       "source": "network",
-      "sequence_id": 137,
+      "sequence_id": 141,
       "sns_platform": "linkedin"
     },
     {
-      "index": 19,
-      "code": "7417486931770499072",
-      "username": "Jinju Park",
-      "created_at": "2026-01-15 17:44:54",
-      "time_text": "3주",
-      "full_text": "\"AI 에이전트 안 쓰면 뒤처진다\"는 말에 속지 마세요.\n\n요즘 AI 에이전트, 클로드 코드, n8n... 온갖 복잡한 도구들이 쏟아지고 있습니다. 그래서 많은 분들이 \"나도 당장 에이전트 배워야 하나?\"하고 고민하고 계신 것 같습니다.\n\n하지만, 직접 여러 AI 워크플로를 만들어보며 깨달은 사실은, 무조건 똑똑하고 복잡한 게 좋은 건 아니라는 점입니다. 핵심은 내가 해결하려는 '문제의 본질'이 무엇인지 파악하는 것이죠.\n\n그래서 제 경험을 토대로 AI시스템은 4단계로 나눠, 상황별로 어떤 걸 선택해야 하는지 정리해봤습니다.\n\n1단계: 커스텀 GPT, Gems\n\n내가 대화를 주고받으며 수정하고 보완해야 하는 일에 적합합니다. 광고 세팅 가이드처럼 매번 내용은 비슷하지만, 상황에 따라 조금씩 수정이 필요한 반복 업무에 좋습니다.\n\n\n2단계: 단순 자동화 (n8n, Make.com, Zapier)\n\nAI가 필요 없는 단순 자동화입니다. 'A가 발생하면 B를 해라'라는 명확한 규칙만 있으면 되죠. 결과가 100% 예측 가능하고 똑같습니다. 매일 아침 6시에 뉴스레터를 발송하거나, 미팅이 끝나면 녹음 파일을 저장하는 단순 자동화에 적합합니다.\n\n3단계: AI 워크플로우 (n8n, Make.com, Zapier + AI)\n\n단순 자동화에 AI의 '판단력'을 얹은 시스템입니다. 순서는 정해져 있지만, 중간에 AI가 내용을 읽고 분류하는 과정이 들어가요. 예를 들어, 고객 문의 메일을 보고 이게 '불만'인지 '문의'인지 AI가 판단해서 담당자에게 넘겨주는 일에 활용할 수 있습니다.\n\n4단계: AI 에이전트 (클로드 코드, n8n AI 에이전트 등)\n\n가장 높은 단계입니다. 목표만 주면 AI가 알아서 도구를 선택하고 순서를 정해서 일을 끝내죠. \"B2B 영업 계획 짜줘\"라고 요청하면, 데이터 조사부터 콜드 이메일 작성, 리드 관리까지 한 번에 처리합니다. 스스로 판단하고 움직이는 자율성이 핵심이에요.\n\n\n결론 : 솔직히 말하면, 실제로 효율이 나는 자동화의 대부분은 AI에이전트 없이도 충분히 만들 수 있습니다. 무턱대고 비싸고 복잡한 에이전트부터 만들 필요가 없어요.\n\n가장 중요한 건 처음부터 완벽할 순 없다는 것입니다. 일단 가벼운 것부터 시작해 보세요. 쓰다 보면 \"아, 이건 에이전트로 업그레이드해야겠네?\" 하는 감이 올 겁니다.\n\n만약 정확히 어떤 단계를 선택해야 할지 모르겠다면, 일단 가장 낮은 단계부터 차근차근 올라가 보는 건 어떨까요?\n\n이 소식을 포함한 이번주 뉴스레터 보러가기\nhttps://lnkd.in/g7iqDQYd\n(로그인/가입 후 읽으실 수 있어요)\n\n챗대리의 Ai뉴스레터 구독하기\nhttps://lnkd.in/gGqXKpjg",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7417486931770499072?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7417486931770499072%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "인공지능과 함께 일하는 법을 연구하고 있습니다 | AI Contents Creator & Marketer",
+      "code": "7423134165010763776",
+      "username": "정구봉 Goobong Jeong",
+      "created_at": "2026-01-31 07:45:00",
+      "time_text": "6일",
+      "full_text": "AI 최신 소식을 어떻게 팔로업하냐는 질문을 많이 받았습니다. 그냥 많이 읽으려고 노력했는데, 더 잘하려고 내부 프로덕트+MCP를 만들어서 쓰고 있습니다.\n1. 1-page digest를 먼저 훑어보기(메일, 슬랙, 웹페이지)\n2. Claude Code에서 Contents hub MCP 연결하기\n3. Skills: /contents-hub 미리 정의한 content lens로 컨텐츠 클러스터링하고 관심사를 선택\n4. 흥미로운 건 원문까지 Claude가 직접 읽어옴\n5. 반응, 댓글까지 파악\n\n여기까지 5분도 안 걸립니다.\n\n오늘 이렇게 발견한 것 중 하나가 Every의 AI 프로젝트 매니저였는데요. CLAUDE.md 파일을 Job Description으로 쓴다는 게 재밌더라고요.\n\nAI 소식 팔로업하려고 X, Youtube, RSS를 직접 보지는 않습니다. 관심 가는 정보 빠르게 캐치해서 Claude Code 로 같이 분석합니다.\nHoYeon Lee 가 General Engineer 로 개발하고 있는 제품입니다.",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7423134165010763776?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7423134165010763776%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "Claude Code for all of your work",
       "images": [
-        "https://media.licdn.com/dms/image/v2/D5622AQHzEeG_QigMag/feedshare-shrink_2048_1536/B56ZvA1DoMIYAo-/0/1768466693534?e=1772064000&v=beta&t=iJ1qtqfqv29ftJNV8vPAhZNZz8cO3xIIKzamD8quK7c"
+        "https://media.licdn.com/dms/image/v2/D5605AQHk4rApZb3K0Q/videocover-high/B56ZwPWdeaIQBc-/0/1769784074783?e=1770980400&v=beta&t=_1ROn3kg9Q_oCzLGDaxbtM0tT2BBllMzb6kImKXYB0M"
       ],
-      "user_link": "https://www.linkedin.com/in/ACoAADPa2KIB5Skb_NdQWdtPBOM7_i1mID-DpPw",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "user_link": "https://www.linkedin.com/in/ACoAACY7KJQBDtSTk6IuIwZY6ntBGJx1fCYwsYI",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "image",
       "source": "network",
-      "sequence_id": 109,
+      "sequence_id": 140,
       "sns_platform": "linkedin",
       "local_images": [
-        "web_viewer/images/5744109757587da6ec4b91025ff829e8.jpg"
+        "web_viewer/images/bb926c28bfcba7f2daa8ff66f31933a1.jpg"
       ]
     },
     {
-      "index": 20,
+      "code": "7422971668609966080",
+      "username": "한성국",
+      "created_at": "2026-01-30 20:59:17",
+      "time_text": "6일",
+      "full_text": "제안서 작성, RFP 하나로 1분 만에 끝냈습니다\n(📌유튜브 영상은 2월 8일(일) 공유를 목표로 하고 있습니다)\n\n대행사에서 제안서 하나 쓰려면\nRFP 분석하고, 시장 조사하고,\n기획 정리하고, 슬라이드 만들고...\n이게 며칠은 기본으로 걸리잖아요.\n\n그래서 이번에 클로드코드로\n입찰 경쟁 제안서 에이전트를 만들었습니다.\n\n프로세스는 딱 3단계입니다.\n① RFP 분석\n② 시장 현황 분석 및 상황 분석\n③ 제안서 작성\n\nRFP 파일 하나만 넣으면\n1분 이내에 제안서가 완성됩니다.\n현재 완성도는 70% 정도인데,\n\n조금만 더 보완하면\n90%는 에이전트가 만들고\n나머지 10%는 디자인 제작물 추가하고\n다듬는 정도로 제안서 하나를 완성할 수 있을 것 같습니다.\n\n제안서 쓰느라 며칠씩 야근하셨던 분들,\n이 과정 정리해서 유튜브로 공유할게요.\n\n필요하신 분은 댓글로 \"저요!\" 남겨주세요 🙌",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7422971668609966080?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7422971668609966080%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "이커머스 운영 비용을 절반으로 줄이는 AI 시스템을 공유합니다",
+      "images": [
+        "https://media.licdn.com/dms/image/v2/D5605AQGN49gdU-tS8g/videocover-high/B56ZwOxXLqHUBY-/0/1769774348982?e=1770980400&v=beta&t=iqmtSbHESAT75NSAoKGiYTrWo8nUij-WN88-VKVB1YA"
+      ],
+      "user_link": "https://www.linkedin.com/in/ACoAAEYsARgBdQazrHf4u7lcZ1nlSjTNE7YbpOs",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "image",
+      "source": "network",
+      "sequence_id": 139,
+      "sns_platform": "linkedin",
+      "local_images": [
+        "web_viewer/images/9d6bb03e8a8176728ad5b2fd72ff4586.jpg"
+      ]
+    },
+    {
       "code": "7422780935894544384",
       "username": "Jeongmin Lee",
       "created_at": "2026-01-30 08:21:23",
@@ -4304,7 +4497,7 @@ const snsFeedData = {
         "https://media.licdn.com/dms/image/v2/D5622AQFp_u-8SHBMrQ/feedshare-shrink_2048_1536/B56ZwMD7SjKsAk-/0/1769728882308?e=1772064000&v=beta&t=3dv2oSX7UJgRsazlTr6IRAezMsfkJ7HcE-prp1LwUjM"
       ],
       "user_link": "https://www.linkedin.com/in/ACoAACkadIABsYoadkJXuZXMASkhnSFeoK_nVw8",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "image",
       "source": "network",
       "sequence_id": 138,
@@ -4314,107 +4507,22 @@ const snsFeedData = {
       ]
     },
     {
-      "index": 21,
-      "code": "7422209803042742272",
-      "username": "윤썸원",
-      "created_at": "2026-01-28 18:31:55",
+      "code": "7422768008177074177",
+      "username": "Kyunghun Lee",
+      "created_at": "2026-01-30 07:30:01",
       "time_text": "1주",
-      "full_text": "<AI를 잘 쓰고 싶은 사람이라면 무조건 구독한다는 뉴스레터 Top 5>\n\n1. 일잘러의 성장 노트 : 15년차 마케터가 직접 AI 툴을 써보고 정리한 인사이트를 공유하는 뉴스레터 https://lnkd.in/gUbuYu9M\n\n2. 챗대리의 AI 뉴스레터 : AI 관련 최신 뉴스와 함께 그 AI를 어떻게 쓰는지까지 함께 전달하는 뉴스레터 https://chatdaeri.com/\n\n3. 1프로 AI 뉴스레터 : 상위 1% AI 소식을 재미있고 빠르게 전달하는 뉴스레터. 초보자도 쉽게 이해할 수 있다고. https://lnkd.in/gWfZCe46\n\n4. Nomad Coders : 프로그래밍 트렌드와 IT 뉴스, 커뮤니티 소식을 전달하는 뉴스레터 https://lnkd.in/gHV9DN5X\n\n5. 썸원의 Summary&Edit : AI 시대 어떻게 사고하고 어떤 태도로 살아야 하는지에 대해 고민이 많다면 썸원 뉴스레터를 추천하다고. (AI뿐 아니라) 삶을 잘 살고 싶은 사람이라면 누구나 편하게 읽으며 자극 받기 좋은 뉴스레터로, 주말에 2편씩 다 읽으면 뿌듯하기까지 하다고!! https://lnkd.in/epS78DfC\n\n++ 브런치에서 이레 님이라는 분께서 쓰신 ‘마케터를 위한 AI 뉴스레터 추천 Top 5’를 참고했습니다. 그리고 누군지 모르지만 추천 감사합니다 ;)",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7422209803042742272?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7422209803042742272%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "프로젝트 썸원 Content Owner",
-      "images": [
-        "https://media.licdn.com/dms/image/v2/D5622AQF_KHojDG6VNQ/feedshare-shrink_1280/B56ZwD8fB9KkAc-/0/1769592713670?e=1772064000&v=beta&t=Rtk3icMafC1BZ6BCVocB46P3xFroF8vxrC4dctkOxL4"
-      ],
-      "user_link": "https://www.linkedin.com/in/ACoAACC2D84BJpzxT2C5mrDCykqwVjBnKqPntLo",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "image",
-      "source": "network",
-      "sequence_id": 131,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/a8ecc6ce365897e8c4ac58f9f91c6d63.jpg"
-      ]
-    },
-    {
-      "index": 22,
-      "code": "7422412489310777344",
-      "username": "조여준 Ethan Cho",
-      "created_at": "2026-01-29 07:57:19",
-      "time_text": "1주",
-      "full_text": "OpenAI가 McKinsey에게 준 \"감사패\"의 진짜 의미\n\n최근 흥미로운 사진 한 장을 봤습니다. OpenAI가 McKinsey & Company에게 준 기념패입니다. \"1000억 토큰 사용 돌파를 축하합니다\"라고 적혀 있고, OpenAI 로고가 새겨진 검은 원형 메달이 박혀 있습니다.\n\n언뜻 보면 단순한 감사의 표시 같지만, 저는 이 사진에서 세 가지 중요한 시그널을 읽었습니다.\n\n---\n\n첫째, OpenAI의 B2B 총력전이 시작됐습니다.\n\nOpenAI는 더 이상 ChatGPT 구독료에만 의존하는 회사가 아닙니다. 엔터프라이즈 고객을 붙잡기 위해 AWS나 Salesforce처럼 \"사용량 기반 충성도 프로그램\"을 가동하고 있습니다. 1000억 토큰이면 대략 수백만 달러 규모의 API 사용료입니다. OpenAI 입장에서 McKinsey는 절대 놓칠 수 없는 고객이고, 이런 상패는 그 관계를 공고히 하는 장치입니다.\n\n---\n\n둘째, 컨설팅 산업의 미래가 이 상패에 담겨 있습니다.\n\nMcKinsey가 1000억 토큰을 썼다는 건 무슨 뜻일까요? 과거에 주니어 컨설턴트들이 밤새 만들던 분석과 보고서를 이제 GPT가 대규모로 처리하고 있다는 뜻입니다.\n\n여기서 불편한 질문이 생깁니다. 만약 McKinsey 보고서의 상당 부분이 AI로 생성된다면, 클라이언트가 직접 AI를 쓰면 안 될 이유가 있을까요?\n\n솔직히 말하면, 컨설팅 보고서 몇 개만 입수해서 reverse engineering하면 비슷한 구조와 논리 전개의 80% 정도는 AI로 거의 공짜에 만들 수 있습니다. McKinsey의 진짜 가치는 \"브랜드\"와 \"네트워크\"와 \"정치적 커버\"인데, AI 시대에 그것만으로 지금의 프리미엄을 유지할 수 있을지는 의문입니다.\n\n---\n\n셋째, 이 감사패는 정말 감사패일까요, 아니면 족쇄일까요?\n\n유튜브의 실버/골드/다이아몬드 버튼 전략을 떠올려 보세요. 유튜브가 크리에이터에게 버튼을 주는 건 \"축하\"가 아니라 \"결박\"입니다. 크리에이터가 그 버튼을 벽에 걸고 SNS에 자랑하는 순간, 그 사람의 정체성은 \"유튜버\"로 고정됩니다. 다른 플랫폼으로 떠나기가 심리적으로 훨씬 어려워집니다.\n\nOpenAI도 똑같은 플레이를 하고 있습니다. McKinsey가 저 상패를 사무실에 전시하는 순간, 내부적으로 \"우리는 OpenAI의 프리미엄 파트너\"라는 내러티브가 형성됩니다. 이후 Anthropic이나 Google로 전환하자는 제안이 나오면 \"우리가 OpenAI랑 이런 관계인데?\"라는 무의식적 저항이 생기게 됩니다.\n\n상패 하나로 switching cost를 심리적으로 높이는 겁니다. 영리한 전략입니다.\n\n---\n\n결론\n\n이 작은 상패 하나에 AI 시대의 권력 구조가 압축되어 있습니다. 플랫폼은 고객을 묶어두려 하고, 전통 산업은 자신을 대체할 기술에 의존하게 되고, 그 와중에 진짜 가치가 어디에 있는지는 점점 흐려집니다.\n\nMcKinsey 입장에서 저 상패를 자랑스럽게 전시할수록, 역설적으로 \"우리 일의 상당 부분이 AI로 대체 가능합니다\"라고 광고하는 셈이 됩니다.\n\n감사패인 동시에 묘비명이 될 수도 있는, 아이러니한 물건입니다.",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7422412489310777344?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7422412489310777344%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "CIO @ TheVentures | ex-Google, Samsung",
-      "images": [
-        "https://media.licdn.com/dms/image/v2/D5622AQFbeylhP-DG3A/feedshare-shrink_1280/B56ZwG007HHQAc-/0/1769641037722?e=1772064000&v=beta&t=62PjraFgpkXVG3a3yNU0nJJ6Z_GsgPCs2Ad8A4XOkfs"
-      ],
-      "user_link": "https://www.linkedin.com/in/ACoAAARknekBOFFETpmlSPqmlb2P8ln4iACFaJg",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "image",
-      "source": "network",
-      "sequence_id": 134,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/089dd8d402ad80707300683350339ed8.jpg"
-      ]
-    },
-    {
-      "index": 23,
-      "code": "7422409393570344960",
-      "username": "정구봉 Goobong Jeong",
-      "created_at": "2026-01-29 07:45:01",
-      "time_text": "1주",
-      "full_text": "이 작은 앱을 저는 앞으로 항상 켜놓을거에요. Jongwon Choi님이 Claude Code 의 Tasks를 추적하는 앱을 만들어주셨어요.\n\nClaude Code로 복잡한 작업을 시키면 TodoWrite 도구로 할 일 목록을 만들어요.\n문제는 이게 터미널 안에 묻혀서 잘 안 보인다는 거죠.\n\n이 앱은 그 태스크들을 플로팅 윈도우로 띄워줍니다.\n\n주요 기능:\n- 파일 변경 시 자동 새로고침\n- 세션별로 필터링 가능\n- ⌘E로 태스크 바로 수정\n- ▶ 버튼으로 해당 세션 터미널에서 바로 열기\n\nGitHub: https://lnkd.in/gFNPP24Q\n\n세션 여러 개 돌리시는 분들 진짜 추천드립니다!",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7422409393570344960?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7422409393570344960%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "Claude Code for all of your work",
-      "images": [
-        "https://media.licdn.com/dms/image/v2/D5605AQF7SBM1hbI3yQ/videocover-high/B56ZwFwUBgIwBU-/0/1769623078495?e=1770976800&v=beta&t=XHGZiH_Dl1Nl2_CmCuHge9NfXZOvodukn0kB6_klD_A"
-      ],
-      "user_link": "https://www.linkedin.com/in/ACoAACY7KJQBDtSTk6IuIwZY6ntBGJx1fCYwsYI",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "image",
-      "source": "network",
-      "sequence_id": 133,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/1c5e5d091bdeaac36106e39973b10241.jpg"
-      ]
-    },
-    {
-      "index": 24,
-      "code": "7422035691510984705",
-      "username": "정구봉 Goobong Jeong",
-      "created_at": "2026-01-28 07:00:03",
-      "time_text": "1주",
-      "full_text": "더 많은 사람에게 토큰을 더 많이 쓰게 해주는 도구가 사랑받고 있습니다. Claude Code -> oh my opencode -> Pencil로 넘어갑니다.\n이것의 근간은 Claude max $200로 토큰을 할인 받아 사는 것입니다. 토큰을 더 많이 쓸수록(=클로드 코드를 더 많이 쓰면) 유저가 승리하는 구조가 만들어지고 있습니다.\n\n시간 순으로 보면 토큰을 많이 쓰는게 점점 쉬워진다는게 체감됩니다.\n\n1. Multi Clauding: 긴 세션의 시작\n이때는 세션을 여러 개 켜서 Multi Clauding했어요. worktree 를 쓰면서 여러 개의 피처를 동시에 개발하는데 엄청난 노력이 필요했어요.\n사람들은 프롬프트를 저장해두고 상황에 맞는 파일을 호출해서 사용했어요. 퓨샷, COT 같은 기법을 적용하는 노력도 필요했어요.\n극소수의 사람들이 session limit에 도달했어요. Claude max $200 플랜으로 한 달에 $2000, $3000 어치 토큰을 썼다고 자랑하는 문화가 있었죠.\n\n2. Skills: 복잡한 프롬프트 활용법 등장\n프롬프트를 사용하는 Best Practice가 프로토콜 수준으로 정의됐어요. Skills 는 다른 도구(Subagents, hooks, ...)들과 달리 그냥 프롬프트에요. 그냥 md 파일(=줄글)이에요. 그래서 Claude Code에서만 동작하는 게 아니라 다 됩니다.\n특히 Skills를 Subagents와 물려서 사용하다보면 좀 하는 개발자들은 session limit에 도달했어요.\n\n3. Plugin: Oh my opencode로 대표되는, 남이 만들어둔 세팅을 가져와서 사용\n개발자인데 Claude Code를 쓴다면 누구나 한 번쯤 리밋에 도달해요. 누군가 훌륭하게 만들어둔 플러그인을 그대로 따라만 써도 토큰을 왕창 쓸 수 있거든요.\n끝판왕은 Oy my opencode에요. ultrawork 몇 번 치면 개발자 누구나 session limit 에 도달해요.\n\n4. Pencil: Claude Code 위에서 도는 서비스의 강력한 퍼포먼스\nClaude Agent SDK를 활용하면 내 로컬 Claude Code을 직접 사용하면서 여기서 token을 차감해요. Pencil을 써보면 결과물 퀄리티가 굉장히 좋은데요. 왜냐면 Claude를 무지막지하게 돌리거든요.\n이제는 CLI가 아니라 훨씬 더 많은 사람한테 친숙한 UI가 붙기 시작했어요. 혁신적인 UI는 필요 없었고, 그냥 Figma랑 똑같이 생긴 뷰를 붙이면 돼요. 필요한 건 채팅창과 Claude $200 구독이었고요.\n\n여기서 변한 건 AI를 쓰는 방식이에요. Claude Code -> Skills -> Plugin -> SDK. 이런 걸 Harness라고도 하죠. 계속 정교해지고 있어요.\n변하지 않는 건 max 구독이에요. $200를 구독해야 토큰을 최대한으로 할인받거든요. 월 $200 구독해서(할인 마트에 가면), 하루에 $200어치 토큰을 쓸 수 있어요.\n\nMore tokens, more wins",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7422035691510984705?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7422035691510984705%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "Claude Code for all of your work",
+      "full_text": "SaaS 주식은 반토막, AI 스타트업은 수십 배 멀티플\n\n2026년 1월, HubSpot 주가는 1년 만에 51% 하락했습니다. 같은 기간 Harvey는 밸류에이션이 30억에서 80억 달러로 뛰며 매출 대비 80배 멀티플을 받고 있습니다. 공개 시장 SaaS는 역사상 최악, 비공개 AI 스타트업은 역사상 최고. 같은 시대, 같은 소프트웨어 산업입니다. Morgan Stanley의 SaaS 지수는 2026년 들어 18일 만에 15% 하락했습니다. 2022년 이후 최악의 시작입니다. 같은 기간 나스닥 100은 사상 최고치 근처입니다. 단순한 주가 조정일까요? 아니면 지난 10여년간 유효했던 SaaS 투자 공식 자체가 무너지고 있는 것일까요?\n\n1. 숫자가 말하는 것\n\n2026년 들어 단 18일 만에 Atlassian은 27% 하락했습니다. Jira를 모르는 개발 조직이 없는 회사입니다. Intuit는 18% 하락. TurboTax, QuickBooks, Mailchimp를 가진 회사입니다. Adobe는 15% 하락. 크리에이티브 툴의 독점 기업입니다. Monday.com은 44% 하락. ServiceNow는 36% 하락. 이들은 카테고리를 정의하고, 현금을 창출하고, 해자를 가진 비즈니스들입니다. 그런데 시장은 이들을 매출 대비 6-12배 수준으로 평가합니다.\n\n반면 AI 네이티브 회사들을 보겠습니다. Harvey는 ARR 1억 달러에 80억 달러 밸류에이션, 80배 멀티플입니다. ElevenLabs는 ARR 3.3억 달러에 110억 달러 협상 중, 약 33배입니다. Cursor는 ARR 10억 달러에 293억 달러 밸류에이션, 약 29배입니다. 전통 SaaS 대비 3-10배 높은 멀티플입니다.\n\n2. 투자 논리의 붕괴\n\n15년간 SaaS 투자 논리는 명확했습니다. 지금은 빠르게 성장하고, 나중에 현금을 수확한다. 적자를 감수하며 고객을 확보하면, 언젠가 그 고객들이 안정적인 현금흐름이 된다. 많은 SaaS 회사가 투자자와 직원에게 이 꿈을 셀링했습니다. 하지만 이제 AI가 이 공식의 양쪽 모두를 위협합니다. 단기적으로는 그 성장이 더 싼 AI 솔루션에 추월당하지 않을까? 장기적으로는 수확할 것이 남아있기는 할까에 대한 우려가 커지고 있습니다. Melius Research의 Ben Reitzes는 이 현상을 클레이튼 크리스텐슨의 혁신기업의 딜레마로 규정했습니다. 기존 SaaS 회사들은 AI-last, seat-first입니다. 그들의 수익 모델이 바로 그들을 가두는 감옥이 됩니다.\n\n3. SaaS의 본질: Heuristics + APIs + CRUD\n\n기존 SaaS가 하는 일을 분해하면 세 가지입니다. Heuristics. 규칙 기반 로직입니다. 마감 3일 전에 알림을 보내고, 리드 점수가 70 이상이면 영업팀에 배정합니다. APIs. 시스템 간 연결입니다. Zapier가 하는 일, 각종 인테그레이션이 하는 일입니다. CRUD. 데이터를 생성하고, 읽고, 수정하고, 삭제합니다. SaaS의 가치는 무엇이었을까요? 이 복잡한 로직과 데이터 조작을 사람이 쉽게 쓸 수 있도록 UI로 감싼 것입니다.\n\n4. AI가 우회하는 것\n\nLLM과 Function Calling이 등장하면서 흐름이 바뀝니다. UI 레이어가 우회됩니다. Heuristics는 LLM이 자연어로 규칙을 이해하고 실행합니다. 마감 3일 전에 알림이라고 코딩할 필요 없이, 중요한 마감이 다가오면 알려줘라고 말하면 됩니다. APIs는 LLM이 직접 호출합니다. Function calling입니다. CRUD는 LLM이 데이터를 직접 조작합니다. 태스크 관리 도구를 예로 들어보겠습니다. 사람이 AI 에이전트에게 이번 주 할 일 정리해줘라고 말하면, 에이전트가 캘린더와 이메일을 읽고 직접 태스크를 관리합니다. 사람이 보드를 열어서 카드를 드래그할 필요가 없어집니다. 태스크 관리 UI라는 중간 레이어 자체가 불필요해질 수 있습니다.\n\n5. 시스템 오브 레코드인가\n\n모든 SaaS가 똑같이 위험한 것은 아닙니다. 핵심 질문이 있습니다. 그 제품이 시스템 오브 레코드인가? Salesforce CRM은 고객 데이터의 진실의 원천입니다. AI에게 고객 정보 알려줘라고 하면, 그 데이터가 있는 곳을 조회해야 합니다. Workday는 HR 데이터의 진실의 원천입니다. 직원 정보, 급여 정보가 거기 있습니다. 하지만 태스크 관리 도구는? 이번 주 태스크 보여줘라는 질문에 AI 에이전트는 캘린더와 이메일에서 직접 추론할 수 있습니다. 별도의 태스크 데이터베이스가 필수가 아닙니다. 태스크 관리, 소셜 미디어 관리 같은 seat-based application 카테고리가 가장 취약합니다. 이들은 시스템 오브 레코드가 아닙니다. 없어도 되는 레이어입니다.\n\n6. 3계층으로 보는 승자와 패자\n\nAI 시대의 소프트웨어 스택을 세 계층으로 나눠보면 시장의 판단이 명확해집니다. UI와 워크플로우 레이어는 가치가 하락하고 있습니다. AI 에이전트가 우회하는 지점입니다. 데이터 레이어는 가치가 유지됩니다. AI 에이전트도 데이터를 저장하고 읽어야 합니다. 컴퓨팅 인프라 레이어는 가치가 상승하고 있습니다. 2026년 들어 Lam Research +30%, ASML +27%, Micron +27%. 전부 인프라 레이어입니다. IDC는 2028년까지 순수 seat-based pricing이 소멸할 것으로 예측합니다. 사람 수에 따라 돈을 받는 모델은 사람이 직접 UI를 쓸 때만 유효합니다.\n\n7. 결국 무엇이 바뀌었나\n\nD.A. Davidson의 Gil Luria는 이렇게 말합니다. \"AI가 아직 이 비즈니스들을 실제로 파괴하지는 않았다. 하지만 시장의 컨센서스는 AI가 모든 것을 파괴할 것이라는 쪽이다.\" 아직 실제로 파괴되지 않았습니다. 하지만 시장은 이미 파괴를 가격에 반영하고 있습니다. Heuristics + APIs + CRUD를 UI로 감싸서 seat 단위로 파는 시대. 그 시대가 끝나가고 있습니다.",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7422768008177074177?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7422768008177074177%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "CAIO & Deputy CEO @ Channel Corp | AI × B2B SaaS",
       "images": [],
-      "user_link": "https://www.linkedin.com/in/ACoAACY7KJQBDtSTk6IuIwZY6ntBGJx1fCYwsYI",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "user_link": "https://www.linkedin.com/in/ACoAAA5RhH4BjDv2vMF1Onz2ppvG6jeLmEGo93E",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "text",
       "source": "network",
-      "sequence_id": 129,
+      "sequence_id": 137,
       "sns_platform": "linkedin"
     },
     {
-      "index": 25,
-      "code": "7413704535048908801",
-      "username": "정구봉 Goobong Jeong",
-      "created_at": "2026-01-05 07:15:01",
-      "time_text": "1개월",
-      "full_text": "X에서 프론티어들이 말하는 걸 보고, 주변에서 정말 잘 쓰는 사람을 보면서 깨달았습니다. 이건 이제 배워야 하는 영역인데, 절대 쉽지 않습니다. Claude Code를 만든 Boris는 터미널에서 5개, 웹에서 10개. 15개의 Claude를 동시에 돌립니다.\n\n가을까지만 해도 저는 이렇게 말하고 다녔습니다.\n\"Claude Code 숙련도? 그냥 AI랑 대화 잘하면 되는 거 아니야?\"\n\n틀렸습니다.\n\n안드레이 카파시가 연말에 말한 것처럼, 새롭게 코딩하는 방식은 AI와 잘 대화하는 멘탈 모델을 뛰어넘었습니다.\n\n---\n\nBoris가 며칠 전 X에 자신의 워크플로우를 공개했습니다.\nhttps://lnkd.in/ghw4Ym6r\n\n1. 대부분의 세션은 Plan mode로 시작한다. 좋은 계획이 있으면 Claude가 one-shot으로 해낸다\n2. 매일 수십 번 쓰는 워크플로우는 slash command로 만들어둔다\n3. PostToolUse hook으로 코드 포맷팅을 자동화한다\n4. 오래 걸리는 작업은 background agent나 Stop hook으로 검증한다\n\n핵심은 마지막 문장이었습니다.\n\"Claude에게 자기 작업을 검증할 방법을 주면, 결과 품질이 2-3배 올라간다.\"\n\n---\n\noh my opencode라는 프로젝트도 있습니다.\nhttps://lnkd.in/g9AQjv5v\nGPT 5.2로 설계하고, Gemini 3 Pro로 프론트엔드 쓰고, Claude Opus 4.5로 백엔드 쓰고.\n막히면 다른 모델에게 도움받고, 완료되면 다시 검토시킵니다.\n\n이 프로젝트가 말하는 핵심 개념이 있습니다.\n\"당신의 에이전트는 이제 개발팀 리드입니다. 당신은 AI Manager입니다.\"\n\n---\n\n저도 이렇게 일합니다.\n\nclarify라는 스킬을 만들었습니다.\n\"clarify\"라고 한 마디 하면, Claude가 AskUserQuestion으로 3단계 질문을 던집니다.\n저는 엔터만 치면서 모호함을 없앱니다.\n\nvideo-subtitle이라는 스킬도 있습니다.\n영상 하나 던지면 3개의 서브에이전트가 순차적으로 돌아갑니다.\nsubtitle-generator가 STT로 추출하고, subtitle-cleaner가 중복을 정리하고, subtitle-corrector가 발표자료 보면서 오류를 교정합니다.\n\n이런 스킬과 에이전트들을 GitHub에 공개하고 있습니다.\nhttps://lnkd.in/gCspfYKR\n\n---\n\n이렇게 일하는 우리는 완전히 다른 고민을 합니다.\n\nSkill을 트리거해서 SubAgent를 부를지.\nAskUserQuestion을 어떻게 활용하게 할지.\n심지어 난독화된 Claude Code 코드를 에이전트에게 읽혀서 \"서브에이전트는 서브에이전트를 부를 수 없다\"는 제약을 알아내기도 합니다.\n\nClaude Code 리밋에 도달할 줄 아는 사람의 가치가 점점 높아집니다.\n이 사람은 LLM이 어떻게 동작하는지 알고, 목표를 LLM에 정렬할 줄 아는 인재이기 때문입니다.\n\n---\n\n이 새로운 방식을 체계적으로 배워야 합니다.\n하지만 배울 매뉴얼이 없습니다.\n\n그래서 프론티어에 있는 사람들이 뭉치게 되는 것 같습니다.\n우리끼리 있어야 서로 배울 게 있기 때문입니다.\n\n아주 작은 커뮤니티에서 서로 공유하면서 배우고 있는데, 진짜 자극을 많이 느낍니다.",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7413704535048908801?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7413704535048908801%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "Claude Code for all of your work",
-      "images": [],
-      "user_link": "https://www.linkedin.com/in/ACoAACY7KJQBDtSTk6IuIwZY6ntBGJx1fCYwsYI",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "text",
-      "source": "network",
-      "sequence_id": 92,
-      "sns_platform": "linkedin"
-    },
-    {
-      "index": 26,
       "code": "7422622332021604353",
       "username": "Dong Keun Jo",
       "created_at": "2026-01-29 21:51:09",
@@ -4426,7 +4534,7 @@ const snsFeedData = {
         "https://media.licdn.com/dms/image/v2/D4D22AQEe9jnSDmCvUA/feedshare-shrink_1280/B4DZwJzrQtKEAc-/0/1769691067910?e=1772064000&v=beta&t=nN_bJ1Q46OHHkgsojFZ7kDbk_XEt3Th-nGYuRvZR8Ww"
       ],
       "user_link": "https://www.linkedin.com/in/ACoAACfVcCwBC2Um-3YmtYg58LwMarvLd6JsHsE",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "image",
       "source": "network",
       "sequence_id": 136,
@@ -4436,29 +4544,6 @@ const snsFeedData = {
       ]
     },
     {
-      "index": 27,
-      "code": "7414175957487562752",
-      "username": "홍민지Hong Minji",
-      "created_at": "2026-01-06 14:28:16",
-      "time_text": "1개월",
-      "full_text": "새해 업무, 노션 세팅으로 시작했습니다. 제 개인 업무 관리 최적화 방법을 공유합니다!\n\n1. DB 구조 : 상위 개념인 Project DB와 일일 업무를 관리하는 Works DB로 나눕니다. 일일 업무는 '완료'가 명확하도록 단위별로 잘게 쪼개는 것이 핵심입니다. 그래야 태스크의 과중과 실행 관계를 파악하기 좋습니다.\n\n2. DB 연결 : 쪼개진 태스크(Works)를 상위 프로젝트(Project)와 연결해둡니다. 이렇게 하면 개별 태스크 관리와 프로젝트 관리가 서로 연동되어, 현재 내가 어떤 프로젝트에 집중하고 있는지 숲과 나무를 동시에 볼 수 있습니다.\n\n3. MCP : 노션 MCP를 연결해 클로드 코드로 관리하니 일괄 수정과 업무 분석이 정말 편합니다. 작년 커뮤니티 팀 업무를 분석해보니 [마케팅 30%, 디자인 25%, 운영 25%, 영상 제작 20%]로 골고루 분포되어 있어 흥미로웠습니다.\n\n올해는 DB 구조를 좀 더 발전시켜, 업무 과정의 인사이트와 레슨런까지 기록해 실질적인 성장을 돕는 업무관리 시스템으로 만들어보려 합니다.\n\n#Notion #MCP #업무관리 #업무효율화",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7414175957487562752?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7414175957487562752%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "Creative Marketer @MODULABS AX",
-      "images": [
-        "https://media.licdn.com/dms/image/v2/D5622AQFy16kZLNDQQQ/feedshare-shrink_2048_1536/B56ZuRxvjNJMAw-/0/1767677295439?e=1772064000&v=beta&t=98kvEc2QoYat7OM84cydQKGKZPYXdUiX7UjqS5PPw68"
-      ],
-      "user_link": "https://www.linkedin.com/in/ACoAADhcEVQBJOMtD7wMMWcOw9aFJeD_ao2VW0Y",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "image",
-      "source": "network",
-      "sequence_id": 96,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/e92aeb0aea15c7ee86c853eebb2e93aa.jpg"
-      ]
-    },
-    {
-      "index": 28,
       "code": "7422584216384774144",
       "username": "BZCF - 비즈까페",
       "created_at": "2026-01-29 19:19:42",
@@ -4470,7 +4555,7 @@ const snsFeedData = {
         "https://media.licdn.com/dms/image/v2/D5622AQFczUWxZq1L5Q/feedshare-shrink_2048_1536/B56ZwJRAnnKsAo-/0/1769681980087?e=1772064000&v=beta&t=zmfABIFlzSplS_MJjXqTNvZWl_tPheHF6kY_gtCQGIU"
       ],
       "user_link": "https://www.linkedin.com/in/ACoAADosSpABPU4--68Ki5nk1NUfCtpau6AMoJs",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "image",
       "source": "network",
       "sequence_id": 135,
@@ -4480,7 +4565,127 @@ const snsFeedData = {
       ]
     },
     {
-      "index": 29,
+      "code": "7422412489310777344",
+      "username": "조여준 Ethan Cho",
+      "created_at": "2026-01-29 07:57:19",
+      "time_text": "1주",
+      "full_text": "OpenAI가 McKinsey에게 준 \"감사패\"의 진짜 의미\n\n최근 흥미로운 사진 한 장을 봤습니다. OpenAI가 McKinsey & Company에게 준 기념패입니다. \"1000억 토큰 사용 돌파를 축하합니다\"라고 적혀 있고, OpenAI 로고가 새겨진 검은 원형 메달이 박혀 있습니다.\n\n언뜻 보면 단순한 감사의 표시 같지만, 저는 이 사진에서 세 가지 중요한 시그널을 읽었습니다.\n\n---\n\n첫째, OpenAI의 B2B 총력전이 시작됐습니다.\n\nOpenAI는 더 이상 ChatGPT 구독료에만 의존하는 회사가 아닙니다. 엔터프라이즈 고객을 붙잡기 위해 AWS나 Salesforce처럼 \"사용량 기반 충성도 프로그램\"을 가동하고 있습니다. 1000억 토큰이면 대략 수백만 달러 규모의 API 사용료입니다. OpenAI 입장에서 McKinsey는 절대 놓칠 수 없는 고객이고, 이런 상패는 그 관계를 공고히 하는 장치입니다.\n\n---\n\n둘째, 컨설팅 산업의 미래가 이 상패에 담겨 있습니다.\n\nMcKinsey가 1000억 토큰을 썼다는 건 무슨 뜻일까요? 과거에 주니어 컨설턴트들이 밤새 만들던 분석과 보고서를 이제 GPT가 대규모로 처리하고 있다는 뜻입니다.\n\n여기서 불편한 질문이 생깁니다. 만약 McKinsey 보고서의 상당 부분이 AI로 생성된다면, 클라이언트가 직접 AI를 쓰면 안 될 이유가 있을까요?\n\n솔직히 말하면, 컨설팅 보고서 몇 개만 입수해서 reverse engineering하면 비슷한 구조와 논리 전개의 80% 정도는 AI로 거의 공짜에 만들 수 있습니다. McKinsey의 진짜 가치는 \"브랜드\"와 \"네트워크\"와 \"정치적 커버\"인데, AI 시대에 그것만으로 지금의 프리미엄을 유지할 수 있을지는 의문입니다.\n\n---\n\n셋째, 이 감사패는 정말 감사패일까요, 아니면 족쇄일까요?\n\n유튜브의 실버/골드/다이아몬드 버튼 전략을 떠올려 보세요. 유튜브가 크리에이터에게 버튼을 주는 건 \"축하\"가 아니라 \"결박\"입니다. 크리에이터가 그 버튼을 벽에 걸고 SNS에 자랑하는 순간, 그 사람의 정체성은 \"유튜버\"로 고정됩니다. 다른 플랫폼으로 떠나기가 심리적으로 훨씬 어려워집니다.\n\nOpenAI도 똑같은 플레이를 하고 있습니다. McKinsey가 저 상패를 사무실에 전시하는 순간, 내부적으로 \"우리는 OpenAI의 프리미엄 파트너\"라는 내러티브가 형성됩니다. 이후 Anthropic이나 Google로 전환하자는 제안이 나오면 \"우리가 OpenAI랑 이런 관계인데?\"라는 무의식적 저항이 생기게 됩니다.\n\n상패 하나로 switching cost를 심리적으로 높이는 겁니다. 영리한 전략입니다.\n\n---\n\n결론\n\n이 작은 상패 하나에 AI 시대의 권력 구조가 압축되어 있습니다. 플랫폼은 고객을 묶어두려 하고, 전통 산업은 자신을 대체할 기술에 의존하게 되고, 그 와중에 진짜 가치가 어디에 있는지는 점점 흐려집니다.\n\nMcKinsey 입장에서 저 상패를 자랑스럽게 전시할수록, 역설적으로 \"우리 일의 상당 부분이 AI로 대체 가능합니다\"라고 광고하는 셈이 됩니다.\n\n감사패인 동시에 묘비명이 될 수도 있는, 아이러니한 물건입니다.",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7422412489310777344?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7422412489310777344%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "CIO @ TheVentures | ex-Google, Samsung",
+      "images": [
+        "https://media.licdn.com/dms/image/v2/D5622AQFbeylhP-DG3A/feedshare-shrink_1280/B56ZwG007HHQAc-/0/1769641037722?e=1772064000&v=beta&t=62PjraFgpkXVG3a3yNU0nJJ6Z_GsgPCs2Ad8A4XOkfs"
+      ],
+      "user_link": "https://www.linkedin.com/in/ACoAAARknekBOFFETpmlSPqmlb2P8ln4iACFaJg",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "image",
+      "source": "network",
+      "sequence_id": 134,
+      "sns_platform": "linkedin",
+      "local_images": [
+        "web_viewer/images/089dd8d402ad80707300683350339ed8.jpg"
+      ]
+    },
+    {
+      "code": "7422409393570344960",
+      "username": "정구봉 Goobong Jeong",
+      "created_at": "2026-01-29 07:45:01",
+      "time_text": "1주",
+      "full_text": "이 작은 앱을 저는 앞으로 항상 켜놓을거에요. Jongwon Choi님이 Claude Code 의 Tasks를 추적하는 앱을 만들어주셨어요.\n\nClaude Code로 복잡한 작업을 시키면 TodoWrite 도구로 할 일 목록을 만들어요.\n문제는 이게 터미널 안에 묻혀서 잘 안 보인다는 거죠.\n\n이 앱은 그 태스크들을 플로팅 윈도우로 띄워줍니다.\n\n주요 기능:\n- 파일 변경 시 자동 새로고침\n- 세션별로 필터링 가능\n- ⌘E로 태스크 바로 수정\n- ▶ 버튼으로 해당 세션 터미널에서 바로 열기\n\nGitHub: https://lnkd.in/gFNPP24Q\n\n세션 여러 개 돌리시는 분들 진짜 추천드립니다!",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7422409393570344960?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7422409393570344960%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "Claude Code for all of your work",
+      "images": [
+        "https://media.licdn.com/dms/image/v2/D5605AQF7SBM1hbI3yQ/videocover-high/B56ZwFwUBgIwBU-/0/1769623078495?e=1770980400&v=beta&t=3ykuQO0-JBSlIMMTYe_UYiWYiQx544-AhxC_FCa1I5U"
+      ],
+      "user_link": "https://www.linkedin.com/in/ACoAACY7KJQBDtSTk6IuIwZY6ntBGJx1fCYwsYI",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "image",
+      "source": "network",
+      "sequence_id": 133,
+      "sns_platform": "linkedin",
+      "local_images": [
+        "web_viewer/images/5bae7eb84ad23ac30816aa4f229ac375.jpg"
+      ]
+    },
+    {
+      "code": "7422400422361096192",
+      "username": "한성국",
+      "created_at": "2026-01-29 07:09:22",
+      "time_text": "1주",
+      "full_text": "입찰 제안서 작성, 에이전트로 자동화합니다.\n\n광고대행사 다닐 때\n가장 시간이 많이 걸렸던 업무가\n바로 제안서 작성이었어요.\n\n자료 조사부터 경쟁사 분석,\n전략 기획까지 하다 보면\n며칠이 훌쩍 지나가더라고요.\n\n그래서 이번에\n클로드코드와 AI 에이전트를 활용해\n입찰 제안서 자동화 시스템을 구축하고 있습니다.\n\n기존에는\n① 시장 조사\n② 경쟁사 분석\n③ 전략 수립\n④ 제안서 작성\n이 과정을 전부 수작업으로 했는데\n\n이제는\n① 기본 정보 입력\n② 에이전트가 리서치 + 초안 작성\n③ 검토 후 수정\n이렇게 바뀝니다.\n\n어느 정도의 결과물이 나올지\n직접 만들면서 공유해드릴게요… 더 보기",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7422400422361096192?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7422400422361096192%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "이커머스 운영 비용을 절반으로 줄이는 AI 시스템을 공유합니다",
+      "images": [
+        "https://media.licdn.com/dms/image/v2/D5622AQFOCdK1U8rHHQ/feedshare-shrink_2048_1536/B56ZwGp2smJwAk-/0/1769638161387?e=1772064000&v=beta&t=g8TEYQcVhdi68mwGmc7U9mIGHShaexnGnPjC7cvNJaY"
+      ],
+      "user_link": "https://www.linkedin.com/in/ACoAAEYsARgBdQazrHf4u7lcZ1nlSjTNE7YbpOs",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "image",
+      "source": "network",
+      "sequence_id": 132,
+      "sns_platform": "linkedin",
+      "local_images": [
+        "web_viewer/images/51eee5547faa709833bc2adc18a5ec08.jpg"
+      ]
+    },
+    {
+      "code": "7422209803042742272",
+      "username": "윤썸원",
+      "created_at": "2026-01-28 18:31:55",
+      "time_text": "1주",
+      "full_text": "<AI를 잘 쓰고 싶은 사람이라면 무조건 구독한다는 뉴스레터 Top 5>\n\n1. 일잘러의 성장 노트 : 15년차 마케터가 직접 AI 툴을 써보고 정리한 인사이트를 공유하는 뉴스레터 https://lnkd.in/gUbuYu9M\n\n2. 챗대리의 AI 뉴스레터 : AI 관련 최신 뉴스와 함께 그 AI를 어떻게 쓰는지까지 함께 전달하는 뉴스레터 https://chatdaeri.com/\n\n3. 1프로 AI 뉴스레터 : 상위 1% AI 소식을 재미있고 빠르게 전달하는 뉴스레터. 초보자도 쉽게 이해할 수 있다고. https://lnkd.in/gWfZCe46\n\n4. Nomad Coders : 프로그래밍 트렌드와 IT 뉴스, 커뮤니티 소식을 전달하는 뉴스레터 https://lnkd.in/gHV9DN5X\n\n5. 썸원의 Summary&Edit : AI 시대 어떻게 사고하고 어떤 태도로 살아야 하는지에 대해 고민이 많다면 썸원 뉴스레터를 추천하다고. (AI뿐 아니라) 삶을 잘 살고 싶은 사람이라면 누구나 편하게 읽으며 자극 받기 좋은 뉴스레터로, 주말에 2편씩 다 읽으면 뿌듯하기까지 하다고!! https://lnkd.in/epS78DfC\n\n++ 브런치에서 이레 님이라는 분께서 쓰신 ‘마케터를 위한 AI 뉴스레터 추천 Top 5’를 참고했습니다. 그리고 누군지 모르지만 추천 감사합니다 ;)",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7422209803042742272?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7422209803042742272%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "프로젝트 썸원 Content Owner",
+      "images": [
+        "https://media.licdn.com/dms/image/v2/D5622AQF_KHojDG6VNQ/feedshare-shrink_1280/B56ZwD8fB9KkAc-/0/1769592713670?e=1772064000&v=beta&t=Rtk3icMafC1BZ6BCVocB46P3xFroF8vxrC4dctkOxL4"
+      ],
+      "user_link": "https://www.linkedin.com/in/ACoAACC2D84BJpzxT2C5mrDCykqwVjBnKqPntLo",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "image",
+      "source": "network",
+      "sequence_id": 131,
+      "sns_platform": "linkedin",
+      "local_images": [
+        "web_viewer/images/a8ecc6ce365897e8c4ac58f9f91c6d63.jpg"
+      ]
+    },
+    {
+      "code": "7422209668422324224",
+      "username": "Bumgeun Song",
+      "created_at": "2026-01-28 18:31:22",
+      "time_text": "1주",
+      "full_text": "<이젠 없이 못 사는 Claude Code 단축키 Top 7>\n\n최근 ‘이건 완전 꿀팁이다’ 싶은 단축키를 많이 배웠다. 나만 잘 써먹을 수 없어 공유해본다 😀\n\n1️⃣ Ctrl+Z — 잠깐 멈추고 터미널 쓰기\nClaude를 백그라운드로 보내고, 다른 터미널 작업 후 fg로 복귀. 긴 작업 중 잠깐 다른 거 확인할 때 필수.\n\n2️⃣ ! — Bash 모드 전환\n입력창에 ! 치면 바로 터미널 명령어 실행 가능. Claude한테 시키기 애매한 간단한 명령은 직접 처리.\n\n3️⃣ Ctrl+G — 멀티라인 편집\n긴 프롬프트 작성하거나, Plan 모드에서 중간 수정할 때 에디터 열고 수정한 뒤 저장. AskUserQuestion에서 선택지 외 답변도 길게 가능.\n\n4️⃣ Ctrl+S — 프롬프트 임시 저장(Stash)\n쓰던 프롬프트 잠깐 치워두고 다른 명령 확인. 다시 Ctrl+S 누르면 복구됨.\n\n5️⃣ Esc+Esc — 코드 + 대화 함께 롤백\nClaude가 이상한 방향으로 갔을 때 되돌리기. Git commit 없이도 rewind 가능.\n\n6️⃣ Ctrl+W — 단어 단위 삭제\nBackspace 연타 대신 단어 통째로 삭제. 오타 수정, 파일명 바꿀 때 매우 유용!\n\n7️⃣ Ctrl+A / Ctrl+E — 줄 처음/끝 점프\n긴 프롬프트 앞부분 수정하거나 끝에 추가할 때. 화살표 연타는 이제 안녕~",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7422209668422324224?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7422209668422324224%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "Product Engineer @ Toss",
+      "images": [
+        "https://media.licdn.com/dms/image/v2/D5610AQEYR3-BpXc5cQ/image-shrink_1280/B56ZwD8Sg7JIAc-/0/1769592662443?e=1770980400&v=beta&t=UFDNGtCYSNK9uuS2y3Gdc0BvNbYEQ5Fltnhc7HErcdI"
+      ],
+      "user_link": "https://www.linkedin.com/in/ACoAAB1vdP4Bi740ailUbogk4d8gvBrVCYug48w",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "image",
+      "source": "network",
+      "sequence_id": 130,
+      "sns_platform": "linkedin",
+      "local_images": [
+        "web_viewer/images/1ee321ff23c358c01abe01b81c093c2f.jpg"
+      ]
+    },
+    {
+      "code": "7422035691510984705",
+      "username": "정구봉 Goobong Jeong",
+      "created_at": "2026-01-28 07:00:03",
+      "time_text": "1주",
+      "full_text": "더 많은 사람에게 토큰을 더 많이 쓰게 해주는 도구가 사랑받고 있습니다. Claude Code -> oh my opencode -> Pencil로 넘어갑니다.\n이것의 근간은 Claude max $200로 토큰을 할인 받아 사는 것입니다. 토큰을 더 많이 쓸수록(=클로드 코드를 더 많이 쓰면) 유저가 승리하는 구조가 만들어지고 있습니다.\n\n시간 순으로 보면 토큰을 많이 쓰는게 점점 쉬워진다는게 체감됩니다.\n\n1. Multi Clauding: 긴 세션의 시작\n이때는 세션을 여러 개 켜서 Multi Clauding했어요. worktree 를 쓰면서 여러 개의 피처를 동시에 개발하는데 엄청난 노력이 필요했어요.\n사람들은 프롬프트를 저장해두고 상황에 맞는 파일을 호출해서 사용했어요. 퓨샷, COT 같은 기법을 적용하는 노력도 필요했어요.\n극소수의 사람들이 session limit에 도달했어요. Claude max $200 플랜으로 한 달에 $2000, $3000 어치 토큰을 썼다고 자랑하는 문화가 있었죠.\n\n2. Skills: 복잡한 프롬프트 활용법 등장\n프롬프트를 사용하는 Best Practice가 프로토콜 수준으로 정의됐어요. Skills 는 다른 도구(Subagents, hooks, ...)들과 달리 그냥 프롬프트에요. 그냥 md 파일(=줄글)이에요. 그래서 Claude Code에서만 동작하는 게 아니라 다 됩니다.\n특히 Skills를 Subagents와 물려서 사용하다보면 좀 하는 개발자들은 session limit에 도달했어요.\n\n3. Plugin: Oh my opencode로 대표되는, 남이 만들어둔 세팅을 가져와서 사용\n개발자인데 Claude Code를 쓴다면 누구나 한 번쯤 리밋에 도달해요. 누군가 훌륭하게 만들어둔 플러그인을 그대로 따라만 써도 토큰을 왕창 쓸 수 있거든요.\n끝판왕은 Oy my opencode에요. ultrawork 몇 번 치면 개발자 누구나 session limit 에 도달해요.\n\n4. Pencil: Claude Code 위에서 도는 서비스의 강력한 퍼포먼스\nClaude Agent SDK를 활용하면 내 로컬 Claude Code을 직접 사용하면서 여기서 token을 차감해요. Pencil을 써보면 결과물 퀄리티가 굉장히 좋은데요. 왜냐면 Claude를 무지막지하게 돌리거든요.\n이제는 CLI가 아니라 훨씬 더 많은 사람한테 친숙한 UI가 붙기 시작했어요. 혁신적인 UI는 필요 없었고, 그냥 Figma랑 똑같이 생긴 뷰를 붙이면 돼요. 필요한 건 채팅창과 Claude $200 구독이었고요.\n\n여기서 변한 건 AI를 쓰는 방식이에요. Claude Code -> Skills -> Plugin -> SDK. 이런 걸 Harness라고도 하죠. 계속 정교해지고 있어요.\n변하지 않는 건 max 구독이에요. $200를 구독해야 토큰을 최대한으로 할인받거든요. 월 $200 구독해서(할인 마트에 가면), 하루에 $200어치 토큰을 쓸 수 있어요.\n\nMore tokens, more wins",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7422035691510984705?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7422035691510984705%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "Claude Code for all of your work",
+      "images": [],
+      "user_link": "https://www.linkedin.com/in/ACoAACY7KJQBDtSTk6IuIwZY6ntBGJx1fCYwsYI",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "text",
+      "source": "network",
+      "sequence_id": 129,
+      "sns_platform": "linkedin"
+    },
+    {
       "code": "7421804762028961792",
       "username": "홍민지Hong Minji",
       "created_at": "2026-01-27 15:42:25",
@@ -4492,7 +4697,7 @@ const snsFeedData = {
         "https://media.licdn.com/dms/image/v2/D5622AQF8gMZVYRtm4w/feedshare-shrink_2048_1536/B56Zv.MGkNKQAk-/0/1769496144921?e=1772064000&v=beta&t=KZe4pGyQvudZk-Z6wBN6ZdH3XlU2QBJq2fuYuhlOUCU"
       ],
       "user_link": "https://www.linkedin.com/in/ACoAADhcEVQBJOMtD7wMMWcOw9aFJeD_ao2VW0Y",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "image",
       "source": "network",
       "sequence_id": 128,
@@ -4502,95 +4707,6 @@ const snsFeedData = {
       ]
     },
     {
-      "index": 30,
-      "code": "7422209668422324224",
-      "username": "Bumgeun Song",
-      "created_at": "2026-01-28 18:31:22",
-      "time_text": "1주",
-      "full_text": "<이젠 없이 못 사는 Claude Code 단축키 Top 7>\n\n최근 ‘이건 완전 꿀팁이다’ 싶은 단축키를 많이 배웠다. 나만 잘 써먹을 수 없어 공유해본다 😀\n\n1️⃣ Ctrl+Z — 잠깐 멈추고 터미널 쓰기\nClaude를 백그라운드로 보내고, 다른 터미널 작업 후 fg로 복귀. 긴 작업 중 잠깐 다른 거 확인할 때 필수.\n\n2️⃣ ! — Bash 모드 전환\n입력창에 ! 치면 바로 터미널 명령어 실행 가능. Claude한테 시키기 애매한 간단한 명령은 직접 처리.\n\n3️⃣ Ctrl+G — 멀티라인 편집\n긴 프롬프트 작성하거나, Plan 모드에서 중간 수정할 때 에디터 열고 수정한 뒤 저장. AskUserQuestion에서 선택지 외 답변도 길게 가능.\n\n4️⃣ Ctrl+S — 프롬프트 임시 저장(Stash)\n쓰던 프롬프트 잠깐 치워두고 다른 명령 확인. 다시 Ctrl+S 누르면 복구됨.\n\n5️⃣ Esc+Esc — 코드 + 대화 함께 롤백\nClaude가 이상한 방향으로 갔을 때 되돌리기. Git commit 없이도 rewind 가능.\n\n6️⃣ Ctrl+W — 단어 단위 삭제\nBackspace 연타 대신 단어 통째로 삭제. 오타 수정, 파일명 바꿀 때 매우 유용!\n\n7️⃣ Ctrl+A / Ctrl+E — 줄 처음/끝 점프\n긴 프롬프트 앞부분 수정하거나 끝에 추가할 때. 화살표 연타는 이제 안녕~",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7422209668422324224?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7422209668422324224%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "Product Engineer @ Toss",
-      "images": [
-        "https://media.licdn.com/dms/image/v2/D5610AQEYR3-BpXc5cQ/image-shrink_1280/B56ZwD8Sg7JIAc-/0/1769592662443?e=1770976800&v=beta&t=24z5g8BE0JWqBoahoIThHvymwRS_4bUqSRnSNdyF1ZY"
-      ],
-      "user_link": "https://www.linkedin.com/in/ACoAAB1vdP4Bi740ailUbogk4d8gvBrVCYug48w",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "image",
-      "source": "network",
-      "sequence_id": 130,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/7fdab75360db0283af03f3d9d73c56b1.jpg"
-      ]
-    },
-    {
-      "index": 31,
-      "code": "7419514854060797952",
-      "username": "Jeongmin Lee",
-      "created_at": "2026-01-21 08:03:09",
-      "time_text": "2주",
-      "full_text": "⚡ 핵심 인재 1명이 30명 일을 해내는 Claude Code Skills 세팅\n\n\"1명이 스타트업 전체 운영이 가능할까요?\"\n\n6개월 전이라면 저는 아니오 라고 대답했을 것 같습니다. 하지만 이 Claude Code Skill 조합을 보면, 이제 소수 팀이 풀스택 비즈니스를 운영하는 시대가 실제로 열렸다고 생각합니다.\n\n1️⃣ 마케팅은 Marketing Skills Collection 하나로\n\nCorey Haines가 무료 공개한 마케팅 스킬 컬렉션이에요. 23개 스킬이 마케터가 필요한 거의 모든 영역을 커버합니다.\n\n• CRO: 랜딩페이지, 가입 플로우, 온보딩, 폼, 팝업, 페이월 최적화\n• 카피/콘텐츠: 카피라이팅, 카피 에디팅, 이메일 시퀀스, 소셜 콘텐츠\n• SEO: SEO 감사, 프로그래매틱 SEO, 경쟁사 비교 페이지, 스키마 마크업\n• 광고/분석: 유료 광고, GA4/GTM 트래킹, A/B 테스트 설계\n• 전략: 140개 SaaS 마케팅 아이디어, 70+ 마케팅 심리 모델, 런치 전략, 프라이싱 전략\n\n설치 후 \"랜딩페이지 전환율 높여줘\"라고 하면 page-cro 스킬이, \"웰컴 이메일 5개 만들어줘\"라고 하면 email-sequence 스킬이 자동으로 작동해요.\n\nhttps://lnkd.in/gEASR8jC\n\n2️⃣ 영상은 Remotion Skill로 원샷 제작\n\n프롬프트 하나로 전체 비디오 완성이 가능해요. 참고로 캡컷 효과도 리모션으로 쉽게 구현 가능합니다.\n\n• npx skills add remotion-dev/skills로 설치\n• 마케팅/데모 영상 자동화\n• 영상 편집자 채용 전에 먼저 시도해볼 만한 옵션\n\nhttps://lnkd.in/gqrufQd2\n\n3️⃣ 슬라이드는 Skill-creator로 커스텀 제작\n\n기본 제공되는 Skill-creator로 자기만의 PPT 스킬을 만들 수 있어요. Steve Jobs 스타일 프레젠테이션 스킬 만들어서 쓰는 사례도 있더라고요.\n\n• 텍스트 입력만으로 프로급 슬라이드 출력\n• PM/마케터가 직접 덱 만들 때 시간 단축\n\nhttps://lnkd.in/gGs75RYC\n\n4️⃣ 이미지 생성도 API 연결로 해결\n\n기본 Claude는 이미지 생성이 안 되지만, Gemini 같은 API 연결 스킬 추가하면 프롬프트로 고퀄 이미지 뽑아요. 사실 저희 팀은 이미 슬랙 봇에 이미지, 영상 생성 봇을 탑재해두었습니다.\n\nhttps://lnkd.in/g-ecQXjU\n\n5️⃣ UI는 Frontend-Design Skill로 프로급 업그레이드\n\n42줄짜리 마크다운 지침 하나로 Claude가 만든 UI가 완전히 달라집니다. 솔로 개발자나 디자이너 없는 팀한테 필수예요.\n\n• 별도 디자인 툴 없이 프로덕션 퀄리티 도달\n\nhttps://lnkd.in/gddGCtd4\n\n6️⃣ 코드 품질은 Code Simplifier가 잡는다\n\nClaude Code 팀이 내부에서 쓰던 도구를 오픈 소스로 공개했어요.\n\n• 복잡한 코드베이스 자동 정리/리팩토링\n• 장기 세션 후 코드 청소나 PR 리뷰에 최적\n• 설치: claude plugin install code-simplifier\n\n저도 써보니 코드 리뷰 시간이 확 줄더라고요. 시니어 개발자 한 명이 더 생긴 느낌이에요.\n\nhttps://lnkd.in/gPJGcR69\n\n이 조합의 핵심은 \"각 스킬이 한 명의 전문가를 대체한다\"가 아니에요. 한 사람이 여러 역할을 넘나들 수 있게 해주는 거죠.\n\n스킬을 쌓는 시대에서, 스킬을 조합하는 시대로. 이제 팀의 크기가 아니라 스킬 스택의 깊이가 경쟁력을 결정합니다.",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7419514854060797952?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7419514854060797952%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "Building with AI @ Smoretalk | Control opinions with AI",
-      "images": [
-        "https://media.licdn.com/dms/image/v2/D5605AQHOADodJysPkA/videocover-high/B56ZvdpaHnIcBU-/0/1768950179695?e=1770976800&v=beta&t=5ZUkPpS4KY3SmhxuXJNGYqfhM5sJPx8gYnlrzI6eRsg"
-      ],
-      "user_link": "https://www.linkedin.com/in/ACoAACkadIABsYoadkJXuZXMASkhnSFeoK_nVw8",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "image",
-      "source": "network",
-      "sequence_id": 122,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/02a9380077f5881fbf91645285709ce2.jpg"
-      ]
-    },
-    {
-      "index": 32,
-      "code": "7419563139156992000",
-      "username": "SangRok Jung",
-      "created_at": "2026-01-21 11:15:01",
-      "time_text": "2주",
-      "full_text": "웹디자인, 이제 AI한테 시키면 됩니다. Google이 진짜 미친 도구를 내놨어요.\n\n---\n\nGoogle I/O 2025에서 조용히 발표된 도구가 하나 있거든요. 이름은 Stitch입니다.\n\n근데 이게 단순한 AI 도구가 아니에요. 제가 직접 써봤는데, 솔직히 충격받았습니다.\n\n텍스트로 \"다크 테마 모바일 앱 홈페이지, 네비게이션 바랑 프로필 카드 넣어줘\"라고 치면... 그냥 UI가 뿅 하고 나와요.\n\n---\n\n진짜 대박인 건 이거예요.\n\n손으로 끄적인 와이어프레임 사진을 찍어서 올리면, 그걸 보고 프로급 UI로 변환해줍니다.\n\n화이트보드에 대충 그린 스케치도 되고요. 앱 스크린샷 올려서 비슷하게 만들어달라고 해도 돼요.\n\n기존 워크플로우가 \"와이어프레임 - 목업 - 프로토타입 - 코드\" 이렇게 몇 시간~며칠 걸렸다면, Stitch는 \"프롬프트 - 끝\"입니다.\n\n---\n\n여기서 끝이 아니에요. 진짜 혁신은 MCP 지원입니다.\n\nMCP가 뭐냐고요? Model Context Protocol의 약자인데요. 쉽게 말하면 AI 에이전트가 외부 도구랑 대화할 수 있게 해주는 표준이에요.\n\nStitch가 MCP를 지원한다는 건, 여러분이 쓰는 AI 코딩 도구(Cursor, Claude Code 등)에서 직접 Stitch를 불러서 쓸 수 있다는 뜻입니다.\n\n---\n\n실제로 stitch-mcp라는 오픈소스 프로젝트가 이미 나왔어요.\n\n이걸 설치하면 Cursor나 Claude Code에서 바로 Stitch API를 호출할 수 있거든요.\n\n설정도 간단합니다. Google Cloud 프로젝트 만들고, gcloud 명령어 몇 개 치면 끝이에요.\n\n---\n\n근데 진짜 소름 돋는 기능이 있습니다.\n\nextract_design_context라는 도구가 있는데요. 이게 기존 화면을 스캔해서 Design DNA를 추출해줘요.\n\n폰트, 컬러 팔레트, 레이아웃 구조... 이런 걸 자동으로 뽑아내서 다음 화면 만들 때 일관성 있게 적용해줍니다.\n\n\"홈 화면\"이랑 \"프로필 화면\" 따로 만들었는데 스타일이 다른 문제, 이제 없어지는 거예요.\n\n---\n\nFigma 연동도 됩니다.\n\nStitch에서 만든 디자인을 \"Paste to Figma\" 버튼 하나로 피그마에 바로 붙여넣을 수 있어요.\n\n그리고 깔끔한 HTML/CSS 코드도 자동 생성해주고요. 프론트엔드 개발자들 작업량이 확 줄어들 겁니다.\n\n---\n\n가격이요? 무료입니다.\n\nGoogle Labs의 실험적 도구로 제공되고 있어서, Google 계정만 있으면 바로 써볼 수 있어요.\n\nstitch.withgoogle.com 접속하시면 됩니다.\n\n---\n\n솔직히 말씀드리면, 웹디자인의 게임 체인저가 될 것 같아요.\n\n아이디어에서 실제 인터페이스까지 가는 시간이 압도적으로 줄어들거든요.\n\n스타트업이 빠르게 MVP 만들 때, 개발자가 UI 프로토타입 잡을 때, 디자이너가 여러 버전 빠르게 테스트할 때... 다 쓸 수 있습니다.\n\n---\n\n물론 디자이너가 사라지진 않을 거예요.\n\n계산기가 나왔다고 수학자가 없어지지 않은 것처럼, AI 디자인 도구는 디자이너의 역할을 바꿀 뿐입니다.\n\n사용자 리서치, 창의적 방향 설정, 접근성 고려... 이런 건 여전히 사람의 영역이니까요.\n\n---\n\n정리하면 이렇습니다.\n\nGoogle Stitch = 텍스트/이미지로 UI 자동 생성\nStitch MCP = AI 코딩 도구에서 Stitch 직접 호출\nextract_design_context = 디자인 일관성 자동 유지\nFigma 연동 + 코드 생성 = 워크플로우 완성\n\n이제 \"디자인 못해서 못 만든다\"는 핑계는 통하지 않을 것 같아요.\n\n---\n\n여러분은 AI 디자인 도구 써보셨나요? Stitch 한번 테스트해보시고 후기 공유해주세요.\n\n---\n\n[출처]\nGoogle Stitch 공식: stitch.withgoogle.com\nGoogle Developers Blog: https://lnkd.in/gabHndzx\nGoogle I/O 2025 발표: https://lnkd.in/gPtqXgTw\nstitch-mcp GitHub: https://lnkd.in/gBJNYN4M\nGemini CLI Stitch Extension: https://lnkd.in/gswmHf9D",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7419563139156992000?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7419563139156992000%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "AI 자동화 전문가 | 15개 국가기관 프로젝트 수행 | 구독자 2만+ 커뮤니티 운영 | Quantum Jump Club 대표",
-      "images": [
-        "https://media.licdn.com/dms/image/sync/v2/D5627AQHB7-AEd_9ycA/articleshare-shrink_1280_800/B56ZveNz7FKwAU-/0/1770169347125?e=1770976800&v=beta&t=ITQj_NFclrcs3CZBus1leyJU-erQ1KBhzYGcCZDjD-k"
-      ],
-      "user_link": "https://www.linkedin.com/in/ACoAAE9QoNMBe-p8cCQZPX-Z-8bvQ128Ii5y9gQ",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "image",
-      "source": "network",
-      "sequence_id": 123,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/6883d1ae1ead9ad5985b91dbf7dc44d8.jpg"
-      ]
-    },
-    {
-      "index": 33,
-      "code": "7364298758177636352",
-      "username": "정구봉 Goobong Jeong",
-      "created_at": "2025-08-21 23:14:06",
-      "time_text": "6개월",
-      "full_text": "PM이 바이브코딩할 때 유리한 점: 질문에 망설임이 없다 + 좋은 질문을 한다.\n이런 사람이 바이브코딩을 정말 잘합니다. (클로드코드 팁)\n\n1. PM은 질문이 일입니다.\n'속도를 2배 올리려면 어느 기능을 손대야 할까요?' '이 버튼을 더 직관적으로 바꾸려면 어떤 방법이 있을까요?' 항상 나보다 잘 아는 전문가와 협업하기 때문에 좋은 질문이 곧 좋은 성과로 이어진다는 걸 잘 압니다.\n\n이 습관은 AI를 활용할 때, 특히 바이브코딩을 할 때 강력하게 작동합니다.\n\n2. 아는 만큼만 만들 수 있다?\n흔히 '바이브코딩은 아는 만큼만 만들 수 있다'라고 합니다. 그러면 아는게 적은 사람은 못 만들까요? 아닙니다. 지식을 쌓으면서 만들면 돼요. AI는 묻는 만큼 알려주고, 그 과정에서 지식을 쌓을 수 있기 때문에 질문을 잘하는 사람에게는 오히려 최적화된 환경이 됩니다.\n\n3. 예시: 좋은 질문 -> 좋은 결과\n- 30점: 사이드바 메뉴에 하위 메뉴를 만들어줘\n- 50점: 아코디언 메뉴를 만들어줘\n- 100점: 아코디언 메뉴는 기본 2단계까지만 표시하고, 브레드크럼을 추가해서 경로를 명확히 보여줘. 예시는 Notion 사이드바 이미지를 참고해\n\n4. 클로드코드 팁\n저는 코드를 짤 때 Claude Code를 이렇게 씁니다: 창을 2개 켜서,\n• 왼쪽: 실행/테스트용\n• 오른쪽: 코드베이스 기반으로 Claude와 대화\n\n요구사항을 점점 디테일하게 다듬으면서 진행하는 게 시행착오를 크게 줄여줍니다. 실행 창은 여러 개 늘려도 괜찮지만, 대화 창은 반드시 하나를 유지하는 게 효과적이었습니다\n\nAI를 쓴다면 질문을 많이 하고, 좋은 질문을 할수록 더 큰 생산성을 발휘할 수 있습니다. 지금은 지식이 부족하더라도, 이런 방식으로 학습하면서 요청한다면 딱 일주일 뒤에도 완전히 다른 생산성을 얻게 됩니다.\n\n🙏 저의 작은 경험과 팁을 공유해봤습니다.\n여러분은 AI를 어떻게 잘 활용하고 계신가요? 댓글로 팁을 나눠주시면 저도 많이 배우겠습니다",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7364298758177636352?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7364298758177636352%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "Claude Code for all of your work",
-      "images": [
-        "https://media.licdn.com/dms/image/v2/D5622AQFMrmq9oD7G2Q/feedshare-shrink_2048_1536/B56ZjM.sGgHUBI-/0/1755785644843?e=1772064000&v=beta&t=uNXgcdyIaE2XpqDvTO6y9rNml3mG7JUhtl-Zev2yXno"
-      ],
-      "user_link": "https://www.linkedin.com/in/ACoAACY7KJQBDtSTk6IuIwZY6ntBGJx1fCYwsYI",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "image",
-      "source": "network",
-      "sequence_id": 23,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/e0131c8f9d52153b141471d4fefdb7c8.jpg"
-      ]
-    },
-    {
-      "index": 34,
       "code": "7421318465455722496",
       "username": "SEMYOUNG BAEK (백세명)",
       "created_at": "2026-01-26 07:30:03",
@@ -4602,7 +4718,7 @@ const snsFeedData = {
         "https://media.licdn.com/dms/image/v2/D5622AQGQ042kf1I4AA/feedshare-shrink_2048_1536/B56Zvp2DOrIcAo-/0/1769154819290?e=1772064000&v=beta&t=1vTp-mzLY9-t6t_DttpslL-tMKSArf2qGTfME1VGcIs"
       ],
       "user_link": "https://www.linkedin.com/in/ACoAACbIGnsB9Di2haFcpBY99qYAiTfpDOyxmCY",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "image",
       "source": "network",
       "sequence_id": 127,
@@ -4612,46 +4728,27 @@ const snsFeedData = {
       ]
     },
     {
-      "index": 35,
-      "code": "7418270572356370432",
-      "username": "Joongsoo Park",
-      "created_at": "2026-01-17 21:38:49",
-      "time_text": "2주",
-      "full_text": "AI시대에 다시 창업한다면 개발 분야에서 꼭 챙기고 싶은 것\n만약 추후 다시 창업을 하게 된다면 저는 데이터 구조 설계와 백오피스는 리소스를 들여서라도 꼭 잘 만들고 시작할 것 같습니다.\n\nAI시대가 되면서 개발에 대한 허들이 낮아서 생산성이 매우 높아지고 있고, 창업가로서 코딩은 더 이상 문제가 되지 않습니다.\n\n하지만 시작은 쉬워졌어도 시장 검증 이후 스케일업 단계에서 발생하는 문제는 동일할 것이라 생각합니다.\n\n프로덕트가 방대해져가면서 쌓이게 되는 엄청난 맥락들과 일관적이지 않은 소스코드로 인해 개발의 효율성이 점점 떨어지게 되고, 어느 순간 \"다시 만들자\" 라는 결론에 도달해 전체 리팩토링을 하게 되는 등 비즈니스에 집중되어야 할 리소스가 개발에 집중되어 본질이 흐려지는 문제가 발생하게 됩니다.\n\n이전에는 사업 초기에 설계나 백오피스 구축에 시간을 쏟는 것이 매우 비효율적인 일이였지만, 이제는 AI로 인해 충분히 해볼만한 일이 되었다고 생각합니다.\n\n오히려 초기에 이러한 체계를 잘 잡아놓지 않으면 시간이 지날수록 스파게티 코드는 쌓여가고, 원하지 않는 결과물이 나오는 상황이 많이 발생하게 될 것입니다.\n\n또한 규모가 커질수록 AI만으로는 한계를 만날 수 밖에 없어 사람의 개입이 필수가 되는데 이 때 제대로 된 백오피스가 구축되어있지 않으면 비즈니스의 속도가 느려지고, 개발자의 리소스가 운영에 쓰여 비효율이 발생하게 됩니다.\n\n백오피스는 업무의 흐름을 정의하는 곳이기에 체계화가 잘 되어있으면 부분적으로 AI를 도입하며 점진적인 전면 자동화를 시도하기에도 좋고요.\n\n그렇기에 추후 다시 창업을 하게 된다면 이러한 체계를 제대로 만들어두고 기업의 체질이 IT베이스를 벗어나지 않도록 하여 높은 생산성을 유지할 수 있는 상태로 만들어두고 싶습니다.\n\n이제 개발에 대한 허들이 낮아져 개발자의 필요성이 많이 떨어졌지만, 이러한 체계를 잘 잡으려면 실력있는 개발자가 필요하게 될 것이기에 개발자의 양극화는 더 심해질 것 같습니다. (다른 직군도 마찬가지지만요)",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7418270572356370432?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7418270572356370432%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "F-Lab CEO / ex-NAVER / ex-HYPERCONNECT",
-      "images": [],
-      "user_link": "https://www.linkedin.com/in/ACoAABlU7G8BKM95Q-Tq8DVkR-0dQnv6OzlMbX4",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "text",
-      "source": "network",
-      "sequence_id": 118,
-      "sns_platform": "linkedin"
-    },
-    {
-      "index": 36,
-      "code": "7420046768471433216",
-      "username": "티타임즈",
-      "created_at": "2026-01-22 19:16:47",
-      "time_text": "2주",
-      "full_text": "“AI 때문에 우리 교육이 싱크홀에 빠졌다, 망했다”는 김재인 경희대 교수의 이야기입니다.\n\n“요즘 학생들, 강의를 일단 녹취를 따요. 켜놓고 딴 짓을 하죠. 집에 가서 클로바노트로 풀어요. 그걸 읽느냐? 아니에요. 요약을 시켜요. 요약본을 봅니다. 그러면 그 학생이 강의를 들었다고 할 수 있을까요?”\n\n“AI 시켜서 과제를 대신해요. 내가 쓴 글을 얼마나 기억하느냐? 기억을 못해요. 어릴 때부터 AI를 써서 과제를 제출한다면 과연 그 아이의 뇌에는 무슨 일이 일어날까? 아예 뇌발달이 일어나지 않아요”\n\n“지브리풍 사진 생성이 유행었었잖아요. 저는 그 전형성이 끔찍이 싫어요. 평균에 수렴하는, 그냥 가성비 좋은 다이소 물건 같은 그런 느낌. 앞으로는 취향지능이 진짜 역할을 할 겁니다.”",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7420046768471433216?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7420046768471433216%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "팔로워 284명",
+      "code": "7421022478979948545",
+      "username": "Jeongmin Lee",
+      "created_at": "2026-01-25 11:53:54",
+      "time_text": "1주",
+      "full_text": "🧊 Claude in Excel 은 단순 'AI + X' 스타트업을 모두 죽이겠다는 선언입니다.\n\n이번 주 Anthropic 이 공개한 Claude in Excel 을 보면서 등골이 서늘해졌습니다. Microsoft 가 Excel 에 AI를 얹는 방식과 Anthropic 이 접근하는 방식이 완전히 달랐거든요.\n\nMicrosoft 는 AI 로 Excel 함수를 실행시키는 반면, Claude 는 Excel 을 그냥 프레젠테이션 레이어로만 씁니다.\n\n결과는? 속도와 품질 모두 Anthropic 의 압승이었어요.\n단순히 AI 를 더하는 것과 달리 AI 네이티브 관점은 생각보다 큰 차이를 만들어 내고 있습니다.\n\n1️⃣ \"SaaS is Dead\" 가 현실이 되고 있습니다\n\n단순히 서비스를 개선하는 것만으로는 생존이 어려운 시대가 왔어요. 결국 지금 시장에서 승산을 보여주려면 세 가지 중 하나는 지배해야 합니다.\n\n• 프레임워크 지배: Opencode, Clawdbot 같은 AI 운영 도구\n• 인프라 지배: Vercel, Supabase, Cloudflare, Stripe 같은 기반 서비스\n• 또는 이 전체를 통합: Base44(or Replit, Lovable), Cursor, Comet, Manus 처럼\n\n이 중 어느 것도 확보하지 못하면?\n\n남은 선택지는 가격 덤핑뿐이에요. 실제로 치킨 게임 수준의 경쟁이 벌어지고 있고요. 다만 AI 제품은 사용자가 늘어날 수록 고정비가 늘어나는 구조입니다. 즉, 지속 가능한 싸움이 아닙니다.\n\n2️⃣ 강력한 AI 모델을 가진 회사의 성장 속도는 차원이 다릅니다\n\nKling 을 보유한 Kuaishou 는 월 2천만 달러($20M MRR, 30억원) 반복 매출을 찍고 있어요. Google 은 Nano Banana Pro 와 Gemini-3 출시 이후 서비스 점유율이 급등했고요.\n\n한국에서는 잘 언급 안 되지만, Grok 의 시장 침투 속도는 사실 Google 을 훨씬 앞서고 있습니다. 이유가 좀 아찔한데요. 세계 최고 수준의 이미지, 영상 AI를 제한 없이 풀어버린 극단적 플레이 덕분이에요.\n\n그런데 대부분의 스타트업은 이 \"모델\"을 보유하고 있지 않으며, 보유하기 힘듭니다.\n\n3️⃣ 왜 토큰을 많이 써야 하는가, 이제는 진지하게 답해야 할 질문입니다\n\n\"토큰 왜 이렇게 태워요?\" 팀원들한테 이 질문 많이 받으실 거예요. 솔직히 저도 작년 초까지는 명확한 답이 없었습니다.\n\n그런데 Claude Code 이후로 달라졌어요. 대부분의 사람보다 훨씬 빠르고, 왠만한 사람보다 작업을 잘하는 순간들을 직접 목격하니까요.\n\n관리자 입장에서 토큰 사용을 권장하는 이유가 명확해졌습니다. \"AI-native 가 뭔지는 직접 많이 써본 사람만 체감할 수 있거든요.\"\n\n지금 초기 AI 스타트업이 가야 할 방향도 이 경험에서 나온다고 생각해요.\n\n• 그냥 최고 수준의 CS 레벨을 기반으로 기업 고객에 확실히 밀착하거나\n• 한 눈에 잘 안 보이는 웹, 오프라인 상의 관계성 데이터를 AI 와 함께 수집하며 준비하거나\n• 수요가 확실한 틈새 영역에서 소규모로 빠르게 성장하거나\n• 아니면, \"AI-native 서비스를 만들거나\"\n\n4️⃣ 2026년, 초기 스타트업에 시간이 얼마 안 남았습니다\n\n작년 이맘때 기준으로 1.5개월 뒤에 Manus 가 나왔고, 그 회사는 3~4조원에 Meta에 인수됐어요.\n\n올해는 그보다 더 파괴적인 무언가가 나올 겁니다. Anthropic, Kuaishou, Vercel, Supabase, Cloudflare 같은 강자들은 이미 다음 수를 준비하고 있고요.\n\nAI 시대의 승자는 더 좋은 기능을 만드는 회사가 아니라, AI 가 작동하는 방식 자체를 재정의하는 회사입니다.\n\n2026년에 어떤 AI-native 서비스가 등장할까요? 그리고 여러분은 지금 무엇을 준비하고 계신가요?",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7421022478979948545?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7421022478979948545%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "Building with AI @ Smoretalk | Control opinions with AI",
       "images": [
-        "https://media.licdn.com/dms/image/v2/D561FAQHyI3Mb8yGQ-g/feedshare-document-cover-images_480/B56ZvlNKTeJEBA-/0/1769076992962?e=1770976800&v=beta&t=MxYf1LVP3a652XTGOEzqzrj6JNFeZMQ0K5aPwkcMA3s"
+        "https://media.licdn.com/dms/image/v2/D5605AQEST6HAfRSYXQ/videocover-high/B56ZvzElzSHsBU-/0/1769309627026?e=1770980400&v=beta&t=Cn3o_xCvDlsZoF8_l5SP9e1vAFBH1wptpBxzrSska3E"
       ],
-      "user_link": "https://www.linkedin.com/company/%ED%8B%B0%ED%83%80%EC%9E%84%EC%A6%88/",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "user_link": "https://www.linkedin.com/in/ACoAACkadIABsYoadkJXuZXMASkhnSFeoK_nVw8",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "image",
       "source": "network",
-      "sequence_id": 124,
+      "sequence_id": 126,
       "sns_platform": "linkedin",
       "local_images": [
-        "web_viewer/images/0dbd011dffa25a070cd32c2c26a41700.jpg"
+        "web_viewer/images/76628b3616527e8c551fadb31194cea6.jpg"
       ]
     },
     {
-      "index": 37,
       "code": "7420216201961906177",
       "username": "정구봉 Goobong Jeong",
       "created_at": "2026-01-23 06:30:03",
@@ -4661,14 +4758,76 @@ const snsFeedData = {
       "profile_slogan": "Claude Code for all of your work",
       "images": [],
       "user_link": "https://www.linkedin.com/in/ACoAACY7KJQBDtSTk6IuIwZY6ntBGJx1fCYwsYI",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "text",
       "source": "network",
       "sequence_id": 125,
       "sns_platform": "linkedin"
     },
     {
-      "index": 38,
+      "code": "7420046768471433216",
+      "username": "티타임즈",
+      "created_at": "2026-01-22 19:16:47",
+      "time_text": "2주",
+      "full_text": "“AI 때문에 우리 교육이 싱크홀에 빠졌다, 망했다”는 김재인 경희대 교수의 이야기입니다.\n\n“요즘 학생들, 강의를 일단 녹취를 따요. 켜놓고 딴 짓을 하죠. 집에 가서 클로바노트로 풀어요. 그걸 읽느냐? 아니에요. 요약을 시켜요. 요약본을 봅니다. 그러면 그 학생이 강의를 들었다고 할 수 있을까요?”\n\n“AI 시켜서 과제를 대신해요. 내가 쓴 글을 얼마나 기억하느냐? 기억을 못해요. 어릴 때부터 AI를 써서 과제를 제출한다면 과연 그 아이의 뇌에는 무슨 일이 일어날까? 아예 뇌발달이 일어나지 않아요”\n\n“지브리풍 사진 생성이 유행었었잖아요. 저는 그 전형성이 끔찍이 싫어요. 평균에 수렴하는, 그냥 가성비 좋은 다이소 물건 같은 그런 느낌. 앞으로는 취향지능이 진짜 역할을 할 겁니다.”",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7420046768471433216?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7420046768471433216%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "팔로워 284명",
+      "images": [
+        "https://media.licdn.com/dms/image/v2/D561FAQHyI3Mb8yGQ-g/feedshare-document-cover-images_480/B56ZvlNKTeJEBA-/0/1769076992962?e=1770980400&v=beta&t=zBo_XdZI6kMcITJ8oHlVHRGgzofFPDB7sbmIDwHGMYM"
+      ],
+      "user_link": "https://www.linkedin.com/company/%ED%8B%B0%ED%83%80%EC%9E%84%EC%A6%88/",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "image",
+      "source": "network",
+      "sequence_id": 124,
+      "sns_platform": "linkedin",
+      "local_images": [
+        "web_viewer/images/2ccb009fc678367f4a6b0c778ffb0b55.jpg"
+      ]
+    },
+    {
+      "code": "7419563139156992000",
+      "username": "SangRok Jung",
+      "created_at": "2026-01-21 11:15:01",
+      "time_text": "2주",
+      "full_text": "웹디자인, 이제 AI한테 시키면 됩니다. Google이 진짜 미친 도구를 내놨어요.\n\n---\n\nGoogle I/O 2025에서 조용히 발표된 도구가 하나 있거든요. 이름은 Stitch입니다.\n\n근데 이게 단순한 AI 도구가 아니에요. 제가 직접 써봤는데, 솔직히 충격받았습니다.\n\n텍스트로 \"다크 테마 모바일 앱 홈페이지, 네비게이션 바랑 프로필 카드 넣어줘\"라고 치면... 그냥 UI가 뿅 하고 나와요.\n\n---\n\n진짜 대박인 건 이거예요.\n\n손으로 끄적인 와이어프레임 사진을 찍어서 올리면, 그걸 보고 프로급 UI로 변환해줍니다.\n\n화이트보드에 대충 그린 스케치도 되고요. 앱 스크린샷 올려서 비슷하게 만들어달라고 해도 돼요.\n\n기존 워크플로우가 \"와이어프레임 - 목업 - 프로토타입 - 코드\" 이렇게 몇 시간~며칠 걸렸다면, Stitch는 \"프롬프트 - 끝\"입니다.\n\n---\n\n여기서 끝이 아니에요. 진짜 혁신은 MCP 지원입니다.\n\nMCP가 뭐냐고요? Model Context Protocol의 약자인데요. 쉽게 말하면 AI 에이전트가 외부 도구랑 대화할 수 있게 해주는 표준이에요.\n\nStitch가 MCP를 지원한다는 건, 여러분이 쓰는 AI 코딩 도구(Cursor, Claude Code 등)에서 직접 Stitch를 불러서 쓸 수 있다는 뜻입니다.\n\n---\n\n실제로 stitch-mcp라는 오픈소스 프로젝트가 이미 나왔어요.\n\n이걸 설치하면 Cursor나 Claude Code에서 바로 Stitch API를 호출할 수 있거든요.\n\n설정도 간단합니다. Google Cloud 프로젝트 만들고, gcloud 명령어 몇 개 치면 끝이에요.\n\n---\n\n근데 진짜 소름 돋는 기능이 있습니다.\n\nextract_design_context라는 도구가 있는데요. 이게 기존 화면을 스캔해서 Design DNA를 추출해줘요.\n\n폰트, 컬러 팔레트, 레이아웃 구조... 이런 걸 자동으로 뽑아내서 다음 화면 만들 때 일관성 있게 적용해줍니다.\n\n\"홈 화면\"이랑 \"프로필 화면\" 따로 만들었는데 스타일이 다른 문제, 이제 없어지는 거예요.\n\n---\n\nFigma 연동도 됩니다.\n\nStitch에서 만든 디자인을 \"Paste to Figma\" 버튼 하나로 피그마에 바로 붙여넣을 수 있어요.\n\n그리고 깔끔한 HTML/CSS 코드도 자동 생성해주고요. 프론트엔드 개발자들 작업량이 확 줄어들 겁니다.\n\n---\n\n가격이요? 무료입니다.\n\nGoogle Labs의 실험적 도구로 제공되고 있어서, Google 계정만 있으면 바로 써볼 수 있어요.\n\nstitch.withgoogle.com 접속하시면 됩니다.\n\n---\n\n솔직히 말씀드리면, 웹디자인의 게임 체인저가 될 것 같아요.\n\n아이디어에서 실제 인터페이스까지 가는 시간이 압도적으로 줄어들거든요.\n\n스타트업이 빠르게 MVP 만들 때, 개발자가 UI 프로토타입 잡을 때, 디자이너가 여러 버전 빠르게 테스트할 때... 다 쓸 수 있습니다.\n\n---\n\n물론 디자이너가 사라지진 않을 거예요.\n\n계산기가 나왔다고 수학자가 없어지지 않은 것처럼, AI 디자인 도구는 디자이너의 역할을 바꿀 뿐입니다.\n\n사용자 리서치, 창의적 방향 설정, 접근성 고려... 이런 건 여전히 사람의 영역이니까요.\n\n---\n\n정리하면 이렇습니다.\n\nGoogle Stitch = 텍스트/이미지로 UI 자동 생성\nStitch MCP = AI 코딩 도구에서 Stitch 직접 호출\nextract_design_context = 디자인 일관성 자동 유지\nFigma 연동 + 코드 생성 = 워크플로우 완성\n\n이제 \"디자인 못해서 못 만든다\"는 핑계는 통하지 않을 것 같아요.\n\n---\n\n여러분은 AI 디자인 도구 써보셨나요? Stitch 한번 테스트해보시고 후기 공유해주세요.\n\n---\n\n[출처]\nGoogle Stitch 공식: stitch.withgoogle.com\nGoogle Developers Blog: https://lnkd.in/gabHndzx\nGoogle I/O 2025 발표: https://lnkd.in/gPtqXgTw\nstitch-mcp GitHub: https://lnkd.in/gBJNYN4M\nGemini CLI Stitch Extension: https://lnkd.in/gswmHf9D",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7419563139156992000?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7419563139156992000%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "AI 자동화 전문가 | 15개 국가기관 프로젝트 수행 | 구독자 2만+ 커뮤니티 운영 | Quantum Jump Club 대표",
+      "images": [
+        "https://media.licdn.com/dms/image/sync/v2/D5627AQHB7-AEd_9ycA/articleshare-shrink_1280_800/B56ZveNz7FKwAU-/0/1770169347125?e=1770980400&v=beta&t=iP4Wyjmz3XD3e951sEaWyL-U3cHUFkO2RhR93UlkVHM"
+      ],
+      "user_link": "https://www.linkedin.com/in/ACoAAE9QoNMBe-p8cCQZPX-Z-8bvQ128Ii5y9gQ",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "image",
+      "source": "network",
+      "sequence_id": 123,
+      "sns_platform": "linkedin",
+      "local_images": [
+        "web_viewer/images/78ead0fcd429905434ea85e7f4a569c9.jpg"
+      ]
+    },
+    {
+      "code": "7419514854060797952",
+      "username": "Jeongmin Lee",
+      "created_at": "2026-01-21 08:03:09",
+      "time_text": "2주",
+      "full_text": "⚡ 핵심 인재 1명이 30명 일을 해내는 Claude Code Skills 세팅\n\n\"1명이 스타트업 전체 운영이 가능할까요?\"\n\n6개월 전이라면 저는 아니오 라고 대답했을 것 같습니다. 하지만 이 Claude Code Skill 조합을 보면, 이제 소수 팀이 풀스택 비즈니스를 운영하는 시대가 실제로 열렸다고 생각합니다.\n\n1️⃣ 마케팅은 Marketing Skills Collection 하나로\n\nCorey Haines가 무료 공개한 마케팅 스킬 컬렉션이에요. 23개 스킬이 마케터가 필요한 거의 모든 영역을 커버합니다.\n\n• CRO: 랜딩페이지, 가입 플로우, 온보딩, 폼, 팝업, 페이월 최적화\n• 카피/콘텐츠: 카피라이팅, 카피 에디팅, 이메일 시퀀스, 소셜 콘텐츠\n• SEO: SEO 감사, 프로그래매틱 SEO, 경쟁사 비교 페이지, 스키마 마크업\n• 광고/분석: 유료 광고, GA4/GTM 트래킹, A/B 테스트 설계\n• 전략: 140개 SaaS 마케팅 아이디어, 70+ 마케팅 심리 모델, 런치 전략, 프라이싱 전략\n\n설치 후 \"랜딩페이지 전환율 높여줘\"라고 하면 page-cro 스킬이, \"웰컴 이메일 5개 만들어줘\"라고 하면 email-sequence 스킬이 자동으로 작동해요.\n\nhttps://lnkd.in/gEASR8jC\n\n2️⃣ 영상은 Remotion Skill로 원샷 제작\n\n프롬프트 하나로 전체 비디오 완성이 가능해요. 참고로 캡컷 효과도 리모션으로 쉽게 구현 가능합니다.\n\n• npx skills add remotion-dev/skills로 설치\n• 마케팅/데모 영상 자동화\n• 영상 편집자 채용 전에 먼저 시도해볼 만한 옵션\n\nhttps://lnkd.in/gqrufQd2\n\n3️⃣ 슬라이드는 Skill-creator로 커스텀 제작\n\n기본 제공되는 Skill-creator로 자기만의 PPT 스킬을 만들 수 있어요. Steve Jobs 스타일 프레젠테이션 스킬 만들어서 쓰는 사례도 있더라고요.\n\n• 텍스트 입력만으로 프로급 슬라이드 출력\n• PM/마케터가 직접 덱 만들 때 시간 단축\n\nhttps://lnkd.in/gGs75RYC\n\n4️⃣ 이미지 생성도 API 연결로 해결\n\n기본 Claude는 이미지 생성이 안 되지만, Gemini 같은 API 연결 스킬 추가하면 프롬프트로 고퀄 이미지 뽑아요. 사실 저희 팀은 이미 슬랙 봇에 이미지, 영상 생성 봇을 탑재해두었습니다.\n\nhttps://lnkd.in/g-ecQXjU\n\n5️⃣ UI는 Frontend-Design Skill로 프로급 업그레이드\n\n42줄짜리 마크다운 지침 하나로 Claude가 만든 UI가 완전히 달라집니다. 솔로 개발자나 디자이너 없는 팀한테 필수예요.\n\n• 별도 디자인 툴 없이 프로덕션 퀄리티 도달\n\nhttps://lnkd.in/gddGCtd4\n\n6️⃣ 코드 품질은 Code Simplifier가 잡는다\n\nClaude Code 팀이 내부에서 쓰던 도구를 오픈 소스로 공개했어요.\n\n• 복잡한 코드베이스 자동 정리/리팩토링\n• 장기 세션 후 코드 청소나 PR 리뷰에 최적\n• 설치: claude plugin install code-simplifier\n\n저도 써보니 코드 리뷰 시간이 확 줄더라고요. 시니어 개발자 한 명이 더 생긴 느낌이에요.\n\nhttps://lnkd.in/gPJGcR69\n\n이 조합의 핵심은 \"각 스킬이 한 명의 전문가를 대체한다\"가 아니에요. 한 사람이 여러 역할을 넘나들 수 있게 해주는 거죠.\n\n스킬을 쌓는 시대에서, 스킬을 조합하는 시대로. 이제 팀의 크기가 아니라 스킬 스택의 깊이가 경쟁력을 결정합니다.",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7419514854060797952?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7419514854060797952%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "Building with AI @ Smoretalk | Control opinions with AI",
+      "images": [
+        "https://media.licdn.com/dms/image/v2/D5605AQHOADodJysPkA/videocover-high/B56ZvdpaHnIcBU-/0/1768950179695?e=1770980400&v=beta&t=Jq07kyXkuyP3t1FjUuubmqY05nrUy4CWcDHp_QBvHu4"
+      ],
+      "user_link": "https://www.linkedin.com/in/ACoAACkadIABsYoadkJXuZXMASkhnSFeoK_nVw8",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "image",
+      "source": "network",
+      "sequence_id": 122,
+      "sns_platform": "linkedin",
+      "local_images": [
+        "web_viewer/images/0e896ffaf5969b187c43821bfbeddfa2.jpg"
+      ]
+    },
+    {
       "code": "7419010986470211584",
       "username": "김덕중",
       "created_at": "2026-01-19 22:40:57",
@@ -4680,7 +4839,7 @@ const snsFeedData = {
         "https://media.licdn.com/dms/image/v2/D5622AQEiaDkLBXQk8Q/feedshare-shrink_2048_1536/B56ZvWfLFDK4Ao-/0/1768830056713?e=1772064000&v=beta&t=Kv7B-0_ogwscyv8wCoTaOWzjaeKycNudzRkrZT7OUfU"
       ],
       "user_link": "https://www.linkedin.com/in/ACoAAAwBOVMBDI50rE9wyD4tsMaGWkV-85Sqd50",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "image",
       "source": "network",
       "sequence_id": 121,
@@ -4690,112 +4849,6 @@ const snsFeedData = {
       ]
     },
     {
-      "index": 39,
-      "code": "7411204617524391938",
-      "username": "Kyung Jin Jung",
-      "created_at": "2025-12-29 09:41:14",
-      "time_text": "1개월",
-      "full_text": "[면접에서 ‘준비된 PM’이 보이는 다섯 가지 특징]\n\n창업 전 약 3년간 PM 면접관으로 참여하며 수많은 후보자들을 만났습니다.\n대부분 각자의 강점을 갖고 있었지만, 유독 ‘합격’이 자연스럽게 떠오르는 분들은 분명한 공통점이 있었습니다.\n\n면접 자리에서 제가 마음속으로 이미 “이 분은 같이 일하고 싶다”고 판단했던 PM 후보자들의 특징을 정리해 보았습니다.\n\n1. 두괄식으로 답변한다 – 결론을 먼저 말한다\n\n면접관은 질문의 핵심에 대한 답을 가장 먼저 듣고 싶어합니다.\n답변을 끝까지 들어야 요지를 파악할 수 있다면, 아무리 내용이 좋아도 평가가 낮아질 수밖에 없습니다.\n\n특히 PM은\n- 이해관계자가 많고\n- 제한된 시간 안에\n- 의사결정을 이끌어야 하는 역할입니다.\n\n그래서 두괄식으로 말하는 습관은 단순한 면접 스킬이 아니라,\nPM에게 필수적인 커뮤니케이션 역량 그 자체라고 볼 수 있습니다.\n\n2. “왜” 이 일을 했는지 설명한다 – 맥락과 의도를 말한다\n\n면접관이 궁금한 것은 단순한 결과가 아닙니다.\n그 사람이 문제를 어떻게 바라보고, 어떤 사고 과정을 거쳐 판단했는지에 대한 과정을 궁금해합니다.\n\n성과를 냈다면\n- 왜 그 문제를 중요하다고 봤는지\n- 여러 선택지 중 왜 그 결정을 했는지\n- 과정 중 어떤 고민과 트레이드오프가 있었는지\n\n이런 맥락이 설명되어야\n\n“이 사람이 우리 조직에서도 같은 방식으로 문제를 풀 수 있겠구나”\n라는 신뢰가 생깁니다.\n\n3. 논리적이고 구조화된 사고 – 생각을 ‘구조’로 보여준다\n\nPM은 결국 설득하는 사람입니다.\n그리고 설득은 감이 아니라 구조에서 나옵니다.\n\n컨설턴트처럼 완벽하게 MECE할 필요는 없습니다.\n다만,\n\n- 문제 → 가설 → 선택 기준 → 결론\n- 혹은 트리 구조로 생각을 정리해 설명할 수 있다면\n\n면접관 입장에서는\n\n“이 사람은 복잡한 문제도 정리해서 전달할 수 있겠구나”\n라고 느끼게 됩니다.\n\n4. 고객 집착(Customer Obsession) – 사용자를 ‘아는’ 수준을 넘는다\n\n준비된 PM은 항상 ‘우리 사용자’를 이야기합니다.\n막연한 타겟이 아니라,\n\n- 실제로 누구인지\n- 어떤 상황에서\n- 어떤 불편을 겪고 있는지\n\n를 구체적으로 설명합니다.\n\n“고객 니즈가 있어서 기능을 만들었습니다”가 아니라\n“이 사용자는 이 지점에서 막히고 있었고, 그래서 이런 선택을 했습니다”\n까지 말할 수 있다면, 그 차이는 분명하게 드러납니다.\n\n5. 지원 회사에 대한 조사와 애정 – 이미 ‘우리 팀’처럼 말한다\n\n준비된 후보자는 회사를 외부 시선으로 보지 않습니다.\n이미 “우리”라는 관점으로 이야기합니다.\n\n- 왜 이 회사인지\n- 이 제품의 어떤 방향에 공감했는지\n- 만약 합류한다면 어떤 문제를 풀고 싶은지\n\n이 정도의 고민이 담긴 답변은\n면접관에게 진정성 + 실행 가능성을 동시에 전달합니다.\n\n덧붙여, 이런 요소들도 중요합니다\n\n- 데이터 드리븐 사고: 감이 아니라 근거로 말하는가\n- Humble Confidence: 겸손하지만 스스로에 대한 확신이 있는가\n\n이 두 가지는 단기간에 만들기 어렵지만,\n면접에서는 분명히 드러납니다.\n\n준비된 PM은\n‘말을 잘하는 사람’이 아니라\n생각이 정리되어 있고, 이유를 설명할 수 있는 사람입니다.\n\n성공적인 면접을 통해\n원하는 커리어 여정을 이어가시길 응원합니다.\n\n* 본 글은 실무형 멘토링 1위, F-Lab과 협업하여 작성되었습니다.\n\n👉 더 자세한 내용은 댓글의 링크를 참고해 주세요.",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7411204617524391938?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7411204617524391938%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "신사업 전략의 빈틈을 드러내는 AI ‘draftie.pro’",
-      "images": [],
-      "user_link": "https://www.linkedin.com/in/ACoAABG8blgBec5lMaOFikhIy_Gt3CgGhjTWVOo",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "text",
-      "source": "network",
-      "sequence_id": 81,
-      "sns_platform": "linkedin"
-    },
-    {
-      "index": 40,
-      "code": "7421022478979948545",
-      "username": "Jeongmin Lee",
-      "created_at": "2026-01-25 11:53:54",
-      "time_text": "1주",
-      "full_text": "🧊 Claude in Excel 은 단순 'AI + X' 스타트업을 모두 죽이겠다는 선언입니다.\n\n이번 주 Anthropic 이 공개한 Claude in Excel 을 보면서 등골이 서늘해졌습니다. Microsoft 가 Excel 에 AI를 얹는 방식과 Anthropic 이 접근하는 방식이 완전히 달랐거든요.\n\nMicrosoft 는 AI 로 Excel 함수를 실행시키는 반면, Claude 는 Excel 을 그냥 프레젠테이션 레이어로만 씁니다.\n\n결과는? 속도와 품질 모두 Anthropic 의 압승이었어요.\n단순히 AI 를 더하는 것과 달리 AI 네이티브 관점은 생각보다 큰 차이를 만들어 내고 있습니다.\n\n1️⃣ \"SaaS is Dead\" 가 현실이 되고 있습니다\n\n단순히 서비스를 개선하는 것만으로는 생존이 어려운 시대가 왔어요. 결국 지금 시장에서 승산을 보여주려면 세 가지 중 하나는 지배해야 합니다.\n\n• 프레임워크 지배: Opencode, Clawdbot 같은 AI 운영 도구\n• 인프라 지배: Vercel, Supabase, Cloudflare, Stripe 같은 기반 서비스\n• 또는 이 전체를 통합: Base44(or Replit, Lovable), Cursor, Comet, Manus 처럼\n\n이 중 어느 것도 확보하지 못하면?\n\n남은 선택지는 가격 덤핑뿐이에요. 실제로 치킨 게임 수준의 경쟁이 벌어지고 있고요. 다만 AI 제품은 사용자가 늘어날 수록 고정비가 늘어나는 구조입니다. 즉, 지속 가능한 싸움이 아닙니다.\n\n2️⃣ 강력한 AI 모델을 가진 회사의 성장 속도는 차원이 다릅니다\n\nKling 을 보유한 Kuaishou 는 월 2천만 달러($20M MRR, 30억원) 반복 매출을 찍고 있어요. Google 은 Nano Banana Pro 와 Gemini-3 출시 이후 서비스 점유율이 급등했고요.\n\n한국에서는 잘 언급 안 되지만, Grok 의 시장 침투 속도는 사실 Google 을 훨씬 앞서고 있습니다. 이유가 좀 아찔한데요. 세계 최고 수준의 이미지, 영상 AI를 제한 없이 풀어버린 극단적 플레이 덕분이에요.\n\n그런데 대부분의 스타트업은 이 \"모델\"을 보유하고 있지 않으며, 보유하기 힘듭니다.\n\n3️⃣ 왜 토큰을 많이 써야 하는가, 이제는 진지하게 답해야 할 질문입니다\n\n\"토큰 왜 이렇게 태워요?\" 팀원들한테 이 질문 많이 받으실 거예요. 솔직히 저도 작년 초까지는 명확한 답이 없었습니다.\n\n그런데 Claude Code 이후로 달라졌어요. 대부분의 사람보다 훨씬 빠르고, 왠만한 사람보다 작업을 잘하는 순간들을 직접 목격하니까요.\n\n관리자 입장에서 토큰 사용을 권장하는 이유가 명확해졌습니다. \"AI-native 가 뭔지는 직접 많이 써본 사람만 체감할 수 있거든요.\"\n\n지금 초기 AI 스타트업이 가야 할 방향도 이 경험에서 나온다고 생각해요.\n\n• 그냥 최고 수준의 CS 레벨을 기반으로 기업 고객에 확실히 밀착하거나\n• 한 눈에 잘 안 보이는 웹, 오프라인 상의 관계성 데이터를 AI 와 함께 수집하며 준비하거나\n• 수요가 확실한 틈새 영역에서 소규모로 빠르게 성장하거나\n• 아니면, \"AI-native 서비스를 만들거나\"\n\n4️⃣ 2026년, 초기 스타트업에 시간이 얼마 안 남았습니다\n\n작년 이맘때 기준으로 1.5개월 뒤에 Manus 가 나왔고, 그 회사는 3~4조원에 Meta에 인수됐어요.\n\n올해는 그보다 더 파괴적인 무언가가 나올 겁니다. Anthropic, Kuaishou, Vercel, Supabase, Cloudflare 같은 강자들은 이미 다음 수를 준비하고 있고요.\n\nAI 시대의 승자는 더 좋은 기능을 만드는 회사가 아니라, AI 가 작동하는 방식 자체를 재정의하는 회사입니다.\n\n2026년에 어떤 AI-native 서비스가 등장할까요? 그리고 여러분은 지금 무엇을 준비하고 계신가요?",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7421022478979948545?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7421022478979948545%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "Building with AI @ Smoretalk | Control opinions with AI",
-      "images": [
-        "https://media.licdn.com/dms/image/v2/D5605AQEST6HAfRSYXQ/videocover-high/B56ZvzElzSHsBU-/0/1769309627026?e=1770976800&v=beta&t=-eTzpcR70FHO6cHtZo-oJTt6kDJIbUPnIaAbUoxPy7s"
-      ],
-      "user_link": "https://www.linkedin.com/in/ACoAACkadIABsYoadkJXuZXMASkhnSFeoK_nVw8",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "image",
-      "source": "network",
-      "sequence_id": 126,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/8b714393cf22a57e848a5fb6bdf614c6.jpg"
-      ]
-    },
-    {
-      "index": 41,
-      "code": "7418185693136306176",
-      "username": "Daero Won",
-      "created_at": "2026-01-17 16:01:32",
-      "time_text": "2주",
-      "full_text": "🛑 개발자의 시대가 저물고, '소프트웨어 크리에이터'의 시대가 옵니다.\n- 수천만 원짜리 외주 용역이 필요 없게 될 세상\n- 소프트웨어가 '유튜브 모멘트'를 맞이했다\n\n1. '개발'에서 '창작'으로: 소프트웨어의 민주화\n\n• 유튜브가 나오기 전, 영상 제작은 방송국의 전유물이었습니다. 수천만 원짜리 장비와 전문 편집 기술이 있어야 했으니까요. 하지만 스마트폰과 유튜브가 모든 장벽을 허물었습니다.\n• 지금의 소프트웨어도 마찬가지입니다. 앱 하나를 만들려면 컴퓨터 공학 학위, 복잡한 개발 툴, 그리고 비싼 개발자 연봉이 필요했습니다.\n• 하지만 이제 AI가 '스마트폰'과 '유튜브' 역할을 하고 있습니다. 복잡한 코딩은 AI가 대신하고, 우리는 아이디어만 있으면 됩니다. 소프트웨어 제작의 진입장벽이 무너지고 있습니다.\n\n2. 개발자(Coder)의 종말과 편집자(Editor)의 탄생\n\n• 지금까지 '소프트웨어 엔지니어'의 정의는 \"코드를 직접 작성하는 사람\"이었습니다. 하지만 앞으로는 그 정의가 완전히 바뀝니다.\n• 미래의 개발자는 AI가 생성한 코드를 검토하고, 방향을 잡고, 조립하는 \"편집자\"나 \"감독\"에 가까워집니다. 마치 유튜버가 영상을 촬영하고 편집하듯, 누구나 앱을 '편집'해서 내놓는 세상이 오는 거죠.\n• 코딩 기술보다 '어떤 문제를 해결할 것인가?'라는 기획력과 취향(Taste)이 훨씬 중요한 역량이 됩니다.\n\n3. '일회용 소프트웨어' 시장의 폭발\n\n• 개발 비용이 0에 수렴하면 어떤 일이 벌어질까요? 예전에는 수지가 맞지 않아 만들지 못했던 '초니치(Hyper-niche)'한 앱들이 쏟아져 나올 겁니다.\n• 동네 학부모 모임을 위한 전용 앱, 이번 주말 동창회를 위한 일회용 앱, 나만의 식단 관리 앱 등... 마치 유튜브에 올라오는 수많은 브이로그처럼, 작지만 확실한 수요를 위한 소프트웨어가 폭발적으로 늘어날 것입니다.\n• 거대 IT 기업이 지배하던 시장 아래에, 수백만 명의 '1인 소프트웨어 크리에이터'들이 만드는 롱테일(Long tail) 시장이 열리는 것입니다.\n\n결론적으로, 우리는 지금 소프트웨어 산업의 거대한 지각 변동 한가운데 서 있습니다. 이제 \"코딩을 배울까요?\"라는 질문 대신, \"무엇을 만들까요?\"라는 질문을 던져야 할 때입니다.\n\nAI라는 도구가 쥐어졌을 때, 가장 먼저 만들고 싶은 '나만의 앱'이 있다면 댓글로 공유해 주세요! 👇\n\n[출처: a16z, \"Software's YouTube Moment is Happening\" by Andrew Chen]",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7418185693136306176?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7418185693136306176%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "Venture Builder & Investor | Venture Studio | Fractional Founder | Consultant | Columnist | Coach I Korea-Singapore Connector",
-      "images": [
-        "https://media.licdn.com/dms/image/v2/D5605AQE4H5GQdAGLxg/videocover-high/B56ZvKwjpAJEBY-/0/1768633286559?e=1770976800&v=beta&t=BxZkgcZLWQchJDlZObo6_l58-DDukv6rRL9V9o0woQY"
-      ],
-      "user_link": "https://www.linkedin.com/in/ACoAAB3-YQ0BEgh--QzdyJyE8cKdv166lOp802k",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "image",
-      "source": "network",
-      "sequence_id": 117,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/6ab6a4b24c32f94d81e88d82976b0301.jpg"
-      ]
-    },
-    {
-      "index": 42,
-      "code": "7416288711971164160",
-      "username": "설동헌",
-      "created_at": "2026-01-12 10:23:36",
-      "time_text": "3주",
-      "full_text": "인터랙티브 프롬프트 엔지니어링 튜토리얼을 소개합니다.\n(강의하면서 활용했던 앱을 리뉴얼 했습니다!)\n\n📢 Anthropic 공식 프롬프트 엔지니어링 튜토리얼, 이제 브라우저에서 바로!\n\nAnthropic이 공개한 공식 튜토리얼이 있지만…\n🤔 주피터 노트북이라 설치가 번거롭고\n🤔 OpenAI API 키도 직접 발급받아야 해서 진입장벽이 높았습니다\n\n그래서 누구나 바로 시작할 수 있도록 개발했습니다:\n\n✅ 설치 불필요 - 브라우저에서 바로 실행\n✅ API 키 불필요 - 무료 사용 가능 (개발자 비용 부담)\n✅ 실전형 학습 - 직접 프롬프트를 수정하며 배우기\n\n🔗 바로 시작하기:\nhttps://lnkd.in/gE_dNnwf\n\n\n📚 공식 원본 (GitHub):\nhttps://lnkd.in/gyaPBxbk\n\n프롬프트 엔지니어링, 이제 쉽고 무료로 시작하세요! 🚀",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7416288711971164160?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7416288711971164160%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "설코딩 | 맨날 AI랑 개발하는 사람",
-      "images": [
-        "https://media.licdn.com/dms/image/v2/D5622AQHTFCt3MMBayQ/feedshare-shrink_2048_1536/B56ZuvzR_mG4Aw-/0/1768181015313?e=1772064000&v=beta&t=G-L0TKgNpjk4jIT_wydR3ObySAGIn4Z86e4yyDtftYQ"
-      ],
-      "user_link": "https://www.linkedin.com/in/ACoAACZRjioBYRmFe3xTvcuh8BqTRS137FC8JUw",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "image",
-      "source": "network",
-      "sequence_id": 103,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/57c43b84df6e9bfed76dde934ad2c54d.jpg"
-      ]
-    },
-    {
-      "index": 43,
-      "code": "7418068289974710272",
-      "username": "Elin Oh",
-      "created_at": "2026-01-17 08:15:01",
-      "time_text": "2주",
-      "full_text": "AI 시대 맥킨지가 의심하는 능력을 채용하는 이유\n\n채용 현장에 인공지능 도입이 본격화되고 있습니다. 최근 보도에 따르면 맥킨지는 신입 컨설턴트 채용 과정에서 자체 AI 도구(AI 어시스턴트 릴리)를 활용하는 새로운 면접 방식을 시험 도입한다고 합니다. 지원자들은 실제 면접에서 AI를 사용해 케이스를 분석하고 결론을 정교화하는 과제를 수행합니다.\n\n평가의 핵심은 단순히 AI를 사용하는 능력이 아니라 AI가 제시한 결과를 비판적으로 검토하며 고객의 맥락에 맞게 재구성하는 능력입니다. 이를 위해서는 질문하는 프롬프트 능력은 필수죠. 그러나 지원자들이 고급 프롬프팅 기법을 알 필요는 없다고 합니다. 지원자들은 AI를 생산적인 사고 파트너(productive thinking partner)로 활용하고, 컨설턴트들이 주니어 팀원들과 협업하듯 자신의 사고 과정을 명확하게 전달할 수 있음을 보여줘야 합니다.\n\n무엇보다 채용 관계자가 중요시한 점은 AI가 내놓은 답을 그대로 수용하지 않고 이를 고객의 구체적인 요구에 맞게 맥락화할 수 있는지의 여부였습니다. 지난 해부터 저는 AI 시대에 필요한 역량으로 각 전문 분야에서의 맥락 설계를 강조해 왔습니다. 최근 채용 시장에서도 이를 중시한다는 소식은 저의 의견과 관점을 같이 한다는 점에서 의미 있게 다가옵니다.\n\n생성형 AI시대에 글을 읽고 보고서를 쓰고 데이터를 읽는 방식 자체가 바뀌고 있습니다. 정답을 생성하는 능력보다 정답처럼 보이는 것을 검증하는 능력이 중심으로 올라오는 시대입니다. 같은 도구를 쓴다고 해서 같은 사고를 하는 것은 아니며 차이는 결국 해석과 비판의 층위에서 갈릴 것입니다.\n\n이번 맥킨지의 시도는 채용 방식의 변화이면서 동시에 우리가 어떤 지적 역량을 길러야 하는지에 대한 분명한 신호처럼 보입니다. 앞으로의 지식 노동자는 질문을 세우고 맥락을 읽고 정보를 의심하는 능력이 실력을 가르는 기준이 될 것입니다.",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7418068289974710272?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7418068289974710272%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "Linguistic Data & Corpus Analysis Specialist, Curriculum & Language Content Expert",
-      "images": [
-        "https://media.licdn.com/dms/image/v2/D5622AQEK9_IAlnRgSg/feedshare-shrink_1280/B56ZvGgxX0K8Ac-/0/1768562038590?e=1772064000&v=beta&t=KRogLxDfFZlyld2KujTdnIicYyqs0l-clxUkyXdI1-E"
-      ],
-      "user_link": "https://www.linkedin.com/in/ACoAAFYYHsQBOSPHMzU0ESqhTweGdQWNW0cp2OI",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "image",
-      "source": "network",
-      "sequence_id": 116,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/e84dee8dc1dfbada3df58ae007f5586d.jpg"
-      ]
-    },
-    {
-      "index": 44,
       "code": "7418791458029121536",
       "username": "Geonho Shin",
       "created_at": "2026-01-19 08:08:38",
@@ -4805,36 +4858,13 @@ const snsFeedData = {
       "profile_slogan": "데이원컴퍼니 B2B사업부 본부장",
       "images": [],
       "user_link": "https://www.linkedin.com/in/ACoAACe1830BrSXuOX_8zU48ZsSu0K05zEpYfVw",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "text",
       "source": "network",
       "sequence_id": 120,
       "sns_platform": "linkedin"
     },
     {
-      "index": 45,
-      "code": "7417813623470751745",
-      "username": "정준재",
-      "created_at": "2026-01-16 15:23:04",
-      "time_text": "3주",
-      "full_text": "교육만족도 분석만을 위해 6명 채용한 썰 풉니다.\n\n오늘은 최근 6명을 채용하여 일하는 모습을 지켜본 이야기를 풀어볼까 합니다.\n\n데이터는 쌓여가는데 단순하게 만족도 평균만 보고 있지는 않으신가요?\n조금더 의미있는 분석을 할 수 있지 않을까요?\n\n이러한 니즈를 해결하고자 교육 만족도 분석만을 담당할 6명을 선발했습니다. 6명의 역할은 다음과 같습니다.\n\n- 총괄 디렉터 1명\n- 정량분석 전문가 1명\n- 정성분석 전문가 1명\n- 통계분석 전문가 1명\n- 트렌드 분석 전문가 1명\n- 리포팅 작성 전문가 1명\n\n6명이 일하는 프로세스는 다음과 같습니다.\n\nstep 1. 제가 총괄 디렉터에게 '교육만족도 데이터(엑셀)'를 전달합니다.\n- \"이 데이터를 가지고 교육만족도 분석 진행해주세요.\"\n\nstep 2. 총괄 디렉터는 다음과 같은 업무를 수행합니다.\n- 데이터 확인 (응답 수, 과정 수, 기수 파악)\n- 핵심 지표 계산 (만족도, NPS, 재수강 의향)\n- 위험 신호 감지 (🔴 저만족 과정/강사)\n- 초기 문제점 식별\n\nstep 3. 총괄 디렉터 주관으로 킥오프 미팅을 시작합니다.\n- 분석 전문가(4명) 전원 참여\n- 총괄 디렉터의 초기 발견 사항 공유\n- 각 분석 전문가 의견 수렴 및 분석 방향(방법 등) 합의\n- 1차 문제점 및 분석계획 보고서 작성\n\n이후 해당 보고서는 저에게 보고되어 제가 의견을 추가하거나 승인하여 본격격적인 분석에 돌입하게 됩니다.\n\nstep 4. 각 전문가는 개별적으로 동시에 분석을 시작합니다.\n- 각 전문가별 기본적으로 분석해야 할 항목 계산\n- 킥오프 미팅을 통해 도출된 문제점 집중 분석\n- 필요시 각 전문가와 협업 요청 가능\n\nstep 5. 결과를 종합하여 분석 리뷰 미팅을 시작합니다.\n- 각 전문가 분석 결과 발표\n- 도출된 문제점 해결 여부 판단\n- 추가 분석 필요성 의견 개진(필요시 추가 분석 후 재미팅 반복)\n- 분석 종료 시 각 전문가별 자기 성찰 및 학습\n\nstep 6. 총괄 디렉터는 교육만족도 최종 보고서를 작성합니다.\n- 전문가 회의 결과 내용 정리\n- 전체 분석 내용 및 개선방안, 제언\n\nstep 7. 리포팅 작성 전문가 등장\n- 강사 맞춤형 리포트 작성(개인성과, 개선과제 등 제안)\n\nstep 8. 최종 보고서와 강사별 맞춤 리포트를 제가 확인하여 프로젝트를 마무리합니다.\n\n네. 눈치 빠른 분들은 이미 아셨겠지만 교육만족도 분석 프로젝트를 위해 에이전트 팀을 만들어 운영한 실제 사례였습니다.\n\nclaude code를 통해 각 에이전트를 조합하여 하나의 문제를 해결하는 이 장면이 저는 AI를 접하고 나서 느낀 가장 큰 충격이었습니다. AI가 실제 업무에 이렇게 들어올것이라 확신을 느끼게 되었습니다.\n\n처음엔 반신반의했습니다.\n\"AI가 정말 사람처럼 협업할 수 있을까?\"\n\n하지만 첫 킥오프 미팅에서 각 에이전트가 자신의 영역에서 발견한 인사이트를 공유하고, 서로 추가 분석을 요청하며, 최종 보고서가 완성되는 순간을 보았을 때...\n\n이건 단순한 자동화가 아니었습니다. 진짜 '팀'이었습니다.\n\n2026년, 우리는 더 이상 AI를 '도구'로만 바라볼 수 없습니다.\n\nAI는 이미 우리의 동료가 되었고, 중요한 것은 \"어떻게 함께 일할 것인가\" 입니다.\n\n여러분의 다음 팀원은 AI일지도 모릅니다. 준비되셨나요?\n\n#AI에이전트 #ClaudeCode #업무자동화 #HRD #데이터분석 #디지털트랜스포메이션",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7417813623470751745?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7417813623470751745%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "KGM 교육문화팀 책임매니저 | HRD 전략 수립 | 교육기획 및 운영 | HRD Data Analysis | 조직문화 체계수립 및 활성화 | AI 활용 업무 효율화",
-      "images": [
-        "https://media.licdn.com/dms/image/v2/D5622AQH5nkGkmopWNA/feedshare-shrink_800/B56ZvFeLQiHMAg-/0/1768544580838?e=1772064000&v=beta&t=GEJH3oTqV-unEpJhUFvag7qT9vC9qS4FnFeesKNIMpc"
-      ],
-      "user_link": "https://www.linkedin.com/in/ACoAADyakk0BEf4BebI6f2j5oQIfYuzchYt_QW4",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "image",
-      "source": "network",
-      "sequence_id": 113,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/c8c89e32a08061b135a46210b8d86409.jpg"
-      ]
-    },
-    {
-      "index": 46,
       "code": "7418542725496754176",
       "username": "Minjung Kim",
       "created_at": "2026-01-18 15:40:15",
@@ -4846,7 +4876,7 @@ const snsFeedData = {
         "https://media.licdn.com/dms/image/v2/D5622AQF-xB7BkwgpzA/feedshare-shrink_2048_1536/B56ZvP1TFQHsAk-/0/1768718414411?e=1772064000&v=beta&t=xTxmfyDD9A2QBZvrKM4WReQnU4qVSFpGONWCIIczBmY"
       ],
       "user_link": "https://www.linkedin.com/in/ACoAADk-HPIB9Dfu21FvR7IWiubg2RoPiyFq_PY",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "image",
       "source": "network",
       "sequence_id": 119,
@@ -4856,7 +4886,64 @@ const snsFeedData = {
       ]
     },
     {
-      "index": 47,
+      "code": "7418270572356370432",
+      "username": "Joongsoo Park",
+      "created_at": "2026-01-17 21:38:49",
+      "time_text": "2주",
+      "full_text": "AI시대에 다시 창업한다면 개발 분야에서 꼭 챙기고 싶은 것\n만약 추후 다시 창업을 하게 된다면 저는 데이터 구조 설계와 백오피스는 리소스를 들여서라도 꼭 잘 만들고 시작할 것 같습니다.\n\nAI시대가 되면서 개발에 대한 허들이 낮아서 생산성이 매우 높아지고 있고, 창업가로서 코딩은 더 이상 문제가 되지 않습니다.\n\n하지만 시작은 쉬워졌어도 시장 검증 이후 스케일업 단계에서 발생하는 문제는 동일할 것이라 생각합니다.\n\n프로덕트가 방대해져가면서 쌓이게 되는 엄청난 맥락들과 일관적이지 않은 소스코드로 인해 개발의 효율성이 점점 떨어지게 되고, 어느 순간 \"다시 만들자\" 라는 결론에 도달해 전체 리팩토링을 하게 되는 등 비즈니스에 집중되어야 할 리소스가 개발에 집중되어 본질이 흐려지는 문제가 발생하게 됩니다.\n\n이전에는 사업 초기에 설계나 백오피스 구축에 시간을 쏟는 것이 매우 비효율적인 일이였지만, 이제는 AI로 인해 충분히 해볼만한 일이 되었다고 생각합니다.\n\n오히려 초기에 이러한 체계를 잘 잡아놓지 않으면 시간이 지날수록 스파게티 코드는 쌓여가고, 원하지 않는 결과물이 나오는 상황이 많이 발생하게 될 것입니다.\n\n또한 규모가 커질수록 AI만으로는 한계를 만날 수 밖에 없어 사람의 개입이 필수가 되는데 이 때 제대로 된 백오피스가 구축되어있지 않으면 비즈니스의 속도가 느려지고, 개발자의 리소스가 운영에 쓰여 비효율이 발생하게 됩니다.\n\n백오피스는 업무의 흐름을 정의하는 곳이기에 체계화가 잘 되어있으면 부분적으로 AI를 도입하며 점진적인 전면 자동화를 시도하기에도 좋고요.\n\n그렇기에 추후 다시 창업을 하게 된다면 이러한 체계를 제대로 만들어두고 기업의 체질이 IT베이스를 벗어나지 않도록 하여 높은 생산성을 유지할 수 있는 상태로 만들어두고 싶습니다.\n\n이제 개발에 대한 허들이 낮아져 개발자의 필요성이 많이 떨어졌지만, 이러한 체계를 잘 잡으려면 실력있는 개발자가 필요하게 될 것이기에 개발자의 양극화는 더 심해질 것 같습니다. (다른 직군도 마찬가지지만요)",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7418270572356370432?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7418270572356370432%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "F-Lab CEO / ex-NAVER / ex-HYPERCONNECT",
+      "images": [],
+      "user_link": "https://www.linkedin.com/in/ACoAABlU7G8BKM95Q-Tq8DVkR-0dQnv6OzlMbX4",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "text",
+      "source": "network",
+      "sequence_id": 118,
+      "sns_platform": "linkedin"
+    },
+    {
+      "code": "7418185693136306176",
+      "username": "Daero Won",
+      "created_at": "2026-01-17 16:01:32",
+      "time_text": "2주",
+      "full_text": "🛑 개발자의 시대가 저물고, '소프트웨어 크리에이터'의 시대가 옵니다.\n- 수천만 원짜리 외주 용역이 필요 없게 될 세상\n- 소프트웨어가 '유튜브 모멘트'를 맞이했다\n\n1. '개발'에서 '창작'으로: 소프트웨어의 민주화\n\n• 유튜브가 나오기 전, 영상 제작은 방송국의 전유물이었습니다. 수천만 원짜리 장비와 전문 편집 기술이 있어야 했으니까요. 하지만 스마트폰과 유튜브가 모든 장벽을 허물었습니다.\n• 지금의 소프트웨어도 마찬가지입니다. 앱 하나를 만들려면 컴퓨터 공학 학위, 복잡한 개발 툴, 그리고 비싼 개발자 연봉이 필요했습니다.\n• 하지만 이제 AI가 '스마트폰'과 '유튜브' 역할을 하고 있습니다. 복잡한 코딩은 AI가 대신하고, 우리는 아이디어만 있으면 됩니다. 소프트웨어 제작의 진입장벽이 무너지고 있습니다.\n\n2. 개발자(Coder)의 종말과 편집자(Editor)의 탄생\n\n• 지금까지 '소프트웨어 엔지니어'의 정의는 \"코드를 직접 작성하는 사람\"이었습니다. 하지만 앞으로는 그 정의가 완전히 바뀝니다.\n• 미래의 개발자는 AI가 생성한 코드를 검토하고, 방향을 잡고, 조립하는 \"편집자\"나 \"감독\"에 가까워집니다. 마치 유튜버가 영상을 촬영하고 편집하듯, 누구나 앱을 '편집'해서 내놓는 세상이 오는 거죠.\n• 코딩 기술보다 '어떤 문제를 해결할 것인가?'라는 기획력과 취향(Taste)이 훨씬 중요한 역량이 됩니다.\n\n3. '일회용 소프트웨어' 시장의 폭발\n\n• 개발 비용이 0에 수렴하면 어떤 일이 벌어질까요? 예전에는 수지가 맞지 않아 만들지 못했던 '초니치(Hyper-niche)'한 앱들이 쏟아져 나올 겁니다.\n• 동네 학부모 모임을 위한 전용 앱, 이번 주말 동창회를 위한 일회용 앱, 나만의 식단 관리 앱 등... 마치 유튜브에 올라오는 수많은 브이로그처럼, 작지만 확실한 수요를 위한 소프트웨어가 폭발적으로 늘어날 것입니다.\n• 거대 IT 기업이 지배하던 시장 아래에, 수백만 명의 '1인 소프트웨어 크리에이터'들이 만드는 롱테일(Long tail) 시장이 열리는 것입니다.\n\n결론적으로, 우리는 지금 소프트웨어 산업의 거대한 지각 변동 한가운데 서 있습니다. 이제 \"코딩을 배울까요?\"라는 질문 대신, \"무엇을 만들까요?\"라는 질문을 던져야 할 때입니다.\n\nAI라는 도구가 쥐어졌을 때, 가장 먼저 만들고 싶은 '나만의 앱'이 있다면 댓글로 공유해 주세요! 👇\n\n[출처: a16z, \"Software's YouTube Moment is Happening\" by Andrew Chen]",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7418185693136306176?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7418185693136306176%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "Venture Builder & Investor | Venture Studio | Fractional Founder | Consultant | Columnist | Coach I Korea-Singapore Connector",
+      "images": [
+        "https://media.licdn.com/dms/image/v2/D5605AQE4H5GQdAGLxg/videocover-high/B56ZvKwjpAJEBY-/0/1768633286559?e=1770980400&v=beta&t=_DGX61RZCRrzOqYmOVtmJMeDXn_T6jiWq-0Mr6V8u58"
+      ],
+      "user_link": "https://www.linkedin.com/in/ACoAAB3-YQ0BEgh--QzdyJyE8cKdv166lOp802k",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "image",
+      "source": "network",
+      "sequence_id": 117,
+      "sns_platform": "linkedin",
+      "local_images": [
+        "web_viewer/images/27e44149c32b385651bdf99c01cfd57f.jpg"
+      ]
+    },
+    {
+      "code": "7418068289974710272",
+      "username": "Elin Oh",
+      "created_at": "2026-01-17 08:15:01",
+      "time_text": "2주",
+      "full_text": "AI 시대 맥킨지가 의심하는 능력을 채용하는 이유\n\n채용 현장에 인공지능 도입이 본격화되고 있습니다. 최근 보도에 따르면 맥킨지는 신입 컨설턴트 채용 과정에서 자체 AI 도구(AI 어시스턴트 릴리)를 활용하는 새로운 면접 방식을 시험 도입한다고 합니다. 지원자들은 실제 면접에서 AI를 사용해 케이스를 분석하고 결론을 정교화하는 과제를 수행합니다.\n\n평가의 핵심은 단순히 AI를 사용하는 능력이 아니라 AI가 제시한 결과를 비판적으로 검토하며 고객의 맥락에 맞게 재구성하는 능력입니다. 이를 위해서는 질문하는 프롬프트 능력은 필수죠. 그러나 지원자들이 고급 프롬프팅 기법을 알 필요는 없다고 합니다. 지원자들은 AI를 생산적인 사고 파트너(productive thinking partner)로 활용하고, 컨설턴트들이 주니어 팀원들과 협업하듯 자신의 사고 과정을 명확하게 전달할 수 있음을 보여줘야 합니다.\n\n무엇보다 채용 관계자가 중요시한 점은 AI가 내놓은 답을 그대로 수용하지 않고 이를 고객의 구체적인 요구에 맞게 맥락화할 수 있는지의 여부였습니다. 지난 해부터 저는 AI 시대에 필요한 역량으로 각 전문 분야에서의 맥락 설계를 강조해 왔습니다. 최근 채용 시장에서도 이를 중시한다는 소식은 저의 의견과 관점을 같이 한다는 점에서 의미 있게 다가옵니다.\n\n생성형 AI시대에 글을 읽고 보고서를 쓰고 데이터를 읽는 방식 자체가 바뀌고 있습니다. 정답을 생성하는 능력보다 정답처럼 보이는 것을 검증하는 능력이 중심으로 올라오는 시대입니다. 같은 도구를 쓴다고 해서 같은 사고를 하는 것은 아니며 차이는 결국 해석과 비판의 층위에서 갈릴 것입니다.\n\n이번 맥킨지의 시도는 채용 방식의 변화이면서 동시에 우리가 어떤 지적 역량을 길러야 하는지에 대한 분명한 신호처럼 보입니다. 앞으로의 지식 노동자는 질문을 세우고 맥락을 읽고 정보를 의심하는 능력이 실력을 가르는 기준이 될 것입니다.",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7418068289974710272?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7418068289974710272%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "Linguistic Data & Corpus Analysis Specialist, Curriculum & Language Content Expert",
+      "images": [
+        "https://media.licdn.com/dms/image/v2/D5622AQEK9_IAlnRgSg/feedshare-shrink_1280/B56ZvGgxX0K8Ac-/0/1768562038590?e=1772064000&v=beta&t=KRogLxDfFZlyld2KujTdnIicYyqs0l-clxUkyXdI1-E"
+      ],
+      "user_link": "https://www.linkedin.com/in/ACoAAFYYHsQBOSPHMzU0ESqhTweGdQWNW0cp2OI",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "image",
+      "source": "network",
+      "sequence_id": 116,
+      "sns_platform": "linkedin",
+      "local_images": [
+        "web_viewer/images/e84dee8dc1dfbada3df58ae007f5586d.jpg"
+      ]
+    },
+    {
       "code": "7418053191826690048",
       "username": "Kyunghun Lee",
       "created_at": "2026-01-17 07:15:01",
@@ -4866,58 +4953,13 @@ const snsFeedData = {
       "profile_slogan": "CAIO & Deputy CEO @ Channel Corp | AI × B2B SaaS",
       "images": [],
       "user_link": "https://www.linkedin.com/in/ACoAAA5RhH4BjDv2vMF1Onz2ppvG6jeLmEGo93E",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "text",
       "source": "network",
       "sequence_id": 115,
       "sns_platform": "linkedin"
     },
     {
-      "index": 48,
-      "code": "7417694589320499201",
-      "username": "Daero Won",
-      "created_at": "2026-01-16 07:30:04",
-      "time_text": "3주",
-      "full_text": "💸 <10년 동안 스타트업 20개를 해보며 깨달은 28가지 교훈>\n- 누군가 창업 초기에 이 얘기를 해줬더라면, 인생 10년은 아꼈을 것.\n\nX에서 우연히 본 포스팅 요약. 저자가 20개가 넘는 스타트업을 만들고 실패하며 눈물과 땀으로 배운 교훈들이라는데, 동서고금을 막론하고 진리는 통하는 법. 뭐 하나 거를 타선이 없다.\n\n1. 검증이 최우선\n• 아무도 원하지 않는 물건을 만드느라 10년을 허비.\n◦ 인큐베이터 합격이나 VC 투자는 검증이 아닙니다. 진짜 검증은 고객이 지갑을 여는 겁니다.\n\n2.자존심(EGO)을 죽이세요\n• 내가 원하는 게 아니라, 유저가 원하는 걸 만드세요.\n◦ 내 취향은 중요하지 않습니다. 철저히 유저의 기대치를 충족시키는 도구가 되어야 합니다.\n\n3.투자자 쫓아다니지 마세요\n• 유저를 쫓아다니면, 투자자가 알아서 당신을 쫓아옵니다.\n◦ 투자자에게 관심 끄고 내 제품에 집중하는 지금, 오히려 투자 제안이 가장 많이 들어옵니다.\n\n4. '관리자' 말고 '실행가'를 뽑으세요\n• 초기 스타트업에 뒷짐 지고 지시하는 사람은 필요 없습니다.\n◦ 맨손으로 똥 치울 줄 아는, 직접 움직이는 사람(Doer)만 채용.\n\n5. 랜딩 페이지에 집착하지 마세요\n• 가장 덜 중요한 게 웹사이트 디자인.\n◦ 노코드 툴로 1시간 만에 만드세요. 트래픽은 웹사이트 밖에서 만들어집니다.\n\n6. 풀스택 개발자만 채용하세요\n• 초기 단계에서 팀 단위 개발자들은 생산성 최악.\n◦ 혼자서 북 치고 장구 치고 다 할 줄 아는 풀스택 1명이면 충분.\n\n7. 첫날부터 글로벌 시장을 노리세요\n• 제품이 좋으면 전 세계에서 통하고, 구리면 동네에서도 안 통합니다.\n◦ 한국(로컬)에서 검증하고 나가겠다? 시간 낭비. 처음부터 시장 규모가 1만 배 더 큰 곳에서 노세요.\n\n8. SEO는 2일 차부터 바로 시작하세요\n• 이걸 무시했다가 14년을 손해 봤습니다.\n◦ 키워드 분석해서 홈페이지에 심고, 블로그 글 매주 쓰세요. 이거 세팅하는 데 5분이면 됩니다.\n\n9. 만들기 전에 먼저 파세요\n• 기능 개발하기 전에 유저한테 \"이거 필요해요?\"라고 물어보세요.\n◦ 저는 매일 20명에게 DM을 보냅니다. 반응 좋은 것만 골라서 만드세요. 맨땅에 헤딩하지 마시고요.\n\n10. 안아주고 싶은 사람만 채용하세요\n• 화학적으로 끌리지 않는 사람은 결국 사단이 납니다.\n◦ 이유는 몰라도 \"왠지 안 맞다\" 싶으면 뽑지 마세요. 스타트업은 10년 가는 결혼 생활과 같습니다.\n\n11. 모든 돈을 내 제품과 친구에게 투자하세요\n• 주식, 코인, 부동산 기웃거리지 마세요.\n◦ 제 주변 창업가 친구들에게 투자했다면 지금쯤 유니콘 3개는 잡았을 겁니다. 가장 확실한 투자는 '나'와 '내 동료'.\n\n12. 매일 SNS(X/링크드인)에 글을 쓰세요\n• 이걸 왜 진작 안 했는지 모르겠습니다.\n◦ 새로운 기회와 성장은 전부 여기서 나옵니다.\n\n13. 대기업이랑 협업하지 마세요\n• 겉만 번지르르하지, 시간만 뺏기고 남는 게 없습니다.\n◦ 그들은 당신의 시간을 죽이고 초점을 흐립니다. 결국 유저도 돈도 안 가져다줍니다.\n\n14. 유행(Hype)에 휩쓸리지 마세요\n• 크립토 열풍 쫓다가 1년 반 날리고 사기꾼만 꼬였습니다.\n◦ 내 미션을 지키세요. 쉽게 돈 벌려는 곳에는 나쁜 놈들이 모입니다.\n\n15. B2C 말고 B2B 하세요\n• 일반 소비자 대상 앱은 로또 당첨 확률.\n◦ 사용자가 많아도 돈이 안 됩니다. 4년 날리고 깨달았습니다.\n\n16. 안 되는 프로젝트는 빨리 접으세요\n• 최대 1년입니다. 그 이상 끌지 마세요.\n◦ 아이디어가 틀렸거나 팀 합이 안 맞는 겁니다. 질질 끈다고 해결 안 됩니다.\n\n17. 테크 컨퍼런스는 시간 낭비\n• 거기엔 진짜 창업가(Maker)는 없고 회사 돈으로 놀러 온 직장인만.\n◦ 돈 쓰고 체력 쓰고 영양가 0.\n\n18. 스크럼(Scrum)은 사기\n• 유치원생처럼 매일 아침 \"뭐 했니?\" 묻는 팀은 망합니다.\n◦ 알아서 자기 일하는 어른들과 일하세요. 채팅으로 싱크 맞추는 걸로 충분.\n\n19. PMF 찾기 전까진 외주 주지 마세요\n• 외주 개발자에게 당신의 제품은 그냥 '지루한 일거리'일 뿐.\n◦ 제품에 애정이 없으면 창의적인 해결책도 안 나옵니다.\n\n20. 부트스트랩(자력갱생) 하세요\n• 투자받으러 다니는 시간에 제품 만들었으면 벌써 성공.\n◦ 투자 유치는 몇 달씩 걸리는 소모전. 내 돈으로, 내 매출로 버티는 게 가장 빠릅니다.\n\n21. 10년 걸릴 수도 있습니다\n• 금방 성공해서 결혼하고 애 낳아야지? 그런 계획 세우지 마세요.\n◦ 일 때문에 가족계획 미룬 게 후회. 성공은 생각보다 오래 걸립니다.\n\n22. 무료 요금제(Free Tier) 없애세요\n• 무료 유저 숫자로 자위하지 마세요.\n◦ 돈 내는 사람만 진짜 고객. 무료 유저 피드백만 듣다가 제품 산으로 갑니다.\n\n23. 너무 싸게 팔지 마세요\n• 최저가가 경쟁력인 줄 알았는데 착각.\n◦ 5천 원 내는 고객은 불평만 많고, 5만 원 내는 고객은 팬이 되어줍니다.\n\n24. 실패를 기본값으로 두세요\n• \"열심히 하면 되겠지\"가 아니라 \"이번에도 망할 수 있다\"고 생각하세요.\n◦ 빨리 실패하고 다음 시도로 넘어가는 속도가 중요.\n\n25. 남이 만든 코드 갖다 쓰세요\n• 100% 내 손으로 만들겠다는 건 멍청한 자존심.\n◦ 로그인, 결제창 만드는데 시간 쓰지 말고 그냥 사서 쓰세요.\n\n26. 가족, 친구들과 시간 보내세요\n• 바쁘다는 핑계로 친구 결혼식 다 빠졌는데, 세상 안 망하더군요.\n◦ 일주일에 10%만 가족에게 써도 사업에 아무 지장 없습니다. 추억은 돌아오지 않습니다.\n\n27. 내가 사랑하는 사람들을 위해 만드세요\n• 돈만 보고 싫어하는 대상(대기업 등)을 위해 일하지 마세요.\n◦ 저는 인디 창업가들을 좋아합니다. 좋아하는 사람들을 위해 제품을 만드니\n일의 기쁨이 100배 늘었습니다.\n\n28. 매일 쓰세요\n• 어릴 때 작문 F 학점 받았어도 상관없습니다.\n◦ 꾸준히 내 이야기를 쓰는 것, 그게 결국 나를 알리는 최고의 방법.\n\n출처: Post by John Rush\n\n💬 여러분은 이 중에서 어떤 조언이 가장 뼈 때리게 다가오나요?",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7417694589320499201?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7417694589320499201%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "Venture Builder & Investor | Venture Studio | Fractional Founder | Consultant | Columnist | Coach I Korea-Singapore Connector",
-      "images": [
-        "https://media.licdn.com/dms/image/v2/D5605AQEH7K5Saz-7uw/videocover-high/B56ZvCU7yfIQBU-/0/1768491827585?e=1770976800&v=beta&t=ATLs433VGRtTww5Opd-WVJ-42vZWD-xwVEMr_OSjh1k"
-      ],
-      "user_link": "https://www.linkedin.com/in/ACoAAB3-YQ0BEgh--QzdyJyE8cKdv166lOp802k",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "image",
-      "source": "network",
-      "sequence_id": 111,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/3265f7e20ea71ceb64dd407dffddf493.jpg"
-      ]
-    },
-    {
-      "index": 49,
-      "code": "7414605299321495552",
-      "username": "류장근",
-      "created_at": "2026-01-07 18:54:20",
-      "time_text": "1개월",
-      "full_text": "AI 시대, 진짜 돈 버는 사람은 누구일까요?\n기술을 만드는 사람? 아니면… 인프라를 만드는 사람?\n\n요즘 AI 관련 뉴스를 보면\n마치 매일 혁명이 일어나는 기분입니다.\n\n새로운 AI모델이 쏟아져 나오고,\n전세계에서 수조 원 단위의 투자가 이어지고,\n기업들도 앞다퉈 AI를 접목한 제품을 출시하죠.\n\n하지만 이런 흐름 속에서\n문득, 예전 혁신의 순간들을 떠올려봤습니다.\n\n1,849년 골드러시,\n많은 이들이 금을 캐러 갔지만\n실제로 돈을 번 건 대부분 금을 캐지 않은 사람들이었습니다.\n\n예를 들어, 광부들이 입을 튼튼한 바지가 필요하다는 걸 알아챈\n리바이스(Levi’s).\n그들이 만든 청바지는 당시엔 '부차적인 것'처럼 보였지만,\n결국은 모두에게 필요한 인프라였습니다.\n\n철도 혁명 때도 비슷했습니다.\n수많은 철도 회사들이 등장했지만,\n진짜 부를 만든 건 철도 부품과 자본을 공급한 앤드류 카네기였고,\n\nPC 혁명 땐,표준 PC를 만든 IBM이 아닌\n핵심 기술을 표준화한 인텔과 마이크로소프트가 생태계를 장악했습니다.\n\n인터넷 시대도 마찬가지였죠.\n초기 포털들이 쏟아졌지만\n결국 검색을 지배한 구글이 모든 흐름의 중심이 됐습니다.\n\n이 모든 사례가 말해주는 건 아주 단순합니다.\n\n\"기술 자체보다,\n그 기술 위에서 모두가 필요로 하는 걸 만든 이들이\n결국 승자가 된다.\"\n\n그렇다면 이제 질문을 이렇게 바꿔볼게요.\n\"AI 시대의 리바이스는 누구일까?\"\n\n개인적으로는\nAI 기술 그 자체보다 아래와 같은 레이어들에서\n미래의 승자들이 나올 거라 생각합니다.\n\n1. 데이터 레이어\n: 모델은 오픈돼도,\n좋은 데이터를 가진 쪽은 쉽게 무너지지 않습니다.\n\n2. 검증/규제 대응 레이어\n: AI가 확산될수록,\n규제를 자동으로 대응하는 인프라의 중요성은 커질 겁니다.\n\n3. 도메인 특화 애플리케이션\n: 누구나 만들 수 있는 챗봇이 아니라,\n고유 데이터를 쌓아가는 제품이 진짜 경쟁력을 가집니다.\n\n4. 에이전트 오케스트레이션\n: 여러 모델과 서비스를 유기적으로 연결해주는 플랫폼.\n앞으로 이 영역이 AI 생태계의 ‘중추’가 될 수도 있습니다.\n\n👀 저희 바티팀도 이런 관점에서\n우리가 만들 수 있는 가치를 고민하고 있습니다.\n\n✔ AI를 그저 붙이는 게 아니라,\n제품의 작동 원리 그 자체로 녹여내는 것.\n✔ 모두가 다투는 범용 AI보다,\n우리가 더 잘할 수 있는 커머스 도메인 자동화에 집중하는 것.\n✔ ‘넓고 얕은 것’보다,\n‘좁고 깊은 문제’를 먼저 푸는 것.\n\n퍼블리 박소령 대표님의 책 《실패를 통과하는 일》에서 본 한 문장이 떠올랐습니다.\n\n\"비타민이 아니라, 진통제를 팔아야 한다.\"\n\n멋져 보이는 기능, 새로워 보이는 기술보다\n당장 고통스러운 문제를 풀어주는 것.\n\n진짜로 귀찮고, 복잡하고, 반복적인 일을\n단순하고 명확하게 해결해주는 것.\n\n그게 결국,\n고객이 정말로 지갑을 여는 이유이자\n우리가 만들 제품의 기준이 되어야 한다는 생각이 듭니다.\n\n기술은 매일 새롭지만,\n기술이 ‘부’를 만든 방식은 놀라울 만큼 오래된 패턴을 따릅니다.\n\n이번에도 결국 이길 쪽은\n모두에게 필요한 걸 묵묵히 만들어가는 사람들이 아닐까요?",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7414605299321495552?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7414605299321495552%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "CEO @ BATI.AI | Global Commerce Intelligence for Beauty Brands",
-      "images": [
-        "https://media.licdn.com/dms/image/v2/D5622AQH1JFzisi_iOA/feedshare-shrink_2048_1536/B56ZuX4NmuHgAw-/0/1767779658852?e=1772064000&v=beta&t=Va4yFC-nOtlIkal2NUMeT4lO21BYKxy4xFh2kxe1kHo"
-      ],
-      "user_link": "https://www.linkedin.com/in/ACoAACZfqCcB7Tmya601YQuGRqiAzlUKO_u-pro",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "image",
-      "source": "network",
-      "sequence_id": 98,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/8309847aca5e70433069760b7d256cec.jpg"
-      ]
-    },
-    {
-      "index": 50,
       "code": "7417843854562840576",
       "username": "홍민지Hong Minji",
       "created_at": "2026-01-16 17:23:11",
@@ -4929,7 +4971,7 @@ const snsFeedData = {
         "https://media.licdn.com/dms/image/v2/D5622AQFQJGMC3NL_Ng/feedshare-shrink_2048_1536/B56ZvF5rkAGsAo-/0/1768551791204?e=1772064000&v=beta&t=D4Q2grhOK6udHrj89eZpCstZHsuOE6fqsewK_IC8cgc"
       ],
       "user_link": "https://www.linkedin.com/in/ACoAADhcEVQBJOMtD7wMMWcOw9aFJeD_ao2VW0Y",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "image",
       "source": "network",
       "sequence_id": 114,
@@ -4939,85 +4981,64 @@ const snsFeedData = {
       ]
     },
     {
-      "index": 51,
-      "code": "7416467077739200512",
-      "username": "Minjung Kim",
-      "created_at": "2026-01-12 22:12:22",
+      "code": "7417813623470751745",
+      "username": "정준재",
+      "created_at": "2026-01-16 15:23:04",
       "time_text": "3주",
-      "full_text": "젠스파크 vs 제미나이, '심층 리서치'의 최종 승자는?\n\n요즘 Genspark 기능에 놀라고 있습니다. 심층리서치 진행해보니, 완벽한 보고서 레이아웃으로 출력을 해줍니다.\n문서 역시 책 레이아웃처럼 완벽하네요.\n\nGemini의 '심층 리서치' 기능과 비교해보면, 누가 보고서를 대신 '완성'해주느냐의 싸움입니다.\n1. Genspark: 무기는 Sparkpage와 PDF 리포트입니다. 정보를 찾는 데 그치지 않고, 알아서 목차를 잡고 도표를 넣어서 '바로 제출 가능한' 수준의 보고서를 만들어 여러 냅니다. AI 모델을 동시에 돌려(Mixture of Agents) 교차 검증하는 속도가 엄청납니다.\n\n2. Gemini: 구글 검색과의 결합력과 추론 능력입니다. 구글 워크스페이스연동이 강력한 무기입니다. 자신의 메일과 드라이브 속 자료까지 분석해야 하니 제미나이가 훨씬 뛰어나지만 '예쁜 보고서' 레이아웃은 젠스파크를 따라갈수 없습니다.\n\n결론적으로, Genspark는 에이전트들이 협업해 결과물을 뽑아내는 '워크플로우 자동화'의 최강자, Gemini는 방대한 데이터를 연결하고 논리적 빈틈을 메우는 '지능형 브레인' 의 강자입니다.\n\n실무자라면 젠스파크 추천 : 결과물을 가공하는 시간을 80% 줄여줌\n관리자라면 제미나이 : 복잡한 맥락을 파악하고 의사결정 근거를 찾는 데 최적.\n어떤 도구를 사용할지 선택하는 능력이 필요합니다.",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7416467077739200512?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7416467077739200512%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "AI, Digital Change, HR 및 변화관리(Change Management) 전문성을 바탕으로, 조직이 AI를 실질적으로 도입하고 활용하도록 돕는 AX(AI Transformation) 전략가로 활동 중임. 단순히 기술 도입을 넘어, transforamation 경험과 Design Thinking with AI& Agile 방법론을 통해 구성원이 AI로 일하는 방식을 설계함",
+      "full_text": "교육만족도 분석만을 위해 6명 채용한 썰 풉니다.\n\n오늘은 최근 6명을 채용하여 일하는 모습을 지켜본 이야기를 풀어볼까 합니다.\n\n데이터는 쌓여가는데 단순하게 만족도 평균만 보고 있지는 않으신가요?\n조금더 의미있는 분석을 할 수 있지 않을까요?\n\n이러한 니즈를 해결하고자 교육 만족도 분석만을 담당할 6명을 선발했습니다. 6명의 역할은 다음과 같습니다.\n\n- 총괄 디렉터 1명\n- 정량분석 전문가 1명\n- 정성분석 전문가 1명\n- 통계분석 전문가 1명\n- 트렌드 분석 전문가 1명\n- 리포팅 작성 전문가 1명\n\n6명이 일하는 프로세스는 다음과 같습니다.\n\nstep 1. 제가 총괄 디렉터에게 '교육만족도 데이터(엑셀)'를 전달합니다.\n- \"이 데이터를 가지고 교육만족도 분석 진행해주세요.\"\n\nstep 2. 총괄 디렉터는 다음과 같은 업무를 수행합니다.\n- 데이터 확인 (응답 수, 과정 수, 기수 파악)\n- 핵심 지표 계산 (만족도, NPS, 재수강 의향)\n- 위험 신호 감지 (🔴 저만족 과정/강사)\n- 초기 문제점 식별\n\nstep 3. 총괄 디렉터 주관으로 킥오프 미팅을 시작합니다.\n- 분석 전문가(4명) 전원 참여\n- 총괄 디렉터의 초기 발견 사항 공유\n- 각 분석 전문가 의견 수렴 및 분석 방향(방법 등) 합의\n- 1차 문제점 및 분석계획 보고서 작성\n\n이후 해당 보고서는 저에게 보고되어 제가 의견을 추가하거나 승인하여 본격격적인 분석에 돌입하게 됩니다.\n\nstep 4. 각 전문가는 개별적으로 동시에 분석을 시작합니다.\n- 각 전문가별 기본적으로 분석해야 할 항목 계산\n- 킥오프 미팅을 통해 도출된 문제점 집중 분석\n- 필요시 각 전문가와 협업 요청 가능\n\nstep 5. 결과를 종합하여 분석 리뷰 미팅을 시작합니다.\n- 각 전문가 분석 결과 발표\n- 도출된 문제점 해결 여부 판단\n- 추가 분석 필요성 의견 개진(필요시 추가 분석 후 재미팅 반복)\n- 분석 종료 시 각 전문가별 자기 성찰 및 학습\n\nstep 6. 총괄 디렉터는 교육만족도 최종 보고서를 작성합니다.\n- 전문가 회의 결과 내용 정리\n- 전체 분석 내용 및 개선방안, 제언\n\nstep 7. 리포팅 작성 전문가 등장\n- 강사 맞춤형 리포트 작성(개인성과, 개선과제 등 제안)\n\nstep 8. 최종 보고서와 강사별 맞춤 리포트를 제가 확인하여 프로젝트를 마무리합니다.\n\n네. 눈치 빠른 분들은 이미 아셨겠지만 교육만족도 분석 프로젝트를 위해 에이전트 팀을 만들어 운영한 실제 사례였습니다.\n\nclaude code를 통해 각 에이전트를 조합하여 하나의 문제를 해결하는 이 장면이 저는 AI를 접하고 나서 느낀 가장 큰 충격이었습니다. AI가 실제 업무에 이렇게 들어올것이라 확신을 느끼게 되었습니다.\n\n처음엔 반신반의했습니다.\n\"AI가 정말 사람처럼 협업할 수 있을까?\"\n\n하지만 첫 킥오프 미팅에서 각 에이전트가 자신의 영역에서 발견한 인사이트를 공유하고, 서로 추가 분석을 요청하며, 최종 보고서가 완성되는 순간을 보았을 때...\n\n이건 단순한 자동화가 아니었습니다. 진짜 '팀'이었습니다.\n\n2026년, 우리는 더 이상 AI를 '도구'로만 바라볼 수 없습니다.\n\nAI는 이미 우리의 동료가 되었고, 중요한 것은 \"어떻게 함께 일할 것인가\" 입니다.\n\n여러분의 다음 팀원은 AI일지도 모릅니다. 준비되셨나요?\n\n#AI에이전트 #ClaudeCode #업무자동화 #HRD #데이터분석 #디지털트랜스포메이션",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7417813623470751745?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7417813623470751745%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "KGM 교육문화팀 책임매니저 | HRD 전략 수립 | 교육기획 및 운영 | HRD Data Analysis | 조직문화 체계수립 및 활성화 | AI 활용 업무 효율화",
       "images": [
-        "https://media.licdn.com/dms/image/v2/D5622AQGOkVUvv8i4Lw/feedshare-shrink_2048_1536/B56ZuyVgmUHEAk-/0/1768223541865?e=1772064000&v=beta&t=ozbJJHO-WyVNOnjcQHrOv04GVoJmJZXeKI0hmoBXrU8"
+        "https://media.licdn.com/dms/image/v2/D5622AQH5nkGkmopWNA/feedshare-shrink_800/B56ZvFeLQiHMAg-/0/1768544580838?e=1772064000&v=beta&t=GEJH3oTqV-unEpJhUFvag7qT9vC9qS4FnFeesKNIMpc"
       ],
-      "user_link": "https://www.linkedin.com/in/ACoAADk-HPIB9Dfu21FvR7IWiubg2RoPiyFq_PY",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "user_link": "https://www.linkedin.com/in/ACoAADyakk0BEf4BebI6f2j5oQIfYuzchYt_QW4",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "image",
       "source": "network",
-      "sequence_id": 104,
+      "sequence_id": 113,
       "sns_platform": "linkedin",
       "local_images": [
-        "web_viewer/images/cb01941a9b34634192fe8b0406d9ab7a.jpg"
+        "web_viewer/images/c8c89e32a08061b135a46210b8d86409.jpg"
       ]
     },
     {
-      "index": 52,
-      "code": "7417077551262535680",
-      "username": "Peter Shin",
-      "created_at": "2026-01-14 14:38:10",
+      "code": "7417714347063562240",
+      "username": "김덕중",
+      "created_at": "2026-01-16 08:48:34",
       "time_text": "3주",
-      "full_text": "한국 극초기 팀에게 추천하는 BM\n\n• 1위 AX DX 컨설팅\n\n한국의 DX 시장은 25년 기준 21조원이다. 대부분 대기업 SI가 매출을 차지한다.\n미국 VC 관점에서 보면, 한국 DX는 아직 승자가 결정된 시장이 아니라고 본다. 나는, 넷플릭스가 국내 영화업계를 뒤엎었듯이 이 생태계가 외부 플래이어(OpenAi 등)에 의해 빠르게 disrupt 될수도 있다고 본다.\n\n따라서, 오히려 국내 스타트업에게 구조적으로 큰 기회가 남아있는 시장이 바로 DX, AX 시장인데, 글을 읽는 독자가 B2B SaaS를 준비하는 파운더라면, 미국에서의 B2B SaaS 모델을 그대로 가져오지 말고, 컨설팅처럼 시작하는 SaaS로 GTM할것을 추천한다.\n\nAX DX를 특히 더 추천하는 이유:\n\n1️⃣ 한국 DX는 컨설팅이 아니라 프로젝트 산업으로 굴러간다\n미국에서 디지털 전환은 보통 제품으로 수렴한다. 고객이 문제를 겪고 → SaaS가 그 문제를 해결하고 → 반복 매출이 쌓이고 → 기능이 확장되는 방식인데, 내가보니 한국의 DX는 아직도 강하게 프로젝트 산업이다. 이유인즉,\nA. 예산이 일단, 연 단위 로 열리고,\nB. 성공 기준이 사실 없고 구축 완료에 가깝다. (유착이 많은 이유).\nC. 나아가, 시스템은 운영 효율보다 감사 대응에 맞춰 설계되며.\nD. 담당자가 2-3년 단위로 바뀌고,\nE. 기간이 지날수록 같은 계약건과 고정된 일정에 요구사항이 늘어나기 때문에,\n\n이런 구조에서 가장 잘 돈 버는 BM이 엥간한 스타트업 BM으로는 안된다.\n가장 잘하는 플레이어는 컨설팅 + SI + 운영까지 묶어 가져가는 통합 사업자(미국 관점으로 기괴한 형태)이다.\n\n그 결과, 한국 DX의 핵심 모순이 만들어지는데, DX는 분명히 진행되는데, 진짜 소프트웨어 회사가 성장/태어나지 못한다.\n\n2️⃣ 구매구조가 가장 큰 베리어.\n미국 SaaS는 팀 단위 구매 이후 확산이 보통인데, 한국은 매우 매우 매우 복잡하다.\n실사용자는 현업이지만, 예산은 IT/전략/구매/보안이 쥐고 있고, 최종 결정은 임원/위원회가 하는 방식. 그래서 우리 제품이 아무리 좋아도, 나아가 파운더 본인이 프로세스를 경험해보지 못했다면, “레퍼런스 있나요?”, “보안 인증은요?”, “망분리 환경에서 돼요?”, “장애나면 누가 책임져요?”등의 질문에 대해 기술적으로 답변하려 하다 계약이 매듭지어지지 못한다.\n\n사실 이건 기술 문제가 아니라 구매 구조 문제이며 고로 스타트업은 기업내 통과해야 할 관문을 제품화/상품화 하는 것에 기술에 준하는 신경을 써야 한다.\n\n3️⃣ 그럼 스타트업이 한국 DX 시장에서 어떻게 이길까?\n아래 6가지 전략을 추천한다.\n\nA. 컨설팅을 대체하려 하지 말고 컨설팅을 증폭시켜라\n컨설팅/SI을 유통 채널보자. 컨설팅이 설계하고 SI가 구축하고 스타트업이 운영 제품을 끼워 넣는 구조도 가능한거다. 즉, 컨설팅이 반복적으로 팔 수 있는 제품을 제공하는것도 하나의 방법이겠다. 직접 컨설팅하는것도 추천한다.\n\nB. 대기업 전체가 아니라 팀 하나부터\n한국은 Top-down이 강하지만, 그렇다고 처음부터 전사 도입을 노리면 99%가 늦어진다.\n가장 좋은 진입점은 팀 단위. 돈을 쓸 수 있고 성과가 숫자로 보이고 반복 업무가 많은 곳(예: 재무/구매/정산/CS/품질/물류/영업운영)부터 타겟하자.\n\nC. KPI는 정성이 아니라 (핵심)감사 가능한 숫자로 만들자.\n한국에서 임원이 좋아하는 KPI는 효율화가 아니라, 감사와 보고가 가능한 지표다. 처리시간 32% 감소, 인입 대비 해결률 18% 상승, 재작업률 25% 감소, 오류율 0.3% → 0.1%. 이러한 지표가 있어야 추가 영업과 예산이 열린다.\n\nD. 보안/권한/로그를 기능이 아니라 제품의 중심으로 설계\n효율을 따지는 미국 SaaS는 보안을 나중에 붙여도 된다면, 한국은 타이트한 권한 관리, 감사 로그, 데이터 마스킹, 망분리 대응, 온프렘 옵션등이 필수. 이게 있어야 PoC 이후 확산이 가능하다.\n\nE. RFP를 기다리지 말자.\nBottom-up 데이터를 만들고 Top-down 결재를 통과하자는 뜻이다.\n바로 현업에서 쓸수 있는 제품을 만들어 일단 들어가고, 사용률 데이터 확보후 확산을 제안하자.\n\n4️⃣ 수주할수 있는 AX/ DX 프로젝트들의 성격 10가지\n\n1/ 전략/로드맵 컨설팅 (가장 전형적인 DX/AX)\n2/ 업무 프로세스 혁신(BPR) + 시스템 재구축형 DX\n3/ 데이터/클라우드 전환 컨설팅 (DX의 인프라 레이어)\n4/ 시스템 구축형 컨설팅 (SI/통합 구축 중심)\n5/ 운영/개선형 컨설팅 (Run + Optimize)\n6/ 현업 자동화(RPA/Workflow) 중심 DX\n7/ AI PoC → Pilot → 확산형 AX (요즘 가장 많아지는 형태)\n8/ 생성형 AI(LLM) 도입 컨설팅 (GenAI 패키지형)\n9/ AI 거버넌스/보안/컴플라이언스 컨설팅 (한국에서 매우 중요)\n10/ 조직/인재/변화관리 컨설팅\n\n📢 [Outsome Founder Sprint 5기 모집]\n내가 한국 극초기 팀에게 추천하는 건 위 중 3가지인데,\n7번, AI PoC → Pilot → 확산형 AX\n8번 사내 GenAI 패키지 도입\n6번 현업 자동화(Workflow) + AI 결합\n\n성과가 숫자로 남고, 확산이 가능하다는 점 그리고 레거시 베리어가 작다는 공통점이 있다.\n\nFounder Sprint 5기에서는 나와 4주 동안, 팀에 맞는 AX 과제 선정 → 파일럿 설계 → KPI/세일즈 자료까지 같이 만들수 있다.\n\n· 4-7개 팀 규모로 나와 가깝게 4주동안 호흡.\n· 실리콘밸리 현지인 AX 분야 전문 CTO가 멘토로 합류해 기업 기술 자문.\n· 8명의 YC 파운더가 멘토로 참가, 기업당 4명+4명의 멘토가 제공된다.\n· 월+목 나와 매주 모여 극강의 멘토링을 받는다. (매우 맵다)\n· 3월 시작.\n\n“🇺🇸 미국” 댓글 or DM 주시면 직접 연락드리겠다.\n\n____\n\n· 미국 진출시, 왜 B2C 보다 B2B가 먼저인가. - https://lnkd.in/gNRS28A3",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7417077551262535680?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7417077551262535680%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "Startup Advisor | YC Alum (W20) | Accelerating First-Time Founders",
+      "full_text": "우리는 지금 분명한 분기점 위에 서 있다.\nAI 도입 조직의 62%가 직원 교육에 투자하고 있다는 사실은 단순한 통계가 아니다. 그 숫자 뒤에는 공통된 인식이 있다. AI의 성패는 기술이 아니라 사람의 역량에서 갈린다는 자각이다.\n\n지난 20년간 HR은 ‘잘 설계된 프로세스’를 만드는 데 집중해왔다. 일관성, 규모, 효율성. 덕분에 시스템은 빨라졌지만, 아이러니하게도 의사결정은 더 느려졌고 데이터는 더 잘게 쪼개졌다. 관리 가능한 구조를 만들었지만, 복잡해진 조직 현실을 감당하기엔 그 구조가 지나치게 단순했다.\n\n이제 이 모델은 한계에 도달했다.\nAI가 들어오면서 문제가 된 것은 기술의 성능이 아니라, 기존 HR 사고방식의 내구성이다. 진짜 변화는 AI를 ‘도입하는 순간’이 아니라, 조직의 사고 방식이 바뀌는 지점에서 시작된다. 관리자는 감에 의존해 사람을 이해하는 대신 예측적 인사이트로 팀을 바라보고, HR은 연말 보고서가 아니라 실시간 데이터로 전략을 검증하며, 리더는 과거의 성공 패턴이 아닌 미래의 시그널을 기준으로 결정을 내리게 된다. 이 변화는 도구의 변화가 아니라 인식의 이동이다.\n여기서 하나의 역설이 나타난다.\n\nAI가 깊이 들어올수록, 인간의 역할은 오히려 더 중요해진다.\n자동화는 트랜잭션을 제거한다. 그렇다면 그 빈자리에 무엇을 놓을 것인가. 경영진의 심리 상태와 조직 내 미묘한 문화적 신호를 읽어내는 감각, 공식 평가로는 포착되지 않는 잠재 리더를 발견하는 직관, 변화의 속도 앞에서 팀의 불안을 다루는 리더십. 이 영역은 알고리즘이 대신해주지 않는다. 그리고 바로 이 지점에서 HR의 존재 이유가 다시 정의된다.\n\n앞으로 3~5년, HR의 생존 조건은 명확하다. 데이터를 해석할 수 있는 리터러시, 이를 전략적 선택으로 연결하는 사고력, 그리고 사람과 조직을 읽어내는 심리적 감수성. 이 세 가지를 동시에 갖춘 HR만이 남는다. 나머지는 시스템에 흡수될 것이다.\n\n그래서 지금 조직에 던져야 할 질문은 기술이 아니다.\n우리 HR 팀은 예측 분석을 ‘보고서’가 아니라 ‘판단의 근거’로 이해할 준비가 되어 있는가. 리더들은 HR을 비용 효율이 아니라 전략적 영향으로 평가할 준비가 되어 있는가. 그리고 정말로 우리가 원하는 것은 HR의 자동화인가, 아니면 더 인간적인 HR인가. AI 도입은 기술 과제가 아니다. 조직이 무엇을 가치 있게 보느냐에 대한 선택이다.\n\n지금 이 선택을 진지하게 고민하는 기업만이, 2~3년 뒤 시장의 규칙을 다시 쓰게 될 것이다.\nhttps://lnkd.in/gaAbbP47",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7417714347063562240?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7417714347063562240%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "숙명여대 겸임교수, Firb AI 연구소장",
+      "images": [],
+      "user_link": "https://www.linkedin.com/in/ACoAAAwBOVMBDI50rE9wyD4tsMaGWkV-85Sqd50",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "text",
+      "source": "network",
+      "sequence_id": 112,
+      "sns_platform": "linkedin"
+    },
+    {
+      "code": "7417694589320499201",
+      "username": "Daero Won",
+      "created_at": "2026-01-16 07:30:04",
+      "time_text": "3주",
+      "full_text": "💸 <10년 동안 스타트업 20개를 해보며 깨달은 28가지 교훈>\n- 누군가 창업 초기에 이 얘기를 해줬더라면, 인생 10년은 아꼈을 것.\n\nX에서 우연히 본 포스팅 요약. 저자가 20개가 넘는 스타트업을 만들고 실패하며 눈물과 땀으로 배운 교훈들이라는데, 동서고금을 막론하고 진리는 통하는 법. 뭐 하나 거를 타선이 없다.\n\n1. 검증이 최우선\n• 아무도 원하지 않는 물건을 만드느라 10년을 허비.\n◦ 인큐베이터 합격이나 VC 투자는 검증이 아닙니다. 진짜 검증은 고객이 지갑을 여는 겁니다.\n\n2.자존심(EGO)을 죽이세요\n• 내가 원하는 게 아니라, 유저가 원하는 걸 만드세요.\n◦ 내 취향은 중요하지 않습니다. 철저히 유저의 기대치를 충족시키는 도구가 되어야 합니다.\n\n3.투자자 쫓아다니지 마세요\n• 유저를 쫓아다니면, 투자자가 알아서 당신을 쫓아옵니다.\n◦ 투자자에게 관심 끄고 내 제품에 집중하는 지금, 오히려 투자 제안이 가장 많이 들어옵니다.\n\n4. '관리자' 말고 '실행가'를 뽑으세요\n• 초기 스타트업에 뒷짐 지고 지시하는 사람은 필요 없습니다.\n◦ 맨손으로 똥 치울 줄 아는, 직접 움직이는 사람(Doer)만 채용.\n\n5. 랜딩 페이지에 집착하지 마세요\n• 가장 덜 중요한 게 웹사이트 디자인.\n◦ 노코드 툴로 1시간 만에 만드세요. 트래픽은 웹사이트 밖에서 만들어집니다.\n\n6. 풀스택 개발자만 채용하세요\n• 초기 단계에서 팀 단위 개발자들은 생산성 최악.\n◦ 혼자서 북 치고 장구 치고 다 할 줄 아는 풀스택 1명이면 충분.\n\n7. 첫날부터 글로벌 시장을 노리세요\n• 제품이 좋으면 전 세계에서 통하고, 구리면 동네에서도 안 통합니다.\n◦ 한국(로컬)에서 검증하고 나가겠다? 시간 낭비. 처음부터 시장 규모가 1만 배 더 큰 곳에서 노세요.\n\n8. SEO는 2일 차부터 바로 시작하세요\n• 이걸 무시했다가 14년을 손해 봤습니다.\n◦ 키워드 분석해서 홈페이지에 심고, 블로그 글 매주 쓰세요. 이거 세팅하는 데 5분이면 됩니다.\n\n9. 만들기 전에 먼저 파세요\n• 기능 개발하기 전에 유저한테 \"이거 필요해요?\"라고 물어보세요.\n◦ 저는 매일 20명에게 DM을 보냅니다. 반응 좋은 것만 골라서 만드세요. 맨땅에 헤딩하지 마시고요.\n\n10. 안아주고 싶은 사람만 채용하세요\n• 화학적으로 끌리지 않는 사람은 결국 사단이 납니다.\n◦ 이유는 몰라도 \"왠지 안 맞다\" 싶으면 뽑지 마세요. 스타트업은 10년 가는 결혼 생활과 같습니다.\n\n11. 모든 돈을 내 제품과 친구에게 투자하세요\n• 주식, 코인, 부동산 기웃거리지 마세요.\n◦ 제 주변 창업가 친구들에게 투자했다면 지금쯤 유니콘 3개는 잡았을 겁니다. 가장 확실한 투자는 '나'와 '내 동료'.\n\n12. 매일 SNS(X/링크드인)에 글을 쓰세요\n• 이걸 왜 진작 안 했는지 모르겠습니다.\n◦ 새로운 기회와 성장은 전부 여기서 나옵니다.\n\n13. 대기업이랑 협업하지 마세요\n• 겉만 번지르르하지, 시간만 뺏기고 남는 게 없습니다.\n◦ 그들은 당신의 시간을 죽이고 초점을 흐립니다. 결국 유저도 돈도 안 가져다줍니다.\n\n14. 유행(Hype)에 휩쓸리지 마세요\n• 크립토 열풍 쫓다가 1년 반 날리고 사기꾼만 꼬였습니다.\n◦ 내 미션을 지키세요. 쉽게 돈 벌려는 곳에는 나쁜 놈들이 모입니다.\n\n15. B2C 말고 B2B 하세요\n• 일반 소비자 대상 앱은 로또 당첨 확률.\n◦ 사용자가 많아도 돈이 안 됩니다. 4년 날리고 깨달았습니다.\n\n16. 안 되는 프로젝트는 빨리 접으세요\n• 최대 1년입니다. 그 이상 끌지 마세요.\n◦ 아이디어가 틀렸거나 팀 합이 안 맞는 겁니다. 질질 끈다고 해결 안 됩니다.\n\n17. 테크 컨퍼런스는 시간 낭비\n• 거기엔 진짜 창업가(Maker)는 없고 회사 돈으로 놀러 온 직장인만.\n◦ 돈 쓰고 체력 쓰고 영양가 0.\n\n18. 스크럼(Scrum)은 사기\n• 유치원생처럼 매일 아침 \"뭐 했니?\" 묻는 팀은 망합니다.\n◦ 알아서 자기 일하는 어른들과 일하세요. 채팅으로 싱크 맞추는 걸로 충분.\n\n19. PMF 찾기 전까진 외주 주지 마세요\n• 외주 개발자에게 당신의 제품은 그냥 '지루한 일거리'일 뿐.\n◦ 제품에 애정이 없으면 창의적인 해결책도 안 나옵니다.\n\n20. 부트스트랩(자력갱생) 하세요\n• 투자받으러 다니는 시간에 제품 만들었으면 벌써 성공.\n◦ 투자 유치는 몇 달씩 걸리는 소모전. 내 돈으로, 내 매출로 버티는 게 가장 빠릅니다.\n\n21. 10년 걸릴 수도 있습니다\n• 금방 성공해서 결혼하고 애 낳아야지? 그런 계획 세우지 마세요.\n◦ 일 때문에 가족계획 미룬 게 후회. 성공은 생각보다 오래 걸립니다.\n\n22. 무료 요금제(Free Tier) 없애세요\n• 무료 유저 숫자로 자위하지 마세요.\n◦ 돈 내는 사람만 진짜 고객. 무료 유저 피드백만 듣다가 제품 산으로 갑니다.\n\n23. 너무 싸게 팔지 마세요\n• 최저가가 경쟁력인 줄 알았는데 착각.\n◦ 5천 원 내는 고객은 불평만 많고, 5만 원 내는 고객은 팬이 되어줍니다.\n\n24. 실패를 기본값으로 두세요\n• \"열심히 하면 되겠지\"가 아니라 \"이번에도 망할 수 있다\"고 생각하세요.\n◦ 빨리 실패하고 다음 시도로 넘어가는 속도가 중요.\n\n25. 남이 만든 코드 갖다 쓰세요\n• 100% 내 손으로 만들겠다는 건 멍청한 자존심.\n◦ 로그인, 결제창 만드는데 시간 쓰지 말고 그냥 사서 쓰세요.\n\n26. 가족, 친구들과 시간 보내세요\n• 바쁘다는 핑계로 친구 결혼식 다 빠졌는데, 세상 안 망하더군요.\n◦ 일주일에 10%만 가족에게 써도 사업에 아무 지장 없습니다. 추억은 돌아오지 않습니다.\n\n27. 내가 사랑하는 사람들을 위해 만드세요\n• 돈만 보고 싫어하는 대상(대기업 등)을 위해 일하지 마세요.\n◦ 저는 인디 창업가들을 좋아합니다. 좋아하는 사람들을 위해 제품을 만드니\n일의 기쁨이 100배 늘었습니다.\n\n28. 매일 쓰세요\n• 어릴 때 작문 F 학점 받았어도 상관없습니다.\n◦ 꾸준히 내 이야기를 쓰는 것, 그게 결국 나를 알리는 최고의 방법.\n\n출처: Post by John Rush\n\n💬 여러분은 이 중에서 어떤 조언이 가장 뼈 때리게 다가오나요?",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7417694589320499201?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7417694589320499201%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "Venture Builder & Investor | Venture Studio | Fractional Founder | Consultant | Columnist | Coach I Korea-Singapore Connector",
       "images": [
-        "https://media.licdn.com/dms/image/v2/D5622AQEU3ZmSBaFh9g/feedshare-shrink_1280/B56Zu7At.lIoAw-/0/1768369089361?e=1772064000&v=beta&t=Rgs6-tg6dZSfUEOVxMlUXxds-bl-CBbqJK50jLotGQQ"
+        "https://media.licdn.com/dms/image/v2/D5605AQEH7K5Saz-7uw/videocover-high/B56ZvCU7yfIQBU-/0/1768491827585?e=1770980400&v=beta&t=PcLzhJD49Pnq8YvsckqNjTgSMXiR9R11DLmmWxw0uCc"
       ],
-      "user_link": "https://www.linkedin.com/in/ACoAAB5PwL4BfEruqb9-_wIl8sZu1bXOYuHUiMo",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "user_link": "https://www.linkedin.com/in/ACoAAB3-YQ0BEgh--QzdyJyE8cKdv166lOp802k",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "image",
       "source": "network",
-      "sequence_id": 106,
+      "sequence_id": 111,
       "sns_platform": "linkedin",
       "local_images": [
-        "web_viewer/images/17e6f27d360c703cba5bd5eae7a58c55.jpg"
+        "web_viewer/images/86f76b51d14936e565591ad0d238ac95.jpg"
       ]
     },
     {
-      "index": 53,
-      "code": "7415376843815608320",
-      "username": "Seulgi Lee (이슬기)",
-      "created_at": "2026-01-09 22:00:10",
-      "time_text": "3주",
-      "full_text": "뜬구름 말고 현실 AI 대가를 만났다.\n뭔가 몇 주째 막혀있던 게 뻥 뚫려 해소되는 느낌이다.\n(3시간 훈계받고 얻은 인사이트 정리)\n\n문1 : 갈수록 잘뽑는 AI, 인간은 뭘할까?\n답1 : 시작과 끝을 한다.\n\n경험한 사람의 입으로만\n나올 수 있는 인사이트를\n기획단 입력으로 넣고,\n\n가장 막단에서\n경험한 사람의 눈으로만\n판가름 할 수 있는 잣대로\n평가하고 고친다.\n\n문2 : AI가 답하는 동안, 인간은 뭘할까?\n답2 : 질문이 잘못됐다.\n\n애초에 AI한테 묻기전에\n작업을 쪼개고 쪼개고 쪼개서\n전체 플로우를 설계한다.\n\n그래서 AI한테 물어봤으면,\n\n다른 창에서는\n같은 질문을 한번 더 해놓거나\n바로 다음에 이어질 작업을\n벌써 시작했어야 한다.\n\n문3 : 완벽한 결과를 한방에 내놓는 프롬프트?\n답3 : 그런거 없다.\n\n참조하는 정보가 많아지거나,\n뾰족하게 여러 역할 해야 할 걸\n효율 생각한다고 뭉쳐서 넣으면..\n\nex) \"넌 SEO 전문가야, 우리 브랜드 언어 감도 맞게, 글자수 4천자로, 담백한 언어로, 노션 키워드로 전문적인 글 써줘\"\n\n이렇게 말한다?\n99% 확률로 틀린다.\n\n한번 물어볼 때마다\n목적은 달라야 한다.\n\n즉, 프롬프트는 단계마다\n세분화 되어야 한다.\n\n워터마크 새겨진\n필라테스 동작 일러스트를\n다른 동작으로 바꿔 뽑으려면,\n\n1. 워터마크 지우는 프롬프트를 받아서\n2. 워터마크를 지우라고 시키고\n3. 우리 일러스트 스타일을 학습시키고\n4. 동작 변형하는 프롬프트를 받아서\n5. 우리 스타일로 다른 동작 그리게 한다.\n\n웬만한 제작비가 다 싸졌다.\n기획값은 더 희귀하고 비싸다.\n\n그럼 어떻게 기획을 잘하냐?\n오로지 경험, 식견, 깊이, 자기생각.\n\n그 문제에 대해 어디까지 고민해봤냐가\n승부를 가를 것이다.\n\n즉, 인간아.. 제발 시도 해라...\nAI? 보기만 하지 말고 물량치기 해라.\n해봐야 안다. 해봐야 는다.\n그래야 보인다.\n\n#소처럼 #일해서 #소타트업",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7415376843815608320?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7415376843815608320%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "Founder & CEO of Gongysd | Template Master, Market Leader",
-      "images": [],
-      "user_link": "https://www.linkedin.com/in/ACoAAFV1PAYBs-EO8gBw4VZp4Ebpq35BCTb51T4",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "text",
-      "source": "network",
-      "sequence_id": 100,
-      "sns_platform": "linkedin"
-    },
-    {
-      "index": 54,
-      "code": "7416954710819127296",
-      "username": "Kyunghun Lee",
-      "created_at": "2026-01-14 06:30:03",
-      "time_text": "3주",
-      "full_text": "2026년 AI, 경쟁의 축이 바뀝니다. 알아두어야 할 4가지 트렌드\n\n그동안 AI 담론은 벤치마크 성능에 집중되어 있었습니다. 어떤 모델이 수학 문제를 더 잘 푸는지, 코딩 테스트에서 몇 점을 받는지가 화제였습니다. 하지만 기업들이 AI로 실제 가치를 만들어내려 하면서, 연구의 방향도 달라지고 있습니다. 단일 모델의 지능이 아니라, 모델을 둘러싼 시스템을 어떻게 설계할 것인가가 핵심이 되고 있습니다.\n\nVentureBeat가 2026년을 앞두고 주목해야 할 4가지 연구 트렌드를 정리했습니다. 모두 같은 질문에서 출발합니다. 똑똑한 모델을 어떻게 실제로 쓸 수 있게 만들 것인가.\n\n1. Continual Learning\n\n현재 AI 모델은 한 번 학습이 끝나면 지식이 고정됩니다. 새 정보를 추가로 학습시키면 기존 지식이 손상됩니다. 신경망은 지식을 한 곳에 저장하지 않고 수많은 파라미터에 분산시키기 때문에, 새 정보만 따로 업데이트할 수가 없습니다. 이른바 catastrophic forgetting 문제입니다. 기존 해결책은 두 가지였습니다. 첫째, 새 데이터와 기존 데이터를 섞어서 모델을 재학습시키는 방법입니다. 비용이 많이 들고, 시간이 오래 걸리며, 기술적으로 매우 복잡합니다. 둘째, RAG처럼 외부 정보를 실시간으로 주입하는 방법입니다. 하지만 RAG는 모델의 내부 지식 자체를 바꾸지 못합니다. 모델이 알고 있는 사실과 새로 주입된 정보가 충돌할 수 있습니다. 컨텍스트 윈도우의 제한도 받습니다.\n\nGoogle이 다른 접근을 시도하고 있습니다. Titans는 장기 메모리 모듈을 제안합니다. 인간 기억의 원리를 차용합니다. 우리가 일상적인 일은 잊고 놀라운 일만 기억하는 것처럼, 모델도 예상과 크게 다른 정보만 선별적으로 장기 메모리에 저장합니다. 무엇을 기억하고 무엇을 버릴지 스스로 판단하는 구조입니다. 그리고 Nested Learning은 같은 문제를 다른 각도에서 접근합니다. 기존 트랜스포머는 메모리가 두 종류입니다. 지금 처리 중인 맥락과 학습 때 굳어버린 지식. 인간은 다릅니다. 방금 들은 말, 오늘 배운 것, 평생 기억까지 여러 층위가 있고, 각각 다른 속도로 업데이트됩니다. Nested Learning은 AI에도 이런 중간 층위들을 만들어줍니다.\n\n2. World Models\n\n현재 AI는 대부분 텍스트 기반입니다. 하지만 로봇이나 자율주행처럼 물리적 환경에서 작동해야 하는 AI는 다른 능력이 필요합니다. 세상이 어떻게 움직이는지 이해하는 능력입니다. World Models는 사람이 라벨링한 데이터나 사람이 생성한 텍스트 없이도 AI가 환경을 이해할 수 있게 해줍니다.\n\n접근 방식은 다양합니다. DeepMind의 Genie는 이미지와 사용자 행동을 입력받아 환경이 어떻게 변할지 예측하는 비디오를 생성합니다. 에이전트가 행동의 결과를 미리 시뮬레이션할 수 있게 해주는 것입니다. Fei-Fei Li가 설립한 World Labs의 Marble은 다른 접근을 취합니다. 생성형 AI로 이미지나 프롬프트에서 3D 모델을 만들고, 물리 엔진과 3D 엔진으로 시뮬레이션합니다. Yann LeCun이 주도하는 JEPA는 또 다릅니다. 실제 이미지나 비디오를 생성하지 않습니다. 핵심 정보만 압축해서 다음에 무슨 일이 일어날지 예측합니다. 연산량이 훨씬 적어서 실시간 애플리케이션에 적합합니다.\n\n3. Orchestration\n\n프론티어 모델들이 벤치마크에서는 인간 전문가를 능가합니다. 하지만 실제 업무, 특히 다단계 에이전틱 워크플로우에서는 강력한 모델도 실패합니다. 맥락을 놓치고, 잘못된 파라미터로 도구를 호출하고, 작은 실수가 누적되어 결과를 망칩니다. 오케스트레이션은 이것을 시스템 문제로 봅니다. 적절한 스캐폴딩과 엔지니어링으로 해결할 수 있다는 관점입니다. 라우터가 작업 난이도에 따라 빠른 작은 모델과 큰 모델 중에서 선택하고, 검색으로 근거를 확보하고, 확정적 도구로 행동을 실행합니다.\n\nStanford의 OctoTools는 모델 파인튜닝 없이 여러 도구를 조율하는 오픈소스 프레임워크입니다. 솔루션을 계획하고, 도구를 선택하고, 하위 작업을 다른 에이전트에게 전달하는 모듈식 접근을 사용합니다. Nvidia의 Orchestrator는 다른 접근입니다. 80억 파라미터의 전문 오케스트레이터 모델을 훈련시켜서, AI 시스템의 구성요소 간 노동을 분배합니다. 언제 도구를 쓰고, 언제 작은 전문 모델에 위임하고, 언제 대형 모델의 추론 능력을 활용할지 판단합니다.\n\n4. Refinement\n\n일반적인 AI는 답변을 생성하면 끝입니다. 내부적으로 생각하는 과정을 거치더라도, 일단 출력이 나오면 그걸 다시 검토하고 고치지는 않습니다. Refinement는 다릅니다. 답을 낸 후, 그 답을 다시 평가합니다. 문제가 있으면 수정하고, 수정한 답을 또 평가합니다. 같은 모델이 이 사이클을 여러 번 반복합니다.\n\nARC Prize는 2025년을 Refinement Loop의 해로 명명했습니다. ARC-AGI-2는 복잡한 추상 추론 퍼즐로 AI를 테스트하는 벤치마크입니다. 6개월 전만 해도 최고 점수가 5% 미만이었습니다. 6명으로 구성된 스타트업 Poetiq가 refinement 방식으로 54%를 기록하며 처음으로 50% 벽을 돌파했습니다. 이전 최고 기록인 Gemini 3 Deep Think(45%)를 넘어섰고, 비용은 절반 이하였습니다. Poetiq의 시스템은 특정 모델에 종속되지 않습니다. 어떤 프론티어 모델이든 기반으로 쓸 수 있습니다. 모델이 강해질수록 refinement의 효과도 커집니다. 더 똑똑한 모델이 자기 답을 더 잘 검토하고 고칠 수 있기 때문입니다.\n\n5. 새로운 경쟁이 시작됩니다\n\n네 가지 트렌드의 공통점은 명확합니다. 모델이 아니라 시스템입니다. AI 경쟁이 새로운 국면에 들어서고 있습니다. 누가 가장 똑똑한 모델을 만드느냐에서, 그 모델을 어떻게 기억하게 하고, 세상을 이해하게 하고, 도구를 쓰게 하고, 스스로 고치게 만드느냐로. 벤치마크 1위는 출발점일 뿐입니다. 진짜 경쟁은 그 다음입니다.",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7416954710819127296?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7416954710819127296%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "CAIO & Deputy CEO @ Channel Corp | AI × B2B SaaS",
-      "images": [],
-      "user_link": "https://www.linkedin.com/in/ACoAAA5RhH4BjDv2vMF1Onz2ppvG6jeLmEGo93E",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "text",
-      "source": "network",
-      "sequence_id": 105,
-      "sns_platform": "linkedin"
-    },
-    {
-      "index": 55,
       "code": "7417508847441022976",
       "username": "Minjung Kim",
       "created_at": "2026-01-15 19:11:59",
@@ -5029,7 +5050,7 @@ const snsFeedData = {
         "https://media.licdn.com/dms/image/v2/D5622AQGiAM-5WgY3vQ/feedshare-shrink_2048_1536/B56ZvBI_avK4Ak-/0/1768471918494?e=1772064000&v=beta&t=DzezmM6xPZ2EzOD7tHYEuvJUOpRE9E2fgghNPjkrRB4"
       ],
       "user_link": "https://www.linkedin.com/in/ACoAADk-HPIB9Dfu21FvR7IWiubg2RoPiyFq_PY",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "image",
       "source": "network",
       "sequence_id": 110,
@@ -5039,29 +5060,27 @@ const snsFeedData = {
       ]
     },
     {
-      "index": 56,
-      "code": "7417148730602201088",
-      "username": "Bumgeun Song",
-      "created_at": "2026-01-14 19:21:01",
+      "code": "7417486931770499072",
+      "username": "Jinju Park",
+      "created_at": "2026-01-15 17:44:54",
       "time_text": "3주",
-      "full_text": "Claude Skill 발동률 20% -> 84% 만드는 방법\n\n좋다고 해서 열심히 추가한다. 막상 일 시켜보면 엥? 발동이 안 된다. 일부러 Skill 쓰라고 말해도 잘 안 된다. 잔뜩 Skill이 있어도 막상 발동이 안 되니 체감을 못했다.\n\nScott Spence 블로그에서 스킬 발동률을 20%에서 84%로 끌어올리는 방법을 배웠다. 프롬프트를 입력할 때마다 명시적으로 skill을 활성화하는 Hook을 추가한다.\n\n사용해보니 진짜 skill 발동률이 확연히 차이난다. 코드 퀄리티가 180도 달라졌다.\n\n이번주에 배운 최고의 꿀팁이다. 꼭 한번 써보시길!\n\nhttps://lnkd.in/gKfxdFZD",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7417148730602201088?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7417148730602201088%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "Product Engineer @ Toss",
+      "full_text": "\"AI 에이전트 안 쓰면 뒤처진다\"는 말에 속지 마세요.\n\n요즘 AI 에이전트, 클로드 코드, n8n... 온갖 복잡한 도구들이 쏟아지고 있습니다. 그래서 많은 분들이 \"나도 당장 에이전트 배워야 하나?\"하고 고민하고 계신 것 같습니다.\n\n하지만, 직접 여러 AI 워크플로를 만들어보며 깨달은 사실은, 무조건 똑똑하고 복잡한 게 좋은 건 아니라는 점입니다. 핵심은 내가 해결하려는 '문제의 본질'이 무엇인지 파악하는 것이죠.\n\n그래서 제 경험을 토대로 AI시스템은 4단계로 나눠, 상황별로 어떤 걸 선택해야 하는지 정리해봤습니다.\n\n1단계: 커스텀 GPT, Gems\n\n내가 대화를 주고받으며 수정하고 보완해야 하는 일에 적합합니다. 광고 세팅 가이드처럼 매번 내용은 비슷하지만, 상황에 따라 조금씩 수정이 필요한 반복 업무에 좋습니다.\n\n\n2단계: 단순 자동화 (n8n, Make.com, Zapier)\n\nAI가 필요 없는 단순 자동화입니다. 'A가 발생하면 B를 해라'라는 명확한 규칙만 있으면 되죠. 결과가 100% 예측 가능하고 똑같습니다. 매일 아침 6시에 뉴스레터를 발송하거나, 미팅이 끝나면 녹음 파일을 저장하는 단순 자동화에 적합합니다.\n\n3단계: AI 워크플로우 (n8n, Make.com, Zapier + AI)\n\n단순 자동화에 AI의 '판단력'을 얹은 시스템입니다. 순서는 정해져 있지만, 중간에 AI가 내용을 읽고 분류하는 과정이 들어가요. 예를 들어, 고객 문의 메일을 보고 이게 '불만'인지 '문의'인지 AI가 판단해서 담당자에게 넘겨주는 일에 활용할 수 있습니다.\n\n4단계: AI 에이전트 (클로드 코드, n8n AI 에이전트 등)\n\n가장 높은 단계입니다. 목표만 주면 AI가 알아서 도구를 선택하고 순서를 정해서 일을 끝내죠. \"B2B 영업 계획 짜줘\"라고 요청하면, 데이터 조사부터 콜드 이메일 작성, 리드 관리까지 한 번에 처리합니다. 스스로 판단하고 움직이는 자율성이 핵심이에요.\n\n\n결론 : 솔직히 말하면, 실제로 효율이 나는 자동화의 대부분은 AI에이전트 없이도 충분히 만들 수 있습니다. 무턱대고 비싸고 복잡한 에이전트부터 만들 필요가 없어요.\n\n가장 중요한 건 처음부터 완벽할 순 없다는 것입니다. 일단 가벼운 것부터 시작해 보세요. 쓰다 보면 \"아, 이건 에이전트로 업그레이드해야겠네?\" 하는 감이 올 겁니다.\n\n만약 정확히 어떤 단계를 선택해야 할지 모르겠다면, 일단 가장 낮은 단계부터 차근차근 올라가 보는 건 어떨까요?\n\n이 소식을 포함한 이번주 뉴스레터 보러가기\nhttps://lnkd.in/g7iqDQYd\n(로그인/가입 후 읽으실 수 있어요)\n\n챗대리의 Ai뉴스레터 구독하기\nhttps://lnkd.in/gGqXKpjg",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7417486931770499072?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7417486931770499072%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "인공지능과 함께 일하는 법을 연구하고 있습니다 | AI Contents Creator & Marketer",
       "images": [
-        "https://media.licdn.com/dms/image/v2/D5610AQGkws5YaxB_TQ/image-shrink_1280/B56Zu8BZMiKMAc-/0/1768386040874?e=1770976800&v=beta&t=1NgEPwbytFnHBsgNllVTpKnjEQ3V53Bxz9Qi_OLXoUc"
+        "https://media.licdn.com/dms/image/v2/D5622AQHzEeG_QigMag/feedshare-shrink_2048_1536/B56ZvA1DoMIYAo-/0/1768466693534?e=1772064000&v=beta&t=iJ1qtqfqv29ftJNV8vPAhZNZz8cO3xIIKzamD8quK7c"
       ],
-      "user_link": "https://www.linkedin.com/in/ACoAAB1vdP4Bi740ailUbogk4d8gvBrVCYug48w",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "user_link": "https://www.linkedin.com/in/ACoAADPa2KIB5Skb_NdQWdtPBOM7_i1mID-DpPw",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "image",
       "source": "network",
-      "sequence_id": 107,
+      "sequence_id": 109,
       "sns_platform": "linkedin",
       "local_images": [
-        "web_viewer/images/c3e941bc78c8e93ff2b420e06ec31764.jpg"
+        "web_viewer/images/5744109757587da6ec4b91025ff829e8.jpg"
       ]
     },
     {
-      "index": 57,
       "code": "7417332718822416384",
       "username": "조여준 Ethan Cho",
       "created_at": "2026-01-15 07:32:07",
@@ -5073,7 +5092,7 @@ const snsFeedData = {
         "https://media.licdn.com/dms/image/v2/D5622AQEPLqQOFkiavQ/feedshare-shrink_2048_1536/B56Zu.ozKwH4Aw-/0/1768429926239?e=1772064000&v=beta&t=o6SIiofNkspZJIfK0BbQWWKTrEDhP01s50JPtQ-eANQ"
       ],
       "user_link": "https://www.linkedin.com/in/ACoAAARknekBOFFETpmlSPqmlb2P8ln4iACFaJg",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "image",
       "source": "network",
       "sequence_id": 108,
@@ -5083,112 +5102,106 @@ const snsFeedData = {
       ]
     },
     {
-      "index": 58,
-      "code": "7417714347063562240",
-      "username": "김덕중",
-      "created_at": "2026-01-16 08:48:34",
+      "code": "7417148730602201088",
+      "username": "Bumgeun Song",
+      "created_at": "2026-01-14 19:21:01",
       "time_text": "3주",
-      "full_text": "우리는 지금 분명한 분기점 위에 서 있다.\nAI 도입 조직의 62%가 직원 교육에 투자하고 있다는 사실은 단순한 통계가 아니다. 그 숫자 뒤에는 공통된 인식이 있다. AI의 성패는 기술이 아니라 사람의 역량에서 갈린다는 자각이다.\n\n지난 20년간 HR은 ‘잘 설계된 프로세스’를 만드는 데 집중해왔다. 일관성, 규모, 효율성. 덕분에 시스템은 빨라졌지만, 아이러니하게도 의사결정은 더 느려졌고 데이터는 더 잘게 쪼개졌다. 관리 가능한 구조를 만들었지만, 복잡해진 조직 현실을 감당하기엔 그 구조가 지나치게 단순했다.\n\n이제 이 모델은 한계에 도달했다.\nAI가 들어오면서 문제가 된 것은 기술의 성능이 아니라, 기존 HR 사고방식의 내구성이다. 진짜 변화는 AI를 ‘도입하는 순간’이 아니라, 조직의 사고 방식이 바뀌는 지점에서 시작된다. 관리자는 감에 의존해 사람을 이해하는 대신 예측적 인사이트로 팀을 바라보고, HR은 연말 보고서가 아니라 실시간 데이터로 전략을 검증하며, 리더는 과거의 성공 패턴이 아닌 미래의 시그널을 기준으로 결정을 내리게 된다. 이 변화는 도구의 변화가 아니라 인식의 이동이다.\n여기서 하나의 역설이 나타난다.\n\nAI가 깊이 들어올수록, 인간의 역할은 오히려 더 중요해진다.\n자동화는 트랜잭션을 제거한다. 그렇다면 그 빈자리에 무엇을 놓을 것인가. 경영진의 심리 상태와 조직 내 미묘한 문화적 신호를 읽어내는 감각, 공식 평가로는 포착되지 않는 잠재 리더를 발견하는 직관, 변화의 속도 앞에서 팀의 불안을 다루는 리더십. 이 영역은 알고리즘이 대신해주지 않는다. 그리고 바로 이 지점에서 HR의 존재 이유가 다시 정의된다.\n\n앞으로 3~5년, HR의 생존 조건은 명확하다. 데이터를 해석할 수 있는 리터러시, 이를 전략적 선택으로 연결하는 사고력, 그리고 사람과 조직을 읽어내는 심리적 감수성. 이 세 가지를 동시에 갖춘 HR만이 남는다. 나머지는 시스템에 흡수될 것이다.\n\n그래서 지금 조직에 던져야 할 질문은 기술이 아니다.\n우리 HR 팀은 예측 분석을 ‘보고서’가 아니라 ‘판단의 근거’로 이해할 준비가 되어 있는가. 리더들은 HR을 비용 효율이 아니라 전략적 영향으로 평가할 준비가 되어 있는가. 그리고 정말로 우리가 원하는 것은 HR의 자동화인가, 아니면 더 인간적인 HR인가. AI 도입은 기술 과제가 아니다. 조직이 무엇을 가치 있게 보느냐에 대한 선택이다.\n\n지금 이 선택을 진지하게 고민하는 기업만이, 2~3년 뒤 시장의 규칙을 다시 쓰게 될 것이다.\nhttps://lnkd.in/gaAbbP47",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7417714347063562240?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7417714347063562240%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "숙명여대 겸임교수, Firb AI 연구소장",
+      "full_text": "Claude Skill 발동률 20% -> 84% 만드는 방법\n\n좋다고 해서 열심히 추가한다. 막상 일 시켜보면 엥? 발동이 안 된다. 일부러 Skill 쓰라고 말해도 잘 안 된다. 잔뜩 Skill이 있어도 막상 발동이 안 되니 체감을 못했다.\n\nScott Spence 블로그에서 스킬 발동률을 20%에서 84%로 끌어올리는 방법을 배웠다. 프롬프트를 입력할 때마다 명시적으로 skill을 활성화하는 Hook을 추가한다.\n\n사용해보니 진짜 skill 발동률이 확연히 차이난다. 코드 퀄리티가 180도 달라졌다.\n\n이번주에 배운 최고의 꿀팁이다. 꼭 한번 써보시길!\n\nhttps://lnkd.in/gKfxdFZD",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7417148730602201088?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7417148730602201088%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "Product Engineer @ Toss",
+      "images": [
+        "https://media.licdn.com/dms/image/v2/D5610AQGkws5YaxB_TQ/image-shrink_1280/B56Zu8BZMiKMAc-/0/1768386040874?e=1770980400&v=beta&t=qJPO8UCATrg6ZM9uHqDi5XXvsJHJK7ksifqSPma50lQ"
+      ],
+      "user_link": "https://www.linkedin.com/in/ACoAAB1vdP4Bi740ailUbogk4d8gvBrVCYug48w",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "image",
+      "source": "network",
+      "sequence_id": 107,
+      "sns_platform": "linkedin",
+      "local_images": [
+        "web_viewer/images/2191c9049a00f21da6de8e156dd4f871.jpg"
+      ]
+    },
+    {
+      "code": "7417077551262535680",
+      "username": "Peter Shin",
+      "created_at": "2026-01-14 14:38:10",
+      "time_text": "3주",
+      "full_text": "한국 극초기 팀에게 추천하는 BM\n\n• 1위 AX DX 컨설팅\n\n한국의 DX 시장은 25년 기준 21조원이다. 대부분 대기업 SI가 매출을 차지한다.\n미국 VC 관점에서 보면, 한국 DX는 아직 승자가 결정된 시장이 아니라고 본다. 나는, 넷플릭스가 국내 영화업계를 뒤엎었듯이 이 생태계가 외부 플래이어(OpenAi 등)에 의해 빠르게 disrupt 될수도 있다고 본다.\n\n따라서, 오히려 국내 스타트업에게 구조적으로 큰 기회가 남아있는 시장이 바로 DX, AX 시장인데, 글을 읽는 독자가 B2B SaaS를 준비하는 파운더라면, 미국에서의 B2B SaaS 모델을 그대로 가져오지 말고, 컨설팅처럼 시작하는 SaaS로 GTM할것을 추천한다.\n\nAX DX를 특히 더 추천하는 이유:\n\n1️⃣ 한국 DX는 컨설팅이 아니라 프로젝트 산업으로 굴러간다\n미국에서 디지털 전환은 보통 제품으로 수렴한다. 고객이 문제를 겪고 → SaaS가 그 문제를 해결하고 → 반복 매출이 쌓이고 → 기능이 확장되는 방식인데, 내가보니 한국의 DX는 아직도 강하게 프로젝트 산업이다. 이유인즉,\nA. 예산이 일단, 연 단위 로 열리고,\nB. 성공 기준이 사실 없고 구축 완료에 가깝다. (유착이 많은 이유).\nC. 나아가, 시스템은 운영 효율보다 감사 대응에 맞춰 설계되며.\nD. 담당자가 2-3년 단위로 바뀌고,\nE. 기간이 지날수록 같은 계약건과 고정된 일정에 요구사항이 늘어나기 때문에,\n\n이런 구조에서 가장 잘 돈 버는 BM이 엥간한 스타트업 BM으로는 안된다.\n가장 잘하는 플레이어는 컨설팅 + SI + 운영까지 묶어 가져가는 통합 사업자(미국 관점으로 기괴한 형태)이다.\n\n그 결과, 한국 DX의 핵심 모순이 만들어지는데, DX는 분명히 진행되는데, 진짜 소프트웨어 회사가 성장/태어나지 못한다.\n\n2️⃣ 구매구조가 가장 큰 베리어.\n미국 SaaS는 팀 단위 구매 이후 확산이 보통인데, 한국은 매우 매우 매우 복잡하다.\n실사용자는 현업이지만, 예산은 IT/전략/구매/보안이 쥐고 있고, 최종 결정은 임원/위원회가 하는 방식. 그래서 우리 제품이 아무리 좋아도, 나아가 파운더 본인이 프로세스를 경험해보지 못했다면, “레퍼런스 있나요?”, “보안 인증은요?”, “망분리 환경에서 돼요?”, “장애나면 누가 책임져요?”등의 질문에 대해 기술적으로 답변하려 하다 계약이 매듭지어지지 못한다.\n\n사실 이건 기술 문제가 아니라 구매 구조 문제이며 고로 스타트업은 기업내 통과해야 할 관문을 제품화/상품화 하는 것에 기술에 준하는 신경을 써야 한다.\n\n3️⃣ 그럼 스타트업이 한국 DX 시장에서 어떻게 이길까?\n아래 6가지 전략을 추천한다.\n\nA. 컨설팅을 대체하려 하지 말고 컨설팅을 증폭시켜라\n컨설팅/SI을 유통 채널보자. 컨설팅이 설계하고 SI가 구축하고 스타트업이 운영 제품을 끼워 넣는 구조도 가능한거다. 즉, 컨설팅이 반복적으로 팔 수 있는 제품을 제공하는것도 하나의 방법이겠다. 직접 컨설팅하는것도 추천한다.\n\nB. 대기업 전체가 아니라 팀 하나부터\n한국은 Top-down이 강하지만, 그렇다고 처음부터 전사 도입을 노리면 99%가 늦어진다.\n가장 좋은 진입점은 팀 단위. 돈을 쓸 수 있고 성과가 숫자로 보이고 반복 업무가 많은 곳(예: 재무/구매/정산/CS/품질/물류/영업운영)부터 타겟하자.\n\nC. KPI는 정성이 아니라 (핵심)감사 가능한 숫자로 만들자.\n한국에서 임원이 좋아하는 KPI는 효율화가 아니라, 감사와 보고가 가능한 지표다. 처리시간 32% 감소, 인입 대비 해결률 18% 상승, 재작업률 25% 감소, 오류율 0.3% → 0.1%. 이러한 지표가 있어야 추가 영업과 예산이 열린다.\n\nD. 보안/권한/로그를 기능이 아니라 제품의 중심으로 설계\n효율을 따지는 미국 SaaS는 보안을 나중에 붙여도 된다면, 한국은 타이트한 권한 관리, 감사 로그, 데이터 마스킹, 망분리 대응, 온프렘 옵션등이 필수. 이게 있어야 PoC 이후 확산이 가능하다.\n\nE. RFP를 기다리지 말자.\nBottom-up 데이터를 만들고 Top-down 결재를 통과하자는 뜻이다.\n바로 현업에서 쓸수 있는 제품을 만들어 일단 들어가고, 사용률 데이터 확보후 확산을 제안하자.\n\n4️⃣ 수주할수 있는 AX/ DX 프로젝트들의 성격 10가지\n\n1/ 전략/로드맵 컨설팅 (가장 전형적인 DX/AX)\n2/ 업무 프로세스 혁신(BPR) + 시스템 재구축형 DX\n3/ 데이터/클라우드 전환 컨설팅 (DX의 인프라 레이어)\n4/ 시스템 구축형 컨설팅 (SI/통합 구축 중심)\n5/ 운영/개선형 컨설팅 (Run + Optimize)\n6/ 현업 자동화(RPA/Workflow) 중심 DX\n7/ AI PoC → Pilot → 확산형 AX (요즘 가장 많아지는 형태)\n8/ 생성형 AI(LLM) 도입 컨설팅 (GenAI 패키지형)\n9/ AI 거버넌스/보안/컴플라이언스 컨설팅 (한국에서 매우 중요)\n10/ 조직/인재/변화관리 컨설팅\n\n📢 [Outsome Founder Sprint 5기 모집]\n내가 한국 극초기 팀에게 추천하는 건 위 중 3가지인데,\n7번, AI PoC → Pilot → 확산형 AX\n8번 사내 GenAI 패키지 도입\n6번 현업 자동화(Workflow) + AI 결합\n\n성과가 숫자로 남고, 확산이 가능하다는 점 그리고 레거시 베리어가 작다는 공통점이 있다.\n\nFounder Sprint 5기에서는 나와 4주 동안, 팀에 맞는 AX 과제 선정 → 파일럿 설계 → KPI/세일즈 자료까지 같이 만들수 있다.\n\n· 4-7개 팀 규모로 나와 가깝게 4주동안 호흡.\n· 실리콘밸리 현지인 AX 분야 전문 CTO가 멘토로 합류해 기업 기술 자문.\n· 8명의 YC 파운더가 멘토로 참가, 기업당 4명+4명의 멘토가 제공된다.\n· 월+목 나와 매주 모여 극강의 멘토링을 받는다. (매우 맵다)\n· 3월 시작.\n\n“🇺🇸 미국” 댓글 or DM 주시면 직접 연락드리겠다.\n\n____\n\n· 미국 진출시, 왜 B2C 보다 B2B가 먼저인가. - https://lnkd.in/gNRS28A3",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7417077551262535680?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7417077551262535680%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "Startup Advisor | YC Alum (W20) | Accelerating First-Time Founders",
+      "images": [
+        "https://media.licdn.com/dms/image/v2/D5622AQEU3ZmSBaFh9g/feedshare-shrink_1280/B56Zu7At.lIoAw-/0/1768369089361?e=1772064000&v=beta&t=Rgs6-tg6dZSfUEOVxMlUXxds-bl-CBbqJK50jLotGQQ"
+      ],
+      "user_link": "https://www.linkedin.com/in/ACoAAB5PwL4BfEruqb9-_wIl8sZu1bXOYuHUiMo",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "image",
+      "source": "network",
+      "sequence_id": 106,
+      "sns_platform": "linkedin",
+      "local_images": [
+        "web_viewer/images/17e6f27d360c703cba5bd5eae7a58c55.jpg"
+      ]
+    },
+    {
+      "code": "7416954710819127296",
+      "username": "Kyunghun Lee",
+      "created_at": "2026-01-14 06:30:03",
+      "time_text": "3주",
+      "full_text": "2026년 AI, 경쟁의 축이 바뀝니다. 알아두어야 할 4가지 트렌드\n\n그동안 AI 담론은 벤치마크 성능에 집중되어 있었습니다. 어떤 모델이 수학 문제를 더 잘 푸는지, 코딩 테스트에서 몇 점을 받는지가 화제였습니다. 하지만 기업들이 AI로 실제 가치를 만들어내려 하면서, 연구의 방향도 달라지고 있습니다. 단일 모델의 지능이 아니라, 모델을 둘러싼 시스템을 어떻게 설계할 것인가가 핵심이 되고 있습니다.\n\nVentureBeat가 2026년을 앞두고 주목해야 할 4가지 연구 트렌드를 정리했습니다. 모두 같은 질문에서 출발합니다. 똑똑한 모델을 어떻게 실제로 쓸 수 있게 만들 것인가.\n\n1. Continual Learning\n\n현재 AI 모델은 한 번 학습이 끝나면 지식이 고정됩니다. 새 정보를 추가로 학습시키면 기존 지식이 손상됩니다. 신경망은 지식을 한 곳에 저장하지 않고 수많은 파라미터에 분산시키기 때문에, 새 정보만 따로 업데이트할 수가 없습니다. 이른바 catastrophic forgetting 문제입니다. 기존 해결책은 두 가지였습니다. 첫째, 새 데이터와 기존 데이터를 섞어서 모델을 재학습시키는 방법입니다. 비용이 많이 들고, 시간이 오래 걸리며, 기술적으로 매우 복잡합니다. 둘째, RAG처럼 외부 정보를 실시간으로 주입하는 방법입니다. 하지만 RAG는 모델의 내부 지식 자체를 바꾸지 못합니다. 모델이 알고 있는 사실과 새로 주입된 정보가 충돌할 수 있습니다. 컨텍스트 윈도우의 제한도 받습니다.\n\nGoogle이 다른 접근을 시도하고 있습니다. Titans는 장기 메모리 모듈을 제안합니다. 인간 기억의 원리를 차용합니다. 우리가 일상적인 일은 잊고 놀라운 일만 기억하는 것처럼, 모델도 예상과 크게 다른 정보만 선별적으로 장기 메모리에 저장합니다. 무엇을 기억하고 무엇을 버릴지 스스로 판단하는 구조입니다. 그리고 Nested Learning은 같은 문제를 다른 각도에서 접근합니다. 기존 트랜스포머는 메모리가 두 종류입니다. 지금 처리 중인 맥락과 학습 때 굳어버린 지식. 인간은 다릅니다. 방금 들은 말, 오늘 배운 것, 평생 기억까지 여러 층위가 있고, 각각 다른 속도로 업데이트됩니다. Nested Learning은 AI에도 이런 중간 층위들을 만들어줍니다.\n\n2. World Models\n\n현재 AI는 대부분 텍스트 기반입니다. 하지만 로봇이나 자율주행처럼 물리적 환경에서 작동해야 하는 AI는 다른 능력이 필요합니다. 세상이 어떻게 움직이는지 이해하는 능력입니다. World Models는 사람이 라벨링한 데이터나 사람이 생성한 텍스트 없이도 AI가 환경을 이해할 수 있게 해줍니다.\n\n접근 방식은 다양합니다. DeepMind의 Genie는 이미지와 사용자 행동을 입력받아 환경이 어떻게 변할지 예측하는 비디오를 생성합니다. 에이전트가 행동의 결과를 미리 시뮬레이션할 수 있게 해주는 것입니다. Fei-Fei Li가 설립한 World Labs의 Marble은 다른 접근을 취합니다. 생성형 AI로 이미지나 프롬프트에서 3D 모델을 만들고, 물리 엔진과 3D 엔진으로 시뮬레이션합니다. Yann LeCun이 주도하는 JEPA는 또 다릅니다. 실제 이미지나 비디오를 생성하지 않습니다. 핵심 정보만 압축해서 다음에 무슨 일이 일어날지 예측합니다. 연산량이 훨씬 적어서 실시간 애플리케이션에 적합합니다.\n\n3. Orchestration\n\n프론티어 모델들이 벤치마크에서는 인간 전문가를 능가합니다. 하지만 실제 업무, 특히 다단계 에이전틱 워크플로우에서는 강력한 모델도 실패합니다. 맥락을 놓치고, 잘못된 파라미터로 도구를 호출하고, 작은 실수가 누적되어 결과를 망칩니다. 오케스트레이션은 이것을 시스템 문제로 봅니다. 적절한 스캐폴딩과 엔지니어링으로 해결할 수 있다는 관점입니다. 라우터가 작업 난이도에 따라 빠른 작은 모델과 큰 모델 중에서 선택하고, 검색으로 근거를 확보하고, 확정적 도구로 행동을 실행합니다.\n\nStanford의 OctoTools는 모델 파인튜닝 없이 여러 도구를 조율하는 오픈소스 프레임워크입니다. 솔루션을 계획하고, 도구를 선택하고, 하위 작업을 다른 에이전트에게 전달하는 모듈식 접근을 사용합니다. Nvidia의 Orchestrator는 다른 접근입니다. 80억 파라미터의 전문 오케스트레이터 모델을 훈련시켜서, AI 시스템의 구성요소 간 노동을 분배합니다. 언제 도구를 쓰고, 언제 작은 전문 모델에 위임하고, 언제 대형 모델의 추론 능력을 활용할지 판단합니다.\n\n4. Refinement\n\n일반적인 AI는 답변을 생성하면 끝입니다. 내부적으로 생각하는 과정을 거치더라도, 일단 출력이 나오면 그걸 다시 검토하고 고치지는 않습니다. Refinement는 다릅니다. 답을 낸 후, 그 답을 다시 평가합니다. 문제가 있으면 수정하고, 수정한 답을 또 평가합니다. 같은 모델이 이 사이클을 여러 번 반복합니다.\n\nARC Prize는 2025년을 Refinement Loop의 해로 명명했습니다. ARC-AGI-2는 복잡한 추상 추론 퍼즐로 AI를 테스트하는 벤치마크입니다. 6개월 전만 해도 최고 점수가 5% 미만이었습니다. 6명으로 구성된 스타트업 Poetiq가 refinement 방식으로 54%를 기록하며 처음으로 50% 벽을 돌파했습니다. 이전 최고 기록인 Gemini 3 Deep Think(45%)를 넘어섰고, 비용은 절반 이하였습니다. Poetiq의 시스템은 특정 모델에 종속되지 않습니다. 어떤 프론티어 모델이든 기반으로 쓸 수 있습니다. 모델이 강해질수록 refinement의 효과도 커집니다. 더 똑똑한 모델이 자기 답을 더 잘 검토하고 고칠 수 있기 때문입니다.\n\n5. 새로운 경쟁이 시작됩니다\n\n네 가지 트렌드의 공통점은 명확합니다. 모델이 아니라 시스템입니다. AI 경쟁이 새로운 국면에 들어서고 있습니다. 누가 가장 똑똑한 모델을 만드느냐에서, 그 모델을 어떻게 기억하게 하고, 세상을 이해하게 하고, 도구를 쓰게 하고, 스스로 고치게 만드느냐로. 벤치마크 1위는 출발점일 뿐입니다. 진짜 경쟁은 그 다음입니다.",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7416954710819127296?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7416954710819127296%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "CAIO & Deputy CEO @ Channel Corp | AI × B2B SaaS",
       "images": [],
-      "user_link": "https://www.linkedin.com/in/ACoAAAwBOVMBDI50rE9wyD4tsMaGWkV-85Sqd50",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "user_link": "https://www.linkedin.com/in/ACoAAA5RhH4BjDv2vMF1Onz2ppvG6jeLmEGo93E",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "text",
       "source": "network",
-      "sequence_id": 112,
+      "sequence_id": 105,
       "sns_platform": "linkedin"
     },
     {
-      "index": 59,
-      "code": "7411250333227769856",
-      "username": "Taehun Kim",
-      "created_at": "2025-12-29 12:42:53",
-      "time_text": "1개월",
-      "full_text": "일자리의 70%는 채용 공고에 올라오지 않습니다.\n\n그리고 그 자리는 \"아는 사람\"을 통해 채워집니다.\n그런데 \"아는 사람\"이 누군지 아시나요? 가까운 친구가 아닙니다. 아래 데이터와 개인적인 의견을 참고해 보세요.\n\n1. 85%의 채용이 \"연결\"을 통해 이루어진다\nLinkedIn과 CNBC 조사에 따르면, 전체 일자리의 70%는 공개 채용 공고에 올라오지 않습니다.\n그리고 전체 포지션의 85%가 개인적 혹은 전문적 연결을 통해 채워집니다.\n아무리 훌륭한 이력서를 써도, 네트워크가 없으면 게임에 참가조차 못 하는 셈입니다.\n\n2. 약한 유대(Weak Ties)\"가 더 강력하다\n1973년 사회학자 Mark Granovetter가 발표한 \"약한 유대의 힘(The Strength of Weak Ties)\" 이론은 50년이 지난 지금도 유효 한것 같습니다.\n친한 친구나 가족(강한 유대)보다 ‘캐주얼한 지인(약한 유대)’이 커리어 발전에 더 유용하다고 합니다.\n이유는 친한 사람들은 나와 비슷한 정보를 갖고 있지만, 느슨한 연결의 사람들은 내 서클 밖의 새로운 정보와 기회에 접근할 수 있기 때문 입니다.\n\n3. 네트워킹은 연봉 상승률과 연결된다\nJournal of Applied Psychology에 발표된 연구(3년간 추적)에 따르면, 네트워킹은 현재 연봉뿐 아니라 시간에 따른 연봉 성장률과도 관련이 있었습니다.\n다른 연구에서는 강한 네트워크를 가진 전문가가 비슷한 자격을 갖춘 사람보다 3-15% 더 높은 연봉을 받는다고 알려져 있습니다.\n\n4. 80%가 중요성을 알지만, 48%만 실천한다\nLinkedIn 조사에 따르면, 전문직의 80%가 네트워킹이 커리어 발전에 중요하다고 동의합니다.\n하지만 실제로 네트워크와 꾸준히 연락을 유지하는 사람은 48%에 불과합니다. 38%는 \"연락 유지가 어렵다\"고 답했고, 49%는 \"시간이 없다\"를 이유로 꼽았습니다.\n\n5. 대면 만남의 힘은 여전하다\n디지털 시대에도 95% 이상의 전문가가 대면 미팅이 비즈니스에 필수적이라고 답합니다.\nB2B 영업에서 대면 미팅의 40%가 새로운 고객 확보로 이어집니다. 비언어적 커뮤니케이션이 전체 소통의 70%를 차지하기 때문에, 온라인만으로는 신뢰 형성에 한계가 있습니다.\n\n저도 한때 네트워킹을 \"영업\"처럼 느껴서 불편 했던 적이 있습니다.\n하지만 25년간 커리어를 돌아보니, 중요한 기회들은 대부분 \"사람\"을 통해 왔습니다.\n다음 커리어의 제안도, 좋은 팀원의 추천도, 비즈니스 파트너십도 모두 관계에서 시작됐습니다.\n\n특히 \"약한 유대\"의 힘을 체감합니다. 매일 보는 동료보다, 1년에 한두 번 만나는 다른 업계 지인이 의외의 새로운 기회를 연결해주는 경우도 많았습니다. 그래서 저는 의도적으로 \"다른 분야 사람들\"과의 느슨한 연결을 유지하려 합니다.\n덕분에 매일 매일 저녁 약속이 있긴 하지만요…\n\n송년회, 신년회는 그런 연결을 새로 만들거나 되살리기 좋은 시기입니다. 부담 갖지 마시고, 오래 연락 못 한 지인에게 \"올 한해 어떠셨어요?\"라는 짧은 메시지 하나 보내보시는 건 어떨까 싶네요.\n\n\n#네트워킹 #커리어 #이직 #채용 #일자리 #취업 #직장인 #커리어 #경력개발 #비즈니스 #약한유대의힘 #WeakTies",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7411250333227769856?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7411250333227769856%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "AX(AI Transformation) Executive | 비즈니스 스케일업 AX 실행 리더 (AI/Data 기반 신사업 0원 → 2,100억) | Ex-Daum, SKT, LG, LG U+ 광고,커머스,마케팅,AI,Data 사업 총괄/상무 | M&A & PMI | Startup Mentoring | 저서 ‘디지털 마케팅의 모든 것’ 외 1권",
-      "images": [
-        "https://media.licdn.com/dms/image/v2/D5622AQGwoY824AtI9Q/feedshare-shrink_1280/B56ZtoM57OHkAs-/0/1766979772516?e=1772064000&v=beta&t=qp5UG8BrvopkZC56rIxP2HzHeWm2lT3urZTdAeJEMNk"
-      ],
-      "user_link": "https://www.linkedin.com/in/ACoAAAyZz50BiI7Jj72d9AZko-Nxit9QS9xrrpk",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "image",
-      "source": "network",
-      "sequence_id": 83,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/81c865ee556117105780304ec5609961.jpg"
-      ]
-    },
-    {
-      "index": 60,
-      "code": "7411922908916297728",
-      "username": "정구봉 Goobong Jeong",
-      "created_at": "2025-12-31 09:15:28",
-      "time_text": "1개월",
-      "full_text": "어제 70명의 AI Builder 들에게 발표한 자료를 공유합니다. https://lnkd.in/g2C7Qe5u\n\n\"같이 만들어서 더 재밌었습니다\" 저번엔 혼자였는데, 이번엔 네 명과 같이 만들었습니다. 덕분에 촬영, 이름표 같은 디테일을 챙겼고요. 스피커분들과 사전에 1:1 미팅하면서 준비했어요. Socar의 전폭적인 지원을 받은 덕분에 밤 11시까지 남아서 이야기할 수 있어서 좋았습니다!\n\n1. 김서진(Brand X) - AI-native Company 운영하기 Seojin K.\nClaude Code로 회사를 운영하고 계세요. 제가 아는 분 중에 클로드 코드를 맛깔나게 쓰시는 분 1티어입니다. 혼자서 AI Native Company를 만들었어요. 샘 알트만이 말한 1인 유니콘이 이건가 싶습니다.\n\n2. 이동훈(마이리얼트립) - 플랫폼 엔지니어에서 AI 전도사로 Donghoon Lee\n엔지니어가 다른 사람의 문제를 풀어주는 방식이 실패하자 방법을 바꾸셨어요. 교육자 발굴 - 교육 - 직접 만들기 - 사례 발표가 하나의 휠로 이어지는 것이. 그리고 이 방식을 올해 2월부터 하셨으니 이런 시도로는 글로벌하게도 손에 꼽힐 것 같습니다!\n\n3. 최동운(삼양) - 계산기 압수당해서 엑셀 쓰다가 구글 시트까지 Dongwoon Choi\n동운님은 워낙 유명하시죠! 디자이너 마케터까지 커서로 PR 하니까요. 맥도날드라는 철학을 직접 만들어서 운영하시는게 너무 재밌었어요. 실은 가까이서 같이 일하니까 말할 수 있는건데, 동운님이 인지하지 못하는 좋은 사례들도 많이 숨어있어요. AI Native 프로덕트 조직 1티어입니다!\n\n4. 신건호(데이원컴퍼니) - 고도로 발달한 AX는 창업과 구분할 수 없다 Geonho Shin\nAX는 창업만큼이나 어렵다. 창업이 성공하려면 기존 제품보다 10배 이상 좋은 제품을 만들어야 하는 것처럼, AX도 기존 워크플로우보다 10배 나은 방식을 만들어야 합니다. 발표가 너무 공감이 가서 본분을 잊고 무대에 거의 난입하고 말았습니다..\n\n저도 이번 밋업을 준비하면서 Claude Code를 정말 다양한 일에 사용했어요. 그리고 그 흔적을 github repo 에 남겼습니다.\n- pptx 생성: 발표하고 싶은 꼭지만 입력하면 ppt 초안을 생성\n- 이름표 디자인: A4에 이름표를 4개씩 모아서 pdf 로 만든 다음 출력. 인쇄 색감이 맞을 때까지 cli로 직접 출력\n- 발표 당일 리마인드 SMS 문자 발송: AppleScript 를 즉석에서 짜서 발송\n- 스피커 분들에게 전달할 가이드 문서: luma와 컨텍스트를 밀어넣어주니 잘 만들어줬습니다.\n- speaker seats pdf 출력: 정말 놀라운 퀄리티로 뽑아줬어요.. 클로드 지능에 놀랐습니다.\n- 밋업 일정, 스피커 소개, Q&A 등을 담은 웹페이지 https://lnkd.in/gUzGHeNR (건태님이 만들어주셨습니다!)\n\n같이 만든 Team Attention! 다음 번에도 더 재밌는 것 해요!\nHoYeon Lee Jake Park Changhoi Kim\n\n버거부터 공간, 시간, 조언까지 아낌 없는 지원 감사합니다 Socar!\nHyouk JANG 박의연\n\n12월 30일이라는 말도 안되는 연말 일정에도 늦게까지 자리를 지켜주신 참석자 분들께도 정말 감사드립니다!",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7411922908916297728?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7411922908916297728%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "Claude Code for all of your work",
-      "images": [
-        "https://media.licdn.com/dms/image/v2/D5622AQHfTVRWD99q5A/feedshare-shrink_2048_1536/B56Ztxwh2HKcAw-/0/1767140121417?e=1772064000&v=beta&t=l5MaHOn5ZaHHijM5I4d9FxQZtVrLTmJpNv7phgT4qe4"
-      ],
-      "user_link": "https://www.linkedin.com/in/ACoAACY7KJQBDtSTk6IuIwZY6ntBGJx1fCYwsYI",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "image",
-      "source": "network",
-      "sequence_id": 89,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/3990786b8126ead8e9ee1ccb32b4f303.jpg"
-      ]
-    },
-    {
-      "index": 61,
-      "code": "7407438752777678848",
+      "code": "7416467077739200512",
       "username": "Minjung Kim",
-      "created_at": "2025-12-19 00:17:02",
-      "time_text": "1개월",
-      "full_text": "NotebookLM 슬라이드 활용법 8가지, 교수법의 진화\n\n복잡한 문장도 논리적이고 이해하기 쉽게 만드는 NotebookLM 의 슬라이드 활용법에 대한 공식링크입니다. (https://lnkd.in/g8Mjs8CU)\n\n이 링크 내용을 NotebookLM 슬라이드로 변환해 보았습니다.\n강의 직전 아이디어 노트를 강의 자료로 만들거나, 복잡한 과정을 시각화하는 등 8가지 활용법입니다.\n대학교에서 교수법에 대한 연수시 활용해 보시길 추천합니다.",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7407438752777678848?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7407438752777678848%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "created_at": "2026-01-12 22:12:22",
+      "time_text": "3주",
+      "full_text": "젠스파크 vs 제미나이, '심층 리서치'의 최종 승자는?\n\n요즘 Genspark 기능에 놀라고 있습니다. 심층리서치 진행해보니, 완벽한 보고서 레이아웃으로 출력을 해줍니다.\n문서 역시 책 레이아웃처럼 완벽하네요.\n\nGemini의 '심층 리서치' 기능과 비교해보면, 누가 보고서를 대신 '완성'해주느냐의 싸움입니다.\n1. Genspark: 무기는 Sparkpage와 PDF 리포트입니다. 정보를 찾는 데 그치지 않고, 알아서 목차를 잡고 도표를 넣어서 '바로 제출 가능한' 수준의 보고서를 만들어 여러 냅니다. AI 모델을 동시에 돌려(Mixture of Agents) 교차 검증하는 속도가 엄청납니다.\n\n2. Gemini: 구글 검색과의 결합력과 추론 능력입니다. 구글 워크스페이스연동이 강력한 무기입니다. 자신의 메일과 드라이브 속 자료까지 분석해야 하니 제미나이가 훨씬 뛰어나지만 '예쁜 보고서' 레이아웃은 젠스파크를 따라갈수 없습니다.\n\n결론적으로, Genspark는 에이전트들이 협업해 결과물을 뽑아내는 '워크플로우 자동화'의 최강자, Gemini는 방대한 데이터를 연결하고 논리적 빈틈을 메우는 '지능형 브레인' 의 강자입니다.\n\n실무자라면 젠스파크 추천 : 결과물을 가공하는 시간을 80% 줄여줌\n관리자라면 제미나이 : 복잡한 맥락을 파악하고 의사결정 근거를 찾는 데 최적.\n어떤 도구를 사용할지 선택하는 능력이 필요합니다.",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7416467077739200512?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7416467077739200512%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
       "profile_slogan": "AI, Digital Change, HR 및 변화관리(Change Management) 전문성을 바탕으로, 조직이 AI를 실질적으로 도입하고 활용하도록 돕는 AX(AI Transformation) 전략가로 활동 중임. 단순히 기술 도입을 넘어, transforamation 경험과 Design Thinking with AI& Agile 방법론을 통해 구성원이 AI로 일하는 방식을 설계함",
       "images": [
-        "https://media.licdn.com/dms/image/v2/D561FAQHifyh3977Kzw/feedshare-document-cover-images_480/B56Zsx_.oIIEBA-/0/1766070416773?e=1770976800&v=beta&t=DOP98wcHIH3ykqh3AJleZPEkVmWzrG3oznTaa3gHD1Q"
+        "https://media.licdn.com/dms/image/v2/D5622AQGOkVUvv8i4Lw/feedshare-shrink_2048_1536/B56ZuyVgmUHEAk-/0/1768223541865?e=1772064000&v=beta&t=ozbJJHO-WyVNOnjcQHrOv04GVoJmJZXeKI0hmoBXrU8"
       ],
       "user_link": "https://www.linkedin.com/in/ACoAADk-HPIB9Dfu21FvR7IWiubg2RoPiyFq_PY",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "image",
       "source": "network",
-      "sequence_id": 63,
+      "sequence_id": 104,
       "sns_platform": "linkedin",
       "local_images": [
-        "web_viewer/images/8345bb97432abf873830eea3b8067533.jpg"
+        "web_viewer/images/cb01941a9b34634192fe8b0406d9ab7a.jpg"
       ]
     },
     {
-      "index": 62,
-      "code": "7415022011720318978",
-      "username": "김덕중",
-      "created_at": "2026-01-08 22:30:12",
-      "time_text": "1개월",
-      "full_text": "조금 귀찮지만 아래 방법으로 노트북LM을 사용해 보세요.\n\n1) 깃허브 사이트로 이동합니다. https://lnkd.in/gJJBrVRY\n2) 폴드LM이라는 기능인데 여러분들의 노트북LM에 폴더를 만들어 줍니다.\n3) 가이드에도 나와 있지만 소스 파일을 다운 받은 다음 chrome://extensions 사이트를 열고 받은 소스파일을 업로드 합니다. (자세한 설명은 깃허브를 보세요)\n4) 그럼 아래 이미지처럼 노트북LM에 폴더를 만들고 자신의 노트를 드래그앤드랍 해서 이동시킬수 있습니다.",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7415022011720318978?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7415022011720318978%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "숙명여대 겸임교수, Firb AI 연구소장",
+      "code": "7416288711971164160",
+      "username": "설동헌",
+      "created_at": "2026-01-12 10:23:36",
+      "time_text": "3주",
+      "full_text": "인터랙티브 프롬프트 엔지니어링 튜토리얼을 소개합니다.\n(강의하면서 활용했던 앱을 리뉴얼 했습니다!)\n\n📢 Anthropic 공식 프롬프트 엔지니어링 튜토리얼, 이제 브라우저에서 바로!\n\nAnthropic이 공개한 공식 튜토리얼이 있지만…\n🤔 주피터 노트북이라 설치가 번거롭고\n🤔 OpenAI API 키도 직접 발급받아야 해서 진입장벽이 높았습니다\n\n그래서 누구나 바로 시작할 수 있도록 개발했습니다:\n\n✅ 설치 불필요 - 브라우저에서 바로 실행\n✅ API 키 불필요 - 무료 사용 가능 (개발자 비용 부담)\n✅ 실전형 학습 - 직접 프롬프트를 수정하며 배우기\n\n🔗 바로 시작하기:\nhttps://lnkd.in/gE_dNnwf\n\n\n📚 공식 원본 (GitHub):\nhttps://lnkd.in/gyaPBxbk\n\n프롬프트 엔지니어링, 이제 쉽고 무료로 시작하세요! 🚀",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7416288711971164160?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7416288711971164160%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "설코딩 | 맨날 AI랑 개발하는 사람",
       "images": [
-        "https://media.licdn.com/dms/image/v2/D5622AQGX82zdCwUxuw/feedshare-shrink_2048_1536/B56ZudzOCvHgAw-/0/1767879010928?e=1772064000&v=beta&t=ibnL3VZbALK8c5QW8NX2_ymHa9CETTCq-D9sAen_AxA"
+        "https://media.licdn.com/dms/image/v2/D5622AQHTFCt3MMBayQ/feedshare-shrink_2048_1536/B56ZuvzR_mG4Aw-/0/1768181015313?e=1772064000&v=beta&t=G-L0TKgNpjk4jIT_wydR3ObySAGIn4Z86e4yyDtftYQ"
       ],
-      "user_link": "https://www.linkedin.com/in/ACoAAAwBOVMBDI50rE9wyD4tsMaGWkV-85Sqd50",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "user_link": "https://www.linkedin.com/in/ACoAACZRjioBYRmFe3xTvcuh8BqTRS137FC8JUw",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "image",
       "source": "network",
-      "sequence_id": 99,
+      "sequence_id": 103,
       "sns_platform": "linkedin",
       "local_images": [
-        "web_viewer/images/bad8ab7129aa357a7f0a24adc4e5be94.jpg"
+        "web_viewer/images/57c43b84df6e9bfed76dde934ad2c54d.jpg"
       ]
     },
     {
-      "index": 63,
       "code": "7415961577650012160",
       "username": "Edwin Kim",
       "created_at": "2026-01-11 12:43:42",
@@ -5200,7 +5213,7 @@ const snsFeedData = {
         "https://media.licdn.com/dms/image/v2/D5622AQHPbFdtdkC8Tg/feedshare-shrink_2048_1536/B56ZurJwEWH0Aw-/0/1768103021026?e=1772064000&v=beta&t=FkfZ37eytLvZZO3ZHpwBrxyqGkvCS1_v68hIlYnytcU"
       ],
       "user_link": "https://www.linkedin.com/in/ACoAADqhdRMBEYEyi6mSOb3MzyVI7_3Y8JhevS8",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "image",
       "source": "network",
       "sequence_id": 102,
@@ -5210,129 +5223,6 @@ const snsFeedData = {
       ]
     },
     {
-      "index": 64,
-      "code": "7414070699071442944",
-      "username": "Jeongmin Lee",
-      "created_at": "2026-01-06 07:30:01",
-      "time_text": "1개월",
-      "full_text": "🧠 메타가 4조원에 인수한 마누스, 그 핵심 기술이 오픈소스로 풀렸습니다\n\nAI 에이전트를 써보신 분들은 아실 겁니다. 복잡한 작업을 맡기면 어느 순간 처음 요청과 전혀 다른 방향으로 가고 있는 AI를 발견하게 되죠.\n\n이건 사용자의 문제가 아닙니다. 대규모 언어 모델(LLM, Large Language Model)이 가진 구조적 한계입니다.\n\n메타(Meta)가 25억 달러에 인수한 마누스(Manus)는 바로 이 문제를 해결한 회사였습니다. 그리고 최근 한 개발자가 마누스의 핵심 원리를 클로드 코드(Claude Code)용 오픈 소스로 구현해 공개 3일 만에 깃허브(GitHub) 스타 1,000개 가까이 기록했습니다.\n\n1️⃣ 문제의 본질 - 왜 AI 에이전트는 목표를 잊어버리는가\n\nLLM에는 컨텍스트 윈도우(Context Window)라는 작업 메모리 한계가 존재합니다.\n\n• 대화가 길어질수록 초기에 설정한 목표가 맥락에서 밀려남\n• 중요한 정보가 어텐션(Attention) 범위 밖으로 사라짐\n• 결과적으로 원래 요청과 다른 방향으로 작업이 진행됨\n\n이 현상을 목표 표류(Goal Drift)라고 부릅니다. 50회 이상의 도구 호출이 이어지면 거의 필연적으로 발생하는 문제입니다.\n\n2️⃣ 마누스의 해법 - 파일 시스템을 외부 메모리로 활용\n\n마누스가 찾은 해답은 의외로 단순했습니다. AI에게 메모하게 만드는 것이죠.\n\n• 파일 시스템을 AI의 영구 기억 저장소로 활용\n• 컨텍스트 윈도우의 물리적 한계를 우회\n• 필요할 때마다 저장된 정보를 다시 불러와 참조\n\n이 접근법은 컨텍스트 엔지니어링(Context Engineering)을 구성하는 한 가지 방식입니다.\n\n3️⃣ 오픈소스 구현 - 3-파일 메모리 시스템의 구조\n\n'planning-with-files' 라는 이름의 이 클로드 스킬(Claude Skill)은 마누스의 원리를 세 개의 파일로 구현합니다.\n\n• task_plan.md - 목표, 진행 단계, 에러 로그를 담은 마스터 플랜. 모든 주요 결정 전에 이 파일을 읽도록 설계됨\n• notes.md - 리서치 결과와 중간 데이터를 저장하는 공간. 컨텍스트 윈도우 과부하를 방지함\n• [deliverable].md - 최종 산출물을 담는 파일\n\n4️⃣ 핵심 메커니즘 - 결정 전 계획 파일 재참조\n\n이 시스템의 가장 중요한 규칙은 다음과 같습니다.\n\n\"Before any major decision, read the plan file.\" 모든 주요 결정 전에 계획 파일을 다시 읽어라.\n\n• LLM의 어텐션 메커니즘(Attention Mechanism)은 가장 최근 입력된 정보에 강하게 반응함\n• 결정 직전에 task_plan.md를 읽으면 원래 목표가 최신 컨텍스트로 복원됨\n• 더 긴 컨텍스트 윈도우가 아닌, 정보 배치의 최적화로 문제를 해결함\n\n5️⃣ 에러 처리 설계 - 무한 재시도 루프의 차단\n\n또 하나의 핵심 설계는 에러 기록 강제입니다.\n\n• 에러 발생 시 task_plan.md의 에러 섹션에 반드시 기록하도록 지시\n• AI가 실패를 명시적으로 인정하게 만듦\n• 동일한 실수의 반복 대신 계획 수정으로 유도\n• 디버깅에 필요한 로그가 자동으로 축적됨\n\n6️⃣ 시사점 - AI 에이전트 성능의 새로운 기준\n\n3일 만에 1,000 스타 가까이 기록한 이유는 명확합니다. 수조원 규모의 기술적 통찰을 누구나 쉽게 활용할 수 있게 되었기 때문입니다.\n\n이 사례가 보여주는 것은 AI 에이전트의 성능이 모델의 크기나 파라미터 수가 아닌 메모리 아키텍처 설계에 달려 있다는 점입니다.\n\nhttps://lnkd.in/gByS5U59",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7414070699071442944?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7414070699071442944%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "Building with AI @ Smoretalk | Control opinions with AI",
-      "images": [],
-      "user_link": "https://www.linkedin.com/in/ACoAACkadIABsYoadkJXuZXMASkhnSFeoK_nVw8",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "text",
-      "source": "network",
-      "sequence_id": 95,
-      "sns_platform": "linkedin"
-    },
-    {
-      "index": 65,
-      "code": "7411330156092616704",
-      "username": "티타임즈",
-      "created_at": "2025-12-29 18:00:05",
-      "time_text": "1개월",
-      "full_text": "AI 좀 쓴다는 분들은 얼마 전부터 클로드 스킬에 열광하고 있죠. 클로드 스킬만 잘 쓰면 AI 에이전트를 나에게 꼭 맞게 설계해서 쓸 수 있다고 합니다.\n클로드 스킬은 RPG 게임 속에서 사용하는 캐릭터의 '스킬'과 유사합니다. [나무를 베는 스킬]과 [불을 붙이는 스킬]을 합치면 게임 내에서 땔감에 불을 땔 수 있게 되는 것과 마찬가지죠. 예를들어 특정 분야에 대해 리서치를 하는 스킬, 긴 자료를 일목요연하게 정리하게 만드는 스킬, 인포그래픽을 만드는 스킬, PPT 디자인을 하는 스킬을 합치면 전문가의 PPT처럼 발표 자료를 만들 수 있습니다. 각각의 능력들을 잘게 쪼개서 만들어 두고, 이를 잘 조합해서 사용하는 방식입니다.\n클로드 스킬을 어떻게 만들어야 하고, 어떤 방법으로 사용해야 할까요? 프롬프트 엔지니어링으로 마술을 부리는 Sujin Kang Ph.D. 박사에게 클로드 스킬 구성 및 사용 방법을 들어봅니다.",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7411330156092616704?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7411330156092616704%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "팔로워 284명",
-      "images": [
-        "https://media.licdn.com/dms/image/v2/D561FAQHs1Fx0YAh5RA/feedshare-document-cover-images_480/B56Zta_AXbG0BM-/0/1766758028558?e=1770976800&v=beta&t=QkUl6XNNzTc7hhOhr-jTwjaULWMyFgjObkX4yrxKjUg"
-      ],
-      "user_link": "https://www.linkedin.com/company/%ED%8B%B0%ED%83%80%EC%9E%84%EC%A6%88/",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "image",
-      "source": "network",
-      "sequence_id": 85,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/0a1fb2aa6f8eb89e0214ed9bbb7de886.jpg"
-      ]
-    },
-    {
-      "index": 66,
-      "code": "7401129989594763264",
-      "username": "고영혁",
-      "created_at": "2025-12-01 14:28:15",
-      "time_text": "2개월",
-      "full_text": "초대형 재해인 쿠팡 개인정보 유출 사태로 다른 건 몰라도 이거 하나는 각자 챙기시는게 좋겠습니다. 저도 고객사 슬랙에 올라온 아래 글 보고 사태의 심각성을 깨닫고 바로 진행했습니다. 관련 글들 찾아보니 통관번호까지 유출됐는지 아닌 지는 쿠팡에서 명확하게 공지하지 않은 듯합니다. 유비무환.\n\n‐---------\n\n쿠팡에 가입하신 분들 중 ‘개인통관고유번호’ 입력하셨던 분들은 무조건 재발급(변경신청)하셔야 합니다.\n\n이번 정보유출은 이름, 주소, 전화번호, 구입내역과 함께 개인 통관번호도 유출되었기에 이후에 해외에서 한국으로 들어오는 불법적인 물건들(마약, 밀수)이 도용될 수 있습니다.\n\n1. 관세청 접속\n2. 로그인\n3. 조회\n4. 수정\n5. 재발급(최하단에 있음)\n6. 확인\n\n이후에 재발급 받은 통관번호를 기존에 입력했던 네이버, 알리 등의 해외쇼핑 플랫폼에 새로 입력하셔야 안전해집니다.\n\n다른건 몰라도 이건 꼭 하세요!\n\nhttps://lnkd.in/gXhXDt3P\n\n#쿠팡개인정보유출 #security #privacy",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7401129989594763264?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7401129989594763264%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "고넥터 창업자&대표 / 고넥터(Gonnector) - 찾아가서 연결하여 가치 생성 / 데이터 & AI 를 활용하는 평생 레인메이커 / 데이터 과학자 & 그로스 해커 / 개인 엔젤 투자자, 작가, 컨설턴트 & 코치",
-      "images": [],
-      "user_link": "https://www.linkedin.com/in/ACoAAAMkQDoBnfOE4bgY4NL4TXkx3M3D9ZBkS0U",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "text",
-      "source": "network",
-      "sequence_id": 39,
-      "sns_platform": "linkedin"
-    },
-    {
-      "index": 67,
-      "code": "7413738759403298816",
-      "username": "BZCF - 비즈까페",
-      "created_at": "2026-01-05 09:31:00",
-      "time_text": "1개월",
-      "full_text": "세상은 ‘나보다 똑똑하지 않은 사람들’이 만들었다\n\n당신이 당연시 여기는 이 세상의 모든 것들, 즉 법, 도덕, 시스템, 가치관은 모두 당신보다 똑똑할 것도 없는 평범한 인간들이 만든 것이다.\n\n지금의 학교 시스템조차 150년 전 공장주들이 말 잘 듣는 노동자를 찍어내기 위해 설계한 틀이다. 당신의 삶을 구속하는 그 거대한 벽들은 사실 언제든 허물 수 있는 모래성이다.\n\n인스타그램 : https://lnkd.in/g39aSC-x",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7413738759403298816?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7413738759403298816%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "BZCF",
-      "images": [
-        "https://media.licdn.com/dms/image/v2/D5622AQE6iwFN5_7IJA/feedshare-shrink_2048_1536/B56ZuLkFIhHgAw-/0/1767573057328?e=1772064000&v=beta&t=Xh-w1_X058MVUPA6X2Yoih21uzcNFIqMBv5f2f62mac"
-      ],
-      "user_link": "https://www.linkedin.com/in/ACoAADosSpABPU4--68Ki5nk1NUfCtpau6AMoJs",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "image",
-      "source": "network",
-      "sequence_id": 93,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/f59b1872e45054fdcd4b4d3bf8a23e53.jpg"
-      ]
-    },
-    {
-      "index": 68,
-      "code": "7413907038138904577",
-      "username": "Josh Kim",
-      "created_at": "2026-01-05 20:39:41",
-      "time_text": "1개월",
-      "full_text": "클로드 코드로 마케팅 팀을 만들어보고 있다.\n\n'OO에 대해 콘텐츠 만들어줘'라고 하면\n뉴스레터, 블로그, 쇼츠, 스레드 글, 카드뉴스, 썸네일,\n모두 병렬로 한번에 가이드라인 맞춰서 제작된다.\n\n노드 연결과 개발 지식은 거의 필요가 없다.\n\n26년엔, 진짜로 '팀 단위 AI 에이전트'를\n만들어 일하는 사람들이 더 많이 탄생할 것 같다.\n\n'지휘가 AI'는 최초에 일을 뿌리는 역할을 하고,\n'검수 AI'가 최종 결과물을 리뷰하고 일을 다시 시킨다.\n(여기에 '심사역'들도 추가할 예정)\n\n하나씩 '아주 잘 만드는 에이전트'를 만드는 데에는\n물론 시간이 들지만, 이것도 시간문제다.\n\n나는 대체 무슨 세상에 살고 있는가.",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7413907038138904577?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7413907038138904577%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "AI 크리에이터 조쉬입니다. ex-SKT 프로덕트 디자이너",
-      "images": [
-        "https://media.licdn.com/dms/image/v2/D5622AQH8vDg9n_NJ2g/feedshare-shrink_2048_1536/B56ZuN9KhGGsAw-/0/1767613180896?e=1772064000&v=beta&t=qjw2GpzdZZGdeJZtM2LfeZr6fSfTpE5-t23N5a3uJHA"
-      ],
-      "user_link": "https://www.linkedin.com/in/ACoAAAfst4QBZ_TBpSZb5m5EitKHc3H5PhUbe5E",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "image",
-      "source": "network",
-      "sequence_id": 94,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/eb8d9737c76b8b11b8426e41175c84e7.jpg"
-      ]
-    },
-    {
-      "index": 69,
-      "code": "7414417993180303360",
-      "username": "Kyunghun Lee",
-      "created_at": "2026-01-07 06:30:02",
-      "time_text": "1개월",
-      "full_text": "끝난 줄 알았던 AI 코딩 도구 경쟁, 1인 개발자가 뒤집었습니다\n\nAI 코딩 도구 시장은 어느정도 결판이 난 게임처럼 보였습니다. Anthropic은 수십억 달러를 투자받아 Claude Code를 출시했습니다. OpenAI에서도 Codex를 내놓았습니다. Cursor는 수억 달러를 유치했습니다. 자본, 인력, 데이터. 개인이 이길 방법이 없어 보였습니다. 그런데 지금 개발자 커뮤니티에서 센세이션이 일어나고 있습니다.\n\n1. 한국 개발자 1명, GitHub 스타 9,000개\n\nOh My OpenCode. 얼마 전 등장해 빠르게 성장하고 있는 AI 코딩 도구 플러그인입니다. GitHub 스타 9,000개를 돌파했고, 지금도 매일 늘어나고 있습니다. 이 프로젝트를 이끈 분은 Indent Corporation에서 소프트웨어 엔지니어로 있으신 김연규 님입니다. 팀이 아닙니다. 1인 개발입니다. 사용자들의 반응은 열광적입니다. 한 퀀트 연구원은 이렇게 말했습니다. \"사람이 3개월 걸리는 일을 Claude Code는 7일에, 이 도구는 1시간에 끝냅니다. 작업이 끝날 때까지 멈추지 않습니다.\" 빅테크가 수십억 달러를 투자한 영역에서 1인 개발자가 엄청난 반응을 얻고 있습니다. 어떻게 가능했을까요?\n\n2. 오픈소스 플랫폼과 AI가 있었습니다\n\n연규 님은 처음부터 만들지 않았습니다. OpenCode라는 오픈소스 플랫폼 위에 올라탔습니다. OpenCode는 SST를 만들었던 소규모 팀이 2025년 6월 출시한 AI 코딩 에이전트입니다. GitHub 스타 3만 개 이상, 컨트리뷰터 290여 명. 핵심 특징은 특정 AI 모델에 종속되지 않는다는 것입니다. Claude, GPT, Gemini, 로컬 모델까지 무엇이든 연결할 수 있습니다.\n\n연규 님은 이 플랫폼 위에서 24,000달러어치의 LLM 토큰을 소모하며 Oh My OpenCode를 만들었습니다. AI와 함께 AI 도구를 만든 것입니다. 일반적인 AI 코딩 도구는 사람이 AI에게 지시합니다. Oh My OpenCode는 AI가 AI를 조율합니다. 메인 에이전트가 개발팀 리드 역할을 합니다. 작업을 파악하고, 적합한 AI 모델을 호출합니다. 아키텍처 설계가 필요하면 논리에 강한 GPT를 부릅니다. 코드베이스 분석이 필요하면 맥락 파악에 뛰어난 Claude를 부릅니다. 프론트엔드 작업은 UI 생성에 탁월한 Gemini에게 넘깁니다. 이 모든 과정이 백그라운드에서 병렬로 실행됩니다. 그리고 작업이 완료될 때까지 멈추지 않습니다. 연규 님이 README에 적어둔 문장이 있습니다. \"생산성이 너무 올라 갈 수 있습니다. 옆자리 동료한테 들키지 않도록 조심하세요.\"\n\n3. 작아 보이는 빈틈, 파고들면 거대해집니다\n\n완벽해 보이는 시장에도 빈틈은 있습니다. Claude Code, Codex, Cursor. 수십억 달러가 투입된 제품들입니다. 사용자의 니즈를 철저히 분석하고, 최고의 인력들이 개발했습니다. 빈틈이 없어 보입니다. 하지만 연규 님은 빈틈을 찾았습니다. 기존 도구들은 하나의 모델이 순차적으로 작업합니다. 사람이 지시하고, AI가 실행하고, 다시 사람이 확인합니다.\n\nOh My OpenCode는 다르게 접근했습니다. 각 AI 모델에는 강점이 있습니다. GPT는 논리에 강하고, Claude는 맥락 파악에 뛰어나고, Gemini는 UI 생성에 탁월합니다. 이 강점을 살려서 가장 잘하는 작업에 배치하면? 그리고 이 배치와 조율까지 AI가 스스로 하면? 작아 보이는 빈틈이었습니다. 하지만 파고들자 구멍이 커졌습니다. \"7일 걸리는 작업을 1시간에 끝낸다\"는 반응이 나왔습니다. 9,000개의 GitHub 스타가 이 빈틈의 크기를 증명합니다.\n\n예전이었다면 불가능했을 것입니다. 빈틈이 보여도 한 명이 파고드는 것 자체가 어려웠습니다. 기반 인프라를 만드는 데만 팀 단위의 인력과 수개월이 필요했으니까요. 지금은 다릅니다. 오픈소스 플랫폼이 기반을 제공합니다. AI가 개발 속도를 높입니다. 24,000달러어치 토큰이면 1명이 팀처럼 일할 수 있습니다. 그리고 Oh My OpenCode 같은 도구가 나오면? 이 흐름은 더 가속화됩니다. AI가 최고 성능을 발휘하는 조합을 찾은 도구로, 또 다른 빈틈을 파고드는 사람이 나올 것입니다.\n\n어느 시장도 안심할 수 없습니다. AI 네이티브 인재 한 명, 혹은 작은 조직이 언제든 시장을 뒤집을 수 있는 시대가 되었습니다.",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7414417993180303360?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7414417993180303360%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "CAIO & Deputy CEO @ Channel Corp | AI × B2B SaaS",
-      "images": [
-        "https://media.licdn.com/dms/image/v2/D5622AQGpcvVboh_qyg/feedshare-shrink_2048_1536/B56ZuTdrfpGsAw-/0/1767705591054?e=1772064000&v=beta&t=xlwrB7RwTugS10NXbal1VFGcBnvImRnTQCT34eVufCs"
-      ],
-      "user_link": "https://www.linkedin.com/in/ACoAAA5RhH4BjDv2vMF1Onz2ppvG6jeLmEGo93E",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "image",
-      "source": "network",
-      "sequence_id": 97,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/6a23473e214015d67848095904c11a69.jpg"
-      ]
-    },
-    {
-      "index": 70,
       "code": "7415878861919379456",
       "username": "정구봉 Goobong Jeong",
       "created_at": "2026-01-11 07:15:01",
@@ -5344,7 +5234,7 @@ const snsFeedData = {
         "https://media.licdn.com/dms/image/v2/D5622AQF0d6A5y-gBFA/feedshare-shrink_1280/B56ZuoH.gEIYAc-/0/1768052222349?e=1772064000&v=beta&t=D7O3LVgWV-MJGLx9BXwQKwqnnQWj9uD0VTzyK1Sg_OU"
       ],
       "user_link": "https://www.linkedin.com/in/ACoAACY7KJQBDtSTk6IuIwZY6ntBGJx1fCYwsYI",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "image",
       "source": "network",
       "sequence_id": 101,
@@ -5354,102 +5244,180 @@ const snsFeedData = {
       ]
     },
     {
-      "index": 71,
-      "code": "7407951903344685056",
-      "username": "Soojung Shin (신수정)",
-      "created_at": "2025-12-20 10:16:06",
-      "time_text": "1개월",
-      "full_text": "명예퇴직한 한 후배가 전해주는 레슨---\n\n1. 이번 주, 작년 49세에 대기업을 스스로 명예 퇴직한 한 후배가 찾아와서 만났다. 사실 이 후배는 기업에서 좋은 평가를 받았고 빠른 나이에 부장으로 승진했기에 조금 의외였었다.\n\n2. 실력은 더 이상 향상되지 않고 고과와 승진에만 신경쓰며 나이들어 가는 자신의 모습을 보고 더 늦기 전에 결단해야겠다는 생각을 했다고 한다. 그러면서 이야기한다. \"김부장 드라마가 인기라고 하는데 저는 차마 못보겠더라고요. 아마 퇴임자들은 비슷할겁니다\"\n\n3. 박사학위가 있어 퇴임 후 교수직 등을 지원했지만 잘 안되었다고 한다. 그래도 책도 쓰고 심사나 자문 등을 조금씩 하다가 다행히 박사학위 공부를 같이 하던 선배의 연결로 지금은 새로운 직장을 잡아 즐겁게 일하고 있다. 제게 말한다. \"대표님이 weak tie의 중요성에 대해서 많이 말씀하셨잖아요. 세상에 나오니 회사 내 인맥은 힘을 못쓰더라고요. 그런데 약하게나마 이어졌던 외부 연결이 저에게 기회를 주더라고요\"\n\n4. 내가 회사 다니면서 가장 잘했다고 생각하는 것은 무엇인가? 라고 물었다.\n1) 회사 지원으로 MBA를 하고, 이후 자신의 돈으로 박사를 했는데 정말 잘했다. 학위 자체가 도움이 된 것보다는 다른 업종, 다른 스테이지의 사람들을 만남으로써 세상에 대한 눈이 띄였고 weak tie가 만들어졌다(저도 학위자체가 중요하다고 보진 않습니다). 만일 회사 안에만 있었으면 우물안 개구리였을 것이다.\n2) 경영지도사 자격증을 취득했는데 이것도 잘한 행동이었다. 이를 기반으로 다양한 공공기관 등의 자문, 심사 등 기회가 있었다.\n3) 회사 다닐때 한 부서에 머물지 않고 새로운 도전이 필요할때 다른 업무로 이동해서 도전 했다. 사실 한 곳에 계속 있으면 더 좋은 고과를 받을 수 있었지만 이게 더 큰 도움이 되었다.\n4) 퇴직하자 마자 책을 한권 썻는데 이것도 잘한 행동이었다. 많이 팔리지는 않았지만 해당 분야의 전문가로서 인정받아 강연이나 해당 분야 심사 등의 기회가 생겼고 새로운 커리어에 큰 도움이 되었다.\n\n5. 아쉬운 것과 후배들에게 이야기하고 싶은 것이 있다면? 이라고 물었더니\n1) 자신이 무엇을 잘하고 무엇을 좋아하는지 회사라는 울타리가 있을때 파악하라. 회사 내에서 그것에 역량을 키울 수 있도록 부서를 선택한다든지 도전을 하라. 너무 눈에보이는 평가나 작은 연봉상승에 얽매이지 말고 성장의 기회를 찾아 도전하고 실력을 쌓아라.\n2) 외부에서도 경쟁력이 있으려면 자신을 드러낼 수 있을만한 뚜렷한 차별화와 성과를 만들어라. 그리고 그런 전문 분야에 책을 한 권 낼 수 있는 준비를 하라. 실제적인 자격증도 따라(돈만 낭비하는 의미없는 자격증도 많습니다).\n3) Weak tie를 만들어라. 회사 사람들과만 있으면 그 game에 매몰되고 세상이 어떻게 돌아가는지 모른다. 다른 업종, 다른 스테이지, 스타트업 이런 분야의 사람들과 연결되고 교류를 맺어라. 학위과정을 하든, 아니면 지속적으로 이질적인 분들과의 모임을 참가하든. 세상의 game이 어떻게 돌아가는지에 지속적인 자극을 받아라.\n4) 영어 공부를 열심히 하라. 회사에서 영어를 사용할 기회가 없어서 영어를 등한시 했는데 나와 보니 fluent하게 영어를 하면 훨씬 많은 기회가 있었다. 이에 이제서야 정신차리고 다음 단계 jump-up을 위해 매일 전화 영어를 한다.\n5) 효과적인 재테크도 할 줄 알아야 한다. 회사 일만 열심히 해서 어떻게 돈을 굴려야 하는지 몰랐다. 주위 같이 퇴직한 분들을 보니 여성들이 확실히 공부를 하니 무리하지 않으면서도 재테크를 잘하더라. 남성들은 극과극이다. 몰빵을 해서 대박이나 쪽박이든지, 아니면 완전히 보수적으로 은행예금만 하든지.\n\n6. 그리고 이런 말을 한다. \" 나와 보니 회사가 얼마나 따뜻한지 알겠습니다. 나와보니 내가 움직이지 않으면 아무 수입도 나오지 않습니다. 함부로 나오지 마세요. 회사에 있을때 회사에도 도움이 되면서도 자신도 충분히 성장할 수 있어요. 선후배를 보면 대개 그 노력을 하지 않습니다. 특히, 대기업은 과장 정도만 넘어가면 실력 성장 보다는 눈치와 보고 실력만 느는데 나가면 아무 도움이 안됩니다\"\n\n7. 내가 오늘의 대화를 SNS에 남길까 하니 꼭 그래달라고 한다. \"정말 해주고 싶은 말이 많은데 영향력있는 분이 해주시면 더 많은 후배들이 도움받을 것 같습니다\" 나는 SNS에 종종 찾아오는 분과의 대화 내용을 (익명화 하여) 올린다. 대개 적극적으로 올려달라는 경우가 많다. 이유가 다른 분들에게 조금이라도 도움이 되었으면 좋겠다는 것이다. 내 주위에는 다 이런 훌륭한 분들로 가득차 있다.\n\np.s. 댓글은 서로에게 도움됩니다",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7407951903344685056?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7407951903344685056%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
+      "code": "7415376843815608320",
+      "username": "Seulgi Lee (이슬기)",
+      "created_at": "2026-01-09 22:00:10",
+      "time_text": "3주",
+      "full_text": "뜬구름 말고 현실 AI 대가를 만났다.\n뭔가 몇 주째 막혀있던 게 뻥 뚫려 해소되는 느낌이다.\n(3시간 훈계받고 얻은 인사이트 정리)\n\n문1 : 갈수록 잘뽑는 AI, 인간은 뭘할까?\n답1 : 시작과 끝을 한다.\n\n경험한 사람의 입으로만\n나올 수 있는 인사이트를\n기획단 입력으로 넣고,\n\n가장 막단에서\n경험한 사람의 눈으로만\n판가름 할 수 있는 잣대로\n평가하고 고친다.\n\n문2 : AI가 답하는 동안, 인간은 뭘할까?\n답2 : 질문이 잘못됐다.\n\n애초에 AI한테 묻기전에\n작업을 쪼개고 쪼개고 쪼개서\n전체 플로우를 설계한다.\n\n그래서 AI한테 물어봤으면,\n\n다른 창에서는\n같은 질문을 한번 더 해놓거나\n바로 다음에 이어질 작업을\n벌써 시작했어야 한다.\n\n문3 : 완벽한 결과를 한방에 내놓는 프롬프트?\n답3 : 그런거 없다.\n\n참조하는 정보가 많아지거나,\n뾰족하게 여러 역할 해야 할 걸\n효율 생각한다고 뭉쳐서 넣으면..\n\nex) \"넌 SEO 전문가야, 우리 브랜드 언어 감도 맞게, 글자수 4천자로, 담백한 언어로, 노션 키워드로 전문적인 글 써줘\"\n\n이렇게 말한다?\n99% 확률로 틀린다.\n\n한번 물어볼 때마다\n목적은 달라야 한다.\n\n즉, 프롬프트는 단계마다\n세분화 되어야 한다.\n\n워터마크 새겨진\n필라테스 동작 일러스트를\n다른 동작으로 바꿔 뽑으려면,\n\n1. 워터마크 지우는 프롬프트를 받아서\n2. 워터마크를 지우라고 시키고\n3. 우리 일러스트 스타일을 학습시키고\n4. 동작 변형하는 프롬프트를 받아서\n5. 우리 스타일로 다른 동작 그리게 한다.\n\n웬만한 제작비가 다 싸졌다.\n기획값은 더 희귀하고 비싸다.\n\n그럼 어떻게 기획을 잘하냐?\n오로지 경험, 식견, 깊이, 자기생각.\n\n그 문제에 대해 어디까지 고민해봤냐가\n승부를 가를 것이다.\n\n즉, 인간아.. 제발 시도 해라...\nAI? 보기만 하지 말고 물량치기 해라.\n해봐야 안다. 해봐야 는다.\n그래야 보인다.\n\n#소처럼 #일해서 #소타트업",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7415376843815608320?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7415376843815608320%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "Founder & CEO of Gongysd | Template Master, Market Leader",
       "images": [],
-      "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "user_link": "https://www.linkedin.com/in/ACoAAFV1PAYBs-EO8gBw4VZp4Ebpq35BCTb51T4",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "text",
       "source": "network",
-      "sequence_id": 67,
+      "sequence_id": 100,
       "sns_platform": "linkedin"
     },
     {
-      "index": 72,
-      "code": "7408959519537426432",
-      "username": "Kyunghun Lee",
-      "created_at": "2025-12-23 05:00:01",
+      "code": "7415022011720318978",
+      "username": "김덕중",
+      "created_at": "2026-01-08 22:30:12",
       "time_text": "1개월",
-      "full_text": "Codex 프로덕트 리더가 보는 코딩 에이전트의 미래\n\nSora 안드로이드 앱은 2-3명의 엔지니어가 28일 만에 만들어 앱스토어 1위에 올랐습니다. OpenAI 내부에서 Codex를 활용한 결과입니다. Codex가 기존 iOS 앱 코드를 참조하면서 작업 계획을 세우고, 두 플랫폼을 동시에 보며 구현했습니다.\n\nAtlas 브라우저 팀에서도 비슷한 변화가 일어나고 있습니다. 2-3명이 2-3주 걸리던 작업을 이제 1명이 1주면 끝냅니다. Codex는 8월 이후 20배 성장했고, OpenAI API에서 가장 많이 사용되는 코딩 모델이 됐습니다.\n\n코딩 에이전트가 이 정도 속도를 내는 시대입니다. Codex의 프로덕트 리드 Alexander Embiricos는 코딩 에이전트의 미래를 어떻게 보고 있을까요?\n\n1. 코드 작성은 재미있고, 코드 리뷰는 재미없습니다\n\n코딩 에이전트가 발전하면서 역설적인 상황이 생겼습니다. 코드 작성은 엔지니어에게 가장 재미있는 부분이라고 합니다. 플로우에 빠져서 설계하고, 구현하고, 테스트하는 것. 그런데 이제 AI가 코드를 대신 쓰면서, 엔지니어의 주된 업무가 \"AI가 쓴 코드를 리뷰하는 것\"으로 바뀌고 있습니다.\n\n빌딩이 쉬워지면서, 병목이 두 곳으로 이동했습니다. '무엇을 만들지 결정하는 것'과 '만들어진 코드를 검토하는 것'. 리뷰할 코드가 100시간치 쌓여 있는데, 누가 그걸 다 검토할까요? 재미있는 일은 AI가 하고, 재미없는 일은 인간이 하는 구조가 되었습니다.\n\n2. Codex 팀은 이 문제를 어떻게 풀고 있을까요?\n\n(1) 첫 번째 해법: 에이전트가 스스로 검증하게 만들기\n\nCodex 팀의 우선순위는 \"코드를 더 잘 쓰게 만드는 것\"이 아닙니다. \"리뷰 부담을 줄이는 것\"입니다. 작은 예시가 있습니다. Codex 웹에서 에이전트가 작업을 완료하면 무엇을 먼저 보여줄까요? 코드 diff가 아니라 결과물의 이미지 프리뷰입니다. 코드를 한 줄씩 읽기 전에, 일단 \"이게 내가 원한 결과인가?\"를 빠르게 확인할 수 있게 한 것입니다. 인간을 최대한 빠르게 가속시키는 방법을 고민한 결과입니다.\n\n더 근본적인 방향도 있습니다. 에이전트가 스스로 작업을 검증하게 만드는 것 입니다. Atlas 브라우저 팀의 한 엔지니어는 Codex가 스스로 작업을 검증하도록 설정했습니다. 쉬운 작업은 아니었습니다. \"왜 네 작업을 스스로 검증하지 못해? 고쳐봐\"라는 프롬프트를 반복해서 주면서, Codex가 점진적으로 검증 로직을 구축하도록 유도했습니다. 결과적으로 인간이 직접 리뷰해야 할 범위가 줄어들었습니다.\n\n이러한 자가 검증 능력 덕분에 Codex는 이제 24시간 이상 연속 작업도 가능합니다. 보통 AI 모델은 컨텍스트 윈도우 한계가 있어서 긴 작업이 어렵습니다. Codex는 \"compaction\"이라는 기능으로 이 문제를 해결했습니다. 컨텍스트가 한계에 가까워지면 핵심 맥락을 압축하고 새로운 컨텍스트에서 이어서 작업합니다. 밤새 돌려놓고 아침에 결과를 확인하는 것이 가능해졌습니다.\n\n하지만 이것만으로는 부족합니다. 에이전트가 코드를 검증할 수 있어도, 애초에 \"왜 이 코드를 짜야 하는지\" 맥락을 모르면 여전히 인간이 방향을 잡아줘야 합니다.\n\n(2) 두 번째 해법: 에이전트가 맥락까지 이해하게 만들기\n\nAlexander는 현재 Codex를 이렇게 표현했습니다. \"Slack을 안 읽고, DataDog도 안 보는 똑똑한 인턴 같다\"고 합니다. 아무리 코드를 잘 짜도, 팀에서 어떤 논의가 오갔는지, 어떤 이슈가 발생했는지 모르는 상태라면 신뢰하기 어렵습니다. 매번 인간이 맥락을 설명해줘야 하고, 결과물을 검토해줘야 합니다. 인턴이 아무리 똑똑해도, 팀 상황을 모르면 혼자 일을 맡기기 어려운 것과 같습니다.\n\nCodex 팀이 그리는 다음 단계는 다릅니다. 에이전트가 팀 커뮤니케이션을 이해하고, 모니터링 도구를 보고, 맥락을 파악한 상태에서 일하는 것 입니다. Alexander는 이를 “Chatter-driven development\"라고 불렀습니다. 스펙 문서 없이, Slack 대화와 미팅 맥락만으로 코드가 작성되는 세상입니다.\n\nOpenAI 내부에서는 이미 비슷한 실험이 진행 중입니다. Codex가 자체 학습 인프라를 모니터링하면서, 학습 그래프에 이상 징후가 감지되면 스스로 대응하는 구조입니다. 원래 학습 과정을 \"베이비시팅\"하던 건 인간의 역할이었습니다. 학습 비용이 비싸고, 문제가 생기면 빨리 대응해야 했습니다. 이제 Codex가 그 역할을 대신합니다. 에이전트가 맥락을 이해하고, 스스로 검증까지 한다면? 인간이 개입해야 할 지점이 크게 줄어듭니다.\n\n3. 코딩 에이전트의 다음 단계는 무엇일까요?\n\nAI 모델의 성능보다는 인간의 타이핑 속도, 인간의 멀티태스킹 속도가 병목이라고 합니다. 에이전트가 하루에 수천 번 도움을 줄 수 있다고 하더라도, 매번 \"이거 괜찮아요?\"라고 승인을 요청한다면 인간이 처리할 수 있는 한계를 금방 넘어섭니다. 하루에 천 개의 푸시 알림을 받는 상황입니다. 결국 문제는 모델이 충분히 똑똑하지 않아서라기 보다는, 인간이 모델의 출력물을 검토하고 승인하는 속도가 병목이 되고 있습니다.\n\n그의 전망에 따르면, 내년부터 얼리 어답터들의 생산성이 급격히 올라가기 시작한다고 합니다. 새로운 스택 위에서 시작하는 스타트업들은 에이전트가 훨씬 자율적으로 작동하는 환경을 구축할 수 있습니다. 레거시 시스템이 많은 대기업은 시간이 더 걸리겠지만, 이후 몇 년에 걸쳐 점점 더 큰 조직들이 그 흐름을 따라갈 것입니다.\n\n결국 코딩 에이전트의 다음 단계는 \"더 똑똑한 모델\"이 아니라 \"인간 개입을 최소화하는 시스템”이 됩니다. 에이전트가 맥락을 이해하고, 스스로 검증하고, 필요할 때만 인간에게 물어보는 구조. Codex 팀은 그 방향으로 움직이고 있습니다.",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7408959519537426432?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7408959519537426432%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "CAIO & Deputy CEO @ Channel Corp | AI × B2B SaaS",
-      "images": [],
-      "user_link": "https://www.linkedin.com/in/ACoAAA5RhH4BjDv2vMF1Onz2ppvG6jeLmEGo93E",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "text",
-      "source": "network",
-      "sequence_id": 70,
-      "sns_platform": "linkedin"
-    },
-    {
-      "index": 73,
-      "code": "7411152720650227712",
-      "username": "정구봉 Goobong Jeong",
-      "created_at": "2025-12-29 06:15:01",
-      "time_text": "1개월",
-      "full_text": "Claude Code, Codex 같은 툴은 \"의식적으로\" 사용법을 익혀야 합니다. 잘 쓰는 사람과 못 쓰는 사람의 격차가 점점 벌어지고 있습니다.\n\n올해를 돌아보며, OpenAI와 Anthropic이 내부 활용 사례로 만든 공식 문서를 다시 찾아봤습니다.\n둘 다 몇 달 된 문서라 outdated 된 내용이 있지만, official 문서는 클래식이죠.\n\n\"How OpenAI uses Codex\" (12p) https://lnkd.in/gUTKxxcH\n- 7개 use case: 코드 이해, 리팩토링, 성능 최적화, 테스트, 개발 속도, 몰입 유지, 탐색\n- 핵심: \"1시간 분량, 수백 줄 코드\" 정도의 well-scoped task에 최적화\n- 팁: Ask Mode로 계획 → Code Mode로 구현\n\n\"How Anthropic teams use Claude Code\" (22p) https://lnkd.in/gxt_8i6Y\n- 10개 팀 사례: 개발팀뿐 아니라 마케팅, 디자인, 법무팀까지\n- 핵심: 비개발자도 \"나도 개발자가 됐다\" 경험\n\n두 문서의 공통점\n\n1. 코드 이해가 1순위\n낯선 코드베이스 탐색, 온보딩, 인시던트 대응에서 가장 큰 효과\n2. 문서화 파일이 핵심\nAGENTS.md, Claude.md \"문서화를 잘 해놓을수록 성능이 좋다\"\n3. Plan → Code 워크플로우\n바로 코드 짜달라고 하지 말고, 먼저 계획을 세우게 하라\n4. 자주 커밋, 롤백 준비\n\"슬롯머신처럼 써라. 안 되면 리셋하고 다시 시작\"\n5. 백그라운드 활용\n회의 중에도 에이전트가 작업. 컨텍스트 스위칭 비용 감소\n\n이제 AI를 잘 쓰려면 \"어떻게 쓰는게 Best Practice인지\"를 의식적으로 배워야 합니다. 딸깍해서 나오는 시기는 끝났습니다.",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7411152720650227712?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7411152720650227712%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "Claude Code for all of your work",
+      "full_text": "조금 귀찮지만 아래 방법으로 노트북LM을 사용해 보세요.\n\n1) 깃허브 사이트로 이동합니다. https://lnkd.in/gJJBrVRY\n2) 폴드LM이라는 기능인데 여러분들의 노트북LM에 폴더를 만들어 줍니다.\n3) 가이드에도 나와 있지만 소스 파일을 다운 받은 다음 chrome://extensions 사이트를 열고 받은 소스파일을 업로드 합니다. (자세한 설명은 깃허브를 보세요)\n4) 그럼 아래 이미지처럼 노트북LM에 폴더를 만들고 자신의 노트를 드래그앤드랍 해서 이동시킬수 있습니다.",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7415022011720318978?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7415022011720318978%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "숙명여대 겸임교수, Firb AI 연구소장",
       "images": [
-        "https://media.licdn.com/dms/image/v2/D5622AQHBJhZu7yj6RQ/feedshare-shrink_2048_1536/B56Ztlc3mrGsA0-/0/1766933625991?e=1772064000&v=beta&t=SpgpiaoPhag5QO1pKbKcdYRhsICI87Hze835NYdHCfc"
+        "https://media.licdn.com/dms/image/v2/D5622AQGX82zdCwUxuw/feedshare-shrink_2048_1536/B56ZudzOCvHgAw-/0/1767879010928?e=1772064000&v=beta&t=ibnL3VZbALK8c5QW8NX2_ymHa9CETTCq-D9sAen_AxA"
       ],
-      "user_link": "https://www.linkedin.com/in/ACoAACY7KJQBDtSTk6IuIwZY6ntBGJx1fCYwsYI",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "user_link": "https://www.linkedin.com/in/ACoAAAwBOVMBDI50rE9wyD4tsMaGWkV-85Sqd50",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "image",
       "source": "network",
-      "sequence_id": 80,
+      "sequence_id": 99,
       "sns_platform": "linkedin",
       "local_images": [
-        "web_viewer/images/cafda83b0cccb3b33d0ca97061e4b47a.jpg"
+        "web_viewer/images/bad8ab7129aa357a7f0a24adc4e5be94.jpg"
       ]
     },
     {
-      "index": 74,
-      "code": "7411399227337150464",
-      "username": "BZCF - 비즈까페",
-      "created_at": "2025-12-29 22:34:32",
+      "code": "7414605299321495552",
+      "username": "류장근",
+      "created_at": "2026-01-07 18:54:20",
       "time_text": "1개월",
-      "full_text": "”모든 사람을 유혹하려 하지 마라. 결핍을 갈망하는 대상을 골라라.“\n\n유혹은 에너지를 쏟을 가치가 있는 대상을 고르는 것에서 시작된다. 삶에 지루함을 느끼거나 고독에 젖은 자가 주 타겟이다.\n\n카사노바는 항상 변화를 갈망하는 여성을 목표로 삼아 백발백중의 성공을 거뒀다.\n저항할 수 없는 상대를 고르는 것이 유혹의 절반이다.\n\n<로버트 그린 - 유혹의 법칙>\n\n인스타그램 : https://lnkd.in/gaRyDD3j",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7411399227337150464?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7411399227337150464%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "full_text": "AI 시대, 진짜 돈 버는 사람은 누구일까요?\n기술을 만드는 사람? 아니면… 인프라를 만드는 사람?\n\n요즘 AI 관련 뉴스를 보면\n마치 매일 혁명이 일어나는 기분입니다.\n\n새로운 AI모델이 쏟아져 나오고,\n전세계에서 수조 원 단위의 투자가 이어지고,\n기업들도 앞다퉈 AI를 접목한 제품을 출시하죠.\n\n하지만 이런 흐름 속에서\n문득, 예전 혁신의 순간들을 떠올려봤습니다.\n\n1,849년 골드러시,\n많은 이들이 금을 캐러 갔지만\n실제로 돈을 번 건 대부분 금을 캐지 않은 사람들이었습니다.\n\n예를 들어, 광부들이 입을 튼튼한 바지가 필요하다는 걸 알아챈\n리바이스(Levi’s).\n그들이 만든 청바지는 당시엔 '부차적인 것'처럼 보였지만,\n결국은 모두에게 필요한 인프라였습니다.\n\n철도 혁명 때도 비슷했습니다.\n수많은 철도 회사들이 등장했지만,\n진짜 부를 만든 건 철도 부품과 자본을 공급한 앤드류 카네기였고,\n\nPC 혁명 땐,표준 PC를 만든 IBM이 아닌\n핵심 기술을 표준화한 인텔과 마이크로소프트가 생태계를 장악했습니다.\n\n인터넷 시대도 마찬가지였죠.\n초기 포털들이 쏟아졌지만\n결국 검색을 지배한 구글이 모든 흐름의 중심이 됐습니다.\n\n이 모든 사례가 말해주는 건 아주 단순합니다.\n\n\"기술 자체보다,\n그 기술 위에서 모두가 필요로 하는 걸 만든 이들이\n결국 승자가 된다.\"\n\n그렇다면 이제 질문을 이렇게 바꿔볼게요.\n\"AI 시대의 리바이스는 누구일까?\"\n\n개인적으로는\nAI 기술 그 자체보다 아래와 같은 레이어들에서\n미래의 승자들이 나올 거라 생각합니다.\n\n1. 데이터 레이어\n: 모델은 오픈돼도,\n좋은 데이터를 가진 쪽은 쉽게 무너지지 않습니다.\n\n2. 검증/규제 대응 레이어\n: AI가 확산될수록,\n규제를 자동으로 대응하는 인프라의 중요성은 커질 겁니다.\n\n3. 도메인 특화 애플리케이션\n: 누구나 만들 수 있는 챗봇이 아니라,\n고유 데이터를 쌓아가는 제품이 진짜 경쟁력을 가집니다.\n\n4. 에이전트 오케스트레이션\n: 여러 모델과 서비스를 유기적으로 연결해주는 플랫폼.\n앞으로 이 영역이 AI 생태계의 ‘중추’가 될 수도 있습니다.\n\n👀 저희 바티팀도 이런 관점에서\n우리가 만들 수 있는 가치를 고민하고 있습니다.\n\n✔ AI를 그저 붙이는 게 아니라,\n제품의 작동 원리 그 자체로 녹여내는 것.\n✔ 모두가 다투는 범용 AI보다,\n우리가 더 잘할 수 있는 커머스 도메인 자동화에 집중하는 것.\n✔ ‘넓고 얕은 것’보다,\n‘좁고 깊은 문제’를 먼저 푸는 것.\n\n퍼블리 박소령 대표님의 책 《실패를 통과하는 일》에서 본 한 문장이 떠올랐습니다.\n\n\"비타민이 아니라, 진통제를 팔아야 한다.\"\n\n멋져 보이는 기능, 새로워 보이는 기술보다\n당장 고통스러운 문제를 풀어주는 것.\n\n진짜로 귀찮고, 복잡하고, 반복적인 일을\n단순하고 명확하게 해결해주는 것.\n\n그게 결국,\n고객이 정말로 지갑을 여는 이유이자\n우리가 만들 제품의 기준이 되어야 한다는 생각이 듭니다.\n\n기술은 매일 새롭지만,\n기술이 ‘부’를 만든 방식은 놀라울 만큼 오래된 패턴을 따릅니다.\n\n이번에도 결국 이길 쪽은\n모두에게 필요한 걸 묵묵히 만들어가는 사람들이 아닐까요?",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7414605299321495552?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7414605299321495552%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "CEO @ BATI.AI | Global Commerce Intelligence for Beauty Brands",
+      "images": [
+        "https://media.licdn.com/dms/image/v2/D5622AQH1JFzisi_iOA/feedshare-shrink_2048_1536/B56ZuX4NmuHgAw-/0/1767779658852?e=1772064000&v=beta&t=Va4yFC-nOtlIkal2NUMeT4lO21BYKxy4xFh2kxe1kHo"
+      ],
+      "user_link": "https://www.linkedin.com/in/ACoAACZfqCcB7Tmya601YQuGRqiAzlUKO_u-pro",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "image",
+      "source": "network",
+      "sequence_id": 98,
+      "sns_platform": "linkedin",
+      "local_images": [
+        "web_viewer/images/8309847aca5e70433069760b7d256cec.jpg"
+      ]
+    },
+    {
+      "code": "7414417993180303360",
+      "username": "Kyunghun Lee",
+      "created_at": "2026-01-07 06:30:02",
+      "time_text": "1개월",
+      "full_text": "끝난 줄 알았던 AI 코딩 도구 경쟁, 1인 개발자가 뒤집었습니다\n\nAI 코딩 도구 시장은 어느정도 결판이 난 게임처럼 보였습니다. Anthropic은 수십억 달러를 투자받아 Claude Code를 출시했습니다. OpenAI에서도 Codex를 내놓았습니다. Cursor는 수억 달러를 유치했습니다. 자본, 인력, 데이터. 개인이 이길 방법이 없어 보였습니다. 그런데 지금 개발자 커뮤니티에서 센세이션이 일어나고 있습니다.\n\n1. 한국 개발자 1명, GitHub 스타 9,000개\n\nOh My OpenCode. 얼마 전 등장해 빠르게 성장하고 있는 AI 코딩 도구 플러그인입니다. GitHub 스타 9,000개를 돌파했고, 지금도 매일 늘어나고 있습니다. 이 프로젝트를 이끈 분은 Indent Corporation에서 소프트웨어 엔지니어로 있으신 김연규 님입니다. 팀이 아닙니다. 1인 개발입니다. 사용자들의 반응은 열광적입니다. 한 퀀트 연구원은 이렇게 말했습니다. \"사람이 3개월 걸리는 일을 Claude Code는 7일에, 이 도구는 1시간에 끝냅니다. 작업이 끝날 때까지 멈추지 않습니다.\" 빅테크가 수십억 달러를 투자한 영역에서 1인 개발자가 엄청난 반응을 얻고 있습니다. 어떻게 가능했을까요?\n\n2. 오픈소스 플랫폼과 AI가 있었습니다\n\n연규 님은 처음부터 만들지 않았습니다. OpenCode라는 오픈소스 플랫폼 위에 올라탔습니다. OpenCode는 SST를 만들었던 소규모 팀이 2025년 6월 출시한 AI 코딩 에이전트입니다. GitHub 스타 3만 개 이상, 컨트리뷰터 290여 명. 핵심 특징은 특정 AI 모델에 종속되지 않는다는 것입니다. Claude, GPT, Gemini, 로컬 모델까지 무엇이든 연결할 수 있습니다.\n\n연규 님은 이 플랫폼 위에서 24,000달러어치의 LLM 토큰을 소모하며 Oh My OpenCode를 만들었습니다. AI와 함께 AI 도구를 만든 것입니다. 일반적인 AI 코딩 도구는 사람이 AI에게 지시합니다. Oh My OpenCode는 AI가 AI를 조율합니다. 메인 에이전트가 개발팀 리드 역할을 합니다. 작업을 파악하고, 적합한 AI 모델을 호출합니다. 아키텍처 설계가 필요하면 논리에 강한 GPT를 부릅니다. 코드베이스 분석이 필요하면 맥락 파악에 뛰어난 Claude를 부릅니다. 프론트엔드 작업은 UI 생성에 탁월한 Gemini에게 넘깁니다. 이 모든 과정이 백그라운드에서 병렬로 실행됩니다. 그리고 작업이 완료될 때까지 멈추지 않습니다. 연규 님이 README에 적어둔 문장이 있습니다. \"생산성이 너무 올라 갈 수 있습니다. 옆자리 동료한테 들키지 않도록 조심하세요.\"\n\n3. 작아 보이는 빈틈, 파고들면 거대해집니다\n\n완벽해 보이는 시장에도 빈틈은 있습니다. Claude Code, Codex, Cursor. 수십억 달러가 투입된 제품들입니다. 사용자의 니즈를 철저히 분석하고, 최고의 인력들이 개발했습니다. 빈틈이 없어 보입니다. 하지만 연규 님은 빈틈을 찾았습니다. 기존 도구들은 하나의 모델이 순차적으로 작업합니다. 사람이 지시하고, AI가 실행하고, 다시 사람이 확인합니다.\n\nOh My OpenCode는 다르게 접근했습니다. 각 AI 모델에는 강점이 있습니다. GPT는 논리에 강하고, Claude는 맥락 파악에 뛰어나고, Gemini는 UI 생성에 탁월합니다. 이 강점을 살려서 가장 잘하는 작업에 배치하면? 그리고 이 배치와 조율까지 AI가 스스로 하면? 작아 보이는 빈틈이었습니다. 하지만 파고들자 구멍이 커졌습니다. \"7일 걸리는 작업을 1시간에 끝낸다\"는 반응이 나왔습니다. 9,000개의 GitHub 스타가 이 빈틈의 크기를 증명합니다.\n\n예전이었다면 불가능했을 것입니다. 빈틈이 보여도 한 명이 파고드는 것 자체가 어려웠습니다. 기반 인프라를 만드는 데만 팀 단위의 인력과 수개월이 필요했으니까요. 지금은 다릅니다. 오픈소스 플랫폼이 기반을 제공합니다. AI가 개발 속도를 높입니다. 24,000달러어치 토큰이면 1명이 팀처럼 일할 수 있습니다. 그리고 Oh My OpenCode 같은 도구가 나오면? 이 흐름은 더 가속화됩니다. AI가 최고 성능을 발휘하는 조합을 찾은 도구로, 또 다른 빈틈을 파고드는 사람이 나올 것입니다.\n\n어느 시장도 안심할 수 없습니다. AI 네이티브 인재 한 명, 혹은 작은 조직이 언제든 시장을 뒤집을 수 있는 시대가 되었습니다.",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7414417993180303360?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7414417993180303360%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "CAIO & Deputy CEO @ Channel Corp | AI × B2B SaaS",
+      "images": [
+        "https://media.licdn.com/dms/image/v2/D5622AQGpcvVboh_qyg/feedshare-shrink_2048_1536/B56ZuTdrfpGsAw-/0/1767705591054?e=1772064000&v=beta&t=xlwrB7RwTugS10NXbal1VFGcBnvImRnTQCT34eVufCs"
+      ],
+      "user_link": "https://www.linkedin.com/in/ACoAAA5RhH4BjDv2vMF1Onz2ppvG6jeLmEGo93E",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "image",
+      "source": "network",
+      "sequence_id": 97,
+      "sns_platform": "linkedin",
+      "local_images": [
+        "web_viewer/images/6a23473e214015d67848095904c11a69.jpg"
+      ]
+    },
+    {
+      "code": "7414175957487562752",
+      "username": "홍민지Hong Minji",
+      "created_at": "2026-01-06 14:28:16",
+      "time_text": "1개월",
+      "full_text": "새해 업무, 노션 세팅으로 시작했습니다. 제 개인 업무 관리 최적화 방법을 공유합니다!\n\n1. DB 구조 : 상위 개념인 Project DB와 일일 업무를 관리하는 Works DB로 나눕니다. 일일 업무는 '완료'가 명확하도록 단위별로 잘게 쪼개는 것이 핵심입니다. 그래야 태스크의 과중과 실행 관계를 파악하기 좋습니다.\n\n2. DB 연결 : 쪼개진 태스크(Works)를 상위 프로젝트(Project)와 연결해둡니다. 이렇게 하면 개별 태스크 관리와 프로젝트 관리가 서로 연동되어, 현재 내가 어떤 프로젝트에 집중하고 있는지 숲과 나무를 동시에 볼 수 있습니다.\n\n3. MCP : 노션 MCP를 연결해 클로드 코드로 관리하니 일괄 수정과 업무 분석이 정말 편합니다. 작년 커뮤니티 팀 업무를 분석해보니 [마케팅 30%, 디자인 25%, 운영 25%, 영상 제작 20%]로 골고루 분포되어 있어 흥미로웠습니다.\n\n올해는 DB 구조를 좀 더 발전시켜, 업무 과정의 인사이트와 레슨런까지 기록해 실질적인 성장을 돕는 업무관리 시스템으로 만들어보려 합니다.\n\n#Notion #MCP #업무관리 #업무효율화",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7414175957487562752?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7414175957487562752%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "Creative Marketer @MODULABS AX",
+      "images": [
+        "https://media.licdn.com/dms/image/v2/D5622AQFy16kZLNDQQQ/feedshare-shrink_2048_1536/B56ZuRxvjNJMAw-/0/1767677295439?e=1772064000&v=beta&t=98kvEc2QoYat7OM84cydQKGKZPYXdUiX7UjqS5PPw68"
+      ],
+      "user_link": "https://www.linkedin.com/in/ACoAADhcEVQBJOMtD7wMMWcOw9aFJeD_ao2VW0Y",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "image",
+      "source": "network",
+      "sequence_id": 96,
+      "sns_platform": "linkedin",
+      "local_images": [
+        "web_viewer/images/e92aeb0aea15c7ee86c853eebb2e93aa.jpg"
+      ]
+    },
+    {
+      "code": "7414070699071442944",
+      "username": "Jeongmin Lee",
+      "created_at": "2026-01-06 07:30:01",
+      "time_text": "1개월",
+      "full_text": "🧠 메타가 4조원에 인수한 마누스, 그 핵심 기술이 오픈소스로 풀렸습니다\n\nAI 에이전트를 써보신 분들은 아실 겁니다. 복잡한 작업을 맡기면 어느 순간 처음 요청과 전혀 다른 방향으로 가고 있는 AI를 발견하게 되죠.\n\n이건 사용자의 문제가 아닙니다. 대규모 언어 모델(LLM, Large Language Model)이 가진 구조적 한계입니다.\n\n메타(Meta)가 25억 달러에 인수한 마누스(Manus)는 바로 이 문제를 해결한 회사였습니다. 그리고 최근 한 개발자가 마누스의 핵심 원리를 클로드 코드(Claude Code)용 오픈 소스로 구현해 공개 3일 만에 깃허브(GitHub) 스타 1,000개 가까이 기록했습니다.\n\n1️⃣ 문제의 본질 - 왜 AI 에이전트는 목표를 잊어버리는가\n\nLLM에는 컨텍스트 윈도우(Context Window)라는 작업 메모리 한계가 존재합니다.\n\n• 대화가 길어질수록 초기에 설정한 목표가 맥락에서 밀려남\n• 중요한 정보가 어텐션(Attention) 범위 밖으로 사라짐\n• 결과적으로 원래 요청과 다른 방향으로 작업이 진행됨\n\n이 현상을 목표 표류(Goal Drift)라고 부릅니다. 50회 이상의 도구 호출이 이어지면 거의 필연적으로 발생하는 문제입니다.\n\n2️⃣ 마누스의 해법 - 파일 시스템을 외부 메모리로 활용\n\n마누스가 찾은 해답은 의외로 단순했습니다. AI에게 메모하게 만드는 것이죠.\n\n• 파일 시스템을 AI의 영구 기억 저장소로 활용\n• 컨텍스트 윈도우의 물리적 한계를 우회\n• 필요할 때마다 저장된 정보를 다시 불러와 참조\n\n이 접근법은 컨텍스트 엔지니어링(Context Engineering)을 구성하는 한 가지 방식입니다.\n\n3️⃣ 오픈소스 구현 - 3-파일 메모리 시스템의 구조\n\n'planning-with-files' 라는 이름의 이 클로드 스킬(Claude Skill)은 마누스의 원리를 세 개의 파일로 구현합니다.\n\n• task_plan.md - 목표, 진행 단계, 에러 로그를 담은 마스터 플랜. 모든 주요 결정 전에 이 파일을 읽도록 설계됨\n• notes.md - 리서치 결과와 중간 데이터를 저장하는 공간. 컨텍스트 윈도우 과부하를 방지함\n• [deliverable].md - 최종 산출물을 담는 파일\n\n4️⃣ 핵심 메커니즘 - 결정 전 계획 파일 재참조\n\n이 시스템의 가장 중요한 규칙은 다음과 같습니다.\n\n\"Before any major decision, read the plan file.\" 모든 주요 결정 전에 계획 파일을 다시 읽어라.\n\n• LLM의 어텐션 메커니즘(Attention Mechanism)은 가장 최근 입력된 정보에 강하게 반응함\n• 결정 직전에 task_plan.md를 읽으면 원래 목표가 최신 컨텍스트로 복원됨\n• 더 긴 컨텍스트 윈도우가 아닌, 정보 배치의 최적화로 문제를 해결함\n\n5️⃣ 에러 처리 설계 - 무한 재시도 루프의 차단\n\n또 하나의 핵심 설계는 에러 기록 강제입니다.\n\n• 에러 발생 시 task_plan.md의 에러 섹션에 반드시 기록하도록 지시\n• AI가 실패를 명시적으로 인정하게 만듦\n• 동일한 실수의 반복 대신 계획 수정으로 유도\n• 디버깅에 필요한 로그가 자동으로 축적됨\n\n6️⃣ 시사점 - AI 에이전트 성능의 새로운 기준\n\n3일 만에 1,000 스타 가까이 기록한 이유는 명확합니다. 수조원 규모의 기술적 통찰을 누구나 쉽게 활용할 수 있게 되었기 때문입니다.\n\n이 사례가 보여주는 것은 AI 에이전트의 성능이 모델의 크기나 파라미터 수가 아닌 메모리 아키텍처 설계에 달려 있다는 점입니다.\n\nhttps://lnkd.in/gByS5U59",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7414070699071442944?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7414070699071442944%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "Building with AI @ Smoretalk | Control opinions with AI",
+      "images": [],
+      "user_link": "https://www.linkedin.com/in/ACoAACkadIABsYoadkJXuZXMASkhnSFeoK_nVw8",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "text",
+      "source": "network",
+      "sequence_id": 95,
+      "sns_platform": "linkedin"
+    },
+    {
+      "code": "7413907038138904577",
+      "username": "Josh Kim",
+      "created_at": "2026-01-05 20:39:41",
+      "time_text": "1개월",
+      "full_text": "클로드 코드로 마케팅 팀을 만들어보고 있다.\n\n'OO에 대해 콘텐츠 만들어줘'라고 하면\n뉴스레터, 블로그, 쇼츠, 스레드 글, 카드뉴스, 썸네일,\n모두 병렬로 한번에 가이드라인 맞춰서 제작된다.\n\n노드 연결과 개발 지식은 거의 필요가 없다.\n\n26년엔, 진짜로 '팀 단위 AI 에이전트'를\n만들어 일하는 사람들이 더 많이 탄생할 것 같다.\n\n'지휘가 AI'는 최초에 일을 뿌리는 역할을 하고,\n'검수 AI'가 최종 결과물을 리뷰하고 일을 다시 시킨다.\n(여기에 '심사역'들도 추가할 예정)\n\n하나씩 '아주 잘 만드는 에이전트'를 만드는 데에는\n물론 시간이 들지만, 이것도 시간문제다.\n\n나는 대체 무슨 세상에 살고 있는가.",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7413907038138904577?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7413907038138904577%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "AI 크리에이터 조쉬입니다. ex-SKT 프로덕트 디자이너",
+      "images": [
+        "https://media.licdn.com/dms/image/v2/D5622AQH8vDg9n_NJ2g/feedshare-shrink_2048_1536/B56ZuN9KhGGsAw-/0/1767613180896?e=1772064000&v=beta&t=qjw2GpzdZZGdeJZtM2LfeZr6fSfTpE5-t23N5a3uJHA"
+      ],
+      "user_link": "https://www.linkedin.com/in/ACoAAAfst4QBZ_TBpSZb5m5EitKHc3H5PhUbe5E",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "image",
+      "source": "network",
+      "sequence_id": 94,
+      "sns_platform": "linkedin",
+      "local_images": [
+        "web_viewer/images/eb8d9737c76b8b11b8426e41175c84e7.jpg"
+      ]
+    },
+    {
+      "code": "7413738759403298816",
+      "username": "BZCF - 비즈까페",
+      "created_at": "2026-01-05 09:31:00",
+      "time_text": "1개월",
+      "full_text": "세상은 ‘나보다 똑똑하지 않은 사람들’이 만들었다\n\n당신이 당연시 여기는 이 세상의 모든 것들, 즉 법, 도덕, 시스템, 가치관은 모두 당신보다 똑똑할 것도 없는 평범한 인간들이 만든 것이다.\n\n지금의 학교 시스템조차 150년 전 공장주들이 말 잘 듣는 노동자를 찍어내기 위해 설계한 틀이다. 당신의 삶을 구속하는 그 거대한 벽들은 사실 언제든 허물 수 있는 모래성이다.\n\n인스타그램 : https://lnkd.in/g39aSC-x",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7413738759403298816?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7413738759403298816%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
       "profile_slogan": "BZCF",
       "images": [
-        "https://media.licdn.com/dms/image/v2/D5622AQFbNMwPTfdyOQ/feedshare-shrink_2048_1536/B56ZtqUNycG0Aw-/0/1767015268836?e=1772064000&v=beta&t=bqKoB4X7ymJWojVw9qckg6LjSLr-qX3w1VsHMhEmUy4"
+        "https://media.licdn.com/dms/image/v2/D5622AQE6iwFN5_7IJA/feedshare-shrink_2048_1536/B56ZuLkFIhHgAw-/0/1767573057328?e=1772064000&v=beta&t=Xh-w1_X058MVUPA6X2Yoih21uzcNFIqMBv5f2f62mac"
       ],
       "user_link": "https://www.linkedin.com/in/ACoAADosSpABPU4--68Ki5nk1NUfCtpau6AMoJs",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "image",
       "source": "network",
-      "sequence_id": 87,
+      "sequence_id": 93,
       "sns_platform": "linkedin",
       "local_images": [
-        "web_viewer/images/0d5401d8708407143020e7ddc5925598.jpg"
+        "web_viewer/images/f59b1872e45054fdcd4b4d3bf8a23e53.jpg"
       ]
     },
     {
-      "index": 75,
-      "code": "7411303033344692224",
-      "username": "Josh Kim",
-      "created_at": "2025-12-29 16:12:18",
+      "code": "7413704535048908801",
+      "username": "정구봉 Goobong Jeong",
+      "created_at": "2026-01-05 07:15:01",
       "time_text": "1개월",
-      "full_text": "(아무도 안보는)\n나의 12월 회고와 노력을 기록해본다.\n일부러 가독성 낮춰 어렵게 써본다.\n조회수가 아주 낮을 것이다.\n\n1. 유튜브 50일만에 1만 구독자를 기록했다.\n나조차 믿지 못했던 1만 구독자를 진짜 실현했다. 스레드, 링크드인, X, 뉴스레터 등에서 접한 '최적화' 기법이 즉시 먹혔다. 5-6개 기획을 한꺼번에 실험해보고 그 중 잘되는 포맷과 키워드에 집중하는 것이다. 인터넷 세계는 결국 키워드 싸움인데, '니치 키워드'를 잡고 소위 말하는 '조지기'에 들어가니 정확히 먹혔다. '그냥 실행'보다 '전략적 실행'이 중요하다.\n\n2. '1만'이라는 숫자에 집착한 이유\n드러나는 숫자의 효과는 의외로 크다. 1만을 넘기면 기업의 제안이 온다는 걸 알았다. 광고주 혹은 기업체들은 숫자로 판단하고, 내부 승인을 받는다. 1만 이하는 승인을 받기가 어렵고, 작은 광고주들로 가득하다. 26년엔 더 많은 기업강의를 갈 예정이었는데, 26년에는 더 많은 제안들이 있을 것 같아 기대된다.\n\n3. 유튜브 덕분에 엄청난 협업들이 오고 있다.\nManus, Genspark, MKYU(김미경 대표님)과 협업, 책출간, Class101, 기업강의 제안 5건, 그 외 하루 2번씩 오는 광고 문의는 모두 유튜브 덕분이다. 크리에이터는 하루종일 제안을 받게 된다. 유튜브는 그것을 가속화한다. 안할 이유가 없는 최고의 투자다.\n\n4. Supanova(디자인 제품) 공동창업자를 구했다.\n나의 디자인 SaaS인 Supanova는 이미 개발을 1차로 끝냈다. 대기자만 250명이 넘는데, MVP를 그대로 배포해도 되었지만, 더 안정적인 개발과 운영을 하고 싶었다. 지난번 DividendPro 배포 때 수많은 개발자들의 F12 탐색과 솔직히 유쾌한 경험은 아니었다.\n\n이미 글로벌 SaaS 런칭을 수없이 경험해본 대표님과 이 작업을 함께 하기로 했다. 1월 중 초기 버전이 나오고, 더 안정적으로 서비스를 운영하여, 월 1억의 MRR을 26년 달성해보기로 했다.\n\n26년의 목표는 이미 적어놓았다. 둘째가 태어나니 몸을 잘 사리고, 체력을 유지하고, 25년의 스탠스를 잘 유지하여 '길게 사업하기'와 '가족 챙기기'를 목표로 더 천천히 나아가기로 했다.",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7411303033344692224?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7411303033344692224%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "AI 크리에이터 조쉬입니다. ex-SKT 프로덕트 디자이너",
+      "full_text": "X에서 프론티어들이 말하는 걸 보고, 주변에서 정말 잘 쓰는 사람을 보면서 깨달았습니다. 이건 이제 배워야 하는 영역인데, 절대 쉽지 않습니다. Claude Code를 만든 Boris는 터미널에서 5개, 웹에서 10개. 15개의 Claude를 동시에 돌립니다.\n\n가을까지만 해도 저는 이렇게 말하고 다녔습니다.\n\"Claude Code 숙련도? 그냥 AI랑 대화 잘하면 되는 거 아니야?\"\n\n틀렸습니다.\n\n안드레이 카파시가 연말에 말한 것처럼, 새롭게 코딩하는 방식은 AI와 잘 대화하는 멘탈 모델을 뛰어넘었습니다.\n\n---\n\nBoris가 며칠 전 X에 자신의 워크플로우를 공개했습니다.\nhttps://lnkd.in/ghw4Ym6r\n\n1. 대부분의 세션은 Plan mode로 시작한다. 좋은 계획이 있으면 Claude가 one-shot으로 해낸다\n2. 매일 수십 번 쓰는 워크플로우는 slash command로 만들어둔다\n3. PostToolUse hook으로 코드 포맷팅을 자동화한다\n4. 오래 걸리는 작업은 background agent나 Stop hook으로 검증한다\n\n핵심은 마지막 문장이었습니다.\n\"Claude에게 자기 작업을 검증할 방법을 주면, 결과 품질이 2-3배 올라간다.\"\n\n---\n\noh my opencode라는 프로젝트도 있습니다.\nhttps://lnkd.in/g9AQjv5v\nGPT 5.2로 설계하고, Gemini 3 Pro로 프론트엔드 쓰고, Claude Opus 4.5로 백엔드 쓰고.\n막히면 다른 모델에게 도움받고, 완료되면 다시 검토시킵니다.\n\n이 프로젝트가 말하는 핵심 개념이 있습니다.\n\"당신의 에이전트는 이제 개발팀 리드입니다. 당신은 AI Manager입니다.\"\n\n---\n\n저도 이렇게 일합니다.\n\nclarify라는 스킬을 만들었습니다.\n\"clarify\"라고 한 마디 하면, Claude가 AskUserQuestion으로 3단계 질문을 던집니다.\n저는 엔터만 치면서 모호함을 없앱니다.\n\nvideo-subtitle이라는 스킬도 있습니다.\n영상 하나 던지면 3개의 서브에이전트가 순차적으로 돌아갑니다.\nsubtitle-generator가 STT로 추출하고, subtitle-cleaner가 중복을 정리하고, subtitle-corrector가 발표자료 보면서 오류를 교정합니다.\n\n이런 스킬과 에이전트들을 GitHub에 공개하고 있습니다.\nhttps://lnkd.in/gCspfYKR\n\n---\n\n이렇게 일하는 우리는 완전히 다른 고민을 합니다.\n\nSkill을 트리거해서 SubAgent를 부를지.\nAskUserQuestion을 어떻게 활용하게 할지.\n심지어 난독화된 Claude Code 코드를 에이전트에게 읽혀서 \"서브에이전트는 서브에이전트를 부를 수 없다\"는 제약을 알아내기도 합니다.\n\nClaude Code 리밋에 도달할 줄 아는 사람의 가치가 점점 높아집니다.\n이 사람은 LLM이 어떻게 동작하는지 알고, 목표를 LLM에 정렬할 줄 아는 인재이기 때문입니다.\n\n---\n\n이 새로운 방식을 체계적으로 배워야 합니다.\n하지만 배울 매뉴얼이 없습니다.\n\n그래서 프론티어에 있는 사람들이 뭉치게 되는 것 같습니다.\n우리끼리 있어야 서로 배울 게 있기 때문입니다.\n\n아주 작은 커뮤니티에서 서로 공유하면서 배우고 있는데, 진짜 자극을 많이 느낍니다.",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7413704535048908801?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7413704535048908801%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "Claude Code for all of your work",
       "images": [],
-      "user_link": "https://www.linkedin.com/in/ACoAAAfst4QBZ_TBpSZb5m5EitKHc3H5PhUbe5E",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "user_link": "https://www.linkedin.com/in/ACoAACY7KJQBDtSTk6IuIwZY6ntBGJx1fCYwsYI",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "text",
       "source": "network",
-      "sequence_id": 84,
+      "sequence_id": 92,
       "sns_platform": "linkedin"
     },
     {
-      "index": 76,
       "code": "7412526387820978176",
       "username": "Taehun Kim",
       "created_at": "2026-01-02 01:13:28",
@@ -5461,7 +5429,7 @@ const snsFeedData = {
         "https://media.licdn.com/dms/image/v2/D5622AQEh5b7kOjGL5w/feedshare-shrink_2048_1536/B56Zt6VdXLLAAw-/0/1767284007659?e=1772064000&v=beta&t=nAf5glr5y81hCQI-g32p9mdr6tivcsuR8Wv6F9EozA0"
       ],
       "user_link": "https://www.linkedin.com/in/ACoAAAyZz50BiI7Jj72d9AZko-Nxit9QS9xrrpk",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "image",
       "source": "network",
       "sequence_id": 91,
@@ -5471,29 +5439,6 @@ const snsFeedData = {
       ]
     },
     {
-      "index": 77,
-      "code": "7411896370925592576",
-      "username": "조여준 Ethan Cho",
-      "created_at": "2025-12-31 07:30:01",
-      "time_text": "1개월",
-      "full_text": "[2025 회고 ⑦] 사다리는 걷어차였다: '두 인류'의 탄생\n\n2025년, 우리는 인정해야 했다. \"노력하면 중산층이 될 수 있다\"는 20세기의 사회 계약이 완전히 파기되었음을.\n\n지난 1년간 사회는 단순히 빈부 격차가 벌어진 정도가 아니었다.\n\nAI와 바이오 기술(GLP-1 등)을 소유한 계급과, 그렇지 못한 계급 사이의 '건널 수 없는 강'이 확인된 해였다.\n\n사회학자들은 이를 '양극화'라 부르지만, 냉정하게 말하면 이것은 '분화(Speciation)'다.\n\n1. '평범한 인재'의 종말: 애매한 지능은 0원이다\n\n2024년까지만 해도 \"AI를 잘 쓰는 사람이 되라\"고 했다. 하지만 2025년 노동 시장은 더 잔인한 진실을 말해줬다.\n\n\"시스템을 설계(Architect)하거나, 시스템의 부품이 되거나. 중간은 없다.\"\n\n과거 중산층을 지탱해 주던 '적당한 사무직', '적당한 전문직'의 가치가 폭락했다. 엑셀을 다루고, 보고서를 요약하고, 코드를 리뷰하는 '중간 인지 노동'은 AI의 공짜 영역이 되었다.\n\n이제 사회는 극소수의 '레버리지 통제자(Leverage Controller)'와, 그들의 지시를 받는 단순 육체노동 혹은 대면 서비스직인 '필수 노동자'로 재편되었다.\n\n\"공부해서 남 주냐\"는 말은 옛말이다. 애매하게 공부한 머리는 이제 AI보다 비효율적인 '비용'일 뿐이다.\n\n2. 생물학적 계급(Biological Caste)의 등장\n\n과거의 불평등은 '사는 집'이나 '타는 차'가 다른 것이었다. 2025년의 불평등은 '몸'과 '뇌'가 다른 것으로 진화했다.\n\n* 통제된 몸: 앞서 GLP-1에서 다뤘듯, 부유층은 약물과 첨단 헬스케어로 날씬하고 건강한 신체를 '구독'한다.\n* 확장된 뇌: 그들은 개인화된 고성능 AI 에이전트(Personal Agent)를 비서로 둠으로써, 일반인보다 10배, 100배의 지적 생산성을 낸다.\n\n반면, 이 비용을 감당할 수 없는 계층은 값싼 정크푸드에 노출되어 비만이 되고, 무료 버전의 AI나 쳐다보며 정보의 격차에 허덕인다. 2025년, 가난은 단순히 돈이 없는 상태가 아니라, '더 뚱뚱하고, 더 멍청해질 수밖에 없는' 구조적 형벌이 되었다.\n\n3. '도파민 복지(Dopamine Welfare)': 희망 대신 쾌락을 허하라\n\n사다리가 걷어차인 것을 깨달은 대중이 폭동을 일으키지 않은 이유는 무엇일까?\n\n2025년의 시스템이 그들에게 '값싼 마취제'를 무제한으로 공급했기 때문이다.\n\n현실에서의 성취가 불가능해진 세대에게 사회는 무한한 숏폼 콘텐츠, 현실보다 더 자극적인 가상 연애 시뮬레이션, 그리고 저렴한 알코올을 쥐여주었다.\n\n국가와 자본은 이제 국민에게 '비전'을 제시하는 대신, '도파민'을 관리한다.\n\n\"꿈꾸지 마라, 대신 즐겁게 해 줄게.\"\n\n이것이 2025년 사회가 패배자들에게 건넨 침묵의 거래였다.\n\n[2025년 회고 시리즈를 마치며]\n\n금융 시장은 냉혹해졌고, IT는 무거워졌으며, 국제 질서는 야만으로 돌아갔고, 우리는 기후 위기를 잊기로 합의했습니다.\n\n그리고 그 결과, 사회는 두 개의 세상으로 쪼개졌습니다.\n\n이 7일간의 기록은 '낭만의 시대가 끝났다'는 선언문입니다.\n\n그렇다면 인간은 어떻게 살아야 할까요.\n\n인간의 존재 가치는 이제 무엇으로 설명될 수 있을까요.\n\n이 모든 것이 효율로 판단되는 시대에,\n끝까지 수치로 환산되지 않는 선택이 있습니다.\n\n나에게 이익이 되지 않는데도 시간을 내는 일,\n문제가 해결되지 않는데도 곁에 머무는 일,\n계산해 보면 분명 손해인데도 손을 놓지 않는 결정.\n\n알고리즘은 최적의 경로를 찾습니다.\n그 경로가 누군가를 밀어내는 길이라면, 주저하지 않습니다.\n\n하지만 인간은 가끔 다른 방향을 택합니다.\n효율이 아닌 이유로, 설명되지 않는 쪽으로.\n\n사다리가 걷어차인 세상에서\n끊어진 다리를 다시 잇는 것은\n기술도, 정책도 아니었습니다.\n\n대부분의 경우, 누군가가 먼저 손해를 감수했기 때문이었습니다.\n\n차갑게 잘 돌아가는 세상 속에서\n우리가 유의미한 존재라는 증거는\n언제나 이런 순간에 남아 있습니다.\n\n인간다움은 언제나 효율 바깥에서 시작됩니다.\n\n2025년 12월 31일\n애당초 조여준 씀.",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7411896370925592576?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7411896370925592576%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "CIO @ TheVentures | ex-Google, Samsung",
-      "images": [
-        "https://media.licdn.com/dms/image/v2/D5622AQF7CVYPESMV2g/feedshare-shrink_2048_1536/B56ZtX6NHeKgAw-/0/1766706435487?e=1772064000&v=beta&t=PWxGMiiwawuJ8gamuofAJJXKjMoCyKmeaAP6E1Zt7LM"
-      ],
-      "user_link": "https://www.linkedin.com/in/ACoAAARknekBOFFETpmlSPqmlb2P8ln4iACFaJg",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "image",
-      "source": "network",
-      "sequence_id": 88,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/e3d6e5d6b10abecc128b0cf0b95664d7.jpg"
-      ]
-    },
-    {
-      "index": 78,
       "code": "7412104574406209536",
       "username": "Peter Shin",
       "created_at": "2025-12-31 21:17:20",
@@ -5505,7 +5450,7 @@ const snsFeedData = {
         "https://media.licdn.com/dms/image/v2/D5622AQG3A5GeFrHcqg/feedshare-shrink_2048_1536/B56Zt0V0TXHAA0-/0/1767183439979?e=1772064000&v=beta&t=FrLDxbbgCaLR5veSfvmgoIhIk3sh1SfAuE4G1_KqI4o"
       ],
       "user_link": "https://www.linkedin.com/in/ACoAAB5PwL4BfEruqb9-_wIl8sZu1bXOYuHUiMo",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "image",
       "source": "network",
       "sequence_id": 90,
@@ -5515,178 +5460,69 @@ const snsFeedData = {
       ]
     },
     {
-      "index": 79,
-      "code": "7411209406790414336",
-      "username": "요즘IT",
-      "created_at": "2025-12-29 10:00:16",
-      "time_text": "1개월",
-      "full_text": "비개발자, 클로드 코드로 외주 개발 시작하기\n👉 https://lnkd.in/grjDatVi\n\n비개발자로서 바이브 코딩을 처음 시작하면, 만들고 싶은 게 있기 때문에 시간 가는 줄 모릅니다. 재미도 있고, '이걸로 돈을 벌어볼까?', '자동화를 해볼까?' 하는 기대감이 생기죠. 하지만 하다 보면 곧 현실의 벽에 부딪힙니다. 모르는 것이 생기고, 갑자기 프로그램이 동작하지 않으면, '역시 안 되네' 하고 결국 포기하는 경우도 있죠. 혹은 어렵게 제품을 만들어 출시를 하더라도, 아무도 알아봐 주지 않거나 생산성을 드라마틱하게 올려주지 못해 결국 돈이 안 되는 경우도 많습니다. 이렇게 되면 다음에 뭘 해야 할지 찾지 못하고, 열정이 고갈되어 포기하게 됩니다. 그래서 저는 이러한 열정 고갈을 막고, 바이브 코딩을 지속적으로 이어가기 위한 방법으로 외주 개발을 선택했습니다.\n\n#요즘IT #IT #AI #트렌드 #개발",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7411209406790414336?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7411209406790414336%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "팔로워 6천명",
-      "images": [
-        "https://media.licdn.com/dms/image/v2/D5610AQFweXTyyi2dlQ/image-shrink_1280/B56ZtnnrvKG4AQ-/0/1766970016314?e=1770976800&v=beta&t=eJERrGBg9X3NoFD7j20lDXhG1v6iw7OVutrCvA8S9yw"
-      ],
-      "user_link": "https://www.linkedin.com/company/yozm/",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "image",
-      "source": "network",
-      "sequence_id": 82,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/0844b8d36ff7629e0cf1e39459e98f7e.jpg"
-      ]
-    },
-    {
-      "index": 80,
-      "code": "7410992158503272448",
-      "username": "윤썸원",
-      "created_at": "2025-12-28 19:37:00",
-      "time_text": "1개월",
-      "full_text": "<요즘 미국에서 제일 핫하다는 직업>\n\n1. AI 시대가 도래하면서 기업들은 자신만의 정체성과 서사를 되찾으려고 하고 있고, 이에 따라 스토리텔러에 대한 구애가 점점 더 강해지고 있습니다.\n\n2. 실제로 요즘 미국 기업들 사이에서 가장 관심이 높은 직무는 ‘스토리텔러’인데요.\n\n3. 구글은 지난달 채용 공고에 이렇게 썼습니다. “구글에서 스토리텔러는 고객 획득과 장기적 성장을 견인하는 핵심적인 역할을 합니다”\n\n4. 포지션 역시 ‘고객 스토리텔링 매니저’였습니다. 구글만이 아닙니다. 마이크로소프트 역시 보안 조직에 내러티브와 스토리텔링을 총괄하는 시니어 디렉터를 채용 중에 있습니다.\n\n5. 노션 역시 최근 스토리텔링 팀을 신설했고, ‘반타’라는 기술 기업은 최고 연봉 27만 4천 달러(약 3.9억 원)을 내걸며 스토리텔링 총괄 업무를 할 사람을 찾고 있습니다.\n\n6. USAA라는 금융 서비스 회사는 올해에만 4번째 스토리텔러를 모집하고 있습니다. USAA의 부사장 타라 포드 페인은 이렇게 말합니다. “스토리텔러는, 단순 카피라이터가 아닙니다. 그 이상의 역할을 합니다. 고객들이 겪는 실제 상황과 기회, 가능성에 대해 생생히 (콘텐츠로) 구현해내는 일을 합니다”\n\n7. 링크드인에 따르면, 미국 채용 공고 중 스토리텔러라는 단어를 포함하고 있는 공고가 최근 1년 사이에 2배 늘었다고 합니다.\n\n8. 뉴욕에서 허시 래더우드라는 기업 커뮤니케이션 회사를 운영하고 있는 ‘스티브 허쉬 CEO’는 이렇게 말합니다. “요즘 CEO들과 통화하면, 언론 대응 전략이 아니라, 자체 콘텐츠 전략이 더 필요한 것 같더라고요”\n\n9. “AI가 쏟아내고 있는 저질 콘텐츠에 대한 불신이 높아지고 있는 가운데, 이미 앞서 나가고 있는 브랜드들은 (스토리텔링을 통해) 진정성 있고 고객의 공감을 불러일으키는 브랜드가 결국 승리할 것이라고 보고 있는 셈이죠”\n\n10. 실제로 요즘 기업들은 단순 소셜 미디어 운영을 넘어, 콘텐츠 제작 역량이 있어야 운영할 수 있는 비디오 팟캐스트와 서브스택 채널을 운영하고 있고, 엔터테인먼트와 미디어 자산을 소유하기 위해서 움직이는 경우도 늘어나고 있습니다.\n\n11. 효율화라는 이름으로, AI가 쏟아낸 결과물을 ‘복사+붙여넣기’를 하는 기업들이 늘어나는 가운데, 역설적으로 AI가 만들 수 없는 진정성 있는 콘텐츠를 만들기 위해 움직이는 기업들이 계속 생겨나고 있는 것이죠. 게다가 훌륭한 스토리텔러가 AI를 더 잘 다룰 가능성도 높고요.\n\n++ 월스트리트 저널의 <Companies Are Desperately Seeking ‘Storytellers’> 기사를 참고했습니다",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7410992158503272448?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7410992158503272448%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "프로젝트 썸원 Content Owner",
-      "images": [
-        "https://media.licdn.com/dms/image/v2/D5622AQGb9S4dSi4tkQ/feedshare-shrink_1280/B56ZtkiF7yGwAw-/0/1766918218241?e=1772064000&v=beta&t=VfCDUuKAKJ9ULhT5AKHGeq6Wk7bKanWZxGQWaDShXzU"
-      ],
-      "user_link": "https://www.linkedin.com/in/ACoAACC2D84BJpzxT2C5mrDCykqwVjBnKqPntLo",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "image",
-      "source": "network",
-      "sequence_id": 79,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/ee5b53eae829bf892ff75864220c1f4d.jpg"
-      ]
-    },
-    {
-      "index": 81,
-      "code": "7410801664141656065",
-      "username": "티타임즈",
-      "created_at": "2025-12-28 07:00:02",
-      "time_text": "1개월",
-      "full_text": "프롬프트 엔지니어 Sujin Kang Ph.D. 박사는 개인적으로 LLM을 사용할 때는 챗GPT를 사용할 일이 딱히 없다고 합니다. 주로 제미나이 3.0 프로와 클로드를 쓴다고 하는데요.\n그런데 제미나이를 제대로 활용하려면 챗GPT 쓸 때와는 방법이 좀 다르다고 합니다. 챗GPT 잘 쓰는 법으로 흔히 알려진 '역할 상황극'은 오히려 제미나이에게 도움이 되지 않는다고 하구요, 마크다운 언어를 사용해 명시적으로 정리해주는 것도 제미나이에게는 잘 먹히지 않는다고 하네요. 대신에 제미나이가 듣기 좋아하는 말들이 따로 있다는데요, 강 박사의 제미나이 전용 8가지 프롬프트 사용 팁을 들어보시죠.",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7410801664141656065?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7410801664141656065%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "팔로워 284명",
-      "images": [
-        "https://media.licdn.com/dms/image/v2/D561FAQGDpe4U-dvrMA/feedshare-document-cover-images_480/B56Zta_Md3GsBM-/0/1766758077362?e=1770976800&v=beta&t=dWDT7NqXqQHQez2B55RaKYW5lNsSEqfdnRpotbm6Y7c"
-      ],
-      "user_link": "https://www.linkedin.com/company/%ED%8B%B0%ED%83%80%EC%9E%84%EC%A6%88/",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "image",
-      "source": "network",
-      "sequence_id": 78,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/2d22af5002efb79aa7c42aa30a3d324c.jpg"
-      ]
-    },
-    {
-      "index": 82,
-      "code": "7409113677884194817",
-      "username": "김덕중",
-      "created_at": "2025-12-23 15:12:35",
-      "time_text": "1개월",
-      "full_text": "일자리의 평준화\n최근 미국 실업률 추이를 보면서 느끼는 변화가 있습니다. 지난 1년간 미국 실업률이 4.2%에서 4.6%로 올랐고, 특히 신입 대졸자들의 실업률은 약 10%까지 치솟았습니다. 이는 2008년 금융위기 이후 가장 높은 수준입니다. 더 흥미로운 점은 AI 자동화의 영향이 모든 계층에 동일하게 나타나지 않다는 것입니다.\n\n고경력 직장인들의 실업률은 평균 이하로 유지되고 있는 반면, 새로 졸업한 신입들이 일자리를 구하기 어려워하고 있습니다. 기업들이 의도적으로든 아니든 신입 채용을 줄이고 있기 때문입니다. 하지만 대학 학위가 필요 없는 일자리, 특히 헬스케어, 유통, 수리 등의 분야는 오히려 증가하고 있습니다. 결국 AI는 화이트칼라 업무를 자동화하면서 대학 졸업장의 가치를 재평가하게 만들고 있습니다.\n\n더 큰 문제는 다른 곳에 있습니다. 최근 설문조사에 따르면 미국 근로자의 70%가 경영진의 AI 관련 발언을 신뢰하지 않습니다.(예를들어 고용은 보장되고 생산성이 높아진다) 단 27%만이 CEO를 신뢰한다고 답했습니다. 이러한 신뢰 부족은 직원들의 변화 저항으로 이어지고, 결국 회사의 혁신 속도를 늦추는 악순환을 만들게 됩니다.\n\n냉정하게 보면 AI는 일자리 제거 기술이 아닙니다. 오히려 일자리를 '평준화'하는 기술입니다. 지금이 새로운 도구를 배우고 자신의 가치를 높일 수 있는 최고의 기회라고 생각됩니다. 신입이든 베테랑이든 AI와 새로운 기술에 투자하는 사람이 미래를 대응하게 될 것입니다.\nhttps://lnkd.in/gwKzihFC",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7409113677884194817?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7409113677884194817%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "숙명여대 겸임교수, Firb AI 연구소장",
-      "images": [
-        "https://media.licdn.com/dms/image/sync/v2/D5627AQHIvv043s_qbQ/articleshare-shrink_1280_800/B56ZtHAFzcKEAU-/0/1766422765395?e=1770976800&v=beta&t=SMcuAoVU2cGi9jTimSB4q4E53pfKo10z9RrAUP6fe-w"
-      ],
-      "user_link": "https://www.linkedin.com/in/ACoAAAwBOVMBDI50rE9wyD4tsMaGWkV-85Sqd50",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "image",
-      "source": "network",
-      "sequence_id": 72,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/4a5e73b1cf7d424c602c64ad0e39e24f.jpg"
-      ]
-    },
-    {
-      "index": 83,
-      "code": "7409057669149396992",
-      "username": "티타임즈",
-      "created_at": "2025-12-23 11:30:01",
-      "time_text": "1개월",
-      "full_text": "\"우리는 모두 JP모건 CEO인 제이미 다이먼처럼 일해야 합니다.\"\n젠스파크(Genspark)의 공동 창업자 웬 상(Wen S.) COO의 말입니다. CEO가 직접 PPT 디자인과 폰트를 고치거나 엑셀 수식을 입력하지 않듯, 지식 노동자들도 반복적인 업무에서 해방돼야 한다는 것이죠. 이를 가능케 하는 것이 바로 젠스파크의 '슈퍼 에이전트'(Super Agent)입니다.\n젠스파크의 가장 큰 특징은 '혼합 에이전트'(Mixture of Agents) 기술입니다. 오픈AI의 GPT, 앤트로픽의 클로드, 구글의 제미나이 등 최첨단 AI 모델 가운데 현재 작업에 가장 적합한 모델을 골라 실시간으로 조합해 사용합니다. 덕분에 시장 조사, 재무 모델링, PPT까지 단 몇 분 만에 수행할 수 있는데요. 젠스파크의 비전과 실제 시연 장면을 영상에서 확인해 보시죠.",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7409057669149396992?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7409057669149396992%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "팔로워 284명",
-      "images": [
-        "https://media.licdn.com/dms/image/v2/D561FAQFWaGiOOZqCjA/feedshare-document-cover-images_480/B56ZtJCit4IABM-/0/1766456965056?e=1770976800&v=beta&t=mnTBb0UuBdRhGKgzKAEwyQrquXWwPTgXTQcK0VGc2PE"
-      ],
-      "user_link": "https://www.linkedin.com/company/%ED%8B%B0%ED%83%80%EC%9E%84%EC%A6%88/",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "image",
-      "source": "network",
-      "sequence_id": 71,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/f871d6e1a98f43fb1a9bd1f922b26819.jpg"
-      ]
-    },
-    {
-      "index": 84,
-      "code": "7410439276661813248",
-      "username": "티타임즈",
-      "created_at": "2025-12-27 07:00:02",
-      "time_text": "1개월",
-      "full_text": "나노바나나 프로가 혁신적이라는 평가를 듣는 이유는 '한글'을 누구보다 잘 생성해내기 때문입니다. 그림 속 한글을 정확하게 구현해내는 걸 지금껏 누구도 잘 하지 못했지만 나노바나나 프로는 다릅니다. 그러다보니 활용할 수 있는 분야가 정말 많습니다. PPT에 들어갈 각종 자료부터 인포그래픽, 슬라이드 등 인간이 배경색 고르고, 표 그리고, 그림 그리고 했던 것들을 전부 AI가 알아서 해줍니다. 업무 활용도도 매우 높아졌죠. 그런데 여기서 만족하면 안 되겠죠. 프롬프팅을 잘 해주면 그 쓰임새의 확장도가 무궁무진하기 때문입니다. 프롬프팅으로 마법을 부리는 프롬프트 엔지니어 Sujin Kang Ph.D. 박사가 일반인 수준에서 나노바나나프로를 스마트하게 쓸 수 있는 방법을 쉽게 알려드립니다.",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7410439276661813248?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7410439276661813248%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "팔로워 284명",
-      "images": [
-        "https://media.licdn.com/dms/image/v2/D561FAQEaiAsnG5Qj7w/feedshare-document-cover-images_480/B56Zta.YS8JcBM-/0/1766757864553?e=1770976800&v=beta&t=lTmswoaRezCz90wPXizGQlekRxFY2uuGPvSKvUR75-8"
-      ],
-      "user_link": "https://www.linkedin.com/company/%ED%8B%B0%ED%83%80%EC%9E%84%EC%A6%88/",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "image",
-      "source": "network",
-      "sequence_id": 74,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/29e5a8c8e2c85d4128a8f5e267378b34.jpg"
-      ]
-    },
-    {
-      "index": 85,
-      "code": "7410446819371081728",
+      "code": "7411922908916297728",
       "username": "정구봉 Goobong Jeong",
-      "created_at": "2025-12-27 07:30:01",
+      "created_at": "2025-12-31 09:15:28",
       "time_text": "1개월",
-      "full_text": "Anthropic이 직접 만든 Claude 활용 예시 62개. Official use case 입니다. https://lnkd.in/gQ7eWH9t 꼭 Claude Code를 안 써도 됩니다. Claude 의 온갖 기능을 사용해서 내 워크플로우를 바꿔보세요.\n\n카테고리 11개가 있고, 필요한 기능부터 둘러보시면 좋습니다.\n1. Education\n2. Finance\n3. HR\n4. Legal\n5. Life Sciences\n6. Marketing\n7. Nonprofits\n8. Personal\n9. Professional\n10. Research\n11. Sales\n\n기능별로도 정리되어 있습니다.\nArtifacts, Connectors, Extended Thinking, Projects, Research, Skills, Web Search, Claude in Chrome까지.\n\n제가 특히 좋았던 건요.\n\"Package your brand guidelines in a skill\"\nhttps://lnkd.in/geH3KewK\nSkills 기능으로 브랜드 가이드라인을 패키징하는 예시입니다.\n\n\"Workflow improvement planner\"\nhttps://lnkd.in/guKFkngG\n업무 프로세스를 분석하고 개선점을 찾는 예시입니다. 워크플로우 리디자인을 할 때에 참고하면 좋을 것 같습니다.\n\n2025년이 가기 전에 AI로 워크플로우 한 개만 더 만들어보세요~!",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7410446819371081728?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7410446819371081728%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "full_text": "어제 70명의 AI Builder 들에게 발표한 자료를 공유합니다. https://lnkd.in/g2C7Qe5u\n\n\"같이 만들어서 더 재밌었습니다\" 저번엔 혼자였는데, 이번엔 네 명과 같이 만들었습니다. 덕분에 촬영, 이름표 같은 디테일을 챙겼고요. 스피커분들과 사전에 1:1 미팅하면서 준비했어요. Socar의 전폭적인 지원을 받은 덕분에 밤 11시까지 남아서 이야기할 수 있어서 좋았습니다!\n\n1. 김서진(Brand X) - AI-native Company 운영하기 Seojin K.\nClaude Code로 회사를 운영하고 계세요. 제가 아는 분 중에 클로드 코드를 맛깔나게 쓰시는 분 1티어입니다. 혼자서 AI Native Company를 만들었어요. 샘 알트만이 말한 1인 유니콘이 이건가 싶습니다.\n\n2. 이동훈(마이리얼트립) - 플랫폼 엔지니어에서 AI 전도사로 Donghoon Lee\n엔지니어가 다른 사람의 문제를 풀어주는 방식이 실패하자 방법을 바꾸셨어요. 교육자 발굴 - 교육 - 직접 만들기 - 사례 발표가 하나의 휠로 이어지는 것이. 그리고 이 방식을 올해 2월부터 하셨으니 이런 시도로는 글로벌하게도 손에 꼽힐 것 같습니다!\n\n3. 최동운(삼양) - 계산기 압수당해서 엑셀 쓰다가 구글 시트까지 Dongwoon Choi\n동운님은 워낙 유명하시죠! 디자이너 마케터까지 커서로 PR 하니까요. 맥도날드라는 철학을 직접 만들어서 운영하시는게 너무 재밌었어요. 실은 가까이서 같이 일하니까 말할 수 있는건데, 동운님이 인지하지 못하는 좋은 사례들도 많이 숨어있어요. AI Native 프로덕트 조직 1티어입니다!\n\n4. 신건호(데이원컴퍼니) - 고도로 발달한 AX는 창업과 구분할 수 없다 Geonho Shin\nAX는 창업만큼이나 어렵다. 창업이 성공하려면 기존 제품보다 10배 이상 좋은 제품을 만들어야 하는 것처럼, AX도 기존 워크플로우보다 10배 나은 방식을 만들어야 합니다. 발표가 너무 공감이 가서 본분을 잊고 무대에 거의 난입하고 말았습니다..\n\n저도 이번 밋업을 준비하면서 Claude Code를 정말 다양한 일에 사용했어요. 그리고 그 흔적을 github repo 에 남겼습니다.\n- pptx 생성: 발표하고 싶은 꼭지만 입력하면 ppt 초안을 생성\n- 이름표 디자인: A4에 이름표를 4개씩 모아서 pdf 로 만든 다음 출력. 인쇄 색감이 맞을 때까지 cli로 직접 출력\n- 발표 당일 리마인드 SMS 문자 발송: AppleScript 를 즉석에서 짜서 발송\n- 스피커 분들에게 전달할 가이드 문서: luma와 컨텍스트를 밀어넣어주니 잘 만들어줬습니다.\n- speaker seats pdf 출력: 정말 놀라운 퀄리티로 뽑아줬어요.. 클로드 지능에 놀랐습니다.\n- 밋업 일정, 스피커 소개, Q&A 등을 담은 웹페이지 https://lnkd.in/gUzGHeNR (건태님이 만들어주셨습니다!)\n\n같이 만든 Team Attention! 다음 번에도 더 재밌는 것 해요!\nHoYeon Lee Jake Park Changhoi Kim\n\n버거부터 공간, 시간, 조언까지 아낌 없는 지원 감사합니다 Socar!\nHyouk JANG 박의연\n\n12월 30일이라는 말도 안되는 연말 일정에도 늦게까지 자리를 지켜주신 참석자 분들께도 정말 감사드립니다!",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7411922908916297728?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7411922908916297728%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
       "profile_slogan": "Claude Code for all of your work",
       "images": [
-        "https://media.licdn.com/dms/image/v2/D5622AQH4hxNMpK5coA/feedshare-shrink_2048_1536/B56ZtbS1XbJMAw-/0/1766763223828?e=1772064000&v=beta&t=iFM8tw9RziMW8P7Ox7-8UcQdemGUFsfPU0K42XLKIZw"
+        "https://media.licdn.com/dms/image/v2/D5622AQHfTVRWD99q5A/feedshare-shrink_2048_1536/B56Ztxwh2HKcAw-/0/1767140121417?e=1772064000&v=beta&t=l5MaHOn5ZaHHijM5I4d9FxQZtVrLTmJpNv7phgT4qe4"
       ],
       "user_link": "https://www.linkedin.com/in/ACoAACY7KJQBDtSTk6IuIwZY6ntBGJx1fCYwsYI",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "image",
       "source": "network",
-      "sequence_id": 75,
+      "sequence_id": 89,
       "sns_platform": "linkedin",
       "local_images": [
-        "web_viewer/images/c1b9072bce2ac0da6343f19857e69de5.jpg"
+        "web_viewer/images/3990786b8126ead8e9ee1ccb32b4f303.jpg"
       ]
     },
     {
-      "index": 86,
-      "code": "7410431723471187969",
-      "username": "Kyunghun Lee",
-      "created_at": "2025-12-27 06:30:02",
+      "code": "7411896370925592576",
+      "username": "조여준 Ethan Cho",
+      "created_at": "2025-12-31 07:30:01",
       "time_text": "1개월",
-      "full_text": "OpenAI 코드 레드, 하지만 샘 알트만의 고민은 조금 다릅니다\n\n구글 Gemini 3 출시 직후 코드 레드를 선언했습니다. 샘 알트만은 최근 Big Technology Podcast 인터뷰에서 이 상황을 설명하면서 팬데믹 초기 대응과 같다고 합니다. 초기에 취하는 모든 조치가 나중에 취하는 조치보다 훨씬 가치가 있고, 대부분의 사람들은 초기에 충분히 행동하지 않다가 나중에 패닉에 빠집니다.\n\n코드 레드는 OpenAI에서 연 1-2회 발생하는 정기적 대응입니다. 생각했던 것보다 빈도가 높습니다. 올해 초 DeepSeek 때도 있었고, 보통 6-8주 정도 지속됩니다. 위기라기보다는 시스템화된 경계 모드에 가깝습니다. 그리고 인터뷰 전체를 보면 알트만이 경계하는 건 경쟁사지만, 그가 진짜 고민하는 병목은 다른 곳에 있습니다.\n\n1. 구글이 2023년에 진지했으면 OpenAI는 끝났습니다\n\n알트만은 2023년에 구글이 정말로 OpenAI를 진지하게 받아들였다면, 정말 나쁜 상황에 처했을 것이며 그냥 박살낼 수 있었을 것이라고 합니다. 하지만, 왜 그러지 않았을까요? 알트만이 짚는 이유는 두 가지입니다. 첫째, 당시 구글의 AI 노력이 제품 측면에서 올바른 방향으로 가고 있지 않았습니다. 둘째, 구글은 아마도 전체 기술 산업에서 가장 훌륭한 비즈니스 모델을 가지고 있고, 이를 포기하는 데 느릴 것이었습니다.\n\n여기서 알트만이 제시하는 핵심 프레임이 있습니다. 기존 방식에 AI를 붙이는 것(bolt-on)은 AI 중심으로 처음부터 재설계하는 것(reimagine)을 이기지 못합니다. 웹 검색에 AI를 붙이는 것, 메시징 앱에 AI를 붙이는 것. 조금 더 나아지긴 합니다. 하지만 이것이 최종 상태는 아닙니다. 혁신자의 딜레마가 실시간으로 펼쳐지고 있습니다. 그런데 알트만 인터뷰를 계속 보면, 그가 생각하는 진짜 고민은 구글이 아니었습니다.\n\n2. 모델은 준비됐습니다. 세상이 못 따라갑니다\n\nOpenAI의 GDP Eval 결과를 보면, GPT 5.2는 지식 노동 과제의 74%에서 전문가를 이기거나 동점을 기록합니다. 잘 정의된 업무 10개 중 7개에서 전문가보다 낫거나 같은 결과를 내고 있습니다. 하지만, 현실은 어떨까요? 알트만의 표현을 빌리면, 대부분의 사람들은 여전히 GPT-4 시절과 비슷한 질문을 던지고 있습니다. 알트만 본인도 그렇다고 합니다. AI를 훨씬 더 쓸 수 있다는 걸 알면서도 여전히 거의 같은 방식으로 워크플로우를 운영합니다.\n\n능력 과잉(Capability Overhang)이라고 합니다. 모델에 많은 가치가 있다면 세상이 꽤 빨리 그것을 활용하는 방법을 알아낼 거라고 가정했는데, 현실은 달랐습니다. GPT 5.2에서 모델을 지금 동결해도, 세상이 아직 추출하지 못한 경제적 가치가 너무 커서 훨씬 더 많은 가치를 만들어낼 수 있다는 게 그의 판단입니다. 제대로 활용하면 어떻게 될까요? OpenAI는 Codex로 Sora 안드로이드 앱을 한 달 만에 완성했습니다. 일반적으로 많은 사람이 훨씬 더 오래 걸렸을 작업입니다. 같은 도구인데 쓰는 방식에 따라 결과가 완전히 다릅니다.\n\n3. AI는 하루에 10조 토큰을 출력합니다\n\n개인의 적응 속도는 느립니다. 그런데 전체 스케일로 보면 어떨까요? AI 회사 하나가 오늘날 하루에 약 10조 토큰을 출력한다고 합니다. 세계 인구 80억 명이 하루 평균 2만 토큰을 출력한다고 가정하면, AI의 출력량은 이미 인류 전체와 비슷하거나 넘어서고 있습니다.\n알트만은 이 비교가 엄밀하지 않다고 인정합니다. 하지만 지구상 지적 노동의 총량에서 인간 뇌 vs AI 뇌의 비중이 어떻게 변하고 있는지 보여주는 프레임으로는 유용합니다.\n\n핵심은 성장 곡선의 차이입니다. AI의 컴퓨트는 매년 3배씩 늘고 있습니다. 반면 인간의 워크플로우 적응은 선형적입니다. 사람들이 적응하지 못해도, 총량에서는 이미 역전이 진행 중입니다.\n\n4. AGI는 어영부영 지나갔습니다\n\n알트만은 AGI에 대해 흥미로운 평가를 내립니다. AGI가 어영부영 지나갔습니다(went whooshing by). 세상을 그렇게 많이 바꾸지 않았습니다. 무슨 뜻일까요? 어느 시점에 우리는 AGI를 만들었거나 만들고 있는데, 세상이 인지하지 못한 채 지나갔다는 것입니다. 능력 과잉의 극단적 표현입니다.\n\n알트만은 체스의 역사를 언급합니다. 딥블루 이후, 인간과 AI가 협력하면 AI 단독보다 나은 시기가 있었습니다. 그러다 어느 순간 인간이 오히려 방해만 되는 시점이 왔습니다. 가장 똑똑한 선택은 인간 없이 AI만 두는 것이 됐습니다. 알트만은 이 패턴을 초지능의 정의로 제안합니다. AI가 AI의 도움을 받는 인간보다도 CEO 등 리더를 더 잘 수행할 수 있을 때. 그리고 자신은 그 시점을 환영한다고 말합니다. AI CEO가 오면 싸우며 사람의 방식이 더 낫다고 버티는 사람이 되고 싶지 않다고 합니다.\n\n모델은 이미 준비됐고, AI의 스케일은 기하급수적으로 커지는데, 세상의 적응은 선형적입니다. 인간이 방해가 되는 시점, 생각보다 멀지 않을 수도 있겠습니다. 물론 AI 회사 CEO로서 본인에게 유리한 전망일 수 있습니다. 하지만 이 갭이 벌어지는 방향 자체는 눈여겨볼 만한 것 같습니다.",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7410431723471187969?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7410431723471187969%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "CAIO & Deputy CEO @ Channel Corp | AI × B2B SaaS",
-      "images": [],
-      "user_link": "https://www.linkedin.com/in/ACoAAA5RhH4BjDv2vMF1Onz2ppvG6jeLmEGo93E",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "text",
+      "full_text": "[2025 회고 ⑦] 사다리는 걷어차였다: '두 인류'의 탄생\n\n2025년, 우리는 인정해야 했다. \"노력하면 중산층이 될 수 있다\"는 20세기의 사회 계약이 완전히 파기되었음을.\n\n지난 1년간 사회는 단순히 빈부 격차가 벌어진 정도가 아니었다.\n\nAI와 바이오 기술(GLP-1 등)을 소유한 계급과, 그렇지 못한 계급 사이의 '건널 수 없는 강'이 확인된 해였다.\n\n사회학자들은 이를 '양극화'라 부르지만, 냉정하게 말하면 이것은 '분화(Speciation)'다.\n\n1. '평범한 인재'의 종말: 애매한 지능은 0원이다\n\n2024년까지만 해도 \"AI를 잘 쓰는 사람이 되라\"고 했다. 하지만 2025년 노동 시장은 더 잔인한 진실을 말해줬다.\n\n\"시스템을 설계(Architect)하거나, 시스템의 부품이 되거나. 중간은 없다.\"\n\n과거 중산층을 지탱해 주던 '적당한 사무직', '적당한 전문직'의 가치가 폭락했다. 엑셀을 다루고, 보고서를 요약하고, 코드를 리뷰하는 '중간 인지 노동'은 AI의 공짜 영역이 되었다.\n\n이제 사회는 극소수의 '레버리지 통제자(Leverage Controller)'와, 그들의 지시를 받는 단순 육체노동 혹은 대면 서비스직인 '필수 노동자'로 재편되었다.\n\n\"공부해서 남 주냐\"는 말은 옛말이다. 애매하게 공부한 머리는 이제 AI보다 비효율적인 '비용'일 뿐이다.\n\n2. 생물학적 계급(Biological Caste)의 등장\n\n과거의 불평등은 '사는 집'이나 '타는 차'가 다른 것이었다. 2025년의 불평등은 '몸'과 '뇌'가 다른 것으로 진화했다.\n\n* 통제된 몸: 앞서 GLP-1에서 다뤘듯, 부유층은 약물과 첨단 헬스케어로 날씬하고 건강한 신체를 '구독'한다.\n* 확장된 뇌: 그들은 개인화된 고성능 AI 에이전트(Personal Agent)를 비서로 둠으로써, 일반인보다 10배, 100배의 지적 생산성을 낸다.\n\n반면, 이 비용을 감당할 수 없는 계층은 값싼 정크푸드에 노출되어 비만이 되고, 무료 버전의 AI나 쳐다보며 정보의 격차에 허덕인다. 2025년, 가난은 단순히 돈이 없는 상태가 아니라, '더 뚱뚱하고, 더 멍청해질 수밖에 없는' 구조적 형벌이 되었다.\n\n3. '도파민 복지(Dopamine Welfare)': 희망 대신 쾌락을 허하라\n\n사다리가 걷어차인 것을 깨달은 대중이 폭동을 일으키지 않은 이유는 무엇일까?\n\n2025년의 시스템이 그들에게 '값싼 마취제'를 무제한으로 공급했기 때문이다.\n\n현실에서의 성취가 불가능해진 세대에게 사회는 무한한 숏폼 콘텐츠, 현실보다 더 자극적인 가상 연애 시뮬레이션, 그리고 저렴한 알코올을 쥐여주었다.\n\n국가와 자본은 이제 국민에게 '비전'을 제시하는 대신, '도파민'을 관리한다.\n\n\"꿈꾸지 마라, 대신 즐겁게 해 줄게.\"\n\n이것이 2025년 사회가 패배자들에게 건넨 침묵의 거래였다.\n\n[2025년 회고 시리즈를 마치며]\n\n금융 시장은 냉혹해졌고, IT는 무거워졌으며, 국제 질서는 야만으로 돌아갔고, 우리는 기후 위기를 잊기로 합의했습니다.\n\n그리고 그 결과, 사회는 두 개의 세상으로 쪼개졌습니다.\n\n이 7일간의 기록은 '낭만의 시대가 끝났다'는 선언문입니다.\n\n그렇다면 인간은 어떻게 살아야 할까요.\n\n인간의 존재 가치는 이제 무엇으로 설명될 수 있을까요.\n\n이 모든 것이 효율로 판단되는 시대에,\n끝까지 수치로 환산되지 않는 선택이 있습니다.\n\n나에게 이익이 되지 않는데도 시간을 내는 일,\n문제가 해결되지 않는데도 곁에 머무는 일,\n계산해 보면 분명 손해인데도 손을 놓지 않는 결정.\n\n알고리즘은 최적의 경로를 찾습니다.\n그 경로가 누군가를 밀어내는 길이라면, 주저하지 않습니다.\n\n하지만 인간은 가끔 다른 방향을 택합니다.\n효율이 아닌 이유로, 설명되지 않는 쪽으로.\n\n사다리가 걷어차인 세상에서\n끊어진 다리를 다시 잇는 것은\n기술도, 정책도 아니었습니다.\n\n대부분의 경우, 누군가가 먼저 손해를 감수했기 때문이었습니다.\n\n차갑게 잘 돌아가는 세상 속에서\n우리가 유의미한 존재라는 증거는\n언제나 이런 순간에 남아 있습니다.\n\n인간다움은 언제나 효율 바깥에서 시작됩니다.\n\n2025년 12월 31일\n애당초 조여준 씀.",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7411896370925592576?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7411896370925592576%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "CIO @ TheVentures | ex-Google, Samsung",
+      "images": [
+        "https://media.licdn.com/dms/image/v2/D5622AQF7CVYPESMV2g/feedshare-shrink_2048_1536/B56ZtX6NHeKgAw-/0/1766706435487?e=1772064000&v=beta&t=PWxGMiiwawuJ8gamuofAJJXKjMoCyKmeaAP6E1Zt7LM"
+      ],
+      "user_link": "https://www.linkedin.com/in/ACoAAARknekBOFFETpmlSPqmlb2P8ln4iACFaJg",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "image",
       "source": "network",
-      "sequence_id": 73,
-      "sns_platform": "linkedin"
+      "sequence_id": 88,
+      "sns_platform": "linkedin",
+      "local_images": [
+        "web_viewer/images/e3d6e5d6b10abecc128b0cf0b95664d7.jpg"
+      ]
     },
     {
-      "index": 87,
+      "code": "7411399227337150464",
+      "username": "BZCF - 비즈까페",
+      "created_at": "2025-12-29 22:34:32",
+      "time_text": "1개월",
+      "full_text": "”모든 사람을 유혹하려 하지 마라. 결핍을 갈망하는 대상을 골라라.“\n\n유혹은 에너지를 쏟을 가치가 있는 대상을 고르는 것에서 시작된다. 삶에 지루함을 느끼거나 고독에 젖은 자가 주 타겟이다.\n\n카사노바는 항상 변화를 갈망하는 여성을 목표로 삼아 백발백중의 성공을 거뒀다.\n저항할 수 없는 상대를 고르는 것이 유혹의 절반이다.\n\n<로버트 그린 - 유혹의 법칙>\n\n인스타그램 : https://lnkd.in/gaRyDD3j",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7411399227337150464?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7411399227337150464%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "BZCF",
+      "images": [
+        "https://media.licdn.com/dms/image/v2/D5622AQFbNMwPTfdyOQ/feedshare-shrink_2048_1536/B56ZtqUNycG0Aw-/0/1767015268836?e=1772064000&v=beta&t=bqKoB4X7ymJWojVw9qckg6LjSLr-qX3w1VsHMhEmUy4"
+      ],
+      "user_link": "https://www.linkedin.com/in/ACoAADosSpABPU4--68Ki5nk1NUfCtpau6AMoJs",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "image",
+      "source": "network",
+      "sequence_id": 87,
+      "sns_platform": "linkedin",
+      "local_images": [
+        "web_viewer/images/0d5401d8708407143020e7ddc5925598.jpg"
+      ]
+    },
+    {
       "code": "7411338754214420480",
       "username": "Kyunghun Lee",
       "created_at": "2025-12-29 18:34:15",
@@ -5698,7 +5534,7 @@ const snsFeedData = {
         "https://media.licdn.com/dms/image/v2/D5622AQES4G_1g5KWIg/feedshare-shrink_2048_1536/B56ZtpdUpLJAA0-/0/1767000854115?e=1772064000&v=beta&t=rSqzQAUN4bGlY8lHdseb03pYL0UQQn2iU8aCkIq2IVM"
       ],
       "user_link": "https://www.linkedin.com/in/ACoAAA5RhH4BjDv2vMF1Onz2ppvG6jeLmEGo93E",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "image",
       "source": "network",
       "sequence_id": 86,
@@ -5708,24 +5544,164 @@ const snsFeedData = {
       ]
     },
     {
-      "index": 88,
-      "code": "7408595054950354944",
-      "username": "Kyunghun Lee",
-      "created_at": "2025-12-22 04:51:46",
+      "code": "7411330156092616704",
+      "username": "티타임즈",
+      "created_at": "2025-12-29 18:00:05",
       "time_text": "1개월",
-      "full_text": "CEO의 스타일을 복제한 AI에게 피드백 받는 회사가 있습니다\n\nZapier에서는 278명의 직원이 전략 문서를 CEO에게 보여주기 전에 \"Exec GPT\"에게 먼저 피드백을 받습니다. 이 GPT는 CEO Wade의 피드백 스타일, 회사 가치관, 전략 문서 작성 원칙을 학습했습니다. 그리고 이걸 만든 사람은 AI 엔지니어가 아닙니다. CEO의 EA(Executive Assistant), Courtney Hickey입니다.\n\n1. 이 피드백은 너무 소프트해요\n\nExec GPT의 첫 버전에 Wade가 의견을 주었습니다. \"코칭이 너무 소프트해요. 더 demanding하게 해주세요.” Courtney는 프롬프트를 수정했습니다. \"Demanding하면서도 supportive하게\"라는 Zapier의 리더십 원칙을 반영했습니다.\n\n그 결과, AI가 이러한 피드백을 줍니다. “이건 전략 문서가 아니라 잡담처럼 읽혀요. 승인자도 없고, 배경도 부족해요. 이렇게 수정해보세요.\" 직원들의 반응은 어땠을까요? 혹평당할까 걱정했는데, 오히려 간단하고 실용적인 수정 제안을 받았다고 합니다.\n\n2. 미팅에서도 대표의 기준이 작동합니다\n\nCourtney는 여기서 멈추지 않았습니다. 모든 미팅 참석자에게 AI 피드백을 보내는 시스템도 만들었습니다. 미팅 녹취록을 분석해서 참석자별로 Slack DM을 보냅니다. 기준은 \"The Five Dysfunctions of a Team\", 팀 협업의 5가지 핵심 역량을 다룬 리더십 프레임워크입니다. 발언 시간, 잘한 점, 성장 기회가 포함됩니다.\n\n여기서도 Wade가 피드백을 줬습니다. \"더 tough하게 해주세요” 그 결과 이런 메시지가 나오게 됐습니다. \"의견 충돌을 더 직접적으로 다뤄야 할 것 같아요. 갈등 회피 경향이 보입니다.\"\n\n대표가 모든 미팅에 참석할 수는 없습니다. 하지만 대표의 기준은 모든 미팅에 적용될 수 있습니다. 피드백이 자동화되고 루틴이 되면, 받는 사람의 긴장감도 줄어듭니다. 모든 사람이 똑같이 받습니다.\n\n3. 에이전트를 인턴처럼 생각해요\n\nCourtney는 어떻게 이런 시스템들을 만들 수 있었을까요? 그녀는 엔지니어가 아닙니다. 코딩도 못합니다. \"저는 그냥 말해요. 친구랑 산책하면서 얘기하듯이. '먼저 캘린더를 보고, 준비가 필요한 미팅을 찾고, 참석자를 검색하고...' 이렇게요.\" 그녀의 비결은 에이전트를 인턴처럼 생각하는 것이라고 합니다. 처음엔 독립적으로 못 하지만, 시스템과 생각 방식을 가르치고 도구를 주면 점점 똑똑해집니다.\n\nExec GPT와 미팅 피드백 시스템만 있는 게 아닙니다. 주간 미팅 준비 에이전트도 있습니다. 금요일 아침에 자동으로 다음 주 캘린더를 스캔하고, 외부 참석자를 조사하고, CRM과 이메일에서 관계 이력을 찾아 정리해줍니다. 예전에는 2시간 걸리던 일입니다. 인턴 한 명이 아니라, 인턴 군단을 만들었습니다.\n\n4. 하지만 대표 자체는 복제가 안 됩니다\n\n그러면 대표의 피드백 스타일을 복제했으니, 대표 자체도 AI로 복제할 수 있는 걸까요? Courtney의 대답은 \"아직은 아니다\"입니다. CEO는 끊임없이 배우고, 새로운 정보를 흡수하고, 매일 성장합니다. 과거의 결정은 새로운 맥락에서 이미 구식이 됩니다. AI가 아무리 빨리 업데이트돼도, 이 속도를 따라가긴 어렵습니다.\n\n물론 조만간 멀지 않은 미래에는 CEO가 매일 보고 듣고 생각하는 것들이 실시간으로 AI에 반영될 수도 있습니다. 하지만 아직은 계속 진화하는 리더의 판단력까지는 복제가 어렵다고 합니다. 글쓰기 스타일, 피드백 패턴, 의사결정 프레임워크처럼 천천히 쌓이고 축적되는 것들부터 복제되고 있습니다.\n\n5. 예전에는 제가 클론이었어요\n\nAI가 EA를 대체한다고들 합니다. 하지만 Courtney는 5년간 3번 승진했습니다. 예전에는 그녀가 Wade의 클론이었다고 합니다. 그의 스타일로 글을 쓰고, 스케줄을 관리하고, 그처럼 일을 처리했습니다. 하지만 이제는 AI 클론들이 그녀를 돕습니다. 오히려 AI 인턴 군단을 거느리며 조직 전체에 영향력을 갖게 됐습니다.\n\n자기 업무의 시스템을 설명할 수 있는 사람은 AI를 거느리고, 설명할 수 없는 사람은 AI에게 대체되는 시대가 왔습니다. 그리고 머지않아 AI 클론에게 피드백 받고, 업무 지시를 받는 날이 올 것 같기도 합니다.",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7408595054950354944?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7408595054950354944%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "CAIO & Deputy CEO @ Channel Corp | AI × B2B SaaS",
+      "full_text": "AI 좀 쓴다는 분들은 얼마 전부터 클로드 스킬에 열광하고 있죠. 클로드 스킬만 잘 쓰면 AI 에이전트를 나에게 꼭 맞게 설계해서 쓸 수 있다고 합니다.\n클로드 스킬은 RPG 게임 속에서 사용하는 캐릭터의 '스킬'과 유사합니다. [나무를 베는 스킬]과 [불을 붙이는 스킬]을 합치면 게임 내에서 땔감에 불을 땔 수 있게 되는 것과 마찬가지죠. 예를들어 특정 분야에 대해 리서치를 하는 스킬, 긴 자료를 일목요연하게 정리하게 만드는 스킬, 인포그래픽을 만드는 스킬, PPT 디자인을 하는 스킬을 합치면 전문가의 PPT처럼 발표 자료를 만들 수 있습니다. 각각의 능력들을 잘게 쪼개서 만들어 두고, 이를 잘 조합해서 사용하는 방식입니다.\n클로드 스킬을 어떻게 만들어야 하고, 어떤 방법으로 사용해야 할까요? 프롬프트 엔지니어링으로 마술을 부리는 Sujin Kang Ph.D. 박사에게 클로드 스킬 구성 및 사용 방법을 들어봅니다.",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7411330156092616704?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7411330156092616704%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "팔로워 284명",
+      "images": [
+        "https://media.licdn.com/dms/image/v2/D561FAQHs1Fx0YAh5RA/feedshare-document-cover-images_480/B56Zta_AXbG0BM-/0/1766758028558?e=1770980400&v=beta&t=uwVSzf9Aj4ghJlbNvBiOKdGchtWx4nd5IE-JCdj2lM4"
+      ],
+      "user_link": "https://www.linkedin.com/company/%ED%8B%B0%ED%83%80%EC%9E%84%EC%A6%88/",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "image",
+      "source": "network",
+      "sequence_id": 85,
+      "sns_platform": "linkedin",
+      "local_images": [
+        "web_viewer/images/33b8ad410c6d6cd62e11a5b81df21b14.jpg"
+      ]
+    },
+    {
+      "code": "7411303033344692224",
+      "username": "Josh Kim",
+      "created_at": "2025-12-29 16:12:18",
+      "time_text": "1개월",
+      "full_text": "(아무도 안보는)\n나의 12월 회고와 노력을 기록해본다.\n일부러 가독성 낮춰 어렵게 써본다.\n조회수가 아주 낮을 것이다.\n\n1. 유튜브 50일만에 1만 구독자를 기록했다.\n나조차 믿지 못했던 1만 구독자를 진짜 실현했다. 스레드, 링크드인, X, 뉴스레터 등에서 접한 '최적화' 기법이 즉시 먹혔다. 5-6개 기획을 한꺼번에 실험해보고 그 중 잘되는 포맷과 키워드에 집중하는 것이다. 인터넷 세계는 결국 키워드 싸움인데, '니치 키워드'를 잡고 소위 말하는 '조지기'에 들어가니 정확히 먹혔다. '그냥 실행'보다 '전략적 실행'이 중요하다.\n\n2. '1만'이라는 숫자에 집착한 이유\n드러나는 숫자의 효과는 의외로 크다. 1만을 넘기면 기업의 제안이 온다는 걸 알았다. 광고주 혹은 기업체들은 숫자로 판단하고, 내부 승인을 받는다. 1만 이하는 승인을 받기가 어렵고, 작은 광고주들로 가득하다. 26년엔 더 많은 기업강의를 갈 예정이었는데, 26년에는 더 많은 제안들이 있을 것 같아 기대된다.\n\n3. 유튜브 덕분에 엄청난 협업들이 오고 있다.\nManus, Genspark, MKYU(김미경 대표님)과 협업, 책출간, Class101, 기업강의 제안 5건, 그 외 하루 2번씩 오는 광고 문의는 모두 유튜브 덕분이다. 크리에이터는 하루종일 제안을 받게 된다. 유튜브는 그것을 가속화한다. 안할 이유가 없는 최고의 투자다.\n\n4. Supanova(디자인 제품) 공동창업자를 구했다.\n나의 디자인 SaaS인 Supanova는 이미 개발을 1차로 끝냈다. 대기자만 250명이 넘는데, MVP를 그대로 배포해도 되었지만, 더 안정적인 개발과 운영을 하고 싶었다. 지난번 DividendPro 배포 때 수많은 개발자들의 F12 탐색과 솔직히 유쾌한 경험은 아니었다.\n\n이미 글로벌 SaaS 런칭을 수없이 경험해본 대표님과 이 작업을 함께 하기로 했다. 1월 중 초기 버전이 나오고, 더 안정적으로 서비스를 운영하여, 월 1억의 MRR을 26년 달성해보기로 했다.\n\n26년의 목표는 이미 적어놓았다. 둘째가 태어나니 몸을 잘 사리고, 체력을 유지하고, 25년의 스탠스를 잘 유지하여 '길게 사업하기'와 '가족 챙기기'를 목표로 더 천천히 나아가기로 했다.",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7411303033344692224?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7411303033344692224%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "AI 크리에이터 조쉬입니다. ex-SKT 프로덕트 디자이너",
       "images": [],
-      "user_link": "https://www.linkedin.com/in/ACoAAA5RhH4BjDv2vMF1Onz2ppvG6jeLmEGo93E",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "user_link": "https://www.linkedin.com/in/ACoAAAfst4QBZ_TBpSZb5m5EitKHc3H5PhUbe5E",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "text",
       "source": "network",
-      "sequence_id": 69,
+      "sequence_id": 84,
       "sns_platform": "linkedin"
     },
     {
-      "index": 89,
+      "code": "7411250333227769856",
+      "username": "Taehun Kim",
+      "created_at": "2025-12-29 12:42:53",
+      "time_text": "1개월",
+      "full_text": "일자리의 70%는 채용 공고에 올라오지 않습니다.\n\n그리고 그 자리는 \"아는 사람\"을 통해 채워집니다.\n그런데 \"아는 사람\"이 누군지 아시나요? 가까운 친구가 아닙니다. 아래 데이터와 개인적인 의견을 참고해 보세요.\n\n1. 85%의 채용이 \"연결\"을 통해 이루어진다\nLinkedIn과 CNBC 조사에 따르면, 전체 일자리의 70%는 공개 채용 공고에 올라오지 않습니다.\n그리고 전체 포지션의 85%가 개인적 혹은 전문적 연결을 통해 채워집니다.\n아무리 훌륭한 이력서를 써도, 네트워크가 없으면 게임에 참가조차 못 하는 셈입니다.\n\n2. 약한 유대(Weak Ties)\"가 더 강력하다\n1973년 사회학자 Mark Granovetter가 발표한 \"약한 유대의 힘(The Strength of Weak Ties)\" 이론은 50년이 지난 지금도 유효 한것 같습니다.\n친한 친구나 가족(강한 유대)보다 ‘캐주얼한 지인(약한 유대)’이 커리어 발전에 더 유용하다고 합니다.\n이유는 친한 사람들은 나와 비슷한 정보를 갖고 있지만, 느슨한 연결의 사람들은 내 서클 밖의 새로운 정보와 기회에 접근할 수 있기 때문 입니다.\n\n3. 네트워킹은 연봉 상승률과 연결된다\nJournal of Applied Psychology에 발표된 연구(3년간 추적)에 따르면, 네트워킹은 현재 연봉뿐 아니라 시간에 따른 연봉 성장률과도 관련이 있었습니다.\n다른 연구에서는 강한 네트워크를 가진 전문가가 비슷한 자격을 갖춘 사람보다 3-15% 더 높은 연봉을 받는다고 알려져 있습니다.\n\n4. 80%가 중요성을 알지만, 48%만 실천한다\nLinkedIn 조사에 따르면, 전문직의 80%가 네트워킹이 커리어 발전에 중요하다고 동의합니다.\n하지만 실제로 네트워크와 꾸준히 연락을 유지하는 사람은 48%에 불과합니다. 38%는 \"연락 유지가 어렵다\"고 답했고, 49%는 \"시간이 없다\"를 이유로 꼽았습니다.\n\n5. 대면 만남의 힘은 여전하다\n디지털 시대에도 95% 이상의 전문가가 대면 미팅이 비즈니스에 필수적이라고 답합니다.\nB2B 영업에서 대면 미팅의 40%가 새로운 고객 확보로 이어집니다. 비언어적 커뮤니케이션이 전체 소통의 70%를 차지하기 때문에, 온라인만으로는 신뢰 형성에 한계가 있습니다.\n\n저도 한때 네트워킹을 \"영업\"처럼 느껴서 불편 했던 적이 있습니다.\n하지만 25년간 커리어를 돌아보니, 중요한 기회들은 대부분 \"사람\"을 통해 왔습니다.\n다음 커리어의 제안도, 좋은 팀원의 추천도, 비즈니스 파트너십도 모두 관계에서 시작됐습니다.\n\n특히 \"약한 유대\"의 힘을 체감합니다. 매일 보는 동료보다, 1년에 한두 번 만나는 다른 업계 지인이 의외의 새로운 기회를 연결해주는 경우도 많았습니다. 그래서 저는 의도적으로 \"다른 분야 사람들\"과의 느슨한 연결을 유지하려 합니다.\n덕분에 매일 매일 저녁 약속이 있긴 하지만요…\n\n송년회, 신년회는 그런 연결을 새로 만들거나 되살리기 좋은 시기입니다. 부담 갖지 마시고, 오래 연락 못 한 지인에게 \"올 한해 어떠셨어요?\"라는 짧은 메시지 하나 보내보시는 건 어떨까 싶네요.\n\n\n#네트워킹 #커리어 #이직 #채용 #일자리 #취업 #직장인 #커리어 #경력개발 #비즈니스 #약한유대의힘 #WeakTies",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7411250333227769856?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7411250333227769856%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "AX(AI Transformation) Executive | 비즈니스 스케일업 AX 실행 리더 (AI/Data 기반 신사업 0원 → 2,100억) | Ex-Daum, SKT, LG, LG U+ 광고,커머스,마케팅,AI,Data 사업 총괄/상무 | M&A & PMI | Startup Mentoring | 저서 ‘디지털 마케팅의 모든 것’ 외 1권",
+      "images": [
+        "https://media.licdn.com/dms/image/v2/D5622AQGwoY824AtI9Q/feedshare-shrink_1280/B56ZtoM57OHkAs-/0/1766979772516?e=1772064000&v=beta&t=qp5UG8BrvopkZC56rIxP2HzHeWm2lT3urZTdAeJEMNk"
+      ],
+      "user_link": "https://www.linkedin.com/in/ACoAAAyZz50BiI7Jj72d9AZko-Nxit9QS9xrrpk",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "image",
+      "source": "network",
+      "sequence_id": 83,
+      "sns_platform": "linkedin",
+      "local_images": [
+        "web_viewer/images/81c865ee556117105780304ec5609961.jpg"
+      ]
+    },
+    {
+      "code": "7411209406790414336",
+      "username": "요즘IT",
+      "created_at": "2025-12-29 10:00:16",
+      "time_text": "1개월",
+      "full_text": "비개발자, 클로드 코드로 외주 개발 시작하기\n👉 https://lnkd.in/grjDatVi\n\n비개발자로서 바이브 코딩을 처음 시작하면, 만들고 싶은 게 있기 때문에 시간 가는 줄 모릅니다. 재미도 있고, '이걸로 돈을 벌어볼까?', '자동화를 해볼까?' 하는 기대감이 생기죠. 하지만 하다 보면 곧 현실의 벽에 부딪힙니다. 모르는 것이 생기고, 갑자기 프로그램이 동작하지 않으면, '역시 안 되네' 하고 결국 포기하는 경우도 있죠. 혹은 어렵게 제품을 만들어 출시를 하더라도, 아무도 알아봐 주지 않거나 생산성을 드라마틱하게 올려주지 못해 결국 돈이 안 되는 경우도 많습니다. 이렇게 되면 다음에 뭘 해야 할지 찾지 못하고, 열정이 고갈되어 포기하게 됩니다. 그래서 저는 이러한 열정 고갈을 막고, 바이브 코딩을 지속적으로 이어가기 위한 방법으로 외주 개발을 선택했습니다.\n\n#요즘IT #IT #AI #트렌드 #개발",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7411209406790414336?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7411209406790414336%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "팔로워 6천명",
+      "images": [
+        "https://media.licdn.com/dms/image/v2/D5610AQFweXTyyi2dlQ/image-shrink_1280/B56ZtnnrvKG4AQ-/0/1766970016314?e=1770980400&v=beta&t=HfKix6A_Fs_wbogtIppl9Ey37LkuvP2VXu4TO8Ixe_A"
+      ],
+      "user_link": "https://www.linkedin.com/company/yozm/",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "image",
+      "source": "network",
+      "sequence_id": 82,
+      "sns_platform": "linkedin",
+      "local_images": [
+        "web_viewer/images/44740dae2dd38dc7e301bfddc0d82913.jpg"
+      ]
+    },
+    {
+      "code": "7411204617524391938",
+      "username": "Kyung Jin Jung",
+      "created_at": "2025-12-29 09:41:14",
+      "time_text": "1개월",
+      "full_text": "[면접에서 ‘준비된 PM’이 보이는 다섯 가지 특징]\n\n창업 전 약 3년간 PM 면접관으로 참여하며 수많은 후보자들을 만났습니다.\n대부분 각자의 강점을 갖고 있었지만, 유독 ‘합격’이 자연스럽게 떠오르는 분들은 분명한 공통점이 있었습니다.\n\n면접 자리에서 제가 마음속으로 이미 “이 분은 같이 일하고 싶다”고 판단했던 PM 후보자들의 특징을 정리해 보았습니다.\n\n1. 두괄식으로 답변한다 – 결론을 먼저 말한다\n\n면접관은 질문의 핵심에 대한 답을 가장 먼저 듣고 싶어합니다.\n답변을 끝까지 들어야 요지를 파악할 수 있다면, 아무리 내용이 좋아도 평가가 낮아질 수밖에 없습니다.\n\n특히 PM은\n- 이해관계자가 많고\n- 제한된 시간 안에\n- 의사결정을 이끌어야 하는 역할입니다.\n\n그래서 두괄식으로 말하는 습관은 단순한 면접 스킬이 아니라,\nPM에게 필수적인 커뮤니케이션 역량 그 자체라고 볼 수 있습니다.\n\n2. “왜” 이 일을 했는지 설명한다 – 맥락과 의도를 말한다\n\n면접관이 궁금한 것은 단순한 결과가 아닙니다.\n그 사람이 문제를 어떻게 바라보고, 어떤 사고 과정을 거쳐 판단했는지에 대한 과정을 궁금해합니다.\n\n성과를 냈다면\n- 왜 그 문제를 중요하다고 봤는지\n- 여러 선택지 중 왜 그 결정을 했는지\n- 과정 중 어떤 고민과 트레이드오프가 있었는지\n\n이런 맥락이 설명되어야\n\n“이 사람이 우리 조직에서도 같은 방식으로 문제를 풀 수 있겠구나”\n라는 신뢰가 생깁니다.\n\n3. 논리적이고 구조화된 사고 – 생각을 ‘구조’로 보여준다\n\nPM은 결국 설득하는 사람입니다.\n그리고 설득은 감이 아니라 구조에서 나옵니다.\n\n컨설턴트처럼 완벽하게 MECE할 필요는 없습니다.\n다만,\n\n- 문제 → 가설 → 선택 기준 → 결론\n- 혹은 트리 구조로 생각을 정리해 설명할 수 있다면\n\n면접관 입장에서는\n\n“이 사람은 복잡한 문제도 정리해서 전달할 수 있겠구나”\n라고 느끼게 됩니다.\n\n4. 고객 집착(Customer Obsession) – 사용자를 ‘아는’ 수준을 넘는다\n\n준비된 PM은 항상 ‘우리 사용자’를 이야기합니다.\n막연한 타겟이 아니라,\n\n- 실제로 누구인지\n- 어떤 상황에서\n- 어떤 불편을 겪고 있는지\n\n를 구체적으로 설명합니다.\n\n“고객 니즈가 있어서 기능을 만들었습니다”가 아니라\n“이 사용자는 이 지점에서 막히고 있었고, 그래서 이런 선택을 했습니다”\n까지 말할 수 있다면, 그 차이는 분명하게 드러납니다.\n\n5. 지원 회사에 대한 조사와 애정 – 이미 ‘우리 팀’처럼 말한다\n\n준비된 후보자는 회사를 외부 시선으로 보지 않습니다.\n이미 “우리”라는 관점으로 이야기합니다.\n\n- 왜 이 회사인지\n- 이 제품의 어떤 방향에 공감했는지\n- 만약 합류한다면 어떤 문제를 풀고 싶은지\n\n이 정도의 고민이 담긴 답변은\n면접관에게 진정성 + 실행 가능성을 동시에 전달합니다.\n\n덧붙여, 이런 요소들도 중요합니다\n\n- 데이터 드리븐 사고: 감이 아니라 근거로 말하는가\n- Humble Confidence: 겸손하지만 스스로에 대한 확신이 있는가\n\n이 두 가지는 단기간에 만들기 어렵지만,\n면접에서는 분명히 드러납니다.\n\n준비된 PM은\n‘말을 잘하는 사람’이 아니라\n생각이 정리되어 있고, 이유를 설명할 수 있는 사람입니다.\n\n성공적인 면접을 통해\n원하는 커리어 여정을 이어가시길 응원합니다.\n\n* 본 글은 실무형 멘토링 1위, F-Lab과 협업하여 작성되었습니다.\n\n👉 더 자세한 내용은 댓글의 링크를 참고해 주세요.",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7411204617524391938?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7411204617524391938%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "신사업 전략의 빈틈을 드러내는 AI ‘draftie.pro’",
+      "images": [],
+      "user_link": "https://www.linkedin.com/in/ACoAABG8blgBec5lMaOFikhIy_Gt3CgGhjTWVOo",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "text",
+      "source": "network",
+      "sequence_id": 81,
+      "sns_platform": "linkedin"
+    },
+    {
+      "code": "7411152720650227712",
+      "username": "정구봉 Goobong Jeong",
+      "created_at": "2025-12-29 06:15:01",
+      "time_text": "1개월",
+      "full_text": "Claude Code, Codex 같은 툴은 \"의식적으로\" 사용법을 익혀야 합니다. 잘 쓰는 사람과 못 쓰는 사람의 격차가 점점 벌어지고 있습니다.\n\n올해를 돌아보며, OpenAI와 Anthropic이 내부 활용 사례로 만든 공식 문서를 다시 찾아봤습니다.\n둘 다 몇 달 된 문서라 outdated 된 내용이 있지만, official 문서는 클래식이죠.\n\n\"How OpenAI uses Codex\" (12p) https://lnkd.in/gUTKxxcH\n- 7개 use case: 코드 이해, 리팩토링, 성능 최적화, 테스트, 개발 속도, 몰입 유지, 탐색\n- 핵심: \"1시간 분량, 수백 줄 코드\" 정도의 well-scoped task에 최적화\n- 팁: Ask Mode로 계획 → Code Mode로 구현\n\n\"How Anthropic teams use Claude Code\" (22p) https://lnkd.in/gxt_8i6Y\n- 10개 팀 사례: 개발팀뿐 아니라 마케팅, 디자인, 법무팀까지\n- 핵심: 비개발자도 \"나도 개발자가 됐다\" 경험\n\n두 문서의 공통점\n\n1. 코드 이해가 1순위\n낯선 코드베이스 탐색, 온보딩, 인시던트 대응에서 가장 큰 효과\n2. 문서화 파일이 핵심\nAGENTS.md, Claude.md \"문서화를 잘 해놓을수록 성능이 좋다\"\n3. Plan → Code 워크플로우\n바로 코드 짜달라고 하지 말고, 먼저 계획을 세우게 하라\n4. 자주 커밋, 롤백 준비\n\"슬롯머신처럼 써라. 안 되면 리셋하고 다시 시작\"\n5. 백그라운드 활용\n회의 중에도 에이전트가 작업. 컨텍스트 스위칭 비용 감소\n\n이제 AI를 잘 쓰려면 \"어떻게 쓰는게 Best Practice인지\"를 의식적으로 배워야 합니다. 딸깍해서 나오는 시기는 끝났습니다.",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7411152720650227712?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7411152720650227712%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "Claude Code for all of your work",
+      "images": [
+        "https://media.licdn.com/dms/image/v2/D5622AQHBJhZu7yj6RQ/feedshare-shrink_2048_1536/B56Ztlc3mrGsA0-/0/1766933625991?e=1772064000&v=beta&t=SpgpiaoPhag5QO1pKbKcdYRhsICI87Hze835NYdHCfc"
+      ],
+      "user_link": "https://www.linkedin.com/in/ACoAACY7KJQBDtSTk6IuIwZY6ntBGJx1fCYwsYI",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "image",
+      "source": "network",
+      "sequence_id": 80,
+      "sns_platform": "linkedin",
+      "local_images": [
+        "web_viewer/images/cafda83b0cccb3b33d0ca97061e4b47a.jpg"
+      ]
+    },
+    {
+      "code": "7410992158503272448",
+      "username": "윤썸원",
+      "created_at": "2025-12-28 19:37:00",
+      "time_text": "1개월",
+      "full_text": "<요즘 미국에서 제일 핫하다는 직업>\n\n1. AI 시대가 도래하면서 기업들은 자신만의 정체성과 서사를 되찾으려고 하고 있고, 이에 따라 스토리텔러에 대한 구애가 점점 더 강해지고 있습니다.\n\n2. 실제로 요즘 미국 기업들 사이에서 가장 관심이 높은 직무는 ‘스토리텔러’인데요.\n\n3. 구글은 지난달 채용 공고에 이렇게 썼습니다. “구글에서 스토리텔러는 고객 획득과 장기적 성장을 견인하는 핵심적인 역할을 합니다”\n\n4. 포지션 역시 ‘고객 스토리텔링 매니저’였습니다. 구글만이 아닙니다. 마이크로소프트 역시 보안 조직에 내러티브와 스토리텔링을 총괄하는 시니어 디렉터를 채용 중에 있습니다.\n\n5. 노션 역시 최근 스토리텔링 팀을 신설했고, ‘반타’라는 기술 기업은 최고 연봉 27만 4천 달러(약 3.9억 원)을 내걸며 스토리텔링 총괄 업무를 할 사람을 찾고 있습니다.\n\n6. USAA라는 금융 서비스 회사는 올해에만 4번째 스토리텔러를 모집하고 있습니다. USAA의 부사장 타라 포드 페인은 이렇게 말합니다. “스토리텔러는, 단순 카피라이터가 아닙니다. 그 이상의 역할을 합니다. 고객들이 겪는 실제 상황과 기회, 가능성에 대해 생생히 (콘텐츠로) 구현해내는 일을 합니다”\n\n7. 링크드인에 따르면, 미국 채용 공고 중 스토리텔러라는 단어를 포함하고 있는 공고가 최근 1년 사이에 2배 늘었다고 합니다.\n\n8. 뉴욕에서 허시 래더우드라는 기업 커뮤니케이션 회사를 운영하고 있는 ‘스티브 허쉬 CEO’는 이렇게 말합니다. “요즘 CEO들과 통화하면, 언론 대응 전략이 아니라, 자체 콘텐츠 전략이 더 필요한 것 같더라고요”\n\n9. “AI가 쏟아내고 있는 저질 콘텐츠에 대한 불신이 높아지고 있는 가운데, 이미 앞서 나가고 있는 브랜드들은 (스토리텔링을 통해) 진정성 있고 고객의 공감을 불러일으키는 브랜드가 결국 승리할 것이라고 보고 있는 셈이죠”\n\n10. 실제로 요즘 기업들은 단순 소셜 미디어 운영을 넘어, 콘텐츠 제작 역량이 있어야 운영할 수 있는 비디오 팟캐스트와 서브스택 채널을 운영하고 있고, 엔터테인먼트와 미디어 자산을 소유하기 위해서 움직이는 경우도 늘어나고 있습니다.\n\n11. 효율화라는 이름으로, AI가 쏟아낸 결과물을 ‘복사+붙여넣기’를 하는 기업들이 늘어나는 가운데, 역설적으로 AI가 만들 수 없는 진정성 있는 콘텐츠를 만들기 위해 움직이는 기업들이 계속 생겨나고 있는 것이죠. 게다가 훌륭한 스토리텔러가 AI를 더 잘 다룰 가능성도 높고요.\n\n++ 월스트리트 저널의 <Companies Are Desperately Seeking ‘Storytellers’> 기사를 참고했습니다",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7410992158503272448?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7410992158503272448%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "프로젝트 썸원 Content Owner",
+      "images": [
+        "https://media.licdn.com/dms/image/v2/D5622AQGb9S4dSi4tkQ/feedshare-shrink_1280/B56ZtkiF7yGwAw-/0/1766918218241?e=1772064000&v=beta&t=VfCDUuKAKJ9ULhT5AKHGeq6Wk7bKanWZxGQWaDShXzU"
+      ],
+      "user_link": "https://www.linkedin.com/in/ACoAACC2D84BJpzxT2C5mrDCykqwVjBnKqPntLo",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "image",
+      "source": "network",
+      "sequence_id": 79,
+      "sns_platform": "linkedin",
+      "local_images": [
+        "web_viewer/images/ee5b53eae829bf892ff75864220c1f4d.jpg"
+      ]
+    },
+    {
+      "code": "7410801664141656065",
+      "username": "티타임즈",
+      "created_at": "2025-12-28 07:00:02",
+      "time_text": "1개월",
+      "full_text": "프롬프트 엔지니어 Sujin Kang Ph.D. 박사는 개인적으로 LLM을 사용할 때는 챗GPT를 사용할 일이 딱히 없다고 합니다. 주로 제미나이 3.0 프로와 클로드를 쓴다고 하는데요.\n그런데 제미나이를 제대로 활용하려면 챗GPT 쓸 때와는 방법이 좀 다르다고 합니다. 챗GPT 잘 쓰는 법으로 흔히 알려진 '역할 상황극'은 오히려 제미나이에게 도움이 되지 않는다고 하구요, 마크다운 언어를 사용해 명시적으로 정리해주는 것도 제미나이에게는 잘 먹히지 않는다고 하네요. 대신에 제미나이가 듣기 좋아하는 말들이 따로 있다는데요, 강 박사의 제미나이 전용 8가지 프롬프트 사용 팁을 들어보시죠.",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7410801664141656065?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7410801664141656065%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "팔로워 284명",
+      "images": [
+        "https://media.licdn.com/dms/image/v2/D561FAQGDpe4U-dvrMA/feedshare-document-cover-images_480/B56Zta_Md3GsBM-/0/1766758077362?e=1770980400&v=beta&t=1qe6MQ3H30h8XE4h0VUfJZglmQBF9o-XfnOjmWwpkt8"
+      ],
+      "user_link": "https://www.linkedin.com/company/%ED%8B%B0%ED%83%80%EC%9E%84%EC%A6%88/",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "image",
+      "source": "network",
+      "sequence_id": 78,
+      "sns_platform": "linkedin",
+      "local_images": [
+        "web_viewer/images/8966ef299a61762272070e2441451a56.jpg"
+      ]
+    },
+    {
       "code": "7410683563362181120",
       "username": "Peter Shin",
       "created_at": "2025-12-27 23:10:45",
@@ -5737,7 +5713,7 @@ const snsFeedData = {
         "https://media.licdn.com/dms/image/v2/D5622AQFmZXhLYHN0gA/feedshare-shrink_1280/B56ZtgJbHmLAAs-/0/1766844644333?e=1772064000&v=beta&t=TMgOwTfVGr6jFO1IqI7wS4Or33qyRAbvMIQFO2IhGc8"
       ],
       "user_link": "https://www.linkedin.com/in/ACoAAB5PwL4BfEruqb9-_wIl8sZu1bXOYuHUiMo",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "image",
       "source": "network",
       "sequence_id": 77,
@@ -5747,7 +5723,6 @@ const snsFeedData = {
       ]
     },
     {
-      "index": 90,
       "code": "7410446824572026880",
       "username": "조여준 Ethan Cho",
       "created_at": "2025-12-27 07:30:02",
@@ -5759,7 +5734,7 @@ const snsFeedData = {
         "https://media.licdn.com/dms/image/v2/D5622AQH84Su49iIGSw/feedshare-shrink_2048_1536/B56ZtTDs9nJ8Aw-/0/1766625038758?e=1772064000&v=beta&t=ChoD3ZCFP7Kn4pkrk1Rb0FDodgcunpZ01hj8uTc2Hm8"
       ],
       "user_link": "https://www.linkedin.com/in/ACoAAARknekBOFFETpmlSPqmlb2P8ln4iACFaJg",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "image",
       "source": "network",
       "sequence_id": 76,
@@ -5769,195 +5744,138 @@ const snsFeedData = {
       ]
     },
     {
-      "index": 91,
-      "code": "7401626875682570241",
-      "username": "김덕중",
-      "created_at": "2025-12-02 23:22:42",
-      "time_text": "2개월",
-      "full_text": "헉. 이렇게도 가능하네요. 나노바나나 정말 대단 합니다. (Prompt : 첨부한 이미지의 모양과 색상은 그대로 유지하고 오직 글자만 영어에서 한글로 바꿔주세요. 작은 글씨들까지 빠짐없이 바꿔주세요.)",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7401626875682570241?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7401626875682570241%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "숙명여대 겸임교수, Firb AI 연구소장",
-      "images": [
-        "https://media.licdn.com/dms/image/v2/D5622AQHS3uob0HQIvQ/feedshare-shrink_1280/B56Zrfca78LkAg-/0/1764685361665?e=1772064000&v=beta&t=pc_ZB9SeSXBbVwaXmHXchRWMz4lPklmsXEQc1Yzd98M"
-      ],
-      "user_link": "https://www.linkedin.com/in/ACoAAAwBOVMBDI50rE9wyD4tsMaGWkV-85Sqd50",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "image",
-      "source": "network",
-      "sequence_id": 43,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/a05d6f5c64ac19a4c6977b3a903e5c8d.jpg"
-      ]
-    },
-    {
-      "index": 92,
-      "code": "7400530968190750720",
-      "username": "김덕중",
-      "created_at": "2025-11-29 22:47:58",
-      "time_text": "2개월",
-      "full_text": "도면을 생성하는 AI가 나오는 것을 보고 깜짝 놀랐는데, 이제는 도면을 Gemini 3.0 pro를 이용해서 3D 모델로 변화 시켜주네요. 캐드파일을 3D 프로그램으로 옮겨서 랜더링 하는 시간이 상당히 줄어들것 같습니다. https://graphite3d.xyz/",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7400530968190750720?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7400530968190750720%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "숙명여대 겸임교수, Firb AI 연구소장",
-      "images": [
-        "https://media.licdn.com/dms/image/v2/D5622AQGwkVyydR6Jdw/feedshare-shrink_2048_1536/B56ZrP3seuIsAw-/0/1764424077173?e=1772064000&v=beta&t=p5CuDO76W3AGovHIJbzvXjE-ujDiHJlOdbz3dLsEFuA"
-      ],
-      "user_link": "https://www.linkedin.com/in/ACoAAAwBOVMBDI50rE9wyD4tsMaGWkV-85Sqd50",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "image",
-      "source": "network",
-      "sequence_id": 37,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/0949bfed6c4075e6acd6d060262159c5.jpg"
-      ]
-    },
-    {
-      "index": 93,
-      "code": "7407636477167296512",
-      "username": "So Yeon Lim",
-      "created_at": "2025-12-19 13:22:43",
+      "code": "7410446819371081728",
+      "username": "정구봉 Goobong Jeong",
+      "created_at": "2025-12-27 07:30:01",
       "time_text": "1개월",
-      "full_text": "인사팀 한계 시험하는 GPT 범벅 자기소개서 특징\n\n1. 중첩 동사 남발\n- 예: 거래 기반을 확대해 성과를 실현했습니다\n- 동사형 명사가 많을수록 의미가 흐려짐\n그냥 매출 ○○% 상승시켰습니다 처럼 결과로 쓰세요.\n\n2. 문장 내 쉼표(,) 과다 사용\n- 한 문장에 쉼표 2개 이상 등장\n- 리듬이 끊기고 가독성 급락\n불필요한 쉼표는 과감히 삭제하세요.\n\n3. ‘단순한 ~가 아닌’ 표현 중독\n- 거의 자동완성 수준으로 반복\n- 실제 차별점이나 설명 없이 문장만 길어집니다.\n쓰지 마세요 제발...\n\n4. 소제목을 문장으로 써버림\n- 소제목은 스킬 + 결과의 어절이어야 하는데\n- 설명 문장처럼 길게 작성\n스킬+ 결과 형태로 작성하세요.\n\n5. 개인 보이스 실종\n- ‘주도’, ‘흐름’, ‘기획’, ‘구조’ 같은 추상어만 가득\n- 내가 뭘 했는지, 어떻게 했는지 디테일 없음\n사람 대신 보고서가 말하는 느낌\n\nGPT로 작성한 자기소개서는 워딩 하나 바꾸는 걸로 해결 되지 않습니다. 자기소개서 작성 전략에 맞혀 아예 다시 쓰셔야 해요. 이렇게요⬇️",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7407636477167296512?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7407636477167296512%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "Talent Development / Career Coach",
+      "full_text": "Anthropic이 직접 만든 Claude 활용 예시 62개. Official use case 입니다. https://lnkd.in/gQ7eWH9t 꼭 Claude Code를 안 써도 됩니다. Claude 의 온갖 기능을 사용해서 내 워크플로우를 바꿔보세요.\n\n카테고리 11개가 있고, 필요한 기능부터 둘러보시면 좋습니다.\n1. Education\n2. Finance\n3. HR\n4. Legal\n5. Life Sciences\n6. Marketing\n7. Nonprofits\n8. Personal\n9. Professional\n10. Research\n11. Sales\n\n기능별로도 정리되어 있습니다.\nArtifacts, Connectors, Extended Thinking, Projects, Research, Skills, Web Search, Claude in Chrome까지.\n\n제가 특히 좋았던 건요.\n\"Package your brand guidelines in a skill\"\nhttps://lnkd.in/geH3KewK\nSkills 기능으로 브랜드 가이드라인을 패키징하는 예시입니다.\n\n\"Workflow improvement planner\"\nhttps://lnkd.in/guKFkngG\n업무 프로세스를 분석하고 개선점을 찾는 예시입니다. 워크플로우 리디자인을 할 때에 참고하면 좋을 것 같습니다.\n\n2025년이 가기 전에 AI로 워크플로우 한 개만 더 만들어보세요~!",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7410446819371081728?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7410446819371081728%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "Claude Code for all of your work",
+      "images": [
+        "https://media.licdn.com/dms/image/v2/D5622AQH4hxNMpK5coA/feedshare-shrink_2048_1536/B56ZtbS1XbJMAw-/0/1766763223828?e=1772064000&v=beta&t=iFM8tw9RziMW8P7Ox7-8UcQdemGUFsfPU0K42XLKIZw"
+      ],
+      "user_link": "https://www.linkedin.com/in/ACoAACY7KJQBDtSTk6IuIwZY6ntBGJx1fCYwsYI",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "image",
+      "source": "network",
+      "sequence_id": 75,
+      "sns_platform": "linkedin",
+      "local_images": [
+        "web_viewer/images/c1b9072bce2ac0da6343f19857e69de5.jpg"
+      ]
+    },
+    {
+      "code": "7410439276661813248",
+      "username": "티타임즈",
+      "created_at": "2025-12-27 07:00:02",
+      "time_text": "1개월",
+      "full_text": "나노바나나 프로가 혁신적이라는 평가를 듣는 이유는 '한글'을 누구보다 잘 생성해내기 때문입니다. 그림 속 한글을 정확하게 구현해내는 걸 지금껏 누구도 잘 하지 못했지만 나노바나나 프로는 다릅니다. 그러다보니 활용할 수 있는 분야가 정말 많습니다. PPT에 들어갈 각종 자료부터 인포그래픽, 슬라이드 등 인간이 배경색 고르고, 표 그리고, 그림 그리고 했던 것들을 전부 AI가 알아서 해줍니다. 업무 활용도도 매우 높아졌죠. 그런데 여기서 만족하면 안 되겠죠. 프롬프팅을 잘 해주면 그 쓰임새의 확장도가 무궁무진하기 때문입니다. 프롬프팅으로 마법을 부리는 프롬프트 엔지니어 Sujin Kang Ph.D. 박사가 일반인 수준에서 나노바나나프로를 스마트하게 쓸 수 있는 방법을 쉽게 알려드립니다.",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7410439276661813248?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7410439276661813248%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "팔로워 284명",
+      "images": [
+        "https://media.licdn.com/dms/image/v2/D561FAQEaiAsnG5Qj7w/feedshare-document-cover-images_480/B56Zta.YS8JcBM-/0/1766757864553?e=1770980400&v=beta&t=DIAU55pkXBp2R3bHDUb7l48qEUYsOqpgFn5-_kDOQ_o"
+      ],
+      "user_link": "https://www.linkedin.com/company/%ED%8B%B0%ED%83%80%EC%9E%84%EC%A6%88/",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "image",
+      "source": "network",
+      "sequence_id": 74,
+      "sns_platform": "linkedin",
+      "local_images": [
+        "web_viewer/images/3fb6fe00b9673c29caa373a329726579.jpg"
+      ]
+    },
+    {
+      "code": "7410431723471187969",
+      "username": "Kyunghun Lee",
+      "created_at": "2025-12-27 06:30:02",
+      "time_text": "1개월",
+      "full_text": "OpenAI 코드 레드, 하지만 샘 알트만의 고민은 조금 다릅니다\n\n구글 Gemini 3 출시 직후 코드 레드를 선언했습니다. 샘 알트만은 최근 Big Technology Podcast 인터뷰에서 이 상황을 설명하면서 팬데믹 초기 대응과 같다고 합니다. 초기에 취하는 모든 조치가 나중에 취하는 조치보다 훨씬 가치가 있고, 대부분의 사람들은 초기에 충분히 행동하지 않다가 나중에 패닉에 빠집니다.\n\n코드 레드는 OpenAI에서 연 1-2회 발생하는 정기적 대응입니다. 생각했던 것보다 빈도가 높습니다. 올해 초 DeepSeek 때도 있었고, 보통 6-8주 정도 지속됩니다. 위기라기보다는 시스템화된 경계 모드에 가깝습니다. 그리고 인터뷰 전체를 보면 알트만이 경계하는 건 경쟁사지만, 그가 진짜 고민하는 병목은 다른 곳에 있습니다.\n\n1. 구글이 2023년에 진지했으면 OpenAI는 끝났습니다\n\n알트만은 2023년에 구글이 정말로 OpenAI를 진지하게 받아들였다면, 정말 나쁜 상황에 처했을 것이며 그냥 박살낼 수 있었을 것이라고 합니다. 하지만, 왜 그러지 않았을까요? 알트만이 짚는 이유는 두 가지입니다. 첫째, 당시 구글의 AI 노력이 제품 측면에서 올바른 방향으로 가고 있지 않았습니다. 둘째, 구글은 아마도 전체 기술 산업에서 가장 훌륭한 비즈니스 모델을 가지고 있고, 이를 포기하는 데 느릴 것이었습니다.\n\n여기서 알트만이 제시하는 핵심 프레임이 있습니다. 기존 방식에 AI를 붙이는 것(bolt-on)은 AI 중심으로 처음부터 재설계하는 것(reimagine)을 이기지 못합니다. 웹 검색에 AI를 붙이는 것, 메시징 앱에 AI를 붙이는 것. 조금 더 나아지긴 합니다. 하지만 이것이 최종 상태는 아닙니다. 혁신자의 딜레마가 실시간으로 펼쳐지고 있습니다. 그런데 알트만 인터뷰를 계속 보면, 그가 생각하는 진짜 고민은 구글이 아니었습니다.\n\n2. 모델은 준비됐습니다. 세상이 못 따라갑니다\n\nOpenAI의 GDP Eval 결과를 보면, GPT 5.2는 지식 노동 과제의 74%에서 전문가를 이기거나 동점을 기록합니다. 잘 정의된 업무 10개 중 7개에서 전문가보다 낫거나 같은 결과를 내고 있습니다. 하지만, 현실은 어떨까요? 알트만의 표현을 빌리면, 대부분의 사람들은 여전히 GPT-4 시절과 비슷한 질문을 던지고 있습니다. 알트만 본인도 그렇다고 합니다. AI를 훨씬 더 쓸 수 있다는 걸 알면서도 여전히 거의 같은 방식으로 워크플로우를 운영합니다.\n\n능력 과잉(Capability Overhang)이라고 합니다. 모델에 많은 가치가 있다면 세상이 꽤 빨리 그것을 활용하는 방법을 알아낼 거라고 가정했는데, 현실은 달랐습니다. GPT 5.2에서 모델을 지금 동결해도, 세상이 아직 추출하지 못한 경제적 가치가 너무 커서 훨씬 더 많은 가치를 만들어낼 수 있다는 게 그의 판단입니다. 제대로 활용하면 어떻게 될까요? OpenAI는 Codex로 Sora 안드로이드 앱을 한 달 만에 완성했습니다. 일반적으로 많은 사람이 훨씬 더 오래 걸렸을 작업입니다. 같은 도구인데 쓰는 방식에 따라 결과가 완전히 다릅니다.\n\n3. AI는 하루에 10조 토큰을 출력합니다\n\n개인의 적응 속도는 느립니다. 그런데 전체 스케일로 보면 어떨까요? AI 회사 하나가 오늘날 하루에 약 10조 토큰을 출력한다고 합니다. 세계 인구 80억 명이 하루 평균 2만 토큰을 출력한다고 가정하면, AI의 출력량은 이미 인류 전체와 비슷하거나 넘어서고 있습니다.\n알트만은 이 비교가 엄밀하지 않다고 인정합니다. 하지만 지구상 지적 노동의 총량에서 인간 뇌 vs AI 뇌의 비중이 어떻게 변하고 있는지 보여주는 프레임으로는 유용합니다.\n\n핵심은 성장 곡선의 차이입니다. AI의 컴퓨트는 매년 3배씩 늘고 있습니다. 반면 인간의 워크플로우 적응은 선형적입니다. 사람들이 적응하지 못해도, 총량에서는 이미 역전이 진행 중입니다.\n\n4. AGI는 어영부영 지나갔습니다\n\n알트만은 AGI에 대해 흥미로운 평가를 내립니다. AGI가 어영부영 지나갔습니다(went whooshing by). 세상을 그렇게 많이 바꾸지 않았습니다. 무슨 뜻일까요? 어느 시점에 우리는 AGI를 만들었거나 만들고 있는데, 세상이 인지하지 못한 채 지나갔다는 것입니다. 능력 과잉의 극단적 표현입니다.\n\n알트만은 체스의 역사를 언급합니다. 딥블루 이후, 인간과 AI가 협력하면 AI 단독보다 나은 시기가 있었습니다. 그러다 어느 순간 인간이 오히려 방해만 되는 시점이 왔습니다. 가장 똑똑한 선택은 인간 없이 AI만 두는 것이 됐습니다. 알트만은 이 패턴을 초지능의 정의로 제안합니다. AI가 AI의 도움을 받는 인간보다도 CEO 등 리더를 더 잘 수행할 수 있을 때. 그리고 자신은 그 시점을 환영한다고 말합니다. AI CEO가 오면 싸우며 사람의 방식이 더 낫다고 버티는 사람이 되고 싶지 않다고 합니다.\n\n모델은 이미 준비됐고, AI의 스케일은 기하급수적으로 커지는데, 세상의 적응은 선형적입니다. 인간이 방해가 되는 시점, 생각보다 멀지 않을 수도 있겠습니다. 물론 AI 회사 CEO로서 본인에게 유리한 전망일 수 있습니다. 하지만 이 갭이 벌어지는 방향 자체는 눈여겨볼 만한 것 같습니다.",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7410431723471187969?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7410431723471187969%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "CAIO & Deputy CEO @ Channel Corp | AI × B2B SaaS",
       "images": [],
-      "user_link": "https://www.linkedin.com/in/ACoAADjF3z0BDYpzEXDWpYaTZHicIeWb5-VMKEk",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "user_link": "https://www.linkedin.com/in/ACoAAA5RhH4BjDv2vMF1Onz2ppvG6jeLmEGo93E",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "text",
       "source": "network",
-      "sequence_id": 65,
+      "sequence_id": 73,
       "sns_platform": "linkedin"
     },
     {
-      "index": 94,
-      "code": "7407932761396654080",
-      "username": "Seungwan Son",
-      "created_at": "2025-12-20 09:00:03",
-      "time_text": "1개월",
-      "full_text": "[Visionary Hands-on Leader]\n- '실무형 리더'라는 말로는 부족하다: 우리가 찾던 그 이름!\n\n1. 최근 한국 기업 현장을 보면 흥미로운 혹은 처절한 변화가 목격된다.\n- 팀장급은 물론이고 C-Level 임원이 되어서도 실무를 놓지 못하는, 혹은 놓아서는 안 되는 경우가 급격히 늘어나고 있다. (IT가 제일 심한 것 같...)\n\n2. 과거에는 임원이 되면 의사결정과 관리(Management)에만 집중하는 것이 당연했지만\n- AI와 테크놀로지가 비즈니스의 근간이 된 지금, 기술적 디테일을 모르면 의사결정 자체가 불가능한 시대가 되었다.\n\n3. 문제는 이런 변화된 리더십을 정확하게 지칭할 '단어'가 우리에게 없었다는 점이다.\n- '실무형 리더'? 왠지 전략은 없고 일만 하는 사람처럼 들린다.\n- '플레잉 코치'? 인력이 부족해서 어쩔 수 없이 뛰는 '땜빵'의 뉘앙스\n- '마이크로매니저'? 디테일을 챙기려다 사사건건 간섭하는 꼰대로 오해\n\n4. 우리는 전략적 높이(Height)와 실무적 깊이(Depth)를 모두 갖춘 이들을 설명할 새로운 언어가 필요하다고 느낀다.\n\n5. 미국 채용 시장의 표준, 'Visionary Hands-on Leader'\n- 미국 실리콘밸리의 임원 채용 공고(JD)를 보면 심심치 않게 등장하는 표현이 바로 'Visionary Hands-on Leader'이다.\n- 이 단어는 우리에게 필요한 개념을 정확하게 포착하고 있다.\n- Visionary (Head): 숲을 보고 미래의 방향성을 제시하는 '경영자의 눈'을 가졌으면서,\n- Hands-on (Hand): 필요할 때 언제든 소매를 걷어붙이고 최전선에서 문제를 해결할 수 있는 '실무자의 손'을 가진 리더.\n\n6. 이것은 단순히 \"일을 많이 한다\"는 뜻이 아니다.\n-\"비전과 실행 사이의 괴리(Gap)가 없는 상태\"를 의미한다.\n- 리더가 실행의 난이도와 디테일을 완벽히 이해하고 있기에, 뜬구름 잡는 지시를 하지 않고 가장 현실적이고 빠른 길을 제시할 수 있다는 뜻이다.\n\n7. 왜 지금 이 단어가 필요한가?\n- 한국에서도 토스, 배달의민족 같은 유니콘 기업이나 AI 스타트업을 중심으로 FDE(Forward Deployed Engineer) 같은 개념이 부상하고 있다.\n- 팔란티어를 통해 유명해지고 있는 이 개념은 고객의 문제를 해결하기 위해 엔지니어링 역량과 비즈니스 감각을 동시에 요구하는 직무이다.\n- 리더십도 마찬가지지다. 이제 말한 하는 관리자가 아니라, \"내가 해봤는데 이 방향이 맞아\"라고 코드로, 기획서로, 영업 실적으로 증명하는 리더를 원한다.\n\n8. 마치며: 당신의 고민은 당연하다.\n- 혹시 리더 혹은 임원이 되어서도 코드를 들여다보거나 피그마(Figma)를 켜는 자신이 '위임을 못 하는 건 아닐까' 고민이 되는가?\n- 아니다. 당신은 위임을 못 하는 것이 아니라, 'Visionary Hands-on Leader'라는 새로운 글로벌 스탠다드에 부합하는 리더인 것이다.\n- 이제 모호한 '실무형 리더' 대신, 이 명확한 단어로 정의해보자.\n- 비전을 그리면서도 손에 흙 묻히기를 두려워하지 않는 당신이, 지금 시대가 가장 원하는 리더이다!!\n\n#leader #VisionaryHandsonLeader #애런하우스랩스 #ainnect\n\n+) 혹시 리더쉽 관련 가장 GURU이신 Soojung Shin (신수정) 대표님이 이 글을 읽으신다면, 고견을 받고 싶습니다.",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7407932761396654080?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7407932761396654080%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "GEO 솔루션 AINNECT Founder & CEO | 베스트셀러『제로클릭』(길벗) 저자 | AaronHouse Labs 대표 | 제로투원 신규서비스 5회 런칭 | CJ E&M · NEXON KOREA · LINE PLUS · EST",
-      "images": [
-        "https://media.licdn.com/dms/image/v2/D5622AQHQFKb7RbNauw/feedshare-shrink_2048_1536/B56ZsgFraxIcAw-/0/1765769920710?e=1772064000&v=beta&t=Yq0eZYXzzW13qzjK8KzCpjZw3fETQAwVgjwx2Lz1OHA"
-      ],
-      "user_link": "https://www.linkedin.com/in/ACoAAAME3t8BpGdLygm7abbadbpG00aKZB48UXc",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "image",
-      "source": "network",
-      "sequence_id": 66,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/b75a30cad4f867d0f64e6a7a41fee46e.jpg"
-      ]
-    },
-    {
-      "index": 95,
-      "code": "7401863462173536257",
+      "code": "7409113677884194817",
       "username": "김덕중",
-      "created_at": "2025-12-03 15:02:49",
-      "time_text": "2개월",
-      "full_text": "구글 스콜라(학술검색)에도 AI 기능이 적용되었습니다.\nhttps://lnkd.in/gx9Er-JV\n\n아직 완성이 다 된것 같지는 않지만 품질과 속도 측면에서는 뛰어나네요.\n먼저 사용자가 요건을 입력하면, 논문이나 아티클을 찾아줍니다. 단, 결과가 나오는 화면에 저의 요건을 명확히 이해해서 답을 주고 있으며 해당 정보에 대한 2가지 중요 포인트를 제시합니다.\n더 좋은것은 마치 ChatGPT처럼 요건에 대한 대화를 나눌수 있다는 점입니다.\n\n거기에 브라우저 확장 프로그램도 제공을 하네요. 무료로 이런 기능이 제공되니 잘 활용해야겠습니다.",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7401863462173536257?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7401863462173536257%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "created_at": "2025-12-23 15:12:35",
+      "time_text": "1개월",
+      "full_text": "일자리의 평준화\n최근 미국 실업률 추이를 보면서 느끼는 변화가 있습니다. 지난 1년간 미국 실업률이 4.2%에서 4.6%로 올랐고, 특히 신입 대졸자들의 실업률은 약 10%까지 치솟았습니다. 이는 2008년 금융위기 이후 가장 높은 수준입니다. 더 흥미로운 점은 AI 자동화의 영향이 모든 계층에 동일하게 나타나지 않다는 것입니다.\n\n고경력 직장인들의 실업률은 평균 이하로 유지되고 있는 반면, 새로 졸업한 신입들이 일자리를 구하기 어려워하고 있습니다. 기업들이 의도적으로든 아니든 신입 채용을 줄이고 있기 때문입니다. 하지만 대학 학위가 필요 없는 일자리, 특히 헬스케어, 유통, 수리 등의 분야는 오히려 증가하고 있습니다. 결국 AI는 화이트칼라 업무를 자동화하면서 대학 졸업장의 가치를 재평가하게 만들고 있습니다.\n\n더 큰 문제는 다른 곳에 있습니다. 최근 설문조사에 따르면 미국 근로자의 70%가 경영진의 AI 관련 발언을 신뢰하지 않습니다.(예를들어 고용은 보장되고 생산성이 높아진다) 단 27%만이 CEO를 신뢰한다고 답했습니다. 이러한 신뢰 부족은 직원들의 변화 저항으로 이어지고, 결국 회사의 혁신 속도를 늦추는 악순환을 만들게 됩니다.\n\n냉정하게 보면 AI는 일자리 제거 기술이 아닙니다. 오히려 일자리를 '평준화'하는 기술입니다. 지금이 새로운 도구를 배우고 자신의 가치를 높일 수 있는 최고의 기회라고 생각됩니다. 신입이든 베테랑이든 AI와 새로운 기술에 투자하는 사람이 미래를 대응하게 될 것입니다.\nhttps://lnkd.in/gwKzihFC",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7409113677884194817?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7409113677884194817%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
       "profile_slogan": "숙명여대 겸임교수, Firb AI 연구소장",
       "images": [
-        "https://media.licdn.com/dms/image/v2/D5622AQEnzA6KfpnLkg/feedshare-shrink_2048_1536/B56ZrizmDoLwAk-/0/1764741767722?e=1772064000&v=beta&t=3ZhOZuihTdnU3MjU6GydQ-Zfmb_9Xf6noohnBeMf2pM"
+        "https://media.licdn.com/dms/image/sync/v2/D5627AQHIvv043s_qbQ/articleshare-shrink_1280_800/B56ZtHAFzcKEAU-/0/1766422765395?e=1770980400&v=beta&t=AHx9iu9TqJn9WnSZeG6LWfjaTMbiVoUVWRU5LkyE_90"
       ],
       "user_link": "https://www.linkedin.com/in/ACoAAAwBOVMBDI50rE9wyD4tsMaGWkV-85Sqd50",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "image",
       "source": "network",
-      "sequence_id": 44,
+      "sequence_id": 72,
       "sns_platform": "linkedin",
       "local_images": [
-        "web_viewer/images/604038b7ec16d3f65a95fcb999bdb297.jpg"
+        "web_viewer/images/4a465db7702c23c37fb049957177d427.jpg"
       ]
     },
     {
-      "index": 96,
-      "code": "7406575376073687040",
-      "username": "Zoon Chang",
-      "created_at": "2025-12-16 15:06:17",
+      "code": "7409057669149396992",
+      "username": "티타임즈",
+      "created_at": "2025-12-23 11:30:01",
       "time_text": "1개월",
-      "full_text": "AX 업계 사람들은 이런 경험을 다 한번씩 해봤을 것 같은데, 사례 조사를 위해 해외 리서치를 하다 보면 AX가 전세계 차원에서는 유래가 없는 단어라는 사실이 한번 놀랍고, 얼마나 국내에서는 만연하게 쓰이는지로 두번 놀라게 됩니다.\n\nAX라는 단어가 한국에만 존재하는 이유는\n\n\"AX는 한국의 SI 중심 IT 산업 구조, 정부 주도의 산업 정책, 오너 중심의 톱다운 의사결정, 그리고 빨리빨리 문화가 결합하여 만들어낸 합작품이다\"\n\nGemini Deep Research에게 질문해서 나온 결과니, 뜨끔하건 공감하건 AI의 성능에 한번 놀라고 가시면 좋겠습니다.\n\n한국의 비즈니스 생태계는 비즈니스 현장에서 사용되는 '용어와 개념'의 층위에서 항상 독자 노선을 걷는 경향이 있어왔다고 합니다. 서술적 용어보다는 단정적 단어로 다양한 내용들을 함축적으로 설명하려 한다는 거죠.\n\n그 이유는 의사결정권자들이 본질을 파악하고 의사결정 하는 경향보다는 개념으로 암묵지적 지시와 명령을 즐겨하는 문화와 딱 맞아 떨어지기 때문입니다. 이는 특히 비즈니스가 아닌 행정부, 정치쪽에서는 훨씬 두각되는 현상이고 이런 모호한 레벨에서 다양한 의사결정이 일어납니다.\n\n또 다른 유행을 탔던 단어들로는 '언택트', '4차 산업혁명'이 있다고 하네요.\n\n그렇지만 기회 요인이 굉장히 흥미로웠는데\n\"AI 기술의 응용과 확산 속도 면에서 한국이 글로벌 경쟁력을 갖게 하는 원동력\"\n\n으로 적용 될 수 있다고 합니다.\n\n모두모두 AX 합시다.",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7406575376073687040?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7406575376073687040%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "Venture Capitalist | Strong belief in an outlier-led future",
+      "full_text": "\"우리는 모두 JP모건 CEO인 제이미 다이먼처럼 일해야 합니다.\"\n젠스파크(Genspark)의 공동 창업자 웬 상(Wen S.) COO의 말입니다. CEO가 직접 PPT 디자인과 폰트를 고치거나 엑셀 수식을 입력하지 않듯, 지식 노동자들도 반복적인 업무에서 해방돼야 한다는 것이죠. 이를 가능케 하는 것이 바로 젠스파크의 '슈퍼 에이전트'(Super Agent)입니다.\n젠스파크의 가장 큰 특징은 '혼합 에이전트'(Mixture of Agents) 기술입니다. 오픈AI의 GPT, 앤트로픽의 클로드, 구글의 제미나이 등 최첨단 AI 모델 가운데 현재 작업에 가장 적합한 모델을 골라 실시간으로 조합해 사용합니다. 덕분에 시장 조사, 재무 모델링, PPT까지 단 몇 분 만에 수행할 수 있는데요. 젠스파크의 비전과 실제 시연 장면을 영상에서 확인해 보시죠.",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7409057669149396992?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7409057669149396992%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "팔로워 284명",
       "images": [
-        "https://media.licdn.com/dms/image/v2/D5622AQGp_8tD0YasEA/feedshare-shrink_2048_1536/B56ZslxCsEJsAw-/0/1765865172408?e=1772064000&v=beta&t=46242cyDhA6H8qyhEfx7bktu9N935Hnb2zvvmTfrNro"
+        "https://media.licdn.com/dms/image/v2/D561FAQFWaGiOOZqCjA/feedshare-document-cover-images_480/B56ZtJCit4IABM-/0/1766456965056?e=1770980400&v=beta&t=cn_eS1bOuNmmY5LmRdHt9EvK6G0f7EsS7KfV3WSDHsk"
       ],
-      "user_link": "https://www.linkedin.com/in/ACoAABIHJOUBv16FmGBnhJ9rBCiQ2qA0HNtYrao",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "user_link": "https://www.linkedin.com/company/%ED%8B%B0%ED%83%80%EC%9E%84%EC%A6%88/",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "image",
       "source": "network",
-      "sequence_id": 58,
+      "sequence_id": 71,
       "sns_platform": "linkedin",
       "local_images": [
-        "web_viewer/images/d66ee246eddb4072032361fe81907bef.jpg"
+        "web_viewer/images/b21b6d3b210def77bc93edb8eb50f7f2.jpg"
       ]
     },
     {
-      "index": 97,
-      "code": "7402689128598806528",
-      "username": "김덕중",
-      "created_at": "2025-12-05 21:43:43",
-      "time_text": "2개월",
-      "full_text": "영화 Hidden Figures에는 흥미로운 단어가 등장한다. 계산과 궤적을 풀어내던 여성 수학자들을 NASA는 “컴퓨터”라고 불렀다. 지금은 기계를 가리키는 그 단어가, 불과 수십 년 전까지만 해도 사람을 의미했다는 사실은 기술의 흐름 속에서 언어가 어떻게 이동하는지 보여주는 상징적인 장면이다. 인간이 맡던 역할이 기술에 흡수될 때, 사회는 그 역할의 이름까지 자연스럽게 기계에 넘긴다.\n\n이 변화는 예외가 아니라 반복된 패턴이다. Operator는 기계를 직접 다루던 사람이었지만 이제는 시스템 프로세스를 가리키고, Calculator는 계산을 담당하던 직업명이었다가 손바닥만 한 장치의 이름으로 바뀌었다. Scribe, Drafter, Secretary, Typist 등도 같은 길을 걸었다. 사람에서 기능으로, 기능에서 소프트웨어 모듈로 의미가 이동하며 인간의 일은 기술 언어 속으로 녹아들었다.\n\n지금은 Agent라는 단어가 같은 궤적을 따라가고 있다. 누군가의 요구를 대신 수행하는 사람을 의미하던 단어가, 이제는 목표를 설정하고 실행까지 이어가는 소프트웨어의 이름으로 자리 잡고 있다. 언어가 이렇게 움직인다는 것은 단순한 명칭 변경이 아니다. 사회가 어떤 역량을 누구에게 맡기기 시작했는지, 역할의 중심이 어디로 이동했는지를 가장 솔직하게 드러내는 지표다.\n\n그리고 나는 이 흐름이 여기서 멈추지 않는다고 본다. 과거에는 반복적인 계산과 기록 업무의 이름들이 기계로 넘어갔다면, 앞으로는 리크루터, 전략가, 마케터처럼 조직의 핵심 역할을 구성하던 직업명들까지 빠른 시간 안에 기술의 이름으로 재편될 가능성이 매우 높다. AI는 단순 작업을 넘어서 판단, 설계, 선택 같은 고유한 지적 활동까지 흡수하고 있기 때문이다. 직업의 이름이 기술의 기능명으로 바뀌는 순간, 그 역할은 이미 인간 고유의 영역에서 벗어난 것이다.\n\n이 변화는 위기라기보다 명확한 전환 신호다. 인간의 일 중 일부는 기계 언어로 이동하고, 일부는 새로운 의미를 가지며 재정의될 것이다. 그리고 그 흐름은 지금까지의 어떤 시대보다 빠르게 진행되고 있다. 결국 우리가 직면한 질문은 “기계가 인간의 일을 대신할까?”가 아니다. 더 정확한 질문은 “인간의 일 중 무엇이 남을 것인가?”다. 앞으로의 조직, 역할, 그리고 리더십을 다시 설계해야 하는 이유가 여기에 있다.",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7402689128598806528?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7402689128598806528%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "숙명여대 겸임교수, Firb AI 연구소장",
+      "code": "7408959519537426432",
+      "username": "Kyunghun Lee",
+      "created_at": "2025-12-23 05:00:01",
+      "time_text": "1개월",
+      "full_text": "Codex 프로덕트 리더가 보는 코딩 에이전트의 미래\n\nSora 안드로이드 앱은 2-3명의 엔지니어가 28일 만에 만들어 앱스토어 1위에 올랐습니다. OpenAI 내부에서 Codex를 활용한 결과입니다. Codex가 기존 iOS 앱 코드를 참조하면서 작업 계획을 세우고, 두 플랫폼을 동시에 보며 구현했습니다.\n\nAtlas 브라우저 팀에서도 비슷한 변화가 일어나고 있습니다. 2-3명이 2-3주 걸리던 작업을 이제 1명이 1주면 끝냅니다. Codex는 8월 이후 20배 성장했고, OpenAI API에서 가장 많이 사용되는 코딩 모델이 됐습니다.\n\n코딩 에이전트가 이 정도 속도를 내는 시대입니다. Codex의 프로덕트 리드 Alexander Embiricos는 코딩 에이전트의 미래를 어떻게 보고 있을까요?\n\n1. 코드 작성은 재미있고, 코드 리뷰는 재미없습니다\n\n코딩 에이전트가 발전하면서 역설적인 상황이 생겼습니다. 코드 작성은 엔지니어에게 가장 재미있는 부분이라고 합니다. 플로우에 빠져서 설계하고, 구현하고, 테스트하는 것. 그런데 이제 AI가 코드를 대신 쓰면서, 엔지니어의 주된 업무가 \"AI가 쓴 코드를 리뷰하는 것\"으로 바뀌고 있습니다.\n\n빌딩이 쉬워지면서, 병목이 두 곳으로 이동했습니다. '무엇을 만들지 결정하는 것'과 '만들어진 코드를 검토하는 것'. 리뷰할 코드가 100시간치 쌓여 있는데, 누가 그걸 다 검토할까요? 재미있는 일은 AI가 하고, 재미없는 일은 인간이 하는 구조가 되었습니다.\n\n2. Codex 팀은 이 문제를 어떻게 풀고 있을까요?\n\n(1) 첫 번째 해법: 에이전트가 스스로 검증하게 만들기\n\nCodex 팀의 우선순위는 \"코드를 더 잘 쓰게 만드는 것\"이 아닙니다. \"리뷰 부담을 줄이는 것\"입니다. 작은 예시가 있습니다. Codex 웹에서 에이전트가 작업을 완료하면 무엇을 먼저 보여줄까요? 코드 diff가 아니라 결과물의 이미지 프리뷰입니다. 코드를 한 줄씩 읽기 전에, 일단 \"이게 내가 원한 결과인가?\"를 빠르게 확인할 수 있게 한 것입니다. 인간을 최대한 빠르게 가속시키는 방법을 고민한 결과입니다.\n\n더 근본적인 방향도 있습니다. 에이전트가 스스로 작업을 검증하게 만드는 것 입니다. Atlas 브라우저 팀의 한 엔지니어는 Codex가 스스로 작업을 검증하도록 설정했습니다. 쉬운 작업은 아니었습니다. \"왜 네 작업을 스스로 검증하지 못해? 고쳐봐\"라는 프롬프트를 반복해서 주면서, Codex가 점진적으로 검증 로직을 구축하도록 유도했습니다. 결과적으로 인간이 직접 리뷰해야 할 범위가 줄어들었습니다.\n\n이러한 자가 검증 능력 덕분에 Codex는 이제 24시간 이상 연속 작업도 가능합니다. 보통 AI 모델은 컨텍스트 윈도우 한계가 있어서 긴 작업이 어렵습니다. Codex는 \"compaction\"이라는 기능으로 이 문제를 해결했습니다. 컨텍스트가 한계에 가까워지면 핵심 맥락을 압축하고 새로운 컨텍스트에서 이어서 작업합니다. 밤새 돌려놓고 아침에 결과를 확인하는 것이 가능해졌습니다.\n\n하지만 이것만으로는 부족합니다. 에이전트가 코드를 검증할 수 있어도, 애초에 \"왜 이 코드를 짜야 하는지\" 맥락을 모르면 여전히 인간이 방향을 잡아줘야 합니다.\n\n(2) 두 번째 해법: 에이전트가 맥락까지 이해하게 만들기\n\nAlexander는 현재 Codex를 이렇게 표현했습니다. \"Slack을 안 읽고, DataDog도 안 보는 똑똑한 인턴 같다\"고 합니다. 아무리 코드를 잘 짜도, 팀에서 어떤 논의가 오갔는지, 어떤 이슈가 발생했는지 모르는 상태라면 신뢰하기 어렵습니다. 매번 인간이 맥락을 설명해줘야 하고, 결과물을 검토해줘야 합니다. 인턴이 아무리 똑똑해도, 팀 상황을 모르면 혼자 일을 맡기기 어려운 것과 같습니다.\n\nCodex 팀이 그리는 다음 단계는 다릅니다. 에이전트가 팀 커뮤니케이션을 이해하고, 모니터링 도구를 보고, 맥락을 파악한 상태에서 일하는 것 입니다. Alexander는 이를 “Chatter-driven development\"라고 불렀습니다. 스펙 문서 없이, Slack 대화와 미팅 맥락만으로 코드가 작성되는 세상입니다.\n\nOpenAI 내부에서는 이미 비슷한 실험이 진행 중입니다. Codex가 자체 학습 인프라를 모니터링하면서, 학습 그래프에 이상 징후가 감지되면 스스로 대응하는 구조입니다. 원래 학습 과정을 \"베이비시팅\"하던 건 인간의 역할이었습니다. 학습 비용이 비싸고, 문제가 생기면 빨리 대응해야 했습니다. 이제 Codex가 그 역할을 대신합니다. 에이전트가 맥락을 이해하고, 스스로 검증까지 한다면? 인간이 개입해야 할 지점이 크게 줄어듭니다.\n\n3. 코딩 에이전트의 다음 단계는 무엇일까요?\n\nAI 모델의 성능보다는 인간의 타이핑 속도, 인간의 멀티태스킹 속도가 병목이라고 합니다. 에이전트가 하루에 수천 번 도움을 줄 수 있다고 하더라도, 매번 \"이거 괜찮아요?\"라고 승인을 요청한다면 인간이 처리할 수 있는 한계를 금방 넘어섭니다. 하루에 천 개의 푸시 알림을 받는 상황입니다. 결국 문제는 모델이 충분히 똑똑하지 않아서라기 보다는, 인간이 모델의 출력물을 검토하고 승인하는 속도가 병목이 되고 있습니다.\n\n그의 전망에 따르면, 내년부터 얼리 어답터들의 생산성이 급격히 올라가기 시작한다고 합니다. 새로운 스택 위에서 시작하는 스타트업들은 에이전트가 훨씬 자율적으로 작동하는 환경을 구축할 수 있습니다. 레거시 시스템이 많은 대기업은 시간이 더 걸리겠지만, 이후 몇 년에 걸쳐 점점 더 큰 조직들이 그 흐름을 따라갈 것입니다.\n\n결국 코딩 에이전트의 다음 단계는 \"더 똑똑한 모델\"이 아니라 \"인간 개입을 최소화하는 시스템”이 됩니다. 에이전트가 맥락을 이해하고, 스스로 검증하고, 필요할 때만 인간에게 물어보는 구조. Codex 팀은 그 방향으로 움직이고 있습니다.",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7408959519537426432?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7408959519537426432%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "CAIO & Deputy CEO @ Channel Corp | AI × B2B SaaS",
       "images": [],
-      "user_link": "https://www.linkedin.com/in/ACoAAAwBOVMBDI50rE9wyD4tsMaGWkV-85Sqd50",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "user_link": "https://www.linkedin.com/in/ACoAAA5RhH4BjDv2vMF1Onz2ppvG6jeLmEGo93E",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "text",
       "source": "network",
-      "sequence_id": 45,
+      "sequence_id": 70,
       "sns_platform": "linkedin"
     },
     {
-      "index": 98,
-      "code": "7403920649229926400",
-      "username": "Suk Hyun K.",
-      "created_at": "2025-12-09 07:17:20",
-      "time_text": "2개월",
-      "full_text": "프롬프트 엔지니어링은 사실 허상이었다...\n\n\"AI의 핵심은 기술이 아닌 공감지능 그리고 사회성\"\n\n최근 발표된 이 논문은 지금까지 우리가 AI와 협업하는 방식에 대해 근본적인 전환을 요구한다. 지금까지 AI 활용의 핵심이라고 믿어왔던 것은 더 강력한 모델, 더 정교한 프롬프트, 더 많은 파라미터, 더 긴 컨텍스트 창, 더 높은 벤치마크 점수 같은 기술적 요소였다.\n\n우리는 모든 문제의 답을 “프롬프트 엔지니어링”에서 찾으려 했고, 충분히 정확한 문구만 입력하면 AI가 우리가 원하는 답을 줄 것이라고 믿었다. 그러나 이 연구는 그 믿음 전체가 잘못된 전제에 초점을 맞춘 조작적 환상이었음을 여실히 드러낸다.\n\nAI 자체가 병목이 아니라, AI라는 비인간적 지능과 협업하는 인간의 능력 자체가 병목이었다. 더 나은 기술적 인프라를 쌓아 올려도, 인간이 AI의 사고 구조를 근본적으로 이해하지 못한다면 성능은 무용하다는 것이 논문의 핵심논지다.\n\n연구진은 667명의 사용자가 문제를 단독으로 풀 때 그리고 AI와 함께 풀 때를 비교하여 분석했고, 그 결과는 완전히 예상 밖이었다. 인간의 단독 문제해결 능력은 AI와의 협업 능력과 거의 상관관계가 없었다. 다시말해, 표면적으로 똑똑하고 뛰어난 문제 해결자가 AI와 함께할 때도 뛰어난 것은 아니었던 것이다.\n\nAI 협업 능력을 결정하는 핵심 요인은 ‘지능’이 아니라 Theory of Mind(ToM) 즉, AI가 무엇을 알고, 무엇을 모를지, 어디서 오해할지를 추론하고 모델링하는 능력이었다. 논문의 회귀분석표는 이것을 명확하게 보여준다. 사용자의 ToM 점수는 AI 응답의 품질을 매우 정확히 예측한 반면, 단독 문제 해결 능력은 거의 영향을 주지 않았다.\n\n심지어 같은 사람이 같은 문제를 풀더라도, 그 순간 의도적으로 더 많은 공감 능력을 발휘해 사고의 관점을 AI 쪽으로 맞추었을 때는 응답의 품질이 눈에 띄게 향상되었다. 다시 말해, Theory of Mind는 타고난 고정 능력이 아니라 사용자가 필요할 때 의식적으로 활성화할 수 있는 동적, 가변적 능력이었다.\n\n이것은 프롬프트 엔지니어링이라는 분야가 사실 기술적 스킬이 아니라 사회적·인지적 스킬이라는 사실을 뜻한다.\n\n지금까지 유행했던 모든 “10가지 프롬프트 팁”, “최고의 템플릿”, “비밀 문구” 같은 것들이 실제로 성능을 높여온 이유는 템플릿 자체의 구조적인 마법 때문이 아니라, 그 템플릿이 사용자로 하여금 AI가 놓칠 맥락을 보완하게 만들고, 문제의 구조를 명확히 정의하게 만들고, AI가 오해할 구간을 줄이도록 사고과정을 강제했기 때문이다.\n\n즉, 템플릿이 사용자에게 ToM을 억지로라도 활성화시킨 것이다. 진짜 차이를 만드는 것은 문구가 아니라, 템플릿을 쓰면서 사용자가 AI의 관점에서 사고하도록 강요되는 자연스러운 과정에 있었다.\n\n연구의 수치적 결과들은 이를 더 강하게 뒷받침한다. 인간 단독의 경우 평균값은 약 0.58이었지만, GPT-4o와 협업하면 성능은 무려 29포인트 상승했다. Llama 3.1–8B도 상승 폭이 있었지만 그보다는 훨씬 낮았다. 사실 중요한 것은 모델의 단독 점수가 아니라, 모델이 인간과 함께할 때 인간을 얼마나 더 똑똑하게 만들어주느냐였다.\n\n지금까지 업계는 MMLU 같은 정적 벤치마크에 천착해 “AI가 혼자 얼마나 잘 푸는가”만 측정해왔다. 하지만 현실의 AI는 인간과 함께 일해야 한다. 그렇다면 진짜 핵심은 “이 모델은 인간과 팀을 이루었을 때 얼마만큼의 상승효과를 만들어내는가”여야 한다. GPT-4o가 특히 강력했던 이유는 모델 단독의 지능이 아니라, 협업 시 창출하는 지능의 증가량, 즉 진짜 의미의 ‘시너지’ 때문이었다.\n\n이제 우리는 명확히 구분해야 할 필요가 있다. AI를 잘 쓰는 사람과 못 쓰는 사람의 차이는 프롬프트 템플릿이나 모델 버전 때문이 아니다. AI를 마치 자동판매기처럼 “명령을 넣으면 답을 뱉는 기계”로 취급하는 사람은 결코 높은 성능을 얻을 수 없다.\n\n반대로, AI를 하나의 비인간적 사고체계를 가진 지능으로 인정하고, 그 지능이 어디서 혼돈할지, 어떤 정보가 필요할지, 어떤 맥락을 놓칠지 직감적으로 파악하려 노력하는 사람은 같은 모델에서도 완전히 다른 차원의 결과를 얻는다. 이것은 소수의 “천재 프롬프트 엔지니어들”이 압도적 성능을 뽑아내는 이유를 설명한다. 그들은 비밀 프롬프트를 알고 있는 것이 아니라, AI의 혼돈 패턴을 감지하고, 정보 간극을 먼저 발견하고, 스스로 그 공백을 채워주는 협업적 직관을 이미 몸에 익혔기 때문이다.\n\n이 직관은 점점 자동화되어, 그들은 AI가 혼란스러워할 지점을 본능적으로 피하고, 필요한 정보를 자연스럽게 제공하여, 마치 인간 팀원과 호흡을 맞추듯 AI와 소통한다. 그래서 같은 GPT-4o를 쓰더라도 어떤 사람은 혁신적 결과를 뽑아내고 어떤 사람은 평범한 답변밖에 받지 못하는 것이다.\n\n이 연구는 우리에게 기술 중심의 사고를 넘어 “관계 중심의 AI 이해”로 이동하라고 요구한다.\n\n우리가 배워야 하는 것은 명령 기술이 아니라 관점 전환 능력, 상대 지능의 한계를 미리 예측하는 능력, 보이지 않는 정보 간극을 메우는 능력이다. AI 시대의 진짜 실력자는 더 똑똑한 인간이 아니라, 비인간적 지능을 이해하려는 인간, AI와 함께 사고하는 인간, 인간-AI 팀 전체의 능력을 증폭시키는 인간이다.\n\n기술적 능력이 아니라 사회적·인지적 능력이 중심이 되어 이동하는 이 변화는 AI시대의 생존 방법뿐 아니라, 앞으로의 인재상까지 완전히 재정의 할 수 있다.\n\n반복해서 말하지만, 프롬프트 엔지니어링은 기술이 아니라 협업 그 자체이다. 그리고 협업의 핵심은 공감이며, 이제 우리는 인간이 아닌 이종지능과의 공감이라는 새로운 능력을 배양해야 한다. 인간이 AI를 이해하는 바로 그 순간, AI 역시 인간을 비약적으로 더 강하게 만든다. 이것이 연구가 말하는 협업적 지능의 본질이며, 앞으로 우리가 살아가야할 세계에서 가장 중요한 지적 역량이 될 것이다.\n(댓글에 2화 업로드 했습니다)\n#지능 #AI #인공지능 #프롬프트 #프롬프트엔지니어링 #Prompt #MIT #ToM #협업 #논문 #공감",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7403920649229926400?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7403920649229926400%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "AI Business Strategy Specialist / Ex-Startup Founder",
-      "images": [
-        "https://media.licdn.com/dms/image/v2/D4E22AQFH0oxr7T-5EQ/feedshare-shrink_1280/B4EZsACmCKHUAc-/0/1765232239096?e=1772064000&v=beta&t=ZcOhECg1_L_NvFgaB5jnUdhdYIIXhBFzjAiNBUznnhw"
-      ],
-      "user_link": "https://www.linkedin.com/in/ACoAAFt2rQcBjVxZv3E_NY1oLQYRn714_JoFQ3E",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "image",
+      "code": "7408595054950354944",
+      "username": "Kyunghun Lee",
+      "created_at": "2025-12-22 04:51:46",
+      "time_text": "1개월",
+      "full_text": "CEO의 스타일을 복제한 AI에게 피드백 받는 회사가 있습니다\n\nZapier에서는 278명의 직원이 전략 문서를 CEO에게 보여주기 전에 \"Exec GPT\"에게 먼저 피드백을 받습니다. 이 GPT는 CEO Wade의 피드백 스타일, 회사 가치관, 전략 문서 작성 원칙을 학습했습니다. 그리고 이걸 만든 사람은 AI 엔지니어가 아닙니다. CEO의 EA(Executive Assistant), Courtney Hickey입니다.\n\n1. 이 피드백은 너무 소프트해요\n\nExec GPT의 첫 버전에 Wade가 의견을 주었습니다. \"코칭이 너무 소프트해요. 더 demanding하게 해주세요.” Courtney는 프롬프트를 수정했습니다. \"Demanding하면서도 supportive하게\"라는 Zapier의 리더십 원칙을 반영했습니다.\n\n그 결과, AI가 이러한 피드백을 줍니다. “이건 전략 문서가 아니라 잡담처럼 읽혀요. 승인자도 없고, 배경도 부족해요. 이렇게 수정해보세요.\" 직원들의 반응은 어땠을까요? 혹평당할까 걱정했는데, 오히려 간단하고 실용적인 수정 제안을 받았다고 합니다.\n\n2. 미팅에서도 대표의 기준이 작동합니다\n\nCourtney는 여기서 멈추지 않았습니다. 모든 미팅 참석자에게 AI 피드백을 보내는 시스템도 만들었습니다. 미팅 녹취록을 분석해서 참석자별로 Slack DM을 보냅니다. 기준은 \"The Five Dysfunctions of a Team\", 팀 협업의 5가지 핵심 역량을 다룬 리더십 프레임워크입니다. 발언 시간, 잘한 점, 성장 기회가 포함됩니다.\n\n여기서도 Wade가 피드백을 줬습니다. \"더 tough하게 해주세요” 그 결과 이런 메시지가 나오게 됐습니다. \"의견 충돌을 더 직접적으로 다뤄야 할 것 같아요. 갈등 회피 경향이 보입니다.\"\n\n대표가 모든 미팅에 참석할 수는 없습니다. 하지만 대표의 기준은 모든 미팅에 적용될 수 있습니다. 피드백이 자동화되고 루틴이 되면, 받는 사람의 긴장감도 줄어듭니다. 모든 사람이 똑같이 받습니다.\n\n3. 에이전트를 인턴처럼 생각해요\n\nCourtney는 어떻게 이런 시스템들을 만들 수 있었을까요? 그녀는 엔지니어가 아닙니다. 코딩도 못합니다. \"저는 그냥 말해요. 친구랑 산책하면서 얘기하듯이. '먼저 캘린더를 보고, 준비가 필요한 미팅을 찾고, 참석자를 검색하고...' 이렇게요.\" 그녀의 비결은 에이전트를 인턴처럼 생각하는 것이라고 합니다. 처음엔 독립적으로 못 하지만, 시스템과 생각 방식을 가르치고 도구를 주면 점점 똑똑해집니다.\n\nExec GPT와 미팅 피드백 시스템만 있는 게 아닙니다. 주간 미팅 준비 에이전트도 있습니다. 금요일 아침에 자동으로 다음 주 캘린더를 스캔하고, 외부 참석자를 조사하고, CRM과 이메일에서 관계 이력을 찾아 정리해줍니다. 예전에는 2시간 걸리던 일입니다. 인턴 한 명이 아니라, 인턴 군단을 만들었습니다.\n\n4. 하지만 대표 자체는 복제가 안 됩니다\n\n그러면 대표의 피드백 스타일을 복제했으니, 대표 자체도 AI로 복제할 수 있는 걸까요? Courtney의 대답은 \"아직은 아니다\"입니다. CEO는 끊임없이 배우고, 새로운 정보를 흡수하고, 매일 성장합니다. 과거의 결정은 새로운 맥락에서 이미 구식이 됩니다. AI가 아무리 빨리 업데이트돼도, 이 속도를 따라가긴 어렵습니다.\n\n물론 조만간 멀지 않은 미래에는 CEO가 매일 보고 듣고 생각하는 것들이 실시간으로 AI에 반영될 수도 있습니다. 하지만 아직은 계속 진화하는 리더의 판단력까지는 복제가 어렵다고 합니다. 글쓰기 스타일, 피드백 패턴, 의사결정 프레임워크처럼 천천히 쌓이고 축적되는 것들부터 복제되고 있습니다.\n\n5. 예전에는 제가 클론이었어요\n\nAI가 EA를 대체한다고들 합니다. 하지만 Courtney는 5년간 3번 승진했습니다. 예전에는 그녀가 Wade의 클론이었다고 합니다. 그의 스타일로 글을 쓰고, 스케줄을 관리하고, 그처럼 일을 처리했습니다. 하지만 이제는 AI 클론들이 그녀를 돕습니다. 오히려 AI 인턴 군단을 거느리며 조직 전체에 영향력을 갖게 됐습니다.\n\n자기 업무의 시스템을 설명할 수 있는 사람은 AI를 거느리고, 설명할 수 없는 사람은 AI에게 대체되는 시대가 왔습니다. 그리고 머지않아 AI 클론에게 피드백 받고, 업무 지시를 받는 날이 올 것 같기도 합니다.",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7408595054950354944?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7408595054950354944%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "CAIO & Deputy CEO @ Channel Corp | AI × B2B SaaS",
+      "images": [],
+      "user_link": "https://www.linkedin.com/in/ACoAAA5RhH4BjDv2vMF1Onz2ppvG6jeLmEGo93E",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "text",
       "source": "network",
-      "sequence_id": 48,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/fc5e14dad4f48073c83e187d21079658.jpg"
-      ]
+      "sequence_id": 69,
+      "sns_platform": "linkedin"
     },
     {
-      "index": 99,
-      "code": "7399048817557368832",
-      "username": "Jaeyun Henry Lee",
-      "created_at": "2025-11-25 20:38:25",
-      "time_text": "2개월",
-      "full_text": "와우 .. Gemini 3.0의 시스템 프롬프트가 공유되고 있습니다.\n\n구글 딥마인드 개발자가 공유한 자료인데요. 프롬프트를 잘 작성하는 가장 좋은 방법은 그들이 쓴 '원본'을 보는 겁니다.\n\n재밌는 점은 이 프롬프트 하나 바꿨다고 벤치마크 성능이 5%나 올랐다고 합니다. 그냥 슥 읽고 \"아 그렇구나\" 하고 넘기지 마세요. 한 문장 한 문장, 아주 집요하게 읽어야 합니다.\n\n그 안에 흥미로웠던 점을 공유합니다.\n\n> 충돌이 생기면 '서열'을 정해줬습니다. 제일 중요한 건 우선순위인데요. 그냥 \"알아서 잘 판단해\"가 아니라, 정책이 1번, 순서가 2번... 이렇게 서열을 딱 정해줍니다. 그래야 에이전트가 헷갈리지 않고 기준대로 움직입니다.\n(\"Resolve conflicts in order of importance:1.1) Policy-based rules...1.2) Order of operations...1.3) Other prerequisites...1.4) Explicit user constraints...\")\n\n> 제미나이는 이미 강력한 추론 능력을 갖추고 있습니다. 하지만 복잡한 에이전트가 진짜 실력을 발휘하려면, 단순한 추론을 넘어선 구체적인 프롬프트가 필요합니다. 실제 시스템 프롬프트를 참고하며 에이전트를 구축해보시길 바랍니다.\n\n> 실제 구글 개발자는 에이전트에게 이 세 가지 행동을 명시적으로 요구하라고 합니다. 문제가 생겨도 뚫고 나가는 1. 끈기(Persistence), 미리 따져보는 2. 위험 평가(Risk Assessment), 그리고 앞서 내다보는 3. 선제적 계획(Proactive Planning). 에이전트 구축하시는 분들은 3가지 요소는 기억하시면 좋을듯합니다.\n\n도움이 되셨으면 좋겠습니다. 아래에 링크도 공유해드립니다.",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7399048817557368832?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7399048817557368832%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "AX Consultant @IMPACTYUN// Supporting everyone in effectively utilizing AI",
-      "images": [
-        "https://media.licdn.com/dms/image/v2/D5622AQEY2sszQSO_Hw/feedshare-shrink_1280/B56Zq6zr.aI8Aw-/0/1764070704190?e=1772064000&v=beta&t=gTNDvV1jgogHkrrmLng4-2GmXrOBYniQFvYwgTfV_oM"
-      ],
-      "user_link": "https://www.linkedin.com/in/ACoAAD9O2zgBLZsZZofcYY_6029h13lI48hT1hc",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "image",
-      "source": "network",
-      "sequence_id": 35,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/1cf2bd0e94760980e0b521eff3c39628.jpg"
-      ]
-    },
-    {
-      "index": 100,
       "code": "7408454800436080640",
       "username": "Suk Hyun K.",
       "created_at": "2025-12-21 19:34:26",
@@ -5969,7 +5887,7 @@ const snsFeedData = {
         "https://media.licdn.com/dms/image/v2/D5612AQEQzg6Z1uvbKg/article-cover_image-shrink_600_2000/B56Zs9xSw6IAAQ-/0/1766267892852?e=1772064000&v=beta&t=42q1XBKcYIEHctAMN2v5FkmqWxh4FEMUiCoStqSDoeU"
       ],
       "user_link": "https://www.linkedin.com/in/ACoAAFt2rQcBjVxZv3E_NY1oLQYRn714_JoFQ3E",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "image",
       "source": "network",
       "sequence_id": 68,
@@ -5979,29 +5897,59 @@ const snsFeedData = {
       ]
     },
     {
-      "index": 101,
-      "code": "7407327158521647104",
-      "username": "정태일",
-      "created_at": "2025-12-18 16:53:36",
+      "code": "7407951903344685056",
+      "username": "Soojung Shin (신수정)",
+      "created_at": "2025-12-20 10:16:06",
       "time_text": "1개월",
-      "full_text": "저는 17년 차 홍보인이자 스피치라이터입니다. 포스코퓨처엠, 삼양홀딩스, 한국전력 등 국내외 대기업과 공기업을 거치며 보도자료, 보고서, 연설문, 인터뷰, 칼럼 등을 써왔습니다. 신춘문예에 가슴이 설레던 뼛속까지 문과생이지만, 사회의 첫발부터 지금까지 이공계와 살을 부비며 살았습니다. 그들만의 난해한 전문 용어와 개념들을 누구나 알기 쉽게 풀어쓰는 것이 저의 오랜 일입니다.\n\n퇴근 후에는 자기 글을 쓰는 '월급쟁이 작가'로 살고 있습니다. 지금까지『업무시간을 반으로 줄이는 챗GPT글쓰기』 『회사에서 글을 씁니다』 『홍보인의 사생활』등 총 6권의 책을 썼고, 내년에는 7번째 책인 『업무능력을 2배로 만드는 AI 글쓰기』를 출간할 계획입니다.\n\n____\n\n*아래 인포그래픽은 나노바나나로 제작했어요. 아래 프롬프트 퍼 가셔서 괄호를 채우고 자기 내용으로 만들어 보세요.\n\n[전체 구도 및 형식]\n16:9 비율의 인포그래픽. 왼쪽에서 오른쪽으로 흐르는 (인물소개) 다이어그램 구조.\n\n[핵심 스타일: 아날로그 손맛]\n전체적으로 화이트보드 위에 마카펜으로 쓱쓱 그린 듯한 '손그림 낙서(Doodle sketch)' 및 '손글씨' 스타일. 모든 선은 자로 댄 듯 반듯하지 않고, 자연스럽게 삐뚤빼뚤하며 질감이 살아있어야 함.\n\n[중앙 핵심 요소: 얼굴 캐리커쳐]\n화면 정중앙에 [첨부된 참조 이미지] 속 인물의 얼굴 이목구비, 표정, 헤어스타일을 '완벽하게 닮게' 묘사한 펜터치 스타일의 캐리커쳐를 크게 배치. 사진 그대로가 아니라, 특징을 살린 손그림 느낌이어야 함.\n\n[세부 구성 요소]\n1. 배경: 깨끗한 화이트 배경.\n2. 아이템: 납작한 단색(플랫 컬러)의 노랑, 분홍, 하늘색 '포스트잇'과 다양한 모양의 '말풍선'들이 배치됨.\n3. 연결: 각 요소들은 손으로 그린 투박한 화살표와 점선으로 연결되어 흐름을 보여줌.\n\n[텍스트 내용 (손글씨체 적용)]\n중앙 캐리커쳐에서 나온 가장 큰 말풍선 안에 손글씨체로 다음 내용을 적어줘: \"( 여기에 본인의 핵심 강점 메시지를 입력하세요 )\"",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7407327158521647104?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7407327158521647104%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "스피치라이터, CEO 연설문 작가, 소설가. <​업무시간을 반으로 줄이는 챗GPT 글쓰기​>, <​회사에서 글을 씁니다​> , <​내일은 오를 거야, 제발​> 外 다수. 뼛속까지 문과로 태어났지만, 돈 벌기 시작하면서 내내 이공계와 내내 살 부대끼며 살고 있습니다. 문이과를 통합하는 (테그니컬 라이터)를 지향합니다. 지금은 (스피치라이터)입니다.",
+      "full_text": "명예퇴직한 한 후배가 전해주는 레슨---\n\n1. 이번 주, 작년 49세에 대기업을 스스로 명예 퇴직한 한 후배가 찾아와서 만났다. 사실 이 후배는 기업에서 좋은 평가를 받았고 빠른 나이에 부장으로 승진했기에 조금 의외였었다.\n\n2. 실력은 더 이상 향상되지 않고 고과와 승진에만 신경쓰며 나이들어 가는 자신의 모습을 보고 더 늦기 전에 결단해야겠다는 생각을 했다고 한다. 그러면서 이야기한다. \"김부장 드라마가 인기라고 하는데 저는 차마 못보겠더라고요. 아마 퇴임자들은 비슷할겁니다\"\n\n3. 박사학위가 있어 퇴임 후 교수직 등을 지원했지만 잘 안되었다고 한다. 그래도 책도 쓰고 심사나 자문 등을 조금씩 하다가 다행히 박사학위 공부를 같이 하던 선배의 연결로 지금은 새로운 직장을 잡아 즐겁게 일하고 있다. 제게 말한다. \"대표님이 weak tie의 중요성에 대해서 많이 말씀하셨잖아요. 세상에 나오니 회사 내 인맥은 힘을 못쓰더라고요. 그런데 약하게나마 이어졌던 외부 연결이 저에게 기회를 주더라고요\"\n\n4. 내가 회사 다니면서 가장 잘했다고 생각하는 것은 무엇인가? 라고 물었다.\n1) 회사 지원으로 MBA를 하고, 이후 자신의 돈으로 박사를 했는데 정말 잘했다. 학위 자체가 도움이 된 것보다는 다른 업종, 다른 스테이지의 사람들을 만남으로써 세상에 대한 눈이 띄였고 weak tie가 만들어졌다(저도 학위자체가 중요하다고 보진 않습니다). 만일 회사 안에만 있었으면 우물안 개구리였을 것이다.\n2) 경영지도사 자격증을 취득했는데 이것도 잘한 행동이었다. 이를 기반으로 다양한 공공기관 등의 자문, 심사 등 기회가 있었다.\n3) 회사 다닐때 한 부서에 머물지 않고 새로운 도전이 필요할때 다른 업무로 이동해서 도전 했다. 사실 한 곳에 계속 있으면 더 좋은 고과를 받을 수 있었지만 이게 더 큰 도움이 되었다.\n4) 퇴직하자 마자 책을 한권 썻는데 이것도 잘한 행동이었다. 많이 팔리지는 않았지만 해당 분야의 전문가로서 인정받아 강연이나 해당 분야 심사 등의 기회가 생겼고 새로운 커리어에 큰 도움이 되었다.\n\n5. 아쉬운 것과 후배들에게 이야기하고 싶은 것이 있다면? 이라고 물었더니\n1) 자신이 무엇을 잘하고 무엇을 좋아하는지 회사라는 울타리가 있을때 파악하라. 회사 내에서 그것에 역량을 키울 수 있도록 부서를 선택한다든지 도전을 하라. 너무 눈에보이는 평가나 작은 연봉상승에 얽매이지 말고 성장의 기회를 찾아 도전하고 실력을 쌓아라.\n2) 외부에서도 경쟁력이 있으려면 자신을 드러낼 수 있을만한 뚜렷한 차별화와 성과를 만들어라. 그리고 그런 전문 분야에 책을 한 권 낼 수 있는 준비를 하라. 실제적인 자격증도 따라(돈만 낭비하는 의미없는 자격증도 많습니다).\n3) Weak tie를 만들어라. 회사 사람들과만 있으면 그 game에 매몰되고 세상이 어떻게 돌아가는지 모른다. 다른 업종, 다른 스테이지, 스타트업 이런 분야의 사람들과 연결되고 교류를 맺어라. 학위과정을 하든, 아니면 지속적으로 이질적인 분들과의 모임을 참가하든. 세상의 game이 어떻게 돌아가는지에 지속적인 자극을 받아라.\n4) 영어 공부를 열심히 하라. 회사에서 영어를 사용할 기회가 없어서 영어를 등한시 했는데 나와 보니 fluent하게 영어를 하면 훨씬 많은 기회가 있었다. 이에 이제서야 정신차리고 다음 단계 jump-up을 위해 매일 전화 영어를 한다.\n5) 효과적인 재테크도 할 줄 알아야 한다. 회사 일만 열심히 해서 어떻게 돈을 굴려야 하는지 몰랐다. 주위 같이 퇴직한 분들을 보니 여성들이 확실히 공부를 하니 무리하지 않으면서도 재테크를 잘하더라. 남성들은 극과극이다. 몰빵을 해서 대박이나 쪽박이든지, 아니면 완전히 보수적으로 은행예금만 하든지.\n\n6. 그리고 이런 말을 한다. \" 나와 보니 회사가 얼마나 따뜻한지 알겠습니다. 나와보니 내가 움직이지 않으면 아무 수입도 나오지 않습니다. 함부로 나오지 마세요. 회사에 있을때 회사에도 도움이 되면서도 자신도 충분히 성장할 수 있어요. 선후배를 보면 대개 그 노력을 하지 않습니다. 특히, 대기업은 과장 정도만 넘어가면 실력 성장 보다는 눈치와 보고 실력만 느는데 나가면 아무 도움이 안됩니다\"\n\n7. 내가 오늘의 대화를 SNS에 남길까 하니 꼭 그래달라고 한다. \"정말 해주고 싶은 말이 많은데 영향력있는 분이 해주시면 더 많은 후배들이 도움받을 것 같습니다\" 나는 SNS에 종종 찾아오는 분과의 대화 내용을 (익명화 하여) 올린다. 대개 적극적으로 올려달라는 경우가 많다. 이유가 다른 분들에게 조금이라도 도움이 되었으면 좋겠다는 것이다. 내 주위에는 다 이런 훌륭한 분들로 가득차 있다.\n\np.s. 댓글은 서로에게 도움됩니다",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7407951903344685056?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7407951903344685056%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
+      "images": [],
+      "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "text",
+      "source": "network",
+      "sequence_id": 67,
+      "sns_platform": "linkedin"
+    },
+    {
+      "code": "7407932761396654080",
+      "username": "Seungwan Son",
+      "created_at": "2025-12-20 09:00:03",
+      "time_text": "1개월",
+      "full_text": "[Visionary Hands-on Leader]\n- '실무형 리더'라는 말로는 부족하다: 우리가 찾던 그 이름!\n\n1. 최근 한국 기업 현장을 보면 흥미로운 혹은 처절한 변화가 목격된다.\n- 팀장급은 물론이고 C-Level 임원이 되어서도 실무를 놓지 못하는, 혹은 놓아서는 안 되는 경우가 급격히 늘어나고 있다. (IT가 제일 심한 것 같...)\n\n2. 과거에는 임원이 되면 의사결정과 관리(Management)에만 집중하는 것이 당연했지만\n- AI와 테크놀로지가 비즈니스의 근간이 된 지금, 기술적 디테일을 모르면 의사결정 자체가 불가능한 시대가 되었다.\n\n3. 문제는 이런 변화된 리더십을 정확하게 지칭할 '단어'가 우리에게 없었다는 점이다.\n- '실무형 리더'? 왠지 전략은 없고 일만 하는 사람처럼 들린다.\n- '플레잉 코치'? 인력이 부족해서 어쩔 수 없이 뛰는 '땜빵'의 뉘앙스\n- '마이크로매니저'? 디테일을 챙기려다 사사건건 간섭하는 꼰대로 오해\n\n4. 우리는 전략적 높이(Height)와 실무적 깊이(Depth)를 모두 갖춘 이들을 설명할 새로운 언어가 필요하다고 느낀다.\n\n5. 미국 채용 시장의 표준, 'Visionary Hands-on Leader'\n- 미국 실리콘밸리의 임원 채용 공고(JD)를 보면 심심치 않게 등장하는 표현이 바로 'Visionary Hands-on Leader'이다.\n- 이 단어는 우리에게 필요한 개념을 정확하게 포착하고 있다.\n- Visionary (Head): 숲을 보고 미래의 방향성을 제시하는 '경영자의 눈'을 가졌으면서,\n- Hands-on (Hand): 필요할 때 언제든 소매를 걷어붙이고 최전선에서 문제를 해결할 수 있는 '실무자의 손'을 가진 리더.\n\n6. 이것은 단순히 \"일을 많이 한다\"는 뜻이 아니다.\n-\"비전과 실행 사이의 괴리(Gap)가 없는 상태\"를 의미한다.\n- 리더가 실행의 난이도와 디테일을 완벽히 이해하고 있기에, 뜬구름 잡는 지시를 하지 않고 가장 현실적이고 빠른 길을 제시할 수 있다는 뜻이다.\n\n7. 왜 지금 이 단어가 필요한가?\n- 한국에서도 토스, 배달의민족 같은 유니콘 기업이나 AI 스타트업을 중심으로 FDE(Forward Deployed Engineer) 같은 개념이 부상하고 있다.\n- 팔란티어를 통해 유명해지고 있는 이 개념은 고객의 문제를 해결하기 위해 엔지니어링 역량과 비즈니스 감각을 동시에 요구하는 직무이다.\n- 리더십도 마찬가지지다. 이제 말한 하는 관리자가 아니라, \"내가 해봤는데 이 방향이 맞아\"라고 코드로, 기획서로, 영업 실적으로 증명하는 리더를 원한다.\n\n8. 마치며: 당신의 고민은 당연하다.\n- 혹시 리더 혹은 임원이 되어서도 코드를 들여다보거나 피그마(Figma)를 켜는 자신이 '위임을 못 하는 건 아닐까' 고민이 되는가?\n- 아니다. 당신은 위임을 못 하는 것이 아니라, 'Visionary Hands-on Leader'라는 새로운 글로벌 스탠다드에 부합하는 리더인 것이다.\n- 이제 모호한 '실무형 리더' 대신, 이 명확한 단어로 정의해보자.\n- 비전을 그리면서도 손에 흙 묻히기를 두려워하지 않는 당신이, 지금 시대가 가장 원하는 리더이다!!\n\n#leader #VisionaryHandsonLeader #애런하우스랩스 #ainnect\n\n+) 혹시 리더쉽 관련 가장 GURU이신 Soojung Shin (신수정) 대표님이 이 글을 읽으신다면, 고견을 받고 싶습니다.",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7407932761396654080?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7407932761396654080%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "GEO 솔루션 AINNECT Founder & CEO | 베스트셀러『제로클릭』(길벗) 저자 | AaronHouse Labs 대표 | 제로투원 신규서비스 5회 런칭 | CJ E&M · NEXON KOREA · LINE PLUS · EST",
       "images": [
-        "https://media.licdn.com/dms/image/v2/D5622AQGfIs3VF99BtQ/feedshare-shrink_1280/B56ZswcyXYHYAs-/0/1766044414569?e=1772064000&v=beta&t=QxDke2ugtroJpq1QyUNgJNUdX_1iXqDW5-drVvBgej0"
+        "https://media.licdn.com/dms/image/v2/D5622AQHQFKb7RbNauw/feedshare-shrink_2048_1536/B56ZsgFraxIcAw-/0/1765769920710?e=1772064000&v=beta&t=Yq0eZYXzzW13qzjK8KzCpjZw3fETQAwVgjwx2Lz1OHA"
       ],
-      "user_link": "https://www.linkedin.com/in/ACoAACCxgqEB0zwj6YSZszMsbI8S_KhPNsMvUPo",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "user_link": "https://www.linkedin.com/in/ACoAAAME3t8BpGdLygm7abbadbpG00aKZB48UXc",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "image",
       "source": "network",
-      "sequence_id": 62,
+      "sequence_id": 66,
       "sns_platform": "linkedin",
       "local_images": [
-        "web_viewer/images/cda3c226c9656b382f48f88e46bdb7e1.jpg"
+        "web_viewer/images/b75a30cad4f867d0f64e6a7a41fee46e.jpg"
       ]
     },
     {
-      "index": 102,
+      "code": "7407636477167296512",
+      "username": "So Yeon Lim",
+      "created_at": "2025-12-19 13:22:43",
+      "time_text": "1개월",
+      "full_text": "인사팀 한계 시험하는 GPT 범벅 자기소개서 특징\n\n1. 중첩 동사 남발\n- 예: 거래 기반을 확대해 성과를 실현했습니다\n- 동사형 명사가 많을수록 의미가 흐려짐\n그냥 매출 ○○% 상승시켰습니다 처럼 결과로 쓰세요.\n\n2. 문장 내 쉼표(,) 과다 사용\n- 한 문장에 쉼표 2개 이상 등장\n- 리듬이 끊기고 가독성 급락\n불필요한 쉼표는 과감히 삭제하세요.\n\n3. ‘단순한 ~가 아닌’ 표현 중독\n- 거의 자동완성 수준으로 반복\n- 실제 차별점이나 설명 없이 문장만 길어집니다.\n쓰지 마세요 제발...\n\n4. 소제목을 문장으로 써버림\n- 소제목은 스킬 + 결과의 어절이어야 하는데\n- 설명 문장처럼 길게 작성\n스킬+ 결과 형태로 작성하세요.\n\n5. 개인 보이스 실종\n- ‘주도’, ‘흐름’, ‘기획’, ‘구조’ 같은 추상어만 가득\n- 내가 뭘 했는지, 어떻게 했는지 디테일 없음\n사람 대신 보고서가 말하는 느낌\n\nGPT로 작성한 자기소개서는 워딩 하나 바꾸는 걸로 해결 되지 않습니다. 자기소개서 작성 전략에 맞혀 아예 다시 쓰셔야 해요. 이렇게요⬇️",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7407636477167296512?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7407636477167296512%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "Talent Development / Career Coach",
+      "images": [],
+      "user_link": "https://www.linkedin.com/in/ACoAADjF3z0BDYpzEXDWpYaTZHicIeWb5-VMKEk",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "text",
+      "source": "network",
+      "sequence_id": 65,
+      "sns_platform": "linkedin"
+    },
+    {
       "code": "7407591782605099009",
       "username": "Jehyun Lee",
       "created_at": "2025-12-19 10:25:07",
@@ -6013,7 +5961,7 @@ const snsFeedData = {
         "https://media.licdn.com/dms/image/v2/D5622AQHPLN4VXyExZQ/feedshare-shrink_2048_1536/B56Zs0Nd9iHAAw-/0/1766107505393?e=1772064000&v=beta&t=-WHPxykWX9YZiXz7WoCPKEuOoGT53_HEe1vB-1JyG7w"
       ],
       "user_link": "https://www.linkedin.com/in/ACoAAAPQ7JYBf83Z52UuxdR6_j9wcyN25DY5p0E",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "image",
       "source": "network",
       "sequence_id": 64,
@@ -6023,7 +5971,48 @@ const snsFeedData = {
       ]
     },
     {
-      "index": 103,
+      "code": "7407438752777678848",
+      "username": "Minjung Kim",
+      "created_at": "2025-12-19 00:17:02",
+      "time_text": "1개월",
+      "full_text": "NotebookLM 슬라이드 활용법 8가지, 교수법의 진화\n\n복잡한 문장도 논리적이고 이해하기 쉽게 만드는 NotebookLM 의 슬라이드 활용법에 대한 공식링크입니다. (https://lnkd.in/g8Mjs8CU)\n\n이 링크 내용을 NotebookLM 슬라이드로 변환해 보았습니다.\n강의 직전 아이디어 노트를 강의 자료로 만들거나, 복잡한 과정을 시각화하는 등 8가지 활용법입니다.\n대학교에서 교수법에 대한 연수시 활용해 보시길 추천합니다.",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7407438752777678848?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7407438752777678848%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "AI, Digital Change, HR 및 변화관리(Change Management) 전문성을 바탕으로, 조직이 AI를 실질적으로 도입하고 활용하도록 돕는 AX(AI Transformation) 전략가로 활동 중임. 단순히 기술 도입을 넘어, transforamation 경험과 Design Thinking with AI& Agile 방법론을 통해 구성원이 AI로 일하는 방식을 설계함",
+      "images": [
+        "https://media.licdn.com/dms/image/v2/D561FAQHifyh3977Kzw/feedshare-document-cover-images_480/B56Zsx_.oIIEBA-/0/1766070416773?e=1770980400&v=beta&t=F9RkW4ThvuDOfvyLp4CrLcjAF7iFZteRZiVonyBzW9o"
+      ],
+      "user_link": "https://www.linkedin.com/in/ACoAADk-HPIB9Dfu21FvR7IWiubg2RoPiyFq_PY",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "image",
+      "source": "network",
+      "sequence_id": 63,
+      "sns_platform": "linkedin",
+      "local_images": [
+        "web_viewer/images/82a8ced892eced2279c7cf92e04ee407.jpg"
+      ]
+    },
+    {
+      "code": "7407327158521647104",
+      "username": "정태일",
+      "created_at": "2025-12-18 16:53:36",
+      "time_text": "1개월",
+      "full_text": "저는 17년 차 홍보인이자 스피치라이터입니다. 포스코퓨처엠, 삼양홀딩스, 한국전력 등 국내외 대기업과 공기업을 거치며 보도자료, 보고서, 연설문, 인터뷰, 칼럼 등을 써왔습니다. 신춘문예에 가슴이 설레던 뼛속까지 문과생이지만, 사회의 첫발부터 지금까지 이공계와 살을 부비며 살았습니다. 그들만의 난해한 전문 용어와 개념들을 누구나 알기 쉽게 풀어쓰는 것이 저의 오랜 일입니다.\n\n퇴근 후에는 자기 글을 쓰는 '월급쟁이 작가'로 살고 있습니다. 지금까지『업무시간을 반으로 줄이는 챗GPT글쓰기』 『회사에서 글을 씁니다』 『홍보인의 사생활』등 총 6권의 책을 썼고, 내년에는 7번째 책인 『업무능력을 2배로 만드는 AI 글쓰기』를 출간할 계획입니다.\n\n____\n\n*아래 인포그래픽은 나노바나나로 제작했어요. 아래 프롬프트 퍼 가셔서 괄호를 채우고 자기 내용으로 만들어 보세요.\n\n[전체 구도 및 형식]\n16:9 비율의 인포그래픽. 왼쪽에서 오른쪽으로 흐르는 (인물소개) 다이어그램 구조.\n\n[핵심 스타일: 아날로그 손맛]\n전체적으로 화이트보드 위에 마카펜으로 쓱쓱 그린 듯한 '손그림 낙서(Doodle sketch)' 및 '손글씨' 스타일. 모든 선은 자로 댄 듯 반듯하지 않고, 자연스럽게 삐뚤빼뚤하며 질감이 살아있어야 함.\n\n[중앙 핵심 요소: 얼굴 캐리커쳐]\n화면 정중앙에 [첨부된 참조 이미지] 속 인물의 얼굴 이목구비, 표정, 헤어스타일을 '완벽하게 닮게' 묘사한 펜터치 스타일의 캐리커쳐를 크게 배치. 사진 그대로가 아니라, 특징을 살린 손그림 느낌이어야 함.\n\n[세부 구성 요소]\n1. 배경: 깨끗한 화이트 배경.\n2. 아이템: 납작한 단색(플랫 컬러)의 노랑, 분홍, 하늘색 '포스트잇'과 다양한 모양의 '말풍선'들이 배치됨.\n3. 연결: 각 요소들은 손으로 그린 투박한 화살표와 점선으로 연결되어 흐름을 보여줌.\n\n[텍스트 내용 (손글씨체 적용)]\n중앙 캐리커쳐에서 나온 가장 큰 말풍선 안에 손글씨체로 다음 내용을 적어줘: \"( 여기에 본인의 핵심 강점 메시지를 입력하세요 )\"",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7407327158521647104?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7407327158521647104%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "스피치라이터, CEO 연설문 작가, 소설가. <​업무시간을 반으로 줄이는 챗GPT 글쓰기​>, <​회사에서 글을 씁니다​> , <​내일은 오를 거야, 제발​> 外 다수. 뼛속까지 문과로 태어났지만, 돈 벌기 시작하면서 내내 이공계와 내내 살 부대끼며 살고 있습니다. 문이과를 통합하는 (테그니컬 라이터)를 지향합니다. 지금은 (스피치라이터)입니다.",
+      "images": [
+        "https://media.licdn.com/dms/image/v2/D5622AQGfIs3VF99BtQ/feedshare-shrink_1280/B56ZswcyXYHYAs-/0/1766044414569?e=1772064000&v=beta&t=QxDke2ugtroJpq1QyUNgJNUdX_1iXqDW5-drVvBgej0"
+      ],
+      "user_link": "https://www.linkedin.com/in/ACoAACCxgqEB0zwj6YSZszMsbI8S_KhPNsMvUPo",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "image",
+      "source": "network",
+      "sequence_id": 62,
+      "sns_platform": "linkedin",
+      "local_images": [
+        "web_viewer/images/cda3c226c9656b382f48f88e46bdb7e1.jpg"
+      ]
+    },
+    {
       "code": "7407189808428724226",
       "username": "조여준 Ethan Cho",
       "created_at": "2025-12-18 07:47:49",
@@ -6035,7 +6024,7 @@ const snsFeedData = {
         "https://media.licdn.com/dms/image/v2/D5622AQECBvwVu81Fdg/feedshare-shrink_1280/B56Zsuf4UhIYA0-/0/1766011668508?e=1772064000&v=beta&t=9wc2FOFsu_FHBMY_Gwja4Wzltip24YUxILkD4tFwqxw"
       ],
       "user_link": "https://www.linkedin.com/in/ACoAAARknekBOFFETpmlSPqmlb2P8ln4iACFaJg",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "image",
       "source": "network",
       "sequence_id": 61,
@@ -6045,7 +6034,6 @@ const snsFeedData = {
       ]
     },
     {
-      "index": 104,
       "code": "7406689415416356864",
       "username": "김덕중",
       "created_at": "2025-12-16 22:39:26",
@@ -6057,7 +6045,7 @@ const snsFeedData = {
         "https://media.licdn.com/dms/image/v2/D5622AQEK1OcDmugxWA/feedshare-shrink_2048_1536/B56ZsnYxZNI0A0-/0/1765892365445?e=1772064000&v=beta&t=2gHc6rLNwxi-o7rv3iAF6oJvIPzgm4R5ScC0Ib9ZosM"
       ],
       "user_link": "https://www.linkedin.com/in/ACoAAAwBOVMBDI50rE9wyD4tsMaGWkV-85Sqd50",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "image",
       "source": "network",
       "sequence_id": 60,
@@ -6067,51 +6055,6 @@ const snsFeedData = {
       ]
     },
     {
-      "index": 105,
-      "code": "7406098165495521280",
-      "username": "Daero Won",
-      "created_at": "2025-12-15 07:30:01",
-      "time_text": "1개월",
-      "full_text": "🔪 <경쟁사가 당신을 죽인 게 아닙니다. 범인은 바로 '당신'입니다>\n- \"스타트업은 타살당하지 않습니다. 스스로 자살할 뿐이죠.\" 실리콘밸리의 전설들이 입을 모아 말하는 90% 폐업의 진짜 원인을 공개합니다.\n\n우리가 망하는 건 외부의 적 때문이 아닙니다. 내부가 썩어 들어가 스스로 무너져 내리는 '자살(Suicide)'인 경우가 압도적으로 많습니다.\n\n솔직히 말해볼까요? 경쟁사는 당신에게 관심조차 없을 확률이 높습니다. 당신의 회사를 죽이는 건 경쟁사의 혁신적인 제품이 아니라, 당신 팀의 '포기'와 '내분'입니다.\n\n1. 타살(Homicide)이 아니라 자살(Suicide)입니다\n\n• 스타트업은 총알이 떨어져서 죽는 게 아니라, 희망을 놓아서 죽습니다.\n◦ 실리콘밸리의 저스틴 칸은 \"스타트업은 죽지 않는다, 자살할 뿐이다\"라고 했습니다. 회사가 물리적으로 운영 불가능해서가 아니라, 창업자가 지쳐서, 혹은 팀이 미래를 믿지 못해 스스로 셔터를 내리는 경우가 대부분입니다.\n◦ 창업자가 포기하지 않고 어떻게든 버티면, 기회는 반드시 옵니다. 하지만 대다수는 그 임계점을 넘기 직전에 \"너무 힘들어서\" 도망칩니다.\n\n• 경쟁자는 당신을 죽일 힘이 없습니다.\n◦ 당신의 제품이 고객에게 진짜 가치를 주고 팀이 단단하다면, 거대 기업이 들어와도 쉽게 망하지 않습니다.\n◦ 밖을 보며 두려워하지 말고, 안을 보며 팀의 멘탈을 챙기세요.\n\n2. '돈'이 떨어져서 망했다는 건 비겁한 변명입니다\n\n• 자금 고갈은 원인이 아니라 '증상'일 뿐입니다.\n◦ 폐업 사유 2위가 '자금 부족'이라지만, 진짜 이유는 돈을 벌어다 줄 '제품-시장 적합성(PMF)'을 찾지 못했기 때문입니다.\n◦ 아무도 원하지 않는 제품을 만드느라 시간을 허비했으니, 투자자도 떠나고 통장 잔고도 바닥난 겁니다.\n\n• 시장이 원하지 않는 제품을 만드는 게 가장 큰 살인무기입니다.\n◦ 마크 앤드리슨은 \"시장 부족이 기업을 죽이는 1순위\"라고 했습니다. 고객이 지갑을 열 만큼 절박하게 원하는 문제를 해결하지 못하면, 통장에 100억이 있어도 결국은 증발합니다.\n◦ 돈이 없어서 망한 게 아니라, 돈이 될 만한 걸 못 만들어서 망한 겁니다.\n\n3. 공동 창업자는 배우자보다 더 지독한 관계입니다\n\n• 유망한 스타트업의 65%가 창업자 간의 싸움으로 공중분해 됩니다.\n◦ 하버드 연구 결과입니다. 놀랍지 않나요? 제품이 아무리 좋아도 공동 창업자끼리 비전이 다르면(예: 한 명은 빠른 매각, 한 명은 100년 기업) 그 회사는 반드시 쪼개집니다.\n◦ 이는 마치 이혼 소송 중인 부부가 아이를 키우려는 것과 같습니다. 의사결정은 마비되고, 투자자는 도망갑니다.\n\n• '나쁜 동업자'는 잘못된 아이디어보다 더 치명적입니다.\n◦ 혼자 하기는 힘들어서, 혹은 친해서 같이 창업했다가 감정의 골이 깊어지면 회복 불가능한 내상을 입습니다.\n◦ 서로의 역할과 지분, 그리고 최악의 상황(이별)에 대해 창업 첫날부터 치열하게 논의하고 합의해야 합니다.\n\n4. 창업자의 '한눈팔기'는 곧 회사의 죽음입니다\n\n• 집중력을 잃는 순간 모멘텀도 사라집니다.\n◦ 창업자가 사이드 프로젝트를 기웃거리거나, 이리저리 사업 모델을 피벗(Pivot)하며 갈팡질팡하면 직원들은 바로 알아챕니다. \"아, 우리 대표도 확신이 없구나.\"\n◦ 리더의 열정이 식으면 조직은 급속도로 냉각됩니다. 번아웃이 왔다면 차라리 휴식을 취하고, 돌아왔을 땐 단 하나의 목표에 미친 듯이 몰입해야 합니다.\n\n• 폴 그레이엄의 성공 비결은 딱 한 단어, 'Focus(집중)'입니다.\n◦ 기회는 많고 유혹은 달콤합니다. 하지만 이것저것 다 건드리는 스타트업 중에 살아남은 곳은 없습니다.\n\n5. 생존 확률을 높이는 처방전\n\n• 고객이 미치도록 원하는 것을 만드세요.\n◦ 내 기술에 취하지 말고, 고객의 고통에 집중하세요. 고객이 원하면 매출이 생기고, 매출이 생기면 팀 사기가 오르고, 투자는 따라옵니다. 이게 만병통치약입니다.\n\n• 런웨이(Runway)를 보수적으로 관리하세요.\n◦ 채용을 늦추고, 불필요한 지출을 줄이세요. 다음 마일스톤을 달성할 때까지 버틸 현금을 확보하는 건 대표의 가장 중요한 책무입니다.\n\n• 무엇보다, 절대 포기하지 마세요.\n◦ 뻔한 말 같지만, 성공한 모든 스타트업의 공통점은 '죽을 만큼 힘든 순간에도 그만두지 않았다'는 것뿐입니다.\n\n결론적으로, 스타트업의 운명은 시장 상황이나 경쟁사가 아니라, 오로지 창업자인 당신의 손에 달려 있습니다.\n\n여러분이 생각하는 스타트업의 가장 큰 '내부의 적'은 무엇인가요?\n혹시 지금 겪고 있는 팀 내 갈등이나 번아웃 경험이 있다면 댓글로 나눠주세요. 👇\n\n출처: Mathias Klenk, \"Why Startups Die\"",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7406098165495521280?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7406098165495521280%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "Venture Builder & Investor | Venture Studio | Fractional Founder | Consultant | Columnist | Coach I Korea-Singapore Connector",
-      "images": [
-        "https://media.licdn.com/dms/image/v2/D5605AQHogAjlmmsG2w/videocover-high/B56ZsdGCi5HYBY-/0/1765719682477?e=1770976800&v=beta&t=w93wMX5XzHY4KRxEobvyKRptoQbu9zbZ6AjkKRD08yM"
-      ],
-      "user_link": "https://www.linkedin.com/in/ACoAAB3-YQ0BEgh--QzdyJyE8cKdv166lOp802k",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "image",
-      "source": "network",
-      "sequence_id": 55,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/6bdad322d1e70996dbe0e7a823e4d0cc.jpg"
-      ]
-    },
-    {
-      "index": 106,
-      "code": "7405983059860160512",
-      "username": "BZCF - 비즈까페",
-      "created_at": "2025-12-14 23:52:37",
-      "time_text": "1개월",
-      "full_text": "꿀팁 방출합니다. 매번 해외뉴스 어디서 읽냐고 물어봐 주셔서요. 제가 주로 정보를 접하는 곳들 리스트업 했습니다. 도움 되실 거라 생각합니다.\n\n저는 주로 매일 아침에 출근하고 읽거나, 매일 저녁에 퇴근하고 스크랩해서 읽는 편입니다. 여기 있는 것들만 잘 소화해도 세상 어떻게 돌아가는지 빠르게 이해하실 수 있을 거라고 생각합니다. 해외 원문으로 읽는 게 가장 빠르고 정확하거든요. 스크랩 해두시고 하나하나씩 정복해보시면 좋을 듯 합니다.\n\n1. 디 인포메이션 (The Information)\n2. 스트래테커리 (Stratechery)\n3. 테크밈 (Techmeme)\n4. 해커뉴스 (Hacker News)\n5. 베네딕트 에반스 (Benedict Evans)\n6. 플랫포머 (Platformer)\n7. 더 제너럴리스트 (The Generalist)\n8. 더 버지 - 디코더 (The Verge - Decoder)\n9. 레니의 뉴스레터 (Lenny‘s Newsletter)\n\nIG : https://lnkd.in/gShm_22u",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7405983059860160512?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7405983059860160512%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "BZCF",
-      "images": [
-        "https://media.licdn.com/dms/image/v2/D5622AQECNgRinb4H9w/feedshare-shrink_2048_1536/B56ZsdWU3DKQAw-/0/1765723955734?e=1772064000&v=beta&t=57KZYK0GVot5hzjs8B-3l0Cb137jaQg0czIrsVZcIDg"
-      ],
-      "user_link": "https://www.linkedin.com/in/ACoAADosSpABPU4--68Ki5nk1NUfCtpau6AMoJs",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "image",
-      "source": "network",
-      "sequence_id": 54,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/1d5704b72442a75bbeb2b4cecb10f844.jpg"
-      ]
-    },
-    {
-      "index": 107,
       "code": "7406611878879281152",
       "username": "김덕중",
       "created_at": "2025-12-16 17:31:20",
@@ -6123,7 +6066,7 @@ const snsFeedData = {
         "https://media.licdn.com/dms/image/v2/D5622AQHH2xziFKVasw/feedshare-shrink_2048_1536/B56ZsmSQGDIYAw-/0/1765873878578?e=1772064000&v=beta&t=YGq6O4WC5Pe4v1oB45Ntt6QmCJVphepALNrhn0bEqFc"
       ],
       "user_link": "https://www.linkedin.com/in/ACoAAAwBOVMBDI50rE9wyD4tsMaGWkV-85Sqd50",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "image",
       "source": "network",
       "sequence_id": 59,
@@ -6133,7 +6076,27 @@ const snsFeedData = {
       ]
     },
     {
-      "index": 108,
+      "code": "7406575376073687040",
+      "username": "Zoon Chang",
+      "created_at": "2025-12-16 15:06:17",
+      "time_text": "1개월",
+      "full_text": "AX 업계 사람들은 이런 경험을 다 한번씩 해봤을 것 같은데, 사례 조사를 위해 해외 리서치를 하다 보면 AX가 전세계 차원에서는 유래가 없는 단어라는 사실이 한번 놀랍고, 얼마나 국내에서는 만연하게 쓰이는지로 두번 놀라게 됩니다.\n\nAX라는 단어가 한국에만 존재하는 이유는\n\n\"AX는 한국의 SI 중심 IT 산업 구조, 정부 주도의 산업 정책, 오너 중심의 톱다운 의사결정, 그리고 빨리빨리 문화가 결합하여 만들어낸 합작품이다\"\n\nGemini Deep Research에게 질문해서 나온 결과니, 뜨끔하건 공감하건 AI의 성능에 한번 놀라고 가시면 좋겠습니다.\n\n한국의 비즈니스 생태계는 비즈니스 현장에서 사용되는 '용어와 개념'의 층위에서 항상 독자 노선을 걷는 경향이 있어왔다고 합니다. 서술적 용어보다는 단정적 단어로 다양한 내용들을 함축적으로 설명하려 한다는 거죠.\n\n그 이유는 의사결정권자들이 본질을 파악하고 의사결정 하는 경향보다는 개념으로 암묵지적 지시와 명령을 즐겨하는 문화와 딱 맞아 떨어지기 때문입니다. 이는 특히 비즈니스가 아닌 행정부, 정치쪽에서는 훨씬 두각되는 현상이고 이런 모호한 레벨에서 다양한 의사결정이 일어납니다.\n\n또 다른 유행을 탔던 단어들로는 '언택트', '4차 산업혁명'이 있다고 하네요.\n\n그렇지만 기회 요인이 굉장히 흥미로웠는데\n\"AI 기술의 응용과 확산 속도 면에서 한국이 글로벌 경쟁력을 갖게 하는 원동력\"\n\n으로 적용 될 수 있다고 합니다.\n\n모두모두 AX 합시다.",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7406575376073687040?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7406575376073687040%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "Venture Capitalist | Strong belief in an outlier-led future",
+      "images": [
+        "https://media.licdn.com/dms/image/v2/D5622AQGp_8tD0YasEA/feedshare-shrink_2048_1536/B56ZslxCsEJsAw-/0/1765865172408?e=1772064000&v=beta&t=46242cyDhA6H8qyhEfx7bktu9N935Hnb2zvvmTfrNro"
+      ],
+      "user_link": "https://www.linkedin.com/in/ACoAABIHJOUBv16FmGBnhJ9rBCiQ2qA0HNtYrao",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "image",
+      "source": "network",
+      "sequence_id": 58,
+      "sns_platform": "linkedin",
+      "local_images": [
+        "web_viewer/images/d66ee246eddb4072032361fe81907bef.jpg"
+      ]
+    },
+    {
       "code": "7406236411500081152",
       "username": "김덕중",
       "created_at": "2025-12-15 16:39:21",
@@ -6145,7 +6108,7 @@ const snsFeedData = {
         "https://media.licdn.com/dms/image/v2/D5622AQGtnzqqHWbyaA/feedshare-shrink_1280/B56Zsg8xYpG8As-/0/1765784360934?e=1772064000&v=beta&t=8R9NsC29T7E6LUgRijkKqlHDs7qyGab0DyRHwssfPiM"
       ],
       "user_link": "https://www.linkedin.com/in/ACoAAAwBOVMBDI50rE9wyD4tsMaGWkV-85Sqd50",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "image",
       "source": "network",
       "sequence_id": 57,
@@ -6155,29 +6118,101 @@ const snsFeedData = {
       ]
     },
     {
-      "index": 109,
-      "code": "7404691043209760768",
-      "username": "Narae Kim",
-      "created_at": "2025-12-11 10:18:37",
-      "time_text": "2개월",
-      "full_text": "[Pitching은 설명이 아니다. 설득이다.] \"우리 기술은 딥러닝 기반 알고리즘으로 데이터를 분석해서...\"5초 후, 투자자가 핸드폰을 봅니다.\n\n최근 6년간 500개 IR Deck 만들며 목격한 차이는 단 하나.\n설득력.\n\n스티브 잡스는 아이폰의 CPU를 설명하지 않았습니다.\n\"1000곡을 주머니에\"라고 설득했습니다.\n\n일론 머스크는 배터리 기술을 설명하지 않습니다.\n\"주유소 갈 필요 없는 삶\"을 설득합니다.\n\n[설명하는 IR Deck] \"우리 솔루션은 머신러닝을 활용해 96.7%의 정확도로 예측합니다\"\n[설득하는 IR Deck] \"매달 버려지는 재고 3억원, 이제 90% 줄일 수 있습니다\"\n어느 게 더 기억에 남으시나요?\n\n\n설득의 3가지 법칙:\n1. 숫자는 비교로 말하라\n\"처리속도 0.3초\" →\"경쟁사보다 10배 빠른 0.3초\"\n\n2. 기능은 혜택으로 바꿔라\n\"실시간 데이터 분석 기능\" → \"퇴근 시간을 2시간 앞당기는 자동 분석\"\n\n3. 기술은 스토리로 풀어라\n\"AI 기반 최적화 알고리즘\" →\"A사장님은 우리 덕분에 월 매출이 두 배가 됐습니다\"\n\n\n투자자가 듣고 싶은 건:\n\"How it works\" (X)\n\"Why should I care\" (O)\n\n오늘부터 이렇게 바꿔보세요:\n\"우리는 ~를 개발했다\" → \"고객은 ~를 얻는다\"\n\"~라는 기술이다\" → \"~라는 문제가 사라진다\"\n\"특허를 보유했다\" → \"경쟁사가 못 따라온다\"\n\n설득은 거창한 게 아닙니다. 상대방 입장에서 말하는 겁니다.\n당신의 피칭이 설명회가 되지 않으려면, 한 가지만 기억하세요.\n\n\"So What?\"\n모든 문장 뒤에 이 질문을 던지세요. 답이 없다면, 그건 설명입니다. 지우세요.\n\n다음 피칭 전에 스스로 물어보세요:\n\"나는 지금 가르치려 하는가, 움직이려 하는가?\"\n\n가르치려 한다면 당신은 그저 투머치토커이고,\n움직이려 한다면 창업가입니다.\n\n\n📣 2026년엔 IR Deck 부트캠프와 실전 템플릿 공개, 웨비나 등...\n더 실용적인 자료들과 함께 찾아뵐 예정입니다.\n필요하신 분들은 팔로우 혹은 일촌 신청 해주세요.\n다음 달부터 열릴 이벤트와 신규 콘텐츠 소식을 가장 먼저 전해드리겠습니다.",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7404691043209760768?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7404691043209760768%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "IR Deck Builder",
+      "code": "7406137139891134464",
+      "username": "Seungwan Son",
+      "created_at": "2025-12-15 10:04:53",
+      "time_text": "1개월",
+      "full_text": "[2026년 당신의 쇼핑은 이렇게 바뀐다. by eMarketer]\n\n0. eMarketer에서 AI시대 커머스 관련 매우 흥미로운 보고서가 나왔습니다.\n\n1. 매우 좋은 인사이트라서, 최대한 보기 편하게 NotebookLM으로 만들었습니다. (download 하셔도 좋아요)\n\n2. 주요 내용을 5줄 요약하면 다음과 같습니다.\n1) 아마존 점유율이 2022년 71.2%로 정점을 찍은 후, 2026년에는 63.5%까지 하락할 것으로 전망\n2) AI에 맞서 오프라인 매장에서의 실제 경험 가치는 더욱 높아지고 있다.\n3) AI가 콘텐츠를 점령할수록, '인간 크리에이터'의 가치는 높아진다.\n4) 당신의 새로운 고객은 사람이 아닌 AI.\n- cf.) 2026년 1월 출간 예정인 [제로클릭]에서 구체적 GEO 전략 확인 가능\n5) '포인트 적립'의 종말: AI가 재창조하는 로열티 프로그램\n\n3. 보고서 다운로드 링크는 댓글에 달아두겠습니다.\n\n#AI #ecommerce #커머스 #AI커머스 #AI검색 #GEO #제로클릭 #애런하우스랩스 #ainnect #손승완 #AISEO #길벗출판사",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7406137139891134464?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7406137139891134464%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "GEO 솔루션 AINNECT Founder & CEO | 베스트셀러『제로클릭』(길벗) 저자 | AaronHouse Labs 대표 | 제로투원 신규서비스 5회 런칭 | CJ E&M · NEXON KOREA · LINE PLUS · EST",
       "images": [
-        "https://media.licdn.com/dms/image/v2/D5622AQH9ocWo-xKfnw/feedshare-shrink_2048_1536/B56ZsK_Q5NIkA0-/0/1765415916192?e=1772064000&v=beta&t=maqxQN9E7VTakLbGR0WHogLRrI6FhK6vjUfCIE5RxoI"
+        "https://media.licdn.com/dms/image/v2/D561FAQEVP1Wwz8xAbQ/feedshare-document-cover-images_480/B56ZsfgimaKEBA-/0/1765760184310?e=1770980400&v=beta&t=RLWzzjk6gFxAd3R5-vpgG1KOUbent0kaqO7CqtFDkBA"
       ],
-      "user_link": "https://www.linkedin.com/in/ACoAACOcXvsBa0ZJB06mKX0Qev6doqi4y5bW_W0",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "user_link": "https://www.linkedin.com/in/ACoAAAME3t8BpGdLygm7abbadbpG00aKZB48UXc",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "image",
       "source": "network",
-      "sequence_id": 49,
+      "sequence_id": 56,
       "sns_platform": "linkedin",
       "local_images": [
-        "web_viewer/images/6cb20204cb33d9b486a99e81b512e6fb.jpg"
+        "web_viewer/images/a13542d6483697aea91a94b1c992287b.jpg"
       ]
     },
     {
-      "index": 110,
+      "code": "7406098165495521280",
+      "username": "Daero Won",
+      "created_at": "2025-12-15 07:30:01",
+      "time_text": "1개월",
+      "full_text": "🔪 <경쟁사가 당신을 죽인 게 아닙니다. 범인은 바로 '당신'입니다>\n- \"스타트업은 타살당하지 않습니다. 스스로 자살할 뿐이죠.\" 실리콘밸리의 전설들이 입을 모아 말하는 90% 폐업의 진짜 원인을 공개합니다.\n\n우리가 망하는 건 외부의 적 때문이 아닙니다. 내부가 썩어 들어가 스스로 무너져 내리는 '자살(Suicide)'인 경우가 압도적으로 많습니다.\n\n솔직히 말해볼까요? 경쟁사는 당신에게 관심조차 없을 확률이 높습니다. 당신의 회사를 죽이는 건 경쟁사의 혁신적인 제품이 아니라, 당신 팀의 '포기'와 '내분'입니다.\n\n1. 타살(Homicide)이 아니라 자살(Suicide)입니다\n\n• 스타트업은 총알이 떨어져서 죽는 게 아니라, 희망을 놓아서 죽습니다.\n◦ 실리콘밸리의 저스틴 칸은 \"스타트업은 죽지 않는다, 자살할 뿐이다\"라고 했습니다. 회사가 물리적으로 운영 불가능해서가 아니라, 창업자가 지쳐서, 혹은 팀이 미래를 믿지 못해 스스로 셔터를 내리는 경우가 대부분입니다.\n◦ 창업자가 포기하지 않고 어떻게든 버티면, 기회는 반드시 옵니다. 하지만 대다수는 그 임계점을 넘기 직전에 \"너무 힘들어서\" 도망칩니다.\n\n• 경쟁자는 당신을 죽일 힘이 없습니다.\n◦ 당신의 제품이 고객에게 진짜 가치를 주고 팀이 단단하다면, 거대 기업이 들어와도 쉽게 망하지 않습니다.\n◦ 밖을 보며 두려워하지 말고, 안을 보며 팀의 멘탈을 챙기세요.\n\n2. '돈'이 떨어져서 망했다는 건 비겁한 변명입니다\n\n• 자금 고갈은 원인이 아니라 '증상'일 뿐입니다.\n◦ 폐업 사유 2위가 '자금 부족'이라지만, 진짜 이유는 돈을 벌어다 줄 '제품-시장 적합성(PMF)'을 찾지 못했기 때문입니다.\n◦ 아무도 원하지 않는 제품을 만드느라 시간을 허비했으니, 투자자도 떠나고 통장 잔고도 바닥난 겁니다.\n\n• 시장이 원하지 않는 제품을 만드는 게 가장 큰 살인무기입니다.\n◦ 마크 앤드리슨은 \"시장 부족이 기업을 죽이는 1순위\"라고 했습니다. 고객이 지갑을 열 만큼 절박하게 원하는 문제를 해결하지 못하면, 통장에 100억이 있어도 결국은 증발합니다.\n◦ 돈이 없어서 망한 게 아니라, 돈이 될 만한 걸 못 만들어서 망한 겁니다.\n\n3. 공동 창업자는 배우자보다 더 지독한 관계입니다\n\n• 유망한 스타트업의 65%가 창업자 간의 싸움으로 공중분해 됩니다.\n◦ 하버드 연구 결과입니다. 놀랍지 않나요? 제품이 아무리 좋아도 공동 창업자끼리 비전이 다르면(예: 한 명은 빠른 매각, 한 명은 100년 기업) 그 회사는 반드시 쪼개집니다.\n◦ 이는 마치 이혼 소송 중인 부부가 아이를 키우려는 것과 같습니다. 의사결정은 마비되고, 투자자는 도망갑니다.\n\n• '나쁜 동업자'는 잘못된 아이디어보다 더 치명적입니다.\n◦ 혼자 하기는 힘들어서, 혹은 친해서 같이 창업했다가 감정의 골이 깊어지면 회복 불가능한 내상을 입습니다.\n◦ 서로의 역할과 지분, 그리고 최악의 상황(이별)에 대해 창업 첫날부터 치열하게 논의하고 합의해야 합니다.\n\n4. 창업자의 '한눈팔기'는 곧 회사의 죽음입니다\n\n• 집중력을 잃는 순간 모멘텀도 사라집니다.\n◦ 창업자가 사이드 프로젝트를 기웃거리거나, 이리저리 사업 모델을 피벗(Pivot)하며 갈팡질팡하면 직원들은 바로 알아챕니다. \"아, 우리 대표도 확신이 없구나.\"\n◦ 리더의 열정이 식으면 조직은 급속도로 냉각됩니다. 번아웃이 왔다면 차라리 휴식을 취하고, 돌아왔을 땐 단 하나의 목표에 미친 듯이 몰입해야 합니다.\n\n• 폴 그레이엄의 성공 비결은 딱 한 단어, 'Focus(집중)'입니다.\n◦ 기회는 많고 유혹은 달콤합니다. 하지만 이것저것 다 건드리는 스타트업 중에 살아남은 곳은 없습니다.\n\n5. 생존 확률을 높이는 처방전\n\n• 고객이 미치도록 원하는 것을 만드세요.\n◦ 내 기술에 취하지 말고, 고객의 고통에 집중하세요. 고객이 원하면 매출이 생기고, 매출이 생기면 팀 사기가 오르고, 투자는 따라옵니다. 이게 만병통치약입니다.\n\n• 런웨이(Runway)를 보수적으로 관리하세요.\n◦ 채용을 늦추고, 불필요한 지출을 줄이세요. 다음 마일스톤을 달성할 때까지 버틸 현금을 확보하는 건 대표의 가장 중요한 책무입니다.\n\n• 무엇보다, 절대 포기하지 마세요.\n◦ 뻔한 말 같지만, 성공한 모든 스타트업의 공통점은 '죽을 만큼 힘든 순간에도 그만두지 않았다'는 것뿐입니다.\n\n결론적으로, 스타트업의 운명은 시장 상황이나 경쟁사가 아니라, 오로지 창업자인 당신의 손에 달려 있습니다.\n\n여러분이 생각하는 스타트업의 가장 큰 '내부의 적'은 무엇인가요?\n혹시 지금 겪고 있는 팀 내 갈등이나 번아웃 경험이 있다면 댓글로 나눠주세요. 👇\n\n출처: Mathias Klenk, \"Why Startups Die\"",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7406098165495521280?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7406098165495521280%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "Venture Builder & Investor | Venture Studio | Fractional Founder | Consultant | Columnist | Coach I Korea-Singapore Connector",
+      "images": [
+        "https://media.licdn.com/dms/image/v2/D5605AQHogAjlmmsG2w/videocover-high/B56ZsdGCi5HYBY-/0/1765719682477?e=1770980400&v=beta&t=WI2YconDnU4E3l8fk7EBcuwx-E8_0GaQ0kCropF8MJA"
+      ],
+      "user_link": "https://www.linkedin.com/in/ACoAAB3-YQ0BEgh--QzdyJyE8cKdv166lOp802k",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "image",
+      "source": "network",
+      "sequence_id": 55,
+      "sns_platform": "linkedin",
+      "local_images": [
+        "web_viewer/images/010fe34d2c479970dd75258cc061364c.jpg"
+      ]
+    },
+    {
+      "code": "7405983059860160512",
+      "username": "BZCF - 비즈까페",
+      "created_at": "2025-12-14 23:52:37",
+      "time_text": "1개월",
+      "full_text": "꿀팁 방출합니다. 매번 해외뉴스 어디서 읽냐고 물어봐 주셔서요. 제가 주로 정보를 접하는 곳들 리스트업 했습니다. 도움 되실 거라 생각합니다.\n\n저는 주로 매일 아침에 출근하고 읽거나, 매일 저녁에 퇴근하고 스크랩해서 읽는 편입니다. 여기 있는 것들만 잘 소화해도 세상 어떻게 돌아가는지 빠르게 이해하실 수 있을 거라고 생각합니다. 해외 원문으로 읽는 게 가장 빠르고 정확하거든요. 스크랩 해두시고 하나하나씩 정복해보시면 좋을 듯 합니다.\n\n1. 디 인포메이션 (The Information)\n2. 스트래테커리 (Stratechery)\n3. 테크밈 (Techmeme)\n4. 해커뉴스 (Hacker News)\n5. 베네딕트 에반스 (Benedict Evans)\n6. 플랫포머 (Platformer)\n7. 더 제너럴리스트 (The Generalist)\n8. 더 버지 - 디코더 (The Verge - Decoder)\n9. 레니의 뉴스레터 (Lenny‘s Newsletter)\n\nIG : https://lnkd.in/gShm_22u",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7405983059860160512?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7405983059860160512%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "BZCF",
+      "images": [
+        "https://media.licdn.com/dms/image/v2/D5622AQECNgRinb4H9w/feedshare-shrink_2048_1536/B56ZsdWU3DKQAw-/0/1765723955734?e=1772064000&v=beta&t=57KZYK0GVot5hzjs8B-3l0Cb137jaQg0czIrsVZcIDg"
+      ],
+      "user_link": "https://www.linkedin.com/in/ACoAADosSpABPU4--68Ki5nk1NUfCtpau6AMoJs",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "image",
+      "source": "network",
+      "sequence_id": 54,
+      "sns_platform": "linkedin",
+      "local_images": [
+        "web_viewer/images/1d5704b72442a75bbeb2b4cecb10f844.jpg"
+      ]
+    },
+    {
+      "code": "7405773526021963777",
+      "username": "Kyoungchan Hwang",
+      "created_at": "2025-12-14 10:00:01",
+      "time_text": "1개월",
+      "full_text": "얼마 전, 4년 차 개발자와 커리어 상담을 했습니다\n회사에서 구조조정을 당했다고 했습니다.\n실력 문제는 아니라는 말도 덧붙였습니다.\n팀이 통째로 정리됐고, 본인은 그 안에 있었을 뿐이라고요.\n\n“이제 어디로 가야 할지 모르겠다”는 말과 함께\n그분이 이런 말을 덧붙였어요.\n“이제 개발자는 다 비슷해지는 것 같아요.\nAI도 있고, 프레임워크도 다 거기서 거기고요.”\n그 말이 틀렸다고 느껴지진 않았습니다.\n오히려 꽤 정확한 진단이었습니다.\n\n그래서 저는 기술 이야기를 하지 않았습니다.\n이직 전략도, 스택도, 포트폴리오도 말하지 않았고요.\n대신 이렇게 물었습니다.\n“지금까지 일하면서,\n내가 직접 정의한 문제를 풀어본 경험이 있었나요?”\n\n잠깐의 침묵이 있었습니다.\n\n그분의 커리어를 돌아보면\n주어진 요구사항을 잘 구현해왔고,\n팀 안에서도 성실한 개발자였습니다.\n\n하지만 “이건 우리가 풀어야 할 문제다”라고\n스스로 정의해본 경험은 많지 않았다고 했습니다.\n\n그래서 AI 이야기를 꺼냈습니다.\nAI가 무섭기 때문이 아니라,\n지금 이 막막함의 이유를 설명해주기 위해서였습니다.\n\nAI는 구현을 빠르게 만듭니다.\n그리고 점점 더 잘 만들 겁니다.\n그 말은 곧,\n“잘 구현하는 사람”의 희소성이 줄어든다는 뜻이기도 합니다.\n\n문제는,\n그동안 많은 개발자들이\n커리어의 중심을 그 지점에 두고 성장해왔다는 겁니다.\n\n그래서 저는 이렇게 이야기했습니다.\n“앞으로는 ‘무엇을 만들 수 있느냐’보다\n‘어떤 문제를 선택하고 풀 수 있느냐’가 더 중요해질 거예요.”\n\n“Product Engineer라는 역할은\n기술이 아니라 문제에 서는 사람이에요.”\n\nProduct Engineer는\n기획자 흉내를 내는 개발자도 아니고,\n개발 잘하는 기획자도 아닙니다.\n\n문제를 관찰하고\n이게 기술로 풀 가치가 있는지 판단하고\n구조를 설계한 다음\n기술을 도구로 사용하는 사람\n저는 그렇게 정의합니다.\n\n그분에게 당장 답을 준 건 아닙니다.\n“여기로 가세요” 같은 말도 하지 않았고요.\n대신 이런 질문을 드렸습니다.\n“다음 프로젝트에서는 구현부터 하기보다,\n이게 어떤 문제를 푸는 건지부터 생각해보는건 어떨까요?”\n\nAI 시대에 커리어가 흔들리는 이유는\n실력이 없어서가 아닐 수 있습니다.\n문제를 정의하는 자리에 서본 적이 없었기 때문일 수도 있습니다.\n\n혹시 여러분도 요즘,\n“다음엔 어디로 가야 하지?”라는 생각을 하고 계신가요?\n\n그 질문 앞에서 기술 말고,\n정의할 문제를 먼저 생각해보는건 어떨까요?\n\n(전문은 아래 아티클에서 확인 가능합니다 🤗\nhttps://lnkd.in/gcnp9Q77)",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7405773526021963777?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7405773526021963777%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "Product Engineer | 콘텐츠 크리에이터 | 부트캠프 운영",
+      "images": [],
+      "user_link": "https://www.linkedin.com/in/ACoAACOysKUBduTk_VevCKhgj6zs9sW5eRn-LRs",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "text",
+      "source": "network",
+      "sequence_id": 53,
+      "sns_platform": "linkedin"
+    },
+    {
+      "code": "7405754948509966337",
+      "username": "Seungwan Son",
+      "created_at": "2025-12-14 08:46:11",
+      "time_text": "Kyunghun Lee님의 글을 퍼감1개월",
+      "full_text": "최근에 솔트룩스 이경일 대표께서\nAI시대 아이들을 위한 교육관으로 3가지를 언급했는데\n매우 유사하고 인사이트 넘치는 글이다.\n3가지 : 1) 문제정의, 2)메타인지 , 3) Resilience",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7405754948509966337?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7405754948509966337%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "GEO 솔루션 AINNECT Founder & CEO | 베스트셀러『제로클릭』(길벗) 저자 | AaronHouse Labs 대표 | 제로투원 신규서비스 5회 런칭 | CJ E&M · NEXON KOREA · LINE PLUS · EST",
+      "images": [],
+      "user_link": "https://www.linkedin.com/in/ACoAAAME3t8BpGdLygm7abbadbpG00aKZB48UXc",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "text",
+      "source": "network",
+      "sequence_id": 52,
+      "sns_platform": "linkedin"
+    },
+    {
       "code": "7405145895417221120",
       "username": "김덕중",
       "created_at": "2025-12-12 16:26:02",
@@ -6189,7 +6224,7 @@ const snsFeedData = {
         "https://media.licdn.com/dms/image/v2/D5622AQFGZf4X6ue_YA/feedshare-shrink_2048_1536/B56ZsRc8v0IkAw-/0/1765524361312?e=1772064000&v=beta&t=jK-DOtKi4KREKtS1Sy_j1yAFtCyUNSD566wG8D5L06Y"
       ],
       "user_link": "https://www.linkedin.com/in/ACoAAAwBOVMBDI50rE9wyD4tsMaGWkV-85Sqd50",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "image",
       "source": "network",
       "sequence_id": 51,
@@ -6199,134 +6234,6 @@ const snsFeedData = {
       ]
     },
     {
-      "index": 111,
-      "code": "7406137139891134464",
-      "username": "Seungwan Son",
-      "created_at": "2025-12-15 10:04:53",
-      "time_text": "1개월",
-      "full_text": "[2026년 당신의 쇼핑은 이렇게 바뀐다. by eMarketer]\n\n0. eMarketer에서 AI시대 커머스 관련 매우 흥미로운 보고서가 나왔습니다.\n\n1. 매우 좋은 인사이트라서, 최대한 보기 편하게 NotebookLM으로 만들었습니다. (download 하셔도 좋아요)\n\n2. 주요 내용을 5줄 요약하면 다음과 같습니다.\n1) 아마존 점유율이 2022년 71.2%로 정점을 찍은 후, 2026년에는 63.5%까지 하락할 것으로 전망\n2) AI에 맞서 오프라인 매장에서의 실제 경험 가치는 더욱 높아지고 있다.\n3) AI가 콘텐츠를 점령할수록, '인간 크리에이터'의 가치는 높아진다.\n4) 당신의 새로운 고객은 사람이 아닌 AI.\n- cf.) 2026년 1월 출간 예정인 [제로클릭]에서 구체적 GEO 전략 확인 가능\n5) '포인트 적립'의 종말: AI가 재창조하는 로열티 프로그램\n\n3. 보고서 다운로드 링크는 댓글에 달아두겠습니다.\n\n#AI #ecommerce #커머스 #AI커머스 #AI검색 #GEO #제로클릭 #애런하우스랩스 #ainnect #손승완 #AISEO #길벗출판사",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7406137139891134464?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7406137139891134464%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "GEO 솔루션 AINNECT Founder & CEO | 베스트셀러『제로클릭』(길벗) 저자 | AaronHouse Labs 대표 | 제로투원 신규서비스 5회 런칭 | CJ E&M · NEXON KOREA · LINE PLUS · EST",
-      "images": [
-        "https://media.licdn.com/dms/image/v2/D561FAQEVP1Wwz8xAbQ/feedshare-document-cover-images_480/B56ZsfgimaKEBA-/0/1765760184310?e=1770976800&v=beta&t=ZW64R7KVZSpmpC30tseUUtefnooXVoLg798MZ5Mr7Aw"
-      ],
-      "user_link": "https://www.linkedin.com/in/ACoAAAME3t8BpGdLygm7abbadbpG00aKZB48UXc",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "image",
-      "source": "network",
-      "sequence_id": 56,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/fbcfa300f4fd103d6e0681f93cfca8b4.jpg"
-      ]
-    },
-    {
-      "index": 112,
-      "code": "7375094327305437184",
-      "username": "박대영",
-      "created_at": "2025-09-20 18:11:50",
-      "time_text": "4개월",
-      "full_text": "[동향 주제로 지속적으로 강연하는 방법]\n\n강연 활동은 22년도부터 해왔고, 24년도 상반기부터는 \"금융 AI 동향\"이나 \"AI 보안/안전 동향\" 주제로 이야기하고 있습니다.\n사실 \"동향\" 주제 강연이 꽤나 에너지가 많이 들어갑니다.. (가성비는 안좋습니다 ㅎㅎ)\n\nAI분야가 워낙 빠르게 변하고 새로운 기술 등장 및 규제 변화 등이 맞물리고 수많은 논문이 쏟아져나오다보니 사실 따라가기가 쉽지 않습니다 ㅋㅋ ㅠㅠ\n\n회사 실무자로서 현업업무, 연구활동 (논문) 등 바쁘긴 하지만\n그럼에도 불구하고, 계속 이 주제로 고수하다보니 (트렌드를 놓치고 싶지 않은 마음에서..^^), 나름 시간효율적으로 최신동향을 지속적으로 follower-up하는 방법이나 자세, 태도가 몸에 익었습니다.\n\n나름대로 아래 5가지 방법 및 기준을 가지고 매번 자료를 업데이트하는데, 다른 분들도 참고하시면 좋을 거 같습니다\n(더 좋은 판단 기준이나 방법론이 있으면 추천해주세요 ~! 저도 많이 배울게요 ㅎㅎ)\n\n\n1. 이동중에 빅테크에서 나오는 논문들은 NotebookLLM으로 모두 팟캐스트 형태로 듣거나 요약본 읽기\n- 기술 선도하는 기업의 논문은 가급적 다 보거나 듣습니다 (대강이라도 봐야 함)\n- 아무래도 AI/IT 분야 연구는 기업의 관심에서 멀어진 분야는 서서히 죽어가기 쉽기 때문입니다 (그럼에도 자신의 고유 연구분야를 평생 깊게 파시는 연구자분들도 많습니다. 모두 존경합니다)\n\n\n2. 최신 연구를 잘 정리해주시는 네임드분들의 SNS나 블로그 글을 의식적으로 찾아가서 읽기\n- 탑티어학회나 업계 네임드가 출판한 논문은 가급적 다 긁어모으긴 하지만, 모두 깊게 읽기는 어렵습니다. 따라서, 주요 주제별로 잘 정리해주시는 분들의 도움을 받아야 합니다 (페친, 링친분들 늘 감사합니다 ㅎㅎ)\n- 개인적으로는 ETRI 전종홍 박사님 (전종홍) 정리를 많이 읽습니다 ㅎㅎ 늘 감사드리죠\n\n\n3. 동료나 주변 지인들 최대한 활용하기\n- 대화주제로 오늘 점심이나 가십 등을 이야기할 수도 있지만, 최대한 최신업계 동향 주제로 이야기 나누려고 합니다.\n- 주변 분들이 제가 모르는 영역을 많이 아시는 경우도 많아요.\n- 의식적으로, 일주일에 1번 이상 점심이나 저녁은 그동안 교류가 적었던 업계 실무자분들과 같이하려고 합니다. 제가 못본 view로 이야기를 듣는 것도 너무 좋습니다.\n\n\n4. 금융업계, 정부 정책/규제 소식 모두 긁어모으기\n- 개인적으로 최신 뉴스기사, 정부정책 소식, 보도자료 등은 모두 크롤링하고 아카이빙 합니다 (나름 귀중한 자산입니다. 타임라인에 따라 변하는 히스토리는 귀중한 자료더라구요. 왜 이렇게 변했지? 라는 걸 곰곰히 생각해보다보면 생각의 깊이도 깊어집니다.)\n\n\n5. 현실을 인정하기\n- 시간이 없어서 모두 깊게 읽기 어렵습니다 ㅠㅠ. 저도 공학도다 보니 깊어지는걸 추구하는데 시간은 늘 부족합니다.\n- 모든 내용을 깊이 있게 알고싶은 지식욕심을 내려놓으니 스트레스도 줄고, 마음도 편합니다 . 청중께서 깊이 있는 내용을 물어보시면 솔직하게 제가 아는 정도는 여기까지이고, 제 생각은 이러한 내용일 거 같다고 말씀드리며,\n자세한 거는 해당 논문이나 보고서를 읽어보시면 좋겠다고 말씀드립니다.\n\n\n추가)\n제 background상 원래 금융회사에서 주로 불러주셨는데,\n요즘은 AI 보안, 안전에 대한 관심도 높아지면서 타산업의 공공기관이나 사기업에서도 자주 불러주시네요.\n\n덕분에 한국에너지기술평가원은 이번에 처음 가봤네요.",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7375094327305437184?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7375094327305437184%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "특강, 강연 등 요청 시 링크드인 메신저나 이메일로 연락 부탁드려요:) 이메일: mainthread4929@gmail.com",
-      "images": [
-        "https://media.licdn.com/dms/image/v2/D5622AQHJJNs4h4w7pA/feedshare-shrink_2048_1536/B56ZlmZKXBKEAw-/0/1758359506511?e=1772064000&v=beta&t=C54Two8NFa-Segkm4UXW0zDgEdXpnvBxF7iIgCVzy7U"
-      ],
-      "user_link": "https://www.linkedin.com/in/ACoAAC1AtmMBgWSqGGOxpr1C-rVdX2W7bxAzHbc",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "image",
-      "source": "network",
-      "sequence_id": 25,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/b25b80d5cef7dbab284c429b95e71337.jpg"
-      ]
-    },
-    {
-      "index": 113,
-      "code": "7397540321351524352",
-      "username": "Dong Keun Jo",
-      "created_at": "2025-11-21 16:44:12",
-      "time_text": "2개월",
-      "full_text": "[AI 시대, 개발자는 결국 사라질까?]\n\"AI가 코딩을 다 짜주는데, 이제 개발자는 끝난 것 아닌가요?”\n코딩 유튜버를 하다 보니 이런 질문 정말 많이 받습니다. 결론부터 말씀드리면 “그냥 개발만 하는 개발자”라면, “끝났다”고 생각합니다. 지금도 이미 바이브 코딩으로 개발의 희소성이 빠르게 무너지고 있는데, 코딩 분야는 특히 경제적 가치도 크고 보상 설계도 명확하니 앞으로 더욱더 발전할 것은 분명해 보입니다. 그러면 단순 개발은 AI가 대체하여 굳이 개발자는 필요 없어질 것입니다.\n\n그런데, 개발자만 그럴까요?\n최근 출시된 Google Antigravity를 테스트해보니 Nano Banana Pro가 통합되어 첨부한 이미지에서 확인할 수 있듯 필요한 에셋을 자동으로 생성하면서 개발을 할 수 있습니다. Stitch 같은 툴은 AI로 적절한 UI/UX를 자동으로 만들어주기도 하죠. 즉, 디자이너도 마찬가지입니다.\n또, Nano Banana Pro 모델이 Goolge Ads에도 통합된다고 합니다. 게다가 Veo 영상 모델도 있고요. 그렇다는 것은 광고 이미지, 영상 등의 소재 제작도 자동화될 수 있고, 실험을 통해서 최적의 광고 성과(ROAS)를 스스로 찾아내는 마케팅의 영역까지 자동화될 수 있겠습니다.\n\n즉, 개발자, 디자이너, 마케터 등 개별 직무 기능의 가치는 점점 낮아지고 있습니다.\nAI가 기능적 업무를 대부분 처리하는 순간, 기업은 더 이상 이제 굳이 직군별로 인력을 나눠 채용할 이유가 없습니다. “AI를 잘 다루는 단 한 명”이면 충분한 일들이 계속 늘어나고 있기 때문입니다. 심지어 커뮤니케이션 비용이 큰 거대 조직보다, AI를 잘 활용하는 개인이 더 빠르고 효율적이기까지 합니다.\n마치 산업 간 경계가 희미해지는 ‘빅 블러(Big Blur)’ 현상처럼, 이제는 직무의 경계가 사라지는 '커리어 빅 블러'의 시대가 되었습니다. 개발자가 디자인을 하고, 마케터가 코딩을 하는 것이 더 이상 이상하지 않은 세상입니다.\n\n결국 모든 사람은 잠재적 1인 창업가가 되어야 합니다.\n개개인은 기능적인 직무 단위가 아니라 AI를 활용하여 다양한 직무의 일을 수행하여 스스로 하나의 기업처럼 문제를 해결하고 가치를 창출하는 일을 해야 할 것입니다. 회사를 나와서 창업을 하지 않더라도 적어도 조직 내에서라도 그러한 일을 수행해야 살아남을 수 있을 것 입니다.\n\n하지만 안타깝게도, 대부분의 조직은 아직 이 변화를 받아들일 준비가 되지 않았습니다.\n여전히 기획팀, 개발팀, 디자인팀의 칸막이가 존재하고, 커뮤니케이션을 하느라 정작 본질적인 Product Building은 느려지기 일쑤입니다. AI는 점점 발전하는데, 기존 조직의 레거시 시스템이 인재들의 발목을 잡고 있는 셈입니다.\n\n그래서 저는 AI 시대의 인재들이 마음껏 뛰어놀 수 있는 최적의 무대를 만들었습니다.\n조코딩에서는 이렇게 경계가 사라진 시대의 새로운 인재를 ‘프로덕트 빌더(Product Builder)’라는 직무로 정의하고 채용을 진행 중입니다. 개인이 AI를 활용하며 빠르게 오직 Product Building에만 집중할 수 있는 직무이며 기능 수행이 아니라, 스스로 문제를 해결하고 가치를 만들어내는 분들을 모십니다.\n\n이런 분들이 기존의 직무 틀에 갇히기엔 너무나 아깝고 보상 체계도 아쉽습니다.\n그래서 직무 간 커뮤니케이션도, 복잡한 결재 라인도, 불필요한 회의도 없이, 성과에 대한 보상까지 확실히 가져갈 수 있는 구조를 만들었습니다. 회사의 자본과 트래픽을 내 것처럼 활용해, 진짜 1인 창업가처럼 일하여 AI 시대에 맞는 커리어 성장 기회를 잡고 싶다면, 지금이 완벽한 타이밍입니다.\n\n🔗 채용 공고 보기: (링크는 댓글에)\n\nAI 최신 소식과 AI 시대에 대한 생각, 앞으로도 꾸준히 나눌 예정입니다. '좋아요'와 '팔로우' 한 번씩 부탁드리겠습니다. 큰 힘이 됩니다.",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7397540321351524352?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7397540321351524352%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "조코딩 JoCoding",
-      "images": [
-        "https://media.licdn.com/dms/image/v2/D5622AQGRhQaJ58oYtA/feedshare-shrink_2048_1536/B56ZqlXuFSG0Aw-/0/1763711051060?e=1772064000&v=beta&t=uGeFhcbaMKJDf8FLvMWIhb7J3y-PNWY2vNOpMQrRln8"
-      ],
-      "user_link": "https://www.linkedin.com/in/ACoAACfVcCwBC2Um-3YmtYg58LwMarvLd6JsHsE",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "image",
-      "source": "network",
-      "sequence_id": 34,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/43ced2142bb5f5000d90c513397d49d6.jpg"
-      ]
-    },
-    {
-      "index": 114,
-      "code": "7397324001875980288",
-      "username": "Sujin Kang Ph.D.",
-      "created_at": "2025-11-21 02:24:37",
-      "time_text": "2개월",
-      "full_text": "🍌 구글 Nano Banana Prompt Tips\n>> 정말 '프롬프트'가 전부입니다\n\n구글이 Gemini 3 Pro Image 기반 새 이미지 모델 Nano Banana Pro를 공개했습니다.\n네 가지가 핵심입니다.\n1. 이미지 내 선명한 텍스트 렌더링\n2. 최대 4K 해상도\n3. 여러 이미지를 한 번에 섞어 합성하기\n4. 한국어 텍스트도 비교적 깨끗하게 표현\n\n레퍼런스 이미지를 활용해 카툰, 광고, 캠페인용 이미지, 인포그래픽도 생성할 수 있습니다.\n\n구글 공식 블로그 기준 7가지 프롬프트 팁을 정리했습니다.\n\n1️⃣ 한 줄로 생성 목표 작성하기\n아래 요소를 템플릿 처럼 조합합니다.\n[목적] + [주제/대상] + [구도/행동] + [장소] + [스타일] + [편집 지시]\n\n🍌 프롬프트 요소 예시:\n- 주제(Subject): 누가/무엇이 중심인지\n- 구도(Composition): 클로즈업인지, 와이드 샷인지\n- 행동(Action): 단순 ‘앉아 있다’보다 ‘콘텐츠를 함께 본다’가 훨씬 좋습니다\n- 장소(Location): 사무실, 카페, 집, 야외 등\n- 스타일(Style): 3D, 수채화, 필름 사진, 90년대 광고 등\n- 편집 지시(Editing): “배경 차 제거”, “넥타이 색을 초록으로 변경”처럼 구체적으로\n\n2️⃣ “카메라·조명·포맷”까지 포함하기\n프로급 이미지를 원한다면 촬영 관련 요소까지 프롬프트에 넣습니다.\n\n🍌 카메라 프롬프트 예시:\n- 종횡비/포맷: “9:16 세로 포스터”, “21:9 시네마틱 와이드 샷”\n- 카메라 정보: “로우 앵글, 얕은 심도(f/1.8)”, “인물 위주, 배경은 부드러운 아웃포커싱”\n- 조명/색감: “골든 아워 역광”, “티얼&오렌지 시네마틱 컬러 그레이딩”\n* 이전에는 종횡비가 잘 맞지 않아 비슷한 비율로 프롬프트에 상세하게 지시해야 했는데, Nano Banana Pro에서는 숫자만 넣어주면 됩니다.\n\n3️⃣ 텍스트가 들어가는 이미지는 “문구+위치+스타일”을 함께 작성\nNano Banana Pro는 이미지 안 텍스트를 선명하게 렌더링하는 것이 강점입니다.\n테스트 해보니 한국어 텍스트도 비교적 깨끗하게 표현되지만 너무 작은 글씨는 깨질 수 있습니다.\n\n🍌 텍스트 프롬프트 예시:\n텍스트 내용: “헤드라인 ‘AI로 10배 빨라진 디자인 워크플로우’ 추가”\n- 위치: “이미지 상단 중앙 정렬”\n- 폰트 느낌: “굵은 산세리프, 모던하고 직관적인 스타일”\n- 언어: “본문 캡션은 한국어, 서브텍스트는 영어로 표시”\n\n4️⃣ 다이어그램·인포그래픽은 “정확도 조건” 명시\nGemini 3 Pro의 세계 지식과 추론 능력을 활용하면 정보형 이미지도 만들 수 있습니다.\n\n인포그래픽/다이어그램에 사용할 이미지를 업로드해서, 정확도와 관련된 조건을 함께 적어 줍니다.\n\n🍌 프롬프트 예시:\n- “과학적으로 정확한 ○○ 다이어그램”\n- “실제 비율에 맞춘 ○○ 구조도”\n- “역사적으로 정확한 ○○ 시대의 거리 풍경”\n\n5️⃣ 브랜드·캠페인용 “재사용 가능한 프롬프트 템플릿” 만들기\nNano Banana Pro는 최대 14개의 이미지를 한 번에 입력 가능하고,\n최대 5명까지 인물 일관성 유지가 가능해, 브랜드·캠페인용 이미지 템플릿을 만들어두고 재사용하기 좋습니다.\n\n🍌 여러 인물이 등장하는 팀 사진 프롬프트\n“업로드한 다섯 장의 인물 사진을 참고해서 한 팀처럼 보이는 단체 사진을 만들어줘.밝은 사무실 배경, 캐주얼한 드레스 코드, 자연스럽게 웃는 표정.\n각 인물이 원본 사진과 최대한 비슷하게 보이도록 해줘.”\n\n🍌 제품+로고 조합 광고 템플릿\n“이미지 A의 제품 사진과 이미지 B의 로고를 활용해\n온라인 광고용 메인 배너를 만들어줘.\n제품은 중앙에 크게, 로고는 우상단에 작게 배치. 배경은 브랜드 컬러를 활용한 그라디언트, 16:9 비율, 4K 해상도.”\n\n결국, 이미지 생성에서도 '프롬프트'가 중요합니다.\n명확한 목적과 모델 기능을 이해한 프롬프트가 결과물을 크게 좌우 할 것 같습니다.\n\n#nanobananapro #gemini3pro #aiimagegeneration #promptengineering #marketingdesign #generativeai #프롬프트엔지니어링 # 🍌",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7397324001875980288?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7397324001875980288%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "Prompt Engineer | Ph.D. in Korean Linguistics | Conversation Analysis | Optimizing AI-to-Human Interaction",
-      "images": [
-        "https://media.licdn.com/dms/image/v2/D5622AQFC9-ioepLS9A/feedshare-shrink_800/B56ZqiS.WaI0Ag-/0/1763659475693?e=1772064000&v=beta&t=hhYqO624F8zmgq8GSiiMS-C2q_if9Qkk1A4HEKB4yzU"
-      ],
-      "user_link": "https://www.linkedin.com/in/ACoAAEOyUqoBe58jAG2OO6sy7qWkq3AUW2likhw",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "image",
-      "source": "network",
-      "sequence_id": 33,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/844ac3beaec55f2de4a2ed6ac47d2876.jpg"
-      ]
-    },
-    {
-      "index": 115,
-      "code": "7403907026885730305",
-      "username": "Sedong Nam",
-      "created_at": "2025-12-09 06:23:13",
-      "time_text": "2개월",
-      "full_text": "코드의 경제적 가치가 0을 향해 가고 있다.\n\n코딩도, 프로그래밍도. UI도, UX도, 디자인도. 조사도, 회의도, 정리도. 개발도.\n\n기존의 소프트웨어 회사들이 독보적으로 잘 하던 많은 것들의 가치가 0을 향해 가고 있다.\n\n창조적 자기 파괴를 통해 재탄생 하지 않은 모든 소프트웨어 회사는 망할 것 같다.",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7403907026885730305?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7403907026885730305%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "We are hiring!",
-      "images": [],
-      "user_link": "https://www.linkedin.com/in/ACoAAB-dC0QBuWPVCKNtNof7O1YX9Cobb0WFgXs",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "text",
-      "source": "network",
-      "sequence_id": 47,
-      "sns_platform": "linkedin"
-    },
-    {
-      "index": 116,
-      "code": "7401027653564047361",
-      "username": "조여준 Ethan Cho",
-      "created_at": "2025-12-01 07:41:37",
-      "time_text": "2개월",
-      "full_text": "쿠팡 해킹이 드러낸 진짜 문제:\n왜 보안은 중요하지만, 보안 스타트업은 돈이 되지 않는가\n\n3,370만 명.\n대한민국 인구의 65%.\n사실항 전국민의 데이터가 유출됐다.\n\n이제 가능한 것들:\n\n- 당신이 언제 집을 비우는지 안다 (배송 패턴)\n- 당신의 소득 수준을 안다 (구매 내역)\n- 당신의 가족 구조를 안다 (주문 품목)\n- 당신이 어떤 약을 먹는지 안다 (건강 상태 추정)\n\n랜덤 스팸이 아니다.\n당신을 타겟으로 한 정밀 범죄가 가능해졌다.\n\n보이스피싱이 \"택배 받으실 분\"에서 \"○○아파트 ○동 ○호, 어제 주문하신 공기청정기 배송 건으로...\"로 진화한다.\n범죄의 ROI가 폭발적으로 높아졌다.\n\n이번 쿠팡 해킹은 단순한 ‘사고’가 아니라 시장 구조의 민낯을 드러낸 사건이다.\n한국에서 개인정보는 더 이상 개인의 것이 아니다.\n그리고 그 이유는 생각보다 단순하다.\n\n한국에서 보안은 돈이 안 되기 때문이다.\n\n---\n\nVC는 왜 보안에 투자하지 않을까?\n\n보안 기업은 멋진 스토리가 없다.\n고객이 보안 솔루션을 도입했을 때 매출이 늘어나지 않는다.\n보안은 비용이다. 성장 엔진이 아니다.\n\n- 도입해도 티가 안 난다\n- 쓰면 쓸수록 존재감이 사라진다\n- 성공해도 아무 일도 일어나지 않는 것처럼 보인다\n- 실패하면 모든 것이 무너진다\n\nVC가 싫어하는 가장 나쁜 조합: 리스크는 무한대, upside는 제한적\n\n반대로 AI, 커머스, 금용, 게임, 생산성 SaaS는?\n\n- 시장 확장\n- 성장 스토리\n- 빠른 지표\n- 눈에 보이는 ROI\n\n그래서 자본은 항상 ‘공격’에 몰리고, ‘방어’에는 모이지 않는다.\n\n---\n\n한국이 더 위험한 이유\n\n미국은 보안이 시장 논리로 작동한다.\n기업이 유출을 일으키면:\n\n- 고객 이탈\n- 소송\n- 주가 폭락\n- CEO 해임\n\n그래서 보안은 survival이고,\n보안 시장은 경제적 보상 구조가 존재한다.\n\n한국은?\n\n- 사과문 발표\n- “재발 방지 약속”\n- 몇 주 지나면 잊힘\n- 매출 변화 없음\n- 투자 영향 없음\n\n보안에 투자할 강력한 인센티브가 존재하지 않는다.\n\n그 결과:\n\n- 보안 기업은 투자를 못 받는다\n- 인재는 보안으로 가지 않는다\n- 보안 수준은 올라가지 않는다\n- 사건은 반복된다\n- 데이터는 공공재가 된다\n\n지금의 쿠팡이 그 증거다.\n\n---\n\n투자자 관점에서 본 핵심\n\n보안의 문제는 기술이 아니다.\n경제 구조의 문제다.\n\n시장이 보안을 보상하지 않으면 보안 스타트업은 절대로 성공할 수 없다.\n\nVC가 보안에 투자하지 않는 이유는 냉정하다:\nReturn이 없다.\n\n그래서 한국은 계속 뚫릴 것이다.\n기업이 보안 투자보다 마케팅을 선택하는 한,\n보안은 영원히 후순위일 것이다.\n\n---\n\n그렇다면 무엇이 바뀌어야 하는가?\n\n보안이 시장에서 가치를 가지려면 유출의 대가가 진짜 비용이 되어야 한다.\n\n- 고객이 떠나고\n- 매출이 줄고\n- 기업가치가 훼손되고\n- 경영진이 책임지고\n- 투자자들이 압박해야 한다\n\n그 순간 보안은 비용이 아니라 전략이 된다.\n\n- 투자 가능성이 생기고\n- 인재가 몰리고\n- 보안 생태계가 성장한다.\n\n한국은 지금까지 이 구조가 없었다.\n그래서 보안 스타트업은 돈이 되지 않았고\n그래서 결국, 3,370만 명의 신상이 공공재가 되었다.\n\n---\n\n질문은 이것이다\n\n보안을 ‘비용’으로 계속 볼 것인가,\n아니면 ‘수익을 지키는 마지막 방어선’으로 재정의할 것인가?\n\n그리고 VC들에게 묻는다:\n\n우리는 공격하는 기술만 투자할 것인가,\n아니면 무너지는 시장을 지키는 기술에도 투자할 것인가?\n\n#미국증시쿠팡주가가궁금하네",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7401027653564047361?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7401027653564047361%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "CIO @ TheVentures | ex-Google, Samsung",
-      "images": [
-        "https://media.licdn.com/dms/image/v2/D5622AQHvuw9BTrvLeQ/feedshare-shrink_1280/B56ZrW7ZItJQAs-/0/1764542485701?e=1772064000&v=beta&t=303axZRyFJPebjkAXKFPFsYkq0xD8aGQ90rdASfC4DY"
-      ],
-      "user_link": "https://www.linkedin.com/in/ACoAAARknekBOFFETpmlSPqmlb2P8ln4iACFaJg",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "image",
-      "source": "network",
-      "sequence_id": 38,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/b3fc9ebcfcccd6fc825e2bddd1a45950.jpg"
-      ]
-    },
-    {
-      "index": 117,
       "code": "7405142923396218880",
       "username": "David Galbraith",
       "created_at": "2025-12-12 16:14:13",
@@ -6338,7 +6245,7 @@ const snsFeedData = {
         "https://media.licdn.com/dms/image/v2/D4E22AQHrAABH883opg/feedshare-shrink_1280/B4EZsRaPwcHoAs-/0/1765523652738?e=1772064000&v=beta&t=BhiTT8lrHrCGPd1CHQXmREz7JDJJMjwK2mWqIuf7H5I"
       ],
       "user_link": "https://www.linkedin.com/in/ACoAAAAAE3gBJ4HpQRxojwW0G1kgDHIL3kMAfN8",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "image",
       "source": "network",
       "sequence_id": 50,
@@ -6348,168 +6255,64 @@ const snsFeedData = {
       ]
     },
     {
-      "index": 118,
-      "code": "7405754948509966337",
-      "username": "Seungwan Son",
-      "created_at": "2025-12-14 08:46:11",
-      "time_text": "Kyunghun Lee님의 글을 퍼감1개월",
-      "full_text": "최근에 솔트룩스 이경일 대표께서\nAI시대 아이들을 위한 교육관으로 3가지를 언급했는데\n매우 유사하고 인사이트 넘치는 글이다.\n3가지 : 1) 문제정의, 2)메타인지 , 3) Resilience",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7405754948509966337?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7405754948509966337%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "GEO 솔루션 AINNECT Founder & CEO | 베스트셀러『제로클릭』(길벗) 저자 | AaronHouse Labs 대표 | 제로투원 신규서비스 5회 런칭 | CJ E&M · NEXON KOREA · LINE PLUS · EST",
+      "code": "7404691043209760768",
+      "username": "Narae Kim",
+      "created_at": "2025-12-11 10:18:37",
+      "time_text": "2개월",
+      "full_text": "[Pitching은 설명이 아니다. 설득이다.] \"우리 기술은 딥러닝 기반 알고리즘으로 데이터를 분석해서...\"5초 후, 투자자가 핸드폰을 봅니다.\n\n최근 6년간 500개 IR Deck 만들며 목격한 차이는 단 하나.\n설득력.\n\n스티브 잡스는 아이폰의 CPU를 설명하지 않았습니다.\n\"1000곡을 주머니에\"라고 설득했습니다.\n\n일론 머스크는 배터리 기술을 설명하지 않습니다.\n\"주유소 갈 필요 없는 삶\"을 설득합니다.\n\n[설명하는 IR Deck] \"우리 솔루션은 머신러닝을 활용해 96.7%의 정확도로 예측합니다\"\n[설득하는 IR Deck] \"매달 버려지는 재고 3억원, 이제 90% 줄일 수 있습니다\"\n어느 게 더 기억에 남으시나요?\n\n\n설득의 3가지 법칙:\n1. 숫자는 비교로 말하라\n\"처리속도 0.3초\" →\"경쟁사보다 10배 빠른 0.3초\"\n\n2. 기능은 혜택으로 바꿔라\n\"실시간 데이터 분석 기능\" → \"퇴근 시간을 2시간 앞당기는 자동 분석\"\n\n3. 기술은 스토리로 풀어라\n\"AI 기반 최적화 알고리즘\" →\"A사장님은 우리 덕분에 월 매출이 두 배가 됐습니다\"\n\n\n투자자가 듣고 싶은 건:\n\"How it works\" (X)\n\"Why should I care\" (O)\n\n오늘부터 이렇게 바꿔보세요:\n\"우리는 ~를 개발했다\" → \"고객은 ~를 얻는다\"\n\"~라는 기술이다\" → \"~라는 문제가 사라진다\"\n\"특허를 보유했다\" → \"경쟁사가 못 따라온다\"\n\n설득은 거창한 게 아닙니다. 상대방 입장에서 말하는 겁니다.\n당신의 피칭이 설명회가 되지 않으려면, 한 가지만 기억하세요.\n\n\"So What?\"\n모든 문장 뒤에 이 질문을 던지세요. 답이 없다면, 그건 설명입니다. 지우세요.\n\n다음 피칭 전에 스스로 물어보세요:\n\"나는 지금 가르치려 하는가, 움직이려 하는가?\"\n\n가르치려 한다면 당신은 그저 투머치토커이고,\n움직이려 한다면 창업가입니다.\n\n\n📣 2026년엔 IR Deck 부트캠프와 실전 템플릿 공개, 웨비나 등...\n더 실용적인 자료들과 함께 찾아뵐 예정입니다.\n필요하신 분들은 팔로우 혹은 일촌 신청 해주세요.\n다음 달부터 열릴 이벤트와 신규 콘텐츠 소식을 가장 먼저 전해드리겠습니다.",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7404691043209760768?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7404691043209760768%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "IR Deck Builder",
+      "images": [
+        "https://media.licdn.com/dms/image/v2/D5622AQH9ocWo-xKfnw/feedshare-shrink_2048_1536/B56ZsK_Q5NIkA0-/0/1765415916192?e=1772064000&v=beta&t=maqxQN9E7VTakLbGR0WHogLRrI6FhK6vjUfCIE5RxoI"
+      ],
+      "user_link": "https://www.linkedin.com/in/ACoAACOcXvsBa0ZJB06mKX0Qev6doqi4y5bW_W0",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "image",
+      "source": "network",
+      "sequence_id": 49,
+      "sns_platform": "linkedin",
+      "local_images": [
+        "web_viewer/images/6cb20204cb33d9b486a99e81b512e6fb.jpg"
+      ]
+    },
+    {
+      "code": "7403920649229926400",
+      "username": "Suk Hyun K.",
+      "created_at": "2025-12-09 07:17:20",
+      "time_text": "2개월",
+      "full_text": "프롬프트 엔지니어링은 사실 허상이었다...\n\n\"AI의 핵심은 기술이 아닌 공감지능 그리고 사회성\"\n\n최근 발표된 이 논문은 지금까지 우리가 AI와 협업하는 방식에 대해 근본적인 전환을 요구한다. 지금까지 AI 활용의 핵심이라고 믿어왔던 것은 더 강력한 모델, 더 정교한 프롬프트, 더 많은 파라미터, 더 긴 컨텍스트 창, 더 높은 벤치마크 점수 같은 기술적 요소였다.\n\n우리는 모든 문제의 답을 “프롬프트 엔지니어링”에서 찾으려 했고, 충분히 정확한 문구만 입력하면 AI가 우리가 원하는 답을 줄 것이라고 믿었다. 그러나 이 연구는 그 믿음 전체가 잘못된 전제에 초점을 맞춘 조작적 환상이었음을 여실히 드러낸다.\n\nAI 자체가 병목이 아니라, AI라는 비인간적 지능과 협업하는 인간의 능력 자체가 병목이었다. 더 나은 기술적 인프라를 쌓아 올려도, 인간이 AI의 사고 구조를 근본적으로 이해하지 못한다면 성능은 무용하다는 것이 논문의 핵심논지다.\n\n연구진은 667명의 사용자가 문제를 단독으로 풀 때 그리고 AI와 함께 풀 때를 비교하여 분석했고, 그 결과는 완전히 예상 밖이었다. 인간의 단독 문제해결 능력은 AI와의 협업 능력과 거의 상관관계가 없었다. 다시말해, 표면적으로 똑똑하고 뛰어난 문제 해결자가 AI와 함께할 때도 뛰어난 것은 아니었던 것이다.\n\nAI 협업 능력을 결정하는 핵심 요인은 ‘지능’이 아니라 Theory of Mind(ToM) 즉, AI가 무엇을 알고, 무엇을 모를지, 어디서 오해할지를 추론하고 모델링하는 능력이었다. 논문의 회귀분석표는 이것을 명확하게 보여준다. 사용자의 ToM 점수는 AI 응답의 품질을 매우 정확히 예측한 반면, 단독 문제 해결 능력은 거의 영향을 주지 않았다.\n\n심지어 같은 사람이 같은 문제를 풀더라도, 그 순간 의도적으로 더 많은 공감 능력을 발휘해 사고의 관점을 AI 쪽으로 맞추었을 때는 응답의 품질이 눈에 띄게 향상되었다. 다시 말해, Theory of Mind는 타고난 고정 능력이 아니라 사용자가 필요할 때 의식적으로 활성화할 수 있는 동적, 가변적 능력이었다.\n\n이것은 프롬프트 엔지니어링이라는 분야가 사실 기술적 스킬이 아니라 사회적·인지적 스킬이라는 사실을 뜻한다.\n\n지금까지 유행했던 모든 “10가지 프롬프트 팁”, “최고의 템플릿”, “비밀 문구” 같은 것들이 실제로 성능을 높여온 이유는 템플릿 자체의 구조적인 마법 때문이 아니라, 그 템플릿이 사용자로 하여금 AI가 놓칠 맥락을 보완하게 만들고, 문제의 구조를 명확히 정의하게 만들고, AI가 오해할 구간을 줄이도록 사고과정을 강제했기 때문이다.\n\n즉, 템플릿이 사용자에게 ToM을 억지로라도 활성화시킨 것이다. 진짜 차이를 만드는 것은 문구가 아니라, 템플릿을 쓰면서 사용자가 AI의 관점에서 사고하도록 강요되는 자연스러운 과정에 있었다.\n\n연구의 수치적 결과들은 이를 더 강하게 뒷받침한다. 인간 단독의 경우 평균값은 약 0.58이었지만, GPT-4o와 협업하면 성능은 무려 29포인트 상승했다. Llama 3.1–8B도 상승 폭이 있었지만 그보다는 훨씬 낮았다. 사실 중요한 것은 모델의 단독 점수가 아니라, 모델이 인간과 함께할 때 인간을 얼마나 더 똑똑하게 만들어주느냐였다.\n\n지금까지 업계는 MMLU 같은 정적 벤치마크에 천착해 “AI가 혼자 얼마나 잘 푸는가”만 측정해왔다. 하지만 현실의 AI는 인간과 함께 일해야 한다. 그렇다면 진짜 핵심은 “이 모델은 인간과 팀을 이루었을 때 얼마만큼의 상승효과를 만들어내는가”여야 한다. GPT-4o가 특히 강력했던 이유는 모델 단독의 지능이 아니라, 협업 시 창출하는 지능의 증가량, 즉 진짜 의미의 ‘시너지’ 때문이었다.\n\n이제 우리는 명확히 구분해야 할 필요가 있다. AI를 잘 쓰는 사람과 못 쓰는 사람의 차이는 프롬프트 템플릿이나 모델 버전 때문이 아니다. AI를 마치 자동판매기처럼 “명령을 넣으면 답을 뱉는 기계”로 취급하는 사람은 결코 높은 성능을 얻을 수 없다.\n\n반대로, AI를 하나의 비인간적 사고체계를 가진 지능으로 인정하고, 그 지능이 어디서 혼돈할지, 어떤 정보가 필요할지, 어떤 맥락을 놓칠지 직감적으로 파악하려 노력하는 사람은 같은 모델에서도 완전히 다른 차원의 결과를 얻는다. 이것은 소수의 “천재 프롬프트 엔지니어들”이 압도적 성능을 뽑아내는 이유를 설명한다. 그들은 비밀 프롬프트를 알고 있는 것이 아니라, AI의 혼돈 패턴을 감지하고, 정보 간극을 먼저 발견하고, 스스로 그 공백을 채워주는 협업적 직관을 이미 몸에 익혔기 때문이다.\n\n이 직관은 점점 자동화되어, 그들은 AI가 혼란스러워할 지점을 본능적으로 피하고, 필요한 정보를 자연스럽게 제공하여, 마치 인간 팀원과 호흡을 맞추듯 AI와 소통한다. 그래서 같은 GPT-4o를 쓰더라도 어떤 사람은 혁신적 결과를 뽑아내고 어떤 사람은 평범한 답변밖에 받지 못하는 것이다.\n\n이 연구는 우리에게 기술 중심의 사고를 넘어 “관계 중심의 AI 이해”로 이동하라고 요구한다.\n\n우리가 배워야 하는 것은 명령 기술이 아니라 관점 전환 능력, 상대 지능의 한계를 미리 예측하는 능력, 보이지 않는 정보 간극을 메우는 능력이다. AI 시대의 진짜 실력자는 더 똑똑한 인간이 아니라, 비인간적 지능을 이해하려는 인간, AI와 함께 사고하는 인간, 인간-AI 팀 전체의 능력을 증폭시키는 인간이다.\n\n기술적 능력이 아니라 사회적·인지적 능력이 중심이 되어 이동하는 이 변화는 AI시대의 생존 방법뿐 아니라, 앞으로의 인재상까지 완전히 재정의 할 수 있다.\n\n반복해서 말하지만, 프롬프트 엔지니어링은 기술이 아니라 협업 그 자체이다. 그리고 협업의 핵심은 공감이며, 이제 우리는 인간이 아닌 이종지능과의 공감이라는 새로운 능력을 배양해야 한다. 인간이 AI를 이해하는 바로 그 순간, AI 역시 인간을 비약적으로 더 강하게 만든다. 이것이 연구가 말하는 협업적 지능의 본질이며, 앞으로 우리가 살아가야할 세계에서 가장 중요한 지적 역량이 될 것이다.\n(댓글에 2화 업로드 했습니다)\n#지능 #AI #인공지능 #프롬프트 #프롬프트엔지니어링 #Prompt #MIT #ToM #협업 #논문 #공감",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7403920649229926400?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7403920649229926400%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "AI Business Strategy Specialist / Ex-Startup Founder",
+      "images": [
+        "https://media.licdn.com/dms/image/v2/D4E22AQFH0oxr7T-5EQ/feedshare-shrink_1280/B4EZsACmCKHUAc-/0/1765232239096?e=1772064000&v=beta&t=ZcOhECg1_L_NvFgaB5jnUdhdYIIXhBFzjAiNBUznnhw"
+      ],
+      "user_link": "https://www.linkedin.com/in/ACoAAFt2rQcBjVxZv3E_NY1oLQYRn714_JoFQ3E",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "image",
+      "source": "network",
+      "sequence_id": 48,
+      "sns_platform": "linkedin",
+      "local_images": [
+        "web_viewer/images/fc5e14dad4f48073c83e187d21079658.jpg"
+      ]
+    },
+    {
+      "code": "7403907026885730305",
+      "username": "Sedong Nam",
+      "created_at": "2025-12-09 06:23:13",
+      "time_text": "2개월",
+      "full_text": "코드의 경제적 가치가 0을 향해 가고 있다.\n\n코딩도, 프로그래밍도. UI도, UX도, 디자인도. 조사도, 회의도, 정리도. 개발도.\n\n기존의 소프트웨어 회사들이 독보적으로 잘 하던 많은 것들의 가치가 0을 향해 가고 있다.\n\n창조적 자기 파괴를 통해 재탄생 하지 않은 모든 소프트웨어 회사는 망할 것 같다.",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7403907026885730305?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7403907026885730305%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "We are hiring!",
       "images": [],
-      "user_link": "https://www.linkedin.com/in/ACoAAAME3t8BpGdLygm7abbadbpG00aKZB48UXc",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "user_link": "https://www.linkedin.com/in/ACoAAB-dC0QBuWPVCKNtNof7O1YX9Cobb0WFgXs",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "text",
       "source": "network",
-      "sequence_id": 52,
+      "sequence_id": 47,
       "sns_platform": "linkedin"
     },
     {
-      "index": 119,
-      "code": "7313213672372215809",
-      "username": "김덕중",
-      "created_at": "2025-04-03 00:00:12",
-      "time_text": "11개월",
-      "full_text": "논문 자주 검색하시는 분들은 참고하시면 좋겠습니다. 구글 스콜라를 주로 사용했지만 사용성 측면에서는 훨씬 편하고 직관적이네요. 오픈소스로 만들어진 서비스이기 때문에 사용에 제약이 없습니다. https://openalex.org/",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7313213672372215809?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7313213672372215809%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "숙명여대 겸임교수, Firb AI 연구소장",
-      "images": [
-        "https://media.licdn.com/dms/image/v2/D5622AQElxwNG2A-Mhw/feedshare-shrink_2048_1536/B56ZX3BErTGoAo-/0/1743606011579?e=1772064000&v=beta&t=gkYK-z-xuLd8qx5IH5kBpPNXNQaOwb5c628dAlCFrZU"
-      ],
-      "user_link": "https://www.linkedin.com/in/ACoAAAwBOVMBDI50rE9wyD4tsMaGWkV-85Sqd50",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "image",
-      "source": "network",
-      "sequence_id": 10,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/fde4e6ea13f9780bc53b8db2f647aa00.jpg"
-      ]
-    },
-    {
-      "index": 120,
-      "code": "7405773526021963777",
-      "username": "Kyoungchan Hwang",
-      "created_at": "2025-12-14 10:00:01",
-      "time_text": "1개월",
-      "full_text": "얼마 전, 4년 차 개발자와 커리어 상담을 했습니다\n회사에서 구조조정을 당했다고 했습니다.\n실력 문제는 아니라는 말도 덧붙였습니다.\n팀이 통째로 정리됐고, 본인은 그 안에 있었을 뿐이라고요.\n\n“이제 어디로 가야 할지 모르겠다”는 말과 함께\n그분이 이런 말을 덧붙였어요.\n“이제 개발자는 다 비슷해지는 것 같아요.\nAI도 있고, 프레임워크도 다 거기서 거기고요.”\n그 말이 틀렸다고 느껴지진 않았습니다.\n오히려 꽤 정확한 진단이었습니다.\n\n그래서 저는 기술 이야기를 하지 않았습니다.\n이직 전략도, 스택도, 포트폴리오도 말하지 않았고요.\n대신 이렇게 물었습니다.\n“지금까지 일하면서,\n내가 직접 정의한 문제를 풀어본 경험이 있었나요?”\n\n잠깐의 침묵이 있었습니다.\n\n그분의 커리어를 돌아보면\n주어진 요구사항을 잘 구현해왔고,\n팀 안에서도 성실한 개발자였습니다.\n\n하지만 “이건 우리가 풀어야 할 문제다”라고\n스스로 정의해본 경험은 많지 않았다고 했습니다.\n\n그래서 AI 이야기를 꺼냈습니다.\nAI가 무섭기 때문이 아니라,\n지금 이 막막함의 이유를 설명해주기 위해서였습니다.\n\nAI는 구현을 빠르게 만듭니다.\n그리고 점점 더 잘 만들 겁니다.\n그 말은 곧,\n“잘 구현하는 사람”의 희소성이 줄어든다는 뜻이기도 합니다.\n\n문제는,\n그동안 많은 개발자들이\n커리어의 중심을 그 지점에 두고 성장해왔다는 겁니다.\n\n그래서 저는 이렇게 이야기했습니다.\n“앞으로는 ‘무엇을 만들 수 있느냐’보다\n‘어떤 문제를 선택하고 풀 수 있느냐’가 더 중요해질 거예요.”\n\n“Product Engineer라는 역할은\n기술이 아니라 문제에 서는 사람이에요.”\n\nProduct Engineer는\n기획자 흉내를 내는 개발자도 아니고,\n개발 잘하는 기획자도 아닙니다.\n\n문제를 관찰하고\n이게 기술로 풀 가치가 있는지 판단하고\n구조를 설계한 다음\n기술을 도구로 사용하는 사람\n저는 그렇게 정의합니다.\n\n그분에게 당장 답을 준 건 아닙니다.\n“여기로 가세요” 같은 말도 하지 않았고요.\n대신 이런 질문을 드렸습니다.\n“다음 프로젝트에서는 구현부터 하기보다,\n이게 어떤 문제를 푸는 건지부터 생각해보는건 어떨까요?”\n\nAI 시대에 커리어가 흔들리는 이유는\n실력이 없어서가 아닐 수 있습니다.\n문제를 정의하는 자리에 서본 적이 없었기 때문일 수도 있습니다.\n\n혹시 여러분도 요즘,\n“다음엔 어디로 가야 하지?”라는 생각을 하고 계신가요?\n\n그 질문 앞에서 기술 말고,\n정의할 문제를 먼저 생각해보는건 어떨까요?\n\n(전문은 아래 아티클에서 확인 가능합니다 🤗\nhttps://lnkd.in/gcnp9Q77)",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7405773526021963777?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7405773526021963777%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "Product Engineer | 콘텐츠 크리에이터 | 부트캠프 운영",
-      "images": [],
-      "user_link": "https://www.linkedin.com/in/ACoAACOysKUBduTk_VevCKhgj6zs9sW5eRn-LRs",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "text",
-      "source": "network",
-      "sequence_id": 53,
-      "sns_platform": "linkedin"
-    },
-    {
-      "index": 121,
-      "code": "7395635427879129088",
-      "username": "Soojung Shin (신수정)",
-      "created_at": "2025-11-16 10:34:50",
-      "time_text": "2개월",
-      "full_text": "평생 커리어의 필수 조건: 파는(고객확보) 능력-\n\n1. 얼마전 정년을 앞둔 한분을 만났다. 기업의 임원이고 훌륭한 학력과 경력, 인품의 소유자였다. 사람을 돕고자 하는 뜻이 있어 코칭을 배우고 계셨다.\n\n2. 이야기를 해보니 이미 많은 돈을 투자해서 코칭을 몇년간 여러 기관에서 배우고 계셨다. 이에 질문했다. \"지금 코칭을 하고 계신가요?\"\n\n3. 그 분 답하길 지금은 아직 퇴임하지 않았기에 후배들 모의코칭을 조금 하고 있고 이후 나오면 코칭회사에서 고객들을 연결해줄 것을 기대한다고 하셨다.\n\n4. 그분은 멋진 커리어에 뜻도 좋고 학습능력도 좋았지만 중요한 한 가지가 빠져있었다. 그것은 \"스스로\" 고객을 확보하는 능력이 없다는 것이었다.\n\n5. 예전에 글로벌 기업 임원으로 계시다 50대 후반에 퇴임한 후 10년이 지난 지금도 강의와 코칭을 하시는 분을 만나 지금도 일하시는 비결을 물은 적이 있다. 그분이 이런 말씀을 하신다.\n\"제가 퇴임시절 10여명과 같이 경영 코칭교육을 배웠습니다. 그 당시 동기에는 대기업 CEO출신, 글로벌 기업 한국 CEO출신 들을 비롯 이름만 대면 알만한 사회 저명 인사들이 많았습니다. 그런데 지금까지 코칭을 하며 수입을 지속하는 사람은 저 혼자입니다. 대부분은 시작도 못하거나 조금 하다가 그만 두었습니다\"\n\n\"그분들 모두 똑똑하시고 학습능력이 뛰어났습니다. 전략, 재무, 인사 출신들이 많았고요. 그런데요. 문제는 '스스로' 고객을 못만드시더라고요. 쑥스러워서 자신의 서비스를 팔지를 못하는겁니다. 그러니 코칭 회사등에서 연결해주지 않으면 일이 없는 겁니다. 저는 커리어 동안 영업과 사업만 해서 가오나 체면 이런거 별로 신경쓰지 않았어요. 저는 다양한 실험을 해보면서 제 고객들을 확보해왔죠. 결국 저만 이 일을 지속하게 되었어요\"\n\n6. 예전에 나이가 있는 대기업 출신들을 스타트업에 연결하는 회사를 하는 대표를 만났다. 내가 그녀에게 물었다. 대기업 출신이 스타트업에서 역량을 발휘하는 영역이 있나요? 그녀는 이런 답을 한다.\n\"대부분은 적응을 못하는데요. 2개 분야는 그래도 성공적입니다. 하나는 영업하신 분들이고요. 또하나는 정부과제 잘 따셨던 분들입니다\"\n\n7. 조직을 벗어나서도 경쟁력을 가지려면 가장 필요한것은 \"고객을 확보하는 능력\"이다. 아무리 실력이 있어도 고객을 확보하는 능력이 없다면 한발자욱도 나갈수 없다.\n\n8. 나는 그분께 이렇게 말했다.\n\"글이 좋으신가요? 영상이 좋으신가요? 글이 좋다면 글쓰는 플랫폼을, 영상이 좋으시다면 영상 플랫폼을 하나 선택해서 콘텐츠를 올리기 시작하세요\"\n\n9. 그랬더니 말하신다.\"제가요? 아직 실력도 부족한데요?\"\n\n10. 나는 말했다. \"고등학생들 과외를 대학교수가 하나요? 대학교 1학년이 제일 많이 하지 않습니까? 한 발짝만 앞서있으면 도움을 받을 사람은 많습니다. 먼저 자신이 배운것부터 하나씩 올려보세요. 기존의 경험 및 전문성과 연결해보세요. 자신을 알아야 고객이 생길것 아닙니까? 자신이 아무리 대단해도 존재자체를 모르는데 누가 오겠습니까? 누군가의 영업 연결에만 의존하면 오래 못갑니다. 공부만 하고 자격증따다가 시간 다 쓰지마시고 일주일에 한번씩 아웃풋을 해보시고 자신의 프로그램과 고객을 만들 시도를 하세요.\"\n\n11. 여전히 \"파는 능력\"이 있어야 어떤 상황이든 생존 가능성이 높다. 그러므로 평생 커리어를 추구한다면 지금 직장생활을 할때 자신의 커리어 포트폴리오 중 영업이든 마케팅이든 \"파는 능력\" \"고객을 확보하는 능력\"을 하나의 블록으로 준비하시라.\n\np.s. 댓글은 서로에게 도움됩니다",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7395635427879129088?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7395635427879129088%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
-      "images": [],
-      "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "text",
-      "source": "network",
-      "sequence_id": 31,
-      "sns_platform": "linkedin"
-    },
-    {
-      "index": 122,
-      "code": "7401368244718411776",
-      "username": "Kyunghun Lee",
-      "created_at": "2025-12-02 06:15:00",
-      "time_text": "2개월",
-      "full_text": "11월 Product Hunt에서는 어떤 스타트업들이 주목받았을까요?\n\nProduct Hunt는 스타트업 시장의 바로미터입니다. 투자자, 창업자, PM들이 모여서 새로운 제품에 투표합니다. 어떤 제품이 상위권에 오르는지 보면, 시장이 지금 무엇을 원하는지 읽을 수 있습니다.\n\nAI 시대에 이게 더 중요해졌습니다. 기술 변화 속도가 빨라지면서 \"지금 시장이 원하는 것\"과 \"6개월 전에 원했던 것\"이 완전히 달라지기 때문입니다. 2024년 상반기에는 AI 이미지 생성기가 상위권을 휩쓸었습니다. 지금은 다릅니다.\n\nGemini Deep Research로 11월 데이터를 조사하고 NotebookLM으로 슬라이드를 만들어봤습니다. 11월의 특징을 보면, AI가 \"가능성의 과시\"에서 \"문제의 해결\"로 완전히 넘어갔습니다. 특히 상위 10개 중 8개가 AI를 핵심 엔진으로 사용하지만, 이제 더이상“AI 서비스\"라고 전면에 내세우지 않습니다.\n\n1. 첫 번째 변화: 경험이 세일즈를 대체하고, 신뢰가 자산이 됩니다\n\n1위 Guideflow(1,026+ 업보트)를 보면 시장의 방향이 보입니다. B2B 소프트웨어를 구독할 때 보통 이런 과정을 거칩니다. \"데모 요청\" 버튼 클릭, 24시간 대기, 영업 담당자와 일정 조율. Guideflow는 이 과정을 없앴습니다. 마케터가 엔지니어 없이 프론트엔드 캡처만으로 대화형 데모를 만듭니다. 웹사이트 방문 즉시 버튼을 클릭하고 데이터를 입력할 수 있는 \"살아있는\" 경험입니다.\n\n5위 TrustMRR(770+ 업보트)은 다른 방식으로 같은 문제를 풉니다. Stripe 연동을 통해 스타트업의 실제 MRR을 검증하고 공개합니다. 인디 해커 커뮤니티에서 만연한 \"매출 조작 인증샷\" 문제를 해결합니다. AI로 가짜를 만들기 쉬워진 시대에, \"진짜임을 증명해주는 것\" 자체가 비즈니스 모델이 된 겁니다.\n\n2. 두 번째 변화: AI가 \"도구\"에서 \"동료\"로 진화합니다\n\n\"SaaS 피로도\"라는 말이 있습니다. 너무 많은 도구를 배우고, 너무 많은 대시보드를 확인해야 합니다. 시장의 해답은 더 많은 기능이 아닙니다. 인간 개입의 최소화입니다.\n\n6위 Oskar(738+ 업보트)는 이메일 인박스에서 \"보이지 않게\" 작동합니다. 대화의 맥락을 파악하고, 응답 없는 리드에 후속 메일을 보내고, CRM을 업데이트합니다. 사용자 리뷰에서 \"모든 창업자가 꿈꾸던 비서\"라는 평가가 나왔습니다.\n\n8위 Floqer(705+ 업보트)는 \"RevOps 리더를 채용 중인 뉴욕 소재 기업\"처럼 구체적인 시장 신호를 감지해서 자동으로 리드를 발굴합니다. 80개 이상의 데이터 소스를 연결하고, Perplexity와 AngelList가 실제로 사용 중입니다.\n\n과거에는 사람이 도구를 직접 사용해서 결과를 만들었습니다. 이제는 목표만 설정하면 에이전트가 알아서 실행합니다. Human-in-the-loop에서 Human-on-the-loop로의 전환입니다.\n\n3. 세 번째 변화: 기술이 장벽을 허뭅니다\n\n3위 Talo(835+ 업보트)는 언어 장벽을 없앱니다. 화상 회의에서 실시간 음성 통역을 제공하는데, 기계음이 아니라 화자의 목소리 톤을 유지합니다. 지연 시간은 300-700ms. 글로벌 팀 매니저들은 \"게임 체인저\"라고 평가합니다.\n\n4위 Gemini 3(831+ 업보트)는 지식 장벽을 낮춥니다. 텍스트, 이미지, 오디오, 비디오, 코드를 단일 모델에서 동시에 이해합니다. 흥미로운 점은 상위 10개 중 빅테크 제품은 이것 하나뿐이라는 겁니다. 나머지 9개는 전부 스타트업입니다.\n\n9위 Uneed(649+ 업보트)는 시장 진입 장벽을 허뭅니다. \"Product Hunt는 너무 경쟁이 치열하다\"는 인식을 파고들어 인디 메이커들에게 공정한 노출 기회를 제공합니다. Product Hunt 안에서 Product Hunt 대안이 상위권에 오른 겁니다. 거인들 사이에도 틈새는 열려 있다는 증거입니다.\n\n4. 2026년을 준비하며\n\n11월 상위 제품들을 종합해 보면 흥미로운 패턴이 있습니다. Guideflow는 마케터가 엔지니어 없이 데모를 만들게 합니다. Oskar는 영업 담당자가 CRM 수작업 없이 후속 조치를 합니다. Talo는 글로벌 팀이 통역사 없이 회의합니다. BlogBowl은 콘텐츠 마케터가 리서처 없이 글을 씁니다.\n\n공통점이 있습니다. \"새로운 기능 추가\"가 아니라 \"기존 단계 제거\"입니다. 중간에 필요했던 전문가나 리소스 의존성을 없애는 겁니다. B2B 소프트웨어를 사려면 영업 담당자가 필요했습니다. 이제 Guideflow가 있으면 필요 없습니다. 글로벌 미팅을 하려면 통역사가 필요했습니다. 이제 Talo가 있으면 필요 없습니다. 후속 이메일을 체계적으로 보내려면 SDR이 필요했습니다. 이제 Oskar가 있으면 필요 없습니다.\n\n“AI를 쓰느냐\"가 아니라 \"AI로 어떤 단계를 없애주느냐”가 중요해졌습니다.",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7401368244718411776?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7401368244718411776%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "CAIO & Deputy CEO @ Channel Corp | AI × B2B SaaS",
-      "images": [
-        "https://media.licdn.com/dms/image/v2/D561FAQEUcYNnglpicA/feedshare-document-cover-images_480/B56ZrZOgRgJYBM-/0/1764581054427?e=1770976800&v=beta&t=cuFPal2s5ad9U6Sl5twBNpyf1Vx2zLF8hyW6PJO94kE"
-      ],
-      "user_link": "https://www.linkedin.com/in/ACoAAA5RhH4BjDv2vMF1Onz2ppvG6jeLmEGo93E",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "image",
-      "source": "network",
-      "sequence_id": 40,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/659c31358af3b496edecbb97613c6c22.jpg"
-      ]
-    },
-    {
-      "index": 123,
-      "code": "7401429747706351616",
-      "username": "황현태",
-      "created_at": "2025-12-02 10:19:23",
-      "time_text": "2개월",
-      "full_text": "2명의 PM 조수를 만들어서 실전에서 써먹고 있습니다. 프롬프트를 공유드립니다!\n\n저희는 3인 #FDE 스쿼드로 프로젝트를 처리하는데요. 저희의 토론 과정, 토론 결과를 기반으로 AI의 도움을 받아서 기획/설계/분석 과정을 더 강화합니다. (마침 Lenny Rachitsky 뉴스레터에 나온 내용의 프롬프트가 더 깔끔한 것 같아서, 댓글로 링크도 공유드립니다.)\n\n1. 비판적 에이전트 투입\n\n(프롬프트 1/3) \"2개의 에이전트를 만들어. 하나는 똑똑하고 낙관적인 속도 중심의 PM 에이전트. 하나는 똑똑하고 비판적인 이 PRD의 위험성에 대해서 중요하게 생각하는 PM 에이전트.\"\n\n레드팀 투입! 무조건 반대하고 걱정만하는 에이전트가 현실에서는 간혹 속도를 늦출때도 있다고 (개인적으로는) 생각하지만, AI는 답변이 정말 빠르니깐 그 의견을 확인하는 것이 정말 큰 도움이 됩니다.\n\n2. 토론 과정 전체를 공유 받기\n\n(프롬프트 2/3) \"웹서치, 소스 모든 자료를 활용해서 20라운드의 토론을 하고, 그 과정과 결과를 공유해줘.\"\n\n우리가 이미 토론을 진행했던 내용을 기반으로 다시 긍정/부정 에이전트가 토론하는 내용을 읽기만 해도 제가 빠뜨렸던 내용을 다시 인식하는데 도움이 확실히 됩니다. 오히려 결론보다도 이 부분이 더 도움이 된다는 생각도 합니다! 특히 서비스의 내러티브를 더 잘 정리하는 것 같기도 합니다!\n\n웹서치를 활용하기에 Lenny 뉴스레터에서는 퍼플렉시티를 활용하더라구요. 저는 ChatGPT를 활용하는데, 다음번에는 퍼플렉시티를 써봐야겠다는 생각입니다.\n\n3. 최종 결과 정리 요청\n\n(프롬프트 3/3) \"그리고 비판적인 에이전트를 설득할 수 있는 개선된 최소스펙의 PRD를 작성해줘. 기존 PRD와의 변경점도 같이 알려줘.\"\n\n기존 PRD에서 생각보다 많이 바뀌지 않은 경우도 많았습니다. 그렇기에 변경점을 묻고, 애매한 부분이 있으면, 왜 반영되었는지/반영되지 않았는지 확인해야합니다.\n\n요즘 생각보다 많은 팁이 세상에 넘쳐나는데, 요 1,2,3의 방식은 정말 도움이 되기에, 꼭 적용해보시면 좋겠습니다!",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7401429747706351616?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7401429747706351616%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "CEO & Co-founder @SpaceY",
-      "images": [
-        "https://media.licdn.com/dms/image/v2/D5622AQEduK4IANLRdw/feedshare-shrink_2048_1536/B56ZrcpIUFLgAw-/0/1764638362807?e=1772064000&v=beta&t=NzwG9QvWH1ZOhVudrBQQHm3GwGasGg46tVIvZgA7oYk"
-      ],
-      "user_link": "https://www.linkedin.com/in/ACoAACaaaYoBxuqGvSFA9Ozah6b9nA5IwYyx9TA",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "image",
-      "source": "network",
-      "sequence_id": 41,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/e3c0d79be52d021fb2bf901dee88be44.jpg"
-      ]
-    },
-    {
-      "index": 124,
-      "code": "7388348419590987776",
-      "username": "Neil Patel",
-      "created_at": "2025-10-27 07:58:52",
-      "time_text": "3개월",
-      "full_text": "What’s happening to organic traffic in 2025?\n\nWe surveyed 3,000 businesses to determine how their organic traffic has changed so far this year compared to last year.\n\nAdditionally, we wanted to see what happened to their total revenue.\n\nAs you can see, the majority of websites have experienced a traffic drop… but it’s not the same story when it comes to revenue.\n\nThe big winners on the revenue front were companies that adopted an omnichannel approach and focused on enhancing conversions.",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7388348419590987776?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7388348419590987776%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "Co-Founder at Neil Patel Digital",
-      "images": [
-        "https://media.licdn.com/dms/image/v2/D4D22AQFds8i6TEmWfA/feedshare-shrink_2048_1536/B4DZoivuuKHsAw-/0/1761519531305?e=1772064000&v=beta&t=_25bjMhfqU8fVzHqrUYUErqlSxzqiUNyGcIq0FKRYFs"
-      ],
-      "user_link": "https://www.linkedin.com/in/ACoAAAA6iRMBaolUyvRZOF1IDpmNtRPh98F54l8",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "image",
-      "source": "network",
-      "sequence_id": 28,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/04ee5f4f100b973248c4a89317f11b79.jpg"
-      ]
-    },
-    {
-      "index": 125,
-      "code": "7401569692362203136",
-      "username": "Minjung Kim",
-      "created_at": "2025-12-02 19:35:29",
-      "time_text": "2개월",
-      "full_text": "노트북LM 어디까지 사용했나요? (통념 깨기 & NotebookLM 재정의)\n\n나노바나나, veo3, Sora2 등 이미지와 영상툴을 많은 분들이 사용하면서 의도한 대로 안나오는 경우가 많다고 합니다.\n이 경우, 프롬프트를 최적화 해달라고 chatgpt나 제미나이에게 물어보셨다면 이제는 정확한 소스 기반의 NotebookLM을 사용해 보세요.\n\n비전문가들도 쉽게 사용할 수 있도록 AI 툴 사용 기본 근육을 키워주는 ‘프롬프트 공식‘ 을 노트북LM이 만들어줍니다.\n\n<사용>\nNotebookLM 소스추가 -> 공식홈에서 제공하는 자료를 포함하여 기 사용자들이 공유한 다양한 소스 선택-> “나노바나나 이미지 제작을 위한 프롬프트 공식 만들어줘”로 해\n\n각 툴마다 최적화된 프롬프트 공식을 정리하고 인포그래픽으로 만들어 보았습니다.\n도구'를 배우려다 '도구 사용 기본기'를 배웠습니다.\n\n<HR 이나 조직내 활용 예시>\n1. 조직내 암묵지 추출\n소스: 고성과자들의 프로젝트 보고서, 성공 사례, 이메일 커뮤니케이션 로그(익명)\nPrompt: \"우리 조직에서 프로젝트를 성공시키는 사람들의 공통된 커뮤니케이션 패턴과 일하는 방식을 '신입사원 행동 강령' 형태로 정리해줘.\"\n\n2. 나만의 멘토\n소스 : 인사 규정, 리더십 원칙, 핵심 가치 가이드북\nPrompt: \"너는 우리 회사의 20년 차 베테랑 HR 임원이야. 지금 팀원 A와 갈등을 겪는 김 팀장의 상황(상황 묘사)에 대해, 우리 회사의 리더십 원칙에 의거해 구체적인 피드백 대본을 써줘.“\n\n3. 퇴사자의 마음 읽기 (Retention 분석)\n소스: 최근 1년간의 퇴사 면담 기록(Exit Interview)\nPrompt: \"표면적인 퇴사 사유(연봉, 이사 등)를 제외하고, 반복적으로 언급되는 조직 문화적 결핍이나 리더십의 문제점을 감정 키워드 중심으로 분석해줘.“\n\n업무 효율을 넘어 일하는 방식과 사고 과정을 바꾸는 툴로 활용하십시오.",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7401569692362203136?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7401569692362203136%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "AI, Digital Change, HR 및 변화관리(Change Management) 전문성을 바탕으로, 조직이 AI를 실질적으로 도입하고 활용하도록 돕는 AX(AI Transformation) 전략가로 활동 중임. 단순히 기술 도입을 넘어, transforamation 경험과 Design Thinking with AI& Agile 방법론을 통해 구성원이 AI로 일하는 방식을 설계함",
-      "images": [
-        "https://media.licdn.com/dms/image/v2/D5622AQFgg8pk3e_mMw/feedshare-shrink_2048_1536/B56ZreoaVjLoAw-/0/1764671728549?e=1772064000&v=beta&t=7-LJDeWIH0148vJEPPpE8mFtPLJXA6uNaLNR4VNhNdQ"
-      ],
-      "user_link": "https://www.linkedin.com/in/ACoAADk-HPIB9Dfu21FvR7IWiubg2RoPiyFq_PY",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "image",
-      "source": "network",
-      "sequence_id": 42,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/b85f9e476a636f8d654f9a12c7f6f636.jpg"
-      ]
-    },
-    {
-      "index": 126,
       "code": "7403638244246237184",
       "username": "Jaeyun Henry Lee",
       "created_at": "2025-12-08 12:35:10",
@@ -6521,7 +6324,7 @@ const snsFeedData = {
         "https://media.licdn.com/dms/image/v2/D5622AQFJgavtlk9EnA/feedshare-shrink_1280/B56Zr8Bv9NHIAc-/0/1765164908794?e=1772064000&v=beta&t=KXxxGkVFVe5cFmuZzSQfdrBWQiydjQerMV6nos81470"
       ],
       "user_link": "https://www.linkedin.com/in/ACoAAD9O2zgBLZsZZofcYY_6029h13lI48hT1hc",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "image",
       "source": "network",
       "sequence_id": 46,
@@ -6531,7 +6334,185 @@ const snsFeedData = {
       ]
     },
     {
-      "index": 127,
+      "code": "7402689128598806528",
+      "username": "김덕중",
+      "created_at": "2025-12-05 21:43:43",
+      "time_text": "2개월",
+      "full_text": "영화 Hidden Figures에는 흥미로운 단어가 등장한다. 계산과 궤적을 풀어내던 여성 수학자들을 NASA는 “컴퓨터”라고 불렀다. 지금은 기계를 가리키는 그 단어가, 불과 수십 년 전까지만 해도 사람을 의미했다는 사실은 기술의 흐름 속에서 언어가 어떻게 이동하는지 보여주는 상징적인 장면이다. 인간이 맡던 역할이 기술에 흡수될 때, 사회는 그 역할의 이름까지 자연스럽게 기계에 넘긴다.\n\n이 변화는 예외가 아니라 반복된 패턴이다. Operator는 기계를 직접 다루던 사람이었지만 이제는 시스템 프로세스를 가리키고, Calculator는 계산을 담당하던 직업명이었다가 손바닥만 한 장치의 이름으로 바뀌었다. Scribe, Drafter, Secretary, Typist 등도 같은 길을 걸었다. 사람에서 기능으로, 기능에서 소프트웨어 모듈로 의미가 이동하며 인간의 일은 기술 언어 속으로 녹아들었다.\n\n지금은 Agent라는 단어가 같은 궤적을 따라가고 있다. 누군가의 요구를 대신 수행하는 사람을 의미하던 단어가, 이제는 목표를 설정하고 실행까지 이어가는 소프트웨어의 이름으로 자리 잡고 있다. 언어가 이렇게 움직인다는 것은 단순한 명칭 변경이 아니다. 사회가 어떤 역량을 누구에게 맡기기 시작했는지, 역할의 중심이 어디로 이동했는지를 가장 솔직하게 드러내는 지표다.\n\n그리고 나는 이 흐름이 여기서 멈추지 않는다고 본다. 과거에는 반복적인 계산과 기록 업무의 이름들이 기계로 넘어갔다면, 앞으로는 리크루터, 전략가, 마케터처럼 조직의 핵심 역할을 구성하던 직업명들까지 빠른 시간 안에 기술의 이름으로 재편될 가능성이 매우 높다. AI는 단순 작업을 넘어서 판단, 설계, 선택 같은 고유한 지적 활동까지 흡수하고 있기 때문이다. 직업의 이름이 기술의 기능명으로 바뀌는 순간, 그 역할은 이미 인간 고유의 영역에서 벗어난 것이다.\n\n이 변화는 위기라기보다 명확한 전환 신호다. 인간의 일 중 일부는 기계 언어로 이동하고, 일부는 새로운 의미를 가지며 재정의될 것이다. 그리고 그 흐름은 지금까지의 어떤 시대보다 빠르게 진행되고 있다. 결국 우리가 직면한 질문은 “기계가 인간의 일을 대신할까?”가 아니다. 더 정확한 질문은 “인간의 일 중 무엇이 남을 것인가?”다. 앞으로의 조직, 역할, 그리고 리더십을 다시 설계해야 하는 이유가 여기에 있다.",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7402689128598806528?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7402689128598806528%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "숙명여대 겸임교수, Firb AI 연구소장",
+      "images": [],
+      "user_link": "https://www.linkedin.com/in/ACoAAAwBOVMBDI50rE9wyD4tsMaGWkV-85Sqd50",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "text",
+      "source": "network",
+      "sequence_id": 45,
+      "sns_platform": "linkedin"
+    },
+    {
+      "code": "7401863462173536257",
+      "username": "김덕중",
+      "created_at": "2025-12-03 15:02:49",
+      "time_text": "2개월",
+      "full_text": "구글 스콜라(학술검색)에도 AI 기능이 적용되었습니다.\nhttps://lnkd.in/gx9Er-JV\n\n아직 완성이 다 된것 같지는 않지만 품질과 속도 측면에서는 뛰어나네요.\n먼저 사용자가 요건을 입력하면, 논문이나 아티클을 찾아줍니다. 단, 결과가 나오는 화면에 저의 요건을 명확히 이해해서 답을 주고 있으며 해당 정보에 대한 2가지 중요 포인트를 제시합니다.\n더 좋은것은 마치 ChatGPT처럼 요건에 대한 대화를 나눌수 있다는 점입니다.\n\n거기에 브라우저 확장 프로그램도 제공을 하네요. 무료로 이런 기능이 제공되니 잘 활용해야겠습니다.",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7401863462173536257?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7401863462173536257%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "숙명여대 겸임교수, Firb AI 연구소장",
+      "images": [
+        "https://media.licdn.com/dms/image/v2/D5622AQEnzA6KfpnLkg/feedshare-shrink_2048_1536/B56ZrizmDoLwAk-/0/1764741767722?e=1772064000&v=beta&t=3ZhOZuihTdnU3MjU6GydQ-Zfmb_9Xf6noohnBeMf2pM"
+      ],
+      "user_link": "https://www.linkedin.com/in/ACoAAAwBOVMBDI50rE9wyD4tsMaGWkV-85Sqd50",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "image",
+      "source": "network",
+      "sequence_id": 44,
+      "sns_platform": "linkedin",
+      "local_images": [
+        "web_viewer/images/604038b7ec16d3f65a95fcb999bdb297.jpg"
+      ]
+    },
+    {
+      "code": "7401626875682570241",
+      "username": "김덕중",
+      "created_at": "2025-12-02 23:22:42",
+      "time_text": "2개월",
+      "full_text": "헉. 이렇게도 가능하네요. 나노바나나 정말 대단 합니다. (Prompt : 첨부한 이미지의 모양과 색상은 그대로 유지하고 오직 글자만 영어에서 한글로 바꿔주세요. 작은 글씨들까지 빠짐없이 바꿔주세요.)",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7401626875682570241?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7401626875682570241%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "숙명여대 겸임교수, Firb AI 연구소장",
+      "images": [
+        "https://media.licdn.com/dms/image/v2/D5622AQHS3uob0HQIvQ/feedshare-shrink_1280/B56Zrfca78LkAg-/0/1764685361665?e=1772064000&v=beta&t=pc_ZB9SeSXBbVwaXmHXchRWMz4lPklmsXEQc1Yzd98M"
+      ],
+      "user_link": "https://www.linkedin.com/in/ACoAAAwBOVMBDI50rE9wyD4tsMaGWkV-85Sqd50",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "image",
+      "source": "network",
+      "sequence_id": 43,
+      "sns_platform": "linkedin",
+      "local_images": [
+        "web_viewer/images/a05d6f5c64ac19a4c6977b3a903e5c8d.jpg"
+      ]
+    },
+    {
+      "code": "7401569692362203136",
+      "username": "Minjung Kim",
+      "created_at": "2025-12-02 19:35:29",
+      "time_text": "2개월",
+      "full_text": "노트북LM 어디까지 사용했나요? (통념 깨기 & NotebookLM 재정의)\n\n나노바나나, veo3, Sora2 등 이미지와 영상툴을 많은 분들이 사용하면서 의도한 대로 안나오는 경우가 많다고 합니다.\n이 경우, 프롬프트를 최적화 해달라고 chatgpt나 제미나이에게 물어보셨다면 이제는 정확한 소스 기반의 NotebookLM을 사용해 보세요.\n\n비전문가들도 쉽게 사용할 수 있도록 AI 툴 사용 기본 근육을 키워주는 ‘프롬프트 공식‘ 을 노트북LM이 만들어줍니다.\n\n<사용>\nNotebookLM 소스추가 -> 공식홈에서 제공하는 자료를 포함하여 기 사용자들이 공유한 다양한 소스 선택-> “나노바나나 이미지 제작을 위한 프롬프트 공식 만들어줘”로 해\n\n각 툴마다 최적화된 프롬프트 공식을 정리하고 인포그래픽으로 만들어 보았습니다.\n도구'를 배우려다 '도구 사용 기본기'를 배웠습니다.\n\n<HR 이나 조직내 활용 예시>\n1. 조직내 암묵지 추출\n소스: 고성과자들의 프로젝트 보고서, 성공 사례, 이메일 커뮤니케이션 로그(익명)\nPrompt: \"우리 조직에서 프로젝트를 성공시키는 사람들의 공통된 커뮤니케이션 패턴과 일하는 방식을 '신입사원 행동 강령' 형태로 정리해줘.\"\n\n2. 나만의 멘토\n소스 : 인사 규정, 리더십 원칙, 핵심 가치 가이드북\nPrompt: \"너는 우리 회사의 20년 차 베테랑 HR 임원이야. 지금 팀원 A와 갈등을 겪는 김 팀장의 상황(상황 묘사)에 대해, 우리 회사의 리더십 원칙에 의거해 구체적인 피드백 대본을 써줘.“\n\n3. 퇴사자의 마음 읽기 (Retention 분석)\n소스: 최근 1년간의 퇴사 면담 기록(Exit Interview)\nPrompt: \"표면적인 퇴사 사유(연봉, 이사 등)를 제외하고, 반복적으로 언급되는 조직 문화적 결핍이나 리더십의 문제점을 감정 키워드 중심으로 분석해줘.“\n\n업무 효율을 넘어 일하는 방식과 사고 과정을 바꾸는 툴로 활용하십시오.",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7401569692362203136?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7401569692362203136%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "AI, Digital Change, HR 및 변화관리(Change Management) 전문성을 바탕으로, 조직이 AI를 실질적으로 도입하고 활용하도록 돕는 AX(AI Transformation) 전략가로 활동 중임. 단순히 기술 도입을 넘어, transforamation 경험과 Design Thinking with AI& Agile 방법론을 통해 구성원이 AI로 일하는 방식을 설계함",
+      "images": [
+        "https://media.licdn.com/dms/image/v2/D5622AQFgg8pk3e_mMw/feedshare-shrink_2048_1536/B56ZreoaVjLoAw-/0/1764671728549?e=1772064000&v=beta&t=7-LJDeWIH0148vJEPPpE8mFtPLJXA6uNaLNR4VNhNdQ"
+      ],
+      "user_link": "https://www.linkedin.com/in/ACoAADk-HPIB9Dfu21FvR7IWiubg2RoPiyFq_PY",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "image",
+      "source": "network",
+      "sequence_id": 42,
+      "sns_platform": "linkedin",
+      "local_images": [
+        "web_viewer/images/b85f9e476a636f8d654f9a12c7f6f636.jpg"
+      ]
+    },
+    {
+      "code": "7401429747706351616",
+      "username": "황현태",
+      "created_at": "2025-12-02 10:19:23",
+      "time_text": "2개월",
+      "full_text": "2명의 PM 조수를 만들어서 실전에서 써먹고 있습니다. 프롬프트를 공유드립니다!\n\n저희는 3인 #FDE 스쿼드로 프로젝트를 처리하는데요. 저희의 토론 과정, 토론 결과를 기반으로 AI의 도움을 받아서 기획/설계/분석 과정을 더 강화합니다. (마침 Lenny Rachitsky 뉴스레터에 나온 내용의 프롬프트가 더 깔끔한 것 같아서, 댓글로 링크도 공유드립니다.)\n\n1. 비판적 에이전트 투입\n\n(프롬프트 1/3) \"2개의 에이전트를 만들어. 하나는 똑똑하고 낙관적인 속도 중심의 PM 에이전트. 하나는 똑똑하고 비판적인 이 PRD의 위험성에 대해서 중요하게 생각하는 PM 에이전트.\"\n\n레드팀 투입! 무조건 반대하고 걱정만하는 에이전트가 현실에서는 간혹 속도를 늦출때도 있다고 (개인적으로는) 생각하지만, AI는 답변이 정말 빠르니깐 그 의견을 확인하는 것이 정말 큰 도움이 됩니다.\n\n2. 토론 과정 전체를 공유 받기\n\n(프롬프트 2/3) \"웹서치, 소스 모든 자료를 활용해서 20라운드의 토론을 하고, 그 과정과 결과를 공유해줘.\"\n\n우리가 이미 토론을 진행했던 내용을 기반으로 다시 긍정/부정 에이전트가 토론하는 내용을 읽기만 해도 제가 빠뜨렸던 내용을 다시 인식하는데 도움이 확실히 됩니다. 오히려 결론보다도 이 부분이 더 도움이 된다는 생각도 합니다! 특히 서비스의 내러티브를 더 잘 정리하는 것 같기도 합니다!\n\n웹서치를 활용하기에 Lenny 뉴스레터에서는 퍼플렉시티를 활용하더라구요. 저는 ChatGPT를 활용하는데, 다음번에는 퍼플렉시티를 써봐야겠다는 생각입니다.\n\n3. 최종 결과 정리 요청\n\n(프롬프트 3/3) \"그리고 비판적인 에이전트를 설득할 수 있는 개선된 최소스펙의 PRD를 작성해줘. 기존 PRD와의 변경점도 같이 알려줘.\"\n\n기존 PRD에서 생각보다 많이 바뀌지 않은 경우도 많았습니다. 그렇기에 변경점을 묻고, 애매한 부분이 있으면, 왜 반영되었는지/반영되지 않았는지 확인해야합니다.\n\n요즘 생각보다 많은 팁이 세상에 넘쳐나는데, 요 1,2,3의 방식은 정말 도움이 되기에, 꼭 적용해보시면 좋겠습니다!",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7401429747706351616?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7401429747706351616%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "CEO & Co-founder @SpaceY",
+      "images": [
+        "https://media.licdn.com/dms/image/v2/D5622AQEduK4IANLRdw/feedshare-shrink_2048_1536/B56ZrcpIUFLgAw-/0/1764638362807?e=1772064000&v=beta&t=NzwG9QvWH1ZOhVudrBQQHm3GwGasGg46tVIvZgA7oYk"
+      ],
+      "user_link": "https://www.linkedin.com/in/ACoAACaaaYoBxuqGvSFA9Ozah6b9nA5IwYyx9TA",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "image",
+      "source": "network",
+      "sequence_id": 41,
+      "sns_platform": "linkedin",
+      "local_images": [
+        "web_viewer/images/e3c0d79be52d021fb2bf901dee88be44.jpg"
+      ]
+    },
+    {
+      "code": "7401368244718411776",
+      "username": "Kyunghun Lee",
+      "created_at": "2025-12-02 06:15:00",
+      "time_text": "2개월",
+      "full_text": "11월 Product Hunt에서는 어떤 스타트업들이 주목받았을까요?\n\nProduct Hunt는 스타트업 시장의 바로미터입니다. 투자자, 창업자, PM들이 모여서 새로운 제품에 투표합니다. 어떤 제품이 상위권에 오르는지 보면, 시장이 지금 무엇을 원하는지 읽을 수 있습니다.\n\nAI 시대에 이게 더 중요해졌습니다. 기술 변화 속도가 빨라지면서 \"지금 시장이 원하는 것\"과 \"6개월 전에 원했던 것\"이 완전히 달라지기 때문입니다. 2024년 상반기에는 AI 이미지 생성기가 상위권을 휩쓸었습니다. 지금은 다릅니다.\n\nGemini Deep Research로 11월 데이터를 조사하고 NotebookLM으로 슬라이드를 만들어봤습니다. 11월의 특징을 보면, AI가 \"가능성의 과시\"에서 \"문제의 해결\"로 완전히 넘어갔습니다. 특히 상위 10개 중 8개가 AI를 핵심 엔진으로 사용하지만, 이제 더이상“AI 서비스\"라고 전면에 내세우지 않습니다.\n\n1. 첫 번째 변화: 경험이 세일즈를 대체하고, 신뢰가 자산이 됩니다\n\n1위 Guideflow(1,026+ 업보트)를 보면 시장의 방향이 보입니다. B2B 소프트웨어를 구독할 때 보통 이런 과정을 거칩니다. \"데모 요청\" 버튼 클릭, 24시간 대기, 영업 담당자와 일정 조율. Guideflow는 이 과정을 없앴습니다. 마케터가 엔지니어 없이 프론트엔드 캡처만으로 대화형 데모를 만듭니다. 웹사이트 방문 즉시 버튼을 클릭하고 데이터를 입력할 수 있는 \"살아있는\" 경험입니다.\n\n5위 TrustMRR(770+ 업보트)은 다른 방식으로 같은 문제를 풉니다. Stripe 연동을 통해 스타트업의 실제 MRR을 검증하고 공개합니다. 인디 해커 커뮤니티에서 만연한 \"매출 조작 인증샷\" 문제를 해결합니다. AI로 가짜를 만들기 쉬워진 시대에, \"진짜임을 증명해주는 것\" 자체가 비즈니스 모델이 된 겁니다.\n\n2. 두 번째 변화: AI가 \"도구\"에서 \"동료\"로 진화합니다\n\n\"SaaS 피로도\"라는 말이 있습니다. 너무 많은 도구를 배우고, 너무 많은 대시보드를 확인해야 합니다. 시장의 해답은 더 많은 기능이 아닙니다. 인간 개입의 최소화입니다.\n\n6위 Oskar(738+ 업보트)는 이메일 인박스에서 \"보이지 않게\" 작동합니다. 대화의 맥락을 파악하고, 응답 없는 리드에 후속 메일을 보내고, CRM을 업데이트합니다. 사용자 리뷰에서 \"모든 창업자가 꿈꾸던 비서\"라는 평가가 나왔습니다.\n\n8위 Floqer(705+ 업보트)는 \"RevOps 리더를 채용 중인 뉴욕 소재 기업\"처럼 구체적인 시장 신호를 감지해서 자동으로 리드를 발굴합니다. 80개 이상의 데이터 소스를 연결하고, Perplexity와 AngelList가 실제로 사용 중입니다.\n\n과거에는 사람이 도구를 직접 사용해서 결과를 만들었습니다. 이제는 목표만 설정하면 에이전트가 알아서 실행합니다. Human-in-the-loop에서 Human-on-the-loop로의 전환입니다.\n\n3. 세 번째 변화: 기술이 장벽을 허뭅니다\n\n3위 Talo(835+ 업보트)는 언어 장벽을 없앱니다. 화상 회의에서 실시간 음성 통역을 제공하는데, 기계음이 아니라 화자의 목소리 톤을 유지합니다. 지연 시간은 300-700ms. 글로벌 팀 매니저들은 \"게임 체인저\"라고 평가합니다.\n\n4위 Gemini 3(831+ 업보트)는 지식 장벽을 낮춥니다. 텍스트, 이미지, 오디오, 비디오, 코드를 단일 모델에서 동시에 이해합니다. 흥미로운 점은 상위 10개 중 빅테크 제품은 이것 하나뿐이라는 겁니다. 나머지 9개는 전부 스타트업입니다.\n\n9위 Uneed(649+ 업보트)는 시장 진입 장벽을 허뭅니다. \"Product Hunt는 너무 경쟁이 치열하다\"는 인식을 파고들어 인디 메이커들에게 공정한 노출 기회를 제공합니다. Product Hunt 안에서 Product Hunt 대안이 상위권에 오른 겁니다. 거인들 사이에도 틈새는 열려 있다는 증거입니다.\n\n4. 2026년을 준비하며\n\n11월 상위 제품들을 종합해 보면 흥미로운 패턴이 있습니다. Guideflow는 마케터가 엔지니어 없이 데모를 만들게 합니다. Oskar는 영업 담당자가 CRM 수작업 없이 후속 조치를 합니다. Talo는 글로벌 팀이 통역사 없이 회의합니다. BlogBowl은 콘텐츠 마케터가 리서처 없이 글을 씁니다.\n\n공통점이 있습니다. \"새로운 기능 추가\"가 아니라 \"기존 단계 제거\"입니다. 중간에 필요했던 전문가나 리소스 의존성을 없애는 겁니다. B2B 소프트웨어를 사려면 영업 담당자가 필요했습니다. 이제 Guideflow가 있으면 필요 없습니다. 글로벌 미팅을 하려면 통역사가 필요했습니다. 이제 Talo가 있으면 필요 없습니다. 후속 이메일을 체계적으로 보내려면 SDR이 필요했습니다. 이제 Oskar가 있으면 필요 없습니다.\n\n“AI를 쓰느냐\"가 아니라 \"AI로 어떤 단계를 없애주느냐”가 중요해졌습니다.",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7401368244718411776?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7401368244718411776%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "CAIO & Deputy CEO @ Channel Corp | AI × B2B SaaS",
+      "images": [
+        "https://media.licdn.com/dms/image/v2/D561FAQEUcYNnglpicA/feedshare-document-cover-images_480/B56ZrZOgRgJYBM-/0/1764581054427?e=1770980400&v=beta&t=Ri7Lepb2w9E4PvweJ_BDUQBxDy8yU9LGxCOALLyOKJI"
+      ],
+      "user_link": "https://www.linkedin.com/in/ACoAAA5RhH4BjDv2vMF1Onz2ppvG6jeLmEGo93E",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "image",
+      "source": "network",
+      "sequence_id": 40,
+      "sns_platform": "linkedin",
+      "local_images": [
+        "web_viewer/images/589ba77e546d7eb0dfca754ceb0b9aca.jpg"
+      ]
+    },
+    {
+      "code": "7401129989594763264",
+      "username": "고영혁",
+      "created_at": "2025-12-01 14:28:15",
+      "time_text": "2개월",
+      "full_text": "초대형 재해인 쿠팡 개인정보 유출 사태로 다른 건 몰라도 이거 하나는 각자 챙기시는게 좋겠습니다. 저도 고객사 슬랙에 올라온 아래 글 보고 사태의 심각성을 깨닫고 바로 진행했습니다. 관련 글들 찾아보니 통관번호까지 유출됐는지 아닌 지는 쿠팡에서 명확하게 공지하지 않은 듯합니다. 유비무환.\n\n‐---------\n\n쿠팡에 가입하신 분들 중 ‘개인통관고유번호’ 입력하셨던 분들은 무조건 재발급(변경신청)하셔야 합니다.\n\n이번 정보유출은 이름, 주소, 전화번호, 구입내역과 함께 개인 통관번호도 유출되었기에 이후에 해외에서 한국으로 들어오는 불법적인 물건들(마약, 밀수)이 도용될 수 있습니다.\n\n1. 관세청 접속\n2. 로그인\n3. 조회\n4. 수정\n5. 재발급(최하단에 있음)\n6. 확인\n\n이후에 재발급 받은 통관번호를 기존에 입력했던 네이버, 알리 등의 해외쇼핑 플랫폼에 새로 입력하셔야 안전해집니다.\n\n다른건 몰라도 이건 꼭 하세요!\n\nhttps://lnkd.in/gXhXDt3P\n\n#쿠팡개인정보유출 #security #privacy",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7401129989594763264?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7401129989594763264%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "고넥터 창업자&대표 / 고넥터(Gonnector) - 찾아가서 연결하여 가치 생성 / 데이터 & AI 를 활용하는 평생 레인메이커 / 데이터 과학자 & 그로스 해커 / 개인 엔젤 투자자, 작가, 컨설턴트 & 코치",
+      "images": [],
+      "user_link": "https://www.linkedin.com/in/ACoAAAMkQDoBnfOE4bgY4NL4TXkx3M3D9ZBkS0U",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "text",
+      "source": "network",
+      "sequence_id": 39,
+      "sns_platform": "linkedin"
+    },
+    {
+      "code": "7401027653564047361",
+      "username": "조여준 Ethan Cho",
+      "created_at": "2025-12-01 07:41:37",
+      "time_text": "2개월",
+      "full_text": "쿠팡 해킹이 드러낸 진짜 문제:\n왜 보안은 중요하지만, 보안 스타트업은 돈이 되지 않는가\n\n3,370만 명.\n대한민국 인구의 65%.\n사실항 전국민의 데이터가 유출됐다.\n\n이제 가능한 것들:\n\n- 당신이 언제 집을 비우는지 안다 (배송 패턴)\n- 당신의 소득 수준을 안다 (구매 내역)\n- 당신의 가족 구조를 안다 (주문 품목)\n- 당신이 어떤 약을 먹는지 안다 (건강 상태 추정)\n\n랜덤 스팸이 아니다.\n당신을 타겟으로 한 정밀 범죄가 가능해졌다.\n\n보이스피싱이 \"택배 받으실 분\"에서 \"○○아파트 ○동 ○호, 어제 주문하신 공기청정기 배송 건으로...\"로 진화한다.\n범죄의 ROI가 폭발적으로 높아졌다.\n\n이번 쿠팡 해킹은 단순한 ‘사고’가 아니라 시장 구조의 민낯을 드러낸 사건이다.\n한국에서 개인정보는 더 이상 개인의 것이 아니다.\n그리고 그 이유는 생각보다 단순하다.\n\n한국에서 보안은 돈이 안 되기 때문이다.\n\n---\n\nVC는 왜 보안에 투자하지 않을까?\n\n보안 기업은 멋진 스토리가 없다.\n고객이 보안 솔루션을 도입했을 때 매출이 늘어나지 않는다.\n보안은 비용이다. 성장 엔진이 아니다.\n\n- 도입해도 티가 안 난다\n- 쓰면 쓸수록 존재감이 사라진다\n- 성공해도 아무 일도 일어나지 않는 것처럼 보인다\n- 실패하면 모든 것이 무너진다\n\nVC가 싫어하는 가장 나쁜 조합: 리스크는 무한대, upside는 제한적\n\n반대로 AI, 커머스, 금용, 게임, 생산성 SaaS는?\n\n- 시장 확장\n- 성장 스토리\n- 빠른 지표\n- 눈에 보이는 ROI\n\n그래서 자본은 항상 ‘공격’에 몰리고, ‘방어’에는 모이지 않는다.\n\n---\n\n한국이 더 위험한 이유\n\n미국은 보안이 시장 논리로 작동한다.\n기업이 유출을 일으키면:\n\n- 고객 이탈\n- 소송\n- 주가 폭락\n- CEO 해임\n\n그래서 보안은 survival이고,\n보안 시장은 경제적 보상 구조가 존재한다.\n\n한국은?\n\n- 사과문 발표\n- “재발 방지 약속”\n- 몇 주 지나면 잊힘\n- 매출 변화 없음\n- 투자 영향 없음\n\n보안에 투자할 강력한 인센티브가 존재하지 않는다.\n\n그 결과:\n\n- 보안 기업은 투자를 못 받는다\n- 인재는 보안으로 가지 않는다\n- 보안 수준은 올라가지 않는다\n- 사건은 반복된다\n- 데이터는 공공재가 된다\n\n지금의 쿠팡이 그 증거다.\n\n---\n\n투자자 관점에서 본 핵심\n\n보안의 문제는 기술이 아니다.\n경제 구조의 문제다.\n\n시장이 보안을 보상하지 않으면 보안 스타트업은 절대로 성공할 수 없다.\n\nVC가 보안에 투자하지 않는 이유는 냉정하다:\nReturn이 없다.\n\n그래서 한국은 계속 뚫릴 것이다.\n기업이 보안 투자보다 마케팅을 선택하는 한,\n보안은 영원히 후순위일 것이다.\n\n---\n\n그렇다면 무엇이 바뀌어야 하는가?\n\n보안이 시장에서 가치를 가지려면 유출의 대가가 진짜 비용이 되어야 한다.\n\n- 고객이 떠나고\n- 매출이 줄고\n- 기업가치가 훼손되고\n- 경영진이 책임지고\n- 투자자들이 압박해야 한다\n\n그 순간 보안은 비용이 아니라 전략이 된다.\n\n- 투자 가능성이 생기고\n- 인재가 몰리고\n- 보안 생태계가 성장한다.\n\n한국은 지금까지 이 구조가 없었다.\n그래서 보안 스타트업은 돈이 되지 않았고\n그래서 결국, 3,370만 명의 신상이 공공재가 되었다.\n\n---\n\n질문은 이것이다\n\n보안을 ‘비용’으로 계속 볼 것인가,\n아니면 ‘수익을 지키는 마지막 방어선’으로 재정의할 것인가?\n\n그리고 VC들에게 묻는다:\n\n우리는 공격하는 기술만 투자할 것인가,\n아니면 무너지는 시장을 지키는 기술에도 투자할 것인가?\n\n#미국증시쿠팡주가가궁금하네",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7401027653564047361?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7401027653564047361%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "CIO @ TheVentures | ex-Google, Samsung",
+      "images": [
+        "https://media.licdn.com/dms/image/v2/D5622AQHvuw9BTrvLeQ/feedshare-shrink_1280/B56ZrW7ZItJQAs-/0/1764542485701?e=1772064000&v=beta&t=303axZRyFJPebjkAXKFPFsYkq0xD8aGQ90rdASfC4DY"
+      ],
+      "user_link": "https://www.linkedin.com/in/ACoAAARknekBOFFETpmlSPqmlb2P8ln4iACFaJg",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "image",
+      "source": "network",
+      "sequence_id": 38,
+      "sns_platform": "linkedin",
+      "local_images": [
+        "web_viewer/images/b3fc9ebcfcccd6fc825e2bddd1a45950.jpg"
+      ]
+    },
+    {
+      "code": "7400530968190750720",
+      "username": "김덕중",
+      "created_at": "2025-11-29 22:47:58",
+      "time_text": "2개월",
+      "full_text": "도면을 생성하는 AI가 나오는 것을 보고 깜짝 놀랐는데, 이제는 도면을 Gemini 3.0 pro를 이용해서 3D 모델로 변화 시켜주네요. 캐드파일을 3D 프로그램으로 옮겨서 랜더링 하는 시간이 상당히 줄어들것 같습니다. https://graphite3d.xyz/",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7400530968190750720?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7400530968190750720%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "숙명여대 겸임교수, Firb AI 연구소장",
+      "images": [
+        "https://media.licdn.com/dms/image/v2/D5622AQGwkVyydR6Jdw/feedshare-shrink_2048_1536/B56ZrP3seuIsAw-/0/1764424077173?e=1772064000&v=beta&t=p5CuDO76W3AGovHIJbzvXjE-ujDiHJlOdbz3dLsEFuA"
+      ],
+      "user_link": "https://www.linkedin.com/in/ACoAAAwBOVMBDI50rE9wyD4tsMaGWkV-85Sqd50",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "image",
+      "source": "network",
+      "sequence_id": 37,
+      "sns_platform": "linkedin",
+      "local_images": [
+        "web_viewer/images/0949bfed6c4075e6acd6d060262159c5.jpg"
+      ]
+    },
+    {
       "code": "7400284864094101504",
       "username": "Kyunghun Lee",
       "created_at": "2025-11-29 06:30:02",
@@ -6541,14 +6522,76 @@ const snsFeedData = {
       "profile_slogan": "CAIO & Deputy CEO @ Channel Corp | AI × B2B SaaS",
       "images": [],
       "user_link": "https://www.linkedin.com/in/ACoAAA5RhH4BjDv2vMF1Onz2ppvG6jeLmEGo93E",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "text",
       "source": "network",
       "sequence_id": 36,
       "sns_platform": "linkedin"
     },
     {
-      "index": 128,
+      "code": "7399048817557368832",
+      "username": "Jaeyun Henry Lee",
+      "created_at": "2025-11-25 20:38:25",
+      "time_text": "2개월",
+      "full_text": "와우 .. Gemini 3.0의 시스템 프롬프트가 공유되고 있습니다.\n\n구글 딥마인드 개발자가 공유한 자료인데요. 프롬프트를 잘 작성하는 가장 좋은 방법은 그들이 쓴 '원본'을 보는 겁니다.\n\n재밌는 점은 이 프롬프트 하나 바꿨다고 벤치마크 성능이 5%나 올랐다고 합니다. 그냥 슥 읽고 \"아 그렇구나\" 하고 넘기지 마세요. 한 문장 한 문장, 아주 집요하게 읽어야 합니다.\n\n그 안에 흥미로웠던 점을 공유합니다.\n\n> 충돌이 생기면 '서열'을 정해줬습니다. 제일 중요한 건 우선순위인데요. 그냥 \"알아서 잘 판단해\"가 아니라, 정책이 1번, 순서가 2번... 이렇게 서열을 딱 정해줍니다. 그래야 에이전트가 헷갈리지 않고 기준대로 움직입니다.\n(\"Resolve conflicts in order of importance:1.1) Policy-based rules...1.2) Order of operations...1.3) Other prerequisites...1.4) Explicit user constraints...\")\n\n> 제미나이는 이미 강력한 추론 능력을 갖추고 있습니다. 하지만 복잡한 에이전트가 진짜 실력을 발휘하려면, 단순한 추론을 넘어선 구체적인 프롬프트가 필요합니다. 실제 시스템 프롬프트를 참고하며 에이전트를 구축해보시길 바랍니다.\n\n> 실제 구글 개발자는 에이전트에게 이 세 가지 행동을 명시적으로 요구하라고 합니다. 문제가 생겨도 뚫고 나가는 1. 끈기(Persistence), 미리 따져보는 2. 위험 평가(Risk Assessment), 그리고 앞서 내다보는 3. 선제적 계획(Proactive Planning). 에이전트 구축하시는 분들은 3가지 요소는 기억하시면 좋을듯합니다.\n\n도움이 되셨으면 좋겠습니다. 아래에 링크도 공유해드립니다.",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7399048817557368832?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7399048817557368832%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "AX Consultant @IMPACTYUN// Supporting everyone in effectively utilizing AI",
+      "images": [
+        "https://media.licdn.com/dms/image/v2/D5622AQEY2sszQSO_Hw/feedshare-shrink_1280/B56Zq6zr.aI8Aw-/0/1764070704190?e=1772064000&v=beta&t=gTNDvV1jgogHkrrmLng4-2GmXrOBYniQFvYwgTfV_oM"
+      ],
+      "user_link": "https://www.linkedin.com/in/ACoAAD9O2zgBLZsZZofcYY_6029h13lI48hT1hc",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "image",
+      "source": "network",
+      "sequence_id": 35,
+      "sns_platform": "linkedin",
+      "local_images": [
+        "web_viewer/images/1cf2bd0e94760980e0b521eff3c39628.jpg"
+      ]
+    },
+    {
+      "code": "7397540321351524352",
+      "username": "Dong Keun Jo",
+      "created_at": "2025-11-21 16:44:12",
+      "time_text": "2개월",
+      "full_text": "[AI 시대, 개발자는 결국 사라질까?]\n\"AI가 코딩을 다 짜주는데, 이제 개발자는 끝난 것 아닌가요?”\n코딩 유튜버를 하다 보니 이런 질문 정말 많이 받습니다. 결론부터 말씀드리면 “그냥 개발만 하는 개발자”라면, “끝났다”고 생각합니다. 지금도 이미 바이브 코딩으로 개발의 희소성이 빠르게 무너지고 있는데, 코딩 분야는 특히 경제적 가치도 크고 보상 설계도 명확하니 앞으로 더욱더 발전할 것은 분명해 보입니다. 그러면 단순 개발은 AI가 대체하여 굳이 개발자는 필요 없어질 것입니다.\n\n그런데, 개발자만 그럴까요?\n최근 출시된 Google Antigravity를 테스트해보니 Nano Banana Pro가 통합되어 첨부한 이미지에서 확인할 수 있듯 필요한 에셋을 자동으로 생성하면서 개발을 할 수 있습니다. Stitch 같은 툴은 AI로 적절한 UI/UX를 자동으로 만들어주기도 하죠. 즉, 디자이너도 마찬가지입니다.\n또, Nano Banana Pro 모델이 Goolge Ads에도 통합된다고 합니다. 게다가 Veo 영상 모델도 있고요. 그렇다는 것은 광고 이미지, 영상 등의 소재 제작도 자동화될 수 있고, 실험을 통해서 최적의 광고 성과(ROAS)를 스스로 찾아내는 마케팅의 영역까지 자동화될 수 있겠습니다.\n\n즉, 개발자, 디자이너, 마케터 등 개별 직무 기능의 가치는 점점 낮아지고 있습니다.\nAI가 기능적 업무를 대부분 처리하는 순간, 기업은 더 이상 이제 굳이 직군별로 인력을 나눠 채용할 이유가 없습니다. “AI를 잘 다루는 단 한 명”이면 충분한 일들이 계속 늘어나고 있기 때문입니다. 심지어 커뮤니케이션 비용이 큰 거대 조직보다, AI를 잘 활용하는 개인이 더 빠르고 효율적이기까지 합니다.\n마치 산업 간 경계가 희미해지는 ‘빅 블러(Big Blur)’ 현상처럼, 이제는 직무의 경계가 사라지는 '커리어 빅 블러'의 시대가 되었습니다. 개발자가 디자인을 하고, 마케터가 코딩을 하는 것이 더 이상 이상하지 않은 세상입니다.\n\n결국 모든 사람은 잠재적 1인 창업가가 되어야 합니다.\n개개인은 기능적인 직무 단위가 아니라 AI를 활용하여 다양한 직무의 일을 수행하여 스스로 하나의 기업처럼 문제를 해결하고 가치를 창출하는 일을 해야 할 것입니다. 회사를 나와서 창업을 하지 않더라도 적어도 조직 내에서라도 그러한 일을 수행해야 살아남을 수 있을 것 입니다.\n\n하지만 안타깝게도, 대부분의 조직은 아직 이 변화를 받아들일 준비가 되지 않았습니다.\n여전히 기획팀, 개발팀, 디자인팀의 칸막이가 존재하고, 커뮤니케이션을 하느라 정작 본질적인 Product Building은 느려지기 일쑤입니다. AI는 점점 발전하는데, 기존 조직의 레거시 시스템이 인재들의 발목을 잡고 있는 셈입니다.\n\n그래서 저는 AI 시대의 인재들이 마음껏 뛰어놀 수 있는 최적의 무대를 만들었습니다.\n조코딩에서는 이렇게 경계가 사라진 시대의 새로운 인재를 ‘프로덕트 빌더(Product Builder)’라는 직무로 정의하고 채용을 진행 중입니다. 개인이 AI를 활용하며 빠르게 오직 Product Building에만 집중할 수 있는 직무이며 기능 수행이 아니라, 스스로 문제를 해결하고 가치를 만들어내는 분들을 모십니다.\n\n이런 분들이 기존의 직무 틀에 갇히기엔 너무나 아깝고 보상 체계도 아쉽습니다.\n그래서 직무 간 커뮤니케이션도, 복잡한 결재 라인도, 불필요한 회의도 없이, 성과에 대한 보상까지 확실히 가져갈 수 있는 구조를 만들었습니다. 회사의 자본과 트래픽을 내 것처럼 활용해, 진짜 1인 창업가처럼 일하여 AI 시대에 맞는 커리어 성장 기회를 잡고 싶다면, 지금이 완벽한 타이밍입니다.\n\n🔗 채용 공고 보기: (링크는 댓글에)\n\nAI 최신 소식과 AI 시대에 대한 생각, 앞으로도 꾸준히 나눌 예정입니다. '좋아요'와 '팔로우' 한 번씩 부탁드리겠습니다. 큰 힘이 됩니다.",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7397540321351524352?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7397540321351524352%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "조코딩 JoCoding",
+      "images": [
+        "https://media.licdn.com/dms/image/v2/D5622AQGRhQaJ58oYtA/feedshare-shrink_2048_1536/B56ZqlXuFSG0Aw-/0/1763711051060?e=1772064000&v=beta&t=uGeFhcbaMKJDf8FLvMWIhb7J3y-PNWY2vNOpMQrRln8"
+      ],
+      "user_link": "https://www.linkedin.com/in/ACoAACfVcCwBC2Um-3YmtYg58LwMarvLd6JsHsE",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "image",
+      "source": "network",
+      "sequence_id": 34,
+      "sns_platform": "linkedin",
+      "local_images": [
+        "web_viewer/images/43ced2142bb5f5000d90c513397d49d6.jpg"
+      ]
+    },
+    {
+      "code": "7397324001875980288",
+      "username": "Sujin Kang Ph.D.",
+      "created_at": "2025-11-21 02:24:37",
+      "time_text": "2개월",
+      "full_text": "🍌 구글 Nano Banana Prompt Tips\n>> 정말 '프롬프트'가 전부입니다\n\n구글이 Gemini 3 Pro Image 기반 새 이미지 모델 Nano Banana Pro를 공개했습니다.\n네 가지가 핵심입니다.\n1. 이미지 내 선명한 텍스트 렌더링\n2. 최대 4K 해상도\n3. 여러 이미지를 한 번에 섞어 합성하기\n4. 한국어 텍스트도 비교적 깨끗하게 표현\n\n레퍼런스 이미지를 활용해 카툰, 광고, 캠페인용 이미지, 인포그래픽도 생성할 수 있습니다.\n\n구글 공식 블로그 기준 7가지 프롬프트 팁을 정리했습니다.\n\n1️⃣ 한 줄로 생성 목표 작성하기\n아래 요소를 템플릿 처럼 조합합니다.\n[목적] + [주제/대상] + [구도/행동] + [장소] + [스타일] + [편집 지시]\n\n🍌 프롬프트 요소 예시:\n- 주제(Subject): 누가/무엇이 중심인지\n- 구도(Composition): 클로즈업인지, 와이드 샷인지\n- 행동(Action): 단순 ‘앉아 있다’보다 ‘콘텐츠를 함께 본다’가 훨씬 좋습니다\n- 장소(Location): 사무실, 카페, 집, 야외 등\n- 스타일(Style): 3D, 수채화, 필름 사진, 90년대 광고 등\n- 편집 지시(Editing): “배경 차 제거”, “넥타이 색을 초록으로 변경”처럼 구체적으로\n\n2️⃣ “카메라·조명·포맷”까지 포함하기\n프로급 이미지를 원한다면 촬영 관련 요소까지 프롬프트에 넣습니다.\n\n🍌 카메라 프롬프트 예시:\n- 종횡비/포맷: “9:16 세로 포스터”, “21:9 시네마틱 와이드 샷”\n- 카메라 정보: “로우 앵글, 얕은 심도(f/1.8)”, “인물 위주, 배경은 부드러운 아웃포커싱”\n- 조명/색감: “골든 아워 역광”, “티얼&오렌지 시네마틱 컬러 그레이딩”\n* 이전에는 종횡비가 잘 맞지 않아 비슷한 비율로 프롬프트에 상세하게 지시해야 했는데, Nano Banana Pro에서는 숫자만 넣어주면 됩니다.\n\n3️⃣ 텍스트가 들어가는 이미지는 “문구+위치+스타일”을 함께 작성\nNano Banana Pro는 이미지 안 텍스트를 선명하게 렌더링하는 것이 강점입니다.\n테스트 해보니 한국어 텍스트도 비교적 깨끗하게 표현되지만 너무 작은 글씨는 깨질 수 있습니다.\n\n🍌 텍스트 프롬프트 예시:\n텍스트 내용: “헤드라인 ‘AI로 10배 빨라진 디자인 워크플로우’ 추가”\n- 위치: “이미지 상단 중앙 정렬”\n- 폰트 느낌: “굵은 산세리프, 모던하고 직관적인 스타일”\n- 언어: “본문 캡션은 한국어, 서브텍스트는 영어로 표시”\n\n4️⃣ 다이어그램·인포그래픽은 “정확도 조건” 명시\nGemini 3 Pro의 세계 지식과 추론 능력을 활용하면 정보형 이미지도 만들 수 있습니다.\n\n인포그래픽/다이어그램에 사용할 이미지를 업로드해서, 정확도와 관련된 조건을 함께 적어 줍니다.\n\n🍌 프롬프트 예시:\n- “과학적으로 정확한 ○○ 다이어그램”\n- “실제 비율에 맞춘 ○○ 구조도”\n- “역사적으로 정확한 ○○ 시대의 거리 풍경”\n\n5️⃣ 브랜드·캠페인용 “재사용 가능한 프롬프트 템플릿” 만들기\nNano Banana Pro는 최대 14개의 이미지를 한 번에 입력 가능하고,\n최대 5명까지 인물 일관성 유지가 가능해, 브랜드·캠페인용 이미지 템플릿을 만들어두고 재사용하기 좋습니다.\n\n🍌 여러 인물이 등장하는 팀 사진 프롬프트\n“업로드한 다섯 장의 인물 사진을 참고해서 한 팀처럼 보이는 단체 사진을 만들어줘.밝은 사무실 배경, 캐주얼한 드레스 코드, 자연스럽게 웃는 표정.\n각 인물이 원본 사진과 최대한 비슷하게 보이도록 해줘.”\n\n🍌 제품+로고 조합 광고 템플릿\n“이미지 A의 제품 사진과 이미지 B의 로고를 활용해\n온라인 광고용 메인 배너를 만들어줘.\n제품은 중앙에 크게, 로고는 우상단에 작게 배치. 배경은 브랜드 컬러를 활용한 그라디언트, 16:9 비율, 4K 해상도.”\n\n결국, 이미지 생성에서도 '프롬프트'가 중요합니다.\n명확한 목적과 모델 기능을 이해한 프롬프트가 결과물을 크게 좌우 할 것 같습니다.\n\n#nanobananapro #gemini3pro #aiimagegeneration #promptengineering #marketingdesign #generativeai #프롬프트엔지니어링 # 🍌",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7397324001875980288?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7397324001875980288%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "Prompt Engineer | Ph.D. in Korean Linguistics | Conversation Analysis | Optimizing AI-to-Human Interaction",
+      "images": [
+        "https://media.licdn.com/dms/image/v2/D5622AQFC9-ioepLS9A/feedshare-shrink_800/B56ZqiS.WaI0Ag-/0/1763659475693?e=1772064000&v=beta&t=hhYqO624F8zmgq8GSiiMS-C2q_if9Qkk1A4HEKB4yzU"
+      ],
+      "user_link": "https://www.linkedin.com/in/ACoAAEOyUqoBe58jAG2OO6sy7qWkq3AUW2likhw",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "image",
+      "source": "network",
+      "sequence_id": 33,
+      "sns_platform": "linkedin",
+      "local_images": [
+        "web_viewer/images/844ac3beaec55f2de4a2ed6ac47d2876.jpg"
+      ]
+    },
+    {
       "code": "7396396013068005376",
       "username": "윤썸원",
       "created_at": "2025-11-18 12:57:07",
@@ -6560,7 +6603,7 @@ const snsFeedData = {
         "https://media.licdn.com/dms/image/v2/D5622AQE6YOKdEouVMA/feedshare-shrink_2048_1536/B56ZqVG.iDJoAw-/0/1763438226360?e=1772064000&v=beta&t=d0peW0jdbvgi_b0uILh_R0NALxlUTn2nEcKr0cW9xJQ"
       ],
       "user_link": "https://www.linkedin.com/in/ACoAACC2D84BJpzxT2C5mrDCykqwVjBnKqPntLo",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "image",
       "source": "network",
       "sequence_id": 32,
@@ -6570,7 +6613,22 @@ const snsFeedData = {
       ]
     },
     {
-      "index": 129,
+      "code": "7395635427879129088",
+      "username": "Soojung Shin (신수정)",
+      "created_at": "2025-11-16 10:34:50",
+      "time_text": "2개월",
+      "full_text": "평생 커리어의 필수 조건: 파는(고객확보) 능력-\n\n1. 얼마전 정년을 앞둔 한분을 만났다. 기업의 임원이고 훌륭한 학력과 경력, 인품의 소유자였다. 사람을 돕고자 하는 뜻이 있어 코칭을 배우고 계셨다.\n\n2. 이야기를 해보니 이미 많은 돈을 투자해서 코칭을 몇년간 여러 기관에서 배우고 계셨다. 이에 질문했다. \"지금 코칭을 하고 계신가요?\"\n\n3. 그 분 답하길 지금은 아직 퇴임하지 않았기에 후배들 모의코칭을 조금 하고 있고 이후 나오면 코칭회사에서 고객들을 연결해줄 것을 기대한다고 하셨다.\n\n4. 그분은 멋진 커리어에 뜻도 좋고 학습능력도 좋았지만 중요한 한 가지가 빠져있었다. 그것은 \"스스로\" 고객을 확보하는 능력이 없다는 것이었다.\n\n5. 예전에 글로벌 기업 임원으로 계시다 50대 후반에 퇴임한 후 10년이 지난 지금도 강의와 코칭을 하시는 분을 만나 지금도 일하시는 비결을 물은 적이 있다. 그분이 이런 말씀을 하신다.\n\"제가 퇴임시절 10여명과 같이 경영 코칭교육을 배웠습니다. 그 당시 동기에는 대기업 CEO출신, 글로벌 기업 한국 CEO출신 들을 비롯 이름만 대면 알만한 사회 저명 인사들이 많았습니다. 그런데 지금까지 코칭을 하며 수입을 지속하는 사람은 저 혼자입니다. 대부분은 시작도 못하거나 조금 하다가 그만 두었습니다\"\n\n\"그분들 모두 똑똑하시고 학습능력이 뛰어났습니다. 전략, 재무, 인사 출신들이 많았고요. 그런데요. 문제는 '스스로' 고객을 못만드시더라고요. 쑥스러워서 자신의 서비스를 팔지를 못하는겁니다. 그러니 코칭 회사등에서 연결해주지 않으면 일이 없는 겁니다. 저는 커리어 동안 영업과 사업만 해서 가오나 체면 이런거 별로 신경쓰지 않았어요. 저는 다양한 실험을 해보면서 제 고객들을 확보해왔죠. 결국 저만 이 일을 지속하게 되었어요\"\n\n6. 예전에 나이가 있는 대기업 출신들을 스타트업에 연결하는 회사를 하는 대표를 만났다. 내가 그녀에게 물었다. 대기업 출신이 스타트업에서 역량을 발휘하는 영역이 있나요? 그녀는 이런 답을 한다.\n\"대부분은 적응을 못하는데요. 2개 분야는 그래도 성공적입니다. 하나는 영업하신 분들이고요. 또하나는 정부과제 잘 따셨던 분들입니다\"\n\n7. 조직을 벗어나서도 경쟁력을 가지려면 가장 필요한것은 \"고객을 확보하는 능력\"이다. 아무리 실력이 있어도 고객을 확보하는 능력이 없다면 한발자욱도 나갈수 없다.\n\n8. 나는 그분께 이렇게 말했다.\n\"글이 좋으신가요? 영상이 좋으신가요? 글이 좋다면 글쓰는 플랫폼을, 영상이 좋으시다면 영상 플랫폼을 하나 선택해서 콘텐츠를 올리기 시작하세요\"\n\n9. 그랬더니 말하신다.\"제가요? 아직 실력도 부족한데요?\"\n\n10. 나는 말했다. \"고등학생들 과외를 대학교수가 하나요? 대학교 1학년이 제일 많이 하지 않습니까? 한 발짝만 앞서있으면 도움을 받을 사람은 많습니다. 먼저 자신이 배운것부터 하나씩 올려보세요. 기존의 경험 및 전문성과 연결해보세요. 자신을 알아야 고객이 생길것 아닙니까? 자신이 아무리 대단해도 존재자체를 모르는데 누가 오겠습니까? 누군가의 영업 연결에만 의존하면 오래 못갑니다. 공부만 하고 자격증따다가 시간 다 쓰지마시고 일주일에 한번씩 아웃풋을 해보시고 자신의 프로그램과 고객을 만들 시도를 하세요.\"\n\n11. 여전히 \"파는 능력\"이 있어야 어떤 상황이든 생존 가능성이 높다. 그러므로 평생 커리어를 추구한다면 지금 직장생활을 할때 자신의 커리어 포트폴리오 중 영업이든 마케팅이든 \"파는 능력\" \"고객을 확보하는 능력\"을 하나의 블록으로 준비하시라.\n\np.s. 댓글은 서로에게 도움됩니다",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7395635427879129088?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7395635427879129088%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
+      "images": [],
+      "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "text",
+      "source": "network",
+      "sequence_id": 31,
+      "sns_platform": "linkedin"
+    },
+    {
       "code": "7393884393532084224",
       "username": "김덕중",
       "created_at": "2025-11-11 14:36:51",
@@ -6579,20 +6637,19 @@ const snsFeedData = {
       "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7393884393532084224?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7393884393532084224%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
       "profile_slogan": "숙명여대 겸임교수, Firb AI 연구소장",
       "images": [
-        "https://media.licdn.com/dms/image/v2/D561FAQHznlLgcDNptw/feedshare-document-cover-images_480/B56ZpxaW61JsBM-/0/1762839327656?e=1770976800&v=beta&t=4LV1KIS0IDrfDaUubMFYHzOqQ8xVfDmjS5m6EWJOQx4"
+        "https://media.licdn.com/dms/image/v2/D561FAQHznlLgcDNptw/feedshare-document-cover-images_480/B56ZpxaW61JsBM-/0/1762839327656?e=1770980400&v=beta&t=uK3Bma_two9ohghQqe7UExyn_axHXyOz4PrgdWFFDXk"
       ],
       "user_link": "https://www.linkedin.com/in/ACoAAAwBOVMBDI50rE9wyD4tsMaGWkV-85Sqd50",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "image",
       "source": "network",
       "sequence_id": 30,
       "sns_platform": "linkedin",
       "local_images": [
-        "web_viewer/images/4e259b6bfd2e830eb44384fdaa51e865.jpg"
+        "web_viewer/images/031c8b1cf2f8164e29e63ef00d955a2d.jpg"
       ]
     },
     {
-      "index": 130,
       "code": "7390273789009367040",
       "username": "Soojung Shin (신수정)",
       "created_at": "2025-11-01 15:29:35",
@@ -6602,31 +6659,87 @@ const snsFeedData = {
       "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
       "images": [],
       "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "text",
       "source": "network",
       "sequence_id": 29,
       "sns_platform": "linkedin"
     },
     {
-      "index": 131,
-      "code": "7347425977410514944",
+      "code": "7388348419590987776",
+      "username": "Neil Patel",
+      "created_at": "2025-10-27 07:58:52",
+      "time_text": "3개월",
+      "full_text": "What’s happening to organic traffic in 2025?\n\nWe surveyed 3,000 businesses to determine how their organic traffic has changed so far this year compared to last year.\n\nAdditionally, we wanted to see what happened to their total revenue.\n\nAs you can see, the majority of websites have experienced a traffic drop… but it’s not the same story when it comes to revenue.\n\nThe big winners on the revenue front were companies that adopted an omnichannel approach and focused on enhancing conversions.",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7388348419590987776?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7388348419590987776%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "Co-Founder at Neil Patel Digital",
+      "images": [
+        "https://media.licdn.com/dms/image/v2/D4D22AQFds8i6TEmWfA/feedshare-shrink_2048_1536/B4DZoivuuKHsAw-/0/1761519531305?e=1772064000&v=beta&t=_25bjMhfqU8fVzHqrUYUErqlSxzqiUNyGcIq0FKRYFs"
+      ],
+      "user_link": "https://www.linkedin.com/in/ACoAAAA6iRMBaolUyvRZOF1IDpmNtRPh98F54l8",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "image",
+      "source": "network",
+      "sequence_id": 28,
+      "sns_platform": "linkedin",
+      "local_images": [
+        "web_viewer/images/04ee5f4f100b973248c4a89317f11b79.jpg"
+      ]
+    },
+    {
+      "code": "7387653708110737409",
       "username": "Soojung Shin (신수정)",
-      "created_at": "2025-07-06 09:47:41",
-      "time_text": "7개월",
-      "full_text": "완벽주의자가 아닌 완료주의자--\n\n1. 얼마전, 한 외국계 기업에서 임직원들 대상 \"AI시대 그리고 전환시대, 일과 직장생활의 비결\"에 대한 강의를 했다.\n\n2. 질문답변시간에 한 젊은 여직원이 질문했다. \"자신의 성과를 표현하고 질문답변 하는 것이 중요하다고 말씀하셨는데 질문이 여전히 익숙하지 않습니다. 어떻게 질문을 '잘' 할수 있을까요?\"\n\n3. 내가 답했다. \"'잘' 하려 하지말고 '그냥' 하시면 됩니다\" 그랬더니 다들 웃는다. \"잘 하려하니 어려운것 입니다. 그냥 하다보면 실력이 늘고 자연스러워집니다\" 그 여직원은 끝나고 고맙다면서 엘레베이터까지 따라와서 쿠키를 선물해주었다.\n\n4. 일을 잘하는 분들중 너무 완벽하게 하려는 성향을 가진 분들이 많다. 물론, 완벽하고 깔끔한 일처리는 프로의 자세이고 멋지다. 중요한 일은 완벽하게 하는 것이 좋다. 그런데 모든 것을 완벽하게 하려면 너무 많은 시간과 노력이 들어 본인뿐 아니라 주위사람들도 힘든 경우가 많다. 완벽을 추구하다보면 아예 시작도 못하는 경우도 많다.\n\n5. 예전에 한 분을 만났다. 마음을 먹고 한주에 한번씩 블로그에 글을 쓰기로 결심했다. 그런데 결국 두번쓰고 포기했다. 글 한번 쓰면서 고치고 고쳤다. 이렇게 올리면 챙피하지 않을까? 누가 부족하다고 하지않을까? 2~3시간 고민하면서 겨우 하나 올렸다. 그러니 힘이 너무 들어 지속가능할 수 없었다. 난 초기 3년간은 그냥 매주 한 두번 퇴근길에 2~3줄씩만 올렸다. 이후에 이렇게 긴 글을 쓰기 시작했다.\n\n6. 내가 #진짜공부리스타트 에서도 밝혔지만 과거 과외로 많은 보통학생의 성적을 올린 비결이 있다. 내 과외 대상 학생들은 대개 머리가 좋거나 집중력이 있는 아이들은 아니었다. 의욕은 있었지만 과외를 몇차례 받고도 별 효과를 보지 못한 녀석들이었다. 당연히, 책을 보니 앞쪽만 새까맣게 되어있었다. 몇개월 열심히 하다가 포기하고 다시 다른 선생님과 처음부터 몇개월 하다 포기하니 책 앞쪽만 새까맣을수 밖에 없었다.\n\n7. 이에 난 다르게 했다. 예를들면, 영어 참고서를 한다면 처음부터 하나하나 다루는게 아니라 각 단원의 주요 부분만 대략 하고 끝까지 가서 2개월만에 끝을 내었다. 흥미롭게도 책을 끝내면 아이들이 변한다. 성취감과 뿌듯함을 느낀다. \"와 내가 이 책을 뗏다\"! 소위 ''공부가 제일 쉬웠어요\" 라고 말하는 분들은 이해못하겠지만, 박약한 의지력의 평범학생이 책의 끝까지 가보는 것은 대단한 일이다. 기적이다. 그 다음부터 아이는 자신감이 충만해진다. 이후 다시 처음부터 한다. 두번째 떼게한다. 정독으로 한번 보는데 6개월 걸리는것을, 나는 동일한 기간동안 3번을 떼게했다. 나의 교습법은 평범학생들의 성적향상에 큰 효과가 있었고 학생들과 학부모들에게 꽤 인기가 있었다.\n\n8. 나는 책을 읽을때 대충대충 읽는다. 대신 일단 끝까지 빠르게 단숨에 읽는다. 그리고 정독할 가치가 있으면 다시 읽는다. 처음부터 정독하면 앞쪽만 읽다가 끝나는 실패를 수십차례 경험한 후 바꾼 독서습관이다. 나처럼 의지박약자는 정독으로는 책 한권도 제대로 읽을수 없다. 이에 \"완료\"를 목표로 한다. 덕분에 많은 책을 읽게 되었다.\n\n9. 보컬코치에게 갔더니 지난번 같이 찍어 인스타에 올렸던 \"주저하는연인\"에 신기하게도 기업 광고가 들어왔단다. 보컬코치에게 배우는 분들은 대부분 나보다 실력이 뛰어나지만 아무도 영상을 같이 올리자고 하지 않았단다. \"난 부족해\" \"완벽해야지\" 라는 생각 때문이었다. 나만 요청해서 불러 올렸다. \"그냥 하는거지\"\n\n10. 당신이 완벽주의자에 독종이라면 상관없다. 그러나 완벽주의자이긴한데 삶이 너무 힘들다면? 또는 나같은 의지박약자라면?\n\n​11. 완벽하지 않아도 대충이라도 일단 끝까지 가보는 \"완료주의자\"를 선택하는것이 어떨까?\n\np.s.댓글은 서로에게 도움이 됩니다~",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7347425977410514944?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7347425977410514944%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "created_at": "2025-10-25 09:58:19",
+      "time_text": "3개월",
+      "full_text": "자신을 발견되게 하라---\n\n1. 얼마전 한 여성 기업인을 만났다. 조금 늦은 나이에 결혼하셨다. 어떻게 상대를 만나셨는지 물으니 \"노력했다\"고 하셨다. 예전에는 영화처럼 언젠가 멋진 누군가 나타나서 말 걸어 주고 사랑에 빠질 것이라 생각했는데 현실은 아님을 깨달았다고 한다. 이에 결혼매칭 업체 등의 문을 두드리는 등 노력하셨고 성사되었다.\n\n2. 싱가폴에서 일을 하다가 일이 안맞아 그만두고 job을 찾는 분이 있었다. 쉽게 찾아지지 않아 고생했는데 가볍게 연결되었던 한 모임에 있었던 어떤 분의 연결로 한국과 싱가폴을 연결하는 좋은 커리어를 찾으셨다.\n\n3. 미국 빅테크에서 일하다가 그만두고 무엇을 할지 고민하다가 책을 쓴 분을 만났다. 어떻게 책을 내었냐고 했더니 책 쓰는 어떤 모임에 들어가서 일인 출판하는 분을 통해 냈다고 한다. 그런데 반응이 생각보다 좋았다. 마침 그 책을 서점에서 픽한 한 유명기업 창업자의 제안으로 그 회사에서 일하게 되었다.\n\n4. 나도 예전에 이런 생각을 많이했다. \"내 자리에서 열심히 일하고 뛰어나면 누군가 알아줄거야\" 주위에서 내게 당신은 실력있으니 영향력있는 사람들과 인맥을 맺어보라 조언할때도 \"내가 잘하면 자연스럽게 연결되지 않겠어?\"라고 말하곤 했다. 물론, 사람 만나는데 시간과 에너지를 쓰기 싫고 내향적이라 굳이 그렇게까지 하고 싶지 않기도 했다. 그런데 그런 일은 발생하지 않았다. 이에 그나마 사교적이 안되어도 할수 있는 것들- 내가 가진 지식을 강의, 발표, 논문, 보고서, 칼럼, sns 등 아낌없이 제공함으로써 사람들과의 접촉면을 넓혔다. 결국, 회사 일과 개인 양쪽 모두 큰 도움을 받았다. 많은 분들이 내게 받은 도움을 기억하여 내가 근무하는 회사를 좋게보고 프로젝트를 맡기고 홍보해주셨다.\n\n5. 세상에는 수 많은 사람이 살고 있다. 그런데 나를 아는 사람이 없는데 누가 나를 발견할수 있겠는가? 결국 누군가 나를 발견하기를 기다리는 것보다 내가 발견되도록 하는 편이 더 낫다.\n\n6. 주위 뛰어난 한 분이 계신다. 그분은 새로운 커리어를 가지고 싶어한다. 나는 링크드인에 자신의 전문성을 보일 포스트를 꾸준히 남길것을 조언했다. 그러자 그 분 말씀이 \"수정님처럼 멋진 글을 못써요\"\n\n7. Sns는 두가지 길이 있다. 특정한 목적없이 재미로 하며 인기를 얻는 것과 인기는 없어도 특정 목적을 가지는 것. 전자의 포스트 클릭수가 훨씬 많지만 거기에 현혹될 필요가 없다. 비즈니스나 커리어를 위해서는 클릭수가 없더라도 자신의 일과 전문성을 나누는 활동을 간략하게 꾸준히 남기면 된다. 단지, 주의깊게 해야한다. 자주 하면 역효과이다. 개인의 잦은 sns활동이나 외부노출, 출간 활동을 좋아하는 동료나 회사는 없다는 것을 기억하라. 그러므로 회사에 도움이 될 필요가 있다. 이렇게 하는 것이 어렵다면 sns보다는 자신과 회사 모두 윈윈할수 있는 공식 강연이나 논문, 커뮤니티 등 또한 활용할수 있다.\n\n8. 인맥에 시간과 에너지를 쓰기 어려운 내향인 들은 더더욱 글과 온라인을 활용하는게 좋다. 비슷한 뜻을 가진 분들과의 모임이나 외부 교육 참여을 통해서 Weak tie를 만드는것도 좋다. 나도 인스파이어라는 weak tie모임을 만들었다.\n\n9. 자신을 (건강하게) 검색되고 발견되게 하라.\n\np.s. 댓글은 서로에게 도움됩니다",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7387653708110737409?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7387653708110737409%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
       "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
       "images": [],
       "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "text",
       "source": "network",
-      "sequence_id": 18,
+      "sequence_id": 27,
       "sns_platform": "linkedin"
     },
     {
-      "index": 132,
+      "code": "7382956819146600449",
+      "username": "Soojung Shin (신수정)",
+      "created_at": "2025-10-12 10:54:34",
+      "time_text": "4개월",
+      "full_text": "“왜 훌륭한 리더십은 현실에서 잘 통하지 않는가”: 리더십의 두 얼굴을 통합하라---\n\n1. 『리더십 스케일아웃』에 따르면, 전 세계 리더들을 진단한 결과 효과적인 리더와 비효과적인 리더의 차이는 명확했다.\n- 효과적인 리더는 ‘성과 중심 리더십’과 ‘관계 중심 리더십’을 모두 갖추고 있었다.\n- 비효과적인 리더는 순응, 통제, 방어의 패턴이 강했다.\n- 탁월한 리더일수록 강력한 피플 스킬(커뮤니케이션, 겸손, 경청, 진정성, 솔선수범, 개인적 친근함)과 팀빌딩 능력, 비전 제시력이 뛰어났다.\n- 반면 전문성, 네트워크, 열정, 명석함 등은 리더십의 효과성에 있어 큰 차이를 만들지 못했다.\n\n2. 명석함, 추진력, 결과 중심 사고 등은 리더가 되는 데에는 유리하지만, 조직이 커질수록 오히려 한계가 된다. 조직의 규모가 커질수록 필요한 것은 개인의 똑똑함이나 더 많은 ‘지시’나 ‘통제’가 아니라 사람을 통해 성과를 내는 능력, 높은 목적과 전략적 비전을 제시하는 능력이다.\n\n3. 탁월한 리더를 떠올려보라. 대부분은 단지 성과만 내는 리더가 아니라, 겸손하고 진정성 있으며, 커뮤니케이션이 탁월하고 장기적인 뜻과 비전을 가진 사람을 떠올린다. 리더십 책, 코치, 멘토들은 한결같이 이런 리더십을 강조한다. 성과와 인간미를 동시에 갖춘 리더가 진정한 고성과 리더라는 것이다.\n\n4. 그러나 문제는, 우리 대부분이 접하는 현실의 모습은 책과 다르다는 것이다. 현실 조직 세계에서는 단기 성과만 드라이브하며, 사람들의 말을 듣지 않고 독단적이며, 기존의 직원들을 깔아내리고 자신의 편을 만들고 정치적으로 움직이는 리더가 높은 위치에 있는 경우가 많다. 이 괴리를 어떻게 봐야 할까?\n\n5. 리더십 연구는 주로 조직 전체의 장기적 성공 요인에 초점을 맞춘다. 많은 연구가 사람 중심 리더십이 조직의 지속가능성과 직접적으로 연결된다고 말한다. 반면, 승진의 현실은 단기 성과와 적절한 쇼잉, 정치적 영향력에 좌우되는 경우가 많다. 결국, “조직을 위대하게 만드는 리더”와 “위로 올라가는 리더”는 다를 수 있다.\n\n6. 왜 정치적이고 단기 쇼잉형 리더가 승진하는가? 그들은 보스의 눈에 잘 띄고, 조직 내 핵심 라인에 들어가기 쉬우며, 많은 CEO들 또한 단기 계약직이라 자신과 코드가 맞으며 자신이 당장 필요로 하는 즉각적인 결과를 가져오는 산하 리더들을 선호하기 때문이다. 장기적 성과 지향, 개방과 경청 리더십 시스템이 부재한 곳에서는, 단기 쇼잉형 리더가 빠르게 부상하고 상사 심기관리에 능한 이들이 득세하기도 한다.\n\n7. 이 괴리를 어떻게 받아들여야 하는가? 나는 오랜 기간 다양한 기업에서 리더로 일하며 많은 리더십 이론을 읽고 트레이닝도 받았다. 결론적으로, 두 가지 세계를 모두 이해할 줄 알아야 한다는 것이다.\n- 교과서적인 리더십만으로는 이를 알아봐주는 보스가 없는 한, 고위 리더에 오르기 어렵다.\n- 보스의 관심사, 정치적 역학과 권력 구조를 모르면 세상 물정 모르는 순진한 리더가 된다.\n- 그러나 정치적 기술만으로는 단기적으로는 승진할 수 있지만, 장기적으로는 조직과 자신 모두를 해친다. 단기적 성과를 위해 미래 투자를 외면하거나, 사심 가득한 의사결정을 내리기 때문이다. 실제로 나는 이런 리더들이 떠난 후, 그들이 망가뜨린 조직을 복원하느라 고생한 사례를 보기도 했다.\n- 현명한 리더는 두 세계를 모두 아는 사람이다.\n- 자기 철학을 잃지 않으면서도, 정치적 지형을 잘 파악하고 성과 커뮤니케이션도 잘한다. 권력게임에 거리를 두면서도 현실을 읽는다. 당장 보스가 필요한 것도 채우지만 거기에 매몰되지 않고 사람을 세우며 미래를 보며 성과를 내는 리더가 결국 조직을 살린다.\n- 조직의 문화에 따라 정치적 강도의 스펙트럼은 다양하다. 위와 같은 처신이 어렵다면 건강한 분들일수록 엉뚱한 곳에서 좌절 말고 자신에 맞는 건강한 조직을 선택하라.\n- 현실 리더십 영역은 특히 뜻있고 순수한 분들에게 더 어렵다. 그러나 이런 분들이 더 큰 역할을 해야 세상에 좋은 영향이 확대될 것이다.\n\n8. 성경에서도 이렇게 말하지 않았던가.\n“비둘기처럼 순결하되, 뱀처럼 지혜로워라.”\n\np.s. 댓글은 서로에게 도움됩니다.",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7382956819146600449?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7382956819146600449%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
+      "images": [],
+      "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "text",
+      "source": "network",
+      "sequence_id": 26,
+      "sns_platform": "linkedin"
+    },
+    {
+      "code": "7375094327305437184",
+      "username": "박대영",
+      "created_at": "2025-09-20 18:11:50",
+      "time_text": "4개월",
+      "full_text": "[동향 주제로 지속적으로 강연하는 방법]\n\n강연 활동은 22년도부터 해왔고, 24년도 상반기부터는 \"금융 AI 동향\"이나 \"AI 보안/안전 동향\" 주제로 이야기하고 있습니다.\n사실 \"동향\" 주제 강연이 꽤나 에너지가 많이 들어갑니다.. (가성비는 안좋습니다 ㅎㅎ)\n\nAI분야가 워낙 빠르게 변하고 새로운 기술 등장 및 규제 변화 등이 맞물리고 수많은 논문이 쏟아져나오다보니 사실 따라가기가 쉽지 않습니다 ㅋㅋ ㅠㅠ\n\n회사 실무자로서 현업업무, 연구활동 (논문) 등 바쁘긴 하지만\n그럼에도 불구하고, 계속 이 주제로 고수하다보니 (트렌드를 놓치고 싶지 않은 마음에서..^^), 나름 시간효율적으로 최신동향을 지속적으로 follower-up하는 방법이나 자세, 태도가 몸에 익었습니다.\n\n나름대로 아래 5가지 방법 및 기준을 가지고 매번 자료를 업데이트하는데, 다른 분들도 참고하시면 좋을 거 같습니다\n(더 좋은 판단 기준이나 방법론이 있으면 추천해주세요 ~! 저도 많이 배울게요 ㅎㅎ)\n\n\n1. 이동중에 빅테크에서 나오는 논문들은 NotebookLLM으로 모두 팟캐스트 형태로 듣거나 요약본 읽기\n- 기술 선도하는 기업의 논문은 가급적 다 보거나 듣습니다 (대강이라도 봐야 함)\n- 아무래도 AI/IT 분야 연구는 기업의 관심에서 멀어진 분야는 서서히 죽어가기 쉽기 때문입니다 (그럼에도 자신의 고유 연구분야를 평생 깊게 파시는 연구자분들도 많습니다. 모두 존경합니다)\n\n\n2. 최신 연구를 잘 정리해주시는 네임드분들의 SNS나 블로그 글을 의식적으로 찾아가서 읽기\n- 탑티어학회나 업계 네임드가 출판한 논문은 가급적 다 긁어모으긴 하지만, 모두 깊게 읽기는 어렵습니다. 따라서, 주요 주제별로 잘 정리해주시는 분들의 도움을 받아야 합니다 (페친, 링친분들 늘 감사합니다 ㅎㅎ)\n- 개인적으로는 ETRI 전종홍 박사님 (전종홍) 정리를 많이 읽습니다 ㅎㅎ 늘 감사드리죠\n\n\n3. 동료나 주변 지인들 최대한 활용하기\n- 대화주제로 오늘 점심이나 가십 등을 이야기할 수도 있지만, 최대한 최신업계 동향 주제로 이야기 나누려고 합니다.\n- 주변 분들이 제가 모르는 영역을 많이 아시는 경우도 많아요.\n- 의식적으로, 일주일에 1번 이상 점심이나 저녁은 그동안 교류가 적었던 업계 실무자분들과 같이하려고 합니다. 제가 못본 view로 이야기를 듣는 것도 너무 좋습니다.\n\n\n4. 금융업계, 정부 정책/규제 소식 모두 긁어모으기\n- 개인적으로 최신 뉴스기사, 정부정책 소식, 보도자료 등은 모두 크롤링하고 아카이빙 합니다 (나름 귀중한 자산입니다. 타임라인에 따라 변하는 히스토리는 귀중한 자료더라구요. 왜 이렇게 변했지? 라는 걸 곰곰히 생각해보다보면 생각의 깊이도 깊어집니다.)\n\n\n5. 현실을 인정하기\n- 시간이 없어서 모두 깊게 읽기 어렵습니다 ㅠㅠ. 저도 공학도다 보니 깊어지는걸 추구하는데 시간은 늘 부족합니다.\n- 모든 내용을 깊이 있게 알고싶은 지식욕심을 내려놓으니 스트레스도 줄고, 마음도 편합니다 . 청중께서 깊이 있는 내용을 물어보시면 솔직하게 제가 아는 정도는 여기까지이고, 제 생각은 이러한 내용일 거 같다고 말씀드리며,\n자세한 거는 해당 논문이나 보고서를 읽어보시면 좋겠다고 말씀드립니다.\n\n\n추가)\n제 background상 원래 금융회사에서 주로 불러주셨는데,\n요즘은 AI 보안, 안전에 대한 관심도 높아지면서 타산업의 공공기관이나 사기업에서도 자주 불러주시네요.\n\n덕분에 한국에너지기술평가원은 이번에 처음 가봤네요.",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7375094327305437184?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7375094327305437184%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "특강, 강연 등 요청 시 링크드인 메신저나 이메일로 연락 부탁드려요:) 이메일: mainthread4929@gmail.com",
+      "images": [
+        "https://media.licdn.com/dms/image/v2/D5622AQHJJNs4h4w7pA/feedshare-shrink_2048_1536/B56ZlmZKXBKEAw-/0/1758359506511?e=1772064000&v=beta&t=C54Two8NFa-Segkm4UXW0zDgEdXpnvBxF7iIgCVzy7U"
+      ],
+      "user_link": "https://www.linkedin.com/in/ACoAAC1AtmMBgWSqGGOxpr1C-rVdX2W7bxAzHbc",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "image",
+      "source": "network",
+      "sequence_id": 25,
+      "sns_platform": "linkedin",
+      "local_images": [
+        "web_viewer/images/b25b80d5cef7dbab284c429b95e71337.jpg"
+      ]
+    },
+    {
       "code": "7372465848608845824",
       "username": "Soojung Shin (신수정)",
       "created_at": "2025-09-13 12:07:12",
@@ -6636,14 +6749,130 @@ const snsFeedData = {
       "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
       "images": [],
       "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "text",
       "source": "network",
       "sequence_id": 24,
       "sns_platform": "linkedin"
     },
     {
-      "index": 133,
+      "code": "7364298758177636352",
+      "username": "정구봉 Goobong Jeong",
+      "created_at": "2025-08-21 23:14:06",
+      "time_text": "6개월",
+      "full_text": "PM이 바이브코딩할 때 유리한 점: 질문에 망설임이 없다 + 좋은 질문을 한다.\n이런 사람이 바이브코딩을 정말 잘합니다. (클로드코드 팁)\n\n1. PM은 질문이 일입니다.\n'속도를 2배 올리려면 어느 기능을 손대야 할까요?' '이 버튼을 더 직관적으로 바꾸려면 어떤 방법이 있을까요?' 항상 나보다 잘 아는 전문가와 협업하기 때문에 좋은 질문이 곧 좋은 성과로 이어진다는 걸 잘 압니다.\n\n이 습관은 AI를 활용할 때, 특히 바이브코딩을 할 때 강력하게 작동합니다.\n\n2. 아는 만큼만 만들 수 있다?\n흔히 '바이브코딩은 아는 만큼만 만들 수 있다'라고 합니다. 그러면 아는게 적은 사람은 못 만들까요? 아닙니다. 지식을 쌓으면서 만들면 돼요. AI는 묻는 만큼 알려주고, 그 과정에서 지식을 쌓을 수 있기 때문에 질문을 잘하는 사람에게는 오히려 최적화된 환경이 됩니다.\n\n3. 예시: 좋은 질문 -> 좋은 결과\n- 30점: 사이드바 메뉴에 하위 메뉴를 만들어줘\n- 50점: 아코디언 메뉴를 만들어줘\n- 100점: 아코디언 메뉴는 기본 2단계까지만 표시하고, 브레드크럼을 추가해서 경로를 명확히 보여줘. 예시는 Notion 사이드바 이미지를 참고해\n\n4. 클로드코드 팁\n저는 코드를 짤 때 Claude Code를 이렇게 씁니다: 창을 2개 켜서,\n• 왼쪽: 실행/테스트용\n• 오른쪽: 코드베이스 기반으로 Claude와 대화\n\n요구사항을 점점 디테일하게 다듬으면서 진행하는 게 시행착오를 크게 줄여줍니다. 실행 창은 여러 개 늘려도 괜찮지만, 대화 창은 반드시 하나를 유지하는 게 효과적이었습니다\n\nAI를 쓴다면 질문을 많이 하고, 좋은 질문을 할수록 더 큰 생산성을 발휘할 수 있습니다. 지금은 지식이 부족하더라도, 이런 방식으로 학습하면서 요청한다면 딱 일주일 뒤에도 완전히 다른 생산성을 얻게 됩니다.\n\n🙏 저의 작은 경험과 팁을 공유해봤습니다.\n여러분은 AI를 어떻게 잘 활용하고 계신가요? 댓글로 팁을 나눠주시면 저도 많이 배우겠습니다",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7364298758177636352?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7364298758177636352%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "Claude Code for all of your work",
+      "images": [
+        "https://media.licdn.com/dms/image/v2/D5622AQFMrmq9oD7G2Q/feedshare-shrink_2048_1536/B56ZjM.sGgHUBI-/0/1755785644843?e=1772064000&v=beta&t=uNXgcdyIaE2XpqDvTO6y9rNml3mG7JUhtl-Zev2yXno"
+      ],
+      "user_link": "https://www.linkedin.com/in/ACoAACY7KJQBDtSTk6IuIwZY6ntBGJx1fCYwsYI",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "image",
+      "source": "network",
+      "sequence_id": 23,
+      "sns_platform": "linkedin",
+      "local_images": [
+        "web_viewer/images/e0131c8f9d52153b141471d4fefdb7c8.jpg"
+      ]
+    },
+    {
+      "code": "7362299233468624897",
+      "username": "Soojung Shin (신수정)",
+      "created_at": "2025-08-16 10:48:42",
+      "time_text": "6개월",
+      "full_text": "다른 업종으로 옮겼을때, 성공과 실패를 가르는 차이--\n\n1. 새로운 업종의 벤처로 옮겨 6개월 정도 지난 한 사업 책임자가 내게 솔직한 이야기를 털어놓았다. \"제가 이 업을 잘 이해하고 있지 못해 걱정입니다. 제가 엉뚱한 판단을 할까 두렵고, 구성원들도 제가 현장을 모른다고 속으로 평가할것 같습니다\"\n\n2. 사실 나도 다른 업종으로 옮긴 경험이 있고 또 그런 분들을 많이 보았기에 이해가 되었다.\n\n3. 하지만 업을 모른다는 것이 반드시 약점 아니다. 스타벅스의 하워드 슐츠는 주방용품 회사에 다녔고 제프 베조스도 헤지펀드 출신이었다. 업을 모를때 가질수 있는 장점은 다음과 같다.\n1) 보편적 역량 활용: 업종이 달라도 문제해결 방식, 분석력, 리더십 등의 역량은 그대로 활용할수 있다.\n2) 고정관념에서 자유로움: 한 업에 오래 있었던 사람들은 암묵적 규칙과 고정관념에 묶여있는 경우가 많다. 오히려 업을 모르는 리더는 기존 업에서 안된다고 여겼던 것들을 돌파해낼수 있다.\n3) 진짜 벤치마킹 가능: 다른 업에서의 효과적이었던 방식을 접목할수 있다. 진짜 벤치마킹은 다른 업종에서 효과적이었던 방식을 접목하는 것이다.\n4) 조직내 새로운 자극: 다른 시각을 가진 사람들이 들어오면 조직 내 긴장감과 변화가 촉발된다.\n\n4. 이에 나는 그에게 \"걱정하지 않아도 된다. 오히려 새로운 조직에도 큰 도움이 될것이다. CEO도 그 기대감으로 당신을 채용했을것이다\"라고 말했다. 그제서야 그는 용기를 얻었다고 말한다.\n\n5. 다만, 새로운 업종으로 옮겨 실패하는 경우도 자주 본다. 특히 임원이나 CEO등 리더일수록 그렇다. 그들에게는 몇가지 공통적인 실수가 있다.\n1) 이전 성공 방식을 억지로 밀어붙인다: 업이 달라지면 콘텍스트가 달라진다. 그러므로 단순 적용이 아니라 파일롯과 검증이 필요하다. 그러나 이를 무시하고 자신이 과거에 이루었던 성공방정식을 강행하면 실패확률이 높아진다.\n2) 기존 문화와 직원들을 무시한다: 혁신 기업 출신의 리더가 전통산업으로 오면 흔히 발생한다. 기존 문화와 임직원들을 수구적이고 능력 부족이라고 폄하한다. 어떤 문화든 발생 이유가 있다. 이를 무시하고 폄하하면 구성원들의 지지를 잃는다. 겉으로는 따르는듯 보이지만 열망을 일으키지 못하고 결국 혁신도 실패한다. 물론, 기존의 구성원들도 다른곳에서 이직한 분들을 열린 마음으로 받아 줄 필요가 있다.\n3) 모른다는 것을 인정하지 않는다: 자신이 모른다면 솔직히 인정하고 기존 구성원에게 겸허하게 묻는 것이 가장 빠른 학습법이다. 그러나 잘난 척, 아는 척하며 화를 내거나 비상식적 지시를 반복하면 신뢰를 잃는다.\n\n6.그러므로 5에서 말한 세가지 함정만 피한다면 새로운 업종으로의 전환은 오히려 해당 회사도 개인도 성공하는 윈윈구조를 만들어낼수 있다. 개인에게는 특히 더욱 확장된 역할과 커리어 기회들을 제공해준다. 즉, dot들이 많아져 연결과 융합의 기회가 증가하고 이는 향후 선택의 기회가 더 많아진다는 것을 의미한다.\n\np.s. 댓글은 서로에게 도움이 됩니다.",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7362299233468624897?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7362299233468624897%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
+      "images": [],
+      "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "text",
+      "source": "network",
+      "sequence_id": 22,
+      "sns_platform": "linkedin"
+    },
+    {
+      "code": "7359809497730592768",
+      "username": "Soojung Shin (신수정)",
+      "created_at": "2025-08-09 13:55:22",
+      "time_text": "6개월",
+      "full_text": "강의에 초대받으면 청중들에게 페북, 링크드인 등을 하는지? Sns에서 저를 팔로우 하는지? 물어본다. 흥미롭게도 폐쇄적인 문화의 기업일수록, 국내기업일수록, 공공분야 일수록, 나이가 든 분들 일수록 안하시는 경우가 많다. 이 분들에게 변화나 새로운 이야기를 하는 것은 힘들다. 대개 글로벌기업이나 유망한 스타트업, 테크기업의 30~40대와 깨어있는 50대는 링크드인을 잘 활용한다.\n\n글을 쓰지 않고 팔로우만 잘해도 세상이 어떻게 돌아가는지, 요즘 트렌드가 무엇인지, AI가 어떻게 적용 확산되는지, 다른 업종의 사람들은 무슨 생각을 하는지 알수 있다. 이에 깨달음도, 확신도, 자극도, 긴장도 된다.\n\n그저 자신의 회사와 자신의 일에만 갇혀 거기서 맴돌다가는 우물안 개구리가 되기 쉽다. 얼마전에도 한 회사만 다녔고 외부 교류도 거의 없는데, 회사 사업이 축소되어 향후 커리어를 고민하는 40대를 만났다. weak tie를 만들라고 했다. 공부하는 모임 안에 들어가는 것도 좋다. 자신의 회사외에 사람들과 on 또는 off로 연결되어 있어야 자극도 커리어 기회도 생긴다.\n\nWeak tie의 힘을 경험하라고 나는 #일의격, #통찰의시간, #거인의리더십, #커넥팅 등 책에서 많이 썼고 그 덕분에 큰 도움을 얻었다는 후기가 넘친다.\n\np.s. 댓글은 서로에게 도움이 됩니다.",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7359809497730592768?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7359809497730592768%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
+      "images": [],
+      "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "text",
+      "source": "network",
+      "sequence_id": 21,
+      "sns_platform": "linkedin"
+    },
+    {
+      "code": "7359753187211317248",
+      "username": "Soojung Shin (신수정)",
+      "created_at": "2025-08-09 10:11:37",
+      "time_text": "6개월",
+      "full_text": "어떤 분야의 커리어를 늦게 시작해도 최고가 될수 있는 이유: AI시대, 최고가 되기 위한 학습 룰이 완전히 바뀐다--\n\n1. 근면과 성실, 노력은 오랫동안 성공의 핵심 덕목이었다. 그러나 농경, 산업화 시대를 거쳐 지식 시대로 접어들면서 상황이 달라졌다. 조기 교육, 효율과 번뜩이는 천재성, 탄탄한 학/경력 네트워크가 더 큰 가치를 인정받기 시작한 것이다.\n\n2. 그렇다면 AI 시대는 어떨까?\n장강명 작가의 책을 보면, 바둑계에서 AI가 미친 영향을 흥미롭게 설명하고 있다.\n\n3. 과거 바둑에서는 번뜩이는 감각과 천재성이 강한 기사, 어렸을때부터 별도 그룹으로 특수 훈련받은 이들이 압도적으로 유리했다. 특히, 초반 포석은 더더욱 그러했다고 한다. 그러나 인공지능이 등장하자 상황이 바뀌었다. 천재성이 부족하더라도 끈기 있게 노력하는 이들이 AI를 통해 학습하면서 그 격차를 빠르게 줄여나갔다.\n\n4. 바둑에서의 공부법은 AI가 휩쓴이후 완전히 바뀌었다고 한다. AI 시대의 새로운 공부법은 이렇다.\n1) 혼자서도 학습할 수 있다.\n2) AI의 답과 자신의 답을 끊임없이 비교하며 배운다.\n3) 결국 절대 공부량, 즉 노력의 총량이 승부를 가른다.\nI형과 노력형에게 희소식이다~\n\n5. AI가 가장 큰 혜택을 준 사람들은 늦게 입문했거나, 감각과 천재성이 부족하거나, 여성, 소외된 지역에 있던 사람들, 일류들과 공동 연구를 할 기회가 없었던 사람, 일류 스승이 없이 혼자 공부하던 이들이라 한다. 반면 잃은 사람들은 어렸을때부터 입문한 이들, ‘게으른 천재’들, 일류 스승으로부터 배우는 이들, 특수모임에 있었던 이들이었다. 결국 특수층이 가졌던 정보적·관계적 우위가 무너진 것이다.\n\n6. 이 변화는 바둑에만 국한되지 않는다. AI 시대에는 천재성이 부족해도, 늦게 출발했어도, 돈이 부족해도, 좋은 스승이나 화려한 학력과 경력, 인맥이 부족해도 최고가 될 수 있다. 필요한 것은 두 가지다.\n1) AI의 답과 자신의 답을 끊임없이 비교하며 학습하는 태도\n2) 꾸준함과 성실함\n\n7. 바둑 세계가 먼저온 미래라면(물론, 바둑이라는 특수성을 고려할 필요는 있다) 이 레슨을 통해 자신의 분야에서 어떻게 적용하고 대응해야 할까?\n\np.s. 댓글은 서로에게 도움을 줍니다.",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7359753187211317248?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7359753187211317248%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
+      "images": [],
+      "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "text",
+      "source": "network",
+      "sequence_id": 20,
+      "sns_platform": "linkedin"
+    },
+    {
+      "code": "7349611659310624770",
+      "username": "Soojung Shin (신수정)",
+      "created_at": "2025-07-12 10:32:48",
+      "time_text": "7개월",
+      "full_text": "배움을 아웃풋하고 레버리지하라--\n\n1. 한 분을 만났다. 해당 분야에 전문성과 풍부한 경험을 가진 분이고 열심히 배우는 분이었다. 나는 이런 말을 했다. \"파트라도 강의를 하시면서 가르쳐보시면 어떨까요? 글이나 책도 쓰실수 있고요. 새로운 비즈니스도 실험할수도 있고요. 그러면 더 확장될듯 하네요\"라고 했더니 그 분 왈. \"어휴 저보다 더 지식과 경험이 많은 분들이 있는데 제가 어찌 감히요. 저는 아직 더 배워야 합니다\"\n\n2. 세계적인 자기계발 구루로 토니 로빈슨이 있다. 그는 무려 2000만부 베스트셀러 작가이며 미국대통령 4명의 멘탈관리 자문을 했다. 그의 인당 5천달러 일주일 세미나에는 2500명이 참여한다. 그는 자가용 비행기를 타고 다니며 강연을 한다.\n\n3. 어느날 그는 한 기법에 대해 알게된다. 이에 그 방법을 배우고 싶었다. 이에 한 강좌에 잠시 참여했다. 이후 그는 강사에게 말했다. \"와! 효과적인 툴이군요. 나는 내 고객들에게 당장 적용할 수 있겠어요\" 그러자 강사가 말한다. \"자격증을 따야 가르칠수 있습니다\"\n\n4. 토니 로빈슨은 말한다. \"자격증이 무슨 필요가 있습니까? 당장 도움을 줄수 있는데요. 내가 이 기법을 적용해서 사람들을 어떻게 변화시키는지 한번 와서 보시죠\"\n\n5. 그는 짧은 교육을 받았지만 자신의 프로그램에 그 기법을 반영하여 훨씬 파워풀한 영향력을 발휘했다. 그는 그 기법을 더 배우거나 자격증을 따는데 시간을 보내지 않았다. 짧은 배움이지만 자신의 것안에 녹여내어 몇 배로 레버리지 했다.\n\n6. 제프베조스 또한 아마존을 창업하기 전, 일주일간 '서점 내는법' 세미나에 참여했다. 같은 수강생들은 대형 헤지펀드 경영자 출신인 그가 그저 평범한 서점주인을 하려 하는 줄 알았다. 그러나 그는 일주일간 세미나로 오프서점의 구조와 프로세스를 파악했고 그 지식을 수백만배 레버리지 했다.\n\n7. 당연히 어떤 전문 분야는 일을 하기 위해 과정을 거치고 검증된 자격증을 취득할 필요가 있다. 그러나 대부분의 영역에서는 그냥 행동하면 된다.\n\n8. 물론, 배움 자체에 즐거움을 누리는 것이 목적이라면 괜찮다. 아직 젊은 나이거나 퇴임한 경우라면 이것저것 배우기만 해도 상관없을수 있다. 그러나 시간이 한정된 30~50대 직장인이라면 조금 더 초점을 가지고 효과적으로 배우는 것을 고려하는 게 좋다.\n\n9. 나는 초점-아웃풋-레버리지 3단계를 제시하고 싶다.\n1단계. '초점'을 가지고 배운다.\n예를들어, 업무성과에 즉각적 효과를 내겠다든지 협상을 잘하겠다든지 프레젠테션 실력을 늘이겠다든지 마케팅을 잘하겠다든지 초점을 맞추고 이에 align하여 배운다.\n\n2단계. 배우면서 '아웃풋'한다.\n지적만족에서 그치지 말고 글로 정리하거나 적용하여 방법론을 만들고 성과 창출을 하는 등 아웃풋을 한다.\n\n3단계. 배움을 더 크게 '레버리지' 한다. 즉, 자신의 무기를 더 차별화하는데 빠르게 활용한다\n토미 로빈슨이나 제프 베조스 처럼 자신이 이미 잘 하는 것에 융합하고 적용하여 자신의 무기나 비즈니스를 더욱 차별화하고 확장하는데 빠르게 반영한다.\n\n10. 새로운 것을 배울 뿐 아니라 그 배움을 융합하여 자신의 무기를 더 강하게 한다. 우리 모두 몇배, 몇백배로 레버리지 하여 자신의 가치를 확장해보자.\n\np.s. 댓글은 서로에게 도움됩니다~",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7349611659310624770?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7349611659310624770%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
+      "images": [],
+      "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "text",
+      "source": "network",
+      "sequence_id": 19,
+      "sns_platform": "linkedin"
+    },
+    {
+      "code": "7347425977410514944",
+      "username": "Soojung Shin (신수정)",
+      "created_at": "2025-07-06 09:47:41",
+      "time_text": "7개월",
+      "full_text": "완벽주의자가 아닌 완료주의자--\n\n1. 얼마전, 한 외국계 기업에서 임직원들 대상 \"AI시대 그리고 전환시대, 일과 직장생활의 비결\"에 대한 강의를 했다.\n\n2. 질문답변시간에 한 젊은 여직원이 질문했다. \"자신의 성과를 표현하고 질문답변 하는 것이 중요하다고 말씀하셨는데 질문이 여전히 익숙하지 않습니다. 어떻게 질문을 '잘' 할수 있을까요?\"\n\n3. 내가 답했다. \"'잘' 하려 하지말고 '그냥' 하시면 됩니다\" 그랬더니 다들 웃는다. \"잘 하려하니 어려운것 입니다. 그냥 하다보면 실력이 늘고 자연스러워집니다\" 그 여직원은 끝나고 고맙다면서 엘레베이터까지 따라와서 쿠키를 선물해주었다.\n\n4. 일을 잘하는 분들중 너무 완벽하게 하려는 성향을 가진 분들이 많다. 물론, 완벽하고 깔끔한 일처리는 프로의 자세이고 멋지다. 중요한 일은 완벽하게 하는 것이 좋다. 그런데 모든 것을 완벽하게 하려면 너무 많은 시간과 노력이 들어 본인뿐 아니라 주위사람들도 힘든 경우가 많다. 완벽을 추구하다보면 아예 시작도 못하는 경우도 많다.\n\n5. 예전에 한 분을 만났다. 마음을 먹고 한주에 한번씩 블로그에 글을 쓰기로 결심했다. 그런데 결국 두번쓰고 포기했다. 글 한번 쓰면서 고치고 고쳤다. 이렇게 올리면 챙피하지 않을까? 누가 부족하다고 하지않을까? 2~3시간 고민하면서 겨우 하나 올렸다. 그러니 힘이 너무 들어 지속가능할 수 없었다. 난 초기 3년간은 그냥 매주 한 두번 퇴근길에 2~3줄씩만 올렸다. 이후에 이렇게 긴 글을 쓰기 시작했다.\n\n6. 내가 #진짜공부리스타트 에서도 밝혔지만 과거 과외로 많은 보통학생의 성적을 올린 비결이 있다. 내 과외 대상 학생들은 대개 머리가 좋거나 집중력이 있는 아이들은 아니었다. 의욕은 있었지만 과외를 몇차례 받고도 별 효과를 보지 못한 녀석들이었다. 당연히, 책을 보니 앞쪽만 새까맣게 되어있었다. 몇개월 열심히 하다가 포기하고 다시 다른 선생님과 처음부터 몇개월 하다 포기하니 책 앞쪽만 새까맣을수 밖에 없었다.\n\n7. 이에 난 다르게 했다. 예를들면, 영어 참고서를 한다면 처음부터 하나하나 다루는게 아니라 각 단원의 주요 부분만 대략 하고 끝까지 가서 2개월만에 끝을 내었다. 흥미롭게도 책을 끝내면 아이들이 변한다. 성취감과 뿌듯함을 느낀다. \"와 내가 이 책을 뗏다\"! 소위 ''공부가 제일 쉬웠어요\" 라고 말하는 분들은 이해못하겠지만, 박약한 의지력의 평범학생이 책의 끝까지 가보는 것은 대단한 일이다. 기적이다. 그 다음부터 아이는 자신감이 충만해진다. 이후 다시 처음부터 한다. 두번째 떼게한다. 정독으로 한번 보는데 6개월 걸리는것을, 나는 동일한 기간동안 3번을 떼게했다. 나의 교습법은 평범학생들의 성적향상에 큰 효과가 있었고 학생들과 학부모들에게 꽤 인기가 있었다.\n\n8. 나는 책을 읽을때 대충대충 읽는다. 대신 일단 끝까지 빠르게 단숨에 읽는다. 그리고 정독할 가치가 있으면 다시 읽는다. 처음부터 정독하면 앞쪽만 읽다가 끝나는 실패를 수십차례 경험한 후 바꾼 독서습관이다. 나처럼 의지박약자는 정독으로는 책 한권도 제대로 읽을수 없다. 이에 \"완료\"를 목표로 한다. 덕분에 많은 책을 읽게 되었다.\n\n9. 보컬코치에게 갔더니 지난번 같이 찍어 인스타에 올렸던 \"주저하는연인\"에 신기하게도 기업 광고가 들어왔단다. 보컬코치에게 배우는 분들은 대부분 나보다 실력이 뛰어나지만 아무도 영상을 같이 올리자고 하지 않았단다. \"난 부족해\" \"완벽해야지\" 라는 생각 때문이었다. 나만 요청해서 불러 올렸다. \"그냥 하는거지\"\n\n10. 당신이 완벽주의자에 독종이라면 상관없다. 그러나 완벽주의자이긴한데 삶이 너무 힘들다면? 또는 나같은 의지박약자라면?\n\n​11. 완벽하지 않아도 대충이라도 일단 끝까지 가보는 \"완료주의자\"를 선택하는것이 어떨까?\n\np.s.댓글은 서로에게 도움이 됩니다~",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7347425977410514944?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7347425977410514944%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
+      "images": [],
+      "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "text",
+      "source": "network",
+      "sequence_id": 18,
+      "sns_platform": "linkedin"
+    },
+    {
+      "code": "7347189596570402816",
+      "username": "Soojung Shin (신수정)",
+      "created_at": "2025-07-05 18:08:24",
+      "time_text": "7개월",
+      "full_text": "이익으로 움직이고 의미로 남게하라--\n\n\n1. 조직을 이끄는 많은 리더들이 이런 의문에 직면한다. \"왜 어떤 사람은 뜻을 좇고, 어떤 사람은 이익에만 반응하는가?\"\n\"도대체 사람은 무엇으로 움직이는가?\"\n\n2. 리더십의 본질은 ‘사람을 움직이는 힘’이다. 하지만 사람은 하나의 유형이 아니다. 의(義)로 움직이는 이도, 철저히 이익만을 추구하는 이도 있으며, 대부분은 그 사이 어딘가에 있다. 이를 잘 설명하는 법칙이 있다. 바로 ‘2:6:2 법칙’이다.\n\n3. 2:6:2 법칙은 이렇게 말한다.\n20%는 ‘의’를 기준으로 살아간다. 손해를 감수하고서라도 옳은 것을 선택한다.\n20%는 행동에 죄책감 없이 자기만을 챙긴다. 공익이나 공동체에는 관심 없다.\n60%는 ‘이익’에 따라 움직인다. 이들은 대세를 따른다. 포상에 반응하고 처벌을 두려워한다.\n\n4. 이 프레임은 고대 법가사상, 마키아벨리즘 등에서도 발견된다. 핵심은 하나다. 대다수의 인간은 선과 악이 아니라 이익으로 움직인다. 이런 인식이 없다면, 조직 운영도 리더십도 공허한 이상주의에 빠지기 쉽다.\n\n5. 그러나 이익으로만 조직을 경영하면 오래가지 못한다. 단기 성과는 나올 수 있으나, 자발성과 헌신은 사라진다. 이익이 사라지면 사람도 떠난다.\n\n6. 이 딜레마를 해결한 경영자가 있다. 마쓰시다 고노스케다. 그는 말한다.\n“이익을 좇는 보통사람도, 의로운 일이 이익이 될 때 스스로 움직인다.”\n“급여로 사람을 데려오고, 사명으로 사람을 남긴다.”\n\n7. 리더는 이익만을 도구로 삼는 것이 아니라, 의로움을 이익과 연결하는 구조를 설계해야 한다.\n보상은 분명하되, 그 보상의 기준은 ‘가치’와 ‘미션' '비전’이어야 한다. 이익을 넘어 정체성과 의미에 호소해야 장기적인 몰입이 가능하다.\n\n8. 현대 조직은 룰(법)과 운영의 묘(술)를 함께 요구한다. 룰 없는 공정은 존재할 수 없고, 유연성 없는 시스템은 사람을 옥죈다. 룰은 지켜야 할 기준이고, 술은 그 법을 사람과 맥락에 따라 ‘살아 있게’ 운영하는 기술이다. 특히 신상필벌은 술의 핵심이다.\n\n9.사람은 결코 완벽하지 않다. 대부분은 선과 악, 사명과 탐욕 사이 어딘가를 떠돈다. 리더는 사람을 바꾸는 존재가 아니다. 사람의 본성을 읽고, 그 본성을 이롭게 연결되도록 설계하는 존재다.\n\n10. 이기심을 인정하되, 사명을 설계하고\n이익을 제공하되, 의미를 부여하며\n룰을 세우되, 술로 운용하라.\n그것이 바로\n현대 리더십의 지혜요, 조직 설계의 본질이다.",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7347189596570402816?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7347189596570402816%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
+      "images": [],
+      "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "text",
+      "source": "network",
+      "sequence_id": 17,
+      "sns_platform": "linkedin"
+    },
+    {
       "code": "7339892875758878720",
       "username": "Soojung Shin (신수정)",
       "created_at": "2025-06-15 14:53:50",
@@ -6655,7 +6884,7 @@ const snsFeedData = {
         "https://media.licdn.com/dms/image/v2/D5622AQEU1Vs_6MVTmw/feedshare-shrink_1280/B56ZdyJq_DG0Ak-/0/1749966828715?e=1772064000&v=beta&t=pPiciT9LZF5hTtTrYH7dAL_zbVJFJV9HtiWpgc5IUos"
       ],
       "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "image",
       "source": "network",
       "sequence_id": 16,
@@ -6665,160 +6894,6 @@ const snsFeedData = {
       ]
     },
     {
-      "index": 134,
-      "code": "7359753187211317248",
-      "username": "Soojung Shin (신수정)",
-      "created_at": "2025-08-09 10:11:37",
-      "time_text": "6개월",
-      "full_text": "어떤 분야의 커리어를 늦게 시작해도 최고가 될수 있는 이유: AI시대, 최고가 되기 위한 학습 룰이 완전히 바뀐다--\n\n1. 근면과 성실, 노력은 오랫동안 성공의 핵심 덕목이었다. 그러나 농경, 산업화 시대를 거쳐 지식 시대로 접어들면서 상황이 달라졌다. 조기 교육, 효율과 번뜩이는 천재성, 탄탄한 학/경력 네트워크가 더 큰 가치를 인정받기 시작한 것이다.\n\n2. 그렇다면 AI 시대는 어떨까?\n장강명 작가의 책을 보면, 바둑계에서 AI가 미친 영향을 흥미롭게 설명하고 있다.\n\n3. 과거 바둑에서는 번뜩이는 감각과 천재성이 강한 기사, 어렸을때부터 별도 그룹으로 특수 훈련받은 이들이 압도적으로 유리했다. 특히, 초반 포석은 더더욱 그러했다고 한다. 그러나 인공지능이 등장하자 상황이 바뀌었다. 천재성이 부족하더라도 끈기 있게 노력하는 이들이 AI를 통해 학습하면서 그 격차를 빠르게 줄여나갔다.\n\n4. 바둑에서의 공부법은 AI가 휩쓴이후 완전히 바뀌었다고 한다. AI 시대의 새로운 공부법은 이렇다.\n1) 혼자서도 학습할 수 있다.\n2) AI의 답과 자신의 답을 끊임없이 비교하며 배운다.\n3) 결국 절대 공부량, 즉 노력의 총량이 승부를 가른다.\nI형과 노력형에게 희소식이다~\n\n5. AI가 가장 큰 혜택을 준 사람들은 늦게 입문했거나, 감각과 천재성이 부족하거나, 여성, 소외된 지역에 있던 사람들, 일류들과 공동 연구를 할 기회가 없었던 사람, 일류 스승이 없이 혼자 공부하던 이들이라 한다. 반면 잃은 사람들은 어렸을때부터 입문한 이들, ‘게으른 천재’들, 일류 스승으로부터 배우는 이들, 특수모임에 있었던 이들이었다. 결국 특수층이 가졌던 정보적·관계적 우위가 무너진 것이다.\n\n6. 이 변화는 바둑에만 국한되지 않는다. AI 시대에는 천재성이 부족해도, 늦게 출발했어도, 돈이 부족해도, 좋은 스승이나 화려한 학력과 경력, 인맥이 부족해도 최고가 될 수 있다. 필요한 것은 두 가지다.\n1) AI의 답과 자신의 답을 끊임없이 비교하며 학습하는 태도\n2) 꾸준함과 성실함\n\n7. 바둑 세계가 먼저온 미래라면(물론, 바둑이라는 특수성을 고려할 필요는 있다) 이 레슨을 통해 자신의 분야에서 어떻게 적용하고 대응해야 할까?\n\np.s. 댓글은 서로에게 도움을 줍니다.",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7359753187211317248?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7359753187211317248%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
-      "images": [],
-      "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "text",
-      "source": "network",
-      "sequence_id": 20,
-      "sns_platform": "linkedin"
-    },
-    {
-      "index": 135,
-      "code": "7382956819146600449",
-      "username": "Soojung Shin (신수정)",
-      "created_at": "2025-10-12 10:54:34",
-      "time_text": "4개월",
-      "full_text": "“왜 훌륭한 리더십은 현실에서 잘 통하지 않는가”: 리더십의 두 얼굴을 통합하라---\n\n1. 『리더십 스케일아웃』에 따르면, 전 세계 리더들을 진단한 결과 효과적인 리더와 비효과적인 리더의 차이는 명확했다.\n- 효과적인 리더는 ‘성과 중심 리더십’과 ‘관계 중심 리더십’을 모두 갖추고 있었다.\n- 비효과적인 리더는 순응, 통제, 방어의 패턴이 강했다.\n- 탁월한 리더일수록 강력한 피플 스킬(커뮤니케이션, 겸손, 경청, 진정성, 솔선수범, 개인적 친근함)과 팀빌딩 능력, 비전 제시력이 뛰어났다.\n- 반면 전문성, 네트워크, 열정, 명석함 등은 리더십의 효과성에 있어 큰 차이를 만들지 못했다.\n\n2. 명석함, 추진력, 결과 중심 사고 등은 리더가 되는 데에는 유리하지만, 조직이 커질수록 오히려 한계가 된다. 조직의 규모가 커질수록 필요한 것은 개인의 똑똑함이나 더 많은 ‘지시’나 ‘통제’가 아니라 사람을 통해 성과를 내는 능력, 높은 목적과 전략적 비전을 제시하는 능력이다.\n\n3. 탁월한 리더를 떠올려보라. 대부분은 단지 성과만 내는 리더가 아니라, 겸손하고 진정성 있으며, 커뮤니케이션이 탁월하고 장기적인 뜻과 비전을 가진 사람을 떠올린다. 리더십 책, 코치, 멘토들은 한결같이 이런 리더십을 강조한다. 성과와 인간미를 동시에 갖춘 리더가 진정한 고성과 리더라는 것이다.\n\n4. 그러나 문제는, 우리 대부분이 접하는 현실의 모습은 책과 다르다는 것이다. 현실 조직 세계에서는 단기 성과만 드라이브하며, 사람들의 말을 듣지 않고 독단적이며, 기존의 직원들을 깔아내리고 자신의 편을 만들고 정치적으로 움직이는 리더가 높은 위치에 있는 경우가 많다. 이 괴리를 어떻게 봐야 할까?\n\n5. 리더십 연구는 주로 조직 전체의 장기적 성공 요인에 초점을 맞춘다. 많은 연구가 사람 중심 리더십이 조직의 지속가능성과 직접적으로 연결된다고 말한다. 반면, 승진의 현실은 단기 성과와 적절한 쇼잉, 정치적 영향력에 좌우되는 경우가 많다. 결국, “조직을 위대하게 만드는 리더”와 “위로 올라가는 리더”는 다를 수 있다.\n\n6. 왜 정치적이고 단기 쇼잉형 리더가 승진하는가? 그들은 보스의 눈에 잘 띄고, 조직 내 핵심 라인에 들어가기 쉬우며, 많은 CEO들 또한 단기 계약직이라 자신과 코드가 맞으며 자신이 당장 필요로 하는 즉각적인 결과를 가져오는 산하 리더들을 선호하기 때문이다. 장기적 성과 지향, 개방과 경청 리더십 시스템이 부재한 곳에서는, 단기 쇼잉형 리더가 빠르게 부상하고 상사 심기관리에 능한 이들이 득세하기도 한다.\n\n7. 이 괴리를 어떻게 받아들여야 하는가? 나는 오랜 기간 다양한 기업에서 리더로 일하며 많은 리더십 이론을 읽고 트레이닝도 받았다. 결론적으로, 두 가지 세계를 모두 이해할 줄 알아야 한다는 것이다.\n- 교과서적인 리더십만으로는 이를 알아봐주는 보스가 없는 한, 고위 리더에 오르기 어렵다.\n- 보스의 관심사, 정치적 역학과 권력 구조를 모르면 세상 물정 모르는 순진한 리더가 된다.\n- 그러나 정치적 기술만으로는 단기적으로는 승진할 수 있지만, 장기적으로는 조직과 자신 모두를 해친다. 단기적 성과를 위해 미래 투자를 외면하거나, 사심 가득한 의사결정을 내리기 때문이다. 실제로 나는 이런 리더들이 떠난 후, 그들이 망가뜨린 조직을 복원하느라 고생한 사례를 보기도 했다.\n- 현명한 리더는 두 세계를 모두 아는 사람이다.\n- 자기 철학을 잃지 않으면서도, 정치적 지형을 잘 파악하고 성과 커뮤니케이션도 잘한다. 권력게임에 거리를 두면서도 현실을 읽는다. 당장 보스가 필요한 것도 채우지만 거기에 매몰되지 않고 사람을 세우며 미래를 보며 성과를 내는 리더가 결국 조직을 살린다.\n- 조직의 문화에 따라 정치적 강도의 스펙트럼은 다양하다. 위와 같은 처신이 어렵다면 건강한 분들일수록 엉뚱한 곳에서 좌절 말고 자신에 맞는 건강한 조직을 선택하라.\n- 현실 리더십 영역은 특히 뜻있고 순수한 분들에게 더 어렵다. 그러나 이런 분들이 더 큰 역할을 해야 세상에 좋은 영향이 확대될 것이다.\n\n8. 성경에서도 이렇게 말하지 않았던가.\n“비둘기처럼 순결하되, 뱀처럼 지혜로워라.”\n\np.s. 댓글은 서로에게 도움됩니다.",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7382956819146600449?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7382956819146600449%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
-      "images": [],
-      "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "text",
-      "source": "network",
-      "sequence_id": 26,
-      "sns_platform": "linkedin"
-    },
-    {
-      "index": 136,
-      "code": "7347189596570402816",
-      "username": "Soojung Shin (신수정)",
-      "created_at": "2025-07-05 18:08:24",
-      "time_text": "7개월",
-      "full_text": "이익으로 움직이고 의미로 남게하라--\n\n\n1. 조직을 이끄는 많은 리더들이 이런 의문에 직면한다. \"왜 어떤 사람은 뜻을 좇고, 어떤 사람은 이익에만 반응하는가?\"\n\"도대체 사람은 무엇으로 움직이는가?\"\n\n2. 리더십의 본질은 ‘사람을 움직이는 힘’이다. 하지만 사람은 하나의 유형이 아니다. 의(義)로 움직이는 이도, 철저히 이익만을 추구하는 이도 있으며, 대부분은 그 사이 어딘가에 있다. 이를 잘 설명하는 법칙이 있다. 바로 ‘2:6:2 법칙’이다.\n\n3. 2:6:2 법칙은 이렇게 말한다.\n20%는 ‘의’를 기준으로 살아간다. 손해를 감수하고서라도 옳은 것을 선택한다.\n20%는 행동에 죄책감 없이 자기만을 챙긴다. 공익이나 공동체에는 관심 없다.\n60%는 ‘이익’에 따라 움직인다. 이들은 대세를 따른다. 포상에 반응하고 처벌을 두려워한다.\n\n4. 이 프레임은 고대 법가사상, 마키아벨리즘 등에서도 발견된다. 핵심은 하나다. 대다수의 인간은 선과 악이 아니라 이익으로 움직인다. 이런 인식이 없다면, 조직 운영도 리더십도 공허한 이상주의에 빠지기 쉽다.\n\n5. 그러나 이익으로만 조직을 경영하면 오래가지 못한다. 단기 성과는 나올 수 있으나, 자발성과 헌신은 사라진다. 이익이 사라지면 사람도 떠난다.\n\n6. 이 딜레마를 해결한 경영자가 있다. 마쓰시다 고노스케다. 그는 말한다.\n“이익을 좇는 보통사람도, 의로운 일이 이익이 될 때 스스로 움직인다.”\n“급여로 사람을 데려오고, 사명으로 사람을 남긴다.”\n\n7. 리더는 이익만을 도구로 삼는 것이 아니라, 의로움을 이익과 연결하는 구조를 설계해야 한다.\n보상은 분명하되, 그 보상의 기준은 ‘가치’와 ‘미션' '비전’이어야 한다. 이익을 넘어 정체성과 의미에 호소해야 장기적인 몰입이 가능하다.\n\n8. 현대 조직은 룰(법)과 운영의 묘(술)를 함께 요구한다. 룰 없는 공정은 존재할 수 없고, 유연성 없는 시스템은 사람을 옥죈다. 룰은 지켜야 할 기준이고, 술은 그 법을 사람과 맥락에 따라 ‘살아 있게’ 운영하는 기술이다. 특히 신상필벌은 술의 핵심이다.\n\n9.사람은 결코 완벽하지 않다. 대부분은 선과 악, 사명과 탐욕 사이 어딘가를 떠돈다. 리더는 사람을 바꾸는 존재가 아니다. 사람의 본성을 읽고, 그 본성을 이롭게 연결되도록 설계하는 존재다.\n\n10. 이기심을 인정하되, 사명을 설계하고\n이익을 제공하되, 의미를 부여하며\n룰을 세우되, 술로 운용하라.\n그것이 바로\n현대 리더십의 지혜요, 조직 설계의 본질이다.",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7347189596570402816?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7347189596570402816%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
-      "images": [],
-      "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "text",
-      "source": "network",
-      "sequence_id": 17,
-      "sns_platform": "linkedin"
-    },
-    {
-      "index": 137,
-      "code": "7387653708110737409",
-      "username": "Soojung Shin (신수정)",
-      "created_at": "2025-10-25 09:58:19",
-      "time_text": "3개월",
-      "full_text": "자신을 발견되게 하라---\n\n1. 얼마전 한 여성 기업인을 만났다. 조금 늦은 나이에 결혼하셨다. 어떻게 상대를 만나셨는지 물으니 \"노력했다\"고 하셨다. 예전에는 영화처럼 언젠가 멋진 누군가 나타나서 말 걸어 주고 사랑에 빠질 것이라 생각했는데 현실은 아님을 깨달았다고 한다. 이에 결혼매칭 업체 등의 문을 두드리는 등 노력하셨고 성사되었다.\n\n2. 싱가폴에서 일을 하다가 일이 안맞아 그만두고 job을 찾는 분이 있었다. 쉽게 찾아지지 않아 고생했는데 가볍게 연결되었던 한 모임에 있었던 어떤 분의 연결로 한국과 싱가폴을 연결하는 좋은 커리어를 찾으셨다.\n\n3. 미국 빅테크에서 일하다가 그만두고 무엇을 할지 고민하다가 책을 쓴 분을 만났다. 어떻게 책을 내었냐고 했더니 책 쓰는 어떤 모임에 들어가서 일인 출판하는 분을 통해 냈다고 한다. 그런데 반응이 생각보다 좋았다. 마침 그 책을 서점에서 픽한 한 유명기업 창업자의 제안으로 그 회사에서 일하게 되었다.\n\n4. 나도 예전에 이런 생각을 많이했다. \"내 자리에서 열심히 일하고 뛰어나면 누군가 알아줄거야\" 주위에서 내게 당신은 실력있으니 영향력있는 사람들과 인맥을 맺어보라 조언할때도 \"내가 잘하면 자연스럽게 연결되지 않겠어?\"라고 말하곤 했다. 물론, 사람 만나는데 시간과 에너지를 쓰기 싫고 내향적이라 굳이 그렇게까지 하고 싶지 않기도 했다. 그런데 그런 일은 발생하지 않았다. 이에 그나마 사교적이 안되어도 할수 있는 것들- 내가 가진 지식을 강의, 발표, 논문, 보고서, 칼럼, sns 등 아낌없이 제공함으로써 사람들과의 접촉면을 넓혔다. 결국, 회사 일과 개인 양쪽 모두 큰 도움을 받았다. 많은 분들이 내게 받은 도움을 기억하여 내가 근무하는 회사를 좋게보고 프로젝트를 맡기고 홍보해주셨다.\n\n5. 세상에는 수 많은 사람이 살고 있다. 그런데 나를 아는 사람이 없는데 누가 나를 발견할수 있겠는가? 결국 누군가 나를 발견하기를 기다리는 것보다 내가 발견되도록 하는 편이 더 낫다.\n\n6. 주위 뛰어난 한 분이 계신다. 그분은 새로운 커리어를 가지고 싶어한다. 나는 링크드인에 자신의 전문성을 보일 포스트를 꾸준히 남길것을 조언했다. 그러자 그 분 말씀이 \"수정님처럼 멋진 글을 못써요\"\n\n7. Sns는 두가지 길이 있다. 특정한 목적없이 재미로 하며 인기를 얻는 것과 인기는 없어도 특정 목적을 가지는 것. 전자의 포스트 클릭수가 훨씬 많지만 거기에 현혹될 필요가 없다. 비즈니스나 커리어를 위해서는 클릭수가 없더라도 자신의 일과 전문성을 나누는 활동을 간략하게 꾸준히 남기면 된다. 단지, 주의깊게 해야한다. 자주 하면 역효과이다. 개인의 잦은 sns활동이나 외부노출, 출간 활동을 좋아하는 동료나 회사는 없다는 것을 기억하라. 그러므로 회사에 도움이 될 필요가 있다. 이렇게 하는 것이 어렵다면 sns보다는 자신과 회사 모두 윈윈할수 있는 공식 강연이나 논문, 커뮤니티 등 또한 활용할수 있다.\n\n8. 인맥에 시간과 에너지를 쓰기 어려운 내향인 들은 더더욱 글과 온라인을 활용하는게 좋다. 비슷한 뜻을 가진 분들과의 모임이나 외부 교육 참여을 통해서 Weak tie를 만드는것도 좋다. 나도 인스파이어라는 weak tie모임을 만들었다.\n\n9. 자신을 (건강하게) 검색되고 발견되게 하라.\n\np.s. 댓글은 서로에게 도움됩니다",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7387653708110737409?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7387653708110737409%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
-      "images": [],
-      "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "text",
-      "source": "network",
-      "sequence_id": 27,
-      "sns_platform": "linkedin"
-    },
-    {
-      "index": 138,
-      "code": "7362299233468624897",
-      "username": "Soojung Shin (신수정)",
-      "created_at": "2025-08-16 10:48:42",
-      "time_text": "6개월",
-      "full_text": "다른 업종으로 옮겼을때, 성공과 실패를 가르는 차이--\n\n1. 새로운 업종의 벤처로 옮겨 6개월 정도 지난 한 사업 책임자가 내게 솔직한 이야기를 털어놓았다. \"제가 이 업을 잘 이해하고 있지 못해 걱정입니다. 제가 엉뚱한 판단을 할까 두렵고, 구성원들도 제가 현장을 모른다고 속으로 평가할것 같습니다\"\n\n2. 사실 나도 다른 업종으로 옮긴 경험이 있고 또 그런 분들을 많이 보았기에 이해가 되었다.\n\n3. 하지만 업을 모른다는 것이 반드시 약점 아니다. 스타벅스의 하워드 슐츠는 주방용품 회사에 다녔고 제프 베조스도 헤지펀드 출신이었다. 업을 모를때 가질수 있는 장점은 다음과 같다.\n1) 보편적 역량 활용: 업종이 달라도 문제해결 방식, 분석력, 리더십 등의 역량은 그대로 활용할수 있다.\n2) 고정관념에서 자유로움: 한 업에 오래 있었던 사람들은 암묵적 규칙과 고정관념에 묶여있는 경우가 많다. 오히려 업을 모르는 리더는 기존 업에서 안된다고 여겼던 것들을 돌파해낼수 있다.\n3) 진짜 벤치마킹 가능: 다른 업에서의 효과적이었던 방식을 접목할수 있다. 진짜 벤치마킹은 다른 업종에서 효과적이었던 방식을 접목하는 것이다.\n4) 조직내 새로운 자극: 다른 시각을 가진 사람들이 들어오면 조직 내 긴장감과 변화가 촉발된다.\n\n4. 이에 나는 그에게 \"걱정하지 않아도 된다. 오히려 새로운 조직에도 큰 도움이 될것이다. CEO도 그 기대감으로 당신을 채용했을것이다\"라고 말했다. 그제서야 그는 용기를 얻었다고 말한다.\n\n5. 다만, 새로운 업종으로 옮겨 실패하는 경우도 자주 본다. 특히 임원이나 CEO등 리더일수록 그렇다. 그들에게는 몇가지 공통적인 실수가 있다.\n1) 이전 성공 방식을 억지로 밀어붙인다: 업이 달라지면 콘텍스트가 달라진다. 그러므로 단순 적용이 아니라 파일롯과 검증이 필요하다. 그러나 이를 무시하고 자신이 과거에 이루었던 성공방정식을 강행하면 실패확률이 높아진다.\n2) 기존 문화와 직원들을 무시한다: 혁신 기업 출신의 리더가 전통산업으로 오면 흔히 발생한다. 기존 문화와 임직원들을 수구적이고 능력 부족이라고 폄하한다. 어떤 문화든 발생 이유가 있다. 이를 무시하고 폄하하면 구성원들의 지지를 잃는다. 겉으로는 따르는듯 보이지만 열망을 일으키지 못하고 결국 혁신도 실패한다. 물론, 기존의 구성원들도 다른곳에서 이직한 분들을 열린 마음으로 받아 줄 필요가 있다.\n3) 모른다는 것을 인정하지 않는다: 자신이 모른다면 솔직히 인정하고 기존 구성원에게 겸허하게 묻는 것이 가장 빠른 학습법이다. 그러나 잘난 척, 아는 척하며 화를 내거나 비상식적 지시를 반복하면 신뢰를 잃는다.\n\n6.그러므로 5에서 말한 세가지 함정만 피한다면 새로운 업종으로의 전환은 오히려 해당 회사도 개인도 성공하는 윈윈구조를 만들어낼수 있다. 개인에게는 특히 더욱 확장된 역할과 커리어 기회들을 제공해준다. 즉, dot들이 많아져 연결과 융합의 기회가 증가하고 이는 향후 선택의 기회가 더 많아진다는 것을 의미한다.\n\np.s. 댓글은 서로에게 도움이 됩니다.",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7362299233468624897?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7362299233468624897%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
-      "images": [],
-      "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "text",
-      "source": "network",
-      "sequence_id": 22,
-      "sns_platform": "linkedin"
-    },
-    {
-      "index": 139,
-      "code": "7359809497730592768",
-      "username": "Soojung Shin (신수정)",
-      "created_at": "2025-08-09 13:55:22",
-      "time_text": "6개월",
-      "full_text": "강의에 초대받으면 청중들에게 페북, 링크드인 등을 하는지? Sns에서 저를 팔로우 하는지? 물어본다. 흥미롭게도 폐쇄적인 문화의 기업일수록, 국내기업일수록, 공공분야 일수록, 나이가 든 분들 일수록 안하시는 경우가 많다. 이 분들에게 변화나 새로운 이야기를 하는 것은 힘들다. 대개 글로벌기업이나 유망한 스타트업, 테크기업의 30~40대와 깨어있는 50대는 링크드인을 잘 활용한다.\n\n글을 쓰지 않고 팔로우만 잘해도 세상이 어떻게 돌아가는지, 요즘 트렌드가 무엇인지, AI가 어떻게 적용 확산되는지, 다른 업종의 사람들은 무슨 생각을 하는지 알수 있다. 이에 깨달음도, 확신도, 자극도, 긴장도 된다.\n\n그저 자신의 회사와 자신의 일에만 갇혀 거기서 맴돌다가는 우물안 개구리가 되기 쉽다. 얼마전에도 한 회사만 다녔고 외부 교류도 거의 없는데, 회사 사업이 축소되어 향후 커리어를 고민하는 40대를 만났다. weak tie를 만들라고 했다. 공부하는 모임 안에 들어가는 것도 좋다. 자신의 회사외에 사람들과 on 또는 off로 연결되어 있어야 자극도 커리어 기회도 생긴다.\n\nWeak tie의 힘을 경험하라고 나는 #일의격, #통찰의시간, #거인의리더십, #커넥팅 등 책에서 많이 썼고 그 덕분에 큰 도움을 얻었다는 후기가 넘친다.\n\np.s. 댓글은 서로에게 도움이 됩니다.",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7359809497730592768?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7359809497730592768%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
-      "images": [],
-      "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "text",
-      "source": "network",
-      "sequence_id": 21,
-      "sns_platform": "linkedin"
-    },
-    {
-      "index": 140,
-      "code": "7349611659310624770",
-      "username": "Soojung Shin (신수정)",
-      "created_at": "2025-07-12 10:32:48",
-      "time_text": "7개월",
-      "full_text": "배움을 아웃풋하고 레버리지하라--\n\n1. 한 분을 만났다. 해당 분야에 전문성과 풍부한 경험을 가진 분이고 열심히 배우는 분이었다. 나는 이런 말을 했다. \"파트라도 강의를 하시면서 가르쳐보시면 어떨까요? 글이나 책도 쓰실수 있고요. 새로운 비즈니스도 실험할수도 있고요. 그러면 더 확장될듯 하네요\"라고 했더니 그 분 왈. \"어휴 저보다 더 지식과 경험이 많은 분들이 있는데 제가 어찌 감히요. 저는 아직 더 배워야 합니다\"\n\n2. 세계적인 자기계발 구루로 토니 로빈슨이 있다. 그는 무려 2000만부 베스트셀러 작가이며 미국대통령 4명의 멘탈관리 자문을 했다. 그의 인당 5천달러 일주일 세미나에는 2500명이 참여한다. 그는 자가용 비행기를 타고 다니며 강연을 한다.\n\n3. 어느날 그는 한 기법에 대해 알게된다. 이에 그 방법을 배우고 싶었다. 이에 한 강좌에 잠시 참여했다. 이후 그는 강사에게 말했다. \"와! 효과적인 툴이군요. 나는 내 고객들에게 당장 적용할 수 있겠어요\" 그러자 강사가 말한다. \"자격증을 따야 가르칠수 있습니다\"\n\n4. 토니 로빈슨은 말한다. \"자격증이 무슨 필요가 있습니까? 당장 도움을 줄수 있는데요. 내가 이 기법을 적용해서 사람들을 어떻게 변화시키는지 한번 와서 보시죠\"\n\n5. 그는 짧은 교육을 받았지만 자신의 프로그램에 그 기법을 반영하여 훨씬 파워풀한 영향력을 발휘했다. 그는 그 기법을 더 배우거나 자격증을 따는데 시간을 보내지 않았다. 짧은 배움이지만 자신의 것안에 녹여내어 몇 배로 레버리지 했다.\n\n6. 제프베조스 또한 아마존을 창업하기 전, 일주일간 '서점 내는법' 세미나에 참여했다. 같은 수강생들은 대형 헤지펀드 경영자 출신인 그가 그저 평범한 서점주인을 하려 하는 줄 알았다. 그러나 그는 일주일간 세미나로 오프서점의 구조와 프로세스를 파악했고 그 지식을 수백만배 레버리지 했다.\n\n7. 당연히 어떤 전문 분야는 일을 하기 위해 과정을 거치고 검증된 자격증을 취득할 필요가 있다. 그러나 대부분의 영역에서는 그냥 행동하면 된다.\n\n8. 물론, 배움 자체에 즐거움을 누리는 것이 목적이라면 괜찮다. 아직 젊은 나이거나 퇴임한 경우라면 이것저것 배우기만 해도 상관없을수 있다. 그러나 시간이 한정된 30~50대 직장인이라면 조금 더 초점을 가지고 효과적으로 배우는 것을 고려하는 게 좋다.\n\n9. 나는 초점-아웃풋-레버리지 3단계를 제시하고 싶다.\n1단계. '초점'을 가지고 배운다.\n예를들어, 업무성과에 즉각적 효과를 내겠다든지 협상을 잘하겠다든지 프레젠테션 실력을 늘이겠다든지 마케팅을 잘하겠다든지 초점을 맞추고 이에 align하여 배운다.\n\n2단계. 배우면서 '아웃풋'한다.\n지적만족에서 그치지 말고 글로 정리하거나 적용하여 방법론을 만들고 성과 창출을 하는 등 아웃풋을 한다.\n\n3단계. 배움을 더 크게 '레버리지' 한다. 즉, 자신의 무기를 더 차별화하는데 빠르게 활용한다\n토미 로빈슨이나 제프 베조스 처럼 자신이 이미 잘 하는 것에 융합하고 적용하여 자신의 무기나 비즈니스를 더욱 차별화하고 확장하는데 빠르게 반영한다.\n\n10. 새로운 것을 배울 뿐 아니라 그 배움을 융합하여 자신의 무기를 더 강하게 한다. 우리 모두 몇배, 몇백배로 레버리지 하여 자신의 가치를 확장해보자.\n\np.s. 댓글은 서로에게 도움됩니다~",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7349611659310624770?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7349611659310624770%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
-      "images": [],
-      "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "text",
-      "source": "network",
-      "sequence_id": 19,
-      "sns_platform": "linkedin"
-    },
-    {
-      "index": 141,
-      "code": "7314447129182158848",
-      "username": "Soojung Shin (신수정)",
-      "created_at": "2025-04-06 09:41:31",
-      "time_text": "10개월",
-      "full_text": "왜 내게는 돈이 안되는 일만 오거나 힘든 프로젝트만 맡게 되고 나를 이용하려는 인간들만 몰릴까? ---\n\n1. 작년 한 분이 링크드인 연락을 통해 찾아왔다. 영어를 잘하고 해외에 근거지를 두며 한국에 왔다갔다하며 코칭을 하고 있었다.\n\n2. 매우 젊고 똑똑하며 밝고 사람들을 돕고자하는 뜻이 매우 훌륭했다. 와 인재다라는 느낌이 들었다. 그런데 문제는? 너무도 적은 수입으로 지내고 있었다.\n\n3. 내가 어떻게 수입을 얻는지? 물어보니 코칭 프로그램들을 바쁘게 함에도 불구하고 너무 긴 기간에 너무 낮은 pricing을 책정 했다. 돈이 벌릴수 있는 구조가 아니었다.\n\n4. 내가 물었다. 이렇게 생활비도 안나오는 구조로 일하고 싶은가? 그렇지는 않다고 했다. 자신도 돈을 많이 벌고 이를 통해 사람들을 돕고 싶은데 이상하게 돈이 안 따라온다고 했다.\n\n5. 이에 수익구조를 바꾸도록 도와주었고 코칭 일은 변동성이 크니 가능한 상시적인 job과 같이 포트폴리오를 만들라고 했다. 얼마전 다시 찾아와서 덕분에 월천을 넘게되었다고 한다. 오랜만에 돈걱정을 하지 않아도 되었다고 했다.\n\n6. 그런데 나는 앞으로도 그녀가 더 큰 돈을 벌수 있을지 여전히 의구심이 있었다😄 왜일까? 그녀에게 돈이 따라오지 않는 이유를 알것 같아서였다. 그녀가 돈버는 방법을 잘 이해하고 공부하지 않아서가 근본적인 이슈가 아니었다. 기본적으로 그녀는 어떤 이유에서인지 돈에 대한 desire가 강하지 않았다.\n\n7. 이러는 분들이 많다.\n\"왜 내게는 힘든 프로젝트만 올까?\"\n\"왜 내게는 나를 이용해먹으려는 사람들만 올까?\"\n\"왜 나는 열심히 하는데 돈이 안되는 일만 올까?\"\n\"왜 내가 만나는 상사나 직원들은 한결같이 문제일까?\"\n\n나의 관찰에 의하면 물론 운이 나쁜 경우도 있지만 그것보다는 \" 자신이 그것을 부르는\" 경우가 더 많다.\n\n8. 완벽주의 성향을 가진 사람은 어떤 프로젝트를 해도 힘들게 하는 경향이 있다. 이에 쉬운 프로젝트 조차도 힘들게 한다. 귀가 얇고 무른 분에게는 이용하려는 사람들이 몰린다. 나는 단호한 분 주위에 이런 사람들을 본 적이 거의 없다. 돈에 큰 관심이 없는 분들은 돈이 안되는 일들을 쉽게 받아들이니 그것들이 주로 오게 되는 경향이 있다. 물론, 사이코 상사나 문제 직원도 일부 있다. 그런데 하필이면 자기에게만 항상 몰려 온다면 이상하지 않는가.\n\n9. 돈을 멀리하거나 돈을 나쁜것으로 보거나 돈을 피하면 돈이 따라오기 어렵다.\n\n10. 나도 한동안 그랬다. 상당부분은 부모님과 종교의 영향이었다. 부모님은 저축외에 투자는 불로소득이나 큰 위험으로 여기셨다. 어렸을때부터 돈을 추구하고 돈을 많이 버는것을 도덕적으로 큰 문제가 있는 것처럼 말씀하셨다. 청년시절 내가 깊이 몰두했던 기독교 단체에서도 이 세상의 재물은 다 무용한 것이니 돈을 좇지마라고 했다. 그런 인식체계가 만들어지니 돈이 불어날수가 없었다. 무언가 관심이 없고 회피하는데 그게 따라오기는 쉽지않다. 40대 중반이 되서야 이것을 깨달았고 이후는 돈이 불어나기 시작했다.\n\n11. 돈은 선도 악도 아니다. 중립적이다. 많이 벌고 또 잘 쓰면 된다. 불법이나 속임으로 돈을 벌고 탐욕스러움은 피해야하지만 건강하게 벌고 확대하는 것도 필요하다. 정말 뜻이 있어 모든것을 나눠주고 자신은 만족한다면 괜찮겠지만 특별한 철학도 없으면서 돈을 회피하고 나쁜 것으로 보면 삶이 고단해질수 밖에 없다.\n\n\n12. 무언가 자신에게만 어떤 상황이 벌어지거나 벌어지지 않는다면 운이 나쁜것이나 운이 좋은 것만이 아닐수 있다. 혹시 나 자신이 그것을 당기거나 밀어내는 요소가 있는것은 아닌지 고찰해볼 필요가 있다.",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7314447129182158848?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7314447129182158848%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
-      "images": [],
-      "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "text",
-      "source": "network",
-      "sequence_id": 11,
-      "sns_platform": "linkedin"
-    },
-    {
-      "index": 142,
-      "code": "7306535658552995842",
-      "username": "Soojung Shin (신수정)",
-      "created_at": "2025-03-15 13:44:09",
-      "time_text": "11개월",
-      "full_text": "왜 우리 조직과 구성원들은 도전하지 않을까? 조직문화를 형성하는 진짜 요소는?--\n\n1. 경영자들을 자문하거나 강연 준비를 하는 경우 가끔 듣는 이야기 중 하나는 \" 우리 직원들은 왜 적극적이지 않을까요? 도전하지 않을까요? 변화하지 않을까요? 우리 회사의 문화는 왜 보수적이고 도전이 약할까요?\" 이다.\n\n2. 그러면 도대체 어떤 조직은 관료적으로 움직이고 어떤 조직은 도전적으로 움직일까? 그 이유는 무엇일까?\n\n3. 나는 대개 이 경우 다음을 이야기한다. \"사람들이 어떤 행동을 하는 것은 다 이유가 있기 때문입니다\"\n\n4. 대개 오해하는 것은 우리 조직에는 특별히 똑똑하지 않거나 혁신적이지 않은 사람들이 모여 있지 않아서 문제라고 생각한다.당연히 이것도 영향이 있다. 이에 채용도 신중하게 할 필요가 있다.\n\n5. 그러나 더 큰 요소가 있다. 왜 혁신을 하지 않고 보수적일까?\n만일 회사 생활을 통해 오랜기간 아래의 경험을 했다면 당신이 합리적인 사람이라면 어떤 판단을 할까?\n\" 혁신은 잠깐 하고 끝나더라\"\n\"결국 승진은 상사와의 관계로 하더라\"\n\" 결국 튀는 사람은 정 맞더라\"\n\" 고객을 위해 내 재량으로 문제 처리를 했더니 절차를 안지켰다고 감사받더라\"\n\" 다른 의견을 냈더니 자신의 편이 아니라고 내치더라\"\n\"누군가 아이디어를 냈더니 상사가 시키는 거나 제대로 하라고 면박을 주더라\"\n\" 자기 의견 확실히 제시하던 사람들이 오히려 손해보더라\"\n\"경영층이 바뀌면 혁신하려던 분들은 옷을 벗고 부서가 날라가는데 오히려 시키는 것만 한 사람들은 살아남더라 \"\n\n6. 구성원들의 생존태도를 결정짓는 또 하나의 중요한 요소는 \"승진\"이다. 누가 승진하는지 구성원들은 다 관찰한다. 말은 혁신을 외치지만 실제로는 인사권자와 같은 취향의 사람, 관계적으로 가까운 사람, 뒤에서 라인만드는데 인사권자에게는 잘보이는 사람, 직원들의 신망은 없는데 상사 앞에서만 잘 하는 사람, 광파는 사람, 자료 수거 취합하는 사람 또는 연공서열로 된다면? 오히려 묵묵히 자기 일을 하거나 변화하고 혁신하려 사람은 이런저런 핑게로 내쳐진다면? 전장터에서 피흘리며 싸우는 장군들은 하나의 실수로도 내쳐지고, 충심으로 회사를 위해 말하는 사람은 귀양가는데 실제 리스크를 지지 않는 사람들이 더 보상받는 다면?\n\n7. 그러므로 원하는 조직문화가 정착되지 못한 이유는 구성원들이 불합리해서가 아님을 이해해야 한다. 오히려 반대다. 구성원들은 다 합리적인 선택을 한 것이다. 도전하고 의견을 제시하며 성장하고 실력있는 사람들이 승진하고 인정받는 곳에 왔다면 대부분의 사람들은 어떻게 행동할까?\n\n8. 그러면 어떻게 변화를 시킬까? 위의 논리를 이해한다면 단초를 찾을수 있다. 결국 구성원들이 우리 회사 또는 우리 조직의 생존과 성공의 공식이 다른 것임을 일관성있게 인식 시킴에 있다.",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7306535658552995842?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7306535658552995842%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
-      "images": [],
-      "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "text",
-      "source": "network",
-      "sequence_id": 7,
-      "sns_platform": "linkedin"
-    },
-    {
-      "index": 143,
       "code": "7337290953541505024",
       "username": "Soojung Shin (신수정)",
       "created_at": "2025-06-08 10:34:43",
@@ -6828,14 +6903,13 @@ const snsFeedData = {
       "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
       "images": [],
       "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "text",
       "source": "network",
       "sequence_id": 15,
       "sns_platform": "linkedin"
     },
     {
-      "index": 144,
       "code": "7332298575994920960",
       "username": "Soojung Shin (신수정)",
       "created_at": "2025-05-25 15:56:48",
@@ -6845,65 +6919,13 @@ const snsFeedData = {
       "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
       "images": [],
       "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "text",
       "source": "network",
       "sequence_id": 14,
       "sns_platform": "linkedin"
     },
     {
-      "index": 145,
-      "code": "7309007350219055104",
-      "username": "Soojung Shin (신수정)",
-      "created_at": "2025-03-22 09:25:47",
-      "time_text": "11개월",
-      "full_text": "한 시니어의 커리어와 인생이 바뀌어진 계기: 기회가 오면 잘 몰라도 행동한다-\n\n1. 시니어 창업아이템 전문가로 활동하시는 한 분을 만났다. 대기업 다니다가 자회사 임원으로 가서 49세에 나오게 되었는데 지금 10년이 되었다.\n\n2. 그분은 원래 기업에서 회사 매장 입지를 물색하고 확보하는 일을 하셨단다. 그런데 막상 나오고 나니 그 전문성으로 할수 있는 일이 별로 없었단다.\n\n3. 한 교육회사와 연결되어 자신의 전문성이 있는 매장 물색관련 교육을 개설했지만 잘 팔리지 않았다. 고민중에 있는데 그 교육회사 대표가 그에게 어떤 강의 요청이 있는데 강사가 마땅히 없는데 한번 해보지 않겠냐고 했다. 무슨 강의냐고 물었더니 \"시니어를 위한 창업 아이템 선정 강의\". 라는 것이다. 아니 자신도 지금 창업 아이템이 확보 안되어 고민하는데 무슨 강의냐고 하지 않으려했지만 그래도 강의는 많이 해봤고 한달의 기간이 남아서 해보자라고 결심했단다.\n\n4.어짜피 초보자를 가르치는것이니 조금만 더 알면 된다는 생각에 책을 사서 공부하고 다른 전문가의 강의를 신청하여 들은후 강의를 했다고 한다. 진땀을 흘리며 강의를 했는데 의외로 반응이 좋아 그 대표가 고정 강의를 의뢰.\n\n5. 사실 시간당 10~30만원 강의라 당장 돈은 안되었지만 그는 이 강의의 전문가가 되기 위해 본인이 직접 지식창업, 유튜브, 온라인상거래등 창업 아이템으로 다양한 시도를 해본다. 사실 자신은 여러 아이템에서 별 성공은 하지 못했지만 다양한 시도를 통해 쌓은 노하우가 있어 강의가 점점 업그레이드. 그 강의를 들은 사람들이 오히려 성공하는 사례가 많이 나왔고 점차 큰 규모의 컨설팅으로 연결되었다고 한다. 이에 10년간 꾸준히 수익을 창출하면서 즐겁게 일하고 있다.\n\n6. 내게 말한다. \"그때 잘 모르지만 해보겠다고 한게 인생을 바꿨습니다. 제가 잘 아는것만 하려했으면 실패했을겁니다. 잘 몰라도 기회가 오면 행동해야 함을 배웠습니다\"\n\n7. 레슨은 다음과 같다.\n1) 기회가 오면 잘 모른다고 거절하지 않고 도전해본다.\n2) 준비되어 무엇을 하려하는게 아니라 해가면서 준비한다.\n3) 기존에 아는 것으로 시장을 억지로 만들려 하기 보다 시장이 필요로 하는것을 배워서 한다.\n\n8. 때로 충분한 지식을 가지고 있지 않은 사항이나 까다로운 문제 해결에 대한 요청이 올때 옵션이 있다.\n옵션1. 과거의 자료를 재사용하기 어렵고 피곤하다. 실패하면 이름에 금이 간다. 그냥 거절하는게 편하다.\n옵션2. 이번 기회에 조금 고생스럽지만 한번 만들어보면 나의 또 하나의 포트폴리오가 되겠다.\n\n옵션 1만 선택해서는 성장이 멈춘다. 2를 선택하면 신경쓰이고 위험이 따르지만 성장하게 되며 생각지 못한 새로운 기회가 펼쳐질수 있다. 물론 준비를 열심히 해야한다.\n\n9. 모든것을 알아야 무언가 할수 있다는 생각을 버릴 필요가 있다. 힘들지만 시장이 원하는것을 할때, 기회가 올때, 또 하나의 포트폴리오를 만들수 있고 그것이 어떤 가능성을 만들지 모른다.",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7309007350219055104?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7309007350219055104%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
-      "images": [],
-      "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "text",
-      "source": "network",
-      "sequence_id": 8,
-      "sns_platform": "linkedin"
-    },
-    {
-      "index": 146,
-      "code": "7291251132339736576",
-      "username": "Soojung Shin (신수정)",
-      "created_at": "2025-02-01 09:28:54",
-      "time_text": "1년",
-      "full_text": "젊고 유능한 임원들의 퇴임, 그 공통된 이유는?---\n\n1. 최근, 3명의 대기업 임원들이 찾아왔다. 다들 40대 젊은 나이인데 한 분은 회사를 스스로 옮겼고 나머지 두분은 회사에서 퇴임당했다.\n\n2.다들 젊고 똑똑했다. 이야기만 조금 나눠봐도 능력 있고 일에 헌신했으며 성과도 괜찮았음을 알수 있었다. 업종이 완전히 다름에도 불구하고 흥미롭게도 공통점이 있었는데 1)다들 젊은 나이에 탁월함을 인정받아 그 회사에서 오래 있을것으로 생각했는데 2) 상사나 CEO가 바뀐후 갑자기 어려워졌다는 것이다.\n\n3. 다들 일잘러로 인정받던 이들이었는데 상사가 바뀌면서 갑자기 일못러로 바뀐다. 그들의 능력이 갑자기 떨어졌을리가 없는데 이상하게 갑자기 핵심 대열에서 멀어지게 되었다. 이에 다들 억울해할수 밖에 없다.\n\n4. 대개 이런 과정을 거친다.\n과거의 보스와 다른 새로운 컬러의 CEO나 보스가 온다. 새로운 보스는 여러 이유로 기존의 일잘러를 삐딱하게 본다. 기존 보스와 가까왔을수록 더 그러하다. 일잘러는 기존처럼 열심히 일하고 제대로된 보고를 하지만 새로운 보스는 집중하지 않는다. 좋은 의견이고 괜찮은 성과임에도 불구하고 별로 인정하거나 칭찬하지 않는다. 오히려 별로인 사람을 칭찬한다. 조금이라도 불편한 이야기라도 하면 오해한다. 그러면 주위 동료들이나 경쟁자들은 금방 알아챈다. 새로운 보스가 저 사람을 별로 좋아하지 않는구나. 이러면 급속도로 그 사람을 가까이 하지 않게된다. 험담까지 하는 사람이 나타난다. 그 사람은 점점 힘이 빠지며 고립된다. 그 사람의 조직은 성과와 무관하게 이러 저러한 평가척도에 의해 좋지 않은 평가를 받게되고 결국 그 사람은 일못러가 된다. 그러면 그 보스는 자기의 원래 판단이 맞았다고 생각한다. \"저 녀석이 인재였다고? 아니잖아. 내말이 맞잖아\"\n\n5. 그러므로 전환 상황일때 리더들의 처신은 매우 어렵다. 특히 이전 보스와 가깝다고 여겨질수록 그러하다. 새로운 보스가 나빠서 때문이 아니다. 새로운 보스와 인간적인 신뢰가 구축되지 않은 상태이기 때문이다.\n\n6. \"상사는 일잘하는 사람에겐 일을주고 인간적으로 좋아하는 사람은 승진을 준다\"는 말이 있다. 나도 좋아하는 말은 아닌데 현실에서는 맞을 때가 있다.\n\n7. 물론, 이런 상황에도 유연하게 처신하는 사람들이 있다. 이런 이들을 좋은말로는 조직생활 잘한다고 한다. 주관과 자부심이 강한 사람일수록 견디기 어렵다. 그러므로 일잘한다고 오래가는 것은 아니다. 조직마다 정치적 민감도가 다른데 그 민감도가 큰 조직일수록 더 그러하다.\n\n8. 방법은? 자존심을 낮추고 테스트기간이라 여기며 새로운 분의 성향과 지향하는 바에 맞추고 신뢰를 쌓으려고 노력하는 수 밖에 다른 방법이 없다. 또한 신뢰가 이미 쌓여진 가신들과 가까이 한다. 그렇게까지 하고 싶지 않다면 위의 한 임원이 했던것 처럼 대안을 찾을 수 밖에 없다.\n\n9. 내가 #일의격 이나 #커넥팅 에서 인용했지만 크롬볼츠 교수의 말대로 우리의 커리어는 계획대로 되지않는다. 계획하지도 원치도 않았을지라도 '우연히 일어난 어떤 일'이나 '우연히 만난 어떤 사람'이 커리어의 변화를 만들곤 한다. 그러나 실망할 필요가 없는 것은 그러한 변화가 어떤 결말을 가져올지 모른다는 것이다.\n\n10. 얼마전, 내 리더십과정 #인스파이어(3월 재개 예정) 멤버인 두분의 성공한 창업자들이 자문을 구할것이 있다고 해서 만났다. 한 분은 상장했고 또 한분은 조만간 상장한다. 둘다 과거에 직장생활을 했기에 내가 물었다. \"왜 나오셨었나요?\" 난 대단한 뜻이 있어서 창업했다는 답을 기대했건만 둘다 이런말을 한다. \"나올 생각이 없었어요. 저희도 회사 다닐때 임원되고 싶었어요. 열심히 일하고 성과도 냈는데도 상사가 인정하지 않으니 될 가능성이 없어보이더라고요. 그래서 어쩔수 없이 나와서 창업한거예요\" 인생은 새옹지마임을 믿을 필요가 있다.\n\np.s. 댓글은 독자들에게 도움을 줍니다.",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7291251132339736576?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7291251132339736576%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
-      "images": [],
-      "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "text",
-      "source": "network",
-      "sequence_id": 5,
-      "sns_platform": "linkedin"
-    },
-    {
-      "index": 147,
-      "code": "7311655106758811648",
-      "username": "Soojung Shin (신수정)",
-      "created_at": "2025-03-29 16:47:01",
-      "time_text": "11개월",
-      "full_text": "루이비통코리아 리더들 강연을 했다. 내 책 \"거인의리더십\"으로 공부를 하고 있었다. 강연을 하면서 강의료로 제품을 사겠다고 했다. 그러면서 한번 하는 강의비로는 사기 어렵다고 joke를 했다. 그래서 그런지 몰라도 한번 더 초대되었다.\n\n이에 최근 결혼한 아들에게 연락해서 며느리에게 빽하나 쏘겠다고 했다(참고로 나는 다이소 팬이다). 고르라고 해놓고 기다리는데 시간이 많이 걸린다. 가 보니 몇개를 두고 고민중. 내가 보며 \"맨 오른쪽게 제일 예쁜것 같은데.\" 한 마디\n했더니 아들 녀석이 \"그럼 그거로 사주세요\"한다.\n\n가격을 물어보니 다른 것들의 두 배 이상.\n강의 더 해야겠다~\n\n난 강의를 하면 가능한 그 회사에 환원한다. 제품을 사든 주식을 사든.\n주식을 사는 이유는 구성원들 교육에 관심이 있는 회사가 잘 될 가능성이 높기 때문이다.\n\n다음주 폭스바겐 코리아 강의가 있는데 큰일났다. 거기에 람보르기니, 벤틀리도 있다던데.",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7311655106758811648?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7311655106758811648%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
-      "images": [],
-      "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "text",
-      "source": "network",
-      "sequence_id": 9,
-      "sns_platform": "linkedin"
-    },
-    {
-      "index": 148,
       "code": "7331989875283423232",
       "username": "Soojung Shin (신수정)",
       "created_at": "2025-05-24 19:30:08",
@@ -6915,7 +6937,7 @@ const snsFeedData = {
         "https://media.licdn.com/dms/image/v2/D5622AQHMcoi0n28lVQ/feedshare-shrink_480/B56ZcB18BrHgAY-/0/1748082606832?e=1772064000&v=beta&t=g6RUeeNLRlFB13t_KCn1xcV6hqEqJ5GsNENbftoe3-I"
       ],
       "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "image",
       "source": "network",
       "sequence_id": 13,
@@ -6925,24 +6947,6 @@ const snsFeedData = {
       ]
     },
     {
-      "index": 149,
-      "code": "7293825802125656064",
-      "username": "Soojung Shin (신수정)",
-      "created_at": "2025-02-08 11:59:43",
-      "time_text": "1년",
-      "full_text": "변화가 되지않는다면 환경을 바꿔보라--\n\n1. 지난주 한 분을 만났는데 재미있는 이야기를 하신다. \"제 집사람이 가끔 밤에 드라이브하고 싶다고 했는데 저는 들어주지 않거나 짜증을 냈습니다. 그런데 지금은 같이 즐겁게 나갑니다\"\n\n2. 왜 갑자기 바뀌었을까? 그분이 갑자기 애처가가 된것일까? 그것이 아니었다. 그분은 원래 집사람과 드라이브하는 것을 좋아했단다.\n\n3. \"집을 이사하고 바뀌었어요. 그전 집은 주차장이 부족해서 주차할곳이 없었어요. 돌고 돌아 겨우 겨우 주차합니다. 그런데 집사람이 드라이브하자고 하면 갔다와서 주차공간을 다시 확보할수 있을까? 그 걱정이 더 되는겁니다. 그래서 짜증을 낸것입니다. 그런데요. 이번에 이사를 했는데 이 아파트는 주차공간이 널널해요. 그러니 마음껏 나갈수 있게된거죠. 저도 몰랐는데 깨달았어요\"\n\n4. 아파트 주차장 하나 때문에 관계가 완전히 달라진것이다. 그러면서 말한다. \"변화를 하고 싶은데 변화가 안되면 공간을 바꾸라는 말이 맞는듯 합니다. 저는 동일한데 공간과 환경이 저를 바꾸더라고요 \"\n\n5. 예전 동물농장이란 프로를 보았는데 한 강아지가 나왔다. 불행히도 그 강아지를 아껴주던 주인이 죽었다. 그러자 그 이후 그 강아지는 그 주인의 항상 앉아있던 담요위에서만 웅크리고 앉아 식음을 전폐하고 있었다.\n\n6. 그 주인의 부인이 아무리 잘해주어도 소용없었다. 벨소리가 나면 잠시 좇아나갔다가도 다시 그 자리로 돌아왔다. 굶어죽기 일보 직전이었다. 이때 전문가가 나타나 도움을 주어 해결했다. 어떻게 해결했을까?\n\n7. 그 전문가는 과감히 그 담요를 불태웠다. 그리고 새로운 집을 꾸며주었다. 그러자 강아지는 새로운 환경에 적응하기 시작했다\n\n8. 스스로 잘 안바뀌면 자책하지 말고 환경을 바꾸어보라. 담요를 불태우든 훌쩍 휴가를 떠나든 이사를 해보든 사무실 위치를 바뀌보든 인테리어를 바꿔보든 옷을 바꾸든 바꾸어 보시라.",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7293825802125656064?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7293825802125656064%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
-      "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
-      "images": [],
-      "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-      "crawled_at": "2026-02-06T18:38:36.685941",
-      "content_type": "text",
-      "source": "network",
-      "sequence_id": 6,
-      "sns_platform": "linkedin"
-    },
-    {
-      "index": 150,
       "code": "7314662801090781184",
       "username": "Soojung Shin (신수정)",
       "created_at": "2025-04-06 23:58:31",
@@ -6952,31 +6956,130 @@ const snsFeedData = {
       "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
       "images": [],
       "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "text",
       "source": "network",
       "sequence_id": 12,
       "sns_platform": "linkedin"
     },
     {
-      "index": 151,
-      "code": "7253208054928744448",
+      "code": "7314447129182158848",
       "username": "Soojung Shin (신수정)",
-      "created_at": "2024-10-19 09:59:18",
-      "time_text": "1년",
-      "full_text": "쓸데 없어 보이는 것의 힘---\n\n1.남동생 부부를 만났다. 둘다 치과의사이고 각각 개원을 했다. 개원한 위치도 비슷하다. 헌데 흥미로운 현상은 남동생 의원이 더 잘된다는 것이다. 번창하다. 과연 그 비결은 무엇일까? 지식이나 머리차이는 아닌것이 분명하다. 왜냐하면 남동생은 치과에 겨우 들어갔고 제수씨는 최고 성적으로 입학해서 박사까지 단숨에 취득했다.\n\n2. 그런데 두 치과의원들을 모두 다녀본 친척분들의 증언(?)에 의하면 남동생이 훨씬 더 잘하는 것 같단다. 나는 그 이유를 안다. 남동생은 어려서부터 모형자동차 만들기 등 조립하고 깍기 등 손으로 세심하게 뭘 하는걸 좋아했다. 그때마다 어머니는 \"너 쓸데없는짓 하지말고 형처럼 책 읽어\"라고 말씀하셨다.\n\n3. 그런데 치과의사를 하고나니 그 '쓸데없는 짓'이 위력을 발휘하는것이었다. 당연히, 손재주만 좋다고 잘하는것은 아니지만 큰 도움이 되고 있음이 분명하다. 남동생은 책은 덜 읽었지만 그 손재주로 여러 치과들 사이에서도 신공을 발휘하여 승승장구한것이다.\n\n4. 요즘 다들 단기적인 \"효율\" 과 \"쓸데 있어 보이는 것\"에 집착한다. 여기서 벗어나서 딴짓을 하거나 미래를 준비하면 뭔가 시간을 낭비한듯 보인다\n\n5. 뉴욕 타임즈로 부터 \"위대한 사상가\"라는 칭호를 얻기도 한 세계 최고의 과학기술문화잡지 와이어드 창간자인 케빈켈리는\n\"AI와 로봇은 '효율성'이 필요한 일을 맡고 인간을 대치할것이다. 그러면 인간은 무슨 일을 해야하는가? \"\n의 질문에 매우 통찰있는 답을 했다.\n\n\" '비효율적'인 일을 해야한다.\n예를들면, '혁신'은 '비효율적'이다. 매우 많은 시도와 실패와 실수가 요구된다.\n'과학'도 본질적으로 '비효율적'이다. 수많은 시행착오가 필요하다. 인간이 앞으로 경쟁력을 가질 수 있는 일은 이런 비효율적인 일이다\"\n\n6. 오히려 쓸데있어 보이는 일, 효율적인 일은 인간이 아니라도 할수 있다는 것이다. 어쩌면 혁신하는 것, 철학하고 사유하는 것, 과학하는 것, 다른 관점으로 생각하는 것, 예술하는 것, 사랑하는 것, 남을 돕는 것, 공상하는 것, 잘 노는 것... 이런 일들이 앞으로 인간이 점점 더 해야 할지도 모른다.\n\n7. 직장인들은 당연히 눈앞에 보이는 것을 잘하기 위한 기술을 연마하는 것은 필요하다. 사업가 또한 당장 생존하고 매출과 이익을 내는데 초점을 맞추는 것이 필요하다. 그러나 당장 눈 앞에 보이는 쓸데있는것, 효율적인 것, 단기성과에만 집착하는 것만으로는 지속가능한 미래를 가져오기 어렵다. 10~20프로는 미래에 투자할 필요가 있다.\n\n8. 과거 쓸데없는 일을 한 것 같은 시간 또한 후회할 필요가 없다. 제가 #커넥팅 책에서도 말한것 같이 이 경험이 어떤 dot로서 connecting되어 우리의 커리어에 어떤 영향을 줄지 모르기 때문이다.",
-      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7253208054928744448?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7253208054928744448%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "created_at": "2025-04-06 09:41:31",
+      "time_text": "10개월",
+      "full_text": "왜 내게는 돈이 안되는 일만 오거나 힘든 프로젝트만 맡게 되고 나를 이용하려는 인간들만 몰릴까? ---\n\n1. 작년 한 분이 링크드인 연락을 통해 찾아왔다. 영어를 잘하고 해외에 근거지를 두며 한국에 왔다갔다하며 코칭을 하고 있었다.\n\n2. 매우 젊고 똑똑하며 밝고 사람들을 돕고자하는 뜻이 매우 훌륭했다. 와 인재다라는 느낌이 들었다. 그런데 문제는? 너무도 적은 수입으로 지내고 있었다.\n\n3. 내가 어떻게 수입을 얻는지? 물어보니 코칭 프로그램들을 바쁘게 함에도 불구하고 너무 긴 기간에 너무 낮은 pricing을 책정 했다. 돈이 벌릴수 있는 구조가 아니었다.\n\n4. 내가 물었다. 이렇게 생활비도 안나오는 구조로 일하고 싶은가? 그렇지는 않다고 했다. 자신도 돈을 많이 벌고 이를 통해 사람들을 돕고 싶은데 이상하게 돈이 안 따라온다고 했다.\n\n5. 이에 수익구조를 바꾸도록 도와주었고 코칭 일은 변동성이 크니 가능한 상시적인 job과 같이 포트폴리오를 만들라고 했다. 얼마전 다시 찾아와서 덕분에 월천을 넘게되었다고 한다. 오랜만에 돈걱정을 하지 않아도 되었다고 했다.\n\n6. 그런데 나는 앞으로도 그녀가 더 큰 돈을 벌수 있을지 여전히 의구심이 있었다😄 왜일까? 그녀에게 돈이 따라오지 않는 이유를 알것 같아서였다. 그녀가 돈버는 방법을 잘 이해하고 공부하지 않아서가 근본적인 이슈가 아니었다. 기본적으로 그녀는 어떤 이유에서인지 돈에 대한 desire가 강하지 않았다.\n\n7. 이러는 분들이 많다.\n\"왜 내게는 힘든 프로젝트만 올까?\"\n\"왜 내게는 나를 이용해먹으려는 사람들만 올까?\"\n\"왜 나는 열심히 하는데 돈이 안되는 일만 올까?\"\n\"왜 내가 만나는 상사나 직원들은 한결같이 문제일까?\"\n\n나의 관찰에 의하면 물론 운이 나쁜 경우도 있지만 그것보다는 \" 자신이 그것을 부르는\" 경우가 더 많다.\n\n8. 완벽주의 성향을 가진 사람은 어떤 프로젝트를 해도 힘들게 하는 경향이 있다. 이에 쉬운 프로젝트 조차도 힘들게 한다. 귀가 얇고 무른 분에게는 이용하려는 사람들이 몰린다. 나는 단호한 분 주위에 이런 사람들을 본 적이 거의 없다. 돈에 큰 관심이 없는 분들은 돈이 안되는 일들을 쉽게 받아들이니 그것들이 주로 오게 되는 경향이 있다. 물론, 사이코 상사나 문제 직원도 일부 있다. 그런데 하필이면 자기에게만 항상 몰려 온다면 이상하지 않는가.\n\n9. 돈을 멀리하거나 돈을 나쁜것으로 보거나 돈을 피하면 돈이 따라오기 어렵다.\n\n10. 나도 한동안 그랬다. 상당부분은 부모님과 종교의 영향이었다. 부모님은 저축외에 투자는 불로소득이나 큰 위험으로 여기셨다. 어렸을때부터 돈을 추구하고 돈을 많이 버는것을 도덕적으로 큰 문제가 있는 것처럼 말씀하셨다. 청년시절 내가 깊이 몰두했던 기독교 단체에서도 이 세상의 재물은 다 무용한 것이니 돈을 좇지마라고 했다. 그런 인식체계가 만들어지니 돈이 불어날수가 없었다. 무언가 관심이 없고 회피하는데 그게 따라오기는 쉽지않다. 40대 중반이 되서야 이것을 깨달았고 이후는 돈이 불어나기 시작했다.\n\n11. 돈은 선도 악도 아니다. 중립적이다. 많이 벌고 또 잘 쓰면 된다. 불법이나 속임으로 돈을 벌고 탐욕스러움은 피해야하지만 건강하게 벌고 확대하는 것도 필요하다. 정말 뜻이 있어 모든것을 나눠주고 자신은 만족한다면 괜찮겠지만 특별한 철학도 없으면서 돈을 회피하고 나쁜 것으로 보면 삶이 고단해질수 밖에 없다.\n\n\n12. 무언가 자신에게만 어떤 상황이 벌어지거나 벌어지지 않는다면 운이 나쁜것이나 운이 좋은 것만이 아닐수 있다. 혹시 나 자신이 그것을 당기거나 밀어내는 요소가 있는것은 아닌지 고찰해볼 필요가 있다.",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7314447129182158848?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7314447129182158848%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
       "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
       "images": [],
       "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "text",
       "source": "network",
-      "sequence_id": 1,
+      "sequence_id": 11,
       "sns_platform": "linkedin"
     },
     {
-      "index": 152,
+      "code": "7313213672372215809",
+      "username": "김덕중",
+      "created_at": "2025-04-03 00:00:12",
+      "time_text": "11개월",
+      "full_text": "논문 자주 검색하시는 분들은 참고하시면 좋겠습니다. 구글 스콜라를 주로 사용했지만 사용성 측면에서는 훨씬 편하고 직관적이네요. 오픈소스로 만들어진 서비스이기 때문에 사용에 제약이 없습니다. https://openalex.org/",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7313213672372215809?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7313213672372215809%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "숙명여대 겸임교수, Firb AI 연구소장",
+      "images": [
+        "https://media.licdn.com/dms/image/v2/D5622AQElxwNG2A-Mhw/feedshare-shrink_2048_1536/B56ZX3BErTGoAo-/0/1743606011579?e=1772064000&v=beta&t=gkYK-z-xuLd8qx5IH5kBpPNXNQaOwb5c628dAlCFrZU"
+      ],
+      "user_link": "https://www.linkedin.com/in/ACoAAAwBOVMBDI50rE9wyD4tsMaGWkV-85Sqd50",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "image",
+      "source": "network",
+      "sequence_id": 10,
+      "sns_platform": "linkedin",
+      "local_images": [
+        "web_viewer/images/fde4e6ea13f9780bc53b8db2f647aa00.jpg"
+      ]
+    },
+    {
+      "code": "7311655106758811648",
+      "username": "Soojung Shin (신수정)",
+      "created_at": "2025-03-29 16:47:01",
+      "time_text": "11개월",
+      "full_text": "루이비통코리아 리더들 강연을 했다. 내 책 \"거인의리더십\"으로 공부를 하고 있었다. 강연을 하면서 강의료로 제품을 사겠다고 했다. 그러면서 한번 하는 강의비로는 사기 어렵다고 joke를 했다. 그래서 그런지 몰라도 한번 더 초대되었다.\n\n이에 최근 결혼한 아들에게 연락해서 며느리에게 빽하나 쏘겠다고 했다(참고로 나는 다이소 팬이다). 고르라고 해놓고 기다리는데 시간이 많이 걸린다. 가 보니 몇개를 두고 고민중. 내가 보며 \"맨 오른쪽게 제일 예쁜것 같은데.\" 한 마디\n했더니 아들 녀석이 \"그럼 그거로 사주세요\"한다.\n\n가격을 물어보니 다른 것들의 두 배 이상.\n강의 더 해야겠다~\n\n난 강의를 하면 가능한 그 회사에 환원한다. 제품을 사든 주식을 사든.\n주식을 사는 이유는 구성원들 교육에 관심이 있는 회사가 잘 될 가능성이 높기 때문이다.\n\n다음주 폭스바겐 코리아 강의가 있는데 큰일났다. 거기에 람보르기니, 벤틀리도 있다던데.",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7311655106758811648?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7311655106758811648%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
+      "images": [],
+      "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "text",
+      "source": "network",
+      "sequence_id": 9,
+      "sns_platform": "linkedin"
+    },
+    {
+      "code": "7309007350219055104",
+      "username": "Soojung Shin (신수정)",
+      "created_at": "2025-03-22 09:25:47",
+      "time_text": "11개월",
+      "full_text": "한 시니어의 커리어와 인생이 바뀌어진 계기: 기회가 오면 잘 몰라도 행동한다-\n\n1. 시니어 창업아이템 전문가로 활동하시는 한 분을 만났다. 대기업 다니다가 자회사 임원으로 가서 49세에 나오게 되었는데 지금 10년이 되었다.\n\n2. 그분은 원래 기업에서 회사 매장 입지를 물색하고 확보하는 일을 하셨단다. 그런데 막상 나오고 나니 그 전문성으로 할수 있는 일이 별로 없었단다.\n\n3. 한 교육회사와 연결되어 자신의 전문성이 있는 매장 물색관련 교육을 개설했지만 잘 팔리지 않았다. 고민중에 있는데 그 교육회사 대표가 그에게 어떤 강의 요청이 있는데 강사가 마땅히 없는데 한번 해보지 않겠냐고 했다. 무슨 강의냐고 물었더니 \"시니어를 위한 창업 아이템 선정 강의\". 라는 것이다. 아니 자신도 지금 창업 아이템이 확보 안되어 고민하는데 무슨 강의냐고 하지 않으려했지만 그래도 강의는 많이 해봤고 한달의 기간이 남아서 해보자라고 결심했단다.\n\n4.어짜피 초보자를 가르치는것이니 조금만 더 알면 된다는 생각에 책을 사서 공부하고 다른 전문가의 강의를 신청하여 들은후 강의를 했다고 한다. 진땀을 흘리며 강의를 했는데 의외로 반응이 좋아 그 대표가 고정 강의를 의뢰.\n\n5. 사실 시간당 10~30만원 강의라 당장 돈은 안되었지만 그는 이 강의의 전문가가 되기 위해 본인이 직접 지식창업, 유튜브, 온라인상거래등 창업 아이템으로 다양한 시도를 해본다. 사실 자신은 여러 아이템에서 별 성공은 하지 못했지만 다양한 시도를 통해 쌓은 노하우가 있어 강의가 점점 업그레이드. 그 강의를 들은 사람들이 오히려 성공하는 사례가 많이 나왔고 점차 큰 규모의 컨설팅으로 연결되었다고 한다. 이에 10년간 꾸준히 수익을 창출하면서 즐겁게 일하고 있다.\n\n6. 내게 말한다. \"그때 잘 모르지만 해보겠다고 한게 인생을 바꿨습니다. 제가 잘 아는것만 하려했으면 실패했을겁니다. 잘 몰라도 기회가 오면 행동해야 함을 배웠습니다\"\n\n7. 레슨은 다음과 같다.\n1) 기회가 오면 잘 모른다고 거절하지 않고 도전해본다.\n2) 준비되어 무엇을 하려하는게 아니라 해가면서 준비한다.\n3) 기존에 아는 것으로 시장을 억지로 만들려 하기 보다 시장이 필요로 하는것을 배워서 한다.\n\n8. 때로 충분한 지식을 가지고 있지 않은 사항이나 까다로운 문제 해결에 대한 요청이 올때 옵션이 있다.\n옵션1. 과거의 자료를 재사용하기 어렵고 피곤하다. 실패하면 이름에 금이 간다. 그냥 거절하는게 편하다.\n옵션2. 이번 기회에 조금 고생스럽지만 한번 만들어보면 나의 또 하나의 포트폴리오가 되겠다.\n\n옵션 1만 선택해서는 성장이 멈춘다. 2를 선택하면 신경쓰이고 위험이 따르지만 성장하게 되며 생각지 못한 새로운 기회가 펼쳐질수 있다. 물론 준비를 열심히 해야한다.\n\n9. 모든것을 알아야 무언가 할수 있다는 생각을 버릴 필요가 있다. 힘들지만 시장이 원하는것을 할때, 기회가 올때, 또 하나의 포트폴리오를 만들수 있고 그것이 어떤 가능성을 만들지 모른다.",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7309007350219055104?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7309007350219055104%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
+      "images": [],
+      "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "text",
+      "source": "network",
+      "sequence_id": 8,
+      "sns_platform": "linkedin"
+    },
+    {
+      "code": "7306535658552995842",
+      "username": "Soojung Shin (신수정)",
+      "created_at": "2025-03-15 13:44:09",
+      "time_text": "11개월",
+      "full_text": "왜 우리 조직과 구성원들은 도전하지 않을까? 조직문화를 형성하는 진짜 요소는?--\n\n1. 경영자들을 자문하거나 강연 준비를 하는 경우 가끔 듣는 이야기 중 하나는 \" 우리 직원들은 왜 적극적이지 않을까요? 도전하지 않을까요? 변화하지 않을까요? 우리 회사의 문화는 왜 보수적이고 도전이 약할까요?\" 이다.\n\n2. 그러면 도대체 어떤 조직은 관료적으로 움직이고 어떤 조직은 도전적으로 움직일까? 그 이유는 무엇일까?\n\n3. 나는 대개 이 경우 다음을 이야기한다. \"사람들이 어떤 행동을 하는 것은 다 이유가 있기 때문입니다\"\n\n4. 대개 오해하는 것은 우리 조직에는 특별히 똑똑하지 않거나 혁신적이지 않은 사람들이 모여 있지 않아서 문제라고 생각한다.당연히 이것도 영향이 있다. 이에 채용도 신중하게 할 필요가 있다.\n\n5. 그러나 더 큰 요소가 있다. 왜 혁신을 하지 않고 보수적일까?\n만일 회사 생활을 통해 오랜기간 아래의 경험을 했다면 당신이 합리적인 사람이라면 어떤 판단을 할까?\n\" 혁신은 잠깐 하고 끝나더라\"\n\"결국 승진은 상사와의 관계로 하더라\"\n\" 결국 튀는 사람은 정 맞더라\"\n\" 고객을 위해 내 재량으로 문제 처리를 했더니 절차를 안지켰다고 감사받더라\"\n\" 다른 의견을 냈더니 자신의 편이 아니라고 내치더라\"\n\"누군가 아이디어를 냈더니 상사가 시키는 거나 제대로 하라고 면박을 주더라\"\n\" 자기 의견 확실히 제시하던 사람들이 오히려 손해보더라\"\n\"경영층이 바뀌면 혁신하려던 분들은 옷을 벗고 부서가 날라가는데 오히려 시키는 것만 한 사람들은 살아남더라 \"\n\n6. 구성원들의 생존태도를 결정짓는 또 하나의 중요한 요소는 \"승진\"이다. 누가 승진하는지 구성원들은 다 관찰한다. 말은 혁신을 외치지만 실제로는 인사권자와 같은 취향의 사람, 관계적으로 가까운 사람, 뒤에서 라인만드는데 인사권자에게는 잘보이는 사람, 직원들의 신망은 없는데 상사 앞에서만 잘 하는 사람, 광파는 사람, 자료 수거 취합하는 사람 또는 연공서열로 된다면? 오히려 묵묵히 자기 일을 하거나 변화하고 혁신하려 사람은 이런저런 핑게로 내쳐진다면? 전장터에서 피흘리며 싸우는 장군들은 하나의 실수로도 내쳐지고, 충심으로 회사를 위해 말하는 사람은 귀양가는데 실제 리스크를 지지 않는 사람들이 더 보상받는 다면?\n\n7. 그러므로 원하는 조직문화가 정착되지 못한 이유는 구성원들이 불합리해서가 아님을 이해해야 한다. 오히려 반대다. 구성원들은 다 합리적인 선택을 한 것이다. 도전하고 의견을 제시하며 성장하고 실력있는 사람들이 승진하고 인정받는 곳에 왔다면 대부분의 사람들은 어떻게 행동할까?\n\n8. 그러면 어떻게 변화를 시킬까? 위의 논리를 이해한다면 단초를 찾을수 있다. 결국 구성원들이 우리 회사 또는 우리 조직의 생존과 성공의 공식이 다른 것임을 일관성있게 인식 시킴에 있다.",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7306535658552995842?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7306535658552995842%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
+      "images": [],
+      "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "text",
+      "source": "network",
+      "sequence_id": 7,
+      "sns_platform": "linkedin"
+    },
+    {
+      "code": "7293825802125656064",
+      "username": "Soojung Shin (신수정)",
+      "created_at": "2025-02-08 11:59:43",
+      "time_text": "1년",
+      "full_text": "변화가 되지않는다면 환경을 바꿔보라--\n\n1. 지난주 한 분을 만났는데 재미있는 이야기를 하신다. \"제 집사람이 가끔 밤에 드라이브하고 싶다고 했는데 저는 들어주지 않거나 짜증을 냈습니다. 그런데 지금은 같이 즐겁게 나갑니다\"\n\n2. 왜 갑자기 바뀌었을까? 그분이 갑자기 애처가가 된것일까? 그것이 아니었다. 그분은 원래 집사람과 드라이브하는 것을 좋아했단다.\n\n3. \"집을 이사하고 바뀌었어요. 그전 집은 주차장이 부족해서 주차할곳이 없었어요. 돌고 돌아 겨우 겨우 주차합니다. 그런데 집사람이 드라이브하자고 하면 갔다와서 주차공간을 다시 확보할수 있을까? 그 걱정이 더 되는겁니다. 그래서 짜증을 낸것입니다. 그런데요. 이번에 이사를 했는데 이 아파트는 주차공간이 널널해요. 그러니 마음껏 나갈수 있게된거죠. 저도 몰랐는데 깨달았어요\"\n\n4. 아파트 주차장 하나 때문에 관계가 완전히 달라진것이다. 그러면서 말한다. \"변화를 하고 싶은데 변화가 안되면 공간을 바꾸라는 말이 맞는듯 합니다. 저는 동일한데 공간과 환경이 저를 바꾸더라고요 \"\n\n5. 예전 동물농장이란 프로를 보았는데 한 강아지가 나왔다. 불행히도 그 강아지를 아껴주던 주인이 죽었다. 그러자 그 이후 그 강아지는 그 주인의 항상 앉아있던 담요위에서만 웅크리고 앉아 식음을 전폐하고 있었다.\n\n6. 그 주인의 부인이 아무리 잘해주어도 소용없었다. 벨소리가 나면 잠시 좇아나갔다가도 다시 그 자리로 돌아왔다. 굶어죽기 일보 직전이었다. 이때 전문가가 나타나 도움을 주어 해결했다. 어떻게 해결했을까?\n\n7. 그 전문가는 과감히 그 담요를 불태웠다. 그리고 새로운 집을 꾸며주었다. 그러자 강아지는 새로운 환경에 적응하기 시작했다\n\n8. 스스로 잘 안바뀌면 자책하지 말고 환경을 바꾸어보라. 담요를 불태우든 훌쩍 휴가를 떠나든 이사를 해보든 사무실 위치를 바뀌보든 인테리어를 바꿔보든 옷을 바꾸든 바꾸어 보시라.",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7293825802125656064?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7293825802125656064%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
+      "images": [],
+      "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "text",
+      "source": "network",
+      "sequence_id": 6,
+      "sns_platform": "linkedin"
+    },
+    {
+      "code": "7291251132339736576",
+      "username": "Soojung Shin (신수정)",
+      "created_at": "2025-02-01 09:28:54",
+      "time_text": "1년",
+      "full_text": "젊고 유능한 임원들의 퇴임, 그 공통된 이유는?---\n\n1. 최근, 3명의 대기업 임원들이 찾아왔다. 다들 40대 젊은 나이인데 한 분은 회사를 스스로 옮겼고 나머지 두분은 회사에서 퇴임당했다.\n\n2.다들 젊고 똑똑했다. 이야기만 조금 나눠봐도 능력 있고 일에 헌신했으며 성과도 괜찮았음을 알수 있었다. 업종이 완전히 다름에도 불구하고 흥미롭게도 공통점이 있었는데 1)다들 젊은 나이에 탁월함을 인정받아 그 회사에서 오래 있을것으로 생각했는데 2) 상사나 CEO가 바뀐후 갑자기 어려워졌다는 것이다.\n\n3. 다들 일잘러로 인정받던 이들이었는데 상사가 바뀌면서 갑자기 일못러로 바뀐다. 그들의 능력이 갑자기 떨어졌을리가 없는데 이상하게 갑자기 핵심 대열에서 멀어지게 되었다. 이에 다들 억울해할수 밖에 없다.\n\n4. 대개 이런 과정을 거친다.\n과거의 보스와 다른 새로운 컬러의 CEO나 보스가 온다. 새로운 보스는 여러 이유로 기존의 일잘러를 삐딱하게 본다. 기존 보스와 가까왔을수록 더 그러하다. 일잘러는 기존처럼 열심히 일하고 제대로된 보고를 하지만 새로운 보스는 집중하지 않는다. 좋은 의견이고 괜찮은 성과임에도 불구하고 별로 인정하거나 칭찬하지 않는다. 오히려 별로인 사람을 칭찬한다. 조금이라도 불편한 이야기라도 하면 오해한다. 그러면 주위 동료들이나 경쟁자들은 금방 알아챈다. 새로운 보스가 저 사람을 별로 좋아하지 않는구나. 이러면 급속도로 그 사람을 가까이 하지 않게된다. 험담까지 하는 사람이 나타난다. 그 사람은 점점 힘이 빠지며 고립된다. 그 사람의 조직은 성과와 무관하게 이러 저러한 평가척도에 의해 좋지 않은 평가를 받게되고 결국 그 사람은 일못러가 된다. 그러면 그 보스는 자기의 원래 판단이 맞았다고 생각한다. \"저 녀석이 인재였다고? 아니잖아. 내말이 맞잖아\"\n\n5. 그러므로 전환 상황일때 리더들의 처신은 매우 어렵다. 특히 이전 보스와 가깝다고 여겨질수록 그러하다. 새로운 보스가 나빠서 때문이 아니다. 새로운 보스와 인간적인 신뢰가 구축되지 않은 상태이기 때문이다.\n\n6. \"상사는 일잘하는 사람에겐 일을주고 인간적으로 좋아하는 사람은 승진을 준다\"는 말이 있다. 나도 좋아하는 말은 아닌데 현실에서는 맞을 때가 있다.\n\n7. 물론, 이런 상황에도 유연하게 처신하는 사람들이 있다. 이런 이들을 좋은말로는 조직생활 잘한다고 한다. 주관과 자부심이 강한 사람일수록 견디기 어렵다. 그러므로 일잘한다고 오래가는 것은 아니다. 조직마다 정치적 민감도가 다른데 그 민감도가 큰 조직일수록 더 그러하다.\n\n8. 방법은? 자존심을 낮추고 테스트기간이라 여기며 새로운 분의 성향과 지향하는 바에 맞추고 신뢰를 쌓으려고 노력하는 수 밖에 다른 방법이 없다. 또한 신뢰가 이미 쌓여진 가신들과 가까이 한다. 그렇게까지 하고 싶지 않다면 위의 한 임원이 했던것 처럼 대안을 찾을 수 밖에 없다.\n\n9. 내가 #일의격 이나 #커넥팅 에서 인용했지만 크롬볼츠 교수의 말대로 우리의 커리어는 계획대로 되지않는다. 계획하지도 원치도 않았을지라도 '우연히 일어난 어떤 일'이나 '우연히 만난 어떤 사람'이 커리어의 변화를 만들곤 한다. 그러나 실망할 필요가 없는 것은 그러한 변화가 어떤 결말을 가져올지 모른다는 것이다.\n\n10. 얼마전, 내 리더십과정 #인스파이어(3월 재개 예정) 멤버인 두분의 성공한 창업자들이 자문을 구할것이 있다고 해서 만났다. 한 분은 상장했고 또 한분은 조만간 상장한다. 둘다 과거에 직장생활을 했기에 내가 물었다. \"왜 나오셨었나요?\" 난 대단한 뜻이 있어서 창업했다는 답을 기대했건만 둘다 이런말을 한다. \"나올 생각이 없었어요. 저희도 회사 다닐때 임원되고 싶었어요. 열심히 일하고 성과도 냈는데도 상사가 인정하지 않으니 될 가능성이 없어보이더라고요. 그래서 어쩔수 없이 나와서 창업한거예요\" 인생은 새옹지마임을 믿을 필요가 있다.\n\np.s. 댓글은 독자들에게 도움을 줍니다.",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7291251132339736576?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7291251132339736576%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
+      "images": [],
+      "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "text",
+      "source": "network",
+      "sequence_id": 5,
+      "sns_platform": "linkedin"
+    },
+    {
       "code": "7283688620161486849",
       "username": "Soojung Shin (신수정)",
       "created_at": "2025-01-11 12:38:11",
@@ -6986,14 +7089,13 @@ const snsFeedData = {
       "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
       "images": [],
       "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "text",
       "source": "network",
       "sequence_id": 4,
       "sns_platform": "linkedin"
     },
     {
-      "index": 153,
       "code": "7278585811854376960",
       "username": "Soojung Shin (신수정)",
       "created_at": "2024-12-28 10:41:27",
@@ -7003,14 +7105,13 @@ const snsFeedData = {
       "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
       "images": [],
       "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "text",
       "source": "network",
       "sequence_id": 3,
       "sns_platform": "linkedin"
     },
     {
-      "index": 154,
       "code": "7260810564279390208",
       "username": "Soojung Shin (신수정)",
       "created_at": "2024-11-09 09:28:57",
@@ -7020,10 +7121,26 @@ const snsFeedData = {
       "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
       "images": [],
       "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-      "crawled_at": "2026-02-06T18:38:36.685941",
+      "crawled_at": "2026-02-06T19:36:21.513769",
       "content_type": "text",
       "source": "network",
       "sequence_id": 2,
+      "sns_platform": "linkedin"
+    },
+    {
+      "code": "7253208054928744448",
+      "username": "Soojung Shin (신수정)",
+      "created_at": "2024-10-19 09:59:18",
+      "time_text": "1년",
+      "full_text": "쓸데 없어 보이는 것의 힘---\n\n1.남동생 부부를 만났다. 둘다 치과의사이고 각각 개원을 했다. 개원한 위치도 비슷하다. 헌데 흥미로운 현상은 남동생 의원이 더 잘된다는 것이다. 번창하다. 과연 그 비결은 무엇일까? 지식이나 머리차이는 아닌것이 분명하다. 왜냐하면 남동생은 치과에 겨우 들어갔고 제수씨는 최고 성적으로 입학해서 박사까지 단숨에 취득했다.\n\n2. 그런데 두 치과의원들을 모두 다녀본 친척분들의 증언(?)에 의하면 남동생이 훨씬 더 잘하는 것 같단다. 나는 그 이유를 안다. 남동생은 어려서부터 모형자동차 만들기 등 조립하고 깍기 등 손으로 세심하게 뭘 하는걸 좋아했다. 그때마다 어머니는 \"너 쓸데없는짓 하지말고 형처럼 책 읽어\"라고 말씀하셨다.\n\n3. 그런데 치과의사를 하고나니 그 '쓸데없는 짓'이 위력을 발휘하는것이었다. 당연히, 손재주만 좋다고 잘하는것은 아니지만 큰 도움이 되고 있음이 분명하다. 남동생은 책은 덜 읽었지만 그 손재주로 여러 치과들 사이에서도 신공을 발휘하여 승승장구한것이다.\n\n4. 요즘 다들 단기적인 \"효율\" 과 \"쓸데 있어 보이는 것\"에 집착한다. 여기서 벗어나서 딴짓을 하거나 미래를 준비하면 뭔가 시간을 낭비한듯 보인다\n\n5. 뉴욕 타임즈로 부터 \"위대한 사상가\"라는 칭호를 얻기도 한 세계 최고의 과학기술문화잡지 와이어드 창간자인 케빈켈리는\n\"AI와 로봇은 '효율성'이 필요한 일을 맡고 인간을 대치할것이다. 그러면 인간은 무슨 일을 해야하는가? \"\n의 질문에 매우 통찰있는 답을 했다.\n\n\" '비효율적'인 일을 해야한다.\n예를들면, '혁신'은 '비효율적'이다. 매우 많은 시도와 실패와 실수가 요구된다.\n'과학'도 본질적으로 '비효율적'이다. 수많은 시행착오가 필요하다. 인간이 앞으로 경쟁력을 가질 수 있는 일은 이런 비효율적인 일이다\"\n\n6. 오히려 쓸데있어 보이는 일, 효율적인 일은 인간이 아니라도 할수 있다는 것이다. 어쩌면 혁신하는 것, 철학하고 사유하는 것, 과학하는 것, 다른 관점으로 생각하는 것, 예술하는 것, 사랑하는 것, 남을 돕는 것, 공상하는 것, 잘 노는 것... 이런 일들이 앞으로 인간이 점점 더 해야 할지도 모른다.\n\n7. 직장인들은 당연히 눈앞에 보이는 것을 잘하기 위한 기술을 연마하는 것은 필요하다. 사업가 또한 당장 생존하고 매출과 이익을 내는데 초점을 맞추는 것이 필요하다. 그러나 당장 눈 앞에 보이는 쓸데있는것, 효율적인 것, 단기성과에만 집착하는 것만으로는 지속가능한 미래를 가져오기 어렵다. 10~20프로는 미래에 투자할 필요가 있다.\n\n8. 과거 쓸데없는 일을 한 것 같은 시간 또한 후회할 필요가 없다. 제가 #커넥팅 책에서도 말한것 같이 이 경험이 어떤 dot로서 connecting되어 우리의 커리어에 어떤 영향을 줄지 모르기 때문이다.",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7253208054928744448?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7253208054928744448%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
+      "images": [],
+      "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
+      "crawled_at": "2026-02-06T19:36:21.513769",
+      "content_type": "text",
+      "source": "network",
+      "sequence_id": 1,
       "sns_platform": "linkedin"
     }
   ]

@@ -46,4 +46,4 @@
 ## 4. 관련 파일
 
 - **분석 스크립트**: `test_linkedin_extraction.py` (임시 사용 후 삭제됨)
-- **적용 스크립트**: [linkedin_scrap.py](file:///d:/Vibe_Coding/scrap_sns/linkedin_scrap.py)
+- **적용 스크립트**: [linkedin_scrap.py](file:///d:/vibe-coding/scrap_sns/linkedin_scrap.py)

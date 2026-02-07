@@ -3,7 +3,7 @@ import os
 from collections import defaultdict
 
 # Load JSON data
-file_path = r'd:\Vibe_Coding\scrap_sns\output_total\total_full_20260201.json'
+file_path = r'd:\vibe-coding\scrap_sns\output_total\total_full_20260201.json'
 
 try:
     with open(file_path, 'r', encoding='utf-8') as f:

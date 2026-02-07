@@ -161,7 +161,7 @@ def download_images(posts):
     print("\n이미지 로컬 다운로드 시작...")
     
     # 이미지 저장 경로 (웹 뷰어 기준 relative path 사용을 위해 web_viewer 내부로 지정)
-    # 실제 파일 시스템 경로: d:/Vibe_Coding/scrap_sns/web_viewer/images
+    # 실제 파일 시스템 경로: d:/vibe-coding/scrap_sns/web_viewer/images
     # 웹 접근 경로: images/filename.jpg
     fs_img_dir = os.path.join("web_viewer", "images")
     os.makedirs(fs_img_dir, exist_ok=True)
