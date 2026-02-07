@@ -3,7 +3,8 @@ import os
 from collections import defaultdict
 
 # Load JSON data
-file_path = r'd:\vibe-coding\scrap_sns\output_total\total_full_20260201.json'
+base_dir = os.path.dirname(os.path.abspath(__file__))
+file_path = os.path.join(base_dir, '..', 'output_total', 'total_full_20260201.json')
 
 try:
     with open(file_path, 'r', encoding='utf-8') as f:

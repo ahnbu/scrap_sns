@@ -1,10 +1,10 @@
 const snsFeedData = {
   "metadata": {
-    "updated_at": "2026-02-06T19:37:45.864910",
+    "updated_at": "2026-02-07T11:25:29.931171",
     "total_count": 424,
     "threads_count": 269,
     "linkedin_count": 155,
-    "new_items_count": 1
+    "new_items_count": 424
   },
   "posts": [
     {
@@ -1399,13 +1399,7 @@ const snsFeedData = {
       "source": "initial_dom",
       "sequence_id": 179,
       "crawled_at": "2026-02-01T15:45:22.222887",
-      "sns_platform": "threads",
-      "local_images": [
-        "web_viewer/images/bcbabc690774c55fe07294986e2594b8.webp",
-        "web_viewer/images/5cf19e108b9ec1b4e95ab753133f9562.webp",
-        "web_viewer/images/873337de6aaefd438546b9b0079406f4.webp",
-        "web_viewer/images/9fcb369087ed2466cfd6abeec3c4e9a5.webp"
-      ]
+      "sns_platform": "threads"
     },
     {
       "code": "DUKIm4EkqEo",
@@ -1938,10 +1932,7 @@ const snsFeedData = {
       "source": "network",
       "sequence_id": 146,
       "crawled_at": "2026-02-01T15:45:22.222887",
-      "sns_platform": "threads",
-      "local_images": [
-        "web_viewer/images/7bba4d937b66c33a643e2b776d456357.jpg"
-      ]
+      "sns_platform": "threads"
     },
     {
       "code": "DUALirekrKe",
@@ -2690,10 +2681,7 @@ const snsFeedData = {
       "source": "network",
       "sequence_id": 97,
       "crawled_at": "2026-02-01T15:45:22.222887",
-      "sns_platform": "threads",
-      "local_images": [
-        "web_viewer/images/7147bbb5d982ea7fe60de3275ea888aa.jpg"
-      ]
+      "sns_platform": "threads"
     },
     {
       "code": "DTo7IpQAQnf",
@@ -3902,11 +3890,7 @@ const snsFeedData = {
       "source": "network",
       "sequence_id": 17,
       "crawled_at": "2026-02-01T15:45:22.222887",
-      "sns_platform": "threads",
-      "local_images": [
-        "web_viewer/images/4edf50ef5332a1996d6932cb464fbadc.jpg",
-        "web_viewer/images/40f3d38b6158889cf62c1fdd7bdeb239.jpg"
-      ]
+      "sns_platform": "threads"
     },
     {
       "code": "DSLinAmE2my",
@@ -4164,10 +4148,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 155,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/93049d93a0b3b13bfcdaeea191adc9fe.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7424482472438120448",
@@ -4185,10 +4166,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 154,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/0ea93d86431d3bdbc7d048e0d577d408.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7424462704150634496",
@@ -4206,10 +4184,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 153,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/c47db89adf18ab19b997b88287d3c9b1.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7424423567607603204",
@@ -4243,10 +4218,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 151,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/b6cfd674f072a2f225f0dd6742167a6f.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7424102643498774528",
@@ -4264,10 +4236,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 150,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/3516a9c6ff28ae62a1c4adf6a120cba3.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7424076125506740224",
@@ -4285,10 +4254,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 149,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/a499121c349073d64617214a68ece641.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7424044841904447488",
@@ -4306,10 +4272,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 148,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/a82ce56bf572f9c88afa5bf34939bbb8.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7424016182380470272",
@@ -4327,10 +4290,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 147,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/2e907cc1ec5b9ac6bf98bb773ad23211.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7423840081410678784",
@@ -4348,10 +4308,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 146,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/3e4a7c6542ed759bab415ccf88c17365.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7423556087586603009",
@@ -4369,10 +4326,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 145,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/6c05080b81132a7f671d4a166fd59173.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7423290982298828800",
@@ -4390,10 +4344,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 144,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/12aa1aa6858522998b8475bd4295998b.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7423236500034764800",
@@ -4459,10 +4410,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 140,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/bb926c28bfcba7f2daa8ff66f31933a1.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7422971668609966080",
@@ -4480,10 +4428,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 139,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/9d6bb03e8a8176728ad5b2fd72ff4586.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7422780935894544384",
@@ -4501,10 +4446,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 138,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/3a1760ed7609d096a128002fb6efb732.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7422768008177074177",
@@ -4538,10 +4480,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 136,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/9f77b4c3b494c965f2c3717e38bb2491.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7422584216384774144",
@@ -4559,10 +4498,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 135,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/aa3c0c13d28b31c713d0b261bf97aca7.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7422412489310777344",
@@ -4580,10 +4516,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 134,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/089dd8d402ad80707300683350339ed8.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7422409393570344960",
@@ -4601,10 +4534,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 133,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/5bae7eb84ad23ac30816aa4f229ac375.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7422400422361096192",
@@ -4622,10 +4552,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 132,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/51eee5547faa709833bc2adc18a5ec08.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7422209803042742272",
@@ -4643,10 +4570,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 131,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/a8ecc6ce365897e8c4ac58f9f91c6d63.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7422209668422324224",
@@ -4664,10 +4588,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 130,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/1ee321ff23c358c01abe01b81c093c2f.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7422035691510984705",
@@ -4701,10 +4622,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 128,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/e6306a038c4a2fd8ea21bdf7ac26821d.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7421318465455722496",
@@ -4722,10 +4640,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 127,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/8bc23bcc9e34e65c3f9b31a154f41505.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7421022478979948545",
@@ -4743,10 +4658,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 126,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/76628b3616527e8c551fadb31194cea6.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7420216201961906177",
@@ -4780,10 +4692,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 124,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/2ccb009fc678367f4a6b0c778ffb0b55.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7419563139156992000",
@@ -4801,10 +4710,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 123,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/78ead0fcd429905434ea85e7f4a569c9.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7419514854060797952",
@@ -4822,10 +4728,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 122,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/0e896ffaf5969b187c43821bfbeddfa2.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7419010986470211584",
@@ -4843,10 +4746,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 121,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/b99673caa4ccf05e1f7e10c084382fef.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7418791458029121536",
@@ -4880,10 +4780,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 119,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/3a6efc76115434855385779e0b8e5418.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7418270572356370432",
@@ -4917,10 +4814,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 117,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/27e44149c32b385651bdf99c01cfd57f.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7418068289974710272",
@@ -4938,10 +4832,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 116,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/e84dee8dc1dfbada3df58ae007f5586d.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7418053191826690048",
@@ -4975,10 +4866,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 114,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/42ed53aa617fffe5007d4d0e81034402.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7417813623470751745",
@@ -4996,10 +4884,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 113,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/c8c89e32a08061b135a46210b8d86409.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7417714347063562240",
@@ -5033,10 +4918,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 111,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/86f76b51d14936e565591ad0d238ac95.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7417508847441022976",
@@ -5054,10 +4936,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 110,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/2c47135a9d9c32d7f43e5eb8aac6476a.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7417486931770499072",
@@ -5075,10 +4954,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 109,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/5744109757587da6ec4b91025ff829e8.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7417332718822416384",
@@ -5096,10 +4972,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 108,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/8752b7e1fae5bb2ce50a79880ee07da5.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7417148730602201088",
@@ -5117,10 +4990,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 107,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/2191c9049a00f21da6de8e156dd4f871.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7417077551262535680",
@@ -5138,10 +5008,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 106,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/17e6f27d360c703cba5bd5eae7a58c55.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7416954710819127296",
@@ -5175,10 +5042,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 104,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/cb01941a9b34634192fe8b0406d9ab7a.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7416288711971164160",
@@ -5196,10 +5060,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 103,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/57c43b84df6e9bfed76dde934ad2c54d.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7415961577650012160",
@@ -5217,10 +5078,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 102,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/a1eef71d62346a0f44ad63803e6da340.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7415878861919379456",
@@ -5238,10 +5096,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 101,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/64da048b94a0cd26795b10fd58fb4475.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7415376843815608320",
@@ -5275,10 +5130,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 99,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/bad8ab7129aa357a7f0a24adc4e5be94.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7414605299321495552",
@@ -5296,10 +5148,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 98,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/8309847aca5e70433069760b7d256cec.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7414417993180303360",
@@ -5317,10 +5166,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 97,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/6a23473e214015d67848095904c11a69.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7414175957487562752",
@@ -5338,10 +5184,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 96,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/e92aeb0aea15c7ee86c853eebb2e93aa.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7414070699071442944",
@@ -5375,10 +5218,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 94,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/eb8d9737c76b8b11b8426e41175c84e7.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7413738759403298816",
@@ -5396,10 +5236,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 93,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/f59b1872e45054fdcd4b4d3bf8a23e53.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7413704535048908801",
@@ -5433,10 +5270,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 91,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/a2fa37e6d6069bee0ab067669a4fad75.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7412104574406209536",
@@ -5454,10 +5288,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 90,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/2d013c417504267d7893a403e6084e86.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7411922908916297728",
@@ -5475,10 +5306,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 89,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/3990786b8126ead8e9ee1ccb32b4f303.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7411896370925592576",
@@ -5496,10 +5324,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 88,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/e3d6e5d6b10abecc128b0cf0b95664d7.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7411399227337150464",
@@ -5517,10 +5342,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 87,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/0d5401d8708407143020e7ddc5925598.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7411338754214420480",
@@ -5538,10 +5360,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 86,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/6093c883509cb9e87fd40e260f10ee97.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7411330156092616704",
@@ -5559,10 +5378,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 85,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/33b8ad410c6d6cd62e11a5b81df21b14.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7411303033344692224",
@@ -5596,10 +5412,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 83,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/81c865ee556117105780304ec5609961.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7411209406790414336",
@@ -5617,10 +5430,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 82,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/44740dae2dd38dc7e301bfddc0d82913.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7411204617524391938",
@@ -5654,10 +5464,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 80,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/cafda83b0cccb3b33d0ca97061e4b47a.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7410992158503272448",
@@ -5675,10 +5482,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 79,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/ee5b53eae829bf892ff75864220c1f4d.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7410801664141656065",
@@ -5696,10 +5500,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 78,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/8966ef299a61762272070e2441451a56.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7410683563362181120",
@@ -5717,10 +5518,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 77,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/7bf99c2d0a2f436c24eddd7399bf5068.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7410446824572026880",
@@ -5738,10 +5536,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 76,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/3ceeaf8e68cd103ad6a84a7ae0d163f9.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7410446819371081728",
@@ -5759,10 +5554,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 75,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/c1b9072bce2ac0da6343f19857e69de5.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7410439276661813248",
@@ -5780,10 +5572,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 74,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/3fb6fe00b9673c29caa373a329726579.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7410431723471187969",
@@ -5817,10 +5606,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 72,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/4a465db7702c23c37fb049957177d427.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7409057669149396992",
@@ -5838,10 +5624,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 71,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/b21b6d3b210def77bc93edb8eb50f7f2.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7408959519537426432",
@@ -5891,10 +5674,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 68,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/a4bcb082dcf4066c75f7e68f6729ce27.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7407951903344685056",
@@ -5928,10 +5708,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 66,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/b75a30cad4f867d0f64e6a7a41fee46e.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7407636477167296512",
@@ -5965,10 +5742,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 64,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/c89b8a91434bf1cbd11455e4884ca15a.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7407438752777678848",
@@ -5986,10 +5760,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 63,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/82a8ced892eced2279c7cf92e04ee407.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7407327158521647104",
@@ -6007,10 +5778,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 62,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/cda3c226c9656b382f48f88e46bdb7e1.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7407189808428724226",
@@ -6028,10 +5796,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 61,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/6f8e1c3f186a583e08afe83d803ce8e3.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7406689415416356864",
@@ -6049,10 +5814,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 60,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/8a1799835de5b4f2c407dc8a6aa6eb36.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7406611878879281152",
@@ -6070,10 +5832,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 59,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/7e1b864e1b7cc780eedeb4a4b8afd995.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7406575376073687040",
@@ -6091,10 +5850,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 58,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/d66ee246eddb4072032361fe81907bef.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7406236411500081152",
@@ -6112,10 +5868,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 57,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/46f882b57ce9106db589a2decc854128.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7406137139891134464",
@@ -6133,10 +5886,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 56,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/a13542d6483697aea91a94b1c992287b.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7406098165495521280",
@@ -6154,10 +5904,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 55,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/010fe34d2c479970dd75258cc061364c.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7405983059860160512",
@@ -6175,10 +5922,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 54,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/1d5704b72442a75bbeb2b4cecb10f844.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7405773526021963777",
@@ -6228,10 +5972,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 51,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/58c19d8ee367432d397ba3372fbc28eb.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7405142923396218880",
@@ -6249,10 +5990,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 50,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/be348283626df8c4c9c7a7e9065000ec.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7404691043209760768",
@@ -6270,10 +6008,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 49,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/6cb20204cb33d9b486a99e81b512e6fb.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7403920649229926400",
@@ -6291,10 +6026,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 48,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/fc5e14dad4f48073c83e187d21079658.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7403907026885730305",
@@ -6328,10 +6060,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 46,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/f34932f7672241da63ab8839d2067ee2.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7402689128598806528",
@@ -6365,10 +6094,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 44,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/604038b7ec16d3f65a95fcb999bdb297.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7401626875682570241",
@@ -6386,10 +6112,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 43,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/a05d6f5c64ac19a4c6977b3a903e5c8d.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7401569692362203136",
@@ -6407,10 +6130,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 42,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/b85f9e476a636f8d654f9a12c7f6f636.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7401429747706351616",
@@ -6428,10 +6148,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 41,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/e3c0d79be52d021fb2bf901dee88be44.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7401368244718411776",
@@ -6449,10 +6166,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 40,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/589ba77e546d7eb0dfca754ceb0b9aca.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7401129989594763264",
@@ -6486,10 +6200,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 38,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/b3fc9ebcfcccd6fc825e2bddd1a45950.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7400530968190750720",
@@ -6507,10 +6218,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 37,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/0949bfed6c4075e6acd6d060262159c5.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7400284864094101504",
@@ -6544,10 +6252,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 35,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/1cf2bd0e94760980e0b521eff3c39628.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7397540321351524352",
@@ -6565,10 +6270,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 34,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/43ced2142bb5f5000d90c513397d49d6.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7397324001875980288",
@@ -6586,10 +6288,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 33,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/844ac3beaec55f2de4a2ed6ac47d2876.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7396396013068005376",
@@ -6607,10 +6306,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 32,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/83467a8d4d5d7bac0822816d9457c18a.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7395635427879129088",
@@ -6644,10 +6340,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 30,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/031c8b1cf2f8164e29e63ef00d955a2d.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7390273789009367040",
@@ -6681,10 +6374,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 28,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/04ee5f4f100b973248c4a89317f11b79.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7387653708110737409",
@@ -6734,10 +6424,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 25,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/b25b80d5cef7dbab284c429b95e71337.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7372465848608845824",
@@ -6771,10 +6458,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 23,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/e0131c8f9d52153b141471d4fefdb7c8.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7362299233468624897",
@@ -6888,10 +6572,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 16,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/7808182ed605a77df921e04082db2ca3.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7337290953541505024",
@@ -6941,10 +6622,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 13,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/fbab8732def5084af7c71201f5ff1bd0.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7314662801090781184",
@@ -6994,10 +6672,7 @@ const snsFeedData = {
       "content_type": "image",
       "source": "network",
       "sequence_id": 10,
-      "sns_platform": "linkedin",
-      "local_images": [
-        "web_viewer/images/fde4e6ea13f9780bc53b8db2f647aa00.jpg"
-      ]
+      "sns_platform": "linkedin"
     },
     {
       "code": "7311655106758811648",

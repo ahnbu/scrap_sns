@@ -53,3 +53,22 @@ function calculateUserPoints(userId: string): number {
   // implementation
 }
 ```
+
+## 5. 이식성 및 동적 경로 처리 (Portability & Dynamic Paths) - [CRITICAL]
+
+코드의 환경 독립성과 유지보수성을 위해 다음 규칙을 반드시 준수하십시오.
+
+- **절대 경로 사용 금지**: `C:\Users\...` 또는 `d:\vibe-coding\...`와 같은 절대 경로를 코드나 설정에 하드코딩하지 마십시오. 반드시 실행 파일 위치 기준의 상대 경로(`os.path` 등)를 사용하십시오.
+- **상황에 맞는 날짜 및 경로 처리**: 파일명에 날짜가 포함된 경우(예: `data_20240101.json`), 다음과 같이 목적에 따라 구분하여 구현하십시오.
+  - **자동화/최신 데이터**: **최신 데이터 수집 및 병합**이 핵심인 워크플로우에서는 `glob` 모듈을 사용하여 **가장 최신 파일**을 자동으로 찾도록 하십시오.
+  - **명시적 분석/과거 데이터**: 특정 버전이나 과거 데이터를 타겟팅해야 하는 경우엔 날짜를 명시적으로 지정할 수 있습니다.
+- **환경 독립적 지침**: `README.md`나 주석 등 문서에서도 특정 사용자의 개인 디렉토리 경로를 노출하지 말고, 프로젝트 루트 기준의 범용적인 경로를 기술하십시오.
+
+```python
+# WRONG
+path = r'd:\vibe-coding\scrap_sns\data\file_20260201.json'
+
+# CORRECT
+base_dir = os.path.dirname(os.path.abspath(__file__))
+latest_file = max(glob.glob(os.path.join(base_dir, 'data', 'file_*.json')))
+```

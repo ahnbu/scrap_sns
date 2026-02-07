@@ -9,7 +9,7 @@ def find_latest(pattern):
     return max(files) if files else None
 
 threads_file = find_latest("output_threads/python/threads_py_full_*.json")
-linkedin_file = "output_linkedin/python/linkedin_python_full_20260206.json"
+linkedin_file = find_latest("output_linkedin/python/linkedin_python_full_*.json")
 
 if not threads_file:
     print("❌ Threads 파일을 찾을 수 없습니다!")
@@ -43,7 +43,8 @@ print(f"✅ LinkedIn 개행 확인: {any(chr(10) in p.get('full_text', '') for p
 
 # 3. Total 파일 생성
 os.makedirs("output_total", exist_ok=True)
-total_file = "output_total/total_full_20260206.json"
+today = datetime.now().strftime('%Y%m%d')
+total_file = f"output_total/total_full_{today}.json"
 
 total_data = {
     "metadata": {
