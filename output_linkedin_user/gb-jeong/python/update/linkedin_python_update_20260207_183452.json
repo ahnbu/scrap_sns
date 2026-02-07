@@ -1,0 +1,121 @@
+[
+  {
+    "index": 1,
+    "code": "7419506527964692482",
+    "username": "정구봉 Goobong Jeong",
+    "created_at": "2026-01-21 07:30:04",
+    "time_text": "",
+    "full_text": "나를 distract 하는 것들에서 해방되면서도 본질은 놓치지 않기.\nHoYeon Lee 호연님이 만든 contents hub 의 목적입니다.\n\n저는 claude code 팀의 X 포스팅은 절대 놓치고 싶지 않아요. 하지만 x 에 들어가면 온갖 밈에 휩쓸립니다. 30분이 금방 지나가요. 그러다보면 시간은 많이 썼는데 중요한 정보를 놓칠 때가 있어요. 아쉬운 순간입니다.\n\n이 문제를 해결하기 위해 Contents Hub 를 만들어서 사용하고 있습니다.\n문제를 겪고 있고, 꼭 해결하고 싶으신 분들은 waitlist를 등록해주세요. https://lnkd.in/gs6RAbqM",
+    "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7419506527964692482",
+    "profile_slogan": "Claude Code for all of your work",
+    "images": [
+      "https://media.licdn.com/dms/image/v2/D5622AQEnuYeSyjc8aQ/feedshare-shrink_1280/B56ZvcLP4sHcAc-/0/1768925496454?e=1772064000&v=beta&t=DCZ4etokHOtLDIDHjKPA58MoBoVCBz0JWJw6o1bJmwk"
+    ],
+    "user_link": "https://www.linkedin.com/in/gb-jeong",
+    "crawled_at": "2026-02-07T18:34:52.821383",
+    "content_type": "image",
+    "source": "network_user_feed",
+    "sequence_id": 11
+  },
+  {
+    "index": 2,
+    "code": "7420216201961906177",
+    "username": "정구봉 Goobong Jeong",
+    "created_at": "2026-01-23 06:30:03",
+    "time_text": "",
+    "full_text": "marketingskills를 보면서 Plugin은 AI 시대의 App Store일지도 모른다고 생각했습니다.\nOpenAI가 Apps SDK를 내면서 천명했던 App Store를, 저는 이미 Plugin으로 경험하고 있습니다. 솔직히 MCP보다 더 강력합니다. MCP가 도구를 연결할 뿐이었지만, Plugin은 곧바로 원하는 결과물로 데려다줍니다. 스킬에는 노하우와 취향이 담겨있거든요.\n\nmarketingskills는 마케팅 전문 플러그인입니다.\n23개 스킬이 들어있는데, 두 가지만 봐도 왜 강력한지 느껴집니다.\n\n1. copywriting\n\n\"랜딩페이지 카피 써줘\"라고 하면 10년차 컨버전 카피라이터처럼 씁니다. 먼저 페이지 목적, 타겟 오디언스, 제품 차별점, 트래픽 소스를 물어봅니다. 맥락을 수집한 다음에야 글을 씁니다.\n\n원칙이 내장되어 있습니다. \"명확함이 창의성보다 중요하다\", \"기능이 아니라 혜택을 말하라\", \"모호함 대신 구체적 수치를 써라\", \"회사 용어 말고 고객 언어를 써라\". 이게 자동으로 적용됩니다.\n\n헤드라인 공식만 10개가 넘습니다. \"{원하는 결과} without {고통점}\", \"Never {불쾌한 일} again\", \"Turn {입력} into {결과}\" 같은 검증된 공식들이 상황에 맞게 제안됩니다.\n\n페이지 구조도 7단계로 잡아줍니다. Hero → Social Proof → Problem → Solution → How It Works → Objection Handling → Final CTA. 각 섹션에서 뭘 써야 하는지, 왜 그 순서인지까지 설명합니다.\n\n2. seo-audit\n\n\"SEO 봐줘\"라고 하면 전문 에이전시 수준으로 진단합니다. 5단계 우선순위가 있습니다. 크롤링/인덱싱 → 기술 SEO → 온페이지 → 콘텐츠 품질 → 권위와 링크. 이 순서대로 점검합니다.\n\n기술 SEO만 해도 체크리스트가 방대합니다. robots.txt 차단 여부, XML sitemap 상태, 사이트 아키텍처(중요 페이지가 3클릭 이내인지), canonical 태그 일관성, Core Web Vitals(LCP 2.5초 미만, INP 200ms 미만, CLS 0.1 미만)까지 전부 확인합니다.\n\nE-E-A-T 신호도 체크합니다. Experience(직접 경험 입증), Expertise(저자 자격), Authoritativeness(분야 인정), Trustworthiness(정보 정확성). 구글이 보는 관점으로 콘텐츠를 평가합니다.\n\n사이트 유형별로 공통 이슈도 정리되어 있습니다. SaaS는 제품 페이지 깊이 부족이 문제고, 이커머스는 얇은 카테고리 페이지가 문제고, 블로그는 키워드 카니발라이제이션이 문제입니다. 유형에 맞는 진단을 합니다.\n\nMCP는 \"Slack에 연결됨\"입니다.\nPlugin/skills은 \"Slack에서 3가지 의사결정 포인트를 추출해서 정리\"입니다.\n\n도구 연결이 아니라 전문가의 뇌를 이식하는 겁니다. App Store의 본질은 배포였습니다. 개발자가 만든 전문성을 비개발자가 설치만으로 획득하는 것. Plugin이 정확히 그렇습니다.\n\n당신의 도메인 전문성도 Plugin이 될 수 있습니다.\nhttps://lnkd.in/dfxh6MRG",
+    "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7420216201961906177",
+    "profile_slogan": "Claude Code for all of your work",
+    "images": [],
+    "user_link": "https://www.linkedin.com/in/gb-jeong",
+    "crawled_at": "2026-02-07T18:34:52.821383",
+    "content_type": "text",
+    "source": "network_user_feed",
+    "sequence_id": 12
+  },
+  {
+    "index": 3,
+    "code": "7422409393570344960",
+    "username": "정구봉 Goobong Jeong",
+    "created_at": "2026-01-29 07:45:01",
+    "time_text": "",
+    "full_text": "이 작은 앱을 저는 앞으로 항상 켜놓을거에요. Jongwon Choi님이 Claude Code 의 Tasks를 추적하는 앱을 만들어주셨어요.\n\nClaude Code로 복잡한 작업을 시키면 TodoWrite 도구로 할 일 목록을 만들어요.\n문제는 이게 터미널 안에 묻혀서 잘 안 보인다는 거죠.\n\n이 앱은 그 태스크들을 플로팅 윈도우로 띄워줍니다.\n\n주요 기능:\n- 파일 변경 시 자동 새로고침\n- 세션별로 필터링 가능\n- ⌘E로 태스크 바로 수정\n- ▶ 버튼으로 해당 세션 터미널에서 바로 열기\n\nGitHub: https://lnkd.in/gFNPP24Q\n\n세션 여러 개 돌리시는 분들 진짜 추천드립니다!",
+    "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7422409393570344960",
+    "profile_slogan": "Claude Code for all of your work",
+    "images": [],
+    "user_link": "https://www.linkedin.com/in/gb-jeong",
+    "crawled_at": "2026-02-07T18:34:52.821383",
+    "content_type": "text",
+    "source": "network_user_feed",
+    "sequence_id": 13
+  },
+  {
+    "index": 4,
+    "code": "7422756684638502913",
+    "username": "정구봉 Goobong Jeong",
+    "created_at": "2026-01-30 06:45:01",
+    "time_text": "",
+    "full_text": "YeonGyu Kim이 Clawdbot 사용을 강력 추천해주셨어요. 로컬에서 조금 써봤구요. 제대로 쓰려고 지금 묵혀둔 맥북 가지러 가고 있습니다.\nClawdbot 만든 사람의 영상을 자세히 봤습니다. 오랜 경력을 가진 뛰어난 개발자입니다. 하지만 \"읽지 않은 코드를 배포한다.\"라고 말하더라구요.\n\n1. Closing the Loop\nAI가 코드를 짜면, AI가 테스트하고, AI가 디버깅합니다. 테스트가 통과하면 배포합니다.\n개발자는 한 줄씩 읽지 않아도 됩니다.\n\n대신 해야 할 일이 있습니다. AI가 스스로 검증할 수 있는 환경을 설계하는 것. 아키텍트가 되는 겁니다.\n이렇게도 말합니다. \"PR은 이제 Pull Request가 아니라 Prompt Request다.\"\n\n2. 병렬 에이전트\n피터는 Codex CLI를 데일리 드라이버로 씁니다. 터미널을 3x3 그리드로 나눠서 3~8개 에이전트를 동시에 돌립니다.\n\n각 에이전트에 다른 접근법을 줍니다. A는 리팩토링, B는 신기능, C는 버그 수정.\n결과 중 가장 좋은 \"바이브\"를 선택합니다.\n\n에이전트가 직접 코드를 수정하고, 테스트를 돌리고, 작업 단위별로 커밋 메시지까지 작성합니다.\nGit 원자적 커밋(Atomic Commits)이 자동으로 쌓입니다.\n\n3. 취향(Taste)과 아키텍처\n피터는 미래의 개발자에게 필요한 건 코딩 기술이 아니라 판단력이라고 합니다.\n\n\"프로그래머를 위한 슬롯머신\"이라고 비유하더라구요. 좋은 결과가 나올 때까지 레버를 당기되, 어떤 결과가 진짜 좋은 코드인지 알아보는 눈이 있어야 한다는 겁니다.\n\n개발자는 벽돌을 쌓는 사람이 아닙니다. 어떤 건물을 지을지 설계하고, 에이전트 군단이 벽돌을 제대로 쌓는지 감독하는 사람입니다.\n\n\"The creator of Clawd: I ship code I don't read\": https://lnkd.in/gAKdjHhi",
+    "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7422756684638502913",
+    "profile_slogan": "Claude Code for all of your work",
+    "images": [],
+    "user_link": "https://www.linkedin.com/in/gb-jeong",
+    "crawled_at": "2026-02-07T18:34:52.821383",
+    "content_type": "text",
+    "source": "network_user_feed",
+    "sequence_id": 14
+  },
+  {
+    "index": 5,
+    "code": "7423134165010763776",
+    "username": "정구봉 Goobong Jeong",
+    "created_at": "2026-01-31 07:45:00",
+    "time_text": "",
+    "full_text": "AI 최신 소식을 어떻게 팔로업하냐는 질문을 많이 받았습니다. 그냥 많이 읽으려고 노력했는데, 더 잘하려고 내부 프로덕트+MCP를 만들어서 쓰고 있습니다.\n1. 1-page digest를 먼저 훑어보기(메일, 슬랙, 웹페이지)\n2. Claude Code에서 Contents hub MCP 연결하기\n3. Skills: /contents-hub 미리 정의한 content lens로 컨텐츠 클러스터링하고 관심사를 선택\n4. 흥미로운 건 원문까지 Claude가 직접 읽어옴\n5. 반응, 댓글까지 파악\n\n여기까지 5분도 안 걸립니다.\n\n오늘 이렇게 발견한 것 중 하나가 Every의 AI 프로젝트 매니저였는데요. CLAUDE.md 파일을 Job Description으로 쓴다는 게 재밌더라고요.\n\nAI 소식 팔로업하려고 X, Youtube, RSS를 직접 보지는 않습니다. 관심 가는 정보 빠르게 캐치해서 Claude Code 로 같이 분석합니다.\nHoYeon Lee 가 General Engineer 로 개발하고 있는 제품입니다.",
+    "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7423134165010763776",
+    "profile_slogan": "Claude Code for all of your work",
+    "images": [],
+    "user_link": "https://www.linkedin.com/in/gb-jeong",
+    "crawled_at": "2026-02-07T18:34:52.821383",
+    "content_type": "text",
+    "source": "network_user_feed",
+    "sequence_id": 15
+  },
+  {
+    "index": 6,
+    "code": "7423492787066707968",
+    "username": "정구봉 Goobong Jeong",
+    "created_at": "2026-02-01 07:30:02",
+    "time_text": "",
+    "full_text": "Gmail 스킬을 만들어서 plugins-for-claude-natives에 플러그인으로 배포했습니다. 만들고/사용하면서 깨달은 것: \"테스트해도 안전한 환경\"을 구축하기 위해 5단계 워크플로우를 설계가 필요했습니다.\n\n메일을 보내달라고 했을 때 Claude가 바로 보내버리는건 무섭더라구요. 받는 사람 이름 틀리거나, 맥락 파악을 잘못하거나, 포맷이 이상할 수 있잖아요. 그래서 5단계 워크플로우를 설계했습니다.\n\n1. 요구사항 맥락 파악\nExplore SubAgents 병렬로 실행합니다. 로컬에서 수신자 정보, 관련 프로젝트, 배경 맥락을 동시에 탐색해요. 이게 생각보다 중요합니다. \"박대리한테 메일 보내줘\"라고 했을 때, 박대리가 누군지, 최근에 무슨 일이 있었는지 파악해야 제대로 된 메일이 나오거든요.\n\n2. 이전 대화 맥락 파악\n\"to:박대리 OR from:박대리 newer_than:90d\"로 검색합니다. 이전에 주고받은 메일이 있으면 답장할지 새 메일을 쓸지 물어봐요.\n\n3. 드래프트 작성\n초안을 쓰고 사용자에게 보여줍니다. 여기서 Human in the loop가 들어갑니다. \"이대로 괜찮아요?\" 확인받고 넘어가요.\n\n4. 테스트 발송\n이게 핵심입니다. 실제 수신자한테 보내기 전에 나한테 먼저 보냅니다. 제목 앞에 \"[테스트]\"를 붙여서요. Gmail 웹에서 열어보고 확인합니다. Claude 가 정확히 보낸 메일함을 열어서 GUI를 확인시켜줍니다.\n\n5. 실제 발송\n테스트 통과하면 그제서야 진짜 보냅니다. 하지만 \"Sent with Claude Code\" signature를 붙여놓았어요.\n\n*설정은 setup-guide.md 참고하세요. Google Cloud에서 OAuth 설정하고, accounts.yaml에 계정 등록하면 됩니다.\n\n*지금 구현한 건 mock에 가깝습니다. 테스트 발송이 \"완전한 샌드박스\"는 아니에요. 실제 메일이 나가긴 하거든요. 더 나은 방법을 찾고 싶습니다. 미리보기 전용 환경이나, 발송 취소 가능 시간을 두는 방식이요.\n\nAI에게 업무를 위임할 때, 실수해도 복구 가능한 환경을 먼저 만드는 게 정말 필요합니다. 메일뿐 아니라 Slack 메시지, 캘린더 일정, 문서 수정 다 마찬가지입니다. 개발할 때 일반적으로 사용하는 개념을 비개발 업무에도 적용해야 합니다.\n\ngmail skills: https://lnkd.in/gdcEYasN",
+    "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7423492787066707968",
+    "profile_slogan": "Claude Code for all of your work",
+    "images": [
+      "https://media.licdn.com/dms/image/v2/D5622AQEF9nVkHb_Tlw/feedshare-shrink_1280/B56ZwUbt9sHAAc-/0/1769869336671?e=1772064000&v=beta&t=QecvlNqONP72rLKjMRlGBOv70JwCjxJkz2jP16cl4B0"
+    ],
+    "user_link": "https://www.linkedin.com/in/gb-jeong",
+    "crawled_at": "2026-02-07T18:34:52.821383",
+    "content_type": "image",
+    "source": "network_user_feed",
+    "sequence_id": 16
+  },
+  {
+    "index": 7,
+    "code": "7424482472438120448",
+    "username": "정구봉 Goobong Jeong",
+    "created_at": "2026-02-04 01:02:41",
+    "time_text": "",
+    "full_text": "무엇을 만들지가 어느 때보다 중요합니다. Y Combinator에서 Request for Startups를 발표했습니다. 이번에 YC가 발표한 것도 중요하지만, 저는 2025년부터 4번의 리퀘스트를 클로드와 함께 읽어보며 “질문이 어떻게 바뀌었는가”를 추적해봤습니다.\n\n- Spring 2025: “AI가 X를 할 수 있다” (가능성)\n- Summer 2025: “AI로 X를 자동화” (에이전트)\n- Fall 2025: “AI로 회사 재구성” (구조 변화)\n- Spring 2026: “AI 이후 인간 역할?” (메타)\n\n1. 1년 사이에 질문 자체가 달라졌습니다.\n- 처음엔 AI가 뭘 할 수 있는지 탐색했습니다.\n- 그 다음엔 에이전트로 자동화할 수 있는 것들을 찾았습니다.\n- 이제는 “10명이 $100B 회사를 만들 수 있다”고 말합니다.\n- 그리고 “코딩은 해결됐으니 PM이 새로운 병목”이라고까지 합니다.\n\n2. Spring 2026 RFS에서 특히 AI/소프트웨어 관련으로 “직접적으로” 튀어나온 신호는 더 노골적입니다.\n\n- 프로덕트 매니저를 위한 Cursor: “코드를 잘 짜는 것”이 아니라 “무엇을 만들어야 하는지”를 끝까지 밀어주는 AI 네이티브 시스템을 요구합니다. 고객 인터뷰/사용 데이터를 넣고 “다음에 무엇을 만들어야 하나?”를 묻는 형태로, 기능 개요→UI/데이터 모델/워크플로우 변경 제안→코딩 에이전트가 처리할 태스크 분해까지를 한 루프로 상상합니다.\n\n- AI 네이티브 에이전시: 사람을 더 뽑아 매출을 늘리는 모델이 아니라, 에이전트/워크플로우로 “서비스 생산성” 자체를 뒤집는 쪽으로 갑니다. (에이전시가 왜 확장하기 어려운지, 그리고 어디를 AI가 대체해야 확장이 가능한지)\n\n- 정부를 위한 AI: “엔터프라이즈 SaaS”가 아니라, 규제/조달/행정 프로세스가 실질적으로 바뀌는 전제를 깔고 기회를 제시합니다. 정부는 느리지만, 한번 들어가면 시장이 크고 장기적입니다.\n\n- 물리적 작업을 위한 AI 안내: AI가 현장에서 직접 ‘행동’하는 대신, 멀티모달+하드웨어(폰/이어폰/스마트 글래스)+숙련 인력 부족의 결합으로 “사람을 실시간으로 안내”하는 프로덕트가 성립한다고 봅니다.\n\n- AI 네이티브 헤지펀드: 기존 전략에 AI를 ‘얹는’ 게 아니라 AI로 “완전히 새로운 전략”을 만드는 곳에 알파가 있다는 관점입니다.\n\n3. Spring 2026의 문장 몇 개는 그냥 선언문에 가깝습니다.\n\n> “가장 중요한 부분은 애초에 무엇을 만들어야 하는지 파악하는 것입니다!”\n> “제품 발견의 전체 루프를 지원하는 시스템은 없습니다.”\n> “미래의 에이전시들은 소프트웨어 회사처럼 보일 것이며, 소프트웨어 마진을 가질 것입니다.”\n> “AI가 할 수 있는 것은 보고, 추론하고, 행동하는 인간을 안내하는 것입니다.”\n\n사라진 것들도 있지만 변하지 않는 것들이 있습니다.\n1. AI의 민주화 - 부유층만 누리던 것을 AI로 모두에게\n2. 대기업은 느리다 - 스타트업이 더 빠른 속도로 밀어붙여 이겨내야 한다\n3. 버티컬을 잡고 부셔라 - 좁고 깊게 파고들어서 분야 하나를 통합한다\n4. 1인 직원으로도 큰 회사를 - 1인당 레버리지/매출을 극단적으로 끌어올린다\n\n급변하는 세상에서 변하지 않는 패턴을 찾아내 진짜 문제를 풀어내고 싶습니다.\n\n*Andrej Karpathy가 바이브코딩이라는 단어를 만든지 딱 1년이 됐습니다. 이 글을 쓰기 위해 Claude Code 로 분석하면서 소화하다가 갑자기 500 Internal Server Error 가 발생했습니다. 저는 순간적으로 원숭이가 됐어요. 정말 많은 것이 바뀌었음을 느끼고 있습니다.\n*똑똑한 분들께서 드디어 Sonnet 5가 올라올 것 같다고 말씀해주시네요. 기대됩니다!",
+    "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7424482472438120448",
+    "profile_slogan": "Claude Code for all of your work",
+    "images": [
+      "https://media.licdn.com/dms/image/v2/D5622AQHEltjKiFI3Qg/feedshare-shrink_1280/B56ZwkPeIwHIAg-/0/1770134561633?e=1772064000&v=beta&t=glRShRUV9SmrTgR0ql-jYJGwlPGtT8IVPaL9iqu2jBM",
+      "https://media.licdn.com/dms/image/v2/D5622AQEkjmzEd9eYfA/feedshare-shrink_2048_1536/B56ZwkPeIoHIAo-/0/1770134562159?e=1772064000&v=beta&t=MDz5e7HyVYS9wOJBBEN6RcimLfYUlT6DF1fMmNRdU8w"
+    ],
+    "user_link": "https://www.linkedin.com/in/gb-jeong",
+    "crawled_at": "2026-02-07T18:34:52.821383",
+    "content_type": "carousel",
+    "source": "network_user_feed",
+    "sequence_id": 17
+  }
+]
