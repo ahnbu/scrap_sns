@@ -17,7 +17,8 @@ output_threads/python/update/
 output_total/update/
 web_viewer/images/
 output_linkedin_user/temp/
-output_linkedin_user/gb-jeong/python/update/
+output_linkedin_user/*/update/
+output_linkedin_user/*/python/update/
 
 # Python
 **/*.pyc

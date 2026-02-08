@@ -25,7 +25,7 @@ DURATION_STR = args.duration
 AFTER_STR = args.after
 
 # 경로 설정
-USER_DATA_DIR = os.path.join(BASE_DATA_DIR, USER_ID, "python")
+USER_DATA_DIR = os.path.join(BASE_DATA_DIR, USER_ID)
 UPDATE_DIR = os.path.join(USER_DATA_DIR, "update")
 TARGET_URL = f"https://www.linkedin.com/in/{USER_ID}/recent-activity/all/"
 
@@ -37,6 +37,54 @@ WINDOW_X = 1000
 WINDOW_Y = 0
 WINDOW_WIDTH = 1000
 WINDOW_HEIGHT = 1000
+
+# --- 마이그레이션 로직 ---
+def migrate_old_data(user_id):
+    old_dir = os.path.join(BASE_DATA_DIR, user_id, "python")
+    new_dir = os.path.join(BASE_DATA_DIR, user_id)
+    
+    if not os.path.exists(old_dir):
+        return
+
+    print(f"📦 기존 데이터 마이그레이션 시작: {old_dir} -> {new_dir}")
+    
+    # 1. full 파일 이동 및 이름 변경
+    if os.path.exists(old_dir):
+        for f in os.listdir(old_dir):
+            if f.startswith("linkedin_python_full_") and f.endswith(".json"):
+                old_path = os.path.join(old_dir, f)
+                new_filename = f.replace("linkedin_python_full_", f"linkedin_{user_id}_full_")
+                new_path = os.path.join(new_dir, new_filename)
+                if not os.path.exists(new_path):
+                    os.rename(old_path, new_path)
+                    print(f"   🚚 이동: {f} -> {new_filename}")
+    
+    # 2. update 파일 이동 및 이름 변경
+    old_update_dir = os.path.join(old_dir, "update")
+    new_update_dir = os.path.join(new_dir, "update")
+    if os.path.exists(old_update_dir):
+        os.makedirs(new_update_dir, exist_ok=True)
+        for f in os.listdir(old_update_dir):
+            if f.startswith("linkedin_python_update_") and f.endswith(".json"):
+                old_path = os.path.join(old_update_dir, f)
+                new_filename = f.replace("linkedin_python_update_", f"linkedin_{user_id}_update_")
+                new_path = os.path.join(new_update_dir, new_filename)
+                if not os.path.exists(new_path):
+                    os.rename(old_path, new_path)
+                    print(f"   🚚 이동 (update): {f} -> {new_filename}")
+        
+        # update 폴더 삭제 시도
+        try:
+            if not os.listdir(old_update_dir):
+                os.rmdir(old_update_dir)
+        except: pass
+
+    # 3. python 폴더 삭제 시도
+    try:
+        if os.path.exists(old_dir) and not os.listdir(old_dir):
+            os.rmdir(old_dir)
+            print(f"   🗑️ 빈 폴더 삭제됨: {old_dir}")
+    except: pass
 
 # --- 헬퍼 함수 ---
 def parse_duration(duration_str):
@@ -100,6 +148,9 @@ def get_date_from_snowflake_id(id_str):
 # --- 메인 클래스 ---
 class LinkedinUserScraper:
     def __init__(self):
+        # 마이그레이션 실행
+        migrate_old_data(USER_ID)
+
         self.posts = []
         self.collected_codes = set()
         self.stopped_early = False
@@ -391,7 +442,8 @@ class LinkedinUserScraper:
     def get_latest_full_file(self):
         if not os.path.exists(USER_DATA_DIR):
             return None
-        files = [f for f in os.listdir(USER_DATA_DIR) if f.startswith("linkedin_python_full_") and f.endswith(".json")]
+        # 새 규칙 우선 검색
+        files = [f for f in os.listdir(USER_DATA_DIR) if f.startswith(f"linkedin_{USER_ID}_full_") and f.endswith(".json")]
         if not files:
             return None
         files.sort(reverse=True)
@@ -485,18 +537,16 @@ class LinkedinUserScraper:
             print("ℹ️ 모두 이미 수집된 데이터입니다.")
             return
 
-        new_posts.sort(key=lambda x: x['code'])
-        for post in new_posts:
-            self.max_sequence_id += 1
-            post["sequence_id"] = self.max_sequence_id
-
-        # 업데이트 파일 저장
+        # 업데이트 파일 저장 (임시 저장용이므로 수집 순서 유지 또는 code 정렬 선택 가능)
+        # 여기서는 code 역순(최신순)으로 정렬하여 저장
+        new_posts.sort(key=lambda x: int(x['code']), reverse=True)
+        
         timestamp = CRAWL_START_TIME.strftime("%Y%m%d_%H%M%S")
-        update_file = os.path.join(UPDATE_DIR, f"linkedin_python_update_{timestamp}.json")
+        update_file = os.path.join(UPDATE_DIR, f"linkedin_{USER_ID}_update_{timestamp}.json")
         save_json(update_file, [{"index": i+1, **p} for i, p in enumerate(new_posts)])
         print(f"💾 업데이트 저장: {update_file} ({len(new_posts)}개)")
         
-        # 전체 데이터 병합
+        # 전체 데이터 병합 및 재정렬
         self.update_full_version()
 
     def update_full_version(self):
@@ -513,28 +563,50 @@ class LinkedinUserScraper:
             else:
                 old_posts = old_data_obj
 
-        existing_codes = {p["code"] for p in old_posts}
-        new_items = [p for p in self.posts if p["code"] not in existing_codes]
-        duplicate_count = len(self.posts) - len(new_items)
+        # 1. 중복 제거 (Code 기준)
+        # 수집된 self.posts 전체와 기존 old_posts를 합쳐서 중복을 제거함
+        # self.posts에는 이미 new_posts 뿐만 아니라 수집 세션 동안의 모든 포스트가 있을 수 있음
+        # 하지만 save_results에서 new_posts만 걸러냈으므로, 여기서는 명확하게 합침
         
-        final_posts = new_items + old_posts
-        final_posts.sort(key=lambda x: x.get("sequence_id", 0), reverse=True)
+        combined_map = {p["code"]: p for p in old_posts}
+        new_items_count = 0
+        
+        for p in self.posts:
+            if p["code"] not in combined_map:
+                combined_map[p["code"]] = p
+                new_items_count += 1
+        
+        final_posts = list(combined_map.values())
+
+        # 2. 절대적 시간 순서 정렬 (Snowflake ID 기반)
+        # Sequence ID 재할당을 위해 오름차순(과거->최신) 정렬 먼저 수행
+        final_posts.sort(key=lambda x: int(x['code']))
+
+        # 3. Sequence ID 재할당 (1부터 시작, 과거글이 1번)
+        for i, post in enumerate(final_posts):
+            post["sequence_id"] = i + 1
+        
+        self.max_sequence_id = len(final_posts)
+
+        # 4. 최종 저장용 내림차순(최신->과거) 정렬
+        final_posts.sort(key=lambda x: int(x['code']), reverse=True)
 
         merge_history = list(existing_merge_history)
-        if new_items:
+        if new_items_count > 0:
             merge_history.append({
                 "merged_at": datetime.now().isoformat(),
-                "new_items_count": len(new_items),
-                "duplicates_removed": duplicate_count,
+                "new_items_count": new_items_count,
+                "duplicates_removed": len(self.posts) - new_items_count, # 이번 수집 내에서의 중복
                 "source_file": source_filename,
-                "user_id": USER_ID
+                "user_id": USER_ID,
+                "note": "Sorted by Snowflake ID (code)"
             })
 
-        full_file = os.path.join(USER_DATA_DIR, f"linkedin_python_full_{CRAWL_START_TIME.strftime('%Y%m%d')}.json")
+        full_file = os.path.join(USER_DATA_DIR, f"linkedin_{USER_ID}_full_{CRAWL_START_TIME.strftime('%Y%m%d')}.json")
         
         full_data = {
             "metadata": {
-                "version": "1.0",
+                "version": "1.1", # 버전 업
                 "user_id": USER_ID,
                 "crawled_at": datetime.now().isoformat(),
                 "total_count": len(final_posts),
@@ -546,7 +618,7 @@ class LinkedinUserScraper:
             "posts": final_posts
         }
         save_json(full_file, full_data)
-        print(f"💾 전체 데이터 저장: {full_file} (총 {len(final_posts)}개)")
+        print(f"💾 전체 데이터 저장 (정렬 완료): {full_file} (총 {len(final_posts)}개)")
 
 if __name__ == "__main__":
     scraper = LinkedinUserScraper()
