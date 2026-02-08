@@ -6,6 +6,7 @@ import argparse
 from datetime import datetime, timedelta
 from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
+from utils.json_to_md import convert_json_to_md
 
 # --- 설정 ---
 BASE_DATA_DIR = "output_substack"
@@ -286,6 +287,9 @@ class SubstackScraper:
         }
         save_json(full_file, full_data)
         print(f"💾 전체 데이터 저장: {full_file} (총 {len(final_posts)}개)")
+        
+        # Markdown 자동 변환
+        convert_json_to_md(full_file)
 
 if __name__ == "__main__":
     scraper = SubstackScraper()

@@ -7,6 +7,7 @@ import json
 import argparse
 from datetime import datetime
 import io
+from utils.json_to_md import convert_json_to_md
 
 # Windows 터미널 인코딩 문제 해결을 위한 설정
 if sys.platform == 'win32':
@@ -130,6 +131,9 @@ def save_total(new_posts, threads_count, linkedin_count):
     with open(total_filename, 'w', encoding='utf-8') as f:
         json.dump(total_data, f, ensure_ascii=False, indent=4)
     print(f"Total Full 저장 완료: {total_filename} (총 {len(new_posts)}개, Threads: {threads_count}, LinkedIn: {linkedin_count})")
+    
+    # Markdown 자동 변환
+    convert_json_to_md(total_filename)
     
     if new_items:
         update_dir = os.path.join(OUTPUT_TOTAL_DIR, "update")

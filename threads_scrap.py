@@ -17,6 +17,7 @@ import glob
 import argparse
 from datetime import datetime, timedelta
 from dotenv import load_dotenv
+from utils.json_to_md import convert_json_to_md
 
 # 환경 변수 로드
 load_dotenv('.env.local')
@@ -236,6 +237,9 @@ def update_simple_version(new_data, stop_code, crawl_start_time):
         with open(today_simple, "w", encoding="utf-8") as f:
             json.dump(full_data, f, ensure_ascii=False, indent=4)
         print(f"📦 Simple 버전 저장 완료: {today_simple}")
+        
+        # Markdown 자동 변환
+        convert_json_to_md(today_simple)
     except Exception as e:
         print(f"⚠️ Simple 버전 저장 실패: {e}")
     return today_simple
@@ -702,6 +706,9 @@ def run():
                 with open(simple_filename, "w", encoding="utf-8") as f:
                     json.dump(save_data, f, ensure_ascii=False, indent=4)
                 print(f"\n📦 Simple Full 버전 생성 완료: {simple_filename}")
+                
+                # Markdown 자동 변환
+                convert_json_to_md(simple_filename)
         else:
             print("\n😭 수집된 데이터가 없습니다.")
 

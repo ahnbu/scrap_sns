@@ -1,0 +1,13 @@
+{
+  "metadata": {
+    "crawled_at": "2026-02-08T12:00:00"
+  },
+  "posts": [
+    {
+      "code": "test1",
+      "title": "Test Title",
+      "body_text": "This is a test body.\\n\\nParagraph 2.",
+      "images": ["http://example.com/img.jpg"]
+    }
+  ]
+}
