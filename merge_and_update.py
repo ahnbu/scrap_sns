@@ -28,15 +28,27 @@ linkedin_data = load_json(linkedin_file)
 threads_posts = threads_data.get('posts', []) if isinstance(threads_data, dict) else threads_data
 linkedin_posts = linkedin_data.get('posts', []) if isinstance(linkedin_data, dict) else linkedin_data
 
-# 2. 플랫폼 구분 필드 추가
+# 2. 플랫폼 구분 필드 추가 및 중복 제거
+seen_codes = set()
+unique_posts = []
+
 for p in threads_posts:
     p['sns_platform'] = 'threads'
+    code = str(p.get('code'))
+    if code not in seen_codes:
+        unique_posts.append(p)
+        seen_codes.add(code)
+
 for p in linkedin_posts:
     p['sns_platform'] = 'linkedin'
+    code = str(p.get('code'))
+    if code not in seen_codes:
+        unique_posts.append(p)
+        seen_codes.add(code)
 
-all_posts = threads_posts + linkedin_posts
+all_posts = unique_posts
 
-print(f"✅ Threads: {len(threads_posts)}개")
+print(f"✅ Threads: {len([p for p in all_posts if p['sns_platform'] == 'threads'])}개 (중복 제거됨)")
 print(f"✅ LinkedIn: {len(linkedin_posts)}개")
 print(f"✅ Total: {len(all_posts)}개")
 print(f"✅ LinkedIn 개행 확인: {any(chr(10) in p.get('full_text', '') for p in linkedin_posts if p.get('sns_platform') == 'linkedin')}")
@@ -50,9 +62,10 @@ total_data = {
     "metadata": {
         "updated_at": datetime.now().isoformat(),
         "total_count": len(all_posts),
-        "threads_count": len(threads_posts),
-        "linkedin_count": len(linkedin_posts),
-        "new_items_count": len(all_posts)
+        "threads_count": len([p for p in all_posts if p['sns_platform'] == 'threads']),
+        "linkedin_count": len([p for p in all_posts if p['sns_platform'] == 'linkedin']),
+        "new_items_count": len(all_posts),
+        "duplicates_removed": (len(threads_posts) + len(linkedin_posts)) - len(all_posts)
     },
     "posts": all_posts
 }

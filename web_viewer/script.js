@@ -160,7 +160,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     const result = await response.json();
 
                     if (result.status === 'success') {
-                        alert(`${modeLabel}이 완료되었습니다! 데이터를 새로고침합니다.`);
+                        const stats = result.stats || { total: 0, threads: 0, linkedin: 0 };
+                        const msg = `총 ${stats.total}건이 추가되었습니다. 데이터를 새로고침합니다.\n\n쓰레드 - ${stats.threads}건 추가\n링크드인 - ${stats.linkedin}건 추가`;
+                        alert(msg);
                         fetchData(); // Refresh feed
                     } else {
                         alert(`에러 발생: ${result.message}`);

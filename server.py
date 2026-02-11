@@ -115,9 +115,27 @@ def run_scrap():
 
         if process.returncode == 0:
             print("✅ 스크래핑 성공적으로 완료.")
+            
+            # 최신 메타데이터 가져오기
+            stats = {"total": 0, "threads": 0, "linkedin": 0}
+            try:
+                pattern = os.path.join(OUTPUT_TOTAL_DIR, "total_full_*.json")
+                files = glob.glob(pattern)
+                if files:
+                    files.sort(reverse=True)
+                    with open(files[0], 'r', encoding='utf-8') as f:
+                        latest_data = json.load(f)
+                        meta = latest_data.get('metadata', {})
+                        stats["total"] = meta.get('new_items_count', 0)
+                        stats["threads"] = meta.get('new_threads_count', 0)
+                        stats["linkedin"] = meta.get('new_linkedin_count', 0)
+            except Exception as e:
+                print(f"⚠️ 통계 데이터 로드 중 에러: {str(e)}")
+
             return jsonify({
                 "status": "success",
                 "message": "Scraping completed successfully.",
+                "stats": stats,
                 "output": stdout_val
             })
         else:

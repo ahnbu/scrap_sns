@@ -92,8 +92,21 @@ def merge_results():
     for p in linkedin_posts:
         p['sns_platform'] = 'linkedin'
 
-    all_posts = threads_posts + linkedin_posts
-    return all_posts, len(threads_posts), len(linkedin_posts)
+    # 중복 제거 (code 기준)
+    seen_codes = set()
+    unique_posts = []
+    
+    # Threads 우선 순위 유지를 위해 threads -> linkedin 순으로 처리 (또는 그 반대)
+    # 현재는 threads_posts + linkedin_posts 순서 그대로 유지하며 중복만 필터링
+    for p in threads_posts + linkedin_posts:
+        code = str(p.get('code'))
+        if code not in seen_codes:
+            unique_posts.append(p)
+            seen_codes.add(code)
+        else:
+            continue
+
+    return unique_posts, len(threads_posts), len(linkedin_posts)
 
 def save_total(new_posts, threads_count, linkedin_count):
     today = datetime.now().strftime('%Y%m%d')
@@ -115,15 +128,21 @@ def save_total(new_posts, threads_count, linkedin_count):
         if str(p.get('code')) not in prev_codes:
             new_items.append(p)
             
+    new_threads_count = sum(1 for p in new_items if p.get('sns_platform') == 'threads')
+    new_linkedin_count = sum(1 for p in new_items if p.get('sns_platform') == 'linkedin')
+
     os.makedirs(OUTPUT_TOTAL_DIR, exist_ok=True)
     
     total_data = {
         "metadata": {
             "updated_at": datetime.now().isoformat(),
             "total_count": len(new_posts),
-            "threads_count": threads_count,
-            "linkedin_count": linkedin_count,
-            "new_items_count": len(new_items)
+            "threads_count": sum(1 for p in new_posts if p.get('sns_platform') == 'threads'),
+            "linkedin_count": sum(1 for p in new_posts if p.get('sns_platform') == 'linkedin'),
+            "new_items_count": len(new_items),
+            "new_threads_count": new_threads_count,
+            "new_linkedin_count": new_linkedin_count,
+            "duplicates_removed": (threads_count + linkedin_count) - len(new_posts)
         },
         "posts": new_posts
     }

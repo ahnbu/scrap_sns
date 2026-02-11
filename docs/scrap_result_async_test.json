@@ -126,24 +126,6 @@
         "post_url": "https://www.threads.com/@alex_ai_mcp/post/DTBrJ1HE1Mi"
     },
     {
-        "code": "DT93hKjDzNI",
-        "root_code": "DT93hKjDzNI",
-        "username": "seulgi.kaang",
-        "full_text": "[📥 클로드코드 설치 매뉴얼 배포]\n\n클로드코드 설치도 진짜 쉽고\n설치만 하고 나면\n프롬프트 > 결과물\n보는 것 똑같음\n\n그 이후 고도화도\nAI한테 조언 얻어가며\n진행하고!\n\n그래도 매뉴얼 필요하다면:",
-        "created_at": "2026-01-26 17:09:59",
-        "images_count": 1,
-        "post_url": "https://www.threads.com/@seulgi.kaang/post/DT93hKjDzNI"
-    },
-    {
-        "code": "DT93hEfj7TV",
-        "root_code": "DT93hKjDzNI",
-        "username": "seulgi.kaang",
-        "full_text": "요기! PDF 매뉴얼:\nhttps://drive.google.com/drive/folders/1d8LFr31jRjWzwQ040CroMAc6doADxuGC?usp=sharing\n💬퇴근후AI 단톡방에서 나눈 팁: https://open.kakao.com/o/gzdwHNQh\n📣2월 시작하는 AI 기초-중급 4주 챌린지에서 AI Studio, 클로드코드, 안티그래비티 사용법 기본도 다룰 예정이니 많은 참여 부탁 :) (1월 28일 신청 마감)\nhttps://www.latpeed.com/products/2BE6H",
-        "created_at": "2026-01-26 17:09:58",
-        "images_count": 0,
-        "post_url": "https://www.threads.com/@seulgi.kaang/post/DT93hEfj7TV"
-    },
-    {
         "code": "DT6sAONj9K8",
         "root_code": "DT6sAONj9K8",
         "username": "choi.openai",
@@ -162,6 +144,24 @@
         "post_url": "https://www.threads.com/@choi.openai/post/DT6r--5j5Pp"
     },
     {
+        "code": "DT93hKjDzNI",
+        "root_code": "DT93hKjDzNI",
+        "username": "seulgi.kaang",
+        "full_text": "[📥 클로드코드 설치 매뉴얼 배포]\n\n클로드코드 설치도 진짜 쉽고\n설치만 하고 나면\n프롬프트 > 결과물\n보는 것 똑같음\n\n그 이후 고도화도\nAI한테 조언 얻어가며\n진행하고!\n\n그래도 매뉴얼 필요하다면:",
+        "created_at": "2026-01-26 17:09:59",
+        "images_count": 1,
+        "post_url": "https://www.threads.com/@seulgi.kaang/post/DT93hKjDzNI"
+    },
+    {
+        "code": "DT93hEfj7TV",
+        "root_code": "DT93hKjDzNI",
+        "username": "seulgi.kaang",
+        "full_text": "요기! PDF 매뉴얼:\nhttps://drive.google.com/drive/folders/1d8LFr31jRjWzwQ040CroMAc6doADxuGC?usp=sharing\n💬퇴근후AI 단톡방에서 나눈 팁: https://open.kakao.com/o/gzdwHNQh\n📣2월 시작하는 AI 기초-중급 4주 챌린지에서 AI Studio, 클로드코드, 안티그래비티 사용법 기본도 다룰 예정이니 많은 참여 부탁 :) (1월 28일 신청 마감)\nhttps://www.latpeed.com/products/2BE6H",
+        "created_at": "2026-01-26 17:09:58",
+        "images_count": 0,
+        "post_url": "https://www.threads.com/@seulgi.kaang/post/DT93hEfj7TV"
+    },
+    {
         "code": "DT5ScNij4Uw",
         "root_code": "DT6c3mrEwmC",
         "username": "hajae.code",
@@ -169,6 +169,15 @@
         "created_at": "2026-01-24 22:29:02",
         "images_count": 0,
         "post_url": "https://www.threads.com/@hajae.code/post/DT5ScNij4Uw"
+    },
+    {
+        "code": "DS35eB9j40f",
+        "root_code": "DS4TktPD6BP",
+        "username": "eddmpython",
+        "full_text": "파이썬 편하게 공부하고 싶으신분들 eddmpython으로 모여주세요~ㅎ",
+        "created_at": "2025-12-30 13:00:12",
+        "images_count": 0,
+        "post_url": "https://www.threads.com/@eddmpython/post/DS35eB9j40f"
     },
     {
         "code": "DUAmX2YkSSm",
@@ -223,15 +232,6 @@
         "created_at": "2026-01-27 18:37:52",
         "images_count": 0,
         "post_url": "https://www.threads.com/@lazypencil_lab/post/DUAmXxIEVqq"
-    },
-    {
-        "code": "DS35eB9j40f",
-        "root_code": "DS4TktPD6BP",
-        "username": "eddmpython",
-        "full_text": "파이썬 편하게 공부하고 싶으신분들 eddmpython으로 모여주세요~ㅎ",
-        "created_at": "2025-12-30 13:00:12",
-        "images_count": 0,
-        "post_url": "https://www.threads.com/@eddmpython/post/DS35eB9j40f"
     },
     {
         "code": "DUIde6ZE-Zy",
@@ -727,5 +727,104 @@
         "created_at": "2026-01-16 13:53:37",
         "images_count": 0,
         "post_url": "https://www.threads.com/@gogosing__77/post/DTjxGKCkaG3"
+    },
+    {
+        "code": "DUiOFVsEsXn",
+        "root_code": "DUiW8Uekmf0",
+        "username": "appcast",
+        "full_text": "Playwright CLI 출시 \n1. MCP 사용 ,  2. CLI 사용했을때 의 토큰 사용차이.",
+        "created_at": "2026-02-09 19:59:49",
+        "images_count": 1,
+        "post_url": "https://www.threads.com/@appcast/post/DUiOFVsEsXn"
+    },
+    {
+        "code": "DUfZZGdE71B",
+        "root_code": "DUfZZ8Wk5K_",
+        "username": "yc_melan",
+        "full_text": "AI 시대 바이브코딩이 가져올 개발자의 미래\n문득 현재 작곡가들의 변천사와 너무 닮았다는 생각이 들었다.\n\n과거 클래식 작곡가는 화성학, 대위법, 오케스트레이션을 깊이 알아야 했고 악기도 하나 이상 다룰 줄 알아야 했다. 악보를 읽을 줄 모르면 작곡 자체가 불가능했다.\n과거 개발자도 마찬가지였다. 메모리 관리, 어셈블리, OS 내부 구조를 직접 다뤄야 했고 코드를 한 줄 한 줄 직접 쓸 줄 알아야만 소프트웨어를 만들 수 있었다. 진입장벽이 곧 전문성이었다.",
+        "created_at": "2026-02-08 17:40:55",
+        "images_count": 0,
+        "post_url": "https://www.threads.com/@yc_melan/post/DUfZZGdE71B"
+    },
+    {
+        "code": "DUfZZfBk8fT",
+        "root_code": "DUfZZ8Wk5K_",
+        "username": "yc_melan",
+        "full_text": "밴드 시대 작곡가는 악기 파트가 줄었지만 기타, 베이스, 드럼의 조화를 이해해야 했고 작사가·편곡자와 협업하는 구조였다.\n지금의 풀스택 개발자도 프론트, 백엔드, DB, 인프라를 다룰 줄 알아야 하고 디자이너·PM과 역할이 명확히 나뉜 팀 단위로 일한다. \"코드를 잘 치는 사람\"이 좋은 개발자의 기준이었다.\n\n그런데 지금 음악 시장은? 소위 말하는 프로듀서가 주류다.\n악보를 직접 쓰는 게 아니라 DAW로 비트를 찍고 샘플을 조합하고 전체 방향을 디렉팅한다. 악기를 못 다뤄도 되고 화성학을 몰라도 된다. 중요한 건 \"어떤 소리를 만들고 싶은가\"라는 비전이지 악기 테크닉이 아니다.",
+        "created_at": "2026-02-08 17:40:58",
+        "images_count": 0,
+        "post_url": "https://www.threads.com/@yc_melan/post/DUfZZfBk8fT"
+    },
+    {
+        "code": "DUfZZ8Wk5K_",
+        "root_code": "DUfZZ8Wk5K_",
+        "username": "yc_melan",
+        "full_text": "바이브코딩 시대의 개발자도 똑같아질 거라고 본다.\n코드를 직접 치는 게 핵심이 아니라 AI 에이전트를 오케스트레이션해서 \"어떤 제품을 만들 것인가\"를 디렉팅하는 역할. 프로듀서가 보컬에게 \"여기서 좀 더 감성적으로\"라고 디렉션을 주듯 개발자도 AI에게 방향을 잡아주는 것이다.\n\n싱어송라이터가 직접 작곡하고 부르듯이 결국 서비스 개발자가 직접 자기 서비스를 만드는 시대가 온다.\n과거엔 \"전략가\"와 \"개발자\"가 따로 있어야 했지만 이제는 아이디어를 가진 사람이 직접 만든다. 그사람이 개발자 이자 전략가 이다.",
+        "created_at": "2026-02-08 17:41:02",
+        "images_count": 0,
+        "post_url": "https://www.threads.com/@yc_melan/post/DUfZZ8Wk5K_"
+    },
+    {
+        "code": "DUfZadbky5q",
+        "root_code": "DUfZZ8Wk5K_",
+        "username": "yc_melan",
+        "full_text": "다만 음악에서도 살아남은 프로듀서들의 공통점이 있다. DAW를 잘 다루는 사람이 아니라 음악 자체에 대한 깊은 이해와 취향이 있는 사람이다.\n\n개발도 마찬가지일 거다. 바이브코딩 도구를 잘 쓰는 것만으로는 차별화가 안 된다. \"무엇을 왜 만드는가\"에 대한 제품 감각, 그리고 AI가 뱉은 결과물의 품질을 판단할 수 있는 기술적 안목. 음악처럼 이 컴퓨터 과학과 네트워킹 기술자체에 대한 깊은 이해와 취향이 있어야 한다. 그게 디렉팅 능력이 본질이다.",
+        "created_at": "2026-02-08 17:41:06",
+        "images_count": 0,
+        "post_url": "https://www.threads.com/@yc_melan/post/DUfZadbky5q"
+    },
+    {
+        "code": "DUfZa8gkwyj",
+        "root_code": "DUfZZ8Wk5K_",
+        "username": "yc_melan",
+        "full_text": "그리고 완벽하게 나온다는 작곡쪽 AI에서도 아직은 아직 좀 먼 미래의 얘기긴 하지만.. \nSuno에 \"슬픈 발라드 만들어줘\"라고 해도 곡은 정말 사람처럼 좋게 나온다. 하지만 \"비 오는 새벽 3시에 혼자 모짜르트 생각하면서 술 마시면서 듣는 느낌\"이라고 하면 결과물이 완전히 달라진다. 그 프롬프트를 쓸 수 있는 건 그 감정과 분위기를 아는 사람뿐이다.\n바이브코딩도 같다. 로그인 만들어줘와 \"사용자가 불안하지 않게 자연스럽게 흘러가는 온보딩 설계해서 JWT 리리프레시 토큰 형식으로 짜줘 UX는 최대한 미니멀하게 귀찮지 않게\"는 전혀 다른 결과물을 만든다. 그리고 인간의 욕구는 끝이 없기에 차별화를 두기 위해서 이것보다 더 \"어떤 분위기로 만들어줘\" 라는 요구가 잉여력이 떨어질때까지 계속될것이다.",
+        "created_at": "2026-02-08 17:41:10",
+        "images_count": 0,
+        "post_url": "https://www.threads.com/@yc_melan/post/DUfZa8gkwyj"
+    },
+    {
+        "code": "DUfZbjeE47Z",
+        "root_code": "DUfZZ8Wk5K_",
+        "username": "yc_melan",
+        "full_text": "결국 AI가 아무리 발전해도 \"어떤 방향으로\"라는 디렉팅은 사람의 영역이다.\n프로듀서가 사라지는 게 아니라 프로듀서의 정의가 바뀌는 것이다. 악기를 연주하는 사람에서 방향을 잡아주는 사람으로. 개발자도 코드를 치는 사람에서 코드와 제품의 깊은이해를 통해 방향을 디렉팅하는 사람으로.\n남는 건 통찰, 취향, 감각, 그리고 \"이게 맞아\"라고 판단할 수 있는 안목. 이건 인풋이 있는 AI는 대체 못 한다.",
+        "created_at": "2026-02-08 17:41:15",
+        "images_count": 0,
+        "post_url": "https://www.threads.com/@yc_melan/post/DUfZbjeE47Z"
+    },
+    {
+        "code": "DUlWTf6kyKL",
+        "root_code": "DUlWT4Ok5v0",
+        "username": "ddg.kang",
+        "full_text": "클로드코드 꿀팁 — 개발자 출신들도 잘 모르는 것들\n\n어디서 베낀 거 아니고, 클코 5,000시간 사용하면서 직접 느낀 것들.",
+        "created_at": "2026-02-11 01:09:23",
+        "images_count": 0,
+        "post_url": "https://www.threads.com/@ddg.kang/post/DUlWTf6kyKL"
+    },
+    {
+        "code": "DUlWT4Ok5v0",
+        "root_code": "DUlWT4Ok5v0",
+        "username": "ddg.kang",
+        "full_text": "1. webfetch 도구 안쓰도록 금지시키기\n\n문제: webfetch 쓰다가 사이트 잘못 걸리면 거기서 멈춰서 아무것도 못 함.\n\n해결: fetch MCP나 Jina Reader MCP 사용하기.\n\n특히 클코에 돈 쓸 준비가 되어 있다면 Jina Reader MCP 추천 — 컨텍스트 토큰이 절약되어서 엄청나게 이득. fetch MCP는 무료면서 훨 좋음.",
+        "created_at": "2026-02-11 01:09:26",
+        "images_count": 0,
+        "post_url": "https://www.threads.com/@ddg.kang/post/DUlWT4Ok5v0"
+    },
+    {
+        "code": "DUlWUWbkz2p",
+        "root_code": "DUlWT4Ok5v0",
+        "username": "ddg.kang",
+        "full_text": "2. Skills 남발하지 않기\n\n문제: 클코에 Skills 새로 나왔다고 이것저것 만들기.\n\n해결: 회사 전체가 클코 쓰면서 Skills를 서로 공유해야 하는 상황이 아닌 이상(솔직히 클코 다같이 쓰는 회사 거의 없음.. 다 혼자 쓰실듯), skills 안에 하나의 custom command로 간단하게 넣어놓는 게 훨씬 나음.\n\n(뭔 소린지 모르겠으면 이 글 복붙해서 클코에게 직접 물어보기)",
+        "created_at": "2026-02-11 01:09:30",
+        "images_count": 0,
+        "post_url": "https://www.threads.com/@ddg.kang/post/DUlWUWbkz2p"
+    },
+    {
+        "code": "DUlWU1jE0oR",
+        "root_code": "DUlWT4Ok5v0",
+        "username": "ddg.kang",
+        "full_text": "3. 그냥 무조건 Opus 쓰기\n\n문제: 토큰 아낀다고 Sonnet, Haiku 사용.\n\n해결: 그냥 Opus 쓰는 게 훨씬 토큰 아낌. 저는 대부분 one-shot에 버그 없이 기능 완성합니다. 그럼 버그 잡느라 대화 안해도 되어서 오히려 절약.\n\n나중에 실제로 5천시간 클코하면서 발전시킨 프롬프트, 스킬도 공유할게요.",
+        "created_at": "2026-02-11 01:09:34",
+        "images_count": 0,
+        "post_url": "https://www.threads.com/@ddg.kang/post/DUlWU1jE0oR"
     }
 ]
