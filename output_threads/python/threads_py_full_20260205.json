@@ -2,8 +2,8 @@
     "metadata": {
         "version": "1.0",
         "crawled_at": "2026-02-05T12:03:23.581893",
-        "total_count": 232,
-        "max_sequence_id": 403,
+        "total_count": 233,
+        "max_sequence_id": 404,
         "first_code": "DT_1J1ukXjz",
         "last_code": "DRtU-J0E3MU",
         "crawl_mode": "update only",
@@ -18,18 +18,32 @@
                 "stop_code": "DULCfk1EqLV"
             }
         ],
-        "updated_at": "2026-02-11T15:29:11.225049",
-        "integrated_at": "2026-02-11T15:30:23.457312",
+        "updated_at": "2026-02-11T16:52:05.365685",
+        "integrated_at": "2026-02-11T16:52:14.116143",
         "stats": {
-            "merged": 220,
+            "merged": 221,
             "multi_thread": 152,
-            "single_thread": 68,
+            "single_thread": 69,
             "failed_or_pending": 12
         },
         "historical_cleanup": true,
         "cleanup_at": "2026-02-11T15:29:01.322015"
     },
     "posts": [
+        {
+            "code": "DUm-zDsEkn3",
+            "root_code": "DUm-zDsEkn3",
+            "username": "keke_appa",
+            "full_text": "오늘도 스레드에서 욕들어 처먹는 어리버리 바이브코딩 딸각충들을 위한 개발가이드. 디자인가이드, 방법론 가이드 문서와 사용법을 만들었어요. 욕그만들으시라고 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ\n https://github.com/johunsang/vive-md",
+            "created_at": "2026-02-11 16:22:27",
+            "images_count": 1,
+            "post_url": "https://www.threads.com/@keke_appa/post/DUm-zDsEkn3",
+            "images": [],
+            "is_merged_thread": true,
+            "original_item_count": 1,
+            "sequence_id": 404,
+            "crawled_at": null
+        },
         {
             "code": "DT5ScNij4Uw",
             "root_code": "DT5ScNij4Uw",

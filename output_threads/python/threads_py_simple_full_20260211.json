@@ -1,19 +1,45 @@
 {
     "metadata": {
         "version": "1.0",
-        "crawled_at": "2026-02-11T09:28:28.467050",
-        "total_count": 232,
-        "source_file_count": 10,
+        "crawled_at": "2026-02-11T16:52:04.658974",
+        "total_count": 233,
+        "source_file_count": 1,
         "merge_history": [
             {
                 "merged_at": "2026-02-11T09:28:28.467050",
                 "new_items_count": 10,
                 "duplicates_removed": 0,
                 "stop_code": "DUX8tp_EvRN"
+            },
+            {
+                "merged_at": "2026-02-11T16:52:04.658974",
+                "new_items_count": 1,
+                "duplicates_removed": 0,
+                "stop_code": "DUmEccXCjhM"
             }
         ]
     },
     "posts": [
+        {
+            "code": "DUm-zDsEkn3",
+            "pk": null,
+            "username": "keke_appa",
+            "user_link": "https://www.threads.net/@keke_appa",
+            "full_text": "오늘도 스레드에서 욕들어 처먹는 어리버리 바이브코딩 딸각충들을 위한 개발가이드. 디자인가이드, 방법론 가이드 문서와 사용법을 만들었어요. 욕그만들으시라고 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ\ngithub.com/johun…",
+            "like_count": -1,
+            "reply_count": -1,
+            "repost_count": -1,
+            "quote_count": -1,
+            "created_at": "2026-02-11 16:22:51",
+            "time_text": "2026-02-11",
+            "post_url": "https://www.threads.com/@keke_appa/post/DUm-zDsEkn3",
+            "images": [
+                "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/631489976_17874847140507614_5724412297782130255_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTI4NngxNTk2LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QE1s6juGQqI26VRjJcB0KIWbYsZJUMIO6212qKV5WpHrUGOfIPy7D9GzWfdW9zviEs&_nc_ohc=D1MEwKmeAyEQ7kNvwGVcS8m&_nc_gid=YhuZRhwFnSldU4-UTMBPsQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMDAyNDcyMDY2MjgwOTA3OQ%3D%3D.3-ccb7-5&oh=00_Afs0SsxnCqcHE4ZIX5YQfOaShPI-ms7OBjq8aAIBpwpaag&oe=699221CC&_nc_sid=10d13b"
+            ],
+            "media_type": null,
+            "content_type": "image",
+            "source": "initial_dom"
+        },
         {
             "code": "DUmEccXCjhM",
             "pk": null,

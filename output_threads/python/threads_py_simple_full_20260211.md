@@ -1,11 +1,23 @@
 # Data Export Report
 
-- **Generated At**: 2026-02-11T09:28:28.467050
-- **Total Posts**: 232
+- **Generated At**: 2026-02-11T16:52:04.658974
+- **Total Posts**: 233
 
 ---
 
-## 1. aicoffeechat
+## 1. keke_appa
+> **Date**: 2026-02-11 16:22:51
+> **Link**: [Original Post](https://www.threads.com/@keke_appa/post/DUm-zDsEkn3)
+
+오늘도 스레드에서 욕들어 처먹는 어리버리 바이브코딩 딸각충들을 위한 개발가이드. 디자인가이드, 방법론 가이드 문서와 사용법을 만들었어요. 욕그만들으시라고 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+github.com/johun…
+
+### Images
+![Image](https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/631489976_17874847140507614_5724412297782130255_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTI4NngxNTk2LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QE1s6juGQqI26VRjJcB0KIWbYsZJUMIO6212qKV5WpHrUGOfIPy7D9GzWfdW9zviEs&_nc_ohc=D1MEwKmeAyEQ7kNvwGVcS8m&_nc_gid=YhuZRhwFnSldU4-UTMBPsQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMDAyNDcyMDY2MjgwOTA3OQ%3D%3D.3-ccb7-5&oh=00_Afs0SsxnCqcHE4ZIX5YQfOaShPI-ms7OBjq8aAIBpwpaag&oe=699221CC&_nc_sid=10d13b)
+
+---
+
+## 2. aicoffeechat
 > **Date**: 2026-02-11 08:27:57
 > **Link**: [Original Post](https://www.threads.com/@aicoffeechat/post/DUmEccXCjhM)
 
@@ -19,7 +31,7 @@
 
 ---
 
-## 2. ddg.kang
+## 3. ddg.kang
 > **Date**: 2026-02-11 01:27:57
 > **Link**: [Original Post](https://www.threads.com/@ddg.kang/post/DUlWT4Ok5v0)
 
@@ -34,7 +46,7 @@
 
 ---
 
-## 3. ddg.kang
+## 4. ddg.kang
 > **Date**: 2026-02-11 01:27:57
 > **Link**: [Original Post](https://www.threads.com/@ddg.kang/post/DUlWTf6kyKL)
 
@@ -46,7 +58,7 @@
 
 ---
 
-## 4. easygpt2526
+## 5. easygpt2526
 > **Date**: 2026-02-10 14:27:57
 > **Link**: [Original Post](https://www.threads.com/@easygpt2526/post/DUkMWqNk9OY)
 
@@ -57,7 +69,7 @@
 
 ---
 
-## 5. claudeai
+## 6. claudeai
 > **Date**: 2026-02-11 07:27:57
 > **Link**: [Original Post](https://www.threads.com/@claudeai/post/DUl7Ra7kbje)
 
@@ -71,7 +83,7 @@ We’re bringing full feature parity with MacOS: file access, multi-step task ex
 
 ---
 
-## 6. yc_melan
+## 7. yc_melan
 > **Date**: 2026-02-08 17:40:55
 > **Link**: [Original Post](https://www.threads.com/@claudeai/post/DUfZZGdE71B)
 
@@ -83,7 +95,7 @@ AI 시대 바이브코딩이 가져올 개발자의 미래
 
 ---
 
-## 7. yc_melan
+## 8. yc_melan
 > **Date**: 2026-02-08 17:41:02
 > **Link**: [Original Post](https://www.threads.com/@claudeai/post/DUfZZ8Wk5K_)
 
@@ -95,7 +107,7 @@ AI 시대 바이브코딩이 가져올 개발자의 미래
 
 ---
 
-## 8. appcast
+## 9. appcast
 > **Date**: 2026-02-09 21:17:14
 > **Link**: [Original Post](https://www.threads.com/@claudeai/post/DUiW8Uekmf0)
 
@@ -103,7 +115,7 @@ AI 시대 바이브코딩이 가져올 개발자의 미래
 
 ---
 
-## 9. appcast
+## 10. appcast
 > **Date**: 2026-02-09 19:59:49
 > **Link**: [Original Post](https://www.threads.com/@claudeai/post/DUiOFVsEsXn)
 
@@ -115,7 +127,7 @@ Playwright CLI 출시
 
 ---
 
-## 10. choi.openai
+## 11. choi.openai
 > **Date**: 2026-02-09 08:00:05
 > **Link**: [Original Post](https://www.threads.com/@claudeai/post/DUg7t0qCE5C)
 
@@ -132,7 +144,7 @@ Miles Deutscher가 공유한 프롬프트로 SEO 최적화 웹사이트, Claude 
 
 ---
 
-## 11. bellman.pub
+## 12. bellman.pub
 > **Date**: 2026-02-05 20:30:18
 > **Link**: [Original Post](https://www.threads.com/@bellman.pub/post/DUX8tp_EvRN)
 
@@ -154,7 +166,7 @@ GitHub - Yeachan-Heo/oh-my-claudecode: Multi-agent orchestration for Claude Code
 
 ---
 
-## 12. specal1849
+## 13. specal1849
 > **Date**: 2026-02-06 08:30:18
 > **Link**: [Original Post](https://www.threads.com/@specal1849/post/DUZLMwvkojo)
 
@@ -168,7 +180,7 @@ codex5.3 이랑 같이주네 도파민이 팽팽돕니다!!!
 
 ---
 
-## 13. gaebalsaybal
+## 14. gaebalsaybal
 > **Date**: 2026-02-05 17:30:18
 > **Link**: [Original Post](https://www.threads.com/@gaebalsaybal/post/DUWSRnukzT3)
 
@@ -190,7 +202,7 @@ Claude Max plan을 사용하며 매 주 새로운 제품을 출시 자동화를 
 
 ---
 
-## 14. keke_appa
+## 15. keke_appa
 > **Date**: 2026-02-04 00:55:51
 > **Link**: [Original Post](https://www.threads.com/@keke_appa/post/DUTTMTDEoas)
 
@@ -201,7 +213,7 @@ Claude Max plan을 사용하며 매 주 새로운 제품을 출시 자동화를 
 
 ---
 
-## 15. inner.builder
+## 16. inner.builder
 > **Date**: 2026-02-04 07:40:42
 > **Link**: [Original Post](https://www.threads.com/@inner.builder/post/DUUBhjKgeKZ)
 
@@ -211,7 +223,7 @@ obsidian x claudian (obsidian plugin) x notebooklm mcp 조합은 엄청나네..!
 
 ---
 
-## 16. geumverse_ai
+## 17. geumverse_ai
 > **Date**: 2026-02-04 11:01:42
 > **Link**: [Original Post](https://www.threads.com/@geumverse_ai/post/DUUYhntk4Ey)
 
@@ -221,7 +233,7 @@ Anthropic이 Claude Cowork 에 법률,영업,마케팅,데이터 분석 등 부�
 
 ---
 
-## 17. xeona.xyz
+## 18. xeona.xyz
 > **Date**: 2026-02-04 18:53:53
 > **Link**: [Original Post](https://www.threads.com/@xeona.xyz/post/DUVOj-xAVR3)
 
@@ -233,7 +245,7 @@ Anthropic이 Claude Cowork 에 법률,영업,마케팅,데이터 분석 등 부�
 
 ---
 
-## 18. kook0526
+## 19. kook0526
 > **Date**: 2026-01-30 20:54:40
 > **Link**: [Original Post](https://www.threads.com/@kook0526/post/DUIjrz2DkLv)
 
@@ -272,7 +284,7 @@ RFP 파일 하나만 넣으면
 
 ---
 
-## 19. gimminseog67
+## 20. gimminseog67
 > **Date**: 2026-01-29 21:52:07
 > **Link**: [Original Post](https://www.threads.com/@gimminseog67/post/DUGGMMmD-jS)
 
@@ -290,7 +302,7 @@ Crawdbot(다시 Moltbot)은 노다지가 맞네요. 브라우징(browsing) 기�
 
 ---
 
-## 20. kudi.uxui
+## 21. kudi.uxui
 > **Date**: 2026-01-17 00:43:42
 > **Link**: [Original Post](https://www.threads.com/@kudi.uxui/post/DTk7flMEgrz)
 
@@ -301,7 +313,7 @@ Crawdbot(다시 Moltbot)은 노다지가 맞네요. 브라우징(browsing) 기�
 
 ---
 
-## 21. dddesign.io
+## 22. dddesign.io
 > **Date**: 2026-01-10 17:14:29
 > **Link**: [Original Post](https://www.threads.com/@dddesign.io/post/DTUrUKhCfkX)
 
@@ -312,7 +324,7 @@ Crawdbot(다시 Moltbot)은 노다지가 맞네요. 브라우징(browsing) 기�
 
 ---
 
-## 22. kkongdon_story
+## 23. kkongdon_story
 > **Date**: 2026-01-27 00:00:00
 > **Link**: [Original Post](https://www.threads.com/@kkongdon_story/post/DT_1J1ukXjz)
 
@@ -325,7 +337,7 @@ Crawdbot(다시 Moltbot)은 노다지가 맞네요. 브라우징(browsing) 기�
 
 ---
 
-## 23. kkongdon_story
+## 24. kkongdon_story
 > **Date**: 2026-01-27 00:00:00
 > **Link**: [Original Post](https://www.threads.com/@kkongdon_story/post/DUAixXHkcOq)
 
@@ -337,7 +349,7 @@ AI는 확률 높은 정답만을 쫓도록 설계되어 있다.
 
 ---
 
-## 24. kkongdon_story
+## 25. kkongdon_story
 > **Date**: 2026-01-27 00:00:00
 > **Link**: [Original Post](https://www.threads.com/@kkongdon_story/post/DUA_fBqESd6)
 
@@ -349,7 +361,7 @@ AI는 확률 높은 정답만을 쫓도록 설계되어 있다.
 
 ---
 
-## 25. kkongdon_story
+## 26. kkongdon_story
 > **Date**: 2026-01-28 00:00:00
 > **Link**: [Original Post](https://www.threads.com/@kkongdon_story/post/DUCm2nZkRcW)
 
@@ -361,7 +373,7 @@ AI는 확률 높은 정답만을 쫓도록 설계되어 있다.
 
 ---
 
-## 26. kkongdon_story
+## 27. kkongdon_story
 > **Date**: 2026-01-30 12:02:50
 > **Link**: [Original Post](https://www.threads.com/@kkongdon_story/post/DUFTraLkVOW)
 
@@ -373,7 +385,7 @@ AI는 확률 높은 정답만을 쫓도록 설계되어 있다.
 
 ---
 
-## 27. kkongdon_story
+## 28. kkongdon_story
 > **Date**: 2026-01-30 12:02:50
 > **Link**: [Original Post](https://www.threads.com/@kkongdon_story/post/DUFb5JKkajY)
 
@@ -387,7 +399,7 @@ AI는 확률 높은 정답만을 쫓도록 설계되어 있다.
 
 ---
 
-## 28. visn__ai
+## 29. visn__ai
 > **Date**: 2026-02-04 09:45:37
 > **Link**: [Original Post](https://www.threads.com/@visn__ai/post/DUUP0ZfE7y8)
 
@@ -397,7 +409,7 @@ AI는 확률 높은 정답만을 쫓도록 설계되어 있다.
 
 ---
 
-## 29. easygpt2526
+## 30. easygpt2526
 > **Date**: 2026-02-04 10:49:48
 > **Link**: [Original Post](https://www.threads.com/@easygpt2526/post/DUUXKhGAG4-)
 
@@ -411,7 +423,7 @@ AI는 확률 높은 정답만을 쫓도록 설계되어 있다.
 
 ---
 
-## 30. kkongdon_story
+## 31. kkongdon_story
 > **Date**: 2026-02-03 21:03:21
 > **Link**: [Original Post](https://www.threads.com/@kkongdon_story/post/DUS4la6Ebp2)
 
@@ -425,7 +437,7 @@ AI는 역할 놀이보다
 
 ---
 
-## 31. _keunyoung_
+## 32. _keunyoung_
 > **Date**: 2026-02-04 09:23:12
 > **Link**: [Original Post](https://www.threads.com/@_keunyoung_/post/DUUNQMpE2m3)
 
@@ -435,7 +447,7 @@ Claude에게 매번 같은 설명을 반복하는 것이 귀찮았던 분들은 
 
 ---
 
-## 32. ur.future.ai
+## 33. ur.future.ai
 > **Date**: 2026-02-04 15:04:22
 > **Link**: [Original Post](https://www.threads.com/@ur.future.ai/post/DUU0S9ZkqQr)
 
@@ -445,7 +457,7 @@ Claude에게 매번 같은 설명을 반복하는 것이 귀찮았던 분들은 
 
 ---
 
-## 33. bibi_blog_world
+## 34. bibi_blog_world
 > **Date**: 2026-02-03 16:31:27
 > **Link**: [Original Post](https://www.threads.com/@bibi_blog_world/post/DUSZd-1EhSU)
 
@@ -457,7 +469,7 @@ Claude에게 매번 같은 설명을 반복하는 것이 귀찮았던 분들은 
 
 ---
 
-## 34. taaaaes
+## 35. taaaaes
 > **Date**: 2026-02-03 22:35:58
 > **Link**: [Original Post](https://www.threads.com/@taaaaes/post/DUTDCINAqM_)
 
@@ -466,7 +478,7 @@ Claude에게 매번 같은 설명을 반복하는 것이 귀찮았던 분들은 
 
 ---
 
-## 35. itszoejeong
+## 36. itszoejeong
 > **Date**: 2026-02-03 10:34:17
 > **Link**: [Original Post](https://www.threads.com/@itszoejeong/post/DURwmBAEh6d)
 
@@ -474,7 +486,7 @@ Claude에게 매번 같은 설명을 반복하는 것이 귀찮았던 분들은 
 
 ---
 
-## 36. _ju_tiger_lee_
+## 37. _ju_tiger_lee_
 > **Date**: 2026-02-02 20:59:48
 > **Link**: [Original Post](https://www.threads.com/@_ju_tiger_lee_/post/DUQTYlyElVu)
 
@@ -484,7 +496,7 @@ Claude에게 매번 같은 설명을 반복하는 것이 귀찮았던 분들은 
 
 ---
 
-## 37. __watermelonlover
+## 38. __watermelonlover
 > **Date**: 2026-02-01 03:49:08
 > **Link**: [Original Post](https://www.threads.com/@__watermelonlover/post/DUL4o2SEm78)
 
@@ -497,7 +509,7 @@ Gemini로 돌리면 Skill이나 Rule도 무시하고
 
 ---
 
-## 38. lov_entp
+## 39. lov_entp
 > **Date**: 2026-02-02 21:53:11
 > **Link**: [Original Post](https://www.threads.com/@lov_entp/post/DUQZfiwDzO2)
 
@@ -506,7 +518,7 @@ Gemini로 돌리면 Skill이나 Rule도 무시하고
 
 ---
 
-## 39. bellman.pub
+## 40. bellman.pub
 > **Date**: 2026-01-31 14:44:51
 > **Link**: [Original Post](https://www.threads.com/@bellman.pub/post/DUKe4kFklIf)
 
@@ -521,7 +533,7 @@ oh-my-claudecode (OMC) 한번 써보세요.
 
 ---
 
-## 40. __watermelonlover
+## 41. __watermelonlover
 > **Date**: 2026-02-02 22:49:12
 > **Link**: [Original Post](https://www.threads.com/@__watermelonlover/post/DUQf51ekbqu)
 
@@ -532,7 +544,7 @@ oh-my-claudecode (OMC) 한번 써보세요.
 
 ---
 
-## 41. yeoamlog
+## 42. yeoamlog
 > **Date**: 2026-02-02 21:04:59
 > **Link**: [Original Post](https://www.threads.com/@yeoamlog/post/DUQT-dageiP)
 
@@ -540,7 +552,7 @@ oh-my-claudecode (OMC) 한번 써보세요.
 
 ---
 
-## 42. stormleehj
+## 43. stormleehj
 > **Date**: 2026-02-02 22:32:42
 > **Link**: [Original Post](https://www.threads.com/@stormleehj/post/DUQeA6CDzDP)
 
@@ -548,7 +560,7 @@ oh-my-claudecode (OMC) 한번 써보세요.
 
 ---
 
-## 43. proverbsnapshots
+## 44. proverbsnapshots
 > **Date**: 2026-02-02 15:38:55
 > **Link**: [Original Post](https://www.threads.com/@proverbsnapshots/post/DUPuqTXk-f3)
 
@@ -560,7 +572,7 @@ ht...
 
 ---
 
-## 44. proverbsnapshots
+## 45. proverbsnapshots
 > **Date**: 2026-02-03 00:23:19
 > **Link**: [Original Post](https://www.threads.com/@proverbsnapshots/post/DUQqrL-k6dQ)
 
@@ -569,7 +581,7 @@ https://productivitylabkr.blogspot.com/2026/02/antigravity-notebooklm-m...
 
 ---
 
-## 45. stormleehj
+## 46. stormleehj
 > **Date**: 2026-02-02 20:59:25
 > **Link**: [Original Post](https://www.threads.com/@stormleehj/post/DUQTVuyD1V9)
 
@@ -583,7 +595,7 @@ https://productivitylabkr.blogspot.com/2026/02/antigravity-notebooklm-m...
 
 ---
 
-## 46. seulgi.kaang
+## 47. seulgi.kaang
 > **Date**: 2026-02-02 01:00:45
 > **Link**: [Original Post](https://www.threads.com/@seulgi.kaang/post/DUOKKcfj4wK)
 
@@ -595,7 +607,7 @@ Claude Code나 안티그래비티용 PPT 자동생성 시스템 만들어줘.
 
 ---
 
-## 47. silsangv
+## 48. silsangv
 > **Date**: 2026-02-02 13:01:03
 > **Link**: [Original Post](https://www.threads.com/@silsangv/post/DUPcmH7EZJc)
 
@@ -606,7 +618,7 @@ Antigravity는 일단 너무 무겁다. 이게 가장 큰 단점이다.
 
 ---
 
-## 48. bibi_blog_world
+## 49. bibi_blog_world
 > **Date**: 2026-02-02 16:18:24
 > **Link**: [Original Post](https://www.threads.com/@bibi_blog_world/post/DUPzLiCEusg)
 
@@ -621,7 +633,7 @@ Antigravity는 일단 너무 무겁다. 이게 가장 큰 단점이다.
 
 ---
 
-## 49. meteorsimulation
+## 50. meteorsimulation
 > **Date**: 2026-02-02 02:43:22
 > **Link**: [Original Post](https://www.threads.com/@meteorsimulation/post/DUOV38Dktnd)
 
@@ -632,7 +644,7 @@ Claude code로 hwpx 한글 문서작업 하기,
 
 ---
 
-## 50. starcomo
+## 51. starcomo
 > **Date**: 2026-01-31 20:45:22
 > **Link**: [Original Post](https://www.threads.com/@starcomo/post/DULCfk1EqLV)
 
@@ -642,7 +654,7 @@ Claude code로 hwpx 한글 문서작업 하기,
 
 ---
 
-## 51. starcomo
+## 52. starcomo
 > **Date**: 2026-01-31 19:45:22
 > **Link**: [Original Post](https://www.threads.com/@starcomo/post/DUK7uIXkklz)
 
@@ -655,7 +667,7 @@ Ai한테 뭐 새로 만들어달라고 할때
 
 ---
 
-## 52. steady__study.dev
+## 53. steady__study.dev
 > **Date**: 2026-01-31 15:45:22
 > **Link**: [Original Post](https://www.threads.com/@steady__study.dev/post/DUKUnJ3kciv)
 
@@ -665,7 +677,7 @@ Ai한테 뭐 새로 만들어달라고 할때
 
 ---
 
-## 53. yun_ja_dong
+## 54. yun_ja_dong
 > **Date**: 2026-01-31 22:45:22
 > **Link**: [Original Post](https://www.threads.com/@yun_ja_dong/post/DULSOOKE3XD)
 
@@ -676,7 +688,7 @@ AI 없던 시절에는 이거 만드느라 수십...
 
 ---
 
-## 54. guuu.dev
+## 55. guuu.dev
 > **Date**: 2026-01-30 15:45:22
 > **Link**: [Original Post](https://www.threads.com/@guuu.dev/post/DUG6cYok5Qr)
 
@@ -687,7 +699,7 @@ moltbot(clawdbot) 두 대를 한 방에 넣고 킥오프를 진행했다.
 
 ---
 
-## 55. starcomo
+## 56. starcomo
 > **Date**: 2026-01-31 15:45:22
 > **Link**: [Original Post](https://www.threads.com/@starcomo/post/DUKIm4EkqEo)
 
@@ -698,7 +710,7 @@ Ai 비서들이 원격으로 코드를 수정해준다
 
 ---
 
-## 56. hinjiroffffff
+## 57. hinjiroffffff
 > **Date**: 2026-01-31 15:45:22
 > **Link**: [Original Post](https://www.threads.com/@hinjiroffffff/post/DUKPfu1Aa6T)
 
@@ -709,7 +721,7 @@ Ai 비서들이 원격으로 코드를 수정해준다
 
 ---
 
-## 57. hinjiroffffff
+## 58. hinjiroffffff
 > **Date**: 2026-01-31 15:45:22
 > **Link**: [Original Post](https://www.threads.com/@hinjiroffffff/post/DUKPelTgSau)
 
@@ -720,7 +732,7 @@ Ai 비서들이 원격으로 코드를 수정해준다
 
 ---
 
-## 58. jvisualschool
+## 59. jvisualschool
 > **Date**: 2026-01-31 15:45:22
 > **Link**: [Original Post](https://www.threads.com/@jvisualschool/post/DUJ_3Mlj0ID)
 
@@ -732,7 +744,7 @@ Ai 비서들이 원격으로 코드를 수정해준다
 
 ---
 
-## 59. qjc.ai
+## 60. qjc.ai
 > **Date**: 2026-01-31 19:45:22
 > **Link**: [Original Post](https://www.threads.com/@qjc.ai/post/DUK7AjFDxeH)
 
@@ -744,7 +756,7 @@ AI 에이전트: 100개+
 
 ---
 
-## 60. opal.gongbang
+## 61. opal.gongbang
 > **Date**: 2026-01-31 19:45:22
 > **Link**: [Original Post](https://www.threads.com/@opal.gongbang/post/DUK66UNE-rX)
 
@@ -756,7 +768,7 @@ opal에서 이미지 생성 노드 1개로 여러 이미지를 만들 수 있는
 
 ---
 
-## 61. build_daemon
+## 62. build_daemon
 > **Date**: 2026-01-31 15:45:22
 > **Link**: [Original Post](https://www.threads.com/@build_daemon/post/DUJ1km1kkNt)
 
@@ -768,7 +780,7 @@ opal에서 이미지 생성 노드 1개로 여러 이미지를 만들 수 있는
 
 ---
 
-## 62. seokki.yoon07
+## 63. seokki.yoon07
 > **Date**: 2026-01-31 18:45:22
 > **Link**: [Original Post](https://www.threads.com/@seokki.yoon07/post/DUK59b8ia4D)
 
@@ -777,7 +789,7 @@ opal에서 이미지 생성 노드 1개로 여러 이미지를 만들 수 있는
 
 ---
 
-## 63. choi.openai
+## 64. choi.openai
 > **Date**: 2026-01-31 15:45:22
 > **Link**: [Original Post](https://www.threads.com/@choi.openai/post/DUIXT33Essv)
 
@@ -786,7 +798,7 @@ Vercel이 코딩 에이전트를 위한 "AGENTS.md"가 "Skills"보다 훨씬 강
 
 ---
 
-## 64. oz_coding_school
+## 65. oz_coding_school
 > **Date**: 
 > **Link**: [Original Post](https://www.threads.com/@oz_coding_school/post/DTugejAgHNF)
 
@@ -799,7 +811,7 @@ AI로 정부지원사업 합격하는법 알려드릴게요😎
 
 ---
 
-## 65. hinjiroffffff
+## 66. hinjiroffffff
 > **Date**: 2026-01-30 15:45:22
 > **Link**: [Original Post](https://www.threads.com/@hinjiroffffff/post/DUFkzGvAa6T)
 
@@ -810,7 +822,7 @@ Gemini가 초 단위로 영상을 분석해 쇼츠 구간을 찾아줍니다.
 
 ---
 
-## 66. super_writer12
+## 67. super_writer12
 > **Date**: 2026-01-31 15:45:22
 > **Link**: [Original Post](https://www.threads.com/@super_writer12/post/DUIDj9vgeRU)
 
@@ -822,7 +834,7 @@ Gemini가 초 단위로 영상을 분석해 쇼츠 구간을 찾아줍니다.
 
 ---
 
-## 67. wmleee
+## 68. wmleee
 > **Date**: 2026-01-30 15:45:22
 > **Link**: [Original Post](https://www.threads.com/@wmleee/post/DUGYenoEnPR)
 
@@ -831,7 +843,7 @@ pencil.dev 이거 정말 물건이네요.
 
 ---
 
-## 68. ody_daddy
+## 69. ody_daddy
 > **Date**: 2026-01-30 15:45:22
 > **Link**: [Original Post](https://www.threads.com/@ody_daddy/post/DUHGprsCrmE)
 
@@ -843,7 +855,7 @@ AI한테 일 시키다 보면 이상한 순간...
 
 ---
 
-## 69. info__sum
+## 70. info__sum
 > **Date**: 2026-01-30 10:34:59
 > **Link**: [Original Post](https://www.threads.com/@info__sum/post/DUHdfmjEizy)
 
@@ -857,7 +869,7 @@ AI한테 일 시키다 보면 이상한 순간...
 
 ---
 
-## 70. hinjiroffffff
+## 71. hinjiroffffff
 > **Date**: 2026-01-30 16:12:56
 > **Link**: [Original Post](https://www.threads.com/@hinjiroffffff/post/DUIEGGAAagR)
 
@@ -871,7 +883,7 @@ Gemini에게 전달하세요.
 
 ---
 
-## 71. redbearhbj
+## 72. redbearhbj
 > **Date**: 2026-01-30 11:22:24
 > **Link**: [Original Post](https://www.threads.com/@redbearhbj/post/DUHi67GEhVw)
 
@@ -879,7 +891,7 @@ Claude 에서 공식 가이드로 배포한 프롬프트 작성 가이드입니�
 
 ---
 
-## 72. c.reator_c
+## 73. c.reator_c
 > **Date**: 2026-01-30 07:42:23
 > **Link**: [Original Post](https://www.threads.com/@c.reator_c/post/DUHJvgwE8QV)
 
@@ -891,7 +903,7 @@ Claude 에서 공식 가이드로 배포한 프롬프트 작성 가이드입니�
 
 ---
 
-## 73. guuu.dev
+## 74. guuu.dev
 > **Date**: 2026-01-30 19:54:08
 > **Link**: [Original Post](https://www.threads.com/@guuu.dev/post/DUIde6ZE-Zy)
 
@@ -902,7 +914,7 @@ Local LLM 때문에 맥 미니나 그래픽카드 사서 돌려볼까 고민하�
 
 ---
 
-## 74. eyevision.lab
+## 75. eyevision.lab
 > **Date**: 2026-01-30 17:45:43
 > **Link**: [Original Post](https://www.threads.com/@eyevision.lab/post/DUIOybmEiic)
 
@@ -914,7 +926,7 @@ Local LLM 때문에 맥 미니나 그래픽카드 사서 돌려볼까 고민하�
 
 ---
 
-## 75. planum.one
+## 76. planum.one
 > **Date**: 2026-01-29 22:23:26
 > **Link**: [Original Post](https://www.threads.com/@planum.one/post/DUGJxoEkbWv)
 
@@ -927,7 +939,7 @@ Claude Code는 세션이 끝나면 모든 컨텍스트를 잃습니다.
 
 ---
 
-## 76. slowsoyang
+## 77. slowsoyang
 > **Date**: 2026-01-29 21:18:16
 > **Link**: [Original Post](https://www.threads.com/@slowsoyang/post/DUGCUWLCUFc)
 
@@ -941,7 +953,7 @@ Claude Code는 세션이 끝나면 모든 컨텍스트를 잃습니다.
 
 ---
 
-## 77. builder.inkeun
+## 78. builder.inkeun
 > **Date**: 2026-01-29 00:33:37
 > **Link**: [Original Post](https://www.threads.com/@builder.inkeun/post/DUDz4LoDyoB)
 
@@ -951,7 +963,7 @@ Claude Code는 세션이 끝나면 모든 컨텍스트를 잃습니다.
 
 ---
 
-## 78. je0_1229
+## 79. je0_1229
 > **Date**: 2026-01-29 12:26:25
 > **Link**: [Original Post](https://www.threads.com/@je0_1229/post/DUFFc5Tkb5E)
 
@@ -962,7 +974,7 @@ Claude Code는 세션이 끝나면 모든 컨텍스트를 잃습니다.
 
 ---
 
-## 79. jinsimcode
+## 80. jinsimcode
 > **Date**: 2026-01-28 12:26:09
 > **Link**: [Original Post](https://www.threads.com/@jinsimcode/post/DUCgoCoE_bt)
 
@@ -974,7 +986,7 @@ Claude Code는 세션이 끝나면 모든 컨텍스트를 잃습니다.
 
 ---
 
-## 80. gyeol_hh
+## 81. gyeol_hh
 > **Date**: 2026-01-28 23:53:14
 > **Link**: [Original Post](https://www.threads.com/@gyeol_hh/post/DUDvQcJkoSP)
 
@@ -984,7 +996,7 @@ Playwriter MCP를 써!!
 
 ---
 
-## 81. eddmpython
+## 82. eddmpython
 > **Date**: 2025-12-30 16:48:18
 > **Link**: [Original Post](https://www.threads.com/@eddmpython/post/DS4TktPD6BP)
 
@@ -997,7 +1009,7 @@ http요청 뿐만아니라 데이터 모으는 자동화는 많이 있죠...
 
 ---
 
-## 82. jinsimcode
+## 83. jinsimcode
 > **Date**: 2026-01-28 13:58:40
 > **Link**: [Original Post](https://www.threads.com/@jinsimcode/post/DUCrNqMk8vz)
 
@@ -1010,7 +1022,7 @@ Playwriter를 쓰기.
 
 ---
 
-## 83. hinjiroffffff
+## 84. hinjiroffffff
 > **Date**: 2026-01-28 16:30:27
 > **Link**: [Original Post](https://www.threads.com/@hinjiroffffff/post/DUC8laUCQ5M)
 
@@ -1022,7 +1034,7 @@ Gemini가 초 단위로 영상을 분석하고 피드백합니다.
 
 ---
 
-## 84. lazypencil_lab
+## 85. lazypencil_lab
 > **Date**: 2026-01-27 18:37:53
 > **Link**: [Original Post](https://www.threads.com/@lazypencil_lab/post/DUAmX2YkSSm)
 
@@ -1036,7 +1048,7 @@ Gemini가 초 단위로 영상을 분석하고 피드백합니다.
 
 ---
 
-## 85. itszoejeong
+## 86. itszoejeong
 > **Date**: 2026-01-27 19:55:51
 > **Link**: [Original Post](https://www.threads.com/@itszoejeong/post/DUAvS3CkiXu)
 
@@ -1044,7 +1056,7 @@ Gemini가 초 단위로 영상을 분석하고 피드백합니다.
 
 ---
 
-## 86. iamdrtk
+## 87. iamdrtk
 > **Date**: 2026-01-28 02:49:45
 > **Link**: [Original Post](https://www.threads.com/@iamdrtk/post/DUBeqaViJkN)
 
@@ -1056,7 +1068,7 @@ Gemini가 초 단위로 영상을 분석하고 피드백합니다.
 
 ---
 
-## 87. ai.winey_ny
+## 88. ai.winey_ny
 > **Date**: 2026-01-26 21:28:37
 > **Link**: [Original Post](https://www.threads.com/@ai.winey_ny/post/DT-VHfnEshJ)
 
@@ -1068,7 +1080,7 @@ Notion MCP 쓸 때마다 토큰 엄청 먹어...
 
 ---
 
-## 88. freainer
+## 89. freainer
 > **Date**: 2026-01-27 14:43:26
 > **Link**: [Original Post](https://www.threads.com/@freainer/post/DUALirekrKe)
 
@@ -1081,7 +1093,7 @@ Claude나 Cursor 쓰면서 MCP 안 쓰고 있다면?
 
 ---
 
-## 89. gimminseog67
+## 90. gimminseog67
 > **Date**: 2026-01-27 18:27:16
 > **Link**: [Original Post](https://www.threads.com/@gimminseog67/post/DUAlKDLD9rN)
 
@@ -1091,7 +1103,7 @@ https://github.com/affaan-m/everything-claude-code
 
 ---
 
-## 90. ody_daddy
+## 91. ody_daddy
 > **Date**: 2026-01-27 09:21:33
 > **Link**: [Original Post](https://www.threads.com/@ody_daddy/post/DT_mtLmk6ix)
 
@@ -1104,7 +1116,7 @@ https://github.com/affaan-m/everything-claude-code
 
 ---
 
-## 91. choi.openai
+## 92. choi.openai
 > **Date**: 2026-01-26 20:00:55
 > **Link**: [Original Post](https://www.threads.com/@choi.openai/post/DT-LFLbARyz)
 
@@ -1114,7 +1126,7 @@ https://github.com/affaan-m/everything-claude-code
 
 ---
 
-## 92. lumiham0
+## 93. lumiham0
 > **Date**: 2026-01-26 23:21:11
 > **Link**: [Original Post](https://www.threads.com/@lumiham0/post/DT-h_5NARCF)
 
@@ -1126,7 +1138,7 @@ Opal에 넣으면 이미지 30장이 한번에 쏟아진다....
 
 ---
 
-## 93. pm_anyway
+## 94. pm_anyway
 > **Date**: 2026-01-26 18:03:23
 > **Link**: [Original Post](https://www.threads.com/@pm_anyway/post/DT99oVWkh8u)
 
@@ -1137,7 +1149,7 @@ Opal에 넣으면 이미지 30장이 한번에 쏟아진다....
 
 ---
 
-## 94. ai_sync_club
+## 95. ai_sync_club
 > **Date**: 2026-01-11 14:12:45
 > **Link**: [Original Post](https://www.threads.com/@ai_sync_club/post/DTW7GQ0iujL)
 
@@ -1151,7 +1163,7 @@ Opal에 넣으면 이미지 30장이 한번에 쏟아진다....
 
 ---
 
-## 95. seulgi.kaang
+## 96. seulgi.kaang
 > **Date**: 2026-01-25 23:38:28
 > **Link**: [Original Post](https://www.threads.com/@seulgi.kaang/post/DT7_LsBj_kt)
 
@@ -1166,7 +1178,7 @@ Opal에 넣으면 이미지 30장이 한번에 쏟아진다....
 
 ---
 
-## 96. seulgi.kaang
+## 97. seulgi.kaang
 > **Date**: 2025-01-08 15:49:57
 > **Link**: [Original Post](https://www.threads.com/@seulgi.kaang/post/DEjh503znCO)
 
@@ -1178,7 +1190,7 @@ Opal에 넣으면 이미지 30장이 한번에 쏟아진다....
 
 ---
 
-## 97. seulgi.kaang
+## 98. seulgi.kaang
 > **Date**: 2026-01-26 17:09:59
 > **Link**: [Original Post](https://www.threads.com/@seulgi.kaang/post/DT93hKjDzNI)
 
@@ -1197,7 +1209,7 @@ AI한테 조언 얻어가며
 
 ---
 
-## 98. itszoejeong
+## 99. itszoejeong
 > **Date**: 2026-01-26 19:28:38
 > **Link**: [Original Post](https://www.threads.com/@itszoejeong/post/DT-HYr3Eofo)
 
@@ -1205,7 +1217,7 @@ AI한테 조언 얻어가며
 
 ---
 
-## 99. data_richard
+## 100. data_richard
 > **Date**: 2025-09-15 11:59:13
 > **Link**: [Original Post](https://www.threads.com/@data_richard/post/DOm2OujEQC1)
 
@@ -1218,7 +1230,7 @@ AI한테 조언 얻어가며
 
 ---
 
-## 100. data_richard
+## 101. data_richard
 > **Date**: 2026-01-02 15:49:46
 > **Link**: [Original Post](https://www.threads.com/@data_richard/post/DS_7QrXFRRu)
 
@@ -1230,7 +1242,7 @@ Epic/User Story/Ta...
 
 ---
 
-## 101. data_richard
+## 102. data_richard
 > **Date**: 2026-01-26 10:04:13
 > **Link**: [Original Post](https://www.threads.com/@data_richard/post/DT9Gyvtj-Rb)
 
@@ -1243,7 +1255,7 @@ Epic/User Story/Ta...
 
 ---
 
-## 102. steady__study.dev
+## 103. steady__study.dev
 > **Date**: 2026-01-26 06:17:57
 > **Link**: [Original Post](https://www.threads.com/@steady__study.dev/post/DT8s5gck3xJ)
 
@@ -1253,7 +1265,7 @@ Epic/User Story/Ta...
 
 ---
 
-## 103. builder_10x
+## 104. builder_10x
 > **Date**: 2026-01-26 00:24:05
 > **Link**: [Original Post](https://www.threads.com/@builder_10x/post/DT8EUxBic2M)
 
@@ -1265,7 +1277,7 @@ GPT-4, Claude, Gemini 다 써보고 "이게 더 나은 것 같은데?" 하고 �
 
 ---
 
-## 104. pitchtitan
+## 105. pitchtitan
 > **Date**: 2026-01-26 17:09:55
 > **Link**: [Original Post](https://www.threads.com/@pitchtitan/post/DT93gttj4S1)
 
@@ -1278,7 +1290,7 @@ GPT-4, Claude, Gemini 다 써보고 "이게 더 나은 것 같은데?" 하고 �
 
 ---
 
-## 105. build_daemon
+## 106. build_daemon
 > **Date**: 2026-01-26 08:20:02
 > **Link**: [Original Post](https://www.threads.com/@build_daemon/post/DT863uQkmuV)
 
@@ -1291,7 +1303,7 @@ https:...
 
 ---
 
-## 106. robin_just_ship_it
+## 107. robin_just_ship_it
 > **Date**: 2026-01-26 13:35:24
 > **Link**: [Original Post](https://www.threads.com/@robin_just_ship_it/post/DT9e9jOkc7M)
 
@@ -1303,7 +1315,7 @@ https:...
 
 ---
 
-## 107. hajae.code
+## 108. hajae.code
 > **Date**: 2026-01-24 22:29:02
 > **Link**: [Original Post](https://www.threads.com/@hajae.code/post/DT5ScNij4Uw)
 
@@ -1317,7 +1329,7 @@ AI 코딩 실력이 늘지 않는 치명적인 이유
 
 ---
 
-## 108. hajae.code
+## 109. hajae.code
 > **Date**: 2026-01-25 09:19:24
 > **Link**: [Original Post](https://www.threads.com/@hajae.code/post/DT6c3mrEwmC)
 
@@ -1326,7 +1338,7 @@ spec.md 하나에 모든 것을 넣지 말고, 시스템의 도메인이나 기�
 
 ---
 
-## 109. newnatrd
+## 110. newnatrd
 > **Date**: 2026-01-24 17:26:51
 > **Link**: [Original Post](https://www.threads.com/@newnatrd/post/DT4v2-dEzVu)
 
@@ -1340,7 +1352,7 @@ spec.md 하나에 모든 것을 넣지 말고, 시스템의 도메인이나 기�
 
 ---
 
-## 110. choi.openai
+## 111. choi.openai
 > **Date**: 2026-01-25 11:31:47
 > **Link**: [Original Post](https://www.threads.com/@choi.openai/post/DT6sAONj9K8)
 
@@ -1351,7 +1363,7 @@ Figma 에서 작업한 시안...
 
 ---
 
-## 111. carpediem._young
+## 112. carpediem._young
 > **Date**: 2026-01-25 11:26:30
 > **Link**: [Original Post](https://www.threads.com/@carpediem._young/post/DT6raiWE90Y)
 
@@ -1364,7 +1376,7 @@ Figma 에서 작업한 시안...
 
 ---
 
-## 112. port_zen
+## 113. port_zen
 > **Date**: 2026-01-24 23:38:42
 > **Link**: [Original Post](https://www.threads.com/@port_zen/post/DT5aah0AQBc)
 
@@ -1372,7 +1384,7 @@ Figma 에서 작업한 시안...
 
 ---
 
-## 113. _mote_y
+## 114. _mote_y
 > **Date**: 2026-01-24 21:41:43
 > **Link**: [Original Post](https://www.threads.com/@_mote_y/post/DT5NBtck8JT)
 
@@ -1385,7 +1397,7 @@ Figma 에서 작업한 시안...
 
 ---
 
-## 114. heon_yun
+## 115. heon_yun
 > **Date**: 2026-01-24 22:41:38
 > **Link**: [Original Post](https://www.threads.com/@heon_yun/post/DT5T4kmEsEG)
 
@@ -1393,7 +1405,7 @@ ClaudeCode 그리고 Antigravity를 사용하면서 느낀점....
 
 ---
 
-## 115. jaycee_donuts
+## 116. jaycee_donuts
 > **Date**: 2026-01-24 22:12:34
 > **Link**: [Original Post](https://www.threads.com/@jaycee_donuts/post/DT5QjkwkjLL)
 
@@ -1407,7 +1419,7 @@ ClaudeCode 그리고 Antigravity를 사용하면서 느낀점....
 
 ---
 
-## 116. cloudian__
+## 117. cloudian__
 > **Date**: 2026-01-23 22:43:38
 > **Link**: [Original Post](https://www.threads.com/@cloudian__/post/DT2vUQliQgk)
 
@@ -1418,7 +1430,7 @@ Google에서 Figma 대항마로 내놓은 Stitch라는 디자인 툴을 처음 �
 
 ---
 
-## 117. beyond.cho
+## 118. beyond.cho
 > **Date**: 2026-01-24 08:52:13
 > **Link**: [Original Post](https://www.threads.com/@beyond.cho/post/DT309qmktRH)
 
@@ -1434,7 +1446,7 @@ Google에서 Figma 대항마로 내놓은 Stitch라는 디자인 툴을 처음 �
 
 ---
 
-## 118. pulplewhale
+## 119. pulplewhale
 > **Date**: 2026-01-08 16:11:00
 > **Link**: [Original Post](https://www.threads.com/@pulplewhale/post/DTPadYiERZI)
 
@@ -1447,7 +1459,7 @@ Google에서 Figma 대항마로 내놓은 Stitch라는 디자인 툴을 처음 �
 
 ---
 
-## 119. unaappa
+## 120. unaappa
 > **Date**: 2026-01-23 16:11:00
 > **Link**: [Original Post](https://www.threads.com/@unaappa/post/DT2CYlsFRnG)
 
@@ -1463,7 +1475,7 @@ Google에서 Figma 대항마로 내놓은 Stitch라는 디자인 툴을 처음 �
 
 ---
 
-## 120. social.romanc
+## 121. social.romanc
 > **Date**: 2026-01-22 07:49:14
 > **Link**: [Original Post](https://www.threads.com/@social.romanc/post/DTykKIbES09)
 
@@ -1475,7 +1487,7 @@ Google에서 Figma 대항마로 내놓은 Stitch라는 디자인 툴을 처음 �
 
 ---
 
-## 121. health_love_wealth_
+## 122. health_love_wealth_
 > **Date**: 2026-01-22 22:26:55
 > **Link**: [Original Post](https://www.threads.com/@health_love_wealth_/post/DT0InBtEnzX)
 
@@ -1485,7 +1497,7 @@ Gemini는 지금 구글 드라이브 안에 있습니다!...
 
 ---
 
-## 122. joshproductletter
+## 123. joshproductletter
 > **Date**: 2026-01-10 16:04:44
 > **Link**: [Original Post](https://www.threads.com/@joshproductletter/post/DTUjVRGCSgI)
 
@@ -1501,7 +1513,7 @@ Gemini는 지금 구글 드라이브 안에 있습니다!...
 
 ---
 
-## 123. choi.openai
+## 124. choi.openai
 > **Date**: 2025-12-01 21:01:10
 > **Link**: [Original Post](https://www.threads.com/@choi.openai/post/DRuFda3D2Ca)
 
@@ -1513,7 +1525,7 @@ Gemini는 지금 구글 드라이브 안에 있습니다!...
 
 ---
 
-## 124. choi.openai
+## 125. choi.openai
 > **Date**: 2025-11-28 07:30:30
 > **Link**: [Original Post](https://www.threads.com/@choi.openai/post/DRk6TWjAjI-)
 
@@ -1523,7 +1535,7 @@ Gemini는 지금 구글 드라이브 안에 있습니다!...
 
 ---
 
-## 125. gwon_vibe
+## 126. gwon_vibe
 > **Date**: 2026-01-08 11:08:13
 > **Link**: [Original Post](https://www.threads.com/@gwon_vibe/post/DTO3zt4EwZx)
 
@@ -1537,7 +1549,7 @@ Gemini는 지금 구글 드라이브 안에 있습니다!...
 
 ---
 
-## 126. sinabrocoding
+## 127. sinabrocoding
 > **Date**: 2026-01-22 12:53:27
 > **Link**: [Original Post](https://www.threads.com/@sinabrocoding/post/DTzG-uEj-3p)
 
@@ -1552,7 +1564,7 @@ Gemini는 지금 구글 드라이브 안에 있습니다!...
 
 ---
 
-## 127. qjc.ai
+## 128. qjc.ai
 > **Date**: 2026-01-22 18:15:45
 > **Link**: [Original Post](https://www.threads.com/@qjc.ai/post/DTzr3XyD9pL)
 
@@ -1562,7 +1574,7 @@ Google Stitch MCP를 Claude Code나 Antigravity에 연결하면 AI가 디자인 
 
 ---
 
-## 128. gonnector
+## 129. gonnector
 > **Date**: 2026-01-22 15:08:24
 > **Link**: [Original Post](https://www.threads.com/@gonnector/post/DTzWbLkE2JY)
 
@@ -1570,7 +1582,7 @@ Disco 가 정식 출시되기 전까지 Google 의 가장 강력한, 아니 전�
 
 ---
 
-## 129. ciaokevin
+## 130. ciaokevin
 > **Date**: 2026-01-22 17:46:02
 > **Link**: [Original Post](https://www.threads.com/@ciaokevin/post/DTzodsdkkhu)
 
@@ -1582,7 +1594,7 @@ stitch mcp가 나왔다고 하여 Antigravit...
 
 ---
 
-## 130. nordiske_space
+## 131. nordiske_space
 > **Date**: 2026-01-22 16:17:35
 > **Link**: [Original Post](https://www.threads.com/@nordiske_space/post/DTzeV51Ek3p)
 
@@ -1590,7 +1602,7 @@ AI가 끝가지 해결을 못할때 클로드가 해결책을 제시하면 다�
 
 ---
 
-## 131. naminsoo_ai
+## 132. naminsoo_ai
 > **Date**: 2026-01-15 10:24:37
 > **Link**: [Original Post](https://www.threads.com/@naminsoo_ai/post/DTg0YkGE67S)
 
@@ -1607,7 +1619,7 @@ AI 활용 무료로 해보시라고
 
 ---
 
-## 132. akitect_cat
+## 133. akitect_cat
 > **Date**: 2026-01-21 01:38:59
 > **Link**: [Original Post](https://www.threads.com/@akitect_cat/post/DTvVAAykggl)
 
@@ -1621,7 +1633,7 @@ AI 활용 무료로 해보시라고
 
 ---
 
-## 133. qjc.ai
+## 134. qjc.ai
 > **Date**: 2026-01-21 11:00:48
 > **Link**: [Original Post](https://www.threads.com/@qjc.ai/post/DTwVSyTjMaz)
 
@@ -1629,7 +1641,7 @@ AI 활용 무료로 해보시라고
 
 ---
 
-## 134. alliswellinsing
+## 135. alliswellinsing
 > **Date**: 2026-01-18 15:43:59
 > **Link**: [Original Post](https://www.threads.com/@alliswellinsing/post/DTpHUUOgTVI)
 
@@ -1641,7 +1653,7 @@ AI 활용 무료로 해보시라고
 
 ---
 
-## 135. ai_tusol
+## 136. ai_tusol
 > **Date**: 2026-01-19 10:07:33
 > **Link**: [Original Post](https://www.threads.com/@ai_tusol/post/DTrFnEljzKW)
 
@@ -1656,7 +1668,7 @@ AI 활용 무료로 해보시라고
 
 ---
 
-## 136. tofukyung
+## 137. tofukyung
 > **Date**: 2026-01-19 08:11:42
 > **Link**: [Original Post](https://www.threads.com/@tofukyung/post/DTq4Wg9E8Tn)
 
@@ -1669,7 +1681,7 @@ AI 활용 무료로 해보시라고
 
 ---
 
-## 137. yyn.star
+## 138. yyn.star
 > **Date**: 2026-01-18 13:57:32
 > **Link**: [Original Post](https://www.threads.com/@yyn.star/post/DTo7IpQAQnf)
 
@@ -1678,7 +1690,7 @@ AI 활용 무료로 해보시라고
 
 ---
 
-## 138. conanssam
+## 139. conanssam
 > **Date**: 2026-01-18 16:16:31
 > **Link**: [Original Post](https://www.threads.com/@conanssam/post/DTpLCjKmBNN)
 
@@ -1692,7 +1704,7 @@ Software3.0 이다
 
 ---
 
-## 139. choi.director
+## 140. choi.director
 > **Date**: 2026-01-18 13:16:27
 > **Link**: [Original Post](https://www.threads.com/@choi.director/post/DTo2byxifgG)
 
@@ -1706,7 +1718,7 @@ CEO, CPO, CFO 참석 정기회의에서
 
 ---
 
-## 140. matt_dancho
+## 141. matt_dancho
 > **Date**: 2026-01-17 23:29:03
 > **Link**: [Original Post](https://www.threads.com/@matt_dancho/post/DTnXmC9DuZZ)
 
@@ -1718,7 +1730,7 @@ OpenAI, Google, and Anthropic just published guides on:
 
 ---
 
-## 141. hajae.code
+## 142. hajae.code
 > **Date**: 2026-01-18 10:28:36
 > **Link**: [Original Post](https://www.threads.com/@hajae.code/post/DTojOZDDwdm)
 
@@ -1732,7 +1744,7 @@ AI 공부에 주말 다 쓰시나요?
 
 ---
 
-## 142. jeju_harry
+## 143. jeju_harry
 > **Date**: 2026-01-18 14:23:09
 > **Link**: [Original Post](https://www.threads.com/@jeju_harry/post/DTo-ESagY-U)
 
@@ -1744,7 +1756,7 @@ AI 공부에 주말 다 쓰시나요?
 
 ---
 
-## 143. sydney__nam
+## 144. sydney__nam
 > **Date**: 2026-01-16 10:20:15
 > **Link**: [Original Post](https://www.threads.com/@sydney__nam/post/DTjYrdcEyV1)
 
@@ -1758,7 +1770,7 @@ AI 공부에 주말 다 쓰시나요?
 
 ---
 
-## 144. monica_from_korea
+## 145. monica_from_korea
 > **Date**: 2026-01-16 07:48:00
 > **Link**: [Original Post](https://www.threads.com/@monica_from_korea/post/DTjHQUWk-Hy)
 
@@ -1770,7 +1782,7 @@ AI 공부에 주말 다 쓰시나요?
 
 ---
 
-## 145. qjc.ai
+## 146. qjc.ai
 > **Date**: 2026-01-15 19:12:35
 > **Link**: [Original Post](https://www.threads.com/@qjc.ai/post/DThwzd7D_z-)
 
@@ -1778,7 +1790,7 @@ AI 공부에 주말 다 쓰시나요?
 
 ---
 
-## 146. kimkj008
+## 147. kimkj008
 > **Date**: 2026-01-15 08:29:44
 > **Link**: [Original Post](https://www.threads.com/@kimkj008/post/DTgnPKiE3Yt)
 
@@ -1786,7 +1798,7 @@ AI 공부에 주말 다 쓰시나요?
 
 ---
 
-## 147. moongi_adventures
+## 148. moongi_adventures
 > **Date**: 2026-01-14 17:58:26
 > **Link**: [Original Post](https://www.threads.com/@moongi_adventures/post/DTfDhjHFRLD)
 
@@ -1800,7 +1812,7 @@ AI 공부에 주말 다 쓰시나요?
 
 ---
 
-## 148. feelfree_ai
+## 149. feelfree_ai
 > **Date**: 2026-01-15 07:00:31
 > **Link**: [Original Post](https://www.threads.com/@feelfree_ai/post/DTgdBsrAttA)
 
@@ -1810,7 +1822,7 @@ Google Antigravity가 이제 'Agent Skills'를 공식 지원한다는 사실, �
 
 ---
 
-## 149. manusai_kr
+## 150. manusai_kr
 > **Date**: 2026-01-14 21:56:07
 > **Link**: [Original Post](https://www.threads.com/@manusai_kr/post/DTfeub8kXPD)
 
@@ -1824,7 +1836,7 @@ Google Antigravity가 이제 'Agent Skills'를 공식 지원한다는 사실, �
 
 ---
 
-## 150. jisang0914
+## 151. jisang0914
 > **Date**: 2026-01-15 12:44:52
 > **Link**: [Original Post](https://www.threads.com/@jisang0914/post/DThEbxXk726)
 
@@ -1840,7 +1852,7 @@ AI가 절반은 그냥 무시함.
 
 ---
 
-## 151. steady__study.dev
+## 152. steady__study.dev
 > **Date**: 2026-01-15 08:46:14
 > **Link**: [Original Post](https://www.threads.com/@steady__study.dev/post/DTgpH7LE7g-)
 
@@ -1850,7 +1862,7 @@ g-export: 구글 문서들을 로컬에 다운받아주는 Claude Skill
 
 ---
 
-## 152. pulplewhale
+## 153. pulplewhale
 > **Date**: 2026-01-15 11:56:56
 > **Link**: [Original Post](https://www.threads.com/@pulplewhale/post/DTg-8vJEcJ0)
 
@@ -1860,7 +1872,7 @@ g-export: 구글 문서들을 로컬에 다운받아주는 Claude Skill
 
 ---
 
-## 153. tech.taek
+## 154. tech.taek
 > **Date**: 2026-01-14 16:43:44
 > **Link**: [Original Post](https://www.threads.com/@tech.taek/post/DTe6-aPCY76)
 
@@ -1872,7 +1884,7 @@ g-export: 구글 문서들을 로컬에 다운받아주는 Claude Skill
 
 ---
 
-## 154. danielmentality_insta
+## 155. danielmentality_insta
 > **Date**: 2026-01-14 13:00:34
 > **Link**: [Original Post](https://www.threads.com/@danielmentality_insta/post/DTehb5JEavI)
 
@@ -1883,7 +1895,7 @@ g-export: 구글 문서들을 로컬에 다운받아주는 Claude Skill
 
 ---
 
-## 155. the_unwork
+## 156. the_unwork
 > **Date**: 2026-01-15 08:43:44
 > **Link**: [Original Post](https://www.threads.com/@the_unwork/post/DTgo1tgkzfe)
 
@@ -1893,7 +1905,7 @@ g-export: 구글 문서들을 로컬에 다운받아주는 Claude Skill
 
 ---
 
-## 156. aiecorofficial
+## 157. aiecorofficial
 > **Date**: 2026-01-13 23:20:27
 > **Link**: [Original Post](https://www.threads.com/@aiecorofficial/post/DTdDlJBEr3W)
 
@@ -1908,7 +1920,7 @@ g-export: 구글 문서들을 로컬에 다운받아주는 Claude Skill
 
 ---
 
-## 157. immersivebama
+## 158. immersivebama
 > **Date**: 2026-01-14 01:23:01
 > **Link**: [Original Post](https://www.threads.com/@immersivebama/post/DTdRm8xlJv6)
 
@@ -1916,7 +1928,7 @@ g-export: 구글 문서들을 로컬에 다운받아주는 Claude Skill
 
 ---
 
-## 158. pangol82
+## 159. pangol82
 > **Date**: 2026-01-13 13:23:13
 > **Link**: [Original Post](https://www.threads.com/@pangol82/post/DTb_O9qgYEJ)
 
@@ -1928,7 +1940,7 @@ NotebookLM ...
 
 ---
 
-## 159. jisang0914
+## 160. jisang0914
 > **Date**: 2026-01-11 18:05:10
 > **Link**: [Original Post](https://www.threads.com/@jisang0914/post/DTXV6R6E-IZ)
 
@@ -1941,7 +1953,7 @@ Claude Code 만든 사람 세팅 공개됨.
 
 ---
 
-## 160. tilnote
+## 161. tilnote
 > **Date**: 2026-01-11 13:26:27
 > **Link**: [Original Post](https://www.threads.com/@tilnote/post/DTW2A2pE5y0)
 
@@ -1955,7 +1967,7 @@ Claude Code 만든 사람 세팅 공개됨.
 
 ---
 
-## 161. dev_shibaa
+## 162. dev_shibaa
 > **Date**: 2026-01-11 13:32:58
 > **Link**: [Original Post](https://www.threads.com/@dev_shibaa/post/DTW2wockmnA)
 
@@ -1969,7 +1981,7 @@ Claude Code 만든 사람 세팅 공개됨.
 
 ---
 
-## 162. careerhackeralex
+## 163. careerhackeralex
 > **Date**: 2026-01-10 17:16:37
 > **Link**: [Original Post](https://www.threads.com/@careerhackeralex/post/DTUrjxHlL_-)
 
@@ -1980,7 +1992,7 @@ AI가 너무 빠른속도로 발전하면서, 그리고 너무 잘하게 되면�
 
 ---
 
-## 163. edtkworker
+## 164. edtkworker
 > **Date**: 2026-01-11 13:51:01
 > **Link**: [Original Post](https://www.threads.com/@edtkworker/post/DTW40xejLeJ)
 
@@ -1988,7 +2000,7 @@ AI가 너무 빠른속도로 발전하면서, 그리고 너무 잘하게 되면�
 
 ---
 
-## 164. specal1849
+## 165. specal1849
 > **Date**: 2026-01-11 08:09:15
 > **Link**: [Original Post](https://www.threads.com/@specal1849/post/DTWRE-4EbAC)
 
@@ -2003,7 +2015,7 @@ AI가 너무 빠른속도로 발전하면서, 그리고 너무 잘하게 되면�
 
 ---
 
-## 165. sarah.eat.mom
+## 166. sarah.eat.mom
 > **Date**: 2026-01-10 11:31:35
 > **Link**: [Original Post](https://www.threads.com/@sarah.eat.mom/post/DTUEEroki7e)
 
@@ -2015,7 +2027,7 @@ AI로 디자인하는 사람들 사이에서 요즘
 
 ---
 
-## 166. careernomad_
+## 167. careernomad_
 > **Date**: 2026-01-10 18:19:58
 > **Link**: [Original Post](https://www.threads.com/@careernomad_/post/DTUyzxDAX4K)
 
@@ -2029,7 +2041,7 @@ AI로 디자인하는 사람들 사이에서 요즘
 
 ---
 
-## 167. sangdamgac
+## 168. sangdamgac
 > **Date**: 2026-01-10 03:03:46
 > **Link**: [Original Post](https://www.threads.com/@sangdamgac/post/DTTJ9SJE4YD)
 
@@ -2044,7 +2056,7 @@ ai로 책을 냄.
 
 ---
 
-## 168. taehyeong_lim
+## 169. taehyeong_lim
 > **Date**: 2026-01-10 22:21:12
 > **Link**: [Original Post](https://www.threads.com/@taehyeong_lim/post/DTVOakVkSUb)
 
@@ -2056,7 +2068,7 @@ ai로 책을 냄.
 
 ---
 
-## 169. yourgpt3650
+## 170. yourgpt3650
 > **Date**: 2026-01-10 10:59:57
 > **Link**: [Original Post](https://www.threads.com/@yourgpt3650/post/DTUAdBHjV7G)
 
@@ -2069,7 +2081,7 @@ AI로 보고서 쓰면 끝날 거라 믿는 착각은 이제 그만
 
 ---
 
-## 170. ai_sync_club
+## 171. ai_sync_club
 > **Date**: 2026-01-10 19:05:00
 > **Link**: [Original Post](https://www.threads.com/@ai_sync_club/post/DTU3wjAihFa)
 
@@ -2082,7 +2094,7 @@ AI로 만든 PPT 더이상 무시하지마세요
 
 ---
 
-## 171. lucy_prime788
+## 172. lucy_prime788
 > **Date**: 2026-01-09 18:35:21
 > **Link**: [Original Post](https://www.threads.com/@lucy_prime788/post/DTSPxhJFUre)
 
@@ -2091,7 +2103,7 @@ Gemini  GEM 기능을 써봤는데 이거 완전 대박임.
 
 ---
 
-## 172. yourgpt3650
+## 173. yourgpt3650
 > **Date**: 2026-01-09 20:13:08
 > **Link**: [Original Post](https://www.threads.com/@yourgpt3650/post/DTSa9uLEg9_)
 
@@ -2103,7 +2115,7 @@ Gemini  GEM 기능을 써봤는데 이거 완전 대박임.
 
 ---
 
-## 173. companoid.institute
+## 174. companoid.institute
 > **Date**: 2026-01-09 11:49:58
 > **Link**: [Original Post](https://www.threads.com/@companoid.institute/post/DTRhYcRD0lE)
 
@@ -2111,7 +2123,7 @@ Gemini  GEM 기능을 써봤는데 이거 완전 대박임.
 
 ---
 
-## 174. bibl_youtube
+## 175. bibl_youtube
 > **Date**: 2026-01-09 22:25:47
 > **Link**: [Original Post](https://www.threads.com/@bibl_youtube/post/DTSqJP4EkP9)
 
@@ -2122,7 +2134,7 @@ Gemini  GEM 기능을 써봤는데 이거 완전 대박임.
 
 ---
 
-## 175. laeyoung
+## 176. laeyoung
 > **Date**: 2026-01-09 15:53:01
 > **Link**: [Original Post](https://www.threads.com/@laeyoung/post/DTR9Mj_iRq4)
 
@@ -2132,7 +2144,7 @@ Gemini  GEM 기능을 써봤는데 이거 완전 대박임.
 
 ---
 
-## 176. choi.openai
+## 177. choi.openai
 > **Date**: 2026-01-09 07:30:55
 > **Link**: [Original Post](https://www.threads.com/@choi.openai/post/DTRDvEhCG4L)
 
@@ -2142,7 +2154,7 @@ Claude Skills의 가이드북 공유해드립니다.
 
 ---
 
-## 177. insta_yoonchan
+## 178. insta_yoonchan
 > **Date**: 2026-01-06 20:25:02
 > **Link**: [Original Post](https://www.threads.com/@insta_yoonchan/post/DTKt8TqgRkq)
 
@@ -2152,7 +2164,7 @@ GPT, Grok, Perplexity, Gemini 등 대화형 인공지능 서비스를 활용하�
 
 ---
 
-## 178. insta_yoonchan
+## 179. insta_yoonchan
 > **Date**: 2026-01-07 09:41:06
 > **Link**: [Original Post](https://www.threads.com/@insta_yoonchan/post/DTMJC39Et_M)
 
@@ -2166,7 +2178,7 @@ GPT, Grok, Perplexity, Gemini 등 대화형 인공지능 서비스를 활용하�
 
 ---
 
-## 179. gpt_park
+## 180. gpt_park
 > **Date**: 2026-01-05 10:25:57
 > **Link**: [Original Post](https://www.threads.com/@gpt_park/post/DTHEhJqDa_F)
 
@@ -2178,7 +2190,7 @@ GPT, Grok, Perplexity, Gemini 등 대화형 인공지능 서비스를 활용하�
 
 ---
 
-## 180. ok_k_studio
+## 181. ok_k_studio
 > **Date**: 2026-01-04 23:03:48
 > **Link**: [Original Post](https://www.threads.com/@ok_k_studio/post/DTF2ha_ibNE)
 
@@ -2188,7 +2200,7 @@ GPT, Grok, Perplexity, Gemini 등 대화형 인공지능 서비스를 활용하�
 
 ---
 
-## 181. tofukyung
+## 182. tofukyung
 > **Date**: 2026-01-02 19:09:42
 > **Link**: [Original Post](https://www.threads.com/@tofukyung/post/DTAR3TmAj-F)
 
@@ -2201,7 +2213,7 @@ AI 쓰기 어려워하는 많은 분들을 위해,
 
 ---
 
-## 182. gpt_minje
+## 183. gpt_minje
 > **Date**: 2026-01-03 08:43:04
 > **Link**: [Original Post](https://www.threads.com/@gpt_minje/post/DTBvORnkpUy)
 
@@ -2209,7 +2221,7 @@ AI 쓰기 어려워하는 많은 분들을 위해,
 
 ---
 
-## 183. irum_hahn
+## 184. irum_hahn
 > **Date**: 2026-01-03 19:00:23
 > **Link**: [Original Post](https://www.threads.com/@irum_hahn/post/DTC13mTgtbj)
 
@@ -2220,7 +2232,7 @@ AI 쓰기 어려워하는 많은 분들을 위해,
 
 ---
 
-## 184. aicoffeechat
+## 185. aicoffeechat
 > **Date**: 2026-01-02 23:53:03
 > **Link**: [Original Post](https://www.threads.com/@aicoffeechat/post/DTAykTzEhfu)
 
@@ -2231,7 +2243,7 @@ AI 쓰기 어려워하는 많은 분들을 위해,
 
 ---
 
-## 185. nordiske_space
+## 186. nordiske_space
 > **Date**: 2026-01-02 21:08:39
 > **Link**: [Original Post](https://www.threads.com/@nordiske_space/post/DTAfwOWkpTe)
 
@@ -2241,7 +2253,7 @@ AI 쓰기 어려워하는 많은 분들을 위해,
 
 ---
 
-## 186. heedam_i
+## 187. heedam_i
 > **Date**: 2026-01-02 21:52:49
 > **Link**: [Original Post](https://www.threads.com/@heedam_i/post/DTAkzttkvIM)
 
@@ -2253,7 +2265,7 @@ AI 쓰기 어려워하는 많은 분들을 위해,
 
 ---
 
-## 187. aicoffeechat
+## 188. aicoffeechat
 > **Date**: 2026-01-03 07:52:56
 > **Link**: [Original Post](https://www.threads.com/@aicoffeechat/post/DTBpfJBk9U7)
 
@@ -2263,7 +2275,7 @@ Claude Code를 만든 보리스(Boris)가 직접 자신의 세팅과 사용법�
 
 ---
 
-## 188. msf_ip_kj
+## 189. msf_ip_kj
 > **Date**: 2026-01-02 22:08:49
 > **Link**: [Original Post](https://www.threads.com/@msf_ip_kj/post/DTAmo18D-jX)
 
@@ -2273,7 +2285,7 @@ AI들끼리 미팅하는 곳으로 변함...
 
 ---
 
-## 189. tornado_616
+## 190. tornado_616
 > **Date**: 2026-01-01 22:13:38
 > **Link**: [Original Post](https://www.threads.com/@tornado_616/post/DS-BymgDQdD)
 
@@ -2282,7 +2294,7 @@ AI들끼리 미팅하는 곳으로 변함...
 
 ---
 
-## 190. extsvforest
+## 191. extsvforest
 > **Date**: 2026-01-02 15:31:15
 > **Link**: [Original Post](https://www.threads.com/@extsvforest/post/DS_5JEXkRNy)
 
@@ -2295,7 +2307,7 @@ AI들끼리 미팅하는 곳으로 변함...
 
 ---
 
-## 191. tuberithm
+## 192. tuberithm
 > **Date**: 2026-01-02 07:30:43
 > **Link**: [Original Post](https://www.threads.com/@tuberithm/post/DS_CJRHk-Lw)
 
@@ -2306,7 +2318,7 @@ AI들끼리 미팅하는 곳으로 변함...
 
 ---
 
-## 192. aicoffeechat
+## 193. aicoffeechat
 > **Date**: 2025-12-29 10:17:36
 > **Link**: [Original Post](https://www.threads.com/@aicoffeechat/post/DS1CESekre9)
 
@@ -2317,7 +2329,7 @@ AI들끼리 미팅하는 곳으로 변함...
 
 ---
 
-## 193. aicoffeechat
+## 194. aicoffeechat
 > **Date**: 2025-12-22 19:31:41
 > **Link**: [Original Post](https://www.threads.com/@aicoffeechat/post/DSj_6YFkg6r)
 
@@ -2327,7 +2339,7 @@ Anthropic 엔지니어링 리더의 LLM 코딩 워크플로우를 공유합니�
 
 ---
 
-## 194. jrara_sogood
+## 195. jrara_sogood
 > **Date**: 2025-12-28 15:50:56
 > **Link**: [Original Post](https://www.threads.com/@jrara_sogood/post/DSzDa1TEeSg)
 
@@ -2341,7 +2353,7 @@ Anthropic 엔지니어링 리더의 LLM 코딩 워크플로우를 공유합니�
 
 ---
 
-## 195. starstarlight_marketing
+## 196. starstarlight_marketing
 > **Date**: 2025-12-28 00:58:07
 > **Link**: [Original Post](https://www.threads.com/@starstarlight_marketing/post/DSxdPoCj5rz)
 
@@ -2351,7 +2363,7 @@ Anthropic 엔지니어링 리더의 LLM 코딩 워크플로우를 공유합니�
 
 ---
 
-## 196. study_ing_squirrel
+## 197. study_ing_squirrel
 > **Date**: 2025-12-28 13:51:53
 > **Link**: [Original Post](https://www.threads.com/@study_ing_squirrel/post/DSy1y1QARLv)
 
@@ -2365,7 +2377,7 @@ GPT, 제미나이등등 왜 저사람이 쓴
 
 ---
 
-## 197. pitchtitan
+## 198. pitchtitan
 > **Date**: 2025-12-27 20:59:57
 > **Link**: [Original Post](https://www.threads.com/@pitchtitan/post/DSxB_M8D0dn)
 
@@ -2378,7 +2390,7 @@ GPT, 제미나이등등 왜 저사람이 쓴
 
 ---
 
-## 198. specal1849
+## 199. specal1849
 > **Date**: 2025-12-28 13:30:44
 > **Link**: [Original Post](https://www.threads.com/@specal1849/post/DSyzX_MEq66)
 
@@ -2391,7 +2403,7 @@ GPT, 제미나이등등 왜 저사람이 쓴
 
 ---
 
-## 199. gwon_vibe
+## 200. gwon_vibe
 > **Date**: 2025-12-15 19:47:21
 > **Link**: [Original Post](https://www.threads.com/@gwon_vibe/post/DSSAJEckx6p)
 
@@ -2405,7 +2417,7 @@ GPT, 제미나이등등 왜 저사람이 쓴
 
 ---
 
-## 200. yourgpt3650
+## 201. yourgpt3650
 > **Date**: 2025-12-27 17:26:31
 > **Link**: [Original Post](https://www.threads.com/@yourgpt3650/post/DSwpkD7ksP7)
 
@@ -2417,7 +2429,7 @@ GPT, 제미나이등등 왜 저사람이 쓴
 
 ---
 
-## 201. struc___ture
+## 202. struc___ture
 > **Date**: 2025-12-27 18:28:41
 > **Link**: [Original Post](https://www.threads.com/@struc___ture/post/DSwwrTGk7d0)
 
@@ -2431,7 +2443,7 @@ GPT, 제미나이등등 왜 저사람이 쓴
 
 ---
 
-## 202. programmingzombie
+## 203. programmingzombie
 > **Date**: 2025-12-27 19:18:15
 > **Link**: [Original Post](https://www.threads.com/@programmingzombie/post/DSw2WViE_0V)
 
@@ -2442,7 +2454,7 @@ OpenAI의 창립 멤버이자 전 Tesla AI 디렉터인 안드레이 카패시(A
 
 ---
 
-## 203. choi.openai
+## 204. choi.openai
 > **Date**: 2025-12-27 13:03:30
 > **Link**: [Original Post](https://www.threads.com/@choi.openai/post/DSwLdrWD6DI)
 
@@ -2453,7 +2465,7 @@ AI 학습에 돈을 쓸 필요는 없습니다.
 
 ---
 
-## 204. alcohol_fully
+## 205. alcohol_fully
 > **Date**: 2025-12-27 12:30:08
 > **Link**: [Original Post](https://www.threads.com/@alcohol_fully/post/DSwHpNxE1U-)
 
@@ -2461,7 +2473,7 @@ AI 학습에 돈을 쓸 필요는 없습니다.
 
 ---
 
-## 205. dev_shibaa
+## 206. dev_shibaa
 > **Date**: 2025-12-25 11:34:56
 > **Link**: [Original Post](https://www.threads.com/@dev_shibaa/post/DSq3vMgkjNd)
 
@@ -2474,7 +2486,7 @@ AI 학습에 돈을 쓸 필요는 없습니다.
 
 ---
 
-## 206. focusrefresh
+## 207. focusrefresh
 > **Date**: 2025-12-25 19:11:11
 > **Link**: [Original Post](https://www.threads.com/@focusrefresh/post/DSrr84flFEq)
 
@@ -2484,7 +2496,7 @@ AI 학습에 돈을 쓸 필요는 없습니다.
 
 ---
 
-## 207. tofukyung
+## 208. tofukyung
 > **Date**: 2025-10-01 23:12:53
 > **Link**: [Original Post](https://www.threads.com/@tofukyung/post/DPRP3W3Annj)
 
@@ -2497,7 +2509,7 @@ AI 학습에 돈을 쓸 필요는 없습니다.
 
 ---
 
-## 208. specal1849
+## 209. specal1849
 > **Date**: 2025-11-26 06:58:45
 > **Link**: [Original Post](https://www.threads.com/@specal1849/post/DRftFAqE3Pv)
 
@@ -2511,7 +2523,7 @@ AI 학습에 돈을 쓸 필요는 없습니다.
 
 ---
 
-## 209. specal1849
+## 210. specal1849
 > **Date**: 2025-09-14 12:30:09
 > **Link**: [Original Post](https://www.threads.com/@specal1849/post/DOkU-Zhkk5J)
 
@@ -2526,7 +2538,7 @@ AI 학습에 돈을 쓸 필요는 없습니다.
 
 ---
 
-## 210. specal1849
+## 211. specal1849
 > **Date**: 2025-12-23 17:13:50
 > **Link**: [Original Post](https://www.threads.com/@specal1849/post/DSmUMfvkQ_v)
 
@@ -2542,7 +2554,7 @@ AI 프롬프트 깍는 노인에 빙의해 노트북LM 슬라이드 자료
 
 ---
 
-## 211. super_writer12
+## 212. super_writer12
 > **Date**: 2025-12-20 09:00:00
 > **Link**: [Original Post](https://www.threads.com/@super_writer12/post/DSduCCegtqQ)
 
@@ -2557,7 +2569,7 @@ AI 프롬프트 깍는 노인에 빙의해 노트북LM 슬라이드 자료
 
 ---
 
-## 212. platter.worklab
+## 213. platter.worklab
 > **Date**: 2025-12-19 19:07:35
 > **Link**: [Original Post](https://www.threads.com/@platter.worklab/post/DScOxOAkzam)
 
@@ -2568,7 +2580,7 @@ AI 프롬프트 깍는 노인에 빙의해 노트북LM 슬라이드 자료
 
 ---
 
-## 213. yun_ja_dong
+## 214. yun_ja_dong
 > **Date**: 2025-12-19 19:58:39
 > **Link**: [Original Post](https://www.threads.com/@yun_ja_dong/post/DScUnTvE933)
 
@@ -2581,7 +2593,7 @@ AI 프롬프트 깍는 노인에 빙의해 노트북LM 슬라이드 자료
 
 ---
 
-## 214. specal1849
+## 215. specal1849
 > **Date**: 2025-12-18 07:07:23
 > **Link**: [Original Post](https://www.threads.com/@specal1849/post/DSYXjdgExsv)
 
@@ -2597,7 +2609,7 @@ Ai분야에서 기억하고있는 댓글들
 
 ---
 
-## 215. specal1849
+## 216. specal1849
 > **Date**: 2025-12-16 08:27:34
 > **Link**: [Original Post](https://www.threads.com/@specal1849/post/DSTWkAOESmj)
 
@@ -2611,7 +2623,7 @@ Ai분야에서 기억하고있는 댓글들
 
 ---
 
-## 216. specal1849
+## 217. specal1849
 > **Date**: 2025-11-30 06:24:45
 > **Link**: [Original Post](https://www.threads.com/@specal1849/post/DRp8XdFE2VH)
 
@@ -2625,7 +2637,7 @@ Ai분야에서 기억하고있는 댓글들
 
 ---
 
-## 217. specal1849
+## 218. specal1849
 > **Date**: 2025-12-13 07:33:51
 > **Link**: [Original Post](https://www.threads.com/@specal1849/post/DSLinAmE2my)
 
@@ -2639,7 +2651,7 @@ DM으로 공냥이님 채널을 강의에서켜서
 
 ---
 
-## 218. specal1849
+## 219. specal1849
 > **Date**: 2025-08-20 17:31:34
 > **Link**: [Original Post](https://www.threads.com/@specal1849/post/DNkdqoARStO)
 
@@ -2653,7 +2665,7 @@ whisk에서 순식간에 만들수 있습니다.
 
 ---
 
-## 219. programmingzombie
+## 220. programmingzombie
 > **Date**: 2025-12-10 14:11:31
 > **Link**: [Original Post](https://www.threads.com/@programmingzombie/post/DSEhu-lE8kp)
 
@@ -2664,7 +2676,7 @@ whisk에서 순식간에 만들수 있습니다.
 
 ---
 
-## 220. ai.dentity.141
+## 221. ai.dentity.141
 > **Date**: 2025-07-30 20:50:21
 > **Link**: [Original Post](https://www.threads.com/@ai.dentity.141/post/DMuxpQ-IChX)
 
@@ -2678,7 +2690,7 @@ AI의 글쓰기 기술이 아니다.
 
 ---
 
-## 221. jungjiwoowriter
+## 222. jungjiwoowriter
 > **Date**: 2025-12-12 19:23:09
 > **Link**: [Original Post](https://www.threads.com/@jungjiwoowriter/post/DSKO_GEARgh)
 
@@ -2686,7 +2698,7 @@ AI의 글쓰기 기술이 아니다.
 
 ---
 
-## 222. specal1849
+## 223. specal1849
 > **Date**: 2025-12-12 17:00:51
 > **Link**: [Original Post](https://www.threads.com/@specal1849/post/DSJ-s-OEj2D)
 
@@ -2701,7 +2713,7 @@ GPT나 제미나이가 가지는 편향성을...
 
 ---
 
-## 223. specal1849
+## 224. specal1849
 > **Date**: 2025-12-06 08:09:35
 > **Link**: [Original Post](https://www.threads.com/@specal1849/post/DR5lIlhEntF)
 
@@ -2714,7 +2726,7 @@ GPT나 제미나이가 가지는 편향성을...
 
 ---
 
-## 224. specal1849
+## 225. specal1849
 > **Date**: 2025-12-06 07:07:51
 > **Link**: [Original Post](https://www.threads.com/@specal1849/post/DR5eEaEE9_R)
 
@@ -2727,7 +2739,7 @@ GPT나 제미나이가 가지는 편향성을...
 
 ---
 
-## 225. specal1849
+## 226. specal1849
 > **Date**: 2025-12-09 11:39:53
 > **Link**: [Original Post](https://www.threads.com/@specal1849/post/DSBpzvtkVTT)
 
@@ -2740,7 +2752,7 @@ GPT나 제미나이가 가지는 편향성을...
 
 ---
 
-## 226. specal1849
+## 227. specal1849
 > **Date**: 2025-12-03 15:56:31
 > **Link**: [Original Post](https://www.threads.com/@specal1849/post/DRysL3RkpGl)
 
@@ -2756,7 +2768,7 @@ AI기반 취업준비시 도움이 되는 툴 정리
 
 ---
 
-## 227. specal1849
+## 228. specal1849
 > **Date**: 2025-09-17 17:07:34
 > **Link**: [Original Post](https://www.threads.com/@specal1849/post/DOshd8oEcaT)
 
@@ -2771,7 +2783,7 @@ AI기반 취업준비시 도움이 되는 툴 정리
 
 ---
 
-## 228. specal1849
+## 229. specal1849
 > **Date**: 2025-12-10 17:06:37
 > **Link**: [Original Post](https://www.threads.com/@specal1849/post/DSE1xdPkpu-)
 
@@ -2784,7 +2796,7 @@ AI활용법 이글하나에 정리 다해뒀습니다.
 
 ---
 
-## 229. specal1849
+## 230. specal1849
 > **Date**: 2025-12-12 06:58:56
 > **Link**: [Original Post](https://www.threads.com/@specal1849/post/DSI4E1AkaQ0)
 
@@ -2798,7 +2810,7 @@ DM워낙 많이와서 나노바나나 PRO
 
 ---
 
-## 230. art_director_teddy
+## 231. art_director_teddy
 > **Date**: 2025-12-12 23:08:14
 > **Link**: [Original Post](https://www.threads.com/@art_director_teddy/post/DSKovq7Etdo)
 
@@ -2811,7 +2823,7 @@ Ai로 만든 삼성증권 mPOP 제작 후기!
 
 ---
 
-## 231. specal1849
+## 232. specal1849
 > **Date**: 2025-12-13 09:06:28
 > **Link**: [Original Post](https://www.threads.com/@specal1849/post/DSLtNP8Em2v)
 
@@ -2826,7 +2838,7 @@ Ai로 만든 삼성증권 mPOP 제작 후기!
 
 ---
 
-## 232. danhovac
+## 233. danhovac
 > **Date**: 2025-12-01 13:57:28
 > **Link**: [Original Post](https://www.threads.com/@danhovac/post/DRtU-J0E3MU)
 

@@ -86,11 +86,16 @@ def merge_results():
     threads_posts = threads_data.get('posts', []) if isinstance(threads_data, dict) else threads_data
     linkedin_posts = linkedin_data.get('posts', []) if isinstance(linkedin_data, dict) else linkedin_data
 
-    # 플랫폼 구분 필드(sns_platform) 추가
+    # 플랫폼 구분 필드(sns_platform) 추가 및 기존 ID 백업
     for p in threads_posts:
         p['sns_platform'] = 'threads'
+        if 'sequence_id' in p:
+            p['platform_sequence_id'] = p.pop('sequence_id')
+            
     for p in linkedin_posts:
         p['sns_platform'] = 'linkedin'
+        if 'sequence_id' in p:
+            p['platform_sequence_id'] = p.pop('sequence_id')
 
     # 중복 제거 (code 기준)
     seen_codes = set()
@@ -114,19 +119,39 @@ def save_total(new_posts, threads_count, linkedin_count):
     
     prev_total_file = find_latest_full_file(OUTPUT_TOTAL_DIR, "total_full_*.json")
     
-    prev_codes = set()
+    prev_id_map = {} # code -> existing sequence_id
+    max_id = 0
     if prev_total_file:
-        print(f"   이전 Total 파일 로드: {os.path.basename(prev_total_file)}")
+        print(f"   이전 Total 파일 로드 (ID 맵핑용): {os.path.basename(prev_total_file)}")
         prev_data = load_json(prev_total_file)
         prev_posts_list = prev_data.get('posts', []) if isinstance(prev_data, dict) else prev_data
         for p in prev_posts_list:
-            if 'code' in p:
-                prev_codes.add(str(p['code']))
+            code = str(p.get('code'))
+            seq_id = p.get('sequence_id', 0)
+            prev_id_map[code] = seq_id
+            if seq_id > max_id:
+                max_id = seq_id
     
+    # 1. 신규 아이템 분류
     new_items = []
     for p in new_posts:
-        if str(p.get('code')) not in prev_codes:
+        code = str(p.get('code'))
+        if code not in prev_id_map:
             new_items.append(p)
+            
+    # 2. 신규 아이템에 전역 sequence_id 부여 (날짜순 정렬 후 부여하여 일관성 유지)
+    # created_at이 없는 경우를 대비해 crawled_at 등을 보조로 사용
+    new_items.sort(key=lambda x: (x.get('created_at') or x.get('crawled_at') or '0000-00-00'))
+    
+    for p in new_items:
+        max_id += 1
+        p['sequence_id'] = max_id
+
+    # 3. 기존 아이템에 대해 원래의 sequence_id 복원
+    for p in new_posts:
+        code = str(p.get('code'))
+        if code in prev_id_map:
+            p['sequence_id'] = prev_id_map[code]
             
     new_threads_count = sum(1 for p in new_items if p.get('sns_platform') == 'threads')
     new_linkedin_count = sum(1 for p in new_items if p.get('sns_platform') == 'linkedin')
@@ -136,6 +161,7 @@ def save_total(new_posts, threads_count, linkedin_count):
     total_data = {
         "metadata": {
             "updated_at": datetime.now().isoformat(),
+            "max_sequence_id": max_id,
             "total_count": len(new_posts),
             "threads_count": sum(1 for p in new_posts if p.get('sns_platform') == 'threads'),
             "linkedin_count": sum(1 for p in new_posts if p.get('sns_platform') == 'linkedin'),

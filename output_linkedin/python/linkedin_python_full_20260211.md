@@ -1,11 +1,157 @@
 # Data Export Report
 
-- **Generated At**: 2026-02-11T15:06:39.014868
-- **Total Posts**: 173
+- **Generated At**: 2026-02-11T16:54:23.192019
+- **Total Posts**: 175
 
 ---
 
-## 1. Josh Kim
+## 1. 한성국
+> **Subtitle**: 이커머스 운영 비용을 절반으로 줄이는 AI 시스템을 공유합니다
+> **Date**: 2026-02-10 09:20:02
+> **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7426781961781846017?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7426781961781846017%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
+
+제안서 에이전트, 퀄리티를 더 올리고 있습니다.
+지난주 올린 RFP 제안서 자동화 글에
+댓글이 1,000개 넘게 달렸습니다.
+
+솔직히 이 정도 반응은 예상 못 했어요.
+그만큼 제안서 작성에 시간과 에너지를
+쏟고 계신 분들이 많다는 뜻이겠죠.
+
+그래서 급하게 공유하지 않기로 했습니다.
+에이전트 완성도를 확실히
+끌어올리고 나서 보여드리려고요.
+
+지금 개선하고 있는 부분입니다.
+① RFP 분석 정확도를 더 높이고 있습니다
+② 시장 조사 → 전략 수립 → 제안서 작성까지
+흐름을 더 매끄럽게 다듬고 있습니다
+③ 바로 따라 쓸 수 있도록 설치 가이드도 함께 준비 중입니다
+
+설 연휴 끝나고 바로 공유하겠습니다.
+조금만 더 기다려주세요.
+
+댓글 남겨주신 분들, 하나하나 다 보고 있습니다.
+기대해주셔서 감사합니다 🙏
+
+### Images
+![Image](https://media.licdn.com/dms/image/v2/D5605AQF5NMMiS9pYfA/videocover-high/B56ZxE6z3GIYBY-/0/1770682794929?e=1771401600&v=beta&t=LCQnrdLKe6aut4Aoblyv3Zsw9BeOZhbZmjv0BGOeYZU)
+
+---
+
+## 2. 조여준 Ethan Cho
+> **Subtitle**: CIO @ TheVentures | ex-Google, Samsung
+> **Date**: 2026-02-09 06:52:20
+> **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7426382404673490944?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7426382404673490944%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
+
+[무거운 글] AI 시대, 감자가 사람보다 존귀해진다 — 유발 하라리의 대담을 보고
+
+유발 하라리가 2026년 다보스 포럼에서 말했다.
+
+"인류 역사상 가장 크고 무서운 심리 실험이 시작되었다."
+
+그는 덧붙였다. "인간의 문화는 언어로 이루어져 있다. AI가 인간보다 언어를 더 잘 구사하게 된 순간, 인류 역사는 끝난다."
+
+AI가 나보다 더 잘 판단하고, 더 잘 예측하고, 더 잘 결정하는 시대가 오면 — 나의 용도는 무엇인가. 더 나아가, 인간의 용도는 무엇인가.
+
+---
+
+영화 매트릭스에서 기계는 인간을 배터리로 사용한다.
+
+그런데 이는 열역학적으로 성립하지 않는다. 인간을 생존시키는 데 필요한 에너지가 인체에서 추출 가능한 에너지보다 훨씬 크다. 차라리 감자를 재배하는 편이 낫다. 에너지원으로서 인간은 감자보다 비효율적이다.
+
+하라리는 다보스에서 이렇게 구분했다. "칼은 인간이 샐러드를 자를지 살인을 할지 결정한다. 그러나 AI는 스스로 선택한다." AI는 도구가 아니다. 도구는 인간에게 종속된다. AI는 에이전트다. 에이전트는 스스로 판단하고 행동한다. 매트릭스의 기계가 인간을 배터리로 "사용"한 것이 아니라, 인간의 용도를 스스로 "결정"한 것처럼.
+
+대부분, 의식적으로든 무의식적으로든 이런 반론이 마음 속에서 나올 것이다.
+'사람이 어디 감자 따위와 비교되는가. 사람은 본래 존귀한 존재다.'
+
+그 '본래 존귀하다'의 근거가 무엇인가.
+
+---
+
+인간 존엄의 근거라는 것들
+
+인류는 스스로를 정의하기 위해 수많은 이름을 붙여왔다.
+
+Homo Sapiens — 생각하는 인간. AI가 이미 인간보다 빠르고 정확하게 사고한다.
+
+Homo Faber — 도구를 만드는 인간. AI가 코드를 작성하고, 설계하고, 제조 공정을 최적화한다.
+
+Homo Ludens — 놀이하는 인간. AI가 작곡하고, 그림을 그리고, 게임을 창작한다.
+
+Homo Economicus — 합리적으로 경제활동을 하는 인간. AI가 더 합리적으로 투자하고, 배분하고, 예측한다.
+
+Homo Socialis — 사회적 인간. AI가 감정을 모사하고, 상담하고, 관계를 시뮬레이션한다.
+
+Homo Deus — 신이 되려는 인간. 하라리가 붙인 이 이름이야말로 가장 정직하다. 신 없이 신이 되려 한 인간의 최종 자화상이다.
+
+인간이 스스로에게 부여한 모든 접두어가 AI에 의해 무력화되고 있다. "Homo" 뒤에 무엇을 붙이든, 그것이 인간 고유의 영역이었던 시대는 끝나가고 있다.
+
+하라리 본인이 이를 숫자로 요약했다. "인간의 자질과 능력 중 99%는 대부분의 현대 직업 수행에 단순히 불필요하다." 나머지 1%마저 AI가 대체하는 시점이 올 때, Homo 뒤에 붙일 단어는 소멸한다.
+
+남는 것은 "Homo" 그 자체다. 그런데 그 "Homo" 자체의 가치는 어디에서 오는가.
+
+천부인권. 근대에 발명된 사상이다. 로크와 홉스가 체계화한 철학이다. 그 이전 수천 년간 인류는 그러한 개념 없이 존속했다. 노예제가 당연했고, 왕이 백성의 생사여탈권을 가졌다.
+
+이러한 합의는 힘의 균형이 변하면 깨진다.
+
+---
+
+나는 인간이 스스로 존귀한 것이 아니라 하나님이 그것을 부여하신다고 믿는다. 이건 내 믿음이다.
+
+그러나 많은 사람들은 이를 믿지 않는다. 그건 각자의 자유다.
+
+다만 한 가지는 짚겠다.
+
+하나님이 부재한 세계에서, AI가 편재하고, 인간보다 우월하게 사고하고, 생산하고, 의사결정하는 시대가 도래하면 — 인간의 용도는 무엇인가.
+
+공상과학이 아니다. 역사가 이미 답을 제시했다.
+
+20세기 우생학. 나치의 "살 가치가 없는 생명(Lebensunwertes Leben)." 공리주의적으로 인간의 가치를 산정하기 시작하면, 반드시 "쓸모없는 인간"이라는 범주가 생성되었다. 단 한 번의 예외도 없이.
+
+유발 하라리가 명명한 "useless class." 그의 원문은 더 잔인하다.
+
+"21세기에 우리는 거대한 새로운 비노동 계급의 탄생을 목격할 것이다. 경제적, 정치적, 심지어 예술적 가치도 없는 사람들. 이 계급은 단순히 실업 상태가 아니라 고용 불가능한 상태가 될 것이다."
+
+그리고 21세기 경제학의 가장 중요한 질문은 이것이라고 했다. "모든 잉여 인간을 어떻게 할 것인가."
+
+해법은? 하라리의 답변이다.
+
+"나의 최선의 추측은 마약과 컴퓨터 게임의 조합으로 그들을 행복하게 유지시키는 것이다."
+"My best guess is, keep them happy with a combination of drugs and computer games"
+
+이것이 세계에서 가장 영향력 있는 역사학자가 제시한 인류의 미래다. 마약과 게임. 그의 세계관 안에는 이것 이상의 해법이 존재하지 않는다.
+
+---
+
+AI 시대에 동일한 논리가 더 정교하게 반복될 것이다.
+
+"이 사람은 AI보다 생산성이 낮다" → "사회적 비용이다" → "최적화해야 한다"
+
+인간 사회에서 이 활강을 저지할 장치가 무엇인가.
+
+"법과 제도가 있지 않은가. 헌법이 있고, 인권선언이 있고, 국제기구가 있다."
+
+그렇다. 그것들이 있었다. 1933년 독일에도 바이마르 헌법이 있었다. 세계에서 가장 진보적인 헌법이었다. 그런데 합법적 선거를 통해 집권한 정부가, 합법적 절차를 통해 그 헌법을 무력화했다. 법은 그것을 지키려는 의지가 사라지면 종이에 불과하다. 그리고 그 의지의 근거가 "인간은 본래 존귀하다"는 전제인데 — 그 전제의 근거가 무엇이냐는 것이 이 글의 질문이다.
+
+사회적 합의는 장치가 아니다. 조건이다. 조건은 변한다.
+
+인간 스스로 구축한 인간 존엄은, 인간 스스로 해체할 수 있다. 역사가 이를 반복적으로 증명했고, AI는 그 해체의 속도를 가속할 것이다.
+
+---
+
+감자보다 에너지 효율이 낮은 존재. Homo 뒤에 무엇을 붙여도 AI가 대체 가능한 존재. 세계 최고의 역사학자가 내놓은 최선의 처방이 마약과 게임인 존재.
+
+그런 존재의 가치는 어디에서 오는가.
+
+나는 내 답을 가지고 있다. 그리고 이 질문은 머지않아 모든 사람 앞에 놓일 것이다. AI가 아니라, 각자가 스스로에게 답해야 할 질문이다.
+
+### Images
+![Image](https://media.licdn.com/dms/image/v2/D5622AQFW6-M4MVMLZQ/feedshare-shrink_2048_1536/B56Zw_E9QwIYAo-/0/1770584790251?e=1772668800&v=beta&t=6lAwIuq23Hs7Ja8Jn_2sjLdsKjYFrJr77936fkOF54A)
+
+---
+
+## 3. Josh Kim
 > **Subtitle**: AI 크리에이터 조쉬입니다. ex-SKT 프로덕트 디자이너
 > **Date**: 2026-02-10 21:31:15
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7426965977122357248?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7426965977122357248%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -27,7 +173,7 @@ meeting to product 시대.
 
 ---
 
-## 2. 홍민지Hong Minji
+## 4. 홍민지Hong Minji
 > **Subtitle**: Creative Marketer @MODULABS AX
 > **Date**: 2026-02-10 19:14:39
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7426931601873346560?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7426931601873346560%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -48,7 +194,7 @@ https://lnkd.in/gx8WAnBN
 
 ---
 
-## 3. Minchul Kim
+## 5. Minchul Kim
 > **Subtitle**: PO/PM | IT 전략 기획 & 서비스 구축 | AI & Vibe Coding Evangelist | CROW Study Group Leader
 > **Date**: 2026-02-10 16:34:07
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7426891202538651648?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7426891202538651648%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -85,7 +231,7 @@ AI를 쓰더라도 본인의 업무 역량을 계속 키워나가야 하는 이�
 
 ---
 
-## 4. 정구봉 Goobong Jeong
+## 6. 정구봉 Goobong Jeong
 > **Subtitle**: Claude Code for all of your work
 > **Date**: 2026-02-09 06:45:01
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7426380560358383617?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7426380560358383617%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -136,7 +282,7 @@ Yegge의 한마디: "Build for yourself. 자기가 쓰지 않는 제품을 만�
 
 ---
 
-## 5. Kyunghun Lee
+## 7. Kyunghun Lee
 > **Subtitle**: CAIO & Deputy CEO @ Channel Corp | AI × B2B SaaS
 > **Date**: 2026-02-08 09:46:40
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7426063889391554560?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7426063889391554560%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -172,7 +318,7 @@ SaaS is Dead라고 합니다. 하지만 질문 자체가 잘못됐습니다. 죽
 
 ---
 
-## 6. Minjung Kim
+## 8. Minjung Kim
 > **Subtitle**: AI, Digital Change, HR 및 변화관리(Change Management) 전문성을 바탕으로, 조직이 AI를 실질적으로 도입하고 활용하도록 돕는 AX(AI Transformation) 전략가로 활동 중임. 단순히 기술 도입을 넘어, transforamation 경험과 Design Thinking with AI& Agile 방법론을 통해 구성원이 AI로 일하는 방식을 설계함
 > **Date**: 2026-02-07 16:55:43
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7425809475447742464?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7425809475447742464%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -206,7 +352,7 @@ Gems에 접속à 새 gems 선택 ->요청사항 입력 -> 기본도구 선택 ->
 
 ---
 
-## 7. 연준영
+## 9. 연준영
 > **Subtitle**: Headhunter | Top Talent Acquisition
 > **Date**: 2026-02-07 16:41:48
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7425805973493010432?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7425805973493010432%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -249,7 +395,7 @@ Gems에 접속à 새 gems 선택 ->요청사항 입력 -> 기본도구 선택 ->
 
 ---
 
-## 8. Jeongmin Lee
+## 10. Jeongmin Lee
 > **Subtitle**: Building with AI @ Smoretalk | Control opinions with AI
 > **Date**: 2026-02-07 15:50:08
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7425792970475462656?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7425792970475462656%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -331,7 +477,7 @@ https://skills.sh/ 접속하시면 많은 스킬을 쉽게 확인 가능합니�
 
 ---
 
-## 9. BZCF - 비즈까페
+## 11. BZCF - 비즈까페
 > **Subtitle**: BZCF
 > **Date**: 2026-02-07 13:25:52
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7425756662302523392?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7425756662302523392%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -349,7 +495,7 @@ https://skills.sh/ 접속하시면 많은 스킬을 쉽게 확인 가능합니�
 
 ---
 
-## 10. 조여준 Ethan Cho
+## 12. 조여준 Ethan Cho
 > **Subtitle**: CIO @ TheVentures | ex-Google, Samsung
 > **Date**: 2026-02-07 07:30:02
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7425667115908599809?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7425667115908599809%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -393,7 +539,7 @@ AI 시대에 모든 것은 변한다. 그리고 그 속도는 점점 빨라진�
 
 ---
 
-## 11. 김덕중
+## 13. 김덕중
 > **Subtitle**: 숙명여대 겸임교수, Firb AI 연구소장
 > **Date**: 2026-02-06 16:49:16
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7425445464528863233?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7425445464528863233%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -408,7 +554,7 @@ AI 시대에 모든 것은 변한다. 그리고 그 속도는 점점 빨라진�
 
 ---
 
-## 12. 이강권
+## 14. 이강권
 > **Subtitle**: 사업개발자
 > **Date**: 2026-02-06 16:16:05
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7425437112285569024?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7425437112285569024%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -436,7 +582,7 @@ https://lnkd.in/gjZTqHzy
 
 ---
 
-## 13. 정구봉 Goobong Jeong
+## 15. 정구봉 Goobong Jeong
 > **Subtitle**: Claude Code for all of your work
 > **Date**: 2026-02-06 15:41:30
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7425428410212102145?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7425428410212102145%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -463,7 +609,7 @@ https://lnkd.in/gjcecUbA
 
 ---
 
-## 14. 홍남호
+## 16. 홍남호
 > **Subtitle**: CEO at OFFLIGHT | AI Scheduler that gathers your tasks from Slack, Notion, Gmail & more — and plans your day like a smart assistant | ex-QuotaBook (YC W21)
 > **Date**: 2026-02-06 08:13:15
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7425315604485779456?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7425315604485779456%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -538,7 +684,7 @@ Claude의 시스템 프롬프트에 이런 지침이 내장되어 있습니다:
 
 ---
 
-## 15. Kyunghun Lee
+## 17. Kyunghun Lee
 > **Subtitle**: CAIO & Deputy CEO @ Channel Corp | AI × B2B SaaS
 > **Date**: 2026-02-05 07:00:01
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7424934784096731136?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7424934784096731136%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -575,7 +721,7 @@ Ben은 스스로를 프로그래머도 비기술자도 아닌 새로운 기술 �
 
 ---
 
-## 16. BZCF - 비즈까페
+## 18. BZCF - 비즈까페
 > **Subtitle**: BZCF
 > **Date**: 2026-02-04 11:11:24
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7424635662231945216?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7424635662231945216%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -589,7 +735,7 @@ Ben은 스스로를 프로그래머도 비기술자도 아닌 새로운 기술 �
 
 ---
 
-## 17. 정구봉 Goobong Jeong
+## 19. 정구봉 Goobong Jeong
 > **Subtitle**: Claude Code for all of your work
 > **Date**: 2026-02-04 01:02:41
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7424482472438120448?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7424482472438120448%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -642,7 +788,7 @@ Ben은 스스로를 프로그래머도 비기술자도 아닌 새로운 기술 �
 
 ---
 
-## 18. 최진규
+## 20. 최진규
 > **Subtitle**: SK AX | Learning and Development, Growth
 > **Date**: 2026-02-03 23:44:08
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7424462704150634496?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7424462704150634496%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -673,7 +819,7 @@ Ben은 스스로를 프로그래머도 비기술자도 아닌 새로운 기술 �
 
 ---
 
-## 19. 류장근
+## 21. 류장근
 > **Subtitle**: CEO @ BATI.AI | Global Commerce Intelligence for Beauty Brands
 > **Date**: 2026-02-03 21:08:37
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7424423567607603204?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7424423567607603204%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -703,7 +849,7 @@ AI가 코드를 설계 의도대로 짰는지 확인하는 가장 확실한 방�
 
 ---
 
-## 20. 정구봉 Goobong Jeong
+## 22. 정구봉 Goobong Jeong
 > **Subtitle**: Claude Code for all of your work
 > **Date**: 2026-02-03 06:45:03
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7424206243277381632?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7424206243277381632%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -741,7 +887,7 @@ Claude Code 비개발 활용에는 레벨이 있습니다.
 
 ---
 
-## 21. 홍민지Hong Minji
+## 23. 홍민지Hong Minji
 > **Subtitle**: Creative Marketer @MODULABS AX
 > **Date**: 2026-02-02 23:53:23
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7424102643498774528?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7424102643498774528%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -766,7 +912,7 @@ https://lnkd.in/gpjNcBzM
 
 ---
 
-## 22. 김덕중
+## 24. 김덕중
 > **Subtitle**: 숙명여대 겸임교수, Firb AI 연구소장
 > **Date**: 2026-02-02 22:08:00
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7424076125506740224?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7424076125506740224%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -780,7 +926,7 @@ https://lnkd.in/gpjNcBzM
 
 ---
 
-## 23. 최진규
+## 25. 최진규
 > **Subtitle**: SK AX | Learning and Development, Growth
 > **Date**: 2026-02-02 20:03:42
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7424044841904447488?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7424044841904447488%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -808,7 +954,7 @@ AI 쉐임이 아닌 AI 프라이드가 있는 팀을 만들어야 AI가 성과�
 
 ---
 
-## 24. 윤썸원
+## 26. 윤썸원
 > **Subtitle**: 프로젝트 썸원 Content Owner
 > **Date**: 2026-02-02 18:09:49
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7424016182380470272?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7424016182380470272%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -848,7 +994,7 @@ AI 쉐임이 아닌 AI 프라이드가 있는 팀을 만들어야 AI가 성과�
 
 ---
 
-## 25. Daewook Kwon
+## 27. Daewook Kwon
 > **Subtitle**: AI/ML Engineer @ NC AI
 > **Date**: 2026-02-02 10:30:21
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7423900555409911808?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7423900555409911808%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -876,7 +1022,7 @@ AI 트렌드의 속도, 링크드인과 스레드는 확실히 다르네요
 
 ---
 
-## 26. 정구봉 Goobong Jeong
+## 28. 정구봉 Goobong Jeong
 > **Subtitle**: Claude Code for all of your work
 > **Date**: 2026-02-02 06:30:03
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7423840081410678784?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7423840081410678784%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -931,7 +1077,7 @@ github: https://lnkd.in/gYpyMcPJ
 
 ---
 
-## 27. HOJUN NAM
+## 29. HOJUN NAM
 > **Subtitle**: Management support Of Economychosun at Chosunbiz
 > **Date**: 2026-02-01 11:41:34
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7423556087586603009?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7423556087586603009%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -943,7 +1089,7 @@ github: https://lnkd.in/gYpyMcPJ
 
 ---
 
-## 28. Sihyun Kim
+## 30. Sihyun Kim
 > **Subtitle**: AI Creator / Automation Agency
 > **Date**: 2026-01-31 18:08:08
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7423290982298828800?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7423290982298828800%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -967,7 +1113,7 @@ Openclaw 짧은 리뷰
 
 ---
 
-## 29. Soojung Shin (신수정)
+## 31. Soojung Shin (신수정)
 > **Subtitle**: Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”
 > **Date**: 2026-01-31 14:31:38
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7423236500034764800?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7423236500034764800%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -1003,7 +1149,7 @@ p.s. 댓글은 서로에게 도움됩니다.
 
 ---
 
-## 30. 한성국
+## 32. 한성국
 > **Subtitle**: 이커머스 운영 비용을 절반으로 줄이는 AI 시스템을 공유합니다
 > **Date**: 2026-01-31 09:35:03
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7423161860318851072?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7423161860318851072%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -1036,7 +1182,7 @@ AI로 콘텐츠 자동화하고 싶은 분들은
 
 ---
 
-## 31. 한성국
+## 33. 한성국
 > **Subtitle**: 이커머스 운영 비용을 절반으로 줄이는 AI 시스템을 공유합니다
 > **Date**: 2026-01-31 09:34:40
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7423161763308707840?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7423161763308707840%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -1066,7 +1212,7 @@ AI 작업은 계속 돌아가야 하는 상황이거든요.
 
 ---
 
-## 32. 정구봉 Goobong Jeong
+## 34. 정구봉 Goobong Jeong
 > **Subtitle**: Claude Code for all of your work
 > **Date**: 2026-01-31 07:45:00
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7423134165010763776?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7423134165010763776%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -1090,7 +1236,7 @@ HoYeon Lee 가 General Engineer 로 개발하고 있는 제품입니다.
 
 ---
 
-## 33. 한성국
+## 35. 한성국
 > **Subtitle**: 이커머스 운영 비용을 절반으로 줄이는 AI 시스템을 공유합니다
 > **Date**: 2026-01-30 20:59:17
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7422971668609966080?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7422971668609966080%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -1130,7 +1276,7 @@ RFP 파일 하나만 넣으면
 
 ---
 
-## 34. Jeongmin Lee
+## 36. Jeongmin Lee
 > **Subtitle**: Building with AI @ Smoretalk | Control opinions with AI
 > **Date**: 2026-01-30 08:21:23
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7422780935894544384?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7422780935894544384%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -1232,7 +1378,7 @@ tonylee(.)im: https://tonylee.im/
 
 ---
 
-## 35. Kyunghun Lee
+## 37. Kyunghun Lee
 > **Subtitle**: CAIO & Deputy CEO @ Channel Corp | AI × B2B SaaS
 > **Date**: 2026-01-30 07:30:01
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7422768008177074177?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7422768008177074177%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -1273,7 +1419,7 @@ D.A. Davidson의 Gil Luria는 이렇게 말합니다. "AI가 아직 이 비즈�
 
 ---
 
-## 36. Dong Keun Jo
+## 38. Dong Keun Jo
 > **Subtitle**: 조코딩 JoCoding
 > **Date**: 2026-01-29 21:51:09
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7422622332021604353?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7422622332021604353%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -1301,7 +1447,7 @@ OpenAI의 API를 사용하여 글로벌 수익형 AI 프로덕트를 직접 만�
 
 ---
 
-## 37. BZCF - 비즈까페
+## 39. BZCF - 비즈까페
 > **Subtitle**: BZCF
 > **Date**: 2026-01-29 19:19:42
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7422584216384774144?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7422584216384774144%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -1316,7 +1462,7 @@ OpenAI의 API를 사용하여 글로벌 수익형 AI 프로덕트를 직접 만�
 
 ---
 
-## 38. Josh Kim
+## 40. Josh Kim
 > **Subtitle**: AI 크리에이터 조쉬입니다. ex-SKT 프로덕트 디자이너
 > **Date**: 2026-01-29 09:41:25
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7422438686518272002?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7422438686518272002%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -1345,7 +1491,7 @@ AI로 인해서 내 할일이
 
 ---
 
-## 39. 조여준 Ethan Cho
+## 41. 조여준 Ethan Cho
 > **Subtitle**: CIO @ TheVentures | ex-Google, Samsung
 > **Date**: 2026-01-29 07:57:19
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7422412489310777344?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7422412489310777344%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -1397,7 +1543,7 @@ McKinsey 입장에서 저 상패를 자랑스럽게 전시할수록, 역설적�
 
 ---
 
-## 40. 정구봉 Goobong Jeong
+## 42. 정구봉 Goobong Jeong
 > **Subtitle**: Claude Code for all of your work
 > **Date**: 2026-01-29 07:45:01
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7422409393570344960?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7422409393570344960%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -1424,7 +1570,7 @@ GitHub: https://lnkd.in/gFNPP24Q
 
 ---
 
-## 41. 한성국
+## 43. 한성국
 > **Subtitle**: 이커머스 운영 비용을 절반으로 줄이는 AI 시스템을 공유합니다
 > **Date**: 2026-01-29 07:09:22
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7422400422361096192?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7422400422361096192%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -1464,7 +1610,7 @@ GitHub: https://lnkd.in/gFNPP24Q
 
 ---
 
-## 42. 윤썸원
+## 44. 윤썸원
 > **Subtitle**: 프로젝트 썸원 Content Owner
 > **Date**: 2026-01-28 18:31:55
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7422209803042742272?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7422209803042742272%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -1488,7 +1634,7 @@ GitHub: https://lnkd.in/gFNPP24Q
 
 ---
 
-## 43. Bumgeun Song
+## 45. Bumgeun Song
 > **Subtitle**: Product Engineer @ Toss
 > **Date**: 2026-01-28 18:31:22
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7422209668422324224?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7422209668422324224%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -1523,7 +1669,7 @@ Backspace 연타 대신 단어 통째로 삭제. 오타 수정, 파일명 바꿀
 
 ---
 
-## 44. 정구봉 Goobong Jeong
+## 46. 정구봉 Goobong Jeong
 > **Subtitle**: Claude Code for all of your work
 > **Date**: 2026-01-28 07:00:03
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7422035691510984705?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7422035691510984705%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -1557,7 +1703,7 @@ More tokens, more wins
 
 ---
 
-## 45. 홍민지Hong Minji
+## 47. 홍민지Hong Minji
 > **Subtitle**: Creative Marketer @MODULABS AX
 > **Date**: 2026-01-27 15:42:25
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7421804762028961792?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7421804762028961792%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -1585,7 +1731,7 @@ More tokens, more wins
 
 ---
 
-## 46. SEMYOUNG BAEK (백세명)
+## 48. SEMYOUNG BAEK (백세명)
 > **Subtitle**: Director of Sales & Strategy at maetel | Leader Rooted in Humanity and Trust
 > **Date**: 2026-01-26 07:30:03
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7421318465455722496?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7421318465455722496%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -1786,7 +1932,7 @@ B2B 마케팅의 본질은 단순합니다.
 
 ---
 
-## 47. Jeongmin Lee
+## 49. Jeongmin Lee
 > **Subtitle**: Building with AI @ Smoretalk | Control opinions with AI
 > **Date**: 2026-01-25 11:53:54
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7421022478979948545?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7421022478979948545%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -1850,7 +1996,7 @@ AI 시대의 승자는 더 좋은 기능을 만드는 회사가 아니라, AI �
 
 ---
 
-## 48. 정구봉 Goobong Jeong
+## 50. 정구봉 Goobong Jeong
 > **Subtitle**: Claude Code for all of your work
 > **Date**: 2026-01-23 06:30:03
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7420216201961906177?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7420216201961906177%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -1891,7 +2037,7 @@ https://lnkd.in/dfxh6MRG
 
 ---
 
-## 49. 티타임즈
+## 51. 티타임즈
 > **Subtitle**: 팔로워 287명
 > **Date**: 2026-01-22 19:16:47
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7420046768471433216?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7420046768471433216%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -1909,7 +2055,7 @@ https://lnkd.in/dfxh6MRG
 
 ---
 
-## 50. SangRok Jung
+## 52. SangRok Jung
 > **Subtitle**: AI 자동화 전문가 | 15개 국가기관 프로젝트 수행 | 구독자 2만+ 커뮤니티 운영 | Quantum Jump Club 대표
 > **Date**: 2026-01-21 11:15:01
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7419563139156992000?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7419563139156992000%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -2021,7 +2167,7 @@ Gemini CLI Stitch Extension: https://lnkd.in/gswmHf9D
 
 ---
 
-## 51. Jeongmin Lee
+## 53. Jeongmin Lee
 > **Subtitle**: Building with AI @ Smoretalk | Control opinions with AI
 > **Date**: 2026-01-21 08:03:09
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7419514854060797952?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7419514854060797952%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -2100,7 +2246,7 @@ https://lnkd.in/gPJGcR69
 
 ---
 
-## 52. Josh Kim
+## 54. Josh Kim
 > **Subtitle**: AI 크리에이터 조쉬입니다. ex-SKT 프로덕트 디자이너
 > **Date**: 2026-01-20 12:17:57
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7419216592317722624?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7419216592317722624%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -2131,7 +2277,7 @@ Supanova를 베타 오픈했고,
 
 ---
 
-## 53. 김덕중
+## 55. 김덕중
 > **Subtitle**: 숙명여대 겸임교수, Firb AI 연구소장
 > **Date**: 2026-01-19 22:40:57
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7419010986470211584?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7419010986470211584%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -2154,7 +2300,7 @@ Supanova를 베타 오픈했고,
 
 ---
 
-## 54. Geonho Shin
+## 56. Geonho Shin
 > **Subtitle**: 데이원컴퍼니 B2B사업부 본부장
 > **Date**: 2026-01-19 08:08:38
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7418791458029121536?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7418791458029121536%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -2191,7 +2337,7 @@ Supanova를 베타 오픈했고,
 
 ---
 
-## 55. Minjung Kim
+## 57. Minjung Kim
 > **Subtitle**: AI, Digital Change, HR 및 변화관리(Change Management) 전문성을 바탕으로, 조직이 AI를 실질적으로 도입하고 활용하도록 돕는 AX(AI Transformation) 전략가로 활동 중임. 단순히 기술 도입을 넘어, transforamation 경험과 Design Thinking with AI& Agile 방법론을 통해 구성원이 AI로 일하는 방식을 설계함
 > **Date**: 2026-01-18 15:40:15
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7418542725496754176?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7418542725496754176%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -2225,7 +2371,7 @@ Supanova를 베타 오픈했고,
 
 ---
 
-## 56. Joongsoo Park
+## 58. Joongsoo Park
 > **Subtitle**: F-Lab CEO / ex-NAVER / ex-HYPERCONNECT
 > **Date**: 2026-01-17 21:38:49
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7418270572356370432?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7418270572356370432%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -2253,7 +2399,7 @@ AI시대가 되면서 개발에 대한 허들이 낮아서 생산성이 매우 �
 
 ---
 
-## 57. Daero Won
+## 59. Daero Won
 > **Subtitle**: Venture Builder & Investor | Venture Studio | Fractional Founder | Consultant | Columnist | Coach I Korea-Singapore Connector
 > **Date**: 2026-01-17 16:01:32
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7418185693136306176?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7418185693136306176%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -2291,7 +2437,7 @@ AI라는 도구가 쥐어졌을 때, 가장 먼저 만들고 싶은 '나만의 �
 
 ---
 
-## 58. Elin Oh
+## 60. Elin Oh
 > **Subtitle**: Linguistic Data & Corpus Analysis Specialist, Curriculum & Language Content Expert
 > **Date**: 2026-01-17 08:15:01
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7418068289974710272?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7418068289974710272%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -2313,7 +2459,7 @@ AI 시대 맥킨지가 의심하는 능력을 채용하는 이유
 
 ---
 
-## 59. Kyunghun Lee
+## 61. Kyunghun Lee
 > **Subtitle**: CAIO & Deputy CEO @ Channel Corp | AI × B2B SaaS
 > **Date**: 2026-01-17 07:15:01
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7418053191826690048?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7418053191826690048%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -2354,7 +2500,7 @@ AI 에이전트가 기본 분석을 대신하면서 컨설턴트의 역할이 �
 
 ---
 
-## 60. 홍민지Hong Minji
+## 62. 홍민지Hong Minji
 > **Subtitle**: Creative Marketer @MODULABS AX
 > **Date**: 2026-01-16 17:23:11
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7417843854562840576?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7417843854562840576%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -2370,7 +2516,7 @@ AI 에이전트가 기본 분석을 대신하면서 컨설턴트의 역할이 �
 
 ---
 
-## 61. 정준재
+## 63. 정준재
 > **Subtitle**: KGM 교육문화팀 책임매니저 | HRD 전략 수립 | 교육기획 및 운영 | HRD Data Analysis | 조직문화 체계수립 및 활성화 | AI 활용 업무 효율화
 > **Date**: 2026-01-16 15:23:04
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7417813623470751745?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7417813623470751745%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -2454,7 +2600,7 @@ AI는 이미 우리의 동료가 되었고, 중요한 것은 "어떻게 함께 �
 
 ---
 
-## 62. 김덕중
+## 64. 김덕중
 > **Subtitle**: 숙명여대 겸임교수, Firb AI 연구소장
 > **Date**: 2026-01-16 08:48:34
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7417714347063562240?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7417714347063562240%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -2481,7 +2627,7 @@ https://lnkd.in/gaAbbP47
 
 ---
 
-## 63. Daero Won
+## 65. Daero Won
 > **Subtitle**: Venture Builder & Investor | Venture Studio | Fractional Founder | Consultant | Columnist | Coach I Korea-Singapore Connector
 > **Date**: 2026-01-16 07:30:04
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7417694589320499201?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7417694589320499201%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -2613,7 +2759,7 @@ X에서 우연히 본 포스팅 요약. 저자가 20개가 넘는 스타트업�
 
 ---
 
-## 64. Minjung Kim
+## 66. Minjung Kim
 > **Subtitle**: AI, Digital Change, HR 및 변화관리(Change Management) 전문성을 바탕으로, 조직이 AI를 실질적으로 도입하고 활용하도록 돕는 AX(AI Transformation) 전략가로 활동 중임. 단순히 기술 도입을 넘어, transforamation 경험과 Design Thinking with AI& Agile 방법론을 통해 구성원이 AI로 일하는 방식을 설계함
 > **Date**: 2026-01-15 19:11:59
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7417508847441022976?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7417508847441022976%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -2635,7 +2781,7 @@ Chrome 웹 스토어에서 NotebookLM 가져오기 확장 프로그램을 설치
 
 ---
 
-## 65. Jinju Park
+## 67. Jinju Park
 > **Subtitle**: 인공지능과 함께 일하는 법을 연구하고 있습니다 | AI Contents Creator & Marketer
 > **Date**: 2026-01-15 17:44:54
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7417486931770499072?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7417486931770499072%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -2684,7 +2830,7 @@ https://lnkd.in/gGqXKpjg
 
 ---
 
-## 66. 조여준 Ethan Cho
+## 68. 조여준 Ethan Cho
 > **Subtitle**: CIO @ TheVentures | ex-Google, Samsung
 > **Date**: 2026-01-15 07:32:07
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7417332718822416384?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7417332718822416384%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -2830,7 +2976,7 @@ AI는 미국의 재정 위기와 통화 패권을 동시에 해결할 수 있는
 
 ---
 
-## 67. Bumgeun Song
+## 69. Bumgeun Song
 > **Subtitle**: Product Engineer @ Toss
 > **Date**: 2026-01-14 19:21:01
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7417148730602201088?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7417148730602201088%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -2852,7 +2998,7 @@ https://lnkd.in/gKfxdFZD
 
 ---
 
-## 68. Peter Shin
+## 70. Peter Shin
 > **Subtitle**: Startup Advisor | YC Alum (W20) | Accelerating First-Time Founders
 > **Date**: 2026-01-14 14:38:10
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7417077551262535680?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7417077551262535680%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -2947,7 +3093,7 @@ ____
 
 ---
 
-## 69. Kyunghun Lee
+## 71. Kyunghun Lee
 > **Subtitle**: CAIO & Deputy CEO @ Channel Corp | AI × B2B SaaS
 > **Date**: 2026-01-14 06:30:03
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7416954710819127296?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7416954710819127296%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -2988,7 +3134,7 @@ ARC Prize는 2025년을 Refinement Loop의 해로 명명했습니다. ARC-AGI-2�
 
 ---
 
-## 70. Minjung Kim
+## 72. Minjung Kim
 > **Subtitle**: AI, Digital Change, HR 및 변화관리(Change Management) 전문성을 바탕으로, 조직이 AI를 실질적으로 도입하고 활용하도록 돕는 AX(AI Transformation) 전략가로 활동 중임. 단순히 기술 도입을 넘어, transforamation 경험과 Design Thinking with AI& Agile 방법론을 통해 구성원이 AI로 일하는 방식을 설계함
 > **Date**: 2026-01-12 22:12:22
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7416467077739200512?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7416467077739200512%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -3014,7 +3160,7 @@ Gemini의 '심층 리서치' 기능과 비교해보면, 누가 보고서를 대�
 
 ---
 
-## 71. 설동헌
+## 73. 설동헌
 > **Subtitle**: 설코딩 | 맨날 AI랑 개발하는 사람
 > **Date**: 2026-01-12 10:23:36
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7416288711971164160?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7416288711971164160%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -3048,7 +3194,7 @@ https://lnkd.in/gyaPBxbk
 
 ---
 
-## 72. Edwin Kim
+## 74. Edwin Kim
 > **Subtitle**: Data Scientist at 
 > **Date**: 2026-01-11 12:43:42
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7415961577650012160?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7415961577650012160%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -3063,7 +3209,7 @@ Claude Code Cheat Sheet를 공유드립니다.
 
 ---
 
-## 73. 정구봉 Goobong Jeong
+## 75. 정구봉 Goobong Jeong
 > **Subtitle**: Claude Code for all of your work
 > **Date**: 2026-01-11 07:15:01
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7415878861919379456?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7415878861919379456%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -3105,7 +3251,7 @@ GitHub: https://lnkd.in/gYUeFY9P
 
 ---
 
-## 74. Seulgi Lee (이슬기)
+## 76. Seulgi Lee (이슬기)
 > **Subtitle**: Founder & CEO of Gongysd | Template Master, Market Leader
 > **Date**: 2026-01-09 22:00:10
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7415376843815608320?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7415376843815608320%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -3186,7 +3332,7 @@ AI? 보기만 하지 말고 물량치기 해라.
 
 ---
 
-## 75. 김덕중
+## 77. 김덕중
 > **Subtitle**: 숙명여대 겸임교수, Firb AI 연구소장
 > **Date**: 2026-01-08 22:30:12
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7415022011720318978?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7415022011720318978%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -3203,7 +3349,7 @@ AI? 보기만 하지 말고 물량치기 해라.
 
 ---
 
-## 76. 류장근
+## 78. 류장근
 > **Subtitle**: CEO @ BATI.AI | Global Commerce Intelligence for Beauty Brands
 > **Date**: 2026-01-07 18:54:20
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7414605299321495552?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7414605299321495552%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -3305,7 +3451,7 @@ AI 기술 그 자체보다 아래와 같은 레이어들에서
 
 ---
 
-## 77. Kyunghun Lee
+## 79. Kyunghun Lee
 > **Subtitle**: CAIO & Deputy CEO @ Channel Corp | AI × B2B SaaS
 > **Date**: 2026-01-07 06:30:02
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7414417993180303360?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7414417993180303360%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -3339,7 +3485,7 @@ Oh My OpenCode는 다르게 접근했습니다. 각 AI 모델에는 강점이 �
 
 ---
 
-## 78. 홍민지Hong Minji
+## 80. 홍민지Hong Minji
 > **Subtitle**: Creative Marketer @MODULABS AX
 > **Date**: 2026-01-06 14:28:16
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7414175957487562752?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7414175957487562752%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -3361,7 +3507,7 @@ Oh My OpenCode는 다르게 접근했습니다. 각 AI 모델에는 강점이 �
 
 ---
 
-## 79. Jeongmin Lee
+## 81. Jeongmin Lee
 > **Subtitle**: Building with AI @ Smoretalk | Control opinions with AI
 > **Date**: 2026-01-06 07:30:01
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7414070699071442944?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7414070699071442944%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -3434,7 +3580,7 @@ https://lnkd.in/gByS5U59
 
 ---
 
-## 80. Josh Kim
+## 82. Josh Kim
 > **Subtitle**: AI 크리에이터 조쉬입니다. ex-SKT 프로덕트 디자이너
 > **Date**: 2026-01-05 20:39:41
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7413907038138904577?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7413907038138904577%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -3464,7 +3610,7 @@ https://lnkd.in/gByS5U59
 
 ---
 
-## 81. BZCF - 비즈까페
+## 83. BZCF - 비즈까페
 > **Subtitle**: BZCF
 > **Date**: 2026-01-05 09:31:00
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7413738759403298816?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7413738759403298816%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -3482,7 +3628,7 @@ https://lnkd.in/gByS5U59
 
 ---
 
-## 82. 정구봉 Goobong Jeong
+## 84. 정구봉 Goobong Jeong
 > **Subtitle**: Claude Code for all of your work
 > **Date**: 2026-01-05 07:15:01
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7413704535048908801?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7413704535048908801%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -3557,7 +3703,7 @@ Claude Code 리밋에 도달할 줄 아는 사람의 가치가 점점 높아집�
 
 ---
 
-## 83. Taehun Kim
+## 85. Taehun Kim
 > **Subtitle**: AX(AI Transformation) Executive | 비즈니스 스케일업 AX 실행 리더 (AI/Data 기반 신사업 0원 → 2,100억) | Ex-Daum, SKT, LG, LG U+ 광고,커머스,마케팅,AI,Data 사업 총괄/상무 | M&A & PMI | Startup Mentoring | 저서 ‘디지털 마케팅의 모든 것’ 외 1권
 > **Date**: 2026-01-02 01:13:28
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7412526387820978176?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7412526387820978176%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -3613,7 +3759,7 @@ AI가 내놓은 결과물에 대해 반드시 ①출처 확인(Fact Check) ②�
 
 ---
 
-## 84. Peter Shin
+## 86. Peter Shin
 > **Subtitle**: Startup Advisor | YC Alum (W20) | Accelerating First-Time Founders
 > **Date**: 2025-12-31 21:17:20
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7412104574406209536?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7412104574406209536%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -3706,7 +3852,7 @@ ____
 
 ---
 
-## 85. 정구봉 Goobong Jeong
+## 87. 정구봉 Goobong Jeong
 > **Subtitle**: Claude Code for all of your work
 > **Date**: 2025-12-31 09:15:28
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7411922908916297728?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7411922908916297728%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -3748,7 +3894,7 @@ Hyouk JANG 박의연
 
 ---
 
-## 86. 조여준 Ethan Cho
+## 88. 조여준 Ethan Cho
 > **Subtitle**: CIO @ TheVentures | ex-Google, Samsung
 > **Date**: 2025-12-31 07:30:01
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7411896370925592576?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7411896370925592576%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -3843,7 +3989,7 @@ AI와 바이오 기술(GLP-1 등)을 소유한 계급과, 그렇지 못한 계�
 
 ---
 
-## 87. BZCF - 비즈까페
+## 89. BZCF - 비즈까페
 > **Subtitle**: BZCF
 > **Date**: 2025-12-29 22:34:32
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7411399227337150464?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7411399227337150464%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -3864,7 +4010,7 @@ AI와 바이오 기술(GLP-1 등)을 소유한 계급과, 그렇지 못한 계�
 
 ---
 
-## 88. Kyunghun Lee
+## 90. Kyunghun Lee
 > **Subtitle**: CAIO & Deputy CEO @ Channel Corp | AI × B2B SaaS
 > **Date**: 2025-12-29 18:34:15
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7411338754214420480?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7411338754214420480%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -3903,7 +4049,7 @@ Claude 프로젝트를 만들어봤습니다. 제 스타일을 정리해서 지�
 
 ---
 
-## 89. 티타임즈
+## 91. 티타임즈
 > **Subtitle**: 팔로워 287명
 > **Date**: 2025-12-29 18:00:05
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7411330156092616704?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7411330156092616704%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -3917,7 +4063,7 @@ AI 좀 쓴다는 분들은 얼마 전부터 클로드 스킬에 열광하고 있
 
 ---
 
-## 90. Josh Kim
+## 92. Josh Kim
 > **Subtitle**: AI 크리에이터 조쉬입니다. ex-SKT 프로덕트 디자이너
 > **Date**: 2025-12-29 16:12:18
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7411303033344692224?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7411303033344692224%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -3945,7 +4091,7 @@ Manus, Genspark, MKYU(김미경 대표님)과 협업, 책출간, Class101, 기�
 
 ---
 
-## 91. Taehun Kim
+## 93. Taehun Kim
 > **Subtitle**: AX(AI Transformation) Executive | 비즈니스 스케일업 AX 실행 리더 (AI/Data 기반 신사업 0원 → 2,100억) | Ex-Daum, SKT, LG, LG U+ 광고,커머스,마케팅,AI,Data 사업 총괄/상무 | M&A & PMI | Startup Mentoring | 저서 ‘디지털 마케팅의 모든 것’ 외 1권
 > **Date**: 2025-12-29 12:42:53
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7411250333227769856?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7411250333227769856%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -3994,7 +4140,7 @@ B2B 영업에서 대면 미팅의 40%가 새로운 고객 확보로 이어집니
 
 ---
 
-## 92. 요즘IT
+## 94. 요즘IT
 > **Subtitle**: 팔로워 6천명
 > **Date**: 2025-12-29 10:00:16
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7411209406790414336?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7411209406790414336%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -4011,7 +4157,7 @@ B2B 영업에서 대면 미팅의 40%가 새로운 고객 확보로 이어집니
 
 ---
 
-## 93. Kyung Jin Jung
+## 95. Kyung Jin Jung
 > **Subtitle**: 신사업 전략의 빈틈을 드러내는 AI ‘draftie.pro’
 > **Date**: 2025-12-29 09:41:14
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7411204617524391938?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7411204617524391938%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -4115,7 +4261,7 @@ PM은 결국 설득하는 사람입니다.
 
 ---
 
-## 94. 정구봉 Goobong Jeong
+## 96. 정구봉 Goobong Jeong
 > **Subtitle**: Claude Code for all of your work
 > **Date**: 2025-12-29 06:15:01
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7411152720650227712?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7411152720650227712%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -4154,7 +4300,7 @@ AGENTS.md, Claude.md "문서화를 잘 해놓을수록 성능이 좋다"
 
 ---
 
-## 95. 윤썸원
+## 97. 윤썸원
 > **Subtitle**: 프로젝트 썸원 Content Owner
 > **Date**: 2025-12-28 19:37:00
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7410992158503272448?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7410992158503272448%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -4190,7 +4336,7 @@ AGENTS.md, Claude.md "문서화를 잘 해놓을수록 성능이 좋다"
 
 ---
 
-## 96. 티타임즈
+## 98. 티타임즈
 > **Subtitle**: 팔로워 287명
 > **Date**: 2025-12-28 07:00:02
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7410801664141656065?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7410801664141656065%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -4203,7 +4349,7 @@ AGENTS.md, Claude.md "문서화를 잘 해놓을수록 성능이 좋다"
 
 ---
 
-## 97. Peter Shin
+## 99. Peter Shin
 > **Subtitle**: Startup Advisor | YC Alum (W20) | Accelerating First-Time Founders
 > **Date**: 2025-12-27 23:10:45
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7410683563362181120?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7410683563362181120%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -4270,7 +4416,7 @@ ____
 
 ---
 
-## 98. 조여준 Ethan Cho
+## 100. 조여준 Ethan Cho
 > **Subtitle**: CIO @ TheVentures | ex-Google, Samsung
 > **Date**: 2025-12-27 07:30:02
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7410446824572026880?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7410446824572026880%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -4435,7 +4581,7 @@ AI 이전으로는 돌아갈 수 없다.
 
 ---
 
-## 99. 정구봉 Goobong Jeong
+## 101. 정구봉 Goobong Jeong
 > **Subtitle**: Claude Code for all of your work
 > **Date**: 2025-12-27 07:30:01
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7410446819371081728?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7410446819371081728%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -4474,7 +4620,7 @@ https://lnkd.in/guKFkngG
 
 ---
 
-## 100. 티타임즈
+## 102. 티타임즈
 > **Subtitle**: 팔로워 287명
 > **Date**: 2025-12-27 07:00:02
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7410439276661813248?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7410439276661813248%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -4486,7 +4632,7 @@ https://lnkd.in/guKFkngG
 
 ---
 
-## 101. Kyunghun Lee
+## 103. Kyunghun Lee
 > **Subtitle**: CAIO & Deputy CEO @ Channel Corp | AI × B2B SaaS
 > **Date**: 2025-12-27 06:30:02
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7410431723471187969?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7410431723471187969%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -4526,7 +4672,7 @@ OpenAI의 GDP Eval 결과를 보면, GPT 5.2는 지식 노동 과제의 74%에�
 
 ---
 
-## 102. 김덕중
+## 104. 김덕중
 > **Subtitle**: 숙명여대 겸임교수, Firb AI 연구소장
 > **Date**: 2025-12-23 15:12:35
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7409113677884194817?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7409113677884194817%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -4546,7 +4692,7 @@ https://lnkd.in/gwKzihFC
 
 ---
 
-## 103. 티타임즈
+## 105. 티타임즈
 > **Subtitle**: 팔로워 287명
 > **Date**: 2025-12-23 11:30:01
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7409057669149396992?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7409057669149396992%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -4560,7 +4706,7 @@ https://lnkd.in/gwKzihFC
 
 ---
 
-## 104. Kyunghun Lee
+## 106. Kyunghun Lee
 > **Subtitle**: CAIO & Deputy CEO @ Channel Corp | AI × B2B SaaS
 > **Date**: 2025-12-23 05:00:01
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7408959519537426432?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7408959519537426432%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -4609,7 +4755,7 @@ AI 모델의 성능보다는 인간의 타이핑 속도, 인간의 멀티태스�
 
 ---
 
-## 105. Kyunghun Lee
+## 107. Kyunghun Lee
 > **Subtitle**: CAIO & Deputy CEO @ Channel Corp | AI × B2B SaaS
 > **Date**: 2025-12-22 04:51:46
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7408595054950354944?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7408595054950354944%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -4652,7 +4798,7 @@ AI가 EA를 대체한다고들 합니다. 하지만 Courtney는 5년간 3번 승
 
 ---
 
-## 106. Suk Hyun K.
+## 108. Suk Hyun K.
 > **Subtitle**: AI Business Strategy Specialist / Ex-Startup Founder
 > **Date**: 2025-12-21 19:34:26
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7408454800436080640?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7408454800436080640%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -4708,7 +4854,7 @@ AI가 EA를 대체한다고들 합니다. 하지만 Courtney는 5년간 3번 승
 
 ---
 
-## 107. Soojung Shin (신수정)
+## 109. Soojung Shin (신수정)
 > **Subtitle**: Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”
 > **Date**: 2025-12-20 10:16:06
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7407951903344685056?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7407951903344685056%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -4742,7 +4888,7 @@ p.s. 댓글은 서로에게 도움됩니다
 
 ---
 
-## 108. Seungwan Son
+## 110. Seungwan Son
 > **Subtitle**: GEO 솔루션 AINNECT Founder & CEO | 베스트셀러『제로클릭』(길벗) 저자 | AaronHouse Labs 대표 | 제로투원 신규서비스 5회 런칭 | CJ E&M · NEXON KOREA · LINE PLUS · EST / E: mablet@naver.com
 > **Date**: 2025-12-20 09:00:03
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7407932761396654080?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7407932761396654080%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -4793,7 +4939,7 @@ p.s. 댓글은 서로에게 도움됩니다
 
 ---
 
-## 109. So Yeon Lim
+## 111. So Yeon Lim
 > **Subtitle**: Talent Development / Career Coach
 > **Date**: 2025-12-19 13:22:43
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7407636477167296512?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7407636477167296512%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -4829,7 +4975,7 @@ GPT로 작성한 자기소개서는 워딩 하나 바꾸는 걸로 해결 되지
 
 ---
 
-## 110. Jehyun Lee
+## 112. Jehyun Lee
 > **Subtitle**: Researcher, Developer, Designer
 > **Date**: 2025-12-19 10:25:07
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7407591782605099009?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7407591782605099009%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -4874,7 +5020,7 @@ column 이름은 다음과 같아.
 
 ---
 
-## 111. Minjung Kim
+## 113. Minjung Kim
 > **Subtitle**: AI, Digital Change, HR 및 변화관리(Change Management) 전문성을 바탕으로, 조직이 AI를 실질적으로 도입하고 활용하도록 돕는 AX(AI Transformation) 전략가로 활동 중임. 단순히 기술 도입을 넘어, transforamation 경험과 Design Thinking with AI& Agile 방법론을 통해 구성원이 AI로 일하는 방식을 설계함
 > **Date**: 2025-12-19 00:17:02
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7407438752777678848?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7407438752777678848%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -4892,7 +5038,7 @@ NotebookLM 슬라이드 활용법 8가지, 교수법의 진화
 
 ---
 
-## 112. 정태일
+## 114. 정태일
 > **Subtitle**: 스피치라이터, CEO 연설문 작가, 소설가. <​업무시간을 반으로 줄이는 챗GPT 글쓰기​>, <​회사에서 글을 씁니다​> , <​내일은 오를 거야, 제발​> 外 다수. 뼛속까지 문과로 태어났지만, 돈 벌기 시작하면서 내내 이공계와 내내 살 부대끼며 살고 있습니다. 문이과를 통합하는 (테그니컬 라이터)를 지향합니다. 지금은 (스피치라이터)입니다.
 > **Date**: 2025-12-18 16:53:36
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7407327158521647104?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7407327158521647104%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -4927,7 +5073,7 @@ ____
 
 ---
 
-## 113. 조여준 Ethan Cho
+## 115. 조여준 Ethan Cho
 > **Subtitle**: CIO @ TheVentures | ex-Google, Samsung
 > **Date**: 2025-12-18 07:47:49
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7407189808428724226?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7407189808428724226%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -5041,7 +5187,7 @@ AI 혁명은 분명 진행 중이다. 하지만 혁명이 일어나는 곳과 �
 
 ---
 
-## 114. 김덕중
+## 116. 김덕중
 > **Subtitle**: 숙명여대 겸임교수, Firb AI 연구소장
 > **Date**: 2025-12-16 22:39:26
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7406689415416356864?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7406689415416356864%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -5057,7 +5203,7 @@ Prompt : Please create a pptx file that is as similar as possible to the origina
 
 ---
 
-## 115. 김덕중
+## 117. 김덕중
 > **Subtitle**: 숙명여대 겸임교수, Firb AI 연구소장
 > **Date**: 2025-12-16 17:31:20
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7406611878879281152?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7406611878879281152%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -5077,7 +5223,7 @@ A fine-nib fountain pen rests beside the notebook. The lighting is bright and ev
 
 ---
 
-## 116. Zoon Chang
+## 118. Zoon Chang
 > **Subtitle**: Venture Capitalist | Strong belief in an outlier-led future
 > **Date**: 2025-12-16 15:06:17
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7406575376073687040?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7406575376073687040%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -5108,7 +5254,7 @@ Gemini Deep Research에게 질문해서 나온 결과니, 뜨끔하건 공감하
 
 ---
 
-## 117. 김덕중
+## 119. 김덕중
 > **Subtitle**: 숙명여대 겸임교수, Firb AI 연구소장
 > **Date**: 2025-12-15 16:39:21
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7406236411500081152?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7406236411500081152%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -5122,7 +5268,7 @@ Prompt : A traditional Korean ink wash painting of a [젊은 여인], created in
 
 ---
 
-## 118. Seungwan Son
+## 120. Seungwan Son
 > **Subtitle**: GEO 솔루션 AINNECT Founder & CEO | 베스트셀러『제로클릭』(길벗) 저자 | AaronHouse Labs 대표 | 제로투원 신규서비스 5회 런칭 | CJ E&M · NEXON KOREA · LINE PLUS · EST / E: mablet@naver.com
 > **Date**: 2025-12-15 10:04:53
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7406137139891134464?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7406137139891134464%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -5150,7 +5296,7 @@ Prompt : A traditional Korean ink wash painting of a [젊은 여인], created in
 
 ---
 
-## 119. Daero Won
+## 121. Daero Won
 > **Subtitle**: Venture Builder & Investor | Venture Studio | Fractional Founder | Consultant | Columnist | Coach I Korea-Singapore Connector
 > **Date**: 2025-12-15 07:30:01
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7406098165495521280?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7406098165495521280%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -5224,7 +5370,7 @@ Prompt : A traditional Korean ink wash painting of a [젊은 여인], created in
 
 ---
 
-## 120. BZCF - 비즈까페
+## 122. BZCF - 비즈까페
 > **Subtitle**: BZCF
 > **Date**: 2025-12-14 23:52:37
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7405983059860160512?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7405983059860160512%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -5250,7 +5396,7 @@ IG : https://lnkd.in/gShm_22u
 
 ---
 
-## 121. Kyoungchan Hwang
+## 123. Kyoungchan Hwang
 > **Subtitle**: Product Engineer | 콘텐츠 크리에이터 | 부트캠프 운영
 > **Date**: 2025-12-14 10:00:01
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7405773526021963777?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7405773526021963777%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -5333,7 +5479,7 @@ https://lnkd.in/gcnp9Q77)
 
 ---
 
-## 122. Seungwan Son
+## 124. Seungwan Son
 > **Subtitle**: GEO 솔루션 AINNECT Founder & CEO | 베스트셀러『제로클릭』(길벗) 저자 | AaronHouse Labs 대표 | 제로투원 신규서비스 5회 런칭 | CJ E&M · NEXON KOREA · LINE PLUS · EST / E: mablet@naver.com
 > **Date**: 2025-12-14 08:46:11
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7405754948509966337?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7405754948509966337%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -5345,7 +5491,7 @@ AI시대 아이들을 위한 교육관으로 3가지를 언급했는데
 
 ---
 
-## 123. 김덕중
+## 125. 김덕중
 > **Subtitle**: 숙명여대 겸임교수, Firb AI 연구소장
 > **Date**: 2025-12-12 16:26:02
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7405145895417221120?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7405145895417221120%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -5363,7 +5509,7 @@ Stitch는 쉽게 말해 웹 사이트를 디자인 해주는 AI 입니다. 결�
 
 ---
 
-## 124. David Galbraith
+## 126. David Galbraith
 > **Subtitle**: Designer, Entrepreneur, VC
 > **Date**: 2025-12-12 16:14:13
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7405142923396218880?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7405142923396218880%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -5375,7 +5521,7 @@ AI is now cheaper than human, non-physical labour. "We crossed the human-cost pa
 
 ---
 
-## 125. Narae Kim
+## 127. Narae Kim
 > **Subtitle**: IR Deck Builder
 > **Date**: 2025-12-11 10:18:37
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7404691043209760768?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7404691043209760768%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -5439,7 +5585,7 @@ AI is now cheaper than human, non-physical labour. "We crossed the human-cost pa
 
 ---
 
-## 126. Suk Hyun K.
+## 128. Suk Hyun K.
 > **Subtitle**: AI Business Strategy Specialist / Ex-Startup Founder
 > **Date**: 2025-12-09 07:17:20
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7403920649229926400?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7403920649229926400%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -5491,7 +5637,7 @@ AI 협업 능력을 결정하는 핵심 요인은 ‘지능’이 아니라 Theo
 
 ---
 
-## 127. Sedong Nam
+## 129. Sedong Nam
 > **Subtitle**: We are hiring!
 > **Date**: 2025-12-09 06:23:13
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7403907026885730305?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7403907026885730305%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -5506,7 +5652,7 @@ AI 협업 능력을 결정하는 핵심 요인은 ‘지능’이 아니라 Theo
 
 ---
 
-## 128. Jaeyun Henry Lee
+## 130. Jaeyun Henry Lee
 > **Subtitle**: AX Consultant @IMPACTYUN// Supporting everyone in effectively utilizing AI
 > **Date**: 2025-12-08 12:35:10
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7403638244246237184?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7403638244246237184%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -5540,7 +5686,7 @@ AI에게 정답을 요구하지 말고, 다양한 관점을 시뮬레이션해�
 
 ---
 
-## 129. 김덕중
+## 131. 김덕중
 > **Subtitle**: 숙명여대 겸임교수, Firb AI 연구소장
 > **Date**: 2025-12-05 21:43:43
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7402689128598806528?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7402689128598806528%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -5557,7 +5703,7 @@ AI에게 정답을 요구하지 말고, 다양한 관점을 시뮬레이션해�
 
 ---
 
-## 130. 김덕중
+## 132. 김덕중
 > **Subtitle**: 숙명여대 겸임교수, Firb AI 연구소장
 > **Date**: 2025-12-03 15:02:49
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7401863462173536257?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7401863462173536257%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -5576,7 +5722,7 @@ https://lnkd.in/gx9Er-JV
 
 ---
 
-## 131. 김덕중
+## 133. 김덕중
 > **Subtitle**: 숙명여대 겸임교수, Firb AI 연구소장
 > **Date**: 2025-12-02 23:22:42
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7401626875682570241?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7401626875682570241%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -5588,7 +5734,7 @@ https://lnkd.in/gx9Er-JV
 
 ---
 
-## 132. Minjung Kim
+## 134. Minjung Kim
 > **Subtitle**: AI, Digital Change, HR 및 변화관리(Change Management) 전문성을 바탕으로, 조직이 AI를 실질적으로 도입하고 활용하도록 돕는 AX(AI Transformation) 전략가로 활동 중임. 단순히 기술 도입을 넘어, transforamation 경험과 Design Thinking with AI& Agile 방법론을 통해 구성원이 AI로 일하는 방식을 설계함
 > **Date**: 2025-12-02 19:35:29
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7401569692362203136?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7401569692362203136%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -5626,7 +5772,7 @@ Prompt: "표면적인 퇴사 사유(연봉, 이사 등)를 제외하고, 반복�
 
 ---
 
-## 133. 황현태
+## 135. 황현태
 > **Subtitle**: CEO & Co-founder @SpaceY
 > **Date**: 2025-12-02 10:19:23
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7401429747706351616?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7401429747706351616%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -5662,7 +5808,7 @@ Prompt: "표면적인 퇴사 사유(연봉, 이사 등)를 제외하고, 반복�
 
 ---
 
-## 134. Kyunghun Lee
+## 136. Kyunghun Lee
 > **Subtitle**: CAIO & Deputy CEO @ Channel Corp | AI × B2B SaaS
 > **Date**: 2025-12-02 06:15:00
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7401368244718411776?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7401368244718411776%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -5712,7 +5858,7 @@ Gemini Deep Research로 11월 데이터를 조사하고 NotebookLM으로 슬라�
 
 ---
 
-## 135. 고영혁
+## 137. 고영혁
 > **Subtitle**: 고넥터 창업자&대표 / 고넥터(Gonnector) - 찾아가서 연결하여 가치 생성 / 데이터 & AI 를 활용하는 평생 레인메이커 / 데이터 과학자 & 그로스 해커 / 개인 엔젤 투자자, 작가, 컨설턴트 & 코치
 > **Date**: 2025-12-01 14:28:15
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7401129989594763264?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7401129989594763264%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -5742,7 +5888,7 @@ https://lnkd.in/gXhXDt3P
 
 ---
 
-## 136. 조여준 Ethan Cho
+## 138. 조여준 Ethan Cho
 > **Subtitle**: CIO @ TheVentures | ex-Google, Samsung
 > **Date**: 2025-12-01 07:41:37
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7401027653564047361?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7401027653564047361%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -5889,7 +6035,7 @@ Return이 없다.
 
 ---
 
-## 137. 김덕중
+## 139. 김덕중
 > **Subtitle**: 숙명여대 겸임교수, Firb AI 연구소장
 > **Date**: 2025-11-29 22:47:58
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7400530968190750720?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7400530968190750720%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -5901,7 +6047,7 @@ Return이 없다.
 
 ---
 
-## 138. Kyunghun Lee
+## 140. Kyunghun Lee
 > **Subtitle**: CAIO & Deputy CEO @ Channel Corp | AI × B2B SaaS
 > **Date**: 2025-11-29 06:30:02
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7400284864094101504?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7400284864094101504%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -5958,7 +6104,7 @@ AI 네이티브. 요즘 가장 많이 듣는 단어 중 하나입니다. 그런�
 
 ---
 
-## 139. Jaeyun Henry Lee
+## 141. Jaeyun Henry Lee
 > **Subtitle**: AX Consultant @IMPACTYUN// Supporting everyone in effectively utilizing AI
 > **Date**: 2025-11-25 20:38:25
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7399048817557368832?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7399048817557368832%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -5985,7 +6131,7 @@ AI 네이티브. 요즘 가장 많이 듣는 단어 중 하나입니다. 그런�
 
 ---
 
-## 140. Dong Keun Jo
+## 142. Dong Keun Jo
 > **Subtitle**: 조코딩 JoCoding
 > **Date**: 2025-11-21 16:44:12
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7397540321351524352?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7397540321351524352%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -6023,7 +6169,7 @@ AI 최신 소식과 AI 시대에 대한 생각, 앞으로도 꾸준히 나눌 �
 
 ---
 
-## 141. Sujin Kang Ph.D.
+## 143. Sujin Kang Ph.D.
 > **Subtitle**: Prompt Engineer | Ph.D. in Korean Linguistics | Conversation Analysis | Optimizing AI-to-Human Interaction
 > **Date**: 2025-11-21 02:24:37
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7397324001875980288?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7397324001875980288%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -6106,7 +6252,7 @@ Nano Banana Pro는 최대 14개의 이미지를 한 번에 입력 가능하고,
 
 ---
 
-## 142. 윤썸원
+## 144. 윤썸원
 > **Subtitle**: 프로젝트 썸원 Content Owner
 > **Date**: 2025-11-18 12:57:07
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7396396013068005376?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7396396013068005376%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -6156,7 +6302,7 @@ Nano Banana Pro는 최대 14개의 이미지를 한 번에 입력 가능하고,
 
 ---
 
-## 143. Soojung Shin (신수정)
+## 145. Soojung Shin (신수정)
 > **Subtitle**: Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”
 > **Date**: 2025-11-16 10:34:50
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7395635427879129088?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7395635427879129088%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -6194,7 +6340,7 @@ p.s. 댓글은 서로에게 도움됩니다
 
 ---
 
-## 144. 김덕중
+## 146. 김덕중
 > **Subtitle**: 숙명여대 겸임교수, Firb AI 연구소장
 > **Date**: 2025-11-11 14:36:51
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7393884393532084224?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7393884393532084224%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -6209,7 +6355,7 @@ https://lnkd.in/giqPuvCg
 
 ---
 
-## 145. Soojung Shin (신수정)
+## 147. Soojung Shin (신수정)
 > **Subtitle**: Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”
 > **Date**: 2025-11-01 15:29:35
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7390273789009367040?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7390273789009367040%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -6243,7 +6389,7 @@ p.s 댓글은 서로에게 도움이 됩니다.
 
 ---
 
-## 146. Neil Patel
+## 148. Neil Patel
 > **Subtitle**: Co-Founder at Neil Patel Digital
 > **Date**: 2025-10-27 07:58:52
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7388348419590987776?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7388348419590987776%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -6263,7 +6409,7 @@ The big winners on the revenue front were companies that adopted an omnichannel 
 
 ---
 
-## 147. Soojung Shin (신수정)
+## 149. Soojung Shin (신수정)
 > **Subtitle**: Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”
 > **Date**: 2025-10-25 09:58:19
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7387653708110737409?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7387653708110737409%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -6292,7 +6438,7 @@ p.s. 댓글은 서로에게 도움됩니다
 
 ---
 
-## 148. Soojung Shin (신수정)
+## 150. Soojung Shin (신수정)
 > **Subtitle**: Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”
 > **Date**: 2025-10-12 10:54:34
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7382956819146600449?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7382956819146600449%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -6331,7 +6477,7 @@ p.s. 댓글은 서로에게 도움됩니다.
 
 ---
 
-## 149. 박대영
+## 151. 박대영
 > **Subtitle**: 특강, 강연 등 요청 시 링크드인 메신저나 이메일로 연락 부탁드려요:) 이메일: mainthread4929@gmail.com
 > **Date**: 2025-09-20 18:11:50
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7375094327305437184?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7375094327305437184%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -6387,7 +6533,7 @@ AI분야가 워낙 빠르게 변하고 새로운 기술 등장 및 규제 변화
 
 ---
 
-## 150. Soojung Shin (신수정)
+## 152. Soojung Shin (신수정)
 > **Subtitle**: Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”
 > **Date**: 2025-09-13 12:07:12
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7372465848608845824?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7372465848608845824%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -6421,7 +6567,7 @@ p.s. 댓글은 서로에게 도움이 됩니다.
 
 ---
 
-## 151. 정구봉 Goobong Jeong
+## 153. 정구봉 Goobong Jeong
 > **Subtitle**: Claude Code for all of your work
 > **Date**: 2025-08-21 23:14:06
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7364298758177636352?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7364298758177636352%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -6459,7 +6605,7 @@ AI를 쓴다면 질문을 많이 하고, 좋은 질문을 할수록 더 큰 생�
 
 ---
 
-## 152. Soojung Shin (신수정)
+## 154. Soojung Shin (신수정)
 > **Subtitle**: Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”
 > **Date**: 2025-08-16 10:48:42
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7362299233468624897?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7362299233468624897%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -6489,7 +6635,7 @@ p.s. 댓글은 서로에게 도움이 됩니다.
 
 ---
 
-## 153. Soojung Shin (신수정)
+## 155. Soojung Shin (신수정)
 > **Subtitle**: Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”
 > **Date**: 2025-08-09 13:55:22
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7359809497730592768?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7359809497730592768%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -6506,7 +6652,7 @@ p.s. 댓글은 서로에게 도움이 됩니다.
 
 ---
 
-## 154. Soojung Shin (신수정)
+## 156. Soojung Shin (신수정)
 > **Subtitle**: Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”
 > **Date**: 2025-08-09 10:11:37
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7359753187211317248?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7359753187211317248%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -6538,7 +6684,7 @@ p.s. 댓글은 서로에게 도움을 줍니다.
 
 ---
 
-## 155. Soojung Shin (신수정)
+## 157. Soojung Shin (신수정)
 > **Subtitle**: Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”
 > **Date**: 2025-07-12 10:32:48
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7349611659310624770?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7349611659310624770%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -6577,7 +6723,7 @@ p.s. 댓글은 서로에게 도움됩니다~
 
 ---
 
-## 156. Soojung Shin (신수정)
+## 158. Soojung Shin (신수정)
 > **Subtitle**: Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”
 > **Date**: 2025-07-06 09:47:41
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7347425977410514944?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7347425977410514944%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -6610,7 +6756,7 @@ p.s.댓글은 서로에게 도움이 됩니다~
 
 ---
 
-## 157. Soojung Shin (신수정)
+## 159. Soojung Shin (신수정)
 > **Subtitle**: Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”
 > **Date**: 2025-07-05 18:08:24
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7347189596570402816?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7347189596570402816%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -6651,7 +6797,7 @@ p.s.댓글은 서로에게 도움이 됩니다~
 
 ---
 
-## 158. Soojung Shin (신수정)
+## 160. Soojung Shin (신수정)
 > **Subtitle**: Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”
 > **Date**: 2025-06-15 14:53:50
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7339892875758878720?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7339892875758878720%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -6689,7 +6835,7 @@ p.s. 댓글은 서로에게 도움됩니다.
 
 ---
 
-## 159. Soojung Shin (신수정)
+## 161. Soojung Shin (신수정)
 > **Subtitle**: Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”
 > **Date**: 2025-06-08 10:34:43
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7337290953541505024?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7337290953541505024%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -6730,7 +6876,7 @@ p.s. 댓글은 서로에게 도움됩니다.
 
 ---
 
-## 160. Soojung Shin (신수정)
+## 162. Soojung Shin (신수정)
 > **Subtitle**: Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”
 > **Date**: 2025-05-25 15:56:48
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7332298575994920960?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7332298575994920960%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -6766,7 +6912,7 @@ p.s. 댓글은 확장과 서로 배움에 도움이 됩니다~
 
 ---
 
-## 161. Soojung Shin (신수정)
+## 163. Soojung Shin (신수정)
 > **Subtitle**: Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”
 > **Date**: 2025-05-24 19:30:08
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7331989875283423232?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7331989875283423232%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -6801,7 +6947,7 @@ AI시대 비효율의 숙달화--
 
 ---
 
-## 162. Soojung Shin (신수정)
+## 164. Soojung Shin (신수정)
 > **Subtitle**: Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”
 > **Date**: 2025-04-06 23:58:31
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7314662801090781184?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7314662801090781184%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -6828,7 +6974,7 @@ AI시대 비효율의 숙달화--
 
 ---
 
-## 163. Soojung Shin (신수정)
+## 165. Soojung Shin (신수정)
 > **Subtitle**: Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”
 > **Date**: 2025-04-06 09:41:31
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7314447129182158848?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7314447129182158848%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -6868,7 +7014,7 @@ AI시대 비효율의 숙달화--
 
 ---
 
-## 164. 김덕중
+## 166. 김덕중
 > **Subtitle**: 숙명여대 겸임교수, Firb AI 연구소장
 > **Date**: 2025-04-03 00:00:12
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7313213672372215809?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7313213672372215809%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -6880,7 +7026,7 @@ AI시대 비효율의 숙달화--
 
 ---
 
-## 165. Soojung Shin (신수정)
+## 167. Soojung Shin (신수정)
 > **Subtitle**: Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”
 > **Date**: 2025-03-29 16:47:01
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7311655106758811648?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7311655106758811648%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -6900,7 +7046,7 @@ AI시대 비효율의 숙달화--
 
 ---
 
-## 166. Soojung Shin (신수정)
+## 168. Soojung Shin (신수정)
 > **Subtitle**: Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”
 > **Date**: 2025-03-22 09:25:47
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7309007350219055104?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7309007350219055104%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -6934,7 +7080,7 @@ AI시대 비효율의 숙달화--
 
 ---
 
-## 167. Soojung Shin (신수정)
+## 169. Soojung Shin (신수정)
 > **Subtitle**: Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”
 > **Date**: 2025-03-15 13:44:09
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7306535658552995842?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7306535658552995842%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -6968,7 +7114,7 @@ AI시대 비효율의 숙달화--
 
 ---
 
-## 168. Soojung Shin (신수정)
+## 170. Soojung Shin (신수정)
 > **Subtitle**: Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”
 > **Date**: 2025-02-08 11:59:43
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7293825802125656064?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7293825802125656064%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -6993,7 +7139,7 @@ AI시대 비효율의 숙달화--
 
 ---
 
-## 169. Soojung Shin (신수정)
+## 171. Soojung Shin (신수정)
 > **Subtitle**: Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”
 > **Date**: 2025-02-01 09:28:54
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7291251132339736576?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7291251132339736576%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -7025,7 +7171,7 @@ p.s. 댓글은 독자들에게 도움을 줍니다.
 
 ---
 
-## 170. Soojung Shin (신수정)
+## 172. Soojung Shin (신수정)
 > **Subtitle**: Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”
 > **Date**: 2025-01-11 12:38:11
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7283688620161486849?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7283688620161486849%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -7061,7 +7207,7 @@ p.s. 댓글은 독자들에게 도움을 줍니다.
 
 ---
 
-## 171. Soojung Shin (신수정)
+## 173. Soojung Shin (신수정)
 > **Subtitle**: Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”
 > **Date**: 2024-12-28 10:41:27
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7278585811854376960?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7278585811854376960%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -7091,7 +7237,7 @@ p.s. 댓글은 독자들에게 도움을 줍니다.
 
 ---
 
-## 172. Soojung Shin (신수정)
+## 174. Soojung Shin (신수정)
 > **Subtitle**: Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”
 > **Date**: 2024-11-09 09:28:57
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7260810564279390208?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7260810564279390208%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
@@ -7124,7 +7270,7 @@ p.s. 댓글은 독자들에게 도움을 줍니다.
 
 ---
 
-## 173. Soojung Shin (신수정)
+## 175. Soojung Shin (신수정)
 > **Subtitle**: Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”
 > **Date**: 2024-10-19 09:59:18
 > **Link**: [Original Post](https://www.linkedin.com/feed/update/urn:li:activity:7253208054928744448?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7253208054928744448%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)

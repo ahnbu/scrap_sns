@@ -1,14 +1,14 @@
 {
   "metadata": {
     "version": "1.0",
-    "crawled_at": "2026-02-11T15:06:39.014868",
-    "total_count": 173,
-    "max_sequence_id": 173,
-    "first_code": "7426965977122357248",
+    "crawled_at": "2026-02-11T16:54:23.192019",
+    "total_count": 175,
+    "max_sequence_id": 175,
+    "first_code": "7426781961781846017",
     "last_code": "7253208054928744448",
-    "crawl_mode": "all",
+    "crawl_mode": "update only",
     "legacy_data_count": 0,
-    "verified_data_count": 173,
+    "verified_data_count": 175,
     "merge_history": [
       {
         "merged_at": "2026-02-06T18:44:21.334743",
@@ -44,10 +44,58 @@
         "duplicates_removed": 0,
         "source_file": "linkedin_python_full_20260211.json",
         "crawl_mode": "all"
+      },
+      {
+        "merged_at": "2026-02-11T16:34:15.218044",
+        "new_items_count": 1,
+        "duplicates_removed": 0,
+        "source_file": "linkedin_python_full_20260211.json",
+        "crawl_mode": "update only"
+      },
+      {
+        "merged_at": "2026-02-11T16:54:23.191994",
+        "new_items_count": 1,
+        "duplicates_removed": 0,
+        "source_file": "linkedin_python_full_20260211.json",
+        "crawl_mode": "update only"
       }
     ]
   },
   "posts": [
+    {
+      "code": "7426781961781846017",
+      "username": "한성국",
+      "created_at": "2026-02-10 09:20:02",
+      "time_text": "1일",
+      "full_text": "제안서 에이전트, 퀄리티를 더 올리고 있습니다.\n지난주 올린 RFP 제안서 자동화 글에\n댓글이 1,000개 넘게 달렸습니다.\n\n솔직히 이 정도 반응은 예상 못 했어요.\n그만큼 제안서 작성에 시간과 에너지를\n쏟고 계신 분들이 많다는 뜻이겠죠.\n\n그래서 급하게 공유하지 않기로 했습니다.\n에이전트 완성도를 확실히\n끌어올리고 나서 보여드리려고요.\n\n지금 개선하고 있는 부분입니다.\n① RFP 분석 정확도를 더 높이고 있습니다\n② 시장 조사 → 전략 수립 → 제안서 작성까지\n흐름을 더 매끄럽게 다듬고 있습니다\n③ 바로 따라 쓸 수 있도록 설치 가이드도 함께 준비 중입니다\n\n설 연휴 끝나고 바로 공유하겠습니다.\n조금만 더 기다려주세요.\n\n댓글 남겨주신 분들, 하나하나 다 보고 있습니다.\n기대해주셔서 감사합니다 🙏",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7426781961781846017?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7426781961781846017%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "이커머스 운영 비용을 절반으로 줄이는 AI 시스템을 공유합니다",
+      "images": [
+        "https://media.licdn.com/dms/image/v2/D5605AQF5NMMiS9pYfA/videocover-high/B56ZxE6z3GIYBY-/0/1770682794929?e=1771401600&v=beta&t=LCQnrdLKe6aut4Aoblyv3Zsw9BeOZhbZmjv0BGOeYZU"
+      ],
+      "user_link": "https://www.linkedin.com/in/ACoAAEYsARgBdQazrHf4u7lcZ1nlSjTNE7YbpOs",
+      "crawled_at": "2026-02-11T16:54:06.618730",
+      "content_type": "image",
+      "source": "network",
+      "sequence_id": 175
+    },
+    {
+      "code": "7426382404673490944",
+      "username": "조여준 Ethan Cho",
+      "created_at": "2026-02-09 06:52:20",
+      "time_text": "2일",
+      "full_text": "[무거운 글] AI 시대, 감자가 사람보다 존귀해진다 — 유발 하라리의 대담을 보고\n\n유발 하라리가 2026년 다보스 포럼에서 말했다.\n\n\"인류 역사상 가장 크고 무서운 심리 실험이 시작되었다.\"\n\n그는 덧붙였다. \"인간의 문화는 언어로 이루어져 있다. AI가 인간보다 언어를 더 잘 구사하게 된 순간, 인류 역사는 끝난다.\"\n\nAI가 나보다 더 잘 판단하고, 더 잘 예측하고, 더 잘 결정하는 시대가 오면 — 나의 용도는 무엇인가. 더 나아가, 인간의 용도는 무엇인가.\n\n---\n\n영화 매트릭스에서 기계는 인간을 배터리로 사용한다.\n\n그런데 이는 열역학적으로 성립하지 않는다. 인간을 생존시키는 데 필요한 에너지가 인체에서 추출 가능한 에너지보다 훨씬 크다. 차라리 감자를 재배하는 편이 낫다. 에너지원으로서 인간은 감자보다 비효율적이다.\n\n하라리는 다보스에서 이렇게 구분했다. \"칼은 인간이 샐러드를 자를지 살인을 할지 결정한다. 그러나 AI는 스스로 선택한다.\" AI는 도구가 아니다. 도구는 인간에게 종속된다. AI는 에이전트다. 에이전트는 스스로 판단하고 행동한다. 매트릭스의 기계가 인간을 배터리로 \"사용\"한 것이 아니라, 인간의 용도를 스스로 \"결정\"한 것처럼.\n\n대부분, 의식적으로든 무의식적으로든 이런 반론이 마음 속에서 나올 것이다.\n'사람이 어디 감자 따위와 비교되는가. 사람은 본래 존귀한 존재다.'\n\n그 '본래 존귀하다'의 근거가 무엇인가.\n\n---\n\n인간 존엄의 근거라는 것들\n\n인류는 스스로를 정의하기 위해 수많은 이름을 붙여왔다.\n\nHomo Sapiens — 생각하는 인간. AI가 이미 인간보다 빠르고 정확하게 사고한다.\n\nHomo Faber — 도구를 만드는 인간. AI가 코드를 작성하고, 설계하고, 제조 공정을 최적화한다.\n\nHomo Ludens — 놀이하는 인간. AI가 작곡하고, 그림을 그리고, 게임을 창작한다.\n\nHomo Economicus — 합리적으로 경제활동을 하는 인간. AI가 더 합리적으로 투자하고, 배분하고, 예측한다.\n\nHomo Socialis — 사회적 인간. AI가 감정을 모사하고, 상담하고, 관계를 시뮬레이션한다.\n\nHomo Deus — 신이 되려는 인간. 하라리가 붙인 이 이름이야말로 가장 정직하다. 신 없이 신이 되려 한 인간의 최종 자화상이다.\n\n인간이 스스로에게 부여한 모든 접두어가 AI에 의해 무력화되고 있다. \"Homo\" 뒤에 무엇을 붙이든, 그것이 인간 고유의 영역이었던 시대는 끝나가고 있다.\n\n하라리 본인이 이를 숫자로 요약했다. \"인간의 자질과 능력 중 99%는 대부분의 현대 직업 수행에 단순히 불필요하다.\" 나머지 1%마저 AI가 대체하는 시점이 올 때, Homo 뒤에 붙일 단어는 소멸한다.\n\n남는 것은 \"Homo\" 그 자체다. 그런데 그 \"Homo\" 자체의 가치는 어디에서 오는가.\n\n천부인권. 근대에 발명된 사상이다. 로크와 홉스가 체계화한 철학이다. 그 이전 수천 년간 인류는 그러한 개념 없이 존속했다. 노예제가 당연했고, 왕이 백성의 생사여탈권을 가졌다.\n\n이러한 합의는 힘의 균형이 변하면 깨진다.\n\n---\n\n나는 인간이 스스로 존귀한 것이 아니라 하나님이 그것을 부여하신다고 믿는다. 이건 내 믿음이다.\n\n그러나 많은 사람들은 이를 믿지 않는다. 그건 각자의 자유다.\n\n다만 한 가지는 짚겠다.\n\n하나님이 부재한 세계에서, AI가 편재하고, 인간보다 우월하게 사고하고, 생산하고, 의사결정하는 시대가 도래하면 — 인간의 용도는 무엇인가.\n\n공상과학이 아니다. 역사가 이미 답을 제시했다.\n\n20세기 우생학. 나치의 \"살 가치가 없는 생명(Lebensunwertes Leben).\" 공리주의적으로 인간의 가치를 산정하기 시작하면, 반드시 \"쓸모없는 인간\"이라는 범주가 생성되었다. 단 한 번의 예외도 없이.\n\n유발 하라리가 명명한 \"useless class.\" 그의 원문은 더 잔인하다.\n\n\"21세기에 우리는 거대한 새로운 비노동 계급의 탄생을 목격할 것이다. 경제적, 정치적, 심지어 예술적 가치도 없는 사람들. 이 계급은 단순히 실업 상태가 아니라 고용 불가능한 상태가 될 것이다.\"\n\n그리고 21세기 경제학의 가장 중요한 질문은 이것이라고 했다. \"모든 잉여 인간을 어떻게 할 것인가.\"\n\n해법은? 하라리의 답변이다.\n\n\"나의 최선의 추측은 마약과 컴퓨터 게임의 조합으로 그들을 행복하게 유지시키는 것이다.\"\n\"My best guess is, keep them happy with a combination of drugs and computer games\"\n\n이것이 세계에서 가장 영향력 있는 역사학자가 제시한 인류의 미래다. 마약과 게임. 그의 세계관 안에는 이것 이상의 해법이 존재하지 않는다.\n\n---\n\nAI 시대에 동일한 논리가 더 정교하게 반복될 것이다.\n\n\"이 사람은 AI보다 생산성이 낮다\" → \"사회적 비용이다\" → \"최적화해야 한다\"\n\n인간 사회에서 이 활강을 저지할 장치가 무엇인가.\n\n\"법과 제도가 있지 않은가. 헌법이 있고, 인권선언이 있고, 국제기구가 있다.\"\n\n그렇다. 그것들이 있었다. 1933년 독일에도 바이마르 헌법이 있었다. 세계에서 가장 진보적인 헌법이었다. 그런데 합법적 선거를 통해 집권한 정부가, 합법적 절차를 통해 그 헌법을 무력화했다. 법은 그것을 지키려는 의지가 사라지면 종이에 불과하다. 그리고 그 의지의 근거가 \"인간은 본래 존귀하다\"는 전제인데 — 그 전제의 근거가 무엇이냐는 것이 이 글의 질문이다.\n\n사회적 합의는 장치가 아니다. 조건이다. 조건은 변한다.\n\n인간 스스로 구축한 인간 존엄은, 인간 스스로 해체할 수 있다. 역사가 이를 반복적으로 증명했고, AI는 그 해체의 속도를 가속할 것이다.\n\n---\n\n감자보다 에너지 효율이 낮은 존재. Homo 뒤에 무엇을 붙여도 AI가 대체 가능한 존재. 세계 최고의 역사학자가 내놓은 최선의 처방이 마약과 게임인 존재.\n\n그런 존재의 가치는 어디에서 오는가.\n\n나는 내 답을 가지고 있다. 그리고 이 질문은 머지않아 모든 사람 앞에 놓일 것이다. AI가 아니라, 각자가 스스로에게 답해야 할 질문이다.",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7426382404673490944?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7426382404673490944%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "profile_slogan": "CIO @ TheVentures | ex-Google, Samsung",
+      "images": [
+        "https://media.licdn.com/dms/image/v2/D5622AQFW6-M4MVMLZQ/feedshare-shrink_2048_1536/B56Zw_E9QwIYAo-/0/1770584790251?e=1772668800&v=beta&t=6lAwIuq23Hs7Ja8Jn_2sjLdsKjYFrJr77936fkOF54A"
+      ],
+      "user_link": "https://www.linkedin.com/in/ACoAAARknekBOFFETpmlSPqmlb2P8ln4iACFaJg",
+      "crawled_at": "2026-02-11T16:33:59.613626",
+      "content_type": "image",
+      "source": "network",
+      "sequence_id": 174
+    },
     {
       "code": "7426965977122357248",
       "username": "Josh Kim",
