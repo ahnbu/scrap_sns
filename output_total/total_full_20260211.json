@@ -1,11 +1,14 @@
 {
     "metadata": {
-        "updated_at": "2026-02-11T14:38:50.848576",
+        "updated_at": "2026-02-11T15:10:18.428508",
         "total_count": 398,
         "threads_count": 225,
         "linkedin_count": 173,
-        "new_items_count": 398,
-        "duplicates_removed": 0
+        "new_items_count": 0,
+        "new_threads_count": 0,
+        "new_linkedin_count": 0,
+        "duplicates_removed": 40,
+        "integrated_at": "2026-02-11T15:37:05.185680"
     },
     "posts": [
         {
@@ -70,16 +73,16 @@
         },
         {
             "code": "DT5ScNij4Uw",
-            "root_code": "DT6c3mrEwmC",
+            "root_code": "DT5ScNij4Uw",
             "username": "hajae.code",
-            "full_text": "AI 코딩 실력이 늘지 않는 치명적인 이유\n\n다들 AI가 다 해줄 거라 믿지만\n프로젝트가 커지면 AI는 길을 잃습니다.\n\n\"이거 만들어줘\"라고 대충 던지는\n'바이브 코딩'의 유통기한은 100줄까지입니다.\n\n그 이상을 원한다면 'SDD'를 알아야 합니다.",
+            "full_text": "AI 코딩 실력이 늘지 않는 치명적인 이유\n\n다들 AI가 다 해줄 거라 믿지만\n프로젝트가 커지면 AI는 길을 잃습니다.\n\n\"이거 만들어줘\"라고 대충 던지는\n'바이브 코딩'의 유통기한은 100줄까지입니다.\n\n그 이상을 원한다면 'SDD'를 알아야 합니다.\n\n---\n\nSpec-Driven Development (SDD, 명세 주도 개발)는 코드를 먼저 작성하기 전에, 구현해야 할 기능의 ‘명세서(Spec)’를 아주 정교하게 정의하고 이를 바탕으로 개발을 진행하는 방식입니다.\n\n특히 최근 Cursor, Kura, Windsurf 같은 AI 기반 IDE를 사용할 때, AI가 길을 잃지 않고 정확한 코드를 짜게 만드는 가장 핵심적인 방법론으로 주목받고 있습니다.\n\n1. 왜 SDD가 필요한가요? (Vibe Coding 탈피)\n일반적으로 AI에게 \"이거 만들어줘\"라고 대충 요청하는 방식을 '바이브 코딩(Vibe Coding)'이라고 합니다. 처음엔 잘 되는 것 같지만, 프로젝트가 커지면 AI가 앞선 코드를 잊어버리거나 엉뚱한 방향으로 코드를 짤 때가 많습니다.\nSDD는 \"생각은 사람이 하고, 실행은 AI가 하게 만드는\" 구조화된 워크플로우입니다.\n\n---\n\n2. SDD의 3단계 프로세스\n\n① 요구사항 정의 (Requirements)\n단순한 설명이 아니라, EARS(Easy Approach to Requirements Syntax) 같은 구조화된 방식을 사용합니다.\n• 예시: \"사용자가 '정산' 버튼을 누르면, 시스템은 미정산 금액을 계산하여 화면에 표시해야 한다.\" (구체적인 조건과 결과 명시)\n\n② 설계 (Design)\n요구사항을 어떻게 기술적으로 구현할지 결정합니다.\n• 내용: DB 스키마 설계, API 엔드포인트 정의, 사용할 라이브러리 선정, UI 와이어프레임 등.\n• 이 단계에서 AI에게 \"이 설계대로 구현할 수 있는지 검토해줘\"라고 요청하여 설계를 확정합니다.\n\n---\n\n③ 구현 및 작업 리스트 (Implementation & Tasks)\n확정된 설계를 아주 작은 단위의 '체크리스트(Task List)'로 쪼갭니다.\n• Task 1: 정산 테이블 DB 마이그레이션 생성\n• Task 2: 정산 로직 유닛 테스트 코드 작성\n• Task 3: 백엔드 정산 API 구현\n• Task 4: 프론트엔드 정산 대시보드 UI 구현\n\n3. 실무 적용 예시: \"쿠팡 정산 대시보드\"\n\n1. 명세서 작성: spec.md 파일을 만들고, 쿠팡 API에서 데이터를 가져와서 수수료를 제외한 실지급액을 계산하는 로직\"을 상세히 적습니다.\n2. AI에게 전달: AI에게 \"이 spec.md를 읽고 전체적인 설계 도면(design.md)을 그려줘\"라고 시킵니다.\n3. 검토 및 수정: AI가 제안한 설계가 마음에 들면, \"이제 이 설계를 바탕으로 해야 할 일을 순서대로 나열해줘\"라고 합니다.\n4. 단계별 실행: 나열된 Task를 하나씩 클릭하며 \"Task 1 진행해줘“ 라고 명령합니다.\n\n---\n\n4. SDD의 장점\n\n• 재현 가능성: 명세서가 있기 때문에 AI가 중간에 실수를 해도 다시 올바른 방향으로 돌리기 쉽습니다.\n• 컨텍스트 유지: 프로젝트가 커져도 spec.md 파일만 참고하면 AI가 전체 구조를 이해할 수 있습니다.\n• 품질 제어: 사람이 설계를 승인한 뒤 코딩이 시작되므로, AI가 제멋대로 비효율적인 코드를 짜는 것을 방지합니다.",
             "created_at": "2026-01-24 22:29:02",
             "images_count": 0,
             "post_url": "https://www.threads.com/@hajae.code/post/DT5ScNij4Uw",
             "images": [],
             "is_merged_thread": true,
-            "original_item_count": 1,
-            "sequence_id": 301,
+            "original_item_count": 5,
+            "sequence_id": 397,
             "crawled_at": null,
             "sns_platform": "threads"
         },
@@ -160,7 +163,7 @@
         },
         {
             "code": "DUKPelTgSau",
-            "root_code": "DUKPfu1Aa6T",
+            "root_code": "DUKPelTgSau",
             "username": "hinjiroffffff",
             "full_text": "유튜버에게 필요한 확장 프로그램을 정리했습니다.\n알아내는데 300일이 걸렸지만, 여러분은 바로 사용하세요.\n\n---\n\n1. vidiQ\n→ 감이 아닌 데이터로 유튜브 트렌드를 읽으세요. 내 분야에서 현재 어떤 주제의 조회수가 잘 나오는지 알 수 있어요.\n\n---\n\n2. Youtube Summary\n→ 영상의 대본을 바로 추출할 수 있어요. 가장 중요한 대본 초반 10초를 보고 공부해보세요.\n\n---\n\n3. Thumbs up, thumbnail preview\n→ 클릭률을 높일 수 있어요. 내 썸네일이 실제 유튜브 홈 화면에서 어떻게 보이는지 미리 확인할 수 있거든요.\n\n---\n\n4. Screenshot youtube\n→ 클릭 한 번으로 유튜브 화면을 캡쳐할 수 있어요. 깔끔하게 잘려서 자주 사용 중이에요.\n\n---\n\n5. Ostendo\n→ 참고하고 싶은 썸네일이 있나요? 클릭 한 번으로 썸네일을 다운로드, 복사 할 수 있어요.\n\n---\n\n매우 만족하면서 사용 중인 프로그램들이에요.\n저장하고 꼭 사용해보시는 것을 추쳔드릴게요!\n\n저를 팔로우 하시고, 다른 글도 읽어보세요.\n유튜버라면 도움이 될 글을 쓰고 있어요 🫶",
             "created_at": "2026-01-31 12:30:14",
@@ -169,28 +172,28 @@
             "images": [],
             "is_merged_thread": true,
             "original_item_count": 7,
-            "sequence_id": 307,
+            "sequence_id": 398,
             "crawled_at": null,
             "sns_platform": "threads"
         },
         {
             "code": "DUK7uIXkklz",
-            "root_code": "DULCfk1EqLV",
+            "root_code": "DUK7uIXkklz",
             "username": "starcomo",
-            "full_text": "개발 초보 고수들에게..\n\n개발 개꿀팁 하나 더 줄게 ㅋㅋ\n이거 완전 대박이야 ㅋ\n\nAi한테 뭐 새로 만들어달라고 할때\n기획을 3번 업그레이드 해달라고해",
+            "full_text": "개발 초보 고수들에게..\n\n개발 개꿀팁 하나 더 줄게 ㅋㅋ\n이거 완전 대박이야 ㅋ\n\nAi한테 뭐 새로 만들어달라고 할때\n기획을 3번 업그레이드 해달라고해\n\n---\n\n예를 들어 오늘 시도했던 방식 ㅋ\n\n도메인/event\n\n여기 경로에 무한 스크롤 방식으로 리스트 불러오고 싶은데 관련해서 그 예상할 수 있는 업그레이드 해야 될 부분이나 디버깅해야 될 부분들을 지금 기획서를 하나 만들 거거든\n\n어 그거를 PRD 형태의 문서로 작성해 주고 그거를 이제 한 번 만들고 나면 그거를 총 세 번에 걸쳐서 다시 읽고 업그레이드하고 다시 읽고 업그레이드해서 최종적으로 어 완성도가 매우 높은 형태의 기획서로 만들어줘\n\n---\n\n이렇게 하니까 그 기획서를 한번 업그레이드할 때마다 엄청 많이 보강이 되더라고 ㅋㅋ\n\n그리고 내가 그 개발하면서 추후에 디버깅하거나 업그레이드해야 될 자잘한 문제들이 거의 처음부터 기획서가 엄청 잘 나와가지고 한 번에 개발이 너무 깔끔하게 됐어\n\n그래서 이거는 꼭 개발뿐만 아니라 너희들이 AI한테 조사시키거나. 그런 거 할 때도 약간 이런 방식으로 기획하면 되게 효율적이고 좋은 것 같아\n\n---\n\n좋아 기획서가 마음에 드니까 이대로 개발해줘",
             "created_at": "2026-01-31 18:56:50",
             "images_count": 0,
             "post_url": "https://www.threads.com/@starcomo/post/DUK7uIXkklz",
             "images": [],
             "is_merged_thread": true,
-            "original_item_count": 1,
-            "sequence_id": 308,
+            "original_item_count": 4,
+            "sequence_id": 399,
             "crawled_at": null,
             "sns_platform": "threads"
         },
         {
             "code": "DUQTVuyD1V9",
-            "root_code": "DUQeA6CDzDP",
+            "root_code": "DUQTVuyD1V9",
             "username": "stormleehj",
             "full_text": "뭔가는 하고 있는데 체계적인 기록은\n귀찮아서 잘 못하는 저는 요새 이렇게 합니다.\n\n\"안티그라비티 + 옵시디언\"\n\n요새는 안티그라비티에서 주로 작업하는데\n그 안에서 오고 간 채팅 이력과 커밋 기록들을\n일자별로 알아서 정리해 달라고 합니다.\n\n최근에서야 옵시디언을 써보면서 알게 된 건데\n로컬 폴더 구조라 안티그라비티와 연결하기도 편하고\ngit으로 관리할 수 있다는 장점도 있는데요.\n\n노션도 좋지만 노션 AI까지 쓰기에 부담이면\n안티그라비티+옵시디언도 꽤 괜찮은 조합인 것 같습니다.",
             "created_at": "2026-02-02 20:59:25",
@@ -199,7 +202,7 @@
             "images": [],
             "is_merged_thread": true,
             "original_item_count": 1,
-            "sequence_id": 309,
+            "sequence_id": 400,
             "crawled_at": null,
             "sns_platform": "threads"
         },
@@ -265,22 +268,22 @@
         },
         {
             "code": "DUiOFVsEsXn",
-            "root_code": "DUiW8Uekmf0",
+            "root_code": "DUiOFVsEsXn",
             "username": "appcast",
-            "full_text": "Playwright CLI 출시 \n1. MCP 사용 ,  2. CLI 사용했을때 의 토큰 사용차이.",
+            "full_text": "Playwright CLI 출시 \n1. MCP 사용 ,  2. CLI 사용했을때 의 토큰 사용차이.\n\n---\n\nhttps://youtu.be/Be0ceKN81S8?si=yk9tK3qediA3zfVY\n\n---\n\n전역설치\nnpm i -g playwright/cli@latest\n\n프로젝트 폴더에서 \nplaywright-cli install",
             "created_at": "2026-02-09 19:59:49",
             "images_count": 1,
             "post_url": "https://www.threads.com/@appcast/post/DUiOFVsEsXn",
             "images": [],
             "is_merged_thread": true,
-            "original_item_count": 1,
-            "sequence_id": 314,
+            "original_item_count": 3,
+            "sequence_id": 401,
             "crawled_at": null,
             "sns_platform": "threads"
         },
         {
             "code": "DUfZZGdE71B",
-            "root_code": "DUfZZ8Wk5K_",
+            "root_code": "DUfZZGdE71B",
             "username": "yc_melan",
             "full_text": "AI 시대 바이브코딩이 가져올 개발자의 미래\n문득 현재 작곡가들의 변천사와 너무 닮았다는 생각이 들었다.\n\n과거 클래식 작곡가는 화성학, 대위법, 오케스트레이션을 깊이 알아야 했고 악기도 하나 이상 다룰 줄 알아야 했다. 악보를 읽을 줄 모르면 작곡 자체가 불가능했다.\n과거 개발자도 마찬가지였다. 메모리 관리, 어셈블리, OS 내부 구조를 직접 다뤄야 했고 코드를 한 줄 한 줄 직접 쓸 줄 알아야만 소프트웨어를 만들 수 있었다. 진입장벽이 곧 전문성이었다.\n\n---\n\n밴드 시대 작곡가는 악기 파트가 줄었지만 기타, 베이스, 드럼의 조화를 이해해야 했고 작사가·편곡자와 협업하는 구조였다.\n지금의 풀스택 개발자도 프론트, 백엔드, DB, 인프라를 다룰 줄 알아야 하고 디자이너·PM과 역할이 명확히 나뉜 팀 단위로 일한다. \"코드를 잘 치는 사람\"이 좋은 개발자의 기준이었다.\n\n그런데 지금 음악 시장은? 소위 말하는 프로듀서가 주류다.\n악보를 직접 쓰는 게 아니라 DAW로 비트를 찍고 샘플을 조합하고 전체 방향을 디렉팅한다. 악기를 못 다뤄도 되고 화성학을 몰라도 된다. 중요한 건 \"어떤 소리를 만들고 싶은가\"라는 비전이지 악기 테크닉이 아니다.\n\n---\n\n바이브코딩 시대의 개발자도 똑같아질 거라고 본다.\n코드를 직접 치는 게 핵심이 아니라 AI 에이전트를 오케스트레이션해서 \"어떤 제품을 만들 것인가\"를 디렉팅하는 역할. 프로듀서가 보컬에게 \"여기서 좀 더 감성적으로\"라고 디렉션을 주듯 개발자도 AI에게 방향을 잡아주는 것이다.\n\n싱어송라이터가 직접 작곡하고 부르듯이 결국 서비스 개발자가 직접 자기 서비스를 만드는 시대가 온다.\n과거엔 \"전략가\"와 \"개발자\"가 따로 있어야 했지만 이제는 아이디어를 가진 사람이 직접 만든다. 그사람이 개발자 이자 전략가 이다.\n\n---\n\n다만 음악에서도 살아남은 프로듀서들의 공통점이 있다. DAW를 잘 다루는 사람이 아니라 음악 자체에 대한 깊은 이해와 취향이 있는 사람이다.\n\n개발도 마찬가지일 거다. 바이브코딩 도구를 잘 쓰는 것만으로는 차별화가 안 된다. \"무엇을 왜 만드는가\"에 대한 제품 감각, 그리고 AI가 뱉은 결과물의 품질을 판단할 수 있는 기술적 안목. 음악처럼 이 컴퓨터 과학과 네트워킹 기술자체에 대한 깊은 이해와 취향이 있어야 한다. 그게 디렉팅 능력이 본질이다.\n\n---\n\n그리고 완벽하게 나온다는 작곡쪽 AI에서도 아직은 아직 좀 먼 미래의 얘기긴 하지만.. \nSuno에 \"슬픈 발라드 만들어줘\"라고 해도 곡은 정말 사람처럼 좋게 나온다. 하지만 \"비 오는 새벽 3시에 혼자 모짜르트 생각하면서 술 마시면서 듣는 느낌\"이라고 하면 결과물이 완전히 달라진다. 그 프롬프트를 쓸 수 있는 건 그 감정과 분위기를 아는 사람뿐이다.\n바이브코딩도 같다. 로그인 만들어줘와 \"사용자가 불안하지 않게 자연스럽게 흘러가는 온보딩 설계해서 JWT 리리프레시 토큰 형식으로 짜줘 UX는 최대한 미니멀하게 귀찮지 않게\"는 전혀 다른 결과물을 만든다. 그리고 인간의 욕구는 끝이 없기에 차별화를 두기 위해서 이것보다 더 \"어떤 분위기로 만들어줘\" 라는 요구가 잉여력이 떨어질때까지 계속될것이다.\n\n---\n\n결국 AI가 아무리 발전해도 \"어떤 방향으로\"라는 디렉팅은 사람의 영역이다.\n프로듀서가 사라지는 게 아니라 프로듀서의 정의가 바뀌는 것이다. 악기를 연주하는 사람에서 방향을 잡아주는 사람으로. 개발자도 코드를 치는 사람에서 코드와 제품의 깊은이해를 통해 방향을 디렉팅하는 사람으로.\n남는 건 통찰, 취향, 감각, 그리고 \"이게 맞아\"라고 판단할 수 있는 안목. 이건 인풋이 있는 AI는 대체 못 한다.",
             "created_at": "2026-02-08 17:40:55",
@@ -289,13 +292,13 @@
             "images": [],
             "is_merged_thread": true,
             "original_item_count": 6,
-            "sequence_id": 315,
+            "sequence_id": 402,
             "crawled_at": null,
             "sns_platform": "threads"
         },
         {
             "code": "DUlWTf6kyKL",
-            "root_code": "DUlWT4Ok5v0",
+            "root_code": "DUlWTf6kyKL",
             "username": "ddg.kang",
             "full_text": "클로드코드 꿀팁 — 개발자 출신들도 잘 모르는 것들\n\n어디서 베낀 거 아니고, 클코 5,000시간 사용하면서 직접 느낀 것들.\n\n---\n\n1. webfetch 도구 안쓰도록 금지시키기\n\n문제: webfetch 쓰다가 사이트 잘못 걸리면 거기서 멈춰서 아무것도 못 함.\n\n해결: fetch MCP나 Jina Reader MCP 사용하기.\n\n특히 클코에 돈 쓸 준비가 되어 있다면 Jina Reader MCP 추천 — 컨텍스트 토큰이 절약되어서 엄청나게 이득. fetch MCP는 무료면서 훨 좋음.\n\n---\n\n2. Skills 남발하지 않기\n\n문제: 클코에 Skills 새로 나왔다고 이것저것 만들기.\n\n해결: 회사 전체가 클코 쓰면서 Skills를 서로 공유해야 하는 상황이 아닌 이상(솔직히 클코 다같이 쓰는 회사 거의 없음.. 다 혼자 쓰실듯), skills 안에 하나의 custom command로 간단하게 넣어놓는 게 훨씬 나음.\n\n(뭔 소린지 모르겠으면 이 글 복붙해서 클코에게 직접 물어보기)\n\n---\n\n3. 그냥 무조건 Opus 쓰기\n\n문제: 토큰 아낀다고 Sonnet, Haiku 사용.\n\n해결: 그냥 Opus 쓰는 게 훨씬 토큰 아낌. 저는 대부분 one-shot에 버그 없이 기능 완성합니다. 그럼 버그 잡느라 대화 안해도 되어서 오히려 절약.\n\n나중에 실제로 5천시간 클코하면서 발전시킨 프롬프트, 스킬도 공유할게요.",
             "created_at": "2026-02-11 01:09:23",
@@ -304,7 +307,7 @@
             "images": [],
             "is_merged_thread": true,
             "original_item_count": 4,
-            "sequence_id": 316,
+            "sequence_id": 403,
             "crawled_at": null,
             "sns_platform": "threads"
         },
@@ -3468,13 +3471,13 @@
             "code": "7426965977122357248",
             "username": "Josh Kim",
             "created_at": "2026-02-10 21:31:15",
-            "time_text": "12시간",
+            "time_text": "17시간",
             "full_text": "내가 고객사와 미팅 후\n제품을 바로 뽑아내는 방법\n\n1. 노션, 플라우드 노트 녹음 켜고 회의 입장\n2. 회의 끝나면 자동으로 녹음 전사본 ai 전송\n3. 자동으로 prd 만들고 클로드코드 열고\n4. bkit으로 플랜,디자인 짜고 30분 AI가 코딩\n5. 백엔드 환경 변수 연동하면 1차 제품 끝\n6. 모든 과정은 1시간이다. 그 다음부터는 튜닝.\n\n이것도 더 줄여버리고 싶다.\n가능할 것 같다.\n\nmeeting to product 시대.",
             "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7426965977122357248?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7426965977122357248%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
             "profile_slogan": "AI 크리에이터 조쉬입니다. ex-SKT 프로덕트 디자이너",
             "images": [],
             "user_link": "https://www.linkedin.com/in/ACoAAAfst4QBZ_TBpSZb5m5EitKHc3H5PhUbe5E",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "text",
             "source": "network",
             "sequence_id": 173,
@@ -3484,7 +3487,7 @@
             "code": "7426931601873346560",
             "username": "홍민지Hong Minji",
             "created_at": "2026-02-10 19:14:39",
-            "time_text": "15시간",
+            "time_text": "19시간",
             "full_text": "#마케팅 #에이전트 를 만들고 성과 대시보드를 연결했습니다. 새로 제작한 릴스 에이전트는 타겟 기반으로 트렌드를 검색하고, 기획합니다. 여기서 끝나지 않고 Instagram API를 연동해 발행된 콘텐츠의 인게이지먼트를 수집·분석합니다. 이 데이터를 학습해 기존 기획 파일과 함께 분석하고, 프롬프트를 개선해 콘텐츠 기획 품질을 높이는 에이전트입니다.\n\n이 과정을 한눈에 볼 수 있는 대시보드는 회사 서버에 배포하고, 팀원들과 함께 볼 수 있도록 했습니다. 이 과정에서 서버 공부도 함께 하게 됐네요.\n\n점점 할 수 있는 것이 많아지고 있습니다! AI로 할 수 있는 건 거의 다 해보고 있습니다. 애니메이션도 만들고, 노래도 만들어봤어요. 화면 구성, 이미지 기획, 가사 기획까지 모두 AI 에이전트와 함께 작업했습니다.\n\n이렇게 만든 릴스 콘텐츠도 한번 봐주세요 😊\nhttps://lnkd.in/gx8WAnBN\n\n*이번주 목요일 웨비나를 진행합니다. 웨비나 링크는 프로필에 고정해놨어요!",
             "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7426931601873346560?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7426931601873346560%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
             "profile_slogan": "Creative Marketer @MODULABS AX",
@@ -3492,17 +3495,20 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQFARhdO4B8wCw/feedshare-shrink_2048_1536/B56ZxHC77WGYAk-/0/1770718478414?e=1772668800&v=beta&t=E5WFyk0IY6PqqVvnlOq2A8TfbmdD9JNhjLjsHJLjOxI"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAADhcEVQBJOMtD7wMMWcOw9aFJeD_ao2VW0Y",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 172,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/f4bc70a834d7077d483192cc5ca2e1c4.jpg"
+            ]
         },
         {
             "code": "7426891202538651648",
             "username": "Minchul Kim",
             "created_at": "2026-02-10 16:34:07",
-            "time_text": "17시간",
+            "time_text": "22시간",
             "full_text": "요즘 PM과 기획자들을 만나면 AI에 대해 크게 세 가지 걱정을 하는 것 같다.\n아마도 다른 직종에 종사하는 분들도 비슷할 것이다.\n\n1. AI 때문에 내 일자리가 사라지지는 않을까? (생존에 대한 원초적 불안)\n2. AI를 어디까지 배워야 할까? (기술 습득의 범위에 대한 혼란)\n3. 당장 AI를 내 업무에 어떻게 써먹을 수 있을까? (실질적인 활용법에 대한 갈증)\n\n첫 번째와 두 번째는 본인의 상황과 경우에 따라 달라질 수 있는 부분이라 각자 고민해 볼 영역인 것 같다.\n세 번째는 내 업무와 관련된 내용인데다가 이번 달 스터디 주제이기도 해서 정리를 좀 해봤다.\n\n기획자의 업무를 단계별로 쪼개보니 총 45가지의 세부 업무가 나왔다.\n여기에 AI를 도구로 활용하거나 협업할 수 있는 워크플로우를 대략적으로 설계해 봤다.\n\n협업 구조를 짜면서 느낀 가장 중요한 포인트는 이것이다.\n결국 본인이 할 줄 알아야 AI도 제대로 활용할 수 있다는 것이다.\n\n예를 들어 화면설계서(UI+기능정의) 이미지나 정책서 등 참고 문서, 테스트 케이스(TC) 양식을 던져주고 AI에게 TC 작성을 시키면 꽤 그럴싸한 결과물을 내놓는다.\n하지만 빠진 케이스가 있는지는 일일이 체크해야 한다.\n이건 TC를 써보지 못한 사람은 하기 힘들다.\n\n반대로 앞서 말한 화면설계서 등의 자료와 본인이 작성한 TC를 AI에게 업로드하고 \"누락되거나 잘못된 부분이 없는지 점검해 줘\"라고 시키면 최고의 검수 파트너가 되어준다.\n하지만 이 역시 내가 TC를 작성할 수 있다는 전제가 필요하다.\n\nAI를 쓰더라도 본인의 업무 역량을 계속 키워나가야 하는 이유다.\n\n#PM #기획자 #AI협업 #생성형AI #워크플로우 #업무생산성",
             "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7426891202538651648?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7426891202538651648%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
             "profile_slogan": "PO/PM | IT 전략 기획 & 서비스 구축 | AI & Vibe Coding Evangelist | CROW Study Group Leader",
@@ -3510,11 +3516,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQEpIrlbv585jw/feedshare-shrink_1280/B56ZxGeMWIIcAc-/0/1770708846209?e=1772668800&v=beta&t=xVDLNzSq5sB8DSgW4WQ87ToLHWL9lzNXcNNK4Um87QQ"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAACEH0qkBOk6MutJF7_9om-54swxEvfcM05M",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 171,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/82b4b5b7f649156929734e0406f4bb6c.jpg"
+            ]
         },
         {
             "code": "7426380560358383617",
@@ -3526,7 +3535,7 @@
             "profile_slogan": "Claude Code for all of your work",
             "images": [],
             "user_link": "https://www.linkedin.com/in/ACoAACY7KJQBDtSTk6IuIwZY6ntBGJx1fCYwsYI",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "text",
             "source": "network",
             "sequence_id": 170,
@@ -3544,11 +3553,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQF6MYimbP5_aQ/feedshare-shrink_2048_1536/B56Zw6twR3GUAo-/0/1770511598963?e=1772668800&v=beta&t=i0XdEnFd7Wq5e3RBWOIVGKfJH3ZbFfCK7gy_5kVpK1I"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAA5RhH4BjDv2vMF1Onz2ppvG6jeLmEGo93E",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 169,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/8bfa75f96ed43e98a081bf0c68d158b0.jpg"
+            ]
         },
         {
             "code": "7425809475447742464",
@@ -3562,11 +3574,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQFdShKX0EWUEg/feedshare-shrink_2048_1536/B56Zw3GXhyIYAk-/0/1770450942334?e=1772668800&v=beta&t=2Mt0b_ttMazm96mCISQfi0SDHJf6lo3OHKcqeB6iscU"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAADk-HPIB9Dfu21FvR7IWiubg2RoPiyFq_PY",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 168,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/f5877ff46377afcf17cfac284efdbf4b.jpg"
+            ]
         },
         {
             "code": "7425805973493010432",
@@ -3580,11 +3595,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQGKHsnp7D0MsQ/feedshare-shrink_800/B56Zw3DL6DKcAg-/0/1770450108235?e=1772668800&v=beta&t=wycu4IHzz-FUrJzipHArodLXmi4RTq3LsePNCQsxAC4"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAELdlnABBEBaeiOUCnh0HeCIMBxSvsedhm4",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 167,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/9b46913f26952c82431a88d73efb8cd2.jpg"
+            ]
         },
         {
             "code": "7425792970475462656",
@@ -3598,17 +3616,20 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQGvyt4jbMfsTw/feedshare-shrink_2048_1536/B56Zw23W2HGYAo-/0/1770447007629?e=1772668800&v=beta&t=QNL1JJ6PK4MBJNHT8NIoZCIyYl97TwZN2l0DKki1YBU"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAACkadIABsYoadkJXuZXMASkhnSFeoK_nVw8",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 166,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/7ecfaf2182c3451eb3deff0e95a0f850.jpg"
+            ]
         },
         {
             "code": "7425756662302523392",
             "username": "BZCF - 비즈까페",
             "created_at": "2026-02-07 13:25:52",
-            "time_text": "3일",
+            "time_text": "4일",
             "full_text": "채용 방식이 많이 바뀔 것 같다. 과거에는 크게 세 가지를 테스트했던 것 같다. (1) 성실성(학벌 혹은 학점), (2) 보유 지식(학점 혹은 자격증), (3) 사고방식(적성검사, 케이스 인터뷰).\n\n그런데 앞선 방식들이 무용해지는 것 같다. 목표 제시하고, 인공지능 툴 몇개 던지고, 그리고 정해진 시간 안에 이 자원들 활용해서 어떻게 일 시킬 것인지 (어떻게 오케스트레이션(Orchestration)할 것인지) 검증하면 된다. 어떤 지식 갖고있는지, 얼마나 성실한지는 더 이상 중요하지 않다. 그냥 지치지 않는 컴퓨터를 어떻게 잘 쓸지만 고민하면 된다. 그것 잘하면 인재다.\n\n사람들의 90% 이상은 대개 일을 받는 입장에 익숙하다. 일을 시키는 사람은 역사적으로 소수였다. 다만, 앞으로는 모든 사람들에게 일을 받는 게 아니라 일을 시키는 사람이 되기를 요구하고 있다. 일을 잘 시킨다는 것은 매우 높은 수준의 사고력을 요구한다. 자원을 어떤 순서로 배치해 워크플로우를 설계할지, 각 단계에 어떤 고해상도 지시(Prompting)를 내려 결과물의 밀도를 높일지 결정해야 하기 때문이다.\n\n본질적인 문제 해결 역량은 변하지 않았다. 다만 과거에는 '직접 뛰는 선수'의 사고력이 중요했다면, 이제는 모두에게 일정수준 이상의 감독역할을 요구하고 있다. 똑똑한 기업들은 이미 이런 방향으로 채용의 기준을 옮기고 있을 것이다.",
             "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7425756662302523392?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7425756662302523392%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
             "profile_slogan": "BZCF",
@@ -3616,11 +3637,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQENGQFs-F3sIg/feedshare-shrink_800/B56Zw2WVlpIYAk-/0/1770438351396?e=1772668800&v=beta&t=0CaanjC0nXzIMfiXXSiK7d-DYVSftxdNkmeu1hdjdy4"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAADosSpABPU4--68Ki5nk1NUfCtpau6AMoJs",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 165,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/02b8f689bc727ff0306524bf24f7b67c.jpg"
+            ]
         },
         {
             "code": "7425667115908599809",
@@ -3634,11 +3658,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQHEhIyah8qX8A/feedshare-shrink_1280/B56Zwx2IV_KQAc-/0/1770362799740?e=1772668800&v=beta&t=7q_07-H91khTza-kkmB1MF1jCXfTscGOnpYfl31SV9I"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAARknekBOFFETpmlSPqmlb2P8ln4iACFaJg",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 164,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/4273737881629fd4113138cc0244f956.jpg"
+            ]
         },
         {
             "code": "7425445464528863233",
@@ -3652,11 +3679,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQEZfyKn5frZ_Q/feedshare-shrink_2048_1536/B56Zwx7TaCKMAo-/0/1770364155798?e=1772668800&v=beta&t=_mxDWrPwQqYKNGwEKuowVLzYWqZfBHF1eBbtKVhT38g"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAAwBOVMBDI50rE9wyD4tsMaGWkV-85Sqd50",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 163,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/17d0877fdafc96100c3c22d0ce013215.jpg"
+            ]
         },
         {
             "code": "7425437112285569024",
@@ -3667,14 +3697,17 @@
             "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7425437112285569024?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7425437112285569024%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
             "profile_slogan": "사업개발자",
             "images": [
-                "https://media.licdn.com/dms/image/sync/v2/D5627AQGmcvxMuz-X0A/articleshare-shrink_480/B56ZwxzaCrI8Ao-/0/1770362086865?e=1771380000&v=beta&t=MaaXezeXaT5pQMz-UcrO-l4JZTiCJDvxocKo1oopLLQ"
+                "https://media.licdn.com/dms/image/sync/v2/D5627AQGmcvxMuz-X0A/articleshare-shrink_480/B56ZwxzaCrI8Ao-/0/1770362086865?e=1771398000&v=beta&t=3jp-mCbHEAlBcFHawN4s-BMt4v6nEaTmyjb1IArqOKY"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAABSik2AB3lhvozPHjWHSnt_VLACY0igaugs",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 162,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/f9a00abf2f0efa7fd22b8ff6860bd413.jpg"
+            ]
         },
         {
             "code": "7425428410212102145",
@@ -3685,14 +3718,17 @@
             "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7425428410212102145?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7425428410212102145%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
             "profile_slogan": "Claude Code for all of your work",
             "images": [
-                "https://media.licdn.com/dms/image/sync/v2/D5627AQEBBLLxN1Gy8w/articleshare-shrink_1280_800/B56ZwxazXiKcAQ-/0/1770355636659?e=1771380000&v=beta&t=1ieSm6LfYcw6nKD0F8itbwsuQEl7F6GmqcEUjezvGGc"
+                "https://media.licdn.com/dms/image/sync/v2/D5627AQEBBLLxN1Gy8w/articleshare-shrink_1280_800/B56ZwxazXiKcAQ-/0/1770355636659?e=1771398000&v=beta&t=m1f0hKZ3OJVjxboEIsSutZKZukXX0srvC9sY__WRUbE"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAACY7KJQBDtSTk6IuIwZY6ntBGJx1fCYwsYI",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 161,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/88b3b4c1d2fa8bc5bb184a20e1ce887b.jpg"
+            ]
         },
         {
             "code": "7425315604485779456",
@@ -3706,11 +3742,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQGhTIUspMmr6Q/feedshare-shrink_2048_1536/B56ZwwFMQ7HAAs-/0/1770333194296?e=1772668800&v=beta&t=kh2Mnl03ufbi6p_TKyqIQZkSQPZveKOqTmMerLesnAE"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAABMANk0BgfMXZ0_W-RdMCfwLTzaHHyDPHCo",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 160,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/f3f4f942781f70e0bdf0476e9a4dce73.jpg"
+            ]
         },
         {
             "code": "7424934784096731136",
@@ -3722,7 +3761,7 @@
             "profile_slogan": "CAIO & Deputy CEO @ Channel Corp | AI × B2B SaaS",
             "images": [],
             "user_link": "https://www.linkedin.com/in/ACoAAA5RhH4BjDv2vMF1Onz2ppvG6jeLmEGo93E",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "text",
             "source": "network",
             "sequence_id": 159,
@@ -3732,7 +3771,7 @@
             "code": "7424635662231945216",
             "username": "BZCF - 비즈까페",
             "created_at": "2026-02-04 11:11:24",
-            "time_text": "6일",
+            "time_text": "1주",
             "full_text": "요즘 생각 : 너무 빠르고 무섭고 걱정도되고 슬프기도 하고 할수있는 것은 없고 그렇다 집단적 무력감이 기본값이 될까 걱정이다\n\n인스타그램 - https://lnkd.in/g39aSC-x",
             "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7424635662231945216?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7424635662231945216%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
             "profile_slogan": "BZCF",
@@ -3740,11 +3779,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQHfutx8ZVlmdA/feedshare-shrink_2048_1536/B56ZwmayopIQAk-/0/1770171083606?e=1772668800&v=beta&t=qncXX9oQ8BwPIOkFMvR_p_laJcdzm2YlL5RSVACsyMo"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAADosSpABPU4--68Ki5nk1NUfCtpau6AMoJs",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 158,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/3cd76ec89a75a3f8aa4dfde30f9e381f.jpg"
+            ]
         },
         {
             "code": "7424482472438120448",
@@ -3758,11 +3800,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQHEltjKiFI3Qg/feedshare-shrink_1280/B56ZwkPeIwHIAg-/0/1770134561633?e=1772668800&v=beta&t=XtNnE5wtweHXEYc-mMx02j2Ofns8hLtmkVbniLENuR4"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAACY7KJQBDtSTk6IuIwZY6ntBGJx1fCYwsYI",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 157,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/e631e9af336a1c657073c706be44f803.jpg"
+            ]
         },
         {
             "code": "7424462704150634496",
@@ -3776,11 +3821,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQGWRCDGO-QWDQ/feedshare-shrink_2048_1536/B56Zwj9fG2KsAo-/0/1770129847193?e=1772668800&v=beta&t=3VIjyppYtk9rmMN15-t_4xOJycBfrlPKyBaYpSBzpNk"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAACO8Fs4BmCpyrtbIxshmSJfd_r8Puv1oL34",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 156,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/42845c6d9f37daa2daca95f81b929c0c.jpg"
+            ]
         },
         {
             "code": "7424423567607603204",
@@ -3792,7 +3840,7 @@
             "profile_slogan": "CEO @ BATI.AI | Global Commerce Intelligence for Beauty Brands",
             "images": [],
             "user_link": "https://www.linkedin.com/in/ACoAACZfqCcB7Tmya601YQuGRqiAzlUKO_u-pro",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "text",
             "source": "network",
             "sequence_id": 155,
@@ -3807,14 +3855,17 @@
             "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7424206243277381632?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7424206243277381632%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
             "profile_slogan": "Claude Code for all of your work",
             "images": [
-                "https://media.licdn.com/dms/image/sync/v2/D5627AQEqFSORFLXRqg/articleshare-shrink_1280_800/B56ZwfOFeEKYAQ-/0/1770050314434?e=1771380000&v=beta&t=dTeB4cGfZS-AhAMq2JeJeWRgvZrKXBVK5tp_X1EtTbo"
+                "https://media.licdn.com/dms/image/sync/v2/D5627AQEqFSORFLXRqg/articleshare-shrink_1280_800/B56ZwfOFeEKYAQ-/0/1770050314434?e=1771398000&v=beta&t=e-WC1zgQQ0ucaMtLeqZReBNcolfAAswO0xBhWWEqS6A"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAACY7KJQBDtSTk6IuIwZY6ntBGJx1fCYwsYI",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 154,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/5a95549cb117e0358c0fda18ec7591a2.jpg"
+            ]
         },
         {
             "code": "7424102643498774528",
@@ -3828,11 +3879,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQH1zbV2iTlLuw/feedshare-shrink_2048_1536/B56Zwe2Ai0HUAk-/0/1770044001543?e=1772668800&v=beta&t=iPWIPpoOfTixoQl4vqP2fkyz4ltxAMNs1f9WWM-2UB4"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAADhcEVQBJOMtD7wMMWcOw9aFJeD_ao2VW0Y",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 153,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/25fc705d77ebef34500fc42a22cb91e5.jpg"
+            ]
         },
         {
             "code": "7424076125506740224",
@@ -3846,11 +3900,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQG1dOpXuJv0cQ/feedshare-shrink_2048_1536/B56Zwed5M0KYAo-/0/1770037680142?e=1772668800&v=beta&t=g9WxKsVSNH3jLhhPaj0z2DTtX7NlR-dZqoqXL2Sa4z8"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAAwBOVMBDI50rE9wyD4tsMaGWkV-85Sqd50",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 152,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/268563053f47a3cd31179e93abf984d5.jpg"
+            ]
         },
         {
             "code": "7424044841904447488",
@@ -3864,11 +3921,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQFOyHeFEYQa6w/feedshare-shrink_2048_1536/B56ZweBcOOIoAk-/0/1770030220654?e=1772668800&v=beta&t=qCtcGl1ICm6ZAGlMn8U-asnqfOaUBY0lG1ugnLh4hZE"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAACO8Fs4BmCpyrtbIxshmSJfd_r8Puv1oL34",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 151,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/9b87c8f02dc4db8e52c610b086b9e1f5.jpg"
+            ]
         },
         {
             "code": "7424016182380470272",
@@ -3882,11 +3942,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQE878gMVDlGKA/feedshare-shrink_1280/B56ZwdnYN3KsAc-/0/1770023388442?e=1772668800&v=beta&t=nX-R6leqFUseGkAmVg2PtxQyFKC-oTdmo1SsFJCBeXA"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAACC2D84BJpzxT2C5mrDCykqwVjBnKqPntLo",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 150,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/b5ffe7b5d49304b82c126ff59a23b622.jpg"
+            ]
         },
         {
             "code": "7423900555409911808",
@@ -3897,14 +3960,17 @@
             "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7423900555409911808?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7423900555409911808%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
             "profile_slogan": "AI/ML Engineer @ NC AI",
             "images": [
-                "https://media.licdn.com/dms/image/v2/D5605AQHJzE32NcQXsg/videocover-high/B56Zwb.Lw8K8Bc-/0/1769995813533?e=1771380000&v=beta&t=sN1HeT6R65lRby3OvyAaVXCwbZal5I1yvGIuFlApCfA"
+                "https://media.licdn.com/dms/image/v2/D5605AQHJzE32NcQXsg/videocover-high/B56Zwb.Lw8K8Bc-/0/1769995813533?e=1771398000&v=beta&t=ayE63I-eiScENGcsfXlHlnCNLqwUxwWmosb9C3IIO3w"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAC7cVNYBVpBRHIWmElqGjEMPI-4Jp7hpcng",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 149,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/8fb8a90cf8e0fcc723dd877f839612a5.jpg"
+            ]
         },
         {
             "code": "7423840081410678784",
@@ -3918,11 +3984,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQF8DDDJiumprQ/feedshare-shrink_2048_1536/B56ZwZokv_KIAk-/0/1769956593388?e=1772668800&v=beta&t=cZL0TGDOou8cgHGNkmcxEl1CRE_-skG3FaBFIMs_2jo"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAACY7KJQBDtSTk6IuIwZY6ntBGJx1fCYwsYI",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 148,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/21d2c5a9546c8451349d614a1a0a01cb.jpg"
+            ]
         },
         {
             "code": "7423556087586603009",
@@ -3936,11 +4005,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQGej2_npfQgkg/feedshare-shrink_800/B56ZwXE7SDIwAg-/0/1769913693490?e=1772668800&v=beta&t=9rpxyeUu99hoPWbvqxVcuCNTH_C6yCaXdGDcVpOSi-w"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAAf6XY0B7OOmUGuE03uR5HSlffa5td7-K_g",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 147,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/623a31de82d12e6eff3eb362c66422b5.jpg"
+            ]
         },
         {
             "code": "7423290982298828800",
@@ -3954,11 +4026,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQE-mODl-ACjxg/feedshare-shrink_1280/B56ZwTTz7KIcAc-/0/1769850486772?e=1772668800&v=beta&t=KXBCXdgv-Ez4uhKxHxMc2ySWq4eCQwKDjJ-FyjSiD28"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAABMRqukBBpLan7UG0wx717QG0JmBGlYF0u0",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 146,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/fa422dcaf33483b14ee99e1d59dfe6f8.jpg"
+            ]
         },
         {
             "code": "7423236500034764800",
@@ -3970,7 +4045,7 @@
             "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
             "images": [],
             "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "text",
             "source": "network",
             "sequence_id": 145,
@@ -3986,7 +4061,7 @@
             "profile_slogan": "이커머스 운영 비용을 절반으로 줄이는 AI 시스템을 공유합니다",
             "images": [],
             "user_link": "https://www.linkedin.com/in/ACoAAEYsARgBdQazrHf4u7lcZ1nlSjTNE7YbpOs",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "text",
             "source": "network",
             "sequence_id": 144,
@@ -4002,7 +4077,7 @@
             "profile_slogan": "이커머스 운영 비용을 절반으로 줄이는 AI 시스템을 공유합니다",
             "images": [],
             "user_link": "https://www.linkedin.com/in/ACoAAEYsARgBdQazrHf4u7lcZ1nlSjTNE7YbpOs",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "text",
             "source": "network",
             "sequence_id": 143,
@@ -4017,14 +4092,17 @@
             "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7423134165010763776?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7423134165010763776%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
             "profile_slogan": "Claude Code for all of your work",
             "images": [
-                "https://media.licdn.com/dms/image/v2/D5605AQHk4rApZb3K0Q/videocover-high/B56ZwPWdeaIQBc-/0/1769784074783?e=1771380000&v=beta&t=_HZjV4n0gaLdOP3DLHnA30Wgk9GByARJHp0iMroiR2c"
+                "https://media.licdn.com/dms/image/v2/D5605AQHk4rApZb3K0Q/videocover-high/B56ZwPWdeaIQBc-/0/1769784074783?e=1771398000&v=beta&t=mTk7GlvnP1n4X5plh-aCJPGkXpnBaVVRMMdVu0J86ZQ"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAACY7KJQBDtSTk6IuIwZY6ntBGJx1fCYwsYI",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 142,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/12b4e9930917e7c6d425c5151f1ff7a3.jpg"
+            ]
         },
         {
             "code": "7422971668609966080",
@@ -4035,14 +4113,17 @@
             "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7422971668609966080?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7422971668609966080%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
             "profile_slogan": "이커머스 운영 비용을 절반으로 줄이는 AI 시스템을 공유합니다",
             "images": [
-                "https://media.licdn.com/dms/image/v2/D5605AQGN49gdU-tS8g/videocover-high/B56ZwOxXLqHUBY-/0/1769774348982?e=1771380000&v=beta&t=qyP9PijwhfbnB0s3ImAUrdOB2DN5iA6wJVe3f15sapw"
+                "https://media.licdn.com/dms/image/v2/D5605AQGN49gdU-tS8g/videocover-high/B56ZwOxXLqHUBY-/0/1769774348982?e=1771398000&v=beta&t=Hji8qYzSQfEneioqCA8FWgLYCxD3DJEE73whBioN0Gs"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAEYsARgBdQazrHf4u7lcZ1nlSjTNE7YbpOs",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 141,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/22739bab8274eeab324c38cfbbe872f3.jpg"
+            ]
         },
         {
             "code": "7422780935894544384",
@@ -4056,11 +4137,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQFp_u-8SHBMrQ/feedshare-shrink_2048_1536/B56ZwMD7SjKsAk-/0/1769728882308?e=1772668800&v=beta&t=3bE5mCmU47T-AT1Oh1Cf6pId29UpWhQ0nhfVUMcdWTY"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAACkadIABsYoadkJXuZXMASkhnSFeoK_nVw8",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 140,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/f49b50f46789db3b85560663a79e90ac.jpg"
+            ]
         },
         {
             "code": "7422768008177074177",
@@ -4072,7 +4156,7 @@
             "profile_slogan": "CAIO & Deputy CEO @ Channel Corp | AI × B2B SaaS",
             "images": [],
             "user_link": "https://www.linkedin.com/in/ACoAAA5RhH4BjDv2vMF1Onz2ppvG6jeLmEGo93E",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "text",
             "source": "network",
             "sequence_id": 139,
@@ -4090,11 +4174,14 @@
                 "https://media.licdn.com/dms/image/v2/D4D22AQEe9jnSDmCvUA/feedshare-shrink_1280/B4DZwJzrQtKEAc-/0/1769691067910?e=1772668800&v=beta&t=MvCwy1LTWXbijkuGjYNv3HpxL-A_9TiYxbF-6MbuaT4"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAACfVcCwBC2Um-3YmtYg58LwMarvLd6JsHsE",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 138,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/6fb9331ad1cc49e8bb3cc12f98817bfc.jpg"
+            ]
         },
         {
             "code": "7422584216384774144",
@@ -4108,11 +4195,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQFczUWxZq1L5Q/feedshare-shrink_2048_1536/B56ZwJRAnnKsAo-/0/1769681980087?e=1772668800&v=beta&t=UQwQCzsSjsZWTtZZ_bCt6Qpp76wAjOWzB902RlFKMQo"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAADosSpABPU4--68Ki5nk1NUfCtpau6AMoJs",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 137,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/31d937ba76caed83f763362b969d6917.jpg"
+            ]
         },
         {
             "code": "7422438686518272002",
@@ -4124,7 +4214,7 @@
             "profile_slogan": "AI 크리에이터 조쉬입니다. ex-SKT 프로덕트 디자이너",
             "images": [],
             "user_link": "https://www.linkedin.com/in/ACoAAAfst4QBZ_TBpSZb5m5EitKHc3H5PhUbe5E",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "text",
             "source": "network",
             "sequence_id": 136,
@@ -4142,11 +4232,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQFbeylhP-DG3A/feedshare-shrink_1280/B56ZwG007HHQAc-/0/1769641037722?e=1772668800&v=beta&t=Bung8LBEEc4Jo5xsOByyio-F6EN7Mt27v6sYSaz7GKA"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAARknekBOFFETpmlSPqmlb2P8ln4iACFaJg",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 135,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/d2d5ce9395428a10ffce010e68ab1367.jpg"
+            ]
         },
         {
             "code": "7422409393570344960",
@@ -4157,14 +4250,17 @@
             "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7422409393570344960?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7422409393570344960%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
             "profile_slogan": "Claude Code for all of your work",
             "images": [
-                "https://media.licdn.com/dms/image/v2/D5605AQF7SBM1hbI3yQ/videocover-high/B56ZwFwUBgIwBU-/0/1769623078495?e=1771380000&v=beta&t=wq4nPR4ZBflIsPpFwgpjLGrhV6vmFgHENXS-CzoLTZg"
+                "https://media.licdn.com/dms/image/v2/D5605AQF7SBM1hbI3yQ/videocover-high/B56ZwFwUBgIwBU-/0/1769623078495?e=1771398000&v=beta&t=V7iIr0oNJQPkoqvhWn8IYdW71GxEcvLzwv_VUEdR718"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAACY7KJQBDtSTk6IuIwZY6ntBGJx1fCYwsYI",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 134,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/8d75c57e9ead6158ebfbcd735a40de70.jpg"
+            ]
         },
         {
             "code": "7422400422361096192",
@@ -4178,11 +4274,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQFOCdK1U8rHHQ/feedshare-shrink_2048_1536/B56ZwGp2smJwAk-/0/1769638161387?e=1772668800&v=beta&t=nt8DxPQDOik_eEBd4sFdueguu4Gtn5ow7t0EKOsJDQ4"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAEYsARgBdQazrHf4u7lcZ1nlSjTNE7YbpOs",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 133,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/b76ec93f3757c8ac32887ec4d712358e.jpg"
+            ]
         },
         {
             "code": "7422209803042742272",
@@ -4196,11 +4295,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQF_KHojDG6VNQ/feedshare-shrink_1280/B56ZwD8fB9KkAc-/0/1769592713670?e=1772668800&v=beta&t=lc4H3kIsd7RcuN0n-_gRh1hI1_SCqTXs2VDkD8bk_eI"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAACC2D84BJpzxT2C5mrDCykqwVjBnKqPntLo",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 132,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/72b6dbc195c9a3d4d8f51e9da18922df.jpg"
+            ]
         },
         {
             "code": "7422209668422324224",
@@ -4211,14 +4313,17 @@
             "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7422209668422324224?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7422209668422324224%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
             "profile_slogan": "Product Engineer @ Toss",
             "images": [
-                "https://media.licdn.com/dms/image/v2/D5610AQEYR3-BpXc5cQ/image-shrink_1280/B56ZwD8Sg7JIAc-/0/1769592662443?e=1771380000&v=beta&t=yhwtReoO6WxB9tUfupmnJwfCstzdymoleWWzIicQSHY"
+                "https://media.licdn.com/dms/image/v2/D5610AQEYR3-BpXc5cQ/image-shrink_1280/B56ZwD8Sg7JIAc-/0/1769592662443?e=1771398000&v=beta&t=IvDLwVoNbUFEUbSUn3RZBVfr0CafWSgSlDpRbI5CjOA"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAB1vdP4Bi740ailUbogk4d8gvBrVCYug48w",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 131,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/c62f8ced94b637747ba6441e68b1fe99.jpg"
+            ]
         },
         {
             "code": "7422035691510984705",
@@ -4230,7 +4335,7 @@
             "profile_slogan": "Claude Code for all of your work",
             "images": [],
             "user_link": "https://www.linkedin.com/in/ACoAACY7KJQBDtSTk6IuIwZY6ntBGJx1fCYwsYI",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "text",
             "source": "network",
             "sequence_id": 130,
@@ -4248,11 +4353,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQF8gMZVYRtm4w/feedshare-shrink_2048_1536/B56Zv.MGkNKQAk-/0/1769496144921?e=1772668800&v=beta&t=ZGozP3BUZPVhgBx32lunRQbukh351vHn2lzUq1SEaSs"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAADhcEVQBJOMtD7wMMWcOw9aFJeD_ao2VW0Y",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 129,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/d2bd7aee84b29f45146dfe5c25f7c46c.jpg"
+            ]
         },
         {
             "code": "7421318465455722496",
@@ -4266,11 +4374,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQGQ042kf1I4AA/feedshare-shrink_2048_1536/B56Zvp2DOrIcAo-/0/1769154819290?e=1772668800&v=beta&t=cTBYMvoV5ozOTu8WMs2TXw1s7gWNf7O1q2OC8k0nviE"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAACbIGnsB9Di2haFcpBY99qYAiTfpDOyxmCY",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 128,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/fe895e617ee6ddcc74b035753200b0a2.jpg"
+            ]
         },
         {
             "code": "7421022478979948545",
@@ -4281,14 +4392,17 @@
             "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7421022478979948545?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7421022478979948545%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
             "profile_slogan": "Building with AI @ Smoretalk | Control opinions with AI",
             "images": [
-                "https://media.licdn.com/dms/image/v2/D5605AQEST6HAfRSYXQ/videocover-high/B56ZvzElzSHsBU-/0/1769309627026?e=1771380000&v=beta&t=VCRUXpUp9AiCFy72RSsW-FYIZv7GB53qfh2dqOcoRkQ"
+                "https://media.licdn.com/dms/image/v2/D5605AQEST6HAfRSYXQ/videocover-high/B56ZvzElzSHsBU-/0/1769309627026?e=1771398000&v=beta&t=kdEtHG5he6sgrmZ3-KNrZ9Vgp4TLzs6Y4Ja82WcmeT4"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAACkadIABsYoadkJXuZXMASkhnSFeoK_nVw8",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 127,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/30c74e85f5d87f70f9ed0617b53f2020.jpg"
+            ]
         },
         {
             "code": "7420216201961906177",
@@ -4300,7 +4414,7 @@
             "profile_slogan": "Claude Code for all of your work",
             "images": [],
             "user_link": "https://www.linkedin.com/in/ACoAACY7KJQBDtSTk6IuIwZY6ntBGJx1fCYwsYI",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "text",
             "source": "network",
             "sequence_id": 126,
@@ -4315,32 +4429,38 @@
             "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7420046768471433216?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7420046768471433216%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
             "profile_slogan": "팔로워 287명",
             "images": [
-                "https://media.licdn.com/dms/image/v2/D561FAQHyI3Mb8yGQ-g/feedshare-document-cover-images_480/B56ZvlNKTeJEBA-/0/1769076992962?e=1771380000&v=beta&t=E4c5uQY1Gf9CaRXt0dv9gv1P4rrrfb9PlRqHxP_xqGw"
+                "https://media.licdn.com/dms/image/v2/D561FAQHyI3Mb8yGQ-g/feedshare-document-cover-images_480/B56ZvlNKTeJEBA-/0/1769076992962?e=1771398000&v=beta&t=k6e6Hv27gvtciMLihyS-TP-jqj0fg7u7UvjaJKMlPoY"
             ],
             "user_link": "https://www.linkedin.com/company/%ED%8B%B0%ED%83%80%EC%9E%84%EC%A6%88/",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 125,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/ae5b53be22288eb9a856f22a04554ff8.jpg"
+            ]
         },
         {
             "code": "7419563139156992000",
             "username": "SangRok Jung",
             "created_at": "2026-01-21 11:15:01",
-            "time_text": "2주",
+            "time_text": "3주",
             "full_text": "웹디자인, 이제 AI한테 시키면 됩니다. Google이 진짜 미친 도구를 내놨어요.\n\n---\n\nGoogle I/O 2025에서 조용히 발표된 도구가 하나 있거든요. 이름은 Stitch입니다.\n\n근데 이게 단순한 AI 도구가 아니에요. 제가 직접 써봤는데, 솔직히 충격받았습니다.\n\n텍스트로 \"다크 테마 모바일 앱 홈페이지, 네비게이션 바랑 프로필 카드 넣어줘\"라고 치면... 그냥 UI가 뿅 하고 나와요.\n\n---\n\n진짜 대박인 건 이거예요.\n\n손으로 끄적인 와이어프레임 사진을 찍어서 올리면, 그걸 보고 프로급 UI로 변환해줍니다.\n\n화이트보드에 대충 그린 스케치도 되고요. 앱 스크린샷 올려서 비슷하게 만들어달라고 해도 돼요.\n\n기존 워크플로우가 \"와이어프레임 - 목업 - 프로토타입 - 코드\" 이렇게 몇 시간~며칠 걸렸다면, Stitch는 \"프롬프트 - 끝\"입니다.\n\n---\n\n여기서 끝이 아니에요. 진짜 혁신은 MCP 지원입니다.\n\nMCP가 뭐냐고요? Model Context Protocol의 약자인데요. 쉽게 말하면 AI 에이전트가 외부 도구랑 대화할 수 있게 해주는 표준이에요.\n\nStitch가 MCP를 지원한다는 건, 여러분이 쓰는 AI 코딩 도구(Cursor, Claude Code 등)에서 직접 Stitch를 불러서 쓸 수 있다는 뜻입니다.\n\n---\n\n실제로 stitch-mcp라는 오픈소스 프로젝트가 이미 나왔어요.\n\n이걸 설치하면 Cursor나 Claude Code에서 바로 Stitch API를 호출할 수 있거든요.\n\n설정도 간단합니다. Google Cloud 프로젝트 만들고, gcloud 명령어 몇 개 치면 끝이에요.\n\n---\n\n근데 진짜 소름 돋는 기능이 있습니다.\n\nextract_design_context라는 도구가 있는데요. 이게 기존 화면을 스캔해서 Design DNA를 추출해줘요.\n\n폰트, 컬러 팔레트, 레이아웃 구조... 이런 걸 자동으로 뽑아내서 다음 화면 만들 때 일관성 있게 적용해줍니다.\n\n\"홈 화면\"이랑 \"프로필 화면\" 따로 만들었는데 스타일이 다른 문제, 이제 없어지는 거예요.\n\n---\n\nFigma 연동도 됩니다.\n\nStitch에서 만든 디자인을 \"Paste to Figma\" 버튼 하나로 피그마에 바로 붙여넣을 수 있어요.\n\n그리고 깔끔한 HTML/CSS 코드도 자동 생성해주고요. 프론트엔드 개발자들 작업량이 확 줄어들 겁니다.\n\n---\n\n가격이요? 무료입니다.\n\nGoogle Labs의 실험적 도구로 제공되고 있어서, Google 계정만 있으면 바로 써볼 수 있어요.\n\nstitch.withgoogle.com 접속하시면 됩니다.\n\n---\n\n솔직히 말씀드리면, 웹디자인의 게임 체인저가 될 것 같아요.\n\n아이디어에서 실제 인터페이스까지 가는 시간이 압도적으로 줄어들거든요.\n\n스타트업이 빠르게 MVP 만들 때, 개발자가 UI 프로토타입 잡을 때, 디자이너가 여러 버전 빠르게 테스트할 때... 다 쓸 수 있습니다.\n\n---\n\n물론 디자이너가 사라지진 않을 거예요.\n\n계산기가 나왔다고 수학자가 없어지지 않은 것처럼, AI 디자인 도구는 디자이너의 역할을 바꿀 뿐입니다.\n\n사용자 리서치, 창의적 방향 설정, 접근성 고려... 이런 건 여전히 사람의 영역이니까요.\n\n---\n\n정리하면 이렇습니다.\n\nGoogle Stitch = 텍스트/이미지로 UI 자동 생성\nStitch MCP = AI 코딩 도구에서 Stitch 직접 호출\nextract_design_context = 디자인 일관성 자동 유지\nFigma 연동 + 코드 생성 = 워크플로우 완성\n\n이제 \"디자인 못해서 못 만든다\"는 핑계는 통하지 않을 것 같아요.\n\n---\n\n여러분은 AI 디자인 도구 써보셨나요? Stitch 한번 테스트해보시고 후기 공유해주세요.\n\n---\n\n[출처]\nGoogle Stitch 공식: stitch.withgoogle.com\nGoogle Developers Blog: https://lnkd.in/gabHndzx\nGoogle I/O 2025 발표: https://lnkd.in/gPtqXgTw\nstitch-mcp GitHub: https://lnkd.in/gBJNYN4M\nGemini CLI Stitch Extension: https://lnkd.in/gswmHf9D",
             "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7419563139156992000?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7419563139156992000%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
             "profile_slogan": "AI 자동화 전문가 | 15개 국가기관 프로젝트 수행 | 구독자 2만+ 커뮤니티 운영 | Quantum Jump Club 대표",
             "images": [
-                "https://media.licdn.com/dms/image/sync/v2/D5627AQHB7-AEd_9ycA/articleshare-shrink_1280_800/B56ZveNz7FKwAU-/0/1770169347125?e=1771380000&v=beta&t=819mBv01jpFAzahDSz-ncNrh0JozrHipziHpPOQtu78"
+                "https://media.licdn.com/dms/image/sync/v2/D5627AQHB7-AEd_9ycA/articleshare-shrink_1280_800/B56ZveNz7FKwAU-/0/1770169347125?e=1771398000&v=beta&t=9v93Cx7zw-lUizQ9tqLb8qVGI4-o3rLlspkiJO9VEIU"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAE9QoNMBe-p8cCQZPX-Z-8bvQ128Ii5y9gQ",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 124,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/1e9e47a5c071b7bed964f4d3d7f587f8.jpg"
+            ]
         },
         {
             "code": "7419514854060797952",
@@ -4351,14 +4471,17 @@
             "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7419514854060797952?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7419514854060797952%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
             "profile_slogan": "Building with AI @ Smoretalk | Control opinions with AI",
             "images": [
-                "https://media.licdn.com/dms/image/v2/D5605AQHOADodJysPkA/videocover-high/B56ZvdpaHnIcBU-/0/1768950179695?e=1771380000&v=beta&t=Dgy-OMiIRmZwYmerkNxPEm_I0kCMSA9O-COo2MfA0Wg"
+                "https://media.licdn.com/dms/image/v2/D5605AQHOADodJysPkA/videocover-high/B56ZvdpaHnIcBU-/0/1768950179695?e=1771398000&v=beta&t=Strcmraf_zoI8nxYqwD0i9T0wqxQSf8cZP10p46mddA"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAACkadIABsYoadkJXuZXMASkhnSFeoK_nVw8",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 123,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/b79fb5baad034e0be2a8f15acd700aff.jpg"
+            ]
         },
         {
             "code": "7419216592317722624",
@@ -4372,11 +4495,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQGOU7FRbeDU1A/feedshare-shrink_2048_1536/B56ZvZaLawH4Ak-/0/1768879077321?e=1772668800&v=beta&t=neNrEbDxFCsplrW2GB2lPYM8YMVkmTe-d9kpBKXJSxQ"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAAfst4QBZ_TBpSZb5m5EitKHc3H5PhUbe5E",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 122,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/2e366c783d4ce53fa39b074c558371d0.jpg"
+            ]
         },
         {
             "code": "7419010986470211584",
@@ -4390,11 +4516,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQEiaDkLBXQk8Q/feedshare-shrink_2048_1536/B56ZvWfLFDK4Ao-/0/1768830056713?e=1772668800&v=beta&t=aXRVpt84238At2iYOY1WsYgClxVJiUGBsKHJM6Obyn4"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAAwBOVMBDI50rE9wyD4tsMaGWkV-85Sqd50",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 121,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/5113f8dc668cb69f36bdf9f5fb59e09a.jpg"
+            ]
         },
         {
             "code": "7418791458029121536",
@@ -4406,7 +4535,7 @@
             "profile_slogan": "데이원컴퍼니 B2B사업부 본부장",
             "images": [],
             "user_link": "https://www.linkedin.com/in/ACoAACe1830BrSXuOX_8zU48ZsSu0K05zEpYfVw",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "text",
             "source": "network",
             "sequence_id": 120,
@@ -4424,11 +4553,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQF-xB7BkwgpzA/feedshare-shrink_2048_1536/B56ZvP1TFQHsAk-/0/1768718414411?e=1772668800&v=beta&t=tTcjnWL2rI6y1c-67nmXG9q0htr2vCdGLsWEdmjMniU"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAADk-HPIB9Dfu21FvR7IWiubg2RoPiyFq_PY",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 119,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/5f265628391fa2d814078a87e9faad45.jpg"
+            ]
         },
         {
             "code": "7418270572356370432",
@@ -4440,7 +4572,7 @@
             "profile_slogan": "F-Lab CEO / ex-NAVER / ex-HYPERCONNECT",
             "images": [],
             "user_link": "https://www.linkedin.com/in/ACoAABlU7G8BKM95Q-Tq8DVkR-0dQnv6OzlMbX4",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "text",
             "source": "network",
             "sequence_id": 118,
@@ -4455,14 +4587,17 @@
             "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7418185693136306176?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7418185693136306176%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
             "profile_slogan": "Venture Builder & Investor | Venture Studio | Fractional Founder | Consultant | Columnist | Coach I Korea-Singapore Connector",
             "images": [
-                "https://media.licdn.com/dms/image/v2/D5605AQE4H5GQdAGLxg/videocover-high/B56ZvKwjpAJEBY-/0/1768633286559?e=1771380000&v=beta&t=FMziLo5HtNJC9u0b37uBX1tb6EpJO_eI_Uqvl3HK010"
+                "https://media.licdn.com/dms/image/v2/D5605AQE4H5GQdAGLxg/videocover-high/B56ZvKwjpAJEBY-/0/1768633286559?e=1771398000&v=beta&t=Mi7jwygkRGWEBa8vgG1MEC8O9NZPNZcx9uUyar0xMCM"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAB3-YQ0BEgh--QzdyJyE8cKdv166lOp802k",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 117,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/c9afef316874a8424ab3efcd591ceba6.jpg"
+            ]
         },
         {
             "code": "7418068289974710272",
@@ -4476,11 +4611,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQEK9_IAlnRgSg/feedshare-shrink_1280/B56ZvGgxX0K8Ac-/0/1768562038590?e=1772668800&v=beta&t=aIzBY6gAJ8woOUJRPclx4qYdf-PKsfkplsek3ATDC8I"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAFYYHsQBOSPHMzU0ESqhTweGdQWNW0cp2OI",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 116,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/2ad2c3ab5b7bebf21ce8faddd9a4e371.jpg"
+            ]
         },
         {
             "code": "7418053191826690048",
@@ -4492,7 +4630,7 @@
             "profile_slogan": "CAIO & Deputy CEO @ Channel Corp | AI × B2B SaaS",
             "images": [],
             "user_link": "https://www.linkedin.com/in/ACoAAA5RhH4BjDv2vMF1Onz2ppvG6jeLmEGo93E",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "text",
             "source": "network",
             "sequence_id": 115,
@@ -4510,11 +4648,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQFQJGMC3NL_Ng/feedshare-shrink_2048_1536/B56ZvF5rkAGsAo-/0/1768551791204?e=1772668800&v=beta&t=T_Al1338J1kAvmSJuqppvmyAfEsevXP2kiblODUCGQk"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAADhcEVQBJOMtD7wMMWcOw9aFJeD_ao2VW0Y",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 114,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/2605685517987252d440e296e3a46b87.jpg"
+            ]
         },
         {
             "code": "7417813623470751745",
@@ -4528,11 +4669,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQH5nkGkmopWNA/feedshare-shrink_800/B56ZvFeLQiHMAg-/0/1768544580838?e=1772668800&v=beta&t=JNTnhWXNqfknhSmsPD3eTEMkJ3naBr-gDP0RrSTrKCE"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAADyakk0BEf4BebI6f2j5oQIfYuzchYt_QW4",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 113,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/bd35c7d47aac1ed606c691a24a8e4fe5.jpg"
+            ]
         },
         {
             "code": "7417714347063562240",
@@ -4544,7 +4688,7 @@
             "profile_slogan": "숙명여대 겸임교수, Firb AI 연구소장",
             "images": [],
             "user_link": "https://www.linkedin.com/in/ACoAAAwBOVMBDI50rE9wyD4tsMaGWkV-85Sqd50",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "text",
             "source": "network",
             "sequence_id": 112,
@@ -4559,14 +4703,17 @@
             "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7417694589320499201?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7417694589320499201%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
             "profile_slogan": "Venture Builder & Investor | Venture Studio | Fractional Founder | Consultant | Columnist | Coach I Korea-Singapore Connector",
             "images": [
-                "https://media.licdn.com/dms/image/v2/D5605AQEH7K5Saz-7uw/videocover-high/B56ZvCU7yfIQBU-/0/1768491827585?e=1771380000&v=beta&t=rxGEi8DJtizVYqmjyc9Yzq8I3EO9VGlMWOgo64ChE8w"
+                "https://media.licdn.com/dms/image/v2/D5605AQEH7K5Saz-7uw/videocover-high/B56ZvCU7yfIQBU-/0/1768491827585?e=1771398000&v=beta&t=XCuA5KS-5wDQ4J4v_nbUJ4PssjzpJtV4IGGOHpl-cyA"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAB3-YQ0BEgh--QzdyJyE8cKdv166lOp802k",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 111,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/11bbf7648e636be982bcb6f36602f265.jpg"
+            ]
         },
         {
             "code": "7417508847441022976",
@@ -4580,11 +4727,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQGiAM-5WgY3vQ/feedshare-shrink_2048_1536/B56ZvBI_avK4Ak-/0/1768471918494?e=1772668800&v=beta&t=x1MesmclGeH-kch1gu9hKwEkHYlaLpCwbaJo-GCBvMg"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAADk-HPIB9Dfu21FvR7IWiubg2RoPiyFq_PY",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 110,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/f3eb266b9671e70a08c142ade148339b.jpg"
+            ]
         },
         {
             "code": "7417486931770499072",
@@ -4598,11 +4748,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQHzEeG_QigMag/feedshare-shrink_2048_1536/B56ZvA1DoMIYAo-/0/1768466693534?e=1772668800&v=beta&t=iJKPpC8PaIpqYA9KdwRj1o60p1wkG1kx-Il4e-SU9mo"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAADPa2KIB5Skb_NdQWdtPBOM7_i1mID-DpPw",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 109,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/30f362f1354f9da6586fa1106efb12db.jpg"
+            ]
         },
         {
             "code": "7417332718822416384",
@@ -4616,11 +4769,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQEPLqQOFkiavQ/feedshare-shrink_2048_1536/B56Zu.ozKwH4Aw-/0/1768429926239?e=1772668800&v=beta&t=8SSvaedA3OHbUHRVqnazuV0a9YrhBDkPLuKm8xg20QM"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAARknekBOFFETpmlSPqmlb2P8ln4iACFaJg",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 108,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/a5a67b5cf7553a6aff7e73f619ff86df.jpg"
+            ]
         },
         {
             "code": "7417148730602201088",
@@ -4631,20 +4787,23 @@
             "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7417148730602201088?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7417148730602201088%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
             "profile_slogan": "Product Engineer @ Toss",
             "images": [
-                "https://media.licdn.com/dms/image/v2/D5610AQGkws5YaxB_TQ/image-shrink_1280/B56Zu8BZMiKMAc-/0/1768386040874?e=1771380000&v=beta&t=2_0j5C-AbIO2uSzEQBVg7Pzw-wogUwv8_L9bN69XCFM"
+                "https://media.licdn.com/dms/image/v2/D5610AQGkws5YaxB_TQ/image-shrink_1280/B56Zu8BZMiKMAc-/0/1768386040874?e=1771398000&v=beta&t=VEpnJqO6ubnVduXQlxs0Tg7VC5jUj33TM55cVXG9yn4"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAB1vdP4Bi740ailUbogk4d8gvBrVCYug48w",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 107,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/bb438c5cb55749f31ad35bb71faeadca.jpg"
+            ]
         },
         {
             "code": "7417077551262535680",
             "username": "Peter Shin",
             "created_at": "2026-01-14 14:38:10",
-            "time_text": "3주",
+            "time_text": "1개월",
             "full_text": "한국 극초기 팀에게 추천하는 BM\n\n• 1위 AX DX 컨설팅\n\n한국의 DX 시장은 25년 기준 21조원이다. 대부분 대기업 SI가 매출을 차지한다.\n미국 VC 관점에서 보면, 한국 DX는 아직 승자가 결정된 시장이 아니라고 본다. 나는, 넷플릭스가 국내 영화업계를 뒤엎었듯이 이 생태계가 외부 플래이어(OpenAi 등)에 의해 빠르게 disrupt 될수도 있다고 본다.\n\n따라서, 오히려 국내 스타트업에게 구조적으로 큰 기회가 남아있는 시장이 바로 DX, AX 시장인데, 글을 읽는 독자가 B2B SaaS를 준비하는 파운더라면, 미국에서의 B2B SaaS 모델을 그대로 가져오지 말고, 컨설팅처럼 시작하는 SaaS로 GTM할것을 추천한다.\n\nAX DX를 특히 더 추천하는 이유:\n\n1️⃣ 한국 DX는 컨설팅이 아니라 프로젝트 산업으로 굴러간다\n미국에서 디지털 전환은 보통 제품으로 수렴한다. 고객이 문제를 겪고 → SaaS가 그 문제를 해결하고 → 반복 매출이 쌓이고 → 기능이 확장되는 방식인데, 내가보니 한국의 DX는 아직도 강하게 프로젝트 산업이다. 이유인즉,\nA. 예산이 일단, 연 단위 로 열리고,\nB. 성공 기준이 사실 없고 구축 완료에 가깝다. (유착이 많은 이유).\nC. 나아가, 시스템은 운영 효율보다 감사 대응에 맞춰 설계되며.\nD. 담당자가 2-3년 단위로 바뀌고,\nE. 기간이 지날수록 같은 계약건과 고정된 일정에 요구사항이 늘어나기 때문에,\n\n이런 구조에서 가장 잘 돈 버는 BM이 엥간한 스타트업 BM으로는 안된다.\n가장 잘하는 플레이어는 컨설팅 + SI + 운영까지 묶어 가져가는 통합 사업자(미국 관점으로 기괴한 형태)이다.\n\n그 결과, 한국 DX의 핵심 모순이 만들어지는데, DX는 분명히 진행되는데, 진짜 소프트웨어 회사가 성장/태어나지 못한다.\n\n2️⃣ 구매구조가 가장 큰 베리어.\n미국 SaaS는 팀 단위 구매 이후 확산이 보통인데, 한국은 매우 매우 매우 복잡하다.\n실사용자는 현업이지만, 예산은 IT/전략/구매/보안이 쥐고 있고, 최종 결정은 임원/위원회가 하는 방식. 그래서 우리 제품이 아무리 좋아도, 나아가 파운더 본인이 프로세스를 경험해보지 못했다면, “레퍼런스 있나요?”, “보안 인증은요?”, “망분리 환경에서 돼요?”, “장애나면 누가 책임져요?”등의 질문에 대해 기술적으로 답변하려 하다 계약이 매듭지어지지 못한다.\n\n사실 이건 기술 문제가 아니라 구매 구조 문제이며 고로 스타트업은 기업내 통과해야 할 관문을 제품화/상품화 하는 것에 기술에 준하는 신경을 써야 한다.\n\n3️⃣ 그럼 스타트업이 한국 DX 시장에서 어떻게 이길까?\n아래 6가지 전략을 추천한다.\n\nA. 컨설팅을 대체하려 하지 말고 컨설팅을 증폭시켜라\n컨설팅/SI을 유통 채널보자. 컨설팅이 설계하고 SI가 구축하고 스타트업이 운영 제품을 끼워 넣는 구조도 가능한거다. 즉, 컨설팅이 반복적으로 팔 수 있는 제품을 제공하는것도 하나의 방법이겠다. 직접 컨설팅하는것도 추천한다.\n\nB. 대기업 전체가 아니라 팀 하나부터\n한국은 Top-down이 강하지만, 그렇다고 처음부터 전사 도입을 노리면 99%가 늦어진다.\n가장 좋은 진입점은 팀 단위. 돈을 쓸 수 있고 성과가 숫자로 보이고 반복 업무가 많은 곳(예: 재무/구매/정산/CS/품질/물류/영업운영)부터 타겟하자.\n\nC. KPI는 정성이 아니라 (핵심)감사 가능한 숫자로 만들자.\n한국에서 임원이 좋아하는 KPI는 효율화가 아니라, 감사와 보고가 가능한 지표다. 처리시간 32% 감소, 인입 대비 해결률 18% 상승, 재작업률 25% 감소, 오류율 0.3% → 0.1%. 이러한 지표가 있어야 추가 영업과 예산이 열린다.\n\nD. 보안/권한/로그를 기능이 아니라 제품의 중심으로 설계\n효율을 따지는 미국 SaaS는 보안을 나중에 붙여도 된다면, 한국은 타이트한 권한 관리, 감사 로그, 데이터 마스킹, 망분리 대응, 온프렘 옵션등이 필수. 이게 있어야 PoC 이후 확산이 가능하다.\n\nE. RFP를 기다리지 말자.\nBottom-up 데이터를 만들고 Top-down 결재를 통과하자는 뜻이다.\n바로 현업에서 쓸수 있는 제품을 만들어 일단 들어가고, 사용률 데이터 확보후 확산을 제안하자.\n\n4️⃣ 수주할수 있는 AX/ DX 프로젝트들의 성격 10가지\n\n1/ 전략/로드맵 컨설팅 (가장 전형적인 DX/AX)\n2/ 업무 프로세스 혁신(BPR) + 시스템 재구축형 DX\n3/ 데이터/클라우드 전환 컨설팅 (DX의 인프라 레이어)\n4/ 시스템 구축형 컨설팅 (SI/통합 구축 중심)\n5/ 운영/개선형 컨설팅 (Run + Optimize)\n6/ 현업 자동화(RPA/Workflow) 중심 DX\n7/ AI PoC → Pilot → 확산형 AX (요즘 가장 많아지는 형태)\n8/ 생성형 AI(LLM) 도입 컨설팅 (GenAI 패키지형)\n9/ AI 거버넌스/보안/컴플라이언스 컨설팅 (한국에서 매우 중요)\n10/ 조직/인재/변화관리 컨설팅\n\n📢 [Outsome Founder Sprint 5기 모집]\n내가 한국 극초기 팀에게 추천하는 건 위 중 3가지인데,\n7번, AI PoC → Pilot → 확산형 AX\n8번 사내 GenAI 패키지 도입\n6번 현업 자동화(Workflow) + AI 결합\n\n성과가 숫자로 남고, 확산이 가능하다는 점 그리고 레거시 베리어가 작다는 공통점이 있다.\n\nFounder Sprint 5기에서는 나와 4주 동안, 팀에 맞는 AX 과제 선정 → 파일럿 설계 → KPI/세일즈 자료까지 같이 만들수 있다.\n\n· 4-7개 팀 규모로 나와 가깝게 4주동안 호흡.\n· 실리콘밸리 현지인 AX 분야 전문 CTO가 멘토로 합류해 기업 기술 자문.\n· 8명의 YC 파운더가 멘토로 참가, 기업당 4명+4명의 멘토가 제공된다.\n· 월+목 나와 매주 모여 극강의 멘토링을 받는다. (매우 맵다)\n· 3월 시작.\n\n“🇺🇸 미국” 댓글 or DM 주시면 직접 연락드리겠다.\n\n____\n\n· 미국 진출시, 왜 B2C 보다 B2B가 먼저인가. - https://lnkd.in/gNRS28A3",
             "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7417077551262535680?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7417077551262535680%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
             "profile_slogan": "Startup Advisor | YC Alum (W20) | Accelerating First-Time Founders",
@@ -4652,11 +4811,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQEU3ZmSBaFh9g/feedshare-shrink_1280/B56Zu7At.lIoAw-/0/1768369089361?e=1772668800&v=beta&t=hs8V6Z21xUv17uQwb71LnhpEqyY1KXSMjIxwEPxMxaw"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAB5PwL4BfEruqb9-_wIl8sZu1bXOYuHUiMo",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 106,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/153a5dc98c80a80a6b44aefa3e831230.jpg"
+            ]
         },
         {
             "code": "7416954710819127296",
@@ -4668,7 +4830,7 @@
             "profile_slogan": "CAIO & Deputy CEO @ Channel Corp | AI × B2B SaaS",
             "images": [],
             "user_link": "https://www.linkedin.com/in/ACoAAA5RhH4BjDv2vMF1Onz2ppvG6jeLmEGo93E",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "text",
             "source": "network",
             "sequence_id": 105,
@@ -4686,11 +4848,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQGOkVUvv8i4Lw/feedshare-shrink_2048_1536/B56ZuyVgmUHEAk-/0/1768223541865?e=1772668800&v=beta&t=I2XA0Y6aJqAEle-r44F20M5BiwjAgDsUOF-MJnrpGZQ"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAADk-HPIB9Dfu21FvR7IWiubg2RoPiyFq_PY",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 104,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/bbc6a6484c79668c7c069597ce8b4ceb.jpg"
+            ]
         },
         {
             "code": "7416288711971164160",
@@ -4704,11 +4869,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQHTFCt3MMBayQ/feedshare-shrink_2048_1536/B56ZuvzR_mG4Aw-/0/1768181015313?e=1772668800&v=beta&t=jcyyzdkIOz-GzYXzPjht8_e7nsLHjskfhWQB4_q3OOE"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAACZRjioBYRmFe3xTvcuh8BqTRS137FC8JUw",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 103,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/e11cf4daf427058874bc85f1753f6537.jpg"
+            ]
         },
         {
             "code": "7415961577650012160",
@@ -4722,11 +4890,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQHPbFdtdkC8Tg/feedshare-shrink_2048_1536/B56ZurJwEWH0Aw-/0/1768103021026?e=1772668800&v=beta&t=S7FjdcM5I6urIrFaowu3--zNAUj-hN-a8QvaAspEQmA"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAADqhdRMBEYEyi6mSOb3MzyVI7_3Y8JhevS8",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 102,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/2dc0ddc69233b3bd8d881ffdb8621b9a.jpg"
+            ]
         },
         {
             "code": "7415878861919379456",
@@ -4740,11 +4911,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQF0d6A5y-gBFA/feedshare-shrink_1280/B56ZuoH.gEIYAc-/0/1768052222349?e=1772668800&v=beta&t=Z6gyw1957-XtP6T9rvI3ZCi5nUX7X2wV0xLfDAFp9JE"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAACY7KJQBDtSTk6IuIwZY6ntBGJx1fCYwsYI",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 101,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/3dd76c92926d9d7dd2a08bd3bb142461.jpg"
+            ]
         },
         {
             "code": "7415376843815608320",
@@ -4756,7 +4930,7 @@
             "profile_slogan": "Founder & CEO of Gongysd | Template Master, Market Leader",
             "images": [],
             "user_link": "https://www.linkedin.com/in/ACoAAFV1PAYBs-EO8gBw4VZp4Ebpq35BCTb51T4",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "text",
             "source": "network",
             "sequence_id": 100,
@@ -4774,11 +4948,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQGX82zdCwUxuw/feedshare-shrink_2048_1536/B56ZudzOCvHgAw-/0/1767879010928?e=1772668800&v=beta&t=3I1UunGoj42RNrIoOYYBLtHT0_21jPWJznSIvBIzzyU"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAAwBOVMBDI50rE9wyD4tsMaGWkV-85Sqd50",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 99,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/abb04161adab2b92ed46f4aae86b0d34.jpg"
+            ]
         },
         {
             "code": "7414605299321495552",
@@ -4792,11 +4969,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQH1JFzisi_iOA/feedshare-shrink_2048_1536/B56ZuX4NmuHgAw-/0/1767779658852?e=1772668800&v=beta&t=Xzg8thhcrjR8hEjpgQ2S_QHKmQPFOc9Eq61LkVkyuQI"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAACZfqCcB7Tmya601YQuGRqiAzlUKO_u-pro",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 98,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/3c3282168977527e3a29312e541756e1.jpg"
+            ]
         },
         {
             "code": "7414417993180303360",
@@ -4810,11 +4990,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQGpcvVboh_qyg/feedshare-shrink_2048_1536/B56ZuTdrfpGsAw-/0/1767705591054?e=1772668800&v=beta&t=yYnGzjjxZ5hmlAZ-BmHzN6AC1q0B4Ie6_5eAaN8X7Hk"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAA5RhH4BjDv2vMF1Onz2ppvG6jeLmEGo93E",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 97,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/84dc42c933f9ee5ec444c5c9328b6d1f.jpg"
+            ]
         },
         {
             "code": "7414175957487562752",
@@ -4828,11 +5011,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQFy16kZLNDQQQ/feedshare-shrink_2048_1536/B56ZuRxvjNJMAw-/0/1767677295439?e=1772668800&v=beta&t=ICNInXBNRz-4hyoVsIAXGX6EIFm1FhdnEtVfqKX3CYc"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAADhcEVQBJOMtD7wMMWcOw9aFJeD_ao2VW0Y",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 96,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/83c60297a46649346c852c39bb6562d1.jpg"
+            ]
         },
         {
             "code": "7414070699071442944",
@@ -4843,14 +5029,17 @@
             "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7414070699071442944?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7414070699071442944%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
             "profile_slogan": "Building with AI @ Smoretalk | Control opinions with AI",
             "images": [
-                "https://media.licdn.com/dms/image/sync/v2/D4D27AQHQqq1BtvGWvw/articleshare-shrink_1280_800/B4DZxJ.9ITJ8AU-/0/1770767766386?e=1771380000&v=beta&t=IwE9ksSxO6m95DEq8ZQZdfsgAUxAeaCgfIOwhpY5XB4"
+                "https://media.licdn.com/dms/image/sync/v2/D4D27AQHQqq1BtvGWvw/articleshare-shrink_1280_800/B4DZxJ.9ITJ8AU-/0/1770767766386?e=1771398000&v=beta&t=DXWf1VumrKCH7ey5Z16R1He4r3p_9NgDGFhljAlX6NE"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAACkadIABsYoadkJXuZXMASkhnSFeoK_nVw8",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 95,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/7e170d25b5441a26f80d06874f88c9f2.jpg"
+            ]
         },
         {
             "code": "7413907038138904577",
@@ -4864,11 +5053,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQH8vDg9n_NJ2g/feedshare-shrink_2048_1536/B56ZuN9KhGGsAw-/0/1767613180896?e=1772668800&v=beta&t=l5ZYz-1U-H3CD0h_5428zGkuKgywzDWi3AcVnOyZ1Xg"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAAfst4QBZ_TBpSZb5m5EitKHc3H5PhUbe5E",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 94,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/bdea57f8d5ffa6b7dc3b059203fe50f4.jpg"
+            ]
         },
         {
             "code": "7413738759403298816",
@@ -4882,11 +5074,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQE6iwFN5_7IJA/feedshare-shrink_2048_1536/B56ZuLkFIhHgAw-/0/1767573057328?e=1772668800&v=beta&t=8ijbm3EDbdVyNdx19ajeDNpcRpCqZfdHUPZpbO8r5ps"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAADosSpABPU4--68Ki5nk1NUfCtpau6AMoJs",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 93,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/2789bd18a32f4650debe4fe7d6bd23ca.jpg"
+            ]
         },
         {
             "code": "7413704535048908801",
@@ -4898,7 +5093,7 @@
             "profile_slogan": "Claude Code for all of your work",
             "images": [],
             "user_link": "https://www.linkedin.com/in/ACoAACY7KJQBDtSTk6IuIwZY6ntBGJx1fCYwsYI",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "text",
             "source": "network",
             "sequence_id": 92,
@@ -4916,11 +5111,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQEh5b7kOjGL5w/feedshare-shrink_2048_1536/B56Zt6VdXLLAAw-/0/1767284007659?e=1772668800&v=beta&t=mG9oUlGDr3rkLkyEnBUA-eITB8PrZgrPqp1ZLkL3Ddw"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAAyZz50BiI7Jj72d9AZko-Nxit9QS9xrrpk",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 91,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/12b6314c2338677c56d09acb2f823c37.jpg"
+            ]
         },
         {
             "code": "7412104574406209536",
@@ -4934,11 +5132,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQG3A5GeFrHcqg/feedshare-shrink_2048_1536/B56Zt0V0TXHAA0-/0/1767183439979?e=1772668800&v=beta&t=FsZY-u5ZVWMcSZINGFF7_UdICvpcuUA76yT3dHlx5AE"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAB5PwL4BfEruqb9-_wIl8sZu1bXOYuHUiMo",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 90,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/408f279d023c7e9226fb6da8d02a6e4b.jpg"
+            ]
         },
         {
             "code": "7411922908916297728",
@@ -4952,11 +5153,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQHfTVRWD99q5A/feedshare-shrink_2048_1536/B56Ztxwh2HKcAw-/0/1767140121417?e=1772668800&v=beta&t=8YE6c-EtKMbuzOV_DUoNUhmLFeiJBk3RtFvL_eOxxH0"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAACY7KJQBDtSTk6IuIwZY6ntBGJx1fCYwsYI",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 89,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/273515c875532f78bff108d8639b8640.jpg"
+            ]
         },
         {
             "code": "7411896370925592576",
@@ -4970,11 +5174,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQF7CVYPESMV2g/feedshare-shrink_2048_1536/B56ZtX6NHeKgAw-/0/1766706435487?e=1772668800&v=beta&t=BalekjRjpqnNLBBCNcefmidnQ-uqbcW-Y9uJVeLAoWI"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAARknekBOFFETpmlSPqmlb2P8ln4iACFaJg",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 88,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/0029d7d1b7ea2b190710945e0717018c.jpg"
+            ]
         },
         {
             "code": "7411399227337150464",
@@ -4988,11 +5195,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQFbNMwPTfdyOQ/feedshare-shrink_2048_1536/B56ZtqUNycG0Aw-/0/1767015268836?e=1772668800&v=beta&t=-bQ9WsCvwXBiJXwOPsd8R8ColSI5_JLqq0zV7H6kjUo"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAADosSpABPU4--68Ki5nk1NUfCtpau6AMoJs",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 87,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/61b45f4fef14c8df202614dd80b5fdd9.jpg"
+            ]
         },
         {
             "code": "7411338754214420480",
@@ -5006,11 +5216,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQES4G_1g5KWIg/feedshare-shrink_2048_1536/B56ZtpdUpLJAA0-/0/1767000854115?e=1772668800&v=beta&t=8rdzCgtFZ4rIuDroUOqpdW9sYFDPdWL0VlwSnCFvqN0"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAA5RhH4BjDv2vMF1Onz2ppvG6jeLmEGo93E",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 86,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/ff16dd52460ce35be3b0a8d810931966.jpg"
+            ]
         },
         {
             "code": "7411330156092616704",
@@ -5021,14 +5234,17 @@
             "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7411330156092616704?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7411330156092616704%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
             "profile_slogan": "팔로워 287명",
             "images": [
-                "https://media.licdn.com/dms/image/v2/D561FAQHs1Fx0YAh5RA/feedshare-document-cover-images_480/B56Zta_AXbG0BM-/0/1766758028558?e=1771380000&v=beta&t=UHzOjegWz6Tl_ii6PSEW0JJLA1ZiDo8XjT3CDbbL-ec"
+                "https://media.licdn.com/dms/image/v2/D561FAQHs1Fx0YAh5RA/feedshare-document-cover-images_480/B56Zta_AXbG0BM-/0/1766758028558?e=1771398000&v=beta&t=8DigXNEPSBfe1e-wz4jcbde5yOL1vwlnLfFOF6xuwMc"
             ],
             "user_link": "https://www.linkedin.com/company/%ED%8B%B0%ED%83%80%EC%9E%84%EC%A6%88/",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 85,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/b90c6e8413842eb5c83d22912fcb1939.jpg"
+            ]
         },
         {
             "code": "7411303033344692224",
@@ -5040,7 +5256,7 @@
             "profile_slogan": "AI 크리에이터 조쉬입니다. ex-SKT 프로덕트 디자이너",
             "images": [],
             "user_link": "https://www.linkedin.com/in/ACoAAAfst4QBZ_TBpSZb5m5EitKHc3H5PhUbe5E",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "text",
             "source": "network",
             "sequence_id": 84,
@@ -5058,11 +5274,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQGwoY824AtI9Q/feedshare-shrink_1280/B56ZtoM57OHkAs-/0/1766979772516?e=1772668800&v=beta&t=kr15LsBkoo-bdHzRszG-yz5jSKSKdo0AEXDtzYKhv0o"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAAyZz50BiI7Jj72d9AZko-Nxit9QS9xrrpk",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 83,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/74a463eeddc95b221408405450ad08e0.jpg"
+            ]
         },
         {
             "code": "7411209406790414336",
@@ -5073,14 +5292,17 @@
             "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7411209406790414336?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7411209406790414336%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
             "profile_slogan": "팔로워 6천명",
             "images": [
-                "https://media.licdn.com/dms/image/v2/D5610AQFweXTyyi2dlQ/image-shrink_1280/B56ZtnnrvKG4AQ-/0/1766970016314?e=1771380000&v=beta&t=3EjNSrNAZm0YIm1G1eQ4ykQWw6LiXzhYKU1pzjNua1I"
+                "https://media.licdn.com/dms/image/v2/D5610AQFweXTyyi2dlQ/image-shrink_1280/B56ZtnnrvKG4AQ-/0/1766970016314?e=1771398000&v=beta&t=FKnabFFEuhaFEsovujHplCp3EA1E0jCto6C3WbuzAGw"
             ],
             "user_link": "https://www.linkedin.com/company/yozm/",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 82,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/a47a7b26eaa6432d2f8466d174408c1e.jpg"
+            ]
         },
         {
             "code": "7411204617524391938",
@@ -5092,7 +5314,7 @@
             "profile_slogan": "신사업 전략의 빈틈을 드러내는 AI ‘draftie.pro’",
             "images": [],
             "user_link": "https://www.linkedin.com/in/ACoAABG8blgBec5lMaOFikhIy_Gt3CgGhjTWVOo",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "text",
             "source": "network",
             "sequence_id": 81,
@@ -5110,11 +5332,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQHBJhZu7yj6RQ/feedshare-shrink_2048_1536/B56Ztlc3mrGsA0-/0/1766933625991?e=1772668800&v=beta&t=GZGtXuwqyOgR3SgroNc26AFVzxL3kT4Xknq_PEoDu2M"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAACY7KJQBDtSTk6IuIwZY6ntBGJx1fCYwsYI",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 80,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/6cc091ab1019fa303e7aa796820d3caa.jpg"
+            ]
         },
         {
             "code": "7410992158503272448",
@@ -5128,11 +5353,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQGb9S4dSi4tkQ/feedshare-shrink_1280/B56ZtkiF7yGwAw-/0/1766918218241?e=1772668800&v=beta&t=0Uq4dVsaAw9crLBHNBPzLiLolhuuFcRV_4NV9ln2gMg"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAACC2D84BJpzxT2C5mrDCykqwVjBnKqPntLo",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 79,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/9fb7c5ff89df60f6d0be7c053c0b64f3.jpg"
+            ]
         },
         {
             "code": "7410801664141656065",
@@ -5143,14 +5371,17 @@
             "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7410801664141656065?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7410801664141656065%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
             "profile_slogan": "팔로워 287명",
             "images": [
-                "https://media.licdn.com/dms/image/v2/D561FAQGDpe4U-dvrMA/feedshare-document-cover-images_480/B56Zta_Md3GsBM-/0/1766758077362?e=1771380000&v=beta&t=pmXQ-JDi5tP9g_YsOJ9bdtPa6lK8JLvSH-wbvKkGllQ"
+                "https://media.licdn.com/dms/image/v2/D561FAQGDpe4U-dvrMA/feedshare-document-cover-images_480/B56Zta_Md3GsBM-/0/1766758077362?e=1771398000&v=beta&t=924RKc_j5YjPdS43vB9_RZjK7qYgmMGgj8AWuWsY2JY"
             ],
             "user_link": "https://www.linkedin.com/company/%ED%8B%B0%ED%83%80%EC%9E%84%EC%A6%88/",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 78,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/cd4613094a754dab225a71e3320ae635.jpg"
+            ]
         },
         {
             "code": "7410683563362181120",
@@ -5164,11 +5395,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQFmZXhLYHN0gA/feedshare-shrink_1280/B56ZtgJbHmLAAs-/0/1766844644333?e=1772668800&v=beta&t=24R1dXxjOHnaiy-K3mAsylWR2WSwQL6_05JfLAOiUyU"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAB5PwL4BfEruqb9-_wIl8sZu1bXOYuHUiMo",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 77,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/4f4d8b76703d44c3abed558102715449.jpg"
+            ]
         },
         {
             "code": "7410446824572026880",
@@ -5182,11 +5416,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQH84Su49iIGSw/feedshare-shrink_2048_1536/B56ZtTDs9nJ8Aw-/0/1766625038758?e=1772668800&v=beta&t=PKwpfQKXoEt-AOtfK0bDmBSXMybsfxhMCj4p9xwa-t4"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAARknekBOFFETpmlSPqmlb2P8ln4iACFaJg",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 76,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/fa0192174f35896f3a4a5dd041cda47d.jpg"
+            ]
         },
         {
             "code": "7410446819371081728",
@@ -5200,11 +5437,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQH4hxNMpK5coA/feedshare-shrink_2048_1536/B56ZtbS1XbJMAw-/0/1766763223828?e=1772668800&v=beta&t=w1vUrgFdGvBr2NRPWPaVm8lrJOPPewOgLzSqwuQSInk"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAACY7KJQBDtSTk6IuIwZY6ntBGJx1fCYwsYI",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 75,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/eddfcfda2bbf8eb5d09f65a57053349a.jpg"
+            ]
         },
         {
             "code": "7410439276661813248",
@@ -5215,14 +5455,17 @@
             "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7410439276661813248?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7410439276661813248%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
             "profile_slogan": "팔로워 287명",
             "images": [
-                "https://media.licdn.com/dms/image/v2/D561FAQEaiAsnG5Qj7w/feedshare-document-cover-images_480/B56Zta.YS8JcBM-/0/1766757864553?e=1771380000&v=beta&t=seJHEb2yZ1QEj30ncY_o6do-7QGFHhLJCEnBNEWgOLc"
+                "https://media.licdn.com/dms/image/v2/D561FAQEaiAsnG5Qj7w/feedshare-document-cover-images_480/B56Zta.YS8JcBM-/0/1766757864553?e=1771398000&v=beta&t=pdmBSqr7rLwkMK2K0u9d5yr1uhQh0sFGiowfWDKWJT8"
             ],
             "user_link": "https://www.linkedin.com/company/%ED%8B%B0%ED%83%80%EC%9E%84%EC%A6%88/",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 74,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/383c40993544ab6b894e46884924d024.jpg"
+            ]
         },
         {
             "code": "7410431723471187969",
@@ -5234,7 +5477,7 @@
             "profile_slogan": "CAIO & Deputy CEO @ Channel Corp | AI × B2B SaaS",
             "images": [],
             "user_link": "https://www.linkedin.com/in/ACoAAA5RhH4BjDv2vMF1Onz2ppvG6jeLmEGo93E",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "text",
             "source": "network",
             "sequence_id": 73,
@@ -5249,14 +5492,17 @@
             "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7409113677884194817?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7409113677884194817%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
             "profile_slogan": "숙명여대 겸임교수, Firb AI 연구소장",
             "images": [
-                "https://media.licdn.com/dms/image/sync/v2/D5627AQHIvv043s_qbQ/articleshare-shrink_1280_800/B56ZtHAFzcKEAU-/0/1766422765395?e=1771380000&v=beta&t=b0TpG3R8_PCsGqXod_5CFRxE7LFZkp2-bdtvvow8hn8"
+                "https://media.licdn.com/dms/image/sync/v2/D5627AQHIvv043s_qbQ/articleshare-shrink_1280_800/B56ZtHAFzcKEAU-/0/1766422765395?e=1771398000&v=beta&t=E0HkppDu9lEruY-Wo3KWJ6_4co53Cs2mWmdm1GSELiI"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAAwBOVMBDI50rE9wyD4tsMaGWkV-85Sqd50",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 72,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/2070d9a2e6f9b7f4aadb8701d0471424.jpg"
+            ]
         },
         {
             "code": "7409057669149396992",
@@ -5267,14 +5513,17 @@
             "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7409057669149396992?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7409057669149396992%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
             "profile_slogan": "팔로워 287명",
             "images": [
-                "https://media.licdn.com/dms/image/v2/D561FAQFWaGiOOZqCjA/feedshare-document-cover-images_480/B56ZtJCit4IABM-/0/1766456965056?e=1771380000&v=beta&t=G_UnNiHViAWpQNkkt7JTWsC3HGXSjyjEU8ssJdkNdsY"
+                "https://media.licdn.com/dms/image/v2/D561FAQFWaGiOOZqCjA/feedshare-document-cover-images_480/B56ZtJCit4IABM-/0/1766456965056?e=1771398000&v=beta&t=274CHFqoTDgiBerkkgfyyVP4qQgPqRF7xBINEPYTqtE"
             ],
             "user_link": "https://www.linkedin.com/company/%ED%8B%B0%ED%83%80%EC%9E%84%EC%A6%88/",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 71,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/d3b07b0dd7aa5f1750950a2ba834c923.jpg"
+            ]
         },
         {
             "code": "7408959519537426432",
@@ -5286,7 +5535,7 @@
             "profile_slogan": "CAIO & Deputy CEO @ Channel Corp | AI × B2B SaaS",
             "images": [],
             "user_link": "https://www.linkedin.com/in/ACoAAA5RhH4BjDv2vMF1Onz2ppvG6jeLmEGo93E",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "text",
             "source": "network",
             "sequence_id": 70,
@@ -5302,7 +5551,7 @@
             "profile_slogan": "CAIO & Deputy CEO @ Channel Corp | AI × B2B SaaS",
             "images": [],
             "user_link": "https://www.linkedin.com/in/ACoAAA5RhH4BjDv2vMF1Onz2ppvG6jeLmEGo93E",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "text",
             "source": "network",
             "sequence_id": 69,
@@ -5320,11 +5569,14 @@
                 "https://media.licdn.com/dms/image/v2/D5612AQEQzg6Z1uvbKg/article-cover_image-shrink_600_2000/B56Zs9xSw6IAAQ-/0/1766267892852?e=1772668800&v=beta&t=Mzf5PGTI_VeR_KXL6PHX4XJ_OyUux0JseklAMn2euz4"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAFt2rQcBjVxZv3E_NY1oLQYRn714_JoFQ3E",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 68,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/828bf324fb4c57772fd1d07e3e732076.jpg"
+            ]
         },
         {
             "code": "7407951903344685056",
@@ -5336,7 +5588,7 @@
             "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
             "images": [],
             "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "text",
             "source": "network",
             "sequence_id": 67,
@@ -5354,11 +5606,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQHQFKb7RbNauw/feedshare-shrink_2048_1536/B56ZsgFraxIcAw-/0/1765769920710?e=1772668800&v=beta&t=cNDBnnuJcZXaj4txRNwZUpclWsodf9kRKlH1yNaRiFY"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAAME3t8BpGdLygm7abbadbpG00aKZB48UXc",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 66,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/bc724ba8237e4836d677e2f1dc08c2e0.jpg"
+            ]
         },
         {
             "code": "7407636477167296512",
@@ -5370,7 +5625,7 @@
             "profile_slogan": "Talent Development / Career Coach",
             "images": [],
             "user_link": "https://www.linkedin.com/in/ACoAADjF3z0BDYpzEXDWpYaTZHicIeWb5-VMKEk",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "text",
             "source": "network",
             "sequence_id": 65,
@@ -5388,11 +5643,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQHPLN4VXyExZQ/feedshare-shrink_2048_1536/B56Zs0Nd9iHAAw-/0/1766107505393?e=1772668800&v=beta&t=-yccALbny5PfimbHKMLNlJ-5MERkwI6YabDU-UjOLvQ"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAAPQ7JYBf83Z52UuxdR6_j9wcyN25DY5p0E",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 64,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/ab26c30746c16621671eafa350f5b1a5.jpg"
+            ]
         },
         {
             "code": "7407438752777678848",
@@ -5403,14 +5661,17 @@
             "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7407438752777678848?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7407438752777678848%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
             "profile_slogan": "AI, Digital Change, HR 및 변화관리(Change Management) 전문성을 바탕으로, 조직이 AI를 실질적으로 도입하고 활용하도록 돕는 AX(AI Transformation) 전략가로 활동 중임. 단순히 기술 도입을 넘어, transforamation 경험과 Design Thinking with AI& Agile 방법론을 통해 구성원이 AI로 일하는 방식을 설계함",
             "images": [
-                "https://media.licdn.com/dms/image/v2/D561FAQHifyh3977Kzw/feedshare-document-cover-images_480/B56Zsx_.oIIEBA-/0/1766070416773?e=1771380000&v=beta&t=tQKJ2oNh1MmuP6Uaz56KdMQ3JkywtDO6taFXlwqFdeE"
+                "https://media.licdn.com/dms/image/v2/D561FAQHifyh3977Kzw/feedshare-document-cover-images_480/B56Zsx_.oIIEBA-/0/1766070416773?e=1771398000&v=beta&t=0Utli5UNGi-ekjGlXNIYZ7xxcyjbeJUaUHnq6IoRfs8"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAADk-HPIB9Dfu21FvR7IWiubg2RoPiyFq_PY",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 63,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/fd07f7f783714a9c1b9c1c240a9f1539.jpg"
+            ]
         },
         {
             "code": "7407327158521647104",
@@ -5424,11 +5685,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQGfIs3VF99BtQ/feedshare-shrink_1280/B56ZswcyXYHYAs-/0/1766044414569?e=1772668800&v=beta&t=1ieL15LkCZwNYgam7AbsdKYbHU9NkqW5qhnCjOU1-rI"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAACCxgqEB0zwj6YSZszMsbI8S_KhPNsMvUPo",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 62,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/dafaa7b08942ba56f8349698c5ba0e30.jpg"
+            ]
         },
         {
             "code": "7407189808428724226",
@@ -5442,11 +5706,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQECBvwVu81Fdg/feedshare-shrink_1280/B56Zsuf4UhIYA0-/0/1766011668508?e=1772668800&v=beta&t=PZBPHKQ7bLRayo9taX2-U4Gj9DnzsiE06lLSVS4_7Do"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAARknekBOFFETpmlSPqmlb2P8ln4iACFaJg",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 61,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/c17b770db30991f670780d8aa119acc1.jpg"
+            ]
         },
         {
             "code": "7406689415416356864",
@@ -5460,11 +5727,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQEK1OcDmugxWA/feedshare-shrink_2048_1536/B56ZsnYxZNI0A0-/0/1765892365445?e=1772668800&v=beta&t=VZJ-VU2110iXM5QlRq4AMrcC3mAWlV6FHjHj1O2v_6U"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAAwBOVMBDI50rE9wyD4tsMaGWkV-85Sqd50",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 60,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/2d6f48bf8157f64433c78f8e34d00cfe.jpg"
+            ]
         },
         {
             "code": "7406611878879281152",
@@ -5478,11 +5748,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQHH2xziFKVasw/feedshare-shrink_2048_1536/B56ZsmSQGDIYAw-/0/1765873878578?e=1772668800&v=beta&t=ib0WMWL-kkE9k2j27t3_wlO64vx0t5XWy-hyARY38fE"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAAwBOVMBDI50rE9wyD4tsMaGWkV-85Sqd50",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 59,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/ca808af141da59b041a99dcbe3ff27da.jpg"
+            ]
         },
         {
             "code": "7406575376073687040",
@@ -5496,11 +5769,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQGp_8tD0YasEA/feedshare-shrink_2048_1536/B56ZslxCsEJsAw-/0/1765865172408?e=1772668800&v=beta&t=nVTg02H1Ib9ngoV_7UrUtK1Fbk0jxDp-4TflvYzGmzY"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAABIHJOUBv16FmGBnhJ9rBCiQ2qA0HNtYrao",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 58,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/cf555bc3b65101d0448815e778dceb77.jpg"
+            ]
         },
         {
             "code": "7406236411500081152",
@@ -5514,11 +5790,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQGtnzqqHWbyaA/feedshare-shrink_1280/B56Zsg8xYpG8As-/0/1765784360934?e=1772668800&v=beta&t=e9M4lCjomy9m8SoZLxpDF_YBPplHZJiLZSN5D-a78v4"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAAwBOVMBDI50rE9wyD4tsMaGWkV-85Sqd50",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 57,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/72dc486463d90c330d0910b9b79d62ef.jpg"
+            ]
         },
         {
             "code": "7406137139891134464",
@@ -5529,14 +5808,17 @@
             "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7406137139891134464?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7406137139891134464%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
             "profile_slogan": "GEO 솔루션 AINNECT Founder & CEO | 베스트셀러『제로클릭』(길벗) 저자 | AaronHouse Labs 대표 | 제로투원 신규서비스 5회 런칭 | CJ E&M · NEXON KOREA · LINE PLUS · EST / E: mablet@naver.com",
             "images": [
-                "https://media.licdn.com/dms/image/v2/D561FAQEVP1Wwz8xAbQ/feedshare-document-cover-images_480/B56ZsfgimaKEBA-/0/1765760184310?e=1771380000&v=beta&t=6zV64lBsARgAGQuBgYuzRc7OKlg_dsEJ38abvOcxhgA"
+                "https://media.licdn.com/dms/image/v2/D561FAQEVP1Wwz8xAbQ/feedshare-document-cover-images_480/B56ZsfgimaKEBA-/0/1765760184310?e=1771398000&v=beta&t=nYN8QoHf-Q54ULnj2MWLhTYFECkJxVfRFC9kZQPSc20"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAAME3t8BpGdLygm7abbadbpG00aKZB48UXc",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 56,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/d4bba7ae2b43079517207149caaa775e.jpg"
+            ]
         },
         {
             "code": "7406098165495521280",
@@ -5547,14 +5829,17 @@
             "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7406098165495521280?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7406098165495521280%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
             "profile_slogan": "Venture Builder & Investor | Venture Studio | Fractional Founder | Consultant | Columnist | Coach I Korea-Singapore Connector",
             "images": [
-                "https://media.licdn.com/dms/image/v2/D5605AQHogAjlmmsG2w/videocover-high/B56ZsdGCi5HYBY-/0/1765719682477?e=1771380000&v=beta&t=HbutaqzcF_7yQhyJ0s29qqRDrMjXhCOUqMepeXOLtuA"
+                "https://media.licdn.com/dms/image/v2/D5605AQHogAjlmmsG2w/videocover-high/B56ZsdGCi5HYBY-/0/1765719682477?e=1771398000&v=beta&t=MUZk2V8dlmrtEVodVxQ49QSotRtUDYOmQutLkkmW6sg"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAB3-YQ0BEgh--QzdyJyE8cKdv166lOp802k",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 55,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/8cf6ddb63e551c5af810424bb3ff65e5.jpg"
+            ]
         },
         {
             "code": "7405983059860160512",
@@ -5568,11 +5853,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQECNgRinb4H9w/feedshare-shrink_2048_1536/B56ZsdWU3DKQAw-/0/1765723955734?e=1772668800&v=beta&t=gGDvEqik1tsLMQKv-a8iJ7-NqL0DSFoQjgxzlsN3qu4"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAADosSpABPU4--68Ki5nk1NUfCtpau6AMoJs",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 54,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/87d6e65ac5e3c22a694cde33f11712f2.jpg"
+            ]
         },
         {
             "code": "7405773526021963777",
@@ -5584,7 +5872,7 @@
             "profile_slogan": "Product Engineer | 콘텐츠 크리에이터 | 부트캠프 운영",
             "images": [],
             "user_link": "https://www.linkedin.com/in/ACoAACOysKUBduTk_VevCKhgj6zs9sW5eRn-LRs",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "text",
             "source": "network",
             "sequence_id": 53,
@@ -5600,7 +5888,7 @@
             "profile_slogan": "GEO 솔루션 AINNECT Founder & CEO | 베스트셀러『제로클릭』(길벗) 저자 | AaronHouse Labs 대표 | 제로투원 신규서비스 5회 런칭 | CJ E&M · NEXON KOREA · LINE PLUS · EST / E: mablet@naver.com",
             "images": [],
             "user_link": "https://www.linkedin.com/in/ACoAAAME3t8BpGdLygm7abbadbpG00aKZB48UXc",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "text",
             "source": "network",
             "sequence_id": 52,
@@ -5618,11 +5906,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQFGZf4X6ue_YA/feedshare-shrink_2048_1536/B56ZsRc8v0IkAw-/0/1765524361312?e=1772668800&v=beta&t=-MeipdqbB8kWVwOwxbED7m9MX7_H26IvF_QlsgQSDQ4"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAAwBOVMBDI50rE9wyD4tsMaGWkV-85Sqd50",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 51,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/bded030bfa28002dc9eb074936ad62e8.jpg"
+            ]
         },
         {
             "code": "7405142923396218880",
@@ -5636,11 +5927,14 @@
                 "https://media.licdn.com/dms/image/v2/D4E22AQHrAABH883opg/feedshare-shrink_1280/B4EZsRaPwcHoAs-/0/1765523652738?e=1772668800&v=beta&t=0qQd1Pc6K2KcKmUva2FvEFSvNw8VRZbVrOUuFMcHqs0"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAAAAE3gBJ4HpQRxojwW0G1kgDHIL3kMAfN8",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 50,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/2b34c530f95c394804b9236075177eba.jpg"
+            ]
         },
         {
             "code": "7404691043209760768",
@@ -5654,11 +5948,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQH9ocWo-xKfnw/feedshare-shrink_2048_1536/B56ZsK_Q5NIkA0-/0/1765415916192?e=1772668800&v=beta&t=-5YhvWqY9XW9mTMulaERVvcLaLMpur4A_cazQXuxxcg"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAACOcXvsBa0ZJB06mKX0Qev6doqi4y5bW_W0",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 49,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/ff3a01c87287c051e9183db31b6cf781.jpg"
+            ]
         },
         {
             "code": "7403920649229926400",
@@ -5672,11 +5969,14 @@
                 "https://media.licdn.com/dms/image/v2/D4E22AQFH0oxr7T-5EQ/feedshare-shrink_1280/B4EZsACmCKHUAc-/0/1765232239096?e=1772668800&v=beta&t=tGx0iDs3W-Whrv5vAK7cV8zAmx1T6mfm4qMq-ep7elU"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAFt2rQcBjVxZv3E_NY1oLQYRn714_JoFQ3E",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 48,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/9a65776af0c6094ad19b65b86097b00f.jpg"
+            ]
         },
         {
             "code": "7403907026885730305",
@@ -5688,7 +5988,7 @@
             "profile_slogan": "We are hiring!",
             "images": [],
             "user_link": "https://www.linkedin.com/in/ACoAAB-dC0QBuWPVCKNtNof7O1YX9Cobb0WFgXs",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "text",
             "source": "network",
             "sequence_id": 47,
@@ -5706,11 +6006,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQFJgavtlk9EnA/feedshare-shrink_1280/B56Zr8Bv9NHIAc-/0/1765164908794?e=1772668800&v=beta&t=DRXn3tLFq3Bd-Fk-nV9JLEfqh16zceqip_iY0lFDRkQ"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAD9O2zgBLZsZZofcYY_6029h13lI48hT1hc",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 46,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/1cf13ff53a112de330bdb2e850a76884.jpg"
+            ]
         },
         {
             "code": "7402689128598806528",
@@ -5722,7 +6025,7 @@
             "profile_slogan": "숙명여대 겸임교수, Firb AI 연구소장",
             "images": [],
             "user_link": "https://www.linkedin.com/in/ACoAAAwBOVMBDI50rE9wyD4tsMaGWkV-85Sqd50",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "text",
             "source": "network",
             "sequence_id": 45,
@@ -5740,11 +6043,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQEnzA6KfpnLkg/feedshare-shrink_2048_1536/B56ZrizmDoLwAk-/0/1764741767722?e=1772668800&v=beta&t=62bov3WnCn5MHLQEonxFyNqHTnOiO8gdBTj5cgGoBdQ"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAAwBOVMBDI50rE9wyD4tsMaGWkV-85Sqd50",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 44,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/f952bcbab4ccb8216e1d61a52092afcb.jpg"
+            ]
         },
         {
             "code": "7401626875682570241",
@@ -5758,11 +6064,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQHS3uob0HQIvQ/feedshare-shrink_1280/B56Zrfca78LkAg-/0/1764685361665?e=1772668800&v=beta&t=Q39RXvVVPpJBMijGQpk5Dwd5iiwDxbXhrR1Vg8h2feQ"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAAwBOVMBDI50rE9wyD4tsMaGWkV-85Sqd50",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 43,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/edd37a81a37da5e0977fa563f745d73e.jpg"
+            ]
         },
         {
             "code": "7401569692362203136",
@@ -5776,11 +6085,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQFgg8pk3e_mMw/feedshare-shrink_2048_1536/B56ZreoaVjLoAw-/0/1764671728549?e=1772668800&v=beta&t=FHE0ePoLm5R68kRkT5vaMUcqMmvKgTSGPPrxMOfSXDE"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAADk-HPIB9Dfu21FvR7IWiubg2RoPiyFq_PY",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 42,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/9b42e646a7f46d4f948bd4ec7a3592f4.jpg"
+            ]
         },
         {
             "code": "7401429747706351616",
@@ -5794,11 +6106,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQEduK4IANLRdw/feedshare-shrink_2048_1536/B56ZrcpIUFLgAw-/0/1764638362807?e=1772668800&v=beta&t=qTX7mD3B6hH21nGATl9-NVVfSkZRfRnk8z1PvnGxTXw"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAACaaaYoBxuqGvSFA9Ozah6b9nA5IwYyx9TA",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 41,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/c4974bde559c8e21376f3122126fb953.jpg"
+            ]
         },
         {
             "code": "7401368244718411776",
@@ -5809,14 +6124,17 @@
             "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7401368244718411776?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7401368244718411776%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
             "profile_slogan": "CAIO & Deputy CEO @ Channel Corp | AI × B2B SaaS",
             "images": [
-                "https://media.licdn.com/dms/image/v2/D561FAQEUcYNnglpicA/feedshare-document-cover-images_480/B56ZrZOgRgJYBM-/0/1764581054427?e=1771380000&v=beta&t=5-9E0pZA84vmXm7BngkImJKVHX694Q9qp1qK6LIMZhw"
+                "https://media.licdn.com/dms/image/v2/D561FAQEUcYNnglpicA/feedshare-document-cover-images_480/B56ZrZOgRgJYBM-/0/1764581054427?e=1771398000&v=beta&t=saooVZpHbhtDPEyhwoZ9cDepUzaWyNOTCKSVVgUEmbI"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAA5RhH4BjDv2vMF1Onz2ppvG6jeLmEGo93E",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 40,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/06eba89dd8cff873eabf96b2faa453da.jpg"
+            ]
         },
         {
             "code": "7401129989594763264",
@@ -5828,7 +6146,7 @@
             "profile_slogan": "고넥터 창업자&대표 / 고넥터(Gonnector) - 찾아가서 연결하여 가치 생성 / 데이터 & AI 를 활용하는 평생 레인메이커 / 데이터 과학자 & 그로스 해커 / 개인 엔젤 투자자, 작가, 컨설턴트 & 코치",
             "images": [],
             "user_link": "https://www.linkedin.com/in/ACoAAAMkQDoBnfOE4bgY4NL4TXkx3M3D9ZBkS0U",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "text",
             "source": "network",
             "sequence_id": 39,
@@ -5846,11 +6164,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQHvuw9BTrvLeQ/feedshare-shrink_1280/B56ZrW7ZItJQAs-/0/1764542485701?e=1772668800&v=beta&t=CRghnEMkFohxAeTrWK0oWvIfyTHp_HrJyt_DWSpTLK8"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAARknekBOFFETpmlSPqmlb2P8ln4iACFaJg",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 38,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/5bd2c8a9aa478cf88dd1fd7dac25e54a.jpg"
+            ]
         },
         {
             "code": "7400530968190750720",
@@ -5864,11 +6185,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQGwkVyydR6Jdw/feedshare-shrink_2048_1536/B56ZrP3seuIsAw-/0/1764424077173?e=1772668800&v=beta&t=xbSJY3pqoLWcmvbwDmvTZGkJCeNY96esXN-cXNPD8Bs"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAAwBOVMBDI50rE9wyD4tsMaGWkV-85Sqd50",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 37,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/17fd9c713cdc28e125991b2dd483defc.jpg"
+            ]
         },
         {
             "code": "7400284864094101504",
@@ -5880,7 +6204,7 @@
             "profile_slogan": "CAIO & Deputy CEO @ Channel Corp | AI × B2B SaaS",
             "images": [],
             "user_link": "https://www.linkedin.com/in/ACoAAA5RhH4BjDv2vMF1Onz2ppvG6jeLmEGo93E",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "text",
             "source": "network",
             "sequence_id": 36,
@@ -5898,11 +6222,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQEY2sszQSO_Hw/feedshare-shrink_1280/B56Zq6zr.aI8Aw-/0/1764070704190?e=1772668800&v=beta&t=lGOGgEJd-pshhJ22_TlRT_NFtDbdPT0JTCHV51O2eqs"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAD9O2zgBLZsZZofcYY_6029h13lI48hT1hc",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 35,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/f323e5a944748704c876a07ef74fa85b.jpg"
+            ]
         },
         {
             "code": "7397540321351524352",
@@ -5916,11 +6243,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQGRhQaJ58oYtA/feedshare-shrink_2048_1536/B56ZqlXuFSG0Aw-/0/1763711051060?e=1772668800&v=beta&t=ZVdUop6f7XLtmSwbYeWkJcIh4IsCAr7FxK-tS9dSyOI"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAACfVcCwBC2Um-3YmtYg58LwMarvLd6JsHsE",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 34,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/921e7eca1f4930884383fba3ddd8c0d5.jpg"
+            ]
         },
         {
             "code": "7397324001875980288",
@@ -5934,11 +6264,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQFC9-ioepLS9A/feedshare-shrink_800/B56ZqiS.WaI0Ag-/0/1763659475693?e=1772668800&v=beta&t=tVng0MlfwPNaVRb2HEf8yJJlUFqwMYeOV19Qhb1B8MY"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAEOyUqoBe58jAG2OO6sy7qWkq3AUW2likhw",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 33,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/0cda5a2b6a65676aa588324e8a43489b.jpg"
+            ]
         },
         {
             "code": "7396396013068005376",
@@ -5952,11 +6285,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQE6YOKdEouVMA/feedshare-shrink_2048_1536/B56ZqVG.iDJoAw-/0/1763438226360?e=1772668800&v=beta&t=NO-nO9tQXryyvvPm-CctE5til1b73T_M-1BKFcDPN-4"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAACC2D84BJpzxT2C5mrDCykqwVjBnKqPntLo",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 32,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/f9f37906a8a775a8678ce0d73d3f6ad0.jpg"
+            ]
         },
         {
             "code": "7395635427879129088",
@@ -5968,7 +6304,7 @@
             "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
             "images": [],
             "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "text",
             "source": "network",
             "sequence_id": 31,
@@ -5983,14 +6319,17 @@
             "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7393884393532084224?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7393884393532084224%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
             "profile_slogan": "숙명여대 겸임교수, Firb AI 연구소장",
             "images": [
-                "https://media.licdn.com/dms/image/v2/D561FAQHznlLgcDNptw/feedshare-document-cover-images_480/B56ZpxaW61JsBM-/0/1762839327656?e=1771380000&v=beta&t=9I2SeaxHWPZ4TjAn46GyyltoGA8PS6lc1mHHdssdKag"
+                "https://media.licdn.com/dms/image/v2/D561FAQHznlLgcDNptw/feedshare-document-cover-images_480/B56ZpxaW61JsBM-/0/1762839327656?e=1771398000&v=beta&t=BEse8a19sRY1HpDv_lGEIRnEg6bQWFgJWP7HRnJORDo"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAAwBOVMBDI50rE9wyD4tsMaGWkV-85Sqd50",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 30,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/83aedb987587fa7f3726a0ce765e7ec1.jpg"
+            ]
         },
         {
             "code": "7390273789009367040",
@@ -6002,7 +6341,7 @@
             "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
             "images": [],
             "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "text",
             "source": "network",
             "sequence_id": 29,
@@ -6020,11 +6359,14 @@
                 "https://media.licdn.com/dms/image/v2/D4D22AQFds8i6TEmWfA/feedshare-shrink_2048_1536/B4DZoivuuKHsAw-/0/1761519531305?e=1772668800&v=beta&t=hcURhs_R9b5dPmAkG9IF9bAelr2cMgOCDKfzvVbTBJI"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAAA6iRMBaolUyvRZOF1IDpmNtRPh98F54l8",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 28,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/92d4fc41563f471bdd77a73943515077.jpg"
+            ]
         },
         {
             "code": "7387653708110737409",
@@ -6036,7 +6378,7 @@
             "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
             "images": [],
             "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "text",
             "source": "network",
             "sequence_id": 27,
@@ -6052,7 +6394,7 @@
             "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
             "images": [],
             "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "text",
             "source": "network",
             "sequence_id": 26,
@@ -6070,11 +6412,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQHJJNs4h4w7pA/feedshare-shrink_2048_1536/B56ZlmZKXBKEAw-/0/1758359506511?e=1772668800&v=beta&t=jrKIOh2KUBjAA31pNchdMbyn89u7DIUhjkckY8M86X8"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAC1AtmMBgWSqGGOxpr1C-rVdX2W7bxAzHbc",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 25,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/09b9c7278a58caf1a40b9875a915d0e9.jpg"
+            ]
         },
         {
             "code": "7372465848608845824",
@@ -6086,7 +6431,7 @@
             "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
             "images": [],
             "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "text",
             "source": "network",
             "sequence_id": 24,
@@ -6104,11 +6449,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQFMrmq9oD7G2Q/feedshare-shrink_2048_1536/B56ZjM.sGgHUBI-/0/1755785644843?e=1772668800&v=beta&t=_uXENQOWCi6cDmN827bpNVox9XEXJvrcNcKNtgu31k0"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAACY7KJQBDtSTk6IuIwZY6ntBGJx1fCYwsYI",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 23,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/626739bbece94868e55946ee54d35b26.jpg"
+            ]
         },
         {
             "code": "7362299233468624897",
@@ -6120,7 +6468,7 @@
             "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
             "images": [],
             "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "text",
             "source": "network",
             "sequence_id": 22,
@@ -6136,7 +6484,7 @@
             "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
             "images": [],
             "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "text",
             "source": "network",
             "sequence_id": 21,
@@ -6152,7 +6500,7 @@
             "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
             "images": [],
             "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "text",
             "source": "network",
             "sequence_id": 20,
@@ -6168,7 +6516,7 @@
             "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
             "images": [],
             "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "text",
             "source": "network",
             "sequence_id": 19,
@@ -6184,7 +6532,7 @@
             "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
             "images": [],
             "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "text",
             "source": "network",
             "sequence_id": 18,
@@ -6200,7 +6548,7 @@
             "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
             "images": [],
             "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "text",
             "source": "network",
             "sequence_id": 17,
@@ -6218,11 +6566,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQEU1Vs_6MVTmw/feedshare-shrink_1280/B56ZdyJq_DG0Ak-/0/1749966828715?e=1772668800&v=beta&t=Jl-ZjlKBVYbWO4mid8f6fKOaIHEjsCdT4W1ddpss8U8"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 16,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/0275e7b06f7b631da2125344eb9f4b55.jpg"
+            ]
         },
         {
             "code": "7337290953541505024",
@@ -6234,7 +6585,7 @@
             "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
             "images": [],
             "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "text",
             "source": "network",
             "sequence_id": 15,
@@ -6250,7 +6601,7 @@
             "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
             "images": [],
             "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "text",
             "source": "network",
             "sequence_id": 14,
@@ -6268,11 +6619,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQHMcoi0n28lVQ/feedshare-shrink_480/B56ZcB18BrHgAY-/0/1748082606832?e=1772668800&v=beta&t=JSVvRITlaO216PeluTA5IcEvwJaTOHCBnuAjuNG8D2Q"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 13,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/2c520b9ad87eec655ed476c5fd23fadf.jpg"
+            ]
         },
         {
             "code": "7314662801090781184",
@@ -6284,7 +6638,7 @@
             "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
             "images": [],
             "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "text",
             "source": "network",
             "sequence_id": 12,
@@ -6300,7 +6654,7 @@
             "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
             "images": [],
             "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "text",
             "source": "network",
             "sequence_id": 11,
@@ -6318,11 +6672,14 @@
                 "https://media.licdn.com/dms/image/v2/D5622AQElxwNG2A-Mhw/feedshare-shrink_2048_1536/B56ZX3BErTGoAo-/0/1743606011579?e=1772668800&v=beta&t=8gXgRa3iAyT0J0B-FIp-DNuy28jpIVFoAbbXIm9BD58"
             ],
             "user_link": "https://www.linkedin.com/in/ACoAAAwBOVMBDI50rE9wyD4tsMaGWkV-85Sqd50",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "image",
             "source": "network",
             "sequence_id": 10,
-            "sns_platform": "linkedin"
+            "sns_platform": "linkedin",
+            "local_images": [
+                "web_viewer/images/d5b89e96ede609453721f8ec2d1d405e.jpg"
+            ]
         },
         {
             "code": "7311655106758811648",
@@ -6334,7 +6691,7 @@
             "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
             "images": [],
             "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "text",
             "source": "network",
             "sequence_id": 9,
@@ -6350,7 +6707,7 @@
             "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
             "images": [],
             "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "text",
             "source": "network",
             "sequence_id": 8,
@@ -6366,7 +6723,7 @@
             "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
             "images": [],
             "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "text",
             "source": "network",
             "sequence_id": 7,
@@ -6382,7 +6739,7 @@
             "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
             "images": [],
             "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "text",
             "source": "network",
             "sequence_id": 6,
@@ -6398,7 +6755,7 @@
             "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
             "images": [],
             "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "text",
             "source": "network",
             "sequence_id": 5,
@@ -6414,7 +6771,7 @@
             "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
             "images": [],
             "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "text",
             "source": "network",
             "sequence_id": 4,
@@ -6430,7 +6787,7 @@
             "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
             "images": [],
             "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "text",
             "source": "network",
             "sequence_id": 3,
@@ -6446,7 +6803,7 @@
             "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
             "images": [],
             "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "text",
             "source": "network",
             "sequence_id": 2,
@@ -6462,7 +6819,7 @@
             "profile_slogan": "Thought leader | Mentor | Growth partner | Author | Executive advisor | “To foster visionary individuals and leaders who want to live freely, inspire deeply, and transform the world meaningfully.”",
             "images": [],
             "user_link": "https://www.linkedin.com/in/ACoAAA_8D_MBfcJZIZFDgQ4gFmRIcSV-0vAHPOo",
-            "crawled_at": "2026-02-11T10:17:40.745147",
+            "crawled_at": "2026-02-11T15:05:16.435369",
             "content_type": "text",
             "source": "network",
             "sequence_id": 1,

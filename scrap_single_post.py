@@ -20,6 +20,7 @@ TEST_CODES = [
 
 OUTPUT_FILE = "docs/scrap_result_async_test.json"
 PENDING_FILE = "pending_list.json"
+FAILURES_FILE = "scrap_failures.json"
 AUTH_FILE = "auth/auth_threads.json"
 CONCURRENCY_LIMIT = 3 # Number of parallel tabs
 
@@ -33,6 +34,19 @@ WINDOW_HEIGHT = 500
 # ==========================================
 # 🛠️ Utility Functions
 # ==========================================
+def load_failures():
+    if os.path.exists(FAILURES_FILE):
+        with open(FAILURES_FILE, 'r', encoding='utf-8') as f:
+            try:
+                return json.load(f)
+            except:
+                return {}
+    return {}
+
+def save_failures(failures):
+    with open(FAILURES_FILE, 'w', encoding='utf-8') as f:
+        json.dump(failures, f, ensure_ascii=False, indent=4)
+
 def format_timestamp(ts):
     if not ts: return None, None
     try:
@@ -302,6 +316,7 @@ def merge_thread_items(thread_items):
             
     # 병합된 레코드 생성 (ID와 기본 정보는 Root 기준)
     merged_post = root.copy()
+    merged_post['code'] = root.get('root_code') # 핵심: 병합된 레코드의 코드는 반드시 Root Code여야 함
     merged_post['full_text'] = "".join(merged_text_parts)
     merged_post['images'] = unique_images
     # 병합됨을 나타내는 플래그 (선택 사항)
@@ -467,6 +482,9 @@ async def run():
     # 0. Simple -> Full 동기화
     latest_full_path = import_from_simple_database()
     
+    # 0-1. 실패 이력 로드
+    failures = load_failures()
+    
     async with async_playwright() as p:
         # 브라우저 실행 설정
         browser = await p.chromium.launch(
@@ -487,7 +505,6 @@ async def run():
         semaphore = asyncio.Semaphore(CONCURRENCY_LIMIT)
         
         # 1. 수집 대상 식별 (pending_list + 미수집 Full 항목)
-        # 1. 수집 대상 식별 (pending_list + 미수집 Full 항목) - Username 확보 포함
         target_map = {} # {code: username}
 
         if os.path.exists(PENDING_FILE):
@@ -517,39 +534,71 @@ async def run():
                              if code not in target_map or not target_map[code]:
                                  target_map[code] = username
                     
-                    # 최종 필터링: 이미 Merged된 항목 제거
+                    # 최종 필터링: 이미 Merged된 항목 제거 + 실패 횟수 초과 항목 제거
                     merged_codes = {p['code'] for p in f_data.get('posts', []) if p.get('is_merged_thread')}
                     
-                    final_target_codes = [c for c in target_map.keys() if c not in merged_codes]
-                    final_targets = [{'code': c, 'username': target_map[c]} for c in final_target_codes]
+                    for c, u in target_map.items():
+                        if c in merged_codes:
+                            continue
+                        
+                        # 실패 횟수 체크
+                        fail_info = failures.get(c, {})
+                        if fail_info.get('fail_count', 0) >= 3:
+                            continue
+                            
+                        final_targets.append({'code': c, 'username': u})
                     
                     skip_count = len(target_map) - len(final_targets)
                     if skip_count > 0:
-                        print(f"⏩ [Skip] 이미 상세 수집된 {skip_count}개의 게시물은 건너뜁니다.")
+                        print(f"⏩ [Skip] {skip_count}개 항목 제외 (상세 수집 완료 또는 3회 이상 실패)")
             else:
-                final_targets = [{'code': c, 'username': u} for c, u in target_map.items()]
+                final_targets = [{'code': c, 'username': u} for c, u in target_map.items() if failures.get(c, {}).get('fail_count', 0) < 3]
         except Exception as e:
             print(f"⚠️ [Error] 대상 필터링 중 오류: {e}")
             final_targets = [{'code': c, 'username': u} for c, u in target_map.items()]
 
         # 1차 시도 실행
-        Progress.total = len(final_targets)
-        Progress.current = 0
-        tasks = [worker(context, semaphore, item['code'], item['username'], collected_data, results_lock) for item in final_targets]
-        await asyncio.gather(*tasks)
-        
-        # 실패 건 식별 및 2차 시도 (Retry)
-        scraped_codes = {item['root_code'] for item in collected_data}
-        retry_targets = [item for item in final_targets if item['code'] not in scraped_codes]
-        
-        if retry_targets:
-            print(f"\n⚠️ {len(retry_targets)}건 수집 실패. 2차 시도(재시도)를 시작합니다...")
-            Progress.total = len(retry_targets)
+        if final_targets:
+            Progress.total = len(final_targets)
             Progress.current = 0
-            retry_tasks = [worker(context, semaphore, item['code'], item['username'], collected_data, results_lock) for item in retry_targets]
-            await asyncio.gather(*retry_tasks)
+            tasks = [worker(context, semaphore, item['code'], item['username'], collected_data, results_lock) for item in final_targets]
+            await asyncio.gather(*tasks)
+            
+            # 실패 건 식별 및 2차 시도 (Retry)
+            scraped_codes = {item['root_code'] for item in collected_data}
+            retry_targets = [item for item in final_targets if item['code'] not in scraped_codes]
+            
+            if retry_targets:
+                print(f"\n⚠️ {len(retry_targets)}건 수집 실패. 2차 시도(재시도)를 시작합니다...")
+                Progress.total = len(retry_targets)
+                Progress.current = 0
+                retry_tasks = [worker(context, semaphore, item['code'], item['username'], collected_data, results_lock) for item in retry_targets]
+                await asyncio.gather(*retry_tasks)
+        else:
+            print("✨ [Skip] 수집할 새로운 항목이 없습니다.")
         
         await browser.close()
+
+    # 🔄 실패 이력 업데이트
+    scraped_codes = {item['root_code'] for item in collected_data}
+    
+    # 성공한 항목은 이력에서 삭제
+    for code in scraped_codes:
+        if code in failures:
+            del failures[code]
+    
+    # 실패한 항목은 횟수 증가
+    for item in final_targets:
+        code = item['code']
+        if code not in scraped_codes:
+            if code not in failures:
+                failures[code] = {"username": item['username'], "fail_count": 0, "first_fail_at": datetime.now().isoformat()}
+            failures[code]["fail_count"] += 1
+            failures[code]["last_fail_at"] = datetime.now().isoformat()
+            if failures[code]["fail_count"] >= 3:
+                print(f"🚫 [Limit] '{code}' 항목이 3회 실패하여 향후 시도에서 제외됩니다.")
+
+    save_failures(failures)
 
     # Group results by root_code
     grouped_map = {}
