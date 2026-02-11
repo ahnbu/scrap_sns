@@ -22,8 +22,7 @@ TARGET_LIMIT = 0       # 0 = 무제한
 parser = argparse.ArgumentParser(description='LinkedIn 스크래퍼')
 parser.add_argument('--mode', choices=['all', 'update'], default='update', help='크롤링 모드 (all: 전체, update: 증분)')
 args = parser.parse_args()
-# CRAWL_MODE = "update only" if args.mode == "update" else "all"
-CRAWL_MODE = "all"
+CRAWL_MODE = "update only" if args.mode == "update" else "all"
 CRAWL_START_TIME = datetime.now()
 INCLUDE_IMAGES = True # 이미지 크롤링 포함 여부
 
