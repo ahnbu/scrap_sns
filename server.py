@@ -96,25 +96,33 @@ def run_scrap():
         
         print(f"🚀 UI 요청으로 {script_path} 실행 중... (모드: {mode})")
         
-        # subprocess.run을 사용하여 실행 결과 대기
-        # Windows 환경의 인코딩 문제를 방지하기 위해 env 설정 및 errors='replace' 추가
+        # subprocess.Popen을 사용하여 실시간 로그 출력 보장
+        # -u 옵션을 추가하여 버퍼링 없이 즉시 출력되도록 함
         env = os.environ.copy()
         env["PYTHONIOENCODING"] = "utf-8"
         
-        process = subprocess.run(
-            [sys.executable, script_path, "--mode", mode],
-            capture_output=True,
+        process = subprocess.Popen(
+            [sys.executable, "-u", script_path, "--mode", mode],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
             text=True,
             encoding='utf-8',
             errors='replace',
             env=env
         )
 
-        stdout_val = process.stdout[-1000:] if process.stdout else ""
-        stderr_val = process.stderr[-1000:] if process.stderr else ""
+        full_output = []
+        # 실시간으로 출력을 읽어서 서버 터미널에 출력
+        if process.stdout:
+            for line in iter(process.stdout.readline, ""):
+                print(line, end="", flush=True)
+                full_output.append(line)
+        
+        process.wait()
+        stdout_val = "".join(full_output[-20:]) # 마지막 일부만 응답에 포함
 
         if process.returncode == 0:
-            print("✅ 스크래핑 성공적으로 완료.")
+            print("\n✅ 스크래핑 성공적으로 완료.")
             
             # 최신 메타데이터 가져오기
             stats = {"total": 0, "threads": 0, "linkedin": 0}
