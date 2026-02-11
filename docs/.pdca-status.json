@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "lastUpdated": "2026-02-08T03:41:06.329Z",
+  "lastUpdated": "2026-02-11T05:58:40.245Z",
   "activeFeatures": [],
   "primaryFeature": null,
   "features": {
@@ -31,9 +31,9 @@
     "phaseHistory": []
   },
   "session": {
-    "startedAt": "2026-02-11T05:27:38.044Z",
+    "startedAt": "2026-02-11T05:58:54.978Z",
     "onboardingCompleted": false,
-    "lastActivity": "2026-02-11T05:27:38.044Z"
+    "lastActivity": "2026-02-11T05:58:54.978Z"
   },
   "history": [
     {
@@ -128,6 +128,42 @@
     },
     {
       "timestamp": "2026-02-08T03:41:06.329Z",
+      "action": "session_end",
+      "feature": null,
+      "details": "Session ended"
+    },
+    {
+      "timestamp": "2026-02-11T05:54:08.423Z",
+      "action": "session_end",
+      "feature": null,
+      "details": "Session ended"
+    },
+    {
+      "timestamp": "2026-02-11T05:54:08.673Z",
+      "action": "session_end",
+      "feature": null,
+      "details": "Session ended"
+    },
+    {
+      "timestamp": "2026-02-11T05:55:35.673Z",
+      "action": "session_end",
+      "feature": null,
+      "details": "Session ended"
+    },
+    {
+      "timestamp": "2026-02-11T05:55:35.924Z",
+      "action": "session_end",
+      "feature": null,
+      "details": "Session ended"
+    },
+    {
+      "timestamp": "2026-02-11T05:58:39.999Z",
+      "action": "session_end",
+      "feature": null,
+      "details": "Session ended"
+    },
+    {
+      "timestamp": "2026-02-11T05:58:40.245Z",
       "action": "session_end",
       "feature": null,
       "details": "Session ended"
