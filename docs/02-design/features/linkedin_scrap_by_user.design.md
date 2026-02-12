@@ -41,12 +41,13 @@ output_linkedin_user/
     └── python/
         ├── update/
         │   └── linkedin_python_update_20260207_123456.json (최신 수집분)
-        └── linkedin_python_full_20260207.json (전체 병합본)
+        └── linkedin_py_full_20260207.json (전체 병합본)
 ```
 
 ### 2.2 데이터 스키마 (JSON)
 
 기본 데이터 필드는 다음과 같습니다:
+
 - `code`: 활동 고유 ID (Activity URN)
 - `username`: 게시글 작성자 이름
 - `created_at`: Snowflake ID에서 추출한 생성 일시
@@ -81,6 +82,7 @@ python linkedin_scrap_by_user.py --user [사용자ID] --limit [개수] --duratio
 ### 4.2 중단 조건 (Stop Conditions)
 
 수집 루프 내에서 다음 조건 중 하나라도 충족되면 `self.stopped_early` 플래그를 활성화합니다:
+
 1. 지정된 `limit` 개수만큼의 게시글이 수집되었을 때
 2. 지정된 `duration` 범위를 벗어난 게시글이 발견되었을 때
 
@@ -95,11 +97,11 @@ python linkedin_scrap_by_user.py --user [사용자ID] --limit [개수] --duratio
 
 ### 5.1 테스트 시나리오
 
-| 케이스 | 입력값 | 기대 결과 |
-|--------|--------|-----------|
-| 특정 유저 수집 | `--user gb-jeong` | 해당 사용자의 폴더가 생성되고 게시글이 저장됨 |
-| 개수 제한 테스트 | `--limit 5` | 정확히 5개 이상의 아이템이 감지되면 수집 프로세스 종료 |
-| 증분 업데이트 확인 | 반복 실행 | `update` 폴더에 새 파일이 생기고, `full` 파일에 중복 없이 합쳐짐 |
+| 케이스             | 입력값            | 기대 결과                                                        |
+| ------------------ | ----------------- | ---------------------------------------------------------------- |
+| 특정 유저 수집     | `--user gb-jeong` | 해당 사용자의 폴더가 생성되고 게시글이 저장됨                    |
+| 개수 제한 테스트   | `--limit 5`       | 정확히 5개 이상의 아이템이 감지되면 수집 프로세스 종료           |
+| 증분 업데이트 확인 | 반복 실행         | `update` 폴더에 새 파일이 생기고, `full` 파일에 중복 없이 합쳐짐 |
 
 ---
 

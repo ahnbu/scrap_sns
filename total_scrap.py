@@ -30,6 +30,18 @@ def load_json(path):
         try: return json.load(f)
         except: return {}
 
+def reorder_post(post):
+    STANDARD_FIELD_ORDER = [
+        "sequence_id", "platform_id", "sns_platform", "username", "display_name",
+        "full_text", "media", "url", "created_at", "date", "crawled_at", "source", "local_images"
+    ]
+    ordered_post = {}
+    for field in STANDARD_FIELD_ORDER:
+        if field in post: ordered_post[field] = post[field]
+    for key, value in post.items():
+        if key not in ordered_post: ordered_post[key] = value
+    return ordered_post
+
 def find_latest_full_file(directory, pattern):
     files = glob.glob(os.path.join(directory, pattern))
     if not files: return None
@@ -61,7 +73,7 @@ def should_run_consumer(platform):
             try: failures = json.load(f)
             except: pass
             
-    final_targets = [p for p in uncollected if failures.get(str(p.get('id') or p.get('code')), {}).get('count', 0) < 3]
+    final_targets = [p for p in uncollected if failures.get(str(p.get('platform_id') or p.get('id') or p.get('code')), {}).get('count', 0) < 3]
     
     return len(final_targets) > 0
 
@@ -109,7 +121,7 @@ def merge_results():
     print("\n📦 결과 병합 및 데이터 정규화 시작...")
     
     latest_threads = find_latest_full_file(OUTPUT_THREADS_DIR, "threads_py_full_*.json")
-    latest_linkedin = find_latest_full_file(OUTPUT_LINKEDIN_DIR, "linkedin_python_full_*.json")
+    latest_linkedin = find_latest_full_file(OUTPUT_LINKEDIN_DIR, "linkedin_py_full_*.json")
     latest_twitter = find_latest_full_file(OUTPUT_TWITTER_DIR, "twitter_py_full_*.json")
     
     if not latest_threads or not latest_linkedin:
@@ -146,7 +158,7 @@ def merge_results():
     all_posts = threads_posts + linkedin_posts + twitter_posts
     
     for p in all_posts:
-        pid = str(p.get('id') or p.get('code') or p.get('url'))
+        pid = str(p.get('platform_id') or p.get('id') or p.get('code') or p.get('url'))
         if pid not in seen_ids:
             unique_posts.append(p)
             seen_ids.add(pid)
@@ -160,31 +172,33 @@ def save_total(new_posts, threads_count, linkedin_count, twitter_count):
     # 💡 [개선] '저장순' 정렬 구현 (최초 수집 시점 1순위, 플랫폼 내 순서 2순위)
     def sort_key(post):
         # 1. 최초 수집 시점 (ISO 포맷 문자열 비교)
-        # crawled_at이 없는 레거시 데이터는 timestamp로 대체
-        c_at = post.get('crawled_at') or post.get('timestamp') or post.get('date') or post.get('created_at') or '0000-00-00'
+        # crawled_at이 없는 레거시 데이터는 timestamp/created_at으로 대체
+        c_at = post.get('crawled_at') or post.get('created_at') or post.get('timestamp') or post.get('date') or '0000-00-00'
         # 2. 플랫폼 내부 저장 순서
         psid = post.get('platform_sequence_id', 0)
         return (c_at, psid)
         
     new_posts.sort(key=sort_key)
     
-    # 전역 ID 재부여
+    # 전역 ID 재부여 및 순서 정렬
+    final_ordered_posts = []
     for i, p in enumerate(new_posts):
         p['sequence_id'] = i + 1
+        final_ordered_posts.append(reorder_post(p))
 
     os.makedirs(OUTPUT_TOTAL_DIR, exist_ok=True)
     
     total_data = {
         "metadata": {
             "updated_at": datetime.now().isoformat(),
-            "max_sequence_id": len(new_posts),
-            "total_count": len(new_posts),
+            "max_sequence_id": len(final_ordered_posts),
+            "total_count": len(final_ordered_posts),
             "threads_count": threads_count,
             "linkedin_count": linkedin_count,
             "twitter_count": twitter_count,
             "execution_mode": "parallel_multi_window"
         },
-        "posts": new_posts
+        "posts": final_ordered_posts
     }
     
     with open(total_filename, 'w', encoding='utf-8-sig') as f:
@@ -214,7 +228,7 @@ def download_images(posts):
     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
 
     for post in posts:
-        remote_media = post.get('media', []) or post.get('images', [])
+        remote_media = post.get('media', [])
         if not remote_media: continue
             
         local_images = []

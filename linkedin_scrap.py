@@ -60,6 +60,18 @@ def clean_text(text):
     
     return "\n".join(cleaned_lines).strip()
 
+def reorder_post(post):
+    STANDARD_FIELD_ORDER = [
+        "sequence_id", "platform_id", "sns_platform", "username", "display_name",
+        "full_text", "media", "url", "created_at", "date", "crawled_at", "source", "local_images"
+    ]
+    ordered_post = {}
+    for field in STANDARD_FIELD_ORDER:
+        if field in post: ordered_post[field] = post[field]
+    for key, value in post.items():
+        if key not in ordered_post: ordered_post[key] = value
+    return ordered_post
+
 def extract_urn_id(urn):
     # urn:li:activity:7422622332021604353 -> 7422622332021604353
     match = re.search(r'activity:(\d+)', urn)
@@ -139,12 +151,13 @@ class LinkedinScraper:
             
             # 기준 게시물 (최신 5개) 추출 for Stop Condition
             if CRAWL_MODE == "update only":
-                self.stop_codes = [p.get("code") for p in full_posts[:5] if p.get("code")]
+                self.stop_codes = [p.get("platform_id") or p.get("code") for p in full_posts[:5] if (p.get("platform_id") or p.get("code"))]
 
             for p in full_posts:
-                if "code" in p:
-                    self.existing_codes.add(p["code"])
-                    self.existing_posts_map[p["code"]] = p
+                pid = p.get("platform_id") or p.get("code")
+                if pid:
+                    self.existing_codes.add(pid)
+                    self.existing_posts_map[pid] = p
             
             if isinstance(full_data_obj, dict):
                 self.max_sequence_id = full_data_obj.get("metadata", {}).get("max_sequence_id", 0)
@@ -308,36 +321,31 @@ class LinkedinScraper:
             # 4. 상대적 시간 (UI 표시용)
             time_text = item.get("secondarySubtitle", {}).get("text", "").replace(" • ", "").strip()
 
-            post_data = {
-                "id": activity_id,
-                "code": activity_id, # 호환성 유지
-                "user": user_link.split("/in/")[-1].replace("/", "") if "/in/" in user_link else username,
-                "username": username,
+            post_data = reorder_post({
+                "platform_id": activity_id,
+                "username": user_link.split("/in/")[-1].replace("/", "") if "/in/" in user_link else username,
                 "display_name": username,
-                "timestamp": f"{date_str} 00:00:00", # LinkedIn은 정확한 시간 정보 부족 시 날짜만 사용
+                "full_text": clean_text(text),
+                "media": list(set(images)),
                 "created_at": date_str,
                 "date": date_str,
-                "time_text": time_text,
-                "full_text": clean_text(text),
                 "url": post_url,
-                "post_url": post_url,
-                "profile_slogan": profile_slogan,
-                "media": list(set(images)),
-                "images": list(set(images)),
-                "user_link": user_link,
                 "sns_platform": "linkedin",
+                "timestamp": f"{date_str} 00:00:00", # LinkedIn은 정확한 시간 정보 부족 시 날짜만 사용
+                "time_text": time_text,
+                "profile_slogan": profile_slogan,
+                "user_link": user_link,
                 "content_type": "carousel" if len(images) > 1 else ("image" if images else "text"),
-                "source": "network"
-            }
+                "source": "network",
+                "crawled_at": CRAWL_START_TIME.isoformat(timespec='milliseconds'),
+                "sequence_id": 0 # 나중에 save_results에서 일괄 부여
+            })
 
             # 💡 [개선] 기존 메타데이터 보존 로직
             existing = self.existing_posts_map.get(activity_id)
             if existing:
                 post_data['crawled_at'] = existing.get('crawled_at')
                 post_data['sequence_id'] = existing.get('sequence_id')
-            else:
-                post_data['crawled_at'] = CRAWL_START_TIME.isoformat(timespec='milliseconds')
-                post_data['sequence_id'] = 0 # 나중에 save_results에서 일괄 부여
 
             self.posts.append(post_data)
             self.collected_codes.add(activity_id)
@@ -350,7 +358,7 @@ class LinkedinScraper:
     def get_latest_full_file(self):
         if not os.path.exists(DATA_DIR):
             return None
-        files = [f for f in os.listdir(DATA_DIR) if f.startswith("linkedin_python_full_") and f.endswith(".json")]
+        files = [f for f in os.listdir(DATA_DIR) if f.startswith("linkedin_py_full_") and f.endswith(".json")]
         if not files:
             return None
         # 날짜순 정렬 (파일명에 YYYYMMDD가 포함되어 있으므로 문자열 정렬 가능)
@@ -496,8 +504,8 @@ class LinkedinScraper:
             new_items = self.posts
         else:
             # UPDATE 모드일 때는 기존에 없는 것만 추가
-            existing_codes = {p["code"] for p in old_posts}
-            new_items = [p for p in self.posts if p["code"] not in existing_codes]
+            existing_codes = {p.get("platform_id") or p.get("code") for p in old_posts}
+            new_items = [p for p in self.posts if (p.get("platform_id") or p.get("code")) not in existing_codes]
             duplicate_count = len(self.posts) - len(new_items)
             final_posts = new_items + old_posts
         
@@ -515,7 +523,7 @@ class LinkedinScraper:
                 "crawl_mode": CRAWL_MODE
             })
 
-        full_file = os.path.join(DATA_DIR, f"linkedin_python_full_{date_str}.json")
+        full_file = os.path.join(DATA_DIR, f"linkedin_py_full_{date_str}.json")
         
         # 메타데이터 구조 (JS 버전 참고)
         legacy_count = len([p for p in final_posts if "crawled_at" not in p])
@@ -527,8 +535,8 @@ class LinkedinScraper:
                 "crawled_at": datetime.now().isoformat(),
                 "total_count": len(final_posts),
                 "max_sequence_id": self.max_sequence_id,
-                "first_code": final_posts[0]["code"] if final_posts else None,
-                "last_code": final_posts[-1]["code"] if final_posts else None,
+                "first_code": (final_posts[0].get("platform_id") or final_posts[0].get("code")) if final_posts else None,
+                "last_code": (final_posts[-1].get("platform_id") or final_posts[-1].get("code")) if final_posts else None,
                 "crawl_mode": CRAWL_MODE,
                 "legacy_data_count": legacy_count,
                 "verified_data_count": verified_count,

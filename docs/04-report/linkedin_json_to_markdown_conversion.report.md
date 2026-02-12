@@ -14,8 +14,8 @@ description: LinkedIn JSON to Markdown 변환 작업 완료 보고서
 
 - **작업명**: LinkedIn JSON 데이터 Markdown 변환
 - **대상 파일**:
-    1. `output_linkedin_user/zoon-chang/python/linkedin_python_full_20260207.json`
-    2. `output_linkedin_user/gb-jeong/python/linkedin_python_full_20260207_total.json`
+  1. `output_linkedin_user/zoon-chang/python/linkedin_py_full_20260207.json`
+  2. `output_linkedin_user/gb-jeong/python/linkedin_py_full_20260207_total.json`
 - **수행 도구**: Python 3.12 (Custom Conversion Script)
 - **완료 일시**: 2026-02-07
 
@@ -25,8 +25,8 @@ description: LinkedIn JSON to Markdown 변환 작업 완료 보고서
 
 ### 2.1 결과 파일
 
-- `output_linkedin_user/zoon-chang/python/linkedin_python_full_20260207.md`
-- `output_linkedin_user/gb-jeong/python/linkedin_python_full_20260207_total.md`
+- `output_linkedin_user/zoon-chang/python/linkedin_py_full_20260207.md`
+- `output_linkedin_user/gb-jeong/python/linkedin_py_full_20260207_total.md`
 
 ### 2.2 주요 특징
 

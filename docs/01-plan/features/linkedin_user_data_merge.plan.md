@@ -29,9 +29,9 @@ description: 링크드인 사용자 데이터 병합 및 중복 제거
 
 ### 1.3 관련 문서 및 파일
 
-- 원본 파일 1: `output_linkedin_user/gb-jeong/python/linkedin_python_full_20260207.json`
+- 원본 파일 1: `output_linkedin_user/gb-jeong/python/linkedin_py_full_20260207.json`
 - 원본 폴더 (temp): `output_linkedin_user/temp/*.json`
-- 결과 파일: `output_linkedin_user/gb-jeong/python/linkedin_python_full_20260207_total.json`
+- 결과 파일: `output_linkedin_user/gb-jeong/python/linkedin_py_full_20260207_total.json`
 
 ---
 
@@ -40,7 +40,7 @@ description: 링크드인 사용자 데이터 병합 및 중복 제거
 ### 2.1 대상 범위
 
 - [ ] `output_linkedin_user/temp` 내의 모든 JSON 파일 로드
-- [ ] `output_linkedin_user/gb-jeong/python/linkedin_python_full_20260207.json` 로드
+- [ ] `output_linkedin_user/gb-jeong/python/linkedin_py_full_20260207.json` 로드
 - [ ] `code`(게시물 고유 ID)를 기준으로 중복 제거
 - [ ] 게시물 작성 시간(`created_at`) 또는 ID 순서대로 정렬
 - [ ] 통합 결과물 저장 및 작업 통계(건수 등) 요약 보고
@@ -56,19 +56,19 @@ description: 링크드인 사용자 데이터 병합 및 중복 제거
 
 ### 3.1 기능적 요구사항
 
-| ID | 요구사항 | 우선순위 | 상태 |
-|----|----------|----------|------|
-| FR-01 | 지정된 경로의 모든 JSON 파일을 읽어들임 | 높음 | 대기 |
-| FR-02 | `code` 필드를 유니크 키로 사용하여 중복 항목 제거 | 높음 | 대기 |
-| FR-03 | 병합된 데이터를 `_total.json` 이름으로 저장 | 높음 | 대기 |
-| FR-04 | 파일별 로드 건수, 중복 제거 건수, 최종 건수 요약 출력 | 높음 | 대기 |
+| ID    | 요구사항                                              | 우선순위 | 상태 |
+| ----- | ----------------------------------------------------- | -------- | ---- |
+| FR-01 | 지정된 경로의 모든 JSON 파일을 읽어들임               | 높음     | 대기 |
+| FR-02 | `code` 필드를 유니크 키로 사용하여 중복 항목 제거     | 높음     | 대기 |
+| FR-03 | 병합된 데이터를 `_total.json` 이름으로 저장           | 높음     | 대기 |
+| FR-04 | 파일별 로드 건수, 중복 제거 건수, 최종 건수 요약 출력 | 높음     | 대기 |
 
 ### 3.2 비기능적 요구사항
 
-| 카테고리 | 기준 | 측정 방법 |
-|----------|------|-----------|
-| 데이터 무결성 | 중복 제거 후 누락되는 고유 데이터가 없어야 함 | 건수 비교 확인 |
-| 성능 | 대용량 JSON 처리 시 메모리 오류 없이 수행되어야 함 | 실행 로그 확인 |
+| 카테고리      | 기준                                               | 측정 방법      |
+| ------------- | -------------------------------------------------- | -------------- |
+| 데이터 무결성 | 중복 제거 후 누락되는 고유 데이터가 없어야 함      | 건수 비교 확인 |
+| 성능          | 대용량 JSON 처리 시 메모리 오류 없이 수행되어야 함 | 실행 로그 확인 |
 
 ---
 
@@ -101,6 +101,6 @@ description: 링크드인 사용자 데이터 병합 및 중복 제거
 
 ## 버전 History
 
-| 버전 | Date | Changes | Author |
-|---------|------|---------|--------|
-| 0.1 | 2026-02-07 | 최초 초안 작성 | Gemini CLI |
+| 버전 | Date       | Changes        | Author     |
+| ---- | ---------- | -------------- | ---------- |
+| 0.1  | 2026-02-07 | 최초 초안 작성 | Gemini CLI |

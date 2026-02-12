@@ -516,8 +516,8 @@ ${item.body}
             // Assuming sequence_id is reliable.
         } else if (currentSort === 'favorites') {
             filtered.sort((a, b) => {
-                const aUrl = a.post_url || a.source_url || a.code;
-                const bUrl = b.post_url || b.source_url || b.code;
+                const aUrl = a.url;
+                const bUrl = b.url;
                 const aFav = favorites.has(aUrl);
                 const bFav = favorites.has(bUrl);
                 if (aFav && !bFav) return -1;
@@ -565,7 +565,7 @@ ${item.body}
         article.className = 'glass-card rounded-2xl p-4 flex flex-col gap-3 group break-inside-avoid relative overflow-hidden transition-all duration-300';
         
         // --- URL Definition (Critical for event handlers) ---
-        const postUrl = post.url || post.post_url || post.source_url || post.code;
+        const postUrl = post.url;
         const isFavorited = favorites.has(postUrl);
         const isFolded = foldedPosts.has(postUrl);
         if (isFolded) article.classList.add('minimized');
@@ -678,7 +678,7 @@ ${item.body}
         const favBtn = header.querySelector('.favorite-btn');
         favBtn.addEventListener('click', (e) => {
             e.stopPropagation();
-            const url = post.post_url;
+            const url = postUrl;
             const icon = favBtn.querySelector('span');
             
             if (favorites.has(url)) {
@@ -791,7 +791,7 @@ ${item.body}
 
         // --- Images ---
         let imageDiv = null;
-        const mediaList = post.media || post.images || [];
+        const mediaList = post.media || [];
         if (mediaList.length > 0) {
             const originalUrl = mediaList[0];
             const isVideo = originalUrl.toLowerCase().includes('.mp4');
@@ -829,7 +829,7 @@ ${item.body}
                          class="w-full h-auto max-h-[600px] object-contain cursor-zoom-in transition-transform duration-500 group-hover/image:scale-105"
                          data-src="${imgUrl}"
                          data-original="${originalUrl}"
-                         data-caption="${post.display_name || post.username || post.user}: ${post.full_text?.slice(0,50)}..."
+                         data-caption="${post.display_name || post.username || 'Unknown'}: ${post.full_text?.slice(0,50)}..."
                          onerror="if(this.src!=='${originalUrl}'){this.src='${originalUrl}';}else{this.src='${placeholderImg}';this.onerror=null;}"
                          alt="SNS Post Image">
                     ${moreCount > 0 ? `
@@ -991,7 +991,7 @@ ${item.body}
         const foldBtn = header.querySelector('.fold-btn');
         foldBtn.addEventListener('click', (e) => {
             e.stopPropagation();
-            const url = post.post_url;
+            const url = postUrl;
             
             // Toggle state
             const isCurrentlyFolded = foldedPosts.has(url);

@@ -23,19 +23,19 @@ description: linkedin_user_data_path_refinement Gap 분석 결과
 
 ## 2. 세부 항목 비교
 
-| 항목 | 설계 내용 (Design) | 구현 결과 (Implementation) | 일치 여부 |
-|------|-------------------|---------------------------|-----------|
-| 저장 경로 | `output_linkedin_user/{user_id}/` | 구현 완료 | ✅ |
-| 파일명(Full) | `linkedin_{user_id}_full_{date}.json` | 구현 완료 | ✅ |
-| 파일명(Update) | `linkedin_{user_id}_update_{ts}.json` | 구현 완료 | ✅ |
-| 마이그레이션 | `python/` 폴더 내 파일 이동 및 이름 변경 | 구현 완료 (JSON 파일 대상) | ✅ |
-| 폴더 정리 | 이동 후 빈 `python/` 폴더 삭제 | 구현 완료 | ✅ |
+| 항목           | 설계 내용 (Design)                       | 구현 결과 (Implementation) | 일치 여부 |
+| -------------- | ---------------------------------------- | -------------------------- | --------- |
+| 저장 경로      | `output_linkedin_user/{user_id}/`        | 구현 완료                  | ✅        |
+| 파일명(Full)   | `linkedin_{user_id}_full_{date}.json`    | 구현 완료                  | ✅        |
+| 파일명(Update) | `linkedin_{user_id}_update_{ts}.json`    | 구현 완료                  | ✅        |
+| 마이그레이션   | `python/` 폴더 내 파일 이동 및 이름 변경 | 구현 완료 (JSON 파일 대상) | ✅        |
+| 폴더 정리      | 이동 후 빈 `python/` 폴더 삭제           | 구현 완료                  | ✅        |
 
 ---
 
 ## 3. 발견된 차이점 (Gap)
 
-- **특이사항**: `python/` 폴더 내에 `.md` 파일(예: `linkedin_python_full_20260207.md`)이 남아있어 폴더가 완전히 삭제되지 않은 경우가 발견되었습니다. 이는 의도적으로 `.json` 파일만 마이그레이션 대상으로 설정했기 때문입니다. 수집 데이터의 무결성에는 영향이 없습니다.
+- **특이사항**: `python/` 폴더 내에 `.md` 파일(예: `linkedin_py_full_20260207.md`)이 남아있어 폴더가 완전히 삭제되지 않은 경우가 발견되었습니다. 이는 의도적으로 `.json` 파일만 마이그레이션 대상으로 설정했기 때문입니다. 수집 데이터의 무결성에는 영향이 없습니다.
 
 ---
 

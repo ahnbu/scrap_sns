@@ -21,16 +21,18 @@ description: 링크드인 사용자 데이터 저장 경로 및 파일명 규칙
 ### 1.1 저장 구조 변경 (Storage Structure)
 
 **이전 (As-Is):**
+
 ```
 output_linkedin_user/
 └── {user_id}/
     └── python/
-        ├── linkedin_python_full_20260207.json
+        ├── linkedin_py_full_20260207.json
         └── update/
             └── linkedin_python_update_20260207_123456.json
 ```
 
 **변경 (To-Be):**
+
 ```
 output_linkedin_user/
 └── {user_id}/
@@ -56,6 +58,7 @@ output_linkedin_user/
 ### 2.3 로직 변경점 (Logic Changes)
 
 #### `get_latest_full_file` 메서드
+
 - 검색 패턴 변경: `f.startswith(f"linkedin_{USER_ID}_full_")`
 
 ### 2.4 마이그레이션 로직 (Migration Logic)
@@ -64,15 +67,17 @@ output_linkedin_user/
 
 1. **대상 확인**: `output_linkedin_user/{user_id}/python/` 폴더 존재 여부 확인.
 2. **파일명 변경 및 이동**:
-   - `linkedin_python_full_{date}.json` -> `linkedin_{user_id}_full_{date}.json`
+   - `linkedin_py_full_{date}.json` -> `linkedin_{user_id}_full_{date}.json`
    - `update/linkedin_python_update_{ts}.json` -> `update/linkedin_{user_id}_update_{ts}.json`
 3. **폴더 정리**:
    - 파일 이동 완료 후 `python/update` 및 `python` 폴더가 비어있으면 삭제.
 
 #### `save_results` 메서드
+
 - `update_file` 생성 시 `f"linkedin_{USER_ID}_update_{timestamp}.json"` 규칙 적용.
 
 #### `update_full_version` 메서드
+
 - `full_file` 생성 시 `f"linkedin_{USER_ID}_full_{CRAWL_START_TIME.strftime('%Y%m%d')}.json"` 규칙 적용.
 
 ---

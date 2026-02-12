@@ -44,6 +44,18 @@ def clean_text(text):
     text = re.sub(r'\n{3,}', '\n\n', text)
     return text.strip().replace('\n', ' ')
 
+def reorder_post(post):
+    STANDARD_FIELD_ORDER = [
+        "sequence_id", "platform_id", "sns_platform", "username", "display_name",
+        "full_text", "media", "url", "created_at", "date", "crawled_at", "source", "local_images"
+    ]
+    ordered_post = {}
+    for field in STANDARD_FIELD_ORDER:
+        if field in post: ordered_post[field] = post[field]
+    for key, value in post.items():
+        if key not in ordered_post: ordered_post[key] = value
+    return ordered_post
+
 def parse_twitter_date(date_str):
     try:
         dt = datetime.strptime(date_str, '%a %b %d %H:%M:%S +0000 %Y')
@@ -101,19 +113,19 @@ def extract_from_json(json_data):
             post_id = tweet_results.get('rest_id')
             
             if post_id:
-                posts.append({
-                    "id": post_id,
-                    "user": username or "Unknown",
+                posts.append(reorder_post({
+                    "platform_id": post_id,
+                    "username": username or "Unknown",
                     "display_name": display_name,
                     "full_text": body,
                     "media": media,
-                    "timestamp": ts_full,
+                    "created_at": ts_full,
                     "date": ts_short,
                     "url": f"https://x.com/{username}/status/{post_id}" if username else f"https://x.com/i/status/{post_id}",
                     "sns_platform": "x",
                     "source": "network",
                     "is_detail_collected": False
-                })
+                }))
     except: pass
     return posts
 
@@ -145,19 +157,19 @@ def extract_from_html(html_content, source_label="initial_dom"):
             name_div = article.find('div', {'data-testid': 'User-Name'})
             display_name = name_div.find('span').get_text() if name_div and name_div.find('span') else ""
 
-            posts.append({
-                "id": post_id,
-                "user": username,
+            posts.append(reorder_post({
+                "platform_id": post_id,
+                "username": username,
                 "display_name": display_name,
                 "full_text": body,
                 "media": [f"https://wsrv.nl/?url={img.get('src')}" for img in article.find_all('img') if 'media' in img.get('src', '')],
-                "timestamp": ts_full,
+                "created_at": ts_full,
                 "date": ts_short,
                 "url": f"https://x.com/{username}/status/{post_id}",
                 "sns_platform": "x",
                 "source": source_label,
                 "is_detail_collected": False
-            })
+            }))
         except: pass
     return posts
 
@@ -189,10 +201,11 @@ def main():
                 for p in old_posts:
                     # 💡 [보정] crawled_at이 없는 레거시 데이터 보정
                     if not p.get('crawled_at'):
-                        p['crawled_at'] = p.get('timestamp') or datetime.now().isoformat()
+                        p['crawled_at'] = p.get('created_at') or datetime.now().isoformat()
                     
-                    stop_ids.add(p['id'])
-                    all_posts_map[p['id']] = p
+                    pid = p.get('platform_id') or p.get('id')
+                    stop_ids.add(pid)
+                    all_posts_map[pid] = p
                 
                 # 중단점은 최신 20개로 제한 유지
                 stop_ids = set(list(all_posts_map.keys())[:20])
@@ -220,7 +233,7 @@ def main():
                 try:
                     new_posts = extract_from_json(response.json())
                     for post in new_posts:
-                        pid = post['id']
+                        pid = post['platform_id']
                         # 💡 [개선] 기존 수집 상태 및 메타데이터 보존
                         existing = all_posts_map.get(pid)
                         was_collected = existing.get('is_detail_collected', False) if existing else False
@@ -239,7 +252,7 @@ def main():
                             
                             if not was_collected:
                                 msg = clean_text(post['full_text'])[:30]
-                                print(f"   + [Net] @{post['user']} | {msg}... ({len(all_posts_map)}개)", flush=True)
+                                print(f"   + [Net] @{post['username']} | {msg}... ({len(all_posts_map)}개)", flush=True)
                 except: pass
 
         page.on("response", handle_response)
@@ -262,7 +275,7 @@ def main():
             found_stop = False
 
             for post in html_posts:
-                pid = post['id']
+                pid = post['platform_id']
                 if args.mode == 'update' and pid in stop_ids:
                     found_stop = True; break
                 
@@ -277,7 +290,7 @@ def main():
                     new_count += 1
                     round_new += 1
                     msg = clean_text(post['full_text'])[:30]
-                    print(f"   + [DOM] @{post['user']} | {msg}... ({len(all_posts_map)}개)", flush=True)
+                    print(f"   + [DOM] @{post['username']} | {msg}... ({len(all_posts_map)}개)", flush=True)
                 elif not was_collected and len(post['full_text']) > len(all_posts_map[pid].get('full_text', '')):
                     # 업데이트 시 기존 메타데이터 유지하며 내용만 갱신
                     c_at = existing.get('crawled_at')

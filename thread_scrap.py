@@ -84,6 +84,18 @@ def clean_text(full_text, username):
 
     return "\n".join(cleaned_lines).strip()
 
+def reorder_post(post):
+    STANDARD_FIELD_ORDER = [
+        "sequence_id", "platform_id", "sns_platform", "username", "display_name",
+        "full_text", "media", "url", "created_at", "date", "crawled_at", "source", "local_images"
+    ]
+    ordered_post = {}
+    for field in STANDARD_FIELD_ORDER:
+        if field in post: ordered_post[field] = post[field]
+    for key, value in post.items():
+        if key not in ordered_post: ordered_post[key] = value
+    return ordered_post
+
 def format_timestamp(ts):
     """Unix timestamp를 YYYY-MM-DD HH:MM:SS 형식과 YYYY-MM-DD 형식으로 변환"""
     if not ts: return None, None
@@ -206,8 +218,8 @@ def update_simple_version(new_data, stop_code, crawl_start_time):
             print("⚠️ 기존 Simple 및 Thread Full 파일 없음 - 현재 결과를 Simple로 저장")
 
     # 중복 제거 및 병합
-    existing_codes = {post['code'] for post in existing_posts}
-    new_items = [p for p in new_data if p['code'] not in existing_codes]
+    existing_codes = {post.get('platform_id') or post.get('code') for post in existing_posts}
+    new_items = [p for p in new_data if (p.get('platform_id') or p.get('code')) not in existing_codes]
     duplicate_count = len(new_data) - len(new_items)
     
     merged_posts = new_items + existing_posts
@@ -294,7 +306,8 @@ def run():
                 full_data = json.load(f)
                 posts = full_data.get('posts', []) if isinstance(full_data, dict) else full_data
                 for p in posts:
-                    all_posts_map[p['code']] = p
+                    pid = p.get('platform_id') or p.get('code')
+                    all_posts_map[pid] = p
                 
                 if isinstance(full_data, dict):
                     max_sequence_id = full_data.get('metadata', {}).get('max_sequence_id', 0)
@@ -306,7 +319,7 @@ def run():
                 if CRAWL_MODE == "update only":
                     if posts:
                         # 최신순 5개 추출 (삭제 방지용 징검다리 전략)
-                        stop_codes = [p['code'] for p in posts[:5]]
+                        stop_codes = [p.get('platform_id') or p.get('code') for p in posts[:5]]
                         print(f"🔄 UPDATE ONLY 모드: {stop_codes} 중 하나라도 발견 시 수집을 중단합니다.")
         except Exception as e:
             print(f"⚠️ 기존 데이터 로드 실패: {e}")
@@ -475,42 +488,34 @@ def run():
 
                 created_at, time_text = format_timestamp(post.get("taken_at"))
 
-                post_info = {
-                    "id": code,
-                    "code": code,
+                post_info = reorder_post({
+                    "platform_id": code,
                     "root_code": root_code,
-                    "pk": post.get("pk"),
-                    "user": user.get("username"),
                     "username": user.get("username"),
                     "display_name": user.get("full_name") or user.get("username"),
-                    "user_link": f"https://www.threads.net/@{user.get('username')}",
                     "full_text": caption.get("text") if caption else "",
+                    "media": images,
+                    "created_at": created_at,
+                    "date": created_at.split(' ')[0] if created_at else None,
+                    "url": f"https://www.threads.net/@{user.get('username')}/post/{code}",
+                    "sns_platform": "threads",
                     "like_count": post.get("like_count", 0),
                     "reply_count": extra_info.get("direct_reply_count", 0),
                     "repost_count": extra_info.get("repost_count", 0),
                     "quote_count": extra_info.get("quote_count", 0),
-                    "timestamp": created_at,
-                    "created_at": created_at,
-                    "time_text": time_text,
-                    "date": created_at.split(' ')[0] if created_at else None,
-                    "url": f"https://www.threads.net/@{user.get('username')}/post/{code}",
-                    "post_url": f"https://www.threads.net/@{user.get('username')}/post/{code}",
-                    "media": images,
-                    "images": images,
+                    "pk": post.get("pk"),
                     "media_type": post.get("media_type"),
                     "content_type": content_type,
-                    "sns_platform": "threads",
-                    "source": "network"
-                }
+                    "source": "network",
+                    "crawled_at": datetime.now().isoformat(timespec='milliseconds'),
+                    "sequence_id": None
+                })
 
                 # 💡 [개선] 메타데이터 보존 로직
                 existing = all_posts_map.get(code)
                 if existing:
                     post_info['crawled_at'] = existing.get('crawled_at')
                     post_info['sequence_id'] = existing.get('sequence_id')
-                else:
-                    post_info['crawled_at'] = datetime.now().isoformat(timespec='milliseconds')
-                    post_info['sequence_id'] = None # 나중에 일괄 부여
 
                 # 유효성 검사: 텍스트가 없고 이미지도 없는 경우 제외
                 if not post_info['full_text'] and not post_info['media']:
@@ -581,41 +586,32 @@ def run():
                                 if src and "scontent" in src and "s150x150" not in src:
                                     images.append(src)
 
-                            post_info = {
-                                "id": code,
-                                "code": code,
-                                "pk": None, # DOM에서는 PK 알 수 없음
-                                "user": username,
+                            post_info = reorder_post({
+                                "platform_id": code,
                                 "username": username,
                                 "display_name": username,
-                                "user_link": f"https://www.threads.net/@{username}",
                                 "full_text": cleaned_text,
+                                "media": list(set(images)),
+                                "created_at": created_at,
+                                "date": created_at.split(' ')[0] if created_at else None,
+                                "url": f"https://www.threads.net/@{username}/post/{code}",
+                                "sns_platform": "threads",
+                                "pk": None, # DOM에서는 PK 알 수 없음
                                 "like_count": -1,
                                 "reply_count": -1,
                                 "repost_count": -1,
                                 "quote_count": -1,
-                                "timestamp": created_at,
-                                "created_at": created_at,
-                                "time_text": time_text,
-                                "date": created_at.split(' ')[0] if created_at else None,
-                                "url": f"https://www.threads.net/@{username}/post/{code}",
-                                "post_url": f"https://www.threads.net/@{username}/post/{code}",
-                                "media": list(set(images)),
-                                "images": list(set(images)),
-                                "media_type": None,
                                 "content_type": "carousel" if len(images) > 1 else ("image" if images else "text"),
-                                "sns_platform": "threads",
-                                "source": "initial_dom"
-                            }
+                                "source": "initial_dom",
+                                "crawled_at": datetime.now().isoformat(timespec='milliseconds'),
+                                "sequence_id": None
+                            })
 
                             # 💡 [개선] 메타데이터 보존
                             existing = all_posts_map.get(code)
                             if existing:
                                 post_info['crawled_at'] = existing.get('crawled_at')
                                 post_info['sequence_id'] = existing.get('sequence_id')
-                            else:
-                                post_info['crawled_at'] = datetime.now().isoformat(timespec='milliseconds')
-                                post_info['sequence_id'] = None
 
                             collected_data.append(post_info)
                             print(f"   + [DOM] [{code}] {cleaned_text.replace('\n', ' ')[:15]}... (현재 {len(collected_data)}/{TARGET_LIMIT if TARGET_LIMIT else '무제한'})")
@@ -673,9 +669,11 @@ def run():
             # 중복 제거 (Network 데이터 우선)
             unique_posts = {}
             for p in [x for x in collected_data if x['source'] == 'initial_dom']:
-                unique_posts[p['code']] = p
+                pid = p.get('platform_id') or p.get('code')
+                unique_posts[pid] = p
             for p in [x for x in collected_data if x['source'] == 'network']:
-                unique_posts[p['code']] = p
+                pid = p.get('platform_id') or p.get('code')
+                unique_posts[pid] = p
 
             final_list = list(unique_posts.values())
             
@@ -683,20 +681,22 @@ def run():
             if TARGET_LIMIT > 0:
                 final_list = final_list[:TARGET_LIMIT]
 
-            # 💡 [개선] 신규 게시물에 sequence_id 부여
+            # 전체 리스트 업데이트
+            for p in final_list:
+                pid = p.get('platform_id') or p.get('code')
+                all_posts_map[pid] = p
+
+            # 💡 [개선] 신규 및 누락된 모든 게시물에 sequence_id 부여
             # crawled_at 기준 오름차순(과거->최신)으로 정렬하여 ID 순차 부여
-            new_posts_to_id = [p for p in final_list if p.get('sequence_id') is None]
+            new_posts_to_id = [p for p in all_posts_map.values() if p.get('sequence_id') is None]
             new_posts_to_id.sort(key=lambda x: x.get('crawled_at') or '')
             
             for p in new_posts_to_id:
                 max_sequence_id += 1
                 p['sequence_id'] = max_sequence_id
 
-            # 전체 리스트 합치기 (기존 데이터 중 이번에 수집 안 된 것 포함)
-            for p in final_list:
-                all_posts_map[p['code']] = p
-            
-            final_merged_list = sorted(all_posts_map.values(), key=lambda x: x.get('sequence_id', 0), reverse=True)
+            # 최종 정렬 및 필드 순서 통일 적용
+            final_merged_list = [reorder_post(p) for p in sorted(all_posts_map.values(), key=lambda x: x.get('sequence_id', 0), reverse=True)]
 
             print(f"\n💾 최종 데이터 {len(final_merged_list)}개 저장 중...")
             

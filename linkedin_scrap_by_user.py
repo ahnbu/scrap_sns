@@ -52,9 +52,9 @@ def migrate_old_data(user_id):
     # 1. full 파일 이동 및 이름 변경
     if os.path.exists(old_dir):
         for f in os.listdir(old_dir):
-            if f.startswith("linkedin_python_full_") and f.endswith(".json"):
+            if f.startswith("linkedin_py_full_") and f.endswith(".json"):
                 old_path = os.path.join(old_dir, f)
-                new_filename = f.replace("linkedin_python_full_", f"linkedin_{user_id}_full_")
+                new_filename = f.replace("linkedin_py_full_", f"linkedin_{user_id}_full_")
                 new_path = os.path.join(new_dir, new_filename)
                 if not os.path.exists(new_path):
                     os.rename(old_path, new_path)
