@@ -1,23 +1,15 @@
 {
-  "primaryFeature": "unified_data_schema",
+  "primaryFeature": "threads_scrap_diagnosis",
   "features": {
+    "threads_scrap_diagnosis": {
+      "status": "do",
+      "updatedAt": "2026-02-12T19:10:00Z",
+      "planFile": "docs/01-plan/features/threads_scrap_diagnosis.plan.md"
+    },
     "unified_data_schema": {
       "status": "plan",
       "updatedAt": "2026-02-12T13:30:00Z",
       "planFile": "docs/01-plan/features/unified_data_schema.plan.md"
-    },
-    "x_ui_and_ordering_fix": {
-      "status": "plan",
-      "updatedAt": "2026-02-12T12:15:00Z",
-      "planFile": "docs/01-plan/features/x_ui_and_ordering_fix.plan.md"
-    },
-    "x_realtime_scrap": {
-      "status": "report",
-      "updatedAt": "2026-02-12T11:40:00Z"
-    },
-    "x_bookmarks_scrap": {
-      "status": "report",
-      "updatedAt": "2026-02-12T11:05:00Z"
     }
   }
 }

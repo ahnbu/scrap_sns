@@ -40,6 +40,8 @@ THREADS_PW = os.getenv("THREADS_PW")
 
 # ✨ 테스트용 제한 개수 (0으로 설정하면 제한 없이 끝까지 수집)
 TARGET_LIMIT = 0  # 테스트용으로 5개만 수집
+DEBUG_LOG = False  # 상세 로깅 비활성화
+DEBUG_SAVE = False # 응답 JSON 저장 비활성화
 
 # 🔄 크롤링 범위 설정 (CLI 인자로 받음)
 # - "all": 처음부터 끝까지 전체 수집
@@ -203,7 +205,7 @@ def update_simple_version(new_data, stop_code, crawl_start_time):
                     # 상세 정보는 빼고 기초 정보만 Simple로 변환
                     for p in full_posts:
                         simple_item = {
-                            "code": p['code'],
+                            "code": p.get('platform_id') or p.get('code'),
                             "username": p.get('username'),
                             "full_text": p.get('full_text', '')[:100] + "...", # 스니펫화
                             "created_at": p.get('created_at'),
@@ -362,7 +364,17 @@ def run():
             if response.request.resource_type in ["xhr", "fetch"]:
                 try:
                     if "graphql" in response.url or "query" in response.url:
-                        json_data = response.json()
+                        try:
+                            json_data = response.json()
+                        except:
+                            return
+
+                        if DEBUG_SAVE:
+                            os.makedirs("docs/temp", exist_ok=True)
+                            ts = datetime.now().strftime('%H%M%S_%f')
+                            with open(f"docs/temp/threads_res_{ts}.json", "w", encoding="utf-8") as f:
+                                json.dump(json_data, f, ensure_ascii=False, indent=2)
+
                         data_part = json_data.get("data", {})
                         if not data_part: return
 
@@ -375,6 +387,7 @@ def run():
                                     if TARGET_LIMIT > 0 and len(collected_data) >= TARGET_LIMIT: break
                                     node = edge.get("node", {})
                                     if node: process_network_post(node)
+                            return
 
                         # 구조 2: sections 방식 (최신 JS 방식)
                         saved_posts = data_part.get("text_post_app_user_saved_posts", {})
@@ -384,8 +397,8 @@ def run():
                                 items = section.get("items", [])
                                 for item in items:
                                     if TARGET_LIMIT > 0 and len(collected_data) >= TARGET_LIMIT: break
-                                    # item 자체를 넘겨야 thread_items 전체를 볼 수 있음
                                     process_network_post(item)
+                            return
                 except: pass
 
         def process_network_post(node):
@@ -429,7 +442,7 @@ def run():
                     return # 함수 종료
                 
                 # 이미 수집된 목록에 있는지 확인 (중복 방지)
-                if any(p['code'] == code for p in collected_data):
+                if any(p.get('platform_id') == code for p in collected_data):
                     continue
 
                 # ==================================================
@@ -577,7 +590,7 @@ def run():
                             cleaned_text = clean_text(raw_text, username)
                             
                             # 중복 체크 (code 기준)
-                            if any(p['code'] == code for p in collected_data):
+                            if any(p.get('platform_id') == code for p in collected_data):
                                 continue
 
                             images = []
