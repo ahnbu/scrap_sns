@@ -229,116 +229,134 @@ class LinkedinScraper:
         if "included" not in json_data:
             return
 
-        # included 배열 순회
         included = json_data.get("included", [])
-        
-        # included 내의 객체들을 dict로 매핑 (URN -> Object)
-        # 참조 해결을 위해 필요할 수 있음
-        # urn_map = {item.get("entityUrn"): item for item in included}
+        # 참조 해결을 위한 URN 맵 생성
+        self.urn_map = {item.get("entityUrn"): item for item in included if item.get("entityUrn")}
 
         for item in included:
-            # 타겟 엔티티 타입 확인
-            # EntityResultViewModel이 실제 화면에 보여지는 카드 정보를 담고 있음
             if item.get("$type") == "com.linkedin.voyager.dash.search.EntityResultViewModel":
                 self.extract_post_from_view_model(item)
+
+    # 게시물 미디어 URL 패턴 화이트리스트
+    MEDIA_PATTERNS = [
+        "feedshare-shrink_",               # 일반 이미지 게시글
+        "image-shrink_",                    # 뉴스레터/기사 이미지
+        "feedshare-document-cover-images_", # 슬라이드/PDF 커버
+        "feedshare-document-images_",       # 슬라이드/PDF 이미지
+        "videocover-",                      # 동영상 썸네일
+    ]
+
+    def _classify_content_type(self, images):
+        """미디어 URL 패턴으로 콘텐츠 유형 분류"""
+        if not images:
+            return "text"
+        for img in images:
+            if "videocover-" in img:
+                return "video"
+            if "feedshare-document" in img:
+                return "document"
+        return "carousel" if len(images) > 1 else "image"
+
+    def find_images_recursively(self, obj, found_urls=None):
+        """객체 내에서 모든 이미지 URL을 재귀적으로 탐색"""
+        if found_urls is None: found_urls = []
+        if not obj or not isinstance(obj, (dict, list)): return found_urls
+
+        if isinstance(obj, list):
+            for item in obj: self.find_images_recursively(item, found_urls)
+            return found_urls
+
+        # 1. VectorImage 구조 (가장 표준적인 고화질 이미지)
+        if obj.get("$type") == "com.linkedin.common.VectorImage" or "artifacts" in obj:
+            root_url = obj.get("rootUrl", "")
+            artifacts = obj.get("artifacts", [])
+            if artifacts:
+                # 가장 큰 이미지 선택
+                best = sorted(artifacts, key=lambda x: x.get("width", 0), reverse=True)[0]
+                segment = best.get("fileIdentifyingUrlPathSegment", "")
+                full_url = root_url + segment if root_url else segment
+                if full_url and "media.licdn.com" in full_url:
+                    found_urls.append(full_url)
+        
+        # 2. 고정 URL 구조
+        elif "url" in obj and isinstance(obj["url"], str) and "media.licdn.com" in obj["url"]:
+            found_urls.append(obj["url"])
+
+        # 3. 더 깊이 탐색
+        for k, v in obj.items():
+            if isinstance(v, (dict, list)):
+                self.find_images_recursively(v, found_urls)
+        
+        return list(set(found_urls))
 
     def extract_post_from_view_model(self, item):
         try:
             entity_urn = item.get("entityUrn", "")
-            # URN에서 Activity ID 추출 (예: urn:li:activity:7422...)
             activity_id = extract_urn_id(entity_urn)
             
             if not activity_id or activity_id in self.collected_codes:
                 return
 
-            # 중복 체크 (기존 수집 데이터)
             if activity_id in self.existing_codes:
-                # UPDATE ONLY 모드이고, stop_codes에 포함된 경우 조기 종료 트리거
-                if CRAWL_MODE == "update only" and activity_id in self.stop_codes:
-                     if not self.stopped_early:
-                        print(f"   🛑 기준 게시물 발견 ({activity_id}) - 조기 종료 예정")
-                        self.stopped_early = True
-                return
+                # 이미지가 없는 기존 데이터라면 업데이트를 위해 통과 (선택 사항)
+                existing_post = self.existing_posts_map.get(activity_id, {})
+                if existing_post.get("media"):
+                    if CRAWL_MODE == "update only" and activity_id in self.stop_codes:
+                        if not self.stopped_early: self.stopped_early = True
+                    return
 
-            # 1. 텍스트 (summary.text)
+            # 1. 텍스트
             text_obj = item.get("summary", {})
             text = text_obj.get("text", "")
             
-            # DEBUG: 개행 문자 포함 여부 확인
-            if text:
-                has_newline = "\n" in text
-                print(f"   🔍 [Debug] Activity {activity_id} - Raw text has newline: {has_newline}")
-                if not has_newline and len(text) > 100:
-                    print(f"   🔍 [Debug] Raw text (truncated): {text[:100]}...")
-            
-            # 2. 작성자 및 링크
-            # actorNavigationUrl: https://www.linkedin.com/in/abcd...?
+            # 2. 작성자
             actor_url_full = item.get("actorNavigationUrl", "")
             user_link = actor_url_full.split("?")[0]
-            
-            # title: 이름 (예: "Hong GilDong")
             title_obj = item.get("title", {})
             username = title_obj.get("text", "")
 
-            # primarySubtitle: 프로필 슬로건/헤드라인
             subtitle_obj = item.get("primarySubtitle", {})
             profile_slogan = subtitle_obj.get("text", "")
-            
-            # 3. 날짜 (Activity ID 기반)
             date_str = get_date_from_snowflake_id(activity_id)
 
-            # 4. 이미지
+            # 3. 이미지 수집 (강화된 로직)
             images = []
             if INCLUDE_IMAGES:
-                embedded = item.get("entityEmbeddedObject", {})
-                img_obj = embedded.get("image", {})
-                if img_obj:
-                    img_attrs = img_obj.get("attributes", [])
-                    for attr in img_attrs:
-                        detail = attr.get("detailData", {})
-                        vector_img = detail.get("vectorImage", {})
-                        if vector_img:
-                            root_url = vector_img.get("rootUrl", "")
-                            artifacts = vector_img.get("artifacts", [])
-                            # 가장 큰 이미지 찾기
-                            if artifacts:
-                                sorted_artifacts = sorted(artifacts, key=lambda x: x.get("width", 0), reverse=True)
-                                best_artifact = sorted_artifacts[0]
-                                path_segment = best_artifact.get("fileIdentifyingUrlPathSegment", "")
-                                full_img_url = root_url + path_segment
-                                images.append(full_img_url)
-                        
-                        # Strategy 2: imageUrl.url (Fallback)
-                        image_url_obj = detail.get("imageUrl", {})
-                        if image_url_obj and image_url_obj.get("url"):
-                            images.append(image_url_obj.get("url"))
-
-
-            # 5. 게시물 링크
-            # navigationUrl
-            post_url = item.get("navigationUrl", "")
+                # 메인 아이템 내의 모든 이미지 경로 탐색
+                images = self.find_images_recursively(item)
+                
+                # 추가로 entityEmbeddedObject 탐색
+                embedded = item.get("entityEmbeddedObject")
+                if embedded:
+                    images.extend(self.find_images_recursively(embedded))
             
-            # 4. 상대적 시간 (UI 표시용)
+            # 화이트리스트 방식: 게시물 미디어 패턴만 수집
+            final_images = []
+            for img in set(images):
+                if any(pattern in img for pattern in self.MEDIA_PATTERNS):
+                    final_images.append(img)
+
+            post_url = item.get("navigationUrl", "")
             time_text = item.get("secondarySubtitle", {}).get("text", "").replace(" • ", "").strip()
 
             post_data = reorder_post({
                 "platform_id": activity_id,
+                "sns_platform": "linkedin",
                 "username": user_link.split("/in/")[-1].replace("/", "") if "/in/" in user_link else username,
                 "display_name": username,
                 "full_text": clean_text(text),
-                "media": list(set(images)),
-                "created_at": date_str,
-                "date": date_str,
+                "media": final_images,
                 "url": post_url,
-                "sns_platform": "linkedin",
-                "timestamp": f"{date_str} 00:00:00", # LinkedIn은 정확한 시간 정보 부족 시 날짜만 사용
+                "created_at": date_str,
+                "date": date_str[:10] if date_str else None,
+                "crawled_at": CRAWL_START_TIME.isoformat(timespec='milliseconds'),
+                "source": "network",
+                "local_images": [],
                 "time_text": time_text,
                 "profile_slogan": profile_slogan,
                 "user_link": user_link,
-                "content_type": "carousel" if len(images) > 1 else ("image" if images else "text"),
-                "source": "network",
-                "crawled_at": CRAWL_START_TIME.isoformat(timespec='milliseconds'),
-                "sequence_id": 0 # 나중에 save_results에서 일괄 부여
+                "content_type": self._classify_content_type(final_images),
+                "sequence_id": 0
             })
 
             # 💡 [개선] 기존 메타데이터 보존 로직
