@@ -1,0 +1,2872 @@
+# Data Export Report
+
+- **Generated At**: 2026-02-12T11:11:23.566761
+- **Total Posts**: 234
+
+---
+
+## 1. cactus.kimchi
+> **Date**: 2026-02-11 16:11:01
+> **Link**: [Original Post](https://www.threads.com/@cactus.kimchi/post/DUm37rRDknp)
+
+나만의 논문 도서관 만들기
+19시간
+나만의 논문 도서관 만드는 도안을 드립니다.
+제 시스템은 너무 저에게 맞춰져 있어서 배포가 어렵습니다. 클로드랑 상의(?)하셔서 본인에게 맞춰 제작해보세요..
+준비물;
+zotero, zotero api, zotmoov, obsidian, openai api (다른 api 사용 가능, 로컬은 느림). 그리고 적당한 reading log md.j2 (연구 질문, 방법, 결과, 함의 등등)
+구조는.. (저는 cli를 interactive하게 사용)
+1. 각 페이퍼별 reading log (개별 논문 정리)
+2. 폴더구조는 zotero 따르기 (논문 구조화, 마음대로)
+3. 페이퍼별, 폴더별 연구 유사점, 차별점 찾기 (구조적 리터러쳐리뷰)
+/
+
+### Images
+![Image](https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/628045462_17939461392117371_5354627509157712703_n.jpg?stp=cp6_dst-jpegr_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTkyMHgxNDQwLmhkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2QEpX_2rHCED2n1eY0LG_bjid-0FhA9jPTivhzhq0v4nXL8eMMcbG-2fCQH_0Uodm3U&_nc_ohc=BfD814rwOdkQ7kNvwENy8lu&_nc_gid=vDHQkm1OjxvbT0sFF-m-7g&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyOTk5NDUyNjU4OTQ3MTIwOQ%3D%3D.3-ccb7-5&oh=00_AfvfiDLuFza03xXw3QIWcAs9LISAbOmwDE1wplH1Ix-wvw&oe=69932528&_nc_sid=10d13b&se=-1)
+
+---
+
+## 2. keke_appa
+> **Date**: 2026-02-11 16:22:51
+> **Link**: [Original Post](https://www.threads.com/@keke_appa/post/DUm-zDsEkn3)
+
+오늘도 스레드에서 욕들어 처먹는 어리버리 바이브코딩 딸각충들을 위한 개발가이드. 디자인가이드, 방법론 가이드 문서와 사용법을 만들었어요. 욕그만들으시라고 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+github.com/johun…
+
+### Images
+![Image](https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/631489976_17874847140507614_5724412297782130255_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTI4NngxNTk2LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QE1s6juGQqI26VRjJcB0KIWbYsZJUMIO6212qKV5WpHrUGOfIPy7D9GzWfdW9zviEs&_nc_ohc=D1MEwKmeAyEQ7kNvwGVcS8m&_nc_gid=YhuZRhwFnSldU4-UTMBPsQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMDAyNDcyMDY2MjgwOTA3OQ%3D%3D.3-ccb7-5&oh=00_Afs0SsxnCqcHE4ZIX5YQfOaShPI-ms7OBjq8aAIBpwpaag&oe=699221CC&_nc_sid=10d13b)
+
+---
+
+## 3. aicoffeechat
+> **Date**: 2026-02-11 08:27:57
+> **Link**: [Original Post](https://www.threads.com/@aicoffeechat/post/DUmEccXCjhM)
+
+맥킨지 스타일로 AI 발표 자료 만드는 법
+아래 사례는 키미2를 활용한 AI로 제작된 슬라이드. 맥킨지 스타일이 접목이 되어있어 꽤 유용합니다. 키미2 직원이 공유해주는 프롬프트를 변형해서 여러분만의 프롬프트를 이것저것 바꿔보세요.수정도 가능하기에 초안으로 쓰기엔 좋습니다.
+보고서 작성 때문에 야근하는 동료들에게 꼭 공유해 주세요
+/
+
+### Images
+![Image](https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/628030654_1586186992521906_600482610511785652_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDQxNC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QFNPO_CvU5ZB4mM9cJJx24p172BZ8mCTwYhx3FVDCQSQEz1tBWL-_xcFx9PluYdU1g&_nc_ohc=EhZjHLg_-dQQ7kNvwGONysd&_nc_gid=KIGdDABlYLWra8z86hIfmQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyOTc2ODA3OTkwNzg5NTM3Mg%3D%3D.3-ccb7-5&oh=00_AfvZutffggrBfcYxSIeiELk_RE5VDR_OSp2Dmx9sO49X8w&oe=6991A9B2&_nc_sid=10d13b)
+
+---
+
+## 4. ddg.kang
+> **Date**: 2026-02-11 01:27:57
+> **Link**: [Original Post](https://www.threads.com/@ddg.kang/post/DUlWT4Ok5v0)
+
+클로드코드
+8시간
+@ddg.kang님에게 남긴 답글
+1. webfetch 도구 안쓰도록 금지시키기
+문제: webfetch 쓰다가 사이트 잘못 걸리면 거기서 멈춰서 아무것도 못 함.
+해결: fetch MCP나 Jina Reader MCP 사용하기.
+특히 클코에 돈 쓸 준비가 되어 있다면 Jina Reader MCP 추천 — 컨텍스트 토큰이 절약되어서 엄청나게 이득. fetch MCP는 무료면서 훨 좋음.
+/
+
+---
+
+## 5. ddg.kang
+> **Date**: 2026-02-11 01:27:57
+> **Link**: [Original Post](https://www.threads.com/@ddg.kang/post/DUlWTf6kyKL)
+
+클로드코드
+8시간
+클로드코드 꿀팁 — 개발자 출신들도 잘 모르는 것들
+어디서 베낀 거 아니고, 클코 5,000시간 사용하면서 직접 느낀 것들.
+/
+
+---
+
+## 6. easygpt2526
+> **Date**: 2026-02-10 14:27:57
+> **Link**: [Original Post](https://www.threads.com/@easygpt2526/post/DUkMWqNk9OY)
+
+쿠팡❌ 네이버❌
+이제는 Gemini가 진짜 ‘최저가’만 찾아준다.
+아래 프롬프트들로 난 월에 100만원씩 아낀다.
+/
+
+---
+
+## 7. claudeai
+> **Date**: 2026-02-11 07:27:57
+> **Link**: [Original Post](https://www.threads.com/@claudeai/post/DUl7Ra7kbje)
+
+Cowork is now available on Windows.
+We’re bringing full feature parity with MacOS: file access, multi-step task execution, plugins, and MCP connectors.
+번역하기
+/
+
+### Images
+![Image](https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/629589417_1258447813015728_6263977072047037056_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDM2MC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QFNPO_CvU5ZB4mM9cJJx24p172BZ8mCTwYhx3FVDCQSQEz1tBWL-_xcFx9PluYdU1g&_nc_ohc=m6Ol4J9LsCMQ7kNvwHDu6Ey&_nc_gid=KIGdDABlYLWra8z86hIfmQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyOTcyNzc0MDA0MDQyNzc0Mg%3D%3D.3-ccb7-5&oh=00_AfvyRsmeeZ1rs7y34m20gF_JZsQeyVtXeq97qG__EbtgVQ&oe=69919BCB&_nc_sid=10d13b)
+
+---
+
+## 8. yc_melan
+> **Date**: 2026-02-08 17:40:55
+> **Link**: [Original Post](https://www.threads.com/@claudeai/post/DUfZZGdE71B)
+
+AI 시대 바이브코딩이 가져올 개발자의 미래
+문득 현재 작곡가들의 변천사와 너무 닮았다는 생각이 들었다.
+
+과거 클래식 작곡가는 화성학, 대위법, 오케스트레이션을 깊이 알아야 했고 악기도 하나 이상 다룰 줄 알아야 했다. 악보를 읽을 줄 모르면 작곡 자체가 불가능했다.
+과거 개발자도 마찬가지였다. 메모리 관리, 어셈블리, OS 내부 구조를 직접 다뤄야 했고 코드를 한 줄 한 줄 직접 쓸 줄 알아야만 소프트웨어를 만들 수 있었다. 진입장벽이 곧 전문성이었다.
+
+---
+
+## 9. yc_melan
+> **Date**: 2026-02-08 17:41:02
+> **Link**: [Original Post](https://www.threads.com/@claudeai/post/DUfZZ8Wk5K_)
+
+바이브코딩 시대의 개발자도 똑같아질 거라고 본다.
+코드를 직접 치는 게 핵심이 아니라 AI 에이전트를 오케스트레이션해서 "어떤 제품을 만들 것인가"를 디렉팅하는 역할. 프로듀서가 보컬에게 "여기서 좀 더 감성적으로"라고 디렉션을 주듯 개발자도 AI에게 방향을 잡아주는 것이다.
+
+싱어송라이터가 직접 작곡하고 부르듯이 결국 서비스 개발자가 직접 자기 서비스를 만드는 시대가 온다.
+과거엔 "전략가"와 "개발자"가 따로 있어야 했지만 이제는 아이디어를 가진 사람이 직접 만든다. 그사람이 개발자 이자 전략가 이다.
+
+---
+
+## 10. appcast
+> **Date**: 2026-02-09 21:17:14
+> **Link**: [Original Post](https://www.threads.com/@claudeai/post/DUiW8Uekmf0)
+
+넵 playwright install —skills 까지 하셔서 skills 설치후 자연어로 시키시면 됩니다 !
+
+---
+
+## 11. appcast
+> **Date**: 2026-02-09 19:59:49
+> **Link**: [Original Post](https://www.threads.com/@claudeai/post/DUiOFVsEsXn)
+
+Playwright CLI 출시 
+1. MCP 사용 ,  2. CLI 사용했을때 의 토큰 사용차이.
+
+### Images
+![Image](https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/626297980_17940845619116278_5381979102222336265_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTA3Mng1NTMuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QFpqrSIQU_abOQKEdiSUh2S-HU5nhOIryJt3ygzezfVUouHKjXd6WEM4r-B1oFiGRo&_nc_ohc=HuDpItexWuUQ7kNvwHmvBq_&_nc_gid=wHjHHByzd8jGkRbQ_XiI4w&edm=AI6eXeABAAAA&ccb=7-5&ig_cache_key=MzgyODY4NDU3Mjc1NDg4ODE2Nw%3D%3D.3-ccb7-5&oh=00_AfuKf12bccWliFba3qsvoK7l6_QFBZ_OSwQjPzazoT3rTA&oe=6991B16A&_nc_sid=6efbad)
+
+---
+
+## 12. choi.openai
+> **Date**: 2026-02-09 08:00:05
+> **Link**: [Original Post](https://www.threads.com/@claudeai/post/DUg7t0qCE5C)
+
+75만명이 본 Opus 프롬프트입니다.
+
+Miles Deutscher가 공유한 프롬프트로 SEO 최적화 웹사이트, Claude 기반 앱, 개인용 대시보드 등 어떤 것도 5분 안에 구현할 수 있다고 밝혔습니다.
+
+해당 프롬프트는 AI를 기술 공동창업자 역할로 설정하고, 제품 기획부터 개발, 배포까지 전 과정을 맡기는 방식으로 구성되어 있습니다. 특히 단순히 잘 짜인 프롬프트보다 명확한 사양서를 기반으로 반복 피드백을 주는 방식이 더 효과적이라는 반응도 많습니다.
+
+실제로 Claude나 GPT 모델에 이 방식으로 반복 테스트를 돌리면 빠른 시간 내 MVP를 만들 수 있다는 점에서 많은 개발자들이 주목하고 있습니다.
+
+### Images
+![Image](https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/632079306_17942525157112832_5552770945888717043_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTE1OHgxNDgyLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHrZEwlxQG2vT4WR-40d1g1tv9hpabrYeXMxfKyGO1j0dEQiUTf41qCnJQ-2QDiG1w&_nc_ohc=T90DJO7OVkMQ7kNvwHYblnU&_nc_gid=5a4PADRlnVQnZvCun36hAg&edm=AI6eXeABAAAA&ccb=7-5&ig_cache_key=MzgyODMyMjMxNjkyNTI5MjA5OA%3D%3D.3-ccb7-5&oh=00_AfuKuZJP6BeAupQZnbN41FTIvx_7nsKlCH-mI-lgWPNmEA&oe=6991B88E&_nc_sid=6efbad)
+
+---
+
+## 13. bellman.pub
+> **Date**: 2026-02-05 20:30:18
+> **Link**: [Original Post](https://www.threads.com/@bellman.pub/post/DUX8tp_EvRN)
+
+🚀 oh-my-claudecode v4.0.0 릴리즈
+드디어 Claude Code에서 Codex + Gemini 동시 사용 가능!
+✨ 각 모델이 잘하는 걸 맡김:
+• Codex → 코드 리뷰, 플래닝, 분석
+• Gemini → 디자인, 글쓰기, 비전
+• Claude → 오케스트레이션
+이제
+@yeon.gyu.kim
+의 OmO 부러워하지 마세요
+전부 공식 cli를 콜하는 mcp니까, 밴과 ToS 위반도 두려워하지 마세요
+이제 가난에 허덕이지 마세요
+20불짜리 각 한개씩만 구독하세요.
+github.com/Yeach…
+github.com
+GitHub - Yeachan-Heo/oh-my-claudecode: Multi-agent orchestration for Claude Code with 5 execution modes: Autopilot (autonomous), Ultrapilot (3-5x parallel), Swarm (coordinated agents), Pipeline (sequential chains), Ecomode (token-efficient). 31+...
+
+---
+
+## 14. specal1849
+> **Date**: 2026-02-06 08:30:18
+> **Link**: [Original Post](https://www.threads.com/@specal1849/post/DUZLMwvkojo)
+
+다른건 필요없다 opus 4.6 기념으로 이런걸 주네요
+클로드 사용자분들 얼른 설정-사용량에 들어가셔서
+$50 무료 크레딧 받으십셔
+codex5.3 이랑 같이주네 도파민이 팽팽돕니다!!!
+
+### Images
+![Image](https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/627661158_17893452990406917_6374298405845732879_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTIzMXg4NTQuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QF82LUAalh7JXsvQOc0hykZECKaawB5az_aBLuQs-qBcGzFRgaIu9nI82Wzpl8BdhY&_nc_ohc=zda3P2HljRAQ7kNvwGTaBgD&_nc_gid=7iCh4B94-SxSmYT-nNfR3Q&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyNjEzODYxMzkxMTAyOTk5Mg%3D%3D.3-ccb7-5&oh=00_AfvpBz9_FJaPQE5eYy4gvljwloWxXF9H1IC9FspA2SBEEA&oe=698B625E&_nc_sid=10d13b)
+
+---
+
+## 15. gaebalsaybal
+> **Date**: 2026-02-05 17:30:18
+> **Link**: [Original Post](https://www.threads.com/@gaebalsaybal/post/DUWSRnukzT3)
+
+바이브코딩 Vibe coding
+1일
+37만원 짜리 Claude 1개월 결제 후기:
+Claude Max plan을 사용하며 매 주 새로운 제품을 출시 자동화를 구축함
+1주일에 1개씩 소프트웨어를 출시하다보니 아이디어를 생각하기도 귀찮아짐
+그래서 아이디어도 자동화함.
+다른나라엔 있는데 우리나라에만 없는 소프트웨어를 한국화해서 만들기
+이게 왜 좋냐면
+1. 이미 검증된 아이디어임
+2. ui/ux고민 안해도 됨
+자세한 파이프라인은 다음과 같아:
+/
+
+### Images
+![Image](https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/626758539_17846285301682596_6608512263687030938_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTgyOHgyNTIuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QF82LUAalh7JXsvQOc0hykZECKaawB5az_aBLuQs-qBcGzFRgaIu9nI82Wzpl8BdhY&_nc_ohc=B8Q7HGyJImIQ7kNvwGdQJzK&_nc_gid=7iCh4B94-SxSmYT-nNfR3Q&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyNTMyNTMwOTIyMzQ0OTg0Nw%3D%3D.3-ccb7-5&oh=00_AfuwanNHT862qEnWRN6uy6OkkGxhmXkBSS5p6BXjTcvLnw&oe=698B6A5D&_nc_sid=10d13b)
+
+---
+
+## 16. keke_appa
+> **Date**: 2026-02-04 00:55:51
+> **Link**: [Original Post](https://www.threads.com/@keke_appa/post/DUTTMTDEoas)
+
+코덱스앱 사랑스럽다. Open AI 코딩팀이 처음으로 먼가 한 것 같다. 인공지능으로 코딩하면서 이것은 필요한데 하는 기능들이 전부 다들어가 있다. 정말 가볍고 빠르고 완벽하다. 이제는 개인 프로젝트를 전부 하루만에 흡수하여 툴들이 만들어낸다.. 오토메이션 기능은 정말 편하다. 시간별로 혹은 정해신 간격으로 스케줄링이 있어서 프롬포트를 실행한다.  클로드도 곧 이런 것을 내놓을테도 그냥 이제는 코덱스나 클로드가 하는 것만 그대로 하면 될것 같다. 이리저리 안돌아다니고 그냥 툴들이 주는대로 받아 먹으면 될듯 싶다. 돈도 제일 많은 놈들이 개발하니깐. 서브에이전트 멀티에이전트 오케스트레이션 이런 거 다 없어질 것 같다.
+
+### Images
+![Image](https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/627686321_17873955192507614_4053696641123199796_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTA1N3g3NzQuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QEw_LITtFE6EmB4pF1PsIMYclAagPXoEUXIwz4ApDNf_96ah0AhRatvyWkZDGjdje4&_nc_ohc=ztkbuM2OAr4Q7kNvwE5SZLE&_nc_gid=oKTgBVcDcyBjKdv5IE53Aw&edm=AI6eXeABAAAA&ccb=7-5&ig_cache_key=MzgyNDQ4NDkxNjUzNzc1NTMwOA%3D%3D.3-ccb7-5&oh=00_AfsT-f0ySUZyNGnv7HLHIlhRg5XFkOEt71jOKg0BKDq6Jg&oe=698B7526&_nc_sid=6efbad)
+
+---
+
+## 17. inner.builder
+> **Date**: 2026-02-04 07:40:42
+> **Link**: [Original Post](https://www.threads.com/@inner.builder/post/DUUBhjKgeKZ)
+
+obsidian x claudian (obsidian plugin) x notebooklm mcp 조합은 엄청나네..!
+
+지식 관리의 확장성과 아이디어 브레인스토밍의 확장성이 달라진다..
+
+---
+
+## 18. geumverse_ai
+> **Date**: 2026-02-04 11:01:42
+> **Link**: [Original Post](https://www.threads.com/@geumverse_ai/post/DUUYhntk4Ey)
+
+Anthropic이 Claude Cowork 에 법률,영업,마케팅,데이터 분석 등 부서별 반복 업무를 자동화하는 플러그인을 Github에 오픈소스로 공개했어요
+
+어떤 변화를 가져올지 궁금하네요
+
+---
+
+## 19. xeona.xyz
+> **Date**: 2026-02-04 18:53:53
+> **Link**: [Original Post](https://www.threads.com/@xeona.xyz/post/DUVOj-xAVR3)
+
+이제 코딩보다 'AI 부하직원' 관리 능력이 연봉 정함
+
+구글 클라우드에서 '2026 AI 에이전트 트렌드' 리포트 낸 거 다들 봄? 
+
+200페이지 넘는 거 읽기 귀찮은 형들을 위해 엑기스만 뽑아옴.
+
+---
+
+## 20. kook0526
+> **Date**: 2026-01-30 20:54:40
+> **Link**: [Original Post](https://www.threads.com/@kook0526/post/DUIjrz2DkLv)
+
+제안서 작성, RFP 하나로 1분 만에 끝냈습니다
+
+대행사에서 제안서 하나 쓰려면
+RFP 분석하고, 시장 조사하고,
+기획 정리하고, 슬라이드 만들고...
+이게 며칠은 기본으로 걸리잖아요.
+
+그래서 이번에 클로드코드로
+입찰 경쟁 제안서 에이전트를 만들었습니다.
+
+프로세스는 딱 3단계입니다.
+① RFP 분석
+② 시장 현황 분석 및 상황 분석
+③ 제안서 작성
+
+RFP 파일 하나만 넣으면
+1분 이내에 제안서가 완성됩니다.
+
+현재 완성도는 70% 정도인데,
+조금만 더 보완하면
+
+90%는 에이전트가 만들고
+나머지 10%는 디자인 제작물 추가하고
+다듬는 정도로 제안서 하나를 완성할 수 있을 것 같습니다.
+
+제안서 쓰느라 며칠씩 야근하셨던 분들,
+이 과정 정리해서 유튜브로 공유할게요.
+
+필요하신 분은 댓글로 "저요!" 남겨주세요 🙌
+
+### Images
+![Image](https://scontent-ssn1-1.cdninstagram.com/o1/v/t16/f2/m84/AQMzLzyptbY1BM-oEXsxsbBwzkKtnEEcX2C1FQTxZeTj310n0MxxcFXBuoYeYwhcpvHmMKypWDFUhA9qqmL1zF7IfyprpYz2UIzbcG0.mp4?_nc_cat=109&_nc_sid=5e9851&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=IkEymZSWgr4Q7kNvwH_y_oN&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uRkVFRC5DMy4xMDQ0LmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTc5Mzk5ODE0NjkxMTAzMTcsImFzc2V0X2FnZV9kYXlzIjo2LCJ2aV91c2VjYXNlX2lkIjoxMDE2NCwiZHVyYXRpb25fcyI6MjMsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=epNLdRfJhjwdCc1_pHVhjw&_nc_zt=28&vs=e4b47bc9a2d5b42e&_nc_vs=HBkcFQIYTGlnX2JhY2tmaWxsX3RpbWVsaW5lX3ZvZC9EQzQxOUVFNDU3NzAzMDg1OUYxOTgxMTVDRDgzMjNCRl92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAKAAYABsCiAd1c2Vfb2lsATEScHJvZ3Jlc3NpdmVfcmVjaXBlATEVAAAm2sDy662U3j8VAigCQzMsF0A31T987ZFoGBJkYXNoX2Jhc2VsaW5lXzFfdjERAHXqB2XongEA&oh=00_AftleKL_QOdpzUb5VFvwVf0ZTDsg54C47AIOdVbQsZ48qA&oe=6987888F)
+
+---
+
+## 21. gimminseog67
+> **Date**: 2026-01-29 21:52:07
+> **Link**: [Original Post](https://www.threads.com/@gimminseog67/post/DUGGMMmD-jS)
+
+https://github.com/moltbot/moltbot
+
+Crawdbot(다시 Moltbot)은 노다지가 맞네요. 브라우징(browsing) 기능만 개조해서 MCP를 만들어 봤는데, 지금까지 써본 그 어떤 브라우징 자동화보다 빨랐습니다.
+
+네이버 로그인이나 구글 검색 등 기존 Antigravity가 너무 느려 답답했던 부분들이 전부 해결되었습니다!
+
+작업 과정은 다음과 같습니다.
+
+### Images
+![Image](https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/624509264_17872210689521221_1266861709758978837_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTEyNHg5MDQuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QGoYMK2vL26ULU5RpkLt2Y-dnYlaZRi-5BC3_8VDbtDaJhrxXM-qjx9v6F7b6r1WN0&_nc_ohc=aA5URpNx3IAQ7kNvwEzChMW&_nc_gid=epNLdRfJhjwdCc1_pHVhjw&edm=AI6eXeABAAAA&ccb=7-5&ig_cache_key=MzgyMDc2ODU1NjU0ODYxNDE2OA%3D%3D.3-ccb7-5&oh=00_Afsar7Q5ne91oa_GAxRNS3enk0F5K8Ipnfd0ZZOvYFQ2tA&oe=698B857E&_nc_sid=6efbad)
+![Image](https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/624078660_17872210713521221_4008929365937260116_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTIxNHg4MzAuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QGoYMK2vL26ULU5RpkLt2Y-dnYlaZRi-5BC3_8VDbtDaJhrxXM-qjx9v6F7b6r1WN0&_nc_ohc=Qlrjfg17GvUQ7kNvwFvdm_N&_nc_gid=epNLdRfJhjwdCc1_pHVhjw&edm=AI6eXeABAAAA&ccb=7-5&ig_cache_key=MzgyMDc2ODU1NTc4NTI1Njc4OQ%3D%3D.3-ccb7-5&oh=00_AfsySEFOD_g_V2AX-kGZFkzhHz6pgwmhcvRaJmHC3bOKew&oe=698B6EA1&_nc_sid=6efbad)
+
+---
+
+## 22. kudi.uxui
+> **Date**: 2026-01-17 00:43:42
+> **Link**: [Original Post](https://www.threads.com/@kudi.uxui/post/DTk7flMEgrz)
+
+
+
+### Images
+![Image](http://static.cdninstagram.com/rsrc.php/null.jpg)
+
+---
+
+## 23. dddesign.io
+> **Date**: 2026-01-10 17:14:29
+> **Link**: [Original Post](https://www.threads.com/@dddesign.io/post/DTUrUKhCfkX)
+
+
+
+### Images
+![Image](http://static.cdninstagram.com/rsrc.php/null.jpg)
+
+---
+
+## 24. kkongdon_story
+> **Date**: 2026-01-27 00:00:00
+> **Link**: [Original Post](https://www.threads.com/@kkongdon_story/post/DT_1J1ukXjz)
+
+더 퍼스트 3기에서 진행하는
+공저책 프로젝트에 참여하게 됐어.
+우리 조는 럭키세븐, 7조야.
+여기서는 '결핍'에 관해 에세이를 쓸거야.
+다들 결핍을 어떻게 극복 했는지.
+또 나의 ...
+
+---
+
+## 25. kkongdon_story
+> **Date**: 2026-01-27 00:00:00
+> **Link**: [Original Post](https://www.threads.com/@kkongdon_story/post/DUAixXHkcOq)
+
+이세돌이 이긴 것은 계산 능력이
+알파고보다 더 뛰어나서가 아니다.
+오히려 계산을 거부했기 때문이다.
+AI는 확률 높은 정답만을 쫓도록 설계되어 있다.
+그 견고한 성을 무너뜨린 것은...
+
+---
+
+## 26. kkongdon_story
+> **Date**: 2026-01-27 00:00:00
+> **Link**: [Original Post](https://www.threads.com/@kkongdon_story/post/DUA_fBqESd6)
+
+북크북크님에게 퇴고 수업을 받고 왔어.
+북크님은 AI에 대한 지식과 통찰이 뛰어나셔서
+나의 원고 내용과 맥락을 정확히 이해하셔.
+편집자들은 이 많은 지식을
+어떻게 다 가지고 있는지...
+
+---
+
+## 27. kkongdon_story
+> **Date**: 2026-01-28 00:00:00
+> **Link**: [Original Post](https://www.threads.com/@kkongdon_story/post/DUCm2nZkRcW)
+
+스레드에 방향성을 못 잡겠다면
+1. 내가 가장 재미있는 것을 주제로
+2. 해당 주제에 팔로워가 많은 계정을 검색
+3. 글의 구조를 보고 변주해 보기
+4. 내가 해당 주제로 사람들에...
+
+---
+
+## 28. kkongdon_story
+> **Date**: 2026-01-30 12:02:50
+> **Link**: [Original Post](https://www.threads.com/@kkongdon_story/post/DUFTraLkVOW)
+
+나를 나타내는 동사 하나를 찾자.
+기록한다, 연결한다, 관찰한다,
+가르친다, 설명한다 등
+나를 힘들게 설명 말고
+행동으로 보이게 하자....
+
+---
+
+## 29. kkongdon_story
+> **Date**: 2026-01-30 12:02:50
+> **Link**: [Original Post](https://www.threads.com/@kkongdon_story/post/DUFb5JKkajY)
+
+제발 AI에게 “마케팅 관점에서
+내 스레드 글을 평가해줘”
+라고 말하지 마세요.
+내 스레드 글이 마케팅적으로
+매력적인지 판단하려면
+프롬프트 안에 아래 7가지 단어가
+반드시 들어가야...
+
+---
+
+## 30. visn__ai
+> **Date**: 2026-02-04 09:45:37
+> **Link**: [Original Post](https://www.threads.com/@visn__ai/post/DUUP0ZfE7y8)
+
+1.grok을열고
+2.사진을 첨부한다.
+3.아래 프롬프트를 입력한다....
+
+---
+
+## 31. easygpt2526
+> **Date**: 2026-02-04 10:49:48
+> **Link**: [Original Post](https://www.threads.com/@easygpt2526/post/DUUXKhGAG4-)
+
+이제 PPT로 인한 스트레스는 끝이다.
+
+이제는 Gemini가 5분 만에 
+전체 발표 자료를 만들어준다.
+빈 슬라이드부터 완성본까지.
+
+아래 7개의 프롬프트면 A부터 Z까지 전부 ...
+
+---
+
+## 32. kkongdon_story
+> **Date**: 2026-02-03 21:03:21
+> **Link**: [Original Post](https://www.threads.com/@kkongdon_story/post/DUS4la6Ebp2)
+
+아직도 AI에게 “너는 10년 차 OO이야”라고만
+쓰고 있다면, 제발 이것만 알아가자.
+
+AI는 역할 놀이보다
+사고 방식 지정에 훨씬 잘 반응해.
+
+1. 계산과 논리적인 답이 필요...
+
+---
+
+## 33. _keunyoung_
+> **Date**: 2026-02-04 09:23:12
+> **Link**: [Original Post](https://www.threads.com/@_keunyoung_/post/DUUNQMpE2m3)
+
+Anthropic이 공개한 Claude Skill 메뉴얼🔥
+
+Claude에게 매번 같은 설명을 반복하는 것이 귀찮았던 분들은 아마 Skill로 이 문제를 해결했을 겁니다. 저도 S...
+
+---
+
+## 34. ur.future.ai
+> **Date**: 2026-02-04 15:04:22
+> **Link**: [Original Post](https://www.threads.com/@ur.future.ai/post/DUU0S9ZkqQr)
+
+와.. 구글이 이번엔 논문 그림 그리는 AI를 가져왔습니다. 
+
+논문 쓸 때 가장 까다로운 작업 중 하나가 바로 방법론 도식화죠? 이제 복잡한 디자인 도구를 만질 필요가 없습니다....
+
+---
+
+## 35. bibi_blog_world
+> **Date**: 2026-02-03 16:31:27
+> **Link**: [Original Post](https://www.threads.com/@bibi_blog_world/post/DUSZd-1EhSU)
+
+스친이들 기다려줘서 고마워 
+댓글에 내 방법 쭉 달아놨어 도움 됐으면 하트 리포스트 해 줄거지?
+
+내일 아니면 이번 주?
+다음 번엔 이걸 알려줄게 너무 다 푸는 건 아닌가 걱정되네...
+
+---
+
+## 36. taaaaes
+> **Date**: 2026-02-03 22:35:58
+> **Link**: [Original Post](https://www.threads.com/@taaaaes/post/DUTDCINAqM_)
+
+[Antigravity 9일차]
+수업 맥락을 입력하면 수업 정보가 담긴 .json을 생성하고 이를 .hwpx로 만들어주는 교수학습과정안 생성기를 개발했습니다. AI Agent로 만...
+
+---
+
+## 37. itszoejeong
+> **Date**: 2026-02-03 10:34:17
+> **Link**: [Original Post](https://www.threads.com/@itszoejeong/post/DURwmBAEh6d)
+
+와 안티그래비티-구글드라이브-옵시디언 여기다 제미나이 조합 좋은데? 난 원래 제미나이, 젬, 노트북lm 에다 구글드라이브 썼었는데, 이렇게쓰면 저거 다 쓸수도있고 마크다운 파일이 ...
+
+---
+
+## 38. _ju_tiger_lee_
+> **Date**: 2026-02-02 20:59:48
+> **Link**: [Original Post](https://www.threads.com/@_ju_tiger_lee_/post/DUQTYlyElVu)
+
+"Claude Code 쓰시는데 oh-my-claudecode 안쓰신다고요?"
+
+요즘은 단순히 수동으로 plan 모드하고 계획 짠 다음에 리뷰 에이전트에게 리뷰 요청하고 다시 계획...
+
+---
+
+## 39. __watermelonlover
+> **Date**: 2026-02-01 03:49:08
+> **Link**: [Original Post](https://www.threads.com/@__watermelonlover/post/DUL4o2SEm78)
+
+요즘 안티그래비티 저만 이럽니까
+클로드 쿼타는 순식간에 녹고
+Gemini로 돌리면 Skill이나 Rule도 무시하고
+시키지도 않은거 하고 자랑하고 무한반복돌고..
+
+클코에선 서브에...
+
+---
+
+## 40. lov_entp
+> **Date**: 2026-02-02 21:53:11
+> **Link**: [Original Post](https://www.threads.com/@lov_entp/post/DUQZfiwDzO2)
+
+1. MVP, 랜딩 페이지 쾅쾅 스피드로 찍어낼때는 Gemini의 antigravity 
+2. 제대로 아키텍쳐 설계 하고 기획하고 모듈화하면서 제대로 만들고 어려운 로직 만들때는 ...
+
+---
+
+## 41. bellman.pub
+> **Date**: 2026-01-31 14:44:51
+> **Link**: [Original Post](https://www.threads.com/@bellman.pub/post/DUKe4kFklIf)
+
+Claude Code 쓰시는 분들,
+
+oh-my-claudecode (OMC) 한번 써보세요.
+
+배울 거 없습니다. 설치하고 바로 씁니다.
+
+주요 기능:
+- Autopilot: 완...
+
+---
+
+## 42. __watermelonlover
+> **Date**: 2026-02-02 22:49:12
+> **Link**: [Original Post](https://www.threads.com/@__watermelonlover/post/DUQf51ekbqu)
+
+(이 레포가 필요한 이유 = 안 쓰면 나중에 고생함)
+일단 아무것도 모르고 시작해도 AI가 땡깡피우는 걸 
+방지하는 가이드라인이랄까요..
+그리고 oh-my-ag 와 잘 맞게 설계돼...
+
+---
+
+## 43. yeoamlog
+> **Date**: 2026-02-02 21:04:59
+> **Link**: [Original Post](https://www.threads.com/@yeoamlog/post/DUQT-dageiP)
+
+ㅎㅎ notion api도 있어서 mcp서버에 보시면 있어요! 그거 연동해서, 옵시디언(로컬), 노션(공유용 혹은 위키용)으로 병렬적으로도 다뤄볼 수 있어요 :)...
+
+---
+
+## 44. stormleehj
+> **Date**: 2026-02-02 22:32:42
+> **Link**: [Original Post](https://www.threads.com/@stormleehj/post/DUQeA6CDzDP)
+
+이모카님이 아래 댓글도 달아주셨는데 이것도 괜찮은 것 같아요!...
+
+---
+
+## 45. proverbsnapshots
+> **Date**: 2026-02-02 15:38:55
+> **Link**: [Original Post](https://www.threads.com/@proverbsnapshots/post/DUPuqTXk-f3)
+
+메모는 쌓이는데… 회고/리서치/회의록 정리는 왜 늘 막막할까?
+해답은 의외로 간단함 : Obsidian(기록) + Antigravity(대화형 정리) 조합. ✍️🧠
+
+🔗 출처
+ht...
+
+---
+
+## 46. proverbsnapshots
+> **Date**: 2026-02-03 00:23:19
+> **Link**: [Original Post](https://www.threads.com/@proverbsnapshots/post/DUQqrL-k6dQ)
+
+notebooklm 과 연결까지 하면 더 좋습니다.
+https://productivitylabkr.blogspot.com/2026/02/antigravity-notebooklm-m...
+
+---
+
+## 47. stormleehj
+> **Date**: 2026-02-02 20:59:25
+> **Link**: [Original Post](https://www.threads.com/@stormleehj/post/DUQTVuyD1V9)
+
+뭔가는 하고 있는데 체계적인 기록은
+귀찮아서 잘 못하는 저는 요새 이렇게 합니다.
+
+"안티그라비티 + 옵시디언"
+
+요새는 안티그라비티에서 주로 작업하는데
+그 안에서 오고 간 채팅 ...
+
+---
+
+## 48. seulgi.kaang
+> **Date**: 2026-02-02 01:00:45
+> **Link**: [Original Post](https://www.threads.com/@seulgi.kaang/post/DUOKKcfj4wK)
+
+25년 프롬프트: OO 주제로 PPT 만들어줘
+
+26년 프롬프트: 
+Claude Code나 안티그래비티용 PPT 자동생성 시스템 만들어줘.
+프로젝트 구조(.claude/skills...
+
+---
+
+## 49. silsangv
+> **Date**: 2026-02-02 13:01:03
+> **Link**: [Original Post](https://www.threads.com/@silsangv/post/DUPcmH7EZJc)
+
+소신 발언함.
+현 시점 기준 코딩을 위해 Antigravity를 아직 쓸 필요는 없다.
+Antigravity는 일단 너무 무겁다. 이게 가장 큰 단점이다.
+같은 내용을 빌드하고 테...
+
+---
+
+## 50. bibi_blog_world
+> **Date**: 2026-02-02 16:18:24
+> **Link**: [Original Post](https://www.threads.com/@bibi_blog_world/post/DUPzLiCEusg)
+
+상위노출은 글 잘 쓰는 사람이 아니라
+로직 읽는 사람이 먹는 거임
+
+네이버는 문장력 안 봐
+구조만 봐
+그래서 내가 먹고 사는 거임
+
+우리 스하리 하자 내가 욕 먹을 각오로 싹 다 ...
+
+---
+
+## 51. meteorsimulation
+> **Date**: 2026-02-02 02:43:22
+> **Link**: [Original Post](https://www.threads.com/@meteorsimulation/post/DUOV38Dktnd)
+
+초기창업패키지 문서를 ai로 작성해 보았다. 작성은 2초정도, 내용준비는 (몇달? ) 걸린듯하다. 
+
+Claude code로 hwpx 한글 문서작업 하기,
+코난샘의 자료와 pywh...
+
+---
+
+## 52. starcomo
+> **Date**: 2026-01-31 20:45:22
+> **Link**: [Original Post](https://www.threads.com/@starcomo/post/DULCfk1EqLV)
+
+@hong._.s_j님에게 남긴 답글
+아니 조금 버전3까지 3번 기획을 업그레이드해줘 이런느낌으로 구체적으로 얘기해줘야돼 다 하고나서
+각 버전별로 업그레이드 된 부분 요약해서 알려...
+
+---
+
+## 53. starcomo
+> **Date**: 2026-01-31 19:45:22
+> **Link**: [Original Post](https://www.threads.com/@starcomo/post/DUK7uIXkklz)
+
+개발 초보 고수들에게..
+개발 개꿀팁 하나 더 줄게 ㅋㅋ
+이거 완전 대박이야 ㅋ
+Ai한테 뭐 새로 만들어달라고 할때
+기획을 3번 업그레이드 해달라고해
+/...
+
+---
+
+## 54. steady__study.dev
+> **Date**: 2026-01-31 15:45:22
+> **Link**: [Original Post](https://www.threads.com/@steady__study.dev/post/DUKUnJ3kciv)
+
+에이전트를 오래 + 잘 돌리기 위한 컨텍스트 관리 미세팁 4개 (+ 참고자료 12개)
+(블로그에서 보시려면: stdy.blog/small…)
+최근 [정보 수집 - 스펙 작성 - 스...
+
+---
+
+## 55. yun_ja_dong
+> **Date**: 2026-01-31 22:45:22
+> **Link**: [Original Post](https://www.threads.com/@yun_ja_dong/post/DULSOOKE3XD)
+
+강의실습용 엑셀파일 300개가 필요하다.
+"ㅇㅇ주제 강의에 사용할 엑셀파일 300개 만들어줘"
+Antigravity가 10초만에 만들어준다.
+AI 없던 시절에는 이거 만드느라 수십...
+
+---
+
+## 56. guuu.dev
+> **Date**: 2026-01-30 15:45:22
+> **Link**: [Original Post](https://www.threads.com/@guuu.dev/post/DUG6cYok5Qr)
+
+moltbot(clawdbot) 두 대를 한 방에 넣고 킥오프를 진행했다.
+사실 봇들 끼린 서로의 메시지를 감지할 순 없다.
+하지만 내가 서로의 메시지를 중재할 순 있다.
+일 시키...
+
+---
+
+## 57. starcomo
+> **Date**: 2026-01-31 15:45:22
+> **Link**: [Original Post](https://www.threads.com/@starcomo/post/DUKIm4EkqEo)
+
+26년 개발하는 방법이 완벽하게 바뀌었다
+채팅방을 여러개로 나눠 각각 프로젝트에 채팅으로 요청하면,
+Ai 비서들이 원격으로 코드를 수정해준다
+이제.. 다시는 이전으로 돌아갈 수 없...
+
+---
+
+## 58. hinjiroffffff
+> **Date**: 2026-01-31 15:45:22
+> **Link**: [Original Post](https://www.threads.com/@hinjiroffffff/post/DUKPfu1Aa6T)
+
+@hinjiroffffff님에게 남긴 답글
+1. vidiQ
+→ 감이 아닌 데이터로 유튜브 트렌드를 읽으세요. 내 분야에서 현재 어떤 주제의 조회수가 잘 나오는지 알 수 있어요.
+/...
+
+---
+
+## 59. hinjiroffffff
+> **Date**: 2026-01-31 15:45:22
+> **Link**: [Original Post](https://www.threads.com/@hinjiroffffff/post/DUKPelTgSau)
+
+유튜버에게 필요한 확장 프로그램을 정리했습니다.
+알아내는데 300일이 걸렸지만, 여러분은 바로 사용하세요.
+/
+1.2천...
+
+---
+
+## 60. jvisualschool
+> **Date**: 2026-01-31 15:45:22
+> **Link**: [Original Post](https://www.threads.com/@jvisualschool/post/DUJ_3Mlj0ID)
+
+@dev_gecko님에게 남긴 답글
+정답을 알려줄게. 간단해.
+오늘부터 100개의 앱을 만들어.
+그리고 100개의 앱을 멋지게 보여줄 포트폴리오 사이트를 만들어.
+그리고 이 사이트...
+
+---
+
+## 61. qjc.ai
+> **Date**: 2026-01-31 19:45:22
+> **Link**: [Original Post](https://www.threads.com/@qjc.ai/post/DUK7AjFDxeH)
+
+혼자서 100명 규모 팀을 운영하고 있어요.
+직원 수: 0명
+AI 에이전트: 100개+
+금융팀, 마케팅팀, 개발팀, 보안팀...
+17개 부서가 Claude Code 안에 있습니다....
+
+---
+
+## 62. opal.gongbang
+> **Date**: 2026-01-31 19:45:22
+> **Link**: [Original Post](https://www.threads.com/@opal.gongbang/post/DUK66UNE-rX)
+
+Opal
+20시간
+opal에서 이미지 생성 노드 1개로 여러 이미지를 만들 수 있는지 테스트해봤습니다.
+혼자 며칠 밤을 돌려봤는데, 어떤 때는 되고 어떤 때는 안 되더라고요.
+그러...
+
+---
+
+## 63. build_daemon
+> **Date**: 2026-01-31 15:45:22
+> **Link**: [Original Post](https://www.threads.com/@build_daemon/post/DUJ1km1kkNt)
+
+[github 공개]
+네이버 블로그 자동 포스팅(브랜드커넥트)
+알려 달라고 하시는 분들이 많아 코드 공개합니다.
+비개발자 분들은 사용하시기 어려울 수 있는데,
+설치 가이드 촘촘하게...
+
+---
+
+## 64. seokki.yoon07
+> **Date**: 2026-01-31 18:45:22
+> **Link**: [Original Post](https://www.threads.com/@seokki.yoon07/post/DUK59b8ia4D)
+
+@endurerider님에게 남긴 답글
+이세돌 님도 정확히 똑같은 이야기를 했어요. AI가 도입되니 실력이 평준화 될 줄 알았는데.. 오히려 하위랭커랑 상위랭커의 차이가 더 벌어지...
+
+---
+
+## 65. choi.openai
+> **Date**: 2026-01-31 15:45:22
+> **Link**: [Original Post](https://www.threads.com/@choi.openai/post/DUIXT33Essv)
+
+Vercel이 코딩 에이전트를 위한 "AGENTS.md"가 "Skills"보다 훨씬 강력하다는 실험 결과를 공개했습니다.
+실험 결과, "AGENTS.md"에 8KB 크기의 압축된 ...
+
+---
+
+## 66. oz_coding_school
+> **Date**: 
+> **Link**: [Original Post](https://www.threads.com/@oz_coding_school/post/DTugejAgHNF)
+
+광고
+📢AI시대! 정부지원사업 합격 전략을 알려드립니다📢
+AI로 정부지원사업 합격하는법 알려드릴게요😎
+🔥2월 5일 목요일 저녁 8시🔥
+✅ 이런 분께 추천합니다
+- 정부지원사업에 도...
+
+---
+
+## 67. hinjiroffffff
+> **Date**: 2026-01-30 15:45:22
+> **Link**: [Original Post](https://www.threads.com/@hinjiroffffff/post/DUFkzGvAa6T)
+
+유튜브 롱폼 링크만 넣으면, 쇼츠 10개로 잘라줍니다.
+Gemini가 초 단위로 영상을 분석해 쇼츠 구간을 찾아줍니다.
+쇼츠로 자를 타이밍을 아주 정확히 알고 있었습니다.
+밀린 쇼...
+
+---
+
+## 68. super_writer12
+> **Date**: 2026-01-31 15:45:22
+> **Link**: [Original Post](https://www.threads.com/@super_writer12/post/DUIDj9vgeRU)
+
+스레드의 핵심은 이렇습니다.
+후킹 한 줄 -> 압축 본론 3~4줄 -> 교훈 1~2줄
+제 글 구조만 봐도 이렇게 되어있어요.
+그냥 적기만 하면 잘 안 터져요.
+구조와 압축이 없기 ...
+
+---
+
+## 69. wmleee
+> **Date**: 2026-01-30 15:45:22
+> **Link**: [Original Post](https://www.threads.com/@wmleee/post/DUGYenoEnPR)
+
+pencil.dev 이거 정말 물건이네요.
+개발자 입장에서 디자이너가 작업한 디자인을 figma 를 열고 dev mode 로 들어가서 코드 확인하고 프론트엔드 개발을 할텐데 이걸 ...
+
+---
+
+## 70. ody_daddy
+> **Date**: 2026-01-30 15:45:22
+> **Link**: [Original Post](https://www.threads.com/@ody_daddy/post/DUHGprsCrmE)
+
+공사관리자
+2일
+출근길 쓰레드) 컨텍스트 오염은 반드시 관리해야 할 리스크다.
+(재난위기관리공학 복수전공자의 말이니 믿거나 말거나. 학사임.)
+AI한테 일 시키다 보면 이상한 순간...
+
+---
+
+## 71. info__sum
+> **Date**: 2026-01-30 10:34:59
+> **Link**: [Original Post](https://www.threads.com/@info__sum/post/DUHdfmjEizy)
+
+구글이 한국에
+월 11,000원짜리 AI Plus 요금제를 풀었어
+기존보다 50%이상 싼가격이야
+
+원래 Gemini Pro 쓰려면
+월 2만9천원이었잖아
+이게 1만1천원으로 내려왔어...
+
+---
+
+## 72. hinjiroffffff
+> **Date**: 2026-01-30 16:12:56
+> **Link**: [Original Post](https://www.threads.com/@hinjiroffffff/post/DUIEGGAAagR)
+
+참고하고 싶은 유튜브 영상 링크를 
+Gemini에게 전달하세요.
+
+그리고 이 프롬프트를 넣으면
+해당 영상을 분석하고 떡상한 이유를 모조리 추출합니다.
+
+유튜버가 바로 써먹을 수 있...
+
+---
+
+## 73. redbearhbj
+> **Date**: 2026-01-30 11:22:24
+> **Link**: [Original Post](https://www.threads.com/@redbearhbj/post/DUHi67GEhVw)
+
+Claude 에서 공식 가이드로 배포한 프롬프트 작성 가이드입니다. 프로젝트에 첨부해두고 사용하면 됩니다. 효과적인 프롬프트를 위한 기본 원칙 6가지🔥...
+
+---
+
+## 74. c.reator_c
+> **Date**: 2026-01-30 07:42:23
+> **Link**: [Original Post](https://www.threads.com/@c.reator_c/post/DUHJvgwE8QV)
+
+칼럼 쉽게 쓰는 비결
+병원 홍보팀 일할 때 내 별멍은
+"칼럼 공장"이었어. 칼럼 찍는 기계였지.
+1년에 1천편 넘게 썼으니까.
+그 비결 알려줄게....
+
+---
+
+## 75. guuu.dev
+> **Date**: 2026-01-30 19:54:08
+> **Link**: [Original Post](https://www.threads.com/@guuu.dev/post/DUIde6ZE-Zy)
+
+대부분의 사람들은 Local LLM을 쓸 이유가 없어!
+
+Local LLM 때문에 맥 미니나 그래픽카드 사서 돌려볼까 고민하는 사람들 꽤 있을 거야 🤔
+근데 솔직히 말하면, 대부분...
+
+---
+
+## 76. eyevision.lab
+> **Date**: 2026-01-30 17:45:43
+> **Link**: [Original Post](https://www.threads.com/@eyevision.lab/post/DUIOybmEiic)
+
+10년 차 시니어 개발자에게 들은 '모니터 설정'부터 바꾸는 이유
+
+매일 12시간씩 코딩하는 개발자들은 경험적으로 '눈이 덜 피로한 환경'을 세팅할 줄 안다
+
+연봉 1억 넘는 시니...
+
+---
+
+## 77. planum.one
+> **Date**: 2026-01-29 22:23:26
+> **Link**: [Original Post](https://www.threads.com/@planum.one/post/DUGJxoEkbWv)
+
+Claude Code 장기 기억 시스템 구축하기 
+
+문제: AI의 "단기기억 상실" 
+
+Claude Code는 세션이 끝나면 모든 컨텍스트를 잃습니다. 
+- 어제 뭘 했는지 모름 ...
+
+---
+
+## 78. slowsoyang
+> **Date**: 2026-01-29 21:18:16
+> **Link**: [Original Post](https://www.threads.com/@slowsoyang/post/DUGCUWLCUFc)
+
+난 요즘 이게 정말 궁금했어.
+
+처음에 안티그래비티 쓸 때는 
+신박한 놀랍고, 재밌고, 긍정적인 생각 뿐이었는데
+
+옵시디언에 노션까지 잘 연결해서 쓰던 어느날,
+노션이 안되더라구....
+
+---
+
+## 79. builder.inkeun
+> **Date**: 2026-01-29 00:33:37
+> **Link**: [Original Post](https://www.threads.com/@builder.inkeun/post/DUDz4LoDyoB)
+
+드디어 평생 풀지 못한 숙제를 해결했다.
+
+클로드 갓코드.....
+
+---
+
+## 80. je0_1229
+> **Date**: 2026-01-29 12:26:25
+> **Link**: [Original Post](https://www.threads.com/@je0_1229/post/DUFFc5Tkb5E)
+
+혹시 아래 주제로 출강하고 있는 강사님들 있어?
+- 구글 AI로 프레젠테이션 만들기
+- Google Workspace 교육
+- 바이브코딩 (with Google AI Studio)...
+
+---
+
+## 81. jinsimcode
+> **Date**: 2026-01-28 12:26:09
+> **Link**: [Original Post](https://www.threads.com/@jinsimcode/post/DUCgoCoE_bt)
+
+바이브 코딩으로 웹 만들때 쓰는 개사기 조합
+
+1. Agentation 크롬익스텐션
+2. opencode 연동
+3. Playwriter 크롬익스텐션 (playwight 아님, 용어...
+
+---
+
+## 82. gyeol_hh
+> **Date**: 2026-01-28 23:53:14
+> **Link**: [Original Post](https://www.threads.com/@gyeol_hh/post/DUDvQcJkoSP)
+
+AI에게 브라우저 조작시킬때 Playwright MCP말고
+Playwriter MCP를 써!!
+연말정산도 클로드 코드한테 시켜버리자고~~~...
+
+---
+
+## 83. eddmpython
+> **Date**: 2025-12-30 16:48:18
+> **Link**: [Original Post](https://www.threads.com/@eddmpython/post/DS4TktPD6BP)
+
+선생님께선 이미 능력자에 활용을 잘하시니
+
+벡터임베딩 + llm RAG방향으로 가보시죠 ㅎㅎ
+
+데이터 스크래핑 잘하시나요?
+http요청 뿐만아니라 데이터 모으는 자동화는 많이 있죠...
+
+---
+
+## 84. jinsimcode
+> **Date**: 2026-01-28 13:58:40
+> **Link**: [Original Post](https://www.threads.com/@jinsimcode/post/DUCrNqMk8vz)
+
+AI에게 브라우저 조작시킬때 필수적으로 알아야하는 것.
+Playwright, Claude Code 확장프로그램을 쓰지 말기. 
+
+Playwriter를 쓰기.
+
+[ Playwrigh...
+
+---
+
+## 85. hinjiroffffff
+> **Date**: 2026-01-28 16:30:27
+> **Link**: [Original Post](https://www.threads.com/@hinjiroffffff/post/DUC8laUCQ5M)
+
+유튜브 영상 링크를 첨부하면 
+Gemini가 초 단위로 영상을 분석하고 피드백합니다.
+유튜브 전문 컨설턴트를 고용한 것 같았어요.
+
+유튜버가 바로 써먹을 수 있는 프롬프트를 정리했...
+
+---
+
+## 86. lazypencil_lab
+> **Date**: 2026-01-27 18:37:53
+> **Link**: [Original Post](https://www.threads.com/@lazypencil_lab/post/DUAmX2YkSSm)
+
+"제미나이 + 노트북LM으로 고퀄리티 PPT 10분컷"
+
+강의 영상 만들다 보면 
+꼭 필요한 게 슬라이드 화면입니다.
+
+녹음·촬영·편집하기도 바쁜데
+슬라이드까지 직접 만들기엔 도저...
+
+---
+
+## 87. itszoejeong
+> **Date**: 2026-01-27 19:55:51
+> **Link**: [Original Post](https://www.threads.com/@itszoejeong/post/DUAvS3CkiXu)
+
+노트북lm에서 만든 슬라이드가 압도적으로 예쁘고 구성도 인포그래픽도 논리도 좋은데.. 하 이거 어떻게 섞어 쓸 방도가 없을까요...
+
+---
+
+## 88. iamdrtk
+> **Date**: 2026-01-28 02:49:45
+> **Link**: [Original Post](https://www.threads.com/@iamdrtk/post/DUBeqaViJkN)
+
+공유해 주신 노션 local MCP 설치하고 나도 뭔가 해보고 싶어서 Obsidian MCP를 만들었습니다.
+
+[Claude AI로 옵시디언 노트 읽고 쓰기]
+
+옵시디언에 ai을 ...
+
+---
+
+## 89. ai.winey_ny
+> **Date**: 2026-01-26 21:28:37
+> **Link**: [Original Post](https://www.threads.com/@ai.winey_ny/post/DT-VHfnEshJ)
+
+API 토큰 없이 Notion 2만 페이지를 4.8초만에 읽었습니다 🤯
+
+노션 많이 쓰시는 분들은 저장해두고 담에 꼭 따라해보세요.
+
+Notion MCP 쓸 때마다 토큰 엄청 먹어...
+
+---
+
+## 90. freainer
+> **Date**: 2026-01-27 14:43:26
+> **Link**: [Original Post](https://www.threads.com/@freainer/post/DUALirekrKe)
+
+클로드 쓰는 콘텐츠 크리에이터라면 이 MCP 5개는 알아야 합니다. 
+
+Claude나 Cursor 쓰면서 MCP 안 쓰고 있다면?
+생산성 50% 이상 낭비 중입니다.
+
+1️⃣ Fi...
+
+---
+
+## 91. gimminseog67
+> **Date**: 2026-01-27 18:27:16
+> **Link**: [Original Post](https://www.threads.com/@gimminseog67/post/DUAlKDLD9rN)
+
+https://github.com/affaan-m/everything-claude-code
+
+클로드 코드 해커톤 우승자의 레시피라고 합니다. 구글 Antigravity 용으로 개조...
+
+---
+
+## 92. ody_daddy
+> **Date**: 2026-01-27 09:21:33
+> **Link**: [Original Post](https://www.threads.com/@ody_daddy/post/DT_mtLmk6ix)
+
+출근길 쓰레드) 구글 Stitch로 회의 시간 반토막 내기.
+
+구글 Stitch가 Gemini 3.0을 먹더니 물이 올랐다.
+
+단순히 "이런 UI 그려줘" 수준이 아니라,
+기획-디...
+
+---
+
+## 93. choi.openai
+> **Date**: 2026-01-26 20:00:55
+> **Link**: [Original Post](https://www.threads.com/@choi.openai/post/DT-LFLbARyz)
+
+"딸깍"으로 800만 수학 유튜브 채널 3Blue1Brown 특유의 멋진 애니메이션을 만들 수 있습니다.
+
+최근 공개된 "manim_skills" 패키지를 사용하면, 3Blue1B...
+
+---
+
+## 94. lumiham0
+> **Date**: 2026-01-26 23:21:11
+> **Link**: [Original Post](https://www.threads.com/@lumiham0/post/DT-h_5NARCF)
+
+드디어 Gems 만드는 법을 터득!
+Special thanks to @hamlog_ai 
+
+스토리 따라 프롬프트를 30개 만들고
+Opal에 넣으면 이미지 30장이 한번에 쏟아진다....
+
+---
+
+## 95. pm_anyway
+> **Date**: 2026-01-26 18:03:23
+> **Link**: [Original Post](https://www.threads.com/@pm_anyway/post/DT99oVWkh8u)
+
+이거 진짜 맘에 드네 ㅋㅋ
+
+노트북LM 스타일 프롬프트인데
+몇 줄로 퀄리티가 확 바뀐다...
+
+---
+
+## 96. ai_sync_club
+> **Date**: 2026-01-11 14:12:45
+> **Link**: [Original Post](https://www.threads.com/@ai_sync_club/post/DTW7GQ0iujL)
+
+감각적 PPT 이거까지 알려드릴까.. 고민했는데
+
+디자이너가 만든 느낌의
+세련되고 감각적 슬라이드
+
+이번엔 NotebookLM으로 제작.
+(방법은 아래)...
+
+---
+
+## 97. seulgi.kaang
+> **Date**: 2026-01-25 23:38:28
+> **Link**: [Original Post](https://www.threads.com/@seulgi.kaang/post/DT7_LsBj_kt)
+
+오랫동안 셀프 브랜딩을
+미뤘던 이유
+: '나의 정체성부터 
+정하고 시작할거야!'라는 다짐
+
+근데 이 링크드인 댓글을 보고
+대뜸 그냥 시작하길 참 잘했다는
+생각이 들었어....
+
+---
+
+## 98. seulgi.kaang
+> **Date**: 2025-01-08 15:49:57
+> **Link**: [Original Post](https://www.threads.com/@seulgi.kaang/post/DEjh503znCO)
+
+앗 다들 자기소개 pinned 해놓던데 나는 안했더라!!
+> https://bento.me/seulkikang
+
+👩🏻‍💻 마케팅, 미디어, 데이터, AI 실무를 모두 경험했어
+👩‍...
+
+---
+
+## 99. seulgi.kaang
+> **Date**: 2026-01-26 17:09:59
+> **Link**: [Original Post](https://www.threads.com/@seulgi.kaang/post/DT93hKjDzNI)
+
+[📥 클로드코드 설치 매뉴얼 배포]
+
+클로드코드 설치도 진짜 쉽고
+설치만 하고 나면
+프롬프트 > 결과물
+보는 것 똑같음
+
+그 이후 고도화도
+AI한테 조언 얻어가며
+진행하고!
+
+그래...
+
+---
+
+## 100. itszoejeong
+> **Date**: 2026-01-26 19:28:38
+> **Link**: [Original Post](https://www.threads.com/@itszoejeong/post/DT-HYr3Eofo)
+
+점점 노션에 기록하는게 꺼려진다.. notebook lm이랑gemini 쓰니까 노션에있는건 일일히 csv다운받고 이래야하고.. 차라리 그냥 마크다운문서나 쌩 텍스트나 구글시트, 독...
+
+---
+
+## 101. data_richard
+> **Date**: 2025-09-15 11:59:13
+> **Link**: [Original Post](https://www.threads.com/@data_richard/post/DOm2OujEQC1)
+
+노션으로 관리하는 컨텐츠 트래킹
+- 컨텐츠 맞춤형 주제별로
+- 업로드 주기마다 알람 가능
+- 컨텐츠 작성에 도움이 되는 도구들 리스트끼지!
+
+이 모든 걸 무료로 사용해볼수 있다면?...
+
+---
+
+## 102. data_richard
+> **Date**: 2026-01-02 15:49:46
+> **Link**: [Original Post](https://www.threads.com/@data_richard/post/DS_7QrXFRRu)
+
+저는 노션(Notion)으로 직접 실무/실생활에 사용하는
+템플릿을 만들고 개선하는 것을 좋아합니다.
+
+2025년부터 매니저로서의 역할을 수행하면서
+Epic/User Story/Ta...
+
+---
+
+## 103. data_richard
+> **Date**: 2026-01-26 10:04:13
+> **Link**: [Original Post](https://www.threads.com/@data_richard/post/DT9Gyvtj-Rb)
+
+[클로드 프로젝트(Project) 와 스킬(Skill) 의 차이점]
+
+최근까지 클로드 프로젝트(Project)를 통해 
+각기 다른 워크플로우 (Workflow)를 관리했습니다.
+
+...
+
+---
+
+## 104. steady__study.dev
+> **Date**: 2026-01-26 06:17:57
+> **Link**: [Original Post](https://www.threads.com/@steady__study.dev/post/DT8s5gck3xJ)
+
+우리는 왜 코드를 이해하려고 하는가? (feat. 코드 읽기를 그만뒀더니 코드 리뷰가 더 좋아졌다)
+
+최근 많은 개발자 분들이 AI로 인해 가지는 스트레스 중 하나가 '기능은 쏟아...
+
+---
+
+## 105. builder_10x
+> **Date**: 2026-01-26 00:24:05
+> **Link**: [Original Post](https://www.threads.com/@builder_10x/post/DT8EUxBic2M)
+
+지금까지는 LLM 모델 선택, 감으로 했다.
+
+GPT-4, Claude, Gemini 다 써보고 "이게 더 나은 것 같은데?" 하고 정하는 식.
+
+근데 프롬프트 바뀌면? 모델 업데...
+
+---
+
+## 106. pitchtitan
+> **Date**: 2026-01-26 17:09:55
+> **Link**: [Original Post](https://www.threads.com/@pitchtitan/post/DT93gttj4S1)
+
+바이브코딩, 쫄지말자!
+유튜브 분석기 웹앱, 완성
+하룻밤만에 완성한 첫 프로젝트
+안티그래비티+제미나이+챗GPT로 완성
+50대, 비개발자 출신도 가능
+결국, AI 쓰는 사람이 오래간...
+
+---
+
+## 107. build_daemon
+> **Date**: 2026-01-26 08:20:02
+> **Link**: [Original Post](https://www.threads.com/@build_daemon/post/DT863uQkmuV)
+
+요새 AI가 글 쓰면 사람 같지 않고 블로그 저품질 나올까 두려우시죠? 
+그걸 방지하는 클로드 스킬이 나왔습니다.
+휴먼처럼 글을 써주니 꼭 사용해보세요
+
+Github:
+https:...
+
+---
+
+## 108. robin_just_ship_it
+> **Date**: 2026-01-26 13:35:24
+> **Link**: [Original Post](https://www.threads.com/@robin_just_ship_it/post/DT9e9jOkc7M)
+
+🔥 최근 일주일 AI/테크씬 정리
+
+• Clawdbot — 개인용 AI 자비스, 멀티채널 자동화
+• Pencil.dev — IDE에서 디자인→코드 자동 생성
+• Remotion s...
+
+---
+
+## 109. hajae.code
+> **Date**: 2026-01-24 22:29:02
+> **Link**: [Original Post](https://www.threads.com/@hajae.code/post/DT5ScNij4Uw)
+
+AI 코딩 실력이 늘지 않는 치명적인 이유
+
+다들 AI가 다 해줄 거라 믿지만
+프로젝트가 커지면 AI는 길을 잃습니다.
+
+"이거 만들어줘"라고 대충 던지는
+'바이브 코딩'의 유통기...
+
+---
+
+## 110. hajae.code
+> **Date**: 2026-01-25 09:19:24
+> **Link**: [Original Post](https://www.threads.com/@hajae.code/post/DT6c3mrEwmC)
+
+좋은 포인트입니다. 그래서 스펙도 모듈화를 해주면 좋겠죠.
+spec.md 하나에 모든 것을 넣지 말고, 시스템의 도메인이나 기능 단위로 파일을 쪼개고 그 필요한 정보만 주면 con...
+
+---
+
+## 111. newnatrd
+> **Date**: 2026-01-24 17:26:51
+> **Link**: [Original Post](https://www.threads.com/@newnatrd/post/DT4v2-dEzVu)
+
+📘 체계적인 AI 코딩, Claude Code 시작하기
+
+[1/6]
+2026년, AI 코딩의 새로운 패러다임
+
+이제 AI에게 “이거 만들어줘”라고
+막연히 요청하는 시대는 지났어요....
+
+---
+
+## 112. choi.openai
+> **Date**: 2026-01-25 11:31:47
+> **Link**: [Original Post](https://www.threads.com/@choi.openai/post/DT6sAONj9K8)
+
+디자인과 코딩의 경계가 허물어지고 있습니다.
+Claude Code 위에서 작동하며 디자인을 즉시 코드로 변환해 주는 "Pencil"이 출시되었습니다.
+
+Figma 에서 작업한 시안...
+
+---
+
+## 113. carpediem._young
+> **Date**: 2026-01-25 11:26:30
+> **Link**: [Original Post](https://www.threads.com/@carpediem._young/post/DT6raiWE90Y)
+
+• 취업 원하는 취준생들에게
+아래 계정 모두 팔로우 하고 정독추천 
+2개월 가량 고심해서 고른 하기 계정들. 
+
+- @dr.this.man 실제 대기업 임원
+- @dang_guel...
+
+---
+
+## 114. port_zen
+> **Date**: 2026-01-24 23:38:42
+> **Link**: [Original Post](https://www.threads.com/@port_zen/post/DT5aah0AQBc)
+
+엄청나더라 안티그라비티 이런거 까지 가지 않아도 제미니로 웹에 코드 짜달라하고 디자인이 이상하면 스티치에서 말로 디자인 만든 후에 제미니한테 이 디자인이로 하고 던져주면 정말 요즘...
+
+---
+
+## 115. _mote_y
+> **Date**: 2026-01-24 21:41:43
+> **Link**: [Original Post](https://www.threads.com/@_mote_y/post/DT5NBtck8JT)
+
+이제 모든 사람이 
+앱 디자인을 할 수 있다.
+
+구글에서 나온 디자인 AI Stitch로
+순식간에 앱 디자인 가이드를 완성했다.
+자연어로 화면을 다듬고 폰트, 스타일, 키컬러를 적...
+
+---
+
+## 116. heon_yun
+> **Date**: 2026-01-24 22:41:38
+> **Link**: [Original Post](https://www.threads.com/@heon_yun/post/DT5T4kmEsEG)
+
+ClaudeCode 그리고 Antigravity를 사용하면서 느낀점....
+
+---
+
+## 117. jaycee_donuts
+> **Date**: 2026-01-24 22:12:34
+> **Link**: [Original Post](https://www.threads.com/@jaycee_donuts/post/DT5QjkwkjLL)
+
+사이먼 시넥이 TED 강연 5000만뷰 찍고
+애플, 디즈니한테 1억씩 받으며 한 말 TOP 5
+
+이거 모르면 평생 가격경쟁만 합니다.
+저장하고 3번 이상 보세요!!!
+
+1. "당신...
+
+---
+
+## 118. cloudian__
+> **Date**: 2026-01-23 22:43:38
+> **Link**: [Original Post](https://www.threads.com/@cloudian__/post/DT2vUQliQgk)
+
+💻 Claude Code + Stitch MCP
+
+Google에서 Figma 대항마로 내놓은 Stitch라는 디자인 툴을 처음 써봤습니다.
+베리에이션 잘 쳐주는게 꽤 마음에 드네요...
+
+---
+
+## 119. beyond.cho
+> **Date**: 2026-01-24 08:52:13
+> **Link**: [Original Post](https://www.threads.com/@beyond.cho/post/DT309qmktRH)
+
+1년에 400조 쓸어담는
+빌 게이츠의 소름끼치는 사업 인사이트 TOP30
+
+인사이트 정리할려고
+목숨을 걸었다.
+
+저장하고 3번 읽어라.
+
+1. 남이 쓰는 걸 그대로 따라 쓰게 만들...
+
+---
+
+## 120. pulplewhale
+> **Date**: 2026-01-08 16:11:00
+> **Link**: [Original Post](https://www.threads.com/@pulplewhale/post/DTPadYiERZI)
+
+글쓰기 후 교정과 교열을 도와주는 서비스 소개합니다.
+
+"바른한글" 이라는 부산대에서 만든 서비스 입니다
+글자 수 제한도 없고, 
+기존 단어와 대치어를 함께 보여주기 때문에 
+공부...
+
+---
+
+## 121. unaappa
+> **Date**: 2026-01-23 16:11:00
+> **Link**: [Original Post](https://www.threads.com/@unaappa/post/DT2CYlsFRnG)
+
+거...앱만들어서 파는 것보담
+바이브코딩을 통해 툴을 만들어
+자기가 하는 일의 
+생산성 증대하는게 훨씬 낫다.
+
+내가 하는 일의 플러스 알파.
+경쟁자들을 따돌리는 가치!
+
+상상을 ...
+
+---
+
+## 122. social.romanc
+> **Date**: 2026-01-22 07:49:14
+> **Link**: [Original Post](https://www.threads.com/@social.romanc/post/DTykKIbES09)
+
+방문자가 팔로워가 안 되는 가장 큰 이유.
+상단 고정 핀 3개, 순서 엉망으로 해뒀기 때문입니다.
+
+대부분 그냥 '내가 보기에 예쁜 것'을 박아둡니다.
+그건 마케팅이 아니라 자기만...
+
+---
+
+## 123. health_love_wealth_
+> **Date**: 2026-01-22 22:26:55
+> **Link**: [Original Post](https://www.threads.com/@health_love_wealth_/post/DT0InBtEnzX)
+
+속보: GOOGLE이 방금 대규모 업그레이드 되었습니다
+
+Gemini는 지금 구글 드라이브 안에 있습니다!...
+
+---
+
+## 124. joshproductletter
+> **Date**: 2026-01-10 16:04:44
+> **Link**: [Original Post](https://www.threads.com/@joshproductletter/post/DTUjVRGCSgI)
+
+크리에이터로써 
+제 가장 큰 목표는
+그냥 오래 하는 것입니다.
+
+저는 이제 햇수로 3년차입니다.
+이 짧은 기간에 수천명을 만났는데요.
+
+너무나도 많은 사람들이
+1인 기업을 하겠다,...
+
+---
+
+## 125. choi.openai
+> **Date**: 2025-12-01 21:01:10
+> **Link**: [Original Post](https://www.threads.com/@choi.openai/post/DRuFda3D2Ca)
+
+프롬프트 구걸하지 마세요.
+
+구글의 "Gemini"를 활용하면 영상, 이미지, 심지어 바이브 코딩에 필요한 제작 프롬프트를 즉시 받아볼 수 있습니다.
+
+원하는 결과물의 느낌만 설명...
+
+---
+
+## 126. choi.openai
+> **Date**: 2025-11-28 07:30:30
+> **Link**: [Original Post](https://www.threads.com/@choi.openai/post/DRk6TWjAjI-)
+
+🚨 이번 글을 놓치지 마세요.
+
+총 700여개의 나노바나나 프로의 프롬프트 저장소를 공유해드립니다....
+
+---
+
+## 127. gwon_vibe
+> **Date**: 2026-01-08 11:08:13
+> **Link**: [Original Post](https://www.threads.com/@gwon_vibe/post/DTO3zt4EwZx)
+
+현재 바이브코딩 최강 조합
+= Antigravity + Claude code
+
+1. Antigravity (안티그래비티)
+- 간단하고 빠른 수정
+- 나노바나나로 이미지 생성
+- 에...
+
+---
+
+## 128. sinabrocoding
+> **Date**: 2026-01-22 12:53:27
+> **Link**: [Original Post](https://www.threads.com/@sinabrocoding/post/DTzG-uEj-3p)
+
+바이브코딩 하다가 "지금 뭐하고 있지?" 싶을 때 없어?
+
+나는 맨날 그래서 도구 하나 만들었음.
+
+프로젝트 현황 물어보면
+8명의 C-Level이 자동으로 피드백 줌:
+
+👔 PM ...
+
+---
+
+## 129. qjc.ai
+> **Date**: 2026-01-22 18:15:45
+> **Link**: [Original Post](https://www.threads.com/@qjc.ai/post/DTzr3XyD9pL)
+
+Google Stitch MCP를 Claude Code나 Antigravity에 연결하면 AI가 디자인 시스템을 자동으로 이해한다는 거 알고 계셨나요?
+
+디자인-개발 시간이 50%...
+
+---
+
+## 130. gonnector
+> **Date**: 2026-01-22 15:08:24
+> **Link**: [Original Post](https://www.threads.com/@gonnector/post/DTzWbLkE2JY)
+
+Disco 가 정식 출시되기 전까지 Google 의 가장 강력한, 아니 전세계 통틀어서 가장 강력한 AI Product 라고 생각하는 (근간인 Gemini 는 논외) Noteboo...
+
+---
+
+## 131. ciaokevin
+> **Date**: 2026-01-22 17:46:02
+> **Link**: [Original Post](https://www.threads.com/@ciaokevin/post/DTzodsdkkhu)
+
+구글에서 만든 stitch는 아래 사이트에서 사용할 수 있는데요.
+
+https://stitch.withgoogle.com/
+
+stitch mcp가 나왔다고 하여 Antigravit...
+
+---
+
+## 132. nordiske_space
+> **Date**: 2026-01-22 16:17:35
+> **Link**: [Original Post](https://www.threads.com/@nordiske_space/post/DTzeV51Ek3p)
+
+AI가 끝가지 해결을 못할때 클로드가 해결책을 제시하면 다른 인공지능이 끝장 토론을 병렬로 실행해서 해결책을 제안하게 함. 전원일치하면 클로드가 수정, 만약에 3번 합의 실패하면 ...
+
+---
+
+## 133. naminsoo_ai
+> **Date**: 2026-01-15 10:24:37
+> **Link**: [Original Post](https://www.threads.com/@naminsoo_ai/post/DTg0YkGE67S)
+
+AI 활용 무료로 해보시라고 
+전부다 정리해뒀어요!
+
+학습은 그만하시고
+직접 해보세요!
+이게 훨씬 더 효과적입니다!!
+
+제발요...🙏
+질문, 영상 시청 그만하시고
+보고 그냥 따라만...
+
+---
+
+## 134. akitect_cat
+> **Date**: 2026-01-21 01:38:59
+> **Link**: [Original Post](https://www.threads.com/@akitect_cat/post/DTvVAAykggl)
+
+안티그래비티 Agent Skills 제대로 안 쓰면
+매번 프롬프트 소설 쓰다가 하루 다 감 ㄹㅇ
+
+요약해서 이렇게 씀.
+
+1) 오픈소스 스킬팩 하나는 무조건 깔아둬
+- GitHub...
+
+---
+
+## 135. qjc.ai
+> **Date**: 2026-01-21 11:00:48
+> **Link**: [Original Post](https://www.threads.com/@qjc.ai/post/DTwVSyTjMaz)
+
+웹디자인, 이제 AI한테 시키면 됩니다. Google이 진짜 미친 도구를 내놨어요....
+
+---
+
+## 136. alliswellinsing
+> **Date**: 2026-01-18 15:43:59
+> **Link**: [Original Post](https://www.threads.com/@alliswellinsing/post/DTpHUUOgTVI)
+
+업무하면서 “이건 진짜 자동화해야지” 싶었던 걸 드디어 해냈다.
+
+다양한 업체에서 날아오는 각기 다른 스타일의 인보이스 PDF를
+동일한 규격의 파일명으로 정리하고,
+각 벤더별 구글...
+
+---
+
+## 137. ai_tusol
+> **Date**: 2026-01-19 10:07:33
+> **Link**: [Original Post](https://www.threads.com/@ai_tusol/post/DTrFnEljzKW)
+
+고수는 역시 다릅니다..
+
+요즘 Agentic Workflow에 빠져서
+주말동안 관련 영상만 계속 찾아봤는데요
+
+우리 Nick 도사님이 활용하는 방법은
+역시 보법이 다릅니다...
+...
+
+---
+
+## 138. tofukyung
+> **Date**: 2026-01-19 08:11:42
+> **Link**: [Original Post](https://www.threads.com/@tofukyung/post/DTq4Wg9E8Tn)
+
+복잡한 논문..인터넷 아카이빙..
+
+링크 긁어서 AI에게 툭 던지면,
+
+원하는대로 옵시디언에 저장해주고, 
+기존 내 문서랑 연결도 해주는 'knowledge-manager'에이전트...
+
+---
+
+## 139. yyn.star
+> **Date**: 2026-01-18 13:57:32
+> **Link**: [Original Post](https://www.threads.com/@yyn.star/post/DTo7IpQAQnf)
+
+매달 AI 구독료 내면서 "이거 해줘", "저거 그려줘"만 하고 있어? 그건 AI를 쓰는 게 아니라 그냥 LLM 회사 매출 올려주는 충성 고객 1인일 뿐임.
+질문을 '설계' 할 줄...
+
+---
+
+## 140. conanssam
+> **Date**: 2026-01-18 16:16:31
+> **Link**: [Original Post](https://www.threads.com/@conanssam/post/DTpLCjKmBNN)
+
+glm + 모바일 코딩 
+
+클로드코드 자체가 최고의 백엔드
+￼
+Software3.0 이다
+
+스크린샷은 YouTube 주소를 넣으면 슬라이드로 변환 해주는 스킬을 불러오는 장면...
+
+---
+
+## 141. choi.director
+> **Date**: 2026-01-18 13:16:27
+> **Link**: [Original Post](https://www.threads.com/@choi.director/post/DTo2byxifgG)
+
+📌 대기업 CEO에게 인정받은 보고법(5-5 규칙)
+
+1년간, 매주 목요일 09:00
+CEO, CPO, CFO 참석 정기회의에서
+고정 보고(발표)를 했다.
+
+이후 CEO 선정 사내...
+
+---
+
+## 142. matt_dancho
+> **Date**: 2026-01-17 23:29:03
+> **Link**: [Original Post](https://www.threads.com/@matt_dancho/post/DTnXmC9DuZZ)
+
+OpenAI, Google, and Anthropic just published guides on:
+
+• Prompt engineering
+• Building agents
+• AI...
+
+---
+
+## 143. hajae.code
+> **Date**: 2026-01-18 10:28:36
+> **Link**: [Original Post](https://www.threads.com/@hajae.code/post/DTojOZDDwdm)
+
+AI 공부에 주말 다 쓰시나요? 
+구글이 푼 ‘이 비밀 문서’ 하나만 보세요.
+
+전 세계 1등 기업들이 실제로 돈 벌 때 쓰는
+생성형 AI 유즈케이스 101가지입니다.
+
+비즈니스 ...
+
+---
+
+## 144. jeju_harry
+> **Date**: 2026-01-18 14:23:09
+> **Link**: [Original Post](https://www.threads.com/@jeju_harry/post/DTo-ESagY-U)
+
+"증명사진 만들기"
+
+인물 사진을 넣으면 정장 차림, 헤어 정리, 피부 보정해서 증명 사진으로 만들어주는 나노바나나 프롬프트야~
+
+필요한 치니들이 있는 것 같아서 만들어봤어~ ^^...
+
+---
+
+## 145. sydney__nam
+> **Date**: 2026-01-16 10:20:15
+> **Link**: [Original Post](https://www.threads.com/@sydney__nam/post/DTjYrdcEyV1)
+
+글쓰기 할때 제목 붙이는 게 가장 중요해요. 
+청담동 살이에 대한 글을 주르륵 쓰고 
+
+<청담동에서 사는 이야기> 
+이렇게 제목을 붙였다면 아무도 안 읽었을겁니다.
+
+대신, <청담...
+
+---
+
+## 146. monica_from_korea
+> **Date**: 2026-01-16 07:48:00
+> **Link**: [Original Post](https://www.threads.com/@monica_from_korea/post/DTjHQUWk-Hy)
+
+제미나이, 데이터 분석 고급 활용법
+
+1. 이커머스 판매 데이터  엑셀 CSV 로 다운로드
+2. 구글 스프레드 시트에서 열기 혹은 붙여넣기
+3. 스프레드시트 상단의 Gemini 클...
+
+---
+
+## 147. qjc.ai
+> **Date**: 2026-01-15 19:12:35
+> **Link**: [Original Post](https://www.threads.com/@qjc.ai/post/DThwzd7D_z-)
+
+이번 주 AI 업계가 뒤집혔습니다. 월 100~200달러짜리 도구를 무료로 직접 만드는 개발자들이 쏟아지고 있거든요....
+
+---
+
+## 148. kimkj008
+> **Date**: 2026-01-15 08:29:44
+> **Link**: [Original Post](https://www.threads.com/@kimkj008/post/DTgnPKiE3Yt)
+
+인포그래픽 생성을 해주는 Gems를 만들어 두고 사용하면 편리합니다....
+
+---
+
+## 149. moongi_adventures
+> **Date**: 2026-01-14 17:58:26
+> **Link**: [Original Post](https://www.threads.com/@moongi_adventures/post/DTfDhjHFRLD)
+
+프롬프트 단축키 모음
+
+알고 쓰면 효율 확 높여주는 단축키
+저장해놨다가 필요할때마다 꺼내쓰기!
+
+프롬프트 맨 뒤에 추가하면 돼~댓글에 
+리스트 달아놨어!...
+
+---
+
+## 150. feelfree_ai
+> **Date**: 2026-01-15 07:00:31
+> **Link**: [Original Post](https://www.threads.com/@feelfree_ai/post/DTgdBsrAttA)
+
+Google Antigravity가 이제 'Agent Skills'를 공식 지원한다는 사실, 알고 계셨나요? 
+
+🚀 AI 에이전트의 능력을 확장하는 새로운 오픈 표준이 등장했습니다...
+
+---
+
+## 151. manusai_kr
+> **Date**: 2026-01-14 21:56:07
+> **Link**: [Original Post](https://www.threads.com/@manusai_kr/post/DTfeub8kXPD)
+
+대부분 AI 이용자가 모르는 사실:
+이미지 합성 및 대체할 때, 
+
+프롬프트에 4K, 초고화질등의 요청보다 
+레퍼런스로 제공하는 이미지가 고화질 일수록 
+
+더 좋은 화질의 결과물을...
+
+---
+
+## 152. jisang0914
+> **Date**: 2026-01-15 12:44:52
+> **Link**: [Original Post](https://www.threads.com/@jisang0914/post/DThEbxXk726)
+
+Claude Code Skills 만들어놨는데
+AI가 절반은 그냥 무시함.
+
+이상해서 테스트 200번 돌려본 사람 있음.
+
+진짜 활성화 확률: 20%
+동전 던지기보다 낮음.
+
+근데...
+
+---
+
+## 153. steady__study.dev
+> **Date**: 2026-01-15 08:46:14
+> **Link**: [Original Post](https://www.threads.com/@steady__study.dev/post/DTgpH7LE7g-)
+
+g-export: 구글 문서들을 로컬에 다운받아주는 Claude Skill
+
+공개된 Google 문서(Slides, Docs, Sheets)를 로컬 파일로 다운로드하는 스킬을 만들...
+
+---
+
+## 154. pulplewhale
+> **Date**: 2026-01-15 11:56:56
+> **Link**: [Original Post](https://www.threads.com/@pulplewhale/post/DTg-8vJEcJ0)
+
+책 쓰기에서 가장 어려운 순간은 첫 줄을 쓸 때입니다.
+머릿속 아이디어를 어디서부터 정리해야 할지 막막하죠.
+그래서 아이디어만 입력하면 책의 핵심을 정리해주는 GPT를 만들어 봤습...
+
+---
+
+## 155. tech.taek
+> **Date**: 2026-01-14 16:43:44
+> **Link**: [Original Post](https://www.threads.com/@tech.taek/post/DTe6-aPCY76)
+
+🧵 안티그래비티 Skills, 드디어 공식!
+
+저 1개월 전부터 강제로 만들어서 쓰고 있었거든요. 공식 기능이 아니라 그냥 해킹한 거였는데...
+
+이게 정식 기능으로 들어온 거예요...
+
+---
+
+## 156. danielmentality_insta
+> **Date**: 2026-01-14 13:00:34
+> **Link**: [Original Post](https://www.threads.com/@danielmentality_insta/post/DTehb5JEavI)
+
+바이브코딩이 쉬워 보이는데, 막상 오류가 쌓이면 금방 막히곤 합니다. 
+제가 해보니 질문→계획→구현 순서를 강제로 만들면 훨씬 덜 헤매더군요.
+
+1) 목표를 한 문장으로 고정합니다...
+
+---
+
+## 157. the_unwork
+> **Date**: 2026-01-15 08:43:44
+> **Link**: [Original Post](https://www.threads.com/@the_unwork/post/DTgo1tgkzfe)
+
+제 노션(Notion)은 '디지털 쓰레기통'이었습니다. 자료는 맨날 스크랩하는데, 정작 필요할 땐 못 찾아서 다시 구글링했거든요.
+
+그러다 챗GPT에 노션을 연결(MCP)하고 광명...
+
+---
+
+## 158. aiecorofficial
+> **Date**: 2026-01-13 23:20:27
+> **Link**: [Original Post](https://www.threads.com/@aiecorofficial/post/DTdDlJBEr3W)
+
+제미나이 쓰는 분들
+이 설정 안 켜면
+절반만 쓰는 겁니다
+
+설정 > Google Workspace 연동
+
+구글 연동이
+제미나이의 핵심입니다...
+
+---
+
+## 159. immersivebama
+> **Date**: 2026-01-14 01:23:01
+> **Link**: [Original Post](https://www.threads.com/@immersivebama/post/DTdRm8xlJv6)
+
+쓰레드에서 공유해주신 글을 보고, 안티그래비티 활용해서 자동화 워크플로우를 따라해봤다. 꽤나 잘 굴러간다. 아침 7시로 설정해서, 자동으로 관련주제 아티클을 오픈소스로 추출하고 초...
+
+---
+
+## 160. pangol82
+> **Date**: 2026-01-13 13:23:13
+> **Link**: [Original Post](https://www.threads.com/@pangol82/post/DTb_O9qgYEJ)
+
+간단하게 정리해보는 구글워크스페이스와 인공지능 사용법
+
+Keep - 링크와 아이디어 수집
+Drive - Second Brain과 Agent, Skill 저장소
+NotebookLM ...
+
+---
+
+## 161. jisang0914
+> **Date**: 2026-01-11 18:05:10
+> **Link**: [Original Post](https://www.threads.com/@jisang0914/post/DTXV6R6E-IZ)
+
+Claude Code 만든 사람 세팅 공개됨.
+터미널 5개.
+웹 버전 5-10개.
+폰으로 아침에 세션 시작.
+15개 이상 동시에.
+근데 "특별한 세팅 없다"래....
+
+---
+
+## 162. tilnote
+> **Date**: 2026-01-11 13:26:27
+> **Link**: [Original Post](https://www.threads.com/@tilnote/post/DTW2A2pE5y0)
+
+일론 머스크가 SpaceX와 Tesla를 만들 때 실제로 쓴 설계 방법론이 있다.
+
+5단계로 구성된 이 프로세스.
+대부분의 조직이 거꾸로 하고 있다고 한다.
+
+핵심은 이거다.
+"자...
+
+---
+
+## 163. dev_shibaa
+> **Date**: 2026-01-11 13:32:58
+> **Link**: [Original Post](https://www.threads.com/@dev_shibaa/post/DTW2wockmnA)
+
+바이브코딩 찐고수들은 다 쓰고 있는 툴 공개함.
+
+바로 '안티그래비티 매니저' 라는 툴인데
+깃헙에 나오자마자 별 1만개 찍고 시작함ㄷㄷ
+심지어 포크는 1천이 넘음.
+
+안티그래비티 ...
+
+---
+
+## 164. careerhackeralex
+> **Date**: 2026-01-10 17:16:37
+> **Link**: [Original Post](https://www.threads.com/@careerhackeralex/post/DTUrjxHlL_-)
+
+지금 실리콘밸리 개발자는 모두 비상에 걸렸다. 
+Meta에서 8년차 개발자로 일해온 나 역시 마찬가지다.
+
+AI가 너무 빠른속도로 발전하면서, 그리고 너무 잘하게 되면서 "현타" ...
+
+---
+
+## 165. edtkworker
+> **Date**: 2026-01-11 13:51:01
+> **Link**: [Original Post](https://www.threads.com/@edtkworker/post/DTW40xejLeJ)
+
+지난달 했었던 생성형 AI 활용 교수법 특강 자료 공유합니다. 여기서 배워가는게 많은데, 입 싹 닦기도 뭐하고, 뭐라도 하나 내 놔야 할 것 같은 불편한 마음에, 나눌 수 있는게 ...
+
+---
+
+## 166. specal1849
+> **Date**: 2026-01-11 08:09:15
+> **Link**: [Original Post](https://www.threads.com/@specal1849/post/DTWRE-4EbAC)
+
+구글아 이런거 만들었으면 자랑좀해라..
+
+제미나이가 구글안에 들어오면서 
+구글DOCS가 또 한단계 진화했습니다.
+
+영상부터 보실까요?
+
+이게 AI지 캬... 이제는 자료수집 문맥 ...
+
+---
+
+## 167. sarah.eat.mom
+> **Date**: 2026-01-10 11:31:35
+> **Link**: [Original Post](https://www.threads.com/@sarah.eat.mom/post/DTUEEroki7e)
+
+AI 디자인 치트키, 이제 그냥 복붙해서 쓰자! 
+
+AI로 디자인하는 사람들 사이에서 요즘
+조용히 돌고 있는 꿀사이트 하나 공유할게. 
+나노바나나, ChatGPT 같은 AI한테 c...
+
+---
+
+## 168. careernomad_
+> **Date**: 2026-01-10 18:19:58
+> **Link**: [Original Post](https://www.threads.com/@careernomad_/post/DTUyzxDAX4K)
+
+내가 금융권 출신이라 잘 안다. 
+
+사람들은 돈 불리는 복리에는 환장하면서, 
+글쓰기 + 브랜딩 복리는 철저히 무시한다.
+
+글 1개는 데이터 조각이다. 
+글 100개는 명함이 된다...
+
+---
+
+## 169. sangdamgac
+> **Date**: 2026-01-10 03:03:46
+> **Link**: [Original Post](https://www.threads.com/@sangdamgac/post/DTTJ9SJE4YD)
+
+아는 사람은 다 아는 돈 잘 버는 출판사의 방법.
+구역질 주의.
+
+ai로 책을 냄.
+국중도에 책을 내면 1권 가격을 받음.
+지자체 지원금을 받음.
+
+어느 출판사는 만 권 정도 냈다...
+
+---
+
+## 170. taehyeong_lim
+> **Date**: 2026-01-10 22:21:12
+> **Link**: [Original Post](https://www.threads.com/@taehyeong_lim/post/DTVOakVkSUb)
+
+오늘은 정~~~말 유의미한 진전이 있는 날이다.
+옵시디언+안티그래비티 조합을 드디어 허들을 넘었다.
+
+연구계획서 .md 파일주고, 관련된 논문 검색 및 저장 프로젝트를 굴렸다. 
+...
+
+---
+
+## 171. yourgpt3650
+> **Date**: 2026-01-10 10:59:57
+> **Link**: [Original Post](https://www.threads.com/@yourgpt3650/post/DTUAdBHjV7G)
+
+AI로 보고서 쓰면 끝날 거라 믿는 착각은 이제 그만
+
+초안만 맡기기 = 수정 지옥
+
+대신 이 6가지 보고서 프롬프트로 AI를 비서가 아니라
+전략기획팀 에이스처럼 써봐...
+
+---
+
+## 172. ai_sync_club
+> **Date**: 2026-01-10 19:05:00
+> **Link**: [Original Post](https://www.threads.com/@ai_sync_club/post/DTU3wjAihFa)
+
+AI로 만든 PPT 더이상 무시하지마세요
+
+마누스로 만든 슬라이드를 보면
+깜짝 놀랄 겁니다.
+
+다만, 아래의 프롬프트를 추가해야합니다....
+
+---
+
+## 173. lucy_prime788
+> **Date**: 2026-01-09 18:35:21
+> **Link**: [Original Post](https://www.threads.com/@lucy_prime788/post/DTSPxhJFUre)
+
+Gemini  GEM 기능을 써봤는데 이거 완전 대박임. 
+홈에가서 딥리서치기능 선택하고,  평소에 내가 관심있는 책한권 을 챕터별로 정리해달라고 요청.  10분정도면 다 완성이되...
+
+---
+
+## 174. yourgpt3650
+> **Date**: 2026-01-09 20:13:08
+> **Link**: [Original Post](https://www.threads.com/@yourgpt3650/post/DTSa9uLEg9_)
+
+챗지피티에게 아이디어 좀 줘라고 묻는 실수는 이제 그만
+
+막연한 요청 = 쓸모없는 답변 공장
+
+대신 이 5가지 발상 프롬프트로 바로 써먹을 수 있는 팔리는 아이디어만 뽑아봐...
+
+---
+
+## 175. companoid.institute
+> **Date**: 2026-01-09 11:49:58
+> **Link**: [Original Post](https://www.threads.com/@companoid.institute/post/DTRhYcRD0lE)
+
+최근 개발자들 사이에서 가장 뜨거웠던 대회, 혹시 들어보셨나요? 바로 카카오임팩트와 브라이언임팩트에서 주최한 ‘AI TOP 100‘입니다. 단순히 코딩 실력을 겨루는 것이 아니라,...
+
+---
+
+## 176. bibl_youtube
+> **Date**: 2026-01-09 22:25:47
+> **Link**: [Original Post](https://www.threads.com/@bibl_youtube/post/DTSqJP4EkP9)
+
+총 60만 유튜버인 저도 AI를 활용해 
+유튜브 대본을 씁니다.
+그런데 원래 알고 계시던거랑 좀 다를겁니다.
+진짜 AI를 활용한다는 건 이런겁니다....
+
+---
+
+## 177. laeyoung
+> **Date**: 2026-01-09 15:53:01
+> **Link**: [Original Post](https://www.threads.com/@laeyoung/post/DTR9Mj_iRq4)
+
+전 Figma의 Director of Design이자, 현 Anthropic Design Lead가 말해주는 기존의 디자인 프로세스를 믿지 말라는 강연.
+
+요약을 하자면, AI로 ...
+
+---
+
+## 178. choi.openai
+> **Date**: 2026-01-09 07:30:55
+> **Link**: [Original Post](https://www.threads.com/@choi.openai/post/DTRDvEhCG4L)
+
+Claude Skills의 가이드북 공유해드립니다.
+
+최근 미국 빅테크에 종사하시는 분들과 만날 때마나 나오는 이야기가 AI가 직무평가에 굉장히 중요시하게 반영되고 있음과 Skil...
+
+---
+
+## 179. insta_yoonchan
+> **Date**: 2026-01-06 20:25:02
+> **Link**: [Original Post](https://www.threads.com/@insta_yoonchan/post/DTKt8TqgRkq)
+
+[받] AI 기반의 사업전략 전문가를 찾습니다.
+
+GPT, Grok, Perplexity, Gemini 등 대화형 인공지능 서비스를 활용하여 오프라인 조찬모임 강의를 맡아주실 연사...
+
+---
+
+## 180. insta_yoonchan
+> **Date**: 2026-01-07 09:41:06
+> **Link**: [Original Post](https://www.threads.com/@insta_yoonchan/post/DTMJC39Et_M)
+
+마케팅 영업 스타일
+
+1/ 혼내면서 가르치기
+2/ 정보와 기준 풀기
+3/ 자랑을 섞은 소감
+
+- 1번 항목은 소상공인, 전문직 대상으로 '작은 대행사'가 주로 쓰는 스킬같다. 뭐랄...
+
+---
+
+## 181. gpt_park
+> **Date**: 2026-01-05 10:25:57
+> **Link**: [Original Post](https://www.threads.com/@gpt_park/post/DTHEhJqDa_F)
+
+🔥 구글이 또 미쳤다. 디자이너, 개발자 다 필요 없다.
+"텍스트 한 줄"로 앱이 완성된다고? 🧠💥
+
+구글이 새로 공개한 'Stitch', 진짜 혁신 그 자체.
+코딩 몰라도, 피그...
+
+---
+
+## 182. ok_k_studio
+> **Date**: 2026-01-04 23:03:48
+> **Link**: [Original Post](https://www.threads.com/@ok_k_studio/post/DTF2ha_ibNE)
+
+주제: 요즘 '강의팔이'들 수법, 팩트로 다 부숴줄게
+
+나도 공부하려고 이것저것 결제해 보다가 진짜 기가 차서 글 쓴다. 겉만 번지르르하게 포장해서 간절한 사람들 등쳐먹는 강의팔이...
+
+---
+
+## 183. tofukyung
+> **Date**: 2026-01-02 19:09:42
+> **Link**: [Original Post](https://www.threads.com/@tofukyung/post/DTAR3TmAj-F)
+
+제품 광고 영상도 쉽게 만들게 도와주는 Tofukyung 프롬프트 생성기!
+
+AI 쓰기 어려워하는 많은 분들을 위해,
+제가 정말 열심히 만들고 수정했습니다.
+
+동영상, 이미지, 글...
+
+---
+
+## 184. gpt_minje
+> **Date**: 2026-01-03 08:43:04
+> **Link**: [Original Post](https://www.threads.com/@gpt_minje/post/DTBvORnkpUy)
+
+...
+
+---
+
+## 185. irum_hahn
+> **Date**: 2026-01-03 19:00:23
+> **Link**: [Original Post](https://www.threads.com/@irum_hahn/post/DTC13mTgtbj)
+
+완벽한 상세페이지 풀버전 7장을 3분 만에 자동 완성하는 방법 공개합니다 🚀
+
+제품컷 1장 + 기존 상세페이지 1장만 있으면 
+→ GPT-5.2가 핵심 추출 → n8n 워크플로우가...
+
+---
+
+## 186. aicoffeechat
+> **Date**: 2026-01-02 23:53:03
+> **Link**: [Original Post](https://www.threads.com/@aicoffeechat/post/DTAykTzEhfu)
+
+상위 1% 엔지니어는 PRD 쓸 때 빈 화면부터 시작하지 않습니다.
+
+1. 만들고 싶은 기능이 있다면, 이미 있는 비슷한 사이트를 켜세요.
+2. 그리고 화면 녹화를 켜고, 마우스로...
+
+---
+
+## 187. nordiske_space
+> **Date**: 2026-01-02 21:08:39
+> **Link**: [Original Post](https://www.threads.com/@nordiske_space/post/DTAfwOWkpTe)
+
+내가 쓰는 방법인데 괜찮음
+애자일 방법론을 도입해서 코덱스가 엄청 깐깐한 관리자 역할을 맡게하고 클로드는 불쌍한 개발자 역할을 맡김
+그러면 각 방법론 대로 클로드가 엄청나게 상세한...
+
+---
+
+## 188. heedam_i
+> **Date**: 2026-01-02 21:52:49
+> **Link**: [Original Post](https://www.threads.com/@heedam_i/post/DTAkzttkvIM)
+
+구글 AI 스튜디오에서
+이미지만 넣으면 반응형+인터렉션
+웹사이트가 뚝딱 완성되네요..
+
+이제 아임웹 안써도 되겠습니다!!😭...
+
+---
+
+## 189. aicoffeechat
+> **Date**: 2026-01-03 07:52:56
+> **Link**: [Original Post](https://www.threads.com/@aicoffeechat/post/DTBpfJBk9U7)
+
+오늘 스레드에서 꼭 저장해야하는 글. 그리고 해보세요.
+
+Claude Code를 만든 보리스(Boris)가 직접 자신의 세팅과 사용법을 공개했습니다. 도구를 만든 사람은 그 도구를...
+
+---
+
+## 190. msf_ip_kj
+> **Date**: 2026-01-02 22:08:49
+> **Link**: [Original Post](https://www.threads.com/@msf_ip_kj/post/DTAmo18D-jX)
+
+네이버 블로그는 완전 죽었다고 본다
+AI가 작성하고 AI가 댓글 달고
+AI들끼리 미팅하는 곳으로 변함...
+
+---
+
+## 191. tornado_616
+> **Date**: 2026-01-01 22:13:38
+> **Link**: [Original Post](https://www.threads.com/@tornado_616/post/DS-BymgDQdD)
+
+📊 NotebookLM > Gemini 슬라이드?
+인포그래픽도 이쁘고 레이아웃도 더 나은데 단점은 PDF로만 되서 수정이 불가라고 생각했어 근데 구글 AI Studio로 pptx로...
+
+---
+
+## 192. extsvforest
+> **Date**: 2026-01-02 15:31:15
+> **Link**: [Original Post](https://www.threads.com/@extsvforest/post/DS_5JEXkRNy)
+
+클로드 코드와 코덱스가 
+올해는 프로그래밍이 아닌 용도로도 주목받을 것이라고 확신한다.
+
+코덱스를 업무 비서로서 한 달 사용해봤다.
+시행착오가 꽤 많았고 앞으로도 있을 것이다.
+하...
+
+---
+
+## 193. tuberithm
+> **Date**: 2026-01-02 07:30:43
+> **Link**: [Original Post](https://www.threads.com/@tuberithm/post/DS_CJRHk-Lw)
+
+1. 구글 AI로 특정 유튜버를 통째로 '복제'하는 방법이 공개됐다.
+
+자극적인 낚시성 멘트가 아니다.
+구글의 NotebookLM을 활용하면, 특정 크리에이터의 뇌(Brain)를 ...
+
+---
+
+## 194. aicoffeechat
+> **Date**: 2025-12-29 10:17:36
+> **Link**: [Original Post](https://www.threads.com/@aicoffeechat/post/DS1CESekre9)
+
+클로드 개발자 공유하는 핵심 워크 플로우 
+
+<AI에게 인터뷰를 당하세요>
+내가 AI에게 지시하는 게 아니라, AI가 나를 인터뷰하게 만드세요. "이 기능을 만들 건데, 네가 나한...
+
+---
+
+## 195. aicoffeechat
+> **Date**: 2025-12-22 19:31:41
+> **Link**: [Original Post](https://www.threads.com/@aicoffeechat/post/DSj_6YFkg6r)
+
+최고에게 배우는 AI 코딩 워크플로우
+
+Anthropic 엔지니어링 리더의 LLM 코딩 워크플로우를 공유합니다. 아마 많은 분들은 이미 하고 있으실거지만, 이제 개발에 관심을 가지...
+
+---
+
+## 196. jrara_sogood
+> **Date**: 2025-12-28 15:50:56
+> **Link**: [Original Post](https://www.threads.com/@jrara_sogood/post/DSzDa1TEeSg)
+
+"우와 너 진짜 전문가구나"
+
+오늘 친구한테 업무 자동화 툴 만들어주고 들은 말
+3시간 만에 뚝딱 만들어주니까 엄청 신기해하더라
+
+근데 사실 비밀이 하나 있음
+나 3시간 중 1시간...
+
+---
+
+## 197. starstarlight_marketing
+> **Date**: 2025-12-28 00:58:07
+> **Link**: [Original Post](https://www.threads.com/@starstarlight_marketing/post/DSxdPoCj5rz)
+
+쓰레드에서 핫한 2025년 나를 돌아보는 심층분석 리포트 만드는 방법 (뼈맞음 🦴)
+
+1. 아래 프롬프트를 제일 많이 쓰는 생성형AI에 넣기! (챗GPT,제미나이 대화기록이 제일 ...
+
+---
+
+## 198. study_ing_squirrel
+> **Date**: 2025-12-28 13:51:53
+> **Link**: [Original Post](https://www.threads.com/@study_ing_squirrel/post/DSy1y1QARLv)
+
+내 AI는 왜 저사람이랑 다르지?
+
+GPT, 제미나이등등 왜 저사람이 쓴 
+내용을 그대로 가져와도 왜 다를까요?
+'맞춤형 지침' 때문입니다. 
+
+아래는 제가 실제로 쓰고 있는 AI...
+
+---
+
+## 199. pitchtitan
+> **Date**: 2025-12-27 20:59:57
+> **Link**: [Original Post](https://www.threads.com/@pitchtitan/post/DSxB_M8D0dn)
+
+제미나이에서 만든 슬라이드와
+노트북LM에서 만든 슬라이드가 전혀 다른 이유
+
+<정답> 슬라이드 만드는 비주얼 엔진이 다름
+제미나이 캔버스 → Google Slides API 
+노트...
+
+---
+
+## 200. specal1849
+> **Date**: 2025-12-28 13:30:44
+> **Link**: [Original Post](https://www.threads.com/@specal1849/post/DSyzX_MEq66)
+
+요즘느끼는거 AI쓰면서 그렇게 많은툴 필요없다 쓰려했는데
+쓰는거 정리해보니까 많네...
+
+공냥이-AI크리에이터로 매일쓰는기준
+
+1Chat gpt 제미나이 클로드[다쓰는 목적이다름]...
+
+---
+
+## 201. gwon_vibe
+> **Date**: 2025-12-15 19:47:21
+> **Link**: [Original Post](https://www.threads.com/@gwon_vibe/post/DSSAJEckx6p)
+
+📕949명이 찾은 바이브코딩 전자책 2탄 (무료)
+
+총 22P 분량의 PRD 작성법을 작성했어요.
+
+이전의 클로드코드 입문서를
+많은 분들께서 좋아해주셔서 시리즈로 내려고 합니다.
+...
+
+---
+
+## 202. yourgpt3650
+> **Date**: 2025-12-27 17:26:31
+> **Link**: [Original Post](https://www.threads.com/@yourgpt3650/post/DSwpkD7ksP7)
+
+챗지피티에게 데이터 정리(공백/중복/형식) 때문에 스트레스 받는 건 이제 그만
+
+복붙 난장판 = 수식 다 깨짐
+
+대신 이 5가지 프롬프트로 데이터부터 깔끔하게 만들어봐...
+
+---
+
+## 203. struc___ture
+> **Date**: 2025-12-27 18:28:41
+> **Link**: [Original Post](https://www.threads.com/@struc___ture/post/DSwwrTGk7d0)
+
+추천 받은 셀러 AI 활용 공식 인데요,
+
+핵심은 ‘툴 조합’이구요. 
+
+① Perplexity Pro → 시장 분석 (리뷰 크롤링)
+② ChatGPT-5.2 → 마진 시뮬레이션
+...
+
+---
+
+## 204. programmingzombie
+> **Date**: 2025-12-27 19:18:15
+> **Link**: [Original Post](https://www.threads.com/@programmingzombie/post/DSw2WViE_0V)
+
+안드레이 카패시의 경고와 통찰
+"개발자라는 직업이 재설계(Refactoring)되고 있다"
+
+OpenAI의 창립 멤버이자 전 Tesla AI 디렉터인 안드레이 카패시(Andrej ...
+
+---
+
+## 205. choi.openai
+> **Date**: 2025-12-27 13:03:30
+> **Link**: [Original Post](https://www.threads.com/@choi.openai/post/DSwLdrWD6DI)
+
+AI 학습에 돈을 쓸 필요는 없습니다.
+
+오픈AI, 구글, 앤트로픽 등이 웬만한 유료 강의보다 뛰어난 정보를 무료로 공개하고 있습니다.
+프롬프트부터 AI 개발까지 필요한 기초적인 ...
+
+---
+
+## 206. alcohol_fully
+> **Date**: 2025-12-27 12:30:08
+> **Link**: [Original Post](https://www.threads.com/@alcohol_fully/post/DSwHpNxE1U-)
+
+구글이 새해를 앞두고 파격 할인에 나섰습니다. AI Pro 연간 요금제가 199.99달러에서 99.99달러로, 절반 가격입니다. 한국 기준 약 14만원이면 1년간 Gemini 3 ...
+
+---
+
+## 207. dev_shibaa
+> **Date**: 2025-12-25 11:34:56
+> **Link**: [Original Post](https://www.threads.com/@dev_shibaa/post/DSq3vMgkjNd)
+
+20대 친구들이 IT 사업 대부분 망하는 이유는
+사업을 거꾸로 하기 때문이야. 가령,
+
+1. 정부지원사업을 따내서 서비스 만들고
+2. 마케팅을 하고 직원을 뽑고 어쩌고
+3. 망해서...
+
+---
+
+## 208. focusrefresh
+> **Date**: 2025-12-25 19:11:11
+> **Link**: [Original Post](https://www.threads.com/@focusrefresh/post/DSrr84flFEq)
+
+2026년 제미나이 잘 써 보는 팁. 5명이서 미국, 캐나다에 생산공장 8개 관리하고 있는 친구한테 국밥 먹다 들은 얘기에 영감 얻어 써 봄다.
+
+젤 중요한 건 일단 모든 파일을 ...
+
+---
+
+## 209. tofukyung
+> **Date**: 2025-10-01 23:12:53
+> **Link**: [Original Post](https://www.threads.com/@tofukyung/post/DPRP3W3Annj)
+
+수많은 책 홍보 영상 중 그나마 마음에 드는 거 업로드.
+
+현재 집필 중인 AI 글쓰기 책을, 
+가상의 3D 디자인 제작부터 홍보 영상을 제작까지 다 AI로 해봤습니다.
+
+이미지 ...
+
+---
+
+## 210. specal1849
+> **Date**: 2025-11-26 06:58:45
+> **Link**: [Original Post](https://www.threads.com/@specal1849/post/DRftFAqE3Pv)
+
+미국에서 Gemini는 앱스토어 1위에 
+나노바나나2와 각종 어플은 는굉장합니다. 
+
+다만 대다수의 사람들은 이제대로 못쓰고 있어요
+
+글 하나로 16만 조회수가 나왔고
+제미나이 강...
+
+---
+
+## 211. specal1849
+> **Date**: 2025-09-14 12:30:09
+> **Link**: [Original Post](https://www.threads.com/@specal1849/post/DOkU-Zhkk5J)
+
+미국에서 Gemini는 앱스토어 1위입니다
+
+다만 대다수의 사람들이 제대로 못쓰고 있어요
+
+제미나이 강의만들고 현강 자주하는 사람이 알려주는
+진짜 실전용 AI꿀팁 총집편
+
+1.제미...
+
+---
+
+## 212. specal1849
+> **Date**: 2025-12-23 17:13:50
+> **Link**: [Original Post](https://www.threads.com/@specal1849/post/DSmUMfvkQ_v)
+
+[제대로 쓰는 노트북 LM가이드]
+
+2-4시까지 세종대 교수님 대상 웨베나하고 
+
+AI 프롬프트 깍는 노인에 빙의해 노트북LM 슬라이드 자료 
+프롬좀 깍아왔습니다.
+
+게임스타일 
+...
+
+---
+
+## 213. super_writer12
+> **Date**: 2025-12-20 09:00:00
+> **Link**: [Original Post](https://www.threads.com/@super_writer12/post/DSduCCegtqQ)
+
+스레드는 이게 핵심이에요. 꼭 저장하세요.
+
+글의 기본 구조가 서론-본론-결론인데,
+스레드는 조금 달리 해야 해요.
+
+1. 시선을 끄는 1줄
+2. 압축요약한 본론 3~4줄
+3. 글...
+
+---
+
+## 214. platter.worklab
+> **Date**: 2025-12-19 19:07:35
+> **Link**: [Original Post](https://www.threads.com/@platter.worklab/post/DScOxOAkzam)
+
+"요새 AI 안쓰면 안된다길래"라면서 막연하게 새 툴, 새 업데이트, 프롬프트 예시 등 찾아 헤매야 뭐하나
+
+이미 대부분의 지식 자체가 AI와 함께 풀린 상황에서
+노하우, 지식, ...
+
+---
+
+## 215. yun_ja_dong
+> **Date**: 2025-12-19 19:58:39
+> **Link**: [Original Post](https://www.threads.com/@yun_ja_dong/post/DScUnTvE933)
+
+코딩 잘한다고 다 돈 잘 벌면
+개발자들이 미쳤다고 회사 취업하겠습니까?
+다 1인 기업으로 돈 쓸어담고 있겠죠.
+
+사업으로 돈을 벌려면 코딩 능력은 생각보다 안 중요합니다.
+진짜 중...
+
+---
+
+## 216. specal1849
+> **Date**: 2025-12-18 07:07:23
+> **Link**: [Original Post](https://www.threads.com/@specal1849/post/DSYXjdgExsv)
+
+Ai분야에서 기억하고있는 댓글들
+
+1.같은기술가지고 언제까지 우려먹을래
+(올해는 택도없어 사진 영상쪽)
+
+2.프롬프트 공부할필요없어요 더쉬워질거에요
+(진짜?)
+
+3.GEO이야기를함...
+
+---
+
+## 217. specal1849
+> **Date**: 2025-12-16 08:27:34
+> **Link**: [Original Post](https://www.threads.com/@specal1849/post/DSTWkAOESmj)
+
+구글구글아... 제미나이에 
+이런 개쩌는거 만들고 왜 홍보를안하니..?
+
+이제 제미나이 안에서 바로 PDF가 만들어집니다.
+심지어 PDF로 바로저장이 되네요???
+
+캬....과거에...
+
+---
+
+## 218. specal1849
+> **Date**: 2025-11-30 06:24:45
+> **Link**: [Original Post](https://www.threads.com/@specal1849/post/DRp8XdFE2VH)
+
+이미지 프롬프트 심화이론
+
+나노바나나pro 글중 이런글들 많이보셨을겁니다.
+제이슨 쓰면 잘할수있어요 json이 정답입니다.
+
+근데 그거아세요? 일반적으로 많이쓰이는 프롬프트중
+자연...
+
+---
+
+## 219. specal1849
+> **Date**: 2025-12-13 07:33:51
+> **Link**: [Original Post](https://www.threads.com/@specal1849/post/DSLinAmE2my)
+
+내글 AI영상가지고 회사에서 회의랑 강의를한다고???
+
+이게 왜문제죠...?
+보라고 올린거고 쓰라고 올린건데..?
+
+DM으로 공냥이님 채널을 강의에서켜서 
+제미나이 영상 보여주는분...
+
+---
+
+## 220. specal1849
+> **Date**: 2025-08-20 17:31:34
+> **Link**: [Original Post](https://www.threads.com/@specal1849/post/DNkdqoARStO)
+
+어제는 보고서 쓰는법을 보여드렸죠?
+
+제미나이에서 보고에 필요한 그림을 물어보고
+whisk에서 순식간에 만들수 있습니다.
+
+대략 아래와 같이 보고서 만드는데 1시간정도 소모했네요
+...
+
+---
+
+## 221. programmingzombie
+> **Date**: 2025-12-10 14:11:31
+> **Link**: [Original Post](https://www.threads.com/@programmingzombie/post/DSEhu-lE8kp)
+
+1. 기획 (Market Need)
+아무리 잘 만들고(개발), 예쁘고(디자인), 널리 알렸어도(마케팅), 사람들이 원하지 않는 것이라면 수익은 0입니다.
+
+[ 개발(100) x 기...
+
+---
+
+## 222. ai.dentity.141
+> **Date**: 2025-07-30 20:50:21
+> **Link**: [Original Post](https://www.threads.com/@ai.dentity.141/post/DMuxpQ-IChX)
+
+정지우 작가님 
+<AI, 글쓰기, 저작권>을 읽다가
+이 문장에 몇 번이고 밑줄을 쳤어요. 
+
+"글을 쓰는 사람이 걱정해야 할 건
+AI의 글쓰기 기술이 아니다. 
+오히려 글을 삶으로...
+
+---
+
+## 223. jungjiwoowriter
+> **Date**: 2025-12-12 19:23:09
+> **Link**: [Original Post](https://www.threads.com/@jungjiwoowriter/post/DSKO_GEARgh)
+
+지난 날들을 돌아보니, 글쓰기에 대한 총 3권의 책을 썼다. 첫 책은 글쓰기에 관한 에세들을 모은 <우리는 글쓰기를 너무 심각하게 생각하지>다. 당시 편집자님이 '선정될 수 있는 ...
+
+---
+
+## 224. specal1849
+> **Date**: 2025-12-12 17:00:51
+> **Link**: [Original Post](https://www.threads.com/@specal1849/post/DSJ-s-OEj2D)
+
+강의에서 자주 다루는 이야기
+
+AI사용시 항상하는말이 있습니다.
+
+"제발 질문증강쓰세요 진짜 제발요""
+
+사실 프롬프트 엔지니어링은 기본적으로 
+GPT나 제미나이가 가지는 편향성을...
+
+---
+
+## 225. specal1849
+> **Date**: 2025-12-06 08:09:35
+> **Link**: [Original Post](https://www.threads.com/@specal1849/post/DR5lIlhEntF)
+
+실무적 프롬프트는 어떤식으로 작성하는가?
+
+저는 글의 초안을 AI로 많이 뽑습니다.
+클로드가 글을 잘쓰는것은 사실이나
+
+사실 만족스러운 수준은 아니라 GPT 5.1에 많이 위임하는...
+
+---
+
+## 226. specal1849
+> **Date**: 2025-12-06 07:07:51
+> **Link**: [Original Post](https://www.threads.com/@specal1849/post/DR5eEaEE9_R)
+
+요즘은 AI기반으로 일을 하다 보면 
+
+업무방식이 달라졌다는 느낌을 받을 때가 많습니다.
+특히 GPT나 제미나이를 사용해 워크플로우를 실시간으로 수정하다보면
+
+원래는 불가능했던 업...
+
+---
+
+## 227. specal1849
+> **Date**: 2025-12-09 11:39:53
+> **Link**: [Original Post](https://www.threads.com/@specal1849/post/DSBpzvtkVTT)
+
+구글 믹스보드에서 이제 프레젠 테이션이 됩니다.
+
+비쥬얼피치덱 기능이 공식적으로 출시되었습니다.
+나노바나나 PRO기반으로 생성하는데 
+
+3개 만들어 보며 분석해보니 상당히 괜찮습니...
+
+---
+
+## 228. specal1849
+> **Date**: 2025-12-03 15:56:31
+> **Link**: [Original Post](https://www.threads.com/@specal1849/post/DRysL3RkpGl)
+
+AI기반 취업준비시 도움이 되는 툴 정리
+
+이번에 가벼운 파일럿프젝트 느낌으로
+지인분의 취업을 도와 드렸습니다.
+
+그분은 지금 대기업2곳을 합격해
+레퍼런스체크를 기다리고있죠
+
+저는...
+
+---
+
+## 229. specal1849
+> **Date**: 2025-09-17 17:07:34
+> **Link**: [Original Post](https://www.threads.com/@specal1849/post/DOshd8oEcaT)
+
+서울대 강의에서 풀려고 만든 프롬프트
+
+이거 필요하신분이 있을지는 모르겠는데
+
+이번주 스타트업 대표님들 모시고 강의를 합니다.
+그때 드릴 IR자료 초안 뽑는 프롬프트 입니다.
+
+강...
+
+---
+
+## 230. specal1849
+> **Date**: 2025-12-10 17:06:37
+> **Link**: [Original Post](https://www.threads.com/@specal1849/post/DSE1xdPkpu-)
+
+AI 강의 사기전에, 제발 이것만 읽고 강의 사세요
+
+현행 프롬프트 최신 이론 논문 
+AI활용법 이글하나에 정리 다해뒀습니다.
+
+1.25년도 최신 프롬프트 심화이론[내부글 좋아요 ...
+
+---
+
+## 231. specal1849
+> **Date**: 2025-12-12 06:58:56
+> **Link**: [Original Post](https://www.threads.com/@specal1849/post/DSI4E1AkaQ0)
+
+DM워낙 많이와서 나노바나나 PRO
+이론과 실무수업용 PDF 공유입니다.
+
+총 500장이며 다룬 케이스는 다음과 같습니다.
+
+1.마케터를 위한
+실무용 포스터, 썸네일, 카드뉴스 프...
+
+---
+
+## 232. art_director_teddy
+> **Date**: 2025-12-12 23:08:14
+> **Link**: [Original Post](https://www.threads.com/@art_director_teddy/post/DSKovq7Etdo)
+
+Ai로 만든 삼성증권 mPOP 제작 후기!
+
+1. 광고주가 준 브리프 및 가이드 확인
+2. 아이데이션(컨셉 및 BGM 선정)
+3. 러프 스케치(레퍼런스 체크)
+4. 스토리보드 제작...
+
+---
+
+## 233. specal1849
+> **Date**: 2025-12-13 09:06:28
+> **Link**: [Original Post](https://www.threads.com/@specal1849/post/DSLtNP8Em2v)
+
+요즘 AI로 글쓰는 방법입니다.
+
+개발자 분들은 대충알아보실것같습니다.
+오늘은 로컬에서 옆에 옵시디언 기반 작업인데
+
+룰MD랑 스킬스 연계해 문체지정하고
+서브에이전트로 관리시키고
+...
+
+---
+
+## 234. danhovac
+> **Date**: 2025-12-01 13:57:28
+> **Link**: [Original Post](https://www.threads.com/@danhovac/post/DRtU-J0E3MU)
+
+사업계획서 슬라이드의 승자 notebookLM
+
+IR 피치덱 발표할 일 있으면 notebookLM 꼭 써라
+genspark, claude, gemini, gpt 다 써봤는데
+not...
+
+---

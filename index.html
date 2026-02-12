@@ -120,6 +120,16 @@
                 >
               </button>
               <button
+                data-filter="todos"
+                class="filter-chip flex items-center justify-center size-10 rounded-full bg-surface-glass hover:bg-surface-glass-hover text-gray-300 hover:text-white border border-border-glass transition-all whitespace-nowrap group"
+                title="TODO 리스트"
+              >
+                <span
+                  class="material-symbols-outlined text-[18px] text-orange-400"
+                  >check_box</span
+                >
+              </button>
+              <button
                 data-filter="linkedin"
                 class="filter-chip flex items-center justify-center size-10 rounded-full bg-surface-glass hover:bg-surface-glass-hover text-gray-300 hover:text-white border border-border-glass transition-all whitespace-nowrap group"
                 title="LinkedIn"
@@ -474,13 +484,19 @@
             class="tab-btn active pb-3 text-base font-semibold border-b-2 border-primary text-white transition-all"
             data-target="tabHidden"
           >
-            숨김 게시물
+            숨김 관리
           </button>
           <button
             class="tab-btn pb-3 text-base font-semibold border-b-2 border-transparent text-gray-500 hover:text-gray-300 transition-all"
             data-target="tabAutoTag"
           >
             자동 태그
+          </button>
+          <button
+            class="tab-btn pb-3 text-base font-semibold border-b-2 border-transparent text-gray-500 hover:text-gray-300 transition-all"
+            data-target="tabTags"
+          >
+            태그 관리
           </button>
         </div>
 
@@ -611,6 +627,34 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+
+        <!-- Tab Content: Tag Management -->
+        <div
+          id="tabTags"
+          class="tab-pane hidden flex-1 flex flex-col overflow-hidden"
+        >
+          <div class="p-6 border-b border-white/5 bg-black/20 shrink-0">
+            <div class="relative group">
+              <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                <span class="material-symbols-outlined text-gray-500 text-sm">search</span>
+              </div>
+              <input
+                id="tagSearchInput"
+                type="text"
+                placeholder="태그 검색..."
+                class="block w-full pl-9 pr-3 py-2 rounded-xl bg-black/40 border border-white/10 text-sm focus:border-primary/50 outline-none transition-all"
+              />
+            </div>
+          </div>
+          <div class="flex-1 overflow-y-auto p-8 no-scrollbar">
+            <div id="tagManagementList" class="flex flex-col gap-3">
+              <!-- Tag management items will be injected here -->
+            </div>
+            <p id="noTagsFound" class="hidden p-12 text-center text-gray-500 italic text-sm">
+              검색 결과가 없습니다.
+            </p>
           </div>
         </div>
 

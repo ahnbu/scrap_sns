@@ -30,6 +30,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const invisiblePosts = new Set(JSON.parse(localStorage.getItem('sns_invisible_posts') || '[]'));
     const foldedPosts = new Set(JSON.parse(localStorage.getItem('sns_folded_posts') || '[]'));
     const postTags = JSON.parse(localStorage.getItem('sns_tags') || '{}');
+    const tagTypes = JSON.parse(localStorage.getItem('sns_tag_types') || '{}');
+    const todos = JSON.parse(localStorage.getItem('sns_todos') || '{}');
     
     // Cleanup 'undefined' key from postTags if it exists (remnant of failed migration)
     if (postTags['undefined']) {
@@ -485,7 +487,9 @@ ${item.body}
             
             const matchesFilter = 
                 currentFilter === 'all' || 
-                (currentFilter === 'favorites' ? favorites.has(postUrl) : (post.sns_platform || '').toLowerCase() === currentFilter);
+                (currentFilter === 'favorites' ? favorites.has(postUrl) : 
+                 currentFilter === 'todos' ? todos[postUrl] :
+                 (post.sns_platform || '').toLowerCase() === currentFilter);
 
             const matchesTag = !currentTag || (postTags[postUrl] || []).includes(currentTag);
             const matchesVisibility = !invisiblePosts.has(postUrl);
@@ -632,9 +636,45 @@ ${item.body}
                         ${isFavorited ? 'star' : 'star'}
                     </span>
                 </button>
+                <button class="todo-btn p-1.5 rounded-lg hover:bg-white/10 transition-colors group/todo ${todos[postUrl] ? todos[postUrl] : ''}" data-url="${postUrl}" title="TODO 상태 관리">
+                    <span class="material-symbols-outlined text-[20px]">
+                        ${todos[postUrl] === 'pending' ? 'pending' : (todos[postUrl] === 'completed' ? 'task_alt' : 'radio_button_unchecked')}
+                    </span>
+                </button>
             </div>
         `;
 
+
+        const todoBtn = header.querySelector('.todo-btn');
+        todoBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const url = postUrl;
+            const icon = todoBtn.querySelector('span');
+            const currentState = todos[url];
+
+            if (!currentState) {
+                todos[url] = 'pending';
+                todoBtn.classList.add('pending');
+                icon.textContent = 'pending';
+            } else if (currentState === 'pending') {
+                todos[url] = 'completed';
+                todoBtn.classList.remove('pending');
+                todoBtn.classList.add('completed');
+                icon.textContent = 'task_alt';
+            } else {
+                delete todos[url];
+                todoBtn.classList.remove('completed');
+                icon.textContent = 'radio_button_unchecked';
+            }
+
+            localStorage.setItem('sns_todos', JSON.stringify(todos));
+
+            if (currentFilter === 'todos' && !todos[url]) {
+                article.style.opacity = '0';
+                article.style.transform = 'scale(0.9)';
+                setTimeout(() => renderPosts(), 200);
+            }
+        });
 
         const favBtn = header.querySelector('.favorite-btn');
         favBtn.addEventListener('click', (e) => {
@@ -826,7 +866,8 @@ ${item.body}
             
             tags.forEach(tag => {
                 const tagChip = document.createElement('div');
-                tagChip.className = 'tag-chip';
+                const isPrimary = tagTypes[tag] === 'primary';
+                tagChip.className = `tag-chip ${isPrimary ? 'primary' : ''}`;
                 tagChip.innerHTML = `
                     <span>${tag}</span>
                     <span class="tag-remove material-symbols-outlined text-[12px]" data-tag="${tag}">close</span>
@@ -1012,7 +1053,8 @@ ${item.body}
         
         sortedTags.forEach(tag => {
             const tagBtn = document.createElement('button');
-            tagBtn.className = `global-tag-chip ${currentTag === tag ? 'active' : ''}`;
+            const isPrimary = tagTypes[tag] === 'primary';
+            tagBtn.className = `global-tag-chip ${currentTag === tag ? 'active' : ''} ${isPrimary ? 'primary' : ''}`;
             tagBtn.textContent = tag;
             tagBtn.addEventListener('click', () => {
                 if (currentTag === tag) {
@@ -1104,6 +1146,7 @@ ${item.body}
         switchTab('tabHidden');
         renderInvisibleList();
         renderAutoTagRules();
+        renderTagManagementList();
     }
 
     function hideManagementModal() {
@@ -1131,12 +1174,81 @@ ${item.body}
         });
 
         // Update Header Icon/Title based on tab
-
+        if (targetId === 'tabTags') {
+            renderTagManagementList();
+        }
     }
 
     document.querySelectorAll('.tab-btn').forEach(btn => {
         btn.addEventListener('click', () => switchTab(btn.dataset.target));
     });
+
+    const tagSearchInput = document.getElementById('tagSearchInput');
+    if (tagSearchInput) {
+        tagSearchInput.addEventListener('input', () => renderTagManagementList());
+    }
+
+    function renderTagManagementList() {
+        const listContainer = document.getElementById('tagManagementList');
+        const noTagsFound = document.getElementById('noTagsFound');
+        const query = (document.getElementById('tagSearchInput')?.value || '').toLowerCase();
+        
+        if (!listContainer) return;
+        
+        // Get all unique tags from system
+        const allUniqueTags = new Set();
+        Object.values(postTags).forEach(tags => tags.forEach(tag => allUniqueTags.add(tag)));
+        
+        const filteredTags = Array.from(allUniqueTags)
+            .filter(tag => tag.toLowerCase().includes(query))
+            .sort();
+
+        listContainer.innerHTML = '';
+        
+        if (filteredTags.length === 0) {
+            noTagsFound.classList.remove('hidden');
+            return;
+        }
+        
+        noTagsFound.classList.add('hidden');
+
+        filteredTags.forEach(tag => {
+            const isPrimary = tagTypes[tag] === 'primary';
+            const item = document.createElement('div');
+            item.className = 'tag-manage-item';
+            
+            item.innerHTML = `
+                <div class="flex items-center gap-3">
+                    <span class="text-sm font-medium text-white">${tag}</span>
+                    ${isPrimary ? `<span class="px-2 py-0.5 rounded bg-primary/20 text-primary text-[10px] font-bold border border-primary/20 uppercase">Primary</span>` : ''}
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="text-[11px] text-gray-500">${isPrimary ? '강조 해제' : '강조 표시'}</span>
+                    <label class="toggle-switch">
+                        <input type="checkbox" ${isPrimary ? 'checked' : ''} data-tag="${tag}">
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+            `;
+            
+            const checkbox = item.querySelector('input');
+            checkbox.addEventListener('change', (e) => {
+                const tagName = e.target.dataset.tag;
+                if (e.target.checked) {
+                    tagTypes[tagName] = 'primary';
+                } else {
+                    delete tagTypes[tagName];
+                }
+                localStorage.setItem('sns_tag_types', JSON.stringify(tagTypes));
+                
+                // Real-time update
+                renderTagManagementList();
+                renderPosts();
+            });
+            
+            listContainer.appendChild(item);
+        });
+    }
 
     function renderInvisibleList() {
         invisiblePostsList.innerHTML = '';

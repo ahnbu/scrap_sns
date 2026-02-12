@@ -142,7 +142,27 @@ body.modal-open {
   transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.favorite-btn:active {
+.todo-btn {
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  opacity: 0.5;
+}
+
+.todo-btn:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.todo-btn.pending {
+  color: #f97316 !important; /* Orange */
+  opacity: 1;
+}
+
+.todo-btn.completed {
+  color: #22c55e !important; /* Green */
+  opacity: 1;
+}
+
+.favorite-btn:active, .todo-btn:active {
   transform: scale(0.85);
 }
 
@@ -179,6 +199,23 @@ body.modal-open {
   background: rgba(255, 255, 255, 0.1);
   border-color: rgba(255, 255, 255, 0.2);
   color: white;
+}
+
+/* Primary Tag Highlights */
+.tag-chip.primary {
+  background: #7f0df2 !important;
+  border-color: #7f0df2 !important;
+  color: white !important;
+  box-shadow: 0 2px 8px rgba(127, 13, 242, 0.3);
+}
+.tag-chip.primary:hover {
+  background: #6a0bc9 !important;
+}
+
+.global-tag-chip.primary {
+  border-color: rgba(127, 13, 242, 0.6) !important;
+  background: rgba(127, 13, 242, 0.05);
+  color: #a855f7;
 }
 
 .tag-remove {
@@ -470,4 +507,61 @@ body.modal-open {
 /* Input highlights */
 input:focus {
   box-shadow: 0 0 0 2px rgba(127, 13, 242, 0.2);
+}
+
+/* Tag Management UI */
+.tag-manage-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 1.25rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  transition: all 0.2s;
+}
+.tag-manage-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Simple Toggle Switch */
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: .4s;
+  border-radius: 20px;
+}
+.toggle-slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+input:checked + .toggle-slider {
+  background-color: #7f0df2;
+}
+input:checked + .toggle-slider:before {
+  transform: translateX(20px);
 }
