@@ -67,7 +67,7 @@ def get_latest_data():
         latest_file = files[0]
         
         # 3. 파일 읽기 및 반환
-        with open(latest_file, 'r', encoding='utf-8') as f:
+        with open(latest_file, 'r', encoding='utf-8-sig') as f:
             data = json.load(f)
             
         return jsonify(data)

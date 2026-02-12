@@ -501,7 +501,63 @@ ${item.body}
     }
 
     function renderPosts() {
-        // ... (이전과 동일)
+        // Update global tags first to ensure the list is fresh
+        updateGlobalTags();
+        
+        // 1. Filter Data
+        let filtered = getFilteredPosts();
+
+        // 2. Sort Data
+        if (currentSort === 'date') {
+            filtered.sort((a, b) => b._dateObj - a._dateObj);
+        } else if (currentSort === 'saved') {
+            filtered.sort((a, b) => b._seqId - a._seqId); // Descending ID
+            // If sequence_id is not reliable, use original index (but filter breaks original index access)
+            // Assuming sequence_id is reliable.
+        } else if (currentSort === 'favorites') {
+            filtered.sort((a, b) => {
+                const aUrl = a.post_url || a.source_url || a.code;
+                const bUrl = b.post_url || b.source_url || b.code;
+                const aFav = favorites.has(aUrl);
+                const bFav = favorites.has(bUrl);
+                if (aFav && !bFav) return -1;
+                if (!aFav && bFav) return 1;
+                return b._dateObj - a._dateObj; // Secondary sort by date
+            });
+        }
+
+        // 3. UI Updates
+        if (filtered.length === 0) {
+            noResults.classList.remove('hidden');
+            masonryGrid.innerHTML = '';
+            return;
+        } else {
+            noResults.classList.add('hidden');
+        }
+
+        // 3. Masonry Distribution
+        let colCount = 1;
+        const width = window.innerWidth;
+        if (width >= 1536) colCount = 4;
+        else if (width >= 1024) colCount = 3;
+        else if (width >= 768) colCount = 2;
+
+        // Reset Grid structure
+        masonryGrid.innerHTML = '';
+        const columns = [];
+        for (let i = 0; i < colCount; i++) {
+            const colDiv = document.createElement('div');
+            colDiv.className = 'masonry-col flex-1 flex flex-col gap-6 min-w-0';
+            masonryGrid.appendChild(colDiv);
+            columns.push(colDiv);
+        }
+
+        // Distribute posts
+        filtered.forEach((post, index) => {
+            const card = createCard(post);
+            const colIndex = index % colCount;
+            columns[colIndex].appendChild(card);
+        });
     }
 
     function createCard(post) {
