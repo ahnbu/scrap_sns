@@ -3,6 +3,7 @@ import time
 import os
 import glob
 import re
+import argparse
 from datetime import datetime
 from playwright.sync_api import sync_playwright
 
@@ -12,36 +13,45 @@ from playwright.sync_api import sync_playwright
 OUTPUT_DIR = "output_twitter/python"
 SIMPLE_FILE_PATTERN = "twitter_py_simple_full_*.json"
 FULL_FILE_PATTERN = "twitter_py_full_{date}.json"
+FAILURE_FILE = "scrap_failures_twitter.json" # 💡 X(Twitter) 전용 파일
+
+# 명령줄 인자 설정
+parser = argparse.ArgumentParser(description='X(Twitter) 상세 수집기')
+parser.add_argument('--limit', type=int, default=0, help='수집할 최대 개수 (0: 무제한)')
+args = parser.parse_args()
 
 def clean_text(text):
     if not text: return ""
     return text.strip()
 
+def load_failures():
+    if os.path.exists(FAILURE_FILE):
+        with open(FAILURE_FILE, 'r', encoding='utf-8') as f:
+            try: return json.load(f)
+            except: return {}
+    return {}
+
+def save_failures(failures):
+    with open(FAILURE_FILE, 'w', encoding='utf-8') as f:
+        json.dump(failures, f, ensure_ascii=False, indent=4)
+
 def scrape_full_thread(page, target_url, target_user):
     """개별 트윗 페이지에서 동일 작성자의 연속된 답글(타래) 수집 및 실제 사용자명 확인"""
-    
-    # 💡 [중요] 잘못된 URL(None 포함) 교정
-    # x.com/None/status/ID 대신 x.com/i/status/ID를 쓰면 X가 실제 유저 주소로 보내줍니다.
     if 'None' in target_url:
         post_id = target_url.split('/')[-1]
         target_url = f"https://x.com/i/status/{post_id}"
-        print(f"   🔄 URL 교정됨: {target_url}")
 
     print(f"   🔍 상세 수집 중: {target_url}")
     try:
         page.goto(target_url, wait_until="domcontentloaded", timeout=30000)
         time.sleep(4)
         
-        # 실제 사용자명 추출 (리다이렉트된 후의 주소 또는 화면 요소에서)
         real_user = None
-        
-        # 방법 1: 현재 URL에서 추출 (리다이렉트 완료 후)
         current_url = page.url
         match = re.search(r'x\.com/([^/]+)/status/\d+', current_url)
         if match and match.group(1) != 'i' and match.group(1) != 'None':
             real_user = match.group(1)
             
-        # 방법 2: 화면 요소에서 추출 (방법 1 실패 시)
         if not real_user:
             user_name_div = page.locator('div[data-testid="User-Name"]').first
             if user_name_div.count() > 0:
@@ -55,7 +65,6 @@ def scrape_full_thread(page, target_url, target_user):
         if not real_user:
             real_user = target_user
 
-        # "Show more" 또는 "더 보기" 버튼이 있으면 클릭
         show_more = page.locator('span:has-text("Show more"), span:has-text("더 보기")').first
         if show_more.count() > 0:
             try: show_more.click(); time.sleep(2)
@@ -71,9 +80,7 @@ def scrape_full_thread(page, target_url, target_user):
     articles = page.locator('article[data-testid="tweet"]').all()
     for i, article in enumerate(articles):
         try:
-            # 실제 추출된 real_user와 비교
             user_handle_link = article.locator(f'a[href="/{real_user}"]').first
-            
             if i > 0 and user_handle_link.count() == 0:
                 break
             
@@ -96,7 +103,8 @@ def scrape_full_thread(page, target_url, target_user):
     return full_text, list(thread_media), real_user
 
 def main():
-    # 1. 가장 최신 Simple 파일 로드
+    failures = load_failures()
+    
     simple_files = glob.glob(os.path.join(OUTPUT_DIR, SIMPLE_FILE_PATTERN))
     if not simple_files:
         print("❌ Simple 파일을 찾을 수 없습니다.")
@@ -108,13 +116,34 @@ def main():
         simple_data = json.load(f)
     
     posts = simple_data.get('posts', [])
-    # 상세 수집 대상: is_detail_collected가 False이거나 None인 항목
-    targets = [p for p in posts if not p.get('is_detail_collected')]
     
+    # 💡 [개선] 3회 실패 제외 로직 적용
+    targets = []
+    skipped_count = 0
+    for p in posts:
+        pid = str(p['id'])
+        if p.get('is_detail_collected'): continue
+        
+        fail_info = failures.get(pid, {})
+        fail_count = fail_info.get('count', 0)
+        
+        if fail_count >= 3:
+            skipped_count += 1
+            continue
+        
+        targets.append(p)
+    
+    if skipped_count > 0:
+        print(f"⏩ [Skip] {skipped_count}개 항목 제외 (3회 이상 실패)")
+
     if not targets:
-        print("✨ 모든 항목이 이미 상세 수집되었습니다.")
-        # 강제 재수집 테스트를 위해 첫 번째 항목만 시도해볼 수 있으나, 일단 스킵
+        print("✨ 상세 수집할 새로운 항목이 없습니다.")
         return
+
+    # 💡 [추가] 개수 제한 적용
+    if args.limit > 0:
+        print(f"🎯 테스트 모드: {args.limit}개만 수집합니다.")
+        targets = targets[:args.limit]
 
     print(f"🚀 총 {len(targets)}개의 신규 항목 상세 수집 시작...")
 
@@ -130,53 +159,62 @@ def main():
         page = context.pages[0]
 
         updated_count = 0
-        for post in targets:
+        total_targets = len(targets)
+        for i, post in enumerate(targets):
+            pid = str(post['id'])
             url = post['url']
             user = post['user']
             
-            # 타래 수집 실행 (사용자 교정 정보 포함)
+            # 진척률 계산
+            current_num = i + 1
+            progress_percent = int((current_num / total_targets) * 100)
+            progress_msg = f"({current_num}/{total_targets}, {progress_percent}%)"
+            
             full_text, media, real_user = scrape_full_thread(page, url, user)
             
             if full_text:
-                # 💡 [교정] 실제 추출된 사용자명으로 업데이트
                 post['user'] = real_user
                 post['url'] = f"https://x.com/{real_user}/status/{post['id']}"
                 post['full_text'] = full_text
-                
-                # 미디어 및 상태 업데이트
-                combined_media = list(set((post.get('media', []) or []) + media))
-                post['media'] = combined_media
+                post['media'] = list(set((post.get('media', []) or []) + media))
                 post['is_detail_collected'] = True
                 post['source'] = 'full_thread_scan'
                 post['sns_platform'] = 'x'
                 
-                # 날짜 정보 보강
                 if not post.get('timestamp'):
                     post['timestamp'] = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
                     post['date'] = datetime.now().strftime('%Y-%m-%d')
                 
+                # 성공 시 실패 이력 제거
+                if pid in failures: del failures[pid]
                 updated_count += 1
-                print(f"   ✅ 교정 및 수집 완료: @{real_user} ({len(full_text)}자)")
+                print(f"   ✅ 수집 완료: @{real_user} {progress_msg}")
             else:
-                print(f"   ⚠️ 수집 실패 또는 데이터 없음: {url}")
+                # 💡 실패 시 카운트 증가
+                fail_info = failures.get(pid, {"count": 0, "last_fail": ""})
+                fail_info['count'] += 1
+                fail_info['last_fail'] = datetime.now().isoformat()
+                fail_info['url'] = url
+                failures[pid] = fail_info
+                print(f"   ❌ 수집 실패 ({fail_info['count']}/3): {url} {progress_msg}")
             
+            save_failures(failures) # 실시간 저장
             time.sleep(3)
 
-        # 2. 결과 저장 (Full)
+        # 결과 저장 (Full)
         if updated_count > 0:
             today = datetime.now().strftime('%Y%m%d')
             full_file = os.path.join(OUTPUT_DIR, FULL_FILE_PATTERN.format(date=today))
             
-            # 기존 Full 데이터가 있다면 로드하여 병합 (중복 방지)
+            # 💡 [추가] 상세 수집 성공 항목들만 모으기
+            newly_updated_posts = [p for p in targets if p.get('is_detail_collected')]
+            
             all_full_posts = []
             if os.path.exists(full_file):
                 with open(full_file, 'r', encoding='utf-8-sig') as f:
-                    try:
-                        old_data = json.load(f)
-                        all_full_posts = old_data.get('posts', [])
+                    try: all_full_posts = json.load(f).get('posts', [])
                     except: pass
             
-            # ID 기반 병합 (이미 수집된 것은 유지, 새로 수집된 것으로 갱신)
             full_map = {str(p['id']): p for p in all_full_posts}
             for p in posts:
                 if p.get('is_detail_collected'):
@@ -184,25 +222,26 @@ def main():
             
             final_posts = sorted(full_map.values(), key=lambda x: x.get('timestamp') or '', reverse=True)
             
-            # 메타데이터 포함하여 저장
-            output_data = {
-                "metadata": {
-                    "updated_at": datetime.now().isoformat(),
-                    "total_count": len(final_posts),
-                    "platform": "x"
-                },
-                "posts": final_posts
-            }
-            
             with open(full_file, 'w', encoding='utf-8-sig') as f:
-                json.dump(output_data, f, ensure_ascii=False, indent=4)
+                json.dump({
+                    "metadata": {"updated_at": datetime.now().isoformat(), "total_count": len(final_posts), "platform": "x"},
+                    "posts": final_posts
+                }, f, ensure_ascii=False, indent=4)
             
-            # Simple 파일 상태 업데이트 저장
+            # 💡 [추가] Full Update 파일 생성
+            update_dir = os.path.join(OUTPUT_DIR, "update")
+            os.makedirs(update_dir, exist_ok=True)
+            timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+            update_file = os.path.join(update_dir, f"twitter_py_full_update_{timestamp}.json")
+            
+            with open(update_file, 'w', encoding='utf-8-sig') as f:
+                json.dump(newly_updated_posts, f, ensure_ascii=False, indent=4)
+            print(f"📂 상세 수집 업데이트 저장: {update_file} ({updated_count}개)")
+
             with open(latest_simple, 'w', encoding='utf-8-sig') as f:
                 json.dump(simple_data, f, ensure_ascii=False, indent=4)
                 
-            print(f"\n✨ 상세 수집 마감 완료! 총 {len(final_posts)}개의 게시물이 정규화되었습니다.")
-            print(f"📂 최종 결과: {full_file}")
+            print(f"\n✨ 상세 수집 마감! 총 {updated_count}개 갱신됨.")
 
         context.close()
 

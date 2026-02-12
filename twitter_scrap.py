@@ -203,11 +203,18 @@ def main():
                     new_posts = extract_from_json(response.json())
                     for post in new_posts:
                         pid = post['id']
+                        # 💡 [개선] 기존 수집 상태 확인
+                        was_collected = pid in all_posts_map and all_posts_map[pid].get('is_detail_collected', False)
+                        
                         if pid not in all_posts_map or len(post['full_text']) > len(all_posts_map[pid].get('full_text', '')):
                             if pid not in all_posts_map: new_count += 1
                             all_posts_map[pid] = post
-                            msg = clean_text(post['full_text'])[:30]
-                            print(f"   + [Net] @{post['user']} | {msg}... ({len(all_posts_map)}개)", flush=True)
+                            # 💡 기존 수집 완료 상태라면 True 유지
+                            all_posts_map[pid]['is_detail_collected'] = was_collected
+                            
+                            if not was_collected:
+                                msg = clean_text(post['full_text'])[:30]
+                                print(f"   + [Net] @{post['user']} | {msg}... ({len(all_posts_map)}개)", flush=True)
                 except: pass
 
         page.on("response", handle_response)
@@ -234,12 +241,18 @@ def main():
                 if args.mode == 'update' and pid in stop_ids:
                     found_stop = True; break
                 
+                # 💡 [개선] 상세 수집 완료 여부 확인
+                was_collected = pid in all_posts_map and all_posts_map[pid].get('is_detail_collected', False)
+                
                 if pid not in all_posts_map:
                     all_posts_map[pid] = post
+                    all_posts_map[pid]['is_detail_collected'] = was_collected
                     new_count += 1
                     round_new += 1
                     msg = clean_text(post['full_text'])[:30]
                     print(f"   + [DOM] @{post['user']} | {msg}... ({len(all_posts_map)}개)", flush=True)
+                elif not was_collected and len(post['full_text']) > len(all_posts_map[pid].get('full_text', '')):
+                    all_posts_map[pid].update(post)
             
             if found_stop:
                 print(f"\n✋ 기존 수집 지점({pid}) 도달. 수집을 종료합니다.", flush=True)
@@ -251,7 +264,7 @@ def main():
                 consecutive_no_new = 0
                 print(f"   ✅ 신규 데이터 {round_new}개 추가됨! (누계: {len(all_posts_map)}개)", flush=True)
 
-            if consecutive_no_new > 8: 
+            if consecutive_no_new >= 5: 
                 print("\n🏁 더 이상 새로운 게시물이 없습니다.", flush=True)
                 break
                 
@@ -281,6 +294,20 @@ def main():
                     "posts": final_posts
                 }, f, ensure_ascii=False, indent=4)
             
+            # 💡 [추가] Simple Update 파일 생성
+            if new_count > 0:
+                update_dir = os.path.join(OUTPUT_DIR, "update")
+                os.makedirs(update_dir, exist_ok=True)
+                timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+                update_file = os.path.join(update_dir, f"twitter_py_simple_update_{timestamp}.json")
+                
+                # 이번 수집에서 새로 추가된 것만 필터링 (is_detail_collected가 False인 최신 데이터들)
+                new_items = [p for p in final_posts if not p.get('is_detail_collected')][:new_count]
+                
+                with open(update_file, 'w', encoding='utf-8-sig') as f:
+                    json.dump(new_items, f, ensure_ascii=False, indent=4)
+                print(f"📂 목록 업데이트 저장: {update_file} ({new_count}개)")
+
             end_time = datetime.now()
             duration = end_time - start_time
             

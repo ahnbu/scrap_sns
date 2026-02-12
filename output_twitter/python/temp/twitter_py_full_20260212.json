@@ -1,6 +1,6 @@
 ﻿{
     "metadata": {
-        "updated_at": "2026-02-12T14:38:09.441467",
+        "updated_at": "2026-02-12T14:19:51.795611",
         "total_count": 34,
         "platform": "x"
     },
@@ -26,9 +26,9 @@
             "display_name": "Mayank Vora",
             "full_text": "Anthropic engineers don't use Claude like everyone else.\n\nAfter 1,200+ hours of research across AI papers, markets, and competitive intel, I reverse-engineered their internal techniques.\n\nHere are 10 prompts that turn Claude into research infrastructure that rivals McKinsey's entire analyst team:\n\n---\n\n1. Multi-source research synthesizer\n\nAnalyzes 10+ sources simultaneously and finds patterns human researchers miss\n\nPrompt:\n\nYou are a research synthesis expert. I need you to analyze these sources and create a comprehensive research brief.\n\nSOURCES: [paste URLs, papers, or text]\n\nANALYSIS FRAMEWORK:\n1. Extract core arguments from each source\n2. Identify agreements, disagreements, and gaps\n3. Map causal relationships between findings\n4. Highlight methodological strengths/weaknesses\n5. Synthesize into unified thesis\n\nOUTPUT FORMAT:\n- Executive Summary (3 sentences)\n- Key Findings (ranked by evidence strength)\n- Contradictions & Why They Exist\n- Research Gaps Worth Exploring\n- Actionable Insights\n\nBe brutally honest about weak evidence. Cite specific passages with [Source X, Para Y] format.\n\n---\n\n2. Competitive intelligence deep dive\n\nReverse-engineers competitor strategy from public data like an ex-intelligence analyst\n\nPrompt:\n\nYou are a competitive intelligence analyst who worked at McKinsey and the CIA. Analyze this company/product and reveal their strategic playbook.\n\n---\n\n3: Academic Paper → Business insight translator\n\nConverts complex research into actionable business strategy in 5 minutes\n\nPrompt:\n\nYou are a strategy consultant who translates academic research into billion-dollar business opportunities.\n\nPAPER: [title, link, or full text]",
             "media": [
+                "https://wsrv.nl/?url=https://pbs.twimg.com/media/HA4B3S5a0AAqAQF",
                 "https://wsrv.nl/?url=https://pbs.twimg.com/media/HA4B2H4bQAEnp-U",
-                "https://wsrv.nl/?url=https://pbs.twimg.com/media/HA4B4eua4AE1gZU",
-                "https://wsrv.nl/?url=https://pbs.twimg.com/media/HA4B3S5a0AAqAQF"
+                "https://wsrv.nl/?url=https://pbs.twimg.com/media/HA4B4eua4AE1gZU"
             ],
             "timestamp": "2026-02-11 12:01:56",
             "date": "2026-02-11",
@@ -56,12 +56,16 @@
             "id": "2021492537861853558",
             "user": "yozm_it",
             "display_name": "요즘IT",
-            "full_text": "이게 현실임 \n미국은 거의 모든집이 수입이 들어오지않으면 3개월 버티기 힘듬\n잘 생각해보자\n올해부터 본격적으로 AI혁명이 일어나서 실업자 생기기 시작할거야 \n그런데 그 실업자가 대부분 고소득자야. \n그들이 소유한 집들도 다 비싼거들이야.  \n그리고 6개월이면 못버티고 끝나. \n그런 집들이",
+            "full_text": "요즘IT에서 제작한 클로드 코드로 일하기 10인 실제 사례집을 소개합니다. 개발자부터 PM·출판 에디터까지, 현업 실무자 10인의 클로드 코드 활용법을 진짜 사례로 담았습니다!\n \n(개발자 6인 + 비개발자 4인이 시행착오 과정과, 클로드 코드 실전 방법론이 포함되어 있습니다)\n\n이런 분께 추천합니다\n\n 클로드 코드 좋다는데, 실제 어디까지 되는 건지 궁금한 분\n 개발자, PM, 에디터 등 다양한 직군의 실무 활용 사례를 한번에 보고 싶은 분\n 남들은 어떻게 쓰는지 실패담까지 솔직한 후기가 필요한 분\n 바이브 코딩, 멀티 에이전트 등 최신 키워드는 아는데 실전 감이 안 잡히는 분\n 바이브코딩으로 외주, 사이드프로젝트 등 수익화 방법을 '찍먹' 해보고 싶은 분\n\n\nhttps://\nlitt.ly/yozm_it/sale/Y\nxrqplo\n…",
             "media": [
-                "https://wsrv.nl/?url=https://pbs.twimg.com/media/HA3IaDFbUAEFiVR.png",
-                "https://wsrv.nl/?url=https://pbs.twimg.com/media/HA3ITasaAAYsaMS.jpg",
+                "https://wsrv.nl/?url=https://pbs.twimg.com/media/HA3ITasaAAYsaMS",
+                "https://wsrv.nl/?url=https://pbs.twimg.com/media/HA3IVtnbsAA48Pm",
+                "https://wsrv.nl/?url=https://pbs.twimg.com/media/HA3IVtnbsAA48Pm.png",
                 "https://wsrv.nl/?url=https://pbs.twimg.com/media/HA3Ia39bcAAecf3.png",
-                "https://wsrv.nl/?url=https://pbs.twimg.com/media/HA3IVtnbsAA48Pm.png"
+                "https://wsrv.nl/?url=https://pbs.twimg.com/media/HA3ITasaAAYsaMS.jpg",
+                "https://wsrv.nl/?url=https://pbs.twimg.com/media/HA3IaDFbUAEFiVR",
+                "https://wsrv.nl/?url=https://pbs.twimg.com/media/HA3Ia39bcAAecf3",
+                "https://wsrv.nl/?url=https://pbs.twimg.com/media/HA3IaDFbUAEFiVR.png"
             ],
             "timestamp": "2026-02-11 07:52:33",
             "date": "2026-02-11",
@@ -102,9 +106,10 @@
             "id": "2021244380607123492",
             "user": "oliviscusAI",
             "display_name": "Oliver Prompts",
-            "full_text": "이게 현실임 \n미국은 거의 모든집이 수입이 들어오지않으면 3개월 버티기 힘듬\n잘 생각해보자\n올해부터 본격적으로 AI혁명이 일어나서 실업자 생기기 시작할거야 \n그런데 그 실업자가 대부분 고소득자야. \n그들이 소유한 집들도 다 비싼거들이야.  \n그리고 6개월이면 못버티고 끝나. \n그런 집들이",
+            "full_text": "Wow.. you can now instantly turn any GitHub repo into AI-generated documentation, just by changing the URL.\n\nReplace “github” with “deepwiki” in any GitHub URL and you’ll see:\n\n→ Instant docs for any codebase\n→ Chat with it like a conversation\n\n---\n\nIf you want more practical AI gems and use cases, join my free newsletter with daily tutorials and latest news in AI:\n\nhttp://\nsimplifyingai.co",
             "media": [
-                "https://wsrv.nl/?url=https://pbs.twimg.com/amplify_video_thumb/2020558668606103552/img/zWnipe0BFKDPKN3E.jpg"
+                "https://wsrv.nl/?url=https://pbs.twimg.com/amplify_video_thumb/2020558668606103552/img/zWnipe0BFKDPKN3E.jpg",
+                "https://wsrv.nl/?url=https://pbs.twimg.com/media/HAznDSHawAA6bWO"
             ],
             "timestamp": "2026-02-10 15:26:27",
             "date": "2026-02-10",
@@ -181,9 +186,9 @@
             "display_name": "lucas",
             "full_text": "Created a custom slash command \"/handover\" in Claude Code: When I'm ending a Claude session (e.g. context window filling up), I get Claude to generate a \"\nhttp://\nHANDOVER.md\" document which summarizes everything we did in this session, including decisions, pitfalls, lessons learned, etc. So the next session's Claude has full context. \n\nThis prevents amnesia and preserves institutional knowledge",
             "media": [
-                "https://wsrv.nl/?url=https://pbs.twimg.com/media/HAwBvUIaIAA1pMi",
                 "https://wsrv.nl/?url=https://pbs.twimg.com/media/HAxVnrfaAAIFXce.jpg",
-                "https://wsrv.nl/?url=https://pbs.twimg.com/media/HAxVnrZbIAAbDWD.jpg"
+                "https://wsrv.nl/?url=https://pbs.twimg.com/media/HAxVnrZbIAAbDWD.jpg",
+                "https://wsrv.nl/?url=https://pbs.twimg.com/media/HAwBvUIaIAA1pMi"
             ],
             "timestamp": "2026-02-10 04:51:05",
             "date": "2026-02-10",
@@ -319,8 +324,8 @@
             "display_name": "lucas",
             "full_text": "이게 현실임 \n미국은 거의 모든집이 수입이 들어오지않으면 3개월 버티기 힘듬\n잘 생각해보자\n올해부터 본격적으로 AI혁명이 일어나서 실업자 생기기 시작할거야 \n그런데 그 실업자가 대부분 고소득자야. \n그들이 소유한 집들도 다 비싼거들이야.  \n그리고 6개월이면 못버티고 끝나. \n그런 집들이",
             "media": [
-                "https://wsrv.nl/?url=https://pbs.twimg.com/media/HAkFJFObMAEYWak.png",
-                "https://wsrv.nl/?url=https://pbs.twimg.com/media/HAkFJFOacAY8WV4.png"
+                "https://wsrv.nl/?url=https://pbs.twimg.com/media/HAkFJFOacAY8WV4.png",
+                "https://wsrv.nl/?url=https://pbs.twimg.com/media/HAkFJFObMAEYWak.png"
             ],
             "timestamp": "2026-02-07 15:04:08",
             "date": "2026-02-07",
@@ -424,8 +429,8 @@
             "full_text": "이게 현실임 \n미국은 거의 모든집이 수입이 들어오지않으면 3개월 버티기 힘듬\n잘 생각해보자\n올해부터 본격적으로 AI혁명이 일어나서 실업자 생기기 시작할거야 \n그런데 그 실업자가 대부분 고소득자야. \n그들이 소유한 집들도 다 비싼거들이야.  \n그리고 6개월이면 못버티고 끝나. \n그런 집들이",
             "media": [
                 "https://wsrv.nl/?url=https://pbs.twimg.com/media/HAYTOKpacAgfPDl.jpg",
-                "https://wsrv.nl/?url=https://pbs.twimg.com/media/HAYTQzIacAUijyj.jpg",
                 "https://wsrv.nl/?url=https://pbs.twimg.com/media/HAYTHHna0AA52zK.png",
+                "https://wsrv.nl/?url=https://pbs.twimg.com/media/HAYTQzIacAUijyj.jpg",
                 "https://wsrv.nl/?url=https://pbs.twimg.com/media/HAYdVrHakAAvMeE.png"
             ],
             "timestamp": "2026-02-05 09:04:47",
@@ -441,8 +446,8 @@
             "display_name": "반보",
             "full_text": "블룸버그에 따르면, \n​오늘 미국 시장에서 가장 충격적인 뉴스는 단연 앤스로픽(Anthropic)이 쏘아 올린 공입니다. \n앤스로픽이 기업용 AI 비서 'Claude Cowork'에 법률 전문 플러그인을 탑재하자마자, 그동안 '철옹성'이라 여겨지던 리걸테크(Legal-Tech) 및 전문 정보 기업들의 주가가 추풍낙엽처럼 떨어졌습니다.\n​단순한 하락이 아닙니다. \n\n톰슨 로이터(Thomson Reuters) -18%, 렐릭스(RELX) -14%, \n리걸줌(LegalZoom) -20%. \n하루 만에 시가총액의 5분의 1이 증발했습니다.\n시장은 이를 두고 'SaaSpocalypse(SaaS+Apocalypse)'의 시작이라 부르기 시작했습니다. \n이번 사태가 주는 시사점을 몇 가지로 정리해 보았습니다.\n\n1. ​데이터 해자(Moat)의 붕괴\n그동안 시장은 톰슨 로이터나 렐릭스 같은 기업들이 안전하다고 믿었습니다. 그들이 보유한 방대한 판례 데이터와 법률 지식은 AI가 쉽게 넘볼 수 없는 '해자'라고 생각했기 때문입니다. 하지만 이번 앤스로픽의 툴은 그 믿음을 깼습니다. LLM의 추론 능력이 고도화되면서, 독점적 데이터 자체보다 그 데이터를 '해석'하고 '결과물'을 만들어내는 AI의 능력이 더 중요해진 것입니다. 데이터가 있어도, AI가 더 싸고 빠르게 분석해 준다면 기존의 비싼 구독료를 낼 이유는 사라집니다.\n\n2. ​Co-pilot에서 Agent로의 전환\n지금까지 마이크로소프트 등이 주창한 AI는 'Co-pilot(부조종사)' 개념이었습니다. 인간이 소프트웨어를 쓰기 편하게 도와주는 역할이었죠. 덕분에 기존 소프트웨어 기업들의 가치도 유지될 수 있었습니다. 하지만 앤스로픽이 보여준 것은 'Agent(대리인)'입니다. 인간이 소프트웨어의 메뉴를 클릭할 필요 없이, AI가 직접 계약서를 검토하고 수정안을 제시합니다. 소프트웨어라는 '중개자'가 사라지는 구조입니다.\n\n3. ​화이트칼라 업무의 진짜 위기\n계약서 검토, NDA 분류, 컴플라이언스 체크. 이는 로펌의 저연차 변호사나 기업 법무팀이 하던 핵심 업무이자, 기존 리걸테크 기업들의 수익원이었습니다. AI가 이 영역을 거의 공짜에 가깝게 수행한다면, B2B SaaS 기업들의 비즈니스 모델(BM)은 근본적인 타격을 입게 됩니다. \n\n4. ​투자 관점에서의 재평가\n이제 시장은 질문을 던질 것입니다. \"법률 다음은 어디인가?\" 회계, 세무, 컨설팅, HR 등 전문 지식을 기반으로 고마진을 누리던 버티컬 SaaS 기업 전체가 사정권에 들어왔습니다. 단순히 AI 기능을 추가했다고 해서 'AI 수혜주'로 분류되던 시기는 지났습니다. AI 모델 자체를 소유하거나, AI로 대체 불가능한 물리적 인프라를 가진 기업이 아니라면 밸류에이션 재조정이 불가피해 보입니다.\n\n​결론적으로 오늘 하락은 단순한 뉴스 반응이 아니라, AI 시대에 소프트웨어 산업의 지형도가 어떻게 바뀔지에 대한 시장의 공포와 자각이 반영된 결과입니다. \n우리가 알던 'SaaS의 황금기'가 저물고, 진짜 'AI 네이티브'들의 전쟁이 시작되었습니다.\n#SaaSpocalypse #Anthropic #Claude #AI #LegalTech #ThomsonReuters #SaaS",
             "media": [
-                "https://wsrv.nl/?url=https://pbs.twimg.com/media/HATifBEaUAA2JPs",
-                "https://wsrv.nl/?url=https://pbs.twimg.com/media/HATifBEaUAA2JPs.jpg"
+                "https://wsrv.nl/?url=https://pbs.twimg.com/media/HATifBEaUAA2JPs.jpg",
+                "https://wsrv.nl/?url=https://pbs.twimg.com/media/HATifBEaUAA2JPs"
             ],
             "timestamp": "2026-02-04 09:58:40",
             "date": "2026-02-04",
@@ -500,9 +505,9 @@
             "display_name": "Bopyo Park",
             "full_text": "마이크로소프트 AI CEO \"앱과 웹의 시대는 끝났다\"\n\n현재 실리콘밸리에서 가장 화제가 되고 있는 1시간 분량의 대담입니다. 딥마인드(DeepMind) 공동 창업자이자 현재 마이크로소프트 AI의 수장인 무스타파 술레이만(Mustafa Suleyman)이 피터 디아만디스와 나눈 대화인데, 앞으로 2~3년 내에 AI가 우리 삶을 어떻게 송두리째 바꿀지 소름 돋는 통찰을 담고 있어 핵심만 추려드립니다.\n.\n.\n.\n(아래 이어서)\n\n---\n\n1. 인터페이스의 혁명: '클릭'에서 '대화'로\n\n술레이만은 단언합니다. 우리가 알던 OS, 검색엔진, 앱, 브라우저의 시대는 끝났습니다. 우리는 지금 '에이전트(Agent)'와 '동반자(Companion)'의 세계로 넘어가고 있습니다.\n\n지금까지 우리는 메뉴를 클릭하고, 앱을 실행하며 컴퓨터를 '조작'했습니다. 하지만 미래의 인터페이스는 100% 대화형입니다. 24시간 내 주머니 속에 있는 비서가 내 맥락을 완벽히 이해하고, 나를 대신해 모든 디지털 작업을 수행합니다. \"어떻게 사용할까?\"를 고민하는 시대는 지났습니다. 이제는 \"무엇을 시킬까?\"만 남았습니다.\n.\n.\n.\n(아래 이어서)\n\n---\n\n2. 현대적 튜링 테스트: '말하기'가 아닌 '벌기'\n\n과거의 튜링 테스트가 '사람처럼 말할 수 있는가'였다면, 술레이만이 제시하는 새로운 기준은 충격적입니다. 바로 '자본을 불릴 수 있는가'입니다. 그가 정의하는 '모던 튜링 테스트'는 이렇습니다. AI 에이전트에게 10만 달러(약 1억 3천만 원)의\n\n---\n\n3. 하이퍼 디플레이션: 지능의 가격이 '0'으로 수렴한다\n\n가장 무서운 변화는 '속도'와 '가격'입니다. 지난 2년 동안 AI 추론 비용은 무려 100배나 낮아졌습니다. 어떤 이는 특정 모델에서 1,000배까지 떨어졌다고 분석합니다. 이는 무엇을 의미할까요? '지능(Intelligence)'과 '지식(Knowledge)'을\n\n---\n\n결론: 관전자가 아닌 '지휘자'가 되십시오\n\n오늘 내용 어떻게 보셨나요? 무스타파 술레이만의 메시지는 섬뜩하면서도 명쾌합니다. \"변화는 우리가 생각하는 것보다 훨씬 빠르고, 저렴하게, 그리고 깊숙이 다가오고 있습니다.\"\n\n앱을 만들던 시대에서, 앱을 만드는 AI를 부리는 시대로. 직원을 고용하던\n\n---\n\n마치면서\n\n저는 미국 AI 분야와 이커머스 분야에 있습니다. 앞으로도 계속 제가 개인적으로 공부하는 내용들을 공유할 예정입니다. SNS에서 지식도 함께 챙기시려면 팔로우 해주시길 긴 글 읽어주셔서 감사합니다. 다음 메모로 찾아올게요!\n\n*오늘 글이 도움이 되셨나요? 이런 글을 타래 형식이 아닌",
             "media": [
-                "https://wsrv.nl/?url=https://pbs.twimg.com/media/G8ZaeITXsAAf1Ya.jpg",
                 "https://wsrv.nl/?url=https://pbs.twimg.com/media/G8ZaeITXsAAf1Ya",
-                "https://wsrv.nl/?url=https://pbs.twimg.com/media/G8Zajd5WMAALYjU"
+                "https://wsrv.nl/?url=https://pbs.twimg.com/media/G8Zajd5WMAALYjU",
+                "https://wsrv.nl/?url=https://pbs.twimg.com/media/G8ZaeITXsAAf1Ya.jpg"
             ],
             "timestamp": "2025-12-17 20:19:02",
             "date": "2025-12-17",

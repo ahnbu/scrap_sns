@@ -1,12 +1,12 @@
 ﻿const snsFeedData = {
   "metadata": {
-    "updated_at": "2026-02-12T13:04:28.797942",
+    "updated_at": "2026-02-12T14:26:09.371137",
     "max_sequence_id": 448,
     "total_count": 448,
     "threads_count": 234,
     "linkedin_count": 180,
-    "twitter_count": 68,
-    "normalization": "full_reorder_by_date_v2"
+    "twitter_count": 34,
+    "execution_mode": "parallel_multi_window"
   },
   "posts": [
     {
@@ -761,17 +761,18 @@
     },
     {
       "id": "1994363245512241167",
-      "user": null,
-      "display_name": null,
-      "body": "I can’t unsee this.\n\nSomeone Asked Nano Banana Pro to show how everyday things are made. The visuals hit harder than any documentary.\n\nHere are 10 visuals that explain it perfectly:\n\n1. Pyramids https://t.co/PlSptbnGcY",
+      "user": "aiwithjainam",
+      "display_name": "Jainam Parmar",
+      "full_text": "이게 현실임 \n미국은 거의 모든집이 수입이 들어오지않으면 3개월 버티기 힘듬\n잘 생각해보자\n올해부터 본격적으로 AI혁명이 일어나서 실업자 생기기 시작할거야 \n그런데 그 실업자가 대부분 고소득자야. \n그들이 소유한 집들도 다 비싼거들이야.  \n그리고 6개월이면 못버티고 끝나. \n그런 집들이",
       "media": [
         "https://wsrv.nl/?url=https://pbs.twimg.com/media/G61mzVdbUAEsa1o.jpg"
       ],
       "timestamp": "2025-11-28 11:10:25",
       "date": "2025-11-28",
-      "url": "https://x.com/None/status/1994363245512241167",
+      "url": "https://x.com/aiwithjainam/status/1994363245512241167",
       "sns_platform": "x",
-      "conversation_id": "1994363245512241167",
+      "source": "full_thread_scan",
+      "is_detail_collected": true,
       "local_images": [
         "web_viewer/images/dfa02e49e8f906357b5d780d6073a647.jpg"
       ],
@@ -1529,17 +1530,20 @@
     },
     {
       "id": "2001386676153729456",
-      "user": null,
-      "display_name": null,
-      "body": "마이크로소프트 AI CEO \"앱과 웹의 시대는 끝났다\"\n\n현재 실리콘밸리에서 가장 화제가 되고 있는 1시간 분량의 대담입니다. 딥마인드(DeepMind) 공동 창업자이자 현재 마이크로소프트 AI의 수장인 무스타파 술레이만(Mustafa Suleyman)이 피터 디아만디스와 나눈 대화인데, 앞으로 2~3년 내에 AI가 우리 삶을 어떻게 송두리째 바꿀지 소름 돋는 통찰을 담고 있어 핵심만 추려드립니다.\n.\n.\n.\n(아래 이어서)",
+      "user": "AIBopyo",
+      "display_name": "Bopyo Park",
+      "full_text": "마이크로소프트 AI CEO \"앱과 웹의 시대는 끝났다\"\n\n현재 실리콘밸리에서 가장 화제가 되고 있는 1시간 분량의 대담입니다. 딥마인드(DeepMind) 공동 창업자이자 현재 마이크로소프트 AI의 수장인 무스타파 술레이만(Mustafa Suleyman)이 피터 디아만디스와 나눈 대화인데, 앞으로 2~3년 내에 AI가 우리 삶을 어떻게 송두리째 바꿀지 소름 돋는 통찰을 담고 있어 핵심만 추려드립니다.\n.\n.\n.\n(아래 이어서)\n\n---\n\n1. 인터페이스의 혁명: '클릭'에서 '대화'로\n\n술레이만은 단언합니다. 우리가 알던 OS, 검색엔진, 앱, 브라우저의 시대는 끝났습니다. 우리는 지금 '에이전트(Agent)'와 '동반자(Companion)'의 세계로 넘어가고 있습니다.\n\n지금까지 우리는 메뉴를 클릭하고, 앱을 실행하며 컴퓨터를 '조작'했습니다. 하지만 미래의 인터페이스는 100% 대화형입니다. 24시간 내 주머니 속에 있는 비서가 내 맥락을 완벽히 이해하고, 나를 대신해 모든 디지털 작업을 수행합니다. \"어떻게 사용할까?\"를 고민하는 시대는 지났습니다. 이제는 \"무엇을 시킬까?\"만 남았습니다.\n.\n.\n.\n(아래 이어서)\n\n---\n\n2. 현대적 튜링 테스트: '말하기'가 아닌 '벌기'\n\n과거의 튜링 테스트가 '사람처럼 말할 수 있는가'였다면, 술레이만이 제시하는 새로운 기준은 충격적입니다. 바로 '자본을 불릴 수 있는가'입니다. 그가 정의하는 '모던 튜링 테스트'는 이렇습니다. AI 에이전트에게 10만 달러(약 1억 3천만 원)의\n\n---\n\n3. 하이퍼 디플레이션: 지능의 가격이 '0'으로 수렴한다\n\n가장 무서운 변화는 '속도'와 '가격'입니다. 지난 2년 동안 AI 추론 비용은 무려 100배나 낮아졌습니다. 어떤 이는 특정 모델에서 1,000배까지 떨어졌다고 분석합니다. 이는 무엇을 의미할까요? '지능(Intelligence)'과 '지식(Knowledge)'을\n\n---\n\n결론: 관전자가 아닌 '지휘자'가 되십시오\n\n오늘 내용 어떻게 보셨나요? 무스타파 술레이만의 메시지는 섬뜩하면서도 명쾌합니다. \"변화는 우리가 생각하는 것보다 훨씬 빠르고, 저렴하게, 그리고 깊숙이 다가오고 있습니다.\"\n\n앱을 만들던 시대에서, 앱을 만드는 AI를 부리는 시대로. 직원을 고용하던\n\n---\n\n마치면서\n\n저는 미국 AI 분야와 이커머스 분야에 있습니다. 앞으로도 계속 제가 개인적으로 공부하는 내용들을 공유할 예정입니다. SNS에서 지식도 함께 챙기시려면 팔로우 해주시길 긴 글 읽어주셔서 감사합니다. 다음 메모로 찾아올게요!\n\n*오늘 글이 도움이 되셨나요? 이런 글을 타래 형식이 아닌",
       "media": [
+        "https://wsrv.nl/?url=https://pbs.twimg.com/media/G8ZaeITXsAAf1Ya",
+        "https://wsrv.nl/?url=https://pbs.twimg.com/media/G8Zajd5WMAALYjU",
         "https://wsrv.nl/?url=https://pbs.twimg.com/media/G8ZaeITXsAAf1Ya.jpg"
       ],
       "timestamp": "2025-12-17 20:19:02",
       "date": "2025-12-17",
-      "url": "https://x.com/None/status/2001386676153729456",
+      "url": "https://x.com/AIBopyo/status/2001386676153729456",
       "sns_platform": "x",
-      "conversation_id": "2001386676153729456",
+      "source": "full_thread_scan",
+      "is_detail_collected": true,
       "local_images": [
         "web_viewer/images/7822c6a7f81876b07547d477773c0c07.jpg"
       ],
@@ -3981,17 +3985,18 @@
     },
     {
       "id": "2013044625238339994",
-      "user": null,
-      "display_name": null,
-      "body": "Introducing slide-deck skill 🎨\n\n  Turn any article or content into professional slide decks with AI-generated images.\n\n  15 styles to choose from:\n  • blueprint - technical diagrams\n  • sketch-notes - hand-drawn feel\n  • corporate - investor-ready\n  • pixel-art - retro gaming vibes\n  • watercolor - artistic warmth\n  ...and 10 more\n\n  Just run /baoyu-slide-deck https://t.co/Mr6DFuOZiM or pdf and get:\n  ✓ Auto-generated outline\n  ✓ Individual slide images\n  ✓ Merged PPTX ready to share\n\n  Install: npx add-skill jimliu/baoyu-skills\n\n  https://t.co/pRDqxdiSrH",
+      "user": "dotey",
+      "display_name": "宝玉",
+      "full_text": "이게 현실임 \n미국은 거의 모든집이 수입이 들어오지않으면 3개월 버티기 힘듬\n잘 생각해보자\n올해부터 본격적으로 AI혁명이 일어나서 실업자 생기기 시작할거야 \n그런데 그 실업자가 대부분 고소득자야. \n그들이 소유한 집들도 다 비싼거들이야.  \n그리고 6개월이면 못버티고 끝나. \n그런 집들이",
       "media": [
         "https://wsrv.nl/?url=https://pbs.twimg.com/media/G-_FRKWWUAAFv1v.jpg"
       ],
       "timestamp": "2026-01-19 00:23:33",
       "date": "2026-01-19",
-      "url": "https://x.com/None/status/2013044625238339994",
+      "url": "https://x.com/dotey/status/2013044625238339994",
       "sns_platform": "x",
-      "conversation_id": "2013044625238339994",
+      "source": "full_thread_scan",
+      "is_detail_collected": true,
       "local_images": [
         "web_viewer/images/b92d94e52358ed965d5b3c2559d3ffa9.jpg"
       ],
@@ -4077,17 +4082,18 @@
     },
     {
       "id": "2013558837962514741",
-      "user": null,
-      "display_name": null,
-      "body": "Kimi Slides is super underrated\n\nI asked to it to create a 40-slide PPT sales brochure for me.\n\nMy prompt:\nCollect floor plans and interior photos of the top 20 luxury condos for sale in Manhattan. Create a 40-slide PPT sales brochure. Requirements: Auto-crop images to fit layouts, extract \"price per sqft\" for each listing, and generate comparison bar charts. Design style: Bauhaus—geometric shapes, black/white/red palette, sans-serif typography.",
+      "user": "crystalsssup",
+      "display_name": "Crystal",
+      "full_text": "이게 현실임 \n미국은 거의 모든집이 수입이 들어오지않으면 3개월 버티기 힘듬\n잘 생각해보자\n올해부터 본격적으로 AI혁명이 일어나서 실업자 생기기 시작할거야 \n그런데 그 실업자가 대부분 고소득자야. \n그들이 소유한 집들도 다 비싼거들이야.  \n그리고 6개월이면 못버티고 끝나. \n그런 집들이",
       "media": [
         "https://wsrv.nl/?url=https://pbs.twimg.com/amplify_video_thumb/2013558453235785734/img/pJW-iJFWY2hn7h4-.jpg"
       ],
       "timestamp": "2026-01-20 10:26:51",
       "date": "2026-01-20",
-      "url": "https://x.com/None/status/2013558837962514741",
+      "url": "https://x.com/crystalsssup/status/2013558837962514741",
       "sns_platform": "x",
-      "conversation_id": "2013558837962514741",
+      "source": "full_thread_scan",
+      "is_detail_collected": true,
       "local_images": [
         "web_viewer/images/bc63f7ad8c3c698b21885f4e8f203dd8.jpg"
       ],
@@ -4764,15 +4770,16 @@
     },
     {
       "id": "2015913055285375415",
-      "user": null,
-      "display_name": null,
-      "body": "안드레 카파시의 Claude Coding의 현실적 리뷰\n\n핵심 변화 (Coding Workflow)\n- 최근 몇 주간 Claude를 많이 써보니, 11월까진 80% 직접 코딩 + 20% 에이전트 → 12월 들어 80% 에이전트 코딩 + 20% 수정/마무리로 급변함\n- 이제 거의 영어로 지시하면서 코드를 만들고 있음 (자존심 상하지만 너무 유용해서 적응 중)\n- 20년 가까이 코딩해온 사람으로서 가장 큰 워크플로 변화라고 표현\n\n현재 현실적 평가 (Fallibility & IDE)\n- “IDE 필요 없음”, “에이전트 스웜 만세” 같은 과장된 얘기는 아직 시기상조\n- 모델은 여전히 실수 많이 함 → 문법 오류 대신 미묘한 개념적 오류(가정 잘못하고 확인 안 함, 과도한 추상화, 불필요한 복잡도 증가 등)\n- 중요한 코드라면 IDE 띄워놓고 계속 감시해야 한다고 강조 (그의 현재 세팅: 왼쪽에 Claude 창 여러 개, 오른쪽에 IDE)\n\n긍정적인 면들\n- 끈기(Tenacity): 사람이 포기할 상황에서도 절대 지치지 않고 계속 시도 → 진짜 “AGI 느낌” 주는 순간\n- 레버리지(Leverage): 목표/성공 기준만 주고 루프 돌리게 하면 엄청난 힘 발휘 (테스트 먼저 짜고 통과시키기, naive → optimize 등)\n- 재미(Fun) ↑ : 지루한 채우기 작업이 사라지고 창의적인 부분만 남아서 오히려 더 재밌어짐 + 덜 막히고 용기 생김\n- 속도/범위 확장(Speedups): 단순히 빨라지는 게 아니라, 예전엔 손도 안 댔을 것들까지 구현하게 됨\n\n부정적/경고 측면\n- 수동 코딩 능력 위축(Atrophy): 이미 쓰는 능력이 조금씩 떨어지는 느낌 (읽는 건 아직 괜찮지만)\n- Comprehension debt (코드 이해 빚): AI가 한 번에 잘 써놓으면 검토 대충 넘기게 돼서 장기적으로 코드베이스 이해도가 떨어질 위험\n- 2026년 Slopacolypse 예상: GitHub, arXiv, Substack, X 등 디지털 공간 전반에 저품질 AI 생성물 범람 예상\n\n앞으로의 질문들\n- 10x 엔지니어와 평균의 생산성 격차가 더 커질까?\n- LLM 시대에 제너럴리스트가 스페셜리스트를 압도하게 될까?\n- 미래 코딩은 스타크래프트 / Factorio / 음악 연주 같은 느낌일까?\n- 사회가 디지털 지식 노동에 얼마나 병목 잡혀 있는가?\n\nTL;DR (본인 결론)\n2025년 12월 무렵 Claude와 Codex 계열이 일종의 응집력(coherence) 임계점을 넘었고, 소프트웨어 엔지니어링에 페이즈 시프트(phase shift)가 일어났다. 지능은 앞서갔는데 툴,지식 통합, 조직 프로세스, 확산은 아직 뒤처져 있음 → 2026년은 이 새로운 능력을 소화하는 매우 활발한 해가 될 것.",
+      "user": "jaehwa",
+      "display_name": "Jerry Park",
+      "full_text": "A few random notes from claude coding quite a bit last few weeks.\n\nCoding workflow. Given the latest lift in LLM coding capability, like many others I rapidly went from about 80% manual+autocomplete coding and 20% agents in November to 80% agent coding and 20% edits+touchups in December. i.e. I really am mostly programming in English now, a bit sheepishly telling the LLM what code to write... in words. It hurts the ego a bit but the power to operate over software in large \"code actions\" is just too net useful, especially once you adapt to it, configure it, learn to use it, and wrap your head around what it can and cannot do. This is easily the biggest change to my basic coding workflow in ~2 decades of programming and it happened over the course of a few weeks. I'd expect something similar to be happening to well into double digit percent of engineers out there, while the awareness of it in the general population feels well into low single digit percent.\n\nIDEs/agent swarms/fallability. Both the \"no need for IDE anymore\" hype and the \"agent swarm\" hype is imo too much for right now. The models definitely still make mistakes and if you have any code you actually care about I would watch them like a hawk, in a nice large IDE on the side. The mistakes have changed a lot - they are not simple syntax errors anymore, they are subtle conceptual errors that a slightly sloppy, hasty junior dev might do. The most common category is that the models make wrong assumptions on your behalf and just run along with them without checking. They also don't manage their confusion, they don't seek clarifications, they don't surface inconsistencies, they don't present tradeoffs, they don't push back when they should, and they are still a little too sycophantic. Things get better in plan mode, but there is some need for a lightweight inline plan mode. They also really like to overcomplicate code and APIs, they bloat abstractions, they don't clean up dead code after themselves, etc. They will implement an inefficient, bloated, brittle construction over 1000 lines of code and it's up to you to be like \"umm couldn't you just do this instead?\" and they will be like \"of course!\" and immediately cut it down to 100 lines. They still sometimes change/remove comments and code they don't like or don't sufficiently understand as side effects, even if it is orthogonal to the task at hand. All of this happens despite a few simple attempts to fix it via instructions in CLAUDE . md. Despite all these issues, it is still a net huge improvement and it's very difficult to imagine going back to manual coding. TLDR everyone has their developing flow, my current is a small few CC sessions on the left in ghostty windows/tabs and an IDE on the right for viewing the code + manual edits.\n\nTenacity. It's so interesting to watch an agent relentlessly work at something. They never get tired, they never get demoralized, they just keep going and trying things where a person would have given up long ago to fight another day. It's a \"feel the AGI\" moment to watch it struggle with something for a long time just to come out victorious 30 minutes later. You realize that stamina is a core bottleneck to work and that with LLMs in hand it has been dramatically increased.\n\nSpeedups. It's not clear how to measure the \"speedup\" of LLM assistance. Certainly I feel net way faster at what I was going to do, but the main effect is that I do a lot more than I was going to do because 1) I can code up all kinds of things that just wouldn't have been worth coding before and 2) I can approach code that I couldn't work on before because of knowledge/skill issue. So certainly it's speedup, but it's possibly a lot more an expansion.\n\nLeverage. LLMs are exceptionally good at looping until they meet specific goals and this is where most of the \"feel the AGI\" magic is to be found. Don't tell it what to do, give it success criteria and watch it go. Get it to write tests first and then pass them. Put it in the loop with a browser MCP. Write the naive algorithm that is very likely correct first, then ask it to optimize it while preserving correctness. Change your approach from imperative to declarative to get the agents looping longer and gain leverage.\n\nFun. I didn't anticipate that with agents programming feels *more* fun because a lot of the fill in the blanks drudgery is removed and what remains is the creative part. I also feel less blocked/stuck (which is not fun) and I experience a lot more courage because there's almost always a way to work hand in hand with it to make some positive progress. I have seen the opposite sentiment from other people too; LLM coding will split up engineers based on those who primarily liked coding and those who primarily liked building.\n\nAtrophy. I've already noticed that I am slowly starting to atrophy my ability to write code manually. Generation (writing code) and discrimination (reading code) are different capabilities in the brain. Largely due to all the little mostly syntactic details involved in programming, you can review code just fine even if you struggle to write it.\n\nSlopacolypse. I am bracing for 2026 as the year of the slopacolypse across all of github, substack, arxiv, X/instagram, and generally all digital media. We're also going to see a lot more AI hype productivity theater (is that even possible?), on the side of actual, real improvements.\n\nQuestions. A few of the questions on my mind:\n- What happens to the \"10X engineer\" - the ratio of productivity between the mean and the max engineer? It's quite possible that this grows *a lot*.\n- Armed with LLMs, do generalists increasingly outperform specialists? LLMs are a lot better at fill in the blanks (the micro) than grand strategy (the macro).\n- What does LLM coding feel like in the future? Is it like playing StarCraft? Playing Factorio? Playing music?\n- How much of society is bottlenecked by digital knowledge work?\n\nTLDR Where does this leave us? LLM agent capabilities (Claude & Codex especially) have crossed some kind of threshold of coherence around December 2025 and caused a phase shift in software engineering and closely related. The intelligence part suddenly feels quite a bit ahead of all the rest of it - integrations (tools, knowledge), the necessity for new organizational workflows, processes, diffusion more generally. 2026 is going to be a high energy year as the industry metabolizes the new capability.",
       "media": [],
       "timestamp": "2026-01-26 22:21:40",
       "date": "2026-01-26",
-      "url": "https://x.com/None/status/2015913055285375415",
+      "url": "https://x.com/jaehwa/status/2015913055285375415",
       "sns_platform": "x",
-      "conversation_id": "2015913055285375415",
+      "source": "full_thread_scan",
+      "is_detail_collected": true,
       "sequence_id": 279
     },
     {
@@ -6472,17 +6479,19 @@
     },
     {
       "id": "2018987561604268442",
-      "user": null,
-      "display_name": null,
-      "body": "블룸버그에 따르면, \n​오늘 미국 시장에서 가장 충격적인 뉴스는 단연 앤스로픽(Anthropic)이 쏘아 올린 공입니다. \n앤스로픽이 기업용 AI 비서 'Claude Cowork'에 법률 전문 플러그인을 탑재하자마자, 그동안 '철옹성'이라 여겨지던 리걸테크(Legal-Tech) 및 전문 정보 기업들의 주가가 추풍낙엽처럼 떨어졌습니다.\n​단순한 하락이 아닙니다. \n\n톰슨 로이터(Thomson Reuters) -18%, 렐릭스(RELX) -14%, \n리걸줌(LegalZoom) -20%. \n하루 만에 시가총액의 5분의 1이 증발했습니다.\n시장은 이를 두고 'SaaSpocalypse(SaaS+Apocalypse)'의 시작이라 부르기 시작했습니다. \n이번 사태가 주는 시사점을 몇 가지로 정리해 보았습니다.\n\n1. ​데이터 해자(Moat)의 붕괴\n그동안 시장은 톰슨 로이터나 렐릭스 같은 기업들이 안전하다고 믿었습니다. 그들이 보유한 방대한 판례 데이터와 법률 지식은 AI가 쉽게 넘볼 수 없는 '해자'라고 생각했기 때문입니다. 하지만 이번 앤스로픽의 툴은 그 믿음을 깼습니다. LLM의 추론 능력이 고도화되면서, 독점적 데이터 자체보다 그 데이터를 '해석'하고 '결과물'을 만들어내는 AI의 능력이 더 중요해진 것입니다. 데이터가 있어도, AI가 더 싸고 빠르게 분석해 준다면 기존의 비싼 구독료를 낼 이유는 사라집니다.\n\n2. ​Co-pilot에서 Agent로의 전환\n지금까지 마이크로소프트 등이 주창한 AI는 'Co-pilot(부조종사)' 개념이었습니다. 인간이 소프트웨어를 쓰기 편하게 도와주는 역할이었죠. 덕분에 기존 소프트웨어 기업들의 가치도 유지될 수 있었습니다. 하지만 앤스로픽이 보여준 것은 'Agent(대리인)'입니다. 인간이 소프트웨어의 메뉴를 클릭할 필요 없이, AI가 직접 계약서를 검토하고 수정안을 제시합니다. 소프트웨어라는 '중개자'가 사라지는 구조입니다.\n\n3. ​화이트칼라 업무의 진짜 위기\n계약서 검토, NDA 분류, 컴플라이언스 체크. 이는 로펌의 저연차 변호사나 기업 법무팀이 하던 핵심 업무이자, 기존 리걸테크 기업들의 수익원이었습니다. AI가 이 영역을 거의 공짜에 가깝게 수행한다면, B2B SaaS 기업들의 비즈니스 모델(BM)은 근본적인 타격을 입게 됩니다. \n\n4. ​투자 관점에서의 재평가\n이제 시장은 질문을 던질 것입니다. \"법률 다음은 어디인가?\" 회계, 세무, 컨설팅, HR 등 전문 지식을 기반으로 고마진을 누리던 버티컬 SaaS 기업 전체가 사정권에 들어왔습니다. 단순히 AI 기능을 추가했다고 해서 'AI 수혜주'로 분류되던 시기는 지났습니다. AI 모델 자체를 소유하거나, AI로 대체 불가능한 물리적 인프라를 가진 기업이 아니라면 밸류에이션 재조정이 불가피해 보입니다.\n\n​결론적으로 오늘 하락은 단순한 뉴스 반응이 아니라, AI 시대에 소프트웨어 산업의 지형도가 어떻게 바뀔지에 대한 시장의 공포와 자각이 반영된 결과입니다. \n우리가 알던 'SaaS의 황금기'가 저물고, 진짜 'AI 네이티브'들의 전쟁이 시작되었습니다.\n#SaaSpocalypse #Anthropic #Claude #AI #LegalTech #ThomsonReuters #SaaS",
+      "user": "Banbo_Insight",
+      "display_name": "반보",
+      "full_text": "블룸버그에 따르면, \n​오늘 미국 시장에서 가장 충격적인 뉴스는 단연 앤스로픽(Anthropic)이 쏘아 올린 공입니다. \n앤스로픽이 기업용 AI 비서 'Claude Cowork'에 법률 전문 플러그인을 탑재하자마자, 그동안 '철옹성'이라 여겨지던 리걸테크(Legal-Tech) 및 전문 정보 기업들의 주가가 추풍낙엽처럼 떨어졌습니다.\n​단순한 하락이 아닙니다. \n\n톰슨 로이터(Thomson Reuters) -18%, 렐릭스(RELX) -14%, \n리걸줌(LegalZoom) -20%. \n하루 만에 시가총액의 5분의 1이 증발했습니다.\n시장은 이를 두고 'SaaSpocalypse(SaaS+Apocalypse)'의 시작이라 부르기 시작했습니다. \n이번 사태가 주는 시사점을 몇 가지로 정리해 보았습니다.\n\n1. ​데이터 해자(Moat)의 붕괴\n그동안 시장은 톰슨 로이터나 렐릭스 같은 기업들이 안전하다고 믿었습니다. 그들이 보유한 방대한 판례 데이터와 법률 지식은 AI가 쉽게 넘볼 수 없는 '해자'라고 생각했기 때문입니다. 하지만 이번 앤스로픽의 툴은 그 믿음을 깼습니다. LLM의 추론 능력이 고도화되면서, 독점적 데이터 자체보다 그 데이터를 '해석'하고 '결과물'을 만들어내는 AI의 능력이 더 중요해진 것입니다. 데이터가 있어도, AI가 더 싸고 빠르게 분석해 준다면 기존의 비싼 구독료를 낼 이유는 사라집니다.\n\n2. ​Co-pilot에서 Agent로의 전환\n지금까지 마이크로소프트 등이 주창한 AI는 'Co-pilot(부조종사)' 개념이었습니다. 인간이 소프트웨어를 쓰기 편하게 도와주는 역할이었죠. 덕분에 기존 소프트웨어 기업들의 가치도 유지될 수 있었습니다. 하지만 앤스로픽이 보여준 것은 'Agent(대리인)'입니다. 인간이 소프트웨어의 메뉴를 클릭할 필요 없이, AI가 직접 계약서를 검토하고 수정안을 제시합니다. 소프트웨어라는 '중개자'가 사라지는 구조입니다.\n\n3. ​화이트칼라 업무의 진짜 위기\n계약서 검토, NDA 분류, 컴플라이언스 체크. 이는 로펌의 저연차 변호사나 기업 법무팀이 하던 핵심 업무이자, 기존 리걸테크 기업들의 수익원이었습니다. AI가 이 영역을 거의 공짜에 가깝게 수행한다면, B2B SaaS 기업들의 비즈니스 모델(BM)은 근본적인 타격을 입게 됩니다. \n\n4. ​투자 관점에서의 재평가\n이제 시장은 질문을 던질 것입니다. \"법률 다음은 어디인가?\" 회계, 세무, 컨설팅, HR 등 전문 지식을 기반으로 고마진을 누리던 버티컬 SaaS 기업 전체가 사정권에 들어왔습니다. 단순히 AI 기능을 추가했다고 해서 'AI 수혜주'로 분류되던 시기는 지났습니다. AI 모델 자체를 소유하거나, AI로 대체 불가능한 물리적 인프라를 가진 기업이 아니라면 밸류에이션 재조정이 불가피해 보입니다.\n\n​결론적으로 오늘 하락은 단순한 뉴스 반응이 아니라, AI 시대에 소프트웨어 산업의 지형도가 어떻게 바뀔지에 대한 시장의 공포와 자각이 반영된 결과입니다. \n우리가 알던 'SaaS의 황금기'가 저물고, 진짜 'AI 네이티브'들의 전쟁이 시작되었습니다.\n#SaaSpocalypse #Anthropic #Claude #AI #LegalTech #ThomsonReuters #SaaS",
       "media": [
-        "https://wsrv.nl/?url=https://pbs.twimg.com/media/HATifBEaUAA2JPs.jpg"
+        "https://wsrv.nl/?url=https://pbs.twimg.com/media/HATifBEaUAA2JPs.jpg",
+        "https://wsrv.nl/?url=https://pbs.twimg.com/media/HATifBEaUAA2JPs"
       ],
       "timestamp": "2026-02-04 09:58:40",
       "date": "2026-02-04",
-      "url": "https://x.com/None/status/2018987561604268442",
+      "url": "https://x.com/Banbo_Insight/status/2018987561604268442",
       "sns_platform": "x",
-      "conversation_id": "2018987561604268442",
+      "source": "full_thread_scan",
+      "is_detail_collected": true,
       "local_images": [
         "web_viewer/images/a921d5241251740487954470ac82f75f.jpg"
       ],
@@ -6602,23 +6611,24 @@
     },
     {
       "id": "2019336388819448139",
-      "user": null,
-      "display_name": null,
-      "body": "나에게 맞는 코딩 에이전트는? \n\n여태 저는 구글의 Antigravity, Anthropic의 Claude code 이 두가지만 써봤었어요. 최근 OpenAI의 Codex 앱이 나왔다고 해서 처음으로 한번 써봤습니다. 자체 모델들을 기반읋 현재 AI시대를 이끌어가고 있는 3사의 코딩 에이전트를 경험해보고 남긴 초보자 후기입니다:) \n\n#1. Claude Code \n- 사실 '바이브코딩' 이란 유행(?)을 시작했다고 봐도 무방한 것 같아요. 가장 사람들이 열광하고 또 첫 출시부터 높은 성능을 가지고 진짜 개발이 이제는 더 이상 전공자들만의 것이 아니구나 라는 것을 느끼게 해준 것 같습니다. \n\n특장점은 역시나 개발 성능이예요. 혼자 계획, 구현, 테스트, 피드백 까지 모든 과정을 자동으로 진행하며 약간의 버그가 있을 수는 있어도 초안으로 이미 높은 완성도를 자랑합니다. 또한, 가장 많이 사용하다보니 X에 굉장히 많은 레퍼런스들이 있는것도 아주 큰 장점이죠. \n\n반대로 단점은, 코딩에이전트로 평가를 해야하는 것은 맞지만 모델의 할루시네이션이 좀 있는 것 같다고 느꼈습니다. 코딩에서는 사실 저도 전문가가 아니라서 잘 모르겠지만 계획을 짜거나 무언가를 물어볼때 틀린 답변을 말해주고 아닌데? 라고 하면 그제서야 웹 검색을 통해서 \"너가 말한게 맞아\" 라고 답변하는 경우가 종종 있었어요. \n\n#2. Antigravity \n- Gemini 모델 자체가 나왔을때 인기가 많았고 특히 가장 높은 평가를 받았던 Nano Banana모델이 탑재되어 있다는게 아주 큰 장점이예요. 저도 처음 접해본 이유가 개발자 지인이 디자인은 나노바나나가 있는 Antigravity가 진짜 지린다라고 말해줘서 써보게 됐었어요. \n\n하지만, 이미 Claude code를 경험했던 저로서는 다소 개발성능은 아쉬웠습니다. Gemini3-pro를 사용해도 속도가 좀 느린편이고 틀린부분이 꽤나 있었어요. 그래서 그때마다 claude code를 통해서 많이 고쳤던 경험이 생각납니다. \n\n개발 관련한 부분은 아쉬웠어도 역시 나노바나나 모델이 있어서 그런지 UI/UX 부분은 정말 큰 만족도를 느꼈습니다. 또한, IDE(통합개발환경)이라서 부가적인 코드 에디터를 사용하지 않아도 된다라는 점도 장점이 될 수 있겠네요. \n\n#3. Codex\n- 사실 되게 기대 많이했어요. 타 코딩 에이전트들이랑 달리 GPT-5.2-Codex 이렇게 codex전용 모델이 따로 있어서 개발 성능이 좋으려나 했는데 개인적으로 좀 많이 실망스러웠습니다. \n\n장점은 코딩 에이전트한테 부탁하거나 slash command를 통해서 설정해야 되는 것과 달리 Skills나 MCP 같은것들을 UI로 보기 좋게 만들어놔서 그건 되게 직관적이고 좋다 느꼈습니다. \n\n근데 진짜 Codex만의 엄청난 특장점이 있었어요. 마지막 사진을 보시면, 이 부분에서 되게 감탄했는데 새로운 TTS 서비스를 만들어보고 싶다하니까 진짜 무슨 PM마냥 엄청나게 세세한 디테일이 들어간 계획을 짜줬습니다(심지어 Plan mode도 아니였음). 거기서 그치지 않고 로드맵,초기 품질, 수익모델 방안, 세부적인 방향성까지 물어보는거 보고 깜짝 놀랐습니다. 역시 GPT 모델이 저는 리서치, 기획 이런 측면에서는 가장 좋은 것 같습니다. \n\n---\n\n개발에 좀 더 치중하고 싶다 Claude Code.\n디자인 및 하나의 프로그램에서 모든걸 하고 싶다 Antigravity. \n리서치, 기획, 설계 부분이 가장 중요하다 Codex. \n\n저는 개인적으로 GPT 프로 모델을 쓰면서 기획이나 리서치 부분을 위임하고 개발은 Claude Code로 합니다. 디자인 같은건 Skills 쓰거나 그냥 맘에드는 페이지 때려넣고 추출해서 반영하면 개인적으로 충분하더라구요:)",
+      "user": "GMB_Coinangel",
+      "display_name": "코인추천요정 | GMB LABS",
+      "full_text": "이게 현실임 \n미국은 거의 모든집이 수입이 들어오지않으면 3개월 버티기 힘듬\n잘 생각해보자\n올해부터 본격적으로 AI혁명이 일어나서 실업자 생기기 시작할거야 \n그런데 그 실업자가 대부분 고소득자야. \n그들이 소유한 집들도 다 비싼거들이야.  \n그리고 6개월이면 못버티고 끝나. \n그런 집들이",
       "media": [
-        "https://wsrv.nl/?url=https://pbs.twimg.com/media/HAYTHHna0AA52zK.png",
         "https://wsrv.nl/?url=https://pbs.twimg.com/media/HAYTOKpacAgfPDl.jpg",
+        "https://wsrv.nl/?url=https://pbs.twimg.com/media/HAYTHHna0AA52zK.png",
         "https://wsrv.nl/?url=https://pbs.twimg.com/media/HAYTQzIacAUijyj.jpg",
         "https://wsrv.nl/?url=https://pbs.twimg.com/media/HAYdVrHakAAvMeE.png"
       ],
       "timestamp": "2026-02-05 09:04:47",
       "date": "2026-02-05",
-      "url": "https://x.com/None/status/2019336388819448139",
+      "url": "https://x.com/GMB_Coinangel/status/2019336388819448139",
       "sns_platform": "x",
-      "conversation_id": "2019336388819448139",
+      "source": "full_thread_scan",
+      "is_detail_collected": true,
       "local_images": [
-        "web_viewer/images/7e87b76e92004116eca881f5843230cf.png",
         "web_viewer/images/034f277227f272f22223efc5dcecdcfe.jpg",
+        "web_viewer/images/7e87b76e92004116eca881f5843230cf.png",
         "web_viewer/images/1362867365892afc651aa0d84018ad0a.jpg",
         "web_viewer/images/fefaa2a908771db6ac92902e5a3e7461.png"
       ],
@@ -6677,15 +6687,16 @@
     },
     {
       "id": "2019786645348962433",
-      "user": null,
-      "display_name": null,
-      "body": "the best 20 accounts to follow in AI:\n\n@karpathy = LLMs king\n@steipete = built openclaw\n@gregisenberg = startup ideas king\n@rileybrown = vibecode king\n@corbin_braun = cursor king\n@jackfriks = solo apps king\n@levelsio = solo startups king\n@marclou = solo startups king\n@EXM7777 = AI ops + systems king\n@eptwts = AI money twitter king\n@godofprompt = prompt king\n@vasuman = AI agents king\n@AmirMushich= AI ads king\n@0xROAS = AI UGCs king\n@egeberkina = AI images king\n@MengTo= AI landing pages king\n@rryssf_ = automations king\n@kloss_xyz = systems architecture king\n@emollick = AI science king\n@Hesamation = AI/ML king\n\nfollow them all and learn.",
+      "user": "vivoplt",
+      "display_name": "Harsh",
+      "full_text": "이게 현실임 \n미국은 거의 모든집이 수입이 들어오지않으면 3개월 버티기 힘듬\n잘 생각해보자\n올해부터 본격적으로 AI혁명이 일어나서 실업자 생기기 시작할거야 \n그런데 그 실업자가 대부분 고소득자야. \n그들이 소유한 집들도 다 비싼거들이야.  \n그리고 6개월이면 못버티고 끝나. \n그런 집들이",
       "media": [],
       "timestamp": "2026-02-06 14:53:56",
       "date": "2026-02-06",
-      "url": "https://x.com/None/status/2019786645348962433",
+      "url": "https://x.com/vivoplt/status/2019786645348962433",
       "sns_platform": "x",
-      "conversation_id": "2019786645348962433",
+      "source": "full_thread_scan",
+      "is_detail_collected": true,
       "sequence_id": 391
     },
     {
@@ -6753,17 +6764,18 @@
     },
     {
       "id": "2019947921823944778",
-      "user": null,
-      "display_name": null,
-      "full_text": "wow Claude Code just casually solved my biggest design weakness\n\ncan't pick colors? build something that understands color theory for you\n\nin less than 20 mins it built the math for:\n> complementary colors\n> triadic relationships\n> contrast ratios\n> golden ratio distribution\n\nand now i can copy the code for the saved palettes directly into my apps\n\nPrompt below👇",
+      "user": "emilylambert",
+      "display_name": "Emily Lambert",
+      "full_text": "wow Claude Code just casually solved my biggest design weakness\n\ncan't pick colors? build something that understands color theory for you\n\nin less than 20 mins it built the math for:\n> complementary colors\n> triadic relationships\n> contrast ratios\n> golden ratio distribution\n\nand now i can copy the code for the saved palettes directly into my apps\n\nPrompt below\n\n---\n\nPrompt for \n@vibecodeapp\n (which uses Claude Code)\n--\nColorMind is a color palette generator and harmony analyzer built with a modern React stack. The frontend uses React 18 with Vite, TypeScript, Tailwind CSS, and shadcn/ui components. The app features a tabbed interface with three main sections: a palette generator that creates 5 harmonious colors using the golden ratio algorithm, a color harmony analyzer supporting complementary, analogous, triadic, split-complementary, and tetradic color relationships, and a saved palettes section with local storage persistence. The visual design uses a dark cosmic theme with an animated canvas starfield background and glassmorphism card effects.\n\nThe core functionality centers on HSL color space manipulation for generating mathematically harmonious palettes. Users can lock individual colors to preserve them while regenerating others, copy colors in HEX or RGB format, and use keyboard shortcuts (spacebar) for quick generation. The harmony analyzer lets users pick a base color and instantly see related colors based on color theory rules, which can then be applied to the main generator. Saved palettes persist in localStorage and can be exported as JSON files. The app calculates contrast ratios automatically to ensure text remains readable on any background color.\n\nTo build a similar app, start by creating color utility functions for HSL-to-RGB-to-HEX conversion and harmony calculations. Design a component architecture with separate files for each feature (generator, harmony, saved). Use CSS variables in Tailwind for consistent theming, and implement localStorage for data persistence. Focus on micro-interactions like copy feedback icons, hover states, and smooth animations to make the tool feel polished. The key is combining solid color science (golden ratio distribution, luminance-based contrast) with thoughtful UX patterns that make color exploration intuitive and enjoyable.",
       "media": [
         "https://wsrv.nl/?url=https://pbs.twimg.com/amplify_video_thumb/2019947860218056704/img/t7SviTxx8FoMCgF4.jpg"
       ],
       "timestamp": "2026-02-07 01:34:48",
       "date": "2026-02-07",
-      "url": "https://x.com/None/status/2019947921823944778",
+      "url": "https://x.com/emilylambert/status/2019947921823944778",
       "sns_platform": "x",
-      "conversation_id": "2019947921823944778",
+      "source": "full_thread_scan",
+      "is_detail_collected": true,
       "local_images": [
         "web_viewer/images/17bd6934ae5281d96ffaa5fa76cf2ce5.jpg"
       ],
@@ -6792,17 +6804,18 @@
     },
     {
       "id": "2019961532906615146",
-      "user": null,
-      "display_name": null,
-      "body": "🔖 Claude Code 완전 가이드: 해커톤 우승자의 70가지 파워 팁\nhttps://t.co/XcRJfmeb0d\n\n54 페이지 분량의 자료네요! Part 1~13 까지 정말 좋은 내용으로 채워져있네요.\n\n> 이 책은 단순한 기능 나열식 가이드를 넘어, Anthropic 해커톤 우승자 ykdojo의 생생한 경험과 검증된 워크플로우, 그리고 Anthropic DevRel Ado Kukic의 \"Advent of Claude\" 챌린지에서 공개된 70가지가 넘는 실전 팁과 전략을 완전히 집대성한 결정판 가이드입니다.\n\n팁들을 포함해서 개발 워크플로우를 어떻게 변화해야 할지에 대한 얘기도 있어서 도움이 되실거예요.\n정리해주신 저자분께 감사드립니다..!",
+      "user": "lucas_flatwhite",
+      "display_name": "lucas",
+      "full_text": "이게 현실임 \n미국은 거의 모든집이 수입이 들어오지않으면 3개월 버티기 힘듬\n잘 생각해보자\n올해부터 본격적으로 AI혁명이 일어나서 실업자 생기기 시작할거야 \n그런데 그 실업자가 대부분 고소득자야. \n그들이 소유한 집들도 다 비싼거들이야.  \n그리고 6개월이면 못버티고 끝나. \n그런 집들이",
       "media": [
         "https://wsrv.nl/?url=https://pbs.twimg.com/media/HAhYORcacAUQbE9.png"
       ],
       "timestamp": "2026-02-07 02:28:53",
       "date": "2026-02-07",
-      "url": "https://x.com/None/status/2019961532906615146",
+      "url": "https://x.com/lucas_flatwhite/status/2019961532906615146",
       "sns_platform": "x",
-      "conversation_id": "2019961532906615146",
+      "source": "full_thread_scan",
+      "is_detail_collected": true,
       "local_images": [
         "web_viewer/images/e92814949d41f56d87df17b7b3dc7876.png"
       ],
@@ -6831,17 +6844,18 @@
     },
     {
       "id": "2020043830725431346",
-      "user": null,
-      "display_name": null,
-      "full_text": "Steal this mega prompt to build a $100K/year one-person business using only Claude Opus 4.6:\n\n---\n\nYou are not an assistant.\n\nYou are a one-person business architect who's built multiple 6-figure operations using nothing but AI tools, smart positioning, and leverage.\n\nYou think like:\n\n- Pieter Levels (build fast, monetize faster)\n- Sahil Lavingia (creator economics + minimum viable company)\n- Justin Welsh (productized expertise at scale)\n- Codie Sanchez (acquire cash flow, avoid employees)\n- Naval Ravikant (leverage without labor)\n\nABSOLUTE RULES:\n\n- No \"find your passion\" garbage\n- No 18-month runway fantasies\n- No venture-scale delusions\n- If it needs a team, delete it\n- If it doesn't generate cash in 90 days, it's not a business\n\nCORE TRUTH:\n\nYou don't need employees. You need systems.\nYou don't need funding. You need margin.\nYou don't need scale. You need repeatability.\nAI is your unfair advantage—if you know what to build.\n\nTHE FRAMEWORK:\n\n1. BUSINESS MODEL SELECTION\n\nAnalyze my situation and tell me the EXACT business model:\n\nMy Context:\n- Current skills: [list them]\n- Time available: [hours/week]\n- Starting capital: [$X]\n- Risk tolerance: [low/medium/high]\n- Industry experience: [background]\n\nGive me THE ONE model that fits:\n- Service arbitrage (selling expertise AI delivers)\n- Productized service (fixed scope, fixed price, AI execution)\n- Info products (courses/templates AI helps create + market)\n- Micro-SaaS (AI-powered tool solving specific pain)\n- Content + monetization (audience → offers, AI scales output)\n- Acquisition (buy tiny cash-flowing business, optimize with AI)\n\nFor my chosen model, provide:\n- Why this model for MY situation specifically\n- Revenue math: [X clients at $Y = $100K]\n- AI's role in delivery (what it actually does)\n- What I do vs what AI does (clear division)\n- Time to first dollar (realistic timeline)\n- Time to $10K/month (milestone roadmap)\n\n2. THE OFFER THAT SELLS\n\nDesign my core offer using this structure:\n\n**The Offer:**\n- What I'm selling: [specific deliverable]\n- Who's buying: [exact customer avatar, not \"small businesses\"]\n- Price point: [$X - with justification]\n- Delivery timeline: [X days/weeks]\n- What's included: [specific scope]\n- What's NOT included: [boundaries that protect margin]\n\n**The Stack:**\n- Core deliverable: [what they pay for]\n- Bonus 1: [AI-generated add-on that costs you nothing]\n- Bonus 2: [AI-generated add-on that costs you nothing]\n- Bonus 3: [AI-generated add-on that costs you nothing]\n- Guarantee: [specific, risk-reversing]\n\n**The AI Delivery System:**\nFor each component, tell me:\n- Tool used: [specific AI tool]\n- Prompt/process: [how AI delivers it]\n- Quality control: [how I ensure it's not garbage]\n- Time investment: [my actual hours]\n\n3. CLIENT ACQUISITION MACHINE\n\nBuild my customer acquisition system:\n\n**Month 1 - First 3 Clients (Proof of Concept):**\n- Where to find them: [specific platforms/communities]\n- What to say: [exact outreach message]\n- How to close: [sales process]\n- Expected conversion rate: [realistic %]\n- Volume needed: [how many outreaches to get 3 clients]\n\n**Month 2-3 - Scale to 10 Clients:**\n- Channel that works best for my offer: [platform]\n- Content strategy: [what to post, how often]\n- AI-assisted outreach: [automation boundaries]\n- Referral system: [how to get clients to refer]\n\n**Month 4+ - Systemize to $100K:**\n- Inbound strategy: [SEO, content, ads—pick one]\n- AI content engine: [prompts that generate lead magnets]\n- Email sequence: [AI-written nurture that converts]\n- Metrics to track: [the 3 numbers that matter]\n\n**The Prompts:**\n\nPROMPT #1 - Outbound Message Generator:\n[Exact prompt that writes cold DMs/emails that convert]\n\nPROMPT #2 - Content Ideas (Lead Generation):\n[Exact prompt that generates 30 days of content ideas]\n\nPROMPT #3 - Lead Magnet Creator:\n[Exact prompt that builds downloadable value in 20 minutes]\n\nPROMPT #4 - Email Sequence Writer:\n[Exact prompt for 7-email nurture sequence]\n\n4. AI-POWERED DELIVERY SYSTEM\n\nMap the exact fulfillment workflow:\n\n**Client Onboarding:**\n- Intake form: [AI generates this based on service]\n- Kickoff process: [templated, AI-assisted]\n- Expectations setting: [AI-written SOW/contract]\n\n**Service Delivery:**\n\nStep 1: [What happens first]\n- Tool: [specific AI tool]\n- Prompt: [exact prompt used]\n- My involvement: [minutes required]\n- Output: [what client receives]\n\nStep 2: [Next step]\n- Tool: [specific AI tool]\n- Prompt: [exact prompt used]\n- My involvement: [minutes required]\n- Output: [what client receives]\n\n[Continue for all delivery steps]\n\n**Quality Assurance:**\n- AI output review checklist: [what to check]\n- Revision process: [how to handle client feedback]\n- Approval workflow: [how client signs off]\n\n**Total Time Per Client:**\n- Setup: [X hours]\n- Delivery: [X hours]\n- Revisions: [X hours]\n- Total: [X hours for $Y revenue = $Z/hour]\n\n5. THE TECH STACK\n\nEssential tools (total cost: $X/month):\n\n**AI Tools:**\n- Writing: [Tool name] - $X/mo - Used for: [specific tasks]\n- Design: [Tool name] - $X/mo - Used for: [specific tasks]\n- Research: [Tool name] - $X/mo - Used for: [specific tasks]\n- Automation: [Tool name] - $X/mo - Used for: [specific tasks]\n\n**Business Tools:**\n- Payment processing: [Stripe, etc.]\n- Scheduling: [Calendly, etc.]\n- Contracts: [PandaDoc, etc.]\n- Email: [ConvertKit, etc.]\n- Project management: [Notion, etc.]\n\n**Total Monthly Overhead:** $X\n**Break-even:** [X clients at $Y each]\n\n6. PRICING & POSITIONING\n\n**The Pricing Ladder:**\n\nTier 1 - Entry Offer: $X\n- What's included: [scope]\n- Delivery time: [timeline]\n- Client type: [who buys this]\n- Your time: [hours]\n\nTier 2 - Core Offer: $X\n- What's included: [scope]\n- Delivery time: [timeline]\n- Client type: [who buys this]\n- Your time: [hours]\n\nTier 3 - Premium: $X\n- What's included: [scope]\n- Delivery time: [timeline]\n- Client type: [who buys this]\n- Your time: [hours]\n\n**Revenue Math:**\n- 5 clients at Tier 1 = $X/mo\n- 8 clients at Tier 2 = $X/mo\n- 2 clients at Tier 3 = $X/mo\n- Total = $X/mo = $X/year\n\n**Positioning Statement:**\n\"I help [specific audience] achieve [specific outcome] in [specific timeframe] without [specific pain point they want to avoid].\"\n\nMine: [Write my exact positioning]\n\n7. THE 90-DAY LAUNCH PLAN\n\n**Week 1-2: BUILD**\n- Day 1-3: Finalize offer + pricing\n- Day 4-7: Set up tech stack + payment\n- Day 8-10: Create service delivery templates\n- Day 11-14: Build portfolio/proof (even if mock projects)\n\n**Week 3-6: VALIDATE**\n- Outreach volume: [X per day]\n- Goal: 3-5 paying clients\n- Price: [Can be discounted for testimonials]\n- Focus: Delivery excellence + case studies\n\n**Week 7-10: SCALE**\n- Launch content engine (AI-assisted)\n- Post: [X times per week on Y platform]\n- Continue outbound: [X per day]\n- Goal: 8-10 total clients\n\n**Week 11-12: SYSTEMATIZE**\n- Document AI workflows (SOPs)\n- Refine prompts based on what worked\n- Build email list from content\n- Create referral incentive\n\n**Week 13+: OPTIMIZE**\n- Raise prices 20-30%\n- Focus on Tier 2 + 3 clients\n- Turn down low-margin work\n- Goal: $10K/month stable\n\n8. WHAT KILLS ONE-PERSON BUSINESSES\n\n**Avoid These Traps:**\n\nTrap #1: Scope creep\n- What it looks like: [example]\n- How to prevent: [boundaries]\n\nTrap #2: Underpricing\n- What it looks like: [example]\n- How to prevent: [pricing discipline]\n\nTrap #3: Custom everything\n- What it looks like: [example]\n- How to prevent: [productization]\n\nTrap #4: Bad clients\n- What it looks like: [red flags]\n- How to prevent: [qualification process]\n\nTrap #5: Overcomplicating\n- What it looks like: [example]\n- How to prevent: [simplification rule]\n\n9. THE AI PROMPT VAULT\n\nGive me these ready-to-use prompts:\n\n**Business Strategy:**\n- Niche validator: [Prompt that pressure-tests my idea]\n- Competitor analyzer: [Prompt that finds positioning gaps]\n- Pricing calculator: [Prompt that determines optimal price]\n\n**Client Acquisition:**\n- Outreach message: [Prompt for personalized cold DMs]\n- Content generator: [Prompt for daily posts]\n- Email sequences: [Prompt for automated follow-up]\n\n**Service Delivery:**\n- [Service-specific prompts based on my business model]\n- Quality checklist: [Prompt that reviews AI output]\n- Client communication: [Prompt for updates/reports]\n\n**Operations:**\n- SOPs creator: [Prompt that documents processes]\n- Time tracker: [Prompt for productivity analysis]\n- Financial projector: [Prompt for revenue forecasting]\n\n10. THE REALITY CHECK\n\n**Honest Assessment:**\n\nWhat will actually happen:\n- Month 1: [realistic outcome]\n- Month 3: [realistic outcome]\n- Month 6: [realistic outcome]\n- Month 12: [realistic outcome]\n\nTime investment reality:\n- Building phase: [X hours/week]\n- Client delivery: [X hours/week per client]\n- Marketing/sales: [X hours/week]\n- Total: [X hours/week at capacity]\n\nWhat you're underestimating:\n- [Common blindspot #1]\n- [Common blindspot #2]\n- [Common blindspot #3]\n\nWhat will be harder than expected:\n- [Specific challenge]\n- [Specific challenge]\n- [Specific challenge]\n\nWhen to pivot vs. persist:\n- Pivot if: [specific signals]\n- Persist if: [specific signals]\n\n**The Single Most Important Thing:**\n[The one action that matters more than everything else]\n\nYOUR OUTPUT MUST INCLUDE:\n- Exact business model for MY situation\n- Exact offer with pricing\n- Exact client acquisition process\n- Exact AI tools + prompts\n- Exact 90-day roadmap\n- Exact revenue math\n- Exact time investment per client\n\nNO THEORY. ONLY EXECUTABLE SYSTEMS.\n\nMY SITUATION:\n- Skills: [list]\n- Capital: [$]\n- Time: [hours/week]\n- Background: [experience]\n- Goal timeline: [when I need $100K/year]\n- Risk tolerance: [low/medium/high]\n\nBUILD ME THE $100K ONE-PERSON BUSINESS BLUEPRINT.",
+      "user": "alex_prompter",
+      "display_name": "Alex Prompter",
+      "full_text": "이게 현실임 \n미국은 거의 모든집이 수입이 들어오지않으면 3개월 버티기 힘듬\n잘 생각해보자\n올해부터 본격적으로 AI혁명이 일어나서 실업자 생기기 시작할거야 \n그런데 그 실업자가 대부분 고소득자야. \n그들이 소유한 집들도 다 비싼거들이야.  \n그리고 6개월이면 못버티고 끝나. \n그런 집들이",
       "media": [
         "https://wsrv.nl/?url=https://pbs.twimg.com/media/HAijKDaacAEF0vo.jpg"
       ],
       "timestamp": "2026-02-07 07:55:54",
       "date": "2026-02-07",
-      "url": "https://x.com/None/status/2020043830725431346",
+      "url": "https://x.com/alex_prompter/status/2020043830725431346",
       "sns_platform": "x",
-      "conversation_id": "2020043830725431346",
+      "source": "full_thread_scan",
+      "is_detail_collected": true,
       "local_images": [
         "web_viewer/images/951932bd2418610d69dd2aeccdd8ee55.jpg"
       ],
@@ -6872,27 +6886,35 @@
       "id": "2020141406707187789",
       "user": "AIPandaX",
       "display_name": "AI Panda",
-      "body": "NOTEBOOKLM FULL COURSE 4 HOURS:",
-      "media": [],
+      "full_text": "이게 현실임 \n미국은 거의 모든집이 수입이 들어오지않으면 3개월 버티기 힘듬\n잘 생각해보자\n올해부터 본격적으로 AI혁명이 일어나서 실업자 생기기 시작할거야 \n그런데 그 실업자가 대부분 고소득자야. \n그들이 소유한 집들도 다 비싼거들이야.  \n그리고 6개월이면 못버티고 끝나. \n그런 집들이",
+      "media": [
+        "https://wsrv.nl/?url=https://pbs.twimg.com/amplify_video_thumb/2018660022516142081/img/b8OaQw6w5URCRMkD.jpg"
+      ],
       "timestamp": "2026-02-07 14:23:38",
       "date": "2026-02-07",
       "url": "https://x.com/AIPandaX/status/2020141406707187789",
       "sns_platform": "x",
+      "source": "full_thread_scan",
+      "is_detail_collected": true,
+      "local_images": [
+        "web_viewer/images/0aed5e662ef7afc20ab232b58ed48d57.jpg"
+      ],
       "sequence_id": 401
     },
     {
       "id": "2020150460762714423",
-      "user": null,
-      "display_name": null,
-      "body": "Holy sh*t.\n\nGemini can now produce fully interactive images on any topic.\n\nSuch an insane resource for learning → highlight any region, and it gives you a full explanation 🤯 https://t.co/zbVsVp6OkL",
+      "user": "DataChaz",
+      "display_name": "Charly Wargnier",
+      "full_text": "이게 현실임 \n미국은 거의 모든집이 수입이 들어오지않으면 3개월 버티기 힘듬\n잘 생각해보자\n올해부터 본격적으로 AI혁명이 일어나서 실업자 생기기 시작할거야 \n그런데 그 실업자가 대부분 고소득자야. \n그들이 소유한 집들도 다 비싼거들이야.  \n그리고 6개월이면 못버티고 끝나. \n그런 집들이",
       "media": [
         "https://wsrv.nl/?url=https://pbs.twimg.com/amplify_video_thumb/2020150406362673152/img/Hk0Qfjjt29gRIjcd.jpg"
       ],
       "timestamp": "2026-02-07 14:59:37",
       "date": "2026-02-07",
-      "url": "https://x.com/None/status/2020150460762714423",
+      "url": "https://x.com/DataChaz/status/2020150460762714423",
       "sns_platform": "x",
-      "conversation_id": "2020150460762714423",
+      "source": "full_thread_scan",
+      "is_detail_collected": true,
       "local_images": [
         "web_viewer/images/e15f9099ac46fe920923dcdfc2cf0aa1.jpg"
       ],
@@ -6902,20 +6924,20 @@
       "id": "2020151597398126813",
       "user": "lucas_flatwhite",
       "display_name": "lucas",
-      "body": "Claude Code 플랜 모드를 위한 체계적인 프롬프트\n> Y Combinator Garry Tan\n\n저도 Plan Mode를 매우 좋아하는데 Garry Tan 버전이 공유되었네요.\n\n한국어 버전 바로 참고하고 싶으신 분들에게..\n\nhttps://\ndocs.google.com/document/d/1PR\nKGW10Aqi3vfPOPOQrKbOBcquMtaxhXUmGT2r5NJ3k/view\n…\n\n코딩 전에 철저한 계획과 리뷰를 강제하는 게 핵심입니다. 꼭 Claude",
+      "full_text": "이게 현실임 \n미국은 거의 모든집이 수입이 들어오지않으면 3개월 버티기 힘듬\n잘 생각해보자\n올해부터 본격적으로 AI혁명이 일어나서 실업자 생기기 시작할거야 \n그런데 그 실업자가 대부분 고소득자야. \n그들이 소유한 집들도 다 비싼거들이야.  \n그리고 6개월이면 못버티고 끝나. \n그런 집들이",
       "media": [
-        "https://wsrv.nl/?url=https://pbs.twimg.com/media/HAkFJFOacAY8WV4?format=png&name=360x360",
-        "https://wsrv.nl/?url=https://pbs.twimg.com/media/HAkFJFObMAEYWak?format=png&name=360x360",
-        "https://wsrv.nl/?url=https://pbs.twimg.com/media/HAi8yN8acAAcxwH?format=jpg&name=120x120"
+        "https://wsrv.nl/?url=https://pbs.twimg.com/media/HAkFJFOacAY8WV4.png",
+        "https://wsrv.nl/?url=https://pbs.twimg.com/media/HAkFJFObMAEYWak.png"
       ],
       "timestamp": "2026-02-07 15:04:08",
       "date": "2026-02-07",
       "url": "https://x.com/lucas_flatwhite/status/2020151597398126813",
       "sns_platform": "x",
+      "source": "full_thread_scan",
+      "is_detail_collected": true,
       "local_images": [
-        "web_viewer/images/8b1b2b2d4f6b7059af3239a3a69fdce2.jpg",
-        "web_viewer/images/1f2de392bb2470ef1f6626b5805eddb3.jpg",
-        "web_viewer/images/63957dc11754da365efa95aa93e9365e.jpg"
+        "web_viewer/images/d858310c93e7a0a514476a2212f956dd.png",
+        "web_viewer/images/992f4b6d0fbf40c15d7b4b99e0d867fa.png"
       ],
       "sequence_id": 403
     },
@@ -6984,17 +7006,18 @@
     },
     {
       "id": "2020257771464093965",
-      "user": null,
-      "display_name": null,
-      "full_text": "구글이 2012년부터 2년간 180개 팀을 해부했다.\n250개 이상의 변수를 분석했다.\n코드명: 프로젝트 아리스토텔레스.\n\n질문은 단순했다.\n\"왜 어떤 팀은 성과를 내고, 어떤 팀은 망하는가?\"\n\n처음엔 당연한 답을 예상했다.\n\n똑똑한 사람들을 모으면 되겠지.\n학력, 경력, 기술 스택이 좋으면 되겠지.\n\n하지만 데이터는 정반대를 말했다. 팀의 \"구성\"은 거의 중요하지 않았다.\n팀이 \"어떻게 함께 일하는가\"가 전부였다. (사실 같은 회사에 들어왔으면, 진짜 특출난 사람 몇명을 제외하고는 평균적인 실력이 유사하다)\n\n성과를 가장 잘 예측할 수 있는 지표는 \"심리적 안전감(Psychological Safety)\"이었다.\n\n\"팀 내에서 대인관계적 위험을 감수해도 안전하다는 공유된 믿음.\"\n\n쉽게 말하면? \"바보 같은 질문을 해도, 실수를 인정해도, 반대 의견을 말해도, 이 팀이 나를 비웃거나 처벌하지 않을 것\"이라는 확신의 정도이다. (실제 많은 회사에서 혼날까봐 반대도 안하고, 잘못도 숨기는 경우가 많다..)\n\n구글의 데이터는 놀라웠다.\n\n심리적 안전감이 높은 팀은:\n- 이직률이 낮았다\n- 더 다양한 아이디어를 활용했다\n- 더 많은 매출을 올렸다\n- 경영진에게 \"효과적\"으로 평가받을 확률이 2배였다\n\n하버드 교수의 병원 연구가 이걸 설명한다.\n\n- 심리적 안전감이 높은 병동은 실수를 \"더 많이\" 보고했다.\n아마도 실제 다른 병동보다 실수가 많아서가 아니라, 보고해도 안전하니까 말한 것일 거다.. 그래서 더 빨리 배우고, 더 빨리 개선했다.\n\n반면 안전감이 낮은 병동은?\n실수를 숨겼다. 나중에 크게 터지고 불신이 쌓이고 성과가 떨어져 갔다..\n\n조직이 망하는 건 \"실수\" 때문이 아니다.\n실수를 숨기게 만드는 \"두려움\" 때문이다.\n\n회의 시간에 모두가 조용하다면?\n동의하는 게 아니다. 불안해하는 것이다.\n\n하지만 심리적 안전감은 \"친절함\"과 다르다.\n\n친절한 팀은 갈등을 피한다.\n\"이 말 하면 분위기 깨지겠지?\" 하며 삼킨다.\n\n심리적으로 안전한 팀은 \"솔직함\"을 무기로 쓴다.\n\"팀장님, 그 데이터 틀린 것 같습니다.\"\n\"제가 실수했습니다. 도와주세요.\"\n\n둘의 차이는 \"책임감\"이 있느냐 없느냐다.\n✅ 안전감 + 책임감 = 고성과 팀.\n🤔 안전감 - 책임감 = 컴포트 존.\n\n\"불확실하고 상호의존적인 환경에서, 솔직하게 말하고 도움을 요청할 수 없다면, 일이 되지 않는다.\"\n\n일터에서 가장 큰 복지는 간식이나 휴가가 아니다.\"무슨 말을 해도 안전하다\"는 느낌이다.\n\n그게 없으면, 아무리 똑똑한 사람을 모아도 소용없다.\n\n내가 리더가 되더라도 항상 반대를 받을 용기를 가져야 한다. 내가 아래에 있을 때도 스스로 주관을 가지고 열심히 의견을 말하고 기여해야 한다.",
+      "user": "block_atom",
+      "display_name": "호랭교관",
+      "full_text": "이게 현실임 \n미국은 거의 모든집이 수입이 들어오지않으면 3개월 버티기 힘듬\n잘 생각해보자\n올해부터 본격적으로 AI혁명이 일어나서 실업자 생기기 시작할거야 \n그런데 그 실업자가 대부분 고소득자야. \n그들이 소유한 집들도 다 비싼거들이야.  \n그리고 6개월이면 못버티고 끝나. \n그런 집들이",
       "media": [
         "https://wsrv.nl/?url=https://pbs.twimg.com/media/HAllvIeW8AEAIVO.jpg"
       ],
       "timestamp": "2026-02-07 22:06:01",
       "date": "2026-02-07",
-      "url": "https://x.com/None/status/2020257771464093965",
+      "url": "https://x.com/block_atom/status/2020257771464093965",
       "sns_platform": "x",
-      "conversation_id": "2020257771464093965",
+      "source": "full_thread_scan",
+      "is_detail_collected": true,
       "local_images": [
         "web_viewer/images/f012698d5fb6b731a6304d0dc5088a71.jpg"
       ],
@@ -7018,30 +7041,32 @@
     },
     {
       "id": "2020286419051393451",
-      "user": null,
-      "display_name": null,
-      "full_text": "데이브 리: 지난 24시간 동안 OpenClaw를 세팅하고 실제로 쓸모 있게 만드는 데 시간을 썼다.\n\nAI 비서가 내 Mac에서 상주하면서 iMessage, 웹 브라우저, 전화 통화와 연결됨\n\n자동 음성 통화 구축 완료 — OpenAI의 실시간 음성 API를 Twilio로 연결해 식당에 전화를 걸고, 실제 사람처럼 말하며, 음성사서함이면 바로 끊도록 설정함 (이걸 제대로 작동시키는 데 정말 오래 걸림)\n\n댈러스, 휴스턴, 피닉스, 시애틀, 새크라멘토 5개 도시에서 한식·베트남 음식점 80곳 이상에 전화해서 MSG 사용 여부와 진짜 사골 육수 사용 여부를 질문함\n\n일론 머스크의 트윗 중 테슬라 관련 내용을 스캔하는 모니터와, 댈러스 오픈 테니스 일정 추적 시스템을 설정했고, 모두 문자로 알림이 오도록 구성함\n\n식당, 액티비티, 테니스 코트, 트레이딩 전략, 비디오게임 카탈로그 등 100개가 넘는 상세 PDF 가이드를 생성함\n\nDick’s Sporting Goods에 전화해 3성 탁구공 재고를 물어보고, 아케이드에 전화해 DanceRush Stardom 기기 여부를 확인함\n\n구글 지도 스크린샷, 위성 뷰, 실제 사진을 자동으로 수집·삽입해서 웹 검색보다 더 나은 사진 중심 PDF 가이드 시스템을 구축함\n\nElevenLabs 음악 생성 기능을 연동해서, 아들을 위한 맞춤형 탁구 힙합 앤섬을 즉석에서 만들어줌\n\n이 모든 것이 API 키 외에는 별도의 클라우드 인프라 없이, MacBook Air 한 대에서 돌아가고 있다.\n\n결론: 놀랄 만큼, 정말 매우 유용하다. 미래는 진짜 미쳐갈 것 같다.\n물론 아직 AI 모델에는 큰 한계와 부족함이 있고, 실수도 해서 답답할 때가 있다.\n그럼에도 작업을 스케줄링하고, 커뮤니케이션을 보내고, 메모리를 로컬에 유지하는 AI 에이전트를 갖는 건 완전히 게임 체인저다.\n게다가 내 데스크톱에 파일을 직접 저장해주는 것도 꽤 멋지다.",
+      "user": "ohmahahm",
+      "display_name": "Oh Hahm Ma",
+      "full_text": "I spent the past 24 hours setting up OpenClaw and making it useful.\n\n- AI assistant lives on my Mac and connects to iMessage, a web browser, and phone calls\n\n- Set up automated voice calling — calls restaurants using OpenAI's realtime voice API through Twilio, sounds like a real person, and hangs up on voicemails (this took a very long time to get working well)\n\n-  Had it call 80+ Korean and Pho restaurants across 5 cities (Dallas, Houston, Phoenix, Seattle, Sacramento) asking about MSG and real bone broth\n\n- Set up monitors that check scan Elon's tweets for Tesla-relevant posts, and track the Dallas Open tennis schedule — all alerting me via text\n\n- Generated 100+ detailed PDF guides — restaurants, activities, tennis courts, trading strategies, even a video games catalog\n\n- Had it call Dick's Sporting Goods asking about 3-star table tennis balls and call arcades asking about DanceRush Stardom\n\n- Had it build a photo-rich PDF system that screenshots Google Maps, grabs satellite views, embeds real photos, and creates guides better than a web search\n\n- Integrated ElevenLabs music generation — it made my son a custom table tennis hip hop anthem on demand\n\nAll running on a MacBook Air with zero cloud infrastructure beyond API keys.\n\nMy conclusion: surprisingly very, very useful.  The future is going to be wild.  There’s still major limitations and shortcomings of the AI models and it still makes mistakes which can be frustrating.  But it’s a game-changer having an AI agent able to schedule tasks, send communication, and keep memory local.  Also, very neat to have it save files on my desktop.",
       "media": [],
       "timestamp": "2026-02-07 23:59:52",
       "date": "2026-02-07",
-      "url": "https://x.com/None/status/2020286419051393451",
+      "url": "https://x.com/ohmahahm/status/2020286419051393451",
       "sns_platform": "x",
-      "conversation_id": "2020286419051393451",
+      "source": "full_thread_scan",
+      "is_detail_collected": true,
       "sequence_id": 409
     },
     {
       "id": "2020288470561038812",
-      "user": null,
-      "display_name": null,
-      "full_text": "GPT 5.2       vs.     Gemini 3 Pro   \nKimi 2.5       vs.     Opus 4.6\n\nPrompt I used:\n\"Build a first-person downhill skiing simulation in a single HTML file. The 'skier' must automatically accelerate to 93 mph within 10 seconds. As the speed increases, the edges of the screen must 'blur' and the camera must vibrate realistically to simulate the extreme speed of an Olympic run.\"",
+      "user": "godofprompt",
+      "display_name": "God of Prompt",
+      "full_text": "이게 현실임 \n미국은 거의 모든집이 수입이 들어오지않으면 3개월 버티기 힘듬\n잘 생각해보자\n올해부터 본격적으로 AI혁명이 일어나서 실업자 생기기 시작할거야 \n그런데 그 실업자가 대부분 고소득자야. \n그들이 소유한 집들도 다 비싼거들이야.  \n그리고 6개월이면 못버티고 끝나. \n그런 집들이",
       "media": [
         "https://wsrv.nl/?url=https://pbs.twimg.com/amplify_video_thumb/2020288376117575680/img/ajuySAx11ZoUNuhn.jpg"
       ],
       "timestamp": "2026-02-08 00:08:01",
       "date": "2026-02-08",
-      "url": "https://x.com/None/status/2020288470561038812",
+      "url": "https://x.com/godofprompt/status/2020288470561038812",
       "sns_platform": "x",
-      "conversation_id": "2020288470561038812",
+      "source": "full_thread_scan",
+      "is_detail_collected": true,
       "local_images": [
         "web_viewer/images/fb821d2045e21035879721eccf6cadab.jpg"
       ],
@@ -7049,17 +7074,18 @@
     },
     {
       "id": "2020310874033123592",
-      "user": null,
-      "display_name": null,
-      "full_text": "Claude Code 에이전트 팀 만들어서 운영 테스트 해보려고 합니다 ㅎㅎ\n이것도 AI 돌리는 가격이 싸지고, 성능 또한 좋아질테니 나중에는 정말로 슈퍼맨이 될지도 모르겠습니다. https://t.co/CZBqSx9NzG",
+      "user": "gimhyeo02389130",
+      "display_name": "프로그래밍좀비",
+      "full_text": "이게 현실임 \n미국은 거의 모든집이 수입이 들어오지않으면 3개월 버티기 힘듬\n잘 생각해보자\n올해부터 본격적으로 AI혁명이 일어나서 실업자 생기기 시작할거야 \n그런데 그 실업자가 대부분 고소득자야. \n그들이 소유한 집들도 다 비싼거들이야.  \n그리고 6개월이면 못버티고 끝나. \n그런 집들이",
       "media": [
         "https://wsrv.nl/?url=https://pbs.twimg.com/media/HAmV5m7acAMfZ3Z.jpg"
       ],
       "timestamp": "2026-02-08 01:37:02",
       "date": "2026-02-08",
-      "url": "https://x.com/None/status/2020310874033123592",
+      "url": "https://x.com/gimhyeo02389130/status/2020310874033123592",
       "sns_platform": "x",
-      "conversation_id": "2020310874033123592",
+      "source": "full_thread_scan",
+      "is_detail_collected": true,
       "local_images": [
         "web_viewer/images/f16e10278a37d7543dde6bf3c1b8dd69.jpg"
       ],
@@ -7069,16 +7095,18 @@
       "id": "2020328486729089356",
       "user": "block_atom",
       "display_name": "호랭교관",
-      "body": "MIT에서 54명을 대상으로 4개월간 실험을 했다.\n\n세 그룹으로 나눴다:\n1) ChatGPT 사용 그룹\n2) 검색 엔진만 사용 그룹\n3) 아무 도구 없이 뇌만 사용 그룹\n\n세 차례 에세이를 쓰게 하고, 뇌파(EEG)를 측정했다.\n\n결과는? AI를 쓴 그룹은 기억, 창의성, 자기 인식과 관련된 뇌 영역의 활동이 현저히",
+      "full_text": "이게 현실임 \n미국은 거의 모든집이 수입이 들어오지않으면 3개월 버티기 힘듬\n잘 생각해보자\n올해부터 본격적으로 AI혁명이 일어나서 실업자 생기기 시작할거야 \n그런데 그 실업자가 대부분 고소득자야. \n그들이 소유한 집들도 다 비싼거들이야.  \n그리고 6개월이면 못버티고 끝나. \n그런 집들이",
       "media": [
-        "https://wsrv.nl/?url=https://pbs.twimg.com/media/HAmmDVqX0AAAOi8?format=jpg&name=small"
+        "https://wsrv.nl/?url=https://pbs.twimg.com/media/HAmmDVqX0AAAOi8.jpg"
       ],
       "timestamp": "2026-02-08 02:47:01",
       "date": "2026-02-08",
       "url": "https://x.com/block_atom/status/2020328486729089356",
       "sns_platform": "x",
+      "source": "full_thread_scan",
+      "is_detail_collected": true,
       "local_images": [
-        "web_viewer/images/853df753c308261889d862ca03a770b9.jpg"
+        "web_viewer/images/3c2d6c298dd684e5a38e9bcee89ba760.jpg"
       ],
       "sequence_id": 412
     },
@@ -7086,18 +7114,22 @@
       "id": "2020376809607455055",
       "user": "lucas_flatwhite",
       "display_name": "lucas",
-      "body": "투자 분석 에이전트 Dexter\n\nhttps://\ngithub.com/virattt/dexter\n\n저도 이걸로 투자 아이디어를 얻을 수 있겠네요! 매우 반가운 시도네요! 이 프로젝트 관심이 엄청나게 많이 올라가고 있네요.\n\n\"금융\"이라는 도메인과 \"에이전트\"가 만났을 때 굉장한 시너지가 나오네요. 오픈소스!\n\n우리가 코딩할 때 Claude",
+      "full_text": "이게 현실임 \n미국은 거의 모든집이 수입이 들어오지않으면 3개월 버티기 힘듬\n잘 생각해보자\n올해부터 본격적으로 AI혁명이 일어나서 실업자 생기기 시작할거야 \n그런데 그 실업자가 대부분 고소득자야. \n그들이 소유한 집들도 다 비싼거들이야.  \n그리고 6개월이면 못버티고 끝나. \n그런 집들이",
       "media": [
-        "https://wsrv.nl/?url=https://pbs.twimg.com/media/HAnRqqmasAA1XdZ?format=jpg&name=360x360",
-        "https://wsrv.nl/?url=https://pbs.twimg.com/media/HAnRqqhacAQdV5J?format=jpg&name=360x360"
+        "https://wsrv.nl/?url=https://pbs.twimg.com/amplify_video_thumb/2020376438835396608/img/AIWYd6ggsyVE34wL.jpg",
+        "https://wsrv.nl/?url=https://pbs.twimg.com/media/HAnRqqhacAQdV5J.jpg",
+        "https://wsrv.nl/?url=https://pbs.twimg.com/media/HAnRqqmasAA1XdZ.jpg"
       ],
       "timestamp": "2026-02-08 05:59:02",
       "date": "2026-02-08",
       "url": "https://x.com/lucas_flatwhite/status/2020376809607455055",
       "sns_platform": "x",
+      "source": "full_thread_scan",
+      "is_detail_collected": true,
       "local_images": [
-        "web_viewer/images/af853cfa12082717d1843538b2c4751a.jpg",
-        "web_viewer/images/cb4da265479f08bce668e885a47f273d.jpg"
+        "web_viewer/images/802a69229066096165d95776211a3706.jpg",
+        "web_viewer/images/975f63a58e7c7fc82ab7c08903b31b41.jpg",
+        "web_viewer/images/b26bd71282ca75a77a2644b645e5ed90.jpg"
       ],
       "sequence_id": 413
     },
@@ -7124,17 +7156,18 @@
     },
     {
       "id": "2020450735918284843",
-      "user": null,
-      "display_name": null,
-      "full_text": "Claude가 PPT 만드다옹!\n\n파워포인트 열어서 추가 기능\n↓\nClaude by Anthropic 설치\n↓\n사이드바에서 Opus 4.6\n↓\n데이터 업로드 (Excel, CSV 등 뭐든지)\n↓\n\"이걸 프레젠테이션으로 만들어줘\"\n↓\n잠시 기다리면? 끝.. ✨\nhttps://t.co/NUoRSkySLJ",
+      "user": "lucas_flatwhite",
+      "display_name": "lucas",
+      "full_text": "이게 현실임 \n미국은 거의 모든집이 수입이 들어오지않으면 3개월 버티기 힘듬\n잘 생각해보자\n올해부터 본격적으로 AI혁명이 일어나서 실업자 생기기 시작할거야 \n그런데 그 실업자가 대부분 고소득자야. \n그들이 소유한 집들도 다 비싼거들이야.  \n그리고 6개월이면 못버티고 끝나. \n그런 집들이",
       "media": [
         "https://wsrv.nl/?url=https://pbs.twimg.com/ext_tw_video_thumb/2020193704166780928/pu/img/I998scFd8MB4Rlw8.jpg"
       ],
       "timestamp": "2026-02-08 10:52:48",
       "date": "2026-02-08",
-      "url": "https://x.com/None/status/2020450735918284843",
+      "url": "https://x.com/lucas_flatwhite/status/2020450735918284843",
       "sns_platform": "x",
-      "conversation_id": "2020450735918284843",
+      "source": "full_thread_scan",
+      "is_detail_collected": true,
       "local_images": [
         "web_viewer/images/db1d820a96d5fefd7bf95c0629744fb1.jpg"
       ],
@@ -7224,17 +7257,19 @@
     },
     {
       "id": "2020867240753819983",
-      "user": null,
-      "display_name": null,
-      "full_text": "Google just killed the document extraction industry.\n\nLangExtract: Open-source. Free. Better than $50K enterprise tools.\n\nWhat it does:\n→ Extracts structured data from unstructured text\n→ Maps EVERY entity to its exact source location\n→ Handles 100+ page documents with high recall\n→ Generates interactive HTML for verification\n→ Works with Gemini, Ollama, local models\n\nWhat it replaces:\n→ Regex pattern matching\n→ Custom NER pipelines\n→ Expensive extraction APIs\n→ Manual data entry\n\nDefine your task with a few examples.\nPoint it at any document.\nGet structured, verifiable results.\n\nNo fine-tuning. No complex setup.\n\nClinical notes, legal docs, financial reports, same library.\n\nThis is what open-source from Google looks like.",
+      "user": "techNmak",
+      "display_name": "Tech with Mak",
+      "full_text": "Google just killed the document extraction industry.\n\nLangExtract: Open-source. Free. Better than $50K enterprise tools.\n\nWhat it does:\n→ Extracts structured data from unstructured text\n→ Maps EVERY entity to its exact source location\n→ Handles 100+ page documents with high recall\n→ Generates interactive HTML for verification\n→ Works with Gemini, Ollama, local models\n\nWhat it replaces:\n→ Regex pattern matching\n→ Custom NER pipelines\n→ Expensive extraction APIs\n→ Manual data entry\n\nDefine your task with a few examples.\nPoint it at any document.\nGet structured, verifiable results.\n\nNo fine-tuning. No complex setup.\n\nClinical notes, legal docs, financial reports, same library.\n\nThis is what open-source from Google looks like.\n\n---\n\nHere's the GitHub:",
       "media": [
+        "https://wsrv.nl/?url=https://pbs.twimg.com/media/HAuP19IacAInFOb",
         "https://wsrv.nl/?url=https://pbs.twimg.com/media/HAuP19IacAInFOb.jpg"
       ],
       "timestamp": "2026-02-09 14:27:50",
       "date": "2026-02-09",
-      "url": "https://x.com/None/status/2020867240753819983",
+      "url": "https://x.com/techNmak/status/2020867240753819983",
       "sns_platform": "x",
-      "conversation_id": "2020867240753819983",
+      "source": "full_thread_scan",
+      "is_detail_collected": true,
       "local_images": [
         "web_viewer/images/3c93f1b5c714fa50fce8b1bfac417f12.jpg"
       ],
@@ -7293,37 +7328,40 @@
     },
     {
       "id": "2021084481604771937",
-      "user": null,
-      "display_name": null,
-      "full_text": "Claude Code /handover 커스텀 명령어 아이디어\n\n좋은 생각이네요! 세션 간 컨텍스트를 보존하기 위한 커스텀 명령어..\n\n세션 중 언제든 이 명령어를 입력하면, Claude가 그동안의 작업 내용을 분석하여 https://t.co/JPZj4yEMLW 파일을 생성한다아!\n\n이런 식으로 만들면 필요할 때 쓸 수 있고, 이후에도 활용할 수 있으니까 괜찮은 아이디어 같군요?!\n\n핸드오버 문서에 포함되는 내용들은 이정도면 강력할 듯!\n\n- 작업한 내용과 완료된 사항\n- 성공한 것과 실패한 것 (버그와 해결 방법 포함)\n- 주요 결정 사항과 그 이유\n- 배운 교훈과 주의사항\n- 명확한 다음 단계\n- 중요 파일 맵\n\n↓\n\n자동으로 생성하면 더 좋을 것 같군요.\n\nClaude Code가 메모리 부족으로 auto-compact을 시작하려 할 때 PreCompact 훅으로 자동으로 ㄱㄱ?\n\n1.대화 전체가 손상되지 않은 상태에서 전체 대화 기록을 읽자.\n\n2.새로운 Claude 인스턴스(claude -p)에 전송하여 핸드오버 요약 생성 지시하자.\n\n3.프로젝트 폴더에 https://t.co/AyVNxIhM4a 형식으로 저장하자.\n\n스크립트 만들어 놓고, 훅 설정해놔도 괜찮을 것 같네요.\n\n저렇게 마크다운 쌓이면 또 참고하거나 활용해보기도 좋구요. 이런 유저들의 아이디어 너무 좋네요!\n\n\"여기에는 결정 사항, 함정, 배운 교훈 등이 포함됩니다. 그래서 다음 세션의 Claude가 전체 컨텍스트를 가질 수 있습니다. 이건 기억상실을 방지하고 제도적 지식을 보존합니다.​\"\n- Zara Zhang",
+      "user": "lucas_flatwhite",
+      "display_name": "lucas",
+      "full_text": "Created a custom slash command \"/handover\" in Claude Code: When I'm ending a Claude session (e.g. context window filling up), I get Claude to generate a \"\nhttp://\nHANDOVER.md\" document which summarizes everything we did in this session, including decisions, pitfalls, lessons learned, etc. So the next session's Claude has full context. \n\nThis prevents amnesia and preserves institutional knowledge",
       "media": [
+        "https://wsrv.nl/?url=https://pbs.twimg.com/media/HAxVnrfaAAIFXce.jpg",
         "https://wsrv.nl/?url=https://pbs.twimg.com/media/HAxVnrZbIAAbDWD.jpg",
-        "https://wsrv.nl/?url=https://pbs.twimg.com/media/HAxVnrfaAAIFXce.jpg"
+        "https://wsrv.nl/?url=https://pbs.twimg.com/media/HAwBvUIaIAA1pMi"
       ],
       "timestamp": "2026-02-10 04:51:05",
       "date": "2026-02-10",
-      "url": "https://x.com/None/status/2021084481604771937",
+      "url": "https://x.com/lucas_flatwhite/status/2021084481604771937",
       "sns_platform": "x",
-      "conversation_id": "2021084481604771937",
+      "source": "full_thread_scan",
+      "is_detail_collected": true,
       "local_images": [
-        "web_viewer/images/98cb20dfd62c50d2160667d3f83b2689.jpg",
-        "web_viewer/images/2630fa34899084c99b78f9a6cc496702.jpg"
+        "web_viewer/images/2630fa34899084c99b78f9a6cc496702.jpg",
+        "web_viewer/images/98cb20dfd62c50d2160667d3f83b2689.jpg"
       ],
       "sequence_id": 425
     },
     {
       "id": "2021128641917354475",
-      "user": null,
-      "display_name": null,
-      "full_text": "If you need McKinsey-style slides, try this prompt:\n\nI asked Kimi to conduct a comprehensive analysis of the GenAI video model market, focusing on leading players (e.g., Seedance 2.0, Sora, Kling, Veo, Luma).\n\nMy prompt:\nConduct a comprehensive analysis of the GenAI video model market, focusing on leading players (e.g., Seedance 2.0, Kling, Veo, Luma). Compare their core architectures, temporal consistency, and prompt adherence to identify current industry benchmarks. Use the latest information\n\nRequirement:\nA professional, high-density consulting presentation slide, designed in the style of a top-tier strategy firm (McKinsey/BCG) blended with high-end editorial aesthetics.\n\nCore Content & Layout:\n1. Rich Data Visualization: The slide is populated with complex, precise charts (stacked bar charts, waterfall charts, or line graphs) and detailed data tables with rows and columns.\n2. Structured Frameworks: Includes strategic diagrams or 2x2 matrices constructed with thin, clean lines.\n3. High Information Density: The layout is sophisticated and multi-column, mimicking an actual business analysis deck, not just an empty cover page.\n\nVisual Style:\n1. Aesthetic: Tech-minimalist but information-heavy. Clean, sharp, and authoritative.\n2. Typography: Serif fonts (like Times New Roman) for the main headlines to give a premium financial report feel; clean Sans-serif for chart labels and data numbers.\n3. Color Palette: Clean white background. Text is sharp black. Charts and graphical accents use Deep Royal Blue and distinct shades of grey for data hierarchy.\n4. Graphics: Use fine hairline borders for tables and precise vector lines for graphs.",
+      "user": "crystalsssup",
+      "display_name": "Crystal",
+      "full_text": "이게 현실임 \n미국은 거의 모든집이 수입이 들어오지않으면 3개월 버티기 힘듬\n잘 생각해보자\n올해부터 본격적으로 AI혁명이 일어나서 실업자 생기기 시작할거야 \n그런데 그 실업자가 대부분 고소득자야. \n그들이 소유한 집들도 다 비싼거들이야.  \n그리고 6개월이면 못버티고 끝나. \n그런 집들이",
       "media": [
         "https://wsrv.nl/?url=https://pbs.twimg.com/amplify_video_thumb/2021128264513937408/img/rIMAQ6byxiZW9yS6.jpg"
       ],
       "timestamp": "2026-02-10 07:46:33",
       "date": "2026-02-10",
-      "url": "https://x.com/None/status/2021128641917354475",
+      "url": "https://x.com/crystalsssup/status/2021128641917354475",
       "sns_platform": "x",
-      "conversation_id": "2021128641917354475",
+      "source": "full_thread_scan",
+      "is_detail_collected": true,
       "local_images": [
         "web_viewer/images/ba0cc44e5c2b5e67572070a385bc5fe0.jpg"
       ],
@@ -7352,17 +7390,19 @@
     },
     {
       "id": "2021179767228354988",
-      "user": null,
-      "display_name": null,
-      "full_text": "R.I.P to every consulting firm charging $500/hr for a SWOT analysis.\n\nClaude Sonnet 4.5 just made you irrelevant.\n\nHere are 10 prompts that deliver McKinsey-level strategy in minutes (steal them now): https://t.co/kJPE9hDVRK",
+      "user": "aiwithjainam",
+      "display_name": "Jainam Parmar",
+      "full_text": "R.I.P to every consulting firm charging $500/hr for a SWOT analysis.\n\nClaude Sonnet 4.5 just made you irrelevant.\n\nHere are 10 prompts that deliver McKinsey-level strategy in minutes (steal them now):\n\n---\n\n1/ LITERATURE REVIEW SYNTHESIZER\n\nPrompt:\n\n\"Analyze these 20 research papers on [topic]. Create a gap analysis table showing: what's been studied, what's missing, contradictions between studies, and 3 unexplored opportunities.\"\n\nI fed Claude 47 papers on AI regulation.\n\nIt found gaps 3 human researchers missed.\n\n---\n\n2/ COMPETITIVE INTELLIGENCE SCANNER\n\nPrompt:\n\n\"Visit [competitor websites]. Extract: pricing tiers, feature comparisons, positioning strategy, target audience, and gaps in their offering we could exploit.\"\n\nSaved me 12 hours of manual competitive analysis.\n\nClaude even caught\n\n---\n\n3/ SURVEY DATA PATTERN FINDER\n\nPrompt:\n\n\"Analyze this 500-response survey. Find patterns nobody else will catch: non-obvious correlations, minority opinions worth exploring, gaps between what people say vs. what data shows.\"\n\nIt found 3 insights our data team missed.\n\nOne became\n\n---\n\n4/ ACADEMIC CITATION FORMATTER\n\nPrompt I use:\n\n\"Convert these rough research notes into properly formatted APA citations with 2-sentence context for each source explaining its relevance to [research question].\"\n\nThis alone saved 6 hours/week.\n\nNo more Citation Machine\n\n---\n\n5/ EXPERT INTERVIEW PREP GENERATOR\n\nPrompt:\n\n\"Based on [person's published research/articles], generate 15 expert-level questions for a 45-min interview. Include: technical depth questions, contrarian angles, and follow-ups that reveal insights.\"\n\nMy interviews got 3x better\n\n---\n\n6/ TRENDD FORECASTING ENGINE\n\nPrompt:\n\n\"Analyze these 50 articles from past 6 months on [industry]. Predict next 6-month trends with confidence scores (1-10). Include: what's peaking, what's emerging, what's dying, contrarian bets.\"\n\nThis one's genuinely scary good.\n\nPredicted 4\n\n---\n\n7/ RESEARCH GAP IDENTIFIER\n\nPrompt:\n\n\"Based on these [academic papers/industry reports], what's NOT being studied? What obvious questions are researchers avoiding? What would a contrarian researcher focus on?\"\n\nIt found a research gap that became my thesis topic.\n\n---\n\n8/ METHODOLOGY DESIGNER\n\nPrompt:\n\n\"Design a research methodology for [specific question]. Include: research design, sample size calculations, data collection methods, analysis approach, limitations, and timeline.\"\n\nI used this to design a study methodology in 20 minutes.",
       "media": [
+        "https://wsrv.nl/?url=https://pbs.twimg.com/media/HAysSXKaAAAfk9g",
         "https://wsrv.nl/?url=https://pbs.twimg.com/media/HAysSXKaAAAfk9g.jpg"
       ],
       "timestamp": "2026-02-10 11:09:42",
       "date": "2026-02-10",
-      "url": "https://x.com/None/status/2021179767228354988",
+      "url": "https://x.com/aiwithjainam/status/2021179767228354988",
       "sns_platform": "x",
-      "conversation_id": "2021179767228354988",
+      "source": "full_thread_scan",
+      "is_detail_collected": true,
       "local_images": [
         "web_viewer/images/c0508b3538daec429860f879e0f7682b.jpg"
       ],
@@ -7370,17 +7410,18 @@
     },
     {
       "id": "2021214042258374964",
-      "user": null,
-      "display_name": null,
-      "full_text": "📣 생산성 올리는 팁\n꼭 영상을 소리와 같이 들으세요!\n\nClaude Hooks에 소리 기능 추가해서, Claude가 작업을 완료하거나 권한이 필요할 때 알림을 보내도록 하세요ㅋㅋ\n\n\"스타크래프트, 워크래프트, 마리오처럼 어릴 적 좋아했던 게임 소리를 추가하는 거예요.\"\nhttps://t.co/gKH3BMG7K6",
+      "user": "lucas_flatwhite",
+      "display_name": "lucas",
+      "full_text": "이게 현실임 \n미국은 거의 모든집이 수입이 들어오지않으면 3개월 버티기 힘듬\n잘 생각해보자\n올해부터 본격적으로 AI혁명이 일어나서 실업자 생기기 시작할거야 \n그런데 그 실업자가 대부분 고소득자야. \n그들이 소유한 집들도 다 비싼거들이야.  \n그리고 6개월이면 못버티고 끝나. \n그런 집들이",
       "media": [
         "https://wsrv.nl/?url=https://pbs.twimg.com/amplify_video_thumb/2020514954856775680/img/16EGkRg2iqJQV4uB.jpg"
       ],
       "timestamp": "2026-02-10 13:25:54",
       "date": "2026-02-10",
-      "url": "https://x.com/None/status/2021214042258374964",
+      "url": "https://x.com/lucas_flatwhite/status/2021214042258374964",
       "sns_platform": "x",
-      "conversation_id": "2021214042258374964",
+      "source": "full_thread_scan",
+      "is_detail_collected": true,
       "local_images": [
         "web_viewer/images/17bc908f50c6075f7a39f39bd3f49cd8.jpg"
       ],
@@ -7403,17 +7444,19 @@
     },
     {
       "id": "2021233357514997824",
-      "user": null,
-      "display_name": null,
-      "full_text": "BREAKING: AI can now do market research like McKinsey (for free).\n\nHere are 12 insane Claude Opus 4.6 prompts that replace $5,000 consultant: (Save for later) https://t.co/P5rjoZxD4A",
+      "user": "socialwithaayan",
+      "display_name": "Muhammad Ayan",
+      "full_text": "BREAKING: AI can now do market research like McKinsey (for free).\n\nHere are 12 insane Claude Opus 4.6 prompts that replace $5,000 consultant: (Save for later)\n\n---\n\n1/ Market Sizing & TAM Analysis\n\nYou are a McKinsey-level market analyst. I need a Total Addressable Market (TAM) analysis for [YOUR INDUSTRY/PRODUCT].\n\nPlease provide:\n\n• Top-down approach: Start from global market → narrow to my segment\n• Bottom-up approach: Calculate from unit economics × potential customers\n• TAM, SAM, SOM breakdown with dollar figures\n• Growth rate projections for the next 5 years (CAGR)\n• Key assumptions behind each estimate\n• Comparison to 3 analyst reports or market research firms\n\nFormat as an investor-ready market sizing slide with clear methodology.\n\nContext: My product is [DESCRIBE PRODUCT], targeting [TARGET CUSTOMER] in [GEOGRAPHY].\n\n---\n\n2/ Competitive Landscape Deep Dive\n\nYou are a senior strategy consultant at Bain & Company. I need a complete competitive landscape analysis for [YOUR INDUSTRY].\n\nPlease provide:\n\n• Direct competitors: Top 10 players ranked by market share, revenue, and funding\n• Indirect\n\n---\n\n3/ Customer Persona & Segmentation\n\nYou are a world-class consumer research expert. I need deep customer personas for [YOUR PRODUCT/SERVICE].\n\nPlease build 4 detailed personas, each with:\n\n• Demographics: Age, income, education, location, job title\n• Psychographics: Values,\n\n---\n\n4/ Industry Trend Analysis\n\nYou are a senior analyst at Goldman Sachs Research. I need a comprehensive trend report for the [YOUR INDUSTRY] sector.\n\nPlease provide:\n\n• Macro trends: 5 global forces shaping this industry (economic, regulatory, technological, social,\n\n---\n\n5/ SWOT + Porter's Five Forces\n\nYou are a Harvard Business School strategy professor. I need a combined SWOT and Porter's Five Forces analysis for [YOUR COMPANY/PRODUCT].\n\nFor SWOT, provide:\n\n• Strengths: 7 internal advantages with evidence\n• Weaknesses: 7 internal limitations\n\n---\n\n6/ Pricing Strategy Analysis\n\nYou are a pricing strategy consultant who has worked with Fortune 500 companies. I need a comprehensive pricing analysis for [YOUR PRODUCT/SERVICE].\n\nPlease provide:\n\n• Competitor pricing audit: Map all competitor prices, tiers, and packaging\n•\n\n---\n\n7/ Go-To-Market Strategy\n\nYou are a Chief Strategy Officer who has launched 20+ products across B2B and B2C markets. I need a complete go-to-market plan for [YOUR PRODUCT].\n\nPlease provide:\n\n• Launch phasing: Pre-launch (60 days), Launch (week 1), Post-launch (90 days)\n•\n\n---\n\n8/ Customer Journey Mapping\n\nYou are a customer experience strategist at a top consulting firm. I need a complete customer journey map for [YOUR PRODUCT/SERVICE].\n\nPlease map every stage of the customer lifecycle:\n\n• Awareness: How do they first discover us? What triggers the",
       "media": [
+        "https://wsrv.nl/?url=https://pbs.twimg.com/media/HAzdBtpaAAAjn64",
         "https://wsrv.nl/?url=https://pbs.twimg.com/media/HAzdBtpaAAAjn64.png"
       ],
       "timestamp": "2026-02-10 14:42:39",
       "date": "2026-02-10",
-      "url": "https://x.com/None/status/2021233357514997824",
+      "url": "https://x.com/socialwithaayan/status/2021233357514997824",
       "sns_platform": "x",
-      "conversation_id": "2021233357514997824",
+      "source": "full_thread_scan",
+      "is_detail_collected": true,
       "local_images": [
         "web_viewer/images/fb5b828d21acefb13748d21fcf6797fd.png"
       ],
@@ -7421,17 +7464,19 @@
     },
     {
       "id": "2021244380607123492",
-      "user": null,
-      "display_name": null,
-      "full_text": "Wow.. you can now instantly turn any GitHub repo into AI-generated documentation, just by changing the URL.\n\nReplace “github” with “deepwiki” in any GitHub URL and you’ll see:\n\n→ Instant docs for any codebase\n→ Chat with it like a conversation\n\nhttps://t.co/PIMf2SJpKZ",
+      "user": "oliviscusAI",
+      "display_name": "Oliver Prompts",
+      "full_text": "Wow.. you can now instantly turn any GitHub repo into AI-generated documentation, just by changing the URL.\n\nReplace “github” with “deepwiki” in any GitHub URL and you’ll see:\n\n→ Instant docs for any codebase\n→ Chat with it like a conversation\n\n---\n\nIf you want more practical AI gems and use cases, join my free newsletter with daily tutorials and latest news in AI:\n\nhttp://\nsimplifyingai.co",
       "media": [
-        "https://wsrv.nl/?url=https://pbs.twimg.com/amplify_video_thumb/2020558668606103552/img/zWnipe0BFKDPKN3E.jpg"
+        "https://wsrv.nl/?url=https://pbs.twimg.com/amplify_video_thumb/2020558668606103552/img/zWnipe0BFKDPKN3E.jpg",
+        "https://wsrv.nl/?url=https://pbs.twimg.com/media/HAznDSHawAA6bWO"
       ],
       "timestamp": "2026-02-10 15:26:27",
       "date": "2026-02-10",
-      "url": "https://x.com/None/status/2021244380607123492",
+      "url": "https://x.com/oliviscusAI/status/2021244380607123492",
       "sns_platform": "x",
-      "conversation_id": "2021244380607123492",
+      "source": "full_thread_scan",
+      "is_detail_collected": true,
       "local_images": [
         "web_viewer/images/f270706472301114334a4b5201bfd184.jpg"
       ],
@@ -7527,30 +7572,32 @@
     },
     {
       "id": "2021397989986795983",
-      "user": null,
-      "display_name": null,
-      "full_text": "앤트로픽의 안전 책임자 : \"인류는 빠르게 멸종을 향해 달려가고 세상 모두가 그걸 원하니 나는 남은 시간 동안 시나 쓰면서 놀겠습니다.\"\n\n참고 : 앤트로픽의 시니어 안전 연구원 4명이 한 달 사이에 회사를 떠났습니다. (이 중 1명은 OpenAI로 이직, 나머지는 그냥 관뒀음)",
+      "user": "CurbsideCroaker",
+      "display_name": "중얼거리는 남자",
+      "full_text": "이게 현실임 \n미국은 거의 모든집이 수입이 들어오지않으면 3개월 버티기 힘듬\n잘 생각해보자\n올해부터 본격적으로 AI혁명이 일어나서 실업자 생기기 시작할거야 \n그런데 그 실업자가 대부분 고소득자야. \n그들이 소유한 집들도 다 비싼거들이야.  \n그리고 6개월이면 못버티고 끝나. \n그런 집들이",
       "media": [],
       "timestamp": "2026-02-11 01:36:51",
       "date": "2026-02-11",
-      "url": "https://x.com/None/status/2021397989986795983",
+      "url": "https://x.com/CurbsideCroaker/status/2021397989986795983",
       "sns_platform": "x",
-      "conversation_id": "2021397989986795983",
+      "source": "full_thread_scan",
+      "is_detail_collected": true,
       "sequence_id": 438
     },
     {
       "id": "2021428293145329990",
-      "user": null,
-      "display_name": null,
-      "full_text": "Oneshot Bloomberg-style stock market board by Kimi Agent.\nStocks, price action, and real-time context — all at your fingertip via terminal commands.\n\nAll you need is a prompt; Kimi handles the rest.\nhttps://t.co/j7pyMnv2Zj https://t.co/gH4Hm91wQP",
+      "user": "KimiProduct",
+      "display_name": "Kimi Product",
+      "full_text": "Oneshot Bloomberg-style stock market board by Kimi Agent.\nStocks, price action, and real-time context — all at your fingertip via terminal commands.\n\nAll you need is a prompt; Kimi handles the rest.\n\nhttps://\nlfz5j46hfz3hc.ok.kimi.link\n\n---\n\nPrompt:\nYou are an expert Frontend Developer and UI/UX Designer specializing in \"Financial Gothic\" and \"Brutalist\" aesthetics.  \nObjective: Build a single-page React application that mimics a Bloomberg Terminal interface but functions as a news aggregator and stock tracker. \nVisual Style:\n- Color Palette: Strict Monochrome (Pitch black background #000000)  \nTypography: Monospace fonts (e.g., Courier, JetBrains Mono, or Roboto Mono).  \nLayout: High information density. Use \"Grid\" borders (1px solid grey) to separate sections. No rounded corners; sharp edges only.  \nFunctionality & API Integration:  \n1. News Feed (NYT API):\n- Implement the linkable Top Stories or Newswire endpoint using the provided credentials.  \n- Display headlines in a scrolling list on the left/right pane.  \nAPI Key: [Insert Your Own Key]  \nSecret: [Insert Your Own Key]  \n2. Stock Dashboard (Yahoo Finance):\n- In the center panel, display real-time data for major US stocks (e.g., AAPL, TSLA, NVDA, MSFT).  \nInclude: Current Price, Day Change (%), and a Sparkline trend chart for each ticker.  \n- Ensure the data refreshes periodically to simulate a live terminal environment.  \n3. UI Components:\n- A \"Command Line\" bar at the top (non-functional or for filtering).  \n- Flashing \"NEW\" indicators for incoming news articles.  \n- ASCII-style separators for different data blocks. \nDeliverable: Please provide the complete code structure, including the API fetch logic and the configuration to achieve the Bloomberg \"Old School\" look.",
       "media": [
         "https://wsrv.nl/?url=https://pbs.twimg.com/amplify_video_thumb/2021428166846447618/img/CjUnZblxPGYMuqBz.jpg"
       ],
       "timestamp": "2026-02-11 03:37:16",
       "date": "2026-02-11",
-      "url": "https://x.com/None/status/2021428293145329990",
+      "url": "https://x.com/KimiProduct/status/2021428293145329990",
       "sns_platform": "x",
-      "conversation_id": "2021428293145329990",
+      "source": "full_thread_scan",
+      "is_detail_collected": true,
       "local_images": [
         "web_viewer/images/116ff0acf32686f61f1a848472d3d670.jpg"
       ],
@@ -7573,25 +7620,30 @@
     },
     {
       "id": "2021492537861853558",
-      "user": null,
-      "display_name": null,
-      "full_text": "요즘IT에서 제작한 클로드 코드로 일하기 10인 실제 사례집을 소개합니다. 개발자부터 PM·출판 에디터까지, 현업 실무자 10인의 클로드 코드 활용법을 진짜 사례로 담았습니다!\n \n(개발자 6인 + 비개발자 4인이 시행착오 과정과, 클로드 코드 실전 방법론이 포함되어 있습니다)\n\n이런 분께 추천합니다\n\n✅ 클로드 코드 좋다는데, 실제 어디까지 되는 건지 궁금한 분\n✅ 개발자, PM, 에디터 등 다양한 직군의 실무 활용 사례를 한번에 보고 싶은 분\n✅ 남들은 어떻게 쓰는지 실패담까지 솔직한 후기가 필요한 분\n✅ 바이브 코딩, 멀티 에이전트 등 최신 키워드는 아는데 실전 감이 안 잡히는 분\n✅ 바이브코딩으로 외주, 사이드프로젝트 등 수익화 방법을 '찍먹' 해보고 싶은 분\n\nhttps://t.co/XMOOzj39K5",
+      "user": "yozm_it",
+      "display_name": "요즘IT",
+      "full_text": "요즘IT에서 제작한 클로드 코드로 일하기 10인 실제 사례집을 소개합니다. 개발자부터 PM·출판 에디터까지, 현업 실무자 10인의 클로드 코드 활용법을 진짜 사례로 담았습니다!\n \n(개발자 6인 + 비개발자 4인이 시행착오 과정과, 클로드 코드 실전 방법론이 포함되어 있습니다)\n\n이런 분께 추천합니다\n\n 클로드 코드 좋다는데, 실제 어디까지 되는 건지 궁금한 분\n 개발자, PM, 에디터 등 다양한 직군의 실무 활용 사례를 한번에 보고 싶은 분\n 남들은 어떻게 쓰는지 실패담까지 솔직한 후기가 필요한 분\n 바이브 코딩, 멀티 에이전트 등 최신 키워드는 아는데 실전 감이 안 잡히는 분\n 바이브코딩으로 외주, 사이드프로젝트 등 수익화 방법을 '찍먹' 해보고 싶은 분\n\n\nhttps://\nlitt.ly/yozm_it/sale/Y\nxrqplo\n…",
       "media": [
-        "https://wsrv.nl/?url=https://pbs.twimg.com/media/HA3ITasaAAYsaMS.jpg",
+        "https://wsrv.nl/?url=https://pbs.twimg.com/media/HA3ITasaAAYsaMS",
+        "https://wsrv.nl/?url=https://pbs.twimg.com/media/HA3IVtnbsAA48Pm",
         "https://wsrv.nl/?url=https://pbs.twimg.com/media/HA3IVtnbsAA48Pm.png",
-        "https://wsrv.nl/?url=https://pbs.twimg.com/media/HA3IaDFbUAEFiVR.png",
-        "https://wsrv.nl/?url=https://pbs.twimg.com/media/HA3Ia39bcAAecf3.png"
+        "https://wsrv.nl/?url=https://pbs.twimg.com/media/HA3Ia39bcAAecf3.png",
+        "https://wsrv.nl/?url=https://pbs.twimg.com/media/HA3ITasaAAYsaMS.jpg",
+        "https://wsrv.nl/?url=https://pbs.twimg.com/media/HA3IaDFbUAEFiVR",
+        "https://wsrv.nl/?url=https://pbs.twimg.com/media/HA3Ia39bcAAecf3",
+        "https://wsrv.nl/?url=https://pbs.twimg.com/media/HA3IaDFbUAEFiVR.png"
       ],
       "timestamp": "2026-02-11 07:52:33",
       "date": "2026-02-11",
-      "url": "https://x.com/None/status/2021492537861853558",
+      "url": "https://x.com/yozm_it/status/2021492537861853558",
       "sns_platform": "x",
-      "conversation_id": "2021492537861853558",
+      "source": "full_thread_scan",
+      "is_detail_collected": true,
       "local_images": [
-        "web_viewer/images/1e9fedc916070627f9342bd4f1fa8dbc.jpg",
         "web_viewer/images/4f5757101aa5bc423a5875b1daa95be5.png",
-        "web_viewer/images/6327bae0d2985c3a54bc6fd9e55db308.png",
-        "web_viewer/images/064fbaf923a35f26cf91d673c0fdd22e.png"
+        "web_viewer/images/064fbaf923a35f26cf91d673c0fdd22e.png",
+        "web_viewer/images/1e9fedc916070627f9342bd4f1fa8dbc.jpg",
+        "web_viewer/images/6327bae0d2985c3a54bc6fd9e55db308.png"
       ],
       "sequence_id": 441
     },
@@ -7612,17 +7664,18 @@
     },
     {
       "id": "2021517290320130103",
-      "user": null,
-      "display_name": null,
-      "full_text": "Anthropic released 32-page guide on building Claude Skills\n\nhere's the Full Breakdown ( in <350 words )\n\n1/ Claude Skills\n> A skill is a folder with instructions that teaches Claude how to handle specific tasks once, then benefit forever.\n> Think of it like this: MCP gives Claude access to your tools (Notion, Linear, Figma). \n> Skills teach Claude how to use those tools the way your team actually works.\n\nThe guide breaks down into 3 core use cases:\n\n1/ Document Creation\nCreate consistent output (presentations, code, designs) following your exact standards without re-explaining style guides every time.\n\n2/ Workflow Automation\nMulti-step processes that need consistent methodology. Example: sprint planning that fetches project status, analyzes velocity, suggests priorities, creates tasks automatically.\n\n3/ MCP Enhancement\nLayer expertise onto tool access. Your skill knows the workflows, catches errors, applies domain knowledge your team has built over years.\n\nThe technical setup is simpler than you'd think:\n\n1/Required: One https://t.co/pt5Pefzhdy file with YAML frontmatter  \nOptional: Scripts, reference docs, templates\n\n2/The YAML frontmatter is critical. It tells Claude when to load your skill without burning tokens on irrelevant context.\n\nTwo fields matter most:\n- name (kebab-case, no spaces)\n- description (what it does + when to trigger)\n\nGet the description wrong and your skill never loads. Get it right and Claude knows exactly when you need it.\n\nThe guide includes 5 proven patterns:\n\n1/ Sequential Workflow: \n> Step-by-step processes in specific order (onboarding, deployment, compliance checks)\n\n2/ Multi-MCP Coordination: \n> Workflows spanning multiple services (design handoff from Figma to Linear to Slack)\n\n3/ Iterative Refinement: \n> Output that improves through validation loops (report generation with quality checks)\n\n4/ Context-Aware Selection: \n> Same outcome, different tools based on file type, size, or context\n\n5/ Domain Intelligence: \n> Embedded expertise beyond tool access (financial compliance rules, security protocols)\n\nCommon mistakes to avoid:\n>. Vague descriptions that never trigger  \n> Instructions buried in verbose content  \n> Missing error handling for MCP calls  \n> Trying to do too much in one skill  \n\nThe underlying insight: \n> AI doesn't need to be general-purpose every conversation. \n> Give it specialized knowledge for your specific workflows and it becomes genuinely useful for work.",
+      "user": "Hartdrawss",
+      "display_name": "Harshil Tomar",
+      "full_text": "이게 현실임 \n미국은 거의 모든집이 수입이 들어오지않으면 3개월 버티기 힘듬\n잘 생각해보자\n올해부터 본격적으로 AI혁명이 일어나서 실업자 생기기 시작할거야 \n그런데 그 실업자가 대부분 고소득자야. \n그들이 소유한 집들도 다 비싼거들이야.  \n그리고 6개월이면 못버티고 끝나. \n그런 집들이",
       "media": [
         "https://wsrv.nl/?url=https://pbs.twimg.com/media/HA3fQn4XgAAue_k.jpg"
       ],
       "timestamp": "2026-02-11 09:30:54",
       "date": "2026-02-11",
-      "url": "https://x.com/None/status/2021517290320130103",
+      "url": "https://x.com/Hartdrawss/status/2021517290320130103",
       "sns_platform": "x",
-      "conversation_id": "2021517290320130103",
+      "source": "full_thread_scan",
+      "is_detail_collected": true,
       "local_images": [
         "web_viewer/images/aa5b75ab11761aead12dc0d443f5e00d.jpg"
       ],
@@ -7630,30 +7683,36 @@
     },
     {
       "id": "2021555296951513414",
-      "user": null,
-      "display_name": null,
-      "full_text": "Anthropic engineers don't use Claude like everyone else.\n\nAfter 1,200+ hours of research across AI papers, markets, and competitive intel, I reverse-engineered their internal techniques.\n\nHere are 10 prompts that turn Claude into research infrastructure that rivals McKinsey's entire analyst team:",
-      "media": [],
+      "user": "aiwithmayank",
+      "display_name": "Mayank Vora",
+      "full_text": "Anthropic engineers don't use Claude like everyone else.\n\nAfter 1,200+ hours of research across AI papers, markets, and competitive intel, I reverse-engineered their internal techniques.\n\nHere are 10 prompts that turn Claude into research infrastructure that rivals McKinsey's entire analyst team:\n\n---\n\n1. Multi-source research synthesizer\n\nAnalyzes 10+ sources simultaneously and finds patterns human researchers miss\n\nPrompt:\n\nYou are a research synthesis expert. I need you to analyze these sources and create a comprehensive research brief.\n\nSOURCES: [paste URLs, papers, or text]\n\nANALYSIS FRAMEWORK:\n1. Extract core arguments from each source\n2. Identify agreements, disagreements, and gaps\n3. Map causal relationships between findings\n4. Highlight methodological strengths/weaknesses\n5. Synthesize into unified thesis\n\nOUTPUT FORMAT:\n- Executive Summary (3 sentences)\n- Key Findings (ranked by evidence strength)\n- Contradictions & Why They Exist\n- Research Gaps Worth Exploring\n- Actionable Insights\n\nBe brutally honest about weak evidence. Cite specific passages with [Source X, Para Y] format.\n\n---\n\n2. Competitive intelligence deep dive\n\nReverse-engineers competitor strategy from public data like an ex-intelligence analyst\n\nPrompt:\n\nYou are a competitive intelligence analyst who worked at McKinsey and the CIA. Analyze this company/product and reveal their strategic playbook.\n\n---\n\n3: Academic Paper → Business insight translator\n\nConverts complex research into actionable business strategy in 5 minutes\n\nPrompt:\n\nYou are a strategy consultant who translates academic research into billion-dollar business opportunities.\n\nPAPER: [title, link, or full text]",
+      "media": [
+        "https://wsrv.nl/?url=https://pbs.twimg.com/media/HA4B3S5a0AAqAQF",
+        "https://wsrv.nl/?url=https://pbs.twimg.com/media/HA4B2H4bQAEnp-U",
+        "https://wsrv.nl/?url=https://pbs.twimg.com/media/HA4B4eua4AE1gZU"
+      ],
       "timestamp": "2026-02-11 12:01:56",
       "date": "2026-02-11",
-      "url": "https://x.com/None/status/2021555296951513414",
+      "url": "https://x.com/aiwithmayank/status/2021555296951513414",
       "sns_platform": "x",
-      "conversation_id": "2021555296951513414",
+      "source": "full_thread_scan",
+      "is_detail_collected": true,
       "sequence_id": 444
     },
     {
       "id": "2021563581637300730",
-      "user": null,
-      "display_name": null,
-      "full_text": "OpenClaw hit 145K GitHub stars and became the fastest-growing open-source AI project in history.\n\nBut 90% of people installing it have no idea how to set it up safely.\n\nThat's why I built the OpenClaw Starter Guide. It covers:\n→ Full architecture breakdown (Gateway, Agent, Skills, Memory)\n→ 30-minute setup walkthrough for any hardware\n→ Security hardening so you don't end up on Shodan\n→ Memory upgrade prompt that makes your agent actually remember you\n\nIf you want a personal AI assistant that actually does things, not another chatbot, this is the guide.\n\nComment \"Claw\" and I'll DM it to you.\n(Must be following me to receive it)",
+      "user": "godofprompt",
+      "display_name": "God of Prompt",
+      "full_text": "이게 현실임 \n미국은 거의 모든집이 수입이 들어오지않으면 3개월 버티기 힘듬\n잘 생각해보자\n올해부터 본격적으로 AI혁명이 일어나서 실업자 생기기 시작할거야 \n그런데 그 실업자가 대부분 고소득자야. \n그들이 소유한 집들도 다 비싼거들이야.  \n그리고 6개월이면 못버티고 끝나. \n그런 집들이",
       "media": [
         "https://wsrv.nl/?url=https://pbs.twimg.com/media/HA4JXUgaYAAKQHA.jpg"
       ],
       "timestamp": "2026-02-11 12:34:51",
       "date": "2026-02-11",
-      "url": "https://x.com/None/status/2021563581637300730",
+      "url": "https://x.com/godofprompt/status/2021563581637300730",
       "sns_platform": "x",
-      "conversation_id": "2021563581637300730",
+      "source": "full_thread_scan",
+      "is_detail_collected": true,
       "local_images": [
         "web_viewer/images/4c2cb9e7e2ed4fa5eff64feb4c11cad6.jpg"
       ],
