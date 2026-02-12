@@ -1,15 +1,15 @@
 {
-  "primaryFeature": "threads_scrap_diagnosis",
+  "primaryFeature": "twitter_scrap_scroll_fix",
   "features": {
-    "threads_scrap_diagnosis": {
-      "status": "do",
-      "updatedAt": "2026-02-12T19:10:00Z",
-      "planFile": "docs/01-plan/features/threads_scrap_diagnosis.plan.md"
+    "twitter_scrap_scroll_fix": {
+      "status": "report",
+      "updatedAt": "2026-02-12T19:30:00Z",
+      "reportFile": "docs/04-report/twitter_scrap_scroll_fix.report.md"
     },
-    "unified_data_schema": {
-      "status": "plan",
-      "updatedAt": "2026-02-12T13:30:00Z",
-      "planFile": "docs/01-plan/features/unified_data_schema.plan.md"
+    "twitter_scrap_deduplication": {
+      "status": "report",
+      "updatedAt": "2026-02-12T19:30:00Z",
+      "reportFile": "docs/04-report/twitter_scrap_deduplication.report.md"
     }
   }
 }

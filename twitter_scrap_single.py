@@ -80,15 +80,41 @@ def scrape_full_tweet(page, target_url, target_user):
     articles = page.locator('article[data-testid="tweet"]').all()
     for i, article in enumerate(articles):
         try:
-            user_handle_link = article.locator(f'a[href="/{real_user}"]').first
-            if i > 0 and user_handle_link.count() == 0:
-                break
+            # 💡 [개선] 작성자 확인 로직 강화 (대소문자 무시)
+            links = article.locator('a[href^="/"]').all()
+            is_author = False
+            hrefs = []
+            for link in links:
+                href = link.get_attribute("href")
+                if href:
+                    hrefs.append(href)
+                    if href.lower() == f"/{real_user.lower()}":
+                        is_author = True
+                        break
             
-            text_el = article.locator('div[data-testid="tweetText"]').first
-            if text_el.count() > 0:
-                text = text_el.inner_text()
-                if text and text not in tweet_texts:
-                    tweet_texts.append(text)
+            # 메인 트윗(i=0)인 경우 작성자 확인이 실패해도 텍스트가 있으면 일단 수집 시도 (폴백)
+            if not is_author:
+                if i == 0:
+                    # 첫 번째 게시물인데 작성자 링크가 안 보이면 광고일 가능성 또는 로딩 지연
+                    # 하지만 data-testid="tweet"이므로 광고일 확률은 낮음. 
+                    # 텍스트가 존재하면 일단 작성자 본문으로 간주
+                    text_el = article.locator('div[data-testid="tweetText"]').first
+                    if text_el.count() > 0:
+                        is_author = True 
+                        print(f"      ℹ️ 첫 번째 게시물 작성자 확인 미흡하나 수집 강행 (@{real_user})")
+                else:
+                    continue # 타인의 답글은 무시
+            
+            # 💡 [개선] 인용 트윗 본문을 제외하고 해당 article의 메인 본문만 추출
+            text_els = article.locator('div[data-testid="tweetText"]').all()
+            article_body = ""
+            
+            if text_els:
+                # 첫 번째 tweetText가 보통 메인 본문임
+                article_body = text_els[0].inner_text()
+            
+            if article_body and article_body not in tweet_texts:
+                tweet_texts.append(article_body)
             
             imgs = article.locator('img[src*="media"]').all()
             for img in imgs:
@@ -121,7 +147,7 @@ def main():
     targets = []
     skipped_count = 0
     for p in posts:
-        pid = str(p['id'])
+        pid = str(p.get('platform_id') or p.get('id'))
         if p.get('is_detail_collected'): continue
         
         fail_info = failures.get(pid, {})
@@ -160,9 +186,9 @@ def main():
 
             total_targets = len(targets)
             for i, post in enumerate(targets):
-                pid = str(post['id'])
+                pid = str(post.get('platform_id') or post.get('id'))
                 url = post['url']
-                user = post['user']
+                user = post.get('username') or post.get('user')
                 
                 # 진척률 계산
                 current_num = i + 1
@@ -172,8 +198,8 @@ def main():
                 full_text, media, real_user = scrape_full_tweet(page, url, user)
                 
                 if full_text:
-                    post['user'] = real_user
-                    post['url'] = f"https://x.com/{real_user}/status/{post['id']}"
+                    post['username'] = real_user
+                    post['url'] = f"https://x.com/{real_user}/status/{pid}"
                     post['full_text'] = full_text
                     post['media'] = list(set((post.get('media', []) or []) + media))
                     post['is_detail_collected'] = True
@@ -217,10 +243,10 @@ def main():
             except: pass
     
     # 💡 [핵심] simple 파일(posts)에서 수집 완료된 모든 항목을 우선순위로 병합
-    full_map = {str(p['id']): p for p in all_full_posts}
+    full_map = {str(p.get('platform_id') or p.get('id')): p for p in all_full_posts}
     for p in posts:
         if p.get('is_detail_collected'):
-            pid = str(p['id'])
+            pid = str(p.get('platform_id') or p.get('id'))
             # simple 파일의 메타데이터(sequence_id, crawled_at)를 full 파일에 강제 주입
             if pid in full_map:
                 full_map[pid].update(p)

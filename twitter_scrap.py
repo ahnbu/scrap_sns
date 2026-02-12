@@ -24,10 +24,10 @@ if sys.platform == 'win32':
 # ===========================
 # ⚙️ 설정
 # ===========================
-WINDOW_X = 0
+WINDOW_X = 900
 WINDOW_Y = 0
-WINDOW_WIDTH = 1000
-WINDOW_HEIGHT = 800
+WINDOW_WIDTH = 900
+WINDOW_HEIGHT = 600
 
 OUTPUT_DIR = "output_twitter/python"
 OUTPUT_FILE_PATTERN = "twitter_py_simple_{date}.json"
@@ -105,8 +105,20 @@ def extract_from_json(json_data):
                 legacy = tweet_results['tweet'].get('legacy', {})
 
             username, display_name = get_user_info(tweet_results)
-            body = tweet_results.get('note_tweet', {}).get('note_tweet_results', {}).get('result', {}).get('text', "")
-            if not body: body = legacy.get('full_text', "")
+            
+            # 💡 [개선] 본문 추출 우선순위: NoteTweet(긴 트윗) > Legacy Full Text
+            # NoteTweet 결과가 있으면 그걸 먼저 사용 (인용된 트윗의 본문이 아닌 현재 트윗의 본문임을 확인)
+            body = ""
+            note_tweet_res = tweet_results.get('note_tweet', {}).get('note_tweet_results', {}).get('result', {})
+            if note_tweet_res:
+                body = note_tweet_res.get('text', "")
+            
+            if not body:
+                body = legacy.get('full_text', "")
+            
+            # 💡 [추가] 인용 트윗 주소 제거 (Twitter API는 인용 트윗의 URL을 본문 끝에 붙임)
+            # 수집 데이터의 순수성을 위해 마지막의 t.co 링크가 인용 링크라면 제거 고려 가능
+            # 여기서는 일단 그대로 두되, 본문이 중복되는 원인이 인용 본문 오인식인지 확인용 로그 강화
             
             media = [f"https://wsrv.nl/?url={m.get('media_url_https')}" for m in (legacy.get('extended_entities', {}).get('media', []) or legacy.get('entities', {}).get('media', [])) if m.get('media_url_https')]
             ts_full, ts_short = parse_twitter_date(legacy.get('created_at'))
@@ -145,8 +157,30 @@ def extract_from_html(html_content, source_label="initial_dom"):
             if not match: continue
             
             username, post_id = match.group(1), match.group(2)
-            text_div = article.find('div', {'data-testid': 'tweetText'})
-            body = text_div.get_text('\n') if text_div else ""
+            
+            # 💡 [개선] 인용 트윗 본문을 제외하고 메인 본문만 추출
+            # data-testid="tweetText" 중 인용 컨테이너(quoted_status 등) 내부에 있지 않은 것 탐색
+            all_text_divs = article.find_all('div', {'data-testid': 'tweetText'})
+            body = ""
+            for t_div in all_text_divs:
+                # 부모 중에 인용 트윗임을 나타내는 요소가 있는지 확인
+                is_quoted = False
+                parent = t_div.parent
+                while parent and parent.name != 'article':
+                    # Twitter의 인용 트윗 컨테이너 특징 (테두리가 있는 div 등)
+                    if parent.get('role') == 'link' or (parent.name == 'div' and 'border' in parent.get('class', [])):
+                        # 인용 트윗 내부의 본문임
+                        is_quoted = True
+                        break
+                    parent = parent.parent
+                
+                if not is_quoted:
+                    body = t_div.get_text('\n')
+                    break
+            
+            # 위 로직으로 못 찾은 경우 첫 번째 것 시도 (폴백)
+            if not body and all_text_divs:
+                body = all_text_divs[0].get_text('\n')
             
             dt_str = time_tag.get('datetime')
             ts_full, ts_short = (None, None)
@@ -270,14 +304,17 @@ def main():
         consecutive_no_new = 0
         
         while True:
+            before_count = len(all_posts_map)
+            
+            # 1. DOM 스캔
             html_posts = extract_from_html(page.content(), "initial_dom" if scroll_count == 0 else "network")
-            round_new = 0
             found_stop = False
 
             for post in html_posts:
                 pid = post['platform_id']
                 if args.mode == 'update' and pid in stop_ids:
-                    found_stop = True; break
+                    found_stop = True
+                    break
                 
                 # 💡 [개선] 기존 메타데이터 확인
                 existing = all_posts_map.get(pid)
@@ -288,7 +325,6 @@ def main():
                     all_posts_map[pid] = post
                     all_posts_map[pid]['is_detail_collected'] = was_collected
                     new_count += 1
-                    round_new += 1
                     msg = clean_text(post['full_text'])[:30]
                     print(f"   + [DOM] @{post['username']} | {msg}... ({len(all_posts_map)}개)", flush=True)
                 elif not was_collected and len(post['full_text']) > len(all_posts_map[pid].get('full_text', '')):
@@ -302,12 +338,15 @@ def main():
             if found_stop:
                 print(f"\n✋ 기존 수집 지점({pid}) 도달. 수집을 종료합니다.", flush=True)
                 break
-                
-            if round_new == 0: 
-                consecutive_no_new += 1
-            else: 
+            
+            # 2. 신규 데이터 발견 여부 판단 (Network + DOM 통합)
+            after_count = len(all_posts_map)
+            if after_count > before_count:
+                print(f"   ✅ 신규 데이터 {after_count - before_count}개 추가됨! (누계: {after_count}개)", flush=True)
                 consecutive_no_new = 0
-                print(f"   ✅ 신규 데이터 {round_new}개 추가됨! (누계: {len(all_posts_map)}개)", flush=True)
+            else:
+                consecutive_no_new += 1
+                print(f"   zzz... 대기 중 ({consecutive_no_new}/5)", flush=True)
 
             if consecutive_no_new >= 5: 
                 print("\n🏁 더 이상 새로운 게시물이 없습니다.", flush=True)
@@ -317,9 +356,10 @@ def main():
                 print(f"\n🎯 목표 개수({TARGET_LIMIT})에 도달했습니다.", flush=True)
                 break
 
-            page.mouse.wheel(0, 2000)
+            # 3. 스크롤 수행
+            page.mouse.wheel(0, 3000) # 스크롤 양 약간 증가
             scroll_count += 1
-            time.sleep(2.5)
+            time.sleep(3.0) # 네트워크 응답 대기를 위해 시간 약간 증가
             print(f"⬇️ 스크롤 {scroll_count}회차 진행 중...", end="\r", flush=True)
 
         # 결과 저장
@@ -331,6 +371,24 @@ def main():
         for p in new_posts_to_id:
             max_sequence_id += 1
             p['sequence_id'] = max_sequence_id
+
+        # 💡 [추가] 본문 중복 체크 (Deduplication Check)
+        text_map = {}
+        duplicates_found = 0
+        for p in all_posts_map.values():
+            txt = p.get('full_text', '')
+            if len(txt) > 20: # 짧은 텍스트는 제외
+                if txt in text_map:
+                    text_map[txt].append(p.get('platform_id'))
+                    duplicates_found += 1
+                else:
+                    text_map[txt] = [p.get('platform_id')]
+        
+        if duplicates_found > 0:
+            print(f"\n⚠️ 주의: 본문 내용이 완전히 동일한 항목이 {duplicates_found}개 발견되었습니다.")
+            for txt, ids in text_map.items():
+                if len(ids) > 1:
+                    print(f"   - 중복 텍스트 ({len(ids)}회): {txt[:50]}... | IDs: {ids}")
 
         final_posts = sorted(all_posts_map.values(), key=lambda x: x.get('sequence_id', 0), reverse=True)
         if final_posts:
@@ -344,6 +402,7 @@ def main():
                         "updated_at": datetime.now().isoformat(),
                         "total_count": len(final_posts),
                         "max_sequence_id": max_sequence_id,
+                        "duplicates_found": duplicates_found,
                         "platform": "x"
                     },
                     "posts": final_posts
