@@ -134,7 +134,7 @@ def parse_relative_time(relative_str, base_time):
 
 def find_latest_simple_file():
     """output 폴더에서 최신 threads_py_simple_full_*.json 파일 찾기"""
-    pattern = f"{OUTPUT_DIR}/threads_py_simple_full_*.json"
+    pattern = f"{OUTPUT_DIR}/threads_py_simple_*.json"
     files = glob.glob(pattern)
     
     if not files:
@@ -143,7 +143,7 @@ def find_latest_simple_file():
     # 파일명에서 날짜 추출 후 정렬
     file_info = []
     for file in files:
-        match = re.search(r'_simple_full_(\d{8})', file)
+        match = re.search(r'_simple_(\d{8})', file)
         if match:
             date_str = match.group(1)
             mtime = os.path.getmtime(file)
@@ -160,7 +160,7 @@ def update_simple_version(new_data, stop_code, crawl_start_time):
     오늘 날짜로 새로운 Simple Full 파일 생성 (메타데이터 포함)
     """
     today = datetime.now().strftime('%Y%m%d')
-    today_simple = f"{OUTPUT_DIR}/threads_py_simple_full_{today}.json"
+    today_simple = f"{OUTPUT_DIR}/threads_py_simple_{today}.json"
     
     # 1. 오늘 날짜 Simple Full 파일이 이미 있는지 확인
     if os.path.exists(today_simple):
@@ -716,7 +716,7 @@ def run():
             # [2] Simple 버전 업데이트
             # "update only"와 "all" 모두 이 로직을 통해 통합 관리
             today = datetime.now().strftime('%Y%m%d')
-            simple_filename = f"{OUTPUT_DIR}/threads_py_simple_full_{today}.json"
+            simple_filename = f"{OUTPUT_DIR}/threads_py_simple_{today}.json"
             os.makedirs(os.path.dirname(simple_filename), exist_ok=True)
             
             metadata = {

@@ -11,7 +11,7 @@ from playwright.sync_api import sync_playwright
 # ⚙️ 설정
 # ===========================
 OUTPUT_DIR = "output_twitter/python"
-SIMPLE_FILE_PATTERN = "twitter_py_simple_full_*.json"
+SIMPLE_FILE_PATTERN = "twitter_py_simple_*.json"
 FULL_FILE_PATTERN = "twitter_py_full_{date}.json"
 FAILURE_FILE = "scrap_failures_twitter.json" # 💡 X(Twitter) 전용 파일
 

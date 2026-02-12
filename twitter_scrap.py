@@ -30,7 +30,7 @@ WINDOW_WIDTH = 1000
 WINDOW_HEIGHT = 800
 
 OUTPUT_DIR = "output_twitter/python"
-OUTPUT_FILE_PATTERN = "twitter_py_simple_full_{date}.json"
+OUTPUT_FILE_PATTERN = "twitter_py_simple_{date}.json"
 
 # ✨ 테스트용 제한 개수 (0: 무제한)
 TARGET_LIMIT = 0 
@@ -184,7 +184,7 @@ def main():
     print(f"🚀 X(Twitter) 목록 수집기 시작 (Mode: {args.mode})", flush=True)
 
     # 1. 기존 데이터 로드
-    full_files = glob.glob(os.path.join(OUTPUT_DIR, "twitter_py_simple_full_*.json"))
+    full_files = glob.glob(os.path.join(OUTPUT_DIR, "twitter_py_simple_*.json"))
     if full_files:
         latest_full = sorted(full_files, reverse=True)[0]
         with open(latest_full, 'r', encoding='utf-8-sig') as f:

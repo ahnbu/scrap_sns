@@ -51,9 +51,9 @@ def find_latest_full_file(directory, pattern):
 def should_run_consumer(platform):
     """상세 수집기(Consumer)를 실행할 필요가 있는지 체크"""
     if platform == "Threads":
-        latest = find_latest_full_file(OUTPUT_THREADS_DIR, "threads_py_simple_full_*.json")
+        latest = find_latest_full_file(OUTPUT_THREADS_DIR, "threads_py_simple_*.json")
     elif platform == "X/Twitter":
-        latest = find_latest_full_file(OUTPUT_TWITTER_DIR, "twitter_py_simple_full_*.json")
+        latest = find_latest_full_file(OUTPUT_TWITTER_DIR, "twitter_py_simple_*.json")
     else:
         return True # 기본적으로는 실행
         

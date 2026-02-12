@@ -1,50 +1,29 @@
-# Design: SNS 플랫폼 데이터 필드 구조 통합 및 표준화
+# [Design] 데이터 스키마 표준 규격 상세 설계
 
-## 1. 표준 데이터 스키마 (Standard Schema)
-모든 플랫폼 데이터는 수집 즉시 아래의 필드명으로 변환되어 저장됩니다.
+## 1. 표준 데이터 스키마 상세 명세 (JSON)
 
-| 표준 필드명 | 설명 | 데이터 타입 |
-| :--- | :--- | :--- |
-| `platform_id` | 플랫폼 원본 고유 ID | String |
-| `username` | 사용자 핸들 (예: @id) | String |
-| `display_name` | 사용자 노출 이름 | String |
-| `full_text` | 게시물 본문 | String |
-| `media` | 미디어(이미지/영상) URL 배열 | Array (String) |
-| `created_at` | 작성 일시 (YYYY-MM-DD HH:MM:SS) | String |
-| `date` | 작성 날짜 (YYYY-MM-DD) | String |
-| `url` | 원본 게시물 URL | String |
-| `sns_platform` | 플랫폼 구분 (x, threads, linkedin) | String |
+모든 SNS 포스트 데이터는 다음의 필드 구조와 순서를 엄격히 준수해야 합니다.
 
-## 2. 플랫폼별 매핑 상세 (Mapping Logic)
+| 순번 | 필드명 | 타입 | 필수 | 설명 |
+| :--- | :--- | :---: | :---: | :--- |
+| 1 | `sequence_id` | Integer | O | 전체 데이터 내의 고유 정렬 순번 |
+| 2 | `platform_id` | String | O | 플랫폼 제공 고유 ID (Twitter ID, Threads Code 등) |
+| 3 | `sns_platform` | String | O | 플랫폼 식별자 (twitter, threads, linkedin, substack) |
+| 4 | `username` | String | O | 사용자 핸들/아이디 |
+| 5 | `display_name` | String | O | 사용자 표시 이름 |
+| 6 | `full_text` | String | O | 게시글 전체 본문 |
+| 7 | `media` | Array | O | 이미지/영상 URL 배열 (없을 시 `[]`) |
+| 8 | `url` | String | O | 게시글 원본 접근 경로 |
+| 9 | `created_at` | String | O | 게시글 작성 일시 |
+| 10 | `date` | String | O | 게시글 작성 날짜 (YYYY-MM-DD) |
+| 11 | `crawled_at` | String | O | 데이터 수집 일시 (YYYY-MM-DD HH:MM:SS) |
+| 12 | `source` | String | O | 수집 엔진/경로 (python, js_console 등) |
+| 13 | `local_images` | Array | O | 로컬 저장 이미지 경로 배열 (없을 시 `[]`) |
 
-### 2.1 X (Twitter) - `twitter_scrap.py`
-- `id` -> `platform_id`
-- `user` -> `username`
-- `timestamp` -> `created_at`
-- 나머지 필드(`display_name`, `full_text`, `media`, `date`, `url`, `sns_platform`)는 이름 유지
+## 2. 에이전트 규칙 반영 설계
 
-### 2.2 Threads - `thread_scrap.py`
-- `code` -> `platform_id`
-- `username` -> `username` (유지)
-- `images` -> `media` (통합)
-- `created_at` -> `created_at` (유지)
-- `post_url` -> `url`
-- 상세 필드(`like_count`, `reply_count` 등)는 메타데이터로 보존
+`.agent/rules/data-schema.md` 파일을 생성하여 에이전트가 코딩 시 위 규격을 강제로 참조하도록 설정합니다.
 
-### 2.3 LinkedIn - `linkedin_scrap.py`
-- `id` -> `platform_id`
-- `user` -> `username`
-- `username` -> `display_name` (LinkedIn은 `username` 필드에 실제 이름을 담고 있었음)
-- `images` -> 삭제 (`media`만 사용)
-- `created_at` -> `created_at` (유지)
-
-## 3. 구현 및 마이그레이션 전략
-
-### 3.1 스크래퍼 코드 수정
-- 각 스크래퍼의 `extract_from_json`, `process_network_post` 등 `dict` 생성 부위에서 위 매핑을 즉시 적용.
-
-### 3.2 데이터 마이그레이션 (`migrate_schema.py`)
-- `output_twitter`, `output_threads`, `output_linkedin` 폴더 내의 모든 기존 JSON 파일을 순회하며 필드명을 표준으로 변경하여 덮어쓰기.
-
-### 3.3 통합 스크립트 (`total_scrap.py`)
-- 입력되는 모든 플랫폼 데이터가 표준 규격임을 전제하므로, 병합 시 존재하던 조건부 필드 로직(`post.get('user') or post.get('username')`)을 제거하고 단순 병합으로 최적화.
+## 3. 갭 분석 대상
+- **대상 파일**: `output_linkedin/python/linkedin_python_full_20260212.json`
+- **분석 항목**: 필드 존재 여부, 필드 순서 일치 여부, 데이터 타입(특히 배열 필드)의 적절성.

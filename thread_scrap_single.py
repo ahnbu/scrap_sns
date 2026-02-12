@@ -10,7 +10,7 @@ from datetime import datetime
 # ⚙️ Configuration
 # ==========================================
 OUTPUT_DIR = "output_threads/python"
-SIMPLE_FILE_PATTERN = "threads_py_simple_full_*.json"
+SIMPLE_FILE_PATTERN = "threads_py_simple_*.json"
 FULL_FILE_PATTERN = "threads_py_full_{date}.json"
 FAILURES_FILE = "scrap_failures_threads.json"
 AUTH_FILE = "auth/auth_threads.json"
