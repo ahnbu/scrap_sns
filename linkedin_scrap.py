@@ -125,6 +125,7 @@ class LinkedinScraper:
         
         # 기존 데이터 로드 (증분 업데이트용)
         self.existing_codes = set()
+        self.existing_posts_map = {}
         self.max_sequence_id = 0
         
         # 전체 파일 경로 (가장 최근 날짜 파일 찾기)
@@ -132,16 +133,18 @@ class LinkedinScraper:
         
         self.stop_codes = []
             
-        if CRAWL_MODE == "update only" and self.full_file_path:
+        if self.full_file_path:
             full_data_obj = load_json(self.full_file_path)
             full_posts = full_data_obj.get("posts", []) if isinstance(full_data_obj, dict) else full_data_obj
             
             # 기준 게시물 (최신 5개) 추출 for Stop Condition
-            self.stop_codes = [p.get("code") for p in full_posts[:5] if p.get("code")]
+            if CRAWL_MODE == "update only":
+                self.stop_codes = [p.get("code") for p in full_posts[:5] if p.get("code")]
 
             for p in full_posts:
                 if "code" in p:
                     self.existing_codes.add(p["code"])
+                    self.existing_posts_map[p["code"]] = p
             
             if isinstance(full_data_obj, dict):
                 self.max_sequence_id = full_data_obj.get("metadata", {}).get("max_sequence_id", 0)
@@ -323,12 +326,19 @@ class LinkedinScraper:
                 "images": list(set(images)),
                 "user_link": user_link,
                 "sns_platform": "linkedin",
-                "crawled_at": CRAWL_START_TIME.isoformat(),
                 "content_type": "carousel" if len(images) > 1 else ("image" if images else "text"),
-                "source": "network",
-                "sequence_id": 0
+                "source": "network"
             }
-            
+
+            # 💡 [개선] 기존 메타데이터 보존 로직
+            existing = self.existing_posts_map.get(activity_id)
+            if existing:
+                post_data['crawled_at'] = existing.get('crawled_at')
+                post_data['sequence_id'] = existing.get('sequence_id')
+            else:
+                post_data['crawled_at'] = CRAWL_START_TIME.isoformat(timespec='milliseconds')
+                post_data['sequence_id'] = 0 # 나중에 save_results에서 일괄 부여
+
             self.posts.append(post_data)
             self.collected_codes.add(activity_id)
             print(f"   ⚡ [Network] [{activity_id}] ({date_str}) {username}: {text[:20]}...")
@@ -437,11 +447,10 @@ class LinkedinScraper:
             print("ℹ️ 수집된 새로운 데이터가 없습니다.")
             return
 
-        # 1. 시퀀스 ID 부여
-        # JS 방식: maxExistingSeq + newItems.length - i
-        # Python에서도 동일한 규칙 적용
-        new_posts = sorted(self.posts, key=lambda x: x['code']) # Snowflake ID 기준 시간순
-        for i, post in enumerate(new_posts):
+        # 1. 시퀀스 ID 부여 (신규 게시물만)
+        # crawled_at 기준 오름차순(과거->최신)으로 정렬하여 ID 순차 부여
+        new_posts = sorted([p for p in self.posts if p.get("sequence_id", 0) == 0], key=lambda x: x['crawled_at'])
+        for post in new_posts:
             self.max_sequence_id += 1
             post["sequence_id"] = self.max_sequence_id
 
@@ -449,13 +458,15 @@ class LinkedinScraper:
         timestamp = CRAWL_START_TIME.strftime("%Y%m%d_%H%M%S")
         update_file = os.path.join(UPDATE_DIR, f"linkedin_python_update_{timestamp}.json")
         
-        # JS 방식과 유사하게 index 추가
+        # 신규 수집된 것들만 저장 (index 부여)
+        recent_collected_posts = [p for p in self.posts if p.get('crawled_at', '').startswith(CRAWL_START_TIME.isoformat()[:10])]
         final_indexed_posts = []
-        for idx, post in enumerate(self.posts):
+        for idx, post in enumerate(recent_collected_posts):
             final_indexed_posts.append({"index": idx + 1, **post})
 
-        save_json(update_file, final_indexed_posts)
-        print(f"💾 업데이트 데이터 저장 완료: {update_file} ({len(self.posts)}개)")
+        if final_indexed_posts:
+            save_json(update_file, final_indexed_posts)
+            print(f"💾 업데이트 데이터 저장 완료: {update_file} ({len(final_indexed_posts)}개)")
         
         # 3. 전체 데이터 병합 및 저장
         date_str = CRAWL_START_TIME.strftime("%Y%m%d")

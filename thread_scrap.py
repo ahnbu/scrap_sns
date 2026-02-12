@@ -280,37 +280,38 @@ def manage_login(context, page):
 def run():
     start_time_dt = datetime.now()
     collected_data = []
+    all_posts_map = {}
     stop_codes = []  # 중단 기준 code 리스트
     stop_code_found = False  # 중단 플래그
     crawl_start_time = start_time_dt.isoformat()  # 크롤링 시작 시간
+    max_sequence_id = 0
     
-    # "update only" 모드: 최신 Simple 파일의 최상단 code 가져오기
-    if CRAWL_MODE == "update only":
-        latest_simple = find_latest_simple_file()
-        if latest_simple:
-            try:
-                with open(latest_simple, 'r', encoding='utf-8') as f:
-                    full_data = json.load(f)
-                    if full_data:
-                        # 메타데이터 구조인지 확인
-                        if isinstance(full_data, dict) and 'posts' in full_data:
-                            posts = full_data['posts']
-                        else:
-                            # 레거시 구조
-                            posts = full_data
-                        
-                        if posts:
-                            # 최신순 5개 추출 (삭제 방지용 징검다리 전략)
-                            stop_codes = [p['code'] for p in posts[:5]]
-                            print(f"🔄 UPDATE ONLY 모드: {stop_codes} 중 하나라도 발견 시 수집을 중단합니다.")
-            except json.JSONDecodeError as e:
-                print(f"⚠️ Simple 파일 인코딩/형식 오류 (삭제 권장): {e}")
-                # 오류 발생 시 백업하거나 무시하고 전체 수집으로 전환
-                stop_codes = []
-            except Exception as e:
-                print(f"⚠️ Simple 파일 읽기 실패: {e}")
-        else:
-            print("⚠️ Simple 파일 없음 - 전체 수집으로 전환")
+    # 최신 데이터 로드 (메타데이터 보존용)
+    latest_simple = find_latest_simple_file()
+    if latest_simple:
+        try:
+            with open(latest_simple, 'r', encoding='utf-8') as f:
+                full_data = json.load(f)
+                posts = full_data.get('posts', []) if isinstance(full_data, dict) else full_data
+                for p in posts:
+                    all_posts_map[p['code']] = p
+                
+                if isinstance(full_data, dict):
+                    max_sequence_id = full_data.get('metadata', {}).get('max_sequence_id', 0)
+                
+                if posts and max_sequence_id == 0:
+                    max_sequence_id = max((p.get('sequence_id', 0) for p in posts), default=0)
+
+                # "update only" 모드: 최신 Simple 파일의 최상단 code 가져오기
+                if CRAWL_MODE == "update only":
+                    if posts:
+                        # 최신순 5개 추출 (삭제 방지용 징검다리 전략)
+                        stop_codes = [p['code'] for p in posts[:5]]
+                        print(f"🔄 UPDATE ONLY 모드: {stop_codes} 중 하나라도 발견 시 수집을 중단합니다.")
+        except Exception as e:
+            print(f"⚠️ 기존 데이터 로드 실패: {e}")
+    else:
+        print("⚠️ Simple 파일 없음 - 전체 수집으로 전환")
  
 
     with sync_playwright() as p:
@@ -499,9 +500,17 @@ def run():
                     "media_type": post.get("media_type"),
                     "content_type": content_type,
                     "sns_platform": "threads",
-                    "source": "network",
-                    "sequence_id": 0
+                    "source": "network"
                 }
+
+                # 💡 [개선] 메타데이터 보존 로직
+                existing = all_posts_map.get(code)
+                if existing:
+                    post_info['crawled_at'] = existing.get('crawled_at')
+                    post_info['sequence_id'] = existing.get('sequence_id')
+                else:
+                    post_info['crawled_at'] = datetime.now().isoformat(timespec='milliseconds')
+                    post_info['sequence_id'] = None # 나중에 일괄 부여
 
                 # 유효성 검사: 텍스트가 없고 이미지도 없는 경우 제외
                 if not post_info['full_text'] and not post_info['media']:
@@ -598,6 +607,16 @@ def run():
                                 "sns_platform": "threads",
                                 "source": "initial_dom"
                             }
+
+                            # 💡 [개선] 메타데이터 보존
+                            existing = all_posts_map.get(code)
+                            if existing:
+                                post_info['crawled_at'] = existing.get('crawled_at')
+                                post_info['sequence_id'] = existing.get('sequence_id')
+                            else:
+                                post_info['crawled_at'] = datetime.now().isoformat(timespec='milliseconds')
+                                post_info['sequence_id'] = None
+
                             collected_data.append(post_info)
                             print(f"   + [DOM] [{code}] {cleaned_text.replace('\n', ' ')[:15]}... (현재 {len(collected_data)}/{TARGET_LIMIT if TARGET_LIMIT else '무제한'})")
                 except: continue
@@ -664,12 +683,27 @@ def run():
             if TARGET_LIMIT > 0:
                 final_list = final_list[:TARGET_LIMIT]
 
-            print(f"\n💾 최종 데이터 {len(final_list)}개 저장 중...")
+            # 💡 [개선] 신규 게시물에 sequence_id 부여
+            # crawled_at 기준 오름차순(과거->최신)으로 정렬하여 ID 순차 부여
+            new_posts_to_id = [p for p in final_list if p.get('sequence_id') is None]
+            new_posts_to_id.sort(key=lambda x: x.get('crawled_at') or '')
+            
+            for p in new_posts_to_id:
+                max_sequence_id += 1
+                p['sequence_id'] = max_sequence_id
+
+            # 전체 리스트 합치기 (기존 데이터 중 이번에 수집 안 된 것 포함)
+            for p in final_list:
+                all_posts_map[p['code']] = p
+            
+            final_merged_list = sorted(all_posts_map.values(), key=lambda x: x.get('sequence_id', 0), reverse=True)
+
+            print(f"\n💾 최종 데이터 {len(final_merged_list)}개 저장 중...")
             
             # output 폴더가 없으면 자동 생성
             os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
             
-            # [1] 신규 크롤링 결과 저장
+            # [1] 신규 크롤링 결과 저장 (단순 업데이트 파일용은 수집된 것만)
             with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
                 json.dump(final_list, f, ensure_ascii=False, indent=4)
             
@@ -679,52 +713,30 @@ def run():
             print(f"   - Network 기반: {net_cnt}개")
             print(f"   - DOM 기반: {dom_cnt}개")
             
-            # [추가] 🎨 2-Pass 연동을 위해 pending_list.json 저장
-            try:
-                pending_list = []
-                seen_in_pending = set()
-                for p in final_list:
-                    code = p.get('code')
-                    if code and code not in seen_in_pending:
-                        pending_list.append({
-                            "code": code,
-                            "username": p.get('username'),
-                            "captured_at": datetime.now().isoformat()
-                        })
-                        seen_in_pending.add(code)
-                
-                if pending_list:
-                    with open("pending_list.json", "w", encoding="utf-8") as f:
-                        json.dump(pending_list, f, ensure_ascii=False, indent=4)
-                    print(f"📂 [2-Pass] {len(pending_list)}개의 작업이 pending_list.json에 저장되었습니다.")
-            except Exception as e:
-                print(f"⚠️ [2-Pass] pending_list 저장 실패: {e}")
-
             # [2] Simple 버전 업데이트
-            if CRAWL_MODE == "update only":
-                representative_stop = stop_codes[0] if stop_codes else None
-                update_simple_version(final_list, representative_stop, crawl_start_time)
-            else:
-                # "all" 모드는 현재 결과를 새로운 Simple Full로 저장
-                today = datetime.now().strftime('%Y%m%d')
-                simple_filename = f"{OUTPUT_DIR}/threads_py_simple_full_{today}.json"
-                os.makedirs(os.path.dirname(simple_filename), exist_ok=True)
-                
-                metadata = {
-                    "version": "1.0",
-                    "crawled_at": datetime.now().isoformat(),
-                    "total_count": len(final_list),
-                    "crawl_mode": "all"
-                }
-                
-                save_data = {"metadata": metadata, "posts": final_list}
-                
-                with open(simple_filename, "w", encoding="utf-8") as f:
-                    json.dump(save_data, f, ensure_ascii=False, indent=4)
-                print(f"\n📦 Simple Full 버전 생성 완료: {simple_filename}")
-                
-                # Markdown 자동 변환
-                convert_json_to_md(simple_filename)
+            # "update only"와 "all" 모두 이 로직을 통해 통합 관리
+            today = datetime.now().strftime('%Y%m%d')
+            simple_filename = f"{OUTPUT_DIR}/threads_py_simple_full_{today}.json"
+            os.makedirs(os.path.dirname(simple_filename), exist_ok=True)
+            
+            metadata = {
+                "version": "1.0",
+                "crawled_at": datetime.now().isoformat(),
+                "total_count": len(final_merged_list),
+                "max_sequence_id": max_sequence_id,
+                "crawl_mode": CRAWL_MODE
+            }
+            
+            save_data = {"metadata": metadata, "posts": final_merged_list}
+            
+            with open(simple_filename, "w", encoding="utf-8") as f:
+                json.dump(save_data, f, ensure_ascii=False, indent=4)
+            print(f"\n📦 Simple Full 버전 생성 완료: {simple_filename} (max_sequence_id: {max_sequence_id})")
+            
+            # Markdown 자동 변환
+            convert_json_to_md(simple_filename)
+        else:
+            print("\n😭 수집된 데이터가 없습니다.")
         else:
             print("\n😭 수집된 데이터가 없습니다.")
 

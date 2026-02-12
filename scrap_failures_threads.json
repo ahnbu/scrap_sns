@@ -70,5 +70,11 @@
         "fail_count": 3,
         "first_fail_at": "2026-02-11T15:34:45.742235",
         "last_fail_at": "2026-02-11T15:36:51.602997"
+    },
+    "DUpJ4AFj5dX": {
+        "fail_count": 1
+    },
+    "DUnbgtKD08M": {
+        "fail_count": 1
     }
 }

@@ -129,10 +129,16 @@ def merge_results():
     linkedin_posts = linkedin_data.get('posts', []) if isinstance(linkedin_data, dict) else linkedin_data
     twitter_posts = twitter_data.get('posts', []) if isinstance(twitter_data, dict) else twitter_data
 
-    # 플랫폼 정규화
-    for p in threads_posts: p['sns_platform'] = 'threads'
-    for p in linkedin_posts: p['sns_platform'] = 'linkedin'
-    for p in twitter_posts: p['sns_platform'] = 'x'
+    # 플랫폼 정규화 및 수집 순서 보존
+    for p in threads_posts: 
+        p['sns_platform'] = 'threads'
+        p['platform_sequence_id'] = p.get('sequence_id', 0)
+    for p in linkedin_posts: 
+        p['sns_platform'] = 'linkedin'
+        p['platform_sequence_id'] = p.get('sequence_id', 0)
+    for p in twitter_posts: 
+        p['sns_platform'] = 'x'
+        p['platform_sequence_id'] = p.get('sequence_id', 0)
 
     # 중복 제거 (ID 기준)
     seen_ids = set()
@@ -151,12 +157,18 @@ def save_total(new_posts, threads_count, linkedin_count, twitter_count):
     today = datetime.now().strftime('%Y%m%d')
     total_filename = os.path.join(OUTPUT_TOTAL_DIR, f"total_full_{today}.json")
     
-    # 날짜순 정렬
+    # 💡 [개선] '저장순' 정렬 구현 (최초 수집 시점 1순위, 플랫폼 내 순서 2순위)
     def sort_key(post):
-        return post.get('timestamp') or post.get('date') or post.get('created_at') or '0000-00-00'
+        # 1. 최초 수집 시점 (ISO 포맷 문자열 비교)
+        # crawled_at이 없는 레거시 데이터는 timestamp로 대체
+        c_at = post.get('crawled_at') or post.get('timestamp') or post.get('date') or post.get('created_at') or '0000-00-00'
+        # 2. 플랫폼 내부 저장 순서
+        psid = post.get('platform_sequence_id', 0)
+        return (c_at, psid)
+        
     new_posts.sort(key=sort_key)
     
-    # ID 재부여
+    # 전역 ID 재부여
     for i, p in enumerate(new_posts):
         p['sequence_id'] = i + 1
 

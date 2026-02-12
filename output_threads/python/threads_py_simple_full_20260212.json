@@ -1,9 +1,9 @@
-{
+﻿{
     "metadata": {
         "version": "1.0",
-        "crawled_at": "2026-02-12T11:11:23.566761",
-        "total_count": 234,
-        "source_file_count": 1,
+        "crawled_at": "2026-02-12T15:07:16.330989",
+        "total_count": 236,
+        "source_file_count": 2,
         "merge_history": [
             {
                 "merged_at": "2026-02-11T09:28:28.467050",
@@ -22,10 +22,78 @@
                 "new_items_count": 1,
                 "duplicates_removed": 0,
                 "stop_code": "DUm-zDsEkn3"
+            },
+            {
+                "merged_at": "2026-02-12T15:07:16.330989",
+                "new_items_count": 2,
+                "duplicates_removed": 0,
+                "stop_code": "DUm37rRDknp"
             }
         ]
     },
     "posts": [
+        {
+            "id": "DUnbgtKD08M",
+            "code": "DUnbgtKD08M",
+            "pk": null,
+            "user": "anab.branding",
+            "username": "anab.branding",
+            "display_name": "anab.branding",
+            "user_link": "https://www.threads.net/@anab.branding",
+            "full_text": "“275개 후킹 멘트 + 17카테고리 + 클릭 복사”\n: 이거 바로 가져가세요! 저는 그냥 여기서 꺼내 씁니다.\n이건 그냥 스쳐도 저장각! 이죠~\n후킹 멘트 275개를 그냥 공짜로 한 번에 가져가요.\n17개 카테고리로 이미 정리돼 있어서\n지금 내 콘텐츠 상황에 맞는 ‘첫 문장’만 골라 쓰면 끝.\n댓글이 터지는 글은 공통점이 있죠\n사람을 멈추게 하는 첫 문장.\n이 첫문장도 바로 바로 자동으로 만들어 줘요\n웅원 댓글 남기면\n인스타나 쓰레드 dm으로 정보 보내줄게요\n/",
+            "like_count": -1,
+            "reply_count": -1,
+            "repost_count": -1,
+            "quote_count": -1,
+            "timestamp": "2026-02-11 21:06:56",
+            "created_at": "2026-02-11 21:06:56",
+            "time_text": "2026-02-11",
+            "date": "2026-02-11",
+            "url": "https://www.threads.net/@anab.branding/post/DUnbgtKD08M",
+            "post_url": "https://www.threads.net/@anab.branding/post/DUnbgtKD08M",
+            "media": [
+                "https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/630196744_17943547236106081_1761723390201185846_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTMzOXgzMjUwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QHlcPe6zZCe4XlSg0EI8NC0dhw90R-LZNja5_v97YHw9OxZuyB7OFAA6qo04XafY3s&_nc_ohc=FYOkfUTt11cQ7kNvwFfWfCa&_nc_gid=KYv1W6bAkTxv2dC3Qz166g&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMDE1MDYyMjA0MjEyMDk3OA%3D%3D.3-ccb7-5&oh=00_AfsbLfyMoqmKpekn9BGx6ZLDuOrBRmjTh6gKP-xIkEy5Ow&oe=69932E3C&_nc_sid=10d13b",
+                "https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/631138344_17943547227106081_8047940090564769110_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTc1Nng5NDMuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QHlcPe6zZCe4XlSg0EI8NC0dhw90R-LZNja5_v97YHw9OxZuyB7OFAA6qo04XafY3s&_nc_ohc=xl6d546TOjkQ7kNvwGIfxrk&_nc_gid=KYv1W6bAkTxv2dC3Qz166g&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMDE1MDYyMjA1ODg5MDk1Mw%3D%3D.3-ccb7-5&oh=00_AfvDsVV4xJodPUC3WZI7sMIn290dad0kFSZKGZVvB49smQ&oe=699342DD&_nc_sid=10d13b"
+            ],
+            "images": [
+                "https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/630196744_17943547236106081_1761723390201185846_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTMzOXgzMjUwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QHlcPe6zZCe4XlSg0EI8NC0dhw90R-LZNja5_v97YHw9OxZuyB7OFAA6qo04XafY3s&_nc_ohc=FYOkfUTt11cQ7kNvwFfWfCa&_nc_gid=KYv1W6bAkTxv2dC3Qz166g&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMDE1MDYyMjA0MjEyMDk3OA%3D%3D.3-ccb7-5&oh=00_AfsbLfyMoqmKpekn9BGx6ZLDuOrBRmjTh6gKP-xIkEy5Ow&oe=69932E3C&_nc_sid=10d13b",
+                "https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/631138344_17943547227106081_8047940090564769110_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTc1Nng5NDMuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QHlcPe6zZCe4XlSg0EI8NC0dhw90R-LZNja5_v97YHw9OxZuyB7OFAA6qo04XafY3s&_nc_ohc=xl6d546TOjkQ7kNvwGIfxrk&_nc_gid=KYv1W6bAkTxv2dC3Qz166g&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMDE1MDYyMjA1ODg5MDk1Mw%3D%3D.3-ccb7-5&oh=00_AfvDsVV4xJodPUC3WZI7sMIn290dad0kFSZKGZVvB49smQ&oe=699342DD&_nc_sid=10d13b"
+            ],
+            "media_type": null,
+            "content_type": "carousel",
+            "sns_platform": "threads",
+            "source": "initial_dom"
+        },
+        {
+            "id": "DUpJ4AFj5dX",
+            "code": "DUpJ4AFj5dX",
+            "pk": null,
+            "user": "do.aiworks",
+            "username": "do.aiworks",
+            "display_name": "do.aiworks",
+            "user_link": "https://www.threads.net/@do.aiworks",
+            "full_text": "구글 제미나이.... 1년 14만원에 갈아탄거 지금 1도 후회 안하는 중....\n다음번에 이런 할인율이 있을지 모르겠지만, 만약에 나오면 무조건 갈아타세요..\n/",
+            "like_count": -1,
+            "reply_count": -1,
+            "repost_count": -1,
+            "quote_count": -1,
+            "timestamp": "2026-02-12 13:06:56",
+            "created_at": "2026-02-12 13:06:56",
+            "time_text": "2026-02-12",
+            "date": "2026-02-12",
+            "url": "https://www.threads.net/@do.aiworks/post/DUpJ4AFj5dX",
+            "post_url": "https://www.threads.net/@do.aiworks/post/DUpJ4AFj5dX",
+            "media": [
+                "https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/629928682_17944929834100887_392815565692720800_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTc4M3gxMjA2LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QHlcPe6zZCe4XlSg0EI8NC0dhw90R-LZNja5_v97YHw9OxZuyB7OFAA6qo04XafY3s&_nc_ohc=7oFlpwVG-R4Q7kNvwGQ7h4Y&_nc_gid=KYv1W6bAkTxv2dC3Qz166g&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMDYzNjM4ODg1NzkxMTEyNw%3D%3D.3-ccb7-5&oh=00_AfvzeN8QKiTFaxsMi8-jqyaSkxukjAopb2fDdXZt4kvLBA&oe=6993392C&_nc_sid=10d13b"
+            ],
+            "images": [
+                "https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/629928682_17944929834100887_392815565692720800_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTc4M3gxMjA2LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QHlcPe6zZCe4XlSg0EI8NC0dhw90R-LZNja5_v97YHw9OxZuyB7OFAA6qo04XafY3s&_nc_ohc=7oFlpwVG-R4Q7kNvwGQ7h4Y&_nc_gid=KYv1W6bAkTxv2dC3Qz166g&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMDYzNjM4ODg1NzkxMTEyNw%3D%3D.3-ccb7-5&oh=00_AfvzeN8QKiTFaxsMi8-jqyaSkxukjAopb2fDdXZt4kvLBA&oe=6993392C&_nc_sid=10d13b"
+            ],
+            "media_type": null,
+            "content_type": "image",
+            "sns_platform": "threads",
+            "source": "initial_dom"
+        },
         {
             "code": "DUm37rRDknp",
             "pk": null,

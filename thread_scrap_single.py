@@ -109,13 +109,20 @@ def promote_to_full_history(grouped_data):
 
     updated_count = 0
     new_posts = []
+    max_sequence_id = full_content.get('metadata', {}).get('max_sequence_id', 0)
+
     for p in posts:
         code = p.get('code')
         if code in merge_map:
             merged_data = merge_map[code]
-            merged_data['sequence_id'] = p.get('sequence_id', merged_data.get('sequence_id'))
+            # 💡 기존 메타데이터(sequence_id, crawled_at) 보존
+            merged_data['sequence_id'] = p.get('sequence_id')
+            merged_data['crawled_at'] = p.get('crawled_at')
             new_posts.append(merged_data)
             updated_count += 1
+            
+            sid = merged_data.get('sequence_id', 0)
+            if sid > max_sequence_id: max_sequence_id = sid
         else:
             new_posts.append(p)
 
@@ -123,11 +130,12 @@ def promote_to_full_history(grouped_data):
         full_content['posts'] = new_posts
         full_content['metadata'].update({
             'updated_at': datetime.now().isoformat(),
-            'total_count': len(new_posts)
+            'total_count': len(new_posts),
+            'max_sequence_id': max_sequence_id
         })
         with open(latest_full_path, 'w', encoding='utf-8-sig') as f:
             json.dump(full_content, f, ensure_ascii=False, indent=4)
-        print(f"✅ [Promotion] {updated_count}개 타래 승격 완료: {os.path.basename(latest_full_path)}")
+        print(f"✅ [Promotion] {updated_count}개 타래 승격 완료: {os.path.basename(latest_full_path)} (max_sequence_id: {max_sequence_id})")
 
 def import_from_simple_database():
     """Simple DB(목록)의 신규 데이터를 Full DB(상세)로 가져옵니다."""
@@ -143,7 +151,7 @@ def import_from_simple_database():
     full_files = glob.glob(os.path.join(OUTPUT_DIR, "threads_py_full_*.json"))
     full_files.sort(reverse=True)
     
-    full_content = {"metadata": {"version": "1.0", "total_count": 0}, "posts": []}
+    full_content = {"metadata": {"version": "1.0", "total_count": 0, "max_sequence_id": 0}, "posts": []}
     if os.path.exists(today_full_path):
         with open(today_full_path, 'r', encoding='utf-8-sig') as f:
             full_content = json.load(f)
@@ -153,24 +161,36 @@ def import_from_simple_database():
             
     full_posts = full_content.get('posts', [])
     existing_codes = {p['code'] for p in full_posts}
-    max_seq = max((p.get('sequence_id', 0) for p in full_posts), default=0)
     
+    # Simple 파일에서 데이터 로드 시 메타데이터 포함 확인
+    simple_posts = simple_data.get('posts', [])
+    max_sequence_id = simple_data.get('metadata', {}).get('max_sequence_id', 0)
+    
+    if not max_sequence_id and simple_posts:
+        max_sequence_id = max((p.get('sequence_id', 0) for p in simple_posts), default=0)
+
     new_items = []
-    for p in simple_data.get('posts', []):
+    for p in simple_posts:
         if p['code'] not in existing_codes:
             new_item = p.copy()
             new_item['is_merged_thread'] = False
             new_items.append(new_item)
             
     if new_items:
-        for i, item in enumerate(new_items):
-            item['sequence_id'] = max_seq + len(new_items) - i
+        # 💡 [개선] 이미 simple 파일에서 sequence_id가 부여되어 있으므로, 
+        # 새로 계산하지 않고 그대로 가져오되 max_sequence_id만 갱신
+        for item in new_items:
             full_posts.insert(0, item)
+            sid = item.get('sequence_id', 0)
+            if sid > max_sequence_id: max_sequence_id = sid
+            
         full_content['posts'] = full_posts
         full_content['metadata']['total_count'] = len(full_posts)
+        full_content['metadata']['max_sequence_id'] = max_sequence_id
+        
         with open(today_full_path, 'w', encoding='utf-8-sig') as f:
             json.dump(full_content, f, ensure_ascii=False, indent=4)
-        print(f"✅ [Import] {len(new_items)}개 목록 가져옴: {os.path.basename(today_full_path)}")
+        print(f"✅ [Import] {len(new_items)}개 목록 가져옴: {os.path.basename(today_full_path)} (max_sequence_id: {max_sequence_id})")
     
     return today_full_path
 

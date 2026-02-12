@@ -167,6 +167,7 @@ def main():
     stop_ids = set()
     initial_count = 0
     new_count = 0
+    max_sequence_id = 0
 
     print(f"🚀 X(Twitter) 목록 수집기 시작 (Mode: {args.mode})", flush=True)
 
@@ -176,11 +177,28 @@ def main():
         latest_full = sorted(full_files, reverse=True)[0]
         with open(latest_full, 'r', encoding='utf-8-sig') as f:
             try:
-                old_posts = json.load(f).get('posts', [])
-                for p in old_posts[:20]: stop_ids.add(p['id'])
-                for p in old_posts: all_posts_map[p['id']] = p
+                data = json.load(f)
+                old_posts = data.get('posts', [])
+                metadata = data.get('metadata', {})
+                max_sequence_id = metadata.get('max_sequence_id', 0)
+                
+                # 메타데이터에 없으면 수동 계산 (레거시 지원)
+                if max_sequence_id == 0 and old_posts:
+                    max_sequence_id = max((p.get('sequence_id', 0) for p in old_posts), default=0)
+
+                for p in old_posts:
+                    # 💡 [보정] crawled_at이 없는 레거시 데이터 보정
+                    if not p.get('crawled_at'):
+                        p['crawled_at'] = p.get('timestamp') or datetime.now().isoformat()
+                    
+                    stop_ids.add(p['id'])
+                    all_posts_map[p['id']] = p
+                
+                # 중단점은 최신 20개로 제한 유지
+                stop_ids = set(list(all_posts_map.keys())[:20])
+                
                 initial_count = len(old_posts)
-                print(f"📡 기존 데이터 {initial_count}개 로드됨. (중단점: {len(stop_ids)}개 설정)", flush=True)
+                print(f"📡 기존 데이터 {initial_count}개 로드됨. (max_sequence_id: {max_sequence_id}, 중단점: {len(stop_ids)}개 설정)", flush=True)
             except: pass
 
     USER_DATA_DIR = os.path.join(os.getcwd(), "auth", "x_user_data")
@@ -203,13 +221,20 @@ def main():
                     new_posts = extract_from_json(response.json())
                     for post in new_posts:
                         pid = post['id']
-                        # 💡 [개선] 기존 수집 상태 확인
-                        was_collected = pid in all_posts_map and all_posts_map[pid].get('is_detail_collected', False)
+                        # 💡 [개선] 기존 수집 상태 및 메타데이터 보존
+                        existing = all_posts_map.get(pid)
+                        was_collected = existing.get('is_detail_collected', False) if existing else False
                         
                         if pid not in all_posts_map or len(post['full_text']) > len(all_posts_map[pid].get('full_text', '')):
-                            if pid not in all_posts_map: new_count += 1
+                            if pid not in all_posts_map: 
+                                new_count += 1
+                                post['crawled_at'] = datetime.now().isoformat(timespec='milliseconds')
+                            else:
+                                # 기존 메타데이터 보존
+                                post['crawled_at'] = existing.get('crawled_at')
+                                post['sequence_id'] = existing.get('sequence_id')
+                                
                             all_posts_map[pid] = post
-                            # 💡 기존 수집 완료 상태라면 True 유지
                             all_posts_map[pid]['is_detail_collected'] = was_collected
                             
                             if not was_collected:
@@ -241,10 +266,12 @@ def main():
                 if args.mode == 'update' and pid in stop_ids:
                     found_stop = True; break
                 
-                # 💡 [개선] 상세 수집 완료 여부 확인
-                was_collected = pid in all_posts_map and all_posts_map[pid].get('is_detail_collected', False)
+                # 💡 [개선] 기존 메타데이터 확인
+                existing = all_posts_map.get(pid)
+                was_collected = existing.get('is_detail_collected', False) if existing else False
                 
                 if pid not in all_posts_map:
+                    post['crawled_at'] = datetime.now().isoformat(timespec='milliseconds')
                     all_posts_map[pid] = post
                     all_posts_map[pid]['is_detail_collected'] = was_collected
                     new_count += 1
@@ -252,7 +279,12 @@ def main():
                     msg = clean_text(post['full_text'])[:30]
                     print(f"   + [DOM] @{post['user']} | {msg}... ({len(all_posts_map)}개)", flush=True)
                 elif not was_collected and len(post['full_text']) > len(all_posts_map[pid].get('full_text', '')):
+                    # 업데이트 시 기존 메타데이터 유지하며 내용만 갱신
+                    c_at = existing.get('crawled_at')
+                    s_id = existing.get('sequence_id')
                     all_posts_map[pid].update(post)
+                    all_posts_map[pid]['crawled_at'] = c_at
+                    all_posts_map[pid]['sequence_id'] = s_id
             
             if found_stop:
                 print(f"\n✋ 기존 수집 지점({pid}) 도달. 수집을 종료합니다.", flush=True)
@@ -278,7 +310,16 @@ def main():
             print(f"⬇️ 스크롤 {scroll_count}회차 진행 중...", end="\r", flush=True)
 
         # 결과 저장
-        final_posts = sorted(all_posts_map.values(), key=lambda x: x.get('timestamp') or '', reverse=True)
+        # 💡 [개선] 신규 게시물에 sequence_id 부여
+        # crawled_at 기준 오름차순(과거->최신)으로 정렬하여 ID 순차 부여
+        new_posts_to_id = [p for p in all_posts_map.values() if p.get('sequence_id') is None]
+        new_posts_to_id.sort(key=lambda x: x.get('crawled_at') or '')
+        
+        for p in new_posts_to_id:
+            max_sequence_id += 1
+            p['sequence_id'] = max_sequence_id
+
+        final_posts = sorted(all_posts_map.values(), key=lambda x: x.get('sequence_id', 0), reverse=True)
         if final_posts:
             today = datetime.now().strftime('%Y%m%d')
             full_file = os.path.join(OUTPUT_DIR, OUTPUT_FILE_PATTERN.format(date=today))
@@ -289,6 +330,7 @@ def main():
                     "metadata": {
                         "updated_at": datetime.now().isoformat(),
                         "total_count": len(final_posts),
+                        "max_sequence_id": max_sequence_id,
                         "platform": "x"
                     },
                     "posts": final_posts
