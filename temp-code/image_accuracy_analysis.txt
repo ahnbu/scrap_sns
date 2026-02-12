@@ -1,0 +1,174 @@
+
+================================================================================
+게시글: SangRok Jung
+trackingId: +VhrLM/yRfa9k64Q1umIGQ==
+================================================================================
+
+  [전체 발견] 2개:
+    - PROFILE (프로필 사진) | 100x100
+      경로: root.image.attributes[0].detailData.nonEntityProfilePicture.vectorImage
+      URL: https://media.licdn.com/dms/image/v2/D4D03AQEog9yxHlXklA/profile-displayphoto-scale_100_100/B4DZpE1fTwH0Ac-/0/1762091464
+    - ARTICLESHARE (기사 미리보기) | 1200x600
+      경로: root.entityEmbeddedObject.image.attributes[0].detailData.vectorImage
+      URL: https://media.licdn.com/dms/image/sync/v2/D5627AQHB7-AEd_9ycA/articleshare-shrink_1280_800/B56ZveNz7FKwAU-/0/17689597214
+
+  [현재 필터 적용 후 (profile-displayphoto 제외)] 1개:
+    - ARTICLESHARE (기사 미리보기) | https://media.licdn.com/dms/image/sync/v2/D5627AQHB7-AEd_9ycA/articleshare-shrink_1280_800/B56ZveNz7FKwAU-/0/17689597214
+
+  [제안 필터 (feedshare-shrink만)] 0개:
+
+================================================================================
+게시글: 정구봉 Goobong Jeong
+trackingId: 6EvOF9sLQ9u+bRbmncnkXg==
+================================================================================
+
+  [전체 발견] 1개:
+    - PROFILE (프로필 사진) | 100x100
+      경로: root.image.attributes[0].detailData.nonEntityProfilePicture.vectorImage
+      URL: https://media.licdn.com/dms/image/v2/C5603AQFws9GMYu60Gw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink
+
+  [현재 필터 적용 후 (profile-displayphoto 제외)] 0개:
+
+  [제안 필터 (feedshare-shrink만)] 0개:
+
+================================================================================
+게시글: SEMYOUNG BAEK (백세명)
+trackingId: 6cPxrLXvTeiGI8LJT6r0oA==
+================================================================================
+
+  [전체 발견] 2개:
+    - PROFILE (프로필 사진) | 100x100
+      경로: root.image.attributes[0].detailData.nonEntityProfilePicture.vectorImage
+      URL: https://media.licdn.com/dms/image/v2/D5603AQEie0RPWSpcqw/profile-displayphoto-scale_100_100/B56ZugeRbBGsAc-/0/1767923849
+    - FEEDSHARE (게시물 이미지) | 1536x1024
+      경로: root.entityEmbeddedObject.image.attributes[0].detailData.vectorImage
+      URL: https://media.licdn.com/dms/image/v2/D5622AQGQ042kf1I4AA/feedshare-shrink_2048_1536/B56Zvp2DOrIcAo-/0/1769154819290?e=17
+
+  [현재 필터 적용 후 (profile-displayphoto 제외)] 1개:
+    - FEEDSHARE (게시물 이미지) | https://media.licdn.com/dms/image/v2/D5622AQGQ042kf1I4AA/feedshare-shrink_2048_1536/B56Zvp2DOrIcAo-/0/1769154819290?e=17
+
+  [제안 필터 (feedshare-shrink만)] 1개:
+    - FEEDSHARE (게시물 이미지) | https://media.licdn.com/dms/image/v2/D5622AQGQ042kf1I4AA/feedshare-shrink_2048_1536/B56Zvp2DOrIcAo-/0/1769154819290?e=17
+
+================================================================================
+게시글: Joongsoo Park
+trackingId: Cp6EHX3RRqC0JWy3XUuarg==
+================================================================================
+
+  [전체 발견] 1개:
+    - PROFILE (프로필 사진) | 100x100
+      경로: root.image.attributes[0].detailData.nonEntityProfilePicture.vectorImage
+      URL: https://media.licdn.com/dms/image/v2/D5603AQGtJfIR0MhRKw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink
+
+  [현재 필터 적용 후 (profile-displayphoto 제외)] 0개:
+
+  [제안 필터 (feedshare-shrink만)] 0개:
+
+================================================================================
+게시글: 티타임즈
+trackingId: ThNddUTLSYGl5ddydV6ALg==
+================================================================================
+
+  [전체 발견] 2개:
+    - OTHER () | 100x100
+      경로: root.image.attributes[0].detailData.nonEntityCompanyLogo.vectorImage
+      URL: https://media.licdn.com/dms/image/v2/D560BAQGtSAexEGJ0aQ/company-logo_100_100/B56ZrETYRNG4AY-/0/1764230006200?e=17714592
+    - DIRECT_URL | NonexNone
+      경로: root.entityEmbeddedObject.image.attributes[0].detailData.imageUrl
+      URL: https://media.licdn.com/dms/image/v2/D561FAQHyI3Mb8yGQ-g/feedshare-document-cover-images_480/B56ZvlNKTeJEBA-/0/176907699
+
+  [현재 필터 적용 후 (profile-displayphoto 제외)] 2개:
+    - OTHER () | https://media.licdn.com/dms/image/v2/D560BAQGtSAexEGJ0aQ/company-logo_100_100/B56ZrETYRNG4AY-/0/1764230006200?e=17714592
+    - DIRECT_URL | https://media.licdn.com/dms/image/v2/D561FAQHyI3Mb8yGQ-g/feedshare-document-cover-images_480/B56ZvlNKTeJEBA-/0/176907699
+
+  [제안 필터 (feedshare-shrink만)] 0개:
+
+================================================================================
+게시글: 홍민지Hong Minji
+trackingId: PDupPSMZSCyRHnO22qdbJQ==
+================================================================================
+
+  [전체 발견] 2개:
+    - PROFILE (프로필 사진) | 100x100
+      경로: root.image.attributes[0].detailData.nonEntityProfilePicture.vectorImage
+      URL: https://media.licdn.com/dms/image/v2/D5603AQEOlsN5SmsYoA/profile-displayphoto-scale_100_100/B56Zp5mGR_G0Ac-/0/1762976623
+    - FEEDSHARE (게시물 이미지) | 1842x1270
+      경로: root.entityEmbeddedObject.image.attributes[0].detailData.vectorImage
+      URL: https://media.licdn.com/dms/image/v2/D5622AQF8gMZVYRtm4w/feedshare-shrink_2048_1536/B56Zv.MGkNKQAk-/0/1769496144921?e=17
+
+  [현재 필터 적용 후 (profile-displayphoto 제외)] 1개:
+    - FEEDSHARE (게시물 이미지) | https://media.licdn.com/dms/image/v2/D5622AQF8gMZVYRtm4w/feedshare-shrink_2048_1536/B56Zv.MGkNKQAk-/0/1769496144921?e=17
+
+  [제안 필터 (feedshare-shrink만)] 1개:
+    - FEEDSHARE (게시물 이미지) | https://media.licdn.com/dms/image/v2/D5622AQF8gMZVYRtm4w/feedshare-shrink_2048_1536/B56Zv.MGkNKQAk-/0/1769496144921?e=17
+
+================================================================================
+게시글: 정구봉 Goobong Jeong
+trackingId: NeBbeOUkTcO82EYhBIK/8g==
+================================================================================
+
+  [전체 발견] 1개:
+    - PROFILE (프로필 사진) | 100x100
+      경로: root.image.attributes[0].detailData.nonEntityProfilePicture.vectorImage
+      URL: https://media.licdn.com/dms/image/v2/C5603AQFws9GMYu60Gw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink
+
+  [현재 필터 적용 후 (profile-displayphoto 제외)] 0개:
+
+  [제안 필터 (feedshare-shrink만)] 0개:
+
+================================================================================
+게시글: Kyung Jin Jung
+trackingId: UlGi5QCEQV2htT83iMIyYA==
+================================================================================
+
+  [전체 발견] 1개:
+    - PROFILE (프로필 사진) | 100x100
+      경로: root.image.attributes[0].detailData.nonEntityProfilePicture.vectorImage
+      URL: https://media.licdn.com/dms/image/v2/D5603AQGU4PKv3tidKg/profile-displayphoto-scale_100_100/B56ZpnILmAJkAc-/0/1762666790
+
+  [현재 필터 적용 후 (profile-displayphoto 제외)] 0개:
+
+  [제안 필터 (feedshare-shrink만)] 0개:
+
+================================================================================
+게시글: Jeongmin Lee
+trackingId: naTcxTZ2RW6seEh4BmG17A==
+================================================================================
+
+  [전체 발견] 2개:
+    - PROFILE (프로필 사진) | 100x100
+      경로: root.image.attributes[0].detailData.nonEntityProfilePicture.vectorImage
+      URL: https://media.licdn.com/dms/image/v2/D5603AQGzroWqXC078g/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink
+    - OTHER (https://media.licdn.com/dms/image/v2/D5605AQEST6HA) | 1280x720
+      경로: root.entityEmbeddedObject.image.attributes[0].detailData.vectorImage
+      URL: https://media.licdn.com/dms/image/v2/D5605AQEST6HAfRSYXQ/videocover-high/B56ZvzElzSHsBU-/0/1769309627026?e=1770364800&v=
+
+  [현재 필터 적용 후 (profile-displayphoto 제외)] 1개:
+    - OTHER (https://media.licdn.com/dms/image/v2/D5605AQEST6HA) | https://media.licdn.com/dms/image/v2/D5605AQEST6HAfRSYXQ/videocover-high/B56ZvzElzSHsBU-/0/1769309627026?e=1770364800&v=
+
+  [제안 필터 (feedshare-shrink만)] 0개:
+
+================================================================================
+게시글: Bumgeun Song
+trackingId: GkjMmmy+S3Oc3ycLLULBjg==
+================================================================================
+
+  [전체 발견] 2개:
+    - PROFILE (프로필 사진) | 100x100
+      경로: root.image.attributes[0].detailData.nonEntityProfilePicture.vectorImage
+      URL: https://media.licdn.com/dms/image/v2/D5603AQHpXe6BrPafgg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink
+    - OTHER (https://media.licdn.com/dms/image/v2/D5610AQEYR3-B) | 1280x881
+      경로: root.entityEmbeddedObject.image.attributes[0].detailData.vectorImage
+      URL: https://media.licdn.com/dms/image/v2/D5610AQEYR3-BpXc5cQ/image-shrink_1280/B56ZwD8Sg7JIAc-/0/1769592662443?e=1770364800&
+
+  [현재 필터 적용 후 (profile-displayphoto 제외)] 1개:
+    - OTHER (https://media.licdn.com/dms/image/v2/D5610AQEYR3-B) | https://media.licdn.com/dms/image/v2/D5610AQEYR3-BpXc5cQ/image-shrink_1280/B56ZwD8Sg7JIAc-/0/1769592662443?e=1770364800&
+
+  [제안 필터 (feedshare-shrink만)] 0개:
+
+
+================================================================================
+=== 요약 ===
+================================================================================
+현재 필터(profile-displayphoto 제외): 총 7개
+제안 필터(feedshare-shrink만): 총 2개

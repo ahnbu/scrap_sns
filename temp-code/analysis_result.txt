@@ -1,0 +1,63 @@
+=== feedshare(게시물) 이미지 발견: 2개 ===
+
+--- 이미지 #1 ---
+  경로: root.included[21].entityEmbeddedObject.image.attributes[0].detailData.vectorImage
+  digitalmediaAsset: urn:li:digitalmediaAsset:D5622AQGQ042kf1I4AA
+  rootUrl: https://media.licdn.com/dms/image/v2/D5622AQGQ042kf1I4AA/feedshare-shrink_
+  해상도 옵션 (6개):
+    - 480x320 => https://media.licdn.com/dms/image/v2/D5622AQGQ042kf1I4AA/feedshare-shrink_480/B56Zvp2DOrIcAw-/0/1769154819289?e=1771459200&v=beta&t=6vmGvXUfdAFCNkl76O3sYuHe_bHFMFySktmuW9zuuWY
+    - 1280x853 => https://media.licdn.com/dms/image/v2/D5622AQGQ042kf1I4AA/feedshare-shrink_1280/B56Zvp2DOrIcAg-/0/1769154819290?e=1771459200&v=beta&t=VZ7AoUtq_FXC0fuQOo2riJ4d54ItqxR2O0deueguk5M
+    - 800x533 => https://media.licdn.com/dms/image/v2/D5622AQGQ042kf1I4AA/feedshare-shrink_800/B56Zvp2DOrIcAk-/0/1769154819290?e=1771459200&v=beta&t=t0Pwb3suZsHY7JYaLluA53sjYqIn7EsMl9cKjDY83gQ
+    - 20x13 => https://media.licdn.com/dms/image/v2/D5622AQGQ042kf1I4AA/feedshare-shrink_20/B56Zvp2DOrIcAQ-/0/1769154819290?e=1771459200&v=beta&t=hnk-hTWP73QSZ_GNq3odlSEqwXsJWlm41KZMDPFCzk0
+    - 160x106 => https://media.licdn.com/dms/image/v2/D5622AQGQ042kf1I4AA/feedshare-shrink_160/B56Zvp2DOrIcA0-/0/1769154819290?e=1771459200&v=beta&t=Td0mStj-GFEpm6OLQoVzTN001pjVpfoC2zK9wTGOkFM
+    - 1536x1024 => https://media.licdn.com/dms/image/v2/D5622AQGQ042kf1I4AA/feedshare-shrink_2048_1536/B56Zvp2DOrIcAo-/0/1769154819290?e=1771459200&v=beta&t=BnbrJ0Lv5PyXCpNCxL5mb8d4wlaIN36w8bPMpD77lT0
+
+--- 이미지 #2 ---
+  경로: root.included[24].entityEmbeddedObject.image.attributes[0].detailData.vectorImage
+  digitalmediaAsset: urn:li:digitalmediaAsset:D5622AQF8gMZVYRtm4w
+  rootUrl: https://media.licdn.com/dms/image/v2/D5622AQF8gMZVYRtm4w/feedshare-shrink_
+  해상도 옵션 (6개):
+    - 800x552 => https://media.licdn.com/dms/image/v2/D5622AQF8gMZVYRtm4w/feedshare-shrink_800/B56Zv.MGkNKQAg-/0/1769496144921?e=1771459200&v=beta&t=FYOZ-btiTxe_PtcIAe7oCG3WRuELGR73UVPOgnqJimg
+    - 160x110 => https://media.licdn.com/dms/image/v2/D5622AQF8gMZVYRtm4w/feedshare-shrink_160/B56Zv.MGkNKQAw-/0/1769496144921?e=1771459200&v=beta&t=DXyLB9WKevL9IMAPEptYrqLjn4HF5dBIaYC6zuryNK8
+    - 1842x1270 => https://media.licdn.com/dms/image/v2/D5622AQF8gMZVYRtm4w/feedshare-shrink_2048_1536/B56Zv.MGkNKQAk-/0/1769496144921?e=1771459200&v=beta&t=E0ILele4gj9qWBUTcSdBJJNpTn2K0tNGQROitL0UU9k
+    - 20x14 => https://media.licdn.com/dms/image/v2/D5622AQF8gMZVYRtm4w/feedshare-shrink_20/B56Zv.MGkNKQAM-/0/1769496144921?e=1771459200&v=beta&t=pGaKhv-ZBiMJqtX5ZnpINGFNlVJw4Xf1bPkBNpwMFu0
+    - 1280x883 => https://media.licdn.com/dms/image/v2/D5622AQF8gMZVYRtm4w/feedshare-shrink_1280/B56Zv.MGkNKQAc-/0/1769496144921?e=1771459200&v=beta&t=Ve3jjX-xWJa3eqQ9QRaYWHkD8BMola1eLDDcR78zdJ0
+    - 480x331 => https://media.licdn.com/dms/image/v2/D5622AQF8gMZVYRtm4w/feedshare-shrink_480/B56Zv.MGkNKQAs-/0/1769496144922?e=1771459200&v=beta&t=H-cRombhqTCFpl-aLN_vzQAkZJpRy_wUaXPpsTC4Kbg
+
+
+=== articleshare(기사 미리보기) 이미지 발견: 1개 ===
+  https://media.licdn.com/dms/image/sync/v2/D5627AQHB7-AEd_9ycA/articleshare-shrink_
+
+
+=== 게시글 목록 (included 배열에서 EntityResultViewModel 찾기) ===
+included 배열 길이: 29
+  [19] trackingId=+VhrLM/yRfa9k64Q1umIGQ== | SangRok Jung
+       url: https://www.linkedin.com/feed/update/urn:li:activity:7419563139156992000?updateEntityUrn=urn%3Ali%3A
+  [20] trackingId=6EvOF9sLQ9u+bRbmncnkXg== | 정구봉 Goobong Jeong
+       url: https://www.linkedin.com/feed/update/urn:li:activity:7422035691510984705?updateEntityUrn=urn%3Ali%3A
+  [21] trackingId=6cPxrLXvTeiGI8LJT6r0oA== | SEMYOUNG BAEK (백세명) *** HAS FEEDSHARE IMAGE ***
+       url: https://www.linkedin.com/feed/update/urn:li:activity:7421318465455722496?updateEntityUrn=urn%3Ali%3A
+  [22] trackingId=Cp6EHX3RRqC0JWy3XUuarg== | Joongsoo Park
+       url: https://www.linkedin.com/feed/update/urn:li:activity:7418270572356370432?updateEntityUrn=urn%3Ali%3A
+  [23] trackingId=ThNddUTLSYGl5ddydV6ALg== | 티타임즈
+       url: https://www.linkedin.com/feed/update/urn:li:activity:7420046768471433216?updateEntityUrn=urn%3Ali%3A
+  [24] trackingId=PDupPSMZSCyRHnO22qdbJQ== | 홍민지Hong Minji *** HAS FEEDSHARE IMAGE ***
+       url: https://www.linkedin.com/feed/update/urn:li:activity:7421804762028961792?updateEntityUrn=urn%3Ali%3A
+  [25] trackingId=NeBbeOUkTcO82EYhBIK/8g== | 정구봉 Goobong Jeong
+       url: https://www.linkedin.com/feed/update/urn:li:activity:7420216201961906177?updateEntityUrn=urn%3Ali%3A
+  [26] trackingId=UlGi5QCEQV2htT83iMIyYA== | Kyung Jin Jung
+       url: https://www.linkedin.com/feed/update/urn:li:activity:7411204617524391938?updateEntityUrn=urn%3Ali%3A
+  [27] trackingId=naTcxTZ2RW6seEh4BmG17A== | Jeongmin Lee
+       url: https://www.linkedin.com/feed/update/urn:li:activity:7421022478979948545?updateEntityUrn=urn%3Ali%3A
+  [28] trackingId=GkjMmmy+S3Oc3ycLLULBjg== | Bumgeun Song
+       url: https://www.linkedin.com/feed/update/urn:li:activity:7422209668422324224?updateEntityUrn=urn%3Ali%3A
+
+EntityResultViewModel 총: 10개
+
+
+=== JSON 최상위 구조 ===
+data/ (dict, 2 keys)
+  data/ (dict, 3 keys)
+    searchDashClustersByAll/ (dict, 5 keys)
+  errors[] (list, len=1)
+included[] (list, len=29)
