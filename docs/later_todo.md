@@ -4,7 +4,7 @@
 
 ## Threads (Pass 2 & Refactoring)
 
-- [ ] **Producer/Consumer 분리 완료**: `threads_scrap.py`를 URL 수집 전용으로 경량화하고, `scrap_single_post.py`와 연동된 완전한 2-Pass 아키텍처 구축.
+- [ ] **Producer/Consumer 분리 완료**: `thread_scrap.py`를 URL 수집 전용으로 경량화하고, `scrap_single_post.py`와 연동된 완전한 2-Pass 아키텍처 구축.
 - [ ] **Playwright 멀티 프로필 지원**: 현재 고정된 사용자 데이터 디렉토리 외에 여러 Chrome 프로필을 선택하여 실행할 수 있는 옵션 추가.
 - [ ] **영상 수집 품질 향상**: 메타 CDN의 403 에러 우회 로직 고도화 및 원본 영상 저장 기능 검토.
 

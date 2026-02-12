@@ -21,7 +21,7 @@
 | `npm run start`          | `python server.py`         | Flask 백엔드 서버 실행           |
 | `npm run view`           | `run_viewer.bat`           | 뷰어 런처 실행 (서버 + 브라우저) |
 | `npm run stop`           | `stop_viewer.bat`          | 실행 중인 뷰어 및 서버 강제 종료 |
-| `npm run scrap:threads`  | `python threads_scrap.py`  | Threads 데이터 수집 실행         |
+| `npm run scrap:threads`  | `python thread_scrap.py`   | Threads 데이터 수집 실행         |
 | `npm run scrap:linkedin` | `python linkedin_scrap.py` | LinkedIn 데이터 수집 실행        |
 | `npm run scrap:all`      | `python total_scrap.py`    | 전체 플랫폼 통합 수집 실행       |
 

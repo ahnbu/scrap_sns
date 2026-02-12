@@ -95,7 +95,7 @@ THREADS_PW=your_password
 
 ```bash
 # Threads만 수집
-python threads_scrap.py --mode update
+python thread_scrap.py --mode update
 
 # LinkedIn 저장된 게시물 수집
 python linkedin_scrap.py --mode all
@@ -158,7 +158,7 @@ python merge_and_update.py
 
 ## ⚙️ 설정 옵션 (Threads)
 
-`threads_scrap.py` 파일 상단에서 다음 설정을 변경할 수 있습니다:
+`thread_scrap.py` 파일 상단에서 다음 설정을 변경할 수 있습니다:
 
 ```python
 # 수집 개수 제한 (0 = 무제한)
@@ -537,7 +537,7 @@ user_stats = df['username'].value_counts()
 scrap_sns/
 ├── .env.local # 환경 변수 (Git 제외)
 ├── .gitignore # Git 제외 파일 목록
-├── threads_scrap.py # Threads 크롤러 (메인)
+├── thread_scrap.py # Threads 크롤러 (메인)
 ├── linkedin_scrap.py # LinkedIn 크롤러
 ├── auth.json # Threads 세션 (Git 제외)
 ├── auth_linkedin.json # LinkedIn 세션 (Git 제외)
@@ -561,7 +561,7 @@ scrap_sns/
 ```bash
 # Threads 로그인 이슈
 rm auth.json
-python threads_scrap.py
+python thread_scrap.py
 
 # LinkedIn 로그인 이슈
 rm auth_linkedin.json

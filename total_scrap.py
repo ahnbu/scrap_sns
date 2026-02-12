@@ -45,28 +45,27 @@ def run_scrapers(mode='update'):
     print(f"병렬 스크래퍼 실행 시작... (모드: {mode})")
     
     # 1단계: Producer 실행 (URL 목록 확보)
-    print(f"   [Pass 1] Producer 실행: threads_scrap.py --mode {mode}")
-    subprocess.run(["python", "threads_scrap.py", "--mode", mode])
+    print(f"   [Pass 1] Producer 실행: thread_scrap.py --mode {mode}")
+    subprocess.run(["python", "thread_scrap.py", "--mode", mode])
 
     # 2단계: Consumer 실행 (상세 수집 및 자동 통합)
-    print("   [Pass 2] Consumer 실행: scrap_single_post.py")
-    subprocess.run(["python", "scrap_single_post.py"])
+    print("   [Pass 2] Consumer 실행: thread_scrap_single.py")
+    subprocess.run(["python", "thread_scrap_single.py"])
 
-    # 3단계: 기타 스크래퍼 병렬 실행 (LinkedIn, Twitter 등)
-    scrapers = [
-        ["python", "linkedin_scrap.py", "--mode", mode],
-        ["python", "twitter_scrap.py", "--mode", mode]
-    ]
+    # 3단계: 기타 스크래퍼 순차/병렬 실행
+    # LinkedIn은 병렬로 실행
+    linkedin_p = subprocess.Popen(["python", "linkedin_scrap.py", "--mode", mode])
     
-    processes = []
-    for cmd in scrapers:
-        print(f"   실행 중: {' '.join(cmd)}")
-        p = subprocess.Popen(cmd)
-        processes.append(p)
-        
-    print(f"{len(processes)}개의 스크래퍼가 완료되기를 기다리는 중...")
-    for p in processes:
-        p.wait()
+    # X(Twitter)는 Producer-Consumer 파이프라인으로 순차 실행
+    print(f"   [X/Twitter] 1단계: twitter_scrap.py (목록 확보)")
+    subprocess.run(["python", "twitter_scrap.py", "--mode", mode])
+    
+    print(f"   [X/Twitter] 2단계: twitter_scrap_single.py (상세 타래 수집)")
+    subprocess.run(["python", "twitter_scrap_single.py"])
+    
+    # LinkedIn 완료 대기
+    print("LinkedIn 스크래퍼 완료 대기 중...")
+    linkedin_p.wait()
     print("모든 스크래퍼 실행 완료.")
 
 

@@ -8,7 +8,7 @@
     "start": "python server.py",
     "view": "run_viewer.bat",
     "stop": "stop_viewer.bat",
-    "scrap:threads": "python threads_scrap.py",
+    "scrap:threads": "python thread_scrap.py",
     "scrap:linkedin": "python linkedin_scrap.py",
     "scrap:all": "python total_scrap.py"
   },
