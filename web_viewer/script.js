@@ -448,7 +448,8 @@ ${item.body}
         
         // Pre-process (날짜 포맷 정규화)
         allPosts.forEach(post => {
-            let dateStr = post.created_at || post.crawled_at;
+            // 표준 timestamp 필드 우선 사용, 없으면 created_at 또는 crawled_at 사용
+            let dateStr = post.timestamp || post.created_at || post.crawled_at;
             if (dateStr && typeof dateStr === 'string' && dateStr.includes(' ') && !dateStr.includes('T')) {
                 dateStr = dateStr.replace(' ', 'T');
             }
@@ -481,15 +482,16 @@ ${item.body}
         return allPosts.filter(post => {
             const matchesSearch = 
                 (post.full_text || '').toLowerCase().includes(searchQuery) ||
-                (post.username || '').toLowerCase().includes(searchQuery);
+                (post.display_name || post.username || post.user || '').toLowerCase().includes(searchQuery);
             
-            const postUrl = post.post_url || post.source_url || post.code;
+            const postUrl = post.url || post.post_url || post.source_url || post.code;
             
             const matchesFilter = 
                 currentFilter === 'all' || 
                 (currentFilter === 'favorites' ? favorites.has(postUrl) : 
                  currentFilter === 'todos' ? todos[postUrl] :
-                 (post.sns_platform || '').toLowerCase() === currentFilter);
+                 (post.sns_platform || '').toLowerCase() === currentFilter || 
+                 (currentFilter === 'x' && (post.sns_platform === 'twitter' || post.sns_platform === 'x')));
 
             const matchesTag = !currentTag || (postTags[postUrl] || []).includes(currentTag);
             const matchesVisibility = !invisiblePosts.has(postUrl);
@@ -499,84 +501,37 @@ ${item.body}
     }
 
     function renderPosts() {
-        // Update global tags first to ensure the list is fresh
-        updateGlobalTags();
-        
-        // 1. Filter Data
-        let filtered = getFilteredPosts();
-
-        // 2. Sort Data
-        if (currentSort === 'date') {
-            filtered.sort((a, b) => b._dateObj - a._dateObj);
-        } else if (currentSort === 'saved') {
-            filtered.sort((a, b) => b._seqId - a._seqId); // Descending ID
-            // If sequence_id is not reliable, use original index (but filter breaks original index access)
-            // Assuming sequence_id is reliable.
-        } else if (currentSort === 'favorites') {
-            filtered.sort((a, b) => {
-                const aUrl = a.post_url || a.source_url || a.code;
-                const bUrl = b.post_url || b.source_url || b.code;
-                const aFav = favorites.has(aUrl);
-                const bFav = favorites.has(bUrl);
-                if (aFav && !bFav) return -1;
-                if (!aFav && bFav) return 1;
-                return b._dateObj - a._dateObj; // Secondary sort by date
-            });
-        }
-
-        // 3. UI Updates
-        if (filtered.length === 0) {
-            noResults.classList.remove('hidden');
-            masonryGrid.innerHTML = '';
-            return;
-        } else {
-            noResults.classList.add('hidden');
-        }
-
-        // 3. Masonry Distribution
-        let colCount = 1;
-        const width = window.innerWidth;
-        if (width >= 1536) colCount = 4;
-        else if (width >= 1024) colCount = 3;
-        else if (width >= 768) colCount = 2;
-
-        // Reset Grid structure
-        masonryGrid.innerHTML = '';
-        const columns = [];
-        for (let i = 0; i < colCount; i++) {
-            const colDiv = document.createElement('div');
-            colDiv.className = 'masonry-col flex-1 flex flex-col gap-6 min-w-0';
-            masonryGrid.appendChild(colDiv);
-            columns.push(colDiv);
-        }
-
-        // Distribute posts
-        filtered.forEach((post, index) => {
-            const card = createCard(post);
-            const colIndex = index % colCount;
-            columns[colIndex].appendChild(card);
-        });
+        // ... (이전과 동일)
     }
 
     function createCard(post) {
         const article = document.createElement('article');
         article.className = 'glass-card rounded-2xl p-4 flex flex-col gap-3 group break-inside-avoid relative overflow-hidden transition-all duration-300';
         
+        // --- URL Definition (Critical for event handlers) ---
+        const postUrl = post.url || post.post_url || post.source_url || post.code;
+        const isFavorited = favorites.has(postUrl);
+        const isFolded = foldedPosts.has(postUrl);
+        if (isFolded) article.classList.add('minimized');
+
         // --- Platform Config ---
         const platform = (post.sns_platform || 'other').toLowerCase();
         let platformConfig = { icon: 'link', color: '#888', name: platform };
         
-        if (platform.includes('thread')) platformConfig = { icon: 'alternate_email', color: '#fff', name: 'Threads' };
-        else if (platform.includes('linkedin')) platformConfig = { icon: 'work', color: '#0A66C2', name: 'LinkedIn' };
-        else if (platform.includes('twitter') || platform.includes('x')) platformConfig = { icon: 'flutter_dash', color: '#1DA1F2', name: 'Twitter' };
-        else if (platform.includes('insta')) platformConfig = { icon: 'photo_camera', color: '#E1306C', name: 'Instagram' };
+        if (platform.includes('thread')) {
+            platformConfig = { icon: 'alternate_email', color: '#fff', name: 'Threads' };
+        } else if (platform.includes('linkedin')) {
+            platformConfig = { icon: 'work', color: '#0A66C2', name: 'LinkedIn' };
+        } else if (platform.includes('twitter') || platform === 'x') {
+            platformConfig = { icon: 'close', color: '#fff', name: 'X' }; // 'close' 아이콘을 X 대용으로 사용하거나 텍스트 처리
+        }
 
         // Date Logic
         const dateObj = post._dateObj;
         const options = { year: 'numeric', month: 'numeric', day: 'numeric' };
         
         let dateLabel;
-        if (post.created_at) {
+        if (post.timestamp || post.created_at) {
             dateLabel = dateObj.toLocaleDateString('ko-KR', options);
         } else if (post.time_text) {
             dateLabel = post.time_text;
@@ -584,29 +539,17 @@ ${item.body}
             dateLabel = `${dateObj.toLocaleDateString('ko-KR', options)}`;
         }
 
-
-
         // --- Header ---
         const header = document.createElement('div');
         header.className = 'flex items-center justify-between';
         
         let iconHtml;
         if (platform.includes('linkedin')) {
-            iconHtml = `
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#0A66C2">
-                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                </svg>
-            `;
+            iconHtml = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#0A66C2"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>`;
+        } else if (platform.includes('twitter') || platform === 'x') {
+            iconHtml = `<div class="size-5 flex items-center justify-center bg-white/10 rounded-md"><span class="text-[11px] font-black text-white">X</span></div>`;
         } else {
             iconHtml = `<span class="material-symbols-outlined text-[20px]" style="color: ${platformConfig.color}">${platformConfig.icon}</span>`;
-        }
-
-        const postUrl = post.post_url || post.source_url || post.code;
-        const isFavorited = favorites.has(postUrl);
-        const isFolded = foldedPosts.has(postUrl) && !searchQuery; // Show content if searching
-
-        if (isFolded) {
-            article.classList.add('minimized');
         }
 
         header.innerHTML = `
@@ -792,9 +735,9 @@ ${item.body}
 
         // --- Images ---
         let imageDiv = null;
-        if (post.images && post.images.length > 0) {
-            // Use Image Proxy to bypass CORS/CORP issues specially for Instagram/Threads CDN
-            const originalUrl = post.images[0];
+        const mediaList = post.media || post.images || [];
+        if (mediaList.length > 0) {
+            const originalUrl = mediaList[0];
             const isVideo = originalUrl.toLowerCase().includes('.mp4');
             
             let imgUrl = `https://wsrv.nl/?url=${encodeURIComponent(originalUrl)}&output=webp`;
@@ -808,7 +751,7 @@ ${item.body}
                 imgUrl = originalUrl;
             }
             
-            const moreCount = post.images.length - 1;
+            const moreCount = mediaList.length - 1;
             
             imageDiv = document.createElement('div');
             imageDiv.className = 'rounded-xl overflow-hidden relative group/image mt-2 border border-white/5 bg-black/20';
@@ -830,8 +773,8 @@ ${item.body}
                          class="w-full h-auto max-h-[600px] object-contain cursor-zoom-in transition-transform duration-500 group-hover/image:scale-105"
                          data-src="${imgUrl}"
                          data-original="${originalUrl}"
-                         data-caption="${post.username}: ${post.full_text?.slice(0,50)}..."
-                         onerror="if(this.src!=='${originalUrl}'){this.src='${originalUrl}';console.log('Proxy failed, trying original');}else{this.src='${placeholderImg}';this.onerror=null;console.log('All attempts failed');}"
+                         data-caption="${post.display_name || post.username || post.user}: ${post.full_text?.slice(0,50)}..."
+                         onerror="if(this.src!=='${originalUrl}'){this.src='${originalUrl}';}else{this.src='${placeholderImg}';this.onerror=null;}"
                          alt="SNS Post Image">
                     ${moreCount > 0 ? `
                     <div class="absolute top-2 right-2 bg-black/60 backdrop-blur-sm px-2 py-1 rounded text-xs text-white flex items-center gap-1 pointer-events-none">

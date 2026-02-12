@@ -306,19 +306,27 @@ class LinkedinScraper:
             time_text = item.get("secondarySubtitle", {}).get("text", "").replace(" • ", "").strip()
 
             post_data = {
-                "code": activity_id,
+                "id": activity_id,
+                "code": activity_id, # 호환성 유지
+                "user": user_link.split("/in/")[-1].replace("/", "") if "/in/" in user_link else username,
                 "username": username,
+                "display_name": username,
+                "timestamp": f"{date_str} 00:00:00", # LinkedIn은 정확한 시간 정보 부족 시 날짜만 사용
                 "created_at": date_str,
+                "date": date_str,
                 "time_text": time_text,
                 "full_text": clean_text(text),
+                "url": post_url,
                 "post_url": post_url,
                 "profile_slogan": profile_slogan,
+                "media": list(set(images)),
                 "images": list(set(images)),
                 "user_link": user_link,
-
+                "sns_platform": "linkedin",
                 "crawled_at": CRAWL_START_TIME.isoformat(),
                 "content_type": "carousel" if len(images) > 1 else ("image" if images else "text"),
-                "source": "network"
+                "source": "network",
+                "sequence_id": 0
             }
             
             self.posts.append(post_data)

@@ -1,7 +1,7 @@
 # Data Export Report
 
-- **Generated At**: 2026-02-12T11:11:54.776040
-- **Total Posts**: 414
+- **Generated At**: 2026-02-12T12:46:41.031738
+- **Total Posts**: 482
 
 ---
 
@@ -17373,5 +17373,481 @@ p.s. 댓글은 독자들에게 도움을 줍니다.
 7. 직장인들은 당연히 눈앞에 보이는 것을 잘하기 위한 기술을 연마하는 것은 필요하다. 사업가 또한 당장 생존하고 매출과 이익을 내는데 초점을 맞추는 것이 필요하다. 그러나 당장 눈 앞에 보이는 쓸데있는것, 효율적인 것, 단기성과에만 집착하는 것만으로는 지속가능한 미래를 가져오기 어렵다. 10~20프로는 미래에 투자할 필요가 있다.
 
 8. 과거 쓸데없는 일을 한 것 같은 시간 또한 후회할 필요가 없다. 제가 #커넥팅 책에서도 말한것 같이 이 경험이 어떤 dot로서 connecting되어 우리의 커리어에 어떤 영향을 줄지 모르기 때문이다.
+
+---
+
+## 415. Post None
+> **Date**: 
+
+
+
+---
+
+## 416. Post None
+> **Date**: 
+
+
+
+---
+
+## 417. Post None
+> **Date**: 
+
+
+
+---
+
+## 418. Post None
+> **Date**: 
+
+
+
+---
+
+## 419. Post None
+> **Date**: 
+
+
+
+---
+
+## 420. Post None
+> **Date**: 
+
+
+
+---
+
+## 421. Post None
+> **Date**: 
+
+
+
+---
+
+## 422. Post None
+> **Date**: 
+
+
+
+---
+
+## 423. Post None
+> **Date**: 
+
+
+
+---
+
+## 424. Post None
+> **Date**: 
+
+
+
+---
+
+## 425. Post None
+> **Date**: 
+
+
+
+---
+
+## 426. Post None
+> **Date**: 
+
+
+
+---
+
+## 427. Post None
+> **Date**: 
+
+
+
+---
+
+## 428. Post None
+> **Date**: 
+
+
+
+---
+
+## 429. Post None
+> **Date**: 
+
+
+
+---
+
+## 430. Post None
+> **Date**: 
+
+
+
+---
+
+## 431. Post None
+> **Date**: 
+
+
+
+---
+
+## 432. Post None
+> **Date**: 
+
+
+
+---
+
+## 433. Post None
+> **Date**: 
+
+
+
+---
+
+## 434. Post None
+> **Date**: 
+
+
+
+---
+
+## 435. Post None
+> **Date**: 
+
+
+
+---
+
+## 436. Post None
+> **Date**: 
+
+
+
+---
+
+## 437. Post None
+> **Date**: 
+
+
+
+---
+
+## 438. Post None
+> **Date**: 
+
+
+
+---
+
+## 439. Post None
+> **Date**: 
+
+
+
+---
+
+## 440. Post None
+> **Date**: 
+
+
+
+---
+
+## 441. Post None
+> **Date**: 
+
+
+
+---
+
+## 442. Post None
+> **Date**: 
+
+
+
+---
+
+## 443. Post None
+> **Date**: 
+
+
+
+---
+
+## 444. Post None
+> **Date**: 
+
+
+
+---
+
+## 445. Post None
+> **Date**: 
+
+
+
+---
+
+## 446. Post None
+> **Date**: 
+
+
+
+---
+
+## 447. Post None
+> **Date**: 
+
+
+
+---
+
+## 448. Post None
+> **Date**: 
+
+
+
+---
+
+## 449. Post None
+> **Date**: 
+
+
+
+---
+
+## 450. Post None
+> **Date**: 
+
+
+
+---
+
+## 451. Post None
+> **Date**: 
+
+
+
+---
+
+## 452. Post None
+> **Date**: 
+
+
+
+---
+
+## 453. Post None
+> **Date**: 
+
+
+
+---
+
+## 454. Post None
+> **Date**: 
+
+
+
+---
+
+## 455. Post None
+> **Date**: 
+
+
+
+---
+
+## 456. Post None
+> **Date**: 
+
+
+
+---
+
+## 457. Post None
+> **Date**: 
+
+
+
+---
+
+## 458. Post None
+> **Date**: 
+
+
+
+---
+
+## 459. Post None
+> **Date**: 
+
+
+
+---
+
+## 460. Post None
+> **Date**: 
+
+
+
+---
+
+## 461. Post None
+> **Date**: 
+
+
+
+---
+
+## 462. Post None
+> **Date**: 
+
+
+
+---
+
+## 463. Post None
+> **Date**: 
+
+
+
+---
+
+## 464. Post None
+> **Date**: 
+
+
+
+---
+
+## 465. Post None
+> **Date**: 
+
+
+
+---
+
+## 466. Post None
+> **Date**: 
+
+
+
+---
+
+## 467. Post None
+> **Date**: 
+
+
+
+---
+
+## 468. Post None
+> **Date**: 
+
+
+
+---
+
+## 469. Post None
+> **Date**: 
+
+
+
+---
+
+## 470. Post None
+> **Date**: 
+
+
+
+---
+
+## 471. Post None
+> **Date**: 
+
+
+
+---
+
+## 472. Post None
+> **Date**: 
+
+
+
+---
+
+## 473. Post None
+> **Date**: 
+
+
+
+---
+
+## 474. Post None
+> **Date**: 
+
+
+
+---
+
+## 475. Post None
+> **Date**: 
+
+
+
+---
+
+## 476. Post None
+> **Date**: 
+
+
+
+---
+
+## 477. Post None
+> **Date**: 
+
+
+
+---
+
+## 478. Post None
+> **Date**: 
+
+
+
+---
+
+## 479. Post None
+> **Date**: 
+
+
+
+---
+
+## 480. Post None
+> **Date**: 
+
+
+
+---
+
+## 481. Post None
+> **Date**: 
+
+
+
+---
+
+## 482. Post None
+> **Date**: 
+
+
 
 ---

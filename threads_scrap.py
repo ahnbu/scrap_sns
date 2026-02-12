@@ -475,28 +475,36 @@ def run():
                 created_at, time_text = format_timestamp(post.get("taken_at"))
 
                 post_info = {
+                    "id": code,
                     "code": code,
-                    "root_code": root_code, # 그룹화용 필드
+                    "root_code": root_code,
                     "pk": post.get("pk"),
+                    "user": user.get("username"),
                     "username": user.get("username"),
+                    "display_name": user.get("full_name") or user.get("username"),
                     "user_link": f"https://www.threads.net/@{user.get('username')}",
                     "full_text": caption.get("text") if caption else "",
                     "like_count": post.get("like_count", 0),
                     "reply_count": extra_info.get("direct_reply_count", 0),
                     "repost_count": extra_info.get("repost_count", 0),
                     "quote_count": extra_info.get("quote_count", 0),
+                    "timestamp": created_at,
                     "created_at": created_at,
                     "time_text": time_text,
-                    "post_url": f"https://www.threads.com/@{username}/post/{code}",
+                    "date": created_at.split(' ')[0] if created_at else None,
+                    "url": f"https://www.threads.net/@{user.get('username')}/post/{code}",
+                    "post_url": f"https://www.threads.net/@{user.get('username')}/post/{code}",
+                    "media": images,
                     "images": images,
                     "media_type": post.get("media_type"),
                     "content_type": content_type,
+                    "sns_platform": "threads",
                     "source": "network",
-                    "sequence_id": 0 # 나중에 일괄 부여
+                    "sequence_id": 0
                 }
 
                 # 유효성 검사: 텍스트가 없고 이미지도 없는 경우 제외
-                if not post_info['full_text'] and not post_info['images']:
+                if not post_info['full_text'] and not post_info['media']:
                     continue
 
                 collected_data.append(post_info)
@@ -565,21 +573,29 @@ def run():
                                     images.append(src)
 
                             post_info = {
+                                "id": code,
                                 "code": code,
                                 "pk": None, # DOM에서는 PK 알 수 없음
+                                "user": username,
                                 "username": username,
+                                "display_name": username,
                                 "user_link": f"https://www.threads.net/@{username}",
                                 "full_text": cleaned_text,
                                 "like_count": -1,
                                 "reply_count": -1,
                                 "repost_count": -1,
                                 "quote_count": -1,
+                                "timestamp": created_at,
                                 "created_at": created_at,
                                 "time_text": time_text,
-                                "post_url": f"https://www.threads.com/@{username}/post/{code}",
+                                "date": created_at.split(' ')[0] if created_at else None,
+                                "url": f"https://www.threads.net/@{username}/post/{code}",
+                                "post_url": f"https://www.threads.net/@{username}/post/{code}",
+                                "media": list(set(images)),
                                 "images": list(set(images)),
                                 "media_type": None,
                                 "content_type": "carousel" if len(images) > 1 else ("image" if images else "text"),
+                                "sns_platform": "threads",
                                 "source": "initial_dom"
                             }
                             collected_data.append(post_info)
