@@ -233,7 +233,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const mappedData = postsToSave.map(post => {
             const dateObj = post._dateObj || new Date(post.created_at || post.crawled_at);
             return {
-                author: post.username,
+                author: post.display_name || post.username,
                 date: dateObj.toISOString().slice(0, 10), // yyyy-mm-dd
                 body: post.full_text,
                 link: post.post_url,
@@ -612,7 +612,7 @@ ${item.body}
             <div class="flex items-center gap-3">
                 ${iconHtml}
                 <div class="min-w-0">
-                    <h3 class="text-sm font-semibold text-white truncate max-w-[150px]">${post.username || 'Unknown'}</h3>
+                    <h3 class="text-sm font-semibold text-white truncate max-w-[150px]">${post.display_name || post.username || 'Unknown'}</h3>
                     <p class="text-xs text-gray-400 truncate" title="${post.created_at || post.crawled_at}">
                         ${dateLabel}
                     </p>
