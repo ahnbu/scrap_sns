@@ -1,6 +1,11 @@
 {
-  "primaryFeature": "x_ui_and_ordering_fix",
+  "primaryFeature": "unified_data_schema",
   "features": {
+    "unified_data_schema": {
+      "status": "plan",
+      "updatedAt": "2026-02-12T13:30:00Z",
+      "planFile": "docs/01-plan/features/unified_data_schema.plan.md"
+    },
     "x_ui_and_ordering_fix": {
       "status": "plan",
       "updatedAt": "2026-02-12T12:15:00Z",
