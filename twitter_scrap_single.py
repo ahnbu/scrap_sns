@@ -35,8 +35,8 @@ def save_failures(failures):
     with open(FAILURE_FILE, 'w', encoding='utf-8') as f:
         json.dump(failures, f, ensure_ascii=False, indent=4)
 
-def scrape_full_thread(page, target_url, target_user):
-    """개별 트윗 페이지에서 동일 작성자의 연속된 답글(타래) 수집 및 실제 사용자명 확인"""
+def scrape_full_tweet(page, target_url, target_user):
+    """개별 트윗 페이지에서 동일 작성자의 연속된 답글(트윗 스레드) 수집 및 실제 사용자명 확인"""
     if 'None' in target_url:
         post_id = target_url.split('/')[-1]
         target_url = f"https://x.com/i/status/{post_id}"
@@ -74,8 +74,8 @@ def scrape_full_thread(page, target_url, target_user):
         print(f"      ⚠️ 페이지 접속 오류: {e}")
         return None, None, target_user
 
-    thread_texts = []
-    thread_media = set()
+    tweet_texts = []
+    tweet_media = set()
     
     articles = page.locator('article[data-testid="tweet"]').all()
     for i, article in enumerate(articles):
@@ -87,20 +87,20 @@ def scrape_full_thread(page, target_url, target_user):
             text_el = article.locator('div[data-testid="tweetText"]').first
             if text_el.count() > 0:
                 text = text_el.inner_text()
-                if text and text not in thread_texts:
-                    thread_texts.append(text)
+                if text and text not in tweet_texts:
+                    tweet_texts.append(text)
             
             imgs = article.locator('img[src*="media"]').all()
             for img in imgs:
                 src = img.get_attribute("src")
                 if src:
                     clean_src = f"https://wsrv.nl/?url={src.split('?')[0]}"
-                    thread_media.add(clean_src)
+                    tweet_media.add(clean_src)
                     
         except: continue
 
-    full_text = "\n\n---\n\n".join(thread_texts)
-    return full_text, list(thread_media), real_user
+    full_text = "\n\n---\n\n".join(tweet_texts)
+    return full_text, list(tweet_media), real_user
 
 def main():
     failures = load_failures()
@@ -169,7 +169,7 @@ def main():
                 progress_percent = int((current_num / total_targets) * 100)
                 progress_msg = f"({current_num}/{total_targets}, {progress_percent}%)"
                 
-                full_text, media, real_user = scrape_full_thread(page, url, user)
+                full_text, media, real_user = scrape_full_tweet(page, url, user)
                 
                 if full_text:
                     post['user'] = real_user
@@ -177,7 +177,7 @@ def main():
                     post['full_text'] = full_text
                     post['media'] = list(set((post.get('media', []) or []) + media))
                     post['is_detail_collected'] = True
-                    post['source'] = 'full_thread_scan'
+                    post['source'] = 'full_tweet_scan'
                     post['sns_platform'] = 'x'
                     
                     if not post.get('timestamp'):
