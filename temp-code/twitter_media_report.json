@@ -1,0 +1,43 @@
+{
+  "analyzed_file": "output_twitter/python\\twitter_py_simple_20260212.json",
+  "total_posts": 34,
+  "total_with_media": 29,
+  "only_images": 18,
+  "only_videos": 0,
+  "mixed_media": 11,
+  "no_media": 4,
+  "media_ratio": "85.29%",
+  "url_patterns": {
+    "twimg.com (Twitter 이미지)": 45
+  },
+  "sample_no_media": [
+    {
+      "platform_id": "2015913055285375415",
+      "display_name": "Jerry Park",
+      "date": "2026-01-26",
+      "full_text": "A few random notes from claude coding quite a bit last few weeks.\n\nCoding workflow. Given the latest",
+      "url": "https://x.com/jaehwa/status/2015913055285375415"
+    },
+    {
+      "platform_id": "2019786645348962433",
+      "display_name": "Harsh",
+      "date": "2026-02-06",
+      "full_text": "이게 현실임 \n미국은 거의 모든집이 수입이 들어오지않으면 3개월 버티기 힘듬\n잘 생각해보자\n올해부터 본격적으로 AI혁명이 일어나서 실업자 생기기 시작할거야 \n그런데 그 실업자가 대",
+      "url": "https://x.com/vivoplt/status/2019786645348962433"
+    },
+    {
+      "platform_id": "2020286419051393451",
+      "display_name": "Oh Hahm Ma",
+      "date": "2026-02-07",
+      "full_text": "I spent the past 24 hours setting up OpenClaw and making it useful.\n\n- AI assistant lives on my Mac ",
+      "url": "https://x.com/ohmahahm/status/2020286419051393451"
+    },
+    {
+      "platform_id": "2021397989986795983",
+      "display_name": "중얼거리는 남자",
+      "date": "2026-02-11",
+      "full_text": "이게 현실임 \n미국은 거의 모든집이 수입이 들어오지않으면 3개월 버티기 힘듬\n잘 생각해보자\n올해부터 본격적으로 AI혁명이 일어나서 실업자 생기기 시작할거야 \n그런데 그 실업자가 대",
+      "url": "https://x.com/CurbsideCroaker/status/2021397989986795983"
+    }
+  ]
+}

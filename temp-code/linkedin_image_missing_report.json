@@ -1,0 +1,17 @@
+{
+  "analyzed_file": "output_linkedin/python\\linkedin_py_full_20260212.json",
+  "total_posts": 181,
+  "content_type_distribution": {
+    "text": 62,
+    "image": 100,
+    "carousel": 0,
+    "video": 10,
+    "document": 9,
+    "unknown": 0
+  },
+  "text_only_posts": 62,
+  "has_media_posts": 119,
+  "actually_missing": 0,
+  "missing_ratio": "0.00%",
+  "missing_posts": []
+}

@@ -737,8 +737,7 @@ def run():
             convert_json_to_md(simple_filename)
         else:
             print("\n😭 수집된 데이터가 없습니다.")
-        else:
-            print("\n😭 수집된 데이터가 없습니다.")
+
 
         browser.close()
 
