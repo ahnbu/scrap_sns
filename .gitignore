@@ -31,3 +31,6 @@ node_modules/
 .codex/
 .npm-cache/
 .serena/
+.playwright/
+logs/
+scripts/
