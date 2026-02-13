@@ -679,49 +679,55 @@ def run():
         # 3단계: 저장
         # -------------------------------------------------
         if collected_data:
-            # 중복 제거 (Network 데이터 우선)
-            unique_posts = {}
-            for p in [x for x in collected_data if x['source'] == 'initial_dom']:
+            # [개선] 수집 순서(물리적 노출 순서)를 보존하며 중복 제거
+            # collected_data에는 [가장최신저장, ..., 과거저장] 순으로 담겨 있음
+            seen_codes = set()
+            ordered_unique_collected = []
+            for p in collected_data:
                 pid = p.get('platform_id') or p.get('code')
-                unique_posts[pid] = p
-            for p in [x for x in collected_data if x['source'] == 'network']:
-                pid = p.get('platform_id') or p.get('code')
-                unique_posts[pid] = p
+                if pid not in seen_codes:
+                    ordered_unique_collected.append(p)
+                    seen_codes.add(pid)
 
-            final_list = list(unique_posts.values())
+            # 기존 DB에 이미 있는 항목인지 확인하여 신규 항목만 추출
+            # (이때도 ordered_unique_collected의 순서가 유지됨)
+            new_items_to_process = []
+            for p in ordered_unique_collected:
+                pid = p.get('platform_id') or p.get('code')
+                if pid not in all_posts_map:
+                    new_items_to_process.append(p)
+                else:
+                    # 기존 항목인 경우 메타데이터 보존 (업데이트)
+                    existing = all_posts_map[pid]
+                    p['sequence_id'] = existing.get('sequence_id')
+                    p['crawled_at'] = existing.get('crawled_at')
+                    all_posts_map[pid] = p # 최신 정보로 업데이트
+
+            # 💡 [핵심] 신규 항목에 sequence_id 부여
+            # 수집된 신규 항목들을 뒤집어서 [과거저장 -> 최신저장] 순서로 만듦
+            new_items_to_process.reverse()
             
-            # 최종 리스트에서도 개수 제한 적용 (병합 과정에서 늘어날 수 있으므로)
-            if TARGET_LIMIT > 0:
-                final_list = final_list[:TARGET_LIMIT]
-
-            # 전체 리스트 업데이트
-            for p in final_list:
+            for p in new_items_to_process:
+                max_sequence_id += 1
+                p['sequence_id'] = max_sequence_id
                 pid = p.get('platform_id') or p.get('code')
                 all_posts_map[pid] = p
 
-            # 💡 [개선] 신규 및 누락된 모든 게시물에 sequence_id 부여
-            # crawled_at 기준 오름차순(과거->최신)으로 정렬하여 ID 순차 부여
-            new_posts_to_id = [p for p in all_posts_map.values() if p.get('sequence_id') is None]
-            new_posts_to_id.sort(key=lambda x: x.get('crawled_at') or '')
-            
-            for p in new_posts_to_id:
-                max_sequence_id += 1
-                p['sequence_id'] = max_sequence_id
-
-            # 최종 정렬 및 필드 순서 통일 적용
+            # 최종 리스트: sequence_id 기준 역순(큰 숫자가 위로) 정렬
+            # 이렇게 하면 Threads 웹사이트의 최신 저장글이 가장 큰 ID를 갖고 상단에 노출됨
             final_merged_list = [reorder_post(p) for p in sorted(all_posts_map.values(), key=lambda x: x.get('sequence_id', 0), reverse=True)]
 
-            print(f"\n💾 최종 데이터 {len(final_merged_list)}개 저장 중...")
+            print(f"\n💾 최종 데이터 {len(final_merged_list)}개 저장 중 (신규: {len(new_items_to_process)}개)...")
             
             # output 폴더가 없으면 자동 생성
             os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
             
             # [1] 신규 크롤링 결과 저장 (단순 업데이트 파일용은 수집된 것만)
             with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-                json.dump(final_list, f, ensure_ascii=False, indent=4)
+                json.dump(ordered_unique_collected, f, ensure_ascii=False, indent=4)
             
-            dom_cnt = sum(1 for p in final_list if p['source'] == 'initial_dom')
-            net_cnt = sum(1 for p in final_list if p['source'] == 'network')
+            dom_cnt = sum(1 for p in ordered_unique_collected if p.get('source') == 'initial_dom')
+            net_cnt = sum(1 for p in ordered_unique_collected if p.get('source') == 'network')
             print(f"✅ 신규 크롤링 저장: {OUTPUT_FILE}")
             print(f"   - Network 기반: {net_cnt}개")
             print(f"   - DOM 기반: {dom_cnt}개")

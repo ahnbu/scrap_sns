@@ -1,5 +1,5 @@
 {
-  "primaryFeature": "twitter_scrap_scroll_fix",
+  "primaryFeature": "threads_sequence_id_improvement",
   "features": {
     "twitter_scrap_scroll_fix": {
       "status": "report",
@@ -10,6 +10,14 @@
       "status": "report",
       "updatedAt": "2026-02-12T19:30:00Z",
       "reportFile": "docs/04-report/twitter_scrap_deduplication.report.md"
+    },
+    "threads_sequence_id_improvement": {
+      "status": "report",
+      "updatedAt": "2026-02-13T19:30:00Z",
+      "planFile": "docs/01-plan/features/threads_sequence_id_improvement.plan.md",
+      "designFile": "docs/02-design/features/threads_sequence_id_improvement.design.md",
+      "analysisFile": "docs/03-analysis/threads_sequence_id_improvement.analysis.md",
+      "reportFile": "docs/04-report/threads_sequence_id_improvement.report.md"
     }
   }
 }
