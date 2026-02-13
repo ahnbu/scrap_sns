@@ -5,6 +5,7 @@ import sys
 import glob
 import json
 import argparse
+import signal
 from datetime import datetime
 import io
 from utils.json_to_md import convert_json_to_md
@@ -18,6 +19,43 @@ OUTPUT_THREADS_DIR = "output_threads/python"
 OUTPUT_LINKEDIN_DIR = "output_linkedin/python"
 OUTPUT_TWITTER_DIR = "output_twitter/python"
 OUTPUT_TOTAL_DIR = "output_total"
+
+# 전역 프로세스 및 로그 파일 리스트 (시그널 핸들러에서 사용)
+running_processes = []
+opened_log_files = [] # (platform, file_handle)
+
+def signal_handler(sig, frame):
+    # 중복 호출 방지
+    if getattr(signal_handler, '_called', False):
+        return
+    signal_handler._called = True
+
+    print("\n\n🛑 사용자에 의해 중단되었습니다 (Ctrl+C). 모든 백그라운드 프로세스를 종료합니다...")
+    
+    # 프로세스 종료
+    for platform, p in running_processes:
+        try:
+            # 윈도우에서 자식 프로세스 트리를 종료하기 위한 명령 (비동기 실행)
+            subprocess.Popen(f"taskkill /F /T /PID {p.pid}", stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, shell=True)
+        except:
+            pass
+            
+    # 로그 파일 마감
+    for plat, f in opened_log_files:
+        try:
+            if not f.closed:
+                f.write(f"\n\n================================================\n")
+                f.write(f"🛑 {plat} 사용자에 의해 강제 중단됨: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+                f.write(f"================================================\n")
+                f.flush()
+                f.close()
+        except: pass
+        
+    print("🏁 프로세스 종료 명령 완료. 즉시 종료합니다.")
+    os._exit(0)
+
+# 시그널 핸들러 등록
+signal.signal(signal.SIGINT, signal_handler)
 
 # CLI 인자 파싱
 parser = argparse.ArgumentParser(description='통합 SNS 스크래퍼 (멀티 윈도우 병렬 모드)')
@@ -69,7 +107,7 @@ def should_run_consumer(platform):
     failure_file = "scrap_failures_threads.json" if platform == "Threads" else "scrap_failures_twitter.json"
     failures = {}
     if os.path.exists(failure_file):
-        with open(failure_file, 'r', encoding='utf-8') as f:
+        with open(failure_file, 'r', encoding='utf-8-sig') as f:
             try: failures = json.load(f)
             except: pass
             
@@ -78,41 +116,89 @@ def should_run_consumer(platform):
     return len(final_targets) > 0
 
 def run_scrapers_in_parallel(mode='update'):
-    print(f"🚀 플랫폼별 스크래퍼 병렬 실행 시작 (새 창에서 실행)... (모드: {mode})")
+    print(f"🚀 플랫폼별 스크래퍼 병렬 실행 시작 (백그라운드 모드)... (모드: {mode})")
     
-    CREATE_NEW_CONSOLE = 0x00000010
+    # logs 디렉토리 생성
+    LOG_DIR = "logs"
+    os.makedirs(LOG_DIR, exist_ok=True)
+    
+    CREATE_NO_WINDOW = 0x08000000
     
     # 💡 실행 여부 사전 판단
     run_threads_consumer = should_run_consumer("Threads")
     run_twitter_consumer = should_run_consumer("X/Twitter")
     
+    # -u 옵션 추가 (버퍼링 없이 즉시 로그 기록)
     commands = {
-        "Threads": f"python thread_scrap.py --mode {mode}" + (" && python thread_scrap_single.py" if run_threads_consumer else ""),
-        "X/Twitter": f"python twitter_scrap.py --mode {mode}" + (" && python twitter_scrap_single.py" if run_twitter_consumer else ""),
-        "LinkedIn": f"python linkedin_scrap.py --mode {mode}"
+        "Threads": f"python -u thread_scrap.py --mode {mode}" + (" && python -u thread_scrap_single.py" if run_threads_consumer else ""),
+        "X/Twitter": f"python -u twitter_scrap.py --mode {mode}" + (" && python -u twitter_scrap_single.py" if run_twitter_consumer else ""),
+        "LinkedIn": f"python -u linkedin_scrap.py --mode {mode}"
     }
     
-    processes = []
     for platform, cmd in commands.items():
         if platform == "Threads" and not run_threads_consumer:
             print(f"   [-] {platform}: 상세 수집할 항목 없음 (Producer만 실행)")
         if platform == "X/Twitter" and not run_twitter_consumer:
-            print(f"   [-] {platform}: 상세 수집할 항목 없음 (Producer만 실행)")
+            print(f"   [-] {platform} : 상세 수집할 항목 없음 (Producer만 실행)")
             
-        print(f"   [+] {platform} 스크래퍼 윈도우 생성 중...")
-        p = subprocess.Popen(
-            f"cmd /c title {platform} Scraper && {cmd}", 
-            creationflags=CREATE_NEW_CONSOLE
-        )
-        processes.append((platform, p))
+        print(f"   [+] {platform} 스크래퍼 실행 중 (로그: logs/{platform.lower().replace('/', '_')}.log)...")
         
-    print(f"\n⏳ 총 {len(processes)}개의 프로세스가 완료되기를 기다리는 중...")
-    print("   (각 창에서 수집이 완료되면 자동으로 닫힙니다.)")
+        # 플랫폼별 로그 파일 생성 (파일명에서 / 제거)
+        safe_name = platform.lower().replace('/', '_')
+        log_path = os.path.join(LOG_DIR, f"{safe_name}.log")
+        f = open(log_path, "w", encoding="utf-8")
+        
+        # 로그 파일 상단에 시작 구분선 추가
+        f.write(f"================================================\n")
+        f.write(f"🚀 {platform} 스크래핑 시작: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+        f.write(f"💻 명령어: {cmd}\n")
+        f.write(f"================================================\n\n")
+        f.flush()
+        
+        opened_log_files.append((platform, f))
+
+        # 💡 [개선] 유니코드 인코딩 에러 방지를 위해 환경 변수 설정
+        env = os.environ.copy()
+        env["PYTHONIOENCODING"] = "utf-8"
+
+        # cmd /c 를 사용하되 명령어가 여러 개일 때도 로그가 잘 남도록 함
+        p = subprocess.Popen(
+            f"cmd /c {cmd}", 
+            creationflags=CREATE_NO_WINDOW,
+            stdout=f,
+            stderr=subprocess.STDOUT,
+            env=env
+        )
+        running_processes.append((platform, p))
+        
+    print(f"\n⏳ 총 {len(running_processes)}개의 백그라운드 프로세스가 완료되기를 기다리는 중...")
+    print("   (실시간 진행 상황은 logs/ 폴더의 로그 파일을 통해 확인 가능합니다.)")
+    print("   (중단하시려면 Ctrl+C를 누르세요.)")
     
-    # 모든 프로세스가 완료될 때까지 대기
-    for platform, p in processes:
-        p.wait()
-        print(f"   ✅ {platform} 수집 완료.")
+    try:
+        # 모든 프로세스가 완료될 때까지 대기
+        while any(p.poll() is None for _, p in running_processes):
+            time.sleep(1) # 1초 간격으로 폴링 (Ctrl+C 신호를 받기 위함)
+            
+        for platform, p in running_processes:
+            if p.returncode == 0:
+                print(f"   ✅ {platform} 수집 완료.")
+            else:
+                print(f"   ❌ {platform} 종료 (반환 코드: {p.returncode}). logs/{platform.lower().replace('/', '_')}.log 확인 필요.")
+
+    except KeyboardInterrupt:
+        # Ctrl+C 발생 시 signal_handler 직접 호출
+        signal_handler(signal.SIGINT, None)
+
+    # 로그 파일들 정상 마감
+    for plat, f in opened_log_files:
+        try:
+            if not f.closed:
+                f.write(f"\n\n================================================\n")
+                f.write(f"🏁 {plat} 스크래핑 종료: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+                f.write(f"================================================\n")
+                f.close()
+        except: pass
 
     print("\n모든 플랫폼 스크래핑이 종료되었습니다.")
 

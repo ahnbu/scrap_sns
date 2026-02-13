@@ -181,7 +181,7 @@ def update_simple_version(new_data, stop_code, crawl_start_time):
         print(f"📂 기존 Simple 파일 로드: {latest_simple}")
         source_filename = os.path.basename(latest_simple)
         
-        with open(latest_simple, 'r', encoding='utf-8') as f:
+        with open(latest_simple, 'r', encoding='utf-8-sig') as f:
             existing_content = json.load(f)
             
             # 메타데이터 구조인지 확인
@@ -199,7 +199,7 @@ def update_simple_version(new_data, stop_code, crawl_start_time):
             thread_full_files.sort(reverse=True)
             latest_thread_full = thread_full_files[0]
             try:
-                with open(latest_thread_full, 'r', encoding='utf-8') as f:
+                with open(latest_thread_full, 'r', encoding='utf-8-sig') as f:
                     full_content = json.load(f)
                     full_posts = full_content.get('posts', [])
                     # 상세 정보는 빼고 기초 정보만 Simple로 변환
@@ -304,7 +304,7 @@ def run():
     latest_simple = find_latest_simple_file()
     if latest_simple:
         try:
-            with open(latest_simple, 'r', encoding='utf-8') as f:
+            with open(latest_simple, 'r', encoding='utf-8-sig') as f:
                 full_data = json.load(f)
                 posts = full_data.get('posts', []) if isinstance(full_data, dict) else full_data
                 for p in posts:

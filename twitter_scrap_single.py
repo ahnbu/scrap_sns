@@ -26,7 +26,7 @@ def clean_text(text):
 
 def load_failures():
     if os.path.exists(FAILURE_FILE):
-        with open(FAILURE_FILE, 'r', encoding='utf-8') as f:
+        with open(FAILURE_FILE, 'r', encoding='utf-8-sig') as f:
             try: return json.load(f)
             except: return {}
     return {}

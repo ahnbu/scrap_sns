@@ -113,7 +113,7 @@ def parse_duration(duration_str):
 
 def load_json(filepath):
     if os.path.exists(filepath):
-        with open(filepath, "r", encoding="utf-8") as f:
+        with open(filepath, "r", encoding="utf-8-sig") as f:
             try:
                 return json.load(f)
             except:

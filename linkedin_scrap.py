@@ -35,7 +35,7 @@ WINDOW_HEIGHT = 500    # 브라우저 높이
 # --- 헬퍼 함수 ---
 def load_json(filepath):
     if os.path.exists(filepath):
-        with open(filepath, "r", encoding="utf-8") as f:
+        with open(filepath, "r", encoding="utf-8-sig") as f:
             try:
                 return json.load(f)
             except:
