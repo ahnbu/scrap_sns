@@ -32,6 +32,18 @@
         "@modelcontextprotocol/server-sequential-thinking"
       ],
       "env": {}
+    },
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@playwright/mcp@latest",
+        "--no-sandbox"
+      ],
+      "env": {
+        "PLAYWRIGHT_MCP_NO_SANDBOX": "1",
+        "PLAYWRIGHT_BROWSERS_PATH": "D:\\vibe-coding\\scrap_sns\\.playwright"
+      }
     }
   },
   "memoryConfig": {
