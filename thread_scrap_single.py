@@ -81,6 +81,108 @@ def extract_json_from_html(html_content):
     try: return json.loads(json_str)
     except: return None
 
+def find_master_pk_recursive(data, username):
+    """Recursively search the user pk matching URL username."""
+    if not username:
+        return None
+    if isinstance(data, dict):
+        if data.get("username") == username:
+            return data.get("pk")
+        for v in data.values():
+            res = find_master_pk_recursive(v, username)
+            if res:
+                return res
+    elif isinstance(data, list):
+        for item in data:
+            res = find_master_pk_recursive(item, username)
+            if res:
+                return res
+    return None
+
+def extract_posts_from_node(node, target_code, master_pk):
+    """Extract posts from a node with author consistency filters."""
+    if not isinstance(node, dict):
+        return []
+
+    thread_items = node.get("thread_items", [])
+    if thread_items:
+        posts_to_process = [item.get("post", {}) for item in thread_items]
+    else:
+        post = node.get("post") or node
+        posts_to_process = [post]
+
+    if not posts_to_process:
+        return []
+
+    root_post = posts_to_process[0]
+    root_user_pk = root_post.get("user", {}).get("pk")
+    if not root_post.get("code"):
+        return []
+
+    extracted = []
+    for i, post in enumerate(posts_to_process):
+        if not isinstance(post, dict):
+            continue
+        code = post.get("code")
+        if not code:
+            continue
+
+        current_user_pk = post.get("user", {}).get("pk")
+        if master_pk and current_user_pk != master_pk:
+            continue
+        if root_user_pk and current_user_pk != root_user_pk:
+            continue
+
+        if i > 0:
+            text_post_app_info = post.get("text_post_app_info", {})
+            reply_to_author_id = text_post_app_info.get("reply_to_author", {}).get("id")
+            if reply_to_author_id and root_user_pk and reply_to_author_id != root_user_pk:
+                continue
+
+        created_at, _ = format_timestamp(post.get("taken_at"))
+        extracted.append({
+            "code": code,
+            "root_code": target_code,
+            "user": post.get("user", {}).get("username"),
+            "full_text": post.get("caption", {}).get("text", ""),
+            "media": [c.get("url") for c in post.get("image_versions2", {}).get("candidates", [])[:1] if c.get("url")],
+            "timestamp": created_at,
+            "sns_platform": "threads"
+        })
+    return extracted
+
+def extract_items_multi_path(data, target_code, username):
+    """
+    Fallback extraction path for Threads payload:
+    1) data.data.thread_items
+    2) data.data.edges[].node
+    3) data.data.containing_thread
+    """
+    inner_data = data.get("data", {}).get("data")
+    if not isinstance(inner_data, dict):
+        return []
+
+    master_pk = find_master_pk_recursive(data, username)
+    extracted = []
+
+    thread_items = inner_data.get("thread_items")
+    if isinstance(thread_items, list) and thread_items:
+        extracted.extend(extract_posts_from_node(inner_data, target_code, master_pk))
+
+    edges = inner_data.get("edges")
+    if isinstance(edges, list):
+        for edge in edges:
+            extracted.extend(extract_posts_from_node(edge.get("node", {}), target_code, master_pk))
+
+    containing_thread = inner_data.get("containing_thread")
+    if isinstance(containing_thread, dict):
+        extracted.extend(extract_posts_from_node(containing_thread, target_code, master_pk))
+
+    dedup = {}
+    for item in extracted:
+        dedup[item.get("code")] = item
+    return [v for v in dedup.values() if v.get("code")]
+
 def merge_thread_items(thread_items):
     """Merges multiple posts from the same thread into one single post data object."""
     if not thread_items: return None
@@ -279,24 +381,18 @@ async def worker(context, semaphore, code, username, results, lock):
             html = await page.content()
             data = extract_json_from_html(html)
             if data:
-                items = data.get("data", {}).get("data", {}).get("thread_items", [])
+                items = extract_items_multi_path(data, code, username)
                 async with lock:
                     for item in items:
-                        post = item.get("post", {})
-                        if post:
-                            created_at, _ = format_timestamp(post.get("taken_at"))
-                            results.append({
-                                "code": post.get("code"),
-                                "root_code": code,
-                                "user": post.get("user", {}).get("username"),
-                                "full_text": post.get("caption", {}).get("text", ""),
-                                "media": [c.get("url") for c in post.get("image_versions2", {}).get("candidates", [])[:1]],
-                                "timestamp": created_at,
-                                "sns_platform": "threads"
-                            })
-                Progress.current += 1
-                percent = int((Progress.current / Progress.total) * 100)
-                print(f"   ✅ 수집 완료: [{code}] ({Progress.current}/{Progress.total}, {percent}%)")
+                        results.append(item)
+                if items:
+                    Progress.current += 1
+                    percent = int((Progress.current / Progress.total) * 100)
+                    print(f"   ✅ 수집 완료: [{code}] ({Progress.current}/{Progress.total}, {percent}%)")
+                else:
+                    print(f"   ⚠️ 수집 실패(추출 0건): [{code}]")
+            else:
+                print(f"   ⚠️ 수집 실패(JSON 없음): [{code}]")
         except: print(f"   ❌ 수집 실패: [{code}]")
         finally: await page.close()
 
