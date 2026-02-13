@@ -26,3 +26,8 @@ __pycache__/
 
 # Node
 node_modules/
+
+# Local agent/runtime state
+.codex/
+.npm-cache/
+.serena/
