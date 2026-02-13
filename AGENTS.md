@@ -28,11 +28,20 @@
 - `rules/*.md` are global constraints (coding style, data schema, encoding safety, testing, security, mermaid).
 - `workflows/*.md` are process contracts; use them for multi-step operations and MCP-driven tasks.
 - `skills/*/SKILL.md` are capability packs for focused execution.
+- Some Codex clients reject unknown slash commands before model routing. In that case, use text triggers instead of slash commands.
+- Preferred text triggers:
+  - `omg-plan: <request>`
+  - `omg-review: <scope>`
+  - `omg-coordinate: <request>`
+  - `omg-orchestrate: <request>`
+  - `omg-debug: <error/context>`
+- If slash commands are supported in another client build, `/omg-*` and `/prompts:*` may still be used as optional aliases.
 - Slash commands may not exist in every client. If `/commit` is unsupported, use natural language: `commit changes using the commit skill workflow`.
 - Detailed operating guide: `.agent/README.md`.
 
 ## `omg` / `oh-my-ag` Trigger Rule
 - Treat `omg` as an alias of `oh-my-ag` in chat requests.
+- Treat `omg-*:` text triggers as explicit `oh-my-ag` workflow invocations.
 - When a user mentions `omg` or `oh-my-ag`, interpret the request as agent-orchestrated work and activate relevant `.agent` assets:
   - Select matching `skills` under `.agent/skills/`.
   - Use `workflows` under `.agent/workflows/` for multi-step, planning, review, debug, or orchestration tasks.
