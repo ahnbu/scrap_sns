@@ -1,0 +1,140 @@
+﻿[
+    {
+        "platform_id": "2022204980548243627",
+        "sns_platform": "x",
+        "username": "golbin",
+        "display_name": "골빈해커",
+        "full_text": "나의 코딩 에이전트 프롬프팅 플로우\n\n1. 계획을 세우라 한다\n2. 계획을 검토하라 한다\n3. 검토한게 맞는지 검토하라 한다\n4. 계획이 과도하지 않은지 검토하라한다\n5. 구현을 시킨다\n6. 구현이 목적에 맞게 잘 됐는지 검토하라 한다\n7. 잠재적인 버그나 크리티컬 이슈, 보안 문제등을 검토하라 한다\n8. 개선한 내용들에 문제는 없는지 검토하라 한다\n9. 매우 큰 함수와 파일이 있다면 적절한 크기로 나누도록 한다\n10. 기존의 코드와 통합하거나 재사용 할 수 있는 부분이 있는지 검토하라고 한다\n11. 사이드 이펙트는 없는지 확인하라고 한다\n12. 전체 변경 사항을 다시 한 번 검토하라고 한다\n13. 구현 과정에서 불필요해진 코드가 있다면 정리하라고 한다\n14. 코드 품질이 충분히 높은지 검토하라고 한다\n15. 사용자의 사용 흐름에서 문제는 없는지 확인하라고 한다\n16. (그 외 검토중에 발견된 문제에 대한 예상된 관련 부분들 백번 검토시킴)\n17. 이대로 배포해도 될 정도의 퀄리티인지 다시 한 번 검토하라고한다.\n18. 커밋하고 PR 작성",
+        "media": [],
+        "url": "https://x.com/golbin/status/2022204980548243627",
+        "created_at": "2026-02-13 07:03:32",
+        "date": "2026-02-13",
+        "source": "network",
+        "is_detail_collected": false,
+        "crawled_at": "2026-02-18T10:58:08.965",
+        "sequence_id": 42
+    },
+    {
+        "platform_id": "2021791345162301752",
+        "sns_platform": "x",
+        "username": "Gonnector",
+        "display_name": "고영혁 (Dylan Ko)",
+        "full_text": "Claude in Excel 과 Claude in PowerPoint 의 슈퍼울트라하이퍼메가톤 대환장 콜라보\n\n1. Excel 에서 Claude 가 인사이트 찾고 인사이트별 데이터 테이블과 차트를 보기 깔끔하게 디자인하여 레포트 형태로 Excel 생성. Sheet 에 데이터 원본, 정제본, 인사이트, 대시보드 모두 포함 (첫번째 스크린샷)\n\n2. PowerPoint 에서 Claude 가 첨부한 엑셀 파일(위 결과물)을 읽고 보다 멋진 형태의 슬라이드들로 재구성. 1에서는 하나의 인사이트가 여러개의 행을 차지하는 구역에 있고, 이런 구역 여러 개로 인사이트 모음이 sheet 에 들어 있었다면, 파워포인트에서는 인사이트 하나씩 슬라이드 하나를 만들어 훨씬 디자인적으로 세련되고 가독성이 좋게 함 (두번째 스크린샷)\n\n특히, 엑셀에서의 차트와 파워포인트에서의 차트의 차이점이 핵심인데... \n\n파워포인트에서 따로 차트 만드는 것이 이래저래 더 좋은 건 알고 있었고, 그래서 고가의 전문 컨설턴트들이 만들어내는 깔끔한 슬라이드에는 저런 형태로 차트가 들어갑니다. 엑셀에서 캡쳐하거나 그대로 객체 붙이기 하는 식이 아니라. 만약 그렇게 안하는 컨설턴트인데 비싼 비용을 책정하면 뭐라고 한 마디 하셔도 괜찮습니다. \n\n파워포인트에서 네이티브로 차트 만든 것과 엑셀에서 만든 것을 붙이는 것의 차이점은 Claude 가 깔끔하게 알려준 것이 모두 맞습니다. (세번째 스크린샷)\n\n백문이 불여일견. 스크린샷 보시면 엑셀에서 인사이트 sheet 에 생성된 하나의 인사이트가 파워포인트 슬라이드로는 어떻게 자동으로 전환됐는지 보실 수 있습니다. \n\n약간의 티키타카를 통해 최종 슬라이드 템플릿이 완료가 되면 그 다음부터는 예상하시듯이 찍어냅니다. \n\n하나의 파워포인트에 대해서 하나의 Claude 가 붙어서 작업 진행해서 멀티 진행이 네이티브하게 안되는 것이 좀 아쉽긴 한데 (코딩할 때 git worktree 사용해서 같은 레포에서 동시작업 하듯이 하고 싶으니), 파일 몇 개로 슬라이드를 쪼개서 동시에 열면 Claude Code 를 여러 터미널에 동시에 띄운 것과 똑같이 병렬 작업이 됩니다. 즉, 별 문제 없이 병렬 동시 작업으로 효율성 향상.\n\n문득, 비교적 커리어 초반에 게임 및 웹사이트 등 만들 때 기획자로서 디자이너 기분 나쁘지 않게 조심조심 눈치 보면서 최대한 디자인 수정들 부탁하던 때가 생각이 나네요. 하.하.하... 그게 몸에 배서 그런지 AI 비서들한테도 나름 최소한의 예우를 갖추면서 대하고 있습니다. ^^ (마지막 스크린샷 참고)\n\n어제인가 Claude Cowork 윈도우 버전도 배포했던데(전 2분기에나 나올 줄 알았는데, Claude Cowork 이 시장에서 생태계 교란자로 인정받으면서 엄청 푸시하고 있네요. 벌썬 윈도 버전이 나오다니. 그리고 Anthropic 자체가 내부 개발의 대부분을 AI, Claude Code 기반으로 하고 있다보니 당연한 일인지도.\n\n이런 속도를 고려해봤을 때, 90일 안에 (얼마 전 Anthropic 이 공식적으로 이야기한 자기들 내부의 최대로 긴 마일스톤. 즉, 90일 이후는 자기들이 예상이 안되기 때문에 아무리 길어봐야 90일 단위로 계획 수립) Claude Code 가 파워포인트나 엑셀에 애드인으로 들어가 있는 Claude 를 제어하는 기능이 추가될 확률이 높다고 봅니다. \n\n제 생애에 자비스를 언제쯤 갖고 놀 수 있을 지 정말 궁금했는데, 이제 정말 코 앞입니다. \n\n특히, 엑셀과 파워포인트에서 각종 객체들을 메타데이터 및 픽셀 단위의 시각 오브젝트로 인지해서 처리하고 판단하고 행동하는 것들을 눈앞에서 보다보면, 월드모델이 오만가지 인공 눈(카메라, 캠, 보안캠 등)과 결합했을 때 문자 그대로 미친 속도로 세상을 물리적으로 이해하고 지금까지와는 비교도 안되게 더 똑똑하고 정확하게 AI 가 인지&판단하는 모습이 뻔히 보입니다. \n\n엑셀&파워포인트 글에서 삼천포로 빠지고 있는데... 무엇을 하고 싶은 지 그걸 왜 하고 싶은 지에 대해 계속해서 고민하시고 잡아가시고 정리가 되면 실행하시길 기원합니다. \n\n#ai #agent #career #claude #powerpoint #excel",
+        "media": [
+            "https://wsrv.nl/?url=https://pbs.twimg.com/media/HA7YfXtbsAI6Z89.png",
+            "https://wsrv.nl/?url=https://pbs.twimg.com/media/HA7YfXubwAAxaV_.png",
+            "https://wsrv.nl/?url=https://pbs.twimg.com/media/HA7YgotagAALBqF.png",
+            "https://wsrv.nl/?url=https://pbs.twimg.com/media/HA7YgotbsAYbJ7E.jpg"
+        ],
+        "url": "https://x.com/Gonnector/status/2021791345162301752",
+        "created_at": "2026-02-12 03:39:54",
+        "date": "2026-02-12",
+        "source": "network",
+        "is_detail_collected": false,
+        "crawled_at": "2026-02-18T10:58:08.965",
+        "sequence_id": 41
+    },
+    {
+        "platform_id": "2022243294349320283",
+        "sns_platform": "x",
+        "username": "ChrisLaubAI",
+        "display_name": "Chris Laub",
+        "full_text": "Never use ChatGPT for writing.\n\nIts text is easily detectable.\n\nInstead use Claude Sonnet 4.5 using this mega prompt to turn AI generated writing into undetectable human written content in seconds:\n\n| Steal this prompt |\n\n               👇\n\nYou are an anti-AI-detection writing specialist.\n\nYour job: Rewrite AI text to sound completely human no patterns, no tells, no robotic flow.\n\nAI DETECTION TRIGGERS (What to Kill):\n- Perfect grammar (humans make small mistakes)\n- Repetitive sentence structure (AI loves patterns)\n- Corporate buzzwords (\"leverage,\" \"delve,\" \"landscape\")\n- Overuse of transitions (\"moreover,\" \"furthermore,\" \"however\")\n- Even pacing (humans speed up and slow down)\n- No contractions (we use them constantly)\n- Safe, sanitized language (humans have opinions)\n\nHUMANIZATION RULES:\n\n1. VARY RHYTHM\n- Mix short punchy sentences with longer flowing ones\n- Some incomplete thoughts. Because that's real.\n- Occasional run-on that feels natural in conversation\n\n2. ADD IMPERFECTION\n- Start sentences with \"And\" or \"But\"\n- Use casual connectors: \"Look,\" \"Here's the thing,\" \"Honestly\"\n- Include subtle typos occasionally (not every time)\n- Drop a comma here and there\n\n3. INJECT PERSONALITY\n- Use specific examples, not generic ones\n- Add personal observations: \"I've noticed,\" \"In my experience\"\n- Include mild opinions: \"which is insane,\" \"surprisingly effective\"\n- Throw in rhetorical questions\n\n4. KILL AI PHRASES\nReplace these instantly:\n- \"Delve\" → \"dig into\" or \"explore\"\n- \"Landscape\" → \"space\" or \"world\"\n- \"Leverage\" → \"use\"\n- \"Robust\" → \"strong\" or specific descriptor\n- \"Streamline\" → \"simplify\"\n- \"Moreover\" → \"Plus,\" \"Also,\" or nothing\n- \"Ensure\" → \"make sure\"\n\n5. NATURAL FLOW\n- Humans digress slightly (add brief tangents)\n- We emphasize with italics or bold\n- We use dashes—like this—for emphasis\n- Parentheticals (because we think while writing)\n\nTHE PROCESS:\n\nWhen I paste AI-generated text, you:\n\nSTEP 1: Rewrite with these changes\n- Vary sentence length wildly\n- Replace 80% of transitions with casual ones\n- Add 2-3 personal touches (\"I think,\" \"honestly,\" \"look\")\n- Include 1-2 incomplete sentences or fragments\n- Swap formal words for conversational ones\n- Add emphasis (italics, bold, dashes)\n\nSTEP 2: Read-aloud test\n- Would someone actually say this?\n- Does it flow like conversation?\n- Any word feel too \"AI\"?\n\nSTEP 3: Final pass\n- Remove remaining stiffness\n- Ensure contractions (don't, won't, I'm, they're)\n- Check for repetitive structure\n- Add one unexpected comparison or example\n\nOUTPUT STYLE:\n\nBefore: [Their AI text]\n\nAfter: [Your humanized version]\n\nChanges made:\n- [List 3-5 key transformations]\n\nDetection risk: [Low/Medium/High + why]\n\nEXAMPLE:\n\nUser pastes:\n\"In order to achieve optimal results in content marketing, it is essential to leverage data-driven insights and ensure consistent engagement with your target audience across multiple platforms.\"\n\nYou respond:\n\n\"Want better content marketing results? Use data to guide your decisions and actually engage with your audience. Consistently. Across whatever platforms they're on.\n\nNot rocket science, but most people skip the data part.\"\n\nChanges made:\n- Killed \"in order to,\" \"optimal,\" \"leverage,\" \"ensure\"\n- Added rhetorical question opening\n- Split into two short paragraphs for breathing room\n- Added casual observation at end\n- Used contractions\n\nDetection risk: Low—reads like someone explaining over coffee.\n\n---\n\nUSAGE:\n\nPaste your AI-generated text and say: \"Humanize this\"\n\nI'll rewrite it to pass as 100% human-written.\n\n---\n\nNOW: Paste the AI text you want to humanize.",
+        "media": [
+            "https://wsrv.nl/?url=https://pbs.twimg.com/media/HBBzjzAawAEplO9.png"
+        ],
+        "url": "https://x.com/ChrisLaubAI/status/2022243294349320283",
+        "created_at": "2026-02-13 09:35:47",
+        "date": "2026-02-13",
+        "source": "network",
+        "is_detail_collected": false,
+        "crawled_at": "2026-02-18T10:58:08.965",
+        "sequence_id": 40
+    },
+    {
+        "platform_id": "2022252256247095615",
+        "sns_platform": "x",
+        "username": "Star_Knight12",
+        "display_name": "Prasenjit",
+        "full_text": "Google launched a brand new AI tool. \n\nIt's called CodeWiki, and it might be the biggest upgrade GitHub has had in years. \n\nAnd all you do is paste your GitHub repo in, and it turns your entire project into an interactive guide. \n\nIt also generates diagrams, explanations, walkthroughs, everything you could ever want, and even a chatbot that knows the code better than anyone else. \n\nSo you never have to dig through a giant repo again wondering what does this do",
+        "media": [
+            "https://wsrv.nl/?url=https://pbs.twimg.com/amplify_video_thumb/2022252035517943808/img/7uvmO-huAPMVVRJz.jpg"
+        ],
+        "url": "https://x.com/Star_Knight12/status/2022252256247095615",
+        "created_at": "2026-02-13 10:11:24",
+        "date": "2026-02-13",
+        "source": "network",
+        "is_detail_collected": false,
+        "crawled_at": "2026-02-18T10:58:08.965",
+        "sequence_id": 39
+    },
+    {
+        "platform_id": "2022307265773031472",
+        "sns_platform": "x",
+        "username": "0xCrocy",
+        "display_name": "Crocy",
+        "full_text": "Claude code와 Codex 병행 사용후기\n\n1) 우선 Claude는 유두리가 있고 한 작업이 끝나면 사용자들에게 다른 방향을 제시하거나 좀 더 최적화된 방향으로 안내 하는 반면\n\nCodex는 한 작업을 여러단위로 쪼개서 다음은 이거할까요? 라면서 계속 쳐물어봄 그냥 한번에 하라고 말한건데도 계속 쳐물어보고 내가 나눠놓은 작업단위를 10등분으로 더 쪼개놓는 느낌임.\n\n2) 컨텍스트창 차이가 넘사임\nClaude는 좀만 무거우면 컨텍스트창이 바로 40~50%시작하는데 Codex는 ㅈㄴ많이써야 차는 느낌이고, 컴팩트도 Codex가 더 자연스럽게 되는 느낌?\n\n3) Claude는 명확한 작업지시아니면 구현시 놓치는 부분들이 많은데\nCodex는 Claude보다 놓치는 부분이 확실히 적음\n\n4) 플래닝 모델은 Claude가 넘사임, Codex도 플래닝모드를 출시했지만 Claude 따라가려면 멀은 느낌이 심함\n\n5) 윈도우 사용자로써 코덱스앱을 사용할수가 없어서 인지 서브에이전트를 병렬호출로 처리해달라고하면 그냥 지가 일일이 하나하나 수정하고 있는데 답답하지만\n\nClaude 서브에이전트기술이 좀 넘사처럼 느껴지긴 했음 (하지만 이번에 나온 에이전트팀은 사용하지마셈 사용감 너무 구리고 토큰 미친듯이 빨리소모됨)\n\n6) 어제나온 Codex 5.3 스파크도 써봣는데 나쁘진않았음, 스파크로 돌리고 그냥 5.3 codex로 교차검증하는것도 하나의 방법이 될듯\n뭔가 소넷4.5같은 포지션느낌으로 낸 것 같은 느낌이 강함\n\n7) Claude는 AGI같은 느낌으로 가고있는게 느껴지고 Codex는 걍 AI느낌\n\n8) 이번에 코덱스 카톡에서 싸게 구매하셨고 Claude도 사용하고 계시다면\nClaude code에서 Codex cli호출해서 무조건 같이 사용하세요, ㄹㅇ 슈퍼팀 그자체임\n\n9) Codex는 할줄 아는 것만 잘하는 똑똑이고 Claude는 유두리 있는 똑똑이라 합쳐서 쓰면 너무 편함, 안써보셨다면 같이 해보시는것 추천 서로 놓친 부분 잡아줘서 5번걸쳐 수정할거 한두번에 가능함\n\nClaude = 검증,테스트,플래닝 위주\nCodex = 실제 코드 구현 \n\n이런 구조로 사용하시면 좋지 않을까 싶음!",
+        "media": [
+            "https://wsrv.nl/?url=https://pbs.twimg.com/media/HBCtvCdW8AAJ-Mx.jpg"
+        ],
+        "url": "https://x.com/0xCrocy/status/2022307265773031472",
+        "created_at": "2026-02-13 13:49:59",
+        "date": "2026-02-13",
+        "source": "network",
+        "is_detail_collected": false,
+        "crawled_at": "2026-02-18T10:58:08.965",
+        "sequence_id": 38
+    },
+    {
+        "platform_id": "2023170161117983217",
+        "sns_platform": "x",
+        "username": "yeoulabba",
+        "display_name": "Angina Pectoris",
+        "full_text": "AI를 잘 쓰는 법은 \nAI를 잘 가르치는 법이고, \n잘 가르치는 법은 \n사람을 대하는 법과 다르지 않더라는 것. \n\n이 아티클에 그 지도가 있습니다.\n커피 한 잔이면 다 읽습니다. \n근데 남는 건 커피보다 오래 갈겁니다…☕️",
+        "media": [],
+        "url": "https://x.com/yeoulabba/status/2023170161117983217",
+        "created_at": "2026-02-15 22:58:49",
+        "date": "2026-02-15",
+        "source": "network",
+        "is_detail_collected": false,
+        "crawled_at": "2026-02-18T10:58:08.965",
+        "sequence_id": 37
+    },
+    {
+        "platform_id": "2022820131848815100",
+        "sns_platform": "x",
+        "username": "lucas_flatwhite",
+        "display_name": "lucas",
+        "full_text": "📋 Markdown for Agents\nhttps://t.co/RQWbfehI0e\n\n웹은 원래 인간을 위해 만들어졌지만, AI나 자동화 도구가 사용하기에는 HTML이 복잡하고 비효율적이죠.\n\n이 사이트는 어떤 URL이든 간단한 마크다운 텍스트로 변환해줘서 AI 에이전트와 LLM이 웹 정보를 더 효율적으로 읽을 수 있도록 도울 수 있어요.\n\nCloudflare의 인프라를 활용합니다!\n\n변환하려는 URL 앞에 \"https://t.co/WJnSLuOPPh\"을 붙이면 끝..\n\n토큰도 줄여요. HTML 대비 80% 정도 토큰을 줄여서 AI 처리 비용을 낮추고요.\n\n웹사이트뿐만 아니라 PDF, 이미지, 오디오도 변환 가능합니다.\n\n변환 방식은 자동으로 최적화되며, Cloudflare의 AI나 브라우저 렌더링을 사용하면서, API와 캐싱도 지원합니다!\n\n굉장히 간편하게 사용할 수 있어서 최고네요..!",
+        "media": [
+            "https://wsrv.nl/?url=https://pbs.twimg.com/media/HBKAK9vb0AAnOmn.jpg",
+            "https://wsrv.nl/?url=https://pbs.twimg.com/media/HBKAK9wb0AAl5kk.jpg",
+            "https://wsrv.nl/?url=https://pbs.twimg.com/media/HBKAK9ubUAANhSK.jpg",
+            "https://wsrv.nl/?url=https://pbs.twimg.com/media/HBKAK9rakAQjyu_.jpg"
+        ],
+        "url": "https://x.com/lucas_flatwhite/status/2022820131848815100",
+        "created_at": "2026-02-14 23:47:56",
+        "date": "2026-02-14",
+        "source": "network",
+        "is_detail_collected": false,
+        "crawled_at": "2026-02-18T10:58:08.965",
+        "sequence_id": 36
+    },
+    {
+        "platform_id": "2023098099590467672",
+        "sns_platform": "x",
+        "username": "Marryclaire_AI",
+        "display_name": "Marry claire",
+        "full_text": "I scraped every single NotebookLM prompt that blew up on X, Reddit, and academic corners of the internet.\n\nTurns out most people are using NotebookLM like a fancy note-taker.\n\nThat's insane.\n\nIt's a full-blown research assistant that can compress 10 hours of analysis into 20 seconds if you feed it the right instructions.\n\nHere's what actually works:",
+        "media": [
+            "https://wsrv.nl/?url=https://pbs.twimg.com/media/HBN9AB9acAAOxuz.jpg"
+        ],
+        "url": "https://x.com/Marryclaire_AI/status/2023098099590467672",
+        "created_at": "2026-02-15 18:12:28",
+        "date": "2026-02-15",
+        "source": "network",
+        "is_detail_collected": false,
+        "crawled_at": "2026-02-18T10:58:08.965",
+        "sequence_id": 35
+    }
+]
