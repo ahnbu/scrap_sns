@@ -1,15 +1,34 @@
 {
-  "primaryFeature": "threads_sequence_id_improvement",
+  "version": "2.0",
+  "lastUpdated": "2026-02-18T12:23:32.466Z",
+  "activeFeatures": [
+    "twitter_scrap_scroll_fix",
+    "twitter_scrap_deduplication",
+    "threads_sequence_id_improvement"
+  ],
+  "primaryFeature": null,
   "features": {
     "twitter_scrap_scroll_fix": {
       "status": "report",
       "updatedAt": "2026-02-12T19:30:00Z",
-      "reportFile": "docs/04-report/twitter_scrap_scroll_fix.report.md"
+      "reportFile": "docs/04-report/twitter_scrap_scroll_fix.report.md",
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-02-18T12:23:32.460Z",
+        "lastUpdated": "2026-02-12T19:30:00Z"
+      }
     },
     "twitter_scrap_deduplication": {
       "status": "report",
       "updatedAt": "2026-02-12T19:30:00Z",
-      "reportFile": "docs/04-report/twitter_scrap_deduplication.report.md"
+      "reportFile": "docs/04-report/twitter_scrap_deduplication.report.md",
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-02-18T12:23:32.460Z",
+        "lastUpdated": "2026-02-12T19:30:00Z"
+      }
     },
     "threads_sequence_id_improvement": {
       "status": "report",
@@ -17,7 +36,24 @@
       "planFile": "docs/01-plan/features/threads_sequence_id_improvement.plan.md",
       "designFile": "docs/02-design/features/threads_sequence_id_improvement.design.md",
       "analysisFile": "docs/03-analysis/threads_sequence_id_improvement.analysis.md",
-      "reportFile": "docs/04-report/threads_sequence_id_improvement.report.md"
+      "reportFile": "docs/04-report/threads_sequence_id_improvement.report.md",
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-02-18T12:23:32.460Z",
+        "lastUpdated": "2026-02-13T19:30:00Z"
+      }
     }
-  }
+  },
+  "pipeline": {
+    "currentPhase": 1,
+    "level": "Dynamic",
+    "phaseHistory": []
+  },
+  "session": {
+    "startedAt": "2026-02-18T12:23:32.465Z",
+    "onboardingCompleted": false,
+    "lastActivity": "2026-02-18T12:23:32.466Z"
+  },
+  "history": []
 }

@@ -1643,11 +1643,6 @@
     "https://www.threads.net/@do.aiworks/post/DUpJ4AFj5dX": [
         "gemini"
     ],
-    "undefined": [
-        "클로드",
-        "gemini",
-        "ppt"
-    ],
     "DUn02Eukm2o": [
         "클로드"
     ],
@@ -2409,5 +2404,10 @@
     "DUjzx-ZAVmV": [
         "gemini",
         "노트북LM"
+    ],
+    "undefined": [
+        "클로드",
+        "gemini",
+        "ppt"
     ]
 }
