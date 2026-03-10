@@ -1,6 +1,11 @@
 .env.local
 docs/.pdca-snapshots
 temp_code/
+.screenshot/
+.bkit/
+.claude/settings.local.json
+docs/.bkit-memory.json
+docs/.pdca-status.json
 
 tmp/
 auth/
@@ -37,3 +42,6 @@ scripts/
 
 # Terminal Paste Image folder
 .cp-images/
+
+_handoff/
+
