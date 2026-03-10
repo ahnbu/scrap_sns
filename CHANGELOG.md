@@ -27,7 +27,9 @@
 
 | 일시 | 유형 | 범위 | 변경내용 (목적 포함) |
 |---|---|---|---|
-| 2026-03-10 | docs | docs | 개별 페이지 스크랩 방식 진단 및 효율화 보고서 작성 (`docs/20260310_개별페이지_스크랩_방식_진단_및_효율화_보고서.md`) |
+| 2026-03-10 | feat | ui/server | Web Viewer UI 자동화 테스트(`tests/ui_verification.py`) 추가 및 Flask 서버 라우팅 고도화 |
+| 2026-03-10 | refactor | threads | Threads 파싱 로직 모듈화(`utils/threads_parser.py`) 및 단위 테스트 적용 |
+| 2026-03-10 | docs | docs | 핵심 기능 통합 테스트 보고서 최종 업데이트(`05_핵심_기능_테스트_통합_보고서.md`) |
 | 2026-03-10 | refactor | root | 프로젝트 클린업 완료 — 18개 이상의 레거시 파일 및 폴더를 _backup_20260310/으로 이동하여 루트 디렉토리 슬림화 |
 | 2026-03-10 | docs | docs/plans | P0 수정 구현 계획서(2026-03-10-p0-fixes.md) 추가 및 진단 보고서에 P0 수정 이력 업데이트 |
 | 2026-03-10 | fix | scraper | argparse 전역 실행 제거 — parse_args()를 __main__ 블록으로 이동해 import 시 SystemExit 방지 |

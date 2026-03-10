@@ -6,6 +6,13 @@ import os
 import glob
 from datetime import datetime
 from urllib.parse import urlparse
+from utils.threads_parser import (
+    format_timestamp, 
+    extract_json_from_html, 
+    find_master_pk_recursive, 
+    extract_posts_from_node, 
+    extract_items_multi_path
+)
 
 # ==========================================
 # ⚙️ Configuration
@@ -38,13 +45,6 @@ def save_failures(failures):
     with open(FAILURES_FILE, 'w', encoding='utf-8') as f:
         json.dump(failures, f, ensure_ascii=False, indent=4)
 
-def format_timestamp(ts):
-    if not ts: return None, None
-    try:
-        dt = datetime.fromtimestamp(int(ts))
-        return dt.strftime('%Y-%m-%d %H:%M:%S'), dt.strftime('%Y-%m-%d')
-    except: return None, None
-
 def get_post_code(post):
     """Legacy-safe code resolver for simple/full datasets."""
     code = post.get('code') or post.get('root_code') or post.get('platform_id')
@@ -61,127 +61,6 @@ def get_post_code(post):
         except:
             pass
     return None
-
-def extract_json_from_html(html_content):
-    """Robustly extracts specific JSON data from Threads HTML"""
-    if "thread_items" not in html_content: return None
-    ti_idx = html_content.find("thread_items")
-    marker = '"result":{"data"'
-    idx = html_content.rfind(marker, 0, ti_idx)
-    if idx == -1: return None
-    start_obj = idx + 9
-    brace_count = 0
-    json_str = ""
-    for i in range(start_obj, len(html_content)):
-        char = html_content[i]
-        if char == '{': brace_count += 1
-        elif char == '}': brace_count -= 1
-        json_str += char
-        if brace_count == 0 and char == '}': break
-    try: return json.loads(json_str)
-    except: return None
-
-def find_master_pk_recursive(data, username):
-    """Recursively search the user pk matching URL username."""
-    if not username:
-        return None
-    if isinstance(data, dict):
-        if data.get("username") == username:
-            return data.get("pk")
-        for v in data.values():
-            res = find_master_pk_recursive(v, username)
-            if res:
-                return res
-    elif isinstance(data, list):
-        for item in data:
-            res = find_master_pk_recursive(item, username)
-            if res:
-                return res
-    return None
-
-def extract_posts_from_node(node, target_code, master_pk):
-    """Extract posts from a node with author consistency filters."""
-    if not isinstance(node, dict):
-        return []
-
-    thread_items = node.get("thread_items", [])
-    if thread_items:
-        posts_to_process = [item.get("post", {}) for item in thread_items]
-    else:
-        post = node.get("post") or node
-        posts_to_process = [post]
-
-    if not posts_to_process:
-        return []
-
-    root_post = posts_to_process[0]
-    root_user_pk = root_post.get("user", {}).get("pk")
-    if not root_post.get("code"):
-        return []
-
-    extracted = []
-    for i, post in enumerate(posts_to_process):
-        if not isinstance(post, dict):
-            continue
-        code = post.get("code")
-        if not code:
-            continue
-
-        current_user_pk = post.get("user", {}).get("pk")
-        if master_pk and current_user_pk != master_pk:
-            continue
-        if root_user_pk and current_user_pk != root_user_pk:
-            continue
-
-        if i > 0:
-            text_post_app_info = post.get("text_post_app_info", {})
-            reply_to_author_id = text_post_app_info.get("reply_to_author", {}).get("id")
-            if reply_to_author_id and root_user_pk and reply_to_author_id != root_user_pk:
-                continue
-
-        created_at, _ = format_timestamp(post.get("taken_at"))
-        extracted.append({
-            "code": code,
-            "root_code": target_code,
-            "user": post.get("user", {}).get("username"),
-            "full_text": post.get("caption", {}).get("text", ""),
-            "media": [c.get("url") for c in post.get("image_versions2", {}).get("candidates", [])[:1] if c.get("url")],
-            "timestamp": created_at,
-            "sns_platform": "threads"
-        })
-    return extracted
-
-def extract_items_multi_path(data, target_code, username):
-    """
-    Fallback extraction path for Threads payload:
-    1) data.data.thread_items
-    2) data.data.edges[].node
-    3) data.data.containing_thread
-    """
-    inner_data = data.get("data", {}).get("data")
-    if not isinstance(inner_data, dict):
-        return []
-
-    master_pk = find_master_pk_recursive(data, username)
-    extracted = []
-
-    thread_items = inner_data.get("thread_items")
-    if isinstance(thread_items, list) and thread_items:
-        extracted.extend(extract_posts_from_node(inner_data, target_code, master_pk))
-
-    edges = inner_data.get("edges")
-    if isinstance(edges, list):
-        for edge in edges:
-            extracted.extend(extract_posts_from_node(edge.get("node", {}), target_code, master_pk))
-
-    containing_thread = inner_data.get("containing_thread")
-    if isinstance(containing_thread, dict):
-        extracted.extend(extract_posts_from_node(containing_thread, target_code, master_pk))
-
-    dedup = {}
-    for item in extracted:
-        dedup[item.get("code")] = item
-    return [v for v in dedup.values() if v.get("code")]
 
 def merge_thread_items(thread_items):
     """Merges multiple posts from the same thread into one single post data object."""
