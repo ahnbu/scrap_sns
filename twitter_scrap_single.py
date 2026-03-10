@@ -7,6 +7,8 @@ import argparse
 from datetime import datetime
 from playwright.sync_api import sync_playwright
 
+from utils.twitter_parser import parse_twitter_html
+
 # ===========================
 # ⚙️ 설정
 # ===========================
@@ -45,88 +47,27 @@ def scrape_full_tweet(page, target_url, target_user):
     try:
         page.goto(target_url, wait_until="domcontentloaded", timeout=30000)
         time.sleep(4)
-        
-        real_user = None
-        current_url = page.url
-        match = re.search(r'x\.com/([^/]+)/status/\d+', current_url)
-        if match and match.group(1) != 'i' and match.group(1) != 'None':
-            real_user = match.group(1)
-            
-        if not real_user:
-            user_name_div = page.locator('div[data-testid="User-Name"]').first
-            if user_name_div.count() > 0:
-                links = user_name_div.locator('a[href^="/"]').all()
-                for link in links:
-                    href = link.get_attribute("href")
-                    if href and href != "/" and "/status" not in href:
-                        real_user = href.replace("/", "")
-                        break
-        
-        if not real_user:
-            real_user = target_user
 
         show_more = page.locator('span:has-text("Show more"), span:has-text("더 보기")').first
         if show_more.count() > 0:
             try: show_more.click(); time.sleep(2)
             except: pass
             
+        html_content = page.content()
+        current_url = page.url
+        
+        try:
+            from utils.common import save_debug_snapshot
+            save_debug_snapshot(html_content, "twitter")
+        except: pass
+        
+        full_text, tweet_media, real_user = parse_twitter_html(html_content, target_user, current_url)
+        return full_text, tweet_media, real_user
+            
     except Exception as e:
         print(f"      ⚠️ 페이지 접속 오류: {e}")
         return None, None, target_user
 
-    tweet_texts = []
-    tweet_media = set()
-    
-    articles = page.locator('article[data-testid="tweet"]').all()
-    for i, article in enumerate(articles):
-        try:
-            # 💡 [개선] 작성자 확인 로직 강화 (대소문자 무시)
-            links = article.locator('a[href^="/"]').all()
-            is_author = False
-            hrefs = []
-            for link in links:
-                href = link.get_attribute("href")
-                if href:
-                    hrefs.append(href)
-                    if href.lower() == f"/{real_user.lower()}":
-                        is_author = True
-                        break
-            
-            # 메인 트윗(i=0)인 경우 작성자 확인이 실패해도 텍스트가 있으면 일단 수집 시도 (폴백)
-            if not is_author:
-                if i == 0:
-                    # 첫 번째 게시물인데 작성자 링크가 안 보이면 광고일 가능성 또는 로딩 지연
-                    # 하지만 data-testid="tweet"이므로 광고일 확률은 낮음. 
-                    # 텍스트가 존재하면 일단 작성자 본문으로 간주
-                    text_el = article.locator('div[data-testid="tweetText"]').first
-                    if text_el.count() > 0:
-                        is_author = True 
-                        print(f"      ℹ️ 첫 번째 게시물 작성자 확인 미흡하나 수집 강행 (@{real_user})")
-                else:
-                    continue # 타인의 답글은 무시
-            
-            # 💡 [개선] 인용 트윗 본문을 제외하고 해당 article의 메인 본문만 추출
-            text_els = article.locator('div[data-testid="tweetText"]').all()
-            article_body = ""
-            
-            if text_els:
-                # 첫 번째 tweetText가 보통 메인 본문임
-                article_body = text_els[0].inner_text()
-            
-            if article_body and article_body not in tweet_texts:
-                tweet_texts.append(article_body)
-            
-            imgs = article.locator('img[src*="media"]').all()
-            for img in imgs:
-                src = img.get_attribute("src")
-                if src:
-                    clean_src = f"https://wsrv.nl/?url={src.split('?')[0]}"
-                    tweet_media.add(clean_src)
-                    
-        except: continue
-
-    full_text = "\n\n---\n\n".join(tweet_texts)
-    return full_text, list(tweet_media), real_user
 
 def main():
     failures = load_failures()

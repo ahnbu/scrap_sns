@@ -122,3 +122,29 @@ def parse_relative_time(relative_str, base_time=None):
         target_time = base_time - delta
         return target_time.strftime('%Y-%m-%d %H:%M:%S'), target_time.strftime('%Y-%m-%d')
     return None, None
+
+def save_debug_snapshot(content, platform, ext="html"):
+    """
+    스크래퍼의 성공/실패 시 디버깅 및 TDD 테스트용으로 원본 데이터를 저장합니다.
+    """
+    import os
+    import time
+    try:
+        snapshot_dir = os.path.join("tests", "fixtures", "snapshots", platform)
+        os.makedirs(snapshot_dir, exist_ok=True)
+        # 최대 10개만 유지 (오래된 것 삭제)
+        existing_files = sorted(os.listdir(snapshot_dir))
+        if len(existing_files) > 10:
+            for old_file in existing_files[:-9]:
+                os.remove(os.path.join(snapshot_dir, old_file))
+                
+        snapshot_path = os.path.join(snapshot_dir, f"snapshot_{int(time.time())}.{ext}")
+        with open(snapshot_path, "w", encoding="utf-8") as f:
+            if ext == "json" and isinstance(content, dict):
+                import json
+                json.dump(content, f, ensure_ascii=False, indent=2)
+            else:
+                f.write(str(content))
+    except Exception as e:
+        print(f"Failed to save snapshot: {e}")
+

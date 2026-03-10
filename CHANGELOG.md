@@ -27,6 +27,9 @@
 
 | 일시 | 유형 | 범위 | 변경내용 (목적 포함) |
 |---|---|---|---|
+| 2026-03-10 | docs | docs/rules | 프로젝트 운영 규칙(`GEMINI.md`) 및 TDD 실전 활용 가이드 생성 |
+| 2026-03-10 | docs | docs/viewer | Web Viewer 10대 사용자 시나리오 테스트 완료 및 통합 보고서 작성 |
+| 2026-03-10 | refactor | scrapers | LinkedIn, Twitter 파싱 로직 분리 및 TDD(Pytest) 아키텍처 전면 도입 |
 | 2026-03-10 | feat | ui/server | Web Viewer UI 자동화 테스트(`tests/ui_verification.py`) 추가 및 Flask 서버 라우팅 고도화 |
 | 2026-03-10 | refactor | threads | Threads 파싱 로직 모듈화(`utils/threads_parser.py`) 및 단위 테스트 적용 |
 | 2026-03-10 | docs | docs | 핵심 기능 통합 테스트 보고서 최종 업데이트(`05_핵심_기능_테스트_통합_보고서.md`) |

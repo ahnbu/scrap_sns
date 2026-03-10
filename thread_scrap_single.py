@@ -258,6 +258,11 @@ async def worker(context, semaphore, code, username, results, lock):
             await page.goto(url, wait_until="domcontentloaded", timeout=30000)
             await asyncio.sleep(3)
             html = await page.content()
+            try:
+                from utils.common import save_debug_snapshot
+                save_debug_snapshot(html, "threads")
+            except: pass
+            
             data = extract_json_from_html(html)
             if data:
                 items = extract_items_multi_path(data, code, username)

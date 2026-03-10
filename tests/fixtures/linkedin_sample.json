@@ -1,0 +1,35 @@
+{
+    "included": [
+        {
+            "$type": "com.linkedin.voyager.dash.search.EntityResultViewModel",
+            "entityUrn": "urn:li:activity:7422622332021604353",
+            "summary": {
+                "text": "Hello LinkedIn TDD!"
+            },
+            "actorNavigationUrl": "https://www.linkedin.com/in/testuser?miniProfileUrn=123",
+            "title": {
+                "text": "Test User"
+            },
+            "primarySubtitle": {
+                "text": "Software Engineer"
+            },
+            "secondarySubtitle": {
+                "text": "2h \u2022 Edited"
+            },
+            "navigationUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7422622332021604353",
+            "entityEmbeddedObject": {
+                "artifacts": [
+                    {
+                        "width": 800,
+                        "fileIdentifyingUrlPathSegment": "feedshare-shrink_800/img.jpg"
+                    }
+                ],
+                "rootUrl": "https://media.licdn.com/dms/image/v2/"
+            }
+        },
+        {
+            "$type": "com.linkedin.voyager.dash.search.EntityResultViewModel",
+            "entityUrn": "urn:li:activity:INVALID"
+        }
+    ]
+}
