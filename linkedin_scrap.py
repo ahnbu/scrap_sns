@@ -19,10 +19,7 @@ UPDATE_DIR = os.path.join(DATA_DIR, "update")
 TARGET_LIMIT = 0       # 0 = 무제한
 
 # CLI 인자 파싱
-parser = argparse.ArgumentParser(description='LinkedIn 스크래퍼')
-parser.add_argument('--mode', choices=['all', 'update'], default='update', help='크롤링 모드 (all: 전체, update: 증분)')
-args = parser.parse_args()
-CRAWL_MODE = "update only" if args.mode == "update" else "all"
+CRAWL_MODE = "update only"  # 기본값 (import 시 사용)
 CRAWL_START_TIME = datetime.now()
 INCLUDE_IMAGES = True # 이미지 크롤링 포함 여부
 
@@ -570,5 +567,9 @@ class LinkedinScraper:
         convert_json_to_md(full_file)
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description='LinkedIn 스크래퍼')
+    parser.add_argument('--mode', choices=['all', 'update'], default='update', help='크롤링 모드')
+    args = parser.parse_args()
+    CRAWL_MODE = "update only" if args.mode == "update" else "all"
     scraper = LinkedinScraper()
     scraper.run()

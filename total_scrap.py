@@ -58,10 +58,6 @@ def signal_handler(sig, frame):
 signal.signal(signal.SIGINT, signal_handler)
 
 # CLI 인자 파싱
-parser = argparse.ArgumentParser(description='통합 SNS 스크래퍼 (멀티 윈도우 병렬 모드)')
-parser.add_argument('--mode', choices=['all', 'update'], default='update', help='크롤링 모드')
-args = parser.parse_args()
-
 def load_json(path):
     if not path or not os.path.exists(path): return {}
     with open(path, 'r', encoding='utf-8-sig') as f:
@@ -347,9 +343,9 @@ def download_images(posts):
     print(f"   ✅ 이미지 다운로드 완료: 신규 {count}개 저장됨.")
 
 
-def run():
+def run(mode='update'):
     # 1. 병렬 실행 (새 창)
-    run_scrapers_in_parallel(mode=args.mode)
+    run_scrapers_in_parallel(mode=mode)
 
     # 2. 결과 병합
     merged_results_data = merge_results()
@@ -362,4 +358,7 @@ def run():
         save_total(posts, threads_count, linkedin_count, twitter_count)
 
 if __name__ == "__main__":
-    run()
+    parser = argparse.ArgumentParser(description='통합 SNS 스크래퍼 (멀티 윈도우 병렬 모드)')
+    parser.add_argument('--mode', choices=['all', 'update'], default='update', help='크롤링 모드')
+    args = parser.parse_args()
+    run(mode=args.mode)

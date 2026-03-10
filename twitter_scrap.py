@@ -35,10 +35,6 @@ OUTPUT_FILE_PATTERN = "twitter_py_simple_{date}.json"
 # ✨ 테스트용 제한 개수 (0: 무제한)
 TARGET_LIMIT = 0 
 
-parser = argparse.ArgumentParser(description='X(Twitter) 목록 수집기 (Producer) - Refined')
-parser.add_argument('--mode', choices=['all', 'update'], default='update', help='크롤링 모드')
-args = parser.parse_args()
-
 def clean_text(text):
     if not text: return ""
     text = re.sub(r'\n{3,}', '\n\n', text)
@@ -207,7 +203,7 @@ def extract_from_html(html_content, source_label="initial_dom"):
         except: pass
     return posts
 
-def main():
+def main(args):
     start_time = datetime.now()
     all_posts_map = {}
     stop_ids = set()
@@ -441,4 +437,7 @@ def main():
         context.close()
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser(description='X(Twitter) 목록 수집기 (Producer) - Refined')
+    parser.add_argument('--mode', choices=['all', 'update'], default='update', help='크롤링 모드')
+    args = parser.parse_args()
+    main(args)

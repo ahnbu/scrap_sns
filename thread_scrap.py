@@ -46,10 +46,7 @@ DEBUG_SAVE = False # 응답 JSON 저장 비활성화
 # 🔄 크롤링 범위 설정 (CLI 인자로 받음)
 # - "all": 처음부터 끝까지 전체 수집
 # - "update": 최신 full 버전의 최상단 code까지만 수집 (신규 게시물만)
-parser = argparse.ArgumentParser(description='Threads 스크래퍼')
-parser.add_argument('--mode', choices=['all', 'update'], default='all', help='크롤링 모드 (all: 전체, update: 증분)')
-args = parser.parse_args()
-CRAWL_MODE = "update only" if args.mode == "update" else "all"
+CRAWL_MODE = "all"  # 기본값 (import 시 사용)
 
 # ===========================
 
@@ -773,4 +770,8 @@ def run():
         print("="*40)
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description='Threads 스크래퍼')
+    parser.add_argument('--mode', choices=['all', 'update'], default='all', help='크롤링 모드')
+    args = parser.parse_args()
+    CRAWL_MODE = "update only" if args.mode == "update" else "all"
     run()
