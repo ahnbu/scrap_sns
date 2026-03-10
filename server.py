@@ -134,9 +134,9 @@ def run_scrap():
                     with open(files[0], 'r', encoding='utf-8') as f:
                         latest_data = json.load(f)
                         meta = latest_data.get('metadata', {})
-                        stats["total"] = meta.get('new_items_count', 0)
-                        stats["threads"] = meta.get('new_threads_count', 0)
-                        stats["linkedin"] = meta.get('new_linkedin_count', 0)
+                        stats["total"] = meta.get('total_count', 0)
+                        stats["threads"] = meta.get('threads_count', 0)
+                        stats["linkedin"] = meta.get('linkedin_count', 0)
             except Exception as e:
                 print(f"⚠️ 통계 데이터 로드 중 에러: {str(e)}")
 
