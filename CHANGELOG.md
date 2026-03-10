@@ -4,6 +4,7 @@
 
 | 일시 | 유형 | 범위 | 변경내용 (목적 포함) |
 |---|---|---|---|
+| 2026-03-10 | docs | docs/plans | P0 수정 구현 계획서(2026-03-10-p0-fixes.md) 추가 및 진단 보고서에 P0 수정 이력 업데이트 |
 | 2026-03-10 | fix | scraper | argparse 전역 실행 제거 — parse_args()를 __main__ 블록으로 이동해 import 시 SystemExit 방지 |
 | 2026-03-10 17:09 | chore | output-linkedin-twitter | 20260213 LinkedIn/Twitter 수집 산출물을 추가해 수집 결과를 저장소 이력으로 보존 |
 | 2026-03-10 17:08 | chore | gitignore | 로컬 세션 상태 파일과 handoff 경로를 ignore에 추가하고 기존 tracked 개인 상태 파일을 저장소 추적에서 제거 |
