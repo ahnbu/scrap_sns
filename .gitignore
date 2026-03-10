@@ -45,3 +45,6 @@ scripts/
 
 _handoff/
 
+
+# Legacy Backup
+_backup_*/

@@ -4,6 +4,7 @@
 
 | 일시 | 유형 | 범위 | 변경내용 (목적 포함) |
 |---|---|---|---|
+| 2026-03-10 | refactor | root | 프로젝트 클린업 완료 — 18개 이상의 레거시 파일 및 폴더를 _backup_20260310/으로 이동하여 루트 디렉토리 슬림화 |
 | 2026-03-10 | docs | docs/plans | P0 수정 구현 계획서(2026-03-10-p0-fixes.md) 추가 및 진단 보고서에 P0 수정 이력 업데이트 |
 | 2026-03-10 | fix | scraper | argparse 전역 실행 제거 — parse_args()를 __main__ 블록으로 이동해 import 시 SystemExit 방지 |
 | 2026-03-10 17:09 | chore | output-linkedin-twitter | 20260213 LinkedIn/Twitter 수집 산출물을 추가해 수집 결과를 저장소 이력으로 보존 |
