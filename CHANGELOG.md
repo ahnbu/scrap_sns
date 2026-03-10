@@ -1,3 +1,9 @@
+
+## [2026-03-10]
+### Refactor
+- **common**: 공통 유틸리티 함수 통합 (utils/common.py 생성)
+- **scrapers**: 핵심 스크래퍼 중복 로직 제거 (	otal, 	hread, linkedin, 	witter)
+- **config**: package.json 오타 수정 (playwriter -> playwright-core)
 # CHANGELOG
 
 모든 Git 커밋 이력을 최신순으로 기록합니다. 새 커밋은 표 최상단에 추가합니다.

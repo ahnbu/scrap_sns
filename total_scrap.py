@@ -1,3 +1,4 @@
+from utils.common import load_json, save_json, clean_text, reorder_post, format_timestamp, parse_relative_time
 import subprocess
 import time
 import os
@@ -58,24 +59,6 @@ def signal_handler(sig, frame):
 signal.signal(signal.SIGINT, signal_handler)
 
 # CLI 인자 파싱
-def load_json(path):
-    if not path or not os.path.exists(path): return {}
-    with open(path, 'r', encoding='utf-8-sig') as f:
-        try: return json.load(f)
-        except: return {}
-
-def reorder_post(post):
-    STANDARD_FIELD_ORDER = [
-        "sequence_id", "platform_id", "sns_platform", "username", "display_name",
-        "full_text", "media", "url", "created_at", "date", "crawled_at", "source", "local_images"
-    ]
-    ordered_post = {}
-    for field in STANDARD_FIELD_ORDER:
-        if field in post: ordered_post[field] = post[field]
-    for key, value in post.items():
-        if key not in ordered_post: ordered_post[key] = value
-    return ordered_post
-
 def find_latest_full_file(directory, pattern):
     files = glob.glob(os.path.join(directory, pattern))
     if not files: return None

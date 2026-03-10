@@ -1,3 +1,4 @@
+from utils.common import load_json, save_json, clean_text, reorder_post, format_timestamp, parse_relative_time
 """
 Threads 저장 게시글 수집기 v9 (크롤링 범위 설정 기능 추가)
 - TARGET_LIMIT 변수로 수집 개수 제한 가능
@@ -83,32 +84,16 @@ def clean_text(full_text, username):
 
     return "\n".join(cleaned_lines).strip()
 
-def reorder_post(post):
-    STANDARD_FIELD_ORDER = [
-        "sequence_id", "platform_id", "sns_platform", "username", "display_name",
-        "full_text", "media", "url", "created_at", "date", "crawled_at", "source", "local_images"
-    ]
-    ordered_post = {}
-    for field in STANDARD_FIELD_ORDER:
-        if field in post: ordered_post[field] = post[field]
-    for key, value in post.items():
-        if key not in ordered_post: ordered_post[key] = value
-    return ordered_post
 
-def format_timestamp(ts):
-    """Unix timestamp를 YYYY-MM-DD HH:MM:SS 형식과 YYYY-MM-DD 형식으로 변환"""
-    if not ts: return None, None
+
+
     try:
         dt = datetime.fromtimestamp(int(ts))
         return dt.strftime('%Y-%m-%d %H:%M:%S'), dt.strftime('%Y-%m-%d')
     except:
         return None, None
 
-def parse_relative_time(relative_str, base_time):
-    """
-    "1주", "3일", "5시간" 등 상대적 시간을 절대 시간 문자열로 변환
-    """
-    if not relative_str: return None, None
+
     
     # 이미 절대 날짜인 경우 (예: 2024-01-01)
     if re.match(r'^\d{4}-\d{2}-\d{2}$', relative_str):

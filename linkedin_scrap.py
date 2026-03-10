@@ -1,3 +1,4 @@
+from utils.common import load_json, save_json, clean_text, reorder_post, format_timestamp, parse_relative_time
 import json
 import time
 import os
@@ -30,19 +31,9 @@ WINDOW_WIDTH = 900     # 브라우저 너비
 WINDOW_HEIGHT = 500    # 브라우저 높이
 
 # --- 헬퍼 함수 ---
-def load_json(filepath):
-    if os.path.exists(filepath):
-        with open(filepath, "r", encoding="utf-8-sig") as f:
-            try:
-                return json.load(f)
-            except:
-                return []
-    return []
 
-def save_json(filepath, data):
-    os.makedirs(os.path.dirname(filepath), exist_ok=True)
-    with open(filepath, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
+
+
 
 def clean_text(text):
     if not text:
@@ -57,17 +48,7 @@ def clean_text(text):
     
     return "\n".join(cleaned_lines).strip()
 
-def reorder_post(post):
-    STANDARD_FIELD_ORDER = [
-        "sequence_id", "platform_id", "sns_platform", "username", "display_name",
-        "full_text", "media", "url", "created_at", "date", "crawled_at", "source", "local_images"
-    ]
-    ordered_post = {}
-    for field in STANDARD_FIELD_ORDER:
-        if field in post: ordered_post[field] = post[field]
-    for key, value in post.items():
-        if key not in ordered_post: ordered_post[key] = value
-    return ordered_post
+
 
 def extract_urn_id(urn):
     # urn:li:activity:7422622332021604353 -> 7422622332021604353
@@ -90,41 +71,6 @@ def get_date_from_snowflake_id(id_str):
     except:
         return None
 
-def parse_relative_time(relative_str, base_time):
-    """
-    "1주", "3일", "5시간" 등 상대적 시간을 절대 시간 문자열로 변환
-    """
-    if not relative_str:
-        return None
-        
-    # 숫자와 단위 추출 (예: "1주", "10분", "2개월")
-    match = re.search(r'(\d+)\s*(분|시간|일|주|개월|년)', relative_str)
-    if not match:
-        return None
-        
-    value = int(match.group(1))
-    unit = match.group(2)
-    
-    if unit == "분":
-        delta = timedelta(minutes=value)
-    elif unit == "시간":
-        delta = timedelta(hours=value)
-    elif unit == "일":
-        delta = timedelta(days=value)
-    elif unit == "주":
-        delta = timedelta(weeks=value)
-    elif unit == "개월":
-        delta = timedelta(days=value * 30) # 근사치
-    elif unit == "년":
-        delta = timedelta(days=value * 365) # 근사치
-    else:
-        return None
-        
-    target_time = base_time - delta
-    return target_time.strftime('%Y-%m-%d %H:%M:%S')
-
-
-# --- 메인 클래스 ---
 class LinkedinScraper:
     def __init__(self):
         self.posts = [] # collected data
