@@ -1,0 +1,116 @@
+{
+  "version": "2.0",
+  "lastUpdated": "2026-03-10T08:21:51.405Z",
+  "activeFeatures": [
+    "twitter_scrap_scroll_fix",
+    "twitter_scrap_deduplication",
+    "threads_sequence_id_improvement",
+    "PowerShell"
+  ],
+  "primaryFeature": "PowerShell",
+  "features": {
+    "twitter_scrap_scroll_fix": {
+      "status": "report",
+      "updatedAt": "2026-02-12T19:30:00Z",
+      "reportFile": "docs/04-report/twitter_scrap_scroll_fix.report.md",
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-02-18T12:23:32.460Z",
+        "lastUpdated": "2026-02-12T19:30:00Z"
+      }
+    },
+    "twitter_scrap_deduplication": {
+      "status": "report",
+      "updatedAt": "2026-02-12T19:30:00Z",
+      "reportFile": "docs/04-report/twitter_scrap_deduplication.report.md",
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-02-18T12:23:32.460Z",
+        "lastUpdated": "2026-02-12T19:30:00Z"
+      }
+    },
+    "threads_sequence_id_improvement": {
+      "status": "report",
+      "updatedAt": "2026-02-13T19:30:00Z",
+      "planFile": "docs/01-plan/features/threads_sequence_id_improvement.plan.md",
+      "designFile": "docs/02-design/features/threads_sequence_id_improvement.design.md",
+      "analysisFile": "docs/03-analysis/threads_sequence_id_improvement.analysis.md",
+      "reportFile": "docs/04-report/threads_sequence_id_improvement.report.md",
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-02-18T12:23:32.460Z",
+        "lastUpdated": "2026-02-13T19:30:00Z"
+      }
+    },
+    "PowerShell": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-02-19T07:43:31.359Z",
+        "lastUpdated": "2026-02-19T07:43:31.359Z"
+      },
+      "lastFile": "C:/Users/ahnbu/Documents/PowerShell/Microsoft.PowerShell_profile.ps1"
+    }
+  },
+  "pipeline": {
+    "currentPhase": 1,
+    "level": "Starter",
+    "phaseHistory": []
+  },
+  "session": {
+    "startedAt": "2026-02-19T03:33:11.932Z",
+    "onboardingCompleted": false,
+    "lastActivity": "2026-02-19T07:43:31.359Z"
+  },
+  "history": [
+    {
+      "timestamp": "2026-02-19T03:30:57.832Z",
+      "action": "session_end",
+      "feature": null,
+      "details": "Session ended"
+    },
+    {
+      "timestamp": "2026-02-19T03:30:58.138Z",
+      "action": "session_end",
+      "feature": null,
+      "details": "Session ended"
+    },
+    {
+      "timestamp": "2026-02-19T03:31:19.468Z",
+      "action": "session_end",
+      "feature": null,
+      "details": "Session ended"
+    },
+    {
+      "timestamp": "2026-02-19T03:31:19.741Z",
+      "action": "session_end",
+      "feature": null,
+      "details": "Session ended"
+    },
+    {
+      "timestamp": "2026-02-19T03:32:22.012Z",
+      "action": "session_end",
+      "feature": null,
+      "details": "Session ended"
+    },
+    {
+      "timestamp": "2026-02-19T03:32:22.308Z",
+      "action": "session_end",
+      "feature": null,
+      "details": "Session ended"
+    },
+    {
+      "timestamp": "2026-02-19T07:43:31.359Z",
+      "feature": "PowerShell",
+      "phase": "do",
+      "action": "updated"
+    }
+  ]
+}
