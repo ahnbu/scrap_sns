@@ -148,12 +148,12 @@ def run_scrap():
             })
         else:
             print(f"❌ 스크래핑 실패 (코드: {process.returncode})")
-            if stderr_val:
-                print(f"--- Error Details ---\n{stderr_val}\n--------------------")
+            if stdout_val:
+                print(f"--- Error Details ---\n{stdout_val}\n--------------------")
             return jsonify({
                 "status": "error",
                 "message": f"Scraping failed with exit code {process.returncode}",
-                "error": stderr_val
+                "error": stdout_val
             }), 500
 
     except Exception as e:
