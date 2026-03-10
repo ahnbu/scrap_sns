@@ -19,7 +19,7 @@ UPDATE_DIR = os.path.join(DATA_DIR, "update")
 TARGET_LIMIT = 0       # 0 = 무제한
 
 # CLI 인자 파싱
-CRAWL_MODE = "update only"  # 기본값 (import 시 사용)
+CRAWL_MODE = "update only"  # 기본값 (__main__ 블록에서 CLI 인자로 덮어씀)
 CRAWL_START_TIME = datetime.now()
 INCLUDE_IMAGES = True # 이미지 크롤링 포함 여부
 

@@ -46,7 +46,7 @@ DEBUG_SAVE = False # 응답 JSON 저장 비활성화
 # 🔄 크롤링 범위 설정 (CLI 인자로 받음)
 # - "all": 처음부터 끝까지 전체 수집
 # - "update": 최신 full 버전의 최상단 code까지만 수집 (신규 게시물만)
-CRAWL_MODE = "all"  # 기본값 (import 시 사용)
+CRAWL_MODE = "all"  # 기본값 (__main__ 블록에서 CLI 인자로 덮어씀)
 
 # ===========================
 
