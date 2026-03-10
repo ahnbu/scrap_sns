@@ -1,4 +1,4 @@
-# 🕷️ SNS Saved Posts Crawler (SNS 허브)
+﻿# 🕷️ SNS Saved Posts Crawler (SNS 허브)
 
 Threads, LinkedIn, X(Twitter) 플랫폼의 저장된 게시물을 자동으로 수집하고 관리하는 통합 크롤러 시스템입니다.
 
@@ -19,6 +19,23 @@ scrap_sns/
 ├── total_scrap.py        # 통합 병렬 스크래퍼 (권장 실행 파일)
 └── server.py             # 데이터 제공 및 스크래핑 제어 API 서버
 ```
+
+
+## 🔐 세션 인증정보(Auth) 갱신
+
+SNS 보안 정책으로 인해 로그인이 막히거나 세션이 만료된 경우, 수동으로 인증정보를 갱신해야 합니다. 상세 내용은 [인증정보 갱신 가이드](./docs/auth_renewal_guide.md)를 참조하세요.
+
+### Threads & LinkedIn 갱신
+`powershell
+python renew_auth.py
+`
+브라우저에서 직접 로그인 후 터미널에 y를 입력하면 uth/*.json 파일이 업데이트됩니다.
+
+### Twitter(X) 갱신
+`powershell
+python renew_twitter_auth.py
+`
+실제 설치된 Chrome을 열어 세션 데이터를 uth/x_user_data/에 직접 저장합니다.
 
 ## 🚀 시작하기
 
@@ -77,3 +94,4 @@ pytest tests/contract/ # 데이터 스키마 검증
 ## 📜 주요 업데이트 (2026-03-10)
 - **P0 수정**: `server.py` 변수 버그 수정, 메타데이터 키 불일치 해결, `argparse` import-safe 구조 개선.
 - **P1 도입**: 자동 테스트 체계(`tests/`) 구축 및 설치/실행 문서 현행화.
+

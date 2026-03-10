@@ -1,3 +1,14 @@
+﻿
+## [2026-03-10]
+
+### Added
+- **통합 테스트 체계**: Playwright 기반 전 플랫폼(Threads, LinkedIn, X) Smoke Test 및 Single Scrap 검증 코드 도입
+- **인증 가이드**: SNS 세션 인증정보(Auth) 수동 갱신 가이드 문서(docs/auth_renewal_guide.md) 및 전용 스크립트 추가
+- **Twitter Smoke Test**: Persistent Context 기반 트위터 세션 유효성 자동 검증 추가
+
+### Fixed
+- **LinkedIn Locator**: 최신 레이아웃에 맞춰 게시물 목록 로케이터(.entity-result__content-container) 수정
+- **Server Routing**: Flask 서버의 정적 파일 서빙 경로 오류 및 Python 소스 BOM 인코딩 문제 해결
 
 ## [2026-03-10]
 ### Refactor
@@ -17,3 +28,4 @@
 | 2026-03-10 17:09 | chore | output-linkedin-twitter | 20260213 LinkedIn/Twitter 수집 산출물을 추가해 수집 결과를 저장소 이력으로 보존 |
 | 2026-03-10 17:08 | chore | gitignore | 로컬 세션 상태 파일과 handoff 경로를 ignore에 추가하고 기존 tracked 개인 상태 파일을 저장소 추적에서 제거 |
 | 2026-03-10 17:08 | docs | docs | 프로젝트 진단 및 검수 보고서를 추가해 현재 코드베이스의 P0 이슈와 검증 결과를 기록 |
+
