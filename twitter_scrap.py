@@ -36,10 +36,7 @@ OUTPUT_FILE_PATTERN = "twitter_py_simple_{date}.json"
 # ✨ 테스트용 제한 개수 (0: 무제한)
 TARGET_LIMIT = 0 
 
-def clean_text(text):
-    if not text: return ""
-    text = re.sub(r'\n{3,}', '\n\n', text)
-    return text.strip().replace('\n', ' ')
+# 로컬 clean_text 제거 (utils.common 사용)
 
 
 

@@ -4,7 +4,9 @@ import re
 import glob
 from datetime import datetime, timedelta
 
-def load_json(filepath, default=[]):
+def load_json(filepath, default=None):
+    if default is None:
+        default = []
     if os.path.exists(filepath):
         try:
             with open(filepath, 'r', encoding='utf-8-sig') as f:
@@ -14,7 +16,7 @@ def load_json(filepath, default=[]):
             return default
     return default
 
-def save_json(filepath, data, indent=2):
+def save_json(filepath, data, indent=4):
     try:
         os.makedirs(os.path.dirname(filepath), exist_ok=True)
         with open(filepath, 'w', encoding='utf-8') as f:
@@ -24,26 +26,73 @@ def save_json(filepath, data, indent=2):
         print(f'⚠️ [Common] JSON 저장 실패 ({filepath}): {e}')
         return False
 
-def clean_text(text, exclude_list=None):
+def clean_text(text, platform=None, **kwargs):
     if not text: return ''
     if isinstance(text, list): text = '\n'.join(text)
+    
+    # 1. 플랫폼별 사전 처리 (Pre-processing)
+    if platform == 'twitter' or platform == 'x':
+        # Twitter 특화: 줄바꿈 제거 및 연속 공백 축소 (기존 로직 준수)
+        text = re.sub(r'\n{3,}', '\n\n', text)
+        text = text.strip().replace('\n', ' ')
+        return re.sub(r'\s+', ' ', text).strip()
+    
+    if platform == 'linkedin':
+        # LinkedIn 특화: "…더보기" UI 텍스트 제거 및 공백 정규화
+        text = text.replace("…더보기", "")
+        lines = text.split('\n')
+        cleaned_lines = [re.sub(r'[ \t]+', ' ', line).strip() for line in lines]
+        return "\n".join(cleaned_lines).strip()
+
+    # 2. 공통 및 Threads 특화 처리
     lines = text.split('\n')
     cleaned_lines = []
-    if exclude_list:
-        if lines and lines[0].strip() in exclude_list: lines.pop(0)
-    meta_patterns = [r'^\d+시간$', r'^\d+분$', r'^\d+일$', r'^\d{4}-\d{2}-\d{2}$', r'^\d+주$', r'^AI Threads$', r'^수정됨$', r'^답글$']
+    
+    # Threads: 첫 줄에 username이 있으면 제거
+    username = kwargs.get('username')
+    if platform == 'threads' and lines and username and lines[0].strip() == username:
+        lines.pop(0)
+
+    # 필터링할 메타데이터 패턴
+    meta_patterns = [
+        r'^\d+시간$', r'^\d+분$', r'^\d+일$', r'^\d+주$', 
+        r'^\d{4}-\d{2}-\d{2}$', r'^AI Threads$', r'^수정됨$', 
+        r'^답글$', r'^\d+$', r'^\d+/\d+$'
+    ]
+    
+    is_body_started = False
     for line in lines:
         line = line.strip()
         if not line: continue
-        if any(re.match(p, line) for p in meta_patterns): continue
+        
+        # 메타데이터 패턴 검사
+        is_metadata = any(re.match(p, line) for p in meta_patterns)
+        
+        if is_metadata:
+            # 메타데이터는 무조건 건너뜀
+            continue
+            
+        if platform == 'threads':
+            # Threads: 본문 시작 플래그 설정
+            is_body_started = True
+            
         cleaned_lines.append(line)
-    return '\n'.join(cleaned_lines)
+        
+    return '\n'.join(cleaned_lines).strip()
 
 def reorder_post(post):
-    STANDARD_FIELD_ORDER = ['sequence_id', 'platform_id', 'sns_platform', 'username', 'display_name', 'full_text', 'media', 'url', 'created_at', 'date', 'crawled_at', 'source', 'local_images']
+    # 표준 필드 순서 (최신 요구사항 반영)
+    STANDARD_FIELD_ORDER = [
+        'sequence_id', 'platform_id', 'sns_platform', 'code', 'urn',
+        'username', 'display_name', 'full_text', 'media', 'url', 
+        'created_at', 'date', 'crawled_at', 'source', 'local_images', 
+        'is_detail_collected', 'is_merged_thread'
+    ]
     ordered_post = {}
     for field in STANDARD_FIELD_ORDER:
         if field in post: ordered_post[field] = post[field]
+    
+    # 누락된 나머지 필드 추가
     for key, value in post.items():
         if key not in ordered_post: ordered_post[key] = value
     return ordered_post

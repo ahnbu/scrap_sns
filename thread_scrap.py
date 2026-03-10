@@ -51,38 +51,7 @@ CRAWL_MODE = "all"  # 기본값 (__main__ 블록에서 CLI 인자로 덮어씀)
 
 # ===========================
 
-def clean_text(full_text, username):
-    lines = full_text.split('\n')
-    cleaned_lines = []
-    
-    if lines and lines[0].strip() == username:
-        lines.pop(0)
-
-    date_patterns = [
-        r'^\d+시간$', r'^\d+분$', r'^\d+일$', 
-        r'^\d{4}-\d{2}-\d{2}$', r'^\d+주$', 
-        r'^AI Threads$', r'^수정됨$'
-    ]
-    
-    is_body_started = False
-    for line in lines:
-        line = line.strip()
-        if not line: continue
-            
-        is_metadata = False
-        for pattern in date_patterns:
-            if re.match(pattern, line):
-                is_metadata = True
-                break
-        
-        if not is_body_started and is_metadata: continue
-        if not is_metadata: is_body_started = True
-            
-        if is_body_started:
-            if re.match(r'^\d+$', line) or re.match(r'^\d+/\d+$', line): continue
-            cleaned_lines.append(line)
-
-    return "\n".join(cleaned_lines).strip()
+# 로컬 clean_text 제거 (utils.common 사용)
 
 
 

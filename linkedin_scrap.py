@@ -33,20 +33,7 @@ WINDOW_HEIGHT = 500    # 브라우저 높이
 # --- 헬퍼 함수 ---
 
 
-
-
-def clean_text(text):
-    if not text:
-        return ""
-    
-    # "…더보기" 같은 UI 텍스트 제거
-    text = text.replace("…더보기", "")
-    
-    # 줄바꿈은 유지하면서 각 줄의 앞뒤 공백만 제거하고, 여러 개의 공백을 하나로 합침
-    lines = text.split('\n')
-    cleaned_lines = [re.sub(r'[ \t]+', ' ', line).strip() for line in lines]
-    
-    return "\n".join(cleaned_lines).strip()
+# 로컬 clean_text 제거 (utils.common 사용)
 
 
 
