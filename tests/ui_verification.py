@@ -73,7 +73,7 @@ def test_ui():
                         page.wait_for_selector(".glass-card", state="visible", timeout=5000)
                         print("Glass card(s) detected! UI Load Success.")
                         success = True
-                    except:
+                    except Exception:
                         # If count is 0, no cards is OK
                         if any(char.isdigit() for char in count_text) and "0" in count_text:
                             print("No cards, but count is 0. UI structure is OK.")
@@ -81,7 +81,7 @@ def test_ui():
                         else:
                             print("No cards found, but count suggests there should be.")
                             success = False
-                except:
+                except Exception:
                     print("Could not find #totalPostsCount")
                     success = False
             else:
@@ -96,7 +96,7 @@ def test_ui():
         server_process.terminate()
         try:
             server_process.wait(timeout=5)
-        except:
+        except Exception:
             server_process.kill()
         
     return success

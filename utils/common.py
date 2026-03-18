@@ -102,7 +102,7 @@ def format_timestamp(ts):
     try:
         dt = datetime.fromtimestamp(int(ts))
         return dt.strftime('%Y-%m-%d %H:%M:%S'), dt.strftime('%Y-%m-%d')
-    except: return None, None
+    except Exception: return None, None
 
 def parse_relative_time(relative_str, base_time=None):
     if not relative_str: return None, None

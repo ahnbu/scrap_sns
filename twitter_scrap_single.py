@@ -17,11 +17,6 @@ SIMPLE_FILE_PATTERN = "twitter_py_simple_*.json"
 FULL_FILE_PATTERN = "twitter_py_full_{date}.json"
 FAILURE_FILE = "scrap_failures_twitter.json" # 💡 X(Twitter) 전용 파일
 
-# 명령줄 인자 설정
-parser = argparse.ArgumentParser(description='X(Twitter) 상세 수집기')
-parser.add_argument('--limit', type=int, default=0, help='수집할 최대 개수 (0: 무제한)')
-args = parser.parse_args()
-
 def clean_text(text):
     if not text: return ""
     return text.strip()
@@ -30,7 +25,7 @@ def load_failures():
     if os.path.exists(FAILURE_FILE):
         with open(FAILURE_FILE, 'r', encoding='utf-8-sig') as f:
             try: return json.load(f)
-            except: return {}
+            except Exception: return {}
     return {}
 
 def save_failures(failures):
@@ -51,7 +46,7 @@ def scrape_full_tweet(page, target_url, target_user):
         show_more = page.locator('span:has-text("Show more"), span:has-text("더 보기")').first
         if show_more.count() > 0:
             try: show_more.click(); time.sleep(2)
-            except: pass
+            except Exception: pass
             
         html_content = page.content()
         current_url = page.url
@@ -59,7 +54,7 @@ def scrape_full_tweet(page, target_url, target_user):
         try:
             from utils.common import save_debug_snapshot
             save_debug_snapshot(html_content, "twitter")
-        except: pass
+        except Exception: pass
         
         full_text, tweet_media, real_user = parse_twitter_html(html_content, target_user, current_url)
         return full_text, tweet_media, real_user
@@ -69,7 +64,7 @@ def scrape_full_tweet(page, target_url, target_user):
         return None, None, target_user
 
 
-def main():
+def main(limit=0):
     failures = load_failures()
     
     simple_files = glob.glob(os.path.join(OUTPUT_DIR, SIMPLE_FILE_PATTERN))
@@ -109,9 +104,9 @@ def main():
     updated_count = 0
     if targets:
         # 💡 [추가] 개수 제한 적용
-        if args.limit > 0:
-            print(f"🎯 테스트 모드: {args.limit}개만 수집합니다.")
-            targets = targets[:args.limit]
+        if limit > 0:
+            print(f"🎯 테스트 모드: {limit}개만 수집합니다.")
+            targets = targets[:limit]
 
         print(f"🚀 총 {len(targets)}개의 신규 항목 상세 수집 시작...")
         USER_DATA_DIR = os.path.join(os.getcwd(), "auth", "x_user_data")
@@ -181,7 +176,7 @@ def main():
                 full_data_existing = json.load(f)
                 all_full_posts = full_data_existing.get('posts', [])
                 max_sequence_id = full_data_existing.get('metadata', {}).get('max_sequence_id', 0)
-            except: pass
+            except Exception: pass
     
     # 💡 [핵심] simple 파일(posts)에서 수집 완료된 모든 항목을 우선순위로 병합
     full_map = {str(p.get('platform_id') or p.get('id')): p for p in all_full_posts}
@@ -231,4 +226,7 @@ def main():
     print(f"\n✨ 상세 수집 마감! 총 {updated_count}개 신규 갱신됨.")
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser(description='X(Twitter) 상세 수집기')
+    parser.add_argument('--limit', type=int, default=0, help='수집할 최대 개수 (0: 무제한)')
+    args = parser.parse_args()
+    main(limit=args.limit)

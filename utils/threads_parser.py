@@ -1,13 +1,7 @@
 import json
 from datetime import datetime
 from urllib.parse import urlparse
-
-def format_timestamp(ts):
-    if not ts: return None, None
-    try:
-        dt = datetime.fromtimestamp(int(ts))
-        return dt.strftime('%Y-%m-%d %H:%M:%S'), dt.strftime('%Y-%m-%d')
-    except: return None, None
+from utils.common import format_timestamp
 
 def extract_json_from_html(html_content):
     """Robustly extracts specific JSON data from Threads HTML"""

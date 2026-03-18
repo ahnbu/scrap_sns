@@ -1,5 +1,6 @@
 from utils.common import load_json, save_json, clean_text, reorder_post, format_timestamp, parse_relative_time
 import json
+import sys
 import time
 import os
 import glob
@@ -102,6 +103,9 @@ class LinkedinScraper:
             print(f"   현재 URL: {page.url}")
             page.goto(LOGIN_URL)
             print("   로그인을 완료하고 '저장된 게시물' 목록이 보이면 엔터키를 눌러주세요.")
+            if not sys.stdin.isatty():
+                print("❌ 비대화형 환경에서는 로그인을 완료할 수 없습니다. 대화형 터미널에서 실행하세요.")
+                sys.exit(1)
             input(">>> 로그인 완료 후 Enter: ")
             
             page.context.storage_state(path=AUTH_FILE)
@@ -128,7 +132,7 @@ class LinkedinScraper:
                 try:
                     from utils.common import save_debug_snapshot
                     save_debug_snapshot(resp_json, "linkedin", "json")
-                except: pass
+                except Exception: pass
 
                 # 데이터 파싱 위임
                 self.process_network_data(resp_json)
@@ -206,66 +210,68 @@ class LinkedinScraper:
                     f"--window-size={WINDOW_WIDTH},{WINDOW_HEIGHT}"
                 ]
             )
-            
-            # viewport를 None으로 설정하면 브라우저 창 크기에 따라 자동으로 조절됨 (또는 고정값 사용 가능)
-            # 여기서는 창 크기와 비례하도록 설정하거나 특정 해상도 고정
-            context_options = {"viewport": {"width": WINDOW_WIDTH, "height": WINDOW_HEIGHT}}
-            if os.path.exists(AUTH_FILE):
-                context_options["storage_state"] = AUTH_FILE
-            
-            context = browser.new_context(**context_options)
-            page = context.new_page()
 
-            # 네트워크 이벤트 리스너 등록
-            page.on("response", self.handle_response)
+            try:
+                # viewport를 None으로 설정하면 브라우저 창 크기에 따라 자동으로 조절됨 (또는 고정값 사용 가능)
+                # 여기서는 창 크기와 비례하도록 설정하거나 특정 해상도 고정
+                context_options = {"viewport": {"width": WINDOW_WIDTH, "height": WINDOW_HEIGHT}}
+                if os.path.exists(AUTH_FILE):
+                    context_options["storage_state"] = AUTH_FILE
 
-            self.manage_login(page)
-            
-            print("📜 스크롤 및 데이터 수집 시작...")
-            no_new_data_count = 0
-            last_count = 0
-            
-            # 초기 로딩 대기
-            time.sleep(5)
-            
-            while TARGET_LIMIT == 0 or len(self.posts) < TARGET_LIMIT:
-                # 1. 먼저 "결과 더보기" 버튼 찾기
-                try:
-                    show_more_btn = page.locator('button:has-text("결과 더보기"), button:has-text("Show more results")')
-                    if show_more_btn.count() > 0:
-                        show_more_btn.first.click()
-                        print(f"   🔘 '결과 더보기' 버튼 클릭 (현재 {len(self.posts)}개)")
-                        time.sleep(3)
-                    else:
-                        # 2. 버튼이 없으면 스크롤
+                context = browser.new_context(**context_options)
+                page = context.new_page()
+
+                # 네트워크 이벤트 리스너 등록
+                page.on("response", self.handle_response)
+
+                self.manage_login(page)
+
+                print("📜 스크롤 및 데이터 수집 시작...")
+                no_new_data_count = 0
+                last_count = 0
+
+                # 초기 로딩 대기
+                time.sleep(5)
+
+                while TARGET_LIMIT == 0 or len(self.posts) < TARGET_LIMIT:
+                    # 1. 먼저 "결과 더보기" 버튼 찾기
+                    try:
+                        show_more_btn = page.locator('button:has-text("결과 더보기"), button:has-text("Show more results")')
+                        if show_more_btn.count() > 0:
+                            show_more_btn.first.click()
+                            print(f"   🔘 '결과 더보기' 버튼 클릭 (현재 {len(self.posts)}개)")
+                            time.sleep(3)
+                        else:
+                            # 2. 버튼이 없으면 스크롤
+                            page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+                            print(f"   ⬇️ 스크롤 다운... (현재 {len(self.posts)}개)")
+                            time.sleep(3)
+                    except Exception as e:
+                        # 버튼 찾기 실패 시 기본 스크롤
                         page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
                         print(f"   ⬇️ 스크롤 다운... (현재 {len(self.posts)}개)")
                         time.sleep(3)
-                except Exception as e:
-                    # 버튼 찾기 실패 시 기본 스크롤
-                    page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-                    print(f"   ⬇️ 스크롤 다운... (현재 {len(self.posts)}개)")
-                    time.sleep(3)
-                
-                if self.stopped_early:
-                    print("🛑 기준 게시물을 모두 확인하여 수집을 종료합니다.")
-                    break
-                
-                if len(self.posts) == last_count:
-                    no_new_data_count += 1
-                else:
-                    no_new_data_count = 0
-                    last_count = len(self.posts)
-                
-                if no_new_data_count >= 5:
-                    print("🛑 더 이상 새로운 데이터가 없습니다.")
-                    break
-                
-                if TARGET_LIMIT > 0 and len(self.posts) >= TARGET_LIMIT:
-                    break
 
-            self.save_results()
-            browser.close()
+                    if self.stopped_early:
+                        print("🛑 기준 게시물을 모두 확인하여 수집을 종료합니다.")
+                        break
+
+                    if len(self.posts) == last_count:
+                        no_new_data_count += 1
+                    else:
+                        no_new_data_count = 0
+                        last_count = len(self.posts)
+
+                    if no_new_data_count >= 5:
+                        print("🛑 더 이상 새로운 데이터가 없습니다.")
+                        break
+
+                    if TARGET_LIMIT > 0 and len(self.posts) >= TARGET_LIMIT:
+                        break
+
+                self.save_results()
+            finally:
+                browser.close()
 
         end_time_dt = datetime.now()
         duration = end_time_dt - start_time_dt

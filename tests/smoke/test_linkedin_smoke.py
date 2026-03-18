@@ -31,7 +31,7 @@ def test_linkedin_session_validity():
             page.wait_for_selector('.entity-result__content-container', timeout=15000)
             has_posts = True
             print(f"✅ 게시물 발견! (Selector: .entity-result__content-container)")
-        except:
+        except Exception:
             # 보조 확인
             count = page.locator('li').count()
             if count > 10: # li가 많으면 목록이 로드된 것으로 간주 (LinkedIn 특성)

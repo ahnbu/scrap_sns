@@ -29,7 +29,7 @@ def get_date_from_snowflake_id(id_str):
         # Epoch(1970) 기준 ms -> datetime
         dt = datetime.fromtimestamp(timestamp_ms / 1000)
         return dt.strftime('%Y-%m-%d %H:%M:%S')
-    except:
+    except Exception:
         return None
 
 def classify_content_type(images):

@@ -48,7 +48,7 @@ def test_threads_scraping_smoke():
                     # 간단한 데이터 구조 확인
                     if "data" in data:
                         collected.append(data)
-                except: pass
+                except Exception: pass
 
         page.on("response", handle_response)
         page.goto("https://www.threads.net/saved")

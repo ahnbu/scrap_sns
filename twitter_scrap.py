@@ -44,7 +44,7 @@ def parse_twitter_date(date_str):
     try:
         dt = datetime.strptime(date_str, '%a %b %d %H:%M:%S +0000 %Y')
         return dt.strftime('%Y-%m-%d %H:%M:%S'), dt.strftime('%Y-%m-%d')
-    except:
+    except Exception:
         return None, None
 
 def get_user_info(tweet_results):
@@ -122,7 +122,7 @@ def extract_from_json(json_data):
                     "source": "network",
                     "is_detail_collected": False
                 }))
-    except: pass
+    except Exception: pass
     return posts
 
 def extract_from_html(html_content, source_label="initial_dom"):
@@ -188,7 +188,7 @@ def extract_from_html(html_content, source_label="initial_dom"):
                 "source": source_label,
                 "is_detail_collected": False
             }))
-        except: pass
+        except Exception: pass
     return posts
 
 def main(args):
@@ -230,7 +230,7 @@ def main(args):
                 
                 initial_count = len(old_posts)
                 print(f"📡 기존 데이터 {initial_count}개 로드됨. (max_sequence_id: {max_sequence_id}, 중단점: {len(stop_ids)}개 설정)", flush=True)
-            except: pass
+            except Exception: pass
 
     USER_DATA_DIR = os.path.join(os.getcwd(), "auth", "x_user_data")
     os.makedirs(USER_DATA_DIR, exist_ok=True)
@@ -271,7 +271,7 @@ def main(args):
                             if not was_collected:
                                 msg = clean_text(post['full_text'])[:30]
                                 print(f"   + [Net] @{post['username']} | {msg}... ({len(all_posts_map)}개)", flush=True)
-                except: pass
+                except Exception: pass
 
         page.on("response", handle_response)
         

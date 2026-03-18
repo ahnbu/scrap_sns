@@ -11,6 +11,7 @@ Threads 저장 게시글 수집기 v9 (크롤링 범위 설정 기능 추가)
 
 from playwright.sync_api import sync_playwright
 import json
+import sys
 import time
 import re
 import os
@@ -53,46 +54,14 @@ CRAWL_MODE = "all"  # 기본값 (__main__ 블록에서 CLI 인자로 덮어씀)
 
 # 로컬 clean_text 제거 (utils.common 사용)
 
-
-
-
-    try:
-        dt = datetime.fromtimestamp(int(ts))
-        return dt.strftime('%Y-%m-%d %H:%M:%S'), dt.strftime('%Y-%m-%d')
-    except:
-        return None, None
-
-
-    
-    # 이미 절대 날짜인 경우 (예: 2024-01-01)
-    if re.match(r'^\d{4}-\d{2}-\d{2}$', relative_str):
-        return f"{relative_str} 00:00:00", relative_str
-
-    match = re.search(r'(\d+)\s*(분|시간|일|주|개월|년)', relative_str)
-    if not match: return None, None
-    
-    value = int(match.group(1))
-    unit = match.group(2)
-    
-    if unit == "분": delta = timedelta(minutes=value)
-    elif unit == "시간": delta = timedelta(hours=value)
-    elif unit == "일": delta = timedelta(days=value)
-    elif unit == "주": delta = timedelta(weeks=value)
-    elif unit == "개월": delta = timedelta(days=value * 30)
-    elif unit == "년": delta = timedelta(days=value * 365)
-    else: return None, None
-    
-    target_time = base_time - delta
-    return target_time.strftime('%Y-%m-%d %H:%M:%S'), target_time.strftime('%Y-%m-%d')
-
 def find_latest_simple_file():
     """output 폴더에서 최신 threads_py_simple_full_*.json 파일 찾기"""
     pattern = f"{OUTPUT_DIR}/threads_py_simple_*.json"
     files = glob.glob(pattern)
-    
+
     if not files:
         return None
-    
+
     # 파일명에서 날짜 추출 후 정렬
     file_info = []
     for file in files:
@@ -101,10 +70,10 @@ def find_latest_simple_file():
             date_str = match.group(1)
             mtime = os.path.getmtime(file)
             file_info.append((file, date_str, mtime))
-    
+
     # 날짜 최신순, 그 다음 수정시간 최신순 정렬
     file_info.sort(key=lambda x: (x[1], x[2]), reverse=True)
-    
+
     return file_info[0][0] if file_info else None
 
 def update_simple_version(new_data, stop_code, crawl_start_time):
@@ -114,7 +83,7 @@ def update_simple_version(new_data, stop_code, crawl_start_time):
     """
     today = datetime.now().strftime('%Y%m%d')
     today_simple = f"{OUTPUT_DIR}/threads_py_simple_{today}.json"
-    
+
     # 1. 오늘 날짜 Simple Full 파일이 이미 있는지 확인
     if os.path.exists(today_simple):
         print(f"\n⚠️ 오늘 날짜의 Simple Full 파일이 이미 존재합니다: {today_simple}")
@@ -122,19 +91,19 @@ def update_simple_version(new_data, stop_code, crawl_start_time):
         latest_simple = today_simple
     else:
         latest_simple = find_latest_simple_file()
-    
+
     # 2. 기존 Simple 파일 읽기
     existing_posts = []
     existing_merge_history = []
     source_filename = None
-    
+
     if latest_simple:
         print(f"📂 기존 Simple 파일 로드: {latest_simple}")
         source_filename = os.path.basename(latest_simple)
-        
+
         with open(latest_simple, 'r', encoding='utf-8-sig') as f:
             existing_content = json.load(f)
-            
+
             # 메타데이터 구조인지 확인
             if isinstance(existing_content, dict) and 'posts' in existing_content:
                 existing_posts = existing_content['posts']
@@ -174,13 +143,13 @@ def update_simple_version(new_data, stop_code, crawl_start_time):
     existing_codes = {post.get('platform_id') or post.get('code') for post in existing_posts}
     new_items = [p for p in new_data if (p.get('platform_id') or p.get('code')) not in existing_codes]
     duplicate_count = len(new_data) - len(new_items)
-    
+
     merged_posts = new_items + existing_posts
     if new_items:
         print(f"✅ Simple 병합 완료: {len(new_items)}개 신규 추가 + {len(existing_posts)}개 기존 = {len(merged_posts)}개")
     elif not existing_posts:
         print(f"✅ 초기 Simple 생성: {len(merged_posts)}개 저장 예정")
-    
+
     # 메타데이터 및 저장
     now = datetime.now().isoformat()
     metadata = {
@@ -195,14 +164,14 @@ def update_simple_version(new_data, stop_code, crawl_start_time):
             "stop_code": stop_code
         }] if latest_simple and new_items else existing_merge_history
     }
-    
+
     full_data = {"metadata": metadata, "posts": merged_posts}
-    
+
     try:
         with open(today_simple, "w", encoding="utf-8") as f:
             json.dump(full_data, f, ensure_ascii=False, indent=4)
         print(f"📦 Simple 버전 저장 완료: {today_simple}")
-        
+
         # Markdown 자동 변환
         convert_json_to_md(today_simple)
     except Exception as e:
@@ -215,7 +184,7 @@ def manage_login(context, page):
     try:
         page.goto("https://www.threads.net/saved")
         time.sleep(3)
-    except:
+    except Exception:
         pass
 
     if "login" in page.url:
@@ -235,6 +204,9 @@ def manage_login(context, page):
         print("🛑 [로그인 확인 필요]")
         print("   로그인을 완료하고 '저장됨' 페이지가 보이면 Enter를 누르세요.")
         print("="*60)
+        if not sys.stdin.isatty():
+            print("❌ 비대화형 환경에서는 로그인을 완료할 수 없습니다. 대화형 터미널에서 실행하세요.")
+            sys.exit(1)
         input(">>> 로그인 완료 후 Enter 입력: ")
 
         print("💾 세션 저장 중...")
@@ -250,7 +222,7 @@ def run():
     stop_code_found = False  # 중단 플래그
     crawl_start_time = start_time_dt.isoformat()  # 크롤링 시작 시간
     max_sequence_id = 0
-    
+
     # 최신 데이터 로드 (메타데이터 보존용)
     latest_simple = find_latest_simple_file()
     if latest_simple:
@@ -261,10 +233,10 @@ def run():
                 for p in posts:
                     pid = p.get('platform_id') or p.get('code')
                     all_posts_map[pid] = p
-                
+
                 if isinstance(full_data, dict):
                     max_sequence_id = full_data.get('metadata', {}).get('max_sequence_id', 0)
-                
+
                 if posts and max_sequence_id == 0:
                     max_sequence_id = max((p.get('sequence_id', 0) for p in posts), default=0)
 
@@ -278,7 +250,7 @@ def run():
             print(f"⚠️ 기존 데이터 로드 실패: {e}")
     else:
         print("⚠️ Simple 파일 없음 - 전체 수집으로 전환")
- 
+
 
     with sync_playwright() as p:
         print("🚀 브라우저 실행 중...")
@@ -289,427 +261,427 @@ def run():
                 f"--window-size={WINDOW_WIDTH},{WINDOW_HEIGHT}"
             ]
         )
-        
-        # viewport를 None으로 설정 (창 크기 따라감) 또는 고정
-        context_opts = {
-            "viewport": {"width": WINDOW_WIDTH, "height": WINDOW_HEIGHT}
-        }
-        
-        if os.path.exists(AUTH_FILE):
-            context_opts["storage_state"] = AUTH_FILE
-            
-        context = browser.new_context(**context_opts)
 
-        page = context.new_page()
+        try:
+            # viewport를 None으로 설정 (창 크기 따라감) 또는 고정
+            context_opts = {
+                "viewport": {"width": WINDOW_WIDTH, "height": WINDOW_HEIGHT}
+            }
 
-        manage_login(context, page)
+            if os.path.exists(AUTH_FILE):
+                context_opts["storage_state"] = AUTH_FILE
 
-        # -------------------------------------------------
-        # 네트워크 핸들러
-        # -------------------------------------------------
-        def handle_response(response):
-            # 목표 개수 도달 시 더 이상 처리하지 않음
-            if TARGET_LIMIT > 0 and len(collected_data) >= TARGET_LIMIT:
-                return
+            context = browser.new_context(**context_opts)
 
-            if response.request.resource_type in ["xhr", "fetch"]:
-                try:
-                    if "graphql" in response.url or "query" in response.url:
-                        try:
-                            json_data = response.json()
-                        except:
-                            return
+            page = context.new_page()
 
-                        if DEBUG_SAVE:
-                            os.makedirs("docs/temp", exist_ok=True)
-                            ts = datetime.now().strftime('%H%M%S_%f')
-                            with open(f"docs/temp/threads_res_{ts}.json", "w", encoding="utf-8") as f:
-                                json.dump(json_data, f, ensure_ascii=False, indent=2)
+            manage_login(context, page)
 
-                        data_part = json_data.get("data", {})
-                        if not data_part: return
+            # -------------------------------------------------
+            # 네트워크 핸들러
+            # -------------------------------------------------
+            def handle_response(response):
+                # 목표 개수 도달 시 더 이상 처리하지 않음
+                if TARGET_LIMIT > 0 and len(collected_data) >= TARGET_LIMIT:
+                    return
 
-                        # 구조 1: edges 방식 (xdt_text_app_viewer)
-                        viewer = data_part.get("xdt_text_app_viewer") or data_part.get("viewer")
-                        if viewer and viewer.get("saved_media"):
-                            edges = viewer["saved_media"].get("edges", [])
-                            if edges:
-                                for edge in edges:
-                                    if TARGET_LIMIT > 0 and len(collected_data) >= TARGET_LIMIT: break
-                                    node = edge.get("node", {})
-                                    if node: process_network_post(node)
-                            return
+                if response.request.resource_type in ["xhr", "fetch"]:
+                    try:
+                        if "graphql" in response.url or "query" in response.url:
+                            try:
+                                json_data = response.json()
+                            except Exception:
+                                return
 
-                        # 구조 2: sections 방식 (최신 JS 방식)
-                        saved_posts = data_part.get("text_post_app_user_saved_posts", {})
-                        sections = saved_posts.get("sections", [])
-                        if sections:
-                            for section in sections:
-                                items = section.get("items", [])
-                                for item in items:
-                                    if TARGET_LIMIT > 0 and len(collected_data) >= TARGET_LIMIT: break
-                                    process_network_post(item)
-                            return
-                except: pass
+                            if DEBUG_SAVE:
+                                os.makedirs("docs/temp", exist_ok=True)
+                                ts = datetime.now().strftime('%H%M%S_%f')
+                                with open(f"docs/temp/threads_res_{ts}.json", "w", encoding="utf-8") as f:
+                                    json.dump(json_data, f, ensure_ascii=False, indent=2)
 
-        def process_network_post(node):
-            nonlocal stop_code_found
-            if not node: return
-            
-            # 1. 포스트 목록 확보 (단일 포스트 or 스레드)
-            posts_to_process = []
-            
-            # thread_items가 있는 경우 (스레드/답글 구조)
-            thread_items = node.get("thread_items", [])
-            if thread_items:
-                posts_to_process = [item.get("post", {}) for item in thread_items]
-            else:
-                # 단일 포스트인 경우 (또는 node 자체가 post인 경우)
-                # post 필드가 있으면 그걸 쓰고, 없으면 node 자체를 시도
-                post = node.get("post") or node
-                posts_to_process = [post]
+                            data_part = json_data.get("data", {})
+                            if not data_part: return
 
-            if not posts_to_process: return
+                            # 구조 1: edges 방식 (xdt_text_app_viewer)
+                            viewer = data_part.get("xdt_text_app_viewer") or data_part.get("viewer")
+                            if viewer and viewer.get("saved_media"):
+                                edges = viewer["saved_media"].get("edges", [])
+                                if edges:
+                                    for edge in edges:
+                                        if TARGET_LIMIT > 0 and len(collected_data) >= TARGET_LIMIT: break
+                                        node = edge.get("node", {})
+                                        if node: process_network_post(node)
+                                return
 
-            # 2. Root Post(첫 번째 글) 식별
-            root_post = posts_to_process[0]
-            root_code = root_post.get("code")
-            root_user_pk = root_post.get("user", {}).get("pk")
-            
-            if not root_code: return
+                            # 구조 2: sections 방식 (최신 JS 방식)
+                            saved_posts = data_part.get("text_post_app_user_saved_posts", {})
+                            sections = saved_posts.get("sections", [])
+                            if sections:
+                                for section in sections:
+                                    items = section.get("items", [])
+                                    for item in items:
+                                        if TARGET_LIMIT > 0 and len(collected_data) >= TARGET_LIMIT: break
+                                        process_network_post(item)
+                                return
+                    except Exception: pass
 
-            # 3. 스레드 순회하며 수집
-            for i, post in enumerate(posts_to_process):
-                # 목표 개수 체크
-                if TARGET_LIMIT > 0 and len(collected_data) >= TARGET_LIMIT: return
+            def process_network_post(node):
+                nonlocal stop_code_found
+                if not node: return
 
-                code = post.get("code")
-                if not code: continue
+                # 1. 포스트 목록 확보 (단일 포스트 or 스레드)
+                posts_to_process = []
 
-                # ⛔ UPDATE ONLY 모드: stop_codes 중 하나 발견 시 중단
-                if stop_codes and code in stop_codes:
-                    print(f"✋ 기준 게시물 발견! (code: {code}) - 크롤링 중단")
-                    stop_code_found = True
-                    return # 함수 종료
-                
-                # 이미 수집된 목록에 있는지 확인 (중복 방지)
-                if any(p.get('platform_id') == code for p in collected_data):
-                    continue
+                # thread_items가 있는 경우 (스레드/답글 구조)
+                thread_items = node.get("thread_items", [])
+                if thread_items:
+                    posts_to_process = [item.get("post", {}) for item in thread_items]
+                else:
+                    # 단일 포스트인 경우 (또는 node 자체가 post인 경우)
+                    # post 필드가 있으면 그걸 쓰고, 없으면 node 자체를 시도
+                    post = node.get("post") or node
+                    posts_to_process = [post]
 
-                # ==================================================
-                # 🛡️ [필터링 로직] 작성자 및 답글 대상 검증
-                # ==================================================
-                current_user_pk = post.get("user", {}).get("pk")
-                
-                # 조건 1: 작성자가 Root 작성자와 동일해야 함
-                if current_user_pk != root_user_pk:
-                    continue 
+                if not posts_to_process: return
 
-                # 조건 2: 답글인 경우, '누구에게 쓴 답글인가' 확인 (타인 답글 제외)
-                # 첫 번째 글(Root)은 무조건 수집 (i==0)
-                if i > 0:
-                    text_post_app_info = post.get("text_post_app_info", {})
-                    reply_to_author_id = text_post_app_info.get("reply_to_author", {}).get("id")
-                    
-                    # '내 글에 대한 답글'이 아니면 건너뜀 (타인 댓글에 대한 답글 등)
-                    # 단, reply_to_author 정보가 없으면(None) 그냥 수집 (안전장치)
-                    if reply_to_author_id and reply_to_author_id != root_user_pk:
+                # 2. Root Post(첫 번째 글) 식별
+                root_post = posts_to_process[0]
+                root_code = root_post.get("code")
+                root_user_pk = root_post.get("user", {}).get("pk")
+
+                if not root_code: return
+
+                # 3. 스레드 순회하며 수집
+                for i, post in enumerate(posts_to_process):
+                    # 목표 개수 체크
+                    if TARGET_LIMIT > 0 and len(collected_data) >= TARGET_LIMIT: return
+
+                    code = post.get("code")
+                    if not code: continue
+
+                    # ⛔ UPDATE ONLY 모드: stop_codes 중 하나 발견 시 중단
+                    if stop_codes and code in stop_codes:
+                        print(f"✋ 기준 게시물 발견! (code: {code}) - 크롤링 중단")
+                        stop_code_found = True
+                        return # 함수 종료
+
+                    # 이미 수집된 목록에 있는지 확인 (중복 방지)
+                    if any(p.get('platform_id') == code for p in collected_data):
                         continue
-                # ==================================================
 
-                user = post.get("user", {})
-                caption = post.get("caption", {})
-                extra_info = post.get("text_post_app_info", {})
-                
-                # 미디어 추출 및 타입 결정
-                images = []
-                video_versions = post.get("video_versions", [])
-                carousel_media = post.get("carousel_media", [])
-                image_versions2 = post.get("image_versions2", {})
+                    # ==================================================
+                    # 🛡️ [필터링 로직] 작성자 및 답글 대상 검증
+                    # ==================================================
+                    current_user_pk = post.get("user", {}).get("pk")
 
-                content_type = "text"
-                
-                if carousel_media:
-                    content_type = "carousel"
-                    for item in carousel_media:
-                        candidates = item.get("image_versions2", {}).get("candidates", [])
+                    # 조건 1: 작성자가 Root 작성자와 동일해야 함
+                    if current_user_pk != root_user_pk:
+                        continue
+
+                    # 조건 2: 답글인 경우, '누구에게 쓴 답글인가' 확인 (타인 답글 제외)
+                    # 첫 번째 글(Root)은 무조건 수집 (i==0)
+                    if i > 0:
+                        text_post_app_info = post.get("text_post_app_info", {})
+                        reply_to_author_id = text_post_app_info.get("reply_to_author", {}).get("id")
+
+                        # '내 글에 대한 답글'이 아니면 건너뜀 (타인 댓글에 대한 답글 등)
+                        # 단, reply_to_author 정보가 없으면(None) 그냥 수집 (안전장치)
+                        if reply_to_author_id and reply_to_author_id != root_user_pk:
+                            continue
+                    # ==================================================
+
+                    user = post.get("user", {})
+                    caption = post.get("caption", {})
+                    extra_info = post.get("text_post_app_info", {})
+
+                    # 미디어 추출 및 타입 결정
+                    images = []
+                    video_versions = post.get("video_versions", [])
+                    carousel_media = post.get("carousel_media", [])
+                    image_versions2 = post.get("image_versions2", {})
+
+                    content_type = "text"
+
+                    if carousel_media:
+                        content_type = "carousel"
+                        for item in carousel_media:
+                            candidates = item.get("image_versions2", {}).get("candidates", [])
+                            if candidates:
+                                best = sorted(candidates, key=lambda x: x.get("width", 0), reverse=True)[0]
+                                images.append(best["url"])
+                            if item.get("video_versions"):
+                                images.append(item["video_versions"][0]["url"])
+
+                    elif video_versions:
+                        content_type = "video"
+                        images.append(video_versions[0]["url"])
+
+                    elif image_versions2:
+                        content_type = "image"
+                        candidates = image_versions2.get("candidates", [])
                         if candidates:
                             best = sorted(candidates, key=lambda x: x.get("width", 0), reverse=True)[0]
                             images.append(best["url"])
-                        if item.get("video_versions"):
-                            images.append(item["video_versions"][0]["url"])
-                            
-                elif video_versions:
-                    content_type = "video"
-                    images.append(video_versions[0]["url"])
-                    
-                elif image_versions2:
-                    content_type = "image"
-                    candidates = image_versions2.get("candidates", [])
-                    if candidates:
-                        best = sorted(candidates, key=lambda x: x.get("width", 0), reverse=True)[0]
-                        images.append(best["url"])
 
-                created_at, time_text = format_timestamp(post.get("taken_at"))
+                    created_at, time_text = format_timestamp(post.get("taken_at"))
 
-                post_info = reorder_post({
-                    "platform_id": code,
-                    "root_code": root_code,
-                    "username": user.get("username"),
-                    "display_name": user.get("full_name") or user.get("username"),
-                    "full_text": caption.get("text") if caption else "",
-                    "media": images,
-                    "created_at": created_at,
-                    "date": created_at.split(' ')[0] if created_at else None,
-                    "url": f"https://www.threads.net/@{user.get('username')}/post/{code}",
-                    "sns_platform": "threads",
-                    "like_count": post.get("like_count", 0),
-                    "reply_count": extra_info.get("direct_reply_count", 0),
-                    "repost_count": extra_info.get("repost_count", 0),
-                    "quote_count": extra_info.get("quote_count", 0),
-                    "pk": post.get("pk"),
-                    "media_type": post.get("media_type"),
-                    "content_type": content_type,
-                    "source": "network",
-                    "crawled_at": datetime.now().isoformat(timespec='milliseconds'),
-                    "sequence_id": None
-                })
+                    post_info = reorder_post({
+                        "platform_id": code,
+                        "root_code": root_code,
+                        "username": user.get("username"),
+                        "display_name": user.get("full_name") or user.get("username"),
+                        "full_text": caption.get("text") if caption else "",
+                        "media": images,
+                        "created_at": created_at,
+                        "date": created_at.split(' ')[0] if created_at else None,
+                        "url": f"https://www.threads.net/@{user.get('username')}/post/{code}",
+                        "sns_platform": "threads",
+                        "like_count": post.get("like_count", 0),
+                        "reply_count": extra_info.get("direct_reply_count", 0),
+                        "repost_count": extra_info.get("repost_count", 0),
+                        "quote_count": extra_info.get("quote_count", 0),
+                        "pk": post.get("pk"),
+                        "media_type": post.get("media_type"),
+                        "content_type": content_type,
+                        "source": "network",
+                        "crawled_at": datetime.now().isoformat(timespec='milliseconds'),
+                        "sequence_id": None
+                    })
 
-                # 💡 [개선] 메타데이터 보존 로직
-                existing = all_posts_map.get(code)
-                if existing:
-                    post_info['crawled_at'] = existing.get('crawled_at')
-                    post_info['sequence_id'] = existing.get('sequence_id')
+                    # 💡 [개선] 메타데이터 보존 로직
+                    existing = all_posts_map.get(code)
+                    if existing:
+                        post_info['crawled_at'] = existing.get('crawled_at')
+                        post_info['sequence_id'] = existing.get('sequence_id')
 
-                # 유효성 검사: 텍스트가 없고 이미지도 없는 경우 제외
-                if not post_info['full_text'] and not post_info['media']:
-                    continue
+                    # 유효성 검사: 텍스트가 없고 이미지도 없는 경우 제외
+                    if not post_info['full_text'] and not post_info['media']:
+                        continue
 
-                collected_data.append(post_info)
-                msg = post_info['full_text'].replace('\n', ' ')[:15]
-                prefix = "└─" if i > 0 else "■ root"
-                print(f"   + [Net] {prefix} [{code}] root:{root_code} | {msg}... ({len(collected_data)}개)")
+                    collected_data.append(post_info)
+                    msg = post_info['full_text'].replace('\n', ' ')[:15]
+                    prefix = "└─" if i > 0 else "■ root"
+                    print(f"   + [Net] {prefix} [{code}] root:{root_code} | {msg}... ({len(collected_data)}개)")
 
-        page.on("response", handle_response)
+            page.on("response", handle_response)
 
-        # -------------------------------------------------
-        # 1단계: 초기 화면 DOM 수집
-        # -------------------------------------------------
-        print("\n🔍 [1단계] 초기 화면(DOM) 스캔 중...")
-        if "saved" not in page.url:
-            page.goto("https://www.threads.net/saved")
-            time.sleep(3)
-        else:
-            time.sleep(2)
+            # -------------------------------------------------
+            # 1단계: 초기 화면 DOM 수집
+            # -------------------------------------------------
+            print("\n🔍 [1단계] 초기 화면(DOM) 스캔 중...")
+            if "saved" not in page.url:
+                page.goto("https://www.threads.net/saved")
+                time.sleep(3)
+            else:
+                time.sleep(2)
 
-        try:
-            post_elements = page.locator('div[data-pressable-container="true"]').all()
-            for element in post_elements:
-                # 목표 체크
-                if TARGET_LIMIT > 0 and len(collected_data) >= TARGET_LIMIT:
-                    print("✋ 테스트 목표 달성 (DOM 단계)")
-                    break
+            try:
+                post_elements = page.locator('div[data-pressable-container="true"]').all()
+                for element in post_elements:
+                    # 목표 체크
+                    if TARGET_LIMIT > 0 and len(collected_data) >= TARGET_LIMIT:
+                        print("✋ 테스트 목표 달성 (DOM 단계)")
+                        break
 
-                try:
-                    raw_text = element.inner_text()
-                    lines = raw_text.split('\n')
-                    link_locator = element.locator('a[href*="/post/"]').first
+                    try:
+                        raw_text = element.inner_text()
+                        lines = raw_text.split('\n')
+                        link_locator = element.locator('a[href*="/post/"]').first
 
-                    if link_locator.count() > 0:
-                        href = link_locator.get_attribute("href")
-                        parts = href.split('/')
-                        if len(parts) >= 4:
-                            username = parts[1].replace('@', '')
-                            code = parts[3].split('?')[0]
-                            
-                            # ⛔ UPDATE ONLY 모드: stop_codes 중 하나 발견 시 중단
-                            if stop_codes and code in stop_codes:
-                                print(f"✋ 기준 게시물 발견! (code: {code}) - DOM 스캔 중단")
-                                stop_code_found = True
-                                break
-                            
-                            # [날짜 추출] 상대적 시간 감지
-                            relative_date_str = None
-                            date_patterns = [r'^\d+시간$', r'^\d+분$', r'^\d+일$', r'^\d+주$', r'^\d{4}-\d{2}-\d{2}$']
-                            for line in lines[1:4]: # 이름 바로 다음 몇 줄 확인
-                                line = line.strip()
-                                if any(re.match(ptr, line) for ptr in date_patterns):
-                                    relative_date_str = line
+                        if link_locator.count() > 0:
+                            href = link_locator.get_attribute("href")
+                            parts = href.split('/')
+                            if len(parts) >= 4:
+                                username = parts[1].replace('@', '')
+                                code = parts[3].split('?')[0]
+
+                                # ⛔ UPDATE ONLY 모드: stop_codes 중 하나 발견 시 중단
+                                if stop_codes and code in stop_codes:
+                                    print(f"✋ 기준 게시물 발견! (code: {code}) - DOM 스캔 중단")
+                                    stop_code_found = True
                                     break
-                            
-                            created_at, time_text = parse_relative_time(relative_date_str, start_time_dt)
-                            cleaned_text = clean_text(raw_text, username)
-                            
-                            # 중복 체크 (code 기준)
-                            if any(p.get('platform_id') == code for p in collected_data):
-                                continue
 
-                            images = []
-                            for img in element.locator('img').all():
-                                src = img.get_attribute("src")
-                                if src and "scontent" in src and "s150x150" not in src:
-                                    images.append(src)
+                                # [날짜 추출] 상대적 시간 감지
+                                relative_date_str = None
+                                date_patterns = [r'^\d+시간$', r'^\d+분$', r'^\d+일$', r'^\d+주$', r'^\d{4}-\d{2}-\d{2}$']
+                                for line in lines[1:4]: # 이름 바로 다음 몇 줄 확인
+                                    line = line.strip()
+                                    if any(re.match(ptr, line) for ptr in date_patterns):
+                                        relative_date_str = line
+                                        break
 
-                            post_info = reorder_post({
-                                "platform_id": code,
-                                "username": username,
-                                "display_name": username,
-                                "full_text": cleaned_text,
-                                "media": list(set(images)),
-                                "created_at": created_at,
-                                "date": created_at.split(' ')[0] if created_at else None,
-                                "url": f"https://www.threads.net/@{username}/post/{code}",
-                                "sns_platform": "threads",
-                                "pk": None, # DOM에서는 PK 알 수 없음
-                                "like_count": -1,
-                                "reply_count": -1,
-                                "repost_count": -1,
-                                "quote_count": -1,
-                                "content_type": "carousel" if len(images) > 1 else ("image" if images else "text"),
-                                "source": "initial_dom",
-                                "crawled_at": datetime.now().isoformat(timespec='milliseconds'),
-                                "sequence_id": None
-                            })
+                                created_at, time_text = parse_relative_time(relative_date_str, start_time_dt)
+                                cleaned_text = clean_text(raw_text, username)
 
-                            # 💡 [개선] 메타데이터 보존
-                            existing = all_posts_map.get(code)
-                            if existing:
-                                post_info['crawled_at'] = existing.get('crawled_at')
-                                post_info['sequence_id'] = existing.get('sequence_id')
+                                # 중복 체크 (code 기준)
+                                if any(p.get('platform_id') == code for p in collected_data):
+                                    continue
 
-                            collected_data.append(post_info)
-                            print(f"   + [DOM] [{code}] {cleaned_text.replace('\n', ' ')[:15]}... (현재 {len(collected_data)}/{TARGET_LIMIT if TARGET_LIMIT else '무제한'})")
-                except: continue
-        except Exception as e:
-            print(f"⚠️ DOM 스캔 오류: {e}")
+                                images = []
+                                for img in element.locator('img').all():
+                                    src = img.get_attribute("src")
+                                    if src and "scontent" in src and "s150x150" not in src:
+                                        images.append(src)
 
-        # -------------------------------------------------
-        # 2단계: 스크롤 자동화
-        # -------------------------------------------------
-        if TARGET_LIMIT == 0 or len(collected_data) < TARGET_LIMIT:
-            print("\n📜 [2단계] 스크롤 시작 (네트워크 패킷 캡처)")
-            no_new_data_count = 0
-            last_len = len(collected_data)
+                                post_info = reorder_post({
+                                    "platform_id": code,
+                                    "username": username,
+                                    "display_name": username,
+                                    "full_text": cleaned_text,
+                                    "media": list(set(images)),
+                                    "created_at": created_at,
+                                    "date": created_at.split(' ')[0] if created_at else None,
+                                    "url": f"https://www.threads.net/@{username}/post/{code}",
+                                    "sns_platform": "threads",
+                                    "pk": None, # DOM에서는 PK 알 수 없음
+                                    "like_count": -1,
+                                    "reply_count": -1,
+                                    "repost_count": -1,
+                                    "quote_count": -1,
+                                    "content_type": "carousel" if len(images) > 1 else ("image" if images else "text"),
+                                    "source": "initial_dom",
+                                    "crawled_at": datetime.now().isoformat(timespec='milliseconds'),
+                                    "sequence_id": None
+                                })
 
-            for i in range(1, 51):
-                # 목표 달성 체크
-                if TARGET_LIMIT > 0 and len(collected_data) >= TARGET_LIMIT:
-                    print(f"\n🎉 목표 수집 개수({TARGET_LIMIT}개) 도달! 스크롤 종료.")
-                    break
-                
-                try:
-                    if page.is_closed(): break
-                    page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-                    print(f"⬇️ 스크롤 {i}회차...", end="\r")
-                    time.sleep(3)
+                                # 💡 [개선] 메타데이터 보존
+                                existing = all_posts_map.get(code)
+                                if existing:
+                                    post_info['crawled_at'] = existing.get('crawled_at')
+                                    post_info['sequence_id'] = existing.get('sequence_id')
 
-                    # ⛔ UPDATE ONLY 모드: stop_code 발견 시 스크롤 중단
-                    if stop_code_found:
-                        print(f"\n✋ 기준 게시물 발견! (스크롤 중단)")
+                                collected_data.append(post_info)
+                                print(f"   + [DOM] [{code}] {cleaned_text.replace('\n', ' ')[:15]}... (현재 {len(collected_data)}/{TARGET_LIMIT if TARGET_LIMIT else '무제한'})")
+                    except Exception: continue
+            except Exception as e:
+                print(f"⚠️ DOM 스캔 오류: {e}")
+
+            # -------------------------------------------------
+            # 2단계: 스크롤 자동화
+            # -------------------------------------------------
+            if TARGET_LIMIT == 0 or len(collected_data) < TARGET_LIMIT:
+                print("\n📜 [2단계] 스크롤 시작 (네트워크 패킷 캡처)")
+                no_new_data_count = 0
+                last_len = len(collected_data)
+
+                for i in range(1, 51):
+                    # 목표 달성 체크
+                    if TARGET_LIMIT > 0 and len(collected_data) >= TARGET_LIMIT:
+                        print(f"\n🎉 목표 수집 개수({TARGET_LIMIT}개) 도달! 스크롤 종료.")
                         break
 
-                    current_len = len(collected_data)
-                    if current_len > last_len:
-                        print(f"\n✅ 데이터 추가됨! (누적 {current_len}개)")
-                        last_len = current_len
-                        no_new_data_count = 0
+                    try:
+                        if page.is_closed(): break
+                        page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+                        print(f"⬇️ 스크롤 {i}회차...", end="\r")
+                        time.sleep(3)
+
+                        # ⛔ UPDATE ONLY 모드: stop_code 발견 시 스크롤 중단
+                        if stop_code_found:
+                            print(f"\n✋ 기준 게시물 발견! (스크롤 중단)")
+                            break
+
+                        current_len = len(collected_data)
+                        if current_len > last_len:
+                            print(f"\n✅ 데이터 추가됨! (누적 {current_len}개)")
+                            last_len = current_len
+                            no_new_data_count = 0
+                        else:
+                            no_new_data_count += 1
+                            print(f"\nzzz... 대기 중 ({no_new_data_count}/5)")
+
+                        if no_new_data_count >= 5:
+                            print("\n🏁 더 이상 새로운 데이터가 없습니다.")
+                            break
+                    except Exception:
+                        time.sleep(2)
+                        continue
+            else:
+                print(f"\n⏩ 1단계에서 이미 목표({TARGET_LIMIT}개)를 달성하여 스크롤을 생략합니다.")
+
+            # -------------------------------------------------
+            # 3단계: 저장
+            # -------------------------------------------------
+            if collected_data:
+                # [개선] 수집 순서(물리적 노출 순서)를 보존하며 중복 제거
+                # collected_data에는 [가장최신저장, ..., 과거저장] 순으로 담겨 있음
+                seen_codes = set()
+                ordered_unique_collected = []
+                for p in collected_data:
+                    pid = p.get('platform_id') or p.get('code')
+                    if pid not in seen_codes:
+                        ordered_unique_collected.append(p)
+                        seen_codes.add(pid)
+
+                # 기존 DB에 이미 있는 항목인지 확인하여 신규 항목만 추출
+                # (이때도 ordered_unique_collected의 순서가 유지됨)
+                new_items_to_process = []
+                for p in ordered_unique_collected:
+                    pid = p.get('platform_id') or p.get('code')
+                    if pid not in all_posts_map:
+                        new_items_to_process.append(p)
                     else:
-                        no_new_data_count += 1
-                        print(f"\nzzz... 대기 중 ({no_new_data_count}/5)")
+                        # 기존 항목인 경우 메타데이터 보존 (업데이트)
+                        existing = all_posts_map[pid]
+                        p['sequence_id'] = existing.get('sequence_id')
+                        p['crawled_at'] = existing.get('crawled_at')
+                        all_posts_map[pid] = p # 최신 정보로 업데이트
 
-                    if no_new_data_count >= 5:
-                        print("\n🏁 더 이상 새로운 데이터가 없습니다.")
-                        break
-                except:
-                    time.sleep(2)
-                    continue
-        else:
-            print(f"\n⏩ 1단계에서 이미 목표({TARGET_LIMIT}개)를 달성하여 스크롤을 생략합니다.")
+                # 💡 [핵심] 신규 항목에 sequence_id 부여
+                # 수집된 신규 항목들을 뒤집어서 [과거저장 -> 최신저장] 순서로 만듦
+                new_items_to_process.reverse()
 
-        # -------------------------------------------------
-        # 3단계: 저장
-        # -------------------------------------------------
-        if collected_data:
-            # [개선] 수집 순서(물리적 노출 순서)를 보존하며 중복 제거
-            # collected_data에는 [가장최신저장, ..., 과거저장] 순으로 담겨 있음
-            seen_codes = set()
-            ordered_unique_collected = []
-            for p in collected_data:
-                pid = p.get('platform_id') or p.get('code')
-                if pid not in seen_codes:
-                    ordered_unique_collected.append(p)
-                    seen_codes.add(pid)
+                for p in new_items_to_process:
+                    max_sequence_id += 1
+                    p['sequence_id'] = max_sequence_id
+                    pid = p.get('platform_id') or p.get('code')
+                    all_posts_map[pid] = p
 
-            # 기존 DB에 이미 있는 항목인지 확인하여 신규 항목만 추출
-            # (이때도 ordered_unique_collected의 순서가 유지됨)
-            new_items_to_process = []
-            for p in ordered_unique_collected:
-                pid = p.get('platform_id') or p.get('code')
-                if pid not in all_posts_map:
-                    new_items_to_process.append(p)
-                else:
-                    # 기존 항목인 경우 메타데이터 보존 (업데이트)
-                    existing = all_posts_map[pid]
-                    p['sequence_id'] = existing.get('sequence_id')
-                    p['crawled_at'] = existing.get('crawled_at')
-                    all_posts_map[pid] = p # 최신 정보로 업데이트
+                # 최종 리스트: sequence_id 기준 역순(큰 숫자가 위로) 정렬
+                # 이렇게 하면 Threads 웹사이트의 최신 저장글이 가장 큰 ID를 갖고 상단에 노출됨
+                final_merged_list = [reorder_post(p) for p in sorted(all_posts_map.values(), key=lambda x: x.get('sequence_id', 0), reverse=True)]
 
-            # 💡 [핵심] 신규 항목에 sequence_id 부여
-            # 수집된 신규 항목들을 뒤집어서 [과거저장 -> 최신저장] 순서로 만듦
-            new_items_to_process.reverse()
-            
-            for p in new_items_to_process:
-                max_sequence_id += 1
-                p['sequence_id'] = max_sequence_id
-                pid = p.get('platform_id') or p.get('code')
-                all_posts_map[pid] = p
+                print(f"\n💾 최종 데이터 {len(final_merged_list)}개 저장 중 (신규: {len(new_items_to_process)}개)...")
 
-            # 최종 리스트: sequence_id 기준 역순(큰 숫자가 위로) 정렬
-            # 이렇게 하면 Threads 웹사이트의 최신 저장글이 가장 큰 ID를 갖고 상단에 노출됨
-            final_merged_list = [reorder_post(p) for p in sorted(all_posts_map.values(), key=lambda x: x.get('sequence_id', 0), reverse=True)]
+                # output 폴더가 없으면 자동 생성
+                os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
 
-            print(f"\n💾 최종 데이터 {len(final_merged_list)}개 저장 중 (신규: {len(new_items_to_process)}개)...")
-            
-            # output 폴더가 없으면 자동 생성
-            os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
-            
-            # [1] 신규 크롤링 결과 저장 (단순 업데이트 파일용은 수집된 것만)
-            with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-                json.dump(ordered_unique_collected, f, ensure_ascii=False, indent=4)
-            
-            dom_cnt = sum(1 for p in ordered_unique_collected if p.get('source') == 'initial_dom')
-            net_cnt = sum(1 for p in ordered_unique_collected if p.get('source') == 'network')
-            print(f"✅ 신규 크롤링 저장: {OUTPUT_FILE}")
-            print(f"   - Network 기반: {net_cnt}개")
-            print(f"   - DOM 기반: {dom_cnt}개")
-            
-            # [2] Simple 버전 업데이트
-            # "update only"와 "all" 모두 이 로직을 통해 통합 관리
-            today = datetime.now().strftime('%Y%m%d')
-            simple_filename = f"{OUTPUT_DIR}/threads_py_simple_{today}.json"
-            os.makedirs(os.path.dirname(simple_filename), exist_ok=True)
-            
-            metadata = {
-                "version": "1.0",
-                "crawled_at": datetime.now().isoformat(),
-                "total_count": len(final_merged_list),
-                "max_sequence_id": max_sequence_id,
-                "crawl_mode": CRAWL_MODE
-            }
-            
-            save_data = {"metadata": metadata, "posts": final_merged_list}
-            
-            with open(simple_filename, "w", encoding="utf-8") as f:
-                json.dump(save_data, f, ensure_ascii=False, indent=4)
-            print(f"\n📦 Simple Full 버전 생성 완료: {simple_filename} (max_sequence_id: {max_sequence_id})")
-            
-            # Markdown 자동 변환
-            convert_json_to_md(simple_filename)
-        else:
-            print("\n😭 수집된 데이터가 없습니다.")
+                # [1] 신규 크롤링 결과 저장 (단순 업데이트 파일용은 수집된 것만)
+                with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+                    json.dump(ordered_unique_collected, f, ensure_ascii=False, indent=4)
 
+                dom_cnt = sum(1 for p in ordered_unique_collected if p.get('source') == 'initial_dom')
+                net_cnt = sum(1 for p in ordered_unique_collected if p.get('source') == 'network')
+                print(f"✅ 신규 크롤링 저장: {OUTPUT_FILE}")
+                print(f"   - Network 기반: {net_cnt}개")
+                print(f"   - DOM 기반: {dom_cnt}개")
 
-        browser.close()
+                # [2] Simple 버전 업데이트
+                # "update only"와 "all" 모두 이 로직을 통해 통합 관리
+                today = datetime.now().strftime('%Y%m%d')
+                simple_filename = f"{OUTPUT_DIR}/threads_py_simple_{today}.json"
+                os.makedirs(os.path.dirname(simple_filename), exist_ok=True)
+
+                metadata = {
+                    "version": "1.0",
+                    "crawled_at": datetime.now().isoformat(),
+                    "total_count": len(final_merged_list),
+                    "max_sequence_id": max_sequence_id,
+                    "crawl_mode": CRAWL_MODE
+                }
+
+                save_data = {"metadata": metadata, "posts": final_merged_list}
+
+                with open(simple_filename, "w", encoding="utf-8") as f:
+                    json.dump(save_data, f, ensure_ascii=False, indent=4)
+                print(f"\n📦 Simple Full 버전 생성 완료: {simple_filename} (max_sequence_id: {max_sequence_id})")
+
+                # Markdown 자동 변환
+                convert_json_to_md(simple_filename)
+            else:
+                print("\n😭 수집된 데이터가 없습니다.")
+        finally:
+            browser.close()
 
         end_time_dt = datetime.now()
         duration = end_time_dt - start_time_dt

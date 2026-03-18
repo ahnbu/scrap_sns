@@ -38,7 +38,7 @@ def load_failures():
     if os.path.exists(FAILURES_FILE):
         with open(FAILURES_FILE, 'r', encoding='utf-8-sig') as f:
             try: return json.load(f)
-            except: return {}
+            except Exception: return {}
     return {}
 
 def save_failures(failures):
@@ -58,7 +58,7 @@ def get_post_code(post):
             # threads URL pattern: /@username/post/{code}
             if "/post/" in path:
                 return path.split("/post/")[-1]
-        except:
+        except Exception:
             pass
     return None
 
@@ -261,8 +261,8 @@ async def worker(context, semaphore, code, username, results, lock):
             try:
                 from utils.common import save_debug_snapshot
                 save_debug_snapshot(html, "threads")
-            except: pass
-            
+            except Exception: pass
+
             data = extract_json_from_html(html)
             if data:
                 items = extract_items_multi_path(data, code, username)
@@ -277,7 +277,7 @@ async def worker(context, semaphore, code, username, results, lock):
                     print(f"   ⚠️ 수집 실패(추출 0건): [{code}]")
             else:
                 print(f"   ⚠️ 수집 실패(JSON 없음): [{code}]")
-        except: print(f"   ❌ 수집 실패: [{code}]")
+        except Exception: print(f"   ❌ 수집 실패: [{code}]")
         finally: await page.close()
 
 async def run():

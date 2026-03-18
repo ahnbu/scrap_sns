@@ -38,7 +38,7 @@ def signal_handler(sig, frame):
         try:
             # 윈도우에서 자식 프로세스 트리를 종료하기 위한 명령 (비동기 실행)
             subprocess.Popen(f"taskkill /F /T /PID {p.pid}", stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, shell=True)
-        except:
+        except Exception:
             pass
             
     # 로그 파일 마감
@@ -50,8 +50,8 @@ def signal_handler(sig, frame):
                 f.write(f"================================================\n")
                 f.flush()
                 f.close()
-        except: pass
-        
+        except Exception: pass
+
     print("🏁 프로세스 종료 명령 완료. 즉시 종료합니다.")
     os._exit(0)
 
@@ -88,7 +88,7 @@ def should_run_consumer(platform):
     if os.path.exists(failure_file):
         with open(failure_file, 'r', encoding='utf-8-sig') as f:
             try: failures = json.load(f)
-            except: pass
+            except Exception: pass
             
     final_targets = [p for p in uncollected if failures.get(str(p.get('platform_id') or p.get('id') or p.get('code')), {}).get('count', 0) < 3]
     
@@ -177,7 +177,7 @@ def run_scrapers_in_parallel(mode='update'):
                 f.write(f"🏁 {plat} 스크래핑 종료: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
                 f.write(f"================================================\n")
                 f.close()
-        except: pass
+        except Exception: pass
 
     print("\n모든 플랫폼 스크래핑이 종료되었습니다.")
 
@@ -320,7 +320,7 @@ def download_images(posts):
                 
                 if os.path.exists(fs_path):
                     local_images.append(web_path)
-            except: pass
+            except Exception: pass
         if local_images: post['local_images'] = local_images
 
     print(f"   ✅ 이미지 다운로드 완료: 신규 {count}개 저장됨.")
