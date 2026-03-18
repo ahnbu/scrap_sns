@@ -81,8 +81,10 @@ Producer → Consumer 구조로 동작:
 
 ```python
 STANDARD_FIELD_ORDER = [
-    "sequence_id", "platform_id", "sns_platform", "username", "display_name",
-    "full_text", "media", "url", "created_at", "date", "crawled_at", "source", "local_images"
+    "sequence_id", "platform_id", "sns_platform", "code", "urn",
+    "username", "display_name", "full_text", "media", "url",
+    "created_at", "date", "crawled_at", "source", "local_images",
+    "is_detail_collected", "is_merged_thread"
 ]
 ```
 

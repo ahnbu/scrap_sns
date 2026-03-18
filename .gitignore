@@ -45,6 +45,10 @@ scripts/
 
 _handoff/
 
+# Temp/test artifacts
+temp-code/
+test_runs/
+.pdca-status.json
 
 # Legacy Backup
 _backup_*/
