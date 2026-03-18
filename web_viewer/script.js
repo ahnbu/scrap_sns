@@ -1,3 +1,14 @@
+// XSS escape utility
+function escapeHtml(str) {
+    if (str == null) return '';
+    return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     // const feedJsonPath = 'output_total/total_full_20260201.json'; // ❌ 삭제됨 (동적 로딩으로 변경)
     const masonryGrid = document.getElementById('masonryGrid');
@@ -612,30 +623,30 @@ ${item.body}
             <div class="flex items-center gap-3">
                 ${iconHtml}
                 <div class="min-w-0">
-                    <h3 class="text-sm font-semibold text-white truncate max-w-[150px]">${post.display_name || post.username || 'Unknown'}</h3>
-                    <p class="text-xs text-gray-400 truncate" title="${post.created_at || post.crawled_at}">
-                        ${dateLabel}
+                    <h3 class="text-sm font-semibold text-white truncate max-w-[150px]">${escapeHtml(post.display_name || post.username || 'Unknown')}</h3>
+                    <p class="text-xs text-gray-400 truncate" title="${escapeHtml(post.created_at || post.crawled_at)}">
+                        ${escapeHtml(dateLabel)}
                     </p>
                 </div>
             </div>
             <div class="flex items-center gap-1">
-                <button class="fold-btn p-1.5 rounded-lg hover:bg-white/10 text-gray-400" data-url="${postUrl}" title="${isFolded ? 'Unfold card' : 'Fold card'}">
+                <button class="fold-btn p-1.5 rounded-lg hover:bg-white/10 text-gray-400" data-url="${escapeHtml(postUrl)}" title="${isFolded ? 'Unfold card' : 'Fold card'}">
                     <span class="material-symbols-outlined text-[20px]">
                         ${isFolded ? 'expand_more' : 'expand_less'}
                     </span>
                 </button>
-                <button class="invisible-btn p-1.5 rounded-lg hover:bg-white/10 transition-colors text-gray-400 hover:text-red-400" data-url="${postUrl}" title="Hide post">
+                <button class="invisible-btn p-1.5 rounded-lg hover:bg-white/10 transition-colors text-gray-400 hover:text-red-400" data-url="${escapeHtml(postUrl)}" title="Hide post">
                     <span class="material-symbols-outlined text-[20px]">visibility</span>
                 </button>
-                <button class="copy-btn p-1.5 rounded-lg hover:bg-white/10 transition-colors text-gray-400 hover:text-primary" data-url="${postUrl}" title="Copy text">
+                <button class="copy-btn p-1.5 rounded-lg hover:bg-white/10 transition-colors text-gray-400 hover:text-primary" data-url="${escapeHtml(postUrl)}" title="Copy text">
                     <span class="material-symbols-outlined text-[20px]">content_copy</span>
                 </button>
-                <button class="favorite-btn p-1.5 rounded-lg hover:bg-white/10 transition-colors group/fav" data-url="${postUrl}">
+                <button class="favorite-btn p-1.5 rounded-lg hover:bg-white/10 transition-colors group/fav" data-url="${escapeHtml(postUrl)}">
                     <span class="material-symbols-outlined text-[20px] ${isFavorited ? 'text-yellow-400 fill-1' : 'text-gray-500 group-hover/fav:text-yellow-400'} transition-all">
                         ${isFavorited ? 'star' : 'star'}
                     </span>
                 </button>
-                <button class="todo-btn p-1.5 rounded-lg hover:bg-white/10 transition-colors group/todo ${todos[postUrl] ? todos[postUrl] : ''}" data-url="${postUrl}" title="TODO 상태 관리">
+                <button class="todo-btn p-1.5 rounded-lg hover:bg-white/10 transition-colors group/todo ${todos[postUrl] ? escapeHtml(todos[postUrl]) : ''}" data-url="${escapeHtml(postUrl)}" title="TODO 상태 관리">
                     <span class="material-symbols-outlined text-[20px]">
                         ${todos[postUrl] === 'pending' ? 'pending' : (todos[postUrl] === 'completed' ? 'task_alt' : 'radio_button_unchecked')}
                     </span>
@@ -756,12 +767,12 @@ ${item.body}
         const content = document.createElement('div');
         if (isFolded) content.classList.add('hidden-content');
         
-        const cleanText = (post.full_text || '').replace(/\n/g, '<br>');
+        const cleanText = escapeHtml(post.full_text || '').replace(/\n/g, '<br>');
         const isLongText = (post.full_text || '').length > 150; // Simple length check
-        
+
         content.innerHTML = `
             <div class="relative ${isLongText ? 'cursor-pointer group/text' : ''}">
-                <p class="text-sm text-gray-200 leading-relaxed font-light ${isLongText ? 'line-clamp-4' : ''} transition-all select-none" id="text-${postUrl}">
+                <p class="text-sm text-gray-200 leading-relaxed font-light ${isLongText ? 'line-clamp-4' : ''} transition-all select-none" id="text-${escapeHtml(postUrl)}">
                     ${cleanText}
                 </p>
                 ${isLongText ? `
@@ -816,21 +827,18 @@ ${item.body}
             if (isVideo) {
                 // Placeholder for video posts
                 imageDiv.innerHTML = `
-                    <div class="w-full min-h-[200px] flex flex-col items-center justify-center bg-black/40 cursor-pointer py-10" 
-                         onclick="window.open('${postUrl}', '_blank')">
+                    <div class="video-placeholder w-full min-h-[200px] flex flex-col items-center justify-center bg-black/40 cursor-pointer py-10">
                         <span class="material-symbols-outlined text-4xl text-white/50 mb-2">play_circle</span>
                         <span class="text-xs text-white/40">Video Post (Click to view)</span>
                     </div>
                 `;
+                imageDiv.querySelector('.video-placeholder').addEventListener('click', () => {
+                    window.open(postUrl, '_blank');
+                });
             } else {
                 const placeholderImg = "https://placehold.co/400x300/222/555?text=Image+Unavailable";
                 imageDiv.innerHTML = `
-                    <img src="${imgUrl}" 
-                         class="w-full h-auto max-h-[600px] object-contain cursor-zoom-in transition-transform duration-500 group-hover/image:scale-105"
-                         data-src="${imgUrl}"
-                         data-original="${originalUrl}"
-                         data-caption="${post.display_name || post.username || 'Unknown'}: ${post.full_text?.slice(0,50)}..."
-                         onerror="if(this.src!=='${originalUrl}'){this.src='${originalUrl}';}else{this.src='${placeholderImg}';this.onerror=null;}"
+                    <img class="w-full h-auto max-h-[600px] object-contain cursor-zoom-in transition-transform duration-500 group-hover/image:scale-105"
                          alt="SNS Post Image">
                     ${moreCount > 0 ? `
                     <div class="absolute top-2 right-2 bg-black/60 backdrop-blur-sm px-2 py-1 rounded text-xs text-white flex items-center gap-1 pointer-events-none">
@@ -838,10 +846,27 @@ ${item.body}
                         +${moreCount}
                     </div>` : ''}
                 `;
-                
-                // Image click handler (only for actual images)
+
+                // Set img attributes safely via DOM API (avoid inline onerror/XSS)
                 const imgEl = imageDiv.querySelector('img');
                 if (imgEl) {
+                    imgEl.src = imgUrl;
+                    imgEl.dataset.src = imgUrl;
+                    imgEl.dataset.original = originalUrl;
+                    imgEl.dataset.caption = `${post.display_name || post.username || 'Unknown'}: ${(post.full_text || '').slice(0,50)}...`;
+
+                    // onerror fallback chain via addEventListener
+                    const handleImgError = function() {
+                        if (this.src !== originalUrl) {
+                            this.src = originalUrl;
+                        } else {
+                            this.src = placeholderImg;
+                            this.removeEventListener('error', handleImgError);
+                        }
+                    };
+                    imgEl.addEventListener('error', handleImgError);
+
+                    // Image click handler (only for actual images)
                     imgEl.addEventListener('click', (e) => {
                         showModal(e.target.dataset.src, e.target.dataset.caption);
                     });
@@ -868,8 +893,8 @@ ${item.body}
                 const isPrimary = tagTypes[tag] === 'primary';
                 tagChip.className = `tag-chip ${isPrimary ? 'primary' : ''}`;
                 tagChip.innerHTML = `
-                    <span>${tag}</span>
-                    <span class="tag-remove material-symbols-outlined text-[12px]" data-tag="${tag}">close</span>
+                    <span>${escapeHtml(tag)}</span>
+                    <span class="tag-remove material-symbols-outlined text-[12px]" data-tag="${escapeHtml(tag)}">close</span>
                 `;
                 tagChip.querySelector('.tag-remove').addEventListener('click', (e) => {
                     e.stopPropagation();
@@ -980,7 +1005,7 @@ ${item.body}
         footer.className = 'flex items-center gap-4 pt-3 mt-auto border-t border-white/5 text-gray-500 text-xs';
         if (isFolded) footer.classList.add('hidden-content');
         footer.innerHTML = `
-            <a href="${postUrl || '#'}" target="_blank" class="flex items-center gap-1 hover:text-primary transition-colors ml-auto">
+            <a href="${escapeHtml(postUrl || '#')}" target="_blank" class="flex items-center gap-1 hover:text-primary transition-colors ml-auto">
                 <span>View Original</span>
                 <span class="material-symbols-outlined text-[16px]">open_in_new</span>
             </a>
@@ -1218,13 +1243,13 @@ ${item.body}
             
             item.innerHTML = `
                 <div class="flex items-center gap-3">
-                    <span class="text-sm font-medium text-white">${tag}</span>
+                    <span class="text-sm font-medium text-white">${escapeHtml(tag)}</span>
                     ${isPrimary ? `<span class="px-2 py-0.5 rounded bg-primary/20 text-primary text-[10px] font-bold border border-primary/20 uppercase">Primary</span>` : ''}
                 </div>
                 <div class="flex items-center gap-3">
                     <span class="text-[11px] text-gray-500">${isPrimary ? '강조 해제' : '강조 표시'}</span>
                     <label class="toggle-switch">
-                        <input type="checkbox" ${isPrimary ? 'checked' : ''} data-tag="${tag}">
+                        <input type="checkbox" ${isPrimary ? 'checked' : ''} data-tag="${escapeHtml(tag)}">
                         <span class="toggle-slider"></span>
                     </label>
                 </div>
@@ -1275,10 +1300,10 @@ ${item.body}
             item.innerHTML = `
                 <span class="material-symbols-outlined text-[20px] shrink-0" style="color: ${iconColor}">${icon}</span>
                 <div class="invisible-content">
-                    <h4 class="truncate">${post.username || 'Unknown'}</h4>
-                    <p class="truncate text-xs opacity-60">${(post.full_text || 'No content').slice(0, 100)}</p>
+                    <h4 class="truncate">${escapeHtml(post.username || 'Unknown')}</h4>
+                    <p class="truncate text-xs opacity-60">${escapeHtml((post.full_text || 'No content').slice(0, 100))}</p>
                 </div>
-                <button class="restore-btn hover:scale-105 active:scale-95 transition-all shrink-0" data-url="${post.post_url}">
+                <button class="restore-btn hover:scale-105 active:scale-95 transition-all shrink-0" data-url="${escapeHtml(post.post_url)}">
                     Restore
                 </button>
             `;
@@ -1353,12 +1378,12 @@ ${item.body}
                 <div class="flex items-center gap-3">
                     <div class="px-2 py-0.5 rounded text-[10px] font-bold uppercase border ${badgeColor}">${badgeLabel}</div>
                     ${!isManual ? `<div class="text-[10px] text-gray-500 uppercase font-bold tracking-wider">Tag</div>` : `<div class="px-2 py-0.5 rounded bg-gray-700/50 text-gray-400 text-[10px] font-bold border border-white/10">Key</div>`}
-                    <span class="text-sm font-medium text-white">${rule.keyword}</span>
-                    
+                    <span class="text-sm font-medium text-white">${escapeHtml(rule.keyword)}</span>
+
                     ${isManual ? `
                     <span class="material-symbols-outlined text-gray-600 text-sm">arrow_forward</span>
                     <div class="px-2 py-0.5 rounded bg-green-900/30 text-green-400 text-[10px] font-bold border border-green-500/20">Tag</div>
-                    <span class="text-sm font-medium text-white">${rule.tag}</span>
+                    <span class="text-sm font-medium text-white">${escapeHtml(rule.tag)}</span>
                     ` : ''}
                 </div>
                 
