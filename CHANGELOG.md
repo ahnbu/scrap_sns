@@ -1,4 +1,16 @@
 ﻿
+## [2026-03-18]
+
+### Added
+- **보안 테스트(S1~S10)**: Flask API Path Traversal 차단, mode 검증, save-tags 입력 검증, 에러 정보 노출 차단 테스트 10건
+- **웹 뷰어 E2E(U1~U5)**: XSS 방어, 검색 필터링, 즐겨찾기 지속성, 콘솔 에러, 플랫폼 필터 cross-check 5건
+- **파서 통합 테스트(P1~P4)**: Threads/LinkedIn/Twitter 전체 파이프라인 + 이모지 안전 검증 4건
+- **테스트 인프라**: conftest.py (Flask test client + console 수집 fixture), XSS payload fixture, integration 폴더
+
+### Changed
+- **CORS 전체 허용 롤백**: 로컬 전용 도구 + file:// 사용 환경에서 CORS 제한이 불필요하므로 `CORS(app)`으로 단순화
+- **pytest.ini**: `security`, `integration` 마커 추가
+
 ## [2026-03-10]
 
 ### Changed

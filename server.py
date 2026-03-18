@@ -12,7 +12,7 @@ PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
 WEB_VIEWER_DIR = os.path.join(PROJECT_ROOT, 'web_viewer')
 
 app = Flask(__name__, static_folder=WEB_VIEWER_DIR, static_url_path='')
-CORS(app, origins=os.environ.get('CORS_ORIGINS', 'http://localhost:*,http://127.0.0.1:*').split(','))
+CORS(app)
 
 OUTPUT_TOTAL_DIR = os.path.join(PROJECT_ROOT, "output_total")
 
