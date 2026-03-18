@@ -2,29 +2,32 @@ import os
 import sys
 import glob
 import json
+import logging
 import subprocess
-from flask import Flask, jsonify, render_template, send_from_directory, request
+from flask import Flask, jsonify, send_from_directory, request, abort
 from flask_cors import CORS
 
 # Define project root explicitly
 PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
+WEB_VIEWER_DIR = os.path.join(PROJECT_ROOT, 'web_viewer')
 
-app = Flask(__name__, static_folder=PROJECT_ROOT, static_url_path='')
-CORS(app)
+app = Flask(__name__, static_folder=WEB_VIEWER_DIR, static_url_path='')
+CORS(app, origins=os.environ.get('CORS_ORIGINS', 'http://localhost:*,http://127.0.0.1:*').split(','))
 
 OUTPUT_TOTAL_DIR = os.path.join(PROJECT_ROOT, "output_total")
 
 @app.route('/api/get-tags', methods=['GET'])
 def get_tags():
     try:
-        export_path = os.path.join(PROJECT_ROOT, "web_viewer", "sns_tags.json")
+        export_path = os.path.join(WEB_VIEWER_DIR, "sns_tags.json")
         if not os.path.exists(export_path):
             return jsonify({})
         with open(export_path, 'r', encoding='utf-8') as f:
             data = json.load(f)
         return jsonify(data)
     except Exception as e:
-        return jsonify({"error": str(e)}), 500
+        logging.exception("Failed to get tags")
+        return jsonify({"error": "Failed to load tags"}), 500
 
 @app.route('/api/save-tags', methods=['POST'])
 def save_tags():
@@ -32,15 +35,17 @@ def save_tags():
         data = request.json
         if not data:
             return jsonify({"status": "error", "message": "No data received"}), 400
-        target_dir = os.path.join(PROJECT_ROOT, "web_viewer")
-        if not os.path.exists(target_dir):
-            os.makedirs(target_dir)
-        export_path = os.path.join(target_dir, "sns_tags.json")
+        if not isinstance(data, dict):
+            return jsonify({"status": "error", "message": "Invalid data format: expected JSON object"}), 400
+        if not os.path.exists(WEB_VIEWER_DIR):
+            os.makedirs(WEB_VIEWER_DIR)
+        export_path = os.path.join(WEB_VIEWER_DIR, "sns_tags.json")
         with open(export_path, 'w', encoding='utf-8') as f:
             json.dump(data, f, indent=4, ensure_ascii=False)
-        return jsonify({"status": "success", "message": f"Saved to {export_path}"})
+        return jsonify({"status": "success", "message": "Tags saved successfully"})
     except Exception as e:
-        return jsonify({"status": "error", "message": str(e)}), 500
+        logging.exception("Failed to save tags")
+        return jsonify({"status": "error", "message": "Failed to save tags"}), 500
 
 @app.route('/api/latest-data', methods=['GET'])
 def get_latest_data():
@@ -56,7 +61,10 @@ def get_latest_data():
             data = json.load(f)
         return jsonify(data)
     except Exception as e:
-        return jsonify({"error": str(e)}), 500
+        logging.exception("Failed to load latest data")
+        return jsonify({"error": "Failed to load data"}), 500
+
+ALLOWED_SCRAP_MODES = {'update', 'all'}
 
 @app.route('/api/run-scrap', methods=['POST'])
 def run_scrap():
@@ -66,6 +74,8 @@ def run_scrap():
             return jsonify({"status": "error", "message": "Script not found"}), 404
         data = request.json or {}
         mode = data.get('mode', 'update')
+        if mode not in ALLOWED_SCRAP_MODES:
+            return jsonify({"status": "error", "message": f"Invalid mode. Allowed: {', '.join(sorted(ALLOWED_SCRAP_MODES))}"}), 400
         env = os.environ.copy()
         env["PYTHONIOENCODING"] = "utf-8"
         process = subprocess.Popen(
@@ -85,36 +95,39 @@ def run_scrap():
         stdout_val = "".join(full_output[-20:])
         return jsonify({"status": "success", "message": "Scraping finished", "output": stdout_val})
     except Exception as e:
-        return jsonify({"status": "error", "message": str(e)}), 500
+        logging.exception("Failed to run scraping")
+        return jsonify({"status": "error", "message": "Scraping failed"}), 500
 
 @app.route('/api/status', methods=['GET'])
 def get_status():
-    return jsonify({"status": "running", "message": "Flask server is active", "root": PROJECT_ROOT})
+    return jsonify({"status": "running", "message": "Flask server is active"})
 
 @app.route('/')
 def index():
-    path = os.path.join(PROJECT_ROOT, 'index.html')
-    if os.path.exists(path):
-        return send_from_directory(PROJECT_ROOT, 'index.html')
-    return f"index.html not found in {PROJECT_ROOT}", 404
+    index_path = os.path.join(WEB_VIEWER_DIR, 'index.html')
+    if os.path.exists(index_path):
+        return send_from_directory(WEB_VIEWER_DIR, 'index.html')
+    return "index.html not found", 404
 
 @app.route('/<path:path>')
 def static_proxy(path):
-    # 1. Try in project root
-    full_path = os.path.join(PROJECT_ROOT, path)
-    if os.path.exists(full_path) and os.path.isfile(full_path):
-        return send_from_directory(PROJECT_ROOT, path)
-    
-    # 2. Try in web_viewer
-    web_viewer_dir = os.path.join(PROJECT_ROOT, 'web_viewer')
-    full_path_wv = os.path.join(web_viewer_dir, path)
-    if os.path.exists(full_path_wv) and os.path.isfile(full_path_wv):
-        return send_from_directory(web_viewer_dir, path)
-        
-    # 3. Fallback to index.html for unknown routes
-    return send_from_directory(PROJECT_ROOT, 'index.html')
+    # Prevent path traversal: resolve and verify within web_viewer
+    requested = os.path.realpath(os.path.join(WEB_VIEWER_DIR, path))
+    web_viewer_real = os.path.realpath(WEB_VIEWER_DIR)
+    if not requested.startswith(web_viewer_real + os.sep) and requested != web_viewer_real:
+        abort(403)
+
+    if os.path.exists(requested) and os.path.isfile(requested):
+        return send_from_directory(WEB_VIEWER_DIR, path)
+
+    # Fallback to index.html for SPA-style routing
+    index_path = os.path.join(WEB_VIEWER_DIR, 'index.html')
+    if os.path.exists(index_path):
+        return send_from_directory(WEB_VIEWER_DIR, 'index.html')
+    abort(404)
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
-    print(f"✨ Starting server from {PROJECT_ROOT} on port {port}")
-    app.run(host='0.0.0.0', port=port, debug=False)
+    host = os.environ.get('HOST', '127.0.0.1')
+    print(f"Starting server on {host}:{port}")
+    app.run(host=host, port=port, debug=False)
