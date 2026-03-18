@@ -132,3 +132,4 @@ output_total/
 - `test_runs/` 폴더: 특정 시점의 테스트 스냅샷 보관용.
 - 스크래퍼 CLI에서 `--mode all`은 전체 재수집이므로 데이터 용량 주의.
 - `total_scrap.py`는 로그를 `logs/{platform}.log`에 저장 (gitignore).
+- `CHANGELOG.md`는 **표 형식만 사용** (Keep a Changelog 섹션 형식 금지). 형식: `| 일시 | 유형 | 범위 | 변경내용 (목적 포함) |`. 글로벌 CLAUDE.md의 Changelog 규칙과 `C:\Users\ahnbu\CHANGELOG_TEMPLATE.md`를 참조.
