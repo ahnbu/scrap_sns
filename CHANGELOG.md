@@ -4,6 +4,7 @@
 
 | 일시 | 유형 | 범위 | 변경내용 (목적 포함) |
 |---|---|---|---|
+| 2026-03-19 | chore | data | 수집 데이터 업데이트 — Threads 실패 이력 22건 추가, 웹 뷰어 데이터 631건으로 갱신 |
 | 2026-03-19 | docs | docs | TDD E2E 테스트 구현 문서 추가 — 보안·품질 수정 검증 테스트 전략 기록 |
 | 2026-03-19 | test | fixtures/snapshots | Threads 페이지 HTML 스냅샷 11건 추가 — E2E 파서 테스트용 고정 데이터 |
 | 2026-03-19 | fix | inject_x_cookies | X(Twitter) 쿠키 주입 스크립트 추가 — persistent context에 세션 주입하여 비대화형 인증 갱신 지원 |

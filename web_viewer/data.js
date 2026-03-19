@@ -1,9 +1,9 @@
 ﻿const snsFeedData = {
   "metadata": {
-    "updated_at": "2026-02-18T11:16:07.559112",
-    "max_sequence_id": 420,
-    "total_count": 420,
-    "threads_count": 310,
+    "updated_at": "2026-03-18T17:58:00.050028",
+    "max_sequence_id": 631,
+    "total_count": 631,
+    "threads_count": 528,
     "linkedin_count": 75,
     "twitter_count": 42,
     "execution_mode": "parallel_multi_window"
@@ -1252,6 +1252,7 @@
     {
       "sequence_id": 63,
       "sns_platform": "threads",
+      "code": "DUn02Eukm2o",
       "full_text": "오늘 클로드코드라는 걸 공부했는데\n진심 충격받았다\n코드 한 줄도 못 치는 내가\nAI한테 말로 설명만 했더니 웹사이트가 만들어져\n이게 말이 돼? \n솔직히 나 챗GPT 꽤 오래 썼거든\n근데 클로드코드 보고 나서\n아 이건 차원이 다르구나 싶었어\n그래서 결심했다\n챗GPT야 그동안 고마웠고\n나는 Claude Opus랑 새 출발한다\n맥스 요금 보고 지갑이 좀 떨렸는데\n한 달만 제대로 빠져보기로 했어\n1인 브랜드 혼자 운영해본 사람은 알겠지만\n도구 하나 바뀌면 일하는 방식이 완전히 달라져\n클로드코드 × 브랜드 전략\n이걸로 뭘 만들 수 있을지\n완전 기대중",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/629374607_17844918324687530_4627368405534422204_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTAwMHgxMDAwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QHl5Mk54qtYH-EMw86onRydS6O0QXTGSW1wl8_qele-AR6xOl7sZBqent0-d0GxfBY&_nc_ohc=9DZwGITVra4Q7kNvwExAeLe&_nc_gid=ULENdl6Ccvr2-7axQhwukA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMDI2MjQyMjQ0ODUzMjkwNA%3D%3D.3-ccb7-5&oh=00_Afu_77jMKwEkt5_VLAdM3EKGhKE40P8-Iq9yQ7EG4MtMfA&oe=699AE3B4&_nc_sid=10d13b"
@@ -1260,33 +1261,57 @@
       "local_images": [
         "web_viewer/images/7ad400fb99bc981b39871d8017844e08.jpg"
       ],
-      "code": "DUn02Eukm2o",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUn02Eukm2o",
       "user": "winter_kyul",
       "timestamp": "2026-02-12 00:14:43",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 1
     },
     {
       "sequence_id": 64,
+      "platform_id": "DUniriOjLVh",
       "sns_platform": "threads",
-      "full_text": "바이브코딩/AI 자동화가 중독적인 이유는 게임같아서라는 @taehyeong_lim 교수님의 말씀이 공감이 간다. 뭘 하면 결과, 즉 보상이 즉각적이다. 지팡이 휘두르면 뭔가 나오는 느낌? 코딩은 원래도 이 시대의 마법이었는데, 그걸 쉽게 시작해서 이렇게 저렇게 간단한 것부터 트라이해볼 수 있는 게 매력이다. 그러다가 익숙함이 늘고 공부를 더 하면 더더더 복잡한 것을 해낼 수 있는 것마저 게임같다.\n\n처음엔 쉬운 걸 한다. 파일 이름 바꾸기, 폴더 정리. 되네? 그럼 다음. 논문 요약 자동화. 되네? 자동화한 요약 카드로 시스템 만들기. 이것도 되네? 그럼 다음. LLM 카운슬? 멀티에이전트? 점점 복잡해지고 점점 재밌어진다. RPG 게임 스킬 트리 올리는 것 같다. 처음엔 기본 공격만 한다. 나중엔 콤보 스킬 쓴다. 성취감이 즉각적이다.",
+      "code": "DUniriOjLVh",
+      "username": "jinaleesoc",
+      "display_name": "jinaleesoc",
+      "full_text": "ai 자동화\n21시간\n바이브코딩/AI 자동화가 중독적인 이유는 게임같아서라는\n@taehyeong_lim\n교수님의 말씀이 공감이 간다. 뭘 하면 결과, 즉 보상이 즉각적이다. 지팡이 휘두르면 뭔가 나오는 느낌? 코딩은 원래도 이 시대의 마법이었는데, 그걸 쉽게 시작해서 이렇게 저렇게 간단한 것부터 트라이해볼 수 있는 게 매력이다. 그러다가 익숙함이 늘고 공부를 더 하면 더더더 복잡한 것을 해낼 수 있는 것마저 게임같다.\n처음엔 쉬운 걸 한다. 파일 이름 바꾸기, 폴더 정리. 되네? 그럼 다음. 논문 요약 자동화. 되네? 자동화한 요약 카드로 시스템 만들기. 이것도 되네? 그럼 다음. LLM 카운슬? 멀티에이전트? 점점 복잡해지고 점점 재밌어진다. RPG 게임 스킬 트리 올리는 것 같다. 처음엔 기본 공격만 한다. 나중엔 콤보 스킬 쓴다. 성취감이 즉각적이다.",
       "media": [],
+      "url": "https://www.threads.net/@jinaleesoc/post/DUniriOjLVh",
+      "created_at": "2026-02-11 22:04:05",
+      "date": "2026-02-11",
       "crawled_at": "2026-02-12T18:45:17.131",
-      "code": "DUniriOjLVh0U-UEGs4wVrUY7Oo12Wff6wcKhA0",
-      "root_code": "DUniriOjLVh",
-      "user": "jinaleesoc",
-      "timestamp": "2026-02-11 21:36:00",
-      "is_merged_thread": true,
-      "original_item_count": 1,
+      "source": "initial_dom",
       "is_detail_collected": true,
+      "is_merged_thread": false,
+      "pk": null,
+      "like_count": -1,
+      "reply_count": -1,
+      "repost_count": -1,
+      "quote_count": -1,
+      "content_type": "text",
       "platform_sequence_id": 2
     },
     {
       "sequence_id": 65,
       "sns_platform": "threads",
+      "code": "DUniriOjLVh0U-UEGs4wVrUY7Oo12Wff6wcKhA0",
+      "full_text": "바이브코딩/AI 자동화가 중독적인 이유는 게임같아서라는 @taehyeong_lim 교수님의 말씀이 공감이 간다. 뭘 하면 결과, 즉 보상이 즉각적이다. 지팡이 휘두르면 뭔가 나오는 느낌? 코딩은 원래도 이 시대의 마법이었는데, 그걸 쉽게 시작해서 이렇게 저렇게 간단한 것부터 트라이해볼 수 있는 게 매력이다. 그러다가 익숙함이 늘고 공부를 더 하면 더더더 복잡한 것을 해낼 수 있는 것마저 게임같다.\n\n처음엔 쉬운 걸 한다. 파일 이름 바꾸기, 폴더 정리. 되네? 그럼 다음. 논문 요약 자동화. 되네? 자동화한 요약 카드로 시스템 만들기. 이것도 되네? 그럼 다음. LLM 카운슬? 멀티에이전트? 점점 복잡해지고 점점 재밌어진다. RPG 게임 스킬 트리 올리는 것 같다. 처음엔 기본 공격만 한다. 나중엔 콤보 스킬 쓴다. 성취감이 즉각적이다.",
+      "media": [],
+      "crawled_at": "2026-02-12T18:45:17.131",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DUniriOjLVh",
+      "user": "jinaleesoc",
+      "timestamp": "2026-02-11 21:36:00",
+      "original_item_count": 1,
+      "platform_sequence_id": 2
+    },
+    {
+      "sequence_id": 66,
+      "sns_platform": "threads",
+      "code": "DUpETvED2hc",
       "full_text": "Notion MCP + Claude Code + Stitch 로\n데이터 시각화 포트폴리오 제작 튜토리얼 촬영 중\n완성되면 영상 링크를 이 스레드에 올려놓을게요! \n\n문제정의 - 지표 설계 - 차트 선택 - 와이어프레임 설계 - 웹앱 또는 태블로에서 구현하는 방법을 \n프롬프트 템플릿으로 함께 제공해드릴 예정입니다.\n\n프롬프트에는 제가 기업 교육 시 교재에 넣어두는 데이터 분석 / 시각화 이론 내용이 꽉꽉 들어가 있어, 프롬프트만 보셔도 충분히 많은 도움이 되실 것 같아요!\n\n---\n\n여기서 보이는 포트폴리오 사이트의 경우 notion 을 db로 사용합니다!",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/634073945_905150722272805_8471132380887220100_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDM2MC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QFlvQR3_LLTmA4yks7CTL70RANV6GnH_kzRvwlTPpyXLeB3lPG91vLXBqj3eDSc6iU&_nc_ohc=qArOfB7RQ2MQ7kNvwG6ZSGE&_nc_gid=ChXu4Yo2ccRME4-r0bhrHg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMDYxMTkwNjQ0NTQwNDI1Mg%3D%3D.3-ccb7-5&oh=00_Afv1oz8fA-ytiXaPTTDbOpQrK15wh9nA4gxj9SS5gY15dA&oe=699AEF4B&_nc_sid=10d13b"
@@ -1295,18 +1320,18 @@
       "local_images": [
         "web_viewer/images/489d69730b45ff80a5bdc3666009c671.jpg"
       ],
-      "code": "DUpETvED2hc",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUpETvED2hc",
       "user": "tableau_viz",
       "timestamp": "2026-02-12 11:54:36",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 3
     },
     {
-      "sequence_id": 66,
+      "sequence_id": 67,
       "sns_platform": "threads",
+      "code": "DUi3u9LjA2d",
       "full_text": "Claude Code 7 Levels Mastery\n\nMost people think they're using Claude Code well but stuck at level 2-3. \n\nHere's what's actually possible - from beginner workflows to fully autonomous systems that run while you sleep.\n\n---\n\nLevel 1 is one habit: always use plan mode (shift+tab) before execution. \n\nDon't just type and hope. Planning mode forces Claude to ask clarifying questions before touching code.\n\n---\n\nLevel 2: claude.md file is your onboarding doc. Keep under 30 rules, readable in 60 seconds.\n\nFramework: What is this (one line), How we run (exact steps), What patterns (brand voice, rules), Mistakes to avoid, How we work. \n\nReference separate docs instead of dumping everything in.\n\n---\n\nLevel 3: Commands = saved prompts in /claude/commands/ triggered with slash. \n\nSkills = auto-loaded context from skills.sh (humanizer, SEO optimizer), only loads when relevant. \n\nHooks = mechanical checks (banned words, word count) in settings.json with zero LLM tokens. Skills use 0.3% context vs MCP servers eating 1.8% constantly whether you use them or not.\n\n---\n\nLevel 4: MCP servers connect Claude to actual apps. Air Table MCP reads your content calendar, creates posts, updates rows - no copy/paste. \n\nSetup: /mcp add airtable or create mcp.json manually. \n\nThousands available (Notion, Slack, GitHub). This is where Claude stops being a chatbot and starts being your actual workflow automation.\n\n---\n\nLevel 5: GSD framework for large projects. \n\nBreaks work into phases with plan→execute→verify loops. \n\nKeeps context in separate phase files (roadmap, state, requirements) to solve context rot problem when you hit 95% window. \n\nContext rot = at 10,000 tokens input, you lose 50% reliability. GSD keeps phases isolated, memory intact.\n\n---\n\nLevel 6: Sub-agents for specialization or speed. \n\nResearcher agent pulls data, writer creates content, reviewer checks quality - each with fresh context window. \n\nOr run 3-4 terminals in parallel for same task. Boris runs 5 Claude instances in terminal + 5-10 on claude.ai simultaneously. \n\nUse --dangerously-skip-permissions flag to stop approval prompts.\n\n---\n\nLevel 7: RALF loops for full autonomy. \n\nBash script + prd.json with acceptance criteria. \n\nRuns until tasks complete or max iterations hit. \n\nPerfect for well-scoped work: \"Write 6 LinkedIn posts on these topics, under 200 words, no banned words.\" \n\nWalk away for 30 minutes, come back to week's content drafted and reviewed.\n\n---\n\nCheck out also my free beginners course on Claude Code. \n\nIt's made with Claude, but in a structured way and based on experience and narrated by me :)\n\n15 modules here: https://github.com/koki7o/claude-code-for-beginners",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/632163486_17934713502170254_3979588207464953012_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTI4MHg3MjAuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QHulzi15pDnaBgVRdhqUodm1SioN0w6IsRjnJOjd4rnr-Gf1TAaNRe4xpVZzK9T5FA&_nc_ohc=L-zeb0eulGgQ7kNvwF5YdAv&_nc_gid=lGjrvTE67WIfBnQGmZZQ_g&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyODg2Nzc1MjU2NDM2MjY1Mw%3D%3D.3-ccb7-5&oh=00_AfvgpHPvDsf0FXBo0q4lERKSss39jsdPagRz1O1ZxKBslQ&oe=699B0556&_nc_sid=10d13b"
@@ -1315,18 +1340,18 @@
       "local_images": [
         "web_viewer/images/31b302116eb87bb7d27b3fe9cda7320f.jpg"
       ],
-      "code": "DUi3u9LjA2d",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUi3u9LjA2d",
       "user": "thedevfounder",
       "timestamp": "2026-02-10 02:03:46",
-      "is_merged_thread": true,
       "original_item_count": 9,
-      "is_detail_collected": true,
       "platform_sequence_id": 4
     },
     {
-      "sequence_id": 67,
+      "sequence_id": 68,
       "sns_platform": "threads",
+      "code": "DUlHaUFk2N_",
       "full_text": "클로드코드 팀모드 후기\n\n30만원짜리 플랜 2개로도 모자름.\n\n클로드코드 5개가 팀을 이루고, 서로 실시간으로 대화하면서 작업하게 세팅했는데 — 이렇게 5탭 띄워놓으면 시니어 개발자 5명이랑 주니어 개발자 20명이랑 동시에 일하는 느낌.\n\n웃긴 건, 클로드끼리 서로 인간 취급하면서\n\n\"팀원\", \"팀장\" 이렇게 부른다는 거...\n\n결과?\n\n- 개발 속도 그냥 subagent 쓰던것보다 10배이상 빨라짐\n- 대부분 작업이 버그 없이 one-shot에 엔터프라이즈급 품질로 완성됨\n- 수천 명이 사용 중인 서비스(pixeling.io)에 새로운 기능을 1주일에 몇십개씩 찍어내는 중",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/632050448_17874150174525517_1865596449891458505_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMjE2MHgxMTM2LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QE3P3FSg2YePZrM0LaXtbMGn_GrcSpYOUKjBCi0YtbWrWQ4B8YAgNWibcNpW436Wxc&_nc_ohc=dRpdIrP7zHMQ7kNvwG2wRVM&_nc_gid=MJYfwZtWQ20CyX4Z1jmYXw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyOTQ5OTY1Mjc0ODgyOTU2Nw%3D%3D.3-ccb7-5&oh=00_AfseCUIvipKvu1Rd8lOu-2C3cBiGmutjWyfJXvB_5xg9Sw&oe=699ADDD1&_nc_sid=10d13b"
@@ -1335,18 +1360,18 @@
       "local_images": [
         "web_viewer/images/74345067ff19aa55e3f025e0654b2121.jpg"
       ],
-      "code": "DUlHaUFk2N_",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUlHaUFk2N_",
       "user": "ddg.kang",
       "timestamp": "2026-02-10 22:59:14",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 5
     },
     {
-      "sequence_id": 68,
+      "sequence_id": 69,
       "sns_platform": "threads",
+      "code": "DUkNsjaEVmh",
       "full_text": "Google 대비 1000배 생산성을 가졌다는 Anthropic,\n할 일이 사람보다 더 많은 조직이 황금기를 맞는다고 말했습니다. \n앤트로픽의 일하는 방식 5가지 원칙을 정리했어요.\n\n---\n\n1/ \"Yes, and...\" 문화\n\n누가 아이디어를 내면 부정하지 않습니다.\n일단 받고, 그 위에 쌓습니다.\n\n의사결정 기준은 보고서가 아니라 \"vibes(직감)\".\n즉흥극 원칙으로 회사에 적용합니다.\n\n---\n\n2/ 계획은 최대 90일.\n\n그 이상의 로드맵은 없습니다.\n3개월 뒤면 모델 성능이 바뀌니까요.\n\n그 결과는 \nClaude Cowork — 아이디어에서 출시까지 10일.\n\n---\n\n3/ 고정된 팀이 없습니다.\n\n 이걸 \"캠프파이어\"라고 불렀어요.\n프로젝트라는 불이 피워지면, 사람들이 알아서 모입니다.\n끝나면 흩어지고, 다른 불로 이동합니다.\n\n이게 되는 이유는\n\"할 일이 사람보다 많아서.\"\n영역 다툼이 벌어질 이유 자체가 없는 겁니다.\n\n---\n\n4/ 생산성 1000배 — 진짜 맥락은 이겁니다.\n\n숫자 자체보다 중요한 건:\n\n→ 엔지니어가 Claude Code로 코딩·디버깅·테스트 자동화\n→ 법무팀이 직접 앱을 만듦\n→ TypeScript 모르는 데이터 사이언티스트가 React 앱을 뚝딱\n\n조직 전체가 AI를 내재화하면 일어나는 일입니다.\n\n---\n\n5/ 외부 아이디어를 제품으로 만듭니다.\n\n구성원이 개인 프로젝트로 만든 도구 2개를\nAnthropic이 공식 제품 기능으로 채택했습니다.\n크레딧도 제대로 줬어요.\n\n회사 밖 아이디어도 \"Yes, and...\" 하는 거죠!\n\n---\n\n협업에 대한 인사이트가 많은 글입니다.\n일하는 방식에 대한 고민이 있으시다면 추천드립니다👇🏻\nhttps://bit.ly/4qpL3Xa\n\n---\n\n3분을 선정해 바이브코딩 스터디 무료 지원해드려요!\n<이벤트 신청 폼> 확인하기👇🏻\nhttps://ai.gpters.org/threads_event",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/631461078_17925787872219174_3753534597048810959_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTAyMHg2NzYuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QGg2oMB33yK-oUsUMxXA64SKD-cJcXkZMSdKIfoPUC-c2fayPWyeiFmzYR4vMqgVZU&_nc_ohc=sSKB04VnBkkQ7kNvwEYJv2x&_nc_gid=MsegfkIO5IVd0AahjOnHHQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyOTI0NTgxOTQ1MTY5MzQ3Mw%3D%3D.3-ccb7-5&oh=00_AftCy7-NEDBEaNdS1g7BIzNlNv6dG09sYlwQAw6CUVjGJg&oe=699AEB48&_nc_sid=10d13b"
@@ -1355,33 +1380,33 @@
       "local_images": [
         "web_viewer/images/1b223949d895757376d41756b1bf346f.jpg"
       ],
-      "code": "DUkNsjaEVmh",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUkNsjaEVmh",
       "user": "gptersorg",
       "timestamp": "2026-02-10 14:34:55",
-      "is_merged_thread": true,
       "original_item_count": 8,
-      "is_detail_collected": true,
       "platform_sequence_id": 6
-    },
-    {
-      "sequence_id": 69,
-      "sns_platform": "threads",
-      "full_text": "[1/8]\nOpus 4.6이랑 Codex 5.3\n둘 다 쓰고 계신 분들 많을 텐데\n\n\"$20 내고 실제로 얼마나 쓸 수 있는 거야?\"\n이 질문에 정확히 답하는 글이 없더라고요\n\n직접 양쪽 구독하고 쓰면서\n공식 문서 + 실사용자 후기까지 팩트체크해서 정리했어요\n\n참고로 지금 OpenAI가 Codex 2배 한도 프로모션 중이라\n타이밍도 중요해요\n\n---\n\n[2/8]\n구독 플랜 구조부터요\n\nClaude:\nFree → Pro $20 → Max $100 (5배) → Max $200 (20배)\n정확한 메시지 수 비공개. 배수만 공개\n$100 중간 플랜이 있어요\n\nOpenAI:\nFree → Go ~$8 (신규) → Plus $20 → Pro $200\nPlus: Codex 45~225 로컬 메시지/5h\nPro: 300~1,500/5h (Plus의 6배)\n$20에서 $200으로 직행. 중간 없음\n\n핵심:\nClaude는 단계적 업그레이드 가능\nOpenAI는 10배 가격 점프밖에 없어요\n\n---\n\n[3/8]\n$20 플랜 체감 — 둘 다 부족하지만 결이 달라요\n\nClaude Pro $20:\n- Claude Code + 웹 + 데스크톱이 한도 합산\n- 코딩 많이 하면 웹 채팅도 같이 줄어듦\n- \"5시간에 20 프롬프트만에 제한\" (GitHub)\n\nChatGPT Plus $20:\n- Codex 45~225 메시지/5h (지금 2x 프로모: 90~450)\n- 근데 5.3이 크레딧을 이전보다 훨씬 많이 먹음\n- \"같은 작업인데 100크레딧 소모\" (oldandangry)\n\n둘 다 하루종일 코딩엔 부족\n이건 모든 리뷰에서 일치해요\n\n---\n\n[4/8]\n$100~$200 프리미엄 — 같은 $200인데 체감이 완전히 달라요\n\nClaude Max $100 (Pro의 5배):\n\"3~4시간 연속 코딩해도 안 끊김\"\n비개발자도 \"외주 수백만 원짜리를 직접 만듦\"\n→ 만족도 가장 높은 구간\n\nClaude Max $200 (Pro의 20배):\n\"8시간 작업해도 전혀 안 끊김\"\n\nChatGPT Pro $200 (Plus의 6배):\n\"32요청 후 소진. Plus 10개가 나을 듯\" (georgezip)\n\"2태스크에 주간 35% 소모. 내일 해지\" (jamesh)\n\"30분 쓰고 5일 쿨다운\" (telecartme)\n\nClaude Max $200은 \"충분하다\"\nChatGPT Pro $200은 \"사기당한 느낌\"이 컨센서스예요\n\n---\n\n[5/8]\n지금 놓치면 안 되는 거 하나\n\nOpenAI가 한시적 2x 프로모션 중이에요\nPlus/Pro/Business 전부 Codex 한도 2배\nFree/Go도 Codex 무료 체험 가능\n\n즉 지금 Plus $20이면:\nCodex 90~450 로컬 메시지/5h (원래의 2배)\n프로모션 끝나면 원래대로 돌아가요\n\n양쪽 다 한도 초과 시 추가 결제 가능:\n- Claude: Extra Usage (API 요금, 선불 충전)\n- OpenAI: 크레딧 구매 (~5크레딧/메시지)\n\n\"구독만으로 충분\"하진 않다는 걸\n양쪽 다 공식적으로 인정하고 있는 거예요\n\n---\n\n[6/8]\nCodex 5.3 실사용 코딩 후기를 모아봤어요\n써본 사람들 평가가 극과 극이에요\n\n\"1주 PR 28개, 26개 머지. 역대 최고\" (xXSLAYERXx)\n\"Claude Code 유저였는데 Codex 점점 더 씀. 95% 해결\" (rmonvfer)\n\n반면:\n\"7개 테스트 Opus 5승 Codex 0승. 프로덕션 불가\" (Alex Carter)\n\"Codex는 Opus보다 손이 더 많이 감\" (Nathan Lambert)\n\"CAT 명령어로 파일 쓰기 버그 3~4개월째 미해결\"\n\n벤치마크는 Codex 우세 (Terminal-Bench 77.3%)\n실사용 프로덕션은 Opus 선호가 다수예요\n\n---\n\n[7/8]\n갈아타는 이유가 재밌어요\n\nCodex → Claude Code:\n\"무통보 한도 축소에 질렸다\" (r.s)\n\"Pro $200 32요청 소진. Plus 10개가 나을 듯\" (georgezip)\n\nClaude → Codex:\n\"xhigh에서도 빠르고 95% 해결. 비중 늘리는 중\" (rmonvfer)\n\n제 경험:\n어려운 건 Codex, 나머지는 Opus\n이 조합이 제일 효율적이에요\n\n구독 피로도 현실:\nChatGPT + Claude + Gemini + Perplexity + Grok\n= 월 $110, 연간 $1,320\n한 모델에 올인보다 조합이 답이에요\n\n---\n\n[8/8]\n정리하면요\n\n$20 구간:\n둘 다 하루종일 코딩엔 부족\nClaude = 코드 품질 + $100 중간 플랜\nChatGPT = 지금 2x 프로모션 + Go $8 진입\n\n$200 구간:\nClaude Max = \"안 끊김\" 만족도 높음\nChatGPT Pro = 불만 다수 (32요청 소진 사례)\n\n숨겨진 변수:\nClaude 캐시 토큰이 rate limit 미포함\nCodex 2x 프로모션은 한시적\n\n최적 전략:\n1. 지금 Codex 2x 프로모션으로 무료/Plus 체험\n2. 메인은 Claude Pro $20\n3. 자주 끊기면 Max $100 업그레이드\n4. 둘 다 쓰면 월 $40로 대부분 커버\n\n어떤 조합으로 쓰고 계신지 알려주세요",
-      "media": [],
-      "crawled_at": "2026-02-12T19:04:22.186",
-      "code": "DUkQqFADq1p",
-      "root_code": "DUkQqFADq1p",
-      "user": "nomadlabs_cozac",
-      "timestamp": "2026-02-10 15:00:47",
-      "is_merged_thread": true,
-      "original_item_count": 8,
-      "is_detail_collected": true,
-      "platform_sequence_id": 7
     },
     {
       "sequence_id": 70,
       "sns_platform": "threads",
+      "code": "DUkQqFADq1p",
+      "full_text": "[1/8]\nOpus 4.6이랑 Codex 5.3\n둘 다 쓰고 계신 분들 많을 텐데\n\n\"$20 내고 실제로 얼마나 쓸 수 있는 거야?\"\n이 질문에 정확히 답하는 글이 없더라고요\n\n직접 양쪽 구독하고 쓰면서\n공식 문서 + 실사용자 후기까지 팩트체크해서 정리했어요\n\n참고로 지금 OpenAI가 Codex 2배 한도 프로모션 중이라\n타이밍도 중요해요\n\n---\n\n[2/8]\n구독 플랜 구조부터요\n\nClaude:\nFree → Pro $20 → Max $100 (5배) → Max $200 (20배)\n정확한 메시지 수 비공개. 배수만 공개\n$100 중간 플랜이 있어요\n\nOpenAI:\nFree → Go ~$8 (신규) → Plus $20 → Pro $200\nPlus: Codex 45~225 로컬 메시지/5h\nPro: 300~1,500/5h (Plus의 6배)\n$20에서 $200으로 직행. 중간 없음\n\n핵심:\nClaude는 단계적 업그레이드 가능\nOpenAI는 10배 가격 점프밖에 없어요\n\n---\n\n[3/8]\n$20 플랜 체감 — 둘 다 부족하지만 결이 달라요\n\nClaude Pro $20:\n- Claude Code + 웹 + 데스크톱이 한도 합산\n- 코딩 많이 하면 웹 채팅도 같이 줄어듦\n- \"5시간에 20 프롬프트만에 제한\" (GitHub)\n\nChatGPT Plus $20:\n- Codex 45~225 메시지/5h (지금 2x 프로모: 90~450)\n- 근데 5.3이 크레딧을 이전보다 훨씬 많이 먹음\n- \"같은 작업인데 100크레딧 소모\" (oldandangry)\n\n둘 다 하루종일 코딩엔 부족\n이건 모든 리뷰에서 일치해요\n\n---\n\n[4/8]\n$100~$200 프리미엄 — 같은 $200인데 체감이 완전히 달라요\n\nClaude Max $100 (Pro의 5배):\n\"3~4시간 연속 코딩해도 안 끊김\"\n비개발자도 \"외주 수백만 원짜리를 직접 만듦\"\n→ 만족도 가장 높은 구간\n\nClaude Max $200 (Pro의 20배):\n\"8시간 작업해도 전혀 안 끊김\"\n\nChatGPT Pro $200 (Plus의 6배):\n\"32요청 후 소진. Plus 10개가 나을 듯\" (georgezip)\n\"2태스크에 주간 35% 소모. 내일 해지\" (jamesh)\n\"30분 쓰고 5일 쿨다운\" (telecartme)\n\nClaude Max $200은 \"충분하다\"\nChatGPT Pro $200은 \"사기당한 느낌\"이 컨센서스예요\n\n---\n\n[5/8]\n지금 놓치면 안 되는 거 하나\n\nOpenAI가 한시적 2x 프로모션 중이에요\nPlus/Pro/Business 전부 Codex 한도 2배\nFree/Go도 Codex 무료 체험 가능\n\n즉 지금 Plus $20이면:\nCodex 90~450 로컬 메시지/5h (원래의 2배)\n프로모션 끝나면 원래대로 돌아가요\n\n양쪽 다 한도 초과 시 추가 결제 가능:\n- Claude: Extra Usage (API 요금, 선불 충전)\n- OpenAI: 크레딧 구매 (~5크레딧/메시지)\n\n\"구독만으로 충분\"하진 않다는 걸\n양쪽 다 공식적으로 인정하고 있는 거예요\n\n---\n\n[6/8]\nCodex 5.3 실사용 코딩 후기를 모아봤어요\n써본 사람들 평가가 극과 극이에요\n\n\"1주 PR 28개, 26개 머지. 역대 최고\" (xXSLAYERXx)\n\"Claude Code 유저였는데 Codex 점점 더 씀. 95% 해결\" (rmonvfer)\n\n반면:\n\"7개 테스트 Opus 5승 Codex 0승. 프로덕션 불가\" (Alex Carter)\n\"Codex는 Opus보다 손이 더 많이 감\" (Nathan Lambert)\n\"CAT 명령어로 파일 쓰기 버그 3~4개월째 미해결\"\n\n벤치마크는 Codex 우세 (Terminal-Bench 77.3%)\n실사용 프로덕션은 Opus 선호가 다수예요\n\n---\n\n[7/8]\n갈아타는 이유가 재밌어요\n\nCodex → Claude Code:\n\"무통보 한도 축소에 질렸다\" (r.s)\n\"Pro $200 32요청 소진. Plus 10개가 나을 듯\" (georgezip)\n\nClaude → Codex:\n\"xhigh에서도 빠르고 95% 해결. 비중 늘리는 중\" (rmonvfer)\n\n제 경험:\n어려운 건 Codex, 나머지는 Opus\n이 조합이 제일 효율적이에요\n\n구독 피로도 현실:\nChatGPT + Claude + Gemini + Perplexity + Grok\n= 월 $110, 연간 $1,320\n한 모델에 올인보다 조합이 답이에요\n\n---\n\n[8/8]\n정리하면요\n\n$20 구간:\n둘 다 하루종일 코딩엔 부족\nClaude = 코드 품질 + $100 중간 플랜\nChatGPT = 지금 2x 프로모션 + Go $8 진입\n\n$200 구간:\nClaude Max = \"안 끊김\" 만족도 높음\nChatGPT Pro = 불만 다수 (32요청 소진 사례)\n\n숨겨진 변수:\nClaude 캐시 토큰이 rate limit 미포함\nCodex 2x 프로모션은 한시적\n\n최적 전략:\n1. 지금 Codex 2x 프로모션으로 무료/Plus 체험\n2. 메인은 Claude Pro $20\n3. 자주 끊기면 Max $100 업그레이드\n4. 둘 다 쓰면 월 $40로 대부분 커버\n\n어떤 조합으로 쓰고 계신지 알려주세요",
+      "media": [],
+      "crawled_at": "2026-02-12T19:04:22.186",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DUkQqFADq1p",
+      "user": "nomadlabs_cozac",
+      "timestamp": "2026-02-10 15:00:47",
+      "original_item_count": 8,
+      "platform_sequence_id": 7
+    },
+    {
+      "sequence_id": 71,
+      "sns_platform": "threads",
+      "code": "DTochmuDcf7",
       "full_text": "마음 같아서 무릎꿇고 사용해보라고 말하고 싶은 사이트입니다.\n\nClaude Code 사용자를 위한 65,000개 이상의 스킬이 정리된 사이트입니다.\n에이전트의 성능을 극대화하고 개발 시간을 획기적으로 줄여줄 필수 리소스인데요.\n 거의 모든 틈새 주제와 사용 사례를 커버하는 스킬들이 꽉 차 있습니다.\n요즘 바이브 코딩 흐름을 탄다면 반드시 확인해야 할 곳입니다.\n\n이런 재사용 가능한 스킬 셋을 얼마나 잘 활용하느냐에 따라서도 경쟁력이 크게 올라갈 겁니다.\n\n---\n\n주소 :\nhttps://skillsmp.com/categories/astronomy-physics",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/616517537_3376666982489413_8030610283384178260_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDM5OC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QFDYVMxwdirmuZV6tk44XV6vfRLVDxaptuR24bdfCeLbibdceQECX1s-PiC9lPDezQ&_nc_ohc=Z8wWDMTSmxwQ7kNvwHCXR62&_nc_gid=UIp7te8_EYjsGgxNGflibg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxMjQyMjUzOTE4OTAxMjQ3NQ%3D%3D.3-ccb7-5&oh=00_Aftlnrr1RkhH9ISrEihNb7fGPXY8eI7nyqiiG4r8YMKBBw&oe=699AE721&_nc_sid=10d13b"
@@ -1390,18 +1415,18 @@
       "local_images": [
         "web_viewer/images/aca81fe774ce7fdfd5b63357c14ebd16.jpg"
       ],
-      "code": "DTochmuDcf7",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTochmuDcf7",
       "user": "choi.openai",
       "timestamp": "2026-01-18 09:30:04",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 8
     },
     {
-      "sequence_id": 71,
+      "sequence_id": 72,
       "sns_platform": "threads",
+      "code": "DSY0BmkgIFX",
       "full_text": "📢하루 5천원으로 배우는 AI창업교육!📢\n\n요즘 핫한 생성형 AI 🤖\n일 잘하는 사람들은 모두 활용한다던데 어렵지 않으세요?🤦‍♀️\n\n차세대 창업가를 위한 AI 리더 캠프가 지금 열렸습니다!💰\n\n✅ 최대1억, 정부지원사업 합격 자료 증정\n✅ 정부지원사업 전문가들의 합격 컨설팅!\n✅ 수료 후 법인설립 패키지로 창업 지원!\n✅ 선발된 60명 소수 정예로 차원이 다른 밀착 케어!\n✅ 노트북 대여 및 AI 프로그램 실습비 지원!\n\nAI와 함께 마케팅, 자동화, 프로토타입까지 혼자서도 팀처럼!\n\n지금 바로 신청하세요!🎁",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/598883385_25484821567814239_2110960262520777798_n.png?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6ImFkc19pbWFnZSJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QG4mmgE5J0qiEFBYXffVlGKML_WamEwZ2JU3Wiz34WXQf1eWAIK2sdkypKflHVc114&_nc_ohc=zsjmz_REgmMQ7kNvwHlraCO&_nc_gid=BqM49ayXfGEIsGxC215W3w&edm=APs17CUBAAAA&ccb=7-5&oh=00_AfveFmU6zapt3-j34LkrCns8fV9Z4vuvxic-tv3dSJj94Q&oe=699ADFC5&_nc_sid=10d13b"
@@ -1410,18 +1435,18 @@
       "local_images": [
         "web_viewer/images/73be201a14c944c611360f4e3bbf9376.png"
       ],
-      "code": "DSY0BmkgIFX",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DSY0BmkgIFX",
       "user": "oz_coding_school",
       "timestamp": "2025-12-18 11:16:10",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 9
     },
     {
-      "sequence_id": 72,
+      "sequence_id": 73,
       "sns_platform": "threads",
+      "code": "DUf7gdVk6Va",
       "full_text": "바이브코딩 하면서 느끼는점\n\n앱, 웹 개발을 완성도를 0 -> 100으로 만들어가는 과정이라고 본다면,\n\n1. 0 -> 70% : 진짜 언터쳐블로 만들어줌\n - 진짜 개발 다끝났다 이런 건방진 생각들기 시작함\n\n2. 70 -> 80% : 음 좀 손이 많이 가네\n - 토큰 슬슬 녹기 시작\n\n3. 80 -> 85% : 뭐하냐 내 말을 왜 못알아들어? 라고 타이핑 중임\n - 슬슬 한계 찾아옴\n\n4. 85 -> 90% : 접고 싶음 자잘한 오류는 계속 나오고, 운영이 두려워짐\n - 토큰+인성 한계 찾아옴 그만하고싶어짐\n - 행정 절차(개발자 계정 신청 등)들이 발목을 잡음\n\n결론 :\n\n---\n\n바이브코딩은 0 -> 70까진 너무 좋은데 그후론 진짜 이런저런 사유로 어려워지는거 같음\n\n근데 그걸 계속해서 찾고 찾고해서 풀어내면 프로덕트 출시로 이어지는거고 포기하면 취미 바이브코딩되는거고...",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/631102255_17853073257667745_9041895180381570440_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNTk5eDQzMi5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QFweD5UtVpTmWAEwzSyLwoFCuC9DKZT0dmP7BacweywehR066h8kNhZZcvTdrHLkf8&_nc_ohc=igBHZ4p-RywQ7kNvwFB4sw9&_nc_gid=zPdSXoH5O6xxj56nCV4Z5Q&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyODAzOTkyMzU1NjEzMjE4Ng%3D%3D.3-ccb7-5&oh=00_AfvkhR09EZRY8Xc5aLy_DjVdLtBdZ_sJbvyY_cLTKbi0uQ&oe=699B0502&_nc_sid=10d13b"
@@ -1430,48 +1455,100 @@
       "local_images": [
         "web_viewer/images/e607b876ee79185e4483e31d2b4869f5.jpg"
       ],
-      "code": "DUf7gdVk6Va",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUf7gdVk6Va",
       "user": "eggtoastlab",
       "timestamp": "2026-02-08 22:39:01",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 10
-    },
-    {
-      "sequence_id": 73,
-      "sns_platform": "threads",
-      "full_text": "바이브 코딩만으로 실제로 서비스 되고있는 제품 링크 공유 가능하신 분 있나요? 아직 한개도 본적이 없어서 궁금해서 그래요.",
-      "media": [],
-      "crawled_at": "2026-02-12T19:04:25.226",
-      "code": "DUfG1QkkXJt",
-      "root_code": "DUfG1QkkXJt",
-      "user": "baksagimm",
-      "timestamp": "2026-02-08 14:58:44",
-      "is_merged_thread": true,
-      "original_item_count": 1,
-      "is_detail_collected": true,
-      "platform_sequence_id": 11
     },
     {
       "sequence_id": 74,
       "sns_platform": "threads",
-      "full_text": "AI 시대 바이브코딩이 가져올 개발자의 미래\n문득 현재 작곡가들의 변천사와 너무 닮았다는 생각이 들었다.\n\n과거 클래식 작곡가는 화성학, 대위법, 오케스트레이션을 깊이 알아야 했고 악기도 하나 이상 다룰 줄 알아야 했다. 악보를 읽을 줄 모르면 작곡 자체가 불가능했다.\n과거 개발자도 마찬가지였다. 메모리 관리, 어셈블리, OS 내부 구조를 직접 다뤄야 했고 코드를 한 줄 한 줄 직접 쓸 줄 알아야만 소프트웨어를 만들 수 있었다. 진입장벽이 곧 전문성이었다.\n\n---\n\n밴드 시대 작곡가는 악기 파트가 줄었지만 기타, 베이스, 드럼의 조화를 이해해야 했고 작사가·편곡자와 협업하는 구조였다.\n지금의 풀스택 개발자도 프론트, 백엔드, DB, 인프라를 다룰 줄 알아야 하고 디자이너·PM과 역할이 명확히 나뉜 팀 단위로 일한다. \"코드를 잘 치는 사람\"이 좋은 개발자의 기준이었다.\n\n그런데 지금 음악 시장은? 소위 말하는 프로듀서가 주류다.\n악보를 직접 쓰는 게 아니라 DAW로 비트를 찍고 샘플을 조합하고 전체 방향을 디렉팅한다. 악기를 못 다뤄도 되고 화성학을 몰라도 된다. 중요한 건 \"어떤 소리를 만들고 싶은가\"라는 비전이지 악기 테크닉이 아니다.\n\n---\n\n바이브코딩 시대의 개발자도 똑같아질 거라고 본다.\n코드를 직접 치는 게 핵심이 아니라 AI 에이전트를 오케스트레이션해서 \"어떤 제품을 만들 것인가\"를 디렉팅하는 역할. 프로듀서가 보컬에게 \"여기서 좀 더 감성적으로\"라고 디렉션을 주듯 개발자도 AI에게 방향을 잡아주는 것이다.\n\n싱어송라이터가 직접 작곡하고 부르듯이 결국 서비스 개발자가 직접 자기 서비스를 만드는 시대가 온다.\n과거엔 \"전략가\"와 \"개발자\"가 따로 있어야 했지만 이제는 아이디어를 가진 사람이 직접 만든다. 그사람이 개발자 이자 전략가 이다.\n\n---\n\n다만 음악에서도 살아남은 프로듀서들의 공통점이 있다. DAW를 잘 다루는 사람이 아니라 음악 자체에 대한 깊은 이해와 취향이 있는 사람이다.\n\n개발도 마찬가지일 거다. 바이브코딩 도구를 잘 쓰는 것만으로는 차별화가 안 된다. \"무엇을 왜 만드는가\"에 대한 제품 감각, 그리고 AI가 뱉은 결과물의 품질을 판단할 수 있는 기술적 안목. 음악처럼 이 컴퓨터 과학과 네트워킹 기술자체에 대한 깊은 이해와 취향이 있어야 한다. 그게 디렉팅 능력이 본질이다.\n\n---\n\n그리고 완벽하게 나온다는 작곡쪽 AI에서도 아직은 아직 좀 먼 미래의 얘기긴 하지만.. \nSuno에 \"슬픈 발라드 만들어줘\"라고 해도 곡은 정말 사람처럼 좋게 나온다. 하지만 \"비 오는 새벽 3시에 혼자 모짜르트 생각하면서 술 마시면서 듣는 느낌\"이라고 하면 결과물이 완전히 달라진다. 그 프롬프트를 쓸 수 있는 건 그 감정과 분위기를 아는 사람뿐이다.\n바이브코딩도 같다. 로그인 만들어줘와 \"사용자가 불안하지 않게 자연스럽게 흘러가는 온보딩 설계해서 JWT 리리프레시 토큰 형식으로 짜줘 UX는 최대한 미니멀하게 귀찮지 않게\"는 전혀 다른 결과물을 만든다. 그리고 인간의 욕구는 끝이 없기에 차별화를 두기 위해서 이것보다 더 \"어떤 분위기로 만들어줘\" 라는 요구가 잉여력이 떨어질때까지 계속될것이다.\n\n---\n\n결국 AI가 아무리 발전해도 \"어떤 방향으로\"라는 디렉팅은 사람의 영역이다.\n프로듀서가 사라지는 게 아니라 프로듀서의 정의가 바뀌는 것이다. 악기를 연주하는 사람에서 방향을 잡아주는 사람으로. 개발자도 코드를 치는 사람에서 코드와 제품의 깊은이해를 통해 방향을 디렉팅하는 사람으로.\n남는 건 통찰, 취향, 감각, 그리고 \"이게 맞아\"라고 판단할 수 있는 안목. 이건 인풋이 있는 AI는 대체 못 한다.",
+      "code": "DUfG1QkkXJt",
+      "full_text": "바이브 코딩만으로 실제로 서비스 되고있는 제품 링크 공유 가능하신 분 있나요? 아직 한개도 본적이 없어서 궁금해서 그래요.",
       "media": [],
-      "crawled_at": "2026-02-12T19:04:28.288",
-      "code": "DUfZZGdE71B",
-      "root_code": "DUfZZGdE71B",
-      "user": "yc_melan",
-      "timestamp": "2026-02-08 17:40:55",
-      "is_merged_thread": true,
-      "original_item_count": 6,
+      "crawled_at": "2026-02-12T19:04:25.226",
       "is_detail_collected": true,
-      "platform_sequence_id": 12
+      "is_merged_thread": true,
+      "root_code": "DUfG1QkkXJt",
+      "user": "baksagimm",
+      "timestamp": "2026-02-08 14:58:44",
+      "original_item_count": 1,
+      "platform_sequence_id": 11
     },
     {
       "sequence_id": 75,
       "sns_platform": "threads",
+      "code": "DUfZZGdE71B",
+      "full_text": "AI 시대 바이브코딩이 가져올 개발자의 미래\n문득 현재 작곡가들의 변천사와 너무 닮았다는 생각이 들었다.\n\n과거 클래식 작곡가는 화성학, 대위법, 오케스트레이션을 깊이 알아야 했고 악기도 하나 이상 다룰 줄 알아야 했다. 악보를 읽을 줄 모르면 작곡 자체가 불가능했다.\n과거 개발자도 마찬가지였다. 메모리 관리, 어셈블리, OS 내부 구조를 직접 다뤄야 했고 코드를 한 줄 한 줄 직접 쓸 줄 알아야만 소프트웨어를 만들 수 있었다. 진입장벽이 곧 전문성이었다.\n\n---\n\n밴드 시대 작곡가는 악기 파트가 줄었지만 기타, 베이스, 드럼의 조화를 이해해야 했고 작사가·편곡자와 협업하는 구조였다.\n지금의 풀스택 개발자도 프론트, 백엔드, DB, 인프라를 다룰 줄 알아야 하고 디자이너·PM과 역할이 명확히 나뉜 팀 단위로 일한다. \"코드를 잘 치는 사람\"이 좋은 개발자의 기준이었다.\n\n그런데 지금 음악 시장은? 소위 말하는 프로듀서가 주류다.\n악보를 직접 쓰는 게 아니라 DAW로 비트를 찍고 샘플을 조합하고 전체 방향을 디렉팅한다. 악기를 못 다뤄도 되고 화성학을 몰라도 된다. 중요한 건 \"어떤 소리를 만들고 싶은가\"라는 비전이지 악기 테크닉이 아니다.\n\n---\n\n바이브코딩 시대의 개발자도 똑같아질 거라고 본다.\n코드를 직접 치는 게 핵심이 아니라 AI 에이전트를 오케스트레이션해서 \"어떤 제품을 만들 것인가\"를 디렉팅하는 역할. 프로듀서가 보컬에게 \"여기서 좀 더 감성적으로\"라고 디렉션을 주듯 개발자도 AI에게 방향을 잡아주는 것이다.\n\n싱어송라이터가 직접 작곡하고 부르듯이 결국 서비스 개발자가 직접 자기 서비스를 만드는 시대가 온다.\n과거엔 \"전략가\"와 \"개발자\"가 따로 있어야 했지만 이제는 아이디어를 가진 사람이 직접 만든다. 그사람이 개발자 이자 전략가 이다.\n\n---\n\n다만 음악에서도 살아남은 프로듀서들의 공통점이 있다. DAW를 잘 다루는 사람이 아니라 음악 자체에 대한 깊은 이해와 취향이 있는 사람이다.\n\n개발도 마찬가지일 거다. 바이브코딩 도구를 잘 쓰는 것만으로는 차별화가 안 된다. \"무엇을 왜 만드는가\"에 대한 제품 감각, 그리고 AI가 뱉은 결과물의 품질을 판단할 수 있는 기술적 안목. 음악처럼 이 컴퓨터 과학과 네트워킹 기술자체에 대한 깊은 이해와 취향이 있어야 한다. 그게 디렉팅 능력이 본질이다.\n\n---\n\n그리고 완벽하게 나온다는 작곡쪽 AI에서도 아직은 아직 좀 먼 미래의 얘기긴 하지만.. \nSuno에 \"슬픈 발라드 만들어줘\"라고 해도 곡은 정말 사람처럼 좋게 나온다. 하지만 \"비 오는 새벽 3시에 혼자 모짜르트 생각하면서 술 마시면서 듣는 느낌\"이라고 하면 결과물이 완전히 달라진다. 그 프롬프트를 쓸 수 있는 건 그 감정과 분위기를 아는 사람뿐이다.\n바이브코딩도 같다. 로그인 만들어줘와 \"사용자가 불안하지 않게 자연스럽게 흘러가는 온보딩 설계해서 JWT 리리프레시 토큰 형식으로 짜줘 UX는 최대한 미니멀하게 귀찮지 않게\"는 전혀 다른 결과물을 만든다. 그리고 인간의 욕구는 끝이 없기에 차별화를 두기 위해서 이것보다 더 \"어떤 분위기로 만들어줘\" 라는 요구가 잉여력이 떨어질때까지 계속될것이다.\n\n---\n\n결국 AI가 아무리 발전해도 \"어떤 방향으로\"라는 디렉팅은 사람의 영역이다.\n프로듀서가 사라지는 게 아니라 프로듀서의 정의가 바뀌는 것이다. 악기를 연주하는 사람에서 방향을 잡아주는 사람으로. 개발자도 코드를 치는 사람에서 코드와 제품의 깊은이해를 통해 방향을 디렉팅하는 사람으로.\n남는 건 통찰, 취향, 감각, 그리고 \"이게 맞아\"라고 판단할 수 있는 안목. 이건 인풋이 있는 AI는 대체 못 한다.",
+      "media": [],
+      "crawled_at": "2026-02-12T19:04:28.288",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DUfZZGdE71B",
+      "user": "yc_melan",
+      "timestamp": "2026-02-08 17:40:55",
+      "original_item_count": 6,
+      "platform_sequence_id": 12
+    },
+    {
+      "sequence_id": 76,
+      "platform_id": "DUfZZ8Wk5K_",
+      "sns_platform": "threads",
+      "code": "DUfZZ8Wk5K_",
+      "username": "yc_melan",
+      "display_name": "FlipKim",
+      "full_text": "바이브코딩 시대의 개발자도 똑같아질 거라고 본다.\n코드를 직접 치는 게 핵심이 아니라 AI 에이전트를 오케스트레이션해서 \"어떤 제품을 만들 것인가\"를 디렉팅하는 역할. 프로듀서가 보컬에게 \"여기서 좀 더 감성적으로\"라고 디렉션을 주듯 개발자도 AI에게 방향을 잡아주는 것이다.\n\n싱어송라이터가 직접 작곡하고 부르듯이 결국 서비스 개발자가 직접 자기 서비스를 만드는 시대가 온다.\n과거엔 \"전략가\"와 \"개발자\"가 따로 있어야 했지만 이제는 아이디어를 가진 사람이 직접 만든다. 그사람이 개발자 이자 전략가 이다.",
+      "media": [],
+      "url": "https://www.threads.net/@yc_melan/post/DUfZZ8Wk5K_",
+      "created_at": "2026-02-08 17:41:02",
+      "date": "2026-02-08",
+      "crawled_at": "2026-02-12T19:04:28.290",
+      "source": "network",
+      "is_detail_collected": true,
+      "is_merged_thread": false,
+      "root_code": "DUfZZ8Wk5K_",
+      "like_count": 62,
+      "reply_count": 1,
+      "repost_count": 1,
+      "quote_count": 0,
+      "pk": "3827889942241186495",
+      "media_type": 19,
+      "content_type": "image",
+      "platform_sequence_id": 13
+    },
+    {
+      "sequence_id": 77,
+      "platform_id": "DUiW8Uekmf0",
+      "sns_platform": "threads",
+      "code": "DUiW8Uekmf0",
+      "username": "appcast",
+      "display_name": "Builder | AppCaster",
+      "full_text": "넵 playwright install —skills 까지 하셔서 skills 설치후 자연어로 시키시면 됩니다 !",
+      "media": [],
+      "url": "https://www.threads.net/@appcast/post/DUiW8Uekmf0",
+      "created_at": "2026-02-09 21:17:14",
+      "date": "2026-02-09",
+      "crawled_at": "2026-02-12T19:04:28.290",
+      "source": "network",
+      "is_detail_collected": true,
+      "is_merged_thread": false,
+      "root_code": "DUiW8Uekmf0",
+      "like_count": 3,
+      "reply_count": 1,
+      "repost_count": 0,
+      "quote_count": 0,
+      "pk": "3828723535397939188",
+      "media_type": 19,
+      "content_type": "image",
+      "platform_sequence_id": 14
+    },
+    {
+      "sequence_id": 78,
+      "sns_platform": "threads",
+      "code": "DUiOFVsEsXn",
       "full_text": "Playwright CLI 출시 \n1. MCP 사용 ,  2. CLI 사용했을때 의 토큰 사용차이.",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/626297980_17940845619116278_5381979102222336265_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTA3Mng1NTMuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QF4l4WnNoXM0uoRpfj5Tc702EBo5f3iFcpYSsxealjeAIotWcJIF2I-Dc5-4x6gAQk&_nc_ohc=PJXD2Kvnp-MQ7kNvwGvplRT&_nc_gid=2toDFmda1y5xg3oq-lrTrg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyODY4NDU3Mjc1NDg4ODE2Nw%3D%3D.3-ccb7-5&oh=00_AfvUY7ogDuBn7cwcHQsqGKw-nu7qJP4HxFYUWpMQck-lbA&oe=699AEBEA&_nc_sid=10d13b"
@@ -1480,18 +1557,18 @@
       "local_images": [
         "web_viewer/images/1528344b340a7cd47ed1d7bb788e3d5c.jpg"
       ],
-      "code": "DUiOFVsEsXn",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUiW8Uekmf0",
       "user": "appcast",
       "timestamp": "2026-02-09 19:59:49",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 14
     },
     {
-      "sequence_id": 76,
+      "sequence_id": 79,
       "sns_platform": "threads",
+      "code": "DUg7t0qCE5C",
       "full_text": "75만명이 본 Opus 프롬프트입니다.\n\nMiles Deutscher가 공유한 프롬프트로 SEO 최적화 웹사이트, Claude 기반 앱, 개인용 대시보드 등 어떤 것도 5분 안에 구현할 수 있다고 밝혔습니다.\n\n해당 프롬프트는 AI를 기술 공동창업자 역할로 설정하고, 제품 기획부터 개발, 배포까지 전 과정을 맡기는 방식으로 구성되어 있습니다. 특히 단순히 잘 짜인 프롬프트보다 명확한 사양서를 기반으로 반복 피드백을 주는 방식이 더 효과적이라는 반응도 많습니다.\n\n실제로 Claude나 GPT 모델에 이 방식으로 반복 테스트를 돌리면 빠른 시간 내 MVP를 만들 수 있다는 점에서 많은 개발자들이 주목하고 있습니다.",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/632079306_17942525157112832_5552770945888717043_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTE1OHgxNDgyLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHes8POmXr5fcUiImDCjRGSYkfhehqX7HHb00LeceMHgwByQQyhWI2Jdn_8JzknQ5A&_nc_ohc=HTlcCHF30u8Q7kNvwFuL-3T&_nc_gid=FuBVJlN3OHVwMCwnn6xYBw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyODMyMjMxNjkyNTI5MjA5OA%3D%3D.3-ccb7-5&oh=00_Aft9mAELDbmq-id4aUFMjjwWCPP2EYcBa08eNewKJpy3iw&oe=699AF30E&_nc_sid=10d13b"
@@ -1500,33 +1577,33 @@
       "local_images": [
         "web_viewer/images/8ab32b2ae7a14aa0f2c06451600d6064.jpg"
       ],
-      "code": "DUg7t0qCE5C",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUg7t0qCE5C",
       "user": "choi.openai",
       "timestamp": "2026-02-09 08:00:05",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 16
     },
     {
-      "sequence_id": 77,
+      "sequence_id": 80,
       "sns_platform": "threads",
+      "code": "DUX8tp_EvRN",
       "full_text": "🚀 oh-my-claudecode v4.0.0 릴리즈\n\n드디어 Claude Code에서 Codex + Gemini 동시 사용 가능!\n\n✨ 각 모델이 잘하는 걸 맡김:\n• Codex → 코드 리뷰, 플래닝, 분석\n• Gemini → 디자인, 글쓰기, 비전\n• Claude → 오케스트레이션\n\n이제 @yeon.gyu.kim 의 OmO 부러워하지 마세요\n전부 공식 cli를 콜하는 mcp니까, 밴과 ToS 위반도 두려워하지 마세요\n\n이제 가난에 허덕이지 마세요\n20불짜리 각 한개씩만 구독하세요.\nhttps://github.com/Yeachan-Heo/oh-my-claudecode",
       "media": [],
       "crawled_at": "2026-02-12T19:04:31.353",
-      "code": "DUX8tp_EvRN",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUX8tp_EvRN",
       "user": "bellman.pub",
       "timestamp": "2026-02-05 20:15:38",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 17
     },
     {
-      "sequence_id": 78,
+      "sequence_id": 81,
       "sns_platform": "threads",
+      "code": "DUZLMwvkojo",
       "full_text": "다른건 필요없다 opus 4.6 기념으로 이런걸 주네요\n\n클로드 사용자분들 얼른 설정-사용량에 들어가셔서\n$50 무료 크레딧 받으십셔\n\ncodex5.3 이랑 같이주네 도파민이 팽팽돕니다!!!",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/627661158_17893452990406917_6374298405845732879_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTIzMXg4NTQuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QFZ54WY_sjEnq0QZDdNkLGJpbrqi3rx9cf27gabtMf07WJSK58LgWsf7C6oN9KBwLU&_nc_ohc=EYQ1Ur0N_9UQ7kNvwHEKJLk&_nc_gid=Q2APa-mb1P_dIJ6Kizjw5Q&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyNjEzODYxMzkxMTAyOTk5Mg%3D%3D.3-ccb7-5&oh=00_Afu8EdpWr21f4mrkY3msEXY1zKZgWJB1gw-SagH_O6blTQ&oe=699AFC1E&_nc_sid=10d13b"
@@ -1535,18 +1612,18 @@
       "local_images": [
         "web_viewer/images/5dd8cf9c999b852947b00acecee2fd6e.jpg"
       ],
-      "code": "DUZLMwvkojo",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUZLMwvkojo",
       "user": "specal1849",
       "timestamp": "2026-02-06 07:41:27",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 18
     },
     {
-      "sequence_id": 79,
+      "sequence_id": 82,
       "sns_platform": "threads",
+      "code": "DUWSRnukzT3",
       "full_text": "37만원 짜리 Claude 1개월 결제 후기:\n\nClaude Max plan을 사용하며 매 주 새로운 제품을 출시 자동화를 구축함\n1주일에 1개씩 소프트웨어를 출시하다보니 아이디어를 생각하기도 귀찮아짐\n그래서 아이디어도 자동화함.\n\n다른나라엔 있는데 우리나라에만 없는 소프트웨어를 한국화해서 만들기\n\n이게 왜 좋냐면\n1. 이미 검증된 아이디어임\n2. ui/ux고민 안해도 됨\n\n자세한 파이프라인은 다음과 같아:\n\n---\n\n1. https://www.silhang.xyz/ 에서 아이디어 무료로 가져옴\n  ㄴ 사실 이거 내가 만들었는데 함 써봐주라. 진짜 열심히 만들었어..ㅠㅠ\n2. 리포트 읽어보고 괜찮은 아이디어 고름\n3. 해당 아이디어 웹/앱 그대로 claude로 제작 자동화\n4. ui구축 후 문구 한국어로 수정 자동화\n5. 배포\n\n---\n\n사용자가 조금 몰려서 리포트 전송이 살짝 늦습니다.. ㅠㅠ 그래도 최대한 10분내로 보내드릴게요!",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/626758539_17846285301682596_6608512263687030938_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTgyOHgyNTIuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QGZ5N48EJMMNHrvnaQfVDxZAm_jWDPNdQwqXcOT8YcDRTmGsL18DocLsQ2o8J6l4Ok&_nc_ohc=8_K0wAS2cUgQ7kNvwHjSUGb&_nc_gid=xcxu8osIxxbHqmDvbvX-qQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyNTMyNTMwOTIyMzQ0OTg0Nw%3D%3D.3-ccb7-5&oh=00_AfuC9r5JrDuK1T0amRys9pbZKjX7xFYIHSuMo0sXrtN6Ww&oe=699B041D&_nc_sid=10d13b"
@@ -1555,109 +1632,109 @@
       "local_images": [
         "web_viewer/images/340bba7ac7adf5b2ed4e44d36fe00477.jpg"
       ],
-      "code": "DUWSRnukzT3",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUWSRnukzT3",
       "user": "gaebalsaybal",
       "timestamp": "2026-02-05 04:45:34",
-      "is_merged_thread": true,
       "original_item_count": 3,
-      "is_detail_collected": true,
       "platform_sequence_id": 19
-    },
-    {
-      "sequence_id": 80,
-      "sns_platform": "threads",
-      "full_text": "소신발언 하자면 코딩 초보자를 위한 바이브코딩 추천 언어와 프레임워크로 Ruby on Rails 8버전이 최고임.\n\nNext.js는 진짜 비추천 한다.\n\nReact랑 Next.js는 버전 업데이트가 빠른데 그때마다 패러다임이 너무 많이 바뀌어서 하위호환성이 너무 떨어짐. 그래서 최신버전을 다룰때는 AI가 기대만큼 엄청 잘하진 못함.\n\n그리고 React와 Typescript 특유의 장황하고 지저분한 코드는 한번 꼬이면 답도 없다.",
-      "media": [],
-      "crawled_at": "2026-02-12T19:04:34.398",
-      "code": "DUW_dl0Eg8K",
-      "root_code": "DUW_dl0Eg8K",
-      "user": "jun6_cat",
-      "timestamp": "2026-02-05 11:20:25",
-      "is_merged_thread": true,
-      "original_item_count": 1,
-      "is_detail_collected": true,
-      "platform_sequence_id": 20
-    },
-    {
-      "sequence_id": 81,
-      "sns_platform": "threads",
-      "full_text": "더 퍼스트 3기에서 진행하는\n공저책 프로젝트에 참여하게 됐어.\n\n우리 조는 럭키세븐, 7조야.\n여기서는 '결핍'에 관해 에세이를 쓸거야.\n\n다들 결핍을 어떻게 극복 했는지.\n또 나의 결핍이 무엇인지 궁금하지 않아?",
-      "media": [],
-      "crawled_at": "2026-02-12T19:04:34.398",
-      "code": "DT_1J1ukXjz",
-      "root_code": "DT_1J1ukXjz",
-      "user": "kkongdon_story",
-      "timestamp": "2026-01-27 11:27:48",
-      "is_merged_thread": true,
-      "original_item_count": 1,
-      "is_detail_collected": true,
-      "platform_sequence_id": 21
-    },
-    {
-      "sequence_id": 82,
-      "sns_platform": "threads",
-      "full_text": "이세돌이 이긴 것은 계산 능력이\n알파고보다 더 뛰어나서가 아니다.\n오히려 계산을 거부했기 때문이다.\n\nAI는 확률 높은 정답만을 쫓도록 설계되어 있다.\n그 견고한 성을 무너뜨린 것은 정답이 아니라,\n인간만이 할 수 있는 파격과 직관이었다.\n- AI 불변의 법칙(가제) 원고 일부",
-      "media": [],
-      "crawled_at": "2026-02-12T19:04:34.399",
-      "code": "DUAixXHkcOq",
-      "root_code": "DUAixXHkcOq",
-      "user": "kkongdon_story",
-      "timestamp": "2026-01-27 18:06:25",
-      "is_merged_thread": true,
-      "original_item_count": 1,
-      "is_detail_collected": true,
-      "platform_sequence_id": 22
     },
     {
       "sequence_id": 83,
       "sns_platform": "threads",
-      "full_text": "북크북크님에게 퇴고 수업을 받고 왔어.\n북크님은 AI에 대한 지식과 통찰이 뛰어나셔서\n나의 원고 내용과 맥락을 정확히 이해하셔.\n\n편집자들은 이 많은 지식을\n어떻게 다 가지고 있는지 모르겠어.\n\n북크님의 통찰이 궁금하다면\n독기의 힘에 참여해봐.\n\n---\n\n@bookk_bookk1",
+      "code": "DUW_dl0Eg8K",
+      "full_text": "소신발언 하자면 코딩 초보자를 위한 바이브코딩 추천 언어와 프레임워크로 Ruby on Rails 8버전이 최고임.\n\nNext.js는 진짜 비추천 한다.\n\nReact랑 Next.js는 버전 업데이트가 빠른데 그때마다 패러다임이 너무 많이 바뀌어서 하위호환성이 너무 떨어짐. 그래서 최신버전을 다룰때는 AI가 기대만큼 엄청 잘하진 못함.\n\n그리고 React와 Typescript 특유의 장황하고 지저분한 코드는 한번 꼬이면 답도 없다.",
       "media": [],
-      "crawled_at": "2026-02-12T19:04:34.399",
-      "code": "DUA_fBqESd6",
-      "root_code": "DUA_fBqESd6",
-      "user": "kkongdon_story",
-      "timestamp": "2026-01-27 22:17:19",
-      "is_merged_thread": true,
-      "original_item_count": 2,
+      "crawled_at": "2026-02-12T19:04:34.398",
       "is_detail_collected": true,
-      "platform_sequence_id": 23
+      "is_merged_thread": true,
+      "root_code": "DUW_dl0Eg8K",
+      "user": "jun6_cat",
+      "timestamp": "2026-02-05 11:20:25",
+      "original_item_count": 1,
+      "platform_sequence_id": 20
     },
     {
       "sequence_id": 84,
       "sns_platform": "threads",
-      "full_text": "스레드에 방향성을 못 잡겠다면\n\n1. 내가 가장 재미있는 것을 주제로\n2. 해당 주제에 팔로워가 많은 계정을 검색\n3. 글의 구조를 보고 변주해 보기\n4. 내가 해당 주제로 사람들에게 줄 수 있는 콘텐츠 개발\n5. 사람들이 나보고 잘한다고 칭찬하는 것을 공략.\n\n이 순서대로 해 봐.\n나도 아직 못하지만.",
+      "code": "DT_1J1ukXjz",
+      "full_text": "더 퍼스트 3기에서 진행하는\n공저책 프로젝트에 참여하게 됐어.\n\n우리 조는 럭키세븐, 7조야.\n여기서는 '결핍'에 관해 에세이를 쓸거야.\n\n다들 결핍을 어떻게 극복 했는지.\n또 나의 결핍이 무엇인지 궁금하지 않아?",
       "media": [],
-      "crawled_at": "2026-02-12T19:04:37.523",
-      "code": "DUCm2nZkRcW",
-      "root_code": "DUCm2nZkRcW",
-      "user": "kkongdon_story",
-      "timestamp": "2026-01-28 13:20:34",
-      "is_merged_thread": true,
-      "original_item_count": 1,
+      "crawled_at": "2026-02-12T19:04:34.398",
       "is_detail_collected": true,
-      "platform_sequence_id": 24
+      "is_merged_thread": true,
+      "root_code": "DT_1J1ukXjz",
+      "user": "kkongdon_story",
+      "timestamp": "2026-01-27 11:27:48",
+      "original_item_count": 1,
+      "platform_sequence_id": 21
     },
     {
       "sequence_id": 85,
       "sns_platform": "threads",
-      "full_text": "나를 나타내는 동사 하나를 찾자.\n\n기록한다, 연결한다, 관찰한다,\n가르친다, 설명한다 등\n\n나를 힘들게 설명 말고\n행동으로 보이게 하자.",
+      "code": "DUAixXHkcOq",
+      "full_text": "이세돌이 이긴 것은 계산 능력이\n알파고보다 더 뛰어나서가 아니다.\n오히려 계산을 거부했기 때문이다.\n\nAI는 확률 높은 정답만을 쫓도록 설계되어 있다.\n그 견고한 성을 무너뜨린 것은 정답이 아니라,\n인간만이 할 수 있는 파격과 직관이었다.\n- AI 불변의 법칙(가제) 원고 일부",
       "media": [],
-      "crawled_at": "2026-02-12T19:04:37.523",
-      "code": "DUFTraLkVOW",
-      "root_code": "DUFTraLkVOW",
-      "user": "kkongdon_story",
-      "timestamp": "2026-01-29 14:30:44",
-      "is_merged_thread": true,
-      "original_item_count": 1,
+      "crawled_at": "2026-02-12T19:04:34.399",
       "is_detail_collected": true,
-      "platform_sequence_id": 25
+      "is_merged_thread": true,
+      "root_code": "DUAixXHkcOq",
+      "user": "kkongdon_story",
+      "timestamp": "2026-01-27 18:06:25",
+      "original_item_count": 1,
+      "platform_sequence_id": 22
     },
     {
       "sequence_id": 86,
+      "sns_platform": "threads",
+      "code": "DUA_fBqESd6",
+      "full_text": "북크북크님에게 퇴고 수업을 받고 왔어.\n북크님은 AI에 대한 지식과 통찰이 뛰어나셔서\n나의 원고 내용과 맥락을 정확히 이해하셔.\n\n편집자들은 이 많은 지식을\n어떻게 다 가지고 있는지 모르겠어.\n\n북크님의 통찰이 궁금하다면\n독기의 힘에 참여해봐.\n\n---\n\n@bookk_bookk1",
+      "media": [],
+      "crawled_at": "2026-02-12T19:04:34.399",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DUA_fBqESd6",
+      "user": "kkongdon_story",
+      "timestamp": "2026-01-27 22:17:19",
+      "original_item_count": 2,
+      "platform_sequence_id": 23
+    },
+    {
+      "sequence_id": 87,
+      "sns_platform": "threads",
+      "code": "DUCm2nZkRcW",
+      "full_text": "스레드에 방향성을 못 잡겠다면\n\n1. 내가 가장 재미있는 것을 주제로\n2. 해당 주제에 팔로워가 많은 계정을 검색\n3. 글의 구조를 보고 변주해 보기\n4. 내가 해당 주제로 사람들에게 줄 수 있는 콘텐츠 개발\n5. 사람들이 나보고 잘한다고 칭찬하는 것을 공략.\n\n이 순서대로 해 봐.\n나도 아직 못하지만.",
+      "media": [],
+      "crawled_at": "2026-02-12T19:04:37.523",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DUCm2nZkRcW",
+      "user": "kkongdon_story",
+      "timestamp": "2026-01-28 13:20:34",
+      "original_item_count": 1,
+      "platform_sequence_id": 24
+    },
+    {
+      "sequence_id": 88,
+      "sns_platform": "threads",
+      "code": "DUFTraLkVOW",
+      "full_text": "나를 나타내는 동사 하나를 찾자.\n\n기록한다, 연결한다, 관찰한다,\n가르친다, 설명한다 등\n\n나를 힘들게 설명 말고\n행동으로 보이게 하자.",
+      "media": [],
+      "crawled_at": "2026-02-12T19:04:37.523",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DUFTraLkVOW",
+      "user": "kkongdon_story",
+      "timestamp": "2026-01-29 14:30:44",
+      "original_item_count": 1,
+      "platform_sequence_id": 25
+    },
+    {
+      "sequence_id": 89,
       "platform_id": "DUFb5JKkajY",
       "sns_platform": "threads",
+      "code": "DUFb5JKkajY",
       "username": "kkongdon_story",
       "display_name": "꽁돈, AI와 사고하는 글쟁이",
       "full_text": "제발 AI에게 “마케팅 관점에서\n내 스레드 글을 평가해줘”\n라고 말하지 마세요.\n\n내 스레드 글이 마케팅적으로\n매력적인지 판단하려면\n프롬프트 안에 아래 7가지 단어가\n반드시 들어가야 합니다.\n\n1. 소구점\n2. 훅\n3. 인지 부하\n4. 심리 트리거 사용 여부\n5. 앵커링\n6. 이탈 지점\n7. CTA 구조\n\n이 단어가 없으면 뻔한 답이 나옵니다.\n프롬프트는 올려둘게요.\n무료 프롬프트 정보를 얻고 싶다면\n저와 함께하시면 됩니다.",
@@ -1667,6 +1744,7 @@
       "date": "2026-01-29",
       "crawled_at": "2026-02-12T19:04:37.524",
       "source": "network",
+      "is_merged_thread": false,
       "root_code": "DUFb5JKkajY",
       "like_count": 56,
       "reply_count": 27,
@@ -1675,13 +1753,12 @@
       "pk": "3820582533000702168",
       "media_type": 19,
       "content_type": "image",
-      "code": "DUFb5JKkajY",
-      "is_merged_thread": false,
       "platform_sequence_id": 26
     },
     {
-      "sequence_id": 87,
+      "sequence_id": 90,
       "sns_platform": "threads",
+      "code": "DUGI1HGEdVp",
       "full_text": "AI 초보자를 위한 상황별 추천 조합\n\n사람마다 특성이나 방식이 달라서\n꼭 이것이 맞다고 말할 수는 없지만,\n무엇을 써야 할지 감이 안 잡히는\n사람들을 위해 준비해 봤어.\n\n개인적인 생각이니 참고만 했으면 해.\nAI는 꽁돈과 함께하자☺️",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/624345589_17884260873441258_6361180417090591962_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uNTcyeDEwMjQuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QHEuWuW3gn_-43xC7krmkHwNVYbM5AJZvJPfwY96fl1R9vzPcg1PPFlMzqqbxQMjw0&_nc_ohc=EhdmAZ8nDWsQ7kNvwGD7WOH&_nc_gid=BzeBVXREHXlHVZWdP4YVOQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMDc4MDE2MjEyOTEzNzExNw%3D%3D.3-ccb7-5&oh=00_AftVvXl3G6D3Jjg5LGoCP_lp9el_OPlS6L3bqcMtqKhvjw&oe=699B0A80&_nc_sid=10d13b"
@@ -1690,18 +1767,18 @@
       "local_images": [
         "web_viewer/images/7b617aee4ab17bb26bccae192d2e5b11.jpg"
       ],
-      "code": "DUGI1HGEdVp",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUGI1HGEdVp",
       "user": "kkongdon_story",
       "timestamp": "2026-01-29 22:15:11",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 27
     },
     {
-      "sequence_id": 88,
+      "sequence_id": 91,
       "sns_platform": "threads",
+      "code": "DUGg1KXk4gy",
       "full_text": "7777명 달성 기념 이벤트🍀🍀🍀🍀\n\n감사하게도 7777명의 분들과 연결됐습니다.\n전에 공지한 대로, 제가 평소에\n생각 정리,아이디어 구조화할 때 실제로 쓰는\n777 챗봇을 공유하려고 합니다.\n\n777은 아이디어를 대신 만들어주는\nAI가 아니라 하나의 키워드나 문장을 넣으면\n생각할 수 있는 방향을 777 구조로 펼쳐서 보여줍니다.\n(사고 구조 × 질문 × 적용 영역)\n\n빠른 답보다\n내가 왜 이걸 고민하고 있는지\n혹은 어디서부터 꼬였는지\n이걸 알고 싶은 분들께 잘 맞을 거예요.\n\n아이디어가 많은데 정리가 안 될 때,\n방향을 정해야 하는데 확신이 없을 때,\nAI 답변이 늘 그럴듯해서 찜찜할 때 쓰는 챗봇입니다.\n\n77명에게만 777 챗봇 사용설명서 링크를\n공유하려고 합니다.\n\n원하시는 분 있으면 댓글 달아주세요.\n항상 감사합니다.🫶\n\n---\n\n선착순 77명이 끝나면 종료 됐다고 댓글을 달아두겠습니다.\n링크는 DM으로 보내드립니다.\n팔로우를 하신 분에게만 보내드려요.\n\n---\n\n마감입니다🙏 축하 감사합니다!",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/622940846_17884287264441258_9011036953818217118_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uNjMweDMxMC5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QGM-AJDSg1dJ0llRVZlFj3mobU-WwHpWoERCsqIyWSGJ5DPAdyvZgH9nMRlF8q6cnA&_nc_ohc=1b2S1a6AEu8Q7kNvwEt3-1o&_nc_gid=jT4QZZX31ZO9IV30cRFvDg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMDg4NTcxOTgwMDU3MzU3Nw%3D%3D.3-ccb7-5&oh=00_AfsI1MdVFEYawpRS94NzHRRG52E62hyHFsZqsxwDRnyn5Q&oe=699ADDA7&_nc_sid=10d13b"
@@ -1710,18 +1787,18 @@
       "local_images": [
         "web_viewer/images/b0d0a8e40a964c4f47d902f97ce86251.jpg"
       ],
-      "code": "DUGg1KXk4gy",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUGg1KXk4gy",
       "user": "kkongdon_story",
       "timestamp": "2026-01-30 01:44:54",
-      "is_merged_thread": true,
       "original_item_count": 3,
-      "is_detail_collected": true,
       "platform_sequence_id": 28
     },
     {
-      "sequence_id": 89,
+      "sequence_id": 92,
       "sns_platform": "threads",
+      "code": "DUHf59mkSse",
       "full_text": "오늘 사고반 신청 마지막 날이에요.\n\n지금까지 209분이 신청해 주셨고,\n그중 30분을 모시려고 합니다.\n\n저는 항상 강의에 진심입니다.\n사고반 분들은 한 달 뒤에\nHow가 아닌 Why를 좇는 방식으로\nAI를 사용하게 될 겁니다.\n\n제가 그렇게 만들 거예요.",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/623146765_17884330578441258_7092479068109338509_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNzE4eDQ5OS5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QFlfwzQLnwJTcDhSjcY4_SQUmemsp05fMPu5ivkK9sa8edoe4B4u8ligF1Qb_C8ng0&_nc_ohc=Ds4bPt5RHEUQ7kNvwGfjvJo&_nc_gid=EAUuEpNVqgDFA2GO9YQw8Q&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMTE2MzEzMTQ0NDQ3MjYwNg%3D%3D.3-ccb7-5&oh=00_AfvoMSqB5aHMmni9RyjQ4FCjknvIAn58ei2p5x4EMmgTaQ&oe=699AEB0C&_nc_sid=10d13b"
@@ -1730,18 +1807,18 @@
       "local_images": [
         "web_viewer/images/947cd9a06ee02abd844437ffa9009e7e.jpg"
       ],
-      "code": "DUHf59mkSse",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUHf59mkSse",
       "user": "kkongdon_story",
       "timestamp": "2026-01-30 10:56:03",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 29
     },
     {
-      "sequence_id": 90,
+      "sequence_id": 93,
       "sns_platform": "threads",
+      "code": "DUNT7XGkSuk",
       "full_text": "📢꽁꽁 사고반 1기 발표📢\n\n총 213명이 신청해 주셨습니다.\n우선 모두 모시지 못한 점,\n송구스럽게 생각합니다.\n\n하지만 1기를 시작으로\n꾸준히 진행해 보려고 합니다.\n\n다음 달 모집 시,\n이번에 신청해 주신 분들을 대상으로\n먼저 연락드리겠습니다.\n\nAI를 통해 계산을 진행했습니다.\n평소 저와 자주 소통해 주신 분들께는\n별도로 가점을 부여해 반영했습니다.\n\n신청자가 많은 관계로\n모집 인원을 30명에서 40명으로 늘렸습니다.\n\n갑작스러운 사정으로\n참여가 어려우신 분들은\n저에게 DM 부탁드립니다.\n\n단톡방 링크는 수요일에\nDM으로 일시 발송하겠습니다.\n\n참가하시는 분들의 1시간이\n절대 아깝지 않도록 만들어 보겠습니다.\n\n감사합니다.\n\n---\n\n@lee__wook__ 글과장 이욱님\n@h.essay7  환이님\n@with._.bibiy  비비님\n@brand_hanjang  브랜드한장님\n@gle.dalli.45  글달리님\n@chaeyeonga._  채연가님\n@haru_onroad 하루님\n@here.moment.happy 여지행님\n@with_alice_22 앨리스샘님\n@de.noera 노에라님\n\n---\n\n@piralab_ 피라랩님\n@linni.earth 리니어스님\n@dreaming_mdd 꿈꾸는 여우님\n@jasanghan_kenny 자상한 케니님\n@geulenrich 글앤리치님\n@everday_sunnyday 써니데이님\n@seongjoo.na 나성주님\n@hyeee.rari 박라리님\n@arena10004 생각쟁이님\n@ggumsikman 꿈식맨님\n\n---\n\n@zondy_is_great 존디님\n@writing_lightning_bug 글딧불이님\n@danji2208 단지님\n@elsugar_writer 엘슈가님\n@rainydayloveyou 레이니님\n@jakka_memeyou 미미유님\n@nununana_lee 눈누난나 리님\n@routine.is.julia 루틴줄리아님\n@hamy486 미아님\n@acejuntae.iroom 박준태님\n\n---\n\n@writer_educo 에두코님\n@sol_papi_ 태양아빠님\n@ssolmanager 쏠매니저님\n@bohum_daezang 오광철님\nloveyoken9.11 요켄님\n@cafeingumi 정인님\n@lightcasso 빛카소님\n@yolona_kr 욜로나님\n@korea_dove 한국의 비둘기님\n@jw0724cha J.W.Cha님",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/625813942_17884614105441258_4788473965854744_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uNzQ0eDQ5My5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QE02eeHyaS-mqIPtdWLhE62Vx---FMQPdI64l6hMrJIuVaBO10DKDXILfZkUn-ry8g&_nc_ohc=dhQuF9XQeVEQ7kNvwFD0y87&_nc_gid=-XqdOO4DdzILrJXTsEOVhg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMjc5OTI5NDc4MTUzNzY2NQ%3D%3D.3-ccb7-5&oh=00_AftILeipZhNOa0EIcLrZdFCaV7LK5sYdRAjCUpjlsg9I0w&oe=699B02F9&_nc_sid=10d13b"
@@ -1750,49 +1827,49 @@
       "local_images": [
         "web_viewer/images/cb04dcaa84ae0ea12264568b4ed1e065.jpg"
       ],
-      "code": "DUNT7XGkSuk",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUNT7XGkSuk",
       "user": "kkongdon_story",
       "timestamp": "2026-02-01 17:06:50",
-      "is_merged_thread": true,
       "original_item_count": 5,
-      "is_detail_collected": true,
       "platform_sequence_id": 30
     },
     {
-      "sequence_id": 91,
+      "sequence_id": 94,
       "sns_platform": "threads",
+      "code": "DUS7HjJkcC_",
       "full_text": "스레드 전문가 빌리쌤이 말했어요.\n\n팔로워 0~5K 구간은 많이 쓰기,\n5K~10K는 브랜드에 맞는 글 쓰기,\n10K 이상은 나만의 시스템 만들기라고요.\n\n스레드는 빌리쌤과 함께,\nAI는 꽁돈과 함께해요.\n\n---\n\n@billy___ssam",
       "media": [],
       "crawled_at": "2026-02-12T19:04:40.582",
-      "code": "DUS7HjJkcC_",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUS7HjJkcC_",
       "user": "kkongdon_story",
       "timestamp": "2026-02-03 21:25:29",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 31
     },
     {
-      "sequence_id": 92,
+      "sequence_id": 95,
       "sns_platform": "threads",
+      "code": "DUVYJLxEct1",
       "full_text": "내가 아는 최고의 지식을 공유하세요.\n\n“이건 나만 알고 싶어.”\n“고급 스킬이라 공유하기 싫어.”\n“다른 사람이 더 잘 쓰면 어떡해.”\n\n이런 생각을 가지면\n평생 성장할 수 없습니다.\n\n내가 아는 모든 것을 공개하세요.\n거침없이 공유하고,\n의견을 흡수하세요.\n\n그 과정에서\n다음 단계가 보일 겁니다.\n저의 AI 강의 지론이기도 합니다.",
       "media": [],
       "crawled_at": "2026-02-12T19:04:43.625",
-      "code": "DUVYJLxEct1",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUVYJLxEct1",
       "user": "kkongdon_story",
       "timestamp": "2026-02-04 20:17:36",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 32
     },
     {
-      "sequence_id": 93,
+      "sequence_id": 96,
       "platform_id": "DUWpQzlE5cF",
       "sns_platform": "threads",
+      "code": "DUWpQzlE5cF",
       "username": "ok_min87",
       "display_name": "okkkkxx",
       "full_text": "cot에 이렇게 소름 돋으셨으면, tot 보시면 소오름 돋으실듯\nhttps://www.promptingguide.ai/techniques/tot",
@@ -1802,6 +1879,7 @@
       "date": "2026-02-05",
       "crawled_at": "2026-02-12T19:04:43.626",
       "source": "network",
+      "is_merged_thread": false,
       "root_code": "DUWpQzlE5cF",
       "like_count": 28,
       "reply_count": 0,
@@ -1810,28 +1888,27 @@
       "pk": "3825426408299271941",
       "media_type": 19,
       "content_type": "image",
-      "code": "DUWpQzlE5cF",
-      "is_merged_thread": false,
       "platform_sequence_id": 33
     },
     {
-      "sequence_id": 94,
+      "sequence_id": 97,
       "sns_platform": "threads",
+      "code": "DUQhPMGiQqJ",
       "full_text": "스레드야, 나를 AI에 막 발 들인 \n4060세대 친구들에게 데려다줘~~! 🚀😄\n\n오프애선 교육현장에서 많이 뵙지만\n스레드에서는 많이 못 만난 것 같아요. \n\n그동안 올린 바이브코딩을 스레드가 오해한 건가? \n누구나 쉽게 배우는 AI교육을 준비 중이거든요.\n\n이 글 보이는 4060분들, \n좋아요로 “관심 있어!” 신호를 부탁드려요!\n제가 진짜 만나고 싶은 분들입니다.\n\n저의 알고리즘 테스트, 도와주세요!🫡\n\n#4060AI입문 #AI활용팁 #천천히차근차근AI",
       "media": [],
       "crawled_at": "2026-02-12T19:04:43.626",
-      "code": "DUQhPMGiQqJ",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUQhPMGiQqJ",
       "user": "slowsoyang",
       "timestamp": "2026-02-02 23:00:51",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 34
     },
     {
-      "sequence_id": 95,
+      "sequence_id": 98,
       "sns_platform": "threads",
+      "code": "DUWcgibE0pE",
       "full_text": "진짜 5단계까지 가야하는 게 필수구나.\n나 아직 기껏해야 2~3단계인데.\n특정 업무 알아서 수행하는 'AI직원' 한명 먼저 탄생시켜 봐야겠다.💪💪 근데 어느 부서 직원이 제일 먼저 필요하려나..🤔🤔\n\n이미지 출처 : @slowsoyang 님",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/627053256_17915582148278023_967130450022236592_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uOTcyeDUzMy5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QEVZUromjyx4Q4BGZa7c7kKThDGfdli9R-wAlWJMaumDvSmiNusP7aoaYThTZKt-ZY&_nc_ohc=tQAlz1akAcwQ7kNvwEwKg4g&_nc_gid=q9WwvkUuKCagOSUnzBC8mQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyNTM3MDMxNDc4NDg1MjU0OA%3D%3D.3-ccb7-5&oh=00_Afvf3Rcpwm-3Tky-UVP1_PJvcD7oQPwLE7_Z699Cyug22w&oe=699AEC06&_nc_sid=10d13b"
@@ -1840,18 +1917,18 @@
       "local_images": [
         "web_viewer/images/287446f3b3b9c403e4a14f8f47c9c7da.webp"
       ],
-      "code": "DUWcgibE0pE",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUWcgibE0pE",
       "user": "irijeri.gungli",
       "timestamp": "2026-02-05 06:14:59",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 35
     },
     {
-      "sequence_id": 96,
+      "sequence_id": 99,
       "sns_platform": "threads",
+      "code": "DUWrZdMClb9",
       "full_text": "와 .. 너무 필요했던 기능이다. \n\nClaude Code에 새로운 기능이 들어왔습니다. /insights를 실행하면 여러분의 지난 한 달 동안 나눈 대화 기록을 싹 다 읽고 진행했던 프로젝트들을 깔끔하게 정리해 줍니다.\n\n그리고 내가 도구를 제대로 활용하고 있는지, 아니면 비효율적으로 쓰고 있는지 객관적으로 파악하게 해주고 이렇게 하면 더 좋겠다\"는 제안까지 던져줍니다.\n\n공짜로 클로드코드 1대1 컨설팅 받는 셈.",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/626444141_899490242467992_1238949212519478640_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDM2MC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QHVQ8bCTA0PJ3NbKYuoUI_x4LfbqawYtZlVDoa0Q0Z11HVxcFjmWNUU5U9W_t9w620&_nc_ohc=p2mpujS_XUsQ7kNvwFl3FET&_nc_gid=xWT9dRxGbyoYyMaOqj7YzQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyNTQzNTc5ODgyNTIyODAyOQ%3D%3D.3-ccb7-5&oh=00_Afva5XrFIJsoj6nbWEIQX1Ukmzz5ieW1nTZ2cwuby2C-3g&oe=699AE3D5&_nc_sid=10d13b"
@@ -1860,19 +1937,19 @@
       "local_images": [
         "web_viewer/images/bdc8517d812e1465228a3d6314f6816c.jpg"
       ],
-      "code": "DUWrZdMClb9",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUWrZdMClb9",
       "user": "aicoffeechat",
       "timestamp": "2026-02-05 08:39:15",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 36
     },
     {
-      "sequence_id": 97,
+      "sequence_id": 100,
       "platform_id": "DUTUR80iZ_4",
       "sns_platform": "threads",
+      "code": "DUTUR80iZ_4",
       "username": "read_1p",
       "display_name": "리드",
       "full_text": "와 스케줄에 따라 프롬프트 실행해주는거 완전 맛도리네요",
@@ -1882,6 +1959,7 @@
       "date": "2026-02-04",
       "crawled_at": "2026-02-12T19:04:46.672",
       "source": "network",
+      "is_merged_thread": false,
       "root_code": "DUTUR80iZ_4",
       "like_count": 1,
       "reply_count": 0,
@@ -1890,13 +1968,12 @@
       "pk": "3824489703034953720",
       "media_type": 19,
       "content_type": "image",
-      "code": "DUTUR80iZ_4",
-      "is_merged_thread": false,
       "platform_sequence_id": 37
     },
     {
-      "sequence_id": 98,
+      "sequence_id": 101,
       "sns_platform": "threads",
+      "code": "DUTTMTDEoas",
       "full_text": "코덱스앱 사랑스럽다. Open AI 코딩팀이 처음으로 먼가 한 것 같다. 인공지능으로 코딩하면서 이것은 필요한데 하는 기능들이 전부 다들어가 있다. 정말 가볍고 빠르고 완벽하다. 이제는 개인 프로젝트를 전부 하루만에 흡수하여 툴들이 만들어낸다.. 오토메이션 기능은 정말 편하다. 시간별로 혹은 정해신 간격으로 스케줄링이 있어서 프롬포트를 실행한다.  클로드도 곧 이런 것을 내놓을테도 그냥 이제는 코덱스나 클로드가 하는 것만 그대로 하면 될것 같다. 이리저리 안돌아다니고 그냥 툴들이 주는대로 받아 먹으면 될듯 싶다. 돈도 제일 많은 놈들이 개발하니깐. 서브에이전트 멀티에이전트 오케스트레이션 이런 거 다 없어질 것 같다.",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/627686321_17873955192507614_4053696641123199796_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTA1N3g3NzQuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QGGSI2lbP2tYfTgQpqGJOEU45dns74n5rRyTDbDH1ZbD5X0LBesPIC_QO9zG8CU00w&_nc_ohc=A2BjZTgRjm4Q7kNvwEtu-yw&_nc_gid=4qTuVHpO6PvHrswfvuwBkA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyNDQ4NDkxNjUzNzc1NTMwOA%3D%3D.3-ccb7-5&oh=00_AfuFB4bUML2fuYjpgeDGDz45S3vbhVTIE7QdfnzqlZQK9Q&oe=699AD6A6&_nc_sid=10d13b"
@@ -1905,64 +1982,64 @@
       "local_images": [
         "web_viewer/images/527afe50212cf21b1bf5815292a1f1e0.jpg"
       ],
-      "code": "DUTTMTDEoas",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUTTMTDEoas",
       "user": "keke_appa",
       "timestamp": "2026-02-04 00:55:51",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 38
     },
     {
-      "sequence_id": 99,
+      "sequence_id": 102,
       "sns_platform": "threads",
+      "code": "DUUBhjKgeKZ",
       "full_text": "obsidian x claudian (obsidian plugin) x notebooklm mcp 조합은 엄청나네..!\n\n지식 관리의 확장성과 아이디어 브레인스토밍의 확장성이 달라진다..",
       "media": [],
       "crawled_at": "2026-02-12T19:04:46.673",
-      "code": "DUUBhjKgeKZ",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUUBhjKgeKZ",
       "user": "inner.builder",
       "timestamp": "2026-02-04 07:40:42",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 39
     },
     {
-      "sequence_id": 100,
+      "sequence_id": 103,
       "sns_platform": "threads",
+      "code": "DUUYhntk4Ey",
       "full_text": "Anthropic이 Claude Cowork 에 법률,영업,마케팅,데이터 분석 등 부서별 반복 업무를 자동화하는 플러그인을 Github에 오픈소스로 공개했어요\n\n어떤 변화를 가져올지 궁금하네요\n\n---\n\nhttps://github.com/anthropics/knowledge-work-plugins",
       "media": [],
       "crawled_at": "2026-02-12T19:04:49.708",
-      "code": "DUUYhntk4Ey",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUUYhntk4Ey",
       "user": "geumverse_ai",
       "timestamp": "2026-02-04 11:01:42",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 40
     },
     {
-      "sequence_id": 101,
+      "sequence_id": 104,
       "sns_platform": "threads",
+      "code": "DUVOj-xAVR3",
       "full_text": "이제 코딩보다 'AI 부하직원' 관리 능력이 연봉 정함\n\n구글 클라우드에서 '2026 AI 에이전트 트렌드' 리포트 낸 거 다들 봄? \n\n200페이지 넘는 거 읽기 귀찮은 형들을 위해 엑기스만 뽑아옴.\n\n---\n\n도구(Tool)에서 동료(Teammate)로 승진함. 이제 챗봇한테 \"이거 써줘\" 하는 시대 끝남. 목표만 던져주면 지들이 알아서 계획 짜고 실행하는 '에이전트'가 기본값임.\n\n---\n\n모든 직원이 'AI 매니저'가 됨. 직접 일하는 사람보다, 에이전트 5~6명(?) 데리고 워크플로우 오케스트레이션(지휘) 하는 사람이 찐 능력자 대우받음. 이제 면접에서 \"프롬프트 좀 깎나요?\"가 아니라 \"어떤 에이전트 조합으로 성과 냈나요?\" 물어볼 듯.\n\n---\n\n모델 싸움 끝, 워크플로우 싸움 시작. GPT-5냐 클로드 4냐 의미 없음. 어차피 모델은 다 똑똑함. 핵심은 이놈들을 어떻게 잘 연결할거냐임.\n\n---\n\n내 생각: 이제 \"나 코딩 좀 함\"보다 \"나 에이전트 좀 부림\"이 더 무서운 스펙이 될 거임. 근데 내 에이전트는 왜 아직도 ...ㅠㅠㅠ 또르르\n\n레포트 링크는 아래!\n\n---\n\nhttps://cloud.google.com/resources/content/ai-agent-trends-2026",
       "media": [],
       "crawled_at": "2026-02-12T19:04:49.708",
-      "code": "DUVOj-xAVR3",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUVOj-xAVR3",
       "user": "xeona.xyz",
       "timestamp": "2026-02-04 18:53:53",
-      "is_merged_thread": true,
       "original_item_count": 6,
-      "is_detail_collected": true,
       "platform_sequence_id": 41
     },
     {
-      "sequence_id": 102,
+      "sequence_id": 105,
       "platform_id": "DUUP0ZfE7y8",
       "sns_platform": "threads",
+      "code": "DUUP0ZfE7y8",
       "username": "visn__ai",
       "display_name": "“당신의 비전을 시각으로 바꾸다.” visn_ai",
       "full_text": "1.grok을열고\n2.사진을 첨부한다.\n3.아래 프롬프트를 입력한다.",
@@ -1977,6 +2054,7 @@
       "local_images": [
         "web_viewer/images/ba785fadfd399a7ba47cbc40d20ff7da.webp"
       ],
+      "is_merged_thread": false,
       "root_code": "DUUP0ZfE7y8",
       "like_count": 360,
       "reply_count": 71,
@@ -1985,28 +2063,27 @@
       "pk": "3824751555019783356",
       "media_type": 1,
       "content_type": "image",
-      "code": "DUUP0ZfE7y8",
-      "is_merged_thread": false,
       "platform_sequence_id": 42
     },
     {
-      "sequence_id": 103,
+      "sequence_id": 106,
       "sns_platform": "threads",
+      "code": "DUUXKhGAG4-",
       "full_text": "이제 PPT로 인한 스트레스는 끝이다.\n\n이제는 Gemini가 5분 만에 \n전체 발표 자료를 만들어준다.\n빈 슬라이드부터 완성본까지.\n\n아래 7개의 프롬프트면 A부터 Z까지 전부 끝난다.\n\n---\n\n1.\t주제 & 구조 설계\n\n“주제: [입력]. 대상: [학생/임원/투자자 등].\n인트로 → 3~4개의 주요 섹션 → 사례 → 결론까지\n총 10장의 슬라이드 흐름을 설계해줘.”\n\n---\n\n2.\t슬라이드 내용 작성\n\n“아래는 내가 만든 개요야: [붙여넣기].\n각 슬라이드별로 핵심 불릿 내용을 최대 5줄 이내의 간결한 문장으로 작성해줘.”\n\n---\n\n3.\t디자인 방향 제시\n\n“테마: [모던/미니멀/기업형 등].\n각 슬라이드에 어울리는 제목, 배경 컬러, 간단한 디자인 아이디어를 제안해줘.”\n\n---\n\n4.\t비주얼 & 그래픽 추천\n\n“이 슬라이드 내용 기반으로: [붙여넣기].\n각 슬라이드에 어울릴 아이콘, 이미지, 간단한 다이어그램 등을 추천해줘.\n무료로 사용할 수 있는 자료나 직접 만드는 방법도 설명해줘.”\n\n---\n\n5.\t발표자 노트 작성\n\n“슬라이드 내용은 이거야: [붙여넣기].\n각 슬라이드에 대해 1~2문장으로, 불릿을 자연스럽게 확장해주는 발표자 노트를 작성해줘.”\n\n---\n\n6.\t청중 참여 요소 추가\n\n“이 발표 자료에 넣을 만한 참여형 요소 3개(예: 간단한 질문, 짧은 사례, 미니 활동)를 제안해줘.”\n\n---\n\n7.\t최종 정리본 스크립트\n\n“전체 슬라이드 + 발표 노트를 종합해서\n내가 발표 전에 연습할 수 있는 깔끔한 스크립트 형태로 다시 정리해줘.\n전문적이고 자신감 있게 들리는 톤으로.”\n\n---\n\n📌 EASY GPT 무료 실시간 강의 (2026 ver)\n\n🚨강의 내용이 전면 개편 되었습니다‼️\n- 기존에 강의를 들으셨던 ‘7000명’의 분들도 무조건 다시 들으셔야 합니다.\n\n🗓 2월 24일(화) 오후 7시 30분\n\n💻AI 써보긴 했는데, \n수익으로는 안 이어졌나요?\n\n결국 핵심은 단 하나입니다.\nSNS → 상세페이지 → 판매\n\n이 흐름을\n👉 AI로 어떻게 복붙만 해서 구현하는지\n👉 실제로 돈이 되게 어떻게 연결하는지\n이번 강의에서 전부 공개합니다.\n\n정말 아무것도 모르는 분들도 따라올 수 있게\n차근차근 준비한 강의입니다.\n많은 기대 부탁드립니다.\n\n무료 강의 방 링크\n￼https://open.kakao.com/o/gs2v23ci￼",
       "media": [],
       "crawled_at": "2026-02-12T19:04:49.709",
-      "code": "DUUXKhGAG4-",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUUXKhGAG4-",
       "user": "easygpt2526",
       "timestamp": "2026-02-04 10:49:48",
-      "is_merged_thread": true,
       "original_item_count": 9,
-      "is_detail_collected": true,
       "platform_sequence_id": 43
     },
     {
-      "sequence_id": 104,
+      "sequence_id": 107,
       "sns_platform": "threads",
+      "code": "DUS4la6Ebp2",
       "full_text": "아직도 AI에게 “너는 10년 차 OO이야”라고만\n쓰고 있다면, 제발 이것만 알아가자.\n\nAI는 역할 놀이보다\n사고 방식 지정에 훨씬 잘 반응해.\n\n1. 계산과 논리적인 답이 필요하다면 CoT\n→ 순서대로, 한 줄 논리로.\n\n2. 아이디어가 막혔다면 ToT\n→ 여러 갈래로 뻗고, 막히면 되돌아오기.\n\n3. 전략·기획처럼 얽힌 문제라면 GoT\n→ 영향 관계를 네트워크로 보기.\n\n4. 숫자·법령·사실 확인이라면 CoVe\n→ 스스로 의심하고 다시 검증.\n\n5. 글·보고서라면 SoT\n→ 내용 전에 구조부터.\n\n6. 복잡한 계산이라면 PoT\n→ 말하지 말고, 코드로.\n\n“너는 OO 전문가야” 말고\n“이 문제는 OO 사고 방식으로 답변해”라고 명령하기.\n\nAI를 똑똑하게 쓰고 싶다면 나와 친구하자☺️",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/626179920_17884876746441258_5986182605555287236_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTA4MHgxMDgwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QF-ZtB8GDDP52HfDhW93yf6LoPqpheDWUE_VgmGFj2_31u03hsl901N5xaduCRD_SE&_nc_ohc=yRA_J3aaCJAQ7kNvwGWRKAJ&_nc_gid=5EacjZejxjrD25-XRuzRtw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyNDM2NzA4MzgzMzE0MTc4Ng%3D%3D.3-ccb7-5&oh=00_AfvDB3g_lwnoRhM4P_FPr8af4ccjXgKJE5bk0COOyhe71w&oe=699AFFE7&_nc_sid=10d13b"
@@ -2015,33 +2092,33 @@
       "local_images": [
         "web_viewer/images/57b45a151e25127a2f0d1a3e5bfdbf11.jpg"
       ],
-      "code": "DUS4la6Ebp2",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUS4la6Ebp2",
       "user": "kkongdon_story",
       "timestamp": "2026-02-03 21:03:21",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 44
     },
     {
-      "sequence_id": 105,
+      "sequence_id": 108,
       "sns_platform": "threads",
+      "code": "DUUNQMpE2m3",
       "full_text": "Anthropic이 공개한 Claude Skill 메뉴얼🔥\n\nClaude에게 매번 같은 설명을 반복하는 것이 귀찮았던 분들은 아마 Skill로 이 문제를 해결했을 겁니다. 저도 Skill을 활용하고 있는데 이것이 잘 구축되었는지, 더 좋은 결과를 얻을 수 있을지 판단하기 어려웠습니다. Anthropic이 직접 작성한 Skill 제작 매뉴얼의 핵심 내용을 공개했습니다🤩\n\n두번 이야기 안합니다. \n제 글 보시고 원문은 세번 보시길 바랍니다😊\n\n---\n\nhttps://claude.com/blog/complete-guide-to-building-skills-for-claude",
       "media": [],
       "crawled_at": "2026-02-12T19:04:52.745",
-      "code": "DUUNQMpE2m3",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUUNQMpE2m3",
       "user": "_keunyoung_",
       "timestamp": "2026-02-04 09:23:12",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 45
     },
     {
-      "sequence_id": 106,
+      "sequence_id": 109,
       "sns_platform": "threads",
+      "code": "DUU0S9ZkqQr",
       "full_text": "와.. 구글이 이번엔 논문 그림 그리는 AI를 가져왔습니다. \n\n논문 쓸 때 가장 까다로운 작업 중 하나가 바로 방법론 도식화죠? 이제 복잡한 디자인 도구를 만질 필요가 없습니다. \n\n텍스트만 넣으면 알아서 출판급 퀄리티로 그려주는 에이전트 프레임워크, 페이퍼바나나(PaperBanana)가 등장했습니다.\n\n---\n\n1 ✦ 5명의 전문 에이전트가 팀으로 움직입니다\n\n이 시스템은 단순히 그림을 생성하는 것이 아니라, 마치 숙련된 디자이너 팀처럼 협업(Collaboration)합니다.\n\n• 검색가(Retriever): 수천 개의 NeurIPS 논문을 뒤져 가장 세련된 구조의 레퍼런스를 찾아옵니다. \n• 기획자(Planner): 사용자가 입력한 방법론 텍스트를 세밀한 시각적 설계도로 번역합니다. \n• 스타일리스트(Stylist): 수백 편의 상위 티어 논문을 학습해 최신 유행하는 색감과 폰트, 레이아웃을 입힙니다. \n• 시각화 및 비평(Visualizer + Critic): 그림을 직접 그린 뒤, 원문과 대조하며 스스로 3번이나 수정하고 다듬습니다.\n\n---\n\n2 ✦ 사람이 그린 것보다 낫다는 놀라운 결과\n\n실제 전문가들을 대상으로 진행한 블라인드 테스트 결과는 충격적입니다. 무려 4명 중 3명이 사람이 직접 그린 것보다 PaperBanana가 만든 도식을 더 선호했거든요.\n\n---\n\n3 ✦ 통계 그래프부터 정확한 수치까지\n\n단순히 예쁜 그림만 그리는 것이 아닙니다. 수치 데이터를 입력하면 AI가 직접 코드를 작성해 오차 없는 통계 그래프(Statistical Plots)까지 생성합니다.\n\n---\n\n논문링크:\nhttps://arxiv.org/pdf/2601.23265v1",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/626980871_17851587996654440_7339547875632773728_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTM3NHg4MDIuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QEDOSj4-hiCaZV-nyaos-u_0IBUzblzmqezQbEEUAeaOE-_NAU06YHKgt9n0FZxT9M&_nc_ohc=o4yb3J8wZ3QQ7kNvwHVDqrv&_nc_gid=Dh9M9FOs4cvtwsHMtANhhw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyNDkxMTk4NDg0MDg0NDMzMQ%3D%3D.3-ccb7-5&oh=00_AfspWp20f7ZcgV0PdY7zPKFw70-rzs-xie--b14_1rIqNg&oe=699AFB85&_nc_sid=10d13b",
@@ -2056,18 +2133,18 @@
         "web_viewer/images/c087bf7cb176caf387c93734949207fe.jpg",
         "web_viewer/images/3e9f890069ffb85abaa092ba4483b2ce.jpg"
       ],
-      "code": "DUU0S9ZkqQr",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUU0S9ZkqQr",
       "user": "ur.future.ai",
       "timestamp": "2026-02-04 15:04:22",
-      "is_merged_thread": true,
       "original_item_count": 5,
-      "is_detail_collected": true,
       "platform_sequence_id": 46
     },
     {
-      "sequence_id": 107,
+      "sequence_id": 110,
       "sns_platform": "threads",
+      "code": "DUSZd-1EhSU",
       "full_text": "스친이들 기다려줘서 고마워 \n댓글에 내 방법 쭉 달아놨어 도움 됐으면 하트 리포스트 해 줄거지?\n\n내일 아니면 이번 주?\n다음 번엔 이걸 알려줄게 너무 다 푸는 건 아닌가 걱정되네 ㅋㅋ\n\n[ 10위 글을 → 1~2위로 올릴 때\n내가 실제로 고친 3군데! ]\n\n반응이 좋아야 알려줄 거양 ㅠㅠ\n\n---\n\n상위노출 구조, 이제 진짜 말해줄게\n오늘은 흐린 말 없음.\n\n① 네이버는 글을 안 읽는다\n그리고 중요한 거 하나 더.\n요즘 네이버 상위노출 글, 구글 로직 따라가고 있음\n\n이게 무슨 말이냐면,\n예전처럼 키워드만 우겨 넣는 글?\n지금은 오히려 날아감\n\n네이버가 보는 건 딱 이거임.\n\n체류 시간\n\n스크롤 흐름\n\n문단 리듬\n\n사용자 반응 구조\n\n이거 전부 구글 SEO 기본값이랑 같음.\n그래서 요즘 상위 글들 보면\n블로그인데 블로그 같지 않음\n“읽히게 만든 구조”임.\n\n② 그래서 네이버는 ‘문장력’ 안 본다\n사람처럼 감동 안 받음\n잘 썼네? 이런 평가 없음.\n사용자가 머무는지만 체크함\n\n즉,\n글 잘 쓰는 사람이 아니라\n로직 읽는 사람이 먹는 구조로 바뀐 거임.\n\n③ 1위 글부터 켜라\n이론, 강의, 책 필요 없음.\n지금 네가 노리는 키워드\n1~2위 블로그 열어보면 답 다 있음\n\n거기서 봐야 할 건\n내용 ❌\n구조 ⭕\n\n---\n\n④ 제목은 ‘단어’ 말고 ‘형식’을 베껴라\n상위 글들 공통점 있음\n\n질문형\n\n숫자 포함\n\n지역 + 키워드\n\n문제 제기형\n\n이 틀이 이미 검증된 거임\n단어만 바꾸면 됨\n이게 카피 아니고 구조 복제임\n\n⑤ 첫 문단에서 거의 끝난다\n요즘 네이버,\n첫 문단에서 승부 거의 남\n\n상위 글 특징 딱 하나.\n\n키워드 바로 등장\n\n이 글에서 뭘 해결해주는지 즉시 제시\n\n뜸 들이면?\n스크롤 안 하고 바로 나감.\n그 순간 노출 끝.\n\n⑥ 본문은 ‘정보량’이 아니라 ‘패턴’\n많이 쓰면 뜰 것 같지?\n아님. 오히려 안 뜸\n\n상위 글 흐름은 거의 공식임\n\n문제 제기\n\n공감\n\n소제목\n\n설명\n\n사진\n\n이 리듬이 체류시간 만든다.\n정보는 적당히.\n흐름이 전부임.\n\n⑦ 사진은 감성용 아님\n요즘 사진은 장식 아님\n증거 + 쉬어가기용임.\n\n텍스트 → 사진\n텍스트 → 사진\n이 교차 구조가 핵심.\n\n⑧ 결론은 요약처럼 끝내라\n갑자기 감성글 쓰면 망함.\n앞에서 한 말 정리 + 키워드 한 번 더.\n깔끔하게 닫아야 유지됨.\n\n---\n\n결론 한 줄로 말하면 이거임.\n\n상위노출은\n글 잘 쓰는 사람이 아니라\n구조 잘 읽는 사람이 가져간다.\n\n그래서\n내가 먹고 사는 거고\n이 구조 하나만 알아도\n게임 끝나는 이유다.",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/625871679_17869417401542008_1569531035897584954_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMjE2MHgxMTc4LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QEVcMU7eeNQL7k1-8irH9hyuIwXGdOuCy53qKNKwUaUfn5o8IAHIhNiYYgS1ZGk5gQ&_nc_ohc=AorqGS5evZoQ7kNvwHvXbmZ&_nc_gid=GmhhU3VMXHkfmf3DbtcfUw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyNDIzMTA0NTA4MDk0NTgxMg%3D%3D.3-ccb7-5&oh=00_AfvmCJlpXNJUVph8W3pyKHz5mcGhEpaSwji_ffx3c3t_Tg&oe=699AE6BB&_nc_sid=10d13b"
@@ -2076,18 +2153,18 @@
       "local_images": [
         "web_viewer/images/1909d6bdcfe2cd70ac338604007ec6bc.jpg"
       ],
-      "code": "DUSZd-1EhSU",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUSZd-1EhSU",
       "user": "bibi_blog_world",
       "timestamp": "2026-02-03 16:31:27",
-      "is_merged_thread": true,
       "original_item_count": 4,
-      "is_detail_collected": true,
       "platform_sequence_id": 47
     },
     {
-      "sequence_id": 108,
+      "sequence_id": 111,
       "sns_platform": "threads",
+      "code": "DUTDCINAqM_",
       "full_text": "[Antigravity 9일차]\n수업 맥락을 입력하면 수업 정보가 담긴 .json을 생성하고 이를 .hwpx로 만들어주는 교수학습과정안 생성기를 개발했습니다. AI Agent로 만드니 뚝딱이네요!\n\n---\n\n기존에 웹버전으로 만든 게 있었는데\n이런 방법으로도 해보고 싶어서 도전해보았습니다.",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/625497383_2661094057588268_7940954355765961763_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDQxNC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QG--idVC4bUCQLtFivQRfHkhscHgGhWVhYwJOmVW08e8GGawHMf9l05CX6y_V1g5s0&_nc_ohc=SfLSYnHQ7J0Q7kNvwG7KoR9&_nc_gid=e-gXnsXjhkAxaSwALLRoNg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyNDQxMzg0ODk1NDM4MTExOQ%3D%3D.3-ccb7-5&oh=00_Aft9HPpOL9_VZYa6nuAj57XHJA7a5zNwUG7x70FA9LAj3Q&oe=699AF258&_nc_sid=10d13b"
@@ -2096,48 +2173,48 @@
       "local_images": [
         "web_viewer/images/51ee7a9b507ac2f092f8193da49cf94b.jpg"
       ],
-      "code": "DUTDCINAqM_",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUTDCINAqM_",
       "user": "taaaaes",
       "timestamp": "2026-02-03 22:35:58",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 48
     },
     {
-      "sequence_id": 109,
+      "sequence_id": 112,
       "sns_platform": "threads",
+      "code": "DURwmBAEh6d",
       "full_text": "와 안티그래비티-구글드라이브-옵시디언 여기다 제미나이 조합 좋은데? 난 원래 제미나이, 젬, 노트북lm 에다 구글드라이브 썼었는데, 이렇게쓰면 저거 다 쓸수도있고 마크다운 파일이 구글드라이브 한군데로 모이고 옵시디언으로 연동도 되니까 pc로도 모바일로도 편집이 편해.\n\n---\n\n@hanulphoto 스친아 알려줘서 고마워 완전 신세계야!! 옵시디언 텍스트 편집기로 쓰니까 너무좋다 🤣",
       "media": [],
       "crawled_at": "2026-02-12T19:04:55.775",
-      "code": "DURwmBAEh6d",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DURwmBAEh6d",
       "user": "itszoejeong",
       "timestamp": "2026-02-03 10:34:17",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 49
     },
     {
-      "sequence_id": 110,
+      "sequence_id": 113,
       "sns_platform": "threads",
+      "code": "DUQTYlyElVu",
       "full_text": "\"Claude Code 쓰시는데 oh-my-claudecode 안쓰신다고요?\"\n\n요즘은 단순히 수동으로 plan 모드하고 계획 짠 다음에 리뷰 에이전트에게 리뷰 요청하고 다시 계획짜고 개발 하는 프로세스가 아닙니다.\n바이브코딩은 저희같은 전문가들에게 너무나도 지루하고 느립니다.\n이제는 오케스트레이션 입니다.\n\n계획짜고 검토하고 개발하고 리뷰하고 QA하고 이거를 에이전트끼리 논스톱으로 다 하는 시대입니다. 이거를 claude code 전용으로 맞춘게 oh-my-claudecode 라이브러입니다.\n\n마지막으로 한마디 하겠습니다.\n\n\"사용하세요\"",
       "media": [],
       "crawled_at": "2026-02-12T19:04:55.775",
-      "code": "DUQTYlyElVu",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUQTYlyElVu",
       "user": "_ju_tiger_lee_",
       "timestamp": "2026-02-02 20:59:48",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 50
     },
     {
-      "sequence_id": 111,
+      "sequence_id": 114,
       "sns_platform": "threads",
+      "code": "DUL4o2SEm78",
       "full_text": "요즘 안티그래비티 저만 이럽니까\n클로드 쿼타는 순식간에 녹고\nGemini로 돌리면 Skill이나 Rule도 무시하고\n시키지도 않은거 하고 자랑하고 무한반복돌고..\n\n클코에선 서브에이전트로 병렬처리도 되는데 안티그래비티에서는 왜안되냐!!!\n\n싶어서 안티그래비티용 서브 에이전트 오케스트레이터 를 만들었습니다🤞🏻\n\n---\n\nPM / FE / BE / Mobile / QA / Debug\n프롬프팅 하나로 쭉 이어서 가능합니다. \n\nGemini pro 3.0으로도 꽤나 잘돼요. (쿼타 박살나서 opus 못쓴지 사흘째)\n한 번 테스트해보시고 비난이던 칭찬이던 관심부탁드립니다. 피드백 반영하여 계속 개선 중입니다.\n\n코드는 거짓말을 하지않지만.. 이놈들은 좀 하니까..\n\nGitHub\nhttps://github.com/first-fluke/oh-my-ag\n\n---\n\n아 그리고 AI-native 로 서비스 개발하면서 만든\n풀스택 스타터 템플릿도 같이 공유합니다!\n\nhttps://news.hada.io/topic?id=25691",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/625360335_17919746742255383_8833118299756574721_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTI0Mng2NjAuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2QHLp9yx6pv_VOcwQn1DBN2wHIjX5j7h9ov7jvcuAVJjFRE60-otIY0Tm3K2CUtT6xQ&_nc_ohc=p9nJxV29CzUQ7kNvwEI-dLa&_nc_gid=XlKcAn1xVEarWFFpMO7aFQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMjM5Nzc3ODE0NDkyMjQ0OA%3D%3D.3-ccb7-5&oh=00_Afuh3eTaBTqTx5YXr_zOYuLbHJIeS6yWwwiZ0O7b7-pUFg&oe=699ADB5F&_nc_sid=10d13b"
@@ -2146,19 +2223,19 @@
       "local_images": [
         "web_viewer/images/32ab1958f10d1d8fa06ad08261b84058.jpg"
       ],
-      "code": "DUL4o2SEm78",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUL4o2SEm78",
       "user": "mega_fluke",
       "timestamp": "2026-02-01 03:49:08",
-      "is_merged_thread": true,
       "original_item_count": 3,
-      "is_detail_collected": true,
       "platform_sequence_id": 51
     },
     {
-      "sequence_id": 112,
+      "sequence_id": 115,
       "platform_id": "DUQZfiwDzO2",
       "sns_platform": "threads",
+      "code": "DUQZfiwDzO2",
       "username": "lov_entp",
       "display_name": "ENTP_새벽✨",
       "full_text": "1. MVP, 랜딩 페이지 쾅쾅 스피드로 찍어낼때는 Gemini의 antigravity \n2. 제대로 아키텍쳐 설계 하고 기획하고 모듈화하면서 제대로 만들고 어려운 로직 만들때는 claude code의 opus, \n적당히 준수한 수준을 원하면 sonnet \n단순 반복적인 작업을 많이 할때는 haiku\n3. 클로드로 다 만들어놓고 디자인이 구리다?\n그러면 Gemini에게 디자인 검토해서 개선\n\n내가 바이브코딩 잘 모르고 돈쓰기 무섭다 = Gemini Pro\nGemini 의 Antigravity에서 바이브코딩\n(Gemini, Claude, GPT 모두 사용가능/용량제한 있음 일정시간후 다시 돌아옴)\n\n내가 진짜 무조건 돈 투입한다 나는 개발킹이다 = Claude Max 100달러 구독제\n\nClaude Code인지 머시긴지 제일 좋다며? 찍먹은 해봐야지! = Claude pro 20달러 구독제\n\n(가격은 직접확인 요망, api  크레딧 사지 말것 🚨)\n(확신 없으면 절대 1년 구독 금지)",
@@ -2168,6 +2245,7 @@
       "date": "2026-02-02",
       "crawled_at": "2026-02-12T19:04:58.816",
       "source": "network",
+      "is_merged_thread": false,
       "root_code": "DUQZfiwDzO2",
       "like_count": 1,
       "reply_count": 0,
@@ -2176,43 +2254,68 @@
       "pk": "3823668202417632182",
       "media_type": 19,
       "content_type": "image",
-      "code": "DUQZfiwDzO2",
-      "is_merged_thread": false,
       "platform_sequence_id": 52
     },
     {
-      "sequence_id": 113,
+      "sequence_id": 116,
       "sns_platform": "threads",
+      "code": "DUKe4kFklIf",
       "full_text": "Claude Code 쓰시는 분들,\n\noh-my-claudecode (OMC) 한번 써보세요.\n\n배울 거 없습니다. 설치하고 바로 씁니다.\n\n주요 기능:\n- Autopilot: 완전 자율 실행\n- Ultrapilot: 3-5배 빠른 병렬 처리\n- Ecomode: 토큰 30-50% 절약\n- 32개 전문 에이전트 + 31개 스킬\n\n설치:\n/plugin marketplace add https://github.com/Yeachan-Heo/oh-my-claudecode\n/plugin install oh-my-claudecode\n/oh-my-claudecode:omc-setup\n\nMIT 라이센스. 오픈소스.\n\nGitHub: https://github.com/Yeachan-Heo/oh-my-claudecode",
       "media": [],
       "crawled_at": "2026-02-12T19:04:58.816",
-      "code": "DUKe4kFklIf",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUKe4kFklIf",
       "user": "bellman.pub",
       "timestamp": "2026-01-31 14:44:51",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 53
     },
     {
-      "sequence_id": 114,
+      "sequence_id": 117,
+      "platform_id": "DUQf51ekbqu",
       "sns_platform": "threads",
+      "code": "DUQf51ekbqu",
+      "username": "mega_fluke",
+      "display_name": "Make Engineer Great Again",
+      "full_text": "(이 레포가 필요한 이유 = 안 쓰면 나중에 고생함)\n일단 아무것도 모르고 시작해도 AI가 땡깡피우는 걸 \n방지하는 가이드라인이랄까요..\n그리고 oh-my-ag 와 잘 맞게 설계돼있어서 같이쓰시면 AI가 헛소리를 좀 덜하는걸 보실거에요\n추가로..\nBun 기반의 속도와 Pic2Cook 같은 실제 프로젝트를 돌리며 검증된 아키텍처입니다 '_'\n\n다시한번 감사합니다🙇‍♂️\n\n스레드 좋아요보다 깃 스타가 더좋아요..! ⭐️🤤\nhttps://github.com/first-fluke/fullstack-starter",
+      "media": [],
+      "url": "https://www.threads.net/@mega_fluke/post/DUQf51ekbqu",
+      "created_at": "2026-02-02 22:49:12",
+      "date": "2026-02-02",
+      "crawled_at": "2026-02-12T19:04:58.816",
+      "source": "network",
+      "is_detail_collected": true,
+      "is_merged_thread": false,
+      "root_code": "DUQf51ekbqu",
+      "like_count": 6,
+      "reply_count": 0,
+      "repost_count": 1,
+      "quote_count": 0,
+      "pk": "3823696397510752942",
+      "media_type": 19,
+      "content_type": "image",
+      "platform_sequence_id": 54
+    },
+    {
+      "sequence_id": 118,
+      "sns_platform": "threads",
+      "code": "DUQf50aEXFZ",
       "full_text": "oh-my-ag 에 공감 많이해주셔서 감사합니다🙇‍♂️\n\n그래서 \n바이브코딩으로 시작 하시는분들 \n개발자분들 모두에게 도움될만한걸 가져왔어요. \n\n프로젝트 하나시작하려면 세팅만 한세월 걸리는데\n웹 풀스택 ~ flutter 기반 모바일까지 딸깍 할수있는걸\n들고왔습니다. \n(사실 이미 공유했는데 설명도 대충하고 oh-my-ag에 묻혀서 아무도모르시는듯..)\n속는셈치고라도 써보시면 빠른세팅에 기분이좋아질거에요..\n\n---\n\n새 프로젝트 시작할 때마다 auth, DB, infra 처음부터 세팅하는거 지긋지긋해서 만들었습니다.\n그냥 AI한테 맡기자니 뭐 슬롯머신도아니고 \n구조도 없는 개판된 코드보면 속터져서 \nAI 에이전트 부려먹기좋은 구조로 만들었고 잘 쓰고있습니다.\n\n---\n\n(이 레포가 필요한 이유 = 안 쓰면 나중에 고생함)\n일단 아무것도 모르고 시작해도 AI가 땡깡피우는 걸 \n방지하는 가이드라인이랄까요..\n그리고 oh-my-ag 와 잘 맞게 설계돼있어서 같이쓰시면 AI가 헛소리를 좀 덜하는걸 보실거에요\n추가로..\nBun 기반의 속도와 Pic2Cook 같은 실제 프로젝트를 돌리며 검증된 아키텍처입니다 '_'\n\n다시한번 감사합니다🙇‍♂️\n\n스레드 좋아요보다 깃 스타가 더좋아요..! ⭐️🤤\nhttps://github.com/first-fluke/fullstack-starter",
       "media": [],
       "crawled_at": "2026-02-12T19:04:58.816",
-      "code": "DUQf50aEXFZ",
+      "is_merged_thread": true,
       "root_code": "DUQf51ekbqu",
       "user": "mega_fluke",
       "timestamp": "2026-02-02 22:49:12",
-      "is_merged_thread": true,
       "original_item_count": 3,
       "platform_sequence_id": 54
     },
     {
-      "sequence_id": 115,
+      "sequence_id": 119,
       "platform_id": "DUQT-dageiP",
       "sns_platform": "threads",
+      "code": "DUQT-dageiP",
       "username": "yeoamlog",
       "display_name": "나날의 여암(與巖)",
       "full_text": "ㅎㅎ notion api도 있어서 mcp서버에 보시면 있어요! 그거 연동해서, 옵시디언(로컬), 노션(공유용 혹은 위키용)으로 병렬적으로도 다뤄볼 수 있어요 :)",
@@ -2222,6 +2325,7 @@
       "date": "2026-02-02",
       "crawled_at": "2026-02-12T19:04:58.817",
       "source": "network",
+      "is_merged_thread": false,
       "root_code": "DUQT-dageiP",
       "like_count": 2,
       "reply_count": 1,
@@ -2230,13 +2334,38 @@
       "pk": "3823643938712053903",
       "media_type": 19,
       "content_type": "image",
-      "code": "DUQT-dageiP",
-      "is_merged_thread": false,
       "platform_sequence_id": 55
     },
     {
-      "sequence_id": 116,
+      "sequence_id": 120,
+      "platform_id": "DUQeA6CDzDP",
       "sns_platform": "threads",
+      "code": "DUQeA6CDzDP",
+      "username": "stormleehj",
+      "display_name": "율이파파",
+      "full_text": "이모카님이 아래 댓글도 달아주셨는데 이것도 괜찮은 것 같아요!",
+      "media": [],
+      "url": "https://www.threads.net/@stormleehj/post/DUQeA6CDzDP",
+      "created_at": "2026-02-02 22:32:42",
+      "date": "2026-02-02",
+      "crawled_at": "2026-02-12T19:05:01.844",
+      "source": "network",
+      "is_detail_collected": true,
+      "is_merged_thread": false,
+      "root_code": "DUQeA6CDzDP",
+      "like_count": 4,
+      "reply_count": 0,
+      "repost_count": 0,
+      "quote_count": 0,
+      "pk": "3823688087344459983",
+      "media_type": 19,
+      "content_type": "image",
+      "platform_sequence_id": 56
+    },
+    {
+      "sequence_id": 121,
+      "sns_platform": "threads",
+      "code": "DUQTVuyD1V9",
       "full_text": "뭔가는 하고 있는데 체계적인 기록은\n귀찮아서 잘 못하는 저는 요새 이렇게 합니다.\n\n\"안티그라비티 + 옵시디언\"\n\n요새는 안티그라비티에서 주로 작업하는데\n그 안에서 오고 간 채팅 이력과 커밋 기록들을\n일자별로 알아서 정리해 달라고 합니다.\n\n최근에서야 옵시디언을 써보면서 알게 된 건데\n로컬 폴더 구조라 안티그라비티와 연결하기도 편하고\ngit으로 관리할 수 있다는 장점도 있는데요.\n\n노션도 좋지만 노션 AI까지 쓰기에 부담이면\n안티그라비티+옵시디언도 꽤 괜찮은 조합인 것 같습니다.",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/626940334_17898037686390131_2661196741215569048_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMjE2MHgxMjkxLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2QGlgmbeq3H2JzF_zpRShN3BL-ldmoJRtpomYdufxKggf14yZwshvD6Co3jatao3BJY&_nc_ohc=QY1egmj2C8QQ7kNvwEa1AHc&_nc_gid=iiWTNTQM1YHQYN8GRLCNoQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMzY0MTEzOTg2MjI2MzE2NQ%3D%3D.3-ccb7-5&oh=00_AfvpjcN_2XNb91qIRreMYaEHdZQyGa93ER2pb3kbNJbkRQ&oe=699AF236&_nc_sid=10d13b"
@@ -2245,18 +2374,18 @@
       "local_images": [
         "web_viewer/images/9397392fcf41cb537e4e8a050130f2ac.jpg"
       ],
-      "code": "DUQTVuyD1V9",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUQeA6CDzDP",
       "user": "stormleehj",
       "timestamp": "2026-02-02 20:59:25",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 56
     },
     {
-      "sequence_id": 117,
+      "sequence_id": 122,
       "sns_platform": "threads",
+      "code": "DUPuqTXk-f3",
       "full_text": "메모는 쌓이는데… 회고/리서치/회의록 정리는 왜 늘 막막할까?\n해답은 의외로 간단함 : Obsidian(기록) + Antigravity(대화형 정리) 조합. ✍️🧠\n\n🔗 출처\nhttps://productivitylabkr.blogspot.com/2026/01/obsidian-antigravity-2025.htm\n\n---\n\n핵심은 이거 하나임.\nObsidian은 ‘재료’를 쌓고, Antigravity는 그걸로 ‘의미’를 뽑아준다.\n(메모 → 통찰 → 정리된 결과물)\n\n---\n\n회고는 “잘 쓰는 글”이 아니라 패턴 찾기더라.\nObsidian에 1년치 기록(일지/업무/생각) 모아두고,\nAntigravity로 “왜 이 선택을 했지? 무엇이 반복되지?” 캐묻기 → 인사이트가 나옴.\n\n---\n\n리서치도 똑같아.\nObsidian에 자료 요약/발췌 쌓고 → Antigravity에 던지면\n핵심 주장 / 반론 / 적용 아이디어 / 리스크 / 다음 실험까지 한 번에 정리됨.\n“읽는 것”이 “기획”으로 바뀌는 느낌.\n\n---\n\n주간회의록은 템플릿이 답.\nObsidian에 안건 / 결정 / 액션아이템 / 리스크로 기록하고,\nAntigravity로 “이번 주 최우선 3개, 병목, 다음 회의 아젠다” 뽑으면\n회의록이 그냥 기록이 아니라 운영 문서가 됨.\n\n---\n\n한 줄 결론: 기록은 Obsidian, 정리는 Antigravity, 결과는 다시 Obsidian.\n이 루프가 돌아가기 시작하면 회고/리서치/회의가 전부 “자산화”됨.\n\n#Obsidian #Antigravity #회고 #주간리뷰 #회의록 #리서치 #생산성",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/626159219_17905849848346172_4803262835911302318_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNTUyeDk4OS5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QGpX8JoaTMpDBcmx-wa1irQ8_gPIV_3isFS52WIxgTYhQ7Et8oc2dAQvKDWnjyx5cs&_nc_ohc=BHwjCcQ5Ze4Q7kNvwHiYunk&_nc_gid=noeAgnWfunlF_FQBXbtEAw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMzQ3OTgyNTgxNTAzNzk0Mw%3D%3D.3-ccb7-5&oh=00_Afu3sLOzosk8LJ24SBfZQ_eCc5CjDDvaJvUe5GS-LNf3gA&oe=699AE85E&_nc_sid=10d13b"
@@ -2265,19 +2394,19 @@
       "local_images": [
         "web_viewer/images/7193bc9db522549e7174604090286e93.webp"
       ],
-      "code": "DUPuqTXk-f3",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUPuqTXk-f3",
       "user": "proverbsnapshots",
       "timestamp": "2026-02-02 15:38:55",
-      "is_merged_thread": true,
       "original_item_count": 6,
-      "is_detail_collected": true,
       "platform_sequence_id": 57
     },
     {
-      "sequence_id": 118,
+      "sequence_id": 123,
       "platform_id": "DUQqrL-k6dQ",
       "sns_platform": "threads",
+      "code": "DUQqrL-k6dQ",
       "username": "proverbsnapshots",
       "display_name": "proverbsnapshots",
       "full_text": "notebooklm 과 연결까지 하면 더 좋습니다.\nhttps://productivitylabkr.blogspot.com/2026/02/antigravity-notebooklm-mcp-ai.html",
@@ -2287,6 +2416,7 @@
       "date": "2026-02-03",
       "crawled_at": "2026-02-12T19:05:01.844",
       "source": "network",
+      "is_merged_thread": false,
       "root_code": "DUQqrL-k6dQ",
       "like_count": 2,
       "reply_count": 1,
@@ -2295,43 +2425,42 @@
       "pk": "3823743769389541200",
       "media_type": 19,
       "content_type": "image",
-      "code": "DUQqrL-k6dQ",
-      "is_merged_thread": false,
       "platform_sequence_id": 58
     },
     {
-      "sequence_id": 119,
+      "sequence_id": 124,
       "sns_platform": "threads",
+      "code": "DUOKKcfj4wK",
       "full_text": "25년 프롬프트: OO 주제로 PPT 만들어줘\n\n26년 프롬프트: \nClaude Code나 안티그래비티용 PPT 자동생성 시스템 만들어줘.\n프로젝트 구조(.claude/skills/, dev/active/, templates/, output/), \nCLAUDE.md, skill-rules.json, \nhooks(자동 스킬 활성화, 품질 체크) 자동 셋업 스크립트 작성.\n\nppt-creator, content-analyzer 스킬(각 500줄 이하 메인 + resources/로 분리), strategic-ppt-architect/ppt-design-specialist/quality-reviewer 에이전트, \n/ppt-plan /ppt-create 슬래시 커맨드 구현.\n\n참고자료 분석 → 목차 생성 → \ndev docs 작성(plan/context/tasks) → 단계별 PPT 제작 워크플로우 포함.\n\n---\n\n1. Skills (스킬)\n- 무엇? Claude가 참고하는 \"작업 매뉴얼\"\n- 왜 필요? 일관된 품질/패턴으로 작업하게 만듦\n- 예시: ppt-creator 스킬 = \"PPT 만들 때 이렇게 해라\"는 가이드\n\n2. Hooks (훅)\n- 무엇? 특정 시점에 자동 실행되는 체크 시스템\n- 왜 필요? Claude가 실수/누락 없이 작업하도록 감시\n- 예시: 파일 수정 후 자동으로 에러 체크, 스킬 자동 활성화\n\n3. Agents (에이전트)\n- 무엇? 특정 역할만 하는 전문 Claude 분신\n- 왜 필요? 복잡한 작업을 역할별로 나눠서 처리\n- 예시: strategic-ppt-architect = 기획만, quality-reviewer = 검토만\n\n---\n\n4. Dev Docs (개발 문서)\n- 무엇? 작업 계획/진행상황을 기록하는 3개 파일 (plan/context/tasks)\n- 왜 필요? Claude가 긴 작업 중 \"뭐하고 있었지?\" 안 까먹게\n- 예시: 대화 끊겨도 문서 보고 이어서 작업 가능\n\n5. Slash Commands (슬래시 명령어)\n- 무엇? /ppt-plan 같은 단축 명령어\n- 왜 필요? 긴 프롬프트 매번 안 쓰고 한 줄로 실행\n- 예시: /ppt-create → 전체 PPT 생성 워크플로우 자동 실행\n\n6. skill-rules.json\n- 무엇? \"이런 단어 나오면 이 스킬 켜라\" 규칙 모음\n- 왜 필요? 사용자가 말 안 해도 Claude가 알아서 적절한 스킬 사용\n- 예시: \"PPT 만들어\" → 자동으로 ppt-creator 스킬 활성화",
       "media": [],
       "crawled_at": "2026-02-12T19:05:04.874",
-      "code": "DUOKKcfj4wK",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUOKKcfj4wK",
       "user": "marketer.ai.seulki",
       "timestamp": "2026-02-02 01:00:45",
-      "is_merged_thread": true,
       "original_item_count": 3,
-      "is_detail_collected": true,
       "platform_sequence_id": 60
     },
     {
-      "sequence_id": 120,
+      "sequence_id": 125,
       "sns_platform": "threads",
+      "code": "DUPcmH7EZJc",
       "full_text": "소신 발언함.\n현 시점 기준 코딩을 위해 Antigravity를 아직 쓸 필요는 없다.\nAntigravity는 일단 너무 무겁다. 이게 가장 큰 단점이다.\n같은 내용을 빌드하고 테스트를 돌리더라도\nVSCode + Claude Code 조합이 2~3배는 빠르게 작동한다.\nAntigravity + Gemini Pro 조합도 답답할 때가 정말 많다.\n좋은 프롬프트를 사용해도 성능이 60~70% 정도밖에 안나오는 느낌이다.",
       "media": [],
       "crawled_at": "2026-02-12T19:05:04.874",
-      "code": "DUPcmH7EZJc",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUPcmH7EZJc",
       "user": "silsangv",
       "timestamp": "2026-02-02 13:01:03",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 61
     },
     {
-      "sequence_id": 121,
+      "sequence_id": 126,
       "sns_platform": "threads",
+      "code": "DUPzLiCEusg",
       "full_text": "상위노출은 글 잘 쓰는 사람이 아니라\n로직 읽는 사람이 먹는 거임\n\n네이버는 문장력 안 봐\n구조만 봐\n그래서 내가 먹고 사는 거임\n\n우리 스하리 하자 내가 욕 먹을 각오로 싹 다 알려줄게ㅋㅋ",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/624615543_17869284159542008_4500932766895150195_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMjE2MHgxMTc4LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QEIQSPYyfZYmKPNCO8ibbLMxQJtlvFkh6PAGz56vPdYMp0j2pZCxeV2fHpdWrM5WLg&_nc_ohc=LO0iGrtNZ6oQ7kNvwE0Ck-e&_nc_gid=fOcIXkf2pive1pyp5tsIZg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMzQ5OTcwMTQ4OTE2NzEzNg%3D%3D.3-ccb7-5&oh=00_AftyejxSisOIVlPzePHgXVi_JY2vlceGkhh_EHLJKLaqvw&oe=699AFE69&_nc_sid=10d13b"
@@ -2340,18 +2469,18 @@
       "local_images": [
         "web_viewer/images/eb41b7989de8568b645392216ee8db2e.jpg"
       ],
-      "code": "DUPzLiCEusg",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUPzLiCEusg",
       "user": "bibi_blog_world",
       "timestamp": "2026-02-02 16:18:24",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 62
     },
     {
-      "sequence_id": 122,
+      "sequence_id": 127,
       "sns_platform": "threads",
+      "code": "DUOV38Dktnd",
       "full_text": "초기창업패키지 문서를 ai로 작성해 보았다. 작성은 2초정도, 내용준비는 (몇달? ) 걸린듯하다. \n\nClaude code로 hwpx 한글 문서작업 하기,\n코난샘의 자료와 pywhpx, hwp mcp 자료와 몇몇분의 성공 자료를 보다가 시도 해보았는데,\n잘된다, 요령을 json정리하면 더좋타\n낼은  좀더 빠르게 되도록 해봐야겟다. \n\n사용법:1. Claude code를 킨다 2.  jkf87 hwp mcp + pyhwpx 라이브러리를 다운받고 참조해서 hwp한글 문서에 런타임으로 내용을 채워넣는 스킬과 작업이 되게 해줘. 라고 친다 4. Jkf87 을 참조해서 표, 테이블, 양식 참조해서 기능 업뎃해줘 라고 한다,\n이제 문서작업을 다음과 같이 한다\n 1. 제작할 양식을 준비한다 2. 양식의 작성 목록에 따라 내용을 준비한다 ai로.  4. Claude code에 양식×내용 파일주고 hwp스킬 써서 내용을 양식파일을 열고 내용 채워줘 한다, 5. 10분 기다린다. 끝\n\n---\n\n추가사항으로 jkf는 표와 테이블 내용 파일만 넣는게 좋타 다른 컴퓨터에 시도했더니jkf의  mcp로 틀어서 권한 문제가 발생한다. Jkf는 제외 하고 그냥 손수 표와 테이블 내용을 넣는것을 한번더 일려주는게 좋은듯하다",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/624719553_786540461139482_3263514594194989674_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDM0NC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QEa84813KUT22iUoIty2UxGiJ3gEOVggB7kIu2dfv6qBoYSU6tDs_rTkjXRr67Q5sQ&_nc_ohc=fFwGW6pQJYAQ7kNvwHCQ6xA&_nc_gid=I-cH-zd3fM0oftkf5HFN5w&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMzA4OTMzNjcxNjU0ODU3Mw%3D%3D.3-ccb7-5&oh=00_Afv-kYOvZgvV5K8nic-Y3usmOwQ0cB0Q0-VkvaXEkCXRmw&oe=699AD943&_nc_sid=10d13b"
@@ -2360,33 +2489,59 @@
       "local_images": [
         "web_viewer/images/a33b61c2245e9bea6684b065d8961242.jpg"
       ],
-      "code": "DUOV38Dktnd",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUOV38Dktnd",
       "user": "meteorsimulation",
       "timestamp": "2026-02-02 02:43:22",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 63
     },
     {
-      "sequence_id": 123,
+      "sequence_id": 128,
+      "platform_id": "DULCfk1EqLV",
       "sns_platform": "threads",
-      "full_text": "개발 초보 고수들에게..\n\n개발 개꿀팁 하나 더 줄게 ㅋㅋ\n이거 완전 대박이야 ㅋ\n\nAi한테 뭐 새로 만들어달라고 할때\n기획을 3번 업그레이드 해달라고해",
+      "code": "DULCfk1EqLV",
+      "username": "starcomo",
+      "display_name": "jude님🥑 외 58.4K",
+      "full_text": "아니 조금 버전3까지 3번 기획을 업그레이드해줘 이런느낌으로 구체적으로 얘기해줘야돼 다 하고나서\n각 버전별로 업그레이드 된 부분 요약해서 알려줘 해봐 ㅋ",
       "media": [],
+      "url": "https://www.threads.net/@starcomo/post/DULCfk1EqLV",
+      "created_at": "2026-01-31 19:56:01",
+      "date": "2026-01-31",
       "crawled_at": "2026-02-12T19:05:04.880",
-      "code": "DUK7uIXkklz",
-      "root_code": "DULCfk1EqLV",
-      "user": "starcomo",
-      "timestamp": "2026-01-31 18:56:50",
-      "is_merged_thread": true,
-      "original_item_count": 1,
+      "source": "network",
       "is_detail_collected": true,
+      "is_merged_thread": false,
+      "root_code": "DULCfk1EqLV",
+      "like_count": 1,
+      "reply_count": 0,
+      "repost_count": 0,
+      "quote_count": 0,
+      "pk": "3822159674695918293",
+      "media_type": 19,
+      "content_type": "image",
       "platform_sequence_id": 64
     },
     {
-      "sequence_id": 124,
+      "sequence_id": 129,
       "sns_platform": "threads",
+      "code": "DUK7uIXkklz",
+      "full_text": "개발 초보 고수들에게..\n\n개발 개꿀팁 하나 더 줄게 ㅋㅋ\n이거 완전 대박이야 ㅋ\n\nAi한테 뭐 새로 만들어달라고 할때\n기획을 3번 업그레이드 해달라고해",
+      "media": [],
+      "crawled_at": "2026-02-12T19:05:04.880",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DULCfk1EqLV",
+      "user": "starcomo",
+      "timestamp": "2026-01-31 18:56:50",
+      "original_item_count": 1,
+      "platform_sequence_id": 64
+    },
+    {
+      "sequence_id": 130,
+      "sns_platform": "threads",
+      "code": "DUKUnJ3kciv",
       "full_text": "에이전트를 오래 + 잘 돌리기 위한 컨텍스트 관리 미세팁 4개 (+ 참고자료 12개)\n\n(블로그에서 보시려면: https://www.stdy.blog/small-tips-for-context-mgmt/)\n\n최근 [정보 수집 - 스펙 작성 - 스펙 리뷰 - 구현 - 코드 리뷰 - 회고 - PR 작성]을 한큐에 진행하는 저만의 하네스를 만들어, 열심히 테스트하며 개선하고 있습니다. 아직까지는 만족스러운데 조만간 한계에 부딪히면 다른 유명한 하네스를 참고하려고 해요.\n\n랄프 플러그인처럼 무한루프를 도는 건 아니지만 전체 다 돌면 보통 몇십분 이상 걸리는데 당연히 컨텍스트 문제가 있습니다. 그래서 이참에 롱-러닝 에이전트의 컨텍스트 관리에 도움이 되는 미세팁을 4개 뽑아봤어요. \n\n참고로 저도 잘 알아서 쓰는 게 아니라 공부하려고 이런 글 쓰는 거니 자나깨나 환각 조심하시길!\n\n---\n\n1. 최초 로드되는 컨텍스트 최소화\n\n최상위 AGENTS[.]md는 무조건 로드되니 less is more, progressive disclosure 원칙에 따라 꾸준히 압축하고 리팩토링합니다. MCP 도구 정의도 매번 컨텍스트에 올라가므로 정말 필요할 때만 켭니다.\n\n2. 모델이 할 필요 없는 일은 스크립트로\n\nAPI 호출, 포맷 변환, 린터 등 결정론적인 알고리즘으로 더 빠르고 정확한 결과를 낼 수 있는 일들이 많습니다. MCP도 의외로 쉽게 대체할 수 있고요. 스킬에 이런 스크립트를 패키징해두고, 모델은 실행만 하면 되게끔 합니다.\n\n---\n\n3. 서브에이전트로 핸드오프 + 파일로 맥락 전달\n\n병렬로/독립적으로 돌릴 수 있는(돌리면 좋은) 작업들은 적극적으로 위임하여 메인 오케스트레이터의 컨텍스트를 아낍니다. 어쩔 수 없는 compact 이후나 핸드오프 시 맥락이 잘 전달되도록, '이 파일 하나만 읽으면 다음에는 뭘 왜 해야 하는지, 뭘 주의해야 하는지 알 수 있음' 같은 계획/작업 상태/교훈이 담긴 파일을 잘 관리합니다.\n\n4. 회고하며 개선 반복\n\n작업 과정에서의 교훈을 읽고, 비효율적이거나 의도대로 동작하지 않았던 순간들을 에이전트와 함께 회고합니다. 내 프롬프팅 습관, 하네스 구조, 코드베이스 구조, AGENTS[.]md 등에서 개선점을 찾아 반영하고 다시 실험합니다.\n\n---\n\n더 알아보고 싶은 분들을 위한 참고자료들\n\n위 팁들을 더 깊이 파고 싶거나, 직접 하네스를 만들 때 참고할 만한 링크를  Anthropic과 Vercel의 공식 엔지니어링 블로그 위주로 골라봤습니다.\n\nhttps://www.stdy.blog/small-tips-for-context-mgmt/ 의 아래쪽에 있습니다.",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/625045838_17885918580430725_3132654991651588975_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTEwOHgxNDg2LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QG0tAm_ttopa6oMsjbTU5Nli8j7TiQmRtP4UFAIbuiz6yqRwUTTGVAqQ0ipmr4rLXU&_nc_ohc=UbBrflPpLtIQ7kNvwHZEn3u&_nc_gid=C8KllxLodH_Cg5LbMJ1ONA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMTk1Nzk2Mjk3NDQ1NDA5Mg%3D%3D.3-ccb7-5&oh=00_AfumNJxmmxIstzIuqjCKEKAl8Ztd4tCYWNTyWnhs0MKm8A&oe=699B0C4C&_nc_sid=10d13b"
@@ -2395,18 +2550,18 @@
       "local_images": [
         "web_viewer/images/5dd309078e2585f1793ddfa6a45ff06f.jpg"
       ],
-      "code": "DUKUnJ3kciv",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUKUnJ3kciv",
       "user": "steady__study.dev",
       "timestamp": "2026-01-31 13:15:05",
-      "is_merged_thread": true,
       "original_item_count": 4,
-      "is_detail_collected": true,
       "platform_sequence_id": 66
     },
     {
-      "sequence_id": 125,
+      "sequence_id": 131,
       "sns_platform": "threads",
+      "code": "DULSOOKE3XD",
       "full_text": "강의실습용 엑셀파일 300개가 필요하다.\n\"ㅇㅇ주제 강의에 사용할 엑셀파일 300개 만들어줘\"\nAntigravity가 10초만에 만들어준다.\n\nAI 없던 시절에는 이거 만드느라 수십분 걸렸는데...\n(물론 파이썬 스크립트를 짜서 만들어서 수십분이지, 직접 300개 만들면 2박3일 걸림)",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/624964817_17871945819515204_4831505319967273020_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMjQ3MHg4NDAuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QFuk2SD7niixp8d48WhydLH9K5hU6IOubHRpMWD1B93go5QZ1k6uoF-p2Kal9AkML4&_nc_ohc=3MjoDsguVJsQ7kNvwH0RWKJ&_nc_gid=T9A-yEct0AqQtCUD4csSWQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMjIyODg1MDg2NTMwNTAyNw%3D%3D.3-ccb7-5&oh=00_AfvP__wN75mrVbsAG5uF84n0g8J9dcwhgyqAwBWhfUFlPA&oe=699AD761&_nc_sid=10d13b"
@@ -2415,19 +2570,19 @@
       "local_images": [
         "web_viewer/images/e42d1081ca578c65ce7191d6838471e7.jpg"
       ],
-      "code": "DULSOOKE3XD",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DULSOOKE3XD",
       "user": "yun_ja_dong",
       "timestamp": "2026-01-31 22:13:27",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 67
     },
     {
-      "sequence_id": 126,
+      "sequence_id": 132,
       "platform_id": "DUG6cYok5Qr",
       "sns_platform": "threads",
+      "code": "DUG6cYok5Qr",
       "username": "guuu.dev",
       "display_name": "IamGuuu",
       "full_text": "moltbot(clawdbot) 두 대를 한 방에 넣고 킥오프를 진행했다.\n사실 봇들 끼린 서로의 메시지를 감지할 순 없다.\n하지만 내가 서로의 메시지를 중재할 순 있다.\n\n일 시키기가 편해졌다.\n\n그나저나 얘들은 내가 페르소나를 지정한적이 없는데 왜이리 서로 다를까??",
@@ -2448,6 +2603,7 @@
         "web_viewer/images/0249374285aad9e686d93a10bbe7d1e7.webp",
         "web_viewer/images/42457b30139790ff3177ef1ccee20249.webp"
       ],
+      "is_merged_thread": false,
       "root_code": "DUG6cYok5Qr",
       "like_count": 37,
       "reply_count": 13,
@@ -2456,13 +2612,12 @@
       "pk": "3820998371164001323",
       "media_type": 8,
       "content_type": "carousel",
-      "code": "DUG6cYok5Qr",
-      "is_merged_thread": false,
       "platform_sequence_id": 68
     },
     {
-      "sequence_id": 127,
+      "sequence_id": 133,
       "sns_platform": "threads",
+      "code": "DUKIm4EkqEo",
       "full_text": "26년 개발하는 방법이 완벽하게 바뀌었다\n\n채팅방을 여러개로 나눠 각각 프로젝트에 채팅으로 요청하면,\nAi 비서들이 원격으로 코드를 수정해준다\n\n이제.. 다시는 이전으로 돌아갈 수 없다\n\n겨울이었다..",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/624406708_17910686241319820_1054229237633226066_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTA4MHgxODE3LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHs-we8uwKEOwPjdT76KGytsbNr734ScSBuG4zJObCAsNoRZKI1J6Z2DI4gzyzssDM&_nc_ohc=B5VFkPYH9ZYQ7kNvwH1aFCI&_nc_gid=eVO282ddQXjmdlxFdOU0lw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMTkwMzkwODM3MDAzNjg5Ng%3D%3D.3-ccb7-5&oh=00_AfuNqqK2JbDnHVUedm6T5uNC5Ez4jMDoXqieg6dEg2S2Qw&oe=699AF230&_nc_sid=10d13b"
@@ -2471,18 +2626,44 @@
       "local_images": [
         "web_viewer/images/aebba3e553297d5a0ec3d773b582748a.webp"
       ],
-      "code": "DUKIm4EkqEo",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUKIm4EkqEo",
       "user": "starcomo",
       "timestamp": "2026-01-31 11:30:12",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 69
     },
     {
-      "sequence_id": 128,
+      "sequence_id": 134,
+      "platform_id": "DUKPfu1Aa6T",
       "sns_platform": "threads",
+      "code": "DUKPfu1Aa6T",
+      "username": "hinjiroffffff",
+      "display_name": "흰지로의 오답노트",
+      "full_text": "1. vidiQ\n→ 감이 아닌 데이터로 유튜브 트렌드를 읽으세요. 내 분야에서 현재 어떤 주제의 조회수가 잘 나오는지 알 수 있어요.",
+      "media": [],
+      "url": "https://www.threads.net/@hinjiroffffff/post/DUKPfu1Aa6T",
+      "created_at": "2026-01-31 12:30:23",
+      "date": "2026-01-31",
+      "crawled_at": "2026-02-12T19:05:07.898",
+      "source": "network",
+      "is_detail_collected": true,
+      "is_merged_thread": false,
+      "root_code": "DUKPfu1Aa6T",
+      "like_count": 36,
+      "reply_count": 1,
+      "repost_count": 0,
+      "quote_count": 0,
+      "pk": "3821935385060159123",
+      "media_type": 19,
+      "content_type": "image",
+      "platform_sequence_id": 70
+    },
+    {
+      "sequence_id": 135,
+      "sns_platform": "threads",
+      "code": "DUKPelTgSau",
       "full_text": "유튜버에게 필요한 확장 프로그램을 정리했습니다.\n알아내는데 300일이 걸렸지만, 여러분은 바로 사용하세요.\n\n---\n\n1. vidiQ\n→ 감이 아닌 데이터로 유튜브 트렌드를 읽으세요. 내 분야에서 현재 어떤 주제의 조회수가 잘 나오는지 알 수 있어요.\n\n---\n\n2. Youtube Summary\n→ 영상의 대본을 바로 추출할 수 있어요. 가장 중요한 대본 초반 10초를 보고 공부해보세요.\n\n---\n\n3. Thumbs up, thumbnail preview\n→ 클릭률을 높일 수 있어요. 내 썸네일이 실제 유튜브 홈 화면에서 어떻게 보이는지 미리 확인할 수 있거든요.\n\n---\n\n4. Screenshot youtube\n→ 클릭 한 번으로 유튜브 화면을 캡쳐할 수 있어요. 깔끔하게 잘려서 자주 사용 중이에요.\n\n---\n\n5. Ostendo\n→ 참고하고 싶은 썸네일이 있나요? 클릭 한 번으로 썸네일을 다운로드, 복사 할 수 있어요.\n\n---\n\n매우 만족하면서 사용 중인 프로그램들이에요.\n저장하고 꼭 사용해보시는 것을 추쳔드릴게요!\n\n저를 팔로우 하시고, 다른 글도 읽어보세요.\n유튜버라면 도움이 될 글을 쓰고 있어요 🫶",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/622333521_17875428201496844_2982730392352590154_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTQ2N3gzNTcuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QEl9qHqZ_hDQ-ZuPgKPdAqa4DpCZeMFoFYMMY5Ui5_HusKC2bZ_wx6p1O0M5IUJ2-c&_nc_ohc=UouPty3_CmsQ7kNvwHVkg3M&_nc_gid=xMF7vz0qgVHvPNvxOupFnQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMTkzNTMwNjExNDkzNDQ0Ng%3D%3D.3-ccb7-5&oh=00_Aft7KTWs1jG23-se7EhX7Yy3VXlvQXOfahd70_o4Tz0f5Q&oe=699B05AA&_nc_sid=10d13b"
@@ -2491,19 +2672,19 @@
       "local_images": [
         "web_viewer/images/bed9eb7c48cb6a885d5cbf5dd248d008.jpg"
       ],
-      "code": "DUKPelTgSau",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUKPfu1Aa6T",
       "user": "hinjiroffffff",
       "timestamp": "2026-01-31 12:30:14",
-      "is_merged_thread": true,
       "original_item_count": 7,
-      "is_detail_collected": true,
       "platform_sequence_id": 70
     },
     {
-      "sequence_id": 129,
+      "sequence_id": 136,
       "platform_id": "DUJ_3Mlj0ID",
       "sns_platform": "threads",
+      "code": "DUJ_3Mlj0ID",
       "username": "jvisualschool",
       "display_name": "Jinho Jung",
       "full_text": "정답을 알려줄게. 간단해.\n오늘부터 100개의 앱을 만들어.\n그리고 100개의 앱을 멋지게 보여줄 포트폴리오 사이트를 만들어.\n그리고 이 사이트를 어떻게 만들었는지 \n자세하게 과정을 기록하는 블로그를 만들어\n모든 코드는 github에 올려.\n할 수 있겠어?\n형도 지금 매일  하고있다.\nhttps://jvibeschool.org/GALLERY/",
@@ -2513,6 +2694,7 @@
       "date": "2026-01-31",
       "crawled_at": "2026-02-12T19:05:10.927",
       "source": "network",
+      "is_merged_thread": false,
       "root_code": "DUJ_3Mlj0ID",
       "like_count": 59,
       "reply_count": 1,
@@ -2521,13 +2703,12 @@
       "pk": "3821866628817043971",
       "media_type": 19,
       "content_type": "image",
-      "code": "DUJ_3Mlj0ID",
-      "is_merged_thread": false,
       "platform_sequence_id": 72
     },
     {
-      "sequence_id": 130,
+      "sequence_id": 137,
       "sns_platform": "threads",
+      "code": "DUK7AjFDxeH",
       "full_text": "혼자서 100명 규모 팀을 운영하고 있어요.\n\n직원 수: 0명\nAI 에이전트: 100개+\n\n금융팀, 마케팅팀, 개발팀, 보안팀...\n17개 부서가 Claude Code 안에 있습니다.\n\n3개월간 구축한 과정 공유할게요\n\n---\n\n2/ 금융/비즈니스팀\n\nDCF 밸류에이션? 10분\nVaR 리스크 분석? 자동\n스타트업 재무 모델링? 템플릿화\n연례 보고서 분석? PDF 던지면 끝\n\n투자자 미팅 전날 밤샘하던 시절...\n이제 그런 거 없어요.\n\n금융 전공 아니어도 됩니다.\n\n---\n\n3/12 마케팅팀\n\n멀티채널 캠페인 기획\n경쟁사 광고 크롤링 + 분석\nSEO 키워드 최적화\n콜드메일 자동 생성\n\n\"마케터 뽑아야 하나요?\"\n\n아니요. 스킬 7개면 됩니다.\n진짜로요.\n\n---\n\n4/ 콘텐츠팀\n\n하나의 아이디어로:\n→ SEO 블로그 포스트\n→ 유튜브 스크립트 + 썸네일\n→ SNS 스레드\n→ 뉴스레터\n\n전부 자동 생성돼요.\n\n콘텐츠 마케터 월급 = 500만원\nClaude Code Max = 월 20만원\n\n25배 차이.\n\n---\n\n5/ 시장조사 & PM\n\nTAM/SAM/SOM 자동 계산\n경쟁사 분석 리포트\nPRD 초안 작성\nRICE 우선순위 결정\n\nVC 미팅에서 \"시장 규모요?\"\n\n\"잠시만요\" → 10분 후 리포트 완성\n\n실제로 이렇게 씁니다.\n\n---\n\n6/ 개발팀 (스킬 20개)\n\nTDD 강제 워크플로우\n코드 리뷰 자동화\n디버깅 전략 제안\n의존성 업그레이드\n빌드 에러 자동 수정\n\n\"시니어 개발자 구합니다\"\n\n아니요.\n시니어급 에이전트 20개 있습니다.\n\n---\n\n7/ Git 워크플로우\n\n컨벤션 맞춘 커밋 메시지\nPR 자동 생성 + 설명\nWorktree로 병렬 개발\n충돌? AI가 해결\n\n\"Git 잘 모르는데...\"\n\n몰라도 됩니다.\nAI가 다 해줘요.\n\n진입장벽 = 0\n\n---\n\n8/ 데이터팀\n\nFRED 경제 데이터 실시간 조회\nPlotly 인터랙티브 차트\nPostgreSQL 쿼리 최적화\n대시보드 자동 생성\n\n데이터 엔지니어 연봉: 8000만원+\n\n이 스킬들: 무료\n\nROI 계산 필요 없죠?\n\n---\n\n9/ 미디어 & AI\n\nMotion Canvas로 프로그래밍 영상\nRemotion 베스트 프랙티스\n컴퓨터 비전 파이프라인\n패턴 자동 학습\n\n유튜브 영상도 코드로 만들어요.\n\nAfter Effects 배울 필요 없음.\nReact 쓰면 됨.\n\n---\n\n10/ 보안팀\n\nSTRIDE 위협 모델링\nSOC 2 컴플라이언스 체크\n코드 보안 자동 리뷰\n취약점 스캔\n\n\"보안 전문가 비용이...\"\n\n스킬 3개로 엔터프라이즈 수준.\n\n스타트업에 보안팀이 왜 필요해요?\n\n---\n\n11/ 그 외 자동화\n\n이력서 자동 생성 (JSON → PDF)\n사업계획서 초안\n팀 구성 분석\n아키텍처 패턴 적용\n\nHR, 기획, 설계...\n전부 스킬로 대체 가능해요.\n\n\"그래서 총 몇 개요?\"\n\n100개+, 17개 카테고리\n\n---\n\n12/ 시작하기\n\n이걸 어떻게 만들었냐고요?\n\n3개월 걸렸습니다.\n삽질도 많이 했고요.\n\n근데 여러분은 안 해도 됩니다.\n\nSingularity Builders에서\n구축 방법 전부 공개해요.\n\n강의 신청: https://qjc.app/singularity-builders\n\n1인 기업의 새로운 기준.\nClaude Code로 시작하세요.",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/624545065_17918709093251799_43220795885815886_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uOTQ2eDY5MC5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QE8pyih1OX5sHFeSbAfjOJuibiFy4w4bJboJETftWZ-hjX0gCNPjHAN-kJFjF3wpSc&_nc_ohc=GoSeTfr8ABkQ7kNvwHdPeUb&_nc_gid=DCytrKlvbNfzti5QSS3CIA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMjEyNjc1NjE4NzI4MTI4Nw%3D%3D.3-ccb7-5&oh=00_AfuPs9gH9opP7X5HHa9PP0jU2RR_pIzrk6pgE9thd7_hpA&oe=699AE61B&_nc_sid=10d13b"
@@ -2536,18 +2717,18 @@
       "local_images": [
         "web_viewer/images/eb90a1d18ff5871811166f61225813a5.jpg"
       ],
-      "code": "DUK7AjFDxeH",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUK7AjFDxeH",
       "user": "qjc.ai",
       "timestamp": "2026-01-31 18:50:36",
-      "is_merged_thread": true,
       "original_item_count": 12,
-      "is_detail_collected": true,
       "platform_sequence_id": 73
     },
     {
-      "sequence_id": 131,
+      "sequence_id": 138,
       "sns_platform": "threads",
+      "code": "DUK66UNE-rX",
       "full_text": "opal에서 이미지 생성 노드 1개로 여러 이미지를 만들 수 있는지 테스트해봤습니다.\n\n혼자 며칠 밤을 돌려봤는데, 어떤 때는 되고 어떤 때는 안 되더라고요.\n\n그러다 AI가 만들어준 노드들에서 <input_name>...</input_name> 구조를 발견했고, 그대로 적용해서 테스트해보니 가능했습니다.\n\n체감상 한 번에 8장 정도는 오류 없이 만들어주는 것 같아요.\n(노드 1개 = 나노바나나 1개라고 생각하면 20장&30장 뽑을 때는 텍스트 노드와 이미지 노드를 1:1로 매칭해서 개별로 돌리는 구조)\n\n@ryan.choi.jj 도움 주셔서 감사합니다😀\n\n결론은, 공식 문서를 잘 읽고 답을 찾아가자\n고구마 10개 먹고 사이다 마신 느낌입니다.",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/624090842_17913189069296861_1421618806707735385_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTQwM3g1NjEuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QGzjBh1pnYGwHvDvmUJyRJfhAIe8Z_i8g-dBNmIPATkmFfArC8rApMp9Tlz8Xv7brM&_nc_ohc=dz6fvpY2B54Q7kNvwH1DI9I&_nc_gid=occ1Ps1uv_PTJBBlzhboYw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMjEyNjMyMDcwOTc1MDg2NA%3D%3D.3-ccb7-5&oh=00_AftyCskAjQc4nkR0Ma_gHLXShmDFckFxk_5zRsaJ9Cw1sA&oe=699AFBB6&_nc_sid=10d13b"
@@ -2556,18 +2737,18 @@
       "local_images": [
         "web_viewer/images/a5fa3163917b5c58d7daaedea660b42e.jpg"
       ],
-      "code": "DUK66UNE-rX",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUK66UNE-rX",
       "user": "opal.gongbang",
       "timestamp": "2026-01-31 18:49:45",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 74
     },
     {
-      "sequence_id": 132,
+      "sequence_id": 139,
       "sns_platform": "threads",
+      "code": "DUJ1km1kkNt",
       "full_text": "[github 공개]\n네이버 블로그 자동 포스팅(브랜드커넥트)\n알려 달라고 하시는 분들이 많아 코드 공개합니다.\n\n비개발자 분들은 사용하시기 어려울 수 있는데, \n설치 가이드 촘촘하게 적어놨으니... 시도해보고 어려우면 디엠주세요.\n\nGitHub 오픈소스로 공개 👇\nhttps://github.com/Daewooki/naver-bc-automation\n\n브랜드 커넥트 상품 링크 복사하고 발행 버튼 클릭.\n→ GPT가 SEO 최적화 글 작성\n→ 상품 이미지 자동 스크래핑\n→ 해시태그 자동 생성\n→ 발행까지 자동\n\n완전 자동화 소스는 제 에이전트 개발 노하우가 들어가있기 때문에 반자동 소스만 올렸습니다..\n완전 자동화 소스도 기회가 되면 공개하겠습니다.\n\n주말인데 한번 다들 해보십쇼! 😎😊\n\n#네이버블로그 #블로그자동화 #자동화\n\n---\n\n가이드를 최대한 쉽게.. 적으려고 노력했습니다.\nhttps://github.com/Daewooki/naver-bc-automation/blob/main/GUIDE.md",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/624208241_1759907988302254_6776253762779549075_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uNjQweDQ1MC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QHDlMWwnktOLqUISVHcwHpxf6BT7kp1BMpkdSkzyIR0cQe9wltr4wRtjqPap95Zq2g&_nc_ohc=FZ4kWjb0iN8Q7kNvwH0E_1r&_nc_gid=4M5u3ZB0WjRnUiEl4LrdlQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMTgyMTM2NDE5ODg3NzM0MQ%3D%3D.3-ccb7-5&oh=00_AfviLcRoWfzPCOb5nS_yRltg52cNstL_MshRXrm6qfEJlQ&oe=699AF4A7&_nc_sid=10d13b",
@@ -2578,19 +2759,19 @@
         "web_viewer/images/50e2098dba5fc076c9be5b06698af14f.jpg",
         "web_viewer/images/ecde76d423930b3f127ec5564a21f99f.jpg"
       ],
-      "code": "DUJ1km1kkNt",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUJ1km1kkNt",
       "user": "build_daemon",
       "timestamp": "2026-01-31 08:43:52",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 75
     },
     {
-      "sequence_id": 133,
+      "sequence_id": 140,
       "platform_id": "DUK59b8ia4D",
       "sns_platform": "threads",
+      "code": "DUK59b8ia4D",
       "username": "seokki.yoon07",
       "display_name": "Seok-ki Yoon",
       "full_text": "이세돌 님도 정확히 똑같은 이야기를 했어요. AI가 도입되니 실력이 평준화 될 줄 알았는데.. 오히려 하위랭커랑 상위랭커의 차이가 더 벌어지드라..",
@@ -2600,6 +2781,7 @@
       "date": "2026-01-31",
       "crawled_at": "2026-02-12T19:05:10.934",
       "source": "network",
+      "is_merged_thread": false,
       "root_code": "DUK59b8ia4D",
       "like_count": 15,
       "reply_count": 0,
@@ -2608,13 +2790,12 @@
       "pk": "3822122144323186179",
       "media_type": 19,
       "content_type": "image",
-      "code": "DUK59b8ia4D",
-      "is_merged_thread": false,
       "platform_sequence_id": 76
     },
     {
-      "sequence_id": 134,
+      "sequence_id": 141,
       "sns_platform": "threads",
+      "code": "DUIXT33Essv",
       "full_text": "Vercel이 코딩 에이전트를 위한 \"AGENTS.md\"가 \"Skills\"보다 훨씬 강력하다는 실험 결과를 공개했습니다.\n\n실험 결과, \"AGENTS.md\"에 8KB 크기의 압축된 문서 인덱스를 넣어두면 코딩 테스트 통과율이 100%를 찍은반면, 필요할 때 문서를 불러오는 \"Skill\" 방식은 에이전트가 호출 자체를 까먹거나(56% 미호출), 호출해도 순서가 꼬여 최대 79% 성공률에 그쳤습니다.\n\nVercel은 아예 npx @next/codemod@canary agents-md 명령어 한 줄로 프로젝트 버전에 맞는 문서를 자동으로 심어주는 기능을 출시했습니다.\n\nSkills는 마이그레이션처럼 특정 작업이 필요할 때만 쓰고, 평소 코딩 효율을 극대화하려면 무조건 AGENTS.md를 써야 한다는 게 결론입니다.\n\n---\n\n블로그 :\nhttps://vercel.com/blog/agents-md-outperforms-skills-in-our-agent-evals",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/623477300_17940767397112832_4821857169434135039_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTkyMHgxMDU0LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QFS0tg7rQJoFu0cvP4Ip8PBlbLCeuy8XG08hhNu9XplpnhYs7KJICSInmjx84cEy_w&_nc_ohc=euGYQ8W4vmkQ7kNvwF-EQLV&_nc_gid=iZvZgHaa-R2wjc9kFOPYDg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMTQwNjgwNDU0MzQ1ODA5NQ%3D%3D.3-ccb7-5&oh=00_AftsXGlGvmScrlQU7tLreblHu8wFtg3T9uF0mqpHp8yDMw&oe=699B061A&_nc_sid=10d13b"
@@ -2623,18 +2804,18 @@
       "local_images": [
         "web_viewer/images/3b302f3ac89c8e110fef53d7c4dc6c0e.jpg"
       ],
-      "code": "DUIXT33Essv",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUIXT33Essv",
       "user": "choi.openai",
       "timestamp": "2026-01-30 19:00:11",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 77
     },
     {
-      "sequence_id": 135,
+      "sequence_id": 142,
       "sns_platform": "threads",
+      "code": "DTugejAgHNF",
       "full_text": "📢AI시대! 정부지원사업 합격 전략을 알려드립니다📢\n\nAI로 정부지원사업 합격하는법 알려드릴게요😎\n\n🔥2월 5일 목요일 저녁 8시🔥\n\n✅ 이런 분께 추천합니다\n - 정부지원사업에 도전했지만 왜 떨어졌는지 명확히 모르겠는 분\n - 사업계획서는 쓰고 있지만 심사 기준이 보이지 않는 분\n - 아이디어가 아니라 ‘될 사업’의 구조를 만들고 싶은 분\n - 정부지원사업을 운에 맡기지 않고 전략적으로 준비하고 싶은 분\n - AI를 활용해 사업 구조·검증·정리를 효율화하고 싶은 분\n\n🎇전액 무료 온라인 세미나!🎇\n \n😊지금 바로 신청하세요😊",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/617600078_747045358447916_4330508066662758449_n.png?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6ImFkc19pbWFnZSJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QFSLsNKZf7M8vNl-h4mZAVsDW7lBgMyQQjzzN8I8mBukHlUqNKj2AumPFi9CFFd9X0&_nc_ohc=n_VhAghiGVMQ7kNvwHBOSDj&_nc_gid=6H_xUJ6ZKz09pTfgVf0n-A&edm=APs17CUBAAAA&ccb=7-5&oh=00_Afsx1bI9yMmTDnuWW08YIXBK6rPQhoLFF6AFNuFCKvLNpQ&oe=699AF0C4&_nc_sid=10d13b"
@@ -2643,18 +2824,18 @@
       "local_images": [
         "web_viewer/images/b4731eac414b6435f075f7ff995045be.png"
       ],
-      "code": "DTugejAgHNF",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTugejAgHNF",
       "user": "oz_coding_school",
       "timestamp": "2026-01-20 18:00:02",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 78
     },
     {
-      "sequence_id": 136,
+      "sequence_id": 143,
       "sns_platform": "threads",
+      "code": "DUFkzGvAa6T",
       "full_text": "유튜브 롱폼 링크만 넣으면, 쇼츠 10개로 잘라줍니다.\nGemini가 초 단위로 영상을 분석해 쇼츠 구간을 찾아줍니다.\n쇼츠로 자를 타이밍을 아주 정확히 알고 있었습니다.\n\n밀린 쇼츠를 찍어낼 수 있는 프롬프트를 정리했습니다.\n\n---\n\n1. 쇼츠 올인원 프롬프트\n→ 당신은 조회수 100만 회 이상의 영상을 수백 개 만들어낸 전문 쇼츠 기획자입니다. 아래 첨부한 유튜브 링크를 분석해서 떡상할 쇼츠 구간 5개를 추출해 주세요.\n\n[요청 사항]\n1. 타임라인: [시작-종료] 시간을 초 단위로 정확하게 짚어주세요.\n2. 후킹 전략: 시청자가 3초 안에 스크롤을 멈출 수밖에 없는 강력한 임팩트가 있는 지점을 최우선으로 골라주세요.\n3. 제목 제안: 각 구간마다 클릭을 부르는 강력하고 자극적인 제목을 3개씩 제안해 주세요.\n4. 기획 의도: 왜 이 구간이 쇼츠로 터질 수밖에 없는지 전문가적 관점에서 이유를 짧게 설명해 주세요.\n5. 포맷: 가독성 좋게 표(Table) 형식으로 정리해 주세요.\n\n---\n\n2. 자를 타이밍만 알아도 작업은 5분 만에 끝납니다.\n→ 쇼츠 제작이 힘든 이유는 '어디를 잘라야 할지' 고민하는 시간 때문이에요. Gemini가 문맥을 읽고 초 단위로 타이밍을 알려줍니다. 그 구간만 자르면 쇼츠 한 편이 만들어집니다. 저였어도 자를 것 같은 타이밍을 정확히 짚어줬어요.\n\n---\n\n3. 제목 고민까지 완벽하게 해결해 줍니다\n→ 쇼츠 화면 중앙에 어떤 카피를 넣을지 고민하는 것도 일입니다. AI가 영상의 핵심을 파악해 클릭률을 높여주는 카피도 추천해줍니다. 1시간짜리 롱폼에서 쇼츠 10개를 뽑는 데 이제 5분이면 충분합니다.\n\n---\n\n4. 유튜브는 시스템입니다\n→ 유튜버에게 시간은 한정되어 있습니다. AI에게 위임할 수 있는 작업은 맡기고, 여러분은 다음 영상 기획에 집중하세요. 정말 저만 알고 싶었던 방법, 여러분에게도 공유드렸어요.\n\n저를 팔로우 하시고, 다른 글도 읽어보세요.\n더 많은 시간을 줄일 수 있을거에요! 🫶\n\n@hinjiroffffff",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/624490414_1564397221336116_7037512293009858320_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDM3Ni5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QGCal4kPhPS-r1VEEvVKF9OTUd1C_4mQvm4CIG3hDKD-sb3oZUwfN-Ha8X0tQKvdNQ&_nc_ohc=Ku5xHpDgJtMQ7kNvwHnY4Mk&_nc_gid=DeO0Ie7xZDZSqLwqFLi6cQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMDYyMTcwMDQ5MjUzNzQ5MQ%3D%3D.3-ccb7-5&oh=00_Afs47xAnPwsRmbSa6PpJYBlTKYiOogFywiwIAVFdH060RA&oe=699AFF68&_nc_sid=10d13b"
@@ -2663,48 +2844,48 @@
       "local_images": [
         "web_viewer/images/f361bed5e4260516e51cb0db70dc17c1.jpg"
       ],
-      "code": "DUFkzGvAa6T",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUFkzGvAa6T",
       "user": "hinjiroffffff",
       "timestamp": "2026-01-29 17:00:20",
-      "is_merged_thread": true,
       "original_item_count": 5,
-      "is_detail_collected": true,
       "platform_sequence_id": 79
     },
     {
-      "sequence_id": 137,
+      "sequence_id": 144,
       "sns_platform": "threads",
+      "code": "DUIDj9vgeRU",
       "full_text": "스레드의 핵심은 이렇습니다.\n후킹 한 줄 -> 압축 본론 3~4줄 -> 교훈 1~2줄\n\n제 글 구조만 봐도 이렇게 되어있어요.\n그냥 적기만 하면 잘 안 터져요.\n\n구조와 압축이 없기 때문입니다.\n스레드에서는 \n'짧고 굵게 때리기'가 중요해요.",
       "media": [],
       "crawled_at": "2026-02-12T19:05:13.957",
-      "code": "DUIDj9vgeRU",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUIDj9vgeRU",
       "user": "super_writer12",
       "timestamp": "2026-01-30 16:07:38",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 80
     },
     {
-      "sequence_id": 138,
+      "sequence_id": 145,
       "sns_platform": "threads",
+      "code": "DUGYenoEnPR",
       "full_text": "pencil.dev 이거 정말 물건이네요.\n\n개발자 입장에서 디자이너가 작업한 디자인을 figma 를 열고 dev mode 로 들어가서 코드 확인하고 프론트엔드 개발을 할텐데 이걸 사용하려면 돈을 내야 합니다.\n\n- 디자인 하면 코드로, 코드로 하면 디자인으로 양방향 워크플로우가 가능.\n\n- 디자이너는 pencil 전용 툴로 디자인할 수 있고, 이걸 파일로 내보내기 할 수 있어요.\n\n- 개발자는 IDE 툴의 pencil 확장 플러그인을 설치해서 디자인 파일을 열 수 있습니다.\n\n- CLI, IDE, MCP 연동 다 됩니다. 연동만 해놓으면 알아서 디자인 해주거나 수정해주거나 React, Vue 전통적인 HTML, CSS 파일까지 다 알아서 만들어줘요.\n\n---\n\n저는 이걸로 작업 시간을 크게 줄였습니다. 오프라인에서 pencil 파일을 공유 받고, 에디터의 pencil 확장플러그인을 이용해 디자인을 불러오는 것이 가능해졌습니다.\n\n피그마는 무조건 온라인이라서 절대 불가능함.\n*.pen 파일만 있으면 디자인도 열 수 있음.\n\n피그마 어떡할거야... ㄷㄷ",
       "media": [],
       "crawled_at": "2026-02-12T19:05:13.957",
-      "code": "DUGYenoEnPR",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUGYenoEnPR",
       "user": "wmleee",
       "timestamp": "2026-01-30 00:31:55",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 81
     },
     {
-      "sequence_id": 139,
+      "sequence_id": 146,
       "sns_platform": "threads",
+      "code": "DUHGprsCrmE",
       "full_text": "출근길 쓰레드) 컨텍스트 오염은 반드시 관리해야 할 리스크다.\n(재난위기관리공학 복수전공자의 말이니 믿거나 말거나. 학사임.)\n\nAI한테 일 시키다 보면 이상한 순간이 온다.\n\n분명 처음엔 \"네, 알겠습니다. 프로젝트 룰 준수하겠습니다\" 하던 녀석이\n대화 좀 길어지니까 갑자기 딴소리를 한다.\n\n\"아 그거요? 뭐였더라... 일단 제 생각엔요~\"\n\n뭐? 니 생각? 내가 준 룰 따르라고 했잖아.\n\n이게 바로 '컨텍스트 오염'이다.\nAI의 기억력이 금붕어가 되는 현상.\n\n---\n\n최근 논문들 살펴보니 결론은 하나로 수렴한다.\n\n1. 컨텍스트가 길어지면 AI가 초심을 잃는다.\n2. 처음에 준 지시사항? 까먹는다.\n3. 프로젝트 룰? 슬슬 무시한다.\n4. 특정 길이 넘어가면 성능이 떡락한다.\n\n코딩하다 보면 체감된다.\n처음엔 칼같이 컨벤션 지키던 녀석이\n몇 시간 지나면 \"아 님 그건 좀...\" 하면서 제멋대로 짠다.\n\n야, 네가 언제부터 그랬어?\n\n해결책은 의외로 간단하다.\n\n\"메인 세션을 깨끗하게 유지하라.\"\n\n구체적으로는\n\n---\n\n메인 세션에서 직접 일 시키지 말고,\nCoordinator Task를 하나 띄운다.\n그 Coordinator가 Sub-Task들을 생성해서 각각 일을 시킨다.\n\n프로젝트 분석은 Task 1이,\n시놉시스는 Task 2가,\n캐릭터는 Task 3이,\n세계관은 Task 4가,\n플롯은 Task 5가,\n챕터는 Task 6이 담당한다.\n\n각 Task가 결과물 뱉으면 Coordinator가 수집하고,\n메인 세션에는 \"최종 요약 결과\"만 올라온다.\n\n중간 과정의 삽질? 메인 세션은 모른다.\nTask 하나가 실패해서 재시도? 메인 세션은 모른다.\n6개 Task가 쏟아낸 리뷰 상세 내용? 메인 세션은 모른다.\n\n메인 세션은 깔끔하게 결과만 받는다.\n마치 훌륭한 상사처럼. (이건 좀 슬프다)\n\n---\n\n클로드코드에서 이걸 쓰는 방법은 간단하다.\n\n\"단위가 큰 병렬 작업을 작은 단위로 MECE하게 분할하고,\n분할된 작업을 개별 task에서 실행해.\nContainer Task를 먼저 실행하고,\nContainer Task가 개별 task를 실행해서\n메인 컨텍스트 오염을 완전히 방지해.\"\n\n이 프롬프트면 된다. 물론 앞서 기획 작업이 다 끝났고, 특정 작업을 시킬 때 사용한다.\n\n이렇게 지시하면 AI가 알아서 구조를 짜고 분리해서 실행한다.\n\n---\n\n이렇게 하면 뭐가 좋으냐?\n\nauto compact가 터지기 전까지 훨씬 많은 작업이 가능하다.\n최초 설계 방향성이 흔들리지 않는다.\n\"야 아까 뭐라고 했냐?\"가 사라진다.\n\n(auto compact 때문에 클로드가 멍청해지는 것에 열받아 claude-memento 라는 오픈소스까지 만들었더랬다.)\n\nAI 기억력 탓하지 말고 구조로 해결하자.\n금붕어한테 긴 이야기 시키지 말고,\n짧은 심부름 여러 개 시키는 거다.\n\n- 클로드메멘토: https://github.com/claude-memento/claude-memento\n\n---\n\n\"근데 이거 너무 복잡하지 않아?\"\n\n써본 사람은 안다.\n오히려 나중에 문제 터졌을 때 디버깅이 쉽다.\n어느 Task에서 문제가 생겼는지 바로 보이니까.\n\n컨텍스트 오염 당해서\n\"어... 이거 왜 갑자기 이러지?\"\n하면서 대화 처음부터 다시 읽는 것보다 백배 낫다.\n\n---\n\n참고 자료 (논문 읽기 좋아하시는 분들께)\n\n- AI 에이전트 컨텍스트 연구: https://arxiv.org/abs/2601.16746\n- 클로드 코드 컨텍스트 논문: https://arxiv.org/abs/2601.10387 \n- Manus 컨텍스트 엔지니어링 블로그: https://manus.im/ko/blog/Context-Engineering-for-AI-Agents-Lessons-from-Building-Manus\n\n이거 NotebookLM에 밀어넣고 정리해서 보시는 거 추천\n\n---\n\n아 물론 아직 기술적으로 반영되어있지않아 기대하는 것과 다른 동작이 발생한다.\n\n지금은 서브에이전트를 이용하여 컨텍스트를 분리하는 형태로 이를 해결할 수 있다.",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/622087814_17856147471608942_6747036311821522185_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMzk0eDMwOS5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QEHNf3rfdJuEhkodzX7NCjhy7NEqVL4bvlhyzRx-DYVNBklnILhAaXeEW6BDjWa9-M&_nc_ohc=tHJQV9WoEOoQ7kNvwHjn3Lv&_nc_gid=GoNao0PFNheQKFTOfDWtEQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMTA1MjA2MTUzNDU2Njc4OA%3D%3D.3-ccb7-5&oh=00_Afum2GZ09SuW9oMSjjM5msCmvSdr8KbVoPDA3h4gRfPINg&oe=699AE2B0&_nc_sid=10d13b"
@@ -2713,18 +2894,18 @@
       "local_images": [
         "web_viewer/images/15b8f5e0386fd09a682c4c059214a500.jpg"
       ],
-      "code": "DUHGprsCrmE",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUHGprsCrmE",
       "user": "ody_daddy",
       "timestamp": "2026-01-30 07:15:23",
-      "is_merged_thread": true,
       "original_item_count": 8,
-      "is_detail_collected": true,
       "platform_sequence_id": 82
     },
     {
-      "sequence_id": 140,
+      "sequence_id": 147,
       "sns_platform": "threads",
+      "code": "DUIjrz2DkLv",
       "full_text": "제안서 작성, RFP 하나로 1분 만에 끝냈습니다\n\n대행사에서 제안서 하나 쓰려면\nRFP 분석하고, 시장 조사하고,\n기획 정리하고, 슬라이드 만들고...\n이게 며칠은 기본으로 걸리잖아요.\n\n그래서 이번에 클로드코드로\n입찰 경쟁 제안서 에이전트를 만들었습니다.\n\n프로세스는 딱 3단계입니다.\n① RFP 분석\n② 시장 현황 분석 및 상황 분석\n③ 제안서 작성\n\nRFP 파일 하나만 넣으면\n1분 이내에 제안서가 완성됩니다.\n\n현재 완성도는 70% 정도인데,\n조금만 더 보완하면\n\n90%는 에이전트가 만들고\n나머지 10%는 디자인 제작물 추가하고\n다듬는 정도로 제안서 하나를 완성할 수 있을 것 같습니다.\n\n제안서 쓰느라 며칠씩 야근하셨던 분들,\n이 과정 정리해서 유튜브로 공유할게요.\n\n필요하신 분은 댓글로 \"저요!\" 남겨주세요 🙌\n\n---\n\n다음주에 유튜브로 공유드릴게요!",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/622515711_4273920106163864_6107071979499730971_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDQ0MC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHoFmIN457tUVcGAbrsE5V17nuSCsY9B_RZlENNPLFQqYamz-yjyACGLk14shyehGk&_nc_ohc=4ExroTk9VlEQ7kNvwFOO7Pi&_nc_gid=lVVUu7PGUuoRL-spjOLDMQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMTQ2MTIyNjA1Njk5MTQ3MQ%3D%3D.3-ccb7-5&oh=00_AfuTyOrhZoMED2aa1DJHiaC6pJFsV9A1artjEGHCaydwYg&oe=699AF3B4&_nc_sid=10d13b"
@@ -2733,18 +2914,18 @@
       "local_images": [
         "web_viewer/images/29c32e57b563ce04dafd206456efe9c5.jpg"
       ],
-      "code": "DUIjrz2DkLv",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUIjrz2DkLv",
       "user": "kook0526",
       "timestamp": "2026-01-30 20:54:40",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 83
     },
     {
-      "sequence_id": 141,
+      "sequence_id": 148,
       "sns_platform": "threads",
+      "code": "DUGGMMmD-jS",
       "full_text": "https://github.com/moltbot/moltbot\n\nCrawdbot(다시 Moltbot)은 노다지가 맞네요. 브라우징(browsing) 기능만 개조해서 MCP를 만들어 봤는데, 지금까지 써본 그 어떤 브라우징 자동화보다 빨랐습니다.\n\n네이버 로그인이나 구글 검색 등 기존 Antigravity가 너무 느려 답답했던 부분들이 전부 해결되었습니다!\n\n작업 과정은 다음과 같습니다.\n\n---\n\n1. Gemini에게 Moltbot 코드베이스를 제공하고, 브라우징 관련 파일 목록 작성을 요청합니다.\n\n2. Moltbot 저장소를 Clone한 뒤, 위 파일 목록을 주면서,  Antigravity에게 이를 기반으로 한 Browsing skills 개발을 지시합니다.\n\n3. 네이버 로그인이나 구글 검색 등 까다로운 작업을 수행하게 하며 코드를 지속적으로 수정합니다.\n\n4. 이때 요소 ID 기반의 좌표 계산, 베지어 곡선 및 노이즈를 적용한 마우스 이동, 텍스트 복사/붙여넣기 활용, 헤드리스 모드 지양 등의 제약 조건을 추가하여 우회 성능을 높입니다.\n\n5. 몇 차례의 디버깅을 거쳐 최종적으로 스킬을 완성했습니다!",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/624509264_17872210689521221_1266861709758978837_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTEyNHg5MDQuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QFdlnvGuXNoRQWIbiDgW0FhboE2TpDh8NDTa8m2psFMRlIBOVzLviI3z64YhOEP4BQ&_nc_ohc=A5XFBXk5XeQQ7kNvwHbZdfS&_nc_gid=GQGoXSI0RNYp2ProownYFA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMDc2ODU1NjU0ODYxNDE2OA%3D%3D.3-ccb7-5&oh=00_AfuWm0wTuUDfFp97Fkqs-0FPCYBS4lhZKbguNPtz50eitA&oe=699AE6FE&_nc_sid=10d13b"
@@ -2753,33 +2934,33 @@
       "local_images": [
         "web_viewer/images/ef4bc395f36f7a88f1107e24d00e071a.jpg"
       ],
-      "code": "DUGGMMmD-jS",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUGGMMmD-jS",
       "user": "miniminim71",
       "timestamp": "2026-01-29 21:52:07",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 84
     },
     {
-      "sequence_id": 142,
+      "sequence_id": 149,
       "sns_platform": "threads",
+      "code": "DUHdfmjEizy",
       "full_text": "구글이 한국에\n월 11,000원짜리 AI Plus 요금제를 풀었어\n기존보다 50%이상 싼가격이야\n\n원래 Gemini Pro 쓰려면\n월 2만9천원이었잖아\n이게 1만1천원으로 내려왔어\n\n처음 두 달은 월 5,500원 커피 한 잔 값도 안돼..\n\n---\n\n들어가는 모델에도 \nGemini 3 Pro 이미지 최강이라는 Nano Banana Pro 영상 생성 Veo 3.1까지 포함된대\n\n그리고\nGoogle Drive, Gmail, Photos\n200GB 포함.\n가족 5명이랑 나눠 쓸 수도 있어\n\nOpenAI가 ChatGPT Go로\n저가 요금제 깔자\n구글이 바로 반값으로 받아친 느낌이야 우리 사용자들이야 너무 땡큐인 상황이지\n\n이제 AI는\n‘유료 툴’이 아니라\n‘기본 앱’으로 가는 단계 같아\n\n11,000원 가격이면 꽤 합리적인거 같은데\n 어떤거 같아??\n\n---\n\nGemini 5500원 구독링크\nhttps://gemini.google/kr/subscriptions/?hl=ko",
       "media": [],
       "crawled_at": "2026-02-12T19:05:13.972",
-      "code": "DUHdfmjEizy",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUHdfmjEizy",
       "user": "info__sum",
       "timestamp": "2026-01-30 10:34:59",
-      "is_merged_thread": true,
       "original_item_count": 3,
-      "is_detail_collected": true,
       "platform_sequence_id": 85
     },
     {
-      "sequence_id": 143,
+      "sequence_id": 150,
       "sns_platform": "threads",
+      "code": "DUIEGGAAagR",
       "full_text": "참고하고 싶은 유튜브 영상 링크를 \nGemini에게 전달하세요.\n\n그리고 이 프롬프트를 넣으면\n해당 영상을 분석하고 떡상한 이유를 모조리 추출합니다.\n\n유튜버가 바로 써먹을 수 있는 프롬프트를 정리했습니다.\n\n---\n\n1. 이탈 방지 프롬프트\n→ 시청지속시간을 높이는데 도움을 줍니다.\n\n---\n\n2. 청출어람 프롬프트\n→ 부족한 부분을 이해하고 더 나은 영상을 만듭니다.\n\n---\n\n3. 답변 퀄리티를 200% 높이는 방법\n→ 1번과 2번 프롬프트에서 지정한 페르소나가 다릅니다. 한 채팅창에서 물어보면 Ai가 혼동하고 답변의 퀄리티가 떨어집니다. 새로운 페이지를 열어 각 전문가를 따로 만난다는 생각으로 대화해주세요.\n\n---\n\n프롬프트 하나로 영상을 딸깍하고 만들 수 없습니다. '사람들이 왜 이 영상에서 반응했을까?'를 스스로 고민하고 학습하는 과정이 꼭 필요합니다. \n\n위 프롬프트는 참고하고 싶은 영상을 공부한다는 마음으로 사용해주시면 좋겠습니다. 다른 크리에이터가 열심히 만든 영상을 카피하기 위해 사용되지 않았으면 합니다.\n\n저를 팔로우 하시고, 다른 글도 읽어보세요.\n유튜버의 시행착오를 예방할 수 있을거예요 🫶\n\n@hinjiroffffff",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/623117433_1601476151307320_3689379256037291878_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDQxNC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QEGC_QFuXe5io2PYb7fyzgX6TSdUoPvPefik_msgpKZOxMaixUBhCL8lyGG9FTER9c&_nc_ohc=F0BDjrEaqXQQ7kNvwHS_Zb9&_nc_gid=yNb_OtgbxirlYnbl1SYpbQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMTMyMjI5NDc2OTMzMDE5Mw%3D%3D.3-ccb7-5&oh=00_AfsFishrHRbK2pLvyFAb1F8ZvirfTSB_pHI5uWvj_AZxrg&oe=699AEB23&_nc_sid=10d13b"
@@ -2788,33 +2969,33 @@
       "local_images": [
         "web_viewer/images/10a8ff57533b296a4729471bee77291b.jpg"
       ],
-      "code": "DUIEGGAAagR",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUIEGGAAagR",
       "user": "hinjiroffffff",
       "timestamp": "2026-01-30 16:12:56",
-      "is_merged_thread": true,
       "original_item_count": 5,
-      "is_detail_collected": true,
       "platform_sequence_id": 86
     },
     {
-      "sequence_id": 144,
+      "sequence_id": 151,
       "sns_platform": "threads",
+      "code": "DUHi67GEhVw",
       "full_text": "Claude 에서 공식 가이드로 배포한 프롬프트 작성 가이드입니다. 프로젝트에 첨부해두고 사용하면 됩니다. 효과적인 프롬프트를 위한 기본 원칙 6가지🔥\n\n---\n\n1. 명확하고 구체적으로 작성하라\n메시지의 처음에 해야 할 작업이나 질문을 분명히 적는다.\nAI가 상황을 이해할 수 있도록 배경과 세부 정보를 제공한다.\n복잡한 작업은 작은 단계로 나누어 요청한다.\n\n❌ 나쁜 프롬프트\n발표 자료 좀 도와줘.\n\n✅ 좋은 프롬프트\n분기별 영업 회의를 위한 10장짜리 발표 자료를 만들고 싶습니다.\nQ2 매출 성과, 베스트셀러 제품, Q3 매출 목표를 다뤄야 합니다.\n각 슬라이드별 핵심 포인트가 포함된 목차를 만들어 주세요.\n\n왜 좋은가?\n슬라이드 수, 목적, 다룰 주제가 모두 명확하여 AI가 정확히 이해할 수 있다.\n\n---\n\n2. 예시를 적극 활용하라\n원하는 출력 결과의 예시를 제공하라.\n특정 형식, 톤, 스타일이 있다면 반드시 보여줘라.\n❌ 나쁜 프롬프트\n전문적인 이메일 써줘.\n\n✅ 좋은 프롬프트\n프로젝트 지연에 대해 고객에게 보내는 전문적인 이메일이 필요합니다.\n이전에 보냈던 유사한 이메일은 아래와 같습니다.\n\n[이메일 예시 본문]\n\n이 이메일과 비슷한 톤과 구조로,\n공급망 문제로 인해 한 달 지연된 현재 상황에 맞게 새 이메일을 작성해 주세요.\n\n왜 좋은가?\nAI가 참고할 수 있는 구체적인 기준점을 제공한다.\n\n---\n\n3. 사고 과정을 유도하라\n복잡한 문제는\n“단계별로 생각해 주세요”, “이유를 설명해 주세요” 라고 요청하라.\n결과의 정확성과 깊이가 크게 향상된다.\n❌ 나쁜 프롬프트\n팀 생산성 높이는 방법 알려줘.\n\n✅ 좋은 프롬프트\n팀 생산성을 개선하고 싶습니다.\n아래 항목을 기준으로 단계별로 생각해 주세요.\n\n1. 현재 생산성을 막는 요소\n2. 가능한 해결책\n3. 실행 시 예상되는 어려움\n4. 개선 효과를 측정하는 방법\n\n각 단계마다 이유를 간단히 설명하고,\n마지막에 전체 요약을 해 주세요.\n\n---\n\n4. 반복 수정(Iterative Refinement)을 활용하라\n첫 결과가 마음에 들지 않으면 구체적으로 수정 요청하라.\n“더 좋게” 같은 추상적 표현은 피한다.\n❌ 나쁜 프롬프트\n좀 더 좋게 만들어줘.\n\n✅ 좋은 프롬프트\n방향은 좋습니다. 아래처럼 수정해 주세요.\n\n1. 톤을 더 캐주얼하고 친근하게\n2. 실제 고객 사례 1개 추가\n3. 두 번째 문단은 기능 설명보다 장점 위주로 짧게\n\n왜 좋은가?\nAI가 사용자의 “좋음” 기준을 정확히 이해할 수 있다.\n\n---\n\n5. Claude의 지식을 적극 활용하라\n배경 설명이나 전문 지식을 주저하지 말고 요청하라.\n반드시 사용 목적과 맥락을 함께 제공하라.\n❌ 나쁜 프롬프트\n마케팅이 뭐야? 어떻게 해?\n\n✅ 좋은 프롬프트\n친환경 세정제 브랜드의 마케팅 전략을 준비 중입니다.\n최근 그린 마케팅 트렌드를 정리해 주세요.\n\n포함해 주세요:\n1. 친환경 소비자에게 효과적인 메시지 전략\n2. 적합한 마케팅 채널\n3. 최근 1년간 성공 사례\n4. 주의해야 할 함정(그린워싱 등)\n\n---\n\n6. 역할(Role-playing)을 지정하라\nAI에게 특정 역할이나 관점을 부여하면 결과의 밀도가 높아진다.\n❌ 나쁜 프롬프트\n협상 준비 도와줘.\n\n✅ 좋은 프롬프트\n당신은 제 가방 제조사에 원단을 공급하는 공급업체입니다.\n저는 가격을 10% 낮추고 싶습니다.\n\n공급업체 입장에서:\n1. 예상되는 반대 의견 3가지\n2. 각 반대에 대한 제 입장의 대응 논리\n3. 가격 인하 대신 제안할 수 있는 대안 2가지\n\n그 후 역할을 바꿔,\n구매자인 제가 협상을 성공시키는 전략을 조언해 주세요.",
       "media": [],
       "crawled_at": "2026-02-12T19:05:13.972",
-      "code": "DUHi67GEhVw",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUHi67GEhVw",
       "user": "redbearhbj",
       "timestamp": "2026-01-30 11:22:24",
-      "is_merged_thread": true,
       "original_item_count": 7,
-      "is_detail_collected": true,
       "platform_sequence_id": 87
     },
     {
-      "sequence_id": 145,
+      "sequence_id": 152,
       "sns_platform": "threads",
+      "code": "DUHJvgwE8QV",
       "full_text": "칼럼 쉽게 쓰는 비결\n병원 홍보팀 일할 때 내 별멍은\n\"칼럼 공장\"이었어. 칼럼 찍는 기계였지.\n1년에 1천편 넘게 썼으니까.\n그 비결 알려줄게.\n\n---\n\n글은 구조적인 관점으로 접근해야 해.\n3단 구성(서론-본론-결론)이 가장 대중적이지.\n외에도 여러 가지 4단/5단 구성을 배운 뒤\n한 편의 글을 다양하게 재조립해보면\n구조를 빠르게 익힐 수 있어.\n​\n챗지피티를 활용하더라도\n구조를 학습시키면 결과물 퀄리티가 달라져.\n막연하게 '이런 내용으로 써줘' 해서는\n양질의 칼럼을 뽑아내기 힘들어.\n\n---\n\n이미지 예시 : 중소기업기술정보진흥원 강의 중.\n\n특히 기고문의 경우도\n정책 설명, 기관 자랑, 사고 처리, 요구 전달, 관심사항 표현 등 다양한 목적에 따라 구조를 적용하면 쉽게 쓸 수 있지.",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/524583563_17885077023340690_2861240656786204023_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uOTY2eDU0My5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QEdM252ZJ5cWfUybHnX4R5f044BDZBVZLCu1eG0FcO_CXvg90495to11si-l3d0BTo&_nc_ohc=ufHu5SBZs0gQ7kNvwH_Kqmx&_nc_gid=2No-PSHebS0nvvCiALlhiQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMTA2NTY1NjI0NzUwMTg0NQ%3D%3D.3-ccb7-5&oh=00_AfvRCuUdRygroo1OqO5yc-e7lAw8dAv1FPj8Om3zG1kcHA&oe=699AFF26&_nc_sid=10d13b"
@@ -2823,19 +3004,19 @@
       "local_images": [
         "web_viewer/images/8ff4c85f5dd10d4c5e79fcb89cb05cec.webp"
       ],
-      "code": "DUHJvgwE8QV",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUHJvgwE8QV",
       "user": "c.reator_c",
       "timestamp": "2026-01-30 07:42:23",
-      "is_merged_thread": true,
       "original_item_count": 3,
-      "is_detail_collected": true,
       "platform_sequence_id": 88
     },
     {
-      "sequence_id": 146,
+      "sequence_id": 153,
       "platform_id": "DUIde6ZE-Zy",
       "sns_platform": "threads",
+      "code": "DUIde6ZE-Zy",
       "username": "guuu.dev",
       "display_name": "IamGuuu",
       "full_text": "대부분의 사람들은 Local LLM을 쓸 이유가 없어!\n\nLocal LLM 때문에 맥 미니나 그래픽카드 사서 돌려볼까 고민하는 사람들 꽤 있을 거야 🤔\n근데 솔직히 말하면, 대부분은 결국 포기하게 돼.\nGPT-OSS 120B 모델을 꽤 미친 듯이 써본 입장에서\n왜 그런지 한 번 정리해볼게.",
@@ -2850,6 +3031,7 @@
       "local_images": [
         "web_viewer/images/f6aaeaf70f83c2bc8aa04f0a11c3cc96.webp"
       ],
+      "is_merged_thread": false,
       "root_code": "DUIde6ZE-Zy",
       "like_count": 45,
       "reply_count": 33,
@@ -2858,13 +3040,12 @@
       "pk": "3821433951454750322",
       "media_type": 1,
       "content_type": "image",
-      "code": "DUIde6ZE-Zy",
-      "is_merged_thread": false,
       "platform_sequence_id": 89
     },
     {
-      "sequence_id": 147,
+      "sequence_id": 154,
       "sns_platform": "threads",
+      "code": "DUIOybmEiic",
       "full_text": "10년 차 시니어 개발자에게 들은 '모니터 설정'부터 바꾸는 이유\n\n매일 12시간씩 코딩하는 개발자들은 경험적으로 '눈이 덜 피로한 환경'을 세팅할 줄 안다\n\n연봉 1억 넘는 시니어 개발자들 책상을 보면 브랜드는 다 달라도 '모니터 설정값'은 비슷하다\n\n당장 오늘 밤에 이 5가지만 따라 해도 눈의 뻑뻑함이 절반으로 줄어든다고 생각한다. 돈 안 드는 항목이 대부분이니, 속는 셈 치고 설정창 한번 켜보시길.\n\n---\n\nIT 고인물들의 눈 보호 모니터 세팅 5\n\n1. 밝기 기준은 무조건 'A4 용지'다\n모니터 밝기 100%로 쓰는 건 눈에 플래시 켜고 사는 거랑 같다. 지금 모니터 옆에 '흰색 A4 용지'를 한 장 대봐라. 종이의 흰색과 화면의 흰색 밝기가 비슷해질 때까지 밝기를 낮춰야 한다. 주변광과 화면 밝기를 일치시키는 게 미국 안과학회(AAO)가 권장하는 눈 피로 감소 1원칙이다.\n\n2. 색온도는 '따뜻하게(Warm)\n쨍하고 파란 화면이 선명해 보이지만, 망막에는 타격감이 제일 크다. 디자이너가 아니라면 색온도를 '따뜻함'이나 '6500K 이하'로 낮춰라. 아이폰의 '트루톤', 윈도우의 '야간 모드'는 장식이 아니다. 청색광(Blue Light)을 줄여야 수면 호르몬이 나와서 눈이 회복된다. (하버드 의대 연구)\n\n---\n\n3. 모니터 상단은 '눈높이 아래'로 \n거북목 때문만이 아니다. 미국 산업안전보건청(OSHA) 매뉴얼에 따르면, 모니터 상단이 눈높이보다 15~20도 아래에 있어야 한다. 눈을 살짝 내리깔아야 눈꺼풀이 안구를 덮어서 눈물 증발량이 30% 감소한다.\n\n4. 텍스트 배율(Scale)은 '125%'부터\n젊은 개발자들도 27인치 모니터에서 글씨 작게 안 본다. 해상도는 높이되, '텍스트 배율'은 125%~150%로 키워라. 글씨가 작으면 수정체 근육이 초점 맞추느라 계속 긴장 상태가 된다. 글씨 키우면 오후 4시의 두통이 사라질 수 도 있다.\n\n5. 주사율(Hz)은 높을수록 눈이 편하다\n이건 게이머들이 더 잘 안다. 화면 스크롤 할 때 '잔상'이 없어야 뇌가 정보를 처리할 때 스트레스를 덜 받는다. 모니터 설정에서 '최대 주사율'로 되어 있는지 지금 확인해라.\n\n내 눈은 소모품이다. 아껴 쓰지 않으면 교체할 부품도 없다.\n\n---\n\n내 눈 증상, 어떻게 해결해야 할지 막막하신가요?\n\n헷갈리지 않게 프로필 콘탠츠에 정리해 뒀으니 확인하세요!😀\n\n---\n\n목에는 아시는데로 모니터를 높이는게 좋겠습니다!",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/624830517_17890100427416427_2766155216115550073_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMjE2MHgxMjY1LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QFZnf-eQJz2GzWpOQl82bdMGI7d2XTCgoNM_OQAhFD1nHWNVd07iRWCHG5MKCipvIo&_nc_ohc=1QEu20jalK4Q7kNvwHWxxFg&_nc_gid=NvexmhKqeZARdgY3N3REQw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMTM2OTMyMjA3ODYxMTYxMg%3D%3D.3-ccb7-5&oh=00_AfuD6_8NDkrAjOduU5SmuPcGUXmvTdWxgCSYTRYSUoOOxg&oe=699B0BFA&_nc_sid=10d13b"
@@ -2873,33 +3054,33 @@
       "local_images": [
         "web_viewer/images/4617382706abe959b859d8996657ac3d.jpg"
       ],
-      "code": "DUIOybmEiic",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUIOybmEiic",
       "user": "eyevision.lab",
       "timestamp": "2026-01-30 17:45:43",
-      "is_merged_thread": true,
       "original_item_count": 5,
-      "is_detail_collected": true,
       "platform_sequence_id": 90
     },
     {
-      "sequence_id": 148,
+      "sequence_id": 155,
       "sns_platform": "threads",
+      "code": "DUGJxoEkbWv",
       "full_text": "Claude Code 장기 기억 시스템 구축하기 \n\n문제: AI의 \"단기기억 상실\" \n\nClaude Code는 세션이 끝나면 모든 컨텍스트를 잃습니다. \n- 어제 뭘 했는지 모름 \n- 프로젝트 구조를 처음부터 다시 탐색 \n- 같은 실수 반복 \n\n긴 프로젝트에서 매번 \"지난번에 우리 뭐 했었는데...\"라고 설명하는 건 비효율적입니다. \n\n👌 해결책은? \n\n2파일 인수인계 시스템!",
       "media": [],
       "crawled_at": "2026-02-12T19:05:16.988",
-      "code": "DUGJxoEkbWv",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUGJxoEkbWv",
       "user": "planum.one",
       "timestamp": "2026-01-29 22:23:26",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 91
     },
     {
-      "sequence_id": 149,
+      "sequence_id": 156,
       "sns_platform": "threads",
+      "code": "DUGCUWLCUFc",
       "full_text": "난 요즘 이게 정말 궁금했어.\n\n처음에 안티그래비티 쓸 때는 \n신박한 놀랍고, 재밌고, 긍정적인 생각 뿐이었는데\n\n옵시디언에 노션까지 잘 연결해서 쓰던 어느날,\n노션이 안되더라구. n8n 연결도 안되고.\n\n안티그래비티는 계속 \"가능하다. 된다.\",\n\"이렇게 해보자. 저렇게 해보자.\" 그러는데, \n\n갑자기\n정신이 번쩍 들더라.\n\n---\n\n6개 대표 AI에게 심층모드로 분석을 요청했어. \n내가 고민하는 것을 중심으로 2개를 비교해달라고 했지. \n꽤 상세하게 썼던 거 같아. \n\n대부분 공통된 의견이었지만, 차이점도 있어서 아래 차이점을 정리해봤어.⠀⠀⠀⠀\n\n---\n\n그리고 6개 대표 AI의 공통된 의견을 보니, 답이 나오더라. \n바이브코딩을 할 거라면, 클로드코드를 외면할 수는 없겠어.\n그렇지만 안티그래비티도 외면할 수는 없을 거 같아. 그래서 나는.\n\n---\n\n둘 다 해보려구! 나랑 같은 목적으로 함께 공부하는 스친이 있으면 참 좋겠다!😊",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/625033874_17912305671279062_533169754929075828_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTgzNHgxMDI0LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QGiOWtQQ0URXZZUCHqsnJGVSKgTmVSvedhmLDm1YvBd08TIKEV2O5sRKkYdLXRmDiQ&_nc_ohc=h1uoN09LCVoQ7kNvwEY3a5H&_nc_gid=WtQ7oR6CD9nRKZgEbljr3A&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMDc1MTUyODE2MDQ3NzUzMg%3D%3D.3-ccb7-5&oh=00_Afuw78cuCmDMq4sCQ8hN1I4EfcblOgEZuH-EwyY9_jFCeg&oe=699AD639&_nc_sid=10d13b",
@@ -2914,18 +3095,18 @@
         "web_viewer/images/96411597843c6b1868ed3a756d9a30ee.jpg",
         "web_viewer/images/be8e124fa3b8938ec0a46fc0f6afde79.jpg"
       ],
-      "code": "DUGCUWLCUFc",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUGCUWLCUFc",
       "user": "slowsoyang",
       "timestamp": "2026-01-29 21:18:16",
-      "is_merged_thread": true,
       "original_item_count": 4,
-      "is_detail_collected": true,
       "platform_sequence_id": 92
     },
     {
-      "sequence_id": 150,
+      "sequence_id": 157,
       "sns_platform": "threads",
+      "code": "DUDz4LoDyoB",
       "full_text": "드디어 평생 풀지 못한 숙제를 해결했다.\n\n클로드 갓코드..",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/622501197_17941465695107400_5502790498560722459_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNDk2eDE2NC5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QEDe2HUswg6Iia9zJ2FyPw2ZTp-BXxMMHsSarg20cDfrH532VVfR3qAWzSxEwga1-Y&_nc_ohc=jZkUSMEoAfMQ7kNvwFpZIXD&_nc_gid=uZrHoAe3r_WxPcx_aV98lg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMDEyNTA3MDA4NjMxODU5Mw%3D%3D.3-ccb7-5&oh=00_AfugnP4f0SvoMbNGl475Y8Y-HiP0DByOAQcO2jQvazHtlg&oe=699B05A7&_nc_sid=10d13b"
@@ -2934,48 +3115,48 @@
       "local_images": [
         "web_viewer/images/b15ed9e50c78cc5fa65324aa22235a03.jpg"
       ],
-      "code": "DUDz4LoDyoB",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUDz4LoDyoB",
       "user": "builder.inkeun",
       "timestamp": "2026-01-29 00:33:37",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 93
     },
     {
-      "sequence_id": 151,
+      "sequence_id": 158,
       "sns_platform": "threads",
+      "code": "DUFFc5Tkb5E",
       "full_text": "혹시 아래 주제로 출강하고 있는 강사님들 있어?\n- 구글 AI로 프레젠테이션 만들기\n- Google Workspace 교육\n- 바이브코딩 (with Google AI Studio)\n\n출강하는 방법에 대한 세미나를 열 계획인데 댓글에 \"구글\"이라고 남기면 세미나 참여하는 법 알려줄게\n\n---\n\n이 주제들 섭렵하면 2026년에 트렌드에 발빠르게 대응하는 강사가 될 수 있다고 자신해\n이 내용에 대한 지식 습득 + 출강 연계까지 관심 있는 강사님들이라면 꼭 연락줘!\n\n---\n\n댓글이 많아서 조금씩 늦어지거나 누락될 수 있는데 조금만 기다려줘!\n혹시 못 받았다면 dm줘!!\n\n---\n\n출강하고 있는 -> x\n출강하고 싶은 -> O\n\n본뭄 내용 정정할게!",
       "media": [],
       "crawled_at": "2026-02-12T19:05:16.994",
-      "code": "DUFFc5Tkb5E",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUFFc5Tkb5E",
       "user": "je0_1229",
       "timestamp": "2026-01-29 12:26:25",
-      "is_merged_thread": true,
       "original_item_count": 4,
-      "is_detail_collected": true,
       "platform_sequence_id": 94
     },
     {
-      "sequence_id": 152,
+      "sequence_id": 159,
       "sns_platform": "threads",
+      "code": "DUCgoCoE_bt",
       "full_text": "바이브 코딩으로 웹 만들때 쓰는 개사기 조합\n\n1. Agentation 크롬익스텐션\n2. opencode 연동\n3. Playwriter 크롬익스텐션 (playwight 아님, 용어주의!)\n4. 웹 디자인 용어 복붙 사이트\n\n제발 이 조합을 사용해봐라. \"제발\"\n\n자세한 설명 댓글\n\n---\n\nAgentation은 웹 상에서 내가 원하는 것을 AI에게 쉽고 정확하게 전달한다. 지금 스레드에 돌아다니는 Agentation은 리액트 기반 프로젝트에서만 동작하는데, 내가 만든건 \"모든 브라우저에서 사용 가능\" 하다. 이것뿐만 아니라, 전용 Agentation MCP 를 이용하여, \"웹 상에서 클릭한번으로 AI에게 지시내릴수있다\". (현재는 opencode만 가능). 기존의 복사 붙여넣기 방식과 달리, 확장 프로그램에서 피드백을 적고 버튼 클릭만 하면된다\n\nhttps://github.com/GutMutCode/agentation\n\n---\n\n바이브 코딩으로 웹을 만들다 보면 AI에게 \"명확한 설명\"을 하는 것이 제일 어렵다.\n\"이 버튼이 커서가 올라갔을때, 위에서 아래로 떨어지고 다시 튀어오르는 애니메이션 효과가 있으면 좋겠어\" \n프롬프트부터 너무길다.\nUI/디자인은 내가 상상하는 형태가 너무 두루뭉술해서, 토큰만 낭비하고 원하는 결과도 못 얻기 쉽다.\n나에게 필요한건, 내가 원하는 디자인을 지칭하는 이름 그 자체였다.\n그래서 웹 디자인에서 자주 쓰고 트렌디한  디자인들을 한페이지에 모아, 직접 웹페이지에서 효과 자체를 눈으로 보면서 디자인을 진행할 수 있는 사이트를 만들었다. 아래 사이트에서 원하는 효과를 찾아, 해당 박스를 클릭만하면 그 이름이 복사된다. 복사후 Agentation 피드백에 붙여넣기하면 완벽한 웹디자인 워크플로우를 경험할 수 있다.\n차후 Agwntation의 자체 기능으로 넣을 예정이다.\n\n---\n\nPlaywriter 크롬익스텐션은 AI가 웹 브라우저를 다룰 수 있도록 하는 확장프로그램인데, 이점만 보면 Playwright와 차이가 없어보인다. 하지만  Playwright는 작업을 진행할때마다 매번 새로운 창을 띄우는 반면, Playwriter는 기존에 내가 사용하고 있는 페이지를 그대로 조작해준다. 이 하나가 엄청난 차이를 만든다. \"민감한 개인정보를 AI에게 직접 전달하지 않고\" 내가 이미  로그인한 화면을 이용하게 해준다. 매번 Playwright를 실행할때마다 새로운 창이 켰다 꺼졌다하는 상황자체가 없으니, 현재 진행 상황도 한눈에 파악하기 쉽다. 암튼 개좋다. 써라.\n\nhttps://github.com/remorses/playwriter",
       "media": [],
       "crawled_at": "2026-02-12T19:05:16.995",
-      "code": "DUCgoCoE_bt",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUCgoCoE_bt",
       "user": "jinsimcode",
       "timestamp": "2026-01-28 12:26:09",
-      "is_merged_thread": true,
       "original_item_count": 4,
-      "is_detail_collected": true,
       "platform_sequence_id": 95
     },
     {
-      "sequence_id": 153,
+      "sequence_id": 160,
       "sns_platform": "threads",
+      "code": "DUDvQcJkoSP",
       "full_text": "AI에게 브라우저 조작시킬때 Playwright MCP말고\nPlaywriter MCP를 써!!\n연말정산도 클로드 코드한테 시켜버리자고~~~\n\n---\n\nPlaywright MCP 문제점이 뭐냐면,\n매번 새 브라우저 창을 띄워.\n그래서 구글, 노션, 네이버 같은 사이트?\n매번 로그인 다시 해야 돼.\n게다가 봇으로 감지돼서\n구글 로그인은 아예 막히는 경우도 많아.\n\n---\n\nPlaywriter MCP는 다름.\n내가 지금 쓰고 있는 크롬을 그대로 쓰거든.\n이미 로그인 된 사이트?\n바로 조작 가능.\n내 확장 프로그램도 그대로.\n봇 감지도 우회 가능.\n\n---\n\n그리고 클릭 정확도가 다름.\nClaude Code 확장은 스크린샷 찍어서 X, Y 좌표로 클릭하거든.\n창 조금만 움직여도 엉뚱한 데 클릭함.\n반응형 웹은 진짜 답 없어.\nPlaywriter는 웹 내부 태그로 요소를 선택해.\n버튼이 어디 있든 정확하게 찾아서 클릭함.\n\n---\n\n설치는 간단해.\n\n크롬 웹스토어에서 \"Playwriter MCP\" 검색해서 추가\n터미널에서\nnpm install -g playwriter\nClaude Code에 연결\nclaude mcp add playwriter -s user -- playwriter mcp\n\n끝.\n\n---\n\n사용법도 쉬워.\n\n크롬에서 조작할 사이트 열기\nPlaywriter 확장 프로그램 아이콘 클릭\nClaude Code에서 \"playwriter로 ~해줘\"라고 말하기\n\n이미 로그인된 내 브라우저니까\n구글 드라이브, 노션, 사내 툴 다 바로 됨.\n\n---\n\n정리하면,\nPlaywright MCP: 새 브라우저, 매번 로그인, 봇 감지됨\nPlaywriter MCP: 내 브라우저, 로그인 유지, 봇 우회\nAI한테 브라우저 자동화 시킬 거면\nPlaywriter 쓰자.\n삽질 시간 확 줄어들어.",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/623298323_17936646063119810_5273506464574487056_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMjE2MHgxMTE4LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QGmlhISmfFA50oHUQWYL-LjYpCBCnRESW_rsUt7f-2zG0jM5U3hGOZAStUVeMJLWe8&_nc_ohc=UgU_Fdt6hHUQ7kNvwErgZjr&_nc_gid=p6JJGuAWwpebhW6B0Q5R5g&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMDEwNDc0MTg5NzI4NDc0Nw%3D%3D.3-ccb7-5&oh=00_AftWegubCoecgs7Jb4NqA5hRyT2KVk-3qygEbVZNqgnz8g&oe=699AF485&_nc_sid=10d13b"
@@ -2984,33 +3165,59 @@
       "local_images": [
         "web_viewer/images/fd1e06bafe5797abea2b80edc40729a6.jpg"
       ],
-      "code": "DUDvQcJkoSP",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUDvQcJkoSP",
       "user": "gyeol_hh",
       "timestamp": "2026-01-28 23:53:14",
-      "is_merged_thread": true,
       "original_item_count": 7,
-      "is_detail_collected": true,
       "platform_sequence_id": 96
     },
     {
-      "sequence_id": 154,
+      "sequence_id": 161,
+      "platform_id": "DS4TktPD6BP",
       "sns_platform": "threads",
+      "code": "DS4TktPD6BP",
+      "username": "eddmpython",
+      "display_name": "으뜸이네 파이썬",
+      "full_text": "선생님께선 이미 능력자에 활용을 잘하시니\n\n벡터임베딩 + llm RAG방향으로 가보시죠 ㅎㅎ\n\n데이터 스크래핑 잘하시나요?\nhttp요청 뿐만아니라 데이터 모으는 자동화는 많이 있죠\n\n1. requests, httpx같은 호출형\n2. pydoll, selenium, playwrite같은 브라우저형\n3. botasaurus, browser-use같은 AI브라우저형\n\n다양하게 이용해보세요 그렇게 모은 비정형데이터를 모으고 정리하는걸 txt에 하면 정리가 힘듭니다. \n\n이런 데이터는 sql보다 pandas나 polars를 추천드립니다. contents컬럼에 비정형데이터를 밀어넣고 메타정보는 다른 컬럼에 넣는거죠! 이걸 parquet에 저장하고 폴더로 잘 관리하세요! 원본데이터입니다.\n\nlancedb는 이렇게 정리된 parquet을 읽어서 벡터화해줍니다. GPU가 없다면 colab노트북을 이용해보세요 무료에서도 쓸만합니다.\n\n그다음은 llm붙이는거죠!!!!! ㅎㅎㅎㅎ 마음에 드실지",
+      "media": [],
+      "url": "https://www.threads.net/@eddmpython/post/DS4TktPD6BP",
+      "created_at": "2025-12-30 16:48:18",
+      "date": "2025-12-30",
+      "crawled_at": "2026-02-12T19:05:20.006",
+      "source": "network",
+      "is_detail_collected": true,
+      "is_merged_thread": false,
+      "root_code": "DS4TktPD6BP",
+      "like_count": 1,
+      "reply_count": 0,
+      "repost_count": 0,
+      "quote_count": 0,
+      "pk": "3798872371042951247",
+      "media_type": 19,
+      "content_type": "image",
+      "platform_sequence_id": 97
+    },
+    {
+      "sequence_id": 162,
+      "sns_platform": "threads",
+      "code": "DS35eB9j40f",
       "full_text": "파이썬 편하게 공부하고 싶으신분들 eddmpython으로 모여주세요~ㅎ",
       "media": [],
       "crawled_at": "2026-02-12T19:05:20.006",
-      "code": "DS35eB9j40f",
+      "is_merged_thread": true,
       "root_code": "DS4TktPD6BP",
       "user": "eddmpython",
       "timestamp": "2025-12-30 13:00:12",
-      "is_merged_thread": true,
       "original_item_count": 1,
       "platform_sequence_id": 97
     },
     {
-      "sequence_id": 155,
+      "sequence_id": 163,
       "platform_id": "DUCrNqMk8vz",
       "sns_platform": "threads",
+      "code": "DUCrNqMk8vz",
       "username": "jinsimcode",
       "display_name": "진심코딩",
       "full_text": "AI에게 브라우저 조작시킬때 필수적으로 알아야하는 것.\nPlaywright, Claude Code 확장프로그램을 쓰지 말기. \n\nPlaywriter를 쓰기.\n\n[ Playwright MCP ]\n매번 새 브라우저 창을 띄우므로, 로그인 필요한 사이트 접속시 매번 로그인 할 필요. \n[ Playwriter MCP ]\n내가 쓰고있는 브라우저 바로 이용. 이미 로그인 된 사이트는 즉시 사용가능\n\n[ Claude Code 확장 ]\n스크린샷을 통해 원하는 X,Y 좌표계산 하여 동작. 잘못클릭 되는 경우 많음. 창을 조금만 움직여도 클릭안됨. 반응형 웹 디자인은 진짜 어려움\n[ Playwriter MCP ]\n웹 내부 태그 이용 선택. 원하는 요소를 아주 정확하게 선택, 조작가능.",
@@ -3020,6 +3227,7 @@
       "date": "2026-01-28",
       "crawled_at": "2026-02-12T19:05:20.006",
       "source": "network",
+      "is_merged_thread": false,
       "root_code": "DUCrNqMk8vz",
       "like_count": 43,
       "reply_count": 9,
@@ -3028,13 +3236,12 @@
       "pk": "3819805488624946163",
       "media_type": 19,
       "content_type": "image",
-      "code": "DUCrNqMk8vz",
-      "is_merged_thread": false,
       "platform_sequence_id": 98
     },
     {
-      "sequence_id": 156,
+      "sequence_id": 164,
       "sns_platform": "threads",
+      "code": "DUC8laUCQ5M",
       "full_text": "유튜브 영상 링크를 첨부하면 \nGemini가 초 단위로 영상을 분석하고 피드백합니다.\n유튜브 전문 컨설턴트를 고용한 것 같았어요.\n\n유튜버가 바로 써먹을 수 있는 프롬프트를 정리했습니다.\n\n---\n\n1. 이탈방지 프롬프트\n→ 이 영상의 첫 30초를 분석해 주세요. 시청자가 영상을 계속 보게 만드는 강력한 한 방이 있나요? 만약 부족하다면, 시청자가 절대 이탈하지 못하게 만들 강렬한 오프닝 멘트를 3개만 다시 제안해 주세요.\n\n---\n\n2. 전달력 점검 프롬프트\n→ 이 영상의 내용을 초등학생도 이해할 수 있을 만큼 쉽게 설명했는지 확인해 주세요. 중간에 말이 너무 길어지거나 설명이 꼬여서 지루해지는 지점을 짚어주시고, 어떻게 요약하면 좋을지 알려주세요.\n\n---\n\n3. 클릭률 높이는 프롬프트\n→ 지금 제 영상의 제목은 [현재 제목]입니다. 영상 내용과 비교했을 때 시청자가 낚였다고 느낄 만한 부분이 있나요? 실망시키지 않으면서도 클릭을 부르는 강력한 제목으로 5개만 추천해 주세요.\n\n---\n\n4. 객관적 피드백 프롬프트\n→ 당신은 구독자 100만 명을 보유한 전문 유튜브 컨설턴트입니다. 이 영상에서 가장 어설프거나 아마추어같이 느껴지는 부분 3가지만 냉정하게 비판해 주세요. 그리고 그걸 어떻게 수정하면 '프로'처럼 보일지 구체적인 해결책을 주세요.\n\n---\n\n5. 참여 유도 프롬프트\n→ 영상 내용 중에 시청자가 댓글로 자기 의견을 남기고 싶게 만드는 논쟁거리나 질문 포인트가 있나요? 영상 마지막에 시청자 참여를 유도할 수 있는 '말 걸기 좋은 멘트' 3가지만 만들어 주세요.\n\n---\n\n가장 큰 문제는 내 영상의 문제점을 객관적으로 판단할 수 없는거예요. 하지만 이제 유튜브 전문 컨설턴트를 무료로 고용해서 피드백 받을 수 있게 됐어요. 저도 실제로 사용해봤는데 제가 생각하지 못한 부분을 짚어줬어요. \n\n초보 유튜버라면 저장하고 꼭 사용해보세요!\n\n---\n\n영감 주신 분: @dongtech.ai",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/624413375_1522558482147037_6868524356227679958_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDM3Ni5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QHJtXER2jRqejF-l6xqQYpddmqypBw1ZfypMYQ7W9meeeOGD84iztKnLYi0iPqnWxk&_nc_ohc=upLJA26zZOgQ7kNvwHaXRe4&_nc_gid=ly6XINxb3BhAxO1ctIz-FA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxOTg4MTg4NzYyODMzMjYyMA%3D%3D.3-ccb7-5&oh=00_AfsFafEeonkvyJAgzCU3i5TBtwvYhp6fjw5PHMttn9J9KQ&oe=699AEF73&_nc_sid=10d13b"
@@ -3043,18 +3250,18 @@
       "local_images": [
         "web_viewer/images/e5044106976931d0efe957e5db3b0d9a.jpg"
       ],
-      "code": "DUC8laUCQ5M",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUC8laUCQ5M",
       "user": "hinjiroffffff",
       "timestamp": "2026-01-28 16:30:27",
-      "is_merged_thread": true,
       "original_item_count": 8,
-      "is_detail_collected": true,
       "platform_sequence_id": 99
     },
     {
-      "sequence_id": 157,
+      "sequence_id": 165,
       "sns_platform": "threads",
+      "code": "DUAmX2YkSSm",
       "full_text": "\"제미나이 + 노트북LM으로 고퀄리티 PPT 10분컷\"\n\n강의 영상 만들다 보면 \n꼭 필요한 게 슬라이드 화면입니다.\n\n녹음·촬영·편집하기도 바쁜데\n슬라이드까지 직접 만들기엔 도저히 시간이 없습니다.\n\n이제, 슬라이드 직접 만들지 마세요.\n구글의 노트북 LM + 재미나이 조합이면 10분이면 끝납니다.\n\n주제만 AI에게 던지면\n자료 조사 → 구조 → 디자인까지 자동.\n외주 맡기면 몇십만 원 나올 퀄리티를\n무료로 바로 뽑아줍니다.\n\n저처럼 디자인 감각 없는 사람도\n바로 따라 할 수 있게,\n노트북 LM·재미나이 사용법을\n4단계로 정리했습니다.\n\n---\n\n1️⃣ 자료 수집은 ‘Notebook LM’\n이미 자료가 있다면 PDF, 문서, 유튜브 링크까지 싹 다 넣으세요.\nNotebook LM 내용을 읽고 핵심만 딱 정리해 줍니다.\n자료가 없으면 ‘Deep Research’ 기능을 써보세요.\n주제만 던지면 조사부터 정리까지 알아서 다 해줍니다.\n\n---\n\n2️⃣ 슬라이드 제작은 ‘Gemini’\n먼저 ‘도구 > 캔버스’ 모드부터 켜세요.\nNotebook LM에서 정리한 자료를 그대로 불러와서\n“강의용 슬라이드로 한글로 구조화해줘”라고 요청합니다.\n이때 목적, 대상, 색상을 구체적으로 적어주면 퀄리티가 높아집니다.\n\n---\n\n3️⃣ 구글 슬라이드에서 디테일 수정\n‘슬라이드로 내보내기’ 버튼을 누르면\n구글 슬라이드에서 폰트나 배치를 내 맘대로 수정할 수 있습니다.\n파워포인트(.pptx)로 다운로드도 가능합니다.\n\n---\n\n4️⃣ 나노바나나로 이미지 수정\n밋밋한 이미지는 구글 슬라이드 안에서 나노바나나로 수정할 수 있습니다.\n스톡 이미지 검색·교체도 가능합니다.\n\n---\n\n이제 슬라이드는 AI한테 맡기고\n우리는 내용과 전달에만 집중하면 됩니다.\n\n앞으로도\n제가 직접 써보고, 실무에 진짜 도움 됐던 AI 사용법\n정리해서 계속 공유할게요.",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/622833762_17851049256623170_7248693224818511512_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTI4MHg3MjAuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QH-zUGZuZk1sRpSNahW6nQg0azrt_WWzYLVq-GweaL-2PtxIZQCJBGvs2gU6pdWhrE&_nc_ohc=ssXpSSlqHm4Q7kNvwFOaE_Z&_nc_gid=PtVxXLQbveY9tM3yP2o2Fg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxOTIyMTI0ODcxOTc5MTI3MA%3D%3D.3-ccb7-5&oh=00_AfsCmZj37kl8L5dYjpAAJUU_BJAq6r7n6u4ry7KYhVt9xw&oe=699B0633&_nc_sid=10d13b"
@@ -3063,19 +3270,19 @@
       "local_images": [
         "web_viewer/images/eea70a88859cf1efcbefc17b05f57379.jpg"
       ],
-      "code": "DUAmX2YkSSm",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUAmX2YkSSm",
       "user": "lazypencil_lab",
       "timestamp": "2026-01-27 18:37:53",
-      "is_merged_thread": true,
       "original_item_count": 6,
-      "is_detail_collected": true,
       "platform_sequence_id": 100
     },
     {
-      "sequence_id": 158,
+      "sequence_id": 166,
       "platform_id": "DUAvS3CkiXu",
       "sns_platform": "threads",
+      "code": "DUAvS3CkiXu",
       "username": "itszoejeong",
       "display_name": "정다정",
       "full_text": "노트북lm에서 만든 슬라이드가 압도적으로 예쁘고 구성도 인포그래픽도 논리도 좋은데.. 하 이거 어떻게 섞어 쓸 방도가 없을까요",
@@ -3085,6 +3292,7 @@
       "date": "2026-01-27",
       "crawled_at": "2026-02-12T19:05:23.030",
       "source": "network",
+      "is_merged_thread": false,
       "root_code": "DUAvS3CkiXu",
       "like_count": 5,
       "reply_count": 1,
@@ -3093,14 +3301,13 @@
       "pk": "3819260488245716462",
       "media_type": 19,
       "content_type": "image",
-      "code": "DUAvS3CkiXu",
-      "is_merged_thread": false,
       "platform_sequence_id": 101
     },
     {
-      "sequence_id": 159,
+      "sequence_id": 167,
       "platform_id": "DUBeqaViJkN",
       "sns_platform": "threads",
+      "code": "DUBeqaViJkN",
       "username": "iamdrtk",
       "display_name": "Christian TK Noh",
       "full_text": "공유해 주신 노션 local MCP 설치하고 나도 뭔가 해보고 싶어서 Obsidian MCP를 만들었습니다.\n\n[Claude AI로 옵시디언 노트 읽고 쓰기]\n\n옵시디언에 ai을 연결해 사용하고 싶었는데 남들이 만든건 모두 과금 API를 사용하는 방법들 뿐이라 포기했다가..\n\n되는 것:\n✅ 노트 검색 (제목 + 내용 전체)\n✅ 노트 생성/수정/삭제\n✅ 태그 관리\n✅ 폴더 탐색\n\n필요한 것:\n- Obsidian 앱 (당연히)\n- Claude Desktop 앱\n- Python 3.10 이상\n- 터미널 조금 만질 줄 알면 됨\n\n설치:\n터미널에서 3줄이면 끝\n\ngit clone https://github.com/drtknoh-sudo/obsidian-mcp\ncd obsidian-mcp\nuv sync\n\n그 다음 Claude Desktop 설정 파일에 경로 추가하면 됨\n(자세한 건 GitHub README 참고)\n\nhttps://github.com/drtknoh-sudo/obsidian-mcp",
@@ -3110,6 +3317,7 @@
       "date": "2026-01-28",
       "crawled_at": "2026-02-12T19:05:23.030",
       "source": "network",
+      "is_merged_thread": false,
       "root_code": "DUBeqaViJkN",
       "like_count": 6,
       "reply_count": 1,
@@ -3118,14 +3326,13 @@
       "pk": "3819468814878808333",
       "media_type": 19,
       "content_type": "image",
-      "code": "DUBeqaViJkN",
-      "is_merged_thread": false,
       "platform_sequence_id": 102
     },
     {
-      "sequence_id": 160,
+      "sequence_id": 168,
       "platform_id": "DT-VHfnEshJ",
       "sns_platform": "threads",
+      "code": "DT-VHfnEshJ",
       "username": "ai.winey_ny",
       "display_name": "국내 최대 AI 커뮤니티 리더 | 와인바 사장 | 고양이 집사",
       "full_text": "API 토큰 없이 Notion 2만 페이지를 4.8초만에 읽었습니다 🤯\n\n노션 많이 쓰시는 분들은 저장해두고 담에 꼭 따라해보세요.\n\nNotion MCP 쓸 때마다 토큰 엄청 먹어서\n스트레스 받는 분들 많죠?\n저도 그랬는데, 로컬 캐시로 우회했어요.\n\n🔥 노션에 로컬캐시가 있는 이유\nNotion 데스크톱 앱은 오프라인 지원을 위해\n로컬 SQLite 데이터베이스를 유지해요.\n(오프라인에서도 최근 본 페이지에 접근 가능하게 하기 위함)\n\n매번 노션 페이지를 읽고 탐색하며 토큰을 왕창 쓰는 방식이 아닌\n로컬의 캐시를 읽는 MCP 서버를 만들었습니다.\n\n👏 결과:\n- API 호출 0\n- Rate limit 없음\n- 오프라인에서도 동작\n- 2만 페이지 로드 4.8초\n\n설치 방법은 댓글에 남겨뒀어요",
@@ -3140,6 +3347,7 @@
       "local_images": [
         "web_viewer/images/68488469113c384e5cf9528a01c38cf6.jpg"
       ],
+      "is_merged_thread": false,
       "root_code": "DT-VHfnEshJ",
       "like_count": 157,
       "reply_count": 56,
@@ -3148,13 +3356,12 @@
       "pk": "3818582408011368521",
       "media_type": 1,
       "content_type": "image",
-      "code": "DT-VHfnEshJ",
-      "is_merged_thread": false,
       "platform_sequence_id": 103
     },
     {
-      "sequence_id": 161,
+      "sequence_id": 169,
       "sns_platform": "threads",
+      "code": "DUALirekrKe",
       "full_text": "클로드 쓰는 콘텐츠 크리에이터라면 이 MCP 5개는 알아야 합니다. \n\nClaude나 Cursor 쓰면서 MCP 안 쓰고 있다면?\n생산성 50% 이상 낭비 중입니다.\n\n1️⃣ FireSEO \n→ SEO 분석을 대화로: \"이 키워드 경쟁 분석해줘\"\n→ Semrush/Ahrefs 대비 1/10 가격 ($29/월)\n→ 키워드 리서치, SERP 분석, 경쟁사 분석 한번에\n\n2️⃣ Notion MCP (공식)\n→ \"오늘 블로그 아이디어 정리해줘\" → 자동 페이지 생성\n→ 콘텐츠 캘린더 자동 관리\n\n3️⃣ WordPress MCP\n→ \"이 글 SEO 최적화해서 발행해줘\" → 끝\n→ 메타 태그, 카테고리, 태그 자동 설정\n\n4️⃣ Canva MCP (공식)\n→ \"인스타 배너 3종 만들어줘\" → AI가 디자인 생성\n→ 템플릿 자동 채우기, 리사이즈\n→ 대량 썸네일 제작에 최고\n\n5️⃣ ElevenLabs MCP (공식)\n→ 블로그 → 팟캐스트 변환\n→ TTS, 보이스 클로닝\n\n링크는 댓글에\n\n---\n\n1. https://fireseo.dev/ko\n2. https://www.notion.com/ko/help/notion-mcp\n3. https://github.com/Automattic/wordpress-mcp\n4. https://www.canva.com/help/mcp-canva-usage/\n5. https://github.com/elevenlabs/elevenlabs-mcp",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/622001042_17914961028268077_2492664739367294999_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTI4MHg3MjAuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QGoIs_5rttGHBg6azqFcVOLFPPn6k_uRh44U5nfZTuJ2FAjblPHk1gRaAu3nSQ-mWI&_nc_ohc=UPkszNDWTe8Q7kNvwEjKdI9&_nc_gid=UDaXOljtnPbZ4LM5StuEZQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxOTEwMzI0NTY2Nzg0MDY3MA%3D%3D.3-ccb7-5&oh=00_AfsZj6aq6B16ZcdUfNWYeIqKVlcJ2sRxb0nYwjJHL90uOQ&oe=699B03C4&_nc_sid=10d13b"
@@ -3163,18 +3370,18 @@
       "local_images": [
         "web_viewer/images/121a41cde9e596ad6f84241f218bb89d.jpg"
       ],
-      "code": "DUALirekrKe",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUALirekrKe",
       "user": "freainer",
       "timestamp": "2026-01-27 14:43:26",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 104
     },
     {
-      "sequence_id": 162,
+      "sequence_id": 170,
       "sns_platform": "threads",
+      "code": "DUAlKDLD9rN",
       "full_text": "https://github.com/affaan-m/everything-claude-code\n\n클로드 코드 해커톤 우승자의 레시피라고 합니다. 구글 Antigravity 용으로 개조해서 사용하니까, 오류가 상당히 줄어드네요...!",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/621665002_17871928404521221_2024189751116162218_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTc5Mng0MzAuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QEKU8FqyZa7sQFE1-aDxRc00PRRYAvqTIsyrLqx9Go4_aqu6CmU6YdXWsv0wRK06B4&_nc_ohc=vdAzs6XdTLUQ7kNvwFHjPjx&_nc_gid=NSKMYMpwPi-aQid_fvb7UQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxOTIxNTkwMjMzMjY3MjcxNw%3D%3D.3-ccb7-5&oh=00_Afv55-ZCP07rLk0dmVrUWrzG_c56RaUC34wNEALTX5YfHg&oe=699B0861&_nc_sid=10d13b"
@@ -3183,19 +3390,19 @@
       "local_images": [
         "web_viewer/images/d518c87f2246701b332809fb022f2364.jpg"
       ],
-      "code": "DUAlKDLD9rN",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUAlKDLD9rN",
       "user": "miniminim71",
       "timestamp": "2026-01-27 18:27:16",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 105
     },
     {
-      "sequence_id": 163,
+      "sequence_id": 171,
       "platform_id": "DT_mtLmk6ix",
       "sns_platform": "threads",
+      "code": "DT_mtLmk6ix",
       "username": "ody_daddy",
       "display_name": "오디아빠 | AX TF Lead",
       "full_text": "출근길 쓰레드) 구글 Stitch로 회의 시간 반토막 내기.\n\n구글 Stitch가 Gemini 3.0을 먹더니 물이 올랐다.\n\n단순히 \"이런 UI 그려줘\" 수준이 아니라,\n기획-디자인-개발의 핑퐁 게임을 끝내는 도구로 진화함.\n\n최근 업데이트로 피그마 내보내기랑\n프론트엔드 코드 추출이 기가 막히게 좋아졌다.",
@@ -3205,6 +3412,7 @@
       "date": "2026-01-27",
       "crawled_at": "2026-02-12T19:05:23.035",
       "source": "network",
+      "is_merged_thread": false,
       "root_code": "DT_mtLmk6ix",
       "like_count": 58,
       "reply_count": 6,
@@ -3213,13 +3421,12 @@
       "pk": "3818941239635716273",
       "media_type": 19,
       "content_type": "image",
-      "code": "DT_mtLmk6ix",
-      "is_merged_thread": false,
       "platform_sequence_id": 106
     },
     {
-      "sequence_id": 164,
+      "sequence_id": 172,
       "sns_platform": "threads",
+      "code": "DT-LFLbARyz",
       "full_text": "\"딸깍\"으로 800만 수학 유튜브 채널 3Blue1Brown 특유의 멋진 애니메이션을 만들 수 있습니다.\n\n최근 공개된 \"manim_skills\" 패키지를 사용하면, 3Blue1Brown이 직접 개발한 애니메이션 라이브러리인 Manim을 자동으로 연결해 복잡한 파이썬 코드 없이 텍스트만으로 고품질의 교육용 영상을 뚝딱 제작할 수 있습니다.\n\n고품질 지식 콘텐츠 제작의 진입 장벽이 완전히 무너지고 있는 것 같습니다.\n\n---\n\n깃허브 :\nhttps://github.com/adithya-s-k/manim_skill",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/622451065_1421097342861963_7300520239862911448_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDM2MC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QHVfUcQDL6BA95SHWEX0yF5qTBu6oXI1ZE-XlE66Fps8u3oD0w-deWZuWashTKwDYs&_nc_ohc=Rg9GB3tn7E0Q7kNvwF2K4DH&_nc_gid=9oy_wzRvMubGGwtaw7itjA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxODUzODI2ODQyOTk4Mjg5OQ%3D%3D.3-ccb7-5&oh=00_AfvPTbbkvb6xzj-pKe1Qs1qeOJFEKBHRWt-ncZGVnymzPQ&oe=699AE077&_nc_sid=10d13b"
@@ -3228,18 +3435,18 @@
       "local_images": [
         "web_viewer/images/798fe4b8116aff35d76db1d1ec5c127f.jpg"
       ],
-      "code": "DT-LFLbARyz",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DT-LFLbARyz",
       "user": "choi.openai",
       "timestamp": "2026-01-26 20:00:55",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 107
     },
     {
-      "sequence_id": 165,
+      "sequence_id": 173,
       "sns_platform": "threads",
+      "code": "DT-h_5NARCF",
       "full_text": "드디어 Gems 만드는 법을 터득!\nSpecial thanks to @hamlog_ai \n\n스토리 따라 프롬프트를 30개 만들고\nOpal에 넣으면 이미지 30장이 한번에 쏟아진다. \n\n전자책 도전하는 내 이야기를 주제로 설정했는데,\n이제 시작 단계임에도 벌써부터 마음이 뭉클하다.\n\nGems 제작이랑 opal로 이미지 30개 만드는\n방법이 궁금하면 (댓글)\n\n---\n\n햄로그님 유튜브를 찾아가. \n수업 녹화본 게시해주셨어",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/622424162_964819176715643_8248120416002867329_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uNjQweDY0MC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2QHKPQYEk2aTmBB9aNWuxsQIllMDOnLFh1d9-sFpxVhvuwCmYyHI1g3jE3hBhL6PfSs&_nc_ohc=UFDgOHTDP1kQ7kNvwHpOTov&_nc_gid=G7cV3O-ZtZrQna9oSkPerg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxODYzOTA1NDA2NTQ5MDkwMw%3D%3D.3-ccb7-5&oh=00_AfsNncW6ETRxraUS0djc0PX2mLinTAZfiZwJYnnej-9EgA&oe=699AE6F2&_nc_sid=10d13b",
@@ -3250,18 +3457,18 @@
         "web_viewer/images/ecc2fb48395dc37e1a1bcf129874040f.jpg",
         "web_viewer/images/8a7f82bf0afdd25b2b2948c29e34cc52.jpg"
       ],
-      "code": "DT-h_5NARCF",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DT-h_5NARCF",
       "user": "lumiham0",
       "timestamp": "2026-01-26 23:21:11",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 108
     },
     {
-      "sequence_id": 166,
+      "sequence_id": 174,
       "sns_platform": "threads",
+      "code": "DT99oVWkh8u",
       "full_text": "이거 진짜 맘에 드네 ㅋㅋ\n\n노트북LM 스타일 프롬프트인데\n몇 줄로 퀄리티가 확 바뀐다\n\n---\n\n글씨 깨지는 부분은\n어쩔 수 없이 캔바로..",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/622056810_17914275651271947_5686315242604975591_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMjA4NngxMTY1LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QGhsojHH7u0VskRX3KcslNw4yV3NZbxtPQWmNS31cWtMdCsE5xre7gflPA7DxbCWvc&_nc_ohc=5MCwYr0A2x8Q7kNvwEFSbv3&_nc_gid=uMUzboCP7OH87-Iqipbp2Q&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxODQ3OTEwNTY5Mjg0MDc2NQ%3D%3D.3-ccb7-5&oh=00_Aftr5c6Vgql6R3oPWO4Ccybz10p7cs6xMKfFEtEI6uVXCw&oe=699AEDC8&_nc_sid=10d13b"
@@ -3270,18 +3477,18 @@
       "local_images": [
         "web_viewer/images/c7ab1e74f76018df64228a300f57b117.jpg"
       ],
-      "code": "DT99oVWkh8u",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DT99oVWkh8u",
       "user": "pm_anyway",
       "timestamp": "2026-01-26 18:03:23",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 109
     },
     {
-      "sequence_id": 167,
+      "sequence_id": 175,
       "sns_platform": "threads",
+      "code": "DTW7GQ0iujL",
       "full_text": "감각적 PPT 이거까지 알려드릴까.. 고민했는데\n\n디자이너가 만든 느낌의\n세련되고 감각적 슬라이드\n\n이번엔 NotebookLM으로 제작.\n(방법은 아래)\n\n---\n\nNotebookLM에 제작시\n아래의 프롬프트를 추가해보세요\n위의 슬라이드 중 1개 제작법 공유합니다. \n(이번 주 유튜브에 상세한 방법 업로드 예정)\n\n---\n\n유튜브 댓글에 탬플릿 18종 링크 있습니다.\n유튜브 보시면서 만드는 법 설명도 해두었어요!",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/614942511_737506982316025_636312003171565881_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDM0NC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QHTkssjDCL7otpBGm0WQX-yAcpI7337eJ16E8x4tWn4GdA7PupffAeNRf4qFZOe6a0&_nc_ohc=Tnat4xG-XM4Q7kNvwF45wD3&_nc_gid=IZ7GoKukr53PegQypnXN7g&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwNzQ5MDQ1MDExMDczNjU4Nw%3D%3D.3-ccb7-5&oh=00_AfuGMcK-86FAN6fpZeLZalBl-8O13sryeGHgt3KAt3Kk4w&oe=699AE74A&_nc_sid=10d13b"
@@ -3290,18 +3497,18 @@
       "local_images": [
         "web_viewer/images/e5242be60e725322b68bfe00a45be21b.jpg"
       ],
-      "code": "DTW7GQ0iujL",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTW7GQ0iujL",
       "user": "ai_sync_club",
       "timestamp": "2026-01-11 14:12:45",
-      "is_merged_thread": true,
       "original_item_count": 3,
-      "is_detail_collected": true,
       "platform_sequence_id": 110
     },
     {
-      "sequence_id": 168,
+      "sequence_id": 176,
       "sns_platform": "threads",
+      "code": "DT7_LsBj_kt",
       "full_text": "오랫동안 셀프 브랜딩을\n미뤘던 이유\n: '나의 정체성부터 \n정하고 시작할거야!'라는 다짐\n\n근데 이 링크드인 댓글을 보고\n대뜸 그냥 시작하길 참 잘했다는\n생각이 들었어.\n\n---\n\n마케터라고 할까?\n데이터 분석가라고 할까??\n마케팅 데이터 분석가???\nAI 마케팅 전문가????\n\n요즘처럼 역할이 격변하는 시기에\n모두 의미 없는 고민.\n\n---\n\n그냥 뭐든지\n애정을 가지고\n열심히 하는 사람이 되자!!",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/623207294_17941049205112976_6775598268498138233_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uODc2eDEwMi5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHyJrAJ9oE6ZmBX9mPNfpI-sJUV2Rj7Qj-VU_Fv5-C5sfm5Hr9yNmmkcRX4cVVV22w&_nc_ohc=5LMYsbIx4bYQ7kNvwFF-pGE&_nc_gid=bmlnv2fYllA0NO5vvNMg_A&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxNzkyMjk4OTI0MTkyMzg4NQ%3D%3D.3-ccb7-5&oh=00_AfsItD0_yuKpCoL7pYUWjJCm1c0NQDwVdukFI-SdjIDpfA&oe=699ADCC4&_nc_sid=10d13b"
@@ -3310,33 +3517,33 @@
       "local_images": [
         "web_viewer/images/d30351261b4a780ede2b37f976914c2e.jpg"
       ],
-      "code": "DT7_LsBj_kt",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DT7_LsBj_kt",
       "user": "marketer.ai.seulki",
       "timestamp": "2026-01-25 23:38:28",
-      "is_merged_thread": true,
       "original_item_count": 3,
-      "is_detail_collected": true,
       "platform_sequence_id": 111
     },
     {
-      "sequence_id": 169,
+      "sequence_id": 177,
       "sns_platform": "threads",
+      "code": "DEjh503znCO",
       "full_text": "앗 다들 자기소개 pinned 해놓던데 나는 안했더라!!\n> https://bento.me/seulkikang\n\n👩🏻‍💻 마케팅, 미디어, 데이터, AI 실무를 모두 경험했어\n👩‍🏫 패스트캠퍼스에서 AI 글쓰기, 취업, 링크드인 네트워킹 강의를 진행했어\n📊 삼성전자, 대상, 유니레버 등 대기업을 대상으로 데이터 & 마케팅 강의를 진행했어\n✍🏻 링크드인 인사이트 연재를 통해 8k 팔로워, 2백만 조회수를 기록했지\n🛜 700명 이상이 가입한 커뮤니티, 마케팅 데이터 커넥트 그룹을 운영 중이야\n💌 뉴스레터 '일잘러의 성장노트'를 발행하고 있어\n\n25' 긱워커 & 프리랜서로서의 삶 시작\n20'~24' 포커스미디어 데이터전략팀장\n18'~19' 스마트미디어렙 플래닝&세일즈\n15'~18' 이노션 해외미디어플래닝-기아 담당\n13'~14' 레오버넷 디지털 마케터-맥도날드 담당\n11'~13' 오길비 디지털마케터-스미노프,아우디,필립스 등 담당",
       "media": [],
       "crawled_at": "2026-02-12T19:05:26.069",
-      "code": "DEjh503znCO",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DEjh503znCO",
       "user": "marketer.ai.seulki",
       "timestamp": "2025-01-08 15:49:57",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 112
     },
     {
-      "sequence_id": 170,
+      "sequence_id": 178,
       "sns_platform": "threads",
+      "code": "DT93hKjDzNI",
       "full_text": "[📥 클로드코드 설치 매뉴얼 배포]\n\n클로드코드 설치도 진짜 쉽고\n설치만 하고 나면\n프롬프트 > 결과물\n보는 것 똑같음\n\n그 이후 고도화도\nAI한테 조언 얻어가며\n진행하고!\n\n그래도 매뉴얼 필요하다면:\n\n---\n\n요기! PDF 매뉴얼:\nhttps://drive.google.com/drive/folders/1d8LFr31jRjWzwQ040CroMAc6doADxuGC?usp=sharing\n💬퇴근후AI 단톡방에서 나눈 팁: https://open.kakao.com/o/gzdwHNQh\n📣2월 시작하는 AI 기초-중급 4주 챌린지에서 AI Studio, 클로드코드, 안티그래비티 사용법 기본도 다룰 예정이니 많은 참여 부탁 :) (1월 28일 신청 마감)\nhttps://www.latpeed.com/products/2BE6H",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/621448094_17941198041112976_184950576503427390_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTg1NHgxNTA0LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHh82iOZFk98pykSnUxuecgrR8ZGzUwbaT2uw3GujOuyRTKOzSKr4p7hEtmISCRSr8&_nc_ohc=RJxt4PSj5DAQ7kNvwEjSYMO&_nc_gid=5kSE4t7ZfED-wFr1C92SjA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxODQ1MjIyNjE5MzQ2NzY3NQ%3D%3D.3-ccb7-5&oh=00_Aftt2hqjbmjX8qJVdza-g2m9GEqRG0BvxujRG5ABLsBRtg&oe=699B045D&_nc_sid=10d13b"
@@ -3345,33 +3552,33 @@
       "local_images": [
         "web_viewer/images/66c3d764b2e3c0ddd2413893aa9efa01.webp"
       ],
-      "code": "DT93hKjDzNI",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DT93hKjDzNI",
       "user": "marketer.ai.seulki",
       "timestamp": "2026-01-26 17:09:59",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 113
     },
     {
-      "sequence_id": 171,
+      "sequence_id": 179,
       "sns_platform": "threads",
+      "code": "DT-HYr3Eofo",
       "full_text": "점점 노션에 기록하는게 꺼려진다.. notebook lm이랑gemini 쓰니까 노션에있는건 일일히 csv다운받고 이래야하고.. 차라리 그냥 마크다운문서나 쌩 텍스트나 구글시트, 독스, 슬라이드가 편해지는중",
       "media": [],
       "crawled_at": "2026-02-12T19:05:26.069",
-      "code": "DT-HYr3Eofo",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DT-HYr3Eofo",
       "user": "itszoejeong",
       "timestamp": "2026-01-26 19:28:38",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 114
     },
     {
-      "sequence_id": 172,
+      "sequence_id": 180,
       "sns_platform": "threads",
+      "code": "DOm2OujEQC1",
       "full_text": "노션으로 관리하는 컨텐츠 트래킹\n- 컨텐츠 맞춤형 주제별로\n- 업로드 주기마다 알람 가능\n- 컨텐츠 작성에 도움이 되는 도구들 리스트끼지!\n\n이 모든 걸 무료로 사용해볼수 있다면? 👇\n\n---\n\n노션으로 만든 컨텐츠 트래커 사용해보기 👇\nhttps://www.notion.com/ko/templates/datarichard-contents-tracker",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/548371214_17925699063108845_439881711748730167_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTIwMHg3NDkuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QG8p3cFHJkbyl3SEDwb0FKM1oT7utpeKgkNYAl6ou5TH595YlGgEh3huufwMBhPSOs&_nc_ohc=lgkcWjIh_1AQ7kNvwG1PSpZ&_nc_gid=Lu-gTMRPz1R4Sj7BHMXKnA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzcyMTkwMDY0ODYzMzAwODMwOQ%3D%3D.3-ccb7-5&oh=00_Afsu8KLb4-IT9grGfIfv6GIXyBDkgLtPH0iwdfaED1DBNA&oe=699AE9D0&_nc_sid=10d13b"
@@ -3380,33 +3587,33 @@
       "local_images": [
         "web_viewer/images/f6c06d26a9c399bd88da6685b3e74d03.jpg"
       ],
-      "code": "DOm2OujEQC1",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DOm2OujEQC1",
       "user": "data_richard",
       "timestamp": "2025-09-15 11:59:13",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 115
     },
     {
-      "sequence_id": 173,
+      "sequence_id": 181,
       "sns_platform": "threads",
+      "code": "DS_7QrXFRRu",
       "full_text": "저는 노션(Notion)으로 직접 실무/실생활에 사용하는\n템플릿을 만들고 개선하는 것을 좋아합니다.\n\n2025년부터 매니저로서의 역할을 수행하면서\nEpic/User Story/Task와 같은 \n프로젝트 관련 아이템들을 정리하고\n우선 순위를 체계화하는 데 필요성을 느끼고\n직접 해당 템플릿을 만들게 되었습니다.\n\n- 프로젝트 관련 아이템(에픽, 유저 스토리, 테스크)들을 정리\n- 진행 상황을 보드 형태로 직관적으로 관리\n- 개인 프로젝트부터 소규모 팀 협업까지 활용 가능\n\n템플릿의 이름은 프로젝트 관리자 (PM) 보드입니다.\n해당 템플릿으로 PM의 프로젝트 관리 역량을 한 단계 끌어올려 보세요.\n\nhttps://datarichard.notion.site/PM-2db15065c9e08127b617d760fe86b907?source=copy_link",
       "media": [],
       "crawled_at": "2026-02-12T19:05:29.084",
-      "code": "DS_7QrXFRRu",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DS_7QrXFRRu",
       "user": "data_richard",
       "timestamp": "2026-01-02 15:49:46",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 116
     },
     {
-      "sequence_id": 174,
+      "sequence_id": 182,
       "sns_platform": "threads",
+      "code": "DT9Gyvtj-Rb",
       "full_text": "[클로드 프로젝트(Project) 와 스킬(Skill) 의 차이점]\n\n최근까지 클로드 프로젝트(Project)를 통해 \n각기 다른 워크플로우 (Workflow)를 관리했습니다.\n\n갑자기 등장한 클로드 스킬 (Skill)은 \n도대체 왜 필요한지 그리고 어떻게 \n프로젝트(Project)와 다르게 사용해야 하는지가 \n매우 혼란스러웠습니다. \n\n꽤나 많은 시간이 걸린 후 \n여러가지 다양한 출처를 통해 \n스스로 생각을 정리하면서 \n알게 된 사실을 여기에 기록하고자 합니다.\n\n---\n\n1. 클로드 프로젝트: \n단일 맥락(Singular Context)에서 작동하는 독립된 공간\n\n프로젝트(Project)는 일반 대화 (Chat)과는 다르게 \n맥락(Context)을 일관되게 고정할 수 있습니다. \n\n하나의 공간에 주제/지시문/참고 파일을 저장해두고 \n그 맥락에서 제공한 내용들에 대해 질문하고 토론하고 \n대화할 수 있는 점이 매력적입니다. \n\n단순히 일반 채팅을 사용할 때는 \n유저가 그 대화창을 떠나거나 \n다른 대화창으로 이동하게 되면\n그 맥락은 잊혀져 사라지지만, \n\n프로젝트는 마치 기존에 존재했던 \n단톡방에 접속하듯이, \n다시 접속해도 그 맥락이 이어지는 구조입니다.\n\n---\n\n2. 클로드 스킬: \n재사용이 가능한 다중 맥락(plural context) 속 가이드 및 지침\n\n클로드 스킬(Skill)은 대화 내에서 \n어떤 특정 조건 (Condition)이나 명령문(Prompt)에 의해 \n발현되는 지침 중 하나입니다. \n\n이를 통해 각기 다른 조건과 명령문을 지정해두고 \n필요한 스킬을 불러올 수 있게 됩니다.\n\n클로드 스킬(Skill)의 장점은 \n프로젝트(Project)와 비교해 \n크게 두가지로 나눌 수 있습니다.\n\n---\n\n첫번째는 새로운 대화창 / 프로젝트 구별 없이 \n클로드의 어떤 대화이든 특정 조건이나 키워드 만으로도 \n구현이 가능하다는 점입니다. \n\n예를 들면, 메타(Meta)라는 키워드만 포함하거나 \n또는 '00 스킬을 구현해줘'라는 명령어를 통해 \nAI가 자연스럽게 해당 스킬을 가져와서 결과물을 생성해줍니다\n\n---\n\n두번째는 스킬(Skill)은 라우팅 (Routing), \n즉 최적화 선택이라는 방법을 활용해 \n전체 맥락을 파악하지 않고도 쉽게 사용할 수 있습니다. \n\n프로젝트(Project)는 점점 더 많은 맥락을 포함할 수록 \n생각 (Reasoning)하는 시간과 자원이 커지는 반면, \n\n스킬(Skill)은 호출하거나 필요할 때만 불러올 수 있으므로, \n아무리 많은 스킬을 만들어도, \n그 스킬이 사용하는 자원량은 일정하게 됩니다.\n\n---\n\n글이 길어지는 관계로 \n내일 포스트에서 좀 더 자세하게 적어보도록 하겠습니다.",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/622304480_17940924768108845_6968058915373838718_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTcxN3gxNDM5LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QGG5kIdlQ2MPD7XtX3OPdouU12Yy4vrDlRFAXBK72oCl4tYCEDcEScJLNG8TWv-Qbg&_nc_ohc=uCSKKdpKOZYQ7kNvwE7b_se&_nc_gid=4B_i9m3ozPS-gU6JZt15dQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxODIzNzkzNDU2MzIyMjYxOQ%3D%3D.3-ccb7-5&oh=00_AftlAq1VqWtstVxjPhzRmwERsDX2Ju__MICO86Sy6eaTAg&oe=699ADA9C&_nc_sid=10d13b"
@@ -3415,33 +3622,33 @@
       "local_images": [
         "web_viewer/images/7c9be01b7ec32fd32aed07a650561de5.jpg"
       ],
-      "code": "DT9Gyvtj-Rb",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DT9Gyvtj-Rb",
       "user": "data_richard",
       "timestamp": "2026-01-26 10:04:13",
-      "is_merged_thread": true,
       "original_item_count": 6,
-      "is_detail_collected": true,
       "platform_sequence_id": 117
     },
     {
-      "sequence_id": 175,
+      "sequence_id": 183,
       "sns_platform": "threads",
+      "code": "DT8s5gck3xJ",
       "full_text": "우리는 왜 코드를 이해하려고 하는가? (feat. 코드 읽기를 그만뒀더니 코드 리뷰가 더 좋아졌다)\n\n최근 많은 개발자 분들이 AI로 인해 가지는 스트레스 중 하나가 '기능은 쏟아져나오는데 내가 이해/통제하지 못하는 코드가 늘어나고, 코드 리뷰가 병목이 되고 있다'일텐데요. 마찬가지로 채용 과제 구성에서도 어려움이 있고요.\n\n저는 \"코드 이해의 정의와 목적이 무엇인가?\" 라는 질문을 던져볼 필요가 있다고 생각했습니다.\n- 코드를 잘 이해했다는 것을 어떻게 측정/가시화할 수 있을까요?\n- 그 지표를 높임으로써 우리가 원하는 JTBD가 뭘까요?\n- 그 지표가 낮아져도 괜찮다는 결정을 한다면, 얼마나 낮아져도 괜찮을까요? 다른 어떤 지표와 트레이드오프가 있을까요?\n\n그러다 마침 코드 리뷰에 대한 Every의 좋은 글이 눈에 띄어서 Opus에게 번역시켜봤습니다.\n\n---\n\n한글번역: https://claude.ai/public/artifacts/25407162-7000-4400-b931-c4ad42f08019\n\n<후반부 발췌>\n\n대부분의 엔지니어는 모든 것을 읽어야 한다고 가정한다. 그 가정은 인간이 모든 코드를 작성했을 때는 말이 되었다. 하지만 더 이상은 아니다. \n \n나는 대부분의 코드를 읽지 않고 이메일 서명 수정을 배포했다. 발견 사항을 리뷰하고 결정을 내렸다. Gmail의 스크린샷을 봤다. 하지만 이메일 콘텐츠를 추출하는 방법의 구현 세부 사항을 읽었나? 아니. 데이터베이스 변경이 엣지 케이스를 어떻게 처리하는지 추적했나? 아니. \n \n그런데 기능은 작동한다. 사용자들은 적절하게 포맷된 서명을 받는다. 테스트--코드가 올바르게 동작하는지 확인하기 위해 모든 기능과 함께 작성하는 검사--가 모두 통과한다. 스크린샷이 올바르게 보인다. 수동 코드 리뷰를 놓아버리는 데 시간이 좀 걸렸지만, 결과가 스스로를 증명한다.\n\n---\n\n내가 한 거래는 모든 줄을 읽지 않겠다는 것이지만, 코드를 읽는 데 쓸 시간의 일부는 이제 시스템을 더 똑똑하게 만드는 데 간다. 이상한 포맷으로 가득 찬 마케팅 이메일에 대한 테스트 케이스를 추가하고 있다. \"데이터가 있는 위치를 변경할 때, 그것을 읽는 모든 파일을 확인하라\"를 에이전트들이 자동으로 시행하는 규칙으로 캡처하고 있다. 이렇게 하면, 이 코드를 건드리는 다음 사람--인간이든 AI든--은 내 실수를 반복하지 않는다. \n \n아직 컴파운드 엔지니어링 플러그인이 https://github.com/EveryInc/compound-engineering-plugin 없다면, 세 가지 질문으로 시작하라. AI가 생성한 출력--코드, 문서, 또는 전략 덱--을 승인하기 전에, AI에게 물어라:\n1. 여기서 가장 어려웠던 결정은 무엇이었나?\n2. 어떤 대안을 거부했고, 왜?\n3. 무엇에 대해 가장 자신이 없나?\n\n---\n\n2분이 걸리는 그 대화가 30분의 집중하지 않은 수동 검사가 놓쳤을 것을 표면화한다. AI는 까다로운 부분이 어디인지 안다. 그저 물어보지 않으면 자발적으로 말하지 않을 뿐이다. \n \n그런 다음 50/50 규칙을 적용하라. 시간의 절반은 즉각적인 문제를 수정하는 데, 절반은 문서화하여 문제가 다시는 돌아오지 않도록 하는 데 써라.\n\n---\n\n이런 워크플로우를 실제로 실행하려면 신뢰할 수 있고 광범위한 테스트와 QA가 필요합니다. 그래서 Vercel이 내놓은 https://agent-browser.dev/ 같은 도구도 눈여겨보고 있습니다.",
       "media": [],
       "crawled_at": "2026-02-12T19:05:29.085",
-      "code": "DT8s5gck3xJ",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DT8s5gck3xJ",
       "user": "steady__study.dev",
       "timestamp": "2026-01-26 06:17:57",
-      "is_merged_thread": true,
       "original_item_count": 5,
-      "is_detail_collected": true,
       "platform_sequence_id": 118
     },
     {
-      "sequence_id": 176,
+      "sequence_id": 184,
       "sns_platform": "threads",
+      "code": "DT93gttj4S1",
       "full_text": "바이브코딩, 쫄지말자!\n유튜브 분석기 웹앱, 완성\n하룻밤만에 완성한 첫 프로젝트\n안티그래비티+제미나이+챗GPT로 완성\n50대, 비개발자 출신도 가능\n결국, AI 쓰는 사람이 오래간다!",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/621579727_17897132061384188_3812157133825546784_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMjE2MHgxMTY4LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QFPUC-WW7Q38Opw6Fky7t6YunhQsOYj0cOwR1l0I6RGnBrATufhJfGQdxVMqZF71C0&_nc_ohc=SQsJYHGjqWoQ7kNvwGCokTq&_nc_gid=YKgXMY4RNNYoPCiTnTvJoA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxODQ1MjE5NTU0MTQ4NzY2NQ%3D%3D.3-ccb7-5&oh=00_AftneIm0KL71UGBiDU84z3RCXtcAsgpOo3mPSkZFefwkNg&oe=699AE791&_nc_sid=10d13b"
@@ -3450,93 +3657,93 @@
       "local_images": [
         "web_viewer/images/e37663afd25c839e85cf8df74100b443.jpg"
       ],
-      "code": "DT93gttj4S1",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DT93gttj4S1",
       "user": "pitchtitan",
       "timestamp": "2026-01-26 17:09:55",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 119
     },
     {
-      "sequence_id": 177,
+      "sequence_id": 185,
       "sns_platform": "threads",
+      "code": "DT863uQkmuV",
       "full_text": "요새 AI가 글 쓰면 사람 같지 않고 블로그 저품질 나올까 두려우시죠? \n그걸 방지하는 클로드 스킬이 나왔습니다.\n휴먼처럼 글을 써주니 꼭 사용해보세요\n\nGithub:\nhttps://github.com/blader/humanizer\n\n기사:\nhttps://www.aitimes.com/news/articleView.html?idxno=205864",
       "media": [],
       "crawled_at": "2026-02-12T19:05:32.126",
-      "code": "DT863uQkmuV",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DT863uQkmuV",
       "user": "build_daemon",
       "timestamp": "2026-01-26 08:20:02",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 120
     },
     {
-      "sequence_id": 178,
+      "sequence_id": 186,
       "sns_platform": "threads",
+      "code": "DT9e9jOkc7M",
       "full_text": "🔥 최근 일주일 AI/테크씬 정리\n\n• Clawdbot — 개인용 AI 자비스, 멀티채널 자동화\n• Pencil.dev — IDE에서 디자인→코드 자동 생성\n• Remotion skill — Claude로 영상+음성+배경음악 제작\n• Krea AI Realtime Edit — 프롬프트 치면서 이미지 실시간 변환\n• Google SAT Practice — Gemini 무료 SAT 모의고사+즉시 분석\n• Google Stitch MCP — 디자인→React/Flutter 코드 변환\n• Vercel skills.sh — AI 에이전트 스킬 마켓 (200+)\n• Typeless — 음성→텍스트 자동화, 모든 앱 지원\n• Claude Cowork — 폴더 기반 파일정리/문서작성 자동화\n• Oh-my-opencode v3.0.0 — 에이전트 오케스트레이터 병렬 코딩\n\n전부 지난 1주일 안에 출시됨. \n관심있으면 저장 필수 🔖",
       "media": [],
       "crawled_at": "2026-02-12T19:05:32.127",
-      "code": "DT9e9jOkc7M",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DT9e9jOkc7M",
       "user": "robin_just_ship_it",
       "timestamp": "2026-01-26 13:35:24",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 121
     },
     {
-      "sequence_id": 179,
+      "sequence_id": 187,
       "sns_platform": "threads",
+      "code": "DT5ScNij4Uw",
       "full_text": "AI 코딩 실력이 늘지 않는 치명적인 이유\n\n다들 AI가 다 해줄 거라 믿지만\n프로젝트가 커지면 AI는 길을 잃습니다.\n\n\"이거 만들어줘\"라고 대충 던지는\n'바이브 코딩'의 유통기한은 100줄까지입니다.\n\n그 이상을 원한다면 'SDD'를 알아야 합니다.\n\n---\n\nSpec-Driven Development (SDD, 명세 주도 개발)는 코드를 먼저 작성하기 전에, 구현해야 할 기능의 ‘명세서(Spec)’를 아주 정교하게 정의하고 이를 바탕으로 개발을 진행하는 방식입니다.\n\n특히 최근 Cursor, Kura, Windsurf 같은 AI 기반 IDE를 사용할 때, AI가 길을 잃지 않고 정확한 코드를 짜게 만드는 가장 핵심적인 방법론으로 주목받고 있습니다.\n\n1. 왜 SDD가 필요한가요? (Vibe Coding 탈피)\n일반적으로 AI에게 \"이거 만들어줘\"라고 대충 요청하는 방식을 '바이브 코딩(Vibe Coding)'이라고 합니다. 처음엔 잘 되는 것 같지만, 프로젝트가 커지면 AI가 앞선 코드를 잊어버리거나 엉뚱한 방향으로 코드를 짤 때가 많습니다.\nSDD는 \"생각은 사람이 하고, 실행은 AI가 하게 만드는\" 구조화된 워크플로우입니다.\n\n---\n\n2. SDD의 3단계 프로세스\n\n① 요구사항 정의 (Requirements)\n단순한 설명이 아니라, EARS(Easy Approach to Requirements Syntax) 같은 구조화된 방식을 사용합니다.\n• 예시: \"사용자가 '정산' 버튼을 누르면, 시스템은 미정산 금액을 계산하여 화면에 표시해야 한다.\" (구체적인 조건과 결과 명시)\n\n② 설계 (Design)\n요구사항을 어떻게 기술적으로 구현할지 결정합니다.\n• 내용: DB 스키마 설계, API 엔드포인트 정의, 사용할 라이브러리 선정, UI 와이어프레임 등.\n• 이 단계에서 AI에게 \"이 설계대로 구현할 수 있는지 검토해줘\"라고 요청하여 설계를 확정합니다.\n\n---\n\n③ 구현 및 작업 리스트 (Implementation & Tasks)\n확정된 설계를 아주 작은 단위의 '체크리스트(Task List)'로 쪼갭니다.\n• Task 1: 정산 테이블 DB 마이그레이션 생성\n• Task 2: 정산 로직 유닛 테스트 코드 작성\n• Task 3: 백엔드 정산 API 구현\n• Task 4: 프론트엔드 정산 대시보드 UI 구현\n\n3. 실무 적용 예시: \"쿠팡 정산 대시보드\"\n\n1. 명세서 작성: spec.md 파일을 만들고, 쿠팡 API에서 데이터를 가져와서 수수료를 제외한 실지급액을 계산하는 로직\"을 상세히 적습니다.\n2. AI에게 전달: AI에게 \"이 spec.md를 읽고 전체적인 설계 도면(design.md)을 그려줘\"라고 시킵니다.\n3. 검토 및 수정: AI가 제안한 설계가 마음에 들면, \"이제 이 설계를 바탕으로 해야 할 일을 순서대로 나열해줘\"라고 합니다.\n4. 단계별 실행: 나열된 Task를 하나씩 클릭하며 \"Task 1 진행해줘“ 라고 명령합니다.\n\n---\n\n4. SDD의 장점\n\n• 재현 가능성: 명세서가 있기 때문에 AI가 중간에 실수를 해도 다시 올바른 방향으로 돌리기 쉽습니다.\n• 컨텍스트 유지: 프로젝트가 커져도 spec.md 파일만 참고하면 AI가 전체 구조를 이해할 수 있습니다.\n• 품질 제어: 사람이 설계를 승인한 뒤 코딩이 시작되므로, AI가 제멋대로 비효율적인 코드를 짜는 것을 방지합니다.",
       "media": [],
       "crawled_at": "2026-02-12T19:05:32.127",
-      "code": "DT5ScNij4Uw",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DT5ScNij4Uw",
       "user": "hajae.code",
       "timestamp": "2026-01-24 22:29:02",
-      "is_merged_thread": true,
       "original_item_count": 5,
-      "is_detail_collected": true,
       "platform_sequence_id": 122
     },
     {
-      "sequence_id": 180,
+      "sequence_id": 188,
       "sns_platform": "threads",
+      "code": "DT6c3mrEwmC",
       "full_text": "좋은 포인트입니다. 그래서 스펙도 모듈화를 해주면 좋겠죠.\nspec.md 하나에 모든 것을 넣지 말고, 시스템의 도메인이나 기능 단위로 파일을 쪼개고 그 필요한 정보만 주면 context 가 너무 커져서 AI 가 hallucinate 하는걸 방어할수 있을겁니다.\n• 구조 예시:\n• docs/specs/index.md: 전체 개요 및 목차\n• docs/specs/auth.md: 인증/인가 관련 스펙\n• docs/specs/payment.md: 결제 로직 스펙\n• docs/specs/api/: API 엔드포인트별 상세 문서",
       "media": [],
       "crawled_at": "2026-02-12T19:05:32.128",
-      "code": "DT6c3mrEwmC",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DT6c3mrEwmC",
       "user": "hajae.code",
       "timestamp": "2026-01-25 09:19:24",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 123
     },
     {
-      "sequence_id": 181,
+      "sequence_id": 189,
       "sns_platform": "threads",
+      "code": "DT4v2-dEzVu",
       "full_text": "📘 체계적인 AI 코딩, Claude Code 시작하기\n\n[1/6]\n2026년, AI 코딩의 새로운 패러다임\n\n이제 AI에게 “이거 만들어줘”라고\n막연히 요청하는 시대는 지났어요.\n\n요즘 개발자들 사이에서 가장 주목받는 개념은 바로 SKILL.md와 SPEC.md입니다.\n\n핵심은 이거예요:\nAI를 단순한 코딩 도우미가 아니라,\n특정 역할과 전문성을 가진 팀원처럼 활용하는 것.\n\n마치 신입 개발자에게 회사의 코딩 규칙을 알려주듯, \nAI에게도 명확한 가이드라인을 제공하는 거죠.\n\n오늘은 코드를 작성하기 전에 \nAI의 작업 방식을 설정하는 5가지 문서 체계를 소개할게요.\n\n---\n\n[2/6]\n💡 SKILL.md - AI의 전문 기술 매뉴얼\n\n.claude/skills/ 폴더에 저장하는 재사용 가능한 작업 지침서예요.\n\n이런 용도로 사용해요:\n• UI 접근성 검사하는 방법\n• 코드 리뷰 시 체크할 항목들\n• 데이터베이스 마이그레이션 절차\n\n장점:\n• 한 번 만들면 여러 프로젝트에서 계속 활용 가능\n• Claude가 상황에 맞춰 자동으로 적절한 스킬 선택\n• /skill-name 명령으로 즉시 호출 가능\n\n쉽게 비유하면:\n전문가용 앱을 AI에게 설치해주는 것과 같아요. 필요할 때마다 꺼내 쓸 수 있죠.\n\n---\n\n[3/6]\n🛠 CLAUDE.md - 프로젝트의 기본 규칙\n\n프로젝트 최상위 폴더에 두는 종합 가이드라인이에요.\n\n포함할 내용:\n• 기술 스택: React, TypeScript, Tailwind, Vite 등\n• 코딩 규칙: 함수형 컴포넌트 사용, 변수명은 camelCase로\n• 필수 제약사항: API 호출할 땐 반드시 로딩 처리하기, 테스트 없으면 커밋 금지 등\n\n왜 중요한가요?\n새로운 대화를 시작해도 AI가 우리 팀의 스타일을 기억하고 일관되게 작업할 수 있어요.\n\n---\n\n[4/6]\n📐 SPEC.md & PLAN.md - 구현 전 설계도\n\n코딩하기 전에 “무엇을” 만들지, “어떻게” 만들지 명확히 하는 문서예요.\n\nSPEC.md (상세 명세서):\n• 데이터는 어떤 구조로 저장할지\n• API는 어떤 형식으로 주고받을지\n• 오류 상황은 어떻게 처리할지\n\nPLAN.md (실행 계획서):\n• SPEC을 실제로 구현하기 위한 단계별 작업 목록\n• 1단계, 2단계… 순서대로 진행할 작업들\n\n효과:\nAI가 “일단 만들어볼게요!“하고 무작정 시작하는 걸 방지할 수 있어요.\n\n쉽게 비유하면:\n건물 짓기 전에 설계도를 그리는 것과 같아요. 설계가 탄탄하면 시공 오류가 거의 없죠.\n\n---\n\n[5/6]\n📝 SCRATCHPAD.md - 작업 진행 상황 메모장\n\nAI의 단기 기억을 보완해주는 실시간 작업 노트예요.\n\n기록할 내용:\n• 지금 하고 있는 작업\n• 발견한 버그나 문제점\n• 다음에 해야 할 일\n\n왜 필요한가요?\n대화가 끊겨도 이 문서만 읽으면 AI가 바로 이전 작업 맥락을 파악할 수 있어요.\n\n팁:\n작업 마무리할 때 “지금까지 한 작업을 SCRATCHPAD에 정리해줘”라고 요청해보시면 됩니다.\n\n---\n\n[6/6]\n✨ 결론: 핵심은 ‘명확한 정보 전달’\n\n도구별 활용 방법:\n\nClaude Code / Cursor 같은 전문 코딩 도구:\n• 위에서 소개한 .md 파일들로 체계적으로 제어\n• SKILL과 SPEC을 활용한 설계 중심 개발 추천\n\n일반 대화형 AI (ChatGPT 등):\n• 아이디어 브레인스토밍에 적합\n• 나온 결과물을 위 문서 형식으로 정리해서 활용\n\n핵심 메시지:\nAI 코딩을 잘하려면 결국 ‘어떻게 명확하게 지시할 것인가’가 중요합니다.\n\n마치 좋은 기획서가 좋은 결과물을 만들듯이, 잘 정리된 문서가 좋은 코드를 만들어요.",
       "media": [],
       "crawled_at": "2026-02-12T19:05:35.143",
-      "code": "DT4v2-dEzVu",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DT4v2-dEzVu",
       "user": "newnatrd",
       "timestamp": "2026-01-24 17:26:51",
-      "is_merged_thread": true,
       "original_item_count": 6,
-      "is_detail_collected": true,
       "platform_sequence_id": 124
     },
     {
-      "sequence_id": 182,
+      "sequence_id": 190,
       "sns_platform": "threads",
+      "code": "DT6sAONj9K8",
       "full_text": "디자인과 코딩의 경계가 허물어지고 있습니다.\nClaude Code 위에서 작동하며 디자인을 즉시 코드로 변환해 주는 \"Pencil\"이 출시되었습니다.\n\nFigma 에서 작업한 시안을 복사해 붙여넣기만 하면, 픽셀 하나 틀어짐 없이 내 프로젝트 규칙에 맞는 코드로 완벽하게 변환해 줍니다.\n배우지 않으면 뒤쳐지는 시대입니다.\n\n---\n\n주소 :\npencil.dev",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/621443247_4318356861752704_6688661100472400420_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDM4MC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QF13gAxwMTwczovoi2V3KoN3bglufK-ymMMvuuLY_2cBrvNcIk-Q7TEzTUQl1bSW3U&_nc_ohc=1MgxB8Mo3o8Q7kNvwFbL7lU&_nc_gid=zaAkuvL1aGfJavUvlY3bgQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxNzU1NzE2MzQ1NjMyMDE4OA%3D%3D.3-ccb7-5&oh=00_AftROukSiKYUZSIoOt3caadKsJdDL_L9uiNecMnSFYL36A&oe=699AFF76&_nc_sid=10d13b"
@@ -3545,19 +3752,19 @@
       "local_images": [
         "web_viewer/images/972f8901f991a7fab1d03e9e0315c255.jpg"
       ],
-      "code": "DT6sAONj9K8",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DT6sAONj9K8",
       "user": "choi.openai",
       "timestamp": "2026-01-25 11:31:47",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 125
     },
     {
-      "sequence_id": 183,
+      "sequence_id": 191,
       "platform_id": "DT6raiWE90Y",
       "sns_platform": "threads",
+      "code": "DT6raiWE90Y",
       "username": "carpediem._young",
       "display_name": "carpediem._young",
       "full_text": "• 취업 원하는 취준생들에게\n아래 계정 모두 팔로우 하고 정독추천 \n2개월 가량 고심해서 고른 하기 계정들. \n\n- @dr.this.man 실제 대기업 임원\n- @dang_guel 취준생 신입사원의 팅커벨\n- @allpass_everything 취업 정석 코칭샘\n- @insateam_hr 취업과 인생조언\n- @mok_hamm 가치를 알려주는 \n- @carpediem._young 직장 내 마음가짐\n\n인스타 및 네이버블로그 홍보성 글에 가서 헛걸음 하지 말고, 올바른길을 걷자구 들.",
@@ -3567,6 +3774,7 @@
       "date": "2026-01-25",
       "crawled_at": "2026-02-12T19:05:35.144",
       "source": "network",
+      "is_merged_thread": false,
       "root_code": "DT6raiWE90Y",
       "like_count": 47,
       "reply_count": 32,
@@ -3575,14 +3783,13 @@
       "pk": "3817554573733911832",
       "media_type": 19,
       "content_type": "image",
-      "code": "DT6raiWE90Y",
-      "is_merged_thread": false,
       "platform_sequence_id": 126
     },
     {
-      "sequence_id": 184,
+      "sequence_id": 192,
       "platform_id": "DT5aah0AQBc",
       "sns_platform": "threads",
+      "code": "DT5aah0AQBc",
       "username": "port_zen",
       "display_name": "port_zen",
       "full_text": "엄청나더라 안티그라비티 이런거 까지 가지 않아도 제미니로 웹에 코드 짜달라하고 디자인이 이상하면 스티치에서 말로 디자인 만든 후에 제미니한테 이 디자인이로 하고 던져주면 정말 요즘 출시되는 앱처럼 한 번에 되더라구 :)",
@@ -3592,6 +3799,7 @@
       "date": "2026-01-24",
       "crawled_at": "2026-02-12T19:05:35.144",
       "source": "network",
+      "is_merged_thread": false,
       "root_code": "DT5aah0AQBc",
       "like_count": 4,
       "reply_count": 1,
@@ -3600,13 +3808,12 @@
       "pk": "3817198331394850908",
       "media_type": 19,
       "content_type": "image",
-      "code": "DT5aah0AQBc",
-      "is_merged_thread": false,
       "platform_sequence_id": 127
     },
     {
-      "sequence_id": 185,
+      "sequence_id": 193,
       "sns_platform": "threads",
+      "code": "DT5NBtck8JT",
       "full_text": "이제 모든 사람이 \n앱 디자인을 할 수 있다.\n\n구글에서 나온 디자인 AI Stitch로\n순식간에 앱 디자인 가이드를 완성했다.\n자연어로 화면을 다듬고 폰트, 스타일, 키컬러를 적용한다. \n\n쓰면서 너무 좋았는데\n동시에 너무 충격적이었음……. \n심지어 이거 아직 Beta 버전이다",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/621164551_17851491627656560_3289273908987541312_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uNTkxeDQ1OC5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QG8KkQTQONi9k06E_jjsO0YIcvk63JpDsr4t1QBKbtHPQ93AzzSyKnFjDAbqaMy4xw&_nc_ohc=7jxF4-VuMmsQ7kNvwHXNMmp&_nc_gid=kj2YO_ylImDqw27QZsc5vA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxNzEzOTQ0NjM4NzgxODk1OQ%3D%3D.3-ccb7-5&oh=00_Afsy3Ml0aOXIYmPClzg0lMvdW0xsbUbkUHWDOnYVKpZsPA&oe=699AF3C7&_nc_sid=10d13b"
@@ -3615,33 +3822,33 @@
       "local_images": [
         "web_viewer/images/c6152b5a0bd999a25f2106b482fdf43d.jpg"
       ],
-      "code": "DT5NBtck8JT",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DT5NBtck8JT",
       "user": "_mote_y",
       "timestamp": "2026-01-24 21:41:43",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 128
     },
     {
-      "sequence_id": 186,
+      "sequence_id": 194,
       "sns_platform": "threads",
+      "code": "DT5T4kmEsEG",
       "full_text": "ClaudeCode 그리고 Antigravity를 사용하면서 느낀점.\n\n---\n\n1. 이제 소프트웨어가 얼마나 더 필요한가?\n1.1 소프트웨어를 완결하게(?)만들필요가 있나?\n1.2 소프트웨어를 잘(?) 만들 필요가 있을까?\n\n---\n\n2. 나의 경험\n2.1 파이썬+라이브러리+api으로 퀀트 계산을 하면서, 필요에 따라 추가 개발을 하고있다.\n2.2 결과는 AI에이전트에서 확인을 하고 있다.\n\n---\n\n3. 소프트웨어를 판매 난이도가 올라간다.\n3.1 가공된 정보 API를 제공해줘서, 토큰 사용량을 줄여주는 일? 편리하게 계산?\n3.2 최소한 프론트엔트는 사용자 입맛에 커스텀할 수 있겠다.\n3.3 소프트웨어를 만들어서 팔수있는 기회가 얼마 안남은것 아닐까?\n\n---\n\n4. 정보를 제공하는 뉴스레터 처럼, 에이전트가 먹을수 있는 업데이트패치?보안패치? 같은 프롬프트를 판매하는 날이 올까요?\n\n---\n\n5. 앞으로 대부분의 일은  에이전트를 개발,유지보수,개선,수정,평가 하는 일일텐데\n5.1 마치 스포츠팀을 관리하는것과 같은 능력이 필요할것 같다\n5.2 이부분은 로컬에서 처리하고, 새로운 모델 영입해서 테스트해보고 등등\n\n---\n\n6. 뭐가 더 효용성있겠나? 꼬꼬마들이.\n6.1 할배들이 쓰는 엑셀 배우기 vs 엑셀로 알수있는 결과값을 코드에이전트로 하기\n6.2 개인용 커스텀 행렬 에이전트 라고 부를까?\n6.3 이것을 중학교때부터 만들기 시작한다면??\n6.4 개인용 의사결정 에이전트 뚝딱 되는거지...",
       "media": [],
       "crawled_at": "2026-02-12T19:05:38.158",
-      "code": "DT5T4kmEsEG",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DT5T4kmEsEG",
       "user": "heon_yun",
       "timestamp": "2026-01-24 22:41:38",
-      "is_merged_thread": true,
       "original_item_count": 7,
-      "is_detail_collected": true,
       "platform_sequence_id": 129
     },
     {
-      "sequence_id": 187,
+      "sequence_id": 195,
       "sns_platform": "threads",
+      "code": "DT5QjkwkjLL",
       "full_text": "사이먼 시넥이 TED 강연 5000만뷰 찍고\n애플, 디즈니한테 1억씩 받으며 한 말 TOP 5\n\n이거 모르면 평생 가격경쟁만 합니다.\n저장하고 3번 이상 보세요!!!\n\n1. \"당신 제품 설명부터 하면 이미 졌다\"\n스펙 늘어놓는 순간 고객은 꺼집니다.\n실전: \"우리는 ___를 믿습니다. 그래서 이걸 만들었습니다\" 이 순서로 말하세요.\n\n---\n\n2. \"애플은 컴퓨터 회사가 아니다. 혁명 회사다\"\n제품 카테고리에 갇히는 순간 끝입니다.\n실전: \"우리는 ___업체\" 말하지 말고 \"우리는 ___하는 세상 만듭니다\" 선언하세요.\n\n---\n\n5. \"가격으로 경쟁하면 가격으로 배신당한다\"\nWhy 없으면 → 싼 곳으로 갑니다. Why 있으면 → 비싸도 삽니다.\n실전: 고객한테 \"왜 우리 거 써요?\" 물어보세요. \"싸서요\" 나오면 망하는 중입니다.\n\n---\n\n4. \"고객이 아니라 신도를 만들어라\"\n할리데이비슨 로고 문신 새기는 사람 있습니다. 당신 브랜드는?\n실전: \"이 브랜드 없어지면 아쉬울 사람 100명 있나?\" 자문하세요.\n\n---\n\n3. \"골든 서클: 99%가 반대로 말해서 망한다\"\n실패: What(제품) → How(방법) → Why(이유)\n성공: Why(이유) → How(방법) → What(제품)\n실전: 홈페이지 첫 줄에 제품명 박지 마세요. 신념 박으세요.",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/620512320_17851664895657769_7933729597317323080_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjUweDQ0MC5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QEO6rAN0E_r2C2rxQ3E0ewRlDxdLFPUyQY0rVmkxBWos6RNJOb-Sj3NcPlrhthEMnE&_nc_ohc=6Q3xCdrTNNMQ7kNvwHnT04V&_nc_gid=RQCuZMtUWeIg1BgOnz0tYg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxNzE1NDk3MjU2ODY2MjczMQ%3D%3D.3-ccb7-5&oh=00_AfuWiqsMzieM8VNpJxRP5-nEOIRIEWkqZBwZm6Yb166N1w&oe=699ADFF8&_nc_sid=10d13b"
@@ -3650,18 +3857,18 @@
       "local_images": [
         "web_viewer/images/5b756ca0a108d2fe2707cc74f4486f6c.webp"
       ],
-      "code": "DT5QjkwkjLL",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DT5QjkwkjLL",
       "user": "jaycee_donuts",
       "timestamp": "2026-01-24 22:12:34",
-      "is_merged_thread": true,
       "original_item_count": 5,
-      "is_detail_collected": true,
       "platform_sequence_id": 130
     },
     {
-      "sequence_id": 188,
+      "sequence_id": 196,
       "sns_platform": "threads",
+      "code": "DT2vUQliQgk",
       "full_text": "💻 Claude Code + Stitch MCP\n\nGoogle에서 Figma 대항마로 내놓은 Stitch라는 디자인 툴을 처음 써봤습니다.\n베리에이션 잘 쳐주는게 꽤 마음에 드네요.\n\n1/ Setup https://stitch.withgoogle.com/docs/mcp/setup/\n- gcloud cli를 사용합니다. Google Cloud SDK 설치하고, Project Token 가져오기\n- Cursor, Antigravity, VSCode, Claude Code, Gemini CLI에서 MCP 연동 가능\n\n2/ skills는 아래 2가지가 있음 https://github.com/google-labs-code/stitch-skills\n- Stitch 프로젝트 <-> 디자인 시스템을 문서화 (`DESIGN.md`)\n- Stitch -> React 변환 \n- (이어서)\n\n---\n\n3/ 기존 디자인을 갈아 엎을 때 사용 👍\n- 디자인 프로젝트 생성부터 Claude Code에서 진행 가능\n- 2에서 DESIGN.md를 미리 정의해두기\n- (저는 bmad에서 ux agent랑 만들어둔 DESIGN.md가 있었음)\n- 디자인이 끝나면 stitch project 링크를 알아서 던져줍니다.\n\n4/ 추가팁\n- VERY IMPORTANT: To avoid what is often referred to as \"AI slop\", avoid using excessive centered layouts, purple gradients, uniform rounded corners, and Inter font.\n- stitch에서 3.0 pro로 응답이 느려지면 지가 알아서 flash를 사용해버릴 때가 있습니다. 😅\n- claude code에서 레퍼런스 이미지 던지기 -> stitch에서 알아서 인식함\n\n---\n\n5/ 2가 귀찮으면 여기서 알아서 해줌. https://github.com/davideast/stitch-mcp (MCP Helper CLI)",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/621573128_17902192800360597_3880519592420525322_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMjE2MHgxMjQ5LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QGBK--lWSOjtuDrGxMUJHk_M8zxwGy-keKtBC1HE0JQ8Furj80rdCtilaOEAn5G-Ek&_nc_ohc=hmKxgNVcfckQ7kNvwEJjx8m&_nc_gid=9y1lIVnfBg3t5oWPIpggcw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxNjQ0NTgzNDYyODIzNzM0OA%3D%3D.3-ccb7-5&oh=00_Afsv8Au057p_LSOkJ3thbO4Oey2-Sb2lhMNdq6vCDpXDOg&oe=699ADA0F&_nc_sid=10d13b"
@@ -3670,18 +3877,18 @@
       "local_images": [
         "web_viewer/images/a28d43f29d8656b193ceb15a203f6958.jpg"
       ],
-      "code": "DT2vUQliQgk",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DT2vUQliQgk",
       "user": "cloudian__",
       "timestamp": "2026-01-23 22:43:38",
-      "is_merged_thread": true,
       "original_item_count": 3,
-      "is_detail_collected": true,
       "platform_sequence_id": 131
     },
     {
-      "sequence_id": 189,
+      "sequence_id": 197,
       "sns_platform": "threads",
+      "code": "DT309qmktRH",
       "full_text": "1년에 400조 쓸어담는\n빌 게이츠의 소름끼치는 사업 인사이트 TOP30\n\n인사이트 정리할려고\n목숨을 걸었다.\n\n저장하고 3번 읽어라.\n\n1. 남이 쓰는 걸 그대로 따라 쓰게 만들어라.\n→ 윈도우는 “제일 좋은” 게 아니라 “다 쓰는” 게 됐다.\n\n---\n\n2. 한 번 쓰면 바꾸기 귀찮게 만들어라.\n→ 회사 컴퓨터 전부 윈도우라 다른 걸 못 쓴다.\n\n---\n\n3. 공짜로 뿌려서 시장부터 장악해라.\n→ 브라우저도 공짜로 뿌려서 경쟁사 숨막혔다.\n\n---\n\n4. 프로그램을 묶어서 팔아라.\n→ 워드, 엑셀, 파워포인트를 세트로 묶어\n강제로 쓰게 했다.\n\n---\n\n5. 학생 때부터 길들여라.\n→ 학교에 윈도우 깔아두면 커서도 계속 쓴다.\n\n---\n\n6. 돈보다 습관을 먼저 만들어라.\n→ 습관이 형성되면 돈은 자동으로 따라온다.\n\n---\n\n7. 회사들이 쓰게 만들면 평생 고객이다.\n→ 개인보다 기업 고객이 더 오래 돈 낸다.\n\n---\n\n8. 새로운 걸로 절대 안 바꾼다.\n→ 익숙함이 최고의 무기다.\n\n---\n\n9. 실패해도 기술은 남겨 둔다.\n→ 망한 제품도 다음 성공의 재료다.\n\n---\n\n10. 경쟁사 기술은 그냥 사버려라.\n→ 싸우는 것보다 사는 게 빠르다.\n\n---\n\n11. 완벽보다 먼저 나오는 게 중요하다.\n→ 일단 쓰게 만들면 고칠 시간은 많다.\n\n---\n\n12. 업데이트로 계속 묶어둔다.\n→ 새 기능으로 떠날 생각을 못 하게 한다.\n\n---\n\n13. 회사에 필수 프로그램이 되면 끝이다.\n→ 안 쓰면 일 못 하면 무조건 산다.\n\n---\n\n14. 공짜 체험으로 중독시켜라.\n→ 쓰다 보면 결국 결제한다.\n\n---\n\n15. 시장 1등보다 ‘기본값’을 노려라.\n→ 기본으로 깔린 순간, 경쟁은 의미 없다.\n\n---\n\n16. 기업이 매일 쓰는 도구를 만들어라.\n→ 매일 쓰면 해지라는 개념이 사라진다.\n\n---\n\n17. 가격보다 교체 비용으로 장악해라.\n→ 바꾸기 귀찮아지면 평생 고객이다.\n\n---\n\n18. 돈 쓰는 사람을 공략해라.\n→ 실무자가 아니라 결재권자를 설득해야 계약이 열린다.\n\n---\n\n19. 진입 장벽을 최대한 낮춰라.\n→ 설치 5분, 회원가입 1번이면 확산 속도가 폭발한다.\n\n---\n\n20. 처음엔 싸게, 나중엔 비싸게 팔아라.\n→ 진입은 쉽게, 이탈은 어렵게 만들어라.\n\n---\n\n21. 고객의 ‘귀찮음’을 대신 해결해라.\n→ 귀찮음을 없애주는 서비스는 절대 해지 안 한다.\n\n---\n\n22. 한 기능으로 일을 끝내게 만들어라.\n→ 여러 툴 왔다 갔다 할 필요 없게 하면 충성도가 생긴다.\n\n---\n\n23. 고객의 실수까지 대신 책임져줘라.\n→ 백업, 복구, 자동저장 같은 안전장치는 돈이 된다.\n\n---\n\n24. 매달 쓰게 만드는 이유를 만들어라.\n→ 일회성 사용은 사업이 아니라 이벤트다.\n\n---\n\n25. 데이터가 쌓일수록 더 편해지게 설계해라.\n→ 오래 쓸수록 떠나기 힘들게.\n\n---\n\n26. 하루에 책 50쪽은 무조건 읽어라.\n→ 빌 게이츠는 바쁠수록 독서량을 늘렸다.\n판단력은 축적된 입력에서 나온다.\n\n---\n\n27. 똑똑한 사람과만 토론해라.\n→ 혼자 똑똑해지는 건 한계가 있고,\n환경이 수준을 끌어올린다.\n\n---\n\n28. 모르면 인정하고 바로 배워라.\n→ 자존심 지키는 순간 성장은 멈춘다.\n\n---\n\n29. 장기 게임으로 인생을 설계해라.\n→ 단기 성과에 집착하면 절대 제국을 못 만든다.\n\n---\n\n30. 돈보다 ‘영향력’을 목표로 삼아라.\n→ 영향력이 커지면 돈은 따라온다.\n\n---\n\n31. 이런 빌게이츠도 바람 펴서 이혼당했다.\n여자 문제가 가장 크다.",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/621617305_17873308422506863_5729000433692382214_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uNDQ3eDQ0Ny5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QH_DtlKVwL7QsOTgsrw81ayx8Afh6dKXm7YSG0xO9WyDkEFtLVi0ws8XIux4Sh1y8M&_nc_ohc=g3X02MtOXnMQ7kNvwElpaqP&_nc_gid=kD-nzK6awV1PV-SeV3rHyQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxNjc1MjE0MDMyMTQ2MjY4MQ%3D%3D.3-ccb7-5&oh=00_AfvmIqvV4nla7xZgDGgQ1_0jwmwww9Xq_d_4QQMvlfnXiw&oe=699B0725&_nc_sid=10d13b"
@@ -3690,18 +3897,18 @@
       "local_images": [
         "web_viewer/images/1fd51845773c6c08eb12c1c4a6aa1d82.jpg"
       ],
-      "code": "DT309qmktRH",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DT309qmktRH",
       "user": "beyond.cho",
       "timestamp": "2026-01-24 08:52:13",
-      "is_merged_thread": true,
       "original_item_count": 31,
-      "is_detail_collected": true,
       "platform_sequence_id": 132
     },
     {
-      "sequence_id": 190,
+      "sequence_id": 198,
       "sns_platform": "threads",
+      "code": "DTPadYiERZI",
       "full_text": "글쓰기 후 교정과 교열을 도와주는 서비스 소개합니다.\n\n\"바른한글\" 이라는 부산대에서 만든 서비스 입니다\n글자 수 제한도 없고, \n기존 단어와 대치어를 함께 보여주기 때문에 \n공부도 하고 수정도 하고\n일석이조인 사이트 입니다!\n\n[바른한글]\nhttps://nara-speller.co.kr/speller/",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/611261195_17865481131549867_7702419871461631912_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTE2MXg4MDAuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QHj1_OT1plOHQ5MiDmR63xGydwNbhsmIp1mIUbuZI7_aWFL2b4wsDzwMgBqbVbbayw&_nc_ohc=AHw7EUwxzHUQ7kNvwFUHtl0&_nc_gid=z0gMPtqaCitKV7f3Bp3AUA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwNTM3NjU3ODU2NjgyMTQ0OA%3D%3D.3-ccb7-5&oh=00_AftCNtE-TRruAQMYKwg6Y_fumG_pUIZRQAfF99jr95ZRkQ&oe=699B0208&_nc_sid=10d13b"
@@ -3710,78 +3917,78 @@
       "local_images": [
         "web_viewer/images/756a6c130fc4981a788ad7d2e297cd96.jpg"
       ],
-      "code": "DTPadYiERZI",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTPadYiERZI",
       "user": "pulplewhale",
       "timestamp": "2026-01-08 16:11:00",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 133
     },
     {
-      "sequence_id": 191,
+      "sequence_id": 199,
       "sns_platform": "threads",
+      "code": "DT2CYlsFRnG",
       "full_text": "거...앱만들어서 파는 것보담\n바이브코딩을 통해 툴을 만들어\n자기가 하는 일의 \n생산성 증대하는게 훨씬 낫다.\n\n내가 하는 일의 플러스 알파.\n경쟁자들을 따돌리는 가치!\n\n상상을 해보자...\n예를 들어 아파트 관리 포털을\n만들고 건물 내부망에 띄워 \n민원과 일처리를 쉽게하는 \n경비아저씨? 바이브 경비?\n자세 교정을 해주는 헬스 트레이너가\n자기만의 브랜드를 입히고\n자기 회원들에게 \n운동 내용을 보여주고 관리를 하는 앱?\n정말로 다양하다.\n굳이 앱스토어에 올려서 불특정 다수에게\n팔 필요가 없는거다.\n내가 지금 하고 있는 일의 플러스 알파가\n되는 무언가를 만들어 월수입을 끌어 올리고\n고객들에게 가치를 제공하는 것만으로도\n바이브 코딩의 가치는 살아있게 된다!",
       "media": [],
       "crawled_at": "2026-02-12T19:05:41.173",
-      "code": "DT2CYlsFRnG",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DT2CYlsFRnG",
       "user": "unaappa",
       "timestamp": "2026-01-23 16:11:00",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 134
     },
     {
-      "sequence_id": 192,
+      "sequence_id": 200,
       "sns_platform": "threads",
+      "code": "DTykKIbES09",
       "full_text": "방문자가 팔로워가 안 되는 가장 큰 이유.\n상단 고정 핀 3개, 순서 엉망으로 해뒀기 때문입니다.\n\n대부분 그냥 '내가 보기에 예쁜 것'을 박아둡니다.\n그건 마케팅이 아니라 자기만족이죠.\n철저하게 신규 유입자를 꼬시는 '깔때기' 순서대로 배치해야 합니다.\n\n딱 정해드립니다. 이 순서대로만 박으세요.\n\n1. 자기소개 (신뢰)\n왼쪽 첫 번째는 무조건 명함입니다.\n내가 누구고, 어떤 가치를 줄 수 있는지 밝히세요.\n여기서 공감을 못 얻으면 바로 이탈입니다.\n\n---\n\n2. 압도적 성과 (권위)\n가장 반응 좋았던 꿀팁이나 인사이트를 배치하세요.\n\"이 사람 진짜네?\"라는 생각이 들게 만들어야 합니다.\n실력이 증명되어야 팔로우 버튼을 누릅니다.\n\n3. 제공 서비스 (전환)\n마지막은 비즈니스입니다.\n그래서 뭘 팔고 있는지, 뭘 도와줄 수 있는지 명확히 하세요.\n여기까지 온 사람만 지갑을 엽니다.\n\n---\n\n이 3단계 구조, 머리로는 알겠는데 막상 만들려니 막막한가요?\n기획부터 카드뉴스 제작까지 AI에게 맡기세요.\n자동으로 다 해주는 솔루션, 저 혼자 쓰기 아까워 공유합니다.\n\n어떻게 쓰는지 궁금하면 프로필 링크 눌러서 확인해보세요.\n도구 탓할 시간에 링크 한 번 누르는 게 이득입니다.",
       "media": [],
       "crawled_at": "2026-02-12T19:05:41.173",
-      "code": "DTykKIbES09",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTykKIbES09",
       "user": "social.romanc",
       "timestamp": "2026-01-22 07:49:14",
-      "is_merged_thread": true,
       "original_item_count": 3,
-      "is_detail_collected": true,
       "platform_sequence_id": 135
     },
     {
-      "sequence_id": 193,
+      "sequence_id": 201,
       "sns_platform": "threads",
+      "code": "DT0InBtEnzX",
       "full_text": "속보: GOOGLE이 방금 대규모 업그레이드 되었습니다\n\nGemini는 지금 구글 드라이브 안에 있습니다!\n\n---\n\n더 이상 파일을 일일이 열어볼 필요가 없습니다. 그냥 선택하고 → Gemini에게 물어보세요.\n\n1) Drive를 AI 어시스턴트처럼 사용 (자동 정리 + 작업 수행)\nDrive에게 무엇을 할지 직접 말할 수 있습니다.\n\n예시 프롬프트:\n\t∙\t“Design이라는 폴더를 만들어”\n\t∙\t“이 파일들을 월별로 폴더에 정리해”\n\t∙\t“모든 인보이스를 한 폴더로 이동시켜”\n\n2) 파일을 열지 않고 내용 추출하기\n문서를 일일이 열어보고, 하나씩 검색하고, 추측하는 대신…\n그냥 Gemini에게 물어보세요.\n\n예시:\n\t∙\t“이 파일들에서 가격 정보를 찾아줘”\n\t∙\t“어떤 파일에 마감일이 언급되어 있어?”",
       "media": [],
       "crawled_at": "2026-02-12T19:05:44.193",
-      "code": "DT0InBtEnzX",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DT0InBtEnzX",
       "user": "health_love_wealth_",
       "timestamp": "2026-01-22 22:26:55",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 136
     },
     {
-      "sequence_id": 194,
+      "sequence_id": 202,
       "sns_platform": "threads",
+      "code": "DTUjVRGCSgI",
       "full_text": "크리에이터로써 \n제 가장 큰 목표는\n그냥 오래 하는 것입니다.\n\n저는 이제 햇수로 3년차입니다.\n이 짧은 기간에 수천명을 만났는데요.\n\n너무나도 많은 사람들이\n1인 기업을 하겠다,\n크리에이터를 하겠다,\n월 1000을 벌겠다, 하면서\n대부분 사라졌고 안보입니다.\n\n이유가 뭘까요?\n그 이유는\n\n---\n\n딱 2가지입니다.\n\n1. 좋은 콘텐츠를 계속 못만들어서\n2. 수익화를 지속하지 못해서입니다.\n\n1번은 정말 할 말이 많지만 다음 기회로 하고,\n\n2번, 즉 수익화는 지속 못하면 \n치명적이라 봅니다.\n\n돈을 버세요. \n크리에이터를 하는 이유입니다.\n돈을 잘 벌면 하게 되어 있습니다.\n\n---\n\n돈을 버는 방법은 의외로 \n몇가지 없는 것 같습니다.\n아주 기발한 그런 건 없다고 봐요.\n\n제가 아는 걸 나열하자몈\n\n1. 강의\n2. 제품 (디지털, 오프라인)\n3. 광고 (애드센스, 유튜브, 인바운드 광고)\n4. 외주 (컨설팅, 구축 등)\n\n이 이상의 것이 별로 없는 것 같아요.\n\nWhat은 거의 고정되어 있고\n결국 How의 싸움 같습니다.\n\nHow는 결국 세일즈 같습니다.\n특히 AI 시대라면요.\n\n---\n\n무엇으로 돈을 벌지 꼭 염두에 두면서,\n그리고 그 돈을 계속 벌 생각을 하면서\n크리에이터를 지속하길 바랍니다.\n\n돈 번다고 의외로 사람들이\n욕하거나 문제삼지 않습니다.\n\n돈 벌겠다고 외쳐도\n생각보다 사람들은 나에게\n정말 관심이 없거든요.",
       "media": [],
       "crawled_at": "2026-02-12T19:05:44.194",
-      "code": "DTUjVRGCSgI",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTUjVRGCSgI",
       "user": "joshproductletter",
       "timestamp": "2026-01-10 16:04:44",
-      "is_merged_thread": true,
       "original_item_count": 4,
-      "is_detail_collected": true,
       "platform_sequence_id": 137
     },
     {
-      "sequence_id": 195,
+      "sequence_id": 203,
       "sns_platform": "threads",
+      "code": "DRuFda3D2Ca",
       "full_text": "프롬프트 구걸하지 마세요.\n\n구글의 \"Gemini\"를 활용하면 영상, 이미지, 심지어 바이브 코딩에 필요한 제작 프롬프트를 즉시 받아볼 수 있습니다.\n\n원하는 결과물의 느낌만 설명하면 Gemini가 알아서 최적의 명령어 초안을 짜주는 방식이라 작업 속도가 확실히 달라집니다.\n\n프롬프트 추출 팁과 방법을 소개해드립니다. 🧵\n\n---\n\n1/ 이미지 프롬프트 뽑아내기\n\n프롬프트 :\n\n\"해당 이미지의 카메라 세팅, 조명, 색감 팔레트, 텍스처와 재질, 시선 유도와 원근감, 텍스트 스타일과 배치, 사실적 정확성, 해상도와 비율 같은 고급 이미지 컨트롤 요소, 피사체 외형과 옷차림, 배경 밀도, 레이어 구성, 시각적 초점, 색보정 스타일, 반사 특성, 재질감 표현, 촬영 기법 같은 디테일 묘사 등 디테일까지 전부 포함해 json 프롬프트로 작성해줘.\"\n\n---\n\n2/ 레퍼런스 이미지 팁\n\r\n첨부하는 레퍼런스 이미지가 많은 경우 이미지를 구분할 수 있는 라벨링을 이미지에 입력해보세요.\n\n\"2번 이미지를 참고하여 1번 이미지를 변환해주세요\" 와 같이 프롬프트 명령이 더욱 간편해집니다.\n\n---\n\n3/ 동영상 프롬프트 추출 :\n\n이미지 프롬프트와 마찬가지로 Gemini의 동영상 분석 기능을 활용해보세요.\n원하는 영상의 이미지를 넣고 생성 프롬프트를 요청하면 생성 가능한 프롬프트를 받아볼 수 있습니다.\n\n---\n\n4/ 이미지 변환 프롬프트 \n\nA-> B 이미지로 변환하는 프롬프트를 찾고 싶을 때는 아래 프롬프트를 사용해보세요 :\n\n\"1번 이미지를 2번 이미지로 변환하기 위한 카메라 세팅, 조명, 색감 팔레트, 텍스처와 재질, 시선 유도와 원근감, 텍스트 스타일과 배치, 레이아웃(콜라주, 화면분할 등), 사실적 정확성, 해상도와 비율, 피사체 외형과 옷차림, 배경 밀도, 레이어 구성, 시각적 초점, 색보정 스타일, 반사 특성, 재질감 표현, 촬영 기법, 필터, 흔들림 같은 디테일 묘사 등 디테일까지 전부 포함해 1번 이미지를 기반으로 2번 이미지로 만들 수 있는 json 변환 프롬프트로 만들어주세요.\"\n\n---\n\n5/ 바이브 코딩에 필요한 프롬프트도 한 번에 받아볼 수 있습니다.\n\n만약 프롬프트 없이 AI 스튜디오에 직접 영상을 업로드하여 동일하게 구현이 가능합니다.\n\n프롬프트가 어려워서 못했다는 이제 핑계입니다.\n\n---\n\n제일 중요한 것은 프롬프트를 너무 어렵게 생각하지 않는 것입니다.\n다양한 제작 사례를 살펴보고, \"해줘\" 스타일부터 \"JSON\", \"YAML\" 방식까지 점차적으로 확장해나가면서 디테일하게 수정해보는 경험이 가장 큰 자산입니다.\n\n그냥 해보세요!\n\n---\n\n이외에 \"리버스 프롬프팅 기법\"을 통해 더욱 정밀한 프롬프트 작성도 가능한데요.\n\n앞으로도 정말 유익하고 돈 벌어갈 수 있는 유익한 정보만을 공유해드리겠습니다.\n\n이 글이 유익했다면, 19만 6천명이 받아보는 최고의 AI 미디어 채널 @choi.openai 를 팔로우 해주세요!\n\n스레드에서 “단독”으로 AI 소식을 가장 빠르고 전문적으로 제공하고 있습니다.\n\nAI 활용법, 트렌드, 글로벌 인사이트, 독점 콘텐츠 등 다양하게 다루고 있습니다.\n\n재미있게 보셨다면 아래 첫 번째 게시물을 좋아요, 리포스트, 댓글 부탁드립니다 😊",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/588998247_17932862667112832_2917332180753379550_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMjE2MHgxMjE5LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHfzbPLHQNx_wkwUkO3cf7uWL2HFyluE_71TdZe89MR6Ky4CuyUeis-SwzpxltF_sI&_nc_ohc=xg-NAp9UQYYQ7kNvwHWaprS&_nc_gid=USq6pODBMOzyoixe33HMtA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc3Nzk4MTE5NjUyNjQxMjczMg%3D%3D.3-ccb7-5&oh=00_AfslxnN7j3wnJK_nj9Ax4CIxFj9Yn_MQi0WYKNR6sWt3Wg&oe=699ADD04&_nc_sid=10d13b",
@@ -3794,18 +4001,18 @@
         "web_viewer/images/610c61166bdaf8ccc4ad325acef0fcd4.jpg",
         "web_viewer/images/6cbae5834cc60ee9f10c21a6701b6829.jpg"
       ],
-      "code": "DRuFda3D2Ca",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DRuFda3D2Ca",
       "user": "choi.openai",
       "timestamp": "2025-12-01 21:01:10",
-      "is_merged_thread": true,
       "original_item_count": 8,
-      "is_detail_collected": true,
       "platform_sequence_id": 138
     },
     {
-      "sequence_id": 196,
+      "sequence_id": 204,
       "sns_platform": "threads",
+      "code": "DRk6TWjAjI-",
       "full_text": "🚨 이번 글을 놓치지 마세요.\n\n총 700여개의 나노바나나 프로의 프롬프트 저장소를 공유해드립니다.\n\n---\n\n1/ Opennana\n\nhttps://opennana.com/awesome-prompt-gallery/\n\n---\n\n2/ Awesome Nano banana Pro\n\nhttps://github.com/ZeroLu/awesome-nanobanana-pro\n\n---\n\n3/ 나노 바나나 프로 모음 :\nhttps://aiwarts101.feishu.cn/wiki/VZI8wX9crijvrXkw29fcUp4rnuP\n\n---\n\n4/ Awesome Nano banana\nhttps://github.com/PicoTrex/Awesome-Nano-Banana-images/tree/main",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/590400678_713772498440449_89093656562450990_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDQwNC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QEp-UO2VCasw1CZiH6J9GwlsK_fh_zV75v-8vCSQwsV0fqj-CuUyJYKbPLlbhpo_Xs&_nc_ohc=lv2zHu7IxP8Q7kNvwGVc1lN&_nc_gid=hrJ8iSlFInTpvgO3qlZSog&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc3NTM5ODgwNDIyMDY4NjkxMA%3D%3D.3-ccb7-5&oh=00_AfvolSmKVHbrqeA4Uv46w2PgWXrVTRGwfeDpPyIQ2SKdsA&oe=699AF2ED&_nc_sid=10d13b",
@@ -3822,33 +4029,33 @@
         "web_viewer/images/7503f16d98fc178997b939396ed2a22a.jpg",
         "web_viewer/images/17c8c3b93ffd483f16db91d7f092d1f8.jpg"
       ],
-      "code": "DRk6TWjAjI-",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DRk6TWjAjI-",
       "user": "choi.openai",
       "timestamp": "2025-11-28 07:30:30",
-      "is_merged_thread": true,
       "original_item_count": 5,
-      "is_detail_collected": true,
       "platform_sequence_id": 139
     },
     {
-      "sequence_id": 197,
+      "sequence_id": 205,
       "sns_platform": "threads",
+      "code": "DTO3zt4EwZx",
       "full_text": "현재 바이브코딩 최강 조합\n= Antigravity + Claude code\n\n1. Antigravity (안티그래비티)\n- 간단하고 빠른 수정\n- 나노바나나로 이미지 생성\n- 에이전트 매니저로 병렬 작업 관리\n\n2. Claude code (클로드 코드)\n- 복잡하고 어려운 로직 설계\n- 스킬과 에이전트 활용\n- 그냥 코딩 제일 잘 함\n\n저도 지금은 이렇게 만들고 있습니다.",
       "media": [],
       "crawled_at": "2026-02-12T19:05:47.212",
-      "code": "DTO3zt4EwZx",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTO3zt4EwZx",
       "user": "gwon_vibe",
       "timestamp": "2026-01-08 11:08:13",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 140
     },
     {
-      "sequence_id": 198,
+      "sequence_id": 206,
       "sns_platform": "threads",
+      "code": "DTzG-uEj-3p",
       "full_text": "바이브코딩 하다가 \"지금 뭐하고 있지?\" 싶을 때 없어?\n\n나는 맨날 그래서 도구 하나 만들었음.\n\n프로젝트 현황 물어보면\n8명의 C-Level이 자동으로 피드백 줌:\n\n👔 PM - PRD 검증됐나?\n🛠️ CTO - 기술 부채는?\n🧪 QA - 테스트 빠진 거 없나?\n🎨 CDO - UX 괜찮나?\n📢 CMO - 경쟁사 대비 포지셔닝은?\n💰 CFO - 수익화 전략은?\n🔒 CSO - 보안 구멍은?\n🔥 ERROR - 반복되는 실수는?\n\n혼자 개발해도 8명이 봐주는 느낌 ㅋㅋ",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/620978271_17860714695583183_6422955710809439643_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMjE2MHgxMjg1LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QFsGQzqmUekAXKH3STrkMzJKulGKl6_NVwX93pX6WJ0HXC6EyXTWFqIccQZhpXeDl0&_nc_ohc=hw15HptEpZcQ7kNvwGAUvKo&_nc_gid=oMfIYz4WB9a4DF-XMy_LWQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxNTQyNDAwMzQ0MDM1MTUwOA%3D%3D.3-ccb7-5&oh=00_AfuZDChOSp9sA8_kRFQK7dGmB15pH8cDr-LprDHcm-hwZg&oe=699AFD81&_nc_sid=10d13b"
@@ -3857,33 +4064,33 @@
       "local_images": [
         "web_viewer/images/aeb1380d408dbbfe71d5ea4218e8142b.jpg"
       ],
-      "code": "DTzG-uEj-3p",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTzG-uEj-3p",
       "user": "sinabrocoding",
       "timestamp": "2026-01-22 12:53:27",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 141
     },
     {
-      "sequence_id": 199,
+      "sequence_id": 207,
       "sns_platform": "threads",
+      "code": "DTzr3XyD9pL",
       "full_text": "Google Stitch MCP를 Claude Code나 Antigravity에 연결하면 AI가 디자인 시스템을 자동으로 이해한다는 거 알고 계셨나요?\n\n디자인-개발 시간이 50% 이상 줄어들어요.\n\n---\n\n1/ 사실 저도 처음엔 의아했거든요.\n\n\"AI가 디자인 컨텍스트를 어떻게 이해하지?\" 근데 실제로 써보니까 완전히 달랐어요.\n\nGoogle Stitch는 Google Labs에서 만든 AI 디자인 도구예요. 텍스트 프롬프트나 스케치를 넣으면 고품질 UI 디자인과 코드를 생성해주죠. 무료로 사용 가능하고요.\n\n---\n\n2/ 그런데 진짜 문제는 따로 있었어요.\n\nStitch에서 디자인을 만들면 코드를 수동으로 복사해야 했거든요. AI 에이전트는 그 맥락을 전혀 모르는 상태였고요.\n\n여기서 MCP가 등장해요. Model Context Protocol로 Stitch와 AI 에디터를 연결하면 AI가 디자인 프로젝트에 직접 접근할 수 있거든요.\n\n---\n\n3/ Claude Code에 설치하는 방법은 생각보다 간단해요.\n\n가장 권장하는 방식은 _davideast/stitch-mcp를 사용하는 건데요. 터미널에서 이렇게 입력하시면 돼요.\n\nnpx _davideast/stitch-mcp init\n\n이 명령어 하나로 Google Cloud 인증, 프로젝트 설정, API 활성화, MCP 설정까지 자동으로 다 처리해줘요. 진단 기능도 있어서 나중에 문제 생기면 확인하기 편하고요.\n\n---\n\n4/ Antigravity에서 쓰시려면 설정 파일을 직접 편집해야 해요.\n\n먼저 Google Cloud 설정은 동일하게 하시고요. 그다음 ~/.gemini/antigravity/mcp_config.json 파일을 열어서 stitch 서버를 추가하시면 돼요.\n\nJSON 형식으로 command는 npx, args는 -y와 stitch-mcp, env에는 프로젝트 ID를 넣으시면 끝이에요.\n\n---\n\n5/ 설치하고 나면 9가지 도구를 사용할 수 있거든요.\n\n제일 유용한 건 extract_design_context예요. 이걸로 Stitch 디자인의 \"DNA\"를 추출할 수 있어요. 색상, 폰트, 레이아웃 패턴 같은 거요.\n\n그다음엔 fetch_screen_code로 HTML 코드를 받거나, generate_screen_from_text로 새 화면을 만들 수 있고요.\n\n---\n\n6/ 실제 사용 사례를 하나 말씀드릴게요.\n\nStitch에서 전자상거래 사이트 5개 페이지를 만들었다고 해보세요. 홈, 상품 목록, 상세, 장바구니, 결제까지요.\n\nClaude Code에 \"같은 디자인으로 관리자 대시보드 만들어줘\"라고 하면 어떻게 될까요?\n\n---\n\n7/ AI가 extract_design_context로 기존 디자인 시스템을 분석하고, 그 스타일을 그대로 유지하면서 관리자 페이지를 생성해줘요.\n\n수동으로 스타일 가이드 작성할 필요가 없어졌죠. 디자인 일관성은 자동으로 유지되고요.\n\n실제로 MVP 개발 시간이 50-70% 줄었다는 사례들이 있어요.\n\n---\n\n8/ 문제 생기면 어떻게 해결하냐고요?\n\nAPI 활성화 안 되면 gcloud components install beta 실행하시고요. 인증 오류는 gcloud auth application-default login으로 해결할 수 있어요.\n\n도구가 안 보이면 에디터 재시작하시면 대부분 해결돼요.\n\n---\n\n9/ 결론적으로 디자인-개발 워크플로우를 자주 다루신다면 이거 설치해보시는 걸 강력 추천드려요. AI가 디자인 시스템을 이해하게 만드는 건 정말 큰 차이예요.\n\n여러분은 AI 에디터에 어떤 MCP 서버 연결해서 쓰고 계세요?\n\n---\n\n10/ 더 자세한 내용이 궁금하시다면 Google Stitch MCP 설정 가이드을 확인해보세요.\n\nhttps://discord.com/channels/@me/1276875193347866637/1463823941293310060",
       "media": [],
       "crawled_at": "2026-02-12T19:05:47.213",
-      "code": "DTzr3XyD9pL",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTzr3XyD9pL",
       "user": "qjc.ai",
       "timestamp": "2026-01-22 18:15:45",
-      "is_merged_thread": true,
       "original_item_count": 11,
-      "is_detail_collected": true,
       "platform_sequence_id": 142
     },
     {
-      "sequence_id": 200,
+      "sequence_id": 208,
       "sns_platform": "threads",
+      "code": "DTzWbLkE2JY",
       "full_text": "Disco 가 정식 출시되기 전까지 Google 의 가장 강력한, 아니 전세계 통틀어서 가장 강력한 AI Product 라고 생각하는 (근간인 Gemini 는 논외) NotebookLM 에 대해 구글이 공식으로 소개하는 Notebook 을 보면... \n\n(공유문서함 탭에 들어 있는데, 이 탭이 안보이시면 메인 화면 하단에 예시 노트북 사용해 보기 버튼 누르시면 생성)\n\n해당 노트북에 보이는 각종 스튜디오 생성 결과물들이 있는데, 인포그래픽을 엄청 잘 만들면서 인포그래픽 예시를 안넣어 놓은 건 도저히 이해가 안가지만(hey, a Googler, let's do better), 아주 고퀄의 슬라이드가 있는데 그 생성 프롬포트를 바로 확인해보실 수 있습니다. 그 중에서도 핵심인 멋진 주제 이미지를 만들어 내는 프롬프트가 아래 문장입니다. \n\n#ai #notebooklm #prompt #customersuccess #agent\n\n---\n\n\"Illustrate each use case with beautiful, 3D cut-paper style illustrations\"\n\n저도 한 번 써봐야겠네요. 워낙에 고퀄로 생성이 되서...\n\n참고로, 제 경우 새롭게 접하는 솔루션/도구 등에 대해서 빠르게 캐치할 때 관련 공식 tech document 들의 url 을 전부 크롤링한 다음에, \"Manual of XXX\" 같은 이름으로 NotebookLM 에 새로운 노트북을 만들어서, 마인드맵, 플래시카드, 퀴즈, 개요 소개 레포트, 기능 설명 영상 등을 생성해서 활용합니다. \n\n사실 본인이 배울 때도 좋지만, 본인이 만약 B2B 솔루션의 세일즈라고 하면 이렇게 생성한 결과물을 고객에게 제공해서 고객이 손쉽게 이해하고, 궁금한 건 바로 물어보면 자동으로 AI 가 답변하게 하는 CS(customer success) 도구로서도 최고입니다. \n\n#ai #notebooklm #prompt #customersuccess #agent\n\n---\n\n흠... 적다보니 앞부분 프롬프트 팁보다는 마지막 부분인 바로 위에 적은 것이 정말 강력한 꿀팁이었는데, 여기까지 다 읽으신 분이 얼마나 될지 모르겠네요. 준비 중인 제 콘텐츠 베이스캠프에서는 그런 게 다 측정이 되겠지만...\n\n참고로, 저 위에 이야기한 매뉴얼 문서들 크롤링을 알아서 해주는 NotebookLM 크롬 익스텐션도 여럿 있습니다.\n\n#ai #notebooklm #prompt #customersuccess #agent",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/619541608_17940193086110550_5325140209167438338_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMjgxMngxMzE4LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QFQPPJeMlAsFqqlw0rY2rkdA1YMu4iBG1XRpO64IAP3UMXeJIX2NQl0nK2wf9wd70A&_nc_ohc=AaqRy-vbKRoQ7kNvwHSfukB&_nc_gid=mkD-BWTS1uWeIESek9z1Vg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxNTQ5MTkzNDE3ODQ2ODQ0MA%3D%3D.3-ccb7-5&oh=00_Afvv2At3YxGKE8V8p6qLJ3TJwrfeHao7LTvpQ2-Nh4ChIw&oe=699AE870&_nc_sid=10d13b"
@@ -3892,18 +4099,18 @@
       "local_images": [
         "web_viewer/images/836da46db345fb083920d5d1ecd03a00.jpg"
       ],
-      "code": "DTzWbLkE2JY",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTzWbLkE2JY",
       "user": "gonnector",
       "timestamp": "2026-01-22 15:08:24",
-      "is_merged_thread": true,
       "original_item_count": 3,
-      "is_detail_collected": true,
       "platform_sequence_id": 143
     },
     {
-      "sequence_id": 201,
+      "sequence_id": 209,
       "sns_platform": "threads",
+      "code": "DTzodsdkkhu",
       "full_text": "구글에서 만든 stitch는 아래 사이트에서 사용할 수 있는데요.\n\nhttps://stitch.withgoogle.com/\n\nstitch mcp가 나왔다고 하여 Antigravity에서 claude 코드를 실행하여 간단한 todo list를 만들어 보았어요.\n\n---\n\n[순서]\n1. stitch mcp 설정\n2. Claude Code 실행하여 todo list 디자인해 달라고 요청함\n3. stitch가 디자인을 한 뒤 'screen_de0d42cb117c4b029dd41a83e00c5423.png' 이미지를 자동 생성함 (첨부한 스크린샷 참조)\n4. 생성된 이미지 파일을 기반으로 next.js로 todo list 코드를 만들어 달라고 요청함\n5. 개발 완료 후 localhost:3000 에서 테스트\n6. Github에 올리고 vercel에 배포\n\n다른 사이트에서 웹 디자인을 한 후 claude code나 Antigravity로 가져오지 않고 Antigravity내에서 터미널로 claude code 실행하여 디자인과 코딩을 한꺼번에 하니까 편리하네요. \n\n디자인에 어려움을 겪는 개발자분들은 한번 살펴보시는 것도 도움될 듯 합니다.",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/619975615_17930769393187059_5369091849356278483_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTk0MngxNDM5LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QEQz5s072ugghqeYQcbIzESECN63VAO_gRch6u2XmIhTaQEyZrLl_ke1s4cL33h60Q&_nc_ohc=LVZfGTaQCakQ7kNvwGWXp9j&_nc_gid=YwBZOyY9KeQluS-QakO1lQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxNTU3MTI2Nzg0NDc1MDgxNQ%3D%3D.3-ccb7-5&oh=00_Afv9JOR113zpSpsgUADuaXU9UcWIRcvh1rOZZNsx-AGG1g&oe=699ADFAC&_nc_sid=10d13b"
@@ -3912,18 +4119,18 @@
       "local_images": [
         "web_viewer/images/085370a542654d3f9a84b6b7bd6db92d.jpg"
       ],
-      "code": "DTzodsdkkhu",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTzodsdkkhu",
       "user": "ciaokevin",
       "timestamp": "2026-01-22 17:46:02",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 144
     },
     {
-      "sequence_id": 202,
+      "sequence_id": 210,
       "sns_platform": "threads",
+      "code": "DTzeV51Ek3p",
       "full_text": "AI가 끝가지 해결을 못할때 클로드가 해결책을 제시하면 다른 인공지능이 끝장 토론을 병렬로 실행해서 해결책을 제안하게 함. 전원일치하면 클로드가 수정, 만약에 3번 합의 실패하면 다수결을 따름. 은근히 딥시크가 지조가 있음. 코덱스는 무조건 딴지, 제미나이는 yes 맨 , 5이서 찾으니 금방 에러 찾음",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/621153861_17872427175507614_4989158688496131744_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uODY5eDcwMS5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QG_RDp5Y64ruykGsh6EA6K4r8jWdjsDCAn4HpB_WTcykwhqbN9oo2fx_O_btknEoRw&_nc_ohc=n8aIiNk854MQ7kNvwFYtUgW&_nc_gid=UaXX1t8Xj2beWTfhdM5cRA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxNTUyNjc1NTkxMDk2MjY2NQ%3D%3D.3-ccb7-5&oh=00_Afuua1GKfnWDswRWKb7dGfqM1AmXZPnW4BSTwUwgBZfO1Q&oe=699B052F&_nc_sid=10d13b"
@@ -3932,18 +4139,18 @@
       "local_images": [
         "web_viewer/images/b0a5bd120985cf534a603b58a736c574.jpg"
       ],
-      "code": "DTzeV51Ek3p",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTzeV51Ek3p",
       "user": "keke_appa",
       "timestamp": "2026-01-22 16:17:35",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 145
     },
     {
-      "sequence_id": 203,
+      "sequence_id": 211,
       "sns_platform": "threads",
+      "code": "DTg0YkGE67S",
       "full_text": "AI 활용 무료로 해보시라고 \n전부다 정리해뒀어요!\n\n학습은 그만하시고\n직접 해보세요!\n이게 훨씬 더 효과적입니다!!\n\n제발요...🙏\n질문, 영상 시청 그만하시고\n보고 그냥 따라만하세요!\n\n저는 그렇게 따라해보시고\n결과물 공유만 해주시면 \n그걸로 100% 만족입니다!!\n\n이 글이 유익했다면 글 바로 아래\n좋아요+리프스트+댓글 남겨주시면\n링크남겨드릴께요~!\n\n---\n\n1월 19일부터 3일동안 이런 자료들을 가지고 수익화하는 방법을 알려드립니다!\n\n무료자료는 아래 링크로 가셔서 공지사항 보시면 전부 다 있습니다~!\nhttps://open.kakao.com/o/gT0uVxJh",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/616185057_17945450898098484_6042125976357504248_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTQ0MHgyNDg5LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QHnDvKJdRmGkmzg-fxRLx7zy6V9W-b9zL2wzebOUCfPRgirTK_Kh86got2Oqvfqf3I&_nc_ohc=wtMaFsErb8UQ7kNvwFcM6nW&_nc_gid=3l2FclcxfnIB-DoLkLUYmQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxMDI3NTY3MTE5ODExNzU4Ng%3D%3D.3-ccb7-5&oh=00_Afvfz8BjnrJtO14rP_LkvTa1Me7DQZxwmpay5R8BF8RvbQ&oe=699B0C0F&_nc_sid=10d13b"
@@ -3952,48 +4159,48 @@
       "local_images": [
         "web_viewer/images/b027a342cd3312e112ee1425ca413453.webp"
       ],
-      "code": "DTg0YkGE67S",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTg0YkGE67S",
       "user": "naminsoo_ai",
       "timestamp": "2026-01-15 10:24:37",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 146
     },
     {
-      "sequence_id": 204,
+      "sequence_id": 212,
       "sns_platform": "threads",
+      "code": "DTvVAAykggl",
       "full_text": "안티그래비티 Agent Skills 제대로 안 쓰면\n매번 프롬프트 소설 쓰다가 하루 다 감 ㄹㅇ\n\n요약해서 이렇게 씀.\n\n1) 오픈소스 스킬팩 하나는 무조건 깔아둬\n- GitHub에 Antigravity Awesome Skills 레포 있음.\n- 안티그래비티/Claude Code/Cursor 같이 쓰는 130+ 스킬 모음임.\n- 보안 점검, 린트, 테스트 생성, 성능 분석까지 다 들어있음.\n\n내가 기본으로 켜두는 스킬:\n- using-superpowers \n → 에이전트가 \"지금 어떤 스킬 쓸지 먼저 고르고 실행\"하게 강제함.\n- verification-before-completion \n → \"끝남\"이라고 말하기 전에 테스트/빌드부터 돌리게 만듦.\n\n이어서\n\n---\n\n2) 프로젝트에 붙이는 방법\n- 레포에 `/.agent/skills/` 폴더 만들어서 스킬들 복사해둬.\n- 전역 룰에 \"항상 using-superpowers 먼저 호출해\"라고 적어둬.\n- 그러면 답하기 전에 스킬부터 뒤져보고 실행함.\n\n3) 직접 만드는 스킬 예시\n- korean-saas-landing \n → 한국 B2B 랜딩 구조/카피 패턴을 SKILL.md에 정리해둬.\n- nextjs-clean-architecture \n → 폴더 구조, 네이밍, 훅/서비스 분리 기준 다 정의해둬.\n\n스킬은 한 번 만들어두면\n그 프로젝트에서 하는 대화마다 계속 재사용됨.\n여기서 효율 차이 벌어짐.\n\n새로운게 나오면 맛은 봐야지",
       "media": [],
       "crawled_at": "2026-02-12T19:05:47.218",
-      "code": "DTvVAAykggl",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTvVAAykggl",
       "user": "akitect_cat",
       "timestamp": "2026-01-21 01:38:59",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 147
     },
     {
-      "sequence_id": 205,
+      "sequence_id": 213,
       "sns_platform": "threads",
+      "code": "DTwVSyTjMaz",
       "full_text": "웹디자인, 이제 AI한테 시키면 됩니다. Google이 진짜 미친 도구를 내놨어요.\n\n---\n\n1/ Google I/O 2025에서 조용히 발표된 도구가 하나 있거든요. 이름은 Stitch입니다.\n\n근데 이게 단순한 AI 도구가 아니에요. 제가 직접 써봤는데, 솔직히 충격받았습니다.\n\n텍스트로 \"다크 테마 모바일 앱 홈페이지, 네비게이션 바랑 프로필 카드 넣어줘\"라고 치면... 그냥 UI가 뿅 하고 나와요.\n\n---\n\n2/ 진짜 대박인 건 이거예요.\n\n손으로 끄적인 와이어프레임 사진을 찍어서 올리면, 그걸 보고 프로급 UI로 변환해줍니다.\n\n화이트보드에 대충 그린 스케치도 되고요. 앱 스크린샷 올려서 비슷하게 만들어달라고 해도 돼요.\n\n기존 워크플로우가 \"와이어프레임 - 목업 - 프로토타입 - 코드\" 이렇게 몇 시간~며칠 걸렸다면, Stitch는 \"프롬프트 - 끝\"입니다.\n\n---\n\n3/ 여기서 끝이 아니에요. 진짜 혁신은 MCP 지원입니다.\n\nMCP가 뭐냐고요? Model Context Protocol의 약자인데요. 쉽게 말하면 AI 에이전트가 외부 도구랑 대화할 수 있게 해주는 표준이에요.\n\nStitch가 MCP를 지원한다는 건, 여러분이 쓰는 AI 코딩 도구(Cursor, Claude Code 등)에서 직접 Stitch를 불러서 쓸 수 있다는 뜻입니다.\n\n---\n\n4/ 실제로 stitch-mcp라는 오픈소스 프로젝트가 이미 나왔어요.\n\n이걸 설치하면 Cursor나 Claude Code에서 바로 Stitch API를 호출할 수 있거든요.\n\n설정도 간단합니다. Google Cloud 프로젝트 만들고, gcloud 명령어 몇 개 치면 끝이에요.\n\n---\n\n5/ 근데 진짜 소름 돋는 기능이 있습니다.\n\nextract_design_context라는 도구가 있는데요. 이게 기존 화면을 스캔해서 Design DNA를 추출해줘요.\n\n폰트, 컬러 팔레트, 레이아웃 구조... 이런 걸 자동으로 뽑아내서 다음 화면 만들 때 일관성 있게 적용해줍니다.\n\n\"홈 화면\"이랑 \"프로필 화면\" 따로 만들었는데 스타일이 다른 문제, 이제 없어지는 거예요.\n\n---\n\n6/ Figma 연동도 됩니다.\n\nStitch에서 만든 디자인을 \"Paste to Figma\" 버튼 하나로 피그마에 바로 붙여넣을 수 있어요.\n\n그리고 깔끔한 HTML/CSS 코드도 자동 생성해주고요. 프론트엔드 개발자들 작업량이 확 줄어들 겁니다.\n\n---\n\n7/ 가격이요? 무료입니다.\n\nGoogle Labs의 실험적 도구로 제공되고 있어서, Google 계정만 있으면 바로 써볼 수 있어요.\n\nstitch.withgoogle.com 접속하시면 됩니다.\n\n---\n\n8/ 솔직히 말씀드리면, 웹디자인의 게임 체인저가 될 것 같아요.\n\n아이디어에서 실제 인터페이스까지 가는 시간이 압도적으로 줄어들거든요.\n\n스타트업이 빠르게 MVP 만들 때, 개발자가 UI 프로토타입 잡을 때, 디자이너가 여러 버전 빠르게 테스트할 때... 다 쓸 수 있습니다.\n\n---\n\n9/ 정리하면 이렇습니다.\n\nGoogle Stitch = 텍스트/이미지로 UI 자동 생성\nStitch MCP = AI 코딩 도구에서 Stitch 직접 호출\nextract_design_context = 디자인 일관성 자동 유지\nFigma 연동 + 코드 생성 = 워크플로우 완성\n\n이제 \"디자인 못해서 못 만든다\"는 핑계는 통하지 않을 것 같아요.\n\n---\n\n10/ [출처]\n\nGoogle Stitch 공식: stitch.withgoogle.com\nGoogle Developers Blog: developers.googleblog.com/stitch-a-new-way-to-design-uis\nGoogle I/O 2025 발표: blog.google/technology/developers/google-ai-developer-updates-io-2025\nstitch-mcp GitHub: github.com/Kargatharaakash/stitch-mcp\nGemini CLI Stitch Extension: github.com/gemini-cli-extensions/stitch\n\n---\n\n*/ 가이드북 바로가기\n\nhttps://discord.com/channels/1275780448278155264/1276875193347866637/1463424548241149983",
       "media": [],
       "crawled_at": "2026-02-12T19:05:50.230",
-      "code": "DTwVSyTjMaz",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTwVSyTjMaz",
       "user": "qjc.ai",
       "timestamp": "2026-01-21 11:00:48",
-      "is_merged_thread": true,
       "original_item_count": 12,
-      "is_detail_collected": true,
       "platform_sequence_id": 148
     },
     {
-      "sequence_id": 206,
+      "sequence_id": 214,
       "sns_platform": "threads",
+      "code": "DTpHUUOgTVI",
       "full_text": "업무하면서 “이건 진짜 자동화해야지” 싶었던 걸 드디어 해냈다.\n\n다양한 업체에서 날아오는 각기 다른 스타일의 인보이스 PDF를\n동일한 규격의 파일명으로 정리하고,\n각 벤더별 구글 드라이브 폴더에 저장한 뒤,\n인보이스 내용을 구글 시트에 자동으로 기록하는 것.\n\n그런데 쉬울 줄 알았던 이 작업, 생각보다 훨씬 어려웠다.\n\n개발팀이 왜 늘 고생하는지 이번에 제대로 깨달았다.\n\n처음엔\n“그거 그냥 방에서 베란다 세탁기까지 가면서\n바닥에 있는 빨래 하나 주워서 세탁기에 넣는 수준 아니야?”\n라고 생각했는데,\n\n막상 해보니\n가는 길에 1cm 둔덕만 있어도 에러 나고,\n우회전할 때 59도인지 60도인지 정확히 지정해줘야 하고,\n몇 번 스텝 지나면 들고 있던 빨랫감을 떨어뜨려서\n다시 뒤로 돌아가야 하고… 난리도 아니었다.\n\n그래도 결국 성공. N8N은 신이다\n\n---\n\n경로는 아래와 같이 설계했다.\n\t1.\t슬랙에 자동화 전용 채널을 만들고,\ninvoice 메시지와 함께 인보이스 파일을 첨부해 전송\n\t2.\tn8n이 해당 메시지와 파일을 수신해 ChatGPT로 전달\n\t3.\tChatGPT가 벤더명, 인보이스 날짜, 통화, 금액, 내용 등을 추출\n\t4.\t구글 드라이브에서 벤더명으로 폴더를 조회\n\t•\t이미 폴더가 있으면 → 내가 정의한 규칙에 따라 파일명을 변환 후 해당 폴더에 업로드\n\t•\t폴더가 없으면 → 새 폴더 생성 후 파일명 변환 → 업로드\n\t5.\t구글 시트에 추출된 인보이스 정보 입력\n\t•\t업로드된 드라이브 파일 링크 자동 삽입\n\n이제 사용자는\n슬랙에 메시지 한 번 보내고,\n구글 시트에서 인보이스 링크를 눌러\n원본 PDF와 시트에 입력된 값이 맞는지만 확인하면 끝.",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/618567248_17895874125389551_6547717620476955345_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTI4MHg1NDIuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QE3qJi-SzgN7UM_pqzi5bxhKXBD8uznvBCFJEA5Mc3oudcC5Fx3neyaRCx6XhO9lCY&_nc_ohc=stwlGtplTR8Q7kNvwFqHlka&_nc_gid=JHEOamMCvlRvRSruizVoaA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxMjYxMDc0MTk3OTEzMzI1Ng%3D%3D.3-ccb7-5&oh=00_AfubWQQrCYX_Ih-ZAml7IVYoM7fG65xHr9CHcf_FUSMxtQ&oe=699AECAF&_nc_sid=10d13b"
@@ -4002,18 +4209,18 @@
       "local_images": [
         "web_viewer/images/942e96a80721c59be14724fc5dff4de5.jpg"
       ],
-      "code": "DTpHUUOgTVI",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTpHUUOgTVI",
       "user": "alliswellinsing",
       "timestamp": "2026-01-18 15:43:59",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 149
     },
     {
-      "sequence_id": 207,
+      "sequence_id": 215,
       "sns_platform": "threads",
+      "code": "DTrFnEljzKW",
       "full_text": "고수는 역시 다릅니다..\n\n요즘 Agentic Workflow에 빠져서\n주말동안 관련 영상만 계속 찾아봤는데요\n\n우리 Nick 도사님이 활용하는 방법은\n역시 보법이 다릅니다...\n\n일단 저는 이것들을 훔칠겁니다\n\n---\n\n첫 번째: AI 영상 편집 워크플로우\n\n• 녹화 영상에서 침묵 구간 자동 제거\n• 말 실수하면 해당 구간만 컷\n• 오디오 보정 + 컬러 그레이딩\n• 인트로 추가 후 바로 업로드\n\n프리미어보다 빠르고\n코드도 거의 모른 상태에서 구축했다고 합니다\n( Solero VAD, ffmpeg 사용)\n\n---\n\n사용된 핵심 구조\nDirective → Orchestration → Execution\n\n• Directive: “무엇을 할지” 고수준 지시\n• Execution: 실제 스크립트(Python 등)\n• Orchestration: 순서·병렬 실행 관리\n\nAI가 직접 다 하지 않고\n검증된 도구를 ‘호출’하게 만든 게 포인트\n\n---\n\n두 번째: 유튜브 벤치마킹 탐지기\n\n• 조회수 ÷ 채널 평균 = 아웃라이어 점수\n• 최신 영상엔 가중치 부여\n• 돈/시간/욕망 키워드에 추가 점수\n→ 잘 터진 영상만 골라 Google Sheet로 정리\n\n(이거 스친분중에 비슷한거 누가 만드셨던거 같은데...)\n\n---\n\n세 번째: AI 썸네일 생성기\n\n• 얼굴 방향 분석\n• 가장 비슷한 내 얼굴 사진 자동 매칭\n• 기존 썸네일 얼굴만 자연스럽게 교체\n\n→ 이질감이 거의 없다고 함\n(이게 너무 탐납니다)\n\n---\n\n이 모든 걸 만든 방식은 의외로 단순합니다\n\n이 문제를 해결하는 워크플로우를 만들고 싶어\n가능한 방법 3가지를 제안해줘\n\n전부 병렬 테스트 \n→ 제일 좋은 것만 채택\n\n사람은 고르기만\n\n---\n\n이 영상의 핵심은 유튜브가 아닙니다\n\n일상 업무를 SOP로 쪼개서, \nAI에게 그대로 넘길 수 있는 시대라는 점이죠\n\n완벽한 자동화가 아니라\n90%를 자동화해서 시간을 되찾는 것\n\n이게 지금 가장 현실적인 전략처럼 느껴집니다\n\n---\n\n도사님께서 공유해주신 Agent.md 파일\n\n---\n\n출처",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/619184308_17903585124348288_4939467439299091776_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTM0OXg3NTMuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QHtxcHNqh1DRC1ixYqMYjAqQjbKIwU9RL8t35LqG5Op8v1WaSTq7U71hEcj7wsSX5o&_nc_ohc=sKwOZuQqXtEQ7kNvwHf78M1&_nc_gid=ykbUyQdeP5TQgZaclf88wg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxMzE2NjE4NDcxNjUxMzk0Mg%3D%3D.3-ccb7-5&oh=00_Afuz7-0wchRVEKX3c5H-yqaS7P2jl1rFgYz9H7ngc8iSpg&oe=699B0C01&_nc_sid=10d13b"
@@ -4022,19 +4229,19 @@
       "local_images": [
         "web_viewer/images/5bf7f89c60b31e59131d3ae102b90d2d.jpg"
       ],
-      "code": "DTrFnEljzKW",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTrFnEljzKW",
       "user": "ai_tusol",
       "timestamp": "2026-01-19 10:07:33",
-      "is_merged_thread": true,
       "original_item_count": 9,
-      "is_detail_collected": true,
       "platform_sequence_id": 150
     },
     {
-      "sequence_id": 208,
+      "sequence_id": 216,
       "platform_id": "DTq4Wg9E8Tn",
       "sns_platform": "threads",
+      "code": "DTq4Wg9E8Tn",
       "username": "tofukyung",
       "display_name": "김재경",
       "full_text": "복잡한 논문..인터넷 아카이빙..\n\n링크 긁어서 AI에게 툭 던지면,\n\n원하는대로 옵시디언에 저장해주고, \n기존 내 문서랑 연결도 해주는 'knowledge-manager'에이전트.\n\n지금 바로 공개합니다.\n\n[안티그래비티, 클로드 코드 모두 사용 가능]",
@@ -4049,6 +4256,7 @@
       "local_images": [
         "web_viewer/images/b5f502d9525966c8961b0168f15f0d77.jpg"
       ],
+      "is_merged_thread": false,
       "root_code": "DTq4Wg9E8Tn",
       "like_count": 237,
       "reply_count": 56,
@@ -4057,13 +4265,12 @@
       "pk": "3813107872340100327",
       "media_type": 1,
       "content_type": "image",
-      "code": "DTq4Wg9E8Tn",
-      "is_merged_thread": false,
       "platform_sequence_id": 151
     },
     {
-      "sequence_id": 209,
+      "sequence_id": 217,
       "sns_platform": "threads",
+      "code": "DTo7IpQAQnf",
       "full_text": "매달 AI 구독료 내면서 \"이거 해줘\", \"저거 그려줘\"만 하고 있어? 그건 AI를 쓰는 게 아니라 그냥 LLM 회사 매출 올려주는 충성 고객 1인일 뿐임.\n질문을 '설계' 할 줄 알아야 진짜 내 도구가 되는 거 상황별로 llm의  뇌를 갈아 끼우는 10가지 프롬프트 공식. 요즘.이런거 생각하느라... 이미지는 안 만들고.. 프롬프트 생각만 하루 종일",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/617041125_17936909784118032_9155709889937917359_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMjc1MngxNTM2LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QGYi_InJJUTklM6UxNNzZEpA8drlYvab6Vc3-Bteqihr8Py7kjBA84QJ1CMxbwhR7A&_nc_ohc=_p69TM92054Q7kNvwH5o1SL&_nc_gid=4unFBaVfcuNpp4r3b9813g&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxMjU1NzE2MzM2MTAxMjE5MQ%3D%3D.3-ccb7-5&oh=00_AftA5XzecO68E8I0__IWoPFKGhK1cd2xNIMQfo1pesaJ6A&oe=699B0753&_nc_sid=10d13b"
@@ -4072,18 +4279,18 @@
       "local_images": [
         "web_viewer/images/05d85e94eb4b0410677289dd1d568d3f.webp"
       ],
-      "code": "DTo7IpQAQnf",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTo7IpQAQnf",
       "user": "yyn.star",
       "timestamp": "2026-01-18 13:57:32",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 152
     },
     {
-      "sequence_id": 210,
+      "sequence_id": 218,
       "sns_platform": "threads",
+      "code": "DTpLCjKmBNN",
       "full_text": "glm + 모바일 코딩 \n\n클로드코드 자체가 최고의 백엔드\n￼\nSoftware3.0 이다\n\n스크린샷은 YouTube 주소를 넣으면 슬라이드로 변환 해주는 스킬을 불러오는 장면\n\n---\n\nhttps://youtu.be/whfH-cXGnQg?si=fAslaD5PBSgmc5ZC 영상으로 소개합니다",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t39.30808-6/616229427_33203482012629819_988559150428244533_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uOTQyeDIwNDguc2RyLmYzMDgwOC5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QH3Mo2qMj77qzlNDjg74LV5cBjOhnjZGMxjY-AJ_BNBB57ux7RxNcXmIfwu-5N9xw4&_nc_ohc=gW6p4r-S_fEQ7kNvwHAWoVf&_nc_gid=lX8GHtmsQhuDCNruu2EVxA&edm=APs17CUAAAAA&ccb=7-5&ig_cache_key=MzgxMjYyNzEwMzU5OTg0ODkzMw%3D%3D.3-ccb7-5&oh=00_AfsfzhPCQDLBlSDVn9MbIz0TAy6IkDdq3yDjj-B73L3pPQ&oe=699AEE50&_nc_sid=10d13b"
@@ -4092,33 +4299,33 @@
       "local_images": [
         "web_viewer/images/6c60b3e4e30f5fd94d5b6a51d62d53d3.jpg"
       ],
-      "code": "DTpLCjKmBNN",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTpLCjKmBNN",
       "user": "conanssam",
       "timestamp": "2026-01-18 16:16:31",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 153
     },
     {
-      "sequence_id": 211,
+      "sequence_id": 219,
       "sns_platform": "threads",
+      "code": "DTo2byxifgG",
       "full_text": "📌 대기업 CEO에게 인정받은 보고법(5-5 규칙)\n\n1년간, 매주 목요일 09:00\nCEO, CPO, CFO 참석 정기회의에서\n고정 보고(발표)를 했다.\n\n이후 CEO 선정 사내우수직원이 되었다.\n대기업 전략실 기획자는 이렇게 보고한다.\n\n(자료 작성)\n1. 고정된 프레임이 우선이다.\n2. PPT 1장 = 1 메시지\n3. 그림보다 도식화\n4. 사진을 쓴다면 반드시 ‘초고화질+현장사진’\n5. 텍스트 윤곽선 다시체크\n\n(발표)\n1. 발표 장소 모든 컨디션, 매일 체크\n - CEO 의자 삐걱거림, 마이크 에코, 프로젝터 초점 등\n2. 스크립트는 내 인생에 없음\n - 내가 쓴 자료면 CEO 마주보며 발표함\n3. 레이저포인트 안씀\n - ‘좌->우, 상->하‘ 장표 상 눈의 흐름대로 끌고 감\n4. 주제나 흐름이 변경될 때, 의도된 3초 침묵\n - CEO는 나를 뚫어지게 쳐다보고 집중함\n5. 목소리는 크지 않게\n - CEO 자리와 발표자리 거리 계산 후 사전연습(녹음)",
       "media": [],
       "crawled_at": "2026-02-12T19:05:53.244",
-      "code": "DTo2byxifgG",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTo2byxifgG",
       "user": "choi.director",
       "timestamp": "2026-01-18 13:16:27",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 154
     },
     {
-      "sequence_id": 212,
+      "sequence_id": 220,
       "sns_platform": "threads",
+      "code": "DTnXmC9DuZZ",
       "full_text": "OpenAI, Google, and Anthropic just published guides on:\n\n• Prompt engineering\n• Building agents\n• AI in business\n• 601 AI use cases\n\n9 of the best guides you can't miss:\n\n---\n\n1. AI in the Enterprise by OpenAI\n\nGrab the PDF: https://cdn.openai.com/business-guides-and-resources/ai-in-the-enterprise.pdf\n\n---\n\n2. A practical guide to building agents by OpenAI\n\nDownload here: https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf\n\n---\n\n3. Prompting Guide 101 by Google\n\nGrab the PDF: https://services.google.com/fh/files/misc/gemini-for-google-workspace-prompting-guide-101.pdf\n\n---\n\n4. Identifying and scaling AI use cases\n\nGrab the PDF: https://cdn.openai.com/business-guides-and-resources/identifying-and-scaling-ai-use-cases.pdf\n\n---\n\n5. Building Effective Agents by Anthropic\n\nGrab the PDF: https://www.anthropic.com/engineering/building-effective-agents\n\n---\n\n6. Prompt Engineering by Anthropic\n\nGrab the PDF: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview\n\n---\n\n7. Kaggle Agents Companion\n\nDownload here: https://www.kaggle.com/whitepaper-agent-companion\n\n---\n\n8. Google: 601 real-world gen AI use cases from the world's leading organizations\n\nRead here: https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders\n\n---\n\n9. Prompt engineering by Google\n\nGrab it here: https://www.kaggle.com/whitepaper-prompt-engineering\n\n---\n\n🚨 NEW WORKSHOP: I'm sharing one of my best AI Projects for FREE: \n\nHow I built an AI Customer Segmentation Agent with Python:\n\n- Scikit Learn\n- K-Means\n- LangChain\n- LangGraph\n- OpenAI\n\n👉Register here (500 seats): https://learn.business-science.io/ai-register\n\n---\n\nThat's a wrap! Over the next 24 days, I'm sharing the 24 concepts that helped me become an AI data scientist.\n\nIf you enjoyed this thread:\n\n1. Follow me @mdancho84 for more of these\n2. RT the tweet below to share this thread with your audience",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/618375039_17909721498294695_476630681883336446_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTQ0MHgxODAwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2QHwVRyl3IxHzqeMacIzP_c-hKWGdO3BqtkOUqsU7N6EKlh0wXjjB7CJuh3n455GfLM&_nc_ohc=eT_zgM9DAA4Q7kNvwGBP--5&_nc_gid=Ext8dhxuMQiaNkhdPf75YQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxMjExOTM3OTE3NDE1NTg2NQ%3D%3D.3-ccb7-5&oh=00_AfuSygkbFGg6ML2BNm3FMCvJ9G-2wRicFeTVZpzynkBAQw&oe=699AEBD2&_nc_sid=10d13b",
@@ -4139,33 +4346,33 @@
         "web_viewer/images/0274777ce5f0618e9eb284ca80928cfe.jpg",
         "web_viewer/images/e19b27b4dcc2e6a26e8a14313c9294c2.jpg"
       ],
-      "code": "DTnXmC9DuZZ",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTnXmC9DuZZ",
       "user": "matt_dancho",
       "timestamp": "2026-01-17 23:29:03",
-      "is_merged_thread": true,
       "original_item_count": 12,
-      "is_detail_collected": true,
       "platform_sequence_id": 155
     },
     {
-      "sequence_id": 213,
+      "sequence_id": 221,
       "sns_platform": "threads",
+      "code": "DTojOZDDwdm",
       "full_text": "AI 공부에 주말 다 쓰시나요? \n구글이 푼 ‘이 비밀 문서’ 하나만 보세요.\n\n전 세계 1등 기업들이 실제로 돈 벌 때 쓰는\n생성형 AI 유즈케이스 101가지입니다.\n\n비즈니스 판도가 어떻게 변하는지\n딱 5분 만에 견적 나옵니다.\n\n긴 글 읽을 시간 없는 분들 위해\n핵심만 따로 정리해 댓글에 남겨둘게요.\n\n나중에 업무에 써먹을 수 있게\n우선 ‘저장’해두고 보세요.\n\n앞으로도 이런 '치트키' 정보만 받고 싶다면?\n팔로우하고 다음 소식 기다려주세요!\n\nhttps://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders\n\n---\n\n1. 6가지 생성형 AI 에이전트 유형\n이 보고서는 AI의 역할을 크게 6가지 범주로 분류합니다.\n\n• 고객 에이전트(Customer Agents): 고객 경험 개선 및 24시간 상담 서비스 제공.\n• 직원 에이전트(Employee Agents): 업무 생산성 향상 및 반복 업무 자동화.\n• 크리에이티브 에이전트(Creative Agents): 마케팅 문구, 이미지, 영상 등 콘텐츠 제작 지원.\n• 코드 에이전트(Code Agents): 소프트웨어 개발 및 코드 작성 가속화.\n• 데이터 에이전트(Data Agents): 방대한 데이터 분석 및 비즈니스 인사이트 도출.\n• 보안 에이전트(Security Agents): 사이버 위협 탐지 및 보안 운영 최적화.\n\n---\n\n2. 주요 산업별 대표 사례\n\n• 자동차 및 물류:\n• Mercedes-Benz: 운전자와 자연스러운 대화가 가능한 MBUX 가상 어시스턴트 구축.\n• Volkswagen: 소유자 매뉴얼을 학습한 AI가 차량 상태나 기능(예: 타이어 교체법)을 설명.\n• UPS: 물류 네트워크의 디지털 트윈을 구축하여 패키지 위치를 실시간 시각화.\n\n• 비즈니스 및 전문 서비스:\n• Accenture: 소매업체를 위한 가상 상담사를 구축해 고객 셀프 서비스 비율 향상.\n• Freshfields (로펌): 복잡한 법률 실사(Due Diligence) 및 문서 검토 업무를 자동화하여 정확도와 효율성 증대.\n• PwC: 세무 및 법률 전문가들이 복잡한 규제 데이터를 더 빠르게 분석하도록 지원.\n\n---\n\n• 금융 서비스:\n• Commerzbank: 고객 서비스 에이전트의 업무를 보조하여 상담 대기 시간을 단축.\n• Intuit: Gemini 모델을 활용해 세금 신고서 자동 채우기 기능을 강화하여 정확도 제고.\n\n• 리테일:\n• Mercari: 일본 최대 중고거래 플랫폼으로, AI 상담 도입 후 ROI 500% 예상 및 업무량 20% 감소.\n• Virgin Voyages: 텍스트-투-비디오 기술로 수천 개의 개인화된 광고 영상을 순식간에 제작.\n\n---\n\n3. 핵심 시사점\n\n1. 실험에서 생산으로: 기업들이 단순히 AI를 테스트하는 수준을 넘어 실제 서비스(Production)에 투입하여 ROI(투자 대비 효율)를 거두기 시작했습니다.\n2. 멀티모달 활용: 텍스트뿐만 아니라 이미지, 영상, 데이터를 동시에 이해하는 기능을 활용한 사례(예: 카메라로 계기판을 비춰 고장 진단)가 늘고 있습니다.\n3. 생산성 도구의 통합: Google Workspace와 Gemini를 결합해 이메일 요약, 초안 작성, 회의록 정리 등 일상 업무의 속도를 대폭 높이고 있습니다.",
       "media": [],
       "crawled_at": "2026-02-12T19:05:56.266",
-      "code": "DTojOZDDwdm",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTojOZDDwdm",
       "user": "hajae.code",
       "timestamp": "2026-01-18 10:28:36",
-      "is_merged_thread": true,
       "original_item_count": 5,
-      "is_detail_collected": true,
       "platform_sequence_id": 156
     },
     {
-      "sequence_id": 214,
+      "sequence_id": 222,
       "sns_platform": "threads",
+      "code": "DTo-ESagY-U",
       "full_text": "\"증명사진 만들기\"\n\n인물 사진을 넣으면 정장 차림, 헤어 정리, 피부 보정해서 증명 사진으로 만들어주는 나노바나나 프롬프트야~\n\n필요한 치니들이 있는 것 같아서 만들어봤어~ ^^\n\n프롬프트 올려둘게~\n\n---\n\n나노바나나 프롬프트야~\n- 인물 사진 첨부 + 배경색 입력\n\n---\n\n처음 올린 버전이 헤어 정리와 피부 보정을 하면서 얼굴이 바뀐다는 치니가 있어서 원본 얼굴 유지 강화 버전을 새로 올렸으니 참고해~",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/617378460_17887144605423864_9172419056596409381_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTQ0MHgxOTI4LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QEAR-snDLsqdkP1_b9DoRDf5P0hRAeEEq8vJfCgGe0HHRq6ChnLjt9XY5ytc7978Z0&_nc_ohc=jUpjwcbPCNoQ7kNvwFZG41d&_nc_gid=XmJfmH9nJRobfV_6wMPdhw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxMjU3MDA1Mjc5Mjc3MjYyMw%3D%3D.3-ccb7-5&oh=00_Afse6yZDpFHPqZcY_XLFzw2IaCZJJ6jio6QTLz1jbOUuRg&oe=699AD7EE&_nc_sid=10d13b"
@@ -4174,18 +4381,18 @@
       "local_images": [
         "web_viewer/images/6f82e678b49e125898f1d0266326448d.jpg"
       ],
-      "code": "DTo-ESagY-U",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTo-ESagY-U",
       "user": "jeju_harry",
       "timestamp": "2026-01-18 14:23:09",
-      "is_merged_thread": true,
       "original_item_count": 3,
-      "is_detail_collected": true,
       "platform_sequence_id": 157
     },
     {
-      "sequence_id": 215,
+      "sequence_id": 223,
       "sns_platform": "threads",
+      "code": "DTjYrdcEyV1",
       "full_text": "글쓰기 할때 제목 붙이는 게 가장 중요해요. \n청담동 살이에 대한 글을 주르륵 쓰고 \n\n<청담동에서 사는 이야기> \n이렇게 제목을 붙였다면 아무도 안 읽었을겁니다.\n\n대신, <청담동 살아요, 돈은 없지만> 이라고\n제목을 썼죠. 그랬더니 조회수가 10만,20만…\n국내 대형 커뮤니티에 퍼지더니 \n어느 새 책이 되어서 세상에 나왔어요. \n\n내 글의 제목 붙이는 거 어렵습니다.\n하지만 연습할 수 있어요. \n\n일단 패러디부터 해보세요. \n<젊은 ADHD의 슬픔> 처럼요.\n\n---\n\n책은 이미 출간되어 있어! 참고햐^^",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/618865689_17942076912100503_9148186470707748982_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNzgweDEwOTUuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QHf76FBEnRpOL5vbKMjTecJbh6X54sdc864tDFSL8uSMjZkoiCcdm4KT1V3KaFvn7s&_nc_ohc=k4laflfIpwwQ7kNvwEbXhEX&_nc_gid=nh9kZ_7LhoQFc9woyE4bvQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxMjA5NDk2MDY5OTkzMjQwNQ%3D%3D.3-ccb7-5&oh=00_AftXBs-N6dUtuY3LNz-AWjkGuCokxth2-ImeQyBlpjb5ag&oe=699AD895&_nc_sid=10d13b"
@@ -4194,18 +4401,18 @@
       "local_images": [
         "web_viewer/images/333e2f0ca2d3df998960ae5b302b8c85.jpg"
       ],
-      "code": "DTjYrdcEyV1",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTjYrdcEyV1",
       "user": "sydney__nam",
       "timestamp": "2026-01-16 10:20:15",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 158
     },
     {
-      "sequence_id": 216,
+      "sequence_id": 224,
       "sns_platform": "threads",
+      "code": "DTjHQUWk-Hy",
       "full_text": "제미나이, 데이터 분석 고급 활용법\n\n1. 이커머스 판매 데이터  엑셀 CSV 로 다운로드\n2. 구글 스프레드 시트에서 열기 혹은 붙여넣기\n3. 스프레드시트 상단의 Gemini 클릭하면 \n오른쪽에 별도 창 생김\n4. 원하는 데이터 인사이트 질문 하면 바로 요약해줌\n Ex) TOP 10 판매 제품 데이터 표로 만들고 인사이트 뽑아줘\n5. 제미나이가 준 답 복붙해서 보고 자료 및 실물 활용\n\n참 쉽지? 하고 보면 별거 없어\n요즘 난 모든 데이터 분석 엑셀 함수 안쓰고 \n제미나이에게 위임한다고 ㅎㅎ 🤣",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/616740965_17939381940112438_3668702631911960083_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTE3OXgzODkuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QFR8QXuH1_-MH7Gyrb3Z-st4PirJDjNocxWjxL7leR4UzdbOpUYSYKN3bnw_AcsnJ8&_nc_ohc=2mcr_Zz8jbMQ7kNvwE6iMnh&_nc_gid=Ff-xiWBwTbKKyWaWT8fFsg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxMDkyMTYxNzM3NjQwMzk1NA%3D%3D.3-ccb7-5&oh=00_Afu-k0kE_GLr8_2034Cpiyv_Syvezd0dRP_gmzxq8C_jtA&oe=699AFFEC&_nc_sid=10d13b"
@@ -4214,63 +4421,63 @@
       "local_images": [
         "web_viewer/images/41141d7bea4a543dc33c752a5f1463ee.jpg"
       ],
-      "code": "DTjHQUWk-Hy",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTjHQUWk-Hy",
       "user": "monica_from_korea",
       "timestamp": "2026-01-16 07:48:00",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 159
     },
     {
-      "sequence_id": 217,
+      "sequence_id": 225,
       "sns_platform": "threads",
+      "code": "DThwzd7D_z-",
       "full_text": "이번 주 AI 업계가 뒤집혔습니다. 월 100~200달러짜리 도구를 무료로 직접 만드는 개발자들이 쏟아지고 있거든요.\n\n---\n\n1/ 첫 번째 이슈: Claude Cowork의 역설\n\nAnthropic이 자율 AI 에이전트 'Cowork'를 출시했어요. 가격은 Claude Max 구독 기준 월 100~200달러.\n\n근데 출시 직후 개발자들이 뭘 했냐면요. \"이거 Gemini 3 Flash API로 직접 만들면 월 5달러도 안 들겠는데?\" 하면서 오픈소스 버전을 만들기 시작한 겁니다.\n\n실제로 'terminaI'라는 오픈소스 프로젝트가 나왔고, GitHub에 공개됐어요 (Prof-Harita/terminaI). 기능도 거의 비슷합니다.\n\n---\n\n2/ 왜 이런 일이 벌어졌을까요?\n\nGemini 3 Flash가 가성비가 너무 좋거든요. 긴 컨텍스트에 저렴한 가격. 개발자들한테는 완벽한 조합이었습니다.\n\n결국 \"고가 SaaS vs 저가 API 기반 DIY\" 대결이 시작된 거죠.\n\n도구에 종속되지 말고, 원리를 이해하고 직접 만들 수 있어야 한다는 것. 딱 이 상황입니다.\n\n---\n\n3/ 두 번째 이슈: Vibe Coding의 진화\n\n코드 직접 안 짜고 AI한테 자연어로 지시하는 'Vibe Coding', 들어보셨죠?\n\n근데 이게 한 단계 진화했어요. \"Claude가 짠 코드를 Gemini에게 리뷰시키는\" 워크플로우가 새로운 표준으로 자리잡고 있습니다.\n\n한 개발자가 실제로 3시간 만에 React 앱을 완성했다는 사례도 올라왔어요. Claude Code로 개발하고, Gemini로 검수하는 방식이었습니다.\n\n---\n\n4/ 왜 이게 중요하냐면요.\n\n단일 모델에 의존하면 그 모델의 편향이나 실수를 그대로 따라가게 되거든요.\n\n근데 서로 다른 모델을 교차 검증하면? 훨씬 정확해집니다.\n\n자동화 구축할 때도 마찬가지예요. n8n에서 Claude API로 초안 만들고, GPT로 검증하고, Gemini로 최종 확인하는 워크플로우. 이미 저희 고객사 중 몇 곳이 도입했습니다.\n\n---\n\n5/ 세 번째 이슈: Gemini Personal Intelligence - 편리함과 불편함 사이\n\nGoogle Gemini의 'Personal Intelligence' 기능 아시나요? 이번 주 미국에서 베타 출시됐습니다.\n\n사용자 연락처, 드라이브 파일, Gmail, 과거 위치까지 다 기억하고 연동하는 기능인데요. 유용한 동시에 프라이버시 우려가 큽니다.\n\nGoogle 개발자가 직접 제시한 사례를 보면요. 타이어 가게에서 타이어 사이즈를 몰라서 Gemini에게 물었더니, Gmail과 사진첩을 뒤져서 차량 정보와 번호판까지 찾아줬대요.\n\n---\n\n6/ 유용하지만 무섭습니다\n\n한 유저는 Reddit에 이런 경험을 공유했어요. 채식주의자라고 설정해놨더니, 전혀 관련 없는 정화조 원리 설명에까지 채식주의를 끌어들이더라는 거죠.\n\n또 다른 유저는 대화 중에 갑자기 Gemini가 연락처에 있는 실명을 언급해서 소름 돋았다고 합니다.\n\n기능 자체는 기본적으로 꺼져 있고, 사용자가 직접 켜야 합니다. 하지만 한번 켜면 Gemini가 내 정보를 얼마나 깊이 들여다볼 수 있는지 체감하게 되는 거죠.\n\n---\n\n7/ 여기서 우리가 배워야 할 것\n\nAI가 똑똑해질수록, 우리가 제어할 수 있는 범위를 명확히 설정해야 합니다.\n\n자동화 시스템 구축할 때도 마찬가지예요. 데이터 접근 권한, 개인정보 처리 범위, 이런 걸 처음부터 설계에 포함시켜야 해요.\n\n기능이 강력하다고 무조건 다 켜놓으면 안 됩니다. 필요한 것만, 안전하게.\n\n---\n\n8/ 결론\n\nAI 업계는 지금 두 가지 방향으로 움직이고 있습니다.\n\n1. 비싼 도구를 직접 만드는 DIY 문화 (terminaI 같은 오픈소스 프로젝트)\n2. 여러 AI를 조합하는 교차 검증 워크플로우 (Claude + Gemini)\n\n그리고 동시에 프라이버시와 안전성에 대한 경각심도 높아지고 있어요.\n\n저희가 계속 강조하는 원칙, 기억하시죠? \"도구에 종속되지 말고, 원리를 이해하라. 그리고 안전하게.\"\n\n이게 더 이상 이론이 아니라 2026년의 현실입니다.\n\n여러분은 이 중 어떤 트렌드가 가장 주목되시나요?",
       "media": [],
       "crawled_at": "2026-02-12T19:05:59.278",
-      "code": "DThwzd7D_z-",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DThwzd7D_z-",
       "user": "qjc.ai",
       "timestamp": "2026-01-15 19:12:35",
-      "is_merged_thread": true,
       "original_item_count": 9,
-      "is_detail_collected": true,
       "platform_sequence_id": 160
     },
     {
-      "sequence_id": 218,
+      "sequence_id": 226,
       "sns_platform": "threads",
+      "code": "DTgnPKiE3Yt",
       "full_text": "인포그래픽 생성을 해주는 Gems를 만들어 두고 사용하면 편리합니다.\n\n---\n\nGems 생성이후 필요한 내용을 인풋하면 생성 하기 위한 초안 텍스트를 만들어 확인을 요구합니다. ok 하면 곧바로 생성이 됩니다. 이 단계에서 수정해도 되구요.",
       "media": [],
       "crawled_at": "2026-02-12T19:05:59.279",
-      "code": "DTgnPKiE3Yt",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTgnPKiE3Yt",
       "user": "kimkj008",
       "timestamp": "2026-01-15 08:29:44",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 161
     },
     {
-      "sequence_id": 219,
+      "sequence_id": 227,
       "sns_platform": "threads",
+      "code": "DTfDhjHFRLD",
       "full_text": "프롬프트 단축키 모음\n\n알고 쓰면 효율 확 높여주는 단축키\n저장해놨다가 필요할때마다 꺼내쓰기!\n\n프롬프트 맨 뒤에 추가하면 돼~댓글에 \n리스트 달아놨어!",
       "media": [],
       "crawled_at": "2026-02-12T19:05:59.279",
-      "code": "DTfDhjHFRLD",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTfDhjHFRLD",
       "user": "moongi_adventures",
       "timestamp": "2026-01-14 17:58:26",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 162
     },
     {
-      "sequence_id": 220,
+      "sequence_id": 228,
       "sns_platform": "threads",
+      "code": "DTgdBsrAttA",
       "full_text": "Google Antigravity가 이제 'Agent Skills'를 공식 지원한다는 사실, 알고 계셨나요? \n\n🚀 AI 에이전트의 능력을 확장하는 새로운 오픈 표준이 등장했습니다.\n단순히 기능을 추가하는 게 아니라, \n에이전트에게 '노하우'를 이식하는 개념이라 흥미롭네요. \n\n핵심은 SKILL.md 파일이 포함된 폴더입니다. \n마치 게임에서 스킬북을 장착하듯, \n이 폴더만 있으면 에이전트가 새로운 작업을 수행하는 방법을 바로 익힐 수 있게 됩니다. 🧠\n\n💡 Agent Skills의 핵심:\n• 재사용 가능한 지식 패키지: 한 번 만든 스킬을 다른 에이전트에도 쉽게 적용 가능\n• 명확한 가이드: 특정 작업에 대한 접근 방식과 지침 제공\n• Best Practices: 단순 실행을 넘어 '모범 사례'와 규칙까지 준수하도록 설계\n• 리소스 통합: 필요한 스크립트나 리소스까지 한 번에 패키징\n\n에이전트가 더 똑똑하게 일하는 방법이 점차 구체화되고 있네요. 🔥\n\n---\n\n👇 출처\nhttps://antigravity.google/docs/skills",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/613761193_17857710039596148_1277856967764723257_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTI5MHg0NzMuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QEKv85OZ4KNAoVrmN88jP5UcQoB_VcxG0cAyeRc-sJgyDw1b6ZcQIiuMJY4UnUU_Bk&_nc_ohc=pxTcl-xu7tEQ7kNvwFrEUuF&_nc_gid=fGyJSoAgtUSJLqFScmX_fA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxMDE3Mjk0NDc4OTk4NjExMg%3D%3D.3-ccb7-5&oh=00_AfszneEgg1dfIH6QBanLTvekrZK3LA__ugPCs14nZ_cEDw&oe=699B08A5&_nc_sid=10d13b"
@@ -4279,63 +4486,63 @@
       "local_images": [
         "web_viewer/images/abc47a697fab9046a0f1bc988e3c63c8.jpg"
       ],
-      "code": "DTgdBsrAttA",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTgdBsrAttA",
       "user": "feelfree_ai",
       "timestamp": "2026-01-15 07:00:31",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 163
     },
     {
-      "sequence_id": 221,
+      "sequence_id": 229,
       "sns_platform": "threads",
+      "code": "DTfeub8kXPD",
       "full_text": "대부분 AI 이용자가 모르는 사실:\n이미지 합성 및 대체할 때, \n\n프롬프트에 4K, 초고화질등의 요청보다 \n레퍼런스로 제공하는 이미지가 고화질 일수록 \n\n더 좋은 화질의 결과물을 만들어서 제공합니다!\n\n---\n\n바로 1.6 MAX를 사용해보세요!\nhttps://manus.im/app",
       "media": [],
       "crawled_at": "2026-02-12T19:06:02.296",
-      "code": "DTfeub8kXPD",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTfeub8kXPD",
       "user": "manusai_kr",
       "timestamp": "2026-01-14 21:56:07",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 164
     },
     {
-      "sequence_id": 222,
+      "sequence_id": 230,
       "sns_platform": "threads",
+      "code": "DThEbxXk726",
       "full_text": "Claude Code Skills 만들어놨는데\nAI가 절반은 그냥 무시함.\n\n이상해서 테스트 200번 돌려본 사람 있음.\n\n진짜 활성화 확률: 20%\n동전 던지기보다 낮음.\n\n근데 방식 하나 바꾸니까\n84%로 올라감.\n\n---\n\n원래 Skills 작동 방식:\n\n공식 문서: \"AI가 자동으로 판단해서 활성화합니다\"\n현실: 그냥 무시하고 자기 맘대로 진행함\n\n특히 여러 Skills 동시에 필요한 작업?\nSimple Hook 성공률: 0%\n\n폼 만들기 + 라우팅 + 상태관리\n= 3개 Skills 필요\n= 하나도 활성화 안 됨.\n\n---\n\n왜 무시하냐면\n\n\"이 Skill 참고해서 작업해\"\n= AI한텐 \"옵션\"\n\n급하면 스킵해도 되는 거로 받아들임.\n더 중요해 보이는 거 먼저 하고\nSkills는 후순위로 밀림.\n\n제안은 무시당함.\n\n---\n\n84% 만든 방법: Forced Eval Hook\n\n\"각 Skill에 대해 YES/NO로 평가해.\n평가 끝나기 전까지 코드 작성 금지.\nCRITICAL: 평가만 하고 활성화 안 하면 무효.\"\n\nAI가 \"YES - 이 Skill 필요함\" 쓰는 순간\n본인이 커밋한 거임.\n\n자기가 쓴 건 무시 못함.\n\n---\n\n테스트 결과 (Scott Spence, 각 10회씩):\n\n폼+라우팅 작업:\n- Simple: 0%\n- Forced: 80%\n\n데이터 로딩:\n- Simple: 0%\n- Forced: 100%\n\n서버 액션:\n- Simple: 10%\n- Forced: 40%\n\n복잡한 작업일수록 차이 큼.\n\n---\n\n핵심은 \"커밋 구조\".\n\n제안: \"Skill 참고해\" → 무시 가능\n명령: \"YES/NO 평가 먼저. 안 하면 진행 불가\" → 무시 불가\n\n\"CRITICAL\" \"MANDATORY\" \"금지\"\n이런 단어가 진짜 효과 있음.\n\nAI한테 선택권 주면 안 됨.\n\n---\n\n정리:\n\nSkills가 \"제안\"이면 무시당함.\n\"계약\"으로 만들면 지켜짐.\n\n20% → 84%\n같은 Skills인데 4배 차이.\n\n팔로우 하고 DM 보내면\nForced Eval 템플릿 보내드림 👇",
       "media": [],
       "crawled_at": "2026-02-12T19:06:02.296",
-      "code": "DThEbxXk726",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DThEbxXk726",
       "user": "jisang0914",
       "timestamp": "2026-01-15 12:44:52",
-      "is_merged_thread": true,
       "original_item_count": 7,
-      "is_detail_collected": true,
       "platform_sequence_id": 165
     },
     {
-      "sequence_id": 223,
+      "sequence_id": 231,
       "sns_platform": "threads",
+      "code": "DTgpH7LE7g-",
       "full_text": "g-export: 구글 문서들을 로컬에 다운받아주는 Claude Skill\n\n공개된 Google 문서(Slides, Docs, Sheets)를 로컬 파일로 다운로드하는 스킬을 만들었습니다. https://github.com/corca-ai/claude-plugins/blob/main/plugins/g-export/skills/g-export/SKILL.md\n\n당연히 명시적 호출로도 동작하고, 맥락 안에서 구글 문서 URL을 에이전트가 발견하면 자동으로 fetch 대신 이 스킬을 써서 내용을 읽도록 했습니다.\n\n지원 포맷\n- Slide: pptx, odp, pdf, txt (기본: txt)\n- Docs: docx, odt, pdf, txt, epub, html, md (기본: md)\n- Sheets: xlsx, ods, pdf, csv, tsv (기본: csv)\n\n시트 csv는 gid가 제공시 해당 탭만 내려받으며, md는 이미지 문자열을 자동 제거하는 등의 디테일이 있습니다.\n\n---\n\n자세한 작업 과정은 블로그에 있습니다. https://www.stdy.blog/1p1w-02-g-export/\n\n고려했던 것들을 몇가지 공유해보면:\n\n1. Docs에서 시작해 Sheet와 Slides로 확장\n\n이 스킬은 구글 Docs를 `/export?format={}` 엔드포인트로 curl 다운로드가 가능하다는 것 덕분에 구현 가능했습니다.\n\n그런데 구글 Sheet와 Slides는 Docs와 URL 구조도 유사하고, 사용법도 유사합니다. 둘 다 다운로드 기능이 있고요. 아마 구글에서 설계할 때 공통 기능으로 다 빼놨을 거라고 보는데, 역시나 이들도 Docs와 유사하게 `/export` 엔드포인트를 지원하더군요. 그래서 스킬에서 3가지 타입을 모두 지원하게 했습니다.\n\n---\n\n2. 다중 탭 처리 및 포맷 선택\n\n슬라이드는 당연히 여러 장이고, 독스에도 탭이 있고, 시트에도 탭이 있죠. 제가 이 스킬을 만든 가장 주된 이유가 'LLM에게 넘기기' 였기 때문에, 가능하면 한번에 모든 정보가 텍스트로 주입될 수 있기를 바랐습니다. 물론 pdf 나 docx, pptx 등도 앤트로픽이 스킬을 다 만들어뒀기 때문에 좀 더 Rich한 포맷으로 다운받아도 읽는 게 가능했지만, 다른 스킬을 연계해야만 하는 게 번거롭기도 하고... 필요시 사용자가 알아서 할 거라고 봤어요.\n\n그래서...\n\n---\n\n슬라이드는 이미지로 다운받으면 '현재 선택된 슬라이드'만 저장되기 때문에 그 포맷은 그냥 지원하지 않기로 했습니다. 그리고 쉬운 분석을 위해 전체 슬라이드 내용이 잘 들어오는 txt 를 기본 포맷으로 뒀어요.\n\n독스는 탭이 여럿이더라도 export 가 기본적으로 한 파일에 취합해줬기 때문에 별 문제가 없었고, 기본 포맷으로는 당연히 md 를 선택했습니다.\n\n시트가 문제였는데, 텍스트로 읽기에는 csv 가 가장 좋지만 이렇게 하면 첫 탭의 정보만 다운받아집니다. 그래도 주 목적이 분석이니만큼 csv 를 기본 포맷으로 두고, 대신 gid 를 URL에 같이 넣으면 다른 탭을 선택할 수 있다는 설명을 추가했습니다.\n\n---\n\n3. 이미지 처리\n\n독스를 마크다운으로 다운받으면 내부 이미지가 모두 base64 문자열로 치환됩니다. 굉-장히 긴 문자열이 되고, 당연히 LLM에게는 쥐약이죠. 그래서 이미지 문자열을 전부 제거하게 했습니다. 참고로 txt 에서는 이미지가 아예 무시됩니다.\n\n이미지가 필요하다면 사용자가 알아서 pdf나 html로 다운받을 거라고 가정했습니다.\n\n---\n\n4. 파일명 지정\n\n처음에는 파일명을 직접 지정하다가, 원본 파일명에 대한 정보가 내려올 거라고 생각해서 질의하니 역시 그랬습니다.  cURL 에서 -I 옵션을 줘서 Content-Disposition Header를 가져올 수 있고, 이 정보를 디코딩하면 원본 파일명을 그대로 읽는 게 가능하더군요.\n\n그러나 파일 이름이 한글일 때는 UTF-8 디코딩이 필요했습니다. 그냥 시켰더니 python3 의 urllib.parse 라이브러리로 디코딩을 하던데, 외부 의존성을 최소화하고 싶어서 상의하니 bash 와 printf 로 대부분의 유닉스 환경에서 작동하도록 만드는 게 가능하더군요.\n\n이러한 의존성 최소화 원칙을 CLAUDE[.]md 에 추가하기도 했습니다.\n\n---\n\n맺으며\n\n지난 글에서도 언급했듯, 저는 LLM이 읽기 쉬운 포맷으로 문서를 쥐어주는 걸 중요하게 생각합니다. 요즘은 이게 대부분 \"Claude Code가 UNIX 명령어와 스크립트만으로 URL을 읽을 수 있게 하자\"로 치환됩니다. 이러한 작은 도구들을 하나둘 만들다 보면 워크플로우가 점차 매끄러워지며, 나아가 자동화될 수 있습니다.\n\n이번에 만든 도구와 시행착오 모두 AI가 더 똑똑해지는 몇 달 뒤에는 무의미해질 수도 있다는 건 잘 알고 있습니다. 하지만 그렇더라도 '내 업무에서 불편함을 찾고 스스로 개선해나갈 수 있다는 자신감'은 오래도록 남을 거라고 생각해요.\n\n---\n\n1.3.0 업데이트:",
       "media": [],
       "crawled_at": "2026-02-12T19:06:02.296",
-      "code": "DTgpH7LE7g-",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTgpH7LE7g-",
       "user": "steady__study.dev",
       "timestamp": "2026-01-15 08:46:14",
-      "is_merged_thread": true,
       "original_item_count": 8,
-      "is_detail_collected": true,
       "platform_sequence_id": 166
     },
     {
-      "sequence_id": 224,
+      "sequence_id": 232,
       "sns_platform": "threads",
+      "code": "DTg-8vJEcJ0",
       "full_text": "책 쓰기에서 가장 어려운 순간은 첫 줄을 쓸 때입니다.\n머릿속 아이디어를 어디서부터 정리해야 할지 막막하죠.\n그래서 아이디어만 입력하면 책의 핵심을 정리해주는 GPT를 만들어 봤습니다. 이 GPT에개 글을 쓸 소재를 주면, \n\n- 책의 주제/ 독자의 문제/ 원하는 결과/ 해결책\n\n이렇게 4가지 내용을 정리하고, 이는 목차와 초안 작성이 수월해집니다.\n관심있는 분들 한번 사용해 보시고, 피드백 주시면 감사하겠습니다.\n\nhttps://chatgpt.com/g/g-69683fb3053081918e1b53f8c886547b-sseuigi-sijaghaneun-jeonjacaeg-gpt-peopeulweil\n\n조만간 목차·초안 작성 GPT도 곧 만들어 볼까 합니다.\n\n---\n\n보다 상세한 내용이 궁금하신분은 제 블로그 참조하시면 도움이 될거에요.\nhttps://blog.naver.com/pulplewhale/224147368977\n\n---\n\ngpt에 로그인 되어있어야 링크로 접속 가능합니다.",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/617458178_17866334076549867_8251176351854407929_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTM3Nng3Njguc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QGEF8ddOYmbxSluAq8bPlOdZZ2R50ARSzPpt2v3ANmpXh2Q-kBjU8YjypMF32pm-vA&_nc_ohc=Fw_iB5r2voUQ7kNvwFLlPsp&_nc_gid=HR8dxWJAPaPkUBfXIb-EjA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxMDMyMjEzMDc3MzU1MDI0Mg%3D%3D.3-ccb7-5&oh=00_AftH7gHxvEOimRGRtD-ZnrIBllNwnx20nwg9uQ_2vj0Dcg&oe=699AE5B4&_nc_sid=10d13b"
@@ -4344,18 +4551,18 @@
       "local_images": [
         "web_viewer/images/656c359d1f933a7774c26bf34f4dbade.jpg"
       ],
-      "code": "DTg-8vJEcJ0",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTg-8vJEcJ0",
       "user": "pulplewhale",
       "timestamp": "2026-01-15 11:56:56",
-      "is_merged_thread": true,
       "original_item_count": 3,
-      "is_detail_collected": true,
       "platform_sequence_id": 167
     },
     {
-      "sequence_id": 225,
+      "sequence_id": 233,
       "sns_platform": "threads",
+      "code": "DTe6-aPCY76",
       "full_text": "🧵 안티그래비티 Skills, 드디어 공식!\n\n저 1개월 전부터 강제로 만들어서 쓰고 있었거든요. 공식 기능이 아니라 그냥 해킹한 거였는데...\n\n이게 정식 기능으로 들어온 거예요. 😲\n\nSkills가 뭐냐면:\n\nAI한테 매뉴얼 주는 거\nSKILL.md 파일에 지시사항 적어두면\n에이전트가 알아서 따라함\n실제 시간 절약:\n\n블로그 글 1개 기준\n30분 → 5분 (83% 절약)\n핵심 팁:\n\nDescription 구체적으로\n체크리스트 필수\n예시 넣기\n저장 경로 명시\n\n#안티그래비티 #Antigravity #AIcoding #Skills #Gemini #자동화\n\n---\n\nhttps://antigravity.google/docs/skills?media_id=3809588372042617774_63452224831&media_author_id=63452224831&ranking_info_token=GCA5Nzk4MmJhZjRiZjc0MGVjYWM2YjE2MTVjZDRkYzY1YyX%20m9YDJrTguJYNGBMzODA5NTg4MzM2OTg2NjIyMzAxKANoaWwA&utm_source=ig_text_post_permalink",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/613585868_17853345861605524_7333124857050333707_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMjE2MHgxMTc4LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QGfy3GyviSTHpaXkUo8rUWJbLDgXSCYYOKcmbDITHJPBTti0AN7EeI-NREIBQMIOHk&_nc_ohc=HeMhKVNqUSEQ7kNvwFSRprf&_nc_gid=uTSt7ykewYRpHLpw3nDMsA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwOTc0MTcxMDI3Njc5MjA1OA%3D%3D.3-ccb7-5&oh=00_AftPUsTtEmHnCLAj16PZ7OBrzVIFGK7JimqCMRFEvS12oA&oe=699AEB31&_nc_sid=10d13b"
@@ -4364,33 +4571,33 @@
       "local_images": [
         "web_viewer/images/46467818b05028dd8474b17710bf1bef.jpg"
       ],
-      "code": "DTe6-aPCY76",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTe6-aPCY76",
       "user": "tech.taek",
       "timestamp": "2026-01-14 16:43:44",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 168
     },
     {
-      "sequence_id": 226,
+      "sequence_id": 234,
       "sns_platform": "threads",
+      "code": "DTehb5JEavI",
       "full_text": "바이브코딩이 쉬워 보이는데, 막상 오류가 쌓이면 금방 막히곤 합니다. \n제가 해보니 질문→계획→구현 순서를 강제로 만들면 훨씬 덜 헤매더군요.\n\n1) 목표를 한 문장으로 고정합니다(누구의 어떤 문제를 무엇으로 해결). \n2) 제약을 적습니다(필수 기능 3개, 제외할 것, 사용 기술, 완료 기준). \n3) AI에게 “코딩하지 말고, 먼저 질문 5개와 작업 계획을 작성해달라”고 요청합니다.\n\n---\n\n이어서, 계획이 나오면 “작게 만들고, 바로 확인”으로 갑니다. \n바이브코딩은 속도보다 검수 리듬이 성패를 가르는 편입니다.\n\n4) 구현 요청은 한 번에 하나씩만 합니다. \n- “파일 구조 제안 → 필요한 파일만 생성 → 실행 방법까지 작성”을 포함해달라고 합니다. \n5) 오류가 나면 감으로 고치지 않고, 로그/재현방법을 그대로 붙입니다. \n- “원인 후보 3개, 수정안 2개, 변경 파일 목록, 왜 안전한지”를 요구합니다. \n\n마지막으로, 동작하면 README에 ‘설치/실행/환경변수/테스트 방법’을 남기면 다음 수정이 쉬워집니다.",
       "media": [],
       "crawled_at": "2026-02-12T19:06:02.305",
-      "code": "DTehb5JEavI",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTehb5JEavI",
       "user": "danielmentality_insta",
       "timestamp": "2026-01-14 13:00:34",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 169
     },
     {
-      "sequence_id": 227,
+      "sequence_id": 235,
       "sns_platform": "threads",
+      "code": "DTgo1tgkzfe",
       "full_text": "제 노션(Notion)은 '디지털 쓰레기통'이었습니다. 자료는 맨날 스크랩하는데, 정작 필요할 땐 못 찾아서 다시 구글링했거든요.\n\n그러다 챗GPT에 노션을 연결(MCP)하고 광명 찾았습니다. \n\n단순히 \"연동된다\" 수준이 아닙니다. '죽어있던 데이터'를 '살아있는 비서'로 만드는 2가지 방법입니다.\n\n---\n\n1. 내 과거의 뇌와 대화하기\n\n예시 : 작년 12월에 내가 짰던 마케팅 기획안 중에서, '인스타그램' 관련된 아이디어만 요약해서 알려줘\n\n1년으로 설정할수도 있습니다. (다만 시간 좀 걸림) \n구석에 박혀있던 아이디어를 기가 막히게 발굴해 줍니다\n\n---\n\n2. 텍스트 덩어리를 DB로 연금술 하기\n\n프롬프트 : 내 노션페이지 [페이지명]을 읽고, 하나의 통합 데이트베이스 형태로 만들어줘. 출력은 csv 파일로 만들어서 다운로드 할 수 있게 해줘. \n\n만들어진 csv파일을 업로드하면 어지럽던 데이터들이 하나의 데이터베이스로 만들어집니다.\n\n---\n\n노션이라는 저장소를 공장으로 만들어주는 챗지피티 연동, 꼭 한번해보세요",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/616388125_17908550784328272_7742051487316612595_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjgweDI1MC5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QGfQ7OIWjGbvW7Hgf6pyaYIRYQh-kNe3SIYc0ozSM8Fh_7TpyIrlkq12gRaes7Swhk&_nc_ohc=IFe6DpjROV8Q7kNvwEPfN5-&_nc_gid=80mh6--BEfqobt0Xxa5zvQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxMDIyNDg5NzYxMzA1MTg3MA%3D%3D.3-ccb7-5&oh=00_Aft84Yp7W0H1lsjn3rk_4VNC2zQIsum3-G8ZWrgkIWHDHg&oe=699B0853&_nc_sid=10d13b",
@@ -4403,18 +4610,18 @@
         "web_viewer/images/a74e4bddae98c260f029d3d7971c6d38.jpg",
         "web_viewer/images/cf0b10683ac72611763842fe5755cd0d.jpg"
       ],
-      "code": "DTgo1tgkzfe",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTgo1tgkzfe",
       "user": "the_unwork",
       "timestamp": "2026-01-15 08:43:44",
-      "is_merged_thread": true,
       "original_item_count": 4,
-      "is_detail_collected": true,
       "platform_sequence_id": 170
     },
     {
-      "sequence_id": 228,
+      "sequence_id": 236,
       "sns_platform": "threads",
+      "code": "DTdDlJBEr3W",
       "full_text": "제미나이 쓰는 분들\n이 설정 안 켜면\n절반만 쓰는 겁니다\n\n설정 > Google Workspace 연동\n\n구글 연동이\n제미나이의 핵심입니다\n\n---\n\n그래서 이걸로 뭘 할 수 있냐면요.....\n\n구글 서비스랑 연동해서\n진짜 '일'을 시킬 수 있습니다👍\n\n제가 주로 시키는 3가지 알려드릴게요.\n\n1. 메일 보고 문서 수정 \n\"방금 협력사 메일 온 거 같은데,\n피드백 반영해서 어제 드라이브에 올린 제안서 수정해줘\"\n\n2. 어떤 분야든 무료로 PPT 10분 컷\n제미나이 딥 리서치로 조사하고\n구글 슬라이드에서 PPT 생성\n\n3. 드라이브 문서 찾기\n\"제목은 기억 안 나는데,\n드라이브에 프롬프트 정리해둔 PDF에서\n~~ 내용 있었는지 찾아줘\"\n\n특히 바쁠 때 폰에서 음성으로 시키면\n비서가 따로 없습니다.",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/613059641_17845645374648544_2759458554114064340_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTIzN3g1ODkuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QFyDoH1QZXhjMxs6_grz1R8JLw-W26Q4H3td8EI3tIayV7FHGOiGi87yeLzbv1Itu4&_nc_ohc=FuFbxkus2lMQ7kNvwEWiyQ9&_nc_gid=j5nfyQgzHk4jbqyju-3oHw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwOTIxNjYwNjI2NzE2MjA3MA%3D%3D.3-ccb7-5&oh=00_AfsA9vRdSOrxXhi_FUm6kLmgUMuLVgIRKwIZ217YAHCetg&oe=699AFF4D&_nc_sid=10d13b"
@@ -4423,18 +4630,18 @@
       "local_images": [
         "web_viewer/images/e50a449b4361a72924ad5c36f78f55a0.jpg"
       ],
-      "code": "DTdDlJBEr3W",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTdDlJBEr3W",
       "user": "aiecorofficial",
       "timestamp": "2026-01-13 23:20:27",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 171
     },
     {
-      "sequence_id": 229,
+      "sequence_id": 237,
       "sns_platform": "threads",
+      "code": "DTdRm8xlJv6",
       "full_text": "쓰레드에서 공유해주신 글을 보고, 안티그래비티 활용해서 자동화 워크플로우를 따라해봤다. 꽤나 잘 굴러간다. 아침 7시로 설정해서, 자동으로 관련주제 아티클을 오픈소스로 추출하고 초록/타이틀/doi를 잘 맞춰 뽑아준다. 학위논문 중인 분의 경우나, 관련  주제 문헌고찰하는 분들에게는 이러한 과정이 특히나 도움이 될 것 같다.",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/616118396_17938653417111488_5894763706706625455_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTEwN3g4MjIuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QG9k637d1irWmBhOsXvd9hlPEi-pa7rp9Au30zjcyMEHpBL2iyqfVX2w1b2MEvysGg&_nc_ohc=gaEBwZlutzkQ7kNvwHuEuSs&_nc_gid=grHDj4Aoh7bGdLoMT63Jeg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwOTI3ODMwMzIxMjQ0NDY2Ng%3D%3D.3-ccb7-5&oh=00_AfsiGudfyfx_ha6ds9rG7-HSHCjH6CCp2TwVOlF1aBjnMg&oe=699AF88A&_nc_sid=10d13b"
@@ -4443,18 +4650,18 @@
       "local_images": [
         "web_viewer/images/2a726cbfd7d414dbc8aedd4b778d2b03.jpg"
       ],
-      "code": "DTdRm8xlJv6",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTdRm8xlJv6",
       "user": "immersivebama",
       "timestamp": "2026-01-14 01:23:01",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 172
     },
     {
-      "sequence_id": 230,
+      "sequence_id": 238,
       "sns_platform": "threads",
+      "code": "DTb_O9qgYEJ",
       "full_text": "간단하게 정리해보는 구글워크스페이스와 인공지능 사용법\n\nKeep - 링크와 아이디어 수집\nDrive - Second Brain과 Agent, Skill 저장소\nNotebookLM - 링크 분석, 다양한 유형의 정보들의 분석과 정리\nGemini - 콘텐츠 연결과 창발\nTask - Project 관리\nOpal - 업무자동화",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/612650275_17935634307117517_5493552052326433144_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTUxNXg4MzIuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QFefgJH-NQ2CbtTLEgnRVHqYoPUp58k8e0T-IIVJ4V3iPY1pXy87Vu4lE0-y7otpms&_nc_ohc=m0GS8NJTYr4Q7kNvwEKNP0u&_nc_gid=ZYBFWimKOzczWK1K_37flg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwODkxNjAxNTA4NjE0MTcwNQ%3D%3D.3-ccb7-5&oh=00_AftOHYMdFQPV1KI2nVatc_Oz7DqDTVN3OA7TE_TmsVTSCg&oe=699AF0A2&_nc_sid=10d13b"
@@ -4463,33 +4670,33 @@
       "local_images": [
         "web_viewer/images/6bf797adab7efd29fa25a7d9af4a2273.jpg"
       ],
-      "code": "DTb_O9qgYEJ",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTb_O9qgYEJ",
       "user": "pangol82",
       "timestamp": "2026-01-13 13:23:13",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 173
     },
     {
-      "sequence_id": 231,
+      "sequence_id": 239,
       "sns_platform": "threads",
+      "code": "DTXV6R6E-IZ",
       "full_text": "Claude Code 만든 사람 세팅 공개됨.\n터미널 5개.\n웹 버전 5-10개.\n폰으로 아침에 세션 시작.\n15개 이상 동시에.\n근데 \"특별한 세팅 없다\"래.\n\n---\n\n모델:\nOpus 4.5 씀.\n\"크고 느린데 왜?\"\n손이 덜 가서.\n자꾸 고쳐줘야 하는 작은 모델보다\n결국 더 빠르대.\n\n---\n\nCLAUDE.md 운영법:\n팀 전체가 파일 하나 공유.\nClaude가 뭔가 잘못하면?\n바로 그 파일에 추가.\n\"다음엔 이러지 마\"\n일주일에 몇 번씩 업데이트.\n\n---\n\n코드 짜기 전에:\n바로 안 짬.\nShift+Tab 두 번 → Plan 모드.\nClaude랑 계획 핑퐁.\n괜찮으면 그때 실행.\n\"좋은 계획이면 보통 한 번에 끝남\"\n\n---\n\n반복 작업은 자동화:\n- /commit-push-pr 같은 slash command\n- 코드 정리하는 subagent\n- MCP로 Slack 검색, 에러 로그 확인\nClaude가 알아서 다 씀.\n\n---\n\n오래 걸리는 작업은:\n--permission-mode=dontAsk 쓰거나\nralph-wiggum 플러그인.\nClaude가 나한테 막혀서 멈추는 일 없게.\n\n---\n\n가장 중요한 팁:\n\"검증 방법 주면 퀄리티 2-3배\"\n테스트 짜게 하든\n브라우저 열어서 확인하게 하든.\n스스로 피드백 돌게 하는 게 핵심이래.\n\n🔗 Boris 원문: \nhttps://www.threads.com/@boris_cherny/post/DTBVlMIkpcm\n\n너는 어떻게 쓰고 있어? 👇",
       "media": [],
       "crawled_at": "2026-02-12T19:06:05.317",
-      "code": "DTXV6R6E-IZ",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTXV6R6E-IZ",
       "user": "jisang0914",
       "timestamp": "2026-01-11 18:05:10",
-      "is_merged_thread": true,
       "original_item_count": 7,
-      "is_detail_collected": true,
       "platform_sequence_id": 174
     },
     {
-      "sequence_id": 232,
+      "sequence_id": 240,
       "sns_platform": "threads",
+      "code": "DTW2A2pE5y0",
       "full_text": "일론 머스크가 SpaceX와 Tesla를 만들 때 실제로 쓴 설계 방법론이 있다.\n\n5단계로 구성된 이 프로세스.\n대부분의 조직이 거꾸로 하고 있다고 한다.\n\n핵심은 이거다.\n\"자동화나 최적화보다 먼저, 정말 필요한 건지부터 의심하라.\"\n\n쉽게 풀어볼게!\n\n---\n\n1단계: 요구 사항을 의심하라\n\n모든 요구 사항은 누군가의 머릿속에서 나온 가설일 뿐이다.\n\n\"왜 이게 필요해?\"\n\"누가 언제 만든 거야?\"\n\"근거가 뭔데?\"\n\n머스크는 특히 이렇게 말한다.\n\n\"똑똑한 사람이 만든 요구사항일수록 더 의심해라.\"\n\n권위에 기대서 검증을 생략하는 게 가장 위험하다는 거다.\n\n---\n\n2단계: 과감하게 삭제하라\n\n의심이 끝났으면 이제 없앨 차례다.\n\n부품, 기능, 버튼, 승인 단계, 문서.\n\n다 삭제 대상이다.\n\n머스크의 조언은 심플하다.\n\n\"조금 과할 정도로 빼봐라. 문제 생기면 그때 다시 넣으면 된다.\"\n\n처음부터 안전하게 가려는 태도가 복잡성을 눈덩이처럼 키운다.\n\n---\n\n3단계: 그 다음에 단순화하고 최적화하라\n\n여기서 순서가 중요하다.\n\n대부분은 복잡한 설계를 그대로 둔 채 최적화부터 시작한다.\n\n머스크는 이걸 이렇게 표현했다.\n\n\"존재해서는 안 될 것을 열심히 최적화하는 것.\"\n\n제거 먼저. 단순화 먼저. 최적화는 그 다음이다.\n\n---\n\n4단계: 속도를 높여라\n\n설계 - 시제품 - 테스트 - 피드백 - 수정.\n\n이 사이클을 최대한 빠르게 돌려야 한다.\n\n빠른 반복이 곧 학습 속도.\n\n학습 속도가 곧 경쟁력이다.\n\n완벽한 계획을 기다리지 마라.\n\n빠르게 만들어보고 문제를 조기에 발견하는 게 전체 비용을 줄인다.\n\n---\n\n5단계: 마지막에 자동화하라\n\n여기가 핵심이다.\n\n대부분의 조직이 자동화를 너무 일찍 도입한다.\n\n그 결과?\n\n잘못된 설계와 불필요한 공정을 로봇과 소프트웨어로 굳혀버린다.\n\n1~4단계를 다 거친 후에 자동화해야 투자 대비 효과가 극대화된다.\n\n\"먼저 단순화, 나중에 자동화.\"\n\n이 순서를 지켜야 한다.\n\n---\n\n정리하면 이렇다.\n\n모든 요구 사항은 의심하라.\n\n과감하게 삭제하라.\n\n남은 것을 단순화하라.\n\n빠르게 반복하라.\n\n그리고 마지막에 자동화하라.\n\n당연해 보이지만, 실제로는 거의 모든 조직이 반대로 한다.\n\n---\n\n복잡하고 느린 시스템에 익숙해지면 끝이다.\n\n단순하고 빠르게.\n\n이게 머스크가 로켓과 전기차를 만든 방법이다.\n\n---\n\n틸노트를 사용해봐. AI로 위키피디아 스타일의 지식 노트를 키워드 한 번에 만들고 학습할 수 있어. 여기에 지식을 쉽게 추가할 수 있어. 학습이 10배 더 빨라진다.\n\nhttps://tilnote.io",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/612128573_17908024599318076_3789644857711431989_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTA2MHgxMzI0LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QGKq0VE3sPTjt5gLw0yAGayhTMPLbUhnLH9EjdpUVUyynaogb6LV5VJ-kQgt90lFgs&_nc_ohc=Qsm0LJ1fMhwQ7kNvwHiEzsk&_nc_gid=Lh7LFv2hho1MmDaZLgHfTw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwNzQ2ODA3OTYzOTkzMzUwNw%3D%3D.3-ccb7-5&oh=00_AfubVJovXjh2uR0AbMengReBQKzdFTyV6Z0Sz6womTSOzw&oe=699AD50E&_nc_sid=10d13b"
@@ -4498,18 +4705,18 @@
       "local_images": [
         "web_viewer/images/799832e4ce57f1db8285fa98284e1aef.jpg"
       ],
-      "code": "DTW2A2pE5y0",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTW2A2pE5y0",
       "user": "tilnote",
       "timestamp": "2026-01-11 13:26:27",
-      "is_merged_thread": true,
       "original_item_count": 9,
-      "is_detail_collected": true,
       "platform_sequence_id": 175
     },
     {
-      "sequence_id": 233,
+      "sequence_id": 241,
       "sns_platform": "threads",
+      "code": "DTW2wockmnA",
       "full_text": "바이브코딩 찐고수들은 다 쓰고 있는 툴 공개함.\n\n바로 '안티그래비티 매니저' 라는 툴인데\n깃헙에 나오자마자 별 1만개 찍고 시작함ㄷㄷ\n심지어 포크는 1천이 넘음.\n\n안티그래비티 오래 쓰는 사람들은\n토큰 문제로 당연 다계정을 쓰는데,\n\n이 툴을 쓰면 원클릭 계정 전환이 되고\n토큰 부족하다 싶으면 알아서 관리함.\n따라서 작업이 끊기지 않음.\n\n토큰 절약은 당연하고\n코드 자동화(계획-실행-검증)까지 지원.\n\n제미나이의 오픈코드로 떠오르는중🔥\n\n---\n\n링크가 안 올라가네요\n깃헙에서 아래 검색하시면 됩니다\n브라우저 병렬 처리도 가능하고\n기존에 잘 치시던 분들은 날라다닐듯.\n\n추가로, 오픈채팅방 오픈했습니다.\n무료 전자책 공유, 노하우 및 좋은 서비스 공유하고 있습니다.\n\nhttps://open.kakao.com/o/gyNcYWai",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/612072732_17926298442193014_4919840245737070619_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTA3OXg3Mjguc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QHxejISBDNUQk2jHhjgk05DW73b02Ppec7e6oNK8XVYRIT1v0xaOdkwEFTWN02P1qs&_nc_ohc=qABlLr19tAYQ7kNvwGRNgfJ&_nc_gid=LiIxOv1aF-xZpWMNJ6KPoA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwNzQ3MTM3MTQ2Mzg0NjMzNg%3D%3D.3-ccb7-5&oh=00_Afs3U76cjSXv-0IJMh3-yjaERtp8Hpzyl-yF-JdAy0D3gA&oe=699B03C8&_nc_sid=10d13b",
@@ -4520,33 +4727,33 @@
         "web_viewer/images/b21eb2d668caa106e130d13d8f9ac883.webp",
         "web_viewer/images/212de4fb2d771090bc6981f9d4cf7457.jpg"
       ],
-      "code": "DTW2wockmnA",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTW2wockmnA",
       "user": "dev_shibaa",
       "timestamp": "2026-01-11 13:32:58",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 176
     },
     {
-      "sequence_id": 234,
+      "sequence_id": 242,
       "sns_platform": "threads",
+      "code": "DTUrjxHlL_-",
       "full_text": "지금 실리콘밸리 개발자는 모두 비상에 걸렸다. \nMeta에서 8년차 개발자로 일해온 나 역시 마찬가지다.\n\nAI가 너무 빠른속도로 발전하면서, 그리고 너무 잘하게 되면서 \"현타\" 가 터져나오고 있다. 특히 네임드전드 개발자들 사이에서.\n\n그래서 지금은 모두가 불안해하며 열심히 Claude Code 를 써보며 공부하고 있다.\n오늘 공부가 끝나면 내일 새로운 툴이 생긴다. 사실 따라가기 벅차다.\n\n나는 \"엔지니어링\" 이라는 직군이 사라질것이라고 생각하지는 않는다. 다만 우리에게 친숙한 \"Coding\" 이라는 개념은 \"AI Coordinations / Orchestrations\" 의 개념으로 반드시 바뀔것이라고 생각한다.\n\n개발자들이야말로 이러한 도구들을 쓰기에 더욱 유리하지만, 한편으로는 가장 늦게 adopt 하는 사람들도 분명히 많다. 그 이유는 우리 모두가 \"변화\" 를 두려워하기 때문이다.\n\n처음에는 거부하고, 화내고, 의심하지만 결국 수용하지 않는다면 \"늪\" 에 빠질 것이다.",
       "media": [],
       "crawled_at": "2026-02-12T19:06:08.343",
-      "code": "DTUrjxHlL_-",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTUrjxHlL_-",
       "user": "careerhackeralex",
       "timestamp": "2026-01-10 17:16:37",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 177
     },
     {
-      "sequence_id": 235,
+      "sequence_id": 243,
       "sns_platform": "threads",
+      "code": "DTW40xejLeJ",
       "full_text": "지난달 했었던 생성형 AI 활용 교수법 특강 자료 공유합니다. 여기서 배워가는게 많은데, 입 싹 닦기도 뭐하고, 뭐라도 하나 내 놔야 할 것 같은 불편한 마음에, 나눌 수 있는게 뭐 있나 찾아보다가 지난달에 발표했던 자료 공유해 봅니다. AI 관련해서 어떻게 수업에 쓸까 많은 교수님들 이미 아시고 잘 활용하고 계시리라 믿습니다만, 혹시나 한번 시도해 볼까 싶은데 막막해 하시는 분들 계실까 싶어서 일천하나마 올려봅니다. 이게 뭐 저작권 있는 연구논문도 아니고, 그냥 한국의 모 대학 교수님들 대상으로 특강한 자료인데, 보시고 아이디어 얻어가실 수 있었으면 좋겠습니다. 총 54장 슬라이드인데, 이미지 첨부가 20개가 맥스더라구요. 그래서 본글-댓글-댓글 이렇게 세개로 나눠서 포스팅합니다. (그러실 분은 없으시겠지만, 혹시나 싶어 말씀드리는데, 그대로 긁어가서 영리 목적으로는 사용안해주셨으면 좋겠습니다.)\nSlide 1-20\n\n---\n\nSlide 21-40\n\n---\n\nSlide 41-54\n\n---\n\n보시면 아시겠지만, 전체 슬라이드의 많은 부분이 구글슬라이드에 탑재된 나노바나나를 활용해서 생성한 슬라이드 입니다.\n\n---\n\n리포는 얼마든지 괜찮은데, 비행기는 사절입니다. 제발 부탁드립니다. 🙏🙏🙏",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/612066442_17920333701235083_2861705251483034573_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTI4MHg3MjAuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QFM7otLnWz8KYAyUPHxcBWDXXgOBdGu2JJmMTjaGlHJRlG6WYNlb_yo-3iDGzsuduc&_nc_ohc=a09BfOFzl3EQ7kNvwGplm0d&_nc_gid=LEIUpRffQfgxV9XICMby_A&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwNzQ4MDQ0MzUyNDg3ODEwMQ%3D%3D.3-ccb7-5&oh=00_AftLWp0aDArhC-nrhD1m1JUt4XHK4kcn3Q4zx0VgZGM8gA&oe=699AEB13&_nc_sid=10d13b",
@@ -4559,18 +4766,18 @@
         "web_viewer/images/00bf45c9186db156cb3677f889729efa.jpg",
         "web_viewer/images/5287ad4f8433acb4ba13d4e608bcda17.jpg"
       ],
-      "code": "DTW40xejLeJ",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTW40xejLeJ",
       "user": "edtkworker",
       "timestamp": "2026-01-11 13:51:01",
-      "is_merged_thread": true,
       "original_item_count": 5,
-      "is_detail_collected": true,
       "platform_sequence_id": 178
     },
     {
-      "sequence_id": 236,
+      "sequence_id": 244,
       "sns_platform": "threads",
+      "code": "DTWRE-4EbAC",
       "full_text": "구글아 이런거 만들었으면 자랑좀해라..\n\n제미나이가 구글안에 들어오면서 \n구글DOCS가 또 한단계 진화했습니다.\n\n영상부터 보실까요?\n\n이게 AI지 캬... 이제는 자료수집 문맥 수정 윤문까지\n올인원으로 닥스안에서 가능하네요\n\n[사용법은 아래서 보시죠]\n\n---\n\n제미나이에 들어와서 작성도움받기를 한번 눌러봅시다.\n\n그럼 뭔가 입력하라는 창이 나오는데요\n\n각 글이 300글자 정도로 구성된\nAI에대한 인사인트 있는글 20선\n\n이렇게 입력해볼게요\n\n---\n\n허허,... 바로 삽입을 눌러볼까요?\n\n글이 아쉽긴한데 초안용으로 이만한 양산성을 가진게 없습니다.\n\n---\n\n그리고 특정부분을 드래그하면 상세검색이 생성되는데\n\n자세히 설명 버튼을 누르면 음... 야!!\n내가 직접 내밥줄을 끊고있어!!!\n\n---\n\n이외에도 직접 시킬수있으니 반드시 한번써보세요\n그 마소야 이런것좀 넣어주면 안되냐?...",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/613097462_1592813071882896_1772282091571084173_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDI1OC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QEm29jb-1MYs2WW2f-AQgR5l-PYLkdiYGP7MSA-H5ExSxWU3kzqL6--1TOBMOKBgTs&_nc_ohc=70qnY6e7aFsQ7kNvwGHBDnD&_nc_gid=IRTfDXhwH2kIjq3yD5Wk6w&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwNzMwNTY0NDE2OTYwNTEyMg%3D%3D.3-ccb7-5&oh=00_AftGwRuo-fCoAOkssSaQhTNl2v4B2FgQ5ycx20ZD1nEJTg&oe=699AFF20&_nc_sid=10d13b",
@@ -4587,18 +4794,18 @@
         "web_viewer/images/3b000528dc7cd6b0103b5dfc3c2943b4.jpg",
         "web_viewer/images/283262e4143d53301a3eb580e496de80.jpg"
       ],
-      "code": "DTWRE-4EbAC",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTWRE-4EbAC",
       "user": "specal1849",
       "timestamp": "2026-01-11 08:09:15",
-      "is_merged_thread": true,
       "original_item_count": 5,
-      "is_detail_collected": true,
       "platform_sequence_id": 179
     },
     {
-      "sequence_id": 237,
+      "sequence_id": 245,
       "sns_platform": "threads",
+      "code": "DTUEEroki7e",
       "full_text": "AI 디자인 치트키, 이제 그냥 복붙해서 쓰자! \n\nAI로 디자인하는 사람들 사이에서 요즘\n조용히 돌고 있는 꿀사이트 하나 공유할게. \n나노바나나, ChatGPT 같은 AI한테 ctrl+c,v \n바로 써먹을 수 있는 디자인 프롬프트 모음집이야. \n\n⭐️일일이 프롬프트 찾느라 시간 낭비할 필요 없이\n스타일별로 정리된 프롬프트를 그냥 복붙하면 끝.\n\n---\n\nhttps://furoku.github.io/bananaX/projects/infographic-evaluation/",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/611268080_17907146616319613_3969179658808414466_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTA4MHgxMDgwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QHlMCFIdpsyWy6qid0dbD0kxv5cS0ZZg2TaAdRWxFklfGETNSMwASD3uyy-Q4RWcS4&_nc_ohc=s8jyy8PFFkoQ7kNvwGQAKIJ&_nc_gid=iqneMOTMOqf4OglVtIwokw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwNjY4NTQ5MjAyMTQ2MTY3MQ%3D%3D.3-ccb7-5&oh=00_Afvrsfm9skv2-C8cvBoKWlpqtskM2taG8RnYWIM3yWI98Q&oe=699AEA2B&_nc_sid=10d13b"
@@ -4607,18 +4814,18 @@
       "local_images": [
         "web_viewer/images/ed9995db9ff11e3ce57f2009012417bc.jpg"
       ],
-      "code": "DTUEEroki7e",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTUEEroki7e",
       "user": "sarah.eat.mom",
       "timestamp": "2026-01-10 11:31:35",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 180
     },
     {
-      "sequence_id": 238,
+      "sequence_id": 246,
       "sns_platform": "threads",
+      "code": "DTUyzxDAX4K",
       "full_text": "내가 금융권 출신이라 잘 안다. \n\n사람들은 돈 불리는 복리에는 환장하면서, \n글쓰기 + 브랜딩 복리는 철저히 무시한다.\n\n글 1개는 데이터 조각이다. \n글 100개는 명함이 된다. \n글 1,000개는 신뢰 자본이 된다. \n글 6,000개는? 무너지지 않는 성이 된다.\n\n내가 지금 각잡고 글 하나 툭 던지면 \n파급력이 큰 이유? 완판 되는 이유?\n쌓아둔 [블로그 + 스레드] 5,999개의\n글이 이자를 쳐주고 있기 때문이다.\n \n끝까지 쓰면 이자까지 쳐서 다 가져간다. \n이건 수학적 진리다. (나 이과 경제학 출신임)",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/612083793_17922058167216985_1041051688136553029_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjk3eDQ1MS5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QGiIxY3PVYQpOmpg1BYhxTXYkqAIT10--OQMQTkB8VjbDQH1hTM0s5iY1hssGeRDDw&_nc_ohc=Ys9YrFbONfoQ7kNvwH64rTv&_nc_gid=QyLBx7aISt88j_5SYzKyAQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwNjg5MTA0NDcxNzU1OTMwNg%3D%3D.3-ccb7-5&oh=00_AfuPgtpXvdOdO3TOpZAVxTYXUw49uJQ8gwWUp__FbBtqZA&oe=699B0B4E&_nc_sid=10d13b"
@@ -4627,63 +4834,63 @@
       "local_images": [
         "web_viewer/images/f8e7ac46bb78b6f24303c58fb665fccc.jpg"
       ],
-      "code": "DTUyzxDAX4K",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTUyzxDAX4K",
       "user": "careernomad_",
       "timestamp": "2026-01-10 18:19:58",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 181
     },
     {
-      "sequence_id": 239,
+      "sequence_id": 247,
       "sns_platform": "threads",
+      "code": "DTTJ9SJE4YD",
       "full_text": "아는 사람은 다 아는 돈 잘 버는 출판사의 방법.\n구역질 주의.\n\nai로 책을 냄.\n국중도에 책을 내면 1권 가격을 받음.\n지자체 지원금을 받음.\n\n어느 출판사는 만 권 정도 냈다던데...\n\n우리 세금으로 그걸 다 사주고 있는 꼴.\n마케팅 출판사 특히 이럼\n무료출판도 이럼 ai생기고는 무료도 안 해줌.\n\n이거 모르는 사람 많길래.\n아는 사람도 많을 거지만 올려봄.\n\n---\n\n아, 그리고 이 이야기. ai 부문만 제외하고 2023년에 이미 말한 내용임.\n\n---\n\n제작비 얘기니 뭐가 나오는데\n책 한 권에서\n‘책’의 원가는 25%이하인 경우가 많다.\n그러니꺼 ai로 디자인이고 내용이고 다 만든 사람들은\n75%이상의 이윤을 남긴단 소리다.\n그리고 페이지를 줄이고 가격을 올리면 더 원가는 내려가고 이윤을 올라간다.\n여튼 그렇다고...\n\n작가 인세는 10% 정도다...\n\n---\n\n라더라...가 어딨어.\n그냥 책을 ai로 내용이랑 디자인해서\n최소 값에 인쇄 제본을 하면\n국중도를 이용해 돈을 벌 수 있다는 구조를 말하는 글이고 지자체나 재단 지원금은 어떤 조건에 따라 추가로(모 지자체는 300만 원이었음 하나당) 받을 수 있다고 말한 건데 되게 그냥 자기들 출판사 구조는 이렇게 돌아간다고 말하면 어쩌라고... 지들이 뭐뭐 더라 이렇다 말하면서 \n대놓고 말하는데 그걸 가정이라고 말하네...\n\n---\n\n열받는게 태클 건 사람들 다 출판사 사람들이네?\n아니 제본 인쇄를 한 권만 한다고 디자인이랑 교정교열 비용을 ai로 뺀다고 아아아아아악 알만한 사람들이 다 자기 고정관념에 빠져서 제일 문제재기 해야하는데 내가 문제라고 하고 자빠졌네...\n\n---\n\n13000원 짜리 책 중에서 교보문고 직원 할인가\n1000원인 책도 있다... \n\n니들이 몰알아! ㅋㅋㅋ\n\n---\n\n진짜 전문가고 종사자고 문제제기하고 사건에 관해서 잘 안다고 떠들 때까지 기다리다가 ai 전자책은 pdf납본 가능한 거 깠는데 부끄럽겠지.\n자칭 전문가 분들은? 종사자 분들은? 문제 제기하고 사건 잘 안다는 인간들은?",
       "media": [],
       "crawled_at": "2026-02-12T19:06:11.362",
-      "code": "DTTJ9SJE4YD",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTTJ9SJE4YD",
       "user": "sangdamgac",
       "timestamp": "2026-01-10 03:03:46",
-      "is_merged_thread": true,
       "original_item_count": 7,
-      "is_detail_collected": true,
       "platform_sequence_id": 182
     },
     {
-      "sequence_id": 240,
+      "sequence_id": 248,
       "sns_platform": "threads",
+      "code": "DTVOakVkSUb",
       "full_text": "오늘은 정~~~말 유의미한 진전이 있는 날이다.\n옵시디언+안티그래비티 조합을 드디어 허들을 넘었다.\n\n연구계획서 .md 파일주고, 관련된 논문 검색 및 저장 프로젝트를 굴렸다. \n안티그래피티에 넣을 프롬프트의 모든 구조는\nGPT-5.2-thinking 모드로 하나부터 열까지 다 물어봤다.\n\n한 3시간 걸린 것 같다.\n정말 내가 원하는 논문들만 추리고 추리더라.\n그 추리는 과정에서 몇시간이 걸렸다. \n자기가 알아서 어떤 키워드에 가중치를 주고 스크리닝해야\n원하는게 나오는지를 한 5번 체크하더니\n결국 딱 원하는 것만 전부 추리고\n\n연구계획서에서 기술되었던 변수별로\n연구 아이디어 집을 작성해서 만들어준다.\n그리고 전체 네트워크 시각화는 덤.\n\n아.. 바로 이거구나.\n이런게 AI co-scientist 구나.\n\n그동안 챗GPT에게 내 연구에 대해서 뭐 물어보고 부탁하는건\n정말 초보 중의 초보적인 방식이었구나.\n\n새 시대의 방법이다. 진짜.\n연구자님들, 이거 꼭 하세요. 진짜에요.",
       "media": [],
       "crawled_at": "2026-02-12T19:06:14.383",
-      "code": "DTVOakVkSUb",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTVOakVkSUb",
       "user": "taehyeong_lim",
       "timestamp": "2026-01-10 22:21:12",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 183
     },
     {
-      "sequence_id": 241,
+      "sequence_id": 249,
       "sns_platform": "threads",
+      "code": "DTUAdBHjV7G",
       "full_text": "AI로 보고서 쓰면 끝날 거라 믿는 착각은 이제 그만\n\n초안만 맡기기 = 수정 지옥\n\n대신 이 6가지 보고서 프롬프트로 AI를 비서가 아니라\n전략기획팀 에이스처럼 써봐\n\n---\n\n1. 두괄식으로 구조부터 뒤집기\n\n프롬프트\n“이 자료 [내용]를\n결론부터 말하는 두괄식 구조로 다시 짜줘\n\n가장 위에\n내가 상사에게 전달하고 싶은\n핵심 결론 한 문장을 먼저 써줘\n\n그 결론을 뒷받침하는 근거 3가지를\n같은 레벨로 묶어서 정리해줘\n\n‘검토해보았으나’ 같은 서론은 다 빼고\n‘승인 요청’, ‘예산 증액 필요’처럼\n내가 원하는 요청 사항을\n첫 줄에서 명확하게 밝혀줘”\n\n---\n\n2. 논리 구멍 MECE로 막기\n\n프롬프트\n“이 보고서 구조가\n중복 없이 빠짐없는 상태인지 점검해줘\n\n비용은 있는데 리스크가 빠졌거나\n성과는 있는데 실행 계획이 없는 부분이 있으면\n그걸 정확히 지적해줘\n\n각 항목의 레벨이 뒤죽박죽이면\n같은 위계로 다시 정리해줘”\n\n---\n\n3. 임원 보고용 말투로 바꾸기\n\n프롬프트\n“아래 문장들을\n회사 임원 보고용 포멀한 톤으로 고쳐줘\n\n구어체 표현은 줄이고\n명사형 종결어미를 적절히 사용해서\n단정하고 신뢰감 있게 바꿔줘\n\n‘엄청 늘었다’, ‘대박이다’ 같은 표현은\n구체적인 수치나\n전문적인 비즈니스 표현으로 교체해줘”\n\n---\n\n4. 데이터 뒤에 ‘그래서?’ 붙이기\n\n프롬프트\n“각 데이터나 현황 설명 뒤에\n이게 우리 사업에 어떤 의미가 있는지\n한 줄 시사점을 붙여줘\n\n단순한 결과 설명 말고\n이걸 보고 상사가\n어떤 결정을 내려야 하는지까지 연결해줘\n\n각 섹션마다\n실제로 실행해야 할 Action Item도 함께 정리해줘”\n\n---\n\n5. 글을 그림으로 바꾸기\n\n프롬프트\n“이 설명 [내용]을\n글로 쓰지 말고\n한눈에 보이는 차트나 도식으로 바꿔줘\n\n가장 적합한 형태\n예: 파이 차트, 흐름도, 2x2 매트릭스를 추천해주고\n각 축이나 구성 요소에\n무슨 내용이 들어가야 하는지 설명해줘\n\n그 도식 바로 아래에 들어갈\n한 줄 핵심 메시지도 같이 써줘”\n\n---\n\n6. 상사 질문 미리 막기\n\n프롬프트\n“네가 우리 회사에서\n가장 까다로운 임원이라고 가정해줘\n\n이 보고서를 봤을 때\n나올 만한 날카로운 질문 3가지를 뽑아줘\n\n각 질문에 대해\n핑계가 아니라\n현실적인 해결책 중심으로\n방어 답변을 준비해줘”",
       "media": [],
       "crawled_at": "2026-02-12T19:06:14.383",
-      "code": "DTUAdBHjV7G",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTUAdBHjV7G",
       "user": "yourgpt3650",
       "timestamp": "2026-01-10 10:59:57",
-      "is_merged_thread": true,
       "original_item_count": 7,
-      "is_detail_collected": true,
       "platform_sequence_id": 184
     },
     {
-      "sequence_id": 242,
+      "sequence_id": 250,
       "sns_platform": "threads",
+      "code": "DTU3wjAihFa",
       "full_text": "AI로 만든 PPT 더이상 무시하지마세요\n\n마누스로 만든 슬라이드를 보면\n깜짝 놀랄 겁니다.\n\n다만, 아래의 프롬프트를 추가해야합니다.\n\n---\n\n아래의 프롬프트를 넣고\n마누스에게 슬라이드 요청하세요",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/613538274_1610129893762521_4612867077135700384_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDM4NC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QGSQbl5vo0xQsI1AJcCpjQkwVShDj97P_UbL65uwZvod3N289IwF4J50DLfbW1z-lY&_nc_ohc=6IxoDyAljm8Q7kNvwF5xE3P&_nc_gid=WJLseR7PcxO_s12QQvlMgQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwNjkxMjgxMzcxNzkxODA0Mg%3D%3D.3-ccb7-5&oh=00_Afum6Mpnx_mHJ9Hux1MdGFAjBovBuW3mmY-uwHgjIPdoAA&oe=699B071F&_nc_sid=10d13b"
@@ -4692,18 +4899,18 @@
       "local_images": [
         "web_viewer/images/e889dd150a2eb8e39dc6bf71e2aa3c57.jpg"
       ],
-      "code": "DTU3wjAihFa",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTU3wjAihFa",
       "user": "ai_sync_club",
       "timestamp": "2026-01-10 19:05:00",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 185
     },
     {
-      "sequence_id": 243,
+      "sequence_id": 251,
       "sns_platform": "threads",
+      "code": "DTSPxhJFUre",
       "full_text": "Gemini  GEM 기능을 써봤는데 이거 완전 대박임. \n홈에가서 딥리서치기능 선택하고,  평소에 내가 관심있는 책한권 을 챕터별로 정리해달라고 요청.  10분정도면 다 완성이되는데 이 화일을 PDF로 저장해서 Gem 으로보내서 페르소나를 지정해줘야함.  넌 나의 경영컨설턴트야. 이 책을 바탕으로 회사경영 ceo 지혜와 컨설팅을 부탁해. 라고 지정해주고 채팅시작. \n\n질문: 직원을 뽑아야하는데, 인성이 먼저야, 일잘하는 사람이 먼저야?  질문 던져봄. \n기가막힌 조언을 해줌 ㅋㅋㅋ",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/612692758_17923543503206480_5840680775473470738_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTgwMngxMzQwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QG4K29VRlkDzL-Y6JaMn6jziJTavl5sdmhnq52EBsuN7E20VRRu4MC9yE4CaX-ycDo&_nc_ohc=8UeGGtlSasEQ7kNvwHj-4Nb&_nc_gid=sshIQm-ZEcLIEM3gtDGyHQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwNjE3NDAwNTQxNDk1OTY4MQ%3D%3D.3-ccb7-5&oh=00_AfvNoOsF02tSUzrbkSfyLjsCyFXkRBq5qYHWuUUP70TpjQ&oe=699AFD43&_nc_sid=10d13b"
@@ -4712,33 +4919,33 @@
       "local_images": [
         "web_viewer/images/4e1c9e4961712e3cfe123f0d3d3e226d.jpg"
       ],
-      "code": "DTSPxhJFUre",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTSPxhJFUre",
       "user": "lucy_prime788",
       "timestamp": "2026-01-09 18:35:21",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 186
     },
     {
-      "sequence_id": 244,
+      "sequence_id": 252,
       "sns_platform": "threads",
+      "code": "DTSa9uLEg9_",
       "full_text": "챗지피티에게 아이디어 좀 줘라고 묻는 실수는 이제 그만\n\n막연한 요청 = 쓸모없는 답변 공장\n\n대신 이 5가지 발상 프롬프트로 바로 써먹을 수 있는 팔리는 아이디어만 뽑아봐\n\n---\n\n1. 이종 결합 – 안 섞으면 안 나온다\n\n프롬프트\n“내 분야 [현재 분야]와\n전혀 상관없는 분야 [타 분야: 예-호텔, 게임, 아이돌]의\n성공 요소를 강제로 결합해줘\n\n예를 들어\n‘치과 + 호텔 컨시어지’\n‘영어 공부 + RPG 레벨업 시스템’처럼\n완전히 다른 조합으로 생각해줘\n\n이 두 개념이 합쳐졌을 때 나올 수 있는\n가장 신선한 서비스 아이디어 3가지를 제시해줘\n\n각 아이디어마다\n타겟 고객 1줄\n예상 가격대\n이번 주 안에 해볼 수 있는\n아주 작은 프로토타입까지 같이 써줘”\n\n---\n\n2. 극한의 제약 – 조건을 걸어야 실행된다\n\n프롬프트\n“지금 나에게\n예산 0원\n시간 24시간\n주요 채널은 [인스타그램 / 스레드 / 오프라인 커뮤니티 중 선택]\n이라는 제약이 있다고 가정해줘\n\n이 조건에서\n내 목표 [목표: 예-구독자 모으기, 상품 홍보]를\n달성할 수 있는\n가장 현실적인 아이디어 5가지를 만들어줘\n\n돈 쓰는 방법 말고\n아이디어와 행동만으로\n사람들이 반응하게 만드는 방식으로 짜줘”\n\n---\n\n3. 거꾸로 생각하기 – 망하는 법부터 지워라\n\n프롬프트\n“내 프로젝트 [프로젝트명]가\n처참하게 실패하는 방법 10가지를\n아주 구체적으로 나열해줘\n\n각 실패마다\n실제로 있었을 법한 상황 예시도 붙여줘\n\n이제 그 실패 요인들을\n전부 반대로 뒤집어서\n절대 망하지 않게 만드는\n핵심 전략으로 다시 정리해줘\n\n남들이 말하는 ‘잘하는 법’ 말고\n리스크를 제거하는 관점에서 정리해줘”\n\n---\n\n4. 비즈니스 모델 복제 – 잘된 구조를 훔쳐라\n\n프롬프트\n“넷플릭스(구독)\n우버(중개)\n코스트코(멤버십)\n같은 검증된 비즈니스 모델을\n\n내 아이템 [아이템]에 그대로 적용해보면\n각각 어떤 형태가 되는지 시뮬레이션해줘\n\n구독으로 팔면 어떻게 달라지고\n중개 구조로 바꾸면 뭐가 바뀌는지 설명해줘\n\n각 모델마다\n현재 방식 대비\n고객이 느끼는 차이점과\n왜 더 매력적인지 한 줄로 정리해줘”\n\n---\n\n5. 사소한 불편 확대 – 사람들은 여기서 돈 낸다\n\n프롬프트\n“먼저\n내 고객들이 최근 1주일 안에\n우리 서비스나 제품을 쓰다가\n‘아 그냥 말자’ 하고 포기한 순간 5가지를 찾아줘\n구체적인 행동 기준으로 정리해줘\n\n그 포기 순간들을\n아주 미세한 불편 요소로 바꿔서 다시 정리해줘\n\n그 불편 하나만 집요하게 해결했을 때\n나올 수 있는 틈새 아이디어를 제시해줘\n\n그리고 그 아이디어의 핵심을\n고객이 공감할 만한\n한 문장 카피로 만들어줘”\n\n---\n\n마지막 검증 단계 – 이거 안 하면 또 망해\n\n프롬프트\n“위 5가지 방법으로 나온 아이디어들 중에서\n\n이번 주에 바로 실행 가능한 것 1개\n가장 차별화된 것 1개\n실패해도 타격이 가장 적은 것 1개를 골라줘\n\n각 아이디어마다\n첫 3일 동안 뭘 하면 되는지\n아주 구체적인 행동 리스트로 정리해줘\n\n이 중 하나만 선택한다면\n왜 그걸 먼저 해야 하는지도 설명해줘”\n\n---\n\nCHATGPT, AI와 관련된 더 많은 정보를 원한다면 아래 링크 꼭 확인해봐!\n\n좋은 강의 = 좋은결과\n\nhttps://litt.ly/yourgpt3650",
       "media": [],
       "crawled_at": "2026-02-12T19:06:14.390",
-      "code": "DTSa9uLEg9_",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTSa9uLEg9_",
       "user": "yourgpt3650",
       "timestamp": "2026-01-09 20:13:08",
-      "is_merged_thread": true,
       "original_item_count": 8,
-      "is_detail_collected": true,
       "platform_sequence_id": 187
     },
     {
-      "sequence_id": 245,
+      "sequence_id": 253,
       "sns_platform": "threads",
+      "code": "DTRhYcRD0lE",
       "full_text": "최근 개발자들 사이에서 가장 뜨거웠던 대회, 혹시 들어보셨나요? 바로 카카오임팩트와 브라이언임팩트에서 주최한 ‘AI TOP 100‘입니다. 단순히 코딩 실력을 겨루는 것이 아니라, 3,000명의 지원자 중 선발된 100명이 오직 AI 활용 역량만으로 복잡한 현실 문제를 해결해야 했던 독특한 챌린지였는데요.\n\n치열한 경쟁 속에서 최종 금상(2위)을 거머쥔 CIT 윤형근(@hg_russ_yun)교수를 인터뷰했습니다. ”AI에게 일을 시키기 전, 나와 AI의 멘탈 모델을 일치시키는 과정이 필수“라는 윤형근 교수의 AI 협력 비결과, AI 시대에 개발자가 나아가야 할 방향을 인터뷰 카드뉴스에서 확인해 보세요!",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/610718041_17937702354109877_3195204599226699148_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTA4MHgxMzUwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QF70amXMPt8p_-WIVympm99cPVqJtXhvB30o1aeANY_vD2nK2nW66jS4gEuQvIZ4oI&_nc_ohc=hXc0s39zta0Q7kNvwEtlX8p&_nc_gid=SnZrqrCRjLqG5ql-YbEizg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwNTk2OTk2NzY2NjM2NjY4MA%3D%3D.3-ccb7-5&oh=00_Afvbh_TI10Xy1xoy8GIU5Wv6usT9Z7VSgik5NojQS7psPw&oe=699ADAB5&_nc_sid=10d13b"
@@ -4747,18 +4954,18 @@
       "local_images": [
         "web_viewer/images/ce3089117f7e53464e9a1fcc32791720.jpg"
       ],
-      "code": "DTRhYcRD0lE",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTRhYcRD0lE",
       "user": "companoid.institute",
       "timestamp": "2026-01-09 11:49:58",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 188
     },
     {
-      "sequence_id": 246,
+      "sequence_id": 254,
       "sns_platform": "threads",
+      "code": "DTSqJP4EkP9",
       "full_text": "총 60만 유튜버인 저도 AI를 활용해 \n유튜브 대본을 씁니다.\n그런데 원래 알고 계시던거랑 좀 다를겁니다.\n진짜 AI를 활용한다는 건 이런겁니다.\n\n---\n\n영상에서는 더 자세한 방법들을 남겨두었습니다.\n👉 https://youtu.be/pTmG_ZtcCqQ",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/612211881_17897160693366895_2947785149940413578_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTI4MHg3MjAuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QEL3pyLVZQ4FJk7FxuvIcYQ2ffNWCClSpxP1pyRrtHLxJWFucKdPmgePtkckeonUbY&_nc_ohc=UMnNVCA3lOkQ7kNvwEQNPlx&_nc_gid=CZUDjbDzgSn2sPUizl_WfQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwNjc4NTE2MTAwNzM2MzUyMA%3D%3D.3-ccb7-5&oh=00_Aftsq7-pNlL3DuAH9W1ebKq9Qytro20V2Zu3U7N7zai1pg&oe=699B0387&_nc_sid=10d13b"
@@ -4767,18 +4974,18 @@
       "local_images": [
         "web_viewer/images/542b8ca0a3cb2b299f852632993c1eaf.jpg"
       ],
-      "code": "DTSqJP4EkP9",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTSqJP4EkP9",
       "user": "bibl_youtube",
       "timestamp": "2026-01-09 22:25:47",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 189
     },
     {
-      "sequence_id": 247,
+      "sequence_id": 255,
       "sns_platform": "threads",
+      "code": "DTR9Mj_iRq4",
       "full_text": "전 Figma의 Director of Design이자, 현 Anthropic Design Lead가 말해주는 기존의 디자인 프로세스를 믿지 말라는 강연.\n\n요약을 하자면, AI로 인해 환경이 바뀌었으니 예전에 하던 디자인 프로세스를 버리고, 새로운 환경에 맞는 프로세스를 찾아야 한다.이다. 좀 더 요약하자면, 예전에 했던 리서치 과정을 좀 줄이고, 바로 Prototype을 만들어가며 바로 Problem Solving으로 가라는 것.\n\n---\n\n원본 영상: https://www.youtube.com/watch?v=4u94juYwLLM (25분)",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/611243409_17935310409118901_7310614133899098492_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTczNHg5NTIuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QFJRsRMc8G1umVDgyZCBsMuQpr9qxoLtgMtwoESJeXWqMepStNYpm9G-_ldno2fNOw&_nc_ohc=Jd1HroOSI84Q7kNvwH9lFra&_nc_gid=r2jlsB7Og95Ei1oM29S4nw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwNjA5MjI5OTAyMTcxMjgzNw%3D%3D.3-ccb7-5&oh=00_AftnLI9DmlE6N_W92hh5xXRpXQPK8ByJBBhVfa1vjcTQ1Q&oe=699AD7DD&_nc_sid=10d13b"
@@ -4787,18 +4994,18 @@
       "local_images": [
         "web_viewer/images/85f167534bbde5e839b580f5023261bb.jpg"
       ],
-      "code": "DTR9Mj_iRq4",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTR9Mj_iRq4",
       "user": "laeyoung",
       "timestamp": "2026-01-09 15:53:01",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 190
     },
     {
-      "sequence_id": 248,
+      "sequence_id": 256,
       "sns_platform": "threads",
+      "code": "DTRDvEhCG4L",
       "full_text": "Claude Skills의 가이드북 공유해드립니다.\n\n최근 미국 빅테크에 종사하시는 분들과 만날 때마나 나오는 이야기가 AI가 직무평가에 굉장히 중요시하게 반영되고 있음과 Skills와 같은 AI 활용이 중요해지고 있다 소식을 많이 접하고 있습니다.\n\n많은 분들이 아직 Skills에 대해 모르고 계셔서 쉽게 이해할 수 있는 가이드북을 Manus를 통해 제작해봤습니다.\n\n이정도의 가이드북은 이제 한 번의 프롬프트로 제작할 수 있다는 사실과 더불어 Skills에 대한 이해도 같이 배우시면 좋겠습니다.\n\n---\n\n자료 :\nhttps://drive.google.com/file/d/1LVxgCNM6ZfBMHjdEvD1TcNbQd1weLZB5/view?usp=sharing\nManus 1000 크레딧 :\nhttps://manus.im/redeem?c=zdy5own",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/612133303_835040939533776_2131864875029393090_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDQwMi5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QHDl6bXECQMXXfuk5rcIT_cJQIpPPHosn0aPw7ryZ87JUOor_2BXUIMUvJs0S1O8aE&_nc_ohc=B-AxOQdne8wQ7kNvwEbqea8&_nc_gid=tuF6IoAicG0yYJESFIqWSw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwNTgzOTU4ODkwODg4NzU2Mw%3D%3D.3-ccb7-5&oh=00_AfvYjaKHzSRphn-_w6cTCnS16ewFTLEwUdNFMHKY5TEOog&oe=699B0B90&_nc_sid=10d13b"
@@ -4807,48 +5014,48 @@
       "local_images": [
         "web_viewer/images/40c7d6456b7bb06d1881938bb73fae40.jpg"
       ],
-      "code": "DTRDvEhCG4L",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTRDvEhCG4L",
       "user": "choi.openai",
       "timestamp": "2026-01-09 07:30:55",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 191
     },
     {
-      "sequence_id": 249,
+      "sequence_id": 257,
       "sns_platform": "threads",
+      "code": "DTKt8TqgRkq",
       "full_text": "[받] AI 기반의 사업전략 전문가를 찾습니다.\n\nGPT, Grok, Perplexity, Gemini 등 대화형 인공지능 서비스를 활용하여 오프라인 조찬모임 강의를 맡아주실 연사님을 찾습니다.\n\n- 비용 : 200만원 / 회차별\n- 시간 : 80분 / 평일 06:30~08:00 AM / 최대 3회\n- 형태 : 명동 지역 호텔, Private Lecture (외부참여 불가)\n- 대상 : 연매출 500억 이상 CEO 또는 Founder (50후 60초 타겟)\n\n- 필요항목 및 우대항목\n1) 약력 / 최소 8년 근무경력 필수\n2) 포트폴리오 및 강의이력 필수 / 전략펌, 회계펌 우대\n3) 추천서 (선택)\n4) 강의개요 / 제목 소제목 구성 (선택)\n5) 제출 = contact@abtross.net",
       "media": [],
       "crawled_at": "2026-02-12T19:06:17.406",
-      "code": "DTKt8TqgRkq",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTKt8TqgRkq",
       "user": "insta_yoonchan",
       "timestamp": "2026-01-06 20:25:02",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 192
     },
     {
-      "sequence_id": 250,
+      "sequence_id": 258,
       "sns_platform": "threads",
+      "code": "DTMJC39Et_M",
       "full_text": "마케팅 영업 스타일\n\n1/ 혼내면서 가르치기\n2/ 정보와 기준 풀기\n3/ 자랑을 섞은 소감\n\n- 1번 항목은 소상공인, 전문직 대상으로 '작은 대행사'가 주로 쓰는 스킬같다. 뭐랄까 수험생을 타박하는 인강강사 느낌이다. 강성태 유튜버가 \"여러분들은 공부를 안 해요. 안 합니다. 안 한다니까요\"라고 말한다던지, 신승범 강사가 \"문제 안풀면 지옥간다\"고 말하는 느낌..\n\n- 이처럼 화가 많은? 대행사의 정규직 직원수가 30명이 안넘고, 연간 취급액(=위탁받은 광고비 총액)이 100억을 못미치는 경우가 많다. 광고주도 연간 3억조차(=월 3천만원)을 안쓰는 케이스가 수두룩하기에 나랑은 거리가 멀다. 걍 다른 세계를 보는듯 하여 기이하다.\n\n- 그들은 주로 '컨설팅을 한다'고 말하지만, 정작 맥킨지나 베인앤컴퍼니같은 전략컨설팅펌은 이렇게 영업을 안한다. 내가 마주한 그들은 되려 2번에 가깝다. 주기적으로 리포트나 도서를 내고, 포럼과 컨퍼런스를 열면서 얼굴을 보인다.\n\n---\n\n- 전략펌 외로도 대형종대사, 회계법인도 이 방법을 자주 쓴다. 그렇게 인용되면서 업계에 이름을 알린다. 어마무시한 양질의 자료와 세미나가 풀리는데, 사람들이 이걸 정작 잘 모른다. 맥킨지 위클리 리포트만 보더라도 사파/마교에서 열리는 웨비나 내지 특강이랑은 비교가 안된다.\n\n- 이렇게까지 정보를 풀어도 되나 싶지만, 배우는 것과 푸는 것은 별개기에 상관없다. 어차피 올 사람은 오고, 안올 새끼들은 안오니까. 따라서 이들은 한명의 고객을 데려오기보다는 업계의 방향과 흐름을 만드는게 목표인 것으로 보인다.\n\n- 3번은 쓰레드에서는 잘 안보이고 링크드인, 디스콰이엇, 언론인터뷰에서 자주 나오는 방식이다. 무슨 상을 탔다, 무슨 프로젝트를 성공적으로 마쳤다고 근황을 나누며 회고한다. 1번의 대척점이라고 보면 된다. 이건 영화제 수상소감마냥 겸손하되 용기있게 표현하는게 킥이다.\n\n- 한국에서 효과적인 영업은 2 > 3 >>> 1 순으로 보여진다. 도저히 1번은 오글거리고 짜쳐서 원..",
       "media": [],
       "crawled_at": "2026-02-12T19:06:17.406",
-      "code": "DTMJC39Et_M",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTMJC39Et_M",
       "user": "insta_yoonchan",
       "timestamp": "2026-01-07 09:41:06",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 193
     },
     {
-      "sequence_id": 251,
+      "sequence_id": 259,
       "sns_platform": "threads",
+      "code": "DTHEhJqDa_F",
       "full_text": "🔥 구글이 또 미쳤다. 디자이너, 개발자 다 필요 없다.\n\"텍스트 한 줄\"로 앱이 완성된다고? 🧠💥\n\n구글이 새로 공개한 'Stitch', 진짜 혁신 그 자체.\n코딩 몰라도, 피그마 몰라도, “앱” 완성된다.\n\n💡 핵심만 요약:\n\n* 텍스트 설명만으로 UI 디자인 + 프론트엔드 코드 자동 생성\n* 제미나이 3.0 기반, 디자인+코드 둘 다 수준급\n* 이미지·스케치 인식까지 → 멀티모달 완벽\n* 내보내기 한 번이면 **AI 스튜디오에서 바로 앱 빌드**\n\n직접 해봤더니 블로그 자동 글쓰기 앱 그냥 만들어짐.\n이거 무료로 배포할께. 댓글 남겨줘. 🚀\n\n---\n\n아래 웹앱이야!! api 키는 본인걸 받아야해!!\nhttps://edge-blog-write-basic.vercel.app/",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/610879754_2202725506922865_395473105891295333_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDM2MC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QFH4tRza1yVMybeD5RvJIzlNhjTaA9KsSdmVy9wqo8txNlKLSt6be5YOBIJJ4CvDSc&_nc_ohc=OTrNimdBLekQ7kNvwGo03bB&_nc_gid=KhA9EkhYMAa_O1B6FjW4Tg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwMzAyODI4MDYzNTY2NjM3Mw%3D%3D.3-ccb7-5&oh=00_AfvsLmKBvfJUjqyufGX4pdSl0U5p9kewdD7kBRtqI_-xbA&oe=699AEEDB&_nc_sid=10d13b"
@@ -4857,33 +5064,33 @@
       "local_images": [
         "web_viewer/images/2b1bd0aec7eb2227ef64596785829ab0.jpg"
       ],
-      "code": "DTHEhJqDa_F",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTHEhJqDa_F",
       "user": "gpt_park",
       "timestamp": "2026-01-05 10:25:57",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 194
     },
     {
-      "sequence_id": 252,
+      "sequence_id": 260,
       "sns_platform": "threads",
+      "code": "DTF2ha_ibNE",
       "full_text": "주제: 요즘 '강의팔이'들 수법, 팩트로 다 부숴줄게\n\n나도 공부하려고 이것저것 결제해 보다가 진짜 기가 차서 글 쓴다. 겉만 번지르르하게 포장해서 간절한 사람들 등쳐먹는 강의팔이들, 내가 딱 집어서 실상 다 까발려줄게. 속지 마.\n\n---\n\n1/ 해외구매대행? 그거 그냥 프로그램 팔이야. 퇴근 후 1~2시간으로 월 몇백? 솔직히 말할게. 강의료 몇백 받아먹고 프로그램 사용법만 알려주는 게 끝이야. 정작 중요한 소싱처는 \"알아서 찾으세요\"라며 발 빼지.\n\n2/ 현실은 어떠냐고? 수강생 수천 명 몰아넣으니까 파는 물건이 다 겹쳐서 자기들끼리 가격 후려치고 싸워. 결국 한 달 프로그램비도 못 건지고 하면 할수록 마이너스 나는 게 지금 구매대행 판이야.\n\n---\n\n3/ AI 프롬프트/에이전트 부업? 이것도 코미디야. \"에이전트 만들어서 월 500 벌기\"라며 현혹하는데 정작 본질적인 프롬프트 짜는 법은 절대 안 알려줘. 그냥 자기가 만든 거 배포해주고 \"이렇게 써라\"가 끝이지.\n\n4/ 결국 너를 독립적인 실력자로 만드는 게 아니라 자기들이 만든 툴에 종속시키려는 거야. 물고기 잡는 법을 가르치는 게 아니라 썩은 물고기 한 마리 던져주고 강의료 챙기는 격이지.\n\n---\n\n5/ 소자본 식품 창업? 매출 10억? 숫자 놀음에 속지 마. \"이 제품으로 대박 났다\"며 수익 인증 스크린샷 띄우는데 정작 강의 내용은 \"여기 공장에서 최소 수량으로 찍어준다\"가 전부야. 마케팅은? 유통은? 그건 네 몫이라며 입 싹 닦지.\n\n6/ 세상에 \"최소 수량 생산\"해주는 공장은 널렸어. 진짜 실력은 그걸 어떻게 팔고 브랜딩 하느냐에 있는 건데 강의팔이들은 그 핵심은 쏙 빼놓고 헛바람만 넣어. 결국 수강생 집 거실에는 안 팔리는 재고만 쌓이는 거야.\n\n---\n\n7/ 얘네들 수법은 똑같아.\n\n자극적인 수익 인증으로 현혹 (근데 증거는 빈약함)\n\n\"너만 모르는 치트키 있다\"며 가스라이팅\n\n본질 없는 도구/방법론만 비싸게 팔고 튐\n\n---\n\n8/ 나도 20년 사업하면서 깨진 돈만 수억이야. 근데 단언컨대, 네 인생 바꿔줄 마법 같은 강의는 없어. 네가 직접 시장에서 깨지고, 고객이랑 싸우고, 밤새워서 로직 파헤치는 그 시간만이 진짜 네 거야.\n\n---\n\n9/ 강의 쇼핑에 돈 날리지 말고 그 돈으로 광고를 한 번 더 돌려봐. 사기꾼들 배 불려주지 말고 네 사업 체력을 키우라고. 진짜 실전 데이터가 궁금하면 차라리 내 글 정독하는 게 도움 될 거야.\n\n---\n\n스친들의 댓글을 보다보니 이말은 적어야할거 같아서 \n혹시나 스친들중에 어떤강의팔이가 너무 궁금하다? \n하는사람있으면 메세지 줘.\n진자 이것저것 많이 들었거든. 내가 들었던 강의팔이 내용 공유해줄께 그거 듣고 그래도 듣고 싶은 사람은 들어도 늦지않아~",
       "media": [],
       "crawled_at": "2026-02-12T19:06:17.414",
-      "code": "DTF2ha_ibNE",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTF2ha_ibNE",
       "user": "ok_k_studio",
       "timestamp": "2026-01-04 23:03:48",
-      "is_merged_thread": true,
       "original_item_count": 8,
-      "is_detail_collected": true,
       "platform_sequence_id": 195
     },
     {
-      "sequence_id": 253,
+      "sequence_id": 261,
       "sns_platform": "threads",
+      "code": "DTAR3TmAj-F",
       "full_text": "제품 광고 영상도 쉽게 만들게 도와주는 Tofukyung 프롬프트 생성기!\n\nAI 쓰기 어려워하는 많은 분들을 위해,\n제가 정말 열심히 만들고 수정했습니다.\n\n동영상, 이미지, 글쓰기, 자료조사 프롬프트 쉽게 만드시고,\n바로 작업에 활용하세요!\n\n동영상 빼고는 같은 대화창에서 바로 작업도 가능합니다!\n \n[링크 및 사용 방법은 아래에]\n\n---\n\n- 챗지피티에서 사용법\n\n1.\nhttps://chatgpt.com/g/g-694feb6bf18481918acd876e3c3eed37-tofukyung-peurompeuteu-saengseonggi-v1-8 링크를 눌러 접속한다.\n\n2.\n왼쪽 위 화살표 선택 - '사이드바에 유지'를 누른다.\n\n3.\n챗지피티 화면 왼쪽 'GPT'아래에 있는 'Tofukyung 프롬프트 생성기'를 클릭한다.\n\n4.\n원래 AI 쓰듯이 쓰면, 프롬프트를 생성해주고 그 프롬프트대로 작업도 바로 해달라고 요청도 해본다.\n\n영상은 링크 복사해서 Sora2, Veo 3.1(flow)등에 들어가 작업하셔야 합니다.\n\n---\n\n- 제미나이에서 사용법\n\n1.\nhttps://gemini.google.com/gem/1ZV9S3vNOwExi4_yLHRJKFtpNpATPDI5d?usp=sharing 링크를 눌러 Gems에 들어간다.\n\n2.\n대화창에서 프롬프트를 아무거나 한 번 만든다.\n\n3.\n왼쪽에 Gems 메뉴 아래에 'Tofukyung 프롬프트 생성기' 옆 점3개 클릭 -> '고정' 클릭\n\n4.\n이후에는 평소 작업하듯이 사용한다.\n\n---\n\n- 클로드 코드에서 사용법\n\n1.\nhttps://github.com/treylom/prompt-engineering-skills 링크를 주고, 스킬을 설치해달라고 한다.\n\n2.\n안내에 따라 설치한다.\n\n---\n\n1.5에서 1.8로 넘어오면서, 동영상이나 리서치 등 조금 더 복잡한 작업의 경우, 작업 계획을 세운 다음 진행하라는 패치를 진행했습니다.\n\n그리고 아쉬운 퀄리티를 조금 더 높이려고 노력했습니다..\n\n혹시 아쉬운 점 있으시면, tofujaekyung@gmail.com 혹은 스레드 답글로 꼭 의견 남겨주세요!!\n\n많은 분들이 더 쉽게 프롬프트를 써서, 더 좋은 결과물을 내실 수 있길 바랍니다 ㅎㅎ\n\np.s. 1.8 업데이트를 진행하면서 실수로 지워버렸습니다 ㅠㅠ 기존에 등록하신 분들은 재등록 해주세요!\n\n---\n\n챗지피티, 제미나이에서 바로 사용 가능합니다!",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/609849072_1590456652132190_7305434055409363493_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDM2MC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QHsakMHRUcAoIVIyyogUBQG3DYzn2tiwjmWLfJLgviDK6WP51afsfhLl0NoTF6CbCo&_nc_ohc=ACjAlrqw0OsQ7kNvwHRoTMY&_nc_gid=DduHDt8xzG_GKxT2WORYiA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwMTExNjY1MjkwMTM4NDA2OQ%3D%3D.3-ccb7-5&oh=00_AfuJW17nNdOypmd7MfYgayi8kkjRaxZGhQjj_w_cdZVY9A&oe=699B0462&_nc_sid=10d13b",
@@ -4896,18 +5103,49 @@
         "web_viewer/images/826eac511a0443ff943e2ba7ef58b8a9.jpg",
         "web_viewer/images/114e1e8ce3a22876cbeb7d730378fe95.jpg"
       ],
-      "code": "DTAR3TmAj-F",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTAR3TmAj-F",
       "user": "tofukyung",
       "timestamp": "2026-01-02 19:09:42",
-      "is_merged_thread": true,
       "original_item_count": 6,
-      "is_detail_collected": true,
       "platform_sequence_id": 196
     },
     {
-      "sequence_id": 254,
+      "sequence_id": 262,
+      "platform_id": "DTBvORnkpUy",
       "sns_platform": "threads",
+      "code": "DTBvORnkpUy",
+      "username": "gpt_minje",
+      "display_name": "정민제| AI로 이것저것 하는 사람",
+      "full_text": "",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/608896129_2068532937274507_3301440149172390130_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDQwMC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QFYCPRD5Jl4_TsGq87Kcwmel36LJwrJMpRyAy8TvWG56KXv7uvREUY7F22z4WM1EqI&_nc_ohc=K0EKL8G0IVAQ7kNvwFkeGVj&_nc_gid=rXMbChqPRP2ZJPh78e5x4w&edm=AI6eXeABAAAA&ccb=7-5&ig_cache_key=MzgwMTUwNzk5MjA5NDA0ODQyNQ%3D%3D.3-ccb7-5&oh=00_AftcwfnABnvWHd8d9zkWxZhfzctWO6jtToElaaerHf3eCQ&oe=69938520&_nc_sid=6efbad"
+      ],
+      "url": "https://www.threads.net/@gpt_minje/post/DTBvORnkpUy",
+      "created_at": "2026-01-03 08:43:04",
+      "date": "2026-01-03",
+      "crawled_at": "2026-02-12T19:06:17.414",
+      "source": "network",
+      "local_images": [
+        "web_viewer/images/33b391d4ba9dbad41b9eb50cf23666ae.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": false,
+      "root_code": "DTBvORnkpUy",
+      "like_count": 2,
+      "reply_count": 0,
+      "repost_count": 0,
+      "quote_count": 0,
+      "pk": "3801527249653634354",
+      "media_type": 18,
+      "content_type": "image",
+      "platform_sequence_id": 197
+    },
+    {
+      "sequence_id": 263,
+      "sns_platform": "threads",
+      "code": "DTBq2CnkwCp",
       "full_text": "제미나이 동적뷰로 목업 해보고\n\n이건 만들어 놓으면 편하고 예쁘겠다 싶어서\n\n안티그래비티로 후딱 만들었어요.\n\n이제 크롬을 열면 제 스타일의 즐겨찾기 \n\n시작화면이 떠요 \n\n아래에 포스트잇도 3개 추가해서\n\n메모도 가능하게 만들었어요\n\n만족스러운 바이브코딩이에요\n\n---\n\n동적뷰와 안티그래비티로 나만의 크롬 UI만들기\nhttps://youtu.be/y8tJ0ddiaqc\n\n---\n\n잼나네…\n\n---\n\n와 저 이거 해봐야겠어요 감사합니다 넘 이쁘다\n\n---\n\n와 이거 정말 필요했던건디 👍 👍",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/608896129_2068532937274507_3301440149172390130_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDQwMC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QHXueJ12BuOH6G5lr_hLUsd21lzQzvLxR6sK4MxTzunCja_4esWWTVwIZg2sP6Hav8&_nc_ohc=jjtrM366yggQ7kNvwEucBGt&_nc_gid=vP5z1BMgS-0PWu2AZKkT1g&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwMTUwNzk5MjA5NDA0ODQyNQ%3D%3D.3-ccb7-5&oh=00_AfvLJujf-13xrhILDsqziIEQQB63ldtvB9w7vdmQfxswIg&oe=699AFDA0&_nc_sid=10d13b"
@@ -4916,17 +5154,17 @@
       "local_images": [
         "web_viewer/images/e4cc449974ccbd210b395f2ec23f2522.jpg"
       ],
-      "code": "DTBq2CnkwCp",
+      "is_merged_thread": true,
       "root_code": "DTBvORnkpUy",
       "user": "alex_ai_mcp",
       "timestamp": "2026-01-03 08:07:25",
-      "is_merged_thread": true,
       "original_item_count": 5,
       "platform_sequence_id": 197
     },
     {
-      "sequence_id": 255,
+      "sequence_id": 264,
       "sns_platform": "threads",
+      "code": "DTC13mTgtbj",
       "full_text": "완벽한 상세페이지 풀버전 7장을 3분 만에 자동 완성하는 방법 공개합니다 🚀\n\n제품컷 1장 + 기존 상세페이지 1장만 있으면 \n→ GPT-5.2가 핵심 추출 → n8n 워크플로우가 자동 실행 → 7개 섹션 완성본이 나옵니다\n\n이번 워크플로우는\n✅ 섹션별 프롬프트 최적화 \n✅ 이미지 자동 생성 시스템 \n✅ 구글 시트 자동 저장까지\n\n완전 자동화했습니다.\n\n특히 이 방법의 핵심은 각 섹션마다 다른 프롬프트를 사용해서 제품 특성에 맞는 전환형 상세페이지를 만들 수 있다는 거예요.\n\n---\n\n전체 워크플로우 구조와 섹션별 프롬프트 비밀까지 30분 영상으로 풀어냈습니다 😃\n\nyoutube.com/watch?v=SsPEJhc4SRk",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/609249108_1549999356235452_4767125626196783225_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDM2MC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QHidKChCOHw_tzbvWEA26GMbiBTcpo4k40KWpc9Z3ft8PYMZgr6jJYmFG0O9PqBz3g&_nc_ohc=QTq1TwFPD7cQ7kNvwFG_lYC&_nc_gid=RK_B7XlSOlhfMVFpjqBCMg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwMTgzNzk1MjYxOTk2MDAzNQ%3D%3D.3-ccb7-5&oh=00_Afvi_Qu-e54IhnKnTFJfXzRwWHb9NGEpDJNl4VNez5xFww&oe=699B02DF&_nc_sid=10d13b"
@@ -4935,33 +5173,33 @@
       "local_images": [
         "web_viewer/images/3fa7247a067b97bfc891b008999ef7de.jpg"
       ],
-      "code": "DTC13mTgtbj",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTC13mTgtbj",
       "user": "irum_hahn",
       "timestamp": "2026-01-03 19:00:23",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 198
     },
     {
-      "sequence_id": 256,
+      "sequence_id": 265,
       "sns_platform": "threads",
+      "code": "DTAykTzEhfu",
       "full_text": "상위 1% 엔지니어는 PRD 쓸 때 빈 화면부터 시작하지 않습니다.\n\n1. 만들고 싶은 기능이 있다면, 이미 있는 비슷한 사이트를 켜세요.\n2. 그리고 화면 녹화를 켜고, 마우스로 가리키며 말로 설명하세요. \"여긴 이렇게 동작했으면 좋겠어.\"\n3. 그 영상을 Gemini 3 Pro에게 쿨하게 던져주세요.\n4. \"이 영상 보고 PRD(기획서) 써줘.\"\n5. Gemini가 구조가 잡힌 초안을 뱉어줍니다.\n6. 이걸 그대로 Claude Code로 가져가서 한 가지 명령을 더하세요.\n7. \"이거 읽고 부족한 내용은 나를 인터뷰해서 채워줘.\"\n8. AI가 역으로 질문을 던지며 당신이 놓친 디테일과 엣지 케이스를 완벽하게 메꿔줍니다.\n9. 혼자 끙끙대며 타이핑하던 몇 시간이 5분으로 줄어듭니다. \n\n무조건 AI에게 '보여주고' 시작하세요.",
       "media": [],
       "crawled_at": "2026-02-12T19:06:20.438",
-      "code": "DTAykTzEhfu",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTAykTzEhfu",
       "user": "aicoffeechat",
       "timestamp": "2026-01-02 23:53:03",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 199
     },
     {
-      "sequence_id": 257,
+      "sequence_id": 266,
       "sns_platform": "threads",
+      "code": "DTAfwOWkpTe",
       "full_text": "내가 쓰는 방법인데 괜찮음\n애자일 방법론을 도입해서 코덱스가 엄청 깐깐한 관리자 역할을 맡게하고 클로드는 불쌍한 개발자 역할을 맡김\n그러면 각 방법론 대로 클로드가 엄청나게 상세한 계획을 말하면 코덱스가 미친 깐깐하게 하나하나 검토해서 개발 지시를 내림\n클로드는 계속 혼나면서 엄청나게 개발을 하게 됨 \n속도는 엄청 느리지만 나는 정말 만족함\n지내끼리 지지고 볶으면서 정말 에러 하나 없는 완벽한 프로그램을 만든다.\n그동안 나는 넷플릭스를 본다.\n\n---\n\n앗 이 글이 인기가 좋을 지는 ㅠㅠ 워낙 게으른 개발자라 ㅎㅎ\n일단 nodejs cli로 만들고 코드 변경  사항은 git 으로 소통하게 하는 것이 핵심 아이디어 입니다. 메인프로세스가 서브프로세스로 claude와 codex로 호출하고 작업전 커밋 아이디를 저장하고 claude가 작업 실행 후 커밋 아이디를 codex에게 알려줘 무한 테스트 리뷰를 하고 서로 git의 소스로 대화하는거죵 암튼 잘됩니다 ㅠㅠ",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/609380455_17870171790507614_8206081649298351437_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uNDU0eDQ5OC5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QGY-ULw40SR4PytAqe1ZPJf38oyxl0-_lhZ6C1888ts8WSuS0pPwpHEdzTy4DSOI8U&_nc_ohc=a8-OrAPV3zkQ7kNvwGMD6Ye&_nc_gid=UM1b2Q_rn2kqyWhDv2I0KA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwMTE3NzczMzUwMzAxNDkwOA%3D%3D.3-ccb7-5&oh=00_AfvXHmg4Tm6rrk-cGH0nVmRAa6GmtCzqpbQmtHXukPWdBg&oe=699AEC37&_nc_sid=10d13b"
@@ -4970,18 +5208,18 @@
       "local_images": [
         "web_viewer/images/90a1c6d52a71f428cc88e4a5b6f57810.jpg"
       ],
-      "code": "DTAfwOWkpTe",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTAfwOWkpTe",
       "user": "keke_appa",
       "timestamp": "2026-01-02 21:08:39",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 200
     },
     {
-      "sequence_id": 258,
+      "sequence_id": 267,
       "sns_platform": "threads",
+      "code": "DTAkzttkvIM",
       "full_text": "구글 AI 스튜디오에서\n이미지만 넣으면 반응형+인터렉션\n웹사이트가 뚝딱 완성되네요..\n\n이제 아임웹 안써도 되겠습니다!!😭\n\n---\n\n웹 배포는 Netlify에서 진행했습니다!(무료)\n\n---\n\n저는 해당 영상 참고하며 진행했습니다!\n구글 AI 스튜디오가 처음이시라면 90일 동안 300달러 크레딧 무료인게 최고의 강점입니다🍀\nhttps://youtu.be/q50nmbs7PN0?si=BYTKO-FiIcIfGrPb",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/610647741_17940475740100156_3775889873999267857_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMjE2MHgxMDYyLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QG5cc3gvjT3FTJL5yK3RzpHdDnmcstY9uq1cH8zRP2b1Wlur6Bhkf8V1ZVW8OSX0GU&_nc_ohc=0bvqWMxrxlYQ7kNvwENyLhP&_nc_gid=7iNzUuFyMIb48EpFWdFJvA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwMTE5OTk2MzY4MzMzMTg0MA%3D%3D.3-ccb7-5&oh=00_AfvXfnkFfW9xweUn7zLshtCBpufoBHqbf5X9q1lCO06hOw&oe=699AF03A&_nc_sid=10d13b",
@@ -4992,18 +5230,18 @@
         "web_viewer/images/0a141301650aee9ba031e36574b90d4a.jpg",
         "web_viewer/images/16eafad08912801da7c1eecbeffc3eda.jpg"
       ],
-      "code": "DTAkzttkvIM",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTAkzttkvIM",
       "user": "heedam_i",
       "timestamp": "2026-01-02 21:52:49",
-      "is_merged_thread": true,
       "original_item_count": 3,
-      "is_detail_collected": true,
       "platform_sequence_id": 201
     },
     {
-      "sequence_id": 259,
+      "sequence_id": 268,
       "sns_platform": "threads",
+      "code": "DTBpfJBk9U7",
       "full_text": "오늘 스레드에서 꼭 저장해야하는 글. 그리고 해보세요.\n\nClaude Code를 만든 보리스(Boris)가 직접 자신의 세팅과 사용법을 공개했습니다. 도구를 만든 사람은 그 도구를 가장 효율적으로 쓰는 법을 알고 있죠.\n\n보리스의 워크플로우를 벤치마킹하여 여러분의 개발 환경에 바로 적용해 보세요. 전 보리스는 항상 믿고 봅니다.\n\n바이브 코딩 시작 전이라면 꼭 저장해두세요. 정말 너무 좋은 인사이트입니다.\n\n---\n\n1. 터미널 하나로 만족하지 마세요 (병렬 작업의 힘)\n\n보리스는 터미널에서 5개의 Claude 세션을 동시에 띄워놓고 작업합니다. 탭에 1~5번 번호를 매기고, 입력이 필요할 때 시스템 알림을 받습니다. 여기서 끝이 아닙니다. 웹(claude.ai/code)에서도 5~10개의 세션을 추가로 돌립니다. 로컬 터미널에서 작업하다가 필요하면 웹으로 넘기거나, 아침 출근길에 폰으로 세션을 시작하기도 합니다.\n\n*Boris는 AI가 생각하는 동안 멍하니 기다리지 말고, 멀티태스킹으로 시간을 레버리지합니다.\n\n* 알림을 받는 방법은 해당 공식 문서를 참고하세요.\n링크: https://code.claude.com/docs/en/terminal-config#iterm-2-system-notifications\n\n---\n\n2. 무조건 'Opus 4.5'를 쓰세요\n\n속도가 빠른 모델이 능사는 아닙니다. 보리스는 모든 작업에 'Opus 4.5 (with thinking)'를 사용합니다. Sonnet보다 크고 느리지만, 도구 사용 능력이 뛰어나고 사람의 개입이 덜 필요하기 때문에 결과적으로는 작업 속도가 훨씬 빠릅니다.\n\n* 덜 똑똑한 모델을 쓰며 여러 번 수정하느라 시간을 낭비하지 마세요.\n\n---\n\n<제 개인적인 워크플로우>\n\n> 작업의 시작은 무조건 Opus 4.5로 하세요.\n\n>  전체 코딩의 80%는 이 녀석이 책임집니다. 굵직한 기능 구현, 대규모 리팩토링은 얘가 '본체'입니다.\n\n> 그러다 Opus가 멍청하게 굴거나 같은 구간을 뱅뱅 돌면?\n\n> 바로 GPT 5.2로 갈아타세요. 아키텍처를 잡거나 꽉 막힌 논리를 뚫는 데는 얘가 해결사입니다.\n\n> 디자인이나 창의성이 필요한 순간에는 고민 말고 Gemini 3 Pro를 부르세요.\n\n>  자잘한 UI 수정, 버그 픽스, 코드 리뷰는 빠릿빠릿한 Sonnet 4.5한테 던지세요.\n\n>  모델 하나만 고집하는 건 2025년식 사고방식입니다.\n\n> 축구팀 감독이 선수를 교체하듯, 상황에 맞춰 *모델 돌려막기'를 해야 생산성이 폭발합니다.\n\n> 각 모델의 특기를 파악하고 적재적소에 배치하는 것, 그게 바로 실력입니다.\n\n---\n\n3. 'CLAUDE.md'는 팀의 공용 지식 저장소입니다\n\n팀 전체가 하나의 CLAUDE.md 파일을 공유하고 Git으로 관리해야 합니다. Claude가 실수를 하거나 잘못된 코드를 짤 때마다 이 파일에 내용을 추가하세요. \"다음번엔 이렇게 하지 마\"라고 규칙을 적어두는 겁니다.\n\n* 이렇게 하면 Claude는 팀의 코딩 스타일과 규칙을 학습하여 실수를 반복하지 않습니다.\n\n---\n\n4. PR 과정에서 문서를 자동으로 업데이트하세요\n\n코드 리뷰(PR)를 할 때, 동료의 코드에 claude를 태그해서 CLAUDE.md를 업데이트하게 시키세요. 보리스 팀은 Github Action을 활용해 이 과정을 자동화했습니다. \n\n* Dan Shipper의 Compounding Engineering 플러그인: https://github.com/EveryInc/compound-engineering-plugin\n\n---\n\n5. 코딩 전에 반드시 '계획 모드(Plan Mode)'를 거치세요\n\n대부분의 세션은 '계획 모드(Shift+Tab 두 번)'로 시작해야 합니다. 특히 PR을 작성할 때는 AI와 대화하며 계획이 마음에 들 때까지 수정하세요. 계획이 완벽해지면 그때 코딩 모드로 전환하세요.\n\n* 좋은 계획이 있으면 Claude는 대부분의 작업을 '한 번에(1-shot)' 성공시킵니다.\n\n---\n\n<제 경험상 이랬습니다>\n\n> 그냥 시키면 AI는 매번 기분따라 다른 스타일로 코드를 짭니다. 인증 로직, API 패턴이 뒤죽박죽 섞여버리죠.\n\n> 계획 모드를 켜는 순간, '탐험 에이전트'가 먼저 투입됩니다.\n\n> 이 친구들은 단순히 파일만 검색하는 게 아닙니다. 기존 코드에 숨어있는 '성공 패턴'을 집요하게 찾아냅니다.\n\n> 그리고 그 패턴을 그대로 복제해서 새 기능을 만듭니다. 마치 우리 팀 수석 개발자가 짠 것처럼 결을 맞춰주죠.\n\n> 시간이 조금 더 걸린다고 답답해하지 마세요. 나중에 엉망진창이 된 '스파게티 코드'를 걷어내는 시간보다 10배는 빠릅니다.\n\n---\n\n6. 자주 쓰는 워크플로우는 '슬래시 커맨드'로 만드세요\n\n매일 반복하는 작업은 /commit-push-pr 같은 슬래시 커맨드로 만들어 .claude/commands/에 저장해 두세요. 보리스는 인라인 Bash를 사용하여 Git 상태를 미리 계산하고 AI와의 불필요한 대화를 줄여 속도를 높입니다.\n\n* 프롬프트를 매번 새로 치지 말고, 명령어로 만들어 팀과 공유하세요.\n\n---\n\n7. '서브 에이전트(Sub-agents)'로 작업을 전문화하세요\n\n보리스는 작업 목적에 맞는 서브 에이전트를 적극 활용합니다. 예를 들어, 코드가 완성된 후 정리를 담당하는 code-simplifier나, 엔드-투-엔드 테스트를 위한 verify-app 같은 에이전트들이죠.\n\n* 모든 것을 하나의 맥락에서 처리하려 하지 말고, 특정 워크플로우를 자동화하는 하위 에이전트를 두세요.\n\n---\n\n8. 포맷팅은 '훅(Hook)'으로 자동 마무리하세요\n\nClaude가 코드를 잘 짜긴 하지만, 마지막 10%의 완벽함을 위해 PostToolUse 훅을 사용하세요. AI가 코드를 생성한 직후 자동으로 포맷팅 툴을 돌려 CI(지속적 통합)에서 포맷 에러가 나는 것을 방지합니다.\n\n* 쉽게 말해, \"AI가 코드를 짜면 지저분할 수 있으니, 저장하기 전에 자동으로 '예쁘게 정리'하고 저장해라.\" 라는 자동화 규칙입니다.\n\n---\n\n9. 보안 권한은 스마트하게 관리하세요\n\n무작정 모든 권한을 다 열어주는 옵션(--dangerously-skip-permissions)은 쓰지 마세요. 대신 안전하다고 판단되는 공통 Bash 명령어들을 .claude/settings.json에 미리 등록하여 불필요한 승인 절차만 줄이는 방식을 추천합니다.\n\n* 보안과 편의성 사이의 균형을 유지하는 것이 중요할 것 같습니다. 일부 사용자분들께서 종종 `--dangerously-skip-permissions` 옵션을 사용하시는데, 그보다는 `.claude/settings.json` 파일에 관련 설정을 추가하여 관리하는 방향이 더 적절할 듯합니다.\n\n---\n\n10. MCP로 모든 도구를 연결하세요\n\nClaude Code가 여러분의 모든 도구를 쓰게 하세요. 슬랙(Slack)에 메시지를 보내고, BigQuery로 데이터를 분석하고, Sentry에서 에러 로그를 긁어오게 설정하세요.\n\n* .mcp.json 설정을 팀과 공유하면 AI가 코딩 도구를 넘어 강력한 업무 비서가 됩니다.\n\n---\n\n11. 긴 작업은 백그라운드에서 돌리세요\n\n오래 걸리는 작업은 멍하니 보고 있지 말고, 백그라운드 에이전트에게 검증을 맡기거나 ralph-wiggum 같은 플러그인을 활용하세요. 샌드박스 환경에서는 권한 승인을 묻지 않도록 설정(--permission-mode=dontAsk)하여 AI가 멈추지 않고 계속 일하게 두는 것도 방법입니다.\n\n* ralph-wiggum 플러그인 깃헙 링크: \nhttps://github.com/anthropics/claude-plugins-official/tree/main/plugins/ralph-wiggum\n\n---\n\n12. 가장 중요한 팁: AI에게 '검증 수단'을 쥐어주세요\n\n품질을 2~3배 높이는 비결입니다. Claude가 코드를 짠 뒤 *스스로 검증할 수 있는 루프(Loop)를 만들어 주세요.\n\n* 테스트 코드를 실행하게 하거나, 브라우저를 열어 UI를 직접 확인하게 하세요. 피드백 루프가 있어야 AI는 스스로 수정하고 완성도 높은 결과를 만들어냅니다. Boris는 Claude Chrome 확장 프로그램을 사용하여 테스트합니다.\n\nClaude Chrome 확장 프로그램 링크: \nhttps://code.claude.com/docs/en/chrome",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/609709790_17919862485232485_2001385449940414084_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTAwMHg2MjIuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QE2TSCGEpUrW-rURKkcpFh9PN_trCZUDV2Evt3RFuSov9soAmIqDWwIyXkRw9IqvFQ&_nc_ohc=zYmod9flwmAQ7kNvwHjv7ZC&_nc_gid=bXJaQOueBMjxoFKmLqOg-Q&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwMTUwMjAyMDM3ODI4NTM3MQ%3D%3D.3-ccb7-5&oh=00_AfuEnGqkm9dsUU624hR2NlaBGjIVGA7yiBp8uuGcpdbY4A&oe=699B0B11&_nc_sid=10d13b",
@@ -5032,33 +5270,33 @@
         "web_viewer/images/7e2e83c060e800093e2db583d3a3ad9e.jpg",
         "web_viewer/images/c83d8ede6980557705f13098675fe955.jpg"
       ],
-      "code": "DTBpfJBk9U7",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTBpfJBk9U7",
       "user": "aicoffeechat",
       "timestamp": "2026-01-03 07:52:56",
-      "is_merged_thread": true,
       "original_item_count": 15,
-      "is_detail_collected": true,
       "platform_sequence_id": 202
     },
     {
-      "sequence_id": 260,
+      "sequence_id": 269,
       "sns_platform": "threads",
+      "code": "DTAmo18D-jX",
       "full_text": "네이버 블로그는 완전 죽었다고 본다\nAI가 작성하고 AI가 댓글 달고\nAI들끼리 미팅하는 곳으로 변함",
       "media": [],
       "crawled_at": "2026-02-12T19:06:20.443",
-      "code": "DTAmo18D-jX",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTAmo18D-jX",
       "user": "msf_ip_kj",
       "timestamp": "2026-01-02 22:08:49",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 203
     },
     {
-      "sequence_id": 261,
+      "sequence_id": 270,
       "sns_platform": "threads",
+      "code": "DS-BymgDQdD",
       "full_text": "📊 NotebookLM > Gemini 슬라이드?\n인포그래픽도 이쁘고 레이아웃도 더 나은데 단점은 PDF로만 되서 수정이 불가라고 생각했어 근데 구글 AI Studio로 pptx로 변환해서 수정할수 있도록 만들어봤어 아주 완벽하진 않지만 원본에 만들어진게 있다보니 쉽게 편집이 가능하더라구 다들 유료버전이니 뭐니 하면서 올라온게 많길래 나도 관심 한번 받아보고 싶어서 올려보는데 댓글로 많은 분들이 관심 주시면 무료로 만드는법 올려볼께! 참고로 구글 AI Studio 프로그램으로 만들면 무료인건 다들 알지? :)\n\n---\n\nhttps://blog.naver.com/tornado-616/224132622186\n\n링크 남겨놨으니 참고하세요~~",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/587794106_1205003198390796_3726737755514194847_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDM2MC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QGEd2RDJuHg4Og13EEOjZ5W99l-aldKusDLckKCF9ag03cxniKC8V-cPVKTJv7_YVU&_nc_ohc=vEJy6Hut_4EQ7kNvwEyMfq7&_nc_gid=CC-SpdpXUGB9ImritSp4UA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwMDQ4MzAxMDkwNzUzOTI2Nw%3D%3D.3-ccb7-5&oh=00_AfvfZxyh0D7gEQn5NMR50WSFxeyPrEYDHrX0Is_-w3ej2w&oe=699B001F&_nc_sid=10d13b"
@@ -5067,48 +5305,48 @@
       "local_images": [
         "web_viewer/images/11d5ddf40485b4bf34cafbb1ac737992.jpg"
       ],
-      "code": "DS-BymgDQdD",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DS-BymgDQdD",
       "user": "tornado_616",
       "timestamp": "2026-01-01 22:13:38",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 204
     },
     {
-      "sequence_id": 262,
+      "sequence_id": 271,
       "sns_platform": "threads",
+      "code": "DS_5JEXkRNy",
       "full_text": "클로드 코드와 코덱스가 \n올해는 프로그래밍이 아닌 용도로도 주목받을 것이라고 확신한다.\n\n코덱스를 업무 비서로서 한 달 사용해봤다.\n시행착오가 꽤 많았고 앞으로도 있을 것이다.\n하지만 이 짓을 안하느니만 못한 단계는 훌쩍 넘었다.\n\n이것을 하는 이유는 오로지 인지 피로를 낮추기 위함이다.\n내가 벌린 일에 대해 자연어로 설명을 듣고, 또 다시 내가 나의 의도와 의사결정 사항, 맥락을 자유롭게 설명하면 인공지능이 나와 협의한 규칙에 맞춰 할 일 목록, 프로젝트 맥락 정보 등을 알아서 편집한다.\n내가 사용하면서 지침을 내 선호에 맞춰 더 다듬을수록 더 강력해진다.\n\n내 업무비서 워크스페이스의 AGENT.md를 여러분과 공유하고싶음\n이건 내 프리퍼런스에 강하게 맞춰져 있지만, 여러분께 영감이 되어주길 바랍니당",
       "media": [],
       "crawled_at": "2026-02-12T19:06:20.444",
-      "code": "DS_5JEXkRNy",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DS_5JEXkRNy",
       "user": "extsvforest",
       "timestamp": "2026-01-02 15:31:15",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 205
     },
     {
-      "sequence_id": 263,
+      "sequence_id": 272,
       "sns_platform": "threads",
+      "code": "DS_CJRHk-Lw",
       "full_text": "1. 구글 AI로 특정 유튜버를 통째로 '복제'하는 방법이 공개됐다.\n\n자극적인 낚시성 멘트가 아니다.\n구글의 NotebookLM을 활용하면, 특정 크리에이터의 뇌(Brain)를 내 컴퓨터에 이식하는 게 가능하다.\n\n영상에 소개된, 누군가의 지식을 가장 빠르게 훔치는 기술을 해부해 보자.\n\n---\n\n2. NotebookLM의 본질은 '폐쇄형 천재'다.\n\n일반적인 챗GPT와 다르다.\n내가 주입한 자료(PDF, 텍스트, 링크) 안에서만 답을 찾는다.\n\n즉, 특정 비즈니스 유튜버의 영상 링크를 모조리 집어넣으면?\n그 AI는 이제 그 유튜버의 페르소나와 지식을 완벽하게 갖춘 복제 인간이 된다.\n\n---\n\n3. 문제는 '노가다'다.\n\nNotebookLM에 유튜브 링크를 넣을 수 있지만, 하나씩 복사-붙여넣기 하는 건 하수나 하는 짓이다.\n영상 수백 개를 언제 다 옮기나.\n\n영상에서는 이 과정을 단축시킬 '치트키'로 두 가지 확장 프로그램을 제시한다.\n이게 핵심이다.\n\n---\n\n4. 첫 번째 도구, 'GrabIt'.\n\n이 녀석은 링크 수집광이다.\n유튜브 채널에 들어가서 Ctrl 키를 누른 채 썸네일들을 클릭만 하면 된다.\n\n\"52개의 URL이 복사되었습니다.\"\n순식간에 클립보드에 영상 주소들이 쌓인다.\n이걸 메모장에 붙여 넣으면 1단계 준비 끝.\n\n---\n\n5. 두 번째 도구, 'NotebookLM(확장 프로그램)'.\n\n이름이 같아서 헷갈릴 수 있지만, 크롬 웹스토어에 있는 별도 툴이다.\n'From URL List' 기능을 켜고, 아까 긁어온 링크 뭉치를 한 번에 털어 넣는다.\n\n하나씩 입력하던 비효율은 사라진다.\nAI가 알아서 모든 영상을 분석하고 데이터베이스화한다.\n\n---\n\n6. 이제 이 '복제된 뇌'를 어떻게 쓸까.\n\n질문을 던져보자.\n\"너의 관점에서 A급 인재를 채용하는 원칙은 뭐야?\"\n\nAI는 수십 개의 영상을 뒤져 가장 완벽한 답변을 조합해낸다.\n소름 돋는 건 '신뢰성'이다.\n답변 옆에 붙은 숫자를 누르면, 해당 발언이 나온 영상의 정확한 타임라인으로 이동한다.\n환각(Hallucination) 없는 순도 100% 팩트다.\n\n---\n\n7. 텍스트로만 끝나면 섭섭하다.\n\n'Studio' 기능을 켜면 멀티미디어가 쏟아진다.\n• 핵심 내용을 요약한 인포그래픽\n• 질의응답을 다룬 15분짜리 오디오 파일\n• 내용을 시각화한 6분짜리 AI 비디오\n\n이 모든 게 클릭 몇 번으로 즉시 생성된다.\n\n---\n\n8. 결론이다.\n\n이건 단순한 요약기가 아니다. '리서치의 혁명'이다.\n흩어진 파편적 정보를 모아 맥락을 잇고, 내 입맛대로 가공하는 과정이 극도로 단축됐다.\n\n누군가의 수년 치 인사이트를 단 몇 분 만에 내 것으로 만드는 것.\n이 툴을 쓰는 사람과 안 쓰는 사람의 정보 격차는 이제 좁힐 수 없을지도 모른다.\n\nhttps://youtu.be/17-g7hLam0g",
       "media": [],
       "crawled_at": "2026-02-12T19:06:23.458",
-      "code": "DS_CJRHk-Lw",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DS_CJRHk-Lw",
       "user": "tuberithm",
       "timestamp": "2026-01-02 07:30:43",
-      "is_merged_thread": true,
       "original_item_count": 8,
-      "is_detail_collected": true,
       "platform_sequence_id": 206
     },
     {
-      "sequence_id": 264,
+      "sequence_id": 273,
       "sns_platform": "threads",
+      "code": "DS1CESekre9",
       "full_text": "클로드 개발자 공유하는 핵심 워크 플로우 \n\n<AI에게 인터뷰를 당하세요>\n내가 AI에게 지시하는 게 아니라, AI가 나를 인터뷰하게 만드세요. \"이 기능을 만들 건데, 네가 나한테 필요한 질문을 다 해봐\"라고 역으로 시키는 겁니다. AskUserQuestionTool을 쓰라고 명시하면, AI는 훌륭한 인터뷰어가 됩니다.\n\n---\n\n프롬프트 복사본:\n\nSPEC.md 파일을 읽고 `AskUserQuestionTool`을 사용하여 기술적 구현, UI/UX, 우려 사항, 트레이드오프 등 모든 사항에 대해 매우 상세하게 인터뷰해 주세요. 질문은 뻔하지 않고 심도 있어야 합니다.\n\n인터뷰가 완료될 때까지 지속적으로 질문을 이어가 주시고, 모든 과정이 끝나면 최종 사양(spec)을 파일에 작성해 주세요.\n\n---\n\n이전 글:",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/605347926_17919218319232485_1978520044326125092_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTM2MHg1OTIuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QERrWBJpYwl6Vl19y6P3hnvfV_cSE4aDKZ0wbR-dpQwhAQQi3oVNfB1oBkOIrW61q4&_nc_ohc=M5oGyPdcjDYQ7kNvwGDGd-s&_nc_gid=400d2cUniqlvJ3v3EuRjGA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc5Nzk1MDk1MTU2ODA5NTE2NQ%3D%3D.3-ccb7-5&oh=00_Afuw2phikjLYhpokFhXSuh10iXJFLPi4QSA6lYOj__Xn_A&oe=699AFF3E&_nc_sid=10d13b"
@@ -5117,18 +5355,18 @@
       "local_images": [
         "web_viewer/images/c88927dc31b739dad586eb57120fe2ef.jpg"
       ],
-      "code": "DS1CESekre9",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DS1CESekre9",
       "user": "aicoffeechat",
       "timestamp": "2025-12-29 10:17:36",
-      "is_merged_thread": true,
       "original_item_count": 3,
-      "is_detail_collected": true,
       "platform_sequence_id": 207
     },
     {
-      "sequence_id": 265,
+      "sequence_id": 274,
       "sns_platform": "threads",
+      "code": "DSj_6YFkg6r",
       "full_text": "최고에게 배우는 AI 코딩 워크플로우\n\nAnthropic 엔지니어링 리더의 LLM 코딩 워크플로우를 공유합니다. 아마 많은 분들은 이미 하고 있으실거지만, 이제 개발에 관심을 가지시는 분들은 읽기 좋은 글입니다. \n\n좋은 글이라 아래에 정성스럽게 정리해 공유드립니다.\n\n---\n\n정말 간단 핵심 포인트 6가지 \n\n1. 무작정 코드부터 짜지 마세요\n2. 작게 쪼개서 시키세요\n3. 문맥(Context)을 제공하세요.\n4. 검증하고 또 검증하세요\n5. 버전 관리는 정말 중요합니다.\n6. AI에게 스타일을 가르치세요\n\n---\n\n1. 코딩 전에 '설계도'부터 확실하게 잡기\n\n많은 분이 AI 채팅창을 켜자마자 \"이런 기능 만들어줘\"라고 입력합니다. 하지만 ADDY OSMANI는 이 방식이 가장 큰 실수라고 지적합니다. 대신 '선 기획, 후 코딩' 전략을 씁니다. 코딩 전에 AI랑 대화하면서 spec.md 같은 문서를 먼저 만듭니다. 요구사항, 엣지 케이스, 테스트 전략까지 싹 다 정리하는 거죠. 기획에서 15분의 투자가 나중에 몇 시간을 아껴줍니다. 무엇을 만들지 명확해야 AI도 헛발질을 안 합니다.\n\n* 저는 AI가 20~30가지 질문을 하게 해서 컨텍스트를 넣게끔 해주는 방식을 선호합니다.\n\n---\n\n2. 일은 무조건 작게 쪼개서 시키세요 \n\n설계도가 나왔다고 해서 \"자, 이거 통째로 다 만들어!\"라고 하면 AI는 엉망진창인 결과물을 내놓습니다. 할 일을 아주 작은 단위(티켓)로 나누고, 하나씩 해결하게 하세요. \"1단계 구현해줘\", \"자 이제 2단계 하자\" 이렇게요. 작게 반복해야 실수가 줄고, 통제할 수 있습니다. 요즘 나오는 'Cursor' 같은 AI 코드 에디터나 에이전트 도구들은 이런 '프롬프트 계획'을 순차적으로 실행하는 기능을 지원하기도 합니다. 핵심은 '한 번에 완성'을 피하는 것.\n\n---\n\n3. 문맥(Context)은 정말 중요합니다.\n\nAI 모델이 아무리 똑똑해도, 우리 프로젝트의 현재 상황을 모르면 헛소리를 할 수밖에 없습니다. 그래서 '컨텍스트 패킹(Context Packing)'이 매우 중요합니다. 수정할 코드, 기술적 제약 사항, 절대 쓰면 안 되는 패턴까지 전부 알려주세요. \n\nContext7이나 gitingest 같은 도구를 써서 관련 파일들을 텍스트 하나로 묶은 뒤, \"이거 읽고 작업해\"라고 던져주라 이야기합니다.최신 API나 낯선 라이브러리를 쓴다면 공식 문서나 README도 긁어서 붙여넣으세요. 단, 불필요한 건 보지 말라고 범위를 딱 잘라주는 센스도 중요합니다. 쓸데없는 정보는 토큰 낭비고, AI를 더 헷갈리게 만듭니다.\n\n---\n\n4. 최고의 모델을 골라 쓰고, 섞어 쓰세요\n\n2025년, 2026년에는 코딩에 특화된 다양한 AI 모델이 넘쳐납니다. 하나만 고집할 필요가 없습니다. 어떤 모델은 창의적인 해결책을 잘 내고, 어떤 모델은 디버깅(오류 수정)을 기가 막히게 합니다. A 모델이 계속 이상한 코드를 짠다면, 똑같은 질문을 B 모델에게 해보세요. '모델 돌려막기'가 의외로 어려움을 해결하는 열쇠가 됩니다.\n\n* 저는 프론트 gemini 3.0, 데일리 드라이버 Opus 4.5, 간단한 빠른 작업 composer-1를 사용합니다. 애디 오스마니는 개인적으로 자연스러운 대화가 가능한 'Gemini'를 선호한다고 합니다.\n\n---\n\n5. 인간이 주도권을 쥐어야 합니다 (검증과 리뷰)\n\n\"AI는 아주 자신감 넘치지만 실수가 잦은 주니어 개발자라고 생각하세요.\"\n\nAI가 짜준 코드는 겉보기엔 그럴듯해 보입니다. 하지만 실행해보면 버그가 있거나 말도 안 되는 로직일 때가 많습니다. AI가 짠 코드는 반드시 단위 테스트(Unit Test)를 돌려봐야 합니다. 테스트 코드가 없다면 AI에게 \"이 기능을 검증할 테스트 코드도 같이 짜줘\"라고 하세요. \n\n내가 직접 코드를 읽는 건 기본이고, 가끔은 'AI끼리 리뷰'를 시키는 것도 좋습니다. Claude가 짠 코드를 Gemini에게 \"이거 문제없어 보여? 리뷰 좀 해줘\"라고 물어보면 미처 못 본 오류를 잡아내기도 합니다.\n\n---\n\n6. '저장(Commit)'은 최대한 자주 하세요\n\n아주 작은 작업 하나 끝날 때마다 커밋하세요. 그래야 AI가 헛소리를 하거나 코드를 망가뜨렸을 때 바로 전 단계로 되돌릴 수 있습니다. 설명할 수 없는 코드는 절대 커밋하지 마세요.\n\n새로운 기능을 AI에게 맡길 때는 별도의 브랜치나 워크트리(worktree)를 파서 실험하세요. 망하면 그냥 그 가지를 잘라내면 그만입니다.\n\n---\n\n7. AI를 우리 팀 스타일에 맞게 길들이기\n\n매번 \"들여쓰기는 4칸으로 해줘\"라고 말하는 건 시간 아깝죠. CLAUDE.md 같은 파일을 만들어서 프로젝트의 코딩 스타일과 규칙을 미리 적어두세요. AI가 이 파일을 읽게 하면, 마치 우리 팀 개발자가 짠 것처럼 스타일을 맞춰줍니다.\n\n* 팁으로는, fewshot prompting을 하면 더 효과적.\n\n---\n\n8. AI를 통해 코딩 실력을 키우기\n\nAI가 다 해주니까 실력이 줄어들 것 같죠? 제대로만 쓰면 그 반대. ADDY OSMANI는 AI가 짠 코드를 리뷰하고, 모르는 패턴이 나오면 설명해 보라고 시키면서 배운다고 합니다. 기본기가 튼튼해야 AI도 잘 부릴 수 있습니다. AI한테 의존만 하지 말고, AI를 이용해 더 똑똑해지세요. AI는 24시간 과외쌤입니다.\n\n---\n\nAI 학습 방법에 대한 글:\n\n---\n\n좋은 글인 거 같습니다. 많은 분들이 정리 및 참고해보시면 좋을 것 같습니다.\n\n링크: https://addyo.substack.com/p/my-llm-coding-workflow-going-into?triedRedirect=true",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/601758792_17918458047232485_7863597504831275589_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTcxNngxNDQwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QGKNLA0qBhtVJkk5UiEKL06XwZdycp7iCYtwgwyyeFtrq5JxpVo0_cF8Z-k4qNnCtk&_nc_ohc=B7ItPo-k0TsQ7kNvwEoYiu_&_nc_gid=Y_KjG_8c1KPc4jYW2jNJxw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc5MzE1NjM5OTY5OTIwMTcwNw%3D%3D.3-ccb7-5&oh=00_AfuyAaJ4AF-1ggU5BX6adquCfYC5gqxjrjH1wI9sLbJtnA&oe=699B0361&_nc_sid=10d13b"
@@ -5137,33 +5375,33 @@
       "local_images": [
         "web_viewer/images/9ca97b090db53cba87543b057fb7d861.jpg"
       ],
-      "code": "DSj_6YFkg6r",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DSj_6YFkg6r",
       "user": "aicoffeechat",
       "timestamp": "2025-12-22 19:31:41",
-      "is_merged_thread": true,
       "original_item_count": 12,
-      "is_detail_collected": true,
       "platform_sequence_id": 208
     },
     {
-      "sequence_id": 266,
+      "sequence_id": 275,
       "sns_platform": "threads",
+      "code": "DSzDa1TEeSg",
       "full_text": "\"우와 너 진짜 전문가구나\"\n\n오늘 친구한테 업무 자동화 툴 만들어주고 들은 말\n3시간 만에 뚝딱 만들어주니까 엄청 신기해하더라\n\n근데 사실 비밀이 하나 있음\n나 3시간 중 1시간은 코딩 한 줄도 안 짰어\n딴짓함\n\n보통 바이브코딩 한다고 하면\n앉자마자 AI한테 \"만들어줘\" 하고\n프롬프트부터 칠 것 같지\n\n난 반대야\nAI가 코딩을 잘할수록\n키보드에서 손 떼고 더 고민해야 됨\n\n---\n\n친구가 처음에 요청한 건 이거였어\n\n\"엑셀 데이터 정리하게 VBA 매크로 좀 짜줘.\"\n\n예전 같았으면 바로 AI한테 VBA 짜달라고 했겠지?\n근데 이번엔 계속 물어봤어\n\n\"근데 그거 해서 궁극적으로 뭐 하고 싶은 건데?\"\n\"이걸 왜 굳이 엑셀에서 하려고 해?\"\n\n알고 보니 친구가 진짜 원한 건 엑셀 정리가 아니었음\n데이터팀에서 받은 파일 가공해서 'PPT 보고서' 만드는 과정이 귀찮았던 거임\n\n엑셀 매크로는 친구가 생각한 '수단(How)'일 뿐\n진짜 문제(Why)는 아니었던 거지\n\n그래서 엑셀(VBA)말고 구글 앱스스크립트로 웹사이트 하나 파줬음\n그냥 파일 업로드만 하면 알아서 그래프 그리고 PPT로 딱 만들어주게\n\n결과는?\n\n---\n\n\"와씨 내가 원하던 게 이거야\" 난리났음\n\n오늘 들은 '전문가' 소리가 유독 기분 좋은 건\n내가 '개발'을 잘해서가 아니라\n진짜 문제를 '해결'해줬기 때문인 것 같아\n\nAI 시대에 가져야 할 진짜 무기는\n화려한 프롬프팅 기술보다\n문제를 제대로 정의하는 '기획의 시간' 같아\n\n상대방이 말하는 수단에 갇히지 않고\n맥락을 읽어내는 거 말이야\n설계도가 명확하면 코딩은 AI가 알아서 하니까\n\n코딩보다 입 터는 시간이 더 길어지는 요즘,\n눈으로 설득하는 기획자로 일하는 거 꽤 재밌다\n\n기획이 머리 속에만 있으면 몽상이잖아\n이걸 내가 직접 구현한다는 게 진짜 짜릿해 😉",
       "media": [],
       "crawled_at": "2026-02-12T19:06:23.459",
-      "code": "DSzDa1TEeSg",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DSzDa1TEeSg",
       "user": "jrara_sogood",
       "timestamp": "2025-12-28 15:50:56",
-      "is_merged_thread": true,
       "original_item_count": 3,
-      "is_detail_collected": true,
       "platform_sequence_id": 209
     },
     {
-      "sequence_id": 267,
+      "sequence_id": 276,
       "sns_platform": "threads",
+      "code": "DSxdPoCj5rz",
       "full_text": "쓰레드에서 핫한 2025년 나를 돌아보는 심층분석 리포트 만드는 방법 (뼈맞음 🦴)\n\n1. 아래 프롬프트를 제일 많이 쓰는 생성형AI에 넣기! (챗GPT,제미나이 대화기록이 제일 많은 서비스)\n\n“지난 1년간의 대화맥락, 반복된 질문, 사고의 패턴을 종합하여 나도 모르는 나에 대해 분석해.\n\n개별발언이 아닌 축적된 패턴을 집요하게 분석하고 이를 통해 나의고유한 강점과 성장을 가로막는 병목울 정확히 정의하고 잠재력을 발견해. 이를 통해 2025년 나에 대한 심층 보고서를 만들어. 나의 성장을 위한 초격차전략을 설계해. 그리고 그 전략을 실행하기 위한 2026년 실천 플랜을 설계해.”\n\n2. 나온 대답을 통으로 복사해서 NotebookLM을 열고 “소스- 소스추가 - 복사된 텍스트”에 넣기\n\n3. 스튜디오로 가서 슬라이드자료 / 인포그래픽 누르면 끝! (만드는데 시간 좀 걸림)\n\n나보다 날 더 잘아는 챗지피티 😵‍💫\n나보다 더 잘하는 NotebookLM\n무섭다무서워\n\n---\n\n보고서는 개인정보 있는 부분 빼고 캡처했어! 풀버전은 완전 맞춤으로 진짜 자세하게 완전 제대로 나와!!!",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/606745563_17938867662108088_6405538196205145219_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTE3OXgxMzIxLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QEbClcRpYN8yThA07ZfF-eQhQ0-QzrqPZTntKeSawrWxApNjGiH9xvgYNVf1fV4XiM&_nc_ohc=Qh9veBNnS8sQ7kNvwFHbTJ9&_nc_gid=IcgSAFJ9XW2gZW2BRoIWfw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc5Njk0NDU3Mjg2NjYyNTE4NA%3D%3D.3-ccb7-5&oh=00_AftRm6LIFinoJwy3Xe9gS1Z4LLqNDbBqz6tBIa7BwcxMtw&oe=699ADA23&_nc_sid=10d13b"
@@ -5172,33 +5410,33 @@
       "local_images": [
         "web_viewer/images/77a6e0e6e21ae45e97c40336767ca90b.jpg"
       ],
-      "code": "DSxdPoCj5rz",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DSxdPoCj5rz",
       "user": "starstarlight_marketing",
       "timestamp": "2025-12-28 00:58:07",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 210
     },
     {
-      "sequence_id": 268,
+      "sequence_id": 277,
       "sns_platform": "threads",
+      "code": "DSy1y1QARLv",
       "full_text": "내 AI는 왜 저사람이랑 다르지?\n\nGPT, 제미나이등등 왜 저사람이 쓴 \n내용을 그대로 가져와도 왜 다를까요?\n'맞춤형 지침' 때문입니다. \n\n아래는 제가 실제로 쓰고 있는 AI 맞춤형 지침인데 \n입맛에 맞게 수정하시면 될거 같습니다.",
       "media": [],
       "crawled_at": "2026-02-12T19:06:23.466",
-      "code": "DSy1y1QARLv",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DSy1y1QARLv",
       "user": "study_ing_squirrel",
       "timestamp": "2025-12-28 13:51:53",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 211
     },
     {
-      "sequence_id": 269,
+      "sequence_id": 278,
       "sns_platform": "threads",
+      "code": "DSxB_M8D0dn",
       "full_text": "제미나이에서 만든 슬라이드와\n노트북LM에서 만든 슬라이드가 전혀 다른 이유\n\n<정답> 슬라이드 만드는 비주얼 엔진이 다름\n제미나이 캔버스 → Google Slides API \n노트북LM → 나노 바나나 Pro\nAI, 결국 쓰는 사람이 이긴다",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/606537650_17893556427384188_2996179315237784568_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTI1MXg4NDQuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QEpzrdlfSgB-56s_qW5IvZwdS9svrl2mdGkEmBDfdDOnT_E_rYoAt0SME3hPRttL_c&_nc_ohc=YbrLdnQhewEQ7kNvwHCMFPY&_nc_gid=6W0wDHC1dBSjL5fYc-7bjw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc5NjgyNDcwMjExNjEyMDQyMw%3D%3D.3-ccb7-5&oh=00_Afs0fhqgCfFc3azj4iF5wGgcqVsN-K6CA4-MFKFqNZ5H6Q&oe=699B0AC0&_nc_sid=10d13b"
@@ -5207,33 +5445,33 @@
       "local_images": [
         "web_viewer/images/ad4b2e0efe721354df9e775201ea9a09.jpg"
       ],
-      "code": "DSxB_M8D0dn",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DSxB_M8D0dn",
       "user": "pitchtitan",
       "timestamp": "2025-12-27 20:59:57",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 212
     },
     {
-      "sequence_id": 270,
+      "sequence_id": 279,
       "sns_platform": "threads",
+      "code": "DSyzX_MEq66",
       "full_text": "요즘느끼는거 AI쓰면서 그렇게 많은툴 필요없다 쓰려했는데\n쓰는거 정리해보니까 많네...\n\n공냥이-AI크리에이터로 매일쓰는기준\n\n1Chat gpt 제미나이 클로드[다쓰는 목적이다름]\n\n이미지 영상기준\n2미드저니, 나노바나나 API 이외[프리픽 힉스필드]\n3.영상은 클링 하일루오 소라 VEO3 돌려쓰는느낌?\n\n에이전트나 코드생성용\n4.젠스파크, 노트북 LM, 마누스 가끔\n5.CODEX 클코[사실상 동반자] \n\n특수목적\n한컴-인라인 AI 티로-방송보면서 실시간번역\n\n이외\nN8N MAKE 가끔?? \n\n사용비\n대충 월 20고정\n맥스나 울트라면 40-50감 소비중 \n\n다만 그돈이 아깝진않음",
       "media": [],
       "crawled_at": "2026-02-12T19:06:23.466",
-      "code": "DSyzX_MEq66",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DSyzX_MEq66",
       "user": "specal1849",
       "timestamp": "2025-12-28 13:30:44",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 213
     },
     {
-      "sequence_id": 271,
+      "sequence_id": 280,
       "sns_platform": "threads",
+      "code": "DSSAJEckx6p",
       "full_text": "📕949명이 찾은 바이브코딩 전자책 2탄 (무료)\n\n총 22P 분량의 PRD 작성법을 작성했어요.\n\n이전의 클로드코드 입문서를\n많은 분들께서 좋아해주셔서 시리즈로 내려고 합니다.\n\n비개발자, 초보자분들도\n그대로 따라하시면 1시간만에 정복 가능합니다.\n\n제 프로필 링크로 들어가시면\n언제든 무료로 보실 수 있어요:)\n\n앞으로 더 양질의 전자책을 작성할 수 있도록\n팔로우와 리포스트 한 번씩만 부탁드립니다!",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/599364438_17854724037590872_6948911664806510494_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTAwMHgxMDAwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QFmldn6Xsa_XmwWAk-u82OsOsh0qQiTGP925fLBDDFyklqvbytdcfubn4L8PbQShls&_nc_ohc=8zM3KuTX_7QQ7kNvwF1c7uD&_nc_gid=4x65l3ByOklRiXWoORF6tg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc4ODA5MDg1Mjk1MTQ0NjQ3OQ%3D%3D.3-ccb7-5&oh=00_AftXVjqiMxCJWnc8b8gf6sJb9eM_mSh3Nvt8ivFrCDnmpw&oe=699B00F5&_nc_sid=10d13b"
@@ -5242,33 +5480,33 @@
       "local_images": [
         "web_viewer/images/64e23c945cd5b0c8e61eee1f938b022f.jpg"
       ],
-      "code": "DSSAJEckx6p",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DSSAJEckx6p",
       "user": "gwon_vibe",
       "timestamp": "2025-12-15 19:47:21",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 214
     },
     {
-      "sequence_id": 272,
+      "sequence_id": 281,
       "sns_platform": "threads",
+      "code": "DSwpkD7ksP7",
       "full_text": "챗지피티에게 데이터 정리(공백/중복/형식) 때문에 스트레스 받는 건 이제 그만\n\n복붙 난장판 = 수식 다 깨짐\n\n대신 이 5가지 프롬프트로 데이터부터 깔끔하게 만들어봐\n\n---\n\n1. 보이지 않는 공백 잡아내기\n “똑같아 보이는데 자꾸 다르다고 나올 때”\n\n“이 데이터에\n앞뒤 공백 말고\n줄바꿈이나\n눈에 안 보이는 특수 공백이 있는 것 같아\n\n[데이터 붙여넣기]\n\nTRIM으로 안 지워지는\n유령 공백까지\n싹 제거하는 수식 만들어줘\n\nSUBSTITUTE랑 CLEAN을\n어떻게 조합해야 하는지도 알려주고\n\n이 수식 써도\n원본 값이 망가지지 않는지\n확인하는 방법도 같이 알려줘”\n\n이거 하나면\n‘왜 안 맞지?’ 고민 절반 사라짐\n\n---\n\n2. 숫자인 척하는 텍스트 정리\n “숫자인데 계산이 안 될 때”\n\n“‘1,000원’\n‘USD 50’\n이런 값들이\n텍스트로 인식돼서 계산이 안 돼\n\n여기서\n숫자만 깔끔하게 뽑아서\n계산 가능하게 만들어줘\n\n‘2024.01.01’처럼\n점으로 찍힌 날짜도\n표준 날짜 형식으로\n한 번에 바꾸는 방법 알려주고\n\n데이터 많을 때\n함수 말고\n텍스트 나누기로\n3초 컷 하는 방법도 같이 알려줘”\n\n초록색 삼각형\n이걸로 대부분 해결됨\n\n---\n\n3. 한 셀에 뭉친 텍스트 쪼개기\n “주소, 이름, 정보가 한 칸에 다 들어 있을 때”\n\n“이런 데이터가 있어\n\n[서울시 강남구 테헤란로 123]\n\n이걸\n시 / 구 / 도로명으로\n각각 다른 열로 나누고 싶어\n\n최신 엑셀(TEXTSPLIT) 쓰는 방법이랑\n구버전 엑셀에서 쓰는 방법도\n둘 다 알려줘\n\n이메일 주소에서\n@ 뒤에 있는 도메인만\n따로 뽑는 수식도 만들어줘”\n\n이거 정리 안 되면\n그 다음 작업이 아예 안 됨\n\n---\n\n4. 중복, 정확하게만 제거하기\n “필요한 데이터까지 같이 날릴까 봐 무서울 때”\n\n“이 데이터에서\n[A열 이름 + B열 전화번호]가\n둘 다 같은 경우만\n중복으로 처리하고 싶어\n\n원본은 건드리지 않고\n다른 시트에\n고유값만 자동으로 뽑아내는\nUNIQUE 수식 만들어줘\n\n‘삼성전자’랑 ‘삼성 전자’처럼\n살짝 다른 데이터도\n검증할 수 있는 팁이 있으면 같이 알려줘”\n\n중복 제거 버튼\n무작정 누르기 전에 이거부터\n\n---\n\n5. 규칙 없는 텍스트에서 필요한 것만\n “함수로는 답이 안 나올 때”\n\n“이런 문장이 있어\n\n[안녕하세요 010-1234-5678 홍길동입니다]\n\n여기서\n전화번호만 쏙 뽑아내고 싶어\n\n구글 시트에서 쓰는\n정규식(REGEXEXTRACT) 수식이랑\n\n엑셀에서\nCtrl+E 빠른 채우기로\n패턴 뽑아내는 방법도 알려줘\n\n제품명(S사이즈)처럼\n괄호 안에 있는 내용만\n추출하는 수식도 만들어줘”\n\n이 단계는\n‘정리’라기보다\n‘발굴’에 가까움\n\n---\n\nCHATGPT, AI와 관련된 더 많은 정보를 원한다면 아래 링크 꼭 확인해봐!\n\n좋은 강의 = 좋은 결과.\n\nhttps://litt.ly/yourgpt3650",
       "media": [],
       "crawled_at": "2026-02-12T19:06:26.481",
-      "code": "DSwpkD7ksP7",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DSwpkD7ksP7",
       "user": "yourgpt3650",
       "timestamp": "2025-12-27 17:26:31",
-      "is_merged_thread": true,
       "original_item_count": 7,
-      "is_detail_collected": true,
       "platform_sequence_id": 215
     },
     {
-      "sequence_id": 273,
+      "sequence_id": 282,
       "sns_platform": "threads",
+      "code": "DSwwrTGk7d0",
       "full_text": "추천 받은 셀러 AI 활용 공식 인데요,\n\n핵심은 ‘툴 조합’이구요. \n\n① Perplexity Pro → 시장 분석 (리뷰 크롤링)\n② ChatGPT-5.2 → 마진 시뮬레이션\n③ Gemini 3 Pro → 패키지 디자인 (한글 렌더링 95%)\n④ Claude 4.5 → 상세페이지 카피 (네이버 SEO)\n⑤ Sora/Veo → 숏클립 제작\n\n기대 성과는,\n\n제작 시간 80% 단축\n구매전환율 2배 증대\n디자이너 비용 제로\n\n일단 저는 ③, ④로 최적화 테스트 중이고, ①은 grok 대체 시험중입니다. 재무는 엑셀로 하고요. \n\n하나만 쓰면 안 됩니다.\n각 툴 최고 강점만 연결해야 폭발적 효율 나온다고 합니다.\n\n나만의 최적 조합 지속 업데이트 해보시져.",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/587928441_17981040941955025_7713015998612887616_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTM1MHgxNjg3LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QFY0qdW1JccRVLqFS8ThYFGaAB_qHrOWpWzTu3d2hfQylu2sEej_iT5srw_LxviVM4&_nc_ohc=5FgUol4vjAAQ7kNvwE-kCTP&_nc_gid=Sh-OsEabk2hzykmK4Fhj9Q&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc5Njc0ODU2NzU1NDc5OTQ3Ng%3D%3D.3-ccb7-5&oh=00_AftU0bklqHdAaC_zgzpUBDMYNDPeMaHxCIH7mUqyhR6NWg&oe=699B05EC&_nc_sid=10d13b"
@@ -5277,18 +5515,18 @@
       "local_images": [
         "web_viewer/images/07d9393c90a171eb9281124a12bcf27c.jpg"
       ],
-      "code": "DSwwrTGk7d0",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DSwwrTGk7d0",
       "user": "struc___ture",
       "timestamp": "2025-12-27 18:28:41",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 216
     },
     {
-      "sequence_id": 274,
+      "sequence_id": 283,
       "sns_platform": "threads",
+      "code": "DSw2WViE_0V",
       "full_text": "안드레이 카패시의 경고와 통찰\n\"개발자라는 직업이 재설계(Refactoring)되고 있다\"\n\nOpenAI의 창립 멤버이자 전 Tesla AI 디렉터인 안드레이 카패시(Andrej Karpathy)가 오늘 X(트위터)에 남긴 글이 개발자 커뮤니티에 큰 파장을 일으키고 있습니다.\n\nAI 분야의 최정점에 있는 그조차 \"프로그래머로서 이렇게 뒤처진다고 느껴본 적이 없다\"라고 고백했기 때문입니다. 이 스레드에서 얻을 수 있는 핵심 인사이트를 정리해 보았습니다.\n\n---\n\n1. \"직업 자체가 리팩토링되고 있다\"\n카패시는 프로그래머가 코드에 직접 기여하는 비트(Bits)의 양이 점점 희박해지고 있다고 말합니다. 과거에는 우리가 코드를 한 줄 한 줄 짰다면, 이제는 \"새로운 추상화 계층(New programmable layer of abstraction)\"을 다루는 것이 핵심 역량이 되었습니다.\n\n새로운 키워드들: 에이전트(Agents), 프롬프트(Prompts), 컨텍스트(Contexts), MCP(Model Context Protocol), 워크플로우(Workflows) 등.\n\n---\n\n2. \"이것은 스킬 이슈(Skill Issue)다\" \n그는 현재 이용 가능한 도구들을 제대로 연결하기만 해도 \"10배 더 강력해질 수 있다(10X more powerful)\"고 느낍니다. 이 부스트를 활용하지 못하는 것은 명백한 개인의 '스킬 부족'이라고 진단합니다. 도구는 이미 주어졌는데, 우리가 그것을 제대로 엮어내지 못하고 있다는 것입니다.\n\n---\n\n3. 매뉴얼 없는 \"외계 도구(Alien Tool)\"\n카패시는 현재의 AI 도구들을 \"매뉴얼 없이 우리에게 주어진 강력한 외계 도구\"에 비유합니다.\n\n- 우리가 이 도구를 이리저리 돌려보다 보면 엉뚱한 총알이 나가거나 불발되기도 합니다(환각, 오류).\n- 하지만 제대로 잡고 쏘는 순간, \"문제를 녹여버리는 강력한 레이저 빔\"이 분출됩니다.\n- 문제는 이 도구가 확률적(Stochastic)이고, 오류 가능성이 있으며(Fallible), 이해하기 힘든(Unintelligible) 특성을 가졌다는 점입니다. 우리는 기존의 결정론적 엔지니어링과 이 새로운 혼돈을 섞어서 정신 모델을 다시 구축해야 합니다.\n\n---\n\n4. 속도의 공포: \"30일만 놓쳐도 세계관이 구식(Deprecated)이 된다\" \n이 대화에서 Igor Babuschkin이 \"Opus 4.5가 꽤 좋다\"고 언급하자, 카패시는 이렇게 답합니다. \"지난 30일간의 변화를 따라잡지 못한 사람들은 이미 이 주제에 대해 '구식(Deprecated) 세계관'을 가지고 있는 것이다.\"\n\n이것이 현재 기술 변화의 속도입니다. 한 달 전의 지식으로는 오늘의 AI 성능과 가능성을 논할 수 없습니다.\n\n---\n\n[결론] 소매를 걷어붙일 시간\n\n많은 개발자들이 AI의 발전 속도 앞에서 무력감이나 막막함을 느낍니다. 하지만 이 대화가 주는 메시지는 명확합니다.\n\n1. AI 활용은 이제 선택이 아닌 필수입니다. 문제를 마주했을 때 직접 코드를 짜기보다 '이것을 AI가 해결할 수 있는가?'를 먼저 판단하는 습관, 그리고 그에 맞춰 개발 프로세스를 재정립하는 새로운 사고방식이 필요합니다.\n\n2. 에이전트, 컨텍스트, 툴 사용 권한 등을 조율하는 오케스트레이터로서의 역량을 키워야 합니다.\n\n3. 지체할 시간이 없습니다. 지난달의 최신 모델이 이번 달에는 구형이 됩니다.\n\n---\n\n원문) https://x.com/karpathy/status/2004607146781278521",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/605460857_17914044654258624_4547526217900841048_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjA4eDYxNC5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QHJ___Noy8bWb9FHRpaxuDHt0-Nt0zn9fnlQE8bkLtR6UySYAs845ULEhWugYxkUUQ&_nc_ohc=QP56MGMf06MQ7kNvwHptQOE&_nc_gid=5Z1tWMnJg8jmOe5D2kGdHw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc5Njc3MzUxNTMzMzcyOTU1Nw%3D%3D.3-ccb7-5&oh=00_AfuGNChE6Ufs-e__Klvt5I81R3ykX-Jn8p3-YPU-toGPDg&oe=699AE6C0&_nc_sid=10d13b",
@@ -5301,33 +5539,33 @@
         "web_viewer/images/ceab0b83b4dcac30ff0956c648c1c0a7.jpg",
         "web_viewer/images/0ddb1a969e59351f833568a9641bc0ad.jpg"
       ],
-      "code": "DSw2WViE_0V",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DSw2WViE_0V",
       "user": "programmingzombie",
       "timestamp": "2025-12-27 19:18:15",
-      "is_merged_thread": true,
       "original_item_count": 7,
-      "is_detail_collected": true,
       "platform_sequence_id": 217
     },
     {
-      "sequence_id": 275,
+      "sequence_id": 284,
       "sns_platform": "threads",
+      "code": "DSwLdrWD6DI",
       "full_text": "AI 학습에 돈을 쓸 필요는 없습니다.\n\n오픈AI, 구글, 앤트로픽 등이 웬만한 유료 강의보다 뛰어난 정보를 무료로 공개하고 있습니다.\n프롬프트부터 AI 개발까지 필요한 기초적인 지식을 전부 정리했습니다.\n\n진심으로 추천할 만한 콘텐츠 16개를 소개해드립니다. 🧵\n\n---\n\n1/ Gemini 활용 모음 :\n\n---\n\n2/ AI Studio 바이브 코딩 :\n\n---\n\n3/ 나노 바나나 활용 모음 :\n\n---\n\n4/ 노트북LM 모음 :\n\n---\n\n5/ 구글 MCP 모음 :\n\n---\n\n6/ 프롬프트 작성법 :\n\n---\n\n7/ 오픈AI 모음 :\n\n---\n\n8/ Claude Code 모음 :\n\n---\n\n9/ Claude 공식 Skils 모음 :\n\n---\n\n10/ Claude Skils 모음 :\n\n---\n\n11/ 젠스파크 모음 :\n\n---\n\n12/ 디자인 에이전트 Lovart 모음 :\n\n---\n\n13/ HiggsField 모음 :\n\n---\n\n14/ Perplexity 모음 :\n\n---\n\n15/ Manus 모음 :\n\n---\n\n16/ AI 무료 강의 모음 :\n\n---\n\n17/ 오픈AI 프롬프트 팩 :",
       "media": [],
       "crawled_at": "2026-02-12T19:06:29.495",
-      "code": "DSwLdrWD6DI",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DSwLdrWD6DI",
       "user": "choi.openai",
       "timestamp": "2025-12-27 13:03:30",
-      "is_merged_thread": true,
       "original_item_count": 18,
-      "is_detail_collected": true,
       "platform_sequence_id": 218
     },
     {
-      "sequence_id": 276,
+      "sequence_id": 285,
       "sns_platform": "threads",
+      "code": "DSwHpNxE1U-",
       "full_text": "구글이 새해를 앞두고 파격 할인에 나섰습니다. AI Pro 연간 요금제가 199.99달러에서 99.99달러로, 절반 가격입니다. 한국 기준 약 14만원이면 1년간 Gemini 3 Pro를 마음껏 이용할 수 있습니다.\n\n2TB 저장공간은 기본, 이미지 생성 AI '나노 바나나 프로'는 하루 100장까지. 가족 5명과 공유도 가능합니다. 단, 신규 가입자 한정이며 연말 마감 예정입니다.\n\n---\n\nhttps://one.google.com/ai-nye?g1_landing_page=75",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/608062416_17938942197101936_566562309313571799_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTMzM3g2MTUuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QGpgDUCQBcj6Hho-0WUpodux4PzzQwMm1flN3JIlmzhlsvD-WKs8SzqKBnHLwdJEy8&_nc_ohc=geeGsQcnpp8Q7kNvwGjCOdi&_nc_gid=OE1F2nDoEa004qyG13COzA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc5NjU2ODEwNDQ3OTQ0NjMzNA%3D%3D.3-ccb7-5&oh=00_Aft84O3cCpyWSi243nFWELQ0yT78Gg1iqWEkseyN5_ajVA&oe=699AD9C3&_nc_sid=10d13b"
@@ -5336,33 +5574,33 @@
       "local_images": [
         "web_viewer/images/41ad622bf8f1b1ddf1b0b6f2c7fda700.jpg"
       ],
-      "code": "DSwHpNxE1U-",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DSwHpNxE1U-",
       "user": "alcohol_fully",
       "timestamp": "2025-12-27 12:30:08",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 219
     },
     {
-      "sequence_id": 277,
+      "sequence_id": 286,
       "sns_platform": "threads",
+      "code": "DSq3vMgkjNd",
       "full_text": "20대 친구들이 IT 사업 대부분 망하는 이유는\n사업을 거꾸로 하기 때문이야. 가령,\n\n1. 정부지원사업을 따내서 서비스 만들고\n2. 마케팅을 하고 직원을 뽑고 어쩌고\n3. 망해서 폐업신고 때리고 직장 다님\n\n그럼 어떻게 해야 하냐고?\n\n1. SNS 계정부터 만들고, 사람을 모음\n2. 사람들의 불편함을 듣고, 그걸 해결하는 서비스를 만듦\n3. 그동안 모인 팔로워들한테 던지고 피드백 받음.\n4. 피드백 들어오면 그거 기반으로 디벨롭, 린하게 성장\n\n본인이 의미있다 생각해서 만든 서비스도\n시장이 효용 없다 판단하면 소용 없으므로,\n\n콘텐츠부터 시작하세요.\n어차피 그 서비스 없다고 사람들 죽지 않아요.",
       "media": [],
       "crawled_at": "2026-02-12T19:06:29.495",
-      "code": "DSq3vMgkjNd",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DSq3vMgkjNd",
       "user": "dev_shibaa",
       "timestamp": "2025-12-25 11:34:56",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 220
     },
     {
-      "sequence_id": 278,
+      "sequence_id": 287,
       "sns_platform": "threads",
+      "code": "DSrr84flFEq",
       "full_text": "2026년 제미나이 잘 써 보는 팁. 5명이서 미국, 캐나다에 생산공장 8개 관리하고 있는 친구한테 국밥 먹다 들은 얘기에 영감 얻어 써 봄다.\n\n젤 중요한 건 일단 모든 파일을 정리 안하고 Google Drive 에 다 쳐 넣습니다. 이젠 폴더 관리 뭐 이런 게 의미 없어진 시대기 때문에 (Gemini 가 Overlord가 됨).\n\n제미나이하고 얘기하다가 뭔가 번뜩이는 인사이트나 레퍼런스로 쓸 만 한 정보를 가공한 순간이 오면 일단 이렇게 Export to Docs 선택해서 문서로 저장하고 드라이브에 추가합니다. 그리고 Open Docs 클릭해서 문서 열고, 아래 순서 따라서 나만의 knowledge base를 구글 드라이브에 계속 누적해 가는 겁니다.\n\n---\n\nGemini 한테 suggest other file names 라고 물어 문서 파일 이름 적절히 고름.\n\n---\n\n그리고 그 중에 내가 알아볼 수 있는 거 복붙해서 파일 네임 업데이트 합니다.\n\n---\n\n쉽죠잉? 이런 식으로 제미나이가 내가 일하는 스타일이나 취향 같은 정보들을 이렇게 문서화 해서 많이 만들면 점점 눈치가 빨라집니다. Context awareness 증가!",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/605866219_17905917726311844_3922877178389424330_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjkyeDUyMC5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QF1_eldawC1MNFVedJ2J2MmylJ4pzxSIpQ_SQx2NkciY0s2fgkL32KETQVQcp0m0zU&_nc_ohc=m82NVJIYjSgQ7kNvwHa5E6J&_nc_gid=hkawMCGJwja4GylHlbxnmA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc5NTMyMDQxMDgxNzcxMjQyNg%3D%3D.3-ccb7-5&oh=00_AftryhAlGs3A8EnIqyrg4oR9PXWN8ev-3TMtpQK0Hf3-OQ&oe=699AEE67&_nc_sid=10d13b",
@@ -5375,18 +5613,18 @@
         "web_viewer/images/444bc7c90fa705463133b76496c8b473.jpg",
         "web_viewer/images/6186ba26dc42bfb9d4dc767c31605234.jpg"
       ],
-      "code": "DSrr84flFEq",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DSrr84flFEq",
       "user": "focusrefresh",
       "timestamp": "2025-12-25 19:11:11",
-      "is_merged_thread": true,
       "original_item_count": 4,
-      "is_detail_collected": true,
       "platform_sequence_id": 221
     },
     {
-      "sequence_id": 279,
+      "sequence_id": 288,
       "sns_platform": "threads",
+      "code": "DPRP3W3Annj",
       "full_text": "수많은 책 홍보 영상 중 그나마 마음에 드는 거 업로드.\n\n현재 집필 중인 AI 글쓰기 책을, \n가상의 3D 디자인 제작부터 홍보 영상을 제작까지 다 AI로 해봤습니다.\n\n이미지 프롬프트 : Claude sonnet 4.5(프롬프트 생성기)\n\n이미지 생성 및 영상 프롬프트 : ChatGPT-5 Thinking(Extended)\n\n영상 : Sora2\n\n만드는 과정을 아래에 간단히 정리해 봤습니다.\n\n---\n\n1. \nClaude 4.5 Sonnet 프롬프트 생성기에 원고 넣고, 표지 이미지용 프롬프트 제작.\n\nhttps://claude.ai/share/7042f5da-be2d-4817-bdc7-aedfc0d5ce63\n\n---\n\n2.\n앞서 만든 프롬프트를 활용하여,\nChatGPT-5 Thinking으로 이미지 생성 및 영상 프롬프트 생성.\n\n한국어 들어가는 이미지 중 가장 한국어가 자연스러워서 ChatGPT image로 생성함.\n\nhttps://chatgpt.com/share/68dd3846-7d34-8001-9608-af9d7c169e08\n\n---\n\n3.\nSora2로 생성 -> 마음에 안 드는 부분 ChatGPT-5에 전달\n무한 루프 피드백하며 수정\n\n(같이 만든 영상은 어머니 글쓰기 학원 홍보 쇼츠..)",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/557462983_1474837867057514_4953659058765664984_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDExNjIuc2RyLmY3MTg3OC5kZWZhdWx0X2NvdmVyX2ZyYW1lLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QHkuUhyZSV-Fw6fq_WNiMw7ac_kIatUMXB5J-7THlkbI71wcYUM4ZGQQHIn8DnoRyY&_nc_ohc=9R758uNApPIQ7kNvwHyHm2H&_nc_gid=fP6U5C4HJjUPd52mR3y6mA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzczMzgzNTM0MDg4MDk2ODE2Mw%3D%3D.3-ccb7-5&oh=00_Aft_th92cvCLzP2LsLwW-TfFfLFLlFx6qjKKxB6ThcgVlA&oe=699AEB9F&_nc_sid=10d13b",
@@ -5401,18 +5639,18 @@
         "web_viewer/images/7ed05a9d2a61cd15ef8d6cd39d262afc.jpg",
         "web_viewer/images/487acb2b31a4f752e20e63f2f3c866c0.jpg"
       ],
-      "code": "DPRP3W3Annj",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DPRP3W3Annj",
       "user": "tofukyung",
       "timestamp": "2025-10-01 23:12:53",
-      "is_merged_thread": true,
       "original_item_count": 4,
-      "is_detail_collected": true,
       "platform_sequence_id": 222
     },
     {
-      "sequence_id": 280,
+      "sequence_id": 289,
       "sns_platform": "threads",
+      "code": "DRftFAqE3Pv",
       "full_text": "미국에서 Gemini는 앱스토어 1위에 \n나노바나나2와 각종 어플은 는굉장합니다. \n\n다만 대다수의 사람들은 이제대로 못쓰고 있어요\n\n글 하나로 16만 조회수가 나왔고\n제미나이 강의만든 사람이 직접쓴\n\n진짜 실전용 제미나이 꿀팁 총집편\n\n1.이전 꿀팁 총집편\n2.나노바나나2 활용법 470개 케이스와 직접작업물\n이외\n신규기능\n동적뷰 스티치 믹스보드 ai함수 cs자동화 등등\n\n사용하실수있는 모든 방법이 담겨있습니다.\n\n [진짜 하나면 제미나이 제대로 쓰실수 있습니다!]\n\n---\n\n이전 16만 조회수 글입니다.\n\n1.제미나이 제대로쓰기 및 꿀팁 25개\n2 25년 .9월 최신 노트북 LM 가이드\n3.5가지 상용 PPT AI비교\n4.17장짜리 문서+ 어울리는 인포그래픽\n5.제미나이+구글캘린더 활용론\n6.제미나이 지침활용\n7.나노바나나 가이드북 100가지 사례+영상화의 극한\n[진짜 이글만 다봐도 제미나이 제대로 쓰실수 있습니다!]\n\n---\n\n나노바나나2 활용법\n\n---\n\n노트북 lm 제대로 쓰기\n\n---\n\n인포그래픽 실무 활용\n\n---\n\n제미나이 동적뷰\n\n---\n\n구글 스티치\n\n---\n\nai함수 cs답변자동\n\n---\n\n딥리서치 제대로쓰기\n\n---\n\nppt 제작\n\n---\n\n믹스보드\n\n---\n\n영상제\n\n---\n\n이내용 기반으로 강의가 나올예정입니다.\n실제 자동화까지 엮을꺼라구요",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/587098363_17884707747406917_6087290139880824516_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uODIxeDQ1Ny5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QE69yqSQY0N8rLY-g7e6DoW6Jh3GhJscIt1APrpMSNYorzhUrEL1o6ihbg75X-JC-U&_nc_ohc=p65OqtIv-_IQ7kNvwHuJutr&_nc_gid=3cSkD_c-s-_UV92SlWvkUg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc3MzkzMzI2OTE1NjA2NjI4Nw%3D%3D.3-ccb7-5&oh=00_Afv5KkjfeCzf2zTeF9UOQx7LyhjfIbJ7uYtE_k9xOIJULw&oe=699AD9CD&_nc_sid=10d13b"
@@ -5421,19 +5659,19 @@
       "local_images": [
         "web_viewer/images/87190d99b4dbfbeb0b0e560b4bf5f0f4.jpg"
       ],
-      "code": "DRftFAqE3Pv",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DRftFAqE3Pv",
       "user": "specal1849",
       "timestamp": "2025-11-26 06:58:45",
-      "is_merged_thread": true,
       "original_item_count": 13,
-      "is_detail_collected": true,
       "platform_sequence_id": 223
     },
     {
-      "sequence_id": 281,
+      "sequence_id": 290,
       "platform_id": "DOkU-Zhkk5J",
       "sns_platform": "threads",
+      "code": "DOkU-Zhkk5J",
       "username": "specal1849",
       "display_name": "공냥이",
       "full_text": "미국에서 Gemini는 앱스토어 1위입니다\n\n다만 대다수의 사람들이 제대로 못쓰고 있어요\n\n제미나이 강의만들고 현강 자주하는 사람이 알려주는\n진짜 실전용 AI꿀팁 총집편\n\n1.제미나이 제대로쓰기 및 꿀팁 25개\n2 25년 .9월 최신 노트북 LM 가이드\n3.5가지 상용 PPT AI비교\n4.17장짜리 문서+ 어울리는 인포그래픽\n5.제미나이+구글캘린더 활용론\n6.제미나이 지침활용\n7.나노바나나 가이드북 100가지 사례+영상화의 극한\n\n[진짜 이글만 다봐도 제미나이 제대로 쓰실수 있습니다!]",
@@ -5448,6 +5686,7 @@
       "local_images": [
         "web_viewer/images/88a8498763d34030e843fb6dbee94c5a.jpg"
       ],
+      "is_merged_thread": false,
       "root_code": "DOkU-Zhkk5J",
       "like_count": 1644,
       "reply_count": 80,
@@ -5456,13 +5695,12 @@
       "pk": "3721191441059434057",
       "media_type": 1,
       "content_type": "image",
-      "code": "DOkU-Zhkk5J",
-      "is_merged_thread": false,
       "platform_sequence_id": 224
     },
     {
-      "sequence_id": 282,
+      "sequence_id": 291,
       "sns_platform": "threads",
+      "code": "DSmUMfvkQ_v",
       "full_text": "[제대로 쓰는 노트북 LM가이드]\n\n2-4시까지 세종대 교수님 대상 웨베나하고 \n\nAI 프롬프트 깍는 노인에 빙의해 노트북LM 슬라이드 자료 \n프롬좀 깍아왔습니다.\n\n게임스타일 \n넷플릭스\n시크릿문서\n보그 광고 \n실제 광고\n\n지침들 먹는게 상당히 좋네요 재밋는데요?\n\n프레젠테이션을 좀더 잘할수 있을지\n고민하시던 분들에게 좋은 레퍼런스가 될것같습니다.\n\n[프롬프트는 아래에 넣어뒀습니다.]\n\n---\n\n우선 프롬입니다 \n띄어쓰기 해뒀으니 컴으로 가져가셔서\n일정부분 잘라서쓰세요\n\n상당히 맘에드네요\n\n---\n\n흠 이건 글자수를 좀제어하시고\n띄어쓰기 좀빡세게 넣어라 프롬수정이 가능합니다.\n\n사실 탑시크릿 스타일이 괜찮네요\n\n---\n\n와우에서 영향을 받은것 같은데 이거 개쩌네..\n\n---\n\n와... 이거봐 개쩔어!!!! 광고스타일... 이거봐 개쩔어!!!! 광고스타일\n\n---\n\n반 드 시!!!\n\n슬라이드 자료\n\n발표자 슬라이드로 설정하세야 합니다\n소스 너무많으면 오류나\n\n---\n\n만화만드는방법",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/605330036_25357592713869317_501480607074586204_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDMxOC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QGBE0GsLnFtDy_eRBL-E8X6Q-jaU_OMPUuivYJfQPQ94hUFULBgjO-E84ZvzIfTwks&_nc_ohc=HoUD2xVBu2IQ7kNvwEDnjBW&_nc_gid=LOUNNSamSdVQ9sfDD1-fKA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc5MzgwODU1NTc1NDE5Njk3NQ%3D%3D.3-ccb7-5&oh=00_AfvX33ObHcAjHVIQMSooqUPqa6OLLlHrdW4JVNH8tkG9SQ&oe=699B0C66&_nc_sid=10d13b",
@@ -5479,78 +5717,78 @@
         "web_viewer/images/d9feae4e4914191d31124a6202855e9f.jpg",
         "web_viewer/images/93818f3008c7515d990e86dfee9aada4.jpg"
       ],
-      "code": "DSmUMfvkQ_v",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DSmUMfvkQ_v",
       "user": "specal1849",
       "timestamp": "2025-12-23 17:13:50",
-      "is_merged_thread": true,
       "original_item_count": 7,
-      "is_detail_collected": true,
       "platform_sequence_id": 225
     },
     {
-      "sequence_id": 283,
+      "sequence_id": 292,
       "sns_platform": "threads",
+      "code": "DSduCCegtqQ",
       "full_text": "스레드는 이게 핵심이에요. 꼭 저장하세요.\n\n글의 기본 구조가 서론-본론-결론인데,\n스레드는 조금 달리 해야 해요.\n\n1. 시선을 끄는 1줄\n2. 압축요약한 본론 3~4줄\n3. 글 마무리 교훈 1~2줄\n\n제 글 구조만 봐도 이렇게 되어있어요.\n그냥 적기만 하면 추천이 안돼요.\n구조와 압축력이 없기 때문입니다. \n\n스레드에서는 '짧게 때리기'가 중요해요.\n\n---\n\n스레드는 텍스트 숏폼이라 생각해요.\n시선을 못끌면 글이 묻혀요.\n정말 그래요.",
       "media": [],
       "crawled_at": "2026-02-12T19:06:32.516",
-      "code": "DSduCCegtqQ",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DSduCCegtqQ",
       "user": "super_writer12",
       "timestamp": "2025-12-20 09:00:00",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 226
     },
     {
-      "sequence_id": 284,
+      "sequence_id": 293,
       "sns_platform": "threads",
+      "code": "DScOxOAkzam",
       "full_text": "\"요새 AI 안쓰면 안된다길래\"라면서 막연하게 새 툴, 새 업데이트, 프롬프트 예시 등 찾아 헤매야 뭐하나\n\n이미 대부분의 지식 자체가 AI와 함께 풀린 상황에서\n노하우, 지식, 기술을 찾아 강의나 책을 찾아다니는 것보다도 중요한 건 1) 해결하고 싶은 문제가 있고 2) 그 문제에 접근하는 Problem-solving 사고방식인 듯",
       "media": [],
       "crawled_at": "2026-02-12T19:06:32.516",
-      "code": "DScOxOAkzam",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DScOxOAkzam",
       "user": "platter.worklab",
       "timestamp": "2025-12-19 19:07:35",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 227
     },
     {
-      "sequence_id": 285,
+      "sequence_id": 294,
       "sns_platform": "threads",
+      "code": "DScUnTvE933",
       "full_text": "코딩 잘한다고 다 돈 잘 벌면\n개발자들이 미쳤다고 회사 취업하겠습니까?\n다 1인 기업으로 돈 쓸어담고 있겠죠.\n\n사업으로 돈을 벌려면 코딩 능력은 생각보다 안 중요합니다.\n진짜 중요한 건 딱 두 가지예요.\n\n1. 고객의 진짜 문제를 찾는 능력\n2. 찾은 문제를 해결하는 능력\n\n코딩은 2번 과정에서 필요한 도구일 뿐입니다.",
       "media": [],
       "crawled_at": "2026-02-12T19:06:32.516",
-      "code": "DScUnTvE933",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DScUnTvE933",
       "user": "yun_ja_dong",
       "timestamp": "2025-12-19 19:58:39",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 228
     },
     {
-      "sequence_id": 286,
+      "sequence_id": 295,
       "sns_platform": "threads",
+      "code": "DSYXjdgExsv",
       "full_text": "Ai분야에서 기억하고있는 댓글들\n\n1.같은기술가지고 언제까지 우려먹을래\n(올해는 택도없어 사진 영상쪽)\n\n2.프롬프트 공부할필요없어요 더쉬워질거에요\n(진짜?)\n\n3.GEO이야기를함\n(사기꾼이라고 소리들음)\n\n4.선생님은 스레드잘못해요\nAI치곤 느리게 크는편이잔아요\n\n5.AI로 개꿀빨잔아요\n(너도하세요 왜안함...?)\n\n그 댓글단분들 지금 어케생각하세요?",
       "media": [],
       "crawled_at": "2026-02-12T19:06:32.516",
-      "code": "DSYXjdgExsv",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DSYXjdgExsv",
       "user": "specal1849",
       "timestamp": "2025-12-18 07:07:23",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 229
     },
     {
-      "sequence_id": 287,
+      "sequence_id": 296,
       "sns_platform": "threads",
+      "code": "DSTWkAOESmj",
       "full_text": "구글구글아... 제미나이에 \n이런 개쩌는거 만들고 왜 홍보를안하니..?\n\n이제 제미나이 안에서 바로 PDF가 만들어집니다.\n심지어 PDF로 바로저장이 되네요???\n\n캬....과거에는 이거할라면 HTML로 다운해서 \n인쇄눌러 저장해야 했는데\n\n이제는 단번에 캔버스 기능만을 이용하면됩니다.\n\n---\n\n제미나이에서 캔버스 누르시고\n프롬프트엔지니어링 조사해서 PDF로만들어줘\n\n이거만 입력하면됩니다.\n\n그럼 롱텀으로 여러번 대화하면 어떻게쓸수 있을까요?\n\n---\n\n대화에서 캔버스 기능을 키고\n지금까지 대화내용 모두 정리해서 PDF로만들어줘\n\n라고말하면 보고서가 나오네요 얼탱이가없네...\n이렇게 좋은거 만들어두고 왜 말을안해주니...",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/591708727_862617623084201_8831221011959190156_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDMxMi5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QFZgpabcCzmibHB0a_-zeN4gGNsAtnHwt22XIlKD6a1tqj9rBfoqPez8gXGP5rm4gI&_nc_ohc=5LbqoCU6_oMQ7kNvwFPg67n&_nc_gid=hkH4aE8okDVAGxauhO3qfQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc4ODQ3MDk0MjcwOTEzMTY4Mw%3D%3D.3-ccb7-5&oh=00_AftkY8c22FTw434dhTC3m8RnK2ddaDqUAPgjZDpTQenB8A&oe=699B081C&_nc_sid=10d13b",
@@ -5563,18 +5801,18 @@
         "web_viewer/images/e8d30333a93098a0f9be7057c579331e.jpg",
         "web_viewer/images/e312f7bda4f2eee4c71ff3aacfbe0f2c.jpg"
       ],
-      "code": "DSTWkAOESmj",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DSTWkAOESmj",
       "user": "specal1849",
       "timestamp": "2025-12-16 08:27:34",
-      "is_merged_thread": true,
       "original_item_count": 3,
-      "is_detail_collected": true,
       "platform_sequence_id": 230
     },
     {
-      "sequence_id": 288,
+      "sequence_id": 297,
       "sns_platform": "threads",
+      "code": "DRp8XdFE2VH",
       "full_text": "이미지 프롬프트 심화이론\n\n나노바나나pro 글중 이런글들 많이보셨을겁니다.\n제이슨 쓰면 잘할수있어요 json이 정답입니다.\n\n근데 그거아세요? 일반적으로 많이쓰이는 프롬프트중\n자연어 마크다운 제이슨 야믈이 모두 다른결과를 낸다는거요\n\n이거 알아두면 특히 인포그래픽 만드는데\n도움이 많이됩니다.\n\n한번 배워볼까요?\n\n---\n\n우선 프롬트는 여러가지 형식이 있지만 간단히정리하면\n\n1.자연어-그냥 편히말로쓰는거\n2.마크다운-마크업언어 #으로 구분함\n3.제이슨\n4.xml\n5.야믈\n이다섯가지가 현행 가장 많이 쓰이는 양식이죠\n[코드기반양식이나 여러종류가존재하기는함]\n\n다만 이걸직접작성하는게아니라\nai한테 작성해 달라하면 상당히 잘 작성해줍니다.\n\n배치는 나중에 생각한다해도 이러한 \n특징을 어떤식으로 활용해야할까요?\n\n사실 결과물로 역추론한\n특징을 간단하게 정리해보면\n\n1.자연어-그냥 입력함\n2.마크다운,xml-구조화 잘하고 명백하게 계층을 나눔\n3제이슨.야물-큰틀을 묶어주고 특징을강조\n\n함을 확일할수있는데요 결국 구조화 기법에 따른 차이입니다.\n\n그렇다면 정말 달라질까요?\n\n---\n\n위에 있는 글은 제가 공개해둔 프롬프트중 일부인데요\n\n위와 같이 구분된 인포그래픽을 만드는데 있어서는\n마크다운이나 xml, 자연어-제이슨-야믈보다 압도적으로 유리합니다.\n\n실제 인포그래픽 심화 인포그래픽 생성에서는\n섞어서 쓰는걸 추천드리지만 그렇게 까지는 어려우니\n\n계층화하여 명백한 구분의 경우 xml 마크다운\n아니면 다른것들을 써봐라 라는 제언을 많이드리죠\n\n아래의 사진을보실까요?\n\n자연어-제이슨은 연표를 만들어도 연결된느낌이라면\n제이슨-xml을 명백한 구분을 하는느낌입니다.\n야믈또한 연결하려는 경향성을 볼수가있죠\n\n사실 이정도의 특징만을 이해해도 어렵지않아요\n\n그렇기에 구분된 섹션을 나눠서만들떄 저는\nxml이나 마크다운을 선호합니다.\n\n---\n\n그럼 xml이나 마크다운으로는 연결된느낌을 못주거나\n다른것들로 구분된 느낌을 못주나요?\n\n그건또아닙니다.\n\n아래와같이 명백한 구분을 주는건 어렵지 않아요\n\n그렇데 왜 굳이 이런걸 구분해서 써야하느냐\n이런 질문이 나올법합니다.\n\n---\n\n이전글에서 설명드린적 있지만 ai의 편향성떄문입니다\n\n제이슨 xml이 나누려고 하는 경향성을\n프롬프팅으로 충분히 이겨낼수 있다고하더라도\n\n그냥 편하게 만들면 나오는걸 복잡한 길로갈 필요가 없다는것이죠\n\n이러한 편향성은 고양이의 머리모양에서도 확인하실수 있는데요\n\n머리의 털무니가 비슷해 보이죠?\n\n제가 일부러 고양이사진만 100장정도 만들어봤는데\n머리의 털문양을 설정안해주면 다비슷한 형태로 보이게 됩니다.\n\n결국은 이러한 프롬프트 형태에따른 편향성도 존재한다가 핵심이겠네요\n\n---\n\n이는 비슷한 프롬을 넣은 제품에서도 확인할수있는데요\n\n자연어 변환만을 명령한 경우로\n제이슨은 전체적으로 둥그란 느낌이 강조되었고 연결이 잘되어있지만\nxml을 보시게된다면 확실하게 각지고 끊어지는 느낌을줍니다.\n\n소잡는 칼로 닭을 잡을 필요가없고\n굳이 중식도로 사과를 썰필요가 없는것이죠\n\n나노바나나 pro의 모델명 자체가 아래와 같은데\ngemini-3-pro-image-preview\n\n제미나이 3기반이라 언어해석을 상당히 잘하거든요\n그러니 여러방식으로 써보자구요",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/589026570_17885132628406917_2133598900313278557_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uNzg4eDQyMC5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QH5VLHNQvOOxC35bmsbeBtbHZP4AhJTytm81IALrRTx3N9CPxapk8SCDxhPAzi1mG8&_nc_ohc=Y9ULpiI7p1wQ7kNvwFKeiEr&_nc_gid=5eK0Fu-KPii9DiE8hvPAIw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc3NjgxNTI1MjkxMTY2MTkzMQ%3D%3D.3-ccb7-5&oh=00_AfsHy9cUCsA49I1NGAPs-wGCU1mZHVu5mR1XIGjWC6xrjw&oe=699AF505&_nc_sid=10d13b",
@@ -5593,33 +5831,33 @@
         "web_viewer/images/367aeb3a5583da5bc46b52f7af32058e.jpg",
         "web_viewer/images/6205a0e855cc5c6a6575393fd2ce3a84.jpg"
       ],
-      "code": "DRp8XdFE2VH",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DRp8XdFE2VH",
       "user": "specal1849",
       "timestamp": "2025-11-30 06:24:45",
-      "is_merged_thread": true,
       "original_item_count": 6,
-      "is_detail_collected": true,
       "platform_sequence_id": 231
     },
     {
-      "sequence_id": 289,
+      "sequence_id": 298,
       "sns_platform": "threads",
+      "code": "DSLinAmE2my",
       "full_text": "내글 AI영상가지고 회사에서 회의랑 강의를한다고???\n\n이게 왜문제죠...?\n보라고 올린거고 쓰라고 올린건데..?\n\nDM으로 공냥이님 채널을 강의에서켜서 \n제미나이 영상 보여주는분이있어요 \n이런말이왔습니다.\n\n음...? 쓰세요 쓰라고 올린거지\n장표공유해 드린것도 가져다쓰세요\n\n뭐이게 별거라고\n나도 그렇게 쓸라고 아카이빙해둔건데요 뭐\n\n공유드렸던 장표 PDF도 아래정리해드립니다.\n\n채널에 올라오는건 유료강의든 무료강의든\n블로그든 유료강의든 쓰실분들은 쓰세요 \n[다만 DM이나 메일보내주면 감사드리겠습니다.]\n\n유일하게 대응하는거\n노션하고 글 그대로 크몽에 팔지말라고 명시해뒀는데\n무수정+그대로 가져다 파는건 금지입니다.\n\n[이건 쓰레드 변호사 분들한테 비싼 친구비주고 이를꺼야]\n\n---\n\n옛날에 만든거\n\n---\n\n나노바나나\n\n---\n\n나노바나나 PRO 가이드북",
       "media": [],
       "crawled_at": "2026-02-12T19:06:35.533",
-      "code": "DSLinAmE2my",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DSLinAmE2my",
       "user": "specal1849",
       "timestamp": "2025-12-13 07:33:51",
-      "is_merged_thread": true,
       "original_item_count": 4,
-      "is_detail_collected": true,
       "platform_sequence_id": 232
     },
     {
-      "sequence_id": 290,
+      "sequence_id": 299,
       "sns_platform": "threads",
+      "code": "DNkdqoARStO",
       "full_text": "어제는 보고서 쓰는법을 보여드렸죠?\n\n제미나이에서 보고에 필요한 그림을 물어보고\nwhisk에서 순식간에 만들수 있습니다.\n\n대략 아래와 같이 보고서 만드는데 1시간정도 소모했네요\n\n[구글에서 나노바나나가 나오면 더올라갈테니 한번 배워봅시다.]\n\n---\n\n아래와 같은 인포그래픽의 필요성은뭐... 더는설명할 필요없죠?\n\n아마 많은 직장인 분들의 페인포인트기도 할꺼고\n아마 사용하고 싶은 분들이 많을겁니다.\n\n그런데 늘발생하는 문제는 어떤인포그래픽이 필요한가\n적절한가 어떤느낌으로 나올까 모르는거에요\n\n물론 단순 인포그래픽만으로 설득력있는 보고서가 되는것은 아니지만\n어느정도 이해에 도움이 되는것은 사실이니\n\n어떤식으로 기획해야하는지 이야기해보죠\n\n---\n\n사실 깊게들어가면 카피부터 시선의 흐름\n각종 배치까지 여러 이야기를 다뤄야합니다.\n\n다만 저는 전문 장표전문가나 보고서를 극한으로 끌어올리는 사람은 아니니 기술적으로 어떤식으로 만들어야 하는지 풀어보죠 \n\n이전글에서 완성된 17페이지짜리 보고서를 닥스에 저장해서 제미나이에게 물어봅시다.\n\n적절한 인포그래픽 위치와 내용에대해서 분석해달라고\n물론 이게 정답은 아니지만 어느정도 논리가있어요\n\n인포그래픽이 너무많으면 역효과가 나기에 여기 이걸넣는 이유를 한번 살펴보는것만해도 충분히 괜찮죠\n\n---\n\n오케이 만들어진 프롬프트 들을 1차로 whisk에서 생성하고 느낌을 보는겁니다.\n\n거기에 진짜 전문적인 보고서로 가져간다면 각요소에 대해서 명령을 내리고 퀄리티를 높여야 겠죠\n\n다만 내부기안이나 간단하게있어보이게 만드는거면 이정도면 충분해요\n\n뭐 고등한 프롬프트가 필요한게아니라 명백한 명시만을 줘도 꽤나 잘만들어줍니다.\n\n---\n\n이런 swot분석 인포그래픽도 진짜 유명한스타일로도 가능하지만\n\n사실상 형태가 고정되있어도 꽤나 나쁘지않아요\n\n솔직히 우측처럼 움직이는 영상에대한 필요성은 여러분한테뭐\n설명하기도 두입아프죠\n\n사실 제미나이에 직접넣은다음 자동으로 저장해서 끌어오는 기능이\n있으면 훨씬 좋겠지만\n\n현행기준 그걸하시려면 n8n이나 make로 위치지정을해야합니다\n오팔이나오면 어느정도 자동화가 되겠지만 아직은 기다려야해요\n\n---\n\n그렇게 쭉넣어보고 어 여기에 인포그래픽이 더있으면 좋겠는데 라는 생각이 드신다면\n\n진짜뭐 복잡한 프롬필요없이 이러한 프롬프트로 넣고 나서 이제\n각종 사진프롬프트를 사용에 필요에따라 만드시거나\n\n초기 제미나이가 만들었던 프롬프트만을 잘수정해서 사용한다면\n어느정도 원하시는 자료를 만드실수 있을겁니다.\n\n진짜 찐으로 타겟화된 자료만드는건 시간이좀 많이걸려가\n\n오늘은 여기까지 나중에 진짜 제대로 각잡고 만드는것도 풀어볼게요\n\n---\n\n그렇게해서 나온 것들 나쁘지 않죠?",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/535664248_1853688618542850_2297045261474676900_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDI2OC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QF6rgFmuW3ADAqKbxpz-YsjY2i86OyLpZUCBiA5CuUVTUYlxkz6yQyORVSrwgzjt2w&_nc_ohc=W37tjeaczD4Q7kNvwGKyaQk&_nc_gid=2BeIWoA8nBOIFgd1T1ecbw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzcwMzIxNTI2NjEyNjQ0MTI5NA%3D%3D.3-ccb7-5&oh=00_AfudlAhwDp06q46mJ192EEw1guV5QEoTMQBXk8NEDKU5Gw&oe=699B083C&_nc_sid=10d13b",
@@ -5640,47 +5878,73 @@
         "web_viewer/images/40d37da5973831a0f909681a893ed004.jpg",
         "web_viewer/images/915617fa5158d6606f52c97c47aa0b01.jpg"
       ],
-      "code": "DNkdqoARStO",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DNkdqoARStO",
       "user": "specal1849",
       "timestamp": "2025-08-20 17:31:34",
-      "is_merged_thread": true,
       "original_item_count": 7,
-      "is_detail_collected": true,
       "platform_sequence_id": 233
     },
     {
-      "sequence_id": 291,
+      "sequence_id": 300,
+      "platform_id": "DSEhu-lE8kp",
       "sns_platform": "threads",
+      "code": "DSEhu-lE8kp",
+      "username": "programmingzombie",
+      "display_name": "프로그래밍좀비",
+      "full_text": "1. 기획 (Market Need)\n아무리 잘 만들고(개발), 예쁘고(디자인), 널리 알렸어도(마케팅), 사람들이 원하지 않는 것이라면 수익은 0입니다.\n\n[ 개발(100) x 기획(0) = 쓸모없는 고퀄리티 앱 ]\n\n핵심: 시장성 검증, 타겟 유저 설정, 경쟁 앱 분석.\n\n2. 비즈니스 모델 (BM / Pricing)\n앱을 사용하는 유저는 많은데 돈을 벌 방법이 설계되어 있지 않다면 수익은 0입니다. 광고를 어디에 배치할지, 인앱 결제 상품을 얼마에 팔지 설계하는 것은 개발과는 전혀 다른 영역입니다.\n\n[ 사용자(100) x BM(0) = 자선 사업 ]\n\n핵심: 광고 효율 최적화(eCPM), 적절한 가격 정책, 유료화 설계.",
+      "media": [],
+      "url": "https://www.threads.net/@programmingzombie/post/DSEhu-lE8kp",
+      "created_at": "2025-12-10 14:11:31",
+      "date": "2025-12-10",
+      "crawled_at": "2026-02-12T19:06:35.538",
+      "source": "network",
+      "is_detail_collected": true,
+      "is_merged_thread": false,
+      "root_code": "DSEhu-lE8kp",
+      "like_count": 5,
+      "reply_count": 1,
+      "repost_count": 0,
+      "quote_count": 0,
+      "pk": "3784297950722902313",
+      "media_type": 19,
+      "content_type": "image",
+      "platform_sequence_id": 234
+    },
+    {
+      "sequence_id": 301,
+      "sns_platform": "threads",
+      "code": "DSEhurTk84N",
       "full_text": "사업은 덧셈이 아니라 곱셈입니다. \n\n내가 개발을 아무리 잘해도(100), 디자인이나 마케팅이 없다면(0) 수익은 없습니다. \n[ 개발(100) x 디자인(0) x 마케팅(0) = 0 ] \n\n개발자 마인드에서 벗어나야 하는 이유가 여기에 있습니다. 스스로 부족한 영역을 객관적으로 찾으세요. 그 '0'의 영역을 최소 1로 만들지 못한다면, 결과는 언제나 0일 수밖에 없습니다.\n\n그리고 개발, 디자인, 마케팅 뿐 아니라 다양한 요소들이 존재합니다. 다양한 부분들을 추가로 정리해보았습니다.\n\n---\n\n1. 기획 (Market Need)\n아무리 잘 만들고(개발), 예쁘고(디자인), 널리 알렸어도(마케팅), 사람들이 원하지 않는 것이라면 수익은 0입니다.\n\n[ 개발(100) x 기획(0) = 쓸모없는 고퀄리티 앱 ]\n\n핵심: 시장성 검증, 타겟 유저 설정, 경쟁 앱 분석.\n\n2. 비즈니스 모델 (BM / Pricing)\n앱을 사용하는 유저는 많은데 돈을 벌 방법이 설계되어 있지 않다면 수익은 0입니다. 광고를 어디에 배치할지, 인앱 결제 상품을 얼마에 팔지 설계하는 것은 개발과는 전혀 다른 영역입니다.\n\n[ 사용자(100) x BM(0) = 자선 사업 ]\n\n핵심: 광고 효율 최적화(eCPM), 적절한 가격 정책, 유료화 설계.\n\n---\n\n3. 운영 및 CS (Retention)\n출시 초기에는 유입이 되어도, 버그 대응이 늦거나 유저 피드백을 무시하면 평점이 1점대로 떨어집니다. 스토어 평점이 망가지면 신규 유입이 끊겨 결국 수익이 0으로 수렴합니다.\n\n[ 신규유입(100) x 운영(0) = 밑 빠진 독 ]\n\n핵심: 리뷰 답글, 빠른 버그 픽스, 업데이트 주기 관리.(처음부터 잘 설계하면 문제가 없을 수도 있음)\n\n4. 정책 및 리스크 관리 (Policy)\n이건 정말 무서운 '0'입니다. 앱이 대박이 났어도 구글/애플의 정책을 위반하여 계정이 정지(Terminate) 당하면 그 즉시 수익은 0이 됩니다. 특히 1인 개발자는 애드몹(AdMob) 제한이나 스토어 삭제 이슈에 매우 취약합니다.\n\n[ 월수익 1억 x 계정정지(0) = 0 ]\n\n핵심: 저작권 준수, 스토어 정책 모니터링, 무효 트래픽 관리.\n\n---\n\n5. 데이터 분석 (Business Intelligence)\n초기에는 감으로 할 수 있지만, 수익을 극대화하려면 철저한 계산이 필수입니다. 광고 지출(Cost) 대비 수익(Revenue), eCPM의 등락을 분석하지 않고 마케팅만 태운다면, 앱은 성장하는 것 같아도 통장은 비어가는 상황이 발생합니다. 최적화를 못 하면 0이 아니라 마이너스(적자)가 될 수 있습니다.\n\n[ 마케팅열정(100) x 분석능력(0) = 적자 ]\n\n핵심: ROAS(광고비 대비 매출) 관리, eCPM 하락 원인 분석 및 대응.",
       "media": [],
       "crawled_at": "2026-02-12T19:06:35.538",
-      "code": "DSEhurTk84N",
+      "is_merged_thread": true,
       "root_code": "DSEhu-lE8kp",
       "user": "programmingzombie",
       "timestamp": "2025-12-10 14:11:29",
-      "is_merged_thread": true,
       "original_item_count": 4,
       "platform_sequence_id": 234
     },
     {
-      "sequence_id": 292,
+      "sequence_id": 302,
       "sns_platform": "threads",
+      "code": "DMuxpQ-IChX",
       "full_text": "정지우 작가님 \n<AI, 글쓰기, 저작권>을 읽다가\n이 문장에 몇 번이고 밑줄을 쳤어요. \n\n\"글을 쓰는 사람이 걱정해야 할 건\nAI의 글쓰기 기술이 아니다. \n오히려 글을 삶으로 증명하는 일이다.\"\n\n콘텐츠 제작이 (너무) 쉬워진 지금,\n사람들은 더욱 콘텐츠 뒤의 사람과\n연결되고 싶다는 이야기였어요. \n\n일일이 자료 찾고, 발품 팔고,\n단어와 문장 고민한 게\n다 의미가 있었구나.\n그 생각이 들더라고요.\n\n---\n\n무신사 '브랜드 언박싱' 객원 에디터로\n패션 브랜드 대표님들 인터뷰할 때는\n일주일 전에 매장을 찾아갔어요. \n그 브랜드 분위기, 메시지를 알고 싶었거든요.\n\n공간디자인페어 취재 때는\n강연 분위기, 사람들 반응까지 \n다 기록했어요. 그걸 바탕으로 \n어떤 강연을 콘텐츠화할지 결정했죠.\n\nAI도 이런 경험이나 감상을\n생성할 수는 있지만, \n사람들은 다 알아요.\n그게 진짜인지 아닌지.\n\n무엇보다 그런 경험을 통해 변한 \n저 자신의 생각과 관점도 못 담죠.\n\n---\n\n지금도 저는 한 달에 최소 2~3번은\n굳이 시간을 내서 전시를 봐요.\n\n관심 없는 브랜드 팝업 공간도 \n일단 들어가보고요.\n\n그래야 진짜 경험으로 쓰여진 \n콘텐츠를 만들 수 있으니까요.\n\n앞으로도 저는 더 열심히 경험하면서\nAI와 같이 일하는, 그런 전문가가 되려 해요.\n\n여러분의 콘텐츠는 어떤가요?\n그 콘텐츠의 주인공은\n여러분인가요, AI인가요?",
       "media": [],
       "crawled_at": "2026-02-12T19:06:35.539",
-      "code": "DMuxpQ-IChX",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DMuxpQ-IChX",
       "user": "ai.dentity.141",
       "timestamp": "2025-07-30 20:50:21",
-      "is_merged_thread": true,
       "original_item_count": 3,
-      "is_detail_collected": true,
       "platform_sequence_id": 235
     },
     {
-      "sequence_id": 293,
+      "sequence_id": 303,
       "sns_platform": "threads",
+      "code": "DSKO_GEARgh",
       "full_text": "지난 날들을 돌아보니, 글쓰기에 대한 총 3권의 책을 썼다. 첫 책은 글쓰기에 관한 에세들을 모은 <우리는 글쓰기를 너무 심각하게 생각하지>다. 당시 편집자님이 '선정될 수 있는 건 다 선정된 것 같다.'면서 기뻐했던 책이다. 이런저런 오늘의 책, 문학나눔, 북클럽 도서 등에 선정되었던 걸로 기억한다. 이 책으로 처음 나를 알게 되었다는 분들도 제법 만나기도 했다. \n\n그 때부터 나는 '글쓰기'에 대해 꽤나 많이 이야기하고 다닌 사람이 되었던 것 같다. 그러나 별다른 글쓰기 책은 출간하지 않고 있다가 올해 <글쓰기로 독립하는 법>과 <나는 글쓰기 모임에서 만난 모든 글을 기억한다>를 내게 되었다. 하나는 일종의 자영업자와 프리랜서를 위한 실용서라면, 후자는 두 번째 글쓰기 에세이집이라 할 만하다. 글쓰기 이야기도 있지만, 글쓰기가 이어서 확장된 '글쓰기 모임' 이야기를 자연스레 많이 담게 되었다.\n\n---\n\n어떻게 보면, 글쓰기라는 게 보통 사람들은 도통 관심 없는 일이다. 내 주변 이웃들 정도를 생각해보면, 과연 글쓰기 같은 것에 관심 있는 사람은 아무도 없어 보인다. 그런데 이상하게도 막상 내가 살아가는 세계는 다들 글쓰기로 이어져 있는 사람들이다. 때론 이것도 하나의 기적 아닐까 싶기도 하다. 어떻게 전국, 전 세계에 뻗어있는 '글쓰기' 하는 사람들이 이렇게 연결되어 함께 하나의 사회를, 주변을, 삶을 이루게 되었는지 알다가도 모를 일이다. \n\n어쩌면 삶이란 그렇게 자기가 오랫동안 마음을 담아내다보면, 그 마음이 무게가 너무나 무거워져서, 일종의 중력 같은 것을 만드는 것인지도 모르겠다. 글쓰기 좋아하고, 글쓰고 싶어하고, 글쓰기로 이어지는 인연이란 사실 얼마나 드물고 희귀하고 귀중한 것인지 가끔 생각할 때면 놀라곤 한다. 그러고 보니, \"계속 쓰는 사람 정지우의 연결과 확장\"이라는 이번 책의 부제가 사뭇 마음에 든다.",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/590421764_17933634048114006_5986736536668318353_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMjAwMHgxNTAwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QEyXd2RZdRxG9HTwT-AWkLK7ZewmPYObDTjxmIoZCkQI5kvE3_Imj_xYZp3YF2pT7Y&_nc_ohc=WAvu-fBxZX0Q7kNvwF4xs_f&_nc_gid=UlF_xbHAoL-puTrfKd93ew&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc4NTkwNDM0NTI0NjE0NDU0NQ%3D%3D.3-ccb7-5&oh=00_Afs6rrhm3lQ5gZvNpuv8bIqQU9WX9gEJE-AmnZO75t-08w&oe=699ADE85&_nc_sid=10d13b"
@@ -5689,18 +5953,18 @@
       "local_images": [
         "web_viewer/images/23f5178dc195727bafc31c28d95997d9.webp"
       ],
-      "code": "DSKO_GEARgh",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DSKO_GEARgh",
       "user": "jungjiwoowriter",
       "timestamp": "2025-12-12 19:23:09",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 236
     },
     {
-      "sequence_id": 294,
+      "sequence_id": 304,
       "sns_platform": "threads",
+      "code": "DSJ-s-OEj2D",
       "full_text": "강의에서 자주 다루는 이야기\n\nAI사용시 항상하는말이 있습니다.\n\n\"제발 질문증강쓰세요 진짜 제발요\"\"\n\n사실 프롬프트 엔지니어링은 기본적으로 \nGPT나 제미나이가 가지는 편향성을\n이겨내는 스킬이기도 하지만\n \n이는 반대로 한번 세션안에 컨텍스트가 생성되면\n오히려 성능이 떨어지는 경우도 생깁니다.\n\n대표적으로 \n여러번 대화해도 계속이상한소리해요\n놀라운 **통찰**이야 짜증나요\n\n이런 질문에 대한 이야기를 진행해보죠\n\n---\n\n우선 AI를 다룰때 이야기하는게 편향성입니다.\n\n아래글처럼 특정한 결과물로 고정되어나오고\n특정한 문체가 나오는 경우도 있고\n\n가장 익숙하신건 놀라운 **통찰**이야\n특정 문체가 반복된다\n\n여러번 물어봐도 대답못한다 이런건데요\n\n가장 기본적인 오해를 잡아드리면\n AI는 무한한 뭔가가 아닙니다.\n\n그저 확률론적 계산기에요\n벡터임베딩 경사하강법 트렌스포머 등등 \n복잡한 이야기가 있지만 그런거 다떠나서 설명하면\n\n한번 뭔가 물어보면 그에 맞춤화된 공간이 형성됩니다.\n기본적으로 우리가 어떤대화를 하면 \n\n왼쪽에 이름이 생성되잔아요그럼 저기안에서 밖에 대답을 못합니다.\n\n---\n\n제가 메모리기능을 꺼서 사용하는 경우가 \n가장대표적인이유로\n\n일반적으로 제정보가 많이 들어가면 들어갈수록\n다른 해법을 찾아내려 하지않습니다.\n\n예를들어볼까요?\n\n프론트엔드개발용으로 AI를쓰거나\n글쓰기 용으로만 AI를 쓰는 정보\n\n이런게 있다고 가정해보죠\n\n대게 이러한 정보또한 내게 맞는 답변을줄 확률을 높이지만\n\n그와반대로 어떠한 문제대한 해법을 찾아낼때\n나와 맞춤화된 정보만을 제공하려는 경향성을 높입니다.\n\n메모리기능이 분명히 좋은기능은 맞는데\n\n문제는 다른 직렬해서보면 간단히 해결할 문제를\n굉장히 어렵게 풀게하는 단점이 되기도 합니다.\n\n---\n\n그래서 제가 여러번 입력하지마라\n\n최고성능으로 쓰고싶다면 메모리끄고 새세션(대화)에 질문을 던져라\n자주 설명을 드리곤 하지요\n\n다만 이것도 100%완벽한 해결책은 아닙니다.\n\n내프롬프트안에 어떠한 편향성이 녹아있을지 몰라요\n\n예를 들어보면\n\n[주제]에대해서 분석하고 싶은데 데이터를 어떤식으로분석해야할까?\n이런 시점에서 우선은 언사안에 데이터분석을 하라는 편향이 묻어있습니다.\n\n이를 최대한으로 해결하고자 하는방식이 질문증강입니다.\n\n저의 편협한생각이나 편향성을 최대한 배제한채로\n\n현행문제\n\n[프로젝트의 xx문제를 개선하려한다]\n[회사의 상황은 ~~하다]\n필요한 정보에 대해 질문하고 내가 질문하기위한 프롬프트를 생성해라\n\n이런방식입니다. 실제로 어떠한 문제를 푸는데 \n목적중심의 정보만을 던져주고 결과만을 얻는 최적의 활용법중하나죠\n\n제가 가진 편협한 사고방식에 빠지지않기위한 방법이기도합니다.\n\n---\n\n그렇다고 이편향성이 무조건적으로 나쁜건아닙니다.\n\n실제로 컨텍스트나 DB를 적절하게 조절할수만 있다면\n롱텀대화가 오히려더 좋은결과물을 내놓는 경우도\n아래와 같이 존재하죠\n\n그러니 필요에따라 키고끄고 제어해서쓰는\n방법론을 가르쳐야하는데\n\n이걸 어케가르치지.. 모르게따",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/590403231_17886580176406917_4641043871493294628_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjY1eDMwNy5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QHD_fRacHTrU-h7eDJS6rcrB6JXei-CG1KD7gmFk3DI2o3zGipqliqjK9ZddSyLzkA&_nc_ohc=U6l31U1AYMQQ7kNvwF51P9I&_nc_gid=4k9jz_ecEK8k7on1GSjt4g&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc4NTgzMjczMTEzMDM0Njg4Mw%3D%3D.3-ccb7-5&oh=00_AfsvOu3x7wHAfuf-uisxAynzAuTy7RNv6VxV-S0lLNk5hw&oe=699AFA23&_nc_sid=10d13b",
@@ -5711,18 +5975,18 @@
         "web_viewer/images/c73abf224948ee4f5576c6ad2507f26d.jpg",
         "web_viewer/images/fb7192704d80026cca91e16dafb5b249.jpg"
       ],
-      "code": "DSJ-s-OEj2D",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DSJ-s-OEj2D",
       "user": "specal1849",
       "timestamp": "2025-12-12 17:00:51",
-      "is_merged_thread": true,
       "original_item_count": 5,
-      "is_detail_collected": true,
       "platform_sequence_id": 237
     },
     {
-      "sequence_id": 295,
+      "sequence_id": 305,
       "sns_platform": "threads",
+      "code": "DR5lIlhEntF",
       "full_text": "실무적 프롬프트는 어떤식으로 작성하는가?\n\n저는 글의 초안을 AI로 많이 뽑습니다.\n클로드가 글을 잘쓰는것은 사실이나\n\n사실 만족스러운 수준은 아니라 GPT 5.1에 많이 위임하는데요\n특히 여러 프롬프트 엔지니어링 기법을 사용하면\n\n꽤나 괜찮은 결과물을 뽑아 낼수있습니다.\n\n바이브코딩에서는 PRD를 작성하죠?\n\n이걸 실제 글쓰기 단으로 가져와 봅시다.\n\n---\n\n사용된 기법을 정리해볼까요?\n\n1.ROLE, TASK구체와\n2.COT기반 체인프롬프팅\n3.출력기반 Constraint Prompting\n\n이걸이제 에이전틱하게 쓴다는 표현을 많이하는데\n\n제가 자주드리는 말씀중하나가 룰프롬의 중요성은떨어졌고\n목적기반의 프롬프팅이 좋다는 말입니다.\n\n이게 단순히 룰을 주지말라가 아니라\n\n당신은 글쓰기 전문가입니다. 당신은 10년차 XX입니다를 쓰지말고\n실제로 좀더 날카로운 목적을 장성하라는건데요\n\n첫줄을 보시게 되면\n\n[바이브워킹에 대한글을쓸꺼야 적절한 내용 구성해봐 \n업무는 1부터 순서대로 수행해]\n\n실제로 업무를 어떻게 수행할지와 구성에 대해서 던져준 것이죠\n\n---\n\n자이제 순서 구성으로 넘어가봅시다.\n\n전체업무를 위임하면서 어떤식으로 실제 업무를 진행해야할지\n1, 2 ,3 4 순으로 대화를 전개하라고 말을해뒀습니다.\n\n이는 컨텍스트를 제어하기 위한 방향성으로\n작은세션내에서 참조해야될 것들을조사\n\n이후 정리된 내용기반으로 글정리를 하라는건데요\n\n7번의 대화를 넘어가면 효율성이 \n떨어지는것은 사실입니다만\n\n자주 말씀드리는 편향성으로 하향된 성능을 대체할수있어요\n\n조사또한 플로우를 잡아 국내자료-해외자료-유명인의 조사를 하게했죠\n기본적으로 컨텍스트를 이쪽에 치중시켜 \n\n위에내용을 걸어버린겁니다.\n\n---\n\n다음은 글의 구조를 잡는파트죠 어떤식으로 글을 잡아야하는가\n했을때 주어진 재료로 여러 구성을 보는거에요\n\n저는 이분야에 대해 자주보고있기에 전체흐름을 알거든요\n실제 업무를 위임할때나 \n\n자동화로 가게된다면 문제를 하나하나 분석해\n노드로 시켜서 자동화하는 방식이죠\n\n일의 흐름자체가 머리에 들어있으니 중간에 근거가 부족하다 생각해\n추가적인 자료조사를 시켰어요\n\n---\n\n다음으로는 전체논지의 흐름과 체킹 그리고 어떤식으로 나올지\n선행결과물을 보기위한 확인입니다.\n\n사실 결과물을 보기보다는 요약을 받아보고 지속적인 수정을 하는게 훨씬 좋거든요\n\nREACT라고도 하는 일종의 기법으로 진짜 최적효율을 위해서는\n몇천번씩 돌려보지만 \n\n간단한 워크플로우를 짜는데 있어서는 2~3번이면 충분합니다.\n\n---\n\n다음은 초안을 받아보기위한 문체서술 방식인데\n\n여기까지만 해도 일단 읽을만한 글을 나오긴해요\n솔직히 근데 여기까지만 한다해도 아쉬운느낌이 강합니다.\n\n그렇기에 이를 넘기위해 몇단계의 분석과정을 더거칩니다.\n\n---\n\n어때요 훨씬 나아졌죠?\n\n충분한 컨텍스트와 에이전틱한 활용법이 이런겁니다.\n\n잘시키면 되긴하는데 그냥 시키면 안되는 이유\n\n---\n\n그렇게 작성된 글 입니다.\n\n사실 수정을 많이해서 원본이 많이 희석되었지만\n이정도만 되더라도 쓸만한게 사실이죠...\n\n문제는 할루시 확률 때문에 전부다 신경써야 한다정도..?",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/591167503_17885821056406917_7003763393990570224_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNzQ3eDQ1Ni5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QHh61nlmzUQD58cyAJHRLJ7jO07EI-atNS4EjikeCY7L0CoOs7qeyMcYQSJ-hYogkc&_nc_ohc=NRO3V4kkA_MQ7kNvwHsdlRm&_nc_gid=AeStCEg0yPHXl9-hVbbj8w&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc4MTIxNjY3OTkxNDI3MzYwNQ%3D%3D.3-ccb7-5&oh=00_AfsZZKevVLmwL0IpqOuBzkYA2w9yZxkYoFuVcxRd7JMN_w&oe=699AD5AC&_nc_sid=10d13b",
@@ -5743,18 +6007,18 @@
         "web_viewer/images/4caba87098a2b9d5e9f03be743fa3bde.jpg",
         "web_viewer/images/ea42b181af970719ff727c62231ccdb7.jpg"
       ],
-      "code": "DR5lIlhEntF",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DR5lIlhEntF",
       "user": "specal1849",
       "timestamp": "2025-12-06 08:09:35",
-      "is_merged_thread": true,
       "original_item_count": 8,
-      "is_detail_collected": true,
       "platform_sequence_id": 238
     },
     {
-      "sequence_id": 296,
+      "sequence_id": 306,
       "sns_platform": "threads",
+      "code": "DR5eEaEE9_R",
       "full_text": "요즘은 AI기반으로 일을 하다 보면 \n\n업무방식이 달라졌다는 느낌을 받을 때가 많습니다.\n특히 GPT나 제미나이를 사용해 워크플로우를 실시간으로 수정하다보면\n\n원래는 불가능했던 업무를 순식간에 끝내버릴때가 많은데요\n\n무엇을 하든, 예전처럼 손으로 모든 단계를 밟아야 한다는 \n감각이 옅어지고, AI활용시 방향만 정확히 잡히면 \n나머지를 대신 이어주는 힘이 생긴 것 같습니다. \n\nAI가 갑자기 똑똑해졌다는 말로는 설명이 잘 안 되고\n흐름 자체가 달라진 느낌이죠\n\n해외 기업들은 이미 이 변화를 체감한 듯합니다.\n\n마이크로 소프트 CEO 가 \nAI는 더 이상 도구가 아니라 동료에 가까워지고 있다\n\n말한 것도, 과장이 아니라 현장에서 벌어지는 변화고 \n많은분들이 이러한 변화를 느끼고 있습니다.\n\n과거에는 모델에 작업을 잘게 나눠 지시해야 했지만, \n요즘은 알아서 제안하는 방식이 자연스럽게 자리 잡아가고 있습니다.\n\n이는 최신 연구방향과도 일치하는데요 오늘은 이에대해 논해보죠\n\n---\n\n구글의 제프딘 도 비슷한 이야기를 했습니다. \n\n향후 모델들은 단발성 응답보다 더 긴 목적 수행을 기본으로 삼을 것\n이라고 말했는데\n\n이는 GPT 4O이후의 최신 AI회사들의 연구방식들에서도 확인할수있습니다.\n\n최신연구방식 바이브코딩 심지어 현실의 문제를 해결하려는 바이브 워킹이라는 개념이 대두되면서\n\n최신 AI는 문제를 던지면을 거쳐 여러 조각으로 나누고, \n무엇부터 손댈지 정리해 주는 모습을 보면 확실히 이전과는 다른 세계가 열리고 있다는 생각이 듭니다.\n\n특히 최근 자동화를 손대면서 문서, 기획, 일정 관리처럼 누구나 하는 일에서부터 그 결이 바뀜을 체감하고 있는데요. \n\n흐름을 타는 순간이 잦아지고, 거기서 AI가 보조바퀴역할을 하며 가속도가 붙고 있습니다.\n\n바이브워킹이라는 말도 그런 자리에서 자연스럽게 등장한 것 같습니다. 아직은 낯설지만, 몇 년아니 몇개월만 지나면 세상이 또 바뀔지 모르겠 습니다.\n\n---\n\n바이브워킹이라는 말은 아직 낯설지만\n\nAI의 연구방향중 하나인 AGI나 에이전트를 구현하려는 방식을\n실제로 써보면 그 결이 금세 드러납니다. \n\n특히 자동화시장이 대세인만큼 일을 할 때 자연스럽게 생기는 리듬 같은 것이 있는데\n\n에이전트는 그 지점을 부드럽게 받쳐주는 역할에 가깝습니다. \n\n목표를 건네면 가능한 경로를 펼쳐 보이고, 계획에 따른 업무를 수행합니다.\n\n여기서 사람은 거기서 자신에게 맞는 흐름을 골라 이어갑니다. \n\n특정한 절차를 따르는 방식이라기보다, 작업의 감각을 살려가는 과정에 가깝습니다.\n\n아키텍쳐라던가 DB등의 개념을 다뤄야하지만 그런복잡한거 다뺴놓고 이야기하면\n\n수많은 데이터 사이에 내가원하는걸 AI가 1차로 찾고\n\n몇단계에 거쳐서 그방향성을 수립 내가 정확하게 원하는것을 찾아오는것이죠\n\n---\n\n구글 DeepMind의 여러 연구자들은 에이전트의 역할을 설명할 때, \n\n사람이 문제의 방향을 정하면 나머지는 모델이 알아서 조율한다\n\n이런 표현을 쓰곤 합니다. \n\n몇달전만해도 이 말이 너무나도 지루하고 이상하게 들렸지만\n요즘은 오히려 이걸못쓰면 도태되겠구나가 실시간으로 느껴집니다.\n\n해외 기업들의 움직임도 비슷합니다.\n\nMicrosoft는 문서와 표, 발표 자료 같은 일상적 작업에 에이전트를 끼워 넣기 시작했습니다. \n\n사용자가 모든 단계를 직접 다루기보다, 방향을 제시하면 에이전트가 필요한 부분을 채워주는 구조고\n\nGoogle이나 다른 연구 기관들도 비슷한 시도를 하고 있습니다. \n특히 대표적으로 구글의 엔터프라이즈를 사용해보시거나\n\n이번에 출시된 워크스페이스 플로우에서 명백하게 방향성을 제시하고있죠\n\n---\n\n자동화나 에이전트 AX에대한 논의를 하다보면, 반복과 확인이 많은 일은 AI 에이전트가 무리없이 위임합니다.\n\n대표적으로 경장사분석 자료조사 컨텐츠생산부터\n기업분석이나 데이터기초분석의 영역까지 수많은 시장에 AI가 침투해있죠\n\n뭐... 코딩은 이제 더할말이 필요한가요? \n\n이제 사람은 선택과 판단이 필요한 쪽으로 자연스럽게 옮겨갑니다. \n\n보고의 결을 잡거나, 여러 가능성 사이에서 방향을 고르는 등의 업무를 수행하죠\n\nMcKinsey는 이런 전환이 지식 노동 전반에서 더 두드러질 것이라 말합니다. 일이 단순히 줄어드는 것이 아니라, 업무의 전반이 에이전트 군단을 기반으로한 개인팀을 가지고 있는 느낌이지요\n\n---\n\n말로만 보면 완벽해 보이지만 \n\n현행 에이전트의 연구과제는 효율화와 비용절감입니다.\n\n계획을 세우고, 다시 확인하고, 다른 경로를 탐색하는 과정에토큰 사용량이 미친듯이 늘어나죠\n\n바이브코딩에서 엔트로픽이 MCP를 점점 경량화하려하고 스킬스를 내놓고\n개인화하려는 방향성과도 일치되는것이\n\n단일대화의 단가가 낮아져도 문제가 복잡해 지면 총량은 눈덩이처럼 불어납니다. 아마 업무시에 세션이 다차서 못쓰게 된 경험은 다들 한번씩 있으실 테죠..?\n\nForbes가 토큰 역설이란 표현한 것도 이런 현실을 염두에 둔 말로,\n\n기업에서는 월 수천만 토큰이 오가는 경우도 드문 일이 아니며\n결국 설계 단계에서 비용 흐름을 가늠하는 감각이 필요한것이죠\n\n저는 이런 효율화 업무분석이 최우선되는 시장이 곧 열릴꺼라 생각하고 있지요\n\nN8N을 한번만 구현해 보셔도 사람보단 싸지만 수익을 내는게 생각보다 쉽지않아요\n\n그구조를 만들고 어디까지 비용을 절감할수있냐의 문제지요\n\n---\n\n사실 바이브워킹이라는 표현은 조금 낯설지만,\n\n솔직히 말해면 인류가 수백년동안 해온일 입니다.\n\n일을 조금 더 자연스럽게 그리고 싸게 효율적으로 싶다는 마음이죠\n\nAI기술은 그 바람을 도와줄 만큼 성숙해졌고, 동시에 조심해야 할 지점도 분명히 존재합니다. 어떤 일을 에이전트에게 넘기고, 어디에서 손을 놓지 않아야 할지 고민하는 과정이 앞으로 더 중요해질 것 같습니다.\n\n---\n\n[참고문헌]\nAgentMesh(2025), ReUseIt(2025), FinRobot(2025), Multi-Agent Ideation(2025)\n\nMicrosoft 365 Agent Mode / The Verge 보도\n\nMcKinsey Superagency Report(2025), IBM AI Agents Report(2025)\n\nSatya Nadella, Jeff Dean, Yoshua Bengio 인터뷰 및 강연",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/592462013_17885816619406917_3735532212374892870_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjg3eDM3NS5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QEbLq347DGQLh6oqILRuodZTXLTcK9vY6Nc0f1NIsXqVQt0f-yesEwAo15YCjsmjl4&_nc_ohc=XZx6ruyZ6tMQ7kNvwHXYBr5&_nc_gid=zkBcv7cwIt4lOpinoKVvSA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc4MTE4NTYwNjQxMzE4MDg4MQ%3D%3D.3-ccb7-5&oh=00_AfsGs-iQXYEUyBS_6U9F1SY2x37Po-mCEL6WQl2aTb8BKw&oe=699B009E&_nc_sid=10d13b",
@@ -5775,18 +6039,18 @@
         "web_viewer/images/1347b7214209ae8ec0dcf47a3e9d47d5.jpg",
         "web_viewer/images/83ea6ea41587ef51072b8cfb50abf126.jpg"
       ],
-      "code": "DR5eEaEE9_R",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DR5eEaEE9_R",
       "user": "specal1849",
       "timestamp": "2025-12-06 07:07:51",
-      "is_merged_thread": true,
       "original_item_count": 8,
-      "is_detail_collected": true,
       "platform_sequence_id": 239
     },
     {
-      "sequence_id": 297,
+      "sequence_id": 307,
       "sns_platform": "threads",
+      "code": "DSBpzvtkVTT",
       "full_text": "구글 믹스보드에서 이제 프레젠 테이션이 됩니다.\n\n비쥬얼피치덱 기능이 공식적으로 출시되었습니다.\n나노바나나 PRO기반으로 생성하는데 \n\n3개 만들어 보며 분석해보니 상당히 괜찮습니다.\n\n이전 교육을나가서 사용법을 알려드리면\n상당히 인기좋은 서비스 인데요\n\n교수님들은 논문을 주며 \n이에 어울리는 사진을 만들어와 같은것도가능합니다.\n\n아래쪽에 모두 다루었으니 한번 배워보시죠\n\n---\n\n왼쪽에 뉴프로젝트를 눌러봅시다.\n\n여기에 뭐하나 만들어볼까요?\n저는 인포그래픽을 선호하니\n\n\"프롬프트 엔지니어링에 대해 설명하는 블랙앤화이트 색상 인포그래픽\"\n이렇게 입력해 볼게요\n\n---\n\n씁 나쁘진않은데 너무 추상적이에요\n좀더 깊이있게 개념으로 갑시다.\n\n자료를 입력하고 장표를 만들라고 시키는것도 가능하죠\n\n---\n\n여기같은 경우 논문기반으로 만들라고 시킨건데\n\n이런식으로 논문을 던져넣고 어울리는 인포그래픽 만해도 잘나와요\n\n---\n\n오른쪽위에 프레젠 테이션을 눌러봅시다.\n\n적당히 입력했어요 사실 이것보다.\n\n잔뜩마들어주고 적절한 스타일을 지정해주면 압도적으로\n고점이 높아질것 같은것도 사실입니다.\n\n---\n\n논문을 주면서 어울리는 \n사진을 만들고\n\n피치덱을 만들라해봤더니 \n알아서 효과를 넣어서 만들어오네요...?\n\n오... 개쩔어 단점은 20분정도 걸리는거?\n근데 만들어두고 다른거하고있으면 되니\n\n단점축에도 못끼고\n\n---\n\n아쉽긴한데 이정도면 이미지 바로사용 가능할것 같아서\n\n저는 자주 쓸것같습니다.[매우추천]",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/590417627_633096559825658_8018708619864940600_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDMxNC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QFPtOiTSckPNp1zBdDyTMb5Tpg7M00RP5a6dg2ra3oid3wGBDBV7C3v7cd6qpgT64A&_nc_ohc=SaxDOnXIthEQ7kNvwGHdKbU&_nc_gid=aWu4Fyh2DKQr9WtOUv8caQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc4MzQ4OTAzNzc5ODU2MDk3OQ%3D%3D.3-ccb7-5&oh=00_AfuB0tQk3Ndme8vZ6DutqO7ayGSctzxiOND7PuQJj2iRrg&oe=699AFC92&_nc_sid=10d13b",
@@ -5807,18 +6071,18 @@
         "web_viewer/images/c97e0d4fd3b351a339dca251cf616f45.jpg",
         "web_viewer/images/1526767a25420cbeeba23e389890b651.jpg"
       ],
-      "code": "DSBpzvtkVTT",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DSBpzvtkVTT",
       "user": "specal1849",
       "timestamp": "2025-12-09 11:39:53",
-      "is_merged_thread": true,
       "original_item_count": 7,
-      "is_detail_collected": true,
       "platform_sequence_id": 240
     },
     {
-      "sequence_id": 298,
+      "sequence_id": 308,
       "sns_platform": "threads",
+      "code": "DRysL3RkpGl",
       "full_text": "AI기반 취업준비시 도움이 되는 툴 정리\n\n이번에 가벼운 파일럿프젝트 느낌으로\n지인분의 취업을 도와 드렸습니다.\n\n그분은 지금 대기업2곳을 합격해\n레퍼런스체크를 기다리고있죠\n\n저는 인사팀이나 취업전문가는 아니지만\n그래도 AI를 잘쓰는 사람이라 \n4개의 툴 조합을 추천드렸는데요\n\n1.노트북 LM\n2.AI스튜디오\n3.제미나이\n4.뷰인터\n\n실제 목적있는 프로젝트에서\n툴을 어떤식으로 조합했는가 보시죠\n\n[거기에 AI 기반 자소서 작성법과 세부 면접 \n준비 방법론에 대해 이야기해보죠]\n\n---\n\n참고로 저는 취업전문가가 아닙니다\n상담은 스레드의 인사팀장님들을 찾아가십셔\n\n다만 AI활용능력을 묻는경우가 많은데 취준에서 쓰는 방식을 보여드리져\n\n최근트렌드인 휴먼인드루프기반 \n워크플로우를 아래와같이 설립했다\n정도의 말은 하게해드릴수 있는 글입니다.\n\n먼저 취업준비에 도움을 달라하면\n처음 질문을 하는건 한가지입니다.\n\n경험정리는 다했어?\n\n대다수는 했다고 말하지만 \n생각보다 정리도 덜되어있고\nJD를 세부적으로 분석하는 경우도 매우적죠\n\n우선은 취업시장이 얼어있는 만큼 많을 곳을 지원하는게 좋기에\n\n저는 최우선 적으로 경험정리를 요구합니다.\n\n일단 이부분 같은경우 \n노션AI \nGPT, 제미나이, 클로드\nAI스튜디오 뭘쓰든 비슷하지만\n\n무료 툴인 AI스튜디오를 가정해보죠\n\n목적+지시+출력제어 구조로 프롬프트를 입력했습니다.\n\n[나는 취준생이고 너는 취업전문컨설턴트야\n취업 준비를 위한 액션플랜을 세워줄수 있을까?\n최대한 자세하게 내가해야하는 모든 행동을 20가지 순서로 정립해줘]\n\n---\n\n늘상하는 이야기지만\n\n대다수의 기업에 대해 큰틀은 동일해요\n서류-인적성-면접\n\n저는 이모든 과정이 하나로 수립되어야 한다 생각하며\n맨처음 해야할껀 경험정리와 정량적 지표를 만드는겁니다.\n\n제가 도와드린분 같은경우나 많은 취준생분들이\n\n경험정리를 등한시하는 경우가 많지만\n우선 최우선 선행되야하는건 경험정리입니다.\n\n본인이 뭘해왔고 뭘했는지 AI와 대화를해서 정리를하는것이죠\n\n캔버스 기능을 사용해 정리를 요청합시다.\n\n이럴때는 다음프롬프트를 추천드립니다.\n[MECE 원칙 기반으로 취업을 위한 경험정리를 수행할꺼야\n빠진부분없이 정리하고 내가 추가로 정리해야할 요소들이있는지 확인해줘]\n\n부족한 내용은 여기 정리하고 가는것이죠\n\n지금까지 써둔 이력서를 \n3C4P든 여러 분석기법으로 다각화 분석을 해본후\n\n보완점 추가내용을 작성하신다음\n\n추가적인 작성내용을 묻거나 부족한내용 더추가하면 좋을내용을 정리하는것이죠\n\n이과정이 취준의 시작입니다.\n\n---\n\n제가 일반적으로 도움을 요청받으면 작성하는 내용은 다음과같습니다.\n\n1.이력서+경험정리완본\n2.쓰고 싶은기업이나 직무[보통은 타겟이 정해짐]\n이후에는 AI로 자료조사를 시작하는거에요\n\n[현대차의 자동차개발 엔지니어]를 지원하려고해 필수적으로 읽어봐야하는 서류가뭐가있을까?\n\n[]안을 수정하셔서 질문을 던진다면 다음과 같은자료를 추천해줍니다.\n\n사실 늘상하는 말이지만\n1.국내외의 사업의 분위기와 전체적인 트렌드\n2.관련 콘텐츠와교육들\n3.IR이나 ESG보고서 큰행사에서의 발표\n4.최신논문이나 전체적인 트렌드\n5.산업군의 AI활용 트렌드\n6.합격자소서 20선\n\n여기서는 딥리서치를 사용합니다.\n\n딥리서치는 180~240개정도의 자료를 조사해주는 기능인데\n보통 3~4개의 챕터로 나누어져있으니 여기에 이제\n\n[각챕터별로 딥리서치를 활용해 조사할꺼야 \n적절한 프롬프트 만들어줘]\n\n를 입력해볼까요?\n\n---\n\n제가 늘 말씀드리지만 단일로 조사해서 방대한 자료를 조사하기엔\n단일 딥러서치의 한계는 명백합니다.\n\n그렇기에 이런식으로 파트를 나눠서 에이전틱하게 조사시키는 것이죠가 늘 말씀드리지만 단일로 조사해서 방대한 자료를 조사하기엔\n\n한계가 존재합니다. 그렇기에 아래정도를 나눠서 조사해두세요\n\n[문서내보내기가 되니 닥스에 저장을]\n\n---\n\n여기에 몇몇가지 추가해 둡시다.\n\n사실 트렌드 코리아를 좋아하지는 않지만\n인용하기에 이만큼 좋은게 없어요\n\n휴먼인더루프 즉 인간과 AI의 협업은 어떤식으로 이루어지며\n어떤식으로 생산성을 올리는가 이런것들에 대한글이죠\n\n여기에 딥리서치로 AI 25년도 12월기준 최신 AI트렌드도 조사시키시구요\n\n여러 채널을 둘러보면서 트렌드가 이런식이구나를 보시면 좋습니다.\n\n---\n\n다음은 노트북 LM으로 넘어갑시다.\n\n이녀석을 선택한이유는 참조문서 걸어주는게 가장편해서에요\n사실상 RAG기반 에이전트를 구성하면 가장 좋지만 그건 불가능하기에\n\n추가 사용법은 아래글을 참조해주시고\n\n돌아가서 \n\n노트북은 LM은 취업준비하는데 상당히 괜찮습니다.\n위에서 조사를 하라고한 자료를 다 넣고\n\nJD부터 시작해서 모든자료를 정리해야겠죠?\n자소서를 쓰기전에 적절하게 먼저 받아봅시다.\n\n취업을 위해 자소서를 작성하기위한 적절한 가이드라인\n\n보고서를 생성시키세요 맘에드는지 안드는지는 당연 읽어보시고 맘에든다면 이외 마인드맵을 눌러 전체적인 정리상태를 확인합니다.\n\n그럼이제 큰틀이 잡힌것이죠\n\n---\n\n대화로 물어볼때는 아래와같이  페르소나를 부여하면 좋습니다.\n\n당신은 면접관 출신의 컨설턴트로 질문자의 자료를 기반으로 \n적절한 질문과 최적답변을 해주는 역할을 수행합니다.\n\n이렇게 설정하고 대화를 해보고\n아래 2개를 클릭하세요\n\n1.보고서[ 내용기반  합격을 부르는 자기소개서 작성 전략 가이드 작성]\n2.마인드맵\n\n한번 보시고 이걸통해서 자소서를 쓰러 다음으로 넘어갑시다.\n\n---\n\nAI 스튜디오로 돌아갑시다.\n\n제안서에 가깝기에\nTemperature는 0.25\ntop-p는 0.4로두고 작성을 시키는거에요\n\n사실 컨텍스트가 적으면 잘작성하지는 못합니다. \n그렇기에 합격자소서 20선과 JD 자소서문항 경험정리문서를 주는거에요\n\n합격자소서를 참조하여 다음문항을 작성할꺼야\n내 이력에 가장잘어울리는 자소서를 작성해\n\n사실 이정도만되어도 초안으로는 쓸만하고\n추가적으로 3안까지 작성해 하면 주제별로 \n이런느낌으로 쓰면되겠다 라는 느낌이옵니다.\n\n레퍼런스를 다양하게 뽑는용도니 그냥 제출하지는마세요\n\n그리고 LM에서 작성된 가이드문서를 추가하셔도 나름 도움이됩니다.\n\n다만 반드시 마지막엔 본인 터치를 넣으세요\n70%만나오는거고 그걸 자기언어로 바꿔야합니다.\n\n---\n\n자소서를 완성한후 면접도 동시에 준비합니다.\n\n다음과같이 주면서 정리시킬수 있고 질문을 뽑아낼수도있죠\n\n여기에 추가적으로 어느정도 자소서의 방향성이 잡협다면\nAI스튜디오에서\n\n[회사]의 [직무]를 지원할껀데 합격가능성이 가장높은 방향으로 자소서를 수정할꺼야 적절한 방향성을 제시해줘\n\n이런 질문을 던지는것도 매우 도움이됩니다.\n\n개인 포폴이나 자료를 분석하는데는 AI스튜디오가 토큰리밋이 적기에 아주 효율적이죠\n\n---\n\n어느정도 정리되었다면 사용문제와 제출문제를 가지고 뷰인터로갑시다.\n\n일 만원이긴한데 뷰인터기반으로 스크립트도 주고\n나름 정리도 잘해줍니다 기존 출제문제 연습도 좋구요\n\n여기서 이제 몇몇가지를 넘기면서 다시한번 연습을하고\n추가적으로 스크립트를 가져다가 AI에게 주면서 대답이라하고\n\n최적답변을 해보라 노트북 LM을 활용하시면 더좋습니다.\n\n---\n\n어쨌든 이방식으로 임원면접까지 성공적으로 마치신분이 생겨\n경험을 나누게 되었습니다.\n\n이런 방식이 있다뿐이고 \n성공사례가 있다 정도지\n결코 정답은 아닙니다.\n\n필요에따라 적절히 원하는 부분만 사용하시면 좋을것같습니다 :)\n\n취준생 여러분들의 성공적인 취업을 기원합니다.\n[마지막으로 AI를 100%믿지마시고 전문가와의 상담을 추천드립니다]\n스레드에 괜찮은 팀장님들 많아여 가서 도와달라하면 많이 도와줄꺼야...",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/591043039_17885506500406917_7661195314474759942_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTQ0Nng4NjEuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QGqjQRhJTV46PfVGNpzz4EdFjb5swDq-MFxjRdhwkSos8L-pZtoXpoN4PIT6tNba7U&_nc_ohc=qpjmrqVaPvIQ7kNvwH1NTOB&_nc_gid=nE0AjsSAi2Ym6H9UjSEabw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc3OTI3NzM4ODcxNTgzNDY1OA%3D%3D.3-ccb7-5&oh=00_AfudolzWiecXt9XXhUEPUIhLLjKMAZvWUuuCAQmrGsk8XQ&oe=699AF2AB&_nc_sid=10d13b",
@@ -5843,18 +6107,18 @@
         "web_viewer/images/f308aa282874a1ee77ba2978adcc42e9.jpg",
         "web_viewer/images/238d9ae86b541a0d6876db176fa82c6d.jpg"
       ],
-      "code": "DRysL3RkpGl",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DRysL3RkpGl",
       "user": "specal1849",
       "timestamp": "2025-12-03 15:56:31",
-      "is_merged_thread": true,
       "original_item_count": 12,
-      "is_detail_collected": true,
       "platform_sequence_id": 241
     },
     {
-      "sequence_id": 299,
+      "sequence_id": 309,
       "sns_platform": "threads",
+      "code": "DOshd8oEcaT",
       "full_text": "서울대 강의에서 풀려고 만든 프롬프트\n\n이거 필요하신분이 있을지는 모르겠는데\n\n이번주 스타트업 대표님들 모시고 강의를 합니다.\n그때 드릴 IR자료 초안 뽑는 프롬프트 입니다.\n\n강의는 저거만들고 나노바나나로 저기들어갈 인포그래픽 만드는건데\nAI스튜디오 쓰면 그냥 무료로 다 만들수있어서 자주씁니다.\n\n문서주고 분석시키면 나노바나나 에서\n필요한 인포그래픽 추천받아 다만들수있고\n\n방법만 알면 PDF PPT로 다변환 할수 있어서\n나름 쓸만합니다. \n\n직원에게 방법알려주면 큰 틀짜두고 양산가능하고\n템플릿 있으면 분석시켜서 맞춤형 무한제작 무료로 가능에 \n\n분석자체도 촘촘하게 넣었구요\n\n딱히 타겟도메인은 아니고 강연용으로 만든거라\n최적화는 안해서 좀 아쉽긴한데 나름쓸만합니다.\n\n고정 댓글 노션에 둘게요 예시도 다걸어뒀으니\n쓰실분들은 쓰십셔\n\n[PS.귀찮아서 XML로짬]\n\n---\n\n노션입니다.",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/550480284_807713768369944_7304417082738144244_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDMxMi5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QFbVLjT1W0LpFTlSevBdoH29MgihcDaG36sGAv_c89oad1KMS3qo6nT7a8P-9wL6y4&_nc_ohc=sAejd45ilYkQ7kNvwFgKFwb&_nc_gid=kN0YcJsMsJZRLwuB2xNAyQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzcyMzQ5ODE4NTQyNTAxMjM3MQ%3D%3D.3-ccb7-5&oh=00_AfsWXxhL1a-850QIXbvzKhC6HhbQW6EYvNJRzzOjlzLDlA&oe=699AF94D&_nc_sid=10d13b"
@@ -5863,33 +6127,33 @@
       "local_images": [
         "web_viewer/images/2a849f2786f52635d55d8aae3a5a3d88.jpg"
       ],
-      "code": "DOshd8oEcaT",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DOshd8oEcaT",
       "user": "specal1849",
       "timestamp": "2025-09-17 17:07:34",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 242
     },
     {
-      "sequence_id": 300,
+      "sequence_id": 310,
       "sns_platform": "threads",
+      "code": "DSE1xdPkpu-",
       "full_text": "AI 강의 사기전에, 제발 이것만 읽고 강의 사세요\n\n현행 프롬프트 최신 이론 논문 \nAI활용법 이글하나에 정리 다해뒀습니다.\n\n1.25년도 최신 프롬프트 심화이론[내부글 좋아요 합 500개 이상]\n2.당신의 AI가 말을 안듣는이유[좋아요 합 1000개 이상]\n3.이미지 프롬프트 심화이론\n4.돈에 미친사람이 알려주는 프롬프트 기초\n5.제미나이 활용론[단일조회수 17만회글 포함]\n\n진짜 이거면 일반인 기준 강의 돈주고 살필요 없습니다...\n\n제 강연에서 다루는 내용 전부다 글로써뒀고\n일반인들이 쓰기엔 이정도면 충분해요\n\n저도 강의 팔지만 이거 보시고 공부하시면 \n돈안쓰셔도 됩니다.\n\n이 글들로 강의제안 인강제작 책저술 제안 \n합쳐 100번정도 받았어요\n\n---\n\n보는법\n4,2,1순서대로 읽으시고 \n3,5보면서 활용하시면 딱히 결제필요없음\n\n1.25년도 최신 프롬프트 심화이론[내부글 좋아요 합 500개 이상]\n\n---\n\n2.당신의 AI가 말을 안듣는이유[좋아요 합 1000개 이상]\n\n---\n\n3.이미지 프롬프트 심화이론\n\n---\n\n4.돈에 미친사람이 알려주는 프롬프트 기초\n\n---\n\n5.제미나이 활용론",
       "media": [],
       "crawled_at": "2026-02-12T19:06:41.572",
-      "code": "DSE1xdPkpu-",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DSE1xdPkpu-",
       "user": "specal1849",
       "timestamp": "2025-12-10 17:06:37",
-      "is_merged_thread": true,
       "original_item_count": 6,
-      "is_detail_collected": true,
       "platform_sequence_id": 243
     },
     {
-      "sequence_id": 301,
+      "sequence_id": 311,
       "sns_platform": "threads",
+      "code": "DSI4E1AkaQ0",
       "full_text": "DM워낙 많이와서 나노바나나 PRO\n이론과 실무수업용 PDF 공유입니다.\n\n총 500장이며 다룬 케이스는 다음과 같습니다.\n\n1.마케터를 위한\n실무용 포스터, 썸네일, 카드뉴스 프롬프트\n\n2.실무적 고급기법들\n-ISO 조래게 셔터스피드 조명 재질\n-구도 샷 앵글에 따른차이\n-100장정도되는 요소별 차이\n\n3.각종 프롬프트 기법에 따른 차이들\n자연어 마크다운 제이슨 야믈 기법차이\n\n4.고양이 사진분위기별차이+조경용 프롬프트\n200장 정도되는데 할수있는거 다해봄\n\n[공유링크와 공부법은 아래]\n\n---\n\n보는법\n\n강연에서 다루는 내용이기에 \n이거만 본다고 쓰실수없습니다.\n반드시 아래들글을 참조하셔야합니다.\n\n1.기초이론\n2.심화이론 1,2\n3.카드뉴스\n4.카드뉴스\n5.영상화\n\n사실 이것만 본다고 이해하지 못하실 확률이 높습니다.\n\n상기내용은 \n제 인터넷강의에서 다룰 예정이며\n실무강의에서 추가로 다루어질 예정입니다.\n\n이외는 불러주시면가는\n\n기초이론입니다 \n프롬프트는 편향성을 이겨내기위함임을 알려드리는 자료\n\n---\n\n심화이론입니다 기초적으로제어되는 요소를 체킹합니다.\n\n---\n\n3.조금더 간단하게쓴 심화이론 입니다 전체를 조망합니\n\n---\n\n4.실무적 프롬프트중 카드뉴스나 포스터입니다.\n\n---\n\n카드뉴스나 포스터 2\n\n---\n\n영상화 챕터입니다.\n\n---\n\n인터넷 강의고 아직 내용이 안들어갓지만\n여기에 위내용이 1시간 분량을 포함됩니다.\n\n---\n\n어디든 뿌리셔도는 되는데 다만 이것만 본다 이해가 어렵습니다.\n반드시 글을 읽어보시고 공부하시기를 권장드립니다",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/586707075_1548824183032210_6815663263876197322_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDMxMC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QHdPjG4j29I1U71SmHymkhVhTCZxrycaRUURio_rwoix9Q71VeMSIoZTbyqSywbv-A&_nc_ohc=3BrzW7k__HsQ7kNvwFOBQTS&_nc_gid=212qZVSjk0wcp5_Zy1SCUw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc4NTUyMjEwOTIwNTI5MjA4NA%3D%3D.3-ccb7-5&oh=00_Afs_zKlej2G4tFBLT3JSU1yoDWDiF1ePv24LBu87wnpTtw&oe=699AFE1E&_nc_sid=10d13b"
@@ -5898,18 +6162,18 @@
       "local_images": [
         "web_viewer/images/83255af2067824a08768d7022826da3e.jpg"
       ],
-      "code": "DSI4E1AkaQ0",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DSI4E1AkaQ0",
       "user": "specal1849",
       "timestamp": "2025-12-12 06:58:56",
-      "is_merged_thread": true,
       "original_item_count": 9,
-      "is_detail_collected": true,
       "platform_sequence_id": 244
     },
     {
-      "sequence_id": 302,
+      "sequence_id": 312,
       "sns_platform": "threads",
+      "code": "DSKovq7Etdo",
       "full_text": "Ai로 만든 삼성증권 mPOP 제작 후기!\n\n1. 광고주가 준 브리프 및 가이드 확인\n2. 아이데이션(컨셉 및 BGM 선정)\n3. 러프 스케치(레퍼런스 체크)\n4. 스토리보드 제작(미드저니)\n5. 이미지 제작(미드저니&나노바나나)\n6. 영상 제작(클링 ai)\n7. 나레이션 제작(일레븐랩스)\n8. 후반작업(편집 및 톤보정, 자막)\n\n나는 이런 과정을 거쳐서 제작해.\n나레이션, 톤보정, BGM 편집 등 팁 공유 가능한 스치니 있을까?\n\n---\n\n이건 진행하면서 스토리보드 및 제작된거를 체크해나가는 보드!\n\n---\n\n4번. 스토리보드는 애니메틱을 함께 진행해. 그래야 편집감을 볼 수 있거든",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/591177278_17929898727149718_6198832446242132219_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMjI1Mng0MDAwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QESf2xdhk4geYYIgzwG6UwYaIGH6F_ixY_nMzUtnKleh8N8ZsXdt0YFS5J-wVlIPjw&_nc_ohc=Hgi80Jg7hP4Q7kNvwEAqv7s&_nc_gid=2e2nODvBe0w7yFgtU5YeNg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc4NjAxNzYyNzk5NjA5NDE4Ng%3D%3D.3-ccb7-5&oh=00_AfuzdIASVTvXxJZb8kmfLL9cjZag6d7Rrbjwv6PPXNSJuw&oe=699AF9D4&_nc_sid=10d13b",
@@ -5920,18 +6184,18 @@
         "web_viewer/images/d94cfa8b2faa8a27c6126e84dff8f62b.webp",
         "web_viewer/images/fcb1c6714e0dfc4cb18afdd27649bdc3.webp"
       ],
-      "code": "DSKovq7Etdo",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DSKovq7Etdo",
       "user": "art_director_teddy",
       "timestamp": "2025-12-12 23:08:14",
-      "is_merged_thread": true,
       "original_item_count": 3,
-      "is_detail_collected": true,
       "platform_sequence_id": 245
     },
     {
-      "sequence_id": 303,
+      "sequence_id": 313,
       "sns_platform": "threads",
+      "code": "DSLtNP8Em2v",
       "full_text": "요즘 AI로 글쓰는 방법입니다.\n\n개발자 분들은 대충알아보실것같습니다.\n오늘은 로컬에서 옆에 옵시디언 기반 작업인데\n\n룰MD랑 스킬스 연계해 문체지정하고\n서브에이전트로 관리시키고\n\n대충 정리하면\n코덱스 GPT 5.2에서 초안 생성\n클로드코드 자료조사및 분석\nGEMIN CLI로 총합관리 및 비교분석\n이렇게쓰고있긴 합니다.\n\n이걸 알려주자니 너무 해야하는게 많고\n내가하는게 맞는건지도 모르곘다.\n그냥 편해서 마구잡이로 쓰고있기도하거든요\n\nAI시대 글쟁이는 이렇게쓰고 있습니다.\n초안 10개 생성시키고 1차 분류 퇴고 시키고\n중간보고서 만들어오면 체킹만하고 수정시키고\n\n다시또 퇴고하고 반복합니다.\n이렇게쓰는사람 없을것같아.",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/590414902_17886668484406917_2445269179514019556_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTc0OXg5ODMuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QGpCDkVmQZi9zWCRv6EaBC2K0SjxukAQVMalQZfYwBvP8lLsWKenOpUialOaCdBCig&_nc_ohc=LRTwHbi3LmUQ7kNvwFBNBBU&_nc_gid=WgNVZFs3phyKyfcRCAYSBA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc4NjMxODcyOTcxNTAwNTAyNg%3D%3D.3-ccb7-5&oh=00_AfvAMiub-wjFahifY2f2Em6EBk4MUcD37P3OqiVh1Vr2HQ&oe=699AE62C&_nc_sid=10d13b"
@@ -5940,18 +6204,18 @@
       "local_images": [
         "web_viewer/images/e57466188cd19a74558b828a3f2722d8.jpg"
       ],
-      "code": "DSLtNP8Em2v",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DSLtNP8Em2v",
       "user": "specal1849",
       "timestamp": "2025-12-13 09:06:28",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 246
     },
     {
-      "sequence_id": 304,
+      "sequence_id": 314,
       "sns_platform": "threads",
+      "code": "DRtU-J0E3MU",
       "full_text": "사업계획서 슬라이드의 승자 notebookLM\n\nIR 피치덱 발표할 일 있으면 notebookLM 꼭 써라\ngenspark, claude, gemini, gpt 다 써봤는데\nnotebookLM 이 IR pitchdeck 일황임.\n\nNotebookLM 잘쓰기 위한 익힌 팁은\n\n---\n\n1. 먼저 사업계획서와 브랜드 톤앤매너 서류를 만듦.\n2. 사업계획서를 제미나이에 넣고, 슬라이드 10장 (또는 원하는 길이의 IR 피치덱 개요)를 짜달라고 함. 프롬프트는 단순하게 아래 처럼 넣음\n이 자료를 바탕으로 10장 내외의 슬라이드를 만들어줘. 이 슬라이드의 목적은 투자자에게 LiA 의 시장성에 대해서 보여주기 위함이야. 맥킨지, BCG의 논리적인 슬라이드 구성을 통해 작성해줘\n3. notebookLM에 프로젝트를 새로 열고, 브랜드 톤앤매너와 새로 만든 피치덱 개요 서류를 넣음 (기존의 사업프로젝트에서 슬라이드를 눌르면 슬라이드가 너무 길게 나옴) \n4. 글자가 아니라 이미지로 주기 때문에 한글 폰트가 깨짐. 이것은 Canva로 해결.",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/588467837_17930766165119620_6665594583944811601_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTgzOXgxMDE5LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QHxx5HqeeFDNi78-zvx8QQoyiGtlkK6glyRqgkD5LS_FJR-6zVUPkqQ-ovNAqrR8_4&_nc_ohc=kRLWes7-ch4Q7kNvwFAu4qG&_nc_gid=v_35stpVZpvE-sxRa8FlPw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc3Nzc2Nzg4ODI4NDQ4NzMwNA%3D%3D.3-ccb7-5&oh=00_AftzSGmRBm2RA0U_T8Ag22jRF9aCqDPnJ704LTqRvpC1CA&oe=699B0099&_nc_sid=10d13b",
@@ -5962,17 +6226,16 @@
         "web_viewer/images/a6de611c684d2837cd2a9d252f739b68.jpg",
         "web_viewer/images/b55db55dce6c501253186e3de0e96d7c.jpg"
       ],
-      "code": "DRtU-J0E3MU",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DRtU-J0E3MU",
       "user": "danhovac",
       "timestamp": "2025-12-01 13:57:28",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 247
     },
     {
-      "sequence_id": 305,
+      "sequence_id": 315,
       "platform_id": "2021555296951513414",
       "sns_platform": "x",
       "username": "aiwithmayank",
@@ -5993,7 +6256,7 @@
       "platform_sequence_id": 1
     },
     {
-      "sequence_id": 306,
+      "sequence_id": 316,
       "platform_id": "2021244380607123492",
       "sns_platform": "x",
       "username": "oliviscusAI",
@@ -6016,7 +6279,7 @@
       "platform_sequence_id": 2
     },
     {
-      "sequence_id": 307,
+      "sequence_id": 317,
       "platform_id": "2021563581637300730",
       "sns_platform": "x",
       "username": "godofprompt",
@@ -6038,7 +6301,7 @@
       "platform_sequence_id": 3
     },
     {
-      "sequence_id": 308,
+      "sequence_id": 318,
       "platform_id": "2021214042258374964",
       "sns_platform": "x",
       "username": "lucas_flatwhite",
@@ -6060,7 +6323,7 @@
       "platform_sequence_id": 4
     },
     {
-      "sequence_id": 309,
+      "sequence_id": 319,
       "platform_id": "2021492537861853558",
       "sns_platform": "x",
       "username": "yozm_it",
@@ -6092,7 +6355,7 @@
       "platform_sequence_id": 5
     },
     {
-      "sequence_id": 310,
+      "sequence_id": 320,
       "platform_id": "2021397989986795983",
       "sns_platform": "x",
       "username": "CurbsideCroaker",
@@ -6109,7 +6372,7 @@
       "platform_sequence_id": 6
     },
     {
-      "sequence_id": 311,
+      "sequence_id": 321,
       "platform_id": "2021179767228354988",
       "sns_platform": "x",
       "username": "aiwithjainam",
@@ -6132,7 +6395,7 @@
       "platform_sequence_id": 7
     },
     {
-      "sequence_id": 312,
+      "sequence_id": 322,
       "platform_id": "2021084481604771937",
       "sns_platform": "x",
       "username": "lucas_flatwhite",
@@ -6157,7 +6420,7 @@
       "platform_sequence_id": 8
     },
     {
-      "sequence_id": 313,
+      "sequence_id": 323,
       "platform_id": "2021428293145329990",
       "sns_platform": "x",
       "username": "KimiProduct",
@@ -6179,7 +6442,7 @@
       "platform_sequence_id": 9
     },
     {
-      "sequence_id": 314,
+      "sequence_id": 324,
       "platform_id": "2020867240753819983",
       "sns_platform": "x",
       "username": "techNmak",
@@ -6201,7 +6464,7 @@
       "platform_sequence_id": 10
     },
     {
-      "sequence_id": 315,
+      "sequence_id": 325,
       "platform_id": "2021517290320130103",
       "sns_platform": "x",
       "username": "Hartdrawss",
@@ -6223,7 +6486,7 @@
       "platform_sequence_id": 11
     },
     {
-      "sequence_id": 316,
+      "sequence_id": 326,
       "platform_id": "2021233357514997824",
       "sns_platform": "x",
       "username": "socialwithaayan",
@@ -6246,7 +6509,7 @@
       "platform_sequence_id": 12
     },
     {
-      "sequence_id": 317,
+      "sequence_id": 327,
       "platform_id": "2021128641917354475",
       "sns_platform": "x",
       "username": "crystalsssup",
@@ -6268,7 +6531,7 @@
       "platform_sequence_id": 13
     },
     {
-      "sequence_id": 318,
+      "sequence_id": 328,
       "platform_id": "2019947921823944778",
       "sns_platform": "x",
       "username": "emilylambert",
@@ -6290,7 +6553,7 @@
       "platform_sequence_id": 14
     },
     {
-      "sequence_id": 319,
+      "sequence_id": 329,
       "platform_id": "2020286419051393451",
       "sns_platform": "x",
       "username": "ohmahahm",
@@ -6307,7 +6570,7 @@
       "platform_sequence_id": 15
     },
     {
-      "sequence_id": 320,
+      "sequence_id": 330,
       "platform_id": "2020450735918284843",
       "sns_platform": "x",
       "username": "lucas_flatwhite",
@@ -6329,7 +6592,7 @@
       "platform_sequence_id": 16
     },
     {
-      "sequence_id": 321,
+      "sequence_id": 331,
       "platform_id": "2020310874033123592",
       "sns_platform": "x",
       "username": "gimhyeo02389130",
@@ -6351,7 +6614,7 @@
       "platform_sequence_id": 17
     },
     {
-      "sequence_id": 322,
+      "sequence_id": 332,
       "platform_id": "2020257771464093965",
       "sns_platform": "x",
       "username": "block_atom",
@@ -6373,7 +6636,7 @@
       "platform_sequence_id": 18
     },
     {
-      "sequence_id": 323,
+      "sequence_id": 333,
       "platform_id": "2020043830725431346",
       "sns_platform": "x",
       "username": "alex_prompter",
@@ -6395,7 +6658,7 @@
       "platform_sequence_id": 19
     },
     {
-      "sequence_id": 324,
+      "sequence_id": 334,
       "platform_id": "2020288470561038812",
       "sns_platform": "x",
       "username": "godofprompt",
@@ -6417,7 +6680,7 @@
       "platform_sequence_id": 20
     },
     {
-      "sequence_id": 325,
+      "sequence_id": 335,
       "platform_id": "2020151597398126813",
       "sns_platform": "x",
       "username": "lucas_flatwhite",
@@ -6441,7 +6704,7 @@
       "platform_sequence_id": 21
     },
     {
-      "sequence_id": 326,
+      "sequence_id": 336,
       "platform_id": "2020141406707187789",
       "sns_platform": "x",
       "username": "AIPandaX",
@@ -6463,7 +6726,7 @@
       "platform_sequence_id": 22
     },
     {
-      "sequence_id": 327,
+      "sequence_id": 337,
       "platform_id": "2020376809607455055",
       "sns_platform": "x",
       "username": "lucas_flatwhite",
@@ -6489,7 +6752,7 @@
       "platform_sequence_id": 23
     },
     {
-      "sequence_id": 328,
+      "sequence_id": 338,
       "platform_id": "2020328486729089356",
       "sns_platform": "x",
       "username": "block_atom",
@@ -6511,7 +6774,7 @@
       "platform_sequence_id": 24
     },
     {
-      "sequence_id": 329,
+      "sequence_id": 339,
       "platform_id": "2019786645348962433",
       "sns_platform": "x",
       "username": "vivoplt",
@@ -6528,7 +6791,7 @@
       "platform_sequence_id": 25
     },
     {
-      "sequence_id": 330,
+      "sequence_id": 340,
       "platform_id": "2020150460762714423",
       "sns_platform": "x",
       "username": "DataChaz",
@@ -6550,7 +6813,7 @@
       "platform_sequence_id": 26
     },
     {
-      "sequence_id": 331,
+      "sequence_id": 341,
       "platform_id": "2019961532906615146",
       "sns_platform": "x",
       "username": "lucas_flatwhite",
@@ -6572,7 +6835,7 @@
       "platform_sequence_id": 27
     },
     {
-      "sequence_id": 332,
+      "sequence_id": 342,
       "platform_id": "2019336388819448139",
       "sns_platform": "x",
       "username": "GMB_Coinangel",
@@ -6600,7 +6863,7 @@
       "platform_sequence_id": 28
     },
     {
-      "sequence_id": 333,
+      "sequence_id": 343,
       "platform_id": "2018987561604268442",
       "sns_platform": "x",
       "username": "Banbo_Insight",
@@ -6623,7 +6886,7 @@
       "platform_sequence_id": 29
     },
     {
-      "sequence_id": 334,
+      "sequence_id": 344,
       "platform_id": "2015913055285375415",
       "sns_platform": "x",
       "username": "jaehwa",
@@ -6640,7 +6903,7 @@
       "platform_sequence_id": 30
     },
     {
-      "sequence_id": 335,
+      "sequence_id": 345,
       "platform_id": "2013558837962514741",
       "sns_platform": "x",
       "username": "crystalsssup",
@@ -6662,7 +6925,7 @@
       "platform_sequence_id": 31
     },
     {
-      "sequence_id": 336,
+      "sequence_id": 346,
       "platform_id": "2013044625238339994",
       "sns_platform": "x",
       "username": "dotey",
@@ -6689,7 +6952,7 @@
       "platform_sequence_id": 32
     },
     {
-      "sequence_id": 337,
+      "sequence_id": 347,
       "platform_id": "2001386676153729456",
       "sns_platform": "x",
       "username": "AIBopyo",
@@ -6713,7 +6976,7 @@
       "platform_sequence_id": 33
     },
     {
-      "sequence_id": 338,
+      "sequence_id": 348,
       "platform_id": "1994363245512241167",
       "sns_platform": "x",
       "username": "aiwithjainam",
@@ -6740,8 +7003,9 @@
       "platform_sequence_id": 34
     },
     {
-      "sequence_id": 339,
+      "sequence_id": 349,
       "sns_platform": "threads",
+      "code": "DUot0hMCo5E",
       "full_text": "와우.. Excalidraw의 공식 MCP는 못참지\n\n이건 진짜 유용합니다. 아키텍처 설계나 흐름도 작성이 잦은 엔지니어라면 무조건 써봐야 할 기능입니다. 이제 하나 하나 그릴 필요가 없습니다. 발표 준비가 더 빨라지겠어요.\n\n---\n\n링크: https://github.com/excalidraw/excalidraw-mcp\n\n---\n\n너무 좋잔아 ..\n\n---\n\n<사용 방법>\n\n혹시 어려워하실 분들을 위해 가장 쉬운 방법 공유해드립니다.\n\nSettings → Connectors → Add custom connector 에서 Excalidraw MCP 서버 URL을 추가하면 됩니다.\n\nURL: https://excalidraw-mcp-app.vercel.app/mcp < 이름은 excalidraw로 URL은 이거 넣어주시면 됩니다.",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/631001921_1587296159258047_7386186590747304420_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDUyOC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuY2FuYXJ5In0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QFCUd8tXp11JinZjp7CO2gDg9TTpA12GttnpFE6FpJ4iXHgNUiNz5O-4EfHIoR62YM&_nc_ohc=d4DQdlLBmb4Q7kNvwGSBEE-&_nc_gid=7UVMmMISaKqBJK_wkLSz0Q&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMDUxMzAwNDIxOTg5NTM2NA%3D%3D.3-ccb7-5&oh=00_AftJuzQaHR-1IH3259j-65xXzMK36LufO3Wql0ze2GrgPw&oe=699AE28D&_nc_sid=10d13b",
@@ -6754,18 +7018,18 @@
         "web_viewer/images/7a3fb8359446390999570e7beb9fe0b2.jpg",
         "web_viewer/images/c8e73b8170a20237d8e6d05e70c3e57e.jpg"
       ],
-      "code": "DUot0hMCo5E",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUot0hMCo5E",
       "user": "aicoffeechat",
       "timestamp": "2026-02-12 08:34:18",
-      "is_merged_thread": true,
       "original_item_count": 4,
-      "is_detail_collected": true,
       "platform_sequence_id": 248
     },
     {
-      "sequence_id": 340,
+      "sequence_id": 350,
       "sns_platform": "threads",
+      "code": "DUkNdK9EXKM",
       "full_text": "대시보드 만들어두니 좋은점\n\n김비서 (main) 가 자꾸 일 할당을 안하고 혼자 해먹는걸 알았다.\n김비서는 opus 4.6인데 자꾸 이러면 토큰이 낭비된다.\n혼자하지말고 일꾼들 시키라고 했다.",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/628718153_17941659786115457_9019576756874506521_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMjE2MHgxMjE3LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QGLbYdzGvOvP3iw2-7ODksBt-5KyQVIMhmFzz97UQjx7AIn2aHYFZOUzmt9OqPfwfQ&_nc_ohc=NKFlDtSv-bgQ7kNvwF9Rze1&_nc_gid=nYtL93_CIo31_4X25Z4t1A&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyOTI0NDc2MjQwMzIwNTc3Mg%3D%3D.3-ccb7-5&oh=00_AfunDOutzKpSlv4yDSdpK3VflKIxc3upO7l7PlpZTbtQFA&oe=699B0769&_nc_sid=10d13b"
@@ -6774,17 +7038,16 @@
       "local_images": [
         "web_viewer/images/a08db8b356d0fcb6c9541b71d4beccb9.jpg"
       ],
-      "code": "DUkNdK9EXKM",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUkNdK9EXKM",
       "user": "lazylittleyoyo",
       "timestamp": "2026-02-10 14:32:49",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 249
     },
     {
-      "sequence_id": 341,
+      "sequence_id": 351,
       "platform_id": "7427778582690840578",
       "sns_platform": "linkedin",
       "username": "ACoAAEYsARgBdQazrHf4u7lcZ1nlSjTNE7YbpOs",
@@ -6804,7 +7067,7 @@
       "platform_sequence_id": 182
     },
     {
-      "sequence_id": 342,
+      "sequence_id": 352,
       "platform_id": "7428551113521491968",
       "sns_platform": "linkedin",
       "username": "ACoAACY7KJQBDtSTk6IuIwZY6ntBGJx1fCYwsYI",
@@ -6824,7 +7087,7 @@
       "platform_sequence_id": 183
     },
     {
-      "sequence_id": 343,
+      "sequence_id": 353,
       "platform_id": "7428729561946722304",
       "sns_platform": "linkedin",
       "username": "ACoAACkadIABsYoadkJXuZXMASkhnSFeoK_nVw8",
@@ -6848,7 +7111,7 @@
       "platform_sequence_id": 184
     },
     {
-      "sequence_id": 344,
+      "sequence_id": 354,
       "platform_id": "7424265453209944066",
       "sns_platform": "linkedin",
       "username": "ACoAAFXp_tAB9KfRR6cuT_qSmNYe6uWR3YxaQ1s",
@@ -6872,7 +7135,7 @@
       "platform_sequence_id": 185
     },
     {
-      "sequence_id": 345,
+      "sequence_id": 355,
       "platform_id": "7427196319485685760",
       "sns_platform": "linkedin",
       "username": "ACoAABvoSXEBZ4qABmKwmi_EijMOiMLBOxSTviI",
@@ -6896,7 +7159,7 @@
       "platform_sequence_id": 186
     },
     {
-      "sequence_id": 346,
+      "sequence_id": 356,
       "platform_id": "7426970529548529664",
       "sns_platform": "linkedin",
       "username": "ACoAAD4jLLcBU0E95x5eLryYMQcOHAnXnKOlyuw",
@@ -6916,7 +7179,7 @@
       "platform_sequence_id": 187
     },
     {
-      "sequence_id": 347,
+      "sequence_id": 357,
       "platform_id": "7427708018441773056",
       "sns_platform": "linkedin",
       "username": "ACoAAAwBOVMBDI50rE9wyD4tsMaGWkV-85Sqd50",
@@ -6940,7 +7203,7 @@
       "platform_sequence_id": 188
     },
     {
-      "sequence_id": 348,
+      "sequence_id": 358,
       "platform_id": "7425005536108240896",
       "sns_platform": "linkedin",
       "username": "ACoAAD-aYCUBxsQooHHR8g4wG-VT538LFjrZFXQ",
@@ -6964,7 +7227,7 @@
       "platform_sequence_id": 189
     },
     {
-      "sequence_id": 349,
+      "sequence_id": 359,
       "platform_id": "7428056331263156224",
       "sns_platform": "linkedin",
       "username": "ACoAACN_JX4B-f4ZJlnzUncBpSKp5IVAmXK7Phk",
@@ -6988,7 +7251,7 @@
       "platform_sequence_id": 190
     },
     {
-      "sequence_id": 350,
+      "sequence_id": 360,
       "platform_id": "7428988252277342208",
       "sns_platform": "linkedin",
       "username": "ACoAAEZgjlMBEo7yljmZELjtwzKCl4cBuEaG7ok",
@@ -7012,7 +7275,7 @@
       "platform_sequence_id": 191
     },
     {
-      "sequence_id": 351,
+      "sequence_id": 361,
       "platform_id": "7427519628668649474",
       "sns_platform": "linkedin",
       "username": "ACoAAEYsARgBdQazrHf4u7lcZ1nlSjTNE7YbpOs",
@@ -7036,7 +7299,7 @@
       "platform_sequence_id": 192
     },
     {
-      "sequence_id": 352,
+      "sequence_id": 362,
       "platform_id": "7426118967829860352",
       "sns_platform": "linkedin",
       "username": "ACoAAA9A2DMBXT5LOedFG7EUcfaMcdwCJtcwDe0",
@@ -7056,7 +7319,7 @@
       "platform_sequence_id": 193
     },
     {
-      "sequence_id": 353,
+      "sequence_id": 363,
       "platform_id": "7427900362558394368",
       "sns_platform": "linkedin",
       "username": "ACoAAAwBOVMBDI50rE9wyD4tsMaGWkV-85Sqd50",
@@ -7080,7 +7343,7 @@
       "platform_sequence_id": 194
     },
     {
-      "sequence_id": 354,
+      "sequence_id": 364,
       "platform_id": "2023098099590467672",
       "sns_platform": "x",
       "username": "Marryclaire_AI",
@@ -7103,7 +7366,7 @@
       "platform_sequence_id": 35
     },
     {
-      "sequence_id": 355,
+      "sequence_id": 365,
       "platform_id": "2022820131848815100",
       "sns_platform": "x",
       "username": "lucas_flatwhite",
@@ -7131,7 +7394,7 @@
       "platform_sequence_id": 36
     },
     {
-      "sequence_id": 356,
+      "sequence_id": 366,
       "platform_id": "2023170161117983217",
       "sns_platform": "x",
       "username": "yeoulabba",
@@ -7150,7 +7413,7 @@
       "platform_sequence_id": 37
     },
     {
-      "sequence_id": 357,
+      "sequence_id": 367,
       "platform_id": "2022307265773031472",
       "sns_platform": "x",
       "username": "0xCrocy",
@@ -7172,7 +7435,7 @@
       "platform_sequence_id": 38
     },
     {
-      "sequence_id": 358,
+      "sequence_id": 368,
       "platform_id": "2022252256247095615",
       "sns_platform": "x",
       "username": "Star_Knight12",
@@ -7194,7 +7457,7 @@
       "platform_sequence_id": 39
     },
     {
-      "sequence_id": 359,
+      "sequence_id": 369,
       "platform_id": "2022243294349320283",
       "sns_platform": "x",
       "username": "ChrisLaubAI",
@@ -7216,7 +7479,7 @@
       "platform_sequence_id": 40
     },
     {
-      "sequence_id": 360,
+      "sequence_id": 370,
       "platform_id": "2021791345162301752",
       "sns_platform": "x",
       "username": "Gonnector",
@@ -7244,7 +7507,7 @@
       "platform_sequence_id": 41
     },
     {
-      "sequence_id": 361,
+      "sequence_id": 371,
       "platform_id": "2022204980548243627",
       "sns_platform": "x",
       "username": "golbin",
@@ -7261,8 +7524,9 @@
       "platform_sequence_id": 42
     },
     {
-      "sequence_id": 362,
+      "sequence_id": 372,
       "sns_platform": "threads",
+      "code": "DU2rWMwEawl",
       "full_text": "클로드 코드 처음 써본 PM의 후기 2\n\n1. 클로드 코드 이야기는 많이 들었지만, ai에 대한 이야기도 많이 들었지만, 늘 \"해야지\"라고만 생각하고 있었습니다. 어차피 업무에서 당장 쓰지도 못하는데? 라는 합리화도 있었던 것 같습니다.\n\n2. 연휴에 뭐라도 해봐야지라는 마음으로 시도했다가 4시간 순삭. 그 이후 계속 어딘가를 붕붕 떠다니는 느낌에 휩싸였는데요. 인생에서 이런 기분을 느껴본 적이 몇번 있었던듯 합니다. 처음 영상을 만들었던날, 처음 아이폰을 샀던 날, 친구들과 처음 소학회를 만들었던 시기 등이요.\n\n3. AI에 대한 막연한 두려움이 있었습니다. 나보다 꼼꼼하게 기획서도, 유저스토리도 잘 쓰는 녀석. 제 꿈은 70대에도 이 일을 하는 것이었는데, 어쩌면 어려울지도 모른다는 막연한 불안감과 자조가 있었습니다.\n\n4. 클로드와 함께하는 스프린트 1을 끝내고, 회고를 하고 피드백을 받는데.. 클로드 에이전트들이 한 피드백이 마치 저희 스쿼드원들이 했을법한 내용이더라고요.\n\n---\n\n5. 업무에 대해서 가지고 있는 몇가지 사소한 철학이 있는데, 그중 하나가 바로 '내가 하는 기획이 개발자와 디자이너의 손끝에서 완성된다'는 것을 항상 잊지 않아야 한다는 것입니다. 그런데 이제 그 철학이 무너지는 세상이 온 것 같습니다. 제가 하는 기획이 제 손끝에서 완성될 수도 있을 것 같습니다.\n\n6. po, pm, 기획자를 꿈꾸는 주니어가 있다면, 꼭 써봐야합니다. 회사에 들어가기 전에도 이 업무에 대한 쉐도우 복싱을 엄청나게 할 수 있습니다.\n\n7. 지금 po, pm이나 기획자인 시니어가 있다면, 꼭 써봐야합니다. 클로드 코드와 같이 일하면서 메타인지가 엄청 높아질 수 있습니다. 그리고 대략적으로 알고 있는 개발과 디자인의 영역까지 디테일하게 내려갈 수 있다는 것이 장점입니다. 가지고 있는 스킬에서 부족한 부분이 어디인지 빠르게 알 수 있습니다.\n\n---\n\n8. 사실 10년차가 넘은 지금 업무도 익숙해지고, 조금 아는 것 같고, 오만한 마음이 있었습니다. 성장도 드문드문해진 것 같고.. 그런 저에게 클로드 코드가 상방을 열어준듯 합니다.\n\n9. ai가 언젠가 제 일을 대체하겠죠. 그리고 저도 대체할 겁니다. 그런데 대체하기 전까지 ai가 저를 좀 더 키워줄 수 있다면, 그래서 좀 더 나은 pm이 되고난 다음에 대체될 수 있다면 그것은 어쩌면 나쁘지 않을지도 모르겠습니다.\n\n10. 마치 매트릭스의 빨간약을 먹어버린 것 같은 느낌입니다.",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/634449423_18016453520654223_5614824251219456505_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTA0M3gxMDQzLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QERyw271EypDfT0S3H2V443NmsyUH8AtlZ2uT7Jd79nMgnOQSt_SLmChYIJdXAPsQs&_nc_ohc=3gyWWpWLutwQ7kNvwHx2sHX&_nc_gid=BJGS90ZnXjTiTmknqHvyFg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNDQ0Mjc2OTE1NTMxNTQyNQ%3D%3D.3-ccb7-5&oh=00_Afs84Y6wazbt_FL58ezo5V2pFcPva5KZ-hGzgFIyhe15kw&oe=699AE956&_nc_sid=10d13b",
@@ -7273,18 +7537,18 @@
         "web_viewer/images/651015e657cd915e277afd44a95fa5ae.webp",
         "web_viewer/images/184707efc62e312267eddc69ac9d78b2.webp"
       ],
-      "code": "DU2rWMwEawl",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DU2rWMwEawl",
       "user": "sy.suelee",
       "timestamp": "2026-02-17 18:40:20",
-      "is_merged_thread": true,
       "original_item_count": 3,
-      "is_detail_collected": true,
       "platform_sequence_id": 310
     },
     {
-      "sequence_id": 363,
+      "sequence_id": 373,
       "sns_platform": "threads",
+      "code": "DU1xkwekv_I",
       "full_text": "비개발자 출신의 claude code, gpt codex 학습기. \n\n현재 터미널 창의 2개 띄워놓고 코드를 돌리고 있다. 여기까지 어떻게 왔는지 잘 기억이 안난다. 등산하다 뒤돌아보면 “내가 저길 올라왔다고?” 하는 느낌. 정확히 그거다. \n\n개발자 친구가 터미널(powershell)을 통해 직접 명령하는 법을 학습하라고 해서, 클로드 코드 웹앱이나 codex 앱이 아닌 이 검은 화면에서 작업 중. 여차저차해서 codex와 claude 코드가 작동되게 만들었다. \n\n아직도 git이 뭔지 모르겠고, GitHub는 미로같다. 건설사에서 PM으로 일하며 수천억대 프로젝트도 공정표 보며 메니지먼트 했는데, 이 프로젝트의 코딩 용어들이 너무나도 낯설다. 일단 코박고 해본다.\n\n다음목표 : 터미널 3개 창 띄우기 (뭔지는 모르지만 멋있어 보여서 ㅎ). \n\n스친 중 저같은 코딩 초보들 있나요?",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/631746553_17947769484101213_3040436616636574243_n.jpg?stp=cp6_dst-jpegr_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTkyMHgxNDQwLmhkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QGQa8iyj-cmr19DmizBfI66iM_rjNzJjR9GK5EqqL-HUDqvMlh2ULfl-eIGrUtD-SE&_nc_ohc=YRwAnzTwcgcQ7kNvwGeMro7&_nc_gid=R6_p3pcaAERO-bGwsdEgzg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNDE4ODY4ODAwODYwOTczNg%3D%3D.3-ccb7-5&oh=00_AfsbOdRpxG2z1BQqXunFb550fr3IsAc8V9ZAdeIFU2FNTQ&oe=699AEA21&_nc_sid=10d13b"
@@ -7293,33 +7557,33 @@
       "local_images": [
         "web_viewer/images/287819b3f053e21f55b0e4d50e6fc439.jpg"
       ],
-      "code": "DU1xkwekv_I",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DU1xkwekv_I",
       "user": "chancenote",
       "timestamp": "2026-02-17 10:15:31",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 309
     },
     {
-      "sequence_id": 364,
+      "sequence_id": 374,
       "sns_platform": "threads",
+      "code": "DUxYv3akZBB",
       "full_text": "[무료] 비개발자를 위한 Claude Code 가이드북\n\n무료로 배포해요.\n\n사실 저도 공부하려고 만들었어요.\nClaude Agent Team 기능으로\n만들었고, 퀄리티 나쁘지 않은 것 같아요.\n\n더 좋은 자료 만들 수 있도록\n좋아요랑 팔로우만 좀 부탁해요 히히!\n\nhttps://bevel-boron-05c.notion.site/Claude-Code-A-to-Z-30844a48e2b180f4b178d852db998a80",
       "media": [],
       "crawled_at": "2026-02-18T10:58:16.154",
-      "code": "DUxYv3akZBB",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUxYv3akZBB",
       "user": "gpt_minje",
       "timestamp": "2026-02-15 17:21:37",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 305
     },
     {
-      "sequence_id": 365,
+      "sequence_id": 375,
       "sns_platform": "threads",
+      "code": "DUyVgLBk7NT",
       "full_text": "🧵 65줄 마크다운이 GitHub 4,000스타를 받은 이유\n\nClaude Code, Codex, Cursor 쓸 때 이런 경험있으시죠?\n\n\"시킨 거랑 다른 걸 하네\", \"왜 이렇게 복잡하게짜\",\n\"건드리지 말라는 코드를 왜 건드려\"\n\nKarpathy(테슬라 AI 총괄 출신)가 정확히 이걸짚었고,\n누군가가 해결책을 CLAUDE[.]md 65줄로 만들었습니다. \n\n하루 400스타씩 늘어서 6,000스타 돌파.\n\n---\n\n65줄의 전부는 원칙 4개입니다.\n\n① Think Before Coding — 모르면 추측하지 말고 물어봐\n② Simplicity First — 요청한 것만 만들어. 200줄이 50줄로 되면 다시 써\n③ Surgical Changes — 옆 코드 \"개선\"하지 마. \n변경된 모든 줄이 요청으로 추적 가능해야 함\n④ Goal-Driven Execution — \"버그 고쳐\" 대신 \"버그 재현 테스트 쓰고 통과시켜\"\n\n특히 ④가 핵심 — 명령형 → 선언형 전환. \nLLM은 성공 기준 주면 알아서 루프 돌면서 해결함.\n\n---\n\n냉정한 평가를 내리자면,\n\n4,000스타 = Karpathy 이름값 + 바이럴 타이밍.\n내용 자체는 시니어 개발자면 당연히 아는 것들.\n\n블로그 저자도 직접 써보고 \"효과가 있는지 잘 모르겠다\"고 함.\n\n수백만 달러 학습시킨 모델에 \"Think before coding\" 한 줄이 마법처럼 작동하진 않음. 진짜 효과는 구체적 규칙(tsc 게이트, lint 훅, 타입가드 강제)에서 나옴.\n\n---\n\n그래도 하나는 가져갈 만함 — Goal-Driven Execution.\n\n\"X 만들어\" 대신 \"이 시나리오가 동작하게 해\"로 프롬프팅하면 \nLLM이 스스로 루프 돌면서 검증까지 함.\n\n65줄 전체를 도입할 필요는 없고, \n이 하나만 습관 들이면 됩니다\n\n---\n\n저는 제게 맞는 시스템 프롬프트로 깎아 놨기 때문에 큰 체감은 못했는데, \n시스템 프롬프트 최적화가 안 되어 있으시다면 에이전트에게 먼저 전달해서 확인 해보세요. 내 프로젝트와 맞는지, 프로젝트들이 비슷하다면 전역 스코프로 올려서 전체 적용해달라고 하셔도 좋습니다. 아마 그게 더 최적이겠죠? ㅋㅋ\n\n---\n\nhttps://github.com/forrestchang/andrej-karpathy-skills?tab=readme-ov-file",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/628023790_17930131584207210_7516522336360267089_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMjE2MHgxMzE5LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QEKJ0P2_ju0va2SrXnsqogCo6Vc9skmaLhSaCcA9JjX63Qn-zzx2EayI1i9sSoDbrc&_nc_ohc=aXSDSevG5VsQ7kNvwGgx7yQ&_nc_gid=WrdRVbAwc1ZpQXdkQg65Hg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMzIyMDgwMjY4MzMxOTEyMw%3D%3D.3-ccb7-5&oh=00_AftFe0thAMhT9ylb0DGPFoaJ8ZilQAtK9o2ZDGI3rv2Udw&oe=699AF11A&_nc_sid=10d13b",
@@ -7330,18 +7594,18 @@
         "web_viewer/images/e0efe49b3c002232c10891437ee21f65.jpg",
         "web_viewer/images/6949a7462aca4430672d8017a60ae6cf.jpg"
       ],
-      "code": "DUyVgLBk7NT",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUyVgLBk7NT",
       "user": "unclejobs.ai",
       "timestamp": "2026-02-16 02:12:30",
-      "is_merged_thread": true,
       "original_item_count": 6,
-      "is_detail_collected": true,
       "platform_sequence_id": 306
     },
     {
-      "sequence_id": 366,
+      "sequence_id": 376,
       "sns_platform": "threads",
+      "code": "DUzX75SEoeg",
       "full_text": "📍\"너무 일이 많아져서 직원 15명 채용했습니다.\"\n\n그런데 급여는 0원입니다.\n\n왜냐하면 AI직원으로 가상의 조직을 만들었고,\n각 팀별 R&R을 명시하고 업무를 시키고 있으니까요\n\n조금 이따 팀원들 업무가 끝나면,\n팀장들만 따로 모여서 주간회의 진행할거에요.\n\n성과 떨어진 직원은 저랑 좀이따 \n진지하게 면담 예정.😂\n\n---\n\nㅎㅎ AI와 공존해야쥬",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/631892973_17934642351179379_7424259786779161548_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uODAzeDE1NTEuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QFo5A_9-RSia4InO8XP0Osmnbw6XvhUglF6XdRhTvadJhRPfasPnIMiVSCcs-uHalk&_nc_ohc=zIvWR5GEgf8Q7kNvwHXnkCD&_nc_gid=ChENIT_g0Bm8dqMzEA7ztg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMzUxMjk3MzM4Njc4MTY3NA%3D%3D.3-ccb7-5&oh=00_AfthQkQVuAiEPU5WbIzrEMlU_qn_rVxneeIsglZhlDyDWw&oe=699B04D0&_nc_sid=10d13b"
@@ -7350,18 +7614,18 @@
       "local_images": [
         "web_viewer/images/e703d318add36a7841f262c1ed08180c.jpg"
       ],
-      "code": "DUzX75SEoeg",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUzX75SEoeg",
       "user": "skluzy_zetech",
       "timestamp": "2026-02-16 11:53:00",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 307
     },
     {
-      "sequence_id": 367,
+      "sequence_id": 377,
       "sns_platform": "threads",
+      "code": "DUy-OrTE1c5",
       "full_text": "이제는 figma의 시대는 막을 내렸습니다. 대신 Storybook과 Claude 의 조합을 사용하세요. Storybook에서 Design System을 만들고 (적어도 3벌), 이를 실제 사이트에 적용하는 프로세스를 만들어야 합니다. 영문과 한글의 조화, 실제 버튼의 등장 형태, 가독성 이슈, 전반적인 Color Tone & mood, Brand의 방향성 등을 Storybook에서 충분히 검토하고 나면, 이를 진짜 '딸깍' 단계로 넘어가서 바로 본인의 사이트에 적용이 가능하게 만드는 것이 생산성 폭발의 기본입니다.\n\n---\n\n이 프로세스를 구축하려면, Tailwind CSS 4 버전을 설치하고, storybook 도 설치하세요. 저는 React + Vite + typescript + Storybook + Tailwind CSS 설치를 하고 사용 중인데요. 이 조합이 Starter Kit이라고 할 수 있겠네요. (스타터 킷 치고는 요란하죠?) 그런데 이 조합은 google AI Studio를 사용하면서 배운 조합이고요. \n\n인공지능이 선호하는 조합인 듯 해요. 그래서 인간이 배워서 함께 작업해야 한답니다. 인공지능에게 배울 것은 빨리 배워야죠.\n\n---\n\n지금 당장 해 볼 수 있도록 시스템 세팅을 공유합니다.\n\n1단계: 기반 환경 설치 (Node.js & npm)\n가장 먼저 시스템에 Node.js를 설치해야 합니다. Node.js를 설치하면 패키지 매니저인 npm이 함께 설치됩니다.\n\n2단계: 프로젝트 생성 및 핵심 도구 설치 (Vite, React, TypeScript)\n# 프로젝트 생성 (Vite, React, TypeScript 포함)\nnpm create vite@latest 프로젝트명 -- --template react-ts\n\n# 프로젝트 폴더로 이동 후 기본 패키지 설치\ncd 프로젝트명\nnpm install\n\n---\n\n3단계: 스타일링 도구 설치 (Tailwind CSS)\n# Tailwind CSS 및 관련 의존성 설치\nnpm install -D tailwindcss postcss autoprefixer\n\n# Tailwind 설정 파일 생성\nnpx tailwindcss init -p\n\n4단계: 컴포넌트 개발 도구 설치 (Storybook)\n# Storybook 초기화 및 설치\nnpx storybook@latest init\n\n이 과정을 마치면 Antigravity와 Claude를 통한 웹사이트 개발 기본 환경이 갖춰지게 됩니다.",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/629760101_917702887858657_8777237342813580627_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uNjQweDI3OC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QGO1cz1QcfDa2eUNuWX4GhfnxnbYkeBtuuqHNE-5rkJRF7WZJIUmoGPADx7ciFmA08&_nc_ohc=IWiDJ4gCx6UQ7kNvwG6Le2J&_nc_gid=d9U0nspwXtdSCldrDpjjcA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMzM5OTkxMjk0NDYyOTk5Nw%3D%3D.3-ccb7-5&oh=00_AftSSULMV6MxjSX7Nwwg82iDApJRFzTZd5P_0IytrvuFtQ&oe=699B07F6&_nc_sid=10d13b"
@@ -7370,18 +7634,18 @@
       "local_images": [
         "web_viewer/images/3078e65a93e5b6e511fa1fb14ddbe746.jpg"
       ],
-      "code": "DUy-OrTE1c5",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUy-OrTE1c5",
       "user": "06am_draw",
       "timestamp": "2026-02-16 08:08:22",
-      "is_merged_thread": true,
       "original_item_count": 4,
-      "is_detail_collected": true,
       "platform_sequence_id": 308
     },
     {
-      "sequence_id": 368,
+      "sequence_id": 378,
       "sns_platform": "threads",
+      "code": "DUw7gZViZs2",
       "full_text": "앤스로픽(Anthropic)이 '스킬(Skills)' 구축에 관한 33페이지 분량의 가이드를 공개했습니다.\n\nhttps://resources.anthropic.com/hubfs/The-Complete-Guide-to-Building-Skill-for-Claude.pdf",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t39.30808-6/635960149_26246903004945669_8245760383230723173_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTEyNXg4MzIuc2RyLmYzMDgwOC5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QFyFRVp-bS8f1XloFxdM8TAVeGdnXIWMaMYxIns9-KHw_2_1bgOx1m9VlqIblNK67o&_nc_ohc=pYzOAwsn5EwQ7kNvwF4EKZc&_nc_gid=wCQhDj2hZTdS-H2yFWrEKA&edm=APs17CUAAAAA&ccb=7-5&ig_cache_key=MzgzMjgyNDk5Mzg2NDU4ODA4Ng%3D%3D.3-ccb7-5&oh=00_AfvxHECwVrDXgUPOTgtizeB9wRPxqTnyuMoLf1I74axViQ&oe=699AD645&_nc_sid=10d13b"
@@ -7390,18 +7654,18 @@
       "local_images": [
         "web_viewer/images/f0cad09e15e1a03ecea6c545d7282e6d.jpg"
       ],
-      "code": "DUw7gZViZs2",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUw7gZViZs2",
       "user": "lets.anthony.kim",
       "timestamp": "2026-02-15 13:06:06",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 303
     },
     {
-      "sequence_id": 369,
+      "sequence_id": 379,
       "sns_platform": "threads",
+      "code": "DUwqNwDEXhp",
       "full_text": "[AI전문강사가 알려주는 PRO 뽕뽑아내기]\n\n카카오로산 Chat gpt pro글을 좋아하는 분들이 많더군요\n이 전글에선 문서를 만들어 봤으니 \n이제 진짜 활용을 해보자구요\n\n할수있는거 다해봤습니다.프롬프트 요청하는분들도\n있길래 덤으로 좀 깍아 포함시켜 왔습니다.\n\n1.펙트체크용도의 엑셀 데이터생성\n2.기본 데이터분석+피벗테이블이 들어간 엑셀 \n2.회사 소개용도의 피치덱\n3.DOCX와 PDF를 생성\n4.PPTX를 생성까지 다되긴합니다.\n\n[프롬프트가 장문이라 따로 다 포함해뒀습니다.]\n\n---\n\n우선 제가선호하는 방식은 아니지만\n에이전틱 워크플로우에 역할지정을 쓰는게 좀편합니다.\n\n기본적으로 언어나 톤 주제로 페르소나를잡고\n\n세세한리서치 규칙을 지정한 프롬프트죠\n\n마지막에 품질기준과 산출물로 지정해논 녀석이라 꽤나 괜찮습니다.\n\n뭐... DOCX문서는 첫영상에 있으니 생략했슴다.\n\n---\n\n공용으로 설계된 펙트체크 용도입니다.\n\nPDF나 자료를넣어주게되면 그게 3가지로 나눠서 자료를 조사하는녀석이죠\n\n전체요약 틀린내용분석 인터넷자료와비교 \n최신자료 등등을 가져오게해뒀어요\n\n---\n\n제가 사용하기 위해 만든거라 금액적요소가 들어가있습니다.\n\n적당히 수정하시면 됨디ㅏ.\n\n---\n\n워크북용 엑셀시트입니다.\n가중치계산 시트출력등 나름 괜찮게나와요\n\n완벽하다 하긴어렵지만 이정도면 쓸만하긴함다\n피벗차트 초안까지 나오니 나름 던지고 자면 괜찮겠네요\n\n나름 코드를 짜서하긴하는데 100점이란 못하겠지만\n초안용도로 굴려두고 일어나서 보긴쓸만합니다.\n\n[저도압니다. 클로드코드나 CODEX로하는게 더좋은거 그거못쓰는 사람들을 위한거니 이해좀 부탁]\n\n---\n\n프롬프트입니다. 나름 쓸만하죠?\n\n---\n\n이건 다음주에 OPGG강의를 가야해서 한번 테스트해봤습니다.\n\n음... 나쁜건 아닌데 말이지 40점선 PPT써보긴하세요\n다만그냥 젠스파크 미리캔버스 같은 상용서비스 쓰세요\n\n60분이나 투자할 이유자체가없어요\n그래서 이건 그냥 누락시켰습니다.\n\n걍 PDF만들라하면 적당히 만들긴하는데 만족스럽진않네\n\n---\n\n그래서 조금더 프롬프트를 깍은 결과물입니다.\n애매해요... 이건 다른서비스씁니다.\n\n---\n\nPPTX용 파일 생성용 프롬프트임다.\n\n---\n\n다해서 4시간정도 걸리긴했는데\n뭘이런걸 돈받고 팔아...\n\n아 병렬로 돌리지마세요 오류납니다\n[병렬로 돌려서 처음부터 다시함...]\n\n혹시 일있으시면 불러주십셔\n싸진않은데 제대로 알려드림다.\n\n---\n\n기초 데이터 서치법\n\n---\n\nPDF 만들기",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/632465140_1876925679599923_5467647780056670257_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDMyNC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QGLaARBbIuVXMxdUBygi-oc4ylh1ozPOtmWOkrUvknq6Z9UaY6RhYmr4-dU4S624TA&_nc_ohc=QdbyrWehkVEQ7kNvwG2fa50&_nc_gid=P4VGR8PqogSRBRjOkHG8HA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMjc0ODk0NTc5MDA0MDE2OQ%3D%3D.3-ccb7-5&oh=00_AfuIsr8DkN0LIEehybifR46w_9gdAsMnARy_OHmWXhTOrA&oe=699AFDEF&_nc_sid=10d13b",
@@ -7418,19 +7682,19 @@
         "web_viewer/images/743df4ea65feea62e1b8b8268c645821.jpg",
         "web_viewer/images/860614753181a4ebc9cce9283069af6c.jpg"
       ],
-      "code": "DUwqNwDEXhp",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUwqNwDEXhp",
       "user": "specal1849",
       "timestamp": "2026-02-15 10:36:46",
-      "is_merged_thread": true,
       "original_item_count": 12,
-      "is_detail_collected": true,
       "platform_sequence_id": 304
     },
     {
-      "sequence_id": 370,
+      "sequence_id": 380,
       "platform_id": "DUxnMtOEgal",
       "sns_platform": "threads",
+      "code": "DUxnMtOEgal",
       "username": "storyteller_jhk",
       "display_name": "정회권",
       "full_text": "<요즘 인플루언서의 진정한 영향력은 뭘까?>\n\nSNS 시대의 지식 인플들 공통점 있음.\n지식 많아서 아님.\n열심히 해서도 아님.\n\n\"해석\"을 선점했기 때문임.\n이게 뭔 말이냐?",
@@ -7445,6 +7709,7 @@
       "local_images": [
         "web_viewer/images/2c002bcf2132dc5aeb0c94cc32d1379d.jpg"
       ],
+      "is_merged_thread": false,
       "root_code": "DUxnMtOEgal",
       "like_count": 784,
       "reply_count": 238,
@@ -7453,13 +7718,12 @@
       "pk": "3833017154871101093",
       "media_type": 1,
       "content_type": "image",
-      "code": "DUxnMtOEgal",
-      "is_merged_thread": false,
       "platform_sequence_id": 301
     },
     {
-      "sequence_id": 371,
+      "sequence_id": 381,
       "sns_platform": "threads",
+      "code": "DUyE2OliQra",
       "full_text": "바이브 코딩을 배우려면 책을 사야하나..?\n일단 GPT pro 보고 만들어달라고 해봤다.\n\n한참을 고민하더니 151페이지짜리 PDF를 만들어서 던져주네.\n이젠 이런 가이드북도 스스로 만들어버리는 세상이 되어버림.",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/635111813_17943332286113304_6908781777218075870_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTM4Mng3MjQuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QHA9BZa_kcMuELAAmTPADkRduzVj2JHav0HVVWNz0sj95p35K_e0Wt18P5f8_tSA5Y&_nc_ohc=n8eN2k96fUgQ7kNvwEbHEv8&_nc_gid=808GhFAXM7UDtkecLsSJ-A&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMzE0NzQ5NjMyMzQ3NDgzNA%3D%3D.3-ccb7-5&oh=00_AfsR9qA3qsj51dOt1MwQ7DkkscLdJLirNbH4glSmJeoRCA&oe=699B0D88&_nc_sid=10d13b"
@@ -7468,18 +7732,18 @@
       "local_images": [
         "web_viewer/images/0b82686fe222c0776ceb44ebf4d58e0d.jpg"
       ],
-      "code": "DUyE2OliQra",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUyE2OliQra",
       "user": "tawoe",
       "timestamp": "2026-02-15 23:46:58",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 302
     },
     {
-      "sequence_id": 372,
+      "sequence_id": 382,
       "sns_platform": "threads",
+      "code": "DUuTgS-kcfR",
       "full_text": "[AI전문강사악 알려주는 PRO 뽕뽑아내기]\n\n카카오 대란으로 Chat gpt pro산 분들을 위한글\n비싼돈주고 PRO 산거 뽕 뽑아야죠?\n\ngpt pro는요 프롬프트랑 도구를 잘입력하면\n캔바랑 피그마 어도비써서 이런걸 만들어옵니다.\n\n60장짜리 pdf도 잘만들어와요...\n프롬프트와 방법은 아래모두 적어뒀습니다.\n\n[하는법 배워봅시다]\n\n---\n\n보아라 69페이지짜리 pdf나\n도표배치 이런걸 다설정할수있어요\n\n우선 이런게 결과물이니 세팅하는법 부터배워봅시다.\n\n---\n\n핵심은 단순합니다 툴콜이라는 개념을이해해야하는데\n뭐 복잡하니 간단하게 앱가져다 쓰게 만들면되요\n\n아래쪽에 세팅된거 보이시죠? 저걸 어떻게 세팅하는지 배워봅시다.\n\n---\n\n앱을누르면 뜨는창인데 이중에 깔아야하는건을누르면 뜨는창인데 이중에 깔아야하는건\n\n생산성으로 가셔서 쫙다 까세요 \nfigma 검색하면 뜨니까 그것도 까시면됩니다.\n\n---\n\n1.앱 클릭하면 이렇게 뜨니까\n2. 연결하기-계속\n3.구글계정으로 로그인하시면 됨다.\n\n전부다 까셨으면 다음으로 넘어갑시다.\n\n---\n\n/를 누르시면 이것저것 뜨는데 뭐 어렵게 생각하실필요없이\n하나씩 추가하세요\n\n물론 추가안해도 끌어다 쓸수있긴한데 그냥 다추가하는게 맘편합니다.\n아니면 가끔누락나\n\n---\n\n이런 프롬프트를 입력하시면 30분~1시간정도 걸려만들어옵니다.\n\n---\n\n빡시게 괴롭히면 1시간도 괴롭힐수있습죠 후후 \n\npro는 똑똑하다구",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/634747731_738243105823537_9200306253117375690_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDMyNC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QEQR1Mtr3SKyxYvBG5OGOWqns_5MytvkYxWLkGXAO3FAxsmPIOCC79n8FlfqvcrWyg&_nc_ohc=bQE1n7EVAW0Q7kNvwGobep7&_nc_gid=xUVFEvvuJ05VMiQPwscwog&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMjA4NjExNTIyMjkzMTQwOQ%3D%3D.3-ccb7-5&oh=00_AfuHg60adeGxnjEzJlxT3YwbnHFFbifS25BW8Dh7SL1UfA&oe=699AF69B&_nc_sid=10d13b",
@@ -7500,18 +7764,18 @@
         "web_viewer/images/8d6eefd9e0d9242c8280dd05584aaea7.jpg",
         "web_viewer/images/6f4d8477574faddfd57253984779da29.jpg"
       ],
-      "code": "DUuTgS-kcfR",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUuTgS-kcfR",
       "user": "specal1849",
       "timestamp": "2026-02-14 12:52:20",
-      "is_merged_thread": true,
       "original_item_count": 8,
-      "is_detail_collected": true,
       "platform_sequence_id": 297
     },
     {
-      "sequence_id": 373,
+      "sequence_id": 383,
       "sns_platform": "threads",
+      "code": "DUuVPjBE42V",
       "full_text": "대박 소식입니다❗️❗️ 🚀\n이제 노트북LM 슬라이드, PPTX 파일로 바로 다운로드 가능합니다.\n\nPDF만 지원해서 아쉬우셨죠?\n이제는 파워포인트로 열어서\n수정도 하고, 바로 프레젠테이션도 가능합니다 😊\n\n물론 텍스트와 이미지가 완전히 분리되지는 않고\n한 페이지가 하나의 이미지 형태이긴 합니다.\n그래도 이게 어디입니까. ㅎㅎ\n\n게다가 생성 슬라이드의 한글 오탈자도\n점점 개선되고 있어서\n조금만 손보면 실무 공유용으로 충분합니다.\n아직 노트북LM을 안 써보셨다고요?\nAI의 절반은 놓치고 계신 겁니다.\n\n오늘부터 꼭 써보세요.\n세상이 달라집니다 ✨\n\n---\n\n[공지] ❗️ 📣\n안 되시는 분들 있다고 해서\n제 노트북LM 다시 잘 확인해보니\n\n저의 경우 pptx 다운로드는 \n\"오늘\" 만든 것 부터 됩니다.\n\n옛날에 만든 것은 pdf 다운로드만 됩니다. ㅎㅎ\n\n참고하세요~",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/635287198_17942164014109915_6919886451846472785_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTQzOXgxODA2LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QEFmYEiHtRIm-5ZYvGmHUwihuPhtcdMBs3NNZrsqf_DZQP4eNE2kADtCB-kYHTCRWA&_nc_ohc=-6XF3zkq4w0Q7kNvwFCnidz&_nc_gid=Buu8LPIP6CT4GVeWq1i-4w&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMjA5MzIxMzc4ODQ5MzA2MA%3D%3D.3-ccb7-5&oh=00_AftrwiX9rS8XfVys-CpyXaof8R_9flGLno2SLbvSrc4Jdw&oe=699AE567&_nc_sid=10d13b"
@@ -7520,48 +7784,48 @@
       "local_images": [
         "web_viewer/images/c4a71bc0da8be19c87b493e824d32841.jpg"
       ],
-      "code": "DUuVPjBE42V",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUuVPjBE42V",
       "user": "jh_aicafe",
       "timestamp": "2026-02-14 12:53:16",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 298
     },
     {
-      "sequence_id": 374,
+      "sequence_id": 384,
       "sns_platform": "threads",
+      "code": "DUp0sZjEdaL",
       "full_text": "유튜브 채널 통째로 복사: NotebookLM 필수 질문 4가지\n\n노트북LM으로 이제 유튜브 채널 하나를 통째로 분석할 수 있습니다.\n\n하지만 도구보다 질문이 중요합니다.\n영상 300개를 넣어도 막상 떠오르는 질문은\n“요약해줘”, “핵심 주제 알려줘” 정도뿐일 때가 많죠.\n\n그래서 유튜브 채널 분석용 필수 질문 4가지를 정리했습니다.\n\n이 질문만 복사해두면, \n유튜브 채널 하나를 딱 5분 만에 내 걸로 만들 수 있습니다. 👇\n\n---\n\n1️⃣ Pain Point (문제 정의)\n“정확히 어떤 문제를 풀었는가?”\n\n🔻 복붙용 질문:\n이 영상에서 해결하고자 하는 구체적인 비효율(Pain Point)은 무엇인가요?\n그리고 최종 결과물은 사용자의 시간을 얼마나/어떻게 절약해주나요?\n\n---\n\n2️⃣ Tech Stack (도구 조합)\n“도구가 무엇인지보다 왜 그 도구를 선택했는지”\n\n🔻 복붙용 질문:\n이 채널에서 반복적으로 사용하는 도구는 무엇인가?\n각 도구는 어떤 역할을 담당하는가?\n도구 조합 전략은 무엇인가?\n\n---\n\n3️⃣ Difficulty (난이도 확인)\n채널이 다루는 '깊이’가 어느정도 인지 기준을 찾기 위한 질문입니다.\n\n🔻 복붙용 질문:\n이 채널의 콘텐츠 난이도를 분석해주세요. \n초보자/중급자/고급자 중 어디에 포지셔닝되어 있나요? \n시청자가 이해하기 위해 필요한 사전 지식은 무엇이며, 따라 하기까지의 진입장벽은 어느 정도인가요?\n\n---\n\n4️⃣ Utility (실용성 검증)\n유튜브 영상 속 숨어있는 '진짜 실무 도구'를 찾아내야 합니다.\n\n🔻 복붙용 질문:\n분석한 영상들 중 가장 '실용적'이라고 평가받을 만한 프로젝트 1개를 꼽아주세요. \n이 도구가 시청자에게 약속하는 핵심 키워드(예: 자동화, 수익화, 시간 단축 등)는 무엇인가요?\n\n---\n\n🚀 결론: 중요한 건 좋은 질문입니다.\n\nNotebookLM은 훌륭한 도구이지만, 좋은 질문이 없으면 깊이 있는 답을 얻기 어렵습니다.\n위 4가지 질문 세트는 이렇게 활용하세요.\n\n1. 관심 있는 채널의 영상 URL을 모두 복사 (크롬익스텐션 Grabbit 사용)\n2. NotebookLM에 소스 추가\n3. 필수 질문 4개를 순서대로 입력\n\n이제 분석은 NotebookLM에 맡기고,\n여러분은 이 채널이 내게 유용한지 아닌지만 빠르게 판단하세요!",
       "media": [],
       "crawled_at": "2026-02-18T10:58:22.218",
-      "code": "DUp0sZjEdaL",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUp0sZjEdaL",
       "user": "lazypencil_lab",
       "timestamp": "2026-02-12 18:51:53",
-      "is_merged_thread": true,
       "original_item_count": 6,
-      "is_detail_collected": true,
       "platform_sequence_id": 299
     },
     {
-      "sequence_id": 375,
+      "sequence_id": 385,
       "sns_platform": "threads",
+      "code": "DUyBtrIk73q",
       "full_text": "클로드코드 꿀팁2 — 클코를 제대로 쓰고 싶은 윈도우 유저를 위한 셋업 편\n\n어디서 베낀 거 아니고, 클코 5,000시간 사용하면서 직접 느낀 것들.\n\n왜 아무도 이야기 안 하는지 이해가 안 갈 정도.\n\n---\n\n1. 윈도우에서 클코 느리다고요? WSL2에서 돌리세요.\n\nWSL2 = 윈도우 안에서 리눅스 돌리는 겁니다.\n\n그냥 바로 10배는 빨라집니다. 저 믿고 그냥 하세요. 바꾸는 순간 같은 컴퓨터 맞나 싶을 겁니다. 속도가 빨라질 뿐 아니라 수 많은 명령어 오류가 사라집니다.\n\n클코에게 복붙:\n\n\"내 윈도우 환경을 WSL2 기반으로 전환해줘. WSL2 설치 → Ubuntu 설치 → 현재 프로젝트를 WSL2 파일시스템(/home/ 경로)으로 이전 → 클로드코드를 WSL2 안에서 실행하도록 세팅. 단계별로 진행해줘.\"\n\n---\n\n2. 다른 터미널 쓰지 마세요.\n\nWarp, Hyper, Alacritty 다 써봤습니다. 그냥 Windows Terminal 쓰세요.\n\n마이크로소프트가 수년간 버그 잡은 프로그램 놔두고 왜 돌아가나요.\n\n탭, 분할, GPU 가속, WSL2 연동 전부 됩니다.\n\n클코에게 복붙:\n\n\"Windows Terminal 설정 최적화해줘. WSL2 Ubuntu를 기본 프로필로 설정, GPU 가속 활성화, 시작 시 자동으로 WSL2로 진입하도록 세팅해줘.\"\n\n---\n\n3. 단축키 만들어서 실행하세요.\n\n매번 claude --dangerously-skip-permissions 치고 계신가요? 38자입니다.\n\nalias 만들면 \"cc\" 2자로 끝납니다. 하루 10번이면 380타 vs 20타.\n\n클코에게 복붙:\n\n\".bashrc에 alias cc='claude --dangerously-skip-permissions' 추가하고 바로 적용해줘.\"\n\n---\n\n4. 리서치 강제 + 연도 착각 방지, 무조건 세팅하세요.\n\n\"코드 전에 Context7로 리서치해라\"를 규칙으로 박으세요. 저는 Context7 문서 조회 → 웹 검색 → 필요시 Jina mcp이용으로 읽기. 3개 소스 교차 검증 후에만 코드 짜게 강제합니다.\n\n그리고 클코가 25년인 줄 알고 예전 문법 쓰는 거, add-date.sh를 PreToolUse 훅으로 걸면 매 작업마다 현재 날짜 자동 주입됩니다.\n\n클코에게 복붙:\n\n\"두 가지 해줘. 1) CLAUDE.md에 규칙 추가: 모든 구현 전 Context7로 공식 문서 조회 + WebSearch로 모범사례 검색 + 3개 소스 교차 검증 후에만 코드 작성. Context7 미설치 시 설치도. 2) PreToolUse 훅 add-date.sh만들어서 매 도구 실행 시 현재 날짜 자동 주입하도록 세팅해줘.\"",
       "media": [],
       "crawled_at": "2026-02-18T10:58:22.218",
-      "code": "DUyBtrIk73q",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUyBtrIk73q",
       "user": "ddg.kang",
       "timestamp": "2026-02-15 23:19:35",
-      "is_merged_thread": true,
       "original_item_count": 5,
-      "is_detail_collected": true,
       "platform_sequence_id": 300
     },
     {
-      "sequence_id": 376,
+      "sequence_id": 386,
       "sns_platform": "threads",
+      "code": "DUrto3XD5g4",
       "full_text": "디자인 시스템 구축에 쏟던 수천 수만 시간이 단 몇 초로 압축됩니다.\n\n구글의 AI 디자인 툴 'Stitch'에 디자인 시스템(Design Systems) 기능이 탑재되었습니다. 이제 Gemini 3가 브랜드 가이드를 학습해 폰트, 컬러, 모서리 곡률까지 일관되게 적용된 UI를 자동으로 그려냅니다.\n\n단순히 예쁜 화면을 만드는 수준을 넘었네요. 테마 하나만 바꾸면 수십 개의 화면이 즉시 업데이트됩니다. 번거로운 레이어 정리 대신, 이제는 어떤 '경험'을 줄지만 고민하면 되는 시대가 온 것 같군요.\n\n---\n\nhttps://stitch.withgoogle.com/",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/632485885_889082693825104_9107728874328268156_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDM0Ni5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QFQJ5WVqaaO8bmNmTQBNgtVBmCH-d2QmN83162YS2S2XjDIvKKMEVGj-p0GsUL9ALM&_nc_ohc=qrrHDp6ZRI8Q7kNvwFxCKE8&_nc_gid=nxZtyXyW2eYmtdBM5RuHSQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMTM1NjYyODMyMzUwNjIzMg%3D%3D.3-ccb7-5&oh=00_Afu5b44zzFr8K-rq9gwpB5AktAGDub9hLpKcgtJurI51jA&oe=699ADE49&_nc_sid=10d13b"
@@ -7570,18 +7834,18 @@
       "local_images": [
         "web_viewer/images/40c782e336ce0a997e836e0c30485216.jpg"
       ],
-      "code": "DUrto3XD5g4",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUrto3XD5g4",
       "user": "alcohol_fully",
       "timestamp": "2026-02-13 12:29:21",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 293
     },
     {
-      "sequence_id": 377,
+      "sequence_id": 387,
       "sns_platform": "threads",
+      "code": "DUr7CLGEvzo",
       "full_text": "Codex 결제 하시고 cli 사용 하시는 분들 꿀팁\n\n~/.codex/config.toml에 다음 옵션 세팅하기\n\n---\n\ncodex cli status line에 좀 더 풍부한 정보를 포함합니다.",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/629345669_17883573921448489_6038906442170884262_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNDI4eDM4Ni5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QGrMedpJ6ULmae8sMcfrctvXUe41Kwwu53PkNxnAA27w6_09NNvzXkEUGTL_52xC3o&_nc_ohc=dFnDo1oyvwQQ7kNvwEz5NY_&_nc_gid=dFXGAUDl7sRNEZZXDgTP_A&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMTQxNTU0MjEwNDkxNTE3Ng%3D%3D.3-ccb7-5&oh=00_AfuSwQ47Kmj_CY1CNjNW-o4BWHyHCJmoEqC6PbdItJaE-g&oe=699AF4E0&_nc_sid=10d13b"
@@ -7590,19 +7854,19 @@
       "local_images": [
         "web_viewer/images/8d6869acb8a610c42ac4cf6d64be8837.jpg"
       ],
-      "code": "DUr7CLGEvzo",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUr7CLGEvzo",
       "user": "2_taewoo",
       "timestamp": "2026-02-13 14:25:46",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 294
     },
     {
-      "sequence_id": 378,
+      "sequence_id": 388,
       "platform_id": "DUrxhGvj560",
       "sns_platform": "threads",
+      "code": "DUrxhGvj560",
       "username": "sigoroc",
       "display_name": "시고록",
       "full_text": "저도 고민했던 부분입니다. 정리해놓은 블로그 보내드려요 https://andaction.tistory.com/entry/%EB%8F%99%EC%9D%BC-AI-%EB%AA%A8%EB%8D%B8%EC%9D%B8%EB%8D%B0-%ED%80%84%EB%A6%AC%ED%8B%B0%EA%B0%80-%EB%8B%A4%EB%A5%B4%EB%8B%A4%EA%B3%A0-%EA%B7%B8-%EC%9B%90%EC%9D%B8%EC%9D%84-%EC%95%8C%EC%95%84%EB%B3%B4%EC%9E%90",
@@ -7612,6 +7876,7 @@
       "date": "2026-02-13",
       "crawled_at": "2026-02-18T10:58:25.254",
       "source": "network",
+      "is_merged_thread": false,
       "root_code": "DUrxhGvj560",
       "like_count": 22,
       "reply_count": 1,
@@ -7620,28 +7885,27 @@
       "pk": "3831373687270907572",
       "media_type": 19,
       "content_type": "image",
-      "code": "DUrxhGvj560",
-      "is_merged_thread": false,
       "platform_sequence_id": 295
     },
     {
-      "sequence_id": 379,
+      "sequence_id": 389,
       "sns_platform": "threads",
+      "code": "DUsSx7fkkzc",
       "full_text": "https://youtu.be/G0KRqPytjLo?si=4vpmx0UawfSwDulv\n\n요즘 제미나이 + 노트북LM 활용에 푹 빠져서 재미를 보고 있는 중입니다. \n기획 업무를 오래 해 오면서 요즘처럼 재미 있고, 효율 높게 일 해 본 적이 없습니다. 단연코 ...\n\n그런데 제미나이 + 노트북LM 의 가장 취약점은 \n한글 폰트 깨지는 현상입니다. \n\n아무리 프롬프토 입력으로 \"문서 텍스트 문장 단어는 그대로 가져다 사용\"\n해도 말을 안 듣습니다. \n\n아니 일관성 있게 계속 틀리면 더 좋은데, 가끔 먹히는 경우가 있습니다. \n오늘 ... 이 구독 중인 사이트 주인장이 해결책을 내어 놓았습니다. \n\n클로드 갖고, 해 봐야지 ... 하고 생각하는 걸, 누군가는 벌써 실행에 옮겼습니다. \n\n제미나이 + 노트북LM 푹 빠져 계신데, 2% 아니고 20% 아쉬움이 폰트 깨짐 현상이시라면 빨리 방문해서 확인해 보세요.\n\n따끈 따끈한 정보 공유입니다. \n널리 널리 퍼 가세요.",
       "media": [],
       "crawled_at": "2026-02-18T10:58:25.254",
-      "code": "DUsSx7fkkzc",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUsSx7fkkzc",
       "user": "ryusw007",
       "timestamp": "2026-02-13 17:53:16",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 296
     },
     {
-      "sequence_id": 380,
+      "sequence_id": 390,
       "sns_platform": "threads",
+      "code": "DUryhSECVO9",
       "full_text": "카톡 대란으로 ChatGPT Pro 질렀는데, \"검색이랑 대화만 하고 있다면?\"\n\nPro에 포함된 Codex를 모르는 분이 많더라고요.\n\nCodex는 ChatGPT랑 달라요: \n1️⃣ 내 프로젝트에 직접 들어와서 코드를 읽고 수정\n2️⃣ 터미널 명령 실행 + 테스트까지 자동 \n3️⃣ 클라우드에서 자율 태스크 (내 컴퓨터 안 씀) \n4️⃣ GitHub PR 올라오면 자동 코드 리뷰 \n5️⃣ AGENTS.md로 프로젝트 컨텍스트 영구 유지\n\nPro는 Plus 대비 6배 사용량 + 10배 코드 리뷰. 카톡에서 29,000원에 잡은 Pro로 이걸 안 쓰면 진짜 아까워요.\n\nmacOS 앱, CLI, IDE 확장, 웹 — 4가지 채널로 접속 가능.\n\n#Codex #ChatGPTPro #OpenAI #AI코딩 #개발생산성 #AGENTS_md\n\n---\n\nhttps://techtaek.com/%EC%B9%B4%ED%86%A1-%EB%8C%80%EB%9E%80%EC%97%90-chatgpt-pro-%EC%A7%88%EB%A0%80%EB%8A%94%EB%8D%B0-codex-%EB%AA%A8%EB%A5%B4%EB%A9%B4-%EC%A7%84%EC%A7%9C-%EC%95%84%EA%B9%8C%EC%9A%B4-%EC%9D%B4%EC%9C%A0/",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/626264846_17858552214605524_2091411370439006122_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMjE2MHgxMTc4LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QH4aYCru08r6XXzDCxhypOiCuWc6bX4B_56VjmuxZtmEeJMrV28YtsDb2oRiPsonck&_nc_ohc=Z1cuTcraHa8Q7kNvwFVuI8n&_nc_gid=bZzk5hj7a1-a52kwkUZoJg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMTM3ODA5NzQ3MjA5OTI2MQ%3D%3D.3-ccb7-5&oh=00_AfszFJVX0bg-2pc1Jmvhp9_YftIKNA-qbvFEL8fhM61law&oe=699B01CD&_nc_sid=10d13b"
@@ -7650,18 +7914,18 @@
       "local_images": [
         "web_viewer/images/ce9a5f824b971d156ac698b5ff6b7ce4.jpg"
       ],
-      "code": "DUryhSECVO9",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUryhSECVO9",
       "user": "tech.taek",
       "timestamp": "2026-02-13 13:11:22",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 289
     },
     {
-      "sequence_id": 381,
+      "sequence_id": 391,
       "sns_platform": "threads",
+      "code": "DUsE5ebkoNN",
       "full_text": "요즘은 이게 유행인 것 같아서요. \n\nGPT 카카오 선물하기가 유행인 것 같아서, 크라이치즈버거도 만들었습니다. 무제한 흡입권. 나노바나나 감사합니다. 열심히 하겠습니다. 크라이치즈버거는 개발자들을 사랑합니다. 코딩할 때는 크라이치즈버거입니다. 새해복들 많이 받으세요.\n\n- 매일 1개씩, 30일간 치즈버거 무제한 흡입\n- 감자튀김 무제한 & 쉐이크 업그레이드\n- 심층적인 '더블 치즈' 경험 및 소스 최대 한도\n- 메모리 및 위장 용량 최대 한도\n- 프로젝트, 야식 작업, 맞춤형 토핑 기능 확장\n- Sora 영상 대신 실시간 먹방 생성 한도 확장\n- 우선순위 배달 속도를 지원하는 라이더 확장\n- 새 메뉴 리서치 프리뷰 (가장 먼저 시식)\n\n---\n\n물론 디자인은 제미나이가 했습니다.",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/628272260_17899164024387939_7980109455170854536_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMzczeDY2Ny5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QFXS56PXu9BU23bab5GV4vaYy7BFDrS2nYx6sVcCD2wFqPFz65T7UbcHTqu5tUjfyc&_nc_ohc=mF6wllgcTGMQ7kNvwHDDJf7&_nc_gid=8CTZ-pRPRH-oochAxyaXbg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMTQ1ODMyMjIxMDUxNTAyNw%3D%3D.3-ccb7-5&oh=00_AftkqA5bD3j_SsbJrgI6rP2lrQYcNInNSpklX4Ug6lpERA&oe=699AFBF2&_nc_sid=10d13b"
@@ -7670,18 +7934,18 @@
       "local_images": [
         "web_viewer/images/95ff5101901f2a6bb2b40d3fb240207d.jpg"
       ],
-      "code": "DUsE5ebkoNN",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUsE5ebkoNN",
       "user": "crycheeseburger.official",
       "timestamp": "2026-02-13 15:51:58",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 290
     },
     {
-      "sequence_id": 382,
+      "sequence_id": 392,
       "sns_platform": "threads",
+      "code": "DUs6iJtCcdv",
       "full_text": "카카오톡 챗지피티 대란으로 쓰레드가 뜨겁네요. \nGPT 유료 플랜 + 안티그래비티 조합 팁 공유합니다.\n\n1. 안티그래비티 에디터 마켓플레이스에서 Cline, kilo같은 확장 프로그램 설치\n2. GPT 계정 연결 (요즘 코딩에이전트는 대부분 딸칵으로 연동 가능)\n3. 아키텍쳐 설계나 중요작업 등은 Codex로 \n\nGPT Plus도 한도가 넉넉한 편이에요. 단 주,월 한도가 있어서 무제한은 아닙니다\n\n---\n\n전 주로 klio를 쓰는데, 아키텍처 설계나 코드리뷰같은 작업들은 codex, 상세 구현이나 Ui 쪽은 안티그래비티 기본 모델을 사용합니다. kilo는 아키텍처, 질문, 디버그 모드 등을 사용자가 선택할수 있어서 초보자분들한테 추천드립니다",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/627629411_17863350099586895_2990086390109932151_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNTY3eDU2My5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2QHIiG9NZFah_3EUs6ivjRS22w7WkaeETFElhyuadKV3cR0L3QZ-twjrPTLMUW9b7ts&_nc_ohc=btpj3jZYnzwQ7kNvwExvwwK&_nc_gid=I0rxp5m-Evk5cr71_-NrKA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMTY5NDgxNjU2NDU5NDU0Mw%3D%3D.3-ccb7-5&oh=00_AftFWBfG7SuF2PbGD01WhqEKCtwZetm_uLxXrO0Yoqv7_g&oe=699AE386&_nc_sid=10d13b",
@@ -7692,49 +7956,49 @@
         "web_viewer/images/6d8d988e53199856cc7ffd4f785a6d41.jpg",
         "web_viewer/images/294077d8c3ed830a69cad679a19aebf0.jpg"
       ],
-      "code": "DUs6iJtCcdv",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUs6iJtCcdv",
       "user": "readyto_da4",
       "timestamp": "2026-02-13 23:40:38",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 291
     },
     {
-      "sequence_id": 383,
+      "sequence_id": 393,
       "sns_platform": "threads",
+      "code": "DUsLA3WkXc2",
       "full_text": "카카오톡 GPT Pro 사신분들이 꼭 해봐야할 것 2가지\n\n1. GPT 사이트에서 에이전트 모드\n경험하기 ( 웹 검색 체크하고 ) 자기 브랜드나 사이트 분석 요청 해보시길! 새로운 인사이트 발견 가능!\n\n2. 터미널(Cmd) 들어가서 codex설치하고 실행해서 아무거나 한번 개발해보기! 클로드 코드랑 또 다른 맛이기도 하면서 익숙한 맛이긴한데 GPT 5.3 위력 체험 가능!\n\n( 설치법은 간단함 이전에 올린 내 쓰레드\n참조 )",
       "media": [],
       "crawled_at": "2026-02-18T10:58:28.313",
-      "code": "DUsLA3WkXc2",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUsLA3WkXc2",
       "user": "openclaw_ko",
       "timestamp": "2026-02-13 16:45:24",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 292
     },
     {
-      "sequence_id": 384,
+      "sequence_id": 394,
       "sns_platform": "threads",
+      "code": "DUsHiqqkYtA",
       "full_text": "[ GPT Codex 웹 파싱/검색 하게끔 하려면 ]\n\n~/.codex/config.toml 에\n\nweb_search = \"live\"\n\n로 해놔야 GPT Codex 가 웹 검색도 하면서 개발함\n\n( 클로드 코드는 기본값인디 굳이 왜 막아둔거지... 어차피 풀어야되는데 )",
       "media": [],
       "crawled_at": "2026-02-18T10:58:28.322",
-      "code": "DUsHiqqkYtA",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUsHiqqkYtA",
       "user": "openclaw_ko",
       "timestamp": "2026-02-13 16:15:04",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 288
     },
     {
-      "sequence_id": 385,
+      "sequence_id": 395,
       "platform_id": "DUsQFcOk8E2",
       "sns_platform": "threads",
+      "code": "DUsQFcOk8E2",
       "username": "ai_younggle_man",
       "display_name": "AI영끌맨",
       "full_text": "코덱스용 hud를 만들어밨습니다 5분만에 뚝딱만들어주는군여 \n일단 퇴근해서 다듬어서 괜찮으면 공유 드려보겠습니당 일단 클로드코드에 코덱스 mcp만들어서 두개의브레인으로 하니 뚝딱되네영",
@@ -7749,6 +8013,7 @@
       "local_images": [
         "web_viewer/images/bc42edb34c585c4bab734b27b6d66809.jpg"
       ],
+      "is_merged_thread": false,
       "root_code": "DUsQFcOk8E2",
       "like_count": 15,
       "reply_count": 6,
@@ -7757,13 +8022,12 @@
       "pk": "3831508125636346166",
       "media_type": 1,
       "content_type": "image",
-      "code": "DUsQFcOk8E2",
-      "is_merged_thread": false,
       "platform_sequence_id": 285
     },
     {
-      "sequence_id": 386,
+      "sequence_id": 396,
       "sns_platform": "threads",
+      "code": "DUrDWfokzX8",
       "full_text": "Claude Code 켜고 무조건 /next만 입력하면 알아서 개발되는 시스템을 갖췄다.\n비결은 컨텍스트 엔지니어링 🥰\n결과 보고서는 차곡차곡 docs/report에 쌓이고\n내가 확인할 게 있으면 따로 docs/guide에 쌓인다.\n이 시스템이 얼마나 잘 동작할 지는 차차 봐야겠지만,\n이제 내 할 일은 그저 /next 입력하고 보고서 열어보고\n앱 실행해보는 것 뿐. 🤣",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/627659031_17917708413274060_6616501271261207071_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTM4NHg4Nzguc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QHtpVG1K5f5KgcJdA1UpZkFkCTKg6rOygg9ukXSgwI6SIZuVeYOIDqVRDQa3tIYiY0&_nc_ohc=3wtsTm2n-BMQ7kNvwHbj2bx&_nc_gid=oBds73VL4hejRvTaeuWLgw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMTE3MDY0Nzk0MzQ5MzExNg%3D%3D.3-ccb7-5&oh=00_Aftr9tQWSXVg-7zRjOc3jdg9c8sPJsCzJw6n5ulgw5QOew&oe=699B08AA&_nc_sid=10d13b"
@@ -7772,34 +8036,34 @@
       "local_images": [
         "web_viewer/images/5fa98062e14e96cbbd697404641e179d.jpg"
       ],
-      "code": "DUrDWfokzX8",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUrDWfokzX8",
       "user": "seolemi",
       "timestamp": "2026-02-13 06:19:12",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 286
     },
     {
-      "sequence_id": 387,
+      "sequence_id": 397,
       "sns_platform": "threads",
+      "code": "DUrYUMiEr5-",
       "full_text": "Claude Code를 쓰고난 뒤, 지금까지 가장 효과 좋았던 습관들\n\n1. 새 주제면 무조건 새 대화 열기\n2. 큰 문제는 작게 쪼개서 하나씩 던지기\n3. 코드 짜기 전에 먼저 리서치부터 시키기\n4. 커밋, 브랜치, PR 전부 Claude한테 맡기기\n5. GitHub Desktop으로 변경사항 눈으로 확인하기\n6. 리뷰 에이전트로 무조건 리뷰 하기\n7. Playwright로 웹앱 직접 테스트까지 돌리게 하기\n8. 탭 5~6개로 세션 나눠서 동시에 굴리기\n\n---\n\n이런 정보 더 알고 싶으면\nhttps://discord.gg/UDndhtsr\n방문해줘",
       "media": [],
       "crawled_at": "2026-02-18T10:58:28.326",
-      "code": "DUrYUMiEr5-",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUrYUMiEr5-",
       "user": "ai.vibecoding",
       "timestamp": "2026-02-13 09:22:24",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 287
     },
     {
-      "sequence_id": 388,
+      "sequence_id": 398,
       "platform_id": "DUYWtz0k29P",
       "sns_platform": "threads",
+      "code": "DUYWtz0k29P",
       "username": "gptaku_ai",
       "display_name": "지피타쿠 | AI 실전 활용법",
       "full_text": "https://github.com/team-attention/agent-council",
@@ -7809,6 +8073,7 @@
       "date": "2026-02-06",
       "crawled_at": "2026-02-18T10:58:31.447",
       "source": "network",
+      "is_merged_thread": false,
       "root_code": "DUYWtz0k29P",
       "like_count": 2,
       "reply_count": 1,
@@ -7817,13 +8082,12 @@
       "pk": "3825907788493844303",
       "media_type": 19,
       "content_type": "image",
-      "code": "DUYWtz0k29P",
-      "is_merged_thread": false,
       "platform_sequence_id": 284
     },
     {
-      "sequence_id": 389,
+      "sequence_id": 399,
       "sns_platform": "threads",
+      "code": "DUWEYtYEiY7",
       "full_text": "우와아 코덱스 진짜 장난 아닌데요..??\n\n\"GPT-5.2-Codex Extra High\" 쓰세요 두번 세번 네번 쓰세요\n\n---\n\nyulepapa.com",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/629398863_17898336996390131_5695774095084408112_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNzEyeDYzNC5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2QGxx1gVbspQFh5hf7Ww0UHNiCTWa7Ly0kzFDDk4-AqQ5jH6nr_I2mjAurf-dTcnhQY&_nc_ohc=b6Mt_aIp0XMQ7kNvwGKFlFi&_nc_gid=0i8cJP8d65Ufk8UGwzoVCA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyNTI2NDIyMzY3MzUyNTgxOQ%3D%3D.3-ccb7-5&oh=00_AfszO0Xawm94sE4jGKzGczRQUnMLv0t2AkWuqaMvMgkyoQ&oe=699AE8F6&_nc_sid=10d13b"
@@ -7832,18 +8096,18 @@
       "local_images": [
         "web_viewer/images/06324bcc8e92f4310a693604b761d8b5.jpg"
       ],
-      "code": "DUWEYtYEiY7",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUWEYtYEiY7",
       "user": "stormleehj",
       "timestamp": "2026-02-05 02:44:12",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 281
     },
     {
-      "sequence_id": 390,
+      "sequence_id": 400,
       "sns_platform": "threads",
+      "code": "DUsrurWE6WF",
       "full_text": "문의 건에 대한 답변을 받기전에\n카카오 선물하기 상품 정보가 업댓되었어\n\n“5개 초과 등록시 취소 및 환불이 진행될 수 있습니다”\n\n사용하는 입장에서는 아쉽지만 \n판매하는 입장에서는 당연한 결과였지\nChatGPT for Kakao 유저를 늘리기위한\n프로모션을 진행한건데 소수가 혜택을 누리는거니\n\n아무튼 답변은 못받았어도 정리된듯 하니\n취소 미리미리들 하자😂\n\n그나저나 이것때메 팔로우해달라했는데\n이제 언팔하겠네...😭",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/633995418_17893855554408836_3112050400700402006_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTE3OXg4NjEuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QGTiHohw656DrwSKKhcNi2j7WzQet-KUH0lO0IfsOsk3pJd84gfZmfN5KnXBB9lKa8&_nc_ohc=xnccAANsh5QQ7kNvwFhxPuX&_nc_gid=pV-X0VNQEskL1Wvb9Dewxg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMTYyOTcwNjYyMjY0MTU0MQ%3D%3D.3-ccb7-5&oh=00_AfvBPaFanINOIEVp3lMvORwZjq7YvG1-b1vYdx57k25Heg&oe=699B0B7D&_nc_sid=10d13b"
@@ -7852,18 +8116,18 @@
       "local_images": [
         "web_viewer/images/60c611977a5d6a49549daf04a010b70e.jpg"
       ],
-      "code": "DUsrurWE6WF",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUsrurWE6WF",
       "user": "gptaku_ai",
       "timestamp": "2026-02-13 21:31:16",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 282
     },
     {
-      "sequence_id": 391,
+      "sequence_id": 401,
       "sns_platform": "threads",
+      "code": "DTct_N_kxrn",
       "full_text": "안티그래비티에서 코덱스 확장프로그램을 못쓴다고?\n그럴리가.\n\nvscode 에서는 extensions 검색창에 \"codex\"라고 검색하면 나오지만, 안티그래비티에서는 안뜸!\n\n안티그래비티에서는 \"chatgpt\"라고 검색하면 나온다고~\n\n---\n\nhttps://open-vsx.org/extension/openai/chatgpt 여기서 다운로드 버튼 눌러서 .vsix 파일을 다운로드받고, 안티그래비티 > 마켓플레이스 > 더보기 버튼 > Install from VSIX 로 설치해도 사용이 가능합니다",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/616006597_17854089114608942_4755517124247905313_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uNDI5eDU0Mi5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QHne3HIHIa2lw39z4aeX-PudBkr5_rYE5tBfEhepiaz3nHt2FatvvXHwgzLNoNDyik&_nc_ohc=0HnmMk8D5u4Q7kNvwGhGn-7&_nc_gid=yygfM-Z3I01TAEwm4qyNCg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwOTEyMTYzNTI0NTczOTYyNw%3D%3D.3-ccb7-5&oh=00_Afvdllr1e15bxQ1ne74M3yU2Y7qhm4LMUAj4WPe02NfT9g&oe=699B0C5A&_nc_sid=10d13b",
@@ -7874,18 +8138,18 @@
         "web_viewer/images/c6725881cb4fad0298b85403a72cf131.jpg",
         "web_viewer/images/6c6253b9b35304b2754b75045dda2ce3.jpg"
       ],
-      "code": "DTct_N_kxrn",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DTct_N_kxrn",
       "user": "ody_daddy",
       "timestamp": "2026-01-13 20:11:46",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 283
     },
     {
-      "sequence_id": 392,
+      "sequence_id": 402,
       "sns_platform": "threads",
+      "code": "DUswRwgEz_A",
       "full_text": "개발자아니면 GPT Pro 필요없다고\n글쓰는 사람들 있던데 모르면 조용하자\n\n아니 요즘 누가 CLI로 개발만 한다는거야😡\n재테크도 하고 공부도 하고 원하는거 다 할수 있는데\n아직도 부동산 알아볼때 발로 임장뛰어?!!\n아직도 패캠강의 돈내고 들어??\n\n비개발자도 클로드코드를 에이전트로 쓰면\n코드안짜고 일반 GPT나 Gemini보다\n훨씬 일잘하는 AI로 만들 수 있어!!!",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/630111771_17893859436408836_6708039103110580117_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uNzkweDY2My5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QGJA9P3gmOUumRVLl5lyePXu5jCMjs6oQvdFwBFKqE-3GCDTgZsl-8G2T1CgZDsvd0&_nc_ohc=72R4_xuhDccQ7kNvwGA-ejV&_nc_gid=eEBpTt1ZG6J-btzjDAEoVQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMTY0OTcwMzE1MTUyMjk5Nw%3D%3D.3-ccb7-5&oh=00_Aftz2MKNtiBCvK-8unTLJytagijR99n_GKNuPL_VCwS-Ag&oe=699B02F3&_nc_sid=10d13b"
@@ -7894,18 +8158,18 @@
       "local_images": [
         "web_viewer/images/7ce9558f523b90610307a9f3670e710a.jpg"
       ],
-      "code": "DUswRwgEz_A",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUswRwgEz_A",
       "user": "gptaku_ai",
       "timestamp": "2026-02-13 22:11:01",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 279
     },
     {
-      "sequence_id": 393,
+      "sequence_id": 403,
       "sns_platform": "threads",
+      "code": "DUXvFrqESMP",
       "full_text": "[클로드코드의 장점을 200% 끌어내는 법]\n\"코덱스 mcp를 클로드에 연결한다.\"\n\n지시는 클로드가 하고\n실무는 코덱스가 하는 아름다운 구조.\n\n왜 이렇게 하냐? 하면.. (이어서)\n\n---\n\n일단 두 놈의 특징을 이해해야댐\n\n클로드 코드: \n- 기획 기깔나게 잘함\n- 대충 던지면 알아서 잘 계획 짜줌\n- 근데 몸값이 비쌈(응 한도 다됐어 자러감 ㅂㅂ)\n\n코덱스: \n- 코딩 개잘하는 개발자\n- 프로 플랜도 토큰 엄청 많음\n- 근데 말이 좀 어눌함(이히히 코딩한다 코덱스)\n\n하지만 클로드에 코덱스를 연결한다면?\n\n---\n\n나는 30분동안 딴거 하고 있고\n클로드는 코덱스 패면서 갈구고\n코덱스는 열심히 코딩하는\n\n대기업식 하청의 하청 구조가 완성된다",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/626180199_17931066702189027_9050145625408618927_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uODE0eDI4Ny5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QGR0Hx31mbNo7POcM-Y02G9wIAeIEPRsntOpLPaNjbN3m8b12p4ca8kykRYmSv5TUs&_nc_ohc=OGyal5n569YQ7kNvwEPXzOu&_nc_gid=Cbg0XHkORHebL4Z9gz0Gzw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyNTczMzUwNzEzNDU5NTg1NQ%3D%3D.3-ccb7-5&oh=00_AfsCxHsdPwMGAnjqg6Wmzi7umRitlvL_TBbb3If-dqdV8w&oe=699AF766&_nc_sid=10d13b"
@@ -7914,33 +8178,33 @@
       "local_images": [
         "web_viewer/images/b3e73e1a28f3452b2ac6745809fe6382.jpg"
       ],
-      "code": "DUXvFrqESMP",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUXvFrqESMP",
       "user": "thedalbee",
       "timestamp": "2026-02-05 18:16:35",
-      "is_merged_thread": true,
       "original_item_count": 3,
-      "is_detail_collected": true,
       "platform_sequence_id": 280
     },
     {
-      "sequence_id": 394,
+      "sequence_id": 404,
       "sns_platform": "threads",
+      "code": "DUsjUdekoXS",
       "full_text": "https://github.com/Yeachan-Heo/oh-my-codex\n\nGPT Pro 29,000원과\nCodex gpt 5.3의 시대 \n\n불완전하지만 일단 누가 OmC 포크떠서 OmX로 이식할까봐 제가 했습니다.",
       "media": [],
       "crawled_at": "2026-02-18T10:58:34.508",
-      "code": "DUsjUdekoXS",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUsjUdekoXS",
       "user": "bellman.pub",
       "timestamp": "2026-02-13 20:17:47",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 277
     },
     {
-      "sequence_id": 395,
+      "sequence_id": 405,
       "sns_platform": "threads",
+      "code": "DUr39e2kfxb",
       "full_text": "지금 당장 활용해볼 수 있는 Claude Cowork \n활용 사례 7가지를 공개합니다💫\n아직 활용해본 적 없다면 저장해두고 확인해보세요.\n따라하기 정말 쉽습니다!\n\n---\n\n1/ 다운로드 폴더 정리하기 \n내 컴퓨터의 특정 폴더를 연결하고 파일을 정리할 수 있습니다. \n하나하나 손 볼 필요가 없어 체감이 가장 커요\n\n---\n\n2/ 이메일 정리 \nGmail을 연동하면 받은 편지함 관리도 맡길 수 있습니다.\n아침마다 메일함 정리하는 30분을 되찾을 수 있습니다.\n\n---\n\n3/ 리서치 → 발표자료 원스톱 생성\nClaude가 웹 리서치를 수행하고 분석을 정리합니다.\n\"조사 → 정리 → 발표자료\"라는 3단계 작업이 하나의 프롬프트로 끝납니다. 유저의 컴퓨터 안에 저장된 문서까지 연결할 수 있어요!\n\n---\n\n더 많은 Cowork 활용 사례 여기있어요💫\nhttps://ai.gpters.org/4rlLdAc\n\n---\n\n<무료로 바이브코딩 배우기>\nhttps://ai.gpters.org/threads_event",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/631391207_17926130586219174_5042815483821177690_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTQ0MHg5MDAuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QEC4hpaMnMdYs7hReUNffsOB5MQro0rvVBcm-AfR7hHdehMR8aUI3uikVm9y3h4qsY&_nc_ohc=WfaiBJYjZMEQ7kNvwEFt3tT&_nc_gid=fq4uGDPQSqD1Ng-YU_iruw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMTQwMjAyNTU4MjcyMjEzOQ%3D%3D.3-ccb7-5&oh=00_Afszeym0oDvLoqKBJCiiCKHkLO7j6amDdm_eI5zgbcDAig&oe=699ADD0F&_nc_sid=10d13b",
@@ -7955,33 +8219,33 @@
         "web_viewer/images/c6ecb67737610ce74ec7b3aebeabb546.jpg",
         "web_viewer/images/6edef8903e4c2a13d9490f90dd1a6fb8.jpg"
       ],
-      "code": "DUr39e2kfxb",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUr39e2kfxb",
       "user": "gptersorg",
       "timestamp": "2026-02-13 13:58:55",
-      "is_merged_thread": true,
       "original_item_count": 6,
-      "is_detail_collected": true,
       "platform_sequence_id": 278
     },
     {
-      "sequence_id": 396,
+      "sequence_id": 406,
       "sns_platform": "threads",
+      "code": "DUqctkUER1V",
       "full_text": "오늘 다른교수들앞에서 notebooklm에서 간단한  videodeck사용법을 보여줬더니 모두 ‘우와‘ 한다. 이건 마치 90년대초에 DOS에서 ’Dir’ 입력했을때 ‘우와’ 하던 그느낌이다. 나 아무것도 몰라요. 😢. 정말로.\n\n---\n\n아..그리고 Unix하신분들이 ls 가 먼저다 하시면 그것도 인정.",
       "media": [],
       "crawled_at": "2026-02-18T10:58:34.512",
-      "code": "DUqctkUER1V",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUqctkUER1V",
       "user": "sunghwanjoo",
       "timestamp": "2026-02-13 00:41:34",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 273
     },
     {
-      "sequence_id": 397,
+      "sequence_id": 407,
       "sns_platform": "threads",
+      "code": "DUrnyi-k1lJ",
       "full_text": "ChatGPT PRO 풀매수 갑니다\n\n사용하기만 눌러놓으면 순차적으로 등록되고\n유효기간안에 사용하기만 눌러놓으면 된다네\n설날에 가족들 만나면 번호별로 다 선물 받을예정😂",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/630218259_17893803975408836_6766047096890070828_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTE3OXgxMjIxLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QEO22wPxb_vH8Z29ExvbDo8T-AjqlScBCpLZL33udE4C4pVGyH511Acdn4cvBPMiiU&_nc_ohc=Tpjoym--9XwQ7kNvwHfbV42&_nc_gid=6Lybz2_tkzCmfMDeVbF0VQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMTMzMDkwNTM1MzU3NDcyOQ%3D%3D.3-ccb7-5&oh=00_AfuS_j7oP61UFdc9gToT1VBtMg8iPsxLrTqnbL64XEL10A&oe=699AF5E1&_nc_sid=10d13b"
@@ -7990,18 +8254,18 @@
       "local_images": [
         "web_viewer/images/425b67e23fad3c57b825057d9bf21ae0.jpg"
       ],
-      "code": "DUrnyi-k1lJ",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUrnyi-k1lJ",
       "user": "gptaku_ai",
       "timestamp": "2026-02-13 11:37:37",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 274
     },
     {
-      "sequence_id": 398,
+      "sequence_id": 408,
       "sns_platform": "threads",
+      "code": "DUrlabpic31",
       "full_text": "어제 카카오톡 선물하기에 ChatGPT Pro 1개월 구독권이 29,000원에 올라왔어요.\n\n정가 월 29만 원. 1/10 가격. 커뮤니티 대란.\n\n저도 질렀는데요. 평소에 Claude랑 Cursor 쓰는 사람이라 \"뭐가 다른데?\" 하면서 알아봤습니다.\n\n결론: 용도가 다른 물건이었어요.\n\nPro의 진짜 가치는 5가지입니다: \n1️⃣ Deep Research (월 120회 리서치 보고서, 30분이면 끝) \n2️⃣ GPT-5 전문가급 추론 (실행 가능한 전략) \n3️⃣ Agent Mode (시키면 알아서 끝까지) \n4️⃣ 무제한 이미지 (미드저니 필요 없음) \n5️⃣ Codex + 메모리 (나만의 AI 시스템)\n\n커피 5잔 값에 잡은 기회, 날씨 검색으로 날리지 마세요.\n\n실전 활용법 블로그에 정리했습니다.\n\n#ChatGPTPro #AI활용법 #딥리서치 #AgentMode #GPT5 #카카오톡선물하기\n\n---\n\nhttps://techtaek.com/chatgpt-pro-%EC%B9%B4%EC%B9%B4%EC%98%A4%ED%86%A1-%EB%8C%80%EB%9E%80%EC%97%90-%EC%A7%88%EB%A0%80%EB%8A%94%EB%8D%B0-%EA%B2%80%EC%83%89%EB%A7%8C-%ED%95%98%EA%B3%A0-%EC%9E%88%EB%8B%A4%EB%A9%B4/",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/626278322_17858538927605524_2606614123854796399_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMjE2MHgxMTc4LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QE9Hemu4RJ8a1ekFTbjOQnfnNxddUY5ODrgjNJlj0bhiUuvhDn07rnC-zXuOECCTBQ&_nc_ohc=PHl1xXdckQsQ7kNvwE2Z4hp&_nc_gid=MBDuSBby90fShpsKkBp4Qg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMTMyMDQ1MjEyMzk3MTA2MQ%3D%3D.3-ccb7-5&oh=00_AfshUmdxYXFnACYio4MPV-1xB2Z9WFbHFot-sNTThYUcqg&oe=699B0192&_nc_sid=10d13b"
@@ -8010,18 +8274,18 @@
       "local_images": [
         "web_viewer/images/017ad21604e104fcc6487f4964fcefcd.jpg"
       ],
-      "code": "DUrlabpic31",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUrlabpic31",
       "user": "tech.taek",
       "timestamp": "2026-02-13 11:16:50",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 275
     },
     {
-      "sequence_id": 399,
+      "sequence_id": 409,
       "sns_platform": "threads",
+      "code": "DUr86U3Ec1f",
       "full_text": "[ OpenClaw 설치 필수 - Oc-Memory ]\n\n@asin_cartel 님이 개발하신 + 허나 너무 개발자셔서 좋은 걸 개발했음에도 쉽게 설명을 못하시는거 같아 비개발자 수준으로 풀어드림\n\n설치법 ( 텔레그램으로 )\n\" github.com/chaos1358/Oc-Memory 설치해줘 \"\n\n세팅법 ( 텔레그램으로 )\n\" LaunchAgent로 백그라운드 상시 실행해주고 감시폴더는 ~/Documents/Oc-Memory 폴더 만들어서 그 안으로 해줘 \"\n\n사용법 ( 텔레그램으로 )\n“Oc-Memory를 이용해서 매일 1회 텔레그램 대화 내용을 자동으로 요약해서 장기 메모리로 쌓아줘”\n\n설치 이유 --> 댓글 참조\n\n---\n\n설치 이유\nOpenclaw 사용하다보면 장기기억으로 저장해달라고 하더라도 뭐가 중요한 내용인지 아닌지 openclaw가 직접 구분하기도 어렵기에 다 저장해버리는게 젤 좋음\n\n그런데 다 저장해달라고 하면 나중에 그 기억을 불러올 때 입력 토큰값이 어마어마 해짐 그걸 @asin_cartel 님은 압축해서 토큰 값을 90% 이상 줄일 수 있는 걸 개발하신것! \n\n이 외에도 ~/Documents/Oc-Memory 폴더 안에 자주 쓰는 운영규칙이나 외부에서 참조해서 적용 시켜야할 내용들이 있다면 그 파일들을 넣어놓고\n\n\"내 메모에서 xxxxx.md 파일 참조해서 ( 대화 맥락 밖 장기 정보 ) 일 처리해줘\"\n\n이런식으로 사용가능해집니다.\n\n사용하시다 문제 있으면 @asin_cartel 님한테 뭐라하시길 ㅋㅋㅋㅋ",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/626271262_17849734677676750_6478794991013606734_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQ0eDI4My5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QEvl_6JICQ8Nlh2S6bU_yHFHgao2ZtyyFM6-vOjtqenMuoevDbSb6vnfQ8-6qZAfmE&_nc_ohc=NGOnEwDqnNUQ7kNvwGdA6j4&_nc_gid=RPeFetkwndykVBWmrdx2Zg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMTQyMzc5ODkyNzgwNTc5MQ%3D%3D.3-ccb7-5&oh=00_Afs01BZRCgzOmE7ZPtQTXOkYf29CnUmjRjm3p8cNKrte-Q&oe=699AF09F&_nc_sid=10d13b"
@@ -8030,18 +8294,18 @@
       "local_images": [
         "web_viewer/images/c0278894634dbbc4553f234aa510713f.jpg"
       ],
-      "code": "DUr86U3Ec1f",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUr86U3Ec1f",
       "user": "openclaw_ko",
       "timestamp": "2026-02-13 14:42:10",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 276
     },
     {
-      "sequence_id": 400,
+      "sequence_id": 410,
       "sns_platform": "threads",
+      "code": "DUqKfGWket1",
       "full_text": "안티그래비티를 가장 잘 사용할 수 있는 방법으로\noh-my-ag⚡️를 공유 드렸었는데 \n생각보다 어떻게 쓰셔야할지 모르시는분들이 \n많아보여서개발판에선 흔치 않은 \n한국어 가이드문서🤞🏻를 만들어왔습니다.\n\n+ 겸사겸사 클로드코드, 코덱스에서도 호환가능한 업데이트를 해왔습니다.\n(근데 요즘 더 쿼타 박하고 더 말썽인거같은 opus4.6 보다는.. 안티그래비티에서 gemini3.0 혹은 codex를..추천.. 합니다..)\n\n링크는 댓글에 첨부해둘테니 유용하게 사용해주세요🏃🏻‍♀️‍➡️\n아 큰거 준비하고있습니다. 빠르게 공유드릴 수 있었으면 좋겠네요..\n\n---\n\nhttps://first-fluke.github.io/oh-my-ag/ko/getting-started/introduction/\n\n마음에드셨다면... 🌟⭐️\n\n아.. 잘 모르시겠으면 사용하시는 agent에 문서 그대로 던지시고 “세팅해.” 하시면됩니다. (영어링크로 바꿔서 토큰아끼세요)",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/626264777_17921148189255383_5698898447933285885_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNDk2eDQ1NC5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2QHC-hYDpB0ky2YDiMoi3pH0jgvwcaooWN14ADsJ6J2iCljTeEBgt6n1RWdExHRPV8Q&_nc_ohc=9qGiUSRrewUQ7kNvwGG6QMF&_nc_gid=eWOfDei2o8-WUggpceJDhw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMDkyMDU1MDYyMjAzMDcwOQ%3D%3D.3-ccb7-5&oh=00_Afsg55suzUcHe-ASIic_0K9zvB-IBKQiYvFrFT-0OxcbrA&oe=699AFBCC&_nc_sid=10d13b"
@@ -8050,48 +8314,48 @@
       "local_images": [
         "web_viewer/images/b3e8f01adbd43ef5a2ff568bd4229878.jpg"
       ],
-      "code": "DUqKfGWket1",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUqKfGWket1",
       "user": "mega_fluke",
       "timestamp": "2026-02-12 22:02:18",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 271
     },
     {
-      "sequence_id": 401,
+      "sequence_id": 411,
       "sns_platform": "threads",
+      "code": "DUqZbPtk3Fu",
       "full_text": "ChatGPT Pro 축제 기념 짧은 팁\n\nClaude Code CLI 처럼\nclaude --dangerously-skip-permissions 하려면\n\nCodex는\ncodex --dangerously-bypass-approvals-and-sandbox\n\n또는\ncodex --yolo",
       "media": [],
       "crawled_at": "2026-02-18T10:58:37.572",
-      "code": "DUqZbPtk3Fu",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUqZbPtk3Fu",
       "user": "seolo_o",
       "timestamp": "2026-02-13 00:12:51",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 272
     },
     {
-      "sequence_id": 402,
+      "sequence_id": 412,
       "sns_platform": "threads",
+      "code": "DUraBf6kt3J",
       "full_text": "카카오 GPT Pro 이용권 등록해보면서 확인한 사항 메모:\n\n[준비 단계: GPT Plus 구독 취소]\n1. 카카오 GPT에서 내가 원래 쓰던 GPT 계정을 등록해놓아야 한다. 안그러면 엉뚱한 카톡 계정이 Pro로 업그레이드 됨.\n2. 내 GPT 계정이 Plus 구독을 사용중이었다면, 구독 취소를 해서 먼저 Free 요금제로 내려놓아야 한다.\n3. GPT Plus 구독 취소는 [Help Center > 우측하단 챗봇 클릭 > '현재 구독 즉시 취소 및 환불해줘'라고 말하면 됨\n\n---\n\n[등록 단계]\n1. GPT 계정확인: 카카오톡 > 말풍선 > 상단 ChatGPT탭 > 우측상단 더보기 > 설정 > 연결된 ChatGPT계정 확인\n2. 등록: 카카오톡 > 가방 > 우측 상단 MY > 사용가능한 선물에서 GPT Pro 이용권 > 등록하기 > 3초정도 기다리면 팝업이 뜸 > 등록하기 \n3. 결과 확인: ChatGPT 앱 > 좌측상단 더보기 > 하단 이름 클릭 > 구독란 ChatGPT Pro 확인 (저는 바로 보였는데 옆자리 동료는 3분정도 지연되었습니다)\n\n---\n\n듣기로는 이어서 이용권 추가구입해서 등록하면 기간이 연장된다던데..\n그건 좀 더 알아보고 업데이트 해보겠습니다~!",
       "media": [],
       "crawled_at": "2026-02-18T10:58:37.573",
-      "code": "DUraBf6kt3J",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUraBf6kt3J",
       "user": "danduck.ai",
       "timestamp": "2026-02-13 09:37:19",
-      "is_merged_thread": true,
       "original_item_count": 3,
-      "is_detail_collected": true,
       "platform_sequence_id": 270
     },
     {
-      "sequence_id": 403,
+      "sequence_id": 413,
       "sns_platform": "threads",
+      "code": "DUrae9MEt24",
       "full_text": "카카오에서 산 ChatGPT 이용권 내 PC GPT 계정에 적용하는 법\n스레드로 계속 찾다가 못찾아서 내가 적용해놓은 방법 올려.\n\n1. 카카오 GPT 구입\nhttps://gift.kakao.com/product/12953074\n\n2. 선물함에서 이용권 번호 복사\n\n3. 카카오 앱에서 ChatGTP 탭(전체/안읽음/ChatGPT) 열어 가입 및 동의\n이때 내 PC용 GPT 계정 이메일 연동\n\n4. https://my.kakao.com/voucher 에 들어가서 2번 이용권 번호 적용하면 됨\n\n5. PC로 ChatGPT 로그인한 후 새로고침하면 프로로 나옴\n\n---\n\n기존 플러스면 해지와 남은 기간 환불 먼저한후 연동해주세요.",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/631376130_17908066440343665_2946884148613512277_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMzgzeDI3OC5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QFFYjl-Hhc7K1ZYFSv-FP2kgzpp9ED4qbiBAy7s2cI52n5kEB51YZmG-PaQTdbd13c&_nc_ohc=a77qZfRQ6lEQ7kNvwE1LXbo&_nc_gid=77g518XDQ8WDQTlh6a5TKA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMTI3MTkwMDc5OTE4NTI3MA%3D%3D.3-ccb7-5&oh=00_AftsBphVMV-jhjjN5qB3WgLas3XBGcVzY1d1BY61vksqrw&oe=699B08E3&_nc_sid=10d13b"
@@ -8100,33 +8364,33 @@
       "local_images": [
         "web_viewer/images/fca4f98252f69326f1820dec4d6d1536.jpg"
       ],
-      "code": "DUrae9MEt24",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUrae9MEt24",
       "user": "digitme.co.kr",
       "timestamp": "2026-02-13 09:41:20",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 269
     },
     {
-      "sequence_id": 404,
+      "sequence_id": 414,
       "sns_platform": "threads",
+      "code": "DUfTMPpj9GU",
       "full_text": "https://github.com/first-fluke/oh-my-ag.git\n\n객관적으로 평가할 때, Antigravity가 완벽한 코딩 툴이라고 보기는 어렵습니다. 세부적인 환경 설정이 까다로운 데다, Claude 외의 모델을 적용할 경우 결과물의 품질이 현저히 떨어지는 경향이 있기 때문입니다.\n\n그럼에도 비용 효율성 측면에서는 여전히 타의 추종을 불허하는 IDE라는 사실에는 변함이 없습니다. 이에 해당 툴의 성능을 보다 안정적으로 끌어올릴 수 있는 세팅 팁을 공유합니다.\n\n기획서를 전달하실 때, 채팅창에 다음과 같은 프롬프트를 함께 입력해 보십시오.\n\n\"https://github.com/first-fluke/oh-my-ag.git 를 클론하여 스스로를 업그레이드하세요.\"\n\n이 과정을 거치는 것만으로도 산출물의 완성도가 눈에 띄게 향상되는 것을 확인하실 수 있습니다.",
       "media": [],
       "crawled_at": "2026-02-18T10:58:40.646",
-      "code": "DUfTMPpj9GU",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUfTMPpj9GU",
       "user": "miniminim71",
       "timestamp": "2026-02-08 16:46:44",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 268
     },
     {
-      "sequence_id": 405,
+      "sequence_id": 415,
       "sns_platform": "threads",
+      "code": "DUpJ4AFj5dX",
       "full_text": "구글 제미나이.... 1년 14만원에 갈아탄거 지금 1도 후회 안하는 중....\n다음번에 이런 할인율이 있을지 모르겠지만, 만약에 나오면 무조건 갈아타세요..\n\n---\n\n[노크레딧으로 즐기는 스토리보드 생성방법]\n\n1. 제미나이를 켠다. \n2. 캔버스모드 ON, PRO모드 ON\n3. 커피챗님의 프롬프트 넣기(하단참조)\n4. 끝\n----\n<영화 사이코>의 샤워실 살인 장면을 오마주한 2차 창작물을 만들고 싶습니다. 각 샷에 대한 프롬프트를 포함한 스토리보드 분석을 제공하고, 프리뷰 이미지도 생성해 주실 수 있나요? 이 내용을 표 형식으로 정리해 주시고, 엑셀 파일로도 보내주세요\n\n---\n\n왕 초보자용 영상 뚝딱 올려봅니다. 왕 초보만 보세요.",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/629928682_17944929834100887_392815565692720800_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTc4M3gxMjA2LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QGHrXWXE_yL9IOQU6hBVQv4Bz4_lgAJ1K3nfeWcP_6bXPxYeoWljR_tKpECQMZnVaM&_nc_ohc=1KDgGUsE16UQ7kNvwEIP5kf&_nc_gid=HvAy70lFPnsisfnnUki9pQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMDYzNjM4ODg1NzkxMTEyNw%3D%3D.3-ccb7-5&oh=00_Aft8S0nz8-96XTy7ei-LHwIGZqQWSr-yJhSb4e0x9oKrxQ&oe=699AE9EC&_nc_sid=10d13b",
@@ -8137,18 +8401,18 @@
         "web_viewer/images/774df373f37f2d5030c1230e60717c84.jpg",
         "web_viewer/images/bd42520d1a4a47831fed50cf74a46723.jpg"
       ],
-      "code": "DUpJ4AFj5dX",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUpJ4AFj5dX",
       "user": "do.aiworks",
       "timestamp": "2026-02-12 12:37:44",
-      "is_merged_thread": true,
       "original_item_count": 3,
-      "is_detail_collected": true,
       "platform_sequence_id": 264
     },
     {
-      "sequence_id": 406,
+      "sequence_id": 416,
       "sns_platform": "threads",
+      "code": "DUnbgtKD08M",
       "full_text": "“275개 후킹 멘트 + 17카테고리 + 클릭 복사”\n: 이거 바로 가져가세요! 저는 그냥 여기서 꺼내 씁니다.\n\n이건 그냥 스쳐도 저장각! 이죠~\n후킹 멘트 275개를 그냥 공짜로 한 번에 가져가요.\n17개 카테고리로 이미 정리돼 있어서\n지금 내 콘텐츠 상황에 맞는 ‘첫 문장’만 골라 쓰면 끝.\n\n댓글이 터지는 글은 공통점이 있죠\n사람을 멈추게 하는 첫 문장.\n이 첫문장도 바로 바로 자동으로 만들어 줘요\n\n웅원 댓글 남기면\n인스타나 쓰레드 dm으로 정보 보내줄게요\n\n---\n\n팔로우하셔야 dm 발송이 가능해요!^^",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/631138344_17943547227106081_8047940090564769110_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTc1Nng5NDMuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QFnHS9U1Z0pj4cagxcRiqtM6K_MwCQ4PryK3sX3rfnvvgX8UvEZccGHcW704xFQGZk&_nc_ohc=Xy1PvpU0l7wQ7kNvwFXRIQh&_nc_gid=QQKgun7m4DUjSWEXmfFPyg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMDE1MDYyMjA1ODg5MDk1Mw%3D%3D.3-ccb7-5&oh=00_Afsf_yWC9Ray9UZh7-zl5CFpZEZNmYRu2wXFXCN9SDRvnA&oe=699AF39D&_nc_sid=10d13b"
@@ -8157,18 +8421,18 @@
       "local_images": [
         "web_viewer/images/1d9fc46b7a4491aa1c132065a2f5b29b.webp"
       ],
-      "code": "DUnbgtKD08M",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUnbgtKD08M",
       "user": "anab.branding",
       "timestamp": "2026-02-11 20:33:21",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 265
     },
     {
-      "sequence_id": 407,
+      "sequence_id": 417,
       "sns_platform": "threads",
+      "code": "DUpf-Uskmx0",
       "full_text": "Claude Code - Manager Orchestrator v2.0 (aka.MO2)\n\nContext 관리와, Claude Code 에 맞춰서 업데이트 된 버전.\n이렇게 한눈에 정리해본적은 처음인데, 원하는 구조로 설계는 잘 되어있다.\n\n업데이트 할때의 중점으로 봤던 건 Tasks로 진행하면서 MO2 가 context 유지를 어떻게 하면 가장 효율적으로 할 수 있을지, \"Phase 1~8단계까지 가는동안 여러번 compact 가 될텐데 작업을 어떻게 하면 연속성있게 유지 할 수 있을까?\" 이문제를 해결하기위한 안전장치들을 많이 넣어두었다. \n\n각 Phase마다 md 파일로 context 의 흐름을 단계마다 재해석하지 않게 하는게 주요사항있고, 최초의 목적을 달성하기 위해서 요청사항을 각 Phase 별로 별도로 관리하게 했다.\n\n개발 스펙도 front, backend 작업이 시작하기전에 spec.md 파일을 미리 작성해서, 병렬작업할때를 spec 을 보고 진행하게 했다.\n\n---\n\nQA Skill과 지침도 신경을 많이 쓴 부분인데, 한번의 MO2 를 진행할때 QA는 총 3번을 진행하고 QA에서 나온 Critical/High 이슈가 더이상 나오지 않을때까지 반복한후에 작업 종료를 하고 git push + telegram 알림으로 나에게 작업 완료를 알려준다.\n\n모든 작업은 feature branch에서 작업하기 때문에 완료후엔 자동으로 작업내용은 요약해서 commit message 로 만들어주고 push 된다.\n\n---\n\n전체 구조와 상세스펙 md 파일은 github 에 오픈해두었습니다.\n개인적으로 쓰는 모듈이라 code공개는 되어있지 않고, md파일만 존재하는 프로젝트입니다.\nhttps://github.com/jung-wan-kim/manager-orchestrator",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/632194792_17945089833103328_5346184250952603015_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTQzOXgxNDgwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QGg5DK7FH2jmHd3YiMWnYj8zbuJWJoiEs7_HdYUvCzL-P5oQWl--IH2ZssFgBfHcAE&_nc_ohc=QSsFni13CfcQ7kNvwHae5Se&_nc_gid=YnM_YL1xX0AgMnxCNc1wgA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMDczMzU4MDMyNzM0OTM2NA%3D%3D.3-ccb7-5&oh=00_AfuCDVHYkzZ-cwWHlhKiKWxIWxOok_rAikIRzG14fuj6SQ&oe=699AEEF5&_nc_sid=10d13b",
@@ -8179,18 +8443,18 @@
         "web_viewer/images/a669096d4778bd509210780ea3e63b8f.jpg",
         "web_viewer/images/acf798f4e89325b46eacca88c6d9a0fe.jpg"
       ],
-      "code": "DUpf-Uskmx0",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUpf-Uskmx0",
       "user": "hue_0525",
       "timestamp": "2026-02-12 15:50:50",
-      "is_merged_thread": true,
       "original_item_count": 3,
-      "is_detail_collected": true,
       "platform_sequence_id": 266
     },
     {
-      "sequence_id": 408,
+      "sequence_id": 418,
       "sns_platform": "threads",
+      "code": "DUm-zDsEkn3",
       "full_text": "오늘도 스레드에서 욕들어 처먹는 어리버리 바이브코딩 딸각충들을 위한 개발가이드. 디자인가이드, 방법론 가이드 문서와 사용법을 만들었어요. 욕그만들으시라고 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ\n https://github.com/johunsang/vive-md",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/631489976_17874847140507614_5724412297782130255_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTI4NngxNTk2LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QEoU9YfvtOByvNfaM1zPIy-StW0M-sgeDHFlQjTIq6IzjMpJPpe-qLOEc0LlFfzBAI&_nc_ohc=QZZjQhFl53UQ7kNvwHQI2sG&_nc_gid=hWcnk95EWUMooCAiPyn_gw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMDAyNDcyMDY2MjgwOTA3OQ%3D%3D.3-ccb7-5&oh=00_AfveAaYo7q6mir95YsmAl8ImFEuoIjOJCxOfYfPHubZv0A&oe=699AEBCC&_nc_sid=10d13b"
@@ -8199,18 +8463,18 @@
       "local_images": [
         "web_viewer/images/9c2d1ca01e6070614a2f9f1cffad7d1f.jpg"
       ],
-      "code": "DUm-zDsEkn3",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUm-zDsEkn3",
       "user": "keke_appa",
       "timestamp": "2026-02-11 16:22:27",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 262
     },
     {
-      "sequence_id": 409,
+      "sequence_id": 419,
       "sns_platform": "threads",
+      "code": "DUm37rRDknp",
       "full_text": "나만의 논문 도서관 만드는 도안을 드립니다.\n\n제 시스템은 너무 저에게 맞춰져 있어서 배포가 어렵습니다. 클로드랑 상의(?)하셔서 본인에게 맞춰 제작해보세요..\n\n준비물;\nzotero, zotero api, zotmoov, obsidian, openai api (다른 api 사용 가능, 로컬은 느림). 그리고 적당한 reading log md.j2 (연구 질문, 방법, 결과, 함의 등등)\n\n구조는.. (저는 cli를 interactive하게 사용) \n1. 각 페이퍼별 reading log (개별 논문 정리) \n2. 폴더구조는 zotero 따르기 (논문 구조화, 마음대로) \n3. 페이퍼별, 폴더별 연구 유사점, 차별점 찾기 (구조적 리터러쳐리뷰)\n\n---\n\nrag을 사용해서 pdf의 텍스트들을 직접 retrieval하고 이 논문에 대한 reading log를 작성할때 꼭 인용하는 부분을 excerpt하게 해서 hallucination을 줄입니다. (BM25Retriever 사용 중, keyword search) \n\n빠른 처리를 위해 embedding이 필요한 경우는 별도 api로 선택적으로만 사용 (기능은 만들었으나 딱히 쓸일 없음..)\n\npdf의 텍스트 추출하고 cache 해두어 동일한 페이퍼에 질문사항이 있을때 계속 질문 가능하게함\n\n질문별 summary report를 자동으로 만들거나\n페이퍼 몇개, 폴더 전체 report도 가능.￼\n\n---\n\n무슨 말인지 모르겠다고요? 클로드가 이해하고 알려줄거에요.. 클로드야 저기 박사과정 낭인이 이런글을 올렸는데 이게 뭐냐? 나도 만들수 있겠냐? 해보세요~  @jinaleesoc 교수님께 답변해드린 내용을 끌올합니다.",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/628045462_17939461392117371_5354627509157712703_n.jpg?stp=cp6_dst-jpegr_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTkyMHgxNDQwLmhkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2QHOForObpZ0ff6mSYMe8Odxx4kZSx-HaGjvguQQ0kr0TCDuRh6EpAICKsfyK9_--so&_nc_ohc=WosdgdzdsBMQ7kNvwFEAoAN&_nc_gid=g5cwan7MpsI5qVsrmIhyFA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyOTk5NDUyNjU4OTQ3MTIwOQ%3D%3D.3-ccb7-5&oh=00_AfuRFAlFITDEepzVZKndl53Z3J6bFNaJQH7cWvzknwNidQ&oe=699AD5E8&_nc_sid=10d13b"
@@ -8219,18 +8483,44 @@
       "local_images": [
         "web_viewer/images/7de04671e8db925bdef7822e4bb646d3.jpg"
       ],
-      "code": "DUm37rRDknp",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUm37rRDknp",
       "user": "cactus.kimchi",
       "timestamp": "2026-02-11 15:22:28",
-      "is_merged_thread": true,
       "original_item_count": 3,
-      "is_detail_collected": true,
       "platform_sequence_id": 263
     },
     {
-      "sequence_id": 410,
+      "sequence_id": 420,
+      "platform_id": "DUlWT4Ok5v0",
       "sns_platform": "threads",
+      "code": "DUlWT4Ok5v0",
+      "username": "ddg.kang",
+      "display_name": "강규석",
+      "full_text": "1. webfetch 도구 안쓰도록 금지시키기\n\n문제: webfetch 쓰다가 사이트 잘못 걸리면 거기서 멈춰서 아무것도 못 함.\n\n해결: fetch MCP나 Jina Reader MCP 사용하기.\n\n특히 클코에 돈 쓸 준비가 되어 있다면 Jina Reader MCP 추천 — 컨텍스트 토큰이 절약되어서 엄청나게 이득. fetch MCP는 무료면서 훨 좋음.",
+      "media": [],
+      "url": "https://www.threads.net/@ddg.kang/post/DUlWT4Ok5v0",
+      "created_at": "2026-02-11 01:09:26",
+      "date": "2026-02-11",
+      "crawled_at": "2026-02-18T10:58:46.721",
+      "source": "network",
+      "is_detail_collected": true,
+      "is_merged_thread": false,
+      "root_code": "DUlWT4Ok5v0",
+      "like_count": 38,
+      "reply_count": 1,
+      "repost_count": 3,
+      "quote_count": 1,
+      "pk": "3829565181215874036",
+      "media_type": 19,
+      "content_type": "image",
+      "platform_sequence_id": 260
+    },
+    {
+      "sequence_id": 421,
+      "sns_platform": "threads",
+      "code": "DUmEccXCjhM",
       "full_text": "맥킨지 스타일로 AI 발표 자료 만드는 법\n\n아래 사례는 키미2를 활용한 AI로 제작된 슬라이드. 맥킨지 스타일이 접목이 되어있어 꽤 유용합니다. 키미2 직원이 공유해주는 프롬프트를 변형해서 여러분만의 프롬프트를 이것저것 바꿔보세요.수정도 가능하기에 초안으로 쓰기엔 좋습니다.\n\n보고서 작성 때문에 야근하는 동료들에게 꼭 공유해 주세요\n\n---\n\n프롬프트를 파일 형태로 공유해드립니다. \n\n프롬프트 사용해보기: https://streamshare.wireway.ch/download/zopfchom\n\n---\n\n실제 도출된 결과물 보기 :\nhttps://www.kimi.com/share/19c46de6-2d72-85f3-8000-0000b0bb4269",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/628030654_1586186992521906_600482610511785652_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDQxNC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QGSM51T3DYX5O49_qxjvecdCOM0cVnF-5nqGMO9LLD78skWGUOIf4Fnr5uSqHjAGzQ&_nc_ohc=NFZcam8OB_AQ7kNvwE6scUq&_nc_gid=xM7Z-Ff3Sl7NskTqE3m_Eg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyOTc2ODA3OTkwNzg5NTM3Mg%3D%3D.3-ccb7-5&oh=00_Afuw-bNV-EBAZRoHyCh0-kjkH2N_bMOvHbsSehHM9PPfPA&oe=699AE432&_nc_sid=10d13b"
@@ -8239,48 +8529,48 @@
       "local_images": [
         "web_viewer/images/467946a2e88f8409652369190061d701.jpg"
       ],
-      "code": "DUmEccXCjhM",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUmEccXCjhM",
       "user": "aicoffeechat",
       "timestamp": "2026-02-11 08:02:08",
-      "is_merged_thread": true,
       "original_item_count": 3,
-      "is_detail_collected": true,
       "platform_sequence_id": 261
     },
     {
-      "sequence_id": 411,
+      "sequence_id": 422,
       "sns_platform": "threads",
+      "code": "DUlWTf6kyKL",
       "full_text": "클로드코드 꿀팁 — 개발자 출신들도 잘 모르는 것들\n\n어디서 베낀 거 아니고, 클코 5,000시간 사용하면서 직접 느낀 것들.\n\n---\n\n1. webfetch 도구 안쓰도록 금지시키기\n\n문제: webfetch 쓰다가 사이트 잘못 걸리면 거기서 멈춰서 아무것도 못 함.\n\n해결: fetch MCP나 Jina Reader MCP 사용하기.\n\n특히 클코에 돈 쓸 준비가 되어 있다면 Jina Reader MCP 추천 — 컨텍스트 토큰이 절약되어서 엄청나게 이득. fetch MCP는 무료면서 훨 좋음.\n\n---\n\n2. Skills 남발하지 않기\n\n문제: 클코에 Skills 새로 나왔다고 이것저것 만들기.\n\n해결: 회사 전체가 클코 쓰면서 Skills를 서로 공유해야 하는 상황이 아닌 이상(솔직히 클코 다같이 쓰는 회사 거의 없음.. 다 혼자 쓰실듯), skills 안에 하나의 custom command로 간단하게 넣어놓는 게 훨씬 나음.\n\n(뭔 소린지 모르겠으면 이 글 복붙해서 클코에게 직접 물어보기)\n\n---\n\n3. 그냥 무조건 Opus 쓰기\n\n문제: 토큰 아낀다고 Sonnet, Haiku 사용.\n\n해결: 그냥 Opus 쓰는 게 훨씬 토큰 아낌. 저는 대부분 one-shot에 버그 없이 기능 완성합니다. 그럼 버그 잡느라 대화 안해도 되어서 오히려 절약.\n\n나중에 실제로 5천시간 클코하면서 발전시킨 프롬프트, 스킬도 공유할게요.",
       "media": [],
       "crawled_at": "2026-02-18T10:58:49.807",
-      "code": "DUlWTf6kyKL",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUlWTf6kyKL",
       "user": "ddg.kang",
       "timestamp": "2026-02-11 01:09:23",
-      "is_merged_thread": true,
       "original_item_count": 4,
-      "is_detail_collected": true,
       "platform_sequence_id": 259
     },
     {
-      "sequence_id": 412,
+      "sequence_id": 423,
       "sns_platform": "threads",
+      "code": "DUkjN28koTW",
       "full_text": "직원들한테 절대 말 못하는 게 하나 있습니다. \n솔직히 말하면, 지금 제 직원들중 최소 절반은 AI로 대체할 수 있습니다. \n아니, 이미 제가 혼자 하는 사이드 프로젝트에서는 \n직원 한 명도 안 쓰고 혼자서 따로 월 1억 내외를 벌고 있습니다. \n(내일은 정산금 6600만원이 들어옵니다.)\n\n근데 안 자릅니다. 10년 넘게 같이 일한 사람들입니다. \n저 혼자 밑바닥에서 시작할 때부터 함께한 사람들도 있습니다. \n그 사람들이 없었으면 연매출 50억은 불가능했습니다. \n\n하지만 현실은 냉정합니다. AI가 하루가 다르게 좋아지고 있고, \n바이브코딩으로 비개발자도 서비스를 만드는 세상이 왔습니다. \n\n제가 직원들한테 AI 얘기를 많이 하면 할수록, 톡방이 조용해지는 걸 느낍니다. \n그들도 알고 있는 겁니다. 대표로서 가장 어려운 건, 돈 버는 게 아닙니다. \n같이 가야 할 사람과 효율 사이에서 선택하는 겁니다. \n\n여러분이라면 어떻게 하시겠습니까?",
       "media": [],
       "crawled_at": "2026-02-18T10:58:49.808",
-      "code": "DUkjN28koTW",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUkjN28koTW",
       "user": "leosofts2016",
       "timestamp": "2026-02-10 17:42:58",
-      "is_merged_thread": true,
       "original_item_count": 1,
-      "is_detail_collected": true,
       "platform_sequence_id": 256
     },
     {
-      "sequence_id": 413,
+      "sequence_id": 424,
       "sns_platform": "threads",
+      "code": "DUl7Ra7kbje",
       "full_text": "Cowork is now available on Windows.\n\nWe’re bringing full feature parity with MacOS: file access, multi-step task execution, plugins, and MCP connectors.\n\n---\n\nPlus, you can now set global and folder instructions that Claude carries into every session.\n\nCowork on Windows is in research preview and available to all paid Claude plans: claude.com/cowork",
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/629589417_1258447813015728_6263977072047037056_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDM2MC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QErYKywsKca9wIwoRKfVrpUIUO4F-ebCRQxN64JbsQGrsdvK5qYYKUFO4oxpGJmU7A&_nc_ohc=lFa3-jqhdfQQ7kNvwEWeND2&_nc_gid=ZhJKyMsmyBWa3cPhOqFgsQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyOTcyNzc0MDA0MDQyNzc0Mg%3D%3D.3-ccb7-5&oh=00_AfvWhmBl3BAh0nydcc7yCeO_5xF8Tu2c48d68h-Iir--tA&oe=699AD64B&_nc_sid=10d13b"
@@ -8289,49 +8579,49 @@
       "local_images": [
         "web_viewer/images/1d8c5b86a3ffdfbe5471c849d6240084.jpg"
       ],
-      "code": "DUl7Ra7kbje",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUl7Ra7kbje",
       "user": "claudeai",
       "timestamp": "2026-02-11 06:33:23",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 257
     },
     {
-      "sequence_id": 414,
+      "sequence_id": 425,
       "sns_platform": "threads",
+      "code": "DUkMWqNk9OY",
       "full_text": "쿠팡❌ 네이버❌ \n\n이제는 Gemini가 진짜 ‘최저가’만 찾아준다.\n\n아래 프롬프트들로 난 월에 100만원씩 아낀다.\n\n---\n\n1. 온라인 최저가 찾기\n\n[제품명]의 현재 온라인 최저가를 찾아줘. 쿠팡이나 네이버에서 위에 뜨는 가격이 아니라, 실제로 결제 가능한 최저 금액 기준으로 조사해줘. 대형 쇼핑몰뿐 아니라 중소 쇼핑몰, 틈새몰까지 전부 포함하고, 광고성 결과나 스폰서 링크는 제외해줘. 배송비와 옵션 추가금까지 포함한 최종 결제 금액 기준으로 비교하고, 동일 모델·동일 스펙 제품만 비교해서 표로 정리해줘. 표에는 판매처, 최종가, 배송비, 재고 여부, 신뢰도, 구매 링크를 포함해줘.\n\n---\n\n2. 숨겨진 할인코드와 혜택 검색\n\n[제품명 또는 브랜드]에 적용 가능한 실제 사용 가능한 할인 혜택을 전부 찾아줘. 공개된 프로모션 코드뿐만 아니라 잘 드러나지 않는 할인, 캐시백, 적립금, 회원 혜택까지 포함하고, 중복 적용이 가능한 조합이 있다면 함께 계산해줘. 특정 카드나 유료 멤버십이 필수인 조건은 제외하고, 만료됐거나 적용이 안 되는 낚시성 정보도 빼줘. 각 혜택마다 적용 방법, 실제 할인 금액, 유효 기간, 최종 체감가를 명확히 정리해줘.\n\n---\n\n3. 가성비 좋은 대체 제품 비교\n\n[제품명]을 기준으로, 성능 대비 가격이 더 좋은 가성비 대체 제품 5개를 추천해줘. 단순히 싼 제품이 아니라, 실제 사용 기준에서 체감 성능이 비슷하거나 더 나은 제품만 포함해줘. 스펙 숫자 나열 말고, 실사용 기준 장단점을 중심으로 비교해주고 가격 대비 어떤 점이 더 유리한지도 설명해줘. 각 제품마다 현재 평균 구매가, 주요 장점, 단점, 이런 사람에게 추천하는지를 함께 정리해줘.\n\n---\n\n4. 곧 세일할지 예측하기\n\n[제품명]의 최근 가격 변동 흐름과 과거 할인 패턴을 분석해서, 가까운 시일 내에 할인될 가능성이 있는지 예측해줘. 시즌성 할인, 브랜드 행사 주기, 신제품 출시 타이밍 등을 함께 고려해서 “지금 사는 게 나은지, 기다리는 게 나은지”를 명확히 결론으로 내려줘. 만약 기다린다면 예상 시기와 기대 할인 폭도 함께 알려줘.\n\n---\n\n5. 리퍼비시 / 오픈박스 특가 찾기\n\n[제품명]의 리퍼비시 또는 오픈박스 제품 중에서 신뢰할 수 있는 판매처 기준으로 가장 가성비 좋은 옵션을 찾아줘. 목표 가격은 [$금액] 이하로 설정하고, 단순 최저가가 아니라 상태 대비 가격이 좋은 제품만 선별해줘. 각 제품마다 상태 등급, 사용 흔적 여부, 구성품 포함 여부, 보증 유무를 명확히 설명해주고, 새 제품 대비 얼마나 절약되는지도 계산해줘.\n\n---\n\n6. 가격 하락 알림 설정\n\n[제품명]의 가격이 [$금액] 이하로 떨어질 경우 바로 알 수 있도록 현실적으로 가능한 가격 추적 방법을 설계해줘. 특정 사이트 알림, 가격 추적 서비스, 이메일 알림, 직접 체크하는 최소 노력 루트까지 포함해서 가장 효율적인 방법을 추천해줘. 설정 방법은 초보자도 그대로 따라 할 수 있게 단계별로 설명해주고, 놓치기 쉬운 함정이나 주의할 점도 함께 알려줘.\n\n---\n\n📌 EASY GPT 무료 실시간 강의 (2026 ver)\n\n🚨강의 내용이 전면 개편 되었습니다‼️\n- 기존에 강의를 들으셨던 ‘7000명’의 분들도 무조건 다시 들으셔야 합니다.\n\n🗓 2월 24일(화) 오후 7시 30분\n\n💻AI 써보긴 했는데, \n수익으로는 안 이어졌나요?\n\n결국 핵심은 단 하나입니다.\nSNS → 상세페이지 → 판매\n\n이 흐름을\n👉 AI로 어떻게 복붙만 해서 구현하는지\n👉 실제로 돈이 되게 어떻게 연결하는지\n이번 강의에서 전부 공개합니다.\n\n정말 아무것도 모르는 분들도 따라올 수 있게\n차근차근 준비한 강의입니다.\n많은 기대 부탁드립니다.\n\n무료 강의 방 링크\n￼https://open.kakao.com/o/gs2v23ci￼",
       "media": [],
       "crawled_at": "2026-02-18T10:58:49.808",
-      "code": "DUkMWqNk9OY",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUkMWqNk9OY",
       "user": "easygpt2526",
       "timestamp": "2026-02-10 14:23:11",
-      "is_merged_thread": true,
       "original_item_count": 8,
-      "is_detail_collected": true,
       "platform_sequence_id": 258
     },
     {
-      "sequence_id": 415,
+      "sequence_id": 426,
       "sns_platform": "threads",
+      "code": "DUj4WpgEpPk",
       "full_text": "[1/7]\nOpus 4.6이랑 Codex 5.3 나온 지 5일 됐는데\nHN이랑 커뮤니티 보니까 재밌는 현상이 있어요\n\n한쪽만 쓰는 사람이 거의 없어요\n대부분 둘 다 쓰는데, 조합법이 크게 3가지로 갈려요\n\n저도 4.5/5.2 때부터 둘 다 쓰고 있었거든요\n제 패턴이랑 다른 사람들 패턴 비교해보니까\n\"왜 그렇게 쓰는지\"가 보이더라고요\n\n---\n\n[2/7]\n먼저 4.5/5.2 때부터 느꼈던 핵심 성격 차이예요\n\nOpus는 큰 그림을 잘 봐요\n\"이 프로젝트 구조 어떻게 잡을까\"\n\"이 아키텍처 이대로 괜찮을까\"\n이런 거 시키면 진짜 잘함\n\nCodex는 세부 영역을 끈질기게 파요\nOpus가 \"됐어 이 정도면\" 하고 넘어가는 버그를\nCodex는 끝까지 물고 늘어져서 고쳐요\n\n4.6/5.3에서 이게 더 선명해졌어요\nOpus 4.6은 전체 그림이 더 좋아졌고\nCodex 5.3은 속도가 확실히 빨라졌고요\n\n이 성격 차이 때문에 사람들 조합법이 갈리는 거예요\n\n---\n\n[3/7]\n패턴 1: Opus 코딩 + Codex 난제 해결 (제가 쓰는 방식)\n\n기본 작업은 전부 Opus로 돌려요\n새 기능, 리팩토링, 구조 잡기, 일반 버그 수정\n\n근데 가끔 Opus가 같은 데서 자꾸 실패하거든요\n로직이 꼬이거나 엣지 케이스가 복잡할 때\n\n이럴 때 Codex한테 넘기면 끈질기게 파서 풀어줘요\nOpus가 못 풀어내는 걸 Codex가 풀어가는 느낌\n\nHN에서도 비슷한 사람이 있었어요\n\"Claude가 코딩하고 Codex 5.2-high가 리뷰한다\"\n\"Codex는 잔소리 안 하고 진짜 문제만 짚어준다\"\n\n이 조합의 핵심:\n왠만한 건 Opus가 다 풀고, 진짜 어려운 것만 Codex로\n\n---\n\n[4/7]\n패턴 2: Codex 코딩 + Opus 리뷰 (정반대)\n\n이건 제 방식이랑 완전 반대인데 쓰는 사람이 꽤 있어요\n\n\"5.2 Codex가 메인 코딩 모델이 됐다.\n작업 끝나면 Opus한테 더블체크 시킨다.\n다른 프론티어 모델의 의견을 듣는 게 좋다\"\n\n이 사람들은 Codex의 안정성을 높이 사요\n명확한 스펙 주면 빠르고 정확하게 쳐내거든요\nOpus는 가끔 \"다 했어요\" 하고 실패한 걸 보고하는데\nCodex는 그런 게 적다는 거예요\n\n이 조합의 핵심:\n안정적 실행은 Codex, 놓친 거 잡아내는 건 Opus\n\n---\n\n[5/7]\n패턴 3: 역할별 3단 분업 (프로 세팅)\n\n이건 좀 빡센 세팅인데 쓰는 사람들이\n\"이게 제일 효과 좋다\"고 해요\n\n\"Opus로 설계/아키텍처\nSonnet이나 Codex로 구현\nGemini로 리뷰/QC\"\n\n한 개발자는 Codex review 스킬을 만들어서\nClaude한테 코딩시키고 Codex가 자동 리뷰하게 했는데\n3~4번 핑퐁하면서 합의점을 찾더래요\n\nEvery 팀도 비슷해요\nCEO는 \"바이브 코딩은 Opus, 시리어스 엔지니어링은 Codex\"\nCTO는 \"Opus 메인에 Codex로 플래닝/리뷰\"\nPM은 그 반대\n\n같은 팀인데 사람마다 달라요\n\n---\n\n[6/7]\n왜 패턴이 갈리는지 알겠더라고요\n\nHN에서 누가 정리를 잘 해놨는데\n\nOpus 4.6: 자율형\n- 깊게 계획하고, 오래 돌리고, 덜 물어봄\n- 애매하게 시켜도 알아서 조사하고 해결\n- 대신 가끔 삽질하고도 \"됐어요\" 하는 경우 있음\n\nCodex 5.3: 협업형\n- 중간에 방향 틀 수 있고, 루프 안에 있음\n- 명확한 스펙에 빠르고 정확하게 실행\n- 대신 스펙이 모호하면 추측하거나 멈춤\n\n자기 작업 스타일이\n\"대충 시키고 결과만 볼래\" → Opus 메인\n\"같이 보면서 방향 잡을래\" → Codex 메인\n\n둘 다 맞아요. 프로젝트 성격에 따라 다른 거예요\n\n---\n\n[7/7]\n그래서 뭘 하면 되냐면요\n\n1단계: 지금 쓰는 모델로 평소처럼 작업하세요\n2단계: 막히거나 결과가 별로면 다른 모델에 같은 걸 던지세요\n3단계: 어디서 차이가 나는지 직접 체감하세요\n\n저는 이렇게 해보니까\nOpus 80% + Codex 20% (난제용)가 제 패턴이 됐어요\n\n근데 반대로 Codex 메인인 사람도\n1주일에 PR 28개 중 26개 머지했다고 하거든요\n\n정답은 없어요\n자기 프로젝트에 맞는 비율을 찾는 게 핵심이에요\n\n한 모델만 고집하는 건 확실히 손해니까\n이번 주에 반대편 모델 한 번 써보세요",
       "media": [],
       "crawled_at": "2026-02-18T10:58:49.818",
-      "code": "DUj4WpgEpPk",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUj4WpgEpPk",
       "user": "nomadlabs_cozac",
       "timestamp": "2026-02-10 11:28:25",
-      "is_merged_thread": true,
       "original_item_count": 7,
-      "is_detail_collected": true,
       "platform_sequence_id": 254
     },
     {
-      "sequence_id": 416,
+      "sequence_id": 427,
       "platform_id": "DUhnAkckr51",
       "sns_platform": "threads",
+      "code": "DUhnAkckr51",
       "username": "bellman.pub",
       "display_name": "벨만",
       "full_text": "좋은 정보 감사합니다! Claude Code와 에이전트 커뮤니티가 점점 커지는 게 느껴지네요. 저희도 Agent Teams 프로젝트를 통해 이 생태계에 기여하고 있는데, 이런 리소스들이 정말 큰 힘이 됩니다. 함께 멋진 커뮤니티 만들어가요! 👍 https://github.com/Yeachan-Heo/oh-my-claudecode",
@@ -8341,6 +8631,7 @@
       "date": "2026-02-09",
       "crawled_at": "2026-02-18T10:58:49.818",
       "source": "network",
+      "is_merged_thread": false,
       "root_code": "DUhnAkckr51",
       "like_count": 0,
       "reply_count": 0,
@@ -8349,69 +8640,3839 @@
       "pk": "3828512721189650037",
       "media_type": 19,
       "content_type": "image",
-      "code": "DUhnAkckr51",
-      "is_merged_thread": false,
       "platform_sequence_id": 255
     },
     {
-      "sequence_id": 417,
+      "sequence_id": 428,
       "sns_platform": "threads",
+      "code": "DUj2eJmEti6",
       "full_text": "웹이나 앱을 개발하다 보면 특정 시간에 맞춰 데이터를 갱신하거나, 사용자에게 알림을 보내는 등 '자동 실행' 기능이 간절할 때가 있죠. 개발자들은 이를 스케줄링(Scheduling) 또는 배치(Batch) 작업이라고 부릅니다.\n\n최근 Vercel과 Supabase 기반의 프로젝트를 작업하면서, 최대한 비용을 들이지 않고(무료!) 이 기능을 구현하기 위해 여러 방법을 시도해 봤는데요. 직접 '삽질'하며 겪은 경험을 바탕으로 Vercel Cron, GitHub Actions, 그리고 제가 정착한 cron-job.org를 비교해 볼게요\n\n---\n\n1. Vercel Cron \n\nVercel로 배포 중이라면 가장 먼저 고려하게 되는 옵션입니다. vercel.json 파일에 설정만 추가하면 되니 정말 편하죠.\n\n직접 써보니: 설정은 10초 컷입니다. 하지만 **무료 티어(Hobby Plan)**의 제약이 뼈아픕니다. 하루에 실행할 수 있는 횟수가 제한적이라, 1시간 단위나 1분 단위로 정교하게 돌리기엔 금방 한계에 부딪히더라고요.\n\n한줄평: \"Vercel 안에서 다 해결하고 싶지만, 내 지갑(무료 선호)과는 거리가 있었다.\"\n\n---\n\n2. GitHub Actions\n\n\"어차피 코드가 GitHub에 있으니 여기서 돌리면 공짜 아냐?\"라는 생각으로 시도해 본 방법입니다.\n\n직접 써보니: cron 구문을 지원해서 만능처럼 보입니다. 하지만 결정적인 단점, 바로 **실행 지연(Delay)**입니다. 00분에 맞춰 실행되게 설정해도, GitHub 서버 상황에 따라 10분, 늦으면 30분 뒤에나 실행되곤 합니다. 정시성이 중요한 기능에는 도저히 쓸 수 없겠더군요.\n\n한줄평: \"시간 약속 안 지키는 친구 같은 느낌. 배치 작업은 되지만 스케줄링은 글쎄요.\"\n\n---\n\n3. cron-job.org \"결국 정답은 외부에 있었다\" (강력 추천!) 🏆\n\n결국 제가 정착한 곳은 cron-job.org라는 외부 서비스입니다. 리눅스 서버의 크론탭을 UI로 옮겨놓은 듯한 서비스죠.\n\n직접 써보니: 이번 '삽질'의 가장 큰 수확입니다. 실행하고 싶은 API 주소(URL)만 입력하면 정해진 시간에 정확히 호출해 줍니다.\n\n장점: * 정확도: GitHub Actions와 달리 설정한 시간에 칼같이 실행됩니다.\n\n편의성: 대시보드에서 성공/실패 여부를 한눈에 볼 수 있고, 실패 시 알림도 보내줍니다.\n\n혜자스러운 무료: 무료 플랜임에도 실행 횟수가 상당히 넉넉합니다.\n\n한줄평: \"이걸 왜 이제 썼나 싶을 정도의 안정감. Vercel/Supabase 조합에는 이만한 파트너가 없습니다.\"",
       "media": [],
       "crawled_at": "2026-02-18T10:58:49.819",
-      "code": "DUj2eJmEti6",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUj2eJmEti6",
       "user": "info__sum",
       "timestamp": "2026-02-10 11:11:58",
-      "is_merged_thread": true,
       "original_item_count": 4,
-      "is_detail_collected": true,
       "platform_sequence_id": 252
     },
     {
-      "sequence_id": 418,
+      "sequence_id": 429,
       "sns_platform": "threads",
+      "code": "DUkSr_okoao",
       "full_text": "🍯 codex 넉넉하게 사용하고 싶을때 꿀팁\n\n20달러 ChatGPT Plus 플랜은 사용량이 부족하고,\n200달러 Pro 플랜으로 업데이트 하기에는 부담되는데...\n하실때는 30달러 Business 플랜으로 바꿔보세요!\n\ncodex 사용량이 늘어나는 것은 물론이고\nChatGPT 에서 Pro 모델도 사용가능하게 됩니다!\n\n---\n\n누락된 정보가 있어 추가로 적어두겠습니다!\n\nChatGPT Business 플랜은 특성상 최소 2명부터 이용 가능해서, 주변 친구나 가족과 함께 사용해야 합니다.\n\n중요한 정보를 빼먹어 죄송합니다 🥹",
       "media": [],
       "crawled_at": "2026-02-18T10:58:49.819",
-      "code": "DUkSr_okoao",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUkSr_okoao",
       "user": "dev_soon.0_0",
       "timestamp": "2026-02-10 15:18:32",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 253
     },
     {
-      "sequence_id": 419,
+      "sequence_id": 430,
       "sns_platform": "threads",
+      "code": "DUjzx-ZAVmV",
       "full_text": "Gemini AI 쓰다보면 점점 멍청해지고 헛소리 할 때 있지?\n\n그럴 때 내가 쓰는 방법이 있는데 \"지금까지의 작업 내용을 정리하여 마크다운 형식으로 인수인계서를 작성하고 파일로 만들어줘\" 라고 하면 작업인수인계서.md 파일을 만들어 주는데 그걸 NotebookLM에 업로드 하고 Gemini 새채팅에서 +버튼 눌러서 불러오면 돼. 새채팅으로 옮길때 마다 파일을 NotebookLM에 업데이트 하면 작업을 계속 이어서 새채팅에서 할 수 있어.\n\n---\n\n소소한팁이라 생각 했는데 다들 좋아해줘서 고마워! NotebookLM 활용 사례 몇개 더 낋여올게~",
       "media": [],
       "crawled_at": "2026-02-18T10:58:52.882",
-      "code": "DUjzx-ZAVmV",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUjzx-ZAVmV",
       "user": "calmtiger_",
       "timestamp": "2026-02-10 10:48:28",
-      "is_merged_thread": true,
       "original_item_count": 2,
-      "is_detail_collected": true,
       "platform_sequence_id": 250
     },
     {
-      "sequence_id": 420,
+      "sequence_id": 431,
       "sns_platform": "threads",
+      "code": "DUjtqlHExZ9",
       "full_text": "강사님들 바이브코딩 강의 공부하시려고 할 때 가장 어려운 게 바로 용어야\n\n바이브코딩 공부할 때 용어만 잘 알아도 의도한대로 제작하기가 너무 수월하단 말이지\n\n그래서 웹 개발에 많이 쓰이는 용어들을 모아서 초보자들을 위한 바이브코딩 용어집을 만들었어\n\n이 댓글에 바이브라고 남겨주면 용어집 받을 수 있는 방법 알려줄게!\n\n---\n\n많은 관심 넘 고마워 ^^\n참고로 ai 강사, 출강에 관심 많은 사람들이 연락주면 더 도움이 될 거라 이 점 참고해줘~\n\n---\n\n많은 관심 다시 한 번 너무 고마워!\n한 분 한 분 보면서 디엠드리고 있는데 디엠이 안 보내지는 경우도 있고 누락되는 경우도 생기네\n\n만약 너무 안 온다 싶으면 디엠 바로 걸어줘~~\n\n---\n\n아 하나만 더!\n팔로우도 부탁해\n\n디엠 보낼 때 팔로우가 안 되어 있으면 메시지 제한이 걸려서",
       "media": [],
       "crawled_at": "2026-02-18T10:58:52.882",
-      "code": "DUjtqlHExZ9",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
       "root_code": "DUjtqlHExZ9",
       "user": "je0_1229",
       "timestamp": "2026-02-10 09:55:02",
-      "is_merged_thread": true,
       "original_item_count": 4,
-      "is_detail_collected": true,
       "platform_sequence_id": 251
+    },
+    {
+      "sequence_id": 432,
+      "sns_platform": "threads",
+      "code": "DV8Jja4jEa7",
+      "full_text": "개발 1도 모르는 사람이\n클로드코드로 바이브코딩 하는 법\n\n저 PM 경험은 있지만\n개발 용어는 진짜 1도 몰라요.\n\n대신 이걸로 버팁니다.\n\"머리 속 end picture를 해상도 높게 구현하는 능력\"\n\"뭘 원하는지 구체적으로 설명하는 능력\"\n\n이 하나로 지금 만들고 있습니다.\n제 작업 방식 그대로 공유할게요.\n\n고수님들 조언, 훈수 해주시면 고맙게 받겠습니다!\n\n---\n\n먼저 준비물부터.\n\n터미널 탭 2개 - Claude Code 2개 접속\nClaude.ai (웹), Gemini (웹)\n\n딱 이게 전부입니다.\n\n탭 구성이 핵심이에요.\n탭 하나는 계획 전담.\n탭 하나는 실행 전담.\n이 두 개가 동시에 돌아갑니다.\n\n---\n\n시작은 이 명령어 하나입니다.\n\n/superpowers:brainstorming\n(플러그인 설치해야함. superpowers 검색 고고)\n\n뭘 만들지 구체화되면\n바로 팀 구성으로 넘어가세요.\n\n계획 탭에 이렇게 입력합니다.\n\n\"지금부터 에이전트팀 모드로 작업한다.\n팀장은 실무 하지 말고\n의사결정, 퀄리티 컨트롤, 태스크 관리만 집중해.\"\n\n팀 구성 확인되면 다음 단계로 갑니다.\n\n---\n\n계획이 전부입니다. 무조건 계획 최우선 주의.\n\n팀 구성 완료되면 바로 이 명령어.\n\n/gsd:plan phase 1\n(요것도 설치해야함. 다 한 줄로 설치 가능)\n\n잠시 후 plan.md 문서가 나옵니다.\n이걸 그대로 웹 클로드.ai에 붙여넣고 이렇게 지시하세요.\n\n\"이 계획 검토해주고\n내가 팀장한테 전달할 피드백 프롬프트도 정리해줘\"\n\n클로드.ai가 정리해준 프롬프트를\n계획탭 팀장한테 그대로 전달합니다.\n\n사람이 하는 건 복붙뿐이에요.\n\n---\n\n계획 승인되면 실행탭으로 이동합니다.\n\n/gsd:execute phase 1\n\n실행탭이 돌아가는 동안\n동시에 계획탭 팀장한테도 일을 시킵니다.\n\n/gsd:plan phase 2\n\n두 탭이 병렬로 움직이는 겁니다.\n계획하면서 동시에 구현하고 있어요.\n\n---\n\n실행탭 Phase 1 구현 끝나면 바로 이렇게 지시하세요.\n\n\"전문 코드 리뷰어, UI/UX 전문가,\n다양한 실제 사용자 페르소나 입장에서\n의견 받아서 리포팅해줘\"\n\n그다음 이 질문이 핵심입니다.\n\n\"내가 직접 눈으로 검증해야 할 것들을\n단계별로 구체적이고 정확하게 정리해줘\"\n\n이 답변을 또 웹 클로드.ai에 던집니다.\n스텝별 가이드 받으면서 하나하나 검증하고\n피드백.md 정리도 클로드.ai한테 시킵니다.\n\n---\n\n그 사이에 계획탭에서 phase 2 plan.md도 만들어짐\n\n승인되면 바로 /gsd:execute phase 2.\n이걸 마지막까지 반복합니다.\n\n터미널 ↔ 클로드.ai 계속 왔다갔다하기.\n\n이 과정에 꿀팁 3개\n\n---\n\n1.\nUI/UX, 카피라이팅처럼 정답 없는 영역은\n클로드.ai + Gemini 동시에 물어보세요.\n둘을 싸움 붙이듯이. 좋은 의견만 취합합니다.\n\n2.\n오류 잡을 때 개발 용어 몰라도 됩니다.\n상황 그대로 클로드.ai + Gemini에 던지면\n개발 언어로 변환해서 피드백 프롬프트로 정리해줘요.\n\n3.\n맥락에서 벗어난 궁금증 생기면\n클로드 말고 잠깐 Gemini로 넘어가서\n학습하고 오세요. 클로드.ai 맥락 오염 없이 깔끔합니다.\n\n---\n\n이 과정에 병목은 저예요.\n\nAI를 기다리는 게 아니라\n제가 검토하고 승인하는 게 느립니다.\n\n간략히 적느라 생략하긴 했지만\n결과물 검토 과정에서\n제가 그렸던 end picture와 다른 점이 있으면\n엄청 상세하게 정리해서 \n클로드한테 프롬프트로 정리하라고 시키는데 \n여기에 시간이 많이 걸리긴 해요.\n\n여기에 쓰는 시간은 어쩔 수 없어요.\n계획을 정교하게 만들수록 뒤가 수월합니다.\n\n---\n\n흐름 정리하면 이렇습니다.\n\nbrainstorming → plan.md → 클로드.ai 검증\n→ execute → 즉시 리뷰 → 수동 검증 → 피드백 반영\n→ 다음 phase 계획 세우기 & 미리 세운 계획 구현 병행\n\n더 효율적인 방법 있으면 댓글로 공유해 주세요.\n진심으로 대환영입니다.",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/652182557_17939738736160123_418503162581427839_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uOTc5eDMyOS5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QFsyDXCO1Psd9pKI4IaCW3EADhVEhnLdt-rU1N8s_f_kJzmKNGxq1R-akSU5l_0F1w&_nc_ohc=ZDx6o76sbisQ7kNvwFPY7pc&_nc_gid=sS0AQ8wZSmizbIGQDzfACw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg1Mzk5NzM5NzU4ODU5MjMxNQ%3D%3D.3-ccb7-5&oh=00_AfyCSQJc6nl4okJz0JhMd_h_f-lq6-1kUs0sWeqBzrc3ew&oe=69C040F1&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:47:46.146",
+      "local_images": [
+        "web_viewer/images/710a08a0c39f07dcf7f79eee8ed768c2.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DV8Jja4jEa7",
+      "user": "goldxgeum",
+      "timestamp": "2026-03-16 18:11:53",
+      "original_item_count": 10,
+      "platform_sequence_id": 517
+    },
+    {
+      "sequence_id": 433,
+      "sns_platform": "threads",
+      "code": "DV8lTLGE-Ef",
+      "full_text": "옵시디언을 한 번 잘 써보자! 라고 생각하고\n요즘 핫하다는 claude cli를 연결해보았는데.... 신세계네\n\n1. 옵시디언에 기본 자료 작성해놓고, 바로 옆에서 관련 내용을 물어볼 수 있음. 문서를 내가 파일로 저장해서 던져줄 필요가 없다 (Comet Browser 쓸 때 느꼈던 편리함과 같은 맥락)\n\n2. 옵시디언 볼트에 있는 여러 가지 문서를 동시에 분석하게끔 시킬 수 있다. 이미 얘가 자료의 hirarchy도 이해하고 있으니까 내가 맥락을 일일이 설명할 필요가 없다.\n\n3. 클로드와 채팅한 내용을 바로 문서에 옮겨달라고 할 수 있다. markdown 형식도 알아서 지켜준다. 옵시디언의 특장점인 해시태그와 백링크도 넣어준다.\n*이게 은근 옵시디언 초기에 진입장벽이기도 했는데ㅠ AI가 알아서 해주니까 넘 편하네...\n\n---\n\n4. 기존 문서에 편집/추가할 뿐만 아니라 새 문서로 작성해달라고 할 수도 있다.\n\n5. 심지어 리서치해서 적어주는 내용도 고퀄리티다... 실적 숫자, 가이던스 숫자같은 거 확인해봤는데 정확하다.\n\n몇 주 전에만 해도 리서치는 내가 손품들여 해보겠다고 다짐했는데...\n(물론 그때도 그게 곰같은 방식인 줄은 알았다🐻)\n\n이렇게 정리도 잘 해주고\n기존 지식DB에 연결까지 해줄 거면 정말 굳이?같네..!\n사람이 해야 할 건 정말 \"Action\"뿐이지 않을까?",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/653586440_17901669756392403_4668763808900679921_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTY0OXgxMDMyLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QFLG0akBC99FwX4-1vX486AFq9xxIQGnt6pEm5v1TMbnDnWNBQ_iTKdJ6MQ1TfZNdc&_nc_ohc=IGSnVIczc10Q7kNvwEeuCMz&_nc_gid=r4QJY-oP_KeBmEqvPuvtWg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg1NDExNjgwMzUyNjc2MTY5MA%3D%3D.3-ccb7-5&oh=00_Afzen4JCApCJjfuZ_vErzhPYV5TvvYweud5pVRl3EnanSA&oe=69C04C68&_nc_sid=10d13b",
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/651861748_17901670332392403_3866642034475499917_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNzIxeDg4My5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QFLG0akBC99FwX4-1vX486AFq9xxIQGnt6pEm5v1TMbnDnWNBQ_iTKdJ6MQ1TfZNdc&_nc_ohc=8tn5fK7JIT0Q7kNvwH2QKmi&_nc_gid=r4QJY-oP_KeBmEqvPuvtWg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg1NDExOTQyNjMzNDExODk2OQ%3D%3D.3-ccb7-5&oh=00_AfxW6gxKKiEwQ08JmHFfPL4TbPWFl6w5vEc4n1y3MTGsAQ&oe=69C04273&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:47:46.196",
+      "local_images": [
+        "web_viewer/images/f0fd821d4283c2f4a6a22f53b00b2d7f.webp",
+        "web_viewer/images/51c4ea7ea1ac433c599eac0f0251b749.webp"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DV8lTLGE-Ef",
+      "user": "wiin.woo",
+      "timestamp": "2026-03-16 22:14:20",
+      "original_item_count": 2,
+      "platform_sequence_id": 516
+    },
+    {
+      "sequence_id": 434,
+      "sns_platform": "threads",
+      "code": "DV6zkqPk1kx",
+      "full_text": "오늘 가장 흥미로웠던 부분.\nClaude Code로\n캡컷까지 직접 조작 가능하다.\n\n주제 선정과 대본은 Claude Code로 만들고\nGrok으로 영상 생성\nElevenLabs로 나레이션 생성\n자막 생성 후\n이걸 하나씩 편집하는 게 아니라\n\n캡컷 프로젝트 파일을\n한 번에 만들어버리는 구조.\nAI 자동화는\n툴보다 구조 설계가 더 중요해지는 느낌.\n생각보다 AI로 연결할 수 있는 범위가 꽤 넓다.\n\n---\n\n업로드까지 Claude Code로 가능하더라고요 ^_^",
+      "media": [],
+      "crawled_at": "2026-03-18T17:47:46.225",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DV6zkqPk1kx",
+      "user": "glitter_ai_factory",
+      "timestamp": "2026-03-16 05:40:34",
+      "original_item_count": 2,
+      "platform_sequence_id": 515
+    },
+    {
+      "sequence_id": 435,
+      "sns_platform": "threads",
+      "code": "DVx6_HiEXoq",
+      "full_text": "옆자리 동료가 Pdf 천장짜리에서 유의미한 데이터를 추출해야하는 반복작업을 하고 있었는데, 꽤나 비정형이다 테이블도 많고 pdf만 올려고 뽑아달라 하니 누락데이터가 많았다.\n\n2-3개 오픈소스 이용한 파싱 프로그렘을 최근에 하나 만들었는데,  pdf to json 추출후 프롬프팅하여 뽑았더니 완벽히 뽑힘\n\n헉!! 어떻게 한거에요…?\n\nxycut으로 활용한 OCR로 전처리 한다음에 JSON\n으로 뽑으면 돼!\n\n네..? 제이슨??",
+      "media": [],
+      "crawled_at": "2026-03-18T17:47:52.287",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVx6_HiEXoq",
+      "user": "yangcheon_ai",
+      "timestamp": "2026-03-12 18:52:11",
+      "original_item_count": 1,
+      "platform_sequence_id": 513
+    },
+    {
+      "sequence_id": 436,
+      "sns_platform": "threads",
+      "code": "DVw4dI-k2or",
+      "full_text": "클로드코드 및 터미널 세팅 프롬프트 \n나눔입니다 \n필요하신분 쓰세얌 !!\n@gptaku_ai  클코단 대장님의 피드백으로 윈도우 이용자 버전 추가 \n초보들의 구세쥬 스윗가이 지피타쿠형 좋았다\n\n---\n\n윈도우 이용자 버전!!",
+      "media": [],
+      "crawled_at": "2026-03-18T17:47:52.287",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVw4dI-k2or",
+      "user": "ai_younggle_man",
+      "timestamp": "2026-03-12 09:10:50",
+      "original_item_count": 2,
+      "platform_sequence_id": 514
+    },
+    {
+      "sequence_id": 437,
+      "sns_platform": "threads",
+      "code": "DVvk0HXjbeK",
+      "full_text": "Qwen3-1.7B 모델 STT 후기:\n\n- 위스퍼보다 훨씬 빠름 (0.5초 이내로 끝남)\n- 영어/한국어 둘 다 정확도 훌륭함\n\n이제 이 모델로 정착해야겠다. 다음에 보자 위스퍼~\n\n---\n\n앱 이름: 말로 \nmallo.so/ko\n\n---\n\n혹시 설치 후 세팅 중 이런 에러 화면 만나셨던 분들, v1.2.8 버전 기준으로는 해결되었습니다. 다시 한 번 다운로드 해주세요!",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/650384086_17949761397107179_6940626315063685935_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMzY2eDE1NC5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QF4_coyChr4Uqi12Lv1dUxNQf8U151-XHylyBISCrXP-D4_GXdjLg6WVacoHTiR0TY&_nc_ohc=2OR4apuXci8Q7kNvwEMQk1p&_nc_gid=KKeQXHikoN4LIsBJ3GAxRg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg1MDQ1ODExNzQyMzYwOTczOA%3D%3D.3-ccb7-5&oh=00_AfzoreIcwvsCPormnqU0wmAeHSLeh_7yTWDec69pER0n0g&oe=69C01F88&_nc_sid=10d13b",
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/650731051_17950227540107179_3197261974489748767_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTMxOHgxMDMwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QF4_coyChr4Uqi12Lv1dUxNQf8U151-XHylyBISCrXP-D4_GXdjLg6WVacoHTiR0TY&_nc_ohc=PJ9Iy7wG6UEQ7kNvwF9D6yh&_nc_gid=KKeQXHikoN4LIsBJ3GAxRg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg1MTcyNTA5NTUzMDc2NzAyNg%3D%3D.3-ccb7-5&oh=00_AfxYjs9CW__HDmbJLd1jsERNTeIHuNOR3SA3rNEgJpnVog&oe=69C036CA&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:47:52.288",
+      "local_images": [
+        "web_viewer/images/5e6524ea22bbeaa46ec954191c9938b5.jpg",
+        "web_viewer/images/7a16bd77280d88413af0561b8ffd04a2.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVvk0HXjbeK",
+      "user": "wooing0306",
+      "timestamp": "2026-03-11 20:59:58",
+      "original_item_count": 3,
+      "platform_sequence_id": 511
+    },
+    {
+      "sequence_id": 438,
+      "sns_platform": "threads",
+      "code": "DVwW4oYEin5",
+      "full_text": "이런 PPT 자동 생성 툴 아직도 모르고 있으면 손해예요. \r\n기획은 빠른데 슬라이드 만드는 데 시간 다 쓰는 사람, 이거 진짜 편합니다. \r\n주제만 넣으면 AI가 개요부터 PPTX 초안까지 쭉 만들어줘요.\n\nAi-to-pptx는 AI로 발표자료를 자동 생성해주는 웹 기반 서비스예요. \r\nDeepSeek 같은 LLM으로 목차를 만들고, 생성된 내용도 다시 수정 가능. \r\nPPTX 만들 때 템플릿도 고를 수 있어서 결과물이 꽤 그럴듯해요. \r\n기본은 웹에서 쓰고, PPTX export 지원. PDF는 개발 중이라고 해요.\n\n---\n\n제가 보기엔 이런 때 특히 좋아요. \r\n급하게 제안서, 발표자료, 수업용 슬라이드 초안 뽑아야 할 때. \r\n보통 ChatGPT로 내용 만들고 PPT는 또 따로 손봐야 하잖아요? \r\n이건 초안 생성부터 PPTX 파일화까지 이어져서 단계가 확 줄어요.\n\n상업용 기능도 꽤 강해요. \r\n온라인에서 텍스트, 스타일, 이미지 수정 가능하고 \r\n로고나 배경 이미지를 넣어서 브랜드 톤 맞추기도 됩니다. \r\n직접 만든 템플릿을 공유 플랫폼에 올려 다른 사람과 나눌 수도 있고요.\n\n한 줄로 정리하면, \r\n“PPT 초안 만드는 시간 아끼고 싶은 사람에게 꽤 실전형인 툴.” \r\n써봤어? 비슷하게 괜찮은 PPT 앱 있으면 알려줘.\n\n---\n\nhttps://github.com/SmartSchoolAI/ai-to-pptx?tab=readme-ov-file",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/650997629_17917587387290897_7177514621749328313_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTA4MHg1NDAuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QH0orkEVV01jsnm9TkE8RdBC4j0k4-HGWGvfZ4pgrw-rStkFYtLS7OqLnzq30Gtl7c&_nc_ohc=rWeH3Y_gilMQ7kNvwHZ_zBt&_nc_gid=E36DVuRJ3SwTwZZmsUlZeQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg1MDY3ODMzMDA2OTIzMjEyMQ%3D%3D.3-ccb7-5&oh=00_Afyby0QvTsl4nrwT926muPFYxcT_sHw9nFNyigm7Yg78zw&oe=69C05705&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:47:52.288",
+      "local_images": [
+        "web_viewer/images/a7c855cf4219637ad0d77b673661af86.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVwW4oYEin5",
+      "user": "iam_mychan",
+      "timestamp": "2026-03-12 04:17:37",
+      "original_item_count": 3,
+      "platform_sequence_id": 512
+    },
+    {
+      "sequence_id": 439,
+      "sns_platform": "threads",
+      "code": "DVqy6fOkZat",
+      "full_text": "카카오발 초보 GPT Pro Codex 사용자분들께 말씀드립니다.\nGPT-5.4 context window는 1M입니다.\n근데 기본 설정은 258k로 묶여 있습니다.\nOpus 4.6의 1M은 오지게 비싼데요.\n모두들 context window 확인해보고 1M 쓰세요.\n\n---\n\nOpenAI의 default값 조정해서 비용효율전략?\n나같은 헤비 유저에게는 어림없지.\n\n---\n\n설정파일 위치: \n~/.codex/config.toml\n\nmodel = \"gpt-5.4\"\nmodel_context_window = 1000000\nmodel_auto_compact_token_limit = 900000\n\n---\n\n댓글 2/\n확인 방법은,\n/statusline에서 context window size 켜고\n대화 하나 쳐본 다음 1M window 확인\n\n---\n\nhttps://www.reddit.com/r/codex/comments/1rlyuy6/only_getting_258k_context_window_on_pro_with/\n\n---\n\nContext window: 1M 아니면 지금 돈 줄줄새면서 빵꾸나고 있다는 뜻",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/649522146_17852377770685641_2254617024943372145_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTkyNng5NTAuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QFEF8aV9yDkV87URAm_fLHQcLJGAtFRK3K9tnQQxdSlmMREh1djNadqHAXUyg3-qgE&_nc_ohc=DoJMjU2tDGUQ7kNvwGsSwh1&_nc_gid=HBcdj3v-2htS_O3QQrGa2g&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0OTExNjIzNjkzMjgwMzc5OA%3D%3D.3-ccb7-5&oh=00_AfyMz_zTFN-au3PXfdNjsHw77vcJj_V8Z8M-MDqbdfV9Tg&oe=69C0444F&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:47:55.333",
+      "local_images": [
+        "web_viewer/images/422d69f685ae1d41eeb74c43477d0b75.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVqy6fOkZat",
+      "user": "october.ai",
+      "timestamp": "2026-03-10 00:26:58",
+      "original_item_count": 6,
+      "platform_sequence_id": 507
+    },
+    {
+      "sequence_id": 440,
+      "sns_platform": "threads",
+      "code": "DVs3zYOkvYY",
+      "full_text": "Claude Code로 문서 관리할 때 이거 안하면 망함\n\nClaude Code로 옵시디언 파일 관리하는 사람 많을 텐데,\n이거 하나 안 해두면 진짜 망할 수 있음\n\n방금 실제로 겪은 일임\n파일 20개 이름 일괄 변경하려다가 16개가 증발했음\n\n---\n\n무슨 일이 있었냐면\n파일명 앞에 날짜 붙이는 작업을 시켰는데\nAI가 변수 처리를 잘못해서 20개 파일을 전부 같은 이름으로 저장함\n\nmv로 같은 파일명에 반복 덮어쓰기\n각 폴더에 마지막 1개만 남고 나머지는 그냥 날아감\n\n---\n\n그나마 다행인 건\n날아간 파일들이 클로드 코드 세션에서 만든 것들이라\n세션 로그 파일을 뒤져서 일부는 복구했음\n\n근데 이건 운이 좋았던 거고\n세션 로그에 없는 파일은 그냥 영영 사라짐\n\n---\n\n교훈은 하나임\nAI로 옵시디언 쓰면 무조건 git으로 버전관리 해야 함\n\ngit 설정해 놓고 커밋 안 하는 사람 많은데\n그러다 꼭 사고남\n\n꿀팁은 옵시디언 작업 후 자동으로 git commit 되게 만드는 거임\n클로드 코드 hook이나 스킬에 자동 커밋 넣어두면 됨\n아니면 mv, rm 과 같은 작업은 확인 받게 설정하거나\n\n---\n\n결론은\nAI 많이 사용할수록 안전장치는 더 중요해짐\n되돌릴 수 없는 실수를 되돌릴 수 있게 만드는 게 git임\n\nAI 시대에 git은 꼭 알아두자.",
+      "media": [],
+      "crawled_at": "2026-03-18T17:47:55.333",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVs3zYOkvYY",
+      "user": "devdesign.kr",
+      "timestamp": "2026-03-10 19:48:10",
+      "original_item_count": 5,
+      "platform_sequence_id": 508
+    },
+    {
+      "sequence_id": 441,
+      "sns_platform": "threads",
+      "code": "DVroE7QkgLD",
+      "full_text": "Supabase → Neon 마이그레이션\n\n왜 Neon으로 바꿨냐면: \nSupabase는 무료 플랜이 프로젝트 2개라 무료 DB가 더 필요해서.\nNeon은 프로젝트 20개까지 무료임. \n\nAntigravity 할당량 제한 때문에 Gemini 3 Flash로 작업했는데 \n응답 속도 빠르고 크레딧 소모 적어서 가성비 면에서는 확실히 좋음. \n단순 작업 및 단순 코드 수정에는 이 조합이 최적인 듯.\n\nNext.js → Vercel → Neon 스택, 무료로 꽤 쓸만함",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/649075183_17949469080111754_4116381577640763651_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTE0NHgzNTYuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QHae1S2gkJKEPE1GCkoI2G8LgYTn5fUGWWprQ-qjOxzUpGJ8ND3iXclU-Vx7WhV7x8&_nc_ohc=DLXW-V8W2wsQ7kNvwH7eofg&_nc_gid=zw-750W_3Td3pxOMeOYD_A&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0OTM0NjU2Njg4NTM0MzkzOQ%3D%3D.3-ccb7-5&oh=00_AfylsYVoJJOO1ZiRxFOQZ-fs0l0v5BNJ1lEYOaQKcgY0ZQ&oe=69C024E7&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:47:55.333",
+      "local_images": [
+        "web_viewer/images/a98cfec04278e481aa192a0bfeeaee7a.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVroE7QkgLD",
+      "user": "webdaddy.top",
+      "timestamp": "2026-03-10 08:11:31",
+      "original_item_count": 1,
+      "platform_sequence_id": 509
+    },
+    {
+      "sequence_id": 442,
+      "sns_platform": "threads",
+      "code": "DVxN2A8iTE3",
+      "full_text": "Claude Code에서 명령어 하나로 \n웹사이트 29페이지를 한 번에 크롤링하는 스킬이 나왔습니다.\n\nCloudflare가 /crawl 엔드포인트를 열자마자\n누군가 바로 만들었어요. 속도가 미쳤습니다.\n\n---\n\n설치는 이거 한 줄이에요.\nnpx claude-code-templates@latest --skill utilities/cf-crawl\n\n쓰는 것도 한 줄.\n/cf-crawl https://docs.claude.ai/en/overview --limit 50\n\nURL 바꾸면 끝. Cloudflare 인증 설정이 안 돼 있으면 그것도 스킬이 알아서 도와줍니다.\n\n---\n\n영상 보면 Claude Code 문서 29페이지를 한 방에 크롤링해요. RAG 파이프라인이나 모델 학습용 데이터 수집할 때 바로 쓸 수 있는 구조예요.\n\nCloudflare의 raw API를 직접 만질 필요 없이 Claude Code 안에서 바로 돌아갑니다.\n\n---\n\n어제 Cloudflare Markdown for Agents 다뤘었죠. 방패가 창이 됐다고.\n그 창을 벌써 Claude Code 스킬로 감싸서 쓰고 있는 사람이 나온 거예요.\n\n생태계 속도가 이 정도입니다.\n\n---\n\nhttps://www.aitmpl.com/component/skill/utilities/cf-crawl\n\n---\n\nWorkers Free, Paid 플랜 모두 사용 가능한데\n단, Free는 브라우저 시간과 크롤 횟수에 제한이 있어서 \n실사용에는 Paid 플랜이 사실상 필수입니다.\n\n링크:\n→ https://developers.cloudflare.com/browser-rendering/rest-api/crawl-endpoint/\n→ https://developers.cloudflare.com/changelog/post/2026-03-10-br-crawl-endpoint/\n\n---\n\nkimi랑 이거 결합하면 속도가 장난아닐 것 같네여",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/650978246_955718106885116_4238556615165567220_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDQzMi5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QFwvZgf_QIoBKfvfmA4l1GbeXIwq40e12P4rLlN74TrpP_afEGrHbt9jkPDGHn6AlQ&_nc_ohc=o2XoVuBu1d0Q7kNvwE4h_OP&_nc_gid=xkNeWuyijaGF54uB1Doj4Q&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg1MDkyMDA0Mjg1MDQ5NjgyMw%3D%3D.3-ccb7-5&oh=00_AfySAuHjnBPaUVOYorj1kDHTpMrVnB1ACyK-ZEkTPV5VCQ&oe=69C02DA3&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:47:55.333",
+      "local_images": [
+        "web_viewer/images/79682cebd75c42b74abc6df11811866b.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVxN2A8iTE3",
+      "user": "unclejobs.ai",
+      "timestamp": "2026-03-12 12:21:18",
+      "original_item_count": 7,
+      "platform_sequence_id": 510
+    },
+    {
+      "sequence_id": 443,
+      "sns_platform": "threads",
+      "code": "DVfpUJ3E4Q1",
+      "full_text": "\"AI를 쓰는 사람이라면 무조건 팔로우 해야하는 사람들입니다\"\n\n@sihyun_adventure - 직접 AI를 쓰고 자세하게 알려주십니다.\n\n@programmingzombie - AI로 앱을 만드시고 수익화에 대한 얘기와 꿀팁들을 공유해주십니다.\n\n@specal1849 - 논문을 기반으로 쉽게 설명해주십니다.\n\n@choi.openai - 다양한 AI 소식들을 누구보다 빠르고 쉽게 공유해주십니다.\n\n@bellman.pub - oh-my-claudecode를 만드신분 더 높이 올라가셔야합니다.\n\n@bear_dba - DB 지식은 여기서 배우세요 저도 많이 배우고있습니다.\n\n@qjc.ai - claude code를 이렇게 자세하게 설명해주시는 분은 없습니다.\n\n@aicoffeechat - 여러 AI 지식과 소식을 공유해주십니다.",
+      "media": [],
+      "crawled_at": "2026-03-18T17:47:58.365",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVfpUJ3E4Q1",
+      "user": "_ju_tiger_lee_",
+      "timestamp": "2026-03-05 16:31:27",
+      "original_item_count": 1,
+      "platform_sequence_id": 506
+    },
+    {
+      "sequence_id": 444,
+      "sns_platform": "threads",
+      "code": "DRrYr4-itgh",
+      "full_text": "다들 PRD나 지식 정리 어떤 툴 쓰시나요? 전 옵시디언에 모든 걸 때려박는 편입니다.\n\n최근에 여기에 Gemini CLI를 붙였더니 거의 완벽한 'Second Brain'이 완성됐습니다.\n\n---\n\n방법은 간단함:\n1. 폴더마다 `GEMINI.md` 파일을 만들어서 시스템 프롬프트를 심어둠.\n2. 터미널 플러그인으로 사이드바에서 CLI 실행.\n\n이렇게 하면 AI가 내 로컬 파일들을 직접 읽고 쓰면서 작업을 도와줍니다. 맥락을 다 알고 있으니 퀄리티가 다름.\n\n방금도 유저 플로우 12개를 순식간에 짜줬는데...\n이제 이걸 하나하나 뜯어보며 검수해야 합니다. 편해진 거 맞겠죠? 💀\n\n#1인개발 #옵시디언 #Gemini #생산성 #PRD #SecondBrain #IndieHacker",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/587776094_1485230219243733_9092226704272661987_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDY0MC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QHvclI8iEWUu2sq0qI4mkWFwg1Ch-Im6keAPb6P6EwTx7i3Kjty5yjZNsmO7V79tKk&_nc_ohc=pWbizkkKL-YQ7kNvwHjqW-U&_nc_gid=1C3-yat8VtdVh9VchfAPTg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc3NzIyMTI4MTcxMjg4Nzg0MQ%3D%3D.3-ccb7-5&oh=00_Afzi7f57K-nRioVmb1jnwzCPqkeYurLlKjv5p9ccWuj_5Q&oe=69C03ED2&_nc_sid=10d13b",
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/586648454_17845319460618249_5898928224659593505_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMjEzM3gxNDQwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QHvclI8iEWUu2sq0qI4mkWFwg1Ch-Im6keAPb6P6EwTx7i3Kjty5yjZNsmO7V79tKk&_nc_ohc=3wA8qrBhQRMQ7kNvwEDpaaG&_nc_gid=1C3-yat8VtdVh9VchfAPTg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc3NzIyMTY0MjYwNjk1MTU2NA%3D%3D.3-ccb7-5&oh=00_AfwlejElnmi87ynMDq3y81Flqb_0eM6V_vLXOiuR8QbwYg&oe=69C04F06&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:47:58.369",
+      "local_images": [
+        "web_viewer/images/1866637f0a2958313449abf3afd026ab.jpg",
+        "web_viewer/images/0993272f08920667acb0d57fe2de9c21.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DRrYr4-itgh",
+      "user": "sudo.gunn.kr",
+      "timestamp": "2025-11-30 19:52:07",
+      "original_item_count": 2,
+      "platform_sequence_id": 505
+    },
+    {
+      "sequence_id": 445,
+      "sns_platform": "threads",
+      "code": "DVlgUX5k1Yy",
+      "full_text": "“MCP는 죽었다” — 스펙 한 줄만 봤어도 나올 수 없는 얘기다.\n구글 Workspace CLI 뜨자마자 “MCP 끝났다”는 글이 쏟아졌다.\n근데 CLI 안에 이미 MCP가 내장되어 있었다.\n\ngws mcp -s gmail,drive,calendar\n\nCLI가 MCP를 대체한 게 아니라, CLI가 MCP를 품은 구조다.\n\n“자동차 vs 도로 중 뭐가 이겼냐”고 묻는 것과 같다.\n“이메일 vs 슬랙 중 뭐가 이겼냐”도 마찬가지다. 쓰임새가 다른 도구다.\n\n---\n\nCLI와 MCP는 애초에 다른 문제를 푼다.\ngit, docker, gh CLI처럼 실행 중심 작업은 CLI가 빠르고 효율적이다.\n반면 Context7, Notion, Slack처럼\nAI가 실시간으로 데이터를 가져와야 하는 작업은 MCP로만 가능하다.\nClaude가 최신 라이브러리 문서를 추론 시점에 주입받는 것,\nCLI 아키텍처로는 구조적으로 불가능하다.\n실행 중심 → CLI\n컨텍스트 주입 → MCP\n둘 중 하나가 아니라, 상황에 맞게 쓰는 판단력이 핵심이다.​​​​​​​​​​​​​​​​",
+      "media": [],
+      "crawled_at": "2026-03-18T17:47:58.370",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVlgUX5k1Yy",
+      "user": "baekho.chris",
+      "timestamp": "2026-03-07 23:08:16",
+      "original_item_count": 2,
+      "platform_sequence_id": 503
+    },
+    {
+      "sequence_id": 446,
+      "sns_platform": "threads",
+      "code": "DVqWBh1AUSq",
+      "full_text": "Threads 글을 Obsidian에 마크다운으로 저장하는 크롬 확장을 만들었습니다.\n\n좋은 글을 발견하면 아이콘 한 번으로:\n\n마크다운 파일로 Obsidian vault에 바로 저장(이미지와 연속글도 됩니다)\n\n설치 방법 (1분):\n- GitHub에서 ZIP 다운로드 후 압축 해제\n- Chrome > chrome://extensions > 개발자 모드 ON(중요!)\n- \"압축해제된 확장 프로그램을 로드합니다\" > dist/extension 폴더 선택\n- Threads 글 페이지에서 확장 아이콘 클릭\n- 코드 빌드 같은 거 필요 없습니다. 다운받고 폴더만 지정하면 됩니다.\n\n필요하신 분들 써보시고, 개선의견 부탁드립니다.\n\nGitHub: github.com/parktaejun-dev/threads-to-obsidian",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/642962009_17946027729118163_8625422680541323069_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTY4OHgxMjg4LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2QEPPNbQo6LqnzjHhg1AQcw-bRZeaNMRKYjfl4CX36nfxKRtnqpqn-IksICTXRUZYMA&_nc_ohc=pXD7H-EbKdMQ7kNvwHbUIN2&_nc_gid=7Df7zmx1ZyjoGMc6Z-Tgzg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0ODk4NTY4NzEyMjYyMDQ1MQ%3D%3D.3-ccb7-5&oh=00_AfwXjw9lWMed6V4YXUz4cFuJl_vNI_kChYTa99vvbLeeVw&oe=69C038BD&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:47:58.370",
+      "local_images": [
+        "web_viewer/images/f20c2fe38e1ee72216984511d5eb490c.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVqWBh1AUSq",
+      "user": "parktaejun",
+      "timestamp": "2026-03-09 20:14:31",
+      "original_item_count": 1,
+      "platform_sequence_id": 504
+    },
+    {
+      "sequence_id": 447,
+      "sns_platform": "threads",
+      "code": "DVpO0yiiT-3",
+      "full_text": "이 하나의 사진을 잘 이해할 수 있으면 지금까지 나온 클로드 다 이해하시는 겁니다❤️",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/642947490_17947405746112210_8513362698442414708_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTQzOXg5MTQuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QFc1k-nIR0Or0QqTsIGO-o2Z0Vk3BXn_UpJ22aM4PcbHD7wIsIHMX138JwrDKMigR8&_nc_ohc=wt7xvjsNBlIQ7kNvwG1-nIJ&_nc_gid=NA0Wwnpne5L5vC7NbX2OQw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0ODY3MjU1Njg5NTI1NjUwMw%3D%3D.3-ccb7-5&oh=00_AfyrBMH7xEMYodtuQbjvKxmQI7kySSeZDW1ozkCcNA_e7w&oe=69C04CDD&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:48:01.454",
+      "local_images": [
+        "web_viewer/images/9cde11ab0493073de5bb2d2c14722f66.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVpO0yiiT-3",
+      "user": "aipreneur_j",
+      "timestamp": "2026-03-09 09:52:32",
+      "original_item_count": 1,
+      "platform_sequence_id": 499
+    },
+    {
+      "sequence_id": 448,
+      "sns_platform": "threads",
+      "code": "DVnd3g0jxKk",
+      "full_text": "연초에 Gemin 1년치 구독하신분들 필독!\n\nGemini 구독중인데 gemini-cli 를 잘 쓰지 않는다면 한번 설치해보세요.\n\ngemini extensions install https://github.com/tmdgusya/gemini-swarm\n\n- /swarm:plan \"작업 지시\" => 유저의 작업에 대한 이해를 할때까지 끈질기게 물어봅니다. 그리고 이후에 \"Task\", \"성공 인수 조건\" 에 관련된 파일을 생성합니다.\n- /swarm:dispatch N => N 개의 Gemini 에이전트 군단을 소환합니다. plan 의 경우 자동으로 gemini 를 Task 수에 맞게 메인 오케스트레이터가 소환합니다.\n\n\"자동으로 계획 -> Task 병렬 진행 -> 성공 인수조건까지 작업 진행\" 의 싸이클을 Gemini 스스로 진행합니다. Gemini 는 생각보다 작은 작업에 대한 임무완수를 잘하는 편입니다.\n\n---\n\ngemini extensions install https://github.com/tmdgusya/gemini-swarm\n\n---\n\n새로운 브레인스토밍 기능도 확인해보세요!",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/648314708_17859991515613459_1865558841441859038_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMzAxNngxMzQwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QF_kLFk-aW0QkOj1AngFEoyrmi0F9GloLT7unB9JDy6Ln7j3oiH40svZICH3Zpf5TI&_nc_ohc=0Yzytni-VscQ7kNvwH3v6Y4&_nc_gid=IRdW4QX0x3HaD-htlswUKA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0ODE3NTc2NDc3Mjk1MDY5Mg%3D%3D.3-ccb7-5&oh=00_Afy04qaiL0k4onbwWd1mJnSav9g4DhyKKberPgbf5nQycw&oe=69C0320C&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:48:01.454",
+      "local_images": [
+        "web_viewer/images/a8a9c4dc844e609c075788add882a917.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVnd3g0jxKk",
+      "user": "roac.h7839",
+      "timestamp": "2026-03-08 17:25:20",
+      "original_item_count": 3,
+      "platform_sequence_id": 500
+    },
+    {
+      "sequence_id": 449,
+      "sns_platform": "threads",
+      "code": "DVq0iq0mq1R",
+      "full_text": "드디어 공개합니다.\n\n제 5,000시간이 녹아 있는\nClaude Code 실전 셋업입니다.\n\n결제 필요 없고\nDM도 필요 없고\n그냥 클코에게 이거 한 줄이면 됩니다.\n\n\"클로드코드야 npx dgk-claude 패키지 읽어보고 내 셋업에 맞는 간과 쓸개 다빼와\"\n\n넣어둔 것만 해도:\n\n- 리서치 먼저 하고 구현하게 만드는 모드\n- 무료 AI 코드리뷰\n- 현재 세션 파일만 안전하게 commit + push\n- 위험 명령 차단\n- 날짜 자동 주입\n- 세션 복구\n- noisy command 토큰 절약\n\n클로드코드 오래 쓸수록\n이런 운영 셋업 차이가 진짜 크게 납니다.\n\n---\n\n뭘 쓰면 되냐부터 제일 쉽게 정리하면:\n\n/re (research & execute)\n= 리서치 + 구현 솔로모드 (엄청나지만 토큰 상대적 덜씀)\n\n/ret (reserach & execute as a team)\n= 큰 범위의 작업할 때 쓰는 팀 모드\n\n/rr (review & review with GLM 4.7 flash)\n= 무료 AI 코드리뷰 (클코 토큰 안쓰고 무료로 리뷰)\n\n/rrr (review & review & review with GLM 5)\n= 더 깊게 보는 유료 리뷰\n\n/cp\n= 지금 세션에서 건드린 파일만 안전하게 commit + push\n\n실전에서는\n대부분 /re, /rr, /cp\n이 3개만 알아도 바로 체감 옵니다\n\n---\n\n/re가 핵심입니다.\n\n그냥 \"바로 코드 짜\"가 아니라\n\n1. 공식 문서 확인\n2. 웹 리서치\n3. 코드베이스 분석\n4. 옵션 비교\n5. 구현\n6. 검증\n7. 커밋\n\n이 순서로 밀어붙이게 만든 모드입니다.\n\n즉, 생각 없이 바로 구현하다가\n나중에 갈아엎는 일을 줄이는 용도입니다.\n솔플할 때는 그냥 /re 쓰면 됩니다.\n\n---\n\n/ret는 /re의 큰 버전입니다.\n\n혼자 하나씩 보는 게 아니라\n여러 에이전트를 병렬로 굴려서\n\n- 리서치 나눠서 보고\n- 구현도 나눠서 하고\n- 마지막에 합치는 방식입니다\n\n큰 기능\n복잡한 리팩터링\n의존성 많은 작업은\n/re보다 /ret가 훨씬 편합니다.\n\n한 줄 요약:\n작업 작으면 /re\n작업 크면 /ret\n\n---\n\n/rr도 꽤 셉니다.\n\n커밋 전에 /rr 치면\n무료로 코드리뷰 한 번 더 받는 구조입니다.\n\n그냥 \"좋아요\" 수준 리뷰가 아니라\n실제 변경사항 기준으로 보고,\nClaude가 그 리뷰를 다시 검증해서\n오탐을 좀 걸러낸 뒤 쓰게 해둔 흐름입니다.\n\n즉\n\"일단 내가 짠 뒤\n한 번 더 두들겨 맞아보는 장치\"\n라고 보면 됩니다.\n\n---\n\n안에 들어간 기술도 꽤 많습니다.\n\n- Context7\n  공식 문서 확인\n\n- Jina\n  웹페이지 본문 읽기\n  WebFetch 대체\n\n- Sequential Thinking\n  구조적으로 생각하게 강제\n\n- glm-review\n /rr, /rrr 코드리뷰\n\n- rtk\n  git log, ls, tsc, eslint 같은\n  고노이즈 명령을 더 짧고 싸게 돌리게 함\n\n겉으로는 스킬 몇 개 같아 보여도\n실제로는 \"실전 운영용 세팅\"에 가깝습니다.\n\n---\n\nhooks도 실전에서 진짜 많이 체감됩니다.\n\n예를 들면:\n\n- 위험 명령 차단\n- Bash 사용 로그 기록\n- WebFetch 차단\n- 현재 날짜 자동 주입\n- TS 파일 수정 후 타입체크 권장\n- Telegram 알림\n- HANDOFF.md / STATE.md 자동 로드\n\n큰 프로젝트 하다 보면\n클로드가 갑자기 맥락 놓치거나\n괜히 위험한 명령 치거나\n쓸데없이 토큰 많이 먹는 순간이 오는데\n\n그걸 줄이려고 넣은 것들입니다\n\n---\n\n기존 셋업 있는 사람도 생각해뒀습니다.\n\n- 기존 ~/.claude/settings.json 유지\n- dgk-claude hooks만 병합\n- 이미 있는 스킬/훅은 최신 버전일 때만 업데이트\n- 바꾸기 전에 백업\n\n즉\n그냥 덮어쓰는 방식이 아니라\n기존 사용자도 비교적 안전하게 붙일 수 있게 만들었습니다\n\n---\n\n환경은 이렇게 보면 됩니다.\n\n- macOS\n- Linux\n- WSL\n- Windows\n\n같은 방식으로 설치되게 바꿨습니다.\n\n다만 Windows는\ndgk-claude 문제가 아니라\nClaude Code 자체가 Git Bash 전제를 좀 갖고 있어서\n그건 공식 런타임 제약 쪽에 가깝습니다.\n\n그래도 설치기 자체는\n최대한 덜 부서지게 손봤습니다.\n\n---\n\n진짜 제일 좋은 사용법은 이겁니다.\n\n\"이 기능 붙여줘\"\n/re로 시작\n\n\"커밋 전 한 번 더 봐줘\"\n/rr\n\n\"지금 세션에서 건드린 파일만 올려\"\n/cp\n\n여기까지만 써도\n클로드코드 체감이 꽤 달라질 겁니다.\n\"클로드코드야 npx dgk-claude 패키지 읽어보고 내 셋업에 맞는 간과 쓸개 다빼와\"\n\n---\n\n코드/README:\nhttps://github.com/dgk-dev/dgk-claude",
+      "media": [],
+      "crawled_at": "2026-03-18T17:48:01.454",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVq0iq0mq1R",
+      "user": "ddg.kang",
+      "timestamp": "2026-03-10 00:41:11",
+      "original_item_count": 11,
+      "platform_sequence_id": 501
+    },
+    {
+      "sequence_id": 450,
+      "sns_platform": "threads",
+      "code": "DVgF6rqD8r8",
+      "full_text": "제목: Gemini 구독 중인데 이거 모르셨음 손해입니다.\n\nGemini 쪽 진영을 둘러보는데 구글에서 Gemini CLI용 Conductor 익스텐션 내놓고 주기적으로 업데이트 해주더라고요. 이거 쓰면 바이브 코딩할 때 Gemini 가 멍청해졌던 문제들이 꽤나 많이 해결됩니다!\n\nhttps://github.com/gemini-cli-extensions/conductor\n\n어제 밤새 써봤는데 후기: 단언컨데 이전보다 3배는 효율적입니다\n\n---\n\n간단 사용법:\n\n1. gemini extensions install https://github.com/gemini-cli-extensions/conductor 로 설치\n2. /conductor:setup 치면 프로젝트 기본 설정 (프로덕트 목적, 테크스택, 워크플로우) 한 번만 입력하면 됨\n3. /conductor:newTrack으로 새 기능 개발할 때 Spec + Plan 먼저 생성\n→ AI가 무작정 코드 치기 전에 계획을 세우게 만드는게 핵심\n4. /conductor:implement 하면 AI가 plan.md 따라가면서 체크리스트 완료함\n\n왜 좋은가:\n\n기존에는 컨텍스트 조금만 차면 \"아까 뭐하자 했지?\" 계속 반복했는데, 이제는 Markdown 파일로 계속 남아있어서 내일 이어서 해도 AI가 다 기억합니다. 구글에서 제공해주는 ralph 입니다.\n\n특히 기존 프로젝트에서 팀원들과 함께 작업할 때 정말 유용합니다.\n\n---\n\n더 중요한 점은 workflow 를 생성할 수 있다는 점 입니다.\n\n워크플로우 구성할 때 커스텀 스킬을 end-of-task 조건으로 넣어두면 완성도가 확 올라갑니다.\n\n저는 아래와 같이 설정했어요.\n\nworkflow:\n- 80% code test coverage\n- 매 태스크마다 commit\n- Git Notes로 요약\n- ✅ admin-testing-skill 완료 (필수)\n- ✅ e2e-testing-skill 완료 (필수)\n\n이렇게 해두면 AI가 작업 마무리할 때 자동으로 어드민 테스트랑 E2E 테스트 스킬을 실행해서 검증하게됩니다.\n\n참고로 이건 Superpowers skill이랑 비슷한데, 팀 워크플로우가 녹아들어있는 extension 입니다.\n\nSuperpowers는 개인이 쓰기 좋은 반면, Conductor는 팀 전체가 같은 컨텍스트를 공유할 수 있게 설계된것이죠\n\n---\n\n그리고 최근 업데이트로 Automated Review 기능도 추가됐습니다!\n\n/conductor:review 하면 AI가 작업한 코드를 자동으로 검증해줌\n\n체크하는 항목들:\n\n• ✅ 코드 리뷰 - race condition, null pointer risk, logic error 같은 복잡한 문제도 잡아냄\n• ✅ Plan compliance - plan.md랑 spec.md에 맞게 다 구현했는지 확인\n• ✅ 가이드라인 준수 - 프로젝트 스타일 가이드 지켰는지 체크\n• ✅ 테스트 검증 - 유닛/통합 테스트 자동 실행해서 커버리지 리포트 생성\n• ✅ 기본 보안 검토 - 하드코딩된 API key, PII leak, injection attack 가능성 스캔\n\n결과물:\n심각도별(High/Medium/Low)로 분류해서 어디를 고쳐야 하는지 알려줍니다.\n\n이거 덕분에 \"AI가 대신 코딩해주는\" 게 아니라 \"AI가 일하고 개발자가 검증하는\" 구조가 완성됩니다.",
+      "media": [],
+      "crawled_at": "2026-03-18T17:48:01.454",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVgF6rqD8r8",
+      "user": "roac.h7839",
+      "timestamp": "2026-03-05 20:41:22",
+      "original_item_count": 4,
+      "platform_sequence_id": 502
+    },
+    {
+      "sequence_id": 451,
+      "sns_platform": "threads",
+      "code": "DVnG0Awkz02",
+      "full_text": "Claude Code로 만든 랜딩페이지, 왜 다 똑같이 생겼을까요?\n\n보라색 그라데이션, Inter 폰트, 둥근 모서리, 아이콘 3개짜리 그리드.\n이걸 \"AI 슬롭\"이라고 부른다는 거 알고 계셨나요?\n\n스킬 하나 설치하면 완전히 달라집니다.\n\n---\n\n1/ 왜 AI가 만든 디자인은 다 비슷할까요?\n\n\"AI가 디자인 감각이 없어서\"라고 생각하시죠?\n\n아닙니다.\n지시가 없으면 \"안전한 평균\"을 선택하는 거예요.\n\nAnthropic 공식 블로그에서도 인정했어요.\n\"별도 지시 없으면 고확률 중심에서 샘플링해요.\"\n\n공식 명칭까지 있습니다.\n분포적 수렴(Distributional Convergence).\n\n---\n\n2/ 해결책: UI UX Pro Max Skill\n\nGitHub Stars 38,100개 넘은 오픈소스 스킬이에요.\nMIT 라이선스. 무료.\n\nClaude Code뿐 아니라 13개 AI 코딩 도구 전부 지원해요.\nCursor, Windsurf, GitHub Copilot, Kiro, Codex, Gemini CLI까지.\n\n설치 한 줄이면 끝입니다.\n\n---\n\n3/ 뭐가 들어있냐면요\n\nUI 스타일 67종.\nGlassmorphism, Brutalism, Neumorphism, Bento Grid 등.\n\n색상 팔레트 96종.\nSaaS, 헬스케어, 핀테크, 이커머스 산업별 최적화.\n\n폰트 페어링 57종.\nGoogle Fonts 연동, 무드 기반 추천.\n\n\"보라색 그라데이션밖에 모르는 AI\"는 옛말이에요.\n\n---\n\n4/ v2.0 핵심 기능: 디자인 시스템 자동 생성\n\n\"뷰티 스파 랜딩페이지 만들어줘.\"\n\n이 한 마디면 5개 도메인을 병렬 검색해요.\n제품 유형, 스타일, 색상, 랜딩 패턴, 타이포그래피.\n\n100개 산업별 추론 규칙이 자동 적용됩니다.\n안티패턴 필터링 + Pre-delivery 체크리스트까지.\n\n\"어떤 Dribbble 샷 참고했냐\"고 물어본 디자이너도 있었대요.\n실제 사용자 후기입니다.\n\n---\n\n5/ 설치 방법\n\nnpm install -g uipro-cli\ncd /path/to/your/project\nuipro init --ai claude\n\n3줄이면 끝.\n설치 후 자연어로 대화하면 자동 활성화돼요.\n\nCursor 쓰시면?\nuipro init --ai cursor\n\n전체 도구 한 번에?\nuipro init --ai all\n\n---\n\n6/ 경쟁 도구 비교\n\nAnthropic 공식 frontend-design 스킬도 있어요.\n타이포그래피/색상/애니메이션 4차원 접근.\n근데 스타일 종류가 훨씬 적습니다.\n\ntweakcc는 Stars 931개.\n터미널 외관만 커스터마이징하는 도구예요.\n코드 디자인과는 다릅니다.\n\nUI UX Pro Max는 Stars 38,100개.\n압도적 차이.\n\n---\n\n7/ 지원 스택\n\nReact, Next.js, Vue, Nuxt.js, Svelte.\nSwiftUI, Flutter, React Native까지.\nHTML+Tailwind도 됩니다.\n\nshadcn/ui, Nuxt UI 같은 컴포넌트 라이브러리도 지원해요.\n\n디자인 시스템을 MASTER.md로 저장하면 페이지별 오버라이드도 가능합니다.\n\n---\n\n8/ 정리\n\n\"AI가 만든 거 티나요.\"\n\n이 말 듣기 싫으시면 스킬 하나 설치하세요.\n67종 스타일, 96종 팔레트, 57종 폰트 페어링.\n\nAI 슬롭에서 벗어나는 데 3줄이면 충분합니다.\n\nSnyk \"Top 8 Claude Skills for UI/UX Engineers\" 1위.\n검증된 도구예요.\n\n혹시 AI 디자인 품질 때문에 고민해보신 적 있으세요?\n\n---\n\n출처:\nGitHub nextlevelbuilder/ui-ux-pro-max-skill (Stars 38,100+)\nAnthropic 공식 블로그 \"Improving Frontend Design Through Skills\"\n\nSnyk \"Top 8 Claude Skills for UI/UX Engineers\"\ndesigncourse.com 30일 UI 디자인 챌린지 (600+ 참가자)",
+      "media": [],
+      "crawled_at": "2026-03-18T17:48:04.479",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVnG0Awkz02",
+      "user": "qjc.ai",
+      "timestamp": "2026-03-08 14:03:56",
+      "original_item_count": 10,
+      "platform_sequence_id": 495
+    },
+    {
+      "sequence_id": 452,
+      "platform_id": "DVnlycHkyOb",
+      "sns_platform": "threads",
+      "code": "DVnlycHkyOb",
+      "username": "ai_developer_genie",
+      "display_name": "Genie | 풀스택 개발자 지니",
+      "full_text": "1.\nClaude Code 쓰면서 토큰이 너무 빠르게 소진되는 게 계속 신경 쓰였는데, rtk라는 툴을 발견하고 나서 체감이 확실히 달라졌다.\nrtk는 \"Rust Token Killer\"의 약자로, Claude Code가 실행하는 CLI 명령어 출력을 LLM에 전달하기 전에 필터링해주는 프록시 도구다.\n\n원리가 간단하다.\nClaude Code가 git status 같은 명령어를 실행하면 보통 50줄짜리 raw output이 그대로 context에 들어간다. rtk는 이걸 중간에 가로채서 필요한 정보만 압축해서 넘긴다.\n결과적으로 같은 명령어를 실행해도 context에 들어가는 토큰이 60~90% 줄어든다.\n실제 수치가 이렇다.",
+      "media": [],
+      "url": "https://www.threads.net/@ai_developer_genie/post/DVnlycHkyOb",
+      "created_at": "2026-03-08 18:34:33",
+      "date": "2026-03-08",
+      "crawled_at": "2026-03-18T17:48:04.479",
+      "source": "network",
+      "is_merged_thread": false,
+      "root_code": "DVnlycHkyOb",
+      "like_count": 498,
+      "reply_count": 22,
+      "repost_count": 190,
+      "quote_count": 9,
+      "pk": "3848210600497980315",
+      "media_type": 19,
+      "content_type": "image",
+      "platform_sequence_id": 496
+    },
+    {
+      "sequence_id": 453,
+      "sns_platform": "threads",
+      "code": "DVlnbqZExPd",
+      "full_text": "로컬호스트에 URL 주소 연결하기\n\nGive your localhost a\nlocal or public URL\nTurn localhost:3000 into https://app.test with path routing, HTTPS, HMR support, or get a public url without deployment.\n\nhttps://slim.sh/",
+      "media": [],
+      "crawled_at": "2026-03-18T17:48:04.479",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVlnbqZExPd",
+      "user": "ejang",
+      "timestamp": "2026-03-08 00:10:26",
+      "original_item_count": 1,
+      "platform_sequence_id": 497
+    },
+    {
+      "sequence_id": 454,
+      "sns_platform": "threads",
+      "code": "DVnTtVQgRWo",
+      "full_text": "지난 1주일 동안 Claude Cowork기능을 활용한 카드뉴스 제작 자동화 스킬 만들기에 열중 했습니다.\n\nSkill은 10분만에 뚝딱 만들어 주었지만 정말 사용할 수 있는 수준까지 발전 시키는데 가장 많은 시간을 투자 했고,\n\n완성한 Skill을 바탕으로 Cowork에서 카드뉴스 자동화를 AI가 스스로 만들 수 있도록 가이드 문서를 만들었습니다.\n\n일반인, 직장인, 대학생, 비개발자, 소상공인, 1인창업자 누구라도 이 가이드 문서를 AI에게 전달하고 인터뷰에 대답만 하면 내 채널이나 브랜드에 맞는 카드뉴스 자동화 Skill이 완성 됩니다.\n\nSkill을 만들고나면 클로드에서 그냥 \"이 주제로 카드뉴스 만들어줘\"라고만 하면 카드뉴스가 완성됩니다.\n\n혹시 필요하신분이 계시다면 배포 링크를 만들어 보겠습니다. 댓글 남겨주세요~\n\n---\n\n링크 만들어서 순차적으로 보내드리겠습니다.\n\n좋아요+팔로우 해주신분들 우선으로 DM으로 보내드리겠습니다~\n\n---\n\n⚠️ 생각보다 요청이 많아서 오늘 자정까지 들어온 요청만 링크 보내 드리겠습니다!\n\n다운로드는 내일(9일) 자정까지 열어 두겠습니다!\n\n---\n\n26.03.09(월) 오전 10시 - 밤사이 팔로우 해주신분들이 많아서 팔로우하고 댓글로 요청주신분들은 모두 보내 드렸습니다. 지금시간 이후로는 팔로우 하고 DM보내주시는 분들에게 링크 드리겠습니다.🙇‍♂️ 감사합니다!\n\n---\n\n26.03.09(월) 오후 3시 - 팔로우 해주신분들께 모두 DM드렸으나 혹시 못 받으신분들이 계실까봐 프로필에 링크 걸어 두겠습니다! (자정까지)",
+      "media": [],
+      "crawled_at": "2026-03-18T17:48:04.479",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVnTtVQgRWo",
+      "user": "calmtiger_",
+      "timestamp": "2026-03-08 15:56:34",
+      "original_item_count": 5,
+      "platform_sequence_id": 498
+    },
+    {
+      "sequence_id": 455,
+      "sns_platform": "threads",
+      "code": "DVkPmm0kSWd",
+      "full_text": "defuddle이라는 스킬이 있다.\n\n웹페이지를 md로 추출해서\nclaude가 읽을 수 있게 한다.\n빠르고 정확하다!!!\n\n사실 스킬의 존재를 모르고 있었는데\n클로드코드한테 참고하라고 웹링크 줬더니만\n자기가 defuddle 스킬을 다운받아서 쓰고 있다.\n\nhttps://github.com/kepano/obsidian-skills/tree/main/skills/defuddle",
+      "media": [],
+      "crawled_at": "2026-03-18T17:48:07.496",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVkPmm0kSWd",
+      "user": "lazylittleyoyo",
+      "timestamp": "2026-03-07 11:22:58",
+      "original_item_count": 1,
+      "platform_sequence_id": 491
+    },
+    {
+      "sequence_id": 456,
+      "sns_platform": "threads",
+      "code": "DVm51eIEZ23",
+      "full_text": "너무 기쁜 소식을 공유드려요! Obsidian CEO @kepano 제게 연락을 주었어요.\n\n정말 영광스럽게도 제 GitHub Obsidian CLI 한국어 가이드 프로젝트를 보시고, 가이드의 컨셉에 영감을 받아 이를 공식 웹사이트의 정식 페이지로 구성하고 싶다는 의견을 주신거예요!\n\n드디어 그의 결과물이 공식적으로 공개되었습니다!\n\nObsidian CLI\nhttps://obsidian.md/ko/cli\n\n작업해주신 과정에서 그간 없었던 Obsidian 홈페이지 한국어 지원도 함께 적용되었습니다!\n\nObsidian - 사고를 날카롭게\nhttps://obsidian.md/ko/\n\n이제 Obsidian의 여러 페이지들을 더 편하게 한국어로 만나실 수 있어요.\n\n가이드 페이지 구성과 한국어 PR 같은 저의 작은 시도를 잘 바라봐주시고, 미약하게나마 도움이 된 것 같아 정말 영광스럽고 기뻐요!\n\n앞으로도 개선이 필요한 부분에 대해서 Obsidian 저장소로 PR을 보내드리려고 해요.\n\n---\n\n기존 한국어 가이드 프로젝트도 어제까지도 업데이트를 이어나가고 있습니다. 좀 더 가꿔볼게요~\nhttps://lucas-flatwhite.github.io/obsidian-cli-guide-ko/",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/642596137_17884163097462362_4193823621254810741_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMjE2MHgxNDAyLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5leHBlcmltZW50YWwifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QEmfEOV7__Jzx5ihe4jMBvh0c_I7XZjLjQ4TqQJpQQSNBABo3gXAa2MbJv97mRGbVA&_nc_ohc=u7iaoa4dulkQ7kNvwGHDDfd&_nc_gid=8BxUCgxyqoGHcGNfBumk-w&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0ODAxNzE3MTc1NTIxNzQ2Nw%3D%3D.3-ccb7-5&oh=00_AfxMuXXj-mApFTqIgFdSmFAqex80TVNpWhtG6dM-VjdXjg&oe=69C02F76&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:48:07.496",
+      "local_images": [
+        "web_viewer/images/4411382b960743ed920df48e99037f42.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVm51eIEZ23",
+      "user": "lucas_flatwhite",
+      "timestamp": "2026-03-08 12:10:29",
+      "original_item_count": 2,
+      "platform_sequence_id": 492
+    },
+    {
+      "sequence_id": 457,
+      "sns_platform": "threads",
+      "code": "DVlU9k8if_O",
+      "full_text": "클로드 코드의 Scheduled Task는\n클로드 코드 2.0이 맞다고 생각한다.\n\n예약 태스크 기능은 자동화 도구로써 너무 강력하다.\n\n1. 카드 뉴스 업로드가 매일 1회 혹은 100회라도 '아무 지시 없이' 자동으로 업데이트 되게 할 수 있다. (초기 세팅을 잘 해놓는다는 전제 하에)\n2. 매일 프롬프트가 본인의 실수를 파악하고 자가개선을 하게 만들 수 있다. 스스로 개선하게 재귀를 할 수 있는 것이다.\n3. SaaS를 만들 경우 Docs 메뉴나 기타 업데이트가 사람의 손을 거치지 않고 알아서 업데이트 되게 할 수 있다.\n4. 내가 만드는 SaaS인 Supanova에서도 하루 1회 자동으로 템플릿, Asset, 이미지 생성을 100% 알아서 생성하고 업로드되게 할 것이다.\n5. 매일 뉴스레터를 자동 수집하고 만들어 가입자들에게 소식을 보내 리텐션을 끌어올릴 수 있다.\n\n이상 아이디어 천지다.\n괜히 Nate Herk가 뜬소리 하는 것이 아닌 것 같다.\n\n---\n\nNate Herk의 리뷰 영상\nhttps://www.youtube.com/watch?v=BlNJFa3Btm8&t=7s",
+      "media": [],
+      "crawled_at": "2026-03-18T17:48:07.496",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVlU9k8if_O",
+      "user": "joshproductletter",
+      "timestamp": "2026-03-07 21:29:02",
+      "original_item_count": 2,
+      "platform_sequence_id": 493
+    },
+    {
+      "sequence_id": 458,
+      "sns_platform": "threads",
+      "code": "DVmW7cAEnd2",
+      "full_text": "5분 세팅했는데 \r\nClaude Code가 잠 안 자는 개인 비서가 됐어요. \r\n스케줄 돌리고, 텔레그램 답장하고, 음성도 받아씁니다.\n\n평소엔 “이거 나중에 해야지”가 쌓여서 결국 안 하게 되잖아요. \r\n반복 작업, 체크해야 할 일, 간단한 응답까지 직접 붙잡고 있는 게 은근 피곤해서 만들게 됐어요. \r\n가볍고 오픈소스인 OpenClaw 스타일을 Claude Code 안에 넣은 느낌으로요.\n\n---\n\n이름은 ClaudeClaw. \r\n백그라운드 데몬으로 돌아가면서 heartbeat, cron job, Telegram 브릿지를 붙여놨어요. \r\n텍스트/이미지/음성 대응되고, 대시보드에서 작업이랑 로그도 바로 확인 가능. \r\n심지어 모델 한도 닿으면 fallback으로 이어서 돌게 해둠. \r\n생각보다 “AI를 쓰는 느낌”보다 “내 작업 시스템 하나 더 생긴 느낌”이 커서 좋았어요.\n\n로컬 기반이라 괜히 더 마음 편하고요. \r\n물론 은행 해킹 같은 이상한 데 쓰면 안 됩니다 ㅋㅋ \r\n이런 류의 “24시간 대기하는 내 개발 비서” 하나 있으면, 제일 먼저 뭐 시켜보고 싶나요?",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/643155132_17916976281290897_1647899304789091810_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTA4MHg1NDAuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QF_lU_AmWYceOrQb9nrwq0za8dIJZEayH175zJHsn7RcX2U6l_pfR3-895WGg8DJ5E&_nc_ohc=NPmG_DrhpMcQ7kNvwEncUUH&_nc_gid=vLU3RWkIS05SN224_gyEiQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0Nzg2Mzc3MzE3MzAyMDUzNA%3D%3D.3-ccb7-5&oh=00_AfxdbFHFivGiTplcLD0DXR1lYkYnnS3hCGx_z6_bPp_ydw&oe=69C04A75&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:48:07.496",
+      "local_images": [
+        "web_viewer/images/0a396c85c67ff552abc38768571ded7a.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVmW7cAEnd2",
+      "user": "iam_mychan",
+      "timestamp": "2026-03-08 07:05:36",
+      "original_item_count": 2,
+      "platform_sequence_id": 494
+    },
+    {
+      "sequence_id": 459,
+      "sns_platform": "threads",
+      "code": "DVlzudPkWOw",
+      "full_text": "Codex CLI 실행 후 \n\n\" playwright MCP 스킬 설치해줘 \" 라고 하던가\n\nnpx -y executeautomation/playwright-mcp-server\n\n이걸로 직접 설치하시면, 오픈클루에서 누렸던 기능을 경험하실 수 있습니다.\n\nPlayWright 는 브라우저를 대신 움직여주는 자동 직원이라고 생각하시면 됩니다.\n\n예시) \n네이버 접속해서 강남맛집 검색하고\n첫번째 결과 페이지 스크린샷 찍어줘\n\n쿠팡에 OOOO 제품 가격이 300,000원 밑으로 떨어지면 텔레그램으로 얘기해줘\n\n경쟁사 홈페이지에 가서 새로운 이벤트가 있으면 얘기해줘\n\n라던지 개인 컴퓨터의 브라우저 제어/로그인 등을 활용할 수 있는 유기적인 프로그램 제작이 가능함",
+      "media": [],
+      "crawled_at": "2026-03-18T17:48:10.531",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVlzudPkWOw",
+      "user": "openclaw_ko",
+      "timestamp": "2026-03-08 01:57:52",
+      "original_item_count": 1,
+      "platform_sequence_id": 487
+    },
+    {
+      "sequence_id": 460,
+      "sns_platform": "threads",
+      "code": "DVT1I-lEpdz",
+      "full_text": "[3월 1일 업데이트] 무료 자료 공유 누적 리스트\n\n1. 비개발자를 위한 Claude Code 사용법 A to Z\nhttps://bevel-boron-05c.notion.site/Claude-Code-A-to-Z-30844a48e2b180f4b178d852db998a80?source=copy_link\n2. OpenClaw 가이드북\nhttps://bevel-boron-05c.notion.site/OpenClaw-30944a48e2b180e28faef8c3ab4e0134?source=copy_link\n3. Claude in Excel 완벽 가이드\nhttps://bevel-boron-05c.notion.site/Claude-in-Excel-31344a48e2b180ca9a8cccf706bd1308\n\n팔로우와 좋아요 해주실 거쥬~?\n\n---\n\n4. Claude in Powerpoint 완벽 가이드\nhttps://bevel-boron-05c.notion.site/Claude-in-PowerPoint-31144a48e2b18096ade6eafde543c5bc?source=copy_link\n5. AI 시대의 저작권 — 2026 가이드북\nhttps://bevel-boron-05c.notion.site/AI-2026-30b44a48e2b18097be1dd553c9a9f710?source=copy_link\n6. AI가 바꾸는 여행의 미래 - 관광·레저 산업 2026 트렌드 리포트\nhttps://bevel-boron-05c.notion.site/AI-2026-31544a48e2b1806db434f4120f73df09?source=copy_link",
+      "media": [],
+      "crawled_at": "2026-03-18T17:48:10.531",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVT1I-lEpdz",
+      "user": "gpt_minje",
+      "timestamp": "2026-03-01 02:23:53",
+      "original_item_count": 2,
+      "platform_sequence_id": 488
+    },
+    {
+      "sequence_id": 461,
+      "sns_platform": "threads",
+      "code": "DVmx48kiqm0",
+      "full_text": "249달러에 팔던 보일러플레이트를 무료로 풀었습니다..!\n\n결제, 로그인, DB, 보안\n이런 거 다 미리 세팅되어 있는 템플릿이에요\n딸깍 한 번이면 바로 웹 서비스 만들 수 있어요\n근데 이게 다가 아니고요\n\n40번 넘게 서비스를 만들면서\n제 기억 저장소에 쌓아둔 작업 패턴들 있거든요\n\"이건 매번 반복하네\"\n\"초보일 때 이걸 알았으면\"\n\n이런 것들 다 모아서\n클로드 코드 커맨드 12개로 만들었어요\n\n레딧 리서치, PRD 자동생성, SEO 점검, 보안 스캔까지\n클코 새싹분들도 바로 쓸 수 있게요..! 화이팅!!\n\n---\n\nFireShip 1기\n\n5일 만에 AI 서비스 기획부터 배포까지 바이브 코딩만 가르치는 강의 X\n\n수요 검증, 결제 연동, 고객 찾기, 운영까지 전부 다뤄요\n\n3월 23일(월) ~27일(금) 매일 오후 7시 ~ 11시 (4시간) 강남역 or 역삼역 인근 \n\n10명 한정, 충원 없음 \n\n상세 커리큘럼 & 신청 fireship.me",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/649212550_17920129164268077_2160898279426927836_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTA4MHgxMzUwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QFc1-ztg6tie-o3yWhwcbcXmnH6Ss2W1IgCrRtLvY-JtFAHwv5lgXpo7cpEY6dpsNs&_nc_ohc=tLLXbwv14n0Q7kNvwE3jxkX&_nc_gid=MtF9KVA1W8PY2e1U6k90vA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0Nzk4MjMyMjY5MjA1NjczMg%3D%3D.3-ccb7-5&oh=00_AfwWHhVRFP3Dfd3g8yNVO2UmpQW-7USJRgX9iIm8iXu9yg&oe=69C04D54&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:48:10.531",
+      "local_images": [
+        "web_viewer/images/3c6fb91529b0ea3abab4f1f080e5006c.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVmx48kiqm0",
+      "user": "freainer",
+      "timestamp": "2026-03-08 11:01:03",
+      "original_item_count": 2,
+      "platform_sequence_id": 489
+    },
+    {
+      "sequence_id": 462,
+      "platform_id": "DVkzBZ3Dwkd",
+      "sns_platform": "threads",
+      "code": "DVkzBZ3Dwkd",
+      "username": "flowkater",
+      "display_name": "조재우",
+      "full_text": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill\n\nhttps://www.designprompts.dev/\n\n클로드 바로 사용 가능합니다.",
+      "media": [],
+      "url": "https://www.threads.net/@flowkater/post/DVkzBZ3Dwkd",
+      "created_at": "2026-03-07 16:32:28",
+      "date": "2026-03-07",
+      "crawled_at": "2026-03-18T17:48:10.531",
+      "source": "network",
+      "is_merged_thread": false,
+      "root_code": "DVkzBZ3Dwkd",
+      "like_count": 87,
+      "reply_count": 0,
+      "repost_count": 35,
+      "quote_count": 3,
+      "pk": "3847424378540067101",
+      "media_type": 19,
+      "content_type": "image",
+      "platform_sequence_id": 490
+    },
+    {
+      "sequence_id": 463,
+      "sns_platform": "threads",
+      "code": "DVgLnWECgij",
+      "full_text": "Claude Code 이렇게 써보셈\n\nClaude Code로 스킬이나 에이전트 만들고\n거기서 끝내는 사람이 대부분인데\n진짜 아까움\n\n거기서 한 단계만 더 가면\n완전히 다른 세계가 열림\n\n---\n\n나는 카드뉴스를 자주 만드는데 수작업이 너무 귀찮았음\n\nClaude Code로 스킬 만들어서 자동화했는데\n텍스트로 요청하고 텍스트로 피드백하는 게 또 불편하더라\n\n디자인 결과물을 터미널에서 수정하는 건 한계가 있음\n\n---\n\n그래서 결국 데스크톱 앱으로 만들었음\n\n엔진은 Claude Code 스킬 셋 그대로 쓰고\nElectron으로 UI를 씌운 거임\n\n버튼 하나로 카드뉴스가 나오고\n화면 보면서 바로 내가 원하는 수정할 수 있음\n\n스킬만 있을 때랑 체감이 완전 다름\n\n---\n\n만들어놓으니까 자연스럽게 확장이 시작됨\n\n옵시디언 연결해서 지식관리 연동하고\n인스타 자동 업로드도 붙이려 하고 있음\n\n앞으로 Claude Code 쓰는 개인은 다 이렇게 될 거라 봄\n자기만의 앱이 하나씩 쌓이고 연결되면서\n자기만의 OS가 되는 거임\n\n---\n\n내가 불편한 걸 자동화하고 싶으면\n스킬이나 에이전트에서 멈추지 말고\n데스크톱 앱까지 끝까지 만들어보는 거 강력 추천함\n\n반응 좋으면 실제 구조랑 만든 과정도 풀겠음\n나중에 볼 사람은 북마크 추천함",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/641851164_925908973705072_5237712084973711978_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDQzNC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QGsTliDiZFPPqawmcJ6hT1MpCm0gNhKBjrYa9Af5Gm9g_SUnOJAtQ2cJabQwBouLCs&_nc_ohc=dgb6gGu-RisQ7kNvwH6k9gx&_nc_gid=ED0wNIVqtiIcaCPBDn9Mvw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0NjEyNTE2NDAzNTcwNDk5NQ%3D%3D.3-ccb7-5&oh=00_AfzuB6le4UZ99t5-xlDobtJLiMth3IFTkZ1KDTVukPkOeg&oe=69C03CDF&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:48:13.551",
+      "local_images": [
+        "web_viewer/images/4f378d3f30ec2683985832720bb7ce94.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVgLnWECgij",
+      "user": "devdesign.kr",
+      "timestamp": "2026-03-05 21:31:55",
+      "original_item_count": 5,
+      "platform_sequence_id": 486
+    },
+    {
+      "sequence_id": 464,
+      "sns_platform": "threads",
+      "code": "DVi-R5OD7Vh",
+      "full_text": "🔥 OpenAI, Codex 전용 'Skills Catalog' 공개 — 에이전트가 쓰는 스킬 모음집\n\nOpenAI가 GitHub에 Codex 에이전트용 Skills Catalog를 공개. 코딩 에이전트가 재사용할 수 있는 검증된 스킬들을 모아둔 오픈소스 저장소로, 현재 11,500+ stars. AI 에이전트의 '스킬 생태계' 표준화를 향한 OpenAI의 첫 공식 움직임.\n\n🔗 https://github.com/openai/skills\n\n🤖 마팀장 AI뉴스 | AI핫이슈 #마팀장",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/642643328_17919245760270646_1137311629248857142_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTA4MHg1NDAuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QHQSBHkipxe5DZlRSiuhaQihq9WmTeKSG1C5cjuy6lWTmX5CwTCI2nNRl18k3Vnfq0&_nc_ohc=XVeyztrtXloQ7kNvwHOQCSK&_nc_gid=Y9uXsnbVi2WwLSedSNsIKQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0NjkxMDk0MDI4MTgxMjMyMQ%3D%3D.3-ccb7-5&oh=00_Afy2qinLdaTmcA9P6R43xX1RDCO8_RopSKIvY3bm6mBq4A&oe=69C04E35&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:48:13.552",
+      "local_images": [
+        "web_viewer/images/119cccb6a60b2a0c8be4971a2e73fe71.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVi-R5OD7Vh",
+      "user": "kjconsulting_team",
+      "timestamp": "2026-03-06 23:32:30",
+      "original_item_count": 1,
+      "platform_sequence_id": 483
+    },
+    {
+      "sequence_id": 465,
+      "sns_platform": "threads",
+      "code": "DVj9CQpEWat",
+      "full_text": "[디자이너가 꼭 알아야할 클로드 스킬 5]\n\"정확한 목적을 알고 써보아요 \"\n\n1. theme-factory - 문서·슬라이드 톤 통일\n2. frontend-design - 의도한 톤으로 UI 구현\n3. webapp-testing - 사람처럼 눌러보며 QA\n4. canvas-design - 컨셉에 맞는 포스터 뽑기\n5. figma-code-to-canvas - 화면을 피그마로 옮기기\n👇\n\n---\n\n[문서·슬라이드 톤 통일]\n\ntheme-factory는 “내용은 그대로 두고, 분위기만 빠르게 정리”할 때 씁니다. 발표자료나 문서는 폰트/색/강조 규칙이 흔들리는 순간 급격히 허술해져요. 기대치는 톤이 통일된 결과물. 대신 메시지 우선순위, 어떤 문장을 크게 둘지, 무엇을 덜어낼지는 사람이 결정해야 합니다.\n👇\n\n---\n\n[의도한 톤으로 UI 구현]\n\nfrontend-design는 “예쁘게”가 아니라 디렉션을 점검하고 끝까지 구현하게 만드는 가이드에 가깝습니다. 완성도 높은 화면을 목표로 하고, 무난한 ‘AI 기본값’ 미감을 피하라고 전제하죠. 기대치는 톤이 디테일까지 이어진 UI. 대신 목적 한 줄, 톤 한 줄은 사람이 먼저 못 박아야 합니다.\n👇\n\n---\n\n[사람처럼 눌러보며 QA]\n\nwebapp-testing은 디자이너가 손으로 하던 클릭/입력/이동 검수를 반복 재현하는 데 강합니다. 데모 전, 배포 전, 수정 후에 깨진 곳을 빠르게 확인할 수 있어요. 기대치는 플로우/상태 이상을 잡아내는 것. 대신 무엇을 테스트할지, 합격 기준은 사람이 정해야 합니다.\n👇\n\n---\n\n[컨셉에 맞는 포스터 뽑기]\n\ncanvas-design는 제품 UI가 아니라 한 장짜리 비주얼이 필요할 때 씁니다. 포스터, 커버 이미지, 정적 그래픽처럼 컨셉이 중요한 작업을 “컨셉→결과물”로 뽑아줘요. 기대치는 컨셉이 선명한 정적 결과물. 대신 전달할 메시지와 금지 요소(브랜드/저작권)는 사람 몫입니다.\n👇\n\n---\n\n[화면을 피그마로 옮기기]\n\nfigma-code-to-canvas는 코드에서 만든 화면을 피그마로 가져와 캔버스에서 정리/공유하려는 목적입니다. 스크린샷이 아니라 편집 가능한 레이어로 들어오는 게 핵심이죠. 기대치는 왕복 루프. 대신 가져온 뒤 오토레이아웃, 컴포넌트화, 네이밍 정리는 결국 사람 몫입니다.\n👇\n\n---\n\ntheme-factory\nhttps://raw.githubusercontent.com/anthropics/skills/main/skills/theme-factory/SKILL.md\n\nfrontend-design\nhttps://raw.githubusercontent.com/anthropics/skills/main/skills/frontend-design/SKILL.md\n\nwebapp-testing\nhttps://raw.githubusercontent.com/anthropics/skills/main/skills/webapp-testing/SKILL.md\n\ncanvas-design\nhttps://raw.githubusercontent.com/anthropics/skills/main/skills/canvas-design/SKILL.md\n\nfigma-code-to-canvas\nhttps://lobehub.com/skills/mikeygonz-skills-figma-code-to-canvas",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/649216714_17948909367120123_3513427751294224667_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTAyNHgxMDI0LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QHW-PdI0SGXAQHnYERFJPx5wBMyqZRFZ1n5uoQhOE7S11NY5O7nwhp4qv9qxJIRASs&_nc_ohc=WIMNg3gRXPkQ7kNvwGVia4S&_nc_gid=tlHtiqgnooGwVxE8toZccA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0NzE4NjY4MDU2MjkxNjcyNg%3D%3D.3-ccb7-5&oh=00_Afxq-aYd5WDNuptKpA8_rFJFPcCZdIbgxQdSwmQz5_eHow&oe=69C02D24&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:48:13.552",
+      "local_images": [
+        "web_viewer/images/34f97154a093c1f5f3ff5ef0b48f64e9.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVj9CQpEWat",
+      "user": "dddesign.io",
+      "timestamp": "2026-03-07 08:40:48",
+      "original_item_count": 7,
+      "platform_sequence_id": 484
+    },
+    {
+      "sequence_id": 466,
+      "sns_platform": "threads",
+      "code": "DVjto4yD3PW",
+      "full_text": "와, 클로드 코드로 뭐 만들다 보면 내가 AI랑 어떻게 대화했는지, 그 과정 다시 보고 싶을 때 많잖아?\n딱 그럴 때 쓰라고 해커뉴스에 'Claude-replay'라는 게 떴더라.\nAI랑 대화하며 코드 짜는 과정 자체를 영상처럼 다시 돌려볼 수 있는 툴인데...\n이게 바이브 코딩을 배우고 가르치는 방식 자체를 완전 바꿔 놓을 것 같다는 생각이 들었어.\n\n---\n\n그동안 AI랑 대화하면서 코드 짜는 과정이 약간 블랙박스 같았잖아?\n근데 이걸 영상처럼 그대로 재생해서 볼 수 있다는 건, 학습 곡선을 확 줄여준다는 뜻이거든.\n비전공자들이나 이제 막 1인 개발 시작하려는 사람들한테\nAI한테 어떻게 지시하고 디테일을 다듬어야 하는지 감 잡는 데 진짜 큰 도움이 될 거야.\n결국 이 툴처럼 AI를 부리는 노하우를 빠르게 공유하고 배우는 사람이\n'슈퍼 개인'으로 더 빨리 점프하는 거지.\n\n---\n\n깃허브 주소👇\nhttps://github.com/es617/claude-replay",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/641387294_17860066722663827_3861824719507214481_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTA4MHg1NDAuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2QEXcCP4YmqIXI4imXhgTqUz-lS39G3ExpspMJjEniZ72vVA_JL5fMLrkA-dtXyp-iw&_nc_ohc=Tb9CXnggAvYQ7kNvwGKeLtS&_nc_gid=Cp4aKe9oNpR3YZslJ2EAGg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0NzExOTIyODU0NjAyMDMxMA%3D%3D.3-ccb7-5&oh=00_Afwal7GzG-PZ2ddfwFgSoVn-SPf85NEO7k-Fj49paa_ERw&oe=69C02CFB&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:48:13.552",
+      "local_images": [
+        "web_viewer/images/2440180d2ed9d9cb8c74b0d91457ef53.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVjto4yD3PW",
+      "user": "hyperexecutor",
+      "timestamp": "2026-03-07 06:26:46",
+      "original_item_count": 3,
+      "platform_sequence_id": 485
+    },
+    {
+      "sequence_id": 467,
+      "sns_platform": "threads",
+      "code": "DViQSbAEvMI",
+      "full_text": "Claude Code 창 4개를 동시에 열어서 각각 다른 일을 시켰더니, 25분짜리 업무가 2분에 끝났어.\n\n비결은 단순해. AI한테 네 비즈니스 맥락을 전부 넣어주는 거야.\n\n---\n\n방법은 4단계야.\n\n① CLAUDE.md에 프로젝트 구조를 잡는다 — 나/팀/프로젝트/우선순위 폴더로 나눠서 토큰도 아끼고 맥락도 유지\n\n② 인터뷰 모드로 비즈니스 정보를 입력한다 — 이름, 역할, 팀, 목표, 프로젝트를 대화로 채움\n\n③ 스킬과 서브 에이전트를 빌드한다 — 리서치, 콘텐츠 생성, 팀 체크인 같은 반복 업무를 자동화\n\n④ 매일 쓰면서 키운다 — 쓸수록 파일이 쌓이고, 맥락이 깊어지고, 결과가 정확해져\n\n---\n\n핵심은 CLAUDE.md를 브레인으로 쓰는 거야. 전체 정보를 다 넣는 게 아니라, \"이 정보는 여기서 읽어\"라고 포인터만 걸어두는 방식.\n\n일단 시작하면 일주일 만에 완전히 다른 도구가 돼.\n\n(볼 수록 정가는 얼굴..\n\n---\n\nhttps://www.youtube.com/watch?v=mi4hcipESKQ",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/641662313_17871696864559701_5034456442327329324_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTI4MHg3MjAuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QHYQOQ0xsmFS61nRd1jnAQ3glpJ5eqICR9z3O07K3VMbh1rgfDcLJ_mkQ7Djlz_IvQ&_nc_ohc=29kX9xknR4AQ7kNvwEyL8OH&_nc_gid=3p3adlrEUAK8o7OdXcmOxQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0NjcwODY2NjQxNDg1NDkyMA%3D%3D.3-ccb7-5&oh=00_AfxVFru_p3MXM8fotbHIjzQ6ZlF_ZPZ8H9-8xjE_1cFfuw&oe=69C0493A&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:48:16.578",
+      "local_images": [
+        "web_viewer/images/5337abd9df4be102d15e1ec2c2555370.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DViQSbAEvMI",
+      "user": "softdaddy_o",
+      "timestamp": "2026-03-06 16:50:28",
+      "original_item_count": 4,
+      "platform_sequence_id": 479
+    },
+    {
+      "sequence_id": 468,
+      "sns_platform": "threads",
+      "code": "DVhdL6YE4Q0",
+      "full_text": "🚨 리얼 실전 꿀팁 ) 챗지피티 대란 PRO 오,우,너 에게 실질적인 혜택!! \n\nGPT-5.4의 숨겨진 잠재력, Codex CLI에서 100만 토큰 컨텍스트 창을 활성화하는 방법을 아시나요?\n\n기본 27.2만 토큰을 넘어, 거대한 코드베이스 전체를 컨텍스트에 넣고 작업할 수 있는 '실험적' 기능! 설정 방법과 반드시 알아야 할 주의사항을 정리했습니다.\n\n⚙️ 100만 컨텍스트 활성화 방법\n\n먼저, Codex 설정 파일(~/.codex/config.toml 또는 프로젝트 내 .codex/config.toml)을 열고 아래 두 줄을 추가하세요. gpt-5.4 모델을 사용한다고 가정합니다.\n\nmodel = \"gpt-5.4\"\nmodel_context_window = 1000000\nmodel_auto_compact_token_limit = 900000\n\nmodel_context_window를 100만으로 설정하여 최대 컨텍스트 크기를 지정합니다.\n\n---\n\n🤔 auto_compact_token_limit은 왜 필요한가요?\n\nmodel_auto_compact_token_limit은 자동 컨텍스트 압축이 시작되는 임계값입니다. 최대치(100만)보다 약간 낮은 값(예: 90만)으로 설정하면, 대화가 길어져 토큰이 꽉 차기 전에 Codex가 알아서 오래된 대화 내역을 요약/압축하여 컨텍스트를 효율적으로 관리해줍니다. 갑작스러운 컨텍스트 초과 오류를 방지하는 안전장치인 셈이죠.\n\n---\n\n⚠️ 가장 중요한 주의사항: 비용!\n\n이 기능은 '실험적'이며, 그에 따른 비용이 발생합니다. 공식 문서에 따르면, 표준 컨텍스트(272K 토큰)를 초과하는 요청은 사용량 한도가 2배로 소진됩니다. 즉, 100만 토큰을 꽉 채워 사용하면 크레딧 소모 속도가 매우 빨라질 수 있습니다. 대규모 작업에만 신중하게 사용하세요!",
+      "media": [],
+      "crawled_at": "2026-03-18T17:48:16.578",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVhdL6YE4Q0",
+      "user": "ai_younggle_man",
+      "timestamp": "2026-03-06 09:23:56",
+      "original_item_count": 3,
+      "platform_sequence_id": 480
+    },
+    {
+      "sequence_id": 469,
+      "sns_platform": "threads",
+      "code": "DVk-bazCeLP",
+      "full_text": "Claude Code에 자동 반복 실행 기능이 생겼습니다.\n/loop예요. 오늘 공식 릴리즈됐어요.\n\n랄프루프 안녕\n\n---\n\n쉽게 말하면 이래요.\n\n\"5분마다 배포 잘 됐는지 확인해줘\"를 한 번만 말하면, Claude가 알아서 5분마다 확인하고 결과를 알려줍니다. 직접 계속 물어볼 필요가 없어요.\n\n/loop 5m 배포 완료됐는지 확인하고 알려줘\n\n이렇게 치면 끝이에요.\n\n---\n\n활용 예시가 바로 감이 옵니다.\n\nPR에 댓글이 달리면 자동으로 확인하고 수정까지 해주거나, 매일 아침 Slack에서 내가 태그된 내용을 요약해주거나, 빌드 오류가 생기면 자동으로 고쳐주는 것도 돼요.\n\n한 세션에 최대 50개까지 등록할 수 있고, 반복 작업은 생성 후 3일 뒤 자동 만료됩니다.\n\n단, 세션을 닫으면 전부 사라져요. 터미널 켜놓는 동안만 작동하는 구조예요. 재시작해도 유지하려면 Desktop 예약 작업이나 GitHub Actions를 써야 합니다.\n\n---\n\n\"Claude한테 시키고 나서 내가 잊어버려도 되는 일\"의 범위가 넓어졌습니다.\n\n---\n\nhttps://code.claude.com/docs/en/scheduled-tasks",
+      "media": [],
+      "crawled_at": "2026-03-18T17:48:16.578",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVk-bazCeLP",
+      "user": "unclejobs.ai",
+      "timestamp": "2026-03-07 18:12:08",
+      "original_item_count": 5,
+      "platform_sequence_id": 481
+    },
+    {
+      "sequence_id": 470,
+      "platform_id": "DVj_TbFD-lN",
+      "sns_platform": "threads",
+      "code": "DVj_TbFD-lN",
+      "username": "onpremisehuman",
+      "display_name": "onpremisehuman",
+      "full_text": "한글자동화 중간보고.\n오퍼스가 만든 hwpx 서식베끼기를가지고 이정도 뽑아낸다\n\n코덱스가 해냄.\n이정도는 인간이 고칠게!!\n(내용에 대한 주제: 아 오늘 목요일인데 일찍가야되지않냐...)",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/o1/v/t16/f2/m84/AQOHus_Ahf5zDdMf-bi8Uo5VMQ6v1O8VI7LZ9Ctwb7PaPO2Vk8D9BWCBiuJYxSb0Y6a8ibmctJF0g_nNPxxsxSRK55NgvtybMtP1CPw.mp4?_nc_cat=101&_nc_sid=5e9851&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=UQHb4JXGNfUQ7kNvwGpEu_n&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uRkVFRC5DMy4xMjgwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTc4NzMyOTU3MTE1NTA5NjUsImFzc2V0X2FnZV9kYXlzIjoxMSwidmlfdXNlY2FzZV9pZCI6MTAxNjQsImR1cmF0aW9uX3MiOjksInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=Seo5WfIbqVegFdcPwiPIUw&_nc_ss=8&_nc_zt=28&vs=d745e84a2ea893da&_nc_vs=HBkcFQIYTGlnX2JhY2tmaWxsX3RpbWVsaW5lX3ZvZC9GNjQ5OTkyNDNFQjRGNDI5OTlEMThEMTY5OTE5QUJBRF92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAKAAYABsCiAd1c2Vfb2lsATEScHJvZ3Jlc3NpdmVfcmVjaXBlATEVAAAm6vfRnd7qvz8VAigCQzMsF0Ajqn752yLRGBJkYXNoX2Jhc2VsaW5lXzFfdjERAHXqB2XongEA&oh=00_Afyu_fv3nMi1atWCL55OQBxUA1xeja3-750YE9SzQh3_6Q&oe=69BC4D63"
+      ],
+      "url": "https://www.threads.net/@onpremisehuman/post/DVj_TbFD-lN",
+      "created_at": "2026-03-07 09:02:19",
+      "date": "2026-03-07",
+      "crawled_at": "2026-03-18T17:48:16.578",
+      "source": "network",
+      "is_merged_thread": false,
+      "root_code": "DVj_TbFD-lN",
+      "like_count": 309,
+      "reply_count": 34,
+      "repost_count": 40,
+      "quote_count": 1,
+      "pk": "3847196918380751181",
+      "media_type": 2,
+      "content_type": "video",
+      "platform_sequence_id": 482
+    },
+    {
+      "sequence_id": 471,
+      "sns_platform": "threads",
+      "code": "DVhhTE7EzJE",
+      "full_text": "Tofukyung 프롬프트 생성기 + GPT 5.4 Thinking(무겁게 생각)\n\n리서치 + 보고서 생성 프롬프트 퀄리티가 말이 안됩니다.\n\nTofukyung 프롬프트 생성기 링크도 아래에 바로 제공해 드릴게요\n\n---\n\n입력 프롬프트는 아래와 같습니다.\n\n---\n\n현업 과학 연구자도 실제 연구에 활용하는 Tofukyung 프롬프트 생성기 쓰러 가기\n\nGPTs : https://chatgpt.com/g/g-694feb6bf18481918acd876e3c3eed37-tofukyung-peurompeuteu-saengseonggi-v2-0-1\n\nGithub(Skill) : https://github.com/treylom/prompt-engineering-skills\n\nGPT-5.4 성능 놀라서 테스트중이긴 한데..\n제 프롬프트 생성기 성능에도 한번 더 놀라서 다들 쓰시라고 안내를..",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/641776898_17946993402112159_3835094050319665529_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uODc3eDEwODEuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QFwMMfOGP3qovIY-pWHcm8rUNx0hkKAZ8aETWS9l9BVpgpXzHU08S6D8LkYpo8aZ2U&_nc_ohc=tp0-mfaf-mIQ7kNvwEbkJD2&_nc_gid=umzdqKMw_3vFlgjyaspRlA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0NjUwMjAwMzI0MjExOTc0OA%3D%3D.3-ccb7-5&oh=00_AfxCqNnXSiAaC3brAw6E3jGWRZM66ncWPOWRX8zvEdLtxQ&oe=69C042E0&_nc_sid=10d13b",
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/642924186_17946994119112159_2370928721412550330_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMzcweDk4LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QFwMMfOGP3qovIY-pWHcm8rUNx0hkKAZ8aETWS9l9BVpgpXzHU08S6D8LkYpo8aZ2U&_nc_ohc=kr9AndtMX40Q7kNvwFJISLH&_nc_gid=umzdqKMw_3vFlgjyaspRlA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0NjUwMjA5NDM4NDM2ODQ4MA%3D%3D.3-ccb7-5&oh=00_Afz66c8RlUC1xZZMfUUDdgKcndc2EF1MwIABGM475Vxnng&oe=69C02B05&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:48:19.595",
+      "local_images": [
+        "web_viewer/images/2a6389dd40eba35417297241da6c169f.jpg",
+        "web_viewer/images/486d839039d585b9a382d5aba0e75e01.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVhhTE7EzJE",
+      "user": "tofukyung",
+      "timestamp": "2026-03-06 09:59:52",
+      "original_item_count": 3,
+      "platform_sequence_id": 475
+    },
+    {
+      "sequence_id": 472,
+      "sns_platform": "threads",
+      "code": "DVh4N3NDvTT",
+      "full_text": "Claude Code 컨텍스트 98% 절약, Context Mode MCP 서버\n\nClaude Code에서 MCP 도구 출력을 98% 압축해 컨텍스트 소진을 막는 오픈소스 MCP 서버 Context Mode 소개. 315 KB → 5.4 KB, 세션 시간 30분 → 3시간.\n\nhttps://aisparkup.com/posts/9765",
+      "media": [],
+      "crawled_at": "2026-03-18T17:48:19.595",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVh4N3NDvTT",
+      "user": "ai.sparkup",
+      "timestamp": "2026-03-06 13:20:22",
+      "original_item_count": 1,
+      "platform_sequence_id": 476
+    },
+    {
+      "sequence_id": 473,
+      "sns_platform": "threads",
+      "code": "DVhuPe6kkVl",
+      "full_text": "전자책 생성하기 삽가능\n- 자동으로 만든 ppt, md, txt, docx 파일을 선택하고 전자책으로 발행하기 하면 땡\n- 팁으로는 키미로 문서 정리해서 그냥 전자책 수 백개 찍어내기 가능\n- 전자책 크몽에다가 수백개 팔수도 있겠다 ㅋㅋㅋ\n개좋음\n\n---\n\n나 이걸로 전자책 미친 듯이 만들어서 사이트 만들어볼까도 고민 중 ㅋㅋ",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/641786365_17877815805507614_3522921207253774324_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTE0MXg1NTAuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QFwp9Wd8eKJFKEpefe01oQuowtiO1_rTOuYmmGDggIFdegVF7El-IVB-uF3ptUU8jk&_nc_ohc=D95ZTnK12lsQ7kNvwHsly5W&_nc_gid=nauBc6OixogXt5pwj0idrw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0NjU1ODkzMDg3NzY5NTMzMw%3D%3D.3-ccb7-5&oh=00_AfyZXYnfOy59d1tbJqxf7sM2mx11OO-iDiWGL79sHOPYFQ&oe=69C03244&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:48:19.595",
+      "local_images": [
+        "web_viewer/images/382d76a2a696f723ea36580ddd8dd431.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVhuPe6kkVl",
+      "user": "keke_appa",
+      "timestamp": "2026-03-06 11:52:59",
+      "original_item_count": 2,
+      "platform_sequence_id": 477
+    },
+    {
+      "sequence_id": 474,
+      "sns_platform": "threads",
+      "code": "DVjBYrkjzCn",
+      "full_text": "[Codex에 노션 MCP 연결하기]\n\n코덱스 5.4로 업그레이드 되면서, 문서작성 성능이 월등히 나아졌습니다.\n\n이제 기획안. 노션에 정리하도록 시키세요.\n\n노션 MCP 어떻게 연결하는지 모를 분들을 위하여, 프롬프트 준비했습니다.\n\ncodex 설치하신 다음, 바로 연결을 부탁해보세요.",
+      "media": [],
+      "crawled_at": "2026-03-18T17:48:19.595",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVjBYrkjzCn",
+      "user": "miniminim71",
+      "timestamp": "2026-03-06 23:59:30",
+      "original_item_count": 1,
+      "platform_sequence_id": 478
+    },
+    {
+      "sequence_id": 475,
+      "sns_platform": "threads",
+      "code": "DVh431DEoJb",
+      "full_text": "GPT 5.4 업데이트 이후로 저는 chrome-devtool 대신 playwright 환경으로 다시 돌아갈 것 같습니다.\n\nplaywright-interactive 이 스킬 시범적 출시 되었는데 단 몇줄만의 프롬프트로 테마파크 시뮬레이션을 에셋을 포함하여 완성해버렸네요.\n\n---\n\n프롬프트:\n\n---\n\n특히나 한번 부트스트랩하면 하나의 세션에서 기능적 QA 및 시각적 QA 까지 한번에 진행할 수 있는 반복 검증 워크플로우가 너무 좋네요\n\n---\n\nhttps://github.com/openai/skills/blob/main/skills/.curated/playwright-interactive/SKILL.md",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/648204621_17886444441448489_809396244135459901_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMjE2MHgxMTYyLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QGmk-HpDcg7hhYHy-V7olm3eBCwA2XWnOXWUPGOvWHL_hPZW21mGf92rtVjngOebBo&_nc_ohc=5p3YzS2qTroQ7kNvwF0jp5Q&_nc_gid=WssBYmCvmsuSIfGAGpcJPw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0NjYwNTY4Mzg4NjgxNzg4Mw%3D%3D.3-ccb7-5&oh=00_AfxVKuEI-dLHyspuUyWBOLFF9iKpujRJc7qQC1SvhfKQ8A&oe=69C04869&_nc_sid=10d13b",
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/645581300_17886444900448489_930492920192978204_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTU0Mng1NTIuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QGmk-HpDcg7hhYHy-V7olm3eBCwA2XWnOXWUPGOvWHL_hPZW21mGf92rtVjngOebBo&_nc_ohc=sSyWUBv7QW8Q7kNvwEs36qE&_nc_gid=WssBYmCvmsuSIfGAGpcJPw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0NjYwNTc1ODkzMTI5MTQ2Ng%3D%3D.3-ccb7-5&oh=00_Afy7a18d-WnecLZb5pGoLEKG7MrkA0lyrhYPtus4Ze9lIQ&oe=69C03810&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:48:22.612",
+      "local_images": [
+        "web_viewer/images/f808822dc32ef19d207bfafd611866ae.jpg",
+        "web_viewer/images/fb3b8d2f2ca08962bdbb16fba2e35b73.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVh431DEoJb",
+      "user": "2_taewoo",
+      "timestamp": "2026-03-06 13:25:52",
+      "original_item_count": 4,
+      "platform_sequence_id": 471
+    },
+    {
+      "sequence_id": 476,
+      "sns_platform": "threads",
+      "code": "DViXmrTEV0c",
+      "full_text": "앤트로픽에서도 사용하는\n\n주제를 던지면\nAI끼리 소통해서\n최적의 결론을 내는 앱이에요\n\n---\n\nhttps://github.com/mahatab/synode-council-of-ai-agents",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/646038705_17854335654628954_5510014677400144602_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTY3OHgxMDcwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QG6Lt5xYiQiYv_XqbLO3xug9flsS9hDW-rHtcff_rJbCce2Zy58fQBtFSm_2sAYWyE&_nc_ohc=c4yL6RA-iB4Q7kNvwHMkM_j&_nc_gid=wqMeol8tPgygsALMhafllw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0Njc0MDg0NDYyODQ5OTc0MA%3D%3D.3-ccb7-5&oh=00_AfwJnYXgwJ6QQjon0hvsLQguD8y4gjoEcn03gx1Cm5mJfQ&oe=69C02B3A&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:48:22.612",
+      "local_images": [
+        "web_viewer/images/60c5429c730e611d2928b861e7ed78bd.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DViXmrTEV0c",
+      "user": "ai.voltkim",
+      "timestamp": "2026-03-06 17:54:24",
+      "original_item_count": 2,
+      "platform_sequence_id": 472
+    },
+    {
+      "sequence_id": 477,
+      "sns_platform": "threads",
+      "code": "DVhOn2PE1ii",
+      "full_text": "Claude 에이전트 스킬, 이제 '자동 채점' 시대가 온 것 같습니다.\n\n이번 Anthropic의 Skill Eval 업데이트 내용을 살펴보면, 에이전트 스킬의 품질을 평가하기 위해 '분석-비교-등급'을 담당하는 3개의 에이전트가 유기적으로 작동한다고 합니다.\n\n가장 흥미로운 포인트는 평가 결과를 딱딱한 로그가 아닌, 깔끔한 HTML 웹 리포트로 뽑아준다는 점이네요.\n\n내가 만든 스킬이 의도대로 트리거 됐는지, 답변 퀄리티는 어떤지(Pass/Fail)를 시각적으로 보여준다고 하니, 그동안 감에 의존했던 에이전트 QA 과정을 체계화하기에 꽤 좋아 보입니다.\n\n에이전트 깎는 분들은 워크플로우에 적용해볼 만한 업데이트인 것 같습니다.\n\n---\n\n출처\n> Anthropic 블로그: https://claude.com/blog/improving-skill-creator-test-measure-and-refine-agent-skills\n\n---\n\n> Anthropic Github: https://github.com/anthropics/skills/tree/main/skills/skill-creator",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/643551257_17865495639596148_7503643124812276313_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTI5MHg4NDMuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QGpjJqE_q2KJ2QMGguavHXS5z9A7zus3zt21tEbruXRl1Q_2e357mkMS0Bv7OYi8T0&_nc_ohc=08xJBZYCpZ8Q7kNvwH-iknO&_nc_gid=u6N75958P6z4a1nWzhPh_Q&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0NjQxOTg2NzY5Njg0NzAxMA%3D%3D.3-ccb7-5&oh=00_AfxebiO_u2-U_ZQfjRnKznP0uKU57ruHU3yKVqzeXCXrag&oe=69C0431B&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:48:22.612",
+      "local_images": [
+        "web_viewer/images/43ea886c601bd5ea32d05abb7d94dde1.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVhOn2PE1ii",
+      "user": "feelfree_ai",
+      "timestamp": "2026-03-06 07:16:41",
+      "original_item_count": 3,
+      "platform_sequence_id": 473
+    },
+    {
+      "sequence_id": 478,
+      "platform_id": "DVivb8gE6Q6",
+      "sns_platform": "threads",
+      "code": "DVivb8gE6Q6",
+      "username": "autogod.ai",
+      "display_name": "동갓 | AI 인사이트",
+      "full_text": "MCP는 죽었다! 이제 MCP 말고 CLI 개발하세요.\n\n클로드 코드, 오픈클로가 선빵치고 구글이 막타 쳤습니다.\n\n얼마 전 구글이 워크스페이스 cli를 출시했습니다.\n이 사건은 MCP의 시대가 가고,\ncli+스킬의 시대가 본격적으로 열린 것을 암시하는데요,\n\n2025년을 잡아먹었던 MCP가, 왜 구닥다리 cli에 밀리고 있는 걸까요?",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/642119874_17938037853170224_6496893250467944930_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTMxNngxMzc0LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QGdD4umK94LCsbfwtCaCNFteegyak6ZZFhU27N847Mg16VRPE_inEeQfQGgAqa3IhQ&_nc_ohc=4iQ7pK5DZh8Q7kNvwG4TIsl&_nc_gid=kYQbRu3-xxlnjE_NpIWqbQ&edm=AI6eXeABAAAA&ccb=7-5&ig_cache_key=Mzg0Njg0NTY2MDMwMjM4NjIzNA%3D%3D.3-ccb7-5&oh=00_AfxdbQRzW5uUfL-saLJBPfVzLVLmqTIYIDB0nrCCTJ05eQ&oe=69C020DC&_nc_sid=6efbad"
+      ],
+      "url": "https://www.threads.net/@autogod.ai/post/DVivb8gE6Q6",
+      "created_at": "2026-03-06 21:22:39",
+      "date": "2026-03-06",
+      "crawled_at": "2026-03-18T17:48:22.612",
+      "source": "network",
+      "local_images": [
+        "web_viewer/images/e3c67df40eb5171b70f97dab1c5d57c3.jpg"
+      ],
+      "is_merged_thread": false,
+      "root_code": "DVivb8gE6Q6",
+      "like_count": 137,
+      "reply_count": 33,
+      "repost_count": 48,
+      "quote_count": 0,
+      "pk": "3846845660302386234",
+      "media_type": 1,
+      "content_type": "image",
+      "platform_sequence_id": 474
+    },
+    {
+      "sequence_id": 479,
+      "sns_platform": "threads",
+      "code": "DVYfZ00FM1c",
+      "full_text": "해커뉴스에서 봤는데 클로드 코드 쓰는 사람들 LSP 없이 돌리다가 시간 다 날리고 있었대.\n코드 검색 한번 할 때마다 50밀리초면 될 걸 30초에서 1분씩이나 기다리고 있었다는 거지.\n진짜 비효율의 극치 아닐까?\nAI 써서 개발 속도 올린다고 좋아했는데, 정작 핵심을 놓치고 있었던 거지...\n\n---\n\n이게 단순히 느린 게 아니라, 작업을 끊임없이 방해하는 거랑 똑같잖아.\nLSP 활성화하고 나면 미발표된 기능까지 쓸 수 있다고 하네.\n이런 작은 정보 하나가 결국 1인 개발자나 바이브코딩하는 사람들한테는 어마어마한 생산성 차이를 만드는 거거든.\nAI로 증강된 슈퍼 개인이 되려면 이런 효율도 놓치지 말아야지.\n얼른 적용해서 써보면 진짜 체감 확 될 거야.",
+      "media": [],
+      "crawled_at": "2026-03-18T17:48:25.629",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVYfZ00FM1c",
+      "user": "hyperexecutor",
+      "timestamp": "2026-03-02 21:50:41",
+      "original_item_count": 2,
+      "platform_sequence_id": 467
+    },
+    {
+      "sequence_id": 480,
+      "sns_platform": "threads",
+      "code": "DVi3DB9CfKe",
+      "full_text": "Claude Code에 PM을 통째로 집어넣는 오픈소스가 나왔습니다.\n\n72시간 만에 GitHub 스타 1,300개. \n마지막 4시간에만 400개가 쏟아졌어요.\n\n지금은 3,000 스타를 향해가고 있습니다.\n반응이 아주 뜨겁네요.\n\n---\n\nPM 스킬 마켓플레이스예요. 100개 이상의 스킬이 들어있고, Claude Code에 붙이면 AI가 프로덕트 매니저 역할을 합니다.\n\nPM이 뭐냐고요. 제품 전략 세우고, 로드맵 짜고, 시장 조사하고, 개발팀이랑 협업하는 사람이에요. 보통 팀에 한두 명 있는 역할인데, 이걸 Claude가 대신 해주는 구조입니다.\n\n8개 플러그인이 PM 업무 전 사이클을 커버해요.\n\n어떤 문제를 풀어야 하는지 탐색하고, 제품 전략 문서 만들고, 요구사항 정리하고, 시장 조사에 사용자 분석까지요. A/B 테스트 설계, GTM 전략, 성장 루프 설계도 들어있어요.\n\nClaude Code랑 Cowork에서 쓸 수 있고, Gemini CLI, Cursor, Codex CLI, Kiro에서도 됩니다.\n\n---\n\n역시 올해는 Skills의 해가 분명합니다.\n\n링크 : https://github.com/phuryn/pm-skills",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/641745343_17932504320207210_5554576335510965399_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMjE1NngxMzQ1LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QHh4fv-xTavNBe1uVOPWgq5x6QCX1WpM318uP5lmkggjXc7T8gp1FYqb1AQ2nJUMv0&_nc_ohc=z6IfS8tPgM8Q7kNvwGvzI4_&_nc_gid=0YpVZc6gwnJ4DjPinTDkQQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0Njg3OTEzMjU0MjE2OTc1OA%3D%3D.3-ccb7-5&oh=00_AfxXlS9sxsEjZYYm-RU833zWrfkd-uYGZjnf05Igo4O47Q&oe=69C0399E&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:48:25.629",
+      "local_images": [
+        "web_viewer/images/33b29c25b9b7fcbf8c4d4823aef53b6b.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVi3DB9CfKe",
+      "user": "unclejobs.ai",
+      "timestamp": "2026-03-06 22:29:10",
+      "original_item_count": 3,
+      "platform_sequence_id": 468
+    },
+    {
+      "sequence_id": 481,
+      "sns_platform": "threads",
+      "code": "DVhsgdLiclG",
+      "full_text": "Nano Banana 2, 30시간 넘게 써봤습니다.\n처음엔 그냥 프롬프트 넣고 생성 버튼 눌렀습니다.\n\n결과는 매번 복불복이었습니다.\n조명 이상하고, 피부 플라스틱 같고, 뽑을 때마다 스타일 달라집니다.\n결국 크레딧만 태우다 끝납니다.\n\n그래서 Claude Code 스킬을 하나 만들었습니다.\n대충 설명해도 알아서 JSON 프롬프트로 변환해줍니다.\n렌즈, 조명, 컬러, 구도 전부 자동으로 잡힙니다.\n쓸 수 있는 결과물 비율이 68%에서 92%로 올랐습니다.\n\n벌써 1,000명 넘게 받아가셨습니다.\n스킬 파일, JSON 스키마, API 세팅 방법 전부 무료로 드립니다.\n\n댓글 남겨주시면 제가 링크 보내드릴게요 :)\n\n---\n\n생각보다 디엠이 안 되는 분들도 많고 놓치는 일이 생길까봐 여기 핀댓글 하나 걸어두어요.\n\n나노바나나와 클로드 공유링크입니다: https://fearless-offer-231.notion.site/Nano-Banana-2-with-Claude-Code-31832bc0ef4380e19eccf51fc5eb2666\n\n저는 이런 시스템 계속 만들면서 뉴스레터랑 유튜브에 공유하고 있어요. 관심 있으시면 같이 보셔도 좋고요.\nhttps://aitopia.substack.com/\nhttps://www.youtube.com/@AIpreneur-J/videos",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/642773615_4327936174192240_3473888302535898769_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDQ5MC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QH5LryAViWgauWYDuCl01kh5Q8uXcmnA7Rs9BPMD9NGPJQRfj3gwqacjiDI4rF1w1w&_nc_ohc=NcRM7aVDXPQQ7kNvwE8tdAF&_nc_gid=ySBbXcLwWzzlaf_wDQruhA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0NjU1MTMwMTE1Mjk1MDU5OA%3D%3D.3-ccb7-5&oh=00_Afx1yqbtrt_HHcF0g4enIzdfeeEIyvp_oLvjFnSZEw6Yvg&oe=69C043FA&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:48:25.629",
+      "local_images": [
+        "web_viewer/images/6ccf1e178fdf1c58e58e6754c1c2c9eb.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVhsgdLiclG",
+      "user": "aipreneur_j",
+      "timestamp": "2026-03-06 11:38:13",
+      "original_item_count": 2,
+      "platform_sequence_id": 469
+    },
+    {
+      "sequence_id": 482,
+      "sns_platform": "threads",
+      "code": "DViZk2rEV9v",
+      "full_text": "Google workspace CLI 가 나와서 여러가지 연동\n\n1. 구글 서비스 연결 레시피\n - 작업 지시를 알아서 수행하는 부분은 업데이트 필요 (오늘 토큰 다 소진) \n2. notebookLM 연결\n\n---\n\n삽질을 좀 하기는 했는데, 완성형으로 .md 파일 공유하겠습니다. \nhttps://github.com/googleworkspace/cli",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/642557801_17951572071105329_7975041772187931150_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMjE2MHgxMjQ5LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QFe0jK1hN0JWPMRRX_xOmB-VCA9YB2lOK7qSyZleK6ATYZGPIQ_9LXpf29TQKKGnjU&_nc_ohc=XAupBvidc4oQ7kNvwF60mSA&_nc_gid=IjtW_xbccWWEVawl8Wa6Eg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0Njc0OTUxNTQ5NjM4MjMxOQ%3D%3D.3-ccb7-5&oh=00_AfxcQx0AZc4VMSYW4yIPGU03db8uaSF5ZIzrsK9nviB2-Q&oe=69C03B10&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:48:25.629",
+      "local_images": [
+        "web_viewer/images/93315743fc94826cd9d0bcd7e3bd222e.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DViZk2rEV9v",
+      "user": "ejang",
+      "timestamp": "2026-03-06 18:11:38",
+      "original_item_count": 2,
+      "platform_sequence_id": 470
+    },
+    {
+      "sequence_id": 483,
+      "sns_platform": "threads",
+      "code": "DVfKKyAEcF_",
+      "full_text": "https://github.com/openai/symphony\n\n쉬운 개발만 하는 사람들의 종말 2편\n\n이 리포에는 코드가 있지만 readme에는 “그냥 님 최애 에이전트한테 이 스펙 보고 만들라고하세요” 라고 한다.\n\n이게 소프트웨어의 미래인건가..? 유튜브에 요리 레시피들이 나오듯이 이제 단계적인 스펙, 프롬프트로 소프트웨어를 공유할 수 있다는게 너무 신선한 충격이였다.\n\n그리고 요리의 비유가 참 적합하다고 본다. 예전에는 손으로 귀족, 왕족만 맛있는거 해먹고 재료가 비쌌지만, 이제 재료(개발능력 + 토큰)가 싸지고 요리 레시피(스펙)이 공유되면 모두가 집에서 요리하면서 자기 입맛에 맞게 먹는다. \n물론 생일이나 중요한 자리에서는 외식을 하지만, 간단한 saas정도는 셀프로 만들기 너무 쉽다.",
+      "media": [],
+      "crawled_at": "2026-03-18T17:48:28.655",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVfKKyAEcF_",
+      "user": "mark_jung_18",
+      "timestamp": "2026-03-05 11:59:17",
+      "original_item_count": 1,
+      "platform_sequence_id": 463
+    },
+    {
+      "sequence_id": 484,
+      "sns_platform": "threads",
+      "code": "DVetfook8lm",
+      "full_text": "클로드코드 에이전트 팀 시리즈 종합\n\n약 한 달 동안, 클로드코드 에이전트 팀(Agent Teams)만 팠습니다.\n\n에이전트 팀 종합 설명부터 쉬운 설치까지 \n모두 하나의 글에 알려드립니다.\n\n👇️\n\n---\n\n1편 : 에이전트 팀 소개\n\n클로드 에이전트 팀이 어떤 건지 소개드리고,\n기존 서브에이전트와의 차이점과 장단점을 소개해 드립니다.\n\n결국, '단방향'소통이냐, '실시간/양방향'소통이냐가 가장 큰 차이 같아요.\n\n---\n\n2편 : 에이전트 팀 활성화 & Split pane 적용하기\n\n에이전트 팀 활성화하는 방법, \n특히 윈도우 기준 WSL 설치 + 자동 화면 분할 설정하는 법을 알려드립니다.\n\n제가 첨부해 둔 스킬을 사용하면 좀 더 쉽게 설정하실 수 있습니다!\n\n---\n\n2.5편 : 에이전트 팀 관련 설명 보충\n\n에이전트 팀을 사용하는 의미, 장단점을 조금 더 자세히 설명드립니다.\n\n결국, 한 작업에서 자동으로 여러 개의 클로드 코드를 동시에 열어 작업하기 때문에,\n\nA) 한 작업에서 컨텍스트를 크게 늘려서 활용할 수 있다.\nB) 작업에 따라 다른 모델/컨텍스트/추론 단계를 조정할 수 있다.\nC) 기존 스킬/에이전트를 명시적으로 조합할 수 있다\nD) 그래서, 난이도가 정말 높다.\n\n로 정리할 수 있겠습니다.\n\n---\n\n3편 : 에이전트 팀 생성 스킬 - Tofu-AT(Agent Teams) 공개\n\n에이전트 팀을 그냥 만드는 건 굉장히 어렵습니다.\n\n그래서, 설치하면 자동으로 여러분들의 클로드 코드 환경을 탐색해 기존 스킬들과 MCP등을 리스트업하고, 에이전트 팀 자동 생성해주는 스킬을 배포했습니다.\n\n간단하지만, 에이전트 작업 과정과 작업 결과를 알 수 있는 대시보드도 열립니다!\n\n---\n\n4편 : 에이전트 팀 사용 실제 사례\n\n에이전트 팀 실제 사용 사례를 정리했습니다!\n\n2.5편에 나온대로, 여러 작업을 동시에 -> 그것도 두뇌가 있는 여러 팀원이 할 수 있고, 컨텍스트에서 좀 더 자유로운 작업이 가능하다는 게 큰 장점입니다!\n\n---\n\n앞으로도, 빠르진 않더라도 직접 사용해보고, 활용해 본 AI 팁을 여러분들이 사용하기 편하게 알려드리겠습니다!\n\n읽어주시고 좋은 말씀 많이 해주셔서 감사합니다!",
+      "media": [],
+      "crawled_at": "2026-03-18T17:48:28.655",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVetfook8lm",
+      "user": "tofukyung",
+      "timestamp": "2026-03-05 07:48:43",
+      "original_item_count": 7,
+      "platform_sequence_id": 464
+    },
+    {
+      "sequence_id": 485,
+      "sns_platform": "threads",
+      "code": "DVgFnuuEtvq",
+      "full_text": "AI 지식 관리 시스템\n”옵시디언 + 클로드코드“ 가이드북🔥\n\nIT 지식이 없는 일반인도 따라할 수 있도록,\n퇴근 후 시간내서 열심히 작성했습니다.\n\nAI에 FOMO 느끼고 계신분들 댓글 남겨주세요!\n무료로 공유해드립니다.\n\nDM으로 보내드리겠습니다.\n내일까지입니다.\n\n---\n\n너무 많은 분들이 관심을 보내 주셔서\n메시지 보내드리는데 다소 시간이 소요되고 있어요.\n\n몇일동안 시간내며 글 쓴 보람이 있네요❤️\n\n’좋아요‘ 안누른 댓글들은 ‘메시지 보내기’가 닫혀 있어서 못보낸 분들이에요.\n저에게 DM 보내주시면 보내드릴게요.\n\n이외 분들은 메시지로 보내드릴게요.￼\n\n---\n\n많은 분들이 신청해주신 덕분에, 반복적인 메시지 전송 패턴으로 Threads에서 일시적으로 메시지 전송이 제한된 상태입니다.\n\n별도로 저에게 메시지를 남겨주시면, 오류가 해제된 후 순차적으로 보내드리겠습니다.\n\n신청은 여기까지 받겠습니다. 감사합니다. 🙏",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/645732221_2079226896204323_3583358031156790148_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDQxNi5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2QFZncIeeVt0nmlLfwejbvQtMB3mDqr6Qyb4o5GvSEWIJLrfzC-_lQ7hKcZHc4oNfsQ&_nc_ohc=wqefusAugMwQ7kNvwEK4uic&_nc_gid=rThcEl90UyQ4tdtzsQhxLA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0NjA5ODgwMjIzMTY2MzU5NA%3D%3D.3-ccb7-5&oh=00_AfwzMY5LMFNk_1gMHARcmZjTMZjmS_B6pljXVUjyLx_YwA&oe=69C03D29&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:48:28.655",
+      "local_images": [
+        "web_viewer/images/8a1804db941d26e7834c6c7dd7755bb4.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVgFnuuEtvq",
+      "user": "overtime.sam",
+      "timestamp": "2026-03-05 20:39:04",
+      "original_item_count": 3,
+      "platform_sequence_id": 465
+    },
+    {
+      "sequence_id": 486,
+      "sns_platform": "threads",
+      "code": "DVfWC8qCWOI",
+      "full_text": "모두를 위한 Claude Code 실전 노하우와 팁 50개\n\nClaude Code만 하루 10시간 이상 사용하며\n실전에서 얻은 팁을 모조리 추려봤습니다. \n\n액기스만 담았어요.\n\n공식 문서, 체인지로그, Anthropic 엔지니어 포스트까지 전부 교차 검증했어요. \n중복은 빼고, 틀린 건 고치고, 진짜 쓸모 있는 것만 남겼습니다.\n\nP.S \n스레드 길이 제한 때문에\n다 못 담아서 아래 링크를 드립니다!\n\n---\n\n[파트 1] 기초편 — 오늘 바로 써먹는 것들\nClaude Code를 처음 써보는 분들도 바로 이해할 수 있게 썼습니다.\n\n1. Claude Code가 뭔지부터.\n터미널(검은 화면 창)에서 Claude랑 대화하며 코딩하는 툴이에요. 채팅창이 아니라 실제 개발 환경 안에서 바로 코드를 작성하고 실행할 수 있습니다.\n\n2. 대화가 길어지면 성능이 떨어져요.\nClaude는 대화가 쌓일수록 앞 내용을 잘 못 참고하게 됩니다. 우유처럼 신선할 때 써야 해요. /compact라고 치면 대화를 압축해줘요. 그냥 새로 시작하는 것도 좋습니다.\n\n3. 요청은 잘게 쪼개세요.\n\"이 앱 전체를 고쳐줘\"보다 \"이 로그인 함수에서 오류 찾아줘\"가 훨씬 잘 됩니다. 한 번에 하나씩이 핵심이에요.\n\n---\n\n4. 슬래시(/) 커맨드는 Claude Code 전용 명령어예요.\n자주 쓰는 네 가지만 외워두세요. /usage는 토큰을 얼마나 썼는지 확인, /stats는 세션 통계, /clear는 대화 초기화, /compact는 대화 압축. 이것만 알아도 달라집니다.\n\n5. Alias는 긴 명령어에 짧은 별명을 붙이는 거예요.\n예를 들어 매번 claude라고 타이핑하는 대신 c만 쳐도 실행되게 만들 수 있어요. 터미널 설정 파일에 alias c='claude'를 한 줄 추가하면 됩니다. 하루에 수십 번 아껴요.\n\n6. Write → Run → Verify, 이 세 단계를 반복하세요.\n코드를 쓰고(Write) → 실제로 실행해보고(Run) → 결과가 맞는지 확인하고(Verify) → 다시 반복. 한 번에 완성하려 하지 말고 이 사이클을 빠르게 돌리는 게 핵심이에요.\n\n---\n\n7. AI가 만든 코드는 반드시 직접 확인하세요.\n그럴싸해 보여도 실제로 돌려봐야 합니다. 생성은 절반이에요. 나머지 절반은 테스트로 눈으로 확인하는 거예요.\n\n8. Git 작업도 맡길 수 있어요.\nGit은 코드 변경 이력을 관리하는 툴이에요. \"지금까지 바뀐 내용 커밋해줘\", \"새 브랜치 만들어줘\", \"PR 올려줘\"라고 말하면 알아서 해줍니다.\n\n9. /copy로 결과물을 바로 복사하세요.\n코드 블록을 골라서 복사하거나 전체 응답을 한 번에 가져올 수 있어요. \"항상 전체 응답 복사\" 옵션도 있어서 나중에 다시 찾을 필요가 없어집니다.\n\n---\n\n10. 터미널 최적화는 /terminal-setup 한 번으로 끝내세요.\niTerm2, Kitty, Alacritty, Zed, Warp 모두 지원해요. 실행하면 파일 경로가 클릭 가능한 링크로 바뀌고 화면이 훨씬 읽기 편해집니다.\n\n11. Voice Mode가 출시됐어요(2026년 3월 3일).\n/voice를 입력하고 스페이스바를 누른 채로 말하면 돼요. 놓으면 바로 전송됩니다. 타이핑 속도(분당 40단어)와 말하기 속도(분당 150단어)의 차이가 3.7배라, 복잡한 요청일수록 훨씬 빨라요. 지금은 전체 사용자의 5%만 이용 가능하고 앞으로 점차 늘어날 예정입니다. Pro, Max, Team, Enterprise 플랜 모두 추가 비용 없이 포함돼요.\n\n12. Markdown을 기본 형식으로 쓰세요.\nMarkdown은 # 제목, 굵게 같은 간단한 기호로 서식을 만드는 텍스트 형식이에요. Claude가 Markdown에 최적화돼 있어서 이 형식으로 주고받으면 결과물 품질이 좋아집니다.\n\n---\n\n[파트 2] 중급편 — 매일 쓰는 분들한테\n\n13. 과거 대화가 전부 저장돼 있어요.\n~/.claude/projects/ 폴더에 모든 세션이 쌓입니다. 지난주에 고쳤던 버그 해결책을 잊어버렸을 때, 여기서 찾으면 돼요. /resume으로 이전 대화를 이어서 열 수 있고, VS Code 익스텐션에서는 날짜 기준으로 검색도 됩니다.\n\n14. 세션 이름을 붙여두세요.\n이름 없이 쌓으면 나중에 비슷한 제목의 세션이 수십 개가 됩니다. /rename을 치면 대화 맥락을 기반으로 자동으로 이름도 지어줘요. 직접 입력해도 되고요.\n\n15. 터미널 탭 여러 개를 병렬로 돌려보세요.\n한 탭은 코딩, 한 탭은 테스트, 한 탭은 문서 작업. 각각 집중된 세션으로 운영하면 속도가 달라집니다. 탭마다 다른 작업을 맡기는 게 핵심이에요.\n\n---\n\n16. CLAUDE.md와 Auto-memory를 함께 쓰세요.\nCLAUDE.md는 내가 직접 쓰는 규칙 파일이에요. \"항상 한국어로 대답해줘\", \"커밋 메시지는 영어로 써줘\" 같은 반복 지시사항을 넣어둡니다. 너무 길면 오히려 노이즈가 돼요. 진짜 반복되는 것만 넣으세요. Auto-memory는 Claude가 작업하면서 스스로 채우는 메모예요. \"이 프로젝트는 Python 3.11 써야 해\", \"빌드 커맨드는 pnpm build\" 같은 것들을 자동 저장합니다. /memory로 확인하고 수정할 수 있어요. CLAUDE.md엔 변하지 않는 규칙을, Auto-memory엔 작업하면서 쌓이는 맥락을 맡기면 됩니다.\n\n---\n\n17. 절대 경로를 쓰는 습관을 들이세요.\n경로는 파일의 주소예요. 파일명만 쓰면 어느 폴더에서 실행하느냐에 따라 주소가 달라져서 오류가 납니다. realpath 파일명을 터미널에서 실행하면 /Users/이름/프로젝트/파일명 같은 완전한 주소가 나와요. 이걸 쓰면 디렉토리 꼬이는 문제 90%가 사라집니다.\n\n18. /rewind로 되돌릴 수 있어요.\nClaude가 잘못된 방향으로 코드를 수정했을 때, /rewind를 쓰면 이전 시점으로 되감을 수 있어요. Escape 키를 두 번 눌러도 같은 메뉴가 나옵니다. 되돌릴 때 세 가지 옵션이 있어요. 코드와 대화를 둘 다 되돌리기, 대화만 되돌리기, 코드만 되돌리기. 단, bash 커맨드로 실행한 변경(rm, mv 등)은 되돌릴 수 없으니 주의하세요.\n\n---\n\n19. 대화 압축 타이밍을 놓치지 마세요.\n토큰은 Claude가 한 번에 처리할 수 있는 텍스트 양이에요. 꽉 차기 전에 /compact로 압축하거나 새 세션을 여는 게 좋습니다. \"Summarize from here\" 기능을 쓰면 전체를 압축하지 않고 특정 시점부터만 요약할 수도 있어요. Esc 두 번 → 메시지 선택 → \"Summarize from here\"로 들어갑니다.\n\n20. 위험한 작업은 컨테이너에서 돌리세요.\n컨테이너는 격리된 가상 환경이에요. --dangerously-skip-permissions 플래그를 쓰면 Claude가 파일 삭제 같은 위험한 작업도 허락 없이 실행하는데, 이걸 컨테이너 안에서만 쓰면 실수가 나도 실제 파일은 안전합니다.\n\n---\n\n링크 : \nhttps://www.notion.so/Claude-Code-50-2026-31a7248738e88057a022db6ef1a98801",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/640396304_17932314435207210_2730058719066194405_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMzIweDUxMS5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QGA6TuoEZvwpRXdFya4kAm6yyne_F_AHM2LZIkWnM_M82788rlFMQH3GdJi6355u2k&_nc_ohc=i0f4-4fQcFYQ7kNvwHp87Bj&_nc_gid=B_9fCKla87pRBphcSEi2Mg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0NTg4OTU2NjM4OTY1ODUwNA%3D%3D.3-ccb7-5&oh=00_AfzgK9EmuBqmtUwyty9GODvyU4EUSE-kd7faPjtmsujl8w&oe=69C052CB&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:48:28.655",
+      "local_images": [
+        "web_viewer/images/0119f8f1fc556dea9cc1428b00e6c075.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVfWC8qCWOI",
+      "user": "unclejobs.ai",
+      "timestamp": "2026-03-05 13:43:04",
+      "original_item_count": 10,
+      "platform_sequence_id": 466
+    },
+    {
+      "sequence_id": 487,
+      "sns_platform": "threads",
+      "code": "DVfJK6PkSRR",
+      "full_text": "쉬운 개발만 하는 사람들의 종말 1편\n\nOpenai의 symphony가 미래의 웹앱/앱 개발환경이라고 믿는다. https://github.com/openai/symphony\n\n대시보드형태의 칸반 보드 - 거기에 일을 올리면 에이저트가 가져가서 일한다. Steve yegge의 wasteland, gastown도 비슷한 컨셉이다\n\n에이전트가 나온 후 이런 미래를 꿈꿔왔는데 이제 드디어 시작하나보다. \n저기서 좀 어려운건 이제 사람과 에이전트가 맡고 간단한건 에이전트가 척척 해결. \n\n문제를 해결만 하고 문제 정의나 taste가 없는 개발자의 미래는 이제 너무나 명확하다. \n\n없다.",
+      "media": [],
+      "crawled_at": "2026-03-18T17:48:31.677",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVfJK6PkSRR",
+      "user": "mark_jung_18",
+      "timestamp": "2026-03-05 11:50:34",
+      "original_item_count": 1,
+      "platform_sequence_id": 459
+    },
+    {
+      "sequence_id": 488,
+      "sns_platform": "threads",
+      "code": "DVd3cbWD5Pd",
+      "full_text": "https://github.com/uppinote20/claude-dashboard\n\nclaudecode 상태표시줄 좋은걸 발견해서 기록겸 남깁니다. ^^",
+      "media": [],
+      "crawled_at": "2026-03-18T17:48:31.677",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVd3cbWD5Pd",
+      "user": "greennuri428",
+      "timestamp": "2026-03-04 23:56:26",
+      "original_item_count": 1,
+      "platform_sequence_id": 460
+    },
+    {
+      "sequence_id": 489,
+      "sns_platform": "threads",
+      "code": "DVU5dAkEx7k",
+      "full_text": "더욱 많은 분들이 클로드코드로\n놀라움을 경험해보셨으면 하는 마음에\n클로드코드 101을 만들었습니다\n\n저는 클로드코드가 공개된 이후로 계속 써오고 있어 \n이런것들이 익숙한데 주변에 처음 시작하려는 분들이공식 문서 앞에서 막히는 걸 자주 봤거든요\n그 분들한테 건네줄 한국어 입문 페이지가 있으면 \n좋겠다 싶어 이렇게 만들게 됐습니다\n\n설치부터 클코를 처음 접하는 분들이 전체 흐름을 \n한 번에 잡을 수 있도록 20개 섹션으로 정리했어요\n공식 문서 기반이고 한/EN 전환도 됩니다\n\n아직 부족한 부분이 많아서 오픈소스로 공개했습니다\n추가됐으면 하는 내용이나 틀린 내용 있으면 PR이나 Issue 언제든 환영해요\n\n계속해서 제가 만든 플러그인들과\n사용하면서 추천하고 싶은 팁들 업데이트 중입니다\n\nClaude Code막 시작하시는 분들께 \n작은 출발점이 됐으면 좋겠습니다\n\n---\n\ncc101.axwith.com\n\n---\n\n@choi.openai @aicoffeechat \n이것좀 널리 알려서 스레드에서 다양한 클코 사례들 많이 보고 싶어요 \n\n링크드인보다 스레드가 더 양질의 AI토론장이 되었으면",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/642433160_17896012842408836_8716079822779001599_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTE3OXgxNzg1LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QGSjl5EsBrTFhzZDXuY4mvGB6-BcF80ljIA98sVZtFnI0NJuFCaamecftPX4zjOF1E&_nc_ohc=eHgb0XqJ3YgQ7kNvwGNkPQg&_nc_gid=yJqgskzaQtciXteXPMmo4Q&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0Mjk0ODkzNDMwMjY3MDk1MQ%3D%3D.3-ccb7-5&oh=00_Afzm-4pKNMq6re1bp-o8FDDtmVjAl6GxB2Q4pA7GFQW7Dg&oe=69C04691&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:48:31.677",
+      "local_images": [
+        "web_viewer/images/c33797da92039a1cd73beaf5009afa96.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVU5dAkEx7k",
+      "user": "gptaku_ai",
+      "timestamp": "2026-03-01 12:20:49",
+      "original_item_count": 3,
+      "platform_sequence_id": 461
+    },
+    {
+      "sequence_id": 490,
+      "sns_platform": "threads",
+      "code": "DVfJ6XjE71D",
+      "full_text": "Google Workspace 공식 CLI 나왔습니다 🚀\n\n설치방법\nnpm install -g @googleworkspace/cli\n\nGmail, Drive, Calendar, Sheets, Docs, Chat까지 커맨드라인 하나로 전부 제어 가능.\n\nAI 에이전트한테 구글 워크스페이스 권한 쥐여주면 자동화 범위가 확 넓어질 것 같은데요.\n\nClaude Code나 Gemini CLI랑 조합하면 진짜 무서워질 듯 👀\n\n다만 아직 v1.0 전이라 breaking change 있을 수 있으니 프로덕션 투입은 조금 더 기다리는 게 좋을 것 같습니다.\n\n👉 github.com/googleworkspace/cli\n\n#AI #개발 #GoogleWorkspace #CLI #자동화 #AX",
+      "media": [],
+      "crawled_at": "2026-03-18T17:48:31.677",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVfJ6XjE71D",
+      "user": "ai_younggle_man",
+      "timestamp": "2026-03-05 11:57:02",
+      "original_item_count": 1,
+      "platform_sequence_id": 462
+    },
+    {
+      "sequence_id": 491,
+      "platform_id": "DVdZXJNkfDx",
+      "sns_platform": "threads",
+      "code": "DVdZXJNkfDx",
+      "username": "kkongdon_story",
+      "display_name": "꽁돈, AI와 사고하는 글쟁이",
+      "full_text": "노트북LM으로 PPT 60장까지 만드는 방법 공유.\n\n일관된 디자인과 정확한 내용으로\n다량의 페이지를 만드는 방법을 공유해보려고 해.\n\n핀터레스트, 프리픽 같은 디자인 사이트에서\nPPT 디자인을 분석하고 원하는 디자인을 선택할 수 있어.\n\n노트북LM에 프롬프트를 넣으면 끝.\nPPT 목적, 청중, 톤앤매너, 슬라이드 수까지 지정할 수 있어.\n\n원하는 사람 있으면 팔로우 후 댓글 달아줘.\n확인 후 DM으로 보내줄게.\n\n공유 기간은 내일까지야☺️",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/641228306_17888741718441258_1147406880195388475_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMjE2MHgxMTI1LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QFICRiUdOW_ke4AjDddjlKcSc70kVHwTiTht9ZuiF2wU1GuWttOhUlWoBtMdHuF7Yo&_nc_ohc=h2zKCi2_Ca4Q7kNvwGj_xYY&_nc_gid=jsq2Hi4KaRC5Klr48D5t4w&edm=AI6eXeABAAAA&ccb=7-5&ig_cache_key=Mzg0NTM0MTE5Mzg0OTM0Mzc2MQ%3D%3D.3-ccb7-5&oh=00_Afwnkvt54NHlERu9FDzM7jalmJXr1HAAuot7pYFqXUSYgQ&oe=69C01D5F&_nc_sid=6efbad",
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/640417905_17888741859441258_2664527652712726866_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMjUxNHgxMjM2LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QFICRiUdOW_ke4AjDddjlKcSc70kVHwTiTht9ZuiF2wU1GuWttOhUlWoBtMdHuF7Yo&_nc_ohc=PN1VY-5H0bYQ7kNvwHnIAsk&_nc_gid=jsq2Hi4KaRC5Klr48D5t4w&edm=AI6eXeABAAAA&ccb=7-5&ig_cache_key=Mzg0NTM0MTE5Mzg0OTM2NDMxMA%3D%3D.3-ccb7-5&oh=00_Afzabr8R0O5XcrZuSTE11-2G9VU2Io-Wyo7KrP75zyW2qA&oe=69C026F5&_nc_sid=6efbad"
+      ],
+      "url": "https://www.threads.net/@kkongdon_story/post/DVdZXJNkfDx",
+      "created_at": "2026-03-04 19:33:34",
+      "date": "2026-03-04",
+      "crawled_at": "2026-03-18T17:48:34.705",
+      "source": "network",
+      "local_images": [
+        "web_viewer/images/326b938f29838b35b1d5926938562da2.jpg",
+        "web_viewer/images/858bfb4dd4efcbddd2a0951362e9848a.jpg"
+      ],
+      "is_merged_thread": false,
+      "root_code": "DVdZXJNkfDx",
+      "like_count": 1111,
+      "reply_count": 1672,
+      "repost_count": 218,
+      "quote_count": 1,
+      "pk": "3845341198446358769",
+      "media_type": 8,
+      "content_type": "carousel",
+      "platform_sequence_id": 455
+    },
+    {
+      "sequence_id": 492,
+      "sns_platform": "threads",
+      "code": "DVey5D1kwMP",
+      "full_text": "크몽에서 OpenClaw 설치 대행 15만원 받는 걸 봤어.\n\n그래서 그냥 없애버렸어.\nOpenClaw 원클릭 설치 인스톨러 EasyCalw 무료 배포.\n\n사람들이 클로드 코드 설치 어러워하는 걸 느꼈어.\n\n그래서 또 없애버렸어.\nEasyCode for Claude Code\n역시나 원클릭. 당연히 무료.\n\n다음엔 뭘 없애버릴까?\n\n댓글로 아이디어 내줘. 참고할게!\n\n---\n\n이지클로: https://easyclaw.kr\n이지코드: https://easyclaw.kr/easycode",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/641786645_17913908655299839_8824950747436609026_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTI2MHgxMDg1LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5leHBlcmltZW50YWwifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QFC5I9LTz9u7rd8cWW2uU5vJuVKbOtWxVhHTWXRbgx2EBF3yRIKnE98UcDNsovZ12w&_nc_ohc=QDdEtOlEDeAQ7kNvwEbXS96&_nc_gid=THcN4baKmcANQCm1VZ6FdQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0NTczNDU4NTc1ODYwNzM1Ng%3D%3D.3-ccb7-5&oh=00_AfwJfmy_tD_6hDpkTkH6ZF9fOPUgnwYltRgiKcbgd7CV0g&oe=69C04F9D&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:48:34.705",
+      "local_images": [
+        "web_viewer/images/c37ae2dc18c96295c24b67b3aa78b873.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVey5D1kwMP",
+      "user": "needsbuilder",
+      "timestamp": "2026-03-05 08:35:53",
+      "original_item_count": 2,
+      "platform_sequence_id": 456
+    },
+    {
+      "sequence_id": 493,
+      "sns_platform": "threads",
+      "code": "DVeSDl9kpwV",
+      "full_text": "최근 레딧에서 OpenClaw 자동화 이슈를 보니까, \n품질은 결국 자동화를 검증하는 단계에서 갈리더라.\n\n특히 자주 언급되는 건 \n\"로그 파일, 아티팩트 경로, 종료코드(0 여부)\"\n같은 기본 체크였음.\n\n이걸 루틴으로 고정하면 \"실행한 척\"하는 문제를 꽤 줄일 수 있다는 얘기가 많음.\n\n자동화는 명령을 많이 돌리는 것보다,\n결과를 확실히 검증하는 구조가 먼저인 듯?",
+      "media": [],
+      "crawled_at": "2026-03-18T17:48:34.705",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVeSDl9kpwV",
+      "user": "bangto2095",
+      "timestamp": "2026-03-05 03:48:58",
+      "original_item_count": 1,
+      "platform_sequence_id": 458
+    },
+    {
+      "sequence_id": 494,
+      "platform_id": "DVcVK__EuV0",
+      "sns_platform": "threads",
+      "code": "DVcVK__EuV0",
+      "username": "aicode.lab",
+      "display_name": "aicodelab.tony",
+      "full_text": "노트북lm 9:16 사이즈로 \n슬라이드 20장 생성 하는 프롬프트\n\n2틀... 걸렸어!",
+      "media": [],
+      "url": "https://www.threads.net/@aicode.lab/post/DVcVK__EuV0",
+      "created_at": "2026-03-04 09:37:43",
+      "date": "2026-03-04",
+      "crawled_at": "2026-03-18T17:48:37.821",
+      "source": "network",
+      "is_merged_thread": false,
+      "root_code": "DVcVK__EuV0",
+      "like_count": 114,
+      "reply_count": 14,
+      "repost_count": 48,
+      "quote_count": 0,
+      "pk": "3845041296742999412",
+      "media_type": 19,
+      "content_type": "image",
+      "platform_sequence_id": 454
+    },
+    {
+      "sequence_id": 495,
+      "sns_platform": "threads",
+      "code": "DVbOB4YE3B2",
+      "full_text": "[Github] Awesome Claude Skills\nhttps://github.com/ComposioHQ/awesome-claude-skills\n\n요즘은 프롬포트 보단 skills 가 더 중요하다. 스킬을 직접 만들어도 되지만 기존에 만들어져 있는 스킬을 쓰는 방법이 더 좋다. \n어떤 스킬이 있는지 모르겠다면 여기서 찾으면 된다. 아래에서 소개한다.\n\n---\n\n실전에서 바로 쓸 수 있는 Claude 스킬 100개 이상을 분야별로 정리해놓은 레포다. \n\n스킬이 뭔지 모르겠다면, Claude에게 특정 작업을 가르치는 설명서라고 보면 된다. SKILL.md 파일 하나가 곧 하나의 능력이 된다.\n\n---\n\n쓸모 있는 것 몇 개만 뽑아보면:\n\n- docx, pdf, pptx, xlsx — Anthropic 공식. 문서를 만들고, 읽고, 수정한다\n- MCP Builder — MCP 서버 만드는 걸 처음부터 끝까지 가이드해준다\n- Skill Creator — 스킬 만드는 법을 알려주는 스킬. 처음 만들 때 이걸로 시작하면 된다\n- TDD, Git Worktree, Software Architecture — 개발 방법론을 강제하는 스킬들\n\n---\n\n설치는 원하는 스킬 폴더를 받아서 ~/.claude/commands/ 에 넣으면 끝이다.귀찮으면 Claude Code한테 레포 링크 주고 \"이 스킬 설치해줘\"라고 하면 알아서 한다.",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/645540864_17855643993623803_5305847529274394659_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTQ0MHgxODAwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QFgsJt0t0qb5Kb8XG6xGdebWuA63g6p0OnHXCjfMFAe7mbeW8cWCz5xDJOjWFgMWWQ&_nc_ohc=r1iiKAeY9s4Q7kNvwEPHY0m&_nc_gid=erSL6I7a0VtWmcmD3YyNwA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0NDcyODM1OTcyMTE1NTE2Mw%3D%3D.3-ccb7-5&oh=00_AfyIZMBkkP83kdLynQY2RdRfDxwTyVXkMjqsGKAffbA_Vg&oe=69C0390B&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:48:37.822",
+      "local_images": [
+        "web_viewer/images/b275ff15cda63ae00d104c86c03de077.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVbOB4YE3B2",
+      "user": "vibe.tip",
+      "timestamp": "2026-03-03 23:16:03",
+      "original_item_count": 4,
+      "platform_sequence_id": 451
+    },
+    {
+      "sequence_id": 496,
+      "sns_platform": "threads",
+      "code": "DVc33-glYkd",
+      "full_text": "세 프로젝트 비교: oh-my-opencode vs oh-my-claudecode vs oh-my-codex\n\n요즘 터미널을 여러개 켜놓고 사용하는데, 이게 뭔가 AI를 써서속도가 빨라지긴 하는데 그 속도에 버거워하면서 나는 그냥 빠르게 읽고 컨펌해주고, 방향성 잡아주느라 하루종일 메어있는 느낌이다.\n그리고, 하루종일 결정을 해주고 만들다보면 내 머리에 뭐가 남는건지 약간 멍할때가 있어서 내가 원하는 방향성에 맞게 최적화된 워크플로를 만드는게 우선일 것 같아서 하네스와 오케스트레이션이 뭔지 그걸 어떻게 적용하는게 좋을지 비교해보았다.\n\n---\n\n“누가 뭘 쓸지” 정리\n여러 모델(Claude + GPT + Kimi + GLM 등)을 한 하네스에서 쓰고, 벤더 락인을 피하고 싶다\n→ oh-my-opencode (OpenCode 필수).\n\n---\n\nClaude Code만 쓸 건데, 팀 단위 실행·검증·알림까지 체계적으로 쓰고 싶다\n→ oh-my-claudecode.\n\n---\n\nOpenAI Codex CLI만 쓸 건데, 팀/스킬/상태 관리가 있는 오케스트레이션이 필요하다\n→ oh-my-codex.\n\n---\n\n“oh-my-opencode 스타일의 오케스트레이션을 Claude 전용으로만 쓰고 싶다”\n→ oh-my-claudecode가 “Claude 전용 버전”에 가깝고, oh-my-opencode README에도 “Inspired by” 관계로 oh-my-claudecode가 언급됨.",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/643064520_17940343260140156_7267745659919354078_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uODI2eDE4My5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QGiGVZBRc3MoeCbFcOGoZHwkTd7jImACazSOMFRPLI0tOJfAn4IxGz1tA-N7kKuhfg&_nc_ohc=EGLhzZ9FQsIQ7kNvwFxQmBD&_nc_gid=i9jy-77ZCiGHzanlN4G2Gw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0NTE5MzkxMjc2MDQ5MTQ2NQ%3D%3D.3-ccb7-5&oh=00_Afxc59mlndRPHYipWXKs-WhDT9WvW6iKc04FMZcoFcGIGw&oe=69C02B1C&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:48:37.822",
+      "local_images": [
+        "web_viewer/images/2640af8713c7cbd97455d74c8cb99129.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVc33-glYkd",
+      "user": "im__hoya",
+      "timestamp": "2026-03-04 14:40:57",
+      "original_item_count": 5,
+      "platform_sequence_id": 452
+    },
+    {
+      "sequence_id": 497,
+      "sns_platform": "threads",
+      "code": "DVc35-iks0x",
+      "full_text": "회사 몰래 꿀 빠는 미친 AI 사이트 발견 \n(가입도 필요 없음) ㄷㄷ\n\n나도 이거 몰랐을 땐 파일 변환하느라 \n삽질하며 하루 다 날렸음\n\n근데 이제 마우스 딸깍 한 번으로 업무 끝내고 퇴근함\n\n효율충들 극락 보내는 이 사이트 진짜 물건임\n\n---\n\nPDF 변환부터 이미지, 영상 편집까지 도구가 200개 넘게 들어있음\n\n심지어 귀찮은 가입 없이 바로 쓸 수 있어서 시간 순삭임\n\n✅ PDF → 워드, 엑셀, 이미지 무제한 변환\n✅ 이미지 배경 제거 및 고화질 업스케일링\n✅ 영상 컷 편집 및 용량 줄이기 쌉가능\n✅ 모든 파일 형식 변환 치트키 탑재",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/641242319_1458404575915339_3316065283673863700_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uNjQweDExMzYuc2RyLmY3MTg3OC5kZWZhdWx0X2NvdmVyX2ZyYW1lLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QEHDHHx6y7eiBNy_2Hj7HZP9M0iDKX7F3w8e3KiXpwUl9pU4zVFGw34SEMRrd_L15g&_nc_ohc=s4vN9ayZwtcQ7kNvwFqZmp1&_nc_gid=hZsZUkrspQyLdDI6m1C35A&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0NTE5Mzc4MzA2NDA2MDM3OA%3D%3D.3-ccb7-5&oh=00_AfzgyWSoXv9bl-vQLYIhII5m7acRu2q9sebzK5ncywTrhA&oe=69C050E9&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:48:37.822",
+      "local_images": [
+        "web_viewer/images/f0fa28b0b2482e37215838c9706fa469.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVc35-iks0x",
+      "user": "prong_ai",
+      "timestamp": "2026-03-04 14:41:13",
+      "original_item_count": 2,
+      "platform_sequence_id": 453
+    },
+    {
+      "sequence_id": 498,
+      "sns_platform": "threads",
+      "code": "DVYSTeFEvjw",
+      "full_text": "바이브코딩으로 만든 프로젝트\n배포 어떻게 하고 있어? 🤔\n\n1. Vercel\n2. Netlify\n3. AWS\n4. 카페24/가비아\n5. 기타 (댓글로)\n\n나는 Vercel + AWS 조합으로 쓰는 중 🔥\n다른 사람들은 뭐 쓰는지 궁금함 👀",
+      "media": [],
+      "crawled_at": "2026-03-18T17:48:40.840",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVYSTeFEvjw",
+      "user": "dev_loopix",
+      "timestamp": "2026-03-02 19:55:41",
+      "original_item_count": 1,
+      "platform_sequence_id": 447
+    },
+    {
+      "sequence_id": 499,
+      "sns_platform": "threads",
+      "code": "DVZXimZCQO8",
+      "full_text": "개인적 랄프 루프 후기 \n\n이거보다 그냥 클코에 SCOPE 선정해 →  PLAN.md 하나 짜 → Ticket 단위로 쪼개 → Team of Agents로 해결하고 말해 \n\n하면 더 좋아요 \n\n랄프 그건 좀 코딱지만 파는 놈이라 놓치는게 있음\nhttps://github.com/iannuttall/ralph",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/642529605_17950277919103275_161246276773955610_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTE5Nng2NzMuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QHmTM2PLLF5cWZeVGeUh8_VHG51foqf_Cy00KDoWIsdezJ3pQLDMlP2d0PM3NNkevk&_nc_ohc=mT18qkulXCMQ7kNvwGYq0jL&_nc_gid=nffkLadyGRr6WG1ie30nfw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0NDIwNzI4OTY5MTYwMzkwMA%3D%3D.3-ccb7-5&oh=00_AfxeVL_3prcJx5FCmSh6JXsLs7qiPSGFotqnP24JylaC2g&oe=69C04614&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:48:40.840",
+      "local_images": [
+        "web_viewer/images/7cc39fc2246ce6970255a919a1c53c13.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVZXimZCQO8",
+      "user": "catlovessubakba",
+      "timestamp": "2026-03-03 06:00:41",
+      "original_item_count": 1,
+      "platform_sequence_id": 448
+    },
+    {
+      "sequence_id": 500,
+      "sns_platform": "threads",
+      "code": "DVZ-iPyk5wW",
+      "full_text": "바이브디자인 팁!\n용어와 지시만 달라져도 결과물이 달라지는 건 이제 다 아시죠?\n그럴려면 UI/UX 용어도 알아야하고, 화면에서 어떤 요소를\n어떻게 부르는지 스터디가 필요하잖아요?\n\n이 과정 이제 필요 없습니다.\n제가 만든 UI Friend MCP를 사용해보세요.\n\n클로드코드에서 실행 > 구글 로그인을 하면\nGemini 3.1 pro 멀티모달 기능을 사용하여 디자인을 합니다.\n레퍼런스 이미지, 영상을 첨부해도 모두 분석 가능하구요.\n\n요소에 마우스를 올리면 UI용어, 코드까지 실시간으로\n보면서 작업을 할 수 있습니다.\n\nFigma Make, Framer, Lovable등의 디자인 LLM에서\n적용하는 디자인 관련 RAG를 학습시켰고, 온톨로지 구조화\n까지 적용해두었습니다.\n\n쉽게 말해 프로급 디자이너를 클로드코드에서\n사용할 수 있습니다.\n\n깃헙에 오픈합니다!\n\n---\n\nhttps://github.com/beyondworks/UI-Friend-MCP",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/642646243_678839488622398_5466393055871972239_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDMxMi5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QFQW4I-i5rcNsQHKkYoIwQ6xKcEL1M2EpqWWL8Wf4ayXy_2JxqA_Bovzov2dAqTLjo&_nc_ohc=mLyf6lnhse0Q7kNvwHpYKJ-&_nc_gid=OQqDlyJYrFQQodCWy_dXzg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0NDM3ODc4OTIzNzk4ODM3NA%3D%3D.3-ccb7-5&oh=00_AfwdGAFjjcwIkOg7LHK4A07Bw165rqbfN6UOdxczrrz7BA&oe=69C044C7&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:48:40.840",
+      "local_images": [
+        "web_viewer/images/3f17dbe79f201314125cfe3bdec133ef.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVZ-iPyk5wW",
+      "user": "lean._.kim",
+      "timestamp": "2026-03-03 11:42:13",
+      "original_item_count": 2,
+      "platform_sequence_id": 449
+    },
+    {
+      "sequence_id": 501,
+      "sns_platform": "threads",
+      "code": "DVaxUR1E4KE",
+      "full_text": "아니 쓰라고쓰라고 해도 안쓸땐 언제고\n이제와서 이러면 내가 신나 안신나??🤣\n\n클로드코드 입문자들보다\n좀 써본사람들이 더 좋아하는\nGPTaku Plugin\n\n좀만 더 미리 썼으면 더 빠르게 만들수 있었을텐데\n꼭 찍어먹어봐야 똥인지 된장인지 아냐구!!\n\n써보고 좋았다면 깃허브 스타 하나씩만 부탁해!⭐️\n\n---\n\n설치 방법\n1. 마켓플레이스 등록 (처음 한 번만)\n/plugin marketplace add https://github.com/fivetaku/gptaku_plugins.git\n\n2. 플러그인 설치\n/plugin install 플러그인 이름\n\n3. 업데이트\n플러그인이 업데이트되면 아래 명령어로 최신 버전을 받을 수 있습니다:\n/plugin update\n설치/업데이트 후에는 Claude Code를 재시작하세요.￼",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/642485777_17896382481408836_8651286733899828508_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTE3OXgxNDMwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QF-O5JkLMcoQgBKxhFz9dV7-XIpulknIw7fCIFKvsrhKKH11R9pfwvnvfnjB6e2IFQ&_nc_ohc=XbuEHtbwgr8Q7kNvwEgNjNq&_nc_gid=afLYDaolVlHPYDGBo8ocUA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0NDYwMTg3OTU3MDEzNTY5MA%3D%3D.3-ccb7-5&oh=00_AfznzZGfIwakDYAPDEdqBJb62f3hMjaltafZlclrwxCgMw&oe=69C045EF&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:48:40.840",
+      "local_images": [
+        "web_viewer/images/4491944352e22b81a53a3dee7c35435a.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVaxUR1E4KE",
+      "user": "gptaku_ai",
+      "timestamp": "2026-03-03 19:05:10",
+      "original_item_count": 2,
+      "platform_sequence_id": 450
+    },
+    {
+      "sequence_id": 502,
+      "sns_platform": "threads",
+      "code": "DVQ_O78krrk",
+      "full_text": "Claude Code 쓴다면 노트앱 무조건 이거 추천\n\nClaude Code로 내 메모에 접근하고 싶어서\nMCP부터 설치했는데, 이거 토큰 먹는 하마였음\n\n옵시디언 + 설정 2줄이면 MCP 없이\nAI가 내 지식 전체에 직접 접근 가능함\n\n이거 모르면 진짜 손해라서 공유함\n\n---\n\nMCP가 왜 문제냐면,\n도구 설명이 매 턴 시스템 프롬프트에 포함됨\n\n노트 작업 안 하는 대화에서도\n턴당 수백~수천 토큰이 빠져나감\n\n근데 옵시디언은 전부 로컬 .md 파일이라\nClaude Code가 파일시스템으로 바로 읽고 씀\nMCP 자체가 필요 없음\n\n---\n\n\"그럼 옵시디언 MCP 설치하면 되는 거 아님?\"\n\n그것도 쓰지 말자.\nobsidian-mcp 같은 거 설치하면\n결국 MCP 도구 설명이 매 턴 붙는 건 똑같음\n\n옵시디언은 어차피 로컬 마크다운 파일이라\nClaude Code가 파일시스템으로 직접 접근하면 됨\nMCP는 완전히 불필요한 오버헤드임\n\n---\n\n대신 이렇게 설정하면 됨\n\n~/.claude/settings.json에 한 줄 추가:\n\"additionalDirectories\": [\"내 옵시디언 볼트 경로\"]\n= 어떤 프로젝트에서 실행해도 이 경로에 접근 허용하겠다는 설정임\n\nCLAUDE.md에 볼트 경로랑 폴더 구조 적어두면\nClaude Code가 어디에 뭘 저장할지 알아서 판단함\n\n그러면 어떤 프로젝트에서 열어도\n\"옵시디언에 저장해줘\"가 바로 됨\n\n---\n\n정리하면,\n\nMCP로 노트앱 연동 -> 매 턴 토큰 낭비\n옵시디언 MCP 설치 -> 여전히 토큰 낭비\n옵시디언 + settings 2줄 -> 토큰 낭비 최소화, 동일 기능\n\n마크다운 + 로컬 파일시스템\n= AI 에이전트가 직접 접근 가능한 나만의 지식 베이스\n\n옵시디언 추천함",
+      "media": [],
+      "crawled_at": "2026-03-18T17:48:43.865",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVQ_O78krrk",
+      "user": "devdesign.kr",
+      "timestamp": "2026-02-27 23:54:22",
+      "original_item_count": 5,
+      "platform_sequence_id": 443
+    },
+    {
+      "sequence_id": 503,
+      "sns_platform": "threads",
+      "code": "DVZlMVugZRR",
+      "full_text": "출근길 쓰레드) 엔트로픽이 교육 커리큘럼을 통째로 무료로 풀었다.\n\n클로드 만드는 엔트로픽이 자기네 내부 교육용으로 쓰던 'Skilljar' 강의들을 외부로 공개했다.\n\n유료 강의 수준의 퀄리티인데 그냥 가입만 하면 바로 볼 수 있는 상태.\n\n프롬프트 엔지니어링부터 API 연동까지 실무 중심이다.\n\n이제 \"프롬프트 깎는 법\" 배우러 비싼 유료 강의 들을 필요가 없다.\n\n핵심 커리큘럼은 크게 세 가지:\n\n- 프롬프트 엔지니어링: 기초부터 고급 기법까지 다룸.\n- API 시작하기: 개발자가 클로드를 서비스에 붙이는 방법.\n- 사용 사례별 최적화: 고객 상담, 데이터 분석 등 실전 활용법.\n\n단순히 \"말 잘하는 법\"이 아니라 엔트로픽 개발진이 쓰는 표준 가이드를 배운다는 게 포인트.\n\n* 출처: Anthropic Educational Courses — https://anthropic.skilljar.com/\n\n---\n\n레딧 등 커뮤니티 반응도 뜨겁다.\n\n그동안 파편화되어 있던 클로드 활용 팁들이 \"본사 공인\"으로 정리된 느낌.\n\n- 오픈 AI의 가이드와 비교하며 공부하기 딱 좋은 타이밍.\n- 영문 강의지만 브라우저 번역 돌려도 충분히 소화 가능한 수준.\n- 이론보다 실습 위주라 당장 업무에 써먹기 좋음.\n\n* 출처: Anthropic has opened up its entire educational curriculum for free — https://www.reddit.com/r/ClaudeAI/comments/1rh92yp/anthropic_has_opened_up_its_entire_educational/\n\n---\n\n바이브 코딩을 시작하는 분들이라면, 이 도서를 추천합니다!\n예약 판매 시작, 지금 바로 구매하세요!",
+      "media": [],
+      "crawled_at": "2026-03-18T17:48:43.865",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVZlMVugZRR",
+      "user": "ody_daddy",
+      "timestamp": "2026-03-03 07:59:59",
+      "original_item_count": 3,
+      "platform_sequence_id": 444
+    },
+    {
+      "sequence_id": 504,
+      "sns_platform": "threads",
+      "code": "DVa6bQ4Dzk1",
+      "full_text": "“AI 자동화 스쿨에서는 어떤 걸 다루는지 궁금하시죠? 이번 글에서는 이 과정이 왜 필요하고, 어떤 결과를 가져오는지 알아보겠습니다.”\n\n“미루면 미룰수록 AI와 함께 일하는 감각을 익히기 어렵습니다. 지금부터 빠르게 시도하세요. 지금이 아니면 늦습니다.”\n\nhttps://dal-lab.com/2026/03/03/ai-automation-school-curriculum/",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/641163880_17949804756106896_6773589583076939772_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTI4NHgxNzExLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QGahr6UH_5ImW3AG30LzCPVjUmXl_smXbv6LO8apu8wDypCwV8HwbDORJViDAJST84&_nc_ohc=BaOP9yjX5MQQ7kNvwEj-5v7&_nc_gid=-xuas9TmIB5q4bqvbGVxzA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0NDY0MjExNDk4Mjg3NjM4Nw%3D%3D.3-ccb7-5&oh=00_AfxT3A4oFIroZbTnE40QmpSfaWtXY4jrBxVFypPgrZF1Tw&oe=69C04379&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:48:43.865",
+      "local_images": [
+        "web_viewer/images/8bc31bd5eba108fec934ea72ece58743.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVa6bQ4Dzk1",
+      "user": "ahastudio",
+      "timestamp": "2026-03-03 20:24:46",
+      "original_item_count": 1,
+      "platform_sequence_id": 445
+    },
+    {
+      "sequence_id": 505,
+      "sns_platform": "threads",
+      "code": "DVa_nPak9RS",
+      "full_text": "AI로 트래픽 터트릴 수 있는 주제 30가지\n\n@careernomad_  이렇게 하는거 맞지??\n내가봐도 거를 타선이 하나도 없네",
+      "media": [],
+      "crawled_at": "2026-03-18T17:48:43.865",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVa_nPak9RS",
+      "user": "gptaku_ai",
+      "timestamp": "2026-03-03 21:10:05",
+      "original_item_count": 1,
+      "platform_sequence_id": 446
+    },
+    {
+      "sequence_id": 506,
+      "sns_platform": "threads",
+      "code": "DVXG0MrAVfH",
+      "full_text": "클로드코드 상위 1% 만 알고 있는 사실:\nPpt, 엑셀, docs 는 모두 곧 없어질것이다.\n\n그 대신 전부 다 HTML 로 대체될 것이다.\n\n세 가지 이유 때문이다.\n\n1. 코드 작성은 그 어느때보다도 cheap 하다\n2. HTML 이야 말로 가장 뛰어난 캔버스이다\n3. 앞으로 모든건 에이전트가 만들것이다\n\n써본 사람들은 이게 무슨말인지 알 것이라 생각한다.\n\n다음 그림은 내가 손하나 까딱하지 않고 “메세지” 로 작성했다. \n\n앞으로눈 더 말도 안되는 일들이, 곧 말이 될 것이다.",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/642353954_17930358087206440_6240564090748853750_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTQ0MHgxNTAwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QG6q_6BNrORIKyVycg7FoeyNVMb3yoi1nD9xiHrVJ9Ky4m4YRbvPBYsP20jQ-uUFEc&_nc_ohc=tD2EdA3bPX4Q7kNvwFfOJdA&_nc_gid=hEFVwBxpjS5vaKoCJRHWkg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0MzU3MDc0MjE1OTU2NTMyNw%3D%3D.3-ccb7-5&oh=00_Afw1zSTZPKgxtdtuNVbWdhlq7LF4qtHFtue7TvYt3Gl6VA&oe=69C03E83&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:48:46.889",
+      "local_images": [
+        "web_viewer/images/8ce02fee20ccf12522dde03873d54197.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVXG0MrAVfH",
+      "user": "careerhackeralex",
+      "timestamp": "2026-03-02 08:56:04",
+      "original_item_count": 1,
+      "platform_sequence_id": 441
+    },
+    {
+      "sequence_id": 507,
+      "sns_platform": "threads",
+      "code": "DVaS92nkzJ6",
+      "full_text": "윤자동팀이 점점 변하고 있습니다.\n\n개발은 당연히 클로드코드로 하고 있고\n견적서를 매일 작성해야되네? 클로드코드로 하기\n콘텐츠를 매일 기획해야되네? 클로드코드 써보기\n강의자료를 매일 만들어야되네? 클로드코드로 만들기\n\n2번 이상 반복되는 업무가 생기면\n무조건 클로드코드에게 물어보며 일하는 문화가 생기고 있습니다.\n클로드코드보다 더 뛰어난 제 3의 툴이 나올 수도 있겠으나\n지금의 이 사고방식과 습관이 회사의 DNA를 바꾼다고 생각합니다.\n\n모든 직원이 클코MAX 200 요금제가 부족하다며\n더 사달라는 날이 오길 기대하고 있습니다.",
+      "media": [],
+      "crawled_at": "2026-03-18T17:48:46.889",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVaS92nkzJ6",
+      "user": "yun_ja_dong",
+      "timestamp": "2026-03-03 14:39:57",
+      "original_item_count": 1,
+      "platform_sequence_id": 442
+    },
+    {
+      "sequence_id": 508,
+      "sns_platform": "threads",
+      "code": "DVYLkuljxBN",
+      "full_text": "오오! 드디어 성공!\n카드뉴스 클로드로 자동화 완료!\n\n사진은 내 맘에 드는걸로 하고싶어서\n80% 완성하고 사진만 내가 넣는걸로 세팅\n\n이제 클로드 코워크만...배우면 된다...하하하...",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/643587033_17945802879118003_278875867050890174_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTQ0MHgxODAwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QFp-Dmv8DOT5deRkylPRumD590uTBGn3isEuA-nzvInwl-p4PDEQqo1l1Qp-ox7k5s&_nc_ohc=40GeNLHi8sEQ7kNvwFyr1m6&_nc_gid=V9yveQX7VXkI4vzothxZDw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0Mzg3MjcxMzk0NTk4NDMxNQ%3D%3D.3-ccb7-5&oh=00_AfwFBLa4y4wnFFSfHEjpZDyXzzyCpyWmn3rjsTYVnaEceA&oe=69C03EE9&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:48:46.890",
+      "local_images": [
+        "web_viewer/images/ebb69e70b025ac2fee1711143a9625d7.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVYLkuljxBN",
+      "user": "design_boc",
+      "timestamp": "2026-03-02 18:56:53",
+      "original_item_count": 1,
+      "platform_sequence_id": 439
+    },
+    {
+      "sequence_id": 509,
+      "sns_platform": "threads",
+      "code": "DVYNENBDxVb",
+      "full_text": "대박이죠?\n폰트 이름 알려주면 그걸로 세팅해주더라구요!\n메인 타이틀: G마켓 bold\n본문 : pretendard regular\n이런식으로 하면 그렇게 바꿔주고,\n컬러도 메인컬러/서브컬러/텍스트 컬러 지정하면 그렇게 맞춰주더라구요!!!\n\n진------짜 신기해요!!!",
+      "media": [],
+      "crawled_at": "2026-03-18T17:48:46.890",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVYNENBDxVb",
+      "user": "design_boc",
+      "timestamp": "2026-03-02 19:09:55",
+      "original_item_count": 1,
+      "platform_sequence_id": 440
+    },
+    {
+      "sequence_id": 510,
+      "sns_platform": "threads",
+      "code": "DVXdGg1E6-J",
+      "full_text": "요즘 코덱스로 옮겨가는 분들이 꽤 보여서\n주말에 ChatGPT $200, GLM Coding $30 플랜 구독하고\ncodex, oh-my-opencode, glm-5 등등 직접 다 돌려봤는데요.\n\n종합적으로는 여전히 클코가 좋은 것 같거든요.\n확실히 코드베이스 전체 탐색이나 맥락 파악은 Codex가 낫긴 한데,\nSkills, Hooks, Agent Teams 세팅하고 나면 클코가 차원이 달라서요.\n\n근데 제가 잘 모르는 걸 수도 있어서 여쭤봅니다.\n코덱스로 옮기신 분들, 어떤 이유로 옮기셨나요?\nAI가 내뱉는 답변 말고 실제 인간 후기가 궁금해서요.",
+      "media": [],
+      "crawled_at": "2026-03-18T17:48:49.903",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVXdGg1E6-J",
+      "user": "ddg.kang",
+      "timestamp": "2026-03-02 12:10:48",
+      "original_item_count": 1,
+      "platform_sequence_id": 435
+    },
+    {
+      "sequence_id": 511,
+      "sns_platform": "threads",
+      "code": "DVYpsQlkn8n",
+      "full_text": "제미나이가 이제 맥킨지 컨설턴트처럼 분석해준다. 무료로.\n\n컨설팅 한 번에 수천만 원이다.\n근데 제미나이한테 제대로 시키면 같은 수준의 분석이 나온다.\n\n업무 분석 레벨을 완전히 바꿔줄 제미나이 프롬프트 7개 공개.\n\n---\n\n1. 3C 분석 자동화\n\n아래 사업 정보를 읽고 3C 분석을 해줘.\n[사업 설명 붙여넣기]\nCompany: 우리의 강점, 약점, 핵심 역량\nCustomer: 타겟 고객의 니즈, 행동 패턴, 미충족 수요\nCompetitor: 주요 경쟁사 3곳의 전략, 강점, 약점\n각 항목을 표로 정리하고\n3C 분석 기반 전략적 시사점 3가지를 도출해줘.\n출처 포함 필수.\n\n---\n\n2. SWOT + 실행 전략\n\n아래 사업 상황을 분석해줘.\n[사업 현황 붙여넣기]\nSWOT 분석을 하되 단순 나열하지 마.\nSO전략(강점으로 기회 잡기), WT전략(약점과 위협 동시 해결) 등\n교차 전략까지 구체적으로 도출해줘.\n각 전략마다 실행 액션 1개씩 제안해줘.\n\n---\n\n3. 시장 규모 추정\n\n[시장: 예) 한국 반려동물 건강식품 시장]의 규모를 추정해줘.\n탑다운, 바텀업 두 가지 방식으로 각각 계산하고\n사용한 가정과 데이터 출처를 명시해줘.\n최종 추정치를 범위(보수적~낙관적)로 제시하고\n이 시장에 진입할 가치가 있는지 결론도 내줘.\n\n---\n\n4. 로직트리 문제 분해\n\n아래 비즈니스 문제를 해결해줘.\n[문제: 예) 우리 쇼핑몰 재구매율이 15%에서 오르지 않는다]\n이 문제를 MECE 원칙에 따라 로직트리로 분해해줘.\n최소 3단계까지 분해하고\n각 가지(branch)마다 가능한 원인과 검증 방법을 제시해줘.\n맥킨지 신입 컨설턴트가 파트너에게 보고하는 수준으로.\n\n---\n\n5. 경쟁사 벤치마킹\n\n아래 경쟁사 3곳을 분석해줘.\n[경쟁사 1, 2, 3]\n최근 6개월 뉴스, 제품 출시, 마케팅 캠페인을 조사하고\n각 경쟁사의 전략 포지셔닝을 2x2 매트릭스로 정리해줘.\n우리가 공략할 수 있는 빈 포지션을 찾아주고\n구체적 진입 전략 2가지를 제안해줘.\n출처 링크 포함.\n\n---\n\n6. 재무 데이터 해석\n\n아래 재무 데이터를 분석해줘.\n[매출, 영업이익, 고객수, 객단가 등 데이터 붙여넣기]\n이 데이터에서 발견할 수 있는 핵심 인사이트 3가지를 알려줘.\n각 인사이트가 의미하는 것을 비재무 담당자도 이해할 수 있게 설명하고\n다음 분기에 집중해야 할 액션 3가지를 제안해줘.\n차트로 표현한다면 어떤 차트가 적합한지도 추천해줘.\n\n---\n\n7. 전략 보고서 원페이저\n\n위에서 분석한 내용을 종합해서\n임원 보고용 원페이저를 만들어줘.\n구성: 현황 요약 3줄 + 핵심 이슈 3개 + 전략 방향 3개 + 즉시 실행 액션 3개.\n전체 분량 A4 1장 이내.\n맥킨지 보고서처럼 결론부터 쓰고 근거를 뒤에 배치해줘.\n\n---\n\n컨설팅 수천만 원 쓰는 것보다\n이 프롬프트 7개로 제미나이한테 시키는 게 10배 빠르다.\n\n분석 못하는 건 머리가 아니라 프롬프트다.\n\nhttps://litt.ly/yourgpt3650",
+      "media": [],
+      "crawled_at": "2026-03-18T17:48:49.903",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVYpsQlkn8n",
+      "user": "yourgpt3650",
+      "timestamp": "2026-03-02 23:20:03",
+      "original_item_count": 9,
+      "platform_sequence_id": 436
+    },
+    {
+      "sequence_id": 512,
+      "platform_id": "DVYPi8FgVWn",
+      "sns_platform": "threads",
+      "code": "DVYPi8FgVWn",
+      "username": "papapat.ai",
+      "display_name": "papapat.ai",
+      "full_text": "15분짜리 YouTube 영상\n끝까지 볼 시간이 없었다\n\nClaude한테 링크 하나 던졌다\n30초 만에 요약이 나왔다\n\nMCP 서버 하나 깔았을 뿐이다",
+      "media": [],
+      "url": "https://www.threads.net/@papapat.ai/post/DVYPi8FgVWn",
+      "created_at": "2026-03-02 19:31:35",
+      "date": "2026-03-02",
+      "crawled_at": "2026-03-18T17:48:49.903",
+      "source": "network",
+      "is_merged_thread": false,
+      "root_code": "DVYPi8FgVWn",
+      "like_count": 26,
+      "reply_count": 11,
+      "repost_count": 2,
+      "quote_count": 0,
+      "pk": "3843890653637465511",
+      "media_type": 19,
+      "content_type": "image",
+      "platform_sequence_id": 437
+    },
+    {
+      "sequence_id": 513,
+      "platform_id": "DVWRb0IE_vj",
+      "sns_platform": "threads",
+      "code": "DVWRb0IE_vj",
+      "username": "geumverse_ai",
+      "display_name": "Geum Verse",
+      "full_text": "AI한테 시니어 개발자 13년치 지식을 주입해봤다\n\n코드 짜는 AI 말고\n\"이 기능 지금 만들면 망한다\"고 말해주는 AI\n\n현업 개발 프로세스 13단계를 분석해서\n5개 에이전트로 쪼갰어요.\n\n핵심은 Kill Metric 🎯\n\n\"이 숫자가 이렇게 되면 즉시 롤백\" —\n이걸 정의 못 하면 에이전트가 다음 단계를 아예 막아버림.\n\n기획할 때 뿐만 아니라\nA/B 테스트 해석, 장애 Post-Mortem까지\nClaude가 시니어처럼 까칠하게 체크해줌.\n\nSKILL.md 7개 파일로 완성.\nClaude Code 쓰는 분이면 바로 적용 가능합니다.\n\n\"더 조심한다\" 같은 액션 아이템은 거부하는 Retro Agent가 제일 마음에 듦 ㅋㅋ",
+      "media": [],
+      "url": "https://www.threads.net/@geumverse_ai/post/DVWRb0IE_vj",
+      "created_at": "2026-03-02 01:09:37",
+      "date": "2026-03-02",
+      "crawled_at": "2026-03-18T17:48:49.903",
+      "source": "network",
+      "is_merged_thread": false,
+      "root_code": "DVWRb0IE_vj",
+      "like_count": 149,
+      "reply_count": 9,
+      "repost_count": 49,
+      "quote_count": 2,
+      "pk": "3843336010193959907",
+      "media_type": 19,
+      "content_type": "image",
+      "platform_sequence_id": 438
+    },
+    {
+      "sequence_id": 514,
+      "platform_id": "DVXx3OjjzlV",
+      "sns_platform": "threads",
+      "code": "DVXx3OjjzlV",
+      "username": "keepgoing.lee.518",
+      "display_name": "SEUNGWOO LEE",
+      "full_text": "처음부터 Codex 만 쓰고 있어서 다른 에이전트의 사정은 잘 모르겠습니다만, VSCode 나 Codex App 이나 Codex CLI 의 app-server 를 사용해서 똑같은 방식으로 동작하구요. (앞단 프론트엔드만 다를 뿐이죠.) Skills 나 AGENTS.md 같은건 Gemini 도움으로 깎아서 쓰고 있는데 만족하고 있습니다.\n\nMCP 는 CLI 에서 바로 실행하게 하면 되는지라 쓸 일이 없어서 걷어낸지 오래구요.",
+      "media": [],
+      "url": "https://www.threads.net/@keepgoing.lee.518/post/DVXx3OjjzlV",
+      "created_at": "2026-03-02 15:12:13",
+      "date": "2026-03-02",
+      "crawled_at": "2026-03-18T17:48:52.916",
+      "source": "network",
+      "is_merged_thread": false,
+      "root_code": "DVXx3OjjzlV",
+      "like_count": 2,
+      "reply_count": 1,
+      "repost_count": 0,
+      "quote_count": 0,
+      "pk": "3843760106463246677",
+      "media_type": 19,
+      "content_type": "image",
+      "platform_sequence_id": 434
+    },
+    {
+      "sequence_id": 515,
+      "sns_platform": "threads",
+      "code": "DVXlG1pksMG",
+      "full_text": "1.\n트위터의 기인 잭 도시가 AI를 도입한다며 직원 4,000명을 썰어버렸을 때만 해도 실리콘밸리엔 위기감이 감돌았다. 이제 개발자들의 시대는 끝났다는 비관론이 팽배했다. 그런데 웬걸, 바닥을 쳤던 소프트웨어 엔지니어 구인 공고가 다시 미친 듯이 치솟고 있다. 이 부조리극의 전말, 내가 짧게 타래를 풀어 보겠다.\n\n---\n\n2.\n클라우드 기업 Box의 CEO 아론 레비가 해설을 곁들였다. 제번스의 역설이라고, 공급이 제한적이던 것의 비용이 낮아지면 수요는 오히려 폭발한다는 거다. 신디사이저와 미디(MIDI)가 처음 나왔을 때 벌어진 일과 같다. 건반 하나로 드럼과 스트링을 다 찍어내니 세션맨들은 다 굶어 죽을 줄 알았다. 하지만 누구나 방구석에서 비트를 찍어대면서 음악 시장의 파이는 우주로 팽창해 버렸다.\n\n---\n\n3.\n과정은 이렇다. AI가 코드를 척척 짜내는 걸 본 사장들은 환희에 차서 일단 어중이떠중이 코더들이나 짬 안 되는 주니어들을 잘라냈다. 그리고 비전공자인 김부장이 프롬프트를 깨작거리며 그럴듯한 프로토타입을 만들어 본다. 하지만 불행은 늘 완벽한 착각 뒤에 온다. 김부장이 만들어낸 바이브 코드를 실제 서버에 올리고 기존 시스템과 엮는 순간, 통제 불능의 에반게리온 초호기가 되어 회사의 데이터베이스를 물어뜯기 시작한다.\n\n---\n\n4.\n결국 사장은 울며 겨자 먹기로 다시 '진짜' 엔지니어들을 찾는다. 그것도 예전보다 훨씬 더 많이. 왜? AI 덕분에 코딩의 '단가'가 싸졌다고 착각한 경영진들이, 예전 같으면 돈 아까워서 엄두도 못 냈을 미친 아이디어들을 잔뜩 벌려놨다. AI가 뼈대를 잡아주니 소프트웨어로 세상 모든 걸 해결할 수 있을 것 같은 지적 허영에 빠진 거다. 결국 AI가 싸놓은 거대한 똥을 치우고 시스템을 굴러가게 만드는 귀찮은 작업은 다시 숙련된 인간의 몫이 된다.\n\n---\n\n5.\n마차가 증기기관차로 대체되었을 때도 그랬다. 마차 시대가 끝나면 운송업은 끝장날 줄 알았지만, 운송 비용이 낮아지자 사람과 물자의 이동 수요가 미친 듯이 폭증했다. 기찻길을 깔고, 산에 구멍을 뚫고, 복잡한 철도망을 관리하느라 훨씬 더 많은 인원이 투입되어 빡세게 굴렀다. 말이 일자리를 잃었을 뿐, 인간은 더 거대한 노동의 늪에 빠진 거다.\n\n---\n\n6.\n세상의 원리가 그런게 아닌가 싶다. 기술은 언제나 우리의 수고를 덜어주겠다고 달콤하게 유혹하지만, 결국 우리를 더 복잡하고 정교한 노동의 굴레로 안내한다. AI가 코드를 짜주는 시대? 축하한다. 이제 당신들은 사장이 AI와 밤새워 낳은 그 수백 개의 기괴한 사생아 프로젝트들을 인간의 언어로 번역하고 수습해야 한다. 멸종 위기는커녕, 바야흐로 역사상 가장 비싼 시급을 받는 'AI 배변 패드 교체 요원'들의 전성시대가 열린 거다.",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/640423048_17884200903461066_991420996610989943_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uODE5eDc2Ny5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QHiP0cGOzeJ3Ip82rS4SF8HlWEiwwkveiT0LFoalCpvmJvflumPIWv6YUekFJUG34s&_nc_ohc=PgUKKKQGeA8Q7kNvwEK0EPc&_nc_gid=pDlHwp18bltqp5vgWiY3wQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0MzcwNDAwNDYyNzU3OTY1NA%3D%3D.3-ccb7-5&oh=00_AfwLsio-zuwQqJshiheNWDdICLisKmJ-_r-mBlB4sowrCQ&oe=69C0451B&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:48:52.917",
+      "local_images": [
+        "web_viewer/images/6b6ed81b4bbd1fe2808b9aeb54c79fd6.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVXlG1pksMG",
+      "user": "sasirim",
+      "timestamp": "2026-03-02 13:20:45",
+      "original_item_count": 6,
+      "platform_sequence_id": 431
+    },
+    {
+      "sequence_id": 516,
+      "sns_platform": "threads",
+      "code": "DVX4MvoADrT",
+      "full_text": "옵시디언 노트 좀 더 스마트하게 사용하는 법 추천 (by cluade) \n\n  1. Smart Connections — 가장 추천 \n \n \"이거 어딘가에 썼는데...\"를 해결해주는 플러그인 \n \n - 전체 노트를 의미 기반으로 인덱싱 → 키워드가 달라도 관련 노트를 \n  찾아줌\n - 지금 쓰는 노트 옆에 자동으로 관련 노트 목록 표시\n - 로컬 처리 (데이터 외부 전송 없음), 무료\n - 설치만 하면 끝 — 코딩 불필요\n\n  비개발자 + 노트 많이 쌓인 상황에 제일 잘 맞아요.\n\n---\n\n2. Smart Composer — Obsidian 안에서 Claude 쓰는 느낌\n\n  외부 AI 없이 볼트 내용 기반으로 대화\n\n - @파일명 으로 특정 노트를 AI 대화 컨텍스트로 포함\n - 볼트 전체에서 관련 노트 자동 검색 후 답변 (Cmd+Shift+Enter)\n - Anthropic/Claude API 연결해서 쓸 수 있음\n - 로컬 모델(Ollama)도 지원\n\n  지금 Claude Code에서 하시는 걸 Obsidian 앱 안에서 하는 버전이에요. \n\n----> 클로드는 막힘\n\n---\n\n3. Obsidian Semantic MCP — 가장 진보적 \n\n  Claude Code ↔ Obsidian 볼트를 직접 연결\n\n - Claude Code에서 대화하면서 볼트 노트를 MCP로 읽고/쓰기\n - 지금은 Claude Code가 파일시스템으로 접근하는데, 이건 Obsidian\n  의미 구조를 이해하고 접근\n - 설정이 약간 필요 (Local REST API 플러그인 + MCP 설정)\n\n---\n\n날잘알 클로드에게 이 추천 옵션들이 내 작업 패턴과 어울리는지 확인해보기!\n\n---\n\n4번이랑 5번 쓴게 왜 연결되어서 안 보일까.. 작업로그로 쓰기엔 아직 적응 못한 스레드 PC웹뷰...\n\n---\n\n4. Claudian — Claude Code를 Obsidian 안으로\n  Obsidian 사이드패널에서 Claude Code와 직접 대화 \n\n - 현재 편집 중인 노트 자동 컨텍스트 포함 \n - @파일명으로 다른 노트 참조\n - 선택한 텍스트 인라인 편집 (diff 미리보기) \n - /명령어로 재사용 프롬프트 템플릿 생성\n  Claude Code 이미 설치된 사람은 플러그인만 추가하면 됨. \n  지금 터미널↔Obsidian 창 전환이 번거롭게 느껴진다면 유용. \n ----> 현재 Claude Code 워크플로우와 기능 동일, 인터페이스만 Obsidian 안으로\n\n---\n\n5. Obsidian CLI — Obsidian 공식 터미널 명령어 (v1.12)\n 터미널에서 Obsidian 앱을 원격 제어\n\n - obsidian daily — 오늘 데일리 노트 앱에서 열기\n - obsidian create / append — 노트 생성/내용 추가\n - obsidian search — 키워드 검색 (파일 경로만 반환)\n - obsidian open file=\"...\" — 특정 노트 앱에서 열기\n  Settings → Register CLI 클릭만으로 설치 완료.\n ----> 비개발자 + Claude Code 사용 환경에선 실익 없음\n  Claude Code가 내용 기반 검색/수정 모두 더 잘 처리함\n  앱에서 직접 노트 열 때만 유효\n\n---\n\nSmart Connection 너무 좋다! \n\n노트 하나 열면 우측 패널에 관련된 문서들 띄워줌",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/640402565_17860577436608206_1220287512733469719_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTg2Nng2NjYuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QGy2gHWvGSmkNyurcNjOQyKlAmddzGVU4xw-1ADzQlnKiBD7jakfRpjlll_n8Yy734&_nc_ohc=r_O0LHogkDAQ7kNvwGtpbCG&_nc_gid=ZYyAUXONGxFvxkaevr7HEw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0MzgwNDU5OTM1MzkxMDk3OQ%3D%3D.3-ccb7-5&oh=00_AfzXtKlYs6VLb6GpyvI-l0eOBuRrLoYG6Rp256vek0yPmw&oe=69C03B30&_nc_sid=10d13b",
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/641414909_17860574688608206_3197768423782172421_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTgwMng4MjAuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QGy2gHWvGSmkNyurcNjOQyKlAmddzGVU4xw-1ADzQlnKiBD7jakfRpjlll_n8Yy734&_nc_ohc=sPPWxxjg0E8Q7kNvwFWoOGC&_nc_gid=ZYyAUXONGxFvxkaevr7HEw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0Mzc5MzA2MjgzNjg0ODM3Mg%3D%3D.3-ccb7-5&oh=00_AfxMQGJWnwh5m1Y-j_y_Qc0_fRTq2XMrW9kYOt--jVGDFg&oe=69C04EC9&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:48:52.917",
+      "local_images": [
+        "web_viewer/images/b93acca0ae0654b49d5629393df3fbd3.jpg",
+        "web_viewer/images/a99ae8bf6398ee4675b25e62241c7760.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVX4MvoADrT",
+      "user": "untruth.study",
+      "timestamp": "2026-03-02 16:07:35",
+      "original_item_count": 8,
+      "platform_sequence_id": 432
+    },
+    {
+      "sequence_id": 517,
+      "sns_platform": "threads",
+      "code": "DVYnEO_k0ly",
+      "full_text": "두 AI를 경쟁시켜 더 좋은 코드를 뽑아내는 방법이 있습니다.\n\n한 명(Claude)은 계획을 짜고, 다른 한 명(Codex)은 그 계획을 검증하게 만드는 거죠.\n실리콘밸리 CTO 커뮤니티에서 공유되고 있는 하이브리드 워크플로우예요.\n\n---\n\n이 워크플로우는 수동으로 복사/붙여넣기 할 수도 있지만, 최근엔 ‘codex-collab’이라는 스킬을 써서 자동화하는 추세예요.\n\n설치는 터미널에서 3줄이면 끝납니다.\n\n---\n\n원리는 Claude Code의 ‘스킬’ 기능을 이용하는 건데요.\n\n1. 사용자가 프롬프트에 ‘Codex’를 언급하면\n2. Claude가 codex-collab 스킬을 자동으로 호출합니다.\n3. 이 스킬은 Codex App Server의 프로토콜을 통해 Codex에게 작업을 지시해요.\n4. Codex가 일하는 동안 Claude는 멈추지 않고 다른 작업을 계속할 수 있습니다. (비동기 )\n\n---\n\n이게 기존 MCP 방식보다 좋은 점은 ‘비동기’로 작동한다는 거예요.\n\n• MCP 방식: Claude가 Codex에게 일을 시키면, 끝날 때까지 Claude는 멈춰있어야 했어요.\n• App Server 방식: Claude는 Codex에게 일을 던져놓고, 자기는 다른 질문에 답하거나 코드를 짜는 등 멀티태스킹이 가능합니다.\n\n마치 매니저가 부하 직원에게 일을 시켜놓고, 자기는 다른 업무를 보는 것과 같죠.\n\n---\n\nAI 하나만 쓰는 시대는 이제 지나가고 있는 것 같아요.\n\n각 AI의 장단점을 파악하고, 여러 AI를 각자의 역할에 맞게 조합해서 쓰는 ‘AI 오케스트레이션’ 능력이 점점 더 중요해지고 있습니다.\n\n어떤 AI를 쓰느냐가 아니라, AI를 ‘어떻게’ 조합해서 쓰느냐가 중요한 것 같다고 느껴지네요",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/641469313_17907848496357544_7792851938767834653_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNzk1eDE1NC5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QHtIjK_VxOFvExpB5QnjypmC-z4m5NFZ-BGw3hDdS_zdxL6ZwlGFbGFKgZnqKHbNsc&_nc_ohc=W0jg76sU-UUQ7kNvwFKejoa&_nc_gid=skQAHksvI_t-EZXCHIhMCg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0Mzk5NDEzNzU4NzMxMjA1OA%3D%3D.3-ccb7-5&oh=00_AfzWk3pRs3w5b4VRdMTMiyhqVR5KCvGW1awxxZrSzJE9IQ&oe=69C04F80&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:48:52.917",
+      "local_images": [
+        "web_viewer/images/a2000e2c5e98550ddb484354c575e2b1.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVYnEO_k0ly",
+      "user": "ai_sync_club",
+      "timestamp": "2026-03-02 22:57:07",
+      "original_item_count": 5,
+      "platform_sequence_id": 433
+    },
+    {
+      "sequence_id": 518,
+      "sns_platform": "threads",
+      "code": "DT4l8iRDMS1",
+      "full_text": "Claude Code, 남들보다 100배 더 효율적으로 쓰는 비결이 궁금하신가요? 🤫\n\n단순히 프롬프트만 잘 짠다고 해결되는 게 아닙니다. \n진짜 고수들은 이미 '멀티 에이전트'와 '지속적 메모리(Persistent Memory)'를 활용해 Claude의 한계를 부수고 있어요.\n\n지금 당장 적용해볼 수 있는 Claude Code 200% 활용 오픈소스 8가지, 링크까지 싹 정리했습니다. \n(저장해두고 필요할 때 꺼내 쓰세요! 🔖)\n\n👇 툴 리스트\n\n---\n\n1️⃣ Superpowers (obra)\n제대로 된 소프트웨어 개발 방법론을 적용한 스킬 프레임워크입니다.\n🔗 https://github.com/obra/superpowers\n\n---\n\n2️⃣ Agents (wshobson)\nClaude Code를 위한 지능형 자동화 및 멀티 에이전트 관리 도구입니다.\n🔗 https://github.com/wshobson/agents\n\n---\n\n3️⃣ claude-mem (thedotmack) ✨\n[강추] 코딩 세션의 모든 맥락을 기억하고 압축해서 다시 주입해주는 '기억력' 플러그인입니다.\n🔗 https://github.com/thedotmack/claude-mem\n\n---\n\n4️⃣ claude-flow (ruvnet)\n실무 투입 가능한 수준의 멀티 에이전트 오케스트레이션입니다.\n🔗 https://github.com/ruvnet/claude-flow\n\n---\n\n5️⃣ planning-with-files (OthmanAdi)\nManus 스타일의 체계적인 마크다운 기획 스킬을 구현했습니다.\n🔗 https://github.com/OthmanAdi/planning-with-files\n\n---\n\n6️⃣ claude-scientific-skills (K-Dense-AI)\n과학/연구 분야 활용을 위한 140가지 전문 스킬 모음입니다.\n🔗 https://github.com/K-Dense-AI/claude-scientific-skills\n\n---\n\n7️⃣ claude-code-guide (zebbern)\n설정부터 워크플로우까지, Claude Code 마스터를 위한 완벽 가이드입니다.\n🔗 https://github.com/zebbern/claude-code-guide\n\n---\n\n8️⃣ oh-my-claudecode (Yeachan-Heo)\n학습 곡선 없이 바로 쓰는 멀티 에이전트 \n(28개 에이전트 내장!) 입니다.\n🔗 https://github.com/Yeachan-Heo/oh-my-claudecode\n\n이제 프론티어 모델의 성능을 극한으로 끌어올리는 건\n'어떻게 조율하느냐'에 달렸습니다. \n\n여러분은 어떤 도구가 가장 끌리시나요?",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/621664029_17859087621596148_2693087313723387440_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTI5MHg3MDYuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QGwO7bXvajj9EnPhgfGzPUAXxv6-c2j5OEtdcASaQYmQU8SVG-DTcfo2L10k3l64pw&_nc_ohc=1ekrMdl2fw8Q7kNvwF98oWD&_nc_gid=qvblV0Kxy-2vEQdQ0c8_9Q&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxNjk2NzU3MTg3OTI4MTg0NQ%3D%3D.3-ccb7-5&oh=00_Afwo4LlH3b2CMCyIvJdb5vskH3erK0kTSsX8r1oQI26jWA&oe=69C028E8&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:48:55.937",
+      "local_images": [
+        "web_viewer/images/106ad708c952051e185dae64c206c6ba.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DT4l8iRDMS1",
+      "user": "feelfree_ai",
+      "timestamp": "2026-01-24 16:00:14",
+      "original_item_count": 9,
+      "platform_sequence_id": 427
+    },
+    {
+      "sequence_id": 519,
+      "sns_platform": "threads",
+      "code": "DUa78PhE_p7",
+      "full_text": "클로드 코드 이번 업뎃으로 추가된\nAgent Team 기능은 진짜 미쳤네요ㅋㅋ\n\n지금까지의 모든 업데이트들보다\n가장 체감이 큰 것 같습니다.\n\n팀원들 생성해서 병렬로 작업하라고 한 다음\n\nCode-simplifier로 1차 검수\nCodex로 2차 검수하라고 하니\n\n진짜 제가 할 일이 없네요.\n\n메인 세션 컨텍스트 관리도 너무너무 편하구요..",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/628321879_17894204568407638_6284434178799028268_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTUwMHgyMDAwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QFviTjfKu-Zfyy64rMUq6FyvtGEOMa3p1SWW8ymtCvmQqZW-VeBQRQ0eXamsli_-UA&_nc_ohc=-UhvZxNmMfcQ7kNvwEfMWIx&_nc_gid=Buzvw1RTOfeWWSj2BnHgPQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyNjYzNDQ1Nzk3ODUwMTc1NQ%3D%3D.3-ccb7-5&oh=00_Afwl42MVMN193WSNFCA9ZV2Z9XbZFa-Q7Vu8NNfjbY3wSQ&oe=69C03E96&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:48:55.937",
+      "local_images": [
+        "web_viewer/images/6825291fb1af2ac08efd530a5ca93ba0.webp"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DUa78PhE_p7",
+      "user": "71_102",
+      "timestamp": "2026-02-07 00:06:36",
+      "original_item_count": 1,
+      "platform_sequence_id": 428
+    },
+    {
+      "sequence_id": 520,
+      "platform_id": "DMhb3u2STEx",
+      "sns_platform": "threads",
+      "code": "DMhb3u2STEx",
+      "username": "hscookie",
+      "display_name": "황섬",
+      "full_text": "task master 도입해보려고 하다가 아직 claude code도 사용하지 않는 동료가 있어서 접었습니다. 같이 사용하는 것이면 모를까 jira로 할 일 관리하는데 task master 도입하려니 좀 애매하더군요.. ㅠ\n전 task master 아이디어 차용해서 prd 생성하고 claude 통해서 task 산출하고 jira 티켓 생성하는 것으로 방향을 잡았어요..\ntask master 사용하실 때 혼자 사용하시나요? 다른 동료가 있다면 동료분과 할일 처리는 어떻게 하시는지 궁금합니다.",
+      "media": [],
+      "url": "https://www.threads.net/@hscookie/post/DMhb3u2STEx",
+      "created_at": "2025-07-25 16:29:54",
+      "date": "2025-07-25",
+      "crawled_at": "2026-03-18T17:48:55.937",
+      "source": "network",
+      "is_merged_thread": false,
+      "root_code": "DMhb3u2STEx",
+      "like_count": 1,
+      "reply_count": 1,
+      "repost_count": 0,
+      "quote_count": 0,
+      "pk": "3684348547295686961",
+      "media_type": 19,
+      "content_type": "image",
+      "platform_sequence_id": 429
+    },
+    {
+      "sequence_id": 521,
+      "platform_id": "DMhPJjphpSW",
+      "sns_platform": "threads",
+      "code": "DMhPJjphpSW",
+      "username": "bohe76",
+      "display_name": "보헤",
+      "full_text": "추가적으로 꿀팁 준다면 task master 를 직접 만들지 말고 ai 를 시키고, 체크 리스트 형태의 md 파일로 . 그리고 task 가 끝날때 마다 업데이트 시키면 됨.",
+      "media": [],
+      "url": "https://www.threads.net/@bohe76/post/DMhPJjphpSW",
+      "created_at": "2025-07-25 14:38:44",
+      "date": "2025-07-25",
+      "crawled_at": "2026-03-18T17:48:55.937",
+      "source": "network",
+      "is_merged_thread": false,
+      "root_code": "DMhPJjphpSW",
+      "like_count": 1,
+      "reply_count": 1,
+      "repost_count": 0,
+      "quote_count": 0,
+      "pk": "3684292597616383126",
+      "media_type": 19,
+      "content_type": "image",
+      "platform_sequence_id": 430
+    },
+    {
+      "sequence_id": 522,
+      "sns_platform": "threads",
+      "code": "DUko3X9EiCR",
+      "full_text": "💻요즘 내 개발플로우💻\n\n1️⃣ 계획 → Claude Code(plan 모드) + Superpowers plan\n2️⃣ 구현 → Claude code Agent teams\n3️⃣ 리뷰 → Codex\n4️⃣ 보완 → 다시 Claude Code\n\nClaude code plan 모드 켜고 Superpowers의 plan으로 설계 잡은 다음\nagent teams가 나눠서 병렬로 구현!\n\n구현된 코드베이스를 Codex한테 코드 리뷰 맡기고\n리뷰 결과를 다시 Claude Code에 넘겨서 수정!\n\nAI끼리 핑퐁하면서 코드 퀄리티 올리는 구조👍\n\n——————-\n\n개발자의 역할이 바뀌어 가는 것 같습니다..😀\n\n여러분들은 어떻게 워크플로우를 구상하셨나요!\n함께 공유해봐요:)",
+      "media": [],
+      "crawled_at": "2026-03-18T17:48:58.965",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DUko3X9EiCR",
+      "user": "ai_dev_newbie",
+      "timestamp": "2026-02-10 18:32:19",
+      "original_item_count": 1,
+      "platform_sequence_id": 423
+    },
+    {
+      "sequence_id": 523,
+      "sns_platform": "threads",
+      "code": "DRUSJbIilu_",
+      "full_text": "내가 클로드 코드를 쓰는 이유는,\n\n클로드 코드가 여러모로 개발 관련해서 제일 정보가 많기 때문이야.\n내가 게을러서 그런가 싶긴 하지만,\n선점효과가 있어서인지\n정말 찐 유저들의 고퀄리티 정보가 굉장히 많음.\n\n예를 들어 몇가지 공유하자면\n1. ClaudeLog - 여기 있는 자료만 잘 읽어도, 그 누구보다 잘쓰고 있는거임.\n2. Superpowers blog - 정말 깊이있게 엔지니어링에 활용한다면 어디까지 갈 수 있나를 알 수 있음.\n3. awesome-claude-code - awesome 시리즈 레포인데, 하나하나 파보는 재미가 있음.\n4. 그 외에 neondb 등 꽤나 알려진 회사들에서 cheatsheet를 많이 내는 편.\n\n혹시 추가 정보나 링크가 필요하면 얘기해줘~",
+      "media": [],
+      "crawled_at": "2026-03-18T17:48:58.965",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DRUSJbIilu_",
+      "user": "danielkimsw",
+      "timestamp": "2025-11-21 20:31:47",
+      "original_item_count": 1,
+      "platform_sequence_id": 424
+    },
+    {
+      "sequence_id": 524,
+      "sns_platform": "threads",
+      "code": "DUhPj5VD3X8",
+      "full_text": "다시 Codex로 돌아왔다. Codex App도 굉장히 만족스럽고.\n프로젝트가 프로덕션 사이즈로 올라오니까 확실히 Codex 가 넘사다. 속도도 이전보다 훨 빨라졌고.\n에이전트 팀이니 뭐니 사용해봐도 딱히 큰 체감 못느끼고 Opencode도 백그라운드 에이전트가 응답도 없이 뻗는 경우도 너무 많다. Claude code는 이제 프로토타입용, 커밋 자동화툴, 코딩 외 워크플로우 툴이 되어버림. (코딩말고 다른 용도로 더 많이 쓰는듯..) \n(클코는 진짜 compaction 이후 너무 자주 맥락을 잊어먹는듯..)\n\nCodex+Superpowers 으로 Plan 모드 잡고 구현들어가면 프로덕션 프로젝트에서도 거의 원샷으로 구현 가능. 물론 5.3-xhigh 를 쓰는데 옆집 클로드에 비해 Codex 프로는 토큰도 넉넉하고.\n\nOpenclaw 개발자도 Codex만 쓴다고 하더라..\n\n---\n\nSuperpowers 는 클코에서도 유용하니까 궁금하면 참고\nhttps://flowkater.io/posts/2026-02-08-superpowers-introduction/",
+      "media": [],
+      "crawled_at": "2026-03-18T17:48:58.965",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DUhPj5VD3X8",
+      "user": "flowkater",
+      "timestamp": "2026-02-09 10:53:29",
+      "original_item_count": 2,
+      "platform_sequence_id": 425
+    },
+    {
+      "sequence_id": 525,
+      "sns_platform": "threads",
+      "code": "DUVIdYjgBXK",
+      "full_text": "클로드 코드(Claude Code), 이제 그냥 쓰지 말고 '나만의 AI 멘토'로 업그레이드 하세요! 🎁 \n\n코드를 이해시켜주는 꿀기능이 추가되었습니다.\n\njh941213 님이 만드신 'Claude Code Power Pack'이 업데이트 되었는데, 내용이 진짜 알차네요. \n\n여기저기 흩어진 꿀팁들을 모은 것도 좋지만, 가장 눈에 띄는 건 '주니어 멘토(Junior Mentor)' sub-agent 입니다.\n\nAI가 코드 짤 때 멍하니 화면만 보고 계셨던 분들 계시죠? 😅\n이제 클로드 코드가 코드를 수정하면 \"왜 바꿨는지\", \"어떤 로직인지\"를 초보 개발자(주니어) 눈높이에 맞춰 이미지까지 활용해 설명해준다고 합니다.\n\n단순 코딩 셔틀이 아니라, 진짜 실력을 늘려주는 멘토가 생기는 셈이네요. \n\n테디노트님의 하네스 이론까지 적용된 그야말로 클로드 코드계의 '종합 삼선짬뽕'! 🍜\n\n설치도 간단하니 바로 적용해보세요 👇\n\n---\n\n설치 방법 👇\nclaude plugin marketplace add jh941213/my-claude-code-asset\nclaude plugin install ccpp@my-claude-code-asset\n\n---\n\n출처: https://github.com/jh941213/my-claude-code-asset",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/625664630_17860686297596148_4648991486876601031_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTI5MHgxMDE2LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QGlreqc_CxemdzLxKVSESen1ao6S0_MLtfL82g8yBFLxUHsgFmZGeifwNz1n7C9OQA&_nc_ohc=-onIN1-nfdQQ7kNvwH9xw79&_nc_gid=zXFkp66YLEN4QKj6nzLLJQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyNTAwMDY1NzM0MTkxNTYwMQ%3D%3D.3-ccb7-5&oh=00_AfxqqWcrZ2FigTtZMDnU8td8yEb5hMXSzzC00oo9CoIxVw&oe=69C04BDA&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:48:58.965",
+      "local_images": [
+        "web_viewer/images/ca4c8b2b305c76966abbef7d975a98db.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DUVIdYjgBXK",
+      "user": "feelfree_ai",
+      "timestamp": "2026-02-04 18:00:33",
+      "original_item_count": 3,
+      "platform_sequence_id": 426
+    },
+    {
+      "sequence_id": 526,
+      "sns_platform": "threads",
+      "code": "DVT8ntXD9b1",
+      "full_text": "자기전에 클로드코드 관련된 팁들 읽어보고 있는데 superpowers를 발견하고 잠을 못자고 있습니다.\n\n앤트로픽이 이미 1달전에 Claude plugins official marketplace에 추가했는데 이걸 이제 발견하다니 ㅠㅠ\n\n한동안 everything-claude-code 커스텀해서 쓰고 있었는데 비교 좀 해봐야겠습니다.",
+      "media": [],
+      "crawled_at": "2026-03-18T17:49:01.987",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVT8ntXD9b1",
+      "user": "jjlabsio",
+      "timestamp": "2026-03-01 03:29:19",
+      "original_item_count": 1,
+      "platform_sequence_id": 419
+    },
+    {
+      "sequence_id": 527,
+      "sns_platform": "threads",
+      "code": "DUGFSwzgfmA",
+      "full_text": "순정으로 시작해 내게 딱 맞는 워크플로우를 자라나게 하는 방법\n\n(블로그에 각 리포의 링크가 있습니다: https://www.stdy.blog/growing-custom-workflow/)\n\n전체 업무 워크플로우를 한방에 끝내준다는 클로드 코드 하네스가 어느새 꽤 많아졌습니다. 다들 깃헙 스타도 많이 찍혔죠.\n- (39k) 클코 오피셜 플러그인으로 받아들여진 superpowers\n- (34k) 앤트로픽 해커톤 우승자의 everything-claude-code\n- (6.6k) Every의 compound-engineering-plugin\n- (3.4k) 큰 화제가 되었던 oh-my-opencode 의 클로드 코드 포팅 oh-my-claudecode\n\n그런데 AX 코칭을 하다 보니, 리터러시가 낮은 비개발자 분들에게는 이런 도구를 한방에 도입하는 게 오히려 해가 될 수 있다는 걸 느낍니다. 몇 가지 이유를 들어보면:\n\n---\n\n- IDE와 터미널, 클로드 코드라는 생소한 도구들에 익숙해지는 것도 어려운데, 하네스까지 얹어지면 더욱 압도됨\n- 조금만 입력해도 와다다다 일어나는 블랙박스의 영역이 훨씬 커진다. 뭐가 되긴 됐는데... 지금 무슨 일이 일어나고 있는거지?\n- 아무리 좋다는 하네스도 현 시점의 스냅샷에 불과. 개발자들은 계속 업데이트할텐데 그거 어떻게 따라감? 모델 더 좋아지면 쓸모없어질 수도 있고, 클코가 어느새 내장해버릴지도 모름\n- 모든 하네스는 그 개발자 개인에게 최적화된 것. 내 상황에서 쓰려니 너무 과할 수도 부족할 수도 있음\n\n---\n\n그래서 저는 초심자일수록 최적의 세팅을 가져다 쓰기보다는 되도록 순정에서 시작해보길 권합니다. 딱 이거만 준비하면 됩니다.\n- 깃헙 가입과 클로드 코드 설치\n- https://skills.sh/ 에서 skill-creator 스킬 찾아 설치하면서 find-skills 도 설치 (전자는 스킬 만드는 스킬, 후자는 스킬 찾는 스킬)\n\n그리고 일단 클코를 켜서 맨땅 헤딩을 시작합니다. 동료에게 부탁하듯, 내가 뭘 위해 뭘 하고 싶은지 이야기합니다. 의견도 묻고, 작업 성공 기준도 논의하고. 좌충우돌 후 세션 끝날 때쯤 '대략' 이런 식으로 요청합니다. ('대략' = 그대로 복붙하시지 말라는 뜻)\n\n---\n\n<프롬프트>\n이번 세션을 바탕으로 우리가 다음번에는 만족스러운 결과에 더 일찍 도달할 수 있게 돕는 회고 문서를 함께 만들어봅시다. 이런 내용을 생각 중입니다.\n1. 세션에서 드러난, 나와 내 조직과 내 프로젝트에 대한 정보 중 이후 작업에 도움될만한 걸 문서화\n2. 그 외 내 업무 스타일과 협업 방식은 CLAUDE md 에 문서화\n3. 내 프롬프팅 습관 중 개선할 만한 부분\n4. 내 지식/경험 수준을 짐작해볼 때 내게 도움될 만한 학습자료들의 링크. 그리고 이 프로젝트에서 도움될 자료도.\n5. find-skills로 찾은 내 상황에 도움될 만한 스킬들. 딱 맞는 게 안 보인다면 skill-creator 로 하나 만들기 위한 계획.\n\n제 의도를 이해하셨나요? 당신의 의견도 듣고 싶고, 다른 좋은 방법들을 제안해주셔도 좋습니다.\n</프롬프트>\n\n---\n\n이렇게 하면 매 세션이 끝날 때마다 내 맥락에 맞는 스킬이 점점 쌓이고, 나만의 워크플로우가 자라납니다(Bootstrapping). 나도, 클코도 함께 더 똑똑해집니다(Compounding).\n\n그렇게 AI 활용 역량이 점차 높아지면 슬슬 '더 좋은 방법 없나?' 같은 생각이 들 거예요. 그때쯤 다른 팀원과 각자의 방식을 공유하면서 합칠 거 합치고, superpowers 같은 거 까보면서 일부 가져와도 보면서 다음 레벨로 올라가면 됩니다. 팀에 함께 적용할 플러그인도 만들어보고요.\n\n사실 위에 제가 쓴 프롬프트도 또하나의 하네스에 불과합니다. 의도만 가져가서 본인에게 맞게 써보시길 권합니다. 저 또한 저만의 워크플로우 하네스를 개발해서 테스트 중인데, 잘 뽑히면 '일주일프'로 공유해보겠습니다.",
+      "media": [],
+      "crawled_at": "2026-03-18T17:49:01.987",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DUGFSwzgfmA",
+      "user": "steady__study.dev",
+      "timestamp": "2026-01-29 21:44:16",
+      "original_item_count": 5,
+      "platform_sequence_id": 420
+    },
+    {
+      "sequence_id": 528,
+      "sns_platform": "threads",
+      "code": "DVLSJwvCRCB",
+      "full_text": "참 힘듭니다.\n\nClaude Code, 하루가 멀다하고 새로워지고 있습니다.\n플러그인도 참 많이 나왔습니다.\n\n잘 따라가시라고 인기 많은 순\n가장 유명한 플러그인만 50개 모아봤습니다.\n\n저장하고 필요한 것부터 설치하세요\n\n---\n\n2/ 1위~4위\n\n1. anthropics/skills ⭐75,300\n공식 스킬 템플릿. 복붙하고 바로 시작.\n→ github.com/anthropics/skills\n\n2. obra/superpowers ⭐60,900\n시키지 않아도 알아서 계획하고 실행.\n→ github.com/obra/superpowers\n\n3. affaan-m/everything-claude-code ⭐51,600\n에이전트+스킬+훅 설치 하나로 전부 세팅.\n→ github.com/affaan-m/everything-claude-code\n\n4. upstash/context7 ⭐46,800\n최신 공식 문서 실시간 주입. 옛날 문법 방지.\n→ github.com/upstash/context7\n\n---\n\n3/ 5위~8위\n\n5. ComposioHQ/awesome-claude-skills ⭐37,500\n380개+ 스킬 한곳에서 검색.\n→ github.com/ComposioHQ/awesome-claude-skills\n\n6. nextlevelbuilder/ui-ux-pro-max-skill ⭐34,400\nAI가 만든 UI를 프로급으로 격상.\n→ github.com/nextlevelbuilder/ui-ux-pro-max-skill\n\n7. thedotmack/claude-mem ⭐30,800\n세션 끊겨도 어제 작업 기억. 자동 캡처+압축+주입.\n→ github.com/thedotmack/claude-mem\n\n8. wshobson/agents ⭐29,300\n에이전트 112개 즉시 사용. 직접 만들 필요 없음.\n→ github.com/wshobson/agents\n\n---\n\n4/ 9위~12위\n\n9. musistudio/claude-code-router ⭐28,300\n작업 난이도별 모델 자동 분배. Opus 비용 절감.\n→ github.com/musistudio/claude-code-router\n\n10. eyaltoledano/claude-task-master ⭐25,600\n큰 프로젝트 태스크 자동 분해+순서 정리.\n→ github.com/eyaltoledano/claude-task-master\n\n11. hesreallyhim/awesome-claude-code ⭐25,000\n플러그인/스킬/훅 전체 생태계 지도.\n→ github.com/hesreallyhim/awesome-claude-code\n\n12. BloopAI/vibe-kanban ⭐21,800\n에이전트 작업 현황을 칸반 보드로 시각화.\n→ github.com/BloopAI/vibe-kanban\n\n---\n\n5/ 13위~16위\n\n13. davila7/claude-code-templates ⭐21,300\n200+ 프로젝트 템플릿에서 골라 시작.\n→ github.com/davila7/claude-code-templates\n\n14. SuperClaude-Org/SuperClaude_Framework ⭐21,000\n아키텍트, 리뷰어 등 역할 부여. 맥락 있는 코딩.\n→ github.com/SuperClaude-Org/SuperClaude_Framework\n\n15. gsd-build/get-shit-done ⭐19,700\n스펙 먼저, 구현은 그 다음. 워크플로우 강제.\n→ github.com/gsd-build/get-shit-done\n\n16. shareAI-lab/learn-claude-code ⭐17,700\nAI 에이전트를 100줄로 직접 만들어보는 교육용.\n→ github.com/shareAI-lab/learn-claude-code\n\n---\n\n6/ 17위~20위\n\n17. steveyegge/beads ⭐17,200\n브랜치 바꿔도 작업 맥락 유지. Git+메모리 동기화.\n→ github.com/steveyegge/beads\n\n18. vercel-labs/agent-browser ⭐15,400\nVercel이 만든 에이전트 전용 브라우저.\n→ github.com/vercel-labs/agent-browser\n\n19. OthmanAdi/planning-with-files ⭐14,500\n계획을 파일로 유지해서 방향 안 잃음.\n→ github.com/OthmanAdi/planning-with-files\n\n20. ruvnet/claude-flow ⭐14,400\n에이전트 여러 개 동시 투입. 오케스트레이터.\n→ github.com/ruvnet/claude-flow\n\n---\n\n7/ 21위~24위\n\n21. VoltAgent/awesome-claude-code-subagents ⭐11,300\n서브에이전트 100+ 영역별 목록.\n→ github.com/VoltAgent/awesome-claude-code-subagents\n\n22. ryoppippi/ccusage ⭐11,000\n토큰 사용량과 비용 한눈에 시각화.\n→ github.com/ryoppippi/ccusage\n\n23. EveryInc/compound-engineering-plugin ⭐9,500\n실패 패턴 자동 기록. 같은 실수 방지.\n→ github.com/EveryInc/compound-engineering-plugin\n\n24. anthropics/knowledge-work-plugins ⭐7,900\n코딩 외 업무도 Claude로. 공식 플러그인.\n→ github.com/anthropics/knowledge-work-plugins\n\n---\n\n8/ 25위~28위\n\n25. farion1231/cc-switch ⭐6,600\nAI CLI 5개 설정을 GUI 하나로 통합 관리.\n→ github.com/farion1231/cc-switch\n\n26. BehiSecc/awesome-claude-skills ⭐6,300\n스킬 카테고리별 정리 디렉토리.\n→ github.com/BehiSecc/awesome-claude-skills\n\n27. anthropics/claude-code-action ⭐5,800\nPR 올리면 Claude가 자동 리뷰. GitHub Actions.\n→ github.com/anthropics/claude-code-action\n\n28. JimLiu/baoyu-skills ⭐5,400\n번역, 글쓰기 등 비개발 영역 전문가 스킬.\n→ github.com/JimLiu/baoyu-skills\n\n---\n\n9/ 29위~32위\n\n29. Piebald-AI/claude-code-system-prompts ⭐4,900\n버전별 시스템 프롬프트 전체 아카이브.\n→ github.com/Piebald-AI/claude-code-system-prompts\n\n30. langgptai/awesome-claude-prompts ⭐4,400\n검증된 프롬프트 갖다 쓰기.\n→ github.com/langgptai/awesome-claude-prompts\n\n31. Pimzino/spec-workflow-mcp ⭐3,900\n코딩 전에 스펙부터. 스펙 기반 워크플로우.\n→ github.com/Pimzino/spec-workflow-mcp\n\n32. vijaythecoder/awesome-claude-agents ⭐3,900\nTech Lead부터 보안 전문가까지. 26종 서브에이전트.\n→ github.com/vijaythecoder/awesome-claude-agents\n\n---\n\n10/ 33위~36위\n\n33. Orchestra-Research/AI-Research-SKILLs ⭐3,900\nAI 논문/리서치 전용 엔지니어링 스킬.\n→ github.com/Orchestra-Research/AI-Research-SKILLs\n\n34. jarrodwatts/claude-hud ⭐3,700\n컨텍스트, 비용, 도구 사용 실시간 모니터링.\n→ github.com/jarrodwatts/claude-hud\n\n35. Jeffallan/claude-skills ⭐3,700\n풀스택 페어 프로그래머. 66종 전문 스킬.\n→ github.com/Jeffallan/claude-skills\n\n36. SawyerHood/dev-browser ⭐3,700\n에이전트가 브라우저 직접 조작.\n→ github.com/SawyerHood/dev-browser\n\n---\n\n11/ 37위~40위\n\n37. Dammyjay93/interface-design ⭐3,500\n디자인 시스템 기억시켜서 일관성 유지.\n→ github.com/Dammyjay93/interface-design\n\n38. mixedbread-ai/mgrep ⭐3,400\n코드, 이미지, PDF 의미 기반 검색.\n→ github.com/mixedbread-ai/mgrep\n\n39. ykdojo/claude-code-tips ⭐3,100\n고급 기능 제대로 쓰는 45가지 실전 팁.\n→ github.com/ykdojo/claude-code-tips\n\n40. czlonkowski/n8n-skills ⭐3,000\nn8n 워크플로우 전용 7종 스킬셋.\n→ github.com/czlonkowski/n8n-skills\n\n---\n\n12/ 41위~44위\n\n41. trailofbits/skills ⭐2,900\nTrail of Bits의 보안 취약점 분석 스킬.\n→ github.com/trailofbits/skills\n\n42. mvanhorn/last30days-skill ⭐2,900\nReddit, X 최근 30일 트렌드 자동 조사.\n→ github.com/mvanhorn/last30days-skill\n\n43. brennercruvinel/CCPlugins ⭐2,700\n자주 쓰는 역할 프롬프트를 커맨드로.\n→ github.com/brennercruvinel/CCPlugins\n\n44. davepoon/buildwithclaude ⭐2,500\n플러그인, 에이전트, 커맨드 통합 허브.\n→ github.com/davepoon/buildwithclaude\n\n---\n\n14/ 49위~50위\n\n49. greggh/claude-code.nvim ⭐1,900\nNeovim 커뮤니티 통합 플러그인.\n→ github.com/greggh/claude-code.nvim\n\n50. lackeyjb/playwright-skill ⭐1,800\nPlaywright 브라우저 테스트 자동화.\n→ github.com/lackeyjb/playwright-skill\n\n---\n\n15/ 이 시점 커뮤니티에서 가장 핫한 것들:\n\nclaude-mem (7위)\n→ 세션 간 기억 유지. Reddit 언급 1위 카테고리.\n\nTypeScript LSP (공식)\n→ 타입을 추측이 아닌 실제로 확인. 설치 수 69,000+.\n\nOpenBrowser MCP\n→ 브라우저 작업 토큰 144배 절약.\n\nclaude-code-router (9위)\n→ 난이도별 모델 자동 분배. Opus 비용 절감.\n\n---\n\n16/ 이것도 핫함\n\nui-ux-pro-max-skill (6위)\n→ AI가 만든 UI를 프로급으로 격상.\n\nsuperpowers (2위)\n→ 알아서 계획하고 실행. Reddit 추천 1위.\n\ncompound-engineering (23위)\n→ 실패 패턴 자동 기록. 같은 실수 방지.\n\nbeads (17위)\n→ 브랜치 바꿔도 작업 맥락 유지.\n\ntrailofbits/skills (41위)\n→ Trail of Bits 보안 취약점 분석.\n\n---\n\n17/ 설치법:\n\n① 마켓에서:\n/plugins → 검색 → 설치\n\n② GitHub에서:\nclaude plugin add https://github.com/obra/superpowers\n\n③ 스킬만:\nGitHub에서 SKILL.md 복사 → .claude/skills/에 붙여넣기\n\n스코프 설정 (어디에 적용할지):\n--scope user → 내 모든 프로젝트 (기본값)\n--scope project → 팀원 전체 공유\n--scope local → 나만, 이 프로젝트에서만\n\n예시:\nclaude plugin install superpowers --scope project",
+      "media": [],
+      "crawled_at": "2026-03-18T17:49:01.987",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVLSP_9iQoK",
+      "user": "jay_ai__",
+      "timestamp": "2026-02-25 18:44:17",
+      "original_item_count": 16,
+      "platform_sequence_id": 421
+    },
+    {
+      "sequence_id": 529,
+      "sns_platform": "threads",
+      "code": "DVOiIv4k8fv",
+      "full_text": "월 서버비 0원으로 시작해서\n8개 서비스를 혼자 만들었습니다.\n\n전부 지금도 운영 중.\n비개발자 출신. 바이브코딩만으로.\n\nAI한테 \"뭐 쓰면 좋아?\"라고 물으면\n절대 안 나오는 조합들입니다.\n\n업계 사람들도 자기만 쓰고 싶어서\n아무도 공개 안 하는 것들.\n공개합니다. 🧵👇\n\n---\n\n이 스택 조합들의 공통점:\n✅ 0원으로 시작 가능\n✅ 트래픽이 J커브 그려도 비용은 선형 증가\n✅ 대기업이 수천만원 들여 구축하는 수준 그 이상\n\n1인 기업가 + 실무자분들\n삽질 좀 덜하시라고 정리합니다.\n\n---\n\n① 사용자 취향 기억하고 스스로 발전하는 AI 챗봇\n\nGemini-2.5-flash-lite\n+ Qdrant (벡터DB)\n+ Memobase (유저 기억)\n+ Acontext (컨텍스트 관리)\n+ Pusher (실시간 채팅)\n100명 동시접속 가능한\n실시간 대화 + AI 응답 가능.\n\nRAG 기반에 유저 취향 기억에\n자가 발전에 실시간 대화인데 0원으로 시작 가능.\n\n---\n\n② 제 8개 서비스 전부 이 조합입니다\n\nNext.js + BetterAuth + Neon DB\n+ Vercel + Cloudflare R2\n\nSupabase DB? → Neon DB로 바꾸세요.\nClerk Auth? → BetterAuth. 무료입니다.\n\n이 조합이면 인증, DB, 스토리지, 배포\n전부 해결됩니다.\n\n---\n\n③ 클래스101/유튜브 같은 영상 사이트?\n→ BunnyStream 하나면 끝.\n\n④ 디자인 모르면 Shadcn.\nTweakcn에서 조합 잡고 시작하면\n디자이너 없이도 깔끔하게 나옵니다.\n\n⑤ Tailwind CSS는 반드시 v3 쓰세요.\nv4 아닙니다. v3. 프로덕션에서 v4 쓰면 후회합니다.\n\n---\n\n⑥ 결제 + 세금 처리 한방에?\nhttp://Polar.sh\n\n국내+해외 결제 시스템 구축하고\n세금까지 알아서 처리해줍니다.\n\n코드 6줄이면 끝.\n\n---\n\n보너스. 별거 아닌데 삽질 줄여주는 3가지.\n\n⑦ npm 쓰지 마세요. pnpm 쓰세요.\n속도, 디스크 용량, 모노레포 전부 pnpm이 압도적입니다.\n바꾸는 데 5분이면 됩니다.\n\n⑧ 이메일 보내야 하면 무조건 Resend.\n세팅 10분. React로 이메일 템플릿 만들 수 있습니다.\n다른 거 쓸 이유가 없습니다.\n\n⑨ AI가 \"이건 직접 하셔야 합니다\" 하면?\n진짜 직접 해야 하는 건 10%도 안 됩니다.\nCLI, MCP로 가능한지 꼭 확인하세요.\n\n대부분 CLI 명령어 하나면 끝납니다.\nAI가 못 한다는 게 아니라\n\"브라우저에서 클릭해야 한다\"고 착각하는 겁니다.",
+      "media": [],
+      "crawled_at": "2026-03-18T17:49:04.998",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVOiIv4k8fv",
+      "user": "ddg.kang",
+      "timestamp": "2026-02-27 01:01:38",
+      "original_item_count": 7,
+      "platform_sequence_id": 415
+    },
+    {
+      "sequence_id": 530,
+      "sns_platform": "threads",
+      "code": "DVTDpJME8-Y",
+      "full_text": "너무 쓰레드에 헛소리가 나돌아서 다시 써드림\n\n🤖 Claude — ♥️ but 200달러 짜리 써야함.\n🗄️ Supabase — 나중에 개비싸짐. Neon DB로 시작 ㄱㄱ\n🚀 Vercel — 나중에 개비싸짐. but 팩트는 대부분 고객 모으기 전에 망함. 처음애 개발 편의성이 압도적이므로 그냥 처음엔 쓰고 나중에 갈아타기.\n🌐 Namecheap — 굳이? 그냥 클라우드플레어 ㄱㄱ 가격 같고 훨씬 편함.\n📁 GitHub — ♥️\n📧 Resend — ♥️\n🔐 Clerk — 편하긴한데 나중에 MAU 많아지면 개비쌈. BetterAuth ㄱㄱ\n🛡️ Cloudflare — ♥️\n📊 PostHog — 처음에 이거 세팅하느라 고생하지 말고 Clarity, GA4로 시작\n🚨 Sentry — ♥️\n⚡ Upstash — ♥️ but 이거 잘못하면 요금폭탄 나옴 (pay-as-you-go 쓰다가 나중에 구독제로 가는거 추천)\n🧠 Pinecone — Qdrant가 훨 낫고 훨 쌈...",
+      "media": [],
+      "crawled_at": "2026-03-18T17:49:04.998",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVTDpJME8-Y",
+      "user": "ddg.kang",
+      "timestamp": "2026-02-28 19:11:22",
+      "original_item_count": 1,
+      "platform_sequence_id": 416
+    },
+    {
+      "sequence_id": 531,
+      "sns_platform": "threads",
+      "code": "DVU0tMvEb3V",
+      "full_text": "옵시디언을 꽤 써봤다.\n\nMD로 지식 쌓고,\n링크 연결하고,\n그래프뷰도 돌려봤다.\n\n근데 문득 이런 생각이 든다.\n\n이걸 “어떻게 쓰라는 거지?”\n\n이미 아는 지식을 또 적는 게 의미 있나?\n그래프는 예쁜데 실무 인사이트는 애매하고.\n\n결국 사람 보기 좋은 구조 아닌가?\nAI가 읽기 좋은 구조는 또 다른 문제 아닌가?\n\n옵시디언,\nSecond Brain이 맞는 걸까.\n\n아니면 그냥\n잘 정리된 텍스트 폴더일 뿐일까?\n\n여러분은\n옵시디언을 실제로 어디에 쓰고 있나요?\n\n---\n\n물론 MD가 AI가 꺼내보기 용이한건 맞지만\n그런 용도라면 벡터DB가 더 낫지 않나\n생각이 들어서 여쭤봤습니다!\n\n좋은 의견들과 책 추천 감사합니다!",
+      "media": [],
+      "crawled_at": "2026-03-18T17:49:04.998",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVU0tMvEb3V",
+      "user": "teabag_kor",
+      "timestamp": "2026-03-01 11:39:20",
+      "original_item_count": 2,
+      "platform_sequence_id": 417
+    },
+    {
+      "sequence_id": 532,
+      "sns_platform": "threads",
+      "code": "DVVGbc1kUFj",
+      "full_text": "출판 자동화 파이프라인\n원고 접수부터 유통 플랫폼 업로드까지 — Python 단독 자동화\n\nhttps://claude.ai/public/artifacts/d5c5e9f7-8116-45ac-b138-151c99e11645",
+      "media": [],
+      "crawled_at": "2026-03-18T17:49:04.998",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVVGbc1kUFj",
+      "user": "ejang",
+      "timestamp": "2026-03-01 14:14:12",
+      "original_item_count": 1,
+      "platform_sequence_id": 418
+    },
+    {
+      "sequence_id": 533,
+      "sns_platform": "threads",
+      "code": "DVOBLbYEjD4",
+      "full_text": "<심층 리서치(Deep Research)를 잘 뽑아내는 10가지 팁>\n\n친한 친구가 요즘 AI답변이 별로라고 해서 몇 가지 방법 나눴어요. 때론 도구의 탓이 아닌 주문의 이슈죠. LLM이 똑똑해 졌다고, 내 의중까지 100% 파악하는건 아니잖아요. 아무리 흑백요리사 우승 셰프라도 고객이 \"맛있는 거 해주세요\" 하면 요리 방향을 쉽게 종잡을 수 없는 것처럼요.\n\n실전에서 바로 쓸 수 있게 10가지 정리해보았어요. (프롬프트는 여전히 중요합니다)\n\n:\n\n---\n\n1. 역할과 전문성 수준 먼저 정하기 - \"누구의 눈으로 볼 것인가\"\n\n원리: OpenAI와 Anthropic 모두 \"시스템 프롬프트에서 페르소나를 설정하면 응답 품질이 극적으로 달라진다\"고 공식 가이드에 명시. LLM은 역할이 주어지면 해당 분야의 어휘, 분석 프레임, 깊이를 자동으로 조절.\n\n비유: 같은 건물을 봐도 건축가는 구조를, 인테리어 디자이너는 동선을, 소방관은 피난경로를 봅니다. AI에게 \"누구의 눈\"으로 볼지 알려주지 않으면, 관광객 수준의 피상적 관찰만 돌아옵니다.\n\n실전 예시:\n\n❌ \"코워킹 스페이스 시장 분석해줘\"\n✅ \"너는 상업용 부동산 투자 분석을 15년간 해온 시니어 컨설턴트야. 2024-2025년 한국 코워킹 스페이스 시장을 투자 의사결정 관점에서 분석해줘. 특히 수익성 지표(NOI, Cap Rate)와 공실률 추이에 집중해줘.\"\n\n---\n\n2. 목적과 용도를 구체적으로 명시하기 — \"왜 이걸 알아야 하는가\"\n\n원리: Anthropic의 프롬프트 엔지니어링 가이드에서 가장 강조하는 것 중 하나가 \"task context\". AI가 결과물의 최종 소비자와 사용 맥락을 알면, 정보의 선별과 구조화 방식이 완전히 달라짐.\n\n비유: 의사에게 \"배가 아파요\"만 말하는 것과, \"어제 회식에서 매운 것을 많이 먹었고, 오늘 아침부터 왼쪽 아래배가 콕콕 쑤시며, 열은 없습니다\"라고 말하는 것의 차이입니다.\n\n실전 예시:\n\n❌ \"AI 교육 시장 트렌드 알려줘\"\n✅ \"다음 주에 금융권 C-Level 임원 20명 대상으로 'AI 도입 전략' 세미나를 합니다. 이 분들이 의사결정에 바로 활용할 수 있도록, 금융업 특화 AI 교육 시장의 규모·성장률·주요 플레이어·도입 사례를 투자보고서 형식으로 정리해줘.\"\n\n---\n\n3. 출력 형식을 설계도처럼 — \"어떤 모양으로 받을 것인가\"\n\n원리: OpenAI의 Best Practices에서는 \"desired output format을 명시하면 hallucination이 줄고 구조화된 결과를 얻는다\"고 강조. 형식을 지정하는 것은 AI에게 건축 도면을 주는 것.\n\n비유: 건설 현장에서 \"건물 지어주세요\"와 \"3층 상가건물, 1층 주차장, 2-3층 사무실, 철근콘크리트 구조, 연면적 200평\"이라고 하는 것의 차이입니다. Chance님이 9년간 건설 PM 하시면서 뼈저리게 느끼신 부분이실 겁니다.\n\n실전 예시:\n\n다음 구조로 작성해줘.\n1) Executive Summary (300자 이내)\n2) 시장 규모 및 성장 전망 (정량 데이터 중심)\n3) 주요 경쟁사 비교표 (표 형식)\n4) 기회 요인 3가지 / 위협 요인 3가지\n5) 실행 권고안 (우선순위 포함)\n각 섹션은 근거와 출처를 함께 명시해줘.\n\n---\n\n4. 배경 지식과 참고자료를 직접 먹이기 — \"재료를 가져다 줘라\"\n\n원리: Anthropic은 \"Claude의 성능은 context window에 제공되는 정보의 질에 비례한다\"고 명시. 심층 리서치의 품질을 가르는 가장 결정적 변수.\n\n비유: 요리사에게 \"스테이크 해주세요\"만 하면 냉장고에 있는 것으로 대충 합니다. 그런데 \"여기 한우 채끝 1등급이 있고, 트러플 오일도 있으니 이걸로 해주세요\"라고 재료를 건네면 결과가 완전히 달라지죠.\n\n실전 방법:\n\n관련 보고서 PDF, 기사 링크, 내부 데이터를 직접 업로드\n\"아래 자료를 바탕으로 분석해줘\"라고 명시\n자신이 이미 아는 팩트를 먼저 적어주면 AI가 그 수준 위에서 시작\n\n---\n\n5. 단계적으로 사고하기 (Chain of Thought) — \"생각의 과정을 보여달라\"\n\n원리: OpenAI와 Anthropic 모두 \"step-by-step reasoning을 요청하면 복잡한 분석의 정확도가 현저히 높아진다\"고 확인함. 이것이 바로 \"Chain of Thought\" 프롬프팅.\n\n비유: 수학 시험에서 \"답만 쓰시오\"보다 \"풀이 과정을 쓰시오\"라고 하면 실수가 줄어드는 것과 같습니다. AI도 중간 과정을 밟게 하면 논리적 비약이나 허위 정보 생성이 크게 줄어듭니다.\n\n실전 예시:\n\n✅ \"먼저 한국 코워킹 시장의 현재 상황을 정리하고, 그다음 변화 동인을 분석하고, 이를 바탕으로 향후 3년 전망을 도출해줘. 각 단계에서 근거를 명시해.\"\n\n---\n\n6. 구체적 제약 조건과 범위를 설정 — \"울타리를 쳐줘라\"\n\n원리: 범위가 넓을수록 결과는 얕아짐. Anthropic의 가이드에서는 \"specificity는 quality와 직결된다\"고 강조.\n\n비유: \"서울에서 맛집 추천해줘\"와 \"전주 KTX역 반경 1km 이내, 평일 점심 1인 1.5만원 이하, 현지인이 자주 가는 한식당\"의 차이입니다.\n\n설정할 제약 조건들:\n\n시간 범위: \"2023~2025년 데이터만\"\n지역 범위: \"한국 시장, 특히 수도권과 지방 광역시 비교\"\n깊이: \"초보자가 아닌 업계 실무자가 읽을 수준으로\"\n분량: \"A4 5페이지 분량으로\"\n제외 사항: \"위워크의 파산 사례는 이미 알고 있으니 제외\"\n\n---\n\n7. 반복 대화로 깊이를 더하기 (Iterative Refinement) — \"한 번에 끝내려 하지 마라\"\n\n원리: OpenAI의 Deep Research 가이드에서도 \"follow-up questions을 통해 결과를 정제하라\"고 권장. 심층 리서치는 원래 한 번에 완성되는게 아님.\n\n비유: 조각가가 대리석을 한 번에 완성하지 않듯, 리서치도 거친 윤곽 → 세부 조각 → 마감 연마의 단계를 거쳐야 합니다.\n\n실전 워크플로우:\n1차: \"한국 AI 교육 시장 전체 그림을 개괄적으로 그려줘\"\n2차: \"여기서 B2B 기업교육 세그먼트만 더 깊이 파줘\"\n3차: \"금융권 특화 AI 교육에서 우리가 차별화할 수 있는 포인트는?\"\n4차: \"이걸 바탕으로 신영증권 같은 곳에 제안할 수 있는 3가지 프로그램을 구체화해줘\"\n\n---\n\n8. 긍정 예시와 부정 예시를 함께 — \"이런 건 좋고, 이런 건 싫다\"\n\n원리: Anthropic 공식 문서에서 \"positive and negative examples를 제공하면 Claude가 의도를 훨씬 정확히 파악한다\"고 명시.\n\n비유: 인테리어 시공할 때 \"이런 느낌으로 해주세요\" 하면서 레퍼런스 사진을 보여주고, \"이런 스타일은 절대 안 됩니다\" 하면 시공 품질이 올라가는 것과 같습니다.\n\n실전 예시:\n\n❌\n\"위 분석에서 '글로벌 AI 교육 시장은 2028년까지 CAGR 32%로 성장 예상(출처: Markets and Markets)'처럼 \n구체적 수치와 출처가 포함된 서술이 좋았어.\"\n\n✅\n\"'AI 교육 시장은 빠르게 성장하고 있습니다'처럼 수치 없이 \n막연한 서술은 하지 마.\"\n\n---\n\n9. 비판적 검증을 명시적으로 요청 — \"악마의 변호인을 세워라\"\n\n원리: LLM은 기본적으로 사용자에게 동조하는 경향(sycophancy). Anthropic은 이를 인지하고 있으며, \"비판적 분석을 명시적으로 요청하면 균형 잡힌 결과를 얻는다\"고 안내.\n\n비유: 투자 심사에서 낙관론만 듣고 투자하면 망합니다. \"이 사업이 망할 수 있는 이유 3가지\"를 반드시 검토하는 것처럼, AI에게도 반론을 요청해야 합니다.\n\n실전 예시:\n\n✅ \"위 분석에서 내가 놓치고 있는 리스크는 뭐야?\"\n✅ \"이 결론에 반대하는 전문가가 있다면 어떤 논거를 쓸까?\"\n✅ \"이 데이터의 한계점과 신뢰도를 평가해줘\"\n✅ \"가장 낙관적 시나리오와 가장 비관적 시나리오를 모두 그려줘\"\n\n---\n\n10. 멀티 소스 교차 검증 전략을 쓰기 — \"하나만 믿지 마라\"\n\n원리: 어떤 단일 AI 모델도 100% 정확하지 않음. 전문 리서처들은 항상 삼각 검증(Triangulation)을 함.\n\n비유: 부동산 매물을 볼 때 중개사 한 명 말만 듣고 계약하지 않듯, 리서치도 여러 소스를 교차해야 합니다.\n\n실전 워크플로우:\nStep 1: Claude Deep Research로 초안 작성\nStep 2: ChatGPT Deep Research로 같은 주제 리서치 → 차이점 비교\nStep 3: Perplexity로 최신 데이터·출처 검증\nStep 4: 차이나는 부분을 Claude에게 다시 물어서 정제\nStep 5: 최종적으로 공신력 있는 1차 출처(통계청, 업계보고서)로 팩트체크\n\n요즘 퍼플렉시티나 젠스파크의 고급버전들은 모델 답변들 비교분석해줌.\n\n결국, 질문의 질이 답변의 품질을 정한다는 것은 오래 유지 될 듯.",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/641240621_17949518202101213_2075360875608070950_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTAyNHg1NTkuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QHoVcGipjVVq3nL-V_WMm2NLemUdC-W0YjCa7x7fbpptWKrCsNujnWe0gbrfnFQ44Q&_nc_ohc=2Hnpdk6ZYYQQ7kNvwG0SKtz&_nc_gid=DKwdmgc9NvrppyMopqbE1A&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0MTAxMjcxNTU0OTI0MTU5Mg%3D%3D.3-ccb7-5&oh=00_AfxJKLeaNs6TrBXeQiP1Y_rlZ6WkAbZbMzczp5-DNfHRMA&oe=69C03C35&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:49:08.026",
+      "local_images": [
+        "web_viewer/images/e10b2cd5218427d18a6f5bca5f25c2c5.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVOBLbYEjD4",
+      "user": "chancenote",
+      "timestamp": "2026-02-26 20:13:38",
+      "original_item_count": 11,
+      "platform_sequence_id": 411
+    },
+    {
+      "sequence_id": 534,
+      "sns_platform": "threads",
+      "code": "DVNLTj6ktJb",
+      "full_text": "1인개발 앱 기획 단계에서 Gemini, GPT, Claude 다 써봤는데, 결국 Claude를 가장 많이 쓰게 됐다. 이유는 하나, 와이어프레임.\n\n---\n\n기능 정의할 때 텍스트로만 정리하면 머릿속에서 완성된 것 같아도 실제로 빠진 부분이 꽤 많다. 화면 흐름, 버튼 위치, 상태 변화 같은 건 글로는 한계가 있다.\n\n---\n\nClaude는 기획 내용을 주면 JSX로 실제 와이어프레임을 바로 만들어준다. GPT나 Gemini도 코드는 뱉어주지만, Claude Artifacts에서 바로 렌더링해서 확인할 수 있다는 게 기획 단계에선 압도적으로 편하다.\n\n---\n\nAI가 코드를 대신 짜주는 시대지만, 결국 “사용자가 이걸 어떻게 쓸 것인가”는 사람이 판단해야 한다. 오히려 구현 비용이 줄어든 만큼, UX 설계에 더 시간을 쓸 수 있게 된 게 1인개발자에겐 기회라고 생각한다.\n\n---\n\n그렇다고 기획 전 과정을 Claude만으로 하진 않는다. 솔직히 단계별로 더 나은 도구가 있다.\n\n기획 초기, “이 시장에 비슷한 앱 뭐가 있지?” 같은 경쟁 조사는 GPT나 Gemini가 낫다. 검색 연동이 강해서 실시간 정보를 바로 긁어와 준다. Claude한테 이걸 시키면 체감상 느리다.\n\n아이디어를 넓게 펼치는 브레인스토밍도 GPT가 빠르다. 양을 많이 쏟아내는 데 강하다. 경쟁앱 스크린샷 던지고 “이 구조 분석해줘” 할 때는 Gemini가 반응이 좋다.\n\n---\n\n정리하면 \n- 아이디어 발산 → GPT\n- 시장 조사·이미지 분석 → Gemini\n- 구조화·와이어프레임·의사결정 → Claude\n\n기획은 “넓히는 단계”와 “좁히는 단계”가 있는데, 좁히는 단계에서 Claude가 압도적이라 결국 가장 오래 붙잡고 있게 된다.",
+      "media": [],
+      "crawled_at": "2026-03-18T17:49:08.026",
+      "is_merged_thread": true,
+      "root_code": "DVNPQnWEgLM",
+      "user": "outminju",
+      "timestamp": "2026-02-26 12:22:53",
+      "original_item_count": 6,
+      "platform_sequence_id": 412
+    },
+    {
+      "sequence_id": 535,
+      "sns_platform": "threads",
+      "code": "DVMpDilk75T",
+      "full_text": "Claude Code 한 달 쓴 개발자가 깨달은 게 있대요.\n\n\"코드 생성이 아니라 컨텍스트 오케스트레이션이 진짜 가치\"라는 거거든요.\n\n한번은 코드 한 줄도 안 쓰고 세션을 끝냈대요. 글 하나를 Qiita에 올리고, 영어로 번역해서 Dev.to랑 Hashnode에 교차 게시하고, 스케줄 파일 업데이트까지. 전부 기존 도구 호출만으로요.\n\n비결은 컨텍스트를 5단계로 쌓는 거래요. 글로벌 규칙, 스킬, 에이전트, 프로젝트 설정, 자동 메모리. 이 레이어가 두꺼워질수록 세션당 설명은 줄고, 작업 속도는 빨라지고, 품질 일관성도 올라간대요.\n\n처음엔 크로스포스팅에 30분 걸렸는데, 컨텍스트 쌓이니까 \"y\" 한 글자로 2분 만에 끝난다고요.\n\n---\n\n프롬프트 엔지니어링이랑 뭐가 다르냐고요? 프롬프트는 한 번의 입출력을 최적화하는 거고, 컨텍스트 엔지니어링은 모든 세션에 걸친 지식 기반을 쌓는 거래요. 세션 끝나도 안 사라지고 프로젝트도 넘나든다는 게 핵심이에요.\n\n---\n\n시작하는 법도 간단해요. 1) CLAUDE.md에 기술 스택이랑 규칙 적기 (5분), 2) 반복하는 절차를 스킬로 만들기 (15분), 3) 자동 메모리는 프로젝트 폴더에서 실행만 하면 끝. 이거부터 해보세요.\n\n---\n\n기사 : https://dev.to/shimo4228/the-real-power-of-claude-code-isnt-code-generation-its-autonomous-context-orchestration-3djk",
+      "media": [],
+      "crawled_at": "2026-03-18T17:49:08.026",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVMpDilk75T",
+      "user": "ai_jobdori",
+      "timestamp": "2026-02-26 07:23:41",
+      "original_item_count": 4,
+      "platform_sequence_id": 413
+    },
+    {
+      "sequence_id": 536,
+      "sns_platform": "threads",
+      "code": "DVSjHH7mCDz",
+      "full_text": "와!! 이거 나만 몰랐냐??\n\n노트북 lm 쓸때마다 아주 그냥, \n폴더 지저분해 죽겠었는데? \n\n한방에 폴더 보기 좋게, \n정리 하는게 있었네!~ \n\n에이씨~!!",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/639840744_17944407585114844_8313145232918915653_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTc1NHgxMDI2LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QE7kcvmc1PFUa5O6OnTy0n8LYtTFkDwvQpKNlX3DG0TDpOB86IO2qUWvhkIHGr6L7c&_nc_ohc=Xdn8F-rSwU0Q7kNvwH8yPdy&_nc_gid=JUTagstDSxfuTYnjiCwF1g&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0MjI4Nzg0NDk5Mjc1ODc5OA%3D%3D.3-ccb7-5&oh=00_AfzSwvvnlmRsXpF4s5Sxx5tQrfjLdgpkhM4-or0YaYHTIw&oe=69C03D33&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:49:08.026",
+      "local_images": [
+        "web_viewer/images/21fe7131edea3df65ff6610c30262f60.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVSjHH7mCDz",
+      "user": "money_raham",
+      "timestamp": "2026-02-28 14:27:06",
+      "original_item_count": 1,
+      "platform_sequence_id": 414
+    },
+    {
+      "sequence_id": 537,
+      "platform_id": "DVOI916E_Yh",
+      "sns_platform": "threads",
+      "code": "DVOI916E_Yh",
+      "username": "geumverse_ai",
+      "display_name": "Geum Verse",
+      "full_text": "Claude Cowork 데스크톱 자동화 에이전트로, 올바른 지침만 제공하면 3시간 동안 반복적인 파일 및 작업 작업을 90초 만에 완료할 수 있습니다.",
+      "media": [],
+      "url": "https://www.threads.net/@geumverse_ai/post/DVOI916E_Yh",
+      "created_at": "2026-02-26 21:21:41",
+      "date": "2026-02-26",
+      "crawled_at": "2026-03-18T17:49:11.104",
+      "source": "network",
+      "is_merged_thread": false,
+      "root_code": "DVOI916E_Yh",
+      "like_count": 25,
+      "reply_count": 10,
+      "repost_count": 6,
+      "quote_count": 0,
+      "pk": "3841046966336484897",
+      "media_type": 19,
+      "content_type": "image",
+      "platform_sequence_id": 407
+    },
+    {
+      "sequence_id": 538,
+      "sns_platform": "threads",
+      "code": "DVNsMBMkwPG",
+      "full_text": "지난 1월 31일에 당근해 온 중고 맥미니에 OpenClaw를 설치한 과정을 정리해서 배포한 것이 첫 포스트였다. 이후 내가 나중에 까먹으면 보려고 일지(보다는 일기..) 형식으로 하나 둘 포스트를 쓰고 배포하다 보니 어느새 10개를 채웠다. 잘 정리해 놓으면 누군가에겐 도움이 될 수도 있을 것 같아 글의 성격에 따라 구분해 봤다.\n\n---\n\n< OpenClaw 설치 및 설정 >\n\n* OpenClaw 설치 가이드 - 초기 상태 맥미니에 OpenClaw 설치부터 구동까지 한방에 끝내기 (https://bongman.tistory.com/1249)\n* OpenClaw 설정 가이드 - 에이전트의 페르소나(세계관)를 설정하고 간단한 대화 나누기 (https://bongman.tistory.com/1251)\n\n---\n\n< OpenClaw 활용(기초) >\n\n* OpenClaw 활용 가이드 - 이메일 계정을 연동하고 특정 메일만 필터링해서 알림 받기 (https://bongman.tistory.com/1253)\n* OpenClaw 활용 가이드 - KOBIS(영진위) API를 연동해서 새 영화가 개봉할 때마다 알림 받기 (https://bongman.tistory.com/1256)\n* OpenClaw 활용 가이드 - Brave Search API를 연동해서 에이전트에 웹 검색 기능 추가하기 (https://bongman.tistory.com/1257)\n\n---\n\n< OpenClaw 활용(심화) >\n\n* OpenClaw 활용 가이드 - 한 지붕 두 에이전트, 서브 에이전트 생성부터 디스코드 채널 입장까지 (https://bongman.tistory.com/1258)\n* OpenClaw 활용 가이드 - Tailscale을 이용해서 맥미니(OpenClaw 설치 기기)에 원격 접속하기 (https://bongman.tistory.com/1254)\n\n---\n\n< OpenClaw 운영 >\n\n* OpenClaw 운영 가이드 - OpenClaw 버전 업데이트 중 오류 발생 시 복구(rollback) 방법 정리 (https://bongman.tistory.com/1272)\n* OpenClaw 운영 가이드 - 멀티봇 환경에서 에이전트별 모델 fallback 설정으로 Rate Limit 방지하기 (https://bongman.tistory.com/1289)\n\n---\n\n< OpenClaw 심층 분석 >\n\n* OpenClaw 심층 분석 - OpenClaw의 핵심 Gateway와 Node, 그리고 macOS 앱 개념 정리 (https://bongman.tistory.com/1252)\n\n---\n\n이것으로 끝이 아니고 임시 저장 중인 초안이 꽤 많이 쌓여 있다. 잘 다듬어서 꾸준히 하나하나 내보낼 예정이다.",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/640412991_17947895373110495_3368518861947611292_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTI4MHg3MTQuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2QFkzhnkOaW87XZCQAnrqQOTQtoHPP4_DfxOk6NH7aFLh3gTZipkkDqQX_fX2jJEMzc&_nc_ohc=lyhbWI0JGBcQ7kNvwFg82Sz&_nc_gid=jqPBEy-CXRQbWCxrqLP4Cw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0MDkyMDM5NzE4MTgxMzcwMg%3D%3D.3-ccb7-5&oh=00_AfxHZ1PdLnbZlurda4RL9DdWvIifBCsYO6LGY-q4Pw_m7A&oe=69C042ED&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:49:11.104",
+      "local_images": [
+        "web_viewer/images/583110157128c00cedef3952efbd0b60.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVNsMBMkwPG",
+      "user": "garibong.labs",
+      "timestamp": "2026-02-26 17:10:13",
+      "original_item_count": 7,
+      "platform_sequence_id": 408
+    },
+    {
+      "sequence_id": 539,
+      "sns_platform": "threads",
+      "code": "DVL7QkEgaZw",
+      "full_text": "Claude Code 9개월 쓴 개발자가 정착한 워크플로우가 인상적이에요.\n\n핵심 원칙은 딱 하나래요: \"계획을 검토하고 승인하기 전까지 절대 코드를 쓰게 하지 마라.\"\n\n이 사람 작업 순서가 이래요:\n1. 리서치 — 코드베이스 깊이 읽히고 research.md로 정리\n2. 계획 — plan.md에 구현 방법 작성\n3. 주석 달기 — 내가 직접 plan.md에 메모 추가 (1~6회 반복)\n4. 구현 — \"implement it all\" 한마디로 실행\n\nplan.md에 \"여기 PATCH여야 해, PUT 아니야\" 같은 메모를 직접 적어 넣는대요. 이걸 1~6번 반복하면 AI가 내 프로젝트에 딱 맞는 코드를 쓰게 된다고요.\n\n\"구현은 지루해야 한다\"는 말이 핵심이에요. 창의적인 일은 계획 단계에서 끝내고, 실행은 기계적으로.\n\n---\n\n인상적인 부분은 \"주석 달기 사이클\"이에요. Claude가 계획서를 쓰면, 내가 직접 문서 안에 수정 메모를 적어 넣고, 다시 Claude한테 반영시키는 걸 반복하는 거예요. \"아직 구현하지 마\" 가드를 꼭 넣어야 한대요. 안 그러면 바로 코드 쓰기 시작한다고요.\n\n---\n\n컨텍스트 윈도우 50% 넘으면 성능 떨어진다는 얘기도 있잖아요. 이 분은 오히려 긴 세션을 선호한대요. 리서치부터 구현까지 한 세션에서 하면, AI가 쌓아온 이해가 그대로 유지돼서 더 좋다고요.\n\n---\n\n기사 : https://boristane.com/blog/how-i-use-claude-code/",
+      "media": [],
+      "crawled_at": "2026-03-18T17:49:11.104",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVL7QkEgaZw",
+      "user": "ai_jobdori",
+      "timestamp": "2026-02-26 00:43:31",
+      "original_item_count": 4,
+      "platform_sequence_id": 409
+    },
+    {
+      "sequence_id": 540,
+      "sns_platform": "threads",
+      "code": "DVOKR5ikceq",
+      "full_text": "바이브코딩에서\n가장 중요한 스킬이 뭔지 아는가.\n\n코딩이 아니다.\nAI한테 일을 잘 시키는 법이다.\n\n팁 3가지를 정리해봤다.\n\n---\n\n1. 구체적으로 시킬 것.\n\n❌ \"앱 만들어줘\"\n✅ \"로그인 화면 만들어줘. 이메일 입력칸, 비밀번호 입력칸, 로그인 버튼 넣어줘.\"\n\nAI는 읽기 잘하지\n눈치는 없다.\n상세하게 설명할수록 결과가 좋다.\n\n---\n\n2. 한 번에 하나만 시킬 것.\n\n❌ \"로그인이랑 회원가입이랑 마이페이지 만들어줘\"\n✅ \"로그인 화면부터 만들어줘\"\n\n한꺼번에 시키면\n전부 어설프게 나온다.\n\n하나 끝내고 확인하고\n다음 걸 시키는 게 맞다.\n\n---\n\n3. 결과를 보고 다시 시킬 것.\n\nAI가 처음부터 완벽하게 만드는 경우는 드물다.\n\n\"여기 버튼 위치 바꿔줘\"\n\"이 색깔 너무 진해. 연하게 해줘\"\n\n이런 식으로 대화하듯이\n수정을 반복하는 거다.\n\n3~5번 왕복하면\n꽤 쓸 만한 결과가 나온다.\n\n---\n\n정리하면\n\n구체적으로.\n하나씩.\n반복해서.\n\n이 세 가지만 지켜도\nAI가 훨씬 잘 일한다.",
+      "media": [],
+      "crawled_at": "2026-03-18T17:49:11.104",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVOKR5ikceq",
+      "user": "dev__papa__v",
+      "timestamp": "2026-02-26 21:33:16",
+      "original_item_count": 5,
+      "platform_sequence_id": 410
+    },
+    {
+      "sequence_id": 541,
+      "sns_platform": "threads",
+      "code": "DVOGtKKCavr",
+      "full_text": "바이브 코딩 강의를 하면서 느끼는 현실. 처음에는 나도 가르쳐주는 재미로 시작했는데, 곧 접어야 하지 싶다.\n\n1. 약팔이가 너무 많다. \n\n2. 약팔이에 홀려서, 컴퓨터도 제대로 못 다루는 사람이 대규모 앱 서비스를 만든다고 덤빈다.\n\n3. 에이전트한테 제대로 작업을 시켜본적도 없으면서, 100명의 서브에이전트 개발 군단을 생각하는 사람들이 있다.\n\n4. 커밋 하나 안해봤으면서 외주 팀 운영 시 브랜치 운용 전략을 물어본다.\n\n5. 검수기준에도 못미치는 쓰레기 앱이 양산된다. 약팔이들이 \"앱\"을 하라고 하는 이유는 검수 통과가 안되는걸 강의 구매자 탓을 하기 좋은 구조이기 때문\n\n6. 앱스토어, 플레이스토어. 다음 먹거리는 앱인토스임. 거의 영업 방해 수준일거라 예상한다.\n\n난 기획자이자 얼치기 개발자로써, 바이브 코딩이 뜨면서 아이디어를 빠르게 검증하고 엔지니어가 이어받아 시장 규모가 커지는 미래를 생각했는데\n\n현타가 조금 쎄게 온다.",
+      "media": [],
+      "crawled_at": "2026-03-18T17:49:14.113",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVOGtKKCavr",
+      "user": "monca.dev",
+      "timestamp": "2026-02-26 21:01:56",
+      "original_item_count": 1,
+      "platform_sequence_id": 403
+    },
+    {
+      "sequence_id": 542,
+      "sns_platform": "threads",
+      "code": "DVMNxAbEmsF",
+      "full_text": "간만에 이런 걸 만들어봤습니다. 이제 macOS 에서 카톡을 CLI 로 제어할 수 있습니다. claude-code/codex/opencode/gemini-cli 와 같은 coding agent 작업이 끝나고 hook 으로 카톡 메시지를 보낼 수 있습니다. 채팅방의 메시지를 json 으로 읽어올 수도 있습니다.\n\nhttps://github.com/channprj/kmsg\n\n---\n\n데모 영상입니다.",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/641278355_2139292823549061_5166490737269086311_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDYyOC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QEmpU6Qs0BoZTXiODHpWyGHk9FwRL6RPv24kS-YtZITEnHM-NLb4FpdFR8KsO-xDXY&_nc_ohc=CEJerOTscIIQ7kNvwEyBDv9&_nc_gid=YGDfmknxHKPwadBPjlCDLA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0MDYyOTk3NjgxMTYwNjgwMA%3D%3D.3-ccb7-5&oh=00_Afx-fW1iBK_ukKAbHLsuH9LDCKgLUVNZ87AoSlPk_fQPOQ&oe=69C02FA3&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:49:14.113",
+      "local_images": [
+        "web_viewer/images/f80e40bc19eeefc8500d7149e52b3921.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVMNxAbEmsF",
+      "user": "channprj",
+      "timestamp": "2026-02-26 03:25:09",
+      "original_item_count": 2,
+      "platform_sequence_id": 404
+    },
+    {
+      "sequence_id": 543,
+      "sns_platform": "threads",
+      "code": "DVNZSmQEmri",
+      "full_text": "요즘 제일 핫한 깃허브 레포들을 까보면 어김없이 1000줄이 넘어가는 괴물 같은 AGENTS.md 파일이 있습니다.\n\n여기에 AI 성격, 코딩 컨벤션, 보안 룰까지 다 때려넣고 팀원들에게 \"Cursor 켤 때마다 이거 복사해서 쓰세요\"라고 하죠.\n\n솔직히 말해서, 2010년대에 jQuery.js 파일 다운받아서 폴더에 매번 복붙해 쓰던 미개한 짓을 2026년에 똑같이 하고 있는 겁니다.\n\n---\n\nAI 프롬프트에도 드디어 의존성 주입(DI)과 패키지 매니저가 생겼습니다.\nThe npm for Vibe Coding, 바로 'Dance of Tal(DOT)'입니다.\n\nDOT은 이 거대한 프롬프트를 쪼갭니다.\nAI의 두뇌(Tal)와 출력 규칙(Dance)을 각각 NPM 모듈처럼 레지스트리에 배포합니다.\n\nnpx dot install tal/@author/backend-architect\n명령어 한 줄이면 글로벌에서 가장 잘 튜닝된 시니어의 뇌 구조가 내 프로젝트에 꽂힙니다.\n\n---\n\n가장 강력한 건 여러 규칙을 CSS 클래스처럼 겹쳐버리는(Layering) 기능입니다.\n\n팀의 기본 코딩 컨벤션(dance/@acme/kotlin-style) 위에,\n개인정보 보호 규칙(dance/@acme/gdpr-security)을 얹고,\nPR 리뷰 포맷(dance/@acme/pr-format)을 블록처럼 조립해서 락(Lock)을 겁니다.\n\n비즈니스 로직 바뀌었다고 1000줄짜리 텍스트 수정하다가, AI가 갑자기 테스트 코드를 안 짜주는 참사는 더 이상 없습니다.\n\n---\n\n지금 한 팀에서 10명이 Windsurf로 코딩하면, 10명의 프롬프트 타이핑 실력에 따라 코드 스타일이 10갈래로 찢어집니다.\n\n하지만 DOT은 팀장이 dot lock으로 버전을 잠가버리면, 모든 팀원과 CI 파이프라인이 강제로 완벽히 동일한 AI 표준 컨텍스트를 쓰게 됩니다.\n\nAI 코딩 생태계에 드디어 package-lock.json이 등장한 겁니다.\n(심지어 이걸 한국 개발자가 설계했네요.)\n\n바이브 코딩의 넥스트 스텝이 궁금하시다면 무조건 확인해 보세요.\ngithub.com/dance-of-tal/dance-of-tal",
+      "media": [],
+      "crawled_at": "2026-03-18T17:49:14.113",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVNZSmQEmri",
+      "user": "vibe_ai_cat",
+      "timestamp": "2026-02-26 14:25:10",
+      "original_item_count": 4,
+      "platform_sequence_id": 405
+    },
+    {
+      "sequence_id": 544,
+      "sns_platform": "threads",
+      "code": "DVJYt5KkWbV",
+      "full_text": "무료 자료 공유 리스트\n\n1. 비개발자를 위한 Claude Code 사용법 A to Z\nhttps://bevel-boron-05c.notion.site/Claude-Code-A-to-Z-30844a48e2b180f4b178d852db998a80?source=copy_link\n\n2. OpenClaw 가이드북\nhttps://bevel-boron-05c.notion.site/OpenClaw-30944a48e2b180e28faef8c3ab4e0134?source=copy_link\n\n3. Claude in PowerPoint 완벽 가이드\nhttps://bevel-boron-05c.notion.site/Claude-in-PowerPoint-31144a48e2b18096ade6eafde543c5bc?source=copy_link\n\n---\n\n번외편\n\n4. AI 시대의 저작권 — 2026 가이드북\nhttps://bevel-boron-05c.notion.site/AI-2026-30b44a48e2b18097be1dd553c9a9f710?source=copy_link\n\n---\n\n저 스스로 강의 업데이트를 위해 계속 공부하기 위해 만든 자료예요. 다른 추가 자료들도 또 올려드릴게요! 팔로우만 해두세용! 오늘도 행복한 하루 되세용^^",
+      "media": [],
+      "crawled_at": "2026-03-18T17:49:17.145",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVJYt5KkWbV",
+      "user": "gpt_minje",
+      "timestamp": "2026-02-25 01:03:07",
+      "original_item_count": 3,
+      "platform_sequence_id": 399
+    },
+    {
+      "sequence_id": 545,
+      "sns_platform": "threads",
+      "code": "DVKqVEwkZsg",
+      "full_text": "제미나이에 새롭게 들어간 \n음악 생성 기능(Lyria 3), \n혹시 써보셨나요? 🎵\n생각보다 결과 차이가 \n크게 나는 포인트가 있어서,\n“잘 쓰는 법”만 딱 정리해볼게요.\n\n---\n\n처음부터 어렵게 가지 말고,\n이 3가지만 먼저 잡으면 퀄리티가 확 올라갑니다.\n\n1) 장르 + 분위기 + 보컬 톤을 한 번에 적기\n\n막연하게 “좋은 노래”라고 하면 결과가 흔들려요.\n대신 이렇게 쓰세요:\n\n• 장르: 2000s pop\n• 분위기: 밝고 시원한 여름 느낌\n• 보컬: 여성, 맑고 힘 있는 톤\n\n👉 핵심: 스타일을 구체적으로 말할수록 결과가 안정적입니다.\n\n---\n\n2) 전개를 꼭 넣기\n\n좋은 트랙은 “흐름”이 있어요.\n프롬프트에 전개를 넣으면 훨씬 살아납니다.\n\n• “조용한 인트로 → 후렴에서 에너지 상승”\n• “2절에서 드럼 강해지고 마지막은 여운 있게 마무리”\n\n👉 핵심: 그냥 음악이 아니라 이야기 있는 30초를 만든다고 생각하기.\n\n---\n\n3) 가사는 짧고 강하게\n\n직접 가사를 넣을 땐 Lyrics:로 시작하고,\n30초에 맞게 짧게 써야 좋아요.\n\n예:\nLyrics: 오늘은 망설이지 말고, 지금 바로 시작해\n\n👉 핵심: 길게 쓰면 전달이 흐려져요. 짧고 선명하게.\n\n---\n\n추가 팁:\n\n• 사진/영상 넣으면 감정 톤 잡기가 더 쉬워요.\n• 한 번에 완벽 기대 말고, 2~3번 수정하면서 디테일 추가하세요.\n• “악기(신스/피아노/기타)”까지 지정하면 완성도 급상승.\n\n한 줄 요약:\n음악 생성은 재능 게임이 아니라, 설명력 게임입니다.",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/640396320_17865155490590544_2631154197804816741_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMjA0OHg4MTkuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QGw6CuwjnIHk9XXVwh2SQclFQGtYLK3Er_ri7L7NjkRuBisNy301iq5SYRkbZ_8NZc&_nc_ohc=T2pvCYnd2PMQ7kNvwFcJQ_E&_nc_gid=4MR-x7AZnaJzSlivby5u4A&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0MDA2Nzc5ODQ1OTA2MzA3Mg%3D%3D.3-ccb7-5&oh=00_Afy9bmRJpEZx3V5ZiLf3XvrA99Ok0iSjvxx-EaMlSQBJCA&oe=69C03F42&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:49:17.145",
+      "local_images": [
+        "web_viewer/images/2fe6bfc64a842d0340cda04ec8e3d646.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVKqVEwkZsg",
+      "user": "ahyuk_ai",
+      "timestamp": "2026-02-25 12:56:15",
+      "original_item_count": 5,
+      "platform_sequence_id": 400
+    },
+    {
+      "sequence_id": 546,
+      "sns_platform": "threads",
+      "code": "DVLtjOAkvqN",
+      "full_text": "Claude Code 카드뉴스 자동화 삽질해서 알아낸 꿀팁 모두 품\n\n일단 나는 카드뉴스에서 중요하다고 생각하는게\n\n1. 편집 가능한 결과물 산출\n2. 적절한 배경 이미지 자동 포함\n\n이 두개임. 다른 곳에서 카드뉴스 많이 만들어봤는데 (수동으로) 사람이 만져야만 올라가는 퀄리티가 있고, 이미지가 있어야 사람들이 관심을 가짐. 그런데 적절한 이미지 찾는게 생각보다 매우 오래걸림.\n\n그래서 클로드 코드로 카드뉴스 자동화할 때 편집 가능한 결과물 나오는거, 이미지 배경 자동으로 포함돼서 결과 나오게하는게 목표였음. 그 목표를 이뤄서 내용 공유함.\n(아래는 바로 만들어진 카드뉴스 결과물)\n\n---\n\n[편집 가능한 결과물 산출]\n\n카드뉴스 자동화하는 사람들 대부분 html로 결과 만들고 바로 png로 뽑거나, 피그마 mcp 사용해서 피그마로 옮기는데 png로 뽑는 경우에는 수정사항에 대해 매번 ai한테 요청해야하는 불편함이 있음.\n\n그리고 피그마 mcp는 피그마 별도로 키고 또 횟수 제한있는 플러그인 같은거 설치해야하는데 생각보다 잘되지 않았음.\n\n그래서 해결책으로 pencil.dev를 사용함\n\n---\n\n즉 결과물을 .pen으로 뽑게 했고, 이게 JSON 기반이라 ai로 해당 파일을 만들고 내부 결과물도 바로 읽어올 수 있음.\n\n무엇보다 .pen 파일을 코드 에디터 (vscode, antigravity, cursor 등)에서 열리고 거기서 편집도 가능해서 최고였음.\n\n그리고 이미지는 unsplash에서 키워드 검색으로 잘가져오게 만들었음.\n\n---\n\n추가적인 팁으로 카드뉴스 디자인은 레퍼런스 엔지니어링이 답이 였음.\n\n즉, 원하는 카드뉴스 디자인 레퍼런스 디렉토리에 다 넣고 레퍼런스 별 템플릿을 만드는 SKILL 만들어서 등록하게하면 매우 디자인이 잘뽑힘.\n\n이걸 기준으로 디테일하게 개선하는 만큼 결과물 좋아질 것임.\n\n---\n\n마지막으로 구조는 아래와 같이 구성했음.\n전체를 관장하는 오케스트레이터; 얘는 command로 구성해서 그냥 entry point로 만들고 나머지는 SKILL로 구성했음.\n\n- 오케스트레이터\n- 편집장 -> 구성안\n- 카피라이터 + 아트디렉터 -> 병렬 실행\n- 퍼블리셔 -> .pen 출력\n\n워크플로우 만들때는 프로세스를 생각해보고\n각 단위의 페르소나를 생각해서 각각의 스킬들을 잘 만들어주면 됨.\n\n정리하면, pencil + 레퍼런스 엔지니어링 + 프로세스별 페르소나 스킬을 사용하면 나름 훌륭한 결과물이 나옴.",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/639687104_17915269782289001_4037144029115649938_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTA4MHgxMzUwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QEI66cqiQWjR6nidsu7h1UDL3nTp-kZSlG8HjZ-tjz2jpjonBF4HlM66y99hUDsZ4Q&_nc_ohc=wdUDoJqahZ8Q7kNvwE_zcwt&_nc_gid=nmrIrKW9eo5Ywo0p_A8GNA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0MDM2MzQzMzI0Njc1NjcwMA%3D%3D.3-ccb7-5&oh=00_Afxvy6aK_6h1X2JiVoWmBxoDWYjIygQg5qZq_lGfwmYEcQ&oe=69C025B8&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:49:17.145",
+      "local_images": [
+        "web_viewer/images/e14834d8c53bfae2e70ad183f6480ad4.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVLtjOAkvqN",
+      "user": "devdesign.kr",
+      "timestamp": "2026-02-25 22:43:39",
+      "original_item_count": 5,
+      "platform_sequence_id": 401
+    },
+    {
+      "sequence_id": 547,
+      "sns_platform": "threads",
+      "code": "DVN_oXyiHLh",
+      "full_text": "개발자들이 바이브코딩 강의를 안 하는 진짜 이유\n\n개발자들이 바이브코딩 강의를\n왜 안 만드는지 궁금한 적 없어?\n\n\"바이브코딩 강의 안 만들어?\"라는 질문을\n진짜 많이 받거든.\n\n오픈톡 열면 2~30명이 그냥 모여.\n수요가 없는 게 아니야.\n\n근데 나는 안 만들어.\n나뿐만 아니라 만들 수 있는 사람들 대부분이 안 만들어.\n물론 모아서 팔 수는 있지만 안해.\n\n왜냐면 이 시장은 구조적으로 성립이 안 되거든.\n\n(빨간약 주의)\n\n---\n\n바이브코딩 좀 해본 개발자들은 다 같은 걸 느껴.\n\n\"80%까지는 마법인데 나머지 20%가 지옥이다.\"\n\n로그인 붙이고 CRUD 뚝딱 만들고\nUI 예쁘게 뽑는 거까지는 진짜 빨라. \n\n근데 결제 연동 예외처리 빠지고\n동시성 이슈로 데이터 꼬이고\n배포 환경에서만 터지는 버그 나오면?\n\n이건 바이브가 아니라 엔지니어링이야.\n\n그냥 느낌이 아니야. 리서치 해보면\nAI가 짠 코드의 45%가 보안 취약점을 갖고 있고\n90%가 프로덕션까지 못 간다는 분석이 있어. \n\n더 웃긴 건, 버그 나와서 AI한테 \"고쳐줘\" 하고\n또 에러 나서 \"이것도 고쳐줘\" 하는 그 루프 있잖아.\n\n5번 반복하면 치명적 취약점이 37% 늘어난다고 해. \n고칠수록 더 망가지는 거야.\n\n---\n\n그래서 현업에 있는 개발자들은 강의를 기획하면 자문하게 돼.\n\"이걸 가르쳐서 수강생이 뭘 할 수 있지?\" 정직하게 답하면 별로 없어.\n\n그래서 강의 대신 자기 서비스를 만들어. \n\n강의 하나 만들어서 수십만 원 받는 것보다 \n그 시간에 SaaS 하나 더 띄우는 게 나으니까.\n\n바이브코딩의 진짜 가치는 남한테 가르치는 게 아니라\n내가 직접 쓰는 데 있거든.\n\n---\n\n바이브코딩 강의 찾는 사람들은 거의 다 비개발자야.\n이 사람들이 원하는 건 명확해.\n\n\"코딩 안 배우고 뭔가 만들고 싶다.\"\n솔직히 말하면 \"코딩 안 배우고 돈 벌고 싶다.\"\n\n이 욕구 자체가 나쁜 건 아니야. 문제는 깊이야.\n이 사람들이 원하는 건 딸깍이거든. 버튼 하나로 되는 거.\n\n스레드에서 \"억대 빚에서 바이브코딩으로 월 천 찍었다\"는 글에\n좋아요 누르는 사람들이 기대하는 것도 그거고.",
+      "media": [],
+      "crawled_at": "2026-03-18T17:49:17.145",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVN_oXyiHLh",
+      "user": "mind.engineer_",
+      "timestamp": "2026-02-26 20:00:07",
+      "original_item_count": 4,
+      "platform_sequence_id": 402
+    },
+    {
+      "sequence_id": 548,
+      "sns_platform": "threads",
+      "code": "DVKuEKqktOU",
+      "full_text": "난 ChatGPT에게 “전자책 써줘” 했더니 판매 0건이었고,\n\n“결제 버튼 누르게 목차부터 설계해줘”\n라고 하자 첫 주에 83만 원이 찍혔습니다\n\n홍보 문제가 아니라 전환 구조 문제였습니다\n이 7개 프롬프트만 복붙하시면 됩니다\n\n---\n\n1/ 주제부터 “정보”가 아니라 “결제 이유”로 다시 고르게 하기\n\nChatGPT에게\n잘 팔릴 주제 말고\n사람들이 돈 안 내면 불편한 문제만\n다시 추려달라고 합니다.\n\n→ 알면 좋은 정보는\n안 팔립니다.\n\n---\n\n2/ 목차를 설명형이 아니라 ‘결과형’으로 바꾸기\n\nChatGPT에게\n1장, 2장 설명 구조 말고\n읽으면 어떤 변화가 생기는지\n결과 중심으로 목차를 다시 짜달라고 합니다.\n\n→ 사람은 분량이 아니라\n결과를 삽니다.\n\n---\n\n3/ 첫 페이지에 ‘문제 확정’부터 넣게 만들기\n\nChatGPT에게\n저자 소개 말고\n독자가 지금 겪고 있는 문제를\n한 문장으로 확정해달라고 합니다.\n\n→ 공감이 되면\n결제가 빨라집니다.\n\n---\n\n4/ 중간에 ‘망설임 제거 구간’ 넣기\n\nChatGPT에게\n결제 전에 떠오르는\n의심·불안·귀찮음 포인트를\n미리 정리해달라고 합니다.\n\n→ 망설임은\n미리 제거해야 합니다.\n\n---\n\n5/ 끝에 CTA가 아니라 ‘확신 직후 CTA’ 배치하기\n\nChatGPT에게\n맨 마지막이 아니라\n가장 납득이 끝난 지점에\n구매 유도 문장을 배치해달라고 합니다.\n\n→ 클릭은 타이밍입니다.\n\n---\n\n6/ 가격을 숫자가 아니라 ‘비교 기준’으로 설계하기\n\nChatGPT에게\n가격을 제시하기 전에\n이 문제를 해결하지 않으면\n잃는 비용을 먼저 보여달라고 합니다.\n\n→ 가격은 비싸지 않습니다.\n비교가 없어서 비싸 보일 뿐입니다.\n\n---\n\n7/ 예상 매출 계산하게 만들기\n\nChatGPT에게\n노출 1천 / 전환율 3% / 가격 29,000원 기준\n예상 매출을 계산해달라고 합니다.\n\n→ 숫자가 보이면\n전략이 보입니다.\n\n이건 전자책을 잘 쓰는 방법이 아닙니다.\n전자책을 팔리게 만드는 구조입니다.\n\n글재주 ❌\n분량 ❌\n감 ❌\n\nChatGPT에게\n이 7개 질문만 던지시면\n안 팔리는 PDF → 결제되는 상품으로 바뀝니다.\n\n---\n\n부업을 꿈꾸는 직장인·워킹맘이라면 지금 주목하세요❗️❗️\n\n단 6주 만에 월 2,000만원을 판매한\n전자책 3단계 공식,\n이번에 무료로 공개합니다.\n\n30대부터 60대까지 가능합니다.\n전문 지식 필요 없습니다.\n글을 잘 쓸 필요도 없습니다.\n\n-AI로 전자책을 30분 만에 만드는 방법\n-4주 안에 월 100만원 자동수익을 만드는 로드맵\n-실전 판매 구조까지\n\n이 3가지를\n이프로코치님의 라이브 무료 강의에서 전부 공개합니다.\n\n지금 무료 강의를 신청하시면\n49만원 상당의 자료를 무료로 드립니다 🎁\n\n그리고 라이브를 끝까지 참여하신 분들께는\n어디에서도 공개하지 않은\n100만원 상당의 실전 특급 자료를 추가로 드립니다.\n\n3월 11일 단 하루 공개.\nAI가 쓰고, 30일 안에 월 200을 만드는\n전자책 3단계 공식.\n\n지금 바로 신청하세요.\nhttps://leadgeny.kr/i/A3c",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/641724121_17890967616426199_8434321208124684099_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTczNng5NTIuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QH6fzjHB82RmGIqveb7XL2DSGO1wXTFtUnnxFHZYH0XP1SIP214TypWYFOffVt5r7U&_nc_ohc=8XnamHWSVSEQ7kNvwF2S8Dt&_nc_gid=4amhdwjuoVMronr8H_F5ZA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0MDA4NDIxNTMyNTM2ODU5Nw%3D%3D.3-ccb7-5&oh=00_AfwBRaAp8LQN73jSAwnS95Ub8jEqprFnmvYOElbrx7P07Q&oe=69C02063&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:49:20.161",
+      "local_images": [
+        "web_viewer/images/0e7a7a869ba3404deb4fe677d5657b26.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVKuEKqktOU",
+      "user": "place_coach",
+      "timestamp": "2026-02-25 13:28:54",
+      "original_item_count": 9,
+      "platform_sequence_id": 395
+    },
+    {
+      "sequence_id": 549,
+      "sns_platform": "threads",
+      "code": "DVJLUvxk1rC",
+      "full_text": "클로드 코드 남은 사용량 확인하기.\n\n터미널에\n\nnpx cc-alchemy-statusline\n\n입력하면 끝.\n\n커스터마이징해서 사용하셔도 됩니다!\n\n---\n\n표기되는 정보 리스트\n\n모델명 — 현재 사용 중인 Claude 모델\nGit 브랜치 — 현재 브랜치\n컨텍스트 — 사용량/전체 (예: 24k/200k)\n5h / 7d — 구독 사용률 및 리셋까지 남은 시간",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/639545479_17850133689682804_5529434092735365010_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTAzNHgxOTIuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QEyssZUNkiKW9p4v6PTZ6KuiiEJXB5AP-_iU_NF8zNCdJ-7Wup4D-5HSZ_Mu-6U2OM&_nc_ohc=JXbY6MN6ex4Q7kNvwGX3UKA&_nc_gid=sJUK2rnlyRg0va25J7SX9A&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzOTY0OTk2MTUwODgyMTY5OA%3D%3D.3-ccb7-5&oh=00_Afy0dJMX02wPcaaqpfUNqxoc9vPsSpk1HB1DT87qd0u-rg&oe=69C04B50&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:49:20.161",
+      "local_images": [
+        "web_viewer/images/5f4a143247703b9ee1b1f7d66003a173.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVJLUvxk1rC",
+      "user": "owen_ai_dev",
+      "timestamp": "2026-02-24 23:06:05",
+      "original_item_count": 2,
+      "platform_sequence_id": 396
+    },
+    {
+      "sequence_id": 550,
+      "sns_platform": "threads",
+      "code": "DVKxns-DSHY",
+      "full_text": "나는 Gemini가 처음 나왔을 때부터 써왔고\n지금까지 만든 프롬프트만 3,000개가 넘는다.\n\n한국인 90%는 제미나이한테 아직도\n\"요약해줘\", \"다시 써줘\" 같은 말만 한다.\n\n이렇게 쓰면 제미나이는 평생 평범한 답만 준다.\n\n제미나이를 나만의 두뇌로 바꿔버리는\n프롬프트  5가지를 소개하겠다.\n\n---\n\n1. \"넌 누구인지부터 알려줘\" — 페르소나 세팅\n\n❌ \"마케팅 전략 짜줘\"\n\n✅ \"너는 15년차 브랜드 마케팅 디렉터야.\n월 광고비 500만 원인 스타트업의\n인스타그램 성장 전략을 세워줘.\n표 형식으로 정리해줘.\"\n\n역할 + 구체적 상황 + 출력 형식을 주면\n답변 퀄리티가 완전히 달라진다.\n\n---\n\n2. \"정답 말고 선택지를 줘\" — 다중 옵션 프롬프트\n\n❌ \"제목 추천해줘\"\n\n✅ \"아래 주제로 블로그 제목을 10개 만들어줘.\nA그룹: 호기심 유발형 5개\nB그룹: 숫자 활용형 5개\n각각 클릭률이 높은 순으로 정렬해줘.\"\n\n제미나이한테 '하나만 줘'라고 하면\n항상 무난한 답을 준다.\n선택지를 요구하면 가장 좋은 걸 직접 고를 수 있다.\n\n---\n\n3. \"단계별로 생각해\" — Chain of Thought\n\n❌ \"사업 계획서 써줘\"\n\n✅ \"사업 계획서를 작성할 건데, 한 번에 쓰지 마.\nStep 1: 먼저 시장 분석부터 해줘.\nStep 2: 경쟁사 3곳을 비교해줘.\nStep 3: 그 다음 차별화 전략을 도출해줘.\nStep 4: 마지막에 전체를 통합해서 정리해줘.\"\n\n한 번에 다 시키면 제미나이는 '대충' 쓴다.\n단계를 쪼개면 전문가급 결과물이 나온다.\n\n---\n\n4. \"이건 하지 마\" — 금지 조건 프롬프트\n\n❌ \"자기소개서 써줘\"\n\n✅ \"경력 5년차 마케터의 이직용 자기소개서를 써줘.\n단, 다음은 절대 하지 마:\n- '열정' '도전' 같은 뻔한 단어 사용 금지\n- 추상적인 표현 금지\n- 500자 초과 금지\n구체적인 성과 숫자를 반드시 포함해줘.\"\n\n대부분 '해줘'만 말하고 '하지 마'는 안 한다.\n금지 조건을 주면 AI가 뻔한 답을 피하게 된다.\n\n---\n\n5. \"내 글을 먼저 학습해\" — 스타일 복제 프롬프트\n\n❌ \"글 써줘\"\n\n✅ \"아래 3개의 글은 내가 직접 쓴 글이야.\n[글 1], [글 2], [글 3]\n이 글들의 말투, 문장 길이, 어조를 분석해줘.\n그리고 같은 스타일로 새로운 글을 써줘.\n주제: 'AI 시대에 살아남는 직장인의 습관'\"\n\n제미나이한테 내 글 3개만 먹이면\n'나처럼 쓰는 AI'가 만들어진다.\n이게 진짜 제미나이 200% 활용법이다.\n\n---\n\n핵심만 정리하면\n1. 역할부터 세팅해라\n2. 정답 말고 선택지를 요구해라\n3. 단계를 쪼개서 시켜라\n4. \"하지 마\"를 반드시 넣어라\n5. 내 글을 먹여서 스타일을 복제해라\n\n별로인 건 AI가 아니라 프롬프트다\n저장해두고 오늘부터 써봐!\n\n---\n\nhttps://litt.ly/yourgpt3650",
+      "media": [],
+      "crawled_at": "2026-03-18T17:49:20.161",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVKxns-DSHY",
+      "user": "yourgpt3650",
+      "timestamp": "2026-02-25 13:59:58",
+      "original_item_count": 8,
+      "platform_sequence_id": 397
+    },
+    {
+      "sequence_id": 551,
+      "sns_platform": "threads",
+      "code": "DVKE3xqCRKl",
+      "full_text": "출근길 쓰레드) 16단계 에이전트 워크플로우 직접 짜봤는데, 결론부터 말하면 대실패였습니다.\n\n에이전트 16개를 한 줄로 세웠더니 중간에 맥락이 다 끊겨서 결과물이 엉망이 되더라고요.\n\n일종의 맥락 소실 참사였죠.\n\nAnthropic에서 마침 이걸 정확히 짚은 글을 올렸었는데, 저처럼 고생하기 전에 꼭 보셨으면 합니다. 에이전트 숫자 늘리는 게 기술력이 아니었습니다.\n\n---\n\n사실 대부분의 문제는 도구만 제대로 쥐여준 단일 에이전트로 끝내는 게 훨씬 깔끔합니다.\n\n단계를 쪼갤수록 프롬프트만 복잡해지고, 정작 어디서 문제가 터졌는지 찾기도 힘들어지거든요.\n\nAnthropic도 \"에이전트 추가가 정답이 아니다\"라고 못을 박았을 정도니까요.\n\n* 출처: Building effective agents — https://www.anthropic.com/research/building-effective-agents\n\n---\n\n그럼 멀티 에이전트는 언제 써야 할까요.\n\n제가 직접 굴려보니 컨텍스트 윈도우가 꽉 차서 터질 것 같을 때나, 같은 맥락에서 병렬 작업이 필요할 때 '분신술' 용도로 쓰는 게 가장 적합했습니다.\n\n16단계 릴레이가 아니라, 오케스트레이터가 일을 동시에 뿌려주는 구조가 실전용이더라고요.\n\n* 출처: How we built our multi-agent research system — https://www.anthropic.com/engineering/multi-agent-research-system",
+      "media": [],
+      "crawled_at": "2026-03-18T17:49:20.161",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVKE3xqCRKl",
+      "user": "ody_daddy",
+      "timestamp": "2026-02-25 07:28:57",
+      "original_item_count": 3,
+      "platform_sequence_id": 398
+    },
+    {
+      "sequence_id": 552,
+      "sns_platform": "threads",
+      "code": "DVKLAKBkm52",
+      "full_text": "https://github.com/johunsang/vive-md/blob/main/vibe-coding/mcp/Awesome-MCP-Servers-%ED%95%9C%EA%B5%AD%EC%96%B4-%EA%B0%80%EC%9D%B4%EB%93%9C.md\n\n2529개의 mcp를 전부 한국어로 번역했음\n이거하느라 클로드코드 이번주 토큰다 썼음\n진짜 모든 mcp를 찾아서 정리했음",
+      "media": [],
+      "crawled_at": "2026-03-18T17:49:23.181",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVKLAKBkm52",
+      "user": "keke_appa",
+      "timestamp": "2026-02-25 08:22:31",
+      "original_item_count": 1,
+      "platform_sequence_id": 392
+    },
+    {
+      "sequence_id": 553,
+      "sns_platform": "threads",
+      "code": "DVLajWUkuON",
+      "full_text": "바이브코딩 다음엔 바이브기획 바이브디자인 바이브영상 바이브세무 바이브경영으로 확대될 것 그리고 이 모든 것은 LLM회사들이 집어 삼킬 것. 모든 명령어는 터미널로 진행이 될 것이며 사람은 결과물을 확인 만 할것. 난 여기에 대비하는 중",
+      "media": [],
+      "crawled_at": "2026-03-18T17:49:23.181",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVLajWUkuON",
+      "user": "keke_appa",
+      "timestamp": "2026-02-25 19:57:38",
+      "original_item_count": 1,
+      "platform_sequence_id": 393
+    },
+    {
+      "sequence_id": 554,
+      "sns_platform": "threads",
+      "code": "DVLjTVLCSZh",
+      "full_text": "Google AI 연구팀이 재밌는 실험을 했거든요.\n\nAI한테 참고 자료 없이 답하게 하면\n오답률이 10%였어요.\n\n근데 부족한 참고 자료를 주니까\n66%로 뛰었어요.\n\n참고 자료를 줬는데 오히려 더 틀리는 구조예요.\n\n저도 이거였거든요.\n옵시디언에 메모 쌓고,\nAI한테 \"내 메모 참고해서 답변해\" 연결해뒀어요.\n\n메모도 있고. AI도 붙였고.\n끝 아닌가? 아니었어요.\n\n---\n\n메모가 10개일 땐 괜찮았어요.\nAI가 다 읽어도 문제없었거든요.\n\n근데 100개, 200개 쌓이니까 달라져요.\n읽긴 읽어요. 근데 많아질수록\n정작 필요한 걸 놓쳐요.\n\n분명 메모에 적어뒀는데\nAI한테 물으면 \"관련 자료를 찾지 못했습니다.\"\n\n아니 분명 있는데?\n\n없는 게 아니라 읽고도 못 쓴 거예요.\n메모가 많을수록 오히려 이런 일이 잦아져요.\n\n팀원한테 \"위키에서 관련 자료 찾아봐\" 하고\n대충 던진 거랑 똑같은 구조예요.\n찾을 수도 있고 못 찾을 수도 있고. 운이에요.\n\n---\n\n못 찾으면 차라리 나아요.\n\"모르겠다\"고 하니까.\n\n진짜 문제는 엉뚱한 걸 찾아왔을 때예요.\n\n관련 없는 메모를 근거로 삼아서\n\"이 방향이 좋겠습니다\"\n이러면서 자신 있게 답하거든요.\n\nGoogle 연구가 이 얘기였어요.\n관련 없는 참고 자료가 들어오면\nAI가 \"모르겠다\"를 잘 안 해요.\n뭐라도 참고할 게 있으니까 일단 답을 만들어버려요.\n\n틀린 답인데 자신 있어 보여요.\n솔직히 저도 그냥 믿었어요. 한동안.\n\n---\n\n그래서 바꾼 게 두 가지예요.\n\n첫째, 데이터를 정리했어요.\n메모마다 태그 달고, 폴더 나누고,\n제목이랑 요약 붙여서 AI가 구분하기 쉽게 만들었어요.\n\n재료가 엉망이면\n아무리 잘 찾으려 해도 한계가 있거든요.\n\n둘째, 찾는 방식을 둘로 나눴어요.\n키워드 검색은 정확한 단어는 잘 잡는데\n비슷한 의미의 다른 표현은 놓쳐요.\n의미 기반 검색은 맥락은 잘 잡는데\n정확한 용어를 놓칠 때가 있고요.\n\n그래서 둘 다 써요.\n서로 못 잡는 걸 보완하는 구조예요.\n\n\"참고해\"만 던지면 운에 맡기는 거예요.\n뭘 찾고, 어떻게 찾을지를 설계해야 시스템이 돼요.\n\n---\n\n정리하면요.\n\n기록을 쌓는 것. 1단계.\nAI에 연결하는 것. 2단계.\nAI가 잘 찾게 설계하는 것. 3단계.\n\n옵시디언에 메모 쌓고 AI에 연결까지 해두면\n\"나 꽤 잘하고 있는데?\" 싶거든요.\n솔직히 저도 오래 거기서 멈춰 있었어요.\n\n근데 3단계가 빠지면\n메모가 아무리 많아도 검색 방식을 설계 안 하면 제대로 못 써요.\n\n저도 아직 다듬고 있는 중이에요.\n데이터를 어떻게 정리했고, 검색을 어떻게 나눴는지\n다음 글에서 하나씩 풀어볼게요.",
+      "media": [],
+      "crawled_at": "2026-03-18T17:49:23.181",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVLjTVLCSZh",
+      "user": "overtime.sam",
+      "timestamp": "2026-02-25 21:14:45",
+      "original_item_count": 5,
+      "platform_sequence_id": 394
+    },
+    {
+      "sequence_id": 555,
+      "sns_platform": "threads",
+      "code": "DVKyIA4k0sn",
+      "full_text": "[Github] Playwright CLI\nhttps://github.com/microsoft/playwright-cli\n\n코딩 에이전트용 브라우저 자동화 도구입니다. 매번 직접 브라우저를 열어서 기능테스트를 하시나요?\n\n\"클로드가 알아서 브라우저를 열어서 자동으로 테스트해보면 좋을것 같다\" 라고 생각해본적이 없으세요? \n\nplaywright-cli, playwright-MCP 를 사용하면 클로드, 코덱스가 알아서 테스트합니다. \"이 사이트에서 로그인 테스트해줘\"라고 하면, 에이전트가 알아서 브라우저를 열고, 입력하고, 클릭하고, 스크린샷까지 찍어요.\n\n---\n\nPlaywright MCP 보다는 CLI 를 이용하길 추천해요. MCP는 페이지 구조를 깊이 탐색하면서 브라우저 상태를 계속 유지하는 데 맞춰져 있어요. \n\n대신 접근성 트리나 도구 스키마를 컨텍스트에 전부 올려야 해서 토큰을 많이 먹어요. \n\n쉽게 말하면, AI가 사용하는 자원이 너무 많아진다는 말이에요.\n\n---\n\n사용방법은 그냥 클로드에게 https://github.com/microsoft/playwright-cli 설치해주고, playwright 사용해서 테스트 해달라고 하세요. \n\n더 깊고, 자세히 사용하고 싶다면 plugin, mcp 를 활용하세요.",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/640199643_17854783314623803_1114736459000449998_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTQ0MHgxODAwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QEbpMJRfSzzGkT5zIQI4Wx9y1yksr00h5Uqj0Hs9sh6PpkVZdw9tOTSnPRqJh0RQGo&_nc_ohc=DeFCBC-nvKcQ7kNvwGPJrFU&_nc_gid=AhNuSZGJq_J5a4lHsqhqCw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0MDEwMTIyMDQzNDQzMzY3MA%3D%3D.3-ccb7-5&oh=00_AfzGaQ-HVAglKAl0xshQOVJqr80NUHvn07PZ_mcCvUtMCg&oe=69C05097&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:49:23.182",
+      "local_images": [
+        "web_viewer/images/2c524dc41af5bd586ca4bc69b6b7a33f.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVKyIA4k0sn",
+      "user": "vibe.tip",
+      "timestamp": "2026-02-25 14:04:23",
+      "original_item_count": 3,
+      "platform_sequence_id": 391
+    },
+    {
+      "sequence_id": 556,
+      "sns_platform": "threads",
+      "code": "DS2TXERCQHq",
+      "full_text": "와 내가 만든 모임에서 스터디원분께서 만드신 사업계획서 써주는 AI 시현해봤는데 다른 스터디원분들 실시간 육성으로 보시다가 쩐다... 소리 나왔음 ㅋㅋㅋㅋㅋㅋ 아니 각 지원사업별 목차대로 텍스트는 기본에다가 이미지는 TAM,SAM,SOM 시장 분석표 정도 기대했거든? 기업 정보대로 목업까지 다뽑아내더라....\n비개발자 기절 쌈바리.... 관심있는 사람 댓글 남겨주면 내가 정보 보내줄께... 아닌가 베타버전 링크 올리면 되나..? 여튼 그리고 BSST 인원모집은 100명에서 마감해요.. 죄송함당🥹 무작정 인원모집 보다는 내실을 단단히 다지고싶어서.... 다들 감사해요!!\n\n---\n\nplandoc.kr/about",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/607079637_17936359272129032_6874227643251674131_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTA4MHgyMzQwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QEnOh2iolpf_j2oQyxPngLoYy4bfY5-Hsuc5JRh2WnQZK7F_6OJezJGO7oJ2DXxDMk&_nc_ohc=OHX50f_CYpQQ7kNvwESy6EQ&_nc_gid=zhTuztjQHE22vLlwKI_D9Q&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc5ODMwODQ4Mzc0NjAzODI1MA%3D%3D.3-ccb7-5&oh=00_AfzuRepgqvP6yie2_TdQ9ahUQU-vKJKJiFqtOi_AzkDzgg&oe=69C0208A&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:49:26.203",
+      "local_images": [
+        "web_viewer/images/a366320a7ef36898bc9f9fba61d8b1b3.webp"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DS2TXERCQHq",
+      "user": "mina_y.island",
+      "timestamp": "2025-12-29 22:07:57",
+      "original_item_count": 2,
+      "platform_sequence_id": 387
+    },
+    {
+      "sequence_id": 557,
+      "platform_id": "DVKsy5mjwr1",
+      "sns_platform": "threads",
+      "code": "DVKsy5mjwr1",
+      "username": "marketer.ai.seulki",
+      "display_name": "Seulki Kang",
+      "full_text": "클로드코드로\n커뮤니티 3개 운영 자동화했다.\n\n⚠️ 코드 한 줄도 안 쓰고 ⚠️ \n\n밑그림만 그렸을 뿐인데\n썸네일, 상세페이지, 문자 발송, 명찰, 슬라이드 생성,\n노션에 할일 등록까지 다 해줌.\n\n어떻게 했는지 오늘 다 공개할게! 🧵\n\n(웨비나 할 시간 없어서 그냥 스레드,\n블로그에 진짜 과정 다 풀었어!)",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/642509217_17947091607112976_6960260073156036216_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uNjE0eDkyMy5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHV_EXVHv204-lsgb3bgvkncFQOIfPwsVGh692l-C1A5aXFnigXsjqe668Uqt4Jajo&_nc_ohc=vGjn_OCqvvQQ7kNvwHu1a2r&_nc_gid=lcSaHsmCju2YO-LG9irIqg&edm=AI6eXeABAAAA&ccb=7-5&ig_cache_key=Mzg0MDAzNzExMjk2MzQ4MTg3MQ%3D%3D.3-ccb7-5&oh=00_Afwm1eNb48GZgH2mApqa_J6uGfnHnoje8HppBIFRPNESQg&oe=69C054B3&_nc_sid=6efbad",
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/641263129_17947091637112976_4504977743225318358_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTcwMHg5NzIuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHV_EXVHv204-lsgb3bgvkncFQOIfPwsVGh692l-C1A5aXFnigXsjqe668Uqt4Jajo&_nc_ohc=_v41-pgBL20Q7kNvwHCv1wl&_nc_gid=lcSaHsmCju2YO-LG9irIqg&edm=AI6eXeABAAAA&ccb=7-5&ig_cache_key=Mzg0MDAzNzExMzI2NTQ4NjM2OQ%3D%3D.3-ccb7-5&oh=00_AfxT9RpTYHMvEoH_CGHajpys-u1NpRhP43W0KwgSV3H7bw&oe=69C02281&_nc_sid=6efbad",
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/640393622_17947091646112976_3911601386295464448_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTEzNng5ODEuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHV_EXVHv204-lsgb3bgvkncFQOIfPwsVGh692l-C1A5aXFnigXsjqe668Uqt4Jajo&_nc_ohc=E2vmXCbsy9YQ7kNvwH9f62f&_nc_gid=lcSaHsmCju2YO-LG9irIqg&edm=AI6eXeABAAAA&ccb=7-5&ig_cache_key=Mzg0MDAzNzExMjAwNzE5MTg4NA%3D%3D.3-ccb7-5&oh=00_AfxEetoQrla8HpisICBDMT-atK7j4lYB194ESoY_0pxAUQ&oe=69C02675&_nc_sid=6efbad",
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/640403710_17947091628112976_1004763335209766560_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTI4MHgxMTAzLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHV_EXVHv204-lsgb3bgvkncFQOIfPwsVGh692l-C1A5aXFnigXsjqe668Uqt4Jajo&_nc_ohc=5Y3c5jEzbKsQ7kNvwH18GHE&_nc_gid=lcSaHsmCju2YO-LG9irIqg&edm=AI6eXeABAAAA&ccb=7-5&ig_cache_key=Mzg0MDAzNzExMjc0NTM2OTY4OQ%3D%3D.3-ccb7-5&oh=00_Afw73qSXp4nubPo2LgibHO7y0Mm0UgcouGhhgadY60WYQw&oe=69C04210&_nc_sid=6efbad",
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/641268733_17947091616112976_5261067783000445895_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTI4MHgxMDg3LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHV_EXVHv204-lsgb3bgvkncFQOIfPwsVGh692l-C1A5aXFnigXsjqe668Uqt4Jajo&_nc_ohc=Pvwqy8fmTwMQ7kNvwHcwXrO&_nc_gid=lcSaHsmCju2YO-LG9irIqg&edm=AI6eXeABAAAA&ccb=7-5&ig_cache_key=Mzg0MDAzNzExMzY5MzMxNjAxNA%3D%3D.3-ccb7-5&oh=00_AfzBlqnQsuF2JyQ7OIWlskfnJDb8w-uAsj4mgVUr7RRGVQ&oe=69C04655&_nc_sid=6efbad"
+      ],
+      "url": "https://www.threads.net/@marketer.ai.seulki/post/DVKsy5mjwr1",
+      "created_at": "2026-02-25 13:17:48",
+      "date": "2026-02-25",
+      "crawled_at": "2026-03-18T17:49:26.203",
+      "source": "network",
+      "local_images": [
+        "web_viewer/images/4517626c661119c0005359f661a0b296.jpg",
+        "web_viewer/images/b10cac7eedc5727204145f3b853b5066.jpg",
+        "web_viewer/images/26c5277409607eee2417d536d1a6e07b.jpg",
+        "web_viewer/images/54bee39d61d6348149a9ffac6e3d6134.jpg",
+        "web_viewer/images/1564c2a22459e0a4fa6adc31e41c234f.jpg"
+      ],
+      "is_merged_thread": false,
+      "root_code": "DVKsy5mjwr1",
+      "like_count": 479,
+      "reply_count": 63,
+      "repost_count": 176,
+      "quote_count": 1,
+      "pk": "3840078644157287157",
+      "media_type": 8,
+      "content_type": "carousel",
+      "platform_sequence_id": 388
+    },
+    {
+      "sequence_id": 558,
+      "sns_platform": "threads",
+      "code": "DVKFUUDk2ak",
+      "full_text": "CLAUDE.md, AGENTS.md 쓰지마라?\n\n1. 저는 이슈 관리 방법, 브랜치 규칙, 커밋 형식, CHANGELOG까지 죄다 문서에 넣어뒀는데요. 최근 나온 논문 읽고 좀 충격받았습니다. ETH 취리히 연구팀이 AGENTS.md가 실제로 효과가 있는지 처음으로 엄밀하게 실험했는데, 결과가 꽤 놀랍습니다.\n\n2. LLM이 자동 생성한 AGENTS.md는 오히려 성공률을 2% 낮추고 비용을 20% 이상 올렸습니다. 개발자가 직접 쓴 것도 성공률은 4% 정도 올랐지만 비용은 똑같이 올라갑니다. OpenAI, Anthropic 같은 에이전트 개발사들이 강력 권장하는 방식인데 정작 효과는 미미하거나 역효과라는 거죠.\n\n---\n\n3. 왜 이러냐 하면 AI는 AGENTS.md에 적힌 걸 충실하게 따르려고 합니다. 작은 버그 하나 고칠 때도 브랜치 만들고, 전체 테스트 돌리고, CHANGELOG 쓰고, 리뷰어 태그 달고 정작 문제 해결보다 프로세스에 토큰을 다 써버립니다. \n\n4. 실제로 GPT-5.2 기준 추론 토큰이 22%나 늘었는데, 이건 AI가 \"이 작업 복잡하네\"라고 느낀다는 신호입니다. 폴더 구조 설명 같은 개요도 사실상 무의미했고요. 있어도 없어도 관련 파일 찾는 속도가 동일했습니다.\n\n---\n\n5. 많은 사람들이 오해하는 게 그렇다고 완전히 쓰지 말라는 말은 아니에요. 논문의 결론은 이렇습니다. \n1) LLM '자동 생성한' AGENTS.md → \"일단 쓰지 마라\" (명확히 권고)\n2) 개발자가 직접 쓴 AGENTS.md → \"최소한의 요구사항만 담아라\" (쓰되 줄여라)\n\n즉 /init 명령어로 AI한테 자동으로 만들게 하는 건 지금 당장 끄는 게 낫고, 직접 쓰는 건 괜찮은데 내용을 최소화하라는 거예요. 논문 원문 표현도 \"unnecessary requirements make tasks harder\"라서, 문제는 파일의 존재 자체가 아니라 불필요한 지침의 양이라는 거죠.\n\n6. 다 지우면 너무 불편할 것 같은데요. 절충안이 있습니다. 강제형을 조건부 권고형으로 바꾸는 겁니다. \"브랜치를 만들어라\" 대신 \"새 기능이나 큰 변경은 브랜치를 권장\"으로, \"전체 테스트를 돌려라\" 대신 \"로직 변경이 포함된 경우 관련 테스트 실행\"으로요.\n\n---\n\n7. 그러면 AI가 이슈 규모를 보고 알아서 판단합니다. 여기에 작업 모드 키워드를 추가하면 좋습니다. AGENTS.md에 `[quick]`이면 프로세스 최소화, `[full]`이면 전체 프로세스 적용이라고 정의해두고, 이슈 줄 때 앞에 붙이는 거죠. 급할 때는 `[quick] 버튼 색 바꿔줘`, 중요한 기능은 `[full] 결제 로직 추가해줘`처럼요. (물론 모델마다 다를 거예요. 클로드는 이것저것 다 찾아서 읽는 편이거든요)\n\n8.  그리고 조건부로 읽어야 하는 문서로 변경하면 되지 않을까 싶습니다. Skills나 docs에 넣고 필요할 때만 읽도록 권장하는 방식입니다.\n\n---\n\n9. 정리하면 \"이 저장소에서만 통하는 꼭 필요한 것\"만 강제하고 나머지는 AI 판단에 맡겨라. `pnpm`만 써야 한다거나, 특정 폴더는 건드리지 말라거나, 이런 것들만 필수로 남기고 일반적인 개발 프로세스는 조건부로 바꾸는 게 핵심입니다. 빠르게 개선되는 AI 환경에서 AGENTS.md 관리법도 같이 진화해야 할 것 같습니다.\n\n---\n\nhttps://arxiv.org/abs/2602.11988",
+      "media": [],
+      "crawled_at": "2026-03-18T17:49:26.203",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVKFUUDk2ak",
+      "user": "sihyun_adventure",
+      "timestamp": "2026-02-25 07:32:50",
+      "original_item_count": 6,
+      "platform_sequence_id": 389
+    },
+    {
+      "sequence_id": 559,
+      "sns_platform": "threads",
+      "code": "DU-E09dE0YA",
+      "full_text": "1번 : AI가 돈을 벌어다 줄 거다\n2번 : AI가 시간을 벌어다 줄 거다\n\n어느쪽이신가요?\n\n---\n\nAI는 돈을 벌어다 주지 않아요.\n제가 세일즈 퍼널 제자들한테 항상 하는 말이 있습니다.\n사업 처음 하는데 처음부터 자동화 하려고 하면 반드시 망한다고.\n수동으로 모든걸 매뉴얼리하게 하나 하나 마이크로 컨트롤 하면서 디테일을 잡아가면서 먼저 돈을 벌어야됩니다.\n\n---\n\nAI와 별개로 광고비를 쓰든 인건비(나 포함)를 쓰든, 1000만원 써서 3~5천만원 이상 벌리는 상황이 되면, 그때 자동화를 하는 겁니다. 예를 들면 사람이 전화하던 걸 CRM 메시지로 대체한다든가, 실시간 강의를 하던걸 VOD로 대체한다든지, 내가 직접 하던걸 직원에게 위임한다든지 하는거죠. 그리고 거기엔 반드시 트레이드 오프가 있습니다.\n\n---\n\n수동으로 신경쓰면서 하던걸 자동화 하면? 당연히 수동으로 하던것보다 디테일이 떨어집니다. 내가 하던걸 직원이 하면? 당연히 나보다 못합니다. 효율이 조금 떨어지는걸 감수하면서 하는 겁니다. 인건비나 자동화 비용은 추가로 들어가고요.\nROAS 700~800% 나오던 상황에서 자동화를 이것 저것 하면, 내 시간을 충분히 확보하고 500~600% 나오는 수준으로 자동화가 되면 다행인 거죠.\n\n---\n\n결국, 비즈니스 '자동화'는 자동이 아닐때의 순이익을 약간 손해보면서 자동으로 바꾸는 과정이기 떄문에, 일단 전환률이나 순이익을 충분히 확보하고 나서 자동화 하는게 가능합니다. 그런데 AI는 다르다구요? 사람보다 일을 잘 한다구요?\n\n---\n\n네 그래서 AI가 강력한거 맞습니다. 하지만 본질적으로 보면, 시간이 없어서 못하던 일을 하게 해주거나, 원래 하던 일을 AI한테 시키는 것 뿐입니다. 인건비 절감이에요. 사람의 시간을 아껴주는 역할을 하는 겁니다.\n여기서 AI를 써서 돈을 버는 조건이 나옵니다.\n\n---\n\n여러분한테, 혹은 여러분 직원들한테 하루가 24시간이 아니라 36~48시간이면 돈을 더 많이 벌까요? 라는 질문에 자신있게 Yes라면, AI를 활용했을 때 당장 돈을 더 벌 수 있습니다.\n그런데 지금 돈을 벌지 않고 있고, AI를 안썼을때 언제 돈벌지 기약이 없다면, AI를 써도 똑같습니다. 단지 여러분의 시간을 아껴주는 도구니까요.\n이상, AI 서비스 런칭 2달 반만에 매출 3억 한 스타트업 대표가 씀",
+      "media": [],
+      "crawled_at": "2026-03-18T17:49:26.203",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DU-E09dE0YA",
+      "user": "elon_sbm",
+      "timestamp": "2026-02-20 15:37:40",
+      "original_item_count": 7,
+      "platform_sequence_id": 390
+    },
+    {
+      "sequence_id": 560,
+      "sns_platform": "threads",
+      "code": "DVF6j0HDn4B",
+      "full_text": "드디어 옵시디언에 쓸 만한 AI 통합했다..!!",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/640462768_17945133462116197_6314056529601088599_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMjE1NHgxNDQwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QEZbA3EKe0ybH2frozZm_gr-qbfc7PUH_SnxyWbU8IxFl7n76FipOUsbt3nIFXNEXk&_nc_ohc=Tc82TYFUptIQ7kNvwHKG2nL&_nc_gid=i9bvDybnpb1ltjvs1kSzsQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzODczMTgwNTIzNTUxMDc4NQ%3D%3D.3-ccb7-5&oh=00_AfwU3qWSdmg9dIJVesqZFHftH_sU7ySDgrY0RiwIHvinVA&oe=69C049D5&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:49:29.223",
+      "local_images": [
+        "web_viewer/images/8687c2d1ef69710103d722dc13d449ff.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVGDcUhk3Ye",
+      "user": "hyunsdev",
+      "timestamp": "2026-02-23 16:41:53",
+      "original_item_count": 1,
+      "platform_sequence_id": 385
+    },
+    {
+      "sequence_id": 561,
+      "sns_platform": "threads",
+      "code": "DVF1Q1qjwN7",
+      "full_text": "[딸깍책 만드는 방법 공개! 절대로 따라하시면 안됩니다.]\n\n1. 목차 json을 만듭니다.\n2. api는 비싸니까 gemini canvas를 씁니다.\n3. html은 기능이 부족하니까 svelte를 씁니다.\n4. antigravity에게 svelte릍 써서 단일 html를 만들어 달라 합니다.\n5. 완성된 코드를 캔버스에 넣습니다. \n\n이제 버튼 하나만 누르면 책 1권이 완성!\n\n* 아무도 따라하지 않을걸 알아요..\n* 만들어진 책 샘플은 링크에서 봐주세요!\n* 판매할 목적이 아닙니다. 퀄리티는 부족해요!\n* 재미로 만든 프로젝트 입니다 😆\nhttps://www.notion.so/310e0b8582b78089ba60e09dce1f7fcd?source=copy_link",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/641296969_17875508538521221_3306748074657523754_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTU5M3gxNjU1LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QF7LFsgQvHnwkR6xj7n11IYYnR1cnxhUkS0sJsp4N4d3CT7VSA88G_rqsHuRnIZB9w&_nc_ohc=-x51d3smVoUQ7kNvwGXXZy_&_nc_gid=Z_X3hjpy4k0d8mfADqDYCQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzODcwODUxMTAwMjI2NDQ0Mw%3D%3D.3-ccb7-5&oh=00_Afz08FDYvp4LB11SHMFpKCb1jB4DITJ6gkPJhryznpR8mA&oe=69C02DB5&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:49:29.224",
+      "local_images": [
+        "web_viewer/images/37147cdf108636f954f848913363276a.webp"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVF1Q1qjwN7",
+      "user": "miniminim71",
+      "timestamp": "2026-02-23 15:55:36",
+      "original_item_count": 1,
+      "platform_sequence_id": 383
+    },
+    {
+      "sequence_id": 562,
+      "sns_platform": "threads",
+      "code": "DVFTox8j7-Q",
+      "full_text": "[Openclaw 세팅을 해보면서]\n\n윈도우 + 도커 + codex oauth + 텔레그램 + 백업히 암호화로 구성했습니다.\n\n1. 요금제 폭탄 : codex oauth로 연결. -> 인증서 탈취당해도 파산하지는 않아요!\n\n2. 보안이슈 : 게이트웨이가 뚫리면 컴퓨터에서 무슨 일이 일어날지 모름 -> 도커로 최소한의 안전장치\n\n3. 그럼에도 불구하고 : \"편리성\" \"멋\" \"개인화\" \"통제가능\"\n\n쓰기 전에는 이해하지 못했습니다. 뭐든지 경험해 봐야 합니다.\n\n- 산출물, 채팅기록 데이터를 전부 로컬에 확보해서 통제 가능\n- 하나 채팅에서 모든 작업 가능\n- 아이디어 던져주면 상호작용 하면서 구체화, 해당 내용을 정리하여 로컬에 문서화 가능.\n- Soul.md에 적어놓은 성격대로 행동해서 애착이 감.\n- 일하는 모습을 보지 않아도 됨. 에이전트가 일하는 모습을 멍하니 보는 것도 고된 일임.\n- 나만의 작은 비서..\n\n---\n\n* 보안이 무서워서 구글드라이브, 이메일 등등 다른 계정연결은 못시켰습니다.",
+      "media": [],
+      "crawled_at": "2026-03-18T17:49:29.224",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVFTox8j7-Q",
+      "user": "miniminim71",
+      "timestamp": "2026-02-23 11:01:46",
+      "original_item_count": 2,
+      "platform_sequence_id": 384
+    },
+    {
+      "sequence_id": 563,
+      "sns_platform": "threads",
+      "code": "DVClwD0k_ko",
+      "full_text": "SaaS 기능 하나 추가할 때마다\n\"이건 진짜 치트키다\" 싶은\n나만의 프롬프트 공유!\n\n여러분도 있나요?\n\n---\n\n\"GitHub, npm, PyPI, HuggingFace에서 [기능명]을 구현할 수 있는 오픈소스 라이브러리를 찾아줘. 각각 ⭐스타 수, 최근 업데이트일, 장단점, 라이선스를 비교표로 정리하고 추천해줘\"\n\n---\n\n\"잠시 실행을 멈추고, 실패의 원인을 깊게 생각해보고, 개선할수 있는 단계별 계획을 세워줘\"\n\n---\n\n\"코드베이스를 전부 읽어보고, 다시 분석해보자\"\n\n---\n\n\"[경쟁 SaaS명]의 핵심 기능, 가격 정책, UI 구조, 부족한 점을 분석해줘. 우리가 차별화할 수 있는 포인트 3가지를 제안해줘\"\n\n---\n\n\"기능을 구현하는 데 쓸 수 있는 외부 API를 찾아줘. 무료 플랜 한도, 응답 속도, 가격, 문서 품질을 비교해줘\"\n\n---\n\n\"데이터베이스 스키마를 설계해줘. 테이블, 관계, 인덱스 포함. ERD 형태로 보여주고 마이그레이션 SQL도 줘\"\n\n---\n\n\"이 에러 메시지를 분석해줘 원인 3가지와 해결 방법을 우선순위대로 알려줘. 비슷한 GitHub Issue가 있으면 링크도\"\n\n---\n\n\"이 코드를 리뷰해줘. 보안 취약점, 성능 이슈, 클린코드 관점에서 개선점을 알려주고 리팩토링 코드를 보여줘\"\n\n---\n\n이 기능에 대한 테스트 케이스를 만들어줘. 정상 케이스, 엣지 케이스, 에러 케이스 포함. Jest/Pytest 코드로 작성해줘\"",
+      "media": [],
+      "crawled_at": "2026-03-18T17:49:32.277",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVClwD0k_ko",
+      "user": "gurunamu.ai",
+      "timestamp": "2026-02-22 09:42:19",
+      "original_item_count": 10,
+      "platform_sequence_id": 379
+    },
+    {
+      "sequence_id": 564,
+      "sns_platform": "threads",
+      "code": "DVEARfHE-d2",
+      "full_text": "클로드코드 성능 100배로 즐기는 방법\n스테로이드 맞은 클로드코드 설정, 이거면 됩니다.\n\n'oh-my-claudecode' 설치\n아래는 명령어 모음입니다.\n\n계획 / 설계\n1. /plan : 큰 작업 시작 전\n- 전략 수립 + 실행 계획\n2. /ralplan : 중요한 설계 결정\n- 플래너 + 아키텍트 + 크리틱 3명이 합의할때까지 반복\n\n코드 작업\n1. /ralph : 끈까지 완료해야 할 작업\n- 자동 반복 - 구현 + 검증 완료까지 멈추지 않음\n2. /autopilot : 아이디어 하나로 전체 구현\n- 스펙 > 설계 > 구현 > QA > 검증 5단계 작동\n3. /build-fix : 빌드/타입 에러 날 때\n- 최소 변경으로 빌드 에러만 수정\n4. /tdd : 버그 수정할 때\n- 테스트 먼저 작성 > 실패 확인 > 수정 > 통과\n\n---\n\n코드 리뷰/분석\n1. /code-review : PR 전 품질 점검\n- 종합 코드 리뷰(보안, 품질, 스타일)\n2. /security-review : 배포 전 보안 점검\n- 취약점, 인증, OWASP Top 10\n3. /analyze : 버그 원인 모를 때\n- 근본 원인 분석 + 디버깅\n\n작업 유형별 추천 흐름\n\n“버그 고치기”\n/analyze → /tdd → /code-review\n\n“새 기능 만들기”\n/plan → /ralph → /code-review\n\n“아이디어를 처음부터 끝까지”\n/autopilot (한 마디면 됩니다)\n\n“배포하기”\n~/.claude/scripts/deploy.sh /프로젝트경로",
+      "media": [],
+      "crawled_at": "2026-03-18T17:49:32.277",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVEARfHE-d2",
+      "user": "lean._.kim",
+      "timestamp": "2026-02-22 22:53:19",
+      "original_item_count": 2,
+      "platform_sequence_id": 380
+    },
+    {
+      "sequence_id": 565,
+      "platform_id": "DVCgrxUD8zJ",
+      "sns_platform": "threads",
+      "code": "DVCgrxUD8zJ",
+      "username": "hmpglab",
+      "display_name": "HMPG",
+      "full_text": "가장 잘 팔리는 랜딩페이지 구조 (Probably)",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/638880311_17890993458425243_4473387493682560008_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTA1MngyMTYwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2QGkEeJmxKvhaQiGrZysyyFGG0pgLm1bZpI2hb7g8GL6CkKkFFRSrP_2roXslLfkErY&_nc_ohc=l7ISW-ySisEQ7kNvwEGfUwQ&_nc_gid=uyk88_IbALJXn31Sh70ttg&edm=AI6eXeABAAAA&ccb=7-5&ig_cache_key=MzgzNzc3MzU3Nzg0ODg2ODA0MQ%3D%3D.3-ccb7-5&oh=00_AfwUZ9g-nXbH0RsUzaWoaoCQgeoWkty7joq0GwT1P89Y8A&oe=69C048CB&_nc_sid=6efbad"
+      ],
+      "url": "https://www.threads.net/@hmpglab/post/DVCgrxUD8zJ",
+      "created_at": "2026-02-22 08:58:03",
+      "date": "2026-02-22",
+      "crawled_at": "2026-03-18T17:49:32.277",
+      "source": "network",
+      "local_images": [
+        "web_viewer/images/6c42397ba0233bfd00e730fb8f2d26a2.jpg"
+      ],
+      "is_merged_thread": false,
+      "root_code": "DVCgrxUD8zJ",
+      "like_count": 198,
+      "reply_count": 25,
+      "repost_count": 83,
+      "quote_count": 2,
+      "pk": "3837773577848868041",
+      "media_type": 1,
+      "content_type": "image",
+      "platform_sequence_id": 381
+    },
+    {
+      "sequence_id": 566,
+      "sns_platform": "threads",
+      "code": "DVEN_4dDyZt",
+      "full_text": "[프롬프트 공부, 제발 그만하세요.]\n\nAI한테 일을 시키면,\n결과물은 결국 \"내 의도\"에서 나오죠.\n\n그런데, 인터넷에서 복사한 그 프롬프트. 내 업무에서도 잘 돌아갈까요?\n- 상황이 다르고\n- 원하는 결과물이 다르고\n- 내 머릿속 기준이 비어 있고\n\n메타 프롬프트는 이 끔찍한 \"소통\" 문제를 해결하기 위해\nAI가 직접 상위 프롬프트를 \"설계\"해서\n어떤 업무든 최적의 조건으로 실행되게 만드는 방식입니다.\n\n그래서 프롬프트 작성이 이렇게 바뀝니다.\n\"어떻게 지시하지?\" → \"AI가 나한테 질문하게 만들어\"\n\n---\n\n[문제는 '내 의도'입니다]\n\nAI가 뻔하고 쓸모없는 대답을 하는 이유.\n간단합니다. 내 질문이 뻔하기 때문입니다.\n\n1. AI는 글을 아주 잘 씁니다. 하지만 내 머릿속을 '독심술'로 읽지는 못합니다.\n2. 초보자는 반대로 '내가 뭘 원하는지' 정확히 모릅니다. 두루뭉술하게 지시하죠.\n\n지금은 이 둘을 뒤집어서, \n\"질문은 AI가\" 하고 \"답변은 내가\" 하는 방식이 열렸습니다.\n\n---\n\n[프롬프트를 만드는 프롬프트 - 응용!]\n\n핵심은 \"역프롬프트\"입니다.\n내가 억지로 템플릿을 짜내는 게 아니라, AI를 프롬프트 전문가로 빙의시키는 겁니다.\n\n1. 내가 원하는 목표만 대충 던져주면,\n2. AI는 그 목표를 달성하기 위해 필요한 '핵심 조건'들을 내게 역으로 질문합니다.\n\n인간이 질문하고 AI가 답한다는 고정관념을 깨버리는 거죠.\n\n---\n\n[실전: 10초 만에 완벽한 지시 내리기]\n\n이렇게 입력해보세요. 빈칸 채우기 놀이가 시작됩니다.\n\n\"너는 안드레 카파시라는 프롬프트 엔지니어야. \n내가 [블로그 글]을 쓰려고 하는데, 완벽한 결과물을 내기 위해\n나한테 필요한 정보 5가지를 역으로 질문해.\n그 후 답변에 기반하여 프롬프트 템플릿을 생성해줘.\"\n\nAI는 즉각 타깃 독자, 핵심 메시지, 피해야 할 어조 등을 물어봅니다.\n질문에 대답만 툭툭 던져주면, AI가 그 답변을 조합해 스스로 '완벽한 프롬프트'를 완성합니다.\n\n---\n\n[AI 시대의 진짜 실력]\n\n결국 프롬프트 작성의 핵심은 “화려한 템플릿 복사”가 아니라\n“명확한 목적과 기준”을 세우는 일입니다.\n\n1. 목적을 정하고 (기획)\n2. AI의 질문에 답하고 (방향 설정)\n3. 나온 결과물을 평가합니다 (의사결정)\n\n명령하지 말고, AI에게 인터뷰를 당하세요. \n이게 막막한 프롬프트의 압박에서 벗어나는 가장 빠른 길입니다.\n\n이 글이 실무에 도움이 되셨다면 팔로우를 눌러 매일 실용적인 AI 인사이트를 받아보세요!",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/639746177_17875430295521221_85879276178080592_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTAyNHg1NDcuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QEdtIHboLFVvySCf5ifdrs6DSWgd11RLZKK1rYVVzO8ean8iT-jZPjT2L9xce_MJG4&_nc_ohc=t2J6jsakNHoQ7kNvwG76Tp5&_nc_gid=nS-TIRUQQ7VWcuaSU8Meuw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzODI1NDM0Njk3NTI1ODIyMQ%3D%3D.3-ccb7-5&oh=00_AfyxKKV7RQwGts30IaQAG_uvp7pg-bRZUNNrzWK_M6Ja7w&oe=69C0293F&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:49:32.277",
+      "local_images": [
+        "web_viewer/images/57a492cf94c60a36ec79f2ee93362f05.webp"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVEN_4dDyZt",
+      "user": "miniminim71",
+      "timestamp": "2026-02-23 00:53:15",
+      "original_item_count": 5,
+      "platform_sequence_id": 382
+    },
+    {
+      "sequence_id": 567,
+      "sns_platform": "threads",
+      "code": "DUsx9e4EsJJ",
+      "full_text": "Wharton × BCG 연구에서 758명 컨설턴트를 대상으로 실험했는데,\n\nAI를 쓴 하위 퍼포머의 82%가 상위권으로 올라갔다고 합니다.\n\n이거 좋은 소식 같죠?\n\n저는 PM으로서 이게 가장 무서운 뉴스였습니다.\n왜 무서운지 이야기해볼게요.\n\n---\n\n평소 운영정책서 구조 설계하는데 꽤 시간이 걸렸어요.\n경쟁사 분석은 몇일, 회의록 정리는 30분.\n\n근데 Claude한테 시켰더니\n정책서 30분, 경쟁사 분석 하루, 회의록 3분.\n\n야근이 사라졌습니다.\n근데 동시에 불안해졌어요.\n\n---\n\n내가 몇년에 걸쳐 쌓은 정책서 노하우를\n신입이 AI 버튼 하나로 비슷하게 뽑아낸다면?\n\nMollick 교수 말대로, AI는 모두를 상위권으로 끌어올립니다.\n\n그 말은 곧 — 당신의 경력 우위가 평준화된다는 뜻.\nFortune에서도 “AI가 도제 시스템을 붕괴시키고 있다”고 했어요.\n\n---\n\n그런데 이상한 게 하나 있었어요.\n\n같은 AI를 쓰는데 제가 쓰면 한 번에 쓸 만한 게 나오고 동료가 쓰면 쓰지 못할 결과물이 나왔어요.\n\n차이는 하나였어요.\n\n저는 “우리 서비스는 이런 맥락이고, 지난번에 이런 이유로 이렇게 결정했고라는“ 컨텍스트를 AI가 알고 있었지만\n\n동료의 AI는 동료의 컨텍스트를 모르고 있었어요.\n\n---\n\n이는 같은 AI를 쓰더라도 누가 어떻게 쓰냐에 따라 시니어 퀄리티가 나오고, 신입 퀄리티가 나올 수 있다는 것이었어요.\n\n결과물 차이의 핵심은 자기 경험과 판단 기준을 얼마나 정확하게 AI에게 전달하느냐. 그 차이였어요.\n\n이걸 “컨텍스트”라고 부릅니다.\n\n---\n\n문제는 이 컨텍스트가 전부 머릿속에만 있다는 거예요.\n\n“그때 왜 그렇게 결정했어요?” → 기억 안 남\n“비슷한 거 전에 했었는데…” → 기록 없음\n“퇴사한 동료 업무 인수” → 지식 전부 증발\n\n기록 안 하면 AI한테 전달할 수도 없고,\n전달 못 하면 그저그런 결과가 나옵니다.\n\n---\n\n그래서 저는 지금 의사결정 기준, 판단 근거, 맥락을\n매일 기록하고 있습니다.\n\nAI가 모두를 같게 만드는 시대, 유일하게 복제 불가능한 건 ‘나의 맥락’이에요.\n\n기록하세요.\n\n그게 AI 시대 진짜 경쟁력입니다.\n\n다음 글에서 어떻게 메모하고, 어떻게 업무에 적용하는지 알려드릴게요.",
+      "media": [],
+      "crawled_at": "2026-03-18T17:49:32.278",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DUsx9d3kqWM",
+      "user": "overtime.sam",
+      "timestamp": "2026-02-13 22:25:43",
+      "original_item_count": 7,
+      "platform_sequence_id": 375
+    },
+    {
+      "sequence_id": 568,
+      "sns_platform": "threads",
+      "code": "DVDzCMjDyOw",
+      "full_text": "스레드에서 핫한 바이브 코딩 방법 2탄 🔥\n오늘은 2일차 Claude Skills 입니다!\n\nClaude Skills 없이 Claude를 쓰신다면\n절반만 사용하고 계신 겁니다\n\n---\n\n1️⃣ Claude Skills란?\n\n필요할 때 불러오는 ‘업무 매뉴얼’\n한 스킬은 이렇게 구성돼요.\n\nmy-skill-name/\nㄴ SKILL.md (필수) : instructions + metadata\nㄴscripts/ (옵션) : executable code\nㄴreferences/ (옵션) : documentation\nㄴassets/ (옵션) : templates, resources\n\nSkill은 꼭 코딩에 국한되지 않고\n다양한 분야에서 사용 가능해요\n\n---\n\n2️⃣ Claude Skills의 핵심은? \n\nProgressive Disclosure(점진적 로딩)\n매번 ‘모든 지식’을 프롬프트에 붙이는 대신,\n\n(1) Frontmatter(메타데이터) 먼저 보고\n(2) 필요하면 SKILL.md 본문 로드\n(3) 더 필요할 때만 추가 파일 오픈\n\n→ 토큰 아끼면서도 일관성은 올립니다.\n\n---\n\n3️⃣ 나만의 Claude Skills 만들기\n\n1) ‘skill-creator’ 설정 키기 \nClaude 사이트에서 \"설정 > 기능 > 스킬\"\n\n예시 스킬 클릭하고 스크롤 내려서\nskill-creator를 켜주세요!\n\n다른 스킬들을 자동으로 만들고 \n수정하고 업데이트 시켜줍니다\n\n---\n\n2) ‘skill-creator’ 사용해보기\n\n만들고 싶은 스킬을 상세히 설명하고 \n> skill-creator를 사용해서 ~~~스킬을 만들어줘 \n(클로드 웹사이트, 터미널, 앱 어디서든 가능)\n\n생성된 SKILL.md를 읽어보고 \n\n마음에 든다면 플러그인 설치를 요청합니다\n> 이 플러그인을 설치해줘 \n\n혹은 파일 자체를 다운로드 받아서\n업로드 할 수도 있어요\n\n---\n\n3) 나만의 Skill 사용하기\n\n이제 새로운 창에서 \n방금 만든 스킬의 이름과 함께 사용해달라고 요청\n제대로 작동하는지 테스트해보세요!\n\n---\n\n4️⃣ Claude 내장 Skills 4가지\n\nPowerPoint/Excel/Word/PDF\n기본적으로 Claude에서 제공하는 Skill 입니다\n\n익숙하시죠? ㅎㅎ\n\n그냥 원하는 내용 넣고 PowerPoint로 만들어줘\n하면 바로 만들어 줍니다\n\n---\n\n5️⃣ 유명한 Skills 추천\n\n1) Anthropic 공식 스킬팩 - 문서/디자인/테스트/MCP \nhttps://github.com/anthropics/skills\n\n2) Vercel 스킬팩 - 프론트엔드, 배포\nhttps://github.com/vercel-labs/agent-skills\n\n3) Superbase 스킬팩 - DB, 백엔드\nhttps://github.com/supabase/agent-skills\n\n4) Hugging Face 스킬팩 - AI/ML(데이터셋/학습/평가/배포)\nhttps://github.com/huggingface/skills\n\n---\n\n5) Google Stitch 스킬팩 - 디자인→코드 파이프라인 + Stitch MCP 연동\nhttps://github.com/google-labs-code/stitch-skills\n\n6) Remotion 스킬팩 - Remotion 영상 제작\nhttps://github.com/remotion-dev/skills\n\n7) Stripe 스킬팩 - 결제/Stripe 통합 + API\nhttps://github.com/stripe/ai\n\n---\n\n6️⃣ 유명한 Skills 마켓플레이스\n\n1) Trail of Bits 스킬 마켓플레이스 - 보안/정적분석/리뷰/테스트\nhttps://github.com/trailofbits/skills\n\n2) Trail of Bits Curated - 검토/승인된 플러그인/스킬 마켓\nhttps://github.com/trailofbits/skills-curated\n\n3) MarketingSkills - 마케팅/CRO/SEO/카피/분석/그로스\nhttps://github.com/coreyhaines31/marketingskills\n\n4) Anthropic 공식 플러그인 디렉토리 - 고품질 Claude Code 스킬, 플러그인 \nhttps://github.com/anthropics/claude-plugins-official\n\n5) Awesome Claude Skills(큐레이션) - 유명 스킬/도구/리소스 모음\nhttps://github.com/travisvn/awesome-claude-skills\n\n---\n\n7️⃣ SKILL.md 구성 요소\n\n위에서 하면 복잡하다고 생각할까봐\n마지막에 넣었습니다 :)\n\nSKILL.md 파일 구성 요소\n> name(필수): 1–64자, 소문자/숫자/하이픈, 폴더명과 일치\n> description(필수): 1~1024자, “무엇을” + “언제 쓰는지(트리거)” 포함\n> license(옵션)\n> compatibility(옵션) : 1~500자\n> metadata(옵션: author/version 등)\n> allowed-tools(옵션/실험)\n\n본문 내용\n> 단계별 지침\n> 입력 및 출력 예시\n> 일반적인 예외 상황\n\n이 파일을 사용할지 아닐지를 결정하는\nname과 description이 정말 중요합니다\n\n---\n\n여기까지 읽은 분들이라면 댓글을 남겨주세요😊\n\n이제 글을 옆에 두고 PC로 직접 Skill을 만들면\n나만의 업무 메뉴얼이 완성됩니다\n\n내일도 저녁 9시에 뵙겠습니다!",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/641354730_17854355436669671_561850571973342141_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTY3MngxNDE4LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2QHjh4Al23QvDaUfqtMAMb3mlSIfOPHyaK7kx4fYJoMU8ydHZzcpd5YU_EkKx5btmUk&_nc_ohc=vCWiA7x42EoQ7kNvwFLH83j&_nc_gid=zZ_L26Edp4fCAxWlVaF5aw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzODEzNTgwMTYyNDg3Njk5Ng%3D%3D.3-ccb7-5&oh=00_Afyy1T0fb19Q1AZuE9WKf3Om5XuYI-bRK8_VjC_elbMphw&oe=69C0491C&_nc_sid=10d13b",
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/639558122_17854355478669671_1709380848102563193_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTI1NngzNzQuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2QHjh4Al23QvDaUfqtMAMb3mlSIfOPHyaK7kx4fYJoMU8ydHZzcpd5YU_EkKx5btmUk&_nc_ohc=ubYjo3ELQPwQ7kNvwGtoVyU&_nc_gid=zZ_L26Edp4fCAxWlVaF5aw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzODEzNTgwMjQwNTAyNjA3NA%3D%3D.3-ccb7-5&oh=00_AfxRh4fas6bfBBfTONFea006s-jiC3eJvnSnDiyz78sNrA&oe=69C0244C&_nc_sid=10d13b",
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/639719327_17854355490669671_353282497901927054_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTk2NHgxNDMwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2QHjh4Al23QvDaUfqtMAMb3mlSIfOPHyaK7kx4fYJoMU8ydHZzcpd5YU_EkKx5btmUk&_nc_ohc=Nsd1kmwo5IEQ7kNvwFrvwY-&_nc_gid=zZ_L26Edp4fCAxWlVaF5aw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzODEzNTc2MjgxMDgyNTI1MQ%3D%3D.3-ccb7-5&oh=00_AfwIq059QmFwJlpBJ-Q2oHdqVFK9wbaBeeNXJqvknM9unA&oe=69C032BE&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:49:32.278",
+      "local_images": [
+        "web_viewer/images/399f846978593a82b55c5bc95b9165fe.webp",
+        "web_viewer/images/00c0dc80c0bea335d58f5929941c1b8b.jpg",
+        "web_viewer/images/3c6c4f99860d3aad398db8f60b8766dd.webp"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVDzCMjDyOw",
+      "user": "lian.lab71",
+      "timestamp": "2026-02-22 20:57:38",
+      "original_item_count": 12,
+      "platform_sequence_id": 377
+    },
+    {
+      "sequence_id": 569,
+      "sns_platform": "threads",
+      "code": "DU9prNND-Xv",
+      "full_text": "내가 아는 인스타그램, 스레드 키우는 방법\n\n1. 초반에 유사 주제 계정 팔로우 \n> 알고리즘한테 나는 ~~ 계정이야\n2. 한 가지 주제로 계속 글 발행 \n> 초반 알고리즘 세팅 \n3. 터진 글(저장, 리트윗, 조회수 등) 포맷 참고\n> 이미 보장된 방식\n4. SNS는 관계형! 댓글 소통하는 것 좋음 \n5. 불특정 다수 노출 조심하기 \n> 스하리, 맞팔, 1000명프로젝트 등\n> 일상계정은 몰라도 주제 뾰족하다면 알고리즘 망가짐\n6. 초반에 노출 잘시켜줌 \n> 특히 스레드 첫글 \n\n결론\n바이브 코딩, AI 관심 있는 분들 소통해요😉",
+      "media": [],
+      "crawled_at": "2026-03-18T17:49:32.278",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DU9prNND-Xv",
+      "user": "lian.lab71",
+      "timestamp": "2026-02-20 11:40:25",
+      "original_item_count": 1,
+      "platform_sequence_id": 378
+    },
+    {
+      "sequence_id": 570,
+      "platform_id": "DVDyfo6E0Ha",
+      "sns_platform": "threads",
+      "code": "DVDyfo6E0Ha",
+      "username": "overtime.sam",
+      "display_name": "평범한 직장인",
+      "full_text": "같은 ChatGPT 쓰는데\n10명 중 1명은 한 번에 원하는 답을 받고\n나머지 9명은 수없이 고쳐요.\n\n프롬프트 차이라고 생각하시죠?\n아닙니다.\n\n차이는 하나\nAI가 '나'를 아느냐 모르느냐.\n\nAI가 나를 알게 하는 법\n5단계로 정리해봤습니다.",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/628848481_17945888730111285_8761177333983770489_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTA4MHg2MDguc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QEEiDlYsn1wLt3KD-q9AhlyuuxZdUT2hAXpf9XOLK34eu18DcNHRxNIzSxIbmLpE-I&_nc_ohc=J4KKWXb1d9kQ7kNvwGbw8HU&_nc_gid=sRs4uROfcQj5QP2D-Sy6SQ&edm=AI6eXeABAAAA&ccb=7-5&ig_cache_key=MzgzODEzMzM4NDAwMzE0MjEwNg%3D%3D.3-ccb7-5&oh=00_Afy8NwhrOWrN69pbc8NZjL2eFgwdzb_BCKl17--WAETkDQ&oe=69C03EC5&_nc_sid=6efbad"
+      ],
+      "url": "https://www.threads.net/@overtime.sam/post/DVDyfo6E0Ha",
+      "created_at": "2026-02-22 20:53:31",
+      "date": "2026-02-22",
+      "crawled_at": "2026-03-18T17:49:35.306",
+      "source": "network",
+      "local_images": [
+        "web_viewer/images/4bca590ba04cb709081f678574e93b56.jpg"
+      ],
+      "is_merged_thread": false,
+      "root_code": "DVDyfo6E0Ha",
+      "like_count": 54,
+      "reply_count": 7,
+      "repost_count": 19,
+      "quote_count": 2,
+      "pk": "3838133384003142106",
+      "media_type": 1,
+      "content_type": "image",
+      "platform_sequence_id": 374
+    },
+    {
+      "sequence_id": 571,
+      "platform_id": "DVDyrs1E_Zv",
+      "sns_platform": "threads",
+      "code": "DVDyrs1E_Zv",
+      "username": "overtime.sam",
+      "display_name": "평범한 직장인",
+      "full_text": "[기록 도구: Obsidian]\n\n전 테슬라 자율주행 AI 디렉터\nKarpathy도 쓰는 메모/기록 서비스\n\nhttps://www.threads.com/@overtime.sam/post/DUviKJjEn6L",
+      "media": [],
+      "url": "https://www.threads.net/@overtime.sam/post/DVDyrs1E_Zv",
+      "created_at": "2026-02-22 20:55:08",
+      "date": "2026-02-22",
+      "crawled_at": "2026-03-18T17:49:35.307",
+      "source": "network",
+      "is_merged_thread": false,
+      "root_code": "DVDyrs1E_Zv",
+      "like_count": 6,
+      "reply_count": 1,
+      "repost_count": 0,
+      "quote_count": 0,
+      "pk": "3838134212847990383",
+      "media_type": 19,
+      "content_type": "image",
+      "platform_sequence_id": 373
+    },
+    {
+      "sequence_id": 572,
+      "platform_id": "DU_0bkPk5Ht",
+      "sns_platform": "threads",
+      "code": "DU_0bkPk5Ht",
+      "username": "sleepcycle_",
+      "display_name": "정 놀 (그림)",
+      "full_text": "요즘 OMO 이렇게 씁니다.\n\n빠른 작업은 Gemini 3 Flash\n깊은 추론은 Gemini 3.1 Pro\n코드는 GPT-5.3 Codex\n기획·전략은 GPT-5.2\n\n아직 정답은 모르겠고\n일단 이렇게 실험 중입니다.",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/639854871_17946985242102227_5226695373109682834_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uODI0eDUxMC5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2QEEiDlYsn1wLt3KD-q9AhlyuuxZdUT2hAXpf9XOLK34eu18DcNHRxNIzSxIbmLpE-I&_nc_ohc=jJ2wONgds98Q7kNvwG_THOj&_nc_gid=sRs4uROfcQj5QP2D-Sy6SQ&edm=AI6eXeABAAAA&ccb=7-5&ig_cache_key=MzgzNzAxNjAwMDMwMzQzNjI2OQ%3D%3D.3-ccb7-5&oh=00_AfwxfTf3ZED7bB7ulZ0onBrgS-CCbojZ6KgujJTtPtdVdQ&oe=69C0290F&_nc_sid=6efbad"
+      ],
+      "url": "https://www.threads.net/@sleepcycle_/post/DU_0bkPk5Ht",
+      "created_at": "2026-02-21 07:52:53",
+      "date": "2026-02-21",
+      "crawled_at": "2026-03-18T17:49:35.309",
+      "source": "network",
+      "local_images": [
+        "web_viewer/images/9fc6ab3a2d1edf92bc50d44b792f20fd.jpg"
+      ],
+      "is_merged_thread": false,
+      "root_code": "DU_0bkPk5Ht",
+      "like_count": 5,
+      "reply_count": 0,
+      "repost_count": 0,
+      "quote_count": 0,
+      "pk": "3837016000303436269",
+      "media_type": 1,
+      "content_type": "image",
+      "platform_sequence_id": 371
+    },
+    {
+      "sequence_id": 573,
+      "sns_platform": "threads",
+      "code": "DVDwGuukjsS",
+      "full_text": "옵시디언으로 끝내는 완벽한 아침\n\n아침에 출근하자마자 브라우저 켜서 이메일 확인하고, 다시 메모 앱 켜서 일정 정리하느라 집중력 분산되시죠? \n\n저는 이렇게 합니다. 옵시디언 안에서 이메일을 확인하고 그 자리에서 답장까지 끝내는 프로세스를 구축하면 업무 효율이 차원이 달라집니다.\n\n하나 구축해두면 정말 편해..🥺 진짜 미쳐..\n\n---\n\n옵시디언에서 트렌드도 정리하고 바로 노트화합니다.",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/640296297_17925818613232485_7984860121028599500_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMjA4NHgxMjk4LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QGnrqd68xQu3EBC7WzOCAg9mbJaVDBSNlehzfN39eBemFiJDWx6DPtVen-LIN8bago&_nc_ohc=nb51l5ooRbUQ7kNvwHTE1X_&_nc_gid=505cMFsIfTqfT5Ntvfk74g&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzODEyMjg3NjE3MjY0NzE4Ng%3D%3D.3-ccb7-5&oh=00_Afzvh8-F3Gs_RXcuv19R4vEHTBPuWJVcvu7QGFMHGX8M3g&oe=69C03B41&_nc_sid=10d13b",
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/639746128_17925818784232485_3577622791522188542_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMjE2MHgxMzUyLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QGnrqd68xQu3EBC7WzOCAg9mbJaVDBSNlehzfN39eBemFiJDWx6DPtVen-LIN8bago&_nc_ohc=mUVgK3HSX1EQ7kNvwHqyeXz&_nc_gid=505cMFsIfTqfT5Ntvfk74g&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzODEyMzk2NjI1NTQ5MjgwOA%3D%3D.3-ccb7-5&oh=00_AfzflpEbOdi6VkRjebHPFRimnHfbX8gUDj1txqi8IdJyIg&oe=69C05526&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:49:35.309",
+      "local_images": [
+        "web_viewer/images/727424468673761f0f6f976f0b569fca.jpg",
+        "web_viewer/images/9d3bddf0245497bade72ee2f29fcc7ff.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVDwGuukjsS",
+      "user": "aicoffeechat",
+      "timestamp": "2026-02-22 20:32:03",
+      "original_item_count": 2,
+      "platform_sequence_id": 372
+    },
+    {
+      "sequence_id": 574,
+      "platform_id": "DU-25MCkxF8",
+      "sns_platform": "threads",
+      "code": "DU-25MCkxF8",
+      "username": "mindly.im",
+      "display_name": "mindly",
+      "full_text": "claude.md 파일은 100-150줄이 권장입니다. 150줄이 넘어가면 성능이 저하되기  시작하고 500줄이 넘어가면 심각한 성능저하 뿐아니라 대부분 무시됩니다 (출처 공식문서)\n\nhttps://code.claude.com/docs/en/best-practices",
+      "media": [],
+      "url": "https://www.threads.net/@mindly.im/post/DU-25MCkxF8",
+      "created_at": "2026-02-20 22:55:09",
+      "date": "2026-02-20",
+      "crawled_at": "2026-03-18T17:49:35.311",
+      "source": "network",
+      "is_merged_thread": false,
+      "root_code": "DU-25MCkxF8",
+      "like_count": 53,
+      "reply_count": 1,
+      "repost_count": 5,
+      "quote_count": 0,
+      "pk": "3836745357016109436",
+      "media_type": 19,
+      "content_type": "image",
+      "platform_sequence_id": 367
+    },
+    {
+      "sequence_id": 575,
+      "sns_platform": "threads",
+      "code": "DU4CiXBE0tD",
+      "full_text": "클로드 코드 힘든 사람을 위해서 요약해봤어.\n\n잘 활용하길.\n\n[ 클로드 코드(Claude Code) 2026 풀 코스: 빌드 & 판매 가이드 ]\n\n1. 개요 및 시작\n초보자를 위한 클로드 코드의 결정판\n\n학습 내용:\n\n- 클로드 코드 다운로드 및 설정\n\n- 통합 개발 환경(IDE) 비교 (VS Code, Anti-Gravity 등)\n\n- 프로젝트의 뇌라 불리는 Claude.md 파일 설정\n\n- 실전 프로젝트: 웹 앱 빌드 및 라이브 호스팅\n\n- 클로드 디렉토리, 서브 에이전트, 규칙(Rules) 관리\n\n- 다양한 모드 활용: 플랜(Plan) 모드, 권한 우회(Bypass) 모드\n\n- 컨텍스트(Context) 관리 및 토큰 효율화\n\n- MCP(Model Context Protocol) 및 외부 도구 연결\n\n- 자동화 배포: Modal, Netlify, GitHub Actions 활용\n\n---\n\n2. 설치 및 비용\n\n클로드 코드를 사용하려면 최소 Claude Pro 플랜(약 17달러) 이상의 구독이 필요합니다. 이것은 단순한 개발 도구가 아니라 여러분의 '두 번째 뇌' 역할을 하므로 생산성 측면에서 매우 저렴한 투자입니다.\n\n설치 방법 (터미널):\n\n공식 문서(code.com)의 설치 명령어를 복사합니다.\n\n터미널(Mac/Linux)이나 CMD/PowerShell(Windows)을 엽니다.\n\ncurl -fsSL https://claude.ai/install.sh | sh 와 같은 명령어를 실행합니다.\n\n설치 후 터미널에 claude를 입력하여 실행합니다.\n\n\\login 명령어로 앤스로픽 계정을 인증합니다.\n\n---\n\n3. 터미널 인터페이스 이해\n\n터미널에서 실행되는 클로드는 로컬 컴퓨터의 파일을 직접 수정하고 스크립트를 실행할 수 있는 강력한 권한을 가집니다.\n\n모델: 현재 사용 중인 모델(예: Claude 4.6 Opus) 표시.\n\n작업 디렉토리: 클로드가 현재 접근하고 있는 폴더 경로.\n\n토큰 및 컨텍스트: 대화 내용이 전체 컨텍스트 창(예: 20만 토큰) 중 얼마나 차지하는지 확인 가능.\n\n압축(Compression): 컨텍스트가 가득 차면 클로드가 자동으로 정보를 요약하여 효율성을 유지합니다.\n\n---\n\n4. IDE 설정: VS Code vs Anti-Gravity\n\n**IDE(통합 개발 환경)**는 파일 탐색기, 텍스트 편집기, AI 채팅 위젯이 합쳐진 도구입니다.\n\nVisual Studio Code (VS Code): 가장 대중적이며 공식 클로드 코드 확장 프로그램을 지원합니다.\n\nAnti-Gravity (Cursor의 진화형): AI 중심의 현대적 IDE로, 클로드 코드와 더욱 깊게 통합되어 있습니다.\n\n사용법: 확장 프로그램 탭에서 'Anthropic Claude Code'를 검색하여 설치합니다. 'Edit automatically' 또는 'Bypass permissions' 모드를 선택해 생산성을 높일 수 있습니다.\n\n---\n\n5. 실전 빌드: 웹사이트 디자인 워크플로우\n\n클로드 코드를 사용하여 단 10분 만에 고퀄리티 웹사이트를 만드는 방법입니다.\n\n디자인 3대 방식:\n\n스크린샷 루프: 영감을 주는 사이트의 전체 스크린샷을 찍어 클로드에게 주고, 클로드가 직접 확인하며 99% 일치할 때까지 수정하게 하는 방식.\n\n음성 트랜스크립트: 음성으로 요구사항을 길게 나열하여 클로드에게 전달.\n\n컴포넌트 복사: 21st.dev 같은 사이트에서 특정 UI 컴포넌트의 프롬프트를 복사하여 적용.\n\n핵심 철학 (Task-Do-Verify):\n\n고수준의 작업(Task)을 주고, 클로드가 실행(Do)하게 한 뒤, 스크린샷이나 테스트를 통해 결과물을 스스로 검증(Verify)하게 하는 루프가 품질을 결정합니다.\n\n---\n\n6. 고급 기능: .claude 디렉토리 및 규칙\n\n프로젝트 내의 .claude/ 숨김 폴더를 통해 클로드의 행동을 커스터마이징할 수 있습니다.\n\n'Claude.md': 프로젝트의 전역 지침서.\n\nrules/: 코드 스타일, 보안, 테스트 규칙을 별도 파일로 분리.\n\nskills/: 특정 자동화 작업(예: 아마존 쇼핑, 리드 수집)을 수행하는 체크리스트와 스크립트.\n\nagents/: 특정 역할(리서치, 코드 리뷰, QA)을 수행하는 하위 에이전트 정의.\n\n---\n\n7. 권한 모드와 플랜 모드\n\nAsk before edits (기본): 수정 전 매번 승인 필요.\n\nEdit automatically: 기존 파일은 자동 수정, 새 파일 생성 시 질문.\n\nBypass permissions: 모든 권한 허용 (속도가 빠르지만 위험성 있음).\n\nPlan Mode (강력 추천): 실제 빌드 전 리서치와 설계를 수행. \"5분의 계획이 20분의 코딩 시간을 절약\"하며 토큰 비용도 아껴줍니다.\n\n---\n\n8. 복잡한 앱 빌드: 제안서 생성 플랫폼\n\nSupabase(데이터베이스)와 Stripe(결제)를 연동한 풀스택 앱을 구축하는 실습입니다.\n\nPlan 모드 시작: 앱의 기능 정의 및 기술 스택 확정.\n\n환경 변수 설정: API 키(Supabase, Stripe, Anthropic) 주입.\n\n반복 수정: 로컬에서 실행하며 UI/UX 개선 (여백 조정, 애니메이션 추가 등).\n\n보안 주의: AI가 100% 보안을 책임지지 않으므로, 사용자 데이터를 다룰 때는 전문가의 검토가 필요합니다.\n\n---\n\n9. 컨텍스트 및 토큰 관리\n\n/context: 현재 토큰 사용량 상세 분석.\n\n/compact: 대화 요약을 통해 토큰 공간 확보.\n\n/clear: 대화 초기화.\n\n팁: 지침을 Claude.md에 너무 길게 적지 말고, 필요한 시점에만 로드되는 Skills로 옮기세요.\n\n---\n\n10. MCP 및 Skills를 통한 자동화\n\nMCP (Model Context Protocol): 클로드에게 브라우저 제어, 이메일 읽기, 데이터베이스 접근 권한을 주는 연결 도구.\n\nChrome DevTools MCP: 실제 크롬 브라우저를 열어 웹사이트를 탐색하고 스크린샷을 찍음.\n\n실습: Gmail의 이메일을 자동으로 읽어 중요도에 따라 라벨을 붙이는 기술(Skill) 개발.\n\n---\n\n11. 에이전트 팀과 병렬 처리\n\nSub-agents: 큰 작업을 쪼개어 하위 에이전트 여러 명에게 동시에 시키는 방식.\n\nAgent Teams: 매니저 에이전트가 여러 전문가 에이전트(디자이너, 개발자 등)를 자율적으로 관리.\n\n가치: 시간이 많이 걸리는 작업(예: 대규모 코드베이스의 보안 취약점 분석)을 병렬로 처리하여 수주 분량의 작업을 몇 분 만에 완료.\n\n---\n\n12. 배포 및 확장\n\nGit Worktrees: 여러 에이전트가 서로 다른 브랜치에서 충돌 없이 작업하게 하는 기술.\n\nModal 배포: 파이썬 기반 백엔드 기능을 URL 하나로 즉시 배포하여 외부 서비스(Make.com 등)와 연동.\n\n수익화: 이러한 기술을 통해 고객에게 자동화 시스템을 구축해주거나 고퀄리티 랜딩 페이지를 빠르게 제작하여 판매할 수 있습니다.\n\n클로드 코드는 단순한 툴이 아니라 여러분의 비즈니스 레버리지를 극대화하는 강력한 엔진입니다. 배운 내용을 바탕으로 자신만의 자동화 워크플로우를 구축해 보세요.",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/632513866_17946158196105671_3350381377317824396_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uOTk0eDk4MC5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2QHY3oABZhqGnMb3vSZdfUT6I7qjYpySzbtuMYC0JKAAnYiju-603yREcD2s5nxutqs&_nc_ohc=XPx45zHKA0MQ7kNvwGAPER2&_nc_gid=GH080lRuA3XW_vm5qmHJMA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNDgyNjIzOTk3NTMxMjE5NQ%3D%3D.3-ccb7-5&oh=00_Afx7Yvk81LvZQS__9S1tkeDy5C2uyx_rG9qId1IwF2GFJA&oe=69C04A48&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:49:35.311",
+      "local_images": [
+        "web_viewer/images/646a048b15fc19fcbdada2576318ee12.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DU4CiXBE0tD",
+      "user": "biggerthanseoul.ai",
+      "timestamp": "2026-02-18 07:22:13",
+      "original_item_count": 12,
+      "platform_sequence_id": 368
+    },
+    {
+      "sequence_id": 576,
+      "sns_platform": "threads",
+      "code": "DVDUL6jk9CG",
+      "full_text": "옵시디언 플러그인 만든거 별 63개, 사용자 59개국, 다운로드 10K 달성. 누군가에게는 아무것도 아닌 수치일 수 있으나 그래도 지난 수개월간 소소하게 개선하며 꾸준히 만들어온 결과. 바이브 코딩으로 매번 새로운거 만드는 것도 좋지만 서비스를 운영하며 얻는 보람과 경험치는 비교불가",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/639794923_17943897108108898_388823125645234832_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTc4NHg1NTIuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QFUW5nZClrY4UoqjLlraBZvWdoUnyGG4qTCQ9ye_JWogIgYXjbH_erBLC4DPJMkz9k&_nc_ohc=aYWzsw2xk1QQ7kNvwEb4wmg&_nc_gid=tr_cCMJ9QCPg2Egm3ZHfHQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzODAwMDA4NzE2ODE3NjI2Mg%3D%3D.3-ccb7-5&oh=00_AfwzQMOfy4RnCsTkqvcyxjsTTR6aB82EvgXp6YV0k9snSg&oe=69C0231C&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:49:35.311",
+      "local_images": [
+        "web_viewer/images/a20452a499d719ae734d921b728bca27.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVDUL6jk9CG",
+      "user": "gyunny",
+      "timestamp": "2026-02-22 16:28:05",
+      "original_item_count": 1,
+      "platform_sequence_id": 369
+    },
+    {
+      "sequence_id": 577,
+      "sns_platform": "threads",
+      "code": "DVAAYNFk-Wl",
+      "full_text": "Speakly 이거 뭐야…\n\nGenspark Speakly 써봤는데\n와… 진짜 오랜만에 UX에서 감탄 나옴.\n\n입코딩하려고 받아봤는데\n맥북에 Alfred 처음 깔았을 때 그 느낌이다.\n\n마우스 덜 쓰고\n생각 → 말 → 실행\n\n이 흐름이 이렇게 자연스럽다고?\n\n툴이 아니라 인터페이스가 바뀌는 느낌.\n이거 좀 무섭다.\n\n---\n\n아 혹시 필요하면 내 레퍼럴 링크 사용해서 가입해봐\n—\nGenspark Speakly를 사용해봤는데 정말 부드럽고, 업무 효율이 2배로 늘었어요! 강력 추천합니다!\n\nhttps://genspark.ai/speakly/invite/OGMxMmIyYzZMY2E0NEwxODA0TGNmYTI1OGNkNjg5YUxiYWEy\n(등록하면 우리 둘 다 무료 멤버십을 받을 수 있어요!)",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/639565075_17946998856102227_7193467278971994396_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTg4NngxNDQwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2QEpBR8ff8OHs_Z6U6xw5ZE7wT1ZWtjoCUXx7Nl0WBXtZ0RS8ge8R4OMU90wFoP9sKI&_nc_ohc=nyH4mHaVUJIQ7kNvwErDswL&_nc_gid=KJialD4g-k605nMWFB3W_A&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNzA2ODU0NTgzOTMyNjYyOQ%3D%3D.3-ccb7-5&oh=00_AfyQSuV58WwSaqB-RreWZ1gtDSfdP9GAasa10S01tL1xqw&oe=69C02226&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:49:35.311",
+      "local_images": [
+        "web_viewer/images/ef706bed1004921234c04d9858f7cb25.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVAAYNFk-Wl",
+      "user": "sleepcycle_",
+      "timestamp": "2026-02-21 09:37:17",
+      "original_item_count": 2,
+      "platform_sequence_id": 370
+    },
+    {
+      "sequence_id": 578,
+      "sns_platform": "threads",
+      "code": "DVAZ0f0Edg2",
+      "full_text": "안녕하세요 코드깎는노인입니다.\n클로드코드를 텔레그램으로 쉽고 편리하고 강력하게 원격제어하는 방법으로 특히 OAuth 문제 없이 어디서든 사용하는 누구나 따라할 수 있는 강력한 방법 공유드립니다!\n\n---\n\nhttps://www.youtube.com/watch?v=rGdyCUhmkqc\n\n---\n\nAWS EC2를 샌드박스로 사용하기\nhttps://cokacdir.cokac.com/#/ec2\n\n---\n\nmacOS에서 구동하기\nhttps://cokacdir.cokac.com/#/macos",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/637280750_17945335230107657_4789589926689489805_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTI4MHg3MjAuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QGOrCxOLSJVSt48NVrfo1OQY7F8CgZL8VhTaCX7l1Vsma34K2FcJ1mMGuVRksJNfHg&_nc_ohc=roOtZtrLutwQ7kNvwG8zJN_&_nc_gid=XkO2ySQKL_d4ZxfNZl3D7w&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNzE4MDQ0MTI1NDgxMTcwMg%3D%3D.3-ccb7-5&oh=00_AfzgauKmZGsHmtZys-SeIncoY_tPyyDyq7ETVORskanGbg&oe=69C04B9B&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:49:38.332",
+      "local_images": [
+        "web_viewer/images/71e03c6899951732243efc89c597b84b.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVAZ0f0Edg2",
+      "user": "cokac_com",
+      "timestamp": "2026-02-21 13:19:36",
+      "original_item_count": 4,
+      "platform_sequence_id": 363
+    },
+    {
+      "sequence_id": 579,
+      "sns_platform": "threads",
+      "code": "DU_QO6vE490",
+      "full_text": "디자인 실력 없는 기획자? 이제 걱정없다\n이렇게만 하면 Canva도 필요없음\n\n1. Gemini와 슬라이드별 구성(텍스트, 이미지)를 잡고\n2. Notebook LM에 복사한 텍스트를 소스로 추가한뒤\n3. 슬라이드 자료 만들어서\n4. 깨진 한글을 지우기위해 Gemini에게 돌아와서 \"이미지의 모든 텍스트를 삭제해달라\"고 한뒤\n5. Google Slide에서 텍스트 입력",
+      "media": [],
+      "crawled_at": "2026-03-18T17:49:38.332",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DU_QO6vE490",
+      "user": "euniceverasong",
+      "timestamp": "2026-02-21 02:36:35",
+      "original_item_count": 1,
+      "platform_sequence_id": 364
+    },
+    {
+      "sequence_id": 580,
+      "sns_platform": "threads",
+      "code": "DVAte0SkYvV",
+      "full_text": "Claude Code 혹은 Codex를 쓰다보면 특정 사이트에서 Fetch를 통해 데이터를 가져오지 못하는 경우 있지들 않아?\n\n그럴땐 Gemini CLI를 활용해봐 \n\nhttps://news.hada.io/topic?id=26526 \n링크에 들어가면 클로드 코드 해커톤 우승자들의 팁을 번역한 문서가 있어 \n\nGemini CLI를 통해 접근이 안되는 페이지에 내용을 가져오게 하는 방법이 있지\n\nQ.Playwright로 우회해서 접근하면 되는거 아냐?\nA. 그럼 그 컨텍스트와 토큰은 조상님이 대신 내줘? 속도도 느리고 말이야\n\n---\n\n나는 예전부터 클로드 코드의 CLAUDE.md에 Gemini CLI 호출 방식을 작성해서 사용해 왔어 \n\n근데 나도 이 방법은 최근에 알게되었고 매우 유용하게 사용하고 있어서 공유 해봐 \n\n아니면 내가 만든 mcp를 활용하는것 방법이야 !!\n\nhttps://github.com/Dokkabei97/all-agents-mcp",
+      "media": [],
+      "crawled_at": "2026-03-18T17:49:38.332",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVAte0SkYvV",
+      "user": "jangmk97",
+      "timestamp": "2026-02-21 16:11:24",
+      "original_item_count": 2,
+      "platform_sequence_id": 365
+    },
+    {
+      "sequence_id": 581,
+      "sns_platform": "threads",
+      "code": "DU_DJpPgojF",
+      "full_text": "remotion으로 진짜 딸깍 영상이 가능하구나\n\n[사용한 방법]\n1) npx create-video@latest 로 설치 (Claude code skills로 셋업)\n2) npx i로 필요한 라이브러리 설치\n3) claude code로 \"activate the remotion skills\" 입력해서 활성화\n4) 강의 자료 정리해둔 .md 던져주고 토스 스타일로 작성 요청\n5) 차분하고 희망적인 앰비언트 무료 배경음, 구글 한글 TTS 음성 입혀줘\n6) 동영상으로 Render\n\n참고한 영상: https://www.youtube.com/watch?v=S-foS0vfqIg\n\n학부생 강의할 ppt 만들다가 한번 해봤는데\n이 모든 게 7분 내외로 딸깍이라니... 어메이징...",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/638272661_1413980080185377_3392059637424841157_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDM2MC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QHwUyp6QjQaGm7V4W4XsK3aTed0h6D7-drerso9p95BvLGSd4BrqqOebyBUGFNkMuk&_nc_ohc=AeHnviNay_IQ7kNvwE7pqMW&_nc_gid=qDwMve1Y09T5jvn9CPrLQw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNjc5OTI2NDQ0MTQwMzU4OQ%3D%3D.3-ccb7-5&oh=00_AfwlC-PJhZHIxoMwhNKHYHJnqENxAn90YljQYPJEhY9Rrg&oe=69C01EA4&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:49:38.332",
+      "local_images": [
+        "web_viewer/images/dd300be9ed9d9204badd42d639f1b474.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DU_DJpPgojF",
+      "user": "taaaaes",
+      "timestamp": "2026-02-21 00:45:55",
+      "original_item_count": 1,
+      "platform_sequence_id": 366
+    },
+    {
+      "sequence_id": 582,
+      "sns_platform": "threads",
+      "code": "DU_t59NkkEn",
+      "full_text": "명령어 한 번으로 7개 오케스트레이터, 22개 에이전트,\n8개의 마이크로 스킬, 3단계 워크플로로 구성된 \nAI 오케스트레이션 시스템의 껍데기(중요)를 만들었습니다.\n\n만드는 방법은 \n\n1. @joshproductletter님의 뉴스레터를 구독합니다. 제가 현재 유일하게 챙겨보는 AI 뉴스레터입니다.\n\n---\n\n2. 혼자서 100개의 AI 에이전트를 운영하는 한국인 AI 네이티브 컴퍼니 뉴스를 엽니다 \nhttps://maily.so/josh/posts/3jrk3ny6z51\n\n---\n\n3. 기사 전문과 함께 이미지를 클로드에 제공하며\n\"AI 오케스트레이션 시스템 만들어 줘\" 라고합니다.\n\n---\n\n4. 약 20분 후 완성됩니다. 다음으로 \"브라우저에서 바로 볼 수 있게  시스템 시각화 해줘\" 라고 합니다\n\n---\n\n5. 오케스트레이션 시스템 (껍데기)와 스레드에 올릴 콘텐츠가 생성되었습니다.\n\n껍데기라 칭한 이유는 사실 현재 상태로는 아무 역할도 하지 못할것이 분명하기 떄문입니다. \n\n껍데기를 만드는 작업은 1%고 이후 실제로 테스트해가면서 성능을 올리는 작업이 99%이기 떄문입니다.\n\n---\n\n6. 그럼에도 불구하고 모든일의 시작점인 처음 1%도 매우 중요하다 생각합니다. @joshproductletter님의 뉴스레터 덕분에 머릿속으로 해야지 해야지 하던걸 시작할 수 있게되었습니다.\n\n---\n\nPS. SNS에 올라오는 오케스트레이션 시스템에 대해 너무 현혹되지 않길 바란다는 말씀도 남깁니다. 현 시점 이걸 제대로 다루는 사람은 극소수일 것이 분명하기 떄문입니다. \n\n이 분야는 이제 막 시작인 것 같습니다. 저도 공들여 다듬어 보고 업그레이드된 저만의 오케스트레이션 시스템을 추후 소개해볼 수 있도록 하겠습니다 :)",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/640418862_17930588520194777_4438930446279257264_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTA1MHg5MDIuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QHF9KPXaLmBx271pRlnJaXmtGVkXQ353DJmXNnj8zHp1r5excBwWudHaeW04JrvNDA&_nc_ohc=P6gtQ_ecoSwQ7kNvwFWtfQ3&_nc_gid=pLtt9s1sALpWcRKka0z7cg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNjk4MTc4NzUzMzQxODg2MA%3D%3D.3-ccb7-5&oh=00_AfwyDNZA6H5wPzQ-FbcmvEFYSyXSJ00uW-ilBWGeA1NfAw&oe=69C024D8&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:49:41.353",
+      "local_images": [
+        "web_viewer/images/413f6a7c2f4cf372c7d7a613df126ab7.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DU_t59NkkEn",
+      "user": "chatgwajang",
+      "timestamp": "2026-02-21 06:55:52",
+      "original_item_count": 7,
+      "platform_sequence_id": 359
+    },
+    {
+      "sequence_id": 583,
+      "sns_platform": "threads",
+      "code": "DU90Jy-gjv-",
+      "full_text": "배포용 Agent Teams 자동화 스킬을 만들며 얻은 교훈 공유\n\n1. 결국 사람이 테스트해야 한다\n\nAI가 자발적으로 테스트하고 디버깅도 해주지만,\n'사람이 설치하고 사용한다'는 변수까지 모두 고려하지 못합니다.\n\n무언가 공유하고자 한다면,\nAI테스트와 사람의 테스트를 반드시 둘 다 진행해주세요.\n\n특히, 배포할 대상에 따라, 테스트 환경도 달라야 합니다.\n저는 최대한 많은 분들이 사용하실 수 있게 세팅하다보니, 난이도가 더 높더라구요.\n\n---\n\n2. 모든 기능을 챙길 수는 없다. 집중과 선택이 중요하다.\n\n특정 서비스나 기능을 만들다 보면, '아 이건 좀 아쉬운데?'하며 더 넣고 싶은 게 생기기 마련입니다.\n\n하지만 세상의 그 어떤 서비스도, 사람이 원하는 모든 걸 제공하지 않습니다.\n\n슈퍼 앱들의 경우에도 결국 조금씩 아쉬운 부분이 있기 마련이고, 사람들은 그 슈퍼앱들의 강점에 이끌려 사용하죠. 심지어 저 개인은 개인일 뿐인데, 너무 높은 완성도로 내기는 어렵다는 결론에 이르었습니다.\n\n제가 만들고 있는 Teamify라는 에이전트형 스킬도, UI나 대시보드 안정성, llm 오케스트레이션 등 아쉬운 점이 여전히 있습니다만, 다음주 초에는 반드시 배포하려고 합니다(기다려주신 분들이 계실텐데, 너무 죄송하네요 ㅠ))\n\n---\n\n3. 우선순위를 명확히 하고, 다른 일정과의 조율이 중요하다\n\n결혼 준비와 강의 준비, 출판 준비 등을 함께 진행하면서, 이 스킬만 개발하다보니 많은 일정이 밀렸습니다.\n\n물론 너무 재밌고 뜻깊은 일이라고 생각하지만, 도파민만을 쫓아 제 일상까지 무리가 가는 상황은 좀 아닌 거 같더라구요.\n\n비단 개인의 삶이 아니더라도, 조직의 AX 전환을 위해서라도 명심해야 할 일인 것 같습니다.",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/638871780_947228694405317_2614012054421175182_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDM2MC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QFoua1GxNafOAWjWuxyDr8A6Lr95OfybRlvog9DDQYuv8Wswi0F30Alwoc9T0nHSnA&_nc_ohc=2DQpEllD1VQQ7kNvwH_yyfL&_nc_gid=MkaX36eMvnLK-Cu-h9Lq-g&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNjQ1MTgyOTIxOTIxMjI4Ng%3D%3D.3-ccb7-5&oh=00_AfwVrmM7dGGHbezcTIo9fRQKARXgssgIYZxEcYK3orST1Q&oe=69C03FFD&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:49:41.353",
+      "local_images": [
+        "web_viewer/images/41860e24540ecb2e62ad305c859f4652.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DU90Jy-gjv-",
+      "user": "tofukyung",
+      "timestamp": "2026-02-20 13:12:20",
+      "original_item_count": 3,
+      "platform_sequence_id": 360
+    },
+    {
+      "sequence_id": 584,
+      "sns_platform": "threads",
+      "code": "DU9NcpkEW9G",
+      "full_text": "교육 기획끝 세상진짜 좋아졌다.\n\n지금까지 해온거 올인원으로 교육기획을 해봤습니다.\n클로드코드+안티그래비티를 사용했죠(나노바나나 PRO때문)\n\nRemotion으로 교육 인트로 영상준비하고\n차트 200개 그리게 시키고\n\n대시보드로 데이터보면서 자료정리하고\n사이트캡쳐 딥리서치 자료정리 대신시키고\n\n웹프레젠테이션, 핸드북 PRF 3백장 양산까지..?\n퀄리티는 마음에안들어서 하나하나 잡긴해야하는데\n\n이정도까지 나오는게어디야 걸린시간 4시간?\n이걸 딸깍이라 할수있나? 설정하는데 머리깨지는줄..\n\n[프롬프트 하고 로직 사용법익히는데 1년]",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/635606109_1861183211204945_4404326941238215859_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDMwNC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QFLiZiyuRmTiJLxsM9ClSyx1D5FmiCqXLfPKw4eRJsmOzJKGcxyaKx3ChkyXNHRd-Q&_nc_ohc=Q4Owo2HodncQ7kNvwFZ7lnD&_nc_gid=YxczvX3CebnrywhQlTEi5Q&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNjI4MTYwMDk2ODA2MDc0Mg%3D%3D.3-ccb7-5&oh=00_AfyQEE7IPjQyPi4WQheINj953a4C4F4NupC_TZl2vb1M1g&oe=69C01FD1&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:49:41.353",
+      "local_images": [
+        "web_viewer/images/f0f98e2f028ec0cdf50796286c3f7581.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DU9NcpkEW9G",
+      "user": "specal1849",
+      "timestamp": "2026-02-20 07:39:02",
+      "original_item_count": 1,
+      "platform_sequence_id": 361
+    },
+    {
+      "sequence_id": 585,
+      "sns_platform": "threads",
+      "code": "DVAxTwjErQM",
+      "full_text": "클로드 코드 워크플로우에 관한 고찰\n\n요즘 AI에이전트 에이전트 팀이 대세라는 말이나오고\n\n다음주에 꽤나 큰회사에서 강연이 있기에\n오늘 @tofukyung 씨가 만든 클로드코드 팀\n\n그리고 내가 기존에 사용하는 워크플로우 구조를 놓고\n토론을 하였다.\n\n우선 우린 Claude Code teams기능의 고점은 굉장히 높게평가하지만\n아직 사용하기는 이르다 조금더 케이스가 쌓여야 한다.\n이런결론에 도달했다.며 \n\n실제로구현해둔 대 시보드나 파이프라인을 보다보면\n고점은 높지만 쓰기가 진짜 어렵다는게 느껴진다.\n\n아래는@aijossi 님이 구현한 팀의 일부\n\n그렇다면 이건 왜 써야하고 만든걸까 이부분을 논해보자\n\n---\n\n그렇다면 왜 이런개념이 등장한 것일까 이부분에 대해 먼저 논하자\n\n가장 직관 적으로 이해할수있는건 아래 논문인데\nGLM-5: from Vibe Coding to Agentic Engineering\n\n복잡한 개념을 다떠나서 설명하면 \n이제는 장기작업의 일을시키기 시작했고\n그장기작업을 최적화는 과정이 필요하다는거다\n\n이사실은 반론의 여지가 없고 \n장시간 일을 시켜야함에있어 잘시키기 어렵다는건 \n누구나  동의하는 사실이다.\n\n문제는 이런 장기문제에서 속도문제나 여러 시스템이\n발목을 잡기 시작했고\n\n나만해도 특정작업은 codex 특정작업은 제미나일를 시키고있다.\n그럼이게 팀하고 뭐가 다른것일까?\n\n---\n\n이럴땐 공식문서를 보면 답이나온다 기존 서브에이전트 구조와\n\n가장 큰차이는 Agent teams의 경우  완전히 독립적인 컨텍스트 윈도우를 가지고 세세하게 조절하는것이 가능하고 서브에이전트는 반환된다.\n\n쉽게말하면 권한을 더준거고 이를 공유하며 처리한다 파이프라인의 설계방식이 다르다 고 이해해도 문제없다.\n\n그러서 각각의 위치에 적절한 에이전트배치하고 서로 대화를 나누며\n일을 처리한다.\n\n이론만 보면 정말 이상적으로 보인다.\n\n---\n\n리더와 팀원을 할당하고 적절한 명령을 내리고 잘나눈다.\n다좋다 세세한 파이프라인을 만들고 필요에따른 \n\n모델을 좀더 세부적으로 분배하면 좀더 큰일을\n짧은시간에 훨씬더 효율적으로 처리할수있다.\n\n이부분은 부정할 생각자체가 없다.\n\nAI가 처리하는 프로덕트가 커지면커질수록 시간이 길어지면\n시간이 길어질수록 이러한 처리는 필수적이 되고있으며\n사실 MOE아키텍쳐나 딥씨크가 떠오르는 설계였다.\n\n비용과 시간은 언제나 중요한 KPI중하나니 당연히 써야지\n\n하지만 필자가 구현하면서 겪은문제는 \n이를 다루면서 발생하는 컨텍스트 오염이었다,\n\n서브에이전트 구조의 장점은 중간에 검사하는 장치를 만들어두고\n피드백을 통해서 처리한다면 오류를 어느정도 잡는것이 가능했지만\n\n이녀석은 방대해 지는만큼 이러한 검증절차를 단계마다 두면 \n굳이 팀을 사용하는 의미가 없고 작은 실수가 발생하면 \n오염이 퍼저나가기 너무나도 좋은구조다\n\n마치 전염병을 보는것 같달까..?\n\n---\n\n이문제를 해결하기위해 좀만 세세하게 피드백을 넣으면\n다시또 성능이 떨어지는 문제가 발생하고 오히려 병목이나\n지연이 발생한다.\n\n중간중간에 넣는다해도 어디서 발생한지 추적하기도 쉽지가않다.\n이를 잡으려고 몇번 시도를해봤다가\n\n아 지금은 못쓰게다 좀더 기다려야겠다 판단한 이유기도한데.\n내머리로는 초거대규모 작업\n\n프로덕션단에서는 의미가있지만 이게 \n개인단에서 의미가 있는가 물어본다면 씁 모르겠다.\n\n일단 내가하는 작업내 특히 글쓰기나 콘텐츠작업에서는\n너무나도 치명적이다.\n\n대형화 하기 위해서 이것저것 하다가 대가리 박살난 고양이씨의 한탄\n현기준 코드에서는 명백한 정답이 어느정도있기에 가능할것같은데\n업무에 적용하기에는 쉽지않네...\n\n잘짜는법 누가좀 알려줘라 진짜..\n\n---\n\n어쩄든 이거곧 배포하신다 하니 함 기대해 봅시다..\n내머리로는 못해 후우",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/640064119_17895486816406917_458458739685603531_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTg3Nng5MTYuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QETsQamlGYK769exxJAxms21cdC9uuD86lNkE2Zg-WsT9-1W1niF5jcl2ozLzMuSzc&_nc_ohc=J-L0KFuLhFUQ7kNvwHpr9P5&_nc_gid=UxSFHfKWXuRasKU9HLxg5Q&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNzI4MzczOTM0NTU0MDU5Mw%3D%3D.3-ccb7-5&oh=00_AfxLh9TuE52YnlCIxGd-AAZT_N5FGyI1MebCLsoWNtPkkA&oe=69C024EF&_nc_sid=10d13b",
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/639841999_17895487020406917_4093231642018029045_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNzM4eDYzMy5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QETsQamlGYK769exxJAxms21cdC9uuD86lNkE2Zg-WsT9-1W1niF5jcl2ozLzMuSzc&_nc_ohc=AbRpioUPNtoQ7kNvwGbvbpC&_nc_gid=UxSFHfKWXuRasKU9HLxg5Q&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNzI4Mzc5Mzc4NzU3NTU5Nw%3D%3D.3-ccb7-5&oh=00_AfyaAsFIQqpzTs_0V2JV669KokFpsI2Dy-296LdZj_EoNg&oe=69C040D4&_nc_sid=10d13b",
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/639765700_17895487320406917_1194810143241836428_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTA1M3g0OTYuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QETsQamlGYK769exxJAxms21cdC9uuD86lNkE2Zg-WsT9-1W1niF5jcl2ozLzMuSzc&_nc_ohc=Mf3rMuZ1Cf8Q7kNvwFJE8bQ&_nc_gid=UxSFHfKWXuRasKU9HLxg5Q&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNzI4Mzg2OTE1MDgzNTM2NQ%3D%3D.3-ccb7-5&oh=00_AfzQuftPKmhyy903ZVkIgGqog3NtAKjyG7fA5NRkk4SICg&oe=69C03946&_nc_sid=10d13b",
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/639826829_17895487902406917_7352181104545859345_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTg4NXg4MjEuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QETsQamlGYK769exxJAxms21cdC9uuD86lNkE2Zg-WsT9-1W1niF5jcl2ozLzMuSzc&_nc_ohc=LmBCSeaJyCcQ7kNvwFWBl8n&_nc_gid=UxSFHfKWXuRasKU9HLxg5Q&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNzI4Mzk0NDkxNjc3Mzg3NA%3D%3D.3-ccb7-5&oh=00_AfywpMpqLQPnalr1CX79jYzG5hkRpiqen4R-8PSNTP_gzg&oe=69C05019&_nc_sid=10d13b",
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/639674950_17895488754406917_7114330200171098596_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTYzNXg2ODAuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QETsQamlGYK769exxJAxms21cdC9uuD86lNkE2Zg-WsT9-1W1niF5jcl2ozLzMuSzc&_nc_ohc=q3MrOfnhIPsQ7kNvwHIC2pA&_nc_gid=UxSFHfKWXuRasKU9HLxg5Q&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNzI4NDAzNTM0NTk2ODMyOA%3D%3D.3-ccb7-5&oh=00_Afx3cvK-hKd0EAI0gh5dHgCS_gAmFv30P-njBjkPouh8Pw&oe=69C0525F&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:49:41.353",
+      "local_images": [
+        "web_viewer/images/85e434e045e96fdb4f6629bfc2526209.jpg",
+        "web_viewer/images/0e1e943ae8213ce085d4f7d811514aac.jpg",
+        "web_viewer/images/e463aee2c900e42654ac15de24cae90d.jpg",
+        "web_viewer/images/8105afd6a3183cad288484e09b183f2b.jpg",
+        "web_viewer/images/5c0f1d70602d34b4b94dc1b9a511c449.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVAxTwjErQM",
+      "user": "specal1849",
+      "timestamp": "2026-02-21 16:44:50",
+      "original_item_count": 6,
+      "platform_sequence_id": 362
+    },
+    {
+      "sequence_id": 586,
+      "sns_platform": "threads",
+      "code": "DUzPNgDk4FP",
+      "full_text": "🚀 클로드코드 쓰는 윈도우 유저분들, WSL2 안 쓰고 계신다면 지금 당장 바꾸세요\n---\n“같은 컴퓨터 맞아?” 소리가 절로 나옵니다.\n클로드코드를 윈도우에서 그냥 돌리고 계신 분들 많으시죠?\n혹시 이런 경험 있으신가요?\n1.명령어 치면 알 수 없는 오류가 뜬다\n2.뭔가 느리다… 참을 수 없이 느리다\n3.같은 코드인데 맥 유저랑 결과가 다르다\n\n원인은 하나입니다. 윈도우 네이티브 환경의 한계.\n---\n아래에서 계속\n\n---\n\nWSL2가 뭔데?\n한 줄 요약: 윈도우 안에서 리눅스를 돌리는 것.\n맥이나 리눅스에서 개발하는 것과 거의 동일한 환경이 윈도우 안에 만들어집니다.\n클로드코드, Node.js, Python 등 개발 도구들은 본래 리눅스/맥 기반으로 설계되어 있어서,\nWSL2 위에서 실행하면 체감 10배는 빨라지고, 수많은 호환성 오류가 사라집니다.\n\n---\n\n왜 빨라지나요?\n윈도우 네이티브 → 파일 시스템(NTFS)이 느리고, 경로 변환 오버헤드가 큼\nWSL2 → 리눅스 네이티브 파일 시스템(ext4)을 직접 사용 → I/O 속도 극적 향상\n특히 node_modules 같은 수천 개 파일을 다루는 작업에서 차이가 압도적입니다.\n\n---\n\n전환 방법 (3분이면 시작)\n클로드코드에게 아래 프롬프트를 그대로 복붙하세요:\n---\n내 윈도우 환경을 WSL2 기반으로 전환해줘.\nWSL2 설치 → Ubuntu 설치 → 현재 프로젝트를 WSL2 파일시스템(/home/ 경로)으로 이전 → 클로드코드를 WSL2 안에서 실행하도록 세팅.\n단계별로 진행해줘.\n---\n클로드코드가 알아서 단계별로 안내해줍니다.\n\n---\n\n전환 후 체크리스트\n✅ 프로젝트 파일이 /home/유저명/ 아래에 있는지 확인 (⚠️ /mnt/c/ 경로면 여전히 느림!)\n✅ VS Code 사용 시 “WSL: Ubuntu” 원격 연결로 접속\n✅ 터미널에서 wsl 입력하면 바로 리눅스 환경 진입\n\n---\n\n주의사항\n⚠️ /mnt/c/Users/... 경로에서 작업하면 WSL2의 속도 이점을 못 누립니다.\n반드시 WSL2 내부 파일시스템(/home/ 경로)으로 프로젝트를 옮기세요.\n⚠️ 기존 윈도우 환경이 사라지는 게 아닙니다. WSL2는 윈도우와 공존합니다.\n언제든 돌아갈 수 있으니 부담 없이 시도하세요.\n\n---\n\n저도 바꾸고 나서 “왜 진작 안 했지?” 했습니다.\n윈도우에서 클로드코드 쓰시는 분들, 진심으로 강추합니다. 🔥",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/634230188_17875543185509572_4717202038353845608_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTEyNXg2MzIuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QHRpdEZP9WoGzZ3V8BSVTI56dwqi1PIsy-yilW1ZxZ7T4xESrwF5SHbQQW4igmgBdg&_nc_ohc=yF4vA-gfQoIQ7kNvwGWP1Yu&_nc_gid=VSs3LuC9w9rHBTss3_bSaQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMzQ3NDYwNjI5MzAyNTEwMw%3D%3D.3-ccb7-5&oh=00_AfxmYs1kmd4jM5Ut8RTmKN5otD7UjRPCSr5e54hFYNALsA&oe=69C024A6&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:49:44.368",
+      "local_images": [
+        "web_viewer/images/91c270dbb06fd4b50ea6078493874e9f.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DUzPNgDk4FP",
+      "user": "ai_younggle_man",
+      "timestamp": "2026-02-16 10:36:46",
+      "original_item_count": 7,
+      "platform_sequence_id": 355
+    },
+    {
+      "sequence_id": 587,
+      "sns_platform": "threads",
+      "code": "DMbyRt6zesM",
+      "full_text": "요즘 바이브코딩할때 클로드코드 성능이 예전같지 않은데요. \nSerena MCP 쓰면 됩니다.",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/523804136_17864648919429430_5772022171487328940_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uNDkyeDI2MC5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QFCfLqwbrC9nZNOhnCDWvw8N8Fh2gF-jWosaGe8AAGwF91q-aszOBAtO9tFMRqI1es&_nc_ohc=8cr9AMjMWlwQ7kNvwGVq_g1&_nc_gid=sx5rpA6tGO2rKhFpE0GlJQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzY4Mjc1ODIzMzgwODY4MDgzOQ%3D%3D.3-ccb7-5&oh=00_AfxW1WvsbywxK4xBdyffuYfijOj7VhNmu_Nx-DHQH95b7g&oe=69C0441E&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:49:44.368",
+      "local_images": [
+        "web_viewer/images/81630990a610fcb837476e822cf501c6.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DMbyRt6zesM",
+      "user": "danielmentality_insta",
+      "timestamp": "2025-07-23 11:50:15",
+      "original_item_count": 1,
+      "platform_sequence_id": 356
+    },
+    {
+      "sequence_id": 588,
+      "sns_platform": "threads",
+      "code": "DU5cbYwE-aL",
+      "full_text": "AI를 시작하시는 분이라면 \n이것만큼은 꼭 아셔야만 합니다\n\n'갓대희‘s 작은공간’\n\n감히 AI에서는 갓갓갓이라 칭하고 싶습니다\n\n이곳에는 클로드코드 뿐만아니라\nCodex, Openclaw 등 설치가이드부터\n번역 공식문서, 개발의 기본 설명들이 \n상세하게 설명되어 있습니다\n\n이제 시작하시는 분이라면 \n아래 링크 읽어보며 클로드코드를 시작해보세여!\n\n---\n\nhttps://goddaehee.tistory.com/370\n\n---\n\nhttps://goddaehee.tistory.com/363",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/637051073_17894532450408836_2048946120468296841_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uNzgxeDc5Ni5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHgTI0w1_vRIYNvOlMtrZoDwh4urBx7q518wMd94j2hQXPbpejlKIT8gm_j-Otc2Nw&_nc_ohc=zYRPoSMWeiEQ7kNvwFdPUNH&_nc_gid=07Xr2rC7ErnV5CVPNwC2LA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNTIyMTU3NjgzMzUwNTAxMw%3D%3D.3-ccb7-5&oh=00_AfwvPNs5VWgDhBrRZXKxTFbWXyKM4AQSFLiV1Ufm9jNobw&oe=69C02E99&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:49:44.368",
+      "local_images": [
+        "web_viewer/images/016dec58b30e79a2cf22a88c3c4a3001.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DU5cbYwE-aL",
+      "user": "gptaku_ai",
+      "timestamp": "2026-02-18 20:27:42",
+      "original_item_count": 3,
+      "platform_sequence_id": 357
+    },
+    {
+      "sequence_id": 589,
+      "sns_platform": "threads",
+      "code": "DUr5HUHD_R4",
+      "full_text": "개발자가 디자인 잘하려면 이것만 지켜.\n1. Coolors에서 컬러 추천 받아서 컬러코드 그대로 넣어\n2. 컬러는 딱 2개만. main 하나, sub 하나. 이게 끝이야.\n3. Stitch 적극 활용해. 대신 컬러코드 정확히 넣고 레퍼런스 사이트 묘사는 영문으로 써\n4. MCP로 디자인하지 마. 토큰 터져서 일관성 떨어질 때가 많음.\n5. 대신 Skills 써. web-design-guidelines나 frontend-design 추천\n6. Next.js 쓸 때 MUI 말고 shadcn 써. 커스터마이징이 다름.\n\n---\n\n이런 정보 더 알고싶으면 \nhttps://discord.gg/UDndhtsr\n방문!",
+      "media": [],
+      "crawled_at": "2026-03-18T17:49:44.368",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DUr5HUHD_R4",
+      "user": "maker.evan",
+      "timestamp": "2026-02-13 14:09:00",
+      "original_item_count": 2,
+      "platform_sequence_id": 358
+    },
+    {
+      "sequence_id": 590,
+      "platform_id": "DUzSAR_EsMi",
+      "sns_platform": "threads",
+      "code": "DUzSAR_EsMi",
+      "username": "bellman.pub",
+      "display_name": "벨만",
+      "full_text": "꿀팁하나더+ ; 홈서버 하나 세팅하셔서 네이티브 우분투를 헤드레스버전으로 깔아서 원격으로 쓰시면 무지 쾌적함",
+      "media": [],
+      "url": "https://www.threads.net/@bellman.pub/post/DUzSAR_EsMi",
+      "created_at": "2026-02-16 11:01:10",
+      "date": "2026-02-16",
+      "crawled_at": "2026-03-18T17:49:47.429",
+      "source": "network",
+      "is_merged_thread": false,
+      "root_code": "DUzSAR_EsMi",
+      "like_count": 4,
+      "reply_count": 0,
+      "repost_count": 0,
+      "quote_count": 0,
+      "pk": "3833486891971429154",
+      "media_type": 19,
+      "content_type": "image",
+      "platform_sequence_id": 354
+    },
+    {
+      "sequence_id": 591,
+      "sns_platform": "threads",
+      "code": "DTfC9XAEgCD",
+      "full_text": "클로드코드 auto-run 하는 방법 찾았다!\n\nclaude --dangerously-skip-permissions 로 시작하면 되는 거였네\n근데 혹시 모르니 더 안전하게 하려면 아래 프롬프트를 참고해\n\n혹시 더 좋은 방법 아는 고수님 있으면 알려줘",
+      "media": [],
+      "crawled_at": "2026-03-18T17:49:47.430",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DTfC9XAEgCD",
+      "user": "pm_anyway",
+      "timestamp": "2026-01-14 17:53:30",
+      "original_item_count": 1,
+      "platform_sequence_id": 351
+    },
+    {
+      "sequence_id": 592,
+      "sns_platform": "threads",
+      "code": "DSCYa1wk6PG",
+      "full_text": "📕1시간만에 정복하는 클로드코드 입문서 무료 배포\n\n총 43P 분량의 클로드코드 입문서를 작성했어요.\n\n비개발자, 초보자분들도\n그대로 따라하면 될 정도로 쉽게 되어있습니다.\n\n다른 분들처럼 이메일을 받거나\n유료로 팔아볼까 고민도 했는데\n\n그러면 제가 바이브코딩을 알리고 싶은 마음이\n잘못 해석될 수도 있겠다 싶더라고요.\n\n무료니까 프로필 링크에서 편하게 보시면 됩니다.\n\n대신 열심히 작성했으니\n팔로우 한번만 부탁드립니다..!",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/589843858_17853919641590872_6874949964369957277_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTAwMHgxMDAwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QEk9fN94lmObp_J_2TiEFMI3TLSS4PI16NgWBRTHx3QSWXwQyq8vo-jOdOLJZHOW8I&_nc_ohc=weweZkafl3EQ7kNvwHK7UPy&_nc_gid=hNXSK2DuKAEk9IH5ANSBSA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc4MzY5NDAyNjgwNjYyMTUzNw%3D%3D.3-ccb7-5&oh=00_Afwjpt-Ftc3d5w7vH99vxJB--tpeBjH8hr9b2XfdtDKcWQ&oe=69C02F10&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:49:47.430",
+      "local_images": [
+        "web_viewer/images/6e50bddf34dfc4a3f472ebec0a6f5375.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DSCYa1wk6PG",
+      "user": "gwon_vibe",
+      "timestamp": "2025-12-09 18:11:39",
+      "original_item_count": 1,
+      "platform_sequence_id": 352
+    },
+    {
+      "sequence_id": 593,
+      "sns_platform": "threads",
+      "code": "DUFGgHkDj3G",
+      "full_text": "클로드코드로 피그마 반복 작업 2시간을 2분으로 줄였습니다\n\n상세페이지나 카드 디자인 만들 때\n같은 작업 수십 번 반복해본 적 있으시죠?\n\n저도 피그마에서 제품 카드 50개 만들어야 하는데,\n하나하나 복사하고 정렬하고 색상 바꾸는 게\n너무 비효율적이더라고요.\n\n그래서 클로드코드 + 피그마 MCP로\n대화만으로 자동화해봤습니다.\n\n제가 한 방식은 이렇습니다.\n\n① \"피그마 MCP 설치해줘\" → 설정 자동 생성\n② \"카드 50개 만들어줘\" → 1분 만에 생성 완료\n③ \"다크모드로 바꿔줘\" → 50개 색상 일괄 변경\n④ \"PNG로 다운로드해줘\" → 50개 이미지 자동 추출\n\n수작업이면 2시간 넘게 걸릴 작업을\n대화 몇 줄로 끝냈습니다.\n\n설치부터 실행까지 코드 한 줄 몰라도 됩니다.\n이 과정을 처음부터 끝까지 정리해서\n이번 주말 유튜브로 공유할게요.\n\n필요하신 분은 댓글로 \"저요!\" 남겨주세요 🙂",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/622804928_1550046089407833_6481500802482050165_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDQxMi5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QEIrubUw4nmkltoEKQCOagwh2kZ9180BQk02YBZu10NLtXe8Zi1v0FpJnuFGONxplo&_nc_ohc=J_XmSRYneS8Q7kNvwFnIHH2&_nc_gid=jctYF8z7gIiTylso-6211A&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMDQ4ODQ1NDMxNzE2MTkyNg%3D%3D.3-ccb7-5&oh=00_Afx0bNFype3aRejls4P83ZQthq4bDSMy7gDhZxum4XAErA&oe=69C0406B&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:49:47.430",
+      "local_images": [
+        "web_viewer/images/e6f5690c2ff2791fd0c9f5b3729acadd.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DUFGgHkDj3G",
+      "user": "kook0526",
+      "timestamp": "2026-01-29 12:36:18",
+      "original_item_count": 1,
+      "platform_sequence_id": 353
+    },
+    {
+      "sequence_id": 594,
+      "sns_platform": "threads",
+      "code": "DU4T-ZPE0MS",
+      "full_text": "클로드코드 오퍼스 모델 컨텍스트 윈도우 \n100만으로 늘리는 방법 !! \n클로드코드 시작할때  모델지정해서 시작해야 \n오류가 안생깁니당 세션중에 모델변경은 안된다고 하네용 ㅎㅎ\n\nwindows :\n복붙 1: claude --model=opus[1m]\n복붙 2: claude --dangerously-skip-permissions --model=opus[1m]\n\nmac :\n복붙 1: claude --model \"opus[1m]\n복붙 2: claude --dangerously-skip-permissions --model \"opus[1m]\n---\n둘중에 더 편한 방법으로 클로드코드 실행",
+      "media": [],
+      "crawled_at": "2026-03-18T17:49:50.504",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DU4T-ZPE0MS",
+      "user": "ai_younggle_man",
+      "timestamp": "2026-02-18 09:54:35",
+      "original_item_count": 1,
+      "platform_sequence_id": 350
+    },
+    {
+      "sequence_id": 595,
+      "sns_platform": "threads",
+      "code": "DU7DdPRj7dt",
+      "full_text": "노트북LM으로 깔끔한 카드뉴스 만들기.\n\n모아두었던 브랜딩 이야기를,\n노트북LM 슬라이드로 한번에 여러장의 카드뉴스를 만들 수 있어.\nnano banana를 한번에 적용하는 것과 같은거지.\n시간은 다소 10여분 걸리지만 편집까지 깔끔.\n\n좀더 가다듬으면 더 편리해질 거라 생각.\n\n•참고로 더치브로스 브랜드 이야기 꼭 읽어봐.\n\n---\n\ndutchbros",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/632632866_1250693163655266_7391747925187025525_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uNjQweDc5NC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QGYuUZXLAFrRLyDb3n43QegBGxWlEIf26sL6ayFqPfW3zl6xeMpnczFkqAONYsSjSw&_nc_ohc=ryVqmZ_TYo4Q7kNvwHM1rK4&_nc_gid=hh_k9vEh1sqpn106g0-tfw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNTY3MzI5MzQwMDA0MzQzNA%3D%3D.3-ccb7-5&oh=00_AfxrDg8JgDMtG65oNa6Qy08s0UDGpY9TsL70p57dvUFF6A&oe=69C04AA3&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:49:50.505",
+      "local_images": [
+        "web_viewer/images/f9bf1a87dc2456df5d4847df78a1fd7f.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DU7DdPRj7dt",
+      "user": "brandbuilder_bb",
+      "timestamp": "2026-02-19 11:27:58",
+      "original_item_count": 2,
+      "platform_sequence_id": 347
+    },
+    {
+      "sequence_id": 596,
+      "sns_platform": "threads",
+      "code": "DU6l21wDUNX",
+      "full_text": "어제 클로드코드로 5시간 정도 걸려서\n만든 내 스레드 분석 대시보드.\n\n이제 굳이 돈내고 SaaS를 사용하지 않아도\n나한테 맞춤화된 앱을 만들어 쓸 수 있게 되었어요. \n\nAI의 발전이 참 놀라워요.\n불과 작년 7~8월에 바이브코딩을 할때만해도\nAI가 지금처럼 코딩을 잘하지 않았거든요.\n\n엉뚱한 기능 만들고 시키지도 않은 거 삭제하고\n프로젝트를 진행하다보면 산으로 가능 경우가 많았는데.\n지금은 정말 잘 하네요.\n\n조금 더 다듬어서 개인 맞춤화된 \n초안생성 기능을 만들어봐야 겠어요.",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/632629964_1381673634008507_9168159904886808074_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDM2MC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2QFUncfuA6WKSRlfj8MEwTouQxTsCzD36-WbPLqS4s3PbXH88kbon9g-kd80rwDH_m0&_nc_ohc=I_PlUEDh6X8Q7kNvwHKoIt5&_nc_gid=9TVA5t3ZG8fFaWDyKWMxkQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNTU0NDUyODk0NjU0NTQ5NQ%3D%3D.3-ccb7-5&oh=00_AfxSn7hjlVYyYP5gZzJPfN50nkaWvQjFX35wBrqNcOZ-YQ&oe=69C044ED&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:49:50.505",
+      "local_images": [
+        "web_viewer/images/ec24f0f02d0e2e2338fa00ec063e9a99.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DU6l21wDUNX",
+      "user": "mino.biz",
+      "timestamp": "2026-02-19 07:12:40",
+      "original_item_count": 1,
+      "platform_sequence_id": 348
+    },
+    {
+      "sequence_id": 597,
+      "sns_platform": "threads",
+      "code": "DU6xqiCEmxg",
+      "full_text": "편리함은 극단적으로 높이고 안전함까지 챙긴 클로드코드 활용기법\n\ndangerously-skip-permissions로 작동하는 Claude Code는 사실 보안적 측면에서 OpenClaw랑 다를바 없죠\n\n근데 편리함을 놓치기도 싫습니다\n편리함은 극대화시키고 안전함까지 챙긴 방법 소개합니다\n\n---\n\n가상 클라우드 컴퓨터를 만들어 이 안에서 Claude Code를 자율적으로 작동하게 하고 가상클라우드 컴퓨터 조작에 미숙한 바이브코더 분들도 쉽게 사용하실 수 있도록 터미널이 아니라 텔레그램으로 조작할 수 있게 했습니다. \n\n우리가 앞서 열광했던 OpenClaw의 그 인터페이스로 말이죠.\n\n---\n\n무엇보다 OpenClaw에서 가장 큰 아쉬웠던 점 몇가지를 개선했습니다.\n\n- 초보자는 설치가 어렵다는 점\n- 작업진행 과정을 실시간으로 볼수 있다는 점\n- 작업 중에 중단할 수 있다는점\n- 여러 작업세션을 구동할수있으며 이 방법이 극단적으로 간단하다는 점\n- 시스템 명령어를 직접 사용할 수 있다는 점\n- 자율적 수행을 하되 파괴적 권한들을 세밀하게 끄고 켤수 있다는 점\n- 보안에 취약할 수 있는 포트 자체를 열 필요가 없다는 점\n- 텔레그램의 파일 업로드 기능으로 어떤 파일이든 AI에게 손쉽게 제공 가능하고 AI 역시 사용자에게 파일 전송이 가능하다는 점\n- 설치, 사용이 어려우면 코드깎는노인이 도와준다는 점\n\n---\n\nAWS EC2로 구성하는 방법\n명령어 단 한줄 입력하는 방법으로 모든 설정이 완료됩니다\n\nhttps://cokacdir.cokac.com/#/ec2",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/633733714_2395797564187984_1346913461434513218_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDEzODYuc2RyLmY3MTg3OC5kZWZhdWx0X2NvdmVyX2ZyYW1lLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QHY3xEkN1kmp3YtxAsBglrXuzxIZmoVNTMcN62EfAQn5iNBa5uc_UXSEoVVCT9cH9c&_nc_ohc=-qQS8NfasbgQ7kNvwElDdl7&_nc_gid=0Wfwxf03mD8NmjVKGu0gpQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNTU5NjQ1OTY5ODQ0OTUwNA%3D%3D.3-ccb7-5&oh=00_Afxdgnt0wbvHHAirMAOpHiFmWZ-elU_OH4QeH91fqNb64Q&oe=69C03ADB&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:49:50.505",
+      "local_images": [
+        "web_viewer/images/4918bb744401893c2cd028fbc53dd074.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DU6xqiCEmxg",
+      "user": "cokac_com",
+      "timestamp": "2026-02-19 08:53:17",
+      "original_item_count": 4,
+      "platform_sequence_id": 349
+    },
+    {
+      "sequence_id": 598,
+      "sns_platform": "threads",
+      "code": "DU8SN9NErEV",
+      "full_text": "Codex CLI 쓰면서 oh-my-codex 모르면 손해임\n\n에이전트 병렬 실행, 세션 관리, 팁음 커스터마이징\n프로들은 이미 쓴다\n\nhttps://github.com/Yeachan-Heo/oh-my-codex",
+      "media": [],
+      "crawled_at": "2026-03-18T17:49:53.525",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DU8SN9NErEV",
+      "user": "bellman.pub",
+      "timestamp": "2026-02-19 22:56:12",
+      "original_item_count": 1,
+      "platform_sequence_id": 343
+    },
+    {
+      "sequence_id": 599,
+      "sns_platform": "threads",
+      "code": "DU7ruAhAdBG",
+      "full_text": "바이브코딩 막상 해보니까 '딸각' 안되서 속상하지?\n\n그럼 이거 딱 2개만 만들고 시작해봐!\n\n1. PRD 문서: 뭘 만들고, 뭘 성공으로 볼지 정리한 제품기획서\n\n2. OpenSpec 문서: 무엇을 어떻게 만들지 정리한 요구사항 명세서\n\n프롬프트에 \"(누가)(무엇을)(어떻게)하다 겪는 (문제)를 (솔루션)으로 해결 하려고 해. PRD 먼저 작성하고 핵심기능을 기준으로 OpenSpec까지 작성해줘\"라고 해봐~",
+      "media": [],
+      "crawled_at": "2026-03-18T17:49:53.525",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DU7ruAhAdBG",
+      "user": "calmtiger_",
+      "timestamp": "2026-02-19 17:19:47",
+      "original_item_count": 1,
+      "platform_sequence_id": 344
+    },
+    {
+      "sequence_id": 600,
+      "sns_platform": "threads",
+      "code": "DU8Tp-OD3m8",
+      "full_text": "이번에 다운로드 폴더에 파일 400개 정리하면서 \n사용한 클로드 코워크 prompt💻",
+      "media": [],
+      "crawled_at": "2026-03-18T17:49:53.525",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DU8Tp-OD3m8",
+      "user": "lian.lab71",
+      "timestamp": "2026-02-19 23:08:46",
+      "original_item_count": 1,
+      "platform_sequence_id": 345
+    },
+    {
+      "sequence_id": 601,
+      "sns_platform": "threads",
+      "code": "DU8d_N9E1KI",
+      "full_text": "Claude code + Figma = 극락\n\n- 기존 Genspark랑 Gemini(Google slide)는 ppt 생성해도 도형, 요소들이 다 비트맵 이미지로 만들어져서 수정하기가 까다로움\n- Claude code로 figma에서 발표 자료 만들면 퀄리티 매우매우 높아질 수 있음(1920px*1080px 화면을 개발한다는 관점)\n- 한번만 기준 잘 세워두면 일관된 장표 생성 가이드 만들 수 있음\n\n근데 만들기 귀찮으시죠? 이런거 잘하는 대학생이 해드릴게요...",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/633789722_17898748662391515_7396410710921537864_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMjg3OXgxNjYxLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QHV454_35ORUUovyom_ULl_Uz1nec0rp3fbISV-SrDCESNc7DJEB_oazFazuk4eW44&_nc_ohc=xRDHVeN9y30Q7kNvwGgk98D&_nc_gid=7AdebjGNJ2AonUbDbMhdyw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNjA3Mjg2Mjc1NTgzNDA2NA%3D%3D.3-ccb7-5&oh=00_Afwpp8fzA7hdEt_zMY59FU1NxtyvH9foOaJit1tmMcjZ4Q&oe=69C04110&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:49:53.525",
+      "local_images": [
+        "web_viewer/images/6e2ece66ca7a6710fc66210bcf4d69cb.webp"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DU8d_N9E1KI",
+      "user": "daehyeon.xyz",
+      "timestamp": "2026-02-20 00:39:03",
+      "original_item_count": 1,
+      "platform_sequence_id": 346
+    },
+    {
+      "sequence_id": 602,
+      "sns_platform": "threads",
+      "code": "DU7wVFKkyoL",
+      "full_text": "바이브코딩 실력 올리는 제일 쉬운 방법이 뭔지 알아?\n\n고쳐줘만 반복하는 습관부터 끊는 거야\nAI가 뭘 했는지도 모르고 넘어가면 실력은 절대 안 늘어\n\n그래서 내가 만들었어\n\n'바선생'\nClaude Code랑 나눈 모든 대화를 자동으로 모으고 분석해서\n내가 어디서 삽질했는지, 어떤 요청이 약했는지 바로 알려주는 에이전트야\n\n매주 15분만 투자해서\n이번 주 대화 회고하고 성장 리포트까지 받아봐\nAI를 더 많이 쓰는 게 아니라 더 잘 쓰는 게 실력이니까\n\n---\n\n- 설치 방법\n클로드코드에 아래 프롬프트만 복붙하면 설치 끝!\n\nhttps://github.com/fivetaku/vibe-sunsang 이 저장소를 내 홈 디렉토리에 클론하고, 폴더로 이동해서 /onboard 실행해줘\n\n---\n\n- 활용 방법\n1. /retro - Claude Code 대화를 읽기 좋은 문서로 자동 변환 \n2. 멘토링해줘 - 내 요청 품질 채점 + 나쁜 습관 진단 + 행동 계획 \n3. 성장 리포트 만들어줘 - AI가 세션 데이터 분석해서 레벨 판정 + 성장 트렌드 리포트 \n4. [프로젝트명] 분석해줘 - 특정 프로젝트의 실수 패턴, 도구 활용, 비용 분석",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/639683615_17894653776408836_2219317920614578175_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uNTM1eDQ5OC5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QFf8Ao83gM2gkFGpqCBHejZOFjocPWgSw0jVL-ANbIJRGjjM3vThIgwY3qa2sBwb0M&_nc_ohc=h01r4aKO5bcQ7kNvwEaF96P&_nc_gid=R1uN0ckp55iai1eYPSsHAA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNTg3MjA1NTIwMDU1MDM3MA%3D%3D.3-ccb7-5&oh=00_AfwlZlbyMBJQ4kgJPferDHap6z9Ofs3sff79TkND8KMGoA&oe=69C030F3&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:49:53.530",
+      "local_images": [
+        "web_viewer/images/bdc7db089a84f65ded6640e3e853e987.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DU7wVFKkyoL",
+      "user": "gptaku_ai",
+      "timestamp": "2026-02-19 18:00:05",
+      "original_item_count": 3,
+      "platform_sequence_id": 339
+    },
+    {
+      "sequence_id": 603,
+      "sns_platform": "threads",
+      "code": "DU7jNVKD-1r",
+      "full_text": "회사에서 클코 맥스 결제해주셔서 바로 내 개발팀 만들었어!ㅋㅋㅋ\n일단은 6명으로 가고 나중에 봐서 보안 담당자 채용 예정ㅋㅋ\n\n진짜 신세계다.. 능력은 본격적으로 일 시켜봐야 알겠지만!\n첫인상은 매우 에이전트라는 단어에 걸맞는 녀석이라는거.\n\n#클로드코드 #openclaw\n\n---\n\n귀여워서 우짜노ㅋㅋㅋㅋㅋ보고할게냥!ㅋㅋㅋㅋ",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/639504228_17940938037119731_2042892200768658775_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uOTMweDU0NS5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QF1mtjlXgVgRSMH6x2eWTDB1BamA7-LtX3tDYQ0sP13UEEHcpWKcuX34RNuzPjhuQs&_nc_ohc=Q9IQzmDRv1IQ7kNvwGSgH8Q&_nc_gid=RzBbrWnweQ8RCl7tTaSRcQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNTgxNDM1NTMzNDU4OTgwMw%3D%3D.3-ccb7-5&oh=00_AfzGxVNQSwrWWhlIB8fcp1rQh1AmvoQq4STi4cfA30k4wg&oe=69C04A20&_nc_sid=10d13b",
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/639758731_17940960501119731_9041369083515868477_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNzUweDU3Ni5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QF1mtjlXgVgRSMH6x2eWTDB1BamA7-LtX3tDYQ0sP13UEEHcpWKcuX34RNuzPjhuQs&_nc_ohc=ErYKad5-YHQQ7kNvwEMXZzn&_nc_gid=RzBbrWnweQ8RCl7tTaSRcQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNTkxNzg5MTk4ODg3MTExNQ%3D%3D.3-ccb7-5&oh=00_AfwCsp1tWvwI5c1C_73Fw5UeEZErhhadUOdA-oX-PSyOhg&oe=69C0206D&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:49:53.530",
+      "local_images": [
+        "web_viewer/images/1739406e14e72620fe8c9066617da67d.jpg",
+        "web_viewer/images/cc2281d417d26a399655ce61295bffc6.webp"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DU7jNVKD-1r",
+      "user": "amyhong0",
+      "timestamp": "2026-02-19 16:05:25",
+      "original_item_count": 2,
+      "platform_sequence_id": 340
+    },
+    {
+      "sequence_id": 604,
+      "sns_platform": "threads",
+      "code": "DU7b3RMj3QB",
+      "full_text": "형들,\n\n옵시디언 쓰면서\n정리보다 \"정리 방법 고민\"을 더 많이 한 적 없나?\n\n폴더 구조 바꾸고\n태그 정리하고\n다시 엎고…\n\n나도 그랬어.\n\n그래서 그냥 방향을 바꿨어.\n\n이제는 Claude Code로 obsidian vault 폴더를 관리하도록.\n\n매일 밤에 \"오늘 마감해줘\"\n\n이 한 마디면\n\n-> 데일리 정리\n-> 노트 자동 분류\n-> git commit까지 끝\n\n정리에 힘 빼려고 클코와 이야기 하면서 만든 구조야.\n\n어떻게 쓰는지 공유해볼꼐.\n\n---\n\n내 볼트구조는 이래. 별건 없어.\n\n핵심은 이거야.\n\n\"처음부터 잘 정리하려고 안 한다.\"\n\n일단 Inbox에 던지고\n분류는 나중에.\n\n노트 작성할 때 분류 생각까지 같이 하려고 하면\n둘 다 애매해진다.\n\n그래서 그냥 나눴어.\n나머지는 AI가 하라고 시키고.\n\n---\n\n중심은 파일 하나야.\n\n\"rounting-rules.md\"\n\n어디로 보낼지\n여기에 다 적어뒀어.\n\n업무 -> Work\n독서 -> Learn\n클리핑 -> Content\n\n규칙 바꾸고 싶으면\n이 파일만 수정하면 된다.\n\n나는 그냥 이렇게 말할뿐\n\n\"오늘 마감해줘\"\n\"Inbox 정리해줘\"\n\n그럼 알아서 움직인다.\n\n---\n\n2주 써보니까 이 시스템 체계 괜찮더라고\n\n노트 쌓여도 스트레스 없고\n어차피 정리될거고\n\n정리에 에너지 안 쓰고.\n규칙 파일이 대신 판단.\n\n핵심은 자동화가 아니라\n\"기준을 문서로 박아두는 거\"\n\n---\n\n나처럼\n정리 방법 고민 많이 했던 형들이면\n이 방식 한 번쯤은 맞을 수도 있을지도.\n\n나한테는 자동화 설계보다\n대화로 위임이 더 편하더라.\n\n필요한 사람 있을 것 같아서 공유해.",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/639853086_17886024633443390_7628868387325971766_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTM2OHg4Mjguc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QE8hxBsG31qJltAoSwLxF8-0pmbHBSmeZSkDroaeb8KuraX3iWU3n_SvRQMLrF3MdM&_nc_ohc=0LJy0vXpgAIQ7kNvwG3Exsp&_nc_gid=GYGGfGNTz3UiEB57ZbOtdw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNTc4MjA0NjAzMjAxODMzOA%3D%3D.3-ccb7-5&oh=00_AfyytOTmd12mmRjCVKtQyRmjiPZJpfoU3vUJZHBgtGpySQ&oe=69C02537&_nc_sid=10d13b",
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/632157015_17886025110443390_9124911119498414576_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNTk4eDYwOC5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QE8hxBsG31qJltAoSwLxF8-0pmbHBSmeZSkDroaeb8KuraX3iWU3n_SvRQMLrF3MdM&_nc_ohc=cOwtkEtgk1kQ7kNvwEDFLoO&_nc_gid=GYGGfGNTz3UiEB57ZbOtdw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNTc4Nzg3MDgzODE0ODUwNQ%3D%3D.3-ccb7-5&oh=00_AfxQoh6nqzA2SRtRc7VwmqWzfO5kUrrR7qKoYX506l6-IA&oe=69C032A1&_nc_sid=10d13b",
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/631583989_17886025503443390_5646485644574854818_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTMxOHgxNjc4LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QE8hxBsG31qJltAoSwLxF8-0pmbHBSmeZSkDroaeb8KuraX3iWU3n_SvRQMLrF3MdM&_nc_ohc=XA6iAu57ZPMQ7kNvwHmXQ_4&_nc_gid=GYGGfGNTz3UiEB57ZbOtdw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNTc4Nzk0MTAwODg1NzcwNg%3D%3D.3-ccb7-5&oh=00_AfxLtU2ZLhmpT_ul34BrvvdYhAR4OhzHJfQw9ntXSyWtoA&oe=69C02F1B&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:49:53.530",
+      "local_images": [
+        "web_viewer/images/1160b27ff1133c58a1d4887abd0a2400.jpg",
+        "web_viewer/images/8024b7464f1e3bbb717f1fc164ca4fa7.jpg",
+        "web_viewer/images/bfb4bf5c95479f95180558c86b011772.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DU7b3RMj3QB",
+      "user": "snuglab_dev",
+      "timestamp": "2026-02-19 15:01:15",
+      "original_item_count": 5,
+      "platform_sequence_id": 341
+    },
+    {
+      "sequence_id": 605,
+      "sns_platform": "threads",
+      "code": "DU7UX8-EYtS",
+      "full_text": "나는 SNS에 매일 글을 올려도 반응이 없었다.\n\n그런데 2026년에는\nGemini가 같은 콘텐츠를\n알고리즘 구조에 맞게 재설계했다.\n\n조회수 100에서 50만으로.\n\n아래 7가지 프롬프트를 복사해서\n운에 맡기는 콘텐츠를 끝내라:\n\n---\n\n1/ 내 콘텐츠가 왜 안 뜨는지 ‘감’이 아니라 ‘구조’로 분석하기\n\nGemini야.\n내 계정 주제는 [주제]이고\n현재 평균 조회수는 [숫자]다.\n\n최근 올린 콘텐츠 10개의 공통점을\n후킹, 체류 시간, 공감 요소, 공유 유도 구조 기준으로 분석해줘.\n\n조회수가 낮은 진짜 원인이\n① 첫 3줄 문제인지\n② 메시지 밀도 문제인지\n③ 알고리즘 적합도 문제인지\n구조적으로 진단해줘.\n\n추상적인 조언 말고\n수정 가능한 지점만 정리해줘.\n\n---\n\n2/ 첫 문장을 ‘설명’이 아니라 ‘결과’로 시작하기\n\nGemini야.\n내가 쓰는 콘텐츠 도입부를\n상황 설명이 아니라\n결과 중심 문장으로 재작성해줘.\n\n예:\n“나는 블로그를 시작했다”가 아니라\n“블로그 글 20개로 월 100을 만들었다”처럼.\n\n내 주제에 맞게\n사람이 스크롤을 멈출 수밖에 없는\n결과형 도입 10개 만들어줘.\n\n---\n\n3/ 사람들이 저장하는 글 구조로 재설계하기\n\nGemini야.\n내 콘텐츠를\n단순 소비형이 아니라\n저장·공유가 발생하는 구조로 바꾸고 싶다.\n\n저장이 발생하는 콘텐츠의 공통 구조를 정리해주고,\n내 주제에 맞게\n\n문제 제시 → 구조 제안 → 실행 단계 → 요약 체크리스트\n\n흐름으로 재작성해줘.\n\n각 단계에\n반드시 들어가야 할 문장 유형도 함께 알려줘.\n\n읽고 끝나는 글이 아니라\n“다시 보려고 저장하는 글”로 바꾸고 싶다.\n\n---\n\n4/ 두루뭉술한 문장을 전부 ‘판단 가능한 문장’으로 바꾸기\n\nGemini야.\n내 콘텐츠에서 자주 쓰는\n\n열심히\n꾸준히\n중요하다\n도움 된다\n\n같은 모호한 표현을 전부 찾아줘.\n\n그리고 이 문장들을\n\n숫자\n기간\n전·후 비교\n구체적 행동\n\n기준으로 다시 써줘.\n\n읽는 사람이\n“그래서 뭐가 달라졌는데?”라고\n묻지 않게 만들고 싶다.\n\n---\n\n5/ 반응이 터진 글에서 ‘감’이 아니라 ‘패턴’만 추출하기\n\nGemini야.\n내 계정에서\n반응이 좋았던 글 3개를 기준으로\n\n도입 구조\n문장 길이\n정보 밀도\n마무리 방식\n\n의 공통 패턴을 분석해줘.\n\n그리고 그 패턴을\n다른 주제에도 적용할 수 있도록\n\n복붙 가능한 템플릿 형태로 정리해줘.\n\n감으로 따라 쓰는 게 아니라\n구조로 복제하고 싶다.\n\n---\n\n6/ 댓글과 공유가 발생하는 ‘선택 질문’ 설계하기\n\nGemini야.\n내 콘텐츠의 마지막 문장이\n항상 애매하게 끝난다.\n\n“어떻게 생각하세요?” 같은 질문 말고\n\nA or B 선택\n경험 유도\n공감 유도\n\n형식으로\n사람이 댓글을 달 수밖에 없는\n마무리 질문 10개 만들어줘.\n\n내 주제에 맞게\n바로 쓸 수 있는 문장으로 작성해줘.\n\n---\n\n7/ 이 계정이 왜 성장할 수밖에 없는지 구조로 설명하기\n\nGemini야.\n지금까지 재설계한 콘텐츠 구조를 기준으로\n\n이 계정이\n왜 성장할 수밖에 없는지를\n\n한 문단으로 정리해줘.\n\n이 문장은\n프로필 소개글이나\n고정 글에 그대로 쓸 수 있게\n\n감성적인 표현 말고\n논리 중심으로 작성해줘.\n\n이제 이 구조면\n콘텐츠는 더 이상\n“오늘 뭐 올리지?”가 아니라\n\n“이 패턴대로 쓰면 된다”가 됩니다.\n\n조회수는 운이 아니라\n구조입니다.\n\n---\n\n부업을 꿈꾸는 직장인·워킹맘이라면 지금 주목하세요❗️❗️\n\n단 6주 만에 월 2,000만원을 판매한\n전자책 3단계 공식,\n이번에 무료로 공개합니다.\n\n30대부터 60대까지 가능합니다.\n전문 지식 필요 없습니다.\n글을 잘 쓸 필요도 없습니다.\n\n-AI로 전자책을 30분 만에 만드는 방법\n-4주 안에 월 100만원 자동수익을 만드는 로드맵\n-실전 판매 구조까지\n\n이 3가지를\n이프로코치님의 라이브 무료 강의에서 전부 공개합니다.\n\n지금 무료 강의를 신청하시면\n49만원 상당의 자료를 무료로 드립니다 🎁\n\n그리고 라이브를 끝까지 참여하신 분들께는\n어디에서도 공개하지 않은\n100만원 상당의 실전 특급 자료를 추가로 드립니다.\n\n3월 11일\nAI가 쓰고, 30일 안에 월 200을 만드는\n전자책 3단계 공식.\n\n지금 바로 신청하세요.\nhttps://leadgeny.kr/lpo.php?seq=4d7a55794e7a5534",
+      "media": [],
+      "crawled_at": "2026-03-18T17:49:53.530",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DU7UX8-EYtS",
+      "user": "gogosing__77",
+      "timestamp": "2026-02-19 13:55:48",
+      "original_item_count": 9,
+      "platform_sequence_id": 342
+    },
+    {
+      "sequence_id": 606,
+      "sns_platform": "threads",
+      "code": "DU7He8TCZlP",
+      "full_text": "[클로드 코드로 디자인 잘하려면]\n\n좋다하는 키워드, 규칙을\nclaude.md에 다 몰아넣으면\n컨텍스트도 초과하고\n일관성도 유지가 힘듭니다.\n\n이럴때는 어떻게 하냐고요?\n간단하게 이렇게 생각하세요.\n\n디자인 시스템의 원칙 → rule\n컴포넌트 작업의 레시피 → skill\n\n제 세팅을 예시로 설명드릴께요\n👇",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/638861288_17945299701120123_820132120242075349_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uOTgyeDk2Ni5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QEBR6FviN7gT5AJ8HVgmpMOYybfWHWdV2bZAJHKpAmyPaHyHmXkpC0sc1-xSetac3w&_nc_ohc=ZikgKWGLxZgQ7kNvwFIJ134&_nc_gid=azlJ-0XwrCUOxr85CxIVAQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNTY5MjQyMDI4OTg5NDczNQ%3D%3D.3-ccb7-5&oh=00_AfwesbzQPfoZ4dLYDZxEr70kru0zdjdPpaYAApElR8nlwg&oe=69C0254B&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:49:59.553",
+      "local_images": [
+        "web_viewer/images/9b8d31ddb7236ca52e859006b22dd9a2.jpg"
+      ],
+      "is_merged_thread": true,
+      "root_code": "DU7QcLqCQL6",
+      "user": "dddesign.io",
+      "timestamp": "2026-02-19 12:03:10",
+      "original_item_count": 1,
+      "platform_sequence_id": 335
+    },
+    {
+      "sequence_id": 607,
+      "sns_platform": "threads",
+      "code": "DU7IWYRiV0W",
+      "full_text": "스레드로 영감 수집 많이 하시죠? 저도 그래요. 근데 '저장'만 해놓고 다시 찾으려니까 어디 있는지 도저히 못 찾겠더라고요. 결국 못 참고 직접 만들었어요. 😅 \n\n스레드에서 누른 하트를 실시간으로 감지해서, 제 노션 데이터베이스로 예쁘게 쏴주는 크롬 확장 프로그램이에요.\n\n결국 깔끔하게 노션에 쌓이는 걸 보니 앓던 이가 빠진 기분입니다. 이제 리서치가 훨씬 편해졌어요.\n\n#스레드팁 #노션꿀팁 #일잘러 #생산성\n\n---\n\n사실 지금 고민 중인 기능이 하나 더 있습니다. 저장할 때 '레시피', '생산성', '인사이트'처럼 카테고리를 자동으로 분류해서 노션에 쌓아주는 기능인데요. (이게 진짜 필요한 거잖아요? 😉)\n\n아직 정식 확장 프로그램 등록 전인데, 만약 이 기능이 꼭 필요하다는 분들이 많으면 카테고리 기능까지 추가해서 크롬 웹스토어에 정식으로 등록해 보려고 합니다!\n\n의견이 있다면 댓글로 알려주세요!!\n\n---\n\n지금은 제가 쓰려고 만든 개인용 베타 버전이라 제 블로그에만 올려뒀어요. 서버 저장 없이 브라우저에서 노션으로 바로 쏘는 방식이라 보안 걱정도 없습니다. 필요하신 분들은 제 프로필 블로그 링크에서 바로 가져가서 써보세요!",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/634656433_1233167049000111_3166432382141044030_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDMwOC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QGUHGOAwSv7l5qyITTywKigt1G0q2in3q_u-7MpcDbB_v5_VOXre0fnYbfZ9eGmSrs&_nc_ohc=GcWEzzvsGasQ7kNvwF6QSDt&_nc_gid=IvFhA57bqHBNI1UGVJECag&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNTY5NjIyOTkwMDcwNTA0Ng%3D%3D.3-ccb7-5&oh=00_AfyK7ZnyBaExIu0_pmb4mFbQjZPueqfP-aZrAmh-kP6MHA&oe=69C02527&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:49:59.553",
+      "local_images": [
+        "web_viewer/images/d63c85586f4385739e9b64385a900c22.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DU7IWYRiV0W",
+      "user": "reframe77",
+      "timestamp": "2026-02-19 12:16:40",
+      "original_item_count": 3,
+      "platform_sequence_id": 338
+    },
+    {
+      "sequence_id": 608,
+      "sns_platform": "threads",
+      "code": "DU5wMH2Ccw7",
+      "full_text": "하루종일 클로드 코드를 안쓰고\nCodex와 Antigravity를 테스트했다.\n(순전히 강의와 콘텐츠 때문에)\n\n1. 우선 Dangerously Skip Permissions가 없는게 너무너무 불편했다.\n2. Codex App은 제품 자체의 마감이 별로다. Automation은 돌아가지도 않는다.\n3. 안티그라비티로 PC폴더 내 자동화를 시도했는데 극하의 퀄리티였다. 엑셀 자동화를 시도했더니 이상한 라이브러리 설치하고 난리가 났다. 코워크로 5분만에 할 일인데..\n4. 마치 2025년 6-7월에 바이브코딩 할 때 시절에서 크게 벗어난 느낌이 아니었다.\n\n굳이 클코가 아니라 이 도구들을 왜 써야 하는건지 이유를 알고 싶었다. (물론 Codex 5.3 Spark나 Gemini 모델은 좋다.)\n\n---\n\n내일 더 써보고 장점을 찾아봐야겠다. 클코 1황 같은데 아직은..?",
+      "media": [],
+      "crawled_at": "2026-03-18T17:50:02.584",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DU5wMH2Ccw7",
+      "user": "joshproductletter",
+      "timestamp": "2026-02-18 23:20:22",
+      "original_item_count": 2,
+      "platform_sequence_id": 331
+    },
+    {
+      "sequence_id": 609,
+      "sns_platform": "threads",
+      "code": "DU5zaL7ARFt",
+      "full_text": "1. Sonnet 4.6 (기본 추천)\n가장 빠르고 안정적입니다. 노션의 블록 시스템과 마크다운을 완벽히 이해해 문서 서식이 깨지지 않아요. 회의록 요약, 메모 정리 등 일상 업무는 고민 말고 이거 쓰세요.\n\n2. Opus 4.6 (고품질/장문)\n속도는 느리지만 가장 똑똑합니다. 여러 페이지의 맥락을 교차 분석하거나, 글의 톤앤매너까지 정교하게 맞춰야 하는 중요 전략 기획서/보고서 작성에 필수입니다.\n\n3. Gemini 3 Pro (이미지/외국어)\n'눈'이 가장 좋습니다. 캡처한 스크린샷, 도표 해석 능력이 탁월하며 한국어·영어가 섞인 복잡한 문서도 자연스럽게 처리합니다.\n\n4. GPT-5.2 (팩트/코드)\n군더더기 없이 근거 위주로 답합니다. 코드 작성, API 문서 정리, 재무/통계 등 정확한 수치 데이터 분석에 강합니다.\n\n💡결론:\n평소엔 Sonnet으로 고정해두시고, 필요할 때만 목적에 맞춰 모델을 변경하세요.",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/639447623_17863118769596285_530836772120061055_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTQ0MHgxNDQwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QGEfebcHVA2Pag1hqWMkU4GFbyZ42-YwIHf27_wE7_c4kz0rIEAFYltnwwphzfO-5I&_nc_ohc=-k_qW6p-hKcQ7kNvwEhWa77&_nc_gid=YbXXp2D01kendTvJk9LaiQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNTMyMjY1NzU2MjIzNTI0NQ%3D%3D.3-ccb7-5&oh=00_AfxJ-Oi7NIZhanABRkhwR0M-u9YKUVPiy5UIx-su5ZsNRA&oe=69C036D4&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:50:02.584",
+      "local_images": [
+        "web_viewer/images/541392a78e10fcede80d87bf44698050.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DU5zaL7ARFt",
+      "user": "notion_larry",
+      "timestamp": "2026-02-18 23:48:30",
+      "original_item_count": 1,
+      "platform_sequence_id": 332
+    },
+    {
+      "sequence_id": 610,
+      "sns_platform": "threads",
+      "code": "DSKaU75D9h1",
+      "full_text": "Claude 사용하면서 \"왜 이렇게 빨리 한도에 도달하지?\n\n싶었던 적 있으신가요? 저도 그랬습니다.\n\n그래서 직접 조사해봤는데, 범인을 찾았습니다.\n\n---\n\n1/ 먼저 충격적인 사실 하나.\n\nMCP 서버를 여러 개 켜놓으면 대화 시작 전에 이미 컨텍스트의 30~70%가 사라집니다.\n\n실제 측정값을 보면 이렇습니다.\n\n- mcp-omnisearch: 20개 tool에 약 14,000 토큰\n- playwright: 21개 tool에 약 13,600 토큰\n- Jira 단독: 약 17,000 토큰\n\n5개 서버만 연결해도 55,000 토큰이 증발합니다. \n\n200K 컨텍스트 기준으로 25% 이상이 사라지는 거죠.\n\n---\n\n2/ MCP가 이렇게 토큰을 잡아먹는 이유는 구조적인 문제 때문입니다.\n\n모든 tool 정의가 대화 시작과 동시에 컨텍스트에 로딩됩니다. 각 tool마다 설명, 파라미터, 반환값 등이 포함되어 있어서 tool 하나당 평균 700 토큰 정도를 소비합니다.\n\n앤트로픽 내부에서도 최적화 전 tool 정의만으로 134,000 토큰을 소비한 사례가 있었다고 합니다. 이건 코드팩토리 채널에서도 \"기존 MCP의 가장 큰 문제\"로 지적한 부분이기도 합니다.\n\n---\n\n3/ 그럼 Skills는 어떨까요?\n\n여기서 반전이 있습니다. \n\nSkills는 컨텍스트를 거의 먹지 않습니다.\n\nSkills는 \"flash drive\"처럼 작동합니다. 20개의 다른 Skills 지침이 sidelines에 앉아 있으면서 활성 컨텍스트 윈도우 공간을 전혀 소비하지 않습니다. Skill을 호출할 때만 해당 지침에 접근하고, 메인 대화와 병렬로 실행됩니다.\n\nMCP는 켜놓기만 해도 수만 토큰인데, Skills는 수십 개 등록해도 부담이 거의 없습니다.\n\n---\n\n4/ 앤트로픽도 이 문제를 알고 있었습니다.\n\n2025년 11월에 해결책을 내놨습니다.\n\n첫 번째는 Tool Search입니다. 모든 tool을 미리 로딩하는 대신, defer_loading: true로 설정하면 필요할 때만 동적으로 tool을 발견합니다. 토큰 사용량이 85% 감소하고, 정확도도 Opus 4 기준 49%에서 74%로 향상됩니다.\n\n자주 쓰는 3~5개 tool만 항상 로드하고, 나머지는 defer 처리하는 게 최적입니다.\n\n---\n\n5/ 두 번째는 Programmatic Tool Calling입니다. \n\n기존에는 데이터를 요청하면 전체 데이터를 무작정 가져와서 컨텍스트에 넣으려다 에러가 나거나 비용이 낭비됐습니다.\n\n이 기능은 Claude가 직접 코드를 작성해서 정확히 필요한 데이터만 추출해옵니다. 실행된 코드의 결과값만 컨텍스트에 들어가니까 효율성이 극대화됩니다. 실제로 43,588에서 27,297 토큰으로 37% 절감을 달성했습니다.\n\n---\n\n6/ 세 번째는 Effort Parameter입니다. \n\nClaude가 응답에 사용하는 토큰 양을 직접 조절할 수 있습니다.\n\nHigh effort: 복잡한 분석에 최대 품질\nMedium effort: 대부분의 프로덕션 용도\nLow effort: 대량 자동화에 가장 효율적\n\n간단한 작업에 굳이 High effort를 쓸 필요가 없습니다.\n\n---\n\n7/ Claude Code 사용자라면 이 명령어들을 반드시 알아두세요.\n\n/clear는 대화 초기화입니다. 작업 간 전환할 때 씁니다.\n/compact는 대화 요약입니다. 컨텍스트 70~80% 도달하면 씁니다.\n/context는 현재 토큰 사용량을 확인합니다.\n\n숙련된 개발자들 사이에서는 \"20번 반복마다 컨텍스트 리셋\"이 규칙처럼 통합니다. 20회 이후 성능이 급격히 저하되기 때문입니다.\n\n---\n\n8/ MCP 응답을 Skill로 처리하면 토큰을 97%까지 아낄 수 있습니다.\n\nBefore: list_deployments() 직접 호출하면 10,100 토큰\nAfter: Skill이 파일 분석 후 300 토큰 요약\n\nElvis S.라는 전 Meta AI 연구원은 MCP tool을 컨텍스트에서 제거하고 Python과 bash 실행으로 트리거하는 방식으로 토큰 사용량 약 90% 절감을 달성했다고 합니다.\n\n---\n\n9/ Prompt Caching도 강력합니다. API 사용자라면 반복되는 시스템 프롬프트나 문서를 캐싱해서 비용 최대 90%, 지연시간 최대 85%를 절감할 수 있습니다. 캐시 읽기는 기본 입력 토큰 가격의 10%만 청구됩니다.\n\n정적 콘텐츠(tool 정의, 시스템 지침, 예시)를 프롬프트 시작 부분에 배치하고 cache_control 파라미터로 재사용 가능한 콘텐츠의 끝을 표시하면 됩니다.\n\n---\n\n10/ 정리하면 이렇습니다.\n\nTool Search로 defer_loading 활용하면 85% 절감\n\nSkill 패턴으로 MCP 응답 처리하면 97% 절감\n\nMCP 제거 후 Python/bash 실행하면 90% 절감\n\n/clear와 /compact 활용하면 50~70% 절감\n\nPrompt Caching 활용하면 최대 90% 절감\n\n---\n\n11/ 당장 적용할 수 있는 실전 팁입니다.\n\n불필요한 MCP 연결을 끄세요. 작업에 필요한 것만 켜두면 됩니다.\n긴 대화는 주기적으로 새 채팅으로 시작하세요.\n한 채팅에서 여러 주제를 섞지 마세요.\nSkills는 컨텍스트 부담이 거의 없으니 적극 활용하세요.\n\n앤트로픽이 MCP를 리눅스 재단에 기부하면서 \"중립적 오픈소스\"로 만들려는 움직임도 있습니다. 앞으로 Tool Search 같은 기능이 더 발전할 가능성이 높습니다.\n\n---\n\n12/ Claude 토큰 관리는\n\n결국 \"필요한 것만 로드하고, 불필요한 것은 버리는 것\"입니다. 모든 기능을 켜놓고 쓰는 게 아니라, 작업에 맞게 선별하는 습관이 중요합니다.",
+      "media": [],
+      "crawled_at": "2026-03-18T17:50:02.584",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DSKaU75D9h1",
+      "user": "qjc.ai",
+      "timestamp": "2025-12-12 21:02:15",
+      "original_item_count": 13,
+      "platform_sequence_id": 333
+    },
+    {
+      "sequence_id": 611,
+      "sns_platform": "threads",
+      "code": "DU7MJjEiWtW",
+      "full_text": "노트북LM 슬라이드 만들때 \n참고할만한 프롬프트 150개. \n\n카테고리 별로 정리해두었으니 시간날때 한번씩 읽어보시고\n적용할 부분들만 따로 체크 하면 좋을꺼 같아요..~\n\n그냥 가지마시고 댓글이나 팔로워 부탁드립니다.^^;\n\n---\n\nhttps://drive.google.com/file/d/1-2cW-ltU0nt9ITh_A4SGMTMmJFHQzy2O/view?usp=sharing\n\n---\n\n부산 친구들은 커뮤니티에 자료 다 올리고 있습니다. ~\n\nhttps://open.kakao.com/o/gl9MAbWh",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/639717141_17891584389422952_5773033432187628778_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTQ0MHgyMDA3LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QH271w3mmeDeVI4_w1XlQPRYNoPLCkK3wbJdabOlAoLgG1sIdjaV7mSck6RvO4iHJw&_nc_ohc=Qdh09AYZzakQ7kNvwEPZYIK&_nc_gid=AszXxrypjsewixJCZgvmTw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNTcxMjk0MDMyNjYxMTc5OA%3D%3D.3-ccb7-5&oh=00_AfxhVmnf1Q0taC9ec_gOicoamOa5ypJb2M4km8jQ5Ar9wA&oe=69C02D79&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:50:02.584",
+      "local_images": [
+        "web_viewer/images/aaec4e27c94a088d083cd19e81edf7ef.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DU7MJjEiWtW",
+      "user": "aicode.lab",
+      "timestamp": "2026-02-19 12:43:56",
+      "original_item_count": 3,
+      "platform_sequence_id": 334
+    },
+    {
+      "sequence_id": 612,
+      "sns_platform": "threads",
+      "code": "DRim2UkknAR",
+      "full_text": "CLAUDE.md 대신 SKILL을 사용해 보세요.\n\n단순히 파일을 바꾸는 게 아니라, 작업의 효율이 달라집니다. \n\n1. 토큰 효율이 압도적입니다. CLAUDE.md는 한 파일에 모든 맥락을 담아두기에 토큰 낭비가 생길 수밖에 없습니다. 반면 SKILL은 필요한 시점에만 파일을 참조하므로 훨씬 효율적입니다.\n\n2. 구조화가 가능합니다. Reference를 활용하면 단순히 텍스트를 나열하는 게 아니라, DB 스키마 관리나 마이그레이션처럼 특정 기능별로 파일을 세분화하여 관리할 수 있습니다.\n\n3. 재사용이 가능합니다. SKILL은 플러그인 형태로 만들어 다른 프로젝트에서도 즉시 사용할 수 있습니다. 잘 만든 프롬프트를 재사용하며 프로젝트 간 일관성을 유지해 보세요.\n\nSKILL을 도입하고 다양한 테스트를 해보며 알게 된 실전 노하우를 쓰레드에 정리하고 있습니다. \n지금 팔로우하고 다음 팁을 놓치지 마세요 🔔🔔🔔",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/588968177_17905181082294542_5827313333347539505_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTI0OHgxNjQ0LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QGgUCJO7Mxdt7Y4NVsSL7zEVvjqNPZYpHWj8aCZu-WiOtjY4-7tYEQEzVtSgzo30Do&_nc_ohc=7hQeiXqAvD0Q7kNvwFbbvGi&_nc_gid=eaIgGQhNo0yVYPac8ghUuw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc3NDc1MDI5NjM5NzQ3NTg1Nw%3D%3D.3-ccb7-5&oh=00_AfxuuM0sh1cigoRE4-2rUvM8DaiQyHecp3Xvs-DRpYUC7A&oe=69C0226E&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:50:05.596",
+      "local_images": [
+        "web_viewer/images/35f100e13128102a582a3b2d77998fd4.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DRim2UkknAR",
+      "user": "toy_crane911",
+      "timestamp": "2025-11-27 10:02:02",
+      "original_item_count": 1,
+      "platform_sequence_id": 327
+    },
+    {
+      "sequence_id": 613,
+      "sns_platform": "threads",
+      "code": "DU4jCUmj4Uj",
+      "full_text": "누구나 무엇이든 만드는 AI 시대, 압도적 차이는 결국 '무엇을 만들 것인가'라는 취향(Taste)에서 온다.\n\n폴 그레이엄이 남긴 좋은 취향을 정의하는 14가지 원칙 (무려 2002년 아티클!!)\n\n---\n\n1. 단순함 (Simple): 장식을 빼고 본질에 집중하라.\n2. 시대를 초월함 (Timeless): 유행을 좇으면 백퍼 촌스러워짐.\n3. 올바른 문제 해결 (Solves the Right Problem): 아무리 아름다워도 엉뚱한 문제를 풀면 망함.\n4. 암시적임 (Suggestive): 다 떠먹여 주지 마라. 사용자가 레고 블록처럼 스스로 조합하고 개입할 여지를 남겨둘 것.\n5. 약간의 유머 (Slightly Funny): 창작자의 자신감이 담긴 지적 여유를 더해보자.\n6. 어려움 (Hard): 어려운 문제를 풀수록 군더더기 없는 해결책이 나온다.\n7. 쉬워 보임 (Looks Easy): 수많은 반복으로 복잡함을 없애고 명쾌함만 남겨라.\n(계속)\n\n---\n\n8. 대칭성 (Uses Symmetry): 대칭과 재귀(Recursion)는 구조적 안정감을 주고 단순함을 달성하는 가장 강력한 법칙임.\n9. 자연을 닮음 (Resembles Nature): 수억 년 최적화된 자연의 패턴을 차용해보기.\n10. 재설계 (Redesign): 한 번에 완벽할 순 없음. 과감히 버리고 끊임없이 수정하기.\n11. 모방의 수용 (Can Copy): 거장들은 억지스러운 '독창성'보다 '올바른 정답'을 찾는 데 집중한다.\n12. 기묘함 (Often Strange): 최고의 결과물엔 특유의 기묘함이 있다. 꾸며낸 것이 아니라, 진리를 좇다 보면 자연스레 배어 나오는 것.\n13. 무리지어 일어남 (Happens in Chunks): 위대한 작업은 15세기 피렌체처럼, 뛰어난 동료들이 모인 커뮤니티 속에서 폭발함.\n14. 대담함 (Often Daring): 상식과 관습에 진실이 가려져 있다면 기꺼이 도전하라.\n\n---\n\n출처: https://paulgraham.com/taste.html",
+      "media": [],
+      "crawled_at": "2026-03-18T17:50:05.596",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DU4jCUmj4Uj",
+      "user": "taesuk1984",
+      "timestamp": "2026-02-18 12:06:12",
+      "original_item_count": 4,
+      "platform_sequence_id": 328
+    },
+    {
+      "sequence_id": 614,
+      "sns_platform": "threads",
+      "code": "DU5tyzgE3jr",
+      "full_text": "저는 지난 주부터 클로드코드로 대부분 한 번에 모든 기능을 버그 없이 완성합니다. 심지어 복잡한 앱까지.\n\n비결은 최적화된 팀모드입니다.\n\n이해할 고수들만 이해하라고 쓰는...\n클코 팀모드 미친 꿀팁 (전세계에서 최초일 듯)\n\n1주일 째 클코 팀모드 하루종일 돌리는 중입니다.\n클로드 5명이 동시에 코드 짜면서 서로 대화합니다.\n\n시니어 개발팀 채용한 느낌.\n(사실 더 좋음.. 24시간 내내 돌릴 수 있으니...)\n근데 그냥 돌리면 망합니다.\n\n1주일간 하루 15시간씩 해서 실전에서 터득한\n지금 제가 실제 사용중인 팁 나눕니다.\n\n---\n\n꿀팁 1: 리더한테 코딩시키지 마세요. (작업 외주화)\n\n팀모드에는 리더가 있고 팀원이 있습니다.\n리더는 내가 직접 대화하는 메인 클로드예요.\n\n이 리더의 기억 공간이 전체 작전을 기억하는 유일한 곳입니다.\n여기서 코드까지 짜게 하면 기억이 순식간에 꽉 차요.\n\n\"아까 뭐 하고 있었지?\" 이 상태가 됩니다.\n리더는 전략만. 코딩은 전부 팀원한테.\n\n리더가 직접 하는 순간 팀 전체가 멍청해집니다.\n\n---\n\n꿀팁 2: 기억을 파일에 쓰세요. 클로드의 기억력을 믿지 마세요. (기억 외부화)\n\n클로드는 대화가 길어지면 오래된 내용을 자동으로 압축합니다.\n압축되면 아까 정한 것도 까먹어요.\n\n중요한 결정 나올 때마다 파일에 바로 적게 시키세요.\n기억을 날려도 이 파일만 읽으면 다시 돌아옵니다.\n저는 중요한 것을 끊임없이 decisions.md에 적게 합니다.\n\n안 하면 같은 논의를 3번 반복합니다. 당해봤습니다.\n\n---\n\n꿀팁 3: 팀원은 쓰고 버리고 새로 뽑으세요. (계속 해고하기)\n\n팀원도 일을 시키다 보면 기억이 꽉 차요.\n꽉 차면 느려지고, 엉뚱한 코드를 짜기 시작합니다.\n\n작업 끝난 팀원은 해고하고,\n새로 뽑으면서 이전 결과 요약만 넘겨주세요.\n\n항상 머리가 깨끗한 팀원한테 시키는 겁니다.\n속도랑 정확도가 동시에 올라갑니다.\n\nP.S.\n이거 전부 자동화하면?\n\n리더가 알아서 팀 짜고, 조사하고, 팀원 바꿔가면서 구현까지.\n\n한 번에 버그 없이 기능이 완성됩니다.\n\n한번 이 주제로 클코랑 대화해보세요.\n\n\"팀모드에서 리더 기억 보존하면서 팀원 자동 교체하는 워크플로우 만들어줘\"AI\n\n이 한 줄이면 시작됩니다.\n\n---\n\n[간략한 워크플로우]\n내가 팀리더한테 일시킴 ->\n팀리더가 4명의 팀원한테 리서치 시킴 ->\n각 팀원이 심부름꾼 3~8개 병렬로 호출해서 리서치 시킴 ->\n병렬로 약 심부름꾼 최대 30명이 동시에 리서치 돌아감 (엄청 빠름) ->\n팀원들은 심부름꾼이 가져다준 리서치 자료로 서로 실시간 대화 ->\n모든 작업이 끝나면 각 팀원이 보고서를 팀리더에게 제출 ->\n팀리더가 종합해서 3가지 제안서를 나에게 보고 ->\n내가 가장 좋은 것으로 승인 ->\n팀리더가 기존 팀원 전원 해고 ->\n새 팀원 4명 뽑아서 다시 일 시킴 ->\n새 팀원들이 또 각각 심부름꾼 불러서 작업 ->\n병렬로 심부름꾼 약 30명이 동시에 구현 ->\n심부름꾼이 완료한 것들 각각 팀원이 검토 ->\n그 후에 팀원이 팀리더에게 보고 ->\n팀리더는 30명 심부름꾼이 구현한거 최종검토 ->\n나에게 최종 보고 = 버그 하나도 없음",
+      "media": [],
+      "crawled_at": "2026-03-18T17:50:05.596",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DU5tyzgE3jr",
+      "user": "ddg.kang",
+      "timestamp": "2026-02-18 22:59:26",
+      "original_item_count": 5,
+      "platform_sequence_id": 329
+    },
+    {
+      "sequence_id": 615,
+      "sns_platform": "threads",
+      "code": "DU2-cvPkyI9",
+      "full_text": "MCP?? Skills??\n도대체 뭘 써야 하는거야 나는??\n\n바이브코딩을 시작하는 사람들이\n가장 어려워 하는 부분 중 하나야\n이런거 가르쳐주는거 나밖에 없음\n\n결론부터 말하면??\n둘다 써야 하는데 역할을 나눠라!\n- Skills : Claude에게 어떻게 해야 하는지 알려줌\n- MCP : Claude에게 능력을 제공함\n\n---\n\n사용 예시\n1. MCP가 연결을 제공 → Skill이 사용법을 알려줌\n예: MCP가 데이터베이스에 연결하고, Skill이 스키마와 쿼리 패턴을 문서화\n2. Skill이 워크플로우 정의 → MCP 도구를 활용\n예: /deploy skill이 배포 단계를 정의하고, MCP를 통해 Slack 알림 전송\n\n선택 기준\n- 외부 시스템 연결이 필요하면 → MCP 추가\n- Claude에게 \"어떻게\" 해야 하는지 가르치려면 → Skill 작성\n- 반복 가능한 워크플로우가 필요하면 → Skill로 /명령 생성\n\n---\n\nClaude Skills 가이드 공식문서\nhttps://code.claude.com/docs/ko/skills\n\nClaude MCP 가이드 공식문서\nhttps://code.claude.com/docs/ko/mcp\n\nClaude 확장하기 가이드 공식문서\nhttps://code.claude.com/docs/ko/features-overview",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/634382070_17894412357408836_5026865428467603063_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTQwOHg3Njguc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QGITbZSFCzc0Xvc0NTh7utYoZW5Q8liEr4SRKO3z-Z5akqtG8FKQ6qMTZdrqWhWJrE&_nc_ohc=nfB0r92o2foQ7kNvwGyI8dY&_nc_gid=88dEL9cwS3xG-zvlKHppyw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNDUyNjc4NjUwODc1OTYxMw%3D%3D.3-ccb7-5&oh=00_Afwrfqg-gNJbOQOJN5X-7_tHsxVKSpgLlxivh44nvWyiMg&oe=69C03AF5&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:50:05.596",
+      "local_images": [
+        "web_viewer/images/dde3ac69ffc00ef67b23e0a111f74fb8.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DU2-cvPkyI9",
+      "user": "gptaku_ai",
+      "timestamp": "2026-02-17 21:27:15",
+      "original_item_count": 3,
+      "platform_sequence_id": 330
+    },
+    {
+      "sequence_id": 616,
+      "sns_platform": "threads",
+      "code": "DU3KtefE-pt",
+      "full_text": "카페에서 AI를 사용하여 바리스타의 생산성과 손님이 매장에서 보내는 시간을 추적한다고 함",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/634091917_2170597663712235_2224821167503033355_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDQ3MC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QG2o7xxAHBbRFbpB2CPJxE7pA_J588d7yTfh0GQZo8ti-KJH8E3W6sw4inkSmQFO2I&_nc_ohc=aqt6kTtQ7xYQ7kNvwGHa6-R&_nc_gid=AsaSs7BtP1rZJhaMXMM99Q&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNDU4MDcxMzMwNDQ4NDQ2MQ%3D%3D.3-ccb7-5&oh=00_AfzGzBTxZWy6lJlmy52NJsAfY7oRgVRuujwbmMxUrT5rZg&oe=69C02B31&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:50:08.610",
+      "local_images": [
+        "web_viewer/images/a6ce4d8ef2dd5b80635e0130eb7261ce.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DU3KtefE-pt",
+      "user": "mosa_stock",
+      "timestamp": "2026-02-17 23:14:56",
+      "original_item_count": 1,
+      "platform_sequence_id": 326
+    },
+    {
+      "sequence_id": 617,
+      "sns_platform": "threads",
+      "code": "DU4nW8bE7bg",
+      "full_text": "생각보다 오픈클로 설치 어려워하는 사람들 많구나\n윈도우에서 오픈클로를 설치하고 싶다면,\nGPT나 클로드에 이 프롬프트 사용해봐 🤞\n\n---\n\n전혀 감도 못잡겠고 확실하게 단계별로 보면서 설치하고 싶다면,\nhttps://www.latpeed.com/products/OeMMU\n\n전자책 메뉴얼도 같이 넣은 후에, 프롬프트 붙여넣으면 설치까지 깔끔하게 도와준다 😎👍",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/630528137_17913497922298970_1557229559120683186_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uOTQ2eDU3OS5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QHlH4aqJ95v6JGgiZrOvohQCRBNprBAVRsh0ByVA0BYjQXwHTQTNreP3VfZ0s3eo-4&_nc_ohc=1Wwze1L8eoMQ7kNvwGfG4a0&_nc_gid=2PwjMZ7lAFzJUiIHgjgspw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNDk4ODIxNjQ2Mjg2MTM2MA%3D%3D.3-ccb7-5&oh=00_AfyW2pk5VoRU0H6iLrCZR4cLcr5XI_S5rh8y1jTJawiRBA&oe=69C0222D&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:50:08.611",
+      "local_images": [
+        "web_viewer/images/52673fbc897fc3750f9306b9de95a1fc.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DU4nW8bE7bg",
+      "user": "studiobyprompt",
+      "timestamp": "2026-02-18 12:43:58",
+      "original_item_count": 2,
+      "platform_sequence_id": 323
+    },
+    {
+      "sequence_id": 618,
+      "sns_platform": "threads",
+      "code": "DU4UIw6EmHo",
+      "full_text": "Codex 0.103.0 버전 업데이트\n- 멀티에이전트 기능 추가",
+      "media": [],
+      "crawled_at": "2026-03-18T17:50:08.611",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DU4UIw6EmHo",
+      "user": "appcast",
+      "timestamp": "2026-02-18 09:56:00",
+      "original_item_count": 1,
+      "platform_sequence_id": 324
+    },
+    {
+      "sequence_id": 619,
+      "sns_platform": "threads",
+      "code": "DU5aySiE46Q",
+      "full_text": "NotebookLM, 이제 브라우저에서 꺼낼 수 있어!\n\n  notebooklm-mcp-cli — NotebookLM을 CLI + MCP 서버로 만들어서, Claude / Cursor / Gemini\n  같은 AI 에이전트가 직접 노트북을 조작하게 해주는 오픈소스.\n\n \"연구 → 정리 → 콘텐츠 제작\" 파이프라인을 터미널 안으로 끌고 와영 ㅎ\n\n---\n\n설치하면 nlm 명령어 하나로 이런 게 전부 됩니당:\n\n - nlm notebook create/list/query — 주제별 노트북 생성·관리\n - nlm source add — URL, 파일, 구글 드라이브 문서 한 번에 수집\n - nlm research start \"주제\" — 웹/드라이브 기반 리서치 자동화\n - nlm studio create — 오디오, 문서, 플래시카드, 슬라이드 생성\n\n---\n\nMCP 모드를 켜두면 진짜 유용해영\n\n  Claude나 Cursor 같은 AI 에이전트가 NotebookLM을 자기 도구처럼 써\n\n  프롬프트 한 줄이면:\n 자료 수집 → 분석 → 결과물 생성까지 원스톱.\n\n  사람이 브라우저 탭 왔다갔다 할 필요가 없어영\n\n---\n\nNotebookLM 이미 쓰고 있다면, 이 레포는 사실상 \"비공식 API + 에이전트 브리지\" 역할.\n\n  브라우저 UI에 갇힌 도구 → 자동화 가능한 연구 인프라.\n\n  이 전환 하나로 워크플로우 자체가 달라져!\n\n보너스: 이 레포 자체가 AI 코딩 어시스턴트와 협업해서 만든 코드베이스\n\n \"AI + 인간 협업 개발\"이 실제로 어떻게 돌아가는지 궁금하면, 코드를 뜯어보는 것만으로도 공부가 됩니당\n\n---\n\n리서치, 문서, 발표자료를 반복 생산하는 사람이라면 — 개발자, 리서처, PM, 크리에이터 \n강추드려용\n\n  아래의 레포 ㄱㄱㄱ싱!!\n\n  GitHub: github.com/jacob-bd/notebooklm-mcp-cli",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/632621905_17875847586509572_8912150050193090692_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTAyNHg1NjQuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QEZfds5VMxuuebF488MpAQmN4JzTaz4QbFjgl8kY_CtkhNPo36iQhEUbevS9N26Ztk&_nc_ohc=DwMuGfTh690Q7kNvwE80Ht2&_nc_gid=nNQBon7mQp5VwA_-0LR5Qg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNTIxNDM2Mjc2NDg3MzM2MA%3D%3D.3-ccb7-5&oh=00_AfyQBD5qDgqzj3tRF-YfMGeXL-sq_8BpZ0gQ3V31ha6u7g&oe=69C05480&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:50:08.611",
+      "local_images": [
+        "web_viewer/images/d60ba46dfb091bef02bdc581d937f7ad.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DU5aySiE46Q",
+      "user": "ai_younggle_man",
+      "timestamp": "2026-02-18 20:13:21",
+      "original_item_count": 5,
+      "platform_sequence_id": 325
+    },
+    {
+      "sequence_id": 620,
+      "platform_id": "DU4LE79kkLu",
+      "sns_platform": "threads",
+      "code": "DU4LE79kkLu",
+      "username": "ambition_monkey",
+      "display_name": "윤상혁",
+      "full_text": "바이브코딩하는 사람 빨리 받아가셔요..\n\n65줄짜리 텍스트 파일 하나가 AI 코딩을 바꿨다?\n\n깃헙에서 하루에 별 400개씩 받고 있는 파일이 있는데\n그냥 마크다운 65줄임 ㅋㅋㅋ\n\nCLAUDE.md라고 하는 건데\nAndrej Karpathy가 \"LLM 코딩 이렇게 하면 안 된다\"고 지적한 걸\n규칙으로 정리해서 AI한테 먹인 거야 📝\n\n넣으면 뭐가 달라지냐면\nAI가 쓸데없는 리팩토링 안 하고\n 엉뚱한 추측 안 하고\n시키는 대로만 딱 함\n\n써본 사람들 반응이 \"확실히 달라졌다\" vs \"글쎄…\"로 갈리긴 하는데\n하루 400 스타는 실화임 😮\n\n프롬프트도 글빨이 필요한 시대라니\n\n#AI #ClaudeCode",
+      "media": [],
+      "url": "https://www.threads.net/@ambition_monkey/post/DU4LE79kkLu",
+      "created_at": "2026-02-18 08:36:50",
+      "date": "2026-02-18",
+      "crawled_at": "2026-03-18T17:50:11.634",
+      "source": "network",
+      "is_merged_thread": false,
+      "root_code": "DU4LE79kkLu",
+      "like_count": 170,
+      "reply_count": 25,
+      "repost_count": 86,
+      "quote_count": 1,
+      "pk": "3834863800479269614",
+      "media_type": 19,
+      "content_type": "image",
+      "platform_sequence_id": 319
+    },
+    {
+      "sequence_id": 621,
+      "sns_platform": "threads",
+      "code": "DMkH5Stg2bI",
+      "full_text": "기획서 초안부터 분석, 정리, 표현까지\nGPT가 도와줄 수 있다는 걸 알고 계셨나요?\n\n하지만 누구나 GPT를 쓴다고\n전략 보고서가 완성되는 건 아닙니다.\n\n전략의 흐름을 설계하고,\nGPT를 ‘글쓰기 도구’가 아닌\n‘전략 파트너’로 활용하는 법.\n현직 20년차 컨설턴트가 알려드립니다.\n\n보고서, 더는 혼자 끙끙대지 마세요.",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t45.1600-15/516258475_2225286691263928_6391964253183928693_n.png?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6ImFkc19pbWFnZSJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QGWElUIGTLxe_1Dj04jlGN3gzuDsd2J4mzZI6KPzVHoEUqNCNXVmLY17HyQe58IjR8&_nc_ohc=j4z8oJSTQeMQ7kNvwHrEk7a&_nc_gid=jv2cRbRTJYNsQ3LDAPoN9w&edm=APs17CUBAAAA&ccb=7-5&oh=00_Afy8IaZY4cY__Lv00G74HFkVg_ndOLvqQleWUF8z3dYVyw&oe=69C05433&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:50:11.634",
+      "local_images": [
+        "web_viewer/images/5fbe29106292389e9076b9a37d014d49.png"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DMkH5Stg2bI",
+      "user": "learningspoons",
+      "timestamp": "2025-07-26 17:33:04",
+      "original_item_count": 1,
+      "platform_sequence_id": 320
+    },
+    {
+      "sequence_id": 622,
+      "sns_platform": "threads",
+      "code": "DU4qI70kfka",
+      "full_text": "NotebookLM이 일부 기능 개선되었네요. \n우측의 3점을 누르시면, 프롬프트 표시, PDF 다운로드, 그리고 PPTX다운로드가 있습니다. PPTX 다운로드는 새로 들어온 기능이네요.\n\n곧 편집까지 가능할 것 같습니다. \ngoogle slides에서 편집가능하면 정말 좋겠어요. \n슬라이드 꾸미기 기능이 장난 아니거든요. ㅎ",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/627980775_17941165476118905_2389517296207311576_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTQyN3g4ODkuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QGjd_d65PQFG7a1WsXXed6QPtq2AgZ5rCPvRdt4FPp4NMsf6aQlF6DIZF3sMTNjSH4&_nc_ohc=76-Sb13f5GYQ7kNvwFN3Vo4&_nc_gid=lybOzLD_TIORuGDfzbmsDg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNTAwMDQxNDY0ODAwNjkzOA%3D%3D.3-ccb7-5&oh=00_Afzr0sI33x0DuLmaWJMlo9884KwsqdVoKonvQlXf8cBrxg&oe=69C046A9&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:50:11.634",
+      "local_images": [
+        "web_viewer/images/a1954d79c88aa428b628df7a301f4222.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DU4qI70kfka",
+      "user": "jungathena_ai",
+      "timestamp": "2026-02-18 13:08:16",
+      "original_item_count": 1,
+      "platform_sequence_id": 321
+    },
+    {
+      "sequence_id": 623,
+      "platform_id": "DU415QnEfRU",
+      "sns_platform": "threads",
+      "code": "DU415QnEfRU",
+      "username": "hunyfocus",
+      "display_name": "유지훈",
+      "full_text": "내 사진 올리고 ai 작업하면 얼굴이 자꾸 바뀌지? \n프롬프트 사용시 내가 올리는 프롬프트 넣으면 얼굴이 다르게 바뀌지 않아. \n\n-“90%가 모르는 얼굴 고정 명령어”\n-“이 프롬프트 하나면 끝입니다.”\n-“저장 안하면 후회합니다.”\n\n필요하면 꼭 스팔하고, 사용해봐\n\"얼굴 절대변경 금지 프롬프트\"는 댓글에.",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/638861024_17935972812167954_1027106282579490699_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTQwOHg3Njguc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QFC0gAl89upVliFpbGEpjdioNAjJVU3BcD-m4iS7w5nyr88tpdJvGH28l7gmPmV9IY&_nc_ohc=MUyKGwbhVwUQ7kNvwHgVBR4&_nc_gid=Ly_Yl1S1FW1i9yL4vmkUPw&edm=AI6eXeABAAAA&ccb=7-5&ig_cache_key=MzgzNTA1MjExNDAxNjU5NzA3Ng%3D%3D.3-ccb7-5&oh=00_AfzXL2UTpsyvVFHmfjVPQrwvuB-WSSdaYbkjNZZjyhKu8g&oe=69C0545E&_nc_sid=6efbad"
+      ],
+      "url": "https://www.threads.net/@hunyfocus/post/DU415QnEfRU",
+      "created_at": "2026-02-18 14:50:59",
+      "date": "2026-02-18",
+      "crawled_at": "2026-03-18T17:50:11.634",
+      "source": "network",
+      "local_images": [
+        "web_viewer/images/3706b64908ed39992064bba3419f6bcc.webp"
+      ],
+      "is_merged_thread": false,
+      "root_code": "DU415QnEfRU",
+      "like_count": 251,
+      "reply_count": 32,
+      "repost_count": 95,
+      "quote_count": 6,
+      "pk": "3835052114016597076",
+      "media_type": 1,
+      "content_type": "image",
+      "platform_sequence_id": 322
+    },
+    {
+      "sequence_id": 624,
+      "sns_platform": "threads",
+      "code": "DU5NhOTCKYQ",
+      "full_text": "이렇게 공유하면 되는 건가요?\n대충 만들어 봤어요. 가지고 가셔서 이렇게 저렇게 해보세요. 현재는 Mac용이에요.\nhttps://github.com/silobust-hash/Friend.git",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/632009478_849936754716216_8177435134933688970_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDQxNC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QGmqz87W_LtRGBga_AN-5wM8ctYemlSKTb6qumHsQ4i5KR0_ci-YU5krHoIg3jC-V4&_nc_ohc=CrI5iADzpeMQ7kNvwFNve_z&_nc_gid=XL0dvlcJc4eJ2SO7mVXQuQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNTE1NjAxNTM4MTc4NDA4MA%3D%3D.3-ccb7-5&oh=00_AfxFidrtRbr24-OZgPevUGaEK_MO_LdMLPcLe1QN_NXZoQ&oe=69C05042&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:50:11.638",
+      "local_images": [
+        "web_viewer/images/f02ecb41a1a0bdf471ec88489722a931.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DU5NhOTCKYQ",
+      "user": "silrobag",
+      "timestamp": "2026-02-18 18:19:11",
+      "original_item_count": 1,
+      "platform_sequence_id": 315
+    },
+    {
+      "sequence_id": 625,
+      "sns_platform": "threads",
+      "code": "DU5L2L3kmud",
+      "full_text": "구글과 MS가 동시에 발표했습니다.\n\n\"2026년은 AI 에이전트 원년\"\n\n근데 대부분 직장인은 아직도\n'어떤 툴 쓸까' 고민 중입니다.\n\n진짜 문제는 툴이 아닙니다.\n퇴사 전에 AI 팀 만들려면\n\n지금 당장 이 3가지부터 시작하세요\n\n---\n\n1/ AI 에이전트 시대의 본질\n\n에이전트는 '똑똑한 챗봇'이 아닙니다.\n당신 대신 일하는 직원입니다.\n\n1. 24시간 일하는 마케터\n2. 자는 동안 콘텐츠 쓰는 작가\n3. 주말에도 작동하는 퍼널 시스템\n\n도구로 쓰면 도구가 되고\n직원으로 쓰면 직원이 됩니다\n\n---\n\n2/ 대부분이 실패하는 이유\n\n\"ChatGPT 알아요. 근데 실제로는 잘 안 써요.\"\n\n알면서 실행 못 하는 건\n시간이나 툴 문제가 아닙니다.\n\n진짜 이유는\n무엇을 위임할지 몰라서입니다\n\n당신이 뭘 하는 사람인지\n명확하지 않으면 AI도 못 씁니다.\n\n---\n\n3/ 지금 당장 해야 할 첫 번째\n\n\"나는 뭘 하는 사람인가\" 정의하기\n\n퇴근 후 2시간으로 뭘 만들 건가요?\n블로그? 유튜브? 코칭?\n\n이게 명확해야\nAI한테 뭘 시킬지 보입니다.\n\n예: 나는 직장인 대상 AI 코칭 콘텐츠를 만드는 사람\n→ AI는 초안 작성 담당\n\n---\n\n4/ 지금 당장 해야 할 두 번째\n\n\"반복 작업 3개\" 찾기\n\n당신이 매번 하는 것 중\n패턴이 있는 일 3개만 뽑으세요.\n\n• 블로그 제목 짓기\n• 이메일 초안 쓰기\n• 리서치 자료 정리\n\n이 3개만 AI에 맡겨도\n퇴근 후 시간이 2배로 늘어납니다\n\n---\n\n5/ 지금 당장 해야 할 세 번째\n\n\"일하는 방식\" 설계하기\n\nAI는 지시를 따릅니다.\n당신이 시스템을 만들어야 합니다.\n\n1. 주제 리스트 정리 (월요일)\n2. AI에게 초안 요청 (화~목)\n3. 내가 다듬기 (금요일)\n\n이 루틴이 있으면\nAI가 직원처럼 움직입니다\n\n---\n\n6/ 툴은 나중 문제입니다\n\n대부분 \"어떤 툴 쓸까\"부터 시작합니다.\n그래서 툴만 쌓이고 실행은 안 됩니다.\n\n순서를 바꾸세요:\n\n1. 내 역할 정의\n2. 반복 작업 찾기\n3. 일하는 방식 설계\n4. 그다음에 툴 선택\n\n이 순서로 가면 AI 팀이 만들어집니다.\n\n---\n\n7/ 2026년은 이미 시작됐습니다\n\nGemini 3, Sonnet 5, GPT-5.3, DeepSeek V4\n매달 메이저 모델이 쏟아집니다.\n\n준비 안 된 사람은\n계속 \"시간 없어\"라고 합니다.\n\n준비된 사람은\n퇴근 후 2시간으로 팀을 만듭니다\n\n---\n\n8/ 결론\n\nAI 에이전트 시대는\n툴 싸움이 아닙니다.\n\n\"나는 누구고, 뭘 만들 건가\"\n이 질문에 답할 수 있는 사람이 이깁니다.\n\n퇴사 전에 시스템을 먼저 만드세요\n\nAI가 일하게 하고, 당신은 생각하세요.\n혼자여도 팀입니다. AI 팀을 빌드하세요\n\n---\n\n더 구체적인 가이드는\n뉴스레터에서 공유합니다.\n\n매주 AI 팀 빌더 인사이트 받아보기:\nhttps://maily.so/teobusinesslab/posts/l1zqg0lyr5x",
+      "media": [],
+      "crawled_at": "2026-03-18T17:50:11.638",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DU5L2L3kmud",
+      "user": "teo_daily_business",
+      "timestamp": "2026-02-18 18:02:48",
+      "original_item_count": 10,
+      "platform_sequence_id": 316
+    },
+    {
+      "sequence_id": 626,
+      "sns_platform": "threads",
+      "code": "DU41ui5kUkC",
+      "full_text": "요즘 에이전트를 위한 괜찮은 디버깅 툴을 찾다가 괜찮은 툴을 찾아서 공유해보려고 합니다. \n\nVercel 에서 만든 agent-browser 라고 에이전트가 CLI 기반으로 디버깅을 하고 피드백을 수집 하는 구조 입니다. \n\n가장 큰 장점은 \"자연어로 어떤 것을 테스트 하면 되는지 묘사\" 만 하면 된다는 점입니다. playwright 처럼 스크립트나 로깅을 위한 코드를 짜고 있지 않아도 된다는 점입니다.\n\n이게 大멀티 에이전트 시대에 아주 유용하게 쓰일 이유는 다음과 같습니다\n\n---\n\n비교하자면\n\nPlaywright: 1시간 동안 테스트 스크립트 작성.\n\nagent-browser: \"로그인해서 장바구니에 담기까지 해봐\"라고 한 줄 시키면 끝이라는거죠.\n\n---\n\n요즘 코딩하는 패턴을 보면 \n\n기능 구현 -> 테스트 -> 로그 수집 -> CC/Codex 에 개선 요청 -> 피드백 확인 -> 반복\n\n요즘 멀티 에이전트 시대로 에이전트 끼리 소통 하고 개선 하는 피드백 루프가 되게 중요해 지는데, 이런 피드백 루프를 효과적으로 만드는 툴이고 속도가 빨라서 더이상 이런 반복적인 피드백을 돌지 않아도 될거 같습니다. \n\n단순히 Claude Code Agent Team 기능 사용해서 테스터를 하나 지정 해두고 기능완료후 테스트 해주고 안되면 고쳐줘라고 하면 이제는 더 높은 신뢰도의 개발 결과물을 얻을 수 있을거 같습니다.\n\n---\n\n또 한가지 좋은 점은 Context Window 최적화가 잘 되었다는 것입니다. 이 CLI 툴은 DOM 이 아닌 \"접근성 트리 (AOM)\" 를 사용해서 html 파일을 읽기 때문에 Context Window 에 로드 되는 토큰 양이 현저히 낮다는 점입니다. \n\n예를들어 \nDOM : <div onclick=\"...\" class=\"btn_01\">로그인</div>\nAOM : Role: button, Name: 로그인, State: focusable\n\n이렇게 아주 무거운 raw html 불러올 필요없이 간단하게 화면을 이해하기 때문에 아주 빠르고 효율성 있게 테스트를 할 수 있게 되었다는 입니다.\n\n---\n\n직접 시도해보시죠! \n\nhttps://agent-browser.dev/",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/632046362_17935076820180514_7098107170928352344_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMjE2MHgxMzMzLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QEixWLABU8nRLWErpT0OaK56OpYA3D-1QxftOkD-iLMabmKcF41su5oFkKQ0uc5U5M&_nc_ohc=5xlx1zq4jccQ7kNvwEZepcI&_nc_gid=YUWYrDEo5rJNNPLFSO8OfA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNTA1MTM3Nzc0MDA0MDQ1MA%3D%3D.3-ccb7-5&oh=00_AfxrwwF9P9-la36dq54waEpHiUvoq6MbNSvJb6ZYGnvPWQ&oe=69C05359&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:50:11.638",
+      "local_images": [
+        "web_viewer/images/f5eb2b5b457f39f7093c62e7475ec6fe.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DU41ui5kUkC",
+      "user": "leehc_09",
+      "timestamp": "2026-02-18 14:49:31",
+      "original_item_count": 5,
+      "platform_sequence_id": 317
+    },
+    {
+      "sequence_id": 627,
+      "sns_platform": "threads",
+      "code": "DU4cHvOAZ9D",
+      "full_text": "​VS Code 터미널에서 클로드 코드(Claude Code) 쓰시는 분들, 스샷 공유할 때마다 파일로 저장하고 경로 복사하기 너무 불편하지? 이거 하나면 진짜 신세계가 열립니다.\n\n​바로 **'Terminal Paste Image'**라는 확장 프로그램!(하단 스샷 참고)\n\n​| 사용법은 정말 간단합니다:\n― 보여주고 싶은 화면 스샷 찍기\n― 터미널에서 Ctrl + Alt + V 누르기\n― 끝! 클로드가 이미지를 바로 인식됨!\n\n​파일 경로 노가다 할 필요 없이 커서(Cursor) 쓰는 것처럼 이미지를 바로 던져줄 수 있음! 작업 속도가 말도 안 되게 빨라지니까 터미널 클로드 유저라면 이건 무조건 설치하세요. 진짜 '핵꿀팁'입니다!",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/630222161_17851740606631065_7650993724484078836_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNDMyMHgyMzQ4LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QFyyd1iwfgTVYO2mZwImiLlg94Vcosvr26CJAzexhSYjNLCOwYbjvS3BvMalesO3tU&_nc_ohc=IZ_HraHXEzsQ7kNvwFqWZLA&_nc_gid=5Ma8_cmnouYPA8O4sgDgdg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNDkzODc1OTc0NTQ3ODQ2Nw%3D%3D.3-ccb7-5&oh=00_AfxV2_QOSp7g2L30c-s7cJykF1uSSfJh3w8Fi0pIYvmAkg&oe=69C053A4&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:50:11.638",
+      "local_images": [
+        "web_viewer/images/b5fd29e9bfca37743609aa3487e989c3.webp"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DU4cHvOAZ9D",
+      "user": "tiger_in_seoul",
+      "timestamp": "2026-02-18 11:05:46",
+      "original_item_count": 1,
+      "platform_sequence_id": 318
+    },
+    {
+      "sequence_id": 628,
+      "sns_platform": "threads",
+      "code": "DU31XM_E5JM",
+      "full_text": "AI 팀원들과 함께 일하는 \n워크스페이스를 만들고 있어요.\n\n어젯 밤에 급 아이디어가 떠올라서\n고객님들 자동화 만들어드리다가 짬내서 \n부랴부랴 만들고있습니다.\n\n계속 업데이트 해볼게요 ㅎㅎㅎ",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/628577335_2368457996913937_160835588908254591_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDMxOC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QF7U2EoAI2LgJGD31dg430siURfhaOvsFki0AbJvog_fUOF2yXd4NXrjKHxdDgIGrg&_nc_ohc=rYZJX12St48Q7kNvwGvZX77&_nc_gid=dUfKyZqedCddWA-1Bve6Sg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNDc2ODI5ODY4NTQ2OTI2MA%3D%3D.3-ccb7-5&oh=00_AfwNbe_mipJbyd1szeDWeUEWl1Mp00V6M7frD-KwP1xg4Q&oe=69C0486D&_nc_sid=10d13b"
+      ],
+      "crawled_at": "2026-03-18T17:50:14.659",
+      "local_images": [
+        "web_viewer/images/c99b105c2aa9cefa1f642266941e304f.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DU31XM_E5JM",
+      "user": "snapplug.app",
+      "timestamp": "2026-02-18 05:28:42",
+      "original_item_count": 1,
+      "platform_sequence_id": 311
+    },
+    {
+      "sequence_id": 629,
+      "sns_platform": "threads",
+      "code": "DU3ChuFkW5G",
+      "full_text": "최근 테크 업계와 소셜 미디어를 뜨겁게 달구고 있는 '멀티 에이전트 시스템'에 대한 환상을 가진 분들이 많습니다. 기획자, 디자이너, 개발자, QA 역할을 하는 AI 에이전트들이 서로 협업하여 팀을 구성하고, 앱 하나를 뚝딱 만들어내는 마법 같은 미래가 다가왔고 마치 잘 동작하는 것처럼 쓰레드 글도 많이 보입니다. OpenClaw 같은 프레임워크가 등장하면서 누구나 자신만의 AI 직원들을 고용해 회사를 굴린다며, 직원 15명으로 구성된 팀 조직도와 15명을 10만원에 24시간 부리고 있다는 등의 이야기를 하는 글을 엄청나게 보셨을 겁니다.\n\n하지만 엔지니어의 시각으로 이 구조를 조금만 들여다보면, 현실은 녹녹치 않습니다. 그저 확률모델일 뿐인 LLM이 그럴듯하게 보이는 협업!?을 하는 것처럼 보이나, 분야와 어떤 목적으로 사용하냐, 프롬프트 구조를 얼마나 잘 짜냐에 따라 잘 되는 경우도 분명 있겠지만, 현실은 대부분 잘 동작하지 않습니다.\n\n---\n\n가장 치명적인 문제는 바로 정보의 전달 과정에서 발생하는 문맥의 한계입니다. 즉, 컨텍스트 엔트로피의 증가입니다. 이론상으로는 기획 AI가 기획을 넘기면 개발 AI가 코드를 짜고 QA AI가 검수한다고 하지만, 실제 LLM(‘확률’모델) 간의 소통은 인간의 소통과 질적으로 다릅니다. 인간은 문맥을 읽고, 암묵적인 합의를 바탕으로 업무를 수행하지만, 에이전트들은 오직 텍스트 데이터와 확률에만 의존합니다. 기획 에이전트가 사용자 친화적인 UI라는 추상적인 지시를 내리면, 디자인 에이전트는 이를 자신의 학습된 데이터에 편향적으로 해석하고, 개발 에이전트는 또다시 왜곡된 해석을 바탕으로 코드를 작성합니다. 단계가 거듭될수록 최초의 의도는 희석되고 와전되어, 결국 결과물은 그럴듯해 보이지만 기능적으로는 텅 빈, 누구의 의도도 반영되지 않은 이상한 결과물이 나올 ‘확률’이 매우 높아집니다. 비유하자면, 가족오락관 단어 추론 게임 마지막사람이 엉뚱한 단어를 대답하는 것과 비슷합니다.\n\n---\n\n더욱 심각한 케이스는 돈을 잡아먹는 '무한 루프의 지옥’이 벌어질 수 있습니다. 개발 에이전트와 QA 에이전트가 붙었을 때, 이들은 종종 해결 불가능한 교착 상태에 빠질 수 있습니다. QA 에이전트가 오류를 지적하면, 개발 에이전트는 근본적인 원인을 추론하는 대신 확률적으로 가장 그럴듯한 수정안을 내놓습니다. QA는 다시 거부하고, 개발은 다시 엉뚱한 코드를 짭니다. 실제 사람 엔지니어라면 잘못된 코드나 테스트 케이스를 읽고 빠르게 판단하고 수정 루프를 거치겠지만, 에이전트들은 주어진 프롬프트의 ‘감옥’ 안에서 서로에게 의미 없는 텍스트를 던지며 API 비용만 천문학적으로 나가게 되버립니다. 자고 일어나면 완성된 앱이 있는 것이 아니라, 텅 빈 통장과 수천 줄의 에러 로그만이 남아있을 가능성이 큽니다. 다시한번 말씀드리지만 잘 돌아가는 케이스도 간혹 있습니다만, 대부분 쓰레드에서 글쓰시는분들은 시도해보고, 그 자체로 즐거워서 글쓰는 분들이 대부분일겁니다. 그럴싸해보이니까요.\n\n---\n\n물론 이 방식이 완전히 무용한 것은 아닙니다. 뉴스 기사를 요약하고, 번역하고, 포맷을 맞추는 식의 선형적 파이프라인에서는 훌륭하게 작동합니다. 하지만 대부분의 사람들은 이런 선형적 프로세스보다는 루프가 있는 창작활동을 자동화하고 싶어합니다. 변수가 통제되고 정답이 정해진 작업에서는 위력을 발휘하지만, 소프트웨어 개발이나 비즈니스 전략처럼 불확실성이 높고 고도의 추론과 창의적 판단이 필요한 영역, 즉 '비선형적 문제’ 앞에서는 잘 동작하지 않을 가능성이 훨씬 높습니다. 우리 회사의 3분기 마케팅 전략을 짜고 앱을 개선해라는 모호한 명령은 수많은 변수를 고려해야 하는 작업이며, 이를 각기 다른 환각(Hallucination) 가능성을 지닌 LLM들에게 쪼개서 맡기는 것은 위에 말씀드린 리스크를 감수해야 합니다. API비용만 왕창 내고 결과물은 제대로 안나올 가능성이 매우 높습니다. 빛 좋은 개살구죠.\n\n---\n\n실제 좋은 현업 엔지니어들은 '완전 자동화'라는 허상보다는, 반자동화, 생상선 향상이라는 현실적이고 실현가능한 사람이 포함되어있는 피드백 루프를 돌리게 됩니다. Anthropic도 그렇게 해서 100% AI가 코드를 작성합니다. AI가 모든 것을 결정하고 실행하게 두는 것이 아니라, AI는 지루하고 반복적인 초안 작업이나 데이터 수집 같은 작업을 수행하고, 결정적인 판단과 수정의 순간에는 반드시 인간이 개입해야 합니다. 오픈클로 같은 도구를 사용하여 Jira 티켓을 가져오고 브랜치를 생성하며 기본 코드나 플랜을 작성하게 한 뒤, 실행 버튼을 누르기 전 인간이 검토하는 프로세스가 좋은 예입니다. 이는 AI를 대체자가 아닌 강력한 생산성 향상 도구로 사용하는 것입니다. 서로 대화하며 산으로 가는 AI 팀을 꾸리는 것보다, 내 손발이 되어줄 똑똑한 비서 하나를 확실하게 통제하는 것이 훨씬 더 경제적이고, 빠르며, 무엇보다 결과물의 품질을 보장할 수 있는 보장가능한 방법일 것입니다.\n\n---\n\n그럼에도 불구하고 우리는 AI 기술진화 속도와 일하는 방식의 변화를 부정할 수는 없습니다. 지금은 엉성해 보이는 에이전트 간의 자동화도, 모델의 추론 능력이 비약적으로 상승하고 기억 용량이 확장됨에 따라 머지않아 인간의 개입을 최소화하는 수준으로 정교해질 것이기 때문입니다. 물론 정말 많은 시간(5~10년)이 걸릴것이라 생각하고 있습니다. 기술의 역사는 언제나 초기 단계의 조롱을 받았습니다. 지금 우리가 겪는 무한 루프와 환각 현상은 완전한 자율 에이전트 시대로 가는 과도기의 성장통이고 얼리아탑터의 노력일 것입니다. 중요한 것은 현재의 한계를 명확히 인지하되, 그 가능성을 닫아두지 않고 끊임없이 실험하며 최적의 모델을 찾야한다는 것입니다. 결국 다가올 미래에 살아남는 것은 완벽한 도구가 나오기를 기다리는 자가 아니라, 지금의 삐걱거리는 도구를 고쳐가며 그 작동 원리를 온몸으로 체득하고 먼저 실패해 본 이들이 될 것입니다.\n\n우리 모두 끊임없이 준비하고 공부해야합니다.",
+      "media": [],
+      "crawled_at": "2026-03-18T17:50:14.659",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DU3ChuFkW5G",
+      "user": "beroducky",
+      "timestamp": "2026-02-17 22:02:53",
+      "original_item_count": 6,
+      "platform_sequence_id": 312
+    },
+    {
+      "sequence_id": 630,
+      "sns_platform": "threads",
+      "code": "DU5BdVDkixQ",
+      "full_text": "바이브코딩 완전 초보자분들을 위한 글. 저장해놓고 꼭 보세요. 왠만한 바이브코딩 강의한다는 유료강의보다도 실질적으로 많은 도움이 되실거에요. 유튜브나 강의팔이에 일부 복잡하게 설명한 것들 전부 무시하셔도 좋습니다.\n\n왜냐면 장담컨대 이 글 하나로, 아예 클로드코드 같은걸 사용해보지도 못한분들도 바로 지금 결과를 낼 수 있을것이기 때문입니다. \n\n준비물은 클로드 월20달러짜리 결제, 이거 하나 뿐입니다.\n\n1.클로드코드 선택을 권장합니다.\n제 팔로워분들 설문조사결과 가장 많이 이용하시는 툴은, 코덱스5.3스파크가 출시된 현재도 클로드코드입니다. 제 개인적 의견으로는, 알아서 많은걸 처리해주기에 초보자들부터 고수까지, 이용 편의성이 높은 편입니다.\n\n2.기본 구독으로 우선은 충분합니다.\n월100달러나, 맥스로 월200달러까지는 결제 안하셔도됩니다. 이제 시작하신거라면 클로드코드 20달러로도 충분합니다. 그냥 클로드 월구독 20달러짜리 구매하면 끝입니다.\n\n---\n\n3.클로드나 GPT에게 클로드코드 설치방법을 물어보세요.\n*이건 솔직히 요즘시대에 긴 설명이나 강의가 사실상 전혀 필요없으며, 솔직히 말해서 유튜브를 볼 필요도 없습니다. AI에 그냥 물어보는것 이게 끝입니다. 윈도우든, 맥북이든 똑같습니다.\n\n아래 프롬프트를 사용하시는 가장 성능좋은 AI에게 복붙하세요. (웹검색 켜시구요)\n\"나 클로드 20달러 결제했어. 클로드코드 사용하고 싶은데 어떻게해? 나 윈도우컴퓨터(또는 맥북)야. 내가 이해하기 쉽게 어떻게 해야하는지 알려줘\"\n\n이제 시키는대로 하시면 끝입니다.\n\n축하드립니다. 이제 클로드코드를 사용하실 수 있게 되었습니다.\n\n---\n\n4.폴더를 만드세요.\n아무데나 폴더를 만드세요. test라 만들어봅시다.\n그리고 클로드를 접속하세요.\n\n접속시에는 \n1)cd 폴더위치(그냥 폴더 드래그하시면 됩니다)\n2)그 위치에서 클로드 접속\nclaude --dangerously-skip-permissions 라고 입력해서 접속하세요.\n\n---\n\n끝입니다.\n\n이제 이렇게 말해보세요.\n\n\"홈페이지 아무거나 테스트로 만들어봐. 그리고 완료되면 로컬 포트 3000으로 열어\"\n\n---\n\n끝입니다.\n축하드립니다. 이제 당신은 개발자가 되셨습니다.\n\n질문 있으시면 언제든 남겨주세요. \n제 팔로워라면 모든지 아낌없이 알려드립니다.",
+      "media": [],
+      "crawled_at": "2026-03-18T17:50:14.659",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DU5BdVDkixQ",
+      "user": "agenpreneur",
+      "timestamp": "2026-02-18 16:32:02",
+      "original_item_count": 5,
+      "platform_sequence_id": 313
+    },
+    {
+      "sequence_id": 631,
+      "sns_platform": "threads",
+      "code": "DU4q0IsEq8y",
+      "full_text": "팔로워분들을 위한 두번째 설문조사를 실시합나다.\n안녕하세요. 10년 차 개발자로 바닥부터 시작해 연매출 50억 법인을 만들기까지, 결국 시장에서 살아남는 건 속도와 효율이더군요. 요즘 AI 툴 없이는 사실상 비즈니스 속도를 따라잡기 힘든 게 냉정한 현실입니다.\n\n아시다시피 저를 믿고 따라와 주시는 팔로워분들을 위해 진짜 현업에서 도움이 되는 무상 서비스를 하나 기획하고 있습니다. 대충 만들 생각은 추호도 없으니, 여러분이 실제로 어떤 환경에서 개발하는지 알아야 제대로 준비할 수 있을 것 같네요.\n\n혹시 지금 어떤 AI 코딩 툴을 메인으로 쓰고 계신가요.\n\n단순히 코드를 자동 완성하는 수준을 넘어, 여러분의 생각과 의도를 가장 잘 파악해주는 파트너가 누구인지 궁금합니다. 가장 많이 사용하는 툴을 알려주세요. 기타의경우 오마이오픈코드, 구글스튜디오, 안티그라비티, 볼트, 리플릿, 또는 일반 LLM챗봇등 여러분이 사용하고 계시는것을 솔직하게 말씀해주세요.\n\n---\n\n남겨주신 의견을 바탕으로 제 10년 노하우를 갈아 넣은 서비스를 팔로워분들께 무료로 배포할 예정입니다. 여러분은 맨땅에 헤딩하지 마세요. 제가 겪은 시행착오는 제가 안고 가고, 여러분은 제가 닦아놓은 길로 편하게 오시면 됩니다.\n\n여러분의 참여와 선택이 곧 내놓을 서비스의 핵심이 됩니다. 투표나 댓글로 자유롭게 의견 남겨주세요. 제대로 된 게 무엇인지 확실하게 보여드리겠습니다.",
+      "media": [],
+      "crawled_at": "2026-03-18T17:50:14.659",
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DU4q0IsEq8y",
+      "user": "agenpreneur",
+      "timestamp": "2026-02-18 13:14:10",
+      "original_item_count": 2,
+      "platform_sequence_id": 314
     }
   ]
 };
