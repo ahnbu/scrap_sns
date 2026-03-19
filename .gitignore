@@ -49,6 +49,10 @@ _handoff/
 temp-code/
 test_runs/
 .pdca-status.json
+.playwright-cli/
+
+# Output data (date-stamped)
+output_*
 
 # Legacy Backup
 _backup_*/
