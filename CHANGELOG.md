@@ -4,6 +4,7 @@
 
 | 일시 | 유형 | 범위 | 변경내용 (목적 포함) |
 |---|---|---|---|
+| 2026-03-19 | test | fixtures/snapshots | Threads 페이지 HTML 스냅샷 11건 추가 — E2E 파서 테스트용 고정 데이터 |
 | 2026-03-19 | fix | inject_x_cookies | X(Twitter) 쿠키 주입 스크립트 추가 — persistent context에 세션 주입하여 비대화형 인증 갱신 지원 |
 | 2026-03-19 | docs | guide | Codex CLI 커스텀 명령어·Oh My Ag 설정·Playwright 샌드박스 가이드 4건 추가 |
 | 2026-03-19 | chore | gitignore | output_*, .pdca-status.json, .playwright-cli/ 추가 — 날짜별 산출물·런타임 상태·Playwright CLI 캐시 추적 제외 |
