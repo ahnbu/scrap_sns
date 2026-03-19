@@ -4,6 +4,7 @@
 
 | 일시 | 유형 | 범위 | 변경내용 (목적 포함) |
 |---|---|---|---|
+| 2026-03-19 | docs | guide | Codex CLI 커스텀 명령어·Oh My Ag 설정·Playwright 샌드박스 가이드 4건 추가 |
 | 2026-03-19 | chore | gitignore | output_*, .pdca-status.json, .playwright-cli/ 추가 — 날짜별 산출물·런타임 상태·Playwright CLI 캐시 추적 제외 |
 | 2026-03-18 | test | tests/e2e, tests/integration | 보안 수정 검증 + 웹 뷰어 기능 + 파서 통합 테스트 19건 추가 — 이전 세션 보안/품질 수정의 TDD Gap 해소 (S1~S10 API 보안, U1~U5 웹 뷰어, P1~P4 파서 파이프라인) |
 | 2026-03-18 | fix | server | CORS 전체 허용 롤백 — 로컬 전용 도구 + file:// 사용 환경에서 CORS 제한 불필요 |
