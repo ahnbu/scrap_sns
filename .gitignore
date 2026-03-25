@@ -43,7 +43,6 @@ scripts/
 # Terminal Paste Image folder
 .cp-images/
 
-_handoff/
 
 # Temp/test artifacts
 temp-code/
@@ -56,3 +55,11 @@ output_*
 
 # Legacy Backup
 _backup_*/
+.pdca-status
+.bkit-memory
+.bkit-memory.json
+.pdca-snapshots
+.current-session-id
+.env
+temp/
+.temp/
