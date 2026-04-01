@@ -1,4 +1,6 @@
 ---
+title: "linkedin_user_data_path_refinement Gap 분석 리포트"
+created: "2026-02-08 00:00"
 template: analysis
 version: 1.0
 description: linkedin_user_data_path_refinement Gap 분석 결과

@@ -1,3 +1,8 @@
+---
+title: "분석 보고서: Threads 스크래핑 실행 방식에 따른 동작 차이 규명"
+created: "2026-02-11 15:19"
+---
+
 # 분석 보고서: Threads 스크래핑 실행 방식에 따른 동작 차이 규명
 
 `total_scrap.py`를 통한 전체 실행과 `threads_scrap.py` 단독 실행 시 발생하는 로그 및 동작 차이를 분석한 결과, 시스템의 'Producer-Consumer' 구조에 의한 정상적인 현상임을 확인했습니다.

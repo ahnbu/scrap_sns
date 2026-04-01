@@ -1,3 +1,8 @@
+---
+title: "Plan: Scraping Failure Management & Retry Limit"
+created: "2026-02-11 15:32"
+---
+
 # Plan: Scraping Failure Management & Retry Limit
 
 계속해서 수집에 실패하는 항목들(Fail/Empty)로 인해 발생하는 리소스 낭비를 방지하기 위해, 실패 이력을 관리하고 재시도 횟수를 제한하는 로직을 도입합니다.

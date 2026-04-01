@@ -1,3 +1,8 @@
+---
+title: "LinkedIn 저장물 JSON 데이터 분석 리포트 (2026-02-01)"
+created: "2026-02-01 00:00"
+---
+
 # LinkedIn 저장물 JSON 데이터 분석 리포트 (2026-02-01)
 
 제공해주신 `docs/linkedin_saved/response.json` 파일을 분석한 결과, LinkedIn의 데이터를 정확하게 추출하기 위한 매핑 정보는 다음과 같습니다.

@@ -1,4 +1,6 @@
 ---
+title: "substack_scraper 설계서"
+created: "2026-02-08 00:00"
 template: design
 version: 1.0
 description: Substack 아카이브 및 본문 스크래퍼 상세 설계

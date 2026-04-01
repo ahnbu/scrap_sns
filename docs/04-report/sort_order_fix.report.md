@@ -1,3 +1,8 @@
+---
+title: "[Report] 저장순 정렬 로직 및 전역 Sequence ID 개선 완료 보고"
+created: "2026-02-11 00:00"
+---
+
 # [Report] 저장순 정렬 로직 및 전역 Sequence ID 개선 완료 보고
 
 ## 1. 개요

@@ -1,4 +1,6 @@
 ---
+title: "linkedin_load_more_button_improvement 완료 보고서"
+created: "2026-02-07 00:00"
 template: report
 version: 1.1
 description: 링크드인 사용자 스크래퍼 "결과 더 보기" 버튼 클릭 로직 개선 완료 보고서

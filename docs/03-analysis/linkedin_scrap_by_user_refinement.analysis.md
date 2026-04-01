@@ -1,4 +1,6 @@
 ---
+title: "linkedin_scrap_by_user_refinement Gap 분석 결과"
+created: "2026-02-07 00:00"
 template: analysis
 version: 1.2
 description: linkedin_scrap_by_user_refinement 기능 구현 결과 분석

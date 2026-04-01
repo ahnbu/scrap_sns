@@ -1,4 +1,6 @@
 ---
+title: "linkedin_json_to_markdown_conversion Completion Report"
+created: "2026-02-07 00:00"
 template: report
 version: 1.0
 description: LinkedIn JSON to Markdown 변환 작업 완료 보고서

@@ -1,4 +1,6 @@
 ---
+title: "linkedin_json_to_markdown_conversion Planning Document"
+created: "2026-02-07 00:00"
 template: plan
 version: 1.0
 description: JSON 데이터를 Markdown 형식으로 변환하여 가독성 향상

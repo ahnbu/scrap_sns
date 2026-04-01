@@ -1,3 +1,8 @@
+---
+title: "Plan: Threads Scraper Duplication Fix & Data Cleanup"
+created: "2026-02-11 15:27"
+---
+
 # Plan: Threads Scraper Duplication Fix & Data Cleanup
 
 `scrap_single_post.py`에서 발생하는 게시글 중복 수집 및 병합 로직의 결함을 수정하고, 오염된 데이터를 정리합니다.

@@ -1,3 +1,8 @@
+---
+title: "PDCA 계획: Threads 스크래퍼 수집 중단 문제 진단 및 해결"
+created: "2026-02-12 00:00"
+---
+
 # PDCA 계획: Threads 스크래퍼 수집 중단 문제 진단 및 해결
 
 ## 1. 개요 (Overview)

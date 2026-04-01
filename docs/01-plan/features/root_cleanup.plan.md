@@ -1,3 +1,8 @@
+---
+title: "Plan: Root Directory Cleanup & Dependency Verification"
+created: "2026-02-11 15:00"
+---
+
 # Plan: Root Directory Cleanup & Dependency Verification
 
 루트 디렉토리의 불필요한 파일들을 `tmp` 폴더로 이동하기 전, 메인 기능과의 의존성을 철저히 검증하고 안전하게 정리합니다.

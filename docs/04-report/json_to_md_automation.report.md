@@ -1,4 +1,6 @@
 ---
+title: "json_to_md_automation Completion Report"
+created: "2026-02-08 00:00"
 template: report
 version: 1.0
 description: JSON to Markdown 변환 자동화 기능 구현 완료 보고서

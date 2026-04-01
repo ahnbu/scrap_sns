@@ -1,3 +1,8 @@
+---
+title: "Plan: total_scrap.py vs threads_scrap.py 실행 로직 차이 분석"
+created: "2026-02-11 15:16"
+---
+
 # Plan: total_scrap.py vs threads_scrap.py 실행 로직 차이 분석
 
 `total_scrap.py`를 통해 실행할 때와 `threads_scrap.py`를 단독 실행할 때 발생하는 동작 차이(특히 데이터 수집 여부 및 처리 방식)의 원인을 분석하고 해결 방안을 수립합니다.

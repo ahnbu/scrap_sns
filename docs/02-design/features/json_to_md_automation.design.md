@@ -1,3 +1,8 @@
+---
+title: "Design: JSON to Markdown Conversion Automation"
+created: "2026-02-08 12:12"
+---
+
 # Design: JSON to Markdown Conversion Automation
 
 > **Description**: Detailed design for the `json_to_md` shared module and its integration into SNS scrapers.

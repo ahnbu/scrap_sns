@@ -1,4 +1,6 @@
 ---
+title: "linkedin_json_to_markdown_conversion Design Document"
+created: "2026-02-07 23:18"
 template: design
 version: 1.0
 description: LinkedIn JSON to Markdown 변환 로직 설계

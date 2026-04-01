@@ -1,3 +1,8 @@
+---
+title: "PDCA 계획: Twitter 수집 데이터 중분 발생 원인 분석 및 해결"
+created: "2026-02-12 00:00"
+---
+
 # PDCA 계획: Twitter 수집 데이터 중분 발생 원인 분석 및 해결
 
 ## 1. 개요 (Overview)

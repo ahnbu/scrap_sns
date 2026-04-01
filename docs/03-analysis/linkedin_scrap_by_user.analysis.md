@@ -1,4 +1,6 @@
 ---
+title: "linkedin_scrap_by_user Gap 분석"
+created: "2026-02-07 00:00"
 template: analysis
 version: 1.2
 description: 특정 사용자의 링크드인 게시글을 스크랩하는 기능 (linkedin_scrap_by_user.py) Gap 분석 보고서

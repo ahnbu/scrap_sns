@@ -1,3 +1,8 @@
+---
+title: "Plan: Enhanced Logging for Batch Execution (run_viewer.bat)"
+created: "2026-02-11 15:41"
+---
+
 # Plan: Enhanced Logging for Batch Execution (run_viewer.bat)
 
 `run_viewer.bat`을 통해 스크래퍼를 실행할 때, 터미널에 상세 로그가 표시되지 않아 진행 상황을 파악하기 어려운 문제를 해결합니다.

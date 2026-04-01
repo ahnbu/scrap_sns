@@ -1,3 +1,8 @@
+---
+title: "Plan: X(Twitter) 저장 게시글(Bookmarks) 크롤링 및 타래글 통합"
+created: "2026-02-12 11:38"
+---
+
 # Plan: X(Twitter) 저장 게시글(Bookmarks) 크롤링 및 타래글 통합
 
 X의 북마크 API 및 HTML 구조를 분석하여, 저장된 게시글과 그에 딸린 타래글들을 체계적으로 수집하고 `total_scrap.py`에 통합하는 계획을 수립합니다.

@@ -1,3 +1,8 @@
+---
+title: "Plan: Project_Cleanup_and_Legacy_Management"
+created: "2026-03-10 17:51"
+---
+
 # Plan: Project_Cleanup_and_Legacy_Management
 
 ## 1. Overview

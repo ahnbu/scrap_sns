@@ -1,3 +1,8 @@
+---
+title: "PDCA 계획: total_scrap.py 실행 시 생성되는 터미널 창 숨김 처리"
+created: "2026-02-13 00:00"
+---
+
 # PDCA 계획: total_scrap.py 실행 시 생성되는 터미널 창 숨김 처리
 
 ## 1. 개요 (Overview)

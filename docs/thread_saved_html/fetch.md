@@ -1,3 +1,8 @@
+---
+title: "fetch"
+created: "2026-02-01 14:37"
+---
+
 fetch("https://www.threads.com/graphql/query", {
 
 "headers": {

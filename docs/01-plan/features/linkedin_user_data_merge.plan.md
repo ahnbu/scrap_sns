@@ -1,4 +1,6 @@
 ---
+title: "linkedin_user_data_merge Planning Document"
+created: "2026-02-07 00:00"
 template: plan
 version: 1.2
 description: 링크드인 사용자 데이터 병합 및 중복 제거

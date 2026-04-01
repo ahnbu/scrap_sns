@@ -1,3 +1,8 @@
+---
+title: "[Report] TODO 관리 UI 개선 완료 보고서"
+created: "2026-02-12 00:00"
+---
+
 # [Report] TODO 관리 UI 개선 완료 보고서
 
 ## 1. 프로젝트 개요

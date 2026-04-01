@@ -1,3 +1,8 @@
+---
+title: "Design: Project_Cleanup_and_Legacy_Management"
+created: "2026-03-10 18:01"
+---
+
 # Design: Project_Cleanup_and_Legacy_Management
 
 ## 1. Overview

@@ -1,3 +1,8 @@
+---
+title: "Design: X(Twitter) 저장 게시글(Bookmarks) 크롤링 및 타래글 통합"
+created: "2026-02-12 11:40"
+---
+
 # Design: X(Twitter) 저장 게시글(Bookmarks) 크롤링 및 타래글 통합
 
 이 문서는 X(Twitter)의 북마크 API를 활용하여 저장된 게시글을 수집하고, 타래글을 병합하여 `total_scrap.py`에 통합하기 위한 상세 설계를 담고 있습니다.

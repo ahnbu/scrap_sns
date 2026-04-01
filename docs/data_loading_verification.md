@@ -1,3 +1,8 @@
+---
+title: "📋 검토보고서 검증 결과 (Verification Report)"
+created: "2026-02-06 00:00"
+---
+
 # 📋 검토보고서 검증 결과 (Verification Report)
 
 **작성일**: 2026-02-06  

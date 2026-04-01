@@ -1,3 +1,8 @@
+---
+title: "linkedin locator fix.report"
+created: "2026-03-10 00:00"
+---
+
 ﻿# LinkedIn 테스트 로케이터 매칭 및 안정화 완료 보고서
 
 > Version: 1.0.0 | Created: 2026-03-10

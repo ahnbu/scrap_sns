@@ -1,3 +1,8 @@
+---
+title: "Design: SNS 플랫폼 데이터 필드 순서 통일"
+created: "2026-02-12 16:39"
+---
+
 # Design: SNS 플랫폼 데이터 필드 순서 통일
 
 ## 1. 표준 필드 순서 정의 (Field Order List)

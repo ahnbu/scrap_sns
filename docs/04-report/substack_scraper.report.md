@@ -1,4 +1,6 @@
 ---
+title: "substack_scraper 완료 보고서"
+created: "2026-02-08 00:00"
 template: report
 version: 1.0
 description: Substack 사용자 게시글 스크래퍼 구현 완료 보고서

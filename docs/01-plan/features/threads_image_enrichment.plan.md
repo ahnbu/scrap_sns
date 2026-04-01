@@ -1,3 +1,8 @@
+---
+title: "threads_image_enrichment Planning Document"
+created: "2026-02-12 00:00"
+---
+
 # threads_image_enrichment Planning Document
 
 > **Summary**: 쓰레드 게시물의 누락된 이미지를 1회성 전체 재스크래핑을 통해 보강함.

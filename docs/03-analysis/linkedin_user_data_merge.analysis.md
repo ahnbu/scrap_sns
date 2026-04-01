@@ -1,4 +1,6 @@
 ---
+title: "linkedin_user_data_merge 분석 보고서"
+created: "2026-02-07 00:00"
 template: analysis
 version: 1.2
 description: 링크드인 사용자 데이터 병합 결과 분석

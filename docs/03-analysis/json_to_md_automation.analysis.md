@@ -1,3 +1,8 @@
+---
+title: "Gap Analysis: JSON to Markdown Automation"
+created: "2026-02-08 12:37"
+---
+
 # Gap Analysis: JSON to Markdown Automation
 
 ## 1. Comparison

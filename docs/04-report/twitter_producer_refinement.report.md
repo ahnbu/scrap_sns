@@ -1,3 +1,8 @@
+---
+title: "Report: X(Twitter) 목록 수집기 정교화 및 안정화 완료"
+created: "2026-02-12 14:10"
+---
+
 # Report: X(Twitter) 목록 수집기 정교화 및 안정화 완료
 
 ## 1. 작업 결과 요약

@@ -1,3 +1,8 @@
+---
+title: "Gap Analysis: Threads 스크래퍼 수집 중단 문제 해결"
+created: "2026-02-12 00:00"
+---
+
 # Gap Analysis: Threads 스크래퍼 수집 중단 문제 해결
 
 ## 1. 개요

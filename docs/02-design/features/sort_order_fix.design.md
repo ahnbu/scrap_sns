@@ -1,3 +1,8 @@
+---
+title: "[Design] 전역 Sequence ID 및 플랫폼 ID 분리 설계"
+created: "2026-02-11 16:46"
+---
+
 # [Design] 전역 Sequence ID 및 플랫폼 ID 분리 설계
 
 ## 1. 데이터 구조 변경 (Schema)

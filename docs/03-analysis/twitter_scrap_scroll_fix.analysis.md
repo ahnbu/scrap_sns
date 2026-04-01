@@ -1,3 +1,8 @@
+---
+title: "Gap Analysis: Twitter 목록 수집기 스크롤 조기 종료 문제 해결"
+created: "2026-02-12 00:00"
+---
+
 # Gap Analysis: Twitter 목록 수집기 스크롤 조기 종료 문제 해결
 
 ## 1. 개요

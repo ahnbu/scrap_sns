@@ -1,4 +1,6 @@
 ---
+title: "linkedin_scrap_by_user_refinement 설계서"
+created: "2026-02-07 00:00"
 template: design
 version: 1.2
 description: 링크드인 사용자 스크래퍼 기능 개선 (실행 요약, --after 인자, 에러 카운팅)

@@ -1,3 +1,8 @@
+---
+title: "Design: X(Twitter) 북마크 실시간 크롤러 (Playwright)"
+created: "2026-02-12 12:07"
+---
+
 # Design: X(Twitter) 북마크 실시간 크롤러 (Playwright)
 
 이 문서는 Playwright를 활용하여 X(Twitter) 북마크를 실시간으로 스크래핑하기 위한 상세 설계 내용을 담고 있습니다.

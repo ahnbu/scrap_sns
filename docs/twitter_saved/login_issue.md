@@ -1,3 +1,8 @@
+---
+title: "기존 코드의 browser = p.chromium.launch(...) 부분을 아래와 같이 변경하세요."
+created: "2026-02-12 12:23"
+---
+
 내 질문은 헤드리스 모드를 끄고 했는데도 로그인 불가 메시지가 뜬다는 것이다.
 
 Could not log you in now. Please try again later. g;177086612028771217:-1770866177913:vmKfeAhaxqEtUBYF82FiNeeH:1

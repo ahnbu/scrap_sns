@@ -1,3 +1,8 @@
+---
+title: "PDCA Report: Common Utility Refactoring (refactor_common_utils)"
+created: "2026-03-10 00:00"
+---
+
 # PDCA Report: Common Utility Refactoring (refactor_common_utils)
 
 ## 1. 작업 개요

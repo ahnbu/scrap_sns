@@ -1,4 +1,6 @@
 ---
+title: "linkedin_scrap_order_analysis 원인 진단 및 개선 설계서"
+created: "2026-02-08 00:00"
 template: design
 version: 1.0
 description: 링크드인 사용자 게시글 수집 순서 혼선 원인 진단 및 개선 설계

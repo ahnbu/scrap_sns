@@ -1,4 +1,6 @@
 ---
+title: "linkedin_scrap_by_user 완료 보고서"
+created: "2026-02-07 00:00"
 template: report
 version: 1.2
 description: 특정 사용자의 링크드인 게시글을 스크랩하는 기능 (linkedin_scrap_by_user.py) 완료 보고서

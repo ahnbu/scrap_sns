@@ -1,4 +1,6 @@
 ---
+title: "linkedin_user_data_merge 완료 보고서"
+created: "2026-02-07 00:00"
 template: report
 version: 1.1
 description: 링크드인 사용자 데이터 병합 및 중복 제거 완료 보고서

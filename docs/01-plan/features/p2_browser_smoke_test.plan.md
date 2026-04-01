@@ -1,3 +1,8 @@
+---
+title: "Plan: P2_Browser_Smoke_Testing"
+created: "2026-03-10 17:42"
+---
+
 # Plan: P2_Browser_Smoke_Testing
 
 ## 1. Overview

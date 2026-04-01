@@ -1,3 +1,8 @@
+---
+title: "[Plan] 저장순 정렬 로직 및 전역 Sequence ID 개선"
+created: "2026-02-11 16:44"
+---
+
 # [Plan] 저장순 정렬 로직 및 전역 Sequence ID 개선
 
 ## 1. 배경 및 문제 정의

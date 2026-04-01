@@ -1,3 +1,8 @@
+---
+title: "Detailed Design: X(Twitter) Producer Refinement & Precise Extraction"
+created: "2026-02-12 14:06"
+---
+
 # Detailed Design: X(Twitter) Producer Refinement & Precise Extraction
 
 이 문서는 `docs/twitter_saved` 샘플 데이터를 분석한 결과를 바탕으로 X 목록 수집기(`twitter_scrap.py`)를 고도화하기 위한 상세 설계 내용을 담고 있습니다.

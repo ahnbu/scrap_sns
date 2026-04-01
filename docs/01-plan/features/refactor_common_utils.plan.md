@@ -1,3 +1,8 @@
+---
+title: "PDCA Plan: Common Utility Refactoring (refactor_common_utils)"
+created: "2026-03-10 18:08"
+---
+
 # PDCA Plan: Common Utility Refactoring (refactor_common_utils)
 
 ## 1. 개요

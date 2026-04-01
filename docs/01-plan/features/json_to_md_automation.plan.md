@@ -1,3 +1,8 @@
+---
+title: "Plan: JSON to Markdown Conversion Automation"
+created: "2026-02-08 12:11"
+---
+
 # Plan: JSON to Markdown Conversion Automation
 
 > **Goal**: Automate the generation of Markdown (.md) reports from scraped JSON data for various SNS scrapers.

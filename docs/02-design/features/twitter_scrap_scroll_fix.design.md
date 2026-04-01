@@ -1,3 +1,8 @@
+---
+title: "PDCA 설계: Twitter 수집기 스크롤 로직 최적화"
+created: "2026-02-12 00:00"
+---
+
 # PDCA 설계: Twitter 수집기 스크롤 로직 최적화
 
 ## 1. 개요 (Overview)

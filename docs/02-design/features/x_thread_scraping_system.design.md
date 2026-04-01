@@ -1,3 +1,8 @@
+---
+title: "Detailed Design: X(Twitter) 타래 수집 시스템 및 통합 스키마 설계"
+created: "2026-02-12 13:34"
+---
+
 # Detailed Design: X(Twitter) 타래 수집 시스템 및 통합 스키마 설계
 
 이 문서는 X(Twitter)의 목록 수집과 상세 타래 수집을 분리하고, Threads 시스템과 동일한 데이터 구조 및 파이프라인을 구축하기 위한 상세 설계 내용을 담고 있습니다.

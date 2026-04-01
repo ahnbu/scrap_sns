@@ -1,4 +1,6 @@
 ---
+title: "linkedin_user_data_path_refinement 완료 보고서"
+created: "2026-02-08 00:00"
 template: report
 version: 1.0
 description: linkedin_user_data_path_refinement 최종 완료 보고서

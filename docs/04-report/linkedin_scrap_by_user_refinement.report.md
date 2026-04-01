@@ -1,4 +1,6 @@
 ---
+title: "linkedin_scrap_by_user_refinement 완료 보고서"
+created: "2026-02-07 00:00"
 template: report
 version: 1.2
 description: linkedin_scrap_by_user_refinement 기능 구현 완료 보고서

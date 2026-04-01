@@ -1,3 +1,8 @@
+---
+title: "📄 데이터 로딩 구조 검토 보고서 (Data Loading Strategy Review)"
+created: "2026-02-06 00:00"
+---
+
 # 📄 데이터 로딩 구조 검토 보고서 (Data Loading Strategy Review)
 
 **작성일**: 2026-02-06

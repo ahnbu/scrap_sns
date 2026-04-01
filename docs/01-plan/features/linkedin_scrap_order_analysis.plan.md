@@ -1,4 +1,6 @@
 ---
+title: "linkedin_scrap_order_analysis 기획서"
+created: "2026-02-08 00:00"
 template: plan
 version: 1.0
 description: 링크드인 사용자 게시글 수집 순서 혼선 원인 분석 및 개선 기획

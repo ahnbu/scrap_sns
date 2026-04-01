@@ -1,4 +1,6 @@
 ---
+title: "substack_scraper 기획서"
+created: "2026-02-08 00:00"
 template: plan
 version: 1.0
 description: Substack 아카이브 게시글 스크래퍼 기획

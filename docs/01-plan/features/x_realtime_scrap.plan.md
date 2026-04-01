@@ -1,3 +1,8 @@
+---
+title: "Plan: X(Twitter) 북마크 실시간 크롤러 (Playwright)"
+created: "2026-02-12 12:05"
+---
+
 # Plan: X(Twitter) 북마크 실시간 크롤러 (Playwright)
 
 로컬 파일 기반의 분석 도구를 넘어, 실제로 브라우저를 제어하여 최신 북마크를 수집하는 실시간 크롤러를 구현합니다.

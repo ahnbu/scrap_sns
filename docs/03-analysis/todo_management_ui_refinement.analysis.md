@@ -1,3 +1,8 @@
+---
+title: "[Analysis] TODO 관리 UI 개선 결과 분석"
+created: "2026-02-12 00:00"
+---
+
 # [Analysis] TODO 관리 UI 개선 결과 분석
 
 ## 1. 개요

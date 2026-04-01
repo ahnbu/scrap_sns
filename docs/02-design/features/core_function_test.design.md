@@ -1,3 +1,8 @@
+---
+title: "core function test.design"
+created: "2026-03-10 00:00"
+---
+
 ﻿# 핵심 기능 Playwright 자동화 테스트 설계 (v1.1)
 
 > Version: 1.1.0 | Created: 2026-03-10 | Status: In Progress

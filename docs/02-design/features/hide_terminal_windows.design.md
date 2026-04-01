@@ -1,3 +1,8 @@
+---
+title: "PDCA 설계: total_scrap.py 터미널 창 숨김 및 로그 파일 저장"
+created: "2026-02-13 00:00"
+---
+
 # PDCA 설계: total_scrap.py 터미널 창 숨김 및 로그 파일 저장
 
 ## 1. 개요 (Overview)

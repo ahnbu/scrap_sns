@@ -1,3 +1,8 @@
+---
+title: "PDCA 설계: Twitter 수집 로직 개선 및 중복 방지 설계"
+created: "2026-02-12 00:00"
+---
+
 # PDCA 설계: Twitter 수집 로직 개선 및 중복 방지 설계
 
 ## 1. 개요 (Overview)

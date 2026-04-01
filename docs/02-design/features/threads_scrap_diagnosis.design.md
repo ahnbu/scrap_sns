@@ -1,3 +1,8 @@
+---
+title: "PDCA 설계: Threads 스크래퍼 진단 및 구조 최적화"
+created: "2026-02-12 00:00"
+---
+
 # PDCA 설계: Threads 스크래퍼 진단 및 구조 최적화
 
 ## 1. 개요 (Overview)

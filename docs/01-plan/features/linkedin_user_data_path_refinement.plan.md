@@ -1,4 +1,6 @@
 ---
+title: "linkedin_user_data_path_refinement 기획서"
+created: "2026-02-08 00:00"
 template: plan
 version: 1.0
 description: 링크드인 사용자 데이터 저장 경로 및 파일명 규칙 개선

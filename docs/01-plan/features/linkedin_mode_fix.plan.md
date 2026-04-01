@@ -1,3 +1,8 @@
+---
+title: "Plan: LinkedIn Scraper Mode Fix & Performance Optimization"
+created: "2026-02-11 15:07"
+---
+
 # Plan: LinkedIn Scraper Mode Fix & Performance Optimization
 
 LinkedIn 스크래퍼가 `update` 모드임에도 불구하고 `all` 모드로 작동하는 버그를 수정하고, 전체적인 실행 속도를 개선합니다.

@@ -1,3 +1,8 @@
+---
+title: "fetch"
+created: "2026-01-30 16:36"
+---
+
 fetch("https://www.linkedin.com/voyager/api/graphql?variables=(start:10,paginationToken:dXJuOmxpOmFjdGl2aXR5Ojc0MTQxNzU5NTc0ODc1NjI3NTItMTc2OTY0MzA3MDU5Nw%3D%3D,query:(flagshipSearchIntent:SEARCH_MY_ITEMS_SAVED_POSTS))&queryId=voyagerSearchDashClusters.ef3d0937fb65bd7812e32e5a85028e79", {
 
 "headers": {

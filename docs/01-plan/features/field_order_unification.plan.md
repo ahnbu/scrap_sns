@@ -1,3 +1,8 @@
+---
+title: "Plan: SNS 플랫폼 데이터 필드 순서 통일 (Field Order Unification)"
+created: "2026-02-12 16:38"
+---
+
 # Plan: SNS 플랫폼 데이터 필드 순서 통일 (Field Order Unification)
 
 ## 1. 개요 (Overview)

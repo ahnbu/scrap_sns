@@ -1,3 +1,8 @@
+---
+title: "계획: threads_scrap.py 경량화 (Producer)"
+created: "2024-01-01 12:00"
+---
+
 # 계획: threads_scrap.py 경량화 (Producer)
 
 ## 목표

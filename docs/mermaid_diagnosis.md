@@ -1,3 +1,8 @@
+---
+title: "README.md Mermaid 다이어그램 디자인 진단 보고서"
+created: "2026-02-06 12:18"
+---
+
 # README.md Mermaid 다이어그램 디자인 진단 보고서
 
 `mermaid-expert` 스킬을 바탕으로 현재 [README.md](file:///d:/vibe-coding/scrap_sns/README.md)에 적용된 다이어그램을 분석하고, 디자인적 완성도를 높이기 위한 개선 방안을 제안합니다.

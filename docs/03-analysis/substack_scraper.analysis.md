@@ -1,4 +1,6 @@
 ---
+title: "substack_scraper Gap 분석 리포트"
+created: "2026-02-08 00:00"
 template: analysis
 version: 1.0
 description: substack_scraper 구현 결과 Gap 분석

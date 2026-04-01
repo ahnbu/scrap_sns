@@ -1,3 +1,8 @@
+---
+title: "Design: Real-time Logging for Web Scraper Execution"
+created: "2026-02-11 15:41"
+---
+
 # Design: Real-time Logging for Web Scraper Execution
 
 사용자가 웹 UI(브라우저)에서 'Run Scraper' 버튼을 클릭했을 때, 터미널(서버 창)에 실시간으로 로그가 출력되지 않는 문제를 해결하기 위한 설계입니다.
