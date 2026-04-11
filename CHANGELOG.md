@@ -4,6 +4,7 @@
 
 | 일시 | 유형 | 범위 | 변경내용 (목적 포함) |
 |---|---|---|---|
+| 2026-04-11 18:35 | feat | schema | utils/post_schema.py + build_data_js.py + migrate_schema.py 복구 — Post 표준 스키마 단일 진실 원천과 재현 가능한 마이그레이션 스크립트 확립 |
 | 2026-04-11 18:26 | chore | threads-schema | Threads 스키마 정비 문서·테스트·뷰어 데이터·스냅샷을 현재 상태로 반영 |
 | 2026-04-01 18:49 | docs | frontmatter | - |
 | 2026-04-01 18:07 | docs | CLAUDE.md | - |

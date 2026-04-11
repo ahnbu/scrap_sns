@@ -27,8 +27,22 @@ def test_validate_post_reports_missing_required_fields():
     missing = validate_post(
         {
             "sns_platform": "threads",
-            "full_text": "body only",
         }
     )
 
-    assert missing == ["username", "url", "created_at"]
+    assert missing == ["username", "url", "created_at", "full_text_or_media"]
+
+
+def test_validate_post_allows_image_only_posts():
+    missing = validate_post(
+        {
+            "sns_platform": "threads",
+            "username": "media_only_user",
+            "url": "https://www.threads.net/@media_only_user/post/ABC123",
+            "created_at": "2026-01-03 08:43:04",
+            "media": ["https://example.com/image.jpg"],
+            "full_text": "",
+        }
+    )
+
+    assert missing == []
