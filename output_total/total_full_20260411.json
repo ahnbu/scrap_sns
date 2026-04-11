@@ -1,4 +1,4 @@
-﻿const snsFeedData = {
+{
   "metadata": {
     "updated_at": "2026-04-11T17:34:02.615067",
     "max_sequence_id": 975,
@@ -23563,4 +23563,4 @@
       "platform_sequence_id": 518
     }
   ]
-};
+}
