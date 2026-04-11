@@ -155,3 +155,7 @@ output_total/
 - `test_runs/` 폴더: 특정 시점의 테스트 스냅샷 보관용.
 - 스크래퍼 CLI에서 `--mode all`은 전체 재수집이므로 데이터 용량 주의.
 - `total_scrap.py`는 로그를 `logs/{platform}.log`에 저장 (gitignore).
+
+## 후속 작업 후보
+
+`BACKLOG.md` 참조. AI는 새 작업 발견 시 이 파일에 추가하라.
