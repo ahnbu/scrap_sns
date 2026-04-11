@@ -495,7 +495,7 @@ ${item.body}
                 (post.full_text || '').toLowerCase().includes(searchQuery) ||
                 (post.display_name || post.username || post.user || '').toLowerCase().includes(searchQuery);
             
-            const postUrl = post.url || post.post_url || post.source_url || post.code;
+            const postUrl = resolvePostUrl(post) || post.code;
             
             const matchesFilter = 
                 currentFilter === 'all' || 
@@ -509,6 +509,17 @@ ${item.body}
 
             return matchesSearch && matchesFilter && matchesTag && matchesVisibility;
         });
+    }
+
+    function resolvePostUrl(post) {
+        if (post.url) return post.url;
+        const platform = (post.sns_platform || '').toLowerCase();
+        if (platform.includes('thread')) {
+            const user = post.username || post.user;
+            const code = post.platform_id || post.code;
+            if (user && code) return `https://www.threads.net/@${user}/post/${code}`;
+        }
+        return post.post_url || post.source_url || '';
     }
 
     function renderPosts() {
@@ -576,7 +587,7 @@ ${item.body}
         article.className = 'glass-card rounded-2xl p-4 flex flex-col gap-3 group break-inside-avoid relative overflow-hidden transition-all duration-300';
         
         // --- URL Definition (Critical for event handlers) ---
-        const postUrl = post.url;
+        const postUrl = resolvePostUrl(post);
         const isFavorited = favorites.has(postUrl);
         const isFolded = foldedPosts.has(postUrl);
         if (isFolded) article.classList.add('minimized');
@@ -623,7 +634,7 @@ ${item.body}
             <div class="flex items-center gap-3">
                 ${iconHtml}
                 <div class="min-w-0">
-                    <h3 class="text-sm font-semibold text-white truncate max-w-[150px]">${escapeHtml(post.display_name || post.username || 'Unknown')}</h3>
+                    <h3 class="text-sm font-semibold text-white truncate max-w-[150px]">${escapeHtml(post.display_name || post.username || post.user || 'Unknown')}</h3>
                     <p class="text-xs text-gray-400 truncate" title="${escapeHtml(post.created_at || post.crawled_at)}">
                         ${escapeHtml(dateLabel)}
                     </p>
@@ -1300,7 +1311,7 @@ ${item.body}
             item.innerHTML = `
                 <span class="material-symbols-outlined text-[20px] shrink-0" style="color: ${iconColor}">${icon}</span>
                 <div class="invisible-content">
-                    <h4 class="truncate">${escapeHtml(post.username || 'Unknown')}</h4>
+                    <h4 class="truncate">${escapeHtml(post.display_name || post.username || post.user || 'Unknown')}</h4>
                     <p class="truncate text-xs opacity-60">${escapeHtml((post.full_text || 'No content').slice(0, 100))}</p>
                 </div>
                 <button class="restore-btn hover:scale-105 active:scale-95 transition-all shrink-0" data-url="${escapeHtml(post.post_url)}">
