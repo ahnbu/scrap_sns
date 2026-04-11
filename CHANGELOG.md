@@ -4,6 +4,7 @@
 
 | 일시 | 유형 | 범위 | 변경내용 (목적 포함) |
 |---|---|---|---|
+| 2026-04-11 18:39 | chore | cleanup | web_viewer/convert_data.py를 _deprecated로 이동해 data.js 생성 경로 혼선을 제거 |
 | 2026-04-11 18:38 | chore | data | Threads 레거시 full 데이터 정규화 및 web_viewer/data.js 재생성 |
 | 2026-04-11 18:37 | chore | gitignore | output_total/total_full_*.json만 추적 가능하도록 2단 negation 예외 추가 |
 | 2026-04-11 18:37 | fix | viewer | resolvePostUrl 헬퍼와 Threads username fallback 추가 — Unknown 및 href=# 노출 방지 |
