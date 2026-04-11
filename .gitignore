@@ -52,6 +52,9 @@ test_runs/
 
 # Output data (date-stamped)
 output_*
+!output_total/
+output_total/*
+!output_total/total_full_*.json
 
 # Legacy Backup
 _backup_*/
