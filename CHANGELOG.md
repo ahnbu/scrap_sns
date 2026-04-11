@@ -4,6 +4,7 @@
 
 | 일시 | 유형 | 범위 | 변경내용 (목적 포함) |
 |---|---|---|---|
+| 2026-04-11 19:02 | docs | claude-md | - |
 | 2026-04-11 19:01 | fix | threads | - |
 | 2026-04-11 18:48 | docs | report | Threads 스키마 drift 정비 실행 기록 문서 추가 |
 | 2026-04-11 18:39 | chore | cleanup | web_viewer/convert_data.py를 _deprecated로 이동해 data.js 생성 경로 혼선을 제거 |

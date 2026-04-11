@@ -30,15 +30,17 @@ python substack_scrap_by_user.py --user {user_id} --limit 0
 ### 웹 뷰어 서버
 
 ```bash
-python server.py          # Flask API 서버 (port 5000)
-# 브라우저에서 web_viewer/index.html 열기
+python server.py          # Flask API 서버 (port 5000, sns_tags.json read/write용)
+# 브라우저에서 레포 루트의 index.html 열기 (file:// 또는 Flask 경유 모두 가능)
 ```
 
 ### 유틸리티
 
 ```bash
-python utils/json_to_md.py    # JSON → Markdown 변환
-python migrate_schema.py      # 스키마 필드 순서 정규화
+python utils/json_to_md.py                                    # JSON → Markdown 변환
+python -m utils.build_data_js                                 # total_full 최신본 → web_viewer/data.js (전수 validate_post 통과 시에만 write)
+python migrate_schema.py --target 'output_total/total_full_*.json'          # 레거시 → 표준 스키마 dry-run
+python migrate_schema.py --target 'output_total/total_full_*.json' --apply  # 실제 변환 (.bak 자동 생성)
 ```
 
 ## Architecture
@@ -67,7 +69,12 @@ SNS 플랫폼
 | `linkedin_scrap.py` | LinkedIn 저장 게시물 |
 | `twitter_scrap.py` | Twitter/X 수집 (Producer) |
 | `server.py` | Flask REST API (port 5000) |
+| `index.html` | 웹 뷰어 진입점 (레포 루트) |
 | `web_viewer/script.js` | 웹 뷰어 메인 로직 |
+| `web_viewer/data.js` | 뷰어가 읽는 정적 데이터 (`utils/build_data_js.py`로 생성) |
+| `utils/post_schema.py` | **Post 표준 스키마 단일 진실 원천** (`STANDARD_FIELD_ORDER`, `validate_post`, `normalize_post`) |
+| `utils/build_data_js.py` | `total_full_*.json` → `web_viewer/data.js` 변환 + 전수 검증 |
+| `migrate_schema.py` | 레거시 스키마 → 표준 스키마 일괄 변환 |
 | `utils/json_to_md.py` | JSON → Markdown 변환 유틸 |
 
 ### 2단계 수집 패턴 (Threads, Twitter)
@@ -77,18 +84,34 @@ Producer → Consumer 구조로 동작:
 2. **Consumer** (`thread_scrap_single.py`, `twitter_scrap_single.py`): 미수집 항목 (`is_detail_collected: false`)을 병렬 탭으로 상세 수집
 3. 실패 이력은 `scrap_failures_{platform}.json`에 기록, 3회 이상 실패 시 건너뜀
 
-### 표준 Post 스키마 (필드 순서 엄수)
+### Threads 스키마 3층 게이트 (재발방지 장치)
+
+레거시 필드(`user`/`timestamp`/`code`, url 없음)가 파일에 누적되는 drift를 막기 위해 Threads 파이프라인에 3층 방어선이 설치되어 있다.
+
+1. **층 1 — 원인**: `utils/threads_parser.py:extract_posts_from_node`가 상세 JSON → item dict를 만들 때 표준 키(`platform_id/username/display_name/url/created_at/sns_platform/source`)로 직접 작성
+2. **층 2 — 안전망**: `thread_scrap_single.py:merge_thread_items`가 `root.copy()` 후 `normalize_post`로 한 번 통과
+3. **층 3 — 영구화 게이트**: `thread_scrap_single.py:_assert_threads_schema`가 파일 write 직전 `validate_post`로 전수 검사 → 위반 시 `RuntimeError` raise (5개 write 지점 전부 적용)
+
+`thread_scrap.py:127-135` backfill 경로도 `normalize_post` + `validate_post`를 통과시킨 뒤만 저장한다.
+
+### 표준 Post 스키마 (단일 진실 원천)
+
+정본은 `utils/post_schema.py:STANDARD_FIELD_ORDER`이며, 다른 모듈은 해당 리스트를 import해서 사용해야 한다 (CLAUDE.md의 아래 리스트는 참조·문서용).
 
 ```python
 STANDARD_FIELD_ORDER = [
     "sequence_id", "platform_id", "sns_platform", "code", "urn",
     "username", "display_name", "full_text", "media", "url",
     "created_at", "date", "crawled_at", "source", "local_images",
-    "is_detail_collected", "is_merged_thread"
+    "is_detail_collected", "is_merged_thread",
 ]
+
+REQUIRED_FIELDS = ["sns_platform", "username", "url", "created_at"]
+# + "full_text 또는 media 중 하나"는 별도 로직으로 검사
 ```
 
-새 필드 추가 시 `migrate_schema.py`로 기존 데이터 정규화 필요.
+- 필드 추가 시: `utils/post_schema.py`의 `STANDARD_FIELD_ORDER`를 먼저 갱신 → 필요하면 `migrate_schema.py`로 기존 데이터 정규화 → `python -m utils.build_data_js`로 뷰어 데이터 재생성.
+- `validate_post(post)` / `normalize_post(post)`는 레거시 필드(`user`, `timestamp`, `post_url`, `source_url`) 자동 rename + Threads url 합성을 지원한다.
 
 ### 인증 세션
 
