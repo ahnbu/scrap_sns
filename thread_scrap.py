@@ -127,6 +127,7 @@ def update_simple_version(new_data, stop_code, crawl_start_time):
                     for p in full_posts:
                         simple_item = {
                             "code": p.get('platform_id') or p.get('code'),
+                            "sns_platform": "threads",
                             "username": p.get('username'),
                             "full_text": p.get('full_text', '')[:100] + "...", # 스니펫화
                             "created_at": p.get('created_at'),
