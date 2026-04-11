@@ -6,6 +6,7 @@ import os
 import glob
 from datetime import datetime
 from urllib.parse import urlparse
+from utils.post_schema import normalize_post, validate_post
 from utils.threads_parser import (
     format_timestamp, 
     extract_json_from_html, 
@@ -62,6 +63,25 @@ def get_post_code(post):
             pass
     return None
 
+
+def _assert_threads_schema(posts, context=''):
+    """Validate threads records before persisting them."""
+    bad = []
+    for idx, post in enumerate(posts or []):
+        if not isinstance(post, dict):
+            continue
+        if (post.get('sns_platform') or '').lower() not in ('thread', 'threads'):
+            continue
+        missing = validate_post(post)
+        if missing:
+            bad.append((idx, post.get('platform_id') or post.get('code'), missing))
+    if bad:
+        first = bad[0]
+        raise RuntimeError(
+            f"[{context}] schema violation: {len(bad)} threads posts invalid. "
+            f"first: idx={first[0]} code={first[1]} missing={first[2]}"
+        )
+
 def merge_thread_items(thread_items):
     """Merges multiple posts from the same thread into one single post data object."""
     if not thread_items: return None
@@ -81,7 +101,7 @@ def merge_thread_items(thread_items):
     merged_post['media'] = all_media
     merged_post['is_merged_thread'] = True
     merged_post['original_item_count'] = len(sorted_items)
-    return merged_post
+    return normalize_post(merged_post)
 
 def promote_to_full_history(grouped_data):
     """수집된 타래 데이터를 최신 Full DB 파일로 병합 및 승격시킵니다."""
@@ -132,6 +152,7 @@ def promote_to_full_history(grouped_data):
             'total_count': len(new_posts),
             'max_sequence_id': max_sequence_id
         })
+        _assert_threads_schema(full_content['posts'], 'promote')
         with open(latest_full_path, 'w', encoding='utf-8-sig') as f:
             json.dump(full_content, f, ensure_ascii=False, indent=4)
         print(f"✅ [Promotion] {updated_count}개 타래 승격 완료: {os.path.basename(latest_full_path)} (max_sequence_id: {max_sequence_id})")
@@ -191,6 +212,7 @@ def import_from_simple_database():
         full_content['metadata']['total_count'] = len(full_posts)
         full_content['metadata']['max_sequence_id'] = max_sequence_id
         
+        _assert_threads_schema(full_content['posts'], 'import_simple')
         with open(today_full_path, 'w', encoding='utf-8-sig') as f:
             json.dump(full_content, f, ensure_ascii=False, indent=4)
         print(f"✅ [Import] {len(new_items)}개 목록 가져옴: {os.path.basename(today_full_path)} (max_sequence_id: {max_sequence_id})")
@@ -234,6 +256,7 @@ def sync_detail_collected_flags(simple_path, full_path):
             full_changed += 1
 
     if simple_changed > 0:
+        _assert_threads_schema(simple_data.get('posts', []), 'sync_simple')
         with open(simple_path, 'w', encoding='utf-8-sig') as f:
             json.dump(simple_data, f, ensure_ascii=False, indent=4)
 
@@ -241,6 +264,7 @@ def sync_detail_collected_flags(simple_path, full_path):
         full_data['posts'] = full_posts
         full_data.setdefault('metadata', {})
         full_data['metadata']['updated_at'] = datetime.now().isoformat()
+        _assert_threads_schema(full_posts, 'sync_full')
         with open(full_path, 'w', encoding='utf-8-sig') as f:
             json.dump(full_data, f, ensure_ascii=False, indent=4)
 
@@ -366,6 +390,7 @@ async def run():
                 simple_marked += 1
             if code and not p.get('code'):
                 p['code'] = code
+        _assert_threads_schema(simple_data.get('posts', []), 'mark_collected')
         with open(latest_simple, 'w', encoding='utf-8-sig') as f:
             json.dump(simple_data, f, ensure_ascii=False, indent=4)
         if simple_marked > 0:

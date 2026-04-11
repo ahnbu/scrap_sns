@@ -20,6 +20,7 @@ import argparse
 from datetime import datetime, timedelta
 from dotenv import load_dotenv
 from utils.json_to_md import convert_json_to_md
+from utils.post_schema import normalize_post, validate_post
 
 # 환경 변수 로드
 load_dotenv('.env.local')
@@ -129,9 +130,12 @@ def update_simple_version(new_data, stop_code, crawl_start_time):
                             "username": p.get('username'),
                             "full_text": p.get('full_text', '')[:100] + "...", # 스니펫화
                             "created_at": p.get('created_at'),
-                            "post_url": p.get('post_url'),
+                            "url": p.get('url') or p.get('post_url'),
                             "source": "backfill_from_full"
                         }
+                        simple_item = normalize_post(simple_item)
+                        if validate_post(simple_item):
+                            continue
                         existing_posts.append(simple_item)
                 print(f"✅ {len(existing_posts)}개의 과거 항목을 Thread Full에서 Simple Full로 복구했습니다.")
             except Exception as e:

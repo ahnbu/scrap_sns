@@ -91,15 +91,24 @@ def extract_posts_from_node(node, target_code, master_pk):
             if reply_to_author_id and root_user_pk and reply_to_author_id != root_user_pk:
                 continue
 
-        created_at, _ = format_timestamp(post.get("taken_at"))
+        user = post.get("user", {})
+        username = user.get("username")
+        created_at, created_date = format_timestamp(post.get("taken_at"))
         extracted.append({
+            "platform_id": code,
             "code": code,
             "root_code": target_code,
-            "user": post.get("user", {}).get("username"),
+            "username": username,
+            "display_name": user.get("full_name") or username,
             "full_text": post.get("caption", {}).get("text", ""),
             "media": [c.get("url") for c in post.get("image_versions2", {}).get("candidates", [])[:1] if c.get("url")],
-            "timestamp": created_at,
-            "sns_platform": "threads"
+            "url": f"https://www.threads.net/@{username}/post/{code}" if username else "",
+            "created_at": created_at,
+            "date": created_date,
+            "sns_platform": "threads",
+            "source": "consumer_detail",
+            "pk": post.get("pk"),
+            "taken_at": post.get("taken_at"),
         })
     return extracted
 

@@ -24,9 +24,12 @@ def test_extract_items_multi_path_content(sample_html):
     
     assert len(posts) > 0
     post = posts[0]
+    assert post["platform_id"] == "TESTCODE123"
     assert post["code"] == "TESTCODE123"
     assert post["full_text"] == "Hello TDD World!"
-    assert post["user"] == "testuser"
+    assert post["username"] == "testuser"
+    assert post["display_name"] == "testuser"
+    assert post["url"] == "https://www.threads.net/@testuser/post/TESTCODE123"
     assert post["sns_platform"] == "threads"
 
 def test_extract_json_from_invalid_html():
