@@ -142,8 +142,8 @@ def main(limit=0):
                     post['source'] = 'full_tweet_scan'
                     post['sns_platform'] = 'x'
                     
-                    if not post.get('timestamp'):
-                        post['timestamp'] = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+                    if not post.get('created_at'):
+                        post['created_at'] = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
                         post['date'] = datetime.now().strftime('%Y-%m-%d')
                     
                     # 성공 시 실패 이력 제거

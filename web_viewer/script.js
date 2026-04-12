@@ -555,7 +555,7 @@ ${item.body}
                 (post.full_text || '').toLowerCase().includes(searchQuery) ||
                 (post.display_name || post.username || post.user || '').toLowerCase().includes(searchQuery);
             
-            const postUrl = resolvePostUrl(post) || post.code;
+            const postUrl = resolvePostUrl(post);
             
             const matchesFilter = 
                 currentFilter === 'all' || 
