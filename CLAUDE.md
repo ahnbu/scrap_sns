@@ -37,6 +37,7 @@ python server.py          # Flask API 서버 (port 5000, sns_tags.json read/writ
 ### 유틸리티
 
 ```bash
+node utils/query-sns.mjs <command>                            # SNS 데이터 조회 CLI (recent, get, search, by-platform, by-user, by-tag, tag list, stats)
 python utils/json_to_md.py                                    # JSON → Markdown 변환
 python -m utils.build_data_js                                 # total_full 최신본 → web_viewer/data.js (전수 validate_post 통과 시에만 write)
 python migrate_schema.py --target 'output_total/total_full_*.json'          # 레거시 → 표준 스키마 dry-run
