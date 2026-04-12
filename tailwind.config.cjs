@@ -6,15 +6,16 @@ module.exports = {
     extend: {
       colors: {
         primary: "#7f0df2",
+        "primary-hover": "#6a0bc9",
         "background-light": "#f7f5f8",
         "background-dark": "#121212",
-        "surface-glass": "rgba(255, 255, 255, 0.03)",
-        "surface-glass-hover": "rgba(255, 255, 255, 0.07)",
+        "surface-glass": "rgba(255, 255, 255, 0.05)",
+        "surface-glass-hover": "rgba(255, 255, 255, 0.08)",
         "border-glass": "rgba(255, 255, 255, 0.08)",
       },
       fontFamily: {
         display: ["Spline Sans", "sans-serif"],
-        body: ["Inter", "sans-serif"],
+        sans: ["Inter", "sans-serif"],
       },
       backdropBlur: {
         xs: "2px",
