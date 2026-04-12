@@ -125,7 +125,7 @@ def run_scrapers_in_parallel(mode='update'):
         # 플랫폼별 로그 파일 생성 (파일명에서 / 제거)
         safe_name = platform.lower().replace('/', '_')
         log_path = os.path.join(LOG_DIR, f"{safe_name}.log")
-        f = open(log_path, "w", encoding="utf-8")
+        f = open(log_path, "a", encoding="utf-8")
         
         # 로그 파일 상단에 시작 구분선 추가
         f.write(f"================================================\n")

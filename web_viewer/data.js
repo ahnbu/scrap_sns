@@ -1,10 +1,10 @@
 ﻿const snsFeedData = {
   "metadata": {
-    "updated_at": "2026-04-11T17:34:02.615067",
-    "max_sequence_id": 975,
-    "total_count": 975,
-    "threads_count": 673,
-    "linkedin_count": 237,
+    "updated_at": "2026-04-12T16:34:39.610752",
+    "max_sequence_id": 982,
+    "total_count": 982,
+    "threads_count": 679,
+    "linkedin_count": 238,
     "twitter_count": 79,
     "execution_mode": "parallel_multi_window"
   },
@@ -20304,6 +20304,32 @@
     },
     {
       "sequence_id": 847,
+      "platform_id": "DWy4tB4E9w1",
+      "sns_platform": "threads",
+      "code": "DWy4tB4E9w1",
+      "username": "unclejobs.ai",
+      "display_name": "엉클잡스 | Ai 시대, 돈이 되는 정보 전달",
+      "full_text": "같은 문제를 다른 방향에서 풀고 있는 프로젝트도 있습니다.\n\n세컨드 클로드 코드(Second Claude Code)예요.\n\nagent-skills는 \"프로세스를 심는다\"입니다.\n스펙 → 테스트 → 리뷰를 순서대로 밟게 하는 방식.\n\n세컨드 클로드 코드는 \"모델 간 견제를 만든다\"입니다.\n\n17개 서브에이전트가 PDCA 품질 루프를 돌리고,\nArtifact Viewer가 결과를 웹으로 시각화합니다.\n\n하나는 습관으로, 하나는 합의로.\n같이 쓸 수 있는 구조예요.\n\n제가 만들어서 홍보중 \n\nㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ\n\n→ GitHub: https://github.com/unclejobs-ai/second-claude-code",
+      "media": [],
+      "url": "https://www.threads.net/@unclejobs.ai/post/DWy4tB4E9w1",
+      "created_at": "2026-04-07 00:22:53",
+      "date": "2026-04-07",
+      "crawled_at": "2026-04-11T17:20:10.151",
+      "source": "network",
+      "is_detail_collected": true,
+      "is_merged_thread": false,
+      "root_code": "DWy4tB4E9w1",
+      "like_count": 5,
+      "reply_count": 0,
+      "repost_count": 1,
+      "quote_count": 0,
+      "pk": "3869404414860319797",
+      "media_type": 19,
+      "content_type": "image",
+      "platform_sequence_id": 643
+    },
+    {
+      "sequence_id": 848,
       "platform_id": "DWy4tANE86_",
       "sns_platform": "threads",
       "code": "DWy4tANE86_",
@@ -20325,7 +20351,7 @@
       "platform_sequence_id": 643
     },
     {
-      "sequence_id": 848,
+      "sequence_id": 849,
       "platform_id": "DW3Y9GZk0M0",
       "sns_platform": "threads",
       "code": "DW3Y9GZk0M0",
@@ -20351,7 +20377,7 @@
       "platform_sequence_id": 644
     },
     {
-      "sequence_id": 849,
+      "sequence_id": 850,
       "platform_id": "DW1ZM6SkQ6r",
       "sns_platform": "threads",
       "code": "DW1ZM6SkQ6r",
@@ -20373,7 +20399,7 @@
       "platform_sequence_id": 645
     },
     {
-      "sequence_id": 850,
+      "sequence_id": 851,
       "platform_id": "DW3vK_okVmN",
       "sns_platform": "threads",
       "code": "DW3vK_okVmN",
@@ -20399,7 +20425,7 @@
       "platform_sequence_id": 646
     },
     {
-      "sequence_id": 851,
+      "sequence_id": 852,
       "platform_id": "DWZNnK9k77n",
       "sns_platform": "threads",
       "code": "DWZNnK9k77n",
@@ -20425,7 +20451,7 @@
       "platform_sequence_id": 639
     },
     {
-      "sequence_id": 852,
+      "sequence_id": 853,
       "platform_id": "DWyz_Flk-Fs",
       "sns_platform": "threads",
       "code": "DWyz_Flk-Fs",
@@ -20451,7 +20477,7 @@
       "platform_sequence_id": 640
     },
     {
-      "sequence_id": 853,
+      "sequence_id": 854,
       "platform_id": "DWqyF3akYGX",
       "sns_platform": "threads",
       "code": "DWqyF3akYGX",
@@ -20477,7 +20503,7 @@
       "platform_sequence_id": 641
     },
     {
-      "sequence_id": 854,
+      "sequence_id": 855,
       "platform_id": "DWy4tLakxU3",
       "sns_platform": "threads",
       "code": "DWy4tLakxU3",
@@ -20505,7 +20531,7 @@
       "platform_sequence_id": 642
     },
     {
-      "sequence_id": 855,
+      "sequence_id": 856,
       "platform_id": "DWralqNAFls",
       "sns_platform": "threads",
       "code": "DWralqNAFls",
@@ -20531,7 +20557,7 @@
       "platform_sequence_id": 637
     },
     {
-      "sequence_id": 856,
+      "sequence_id": 857,
       "platform_id": "DWtigu1E_OH",
       "sns_platform": "threads",
       "code": "DWtigu1E_OH",
@@ -20557,7 +20583,7 @@
       "platform_sequence_id": 638
     },
     {
-      "sequence_id": 857,
+      "sequence_id": 858,
       "platform_id": "DWvpO8hCUhN",
       "sns_platform": "threads",
       "code": "DWvpO8hCUhN",
@@ -20587,7 +20613,7 @@
       "platform_sequence_id": 635
     },
     {
-      "sequence_id": 858,
+      "sequence_id": 859,
       "platform_id": "DWt_mEKkzwV",
       "sns_platform": "threads",
       "code": "DWt_mEKkzwV",
@@ -20613,7 +20639,7 @@
       "platform_sequence_id": 636
     },
     {
-      "sequence_id": 859,
+      "sequence_id": 860,
       "platform_id": "DWv3m8lj5gF",
       "sns_platform": "threads",
       "code": "DWv3m8lj5gF",
@@ -20635,7 +20661,7 @@
       "platform_sequence_id": 631
     },
     {
-      "sequence_id": 860,
+      "sequence_id": 861,
       "platform_id": "DWvvqw5mLcH",
       "sns_platform": "threads",
       "code": "DWvvqw5mLcH",
@@ -20665,7 +20691,7 @@
       "platform_sequence_id": 632
     },
     {
-      "sequence_id": 861,
+      "sequence_id": 862,
       "platform_id": "DWvMRVVlAB9",
       "sns_platform": "threads",
       "code": "DWvMRVVlAB9",
@@ -20687,7 +20713,7 @@
       "platform_sequence_id": 633
     },
     {
-      "sequence_id": 862,
+      "sequence_id": 863,
       "platform_id": "DWu4BurkVoc",
       "sns_platform": "threads",
       "code": "DWu4BurkVoc",
@@ -20709,7 +20735,7 @@
       "platform_sequence_id": 634
     },
     {
-      "sequence_id": 863,
+      "sequence_id": 864,
       "platform_id": "DVksGIHAIed",
       "sns_platform": "threads",
       "code": "DVksGIHAIed",
@@ -20731,7 +20757,7 @@
       "platform_sequence_id": 627
     },
     {
-      "sequence_id": 864,
+      "sequence_id": 865,
       "platform_id": "DUcOCbhEguM",
       "sns_platform": "threads",
       "code": "DUcOCbhEguM",
@@ -20757,7 +20783,7 @@
       "platform_sequence_id": 628
     },
     {
-      "sequence_id": 865,
+      "sequence_id": 866,
       "platform_id": "DTCYCp1ErLv",
       "sns_platform": "threads",
       "code": "DTCYCp1ErLv",
@@ -20779,7 +20805,7 @@
       "platform_sequence_id": 629
     },
     {
-      "sequence_id": 866,
+      "sequence_id": 867,
       "platform_id": "DWubt3-k2gC",
       "sns_platform": "threads",
       "code": "DWubt3-k2gC",
@@ -20801,7 +20827,7 @@
       "platform_sequence_id": 630
     },
     {
-      "sequence_id": 867,
+      "sequence_id": 868,
       "platform_id": "DWdJwF8AHvW",
       "sns_platform": "threads",
       "code": "DWdJwF8AHvW",
@@ -20827,7 +20853,7 @@
       "platform_sequence_id": 626
     },
     {
-      "sequence_id": 868,
+      "sequence_id": 869,
       "platform_id": "DWsgUwVkTei",
       "sns_platform": "threads",
       "code": "DWsgUwVkTei",
@@ -20853,7 +20879,7 @@
       "platform_sequence_id": 623
     },
     {
-      "sequence_id": 869,
+      "sequence_id": 870,
       "platform_id": "DWtquNok-mt",
       "sns_platform": "threads",
       "code": "DWtquNok-mt",
@@ -20879,7 +20905,7 @@
       "platform_sequence_id": 624
     },
     {
-      "sequence_id": 870,
+      "sequence_id": 871,
       "platform_id": "DWt770QEq6a",
       "sns_platform": "threads",
       "code": "DWt770QEq6a",
@@ -20905,7 +20931,7 @@
       "platform_sequence_id": 625
     },
     {
-      "sequence_id": 871,
+      "sequence_id": 872,
       "platform_id": "DWsC71tEx1y",
       "sns_platform": "threads",
       "code": "DWsC71tEx1y",
@@ -20933,7 +20959,7 @@
       "platform_sequence_id": 619
     },
     {
-      "sequence_id": 872,
+      "sequence_id": 873,
       "platform_id": "DWscUhkk0jw",
       "sns_platform": "threads",
       "code": "DWscUhkk0jw",
@@ -20955,7 +20981,7 @@
       "platform_sequence_id": 620
     },
     {
-      "sequence_id": 873,
+      "sequence_id": 874,
       "platform_id": "DWr7SH4EpeA",
       "sns_platform": "threads",
       "code": "DWr7SH4EpeA",
@@ -20981,7 +21007,7 @@
       "platform_sequence_id": 621
     },
     {
-      "sequence_id": 874,
+      "sequence_id": 875,
       "platform_id": "DWsU0PGgGO6",
       "sns_platform": "threads",
       "code": "DWsU0PGgGO6",
@@ -21011,7 +21037,7 @@
       "platform_sequence_id": 622
     },
     {
-      "sequence_id": 875,
+      "sequence_id": 876,
       "platform_id": "DWruy1pk-LW",
       "sns_platform": "threads",
       "code": "DWruy1pk-LW",
@@ -21033,7 +21059,7 @@
       "platform_sequence_id": 616
     },
     {
-      "sequence_id": 876,
+      "sequence_id": 877,
       "platform_id": "DWtbUjWEcCb",
       "sns_platform": "threads",
       "code": "DWtbUjWEcCb",
@@ -21059,7 +21085,7 @@
       "platform_sequence_id": 617
     },
     {
-      "sequence_id": 877,
+      "sequence_id": 878,
       "platform_id": "DWr7H-9EmOW",
       "sns_platform": "threads",
       "code": "DWr7H-9EmOW",
@@ -21085,7 +21111,7 @@
       "platform_sequence_id": 618
     },
     {
-      "sequence_id": 878,
+      "sequence_id": 879,
       "platform_id": "DWsZAPtE6H0",
       "sns_platform": "threads",
       "code": "DWsZAPtE6H0",
@@ -21111,7 +21137,7 @@
       "platform_sequence_id": 615
     },
     {
-      "sequence_id": 879,
+      "sequence_id": 880,
       "platform_id": "DWrPVWxmLwI",
       "sns_platform": "threads",
       "code": "DWrPVWxmLwI",
@@ -21137,7 +21163,7 @@
       "platform_sequence_id": 611
     },
     {
-      "sequence_id": 880,
+      "sequence_id": 881,
       "platform_id": "DWtK21LE5YY",
       "sns_platform": "threads",
       "code": "DWtK21LE5YY",
@@ -21163,7 +21189,7 @@
       "platform_sequence_id": 612
     },
     {
-      "sequence_id": 881,
+      "sequence_id": 882,
       "platform_id": "DWs2389EVNU",
       "sns_platform": "threads",
       "code": "DWs2389EVNU",
@@ -21185,7 +21211,7 @@
       "platform_sequence_id": 613
     },
     {
-      "sequence_id": 882,
+      "sequence_id": 883,
       "platform_id": "DVmnlOpArGD",
       "sns_platform": "threads",
       "code": "DVmnlOpArGD",
@@ -21211,7 +21237,7 @@
       "platform_sequence_id": 614
     },
     {
-      "sequence_id": 883,
+      "sequence_id": 884,
       "platform_id": "DWomamsCZf9",
       "sns_platform": "threads",
       "code": "DWomamsCZf9",
@@ -21237,7 +21263,7 @@
       "platform_sequence_id": 608
     },
     {
-      "sequence_id": 884,
+      "sequence_id": 885,
       "platform_id": "DWnaCDqk8Bb",
       "sns_platform": "threads",
       "code": "DWnaCDqk8Bb",
@@ -21263,7 +21289,7 @@
       "platform_sequence_id": 609
     },
     {
-      "sequence_id": 885,
+      "sequence_id": 886,
       "platform_id": "DWqqyhSE4_D",
       "sns_platform": "threads",
       "code": "DWqqyhSE4_D",
@@ -21289,7 +21315,7 @@
       "platform_sequence_id": 610
     },
     {
-      "sequence_id": 886,
+      "sequence_id": 887,
       "platform_id": "DWnzQg5DyYg",
       "sns_platform": "threads",
       "code": "DWnzQg5DyYg",
@@ -21315,7 +21341,7 @@
       "platform_sequence_id": 607
     },
     {
-      "sequence_id": 887,
+      "sequence_id": 888,
       "platform_id": "DWnbVTimvkM",
       "sns_platform": "threads",
       "code": "DWnbVTimvkM",
@@ -21340,7 +21366,7 @@
       "platform_sequence_id": 606
     },
     {
-      "sequence_id": 888,
+      "sequence_id": 889,
       "platform_id": "DWlrAmLCRLo",
       "sns_platform": "threads",
       "code": "DWlrAmLCRLo",
@@ -21365,7 +21391,7 @@
       "platform_sequence_id": 603
     },
     {
-      "sequence_id": 889,
+      "sequence_id": 890,
       "platform_id": "DWlko5HDyhO",
       "sns_platform": "threads",
       "code": "DWlko5HDyhO",
@@ -21391,7 +21417,7 @@
       "platform_sequence_id": 604
     },
     {
-      "sequence_id": 890,
+      "sequence_id": 891,
       "platform_id": "DWniZHfEn0j",
       "sns_platform": "threads",
       "code": "DWniZHfEn0j",
@@ -21417,7 +21443,7 @@
       "platform_sequence_id": 605
     },
     {
-      "sequence_id": 891,
+      "sequence_id": 892,
       "platform_id": "DWjGRlXmtrU",
       "sns_platform": "threads",
       "code": "DWjGRlXmtrU",
@@ -21439,7 +21465,7 @@
       "platform_sequence_id": 599
     },
     {
-      "sequence_id": 892,
+      "sequence_id": 893,
       "platform_id": "DWhtQ7gkizW",
       "sns_platform": "threads",
       "code": "DWhtQ7gkizW",
@@ -21465,7 +21491,7 @@
       "platform_sequence_id": 600
     },
     {
-      "sequence_id": 893,
+      "sequence_id": 894,
       "platform_id": "DWj1qs2k6k6",
       "sns_platform": "threads",
       "code": "DWj1qs2k6k6",
@@ -21491,7 +21517,7 @@
       "platform_sequence_id": 601
     },
     {
-      "sequence_id": 894,
+      "sequence_id": 895,
       "platform_id": "DWiRz4iiXcE",
       "sns_platform": "threads",
       "code": "DWiRz4iiXcE",
@@ -21517,7 +21543,7 @@
       "platform_sequence_id": 602
     },
     {
-      "sequence_id": 895,
+      "sequence_id": 896,
       "platform_id": "DWiWcJXFNQi",
       "sns_platform": "threads",
       "code": "DWiWcJXFNQi",
@@ -21543,7 +21569,7 @@
       "platform_sequence_id": 598
     },
     {
-      "sequence_id": 896,
+      "sequence_id": 897,
       "platform_id": "DWiKKANkx0j",
       "sns_platform": "threads",
       "code": "DWiKKANkx0j",
@@ -21565,7 +21591,7 @@
       "platform_sequence_id": 597
     },
     {
-      "sequence_id": 897,
+      "sequence_id": 898,
       "platform_id": "DWiixLQk2wz",
       "sns_platform": "threads",
       "code": "DWiixLQk2wz",
@@ -21587,7 +21613,7 @@
       "platform_sequence_id": 595
     },
     {
-      "sequence_id": 898,
+      "sequence_id": 899,
       "platform_id": "DWjA0BnE5Qm",
       "sns_platform": "threads",
       "code": "DWjA0BnE5Qm",
@@ -21613,7 +21639,33 @@
       "platform_sequence_id": 596
     },
     {
-      "sequence_id": 899,
+      "sequence_id": 900,
+      "platform_id": "DWjWXFRkSSQ",
+      "sns_platform": "threads",
+      "code": "DWjWXFRkSSQ",
+      "username": "and__yc",
+      "display_name": "and__yc",
+      "full_text": "깔끔하게 정리한 웹사이트 1 (정말 빠르다...)\n\nhttps://www.mintlify.com/VineeTagarwaL-code/claude-code/concepts/how-it-works",
+      "media": [],
+      "url": "https://www.threads.net/@and__yc/post/DWjWXFRkSSQ",
+      "created_at": "2026-03-31 23:34:10",
+      "date": "2026-03-31",
+      "crawled_at": "2026-04-11T17:20:38.232",
+      "source": "network",
+      "is_detail_collected": true,
+      "is_merged_thread": false,
+      "root_code": "DWjWXFRkSSQ",
+      "like_count": 2,
+      "reply_count": 1,
+      "repost_count": 1,
+      "quote_count": 0,
+      "pk": "3865031248448660624",
+      "media_type": 19,
+      "content_type": "image",
+      "platform_sequence_id": 591
+    },
+    {
+      "sequence_id": 901,
       "platform_id": "DWjLVl1EVBn",
       "sns_platform": "threads",
       "code": "DWjLVl1EVBn",
@@ -21635,7 +21687,7 @@
       "platform_sequence_id": 591
     },
     {
-      "sequence_id": 900,
+      "sequence_id": 902,
       "platform_id": "DWhz2L5AIxH",
       "sns_platform": "threads",
       "code": "DWhz2L5AIxH",
@@ -21661,7 +21713,7 @@
       "platform_sequence_id": 592
     },
     {
-      "sequence_id": 901,
+      "sequence_id": 903,
       "platform_id": "DWijabalbOA",
       "sns_platform": "threads",
       "code": "DWijabalbOA",
@@ -21687,7 +21739,7 @@
       "platform_sequence_id": 593
     },
     {
-      "sequence_id": 902,
+      "sequence_id": 904,
       "platform_id": "DWiu94JEY_M",
       "sns_platform": "threads",
       "code": "DWiu94JEY_M",
@@ -21712,7 +21764,7 @@
       "platform_sequence_id": 594
     },
     {
-      "sequence_id": 903,
+      "sequence_id": 905,
       "platform_id": "DWjS9P8krxt",
       "sns_platform": "threads",
       "code": "DWjS9P8krxt",
@@ -21738,7 +21790,7 @@
       "platform_sequence_id": 590
     },
     {
-      "sequence_id": 904,
+      "sequence_id": 906,
       "platform_id": "DWjHEgOiT9U",
       "sns_platform": "threads",
       "code": "DWjHEgOiT9U",
@@ -21764,7 +21816,7 @@
       "platform_sequence_id": 587
     },
     {
-      "sequence_id": 905,
+      "sequence_id": 907,
       "platform_id": "DWiiExQkTgk",
       "sns_platform": "threads",
       "code": "DWiiExQkTgk",
@@ -21804,7 +21856,7 @@
       "platform_sequence_id": 588
     },
     {
-      "sequence_id": 906,
+      "sequence_id": 908,
       "platform_id": "DWh_Z84E_RM",
       "sns_platform": "threads",
       "code": "DWh_Z84E_RM",
@@ -21826,7 +21878,7 @@
       "platform_sequence_id": 589
     },
     {
-      "sequence_id": 907,
+      "sequence_id": 909,
       "platform_id": "DWfqy8ikQWW",
       "sns_platform": "threads",
       "code": "DWfqy8ikQWW",
@@ -21851,7 +21903,7 @@
       "platform_sequence_id": 583
     },
     {
-      "sequence_id": 908,
+      "sequence_id": 910,
       "platform_id": "DWfXlonE_u2",
       "sns_platform": "threads",
       "code": "DWfXlonE_u2",
@@ -21873,7 +21925,7 @@
       "platform_sequence_id": 584
     },
     {
-      "sequence_id": 909,
+      "sequence_id": 911,
       "platform_id": "DWgwSY2k8hl",
       "sns_platform": "threads",
       "code": "DWgwSY2k8hl",
@@ -21899,7 +21951,7 @@
       "platform_sequence_id": 585
     },
     {
-      "sequence_id": 910,
+      "sequence_id": 912,
       "platform_id": "DWh3v4cj99g",
       "sns_platform": "threads",
       "code": "DWh3v4cj99g",
@@ -21921,7 +21973,7 @@
       "platform_sequence_id": 586
     },
     {
-      "sequence_id": 911,
+      "sequence_id": 913,
       "platform_id": "DWd03MYD6T2",
       "sns_platform": "threads",
       "code": "DWd03MYD6T2",
@@ -21943,7 +21995,7 @@
       "platform_sequence_id": 579
     },
     {
-      "sequence_id": 912,
+      "sequence_id": 914,
       "platform_id": "DWgFthJkuQ1",
       "sns_platform": "threads",
       "code": "DWgFthJkuQ1",
@@ -21965,7 +22017,7 @@
       "platform_sequence_id": 580
     },
     {
-      "sequence_id": 913,
+      "sequence_id": 915,
       "platform_id": "DWfq1XyEZqy",
       "sns_platform": "threads",
       "code": "DWfq1XyEZqy",
@@ -21990,7 +22042,7 @@
       "platform_sequence_id": 581
     },
     {
-      "sequence_id": 914,
+      "sequence_id": 916,
       "platform_id": "DWfq6K5EcsI",
       "sns_platform": "threads",
       "code": "DWfq6K5EcsI",
@@ -22020,7 +22072,7 @@
       "platform_sequence_id": 582
     },
     {
-      "sequence_id": 915,
+      "sequence_id": 917,
       "platform_id": "DWdXHVxiWwC",
       "sns_platform": "threads",
       "code": "DWdXHVxiWwC",
@@ -22046,7 +22098,7 @@
       "platform_sequence_id": 578
     },
     {
-      "sequence_id": 916,
+      "sequence_id": 918,
       "platform_id": "DWdXRDWlDnq",
       "sns_platform": "threads",
       "code": "DWdXRDWlDnq",
@@ -22072,7 +22124,7 @@
       "platform_sequence_id": 575
     },
     {
-      "sequence_id": 917,
+      "sequence_id": 919,
       "platform_id": "DWfGdYZCdPe",
       "sns_platform": "threads",
       "code": "DWfGdYZCdPe",
@@ -22098,7 +22150,7 @@
       "platform_sequence_id": 576
     },
     {
-      "sequence_id": 918,
+      "sequence_id": 920,
       "platform_id": "DWcuylTkqgE",
       "sns_platform": "threads",
       "code": "DWcuylTkqgE",
@@ -22124,7 +22176,7 @@
       "platform_sequence_id": 577
     },
     {
-      "sequence_id": 919,
+      "sequence_id": 921,
       "platform_id": "DWdi0gPj2wm",
       "sns_platform": "threads",
       "code": "DWdi0gPj2wm",
@@ -22150,7 +22202,7 @@
       "platform_sequence_id": 571
     },
     {
-      "sequence_id": 920,
+      "sequence_id": 922,
       "platform_id": "DWdMqrDAPdq",
       "sns_platform": "threads",
       "code": "DWdMqrDAPdq",
@@ -22176,7 +22228,7 @@
       "platform_sequence_id": 572
     },
     {
-      "sequence_id": 921,
+      "sequence_id": 923,
       "platform_id": "DWXZEJ1gXyA",
       "sns_platform": "threads",
       "code": "DWXZEJ1gXyA",
@@ -22202,7 +22254,7 @@
       "platform_sequence_id": 573
     },
     {
-      "sequence_id": 922,
+      "sequence_id": 924,
       "platform_id": "DWU6l1ij_ih",
       "sns_platform": "threads",
       "code": "DWU6l1ij_ih",
@@ -22224,7 +22276,7 @@
       "platform_sequence_id": 574
     },
     {
-      "sequence_id": 923,
+      "sequence_id": 925,
       "platform_id": "DWYl_MGlBK-",
       "sns_platform": "threads",
       "code": "DWYl_MGlBK-",
@@ -22252,7 +22304,7 @@
       "platform_sequence_id": 567
     },
     {
-      "sequence_id": 924,
+      "sequence_id": 926,
       "platform_id": "DWbFLLGlgSX",
       "sns_platform": "threads",
       "code": "DWbFLLGlgSX",
@@ -22274,7 +22326,7 @@
       "platform_sequence_id": 568
     },
     {
-      "sequence_id": 925,
+      "sequence_id": 927,
       "platform_id": "DWazk9Qk4FW",
       "sns_platform": "threads",
       "code": "DWazk9Qk4FW",
@@ -22298,7 +22350,7 @@
       "platform_sequence_id": 569
     },
     {
-      "sequence_id": 926,
+      "sequence_id": 928,
       "platform_id": "DWcf0D0ksJf",
       "sns_platform": "threads",
       "code": "DWcf0D0ksJf",
@@ -22324,7 +22376,7 @@
       "platform_sequence_id": 570
     },
     {
-      "sequence_id": 927,
+      "sequence_id": 929,
       "platform_id": "DWYTZS6Ey3S",
       "sns_platform": "threads",
       "code": "DWYTZS6Ey3S",
@@ -22352,7 +22404,7 @@
       "platform_sequence_id": 563
     },
     {
-      "sequence_id": 928,
+      "sequence_id": 930,
       "platform_id": "DWY_LyZFOsy",
       "sns_platform": "threads",
       "code": "DWY_LyZFOsy",
@@ -22374,7 +22426,33 @@
       "platform_sequence_id": 564
     },
     {
-      "sequence_id": 929,
+      "sequence_id": 931,
+      "platform_id": "DWYTeenE7wl",
+      "sns_platform": "threads",
+      "code": "DWYTeenE7wl",
+      "username": "ai__jeong",
+      "display_name": "에이정",
+      "full_text": "9/\n\n맥락 중심 학습용\n커스텀 에이전트 제작중임.\n\n완료되는대로 공유할 예정\n팔로우 부탁함😋",
+      "media": [],
+      "url": "https://www.threads.net/@ai__jeong/post/DWYTeenE7wl",
+      "created_at": "2026-03-27 16:37:20",
+      "date": "2026-03-27",
+      "crawled_at": "2026-04-11T17:20:53.704",
+      "source": "network",
+      "is_detail_collected": true,
+      "is_merged_thread": false,
+      "root_code": "DWYTeenE7wl",
+      "like_count": 20,
+      "reply_count": 1,
+      "repost_count": 1,
+      "quote_count": 0,
+      "pk": "3861922337806072869",
+      "media_type": 19,
+      "content_type": "image",
+      "platform_sequence_id": 565
+    },
+    {
+      "sequence_id": 932,
       "platform_id": "DWYTa5ck_h9",
       "sns_platform": "threads",
       "code": "DWYTa5ck_h9",
@@ -22400,7 +22478,7 @@
       "platform_sequence_id": 565
     },
     {
-      "sequence_id": 930,
+      "sequence_id": 933,
       "platform_id": "DWTzeb7E1db",
       "sns_platform": "threads",
       "code": "DWTzeb7E1db",
@@ -22426,7 +22504,7 @@
       "platform_sequence_id": 566
     },
     {
-      "sequence_id": 931,
+      "sequence_id": 934,
       "platform_id": "DWXyYcxic5t",
       "sns_platform": "threads",
       "code": "DWXyYcxic5t",
@@ -22452,7 +22530,7 @@
       "platform_sequence_id": 560
     },
     {
-      "sequence_id": 932,
+      "sequence_id": 935,
       "platform_id": "DWZHwN-k9YY",
       "sns_platform": "threads",
       "code": "DWZHwN-k9YY",
@@ -22474,7 +22552,7 @@
       "platform_sequence_id": 561
     },
     {
-      "sequence_id": 933,
+      "sequence_id": 936,
       "platform_id": "DWZOTXtAXol",
       "sns_platform": "threads",
       "code": "DWZOTXtAXol",
@@ -22502,7 +22580,7 @@
       "platform_sequence_id": 562
     },
     {
-      "sequence_id": 934,
+      "sequence_id": 937,
       "platform_id": "DWYNkkwjTHs",
       "sns_platform": "threads",
       "code": "DWYNkkwjTHs",
@@ -22528,7 +22606,7 @@
       "platform_sequence_id": 559
     },
     {
-      "sequence_id": 935,
+      "sequence_id": 938,
       "platform_id": "DWWix7DEff9",
       "sns_platform": "threads",
       "code": "DWWix7DEff9",
@@ -22550,7 +22628,7 @@
       "platform_sequence_id": 555
     },
     {
-      "sequence_id": 936,
+      "sequence_id": 939,
       "platform_id": "DWXVOIQEzNc",
       "sns_platform": "threads",
       "code": "DWXVOIQEzNc",
@@ -22572,7 +22650,7 @@
       "platform_sequence_id": 556
     },
     {
-      "sequence_id": 937,
+      "sequence_id": 940,
       "platform_id": "DWWbM6sEYSB",
       "sns_platform": "threads",
       "code": "DWWbM6sEYSB",
@@ -22598,7 +22676,7 @@
       "platform_sequence_id": 557
     },
     {
-      "sequence_id": 938,
+      "sequence_id": 941,
       "platform_id": "DWYLJZuj1HU",
       "sns_platform": "threads",
       "code": "DWYLJZuj1HU",
@@ -22624,7 +22702,7 @@
       "platform_sequence_id": 558
     },
     {
-      "sequence_id": 939,
+      "sequence_id": 942,
       "platform_id": "DWV-8uyEs5j",
       "sns_platform": "threads",
       "code": "DWV-8uyEs5j",
@@ -22646,7 +22724,7 @@
       "platform_sequence_id": 554
     },
     {
-      "sequence_id": 940,
+      "sequence_id": 943,
       "platform_id": "DWGD46OgbXq",
       "sns_platform": "threads",
       "code": "DWGD46OgbXq",
@@ -22671,7 +22749,7 @@
       "platform_sequence_id": 551
     },
     {
-      "sequence_id": 941,
+      "sequence_id": 944,
       "platform_id": "DWWJUXyiPIR",
       "sns_platform": "threads",
       "code": "DWWJUXyiPIR",
@@ -22697,7 +22775,7 @@
       "platform_sequence_id": 552
     },
     {
-      "sequence_id": 942,
+      "sequence_id": 945,
       "platform_id": "DWTtTNcgmBg",
       "sns_platform": "threads",
       "code": "DWTtTNcgmBg",
@@ -22723,7 +22801,7 @@
       "platform_sequence_id": 553
     },
     {
-      "sequence_id": 943,
+      "sequence_id": 946,
       "platform_id": "DWO-qjSEhZ5",
       "sns_platform": "threads",
       "code": "DWO-qjSEhZ5",
@@ -22745,7 +22823,7 @@
       "platform_sequence_id": 547
     },
     {
-      "sequence_id": 944,
+      "sequence_id": 947,
       "platform_id": "DWQrM4XiLR0",
       "sns_platform": "threads",
       "code": "DWQrM4XiLR0",
@@ -22771,7 +22849,7 @@
       "platform_sequence_id": 548
     },
     {
-      "sequence_id": 945,
+      "sequence_id": 948,
       "platform_id": "DWVjOagE4HR",
       "sns_platform": "threads",
       "code": "DWVjOagE4HR",
@@ -22793,7 +22871,7 @@
       "platform_sequence_id": 549
     },
     {
-      "sequence_id": 946,
+      "sequence_id": 949,
       "platform_id": "DWTzF8ikuG1",
       "sns_platform": "threads",
       "code": "DWTzF8ikuG1",
@@ -22819,7 +22897,7 @@
       "platform_sequence_id": 550
     },
     {
-      "sequence_id": 947,
+      "sequence_id": 950,
       "platform_id": "DWOubKalN0d",
       "sns_platform": "threads",
       "code": "DWOubKalN0d",
@@ -22841,7 +22919,33 @@
       "platform_sequence_id": 545
     },
     {
-      "sequence_id": 948,
+      "sequence_id": 951,
+      "platform_id": "DWEWBbWgR0b",
+      "sns_platform": "threads",
+      "code": "DWEWBbWgR0b",
+      "username": "_petercha",
+      "display_name": "♻️ Peter Cha",
+      "full_text": "간단하게 하나 만들어봤습니다.🤗\n\n🧢 𝗖𝗔𝗣 - Claude Allowance Pluse \n입니다. 아래 명령어를 claude에게 입력하시면 알아서 세팅해줄거에요.🙂\n\n/plugin marketplace add PeterCha90/CAP\n/plugin install cap\n\n한 번만 껏다 클로드 코드를 껏다가 다시 켜주시면, 위에 있는 사진처럼 CAP을 만나실 수 있을거에요 :) 마음에 드셨다면 https://github.com/PeterCha90/CAP 에 ⭐️ 한 번씩만 부탁드려요!🙇‍♂️",
+      "media": [],
+      "url": "https://www.threads.net/@_petercha/post/DWEWBbWgR0b",
+      "created_at": "2026-03-19 22:34:46",
+      "date": "2026-03-19",
+      "crawled_at": "2026-04-11T17:21:02.852",
+      "source": "network",
+      "is_detail_collected": true,
+      "is_merged_thread": false,
+      "root_code": "DWEWBbWgR0b",
+      "like_count": 7,
+      "reply_count": 0,
+      "repost_count": 0,
+      "quote_count": 0,
+      "pk": "3856304036047297819",
+      "media_type": 19,
+      "content_type": "image",
+      "platform_sequence_id": 546
+    },
+    {
+      "sequence_id": 952,
       "platform_id": "DWEWAetgTKA",
       "sns_platform": "threads",
       "code": "DWEWAetgTKA",
@@ -22867,7 +22971,7 @@
       "platform_sequence_id": 546
     },
     {
-      "sequence_id": 949,
+      "sequence_id": 953,
       "platform_id": "DWMAhLLiEuh",
       "sns_platform": "threads",
       "code": "DWMAhLLiEuh",
@@ -22889,7 +22993,7 @@
       "platform_sequence_id": 543
     },
     {
-      "sequence_id": 950,
+      "sequence_id": 954,
       "platform_id": "DWOSPyhAZp8",
       "sns_platform": "threads",
       "code": "DWOSPyhAZp8",
@@ -22915,7 +23019,7 @@
       "platform_sequence_id": 544
     },
     {
-      "sequence_id": 951,
+      "sequence_id": 955,
       "platform_id": "DWI98ngFA6G",
       "sns_platform": "threads",
       "code": "DWI98ngFA6G",
@@ -22941,7 +23045,7 @@
       "platform_sequence_id": 539
     },
     {
-      "sequence_id": 952,
+      "sequence_id": 956,
       "platform_id": "DWIeljvj3ex",
       "sns_platform": "threads",
       "code": "DWIeljvj3ex",
@@ -22963,7 +23067,7 @@
       "platform_sequence_id": 540
     },
     {
-      "sequence_id": 953,
+      "sequence_id": 957,
       "platform_id": "DWI70GEkXkG",
       "sns_platform": "threads",
       "code": "DWI70GEkXkG",
@@ -22988,7 +23092,7 @@
       "platform_sequence_id": 541
     },
     {
-      "sequence_id": 954,
+      "sequence_id": 958,
       "platform_id": "DTZ6HqrgTPI",
       "sns_platform": "threads",
       "code": "DTZ6HqrgTPI",
@@ -23010,7 +23114,7 @@
       "platform_sequence_id": 542
     },
     {
-      "sequence_id": 955,
+      "sequence_id": 959,
       "platform_id": "DWIJSYtEU_U",
       "sns_platform": "threads",
       "code": "DWIJSYtEU_U",
@@ -23036,7 +23140,7 @@
       "platform_sequence_id": 535
     },
     {
-      "sequence_id": 956,
+      "sequence_id": 960,
       "platform_id": "DWIHNdCku5l",
       "sns_platform": "threads",
       "code": "DWIHNdCku5l",
@@ -23062,7 +23166,33 @@
       "platform_sequence_id": 536
     },
     {
-      "sequence_id": 957,
+      "sequence_id": 961,
+      "platform_id": "DWJWkwKCcHW",
+      "sns_platform": "threads",
+      "code": "DWJWkwKCcHW",
+      "username": "unclejobs.ai",
+      "display_name": "엉클잡스 | Ai 시대, 돈이 되는 정보 전달",
+      "full_text": "AutoResearch — 연구자를 병목에서 빼라\n\n본인이 GPT 모델을 수천 번 직접 튜닝했습니다. 20년 경력. 충분히 잘 튜닝했다고 생각했는데, AutoResearch를 하룻밤 돌렸더니 본인이 못 본 걸 찾아냈습니다. 값 임베딩에 weight decay를 빠뜨렸고, Adam 베타값이 충분히 튜닝되지 않았고, 이 둘이 상호작용해서 같이 조정해야 했던 겁니다.\n\n핵심 원칙: 연구자가 루프 안에 있으면 시스템이 느려진다. 목표와 메트릭을 정해주고 빠져라. 토큰 처리량을 극대화하되 본인은 개입하지 마라.\n\n더 나아가서 program.md(연구 조직의 역할과 프로세스를 정의한 마크다운)를 여러 버전 만들어서 어떤 조직 구조가 더 좋은 결과를 내는지, 그것 자체를 메타 최적화할 수 있다고 했습니다.",
+      "media": [],
+      "url": "https://www.threads.net/@unclejobs.ai/post/DWJWkwKCcHW",
+      "created_at": "2026-03-21 21:15:47",
+      "date": "2026-03-21",
+      "crawled_at": "2026-04-11T17:21:05.926",
+      "source": "network",
+      "is_detail_collected": true,
+      "is_merged_thread": false,
+      "root_code": "DWJWkwKCcHW",
+      "like_count": 7,
+      "reply_count": 1,
+      "repost_count": 0,
+      "quote_count": 0,
+      "pk": "3857713838451966422",
+      "media_type": 19,
+      "content_type": "image",
+      "platform_sequence_id": 537
+    },
+    {
+      "sequence_id": 962,
       "platform_id": "DWJWii4CQiG",
       "sns_platform": "threads",
       "code": "DWJWii4CQiG",
@@ -23088,7 +23218,33 @@
       "platform_sequence_id": 537
     },
     {
-      "sequence_id": 958,
+      "sequence_id": 963,
+      "platform_id": "DWJWmFkCZpB",
+      "sns_platform": "threads",
+      "code": "DWJWmFkCZpB",
+      "username": "unclejobs.ai",
+      "display_name": "엉클잡스 | Ai 시대, 돈이 되는 정보 전달",
+      "full_text": "소프트웨어 엔지니어 수요는 줄까? 오히려 늘 수 있다\n\nJevons Paradox를 언급합니다. 어떤 자원이 싸지면 수요가 줄어드는 게 아니라 오히려 폭발합니다. ATM이 나왔을 때 은행 직원이 사라질 거라고 했지만, 은행 지점 운영 비용이 내려가면서 지점이 늘어나고 직원도 늘었습니다.\n\n소프트웨어도 마찬가지. 소프트웨어가 싸지면, 지금까지 비용 때문에 못 만들던 것들을 전부 만들기 시작합니다. 맞춤형 소프트웨어, 일회용 소프트웨어, 에이전트가 실시간으로 짜는 소프트웨어. 코드는 이제 영속적인 게 아니라 휘발성입니다. 그래서 적어도 당분간은 소프트웨어 엔지니어링 수요가 늘 거라고 봅니다.\n\n단, 프론티어 랩 연구자들은 자기 자신을 자동화하고 있다는 자각이 있다고. Karpathy가 OpenAI 다닐 때 동료들한테 직접 말했다고 합니다. \"우리가 성공하면 우리 전부 직업을 잃는 거 알지?\"",
+      "media": [],
+      "url": "https://www.threads.net/@unclejobs.ai/post/DWJWmFkCZpB",
+      "created_at": "2026-03-21 21:15:58",
+      "date": "2026-03-21",
+      "crawled_at": "2026-04-11T17:21:05.926",
+      "source": "network",
+      "is_detail_collected": true,
+      "is_merged_thread": false,
+      "root_code": "DWJWmFkCZpB",
+      "like_count": 5,
+      "reply_count": 1,
+      "repost_count": 0,
+      "quote_count": 0,
+      "pk": "3857713930156218945",
+      "media_type": 19,
+      "content_type": "image",
+      "platform_sequence_id": 538
+    },
+    {
+      "sequence_id": 964,
       "platform_id": "DWJWj3aicDO",
       "sns_platform": "threads",
       "code": "DWJWj3aicDO",
@@ -23114,7 +23270,7 @@
       "platform_sequence_id": 538
     },
     {
-      "sequence_id": 959,
+      "sequence_id": 965,
       "platform_id": "DWGTTO1gelg",
       "sns_platform": "threads",
       "code": "DWGTTO1gelg",
@@ -23140,7 +23296,7 @@
       "platform_sequence_id": 534
     },
     {
-      "sequence_id": 960,
+      "sequence_id": 966,
       "platform_id": "DVhgqV3E1Bu",
       "sns_platform": "threads",
       "code": "DVhgqV3E1Bu",
@@ -23166,7 +23322,7 @@
       "platform_sequence_id": 531
     },
     {
-      "sequence_id": 961,
+      "sequence_id": 967,
       "platform_id": "DWDX7utkahq",
       "sns_platform": "threads",
       "code": "DWDX7utkahq",
@@ -23194,7 +23350,7 @@
       "platform_sequence_id": 532
     },
     {
-      "sequence_id": 962,
+      "sequence_id": 968,
       "platform_id": "DWIY67Tkfvb",
       "sns_platform": "threads",
       "code": "DWIY67Tkfvb",
@@ -23222,7 +23378,7 @@
       "platform_sequence_id": 533
     },
     {
-      "sequence_id": 963,
+      "sequence_id": 969,
       "platform_id": "DWF2Germsm_",
       "sns_platform": "threads",
       "code": "DWF2Germsm_",
@@ -23254,7 +23410,7 @@
       "platform_sequence_id": 528
     },
     {
-      "sequence_id": 964,
+      "sequence_id": 970,
       "platform_id": "DWGqlw0Eo8v",
       "sns_platform": "threads",
       "code": "DWGqlw0Eo8v",
@@ -23279,7 +23435,7 @@
       "platform_sequence_id": 529
     },
     {
-      "sequence_id": 965,
+      "sequence_id": 971,
       "platform_id": "DWBiCLNEd6W",
       "sns_platform": "threads",
       "code": "DWBiCLNEd6W",
@@ -23301,7 +23457,7 @@
       "platform_sequence_id": 530
     },
     {
-      "sequence_id": 966,
+      "sequence_id": 972,
       "platform_id": "DWEQ_KPklqK",
       "sns_platform": "threads",
       "code": "DWEQ_KPklqK",
@@ -23327,7 +23483,7 @@
       "platform_sequence_id": 527
     },
     {
-      "sequence_id": 967,
+      "sequence_id": 973,
       "platform_id": "DWBk6rCFIN0",
       "sns_platform": "threads",
       "code": "DWBk6rCFIN0",
@@ -23353,7 +23509,7 @@
       "platform_sequence_id": 523
     },
     {
-      "sequence_id": 968,
+      "sequence_id": 974,
       "platform_id": "DWBdW9lFM4N",
       "sns_platform": "threads",
       "code": "DWBdW9lFM4N",
@@ -23379,7 +23535,7 @@
       "platform_sequence_id": 524
     },
     {
-      "sequence_id": 969,
+      "sequence_id": 975,
       "platform_id": "DWDwFi2jyI_",
       "sns_platform": "threads",
       "code": "DWDwFi2jyI_",
@@ -23401,7 +23557,7 @@
       "platform_sequence_id": 525
     },
     {
-      "sequence_id": 970,
+      "sequence_id": 976,
       "platform_id": "DWBWF1Vkw8R",
       "sns_platform": "threads",
       "code": "DWBWF1Vkw8R",
@@ -23433,7 +23589,7 @@
       "platform_sequence_id": 526
     },
     {
-      "sequence_id": 971,
+      "sequence_id": 977,
       "platform_id": "DWBBTV8CTxq",
       "sns_platform": "threads",
       "code": "DWBBTV8CTxq",
@@ -23459,7 +23615,7 @@
       "platform_sequence_id": 522
     },
     {
-      "sequence_id": 972,
+      "sequence_id": 978,
       "platform_id": "DV-q6ZsAVcw",
       "sns_platform": "threads",
       "code": "DV-q6ZsAVcw",
@@ -23485,7 +23641,7 @@
       "platform_sequence_id": 519
     },
     {
-      "sequence_id": 973,
+      "sequence_id": 979,
       "platform_id": "DWCg4eNDKT8",
       "sns_platform": "threads",
       "code": "DWCg4eNDKT8",
@@ -23511,7 +23667,7 @@
       "platform_sequence_id": 520
     },
     {
-      "sequence_id": 974,
+      "sequence_id": 980,
       "platform_id": "DWB2Lu1CSAV",
       "sns_platform": "threads",
       "code": "DWB2Lu1CSAV",
@@ -23537,7 +23693,7 @@
       "platform_sequence_id": 521
     },
     {
-      "sequence_id": 975,
+      "sequence_id": 981,
       "platform_id": "DV73FdujLM3",
       "sns_platform": "threads",
       "code": "DV73FdujLM3",
@@ -23561,6 +23717,26 @@
       "root_code": "DV73FdujLM3",
       "original_item_count": 3,
       "platform_sequence_id": 518
+    },
+    {
+      "sequence_id": 982,
+      "platform_id": "7447452396747911170",
+      "sns_platform": "linkedin",
+      "username": "ACoAACY7KJQBDtSTk6IuIwZY6ntBGJx1fCYwsYI",
+      "display_name": "Goobong Jeong",
+      "full_text": "팀어텐션은 문화를 만들고 있다. 우리는 AI로 인해 \"올 수 밖에 없는 미래\"에 베팅한다. 앞서있는 사람들을 위한 이벤트와 커뮤니티를 만들어서 실컷 즐기고, 후행적으로 해석한다. 해석한 결과를 더 많은 사람들에게 전달해서 가치를 창출한다. SF에 가기 전에는 억 단위었는데 생각이 바뀌었다. 조 단위다. 문화는 산업을 만들 수 있다.\n1. Ralphthon. 왜 굳이 해커톤?\n해커톤은 원래 내가 하던 방식에서 벗어나서 몰입하고 실험적으로 도전하기 좋은 장치다. 그래서 해커톤이라는 포맷을 선택했다. 에이전트를 극단적으로 사용하는 룰을 만드니, 사람이 개입할 필요가 없었다. 시간이 남아서 사람들끼리 노는 바람에 커뮤니티라는 부산물이 생겼다. Ralph를 돌리고 잔다는 것은 선행적인 컨셉이었고, 커뮤니티가 만들어진 것이 후행적인 해석이었다. 그래서 SF에 갈 때에는 \"잠\"을 버리고 \"네트워킹\"에 집중했다.\n이 커뮤니티는 2가지 역할을 한다. 각자가 AI를 사용하는 방식에서 영감을 얻는 지점이 있고, 지식적으로 향상이 되는 부분도 있고, 두 번째는 혼자 가기에는 너무 외로운 길이기 때문이다. 이렇게 해서 커뮤니티가 만들어지면 서로의 노하우가 합쳐지면서 더 좋은 하네스를 만드는 프로젝트의 시작이 된다. 좋은 사례가 첫 번째 해커톤에서 ouroborous와 oh-my-codex가 아이디어를 교환한 일이다.\n2. 정해져있는 미래는 어떻게 생겼을까?\nAI는 생산 비용을 압도적으로 낮추는 기계다. 코드는 전기값, 하드웨어도 원자재값. 원자재 마저도 획득과 유통 과정이 효율화돼서 가격이 낮아질 것이다. 그래서 기업에서 만드는 모든 것들의 생산 비용이 낮아진다. 연초에는 SaaS가 죽는다고해서 주가가 박살났다. 딸깍하면 클로드로 만들 수 있으니까. 지난 주에는 클로드코드 소스 코드가 유출됐는데 이걸 포팅한 github repo의 star가 기네스 기록감이다. Rust로 바꿨을 때 클로드한테 실행을 시켜봤는데 잘 안됐다. 진형님과 대화를 해보니 의도된 것이라고 했다. 이건 밈이다. 요지경이다. 내 생각엔 github 의 유저가 우리가 생각하는 개발자 뿐만 아니라 굉장히 많은 사람들로 넓어졌기 때문이라고 생각한다. 누군가의 말 맞다나 github도 social이 됐다. star수가 중요한 것으로 쓰인다. npm download 가 중요했던 것과는 미묘하게 다르다. npm download가 많은 프로젝트는 파산하고 star가 많은 프로젝트는 훨훨 난다. 이게 미래다. 아니 이미 벌어진 일이다.\n3. 기업 문화는 그 기업만의 성공 방정식\n일주일씩 지날 때마다 미래가 명확하게 그려진다. AI는 진짜다. 이 녀석을 잘 쓰면 3개월 뒤, 1년 뒤에 무조건 이긴다. @@을 잘 쓰는 기업이 되고 싶다면 @@을 쓰는게 문화인 기업이 되는게 확실하다.\n기업에서 문화란 무엇인가? 과거의 사례들이 쌓여서 만들어진 \"이렇게 하면 성공 확률이 높다\"라는 방정식이다. 이기는 기업이 되기 위해 AX를 한다면, 본질은 AI를 사용해서 성공한 사례를 쌓는 것이다. 사례가 쌓이면 문화가 된다. 잘하려면? 누구보다 빨리 사례를 많이 만들어서 빠르게 기업의 문화로 정착시켜야 한다.\n4. 어떤 사례를 만들지 고민하기 전에 AI 사용을 이해해보자\n이때 AI는 시간이라는 변수를 극단적으로 낮춘다. \"딸깍\"이다. 가장 쉬운 건 write이다. 코드를 write, 보고서를 write, 이메일을 write. 하지만 좋은 context가 없으면 좋은 write 를 하지 못한다. 이런 걸 ai slop이라고 부른다. 그래서 context engineering이 중요하다. 올바른 context를 AI에게 쥐어주고 write하게 하는 것이 본질이다.\n이제는 검증하는 것, 실행하는 것도 AI에게 맡기기 위해 Harness Engineering을 한다. Harness의 본질은 Context Engineering 과 같다. 단지 컨텍스트만 넣는게 아니라 AI가 액션하기 좋은 환경을 다 쥐어주는 것이다.\n5. 서울과 SF에서 공통적으로 발견한 장치. 리더보드. feat) Meta\nAI를 사용해서 업무 생산성을 높여야한다는 방향은 정해졌다. 어떻게 속도를 높일 것인가? 재미있는 장치를 발견했는데, 토큰 사용 리더보드다. AI를 많이 쓰는 사람들이 누구인지 한눈에 보이고, 그 사람들이 어떻게 일하는지 skill 이라는 형태로 볼 수 있다. 이 사람들이 만들어낸 업무 결과물 중에 보석을 하나만 찾아내도 조직이 받는 임팩트는 엄청 커진다. 리더보드는 잘 사용하는 사람들이 누구인지 표면 위로 드러내는 역할을 한다.\n메타에서는 전 직원 3만명의 토큰 사용량을 추적하는 리더보드가 있다. 이걸 만든 Eric을 SF에서 만났다. 우리에게 커리어해커 Alex라고 알려져있는 상현님도 이 프로젝트에 참여했다고 하셔서 놀랐다. 역시 한국인들은 미쳤다.\nAI를 많이 안 쓰는 사람들이 이 프로젝트에 욕을 한다고 들었다. 하지만 뭐 어쩔텐가. 미래는 정해져있는데\n놀랍게도 한국인들이 만든 좋은 리더보드 프로젝트들도 있다.\ntokscale: https://lnkd.in/gCew7uGd 전세계 탑들이 토큰 사용량 보드다. OmO, OmC, OmX 만든 ULW에서 쓰는 리더보드이기 때문이다. 오랜만에 들어갔는데 상위권이 바뀌었다. 그런데 아는 이름이다. 놀랍고 자랑스럽다.\nAI Native Camp의 리더보드: https://lnkd.in/g3Sbs2cM 비개발자들을 위한 리더보드.. 였는데 어느새 개발자들이 와서 점령해버렸다.\n자랑스럽게도 혈맹들이 만든 프로젝트다. 우리는 잘 하고 있다.\n6. 기업에 문화를 이식하는 일\nAI를 성공 엔진으로 사용하는 문화를 만든다고 할 때 내가 좋아하는 단어는 \"이식\"이다. 내가 경험하기에 문화는 내부의 점진적인 변화만으로는 바뀌지 않는다. 관성이 훨씬 강력하기 때문이다. 아니라고 주장하는 사람들에게는... 군대 문화가 바뀐 사례를 생각해보라고 한다. 남자라면 바로 공감하신다. ㅎㅎ\n너무 길어서 댓글로 마저 씁니다.",
+      "media": [],
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:7447452396747911170?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7447452396747911170%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "created_at": "2026-04-08 10:16:58",
+      "date": "2026-04-08",
+      "crawled_at": "2026-04-12T16:32:08.886",
+      "source": "network",
+      "local_images": [],
+      "time_text": "4일",
+      "profile_slogan": "Host of Ralphthon | Optimistic Engineer",
+      "user_link": "https://www.linkedin.com/in/ACoAACY7KJQBDtSTk6IuIwZY6ntBGJx1fCYwsYI",
+      "content_type": "text",
+      "platform_sequence_id": 357
     }
   ]
 };
