@@ -327,7 +327,13 @@ ${item.body}
             }
         });
 
-        if (allRules.size === 0) return 0;
+        if (allRules.size === 0) {
+            return {
+                count: 0,
+                ruleCount: 0,
+                stats: { hits: 0, skips: 0, distinctTags: existingTags.size }
+            };
+        }
 
         let updateCount = 0;
         let debugStats = { hits: 0, skips: 0, distinctTags: existingTags.size };
@@ -340,7 +346,8 @@ ${item.body}
             
             chunk.forEach(post => {
                 const text = (post.full_text || '').toLowerCase();
-                const url = post.post_url || post.source_url || post.code;
+                const url = resolvePostUrl(post);
+                if (!url) return;
                 
                 if (!postTags[url]) postTags[url] = [];
                 let tags = postTags[url];
@@ -383,6 +390,57 @@ ${item.body}
         } 
         
         return { count: updateCount, ruleCount: allRules.size, stats: debugStats };
+    }
+
+    function migrateLegacyTagKeys(posts) {
+        const canonByCode = new Map();
+        const canonByTSlash = new Map();
+
+        posts.forEach(post => {
+            const canonical = resolvePostUrl(post);
+            if (!canonical) return;
+
+            const code = post.platform_id || post.code;
+            if (!code) return;
+
+            canonByCode.set(code, canonical);
+            canonByTSlash.set(`https://www.threads.net/t/${code}`, canonical);
+        });
+
+        let migrated = 0;
+        Object.keys(postTags).forEach(key => {
+            if (key === 'undefined') {
+                delete postTags[key];
+                migrated += 1;
+                return;
+            }
+
+            const target = canonByTSlash.get(key) || canonByCode.get(key);
+            if (!target || target === key) return;
+
+            const merged = new Set([
+                ...(postTags[target] || []),
+                ...(postTags[key] || [])
+            ]);
+            const cleaned = Array.from(merged).filter(tag => tag && tag.trim().length > 0);
+
+            if (cleaned.length > 0) {
+                postTags[target] = cleaned;
+            }
+            // cleaned.length === 0 케이스는 target이 원래 없었거나 existing도 빈 stale.
+            // 이때 target은 건드리지 않는다 (기존 canonical 태그를 파괴할 위험 제거).
+
+            delete postTags[key];
+            migrated += 1;
+        });
+
+        if (migrated > 0) {
+            console.log(`🔧 Migrated ${migrated} legacy tag keys to canonical URLs`);
+            localStorage.setItem('sns_tags', JSON.stringify(postTags));
+            syncTagsToServer();
+        }
+
+        return migrated;
     }
 
     // --- Data Loading ---
@@ -467,6 +525,8 @@ ${item.body}
             post._dateObj = dateStr ? new Date(dateStr) : new Date(0);
             post._seqId = post.sequence_id || 0;
         });
+
+        migrateLegacyTagKeys(allPosts);
 
         // 자동 태그 적용 및 렌더링
         await applyAutoTags(allPosts, true);
@@ -734,7 +794,12 @@ ${item.body}
         const copyBtn = header.querySelector('.copy-btn');
         copyBtn.addEventListener('click', async (e) => {
             e.stopPropagation();
-            const textToCopy = post.full_text || '';
+            const fullText = post.full_text || '';
+            const postUrl = resolvePostUrl(post);
+            const username = post.username || post.user || '';
+            const createdAt = (post.created_at || '').slice(0, 10);
+            const platform = post.sns_platform || '';
+            const textToCopy = `${fullText}\n\n*출처: ${postUrl}\n*${username} / ${createdAt} / ${platform}`;
             const icon = copyBtn.querySelector('span');
 
             try {
