@@ -50,7 +50,6 @@ DEBUG_SAVE = False # 응답 JSON 저장 비활성화
 # - "all": 처음부터 끝까지 전체 수집
 # - "update": 최신 full 버전의 최상단 code까지만 수집 (신규 게시물만)
 CRAWL_MODE = "all"  # 기본값 (__main__ 블록에서 CLI 인자로 덮어씀)
-
 # ===========================
 
 # 로컬 clean_text 제거 (utils.common 사용)
@@ -223,8 +222,11 @@ def run():
     start_time_dt = datetime.now()
     collected_data = []
     all_posts_map = {}
-    stop_codes = []  # 중단 기준 code 리스트
-    stop_code_found = False  # 중단 플래그
+    existing_codes = set()  # 기수집 code set (update 모드: 기수집 skip용)
+    stop_code_found = False
+    consecutive_dup_count = 0  # 기수집 연속 카운터
+    CONSECUTIVE_DUP_LIMIT = 20  # 연속 N건 기수집이면 중단
+    scroll_had_response = False  # 스크롤 중 네트워크 응답 수신 여부
     crawl_start_time = start_time_dt.isoformat()  # 크롤링 시작 시간
     max_sequence_id = 0
 
@@ -245,12 +247,10 @@ def run():
                 if posts and max_sequence_id == 0:
                     max_sequence_id = max((p.get('sequence_id', 0) for p in posts), default=0)
 
-                # "update only" 모드: 최신 Simple 파일의 최상단 code 가져오기
+                # "update only" 모드: 기수집 code set 구축
                 if CRAWL_MODE == "update only":
-                    if posts:
-                        # 최신순 5개 추출 (삭제 방지용 징검다리 전략)
-                        stop_codes = [p.get('platform_id') or p.get('code') for p in posts[:5]]
-                        print(f"🔄 UPDATE ONLY 모드: {stop_codes} 중 하나라도 발견 시 수집을 중단합니다.")
+                    existing_codes = set(all_posts_map.keys())
+                    print(f"🔄 UPDATE ONLY 모드: 기존 {len(existing_codes)}건과 대조, 기수집 skip + 신규만 수집합니다.")
         except Exception as e:
             print(f"⚠️ 기존 데이터 로드 실패: {e}")
     else:
@@ -331,7 +331,7 @@ def run():
                     except Exception: pass
 
             def process_network_post(node):
-                nonlocal stop_code_found
+                nonlocal stop_code_found, consecutive_dup_count, scroll_had_response
                 if not node: return
 
                 # 1. 포스트 목록 확보 (단일 포스트 or 스레드)
@@ -348,11 +348,15 @@ def run():
                     posts_to_process = [post]
 
                 if not posts_to_process: return
+                scroll_had_response = True
 
                 # 2. Root Post(첫 번째 글) 식별
                 root_post = posts_to_process[0]
                 root_code = root_post.get("code")
                 root_user_pk = root_post.get("user", {}).get("pk")
+
+                if DEBUG_LOG:
+                    print(f"   [DBG] process_network_post: root_code={root_code}, posts={len(posts_to_process)}")
 
                 if not root_code: return
 
@@ -364,14 +368,21 @@ def run():
                     code = post.get("code")
                     if not code: continue
 
-                    # ⛔ UPDATE ONLY 모드: stop_codes 중 하나 발견 시 중단
-                    if stop_codes and code in stop_codes:
-                        print(f"✋ 기준 게시물 발견! (code: {code}) - 크롤링 중단")
-                        stop_code_found = True
-                        return # 함수 종료
+                    # ⛔ UPDATE ONLY 모드: 기수집이면 skip
+                    if existing_codes and code in existing_codes:
+                        consecutive_dup_count += 1
+                        if DEBUG_LOG:
+                            print(f"   [DBG] skip existing: code={code} ({consecutive_dup_count}/{CONSECUTIVE_DUP_LIMIT})")
+                        if consecutive_dup_count >= CONSECUTIVE_DUP_LIMIT:
+                            print(f"✋ 기수집 {CONSECUTIVE_DUP_LIMIT}건 연속 → 수집 중단")
+                            stop_code_found = True
+                            return
+                        continue
 
                     # 이미 수집된 목록에 있는지 확인 (중복 방지)
                     if any(p.get('platform_id') == code for p in collected_data):
+                        if DEBUG_LOG:
+                            print(f"   [DBG] skip duplicate in session: code={code}")
                         continue
 
                     # ==================================================
@@ -381,6 +392,8 @@ def run():
 
                     # 조건 1: 작성자가 Root 작성자와 동일해야 함
                     if current_user_pk != root_user_pk:
+                        if DEBUG_LOG:
+                            print(f"   [DBG] skip author mismatch: code={code}, current={current_user_pk}, root={root_user_pk}")
                         continue
 
                     # 조건 2: 답글인 경우, '누구에게 쓴 답글인가' 확인 (타인 답글 제외)
@@ -392,6 +405,8 @@ def run():
                         # '내 글에 대한 답글'이 아니면 건너뜀 (타인 댓글에 대한 답글 등)
                         # 단, reply_to_author 정보가 없으면(None) 그냥 수집 (안전장치)
                         if reply_to_author_id and reply_to_author_id != root_user_pk:
+                            if DEBUG_LOG:
+                                print(f"   [DBG] skip reply target mismatch: code={code}, reply_to={reply_to_author_id}, root={root_user_pk}")
                             continue
                     # ==================================================
 
@@ -461,8 +476,11 @@ def run():
 
                     # 유효성 검사: 텍스트가 없고 이미지도 없는 경우 제외
                     if not post_info['full_text'] and not post_info['media']:
+                        if DEBUG_LOG:
+                            print(f"   [DBG] skip empty content: code={code}")
                         continue
 
+                    consecutive_dup_count = 0
                     collected_data.append(post_info)
                     msg = post_info['full_text'].replace('\n', ' ')[:15]
                     prefix = "└─" if i > 0 else "■ root"
@@ -500,11 +518,16 @@ def run():
                                 username = parts[1].replace('@', '')
                                 code = parts[3].split('?')[0]
 
-                                # ⛔ UPDATE ONLY 모드: stop_codes 중 하나 발견 시 중단
-                                if stop_codes and code in stop_codes:
-                                    print(f"✋ 기준 게시물 발견! (code: {code}) - DOM 스캔 중단")
-                                    stop_code_found = True
-                                    break
+                                # ⛔ UPDATE ONLY 모드: 기수집이면 skip
+                                if existing_codes and code in existing_codes:
+                                    consecutive_dup_count += 1
+                                    if DEBUG_LOG:
+                                        print(f"   [DBG] DOM skip existing: code={code} ({consecutive_dup_count}/{CONSECUTIVE_DUP_LIMIT})")
+                                    if consecutive_dup_count >= CONSECUTIVE_DUP_LIMIT:
+                                        print(f"✋ 기수집 {CONSECUTIVE_DUP_LIMIT}건 연속 → DOM 스캔 중단")
+                                        stop_code_found = True
+                                        break
+                                    continue
 
                                 # [날짜 추출] 상대적 시간 감지
                                 relative_date_str = None
@@ -555,6 +578,7 @@ def run():
                                     post_info['crawled_at'] = existing.get('crawled_at')
                                     post_info['sequence_id'] = existing.get('sequence_id')
 
+                                consecutive_dup_count = 0
                                 collected_data.append(post_info)
                                 print(f"   + [DOM] [{code}] {cleaned_text.replace('\n', ' ')[:15]}... (현재 {len(collected_data)}/{TARGET_LIMIT if TARGET_LIMIT else '무제한'})")
                     except Exception: continue
@@ -568,11 +592,15 @@ def run():
                 print("\n📜 [2단계] 스크롤 시작 (네트워크 패킷 캡처)")
                 no_new_data_count = 0
                 last_len = len(collected_data)
+                scroll_had_response = False
 
                 for i in range(1, 51):
                     # 목표 달성 체크
                     if TARGET_LIMIT > 0 and len(collected_data) >= TARGET_LIMIT:
                         print(f"\n🎉 목표 수집 개수({TARGET_LIMIT}개) 도달! 스크롤 종료.")
+                        break
+                    if stop_code_found:
+                        print(f"\n✋ 기수집 연속 한도({CONSECUTIVE_DUP_LIMIT}건) 도달 → 스크롤 중단")
                         break
 
                     try:
@@ -581,9 +609,8 @@ def run():
                         print(f"⬇️ 스크롤 {i}회차...", end="\r")
                         time.sleep(3)
 
-                        # ⛔ UPDATE ONLY 모드: stop_code 발견 시 스크롤 중단
                         if stop_code_found:
-                            print(f"\n✋ 기준 게시물 발견! (스크롤 중단)")
+                            print(f"\n✋ 기수집 연속 한도({CONSECUTIVE_DUP_LIMIT}건) 도달 → 스크롤 중단")
                             break
 
                         current_len = len(collected_data)
@@ -591,9 +618,14 @@ def run():
                             print(f"\n✅ 데이터 추가됨! (누적 {current_len}개)")
                             last_len = current_len
                             no_new_data_count = 0
+                        elif scroll_had_response:
+                            if DEBUG_LOG:
+                                print("\n   [DBG] response received but only existing posts skipped")
+                            no_new_data_count = 0
                         else:
                             no_new_data_count += 1
                             print(f"\nzzz... 대기 중 ({no_new_data_count}/5)")
+                        scroll_had_response = False
 
                         if no_new_data_count >= 5:
                             print("\n🏁 더 이상 새로운 데이터가 없습니다.")
