@@ -37,6 +37,7 @@ node_modules/
 .npm-cache/
 .serena/
 .playwright/
+.playwright-mcp/
 logs/
 scripts/
 
