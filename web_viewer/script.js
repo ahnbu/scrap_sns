@@ -173,8 +173,30 @@ document.addEventListener('DOMContentLoaded', () => {
                     const result = await response.json();
 
                     if (result.status === 'success') {
-                        const stats = result.stats || { total: 0, threads: 0, linkedin: 0 };
-                        const msg = `총 ${stats.total}건이 추가되었습니다. 데이터를 새로고침합니다.\n\n쓰레드 - ${stats.threads}건 추가\n링크드인 - ${stats.linkedin}건 추가`;
+                        const stats = result.stats || {
+                            total: 0,
+                            threads: 0,
+                            linkedin: 0,
+                            twitter: 0,
+                            total_count: 0,
+                            threads_count: 0,
+                            linkedin_count: 0,
+                            twitter_count: 0
+                        };
+                        let msg;
+                        if (mode === 'all') {
+                            msg = `전체 재수집 완료! (전체 ${stats.total_count}건)\n\n`
+                                + `쓰레드 — ${stats.threads_count}건\n`
+                                + `링크드인 — ${stats.linkedin_count}건\n`
+                                + `X — ${stats.twitter_count}건\n\n`
+                                + `데이터를 새로고침합니다.`;
+                        } else {
+                            msg = `스크래핑 완료! 총 ${stats.total}건 신규 추가 (전체 ${stats.total_count}건)\n\n`
+                                + `쓰레드 — ${stats.threads}건 추가 (전체 ${stats.threads_count}건)\n`
+                                + `링크드인 — ${stats.linkedin}건 추가 (전체 ${stats.linkedin_count}건)\n`
+                                + `X — ${stats.twitter}건 추가 (전체 ${stats.twitter_count}건)\n\n`
+                                + `데이터를 새로고침합니다.`;
+                        }
                         alert(msg);
                         fetchData(); // Refresh feed
                     } else {

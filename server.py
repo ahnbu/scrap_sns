@@ -69,6 +69,23 @@ def get_latest_data():
         logging.exception("Failed to load latest data")
         return jsonify({"error": "Failed to load data"}), 500
 
+
+def _read_latest_metadata():
+    """최신 total_full_*.json의 metadata를 읽는다. 파일이 없으면 None."""
+    pattern = os.path.join(OUTPUT_TOTAL_DIR, "total_full_*.json")
+    files = [
+        path
+        for path in glob.glob(pattern)
+        if re.fullmatch(r"total_full_\d{8}\.json", os.path.basename(path))
+    ]
+    if not files:
+        return None
+    files.sort(reverse=True)
+    with open(files[0], 'r', encoding='utf-8-sig') as f:
+        data = json.load(f)
+    return data.get('metadata')
+
+
 ALLOWED_SCRAP_MODES = {'update', 'all'}
 
 @app.route('/api/run-scrap', methods=['POST'])
@@ -81,6 +98,13 @@ def run_scrap():
         mode = data.get('mode', 'update')
         if mode not in ALLOWED_SCRAP_MODES:
             return jsonify({"status": "error", "message": f"Invalid mode. Allowed: {', '.join(sorted(ALLOWED_SCRAP_MODES))}"}), 400
+        before_meta = _read_latest_metadata()
+        before_counts = {
+            'total': (before_meta or {}).get('total_count', 0),
+            'threads': (before_meta or {}).get('threads_count', 0),
+            'linkedin': (before_meta or {}).get('linkedin_count', 0),
+            'twitter': (before_meta or {}).get('twitter_count', 0),
+        }
         env = os.environ.copy()
         env["PYTHONIOENCODING"] = "utf-8"
         process = subprocess.Popen(
@@ -98,7 +122,29 @@ def run_scrap():
                 full_output.append(line)
         process.wait()
         stdout_val = "".join(full_output[-20:])
-        return jsonify({"status": "success", "message": "Scraping finished", "output": stdout_val})
+        after_meta = _read_latest_metadata()
+        after_counts = {
+            'total': (after_meta or {}).get('total_count', 0),
+            'threads': (after_meta or {}).get('threads_count', 0),
+            'linkedin': (after_meta or {}).get('linkedin_count', 0),
+            'twitter': (after_meta or {}).get('twitter_count', 0),
+        }
+        stats = {
+            'total': after_counts['total'] - before_counts['total'],
+            'threads': after_counts['threads'] - before_counts['threads'],
+            'linkedin': after_counts['linkedin'] - before_counts['linkedin'],
+            'twitter': after_counts['twitter'] - before_counts['twitter'],
+            'total_count': after_counts['total'],
+            'threads_count': after_counts['threads'],
+            'linkedin_count': after_counts['linkedin'],
+            'twitter_count': after_counts['twitter'],
+        }
+        return jsonify({
+            "status": "success",
+            "message": "Scraping finished",
+            "output": stdout_val,
+            "stats": stats
+        })
     except Exception as e:
         logging.exception("Failed to run scraping")
         return jsonify({"status": "error", "message": "Scraping failed"}), 500
