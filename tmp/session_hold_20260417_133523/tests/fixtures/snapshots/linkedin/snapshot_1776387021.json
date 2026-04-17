@@ -1,0 +1,80 @@
+{
+  "data": {
+    "data": {
+      "$recipeTypes": [
+        "com.linkedin.5f008b29d1786be4745380705c5959ae"
+      ],
+      "feedDashThirdPartyIdSyncsBySyncUrls": {
+        "$recipeTypes": [
+          "com.linkedin.a6fbd12aed5273d39998714b214f0533"
+        ],
+        "elements": [
+          {
+            "userMatchHistory": "AQJLhObP_eVJuwAAAZ2Y6r0laSefEkVjaUmN2lQvcRrKi4XIYKo4CGYQ4X09kNVcD3rVDtBXecUvN9OfpUbjDEh7opdVFdTpwlXyEBsEGfXIvuhUSV5FmOZ7cnajtYG2QkQX56XfBeC9ZB7W9i2QZP7r1zBJoynwLfydeXIAG0wSxaQjuKmU2m4XoDe5gnzvuS2X3kpOTJvf5Yl1RL6dd5MC0LP1Jg4GF9VH9JTvWIuKBdEdQv3bXwp47zwj7lvdVTP0KdZB28TWXR2VZaSlRfx45z4gROqbLH2f3CFGpcfKj68L2otNGswIa8XeLV2JvJmI0EVbTR_cAJvYa9ZnqX2wdt4XgvPgrJM24n_4khrJCCBkdQ",
+            "urls": [
+              "https://px.ads.linkedin.com/collect/?pid=6883&fmt=gif",
+              "https://px.ads.linkedin.com/setuid?partner=microsoft",
+              "https://px.ads.linkedin.com/setuid?partner=appNexusInt",
+              "https://eb2.3lift.com/xuid?mid=6250&xuid=isLIMember&dongle=2b63&rdir=https%3A%2F%2Fpx.ads.linkedin.com%2Fsetuid%3Fpartner%3Dtriplelift%26tlUid%3D%24UID",
+              "https://sync.teads.tv/um?eid=161&uid=&fb=https%3A%2F%2Fpx.ads.linkedin.com%2Fsetuid%3Fpartner%3Dteads%26exuid%3D%5BVID%5D",
+              "https://px.ads.linkedin.com/setuid?partner=googleadx",
+              "https://px.ads.linkedin.com/setuid?partner=doubleClick",
+              "https://token.rubiconproject.com/token?pid=4858&pt=n",
+              "https://ads.stickyadstv.com/user-matching?id=3661",
+              "https://lex.33across.com/ps/v1/pubtoken/?pid=142&ru=https%3A%2F%2Fpx.ads.linkedin.com%2Fsetuid%3Fpartner%3DthirtyThreeAcross%26exuid%3D%24%7BPUBTOK%7D"
+            ],
+            "$recipeTypes": [
+              "com.linkedin.0b0a7deddaf6361c7c69ac85ec4cd6a3"
+            ],
+            "$type": "com.linkedin.voyager.dash.feed.ThirdPartyIdSyncUrls"
+          }
+        ],
+        "$type": "com.linkedin.restli.common.CollectionResponse"
+      },
+      "$type": "com.linkedin.5f008b29d1786be4745380705c5959ae"
+    },
+    "extensions": {
+      "webMetadata": {}
+    }
+  },
+  "meta": {
+    "microSchema": {
+      "isGraphQL": true,
+      "version": "2.1",
+      "types": {
+        "com.linkedin.5f008b29d1786be4745380705c5959ae": {
+          "fields": {
+            "feedDashThirdPartyIdSyncsBySyncUrls": {
+              "type": "com.linkedin.a6fbd12aed5273d39998714b214f0533"
+            }
+          },
+          "baseType": "com.linkedin.graphql.Query"
+        },
+        "com.linkedin.a6fbd12aed5273d39998714b214f0533": {
+          "fields": {
+            "elements": {
+              "type": {
+                "array": "com.linkedin.0b0a7deddaf6361c7c69ac85ec4cd6a3"
+              }
+            }
+          },
+          "baseType": "com.linkedin.restli.common.CollectionResponse"
+        },
+        "com.linkedin.0b0a7deddaf6361c7c69ac85ec4cd6a3": {
+          "fields": {
+            "userMatchHistory": {
+              "type": "string"
+            },
+            "urls": {
+              "type": {
+                "array": "com.linkedin.common.Url"
+              }
+            }
+          },
+          "baseType": "com.linkedin.voyager.dash.feed.ThirdPartyIdSyncUrls"
+        }
+      }
+    }
+  },
+  "included": []
+}
