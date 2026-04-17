@@ -11,8 +11,10 @@ from flask_cors import CORS
 # Define project root explicitly
 PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
 WEB_VIEWER_DIR = os.path.join(PROJECT_ROOT, 'web_viewer')
+INDEX_HTML_PATH = os.path.join(PROJECT_ROOT, 'index.html')
+PUBLIC_ROOT_FILES = {'favicon.ico', 'favicon.png'}
 
-app = Flask(__name__, static_folder=WEB_VIEWER_DIR, static_url_path='')
+app = Flask(__name__, static_folder=None)
 CORS(app)
 
 OUTPUT_TOTAL_DIR = os.path.join(PROJECT_ROOT, "output_total")
@@ -153,28 +155,54 @@ def run_scrap():
 def get_status():
     return jsonify({"status": "running", "message": "Flask server is active"})
 
-@app.route('/')
-def index():
-    index_path = os.path.join(WEB_VIEWER_DIR, 'index.html')
-    if os.path.exists(index_path):
-        return send_from_directory(WEB_VIEWER_DIR, 'index.html')
-    return "index.html not found", 404
 
-@app.route('/<path:path>')
-def static_proxy(path):
-    # Prevent path traversal: resolve and verify within web_viewer
-    requested = os.path.realpath(os.path.join(WEB_VIEWER_DIR, path))
+def _send_root_index():
+    return send_from_directory(PROJECT_ROOT, 'index.html')
+
+
+def _send_web_viewer_asset(path):
+    rel_path = path[len('web_viewer/'):]
+    requested = os.path.realpath(os.path.join(WEB_VIEWER_DIR, rel_path))
     web_viewer_real = os.path.realpath(WEB_VIEWER_DIR)
+
     if not requested.startswith(web_viewer_real + os.sep) and requested != web_viewer_real:
         abort(403)
 
     if os.path.exists(requested) and os.path.isfile(requested):
-        return send_from_directory(WEB_VIEWER_DIR, path)
+        return send_from_directory(WEB_VIEWER_DIR, rel_path)
 
-    # Fallback to index.html for SPA-style routing
-    index_path = os.path.join(WEB_VIEWER_DIR, 'index.html')
-    if os.path.exists(index_path):
-        return send_from_directory(WEB_VIEWER_DIR, 'index.html')
+    abort(404)
+
+
+def _has_path_traversal(path):
+    normalized = path.replace('\\', '/')
+    return any(part == '..' for part in normalized.split('/'))
+
+
+@app.route('/')
+def index():
+    if os.path.exists(INDEX_HTML_PATH):
+        return _send_root_index()
+    return "index.html not found", 404
+
+
+@app.route('/<path:path>')
+def static_proxy(path):
+    if _has_path_traversal(path):
+        abort(403)
+
+    if path in PUBLIC_ROOT_FILES:
+        return send_from_directory(PROJECT_ROOT, path)
+
+    if path.startswith('web_viewer/'):
+        return _send_web_viewer_asset(path)
+
+    if '.' in os.path.basename(path):
+        abort(404)
+
+    if os.path.exists(INDEX_HTML_PATH):
+        return _send_root_index()
+
     abort(404)
 
 if __name__ == '__main__':

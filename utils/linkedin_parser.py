@@ -125,7 +125,7 @@ def parse_linkedin_post(item, include_images=True, crawl_start_time=None):
             "sns_platform": "linkedin",
             "username": user_link.split("/in/")[-1].replace("/", "") if "/in/" in user_link else username,
             "display_name": username,
-            "full_text": clean_text(text),
+            "full_text": clean_text(text, platform="linkedin"),
             "media": final_images,
             "url": post_url,
             "created_at": date_str,

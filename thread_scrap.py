@@ -539,7 +539,7 @@ def run():
                                         break
 
                                 created_at, time_text = parse_relative_time(relative_date_str, start_time_dt)
-                                cleaned_text = clean_text(raw_text, username)
+                                cleaned_text = clean_text(raw_text, platform='threads', username=username)
 
                                 # 중복 체크 (code 기준)
                                 if any(p.get('platform_id') == code for p in collected_data):

@@ -19,7 +19,16 @@ REQUIRED_FIELDS = [
     "sns_platform", "full_text"
 ]
 
-THREADS_REQUIRED = ["code", "user", "sns_platform", "full_text"]
+THREADS_REQUIRED = [
+    "platform_id",
+    "code",
+    "username",
+    "display_name",
+    "url",
+    "created_at",
+    "sns_platform",
+    "full_text",
+]
 LINKEDIN_REQUIRED = ["platform_id", "username", "full_text", "sns_platform"]
 TWITTER_REQUIRED = ["full_text"]
 
@@ -42,6 +51,7 @@ def test_p1_threads_full_pipeline():
             assert field in post, f"Missing field: {field}"
             assert post[field], f"Empty field: {field}"
         assert post["sns_platform"] == "threads"
+        assert "user" not in post
 
 
 @pytest.mark.integration

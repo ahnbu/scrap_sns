@@ -157,13 +157,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 try {
                     // First, check if server is running
-                    const statusCheck = await fetch('http://localhost:5000/api/status').catch(() => null);
+                    const statusCheck = await fetch('/api/status').catch(() => null);
                     if (!statusCheck || !statusCheck.ok) {
                         alert('Flask 서버가 실행되고 있지 않습니다. 터미널에서 "python server.py"를 실행해주세요.');
                         return;
                     }
 
-                    const response = await fetch('http://localhost:5000/api/run-scrap', {
+                    const response = await fetch('/api/run-scrap', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json'
@@ -595,8 +595,8 @@ ${item.body}
         try {
             // 1순위: 서버 API 호출 (최신 데이터 + 태그 통합 로드)
             const [postsRes, tagsRes] = await Promise.all([
-                fetch('http://localhost:5000/api/latest-data'),
-                fetch('http://localhost:5000/api/get-tags')
+                fetch('/api/latest-data'),
+                fetch('/api/get-tags')
             ]);
 
             if (postsRes.ok) {
@@ -1383,7 +1383,7 @@ ${item.body}
     async function syncTagsToServer() {
         try {
             const tags = JSON.parse(localStorage.getItem('sns_tags') || '{}');
-            const response = await fetch('http://localhost:5000/api/save-tags', {
+            const response = await fetch('/api/save-tags', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(tags)

@@ -5,12 +5,8 @@ import linkedin_scrap
 
 def test_threads_clean_text():
     raw_text = "user123\n1시간\n본문 내용입니다.\n여기도 본문.\n1/5"
-    username = "user123"
-    cleaned = thread_scrap.clean_text(raw_text, username)
-    assert "1시간" not in cleaned
-    assert "user123" not in cleaned
-    assert "본문 내용입니다." in cleaned
-    assert "1/5" not in cleaned
+    cleaned = thread_scrap.clean_text(raw_text, platform="threads", username="user123")
+    assert cleaned == "본문 내용입니다.\n여기도 본문."
 
 def test_threads_parse_relative_time():
     base_time = datetime(2026, 3, 10, 12, 0, 0)
@@ -36,4 +32,4 @@ def test_linkedin_extract_urn_id():
 
 def test_linkedin_clean_text():
     raw = "안녕하세요!…더보기"
-    assert linkedin_scrap.clean_text(raw) == "안녕하세요!"
+    assert linkedin_scrap.clean_text(raw, platform="linkedin") == "안녕하세요!"
