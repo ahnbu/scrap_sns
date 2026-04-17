@@ -25,7 +25,7 @@ if sys.platform == 'win32':
 # ===========================
 # ⚙️ 설정
 # ===========================
-WINDOW_X = 900
+WINDOW_X = 5000           # 화면 밖으로 보내서 사용자 방해 최소화
 WINDOW_Y = 0
 WINDOW_WIDTH = 900
 WINDOW_HEIGHT = 600
