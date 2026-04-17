@@ -33,6 +33,10 @@ if ($vbsText -notmatch '/api/status') {
     throw "sns_hub.vbs does not reference /api/status"
 }
 
+if ($vbsText -notmatch 'taskkill') {
+    throw "sns_hub.vbs does not contain port kill logic"
+}
+
 if ($vbsText -notmatch 'cmd\s+/c.*start' -and $vbsText -notmatch 'explorer\.exe') {
     throw "sns_hub.vbs does not contain a browser launch command"
 }
@@ -43,7 +47,7 @@ if ($packageJson.scripts.view -ne 'wscript sns_hub.vbs') {
 }
 
 $readmeText = Get-Content -LiteralPath $readmePath -Raw
-foreach ($required in @('SNS허브_바로가기.lnk', 'wscript sns_hub.vbs')) {
+foreach ($required in @('SNS허브_바로가기.lnk', 'sns_hub.vbs')) {
     if ($readmeText -notmatch [regex]::Escape($required)) {
         throw "README.md is missing: $required"
     }

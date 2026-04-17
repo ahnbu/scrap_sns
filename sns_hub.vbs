@@ -8,6 +8,9 @@ Set fso = CreateObject("Scripting.FileSystemObject")
 
 repoRoot = fso.GetParentFolderName(WScript.ScriptFullName)
 
+' Kill any process already occupying port 5000 (ensures new code is loaded).
+shell.Run "cmd /c for /f ""tokens=5"" %a in ('netstat -aon ^| findstr "":5000 ""') do taskkill /F /PID %a 2>nul", 0, True
+
 ' Start the server hidden through cmd.
 shell.Run "cmd /c cd /d " & Chr(34) & repoRoot & Chr(34) & " && python server.py", 0, False
 
