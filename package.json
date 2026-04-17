@@ -5,7 +5,7 @@
   },
   "scripts": {
     "start": "python server.py",
-    "view": "run_viewer.bat",
+    "view": "wscript sns_hub.vbs",
     "stop": "stop_viewer.bat",
     "scrap:threads": "python thread_scrap.py",
     "scrap:linkedin": "python linkedin_scrap.py",

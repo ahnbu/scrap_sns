@@ -74,10 +74,11 @@ python total_scrap.py --mode all
 *실행 로그는 `logs/` 폴더 내 플랫폼별 파일(`.log`)로 실시간 저장됩니다.*
 
 ### 웹 뷰어 실행
-별도의 웹 서버 없이 `index.html`을 실행하여 수집된 데이터를 확인할 수 있습니다.
+기본 실행은 `SNS허브_바로가기.lnk`입니다. 더블클릭하면 `sns_hub.vbs`가 `python server.py`를 숨김 실행한 뒤 브라우저로 `index.html`을 엽니다.
 ```powershell
-./run_viewer.bat
+wscript sns_hub.vbs
 ```
+CLI로만 실행하려면 `wscript sns_hub.vbs`를 사용하세요.
 
 ## 🧪 테스트 및 검증
 

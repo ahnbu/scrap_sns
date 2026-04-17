@@ -582,6 +582,34 @@ ${item.body}
         return post.post_url || post.source_url || '';
     }
 
+    function buildCopyText(post) {
+        const fullText = post.full_text || '';
+        const postUrl = resolvePostUrl(post);
+        const author = post.display_name || post.username || post.user || '';
+        const createdAt = (post.created_at || '').slice(0, 10);
+        const platform = post.sns_platform || '';
+        return `${fullText}\n\n*출처: ${postUrl}\n*${author} / ${createdAt} / ${platform}`;
+    }
+
+    function getReadMoreIndicatorHtml(isExpanded) {
+        return isExpanded
+            ? `<span>Show less</span><span class="material-symbols-outlined text-[14px]">expand_less</span>`
+            : `<span>Read more</span><span class="material-symbols-outlined text-[14px]">expand_more</span>`;
+    }
+
+    function toggleExpandableText(paragraph, indicator) {
+        if (!paragraph || !indicator) return;
+
+        const isCollapsed = paragraph.classList.contains('line-clamp-4');
+        if (isCollapsed) {
+            paragraph.classList.remove('line-clamp-4');
+            indicator.innerHTML = getReadMoreIndicatorHtml(true);
+        } else {
+            paragraph.classList.add('line-clamp-4');
+            indicator.innerHTML = getReadMoreIndicatorHtml(false);
+        }
+    }
+
     function renderPosts() {
         // Update global tags first to ensure the list is fresh
         updateGlobalTags();
@@ -794,12 +822,7 @@ ${item.body}
         const copyBtn = header.querySelector('.copy-btn');
         copyBtn.addEventListener('click', async (e) => {
             e.stopPropagation();
-            const fullText = post.full_text || '';
-            const postUrl = resolvePostUrl(post);
-            const username = post.username || post.user || '';
-            const createdAt = (post.created_at || '').slice(0, 10);
-            const platform = post.sns_platform || '';
-            const textToCopy = `${fullText}\n\n*출처: ${postUrl}\n*${username} / ${createdAt} / ${platform}`;
+            const textToCopy = buildCopyText(post);
             const icon = copyBtn.querySelector('span');
 
             try {
@@ -847,33 +870,26 @@ ${item.body}
         const isLongText = (post.full_text || '').length > 150; // Simple length check
 
         content.innerHTML = `
-            <div class="relative ${isLongText ? 'cursor-pointer group/text' : ''}">
-                <p class="text-sm text-gray-200 leading-relaxed font-light ${isLongText ? 'line-clamp-4' : ''} transition-all select-none" id="text-${escapeHtml(postUrl)}">
+            <div class="relative">
+                <p class="text-sm text-gray-200 leading-relaxed font-light ${isLongText ? 'line-clamp-4' : ''} transition-all" id="text-${escapeHtml(postUrl)}">
                     ${cleanText}
                 </p>
                 ${isLongText ? `
-                <div class="mt-2 text-xs font-medium text-gray-500 group-hover/text:text-gray-300 transition-colors flex items-center gap-1 read-more-indicator">
-                    <span>Read more</span>
-                    <span class="material-symbols-outlined text-[14px]">expand_more</span>
+                <div class="mt-2 text-xs font-medium text-gray-500 transition-colors flex items-center gap-1 read-more-indicator cursor-pointer">
+                    ${getReadMoreIndicatorHtml(false)}
                 </div>` : ''}
             </div>
         `;
 
         if (isLongText) {
-            content.addEventListener('click', (e) => {
-                e.stopPropagation();
-                const p = content.querySelector('p');
-                const indicator = content.querySelector('.read-more-indicator');
-                const isCollapsed = p.classList.contains('line-clamp-4');
-                
-                if (isCollapsed) {
-                    p.classList.remove('line-clamp-4');
-                    if (indicator) indicator.innerHTML = `<span>Show less</span><span class="material-symbols-outlined text-[14px]">expand_less</span>`;
-                } else {
-                    p.classList.add('line-clamp-4');
-                    if (indicator) indicator.innerHTML = `<span>Read more</span><span class="material-symbols-outlined text-[14px]">expand_more</span>`;
-                }
-            });
+            const paragraph = content.querySelector('p');
+            const indicator = content.querySelector('.read-more-indicator');
+            if (indicator) {
+                indicator.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    toggleExpandableText(paragraph, indicator);
+                });
+            }
         }
 
         // --- Images ---

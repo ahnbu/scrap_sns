@@ -39,7 +39,8 @@ node_modules/
 .playwright/
 .playwright-mcp/
 logs/
-scripts/
+scripts/*
+!scripts/validate_sns_hub_launcher.ps1
 
 # Terminal Paste Image folder
 .cp-images/
