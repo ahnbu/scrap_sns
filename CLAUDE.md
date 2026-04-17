@@ -77,6 +77,8 @@ SNS 플랫폼
 | `utils/build_data_js.py` | `total_full_*.json` → `web_viewer/data.js` 변환 + 전수 검증 |
 | `migrate_schema.py` | 레거시 스키마 → 표준 스키마 일괄 변환 |
 | `utils/json_to_md.py` | JSON → Markdown 변환 유틸 |
+| `docs/development.md` | 플랫폼별 데이터 구조·URL 형식 참조 문서 (현행 유지 필요) |
+| `docs/crawling_logic.md` | 크롤링 필드 정의 참조 문서 (현행 유지 필요) |
 
 ### 2단계 수집 패턴 (Threads, Twitter)
 
@@ -156,6 +158,11 @@ output_total/
 - `test_runs/` 폴더: 특정 시점의 테스트 스냅샷 보관용.
 - 스크래퍼 CLI에서 `--mode all`은 전체 재수집이므로 데이터 용량 주의.
 - `total_scrap.py`는 로그를 `logs/{platform}.log`에 저장 (gitignore).
+
+## 플랫폼별 특성
+
+- **Threads**: 공식 도메인은 `www.threads.com` (정본). 코드베이스에 잔존하는 `threads.net`은 레거시이며, `.com`으로 정규화 대상이다.
+- **X(Twitter)**: 봇 감지 시 요청을 인기 페이지 등으로 리다이렉트한다. URL이 서로 다른 두 트윗이 동일 본문으로 수집되는 중복이 발생할 수 있으며, URL 기반 중복 제거만으로는 잡히지 않는다.
 
 ## 후속 작업 후보
 

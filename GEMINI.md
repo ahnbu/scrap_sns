@@ -17,6 +17,10 @@
 - **Auth**: `auth/auth_{platform}.json` (세션 정보 포함, 외부에 노출 금지)
 - **Snapshots**: `tests/fixtures/snapshots/{platform}/` (최신 10개 유지)
 
+## 📖 참조 문서 (관련 코드 수정 시 함께 현행화)
+- `docs/development.md` — 플랫폼별 데이터 구조·URL 형식 (Threads canonical: `www.threads.com`)
+- `docs/crawling_logic.md` — 크롤링 필드 정의 및 흐름 상세
+
 ## ⚠️ 보안 및 안정성 (Anti-Ban)
 - **계정 보호**: 파싱 로직 수정 시 브라우저를 반복 실행하지 말고 Snapshot 파일을 활용한다.
 - **속도 제한**: 실제 스크랩 시 요청 간 최소 3~5초의 `asyncio.sleep` 또는 `time.sleep`을 부여하여 IP/계정 차단을 예방한다.

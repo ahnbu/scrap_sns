@@ -92,6 +92,15 @@ pytest tests/unit/     # 로직 테스트
 pytest tests/contract/ # 데이터 스키마 검증
 ```
 
+## 📚 개발 문서
+
+| 문서 | 내용 |
+|------|------|
+| [개발 가이드](./docs/development.md) | 플랫폼별 데이터 구조, URL 형식, 파싱 로직 |
+| [크롤링 로직](./docs/crawling_logic.md) | 필드 정의, 크롤링 흐름 상세 |
+| [CHANGELOG](./CHANGELOG.md) | 변경 이력 |
+| [BACKLOG](./BACKLOG.md) | 후속 작업 후보 목록 |
+
 ## 📜 주요 업데이트 (2026-03-10)
 - **P0 수정**: `server.py` 변수 버그 수정, 메타데이터 키 불일치 해결, `argparse` import-safe 구조 개선.
 - **P1 도입**: 자동 테스트 체계(`tests/`) 구축 및 설치/실행 문서 현행화.
