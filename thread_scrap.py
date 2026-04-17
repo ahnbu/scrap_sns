@@ -186,7 +186,7 @@ def update_simple_version(new_data, stop_code, crawl_start_time):
 def manage_login(context, page):
     print("🌐 Threads 저장 페이지 접속 시도...")
     try:
-        page.goto("https://www.threads.net/saved")
+        page.goto("https://www.threads.com/saved")
         time.sleep(3)
     except Exception:
         pass
@@ -454,7 +454,7 @@ def run():
                         "media": images,
                         "created_at": created_at,
                         "date": created_at.split(' ')[0] if created_at else None,
-                        "url": f"https://www.threads.net/@{user.get('username')}/post/{code}",
+                        "url": f"https://www.threads.com/@{user.get('username')}/post/{code}",
                         "sns_platform": "threads",
                         "like_count": post.get("like_count", 0),
                         "reply_count": extra_info.get("direct_reply_count", 0),
@@ -493,7 +493,7 @@ def run():
             # -------------------------------------------------
             print("\n🔍 [1단계] 초기 화면(DOM) 스캔 중...")
             if "saved" not in page.url:
-                page.goto("https://www.threads.net/saved")
+                page.goto("https://www.threads.com/saved")
                 time.sleep(3)
             else:
                 time.sleep(2)
@@ -559,7 +559,7 @@ def run():
                                     "media": list(set(images)),
                                     "created_at": created_at,
                                     "date": created_at.split(' ')[0] if created_at else None,
-                                    "url": f"https://www.threads.net/@{username}/post/{code}",
+                                    "url": f"https://www.threads.com/@{username}/post/{code}",
                                     "sns_platform": "threads",
                                     "pk": None, # DOM에서는 PK 알 수 없음
                                     "like_count": -1,

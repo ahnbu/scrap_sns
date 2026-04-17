@@ -15,7 +15,7 @@ def test_threads_session_validity():
         page = context.new_page()
         
         # 저장됨 페이지 접속
-        page.goto("https://www.threads.net/saved")
+        page.goto("https://www.threads.com/saved")
         page.wait_for_timeout(3000)
         
         # 로그인 폼이 여전히 보이는지 확인 (세션 만료 여부)
@@ -51,7 +51,7 @@ def test_threads_scraping_smoke():
                 except Exception: pass
 
         page.on("response", handle_response)
-        page.goto("https://www.threads.net/saved")
+        page.goto("https://www.threads.com/saved")
         
         # 스크롤 1회 수행하여 네트워크 호출 유도
         page.evaluate("window.scrollTo(0, document.body.scrollHeight)")

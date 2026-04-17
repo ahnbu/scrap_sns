@@ -247,7 +247,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 author: post.display_name || post.username,
                 date: dateObj.toISOString().slice(0, 10), // yyyy-mm-dd
                 body: post.full_text,
-                link: post.post_url,
+                link: resolvePostUrl(post),
                 platform: post.sns_platform
             };
         });
@@ -393,19 +393,65 @@ ${item.body}
     }
 
     function migrateLegacyTagKeys(posts) {
-        const canonByCode = new Map();
-        const canonByTSlash = new Map();
+        const normalizeThreadsUrl = (url) => {
+            if (!url || typeof url !== 'string') return '';
+            return url
+                .replace(/^https?:\/\/www\.threads\.net\//, 'https://www.threads.com/')
+                .replace(/^https?:\/\/threads\.net\//, 'https://www.threads.com/')
+                .replace(/^https?:\/\/threads\.com\//, 'https://www.threads.com/');
+        };
+
+        const extractThreadsCode = (value) => {
+            if (!value || typeof value !== 'string') return '';
+            const postMatch = value.match(/\/post\/([A-Za-z0-9_-]+)/);
+            if (postMatch) return postMatch[1];
+            const tMatch = value.match(/\/t\/([A-Za-z0-9_-]+)/);
+            if (tMatch) return tMatch[1];
+            if (!value.includes('://')) return value;
+            return '';
+        };
+
+        const canonicalByCode = new Map();
+        const aliasToCanonical = new Map();
+        const registerAlias = (alias, canonical) => {
+            if (!alias || !canonical) return;
+            aliasToCanonical.set(alias, canonical);
+            const normalized = normalizeThreadsUrl(alias);
+            if (normalized) aliasToCanonical.set(normalized, canonical);
+        };
 
         posts.forEach(post => {
             const canonical = resolvePostUrl(post);
-            if (!canonical) return;
+            const code = post.platform_id || post.code || extractThreadsCode(post.url || post.post_url || '');
+            if (!canonical || !code) return;
 
-            const code = post.platform_id || post.code;
-            if (!code) return;
-
-            canonByCode.set(code, canonical);
-            canonByTSlash.set(`https://www.threads.net/t/${code}`, canonical);
+            canonicalByCode.set(code, canonical);
+            registerAlias(canonical, canonical);
+            registerAlias(canonical.replace('https://www.threads.com/', 'https://www.threads.net/'), canonical);
+            registerAlias(`https://www.threads.net/t/${code}`, canonical);
+            registerAlias(`https://www.threads.com/t/${code}`, canonical);
         });
+
+        const resolveLegacyKey = (key) => {
+            if (!key || key === 'undefined') return '';
+
+            const direct = aliasToCanonical.get(key) || aliasToCanonical.get(normalizeThreadsUrl(key));
+            if (direct) return direct;
+
+            const code = extractThreadsCode(key);
+            if (code && canonicalByCode.has(code)) {
+                return canonicalByCode.get(code);
+            }
+
+            if (key.includes('threads.net/') || key.includes('threads.com/')) {
+                return normalizeThreadsUrl(key) || key;
+            }
+
+            return key;
+        };
+
+        const cleanTagList = (tags) =>
+            Array.from(new Set((tags || []).filter(tag => tag && tag.trim().length > 0)));
 
         let migrated = 0;
         Object.keys(postTags).forEach(key => {
@@ -415,29 +461,101 @@ ${item.body}
                 return;
             }
 
-            const target = canonByTSlash.get(key) || canonByCode.get(key);
-            if (!target || target === key) return;
+            const target = resolveLegacyKey(key);
+            if (!target || target === key) {
+                if (key !== target && !target) {
+                    delete postTags[key];
+                    migrated += 1;
+                }
+                return;
+            }
 
-            const merged = new Set([
+            const cleaned = cleanTagList([
                 ...(postTags[target] || []),
-                ...(postTags[key] || [])
+                ...(postTags[key] || []),
             ]);
-            const cleaned = Array.from(merged).filter(tag => tag && tag.trim().length > 0);
 
             if (cleaned.length > 0) {
                 postTags[target] = cleaned;
             }
-            // cleaned.length === 0 케이스는 target이 원래 없었거나 existing도 빈 stale.
-            // 이때 target은 건드리지 않는다 (기존 canonical 태그를 파괴할 위험 제거).
 
             delete postTags[key];
             migrated += 1;
         });
 
+        const migrateArrayState = (storageKey) => {
+            const raw = localStorage.getItem(storageKey);
+            if (!raw) return 0;
+
+            let values;
+            try {
+                values = JSON.parse(raw);
+            } catch (error) {
+                return 0;
+            }
+            if (!Array.isArray(values)) return 0;
+
+            let touched = 0;
+            const nextValues = [];
+            values.forEach(value => {
+                const target = resolveLegacyKey(value);
+                if (target && target !== value) touched += 1;
+                nextValues.push(target || value);
+            });
+
+            const deduped = Array.from(new Set(nextValues.filter(Boolean)));
+            if (touched > 0) {
+                localStorage.setItem(storageKey, JSON.stringify(deduped));
+            }
+            return touched;
+        };
+
+        const todoPriority = { completed: 2, pending: 1 };
+        const migrateTodoState = () => {
+            const raw = localStorage.getItem('sns_todos');
+            if (!raw) return 0;
+
+            let values;
+            try {
+                values = JSON.parse(raw);
+            } catch (error) {
+                return 0;
+            }
+            if (!values || typeof values !== 'object' || Array.isArray(values)) return 0;
+
+            let touched = 0;
+            const nextValues = {};
+            Object.entries(values).forEach(([key, value]) => {
+                const target = resolveLegacyKey(key) || key;
+                if (target !== key) touched += 1;
+
+                const existing = nextValues[target];
+                if (!existing || (todoPriority[value] || 0) >= (todoPriority[existing] || 0)) {
+                    nextValues[target] = value;
+                }
+            });
+
+            if (touched > 0) {
+                localStorage.setItem('sns_todos', JSON.stringify(nextValues));
+            }
+            return touched;
+        };
+
+        const favoritesMigrated = migrateArrayState('sns_favorites');
+        const invisibleMigrated = migrateArrayState('sns_invisible_posts');
+        const foldedMigrated = migrateArrayState('sns_folded_posts');
+        const todosMigrated = migrateTodoState();
+
         if (migrated > 0) {
-            console.log(`🔧 Migrated ${migrated} legacy tag keys to canonical URLs`);
             localStorage.setItem('sns_tags', JSON.stringify(postTags));
             syncTagsToServer();
+        }
+
+        const totalStateMigrations = favoritesMigrated + invisibleMigrated + foldedMigrated + todosMigrated;
+        if (migrated > 0 || totalStateMigrations > 0) {
+            console.log(
+                `🔧 Migrated legacy URL states: tags=${migrated}, favorites=${favoritesMigrated}, hidden=${invisibleMigrated}, folded=${foldedMigrated}, todos=${todosMigrated}`
+            );
         }
 
         return migrated;
@@ -572,12 +690,23 @@ ${item.body}
     }
 
     function resolvePostUrl(post) {
-        if (post.url) return post.url;
+        const normalizeThreadsUrl = (url) => {
+            if (!url || typeof url !== 'string') return '';
+            return url
+                .replace(/^https?:\/\/www\.threads\.net\//, 'https://www.threads.com/')
+                .replace(/^https?:\/\/threads\.net\//, 'https://www.threads.com/')
+                .replace(/^https?:\/\/threads\.com\//, 'https://www.threads.com/');
+        };
+
+        if (post.url) {
+            return normalizeThreadsUrl(post.url) || post.url;
+        }
         const platform = (post.sns_platform || '').toLowerCase();
         if (platform.includes('thread')) {
             const user = post.username || post.user;
             const code = post.platform_id || post.code;
-            if (user && code) return `https://www.threads.net/@${user}/post/${code}`;
+            if (user && code) return `https://www.threads.com/@${user}/post/${code}`;
+            return normalizeThreadsUrl(post.post_url || post.source_url || '');
         }
         return post.post_url || post.source_url || '';
     }
@@ -1379,8 +1508,9 @@ ${item.body}
         noHiddenPosts.classList.add('hidden');
         invisiblePostsList.classList.remove('hidden');
 
-        const hiddenItems = allPosts.filter(post => invisiblePosts.has(post.post_url));
+        const hiddenItems = allPosts.filter(post => invisiblePosts.has(resolvePostUrl(post)));
         hiddenItems.forEach(post => {
+            const resolvedUrl = resolvePostUrl(post);
             const item = document.createElement('div');
             item.className = 'invisible-post-item w-full';
             const platform = (post.sns_platform || 'other').toLowerCase();
@@ -1395,7 +1525,7 @@ ${item.body}
                     <h4 class="truncate">${escapeHtml(post.display_name || post.username || post.user || 'Unknown')}</h4>
                     <p class="truncate text-xs opacity-60">${escapeHtml((post.full_text || 'No content').slice(0, 100))}</p>
                 </div>
-                <button class="restore-btn hover:scale-105 active:scale-95 transition-all shrink-0" data-url="${escapeHtml(post.post_url)}">
+                <button class="restore-btn hover:scale-105 active:scale-95 transition-all shrink-0" data-url="${escapeHtml(resolvedUrl)}">
                     Restore
                 </button>
             `;

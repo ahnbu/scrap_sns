@@ -70,7 +70,7 @@ def normalize_post(post: dict) -> dict:
         username = out.get("username")
         code = out.get("platform_id") or out.get("code")
         if username and code:
-            out["url"] = f"https://www.threads.net/@{username}/post/{code}"
+            out["url"] = f"https://www.threads.com/@{username}/post/{code}"
 
     defaults = {
         "media": [],

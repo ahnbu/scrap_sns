@@ -171,11 +171,11 @@ def test_apply_auto_tags_uses_resolved_post_url_for_threads_posts():
 
     payload = run_node_json(node_script)
     assert payload == {
-        "https://www.threads.net/@alice/post/ABC123": ["AI"],
+        "https://www.threads.com/@alice/post/ABC123": ["AI"],
     }
 
 
-def test_migrate_legacy_tag_keys_repairs_threads_legacy_namespaces():
+def test_migrate_legacy_tag_keys_repairs_threads_legacy_namespaces_and_states():
     node_script = textwrap.dedent(
         """
         const fs = require('fs');
@@ -221,9 +221,24 @@ def test_migrate_legacy_tag_keys_repairs_threads_legacy_namespaces():
           'undefined': [''],
           'ABC123': ['legacy-code'],
           'https://www.threads.net/t/ABC123': ['legacy-t'],
-          'https://www.threads.net/@alice/post/ABC123': ['keep'],
+          'https://www.threads.net/@alice/post/ABC123': ['legacy-alice'],
+          'https://www.threads.com/@ally/post/ABC123': ['keep'],
           'https://example.com/unmatched': ['other']
         };
+        storage.sns_favorites = JSON.stringify([
+          'https://www.threads.net/@alice/post/ABC123',
+          'https://www.threads.net/t/ABC123'
+        ]);
+        storage.sns_invisible_posts = JSON.stringify([
+          'https://www.threads.net/@alice/post/ABC123'
+        ]);
+        storage.sns_folded_posts = JSON.stringify([
+          'https://www.threads.net/t/ABC123'
+        ]);
+        storage.sns_todos = JSON.stringify({
+          'https://www.threads.net/@alice/post/ABC123': 'pending',
+          'https://www.threads.net/t/ABC123': 'completed'
+        });
         global.localStorage = {
           getItem(key) {
             return Object.prototype.hasOwnProperty.call(storage, key) ? storage[key] : null;
@@ -242,9 +257,9 @@ def test_migrate_legacy_tag_keys_repairs_threads_legacy_namespaces():
         const migrated = migrateLegacyTagKeys([
           {
             sns_platform: 'threads',
-            user: 'alice',
+            user: 'ally',
             platform_id: 'ABC123',
-            url: 'https://www.threads.net/@alice/post/ABC123'
+            url: 'https://www.threads.com/@ally/post/ABC123'
           }
         ]);
 
@@ -252,20 +267,29 @@ def test_migrate_legacy_tag_keys_repairs_threads_legacy_namespaces():
           migrated,
           postTags,
           syncCalls: global.__syncCalls,
-          stored: JSON.parse(storage.sns_tags)
+          stored: JSON.parse(storage.sns_tags),
+          favorites: JSON.parse(storage.sns_favorites),
+          invisiblePosts: JSON.parse(storage.sns_invisible_posts),
+          foldedPosts: JSON.parse(storage.sns_folded_posts),
+          todos: JSON.parse(storage.sns_todos)
         }));
         """
     )
 
     payload = run_node_json(node_script)
-    assert payload["migrated"] == 3
+    assert payload["migrated"] == 4
     assert payload["syncCalls"] == 1
     assert payload["postTags"] == {
-        "https://www.threads.net/@alice/post/ABC123": [
+        "https://www.threads.com/@ally/post/ABC123": [
             "keep",
             "legacy-code",
             "legacy-t",
+            "legacy-alice",
         ],
         "https://example.com/unmatched": ["other"],
     }
     assert payload["stored"] == payload["postTags"]
+    assert payload["favorites"] == ["https://www.threads.com/@ally/post/ABC123"]
+    assert payload["invisiblePosts"] == ["https://www.threads.com/@ally/post/ABC123"]
+    assert payload["foldedPosts"] == ["https://www.threads.com/@ally/post/ABC123"]
+    assert payload["todos"] == {"https://www.threads.com/@ally/post/ABC123": "completed"}

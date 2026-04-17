@@ -17,7 +17,7 @@ def test_normalize_post_converts_legacy_threads_fields():
     assert normalized["username"] == "winter_kyul"
     assert normalized["display_name"] == "winter_kyul"
     assert normalized["created_at"] == "2026-02-12 12:34:56"
-    assert normalized["url"] == "https://www.threads.net/@winter_kyul/post/DUn02Eukm2o"
+    assert normalized["url"] == "https://www.threads.com/@winter_kyul/post/DUn02Eukm2o"
     assert validate_post(normalized) == []
     assert "user" not in normalized
     assert "timestamp" not in normalized
@@ -38,7 +38,7 @@ def test_validate_post_allows_image_only_posts():
         {
             "sns_platform": "threads",
             "username": "media_only_user",
-            "url": "https://www.threads.net/@media_only_user/post/ABC123",
+            "url": "https://www.threads.com/@media_only_user/post/ABC123",
             "created_at": "2026-01-03 08:43:04",
             "media": ["https://example.com/image.jpg"],
             "full_text": "",

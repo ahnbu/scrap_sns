@@ -2,6 +2,7 @@ import os
 import sys
 import glob
 import json
+import re
 import logging
 import subprocess
 from flask import Flask, jsonify, send_from_directory, request, abort
@@ -51,7 +52,11 @@ def save_tags():
 def get_latest_data():
     try:
         pattern = os.path.join(OUTPUT_TOTAL_DIR, "total_full_*.json")
-        files = glob.glob(pattern)
+        files = [
+            path
+            for path in glob.glob(pattern)
+            if re.fullmatch(r"total_full_\d{8}\.json", os.path.basename(path))
+        ]
         if not files:
             return jsonify({"error": "Data file not found"}), 404
         files.sort(reverse=True)

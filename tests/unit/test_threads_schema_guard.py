@@ -21,7 +21,7 @@ def test_extract_items_multi_path_returns_standard_threads_keys(sample_html):
     assert post["code"] == "TESTCODE123"
     assert post["username"] == "testuser"
     assert post["display_name"] == "testuser"
-    assert post["url"] == "https://www.threads.net/@testuser/post/TESTCODE123"
+    assert post["url"] == "https://www.threads.com/@testuser/post/TESTCODE123"
     assert post["created_at"]
     assert post["date"] == post["created_at"].split(" ")[0]
     assert "user" not in post
@@ -55,7 +55,7 @@ def test_merge_thread_items_normalizes_legacy_threads_fields():
     assert merged["platform_id"] == "TESTCODE123"
     assert merged["username"] == "testuser"
     assert merged["display_name"] == "testuser"
-    assert merged["url"] == "https://www.threads.net/@testuser/post/TESTCODE123"
+    assert merged["url"] == "https://www.threads.com/@testuser/post/TESTCODE123"
     assert merged["is_merged_thread"] is True
     assert merged["original_item_count"] == 2
     assert merged["full_text"] == "first\n\n---\n\nsecond"
@@ -86,7 +86,7 @@ def test_assert_threads_schema_accepts_standard_threads_posts():
                 "platform_id": "TESTCODE123",
                 "username": "testuser",
                 "display_name": "testuser",
-                "url": "https://www.threads.net/@testuser/post/TESTCODE123",
+                "url": "https://www.threads.com/@testuser/post/TESTCODE123",
                 "created_at": "2026-04-11 10:00:00",
                 "full_text": "body",
             }

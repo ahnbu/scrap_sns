@@ -276,7 +276,7 @@ class Progress:
 
 async def worker(context, semaphore, code, username, results, lock):
     async with semaphore:
-        url = f"https://www.threads.net/@{username}/post/{code}"
+        url = f"https://www.threads.com/@{username}/post/{code}"
         page = await context.new_page()
         try:
             await page.goto(url, wait_until="domcontentloaded", timeout=30000)

@@ -102,7 +102,7 @@ def extract_posts_from_node(node, target_code, master_pk):
             "display_name": user.get("full_name") or username,
             "full_text": post.get("caption", {}).get("text", ""),
             "media": [c.get("url") for c in post.get("image_versions2", {}).get("candidates", [])[:1] if c.get("url")],
-            "url": f"https://www.threads.net/@{username}/post/{code}" if username else "",
+            "url": f"https://www.threads.com/@{username}/post/{code}" if username else "",
             "created_at": created_at,
             "date": created_date,
             "sns_platform": "threads",

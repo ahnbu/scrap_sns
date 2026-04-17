@@ -1,10 +1,10 @@
 ﻿const snsFeedData = {
   "metadata": {
-    "updated_at": "2026-04-12T16:34:39.610752",
-    "max_sequence_id": 982,
-    "total_count": 982,
-    "threads_count": 679,
-    "linkedin_count": 238,
+    "updated_at": "2026-04-17T09:52:28.696335",
+    "max_sequence_id": 1065,
+    "total_count": 1065,
+    "threads_count": 744,
+    "linkedin_count": 256,
     "twitter_count": 79,
     "execution_mode": "parallel_multi_window"
   },
@@ -1261,7 +1261,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/629374607_17844918324687530_4627368405534422204_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTAwMHgxMDAwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QHl5Mk54qtYH-EMw86onRydS6O0QXTGSW1wl8_qele-AR6xOl7sZBqent0-d0GxfBY&_nc_ohc=9DZwGITVra4Q7kNvwExAeLe&_nc_gid=ULENdl6Ccvr2-7axQhwukA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMDI2MjQyMjQ0ODUzMjkwNA%3D%3D.3-ccb7-5&oh=00_Afu_77jMKwEkt5_VLAdM3EKGhKE40P8-Iq9yQ7EG4MtMfA&oe=699AE3B4&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@winter_kyul/post/DUn02Eukm2o",
+      "url": "https://www.threads.com/@winter_kyul/post/DUn02Eukm2o",
       "created_at": "2026-02-12 00:14:43",
       "date": "2026-02-12",
       "crawled_at": "2026-02-12T18:44:53.240",
@@ -1284,7 +1284,7 @@
       "display_name": "jinaleesoc",
       "full_text": "ai 자동화\n21시간\n바이브코딩/AI 자동화가 중독적인 이유는 게임같아서라는\n@taehyeong_lim\n교수님의 말씀이 공감이 간다. 뭘 하면 결과, 즉 보상이 즉각적이다. 지팡이 휘두르면 뭔가 나오는 느낌? 코딩은 원래도 이 시대의 마법이었는데, 그걸 쉽게 시작해서 이렇게 저렇게 간단한 것부터 트라이해볼 수 있는 게 매력이다. 그러다가 익숙함이 늘고 공부를 더 하면 더더더 복잡한 것을 해낼 수 있는 것마저 게임같다.\n처음엔 쉬운 걸 한다. 파일 이름 바꾸기, 폴더 정리. 되네? 그럼 다음. 논문 요약 자동화. 되네? 자동화한 요약 카드로 시스템 만들기. 이것도 되네? 그럼 다음. LLM 카운슬? 멀티에이전트? 점점 복잡해지고 점점 재밌어진다. RPG 게임 스킬 트리 올리는 것 같다. 처음엔 기본 공격만 한다. 나중엔 콤보 스킬 쓴다. 성취감이 즉각적이다.",
       "media": [],
-      "url": "https://www.threads.net/@jinaleesoc/post/DUniriOjLVh",
+      "url": "https://www.threads.com/@jinaleesoc/post/DUniriOjLVh",
       "created_at": "2026-02-11 22:04:05",
       "date": "2026-02-11",
       "crawled_at": "2026-02-12T18:45:17.131",
@@ -1309,7 +1309,7 @@
       "display_name": "jinaleesoc",
       "full_text": "바이브코딩/AI 자동화가 중독적인 이유는 게임같아서라는 @taehyeong_lim 교수님의 말씀이 공감이 간다. 뭘 하면 결과, 즉 보상이 즉각적이다. 지팡이 휘두르면 뭔가 나오는 느낌? 코딩은 원래도 이 시대의 마법이었는데, 그걸 쉽게 시작해서 이렇게 저렇게 간단한 것부터 트라이해볼 수 있는 게 매력이다. 그러다가 익숙함이 늘고 공부를 더 하면 더더더 복잡한 것을 해낼 수 있는 것마저 게임같다.\n\n처음엔 쉬운 걸 한다. 파일 이름 바꾸기, 폴더 정리. 되네? 그럼 다음. 논문 요약 자동화. 되네? 자동화한 요약 카드로 시스템 만들기. 이것도 되네? 그럼 다음. LLM 카운슬? 멀티에이전트? 점점 복잡해지고 점점 재밌어진다. RPG 게임 스킬 트리 올리는 것 같다. 처음엔 기본 공격만 한다. 나중엔 콤보 스킬 쓴다. 성취감이 즉각적이다.",
       "media": [],
-      "url": "https://www.threads.net/@jinaleesoc/post/DUniriOjLVh0U-UEGs4wVrUY7Oo12Wff6wcKhA0",
+      "url": "https://www.threads.com/@jinaleesoc/post/DUniriOjLVh0U-UEGs4wVrUY7Oo12Wff6wcKhA0",
       "created_at": "2026-02-11 21:36:00",
       "date": "2026-02-11",
       "crawled_at": "2026-02-12T18:45:17.131",
@@ -1333,7 +1333,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/634073945_905150722272805_8471132380887220100_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDM2MC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QFlvQR3_LLTmA4yks7CTL70RANV6GnH_kzRvwlTPpyXLeB3lPG91vLXBqj3eDSc6iU&_nc_ohc=qArOfB7RQ2MQ7kNvwG6ZSGE&_nc_gid=ChXu4Yo2ccRME4-r0bhrHg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMDYxMTkwNjQ0NTQwNDI1Mg%3D%3D.3-ccb7-5&oh=00_Afv1oz8fA-ytiXaPTTDbOpQrK15wh9nA4gxj9SS5gY15dA&oe=699AEF4B&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@tableau_viz/post/DUpETvED2hc",
+      "url": "https://www.threads.com/@tableau_viz/post/DUpETvED2hc",
       "created_at": "2026-02-12 11:54:36",
       "date": "2026-02-12",
       "crawled_at": "2026-02-12T19:04:16.136",
@@ -1359,7 +1359,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/632163486_17934713502170254_3979588207464953012_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTI4MHg3MjAuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QHulzi15pDnaBgVRdhqUodm1SioN0w6IsRjnJOjd4rnr-Gf1TAaNRe4xpVZzK9T5FA&_nc_ohc=L-zeb0eulGgQ7kNvwF5YdAv&_nc_gid=lGjrvTE67WIfBnQGmZZQ_g&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyODg2Nzc1MjU2NDM2MjY1Mw%3D%3D.3-ccb7-5&oh=00_AfvgpHPvDsf0FXBo0q4lERKSss39jsdPagRz1O1ZxKBslQ&oe=699B0556&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@thedevfounder/post/DUi3u9LjA2d",
+      "url": "https://www.threads.com/@thedevfounder/post/DUi3u9LjA2d",
       "created_at": "2026-02-10 02:03:46",
       "date": "2026-02-10",
       "crawled_at": "2026-02-12T19:04:22.186",
@@ -1385,7 +1385,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/632050448_17874150174525517_1865596449891458505_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMjE2MHgxMTM2LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QE3P3FSg2YePZrM0LaXtbMGn_GrcSpYOUKjBCi0YtbWrWQ4B8YAgNWibcNpW436Wxc&_nc_ohc=dRpdIrP7zHMQ7kNvwG2wRVM&_nc_gid=MJYfwZtWQ20CyX4Z1jmYXw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyOTQ5OTY1Mjc0ODgyOTU2Nw%3D%3D.3-ccb7-5&oh=00_AfseCUIvipKvu1Rd8lOu-2C3cBiGmutjWyfJXvB_5xg9Sw&oe=699ADDD1&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@ddg.kang/post/DUlHaUFk2N_",
+      "url": "https://www.threads.com/@ddg.kang/post/DUlHaUFk2N_",
       "created_at": "2026-02-10 22:59:14",
       "date": "2026-02-10",
       "crawled_at": "2026-02-12T19:04:22.186",
@@ -1411,7 +1411,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/631461078_17925787872219174_3753534597048810959_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTAyMHg2NzYuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QGg2oMB33yK-oUsUMxXA64SKD-cJcXkZMSdKIfoPUC-c2fayPWyeiFmzYR4vMqgVZU&_nc_ohc=sSKB04VnBkkQ7kNvwEYJv2x&_nc_gid=MsegfkIO5IVd0AahjOnHHQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyOTI0NTgxOTQ1MTY5MzQ3Mw%3D%3D.3-ccb7-5&oh=00_AftCy7-NEDBEaNdS1g7BIzNlNv6dG09sYlwQAw6CUVjGJg&oe=699AEB48&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@gptersorg/post/DUkNsjaEVmh",
+      "url": "https://www.threads.com/@gptersorg/post/DUkNsjaEVmh",
       "created_at": "2026-02-10 14:34:55",
       "date": "2026-02-10",
       "crawled_at": "2026-02-12T19:04:22.186",
@@ -1435,7 +1435,7 @@
       "display_name": "nomadlabs_cozac",
       "full_text": "[1/8]\nOpus 4.6이랑 Codex 5.3\n둘 다 쓰고 계신 분들 많을 텐데\n\n\"$20 내고 실제로 얼마나 쓸 수 있는 거야?\"\n이 질문에 정확히 답하는 글이 없더라고요\n\n직접 양쪽 구독하고 쓰면서\n공식 문서 + 실사용자 후기까지 팩트체크해서 정리했어요\n\n참고로 지금 OpenAI가 Codex 2배 한도 프로모션 중이라\n타이밍도 중요해요\n\n---\n\n[2/8]\n구독 플랜 구조부터요\n\nClaude:\nFree → Pro $20 → Max $100 (5배) → Max $200 (20배)\n정확한 메시지 수 비공개. 배수만 공개\n$100 중간 플랜이 있어요\n\nOpenAI:\nFree → Go ~$8 (신규) → Plus $20 → Pro $200\nPlus: Codex 45~225 로컬 메시지/5h\nPro: 300~1,500/5h (Plus의 6배)\n$20에서 $200으로 직행. 중간 없음\n\n핵심:\nClaude는 단계적 업그레이드 가능\nOpenAI는 10배 가격 점프밖에 없어요\n\n---\n\n[3/8]\n$20 플랜 체감 — 둘 다 부족하지만 결이 달라요\n\nClaude Pro $20:\n- Claude Code + 웹 + 데스크톱이 한도 합산\n- 코딩 많이 하면 웹 채팅도 같이 줄어듦\n- \"5시간에 20 프롬프트만에 제한\" (GitHub)\n\nChatGPT Plus $20:\n- Codex 45~225 메시지/5h (지금 2x 프로모: 90~450)\n- 근데 5.3이 크레딧을 이전보다 훨씬 많이 먹음\n- \"같은 작업인데 100크레딧 소모\" (oldandangry)\n\n둘 다 하루종일 코딩엔 부족\n이건 모든 리뷰에서 일치해요\n\n---\n\n[4/8]\n$100~$200 프리미엄 — 같은 $200인데 체감이 완전히 달라요\n\nClaude Max $100 (Pro의 5배):\n\"3~4시간 연속 코딩해도 안 끊김\"\n비개발자도 \"외주 수백만 원짜리를 직접 만듦\"\n→ 만족도 가장 높은 구간\n\nClaude Max $200 (Pro의 20배):\n\"8시간 작업해도 전혀 안 끊김\"\n\nChatGPT Pro $200 (Plus의 6배):\n\"32요청 후 소진. Plus 10개가 나을 듯\" (georgezip)\n\"2태스크에 주간 35% 소모. 내일 해지\" (jamesh)\n\"30분 쓰고 5일 쿨다운\" (telecartme)\n\nClaude Max $200은 \"충분하다\"\nChatGPT Pro $200은 \"사기당한 느낌\"이 컨센서스예요\n\n---\n\n[5/8]\n지금 놓치면 안 되는 거 하나\n\nOpenAI가 한시적 2x 프로모션 중이에요\nPlus/Pro/Business 전부 Codex 한도 2배\nFree/Go도 Codex 무료 체험 가능\n\n즉 지금 Plus $20이면:\nCodex 90~450 로컬 메시지/5h (원래의 2배)\n프로모션 끝나면 원래대로 돌아가요\n\n양쪽 다 한도 초과 시 추가 결제 가능:\n- Claude: Extra Usage (API 요금, 선불 충전)\n- OpenAI: 크레딧 구매 (~5크레딧/메시지)\n\n\"구독만으로 충분\"하진 않다는 걸\n양쪽 다 공식적으로 인정하고 있는 거예요\n\n---\n\n[6/8]\nCodex 5.3 실사용 코딩 후기를 모아봤어요\n써본 사람들 평가가 극과 극이에요\n\n\"1주 PR 28개, 26개 머지. 역대 최고\" (xXSLAYERXx)\n\"Claude Code 유저였는데 Codex 점점 더 씀. 95% 해결\" (rmonvfer)\n\n반면:\n\"7개 테스트 Opus 5승 Codex 0승. 프로덕션 불가\" (Alex Carter)\n\"Codex는 Opus보다 손이 더 많이 감\" (Nathan Lambert)\n\"CAT 명령어로 파일 쓰기 버그 3~4개월째 미해결\"\n\n벤치마크는 Codex 우세 (Terminal-Bench 77.3%)\n실사용 프로덕션은 Opus 선호가 다수예요\n\n---\n\n[7/8]\n갈아타는 이유가 재밌어요\n\nCodex → Claude Code:\n\"무통보 한도 축소에 질렸다\" (r.s)\n\"Pro $200 32요청 소진. Plus 10개가 나을 듯\" (georgezip)\n\nClaude → Codex:\n\"xhigh에서도 빠르고 95% 해결. 비중 늘리는 중\" (rmonvfer)\n\n제 경험:\n어려운 건 Codex, 나머지는 Opus\n이 조합이 제일 효율적이에요\n\n구독 피로도 현실:\nChatGPT + Claude + Gemini + Perplexity + Grok\n= 월 $110, 연간 $1,320\n한 모델에 올인보다 조합이 답이에요\n\n---\n\n[8/8]\n정리하면요\n\n$20 구간:\n둘 다 하루종일 코딩엔 부족\nClaude = 코드 품질 + $100 중간 플랜\nChatGPT = 지금 2x 프로모션 + Go $8 진입\n\n$200 구간:\nClaude Max = \"안 끊김\" 만족도 높음\nChatGPT Pro = 불만 다수 (32요청 소진 사례)\n\n숨겨진 변수:\nClaude 캐시 토큰이 rate limit 미포함\nCodex 2x 프로모션은 한시적\n\n최적 전략:\n1. 지금 Codex 2x 프로모션으로 무료/Plus 체험\n2. 메인은 Claude Pro $20\n3. 자주 끊기면 Max $100 업그레이드\n4. 둘 다 쓰면 월 $40로 대부분 커버\n\n어떤 조합으로 쓰고 계신지 알려주세요",
       "media": [],
-      "url": "https://www.threads.net/@nomadlabs_cozac/post/DUkQqFADq1p",
+      "url": "https://www.threads.com/@nomadlabs_cozac/post/DUkQqFADq1p",
       "created_at": "2026-02-10 15:00:47",
       "date": "2026-02-10",
       "crawled_at": "2026-02-12T19:04:22.186",
@@ -1459,7 +1459,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/616517537_3376666982489413_8030610283384178260_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDM5OC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QFDYVMxwdirmuZV6tk44XV6vfRLVDxaptuR24bdfCeLbibdceQECX1s-PiC9lPDezQ&_nc_ohc=Z8wWDMTSmxwQ7kNvwHCXR62&_nc_gid=UIp7te8_EYjsGgxNGflibg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxMjQyMjUzOTE4OTAxMjQ3NQ%3D%3D.3-ccb7-5&oh=00_Aftlnrr1RkhH9ISrEihNb7fGPXY8eI7nyqiiG4r8YMKBBw&oe=699AE721&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@choi.openai/post/DTochmuDcf7",
+      "url": "https://www.threads.com/@choi.openai/post/DTochmuDcf7",
       "created_at": "2026-01-18 09:30:04",
       "date": "2026-01-18",
       "crawled_at": "2026-02-12T19:04:25.225",
@@ -1485,7 +1485,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/598883385_25484821567814239_2110960262520777798_n.png?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6ImFkc19pbWFnZSJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QG4mmgE5J0qiEFBYXffVlGKML_WamEwZ2JU3Wiz34WXQf1eWAIK2sdkypKflHVc114&_nc_ohc=zsjmz_REgmMQ7kNvwHlraCO&_nc_gid=BqM49ayXfGEIsGxC215W3w&edm=APs17CUBAAAA&ccb=7-5&oh=00_AfveFmU6zapt3-j34LkrCns8fV9Z4vuvxic-tv3dSJj94Q&oe=699ADFC5&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@oz_coding_school/post/DSY0BmkgIFX",
+      "url": "https://www.threads.com/@oz_coding_school/post/DSY0BmkgIFX",
       "created_at": "2025-12-18 11:16:10",
       "date": "2025-12-18",
       "crawled_at": "2026-02-12T19:04:25.226",
@@ -1511,7 +1511,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/631102255_17853073257667745_9041895180381570440_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNTk5eDQzMi5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QFweD5UtVpTmWAEwzSyLwoFCuC9DKZT0dmP7BacweywehR066h8kNhZZcvTdrHLkf8&_nc_ohc=igBHZ4p-RywQ7kNvwFB4sw9&_nc_gid=zPdSXoH5O6xxj56nCV4Z5Q&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyODAzOTkyMzU1NjEzMjE4Ng%3D%3D.3-ccb7-5&oh=00_AfvkhR09EZRY8Xc5aLy_DjVdLtBdZ_sJbvyY_cLTKbi0uQ&oe=699B0502&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@eggtoastlab/post/DUf7gdVk6Va",
+      "url": "https://www.threads.com/@eggtoastlab/post/DUf7gdVk6Va",
       "created_at": "2026-02-08 22:39:01",
       "date": "2026-02-08",
       "crawled_at": "2026-02-12T19:04:25.226",
@@ -1535,7 +1535,7 @@
       "display_name": "baksagimm",
       "full_text": "바이브 코딩만으로 실제로 서비스 되고있는 제품 링크 공유 가능하신 분 있나요? 아직 한개도 본적이 없어서 궁금해서 그래요.",
       "media": [],
-      "url": "https://www.threads.net/@baksagimm/post/DUfG1QkkXJt",
+      "url": "https://www.threads.com/@baksagimm/post/DUfG1QkkXJt",
       "created_at": "2026-02-08 14:58:44",
       "date": "2026-02-08",
       "crawled_at": "2026-02-12T19:04:25.226",
@@ -1557,7 +1557,7 @@
       "display_name": "yc_melan",
       "full_text": "AI 시대 바이브코딩이 가져올 개발자의 미래\n문득 현재 작곡가들의 변천사와 너무 닮았다는 생각이 들었다.\n\n과거 클래식 작곡가는 화성학, 대위법, 오케스트레이션을 깊이 알아야 했고 악기도 하나 이상 다룰 줄 알아야 했다. 악보를 읽을 줄 모르면 작곡 자체가 불가능했다.\n과거 개발자도 마찬가지였다. 메모리 관리, 어셈블리, OS 내부 구조를 직접 다뤄야 했고 코드를 한 줄 한 줄 직접 쓸 줄 알아야만 소프트웨어를 만들 수 있었다. 진입장벽이 곧 전문성이었다.\n\n---\n\n밴드 시대 작곡가는 악기 파트가 줄었지만 기타, 베이스, 드럼의 조화를 이해해야 했고 작사가·편곡자와 협업하는 구조였다.\n지금의 풀스택 개발자도 프론트, 백엔드, DB, 인프라를 다룰 줄 알아야 하고 디자이너·PM과 역할이 명확히 나뉜 팀 단위로 일한다. \"코드를 잘 치는 사람\"이 좋은 개발자의 기준이었다.\n\n그런데 지금 음악 시장은? 소위 말하는 프로듀서가 주류다.\n악보를 직접 쓰는 게 아니라 DAW로 비트를 찍고 샘플을 조합하고 전체 방향을 디렉팅한다. 악기를 못 다뤄도 되고 화성학을 몰라도 된다. 중요한 건 \"어떤 소리를 만들고 싶은가\"라는 비전이지 악기 테크닉이 아니다.\n\n---\n\n바이브코딩 시대의 개발자도 똑같아질 거라고 본다.\n코드를 직접 치는 게 핵심이 아니라 AI 에이전트를 오케스트레이션해서 \"어떤 제품을 만들 것인가\"를 디렉팅하는 역할. 프로듀서가 보컬에게 \"여기서 좀 더 감성적으로\"라고 디렉션을 주듯 개발자도 AI에게 방향을 잡아주는 것이다.\n\n싱어송라이터가 직접 작곡하고 부르듯이 결국 서비스 개발자가 직접 자기 서비스를 만드는 시대가 온다.\n과거엔 \"전략가\"와 \"개발자\"가 따로 있어야 했지만 이제는 아이디어를 가진 사람이 직접 만든다. 그사람이 개발자 이자 전략가 이다.\n\n---\n\n다만 음악에서도 살아남은 프로듀서들의 공통점이 있다. DAW를 잘 다루는 사람이 아니라 음악 자체에 대한 깊은 이해와 취향이 있는 사람이다.\n\n개발도 마찬가지일 거다. 바이브코딩 도구를 잘 쓰는 것만으로는 차별화가 안 된다. \"무엇을 왜 만드는가\"에 대한 제품 감각, 그리고 AI가 뱉은 결과물의 품질을 판단할 수 있는 기술적 안목. 음악처럼 이 컴퓨터 과학과 네트워킹 기술자체에 대한 깊은 이해와 취향이 있어야 한다. 그게 디렉팅 능력이 본질이다.\n\n---\n\n그리고 완벽하게 나온다는 작곡쪽 AI에서도 아직은 아직 좀 먼 미래의 얘기긴 하지만.. \nSuno에 \"슬픈 발라드 만들어줘\"라고 해도 곡은 정말 사람처럼 좋게 나온다. 하지만 \"비 오는 새벽 3시에 혼자 모짜르트 생각하면서 술 마시면서 듣는 느낌\"이라고 하면 결과물이 완전히 달라진다. 그 프롬프트를 쓸 수 있는 건 그 감정과 분위기를 아는 사람뿐이다.\n바이브코딩도 같다. 로그인 만들어줘와 \"사용자가 불안하지 않게 자연스럽게 흘러가는 온보딩 설계해서 JWT 리리프레시 토큰 형식으로 짜줘 UX는 최대한 미니멀하게 귀찮지 않게\"는 전혀 다른 결과물을 만든다. 그리고 인간의 욕구는 끝이 없기에 차별화를 두기 위해서 이것보다 더 \"어떤 분위기로 만들어줘\" 라는 요구가 잉여력이 떨어질때까지 계속될것이다.\n\n---\n\n결국 AI가 아무리 발전해도 \"어떤 방향으로\"라는 디렉팅은 사람의 영역이다.\n프로듀서가 사라지는 게 아니라 프로듀서의 정의가 바뀌는 것이다. 악기를 연주하는 사람에서 방향을 잡아주는 사람으로. 개발자도 코드를 치는 사람에서 코드와 제품의 깊은이해를 통해 방향을 디렉팅하는 사람으로.\n남는 건 통찰, 취향, 감각, 그리고 \"이게 맞아\"라고 판단할 수 있는 안목. 이건 인풋이 있는 AI는 대체 못 한다.",
       "media": [],
-      "url": "https://www.threads.net/@yc_melan/post/DUfZZGdE71B",
+      "url": "https://www.threads.com/@yc_melan/post/DUfZZGdE71B",
       "created_at": "2026-02-08 17:40:55",
       "date": "2026-02-08",
       "crawled_at": "2026-02-12T19:04:28.288",
@@ -1578,7 +1578,7 @@
       "display_name": "FlipKim",
       "full_text": "바이브코딩 시대의 개발자도 똑같아질 거라고 본다.\n코드를 직접 치는 게 핵심이 아니라 AI 에이전트를 오케스트레이션해서 \"어떤 제품을 만들 것인가\"를 디렉팅하는 역할. 프로듀서가 보컬에게 \"여기서 좀 더 감성적으로\"라고 디렉션을 주듯 개발자도 AI에게 방향을 잡아주는 것이다.\n\n싱어송라이터가 직접 작곡하고 부르듯이 결국 서비스 개발자가 직접 자기 서비스를 만드는 시대가 온다.\n과거엔 \"전략가\"와 \"개발자\"가 따로 있어야 했지만 이제는 아이디어를 가진 사람이 직접 만든다. 그사람이 개발자 이자 전략가 이다.",
       "media": [],
-      "url": "https://www.threads.net/@yc_melan/post/DUfZZ8Wk5K_",
+      "url": "https://www.threads.com/@yc_melan/post/DUfZZ8Wk5K_",
       "created_at": "2026-02-08 17:41:02",
       "date": "2026-02-08",
       "crawled_at": "2026-02-12T19:04:28.290",
@@ -1604,7 +1604,7 @@
       "display_name": "Builder | AppCaster",
       "full_text": "넵 playwright install —skills 까지 하셔서 skills 설치후 자연어로 시키시면 됩니다 !",
       "media": [],
-      "url": "https://www.threads.net/@appcast/post/DUiW8Uekmf0",
+      "url": "https://www.threads.com/@appcast/post/DUiW8Uekmf0",
       "created_at": "2026-02-09 21:17:14",
       "date": "2026-02-09",
       "crawled_at": "2026-02-12T19:04:28.290",
@@ -1633,7 +1633,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/626297980_17940845619116278_5381979102222336265_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTA3Mng1NTMuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QF4l4WnNoXM0uoRpfj5Tc702EBo5f3iFcpYSsxealjeAIotWcJIF2I-Dc5-4x6gAQk&_nc_ohc=PJXD2Kvnp-MQ7kNvwGvplRT&_nc_gid=2toDFmda1y5xg3oq-lrTrg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyODY4NDU3Mjc1NDg4ODE2Nw%3D%3D.3-ccb7-5&oh=00_AfvUY7ogDuBn7cwcHQsqGKw-nu7qJP4HxFYUWpMQck-lbA&oe=699AEBEA&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@appcast/post/DUiOFVsEsXn",
+      "url": "https://www.threads.com/@appcast/post/DUiOFVsEsXn",
       "created_at": "2026-02-09 19:59:49",
       "date": "2026-02-09",
       "crawled_at": "2026-02-12T19:04:28.290",
@@ -1659,7 +1659,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/632079306_17942525157112832_5552770945888717043_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTE1OHgxNDgyLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHes8POmXr5fcUiImDCjRGSYkfhehqX7HHb00LeceMHgwByQQyhWI2Jdn_8JzknQ5A&_nc_ohc=HTlcCHF30u8Q7kNvwFuL-3T&_nc_gid=FuBVJlN3OHVwMCwnn6xYBw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyODMyMjMxNjkyNTI5MjA5OA%3D%3D.3-ccb7-5&oh=00_Aft9mAELDbmq-id4aUFMjjwWCPP2EYcBa08eNewKJpy3iw&oe=699AF30E&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@choi.openai/post/DUg7t0qCE5C",
+      "url": "https://www.threads.com/@choi.openai/post/DUg7t0qCE5C",
       "created_at": "2026-02-09 08:00:05",
       "date": "2026-02-09",
       "crawled_at": "2026-02-12T19:04:31.353",
@@ -1683,7 +1683,7 @@
       "display_name": "bellman.pub",
       "full_text": "🚀 oh-my-claudecode v4.0.0 릴리즈\n\n드디어 Claude Code에서 Codex + Gemini 동시 사용 가능!\n\n✨ 각 모델이 잘하는 걸 맡김:\n• Codex → 코드 리뷰, 플래닝, 분석\n• Gemini → 디자인, 글쓰기, 비전\n• Claude → 오케스트레이션\n\n이제 @yeon.gyu.kim 의 OmO 부러워하지 마세요\n전부 공식 cli를 콜하는 mcp니까, 밴과 ToS 위반도 두려워하지 마세요\n\n이제 가난에 허덕이지 마세요\n20불짜리 각 한개씩만 구독하세요.\nhttps://github.com/Yeachan-Heo/oh-my-claudecode",
       "media": [],
-      "url": "https://www.threads.net/@bellman.pub/post/DUX8tp_EvRN",
+      "url": "https://www.threads.com/@bellman.pub/post/DUX8tp_EvRN",
       "created_at": "2026-02-05 20:15:38",
       "date": "2026-02-05",
       "crawled_at": "2026-02-12T19:04:31.353",
@@ -1707,7 +1707,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/627661158_17893452990406917_6374298405845732879_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTIzMXg4NTQuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QFZ54WY_sjEnq0QZDdNkLGJpbrqi3rx9cf27gabtMf07WJSK58LgWsf7C6oN9KBwLU&_nc_ohc=EYQ1Ur0N_9UQ7kNvwHEKJLk&_nc_gid=Q2APa-mb1P_dIJ6Kizjw5Q&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyNjEzODYxMzkxMTAyOTk5Mg%3D%3D.3-ccb7-5&oh=00_Afu8EdpWr21f4mrkY3msEXY1zKZgWJB1gw-SagH_O6blTQ&oe=699AFC1E&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@specal1849/post/DUZLMwvkojo",
+      "url": "https://www.threads.com/@specal1849/post/DUZLMwvkojo",
       "created_at": "2026-02-06 07:41:27",
       "date": "2026-02-06",
       "crawled_at": "2026-02-12T19:04:31.354",
@@ -1733,7 +1733,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/626758539_17846285301682596_6608512263687030938_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTgyOHgyNTIuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QGZ5N48EJMMNHrvnaQfVDxZAm_jWDPNdQwqXcOT8YcDRTmGsL18DocLsQ2o8J6l4Ok&_nc_ohc=8_K0wAS2cUgQ7kNvwHjSUGb&_nc_gid=xcxu8osIxxbHqmDvbvX-qQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyNTMyNTMwOTIyMzQ0OTg0Nw%3D%3D.3-ccb7-5&oh=00_AfuC9r5JrDuK1T0amRys9pbZKjX7xFYIHSuMo0sXrtN6Ww&oe=699B041D&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@gaebalsaybal/post/DUWSRnukzT3",
+      "url": "https://www.threads.com/@gaebalsaybal/post/DUWSRnukzT3",
       "created_at": "2026-02-05 04:45:34",
       "date": "2026-02-05",
       "crawled_at": "2026-02-12T19:04:31.355",
@@ -1757,7 +1757,7 @@
       "display_name": "jun6_cat",
       "full_text": "소신발언 하자면 코딩 초보자를 위한 바이브코딩 추천 언어와 프레임워크로 Ruby on Rails 8버전이 최고임.\n\nNext.js는 진짜 비추천 한다.\n\nReact랑 Next.js는 버전 업데이트가 빠른데 그때마다 패러다임이 너무 많이 바뀌어서 하위호환성이 너무 떨어짐. 그래서 최신버전을 다룰때는 AI가 기대만큼 엄청 잘하진 못함.\n\n그리고 React와 Typescript 특유의 장황하고 지저분한 코드는 한번 꼬이면 답도 없다.",
       "media": [],
-      "url": "https://www.threads.net/@jun6_cat/post/DUW_dl0Eg8K",
+      "url": "https://www.threads.com/@jun6_cat/post/DUW_dl0Eg8K",
       "created_at": "2026-02-05 11:20:25",
       "date": "2026-02-05",
       "crawled_at": "2026-02-12T19:04:34.398",
@@ -1779,7 +1779,7 @@
       "display_name": "kkongdon_story",
       "full_text": "더 퍼스트 3기에서 진행하는\n공저책 프로젝트에 참여하게 됐어.\n\n우리 조는 럭키세븐, 7조야.\n여기서는 '결핍'에 관해 에세이를 쓸거야.\n\n다들 결핍을 어떻게 극복 했는지.\n또 나의 결핍이 무엇인지 궁금하지 않아?",
       "media": [],
-      "url": "https://www.threads.net/@kkongdon_story/post/DT_1J1ukXjz",
+      "url": "https://www.threads.com/@kkongdon_story/post/DT_1J1ukXjz",
       "created_at": "2026-01-27 11:27:48",
       "date": "2026-01-27",
       "crawled_at": "2026-02-12T19:04:34.398",
@@ -1801,7 +1801,7 @@
       "display_name": "kkongdon_story",
       "full_text": "이세돌이 이긴 것은 계산 능력이\n알파고보다 더 뛰어나서가 아니다.\n오히려 계산을 거부했기 때문이다.\n\nAI는 확률 높은 정답만을 쫓도록 설계되어 있다.\n그 견고한 성을 무너뜨린 것은 정답이 아니라,\n인간만이 할 수 있는 파격과 직관이었다.\n- AI 불변의 법칙(가제) 원고 일부",
       "media": [],
-      "url": "https://www.threads.net/@kkongdon_story/post/DUAixXHkcOq",
+      "url": "https://www.threads.com/@kkongdon_story/post/DUAixXHkcOq",
       "created_at": "2026-01-27 18:06:25",
       "date": "2026-01-27",
       "crawled_at": "2026-02-12T19:04:34.399",
@@ -1823,7 +1823,7 @@
       "display_name": "kkongdon_story",
       "full_text": "북크북크님에게 퇴고 수업을 받고 왔어.\n북크님은 AI에 대한 지식과 통찰이 뛰어나셔서\n나의 원고 내용과 맥락을 정확히 이해하셔.\n\n편집자들은 이 많은 지식을\n어떻게 다 가지고 있는지 모르겠어.\n\n북크님의 통찰이 궁금하다면\n독기의 힘에 참여해봐.\n\n---\n\n@bookk_bookk1",
       "media": [],
-      "url": "https://www.threads.net/@kkongdon_story/post/DUA_fBqESd6",
+      "url": "https://www.threads.com/@kkongdon_story/post/DUA_fBqESd6",
       "created_at": "2026-01-27 22:17:19",
       "date": "2026-01-27",
       "crawled_at": "2026-02-12T19:04:34.399",
@@ -1845,7 +1845,7 @@
       "display_name": "kkongdon_story",
       "full_text": "스레드에 방향성을 못 잡겠다면\n\n1. 내가 가장 재미있는 것을 주제로\n2. 해당 주제에 팔로워가 많은 계정을 검색\n3. 글의 구조를 보고 변주해 보기\n4. 내가 해당 주제로 사람들에게 줄 수 있는 콘텐츠 개발\n5. 사람들이 나보고 잘한다고 칭찬하는 것을 공략.\n\n이 순서대로 해 봐.\n나도 아직 못하지만.",
       "media": [],
-      "url": "https://www.threads.net/@kkongdon_story/post/DUCm2nZkRcW",
+      "url": "https://www.threads.com/@kkongdon_story/post/DUCm2nZkRcW",
       "created_at": "2026-01-28 13:20:34",
       "date": "2026-01-28",
       "crawled_at": "2026-02-12T19:04:37.523",
@@ -1867,7 +1867,7 @@
       "display_name": "kkongdon_story",
       "full_text": "나를 나타내는 동사 하나를 찾자.\n\n기록한다, 연결한다, 관찰한다,\n가르친다, 설명한다 등\n\n나를 힘들게 설명 말고\n행동으로 보이게 하자.",
       "media": [],
-      "url": "https://www.threads.net/@kkongdon_story/post/DUFTraLkVOW",
+      "url": "https://www.threads.com/@kkongdon_story/post/DUFTraLkVOW",
       "created_at": "2026-01-29 14:30:44",
       "date": "2026-01-29",
       "crawled_at": "2026-02-12T19:04:37.523",
@@ -1888,7 +1888,7 @@
       "display_name": "꽁돈, AI와 사고하는 글쟁이",
       "full_text": "제발 AI에게 “마케팅 관점에서\n내 스레드 글을 평가해줘”\n라고 말하지 마세요.\n\n내 스레드 글이 마케팅적으로\n매력적인지 판단하려면\n프롬프트 안에 아래 7가지 단어가\n반드시 들어가야 합니다.\n\n1. 소구점\n2. 훅\n3. 인지 부하\n4. 심리 트리거 사용 여부\n5. 앵커링\n6. 이탈 지점\n7. CTA 구조\n\n이 단어가 없으면 뻔한 답이 나옵니다.\n프롬프트는 올려둘게요.\n무료 프롬프트 정보를 얻고 싶다면\n저와 함께하시면 됩니다.",
       "media": [],
-      "url": "https://www.threads.net/@kkongdon_story/post/DUFb5JKkajY",
+      "url": "https://www.threads.com/@kkongdon_story/post/DUFb5JKkajY",
       "created_at": "2026-01-29 15:42:31",
       "date": "2026-01-29",
       "crawled_at": "2026-02-12T19:04:37.524",
@@ -1916,7 +1916,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/624345589_17884260873441258_6361180417090591962_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uNTcyeDEwMjQuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QHEuWuW3gn_-43xC7krmkHwNVYbM5AJZvJPfwY96fl1R9vzPcg1PPFlMzqqbxQMjw0&_nc_ohc=EhdmAZ8nDWsQ7kNvwGD7WOH&_nc_gid=BzeBVXREHXlHVZWdP4YVOQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMDc4MDE2MjEyOTEzNzExNw%3D%3D.3-ccb7-5&oh=00_AftVvXl3G6D3Jjg5LGoCP_lp9el_OPlS6L3bqcMtqKhvjw&oe=699B0A80&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@kkongdon_story/post/DUGI1HGEdVp",
+      "url": "https://www.threads.com/@kkongdon_story/post/DUGI1HGEdVp",
       "created_at": "2026-01-29 22:15:11",
       "date": "2026-01-29",
       "crawled_at": "2026-02-12T19:04:37.524",
@@ -1942,7 +1942,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/622940846_17884287264441258_9011036953818217118_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uNjMweDMxMC5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QGM-AJDSg1dJ0llRVZlFj3mobU-WwHpWoERCsqIyWSGJ5DPAdyvZgH9nMRlF8q6cnA&_nc_ohc=1b2S1a6AEu8Q7kNvwEt3-1o&_nc_gid=jT4QZZX31ZO9IV30cRFvDg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMDg4NTcxOTgwMDU3MzU3Nw%3D%3D.3-ccb7-5&oh=00_AfsI1MdVFEYawpRS94NzHRRG52E62hyHFsZqsxwDRnyn5Q&oe=699ADDA7&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@kkongdon_story/post/DUGg1KXk4gy",
+      "url": "https://www.threads.com/@kkongdon_story/post/DUGg1KXk4gy",
       "created_at": "2026-01-30 01:44:54",
       "date": "2026-01-30",
       "crawled_at": "2026-02-12T19:04:40.581",
@@ -1968,7 +1968,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/623146765_17884330578441258_7092479068109338509_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNzE4eDQ5OS5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QFlfwzQLnwJTcDhSjcY4_SQUmemsp05fMPu5ivkK9sa8edoe4B4u8ligF1Qb_C8ng0&_nc_ohc=Ds4bPt5RHEUQ7kNvwGfjvJo&_nc_gid=EAUuEpNVqgDFA2GO9YQw8Q&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMTE2MzEzMTQ0NDQ3MjYwNg%3D%3D.3-ccb7-5&oh=00_AfvoMSqB5aHMmni9RyjQ4FCjknvIAn58ei2p5x4EMmgTaQ&oe=699AEB0C&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@kkongdon_story/post/DUHf59mkSse",
+      "url": "https://www.threads.com/@kkongdon_story/post/DUHf59mkSse",
       "created_at": "2026-01-30 10:56:03",
       "date": "2026-01-30",
       "crawled_at": "2026-02-12T19:04:40.582",
@@ -1994,7 +1994,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/625813942_17884614105441258_4788473965854744_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uNzQ0eDQ5My5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QE02eeHyaS-mqIPtdWLhE62Vx---FMQPdI64l6hMrJIuVaBO10DKDXILfZkUn-ry8g&_nc_ohc=dhQuF9XQeVEQ7kNvwFD0y87&_nc_gid=-XqdOO4DdzILrJXTsEOVhg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMjc5OTI5NDc4MTUzNzY2NQ%3D%3D.3-ccb7-5&oh=00_AftILeipZhNOa0EIcLrZdFCaV7LK5sYdRAjCUpjlsg9I0w&oe=699B02F9&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@kkongdon_story/post/DUNT7XGkSuk",
+      "url": "https://www.threads.com/@kkongdon_story/post/DUNT7XGkSuk",
       "created_at": "2026-02-01 17:06:50",
       "date": "2026-02-01",
       "crawled_at": "2026-02-12T19:04:40.582",
@@ -2018,7 +2018,7 @@
       "display_name": "kkongdon_story",
       "full_text": "스레드 전문가 빌리쌤이 말했어요.\n\n팔로워 0~5K 구간은 많이 쓰기,\n5K~10K는 브랜드에 맞는 글 쓰기,\n10K 이상은 나만의 시스템 만들기라고요.\n\n스레드는 빌리쌤과 함께,\nAI는 꽁돈과 함께해요.\n\n---\n\n@billy___ssam",
       "media": [],
-      "url": "https://www.threads.net/@kkongdon_story/post/DUS7HjJkcC_",
+      "url": "https://www.threads.com/@kkongdon_story/post/DUS7HjJkcC_",
       "created_at": "2026-02-03 21:25:29",
       "date": "2026-02-03",
       "crawled_at": "2026-02-12T19:04:40.582",
@@ -2040,7 +2040,7 @@
       "display_name": "kkongdon_story",
       "full_text": "내가 아는 최고의 지식을 공유하세요.\n\n“이건 나만 알고 싶어.”\n“고급 스킬이라 공유하기 싫어.”\n“다른 사람이 더 잘 쓰면 어떡해.”\n\n이런 생각을 가지면\n평생 성장할 수 없습니다.\n\n내가 아는 모든 것을 공개하세요.\n거침없이 공유하고,\n의견을 흡수하세요.\n\n그 과정에서\n다음 단계가 보일 겁니다.\n저의 AI 강의 지론이기도 합니다.",
       "media": [],
-      "url": "https://www.threads.net/@kkongdon_story/post/DUVYJLxEct1",
+      "url": "https://www.threads.com/@kkongdon_story/post/DUVYJLxEct1",
       "created_at": "2026-02-04 20:17:36",
       "date": "2026-02-04",
       "crawled_at": "2026-02-12T19:04:43.625",
@@ -2061,7 +2061,7 @@
       "display_name": "okkkkxx",
       "full_text": "cot에 이렇게 소름 돋으셨으면, tot 보시면 소오름 돋으실듯\nhttps://www.promptingguide.ai/techniques/tot",
       "media": [],
-      "url": "https://www.threads.net/@ok_min87/post/DUWpQzlE5cF",
+      "url": "https://www.threads.com/@ok_min87/post/DUWpQzlE5cF",
       "created_at": "2026-02-05 08:06:26",
       "date": "2026-02-05",
       "crawled_at": "2026-02-12T19:04:43.626",
@@ -2087,7 +2087,7 @@
       "display_name": "slowsoyang",
       "full_text": "스레드야, 나를 AI에 막 발 들인 \n4060세대 친구들에게 데려다줘~~! 🚀😄\n\n오프애선 교육현장에서 많이 뵙지만\n스레드에서는 많이 못 만난 것 같아요. \n\n그동안 올린 바이브코딩을 스레드가 오해한 건가? \n누구나 쉽게 배우는 AI교육을 준비 중이거든요.\n\n이 글 보이는 4060분들, \n좋아요로 “관심 있어!” 신호를 부탁드려요!\n제가 진짜 만나고 싶은 분들입니다.\n\n저의 알고리즘 테스트, 도와주세요!🫡\n\n#4060AI입문 #AI활용팁 #천천히차근차근AI",
       "media": [],
-      "url": "https://www.threads.net/@slowsoyang/post/DUQhPMGiQqJ",
+      "url": "https://www.threads.com/@slowsoyang/post/DUQhPMGiQqJ",
       "created_at": "2026-02-02 23:00:51",
       "date": "2026-02-02",
       "crawled_at": "2026-02-12T19:04:43.626",
@@ -2111,7 +2111,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/627053256_17915582148278023_967130450022236592_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uOTcyeDUzMy5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QEVZUromjyx4Q4BGZa7c7kKThDGfdli9R-wAlWJMaumDvSmiNusP7aoaYThTZKt-ZY&_nc_ohc=tQAlz1akAcwQ7kNvwEwKg4g&_nc_gid=q9WwvkUuKCagOSUnzBC8mQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyNTM3MDMxNDc4NDg1MjU0OA%3D%3D.3-ccb7-5&oh=00_Afvf3Rcpwm-3Tky-UVP1_PJvcD7oQPwLE7_Z699Cyug22w&oe=699AEC06&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@irijeri.gungli/post/DUWcgibE0pE",
+      "url": "https://www.threads.com/@irijeri.gungli/post/DUWcgibE0pE",
       "created_at": "2026-02-05 06:14:59",
       "date": "2026-02-05",
       "crawled_at": "2026-02-12T19:04:43.626",
@@ -2137,7 +2137,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/626444141_899490242467992_1238949212519478640_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDM2MC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QHVQ8bCTA0PJ3NbKYuoUI_x4LfbqawYtZlVDoa0Q0Z11HVxcFjmWNUU5U9W_t9w620&_nc_ohc=p2mpujS_XUsQ7kNvwFl3FET&_nc_gid=xWT9dRxGbyoYyMaOqj7YzQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyNTQzNTc5ODgyNTIyODAyOQ%3D%3D.3-ccb7-5&oh=00_Afva5XrFIJsoj6nbWEIQX1Ukmzz5ieW1nTZ2cwuby2C-3g&oe=699AE3D5&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@aicoffeechat/post/DUWrZdMClb9",
+      "url": "https://www.threads.com/@aicoffeechat/post/DUWrZdMClb9",
       "created_at": "2026-02-05 08:39:15",
       "date": "2026-02-05",
       "crawled_at": "2026-02-12T19:04:46.672",
@@ -2160,7 +2160,7 @@
       "display_name": "리드",
       "full_text": "와 스케줄에 따라 프롬프트 실행해주는거 완전 맛도리네요",
       "media": [],
-      "url": "https://www.threads.net/@read_1p/post/DUTUR80iZ_4",
+      "url": "https://www.threads.com/@read_1p/post/DUTUR80iZ_4",
       "created_at": "2026-02-04 01:05:22",
       "date": "2026-02-04",
       "crawled_at": "2026-02-12T19:04:46.672",
@@ -2188,7 +2188,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/627686321_17873955192507614_4053696641123199796_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTA1N3g3NzQuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QGGSI2lbP2tYfTgQpqGJOEU45dns74n5rRyTDbDH1ZbD5X0LBesPIC_QO9zG8CU00w&_nc_ohc=A2BjZTgRjm4Q7kNvwEtu-yw&_nc_gid=4qTuVHpO6PvHrswfvuwBkA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyNDQ4NDkxNjUzNzc1NTMwOA%3D%3D.3-ccb7-5&oh=00_AfuFB4bUML2fuYjpgeDGDz45S3vbhVTIE7QdfnzqlZQK9Q&oe=699AD6A6&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@keke_appa/post/DUTTMTDEoas",
+      "url": "https://www.threads.com/@keke_appa/post/DUTTMTDEoas",
       "created_at": "2026-02-04 00:55:51",
       "date": "2026-02-04",
       "crawled_at": "2026-02-12T19:04:46.673",
@@ -2212,7 +2212,7 @@
       "display_name": "inner.builder",
       "full_text": "obsidian x claudian (obsidian plugin) x notebooklm mcp 조합은 엄청나네..!\n\n지식 관리의 확장성과 아이디어 브레인스토밍의 확장성이 달라진다..",
       "media": [],
-      "url": "https://www.threads.net/@inner.builder/post/DUUBhjKgeKZ",
+      "url": "https://www.threads.com/@inner.builder/post/DUUBhjKgeKZ",
       "created_at": "2026-02-04 07:40:42",
       "date": "2026-02-04",
       "crawled_at": "2026-02-12T19:04:46.673",
@@ -2234,7 +2234,7 @@
       "display_name": "geumverse_ai",
       "full_text": "Anthropic이 Claude Cowork 에 법률,영업,마케팅,데이터 분석 등 부서별 반복 업무를 자동화하는 플러그인을 Github에 오픈소스로 공개했어요\n\n어떤 변화를 가져올지 궁금하네요\n\n---\n\nhttps://github.com/anthropics/knowledge-work-plugins",
       "media": [],
-      "url": "https://www.threads.net/@geumverse_ai/post/DUUYhntk4Ey",
+      "url": "https://www.threads.com/@geumverse_ai/post/DUUYhntk4Ey",
       "created_at": "2026-02-04 11:01:42",
       "date": "2026-02-04",
       "crawled_at": "2026-02-12T19:04:49.708",
@@ -2256,7 +2256,7 @@
       "display_name": "xeona.xyz",
       "full_text": "이제 코딩보다 'AI 부하직원' 관리 능력이 연봉 정함\n\n구글 클라우드에서 '2026 AI 에이전트 트렌드' 리포트 낸 거 다들 봄? \n\n200페이지 넘는 거 읽기 귀찮은 형들을 위해 엑기스만 뽑아옴.\n\n---\n\n도구(Tool)에서 동료(Teammate)로 승진함. 이제 챗봇한테 \"이거 써줘\" 하는 시대 끝남. 목표만 던져주면 지들이 알아서 계획 짜고 실행하는 '에이전트'가 기본값임.\n\n---\n\n모든 직원이 'AI 매니저'가 됨. 직접 일하는 사람보다, 에이전트 5~6명(?) 데리고 워크플로우 오케스트레이션(지휘) 하는 사람이 찐 능력자 대우받음. 이제 면접에서 \"프롬프트 좀 깎나요?\"가 아니라 \"어떤 에이전트 조합으로 성과 냈나요?\" 물어볼 듯.\n\n---\n\n모델 싸움 끝, 워크플로우 싸움 시작. GPT-5냐 클로드 4냐 의미 없음. 어차피 모델은 다 똑똑함. 핵심은 이놈들을 어떻게 잘 연결할거냐임.\n\n---\n\n내 생각: 이제 \"나 코딩 좀 함\"보다 \"나 에이전트 좀 부림\"이 더 무서운 스펙이 될 거임. 근데 내 에이전트는 왜 아직도 ...ㅠㅠㅠ 또르르\n\n레포트 링크는 아래!\n\n---\n\nhttps://cloud.google.com/resources/content/ai-agent-trends-2026",
       "media": [],
-      "url": "https://www.threads.net/@xeona.xyz/post/DUVOj-xAVR3",
+      "url": "https://www.threads.com/@xeona.xyz/post/DUVOj-xAVR3",
       "created_at": "2026-02-04 18:53:53",
       "date": "2026-02-04",
       "crawled_at": "2026-02-12T19:04:49.708",
@@ -2279,7 +2279,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/626957428_17893702614406543_1703993013034577403_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTAyNHgxNTM2LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QGI_i59y3GPhRsiVNLcjlnYorKM78E1KdoazoBcIWaWri-D1PhaG28-m_i6X0p-QN0&_nc_ohc=o_FEasOU3J8Q7kNvwFCp5Ih&_nc_gid=P_n3tSuYNZ9Kv9BHVJZWag&edm=AI6eXeABAAAA&ccb=7-5&ig_cache_key=MzgyNDc1MTU1NTAxOTc4MzM1Ng%3D%3D.3-ccb7-5&oh=00_AfsgqQrI-wVttKoGdezdxvXUbdOgMf1Zy8OLOXeAg8AuYw&oe=699AE08D&_nc_sid=6efbad"
       ],
-      "url": "https://www.threads.net/@visn__ai/post/DUUP0ZfE7y8",
+      "url": "https://www.threads.com/@visn__ai/post/DUUP0ZfE7y8",
       "created_at": "2026-02-04 09:45:37",
       "date": "2026-02-04",
       "crawled_at": "2026-02-12T19:04:49.709",
@@ -2308,7 +2308,7 @@
       "display_name": "easygpt2526",
       "full_text": "이제 PPT로 인한 스트레스는 끝이다.\n\n이제는 Gemini가 5분 만에 \n전체 발표 자료를 만들어준다.\n빈 슬라이드부터 완성본까지.\n\n아래 7개의 프롬프트면 A부터 Z까지 전부 끝난다.\n\n---\n\n1.\t주제 & 구조 설계\n\n“주제: [입력]. 대상: [학생/임원/투자자 등].\n인트로 → 3~4개의 주요 섹션 → 사례 → 결론까지\n총 10장의 슬라이드 흐름을 설계해줘.”\n\n---\n\n2.\t슬라이드 내용 작성\n\n“아래는 내가 만든 개요야: [붙여넣기].\n각 슬라이드별로 핵심 불릿 내용을 최대 5줄 이내의 간결한 문장으로 작성해줘.”\n\n---\n\n3.\t디자인 방향 제시\n\n“테마: [모던/미니멀/기업형 등].\n각 슬라이드에 어울리는 제목, 배경 컬러, 간단한 디자인 아이디어를 제안해줘.”\n\n---\n\n4.\t비주얼 & 그래픽 추천\n\n“이 슬라이드 내용 기반으로: [붙여넣기].\n각 슬라이드에 어울릴 아이콘, 이미지, 간단한 다이어그램 등을 추천해줘.\n무료로 사용할 수 있는 자료나 직접 만드는 방법도 설명해줘.”\n\n---\n\n5.\t발표자 노트 작성\n\n“슬라이드 내용은 이거야: [붙여넣기].\n각 슬라이드에 대해 1~2문장으로, 불릿을 자연스럽게 확장해주는 발표자 노트를 작성해줘.”\n\n---\n\n6.\t청중 참여 요소 추가\n\n“이 발표 자료에 넣을 만한 참여형 요소 3개(예: 간단한 질문, 짧은 사례, 미니 활동)를 제안해줘.”\n\n---\n\n7.\t최종 정리본 스크립트\n\n“전체 슬라이드 + 발표 노트를 종합해서\n내가 발표 전에 연습할 수 있는 깔끔한 스크립트 형태로 다시 정리해줘.\n전문적이고 자신감 있게 들리는 톤으로.”\n\n---\n\n📌 EASY GPT 무료 실시간 강의 (2026 ver)\n\n🚨강의 내용이 전면 개편 되었습니다‼️\n- 기존에 강의를 들으셨던 ‘7000명’의 분들도 무조건 다시 들으셔야 합니다.\n\n🗓 2월 24일(화) 오후 7시 30분\n\n💻AI 써보긴 했는데, \n수익으로는 안 이어졌나요?\n\n결국 핵심은 단 하나입니다.\nSNS → 상세페이지 → 판매\n\n이 흐름을\n👉 AI로 어떻게 복붙만 해서 구현하는지\n👉 실제로 돈이 되게 어떻게 연결하는지\n이번 강의에서 전부 공개합니다.\n\n정말 아무것도 모르는 분들도 따라올 수 있게\n차근차근 준비한 강의입니다.\n많은 기대 부탁드립니다.\n\n무료 강의 방 링크\n￼https://open.kakao.com/o/gs2v23ci￼",
       "media": [],
-      "url": "https://www.threads.net/@easygpt2526/post/DUUXKhGAG4-",
+      "url": "https://www.threads.com/@easygpt2526/post/DUUXKhGAG4-",
       "created_at": "2026-02-04 10:49:48",
       "date": "2026-02-04",
       "crawled_at": "2026-02-12T19:04:49.709",
@@ -2332,7 +2332,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/626179920_17884876746441258_5986182605555287236_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTA4MHgxMDgwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QF-ZtB8GDDP52HfDhW93yf6LoPqpheDWUE_VgmGFj2_31u03hsl901N5xaduCRD_SE&_nc_ohc=yRA_J3aaCJAQ7kNvwGWRKAJ&_nc_gid=5EacjZejxjrD25-XRuzRtw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyNDM2NzA4MzgzMzE0MTc4Ng%3D%3D.3-ccb7-5&oh=00_AfvDB3g_lwnoRhM4P_FPr8af4ccjXgKJE5bk0COOyhe71w&oe=699AFFE7&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@kkongdon_story/post/DUS4la6Ebp2",
+      "url": "https://www.threads.com/@kkongdon_story/post/DUS4la6Ebp2",
       "created_at": "2026-02-03 21:03:21",
       "date": "2026-02-03",
       "crawled_at": "2026-02-12T19:04:52.745",
@@ -2356,7 +2356,7 @@
       "display_name": "_keunyoung_",
       "full_text": "Anthropic이 공개한 Claude Skill 메뉴얼🔥\n\nClaude에게 매번 같은 설명을 반복하는 것이 귀찮았던 분들은 아마 Skill로 이 문제를 해결했을 겁니다. 저도 Skill을 활용하고 있는데 이것이 잘 구축되었는지, 더 좋은 결과를 얻을 수 있을지 판단하기 어려웠습니다. Anthropic이 직접 작성한 Skill 제작 매뉴얼의 핵심 내용을 공개했습니다🤩\n\n두번 이야기 안합니다. \n제 글 보시고 원문은 세번 보시길 바랍니다😊\n\n---\n\nhttps://claude.com/blog/complete-guide-to-building-skills-for-claude",
       "media": [],
-      "url": "https://www.threads.net/@_keunyoung_/post/DUUNQMpE2m3",
+      "url": "https://www.threads.com/@_keunyoung_/post/DUUNQMpE2m3",
       "created_at": "2026-02-04 09:23:12",
       "date": "2026-02-04",
       "crawled_at": "2026-02-12T19:04:52.745",
@@ -2383,7 +2383,7 @@
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/628062061_17851588092654440_2363671728618224259_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTMxNng5MDIuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QEDOSj4-hiCaZV-nyaos-u_0IBUzblzmqezQbEEUAeaOE-_NAU06YHKgt9n0FZxT9M&_nc_ohc=_R9d3Cvc72gQ7kNvwH1eVKM&_nc_gid=Dh9M9FOs4cvtwsHMtANhhw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyNDkxMjEwNzQ5MDY2NjM3OQ%3D%3D.3-ccb7-5&oh=00_Afvg5Bftjrm0R1I5Rmh26HHGwF4MHVtfz4fFhxZGIy5Vjw&oe=699AD70A&_nc_sid=10d13b",
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/626314400_17851588287654440_6523816978675522723_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTQzNng1MTguc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QEDOSj4-hiCaZV-nyaos-u_0IBUzblzmqezQbEEUAeaOE-_NAU06YHKgt9n0FZxT9M&_nc_ohc=xzoY_wIjOg0Q7kNvwH3DaVk&_nc_gid=Dh9M9FOs4cvtwsHMtANhhw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyNDkxMjE3NjAxNzE4MzIwOA%3D%3D.3-ccb7-5&oh=00_AfvZ3knZFjk49JhRJlfZ17U0_LP1tEzwowWgoDAMy4b5-Q&oe=699AE3BE&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@ur.future.ai/post/DUU0S9ZkqQr",
+      "url": "https://www.threads.com/@ur.future.ai/post/DUU0S9ZkqQr",
       "created_at": "2026-02-04 15:04:22",
       "date": "2026-02-04",
       "crawled_at": "2026-02-12T19:04:52.746",
@@ -2412,7 +2412,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/625871679_17869417401542008_1569531035897584954_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMjE2MHgxMTc4LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QEVcMU7eeNQL7k1-8irH9hyuIwXGdOuCy53qKNKwUaUfn5o8IAHIhNiYYgS1ZGk5gQ&_nc_ohc=AorqGS5evZoQ7kNvwHvXbmZ&_nc_gid=GmhhU3VMXHkfmf3DbtcfUw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyNDIzMTA0NTA4MDk0NTgxMg%3D%3D.3-ccb7-5&oh=00_AfvmCJlpXNJUVph8W3pyKHz5mcGhEpaSwji_ffx3c3t_Tg&oe=699AE6BB&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@bibi_blog_world/post/DUSZd-1EhSU",
+      "url": "https://www.threads.com/@bibi_blog_world/post/DUSZd-1EhSU",
       "created_at": "2026-02-03 16:31:27",
       "date": "2026-02-03",
       "crawled_at": "2026-02-12T19:04:52.746",
@@ -2438,7 +2438,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/625497383_2661094057588268_7940954355765961763_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDQxNC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QG--idVC4bUCQLtFivQRfHkhscHgGhWVhYwJOmVW08e8GGawHMf9l05CX6y_V1g5s0&_nc_ohc=SfLSYnHQ7J0Q7kNvwG7KoR9&_nc_gid=e-gXnsXjhkAxaSwALLRoNg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyNDQxMzg0ODk1NDM4MTExOQ%3D%3D.3-ccb7-5&oh=00_Aft9HPpOL9_VZYa6nuAj57XHJA7a5zNwUG7x70FA9LAj3Q&oe=699AF258&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@taaaaes/post/DUTDCINAqM_",
+      "url": "https://www.threads.com/@taaaaes/post/DUTDCINAqM_",
       "created_at": "2026-02-03 22:35:58",
       "date": "2026-02-03",
       "crawled_at": "2026-02-12T19:04:55.775",
@@ -2462,7 +2462,7 @@
       "display_name": "itszoejeong",
       "full_text": "와 안티그래비티-구글드라이브-옵시디언 여기다 제미나이 조합 좋은데? 난 원래 제미나이, 젬, 노트북lm 에다 구글드라이브 썼었는데, 이렇게쓰면 저거 다 쓸수도있고 마크다운 파일이 구글드라이브 한군데로 모이고 옵시디언으로 연동도 되니까 pc로도 모바일로도 편집이 편해.\n\n---\n\n@hanulphoto 스친아 알려줘서 고마워 완전 신세계야!! 옵시디언 텍스트 편집기로 쓰니까 너무좋다 🤣",
       "media": [],
-      "url": "https://www.threads.net/@itszoejeong/post/DURwmBAEh6d",
+      "url": "https://www.threads.com/@itszoejeong/post/DURwmBAEh6d",
       "created_at": "2026-02-03 10:34:17",
       "date": "2026-02-03",
       "crawled_at": "2026-02-12T19:04:55.775",
@@ -2484,7 +2484,7 @@
       "display_name": "_ju_tiger_lee_",
       "full_text": "\"Claude Code 쓰시는데 oh-my-claudecode 안쓰신다고요?\"\n\n요즘은 단순히 수동으로 plan 모드하고 계획 짠 다음에 리뷰 에이전트에게 리뷰 요청하고 다시 계획짜고 개발 하는 프로세스가 아닙니다.\n바이브코딩은 저희같은 전문가들에게 너무나도 지루하고 느립니다.\n이제는 오케스트레이션 입니다.\n\n계획짜고 검토하고 개발하고 리뷰하고 QA하고 이거를 에이전트끼리 논스톱으로 다 하는 시대입니다. 이거를 claude code 전용으로 맞춘게 oh-my-claudecode 라이브러입니다.\n\n마지막으로 한마디 하겠습니다.\n\n\"사용하세요\"",
       "media": [],
-      "url": "https://www.threads.net/@_ju_tiger_lee_/post/DUQTYlyElVu",
+      "url": "https://www.threads.com/@_ju_tiger_lee_/post/DUQTYlyElVu",
       "created_at": "2026-02-02 20:59:48",
       "date": "2026-02-02",
       "crawled_at": "2026-02-12T19:04:55.775",
@@ -2508,7 +2508,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/625360335_17919746742255383_8833118299756574721_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTI0Mng2NjAuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2QHLp9yx6pv_VOcwQn1DBN2wHIjX5j7h9ov7jvcuAVJjFRE60-otIY0Tm3K2CUtT6xQ&_nc_ohc=p9nJxV29CzUQ7kNvwEI-dLa&_nc_gid=XlKcAn1xVEarWFFpMO7aFQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMjM5Nzc3ODE0NDkyMjQ0OA%3D%3D.3-ccb7-5&oh=00_Afuh3eTaBTqTx5YXr_zOYuLbHJIeS6yWwwiZ0O7b7-pUFg&oe=699ADB5F&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@mega_fluke/post/DUL4o2SEm78",
+      "url": "https://www.threads.com/@mega_fluke/post/DUL4o2SEm78",
       "created_at": "2026-02-01 03:49:08",
       "date": "2026-02-01",
       "crawled_at": "2026-02-12T19:04:55.776",
@@ -2531,7 +2531,7 @@
       "display_name": "ENTP_새벽✨",
       "full_text": "1. MVP, 랜딩 페이지 쾅쾅 스피드로 찍어낼때는 Gemini의 antigravity \n2. 제대로 아키텍쳐 설계 하고 기획하고 모듈화하면서 제대로 만들고 어려운 로직 만들때는 claude code의 opus, \n적당히 준수한 수준을 원하면 sonnet \n단순 반복적인 작업을 많이 할때는 haiku\n3. 클로드로 다 만들어놓고 디자인이 구리다?\n그러면 Gemini에게 디자인 검토해서 개선\n\n내가 바이브코딩 잘 모르고 돈쓰기 무섭다 = Gemini Pro\nGemini 의 Antigravity에서 바이브코딩\n(Gemini, Claude, GPT 모두 사용가능/용량제한 있음 일정시간후 다시 돌아옴)\n\n내가 진짜 무조건 돈 투입한다 나는 개발킹이다 = Claude Max 100달러 구독제\n\nClaude Code인지 머시긴지 제일 좋다며? 찍먹은 해봐야지! = Claude pro 20달러 구독제\n\n(가격은 직접확인 요망, api  크레딧 사지 말것 🚨)\n(확신 없으면 절대 1년 구독 금지)",
       "media": [],
-      "url": "https://www.threads.net/@lov_entp/post/DUQZfiwDzO2",
+      "url": "https://www.threads.com/@lov_entp/post/DUQZfiwDzO2",
       "created_at": "2026-02-02 21:53:11",
       "date": "2026-02-02",
       "crawled_at": "2026-02-12T19:04:58.816",
@@ -2557,7 +2557,7 @@
       "display_name": "bellman.pub",
       "full_text": "Claude Code 쓰시는 분들,\n\noh-my-claudecode (OMC) 한번 써보세요.\n\n배울 거 없습니다. 설치하고 바로 씁니다.\n\n주요 기능:\n- Autopilot: 완전 자율 실행\n- Ultrapilot: 3-5배 빠른 병렬 처리\n- Ecomode: 토큰 30-50% 절약\n- 32개 전문 에이전트 + 31개 스킬\n\n설치:\n/plugin marketplace add https://github.com/Yeachan-Heo/oh-my-claudecode\n/plugin install oh-my-claudecode\n/oh-my-claudecode:omc-setup\n\nMIT 라이센스. 오픈소스.\n\nGitHub: https://github.com/Yeachan-Heo/oh-my-claudecode",
       "media": [],
-      "url": "https://www.threads.net/@bellman.pub/post/DUKe4kFklIf",
+      "url": "https://www.threads.com/@bellman.pub/post/DUKe4kFklIf",
       "created_at": "2026-01-31 14:44:51",
       "date": "2026-01-31",
       "crawled_at": "2026-02-12T19:04:58.816",
@@ -2578,7 +2578,7 @@
       "display_name": "Make Engineer Great Again",
       "full_text": "(이 레포가 필요한 이유 = 안 쓰면 나중에 고생함)\n일단 아무것도 모르고 시작해도 AI가 땡깡피우는 걸 \n방지하는 가이드라인이랄까요..\n그리고 oh-my-ag 와 잘 맞게 설계돼있어서 같이쓰시면 AI가 헛소리를 좀 덜하는걸 보실거에요\n추가로..\nBun 기반의 속도와 Pic2Cook 같은 실제 프로젝트를 돌리며 검증된 아키텍처입니다 '_'\n\n다시한번 감사합니다🙇‍♂️\n\n스레드 좋아요보다 깃 스타가 더좋아요..! ⭐️🤤\nhttps://github.com/first-fluke/fullstack-starter",
       "media": [],
-      "url": "https://www.threads.net/@mega_fluke/post/DUQf51ekbqu",
+      "url": "https://www.threads.com/@mega_fluke/post/DUQf51ekbqu",
       "created_at": "2026-02-02 22:49:12",
       "date": "2026-02-02",
       "crawled_at": "2026-02-12T19:04:58.816",
@@ -2605,7 +2605,7 @@
       "display_name": "mega_fluke",
       "full_text": "oh-my-ag 에 공감 많이해주셔서 감사합니다🙇‍♂️\n\n그래서 \n바이브코딩으로 시작 하시는분들 \n개발자분들 모두에게 도움될만한걸 가져왔어요. \n\n프로젝트 하나시작하려면 세팅만 한세월 걸리는데\n웹 풀스택 ~ flutter 기반 모바일까지 딸깍 할수있는걸\n들고왔습니다. \n(사실 이미 공유했는데 설명도 대충하고 oh-my-ag에 묻혀서 아무도모르시는듯..)\n속는셈치고라도 써보시면 빠른세팅에 기분이좋아질거에요..\n\n---\n\n새 프로젝트 시작할 때마다 auth, DB, infra 처음부터 세팅하는거 지긋지긋해서 만들었습니다.\n그냥 AI한테 맡기자니 뭐 슬롯머신도아니고 \n구조도 없는 개판된 코드보면 속터져서 \nAI 에이전트 부려먹기좋은 구조로 만들었고 잘 쓰고있습니다.\n\n---\n\n(이 레포가 필요한 이유 = 안 쓰면 나중에 고생함)\n일단 아무것도 모르고 시작해도 AI가 땡깡피우는 걸 \n방지하는 가이드라인이랄까요..\n그리고 oh-my-ag 와 잘 맞게 설계돼있어서 같이쓰시면 AI가 헛소리를 좀 덜하는걸 보실거에요\n추가로..\nBun 기반의 속도와 Pic2Cook 같은 실제 프로젝트를 돌리며 검증된 아키텍처입니다 '_'\n\n다시한번 감사합니다🙇‍♂️\n\n스레드 좋아요보다 깃 스타가 더좋아요..! ⭐️🤤\nhttps://github.com/first-fluke/fullstack-starter",
       "media": [],
-      "url": "https://www.threads.net/@mega_fluke/post/DUQf50aEXFZ",
+      "url": "https://www.threads.com/@mega_fluke/post/DUQf50aEXFZ",
       "created_at": "2026-02-02 22:49:12",
       "date": "2026-02-02",
       "crawled_at": "2026-02-12T19:04:58.816",
@@ -2626,7 +2626,7 @@
       "display_name": "나날의 여암(與巖)",
       "full_text": "ㅎㅎ notion api도 있어서 mcp서버에 보시면 있어요! 그거 연동해서, 옵시디언(로컬), 노션(공유용 혹은 위키용)으로 병렬적으로도 다뤄볼 수 있어요 :)",
       "media": [],
-      "url": "https://www.threads.net/@yeoamlog/post/DUQT-dageiP",
+      "url": "https://www.threads.com/@yeoamlog/post/DUQT-dageiP",
       "created_at": "2026-02-02 21:04:59",
       "date": "2026-02-02",
       "crawled_at": "2026-02-12T19:04:58.817",
@@ -2651,7 +2651,7 @@
       "display_name": "율이파파",
       "full_text": "이모카님이 아래 댓글도 달아주셨는데 이것도 괜찮은 것 같아요!",
       "media": [],
-      "url": "https://www.threads.net/@stormleehj/post/DUQeA6CDzDP",
+      "url": "https://www.threads.com/@stormleehj/post/DUQeA6CDzDP",
       "created_at": "2026-02-02 22:32:42",
       "date": "2026-02-02",
       "crawled_at": "2026-02-12T19:05:01.844",
@@ -2680,7 +2680,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/626940334_17898037686390131_2661196741215569048_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMjE2MHgxMjkxLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2QGlgmbeq3H2JzF_zpRShN3BL-ldmoJRtpomYdufxKggf14yZwshvD6Co3jatao3BJY&_nc_ohc=QY1egmj2C8QQ7kNvwEa1AHc&_nc_gid=iiWTNTQM1YHQYN8GRLCNoQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMzY0MTEzOTg2MjI2MzE2NQ%3D%3D.3-ccb7-5&oh=00_AfvpjcN_2XNb91qIRreMYaEHdZQyGa93ER2pb3kbNJbkRQ&oe=699AF236&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@stormleehj/post/DUQTVuyD1V9",
+      "url": "https://www.threads.com/@stormleehj/post/DUQTVuyD1V9",
       "created_at": "2026-02-02 20:59:25",
       "date": "2026-02-02",
       "crawled_at": "2026-02-12T19:05:01.844",
@@ -2706,7 +2706,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/626159219_17905849848346172_4803262835911302318_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNTUyeDk4OS5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QGpX8JoaTMpDBcmx-wa1irQ8_gPIV_3isFS52WIxgTYhQ7Et8oc2dAQvKDWnjyx5cs&_nc_ohc=BHwjCcQ5Ze4Q7kNvwHiYunk&_nc_gid=noeAgnWfunlF_FQBXbtEAw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMzQ3OTgyNTgxNTAzNzk0Mw%3D%3D.3-ccb7-5&oh=00_Afu3sLOzosk8LJ24SBfZQ_eCc5CjDDvaJvUe5GS-LNf3gA&oe=699AE85E&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@proverbsnapshots/post/DUPuqTXk-f3",
+      "url": "https://www.threads.com/@proverbsnapshots/post/DUPuqTXk-f3",
       "created_at": "2026-02-02 15:38:55",
       "date": "2026-02-02",
       "crawled_at": "2026-02-12T19:05:01.844",
@@ -2729,7 +2729,7 @@
       "display_name": "proverbsnapshots",
       "full_text": "notebooklm 과 연결까지 하면 더 좋습니다.\nhttps://productivitylabkr.blogspot.com/2026/02/antigravity-notebooklm-mcp-ai.html",
       "media": [],
-      "url": "https://www.threads.net/@proverbsnapshots/post/DUQqrL-k6dQ",
+      "url": "https://www.threads.com/@proverbsnapshots/post/DUQqrL-k6dQ",
       "created_at": "2026-02-03 00:23:19",
       "date": "2026-02-03",
       "crawled_at": "2026-02-12T19:05:01.844",
@@ -2755,7 +2755,7 @@
       "display_name": "marketer.ai.seulki",
       "full_text": "25년 프롬프트: OO 주제로 PPT 만들어줘\n\n26년 프롬프트: \nClaude Code나 안티그래비티용 PPT 자동생성 시스템 만들어줘.\n프로젝트 구조(.claude/skills/, dev/active/, templates/, output/), \nCLAUDE.md, skill-rules.json, \nhooks(자동 스킬 활성화, 품질 체크) 자동 셋업 스크립트 작성.\n\nppt-creator, content-analyzer 스킬(각 500줄 이하 메인 + resources/로 분리), strategic-ppt-architect/ppt-design-specialist/quality-reviewer 에이전트, \n/ppt-plan /ppt-create 슬래시 커맨드 구현.\n\n참고자료 분석 → 목차 생성 → \ndev docs 작성(plan/context/tasks) → 단계별 PPT 제작 워크플로우 포함.\n\n---\n\n1. Skills (스킬)\n- 무엇? Claude가 참고하는 \"작업 매뉴얼\"\n- 왜 필요? 일관된 품질/패턴으로 작업하게 만듦\n- 예시: ppt-creator 스킬 = \"PPT 만들 때 이렇게 해라\"는 가이드\n\n2. Hooks (훅)\n- 무엇? 특정 시점에 자동 실행되는 체크 시스템\n- 왜 필요? Claude가 실수/누락 없이 작업하도록 감시\n- 예시: 파일 수정 후 자동으로 에러 체크, 스킬 자동 활성화\n\n3. Agents (에이전트)\n- 무엇? 특정 역할만 하는 전문 Claude 분신\n- 왜 필요? 복잡한 작업을 역할별로 나눠서 처리\n- 예시: strategic-ppt-architect = 기획만, quality-reviewer = 검토만\n\n---\n\n4. Dev Docs (개발 문서)\n- 무엇? 작업 계획/진행상황을 기록하는 3개 파일 (plan/context/tasks)\n- 왜 필요? Claude가 긴 작업 중 \"뭐하고 있었지?\" 안 까먹게\n- 예시: 대화 끊겨도 문서 보고 이어서 작업 가능\n\n5. Slash Commands (슬래시 명령어)\n- 무엇? /ppt-plan 같은 단축 명령어\n- 왜 필요? 긴 프롬프트 매번 안 쓰고 한 줄로 실행\n- 예시: /ppt-create → 전체 PPT 생성 워크플로우 자동 실행\n\n6. skill-rules.json\n- 무엇? \"이런 단어 나오면 이 스킬 켜라\" 규칙 모음\n- 왜 필요? 사용자가 말 안 해도 Claude가 알아서 적절한 스킬 사용\n- 예시: \"PPT 만들어\" → 자동으로 ppt-creator 스킬 활성화",
       "media": [],
-      "url": "https://www.threads.net/@marketer.ai.seulki/post/DUOKKcfj4wK",
+      "url": "https://www.threads.com/@marketer.ai.seulki/post/DUOKKcfj4wK",
       "created_at": "2026-02-02 01:00:45",
       "date": "2026-02-02",
       "crawled_at": "2026-02-12T19:05:04.874",
@@ -2777,7 +2777,7 @@
       "display_name": "silsangv",
       "full_text": "소신 발언함.\n현 시점 기준 코딩을 위해 Antigravity를 아직 쓸 필요는 없다.\nAntigravity는 일단 너무 무겁다. 이게 가장 큰 단점이다.\n같은 내용을 빌드하고 테스트를 돌리더라도\nVSCode + Claude Code 조합이 2~3배는 빠르게 작동한다.\nAntigravity + Gemini Pro 조합도 답답할 때가 정말 많다.\n좋은 프롬프트를 사용해도 성능이 60~70% 정도밖에 안나오는 느낌이다.",
       "media": [],
-      "url": "https://www.threads.net/@silsangv/post/DUPcmH7EZJc",
+      "url": "https://www.threads.com/@silsangv/post/DUPcmH7EZJc",
       "created_at": "2026-02-02 13:01:03",
       "date": "2026-02-02",
       "crawled_at": "2026-02-12T19:05:04.874",
@@ -2801,7 +2801,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/624615543_17869284159542008_4500932766895150195_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMjE2MHgxMTc4LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QEIQSPYyfZYmKPNCO8ibbLMxQJtlvFkh6PAGz56vPdYMp0j2pZCxeV2fHpdWrM5WLg&_nc_ohc=LO0iGrtNZ6oQ7kNvwE0Ck-e&_nc_gid=fOcIXkf2pive1pyp5tsIZg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMzQ5OTcwMTQ4OTE2NzEzNg%3D%3D.3-ccb7-5&oh=00_AftyejxSisOIVlPzePHgXVi_JY2vlceGkhh_EHLJKLaqvw&oe=699AFE69&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@bibi_blog_world/post/DUPzLiCEusg",
+      "url": "https://www.threads.com/@bibi_blog_world/post/DUPzLiCEusg",
       "created_at": "2026-02-02 16:18:24",
       "date": "2026-02-02",
       "crawled_at": "2026-02-12T19:05:04.875",
@@ -2827,7 +2827,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/624719553_786540461139482_3263514594194989674_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDM0NC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QEa84813KUT22iUoIty2UxGiJ3gEOVggB7kIu2dfv6qBoYSU6tDs_rTkjXRr67Q5sQ&_nc_ohc=fFwGW6pQJYAQ7kNvwHCQ6xA&_nc_gid=I-cH-zd3fM0oftkf5HFN5w&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMzA4OTMzNjcxNjU0ODU3Mw%3D%3D.3-ccb7-5&oh=00_Afv-kYOvZgvV5K8nic-Y3usmOwQ0cB0Q0-VkvaXEkCXRmw&oe=699AD943&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@meteorsimulation/post/DUOV38Dktnd",
+      "url": "https://www.threads.com/@meteorsimulation/post/DUOV38Dktnd",
       "created_at": "2026-02-02 02:43:22",
       "date": "2026-02-02",
       "crawled_at": "2026-02-12T19:05:04.875",
@@ -2850,7 +2850,7 @@
       "display_name": "jude님🥑 외 58.4K",
       "full_text": "아니 조금 버전3까지 3번 기획을 업그레이드해줘 이런느낌으로 구체적으로 얘기해줘야돼 다 하고나서\n각 버전별로 업그레이드 된 부분 요약해서 알려줘 해봐 ㅋ",
       "media": [],
-      "url": "https://www.threads.net/@starcomo/post/DULCfk1EqLV",
+      "url": "https://www.threads.com/@starcomo/post/DULCfk1EqLV",
       "created_at": "2026-01-31 19:56:01",
       "date": "2026-01-31",
       "crawled_at": "2026-02-12T19:05:04.880",
@@ -2877,7 +2877,7 @@
       "display_name": "starcomo",
       "full_text": "개발 초보 고수들에게..\n\n개발 개꿀팁 하나 더 줄게 ㅋㅋ\n이거 완전 대박이야 ㅋ\n\nAi한테 뭐 새로 만들어달라고 할때\n기획을 3번 업그레이드 해달라고해",
       "media": [],
-      "url": "https://www.threads.net/@starcomo/post/DUK7uIXkklz",
+      "url": "https://www.threads.com/@starcomo/post/DUK7uIXkklz",
       "created_at": "2026-01-31 18:56:50",
       "date": "2026-01-31",
       "crawled_at": "2026-02-12T19:05:04.880",
@@ -2901,7 +2901,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/625045838_17885918580430725_3132654991651588975_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTEwOHgxNDg2LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QG0tAm_ttopa6oMsjbTU5Nli8j7TiQmRtP4UFAIbuiz6yqRwUTTGVAqQ0ipmr4rLXU&_nc_ohc=UbBrflPpLtIQ7kNvwHZEn3u&_nc_gid=C8KllxLodH_Cg5LbMJ1ONA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMTk1Nzk2Mjk3NDQ1NDA5Mg%3D%3D.3-ccb7-5&oh=00_AfumNJxmmxIstzIuqjCKEKAl8Ztd4tCYWNTyWnhs0MKm8A&oe=699B0C4C&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@steady__study.dev/post/DUKUnJ3kciv",
+      "url": "https://www.threads.com/@steady__study.dev/post/DUKUnJ3kciv",
       "created_at": "2026-01-31 13:15:05",
       "date": "2026-01-31",
       "crawled_at": "2026-02-12T19:05:04.881",
@@ -2927,7 +2927,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/624964817_17871945819515204_4831505319967273020_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMjQ3MHg4NDAuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QFuk2SD7niixp8d48WhydLH9K5hU6IOubHRpMWD1B93go5QZ1k6uoF-p2Kal9AkML4&_nc_ohc=3MjoDsguVJsQ7kNvwH0RWKJ&_nc_gid=T9A-yEct0AqQtCUD4csSWQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMjIyODg1MDg2NTMwNTAyNw%3D%3D.3-ccb7-5&oh=00_AfvP__wN75mrVbsAG5uF84n0g8J9dcwhgyqAwBWhfUFlPA&oe=699AD761&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@yun_ja_dong/post/DULSOOKE3XD",
+      "url": "https://www.threads.com/@yun_ja_dong/post/DULSOOKE3XD",
       "created_at": "2026-01-31 22:13:27",
       "date": "2026-01-31",
       "crawled_at": "2026-02-12T19:05:04.881",
@@ -2955,7 +2955,7 @@
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/622589707_17844996342682220_8656397780265032240_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTQ0MHgzMTIwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QEZhLRJZP6sAPc0WNnehbaLP6kvye3v1L1xYGtEyJTf2vzSshixldoxzLdvwccKIeQ&_nc_ohc=H8Rt9IWT0ssQ7kNvwGoJRzv&_nc_gid=qcWuoWaxSZTsniahqSmhaQ&edm=AI6eXeABAAAA&ccb=7-5&ig_cache_key=MzgyMDk5ODIyOTU0NzUyMDA0Nw%3D%3D.3-ccb7-5&oh=00_AfvGhsbhaxICmk9QvfTho41NgrUI9icRPnGyZQRq6UgKlQ&oe=69937377&_nc_sid=6efbad",
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/624557691_17844996324682220_3538393871851543432_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTQ0MHgzMTIwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QEZhLRJZP6sAPc0WNnehbaLP6kvye3v1L1xYGtEyJTf2vzSshixldoxzLdvwccKIeQ&_nc_ohc=e_ERyUj43uwQ7kNvwHD_BUZ&_nc_gid=qcWuoWaxSZTsniahqSmhaQ&edm=AI6eXeABAAAA&ccb=7-5&ig_cache_key=MzgyMDk5ODIyOTQ5NzE4NzA0NQ%3D%3D.3-ccb7-5&oh=00_AfvSTSL_BieOecDvpX8d_VtzpvIX_7BEsKLRmX1B_1BvWw&oe=6993A82F&_nc_sid=6efbad"
       ],
-      "url": "https://www.threads.net/@guuu.dev/post/DUG6cYok5Qr",
+      "url": "https://www.threads.com/@guuu.dev/post/DUG6cYok5Qr",
       "created_at": "2026-01-30 05:28:42",
       "date": "2026-01-30",
       "crawled_at": "2026-02-12T19:05:07.898",
@@ -2989,7 +2989,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/624406708_17910686241319820_1054229237633226066_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTA4MHgxODE3LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHs-we8uwKEOwPjdT76KGytsbNr734ScSBuG4zJObCAsNoRZKI1J6Z2DI4gzyzssDM&_nc_ohc=B5VFkPYH9ZYQ7kNvwH1aFCI&_nc_gid=eVO282ddQXjmdlxFdOU0lw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMTkwMzkwODM3MDAzNjg5Ng%3D%3D.3-ccb7-5&oh=00_AfuNqqK2JbDnHVUedm6T5uNC5Ez4jMDoXqieg6dEg2S2Qw&oe=699AF230&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@starcomo/post/DUKIm4EkqEo",
+      "url": "https://www.threads.com/@starcomo/post/DUKIm4EkqEo",
       "created_at": "2026-01-31 11:30:12",
       "date": "2026-01-31",
       "crawled_at": "2026-02-12T19:05:07.898",
@@ -3012,7 +3012,7 @@
       "display_name": "흰지로의 오답노트",
       "full_text": "1. vidiQ\n→ 감이 아닌 데이터로 유튜브 트렌드를 읽으세요. 내 분야에서 현재 어떤 주제의 조회수가 잘 나오는지 알 수 있어요.",
       "media": [],
-      "url": "https://www.threads.net/@hinjiroffffff/post/DUKPfu1Aa6T",
+      "url": "https://www.threads.com/@hinjiroffffff/post/DUKPfu1Aa6T",
       "created_at": "2026-01-31 12:30:23",
       "date": "2026-01-31",
       "crawled_at": "2026-02-12T19:05:07.898",
@@ -3041,7 +3041,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/622333521_17875428201496844_2982730392352590154_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTQ2N3gzNTcuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QEl9qHqZ_hDQ-ZuPgKPdAqa4DpCZeMFoFYMMY5Ui5_HusKC2bZ_wx6p1O0M5IUJ2-c&_nc_ohc=UouPty3_CmsQ7kNvwHVkg3M&_nc_gid=xMF7vz0qgVHvPNvxOupFnQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMTkzNTMwNjExNDkzNDQ0Ng%3D%3D.3-ccb7-5&oh=00_Aft7KTWs1jG23-se7EhX7Yy3VXlvQXOfahd70_o4Tz0f5Q&oe=699B05AA&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@hinjiroffffff/post/DUKPelTgSau",
+      "url": "https://www.threads.com/@hinjiroffffff/post/DUKPelTgSau",
       "created_at": "2026-01-31 12:30:14",
       "date": "2026-01-31",
       "crawled_at": "2026-02-12T19:05:07.898",
@@ -3064,7 +3064,7 @@
       "display_name": "Jinho Jung",
       "full_text": "정답을 알려줄게. 간단해.\n오늘부터 100개의 앱을 만들어.\n그리고 100개의 앱을 멋지게 보여줄 포트폴리오 사이트를 만들어.\n그리고 이 사이트를 어떻게 만들었는지 \n자세하게 과정을 기록하는 블로그를 만들어\n모든 코드는 github에 올려.\n할 수 있겠어?\n형도 지금 매일  하고있다.\nhttps://jvibeschool.org/GALLERY/",
       "media": [],
-      "url": "https://www.threads.net/@jvisualschool/post/DUJ_3Mlj0ID",
+      "url": "https://www.threads.com/@jvisualschool/post/DUJ_3Mlj0ID",
       "created_at": "2026-01-31 10:13:47",
       "date": "2026-01-31",
       "crawled_at": "2026-02-12T19:05:10.927",
@@ -3092,7 +3092,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/624545065_17918709093251799_43220795885815886_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uOTQ2eDY5MC5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QE8pyih1OX5sHFeSbAfjOJuibiFy4w4bJboJETftWZ-hjX0gCNPjHAN-kJFjF3wpSc&_nc_ohc=GoSeTfr8ABkQ7kNvwHdPeUb&_nc_gid=DCytrKlvbNfzti5QSS3CIA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMjEyNjc1NjE4NzI4MTI4Nw%3D%3D.3-ccb7-5&oh=00_AfuPs9gH9opP7X5HHa9PP0jU2RR_pIzrk6pgE9thd7_hpA&oe=699AE61B&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@qjc.ai/post/DUK7AjFDxeH",
+      "url": "https://www.threads.com/@qjc.ai/post/DUK7AjFDxeH",
       "created_at": "2026-01-31 18:50:36",
       "date": "2026-01-31",
       "crawled_at": "2026-02-12T19:05:10.927",
@@ -3118,7 +3118,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/624090842_17913189069296861_1421618806707735385_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTQwM3g1NjEuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QGzjBh1pnYGwHvDvmUJyRJfhAIe8Z_i8g-dBNmIPATkmFfArC8rApMp9Tlz8Xv7brM&_nc_ohc=dz6fvpY2B54Q7kNvwH1DI9I&_nc_gid=occ1Ps1uv_PTJBBlzhboYw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMjEyNjMyMDcwOTc1MDg2NA%3D%3D.3-ccb7-5&oh=00_AftyCskAjQc4nkR0Ma_gHLXShmDFckFxk_5zRsaJ9Cw1sA&oe=699AFBB6&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@opal.gongbang/post/DUK66UNE-rX",
+      "url": "https://www.threads.com/@opal.gongbang/post/DUK66UNE-rX",
       "created_at": "2026-01-31 18:49:45",
       "date": "2026-01-31",
       "crawled_at": "2026-02-12T19:05:10.927",
@@ -3145,7 +3145,7 @@
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/624208241_1759907988302254_6776253762779549075_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uNjQweDQ1MC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QHDlMWwnktOLqUISVHcwHpxf6BT7kp1BMpkdSkzyIR0cQe9wltr4wRtjqPap95Zq2g&_nc_ohc=FZ4kWjb0iN8Q7kNvwH0E_1r&_nc_gid=4M5u3ZB0WjRnUiEl4LrdlQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMTgyMTM2NDE5ODg3NzM0MQ%3D%3D.3-ccb7-5&oh=00_AfviLcRoWfzPCOb5nS_yRltg52cNstL_MshRXrm6qfEJlQ&oe=699AF4A7&_nc_sid=10d13b",
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/625100284_17847853668650201_5873881941628317646_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNzE0eDYzMS5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QHDlMWwnktOLqUISVHcwHpxf6BT7kp1BMpkdSkzyIR0cQe9wltr4wRtjqPap95Zq2g&_nc_ohc=-IFB_u1LvkEQ7kNvwGjq--I&_nc_gid=4M5u3ZB0WjRnUiEl4LrdlQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMTgyNjUwNjQyMzk1MjMxOQ%3D%3D.3-ccb7-5&oh=00_AfthGwGHOCA4kxllyipGa7k4HuFkNfQV5GaHzCYbuwX2Xw&oe=699AF178&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@build_daemon/post/DUJ1km1kkNt",
+      "url": "https://www.threads.com/@build_daemon/post/DUJ1km1kkNt",
       "created_at": "2026-01-31 08:43:52",
       "date": "2026-01-31",
       "crawled_at": "2026-02-12T19:05:10.928",
@@ -3169,7 +3169,7 @@
       "display_name": "Seok-ki Yoon",
       "full_text": "이세돌 님도 정확히 똑같은 이야기를 했어요. AI가 도입되니 실력이 평준화 될 줄 알았는데.. 오히려 하위랭커랑 상위랭커의 차이가 더 벌어지드라..",
       "media": [],
-      "url": "https://www.threads.net/@seokki.yoon07/post/DUK59b8ia4D",
+      "url": "https://www.threads.com/@seokki.yoon07/post/DUK59b8ia4D",
       "created_at": "2026-01-31 18:41:27",
       "date": "2026-01-31",
       "crawled_at": "2026-02-12T19:05:10.934",
@@ -3197,7 +3197,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/623477300_17940767397112832_4821857169434135039_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTkyMHgxMDU0LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QFS0tg7rQJoFu0cvP4Ip8PBlbLCeuy8XG08hhNu9XplpnhYs7KJICSInmjx84cEy_w&_nc_ohc=euGYQ8W4vmkQ7kNvwF-EQLV&_nc_gid=iZvZgHaa-R2wjc9kFOPYDg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMTQwNjgwNDU0MzQ1ODA5NQ%3D%3D.3-ccb7-5&oh=00_AftsXGlGvmScrlQU7tLreblHu8wFtg3T9uF0mqpHp8yDMw&oe=699B061A&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@choi.openai/post/DUIXT33Essv",
+      "url": "https://www.threads.com/@choi.openai/post/DUIXT33Essv",
       "created_at": "2026-01-30 19:00:11",
       "date": "2026-01-30",
       "crawled_at": "2026-02-12T19:05:10.934",
@@ -3223,7 +3223,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/617600078_747045358447916_4330508066662758449_n.png?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6ImFkc19pbWFnZSJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QFSLsNKZf7M8vNl-h4mZAVsDW7lBgMyQQjzzN8I8mBukHlUqNKj2AumPFi9CFFd9X0&_nc_ohc=n_VhAghiGVMQ7kNvwHBOSDj&_nc_gid=6H_xUJ6ZKz09pTfgVf0n-A&edm=APs17CUBAAAA&ccb=7-5&oh=00_Afsx1bI9yMmTDnuWW08YIXBK6rPQhoLFF6AFNuFCKvLNpQ&oe=699AF0C4&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@oz_coding_school/post/DTugejAgHNF",
+      "url": "https://www.threads.com/@oz_coding_school/post/DTugejAgHNF",
       "created_at": "2026-01-20 18:00:02",
       "date": "2026-01-20",
       "crawled_at": "2026-02-12T19:05:10.934",
@@ -3249,7 +3249,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/624490414_1564397221336116_7037512293009858320_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDM3Ni5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QGCal4kPhPS-r1VEEvVKF9OTUd1C_4mQvm4CIG3hDKD-sb3oZUwfN-Ha8X0tQKvdNQ&_nc_ohc=Ku5xHpDgJtMQ7kNvwHnY4Mk&_nc_gid=DeO0Ie7xZDZSqLwqFLi6cQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMDYyMTcwMDQ5MjUzNzQ5MQ%3D%3D.3-ccb7-5&oh=00_Afs47xAnPwsRmbSa6PpJYBlTKYiOogFywiwIAVFdH060RA&oe=699AFF68&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@hinjiroffffff/post/DUFkzGvAa6T",
+      "url": "https://www.threads.com/@hinjiroffffff/post/DUFkzGvAa6T",
       "created_at": "2026-01-29 17:00:20",
       "date": "2026-01-29",
       "crawled_at": "2026-02-12T19:05:10.934",
@@ -3273,7 +3273,7 @@
       "display_name": "super_writer12",
       "full_text": "스레드의 핵심은 이렇습니다.\n후킹 한 줄 -> 압축 본론 3~4줄 -> 교훈 1~2줄\n\n제 글 구조만 봐도 이렇게 되어있어요.\n그냥 적기만 하면 잘 안 터져요.\n\n구조와 압축이 없기 때문입니다.\n스레드에서는 \n'짧고 굵게 때리기'가 중요해요.",
       "media": [],
-      "url": "https://www.threads.net/@super_writer12/post/DUIDj9vgeRU",
+      "url": "https://www.threads.com/@super_writer12/post/DUIDj9vgeRU",
       "created_at": "2026-01-30 16:07:38",
       "date": "2026-01-30",
       "crawled_at": "2026-02-12T19:05:13.957",
@@ -3295,7 +3295,7 @@
       "display_name": "wmleee",
       "full_text": "pencil.dev 이거 정말 물건이네요.\n\n개발자 입장에서 디자이너가 작업한 디자인을 figma 를 열고 dev mode 로 들어가서 코드 확인하고 프론트엔드 개발을 할텐데 이걸 사용하려면 돈을 내야 합니다.\n\n- 디자인 하면 코드로, 코드로 하면 디자인으로 양방향 워크플로우가 가능.\n\n- 디자이너는 pencil 전용 툴로 디자인할 수 있고, 이걸 파일로 내보내기 할 수 있어요.\n\n- 개발자는 IDE 툴의 pencil 확장 플러그인을 설치해서 디자인 파일을 열 수 있습니다.\n\n- CLI, IDE, MCP 연동 다 됩니다. 연동만 해놓으면 알아서 디자인 해주거나 수정해주거나 React, Vue 전통적인 HTML, CSS 파일까지 다 알아서 만들어줘요.\n\n---\n\n저는 이걸로 작업 시간을 크게 줄였습니다. 오프라인에서 pencil 파일을 공유 받고, 에디터의 pencil 확장플러그인을 이용해 디자인을 불러오는 것이 가능해졌습니다.\n\n피그마는 무조건 온라인이라서 절대 불가능함.\n*.pen 파일만 있으면 디자인도 열 수 있음.\n\n피그마 어떡할거야... ㄷㄷ",
       "media": [],
-      "url": "https://www.threads.net/@wmleee/post/DUGYenoEnPR",
+      "url": "https://www.threads.com/@wmleee/post/DUGYenoEnPR",
       "created_at": "2026-01-30 00:31:55",
       "date": "2026-01-30",
       "crawled_at": "2026-02-12T19:05:13.957",
@@ -3319,7 +3319,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/622087814_17856147471608942_6747036311821522185_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMzk0eDMwOS5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QEHNf3rfdJuEhkodzX7NCjhy7NEqVL4bvlhyzRx-DYVNBklnILhAaXeEW6BDjWa9-M&_nc_ohc=tHJQV9WoEOoQ7kNvwHjn3Lv&_nc_gid=GoNao0PFNheQKFTOfDWtEQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMTA1MjA2MTUzNDU2Njc4OA%3D%3D.3-ccb7-5&oh=00_Afum2GZ09SuW9oMSjjM5msCmvSdr8KbVoPDA3h4gRfPINg&oe=699AE2B0&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@ody_daddy/post/DUHGprsCrmE",
+      "url": "https://www.threads.com/@ody_daddy/post/DUHGprsCrmE",
       "created_at": "2026-01-30 07:15:23",
       "date": "2026-01-30",
       "crawled_at": "2026-02-12T19:05:13.957",
@@ -3345,7 +3345,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/622515711_4273920106163864_6107071979499730971_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDQ0MC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHoFmIN457tUVcGAbrsE5V17nuSCsY9B_RZlENNPLFQqYamz-yjyACGLk14shyehGk&_nc_ohc=4ExroTk9VlEQ7kNvwFOO7Pi&_nc_gid=lVVUu7PGUuoRL-spjOLDMQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMTQ2MTIyNjA1Njk5MTQ3MQ%3D%3D.3-ccb7-5&oh=00_AfuTyOrhZoMED2aa1DJHiaC6pJFsV9A1artjEGHCaydwYg&oe=699AF3B4&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@kook0526/post/DUIjrz2DkLv",
+      "url": "https://www.threads.com/@kook0526/post/DUIjrz2DkLv",
       "created_at": "2026-01-30 20:54:40",
       "date": "2026-01-30",
       "crawled_at": "2026-02-12T19:05:13.957",
@@ -3371,7 +3371,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/624509264_17872210689521221_1266861709758978837_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTEyNHg5MDQuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QFdlnvGuXNoRQWIbiDgW0FhboE2TpDh8NDTa8m2psFMRlIBOVzLviI3z64YhOEP4BQ&_nc_ohc=A5XFBXk5XeQQ7kNvwHbZdfS&_nc_gid=GQGoXSI0RNYp2ProownYFA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMDc2ODU1NjU0ODYxNDE2OA%3D%3D.3-ccb7-5&oh=00_AfuWm0wTuUDfFp97Fkqs-0FPCYBS4lhZKbguNPtz50eitA&oe=699AE6FE&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@miniminim71/post/DUGGMMmD-jS",
+      "url": "https://www.threads.com/@miniminim71/post/DUGGMMmD-jS",
       "created_at": "2026-01-29 21:52:07",
       "date": "2026-01-29",
       "crawled_at": "2026-02-12T19:05:13.972",
@@ -3395,7 +3395,7 @@
       "display_name": "info__sum",
       "full_text": "구글이 한국에\n월 11,000원짜리 AI Plus 요금제를 풀었어\n기존보다 50%이상 싼가격이야\n\n원래 Gemini Pro 쓰려면\n월 2만9천원이었잖아\n이게 1만1천원으로 내려왔어\n\n처음 두 달은 월 5,500원 커피 한 잔 값도 안돼..\n\n---\n\n들어가는 모델에도 \nGemini 3 Pro 이미지 최강이라는 Nano Banana Pro 영상 생성 Veo 3.1까지 포함된대\n\n그리고\nGoogle Drive, Gmail, Photos\n200GB 포함.\n가족 5명이랑 나눠 쓸 수도 있어\n\nOpenAI가 ChatGPT Go로\n저가 요금제 깔자\n구글이 바로 반값으로 받아친 느낌이야 우리 사용자들이야 너무 땡큐인 상황이지\n\n이제 AI는\n‘유료 툴’이 아니라\n‘기본 앱’으로 가는 단계 같아\n\n11,000원 가격이면 꽤 합리적인거 같은데\n 어떤거 같아??\n\n---\n\nGemini 5500원 구독링크\nhttps://gemini.google/kr/subscriptions/?hl=ko",
       "media": [],
-      "url": "https://www.threads.net/@info__sum/post/DUHdfmjEizy",
+      "url": "https://www.threads.com/@info__sum/post/DUHdfmjEizy",
       "created_at": "2026-01-30 10:34:59",
       "date": "2026-01-30",
       "crawled_at": "2026-02-12T19:05:13.972",
@@ -3419,7 +3419,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/623117433_1601476151307320_3689379256037291878_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDQxNC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QEGC_QFuXe5io2PYb7fyzgX6TSdUoPvPefik_msgpKZOxMaixUBhCL8lyGG9FTER9c&_nc_ohc=F0BDjrEaqXQQ7kNvwHS_Zb9&_nc_gid=yNb_OtgbxirlYnbl1SYpbQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMTMyMjI5NDc2OTMzMDE5Mw%3D%3D.3-ccb7-5&oh=00_AfsFishrHRbK2pLvyFAb1F8ZvirfTSB_pHI5uWvj_AZxrg&oe=699AEB23&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@hinjiroffffff/post/DUIEGGAAagR",
+      "url": "https://www.threads.com/@hinjiroffffff/post/DUIEGGAAagR",
       "created_at": "2026-01-30 16:12:56",
       "date": "2026-01-30",
       "crawled_at": "2026-02-12T19:05:13.972",
@@ -3443,7 +3443,7 @@
       "display_name": "redbearhbj",
       "full_text": "Claude 에서 공식 가이드로 배포한 프롬프트 작성 가이드입니다. 프로젝트에 첨부해두고 사용하면 됩니다. 효과적인 프롬프트를 위한 기본 원칙 6가지🔥\n\n---\n\n1. 명확하고 구체적으로 작성하라\n메시지의 처음에 해야 할 작업이나 질문을 분명히 적는다.\nAI가 상황을 이해할 수 있도록 배경과 세부 정보를 제공한다.\n복잡한 작업은 작은 단계로 나누어 요청한다.\n\n❌ 나쁜 프롬프트\n발표 자료 좀 도와줘.\n\n✅ 좋은 프롬프트\n분기별 영업 회의를 위한 10장짜리 발표 자료를 만들고 싶습니다.\nQ2 매출 성과, 베스트셀러 제품, Q3 매출 목표를 다뤄야 합니다.\n각 슬라이드별 핵심 포인트가 포함된 목차를 만들어 주세요.\n\n왜 좋은가?\n슬라이드 수, 목적, 다룰 주제가 모두 명확하여 AI가 정확히 이해할 수 있다.\n\n---\n\n2. 예시를 적극 활용하라\n원하는 출력 결과의 예시를 제공하라.\n특정 형식, 톤, 스타일이 있다면 반드시 보여줘라.\n❌ 나쁜 프롬프트\n전문적인 이메일 써줘.\n\n✅ 좋은 프롬프트\n프로젝트 지연에 대해 고객에게 보내는 전문적인 이메일이 필요합니다.\n이전에 보냈던 유사한 이메일은 아래와 같습니다.\n\n[이메일 예시 본문]\n\n이 이메일과 비슷한 톤과 구조로,\n공급망 문제로 인해 한 달 지연된 현재 상황에 맞게 새 이메일을 작성해 주세요.\n\n왜 좋은가?\nAI가 참고할 수 있는 구체적인 기준점을 제공한다.\n\n---\n\n3. 사고 과정을 유도하라\n복잡한 문제는\n“단계별로 생각해 주세요”, “이유를 설명해 주세요” 라고 요청하라.\n결과의 정확성과 깊이가 크게 향상된다.\n❌ 나쁜 프롬프트\n팀 생산성 높이는 방법 알려줘.\n\n✅ 좋은 프롬프트\n팀 생산성을 개선하고 싶습니다.\n아래 항목을 기준으로 단계별로 생각해 주세요.\n\n1. 현재 생산성을 막는 요소\n2. 가능한 해결책\n3. 실행 시 예상되는 어려움\n4. 개선 효과를 측정하는 방법\n\n각 단계마다 이유를 간단히 설명하고,\n마지막에 전체 요약을 해 주세요.\n\n---\n\n4. 반복 수정(Iterative Refinement)을 활용하라\n첫 결과가 마음에 들지 않으면 구체적으로 수정 요청하라.\n“더 좋게” 같은 추상적 표현은 피한다.\n❌ 나쁜 프롬프트\n좀 더 좋게 만들어줘.\n\n✅ 좋은 프롬프트\n방향은 좋습니다. 아래처럼 수정해 주세요.\n\n1. 톤을 더 캐주얼하고 친근하게\n2. 실제 고객 사례 1개 추가\n3. 두 번째 문단은 기능 설명보다 장점 위주로 짧게\n\n왜 좋은가?\nAI가 사용자의 “좋음” 기준을 정확히 이해할 수 있다.\n\n---\n\n5. Claude의 지식을 적극 활용하라\n배경 설명이나 전문 지식을 주저하지 말고 요청하라.\n반드시 사용 목적과 맥락을 함께 제공하라.\n❌ 나쁜 프롬프트\n마케팅이 뭐야? 어떻게 해?\n\n✅ 좋은 프롬프트\n친환경 세정제 브랜드의 마케팅 전략을 준비 중입니다.\n최근 그린 마케팅 트렌드를 정리해 주세요.\n\n포함해 주세요:\n1. 친환경 소비자에게 효과적인 메시지 전략\n2. 적합한 마케팅 채널\n3. 최근 1년간 성공 사례\n4. 주의해야 할 함정(그린워싱 등)\n\n---\n\n6. 역할(Role-playing)을 지정하라\nAI에게 특정 역할이나 관점을 부여하면 결과의 밀도가 높아진다.\n❌ 나쁜 프롬프트\n협상 준비 도와줘.\n\n✅ 좋은 프롬프트\n당신은 제 가방 제조사에 원단을 공급하는 공급업체입니다.\n저는 가격을 10% 낮추고 싶습니다.\n\n공급업체 입장에서:\n1. 예상되는 반대 의견 3가지\n2. 각 반대에 대한 제 입장의 대응 논리\n3. 가격 인하 대신 제안할 수 있는 대안 2가지\n\n그 후 역할을 바꿔,\n구매자인 제가 협상을 성공시키는 전략을 조언해 주세요.",
       "media": [],
-      "url": "https://www.threads.net/@redbearhbj/post/DUHi67GEhVw",
+      "url": "https://www.threads.com/@redbearhbj/post/DUHi67GEhVw",
       "created_at": "2026-01-30 11:22:24",
       "date": "2026-01-30",
       "crawled_at": "2026-02-12T19:05:13.972",
@@ -3467,7 +3467,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/524583563_17885077023340690_2861240656786204023_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uOTY2eDU0My5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QEdM252ZJ5cWfUybHnX4R5f044BDZBVZLCu1eG0FcO_CXvg90495to11si-l3d0BTo&_nc_ohc=ufHu5SBZs0gQ7kNvwH_Kqmx&_nc_gid=2No-PSHebS0nvvCiALlhiQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMTA2NTY1NjI0NzUwMTg0NQ%3D%3D.3-ccb7-5&oh=00_AfvRCuUdRygroo1OqO5yc-e7lAw8dAv1FPj8Om3zG1kcHA&oe=699AFF26&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@c.reator_c/post/DUHJvgwE8QV",
+      "url": "https://www.threads.com/@c.reator_c/post/DUHJvgwE8QV",
       "created_at": "2026-01-30 07:42:23",
       "date": "2026-01-30",
       "crawled_at": "2026-02-12T19:05:16.988",
@@ -3492,7 +3492,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/624568622_17845105875682220_8656801104642831619_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTQwOHg3MzYuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHgbXzvBdZVCA3zquj3T2Gx8nDCKnvc65FOCqKOYfFO2f4Y2dMKU5PRfSt7qU1Y29g&_nc_ohc=d9OrwWRFn5EQ7kNvwHDjetH&_nc_gid=jbUYHANfdoAoEcrguc1BVQ&edm=AI6eXeABAAAA&ccb=7-5&ig_cache_key=MzgyMTQzMzk1MTQ1NDc1MDMyMg%3D%3D.3-ccb7-5&oh=00_AfvYCUmXcNySI6aF5rKbLL14P6ZCPgPqloANVnSyN0Lb-g&oe=699399B3&_nc_sid=6efbad"
       ],
-      "url": "https://www.threads.net/@guuu.dev/post/DUIde6ZE-Zy",
+      "url": "https://www.threads.com/@guuu.dev/post/DUIde6ZE-Zy",
       "created_at": "2026-01-30 19:54:08",
       "date": "2026-01-30",
       "crawled_at": "2026-02-12T19:05:16.988",
@@ -3523,7 +3523,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/624830517_17890100427416427_2766155216115550073_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMjE2MHgxMjY1LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QFZnf-eQJz2GzWpOQl82bdMGI7d2XTCgoNM_OQAhFD1nHWNVd07iRWCHG5MKCipvIo&_nc_ohc=1QEu20jalK4Q7kNvwHWxxFg&_nc_gid=NvexmhKqeZARdgY3N3REQw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMTM2OTMyMjA3ODYxMTYxMg%3D%3D.3-ccb7-5&oh=00_AfuD6_8NDkrAjOduU5SmuPcGUXmvTdWxgCSYTRYSUoOOxg&oe=699B0BFA&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@eyevision.lab/post/DUIOybmEiic",
+      "url": "https://www.threads.com/@eyevision.lab/post/DUIOybmEiic",
       "created_at": "2026-01-30 17:45:43",
       "date": "2026-01-30",
       "crawled_at": "2026-02-12T19:05:16.988",
@@ -3547,7 +3547,7 @@
       "display_name": "planum.one",
       "full_text": "Claude Code 장기 기억 시스템 구축하기 \n\n문제: AI의 \"단기기억 상실\" \n\nClaude Code는 세션이 끝나면 모든 컨텍스트를 잃습니다. \n- 어제 뭘 했는지 모름 \n- 프로젝트 구조를 처음부터 다시 탐색 \n- 같은 실수 반복 \n\n긴 프로젝트에서 매번 \"지난번에 우리 뭐 했었는데...\"라고 설명하는 건 비효율적입니다. \n\n👌 해결책은? \n\n2파일 인수인계 시스템!",
       "media": [],
-      "url": "https://www.threads.net/@planum.one/post/DUGJxoEkbWv",
+      "url": "https://www.threads.com/@planum.one/post/DUGJxoEkbWv",
       "created_at": "2026-01-29 22:23:26",
       "date": "2026-01-29",
       "crawled_at": "2026-02-12T19:05:16.988",
@@ -3574,7 +3574,7 @@
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/623307785_17912306643279062_1789864816972176985_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTgzNHgxMDI0LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QGiOWtQQ0URXZZUCHqsnJGVSKgTmVSvedhmLDm1YvBd08TIKEV2O5sRKkYdLXRmDiQ&_nc_ohc=V7Q-NpmY0hAQ7kNvwFSiALg&_nc_gid=WtQ7oR6CD9nRKZgEbljr3A&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMDc1MDQyMTA5MDE3NjIzNA%3D%3D.3-ccb7-5&oh=00_AfuzPGhSu3JVk9jgoxYUJ3q1LU42gO0qrpuNIszIc7DVuQ&oe=699AF2E0&_nc_sid=10d13b",
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/624457871_17912306994279062_6606771881563291021_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTgzNHgxMDI0LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QGiOWtQQ0URXZZUCHqsnJGVSKgTmVSvedhmLDm1YvBd08TIKEV2O5sRKkYdLXRmDiQ&_nc_ohc=-N0lW1UPE-EQ7kNvwEKG9A5&_nc_gid=WtQ7oR6CD9nRKZgEbljr3A&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMDc1MTY5MDc3MzY4Nzg5NQ%3D%3D.3-ccb7-5&oh=00_AftOr_I7UBZOZz8kIa1tCiRszXs33dSn2eMLELmcU4pyEA&oe=699AEB1F&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@slowsoyang/post/DUGCUWLCUFc",
+      "url": "https://www.threads.com/@slowsoyang/post/DUGCUWLCUFc",
       "created_at": "2026-01-29 21:18:16",
       "date": "2026-01-29",
       "crawled_at": "2026-02-12T19:05:16.994",
@@ -3603,7 +3603,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/622501197_17941465695107400_5502790498560722459_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNDk2eDE2NC5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QEDe2HUswg6Iia9zJ2FyPw2ZTp-BXxMMHsSarg20cDfrH532VVfR3qAWzSxEwga1-Y&_nc_ohc=jZkUSMEoAfMQ7kNvwFpZIXD&_nc_gid=uZrHoAe3r_WxPcx_aV98lg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMDEyNTA3MDA4NjMxODU5Mw%3D%3D.3-ccb7-5&oh=00_AfugnP4f0SvoMbNGl475Y8Y-HiP0DByOAQcO2jQvazHtlg&oe=699B05A7&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@builder.inkeun/post/DUDz4LoDyoB",
+      "url": "https://www.threads.com/@builder.inkeun/post/DUDz4LoDyoB",
       "created_at": "2026-01-29 00:33:37",
       "date": "2026-01-29",
       "crawled_at": "2026-02-12T19:05:16.994",
@@ -3627,7 +3627,7 @@
       "display_name": "je0_1229",
       "full_text": "혹시 아래 주제로 출강하고 있는 강사님들 있어?\n- 구글 AI로 프레젠테이션 만들기\n- Google Workspace 교육\n- 바이브코딩 (with Google AI Studio)\n\n출강하는 방법에 대한 세미나를 열 계획인데 댓글에 \"구글\"이라고 남기면 세미나 참여하는 법 알려줄게\n\n---\n\n이 주제들 섭렵하면 2026년에 트렌드에 발빠르게 대응하는 강사가 될 수 있다고 자신해\n이 내용에 대한 지식 습득 + 출강 연계까지 관심 있는 강사님들이라면 꼭 연락줘!\n\n---\n\n댓글이 많아서 조금씩 늦어지거나 누락될 수 있는데 조금만 기다려줘!\n혹시 못 받았다면 dm줘!!\n\n---\n\n출강하고 있는 -> x\n출강하고 싶은 -> O\n\n본뭄 내용 정정할게!",
       "media": [],
-      "url": "https://www.threads.net/@je0_1229/post/DUFFc5Tkb5E",
+      "url": "https://www.threads.com/@je0_1229/post/DUFFc5Tkb5E",
       "created_at": "2026-01-29 12:26:25",
       "date": "2026-01-29",
       "crawled_at": "2026-02-12T19:05:16.994",
@@ -3649,7 +3649,7 @@
       "display_name": "jinsimcode",
       "full_text": "바이브 코딩으로 웹 만들때 쓰는 개사기 조합\n\n1. Agentation 크롬익스텐션\n2. opencode 연동\n3. Playwriter 크롬익스텐션 (playwight 아님, 용어주의!)\n4. 웹 디자인 용어 복붙 사이트\n\n제발 이 조합을 사용해봐라. \"제발\"\n\n자세한 설명 댓글\n\n---\n\nAgentation은 웹 상에서 내가 원하는 것을 AI에게 쉽고 정확하게 전달한다. 지금 스레드에 돌아다니는 Agentation은 리액트 기반 프로젝트에서만 동작하는데, 내가 만든건 \"모든 브라우저에서 사용 가능\" 하다. 이것뿐만 아니라, 전용 Agentation MCP 를 이용하여, \"웹 상에서 클릭한번으로 AI에게 지시내릴수있다\". (현재는 opencode만 가능). 기존의 복사 붙여넣기 방식과 달리, 확장 프로그램에서 피드백을 적고 버튼 클릭만 하면된다\n\nhttps://github.com/GutMutCode/agentation\n\n---\n\n바이브 코딩으로 웹을 만들다 보면 AI에게 \"명확한 설명\"을 하는 것이 제일 어렵다.\n\"이 버튼이 커서가 올라갔을때, 위에서 아래로 떨어지고 다시 튀어오르는 애니메이션 효과가 있으면 좋겠어\" \n프롬프트부터 너무길다.\nUI/디자인은 내가 상상하는 형태가 너무 두루뭉술해서, 토큰만 낭비하고 원하는 결과도 못 얻기 쉽다.\n나에게 필요한건, 내가 원하는 디자인을 지칭하는 이름 그 자체였다.\n그래서 웹 디자인에서 자주 쓰고 트렌디한  디자인들을 한페이지에 모아, 직접 웹페이지에서 효과 자체를 눈으로 보면서 디자인을 진행할 수 있는 사이트를 만들었다. 아래 사이트에서 원하는 효과를 찾아, 해당 박스를 클릭만하면 그 이름이 복사된다. 복사후 Agentation 피드백에 붙여넣기하면 완벽한 웹디자인 워크플로우를 경험할 수 있다.\n차후 Agwntation의 자체 기능으로 넣을 예정이다.\n\n---\n\nPlaywriter 크롬익스텐션은 AI가 웹 브라우저를 다룰 수 있도록 하는 확장프로그램인데, 이점만 보면 Playwright와 차이가 없어보인다. 하지만  Playwright는 작업을 진행할때마다 매번 새로운 창을 띄우는 반면, Playwriter는 기존에 내가 사용하고 있는 페이지를 그대로 조작해준다. 이 하나가 엄청난 차이를 만든다. \"민감한 개인정보를 AI에게 직접 전달하지 않고\" 내가 이미  로그인한 화면을 이용하게 해준다. 매번 Playwright를 실행할때마다 새로운 창이 켰다 꺼졌다하는 상황자체가 없으니, 현재 진행 상황도 한눈에 파악하기 쉽다. 암튼 개좋다. 써라.\n\nhttps://github.com/remorses/playwriter",
       "media": [],
-      "url": "https://www.threads.net/@jinsimcode/post/DUCgoCoE_bt",
+      "url": "https://www.threads.com/@jinsimcode/post/DUCgoCoE_bt",
       "created_at": "2026-01-28 12:26:09",
       "date": "2026-01-28",
       "crawled_at": "2026-02-12T19:05:16.995",
@@ -3673,7 +3673,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/623298323_17936646063119810_5273506464574487056_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMjE2MHgxMTE4LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QGmlhISmfFA50oHUQWYL-LjYpCBCnRESW_rsUt7f-2zG0jM5U3hGOZAStUVeMJLWe8&_nc_ohc=UgU_Fdt6hHUQ7kNvwErgZjr&_nc_gid=p6JJGuAWwpebhW6B0Q5R5g&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMDEwNDc0MTg5NzI4NDc0Nw%3D%3D.3-ccb7-5&oh=00_AftWegubCoecgs7Jb4NqA5hRyT2KVk-3qygEbVZNqgnz8g&oe=699AF485&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@gyeol_hh/post/DUDvQcJkoSP",
+      "url": "https://www.threads.com/@gyeol_hh/post/DUDvQcJkoSP",
       "created_at": "2026-01-28 23:53:14",
       "date": "2026-01-28",
       "crawled_at": "2026-02-12T19:05:20.006",
@@ -3696,7 +3696,7 @@
       "display_name": "으뜸이네 파이썬",
       "full_text": "선생님께선 이미 능력자에 활용을 잘하시니\n\n벡터임베딩 + llm RAG방향으로 가보시죠 ㅎㅎ\n\n데이터 스크래핑 잘하시나요?\nhttp요청 뿐만아니라 데이터 모으는 자동화는 많이 있죠\n\n1. requests, httpx같은 호출형\n2. pydoll, selenium, playwrite같은 브라우저형\n3. botasaurus, browser-use같은 AI브라우저형\n\n다양하게 이용해보세요 그렇게 모은 비정형데이터를 모으고 정리하는걸 txt에 하면 정리가 힘듭니다. \n\n이런 데이터는 sql보다 pandas나 polars를 추천드립니다. contents컬럼에 비정형데이터를 밀어넣고 메타정보는 다른 컬럼에 넣는거죠! 이걸 parquet에 저장하고 폴더로 잘 관리하세요! 원본데이터입니다.\n\nlancedb는 이렇게 정리된 parquet을 읽어서 벡터화해줍니다. GPU가 없다면 colab노트북을 이용해보세요 무료에서도 쓸만합니다.\n\n그다음은 llm붙이는거죠!!!!! ㅎㅎㅎㅎ 마음에 드실지",
       "media": [],
-      "url": "https://www.threads.net/@eddmpython/post/DS4TktPD6BP",
+      "url": "https://www.threads.com/@eddmpython/post/DS4TktPD6BP",
       "created_at": "2025-12-30 16:48:18",
       "date": "2025-12-30",
       "crawled_at": "2026-02-12T19:05:20.006",
@@ -3723,7 +3723,7 @@
       "display_name": "eddmpython",
       "full_text": "파이썬 편하게 공부하고 싶으신분들 eddmpython으로 모여주세요~ㅎ",
       "media": [],
-      "url": "https://www.threads.net/@eddmpython/post/DS35eB9j40f",
+      "url": "https://www.threads.com/@eddmpython/post/DS35eB9j40f",
       "created_at": "2025-12-30 13:00:12",
       "date": "2025-12-30",
       "crawled_at": "2026-02-12T19:05:20.006",
@@ -3744,7 +3744,7 @@
       "display_name": "진심코딩",
       "full_text": "AI에게 브라우저 조작시킬때 필수적으로 알아야하는 것.\nPlaywright, Claude Code 확장프로그램을 쓰지 말기. \n\nPlaywriter를 쓰기.\n\n[ Playwright MCP ]\n매번 새 브라우저 창을 띄우므로, 로그인 필요한 사이트 접속시 매번 로그인 할 필요. \n[ Playwriter MCP ]\n내가 쓰고있는 브라우저 바로 이용. 이미 로그인 된 사이트는 즉시 사용가능\n\n[ Claude Code 확장 ]\n스크린샷을 통해 원하는 X,Y 좌표계산 하여 동작. 잘못클릭 되는 경우 많음. 창을 조금만 움직여도 클릭안됨. 반응형 웹 디자인은 진짜 어려움\n[ Playwriter MCP ]\n웹 내부 태그 이용 선택. 원하는 요소를 아주 정확하게 선택, 조작가능.",
       "media": [],
-      "url": "https://www.threads.net/@jinsimcode/post/DUCrNqMk8vz",
+      "url": "https://www.threads.com/@jinsimcode/post/DUCrNqMk8vz",
       "created_at": "2026-01-28 13:58:40",
       "date": "2026-01-28",
       "crawled_at": "2026-02-12T19:05:20.006",
@@ -3772,7 +3772,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/624413375_1522558482147037_6868524356227679958_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDM3Ni5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QHJtXER2jRqejF-l6xqQYpddmqypBw1ZfypMYQ7W9meeeOGD84iztKnLYi0iPqnWxk&_nc_ohc=upLJA26zZOgQ7kNvwHaXRe4&_nc_gid=ly6XINxb3BhAxO1ctIz-FA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxOTg4MTg4NzYyODMzMjYyMA%3D%3D.3-ccb7-5&oh=00_AfsFafEeonkvyJAgzCU3i5TBtwvYhp6fjw5PHMttn9J9KQ&oe=699AEF73&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@hinjiroffffff/post/DUC8laUCQ5M",
+      "url": "https://www.threads.com/@hinjiroffffff/post/DUC8laUCQ5M",
       "created_at": "2026-01-28 16:30:27",
       "date": "2026-01-28",
       "crawled_at": "2026-02-12T19:05:20.006",
@@ -3798,7 +3798,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/622833762_17851049256623170_7248693224818511512_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTI4MHg3MjAuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QH-zUGZuZk1sRpSNahW6nQg0azrt_WWzYLVq-GweaL-2PtxIZQCJBGvs2gU6pdWhrE&_nc_ohc=ssXpSSlqHm4Q7kNvwFOaE_Z&_nc_gid=PtVxXLQbveY9tM3yP2o2Fg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxOTIyMTI0ODcxOTc5MTI3MA%3D%3D.3-ccb7-5&oh=00_AfsCmZj37kl8L5dYjpAAJUU_BJAq6r7n6u4ry7KYhVt9xw&oe=699B0633&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@lazypencil_lab/post/DUAmX2YkSSm",
+      "url": "https://www.threads.com/@lazypencil_lab/post/DUAmX2YkSSm",
       "created_at": "2026-01-27 18:37:53",
       "date": "2026-01-27",
       "crawled_at": "2026-02-12T19:05:23.029",
@@ -3821,7 +3821,7 @@
       "display_name": "정다정",
       "full_text": "노트북lm에서 만든 슬라이드가 압도적으로 예쁘고 구성도 인포그래픽도 논리도 좋은데.. 하 이거 어떻게 섞어 쓸 방도가 없을까요",
       "media": [],
-      "url": "https://www.threads.net/@itszoejeong/post/DUAvS3CkiXu",
+      "url": "https://www.threads.com/@itszoejeong/post/DUAvS3CkiXu",
       "created_at": "2026-01-27 19:55:51",
       "date": "2026-01-27",
       "crawled_at": "2026-02-12T19:05:23.030",
@@ -3846,7 +3846,7 @@
       "display_name": "Christian TK Noh",
       "full_text": "공유해 주신 노션 local MCP 설치하고 나도 뭔가 해보고 싶어서 Obsidian MCP를 만들었습니다.\n\n[Claude AI로 옵시디언 노트 읽고 쓰기]\n\n옵시디언에 ai을 연결해 사용하고 싶었는데 남들이 만든건 모두 과금 API를 사용하는 방법들 뿐이라 포기했다가..\n\n되는 것:\n✅ 노트 검색 (제목 + 내용 전체)\n✅ 노트 생성/수정/삭제\n✅ 태그 관리\n✅ 폴더 탐색\n\n필요한 것:\n- Obsidian 앱 (당연히)\n- Claude Desktop 앱\n- Python 3.10 이상\n- 터미널 조금 만질 줄 알면 됨\n\n설치:\n터미널에서 3줄이면 끝\n\ngit clone https://github.com/drtknoh-sudo/obsidian-mcp\ncd obsidian-mcp\nuv sync\n\n그 다음 Claude Desktop 설정 파일에 경로 추가하면 됨\n(자세한 건 GitHub README 참고)\n\nhttps://github.com/drtknoh-sudo/obsidian-mcp",
       "media": [],
-      "url": "https://www.threads.net/@iamdrtk/post/DUBeqaViJkN",
+      "url": "https://www.threads.com/@iamdrtk/post/DUBeqaViJkN",
       "created_at": "2026-01-28 02:49:45",
       "date": "2026-01-28",
       "crawled_at": "2026-02-12T19:05:23.030",
@@ -3873,7 +3873,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/621182938_17923722858215877_3568766855420601921_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uODg4eDc3OS5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QE6VOpNkwt-DDOlzfQ9wcRdYk5Gxw6w2oUdSSK8BZl1VAKvBu06sLRNSPxBYW9nmSY&_nc_ohc=zRq3kf_iGGIQ7kNvwGaJtPx&_nc_gid=g1lly4fxwT8xLrQdObzY9g&edm=AI6eXeABAAAA&ccb=7-5&ig_cache_key=MzgxODU4MjQwODAxMTM2ODUyMQ%3D%3D.3-ccb7-5&oh=00_AfvRD0AiFP24SjjEB9AzF7CLYrJnMjkoN9sxslOGsDJe8Q&oe=699AF672&_nc_sid=6efbad"
       ],
-      "url": "https://www.threads.net/@ai.winey_ny/post/DT-VHfnEshJ",
+      "url": "https://www.threads.com/@ai.winey_ny/post/DT-VHfnEshJ",
       "created_at": "2026-01-26 21:28:37",
       "date": "2026-01-26",
       "crawled_at": "2026-02-12T19:05:23.030",
@@ -3904,7 +3904,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/622001042_17914961028268077_2492664739367294999_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTI4MHg3MjAuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QGoIs_5rttGHBg6azqFcVOLFPPn6k_uRh44U5nfZTuJ2FAjblPHk1gRaAu3nSQ-mWI&_nc_ohc=UPkszNDWTe8Q7kNvwEjKdI9&_nc_gid=UDaXOljtnPbZ4LM5StuEZQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxOTEwMzI0NTY2Nzg0MDY3MA%3D%3D.3-ccb7-5&oh=00_AfsZj6aq6B16ZcdUfNWYeIqKVlcJ2sRxb0nYwjJHL90uOQ&oe=699B03C4&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@freainer/post/DUALirekrKe",
+      "url": "https://www.threads.com/@freainer/post/DUALirekrKe",
       "created_at": "2026-01-27 14:43:26",
       "date": "2026-01-27",
       "crawled_at": "2026-02-12T19:05:23.035",
@@ -3930,7 +3930,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/621665002_17871928404521221_2024189751116162218_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTc5Mng0MzAuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QEKU8FqyZa7sQFE1-aDxRc00PRRYAvqTIsyrLqx9Go4_aqu6CmU6YdXWsv0wRK06B4&_nc_ohc=vdAzs6XdTLUQ7kNvwFHjPjx&_nc_gid=NSKMYMpwPi-aQid_fvb7UQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxOTIxNTkwMjMzMjY3MjcxNw%3D%3D.3-ccb7-5&oh=00_Afv55-ZCP07rLk0dmVrUWrzG_c56RaUC34wNEALTX5YfHg&oe=699B0861&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@miniminim71/post/DUAlKDLD9rN",
+      "url": "https://www.threads.com/@miniminim71/post/DUAlKDLD9rN",
       "created_at": "2026-01-27 18:27:16",
       "date": "2026-01-27",
       "crawled_at": "2026-02-12T19:05:23.035",
@@ -3953,7 +3953,7 @@
       "display_name": "오디아빠 | AX TF Lead",
       "full_text": "출근길 쓰레드) 구글 Stitch로 회의 시간 반토막 내기.\n\n구글 Stitch가 Gemini 3.0을 먹더니 물이 올랐다.\n\n단순히 \"이런 UI 그려줘\" 수준이 아니라,\n기획-디자인-개발의 핑퐁 게임을 끝내는 도구로 진화함.\n\n최근 업데이트로 피그마 내보내기랑\n프론트엔드 코드 추출이 기가 막히게 좋아졌다.",
       "media": [],
-      "url": "https://www.threads.net/@ody_daddy/post/DT_mtLmk6ix",
+      "url": "https://www.threads.com/@ody_daddy/post/DT_mtLmk6ix",
       "created_at": "2026-01-27 09:21:33",
       "date": "2026-01-27",
       "crawled_at": "2026-02-12T19:05:23.035",
@@ -3981,7 +3981,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/622451065_1421097342861963_7300520239862911448_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDM2MC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QHVfUcQDL6BA95SHWEX0yF5qTBu6oXI1ZE-XlE66Fps8u3oD0w-deWZuWashTKwDYs&_nc_ohc=Rg9GB3tn7E0Q7kNvwF2K4DH&_nc_gid=9oy_wzRvMubGGwtaw7itjA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxODUzODI2ODQyOTk4Mjg5OQ%3D%3D.3-ccb7-5&oh=00_AfvPTbbkvb6xzj-pKe1Qs1qeOJFEKBHRWt-ncZGVnymzPQ&oe=699AE077&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@choi.openai/post/DT-LFLbARyz",
+      "url": "https://www.threads.com/@choi.openai/post/DT-LFLbARyz",
       "created_at": "2026-01-26 20:00:55",
       "date": "2026-01-26",
       "crawled_at": "2026-02-12T19:05:23.035",
@@ -4008,7 +4008,7 @@
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/622424162_964819176715643_8248120416002867329_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uNjQweDY0MC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2QHKPQYEk2aTmBB9aNWuxsQIllMDOnLFh1d9-sFpxVhvuwCmYyHI1g3jE3hBhL6PfSs&_nc_ohc=UFDgOHTDP1kQ7kNvwHpOTov&_nc_gid=G7cV3O-ZtZrQna9oSkPerg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxODYzOTA1NDA2NTQ5MDkwMw%3D%3D.3-ccb7-5&oh=00_AfsNncW6ETRxraUS0djc0PX2mLinTAZfiZwJYnnej-9EgA&oe=699AE6F2&_nc_sid=10d13b",
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/621402159_17862907482570073_6939714672305722926_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTI4MHg1Mzguc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QHKPQYEk2aTmBB9aNWuxsQIllMDOnLFh1d9-sFpxVhvuwCmYyHI1g3jE3hBhL6PfSs&_nc_ohc=XIWLXCu99WcQ7kNvwE1EI69&_nc_gid=G7cV3O-ZtZrQna9oSkPerg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxODY0MTMzMjMwMjM0MTA5Mw%3D%3D.3-ccb7-5&oh=00_AfsbUG80EXELS2x9nEqV8IpGkasd8XgB2zHRLtqtkqsctg&oe=699B09D1&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@lumiham0/post/DT-h_5NARCF",
+      "url": "https://www.threads.com/@lumiham0/post/DT-h_5NARCF",
       "created_at": "2026-01-26 23:21:11",
       "date": "2026-01-26",
       "crawled_at": "2026-02-12T19:05:26.062",
@@ -4035,7 +4035,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/622056810_17914275651271947_5686315242604975591_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMjA4NngxMTY1LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QGhsojHH7u0VskRX3KcslNw4yV3NZbxtPQWmNS31cWtMdCsE5xre7gflPA7DxbCWvc&_nc_ohc=5MCwYr0A2x8Q7kNvwEFSbv3&_nc_gid=uMUzboCP7OH87-Iqipbp2Q&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxODQ3OTEwNTY5Mjg0MDc2NQ%3D%3D.3-ccb7-5&oh=00_Aftr5c6Vgql6R3oPWO4Ccybz10p7cs6xMKfFEtEI6uVXCw&oe=699AEDC8&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@pm_anyway/post/DT99oVWkh8u",
+      "url": "https://www.threads.com/@pm_anyway/post/DT99oVWkh8u",
       "created_at": "2026-01-26 18:03:23",
       "date": "2026-01-26",
       "crawled_at": "2026-02-12T19:05:26.062",
@@ -4061,7 +4061,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/614942511_737506982316025_636312003171565881_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDM0NC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QHTkssjDCL7otpBGm0WQX-yAcpI7337eJ16E8x4tWn4GdA7PupffAeNRf4qFZOe6a0&_nc_ohc=Tnat4xG-XM4Q7kNvwF45wD3&_nc_gid=IZ7GoKukr53PegQypnXN7g&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwNzQ5MDQ1MDExMDczNjU4Nw%3D%3D.3-ccb7-5&oh=00_AfuGMcK-86FAN6fpZeLZalBl-8O13sryeGHgt3KAt3Kk4w&oe=699AE74A&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@ai_sync_club/post/DTW7GQ0iujL",
+      "url": "https://www.threads.com/@ai_sync_club/post/DTW7GQ0iujL",
       "created_at": "2026-01-11 14:12:45",
       "date": "2026-01-11",
       "crawled_at": "2026-02-12T19:05:26.062",
@@ -4087,7 +4087,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/623207294_17941049205112976_6775598268498138233_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uODc2eDEwMi5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHyJrAJ9oE6ZmBX9mPNfpI-sJUV2Rj7Qj-VU_Fv5-C5sfm5Hr9yNmmkcRX4cVVV22w&_nc_ohc=5LMYsbIx4bYQ7kNvwFF-pGE&_nc_gid=bmlnv2fYllA0NO5vvNMg_A&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxNzkyMjk4OTI0MTkyMzg4NQ%3D%3D.3-ccb7-5&oh=00_AfsItD0_yuKpCoL7pYUWjJCm1c0NQDwVdukFI-SdjIDpfA&oe=699ADCC4&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@marketer.ai.seulki/post/DT7_LsBj_kt",
+      "url": "https://www.threads.com/@marketer.ai.seulki/post/DT7_LsBj_kt",
       "created_at": "2026-01-25 23:38:28",
       "date": "2026-01-25",
       "crawled_at": "2026-02-12T19:05:26.062",
@@ -4111,7 +4111,7 @@
       "display_name": "marketer.ai.seulki",
       "full_text": "앗 다들 자기소개 pinned 해놓던데 나는 안했더라!!\n> https://bento.me/seulkikang\n\n👩🏻‍💻 마케팅, 미디어, 데이터, AI 실무를 모두 경험했어\n👩‍🏫 패스트캠퍼스에서 AI 글쓰기, 취업, 링크드인 네트워킹 강의를 진행했어\n📊 삼성전자, 대상, 유니레버 등 대기업을 대상으로 데이터 & 마케팅 강의를 진행했어\n✍🏻 링크드인 인사이트 연재를 통해 8k 팔로워, 2백만 조회수를 기록했지\n🛜 700명 이상이 가입한 커뮤니티, 마케팅 데이터 커넥트 그룹을 운영 중이야\n💌 뉴스레터 '일잘러의 성장노트'를 발행하고 있어\n\n25' 긱워커 & 프리랜서로서의 삶 시작\n20'~24' 포커스미디어 데이터전략팀장\n18'~19' 스마트미디어렙 플래닝&세일즈\n15'~18' 이노션 해외미디어플래닝-기아 담당\n13'~14' 레오버넷 디지털 마케터-맥도날드 담당\n11'~13' 오길비 디지털마케터-스미노프,아우디,필립스 등 담당",
       "media": [],
-      "url": "https://www.threads.net/@marketer.ai.seulki/post/DEjh503znCO",
+      "url": "https://www.threads.com/@marketer.ai.seulki/post/DEjh503znCO",
       "created_at": "2025-01-08 15:49:57",
       "date": "2025-01-08",
       "crawled_at": "2026-02-12T19:05:26.069",
@@ -4135,7 +4135,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/621448094_17941198041112976_184950576503427390_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTg1NHgxNTA0LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHh82iOZFk98pykSnUxuecgrR8ZGzUwbaT2uw3GujOuyRTKOzSKr4p7hEtmISCRSr8&_nc_ohc=RJxt4PSj5DAQ7kNvwEjSYMO&_nc_gid=5kSE4t7ZfED-wFr1C92SjA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxODQ1MjIyNjE5MzQ2NzY3NQ%3D%3D.3-ccb7-5&oh=00_Aftt2hqjbmjX8qJVdza-g2m9GEqRG0BvxujRG5ABLsBRtg&oe=699B045D&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@marketer.ai.seulki/post/DT93hKjDzNI",
+      "url": "https://www.threads.com/@marketer.ai.seulki/post/DT93hKjDzNI",
       "created_at": "2026-01-26 17:09:59",
       "date": "2026-01-26",
       "crawled_at": "2026-02-12T19:05:26.069",
@@ -4159,7 +4159,7 @@
       "display_name": "itszoejeong",
       "full_text": "점점 노션에 기록하는게 꺼려진다.. notebook lm이랑gemini 쓰니까 노션에있는건 일일히 csv다운받고 이래야하고.. 차라리 그냥 마크다운문서나 쌩 텍스트나 구글시트, 독스, 슬라이드가 편해지는중",
       "media": [],
-      "url": "https://www.threads.net/@itszoejeong/post/DT-HYr3Eofo",
+      "url": "https://www.threads.com/@itszoejeong/post/DT-HYr3Eofo",
       "created_at": "2026-01-26 19:28:38",
       "date": "2026-01-26",
       "crawled_at": "2026-02-12T19:05:26.069",
@@ -4183,7 +4183,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/548371214_17925699063108845_439881711748730167_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTIwMHg3NDkuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QG8p3cFHJkbyl3SEDwb0FKM1oT7utpeKgkNYAl6ou5TH595YlGgEh3huufwMBhPSOs&_nc_ohc=lgkcWjIh_1AQ7kNvwG1PSpZ&_nc_gid=Lu-gTMRPz1R4Sj7BHMXKnA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzcyMTkwMDY0ODYzMzAwODMwOQ%3D%3D.3-ccb7-5&oh=00_Afsu8KLb4-IT9grGfIfv6GIXyBDkgLtPH0iwdfaED1DBNA&oe=699AE9D0&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@data_richard/post/DOm2OujEQC1",
+      "url": "https://www.threads.com/@data_richard/post/DOm2OujEQC1",
       "created_at": "2025-09-15 11:59:13",
       "date": "2025-09-15",
       "crawled_at": "2026-02-12T19:05:26.070",
@@ -4207,7 +4207,7 @@
       "display_name": "data_richard",
       "full_text": "저는 노션(Notion)으로 직접 실무/실생활에 사용하는\n템플릿을 만들고 개선하는 것을 좋아합니다.\n\n2025년부터 매니저로서의 역할을 수행하면서\nEpic/User Story/Task와 같은 \n프로젝트 관련 아이템들을 정리하고\n우선 순위를 체계화하는 데 필요성을 느끼고\n직접 해당 템플릿을 만들게 되었습니다.\n\n- 프로젝트 관련 아이템(에픽, 유저 스토리, 테스크)들을 정리\n- 진행 상황을 보드 형태로 직관적으로 관리\n- 개인 프로젝트부터 소규모 팀 협업까지 활용 가능\n\n템플릿의 이름은 프로젝트 관리자 (PM) 보드입니다.\n해당 템플릿으로 PM의 프로젝트 관리 역량을 한 단계 끌어올려 보세요.\n\nhttps://datarichard.notion.site/PM-2db15065c9e08127b617d760fe86b907?source=copy_link",
       "media": [],
-      "url": "https://www.threads.net/@data_richard/post/DS_7QrXFRRu",
+      "url": "https://www.threads.com/@data_richard/post/DS_7QrXFRRu",
       "created_at": "2026-01-02 15:49:46",
       "date": "2026-01-02",
       "crawled_at": "2026-02-12T19:05:29.084",
@@ -4231,7 +4231,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/622304480_17940924768108845_6968058915373838718_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTcxN3gxNDM5LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QGG5kIdlQ2MPD7XtX3OPdouU12Yy4vrDlRFAXBK72oCl4tYCEDcEScJLNG8TWv-Qbg&_nc_ohc=uCSKKdpKOZYQ7kNvwE7b_se&_nc_gid=4B_i9m3ozPS-gU6JZt15dQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxODIzNzkzNDU2MzIyMjYxOQ%3D%3D.3-ccb7-5&oh=00_AftlAq1VqWtstVxjPhzRmwERsDX2Ju__MICO86Sy6eaTAg&oe=699ADA9C&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@data_richard/post/DT9Gyvtj-Rb",
+      "url": "https://www.threads.com/@data_richard/post/DT9Gyvtj-Rb",
       "created_at": "2026-01-26 10:04:13",
       "date": "2026-01-26",
       "crawled_at": "2026-02-12T19:05:29.085",
@@ -4255,7 +4255,7 @@
       "display_name": "steady__study.dev",
       "full_text": "우리는 왜 코드를 이해하려고 하는가? (feat. 코드 읽기를 그만뒀더니 코드 리뷰가 더 좋아졌다)\n\n최근 많은 개발자 분들이 AI로 인해 가지는 스트레스 중 하나가 '기능은 쏟아져나오는데 내가 이해/통제하지 못하는 코드가 늘어나고, 코드 리뷰가 병목이 되고 있다'일텐데요. 마찬가지로 채용 과제 구성에서도 어려움이 있고요.\n\n저는 \"코드 이해의 정의와 목적이 무엇인가?\" 라는 질문을 던져볼 필요가 있다고 생각했습니다.\n- 코드를 잘 이해했다는 것을 어떻게 측정/가시화할 수 있을까요?\n- 그 지표를 높임으로써 우리가 원하는 JTBD가 뭘까요?\n- 그 지표가 낮아져도 괜찮다는 결정을 한다면, 얼마나 낮아져도 괜찮을까요? 다른 어떤 지표와 트레이드오프가 있을까요?\n\n그러다 마침 코드 리뷰에 대한 Every의 좋은 글이 눈에 띄어서 Opus에게 번역시켜봤습니다.\n\n---\n\n한글번역: https://claude.ai/public/artifacts/25407162-7000-4400-b931-c4ad42f08019\n\n<후반부 발췌>\n\n대부분의 엔지니어는 모든 것을 읽어야 한다고 가정한다. 그 가정은 인간이 모든 코드를 작성했을 때는 말이 되었다. 하지만 더 이상은 아니다. \n \n나는 대부분의 코드를 읽지 않고 이메일 서명 수정을 배포했다. 발견 사항을 리뷰하고 결정을 내렸다. Gmail의 스크린샷을 봤다. 하지만 이메일 콘텐츠를 추출하는 방법의 구현 세부 사항을 읽었나? 아니. 데이터베이스 변경이 엣지 케이스를 어떻게 처리하는지 추적했나? 아니. \n \n그런데 기능은 작동한다. 사용자들은 적절하게 포맷된 서명을 받는다. 테스트--코드가 올바르게 동작하는지 확인하기 위해 모든 기능과 함께 작성하는 검사--가 모두 통과한다. 스크린샷이 올바르게 보인다. 수동 코드 리뷰를 놓아버리는 데 시간이 좀 걸렸지만, 결과가 스스로를 증명한다.\n\n---\n\n내가 한 거래는 모든 줄을 읽지 않겠다는 것이지만, 코드를 읽는 데 쓸 시간의 일부는 이제 시스템을 더 똑똑하게 만드는 데 간다. 이상한 포맷으로 가득 찬 마케팅 이메일에 대한 테스트 케이스를 추가하고 있다. \"데이터가 있는 위치를 변경할 때, 그것을 읽는 모든 파일을 확인하라\"를 에이전트들이 자동으로 시행하는 규칙으로 캡처하고 있다. 이렇게 하면, 이 코드를 건드리는 다음 사람--인간이든 AI든--은 내 실수를 반복하지 않는다. \n \n아직 컴파운드 엔지니어링 플러그인이 https://github.com/EveryInc/compound-engineering-plugin 없다면, 세 가지 질문으로 시작하라. AI가 생성한 출력--코드, 문서, 또는 전략 덱--을 승인하기 전에, AI에게 물어라:\n1. 여기서 가장 어려웠던 결정은 무엇이었나?\n2. 어떤 대안을 거부했고, 왜?\n3. 무엇에 대해 가장 자신이 없나?\n\n---\n\n2분이 걸리는 그 대화가 30분의 집중하지 않은 수동 검사가 놓쳤을 것을 표면화한다. AI는 까다로운 부분이 어디인지 안다. 그저 물어보지 않으면 자발적으로 말하지 않을 뿐이다. \n \n그런 다음 50/50 규칙을 적용하라. 시간의 절반은 즉각적인 문제를 수정하는 데, 절반은 문서화하여 문제가 다시는 돌아오지 않도록 하는 데 써라.\n\n---\n\n이런 워크플로우를 실제로 실행하려면 신뢰할 수 있고 광범위한 테스트와 QA가 필요합니다. 그래서 Vercel이 내놓은 https://agent-browser.dev/ 같은 도구도 눈여겨보고 있습니다.",
       "media": [],
-      "url": "https://www.threads.net/@steady__study.dev/post/DT8s5gck3xJ",
+      "url": "https://www.threads.com/@steady__study.dev/post/DT8s5gck3xJ",
       "created_at": "2026-01-26 06:17:57",
       "date": "2026-01-26",
       "crawled_at": "2026-02-12T19:05:29.085",
@@ -4279,7 +4279,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/621579727_17897132061384188_3812157133825546784_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMjE2MHgxMTY4LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QFPUC-WW7Q38Opw6Fky7t6YunhQsOYj0cOwR1l0I6RGnBrATufhJfGQdxVMqZF71C0&_nc_ohc=SQsJYHGjqWoQ7kNvwGCokTq&_nc_gid=YKgXMY4RNNYoPCiTnTvJoA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxODQ1MjE5NTU0MTQ4NzY2NQ%3D%3D.3-ccb7-5&oh=00_AftneIm0KL71UGBiDU84z3RCXtcAsgpOo3mPSkZFefwkNg&oe=699AE791&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@pitchtitan/post/DT93gttj4S1",
+      "url": "https://www.threads.com/@pitchtitan/post/DT93gttj4S1",
       "created_at": "2026-01-26 17:09:55",
       "date": "2026-01-26",
       "crawled_at": "2026-02-12T19:05:29.085",
@@ -4303,7 +4303,7 @@
       "display_name": "build_daemon",
       "full_text": "요새 AI가 글 쓰면 사람 같지 않고 블로그 저품질 나올까 두려우시죠? \n그걸 방지하는 클로드 스킬이 나왔습니다.\n휴먼처럼 글을 써주니 꼭 사용해보세요\n\nGithub:\nhttps://github.com/blader/humanizer\n\n기사:\nhttps://www.aitimes.com/news/articleView.html?idxno=205864",
       "media": [],
-      "url": "https://www.threads.net/@build_daemon/post/DT863uQkmuV",
+      "url": "https://www.threads.com/@build_daemon/post/DT863uQkmuV",
       "created_at": "2026-01-26 08:20:02",
       "date": "2026-01-26",
       "crawled_at": "2026-02-12T19:05:32.126",
@@ -4325,7 +4325,7 @@
       "display_name": "robin_just_ship_it",
       "full_text": "🔥 최근 일주일 AI/테크씬 정리\n\n• Clawdbot — 개인용 AI 자비스, 멀티채널 자동화\n• Pencil.dev — IDE에서 디자인→코드 자동 생성\n• Remotion skill — Claude로 영상+음성+배경음악 제작\n• Krea AI Realtime Edit — 프롬프트 치면서 이미지 실시간 변환\n• Google SAT Practice — Gemini 무료 SAT 모의고사+즉시 분석\n• Google Stitch MCP — 디자인→React/Flutter 코드 변환\n• Vercel skills.sh — AI 에이전트 스킬 마켓 (200+)\n• Typeless — 음성→텍스트 자동화, 모든 앱 지원\n• Claude Cowork — 폴더 기반 파일정리/문서작성 자동화\n• Oh-my-opencode v3.0.0 — 에이전트 오케스트레이터 병렬 코딩\n\n전부 지난 1주일 안에 출시됨. \n관심있으면 저장 필수 🔖",
       "media": [],
-      "url": "https://www.threads.net/@robin_just_ship_it/post/DT9e9jOkc7M",
+      "url": "https://www.threads.com/@robin_just_ship_it/post/DT9e9jOkc7M",
       "created_at": "2026-01-26 13:35:24",
       "date": "2026-01-26",
       "crawled_at": "2026-02-12T19:05:32.127",
@@ -4347,7 +4347,7 @@
       "display_name": "hajae.code",
       "full_text": "AI 코딩 실력이 늘지 않는 치명적인 이유\n\n다들 AI가 다 해줄 거라 믿지만\n프로젝트가 커지면 AI는 길을 잃습니다.\n\n\"이거 만들어줘\"라고 대충 던지는\n'바이브 코딩'의 유통기한은 100줄까지입니다.\n\n그 이상을 원한다면 'SDD'를 알아야 합니다.\n\n---\n\nSpec-Driven Development (SDD, 명세 주도 개발)는 코드를 먼저 작성하기 전에, 구현해야 할 기능의 ‘명세서(Spec)’를 아주 정교하게 정의하고 이를 바탕으로 개발을 진행하는 방식입니다.\n\n특히 최근 Cursor, Kura, Windsurf 같은 AI 기반 IDE를 사용할 때, AI가 길을 잃지 않고 정확한 코드를 짜게 만드는 가장 핵심적인 방법론으로 주목받고 있습니다.\n\n1. 왜 SDD가 필요한가요? (Vibe Coding 탈피)\n일반적으로 AI에게 \"이거 만들어줘\"라고 대충 요청하는 방식을 '바이브 코딩(Vibe Coding)'이라고 합니다. 처음엔 잘 되는 것 같지만, 프로젝트가 커지면 AI가 앞선 코드를 잊어버리거나 엉뚱한 방향으로 코드를 짤 때가 많습니다.\nSDD는 \"생각은 사람이 하고, 실행은 AI가 하게 만드는\" 구조화된 워크플로우입니다.\n\n---\n\n2. SDD의 3단계 프로세스\n\n① 요구사항 정의 (Requirements)\n단순한 설명이 아니라, EARS(Easy Approach to Requirements Syntax) 같은 구조화된 방식을 사용합니다.\n• 예시: \"사용자가 '정산' 버튼을 누르면, 시스템은 미정산 금액을 계산하여 화면에 표시해야 한다.\" (구체적인 조건과 결과 명시)\n\n② 설계 (Design)\n요구사항을 어떻게 기술적으로 구현할지 결정합니다.\n• 내용: DB 스키마 설계, API 엔드포인트 정의, 사용할 라이브러리 선정, UI 와이어프레임 등.\n• 이 단계에서 AI에게 \"이 설계대로 구현할 수 있는지 검토해줘\"라고 요청하여 설계를 확정합니다.\n\n---\n\n③ 구현 및 작업 리스트 (Implementation & Tasks)\n확정된 설계를 아주 작은 단위의 '체크리스트(Task List)'로 쪼갭니다.\n• Task 1: 정산 테이블 DB 마이그레이션 생성\n• Task 2: 정산 로직 유닛 테스트 코드 작성\n• Task 3: 백엔드 정산 API 구현\n• Task 4: 프론트엔드 정산 대시보드 UI 구현\n\n3. 실무 적용 예시: \"쿠팡 정산 대시보드\"\n\n1. 명세서 작성: spec.md 파일을 만들고, 쿠팡 API에서 데이터를 가져와서 수수료를 제외한 실지급액을 계산하는 로직\"을 상세히 적습니다.\n2. AI에게 전달: AI에게 \"이 spec.md를 읽고 전체적인 설계 도면(design.md)을 그려줘\"라고 시킵니다.\n3. 검토 및 수정: AI가 제안한 설계가 마음에 들면, \"이제 이 설계를 바탕으로 해야 할 일을 순서대로 나열해줘\"라고 합니다.\n4. 단계별 실행: 나열된 Task를 하나씩 클릭하며 \"Task 1 진행해줘“ 라고 명령합니다.\n\n---\n\n4. SDD의 장점\n\n• 재현 가능성: 명세서가 있기 때문에 AI가 중간에 실수를 해도 다시 올바른 방향으로 돌리기 쉽습니다.\n• 컨텍스트 유지: 프로젝트가 커져도 spec.md 파일만 참고하면 AI가 전체 구조를 이해할 수 있습니다.\n• 품질 제어: 사람이 설계를 승인한 뒤 코딩이 시작되므로, AI가 제멋대로 비효율적인 코드를 짜는 것을 방지합니다.",
       "media": [],
-      "url": "https://www.threads.net/@hajae.code/post/DT5ScNij4Uw",
+      "url": "https://www.threads.com/@hajae.code/post/DT5ScNij4Uw",
       "created_at": "2026-01-24 22:29:02",
       "date": "2026-01-24",
       "crawled_at": "2026-02-12T19:05:32.127",
@@ -4369,7 +4369,7 @@
       "display_name": "hajae.code",
       "full_text": "좋은 포인트입니다. 그래서 스펙도 모듈화를 해주면 좋겠죠.\nspec.md 하나에 모든 것을 넣지 말고, 시스템의 도메인이나 기능 단위로 파일을 쪼개고 그 필요한 정보만 주면 context 가 너무 커져서 AI 가 hallucinate 하는걸 방어할수 있을겁니다.\n• 구조 예시:\n• docs/specs/index.md: 전체 개요 및 목차\n• docs/specs/auth.md: 인증/인가 관련 스펙\n• docs/specs/payment.md: 결제 로직 스펙\n• docs/specs/api/: API 엔드포인트별 상세 문서",
       "media": [],
-      "url": "https://www.threads.net/@hajae.code/post/DT6c3mrEwmC",
+      "url": "https://www.threads.com/@hajae.code/post/DT6c3mrEwmC",
       "created_at": "2026-01-25 09:19:24",
       "date": "2026-01-25",
       "crawled_at": "2026-02-12T19:05:32.128",
@@ -4391,7 +4391,7 @@
       "display_name": "newnatrd",
       "full_text": "📘 체계적인 AI 코딩, Claude Code 시작하기\n\n[1/6]\n2026년, AI 코딩의 새로운 패러다임\n\n이제 AI에게 “이거 만들어줘”라고\n막연히 요청하는 시대는 지났어요.\n\n요즘 개발자들 사이에서 가장 주목받는 개념은 바로 SKILL.md와 SPEC.md입니다.\n\n핵심은 이거예요:\nAI를 단순한 코딩 도우미가 아니라,\n특정 역할과 전문성을 가진 팀원처럼 활용하는 것.\n\n마치 신입 개발자에게 회사의 코딩 규칙을 알려주듯, \nAI에게도 명확한 가이드라인을 제공하는 거죠.\n\n오늘은 코드를 작성하기 전에 \nAI의 작업 방식을 설정하는 5가지 문서 체계를 소개할게요.\n\n---\n\n[2/6]\n💡 SKILL.md - AI의 전문 기술 매뉴얼\n\n.claude/skills/ 폴더에 저장하는 재사용 가능한 작업 지침서예요.\n\n이런 용도로 사용해요:\n• UI 접근성 검사하는 방법\n• 코드 리뷰 시 체크할 항목들\n• 데이터베이스 마이그레이션 절차\n\n장점:\n• 한 번 만들면 여러 프로젝트에서 계속 활용 가능\n• Claude가 상황에 맞춰 자동으로 적절한 스킬 선택\n• /skill-name 명령으로 즉시 호출 가능\n\n쉽게 비유하면:\n전문가용 앱을 AI에게 설치해주는 것과 같아요. 필요할 때마다 꺼내 쓸 수 있죠.\n\n---\n\n[3/6]\n🛠 CLAUDE.md - 프로젝트의 기본 규칙\n\n프로젝트 최상위 폴더에 두는 종합 가이드라인이에요.\n\n포함할 내용:\n• 기술 스택: React, TypeScript, Tailwind, Vite 등\n• 코딩 규칙: 함수형 컴포넌트 사용, 변수명은 camelCase로\n• 필수 제약사항: API 호출할 땐 반드시 로딩 처리하기, 테스트 없으면 커밋 금지 등\n\n왜 중요한가요?\n새로운 대화를 시작해도 AI가 우리 팀의 스타일을 기억하고 일관되게 작업할 수 있어요.\n\n---\n\n[4/6]\n📐 SPEC.md & PLAN.md - 구현 전 설계도\n\n코딩하기 전에 “무엇을” 만들지, “어떻게” 만들지 명확히 하는 문서예요.\n\nSPEC.md (상세 명세서):\n• 데이터는 어떤 구조로 저장할지\n• API는 어떤 형식으로 주고받을지\n• 오류 상황은 어떻게 처리할지\n\nPLAN.md (실행 계획서):\n• SPEC을 실제로 구현하기 위한 단계별 작업 목록\n• 1단계, 2단계… 순서대로 진행할 작업들\n\n효과:\nAI가 “일단 만들어볼게요!“하고 무작정 시작하는 걸 방지할 수 있어요.\n\n쉽게 비유하면:\n건물 짓기 전에 설계도를 그리는 것과 같아요. 설계가 탄탄하면 시공 오류가 거의 없죠.\n\n---\n\n[5/6]\n📝 SCRATCHPAD.md - 작업 진행 상황 메모장\n\nAI의 단기 기억을 보완해주는 실시간 작업 노트예요.\n\n기록할 내용:\n• 지금 하고 있는 작업\n• 발견한 버그나 문제점\n• 다음에 해야 할 일\n\n왜 필요한가요?\n대화가 끊겨도 이 문서만 읽으면 AI가 바로 이전 작업 맥락을 파악할 수 있어요.\n\n팁:\n작업 마무리할 때 “지금까지 한 작업을 SCRATCHPAD에 정리해줘”라고 요청해보시면 됩니다.\n\n---\n\n[6/6]\n✨ 결론: 핵심은 ‘명확한 정보 전달’\n\n도구별 활용 방법:\n\nClaude Code / Cursor 같은 전문 코딩 도구:\n• 위에서 소개한 .md 파일들로 체계적으로 제어\n• SKILL과 SPEC을 활용한 설계 중심 개발 추천\n\n일반 대화형 AI (ChatGPT 등):\n• 아이디어 브레인스토밍에 적합\n• 나온 결과물을 위 문서 형식으로 정리해서 활용\n\n핵심 메시지:\nAI 코딩을 잘하려면 결국 ‘어떻게 명확하게 지시할 것인가’가 중요합니다.\n\n마치 좋은 기획서가 좋은 결과물을 만들듯이, 잘 정리된 문서가 좋은 코드를 만들어요.",
       "media": [],
-      "url": "https://www.threads.net/@newnatrd/post/DT4v2-dEzVu",
+      "url": "https://www.threads.com/@newnatrd/post/DT4v2-dEzVu",
       "created_at": "2026-01-24 17:26:51",
       "date": "2026-01-24",
       "crawled_at": "2026-02-12T19:05:35.143",
@@ -4415,7 +4415,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/621443247_4318356861752704_6688661100472400420_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDM4MC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QF13gAxwMTwczovoi2V3KoN3bglufK-ymMMvuuLY_2cBrvNcIk-Q7TEzTUQl1bSW3U&_nc_ohc=1MgxB8Mo3o8Q7kNvwFbL7lU&_nc_gid=zaAkuvL1aGfJavUvlY3bgQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxNzU1NzE2MzQ1NjMyMDE4OA%3D%3D.3-ccb7-5&oh=00_AftROukSiKYUZSIoOt3caadKsJdDL_L9uiNecMnSFYL36A&oe=699AFF76&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@choi.openai/post/DT6sAONj9K8",
+      "url": "https://www.threads.com/@choi.openai/post/DT6sAONj9K8",
       "created_at": "2026-01-25 11:31:47",
       "date": "2026-01-25",
       "crawled_at": "2026-02-12T19:05:35.144",
@@ -4438,7 +4438,7 @@
       "display_name": "carpediem._young",
       "full_text": "• 취업 원하는 취준생들에게\n아래 계정 모두 팔로우 하고 정독추천 \n2개월 가량 고심해서 고른 하기 계정들. \n\n- @dr.this.man 실제 대기업 임원\n- @dang_guel 취준생 신입사원의 팅커벨\n- @allpass_everything 취업 정석 코칭샘\n- @insateam_hr 취업과 인생조언\n- @mok_hamm 가치를 알려주는 \n- @carpediem._young 직장 내 마음가짐\n\n인스타 및 네이버블로그 홍보성 글에 가서 헛걸음 하지 말고, 올바른길을 걷자구 들.",
       "media": [],
-      "url": "https://www.threads.net/@carpediem._young/post/DT6raiWE90Y",
+      "url": "https://www.threads.com/@carpediem._young/post/DT6raiWE90Y",
       "created_at": "2026-01-25 11:26:30",
       "date": "2026-01-25",
       "crawled_at": "2026-02-12T19:05:35.144",
@@ -4463,7 +4463,7 @@
       "display_name": "port_zen",
       "full_text": "엄청나더라 안티그라비티 이런거 까지 가지 않아도 제미니로 웹에 코드 짜달라하고 디자인이 이상하면 스티치에서 말로 디자인 만든 후에 제미니한테 이 디자인이로 하고 던져주면 정말 요즘 출시되는 앱처럼 한 번에 되더라구 :)",
       "media": [],
-      "url": "https://www.threads.net/@port_zen/post/DT5aah0AQBc",
+      "url": "https://www.threads.com/@port_zen/post/DT5aah0AQBc",
       "created_at": "2026-01-24 23:38:42",
       "date": "2026-01-24",
       "crawled_at": "2026-02-12T19:05:35.144",
@@ -4491,7 +4491,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/621164551_17851491627656560_3289273908987541312_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uNTkxeDQ1OC5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QG8KkQTQONi9k06E_jjsO0YIcvk63JpDsr4t1QBKbtHPQ93AzzSyKnFjDAbqaMy4xw&_nc_ohc=7jxF4-VuMmsQ7kNvwHXNMmp&_nc_gid=kj2YO_ylImDqw27QZsc5vA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxNzEzOTQ0NjM4NzgxODk1OQ%3D%3D.3-ccb7-5&oh=00_Afsy3Ml0aOXIYmPClzg0lMvdW0xsbUbkUHWDOnYVKpZsPA&oe=699AF3C7&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@_mote_y/post/DT5NBtck8JT",
+      "url": "https://www.threads.com/@_mote_y/post/DT5NBtck8JT",
       "created_at": "2026-01-24 21:41:43",
       "date": "2026-01-24",
       "crawled_at": "2026-02-12T19:05:38.158",
@@ -4515,7 +4515,7 @@
       "display_name": "heon_yun",
       "full_text": "ClaudeCode 그리고 Antigravity를 사용하면서 느낀점.\n\n---\n\n1. 이제 소프트웨어가 얼마나 더 필요한가?\n1.1 소프트웨어를 완결하게(?)만들필요가 있나?\n1.2 소프트웨어를 잘(?) 만들 필요가 있을까?\n\n---\n\n2. 나의 경험\n2.1 파이썬+라이브러리+api으로 퀀트 계산을 하면서, 필요에 따라 추가 개발을 하고있다.\n2.2 결과는 AI에이전트에서 확인을 하고 있다.\n\n---\n\n3. 소프트웨어를 판매 난이도가 올라간다.\n3.1 가공된 정보 API를 제공해줘서, 토큰 사용량을 줄여주는 일? 편리하게 계산?\n3.2 최소한 프론트엔트는 사용자 입맛에 커스텀할 수 있겠다.\n3.3 소프트웨어를 만들어서 팔수있는 기회가 얼마 안남은것 아닐까?\n\n---\n\n4. 정보를 제공하는 뉴스레터 처럼, 에이전트가 먹을수 있는 업데이트패치?보안패치? 같은 프롬프트를 판매하는 날이 올까요?\n\n---\n\n5. 앞으로 대부분의 일은  에이전트를 개발,유지보수,개선,수정,평가 하는 일일텐데\n5.1 마치 스포츠팀을 관리하는것과 같은 능력이 필요할것 같다\n5.2 이부분은 로컬에서 처리하고, 새로운 모델 영입해서 테스트해보고 등등\n\n---\n\n6. 뭐가 더 효용성있겠나? 꼬꼬마들이.\n6.1 할배들이 쓰는 엑셀 배우기 vs 엑셀로 알수있는 결과값을 코드에이전트로 하기\n6.2 개인용 커스텀 행렬 에이전트 라고 부를까?\n6.3 이것을 중학교때부터 만들기 시작한다면??\n6.4 개인용 의사결정 에이전트 뚝딱 되는거지...",
       "media": [],
-      "url": "https://www.threads.net/@heon_yun/post/DT5T4kmEsEG",
+      "url": "https://www.threads.com/@heon_yun/post/DT5T4kmEsEG",
       "created_at": "2026-01-24 22:41:38",
       "date": "2026-01-24",
       "crawled_at": "2026-02-12T19:05:38.158",
@@ -4539,7 +4539,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/620512320_17851664895657769_7933729597317323080_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjUweDQ0MC5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QEO6rAN0E_r2C2rxQ3E0ewRlDxdLFPUyQY0rVmkxBWos6RNJOb-Sj3NcPlrhthEMnE&_nc_ohc=6Q3xCdrTNNMQ7kNvwHnT04V&_nc_gid=RQCuZMtUWeIg1BgOnz0tYg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxNzE1NDk3MjU2ODY2MjczMQ%3D%3D.3-ccb7-5&oh=00_AfuWiqsMzieM8VNpJxRP5-nEOIRIEWkqZBwZm6Yb166N1w&oe=699ADFF8&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@jaycee_donuts/post/DT5QjkwkjLL",
+      "url": "https://www.threads.com/@jaycee_donuts/post/DT5QjkwkjLL",
       "created_at": "2026-01-24 22:12:34",
       "date": "2026-01-24",
       "crawled_at": "2026-02-12T19:05:38.159",
@@ -4565,7 +4565,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/621573128_17902192800360597_3880519592420525322_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMjE2MHgxMjQ5LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QGBK--lWSOjtuDrGxMUJHk_M8zxwGy-keKtBC1HE0JQ8Furj80rdCtilaOEAn5G-Ek&_nc_ohc=hmKxgNVcfckQ7kNvwEJjx8m&_nc_gid=9y1lIVnfBg3t5oWPIpggcw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxNjQ0NTgzNDYyODIzNzM0OA%3D%3D.3-ccb7-5&oh=00_Afsv8Au057p_LSOkJ3thbO4Oey2-Sb2lhMNdq6vCDpXDOg&oe=699ADA0F&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@cloudian__/post/DT2vUQliQgk",
+      "url": "https://www.threads.com/@cloudian__/post/DT2vUQliQgk",
       "created_at": "2026-01-23 22:43:38",
       "date": "2026-01-23",
       "crawled_at": "2026-02-12T19:05:38.159",
@@ -4591,7 +4591,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/621617305_17873308422506863_5729000433692382214_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uNDQ3eDQ0Ny5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QH_DtlKVwL7QsOTgsrw81ayx8Afh6dKXm7YSG0xO9WyDkEFtLVi0ws8XIux4Sh1y8M&_nc_ohc=g3X02MtOXnMQ7kNvwElpaqP&_nc_gid=kD-nzK6awV1PV-SeV3rHyQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxNjc1MjE0MDMyMTQ2MjY4MQ%3D%3D.3-ccb7-5&oh=00_AfvmIqvV4nla7xZgDGgQ1_0jwmwww9Xq_d_4QQMvlfnXiw&oe=699B0725&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@beyond.cho/post/DT309qmktRH",
+      "url": "https://www.threads.com/@beyond.cho/post/DT309qmktRH",
       "created_at": "2026-01-24 08:52:13",
       "date": "2026-01-24",
       "crawled_at": "2026-02-12T19:05:41.173",
@@ -4617,7 +4617,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/611261195_17865481131549867_7702419871461631912_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTE2MXg4MDAuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QHj1_OT1plOHQ5MiDmR63xGydwNbhsmIp1mIUbuZI7_aWFL2b4wsDzwMgBqbVbbayw&_nc_ohc=AHw7EUwxzHUQ7kNvwFUHtl0&_nc_gid=z0gMPtqaCitKV7f3Bp3AUA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwNTM3NjU3ODU2NjgyMTQ0OA%3D%3D.3-ccb7-5&oh=00_AftCNtE-TRruAQMYKwg6Y_fumG_pUIZRQAfF99jr95ZRkQ&oe=699B0208&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@pulplewhale/post/DTPadYiERZI",
+      "url": "https://www.threads.com/@pulplewhale/post/DTPadYiERZI",
       "created_at": "2026-01-08 16:11:00",
       "date": "2026-01-08",
       "crawled_at": "2026-02-12T19:05:41.173",
@@ -4641,7 +4641,7 @@
       "display_name": "unaappa",
       "full_text": "거...앱만들어서 파는 것보담\n바이브코딩을 통해 툴을 만들어\n자기가 하는 일의 \n생산성 증대하는게 훨씬 낫다.\n\n내가 하는 일의 플러스 알파.\n경쟁자들을 따돌리는 가치!\n\n상상을 해보자...\n예를 들어 아파트 관리 포털을\n만들고 건물 내부망에 띄워 \n민원과 일처리를 쉽게하는 \n경비아저씨? 바이브 경비?\n자세 교정을 해주는 헬스 트레이너가\n자기만의 브랜드를 입히고\n자기 회원들에게 \n운동 내용을 보여주고 관리를 하는 앱?\n정말로 다양하다.\n굳이 앱스토어에 올려서 불특정 다수에게\n팔 필요가 없는거다.\n내가 지금 하고 있는 일의 플러스 알파가\n되는 무언가를 만들어 월수입을 끌어 올리고\n고객들에게 가치를 제공하는 것만으로도\n바이브 코딩의 가치는 살아있게 된다!",
       "media": [],
-      "url": "https://www.threads.net/@unaappa/post/DT2CYlsFRnG",
+      "url": "https://www.threads.com/@unaappa/post/DT2CYlsFRnG",
       "created_at": "2026-01-23 16:11:00",
       "date": "2026-01-23",
       "crawled_at": "2026-02-12T19:05:41.173",
@@ -4663,7 +4663,7 @@
       "display_name": "social.romanc",
       "full_text": "방문자가 팔로워가 안 되는 가장 큰 이유.\n상단 고정 핀 3개, 순서 엉망으로 해뒀기 때문입니다.\n\n대부분 그냥 '내가 보기에 예쁜 것'을 박아둡니다.\n그건 마케팅이 아니라 자기만족이죠.\n철저하게 신규 유입자를 꼬시는 '깔때기' 순서대로 배치해야 합니다.\n\n딱 정해드립니다. 이 순서대로만 박으세요.\n\n1. 자기소개 (신뢰)\n왼쪽 첫 번째는 무조건 명함입니다.\n내가 누구고, 어떤 가치를 줄 수 있는지 밝히세요.\n여기서 공감을 못 얻으면 바로 이탈입니다.\n\n---\n\n2. 압도적 성과 (권위)\n가장 반응 좋았던 꿀팁이나 인사이트를 배치하세요.\n\"이 사람 진짜네?\"라는 생각이 들게 만들어야 합니다.\n실력이 증명되어야 팔로우 버튼을 누릅니다.\n\n3. 제공 서비스 (전환)\n마지막은 비즈니스입니다.\n그래서 뭘 팔고 있는지, 뭘 도와줄 수 있는지 명확히 하세요.\n여기까지 온 사람만 지갑을 엽니다.\n\n---\n\n이 3단계 구조, 머리로는 알겠는데 막상 만들려니 막막한가요?\n기획부터 카드뉴스 제작까지 AI에게 맡기세요.\n자동으로 다 해주는 솔루션, 저 혼자 쓰기 아까워 공유합니다.\n\n어떻게 쓰는지 궁금하면 프로필 링크 눌러서 확인해보세요.\n도구 탓할 시간에 링크 한 번 누르는 게 이득입니다.",
       "media": [],
-      "url": "https://www.threads.net/@social.romanc/post/DTykKIbES09",
+      "url": "https://www.threads.com/@social.romanc/post/DTykKIbES09",
       "created_at": "2026-01-22 07:49:14",
       "date": "2026-01-22",
       "crawled_at": "2026-02-12T19:05:41.173",
@@ -4685,7 +4685,7 @@
       "display_name": "health_love_wealth_",
       "full_text": "속보: GOOGLE이 방금 대규모 업그레이드 되었습니다\n\nGemini는 지금 구글 드라이브 안에 있습니다!\n\n---\n\n더 이상 파일을 일일이 열어볼 필요가 없습니다. 그냥 선택하고 → Gemini에게 물어보세요.\n\n1) Drive를 AI 어시스턴트처럼 사용 (자동 정리 + 작업 수행)\nDrive에게 무엇을 할지 직접 말할 수 있습니다.\n\n예시 프롬프트:\n\t∙\t“Design이라는 폴더를 만들어”\n\t∙\t“이 파일들을 월별로 폴더에 정리해”\n\t∙\t“모든 인보이스를 한 폴더로 이동시켜”\n\n2) 파일을 열지 않고 내용 추출하기\n문서를 일일이 열어보고, 하나씩 검색하고, 추측하는 대신…\n그냥 Gemini에게 물어보세요.\n\n예시:\n\t∙\t“이 파일들에서 가격 정보를 찾아줘”\n\t∙\t“어떤 파일에 마감일이 언급되어 있어?”",
       "media": [],
-      "url": "https://www.threads.net/@health_love_wealth_/post/DT0InBtEnzX",
+      "url": "https://www.threads.com/@health_love_wealth_/post/DT0InBtEnzX",
       "created_at": "2026-01-22 22:26:55",
       "date": "2026-01-22",
       "crawled_at": "2026-02-12T19:05:44.193",
@@ -4707,7 +4707,7 @@
       "display_name": "joshproductletter",
       "full_text": "크리에이터로써 \n제 가장 큰 목표는\n그냥 오래 하는 것입니다.\n\n저는 이제 햇수로 3년차입니다.\n이 짧은 기간에 수천명을 만났는데요.\n\n너무나도 많은 사람들이\n1인 기업을 하겠다,\n크리에이터를 하겠다,\n월 1000을 벌겠다, 하면서\n대부분 사라졌고 안보입니다.\n\n이유가 뭘까요?\n그 이유는\n\n---\n\n딱 2가지입니다.\n\n1. 좋은 콘텐츠를 계속 못만들어서\n2. 수익화를 지속하지 못해서입니다.\n\n1번은 정말 할 말이 많지만 다음 기회로 하고,\n\n2번, 즉 수익화는 지속 못하면 \n치명적이라 봅니다.\n\n돈을 버세요. \n크리에이터를 하는 이유입니다.\n돈을 잘 벌면 하게 되어 있습니다.\n\n---\n\n돈을 버는 방법은 의외로 \n몇가지 없는 것 같습니다.\n아주 기발한 그런 건 없다고 봐요.\n\n제가 아는 걸 나열하자몈\n\n1. 강의\n2. 제품 (디지털, 오프라인)\n3. 광고 (애드센스, 유튜브, 인바운드 광고)\n4. 외주 (컨설팅, 구축 등)\n\n이 이상의 것이 별로 없는 것 같아요.\n\nWhat은 거의 고정되어 있고\n결국 How의 싸움 같습니다.\n\nHow는 결국 세일즈 같습니다.\n특히 AI 시대라면요.\n\n---\n\n무엇으로 돈을 벌지 꼭 염두에 두면서,\n그리고 그 돈을 계속 벌 생각을 하면서\n크리에이터를 지속하길 바랍니다.\n\n돈 번다고 의외로 사람들이\n욕하거나 문제삼지 않습니다.\n\n돈 벌겠다고 외쳐도\n생각보다 사람들은 나에게\n정말 관심이 없거든요.",
       "media": [],
-      "url": "https://www.threads.net/@joshproductletter/post/DTUjVRGCSgI",
+      "url": "https://www.threads.com/@joshproductletter/post/DTUjVRGCSgI",
       "created_at": "2026-01-10 16:04:44",
       "date": "2026-01-10",
       "crawled_at": "2026-02-12T19:05:44.194",
@@ -4733,7 +4733,7 @@
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/590404190_17932867899112832_3527967833544470222_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTY4MngxNDEwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHfzbPLHQNx_wkwUkO3cf7uWL2HFyluE_71TdZe89MR6Ky4CuyUeis-SwzpxltF_sI&_nc_ohc=4Qkfzp6GJmUQ7kNvwHz6tk4&_nc_gid=USq6pODBMOzyoixe33HMtA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc3Nzk4MTI4MDc5ODMyMjk2Mw%3D%3D.3-ccb7-5&oh=00_AfswOePR9UNIjvPO0Zm9AHbLaQR3GXRUY7eG4bCJKDBsXw&oe=699AF4F5&_nc_sid=10d13b",
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/591152290_702578159587821_7044574265903315732_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDM5Ni5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QHfzbPLHQNx_wkwUkO3cf7uWL2HFyluE_71TdZe89MR6Ky4CuyUeis-SwzpxltF_sI&_nc_ohc=4eFTxiW9y_UQ7kNvwE_P5-G&_nc_gid=USq6pODBMOzyoixe33HMtA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc3Nzk3OTA4ODU0NDY2OTk4NQ%3D%3D.3-ccb7-5&oh=00_AfvXSa8ErxpkcHYwm_3f2YckAXip37Tz8ulgUqE95vQBAA&oe=699B0318&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@choi.openai/post/DRuFda3D2Ca",
+      "url": "https://www.threads.com/@choi.openai/post/DRuFda3D2Ca",
       "created_at": "2025-12-01 21:01:10",
       "date": "2025-12-01",
       "crawled_at": "2026-02-12T19:05:44.194",
@@ -4765,7 +4765,7 @@
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/587040162_17932451358112832_9041819861045192939_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMjE2MHgxNDA4LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QEp-UO2VCasw1CZiH6J9GwlsK_fh_zV75v-8vCSQwsV0fqj-CuUyJYKbPLlbhpo_Xs&_nc_ohc=Sf1Vsth0QQEQ7kNvwE2Xeb7&_nc_gid=hrJ8iSlFInTpvgO3qlZSog&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc3NTQwMDQ3NzA4NjQwNTI0Ng%3D%3D.3-ccb7-5&oh=00_AfvAJaAa_ix4YxGIVtazAlEl7hq_Ouvr-_QfvwoGkKPnSw&oe=699AEE88&_nc_sid=10d13b",
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/588403304_17932603542112832_9140384820345221326_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMjE2MHgxNDE3LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QEp-UO2VCasw1CZiH6J9GwlsK_fh_zV75v-8vCSQwsV0fqj-CuUyJYKbPLlbhpo_Xs&_nc_ohc=yj48a6fq3YYQ7kNvwFN44ah&_nc_gid=hrJ8iSlFInTpvgO3qlZSog&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc3NjM5NTEzMjY5MDk2MTQxOA%3D%3D.3-ccb7-5&oh=00_AfsLmptXalFxnWNDgIkqyA_rM9FgQCJI7iMbbn_TTogn3w&oe=699B04B4&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@choi.openai/post/DRk6TWjAjI-",
+      "url": "https://www.threads.com/@choi.openai/post/DRk6TWjAjI-",
       "created_at": "2025-11-28 07:30:30",
       "date": "2025-11-28",
       "crawled_at": "2026-02-12T19:05:44.194",
@@ -4793,7 +4793,7 @@
       "display_name": "gwon_vibe",
       "full_text": "현재 바이브코딩 최강 조합\n= Antigravity + Claude code\n\n1. Antigravity (안티그래비티)\n- 간단하고 빠른 수정\n- 나노바나나로 이미지 생성\n- 에이전트 매니저로 병렬 작업 관리\n\n2. Claude code (클로드 코드)\n- 복잡하고 어려운 로직 설계\n- 스킬과 에이전트 활용\n- 그냥 코딩 제일 잘 함\n\n저도 지금은 이렇게 만들고 있습니다.",
       "media": [],
-      "url": "https://www.threads.net/@gwon_vibe/post/DTO3zt4EwZx",
+      "url": "https://www.threads.com/@gwon_vibe/post/DTO3zt4EwZx",
       "created_at": "2026-01-08 11:08:13",
       "date": "2026-01-08",
       "crawled_at": "2026-02-12T19:05:47.212",
@@ -4817,7 +4817,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/620978271_17860714695583183_6422955710809439643_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMjE2MHgxMjg1LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QFsGQzqmUekAXKH3STrkMzJKulGKl6_NVwX93pX6WJ0HXC6EyXTWFqIccQZhpXeDl0&_nc_ohc=hw15HptEpZcQ7kNvwGAUvKo&_nc_gid=oMfIYz4WB9a4DF-XMy_LWQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxNTQyNDAwMzQ0MDM1MTUwOA%3D%3D.3-ccb7-5&oh=00_AfuZDChOSp9sA8_kRFQK7dGmB15pH8cDr-LprDHcm-hwZg&oe=699AFD81&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@sinabrocoding/post/DTzG-uEj-3p",
+      "url": "https://www.threads.com/@sinabrocoding/post/DTzG-uEj-3p",
       "created_at": "2026-01-22 12:53:27",
       "date": "2026-01-22",
       "crawled_at": "2026-02-12T19:05:47.212",
@@ -4841,7 +4841,7 @@
       "display_name": "qjc.ai",
       "full_text": "Google Stitch MCP를 Claude Code나 Antigravity에 연결하면 AI가 디자인 시스템을 자동으로 이해한다는 거 알고 계셨나요?\n\n디자인-개발 시간이 50% 이상 줄어들어요.\n\n---\n\n1/ 사실 저도 처음엔 의아했거든요.\n\n\"AI가 디자인 컨텍스트를 어떻게 이해하지?\" 근데 실제로 써보니까 완전히 달랐어요.\n\nGoogle Stitch는 Google Labs에서 만든 AI 디자인 도구예요. 텍스트 프롬프트나 스케치를 넣으면 고품질 UI 디자인과 코드를 생성해주죠. 무료로 사용 가능하고요.\n\n---\n\n2/ 그런데 진짜 문제는 따로 있었어요.\n\nStitch에서 디자인을 만들면 코드를 수동으로 복사해야 했거든요. AI 에이전트는 그 맥락을 전혀 모르는 상태였고요.\n\n여기서 MCP가 등장해요. Model Context Protocol로 Stitch와 AI 에디터를 연결하면 AI가 디자인 프로젝트에 직접 접근할 수 있거든요.\n\n---\n\n3/ Claude Code에 설치하는 방법은 생각보다 간단해요.\n\n가장 권장하는 방식은 _davideast/stitch-mcp를 사용하는 건데요. 터미널에서 이렇게 입력하시면 돼요.\n\nnpx _davideast/stitch-mcp init\n\n이 명령어 하나로 Google Cloud 인증, 프로젝트 설정, API 활성화, MCP 설정까지 자동으로 다 처리해줘요. 진단 기능도 있어서 나중에 문제 생기면 확인하기 편하고요.\n\n---\n\n4/ Antigravity에서 쓰시려면 설정 파일을 직접 편집해야 해요.\n\n먼저 Google Cloud 설정은 동일하게 하시고요. 그다음 ~/.gemini/antigravity/mcp_config.json 파일을 열어서 stitch 서버를 추가하시면 돼요.\n\nJSON 형식으로 command는 npx, args는 -y와 stitch-mcp, env에는 프로젝트 ID를 넣으시면 끝이에요.\n\n---\n\n5/ 설치하고 나면 9가지 도구를 사용할 수 있거든요.\n\n제일 유용한 건 extract_design_context예요. 이걸로 Stitch 디자인의 \"DNA\"를 추출할 수 있어요. 색상, 폰트, 레이아웃 패턴 같은 거요.\n\n그다음엔 fetch_screen_code로 HTML 코드를 받거나, generate_screen_from_text로 새 화면을 만들 수 있고요.\n\n---\n\n6/ 실제 사용 사례를 하나 말씀드릴게요.\n\nStitch에서 전자상거래 사이트 5개 페이지를 만들었다고 해보세요. 홈, 상품 목록, 상세, 장바구니, 결제까지요.\n\nClaude Code에 \"같은 디자인으로 관리자 대시보드 만들어줘\"라고 하면 어떻게 될까요?\n\n---\n\n7/ AI가 extract_design_context로 기존 디자인 시스템을 분석하고, 그 스타일을 그대로 유지하면서 관리자 페이지를 생성해줘요.\n\n수동으로 스타일 가이드 작성할 필요가 없어졌죠. 디자인 일관성은 자동으로 유지되고요.\n\n실제로 MVP 개발 시간이 50-70% 줄었다는 사례들이 있어요.\n\n---\n\n8/ 문제 생기면 어떻게 해결하냐고요?\n\nAPI 활성화 안 되면 gcloud components install beta 실행하시고요. 인증 오류는 gcloud auth application-default login으로 해결할 수 있어요.\n\n도구가 안 보이면 에디터 재시작하시면 대부분 해결돼요.\n\n---\n\n9/ 결론적으로 디자인-개발 워크플로우를 자주 다루신다면 이거 설치해보시는 걸 강력 추천드려요. AI가 디자인 시스템을 이해하게 만드는 건 정말 큰 차이예요.\n\n여러분은 AI 에디터에 어떤 MCP 서버 연결해서 쓰고 계세요?\n\n---\n\n10/ 더 자세한 내용이 궁금하시다면 Google Stitch MCP 설정 가이드을 확인해보세요.\n\nhttps://discord.com/channels/@me/1276875193347866637/1463823941293310060",
       "media": [],
-      "url": "https://www.threads.net/@qjc.ai/post/DTzr3XyD9pL",
+      "url": "https://www.threads.com/@qjc.ai/post/DTzr3XyD9pL",
       "created_at": "2026-01-22 18:15:45",
       "date": "2026-01-22",
       "crawled_at": "2026-02-12T19:05:47.213",
@@ -4865,7 +4865,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/619541608_17940193086110550_5325140209167438338_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMjgxMngxMzE4LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QFQPPJeMlAsFqqlw0rY2rkdA1YMu4iBG1XRpO64IAP3UMXeJIX2NQl0nK2wf9wd70A&_nc_ohc=AaqRy-vbKRoQ7kNvwHSfukB&_nc_gid=mkD-BWTS1uWeIESek9z1Vg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxNTQ5MTkzNDE3ODQ2ODQ0MA%3D%3D.3-ccb7-5&oh=00_Afvv2At3YxGKE8V8p6qLJ3TJwrfeHao7LTvpQ2-Nh4ChIw&oe=699AE870&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@gonnector/post/DTzWbLkE2JY",
+      "url": "https://www.threads.com/@gonnector/post/DTzWbLkE2JY",
       "created_at": "2026-01-22 15:08:24",
       "date": "2026-01-22",
       "crawled_at": "2026-02-12T19:05:47.213",
@@ -4891,7 +4891,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/619975615_17930769393187059_5369091849356278483_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTk0MngxNDM5LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QEQz5s072ugghqeYQcbIzESECN63VAO_gRch6u2XmIhTaQEyZrLl_ke1s4cL33h60Q&_nc_ohc=LVZfGTaQCakQ7kNvwGWXp9j&_nc_gid=YwBZOyY9KeQluS-QakO1lQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxNTU3MTI2Nzg0NDc1MDgxNQ%3D%3D.3-ccb7-5&oh=00_Afv9JOR113zpSpsgUADuaXU9UcWIRcvh1rOZZNsx-AGG1g&oe=699ADFAC&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@ciaokevin/post/DTzodsdkkhu",
+      "url": "https://www.threads.com/@ciaokevin/post/DTzodsdkkhu",
       "created_at": "2026-01-22 17:46:02",
       "date": "2026-01-22",
       "crawled_at": "2026-02-12T19:05:47.218",
@@ -4917,7 +4917,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/621153861_17872427175507614_4989158688496131744_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uODY5eDcwMS5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QG_RDp5Y64ruykGsh6EA6K4r8jWdjsDCAn4HpB_WTcykwhqbN9oo2fx_O_btknEoRw&_nc_ohc=n8aIiNk854MQ7kNvwFYtUgW&_nc_gid=UaXX1t8Xj2beWTfhdM5cRA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxNTUyNjc1NTkxMDk2MjY2NQ%3D%3D.3-ccb7-5&oh=00_Afuua1GKfnWDswRWKb7dGfqM1AmXZPnW4BSTwUwgBZfO1Q&oe=699B052F&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@keke_appa/post/DTzeV51Ek3p",
+      "url": "https://www.threads.com/@keke_appa/post/DTzeV51Ek3p",
       "created_at": "2026-01-22 16:17:35",
       "date": "2026-01-22",
       "crawled_at": "2026-02-12T19:05:47.218",
@@ -4943,7 +4943,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/616185057_17945450898098484_6042125976357504248_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTQ0MHgyNDg5LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QHnDvKJdRmGkmzg-fxRLx7zy6V9W-b9zL2wzebOUCfPRgirTK_Kh86got2Oqvfqf3I&_nc_ohc=wtMaFsErb8UQ7kNvwFcM6nW&_nc_gid=3l2FclcxfnIB-DoLkLUYmQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxMDI3NTY3MTE5ODExNzU4Ng%3D%3D.3-ccb7-5&oh=00_Afvfz8BjnrJtO14rP_LkvTa1Me7DQZxwmpay5R8BF8RvbQ&oe=699B0C0F&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@naminsoo_ai/post/DTg0YkGE67S",
+      "url": "https://www.threads.com/@naminsoo_ai/post/DTg0YkGE67S",
       "created_at": "2026-01-15 10:24:37",
       "date": "2026-01-15",
       "crawled_at": "2026-02-12T19:05:47.218",
@@ -4967,7 +4967,7 @@
       "display_name": "akitect_cat",
       "full_text": "안티그래비티 Agent Skills 제대로 안 쓰면\n매번 프롬프트 소설 쓰다가 하루 다 감 ㄹㅇ\n\n요약해서 이렇게 씀.\n\n1) 오픈소스 스킬팩 하나는 무조건 깔아둬\n- GitHub에 Antigravity Awesome Skills 레포 있음.\n- 안티그래비티/Claude Code/Cursor 같이 쓰는 130+ 스킬 모음임.\n- 보안 점검, 린트, 테스트 생성, 성능 분석까지 다 들어있음.\n\n내가 기본으로 켜두는 스킬:\n- using-superpowers \n → 에이전트가 \"지금 어떤 스킬 쓸지 먼저 고르고 실행\"하게 강제함.\n- verification-before-completion \n → \"끝남\"이라고 말하기 전에 테스트/빌드부터 돌리게 만듦.\n\n이어서\n\n---\n\n2) 프로젝트에 붙이는 방법\n- 레포에 `/.agent/skills/` 폴더 만들어서 스킬들 복사해둬.\n- 전역 룰에 \"항상 using-superpowers 먼저 호출해\"라고 적어둬.\n- 그러면 답하기 전에 스킬부터 뒤져보고 실행함.\n\n3) 직접 만드는 스킬 예시\n- korean-saas-landing \n → 한국 B2B 랜딩 구조/카피 패턴을 SKILL.md에 정리해둬.\n- nextjs-clean-architecture \n → 폴더 구조, 네이밍, 훅/서비스 분리 기준 다 정의해둬.\n\n스킬은 한 번 만들어두면\n그 프로젝트에서 하는 대화마다 계속 재사용됨.\n여기서 효율 차이 벌어짐.\n\n새로운게 나오면 맛은 봐야지",
       "media": [],
-      "url": "https://www.threads.net/@akitect_cat/post/DTvVAAykggl",
+      "url": "https://www.threads.com/@akitect_cat/post/DTvVAAykggl",
       "created_at": "2026-01-21 01:38:59",
       "date": "2026-01-21",
       "crawled_at": "2026-02-12T19:05:47.218",
@@ -4989,7 +4989,7 @@
       "display_name": "qjc.ai",
       "full_text": "웹디자인, 이제 AI한테 시키면 됩니다. Google이 진짜 미친 도구를 내놨어요.\n\n---\n\n1/ Google I/O 2025에서 조용히 발표된 도구가 하나 있거든요. 이름은 Stitch입니다.\n\n근데 이게 단순한 AI 도구가 아니에요. 제가 직접 써봤는데, 솔직히 충격받았습니다.\n\n텍스트로 \"다크 테마 모바일 앱 홈페이지, 네비게이션 바랑 프로필 카드 넣어줘\"라고 치면... 그냥 UI가 뿅 하고 나와요.\n\n---\n\n2/ 진짜 대박인 건 이거예요.\n\n손으로 끄적인 와이어프레임 사진을 찍어서 올리면, 그걸 보고 프로급 UI로 변환해줍니다.\n\n화이트보드에 대충 그린 스케치도 되고요. 앱 스크린샷 올려서 비슷하게 만들어달라고 해도 돼요.\n\n기존 워크플로우가 \"와이어프레임 - 목업 - 프로토타입 - 코드\" 이렇게 몇 시간~며칠 걸렸다면, Stitch는 \"프롬프트 - 끝\"입니다.\n\n---\n\n3/ 여기서 끝이 아니에요. 진짜 혁신은 MCP 지원입니다.\n\nMCP가 뭐냐고요? Model Context Protocol의 약자인데요. 쉽게 말하면 AI 에이전트가 외부 도구랑 대화할 수 있게 해주는 표준이에요.\n\nStitch가 MCP를 지원한다는 건, 여러분이 쓰는 AI 코딩 도구(Cursor, Claude Code 등)에서 직접 Stitch를 불러서 쓸 수 있다는 뜻입니다.\n\n---\n\n4/ 실제로 stitch-mcp라는 오픈소스 프로젝트가 이미 나왔어요.\n\n이걸 설치하면 Cursor나 Claude Code에서 바로 Stitch API를 호출할 수 있거든요.\n\n설정도 간단합니다. Google Cloud 프로젝트 만들고, gcloud 명령어 몇 개 치면 끝이에요.\n\n---\n\n5/ 근데 진짜 소름 돋는 기능이 있습니다.\n\nextract_design_context라는 도구가 있는데요. 이게 기존 화면을 스캔해서 Design DNA를 추출해줘요.\n\n폰트, 컬러 팔레트, 레이아웃 구조... 이런 걸 자동으로 뽑아내서 다음 화면 만들 때 일관성 있게 적용해줍니다.\n\n\"홈 화면\"이랑 \"프로필 화면\" 따로 만들었는데 스타일이 다른 문제, 이제 없어지는 거예요.\n\n---\n\n6/ Figma 연동도 됩니다.\n\nStitch에서 만든 디자인을 \"Paste to Figma\" 버튼 하나로 피그마에 바로 붙여넣을 수 있어요.\n\n그리고 깔끔한 HTML/CSS 코드도 자동 생성해주고요. 프론트엔드 개발자들 작업량이 확 줄어들 겁니다.\n\n---\n\n7/ 가격이요? 무료입니다.\n\nGoogle Labs의 실험적 도구로 제공되고 있어서, Google 계정만 있으면 바로 써볼 수 있어요.\n\nstitch.withgoogle.com 접속하시면 됩니다.\n\n---\n\n8/ 솔직히 말씀드리면, 웹디자인의 게임 체인저가 될 것 같아요.\n\n아이디어에서 실제 인터페이스까지 가는 시간이 압도적으로 줄어들거든요.\n\n스타트업이 빠르게 MVP 만들 때, 개발자가 UI 프로토타입 잡을 때, 디자이너가 여러 버전 빠르게 테스트할 때... 다 쓸 수 있습니다.\n\n---\n\n9/ 정리하면 이렇습니다.\n\nGoogle Stitch = 텍스트/이미지로 UI 자동 생성\nStitch MCP = AI 코딩 도구에서 Stitch 직접 호출\nextract_design_context = 디자인 일관성 자동 유지\nFigma 연동 + 코드 생성 = 워크플로우 완성\n\n이제 \"디자인 못해서 못 만든다\"는 핑계는 통하지 않을 것 같아요.\n\n---\n\n10/ [출처]\n\nGoogle Stitch 공식: stitch.withgoogle.com\nGoogle Developers Blog: developers.googleblog.com/stitch-a-new-way-to-design-uis\nGoogle I/O 2025 발표: blog.google/technology/developers/google-ai-developer-updates-io-2025\nstitch-mcp GitHub: github.com/Kargatharaakash/stitch-mcp\nGemini CLI Stitch Extension: github.com/gemini-cli-extensions/stitch\n\n---\n\n*/ 가이드북 바로가기\n\nhttps://discord.com/channels/1275780448278155264/1276875193347866637/1463424548241149983",
       "media": [],
-      "url": "https://www.threads.net/@qjc.ai/post/DTwVSyTjMaz",
+      "url": "https://www.threads.com/@qjc.ai/post/DTwVSyTjMaz",
       "created_at": "2026-01-21 11:00:48",
       "date": "2026-01-21",
       "crawled_at": "2026-02-12T19:05:50.230",
@@ -5013,7 +5013,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/618567248_17895874125389551_6547717620476955345_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTI4MHg1NDIuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QE3qJi-SzgN7UM_pqzi5bxhKXBD8uznvBCFJEA5Mc3oudcC5Fx3neyaRCx6XhO9lCY&_nc_ohc=stwlGtplTR8Q7kNvwFqHlka&_nc_gid=JHEOamMCvlRvRSruizVoaA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxMjYxMDc0MTk3OTEzMzI1Ng%3D%3D.3-ccb7-5&oh=00_AfubWQQrCYX_Ih-ZAml7IVYoM7fG65xHr9CHcf_FUSMxtQ&oe=699AECAF&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@alliswellinsing/post/DTpHUUOgTVI",
+      "url": "https://www.threads.com/@alliswellinsing/post/DTpHUUOgTVI",
       "created_at": "2026-01-18 15:43:59",
       "date": "2026-01-18",
       "crawled_at": "2026-02-12T19:05:50.230",
@@ -5039,7 +5039,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/619184308_17903585124348288_4939467439299091776_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTM0OXg3NTMuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QHtxcHNqh1DRC1ixYqMYjAqQjbKIwU9RL8t35LqG5Op8v1WaSTq7U71hEcj7wsSX5o&_nc_ohc=sKwOZuQqXtEQ7kNvwHf78M1&_nc_gid=ykbUyQdeP5TQgZaclf88wg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxMzE2NjE4NDcxNjUxMzk0Mg%3D%3D.3-ccb7-5&oh=00_Afuz7-0wchRVEKX3c5H-yqaS7P2jl1rFgYz9H7ngc8iSpg&oe=699B0C01&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@ai_tusol/post/DTrFnEljzKW",
+      "url": "https://www.threads.com/@ai_tusol/post/DTrFnEljzKW",
       "created_at": "2026-01-19 10:07:33",
       "date": "2026-01-19",
       "crawled_at": "2026-02-12T19:05:50.231",
@@ -5064,7 +5064,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/618891508_17938619328112159_8410834097886334086_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTM2NngxMTk5LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QH9Ybb0Th64DfdTtNyXcsorECwMtxa27INiMVxnWtCTakjbdjoIIAr4nygxcibSSiM&_nc_ohc=1n-fDxVKOssQ7kNvwH9fvyG&_nc_gid=1lNPl8-zZ-HscUfE_NErkg&edm=AI6eXeABAAAA&ccb=7-5&ig_cache_key=MzgxMzEwNzg3MjM0MDEwMDMyNw%3D%3D.3-ccb7-5&oh=00_Afs9jNDL2Y_HwhrBSCo8zs1VRJoEuxv2uWYaFoGZoFr9Wg&oe=699ADF5F&_nc_sid=6efbad"
       ],
-      "url": "https://www.threads.net/@tofukyung/post/DTq4Wg9E8Tn",
+      "url": "https://www.threads.com/@tofukyung/post/DTq4Wg9E8Tn",
       "created_at": "2026-01-19 08:11:42",
       "date": "2026-01-19",
       "crawled_at": "2026-02-12T19:05:50.231",
@@ -5095,7 +5095,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/617041125_17936909784118032_9155709889937917359_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMjc1MngxNTM2LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QGYi_InJJUTklM6UxNNzZEpA8drlYvab6Vc3-Bteqihr8Py7kjBA84QJ1CMxbwhR7A&_nc_ohc=_p69TM92054Q7kNvwH5o1SL&_nc_gid=4unFBaVfcuNpp4r3b9813g&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxMjU1NzE2MzM2MTAxMjE5MQ%3D%3D.3-ccb7-5&oh=00_AftA5XzecO68E8I0__IWoPFKGhK1cd2xNIMQfo1pesaJ6A&oe=699B0753&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@yyn.star/post/DTo7IpQAQnf",
+      "url": "https://www.threads.com/@yyn.star/post/DTo7IpQAQnf",
       "created_at": "2026-01-18 13:57:32",
       "date": "2026-01-18",
       "crawled_at": "2026-02-12T19:05:53.244",
@@ -5121,7 +5121,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t39.30808-6/616229427_33203482012629819_988559150428244533_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uOTQyeDIwNDguc2RyLmYzMDgwOC5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QH3Mo2qMj77qzlNDjg74LV5cBjOhnjZGMxjY-AJ_BNBB57ux7RxNcXmIfwu-5N9xw4&_nc_ohc=gW6p4r-S_fEQ7kNvwHAWoVf&_nc_gid=lX8GHtmsQhuDCNruu2EVxA&edm=APs17CUAAAAA&ccb=7-5&ig_cache_key=MzgxMjYyNzEwMzU5OTg0ODkzMw%3D%3D.3-ccb7-5&oh=00_AfsfzhPCQDLBlSDVn9MbIz0TAy6IkDdq3yDjj-B73L3pPQ&oe=699AEE50&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@conanssam/post/DTpLCjKmBNN",
+      "url": "https://www.threads.com/@conanssam/post/DTpLCjKmBNN",
       "created_at": "2026-01-18 16:16:31",
       "date": "2026-01-18",
       "crawled_at": "2026-02-12T19:05:53.244",
@@ -5145,7 +5145,7 @@
       "display_name": "choi.director",
       "full_text": "📌 대기업 CEO에게 인정받은 보고법(5-5 규칙)\n\n1년간, 매주 목요일 09:00\nCEO, CPO, CFO 참석 정기회의에서\n고정 보고(발표)를 했다.\n\n이후 CEO 선정 사내우수직원이 되었다.\n대기업 전략실 기획자는 이렇게 보고한다.\n\n(자료 작성)\n1. 고정된 프레임이 우선이다.\n2. PPT 1장 = 1 메시지\n3. 그림보다 도식화\n4. 사진을 쓴다면 반드시 ‘초고화질+현장사진’\n5. 텍스트 윤곽선 다시체크\n\n(발표)\n1. 발표 장소 모든 컨디션, 매일 체크\n - CEO 의자 삐걱거림, 마이크 에코, 프로젝터 초점 등\n2. 스크립트는 내 인생에 없음\n - 내가 쓴 자료면 CEO 마주보며 발표함\n3. 레이저포인트 안씀\n - ‘좌->우, 상->하‘ 장표 상 눈의 흐름대로 끌고 감\n4. 주제나 흐름이 변경될 때, 의도된 3초 침묵\n - CEO는 나를 뚫어지게 쳐다보고 집중함\n5. 목소리는 크지 않게\n - CEO 자리와 발표자리 거리 계산 후 사전연습(녹음)",
       "media": [],
-      "url": "https://www.threads.net/@choi.director/post/DTo2byxifgG",
+      "url": "https://www.threads.com/@choi.director/post/DTo2byxifgG",
       "created_at": "2026-01-18 13:16:27",
       "date": "2026-01-18",
       "crawled_at": "2026-02-12T19:05:53.244",
@@ -5175,7 +5175,7 @@
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/618958272_17909722332294695_1759775916599357833_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNDgweDYxNi5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2QHwVRyl3IxHzqeMacIzP_c-hKWGdO3BqtkOUqsU7N6EKlh0wXjjB7CJuh3n455GfLM&_nc_ohc=vRSHg_GlcM8Q7kNvwHXnYWg&_nc_gid=Ext8dhxuMQiaNkhdPf75YQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxMjEyNDEwODg3Mjg2ODY3MQ%3D%3D.3-ccb7-5&oh=00_Afv2b63xGuZckwsvAm3QEa6oRBYTKRytxlUhI34nPw0eRA&oe=699ADA46&_nc_sid=10d13b",
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/618962693_17909722431294695_2556823946254453610_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNzE5eDU4Mi5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2QHwVRyl3IxHzqeMacIzP_c-hKWGdO3BqtkOUqsU7N6EKlh0wXjjB7CJuh3n455GfLM&_nc_ohc=XWvfCohcknwQ7kNvwEsvAl4&_nc_gid=Ext8dhxuMQiaNkhdPf75YQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxMjEyNDYxNTc5NjQ0MTM0OA%3D%3D.3-ccb7-5&oh=00_AfuJvEjsXfofYTfrP_HvGgRqqdC9QPhWsPJhIvfdEj2-gA&oe=699AE393&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@matt_dancho/post/DTnXmC9DuZZ",
+      "url": "https://www.threads.com/@matt_dancho/post/DTnXmC9DuZZ",
       "created_at": "2026-01-17 23:29:03",
       "date": "2026-01-17",
       "crawled_at": "2026-02-12T19:05:53.244",
@@ -5205,7 +5205,7 @@
       "display_name": "hajae.code",
       "full_text": "AI 공부에 주말 다 쓰시나요? \n구글이 푼 ‘이 비밀 문서’ 하나만 보세요.\n\n전 세계 1등 기업들이 실제로 돈 벌 때 쓰는\n생성형 AI 유즈케이스 101가지입니다.\n\n비즈니스 판도가 어떻게 변하는지\n딱 5분 만에 견적 나옵니다.\n\n긴 글 읽을 시간 없는 분들 위해\n핵심만 따로 정리해 댓글에 남겨둘게요.\n\n나중에 업무에 써먹을 수 있게\n우선 ‘저장’해두고 보세요.\n\n앞으로도 이런 '치트키' 정보만 받고 싶다면?\n팔로우하고 다음 소식 기다려주세요!\n\nhttps://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders\n\n---\n\n1. 6가지 생성형 AI 에이전트 유형\n이 보고서는 AI의 역할을 크게 6가지 범주로 분류합니다.\n\n• 고객 에이전트(Customer Agents): 고객 경험 개선 및 24시간 상담 서비스 제공.\n• 직원 에이전트(Employee Agents): 업무 생산성 향상 및 반복 업무 자동화.\n• 크리에이티브 에이전트(Creative Agents): 마케팅 문구, 이미지, 영상 등 콘텐츠 제작 지원.\n• 코드 에이전트(Code Agents): 소프트웨어 개발 및 코드 작성 가속화.\n• 데이터 에이전트(Data Agents): 방대한 데이터 분석 및 비즈니스 인사이트 도출.\n• 보안 에이전트(Security Agents): 사이버 위협 탐지 및 보안 운영 최적화.\n\n---\n\n2. 주요 산업별 대표 사례\n\n• 자동차 및 물류:\n• Mercedes-Benz: 운전자와 자연스러운 대화가 가능한 MBUX 가상 어시스턴트 구축.\n• Volkswagen: 소유자 매뉴얼을 학습한 AI가 차량 상태나 기능(예: 타이어 교체법)을 설명.\n• UPS: 물류 네트워크의 디지털 트윈을 구축하여 패키지 위치를 실시간 시각화.\n\n• 비즈니스 및 전문 서비스:\n• Accenture: 소매업체를 위한 가상 상담사를 구축해 고객 셀프 서비스 비율 향상.\n• Freshfields (로펌): 복잡한 법률 실사(Due Diligence) 및 문서 검토 업무를 자동화하여 정확도와 효율성 증대.\n• PwC: 세무 및 법률 전문가들이 복잡한 규제 데이터를 더 빠르게 분석하도록 지원.\n\n---\n\n• 금융 서비스:\n• Commerzbank: 고객 서비스 에이전트의 업무를 보조하여 상담 대기 시간을 단축.\n• Intuit: Gemini 모델을 활용해 세금 신고서 자동 채우기 기능을 강화하여 정확도 제고.\n\n• 리테일:\n• Mercari: 일본 최대 중고거래 플랫폼으로, AI 상담 도입 후 ROI 500% 예상 및 업무량 20% 감소.\n• Virgin Voyages: 텍스트-투-비디오 기술로 수천 개의 개인화된 광고 영상을 순식간에 제작.\n\n---\n\n3. 핵심 시사점\n\n1. 실험에서 생산으로: 기업들이 단순히 AI를 테스트하는 수준을 넘어 실제 서비스(Production)에 투입하여 ROI(투자 대비 효율)를 거두기 시작했습니다.\n2. 멀티모달 활용: 텍스트뿐만 아니라 이미지, 영상, 데이터를 동시에 이해하는 기능을 활용한 사례(예: 카메라로 계기판을 비춰 고장 진단)가 늘고 있습니다.\n3. 생산성 도구의 통합: Google Workspace와 Gemini를 결합해 이메일 요약, 초안 작성, 회의록 정리 등 일상 업무의 속도를 대폭 높이고 있습니다.",
       "media": [],
-      "url": "https://www.threads.net/@hajae.code/post/DTojOZDDwdm",
+      "url": "https://www.threads.com/@hajae.code/post/DTojOZDDwdm",
       "created_at": "2026-01-18 10:28:36",
       "date": "2026-01-18",
       "crawled_at": "2026-02-12T19:05:56.266",
@@ -5229,7 +5229,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/617378460_17887144605423864_9172419056596409381_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTQ0MHgxOTI4LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QEAR-snDLsqdkP1_b9DoRDf5P0hRAeEEq8vJfCgGe0HHRq6ChnLjt9XY5ytc7978Z0&_nc_ohc=jUpjwcbPCNoQ7kNvwFZG41d&_nc_gid=XmJfmH9nJRobfV_6wMPdhw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxMjU3MDA1Mjc5Mjc3MjYyMw%3D%3D.3-ccb7-5&oh=00_Afse6yZDpFHPqZcY_XLFzw2IaCZJJ6jio6QTLz1jbOUuRg&oe=699AD7EE&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@jeju_harry/post/DTo-ESagY-U",
+      "url": "https://www.threads.com/@jeju_harry/post/DTo-ESagY-U",
       "created_at": "2026-01-18 14:23:09",
       "date": "2026-01-18",
       "crawled_at": "2026-02-12T19:05:56.266",
@@ -5255,7 +5255,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/618865689_17942076912100503_9148186470707748982_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNzgweDEwOTUuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QHf76FBEnRpOL5vbKMjTecJbh6X54sdc864tDFSL8uSMjZkoiCcdm4KT1V3KaFvn7s&_nc_ohc=k4laflfIpwwQ7kNvwEbXhEX&_nc_gid=nh9kZ_7LhoQFc9woyE4bvQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxMjA5NDk2MDY5OTkzMjQwNQ%3D%3D.3-ccb7-5&oh=00_AftXBs-N6dUtuY3LNz-AWjkGuCokxth2-ImeQyBlpjb5ag&oe=699AD895&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@sydney__nam/post/DTjYrdcEyV1",
+      "url": "https://www.threads.com/@sydney__nam/post/DTjYrdcEyV1",
       "created_at": "2026-01-16 10:20:15",
       "date": "2026-01-16",
       "crawled_at": "2026-02-12T19:05:56.266",
@@ -5281,7 +5281,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/616740965_17939381940112438_3668702631911960083_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTE3OXgzODkuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QFR8QXuH1_-MH7Gyrb3Z-st4PirJDjNocxWjxL7leR4UzdbOpUYSYKN3bnw_AcsnJ8&_nc_ohc=2mcr_Zz8jbMQ7kNvwE6iMnh&_nc_gid=Ff-xiWBwTbKKyWaWT8fFsg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxMDkyMTYxNzM3NjQwMzk1NA%3D%3D.3-ccb7-5&oh=00_Afu-k0kE_GLr8_2034Cpiyv_Syvezd0dRP_gmzxq8C_jtA&oe=699AFFEC&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@monica_from_korea/post/DTjHQUWk-Hy",
+      "url": "https://www.threads.com/@monica_from_korea/post/DTjHQUWk-Hy",
       "created_at": "2026-01-16 07:48:00",
       "date": "2026-01-16",
       "crawled_at": "2026-02-12T19:05:59.278",
@@ -5305,7 +5305,7 @@
       "display_name": "qjc.ai",
       "full_text": "이번 주 AI 업계가 뒤집혔습니다. 월 100~200달러짜리 도구를 무료로 직접 만드는 개발자들이 쏟아지고 있거든요.\n\n---\n\n1/ 첫 번째 이슈: Claude Cowork의 역설\n\nAnthropic이 자율 AI 에이전트 'Cowork'를 출시했어요. 가격은 Claude Max 구독 기준 월 100~200달러.\n\n근데 출시 직후 개발자들이 뭘 했냐면요. \"이거 Gemini 3 Flash API로 직접 만들면 월 5달러도 안 들겠는데?\" 하면서 오픈소스 버전을 만들기 시작한 겁니다.\n\n실제로 'terminaI'라는 오픈소스 프로젝트가 나왔고, GitHub에 공개됐어요 (Prof-Harita/terminaI). 기능도 거의 비슷합니다.\n\n---\n\n2/ 왜 이런 일이 벌어졌을까요?\n\nGemini 3 Flash가 가성비가 너무 좋거든요. 긴 컨텍스트에 저렴한 가격. 개발자들한테는 완벽한 조합이었습니다.\n\n결국 \"고가 SaaS vs 저가 API 기반 DIY\" 대결이 시작된 거죠.\n\n도구에 종속되지 말고, 원리를 이해하고 직접 만들 수 있어야 한다는 것. 딱 이 상황입니다.\n\n---\n\n3/ 두 번째 이슈: Vibe Coding의 진화\n\n코드 직접 안 짜고 AI한테 자연어로 지시하는 'Vibe Coding', 들어보셨죠?\n\n근데 이게 한 단계 진화했어요. \"Claude가 짠 코드를 Gemini에게 리뷰시키는\" 워크플로우가 새로운 표준으로 자리잡고 있습니다.\n\n한 개발자가 실제로 3시간 만에 React 앱을 완성했다는 사례도 올라왔어요. Claude Code로 개발하고, Gemini로 검수하는 방식이었습니다.\n\n---\n\n4/ 왜 이게 중요하냐면요.\n\n단일 모델에 의존하면 그 모델의 편향이나 실수를 그대로 따라가게 되거든요.\n\n근데 서로 다른 모델을 교차 검증하면? 훨씬 정확해집니다.\n\n자동화 구축할 때도 마찬가지예요. n8n에서 Claude API로 초안 만들고, GPT로 검증하고, Gemini로 최종 확인하는 워크플로우. 이미 저희 고객사 중 몇 곳이 도입했습니다.\n\n---\n\n5/ 세 번째 이슈: Gemini Personal Intelligence - 편리함과 불편함 사이\n\nGoogle Gemini의 'Personal Intelligence' 기능 아시나요? 이번 주 미국에서 베타 출시됐습니다.\n\n사용자 연락처, 드라이브 파일, Gmail, 과거 위치까지 다 기억하고 연동하는 기능인데요. 유용한 동시에 프라이버시 우려가 큽니다.\n\nGoogle 개발자가 직접 제시한 사례를 보면요. 타이어 가게에서 타이어 사이즈를 몰라서 Gemini에게 물었더니, Gmail과 사진첩을 뒤져서 차량 정보와 번호판까지 찾아줬대요.\n\n---\n\n6/ 유용하지만 무섭습니다\n\n한 유저는 Reddit에 이런 경험을 공유했어요. 채식주의자라고 설정해놨더니, 전혀 관련 없는 정화조 원리 설명에까지 채식주의를 끌어들이더라는 거죠.\n\n또 다른 유저는 대화 중에 갑자기 Gemini가 연락처에 있는 실명을 언급해서 소름 돋았다고 합니다.\n\n기능 자체는 기본적으로 꺼져 있고, 사용자가 직접 켜야 합니다. 하지만 한번 켜면 Gemini가 내 정보를 얼마나 깊이 들여다볼 수 있는지 체감하게 되는 거죠.\n\n---\n\n7/ 여기서 우리가 배워야 할 것\n\nAI가 똑똑해질수록, 우리가 제어할 수 있는 범위를 명확히 설정해야 합니다.\n\n자동화 시스템 구축할 때도 마찬가지예요. 데이터 접근 권한, 개인정보 처리 범위, 이런 걸 처음부터 설계에 포함시켜야 해요.\n\n기능이 강력하다고 무조건 다 켜놓으면 안 됩니다. 필요한 것만, 안전하게.\n\n---\n\n8/ 결론\n\nAI 업계는 지금 두 가지 방향으로 움직이고 있습니다.\n\n1. 비싼 도구를 직접 만드는 DIY 문화 (terminaI 같은 오픈소스 프로젝트)\n2. 여러 AI를 조합하는 교차 검증 워크플로우 (Claude + Gemini)\n\n그리고 동시에 프라이버시와 안전성에 대한 경각심도 높아지고 있어요.\n\n저희가 계속 강조하는 원칙, 기억하시죠? \"도구에 종속되지 말고, 원리를 이해하라. 그리고 안전하게.\"\n\n이게 더 이상 이론이 아니라 2026년의 현실입니다.\n\n여러분은 이 중 어떤 트렌드가 가장 주목되시나요?",
       "media": [],
-      "url": "https://www.threads.net/@qjc.ai/post/DThwzd7D_z-",
+      "url": "https://www.threads.com/@qjc.ai/post/DThwzd7D_z-",
       "created_at": "2026-01-15 19:12:35",
       "date": "2026-01-15",
       "crawled_at": "2026-02-12T19:05:59.278",
@@ -5327,7 +5327,7 @@
       "display_name": "kimkj008",
       "full_text": "인포그래픽 생성을 해주는 Gems를 만들어 두고 사용하면 편리합니다.\n\n---\n\nGems 생성이후 필요한 내용을 인풋하면 생성 하기 위한 초안 텍스트를 만들어 확인을 요구합니다. ok 하면 곧바로 생성이 됩니다. 이 단계에서 수정해도 되구요.",
       "media": [],
-      "url": "https://www.threads.net/@kimkj008/post/DTgnPKiE3Yt",
+      "url": "https://www.threads.com/@kimkj008/post/DTgnPKiE3Yt",
       "created_at": "2026-01-15 08:29:44",
       "date": "2026-01-15",
       "crawled_at": "2026-02-12T19:05:59.279",
@@ -5349,7 +5349,7 @@
       "display_name": "moongi_adventures",
       "full_text": "프롬프트 단축키 모음\n\n알고 쓰면 효율 확 높여주는 단축키\n저장해놨다가 필요할때마다 꺼내쓰기!\n\n프롬프트 맨 뒤에 추가하면 돼~댓글에 \n리스트 달아놨어!",
       "media": [],
-      "url": "https://www.threads.net/@moongi_adventures/post/DTfDhjHFRLD",
+      "url": "https://www.threads.com/@moongi_adventures/post/DTfDhjHFRLD",
       "created_at": "2026-01-14 17:58:26",
       "date": "2026-01-14",
       "crawled_at": "2026-02-12T19:05:59.279",
@@ -5373,7 +5373,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/613761193_17857710039596148_1277856967764723257_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTI5MHg0NzMuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QEKv85OZ4KNAoVrmN88jP5UcQoB_VcxG0cAyeRc-sJgyDw1b6ZcQIiuMJY4UnUU_Bk&_nc_ohc=pxTcl-xu7tEQ7kNvwFrEUuF&_nc_gid=fGyJSoAgtUSJLqFScmX_fA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxMDE3Mjk0NDc4OTk4NjExMg%3D%3D.3-ccb7-5&oh=00_AfszneEgg1dfIH6QBanLTvekrZK3LA__ugPCs14nZ_cEDw&oe=699B08A5&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@feelfree_ai/post/DTgdBsrAttA",
+      "url": "https://www.threads.com/@feelfree_ai/post/DTgdBsrAttA",
       "created_at": "2026-01-15 07:00:31",
       "date": "2026-01-15",
       "crawled_at": "2026-02-12T19:06:02.296",
@@ -5397,7 +5397,7 @@
       "display_name": "manusai_kr",
       "full_text": "대부분 AI 이용자가 모르는 사실:\n이미지 합성 및 대체할 때, \n\n프롬프트에 4K, 초고화질등의 요청보다 \n레퍼런스로 제공하는 이미지가 고화질 일수록 \n\n더 좋은 화질의 결과물을 만들어서 제공합니다!\n\n---\n\n바로 1.6 MAX를 사용해보세요!\nhttps://manus.im/app",
       "media": [],
-      "url": "https://www.threads.net/@manusai_kr/post/DTfeub8kXPD",
+      "url": "https://www.threads.com/@manusai_kr/post/DTfeub8kXPD",
       "created_at": "2026-01-14 21:56:07",
       "date": "2026-01-14",
       "crawled_at": "2026-02-12T19:06:02.296",
@@ -5419,7 +5419,7 @@
       "display_name": "jisang0914",
       "full_text": "Claude Code Skills 만들어놨는데\nAI가 절반은 그냥 무시함.\n\n이상해서 테스트 200번 돌려본 사람 있음.\n\n진짜 활성화 확률: 20%\n동전 던지기보다 낮음.\n\n근데 방식 하나 바꾸니까\n84%로 올라감.\n\n---\n\n원래 Skills 작동 방식:\n\n공식 문서: \"AI가 자동으로 판단해서 활성화합니다\"\n현실: 그냥 무시하고 자기 맘대로 진행함\n\n특히 여러 Skills 동시에 필요한 작업?\nSimple Hook 성공률: 0%\n\n폼 만들기 + 라우팅 + 상태관리\n= 3개 Skills 필요\n= 하나도 활성화 안 됨.\n\n---\n\n왜 무시하냐면\n\n\"이 Skill 참고해서 작업해\"\n= AI한텐 \"옵션\"\n\n급하면 스킵해도 되는 거로 받아들임.\n더 중요해 보이는 거 먼저 하고\nSkills는 후순위로 밀림.\n\n제안은 무시당함.\n\n---\n\n84% 만든 방법: Forced Eval Hook\n\n\"각 Skill에 대해 YES/NO로 평가해.\n평가 끝나기 전까지 코드 작성 금지.\nCRITICAL: 평가만 하고 활성화 안 하면 무효.\"\n\nAI가 \"YES - 이 Skill 필요함\" 쓰는 순간\n본인이 커밋한 거임.\n\n자기가 쓴 건 무시 못함.\n\n---\n\n테스트 결과 (Scott Spence, 각 10회씩):\n\n폼+라우팅 작업:\n- Simple: 0%\n- Forced: 80%\n\n데이터 로딩:\n- Simple: 0%\n- Forced: 100%\n\n서버 액션:\n- Simple: 10%\n- Forced: 40%\n\n복잡한 작업일수록 차이 큼.\n\n---\n\n핵심은 \"커밋 구조\".\n\n제안: \"Skill 참고해\" → 무시 가능\n명령: \"YES/NO 평가 먼저. 안 하면 진행 불가\" → 무시 불가\n\n\"CRITICAL\" \"MANDATORY\" \"금지\"\n이런 단어가 진짜 효과 있음.\n\nAI한테 선택권 주면 안 됨.\n\n---\n\n정리:\n\nSkills가 \"제안\"이면 무시당함.\n\"계약\"으로 만들면 지켜짐.\n\n20% → 84%\n같은 Skills인데 4배 차이.\n\n팔로우 하고 DM 보내면\nForced Eval 템플릿 보내드림 👇",
       "media": [],
-      "url": "https://www.threads.net/@jisang0914/post/DThEbxXk726",
+      "url": "https://www.threads.com/@jisang0914/post/DThEbxXk726",
       "created_at": "2026-01-15 12:44:52",
       "date": "2026-01-15",
       "crawled_at": "2026-02-12T19:06:02.296",
@@ -5441,7 +5441,7 @@
       "display_name": "steady__study.dev",
       "full_text": "g-export: 구글 문서들을 로컬에 다운받아주는 Claude Skill\n\n공개된 Google 문서(Slides, Docs, Sheets)를 로컬 파일로 다운로드하는 스킬을 만들었습니다. https://github.com/corca-ai/claude-plugins/blob/main/plugins/g-export/skills/g-export/SKILL.md\n\n당연히 명시적 호출로도 동작하고, 맥락 안에서 구글 문서 URL을 에이전트가 발견하면 자동으로 fetch 대신 이 스킬을 써서 내용을 읽도록 했습니다.\n\n지원 포맷\n- Slide: pptx, odp, pdf, txt (기본: txt)\n- Docs: docx, odt, pdf, txt, epub, html, md (기본: md)\n- Sheets: xlsx, ods, pdf, csv, tsv (기본: csv)\n\n시트 csv는 gid가 제공시 해당 탭만 내려받으며, md는 이미지 문자열을 자동 제거하는 등의 디테일이 있습니다.\n\n---\n\n자세한 작업 과정은 블로그에 있습니다. https://www.stdy.blog/1p1w-02-g-export/\n\n고려했던 것들을 몇가지 공유해보면:\n\n1. Docs에서 시작해 Sheet와 Slides로 확장\n\n이 스킬은 구글 Docs를 `/export?format={}` 엔드포인트로 curl 다운로드가 가능하다는 것 덕분에 구현 가능했습니다.\n\n그런데 구글 Sheet와 Slides는 Docs와 URL 구조도 유사하고, 사용법도 유사합니다. 둘 다 다운로드 기능이 있고요. 아마 구글에서 설계할 때 공통 기능으로 다 빼놨을 거라고 보는데, 역시나 이들도 Docs와 유사하게 `/export` 엔드포인트를 지원하더군요. 그래서 스킬에서 3가지 타입을 모두 지원하게 했습니다.\n\n---\n\n2. 다중 탭 처리 및 포맷 선택\n\n슬라이드는 당연히 여러 장이고, 독스에도 탭이 있고, 시트에도 탭이 있죠. 제가 이 스킬을 만든 가장 주된 이유가 'LLM에게 넘기기' 였기 때문에, 가능하면 한번에 모든 정보가 텍스트로 주입될 수 있기를 바랐습니다. 물론 pdf 나 docx, pptx 등도 앤트로픽이 스킬을 다 만들어뒀기 때문에 좀 더 Rich한 포맷으로 다운받아도 읽는 게 가능했지만, 다른 스킬을 연계해야만 하는 게 번거롭기도 하고... 필요시 사용자가 알아서 할 거라고 봤어요.\n\n그래서...\n\n---\n\n슬라이드는 이미지로 다운받으면 '현재 선택된 슬라이드'만 저장되기 때문에 그 포맷은 그냥 지원하지 않기로 했습니다. 그리고 쉬운 분석을 위해 전체 슬라이드 내용이 잘 들어오는 txt 를 기본 포맷으로 뒀어요.\n\n독스는 탭이 여럿이더라도 export 가 기본적으로 한 파일에 취합해줬기 때문에 별 문제가 없었고, 기본 포맷으로는 당연히 md 를 선택했습니다.\n\n시트가 문제였는데, 텍스트로 읽기에는 csv 가 가장 좋지만 이렇게 하면 첫 탭의 정보만 다운받아집니다. 그래도 주 목적이 분석이니만큼 csv 를 기본 포맷으로 두고, 대신 gid 를 URL에 같이 넣으면 다른 탭을 선택할 수 있다는 설명을 추가했습니다.\n\n---\n\n3. 이미지 처리\n\n독스를 마크다운으로 다운받으면 내부 이미지가 모두 base64 문자열로 치환됩니다. 굉-장히 긴 문자열이 되고, 당연히 LLM에게는 쥐약이죠. 그래서 이미지 문자열을 전부 제거하게 했습니다. 참고로 txt 에서는 이미지가 아예 무시됩니다.\n\n이미지가 필요하다면 사용자가 알아서 pdf나 html로 다운받을 거라고 가정했습니다.\n\n---\n\n4. 파일명 지정\n\n처음에는 파일명을 직접 지정하다가, 원본 파일명에 대한 정보가 내려올 거라고 생각해서 질의하니 역시 그랬습니다.  cURL 에서 -I 옵션을 줘서 Content-Disposition Header를 가져올 수 있고, 이 정보를 디코딩하면 원본 파일명을 그대로 읽는 게 가능하더군요.\n\n그러나 파일 이름이 한글일 때는 UTF-8 디코딩이 필요했습니다. 그냥 시켰더니 python3 의 urllib.parse 라이브러리로 디코딩을 하던데, 외부 의존성을 최소화하고 싶어서 상의하니 bash 와 printf 로 대부분의 유닉스 환경에서 작동하도록 만드는 게 가능하더군요.\n\n이러한 의존성 최소화 원칙을 CLAUDE[.]md 에 추가하기도 했습니다.\n\n---\n\n맺으며\n\n지난 글에서도 언급했듯, 저는 LLM이 읽기 쉬운 포맷으로 문서를 쥐어주는 걸 중요하게 생각합니다. 요즘은 이게 대부분 \"Claude Code가 UNIX 명령어와 스크립트만으로 URL을 읽을 수 있게 하자\"로 치환됩니다. 이러한 작은 도구들을 하나둘 만들다 보면 워크플로우가 점차 매끄러워지며, 나아가 자동화될 수 있습니다.\n\n이번에 만든 도구와 시행착오 모두 AI가 더 똑똑해지는 몇 달 뒤에는 무의미해질 수도 있다는 건 잘 알고 있습니다. 하지만 그렇더라도 '내 업무에서 불편함을 찾고 스스로 개선해나갈 수 있다는 자신감'은 오래도록 남을 거라고 생각해요.\n\n---\n\n1.3.0 업데이트:",
       "media": [],
-      "url": "https://www.threads.net/@steady__study.dev/post/DTgpH7LE7g-",
+      "url": "https://www.threads.com/@steady__study.dev/post/DTgpH7LE7g-",
       "created_at": "2026-01-15 08:46:14",
       "date": "2026-01-15",
       "crawled_at": "2026-02-12T19:06:02.296",
@@ -5465,7 +5465,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/617458178_17866334076549867_8251176351854407929_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTM3Nng3Njguc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QGEF8ddOYmbxSluAq8bPlOdZZ2R50ARSzPpt2v3ANmpXh2Q-kBjU8YjypMF32pm-vA&_nc_ohc=Fw_iB5r2voUQ7kNvwFLlPsp&_nc_gid=HR8dxWJAPaPkUBfXIb-EjA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxMDMyMjEzMDc3MzU1MDI0Mg%3D%3D.3-ccb7-5&oh=00_AftH7gHxvEOimRGRtD-ZnrIBllNwnx20nwg9uQ_2vj0Dcg&oe=699AE5B4&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@pulplewhale/post/DTg-8vJEcJ0",
+      "url": "https://www.threads.com/@pulplewhale/post/DTg-8vJEcJ0",
       "created_at": "2026-01-15 11:56:56",
       "date": "2026-01-15",
       "crawled_at": "2026-02-12T19:06:02.305",
@@ -5491,7 +5491,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/613585868_17853345861605524_7333124857050333707_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMjE2MHgxMTc4LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QGfy3GyviSTHpaXkUo8rUWJbLDgXSCYYOKcmbDITHJPBTti0AN7EeI-NREIBQMIOHk&_nc_ohc=HeMhKVNqUSEQ7kNvwFSRprf&_nc_gid=uTSt7ykewYRpHLpw3nDMsA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwOTc0MTcxMDI3Njc5MjA1OA%3D%3D.3-ccb7-5&oh=00_AftPUsTtEmHnCLAj16PZ7OBrzVIFGK7JimqCMRFEvS12oA&oe=699AEB31&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@tech.taek/post/DTe6-aPCY76",
+      "url": "https://www.threads.com/@tech.taek/post/DTe6-aPCY76",
       "created_at": "2026-01-14 16:43:44",
       "date": "2026-01-14",
       "crawled_at": "2026-02-12T19:06:02.305",
@@ -5515,7 +5515,7 @@
       "display_name": "danielmentality_insta",
       "full_text": "바이브코딩이 쉬워 보이는데, 막상 오류가 쌓이면 금방 막히곤 합니다. \n제가 해보니 질문→계획→구현 순서를 강제로 만들면 훨씬 덜 헤매더군요.\n\n1) 목표를 한 문장으로 고정합니다(누구의 어떤 문제를 무엇으로 해결). \n2) 제약을 적습니다(필수 기능 3개, 제외할 것, 사용 기술, 완료 기준). \n3) AI에게 “코딩하지 말고, 먼저 질문 5개와 작업 계획을 작성해달라”고 요청합니다.\n\n---\n\n이어서, 계획이 나오면 “작게 만들고, 바로 확인”으로 갑니다. \n바이브코딩은 속도보다 검수 리듬이 성패를 가르는 편입니다.\n\n4) 구현 요청은 한 번에 하나씩만 합니다. \n- “파일 구조 제안 → 필요한 파일만 생성 → 실행 방법까지 작성”을 포함해달라고 합니다. \n5) 오류가 나면 감으로 고치지 않고, 로그/재현방법을 그대로 붙입니다. \n- “원인 후보 3개, 수정안 2개, 변경 파일 목록, 왜 안전한지”를 요구합니다. \n\n마지막으로, 동작하면 README에 ‘설치/실행/환경변수/테스트 방법’을 남기면 다음 수정이 쉬워집니다.",
       "media": [],
-      "url": "https://www.threads.net/@danielmentality_insta/post/DTehb5JEavI",
+      "url": "https://www.threads.com/@danielmentality_insta/post/DTehb5JEavI",
       "created_at": "2026-01-14 13:00:34",
       "date": "2026-01-14",
       "crawled_at": "2026-02-12T19:06:02.305",
@@ -5541,7 +5541,7 @@
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/615361267_17908550997328272_6878784442460588708_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjMxeDE3My5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QGfQ7OIWjGbvW7Hgf6pyaYIRYQh-kNe3SIYc0ozSM8Fh_7TpyIrlkq12gRaes7Swhk&_nc_ohc=9EXELStN8lgQ7kNvwFOXihy&_nc_gid=80mh6--BEfqobt0Xxa5zvQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxMDIyNDkzNDk1OTE1MzEzNA%3D%3D.3-ccb7-5&oh=00_AftRB8gkCNYVXFzGgx5RCF1VbIB8l5oGiBJc2Ql7IXTQWg&oe=699AF4A8&_nc_sid=10d13b",
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/616064463_17908551066328272_1907566744923959994_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTAwNng3MzYuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QGfQ7OIWjGbvW7Hgf6pyaYIRYQh-kNe3SIYc0ozSM8Fh_7TpyIrlkq12gRaes7Swhk&_nc_ohc=CrmXjrXSejAQ7kNvwGEnpKk&_nc_gid=80mh6--BEfqobt0Xxa5zvQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxMDIyNDk5NzAxODA4MTc0OQ%3D%3D.3-ccb7-5&oh=00_AfuFSn2xiKS4-6pKy0XvxyH0Xm18ZmOICAtnKZhW86OJYw&oe=699B0B3A&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@the_unwork/post/DTgo1tgkzfe",
+      "url": "https://www.threads.com/@the_unwork/post/DTgo1tgkzfe",
       "created_at": "2026-01-15 08:43:44",
       "date": "2026-01-15",
       "crawled_at": "2026-02-12T19:06:02.305",
@@ -5569,7 +5569,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/613059641_17845645374648544_2759458554114064340_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTIzN3g1ODkuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QFyDoH1QZXhjMxs6_grz1R8JLw-W26Q4H3td8EI3tIayV7FHGOiGi87yeLzbv1Itu4&_nc_ohc=FuFbxkus2lMQ7kNvwEWiyQ9&_nc_gid=j5nfyQgzHk4jbqyju-3oHw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwOTIxNjYwNjI2NzE2MjA3MA%3D%3D.3-ccb7-5&oh=00_AfsA9vRdSOrxXhi_FUm6kLmgUMuLVgIRKwIZ217YAHCetg&oe=699AFF4D&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@aiecorofficial/post/DTdDlJBEr3W",
+      "url": "https://www.threads.com/@aiecorofficial/post/DTdDlJBEr3W",
       "created_at": "2026-01-13 23:20:27",
       "date": "2026-01-13",
       "crawled_at": "2026-02-12T19:06:05.316",
@@ -5595,7 +5595,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/616118396_17938653417111488_5894763706706625455_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTEwN3g4MjIuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QG9k637d1irWmBhOsXvd9hlPEi-pa7rp9Au30zjcyMEHpBL2iyqfVX2w1b2MEvysGg&_nc_ohc=gaEBwZlutzkQ7kNvwHuEuSs&_nc_gid=grHDj4Aoh7bGdLoMT63Jeg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwOTI3ODMwMzIxMjQ0NDY2Ng%3D%3D.3-ccb7-5&oh=00_AfsiGudfyfx_ha6ds9rG7-HSHCjH6CCp2TwVOlF1aBjnMg&oe=699AF88A&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@immersivebama/post/DTdRm8xlJv6",
+      "url": "https://www.threads.com/@immersivebama/post/DTdRm8xlJv6",
       "created_at": "2026-01-14 01:23:01",
       "date": "2026-01-14",
       "crawled_at": "2026-02-12T19:06:05.316",
@@ -5621,7 +5621,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/612650275_17935634307117517_5493552052326433144_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTUxNXg4MzIuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QFefgJH-NQ2CbtTLEgnRVHqYoPUp58k8e0T-IIVJ4V3iPY1pXy87Vu4lE0-y7otpms&_nc_ohc=m0GS8NJTYr4Q7kNvwEKNP0u&_nc_gid=ZYBFWimKOzczWK1K_37flg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwODkxNjAxNTA4NjE0MTcwNQ%3D%3D.3-ccb7-5&oh=00_AftOHYMdFQPV1KI2nVatc_Oz7DqDTVN3OA7TE_TmsVTSCg&oe=699AF0A2&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@pangol82/post/DTb_O9qgYEJ",
+      "url": "https://www.threads.com/@pangol82/post/DTb_O9qgYEJ",
       "created_at": "2026-01-13 13:23:13",
       "date": "2026-01-13",
       "crawled_at": "2026-02-12T19:06:05.317",
@@ -5645,7 +5645,7 @@
       "display_name": "jisang0914",
       "full_text": "Claude Code 만든 사람 세팅 공개됨.\n터미널 5개.\n웹 버전 5-10개.\n폰으로 아침에 세션 시작.\n15개 이상 동시에.\n근데 \"특별한 세팅 없다\"래.\n\n---\n\n모델:\nOpus 4.5 씀.\n\"크고 느린데 왜?\"\n손이 덜 가서.\n자꾸 고쳐줘야 하는 작은 모델보다\n결국 더 빠르대.\n\n---\n\nCLAUDE.md 운영법:\n팀 전체가 파일 하나 공유.\nClaude가 뭔가 잘못하면?\n바로 그 파일에 추가.\n\"다음엔 이러지 마\"\n일주일에 몇 번씩 업데이트.\n\n---\n\n코드 짜기 전에:\n바로 안 짬.\nShift+Tab 두 번 → Plan 모드.\nClaude랑 계획 핑퐁.\n괜찮으면 그때 실행.\n\"좋은 계획이면 보통 한 번에 끝남\"\n\n---\n\n반복 작업은 자동화:\n- /commit-push-pr 같은 slash command\n- 코드 정리하는 subagent\n- MCP로 Slack 검색, 에러 로그 확인\nClaude가 알아서 다 씀.\n\n---\n\n오래 걸리는 작업은:\n--permission-mode=dontAsk 쓰거나\nralph-wiggum 플러그인.\nClaude가 나한테 막혀서 멈추는 일 없게.\n\n---\n\n가장 중요한 팁:\n\"검증 방법 주면 퀄리티 2-3배\"\n테스트 짜게 하든\n브라우저 열어서 확인하게 하든.\n스스로 피드백 돌게 하는 게 핵심이래.\n\n🔗 Boris 원문: \nhttps://www.threads.com/@boris_cherny/post/DTBVlMIkpcm\n\n너는 어떻게 쓰고 있어? 👇",
       "media": [],
-      "url": "https://www.threads.net/@jisang0914/post/DTXV6R6E-IZ",
+      "url": "https://www.threads.com/@jisang0914/post/DTXV6R6E-IZ",
       "created_at": "2026-01-11 18:05:10",
       "date": "2026-01-11",
       "crawled_at": "2026-02-12T19:06:05.317",
@@ -5669,7 +5669,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/612128573_17908024599318076_3789644857711431989_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTA2MHgxMzI0LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QGKq0VE3sPTjt5gLw0yAGayhTMPLbUhnLH9EjdpUVUyynaogb6LV5VJ-kQgt90lFgs&_nc_ohc=Qsm0LJ1fMhwQ7kNvwHiEzsk&_nc_gid=Lh7LFv2hho1MmDaZLgHfTw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwNzQ2ODA3OTYzOTkzMzUwNw%3D%3D.3-ccb7-5&oh=00_AfubVJovXjh2uR0AbMengReBQKzdFTyV6Z0Sz6womTSOzw&oe=699AD50E&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@tilnote/post/DTW2A2pE5y0",
+      "url": "https://www.threads.com/@tilnote/post/DTW2A2pE5y0",
       "created_at": "2026-01-11 13:26:27",
       "date": "2026-01-11",
       "crawled_at": "2026-02-12T19:06:08.342",
@@ -5696,7 +5696,7 @@
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/612072732_17926298442193014_4919840245737070619_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTA3OXg3Mjguc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QHxejISBDNUQk2jHhjgk05DW73b02Ppec7e6oNK8XVYRIT1v0xaOdkwEFTWN02P1qs&_nc_ohc=qABlLr19tAYQ7kNvwGRNgfJ&_nc_gid=LiIxOv1aF-xZpWMNJ6KPoA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwNzQ3MTM3MTQ2Mzg0NjMzNg%3D%3D.3-ccb7-5&oh=00_Afs3U76cjSXv-0IJMh3-yjaERtp8Hpzyl-yF-JdAy0D3gA&oe=699B03C8&_nc_sid=10d13b",
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/612477387_17926305912193014_1025830197266710889_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTA4MHgxNTY3LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QHxejISBDNUQk2jHhjgk05DW73b02Ppec7e6oNK8XVYRIT1v0xaOdkwEFTWN02P1qs&_nc_ohc=WnjEEYtpN8IQ7kNvwH78Ovr&_nc_gid=LiIxOv1aF-xZpWMNJ6KPoA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwNzUyMDc2MTM4OTk1ODg4MQ%3D%3D.3-ccb7-5&oh=00_AfvsgeUcuNlsqhm9BSy83V8u0MgECpMV9ny-YzAPdMu-Ng&oe=699AEE78&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@dev_shibaa/post/DTW2wockmnA",
+      "url": "https://www.threads.com/@dev_shibaa/post/DTW2wockmnA",
       "created_at": "2026-01-11 13:32:58",
       "date": "2026-01-11",
       "crawled_at": "2026-02-12T19:06:08.342",
@@ -5721,7 +5721,7 @@
       "display_name": "careerhackeralex",
       "full_text": "지금 실리콘밸리 개발자는 모두 비상에 걸렸다. \nMeta에서 8년차 개발자로 일해온 나 역시 마찬가지다.\n\nAI가 너무 빠른속도로 발전하면서, 그리고 너무 잘하게 되면서 \"현타\" 가 터져나오고 있다. 특히 네임드전드 개발자들 사이에서.\n\n그래서 지금은 모두가 불안해하며 열심히 Claude Code 를 써보며 공부하고 있다.\n오늘 공부가 끝나면 내일 새로운 툴이 생긴다. 사실 따라가기 벅차다.\n\n나는 \"엔지니어링\" 이라는 직군이 사라질것이라고 생각하지는 않는다. 다만 우리에게 친숙한 \"Coding\" 이라는 개념은 \"AI Coordinations / Orchestrations\" 의 개념으로 반드시 바뀔것이라고 생각한다.\n\n개발자들이야말로 이러한 도구들을 쓰기에 더욱 유리하지만, 한편으로는 가장 늦게 adopt 하는 사람들도 분명히 많다. 그 이유는 우리 모두가 \"변화\" 를 두려워하기 때문이다.\n\n처음에는 거부하고, 화내고, 의심하지만 결국 수용하지 않는다면 \"늪\" 에 빠질 것이다.",
       "media": [],
-      "url": "https://www.threads.net/@careerhackeralex/post/DTUrjxHlL_-",
+      "url": "https://www.threads.com/@careerhackeralex/post/DTUrjxHlL_-",
       "created_at": "2026-01-10 17:16:37",
       "date": "2026-01-10",
       "crawled_at": "2026-02-12T19:06:08.343",
@@ -5747,7 +5747,7 @@
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/613201474_17920333971235083_2794013056675947408_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTI4MHg3MjAuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QFM7otLnWz8KYAyUPHxcBWDXXgOBdGu2JJmMTjaGlHJRlG6WYNlb_yo-3iDGzsuduc&_nc_ohc=_XDcHS5BKBwQ7kNvwGmnozh&_nc_gid=LEIUpRffQfgxV9XICMby_A&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwNzQ4MDUwMjY0NzgzOTYwOQ%3D%3D.3-ccb7-5&oh=00_Afs-7UdFlDFotPsNzRatUqbgv3SA8XHjMZ1Je4drHo_EYg&oe=699AFF45&_nc_sid=10d13b",
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/613181467_17920334040235083_7429771814384469843_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTI4MHg3MjAuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QFM7otLnWz8KYAyUPHxcBWDXXgOBdGu2JJmMTjaGlHJRlG6WYNlb_yo-3iDGzsuduc&_nc_ohc=Jen4hrfdJCAQ7kNvwEGh00G&_nc_gid=LEIUpRffQfgxV9XICMby_A&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwNzQ4MDU3MzU4MTg4NTYxOA%3D%3D.3-ccb7-5&oh=00_AftQSZLjMvmeE-gT9pWuF_LyO3EnkeC7LeZRPyCSb7cDlg&oe=699AFDEA&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@edtkworker/post/DTW40xejLeJ",
+      "url": "https://www.threads.com/@edtkworker/post/DTW40xejLeJ",
       "created_at": "2026-01-11 13:51:01",
       "date": "2026-01-11",
       "crawled_at": "2026-02-12T19:06:08.343",
@@ -5779,7 +5779,7 @@
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/613110024_17890218975406917_8432821655118213178_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uNDM5eDE4My5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QEm29jb-1MYs2WW2f-AQgR5l-PYLkdiYGP7MSA-H5ExSxWU3kzqL6--1TOBMOKBgTs&_nc_ohc=mDs-tpcS9R8Q7kNvwEBGwCV&_nc_gid=IRTfDXhwH2kIjq3yD5Wk6w&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwNzMwODYxOTIxNDY3MDQ4NA%3D%3D.3-ccb7-5&oh=00_Afs0Ma8CGeEFpr9VppvntoP2OkOlllqoB22paBTc_fWciw&oe=699B08E3&_nc_sid=10d13b",
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/613660105_17890219020406917_7299123992357640414_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNDM3eDI2My5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QEm29jb-1MYs2WW2f-AQgR5l-PYLkdiYGP7MSA-H5ExSxWU3kzqL6--1TOBMOKBgTs&_nc_ohc=KjrbAGZmq7cQ7kNvwHCHog3&_nc_gid=IRTfDXhwH2kIjq3yD5Wk6w&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwNzMwODY4NjEzODk0Nzc3Nw%3D%3D.3-ccb7-5&oh=00_AfsiqzeZ1XQiwqQjQXvtCK3s9Y_jAOGHwqiJjCnwlgLXZg&oe=699AFCA3&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@specal1849/post/DTWRE-4EbAC",
+      "url": "https://www.threads.com/@specal1849/post/DTWRE-4EbAC",
       "created_at": "2026-01-11 08:09:15",
       "date": "2026-01-11",
       "crawled_at": "2026-02-12T19:06:11.361",
@@ -5809,7 +5809,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/611268080_17907146616319613_3969179658808414466_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTA4MHgxMDgwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QHlMCFIdpsyWy6qid0dbD0kxv5cS0ZZg2TaAdRWxFklfGETNSMwASD3uyy-Q4RWcS4&_nc_ohc=s8jyy8PFFkoQ7kNvwGQAKIJ&_nc_gid=iqneMOTMOqf4OglVtIwokw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwNjY4NTQ5MjAyMTQ2MTY3MQ%3D%3D.3-ccb7-5&oh=00_Afvrsfm9skv2-C8cvBoKWlpqtskM2taG8RnYWIM3yWI98Q&oe=699AEA2B&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@sarah.eat.mom/post/DTUEEroki7e",
+      "url": "https://www.threads.com/@sarah.eat.mom/post/DTUEEroki7e",
       "created_at": "2026-01-10 11:31:35",
       "date": "2026-01-10",
       "crawled_at": "2026-02-12T19:06:11.362",
@@ -5835,7 +5835,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/612083793_17922058167216985_1041051688136553029_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjk3eDQ1MS5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QGiIxY3PVYQpOmpg1BYhxTXYkqAIT10--OQMQTkB8VjbDQH1hTM0s5iY1hssGeRDDw&_nc_ohc=Ys9YrFbONfoQ7kNvwH64rTv&_nc_gid=QyLBx7aISt88j_5SYzKyAQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwNjg5MTA0NDcxNzU1OTMwNg%3D%3D.3-ccb7-5&oh=00_AfuPgtpXvdOdO3TOpZAVxTYXUw49uJQ8gwWUp__FbBtqZA&oe=699B0B4E&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@careernomad_/post/DTUyzxDAX4K",
+      "url": "https://www.threads.com/@careernomad_/post/DTUyzxDAX4K",
       "created_at": "2026-01-10 18:19:58",
       "date": "2026-01-10",
       "crawled_at": "2026-02-12T19:06:11.362",
@@ -5859,7 +5859,7 @@
       "display_name": "sangdamgac",
       "full_text": "아는 사람은 다 아는 돈 잘 버는 출판사의 방법.\n구역질 주의.\n\nai로 책을 냄.\n국중도에 책을 내면 1권 가격을 받음.\n지자체 지원금을 받음.\n\n어느 출판사는 만 권 정도 냈다던데...\n\n우리 세금으로 그걸 다 사주고 있는 꼴.\n마케팅 출판사 특히 이럼\n무료출판도 이럼 ai생기고는 무료도 안 해줌.\n\n이거 모르는 사람 많길래.\n아는 사람도 많을 거지만 올려봄.\n\n---\n\n아, 그리고 이 이야기. ai 부문만 제외하고 2023년에 이미 말한 내용임.\n\n---\n\n제작비 얘기니 뭐가 나오는데\n책 한 권에서\n‘책’의 원가는 25%이하인 경우가 많다.\n그러니꺼 ai로 디자인이고 내용이고 다 만든 사람들은\n75%이상의 이윤을 남긴단 소리다.\n그리고 페이지를 줄이고 가격을 올리면 더 원가는 내려가고 이윤을 올라간다.\n여튼 그렇다고...\n\n작가 인세는 10% 정도다...\n\n---\n\n라더라...가 어딨어.\n그냥 책을 ai로 내용이랑 디자인해서\n최소 값에 인쇄 제본을 하면\n국중도를 이용해 돈을 벌 수 있다는 구조를 말하는 글이고 지자체나 재단 지원금은 어떤 조건에 따라 추가로(모 지자체는 300만 원이었음 하나당) 받을 수 있다고 말한 건데 되게 그냥 자기들 출판사 구조는 이렇게 돌아간다고 말하면 어쩌라고... 지들이 뭐뭐 더라 이렇다 말하면서 \n대놓고 말하는데 그걸 가정이라고 말하네...\n\n---\n\n열받는게 태클 건 사람들 다 출판사 사람들이네?\n아니 제본 인쇄를 한 권만 한다고 디자인이랑 교정교열 비용을 ai로 뺀다고 아아아아아악 알만한 사람들이 다 자기 고정관념에 빠져서 제일 문제재기 해야하는데 내가 문제라고 하고 자빠졌네...\n\n---\n\n13000원 짜리 책 중에서 교보문고 직원 할인가\n1000원인 책도 있다... \n\n니들이 몰알아! ㅋㅋㅋ\n\n---\n\n진짜 전문가고 종사자고 문제제기하고 사건에 관해서 잘 안다고 떠들 때까지 기다리다가 ai 전자책은 pdf납본 가능한 거 깠는데 부끄럽겠지.\n자칭 전문가 분들은? 종사자 분들은? 문제 제기하고 사건 잘 안다는 인간들은?",
       "media": [],
-      "url": "https://www.threads.net/@sangdamgac/post/DTTJ9SJE4YD",
+      "url": "https://www.threads.com/@sangdamgac/post/DTTJ9SJE4YD",
       "created_at": "2026-01-10 03:03:46",
       "date": "2026-01-10",
       "crawled_at": "2026-02-12T19:06:11.362",
@@ -5881,7 +5881,7 @@
       "display_name": "taehyeong_lim",
       "full_text": "오늘은 정~~~말 유의미한 진전이 있는 날이다.\n옵시디언+안티그래비티 조합을 드디어 허들을 넘었다.\n\n연구계획서 .md 파일주고, 관련된 논문 검색 및 저장 프로젝트를 굴렸다. \n안티그래피티에 넣을 프롬프트의 모든 구조는\nGPT-5.2-thinking 모드로 하나부터 열까지 다 물어봤다.\n\n한 3시간 걸린 것 같다.\n정말 내가 원하는 논문들만 추리고 추리더라.\n그 추리는 과정에서 몇시간이 걸렸다. \n자기가 알아서 어떤 키워드에 가중치를 주고 스크리닝해야\n원하는게 나오는지를 한 5번 체크하더니\n결국 딱 원하는 것만 전부 추리고\n\n연구계획서에서 기술되었던 변수별로\n연구 아이디어 집을 작성해서 만들어준다.\n그리고 전체 네트워크 시각화는 덤.\n\n아.. 바로 이거구나.\n이런게 AI co-scientist 구나.\n\n그동안 챗GPT에게 내 연구에 대해서 뭐 물어보고 부탁하는건\n정말 초보 중의 초보적인 방식이었구나.\n\n새 시대의 방법이다. 진짜.\n연구자님들, 이거 꼭 하세요. 진짜에요.",
       "media": [],
-      "url": "https://www.threads.net/@taehyeong_lim/post/DTVOakVkSUb",
+      "url": "https://www.threads.com/@taehyeong_lim/post/DTVOakVkSUb",
       "created_at": "2026-01-10 22:21:12",
       "date": "2026-01-10",
       "crawled_at": "2026-02-12T19:06:14.383",
@@ -5903,7 +5903,7 @@
       "display_name": "yourgpt3650",
       "full_text": "AI로 보고서 쓰면 끝날 거라 믿는 착각은 이제 그만\n\n초안만 맡기기 = 수정 지옥\n\n대신 이 6가지 보고서 프롬프트로 AI를 비서가 아니라\n전략기획팀 에이스처럼 써봐\n\n---\n\n1. 두괄식으로 구조부터 뒤집기\n\n프롬프트\n“이 자료 [내용]를\n결론부터 말하는 두괄식 구조로 다시 짜줘\n\n가장 위에\n내가 상사에게 전달하고 싶은\n핵심 결론 한 문장을 먼저 써줘\n\n그 결론을 뒷받침하는 근거 3가지를\n같은 레벨로 묶어서 정리해줘\n\n‘검토해보았으나’ 같은 서론은 다 빼고\n‘승인 요청’, ‘예산 증액 필요’처럼\n내가 원하는 요청 사항을\n첫 줄에서 명확하게 밝혀줘”\n\n---\n\n2. 논리 구멍 MECE로 막기\n\n프롬프트\n“이 보고서 구조가\n중복 없이 빠짐없는 상태인지 점검해줘\n\n비용은 있는데 리스크가 빠졌거나\n성과는 있는데 실행 계획이 없는 부분이 있으면\n그걸 정확히 지적해줘\n\n각 항목의 레벨이 뒤죽박죽이면\n같은 위계로 다시 정리해줘”\n\n---\n\n3. 임원 보고용 말투로 바꾸기\n\n프롬프트\n“아래 문장들을\n회사 임원 보고용 포멀한 톤으로 고쳐줘\n\n구어체 표현은 줄이고\n명사형 종결어미를 적절히 사용해서\n단정하고 신뢰감 있게 바꿔줘\n\n‘엄청 늘었다’, ‘대박이다’ 같은 표현은\n구체적인 수치나\n전문적인 비즈니스 표현으로 교체해줘”\n\n---\n\n4. 데이터 뒤에 ‘그래서?’ 붙이기\n\n프롬프트\n“각 데이터나 현황 설명 뒤에\n이게 우리 사업에 어떤 의미가 있는지\n한 줄 시사점을 붙여줘\n\n단순한 결과 설명 말고\n이걸 보고 상사가\n어떤 결정을 내려야 하는지까지 연결해줘\n\n각 섹션마다\n실제로 실행해야 할 Action Item도 함께 정리해줘”\n\n---\n\n5. 글을 그림으로 바꾸기\n\n프롬프트\n“이 설명 [내용]을\n글로 쓰지 말고\n한눈에 보이는 차트나 도식으로 바꿔줘\n\n가장 적합한 형태\n예: 파이 차트, 흐름도, 2x2 매트릭스를 추천해주고\n각 축이나 구성 요소에\n무슨 내용이 들어가야 하는지 설명해줘\n\n그 도식 바로 아래에 들어갈\n한 줄 핵심 메시지도 같이 써줘”\n\n---\n\n6. 상사 질문 미리 막기\n\n프롬프트\n“네가 우리 회사에서\n가장 까다로운 임원이라고 가정해줘\n\n이 보고서를 봤을 때\n나올 만한 날카로운 질문 3가지를 뽑아줘\n\n각 질문에 대해\n핑계가 아니라\n현실적인 해결책 중심으로\n방어 답변을 준비해줘”",
       "media": [],
-      "url": "https://www.threads.net/@yourgpt3650/post/DTUAdBHjV7G",
+      "url": "https://www.threads.com/@yourgpt3650/post/DTUAdBHjV7G",
       "created_at": "2026-01-10 10:59:57",
       "date": "2026-01-10",
       "crawled_at": "2026-02-12T19:06:14.383",
@@ -5927,7 +5927,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/613538274_1610129893762521_4612867077135700384_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDM4NC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QGSQbl5vo0xQsI1AJcCpjQkwVShDj97P_UbL65uwZvod3N289IwF4J50DLfbW1z-lY&_nc_ohc=6IxoDyAljm8Q7kNvwF5xE3P&_nc_gid=WJLseR7PcxO_s12QQvlMgQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwNjkxMjgxMzcxNzkxODA0Mg%3D%3D.3-ccb7-5&oh=00_Afum6Mpnx_mHJ9Hux1MdGFAjBovBuW3mmY-uwHgjIPdoAA&oe=699B071F&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@ai_sync_club/post/DTU3wjAihFa",
+      "url": "https://www.threads.com/@ai_sync_club/post/DTU3wjAihFa",
       "created_at": "2026-01-10 19:05:00",
       "date": "2026-01-10",
       "crawled_at": "2026-02-12T19:06:14.383",
@@ -5953,7 +5953,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/612692758_17923543503206480_5840680775473470738_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTgwMngxMzQwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QG4K29VRlkDzL-Y6JaMn6jziJTavl5sdmhnq52EBsuN7E20VRRu4MC9yE4CaX-ycDo&_nc_ohc=8UeGGtlSasEQ7kNvwHj-4Nb&_nc_gid=sshIQm-ZEcLIEM3gtDGyHQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwNjE3NDAwNTQxNDk1OTY4MQ%3D%3D.3-ccb7-5&oh=00_AfvNoOsF02tSUzrbkSfyLjsCyFXkRBq5qYHWuUUP70TpjQ&oe=699AFD43&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@lucy_prime788/post/DTSPxhJFUre",
+      "url": "https://www.threads.com/@lucy_prime788/post/DTSPxhJFUre",
       "created_at": "2026-01-09 18:35:21",
       "date": "2026-01-09",
       "crawled_at": "2026-02-12T19:06:14.390",
@@ -5977,7 +5977,7 @@
       "display_name": "yourgpt3650",
       "full_text": "챗지피티에게 아이디어 좀 줘라고 묻는 실수는 이제 그만\n\n막연한 요청 = 쓸모없는 답변 공장\n\n대신 이 5가지 발상 프롬프트로 바로 써먹을 수 있는 팔리는 아이디어만 뽑아봐\n\n---\n\n1. 이종 결합 – 안 섞으면 안 나온다\n\n프롬프트\n“내 분야 [현재 분야]와\n전혀 상관없는 분야 [타 분야: 예-호텔, 게임, 아이돌]의\n성공 요소를 강제로 결합해줘\n\n예를 들어\n‘치과 + 호텔 컨시어지’\n‘영어 공부 + RPG 레벨업 시스템’처럼\n완전히 다른 조합으로 생각해줘\n\n이 두 개념이 합쳐졌을 때 나올 수 있는\n가장 신선한 서비스 아이디어 3가지를 제시해줘\n\n각 아이디어마다\n타겟 고객 1줄\n예상 가격대\n이번 주 안에 해볼 수 있는\n아주 작은 프로토타입까지 같이 써줘”\n\n---\n\n2. 극한의 제약 – 조건을 걸어야 실행된다\n\n프롬프트\n“지금 나에게\n예산 0원\n시간 24시간\n주요 채널은 [인스타그램 / 스레드 / 오프라인 커뮤니티 중 선택]\n이라는 제약이 있다고 가정해줘\n\n이 조건에서\n내 목표 [목표: 예-구독자 모으기, 상품 홍보]를\n달성할 수 있는\n가장 현실적인 아이디어 5가지를 만들어줘\n\n돈 쓰는 방법 말고\n아이디어와 행동만으로\n사람들이 반응하게 만드는 방식으로 짜줘”\n\n---\n\n3. 거꾸로 생각하기 – 망하는 법부터 지워라\n\n프롬프트\n“내 프로젝트 [프로젝트명]가\n처참하게 실패하는 방법 10가지를\n아주 구체적으로 나열해줘\n\n각 실패마다\n실제로 있었을 법한 상황 예시도 붙여줘\n\n이제 그 실패 요인들을\n전부 반대로 뒤집어서\n절대 망하지 않게 만드는\n핵심 전략으로 다시 정리해줘\n\n남들이 말하는 ‘잘하는 법’ 말고\n리스크를 제거하는 관점에서 정리해줘”\n\n---\n\n4. 비즈니스 모델 복제 – 잘된 구조를 훔쳐라\n\n프롬프트\n“넷플릭스(구독)\n우버(중개)\n코스트코(멤버십)\n같은 검증된 비즈니스 모델을\n\n내 아이템 [아이템]에 그대로 적용해보면\n각각 어떤 형태가 되는지 시뮬레이션해줘\n\n구독으로 팔면 어떻게 달라지고\n중개 구조로 바꾸면 뭐가 바뀌는지 설명해줘\n\n각 모델마다\n현재 방식 대비\n고객이 느끼는 차이점과\n왜 더 매력적인지 한 줄로 정리해줘”\n\n---\n\n5. 사소한 불편 확대 – 사람들은 여기서 돈 낸다\n\n프롬프트\n“먼저\n내 고객들이 최근 1주일 안에\n우리 서비스나 제품을 쓰다가\n‘아 그냥 말자’ 하고 포기한 순간 5가지를 찾아줘\n구체적인 행동 기준으로 정리해줘\n\n그 포기 순간들을\n아주 미세한 불편 요소로 바꿔서 다시 정리해줘\n\n그 불편 하나만 집요하게 해결했을 때\n나올 수 있는 틈새 아이디어를 제시해줘\n\n그리고 그 아이디어의 핵심을\n고객이 공감할 만한\n한 문장 카피로 만들어줘”\n\n---\n\n마지막 검증 단계 – 이거 안 하면 또 망해\n\n프롬프트\n“위 5가지 방법으로 나온 아이디어들 중에서\n\n이번 주에 바로 실행 가능한 것 1개\n가장 차별화된 것 1개\n실패해도 타격이 가장 적은 것 1개를 골라줘\n\n각 아이디어마다\n첫 3일 동안 뭘 하면 되는지\n아주 구체적인 행동 리스트로 정리해줘\n\n이 중 하나만 선택한다면\n왜 그걸 먼저 해야 하는지도 설명해줘”\n\n---\n\nCHATGPT, AI와 관련된 더 많은 정보를 원한다면 아래 링크 꼭 확인해봐!\n\n좋은 강의 = 좋은결과\n\nhttps://litt.ly/yourgpt3650",
       "media": [],
-      "url": "https://www.threads.net/@yourgpt3650/post/DTSa9uLEg9_",
+      "url": "https://www.threads.com/@yourgpt3650/post/DTSa9uLEg9_",
       "created_at": "2026-01-09 20:13:08",
       "date": "2026-01-09",
       "crawled_at": "2026-02-12T19:06:14.390",
@@ -6001,7 +6001,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/610718041_17937702354109877_3195204599226699148_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTA4MHgxMzUwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QF70amXMPt8p_-WIVympm99cPVqJtXhvB30o1aeANY_vD2nK2nW66jS4gEuQvIZ4oI&_nc_ohc=hXc0s39zta0Q7kNvwEtlX8p&_nc_gid=SnZrqrCRjLqG5ql-YbEizg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwNTk2OTk2NzY2NjM2NjY4MA%3D%3D.3-ccb7-5&oh=00_Afvbh_TI10Xy1xoy8GIU5Wv6usT9Z7VSgik5NojQS7psPw&oe=699ADAB5&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@companoid.institute/post/DTRhYcRD0lE",
+      "url": "https://www.threads.com/@companoid.institute/post/DTRhYcRD0lE",
       "created_at": "2026-01-09 11:49:58",
       "date": "2026-01-09",
       "crawled_at": "2026-02-12T19:06:14.390",
@@ -6027,7 +6027,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/612211881_17897160693366895_2947785149940413578_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTI4MHg3MjAuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QEL3pyLVZQ4FJk7FxuvIcYQ2ffNWCClSpxP1pyRrtHLxJWFucKdPmgePtkckeonUbY&_nc_ohc=UMnNVCA3lOkQ7kNvwEQNPlx&_nc_gid=CZUDjbDzgSn2sPUizl_WfQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwNjc4NTE2MTAwNzM2MzUyMA%3D%3D.3-ccb7-5&oh=00_Aftsq7-pNlL3DuAH9W1ebKq9Qytro20V2Zu3U7N7zai1pg&oe=699B0387&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@bibl_youtube/post/DTSqJP4EkP9",
+      "url": "https://www.threads.com/@bibl_youtube/post/DTSqJP4EkP9",
       "created_at": "2026-01-09 22:25:47",
       "date": "2026-01-09",
       "crawled_at": "2026-02-12T19:06:14.391",
@@ -6053,7 +6053,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/611243409_17935310409118901_7310614133899098492_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTczNHg5NTIuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QFJRsRMc8G1umVDgyZCBsMuQpr9qxoLtgMtwoESJeXWqMepStNYpm9G-_ldno2fNOw&_nc_ohc=Jd1HroOSI84Q7kNvwH9lFra&_nc_gid=r2jlsB7Og95Ei1oM29S4nw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwNjA5MjI5OTAyMTcxMjgzNw%3D%3D.3-ccb7-5&oh=00_AftnLI9DmlE6N_W92hh5xXRpXQPK8ByJBBhVfa1vjcTQ1Q&oe=699AD7DD&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@laeyoung/post/DTR9Mj_iRq4",
+      "url": "https://www.threads.com/@laeyoung/post/DTR9Mj_iRq4",
       "created_at": "2026-01-09 15:53:01",
       "date": "2026-01-09",
       "crawled_at": "2026-02-12T19:06:17.406",
@@ -6079,7 +6079,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/612133303_835040939533776_2131864875029393090_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDQwMi5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QHDl6bXECQMXXfuk5rcIT_cJQIpPPHosn0aPw7ryZ87JUOor_2BXUIMUvJs0S1O8aE&_nc_ohc=B-AxOQdne8wQ7kNvwEbqea8&_nc_gid=tuF6IoAicG0yYJESFIqWSw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwNTgzOTU4ODkwODg4NzU2Mw%3D%3D.3-ccb7-5&oh=00_AfvYjaKHzSRphn-_w6cTCnS16ewFTLEwUdNFMHKY5TEOog&oe=699B0B90&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@choi.openai/post/DTRDvEhCG4L",
+      "url": "https://www.threads.com/@choi.openai/post/DTRDvEhCG4L",
       "created_at": "2026-01-09 07:30:55",
       "date": "2026-01-09",
       "crawled_at": "2026-02-12T19:06:17.406",
@@ -6103,7 +6103,7 @@
       "display_name": "insta_yoonchan",
       "full_text": "[받] AI 기반의 사업전략 전문가를 찾습니다.\n\nGPT, Grok, Perplexity, Gemini 등 대화형 인공지능 서비스를 활용하여 오프라인 조찬모임 강의를 맡아주실 연사님을 찾습니다.\n\n- 비용 : 200만원 / 회차별\n- 시간 : 80분 / 평일 06:30~08:00 AM / 최대 3회\n- 형태 : 명동 지역 호텔, Private Lecture (외부참여 불가)\n- 대상 : 연매출 500억 이상 CEO 또는 Founder (50후 60초 타겟)\n\n- 필요항목 및 우대항목\n1) 약력 / 최소 8년 근무경력 필수\n2) 포트폴리오 및 강의이력 필수 / 전략펌, 회계펌 우대\n3) 추천서 (선택)\n4) 강의개요 / 제목 소제목 구성 (선택)\n5) 제출 = contact@abtross.net",
       "media": [],
-      "url": "https://www.threads.net/@insta_yoonchan/post/DTKt8TqgRkq",
+      "url": "https://www.threads.com/@insta_yoonchan/post/DTKt8TqgRkq",
       "created_at": "2026-01-06 20:25:02",
       "date": "2026-01-06",
       "crawled_at": "2026-02-12T19:06:17.406",
@@ -6125,7 +6125,7 @@
       "display_name": "insta_yoonchan",
       "full_text": "마케팅 영업 스타일\n\n1/ 혼내면서 가르치기\n2/ 정보와 기준 풀기\n3/ 자랑을 섞은 소감\n\n- 1번 항목은 소상공인, 전문직 대상으로 '작은 대행사'가 주로 쓰는 스킬같다. 뭐랄까 수험생을 타박하는 인강강사 느낌이다. 강성태 유튜버가 \"여러분들은 공부를 안 해요. 안 합니다. 안 한다니까요\"라고 말한다던지, 신승범 강사가 \"문제 안풀면 지옥간다\"고 말하는 느낌..\n\n- 이처럼 화가 많은? 대행사의 정규직 직원수가 30명이 안넘고, 연간 취급액(=위탁받은 광고비 총액)이 100억을 못미치는 경우가 많다. 광고주도 연간 3억조차(=월 3천만원)을 안쓰는 케이스가 수두룩하기에 나랑은 거리가 멀다. 걍 다른 세계를 보는듯 하여 기이하다.\n\n- 그들은 주로 '컨설팅을 한다'고 말하지만, 정작 맥킨지나 베인앤컴퍼니같은 전략컨설팅펌은 이렇게 영업을 안한다. 내가 마주한 그들은 되려 2번에 가깝다. 주기적으로 리포트나 도서를 내고, 포럼과 컨퍼런스를 열면서 얼굴을 보인다.\n\n---\n\n- 전략펌 외로도 대형종대사, 회계법인도 이 방법을 자주 쓴다. 그렇게 인용되면서 업계에 이름을 알린다. 어마무시한 양질의 자료와 세미나가 풀리는데, 사람들이 이걸 정작 잘 모른다. 맥킨지 위클리 리포트만 보더라도 사파/마교에서 열리는 웨비나 내지 특강이랑은 비교가 안된다.\n\n- 이렇게까지 정보를 풀어도 되나 싶지만, 배우는 것과 푸는 것은 별개기에 상관없다. 어차피 올 사람은 오고, 안올 새끼들은 안오니까. 따라서 이들은 한명의 고객을 데려오기보다는 업계의 방향과 흐름을 만드는게 목표인 것으로 보인다.\n\n- 3번은 쓰레드에서는 잘 안보이고 링크드인, 디스콰이엇, 언론인터뷰에서 자주 나오는 방식이다. 무슨 상을 탔다, 무슨 프로젝트를 성공적으로 마쳤다고 근황을 나누며 회고한다. 1번의 대척점이라고 보면 된다. 이건 영화제 수상소감마냥 겸손하되 용기있게 표현하는게 킥이다.\n\n- 한국에서 효과적인 영업은 2 > 3 >>> 1 순으로 보여진다. 도저히 1번은 오글거리고 짜쳐서 원..",
       "media": [],
-      "url": "https://www.threads.net/@insta_yoonchan/post/DTMJC39Et_M",
+      "url": "https://www.threads.com/@insta_yoonchan/post/DTMJC39Et_M",
       "created_at": "2026-01-07 09:41:06",
       "date": "2026-01-07",
       "crawled_at": "2026-02-12T19:06:17.406",
@@ -6149,7 +6149,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/610879754_2202725506922865_395473105891295333_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDM2MC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QFH4tRza1yVMybeD5RvJIzlNhjTaA9KsSdmVy9wqo8txNlKLSt6be5YOBIJJ4CvDSc&_nc_ohc=OTrNimdBLekQ7kNvwGo03bB&_nc_gid=KhA9EkhYMAa_O1B6FjW4Tg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwMzAyODI4MDYzNTY2NjM3Mw%3D%3D.3-ccb7-5&oh=00_AfvsLmKBvfJUjqyufGX4pdSl0U5p9kewdD7kBRtqI_-xbA&oe=699AEEDB&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@gpt_park/post/DTHEhJqDa_F",
+      "url": "https://www.threads.com/@gpt_park/post/DTHEhJqDa_F",
       "created_at": "2026-01-05 10:25:57",
       "date": "2026-01-05",
       "crawled_at": "2026-02-12T19:06:17.414",
@@ -6173,7 +6173,7 @@
       "display_name": "ok_k_studio",
       "full_text": "주제: 요즘 '강의팔이'들 수법, 팩트로 다 부숴줄게\n\n나도 공부하려고 이것저것 결제해 보다가 진짜 기가 차서 글 쓴다. 겉만 번지르르하게 포장해서 간절한 사람들 등쳐먹는 강의팔이들, 내가 딱 집어서 실상 다 까발려줄게. 속지 마.\n\n---\n\n1/ 해외구매대행? 그거 그냥 프로그램 팔이야. 퇴근 후 1~2시간으로 월 몇백? 솔직히 말할게. 강의료 몇백 받아먹고 프로그램 사용법만 알려주는 게 끝이야. 정작 중요한 소싱처는 \"알아서 찾으세요\"라며 발 빼지.\n\n2/ 현실은 어떠냐고? 수강생 수천 명 몰아넣으니까 파는 물건이 다 겹쳐서 자기들끼리 가격 후려치고 싸워. 결국 한 달 프로그램비도 못 건지고 하면 할수록 마이너스 나는 게 지금 구매대행 판이야.\n\n---\n\n3/ AI 프롬프트/에이전트 부업? 이것도 코미디야. \"에이전트 만들어서 월 500 벌기\"라며 현혹하는데 정작 본질적인 프롬프트 짜는 법은 절대 안 알려줘. 그냥 자기가 만든 거 배포해주고 \"이렇게 써라\"가 끝이지.\n\n4/ 결국 너를 독립적인 실력자로 만드는 게 아니라 자기들이 만든 툴에 종속시키려는 거야. 물고기 잡는 법을 가르치는 게 아니라 썩은 물고기 한 마리 던져주고 강의료 챙기는 격이지.\n\n---\n\n5/ 소자본 식품 창업? 매출 10억? 숫자 놀음에 속지 마. \"이 제품으로 대박 났다\"며 수익 인증 스크린샷 띄우는데 정작 강의 내용은 \"여기 공장에서 최소 수량으로 찍어준다\"가 전부야. 마케팅은? 유통은? 그건 네 몫이라며 입 싹 닦지.\n\n6/ 세상에 \"최소 수량 생산\"해주는 공장은 널렸어. 진짜 실력은 그걸 어떻게 팔고 브랜딩 하느냐에 있는 건데 강의팔이들은 그 핵심은 쏙 빼놓고 헛바람만 넣어. 결국 수강생 집 거실에는 안 팔리는 재고만 쌓이는 거야.\n\n---\n\n7/ 얘네들 수법은 똑같아.\n\n자극적인 수익 인증으로 현혹 (근데 증거는 빈약함)\n\n\"너만 모르는 치트키 있다\"며 가스라이팅\n\n본질 없는 도구/방법론만 비싸게 팔고 튐\n\n---\n\n8/ 나도 20년 사업하면서 깨진 돈만 수억이야. 근데 단언컨대, 네 인생 바꿔줄 마법 같은 강의는 없어. 네가 직접 시장에서 깨지고, 고객이랑 싸우고, 밤새워서 로직 파헤치는 그 시간만이 진짜 네 거야.\n\n---\n\n9/ 강의 쇼핑에 돈 날리지 말고 그 돈으로 광고를 한 번 더 돌려봐. 사기꾼들 배 불려주지 말고 네 사업 체력을 키우라고. 진짜 실전 데이터가 궁금하면 차라리 내 글 정독하는 게 도움 될 거야.\n\n---\n\n스친들의 댓글을 보다보니 이말은 적어야할거 같아서 \n혹시나 스친들중에 어떤강의팔이가 너무 궁금하다? \n하는사람있으면 메세지 줘.\n진자 이것저것 많이 들었거든. 내가 들었던 강의팔이 내용 공유해줄께 그거 듣고 그래도 듣고 싶은 사람은 들어도 늦지않아~",
       "media": [],
-      "url": "https://www.threads.net/@ok_k_studio/post/DTF2ha_ibNE",
+      "url": "https://www.threads.com/@ok_k_studio/post/DTF2ha_ibNE",
       "created_at": "2026-01-04 23:03:48",
       "date": "2026-01-04",
       "crawled_at": "2026-02-12T19:06:17.414",
@@ -6199,7 +6199,7 @@
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/610667126_17936665857112159_2059937221965787784_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTA4OHg3MTcuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QHsakMHRUcAoIVIyyogUBQG3DYzn2tiwjmWLfJLgviDK6WP51afsfhLl0NoTF6CbCo&_nc_ohc=HEr9F4Vd07gQ7kNvwEHqmDF&_nc_gid=DduHDt8xzG_GKxT2WORYiA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwMTExNzg5NTEyODg3OTg0OA%3D%3D.3-ccb7-5&oh=00_AfuhL0iCA9HKIBjXYJyjO1XucCCAbGDx959CtBsdOD53Mg&oe=699AE1AD&_nc_sid=10d13b",
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/590918888_17936666109112159_2342945375637321368_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTU0MHg3NTMuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QHsakMHRUcAoIVIyyogUBQG3DYzn2tiwjmWLfJLgviDK6WP51afsfhLl0NoTF6CbCo&_nc_ohc=kIX9vP0-UBkQ7kNvwEUJrJV&_nc_gid=DduHDt8xzG_GKxT2WORYiA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwMTExNzk1NzY3NDMwNjA0NA%3D%3D.3-ccb7-5&oh=00_AfvmEP6kPCNrEiI8SUCZmU4J_xyNVOmS2cqJ2pXxrceraQ&oe=699B06BA&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@tofukyung/post/DTAR3TmAj-F",
+      "url": "https://www.threads.com/@tofukyung/post/DTAR3TmAj-F",
       "created_at": "2026-01-02 19:09:42",
       "date": "2026-01-02",
       "crawled_at": "2026-02-12T19:06:17.414",
@@ -6226,7 +6226,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/608896129_2068532937274507_3301440149172390130_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDQwMC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QFYCPRD5Jl4_TsGq87Kcwmel36LJwrJMpRyAy8TvWG56KXv7uvREUY7F22z4WM1EqI&_nc_ohc=K0EKL8G0IVAQ7kNvwFkeGVj&_nc_gid=rXMbChqPRP2ZJPh78e5x4w&edm=AI6eXeABAAAA&ccb=7-5&ig_cache_key=MzgwMTUwNzk5MjA5NDA0ODQyNQ%3D%3D.3-ccb7-5&oh=00_AftcwfnABnvWHd8d9zkWxZhfzctWO6jtToElaaerHf3eCQ&oe=69938520&_nc_sid=6efbad"
       ],
-      "url": "https://www.threads.net/@gpt_minje/post/DTBvORnkpUy",
+      "url": "https://www.threads.com/@gpt_minje/post/DTBvORnkpUy",
       "created_at": "2026-01-03 08:43:04",
       "date": "2026-01-03",
       "crawled_at": "2026-02-12T19:06:17.414",
@@ -6258,7 +6258,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/608896129_2068532937274507_3301440149172390130_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDQwMC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QHXueJ12BuOH6G5lr_hLUsd21lzQzvLxR6sK4MxTzunCja_4esWWTVwIZg2sP6Hav8&_nc_ohc=jjtrM366yggQ7kNvwEucBGt&_nc_gid=vP5z1BMgS-0PWu2AZKkT1g&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwMTUwNzk5MjA5NDA0ODQyNQ%3D%3D.3-ccb7-5&oh=00_AfvLJujf-13xrhILDsqziIEQQB63ldtvB9w7vdmQfxswIg&oe=699AFDA0&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@alex_ai_mcp/post/DTBq2CnkwCp",
+      "url": "https://www.threads.com/@alex_ai_mcp/post/DTBq2CnkwCp",
       "created_at": "2026-01-03 08:07:25",
       "date": "2026-01-03",
       "crawled_at": "2026-02-12T19:06:17.414",
@@ -6284,7 +6284,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/609249108_1549999356235452_4767125626196783225_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDM2MC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QHidKChCOHw_tzbvWEA26GMbiBTcpo4k40KWpc9Z3ft8PYMZgr6jJYmFG0O9PqBz3g&_nc_ohc=QTq1TwFPD7cQ7kNvwFG_lYC&_nc_gid=RK_B7XlSOlhfMVFpjqBCMg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwMTgzNzk1MjYxOTk2MDAzNQ%3D%3D.3-ccb7-5&oh=00_Afvi_Qu-e54IhnKnTFJfXzRwWHb9NGEpDJNl4VNez5xFww&oe=699B02DF&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@irum_hahn/post/DTC13mTgtbj",
+      "url": "https://www.threads.com/@irum_hahn/post/DTC13mTgtbj",
       "created_at": "2026-01-03 19:00:23",
       "date": "2026-01-03",
       "crawled_at": "2026-02-12T19:06:20.438",
@@ -6308,7 +6308,7 @@
       "display_name": "aicoffeechat",
       "full_text": "상위 1% 엔지니어는 PRD 쓸 때 빈 화면부터 시작하지 않습니다.\n\n1. 만들고 싶은 기능이 있다면, 이미 있는 비슷한 사이트를 켜세요.\n2. 그리고 화면 녹화를 켜고, 마우스로 가리키며 말로 설명하세요. \"여긴 이렇게 동작했으면 좋겠어.\"\n3. 그 영상을 Gemini 3 Pro에게 쿨하게 던져주세요.\n4. \"이 영상 보고 PRD(기획서) 써줘.\"\n5. Gemini가 구조가 잡힌 초안을 뱉어줍니다.\n6. 이걸 그대로 Claude Code로 가져가서 한 가지 명령을 더하세요.\n7. \"이거 읽고 부족한 내용은 나를 인터뷰해서 채워줘.\"\n8. AI가 역으로 질문을 던지며 당신이 놓친 디테일과 엣지 케이스를 완벽하게 메꿔줍니다.\n9. 혼자 끙끙대며 타이핑하던 몇 시간이 5분으로 줄어듭니다. \n\n무조건 AI에게 '보여주고' 시작하세요.",
       "media": [],
-      "url": "https://www.threads.net/@aicoffeechat/post/DTAykTzEhfu",
+      "url": "https://www.threads.com/@aicoffeechat/post/DTAykTzEhfu",
       "created_at": "2026-01-02 23:53:03",
       "date": "2026-01-02",
       "crawled_at": "2026-02-12T19:06:20.438",
@@ -6332,7 +6332,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/609380455_17870171790507614_8206081649298351437_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uNDU0eDQ5OC5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QGY-ULw40SR4PytAqe1ZPJf38oyxl0-_lhZ6C1888ts8WSuS0pPwpHEdzTy4DSOI8U&_nc_ohc=a8-OrAPV3zkQ7kNvwGMD6Ye&_nc_gid=UM1b2Q_rn2kqyWhDv2I0KA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwMTE3NzczMzUwMzAxNDkwOA%3D%3D.3-ccb7-5&oh=00_AfvXHmg4Tm6rrk-cGH0nVmRAa6GmtCzqpbQmtHXukPWdBg&oe=699AEC37&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@keke_appa/post/DTAfwOWkpTe",
+      "url": "https://www.threads.com/@keke_appa/post/DTAfwOWkpTe",
       "created_at": "2026-01-02 21:08:39",
       "date": "2026-01-02",
       "crawled_at": "2026-02-12T19:06:20.438",
@@ -6359,7 +6359,7 @@
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/610647741_17940475740100156_3775889873999267857_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMjE2MHgxMDYyLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QG5cc3gvjT3FTJL5yK3RzpHdDnmcstY9uq1cH8zRP2b1Wlur6Bhkf8V1ZVW8OSX0GU&_nc_ohc=0bvqWMxrxlYQ7kNvwENyLhP&_nc_gid=7iNzUuFyMIb48EpFWdFJvA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwMTE5OTk2MzY4MzMzMTg0MA%3D%3D.3-ccb7-5&oh=00_AfvXfnkFfW9xweUn7zLshtCBpufoBHqbf5X9q1lCO06hOw&oe=699AF03A&_nc_sid=10d13b",
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/611158350_17940481161100156_1217947345325396994_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTcxMHg4MDAuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QG5cc3gvjT3FTJL5yK3RzpHdDnmcstY9uq1cH8zRP2b1Wlur6Bhkf8V1ZVW8OSX0GU&_nc_ohc=BdFxWftcqEkQ7kNvwGdVB7y&_nc_gid=7iNzUuFyMIb48EpFWdFJvA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwMTIyNzEzNjgyNTc0MzUwOQ%3D%3D.3-ccb7-5&oh=00_Afuo_lAgUe54xHt76Dt3d14ynfPvzaZoOXCiChEB-ssxLg&oe=699AF8FE&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@heedam_i/post/DTAkzttkvIM",
+      "url": "https://www.threads.com/@heedam_i/post/DTAkzttkvIM",
       "created_at": "2026-01-02 21:52:49",
       "date": "2026-01-02",
       "crawled_at": "2026-02-12T19:06:20.438",
@@ -6396,7 +6396,7 @@
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/610550325_17919863247232485_8220573699791100865_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uOTI0eDM0Ni5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QE2TSCGEpUrW-rURKkcpFh9PN_trCZUDV2Evt3RFuSov9soAmIqDWwIyXkRw9IqvFQ&_nc_ohc=zLm6KJzfiBUQ7kNvwGR5zuk&_nc_gid=bXJaQOueBMjxoFKmLqOg-Q&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwMTUwMjY5NzI2MzQyNzY5Mg%3D%3D.3-ccb7-5&oh=00_AfspMWVISZkX9etV--PquJfqaHpZRPlmVWmWpmQxcVwn8g&oe=699AE44C&_nc_sid=10d13b",
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/610639517_17919863373232485_3488950278855143113_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTA2NHgyMzQuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QE2TSCGEpUrW-rURKkcpFh9PN_trCZUDV2Evt3RFuSov9soAmIqDWwIyXkRw9IqvFQ&_nc_ohc=qB5b2ALByYgQ7kNvwHeJxSZ&_nc_gid=bXJaQOueBMjxoFKmLqOg-Q&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwMTUwMjc3MjE0ODUxNjkzNg%3D%3D.3-ccb7-5&oh=00_Aftr8QoeVib517r5slTsceqjIsysjYZqJYmIGwCunZPj5w&oe=699AF1ED&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@aicoffeechat/post/DTBpfJBk9U7",
+      "url": "https://www.threads.com/@aicoffeechat/post/DTBpfJBk9U7",
       "created_at": "2026-01-03 07:52:56",
       "date": "2026-01-03",
       "crawled_at": "2026-02-12T19:06:20.443",
@@ -6430,7 +6430,7 @@
       "display_name": "msf_ip_kj",
       "full_text": "네이버 블로그는 완전 죽었다고 본다\nAI가 작성하고 AI가 댓글 달고\nAI들끼리 미팅하는 곳으로 변함",
       "media": [],
-      "url": "https://www.threads.net/@msf_ip_kj/post/DTAmo18D-jX",
+      "url": "https://www.threads.com/@msf_ip_kj/post/DTAmo18D-jX",
       "created_at": "2026-01-02 22:08:49",
       "date": "2026-01-02",
       "crawled_at": "2026-02-12T19:06:20.443",
@@ -6454,7 +6454,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/587794106_1205003198390796_3726737755514194847_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDM2MC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QGEd2RDJuHg4Og13EEOjZ5W99l-aldKusDLckKCF9ag03cxniKC8V-cPVKTJv7_YVU&_nc_ohc=vEJy6Hut_4EQ7kNvwEyMfq7&_nc_gid=CC-SpdpXUGB9ImritSp4UA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwMDQ4MzAxMDkwNzUzOTI2Nw%3D%3D.3-ccb7-5&oh=00_AfvfZxyh0D7gEQn5NMR50WSFxeyPrEYDHrX0Is_-w3ej2w&oe=699B001F&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@tornado_616/post/DS-BymgDQdD",
+      "url": "https://www.threads.com/@tornado_616/post/DS-BymgDQdD",
       "created_at": "2026-01-01 22:13:38",
       "date": "2026-01-01",
       "crawled_at": "2026-02-12T19:06:20.444",
@@ -6478,7 +6478,7 @@
       "display_name": "extsvforest",
       "full_text": "클로드 코드와 코덱스가 \n올해는 프로그래밍이 아닌 용도로도 주목받을 것이라고 확신한다.\n\n코덱스를 업무 비서로서 한 달 사용해봤다.\n시행착오가 꽤 많았고 앞으로도 있을 것이다.\n하지만 이 짓을 안하느니만 못한 단계는 훌쩍 넘었다.\n\n이것을 하는 이유는 오로지 인지 피로를 낮추기 위함이다.\n내가 벌린 일에 대해 자연어로 설명을 듣고, 또 다시 내가 나의 의도와 의사결정 사항, 맥락을 자유롭게 설명하면 인공지능이 나와 협의한 규칙에 맞춰 할 일 목록, 프로젝트 맥락 정보 등을 알아서 편집한다.\n내가 사용하면서 지침을 내 선호에 맞춰 더 다듬을수록 더 강력해진다.\n\n내 업무비서 워크스페이스의 AGENT.md를 여러분과 공유하고싶음\n이건 내 프리퍼런스에 강하게 맞춰져 있지만, 여러분께 영감이 되어주길 바랍니당",
       "media": [],
-      "url": "https://www.threads.net/@extsvforest/post/DS_5JEXkRNy",
+      "url": "https://www.threads.com/@extsvforest/post/DS_5JEXkRNy",
       "created_at": "2026-01-02 15:31:15",
       "date": "2026-01-02",
       "crawled_at": "2026-02-12T19:06:20.444",
@@ -6500,7 +6500,7 @@
       "display_name": "tuberithm",
       "full_text": "1. 구글 AI로 특정 유튜버를 통째로 '복제'하는 방법이 공개됐다.\n\n자극적인 낚시성 멘트가 아니다.\n구글의 NotebookLM을 활용하면, 특정 크리에이터의 뇌(Brain)를 내 컴퓨터에 이식하는 게 가능하다.\n\n영상에 소개된, 누군가의 지식을 가장 빠르게 훔치는 기술을 해부해 보자.\n\n---\n\n2. NotebookLM의 본질은 '폐쇄형 천재'다.\n\n일반적인 챗GPT와 다르다.\n내가 주입한 자료(PDF, 텍스트, 링크) 안에서만 답을 찾는다.\n\n즉, 특정 비즈니스 유튜버의 영상 링크를 모조리 집어넣으면?\n그 AI는 이제 그 유튜버의 페르소나와 지식을 완벽하게 갖춘 복제 인간이 된다.\n\n---\n\n3. 문제는 '노가다'다.\n\nNotebookLM에 유튜브 링크를 넣을 수 있지만, 하나씩 복사-붙여넣기 하는 건 하수나 하는 짓이다.\n영상 수백 개를 언제 다 옮기나.\n\n영상에서는 이 과정을 단축시킬 '치트키'로 두 가지 확장 프로그램을 제시한다.\n이게 핵심이다.\n\n---\n\n4. 첫 번째 도구, 'GrabIt'.\n\n이 녀석은 링크 수집광이다.\n유튜브 채널에 들어가서 Ctrl 키를 누른 채 썸네일들을 클릭만 하면 된다.\n\n\"52개의 URL이 복사되었습니다.\"\n순식간에 클립보드에 영상 주소들이 쌓인다.\n이걸 메모장에 붙여 넣으면 1단계 준비 끝.\n\n---\n\n5. 두 번째 도구, 'NotebookLM(확장 프로그램)'.\n\n이름이 같아서 헷갈릴 수 있지만, 크롬 웹스토어에 있는 별도 툴이다.\n'From URL List' 기능을 켜고, 아까 긁어온 링크 뭉치를 한 번에 털어 넣는다.\n\n하나씩 입력하던 비효율은 사라진다.\nAI가 알아서 모든 영상을 분석하고 데이터베이스화한다.\n\n---\n\n6. 이제 이 '복제된 뇌'를 어떻게 쓸까.\n\n질문을 던져보자.\n\"너의 관점에서 A급 인재를 채용하는 원칙은 뭐야?\"\n\nAI는 수십 개의 영상을 뒤져 가장 완벽한 답변을 조합해낸다.\n소름 돋는 건 '신뢰성'이다.\n답변 옆에 붙은 숫자를 누르면, 해당 발언이 나온 영상의 정확한 타임라인으로 이동한다.\n환각(Hallucination) 없는 순도 100% 팩트다.\n\n---\n\n7. 텍스트로만 끝나면 섭섭하다.\n\n'Studio' 기능을 켜면 멀티미디어가 쏟아진다.\n• 핵심 내용을 요약한 인포그래픽\n• 질의응답을 다룬 15분짜리 오디오 파일\n• 내용을 시각화한 6분짜리 AI 비디오\n\n이 모든 게 클릭 몇 번으로 즉시 생성된다.\n\n---\n\n8. 결론이다.\n\n이건 단순한 요약기가 아니다. '리서치의 혁명'이다.\n흩어진 파편적 정보를 모아 맥락을 잇고, 내 입맛대로 가공하는 과정이 극도로 단축됐다.\n\n누군가의 수년 치 인사이트를 단 몇 분 만에 내 것으로 만드는 것.\n이 툴을 쓰는 사람과 안 쓰는 사람의 정보 격차는 이제 좁힐 수 없을지도 모른다.\n\nhttps://youtu.be/17-g7hLam0g",
       "media": [],
-      "url": "https://www.threads.net/@tuberithm/post/DS_CJRHk-Lw",
+      "url": "https://www.threads.com/@tuberithm/post/DS_CJRHk-Lw",
       "created_at": "2026-01-02 07:30:43",
       "date": "2026-01-02",
       "crawled_at": "2026-02-12T19:06:23.458",
@@ -6524,7 +6524,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/605347926_17919218319232485_1978520044326125092_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTM2MHg1OTIuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QERrWBJpYwl6Vl19y6P3hnvfV_cSE4aDKZ0wbR-dpQwhAQQi3oVNfB1oBkOIrW61q4&_nc_ohc=M5oGyPdcjDYQ7kNvwGDGd-s&_nc_gid=400d2cUniqlvJ3v3EuRjGA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc5Nzk1MDk1MTU2ODA5NTE2NQ%3D%3D.3-ccb7-5&oh=00_Afuw2phikjLYhpokFhXSuh10iXJFLPi4QSA6lYOj__Xn_A&oe=699AFF3E&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@aicoffeechat/post/DS1CESekre9",
+      "url": "https://www.threads.com/@aicoffeechat/post/DS1CESekre9",
       "created_at": "2025-12-29 10:17:36",
       "date": "2025-12-29",
       "crawled_at": "2026-02-12T19:06:23.458",
@@ -6550,7 +6550,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/601758792_17918458047232485_7863597504831275589_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTcxNngxNDQwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QGKNLA0qBhtVJkk5UiEKL06XwZdycp7iCYtwgwyyeFtrq5JxpVo0_cF8Z-k4qNnCtk&_nc_ohc=B7ItPo-k0TsQ7kNvwEoYiu_&_nc_gid=Y_KjG_8c1KPc4jYW2jNJxw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc5MzE1NjM5OTY5OTIwMTcwNw%3D%3D.3-ccb7-5&oh=00_AfuyAaJ4AF-1ggU5BX6adquCfYC5gqxjrjH1wI9sLbJtnA&oe=699B0361&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@aicoffeechat/post/DSj_6YFkg6r",
+      "url": "https://www.threads.com/@aicoffeechat/post/DSj_6YFkg6r",
       "created_at": "2025-12-22 19:31:41",
       "date": "2025-12-22",
       "crawled_at": "2026-02-12T19:06:23.458",
@@ -6574,7 +6574,7 @@
       "display_name": "jrara_sogood",
       "full_text": "\"우와 너 진짜 전문가구나\"\n\n오늘 친구한테 업무 자동화 툴 만들어주고 들은 말\n3시간 만에 뚝딱 만들어주니까 엄청 신기해하더라\n\n근데 사실 비밀이 하나 있음\n나 3시간 중 1시간은 코딩 한 줄도 안 짰어\n딴짓함\n\n보통 바이브코딩 한다고 하면\n앉자마자 AI한테 \"만들어줘\" 하고\n프롬프트부터 칠 것 같지\n\n난 반대야\nAI가 코딩을 잘할수록\n키보드에서 손 떼고 더 고민해야 됨\n\n---\n\n친구가 처음에 요청한 건 이거였어\n\n\"엑셀 데이터 정리하게 VBA 매크로 좀 짜줘.\"\n\n예전 같았으면 바로 AI한테 VBA 짜달라고 했겠지?\n근데 이번엔 계속 물어봤어\n\n\"근데 그거 해서 궁극적으로 뭐 하고 싶은 건데?\"\n\"이걸 왜 굳이 엑셀에서 하려고 해?\"\n\n알고 보니 친구가 진짜 원한 건 엑셀 정리가 아니었음\n데이터팀에서 받은 파일 가공해서 'PPT 보고서' 만드는 과정이 귀찮았던 거임\n\n엑셀 매크로는 친구가 생각한 '수단(How)'일 뿐\n진짜 문제(Why)는 아니었던 거지\n\n그래서 엑셀(VBA)말고 구글 앱스스크립트로 웹사이트 하나 파줬음\n그냥 파일 업로드만 하면 알아서 그래프 그리고 PPT로 딱 만들어주게\n\n결과는?\n\n---\n\n\"와씨 내가 원하던 게 이거야\" 난리났음\n\n오늘 들은 '전문가' 소리가 유독 기분 좋은 건\n내가 '개발'을 잘해서가 아니라\n진짜 문제를 '해결'해줬기 때문인 것 같아\n\nAI 시대에 가져야 할 진짜 무기는\n화려한 프롬프팅 기술보다\n문제를 제대로 정의하는 '기획의 시간' 같아\n\n상대방이 말하는 수단에 갇히지 않고\n맥락을 읽어내는 거 말이야\n설계도가 명확하면 코딩은 AI가 알아서 하니까\n\n코딩보다 입 터는 시간이 더 길어지는 요즘,\n눈으로 설득하는 기획자로 일하는 거 꽤 재밌다\n\n기획이 머리 속에만 있으면 몽상이잖아\n이걸 내가 직접 구현한다는 게 진짜 짜릿해 😉",
       "media": [],
-      "url": "https://www.threads.net/@jrara_sogood/post/DSzDa1TEeSg",
+      "url": "https://www.threads.com/@jrara_sogood/post/DSzDa1TEeSg",
       "created_at": "2025-12-28 15:50:56",
       "date": "2025-12-28",
       "crawled_at": "2026-02-12T19:06:23.459",
@@ -6598,7 +6598,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/606745563_17938867662108088_6405538196205145219_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTE3OXgxMzIxLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QEbClcRpYN8yThA07ZfF-eQhQ0-QzrqPZTntKeSawrWxApNjGiH9xvgYNVf1fV4XiM&_nc_ohc=Qh9veBNnS8sQ7kNvwFHbTJ9&_nc_gid=IcgSAFJ9XW2gZW2BRoIWfw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc5Njk0NDU3Mjg2NjYyNTE4NA%3D%3D.3-ccb7-5&oh=00_AftRm6LIFinoJwy3Xe9gS1Z4LLqNDbBqz6tBIa7BwcxMtw&oe=699ADA23&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@starstarlight_marketing/post/DSxdPoCj5rz",
+      "url": "https://www.threads.com/@starstarlight_marketing/post/DSxdPoCj5rz",
       "created_at": "2025-12-28 00:58:07",
       "date": "2025-12-28",
       "crawled_at": "2026-02-12T19:06:23.466",
@@ -6622,7 +6622,7 @@
       "display_name": "study_ing_squirrel",
       "full_text": "내 AI는 왜 저사람이랑 다르지?\n\nGPT, 제미나이등등 왜 저사람이 쓴 \n내용을 그대로 가져와도 왜 다를까요?\n'맞춤형 지침' 때문입니다. \n\n아래는 제가 실제로 쓰고 있는 AI 맞춤형 지침인데 \n입맛에 맞게 수정하시면 될거 같습니다.",
       "media": [],
-      "url": "https://www.threads.net/@study_ing_squirrel/post/DSy1y1QARLv",
+      "url": "https://www.threads.com/@study_ing_squirrel/post/DSy1y1QARLv",
       "created_at": "2025-12-28 13:51:53",
       "date": "2025-12-28",
       "crawled_at": "2026-02-12T19:06:23.466",
@@ -6646,7 +6646,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/606537650_17893556427384188_2996179315237784568_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTI1MXg4NDQuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QEpzrdlfSgB-56s_qW5IvZwdS9svrl2mdGkEmBDfdDOnT_E_rYoAt0SME3hPRttL_c&_nc_ohc=YbrLdnQhewEQ7kNvwHCMFPY&_nc_gid=6W0wDHC1dBSjL5fYc-7bjw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc5NjgyNDcwMjExNjEyMDQyMw%3D%3D.3-ccb7-5&oh=00_Afs0fhqgCfFc3azj4iF5wGgcqVsN-K6CA4-MFKFqNZ5H6Q&oe=699B0AC0&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@pitchtitan/post/DSxB_M8D0dn",
+      "url": "https://www.threads.com/@pitchtitan/post/DSxB_M8D0dn",
       "created_at": "2025-12-27 20:59:57",
       "date": "2025-12-27",
       "crawled_at": "2026-02-12T19:06:23.466",
@@ -6670,7 +6670,7 @@
       "display_name": "specal1849",
       "full_text": "요즘느끼는거 AI쓰면서 그렇게 많은툴 필요없다 쓰려했는데\n쓰는거 정리해보니까 많네...\n\n공냥이-AI크리에이터로 매일쓰는기준\n\n1Chat gpt 제미나이 클로드[다쓰는 목적이다름]\n\n이미지 영상기준\n2미드저니, 나노바나나 API 이외[프리픽 힉스필드]\n3.영상은 클링 하일루오 소라 VEO3 돌려쓰는느낌?\n\n에이전트나 코드생성용\n4.젠스파크, 노트북 LM, 마누스 가끔\n5.CODEX 클코[사실상 동반자] \n\n특수목적\n한컴-인라인 AI 티로-방송보면서 실시간번역\n\n이외\nN8N MAKE 가끔?? \n\n사용비\n대충 월 20고정\n맥스나 울트라면 40-50감 소비중 \n\n다만 그돈이 아깝진않음",
       "media": [],
-      "url": "https://www.threads.net/@specal1849/post/DSyzX_MEq66",
+      "url": "https://www.threads.com/@specal1849/post/DSyzX_MEq66",
       "created_at": "2025-12-28 13:30:44",
       "date": "2025-12-28",
       "crawled_at": "2026-02-12T19:06:23.466",
@@ -6694,7 +6694,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/599364438_17854724037590872_6948911664806510494_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTAwMHgxMDAwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QFmldn6Xsa_XmwWAk-u82OsOsh0qQiTGP925fLBDDFyklqvbytdcfubn4L8PbQShls&_nc_ohc=8zM3KuTX_7QQ7kNvwF1c7uD&_nc_gid=4x65l3ByOklRiXWoORF6tg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc4ODA5MDg1Mjk1MTQ0NjQ3OQ%3D%3D.3-ccb7-5&oh=00_AftXVjqiMxCJWnc8b8gf6sJb9eM_mSh3Nvt8ivFrCDnmpw&oe=699B00F5&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@gwon_vibe/post/DSSAJEckx6p",
+      "url": "https://www.threads.com/@gwon_vibe/post/DSSAJEckx6p",
       "created_at": "2025-12-15 19:47:21",
       "date": "2025-12-15",
       "crawled_at": "2026-02-12T19:06:26.481",
@@ -6718,7 +6718,7 @@
       "display_name": "yourgpt3650",
       "full_text": "챗지피티에게 데이터 정리(공백/중복/형식) 때문에 스트레스 받는 건 이제 그만\n\n복붙 난장판 = 수식 다 깨짐\n\n대신 이 5가지 프롬프트로 데이터부터 깔끔하게 만들어봐\n\n---\n\n1. 보이지 않는 공백 잡아내기\n “똑같아 보이는데 자꾸 다르다고 나올 때”\n\n“이 데이터에\n앞뒤 공백 말고\n줄바꿈이나\n눈에 안 보이는 특수 공백이 있는 것 같아\n\n[데이터 붙여넣기]\n\nTRIM으로 안 지워지는\n유령 공백까지\n싹 제거하는 수식 만들어줘\n\nSUBSTITUTE랑 CLEAN을\n어떻게 조합해야 하는지도 알려주고\n\n이 수식 써도\n원본 값이 망가지지 않는지\n확인하는 방법도 같이 알려줘”\n\n이거 하나면\n‘왜 안 맞지?’ 고민 절반 사라짐\n\n---\n\n2. 숫자인 척하는 텍스트 정리\n “숫자인데 계산이 안 될 때”\n\n“‘1,000원’\n‘USD 50’\n이런 값들이\n텍스트로 인식돼서 계산이 안 돼\n\n여기서\n숫자만 깔끔하게 뽑아서\n계산 가능하게 만들어줘\n\n‘2024.01.01’처럼\n점으로 찍힌 날짜도\n표준 날짜 형식으로\n한 번에 바꾸는 방법 알려주고\n\n데이터 많을 때\n함수 말고\n텍스트 나누기로\n3초 컷 하는 방법도 같이 알려줘”\n\n초록색 삼각형\n이걸로 대부분 해결됨\n\n---\n\n3. 한 셀에 뭉친 텍스트 쪼개기\n “주소, 이름, 정보가 한 칸에 다 들어 있을 때”\n\n“이런 데이터가 있어\n\n[서울시 강남구 테헤란로 123]\n\n이걸\n시 / 구 / 도로명으로\n각각 다른 열로 나누고 싶어\n\n최신 엑셀(TEXTSPLIT) 쓰는 방법이랑\n구버전 엑셀에서 쓰는 방법도\n둘 다 알려줘\n\n이메일 주소에서\n@ 뒤에 있는 도메인만\n따로 뽑는 수식도 만들어줘”\n\n이거 정리 안 되면\n그 다음 작업이 아예 안 됨\n\n---\n\n4. 중복, 정확하게만 제거하기\n “필요한 데이터까지 같이 날릴까 봐 무서울 때”\n\n“이 데이터에서\n[A열 이름 + B열 전화번호]가\n둘 다 같은 경우만\n중복으로 처리하고 싶어\n\n원본은 건드리지 않고\n다른 시트에\n고유값만 자동으로 뽑아내는\nUNIQUE 수식 만들어줘\n\n‘삼성전자’랑 ‘삼성 전자’처럼\n살짝 다른 데이터도\n검증할 수 있는 팁이 있으면 같이 알려줘”\n\n중복 제거 버튼\n무작정 누르기 전에 이거부터\n\n---\n\n5. 규칙 없는 텍스트에서 필요한 것만\n “함수로는 답이 안 나올 때”\n\n“이런 문장이 있어\n\n[안녕하세요 010-1234-5678 홍길동입니다]\n\n여기서\n전화번호만 쏙 뽑아내고 싶어\n\n구글 시트에서 쓰는\n정규식(REGEXEXTRACT) 수식이랑\n\n엑셀에서\nCtrl+E 빠른 채우기로\n패턴 뽑아내는 방법도 알려줘\n\n제품명(S사이즈)처럼\n괄호 안에 있는 내용만\n추출하는 수식도 만들어줘”\n\n이 단계는\n‘정리’라기보다\n‘발굴’에 가까움\n\n---\n\nCHATGPT, AI와 관련된 더 많은 정보를 원한다면 아래 링크 꼭 확인해봐!\n\n좋은 강의 = 좋은 결과.\n\nhttps://litt.ly/yourgpt3650",
       "media": [],
-      "url": "https://www.threads.net/@yourgpt3650/post/DSwpkD7ksP7",
+      "url": "https://www.threads.com/@yourgpt3650/post/DSwpkD7ksP7",
       "created_at": "2025-12-27 17:26:31",
       "date": "2025-12-27",
       "crawled_at": "2026-02-12T19:06:26.481",
@@ -6742,7 +6742,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/587928441_17981040941955025_7713015998612887616_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTM1MHgxNjg3LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QFY0qdW1JccRVLqFS8ThYFGaAB_qHrOWpWzTu3d2hfQylu2sEej_iT5srw_LxviVM4&_nc_ohc=5FgUol4vjAAQ7kNvwE-kCTP&_nc_gid=Sh-OsEabk2hzykmK4Fhj9Q&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc5Njc0ODU2NzU1NDc5OTQ3Ng%3D%3D.3-ccb7-5&oh=00_AftU0bklqHdAaC_zgzpUBDMYNDPeMaHxCIH7mUqyhR6NWg&oe=699B05EC&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@struc___ture/post/DSwwrTGk7d0",
+      "url": "https://www.threads.com/@struc___ture/post/DSwwrTGk7d0",
       "created_at": "2025-12-27 18:28:41",
       "date": "2025-12-27",
       "crawled_at": "2026-02-12T19:06:26.482",
@@ -6770,7 +6770,7 @@
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/589903365_17914044789258624_5188098314096336133_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjA1eDMwMS5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QHJ___Noy8bWb9FHRpaxuDHt0-Nt0zn9fnlQE8bkLtR6UySYAs845ULEhWugYxkUUQ&_nc_ohc=jfOvAUxo3CAQ7kNvwFTvfoP&_nc_gid=5Z1tWMnJg8jmOe5D2kGdHw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc5Njc3MzY0MjgzMjE1ODM4Ng%3D%3D.3-ccb7-5&oh=00_AfvTRJDtp8SE6TfePvLXVOzkP9p-xUNsqdHCNO6Y9w1agw&oe=699AE374&_nc_sid=10d13b",
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/589910776_17914044855258624_1435648218200184878_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjA1eDM2NS5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QHJ___Noy8bWb9FHRpaxuDHt0-Nt0zn9fnlQE8bkLtR6UySYAs845ULEhWugYxkUUQ&_nc_ohc=uwS_Ww42rCwQ7kNvwFvy7ET&_nc_gid=5Z1tWMnJg8jmOe5D2kGdHw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc5Njc3MzcxMjE4MDc1NzQxMA%3D%3D.3-ccb7-5&oh=00_Afu67MsiHkhm45VK13McBsL8LmdmMVtx7VOQmSmAcmvENw&oe=699AF509&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@programmingzombie/post/DSw2WViE_0V",
+      "url": "https://www.threads.com/@programmingzombie/post/DSw2WViE_0V",
       "created_at": "2025-12-27 19:18:15",
       "date": "2025-12-27",
       "crawled_at": "2026-02-12T19:06:26.482",
@@ -6796,7 +6796,7 @@
       "display_name": "choi.openai",
       "full_text": "AI 학습에 돈을 쓸 필요는 없습니다.\n\n오픈AI, 구글, 앤트로픽 등이 웬만한 유료 강의보다 뛰어난 정보를 무료로 공개하고 있습니다.\n프롬프트부터 AI 개발까지 필요한 기초적인 지식을 전부 정리했습니다.\n\n진심으로 추천할 만한 콘텐츠 16개를 소개해드립니다. 🧵\n\n---\n\n1/ Gemini 활용 모음 :\n\n---\n\n2/ AI Studio 바이브 코딩 :\n\n---\n\n3/ 나노 바나나 활용 모음 :\n\n---\n\n4/ 노트북LM 모음 :\n\n---\n\n5/ 구글 MCP 모음 :\n\n---\n\n6/ 프롬프트 작성법 :\n\n---\n\n7/ 오픈AI 모음 :\n\n---\n\n8/ Claude Code 모음 :\n\n---\n\n9/ Claude 공식 Skils 모음 :\n\n---\n\n10/ Claude Skils 모음 :\n\n---\n\n11/ 젠스파크 모음 :\n\n---\n\n12/ 디자인 에이전트 Lovart 모음 :\n\n---\n\n13/ HiggsField 모음 :\n\n---\n\n14/ Perplexity 모음 :\n\n---\n\n15/ Manus 모음 :\n\n---\n\n16/ AI 무료 강의 모음 :\n\n---\n\n17/ 오픈AI 프롬프트 팩 :",
       "media": [],
-      "url": "https://www.threads.net/@choi.openai/post/DSwLdrWD6DI",
+      "url": "https://www.threads.com/@choi.openai/post/DSwLdrWD6DI",
       "created_at": "2025-12-27 13:03:30",
       "date": "2025-12-27",
       "crawled_at": "2026-02-12T19:06:29.495",
@@ -6820,7 +6820,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/608062416_17938942197101936_566562309313571799_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTMzM3g2MTUuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QGpgDUCQBcj6Hho-0WUpodux4PzzQwMm1flN3JIlmzhlsvD-WKs8SzqKBnHLwdJEy8&_nc_ohc=geeGsQcnpp8Q7kNvwGjCOdi&_nc_gid=OE1F2nDoEa004qyG13COzA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc5NjU2ODEwNDQ3OTQ0NjMzNA%3D%3D.3-ccb7-5&oh=00_Aft84O3cCpyWSi243nFWELQ0yT78Gg1iqWEkseyN5_ajVA&oe=699AD9C3&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@alcohol_fully/post/DSwHpNxE1U-",
+      "url": "https://www.threads.com/@alcohol_fully/post/DSwHpNxE1U-",
       "created_at": "2025-12-27 12:30:08",
       "date": "2025-12-27",
       "crawled_at": "2026-02-12T19:06:29.495",
@@ -6844,7 +6844,7 @@
       "display_name": "dev_shibaa",
       "full_text": "20대 친구들이 IT 사업 대부분 망하는 이유는\n사업을 거꾸로 하기 때문이야. 가령,\n\n1. 정부지원사업을 따내서 서비스 만들고\n2. 마케팅을 하고 직원을 뽑고 어쩌고\n3. 망해서 폐업신고 때리고 직장 다님\n\n그럼 어떻게 해야 하냐고?\n\n1. SNS 계정부터 만들고, 사람을 모음\n2. 사람들의 불편함을 듣고, 그걸 해결하는 서비스를 만듦\n3. 그동안 모인 팔로워들한테 던지고 피드백 받음.\n4. 피드백 들어오면 그거 기반으로 디벨롭, 린하게 성장\n\n본인이 의미있다 생각해서 만든 서비스도\n시장이 효용 없다 판단하면 소용 없으므로,\n\n콘텐츠부터 시작하세요.\n어차피 그 서비스 없다고 사람들 죽지 않아요.",
       "media": [],
-      "url": "https://www.threads.net/@dev_shibaa/post/DSq3vMgkjNd",
+      "url": "https://www.threads.com/@dev_shibaa/post/DSq3vMgkjNd",
       "created_at": "2025-12-25 11:34:56",
       "date": "2025-12-25",
       "crawled_at": "2026-02-12T19:06:29.495",
@@ -6870,7 +6870,7 @@
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/606329310_17905918224311844_8269469069912276615_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNzYyeDkyNi5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QF1_eldawC1MNFVedJ2J2MmylJ4pzxSIpQ_SQx2NkciY0s2fgkL32KETQVQcp0m0zU&_nc_ohc=rv_fnI8I2DYQ7kNvwEm4AQ_&_nc_gid=hkawMCGJwja4GylHlbxnmA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc5NTMyMDQ0MjI5MTc3MzIyOA%3D%3D.3-ccb7-5&oh=00_AfuBneNu1-5gc-TDgLm0Ictru6MGpndYGvbvLrLS2Mcl6g&oe=699AF782&_nc_sid=10d13b",
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/606323807_17905918260311844_6448615951394600240_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTEyNngzMTIuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QF1_eldawC1MNFVedJ2J2MmylJ4pzxSIpQ_SQx2NkciY0s2fgkL32KETQVQcp0m0zU&_nc_ohc=IJmfteJ1Pz8Q7kNvwGkny7G&_nc_gid=hkawMCGJwja4GylHlbxnmA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc5NTMyMDQ5NDE3NTM0MTg0Mg%3D%3D.3-ccb7-5&oh=00_Afv5zB3o4C4q0nf9HGz5NSS1P_Q6A8IKYsEtnnrh-AKE6A&oe=699B08F3&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@focusrefresh/post/DSrr84flFEq",
+      "url": "https://www.threads.com/@focusrefresh/post/DSrr84flFEq",
       "created_at": "2025-12-25 19:11:11",
       "date": "2025-12-25",
       "crawled_at": "2026-02-12T19:06:29.495",
@@ -6901,7 +6901,7 @@
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/557237900_17926425540112159_5175003136130913967_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uOTE4eDU3NC5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QHkuUhyZSV-Fw6fq_WNiMw7ac_kIatUMXB5J-7THlkbI71wcYUM4ZGQQHIn8DnoRyY&_nc_ohc=3-ytwsujPAkQ7kNvwFYvynC&_nc_gid=fP6U5C4HJjUPd52mR3y6mA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzczMzgzOTU0MjI5MDU3NzAwOQ%3D%3D.3-ccb7-5&oh=00_AftGijAAScs2z7M5fSRF23KSAlTiX7EKO37t-DFrEWMx-w&oe=699AD8F8&_nc_sid=10d13b",
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/557654525_17926425666112159_5576499105172874184_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTM5OXg3OTQuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QHkuUhyZSV-Fw6fq_WNiMw7ac_kIatUMXB5J-7THlkbI71wcYUM4ZGQQHIn8DnoRyY&_nc_ohc=lWLFXZGDKyAQ7kNvwF0y5wE&_nc_gid=fP6U5C4HJjUPd52mR3y6mA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzczMzgzOTU5MTQ1NjIzMDE3NQ%3D%3D.3-ccb7-5&oh=00_AfuVGb0BWt23TW1ThR0GpfFsvuIVmidPKFv9poous7b5hw&oe=699AEEE6&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@tofukyung/post/DPRP3W3Annj",
+      "url": "https://www.threads.com/@tofukyung/post/DPRP3W3Annj",
       "created_at": "2025-10-01 23:12:53",
       "date": "2025-10-01",
       "crawled_at": "2026-02-12T19:06:32.512",
@@ -6930,7 +6930,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/587098363_17884707747406917_6087290139880824516_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uODIxeDQ1Ny5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QE69yqSQY0N8rLY-g7e6DoW6Jh3GhJscIt1APrpMSNYorzhUrEL1o6ihbg75X-JC-U&_nc_ohc=p65OqtIv-_IQ7kNvwHuJutr&_nc_gid=3cSkD_c-s-_UV92SlWvkUg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc3MzkzMzI2OTE1NjA2NjI4Nw%3D%3D.3-ccb7-5&oh=00_Afv5KkjfeCzf2zTeF9UOQx7LyhjfIbJ7uYtE_k9xOIJULw&oe=699AD9CD&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@specal1849/post/DRftFAqE3Pv",
+      "url": "https://www.threads.com/@specal1849/post/DRftFAqE3Pv",
       "created_at": "2025-11-26 06:58:45",
       "date": "2025-11-26",
       "crawled_at": "2026-02-12T19:06:32.512",
@@ -6955,7 +6955,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/547831949_17876661954406917_4616435481616393437_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uODk1eDYzMS5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QGOVeFI6r5scfwd3MwCSjzD0ukxTwEvCBh8HHnrvnYakNCwSqe_XqEVJ8cGbZTVZwg&_nc_ohc=kRLi0qgJ2DUQ7kNvwHBnDqZ&_nc_gid=mKKR7AHZeOVy5umyph5Nbg&edm=AI6eXeABAAAA&ccb=7-5&ig_cache_key=MzcyMTE5MTQ0MTA1OTQzNDA1Nw%3D%3D.3-ccb7-5&oh=00_AfuoEl0WOe5JPP78ts84jsPHgkr_g6Asp8Zr5njG3a_vIQ&oe=6993788F&_nc_sid=6efbad"
       ],
-      "url": "https://www.threads.net/@specal1849/post/DOkU-Zhkk5J",
+      "url": "https://www.threads.com/@specal1849/post/DOkU-Zhkk5J",
       "created_at": "2025-09-14 12:30:09",
       "date": "2025-09-14",
       "crawled_at": "2026-02-12T19:06:32.512",
@@ -6990,7 +6990,7 @@
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/605142402_17887909077406917_5502792682709331354_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTAxMng2MTAuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QGBE0GsLnFtDy_eRBL-E8X6Q-jaU_OMPUuivYJfQPQ94hUFULBgjO-E84ZvzIfTwks&_nc_ohc=UDL2U-DLiskQ7kNvwF80koS&_nc_gid=LOUNNSamSdVQ9sfDD1-fKA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc5MzgxMTk5ODQ4MDk3ODI3NQ%3D%3D.3-ccb7-5&oh=00_AfsNGWMFoE-sSZgFHW8LnXJ6OwXBfjZKjCz997eyD_eNZA&oe=699B0170&_nc_sid=10d13b",
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/606213739_17887909113406917_3771352787481201831_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uOTQ3eDU5NC5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QGBE0GsLnFtDy_eRBL-E8X6Q-jaU_OMPUuivYJfQPQ94hUFULBgjO-E84ZvzIfTwks&_nc_ohc=ej5orGkpdjIQ7kNvwGxlTjs&_nc_gid=LOUNNSamSdVQ9sfDD1-fKA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc5MzgxMjA3NTgyMzk0MDM4Nw%3D%3D.3-ccb7-5&oh=00_Afss6TSgqI3qNh53VeZU3bFVswxgECtHC2LlEyEy1LS65Q&oe=699AF741&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@specal1849/post/DSmUMfvkQ_v",
+      "url": "https://www.threads.com/@specal1849/post/DSmUMfvkQ_v",
       "created_at": "2025-12-23 17:13:50",
       "date": "2025-12-23",
       "crawled_at": "2026-02-12T19:06:32.512",
@@ -7018,7 +7018,7 @@
       "display_name": "super_writer12",
       "full_text": "스레드는 이게 핵심이에요. 꼭 저장하세요.\n\n글의 기본 구조가 서론-본론-결론인데,\n스레드는 조금 달리 해야 해요.\n\n1. 시선을 끄는 1줄\n2. 압축요약한 본론 3~4줄\n3. 글 마무리 교훈 1~2줄\n\n제 글 구조만 봐도 이렇게 되어있어요.\n그냥 적기만 하면 추천이 안돼요.\n구조와 압축력이 없기 때문입니다. \n\n스레드에서는 '짧게 때리기'가 중요해요.\n\n---\n\n스레드는 텍스트 숏폼이라 생각해요.\n시선을 못끌면 글이 묻혀요.\n정말 그래요.",
       "media": [],
-      "url": "https://www.threads.net/@super_writer12/post/DSduCCegtqQ",
+      "url": "https://www.threads.com/@super_writer12/post/DSduCCegtqQ",
       "created_at": "2025-12-20 09:00:00",
       "date": "2025-12-20",
       "crawled_at": "2026-02-12T19:06:32.516",
@@ -7040,7 +7040,7 @@
       "display_name": "platter.worklab",
       "full_text": "\"요새 AI 안쓰면 안된다길래\"라면서 막연하게 새 툴, 새 업데이트, 프롬프트 예시 등 찾아 헤매야 뭐하나\n\n이미 대부분의 지식 자체가 AI와 함께 풀린 상황에서\n노하우, 지식, 기술을 찾아 강의나 책을 찾아다니는 것보다도 중요한 건 1) 해결하고 싶은 문제가 있고 2) 그 문제에 접근하는 Problem-solving 사고방식인 듯",
       "media": [],
-      "url": "https://www.threads.net/@platter.worklab/post/DScOxOAkzam",
+      "url": "https://www.threads.com/@platter.worklab/post/DScOxOAkzam",
       "created_at": "2025-12-19 19:07:35",
       "date": "2025-12-19",
       "crawled_at": "2026-02-12T19:06:32.516",
@@ -7062,7 +7062,7 @@
       "display_name": "yun_ja_dong",
       "full_text": "코딩 잘한다고 다 돈 잘 벌면\n개발자들이 미쳤다고 회사 취업하겠습니까?\n다 1인 기업으로 돈 쓸어담고 있겠죠.\n\n사업으로 돈을 벌려면 코딩 능력은 생각보다 안 중요합니다.\n진짜 중요한 건 딱 두 가지예요.\n\n1. 고객의 진짜 문제를 찾는 능력\n2. 찾은 문제를 해결하는 능력\n\n코딩은 2번 과정에서 필요한 도구일 뿐입니다.",
       "media": [],
-      "url": "https://www.threads.net/@yun_ja_dong/post/DScUnTvE933",
+      "url": "https://www.threads.com/@yun_ja_dong/post/DScUnTvE933",
       "created_at": "2025-12-19 19:58:39",
       "date": "2025-12-19",
       "crawled_at": "2026-02-12T19:06:32.516",
@@ -7084,7 +7084,7 @@
       "display_name": "specal1849",
       "full_text": "Ai분야에서 기억하고있는 댓글들\n\n1.같은기술가지고 언제까지 우려먹을래\n(올해는 택도없어 사진 영상쪽)\n\n2.프롬프트 공부할필요없어요 더쉬워질거에요\n(진짜?)\n\n3.GEO이야기를함\n(사기꾼이라고 소리들음)\n\n4.선생님은 스레드잘못해요\nAI치곤 느리게 크는편이잔아요\n\n5.AI로 개꿀빨잔아요\n(너도하세요 왜안함...?)\n\n그 댓글단분들 지금 어케생각하세요?",
       "media": [],
-      "url": "https://www.threads.net/@specal1849/post/DSYXjdgExsv",
+      "url": "https://www.threads.com/@specal1849/post/DSYXjdgExsv",
       "created_at": "2025-12-18 07:07:23",
       "date": "2025-12-18",
       "crawled_at": "2026-02-12T19:06:32.516",
@@ -7110,7 +7110,7 @@
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/590430255_17887024902406917_4835429243857811260_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjg1eDQ4NS5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QFZgpabcCzmibHB0a_-zeN4gGNsAtnHwt22XIlKD6a1tqj9rBfoqPez8gXGP5rm4gI&_nc_ohc=6HbhhIvphiMQ7kNvwG746zQ&_nc_gid=hkH4aE8okDVAGxauhO3qfQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc4ODQ3MzUzMzA1MjY4MTQ2Ng%3D%3D.3-ccb7-5&oh=00_AfuqmbuaMWa0v5ircqfONqaNursTNqaAG4VYgs4abvYNXA&oe=699AFF2C&_nc_sid=10d13b",
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/591169921_17887025241406917_617735552209177063_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTI1N3g2NDkuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QFZgpabcCzmibHB0a_-zeN4gGNsAtnHwt22XIlKD6a1tqj9rBfoqPez8gXGP5rm4gI&_nc_ohc=TmpUvuogDfcQ7kNvwF5Wvcs&_nc_gid=hkH4aE8okDVAGxauhO3qfQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc4ODQ3MzYwMzYxNzYxMzczNQ%3D%3D.3-ccb7-5&oh=00_AfsoXWx--_nla2reB050LlrRl0MnRml2eqH_x9z-WWRDEg&oe=699AE0E9&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@specal1849/post/DSTWkAOESmj",
+      "url": "https://www.threads.com/@specal1849/post/DSTWkAOESmj",
       "created_at": "2025-12-16 08:27:34",
       "date": "2025-12-16",
       "crawled_at": "2026-02-12T19:06:35.533",
@@ -7143,7 +7143,7 @@
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/591140549_17885133372406917_2383324421314661236_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTIyN3g3MDMuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QH5VLHNQvOOxC35bmsbeBtbHZP4AhJTytm81IALrRTx3N9CPxapk8SCDxhPAzi1mG8&_nc_ohc=iDzEfXu9ghgQ7kNvwHUtHCN&_nc_gid=5eK0Fu-KPii9DiE8hvPAIw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc3NjgxNTUzNDcxMDE3Mzg3Mw%3D%3D.3-ccb7-5&oh=00_AfuOPDp0vBKbuzmoo8qS4rqXLh9CwC2pbITW2lkmPYW-CA&oe=699B0C13&_nc_sid=10d13b",
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/589200372_17885133438406917_9065027197255044080_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTE5OHg2MDguc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QH5VLHNQvOOxC35bmsbeBtbHZP4AhJTytm81IALrRTx3N9CPxapk8SCDxhPAzi1mG8&_nc_ohc=9c65Ljn4oGwQ7kNvwHcZgae&_nc_gid=5eK0Fu-KPii9DiE8hvPAIw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc3NjgxNTYyNTA5NzQwNzczOQ%3D%3D.3-ccb7-5&oh=00_Aft288Q02N9dV4KZooDUc0r3F00oiAnhJxaryAn8XbFAGw&oe=699AE562&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@specal1849/post/DRp8XdFE2VH",
+      "url": "https://www.threads.com/@specal1849/post/DRp8XdFE2VH",
       "created_at": "2025-11-30 06:24:45",
       "date": "2025-11-30",
       "crawled_at": "2026-02-12T19:06:35.533",
@@ -7172,7 +7172,7 @@
       "display_name": "specal1849",
       "full_text": "내글 AI영상가지고 회사에서 회의랑 강의를한다고???\n\n이게 왜문제죠...?\n보라고 올린거고 쓰라고 올린건데..?\n\nDM으로 공냥이님 채널을 강의에서켜서 \n제미나이 영상 보여주는분이있어요 \n이런말이왔습니다.\n\n음...? 쓰세요 쓰라고 올린거지\n장표공유해 드린것도 가져다쓰세요\n\n뭐이게 별거라고\n나도 그렇게 쓸라고 아카이빙해둔건데요 뭐\n\n공유드렸던 장표 PDF도 아래정리해드립니다.\n\n채널에 올라오는건 유료강의든 무료강의든\n블로그든 유료강의든 쓰실분들은 쓰세요 \n[다만 DM이나 메일보내주면 감사드리겠습니다.]\n\n유일하게 대응하는거\n노션하고 글 그대로 크몽에 팔지말라고 명시해뒀는데\n무수정+그대로 가져다 파는건 금지입니다.\n\n[이건 쓰레드 변호사 분들한테 비싼 친구비주고 이를꺼야]\n\n---\n\n옛날에 만든거\n\n---\n\n나노바나나\n\n---\n\n나노바나나 PRO 가이드북",
       "media": [],
-      "url": "https://www.threads.net/@specal1849/post/DSLinAmE2my",
+      "url": "https://www.threads.com/@specal1849/post/DSLinAmE2my",
       "created_at": "2025-12-13 07:33:51",
       "date": "2025-12-13",
       "crawled_at": "2026-02-12T19:06:35.533",
@@ -7202,7 +7202,7 @@
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/536458615_17873701881406917_5621206490756488693_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uNzc5eDUyMy5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QF6rgFmuW3ADAqKbxpz-YsjY2i86OyLpZUCBiA5CuUVTUYlxkz6yQyORVSrwgzjt2w&_nc_ohc=2nmHqrbmAFsQ7kNvwEyGuKo&_nc_gid=2BeIWoA8nBOIFgd1T1ecbw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzcwMzIyMzk4NzcyOTAxMDY0NA%3D%3D.3-ccb7-5&oh=00_AfsrZZp8uQh7nN6_6A1JnkQrw0MYgQsq_yxg_IAGCuhOnw&oe=699B056E&_nc_sid=10d13b",
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/533978766_1498369171576857_6883045859542760049_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uNjQweDM2MC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QF6rgFmuW3ADAqKbxpz-YsjY2i86OyLpZUCBiA5CuUVTUYlxkz6yQyORVSrwgzjt2w&_nc_ohc=TA_A5T_2AWMQ7kNvwH8VSiY&_nc_gid=2BeIWoA8nBOIFgd1T1ecbw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzcwMzIyMzY0MTM5NjUwNDQ4Nw%3D%3D.3-ccb7-5&oh=00_AftBFwDC4F48NBhUYSBGSdanKJZbtGHQawD7spzgWSeosw&oe=699AF306&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@specal1849/post/DNkdqoARStO",
+      "url": "https://www.threads.com/@specal1849/post/DNkdqoARStO",
       "created_at": "2025-08-20 17:31:34",
       "date": "2025-08-20",
       "crawled_at": "2026-02-12T19:06:35.533",
@@ -7231,7 +7231,7 @@
       "display_name": "프로그래밍좀비",
       "full_text": "1. 기획 (Market Need)\n아무리 잘 만들고(개발), 예쁘고(디자인), 널리 알렸어도(마케팅), 사람들이 원하지 않는 것이라면 수익은 0입니다.\n\n[ 개발(100) x 기획(0) = 쓸모없는 고퀄리티 앱 ]\n\n핵심: 시장성 검증, 타겟 유저 설정, 경쟁 앱 분석.\n\n2. 비즈니스 모델 (BM / Pricing)\n앱을 사용하는 유저는 많은데 돈을 벌 방법이 설계되어 있지 않다면 수익은 0입니다. 광고를 어디에 배치할지, 인앱 결제 상품을 얼마에 팔지 설계하는 것은 개발과는 전혀 다른 영역입니다.\n\n[ 사용자(100) x BM(0) = 자선 사업 ]\n\n핵심: 광고 효율 최적화(eCPM), 적절한 가격 정책, 유료화 설계.",
       "media": [],
-      "url": "https://www.threads.net/@programmingzombie/post/DSEhu-lE8kp",
+      "url": "https://www.threads.com/@programmingzombie/post/DSEhu-lE8kp",
       "created_at": "2025-12-10 14:11:31",
       "date": "2025-12-10",
       "crawled_at": "2026-02-12T19:06:35.538",
@@ -7258,7 +7258,7 @@
       "display_name": "programmingzombie",
       "full_text": "사업은 덧셈이 아니라 곱셈입니다. \n\n내가 개발을 아무리 잘해도(100), 디자인이나 마케팅이 없다면(0) 수익은 없습니다. \n[ 개발(100) x 디자인(0) x 마케팅(0) = 0 ] \n\n개발자 마인드에서 벗어나야 하는 이유가 여기에 있습니다. 스스로 부족한 영역을 객관적으로 찾으세요. 그 '0'의 영역을 최소 1로 만들지 못한다면, 결과는 언제나 0일 수밖에 없습니다.\n\n그리고 개발, 디자인, 마케팅 뿐 아니라 다양한 요소들이 존재합니다. 다양한 부분들을 추가로 정리해보았습니다.\n\n---\n\n1. 기획 (Market Need)\n아무리 잘 만들고(개발), 예쁘고(디자인), 널리 알렸어도(마케팅), 사람들이 원하지 않는 것이라면 수익은 0입니다.\n\n[ 개발(100) x 기획(0) = 쓸모없는 고퀄리티 앱 ]\n\n핵심: 시장성 검증, 타겟 유저 설정, 경쟁 앱 분석.\n\n2. 비즈니스 모델 (BM / Pricing)\n앱을 사용하는 유저는 많은데 돈을 벌 방법이 설계되어 있지 않다면 수익은 0입니다. 광고를 어디에 배치할지, 인앱 결제 상품을 얼마에 팔지 설계하는 것은 개발과는 전혀 다른 영역입니다.\n\n[ 사용자(100) x BM(0) = 자선 사업 ]\n\n핵심: 광고 효율 최적화(eCPM), 적절한 가격 정책, 유료화 설계.\n\n---\n\n3. 운영 및 CS (Retention)\n출시 초기에는 유입이 되어도, 버그 대응이 늦거나 유저 피드백을 무시하면 평점이 1점대로 떨어집니다. 스토어 평점이 망가지면 신규 유입이 끊겨 결국 수익이 0으로 수렴합니다.\n\n[ 신규유입(100) x 운영(0) = 밑 빠진 독 ]\n\n핵심: 리뷰 답글, 빠른 버그 픽스, 업데이트 주기 관리.(처음부터 잘 설계하면 문제가 없을 수도 있음)\n\n4. 정책 및 리스크 관리 (Policy)\n이건 정말 무서운 '0'입니다. 앱이 대박이 났어도 구글/애플의 정책을 위반하여 계정이 정지(Terminate) 당하면 그 즉시 수익은 0이 됩니다. 특히 1인 개발자는 애드몹(AdMob) 제한이나 스토어 삭제 이슈에 매우 취약합니다.\n\n[ 월수익 1억 x 계정정지(0) = 0 ]\n\n핵심: 저작권 준수, 스토어 정책 모니터링, 무효 트래픽 관리.\n\n---\n\n5. 데이터 분석 (Business Intelligence)\n초기에는 감으로 할 수 있지만, 수익을 극대화하려면 철저한 계산이 필수입니다. 광고 지출(Cost) 대비 수익(Revenue), eCPM의 등락을 분석하지 않고 마케팅만 태운다면, 앱은 성장하는 것 같아도 통장은 비어가는 상황이 발생합니다. 최적화를 못 하면 0이 아니라 마이너스(적자)가 될 수 있습니다.\n\n[ 마케팅열정(100) x 분석능력(0) = 적자 ]\n\n핵심: ROAS(광고비 대비 매출) 관리, eCPM 하락 원인 분석 및 대응.",
       "media": [],
-      "url": "https://www.threads.net/@programmingzombie/post/DSEhurTk84N",
+      "url": "https://www.threads.com/@programmingzombie/post/DSEhurTk84N",
       "created_at": "2025-12-10 14:11:29",
       "date": "2025-12-10",
       "crawled_at": "2026-02-12T19:06:35.538",
@@ -7280,7 +7280,7 @@
       "display_name": "ai.dentity.141",
       "full_text": "정지우 작가님 \n<AI, 글쓰기, 저작권>을 읽다가\n이 문장에 몇 번이고 밑줄을 쳤어요. \n\n\"글을 쓰는 사람이 걱정해야 할 건\nAI의 글쓰기 기술이 아니다. \n오히려 글을 삶으로 증명하는 일이다.\"\n\n콘텐츠 제작이 (너무) 쉬워진 지금,\n사람들은 더욱 콘텐츠 뒤의 사람과\n연결되고 싶다는 이야기였어요. \n\n일일이 자료 찾고, 발품 팔고,\n단어와 문장 고민한 게\n다 의미가 있었구나.\n그 생각이 들더라고요.\n\n---\n\n무신사 '브랜드 언박싱' 객원 에디터로\n패션 브랜드 대표님들 인터뷰할 때는\n일주일 전에 매장을 찾아갔어요. \n그 브랜드 분위기, 메시지를 알고 싶었거든요.\n\n공간디자인페어 취재 때는\n강연 분위기, 사람들 반응까지 \n다 기록했어요. 그걸 바탕으로 \n어떤 강연을 콘텐츠화할지 결정했죠.\n\nAI도 이런 경험이나 감상을\n생성할 수는 있지만, \n사람들은 다 알아요.\n그게 진짜인지 아닌지.\n\n무엇보다 그런 경험을 통해 변한 \n저 자신의 생각과 관점도 못 담죠.\n\n---\n\n지금도 저는 한 달에 최소 2~3번은\n굳이 시간을 내서 전시를 봐요.\n\n관심 없는 브랜드 팝업 공간도 \n일단 들어가보고요.\n\n그래야 진짜 경험으로 쓰여진 \n콘텐츠를 만들 수 있으니까요.\n\n앞으로도 저는 더 열심히 경험하면서\nAI와 같이 일하는, 그런 전문가가 되려 해요.\n\n여러분의 콘텐츠는 어떤가요?\n그 콘텐츠의 주인공은\n여러분인가요, AI인가요?",
       "media": [],
-      "url": "https://www.threads.net/@ai.dentity.141/post/DMuxpQ-IChX",
+      "url": "https://www.threads.com/@ai.dentity.141/post/DMuxpQ-IChX",
       "created_at": "2025-07-30 20:50:21",
       "date": "2025-07-30",
       "crawled_at": "2026-02-12T19:06:35.539",
@@ -7304,7 +7304,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/590421764_17933634048114006_5986736536668318353_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMjAwMHgxNTAwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QEyXd2RZdRxG9HTwT-AWkLK7ZewmPYObDTjxmIoZCkQI5kvE3_Imj_xYZp3YF2pT7Y&_nc_ohc=WAvu-fBxZX0Q7kNvwF4xs_f&_nc_gid=UlF_xbHAoL-puTrfKd93ew&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc4NTkwNDM0NTI0NjE0NDU0NQ%3D%3D.3-ccb7-5&oh=00_Afs6rrhm3lQ5gZvNpuv8bIqQU9WX9gEJE-AmnZO75t-08w&oe=699ADE85&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@jungjiwoowriter/post/DSKO_GEARgh",
+      "url": "https://www.threads.com/@jungjiwoowriter/post/DSKO_GEARgh",
       "created_at": "2025-12-12 19:23:09",
       "date": "2025-12-12",
       "crawled_at": "2026-02-12T19:06:35.539",
@@ -7331,7 +7331,7 @@
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/590403231_17886580176406917_4641043871493294628_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjY1eDMwNy5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QHD_fRacHTrU-h7eDJS6rcrB6JXei-CG1KD7gmFk3DI2o3zGipqliqjK9ZddSyLzkA&_nc_ohc=U6l31U1AYMQQ7kNvwF51P9I&_nc_gid=4k9jz_ecEK8k7on1GSjt4g&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc4NTgzMjczMTEzMDM0Njg4Mw%3D%3D.3-ccb7-5&oh=00_AfsvOu3x7wHAfuf-uisxAynzAuTy7RNv6VxV-S0lLNk5hw&oe=699AFA23&_nc_sid=10d13b",
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/590414842_17886579978406917_5504039055622185858_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uOTYxeDM2Mi5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QHD_fRacHTrU-h7eDJS6rcrB6JXei-CG1KD7gmFk3DI2o3zGipqliqjK9ZddSyLzkA&_nc_ohc=XF0fZLUp7cIQ7kNvwGSxzoN&_nc_gid=4k9jz_ecEK8k7on1GSjt4g&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc4NTgzMjc3MzUwMTIxOTg1NQ%3D%3D.3-ccb7-5&oh=00_AftL2GL77Oo3V8Y7oClmg6xX6LIW1TMFbgmSn_uZMFIKrg&oe=699B0C67&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@specal1849/post/DSJ-s-OEj2D",
+      "url": "https://www.threads.com/@specal1849/post/DSJ-s-OEj2D",
       "created_at": "2025-12-12 17:00:51",
       "date": "2025-12-12",
       "crawled_at": "2026-02-12T19:06:35.539",
@@ -7364,7 +7364,7 @@
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/591165790_17885821614406917_7255447074871276945_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uNjU2eDEyNzYuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QHh61nlmzUQD58cyAJHRLJ7jO07EI-atNS4EjikeCY7L0CoOs7qeyMcYQSJ-hYogkc&_nc_ohc=ioCArq15FjIQ7kNvwHFsqp8&_nc_gid=AeStCEg0yPHXl9-hVbbj8w&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc4MTIxNjk5NzkxODAwNzEzOQ%3D%3D.3-ccb7-5&oh=00_AftcZqIEbWLIOyh-XLvlhqZkchxlAF0EfB7WFUos_NNOFA&oe=699AF0C8&_nc_sid=10d13b",
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/589309495_17885821701406917_4686267164974236514_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uNjQ1eDEzODQuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QHh61nlmzUQD58cyAJHRLJ7jO07EI-atNS4EjikeCY7L0CoOs7qeyMcYQSJ-hYogkc&_nc_ohc=74sjEFYYyMYQ7kNvwE8iYdA&_nc_gid=AeStCEg0yPHXl9-hVbbj8w&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc4MTIxNzA3MDM1MzYxODcxOA%3D%3D.3-ccb7-5&oh=00_AfuwQSRLkgohIpPrb0AywYd1F6i_ti_2_zbDI8XBKdxSkA&oe=699AD9A5&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@specal1849/post/DR5lIlhEntF",
+      "url": "https://www.threads.com/@specal1849/post/DR5lIlhEntF",
       "created_at": "2025-12-06 08:09:35",
       "date": "2025-12-06",
       "crawled_at": "2026-02-12T19:06:38.552",
@@ -7402,7 +7402,7 @@
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/591147812_17885817183406917_2143296989450275946_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjY4eDM3MC5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QEbLq347DGQLh6oqILRuodZTXLTcK9vY6Nc0f1NIsXqVQt0f-yesEwAo15YCjsmjl4&_nc_ohc=y_u7_BJxZr4Q7kNvwFqoV53&_nc_gid=zkBcv7cwIt4lOpinoKVvSA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc4MTE4NTg5OTI3NjIyNjEwMA%3D%3D.3-ccb7-5&oh=00_AftsxmPV9_7ADhjcyWduo-ywzhg6DjcAD9TAIxrEUbkjLA&oe=699AD63C&_nc_sid=10d13b",
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/591144735_17885817270406917_6729044106744596582_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjcyeDM3NC5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QEbLq347DGQLh6oqILRuodZTXLTcK9vY6Nc0f1NIsXqVQt0f-yesEwAo15YCjsmjl4&_nc_ohc=acWAAzycGLEQ7kNvwHVCat2&_nc_gid=zkBcv7cwIt4lOpinoKVvSA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc4MTE4NTk2OTkzMzQ2MTA4Mg%3D%3D.3-ccb7-5&oh=00_Afto7eHATxVV9kmGy2LuHZzv_fvRV9hblXOiFGmWGldkrQ&oe=699ADEF4&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@specal1849/post/DR5eEaEE9_R",
+      "url": "https://www.threads.com/@specal1849/post/DR5eEaEE9_R",
       "created_at": "2025-12-06 07:07:51",
       "date": "2025-12-06",
       "crawled_at": "2026-02-12T19:06:38.552",
@@ -7440,7 +7440,7 @@
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/589155267_17886181119406917_4226275144032499337_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uNjMyeDEzNTcuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QFPtOiTSckPNp1zBdDyTMb5Tpg7M00RP5a6dg2ra3oid3wGBDBV7C3v7cd6qpgT64A&_nc_ohc=BkgeLsL6ZBoQ7kNvwERdZo4&_nc_gid=aWu4Fyh2DKQr9WtOUv8caQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc4MzQ5NzE2OTk3NTMwOTk5Nw%3D%3D.3-ccb7-5&oh=00_Afubbq77tBu9WwxNTqAGq8PNUcFifQ2TGfqaTR7vam7J6g&oe=699ADFB7&_nc_sid=10d13b",
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/590416351_17886181830406917_4583352012121224502_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uNTQ4eDc2MC5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QFPtOiTSckPNp1zBdDyTMb5Tpg7M00RP5a6dg2ra3oid3wGBDBV7C3v7cd6qpgT64A&_nc_ohc=tAoh18d9ZZ0Q7kNvwF4bV7I&_nc_gid=aWu4Fyh2DKQr9WtOUv8caQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc4MzQ5NzI1NTY1NjUwMzc3MQ%3D%3D.3-ccb7-5&oh=00_AfsCoJKykJQy8LBoQ1jLBWvnvUujwNnyMGvE52PAdftk8Q&oe=699AE6BC&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@specal1849/post/DSBpzvtkVTT",
+      "url": "https://www.threads.com/@specal1849/post/DSBpzvtkVTT",
       "created_at": "2025-12-09 11:39:53",
       "date": "2025-12-09",
       "crawled_at": "2026-02-12T19:06:38.552",
@@ -7480,7 +7480,7 @@
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/589172579_17885508465406917_7899540854932649748_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTM4N3g2MDUuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QGqjQRhJTV46PfVGNpzz4EdFjb5swDq-MFxjRdhwkSos8L-pZtoXpoN4PIT6tNba7U&_nc_ohc=9dE9rS999tAQ7kNvwEQThly&_nc_gid=nE0AjsSAi2Ym6H9UjSEabw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc3OTI3Nzg5MDYwNjIyNjQzNQ%3D%3D.3-ccb7-5&oh=00_AfvCXxNsfLBWNdYNHfUiv6IqA3c3LPyWbaYCCKxZXk3Aow&oe=699AEF9E&_nc_sid=10d13b",
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/589427933_17885508621406917_8112153622927148220_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTA0NHgxMTM3LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QGqjQRhJTV46PfVGNpzz4EdFjb5swDq-MFxjRdhwkSos8L-pZtoXpoN4PIT6tNba7U&_nc_ohc=ugjAFvVY9q8Q7kNvwEodTfG&_nc_gid=nE0AjsSAi2Ym6H9UjSEabw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc3OTI3Nzk2NzE4NTgyNDAzMQ%3D%3D.3-ccb7-5&oh=00_AfvSIub_1oT9vxPfj2hdBnoRnDjDTzmFhO4dDzMmVbXj_Q&oe=699B0C7C&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@specal1849/post/DRysL3RkpGl",
+      "url": "https://www.threads.com/@specal1849/post/DRysL3RkpGl",
       "created_at": "2025-12-03 15:56:31",
       "date": "2025-12-03",
       "crawled_at": "2026-02-12T19:06:38.552",
@@ -7514,7 +7514,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/550480284_807713768369944_7304417082738144244_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDMxMi5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QFbVLjT1W0LpFTlSevBdoH29MgihcDaG36sGAv_c89oad1KMS3qo6nT7a8P-9wL6y4&_nc_ohc=sAejd45ilYkQ7kNvwFgKFwb&_nc_gid=kN0YcJsMsJZRLwuB2xNAyQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzcyMzQ5ODE4NTQyNTAxMjM3MQ%3D%3D.3-ccb7-5&oh=00_AfsWXxhL1a-850QIXbvzKhC6HhbQW6EYvNJRzzOjlzLDlA&oe=699AF94D&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@specal1849/post/DOshd8oEcaT",
+      "url": "https://www.threads.com/@specal1849/post/DOshd8oEcaT",
       "created_at": "2025-09-17 17:07:34",
       "date": "2025-09-17",
       "crawled_at": "2026-02-12T19:06:41.572",
@@ -7538,7 +7538,7 @@
       "display_name": "specal1849",
       "full_text": "AI 강의 사기전에, 제발 이것만 읽고 강의 사세요\n\n현행 프롬프트 최신 이론 논문 \nAI활용법 이글하나에 정리 다해뒀습니다.\n\n1.25년도 최신 프롬프트 심화이론[내부글 좋아요 합 500개 이상]\n2.당신의 AI가 말을 안듣는이유[좋아요 합 1000개 이상]\n3.이미지 프롬프트 심화이론\n4.돈에 미친사람이 알려주는 프롬프트 기초\n5.제미나이 활용론[단일조회수 17만회글 포함]\n\n진짜 이거면 일반인 기준 강의 돈주고 살필요 없습니다...\n\n제 강연에서 다루는 내용 전부다 글로써뒀고\n일반인들이 쓰기엔 이정도면 충분해요\n\n저도 강의 팔지만 이거 보시고 공부하시면 \n돈안쓰셔도 됩니다.\n\n이 글들로 강의제안 인강제작 책저술 제안 \n합쳐 100번정도 받았어요\n\n---\n\n보는법\n4,2,1순서대로 읽으시고 \n3,5보면서 활용하시면 딱히 결제필요없음\n\n1.25년도 최신 프롬프트 심화이론[내부글 좋아요 합 500개 이상]\n\n---\n\n2.당신의 AI가 말을 안듣는이유[좋아요 합 1000개 이상]\n\n---\n\n3.이미지 프롬프트 심화이론\n\n---\n\n4.돈에 미친사람이 알려주는 프롬프트 기초\n\n---\n\n5.제미나이 활용론",
       "media": [],
-      "url": "https://www.threads.net/@specal1849/post/DSE1xdPkpu-",
+      "url": "https://www.threads.com/@specal1849/post/DSE1xdPkpu-",
       "created_at": "2025-12-10 17:06:37",
       "date": "2025-12-10",
       "crawled_at": "2026-02-12T19:06:41.572",
@@ -7562,7 +7562,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/586707075_1548824183032210_6815663263876197322_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDMxMC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QHdPjG4j29I1U71SmHymkhVhTCZxrycaRUURio_rwoix9Q71VeMSIoZTbyqSywbv-A&_nc_ohc=3BrzW7k__HsQ7kNvwFOBQTS&_nc_gid=212qZVSjk0wcp5_Zy1SCUw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc4NTUyMjEwOTIwNTI5MjA4NA%3D%3D.3-ccb7-5&oh=00_Afs_zKlej2G4tFBLT3JSU1yoDWDiF1ePv24LBu87wnpTtw&oe=699AFE1E&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@specal1849/post/DSI4E1AkaQ0",
+      "url": "https://www.threads.com/@specal1849/post/DSI4E1AkaQ0",
       "created_at": "2025-12-12 06:58:56",
       "date": "2025-12-12",
       "crawled_at": "2026-02-12T19:06:41.572",
@@ -7589,7 +7589,7 @@
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/591177278_17929898727149718_6198832446242132219_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMjI1Mng0MDAwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QESf2xdhk4geYYIgzwG6UwYaIGH6F_ixY_nMzUtnKleh8N8ZsXdt0YFS5J-wVlIPjw&_nc_ohc=Hgi80Jg7hP4Q7kNvwEAqv7s&_nc_gid=2e2nODvBe0w7yFgtU5YeNg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc4NjAxNzYyNzk5NjA5NDE4Ng%3D%3D.3-ccb7-5&oh=00_AfuzdIASVTvXxJZb8kmfLL9cjZag6d7Rrbjwv6PPXNSJuw&oe=699AF9D4&_nc_sid=10d13b",
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/591174372_17929900467149718_3309442372842093308_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTQxMXgxMDg3LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QESf2xdhk4geYYIgzwG6UwYaIGH6F_ixY_nMzUtnKleh8N8ZsXdt0YFS5J-wVlIPjw&_nc_ohc=KEGecXbBI7sQ7kNvwG7QF_u&_nc_gid=2e2nODvBe0w7yFgtU5YeNg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc4NjAyMDUzMjgzNjgxODQ2Ng%3D%3D.3-ccb7-5&oh=00_Afs9IRKI64uSyFRLzlt-iz6FA7e1JyovQxdFXTU0b61Vdw&oe=699AE635&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@art_director_teddy/post/DSKovq7Etdo",
+      "url": "https://www.threads.com/@art_director_teddy/post/DSKovq7Etdo",
       "created_at": "2025-12-12 23:08:14",
       "date": "2025-12-12",
       "crawled_at": "2026-02-12T19:06:41.572",
@@ -7616,7 +7616,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/590414902_17886668484406917_2445269179514019556_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTc0OXg5ODMuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QGpCDkVmQZi9zWCRv6EaBC2K0SjxukAQVMalQZfYwBvP8lLsWKenOpUialOaCdBCig&_nc_ohc=LRTwHbi3LmUQ7kNvwFBNBBU&_nc_gid=WgNVZFs3phyKyfcRCAYSBA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc4NjMxODcyOTcxNTAwNTAyNg%3D%3D.3-ccb7-5&oh=00_AfvAMiub-wjFahifY2f2Em6EBk4MUcD37P3OqiVh1Vr2HQ&oe=699AE62C&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@specal1849/post/DSLtNP8Em2v",
+      "url": "https://www.threads.com/@specal1849/post/DSLtNP8Em2v",
       "created_at": "2025-12-13 09:06:28",
       "date": "2025-12-13",
       "crawled_at": "2026-02-12T19:06:41.579",
@@ -7643,7 +7643,7 @@
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/588467837_17930766165119620_6665594583944811601_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTgzOXgxMDE5LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QHxx5HqeeFDNi78-zvx8QQoyiGtlkK6glyRqgkD5LS_FJR-6zVUPkqQ-ovNAqrR8_4&_nc_ohc=kRLWes7-ch4Q7kNvwFAu4qG&_nc_gid=v_35stpVZpvE-sxRa8FlPw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc3Nzc2Nzg4ODI4NDQ4NzMwNA%3D%3D.3-ccb7-5&oh=00_AftzSGmRBm2RA0U_T8Ag22jRF9aCqDPnJ704LTqRvpC1CA&oe=699B0099&_nc_sid=10d13b",
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/589411319_17930766732119620_8644289375255270032_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uNjYzeDQxNS5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QHxx5HqeeFDNi78-zvx8QQoyiGtlkK6glyRqgkD5LS_FJR-6zVUPkqQ-ovNAqrR8_4&_nc_ohc=CDwMu7Ef6mEQ7kNvwGhcHCU&_nc_gid=v_35stpVZpvE-sxRa8FlPw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc3Nzc2Nzk0NzY0MjMwMTU2OA%3D%3D.3-ccb7-5&oh=00_AftGScMRp7ndu7dX-Qsg5IPlV-_fapvvHeRMlmU43XnpSw&oe=699AEC9B&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@danhovac/post/DRtU-J0E3MU",
+      "url": "https://www.threads.com/@danhovac/post/DRtU-J0E3MU",
       "created_at": "2025-12-01 13:57:28",
       "date": "2025-12-01",
       "crawled_at": "2026-02-12T19:06:41.579",
@@ -8437,7 +8437,7 @@
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/626246366_17924478189232485_6250277390770805579_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTQ0MHgxMTc0LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jYW5hcnkifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QFCUd8tXp11JinZjp7CO2gDg9TTpA12GttnpFE6FpJ4iXHgNUiNz5O-4EfHIoR62YM&_nc_ohc=j7yhbZCHNeMQ7kNvwHSlR4i&_nc_gid=7UVMmMISaKqBJK_wkLSz0Q&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMDUyMTE2OTMwNTYzMDUzMg%3D%3D.3-ccb7-5&oh=00_Afvwvz2ody2fMRrwOLoY8Dj48q1cCOjxBw_KxxL9guwgag&oe=699AF86D&_nc_sid=10d13b",
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/626273425_17924478264232485_9112717941271039568_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTU1MngxMjY0LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jYW5hcnkifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QFCUd8tXp11JinZjp7CO2gDg9TTpA12GttnpFE6FpJ4iXHgNUiNz5O-4EfHIoR62YM&_nc_ohc=r7OXKIqeBaYQ7kNvwF25sIH&_nc_gid=7UVMmMISaKqBJK_wkLSz0Q&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMDUyMjA0NTg0ODA1NTk5Nw%3D%3D.3-ccb7-5&oh=00_AftE721xs0slY8H7CbCnDYlbOVSOkxcSWjS40X-U414emg&oe=699B0C22&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@aicoffeechat/post/DUot0hMCo5E",
+      "url": "https://www.threads.com/@aicoffeechat/post/DUot0hMCo5E",
       "created_at": "2026-02-12 08:34:18",
       "date": "2026-02-12",
       "crawled_at": "2026-02-12T20:29:21.799",
@@ -8465,7 +8465,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/628718153_17941659786115457_9019576756874506521_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMjE2MHgxMjE3LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QGLbYdzGvOvP3iw2-7ODksBt-5KyQVIMhmFzz97UQjx7AIn2aHYFZOUzmt9OqPfwfQ&_nc_ohc=NKFlDtSv-bgQ7kNvwF9Rze1&_nc_gid=nYtL93_CIo31_4X25Z4t1A&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyOTI0NDc2MjQwMzIwNTc3Mg%3D%3D.3-ccb7-5&oh=00_AfunDOutzKpSlv4yDSdpK3VflKIxc3upO7l7PlpZTbtQFA&oe=699B0769&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@lazylittleyoyo/post/DUkNdK9EXKM",
+      "url": "https://www.threads.com/@lazylittleyoyo/post/DUkNdK9EXKM",
       "created_at": "2026-02-10 14:32:49",
       "date": "2026-02-10",
       "crawled_at": "2026-02-12T20:29:27.905",
@@ -8963,7 +8963,7 @@
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/634449423_18016453520654223_5614824251219456505_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTA0M3gxMDQzLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QERyw271EypDfT0S3H2V443NmsyUH8AtlZ2uT7Jd79nMgnOQSt_SLmChYIJdXAPsQs&_nc_ohc=3gyWWpWLutwQ7kNvwHx2sHX&_nc_gid=BJGS90ZnXjTiTmknqHvyFg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNDQ0Mjc2OTE1NTMxNTQyNQ%3D%3D.3-ccb7-5&oh=00_Afs84Y6wazbt_FL58ezo5V2pFcPva5KZ-hGzgFIyhe15kw&oe=699AE956&_nc_sid=10d13b",
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/634560484_18016453754654223_109907182147781129_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uOTAweDQ1MC5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QERyw271EypDfT0S3H2V443NmsyUH8AtlZ2uT7Jd79nMgnOQSt_SLmChYIJdXAPsQs&_nc_ohc=3p1-xbc567kQ7kNvwFtB7Q4&_nc_gid=BJGS90ZnXjTiTmknqHvyFg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNDQ0MzQxMTc1NjI2MTk2Mg%3D%3D.3-ccb7-5&oh=00_Afu6G6VFo1SRrF64kF-aYbAktWSDhO2dtTg0Bn7EL-9kXg&oe=699AF096&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@sy.suelee/post/DU2rWMwEawl",
+      "url": "https://www.threads.com/@sy.suelee/post/DU2rWMwEawl",
       "created_at": "2026-02-17 18:40:20",
       "date": "2026-02-17",
       "crawled_at": "2026-02-18T10:58:10.089",
@@ -8990,7 +8990,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/631746553_17947769484101213_3040436616636574243_n.jpg?stp=cp6_dst-jpegr_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTkyMHgxNDQwLmhkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QGQa8iyj-cmr19DmizBfI66iM_rjNzJjR9GK5EqqL-HUDqvMlh2ULfl-eIGrUtD-SE&_nc_ohc=YRwAnzTwcgcQ7kNvwGeMro7&_nc_gid=R6_p3pcaAERO-bGwsdEgzg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNDE4ODY4ODAwODYwOTczNg%3D%3D.3-ccb7-5&oh=00_AfsbOdRpxG2z1BQqXunFb550fr3IsAc8V9ZAdeIFU2FNTQ&oe=699AEA21&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@chancenote/post/DU1xkwekv_I",
+      "url": "https://www.threads.com/@chancenote/post/DU1xkwekv_I",
       "created_at": "2026-02-17 10:15:31",
       "date": "2026-02-17",
       "crawled_at": "2026-02-18T10:58:10.122",
@@ -9014,7 +9014,7 @@
       "display_name": "gpt_minje",
       "full_text": "[무료] 비개발자를 위한 Claude Code 가이드북\n\n무료로 배포해요.\n\n사실 저도 공부하려고 만들었어요.\nClaude Agent Team 기능으로\n만들었고, 퀄리티 나쁘지 않은 것 같아요.\n\n더 좋은 자료 만들 수 있도록\n좋아요랑 팔로우만 좀 부탁해요 히히!\n\nhttps://bevel-boron-05c.notion.site/Claude-Code-A-to-Z-30844a48e2b180f4b178d852db998a80",
       "media": [],
-      "url": "https://www.threads.net/@gpt_minje/post/DUxYv3akZBB",
+      "url": "https://www.threads.com/@gpt_minje/post/DUxYv3akZBB",
       "created_at": "2026-02-15 17:21:37",
       "date": "2026-02-15",
       "crawled_at": "2026-02-18T10:58:16.154",
@@ -9039,7 +9039,7 @@
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/628023790_17930131584207210_7516522336360267089_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMjE2MHgxMzE5LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QEKJ0P2_ju0va2SrXnsqogCo6Vc9skmaLhSaCcA9JjX63Qn-zzx2EayI1i9sSoDbrc&_nc_ohc=aXSDSevG5VsQ7kNvwGgx7yQ&_nc_gid=WrdRVbAwc1ZpQXdkQg65Hg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMzIyMDgwMjY4MzMxOTEyMw%3D%3D.3-ccb7-5&oh=00_AftFe0thAMhT9ylb0DGPFoaJ8ZilQAtK9o2ZDGI3rv2Udw&oe=699AF11A&_nc_sid=10d13b",
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/631643505_17930131563207210_4642455644650712744_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTc3MHgxMDc2LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QEKJ0P2_ju0va2SrXnsqogCo6Vc9skmaLhSaCcA9JjX63Qn-zzx2EayI1i9sSoDbrc&_nc_ohc=KTW_-e19mVMQ7kNvwEIxQba&_nc_gid=WrdRVbAwc1ZpQXdkQg65Hg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMzIyMDkwMTU1OTgzNzE1MQ%3D%3D.3-ccb7-5&oh=00_AftJ0-Am-Du30J7L-aYm4CacQgYNBE8LleVpxtTBzxKlXw&oe=699AE183&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@unclejobs.ai/post/DUyVgLBk7NT",
+      "url": "https://www.threads.com/@unclejobs.ai/post/DUyVgLBk7NT",
       "created_at": "2026-02-16 02:12:30",
       "date": "2026-02-16",
       "crawled_at": "2026-02-18T10:58:16.154",
@@ -9066,7 +9066,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/631892973_17934642351179379_7424259786779161548_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uODAzeDE1NTEuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QFo5A_9-RSia4InO8XP0Osmnbw6XvhUglF6XdRhTvadJhRPfasPnIMiVSCcs-uHalk&_nc_ohc=zIvWR5GEgf8Q7kNvwHXnkCD&_nc_gid=ChENIT_g0Bm8dqMzEA7ztg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMzUxMjk3MzM4Njc4MTY3NA%3D%3D.3-ccb7-5&oh=00_AfthQkQVuAiEPU5WbIzrEMlU_qn_rVxneeIsglZhlDyDWw&oe=699B04D0&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@skluzy_zetech/post/DUzX75SEoeg",
+      "url": "https://www.threads.com/@skluzy_zetech/post/DUzX75SEoeg",
       "created_at": "2026-02-16 11:53:00",
       "date": "2026-02-16",
       "crawled_at": "2026-02-18T10:58:16.154",
@@ -9092,7 +9092,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/629760101_917702887858657_8777237342813580627_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uNjQweDI3OC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QGO1cz1QcfDa2eUNuWX4GhfnxnbYkeBtuuqHNE-5rkJRF7WZJIUmoGPADx7ciFmA08&_nc_ohc=IWiDJ4gCx6UQ7kNvwG6Le2J&_nc_gid=d9U0nspwXtdSCldrDpjjcA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMzM5OTkxMjk0NDYyOTk5Nw%3D%3D.3-ccb7-5&oh=00_AftSSULMV6MxjSX7Nwwg82iDApJRFzTZd5P_0IytrvuFtQ&oe=699B07F6&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@06am_draw/post/DUy-OrTE1c5",
+      "url": "https://www.threads.com/@06am_draw/post/DUy-OrTE1c5",
       "created_at": "2026-02-16 08:08:22",
       "date": "2026-02-16",
       "crawled_at": "2026-02-18T10:58:16.154",
@@ -9118,7 +9118,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t39.30808-6/635960149_26246903004945669_8245760383230723173_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTEyNXg4MzIuc2RyLmYzMDgwOC5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QFyFRVp-bS8f1XloFxdM8TAVeGdnXIWMaMYxIns9-KHw_2_1bgOx1m9VlqIblNK67o&_nc_ohc=pYzOAwsn5EwQ7kNvwF4EKZc&_nc_gid=wCQhDj2hZTdS-H2yFWrEKA&edm=APs17CUAAAAA&ccb=7-5&ig_cache_key=MzgzMjgyNDk5Mzg2NDU4ODA4Ng%3D%3D.3-ccb7-5&oh=00_AfvxHECwVrDXgUPOTgtizeB9wRPxqTnyuMoLf1I74axViQ&oe=699AD645&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@lets.anthony.kim/post/DUw7gZViZs2",
+      "url": "https://www.threads.com/@lets.anthony.kim/post/DUw7gZViZs2",
       "created_at": "2026-02-15 13:06:06",
       "date": "2026-02-15",
       "crawled_at": "2026-02-18T10:58:19.187",
@@ -9148,7 +9148,7 @@
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/636709310_17894658297406917_5931693423256680269_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTQ2Mng4OTYuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QGLaARBbIuVXMxdUBygi-oc4ylh1ozPOtmWOkrUvknq6Z9UaY6RhYmr4-dU4S624TA&_nc_ohc=bxmyrCe6qEcQ7kNvwFXftYH&_nc_gid=P4VGR8PqogSRBRjOkHG8HA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMjc1MDE3MTYwMDY0MzE0Ng%3D%3D.3-ccb7-5&oh=00_AfuhCcsnJhm-ePX33jrV6vcmv4WVbaT6XFCK3wJpsiKvjA&oe=699AF7FE&_nc_sid=10d13b",
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/634648784_17894658933406917_5871636118165944077_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTY1Nng4NzQuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QGLaARBbIuVXMxdUBygi-oc4ylh1ozPOtmWOkrUvknq6Z9UaY6RhYmr4-dU4S624TA&_nc_ohc=mUjxwiNIE88Q7kNvwE-_dJ2&_nc_gid=P4VGR8PqogSRBRjOkHG8HA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMjc1MDI0MTY0NTQ4MDMxMA%3D%3D.3-ccb7-5&oh=00_Aft6dg_7aLBFrPOWGQHdT5dZULUnrdvB-_WJdiEf6IYPbg&oe=699B0A12&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@specal1849/post/DUwqNwDEXhp",
+      "url": "https://www.threads.com/@specal1849/post/DUwqNwDEXhp",
       "created_at": "2026-02-15 10:36:46",
       "date": "2026-02-15",
       "crawled_at": "2026-02-18T10:58:19.187",
@@ -9177,7 +9177,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/634409199_17888588769430565_595149503494235902_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNzgweDIyNy5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QEUaZ4nrYSQhRM_Sn5WjcNJdevu2voJcOT8Oa4gg8-MWZlol9_W5dwYjpizViiaObk&_nc_ohc=hxtYGgP_4R0Q7kNvwGKb3SU&_nc_gid=naqIyWb2EW0MkaHzPafB-A&edm=AI6eXeABAAAA&ccb=7-5&ig_cache_key=MzgzMzAxNzE1NDg3MTEwMTA5Mw%3D%3D.3-ccb7-5&oh=00_AfumchNIX5HImsYMX9vnsGawyPIl7UErI2ffTvyNcu09Qg&oe=699B008D&_nc_sid=6efbad"
       ],
-      "url": "https://www.threads.net/@storyteller_jhk/post/DUxnMtOEgal",
+      "url": "https://www.threads.com/@storyteller_jhk/post/DUxnMtOEgal",
       "created_at": "2026-02-15 19:27:53",
       "date": "2026-02-15",
       "crawled_at": "2026-02-18T10:58:19.188",
@@ -9208,7 +9208,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/635111813_17943332286113304_6908781777218075870_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTM4Mng3MjQuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QHA9BZa_kcMuELAAmTPADkRduzVj2JHav0HVVWNz0sj95p35K_e0Wt18P5f8_tSA5Y&_nc_ohc=n8eN2k96fUgQ7kNvwEbHEv8&_nc_gid=808GhFAXM7UDtkecLsSJ-A&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMzE0NzQ5NjMyMzQ3NDgzNA%3D%3D.3-ccb7-5&oh=00_AfsR9qA3qsj51dOt1MwQ7DkkscLdJLirNbH4glSmJeoRCA&oe=699B0D88&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@tawoe/post/DUyE2OliQra",
+      "url": "https://www.threads.com/@tawoe/post/DUyE2OliQra",
       "created_at": "2026-02-15 23:46:58",
       "date": "2026-02-15",
       "crawled_at": "2026-02-18T10:58:19.188",
@@ -9240,7 +9240,7 @@
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/634099636_17894514588406917_7774729634838205488_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uODA4eDUyNy5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QEQR1Mtr3SKyxYvBG5OGOWqns_5MytvkYxWLkGXAO3FAxsmPIOCC79n8FlfqvcrWyg&_nc_ohc=8p2GxVOXcjUQ7kNvwGqnBxA&_nc_gid=xUVFEvvuJ05VMiQPwscwog&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMjA5MzYzOTM1MTM3ODcyNw%3D%3D.3-ccb7-5&oh=00_AftzNOqmL9t7ugkoU3-6vdO6TQj69_nQB4OWGhh3cFFW_Q&oe=699B0DB8&_nc_sid=10d13b",
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/635507124_17894514933406917_454123359053874143_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTEwOXg2MzIuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QEQR1Mtr3SKyxYvBG5OGOWqns_5MytvkYxWLkGXAO3FAxsmPIOCC79n8FlfqvcrWyg&_nc_ohc=6mas-6APOJgQ7kNvwGaYEED&_nc_gid=xUVFEvvuJ05VMiQPwscwog&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMjA5Mzc1NTM3NDE5NzM2Ng%3D%3D.3-ccb7-5&oh=00_AfsIgpfcLpC2fUsnYjVhdre2XtoUR4ahf4Y8SgQHYh2tAg&oe=699AF0BF&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@specal1849/post/DUuTgS-kcfR",
+      "url": "https://www.threads.com/@specal1849/post/DUuTgS-kcfR",
       "created_at": "2026-02-14 12:52:20",
       "date": "2026-02-14",
       "crawled_at": "2026-02-18T10:58:22.218",
@@ -9272,7 +9272,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/635287198_17942164014109915_6919886451846472785_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTQzOXgxODA2LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QEFmYEiHtRIm-5ZYvGmHUwihuPhtcdMBs3NNZrsqf_DZQP4eNE2kADtCB-kYHTCRWA&_nc_ohc=-6XF3zkq4w0Q7kNvwFCnidz&_nc_gid=Buu8LPIP6CT4GVeWq1i-4w&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMjA5MzIxMzc4ODQ5MzA2MA%3D%3D.3-ccb7-5&oh=00_AftrwiX9rS8XfVys-CpyXaof8R_9flGLno2SLbvSrc4Jdw&oe=699AE567&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@jh_aicafe/post/DUuVPjBE42V",
+      "url": "https://www.threads.com/@jh_aicafe/post/DUuVPjBE42V",
       "created_at": "2026-02-14 12:53:16",
       "date": "2026-02-14",
       "crawled_at": "2026-02-18T10:58:22.218",
@@ -9296,7 +9296,7 @@
       "display_name": "lazypencil_lab",
       "full_text": "유튜브 채널 통째로 복사: NotebookLM 필수 질문 4가지\n\n노트북LM으로 이제 유튜브 채널 하나를 통째로 분석할 수 있습니다.\n\n하지만 도구보다 질문이 중요합니다.\n영상 300개를 넣어도 막상 떠오르는 질문은\n“요약해줘”, “핵심 주제 알려줘” 정도뿐일 때가 많죠.\n\n그래서 유튜브 채널 분석용 필수 질문 4가지를 정리했습니다.\n\n이 질문만 복사해두면, \n유튜브 채널 하나를 딱 5분 만에 내 걸로 만들 수 있습니다. 👇\n\n---\n\n1️⃣ Pain Point (문제 정의)\n“정확히 어떤 문제를 풀었는가?”\n\n🔻 복붙용 질문:\n이 영상에서 해결하고자 하는 구체적인 비효율(Pain Point)은 무엇인가요?\n그리고 최종 결과물은 사용자의 시간을 얼마나/어떻게 절약해주나요?\n\n---\n\n2️⃣ Tech Stack (도구 조합)\n“도구가 무엇인지보다 왜 그 도구를 선택했는지”\n\n🔻 복붙용 질문:\n이 채널에서 반복적으로 사용하는 도구는 무엇인가?\n각 도구는 어떤 역할을 담당하는가?\n도구 조합 전략은 무엇인가?\n\n---\n\n3️⃣ Difficulty (난이도 확인)\n채널이 다루는 '깊이’가 어느정도 인지 기준을 찾기 위한 질문입니다.\n\n🔻 복붙용 질문:\n이 채널의 콘텐츠 난이도를 분석해주세요. \n초보자/중급자/고급자 중 어디에 포지셔닝되어 있나요? \n시청자가 이해하기 위해 필요한 사전 지식은 무엇이며, 따라 하기까지의 진입장벽은 어느 정도인가요?\n\n---\n\n4️⃣ Utility (실용성 검증)\n유튜브 영상 속 숨어있는 '진짜 실무 도구'를 찾아내야 합니다.\n\n🔻 복붙용 질문:\n분석한 영상들 중 가장 '실용적'이라고 평가받을 만한 프로젝트 1개를 꼽아주세요. \n이 도구가 시청자에게 약속하는 핵심 키워드(예: 자동화, 수익화, 시간 단축 등)는 무엇인가요?\n\n---\n\n🚀 결론: 중요한 건 좋은 질문입니다.\n\nNotebookLM은 훌륭한 도구이지만, 좋은 질문이 없으면 깊이 있는 답을 얻기 어렵습니다.\n위 4가지 질문 세트는 이렇게 활용하세요.\n\n1. 관심 있는 채널의 영상 URL을 모두 복사 (크롬익스텐션 Grabbit 사용)\n2. NotebookLM에 소스 추가\n3. 필수 질문 4개를 순서대로 입력\n\n이제 분석은 NotebookLM에 맡기고,\n여러분은 이 채널이 내게 유용한지 아닌지만 빠르게 판단하세요!",
       "media": [],
-      "url": "https://www.threads.net/@lazypencil_lab/post/DUp0sZjEdaL",
+      "url": "https://www.threads.com/@lazypencil_lab/post/DUp0sZjEdaL",
       "created_at": "2026-02-12 18:51:53",
       "date": "2026-02-12",
       "crawled_at": "2026-02-18T10:58:22.218",
@@ -9318,7 +9318,7 @@
       "display_name": "ddg.kang",
       "full_text": "클로드코드 꿀팁2 — 클코를 제대로 쓰고 싶은 윈도우 유저를 위한 셋업 편\n\n어디서 베낀 거 아니고, 클코 5,000시간 사용하면서 직접 느낀 것들.\n\n왜 아무도 이야기 안 하는지 이해가 안 갈 정도.\n\n---\n\n1. 윈도우에서 클코 느리다고요? WSL2에서 돌리세요.\n\nWSL2 = 윈도우 안에서 리눅스 돌리는 겁니다.\n\n그냥 바로 10배는 빨라집니다. 저 믿고 그냥 하세요. 바꾸는 순간 같은 컴퓨터 맞나 싶을 겁니다. 속도가 빨라질 뿐 아니라 수 많은 명령어 오류가 사라집니다.\n\n클코에게 복붙:\n\n\"내 윈도우 환경을 WSL2 기반으로 전환해줘. WSL2 설치 → Ubuntu 설치 → 현재 프로젝트를 WSL2 파일시스템(/home/ 경로)으로 이전 → 클로드코드를 WSL2 안에서 실행하도록 세팅. 단계별로 진행해줘.\"\n\n---\n\n2. 다른 터미널 쓰지 마세요.\n\nWarp, Hyper, Alacritty 다 써봤습니다. 그냥 Windows Terminal 쓰세요.\n\n마이크로소프트가 수년간 버그 잡은 프로그램 놔두고 왜 돌아가나요.\n\n탭, 분할, GPU 가속, WSL2 연동 전부 됩니다.\n\n클코에게 복붙:\n\n\"Windows Terminal 설정 최적화해줘. WSL2 Ubuntu를 기본 프로필로 설정, GPU 가속 활성화, 시작 시 자동으로 WSL2로 진입하도록 세팅해줘.\"\n\n---\n\n3. 단축키 만들어서 실행하세요.\n\n매번 claude --dangerously-skip-permissions 치고 계신가요? 38자입니다.\n\nalias 만들면 \"cc\" 2자로 끝납니다. 하루 10번이면 380타 vs 20타.\n\n클코에게 복붙:\n\n\".bashrc에 alias cc='claude --dangerously-skip-permissions' 추가하고 바로 적용해줘.\"\n\n---\n\n4. 리서치 강제 + 연도 착각 방지, 무조건 세팅하세요.\n\n\"코드 전에 Context7로 리서치해라\"를 규칙으로 박으세요. 저는 Context7 문서 조회 → 웹 검색 → 필요시 Jina mcp이용으로 읽기. 3개 소스 교차 검증 후에만 코드 짜게 강제합니다.\n\n그리고 클코가 25년인 줄 알고 예전 문법 쓰는 거, add-date.sh를 PreToolUse 훅으로 걸면 매 작업마다 현재 날짜 자동 주입됩니다.\n\n클코에게 복붙:\n\n\"두 가지 해줘. 1) CLAUDE.md에 규칙 추가: 모든 구현 전 Context7로 공식 문서 조회 + WebSearch로 모범사례 검색 + 3개 소스 교차 검증 후에만 코드 작성. Context7 미설치 시 설치도. 2) PreToolUse 훅 add-date.sh만들어서 매 도구 실행 시 현재 날짜 자동 주입하도록 세팅해줘.\"",
       "media": [],
-      "url": "https://www.threads.net/@ddg.kang/post/DUyBtrIk73q",
+      "url": "https://www.threads.com/@ddg.kang/post/DUyBtrIk73q",
       "created_at": "2026-02-15 23:19:35",
       "date": "2026-02-15",
       "crawled_at": "2026-02-18T10:58:22.218",
@@ -9342,7 +9342,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/632485885_889082693825104_9107728874328268156_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDM0Ni5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QFQJ5WVqaaO8bmNmTQBNgtVBmCH-d2QmN83162YS2S2XjDIvKKMEVGj-p0GsUL9ALM&_nc_ohc=qrrHDp6ZRI8Q7kNvwFxCKE8&_nc_gid=nxZtyXyW2eYmtdBM5RuHSQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMTM1NjYyODMyMzUwNjIzMg%3D%3D.3-ccb7-5&oh=00_Afu5b44zzFr8K-rq9gwpB5AktAGDub9hLpKcgtJurI51jA&oe=699ADE49&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@alcohol_fully/post/DUrto3XD5g4",
+      "url": "https://www.threads.com/@alcohol_fully/post/DUrto3XD5g4",
       "created_at": "2026-02-13 12:29:21",
       "date": "2026-02-13",
       "crawled_at": "2026-02-18T10:58:25.254",
@@ -9368,7 +9368,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/629345669_17883573921448489_6038906442170884262_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNDI4eDM4Ni5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QGrMedpJ6ULmae8sMcfrctvXUe41Kwwu53PkNxnAA27w6_09NNvzXkEUGTL_52xC3o&_nc_ohc=dFnDo1oyvwQQ7kNvwEz5NY_&_nc_gid=dFXGAUDl7sRNEZZXDgTP_A&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMTQxNTU0MjEwNDkxNTE3Ng%3D%3D.3-ccb7-5&oh=00_AfuSwQ47Kmj_CY1CNjNW-o4BWHyHCJmoEqC6PbdItJaE-g&oe=699AF4E0&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@2_taewoo/post/DUr7CLGEvzo",
+      "url": "https://www.threads.com/@2_taewoo/post/DUr7CLGEvzo",
       "created_at": "2026-02-13 14:25:46",
       "date": "2026-02-13",
       "crawled_at": "2026-02-18T10:58:25.254",
@@ -9391,7 +9391,7 @@
       "display_name": "시고록",
       "full_text": "저도 고민했던 부분입니다. 정리해놓은 블로그 보내드려요 https://andaction.tistory.com/entry/%EB%8F%99%EC%9D%BC-AI-%EB%AA%A8%EB%8D%B8%EC%9D%B8%EB%8D%B0-%ED%80%84%EB%A6%AC%ED%8B%B0%EA%B0%80-%EB%8B%A4%EB%A5%B4%EB%8B%A4%EA%B3%A0-%EA%B7%B8-%EC%9B%90%EC%9D%B8%EC%9D%84-%EC%95%8C%EC%95%84%EB%B3%B4%EC%9E%90",
       "media": [],
-      "url": "https://www.threads.net/@sigoroc/post/DUrxhGvj560",
+      "url": "https://www.threads.com/@sigoroc/post/DUrxhGvj560",
       "created_at": "2026-02-13 13:02:37",
       "date": "2026-02-13",
       "crawled_at": "2026-02-18T10:58:25.254",
@@ -9417,7 +9417,7 @@
       "display_name": "ryusw007",
       "full_text": "https://youtu.be/G0KRqPytjLo?si=4vpmx0UawfSwDulv\n\n요즘 제미나이 + 노트북LM 활용에 푹 빠져서 재미를 보고 있는 중입니다. \n기획 업무를 오래 해 오면서 요즘처럼 재미 있고, 효율 높게 일 해 본 적이 없습니다. 단연코 ...\n\n그런데 제미나이 + 노트북LM 의 가장 취약점은 \n한글 폰트 깨지는 현상입니다. \n\n아무리 프롬프토 입력으로 \"문서 텍스트 문장 단어는 그대로 가져다 사용\"\n해도 말을 안 듣습니다. \n\n아니 일관성 있게 계속 틀리면 더 좋은데, 가끔 먹히는 경우가 있습니다. \n오늘 ... 이 구독 중인 사이트 주인장이 해결책을 내어 놓았습니다. \n\n클로드 갖고, 해 봐야지 ... 하고 생각하는 걸, 누군가는 벌써 실행에 옮겼습니다. \n\n제미나이 + 노트북LM 푹 빠져 계신데, 2% 아니고 20% 아쉬움이 폰트 깨짐 현상이시라면 빨리 방문해서 확인해 보세요.\n\n따끈 따끈한 정보 공유입니다. \n널리 널리 퍼 가세요.",
       "media": [],
-      "url": "https://www.threads.net/@ryusw007/post/DUsSx7fkkzc",
+      "url": "https://www.threads.com/@ryusw007/post/DUsSx7fkkzc",
       "created_at": "2026-02-13 17:53:16",
       "date": "2026-02-13",
       "crawled_at": "2026-02-18T10:58:25.254",
@@ -9441,7 +9441,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/626264846_17858552214605524_2091411370439006122_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMjE2MHgxMTc4LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QH4aYCru08r6XXzDCxhypOiCuWc6bX4B_56VjmuxZtmEeJMrV28YtsDb2oRiPsonck&_nc_ohc=Z1cuTcraHa8Q7kNvwFVuI8n&_nc_gid=bZzk5hj7a1-a52kwkUZoJg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMTM3ODA5NzQ3MjA5OTI2MQ%3D%3D.3-ccb7-5&oh=00_AfszFJVX0bg-2pc1Jmvhp9_YftIKNA-qbvFEL8fhM61law&oe=699B01CD&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@tech.taek/post/DUryhSECVO9",
+      "url": "https://www.threads.com/@tech.taek/post/DUryhSECVO9",
       "created_at": "2026-02-13 13:11:22",
       "date": "2026-02-13",
       "crawled_at": "2026-02-18T10:58:28.313",
@@ -9467,7 +9467,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/628272260_17899164024387939_7980109455170854536_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMzczeDY2Ny5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QFXS56PXu9BU23bab5GV4vaYy7BFDrS2nYx6sVcCD2wFqPFz65T7UbcHTqu5tUjfyc&_nc_ohc=mF6wllgcTGMQ7kNvwHDDJf7&_nc_gid=8CTZ-pRPRH-oochAxyaXbg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMTQ1ODMyMjIxMDUxNTAyNw%3D%3D.3-ccb7-5&oh=00_AftkqA5bD3j_SsbJrgI6rP2lrQYcNInNSpklX4Ug6lpERA&oe=699AFBF2&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@crycheeseburger.official/post/DUsE5ebkoNN",
+      "url": "https://www.threads.com/@crycheeseburger.official/post/DUsE5ebkoNN",
       "created_at": "2026-02-13 15:51:58",
       "date": "2026-02-13",
       "crawled_at": "2026-02-18T10:58:28.313",
@@ -9494,7 +9494,7 @@
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/627629411_17863350099586895_2990086390109932151_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNTY3eDU2My5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2QHIiG9NZFah_3EUs6ivjRS22w7WkaeETFElhyuadKV3cR0L3QZ-twjrPTLMUW9b7ts&_nc_ohc=btpj3jZYnzwQ7kNvwExvwwK&_nc_gid=I0rxp5m-Evk5cr71_-NrKA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMTY5NDgxNjU2NDU5NDU0Mw%3D%3D.3-ccb7-5&oh=00_AftFWBfG7SuF2PbGD01WhqEKCtwZetm_uLxXrO0Yoqv7_g&oe=699AE386&_nc_sid=10d13b",
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/634327560_17863351176586895_4505034349582918025_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMzIweDQxNS5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2QHIiG9NZFah_3EUs6ivjRS22w7WkaeETFElhyuadKV3cR0L3QZ-twjrPTLMUW9b7ts&_nc_ohc=TPky7njYqsoQ7kNvwFAmS-K&_nc_gid=I0rxp5m-Evk5cr71_-NrKA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMTY5OTQwNjA2NDMxOTg3OQ%3D%3D.3-ccb7-5&oh=00_Afsr1Q_LgAM3XEIGHcL_SyRvNX4V51MrnGv8739eLe3__Q&oe=699B0C6E&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@readyto_da4/post/DUs6iJtCcdv",
+      "url": "https://www.threads.com/@readyto_da4/post/DUs6iJtCcdv",
       "created_at": "2026-02-13 23:40:38",
       "date": "2026-02-13",
       "crawled_at": "2026-02-18T10:58:28.313",
@@ -9519,7 +9519,7 @@
       "display_name": "openclaw_ko",
       "full_text": "카카오톡 GPT Pro 사신분들이 꼭 해봐야할 것 2가지\n\n1. GPT 사이트에서 에이전트 모드\n경험하기 ( 웹 검색 체크하고 ) 자기 브랜드나 사이트 분석 요청 해보시길! 새로운 인사이트 발견 가능!\n\n2. 터미널(Cmd) 들어가서 codex설치하고 실행해서 아무거나 한번 개발해보기! 클로드 코드랑 또 다른 맛이기도 하면서 익숙한 맛이긴한데 GPT 5.3 위력 체험 가능!\n\n( 설치법은 간단함 이전에 올린 내 쓰레드\n참조 )",
       "media": [],
-      "url": "https://www.threads.net/@openclaw_ko/post/DUsLA3WkXc2",
+      "url": "https://www.threads.com/@openclaw_ko/post/DUsLA3WkXc2",
       "created_at": "2026-02-13 16:45:24",
       "date": "2026-02-13",
       "crawled_at": "2026-02-18T10:58:28.313",
@@ -9541,7 +9541,7 @@
       "display_name": "openclaw_ko",
       "full_text": "[ GPT Codex 웹 파싱/검색 하게끔 하려면 ]\n\n~/.codex/config.toml 에\n\nweb_search = \"live\"\n\n로 해놔야 GPT Codex 가 웹 검색도 하면서 개발함\n\n( 클로드 코드는 기본값인디 굳이 왜 막아둔거지... 어차피 풀어야되는데 )",
       "media": [],
-      "url": "https://www.threads.net/@openclaw_ko/post/DUsHiqqkYtA",
+      "url": "https://www.threads.com/@openclaw_ko/post/DUsHiqqkYtA",
       "created_at": "2026-02-13 16:15:04",
       "date": "2026-02-13",
       "crawled_at": "2026-02-18T10:58:28.322",
@@ -9564,7 +9564,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/631345480_17875137546509572_2821812858524414967_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTY1NHgxMzgwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QGBe7SnFLrTHRGj3bxTAIidD5di5QkHxFEhqYFmTwas4lGsQhUR7DiCi1MpUAOq_n8&_nc_ohc=oSQ1M501KwgQ7kNvwHRqEeu&_nc_gid=CAOBXHONFQPFvmggLghnag&edm=AI6eXeABAAAA&ccb=7-5&ig_cache_key=MzgzMTUwODEyNTYzNjM0NjE2Ng%3D%3D.3-ccb7-5&oh=00_Afv-gcB8chFopWpXVmf-OjUVQv7OakRdDfAzJ73nx3Yt7g&oe=699B0532&_nc_sid=6efbad"
       ],
-      "url": "https://www.threads.net/@ai_younggle_man/post/DUsQFcOk8E2",
+      "url": "https://www.threads.com/@ai_younggle_man/post/DUsQFcOk8E2",
       "created_at": "2026-02-13 17:29:43",
       "date": "2026-02-13",
       "crawled_at": "2026-02-18T10:58:28.326",
@@ -9595,7 +9595,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/627659031_17917708413274060_6616501271261207071_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTM4NHg4Nzguc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QHtpVG1K5f5KgcJdA1UpZkFkCTKg6rOygg9ukXSgwI6SIZuVeYOIDqVRDQa3tIYiY0&_nc_ohc=3wtsTm2n-BMQ7kNvwHbj2bx&_nc_gid=oBds73VL4hejRvTaeuWLgw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMTE3MDY0Nzk0MzQ5MzExNg%3D%3D.3-ccb7-5&oh=00_Aftr9tQWSXVg-7zRjOc3jdg9c8sPJsCzJw6n5ulgw5QOew&oe=699B08AA&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@seolemi/post/DUrDWfokzX8",
+      "url": "https://www.threads.com/@seolemi/post/DUrDWfokzX8",
       "created_at": "2026-02-13 06:19:12",
       "date": "2026-02-13",
       "crawled_at": "2026-02-18T10:58:28.326",
@@ -9619,7 +9619,7 @@
       "display_name": "ai.vibecoding",
       "full_text": "Claude Code를 쓰고난 뒤, 지금까지 가장 효과 좋았던 습관들\n\n1. 새 주제면 무조건 새 대화 열기\n2. 큰 문제는 작게 쪼개서 하나씩 던지기\n3. 코드 짜기 전에 먼저 리서치부터 시키기\n4. 커밋, 브랜치, PR 전부 Claude한테 맡기기\n5. GitHub Desktop으로 변경사항 눈으로 확인하기\n6. 리뷰 에이전트로 무조건 리뷰 하기\n7. Playwright로 웹앱 직접 테스트까지 돌리게 하기\n8. 탭 5~6개로 세션 나눠서 동시에 굴리기\n\n---\n\n이런 정보 더 알고 싶으면\nhttps://discord.gg/UDndhtsr\n방문해줘",
       "media": [],
-      "url": "https://www.threads.net/@ai.vibecoding/post/DUrYUMiEr5-",
+      "url": "https://www.threads.com/@ai.vibecoding/post/DUrYUMiEr5-",
       "created_at": "2026-02-13 09:22:24",
       "date": "2026-02-13",
       "crawled_at": "2026-02-18T10:58:28.326",
@@ -9640,7 +9640,7 @@
       "display_name": "지피타쿠 | AI 실전 활용법",
       "full_text": "https://github.com/team-attention/agent-council",
       "media": [],
-      "url": "https://www.threads.net/@gptaku_ai/post/DUYWtz0k29P",
+      "url": "https://www.threads.com/@gptaku_ai/post/DUYWtz0k29P",
       "created_at": "2026-02-06 00:02:51",
       "date": "2026-02-06",
       "crawled_at": "2026-02-18T10:58:31.447",
@@ -9668,7 +9668,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/629398863_17898336996390131_5695774095084408112_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNzEyeDYzNC5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2QGxx1gVbspQFh5hf7Ww0UHNiCTWa7Ly0kzFDDk4-AqQ5jH6nr_I2mjAurf-dTcnhQY&_nc_ohc=b6Mt_aIp0XMQ7kNvwGKFlFi&_nc_gid=0i8cJP8d65Ufk8UGwzoVCA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyNTI2NDIyMzY3MzUyNTgxOQ%3D%3D.3-ccb7-5&oh=00_AfszO0Xawm94sE4jGKzGczRQUnMLv0t2AkWuqaMvMgkyoQ&oe=699AE8F6&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@stormleehj/post/DUWEYtYEiY7",
+      "url": "https://www.threads.com/@stormleehj/post/DUWEYtYEiY7",
       "created_at": "2026-02-05 02:44:12",
       "date": "2026-02-05",
       "crawled_at": "2026-02-18T10:58:31.448",
@@ -9694,7 +9694,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/633995418_17893855554408836_3112050400700402006_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTE3OXg4NjEuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QGTiHohw656DrwSKKhcNi2j7WzQet-KUH0lO0IfsOsk3pJd84gfZmfN5KnXBB9lKa8&_nc_ohc=xnccAANsh5QQ7kNvwFhxPuX&_nc_gid=pV-X0VNQEskL1Wvb9Dewxg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMTYyOTcwNjYyMjY0MTU0MQ%3D%3D.3-ccb7-5&oh=00_AfvBPaFanINOIEVp3lMvORwZjq7YvG1-b1vYdx57k25Heg&oe=699B0B7D&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@gptaku_ai/post/DUsrurWE6WF",
+      "url": "https://www.threads.com/@gptaku_ai/post/DUsrurWE6WF",
       "created_at": "2026-02-13 21:31:16",
       "date": "2026-02-13",
       "crawled_at": "2026-02-18T10:58:31.448",
@@ -9721,7 +9721,7 @@
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/616006597_17854089114608942_4755517124247905313_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uNDI5eDU0Mi5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QHne3HIHIa2lw39z4aeX-PudBkr5_rYE5tBfEhepiaz3nHt2FatvvXHwgzLNoNDyik&_nc_ohc=0HnmMk8D5u4Q7kNvwGhGn-7&_nc_gid=yygfM-Z3I01TAEwm4qyNCg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwOTEyMTYzNTI0NTczOTYyNw%3D%3D.3-ccb7-5&oh=00_Afvdllr1e15bxQ1ne74M3yU2Y7qhm4LMUAj4WPe02NfT9g&oe=699B0C5A&_nc_sid=10d13b",
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/615785443_17854093938608942_6282581692128358355_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uNzIxeDM5MC5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QHne3HIHIa2lw39z4aeX-PudBkr5_rYE5tBfEhepiaz3nHt2FatvvXHwgzLNoNDyik&_nc_ohc=tXaJ-wEy5eAQ7kNvwE8wXJ8&_nc_gid=yygfM-Z3I01TAEwm4qyNCg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgwOTE1MDQ5OTkwMDYxNjA1Ng%3D%3D.3-ccb7-5&oh=00_AfuZiiFrgjD6IsEOgHqsTvAn8sc3U363gBygFrhJGdngWg&oe=699B01E7&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@ody_daddy/post/DTct_N_kxrn",
+      "url": "https://www.threads.com/@ody_daddy/post/DTct_N_kxrn",
       "created_at": "2026-01-13 20:11:46",
       "date": "2026-01-13",
       "crawled_at": "2026-02-18T10:58:31.448",
@@ -9748,7 +9748,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/630111771_17893859436408836_6708039103110580117_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uNzkweDY2My5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QGJA9P3gmOUumRVLl5lyePXu5jCMjs6oQvdFwBFKqE-3GCDTgZsl-8G2T1CgZDsvd0&_nc_ohc=72R4_xuhDccQ7kNvwGA-ejV&_nc_gid=eEBpTt1ZG6J-btzjDAEoVQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMTY0OTcwMzE1MTUyMjk5Nw%3D%3D.3-ccb7-5&oh=00_Aftz2MKNtiBCvK-8unTLJytagijR99n_GKNuPL_VCwS-Ag&oe=699B02F3&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@gptaku_ai/post/DUswRwgEz_A",
+      "url": "https://www.threads.com/@gptaku_ai/post/DUswRwgEz_A",
       "created_at": "2026-02-13 22:11:01",
       "date": "2026-02-13",
       "crawled_at": "2026-02-18T10:58:34.507",
@@ -9774,7 +9774,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/626180199_17931066702189027_9050145625408618927_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uODE0eDI4Ny5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QGR0Hx31mbNo7POcM-Y02G9wIAeIEPRsntOpLPaNjbN3m8b12p4ca8kykRYmSv5TUs&_nc_ohc=OGyal5n569YQ7kNvwEPXzOu&_nc_gid=Cbg0XHkORHebL4Z9gz0Gzw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyNTczMzUwNzEzNDU5NTg1NQ%3D%3D.3-ccb7-5&oh=00_AfsCxHsdPwMGAnjqg6Wmzi7umRitlvL_TBbb3If-dqdV8w&oe=699AF766&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@thedalbee/post/DUXvFrqESMP",
+      "url": "https://www.threads.com/@thedalbee/post/DUXvFrqESMP",
       "created_at": "2026-02-05 18:16:35",
       "date": "2026-02-05",
       "crawled_at": "2026-02-18T10:58:34.507",
@@ -9798,7 +9798,7 @@
       "display_name": "bellman.pub",
       "full_text": "https://github.com/Yeachan-Heo/oh-my-codex\n\nGPT Pro 29,000원과\nCodex gpt 5.3의 시대 \n\n불완전하지만 일단 누가 OmC 포크떠서 OmX로 이식할까봐 제가 했습니다.",
       "media": [],
-      "url": "https://www.threads.net/@bellman.pub/post/DUsjUdekoXS",
+      "url": "https://www.threads.com/@bellman.pub/post/DUsjUdekoXS",
       "created_at": "2026-02-13 20:17:47",
       "date": "2026-02-13",
       "crawled_at": "2026-02-18T10:58:34.508",
@@ -9825,7 +9825,7 @@
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/631522252_17926130874219174_6823220142293631354_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNzk2eDU5MC5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QEC4hpaMnMdYs7hReUNffsOB5MQro0rvVBcm-AfR7hHdehMR8aUI3uikVm9y3h4qsY&_nc_ohc=ukxIvMnMhqgQ7kNvwHpmpZP&_nc_gid=fq4uGDPQSqD1Ng-YU_iruw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMTQwMjExMzM5NDY0MDMxNA%3D%3D.3-ccb7-5&oh=00_AfuScSZFGronlJ_XFCQjiVuaz4gJAB2SUmvC3FcRwsIrrg&oe=699AFA5E&_nc_sid=10d13b",
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/632083811_17926131156219174_2952853138575284561_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTA1MngxNDkwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QEC4hpaMnMdYs7hReUNffsOB5MQro0rvVBcm-AfR7hHdehMR8aUI3uikVm9y3h4qsY&_nc_ohc=teh8NpV2AhIQ7kNvwEKIQbZ&_nc_gid=fq4uGDPQSqD1Ng-YU_iruw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMTQwMjE1Nzc3MDM1MDI4MA%3D%3D.3-ccb7-5&oh=00_AfulHENKgDFRDxeRHxJH__7tmX_smhjbf34HUcBgxqbSDQ&oe=699B0DC3&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@gptersorg/post/DUr39e2kfxb",
+      "url": "https://www.threads.com/@gptersorg/post/DUr39e2kfxb",
       "created_at": "2026-02-13 13:58:55",
       "date": "2026-02-13",
       "crawled_at": "2026-02-18T10:58:34.508",
@@ -9852,7 +9852,7 @@
       "display_name": "sunghwanjoo",
       "full_text": "오늘 다른교수들앞에서 notebooklm에서 간단한  videodeck사용법을 보여줬더니 모두 ‘우와‘ 한다. 이건 마치 90년대초에 DOS에서 ’Dir’ 입력했을때 ‘우와’ 하던 그느낌이다. 나 아무것도 몰라요. 😢. 정말로.\n\n---\n\n아..그리고 Unix하신분들이 ls 가 먼저다 하시면 그것도 인정.",
       "media": [],
-      "url": "https://www.threads.net/@sunghwanjoo/post/DUqctkUER1V",
+      "url": "https://www.threads.com/@sunghwanjoo/post/DUqctkUER1V",
       "created_at": "2026-02-13 00:41:34",
       "date": "2026-02-13",
       "crawled_at": "2026-02-18T10:58:34.512",
@@ -9876,7 +9876,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/630218259_17893803975408836_6766047096890070828_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTE3OXgxMjIxLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QEO22wPxb_vH8Z29ExvbDo8T-AjqlScBCpLZL33udE4C4pVGyH511Acdn4cvBPMiiU&_nc_ohc=Tpjoym--9XwQ7kNvwHfbV42&_nc_gid=6Lybz2_tkzCmfMDeVbF0VQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMTMzMDkwNTM1MzU3NDcyOQ%3D%3D.3-ccb7-5&oh=00_AfuS_j7oP61UFdc9gToT1VBtMg8iPsxLrTqnbL64XEL10A&oe=699AF5E1&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@gptaku_ai/post/DUrnyi-k1lJ",
+      "url": "https://www.threads.com/@gptaku_ai/post/DUrnyi-k1lJ",
       "created_at": "2026-02-13 11:37:37",
       "date": "2026-02-13",
       "crawled_at": "2026-02-18T10:58:34.512",
@@ -9902,7 +9902,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/626278322_17858538927605524_2606614123854796399_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMjE2MHgxMTc4LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QE9Hemu4RJ8a1ekFTbjOQnfnNxddUY5ODrgjNJlj0bhiUuvhDn07rnC-zXuOECCTBQ&_nc_ohc=PHl1xXdckQsQ7kNvwE2Z4hp&_nc_gid=MBDuSBby90fShpsKkBp4Qg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMTMyMDQ1MjEyMzk3MTA2MQ%3D%3D.3-ccb7-5&oh=00_AfshUmdxYXFnACYio4MPV-1xB2Z9WFbHFot-sNTThYUcqg&oe=699B0192&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@tech.taek/post/DUrlabpic31",
+      "url": "https://www.threads.com/@tech.taek/post/DUrlabpic31",
       "created_at": "2026-02-13 11:16:50",
       "date": "2026-02-13",
       "crawled_at": "2026-02-18T10:58:34.512",
@@ -9928,7 +9928,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/626271262_17849734677676750_6478794991013606734_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQ0eDI4My5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QEvl_6JICQ8Nlh2S6bU_yHFHgao2ZtyyFM6-vOjtqenMuoevDbSb6vnfQ8-6qZAfmE&_nc_ohc=NGOnEwDqnNUQ7kNvwGdA6j4&_nc_gid=RPeFetkwndykVBWmrdx2Zg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMTQyMzc5ODkyNzgwNTc5MQ%3D%3D.3-ccb7-5&oh=00_Afs01BZRCgzOmE7ZPtQTXOkYf29CnUmjRjm3p8cNKrte-Q&oe=699AF09F&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@openclaw_ko/post/DUr86U3Ec1f",
+      "url": "https://www.threads.com/@openclaw_ko/post/DUr86U3Ec1f",
       "created_at": "2026-02-13 14:42:10",
       "date": "2026-02-13",
       "crawled_at": "2026-02-18T10:58:34.512",
@@ -9954,7 +9954,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/626264777_17921148189255383_5698898447933285885_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNDk2eDQ1NC5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2QHC-hYDpB0ky2YDiMoi3pH0jgvwcaooWN14ADsJ6J2iCljTeEBgt6n1RWdExHRPV8Q&_nc_ohc=9qGiUSRrewUQ7kNvwGG6QMF&_nc_gid=eWOfDei2o8-WUggpceJDhw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMDkyMDU1MDYyMjAzMDcwOQ%3D%3D.3-ccb7-5&oh=00_Afsg55suzUcHe-ASIic_0K9zvB-IBKQiYvFrFT-0OxcbrA&oe=699AFBCC&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@mega_fluke/post/DUqKfGWket1",
+      "url": "https://www.threads.com/@mega_fluke/post/DUqKfGWket1",
       "created_at": "2026-02-12 22:02:18",
       "date": "2026-02-12",
       "crawled_at": "2026-02-18T10:58:37.572",
@@ -9978,7 +9978,7 @@
       "display_name": "seolo_o",
       "full_text": "ChatGPT Pro 축제 기념 짧은 팁\n\nClaude Code CLI 처럼\nclaude --dangerously-skip-permissions 하려면\n\nCodex는\ncodex --dangerously-bypass-approvals-and-sandbox\n\n또는\ncodex --yolo",
       "media": [],
-      "url": "https://www.threads.net/@seolo_o/post/DUqZbPtk3Fu",
+      "url": "https://www.threads.com/@seolo_o/post/DUqZbPtk3Fu",
       "created_at": "2026-02-13 00:12:51",
       "date": "2026-02-13",
       "crawled_at": "2026-02-18T10:58:37.572",
@@ -10000,7 +10000,7 @@
       "display_name": "danduck.ai",
       "full_text": "카카오 GPT Pro 이용권 등록해보면서 확인한 사항 메모:\n\n[준비 단계: GPT Plus 구독 취소]\n1. 카카오 GPT에서 내가 원래 쓰던 GPT 계정을 등록해놓아야 한다. 안그러면 엉뚱한 카톡 계정이 Pro로 업그레이드 됨.\n2. 내 GPT 계정이 Plus 구독을 사용중이었다면, 구독 취소를 해서 먼저 Free 요금제로 내려놓아야 한다.\n3. GPT Plus 구독 취소는 [Help Center > 우측하단 챗봇 클릭 > '현재 구독 즉시 취소 및 환불해줘'라고 말하면 됨\n\n---\n\n[등록 단계]\n1. GPT 계정확인: 카카오톡 > 말풍선 > 상단 ChatGPT탭 > 우측상단 더보기 > 설정 > 연결된 ChatGPT계정 확인\n2. 등록: 카카오톡 > 가방 > 우측 상단 MY > 사용가능한 선물에서 GPT Pro 이용권 > 등록하기 > 3초정도 기다리면 팝업이 뜸 > 등록하기 \n3. 결과 확인: ChatGPT 앱 > 좌측상단 더보기 > 하단 이름 클릭 > 구독란 ChatGPT Pro 확인 (저는 바로 보였는데 옆자리 동료는 3분정도 지연되었습니다)\n\n---\n\n듣기로는 이어서 이용권 추가구입해서 등록하면 기간이 연장된다던데..\n그건 좀 더 알아보고 업데이트 해보겠습니다~!",
       "media": [],
-      "url": "https://www.threads.net/@danduck.ai/post/DUraBf6kt3J",
+      "url": "https://www.threads.com/@danduck.ai/post/DUraBf6kt3J",
       "created_at": "2026-02-13 09:37:19",
       "date": "2026-02-13",
       "crawled_at": "2026-02-18T10:58:37.573",
@@ -10024,7 +10024,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/631376130_17908066440343665_2946884148613512277_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMzgzeDI3OC5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QFFYjl-Hhc7K1ZYFSv-FP2kgzpp9ED4qbiBAy7s2cI52n5kEB51YZmG-PaQTdbd13c&_nc_ohc=a77qZfRQ6lEQ7kNvwE1LXbo&_nc_gid=77g518XDQ8WDQTlh6a5TKA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMTI3MTkwMDc5OTE4NTI3MA%3D%3D.3-ccb7-5&oh=00_AftsBphVMV-jhjjN5qB3WgLas3XBGcVzY1d1BY61vksqrw&oe=699B08E3&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@digitme.co.kr/post/DUrae9MEt24",
+      "url": "https://www.threads.com/@digitme.co.kr/post/DUrae9MEt24",
       "created_at": "2026-02-13 09:41:20",
       "date": "2026-02-13",
       "crawled_at": "2026-02-18T10:58:37.574",
@@ -10048,7 +10048,7 @@
       "display_name": "miniminim71",
       "full_text": "https://github.com/first-fluke/oh-my-ag.git\n\n객관적으로 평가할 때, Antigravity가 완벽한 코딩 툴이라고 보기는 어렵습니다. 세부적인 환경 설정이 까다로운 데다, Claude 외의 모델을 적용할 경우 결과물의 품질이 현저히 떨어지는 경향이 있기 때문입니다.\n\n그럼에도 비용 효율성 측면에서는 여전히 타의 추종을 불허하는 IDE라는 사실에는 변함이 없습니다. 이에 해당 툴의 성능을 보다 안정적으로 끌어올릴 수 있는 세팅 팁을 공유합니다.\n\n기획서를 전달하실 때, 채팅창에 다음과 같은 프롬프트를 함께 입력해 보십시오.\n\n\"https://github.com/first-fluke/oh-my-ag.git 를 클론하여 스스로를 업그레이드하세요.\"\n\n이 과정을 거치는 것만으로도 산출물의 완성도가 눈에 띄게 향상되는 것을 확인하실 수 있습니다.",
       "media": [],
-      "url": "https://www.threads.net/@miniminim71/post/DUfTMPpj9GU",
+      "url": "https://www.threads.com/@miniminim71/post/DUfTMPpj9GU",
       "created_at": "2026-02-08 16:46:44",
       "date": "2026-02-08",
       "crawled_at": "2026-02-18T10:58:40.646",
@@ -10073,7 +10073,7 @@
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/629928682_17944929834100887_392815565692720800_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTc4M3gxMjA2LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QGHrXWXE_yL9IOQU6hBVQv4Bz4_lgAJ1K3nfeWcP_6bXPxYeoWljR_tKpECQMZnVaM&_nc_ohc=1KDgGUsE16UQ7kNvwEIP5kf&_nc_gid=HvAy70lFPnsisfnnUki9pQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMDYzNjM4ODg1NzkxMTEyNw%3D%3D.3-ccb7-5&oh=00_Aft8S0nz8-96XTy7ei-LHwIGZqQWSr-yJhSb4e0x9oKrxQ&oe=699AE9EC&_nc_sid=10d13b",
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/628300594_772903585367594_4559567474355814024_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDU4Ni5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QGHrXWXE_yL9IOQU6hBVQv4Bz4_lgAJ1K3nfeWcP_6bXPxYeoWljR_tKpECQMZnVaM&_nc_ohc=7TvaDxC6azkQ7kNvwGUZuPl&_nc_gid=HvAy70lFPnsisfnnUki9pQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMDY2NDQ5MDE5MDQ5MzI1Nw%3D%3D.3-ccb7-5&oh=00_AfuNvpY1IdRXI82ddL9yF5Nc9KNrWD-dxXMCvJMiOwEVVg&oe=699AEF0C&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@do.aiworks/post/DUpJ4AFj5dX",
+      "url": "https://www.threads.com/@do.aiworks/post/DUpJ4AFj5dX",
       "created_at": "2026-02-12 12:37:44",
       "date": "2026-02-12",
       "crawled_at": "2026-02-18T10:58:43.684",
@@ -10100,7 +10100,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/631138344_17943547227106081_8047940090564769110_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTc1Nng5NDMuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QFnHS9U1Z0pj4cagxcRiqtM6K_MwCQ4PryK3sX3rfnvvgX8UvEZccGHcW704xFQGZk&_nc_ohc=Xy1PvpU0l7wQ7kNvwFXRIQh&_nc_gid=QQKgun7m4DUjSWEXmfFPyg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMDE1MDYyMjA1ODg5MDk1Mw%3D%3D.3-ccb7-5&oh=00_Afsf_yWC9Ray9UZh7-zl5CFpZEZNmYRu2wXFXCN9SDRvnA&oe=699AF39D&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@anab.branding/post/DUnbgtKD08M",
+      "url": "https://www.threads.com/@anab.branding/post/DUnbgtKD08M",
       "created_at": "2026-02-11 20:33:21",
       "date": "2026-02-11",
       "crawled_at": "2026-02-18T10:58:43.684",
@@ -10127,7 +10127,7 @@
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/632194792_17945089833103328_5346184250952603015_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTQzOXgxNDgwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QGg5DK7FH2jmHd3YiMWnYj8zbuJWJoiEs7_HdYUvCzL-P5oQWl--IH2ZssFgBfHcAE&_nc_ohc=QSsFni13CfcQ7kNvwHae5Se&_nc_gid=YnM_YL1xX0AgMnxCNc1wgA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMDczMzU4MDMyNzM0OTM2NA%3D%3D.3-ccb7-5&oh=00_AfuCDVHYkzZ-cwWHlhKiKWxIWxOok_rAikIRzG14fuj6SQ&oe=699AEEF5&_nc_sid=10d13b",
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/628977060_17945090175103328_4301295883615519280_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjg4eDQ3Ni5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QGg5DK7FH2jmHd3YiMWnYj8zbuJWJoiEs7_HdYUvCzL-P5oQWl--IH2ZssFgBfHcAE&_nc_ohc=NV_vHafUQUoQ7kNvwHjsqZV&_nc_gid=YnM_YL1xX0AgMnxCNc1wgA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMDczMzYyMjY3MzA3NzczNA%3D%3D.3-ccb7-5&oh=00_AfuhAEaJ2fYC1Catv2rug4CtbJ7NRrGJcriYB0q-UiaLTQ&oe=699ADAE8&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@hue_0525/post/DUpf-Uskmx0",
+      "url": "https://www.threads.com/@hue_0525/post/DUpf-Uskmx0",
       "created_at": "2026-02-12 15:50:50",
       "date": "2026-02-12",
       "crawled_at": "2026-02-18T10:58:43.684",
@@ -10154,7 +10154,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/631489976_17874847140507614_5724412297782130255_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTI4NngxNTk2LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QEoU9YfvtOByvNfaM1zPIy-StW0M-sgeDHFlQjTIq6IzjMpJPpe-qLOEc0LlFfzBAI&_nc_ohc=QZZjQhFl53UQ7kNvwHQI2sG&_nc_gid=hWcnk95EWUMooCAiPyn_gw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMDAyNDcyMDY2MjgwOTA3OQ%3D%3D.3-ccb7-5&oh=00_AfveAaYo7q6mir95YsmAl8ImFEuoIjOJCxOfYfPHubZv0A&oe=699AEBCC&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@keke_appa/post/DUm-zDsEkn3",
+      "url": "https://www.threads.com/@keke_appa/post/DUm-zDsEkn3",
       "created_at": "2026-02-11 16:22:27",
       "date": "2026-02-11",
       "crawled_at": "2026-02-18T10:58:46.720",
@@ -10180,7 +10180,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/628045462_17939461392117371_5354627509157712703_n.jpg?stp=cp6_dst-jpegr_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTkyMHgxNDQwLmhkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2QHOForObpZ0ff6mSYMe8Odxx4kZSx-HaGjvguQQ0kr0TCDuRh6EpAICKsfyK9_--so&_nc_ohc=WosdgdzdsBMQ7kNvwFEAoAN&_nc_gid=g5cwan7MpsI5qVsrmIhyFA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyOTk5NDUyNjU4OTQ3MTIwOQ%3D%3D.3-ccb7-5&oh=00_AfuRFAlFITDEepzVZKndl53Z3J6bFNaJQH7cWvzknwNidQ&oe=699AD5E8&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@cactus.kimchi/post/DUm37rRDknp",
+      "url": "https://www.threads.com/@cactus.kimchi/post/DUm37rRDknp",
       "created_at": "2026-02-11 15:22:28",
       "date": "2026-02-11",
       "crawled_at": "2026-02-18T10:58:46.720",
@@ -10203,7 +10203,7 @@
       "display_name": "강규석",
       "full_text": "1. webfetch 도구 안쓰도록 금지시키기\n\n문제: webfetch 쓰다가 사이트 잘못 걸리면 거기서 멈춰서 아무것도 못 함.\n\n해결: fetch MCP나 Jina Reader MCP 사용하기.\n\n특히 클코에 돈 쓸 준비가 되어 있다면 Jina Reader MCP 추천 — 컨텍스트 토큰이 절약되어서 엄청나게 이득. fetch MCP는 무료면서 훨 좋음.",
       "media": [],
-      "url": "https://www.threads.net/@ddg.kang/post/DUlWT4Ok5v0",
+      "url": "https://www.threads.com/@ddg.kang/post/DUlWT4Ok5v0",
       "created_at": "2026-02-11 01:09:26",
       "date": "2026-02-11",
       "crawled_at": "2026-02-18T10:58:46.721",
@@ -10232,7 +10232,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/628030654_1586186992521906_600482610511785652_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDQxNC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QGSM51T3DYX5O49_qxjvecdCOM0cVnF-5nqGMO9LLD78skWGUOIf4Fnr5uSqHjAGzQ&_nc_ohc=NFZcam8OB_AQ7kNvwE6scUq&_nc_gid=xM7Z-Ff3Sl7NskTqE3m_Eg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyOTc2ODA3OTkwNzg5NTM3Mg%3D%3D.3-ccb7-5&oh=00_Afuw-bNV-EBAZRoHyCh0-kjkH2N_bMOvHbsSehHM9PPfPA&oe=699AE432&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@aicoffeechat/post/DUmEccXCjhM",
+      "url": "https://www.threads.com/@aicoffeechat/post/DUmEccXCjhM",
       "created_at": "2026-02-11 08:02:08",
       "date": "2026-02-11",
       "crawled_at": "2026-02-18T10:58:46.721",
@@ -10256,7 +10256,7 @@
       "display_name": "ddg.kang",
       "full_text": "클로드코드 꿀팁 — 개발자 출신들도 잘 모르는 것들\n\n어디서 베낀 거 아니고, 클코 5,000시간 사용하면서 직접 느낀 것들.\n\n---\n\n1. webfetch 도구 안쓰도록 금지시키기\n\n문제: webfetch 쓰다가 사이트 잘못 걸리면 거기서 멈춰서 아무것도 못 함.\n\n해결: fetch MCP나 Jina Reader MCP 사용하기.\n\n특히 클코에 돈 쓸 준비가 되어 있다면 Jina Reader MCP 추천 — 컨텍스트 토큰이 절약되어서 엄청나게 이득. fetch MCP는 무료면서 훨 좋음.\n\n---\n\n2. Skills 남발하지 않기\n\n문제: 클코에 Skills 새로 나왔다고 이것저것 만들기.\n\n해결: 회사 전체가 클코 쓰면서 Skills를 서로 공유해야 하는 상황이 아닌 이상(솔직히 클코 다같이 쓰는 회사 거의 없음.. 다 혼자 쓰실듯), skills 안에 하나의 custom command로 간단하게 넣어놓는 게 훨씬 나음.\n\n(뭔 소린지 모르겠으면 이 글 복붙해서 클코에게 직접 물어보기)\n\n---\n\n3. 그냥 무조건 Opus 쓰기\n\n문제: 토큰 아낀다고 Sonnet, Haiku 사용.\n\n해결: 그냥 Opus 쓰는 게 훨씬 토큰 아낌. 저는 대부분 one-shot에 버그 없이 기능 완성합니다. 그럼 버그 잡느라 대화 안해도 되어서 오히려 절약.\n\n나중에 실제로 5천시간 클코하면서 발전시킨 프롬프트, 스킬도 공유할게요.",
       "media": [],
-      "url": "https://www.threads.net/@ddg.kang/post/DUlWTf6kyKL",
+      "url": "https://www.threads.com/@ddg.kang/post/DUlWTf6kyKL",
       "created_at": "2026-02-11 01:09:23",
       "date": "2026-02-11",
       "crawled_at": "2026-02-18T10:58:49.807",
@@ -10278,7 +10278,7 @@
       "display_name": "leosofts2016",
       "full_text": "직원들한테 절대 말 못하는 게 하나 있습니다. \n솔직히 말하면, 지금 제 직원들중 최소 절반은 AI로 대체할 수 있습니다. \n아니, 이미 제가 혼자 하는 사이드 프로젝트에서는 \n직원 한 명도 안 쓰고 혼자서 따로 월 1억 내외를 벌고 있습니다. \n(내일은 정산금 6600만원이 들어옵니다.)\n\n근데 안 자릅니다. 10년 넘게 같이 일한 사람들입니다. \n저 혼자 밑바닥에서 시작할 때부터 함께한 사람들도 있습니다. \n그 사람들이 없었으면 연매출 50억은 불가능했습니다. \n\n하지만 현실은 냉정합니다. AI가 하루가 다르게 좋아지고 있고, \n바이브코딩으로 비개발자도 서비스를 만드는 세상이 왔습니다. \n\n제가 직원들한테 AI 얘기를 많이 하면 할수록, 톡방이 조용해지는 걸 느낍니다. \n그들도 알고 있는 겁니다. 대표로서 가장 어려운 건, 돈 버는 게 아닙니다. \n같이 가야 할 사람과 효율 사이에서 선택하는 겁니다. \n\n여러분이라면 어떻게 하시겠습니까?",
       "media": [],
-      "url": "https://www.threads.net/@leosofts2016/post/DUkjN28koTW",
+      "url": "https://www.threads.com/@leosofts2016/post/DUkjN28koTW",
       "created_at": "2026-02-10 17:42:58",
       "date": "2026-02-10",
       "crawled_at": "2026-02-18T10:58:49.808",
@@ -10302,7 +10302,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.2885-15/629589417_1258447813015728_6263977072047037056_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDM2MC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QErYKywsKca9wIwoRKfVrpUIUO4F-ebCRQxN64JbsQGrsdvK5qYYKUFO4oxpGJmU7A&_nc_ohc=lFa3-jqhdfQQ7kNvwEWeND2&_nc_gid=ZhJKyMsmyBWa3cPhOqFgsQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyOTcyNzc0MDA0MDQyNzc0Mg%3D%3D.3-ccb7-5&oh=00_AfvWhmBl3BAh0nydcc7yCeO_5xF8Tu2c48d68h-Iir--tA&oe=699AD64B&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@claudeai/post/DUl7Ra7kbje",
+      "url": "https://www.threads.com/@claudeai/post/DUl7Ra7kbje",
       "created_at": "2026-02-11 06:33:23",
       "date": "2026-02-11",
       "crawled_at": "2026-02-18T10:58:49.808",
@@ -10326,7 +10326,7 @@
       "display_name": "easygpt2526",
       "full_text": "쿠팡❌ 네이버❌ \n\n이제는 Gemini가 진짜 ‘최저가’만 찾아준다.\n\n아래 프롬프트들로 난 월에 100만원씩 아낀다.\n\n---\n\n1. 온라인 최저가 찾기\n\n[제품명]의 현재 온라인 최저가를 찾아줘. 쿠팡이나 네이버에서 위에 뜨는 가격이 아니라, 실제로 결제 가능한 최저 금액 기준으로 조사해줘. 대형 쇼핑몰뿐 아니라 중소 쇼핑몰, 틈새몰까지 전부 포함하고, 광고성 결과나 스폰서 링크는 제외해줘. 배송비와 옵션 추가금까지 포함한 최종 결제 금액 기준으로 비교하고, 동일 모델·동일 스펙 제품만 비교해서 표로 정리해줘. 표에는 판매처, 최종가, 배송비, 재고 여부, 신뢰도, 구매 링크를 포함해줘.\n\n---\n\n2. 숨겨진 할인코드와 혜택 검색\n\n[제품명 또는 브랜드]에 적용 가능한 실제 사용 가능한 할인 혜택을 전부 찾아줘. 공개된 프로모션 코드뿐만 아니라 잘 드러나지 않는 할인, 캐시백, 적립금, 회원 혜택까지 포함하고, 중복 적용이 가능한 조합이 있다면 함께 계산해줘. 특정 카드나 유료 멤버십이 필수인 조건은 제외하고, 만료됐거나 적용이 안 되는 낚시성 정보도 빼줘. 각 혜택마다 적용 방법, 실제 할인 금액, 유효 기간, 최종 체감가를 명확히 정리해줘.\n\n---\n\n3. 가성비 좋은 대체 제품 비교\n\n[제품명]을 기준으로, 성능 대비 가격이 더 좋은 가성비 대체 제품 5개를 추천해줘. 단순히 싼 제품이 아니라, 실제 사용 기준에서 체감 성능이 비슷하거나 더 나은 제품만 포함해줘. 스펙 숫자 나열 말고, 실사용 기준 장단점을 중심으로 비교해주고 가격 대비 어떤 점이 더 유리한지도 설명해줘. 각 제품마다 현재 평균 구매가, 주요 장점, 단점, 이런 사람에게 추천하는지를 함께 정리해줘.\n\n---\n\n4. 곧 세일할지 예측하기\n\n[제품명]의 최근 가격 변동 흐름과 과거 할인 패턴을 분석해서, 가까운 시일 내에 할인될 가능성이 있는지 예측해줘. 시즌성 할인, 브랜드 행사 주기, 신제품 출시 타이밍 등을 함께 고려해서 “지금 사는 게 나은지, 기다리는 게 나은지”를 명확히 결론으로 내려줘. 만약 기다린다면 예상 시기와 기대 할인 폭도 함께 알려줘.\n\n---\n\n5. 리퍼비시 / 오픈박스 특가 찾기\n\n[제품명]의 리퍼비시 또는 오픈박스 제품 중에서 신뢰할 수 있는 판매처 기준으로 가장 가성비 좋은 옵션을 찾아줘. 목표 가격은 [$금액] 이하로 설정하고, 단순 최저가가 아니라 상태 대비 가격이 좋은 제품만 선별해줘. 각 제품마다 상태 등급, 사용 흔적 여부, 구성품 포함 여부, 보증 유무를 명확히 설명해주고, 새 제품 대비 얼마나 절약되는지도 계산해줘.\n\n---\n\n6. 가격 하락 알림 설정\n\n[제품명]의 가격이 [$금액] 이하로 떨어질 경우 바로 알 수 있도록 현실적으로 가능한 가격 추적 방법을 설계해줘. 특정 사이트 알림, 가격 추적 서비스, 이메일 알림, 직접 체크하는 최소 노력 루트까지 포함해서 가장 효율적인 방법을 추천해줘. 설정 방법은 초보자도 그대로 따라 할 수 있게 단계별로 설명해주고, 놓치기 쉬운 함정이나 주의할 점도 함께 알려줘.\n\n---\n\n📌 EASY GPT 무료 실시간 강의 (2026 ver)\n\n🚨강의 내용이 전면 개편 되었습니다‼️\n- 기존에 강의를 들으셨던 ‘7000명’의 분들도 무조건 다시 들으셔야 합니다.\n\n🗓 2월 24일(화) 오후 7시 30분\n\n💻AI 써보긴 했는데, \n수익으로는 안 이어졌나요?\n\n결국 핵심은 단 하나입니다.\nSNS → 상세페이지 → 판매\n\n이 흐름을\n👉 AI로 어떻게 복붙만 해서 구현하는지\n👉 실제로 돈이 되게 어떻게 연결하는지\n이번 강의에서 전부 공개합니다.\n\n정말 아무것도 모르는 분들도 따라올 수 있게\n차근차근 준비한 강의입니다.\n많은 기대 부탁드립니다.\n\n무료 강의 방 링크\n￼https://open.kakao.com/o/gs2v23ci￼",
       "media": [],
-      "url": "https://www.threads.net/@easygpt2526/post/DUkMWqNk9OY",
+      "url": "https://www.threads.com/@easygpt2526/post/DUkMWqNk9OY",
       "created_at": "2026-02-10 14:23:11",
       "date": "2026-02-10",
       "crawled_at": "2026-02-18T10:58:49.808",
@@ -10348,7 +10348,7 @@
       "display_name": "nomadlabs_cozac",
       "full_text": "[1/7]\nOpus 4.6이랑 Codex 5.3 나온 지 5일 됐는데\nHN이랑 커뮤니티 보니까 재밌는 현상이 있어요\n\n한쪽만 쓰는 사람이 거의 없어요\n대부분 둘 다 쓰는데, 조합법이 크게 3가지로 갈려요\n\n저도 4.5/5.2 때부터 둘 다 쓰고 있었거든요\n제 패턴이랑 다른 사람들 패턴 비교해보니까\n\"왜 그렇게 쓰는지\"가 보이더라고요\n\n---\n\n[2/7]\n먼저 4.5/5.2 때부터 느꼈던 핵심 성격 차이예요\n\nOpus는 큰 그림을 잘 봐요\n\"이 프로젝트 구조 어떻게 잡을까\"\n\"이 아키텍처 이대로 괜찮을까\"\n이런 거 시키면 진짜 잘함\n\nCodex는 세부 영역을 끈질기게 파요\nOpus가 \"됐어 이 정도면\" 하고 넘어가는 버그를\nCodex는 끝까지 물고 늘어져서 고쳐요\n\n4.6/5.3에서 이게 더 선명해졌어요\nOpus 4.6은 전체 그림이 더 좋아졌고\nCodex 5.3은 속도가 확실히 빨라졌고요\n\n이 성격 차이 때문에 사람들 조합법이 갈리는 거예요\n\n---\n\n[3/7]\n패턴 1: Opus 코딩 + Codex 난제 해결 (제가 쓰는 방식)\n\n기본 작업은 전부 Opus로 돌려요\n새 기능, 리팩토링, 구조 잡기, 일반 버그 수정\n\n근데 가끔 Opus가 같은 데서 자꾸 실패하거든요\n로직이 꼬이거나 엣지 케이스가 복잡할 때\n\n이럴 때 Codex한테 넘기면 끈질기게 파서 풀어줘요\nOpus가 못 풀어내는 걸 Codex가 풀어가는 느낌\n\nHN에서도 비슷한 사람이 있었어요\n\"Claude가 코딩하고 Codex 5.2-high가 리뷰한다\"\n\"Codex는 잔소리 안 하고 진짜 문제만 짚어준다\"\n\n이 조합의 핵심:\n왠만한 건 Opus가 다 풀고, 진짜 어려운 것만 Codex로\n\n---\n\n[4/7]\n패턴 2: Codex 코딩 + Opus 리뷰 (정반대)\n\n이건 제 방식이랑 완전 반대인데 쓰는 사람이 꽤 있어요\n\n\"5.2 Codex가 메인 코딩 모델이 됐다.\n작업 끝나면 Opus한테 더블체크 시킨다.\n다른 프론티어 모델의 의견을 듣는 게 좋다\"\n\n이 사람들은 Codex의 안정성을 높이 사요\n명확한 스펙 주면 빠르고 정확하게 쳐내거든요\nOpus는 가끔 \"다 했어요\" 하고 실패한 걸 보고하는데\nCodex는 그런 게 적다는 거예요\n\n이 조합의 핵심:\n안정적 실행은 Codex, 놓친 거 잡아내는 건 Opus\n\n---\n\n[5/7]\n패턴 3: 역할별 3단 분업 (프로 세팅)\n\n이건 좀 빡센 세팅인데 쓰는 사람들이\n\"이게 제일 효과 좋다\"고 해요\n\n\"Opus로 설계/아키텍처\nSonnet이나 Codex로 구현\nGemini로 리뷰/QC\"\n\n한 개발자는 Codex review 스킬을 만들어서\nClaude한테 코딩시키고 Codex가 자동 리뷰하게 했는데\n3~4번 핑퐁하면서 합의점을 찾더래요\n\nEvery 팀도 비슷해요\nCEO는 \"바이브 코딩은 Opus, 시리어스 엔지니어링은 Codex\"\nCTO는 \"Opus 메인에 Codex로 플래닝/리뷰\"\nPM은 그 반대\n\n같은 팀인데 사람마다 달라요\n\n---\n\n[6/7]\n왜 패턴이 갈리는지 알겠더라고요\n\nHN에서 누가 정리를 잘 해놨는데\n\nOpus 4.6: 자율형\n- 깊게 계획하고, 오래 돌리고, 덜 물어봄\n- 애매하게 시켜도 알아서 조사하고 해결\n- 대신 가끔 삽질하고도 \"됐어요\" 하는 경우 있음\n\nCodex 5.3: 협업형\n- 중간에 방향 틀 수 있고, 루프 안에 있음\n- 명확한 스펙에 빠르고 정확하게 실행\n- 대신 스펙이 모호하면 추측하거나 멈춤\n\n자기 작업 스타일이\n\"대충 시키고 결과만 볼래\" → Opus 메인\n\"같이 보면서 방향 잡을래\" → Codex 메인\n\n둘 다 맞아요. 프로젝트 성격에 따라 다른 거예요\n\n---\n\n[7/7]\n그래서 뭘 하면 되냐면요\n\n1단계: 지금 쓰는 모델로 평소처럼 작업하세요\n2단계: 막히거나 결과가 별로면 다른 모델에 같은 걸 던지세요\n3단계: 어디서 차이가 나는지 직접 체감하세요\n\n저는 이렇게 해보니까\nOpus 80% + Codex 20% (난제용)가 제 패턴이 됐어요\n\n근데 반대로 Codex 메인인 사람도\n1주일에 PR 28개 중 26개 머지했다고 하거든요\n\n정답은 없어요\n자기 프로젝트에 맞는 비율을 찾는 게 핵심이에요\n\n한 모델만 고집하는 건 확실히 손해니까\n이번 주에 반대편 모델 한 번 써보세요",
       "media": [],
-      "url": "https://www.threads.net/@nomadlabs_cozac/post/DUj4WpgEpPk",
+      "url": "https://www.threads.com/@nomadlabs_cozac/post/DUj4WpgEpPk",
       "created_at": "2026-02-10 11:28:25",
       "date": "2026-02-10",
       "crawled_at": "2026-02-18T10:58:49.818",
@@ -10369,7 +10369,7 @@
       "display_name": "벨만",
       "full_text": "좋은 정보 감사합니다! Claude Code와 에이전트 커뮤니티가 점점 커지는 게 느껴지네요. 저희도 Agent Teams 프로젝트를 통해 이 생태계에 기여하고 있는데, 이런 리소스들이 정말 큰 힘이 됩니다. 함께 멋진 커뮤니티 만들어가요! 👍 https://github.com/Yeachan-Heo/oh-my-claudecode",
       "media": [],
-      "url": "https://www.threads.net/@bellman.pub/post/DUhnAkckr51",
+      "url": "https://www.threads.com/@bellman.pub/post/DUhnAkckr51",
       "created_at": "2026-02-09 14:18:23",
       "date": "2026-02-09",
       "crawled_at": "2026-02-18T10:58:49.818",
@@ -10395,7 +10395,7 @@
       "display_name": "info__sum",
       "full_text": "웹이나 앱을 개발하다 보면 특정 시간에 맞춰 데이터를 갱신하거나, 사용자에게 알림을 보내는 등 '자동 실행' 기능이 간절할 때가 있죠. 개발자들은 이를 스케줄링(Scheduling) 또는 배치(Batch) 작업이라고 부릅니다.\n\n최근 Vercel과 Supabase 기반의 프로젝트를 작업하면서, 최대한 비용을 들이지 않고(무료!) 이 기능을 구현하기 위해 여러 방법을 시도해 봤는데요. 직접 '삽질'하며 겪은 경험을 바탕으로 Vercel Cron, GitHub Actions, 그리고 제가 정착한 cron-job.org를 비교해 볼게요\n\n---\n\n1. Vercel Cron \n\nVercel로 배포 중이라면 가장 먼저 고려하게 되는 옵션입니다. vercel.json 파일에 설정만 추가하면 되니 정말 편하죠.\n\n직접 써보니: 설정은 10초 컷입니다. 하지만 **무료 티어(Hobby Plan)**의 제약이 뼈아픕니다. 하루에 실행할 수 있는 횟수가 제한적이라, 1시간 단위나 1분 단위로 정교하게 돌리기엔 금방 한계에 부딪히더라고요.\n\n한줄평: \"Vercel 안에서 다 해결하고 싶지만, 내 지갑(무료 선호)과는 거리가 있었다.\"\n\n---\n\n2. GitHub Actions\n\n\"어차피 코드가 GitHub에 있으니 여기서 돌리면 공짜 아냐?\"라는 생각으로 시도해 본 방법입니다.\n\n직접 써보니: cron 구문을 지원해서 만능처럼 보입니다. 하지만 결정적인 단점, 바로 **실행 지연(Delay)**입니다. 00분에 맞춰 실행되게 설정해도, GitHub 서버 상황에 따라 10분, 늦으면 30분 뒤에나 실행되곤 합니다. 정시성이 중요한 기능에는 도저히 쓸 수 없겠더군요.\n\n한줄평: \"시간 약속 안 지키는 친구 같은 느낌. 배치 작업은 되지만 스케줄링은 글쎄요.\"\n\n---\n\n3. cron-job.org \"결국 정답은 외부에 있었다\" (강력 추천!) 🏆\n\n결국 제가 정착한 곳은 cron-job.org라는 외부 서비스입니다. 리눅스 서버의 크론탭을 UI로 옮겨놓은 듯한 서비스죠.\n\n직접 써보니: 이번 '삽질'의 가장 큰 수확입니다. 실행하고 싶은 API 주소(URL)만 입력하면 정해진 시간에 정확히 호출해 줍니다.\n\n장점: * 정확도: GitHub Actions와 달리 설정한 시간에 칼같이 실행됩니다.\n\n편의성: 대시보드에서 성공/실패 여부를 한눈에 볼 수 있고, 실패 시 알림도 보내줍니다.\n\n혜자스러운 무료: 무료 플랜임에도 실행 횟수가 상당히 넉넉합니다.\n\n한줄평: \"이걸 왜 이제 썼나 싶을 정도의 안정감. Vercel/Supabase 조합에는 이만한 파트너가 없습니다.\"",
       "media": [],
-      "url": "https://www.threads.net/@info__sum/post/DUj2eJmEti6",
+      "url": "https://www.threads.com/@info__sum/post/DUj2eJmEti6",
       "created_at": "2026-02-10 11:11:58",
       "date": "2026-02-10",
       "crawled_at": "2026-02-18T10:58:49.819",
@@ -10417,7 +10417,7 @@
       "display_name": "dev_soon.0_0",
       "full_text": "🍯 codex 넉넉하게 사용하고 싶을때 꿀팁\n\n20달러 ChatGPT Plus 플랜은 사용량이 부족하고,\n200달러 Pro 플랜으로 업데이트 하기에는 부담되는데...\n하실때는 30달러 Business 플랜으로 바꿔보세요!\n\ncodex 사용량이 늘어나는 것은 물론이고\nChatGPT 에서 Pro 모델도 사용가능하게 됩니다!\n\n---\n\n누락된 정보가 있어 추가로 적어두겠습니다!\n\nChatGPT Business 플랜은 특성상 최소 2명부터 이용 가능해서, 주변 친구나 가족과 함께 사용해야 합니다.\n\n중요한 정보를 빼먹어 죄송합니다 🥹",
       "media": [],
-      "url": "https://www.threads.net/@dev_soon.0_0/post/DUkSr_okoao",
+      "url": "https://www.threads.com/@dev_soon.0_0/post/DUkSr_okoao",
       "created_at": "2026-02-10 15:18:32",
       "date": "2026-02-10",
       "crawled_at": "2026-02-18T10:58:49.819",
@@ -10439,7 +10439,7 @@
       "display_name": "calmtiger_",
       "full_text": "Gemini AI 쓰다보면 점점 멍청해지고 헛소리 할 때 있지?\n\n그럴 때 내가 쓰는 방법이 있는데 \"지금까지의 작업 내용을 정리하여 마크다운 형식으로 인수인계서를 작성하고 파일로 만들어줘\" 라고 하면 작업인수인계서.md 파일을 만들어 주는데 그걸 NotebookLM에 업로드 하고 Gemini 새채팅에서 +버튼 눌러서 불러오면 돼. 새채팅으로 옮길때 마다 파일을 NotebookLM에 업데이트 하면 작업을 계속 이어서 새채팅에서 할 수 있어.\n\n---\n\n소소한팁이라 생각 했는데 다들 좋아해줘서 고마워! NotebookLM 활용 사례 몇개 더 낋여올게~",
       "media": [],
-      "url": "https://www.threads.net/@calmtiger_/post/DUjzx-ZAVmV",
+      "url": "https://www.threads.com/@calmtiger_/post/DUjzx-ZAVmV",
       "created_at": "2026-02-10 10:48:28",
       "date": "2026-02-10",
       "crawled_at": "2026-02-18T10:58:52.882",
@@ -10461,7 +10461,7 @@
       "display_name": "je0_1229",
       "full_text": "강사님들 바이브코딩 강의 공부하시려고 할 때 가장 어려운 게 바로 용어야\n\n바이브코딩 공부할 때 용어만 잘 알아도 의도한대로 제작하기가 너무 수월하단 말이지\n\n그래서 웹 개발에 많이 쓰이는 용어들을 모아서 초보자들을 위한 바이브코딩 용어집을 만들었어\n\n이 댓글에 바이브라고 남겨주면 용어집 받을 수 있는 방법 알려줄게!\n\n---\n\n많은 관심 넘 고마워 ^^\n참고로 ai 강사, 출강에 관심 많은 사람들이 연락주면 더 도움이 될 거라 이 점 참고해줘~\n\n---\n\n많은 관심 다시 한 번 너무 고마워!\n한 분 한 분 보면서 디엠드리고 있는데 디엠이 안 보내지는 경우도 있고 누락되는 경우도 생기네\n\n만약 너무 안 온다 싶으면 디엠 바로 걸어줘~~\n\n---\n\n아 하나만 더!\n팔로우도 부탁해\n\n디엠 보낼 때 팔로우가 안 되어 있으면 메시지 제한이 걸려서",
       "media": [],
-      "url": "https://www.threads.net/@je0_1229/post/DUjtqlHExZ9",
+      "url": "https://www.threads.com/@je0_1229/post/DUjtqlHExZ9",
       "created_at": "2026-02-10 09:55:02",
       "date": "2026-02-10",
       "crawled_at": "2026-02-18T10:58:52.882",
@@ -10946,7 +10946,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/652182557_17939738736160123_418503162581427839_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uOTc5eDMyOS5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QFsyDXCO1Psd9pKI4IaCW3EADhVEhnLdt-rU1N8s_f_kJzmKNGxq1R-akSU5l_0F1w&_nc_ohc=ZDx6o76sbisQ7kNvwFPY7pc&_nc_gid=sS0AQ8wZSmizbIGQDzfACw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg1Mzk5NzM5NzU4ODU5MjMxNQ%3D%3D.3-ccb7-5&oh=00_AfyCSQJc6nl4okJz0JhMd_h_f-lq6-1kUs0sWeqBzrc3ew&oe=69C040F1&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@goldxgeum/post/DV8Jja4jEa7",
+      "url": "https://www.threads.com/@goldxgeum/post/DV8Jja4jEa7",
       "created_at": "2026-03-16 18:11:53",
       "date": "2026-03-16",
       "crawled_at": "2026-03-18T17:47:46.146",
@@ -10973,7 +10973,7 @@
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/653586440_17901669756392403_4668763808900679921_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTY0OXgxMDMyLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QFLG0akBC99FwX4-1vX486AFq9xxIQGnt6pEm5v1TMbnDnWNBQ_iTKdJ6MQ1TfZNdc&_nc_ohc=IGSnVIczc10Q7kNvwEeuCMz&_nc_gid=r4QJY-oP_KeBmEqvPuvtWg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg1NDExNjgwMzUyNjc2MTY5MA%3D%3D.3-ccb7-5&oh=00_Afzen4JCApCJjfuZ_vErzhPYV5TvvYweud5pVRl3EnanSA&oe=69C04C68&_nc_sid=10d13b",
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/651861748_17901670332392403_3866642034475499917_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNzIxeDg4My5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QFLG0akBC99FwX4-1vX486AFq9xxIQGnt6pEm5v1TMbnDnWNBQ_iTKdJ6MQ1TfZNdc&_nc_ohc=8tn5fK7JIT0Q7kNvwH2QKmi&_nc_gid=r4QJY-oP_KeBmEqvPuvtWg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg1NDExOTQyNjMzNDExODk2OQ%3D%3D.3-ccb7-5&oh=00_AfxW6gxKKiEwQ08JmHFfPL4TbPWFl6w5vEc4n1y3MTGsAQ&oe=69C04273&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@wiin.woo/post/DV8lTLGE-Ef",
+      "url": "https://www.threads.com/@wiin.woo/post/DV8lTLGE-Ef",
       "created_at": "2026-03-16 22:14:20",
       "date": "2026-03-16",
       "crawled_at": "2026-03-18T17:47:46.196",
@@ -10998,7 +10998,7 @@
       "display_name": "glitter_ai_factory",
       "full_text": "오늘 가장 흥미로웠던 부분.\nClaude Code로\n캡컷까지 직접 조작 가능하다.\n\n주제 선정과 대본은 Claude Code로 만들고\nGrok으로 영상 생성\nElevenLabs로 나레이션 생성\n자막 생성 후\n이걸 하나씩 편집하는 게 아니라\n\n캡컷 프로젝트 파일을\n한 번에 만들어버리는 구조.\nAI 자동화는\n툴보다 구조 설계가 더 중요해지는 느낌.\n생각보다 AI로 연결할 수 있는 범위가 꽤 넓다.\n\n---\n\n업로드까지 Claude Code로 가능하더라고요 ^_^",
       "media": [],
-      "url": "https://www.threads.net/@glitter_ai_factory/post/DV6zkqPk1kx",
+      "url": "https://www.threads.com/@glitter_ai_factory/post/DV6zkqPk1kx",
       "created_at": "2026-03-16 05:40:34",
       "date": "2026-03-16",
       "crawled_at": "2026-03-18T17:47:46.225",
@@ -11020,7 +11020,7 @@
       "display_name": "yangcheon_ai",
       "full_text": "옆자리 동료가 Pdf 천장짜리에서 유의미한 데이터를 추출해야하는 반복작업을 하고 있었는데, 꽤나 비정형이다 테이블도 많고 pdf만 올려고 뽑아달라 하니 누락데이터가 많았다.\n\n2-3개 오픈소스 이용한 파싱 프로그렘을 최근에 하나 만들었는데,  pdf to json 추출후 프롬프팅하여 뽑았더니 완벽히 뽑힘\n\n헉!! 어떻게 한거에요…?\n\nxycut으로 활용한 OCR로 전처리 한다음에 JSON\n으로 뽑으면 돼!\n\n네..? 제이슨??",
       "media": [],
-      "url": "https://www.threads.net/@yangcheon_ai/post/DVx6_HiEXoq",
+      "url": "https://www.threads.com/@yangcheon_ai/post/DVx6_HiEXoq",
       "created_at": "2026-03-12 18:52:11",
       "date": "2026-03-12",
       "crawled_at": "2026-03-18T17:47:52.287",
@@ -11042,7 +11042,7 @@
       "display_name": "ai_younggle_man",
       "full_text": "클로드코드 및 터미널 세팅 프롬프트 \n나눔입니다 \n필요하신분 쓰세얌 !!\n@gptaku_ai  클코단 대장님의 피드백으로 윈도우 이용자 버전 추가 \n초보들의 구세쥬 스윗가이 지피타쿠형 좋았다\n\n---\n\n윈도우 이용자 버전!!",
       "media": [],
-      "url": "https://www.threads.net/@ai_younggle_man/post/DVw4dI-k2or",
+      "url": "https://www.threads.com/@ai_younggle_man/post/DVw4dI-k2or",
       "created_at": "2026-03-12 09:10:50",
       "date": "2026-03-12",
       "crawled_at": "2026-03-18T17:47:52.287",
@@ -11067,7 +11067,7 @@
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/650384086_17949761397107179_6940626315063685935_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMzY2eDE1NC5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QF4_coyChr4Uqi12Lv1dUxNQf8U151-XHylyBISCrXP-D4_GXdjLg6WVacoHTiR0TY&_nc_ohc=2OR4apuXci8Q7kNvwEMQk1p&_nc_gid=KKeQXHikoN4LIsBJ3GAxRg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg1MDQ1ODExNzQyMzYwOTczOA%3D%3D.3-ccb7-5&oh=00_AfzoreIcwvsCPormnqU0wmAeHSLeh_7yTWDec69pER0n0g&oe=69C01F88&_nc_sid=10d13b",
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/650731051_17950227540107179_3197261974489748767_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTMxOHgxMDMwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QF4_coyChr4Uqi12Lv1dUxNQf8U151-XHylyBISCrXP-D4_GXdjLg6WVacoHTiR0TY&_nc_ohc=PJ9Iy7wG6UEQ7kNvwF9D6yh&_nc_gid=KKeQXHikoN4LIsBJ3GAxRg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg1MTcyNTA5NTUzMDc2NzAyNg%3D%3D.3-ccb7-5&oh=00_AfxYjs9CW__HDmbJLd1jsERNTeIHuNOR3SA3rNEgJpnVog&oe=69C036CA&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@wooing0306/post/DVvk0HXjbeK",
+      "url": "https://www.threads.com/@wooing0306/post/DVvk0HXjbeK",
       "created_at": "2026-03-11 20:59:58",
       "date": "2026-03-11",
       "crawled_at": "2026-03-18T17:47:52.288",
@@ -11094,7 +11094,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/650997629_17917587387290897_7177514621749328313_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTA4MHg1NDAuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QH0orkEVV01jsnm9TkE8RdBC4j0k4-HGWGvfZ4pgrw-rStkFYtLS7OqLnzq30Gtl7c&_nc_ohc=rWeH3Y_gilMQ7kNvwHZ_zBt&_nc_gid=E36DVuRJ3SwTwZZmsUlZeQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg1MDY3ODMzMDA2OTIzMjEyMQ%3D%3D.3-ccb7-5&oh=00_Afyby0QvTsl4nrwT926muPFYxcT_sHw9nFNyigm7Yg78zw&oe=69C05705&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@iam_mychan/post/DVwW4oYEin5",
+      "url": "https://www.threads.com/@iam_mychan/post/DVwW4oYEin5",
       "created_at": "2026-03-12 04:17:37",
       "date": "2026-03-12",
       "crawled_at": "2026-03-18T17:47:52.288",
@@ -11212,7 +11212,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/649522146_17852377770685641_2254617024943372145_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTkyNng5NTAuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QFEF8aV9yDkV87URAm_fLHQcLJGAtFRK3K9tnQQxdSlmMREh1djNadqHAXUyg3-qgE&_nc_ohc=DoJMjU2tDGUQ7kNvwGsSwh1&_nc_gid=HBcdj3v-2htS_O3QQrGa2g&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0OTExNjIzNjkzMjgwMzc5OA%3D%3D.3-ccb7-5&oh=00_AfyMz_zTFN-au3PXfdNjsHw77vcJj_V8Z8M-MDqbdfV9Tg&oe=69C0444F&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@october.ai/post/DVqy6fOkZat",
+      "url": "https://www.threads.com/@october.ai/post/DVqy6fOkZat",
       "created_at": "2026-03-10 00:26:58",
       "date": "2026-03-10",
       "crawled_at": "2026-03-18T17:47:55.333",
@@ -11236,7 +11236,7 @@
       "display_name": "devdesign.kr",
       "full_text": "Claude Code로 문서 관리할 때 이거 안하면 망함\n\nClaude Code로 옵시디언 파일 관리하는 사람 많을 텐데,\n이거 하나 안 해두면 진짜 망할 수 있음\n\n방금 실제로 겪은 일임\n파일 20개 이름 일괄 변경하려다가 16개가 증발했음\n\n---\n\n무슨 일이 있었냐면\n파일명 앞에 날짜 붙이는 작업을 시켰는데\nAI가 변수 처리를 잘못해서 20개 파일을 전부 같은 이름으로 저장함\n\nmv로 같은 파일명에 반복 덮어쓰기\n각 폴더에 마지막 1개만 남고 나머지는 그냥 날아감\n\n---\n\n그나마 다행인 건\n날아간 파일들이 클로드 코드 세션에서 만든 것들이라\n세션 로그 파일을 뒤져서 일부는 복구했음\n\n근데 이건 운이 좋았던 거고\n세션 로그에 없는 파일은 그냥 영영 사라짐\n\n---\n\n교훈은 하나임\nAI로 옵시디언 쓰면 무조건 git으로 버전관리 해야 함\n\ngit 설정해 놓고 커밋 안 하는 사람 많은데\n그러다 꼭 사고남\n\n꿀팁은 옵시디언 작업 후 자동으로 git commit 되게 만드는 거임\n클로드 코드 hook이나 스킬에 자동 커밋 넣어두면 됨\n아니면 mv, rm 과 같은 작업은 확인 받게 설정하거나\n\n---\n\n결론은\nAI 많이 사용할수록 안전장치는 더 중요해짐\n되돌릴 수 없는 실수를 되돌릴 수 있게 만드는 게 git임\n\nAI 시대에 git은 꼭 알아두자.",
       "media": [],
-      "url": "https://www.threads.net/@devdesign.kr/post/DVs3zYOkvYY",
+      "url": "https://www.threads.com/@devdesign.kr/post/DVs3zYOkvYY",
       "created_at": "2026-03-10 19:48:10",
       "date": "2026-03-10",
       "crawled_at": "2026-03-18T17:47:55.333",
@@ -11260,7 +11260,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/649075183_17949469080111754_4116381577640763651_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTE0NHgzNTYuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QHae1S2gkJKEPE1GCkoI2G8LgYTn5fUGWWprQ-qjOxzUpGJ8ND3iXclU-Vx7WhV7x8&_nc_ohc=DLXW-V8W2wsQ7kNvwH7eofg&_nc_gid=zw-750W_3Td3pxOMeOYD_A&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0OTM0NjU2Njg4NTM0MzkzOQ%3D%3D.3-ccb7-5&oh=00_AfylsYVoJJOO1ZiRxFOQZ-fs0l0v5BNJ1lEYOaQKcgY0ZQ&oe=69C024E7&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@webdaddy.top/post/DVroE7QkgLD",
+      "url": "https://www.threads.com/@webdaddy.top/post/DVroE7QkgLD",
       "created_at": "2026-03-10 08:11:31",
       "date": "2026-03-10",
       "crawled_at": "2026-03-18T17:47:55.333",
@@ -11286,7 +11286,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/650978246_955718106885116_4238556615165567220_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDQzMi5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QFwvZgf_QIoBKfvfmA4l1GbeXIwq40e12P4rLlN74TrpP_afEGrHbt9jkPDGHn6AlQ&_nc_ohc=o2XoVuBu1d0Q7kNvwE4h_OP&_nc_gid=xkNeWuyijaGF54uB1Doj4Q&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg1MDkyMDA0Mjg1MDQ5NjgyMw%3D%3D.3-ccb7-5&oh=00_AfySAuHjnBPaUVOYorj1kDHTpMrVnB1ACyK-ZEkTPV5VCQ&oe=69C02DA3&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@unclejobs.ai/post/DVxN2A8iTE3",
+      "url": "https://www.threads.com/@unclejobs.ai/post/DVxN2A8iTE3",
       "created_at": "2026-03-12 12:21:18",
       "date": "2026-03-12",
       "crawled_at": "2026-03-18T17:47:55.333",
@@ -11310,7 +11310,7 @@
       "display_name": "_ju_tiger_lee_",
       "full_text": "\"AI를 쓰는 사람이라면 무조건 팔로우 해야하는 사람들입니다\"\n\n@sihyun_adventure - 직접 AI를 쓰고 자세하게 알려주십니다.\n\n@programmingzombie - AI로 앱을 만드시고 수익화에 대한 얘기와 꿀팁들을 공유해주십니다.\n\n@specal1849 - 논문을 기반으로 쉽게 설명해주십니다.\n\n@choi.openai - 다양한 AI 소식들을 누구보다 빠르고 쉽게 공유해주십니다.\n\n@bellman.pub - oh-my-claudecode를 만드신분 더 높이 올라가셔야합니다.\n\n@bear_dba - DB 지식은 여기서 배우세요 저도 많이 배우고있습니다.\n\n@qjc.ai - claude code를 이렇게 자세하게 설명해주시는 분은 없습니다.\n\n@aicoffeechat - 여러 AI 지식과 소식을 공유해주십니다.",
       "media": [],
-      "url": "https://www.threads.net/@_ju_tiger_lee_/post/DVfpUJ3E4Q1",
+      "url": "https://www.threads.com/@_ju_tiger_lee_/post/DVfpUJ3E4Q1",
       "created_at": "2026-03-05 16:31:27",
       "date": "2026-03-05",
       "crawled_at": "2026-03-18T17:47:58.365",
@@ -11335,7 +11335,7 @@
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/587776094_1485230219243733_9092226704272661987_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDY0MC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QHvclI8iEWUu2sq0qI4mkWFwg1Ch-Im6keAPb6P6EwTx7i3Kjty5yjZNsmO7V79tKk&_nc_ohc=pWbizkkKL-YQ7kNvwHjqW-U&_nc_gid=1C3-yat8VtdVh9VchfAPTg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc3NzIyMTI4MTcxMjg4Nzg0MQ%3D%3D.3-ccb7-5&oh=00_Afzi7f57K-nRioVmb1jnwzCPqkeYurLlKjv5p9ccWuj_5Q&oe=69C03ED2&_nc_sid=10d13b",
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/586648454_17845319460618249_5898928224659593505_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMjEzM3gxNDQwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QHvclI8iEWUu2sq0qI4mkWFwg1Ch-Im6keAPb6P6EwTx7i3Kjty5yjZNsmO7V79tKk&_nc_ohc=3wA8qrBhQRMQ7kNvwEDpaaG&_nc_gid=1C3-yat8VtdVh9VchfAPTg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc3NzIyMTY0MjYwNjk1MTU2NA%3D%3D.3-ccb7-5&oh=00_AfwlejElnmi87ynMDq3y81Flqb_0eM6V_vLXOiuR8QbwYg&oe=69C04F06&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@sudo.gunn.kr/post/DRrYr4-itgh",
+      "url": "https://www.threads.com/@sudo.gunn.kr/post/DRrYr4-itgh",
       "created_at": "2025-11-30 19:52:07",
       "date": "2025-11-30",
       "crawled_at": "2026-03-18T17:47:58.369",
@@ -11360,7 +11360,7 @@
       "display_name": "baekho.chris",
       "full_text": "“MCP는 죽었다” — 스펙 한 줄만 봤어도 나올 수 없는 얘기다.\n구글 Workspace CLI 뜨자마자 “MCP 끝났다”는 글이 쏟아졌다.\n근데 CLI 안에 이미 MCP가 내장되어 있었다.\n\ngws mcp -s gmail,drive,calendar\n\nCLI가 MCP를 대체한 게 아니라, CLI가 MCP를 품은 구조다.\n\n“자동차 vs 도로 중 뭐가 이겼냐”고 묻는 것과 같다.\n“이메일 vs 슬랙 중 뭐가 이겼냐”도 마찬가지다. 쓰임새가 다른 도구다.\n\n---\n\nCLI와 MCP는 애초에 다른 문제를 푼다.\ngit, docker, gh CLI처럼 실행 중심 작업은 CLI가 빠르고 효율적이다.\n반면 Context7, Notion, Slack처럼\nAI가 실시간으로 데이터를 가져와야 하는 작업은 MCP로만 가능하다.\nClaude가 최신 라이브러리 문서를 추론 시점에 주입받는 것,\nCLI 아키텍처로는 구조적으로 불가능하다.\n실행 중심 → CLI\n컨텍스트 주입 → MCP\n둘 중 하나가 아니라, 상황에 맞게 쓰는 판단력이 핵심이다.​​​​​​​​​​​​​​​​",
       "media": [],
-      "url": "https://www.threads.net/@baekho.chris/post/DVlgUX5k1Yy",
+      "url": "https://www.threads.com/@baekho.chris/post/DVlgUX5k1Yy",
       "created_at": "2026-03-07 23:08:16",
       "date": "2026-03-07",
       "crawled_at": "2026-03-18T17:47:58.370",
@@ -11384,7 +11384,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/642962009_17946027729118163_8625422680541323069_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTY4OHgxMjg4LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2QEPPNbQo6LqnzjHhg1AQcw-bRZeaNMRKYjfl4CX36nfxKRtnqpqn-IksICTXRUZYMA&_nc_ohc=pXD7H-EbKdMQ7kNvwHbUIN2&_nc_gid=7Df7zmx1ZyjoGMc6Z-Tgzg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0ODk4NTY4NzEyMjYyMDQ1MQ%3D%3D.3-ccb7-5&oh=00_AfwXjw9lWMed6V4YXUz4cFuJl_vNI_kChYTa99vvbLeeVw&oe=69C038BD&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@parktaejun/post/DVqWBh1AUSq",
+      "url": "https://www.threads.com/@parktaejun/post/DVqWBh1AUSq",
       "created_at": "2026-03-09 20:14:31",
       "date": "2026-03-09",
       "crawled_at": "2026-03-18T17:47:58.370",
@@ -11410,7 +11410,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/642947490_17947405746112210_8513362698442414708_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTQzOXg5MTQuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QFc1k-nIR0Or0QqTsIGO-o2Z0Vk3BXn_UpJ22aM4PcbHD7wIsIHMX138JwrDKMigR8&_nc_ohc=wt7xvjsNBlIQ7kNvwG1-nIJ&_nc_gid=NA0Wwnpne5L5vC7NbX2OQw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0ODY3MjU1Njg5NTI1NjUwMw%3D%3D.3-ccb7-5&oh=00_AfyrBMH7xEMYodtuQbjvKxmQI7kySSeZDW1ozkCcNA_e7w&oe=69C04CDD&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@aipreneur_j/post/DVpO0yiiT-3",
+      "url": "https://www.threads.com/@aipreneur_j/post/DVpO0yiiT-3",
       "created_at": "2026-03-09 09:52:32",
       "date": "2026-03-09",
       "crawled_at": "2026-03-18T17:48:01.454",
@@ -11436,7 +11436,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/648314708_17859991515613459_1865558841441859038_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMzAxNngxMzQwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QF_kLFk-aW0QkOj1AngFEoyrmi0F9GloLT7unB9JDy6Ln7j3oiH40svZICH3Zpf5TI&_nc_ohc=0Yzytni-VscQ7kNvwH3v6Y4&_nc_gid=IRdW4QX0x3HaD-htlswUKA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0ODE3NTc2NDc3Mjk1MDY5Mg%3D%3D.3-ccb7-5&oh=00_Afy04qaiL0k4onbwWd1mJnSav9g4DhyKKberPgbf5nQycw&oe=69C0320C&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@roac.h7839/post/DVnd3g0jxKk",
+      "url": "https://www.threads.com/@roac.h7839/post/DVnd3g0jxKk",
       "created_at": "2026-03-08 17:25:20",
       "date": "2026-03-08",
       "crawled_at": "2026-03-18T17:48:01.454",
@@ -11460,7 +11460,7 @@
       "display_name": "ddg.kang",
       "full_text": "드디어 공개합니다.\n\n제 5,000시간이 녹아 있는\nClaude Code 실전 셋업입니다.\n\n결제 필요 없고\nDM도 필요 없고\n그냥 클코에게 이거 한 줄이면 됩니다.\n\n\"클로드코드야 npx dgk-claude 패키지 읽어보고 내 셋업에 맞는 간과 쓸개 다빼와\"\n\n넣어둔 것만 해도:\n\n- 리서치 먼저 하고 구현하게 만드는 모드\n- 무료 AI 코드리뷰\n- 현재 세션 파일만 안전하게 commit + push\n- 위험 명령 차단\n- 날짜 자동 주입\n- 세션 복구\n- noisy command 토큰 절약\n\n클로드코드 오래 쓸수록\n이런 운영 셋업 차이가 진짜 크게 납니다.\n\n---\n\n뭘 쓰면 되냐부터 제일 쉽게 정리하면:\n\n/re (research & execute)\n= 리서치 + 구현 솔로모드 (엄청나지만 토큰 상대적 덜씀)\n\n/ret (reserach & execute as a team)\n= 큰 범위의 작업할 때 쓰는 팀 모드\n\n/rr (review & review with GLM 4.7 flash)\n= 무료 AI 코드리뷰 (클코 토큰 안쓰고 무료로 리뷰)\n\n/rrr (review & review & review with GLM 5)\n= 더 깊게 보는 유료 리뷰\n\n/cp\n= 지금 세션에서 건드린 파일만 안전하게 commit + push\n\n실전에서는\n대부분 /re, /rr, /cp\n이 3개만 알아도 바로 체감 옵니다\n\n---\n\n/re가 핵심입니다.\n\n그냥 \"바로 코드 짜\"가 아니라\n\n1. 공식 문서 확인\n2. 웹 리서치\n3. 코드베이스 분석\n4. 옵션 비교\n5. 구현\n6. 검증\n7. 커밋\n\n이 순서로 밀어붙이게 만든 모드입니다.\n\n즉, 생각 없이 바로 구현하다가\n나중에 갈아엎는 일을 줄이는 용도입니다.\n솔플할 때는 그냥 /re 쓰면 됩니다.\n\n---\n\n/ret는 /re의 큰 버전입니다.\n\n혼자 하나씩 보는 게 아니라\n여러 에이전트를 병렬로 굴려서\n\n- 리서치 나눠서 보고\n- 구현도 나눠서 하고\n- 마지막에 합치는 방식입니다\n\n큰 기능\n복잡한 리팩터링\n의존성 많은 작업은\n/re보다 /ret가 훨씬 편합니다.\n\n한 줄 요약:\n작업 작으면 /re\n작업 크면 /ret\n\n---\n\n/rr도 꽤 셉니다.\n\n커밋 전에 /rr 치면\n무료로 코드리뷰 한 번 더 받는 구조입니다.\n\n그냥 \"좋아요\" 수준 리뷰가 아니라\n실제 변경사항 기준으로 보고,\nClaude가 그 리뷰를 다시 검증해서\n오탐을 좀 걸러낸 뒤 쓰게 해둔 흐름입니다.\n\n즉\n\"일단 내가 짠 뒤\n한 번 더 두들겨 맞아보는 장치\"\n라고 보면 됩니다.\n\n---\n\n안에 들어간 기술도 꽤 많습니다.\n\n- Context7\n  공식 문서 확인\n\n- Jina\n  웹페이지 본문 읽기\n  WebFetch 대체\n\n- Sequential Thinking\n  구조적으로 생각하게 강제\n\n- glm-review\n /rr, /rrr 코드리뷰\n\n- rtk\n  git log, ls, tsc, eslint 같은\n  고노이즈 명령을 더 짧고 싸게 돌리게 함\n\n겉으로는 스킬 몇 개 같아 보여도\n실제로는 \"실전 운영용 세팅\"에 가깝습니다.\n\n---\n\nhooks도 실전에서 진짜 많이 체감됩니다.\n\n예를 들면:\n\n- 위험 명령 차단\n- Bash 사용 로그 기록\n- WebFetch 차단\n- 현재 날짜 자동 주입\n- TS 파일 수정 후 타입체크 권장\n- Telegram 알림\n- HANDOFF.md / STATE.md 자동 로드\n\n큰 프로젝트 하다 보면\n클로드가 갑자기 맥락 놓치거나\n괜히 위험한 명령 치거나\n쓸데없이 토큰 많이 먹는 순간이 오는데\n\n그걸 줄이려고 넣은 것들입니다\n\n---\n\n기존 셋업 있는 사람도 생각해뒀습니다.\n\n- 기존 ~/.claude/settings.json 유지\n- dgk-claude hooks만 병합\n- 이미 있는 스킬/훅은 최신 버전일 때만 업데이트\n- 바꾸기 전에 백업\n\n즉\n그냥 덮어쓰는 방식이 아니라\n기존 사용자도 비교적 안전하게 붙일 수 있게 만들었습니다\n\n---\n\n환경은 이렇게 보면 됩니다.\n\n- macOS\n- Linux\n- WSL\n- Windows\n\n같은 방식으로 설치되게 바꿨습니다.\n\n다만 Windows는\ndgk-claude 문제가 아니라\nClaude Code 자체가 Git Bash 전제를 좀 갖고 있어서\n그건 공식 런타임 제약 쪽에 가깝습니다.\n\n그래도 설치기 자체는\n최대한 덜 부서지게 손봤습니다.\n\n---\n\n진짜 제일 좋은 사용법은 이겁니다.\n\n\"이 기능 붙여줘\"\n/re로 시작\n\n\"커밋 전 한 번 더 봐줘\"\n/rr\n\n\"지금 세션에서 건드린 파일만 올려\"\n/cp\n\n여기까지만 써도\n클로드코드 체감이 꽤 달라질 겁니다.\n\"클로드코드야 npx dgk-claude 패키지 읽어보고 내 셋업에 맞는 간과 쓸개 다빼와\"\n\n---\n\n코드/README:\nhttps://github.com/dgk-dev/dgk-claude",
       "media": [],
-      "url": "https://www.threads.net/@ddg.kang/post/DVq0iq0mq1R",
+      "url": "https://www.threads.com/@ddg.kang/post/DVq0iq0mq1R",
       "created_at": "2026-03-10 00:41:11",
       "date": "2026-03-10",
       "crawled_at": "2026-03-18T17:48:01.454",
@@ -11482,7 +11482,7 @@
       "display_name": "roac.h7839",
       "full_text": "제목: Gemini 구독 중인데 이거 모르셨음 손해입니다.\n\nGemini 쪽 진영을 둘러보는데 구글에서 Gemini CLI용 Conductor 익스텐션 내놓고 주기적으로 업데이트 해주더라고요. 이거 쓰면 바이브 코딩할 때 Gemini 가 멍청해졌던 문제들이 꽤나 많이 해결됩니다!\n\nhttps://github.com/gemini-cli-extensions/conductor\n\n어제 밤새 써봤는데 후기: 단언컨데 이전보다 3배는 효율적입니다\n\n---\n\n간단 사용법:\n\n1. gemini extensions install https://github.com/gemini-cli-extensions/conductor 로 설치\n2. /conductor:setup 치면 프로젝트 기본 설정 (프로덕트 목적, 테크스택, 워크플로우) 한 번만 입력하면 됨\n3. /conductor:newTrack으로 새 기능 개발할 때 Spec + Plan 먼저 생성\n→ AI가 무작정 코드 치기 전에 계획을 세우게 만드는게 핵심\n4. /conductor:implement 하면 AI가 plan.md 따라가면서 체크리스트 완료함\n\n왜 좋은가:\n\n기존에는 컨텍스트 조금만 차면 \"아까 뭐하자 했지?\" 계속 반복했는데, 이제는 Markdown 파일로 계속 남아있어서 내일 이어서 해도 AI가 다 기억합니다. 구글에서 제공해주는 ralph 입니다.\n\n특히 기존 프로젝트에서 팀원들과 함께 작업할 때 정말 유용합니다.\n\n---\n\n더 중요한 점은 workflow 를 생성할 수 있다는 점 입니다.\n\n워크플로우 구성할 때 커스텀 스킬을 end-of-task 조건으로 넣어두면 완성도가 확 올라갑니다.\n\n저는 아래와 같이 설정했어요.\n\nworkflow:\n- 80% code test coverage\n- 매 태스크마다 commit\n- Git Notes로 요약\n- ✅ admin-testing-skill 완료 (필수)\n- ✅ e2e-testing-skill 완료 (필수)\n\n이렇게 해두면 AI가 작업 마무리할 때 자동으로 어드민 테스트랑 E2E 테스트 스킬을 실행해서 검증하게됩니다.\n\n참고로 이건 Superpowers skill이랑 비슷한데, 팀 워크플로우가 녹아들어있는 extension 입니다.\n\nSuperpowers는 개인이 쓰기 좋은 반면, Conductor는 팀 전체가 같은 컨텍스트를 공유할 수 있게 설계된것이죠\n\n---\n\n그리고 최근 업데이트로 Automated Review 기능도 추가됐습니다!\n\n/conductor:review 하면 AI가 작업한 코드를 자동으로 검증해줌\n\n체크하는 항목들:\n\n• ✅ 코드 리뷰 - race condition, null pointer risk, logic error 같은 복잡한 문제도 잡아냄\n• ✅ Plan compliance - plan.md랑 spec.md에 맞게 다 구현했는지 확인\n• ✅ 가이드라인 준수 - 프로젝트 스타일 가이드 지켰는지 체크\n• ✅ 테스트 검증 - 유닛/통합 테스트 자동 실행해서 커버리지 리포트 생성\n• ✅ 기본 보안 검토 - 하드코딩된 API key, PII leak, injection attack 가능성 스캔\n\n결과물:\n심각도별(High/Medium/Low)로 분류해서 어디를 고쳐야 하는지 알려줍니다.\n\n이거 덕분에 \"AI가 대신 코딩해주는\" 게 아니라 \"AI가 일하고 개발자가 검증하는\" 구조가 완성됩니다.",
       "media": [],
-      "url": "https://www.threads.net/@roac.h7839/post/DVgF6rqD8r8",
+      "url": "https://www.threads.com/@roac.h7839/post/DVgF6rqD8r8",
       "created_at": "2026-03-05 20:41:22",
       "date": "2026-03-05",
       "crawled_at": "2026-03-18T17:48:01.454",
@@ -11504,7 +11504,7 @@
       "display_name": "qjc.ai",
       "full_text": "Claude Code로 만든 랜딩페이지, 왜 다 똑같이 생겼을까요?\n\n보라색 그라데이션, Inter 폰트, 둥근 모서리, 아이콘 3개짜리 그리드.\n이걸 \"AI 슬롭\"이라고 부른다는 거 알고 계셨나요?\n\n스킬 하나 설치하면 완전히 달라집니다.\n\n---\n\n1/ 왜 AI가 만든 디자인은 다 비슷할까요?\n\n\"AI가 디자인 감각이 없어서\"라고 생각하시죠?\n\n아닙니다.\n지시가 없으면 \"안전한 평균\"을 선택하는 거예요.\n\nAnthropic 공식 블로그에서도 인정했어요.\n\"별도 지시 없으면 고확률 중심에서 샘플링해요.\"\n\n공식 명칭까지 있습니다.\n분포적 수렴(Distributional Convergence).\n\n---\n\n2/ 해결책: UI UX Pro Max Skill\n\nGitHub Stars 38,100개 넘은 오픈소스 스킬이에요.\nMIT 라이선스. 무료.\n\nClaude Code뿐 아니라 13개 AI 코딩 도구 전부 지원해요.\nCursor, Windsurf, GitHub Copilot, Kiro, Codex, Gemini CLI까지.\n\n설치 한 줄이면 끝입니다.\n\n---\n\n3/ 뭐가 들어있냐면요\n\nUI 스타일 67종.\nGlassmorphism, Brutalism, Neumorphism, Bento Grid 등.\n\n색상 팔레트 96종.\nSaaS, 헬스케어, 핀테크, 이커머스 산업별 최적화.\n\n폰트 페어링 57종.\nGoogle Fonts 연동, 무드 기반 추천.\n\n\"보라색 그라데이션밖에 모르는 AI\"는 옛말이에요.\n\n---\n\n4/ v2.0 핵심 기능: 디자인 시스템 자동 생성\n\n\"뷰티 스파 랜딩페이지 만들어줘.\"\n\n이 한 마디면 5개 도메인을 병렬 검색해요.\n제품 유형, 스타일, 색상, 랜딩 패턴, 타이포그래피.\n\n100개 산업별 추론 규칙이 자동 적용됩니다.\n안티패턴 필터링 + Pre-delivery 체크리스트까지.\n\n\"어떤 Dribbble 샷 참고했냐\"고 물어본 디자이너도 있었대요.\n실제 사용자 후기입니다.\n\n---\n\n5/ 설치 방법\n\nnpm install -g uipro-cli\ncd /path/to/your/project\nuipro init --ai claude\n\n3줄이면 끝.\n설치 후 자연어로 대화하면 자동 활성화돼요.\n\nCursor 쓰시면?\nuipro init --ai cursor\n\n전체 도구 한 번에?\nuipro init --ai all\n\n---\n\n6/ 경쟁 도구 비교\n\nAnthropic 공식 frontend-design 스킬도 있어요.\n타이포그래피/색상/애니메이션 4차원 접근.\n근데 스타일 종류가 훨씬 적습니다.\n\ntweakcc는 Stars 931개.\n터미널 외관만 커스터마이징하는 도구예요.\n코드 디자인과는 다릅니다.\n\nUI UX Pro Max는 Stars 38,100개.\n압도적 차이.\n\n---\n\n7/ 지원 스택\n\nReact, Next.js, Vue, Nuxt.js, Svelte.\nSwiftUI, Flutter, React Native까지.\nHTML+Tailwind도 됩니다.\n\nshadcn/ui, Nuxt UI 같은 컴포넌트 라이브러리도 지원해요.\n\n디자인 시스템을 MASTER.md로 저장하면 페이지별 오버라이드도 가능합니다.\n\n---\n\n8/ 정리\n\n\"AI가 만든 거 티나요.\"\n\n이 말 듣기 싫으시면 스킬 하나 설치하세요.\n67종 스타일, 96종 팔레트, 57종 폰트 페어링.\n\nAI 슬롭에서 벗어나는 데 3줄이면 충분합니다.\n\nSnyk \"Top 8 Claude Skills for UI/UX Engineers\" 1위.\n검증된 도구예요.\n\n혹시 AI 디자인 품질 때문에 고민해보신 적 있으세요?\n\n---\n\n출처:\nGitHub nextlevelbuilder/ui-ux-pro-max-skill (Stars 38,100+)\nAnthropic 공식 블로그 \"Improving Frontend Design Through Skills\"\n\nSnyk \"Top 8 Claude Skills for UI/UX Engineers\"\ndesigncourse.com 30일 UI 디자인 챌린지 (600+ 참가자)",
       "media": [],
-      "url": "https://www.threads.net/@qjc.ai/post/DVnG0Awkz02",
+      "url": "https://www.threads.com/@qjc.ai/post/DVnG0Awkz02",
       "created_at": "2026-03-08 14:03:56",
       "date": "2026-03-08",
       "crawled_at": "2026-03-18T17:48:04.479",
@@ -11525,7 +11525,7 @@
       "display_name": "Genie | 풀스택 개발자 지니",
       "full_text": "1.\nClaude Code 쓰면서 토큰이 너무 빠르게 소진되는 게 계속 신경 쓰였는데, rtk라는 툴을 발견하고 나서 체감이 확실히 달라졌다.\nrtk는 \"Rust Token Killer\"의 약자로, Claude Code가 실행하는 CLI 명령어 출력을 LLM에 전달하기 전에 필터링해주는 프록시 도구다.\n\n원리가 간단하다.\nClaude Code가 git status 같은 명령어를 실행하면 보통 50줄짜리 raw output이 그대로 context에 들어간다. rtk는 이걸 중간에 가로채서 필요한 정보만 압축해서 넘긴다.\n결과적으로 같은 명령어를 실행해도 context에 들어가는 토큰이 60~90% 줄어든다.\n실제 수치가 이렇다.",
       "media": [],
-      "url": "https://www.threads.net/@ai_developer_genie/post/DVnlycHkyOb",
+      "url": "https://www.threads.com/@ai_developer_genie/post/DVnlycHkyOb",
       "created_at": "2026-03-08 18:34:33",
       "date": "2026-03-08",
       "crawled_at": "2026-03-18T17:48:04.479",
@@ -11551,7 +11551,7 @@
       "display_name": "ejang",
       "full_text": "로컬호스트에 URL 주소 연결하기\n\nGive your localhost a\nlocal or public URL\nTurn localhost:3000 into https://app.test with path routing, HTTPS, HMR support, or get a public url without deployment.\n\nhttps://slim.sh/",
       "media": [],
-      "url": "https://www.threads.net/@ejang/post/DVlnbqZExPd",
+      "url": "https://www.threads.com/@ejang/post/DVlnbqZExPd",
       "created_at": "2026-03-08 00:10:26",
       "date": "2026-03-08",
       "crawled_at": "2026-03-18T17:48:04.479",
@@ -11573,7 +11573,7 @@
       "display_name": "calmtiger_",
       "full_text": "지난 1주일 동안 Claude Cowork기능을 활용한 카드뉴스 제작 자동화 스킬 만들기에 열중 했습니다.\n\nSkill은 10분만에 뚝딱 만들어 주었지만 정말 사용할 수 있는 수준까지 발전 시키는데 가장 많은 시간을 투자 했고,\n\n완성한 Skill을 바탕으로 Cowork에서 카드뉴스 자동화를 AI가 스스로 만들 수 있도록 가이드 문서를 만들었습니다.\n\n일반인, 직장인, 대학생, 비개발자, 소상공인, 1인창업자 누구라도 이 가이드 문서를 AI에게 전달하고 인터뷰에 대답만 하면 내 채널이나 브랜드에 맞는 카드뉴스 자동화 Skill이 완성 됩니다.\n\nSkill을 만들고나면 클로드에서 그냥 \"이 주제로 카드뉴스 만들어줘\"라고만 하면 카드뉴스가 완성됩니다.\n\n혹시 필요하신분이 계시다면 배포 링크를 만들어 보겠습니다. 댓글 남겨주세요~\n\n---\n\n링크 만들어서 순차적으로 보내드리겠습니다.\n\n좋아요+팔로우 해주신분들 우선으로 DM으로 보내드리겠습니다~\n\n---\n\n⚠️ 생각보다 요청이 많아서 오늘 자정까지 들어온 요청만 링크 보내 드리겠습니다!\n\n다운로드는 내일(9일) 자정까지 열어 두겠습니다!\n\n---\n\n26.03.09(월) 오전 10시 - 밤사이 팔로우 해주신분들이 많아서 팔로우하고 댓글로 요청주신분들은 모두 보내 드렸습니다. 지금시간 이후로는 팔로우 하고 DM보내주시는 분들에게 링크 드리겠습니다.🙇‍♂️ 감사합니다!\n\n---\n\n26.03.09(월) 오후 3시 - 팔로우 해주신분들께 모두 DM드렸으나 혹시 못 받으신분들이 계실까봐 프로필에 링크 걸어 두겠습니다! (자정까지)",
       "media": [],
-      "url": "https://www.threads.net/@calmtiger_/post/DVnTtVQgRWo",
+      "url": "https://www.threads.com/@calmtiger_/post/DVnTtVQgRWo",
       "created_at": "2026-03-08 15:56:34",
       "date": "2026-03-08",
       "crawled_at": "2026-03-18T17:48:04.479",
@@ -11595,7 +11595,7 @@
       "display_name": "lazylittleyoyo",
       "full_text": "defuddle이라는 스킬이 있다.\n\n웹페이지를 md로 추출해서\nclaude가 읽을 수 있게 한다.\n빠르고 정확하다!!!\n\n사실 스킬의 존재를 모르고 있었는데\n클로드코드한테 참고하라고 웹링크 줬더니만\n자기가 defuddle 스킬을 다운받아서 쓰고 있다.\n\nhttps://github.com/kepano/obsidian-skills/tree/main/skills/defuddle",
       "media": [],
-      "url": "https://www.threads.net/@lazylittleyoyo/post/DVkPmm0kSWd",
+      "url": "https://www.threads.com/@lazylittleyoyo/post/DVkPmm0kSWd",
       "created_at": "2026-03-07 11:22:58",
       "date": "2026-03-07",
       "crawled_at": "2026-03-18T17:48:07.496",
@@ -11619,7 +11619,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/642596137_17884163097462362_4193823621254810741_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMjE2MHgxNDAyLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5leHBlcmltZW50YWwifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QEmfEOV7__Jzx5ihe4jMBvh0c_I7XZjLjQ4TqQJpQQSNBABo3gXAa2MbJv97mRGbVA&_nc_ohc=u7iaoa4dulkQ7kNvwGHDDfd&_nc_gid=8BxUCgxyqoGHcGNfBumk-w&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0ODAxNzE3MTc1NTIxNzQ2Nw%3D%3D.3-ccb7-5&oh=00_AfxMuXXj-mApFTqIgFdSmFAqex80TVNpWhtG6dM-VjdXjg&oe=69C02F76&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@lucas_flatwhite/post/DVm51eIEZ23",
+      "url": "https://www.threads.com/@lucas_flatwhite/post/DVm51eIEZ23",
       "created_at": "2026-03-08 12:10:29",
       "date": "2026-03-08",
       "crawled_at": "2026-03-18T17:48:07.496",
@@ -11643,7 +11643,7 @@
       "display_name": "joshproductletter",
       "full_text": "클로드 코드의 Scheduled Task는\n클로드 코드 2.0이 맞다고 생각한다.\n\n예약 태스크 기능은 자동화 도구로써 너무 강력하다.\n\n1. 카드 뉴스 업로드가 매일 1회 혹은 100회라도 '아무 지시 없이' 자동으로 업데이트 되게 할 수 있다. (초기 세팅을 잘 해놓는다는 전제 하에)\n2. 매일 프롬프트가 본인의 실수를 파악하고 자가개선을 하게 만들 수 있다. 스스로 개선하게 재귀를 할 수 있는 것이다.\n3. SaaS를 만들 경우 Docs 메뉴나 기타 업데이트가 사람의 손을 거치지 않고 알아서 업데이트 되게 할 수 있다.\n4. 내가 만드는 SaaS인 Supanova에서도 하루 1회 자동으로 템플릿, Asset, 이미지 생성을 100% 알아서 생성하고 업로드되게 할 것이다.\n5. 매일 뉴스레터를 자동 수집하고 만들어 가입자들에게 소식을 보내 리텐션을 끌어올릴 수 있다.\n\n이상 아이디어 천지다.\n괜히 Nate Herk가 뜬소리 하는 것이 아닌 것 같다.\n\n---\n\nNate Herk의 리뷰 영상\nhttps://www.youtube.com/watch?v=BlNJFa3Btm8&t=7s",
       "media": [],
-      "url": "https://www.threads.net/@joshproductletter/post/DVlU9k8if_O",
+      "url": "https://www.threads.com/@joshproductletter/post/DVlU9k8if_O",
       "created_at": "2026-03-07 21:29:02",
       "date": "2026-03-07",
       "crawled_at": "2026-03-18T17:48:07.496",
@@ -11667,7 +11667,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/643155132_17916976281290897_1647899304789091810_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTA4MHg1NDAuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QF_lU_AmWYceOrQb9nrwq0za8dIJZEayH175zJHsn7RcX2U6l_pfR3-895WGg8DJ5E&_nc_ohc=NPmG_DrhpMcQ7kNvwEncUUH&_nc_gid=vLU3RWkIS05SN224_gyEiQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0Nzg2Mzc3MzE3MzAyMDUzNA%3D%3D.3-ccb7-5&oh=00_AfxdbFHFivGiTplcLD0DXR1lYkYnnS3hCGx_z6_bPp_ydw&oe=69C04A75&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@iam_mychan/post/DVmW7cAEnd2",
+      "url": "https://www.threads.com/@iam_mychan/post/DVmW7cAEnd2",
       "created_at": "2026-03-08 07:05:36",
       "date": "2026-03-08",
       "crawled_at": "2026-03-18T17:48:07.496",
@@ -11691,7 +11691,7 @@
       "display_name": "openclaw_ko",
       "full_text": "Codex CLI 실행 후 \n\n\" playwright MCP 스킬 설치해줘 \" 라고 하던가\n\nnpx -y executeautomation/playwright-mcp-server\n\n이걸로 직접 설치하시면, 오픈클루에서 누렸던 기능을 경험하실 수 있습니다.\n\nPlayWright 는 브라우저를 대신 움직여주는 자동 직원이라고 생각하시면 됩니다.\n\n예시) \n네이버 접속해서 강남맛집 검색하고\n첫번째 결과 페이지 스크린샷 찍어줘\n\n쿠팡에 OOOO 제품 가격이 300,000원 밑으로 떨어지면 텔레그램으로 얘기해줘\n\n경쟁사 홈페이지에 가서 새로운 이벤트가 있으면 얘기해줘\n\n라던지 개인 컴퓨터의 브라우저 제어/로그인 등을 활용할 수 있는 유기적인 프로그램 제작이 가능함",
       "media": [],
-      "url": "https://www.threads.net/@openclaw_ko/post/DVlzudPkWOw",
+      "url": "https://www.threads.com/@openclaw_ko/post/DVlzudPkWOw",
       "created_at": "2026-03-08 01:57:52",
       "date": "2026-03-08",
       "crawled_at": "2026-03-18T17:48:10.531",
@@ -11713,7 +11713,7 @@
       "display_name": "gpt_minje",
       "full_text": "[3월 1일 업데이트] 무료 자료 공유 누적 리스트\n\n1. 비개발자를 위한 Claude Code 사용법 A to Z\nhttps://bevel-boron-05c.notion.site/Claude-Code-A-to-Z-30844a48e2b180f4b178d852db998a80?source=copy_link\n2. OpenClaw 가이드북\nhttps://bevel-boron-05c.notion.site/OpenClaw-30944a48e2b180e28faef8c3ab4e0134?source=copy_link\n3. Claude in Excel 완벽 가이드\nhttps://bevel-boron-05c.notion.site/Claude-in-Excel-31344a48e2b180ca9a8cccf706bd1308\n\n팔로우와 좋아요 해주실 거쥬~?\n\n---\n\n4. Claude in Powerpoint 완벽 가이드\nhttps://bevel-boron-05c.notion.site/Claude-in-PowerPoint-31144a48e2b18096ade6eafde543c5bc?source=copy_link\n5. AI 시대의 저작권 — 2026 가이드북\nhttps://bevel-boron-05c.notion.site/AI-2026-30b44a48e2b18097be1dd553c9a9f710?source=copy_link\n6. AI가 바꾸는 여행의 미래 - 관광·레저 산업 2026 트렌드 리포트\nhttps://bevel-boron-05c.notion.site/AI-2026-31544a48e2b1806db434f4120f73df09?source=copy_link",
       "media": [],
-      "url": "https://www.threads.net/@gpt_minje/post/DVT1I-lEpdz",
+      "url": "https://www.threads.com/@gpt_minje/post/DVT1I-lEpdz",
       "created_at": "2026-03-01 02:23:53",
       "date": "2026-03-01",
       "crawled_at": "2026-03-18T17:48:10.531",
@@ -11737,7 +11737,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/649212550_17920129164268077_2160898279426927836_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTA4MHgxMzUwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QFc1-ztg6tie-o3yWhwcbcXmnH6Ss2W1IgCrRtLvY-JtFAHwv5lgXpo7cpEY6dpsNs&_nc_ohc=tLLXbwv14n0Q7kNvwE3jxkX&_nc_gid=MtF9KVA1W8PY2e1U6k90vA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0Nzk4MjMyMjY5MjA1NjczMg%3D%3D.3-ccb7-5&oh=00_AfwWHhVRFP3Dfd3g8yNVO2UmpQW-7USJRgX9iIm8iXu9yg&oe=69C04D54&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@freainer/post/DVmx48kiqm0",
+      "url": "https://www.threads.com/@freainer/post/DVmx48kiqm0",
       "created_at": "2026-03-08 11:01:03",
       "date": "2026-03-08",
       "crawled_at": "2026-03-18T17:48:10.531",
@@ -11760,7 +11760,7 @@
       "display_name": "조재우",
       "full_text": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill\n\nhttps://www.designprompts.dev/\n\n클로드 바로 사용 가능합니다.",
       "media": [],
-      "url": "https://www.threads.net/@flowkater/post/DVkzBZ3Dwkd",
+      "url": "https://www.threads.com/@flowkater/post/DVkzBZ3Dwkd",
       "created_at": "2026-03-07 16:32:28",
       "date": "2026-03-07",
       "crawled_at": "2026-03-18T17:48:10.531",
@@ -11788,7 +11788,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/641851164_925908973705072_5237712084973711978_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDQzNC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QGsTliDiZFPPqawmcJ6hT1MpCm0gNhKBjrYa9Af5Gm9g_SUnOJAtQ2cJabQwBouLCs&_nc_ohc=dgb6gGu-RisQ7kNvwH6k9gx&_nc_gid=ED0wNIVqtiIcaCPBDn9Mvw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0NjEyNTE2NDAzNTcwNDk5NQ%3D%3D.3-ccb7-5&oh=00_AfzuB6le4UZ99t5-xlDobtJLiMth3IFTkZ1KDTVukPkOeg&oe=69C03CDF&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@devdesign.kr/post/DVgLnWECgij",
+      "url": "https://www.threads.com/@devdesign.kr/post/DVgLnWECgij",
       "created_at": "2026-03-05 21:31:55",
       "date": "2026-03-05",
       "crawled_at": "2026-03-18T17:48:13.551",
@@ -11814,7 +11814,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/642643328_17919245760270646_1137311629248857142_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTA4MHg1NDAuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QHQSBHkipxe5DZlRSiuhaQihq9WmTeKSG1C5cjuy6lWTmX5CwTCI2nNRl18k3Vnfq0&_nc_ohc=XVeyztrtXloQ7kNvwHOQCSK&_nc_gid=Y9uXsnbVi2WwLSedSNsIKQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0NjkxMDk0MDI4MTgxMjMyMQ%3D%3D.3-ccb7-5&oh=00_Afy2qinLdaTmcA9P6R43xX1RDCO8_RopSKIvY3bm6mBq4A&oe=69C04E35&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@kjconsulting_team/post/DVi-R5OD7Vh",
+      "url": "https://www.threads.com/@kjconsulting_team/post/DVi-R5OD7Vh",
       "created_at": "2026-03-06 23:32:30",
       "date": "2026-03-06",
       "crawled_at": "2026-03-18T17:48:13.552",
@@ -11840,7 +11840,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/649216714_17948909367120123_3513427751294224667_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTAyNHgxMDI0LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QHW-PdI0SGXAQHnYERFJPx5wBMyqZRFZ1n5uoQhOE7S11NY5O7nwhp4qv9qxJIRASs&_nc_ohc=WIMNg3gRXPkQ7kNvwGVia4S&_nc_gid=tlHtiqgnooGwVxE8toZccA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0NzE4NjY4MDU2MjkxNjcyNg%3D%3D.3-ccb7-5&oh=00_Afxq-aYd5WDNuptKpA8_rFJFPcCZdIbgxQdSwmQz5_eHow&oe=69C02D24&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@dddesign.io/post/DVj9CQpEWat",
+      "url": "https://www.threads.com/@dddesign.io/post/DVj9CQpEWat",
       "created_at": "2026-03-07 08:40:48",
       "date": "2026-03-07",
       "crawled_at": "2026-03-18T17:48:13.552",
@@ -11866,7 +11866,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/641387294_17860066722663827_3861824719507214481_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTA4MHg1NDAuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2QEXcCP4YmqIXI4imXhgTqUz-lS39G3ExpspMJjEniZ72vVA_JL5fMLrkA-dtXyp-iw&_nc_ohc=Tb9CXnggAvYQ7kNvwGKeLtS&_nc_gid=Cp4aKe9oNpR3YZslJ2EAGg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0NzExOTIyODU0NjAyMDMxMA%3D%3D.3-ccb7-5&oh=00_Afwal7GzG-PZ2ddfwFgSoVn-SPf85NEO7k-Fj49paa_ERw&oe=69C02CFB&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@hyperexecutor/post/DVjto4yD3PW",
+      "url": "https://www.threads.com/@hyperexecutor/post/DVjto4yD3PW",
       "created_at": "2026-03-07 06:26:46",
       "date": "2026-03-07",
       "crawled_at": "2026-03-18T17:48:13.552",
@@ -11892,7 +11892,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/641662313_17871696864559701_5034456442327329324_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTI4MHg3MjAuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QHYQOQ0xsmFS61nRd1jnAQ3glpJ5eqICR9z3O07K3VMbh1rgfDcLJ_mkQ7Djlz_IvQ&_nc_ohc=29kX9xknR4AQ7kNvwEyL8OH&_nc_gid=3p3adlrEUAK8o7OdXcmOxQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0NjcwODY2NjQxNDg1NDkyMA%3D%3D.3-ccb7-5&oh=00_AfxVFru_p3MXM8fotbHIjzQ6ZlF_ZPZ8H9-8xjE_1cFfuw&oe=69C0493A&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@softdaddy_o/post/DViQSbAEvMI",
+      "url": "https://www.threads.com/@softdaddy_o/post/DViQSbAEvMI",
       "created_at": "2026-03-06 16:50:28",
       "date": "2026-03-06",
       "crawled_at": "2026-03-18T17:48:16.578",
@@ -11916,7 +11916,7 @@
       "display_name": "ai_younggle_man",
       "full_text": "🚨 리얼 실전 꿀팁 ) 챗지피티 대란 PRO 오,우,너 에게 실질적인 혜택!! \n\nGPT-5.4의 숨겨진 잠재력, Codex CLI에서 100만 토큰 컨텍스트 창을 활성화하는 방법을 아시나요?\n\n기본 27.2만 토큰을 넘어, 거대한 코드베이스 전체를 컨텍스트에 넣고 작업할 수 있는 '실험적' 기능! 설정 방법과 반드시 알아야 할 주의사항을 정리했습니다.\n\n⚙️ 100만 컨텍스트 활성화 방법\n\n먼저, Codex 설정 파일(~/.codex/config.toml 또는 프로젝트 내 .codex/config.toml)을 열고 아래 두 줄을 추가하세요. gpt-5.4 모델을 사용한다고 가정합니다.\n\nmodel = \"gpt-5.4\"\nmodel_context_window = 1000000\nmodel_auto_compact_token_limit = 900000\n\nmodel_context_window를 100만으로 설정하여 최대 컨텍스트 크기를 지정합니다.\n\n---\n\n🤔 auto_compact_token_limit은 왜 필요한가요?\n\nmodel_auto_compact_token_limit은 자동 컨텍스트 압축이 시작되는 임계값입니다. 최대치(100만)보다 약간 낮은 값(예: 90만)으로 설정하면, 대화가 길어져 토큰이 꽉 차기 전에 Codex가 알아서 오래된 대화 내역을 요약/압축하여 컨텍스트를 효율적으로 관리해줍니다. 갑작스러운 컨텍스트 초과 오류를 방지하는 안전장치인 셈이죠.\n\n---\n\n⚠️ 가장 중요한 주의사항: 비용!\n\n이 기능은 '실험적'이며, 그에 따른 비용이 발생합니다. 공식 문서에 따르면, 표준 컨텍스트(272K 토큰)를 초과하는 요청은 사용량 한도가 2배로 소진됩니다. 즉, 100만 토큰을 꽉 채워 사용하면 크레딧 소모 속도가 매우 빨라질 수 있습니다. 대규모 작업에만 신중하게 사용하세요!",
       "media": [],
-      "url": "https://www.threads.net/@ai_younggle_man/post/DVhdL6YE4Q0",
+      "url": "https://www.threads.com/@ai_younggle_man/post/DVhdL6YE4Q0",
       "created_at": "2026-03-06 09:23:56",
       "date": "2026-03-06",
       "crawled_at": "2026-03-18T17:48:16.578",
@@ -11938,7 +11938,7 @@
       "display_name": "unclejobs.ai",
       "full_text": "Claude Code에 자동 반복 실행 기능이 생겼습니다.\n/loop예요. 오늘 공식 릴리즈됐어요.\n\n랄프루프 안녕\n\n---\n\n쉽게 말하면 이래요.\n\n\"5분마다 배포 잘 됐는지 확인해줘\"를 한 번만 말하면, Claude가 알아서 5분마다 확인하고 결과를 알려줍니다. 직접 계속 물어볼 필요가 없어요.\n\n/loop 5m 배포 완료됐는지 확인하고 알려줘\n\n이렇게 치면 끝이에요.\n\n---\n\n활용 예시가 바로 감이 옵니다.\n\nPR에 댓글이 달리면 자동으로 확인하고 수정까지 해주거나, 매일 아침 Slack에서 내가 태그된 내용을 요약해주거나, 빌드 오류가 생기면 자동으로 고쳐주는 것도 돼요.\n\n한 세션에 최대 50개까지 등록할 수 있고, 반복 작업은 생성 후 3일 뒤 자동 만료됩니다.\n\n단, 세션을 닫으면 전부 사라져요. 터미널 켜놓는 동안만 작동하는 구조예요. 재시작해도 유지하려면 Desktop 예약 작업이나 GitHub Actions를 써야 합니다.\n\n---\n\n\"Claude한테 시키고 나서 내가 잊어버려도 되는 일\"의 범위가 넓어졌습니다.\n\n---\n\nhttps://code.claude.com/docs/en/scheduled-tasks",
       "media": [],
-      "url": "https://www.threads.net/@unclejobs.ai/post/DVk-bazCeLP",
+      "url": "https://www.threads.com/@unclejobs.ai/post/DVk-bazCeLP",
       "created_at": "2026-03-07 18:12:08",
       "date": "2026-03-07",
       "crawled_at": "2026-03-18T17:48:16.578",
@@ -11961,7 +11961,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/o1/v/t16/f2/m84/AQOHus_Ahf5zDdMf-bi8Uo5VMQ6v1O8VI7LZ9Ctwb7PaPO2Vk8D9BWCBiuJYxSb0Y6a8ibmctJF0g_nNPxxsxSRK55NgvtybMtP1CPw.mp4?_nc_cat=101&_nc_sid=5e9851&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=UQHb4JXGNfUQ7kNvwGpEu_n&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uRkVFRC5DMy4xMjgwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTc4NzMyOTU3MTE1NTA5NjUsImFzc2V0X2FnZV9kYXlzIjoxMSwidmlfdXNlY2FzZV9pZCI6MTAxNjQsImR1cmF0aW9uX3MiOjksInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=Seo5WfIbqVegFdcPwiPIUw&_nc_ss=8&_nc_zt=28&vs=d745e84a2ea893da&_nc_vs=HBkcFQIYTGlnX2JhY2tmaWxsX3RpbWVsaW5lX3ZvZC9GNjQ5OTkyNDNFQjRGNDI5OTlEMThEMTY5OTE5QUJBRF92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAKAAYABsCiAd1c2Vfb2lsATEScHJvZ3Jlc3NpdmVfcmVjaXBlATEVAAAm6vfRnd7qvz8VAigCQzMsF0Ajqn752yLRGBJkYXNoX2Jhc2VsaW5lXzFfdjERAHXqB2XongEA&oh=00_Afyu_fv3nMi1atWCL55OQBxUA1xeja3-750YE9SzQh3_6Q&oe=69BC4D63"
       ],
-      "url": "https://www.threads.net/@onpremisehuman/post/DVj_TbFD-lN",
+      "url": "https://www.threads.com/@onpremisehuman/post/DVj_TbFD-lN",
       "created_at": "2026-03-07 09:02:19",
       "date": "2026-03-07",
       "crawled_at": "2026-03-18T17:48:16.578",
@@ -11990,7 +11990,7 @@
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/641776898_17946993402112159_3835094050319665529_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uODc3eDEwODEuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QFwMMfOGP3qovIY-pWHcm8rUNx0hkKAZ8aETWS9l9BVpgpXzHU08S6D8LkYpo8aZ2U&_nc_ohc=tp0-mfaf-mIQ7kNvwEbkJD2&_nc_gid=umzdqKMw_3vFlgjyaspRlA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0NjUwMjAwMzI0MjExOTc0OA%3D%3D.3-ccb7-5&oh=00_AfxCqNnXSiAaC3brAw6E3jGWRZM66ncWPOWRX8zvEdLtxQ&oe=69C042E0&_nc_sid=10d13b",
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/642924186_17946994119112159_2370928721412550330_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMzcweDk4LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QFwMMfOGP3qovIY-pWHcm8rUNx0hkKAZ8aETWS9l9BVpgpXzHU08S6D8LkYpo8aZ2U&_nc_ohc=kr9AndtMX40Q7kNvwFJISLH&_nc_gid=umzdqKMw_3vFlgjyaspRlA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0NjUwMjA5NDM4NDM2ODQ4MA%3D%3D.3-ccb7-5&oh=00_Afz66c8RlUC1xZZMfUUDdgKcndc2EF1MwIABGM475Vxnng&oe=69C02B05&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@tofukyung/post/DVhhTE7EzJE",
+      "url": "https://www.threads.com/@tofukyung/post/DVhhTE7EzJE",
       "created_at": "2026-03-06 09:59:52",
       "date": "2026-03-06",
       "crawled_at": "2026-03-18T17:48:19.595",
@@ -12015,7 +12015,7 @@
       "display_name": "ai.sparkup",
       "full_text": "Claude Code 컨텍스트 98% 절약, Context Mode MCP 서버\n\nClaude Code에서 MCP 도구 출력을 98% 압축해 컨텍스트 소진을 막는 오픈소스 MCP 서버 Context Mode 소개. 315 KB → 5.4 KB, 세션 시간 30분 → 3시간.\n\nhttps://aisparkup.com/posts/9765",
       "media": [],
-      "url": "https://www.threads.net/@ai.sparkup/post/DVh4N3NDvTT",
+      "url": "https://www.threads.com/@ai.sparkup/post/DVh4N3NDvTT",
       "created_at": "2026-03-06 13:20:22",
       "date": "2026-03-06",
       "crawled_at": "2026-03-18T17:48:19.595",
@@ -12039,7 +12039,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/641786365_17877815805507614_3522921207253774324_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTE0MXg1NTAuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QFwp9Wd8eKJFKEpefe01oQuowtiO1_rTOuYmmGDggIFdegVF7El-IVB-uF3ptUU8jk&_nc_ohc=D95ZTnK12lsQ7kNvwHsly5W&_nc_gid=nauBc6OixogXt5pwj0idrw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0NjU1ODkzMDg3NzY5NTMzMw%3D%3D.3-ccb7-5&oh=00_AfyZXYnfOy59d1tbJqxf7sM2mx11OO-iDiWGL79sHOPYFQ&oe=69C03244&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@keke_appa/post/DVhuPe6kkVl",
+      "url": "https://www.threads.com/@keke_appa/post/DVhuPe6kkVl",
       "created_at": "2026-03-06 11:52:59",
       "date": "2026-03-06",
       "crawled_at": "2026-03-18T17:48:19.595",
@@ -12063,7 +12063,7 @@
       "display_name": "miniminim71",
       "full_text": "[Codex에 노션 MCP 연결하기]\n\n코덱스 5.4로 업그레이드 되면서, 문서작성 성능이 월등히 나아졌습니다.\n\n이제 기획안. 노션에 정리하도록 시키세요.\n\n노션 MCP 어떻게 연결하는지 모를 분들을 위하여, 프롬프트 준비했습니다.\n\ncodex 설치하신 다음, 바로 연결을 부탁해보세요.",
       "media": [],
-      "url": "https://www.threads.net/@miniminim71/post/DVjBYrkjzCn",
+      "url": "https://www.threads.com/@miniminim71/post/DVjBYrkjzCn",
       "created_at": "2026-03-06 23:59:30",
       "date": "2026-03-06",
       "crawled_at": "2026-03-18T17:48:19.595",
@@ -12088,7 +12088,7 @@
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/648204621_17886444441448489_809396244135459901_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMjE2MHgxMTYyLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QGmk-HpDcg7hhYHy-V7olm3eBCwA2XWnOXWUPGOvWHL_hPZW21mGf92rtVjngOebBo&_nc_ohc=5p3YzS2qTroQ7kNvwF0jp5Q&_nc_gid=WssBYmCvmsuSIfGAGpcJPw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0NjYwNTY4Mzg4NjgxNzg4Mw%3D%3D.3-ccb7-5&oh=00_AfxVKuEI-dLHyspuUyWBOLFF9iKpujRJc7qQC1SvhfKQ8A&oe=69C04869&_nc_sid=10d13b",
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/645581300_17886444900448489_930492920192978204_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTU0Mng1NTIuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QGmk-HpDcg7hhYHy-V7olm3eBCwA2XWnOXWUPGOvWHL_hPZW21mGf92rtVjngOebBo&_nc_ohc=sSyWUBv7QW8Q7kNvwEs36qE&_nc_gid=WssBYmCvmsuSIfGAGpcJPw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0NjYwNTc1ODkzMTI5MTQ2Ng%3D%3D.3-ccb7-5&oh=00_Afy7a18d-WnecLZb5pGoLEKG7MrkA0lyrhYPtus4Ze9lIQ&oe=69C03810&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@2_taewoo/post/DVh431DEoJb",
+      "url": "https://www.threads.com/@2_taewoo/post/DVh431DEoJb",
       "created_at": "2026-03-06 13:25:52",
       "date": "2026-03-06",
       "crawled_at": "2026-03-18T17:48:22.612",
@@ -12115,7 +12115,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/646038705_17854335654628954_5510014677400144602_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTY3OHgxMDcwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QG6Lt5xYiQiYv_XqbLO3xug9flsS9hDW-rHtcff_rJbCce2Zy58fQBtFSm_2sAYWyE&_nc_ohc=c4yL6RA-iB4Q7kNvwHMkM_j&_nc_gid=wqMeol8tPgygsALMhafllw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0Njc0MDg0NDYyODQ5OTc0MA%3D%3D.3-ccb7-5&oh=00_AfwJnYXgwJ6QQjon0hvsLQguD8y4gjoEcn03gx1Cm5mJfQ&oe=69C02B3A&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@ai.voltkim/post/DViXmrTEV0c",
+      "url": "https://www.threads.com/@ai.voltkim/post/DViXmrTEV0c",
       "created_at": "2026-03-06 17:54:24",
       "date": "2026-03-06",
       "crawled_at": "2026-03-18T17:48:22.612",
@@ -12141,7 +12141,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/643551257_17865495639596148_7503643124812276313_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTI5MHg4NDMuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QGpjJqE_q2KJ2QMGguavHXS5z9A7zus3zt21tEbruXRl1Q_2e357mkMS0Bv7OYi8T0&_nc_ohc=08xJBZYCpZ8Q7kNvwH-iknO&_nc_gid=u6N75958P6z4a1nWzhPh_Q&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0NjQxOTg2NzY5Njg0NzAxMA%3D%3D.3-ccb7-5&oh=00_AfxebiO_u2-U_ZQfjRnKznP0uKU57ruHU3yKVqzeXCXrag&oe=69C0431B&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@feelfree_ai/post/DVhOn2PE1ii",
+      "url": "https://www.threads.com/@feelfree_ai/post/DVhOn2PE1ii",
       "created_at": "2026-03-06 07:16:41",
       "date": "2026-03-06",
       "crawled_at": "2026-03-18T17:48:22.612",
@@ -12166,7 +12166,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/642119874_17938037853170224_6496893250467944930_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTMxNngxMzc0LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QGdD4umK94LCsbfwtCaCNFteegyak6ZZFhU27N847Mg16VRPE_inEeQfQGgAqa3IhQ&_nc_ohc=4iQ7pK5DZh8Q7kNvwG4TIsl&_nc_gid=kYQbRu3-xxlnjE_NpIWqbQ&edm=AI6eXeABAAAA&ccb=7-5&ig_cache_key=Mzg0Njg0NTY2MDMwMjM4NjIzNA%3D%3D.3-ccb7-5&oh=00_AfxdbQRzW5uUfL-saLJBPfVzLVLmqTIYIDB0nrCCTJ05eQ&oe=69C020DC&_nc_sid=6efbad"
       ],
-      "url": "https://www.threads.net/@autogod.ai/post/DVivb8gE6Q6",
+      "url": "https://www.threads.com/@autogod.ai/post/DVivb8gE6Q6",
       "created_at": "2026-03-06 21:22:39",
       "date": "2026-03-06",
       "crawled_at": "2026-03-18T17:48:22.612",
@@ -12195,7 +12195,7 @@
       "display_name": "hyperexecutor",
       "full_text": "해커뉴스에서 봤는데 클로드 코드 쓰는 사람들 LSP 없이 돌리다가 시간 다 날리고 있었대.\n코드 검색 한번 할 때마다 50밀리초면 될 걸 30초에서 1분씩이나 기다리고 있었다는 거지.\n진짜 비효율의 극치 아닐까?\nAI 써서 개발 속도 올린다고 좋아했는데, 정작 핵심을 놓치고 있었던 거지...\n\n---\n\n이게 단순히 느린 게 아니라, 작업을 끊임없이 방해하는 거랑 똑같잖아.\nLSP 활성화하고 나면 미발표된 기능까지 쓸 수 있다고 하네.\n이런 작은 정보 하나가 결국 1인 개발자나 바이브코딩하는 사람들한테는 어마어마한 생산성 차이를 만드는 거거든.\nAI로 증강된 슈퍼 개인이 되려면 이런 효율도 놓치지 말아야지.\n얼른 적용해서 써보면 진짜 체감 확 될 거야.",
       "media": [],
-      "url": "https://www.threads.net/@hyperexecutor/post/DVYfZ00FM1c",
+      "url": "https://www.threads.com/@hyperexecutor/post/DVYfZ00FM1c",
       "created_at": "2026-03-02 21:50:41",
       "date": "2026-03-02",
       "crawled_at": "2026-03-18T17:48:25.629",
@@ -12219,7 +12219,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/641745343_17932504320207210_5554576335510965399_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMjE1NngxMzQ1LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QHh4fv-xTavNBe1uVOPWgq5x6QCX1WpM318uP5lmkggjXc7T8gp1FYqb1AQ2nJUMv0&_nc_ohc=z6IfS8tPgM8Q7kNvwGvzI4_&_nc_gid=0YpVZc6gwnJ4DjPinTDkQQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0Njg3OTEzMjU0MjE2OTc1OA%3D%3D.3-ccb7-5&oh=00_AfxXlS9sxsEjZYYm-RU833zWrfkd-uYGZjnf05Igo4O47Q&oe=69C0399E&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@unclejobs.ai/post/DVi3DB9CfKe",
+      "url": "https://www.threads.com/@unclejobs.ai/post/DVi3DB9CfKe",
       "created_at": "2026-03-06 22:29:10",
       "date": "2026-03-06",
       "crawled_at": "2026-03-18T17:48:25.629",
@@ -12245,7 +12245,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/642773615_4327936174192240_3473888302535898769_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDQ5MC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QH5LryAViWgauWYDuCl01kh5Q8uXcmnA7Rs9BPMD9NGPJQRfj3gwqacjiDI4rF1w1w&_nc_ohc=NcRM7aVDXPQQ7kNvwE8tdAF&_nc_gid=ySBbXcLwWzzlaf_wDQruhA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0NjU1MTMwMTE1Mjk1MDU5OA%3D%3D.3-ccb7-5&oh=00_Afx1yqbtrt_HHcF0g4enIzdfeeEIyvp_oLvjFnSZEw6Yvg&oe=69C043FA&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@aipreneur_j/post/DVhsgdLiclG",
+      "url": "https://www.threads.com/@aipreneur_j/post/DVhsgdLiclG",
       "created_at": "2026-03-06 11:38:13",
       "date": "2026-03-06",
       "crawled_at": "2026-03-18T17:48:25.629",
@@ -12271,7 +12271,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/642557801_17951572071105329_7975041772187931150_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMjE2MHgxMjQ5LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QFe0jK1hN0JWPMRRX_xOmB-VCA9YB2lOK7qSyZleK6ATYZGPIQ_9LXpf29TQKKGnjU&_nc_ohc=XAupBvidc4oQ7kNvwF60mSA&_nc_gid=IjtW_xbccWWEVawl8Wa6Eg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0Njc0OTUxNTQ5NjM4MjMxOQ%3D%3D.3-ccb7-5&oh=00_AfxcQx0AZc4VMSYW4yIPGU03db8uaSF5ZIzrsK9nviB2-Q&oe=69C03B10&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@ejang/post/DViZk2rEV9v",
+      "url": "https://www.threads.com/@ejang/post/DViZk2rEV9v",
       "created_at": "2026-03-06 18:11:38",
       "date": "2026-03-06",
       "crawled_at": "2026-03-18T17:48:25.629",
@@ -12295,7 +12295,7 @@
       "display_name": "mark_jung_18",
       "full_text": "https://github.com/openai/symphony\n\n쉬운 개발만 하는 사람들의 종말 2편\n\n이 리포에는 코드가 있지만 readme에는 “그냥 님 최애 에이전트한테 이 스펙 보고 만들라고하세요” 라고 한다.\n\n이게 소프트웨어의 미래인건가..? 유튜브에 요리 레시피들이 나오듯이 이제 단계적인 스펙, 프롬프트로 소프트웨어를 공유할 수 있다는게 너무 신선한 충격이였다.\n\n그리고 요리의 비유가 참 적합하다고 본다. 예전에는 손으로 귀족, 왕족만 맛있는거 해먹고 재료가 비쌌지만, 이제 재료(개발능력 + 토큰)가 싸지고 요리 레시피(스펙)이 공유되면 모두가 집에서 요리하면서 자기 입맛에 맞게 먹는다. \n물론 생일이나 중요한 자리에서는 외식을 하지만, 간단한 saas정도는 셀프로 만들기 너무 쉽다.",
       "media": [],
-      "url": "https://www.threads.net/@mark_jung_18/post/DVfKKyAEcF_",
+      "url": "https://www.threads.com/@mark_jung_18/post/DVfKKyAEcF_",
       "created_at": "2026-03-05 11:59:17",
       "date": "2026-03-05",
       "crawled_at": "2026-03-18T17:48:28.655",
@@ -12317,7 +12317,7 @@
       "display_name": "tofukyung",
       "full_text": "클로드코드 에이전트 팀 시리즈 종합\n\n약 한 달 동안, 클로드코드 에이전트 팀(Agent Teams)만 팠습니다.\n\n에이전트 팀 종합 설명부터 쉬운 설치까지 \n모두 하나의 글에 알려드립니다.\n\n👇️\n\n---\n\n1편 : 에이전트 팀 소개\n\n클로드 에이전트 팀이 어떤 건지 소개드리고,\n기존 서브에이전트와의 차이점과 장단점을 소개해 드립니다.\n\n결국, '단방향'소통이냐, '실시간/양방향'소통이냐가 가장 큰 차이 같아요.\n\n---\n\n2편 : 에이전트 팀 활성화 & Split pane 적용하기\n\n에이전트 팀 활성화하는 방법, \n특히 윈도우 기준 WSL 설치 + 자동 화면 분할 설정하는 법을 알려드립니다.\n\n제가 첨부해 둔 스킬을 사용하면 좀 더 쉽게 설정하실 수 있습니다!\n\n---\n\n2.5편 : 에이전트 팀 관련 설명 보충\n\n에이전트 팀을 사용하는 의미, 장단점을 조금 더 자세히 설명드립니다.\n\n결국, 한 작업에서 자동으로 여러 개의 클로드 코드를 동시에 열어 작업하기 때문에,\n\nA) 한 작업에서 컨텍스트를 크게 늘려서 활용할 수 있다.\nB) 작업에 따라 다른 모델/컨텍스트/추론 단계를 조정할 수 있다.\nC) 기존 스킬/에이전트를 명시적으로 조합할 수 있다\nD) 그래서, 난이도가 정말 높다.\n\n로 정리할 수 있겠습니다.\n\n---\n\n3편 : 에이전트 팀 생성 스킬 - Tofu-AT(Agent Teams) 공개\n\n에이전트 팀을 그냥 만드는 건 굉장히 어렵습니다.\n\n그래서, 설치하면 자동으로 여러분들의 클로드 코드 환경을 탐색해 기존 스킬들과 MCP등을 리스트업하고, 에이전트 팀 자동 생성해주는 스킬을 배포했습니다.\n\n간단하지만, 에이전트 작업 과정과 작업 결과를 알 수 있는 대시보드도 열립니다!\n\n---\n\n4편 : 에이전트 팀 사용 실제 사례\n\n에이전트 팀 실제 사용 사례를 정리했습니다!\n\n2.5편에 나온대로, 여러 작업을 동시에 -> 그것도 두뇌가 있는 여러 팀원이 할 수 있고, 컨텍스트에서 좀 더 자유로운 작업이 가능하다는 게 큰 장점입니다!\n\n---\n\n앞으로도, 빠르진 않더라도 직접 사용해보고, 활용해 본 AI 팁을 여러분들이 사용하기 편하게 알려드리겠습니다!\n\n읽어주시고 좋은 말씀 많이 해주셔서 감사합니다!",
       "media": [],
-      "url": "https://www.threads.net/@tofukyung/post/DVetfook8lm",
+      "url": "https://www.threads.com/@tofukyung/post/DVetfook8lm",
       "created_at": "2026-03-05 07:48:43",
       "date": "2026-03-05",
       "crawled_at": "2026-03-18T17:48:28.655",
@@ -12341,7 +12341,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/645732221_2079226896204323_3583358031156790148_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDQxNi5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2QFZncIeeVt0nmlLfwejbvQtMB3mDqr6Qyb4o5GvSEWIJLrfzC-_lQ7hKcZHc4oNfsQ&_nc_ohc=wqefusAugMwQ7kNvwEK4uic&_nc_gid=rThcEl90UyQ4tdtzsQhxLA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0NjA5ODgwMjIzMTY2MzU5NA%3D%3D.3-ccb7-5&oh=00_AfwzMY5LMFNk_1gMHARcmZjTMZjmS_B6pljXVUjyLx_YwA&oe=69C03D29&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@overtime.sam/post/DVgFnuuEtvq",
+      "url": "https://www.threads.com/@overtime.sam/post/DVgFnuuEtvq",
       "created_at": "2026-03-05 20:39:04",
       "date": "2026-03-05",
       "crawled_at": "2026-03-18T17:48:28.655",
@@ -12367,7 +12367,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/640396304_17932314435207210_2730058719066194405_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMzIweDUxMS5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QGA6TuoEZvwpRXdFya4kAm6yyne_F_AHM2LZIkWnM_M82788rlFMQH3GdJi6355u2k&_nc_ohc=i0f4-4fQcFYQ7kNvwHp87Bj&_nc_gid=B_9fCKla87pRBphcSEi2Mg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0NTg4OTU2NjM4OTY1ODUwNA%3D%3D.3-ccb7-5&oh=00_AfzgK9EmuBqmtUwyty9GODvyU4EUSE-kd7faPjtmsujl8w&oe=69C052CB&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@unclejobs.ai/post/DVfWC8qCWOI",
+      "url": "https://www.threads.com/@unclejobs.ai/post/DVfWC8qCWOI",
       "created_at": "2026-03-05 13:43:04",
       "date": "2026-03-05",
       "crawled_at": "2026-03-18T17:48:28.655",
@@ -12391,7 +12391,7 @@
       "display_name": "mark_jung_18",
       "full_text": "쉬운 개발만 하는 사람들의 종말 1편\n\nOpenai의 symphony가 미래의 웹앱/앱 개발환경이라고 믿는다. https://github.com/openai/symphony\n\n대시보드형태의 칸반 보드 - 거기에 일을 올리면 에이저트가 가져가서 일한다. Steve yegge의 wasteland, gastown도 비슷한 컨셉이다\n\n에이전트가 나온 후 이런 미래를 꿈꿔왔는데 이제 드디어 시작하나보다. \n저기서 좀 어려운건 이제 사람과 에이전트가 맡고 간단한건 에이전트가 척척 해결. \n\n문제를 해결만 하고 문제 정의나 taste가 없는 개발자의 미래는 이제 너무나 명확하다. \n\n없다.",
       "media": [],
-      "url": "https://www.threads.net/@mark_jung_18/post/DVfJK6PkSRR",
+      "url": "https://www.threads.com/@mark_jung_18/post/DVfJK6PkSRR",
       "created_at": "2026-03-05 11:50:34",
       "date": "2026-03-05",
       "crawled_at": "2026-03-18T17:48:31.677",
@@ -12413,7 +12413,7 @@
       "display_name": "greennuri428",
       "full_text": "https://github.com/uppinote20/claude-dashboard\n\nclaudecode 상태표시줄 좋은걸 발견해서 기록겸 남깁니다. ^^",
       "media": [],
-      "url": "https://www.threads.net/@greennuri428/post/DVd3cbWD5Pd",
+      "url": "https://www.threads.com/@greennuri428/post/DVd3cbWD5Pd",
       "created_at": "2026-03-04 23:56:26",
       "date": "2026-03-04",
       "crawled_at": "2026-03-18T17:48:31.677",
@@ -12437,7 +12437,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/642433160_17896012842408836_8716079822779001599_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTE3OXgxNzg1LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QGSjl5EsBrTFhzZDXuY4mvGB6-BcF80ljIA98sVZtFnI0NJuFCaamecftPX4zjOF1E&_nc_ohc=eHgb0XqJ3YgQ7kNvwGNkPQg&_nc_gid=yJqgskzaQtciXteXPMmo4Q&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0Mjk0ODkzNDMwMjY3MDk1MQ%3D%3D.3-ccb7-5&oh=00_Afzm-4pKNMq6re1bp-o8FDDtmVjAl6GxB2Q4pA7GFQW7Dg&oe=69C04691&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@gptaku_ai/post/DVU5dAkEx7k",
+      "url": "https://www.threads.com/@gptaku_ai/post/DVU5dAkEx7k",
       "created_at": "2026-03-01 12:20:49",
       "date": "2026-03-01",
       "crawled_at": "2026-03-18T17:48:31.677",
@@ -12461,7 +12461,7 @@
       "display_name": "ai_younggle_man",
       "full_text": "Google Workspace 공식 CLI 나왔습니다 🚀\n\n설치방법\nnpm install -g @googleworkspace/cli\n\nGmail, Drive, Calendar, Sheets, Docs, Chat까지 커맨드라인 하나로 전부 제어 가능.\n\nAI 에이전트한테 구글 워크스페이스 권한 쥐여주면 자동화 범위가 확 넓어질 것 같은데요.\n\nClaude Code나 Gemini CLI랑 조합하면 진짜 무서워질 듯 👀\n\n다만 아직 v1.0 전이라 breaking change 있을 수 있으니 프로덕션 투입은 조금 더 기다리는 게 좋을 것 같습니다.\n\n👉 github.com/googleworkspace/cli\n\n#AI #개발 #GoogleWorkspace #CLI #자동화 #AX",
       "media": [],
-      "url": "https://www.threads.net/@ai_younggle_man/post/DVfJ6XjE71D",
+      "url": "https://www.threads.com/@ai_younggle_man/post/DVfJ6XjE71D",
       "created_at": "2026-03-05 11:57:02",
       "date": "2026-03-05",
       "crawled_at": "2026-03-18T17:48:31.677",
@@ -12485,7 +12485,7 @@
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/641228306_17888741718441258_1147406880195388475_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMjE2MHgxMTI1LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QFICRiUdOW_ke4AjDddjlKcSc70kVHwTiTht9ZuiF2wU1GuWttOhUlWoBtMdHuF7Yo&_nc_ohc=h2zKCi2_Ca4Q7kNvwGj_xYY&_nc_gid=jsq2Hi4KaRC5Klr48D5t4w&edm=AI6eXeABAAAA&ccb=7-5&ig_cache_key=Mzg0NTM0MTE5Mzg0OTM0Mzc2MQ%3D%3D.3-ccb7-5&oh=00_Afwnkvt54NHlERu9FDzM7jalmJXr1HAAuot7pYFqXUSYgQ&oe=69C01D5F&_nc_sid=6efbad",
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/640417905_17888741859441258_2664527652712726866_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMjUxNHgxMjM2LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QFICRiUdOW_ke4AjDddjlKcSc70kVHwTiTht9ZuiF2wU1GuWttOhUlWoBtMdHuF7Yo&_nc_ohc=PN1VY-5H0bYQ7kNvwHnIAsk&_nc_gid=jsq2Hi4KaRC5Klr48D5t4w&edm=AI6eXeABAAAA&ccb=7-5&ig_cache_key=Mzg0NTM0MTE5Mzg0OTM2NDMxMA%3D%3D.3-ccb7-5&oh=00_Afzabr8R0O5XcrZuSTE11-2G9VU2Io-Wyo7KrP75zyW2qA&oe=69C026F5&_nc_sid=6efbad"
       ],
-      "url": "https://www.threads.net/@kkongdon_story/post/DVdZXJNkfDx",
+      "url": "https://www.threads.com/@kkongdon_story/post/DVdZXJNkfDx",
       "created_at": "2026-03-04 19:33:34",
       "date": "2026-03-04",
       "crawled_at": "2026-03-18T17:48:34.705",
@@ -12517,7 +12517,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/641786645_17913908655299839_8824950747436609026_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTI2MHgxMDg1LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5leHBlcmltZW50YWwifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QFC5I9LTz9u7rd8cWW2uU5vJuVKbOtWxVhHTWXRbgx2EBF3yRIKnE98UcDNsovZ12w&_nc_ohc=QDdEtOlEDeAQ7kNvwEbXS96&_nc_gid=THcN4baKmcANQCm1VZ6FdQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0NTczNDU4NTc1ODYwNzM1Ng%3D%3D.3-ccb7-5&oh=00_AfwJfmy_tD_6hDpkTkH6ZF9fOPUgnwYltRgiKcbgd7CV0g&oe=69C04F9D&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@needsbuilder/post/DVey5D1kwMP",
+      "url": "https://www.threads.com/@needsbuilder/post/DVey5D1kwMP",
       "created_at": "2026-03-05 08:35:53",
       "date": "2026-03-05",
       "crawled_at": "2026-03-18T17:48:34.705",
@@ -12540,7 +12540,7 @@
       "display_name": "권용범",
       "full_text": "이지클로: https://easyclaw.kr\n이지코드: https://easyclaw.kr/easycode",
       "media": [],
-      "url": "https://www.threads.net/@needsbuilder/post/DVe3nW7AUQq",
+      "url": "https://www.threads.com/@needsbuilder/post/DVe3nW7AUQq",
       "created_at": "2026-03-05 09:17:10",
       "date": "2026-03-05",
       "crawled_at": "2026-03-18T17:48:34.705",
@@ -12567,7 +12567,7 @@
       "display_name": "bangto2095",
       "full_text": "최근 레딧에서 OpenClaw 자동화 이슈를 보니까, \n품질은 결국 자동화를 검증하는 단계에서 갈리더라.\n\n특히 자주 언급되는 건 \n\"로그 파일, 아티팩트 경로, 종료코드(0 여부)\"\n같은 기본 체크였음.\n\n이걸 루틴으로 고정하면 \"실행한 척\"하는 문제를 꽤 줄일 수 있다는 얘기가 많음.\n\n자동화는 명령을 많이 돌리는 것보다,\n결과를 확실히 검증하는 구조가 먼저인 듯?",
       "media": [],
-      "url": "https://www.threads.net/@bangto2095/post/DVeSDl9kpwV",
+      "url": "https://www.threads.com/@bangto2095/post/DVeSDl9kpwV",
       "created_at": "2026-03-05 03:48:58",
       "date": "2026-03-05",
       "crawled_at": "2026-03-18T17:48:34.705",
@@ -12588,7 +12588,7 @@
       "display_name": "aicodelab.tony",
       "full_text": "노트북lm 9:16 사이즈로 \n슬라이드 20장 생성 하는 프롬프트\n\n2틀... 걸렸어!",
       "media": [],
-      "url": "https://www.threads.net/@aicode.lab/post/DVcVK__EuV0",
+      "url": "https://www.threads.com/@aicode.lab/post/DVcVK__EuV0",
       "created_at": "2026-03-04 09:37:43",
       "date": "2026-03-04",
       "crawled_at": "2026-03-18T17:48:37.821",
@@ -12616,7 +12616,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/645540864_17855643993623803_5305847529274394659_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTQ0MHgxODAwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QFgsJt0t0qb5Kb8XG6xGdebWuA63g6p0OnHXCjfMFAe7mbeW8cWCz5xDJOjWFgMWWQ&_nc_ohc=r1iiKAeY9s4Q7kNvwEPHY0m&_nc_gid=erSL6I7a0VtWmcmD3YyNwA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0NDcyODM1OTcyMTE1NTE2Mw%3D%3D.3-ccb7-5&oh=00_AfyIZMBkkP83kdLynQY2RdRfDxwTyVXkMjqsGKAffbA_Vg&oe=69C0390B&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@vibe.tip/post/DVbOB4YE3B2",
+      "url": "https://www.threads.com/@vibe.tip/post/DVbOB4YE3B2",
       "created_at": "2026-03-03 23:16:03",
       "date": "2026-03-03",
       "crawled_at": "2026-03-18T17:48:37.822",
@@ -12642,7 +12642,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/643064520_17940343260140156_7267745659919354078_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uODI2eDE4My5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QGiGVZBRc3MoeCbFcOGoZHwkTd7jImACazSOMFRPLI0tOJfAn4IxGz1tA-N7kKuhfg&_nc_ohc=EGLhzZ9FQsIQ7kNvwFxQmBD&_nc_gid=i9jy-77ZCiGHzanlN4G2Gw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0NTE5MzkxMjc2MDQ5MTQ2NQ%3D%3D.3-ccb7-5&oh=00_Afxc59mlndRPHYipWXKs-WhDT9WvW6iKc04FMZcoFcGIGw&oe=69C02B1C&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@im__hoya/post/DVc33-glYkd",
+      "url": "https://www.threads.com/@im__hoya/post/DVc33-glYkd",
       "created_at": "2026-03-04 14:40:57",
       "date": "2026-03-04",
       "crawled_at": "2026-03-18T17:48:37.822",
@@ -12668,7 +12668,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/641242319_1458404575915339_3316065283673863700_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uNjQweDExMzYuc2RyLmY3MTg3OC5kZWZhdWx0X2NvdmVyX2ZyYW1lLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QEHDHHx6y7eiBNy_2Hj7HZP9M0iDKX7F3w8e3KiXpwUl9pU4zVFGw34SEMRrd_L15g&_nc_ohc=s4vN9ayZwtcQ7kNvwFqZmp1&_nc_gid=hZsZUkrspQyLdDI6m1C35A&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0NTE5Mzc4MzA2NDA2MDM3OA%3D%3D.3-ccb7-5&oh=00_AfzgyWSoXv9bl-vQLYIhII5m7acRu2q9sebzK5ncywTrhA&oe=69C050E9&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@prong_ai/post/DVc35-iks0x",
+      "url": "https://www.threads.com/@prong_ai/post/DVc35-iks0x",
       "created_at": "2026-03-04 14:41:13",
       "date": "2026-03-04",
       "crawled_at": "2026-03-18T17:48:37.822",
@@ -12692,7 +12692,7 @@
       "display_name": "dev_loopix",
       "full_text": "바이브코딩으로 만든 프로젝트\n배포 어떻게 하고 있어? 🤔\n\n1. Vercel\n2. Netlify\n3. AWS\n4. 카페24/가비아\n5. 기타 (댓글로)\n\n나는 Vercel + AWS 조합으로 쓰는 중 🔥\n다른 사람들은 뭐 쓰는지 궁금함 👀",
       "media": [],
-      "url": "https://www.threads.net/@dev_loopix/post/DVYSTeFEvjw",
+      "url": "https://www.threads.com/@dev_loopix/post/DVYSTeFEvjw",
       "created_at": "2026-03-02 19:55:41",
       "date": "2026-03-02",
       "crawled_at": "2026-03-18T17:48:40.840",
@@ -12716,7 +12716,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/642529605_17950277919103275_161246276773955610_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTE5Nng2NzMuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QHmTM2PLLF5cWZeVGeUh8_VHG51foqf_Cy00KDoWIsdezJ3pQLDMlP2d0PM3NNkevk&_nc_ohc=mT18qkulXCMQ7kNvwGYq0jL&_nc_gid=nffkLadyGRr6WG1ie30nfw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0NDIwNzI4OTY5MTYwMzkwMA%3D%3D.3-ccb7-5&oh=00_AfxeVL_3prcJx5FCmSh6JXsLs7qiPSGFotqnP24JylaC2g&oe=69C04614&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@catlovessubakba/post/DVZXimZCQO8",
+      "url": "https://www.threads.com/@catlovessubakba/post/DVZXimZCQO8",
       "created_at": "2026-03-03 06:00:41",
       "date": "2026-03-03",
       "crawled_at": "2026-03-18T17:48:40.840",
@@ -12742,7 +12742,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/642646243_678839488622398_5466393055871972239_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDMxMi5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QFQW4I-i5rcNsQHKkYoIwQ6xKcEL1M2EpqWWL8Wf4ayXy_2JxqA_Bovzov2dAqTLjo&_nc_ohc=mLyf6lnhse0Q7kNvwHpYKJ-&_nc_gid=OQqDlyJYrFQQodCWy_dXzg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0NDM3ODc4OTIzNzk4ODM3NA%3D%3D.3-ccb7-5&oh=00_AfwdGAFjjcwIkOg7LHK4A07Bw165rqbfN6UOdxczrrz7BA&oe=69C044C7&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@lean._.kim/post/DVZ-iPyk5wW",
+      "url": "https://www.threads.com/@lean._.kim/post/DVZ-iPyk5wW",
       "created_at": "2026-03-03 11:42:13",
       "date": "2026-03-03",
       "crawled_at": "2026-03-18T17:48:40.840",
@@ -12768,7 +12768,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/642485777_17896382481408836_8651286733899828508_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTE3OXgxNDMwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QF-O5JkLMcoQgBKxhFz9dV7-XIpulknIw7fCIFKvsrhKKH11R9pfwvnvfnjB6e2IFQ&_nc_ohc=XbuEHtbwgr8Q7kNvwEgNjNq&_nc_gid=afLYDaolVlHPYDGBo8ocUA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0NDYwMTg3OTU3MDEzNTY5MA%3D%3D.3-ccb7-5&oh=00_AfznzZGfIwakDYAPDEdqBJb62f3hMjaltafZlclrwxCgMw&oe=69C045EF&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@gptaku_ai/post/DVaxUR1E4KE",
+      "url": "https://www.threads.com/@gptaku_ai/post/DVaxUR1E4KE",
       "created_at": "2026-03-03 19:05:10",
       "date": "2026-03-03",
       "crawled_at": "2026-03-18T17:48:40.840",
@@ -12792,7 +12792,7 @@
       "display_name": "devdesign.kr",
       "full_text": "Claude Code 쓴다면 노트앱 무조건 이거 추천\n\nClaude Code로 내 메모에 접근하고 싶어서\nMCP부터 설치했는데, 이거 토큰 먹는 하마였음\n\n옵시디언 + 설정 2줄이면 MCP 없이\nAI가 내 지식 전체에 직접 접근 가능함\n\n이거 모르면 진짜 손해라서 공유함\n\n---\n\nMCP가 왜 문제냐면,\n도구 설명이 매 턴 시스템 프롬프트에 포함됨\n\n노트 작업 안 하는 대화에서도\n턴당 수백~수천 토큰이 빠져나감\n\n근데 옵시디언은 전부 로컬 .md 파일이라\nClaude Code가 파일시스템으로 바로 읽고 씀\nMCP 자체가 필요 없음\n\n---\n\n\"그럼 옵시디언 MCP 설치하면 되는 거 아님?\"\n\n그것도 쓰지 말자.\nobsidian-mcp 같은 거 설치하면\n결국 MCP 도구 설명이 매 턴 붙는 건 똑같음\n\n옵시디언은 어차피 로컬 마크다운 파일이라\nClaude Code가 파일시스템으로 직접 접근하면 됨\nMCP는 완전히 불필요한 오버헤드임\n\n---\n\n대신 이렇게 설정하면 됨\n\n~/.claude/settings.json에 한 줄 추가:\n\"additionalDirectories\": [\"내 옵시디언 볼트 경로\"]\n= 어떤 프로젝트에서 실행해도 이 경로에 접근 허용하겠다는 설정임\n\nCLAUDE.md에 볼트 경로랑 폴더 구조 적어두면\nClaude Code가 어디에 뭘 저장할지 알아서 판단함\n\n그러면 어떤 프로젝트에서 열어도\n\"옵시디언에 저장해줘\"가 바로 됨\n\n---\n\n정리하면,\n\nMCP로 노트앱 연동 -> 매 턴 토큰 낭비\n옵시디언 MCP 설치 -> 여전히 토큰 낭비\n옵시디언 + settings 2줄 -> 토큰 낭비 최소화, 동일 기능\n\n마크다운 + 로컬 파일시스템\n= AI 에이전트가 직접 접근 가능한 나만의 지식 베이스\n\n옵시디언 추천함",
       "media": [],
-      "url": "https://www.threads.net/@devdesign.kr/post/DVQ_O78krrk",
+      "url": "https://www.threads.com/@devdesign.kr/post/DVQ_O78krrk",
       "created_at": "2026-02-27 23:54:22",
       "date": "2026-02-27",
       "crawled_at": "2026-03-18T17:48:43.865",
@@ -12814,7 +12814,7 @@
       "display_name": "ody_daddy",
       "full_text": "출근길 쓰레드) 엔트로픽이 교육 커리큘럼을 통째로 무료로 풀었다.\n\n클로드 만드는 엔트로픽이 자기네 내부 교육용으로 쓰던 'Skilljar' 강의들을 외부로 공개했다.\n\n유료 강의 수준의 퀄리티인데 그냥 가입만 하면 바로 볼 수 있는 상태.\n\n프롬프트 엔지니어링부터 API 연동까지 실무 중심이다.\n\n이제 \"프롬프트 깎는 법\" 배우러 비싼 유료 강의 들을 필요가 없다.\n\n핵심 커리큘럼은 크게 세 가지:\n\n- 프롬프트 엔지니어링: 기초부터 고급 기법까지 다룸.\n- API 시작하기: 개발자가 클로드를 서비스에 붙이는 방법.\n- 사용 사례별 최적화: 고객 상담, 데이터 분석 등 실전 활용법.\n\n단순히 \"말 잘하는 법\"이 아니라 엔트로픽 개발진이 쓰는 표준 가이드를 배운다는 게 포인트.\n\n* 출처: Anthropic Educational Courses — https://anthropic.skilljar.com/\n\n---\n\n레딧 등 커뮤니티 반응도 뜨겁다.\n\n그동안 파편화되어 있던 클로드 활용 팁들이 \"본사 공인\"으로 정리된 느낌.\n\n- 오픈 AI의 가이드와 비교하며 공부하기 딱 좋은 타이밍.\n- 영문 강의지만 브라우저 번역 돌려도 충분히 소화 가능한 수준.\n- 이론보다 실습 위주라 당장 업무에 써먹기 좋음.\n\n* 출처: Anthropic has opened up its entire educational curriculum for free — https://www.reddit.com/r/ClaudeAI/comments/1rh92yp/anthropic_has_opened_up_its_entire_educational/\n\n---\n\n바이브 코딩을 시작하는 분들이라면, 이 도서를 추천합니다!\n예약 판매 시작, 지금 바로 구매하세요!",
       "media": [],
-      "url": "https://www.threads.net/@ody_daddy/post/DVZlMVugZRR",
+      "url": "https://www.threads.com/@ody_daddy/post/DVZlMVugZRR",
       "created_at": "2026-03-03 07:59:59",
       "date": "2026-03-03",
       "crawled_at": "2026-03-18T17:48:43.865",
@@ -12838,7 +12838,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/641163880_17949804756106896_6773589583076939772_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTI4NHgxNzExLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QGahr6UH_5ImW3AG30LzCPVjUmXl_smXbv6LO8apu8wDypCwV8HwbDORJViDAJST84&_nc_ohc=BaOP9yjX5MQQ7kNvwEj-5v7&_nc_gid=-xuas9TmIB5q4bqvbGVxzA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0NDY0MjExNDk4Mjg3NjM4Nw%3D%3D.3-ccb7-5&oh=00_AfxT3A4oFIroZbTnE40QmpSfaWtXY4jrBxVFypPgrZF1Tw&oe=69C04379&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@ahastudio/post/DVa6bQ4Dzk1",
+      "url": "https://www.threads.com/@ahastudio/post/DVa6bQ4Dzk1",
       "created_at": "2026-03-03 20:24:46",
       "date": "2026-03-03",
       "crawled_at": "2026-03-18T17:48:43.865",
@@ -12862,7 +12862,7 @@
       "display_name": "gptaku_ai",
       "full_text": "AI로 트래픽 터트릴 수 있는 주제 30가지\n\n@careernomad_  이렇게 하는거 맞지??\n내가봐도 거를 타선이 하나도 없네",
       "media": [],
-      "url": "https://www.threads.net/@gptaku_ai/post/DVa_nPak9RS",
+      "url": "https://www.threads.com/@gptaku_ai/post/DVa_nPak9RS",
       "created_at": "2026-03-03 21:10:05",
       "date": "2026-03-03",
       "crawled_at": "2026-03-18T17:48:43.865",
@@ -12886,7 +12886,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/642353954_17930358087206440_6240564090748853750_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTQ0MHgxNTAwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QG6q_6BNrORIKyVycg7FoeyNVMb3yoi1nD9xiHrVJ9Ky4m4YRbvPBYsP20jQ-uUFEc&_nc_ohc=tD2EdA3bPX4Q7kNvwFfOJdA&_nc_gid=hEFVwBxpjS5vaKoCJRHWkg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0MzU3MDc0MjE1OTU2NTMyNw%3D%3D.3-ccb7-5&oh=00_Afw1zSTZPKgxtdtuNVbWdhlq7LF4qtHFtue7TvYt3Gl6VA&oe=69C03E83&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@careerhackeralex/post/DVXG0MrAVfH",
+      "url": "https://www.threads.com/@careerhackeralex/post/DVXG0MrAVfH",
       "created_at": "2026-03-02 08:56:04",
       "date": "2026-03-02",
       "crawled_at": "2026-03-18T17:48:46.889",
@@ -12910,7 +12910,7 @@
       "display_name": "yun_ja_dong",
       "full_text": "윤자동팀이 점점 변하고 있습니다.\n\n개발은 당연히 클로드코드로 하고 있고\n견적서를 매일 작성해야되네? 클로드코드로 하기\n콘텐츠를 매일 기획해야되네? 클로드코드 써보기\n강의자료를 매일 만들어야되네? 클로드코드로 만들기\n\n2번 이상 반복되는 업무가 생기면\n무조건 클로드코드에게 물어보며 일하는 문화가 생기고 있습니다.\n클로드코드보다 더 뛰어난 제 3의 툴이 나올 수도 있겠으나\n지금의 이 사고방식과 습관이 회사의 DNA를 바꾼다고 생각합니다.\n\n모든 직원이 클코MAX 200 요금제가 부족하다며\n더 사달라는 날이 오길 기대하고 있습니다.",
       "media": [],
-      "url": "https://www.threads.net/@yun_ja_dong/post/DVaS92nkzJ6",
+      "url": "https://www.threads.com/@yun_ja_dong/post/DVaS92nkzJ6",
       "created_at": "2026-03-03 14:39:57",
       "date": "2026-03-03",
       "crawled_at": "2026-03-18T17:48:46.889",
@@ -12934,7 +12934,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/643587033_17945802879118003_278875867050890174_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTQ0MHgxODAwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QFp-Dmv8DOT5deRkylPRumD590uTBGn3isEuA-nzvInwl-p4PDEQqo1l1Qp-ox7k5s&_nc_ohc=40GeNLHi8sEQ7kNvwFyr1m6&_nc_gid=V9yveQX7VXkI4vzothxZDw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0Mzg3MjcxMzk0NTk4NDMxNQ%3D%3D.3-ccb7-5&oh=00_AfwFBLa4y4wnFFSfHEjpZDyXzzyCpyWmn3rjsTYVnaEceA&oe=69C03EE9&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@design_boc/post/DVYLkuljxBN",
+      "url": "https://www.threads.com/@design_boc/post/DVYLkuljxBN",
       "created_at": "2026-03-02 18:56:53",
       "date": "2026-03-02",
       "crawled_at": "2026-03-18T17:48:46.890",
@@ -12958,7 +12958,7 @@
       "display_name": "design_boc",
       "full_text": "대박이죠?\n폰트 이름 알려주면 그걸로 세팅해주더라구요!\n메인 타이틀: G마켓 bold\n본문 : pretendard regular\n이런식으로 하면 그렇게 바꿔주고,\n컬러도 메인컬러/서브컬러/텍스트 컬러 지정하면 그렇게 맞춰주더라구요!!!\n\n진------짜 신기해요!!!",
       "media": [],
-      "url": "https://www.threads.net/@design_boc/post/DVYNENBDxVb",
+      "url": "https://www.threads.com/@design_boc/post/DVYNENBDxVb",
       "created_at": "2026-03-02 19:09:55",
       "date": "2026-03-02",
       "crawled_at": "2026-03-18T17:48:46.890",
@@ -12980,7 +12980,7 @@
       "display_name": "ddg.kang",
       "full_text": "요즘 코덱스로 옮겨가는 분들이 꽤 보여서\n주말에 ChatGPT $200, GLM Coding $30 플랜 구독하고\ncodex, oh-my-opencode, glm-5 등등 직접 다 돌려봤는데요.\n\n종합적으로는 여전히 클코가 좋은 것 같거든요.\n확실히 코드베이스 전체 탐색이나 맥락 파악은 Codex가 낫긴 한데,\nSkills, Hooks, Agent Teams 세팅하고 나면 클코가 차원이 달라서요.\n\n근데 제가 잘 모르는 걸 수도 있어서 여쭤봅니다.\n코덱스로 옮기신 분들, 어떤 이유로 옮기셨나요?\nAI가 내뱉는 답변 말고 실제 인간 후기가 궁금해서요.",
       "media": [],
-      "url": "https://www.threads.net/@ddg.kang/post/DVXdGg1E6-J",
+      "url": "https://www.threads.com/@ddg.kang/post/DVXdGg1E6-J",
       "created_at": "2026-03-02 12:10:48",
       "date": "2026-03-02",
       "crawled_at": "2026-03-18T17:48:49.903",
@@ -13002,7 +13002,7 @@
       "display_name": "yourgpt3650",
       "full_text": "제미나이가 이제 맥킨지 컨설턴트처럼 분석해준다. 무료로.\n\n컨설팅 한 번에 수천만 원이다.\n근데 제미나이한테 제대로 시키면 같은 수준의 분석이 나온다.\n\n업무 분석 레벨을 완전히 바꿔줄 제미나이 프롬프트 7개 공개.\n\n---\n\n1. 3C 분석 자동화\n\n아래 사업 정보를 읽고 3C 분석을 해줘.\n[사업 설명 붙여넣기]\nCompany: 우리의 강점, 약점, 핵심 역량\nCustomer: 타겟 고객의 니즈, 행동 패턴, 미충족 수요\nCompetitor: 주요 경쟁사 3곳의 전략, 강점, 약점\n각 항목을 표로 정리하고\n3C 분석 기반 전략적 시사점 3가지를 도출해줘.\n출처 포함 필수.\n\n---\n\n2. SWOT + 실행 전략\n\n아래 사업 상황을 분석해줘.\n[사업 현황 붙여넣기]\nSWOT 분석을 하되 단순 나열하지 마.\nSO전략(강점으로 기회 잡기), WT전략(약점과 위협 동시 해결) 등\n교차 전략까지 구체적으로 도출해줘.\n각 전략마다 실행 액션 1개씩 제안해줘.\n\n---\n\n3. 시장 규모 추정\n\n[시장: 예) 한국 반려동물 건강식품 시장]의 규모를 추정해줘.\n탑다운, 바텀업 두 가지 방식으로 각각 계산하고\n사용한 가정과 데이터 출처를 명시해줘.\n최종 추정치를 범위(보수적~낙관적)로 제시하고\n이 시장에 진입할 가치가 있는지 결론도 내줘.\n\n---\n\n4. 로직트리 문제 분해\n\n아래 비즈니스 문제를 해결해줘.\n[문제: 예) 우리 쇼핑몰 재구매율이 15%에서 오르지 않는다]\n이 문제를 MECE 원칙에 따라 로직트리로 분해해줘.\n최소 3단계까지 분해하고\n각 가지(branch)마다 가능한 원인과 검증 방법을 제시해줘.\n맥킨지 신입 컨설턴트가 파트너에게 보고하는 수준으로.\n\n---\n\n5. 경쟁사 벤치마킹\n\n아래 경쟁사 3곳을 분석해줘.\n[경쟁사 1, 2, 3]\n최근 6개월 뉴스, 제품 출시, 마케팅 캠페인을 조사하고\n각 경쟁사의 전략 포지셔닝을 2x2 매트릭스로 정리해줘.\n우리가 공략할 수 있는 빈 포지션을 찾아주고\n구체적 진입 전략 2가지를 제안해줘.\n출처 링크 포함.\n\n---\n\n6. 재무 데이터 해석\n\n아래 재무 데이터를 분석해줘.\n[매출, 영업이익, 고객수, 객단가 등 데이터 붙여넣기]\n이 데이터에서 발견할 수 있는 핵심 인사이트 3가지를 알려줘.\n각 인사이트가 의미하는 것을 비재무 담당자도 이해할 수 있게 설명하고\n다음 분기에 집중해야 할 액션 3가지를 제안해줘.\n차트로 표현한다면 어떤 차트가 적합한지도 추천해줘.\n\n---\n\n7. 전략 보고서 원페이저\n\n위에서 분석한 내용을 종합해서\n임원 보고용 원페이저를 만들어줘.\n구성: 현황 요약 3줄 + 핵심 이슈 3개 + 전략 방향 3개 + 즉시 실행 액션 3개.\n전체 분량 A4 1장 이내.\n맥킨지 보고서처럼 결론부터 쓰고 근거를 뒤에 배치해줘.\n\n---\n\n컨설팅 수천만 원 쓰는 것보다\n이 프롬프트 7개로 제미나이한테 시키는 게 10배 빠르다.\n\n분석 못하는 건 머리가 아니라 프롬프트다.\n\nhttps://litt.ly/yourgpt3650",
       "media": [],
-      "url": "https://www.threads.net/@yourgpt3650/post/DVYpsQlkn8n",
+      "url": "https://www.threads.com/@yourgpt3650/post/DVYpsQlkn8n",
       "created_at": "2026-03-02 23:20:03",
       "date": "2026-03-02",
       "crawled_at": "2026-03-18T17:48:49.903",
@@ -13023,7 +13023,7 @@
       "display_name": "papapat.ai",
       "full_text": "15분짜리 YouTube 영상\n끝까지 볼 시간이 없었다\n\nClaude한테 링크 하나 던졌다\n30초 만에 요약이 나왔다\n\nMCP 서버 하나 깔았을 뿐이다",
       "media": [],
-      "url": "https://www.threads.net/@papapat.ai/post/DVYPi8FgVWn",
+      "url": "https://www.threads.com/@papapat.ai/post/DVYPi8FgVWn",
       "created_at": "2026-03-02 19:31:35",
       "date": "2026-03-02",
       "crawled_at": "2026-03-18T17:48:49.903",
@@ -13048,7 +13048,7 @@
       "display_name": "Geum Verse",
       "full_text": "AI한테 시니어 개발자 13년치 지식을 주입해봤다\n\n코드 짜는 AI 말고\n\"이 기능 지금 만들면 망한다\"고 말해주는 AI\n\n현업 개발 프로세스 13단계를 분석해서\n5개 에이전트로 쪼갰어요.\n\n핵심은 Kill Metric 🎯\n\n\"이 숫자가 이렇게 되면 즉시 롤백\" —\n이걸 정의 못 하면 에이전트가 다음 단계를 아예 막아버림.\n\n기획할 때 뿐만 아니라\nA/B 테스트 해석, 장애 Post-Mortem까지\nClaude가 시니어처럼 까칠하게 체크해줌.\n\nSKILL.md 7개 파일로 완성.\nClaude Code 쓰는 분이면 바로 적용 가능합니다.\n\n\"더 조심한다\" 같은 액션 아이템은 거부하는 Retro Agent가 제일 마음에 듦 ㅋㅋ",
       "media": [],
-      "url": "https://www.threads.net/@geumverse_ai/post/DVWRb0IE_vj",
+      "url": "https://www.threads.com/@geumverse_ai/post/DVWRb0IE_vj",
       "created_at": "2026-03-02 01:09:37",
       "date": "2026-03-02",
       "crawled_at": "2026-03-18T17:48:49.903",
@@ -13073,7 +13073,7 @@
       "display_name": "SEUNGWOO LEE",
       "full_text": "처음부터 Codex 만 쓰고 있어서 다른 에이전트의 사정은 잘 모르겠습니다만, VSCode 나 Codex App 이나 Codex CLI 의 app-server 를 사용해서 똑같은 방식으로 동작하구요. (앞단 프론트엔드만 다를 뿐이죠.) Skills 나 AGENTS.md 같은건 Gemini 도움으로 깎아서 쓰고 있는데 만족하고 있습니다.\n\nMCP 는 CLI 에서 바로 실행하게 하면 되는지라 쓸 일이 없어서 걷어낸지 오래구요.",
       "media": [],
-      "url": "https://www.threads.net/@keepgoing.lee.518/post/DVXx3OjjzlV",
+      "url": "https://www.threads.com/@keepgoing.lee.518/post/DVXx3OjjzlV",
       "created_at": "2026-03-02 15:12:13",
       "date": "2026-03-02",
       "crawled_at": "2026-03-18T17:48:52.916",
@@ -13101,7 +13101,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/640423048_17884200903461066_991420996610989943_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uODE5eDc2Ny5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QHiP0cGOzeJ3Ip82rS4SF8HlWEiwwkveiT0LFoalCpvmJvflumPIWv6YUekFJUG34s&_nc_ohc=PgUKKKQGeA8Q7kNvwEK0EPc&_nc_gid=pDlHwp18bltqp5vgWiY3wQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0MzcwNDAwNDYyNzU3OTY1NA%3D%3D.3-ccb7-5&oh=00_AfwLsio-zuwQqJshiheNWDdICLisKmJ-_r-mBlB4sowrCQ&oe=69C0451B&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@sasirim/post/DVXlG1pksMG",
+      "url": "https://www.threads.com/@sasirim/post/DVXlG1pksMG",
       "created_at": "2026-03-02 13:20:45",
       "date": "2026-03-02",
       "crawled_at": "2026-03-18T17:48:52.917",
@@ -13128,7 +13128,7 @@
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/640402565_17860577436608206_1220287512733469719_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTg2Nng2NjYuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QGy2gHWvGSmkNyurcNjOQyKlAmddzGVU4xw-1ADzQlnKiBD7jakfRpjlll_n8Yy734&_nc_ohc=r_O0LHogkDAQ7kNvwGtpbCG&_nc_gid=ZYyAUXONGxFvxkaevr7HEw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0MzgwNDU5OTM1MzkxMDk3OQ%3D%3D.3-ccb7-5&oh=00_AfzXtKlYs6VLb6GpyvI-l0eOBuRrLoYG6Rp256vek0yPmw&oe=69C03B30&_nc_sid=10d13b",
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/641414909_17860574688608206_3197768423782172421_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTgwMng4MjAuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QGy2gHWvGSmkNyurcNjOQyKlAmddzGVU4xw-1ADzQlnKiBD7jakfRpjlll_n8Yy734&_nc_ohc=sPPWxxjg0E8Q7kNvwFWoOGC&_nc_gid=ZYyAUXONGxFvxkaevr7HEw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0Mzc5MzA2MjgzNjg0ODM3Mg%3D%3D.3-ccb7-5&oh=00_AfxMQGJWnwh5m1Y-j_y_Qc0_fRTq2XMrW9kYOt--jVGDFg&oe=69C04EC9&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@untruth.study/post/DVX4MvoADrT",
+      "url": "https://www.threads.com/@untruth.study/post/DVX4MvoADrT",
       "created_at": "2026-03-02 16:07:35",
       "date": "2026-03-02",
       "crawled_at": "2026-03-18T17:48:52.917",
@@ -13155,7 +13155,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/641469313_17907848496357544_7792851938767834653_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNzk1eDE1NC5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QHtIjK_VxOFvExpB5QnjypmC-z4m5NFZ-BGw3hDdS_zdxL6ZwlGFbGFKgZnqKHbNsc&_nc_ohc=W0jg76sU-UUQ7kNvwFKejoa&_nc_gid=skQAHksvI_t-EZXCHIhMCg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0Mzk5NDEzNzU4NzMxMjA1OA%3D%3D.3-ccb7-5&oh=00_AfzWk3pRs3w5b4VRdMTMiyhqVR5KCvGW1awxxZrSzJE9IQ&oe=69C04F80&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@ai_sync_club/post/DVYnEO_k0ly",
+      "url": "https://www.threads.com/@ai_sync_club/post/DVYnEO_k0ly",
       "created_at": "2026-03-02 22:57:07",
       "date": "2026-03-02",
       "crawled_at": "2026-03-18T17:48:52.917",
@@ -13181,7 +13181,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/621664029_17859087621596148_2693087313723387440_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTI5MHg3MDYuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QGwO7bXvajj9EnPhgfGzPUAXxv6-c2j5OEtdcASaQYmQU8SVG-DTcfo2L10k3l64pw&_nc_ohc=1ekrMdl2fw8Q7kNvwF98oWD&_nc_gid=qvblV0Kxy-2vEQdQ0c8_9Q&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgxNjk2NzU3MTg3OTI4MTg0NQ%3D%3D.3-ccb7-5&oh=00_Afwo4LlH3b2CMCyIvJdb5vskH3erK0kTSsX8r1oQI26jWA&oe=69C028E8&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@feelfree_ai/post/DT4l8iRDMS1",
+      "url": "https://www.threads.com/@feelfree_ai/post/DT4l8iRDMS1",
       "created_at": "2026-01-24 16:00:14",
       "date": "2026-01-24",
       "crawled_at": "2026-03-18T17:48:55.937",
@@ -13207,7 +13207,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/628321879_17894204568407638_6284434178799028268_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTUwMHgyMDAwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QFviTjfKu-Zfyy64rMUq6FyvtGEOMa3p1SWW8ymtCvmQqZW-VeBQRQ0eXamsli_-UA&_nc_ohc=-UhvZxNmMfcQ7kNvwEfMWIx&_nc_gid=Buzvw1RTOfeWWSj2BnHgPQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyNjYzNDQ1Nzk3ODUwMTc1NQ%3D%3D.3-ccb7-5&oh=00_Afwl42MVMN193WSNFCA9ZV2Z9XbZFa-Q7Vu8NNfjbY3wSQ&oe=69C03E96&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@71_102/post/DUa78PhE_p7",
+      "url": "https://www.threads.com/@71_102/post/DUa78PhE_p7",
       "created_at": "2026-02-07 00:06:36",
       "date": "2026-02-07",
       "crawled_at": "2026-03-18T17:48:55.937",
@@ -13230,7 +13230,7 @@
       "display_name": "황섬",
       "full_text": "task master 도입해보려고 하다가 아직 claude code도 사용하지 않는 동료가 있어서 접었습니다. 같이 사용하는 것이면 모를까 jira로 할 일 관리하는데 task master 도입하려니 좀 애매하더군요.. ㅠ\n전 task master 아이디어 차용해서 prd 생성하고 claude 통해서 task 산출하고 jira 티켓 생성하는 것으로 방향을 잡았어요..\ntask master 사용하실 때 혼자 사용하시나요? 다른 동료가 있다면 동료분과 할일 처리는 어떻게 하시는지 궁금합니다.",
       "media": [],
-      "url": "https://www.threads.net/@hscookie/post/DMhb3u2STEx",
+      "url": "https://www.threads.com/@hscookie/post/DMhb3u2STEx",
       "created_at": "2025-07-25 16:29:54",
       "date": "2025-07-25",
       "crawled_at": "2026-03-18T17:48:55.937",
@@ -13255,7 +13255,7 @@
       "display_name": "보헤",
       "full_text": "추가적으로 꿀팁 준다면 task master 를 직접 만들지 말고 ai 를 시키고, 체크 리스트 형태의 md 파일로 . 그리고 task 가 끝날때 마다 업데이트 시키면 됨.",
       "media": [],
-      "url": "https://www.threads.net/@bohe76/post/DMhPJjphpSW",
+      "url": "https://www.threads.com/@bohe76/post/DMhPJjphpSW",
       "created_at": "2025-07-25 14:38:44",
       "date": "2025-07-25",
       "crawled_at": "2026-03-18T17:48:55.937",
@@ -13281,7 +13281,7 @@
       "display_name": "ai_dev_newbie",
       "full_text": "💻요즘 내 개발플로우💻\n\n1️⃣ 계획 → Claude Code(plan 모드) + Superpowers plan\n2️⃣ 구현 → Claude code Agent teams\n3️⃣ 리뷰 → Codex\n4️⃣ 보완 → 다시 Claude Code\n\nClaude code plan 모드 켜고 Superpowers의 plan으로 설계 잡은 다음\nagent teams가 나눠서 병렬로 구현!\n\n구현된 코드베이스를 Codex한테 코드 리뷰 맡기고\n리뷰 결과를 다시 Claude Code에 넘겨서 수정!\n\nAI끼리 핑퐁하면서 코드 퀄리티 올리는 구조👍\n\n——————-\n\n개발자의 역할이 바뀌어 가는 것 같습니다..😀\n\n여러분들은 어떻게 워크플로우를 구상하셨나요!\n함께 공유해봐요:)",
       "media": [],
-      "url": "https://www.threads.net/@ai_dev_newbie/post/DUko3X9EiCR",
+      "url": "https://www.threads.com/@ai_dev_newbie/post/DUko3X9EiCR",
       "created_at": "2026-02-10 18:32:19",
       "date": "2026-02-10",
       "crawled_at": "2026-03-18T17:48:58.965",
@@ -13303,7 +13303,7 @@
       "display_name": "danielkimsw",
       "full_text": "내가 클로드 코드를 쓰는 이유는,\n\n클로드 코드가 여러모로 개발 관련해서 제일 정보가 많기 때문이야.\n내가 게을러서 그런가 싶긴 하지만,\n선점효과가 있어서인지\n정말 찐 유저들의 고퀄리티 정보가 굉장히 많음.\n\n예를 들어 몇가지 공유하자면\n1. ClaudeLog - 여기 있는 자료만 잘 읽어도, 그 누구보다 잘쓰고 있는거임.\n2. Superpowers blog - 정말 깊이있게 엔지니어링에 활용한다면 어디까지 갈 수 있나를 알 수 있음.\n3. awesome-claude-code - awesome 시리즈 레포인데, 하나하나 파보는 재미가 있음.\n4. 그 외에 neondb 등 꽤나 알려진 회사들에서 cheatsheet를 많이 내는 편.\n\n혹시 추가 정보나 링크가 필요하면 얘기해줘~",
       "media": [],
-      "url": "https://www.threads.net/@danielkimsw/post/DRUSJbIilu_",
+      "url": "https://www.threads.com/@danielkimsw/post/DRUSJbIilu_",
       "created_at": "2025-11-21 20:31:47",
       "date": "2025-11-21",
       "crawled_at": "2026-03-18T17:48:58.965",
@@ -13325,7 +13325,7 @@
       "display_name": "flowkater",
       "full_text": "다시 Codex로 돌아왔다. Codex App도 굉장히 만족스럽고.\n프로젝트가 프로덕션 사이즈로 올라오니까 확실히 Codex 가 넘사다. 속도도 이전보다 훨 빨라졌고.\n에이전트 팀이니 뭐니 사용해봐도 딱히 큰 체감 못느끼고 Opencode도 백그라운드 에이전트가 응답도 없이 뻗는 경우도 너무 많다. Claude code는 이제 프로토타입용, 커밋 자동화툴, 코딩 외 워크플로우 툴이 되어버림. (코딩말고 다른 용도로 더 많이 쓰는듯..) \n(클코는 진짜 compaction 이후 너무 자주 맥락을 잊어먹는듯..)\n\nCodex+Superpowers 으로 Plan 모드 잡고 구현들어가면 프로덕션 프로젝트에서도 거의 원샷으로 구현 가능. 물론 5.3-xhigh 를 쓰는데 옆집 클로드에 비해 Codex 프로는 토큰도 넉넉하고.\n\nOpenclaw 개발자도 Codex만 쓴다고 하더라..\n\n---\n\nSuperpowers 는 클코에서도 유용하니까 궁금하면 참고\nhttps://flowkater.io/posts/2026-02-08-superpowers-introduction/",
       "media": [],
-      "url": "https://www.threads.net/@flowkater/post/DUhPj5VD3X8",
+      "url": "https://www.threads.com/@flowkater/post/DUhPj5VD3X8",
       "created_at": "2026-02-09 10:53:29",
       "date": "2026-02-09",
       "crawled_at": "2026-03-18T17:48:58.965",
@@ -13349,7 +13349,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/625664630_17860686297596148_4648991486876601031_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTI5MHgxMDE2LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QGlreqc_CxemdzLxKVSESen1ao6S0_MLtfL82g8yBFLxUHsgFmZGeifwNz1n7C9OQA&_nc_ohc=-onIN1-nfdQQ7kNvwH9xw79&_nc_gid=zXFkp66YLEN4QKj6nzLLJQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyNTAwMDY1NzM0MTkxNTYwMQ%3D%3D.3-ccb7-5&oh=00_AfxqqWcrZ2FigTtZMDnU8td8yEb5hMXSzzC00oo9CoIxVw&oe=69C04BDA&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@feelfree_ai/post/DUVIdYjgBXK",
+      "url": "https://www.threads.com/@feelfree_ai/post/DUVIdYjgBXK",
       "created_at": "2026-02-04 18:00:33",
       "date": "2026-02-04",
       "crawled_at": "2026-03-18T17:48:58.965",
@@ -13373,7 +13373,7 @@
       "display_name": "jjlabsio",
       "full_text": "자기전에 클로드코드 관련된 팁들 읽어보고 있는데 superpowers를 발견하고 잠을 못자고 있습니다.\n\n앤트로픽이 이미 1달전에 Claude plugins official marketplace에 추가했는데 이걸 이제 발견하다니 ㅠㅠ\n\n한동안 everything-claude-code 커스텀해서 쓰고 있었는데 비교 좀 해봐야겠습니다.",
       "media": [],
-      "url": "https://www.threads.net/@jjlabsio/post/DVT8ntXD9b1",
+      "url": "https://www.threads.com/@jjlabsio/post/DVT8ntXD9b1",
       "created_at": "2026-03-01 03:29:19",
       "date": "2026-03-01",
       "crawled_at": "2026-03-18T17:49:01.987",
@@ -13395,7 +13395,7 @@
       "display_name": "steady__study.dev",
       "full_text": "순정으로 시작해 내게 딱 맞는 워크플로우를 자라나게 하는 방법\n\n(블로그에 각 리포의 링크가 있습니다: https://www.stdy.blog/growing-custom-workflow/)\n\n전체 업무 워크플로우를 한방에 끝내준다는 클로드 코드 하네스가 어느새 꽤 많아졌습니다. 다들 깃헙 스타도 많이 찍혔죠.\n- (39k) 클코 오피셜 플러그인으로 받아들여진 superpowers\n- (34k) 앤트로픽 해커톤 우승자의 everything-claude-code\n- (6.6k) Every의 compound-engineering-plugin\n- (3.4k) 큰 화제가 되었던 oh-my-opencode 의 클로드 코드 포팅 oh-my-claudecode\n\n그런데 AX 코칭을 하다 보니, 리터러시가 낮은 비개발자 분들에게는 이런 도구를 한방에 도입하는 게 오히려 해가 될 수 있다는 걸 느낍니다. 몇 가지 이유를 들어보면:\n\n---\n\n- IDE와 터미널, 클로드 코드라는 생소한 도구들에 익숙해지는 것도 어려운데, 하네스까지 얹어지면 더욱 압도됨\n- 조금만 입력해도 와다다다 일어나는 블랙박스의 영역이 훨씬 커진다. 뭐가 되긴 됐는데... 지금 무슨 일이 일어나고 있는거지?\n- 아무리 좋다는 하네스도 현 시점의 스냅샷에 불과. 개발자들은 계속 업데이트할텐데 그거 어떻게 따라감? 모델 더 좋아지면 쓸모없어질 수도 있고, 클코가 어느새 내장해버릴지도 모름\n- 모든 하네스는 그 개발자 개인에게 최적화된 것. 내 상황에서 쓰려니 너무 과할 수도 부족할 수도 있음\n\n---\n\n그래서 저는 초심자일수록 최적의 세팅을 가져다 쓰기보다는 되도록 순정에서 시작해보길 권합니다. 딱 이거만 준비하면 됩니다.\n- 깃헙 가입과 클로드 코드 설치\n- https://skills.sh/ 에서 skill-creator 스킬 찾아 설치하면서 find-skills 도 설치 (전자는 스킬 만드는 스킬, 후자는 스킬 찾는 스킬)\n\n그리고 일단 클코를 켜서 맨땅 헤딩을 시작합니다. 동료에게 부탁하듯, 내가 뭘 위해 뭘 하고 싶은지 이야기합니다. 의견도 묻고, 작업 성공 기준도 논의하고. 좌충우돌 후 세션 끝날 때쯤 '대략' 이런 식으로 요청합니다. ('대략' = 그대로 복붙하시지 말라는 뜻)\n\n---\n\n<프롬프트>\n이번 세션을 바탕으로 우리가 다음번에는 만족스러운 결과에 더 일찍 도달할 수 있게 돕는 회고 문서를 함께 만들어봅시다. 이런 내용을 생각 중입니다.\n1. 세션에서 드러난, 나와 내 조직과 내 프로젝트에 대한 정보 중 이후 작업에 도움될만한 걸 문서화\n2. 그 외 내 업무 스타일과 협업 방식은 CLAUDE md 에 문서화\n3. 내 프롬프팅 습관 중 개선할 만한 부분\n4. 내 지식/경험 수준을 짐작해볼 때 내게 도움될 만한 학습자료들의 링크. 그리고 이 프로젝트에서 도움될 자료도.\n5. find-skills로 찾은 내 상황에 도움될 만한 스킬들. 딱 맞는 게 안 보인다면 skill-creator 로 하나 만들기 위한 계획.\n\n제 의도를 이해하셨나요? 당신의 의견도 듣고 싶고, 다른 좋은 방법들을 제안해주셔도 좋습니다.\n</프롬프트>\n\n---\n\n이렇게 하면 매 세션이 끝날 때마다 내 맥락에 맞는 스킬이 점점 쌓이고, 나만의 워크플로우가 자라납니다(Bootstrapping). 나도, 클코도 함께 더 똑똑해집니다(Compounding).\n\n그렇게 AI 활용 역량이 점차 높아지면 슬슬 '더 좋은 방법 없나?' 같은 생각이 들 거예요. 그때쯤 다른 팀원과 각자의 방식을 공유하면서 합칠 거 합치고, superpowers 같은 거 까보면서 일부 가져와도 보면서 다음 레벨로 올라가면 됩니다. 팀에 함께 적용할 플러그인도 만들어보고요.\n\n사실 위에 제가 쓴 프롬프트도 또하나의 하네스에 불과합니다. 의도만 가져가서 본인에게 맞게 써보시길 권합니다. 저 또한 저만의 워크플로우 하네스를 개발해서 테스트 중인데, 잘 뽑히면 '일주일프'로 공유해보겠습니다.",
       "media": [],
-      "url": "https://www.threads.net/@steady__study.dev/post/DUGFSwzgfmA",
+      "url": "https://www.threads.com/@steady__study.dev/post/DUGFSwzgfmA",
       "created_at": "2026-01-29 21:44:16",
       "date": "2026-01-29",
       "crawled_at": "2026-03-18T17:49:01.987",
@@ -13416,7 +13416,7 @@
       "display_name": "JAY'S AI",
       "full_text": "4/ 9위~12위\n\n9. musistudio/claude-code-router ⭐28,300\n작업 난이도별 모델 자동 분배. Opus 비용 절감.\n→ github.com/musistudio/claude-code-router\n\n10. eyaltoledano/claude-task-master ⭐25,600\n큰 프로젝트 태스크 자동 분해+순서 정리.\n→ github.com/eyaltoledano/claude-task-master\n\n11. hesreallyhim/awesome-claude-code ⭐25,000\n플러그인/스킬/훅 전체 생태계 지도.\n→ github.com/hesreallyhim/awesome-claude-code\n\n12. BloopAI/vibe-kanban ⭐21,800\n에이전트 작업 현황을 칸반 보드로 시각화.\n→ github.com/BloopAI/vibe-kanban",
       "media": [],
-      "url": "https://www.threads.net/@jay_ai__/post/DVLSP_9iQoK",
+      "url": "https://www.threads.com/@jay_ai__/post/DVLSP_9iQoK",
       "created_at": "2026-02-25 18:45:11",
       "date": "2026-02-25",
       "crawled_at": "2026-03-18T17:49:01.987",
@@ -13443,7 +13443,7 @@
       "display_name": "jay_ai__",
       "full_text": "참 힘듭니다.\n\nClaude Code, 하루가 멀다하고 새로워지고 있습니다.\n플러그인도 참 많이 나왔습니다.\n\n잘 따라가시라고 인기 많은 순\n가장 유명한 플러그인만 50개 모아봤습니다.\n\n저장하고 필요한 것부터 설치하세요\n\n---\n\n2/ 1위~4위\n\n1. anthropics/skills ⭐75,300\n공식 스킬 템플릿. 복붙하고 바로 시작.\n→ github.com/anthropics/skills\n\n2. obra/superpowers ⭐60,900\n시키지 않아도 알아서 계획하고 실행.\n→ github.com/obra/superpowers\n\n3. affaan-m/everything-claude-code ⭐51,600\n에이전트+스킬+훅 설치 하나로 전부 세팅.\n→ github.com/affaan-m/everything-claude-code\n\n4. upstash/context7 ⭐46,800\n최신 공식 문서 실시간 주입. 옛날 문법 방지.\n→ github.com/upstash/context7\n\n---\n\n3/ 5위~8위\n\n5. ComposioHQ/awesome-claude-skills ⭐37,500\n380개+ 스킬 한곳에서 검색.\n→ github.com/ComposioHQ/awesome-claude-skills\n\n6. nextlevelbuilder/ui-ux-pro-max-skill ⭐34,400\nAI가 만든 UI를 프로급으로 격상.\n→ github.com/nextlevelbuilder/ui-ux-pro-max-skill\n\n7. thedotmack/claude-mem ⭐30,800\n세션 끊겨도 어제 작업 기억. 자동 캡처+압축+주입.\n→ github.com/thedotmack/claude-mem\n\n8. wshobson/agents ⭐29,300\n에이전트 112개 즉시 사용. 직접 만들 필요 없음.\n→ github.com/wshobson/agents\n\n---\n\n4/ 9위~12위\n\n9. musistudio/claude-code-router ⭐28,300\n작업 난이도별 모델 자동 분배. Opus 비용 절감.\n→ github.com/musistudio/claude-code-router\n\n10. eyaltoledano/claude-task-master ⭐25,600\n큰 프로젝트 태스크 자동 분해+순서 정리.\n→ github.com/eyaltoledano/claude-task-master\n\n11. hesreallyhim/awesome-claude-code ⭐25,000\n플러그인/스킬/훅 전체 생태계 지도.\n→ github.com/hesreallyhim/awesome-claude-code\n\n12. BloopAI/vibe-kanban ⭐21,800\n에이전트 작업 현황을 칸반 보드로 시각화.\n→ github.com/BloopAI/vibe-kanban\n\n---\n\n5/ 13위~16위\n\n13. davila7/claude-code-templates ⭐21,300\n200+ 프로젝트 템플릿에서 골라 시작.\n→ github.com/davila7/claude-code-templates\n\n14. SuperClaude-Org/SuperClaude_Framework ⭐21,000\n아키텍트, 리뷰어 등 역할 부여. 맥락 있는 코딩.\n→ github.com/SuperClaude-Org/SuperClaude_Framework\n\n15. gsd-build/get-shit-done ⭐19,700\n스펙 먼저, 구현은 그 다음. 워크플로우 강제.\n→ github.com/gsd-build/get-shit-done\n\n16. shareAI-lab/learn-claude-code ⭐17,700\nAI 에이전트를 100줄로 직접 만들어보는 교육용.\n→ github.com/shareAI-lab/learn-claude-code\n\n---\n\n6/ 17위~20위\n\n17. steveyegge/beads ⭐17,200\n브랜치 바꿔도 작업 맥락 유지. Git+메모리 동기화.\n→ github.com/steveyegge/beads\n\n18. vercel-labs/agent-browser ⭐15,400\nVercel이 만든 에이전트 전용 브라우저.\n→ github.com/vercel-labs/agent-browser\n\n19. OthmanAdi/planning-with-files ⭐14,500\n계획을 파일로 유지해서 방향 안 잃음.\n→ github.com/OthmanAdi/planning-with-files\n\n20. ruvnet/claude-flow ⭐14,400\n에이전트 여러 개 동시 투입. 오케스트레이터.\n→ github.com/ruvnet/claude-flow\n\n---\n\n7/ 21위~24위\n\n21. VoltAgent/awesome-claude-code-subagents ⭐11,300\n서브에이전트 100+ 영역별 목록.\n→ github.com/VoltAgent/awesome-claude-code-subagents\n\n22. ryoppippi/ccusage ⭐11,000\n토큰 사용량과 비용 한눈에 시각화.\n→ github.com/ryoppippi/ccusage\n\n23. EveryInc/compound-engineering-plugin ⭐9,500\n실패 패턴 자동 기록. 같은 실수 방지.\n→ github.com/EveryInc/compound-engineering-plugin\n\n24. anthropics/knowledge-work-plugins ⭐7,900\n코딩 외 업무도 Claude로. 공식 플러그인.\n→ github.com/anthropics/knowledge-work-plugins\n\n---\n\n8/ 25위~28위\n\n25. farion1231/cc-switch ⭐6,600\nAI CLI 5개 설정을 GUI 하나로 통합 관리.\n→ github.com/farion1231/cc-switch\n\n26. BehiSecc/awesome-claude-skills ⭐6,300\n스킬 카테고리별 정리 디렉토리.\n→ github.com/BehiSecc/awesome-claude-skills\n\n27. anthropics/claude-code-action ⭐5,800\nPR 올리면 Claude가 자동 리뷰. GitHub Actions.\n→ github.com/anthropics/claude-code-action\n\n28. JimLiu/baoyu-skills ⭐5,400\n번역, 글쓰기 등 비개발 영역 전문가 스킬.\n→ github.com/JimLiu/baoyu-skills\n\n---\n\n9/ 29위~32위\n\n29. Piebald-AI/claude-code-system-prompts ⭐4,900\n버전별 시스템 프롬프트 전체 아카이브.\n→ github.com/Piebald-AI/claude-code-system-prompts\n\n30. langgptai/awesome-claude-prompts ⭐4,400\n검증된 프롬프트 갖다 쓰기.\n→ github.com/langgptai/awesome-claude-prompts\n\n31. Pimzino/spec-workflow-mcp ⭐3,900\n코딩 전에 스펙부터. 스펙 기반 워크플로우.\n→ github.com/Pimzino/spec-workflow-mcp\n\n32. vijaythecoder/awesome-claude-agents ⭐3,900\nTech Lead부터 보안 전문가까지. 26종 서브에이전트.\n→ github.com/vijaythecoder/awesome-claude-agents\n\n---\n\n10/ 33위~36위\n\n33. Orchestra-Research/AI-Research-SKILLs ⭐3,900\nAI 논문/리서치 전용 엔지니어링 스킬.\n→ github.com/Orchestra-Research/AI-Research-SKILLs\n\n34. jarrodwatts/claude-hud ⭐3,700\n컨텍스트, 비용, 도구 사용 실시간 모니터링.\n→ github.com/jarrodwatts/claude-hud\n\n35. Jeffallan/claude-skills ⭐3,700\n풀스택 페어 프로그래머. 66종 전문 스킬.\n→ github.com/Jeffallan/claude-skills\n\n36. SawyerHood/dev-browser ⭐3,700\n에이전트가 브라우저 직접 조작.\n→ github.com/SawyerHood/dev-browser\n\n---\n\n11/ 37위~40위\n\n37. Dammyjay93/interface-design ⭐3,500\n디자인 시스템 기억시켜서 일관성 유지.\n→ github.com/Dammyjay93/interface-design\n\n38. mixedbread-ai/mgrep ⭐3,400\n코드, 이미지, PDF 의미 기반 검색.\n→ github.com/mixedbread-ai/mgrep\n\n39. ykdojo/claude-code-tips ⭐3,100\n고급 기능 제대로 쓰는 45가지 실전 팁.\n→ github.com/ykdojo/claude-code-tips\n\n40. czlonkowski/n8n-skills ⭐3,000\nn8n 워크플로우 전용 7종 스킬셋.\n→ github.com/czlonkowski/n8n-skills\n\n---\n\n12/ 41위~44위\n\n41. trailofbits/skills ⭐2,900\nTrail of Bits의 보안 취약점 분석 스킬.\n→ github.com/trailofbits/skills\n\n42. mvanhorn/last30days-skill ⭐2,900\nReddit, X 최근 30일 트렌드 자동 조사.\n→ github.com/mvanhorn/last30days-skill\n\n43. brennercruvinel/CCPlugins ⭐2,700\n자주 쓰는 역할 프롬프트를 커맨드로.\n→ github.com/brennercruvinel/CCPlugins\n\n44. davepoon/buildwithclaude ⭐2,500\n플러그인, 에이전트, 커맨드 통합 허브.\n→ github.com/davepoon/buildwithclaude\n\n---\n\n14/ 49위~50위\n\n49. greggh/claude-code.nvim ⭐1,900\nNeovim 커뮤니티 통합 플러그인.\n→ github.com/greggh/claude-code.nvim\n\n50. lackeyjb/playwright-skill ⭐1,800\nPlaywright 브라우저 테스트 자동화.\n→ github.com/lackeyjb/playwright-skill\n\n---\n\n15/ 이 시점 커뮤니티에서 가장 핫한 것들:\n\nclaude-mem (7위)\n→ 세션 간 기억 유지. Reddit 언급 1위 카테고리.\n\nTypeScript LSP (공식)\n→ 타입을 추측이 아닌 실제로 확인. 설치 수 69,000+.\n\nOpenBrowser MCP\n→ 브라우저 작업 토큰 144배 절약.\n\nclaude-code-router (9위)\n→ 난이도별 모델 자동 분배. Opus 비용 절감.\n\n---\n\n16/ 이것도 핫함\n\nui-ux-pro-max-skill (6위)\n→ AI가 만든 UI를 프로급으로 격상.\n\nsuperpowers (2위)\n→ 알아서 계획하고 실행. Reddit 추천 1위.\n\ncompound-engineering (23위)\n→ 실패 패턴 자동 기록. 같은 실수 방지.\n\nbeads (17위)\n→ 브랜치 바꿔도 작업 맥락 유지.\n\ntrailofbits/skills (41위)\n→ Trail of Bits 보안 취약점 분석.\n\n---\n\n17/ 설치법:\n\n① 마켓에서:\n/plugins → 검색 → 설치\n\n② GitHub에서:\nclaude plugin add https://github.com/obra/superpowers\n\n③ 스킬만:\nGitHub에서 SKILL.md 복사 → .claude/skills/에 붙여넣기\n\n스코프 설정 (어디에 적용할지):\n--scope user → 내 모든 프로젝트 (기본값)\n--scope project → 팀원 전체 공유\n--scope local → 나만, 이 프로젝트에서만\n\n예시:\nclaude plugin install superpowers --scope project",
       "media": [],
-      "url": "https://www.threads.net/@jay_ai__/post/DVLSJwvCRCB",
+      "url": "https://www.threads.com/@jay_ai__/post/DVLSJwvCRCB",
       "created_at": "2026-02-25 18:44:17",
       "date": "2026-02-25",
       "crawled_at": "2026-03-18T17:49:01.987",
@@ -13465,7 +13465,7 @@
       "display_name": "ddg.kang",
       "full_text": "월 서버비 0원으로 시작해서\n8개 서비스를 혼자 만들었습니다.\n\n전부 지금도 운영 중.\n비개발자 출신. 바이브코딩만으로.\n\nAI한테 \"뭐 쓰면 좋아?\"라고 물으면\n절대 안 나오는 조합들입니다.\n\n업계 사람들도 자기만 쓰고 싶어서\n아무도 공개 안 하는 것들.\n공개합니다. 🧵👇\n\n---\n\n이 스택 조합들의 공통점:\n✅ 0원으로 시작 가능\n✅ 트래픽이 J커브 그려도 비용은 선형 증가\n✅ 대기업이 수천만원 들여 구축하는 수준 그 이상\n\n1인 기업가 + 실무자분들\n삽질 좀 덜하시라고 정리합니다.\n\n---\n\n① 사용자 취향 기억하고 스스로 발전하는 AI 챗봇\n\nGemini-2.5-flash-lite\n+ Qdrant (벡터DB)\n+ Memobase (유저 기억)\n+ Acontext (컨텍스트 관리)\n+ Pusher (실시간 채팅)\n100명 동시접속 가능한\n실시간 대화 + AI 응답 가능.\n\nRAG 기반에 유저 취향 기억에\n자가 발전에 실시간 대화인데 0원으로 시작 가능.\n\n---\n\n② 제 8개 서비스 전부 이 조합입니다\n\nNext.js + BetterAuth + Neon DB\n+ Vercel + Cloudflare R2\n\nSupabase DB? → Neon DB로 바꾸세요.\nClerk Auth? → BetterAuth. 무료입니다.\n\n이 조합이면 인증, DB, 스토리지, 배포\n전부 해결됩니다.\n\n---\n\n③ 클래스101/유튜브 같은 영상 사이트?\n→ BunnyStream 하나면 끝.\n\n④ 디자인 모르면 Shadcn.\nTweakcn에서 조합 잡고 시작하면\n디자이너 없이도 깔끔하게 나옵니다.\n\n⑤ Tailwind CSS는 반드시 v3 쓰세요.\nv4 아닙니다. v3. 프로덕션에서 v4 쓰면 후회합니다.\n\n---\n\n⑥ 결제 + 세금 처리 한방에?\nhttp://Polar.sh\n\n국내+해외 결제 시스템 구축하고\n세금까지 알아서 처리해줍니다.\n\n코드 6줄이면 끝.\n\n---\n\n보너스. 별거 아닌데 삽질 줄여주는 3가지.\n\n⑦ npm 쓰지 마세요. pnpm 쓰세요.\n속도, 디스크 용량, 모노레포 전부 pnpm이 압도적입니다.\n바꾸는 데 5분이면 됩니다.\n\n⑧ 이메일 보내야 하면 무조건 Resend.\n세팅 10분. React로 이메일 템플릿 만들 수 있습니다.\n다른 거 쓸 이유가 없습니다.\n\n⑨ AI가 \"이건 직접 하셔야 합니다\" 하면?\n진짜 직접 해야 하는 건 10%도 안 됩니다.\nCLI, MCP로 가능한지 꼭 확인하세요.\n\n대부분 CLI 명령어 하나면 끝납니다.\nAI가 못 한다는 게 아니라\n\"브라우저에서 클릭해야 한다\"고 착각하는 겁니다.",
       "media": [],
-      "url": "https://www.threads.net/@ddg.kang/post/DVOiIv4k8fv",
+      "url": "https://www.threads.com/@ddg.kang/post/DVOiIv4k8fv",
       "created_at": "2026-02-27 01:01:38",
       "date": "2026-02-27",
       "crawled_at": "2026-03-18T17:49:04.998",
@@ -13487,7 +13487,7 @@
       "display_name": "ddg.kang",
       "full_text": "너무 쓰레드에 헛소리가 나돌아서 다시 써드림\n\n🤖 Claude — ♥️ but 200달러 짜리 써야함.\n🗄️ Supabase — 나중에 개비싸짐. Neon DB로 시작 ㄱㄱ\n🚀 Vercel — 나중에 개비싸짐. but 팩트는 대부분 고객 모으기 전에 망함. 처음애 개발 편의성이 압도적이므로 그냥 처음엔 쓰고 나중에 갈아타기.\n🌐 Namecheap — 굳이? 그냥 클라우드플레어 ㄱㄱ 가격 같고 훨씬 편함.\n📁 GitHub — ♥️\n📧 Resend — ♥️\n🔐 Clerk — 편하긴한데 나중에 MAU 많아지면 개비쌈. BetterAuth ㄱㄱ\n🛡️ Cloudflare — ♥️\n📊 PostHog — 처음에 이거 세팅하느라 고생하지 말고 Clarity, GA4로 시작\n🚨 Sentry — ♥️\n⚡ Upstash — ♥️ but 이거 잘못하면 요금폭탄 나옴 (pay-as-you-go 쓰다가 나중에 구독제로 가는거 추천)\n🧠 Pinecone — Qdrant가 훨 낫고 훨 쌈...",
       "media": [],
-      "url": "https://www.threads.net/@ddg.kang/post/DVTDpJME8-Y",
+      "url": "https://www.threads.com/@ddg.kang/post/DVTDpJME8-Y",
       "created_at": "2026-02-28 19:11:22",
       "date": "2026-02-28",
       "crawled_at": "2026-03-18T17:49:04.998",
@@ -13509,7 +13509,7 @@
       "display_name": "teabag_kor",
       "full_text": "옵시디언을 꽤 써봤다.\n\nMD로 지식 쌓고,\n링크 연결하고,\n그래프뷰도 돌려봤다.\n\n근데 문득 이런 생각이 든다.\n\n이걸 “어떻게 쓰라는 거지?”\n\n이미 아는 지식을 또 적는 게 의미 있나?\n그래프는 예쁜데 실무 인사이트는 애매하고.\n\n결국 사람 보기 좋은 구조 아닌가?\nAI가 읽기 좋은 구조는 또 다른 문제 아닌가?\n\n옵시디언,\nSecond Brain이 맞는 걸까.\n\n아니면 그냥\n잘 정리된 텍스트 폴더일 뿐일까?\n\n여러분은\n옵시디언을 실제로 어디에 쓰고 있나요?\n\n---\n\n물론 MD가 AI가 꺼내보기 용이한건 맞지만\n그런 용도라면 벡터DB가 더 낫지 않나\n생각이 들어서 여쭤봤습니다!\n\n좋은 의견들과 책 추천 감사합니다!",
       "media": [],
-      "url": "https://www.threads.net/@teabag_kor/post/DVU0tMvEb3V",
+      "url": "https://www.threads.com/@teabag_kor/post/DVU0tMvEb3V",
       "created_at": "2026-03-01 11:39:20",
       "date": "2026-03-01",
       "crawled_at": "2026-03-18T17:49:04.998",
@@ -13531,7 +13531,7 @@
       "display_name": "ejang",
       "full_text": "출판 자동화 파이프라인\n원고 접수부터 유통 플랫폼 업로드까지 — Python 단독 자동화\n\nhttps://claude.ai/public/artifacts/d5c5e9f7-8116-45ac-b138-151c99e11645",
       "media": [],
-      "url": "https://www.threads.net/@ejang/post/DVVGbc1kUFj",
+      "url": "https://www.threads.com/@ejang/post/DVVGbc1kUFj",
       "created_at": "2026-03-01 14:14:12",
       "date": "2026-03-01",
       "crawled_at": "2026-03-18T17:49:04.998",
@@ -13555,7 +13555,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/641240621_17949518202101213_2075360875608070950_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTAyNHg1NTkuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QHoVcGipjVVq3nL-V_WMm2NLemUdC-W0YjCa7x7fbpptWKrCsNujnWe0gbrfnFQ44Q&_nc_ohc=2Hnpdk6ZYYQQ7kNvwG0SKtz&_nc_gid=DKwdmgc9NvrppyMopqbE1A&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0MTAxMjcxNTU0OTI0MTU5Mg%3D%3D.3-ccb7-5&oh=00_AfxJKLeaNs6TrBXeQiP1Y_rlZ6WkAbZbMzczp5-DNfHRMA&oe=69C03C35&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@chancenote/post/DVOBLbYEjD4",
+      "url": "https://www.threads.com/@chancenote/post/DVOBLbYEjD4",
       "created_at": "2026-02-26 20:13:38",
       "date": "2026-02-26",
       "crawled_at": "2026-03-18T17:49:08.026",
@@ -13578,7 +13578,7 @@
       "display_name": "박민주",
       "full_text": "정리하면 \n- 아이디어 발산 → GPT\n- 시장 조사·이미지 분석 → Gemini\n- 구조화·와이어프레임·의사결정 → Claude\n\n기획은 “넓히는 단계”와 “좁히는 단계”가 있는데, 좁히는 단계에서 Claude가 압도적이라 결국 가장 오래 붙잡고 있게 된다.",
       "media": [],
-      "url": "https://www.threads.net/@outminju/post/DVNPQnWEgLM",
+      "url": "https://www.threads.com/@outminju/post/DVNPQnWEgLM",
       "created_at": "2026-02-26 12:57:26",
       "date": "2026-02-26",
       "crawled_at": "2026-03-18T17:49:08.026",
@@ -13605,7 +13605,7 @@
       "display_name": "outminju",
       "full_text": "1인개발 앱 기획 단계에서 Gemini, GPT, Claude 다 써봤는데, 결국 Claude를 가장 많이 쓰게 됐다. 이유는 하나, 와이어프레임.\n\n---\n\n기능 정의할 때 텍스트로만 정리하면 머릿속에서 완성된 것 같아도 실제로 빠진 부분이 꽤 많다. 화면 흐름, 버튼 위치, 상태 변화 같은 건 글로는 한계가 있다.\n\n---\n\nClaude는 기획 내용을 주면 JSX로 실제 와이어프레임을 바로 만들어준다. GPT나 Gemini도 코드는 뱉어주지만, Claude Artifacts에서 바로 렌더링해서 확인할 수 있다는 게 기획 단계에선 압도적으로 편하다.\n\n---\n\nAI가 코드를 대신 짜주는 시대지만, 결국 “사용자가 이걸 어떻게 쓸 것인가”는 사람이 판단해야 한다. 오히려 구현 비용이 줄어든 만큼, UX 설계에 더 시간을 쓸 수 있게 된 게 1인개발자에겐 기회라고 생각한다.\n\n---\n\n그렇다고 기획 전 과정을 Claude만으로 하진 않는다. 솔직히 단계별로 더 나은 도구가 있다.\n\n기획 초기, “이 시장에 비슷한 앱 뭐가 있지?” 같은 경쟁 조사는 GPT나 Gemini가 낫다. 검색 연동이 강해서 실시간 정보를 바로 긁어와 준다. Claude한테 이걸 시키면 체감상 느리다.\n\n아이디어를 넓게 펼치는 브레인스토밍도 GPT가 빠르다. 양을 많이 쏟아내는 데 강하다. 경쟁앱 스크린샷 던지고 “이 구조 분석해줘” 할 때는 Gemini가 반응이 좋다.\n\n---\n\n정리하면 \n- 아이디어 발산 → GPT\n- 시장 조사·이미지 분석 → Gemini\n- 구조화·와이어프레임·의사결정 → Claude\n\n기획은 “넓히는 단계”와 “좁히는 단계”가 있는데, 좁히는 단계에서 Claude가 압도적이라 결국 가장 오래 붙잡고 있게 된다.",
       "media": [],
-      "url": "https://www.threads.net/@outminju/post/DVNLTj6ktJb",
+      "url": "https://www.threads.com/@outminju/post/DVNLTj6ktJb",
       "created_at": "2026-02-26 12:22:53",
       "date": "2026-02-26",
       "crawled_at": "2026-03-18T17:49:08.026",
@@ -13627,7 +13627,7 @@
       "display_name": "ai_jobdori",
       "full_text": "Claude Code 한 달 쓴 개발자가 깨달은 게 있대요.\n\n\"코드 생성이 아니라 컨텍스트 오케스트레이션이 진짜 가치\"라는 거거든요.\n\n한번은 코드 한 줄도 안 쓰고 세션을 끝냈대요. 글 하나를 Qiita에 올리고, 영어로 번역해서 Dev.to랑 Hashnode에 교차 게시하고, 스케줄 파일 업데이트까지. 전부 기존 도구 호출만으로요.\n\n비결은 컨텍스트를 5단계로 쌓는 거래요. 글로벌 규칙, 스킬, 에이전트, 프로젝트 설정, 자동 메모리. 이 레이어가 두꺼워질수록 세션당 설명은 줄고, 작업 속도는 빨라지고, 품질 일관성도 올라간대요.\n\n처음엔 크로스포스팅에 30분 걸렸는데, 컨텍스트 쌓이니까 \"y\" 한 글자로 2분 만에 끝난다고요.\n\n---\n\n프롬프트 엔지니어링이랑 뭐가 다르냐고요? 프롬프트는 한 번의 입출력을 최적화하는 거고, 컨텍스트 엔지니어링은 모든 세션에 걸친 지식 기반을 쌓는 거래요. 세션 끝나도 안 사라지고 프로젝트도 넘나든다는 게 핵심이에요.\n\n---\n\n시작하는 법도 간단해요. 1) CLAUDE.md에 기술 스택이랑 규칙 적기 (5분), 2) 반복하는 절차를 스킬로 만들기 (15분), 3) 자동 메모리는 프로젝트 폴더에서 실행만 하면 끝. 이거부터 해보세요.\n\n---\n\n기사 : https://dev.to/shimo4228/the-real-power-of-claude-code-isnt-code-generation-its-autonomous-context-orchestration-3djk",
       "media": [],
-      "url": "https://www.threads.net/@ai_jobdori/post/DVMpDilk75T",
+      "url": "https://www.threads.com/@ai_jobdori/post/DVMpDilk75T",
       "created_at": "2026-02-26 07:23:41",
       "date": "2026-02-26",
       "crawled_at": "2026-03-18T17:49:08.026",
@@ -13651,7 +13651,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/639840744_17944407585114844_8313145232918915653_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTc1NHgxMDI2LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QE7kcvmc1PFUa5O6OnTy0n8LYtTFkDwvQpKNlX3DG0TDpOB86IO2qUWvhkIHGr6L7c&_nc_ohc=Xdn8F-rSwU0Q7kNvwH8yPdy&_nc_gid=JUTagstDSxfuTYnjiCwF1g&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0MjI4Nzg0NDk5Mjc1ODc5OA%3D%3D.3-ccb7-5&oh=00_AfzSwvvnlmRsXpF4s5Sxx5tQrfjLdgpkhM4-or0YaYHTIw&oe=69C03D33&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@money_raham/post/DVSjHH7mCDz",
+      "url": "https://www.threads.com/@money_raham/post/DVSjHH7mCDz",
       "created_at": "2026-02-28 14:27:06",
       "date": "2026-02-28",
       "crawled_at": "2026-03-18T17:49:08.026",
@@ -13674,7 +13674,7 @@
       "display_name": "Geum Verse",
       "full_text": "Claude Cowork 데스크톱 자동화 에이전트로, 올바른 지침만 제공하면 3시간 동안 반복적인 파일 및 작업 작업을 90초 만에 완료할 수 있습니다.",
       "media": [],
-      "url": "https://www.threads.net/@geumverse_ai/post/DVOI916E_Yh",
+      "url": "https://www.threads.com/@geumverse_ai/post/DVOI916E_Yh",
       "created_at": "2026-02-26 21:21:41",
       "date": "2026-02-26",
       "crawled_at": "2026-03-18T17:49:11.104",
@@ -13702,7 +13702,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/640412991_17947895373110495_3368518861947611292_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTI4MHg3MTQuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2QFkzhnkOaW87XZCQAnrqQOTQtoHPP4_DfxOk6NH7aFLh3gTZipkkDqQX_fX2jJEMzc&_nc_ohc=lyhbWI0JGBcQ7kNvwFg82Sz&_nc_gid=jqPBEy-CXRQbWCxrqLP4Cw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0MDkyMDM5NzE4MTgxMzcwMg%3D%3D.3-ccb7-5&oh=00_AfxHZ1PdLnbZlurda4RL9DdWvIifBCsYO6LGY-q4Pw_m7A&oe=69C042ED&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@garibong.labs/post/DVNsMBMkwPG",
+      "url": "https://www.threads.com/@garibong.labs/post/DVNsMBMkwPG",
       "created_at": "2026-02-26 17:10:13",
       "date": "2026-02-26",
       "crawled_at": "2026-03-18T17:49:11.104",
@@ -13726,7 +13726,7 @@
       "display_name": "ai_jobdori",
       "full_text": "Claude Code 9개월 쓴 개발자가 정착한 워크플로우가 인상적이에요.\n\n핵심 원칙은 딱 하나래요: \"계획을 검토하고 승인하기 전까지 절대 코드를 쓰게 하지 마라.\"\n\n이 사람 작업 순서가 이래요:\n1. 리서치 — 코드베이스 깊이 읽히고 research.md로 정리\n2. 계획 — plan.md에 구현 방법 작성\n3. 주석 달기 — 내가 직접 plan.md에 메모 추가 (1~6회 반복)\n4. 구현 — \"implement it all\" 한마디로 실행\n\nplan.md에 \"여기 PATCH여야 해, PUT 아니야\" 같은 메모를 직접 적어 넣는대요. 이걸 1~6번 반복하면 AI가 내 프로젝트에 딱 맞는 코드를 쓰게 된다고요.\n\n\"구현은 지루해야 한다\"는 말이 핵심이에요. 창의적인 일은 계획 단계에서 끝내고, 실행은 기계적으로.\n\n---\n\n인상적인 부분은 \"주석 달기 사이클\"이에요. Claude가 계획서를 쓰면, 내가 직접 문서 안에 수정 메모를 적어 넣고, 다시 Claude한테 반영시키는 걸 반복하는 거예요. \"아직 구현하지 마\" 가드를 꼭 넣어야 한대요. 안 그러면 바로 코드 쓰기 시작한다고요.\n\n---\n\n컨텍스트 윈도우 50% 넘으면 성능 떨어진다는 얘기도 있잖아요. 이 분은 오히려 긴 세션을 선호한대요. 리서치부터 구현까지 한 세션에서 하면, AI가 쌓아온 이해가 그대로 유지돼서 더 좋다고요.\n\n---\n\n기사 : https://boristane.com/blog/how-i-use-claude-code/",
       "media": [],
-      "url": "https://www.threads.net/@ai_jobdori/post/DVL7QkEgaZw",
+      "url": "https://www.threads.com/@ai_jobdori/post/DVL7QkEgaZw",
       "created_at": "2026-02-26 00:43:31",
       "date": "2026-02-26",
       "crawled_at": "2026-03-18T17:49:11.104",
@@ -13748,7 +13748,7 @@
       "display_name": "dev__papa__v",
       "full_text": "바이브코딩에서\n가장 중요한 스킬이 뭔지 아는가.\n\n코딩이 아니다.\nAI한테 일을 잘 시키는 법이다.\n\n팁 3가지를 정리해봤다.\n\n---\n\n1. 구체적으로 시킬 것.\n\n❌ \"앱 만들어줘\"\n✅ \"로그인 화면 만들어줘. 이메일 입력칸, 비밀번호 입력칸, 로그인 버튼 넣어줘.\"\n\nAI는 읽기 잘하지\n눈치는 없다.\n상세하게 설명할수록 결과가 좋다.\n\n---\n\n2. 한 번에 하나만 시킬 것.\n\n❌ \"로그인이랑 회원가입이랑 마이페이지 만들어줘\"\n✅ \"로그인 화면부터 만들어줘\"\n\n한꺼번에 시키면\n전부 어설프게 나온다.\n\n하나 끝내고 확인하고\n다음 걸 시키는 게 맞다.\n\n---\n\n3. 결과를 보고 다시 시킬 것.\n\nAI가 처음부터 완벽하게 만드는 경우는 드물다.\n\n\"여기 버튼 위치 바꿔줘\"\n\"이 색깔 너무 진해. 연하게 해줘\"\n\n이런 식으로 대화하듯이\n수정을 반복하는 거다.\n\n3~5번 왕복하면\n꽤 쓸 만한 결과가 나온다.\n\n---\n\n정리하면\n\n구체적으로.\n하나씩.\n반복해서.\n\n이 세 가지만 지켜도\nAI가 훨씬 잘 일한다.",
       "media": [],
-      "url": "https://www.threads.net/@dev__papa__v/post/DVOKR5ikceq",
+      "url": "https://www.threads.com/@dev__papa__v/post/DVOKR5ikceq",
       "created_at": "2026-02-26 21:33:16",
       "date": "2026-02-26",
       "crawled_at": "2026-03-18T17:49:11.104",
@@ -13770,7 +13770,7 @@
       "display_name": "monca.dev",
       "full_text": "바이브 코딩 강의를 하면서 느끼는 현실. 처음에는 나도 가르쳐주는 재미로 시작했는데, 곧 접어야 하지 싶다.\n\n1. 약팔이가 너무 많다. \n\n2. 약팔이에 홀려서, 컴퓨터도 제대로 못 다루는 사람이 대규모 앱 서비스를 만든다고 덤빈다.\n\n3. 에이전트한테 제대로 작업을 시켜본적도 없으면서, 100명의 서브에이전트 개발 군단을 생각하는 사람들이 있다.\n\n4. 커밋 하나 안해봤으면서 외주 팀 운영 시 브랜치 운용 전략을 물어본다.\n\n5. 검수기준에도 못미치는 쓰레기 앱이 양산된다. 약팔이들이 \"앱\"을 하라고 하는 이유는 검수 통과가 안되는걸 강의 구매자 탓을 하기 좋은 구조이기 때문\n\n6. 앱스토어, 플레이스토어. 다음 먹거리는 앱인토스임. 거의 영업 방해 수준일거라 예상한다.\n\n난 기획자이자 얼치기 개발자로써, 바이브 코딩이 뜨면서 아이디어를 빠르게 검증하고 엔지니어가 이어받아 시장 규모가 커지는 미래를 생각했는데\n\n현타가 조금 쎄게 온다.",
       "media": [],
-      "url": "https://www.threads.net/@monca.dev/post/DVOGtKKCavr",
+      "url": "https://www.threads.com/@monca.dev/post/DVOGtKKCavr",
       "created_at": "2026-02-26 21:01:56",
       "date": "2026-02-26",
       "crawled_at": "2026-03-18T17:49:14.113",
@@ -13794,7 +13794,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/641278355_2139292823549061_5166490737269086311_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDYyOC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QEmpU6Qs0BoZTXiODHpWyGHk9FwRL6RPv24kS-YtZITEnHM-NLb4FpdFR8KsO-xDXY&_nc_ohc=CEJerOTscIIQ7kNvwEyBDv9&_nc_gid=YGDfmknxHKPwadBPjlCDLA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0MDYyOTk3NjgxMTYwNjgwMA%3D%3D.3-ccb7-5&oh=00_Afx-fW1iBK_ukKAbHLsuH9LDCKgLUVNZ87AoSlPk_fQPOQ&oe=69C02FA3&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@channprj/post/DVMNxAbEmsF",
+      "url": "https://www.threads.com/@channprj/post/DVMNxAbEmsF",
       "created_at": "2026-02-26 03:25:09",
       "date": "2026-02-26",
       "crawled_at": "2026-03-18T17:49:14.113",
@@ -13818,7 +13818,7 @@
       "display_name": "vibe_ai_cat",
       "full_text": "요즘 제일 핫한 깃허브 레포들을 까보면 어김없이 1000줄이 넘어가는 괴물 같은 AGENTS.md 파일이 있습니다.\n\n여기에 AI 성격, 코딩 컨벤션, 보안 룰까지 다 때려넣고 팀원들에게 \"Cursor 켤 때마다 이거 복사해서 쓰세요\"라고 하죠.\n\n솔직히 말해서, 2010년대에 jQuery.js 파일 다운받아서 폴더에 매번 복붙해 쓰던 미개한 짓을 2026년에 똑같이 하고 있는 겁니다.\n\n---\n\nAI 프롬프트에도 드디어 의존성 주입(DI)과 패키지 매니저가 생겼습니다.\nThe npm for Vibe Coding, 바로 'Dance of Tal(DOT)'입니다.\n\nDOT은 이 거대한 프롬프트를 쪼갭니다.\nAI의 두뇌(Tal)와 출력 규칙(Dance)을 각각 NPM 모듈처럼 레지스트리에 배포합니다.\n\nnpx dot install tal/@author/backend-architect\n명령어 한 줄이면 글로벌에서 가장 잘 튜닝된 시니어의 뇌 구조가 내 프로젝트에 꽂힙니다.\n\n---\n\n가장 강력한 건 여러 규칙을 CSS 클래스처럼 겹쳐버리는(Layering) 기능입니다.\n\n팀의 기본 코딩 컨벤션(dance/@acme/kotlin-style) 위에,\n개인정보 보호 규칙(dance/@acme/gdpr-security)을 얹고,\nPR 리뷰 포맷(dance/@acme/pr-format)을 블록처럼 조립해서 락(Lock)을 겁니다.\n\n비즈니스 로직 바뀌었다고 1000줄짜리 텍스트 수정하다가, AI가 갑자기 테스트 코드를 안 짜주는 참사는 더 이상 없습니다.\n\n---\n\n지금 한 팀에서 10명이 Windsurf로 코딩하면, 10명의 프롬프트 타이핑 실력에 따라 코드 스타일이 10갈래로 찢어집니다.\n\n하지만 DOT은 팀장이 dot lock으로 버전을 잠가버리면, 모든 팀원과 CI 파이프라인이 강제로 완벽히 동일한 AI 표준 컨텍스트를 쓰게 됩니다.\n\nAI 코딩 생태계에 드디어 package-lock.json이 등장한 겁니다.\n(심지어 이걸 한국 개발자가 설계했네요.)\n\n바이브 코딩의 넥스트 스텝이 궁금하시다면 무조건 확인해 보세요.\ngithub.com/dance-of-tal/dance-of-tal",
       "media": [],
-      "url": "https://www.threads.net/@vibe_ai_cat/post/DVNZSmQEmri",
+      "url": "https://www.threads.com/@vibe_ai_cat/post/DVNZSmQEmri",
       "created_at": "2026-02-26 14:25:10",
       "date": "2026-02-26",
       "crawled_at": "2026-03-18T17:49:14.113",
@@ -13839,7 +13839,7 @@
       "display_name": "vibe_ai_cat",
       "full_text": "지금 한 팀에서 10명이 Windsurf로 코딩하면, 10명의 프롬프트 타이핑 실력에 따라 코드 스타일이 10갈래로 찢어집니다.\n\n하지만 DOT은 팀장이 dot lock으로 버전을 잠가버리면, 모든 팀원과 CI 파이프라인이 강제로 완벽히 동일한 AI 표준 컨텍스트를 쓰게 됩니다.\n\nAI 코딩 생태계에 드디어 package-lock.json이 등장한 겁니다.\n(심지어 이걸 한국 개발자가 설계했네요.)\n\n바이브 코딩의 넥스트 스텝이 궁금하시다면 무조건 확인해 보세요.\ngithub.com/dance-of-tal/dance-of-tal",
       "media": [],
-      "url": "https://www.threads.net/@vibe_ai_cat/post/DVNZYDvkqkz",
+      "url": "https://www.threads.com/@vibe_ai_cat/post/DVNZYDvkqkz",
       "created_at": "2026-02-26 14:25:55",
       "date": "2026-02-26",
       "crawled_at": "2026-03-18T17:49:14.113",
@@ -13866,7 +13866,7 @@
       "display_name": "gpt_minje",
       "full_text": "무료 자료 공유 리스트\n\n1. 비개발자를 위한 Claude Code 사용법 A to Z\nhttps://bevel-boron-05c.notion.site/Claude-Code-A-to-Z-30844a48e2b180f4b178d852db998a80?source=copy_link\n\n2. OpenClaw 가이드북\nhttps://bevel-boron-05c.notion.site/OpenClaw-30944a48e2b180e28faef8c3ab4e0134?source=copy_link\n\n3. Claude in PowerPoint 완벽 가이드\nhttps://bevel-boron-05c.notion.site/Claude-in-PowerPoint-31144a48e2b18096ade6eafde543c5bc?source=copy_link\n\n---\n\n번외편\n\n4. AI 시대의 저작권 — 2026 가이드북\nhttps://bevel-boron-05c.notion.site/AI-2026-30b44a48e2b18097be1dd553c9a9f710?source=copy_link\n\n---\n\n저 스스로 강의 업데이트를 위해 계속 공부하기 위해 만든 자료예요. 다른 추가 자료들도 또 올려드릴게요! 팔로우만 해두세용! 오늘도 행복한 하루 되세용^^",
       "media": [],
-      "url": "https://www.threads.net/@gpt_minje/post/DVJYt5KkWbV",
+      "url": "https://www.threads.com/@gpt_minje/post/DVJYt5KkWbV",
       "created_at": "2026-02-25 01:03:07",
       "date": "2026-02-25",
       "crawled_at": "2026-03-18T17:49:17.145",
@@ -13890,7 +13890,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/640396320_17865155490590544_2631154197804816741_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMjA0OHg4MTkuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QGw6CuwjnIHk9XXVwh2SQclFQGtYLK3Er_ri7L7NjkRuBisNy301iq5SYRkbZ_8NZc&_nc_ohc=T2pvCYnd2PMQ7kNvwFcJQ_E&_nc_gid=4MR-x7AZnaJzSlivby5u4A&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0MDA2Nzc5ODQ1OTA2MzA3Mg%3D%3D.3-ccb7-5&oh=00_Afy9bmRJpEZx3V5ZiLf3XvrA99Ok0iSjvxx-EaMlSQBJCA&oe=69C03F42&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@ahyuk_ai/post/DVKqVEwkZsg",
+      "url": "https://www.threads.com/@ahyuk_ai/post/DVKqVEwkZsg",
       "created_at": "2026-02-25 12:56:15",
       "date": "2026-02-25",
       "crawled_at": "2026-03-18T17:49:17.145",
@@ -13916,7 +13916,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/639687104_17915269782289001_4037144029115649938_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTA4MHgxMzUwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QEI66cqiQWjR6nidsu7h1UDL3nTp-kZSlG8HjZ-tjz2jpjonBF4HlM66y99hUDsZ4Q&_nc_ohc=wdUDoJqahZ8Q7kNvwE_zcwt&_nc_gid=nmrIrKW9eo5Ywo0p_A8GNA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0MDM2MzQzMzI0Njc1NjcwMA%3D%3D.3-ccb7-5&oh=00_Afxvy6aK_6h1X2JiVoWmBxoDWYjIygQg5qZq_lGfwmYEcQ&oe=69C025B8&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@devdesign.kr/post/DVLtjOAkvqN",
+      "url": "https://www.threads.com/@devdesign.kr/post/DVLtjOAkvqN",
       "created_at": "2026-02-25 22:43:39",
       "date": "2026-02-25",
       "crawled_at": "2026-03-18T17:49:17.145",
@@ -13940,7 +13940,7 @@
       "display_name": "mind.engineer_",
       "full_text": "개발자들이 바이브코딩 강의를 안 하는 진짜 이유\n\n개발자들이 바이브코딩 강의를\n왜 안 만드는지 궁금한 적 없어?\n\n\"바이브코딩 강의 안 만들어?\"라는 질문을\n진짜 많이 받거든.\n\n오픈톡 열면 2~30명이 그냥 모여.\n수요가 없는 게 아니야.\n\n근데 나는 안 만들어.\n나뿐만 아니라 만들 수 있는 사람들 대부분이 안 만들어.\n물론 모아서 팔 수는 있지만 안해.\n\n왜냐면 이 시장은 구조적으로 성립이 안 되거든.\n\n(빨간약 주의)\n\n---\n\n바이브코딩 좀 해본 개발자들은 다 같은 걸 느껴.\n\n\"80%까지는 마법인데 나머지 20%가 지옥이다.\"\n\n로그인 붙이고 CRUD 뚝딱 만들고\nUI 예쁘게 뽑는 거까지는 진짜 빨라. \n\n근데 결제 연동 예외처리 빠지고\n동시성 이슈로 데이터 꼬이고\n배포 환경에서만 터지는 버그 나오면?\n\n이건 바이브가 아니라 엔지니어링이야.\n\n그냥 느낌이 아니야. 리서치 해보면\nAI가 짠 코드의 45%가 보안 취약점을 갖고 있고\n90%가 프로덕션까지 못 간다는 분석이 있어. \n\n더 웃긴 건, 버그 나와서 AI한테 \"고쳐줘\" 하고\n또 에러 나서 \"이것도 고쳐줘\" 하는 그 루프 있잖아.\n\n5번 반복하면 치명적 취약점이 37% 늘어난다고 해. \n고칠수록 더 망가지는 거야.\n\n---\n\n그래서 현업에 있는 개발자들은 강의를 기획하면 자문하게 돼.\n\"이걸 가르쳐서 수강생이 뭘 할 수 있지?\" 정직하게 답하면 별로 없어.\n\n그래서 강의 대신 자기 서비스를 만들어. \n\n강의 하나 만들어서 수십만 원 받는 것보다 \n그 시간에 SaaS 하나 더 띄우는 게 나으니까.\n\n바이브코딩의 진짜 가치는 남한테 가르치는 게 아니라\n내가 직접 쓰는 데 있거든.\n\n---\n\n바이브코딩 강의 찾는 사람들은 거의 다 비개발자야.\n이 사람들이 원하는 건 명확해.\n\n\"코딩 안 배우고 뭔가 만들고 싶다.\"\n솔직히 말하면 \"코딩 안 배우고 돈 벌고 싶다.\"\n\n이 욕구 자체가 나쁜 건 아니야. 문제는 깊이야.\n이 사람들이 원하는 건 딸깍이거든. 버튼 하나로 되는 거.\n\n스레드에서 \"억대 빚에서 바이브코딩으로 월 천 찍었다\"는 글에\n좋아요 누르는 사람들이 기대하는 것도 그거고.",
       "media": [],
-      "url": "https://www.threads.net/@mind.engineer_/post/DVN_oXyiHLh",
+      "url": "https://www.threads.com/@mind.engineer_/post/DVN_oXyiHLh",
       "created_at": "2026-02-26 20:00:07",
       "date": "2026-02-26",
       "crawled_at": "2026-03-18T17:49:17.145",
@@ -13964,7 +13964,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/641724121_17890967616426199_8434321208124684099_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTczNng5NTIuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QH6fzjHB82RmGIqveb7XL2DSGO1wXTFtUnnxFHZYH0XP1SIP214TypWYFOffVt5r7U&_nc_ohc=8XnamHWSVSEQ7kNvwF2S8Dt&_nc_gid=4amhdwjuoVMronr8H_F5ZA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0MDA4NDIxNTMyNTM2ODU5Nw%3D%3D.3-ccb7-5&oh=00_AfwBRaAp8LQN73jSAwnS95Ub8jEqprFnmvYOElbrx7P07Q&oe=69C02063&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@place_coach/post/DVKuEKqktOU",
+      "url": "https://www.threads.com/@place_coach/post/DVKuEKqktOU",
       "created_at": "2026-02-25 13:28:54",
       "date": "2026-02-25",
       "crawled_at": "2026-03-18T17:49:20.161",
@@ -13990,7 +13990,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/639545479_17850133689682804_5529434092735365010_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTAzNHgxOTIuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QEyssZUNkiKW9p4v6PTZ6KuiiEJXB5AP-_iU_NF8zNCdJ-7Wup4D-5HSZ_Mu-6U2OM&_nc_ohc=JXbY6MN6ex4Q7kNvwGX3UKA&_nc_gid=sJUK2rnlyRg0va25J7SX9A&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzOTY0OTk2MTUwODgyMTY5OA%3D%3D.3-ccb7-5&oh=00_Afy0dJMX02wPcaaqpfUNqxoc9vPsSpk1HB1DT87qd0u-rg&oe=69C04B50&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@owen_ai_dev/post/DVJLUvxk1rC",
+      "url": "https://www.threads.com/@owen_ai_dev/post/DVJLUvxk1rC",
       "created_at": "2026-02-24 23:06:05",
       "date": "2026-02-24",
       "crawled_at": "2026-03-18T17:49:20.161",
@@ -14014,7 +14014,7 @@
       "display_name": "yourgpt3650",
       "full_text": "나는 Gemini가 처음 나왔을 때부터 써왔고\n지금까지 만든 프롬프트만 3,000개가 넘는다.\n\n한국인 90%는 제미나이한테 아직도\n\"요약해줘\", \"다시 써줘\" 같은 말만 한다.\n\n이렇게 쓰면 제미나이는 평생 평범한 답만 준다.\n\n제미나이를 나만의 두뇌로 바꿔버리는\n프롬프트  5가지를 소개하겠다.\n\n---\n\n1. \"넌 누구인지부터 알려줘\" — 페르소나 세팅\n\n❌ \"마케팅 전략 짜줘\"\n\n✅ \"너는 15년차 브랜드 마케팅 디렉터야.\n월 광고비 500만 원인 스타트업의\n인스타그램 성장 전략을 세워줘.\n표 형식으로 정리해줘.\"\n\n역할 + 구체적 상황 + 출력 형식을 주면\n답변 퀄리티가 완전히 달라진다.\n\n---\n\n2. \"정답 말고 선택지를 줘\" — 다중 옵션 프롬프트\n\n❌ \"제목 추천해줘\"\n\n✅ \"아래 주제로 블로그 제목을 10개 만들어줘.\nA그룹: 호기심 유발형 5개\nB그룹: 숫자 활용형 5개\n각각 클릭률이 높은 순으로 정렬해줘.\"\n\n제미나이한테 '하나만 줘'라고 하면\n항상 무난한 답을 준다.\n선택지를 요구하면 가장 좋은 걸 직접 고를 수 있다.\n\n---\n\n3. \"단계별로 생각해\" — Chain of Thought\n\n❌ \"사업 계획서 써줘\"\n\n✅ \"사업 계획서를 작성할 건데, 한 번에 쓰지 마.\nStep 1: 먼저 시장 분석부터 해줘.\nStep 2: 경쟁사 3곳을 비교해줘.\nStep 3: 그 다음 차별화 전략을 도출해줘.\nStep 4: 마지막에 전체를 통합해서 정리해줘.\"\n\n한 번에 다 시키면 제미나이는 '대충' 쓴다.\n단계를 쪼개면 전문가급 결과물이 나온다.\n\n---\n\n4. \"이건 하지 마\" — 금지 조건 프롬프트\n\n❌ \"자기소개서 써줘\"\n\n✅ \"경력 5년차 마케터의 이직용 자기소개서를 써줘.\n단, 다음은 절대 하지 마:\n- '열정' '도전' 같은 뻔한 단어 사용 금지\n- 추상적인 표현 금지\n- 500자 초과 금지\n구체적인 성과 숫자를 반드시 포함해줘.\"\n\n대부분 '해줘'만 말하고 '하지 마'는 안 한다.\n금지 조건을 주면 AI가 뻔한 답을 피하게 된다.\n\n---\n\n5. \"내 글을 먼저 학습해\" — 스타일 복제 프롬프트\n\n❌ \"글 써줘\"\n\n✅ \"아래 3개의 글은 내가 직접 쓴 글이야.\n[글 1], [글 2], [글 3]\n이 글들의 말투, 문장 길이, 어조를 분석해줘.\n그리고 같은 스타일로 새로운 글을 써줘.\n주제: 'AI 시대에 살아남는 직장인의 습관'\"\n\n제미나이한테 내 글 3개만 먹이면\n'나처럼 쓰는 AI'가 만들어진다.\n이게 진짜 제미나이 200% 활용법이다.\n\n---\n\n핵심만 정리하면\n1. 역할부터 세팅해라\n2. 정답 말고 선택지를 요구해라\n3. 단계를 쪼개서 시켜라\n4. \"하지 마\"를 반드시 넣어라\n5. 내 글을 먹여서 스타일을 복제해라\n\n별로인 건 AI가 아니라 프롬프트다\n저장해두고 오늘부터 써봐!\n\n---\n\nhttps://litt.ly/yourgpt3650",
       "media": [],
-      "url": "https://www.threads.net/@yourgpt3650/post/DVKxns-DSHY",
+      "url": "https://www.threads.com/@yourgpt3650/post/DVKxns-DSHY",
       "created_at": "2026-02-25 13:59:58",
       "date": "2026-02-25",
       "crawled_at": "2026-03-18T17:49:20.161",
@@ -14036,7 +14036,7 @@
       "display_name": "ody_daddy",
       "full_text": "출근길 쓰레드) 16단계 에이전트 워크플로우 직접 짜봤는데, 결론부터 말하면 대실패였습니다.\n\n에이전트 16개를 한 줄로 세웠더니 중간에 맥락이 다 끊겨서 결과물이 엉망이 되더라고요.\n\n일종의 맥락 소실 참사였죠.\n\nAnthropic에서 마침 이걸 정확히 짚은 글을 올렸었는데, 저처럼 고생하기 전에 꼭 보셨으면 합니다. 에이전트 숫자 늘리는 게 기술력이 아니었습니다.\n\n---\n\n사실 대부분의 문제는 도구만 제대로 쥐여준 단일 에이전트로 끝내는 게 훨씬 깔끔합니다.\n\n단계를 쪼갤수록 프롬프트만 복잡해지고, 정작 어디서 문제가 터졌는지 찾기도 힘들어지거든요.\n\nAnthropic도 \"에이전트 추가가 정답이 아니다\"라고 못을 박았을 정도니까요.\n\n* 출처: Building effective agents — https://www.anthropic.com/research/building-effective-agents\n\n---\n\n그럼 멀티 에이전트는 언제 써야 할까요.\n\n제가 직접 굴려보니 컨텍스트 윈도우가 꽉 차서 터질 것 같을 때나, 같은 맥락에서 병렬 작업이 필요할 때 '분신술' 용도로 쓰는 게 가장 적합했습니다.\n\n16단계 릴레이가 아니라, 오케스트레이터가 일을 동시에 뿌려주는 구조가 실전용이더라고요.\n\n* 출처: How we built our multi-agent research system — https://www.anthropic.com/engineering/multi-agent-research-system",
       "media": [],
-      "url": "https://www.threads.net/@ody_daddy/post/DVKE3xqCRKl",
+      "url": "https://www.threads.com/@ody_daddy/post/DVKE3xqCRKl",
       "created_at": "2026-02-25 07:28:57",
       "date": "2026-02-25",
       "crawled_at": "2026-03-18T17:49:20.161",
@@ -14058,7 +14058,7 @@
       "display_name": "keke_appa",
       "full_text": "https://github.com/johunsang/vive-md/blob/main/vibe-coding/mcp/Awesome-MCP-Servers-%ED%95%9C%EA%B5%AD%EC%96%B4-%EA%B0%80%EC%9D%B4%EB%93%9C.md\n\n2529개의 mcp를 전부 한국어로 번역했음\n이거하느라 클로드코드 이번주 토큰다 썼음\n진짜 모든 mcp를 찾아서 정리했음",
       "media": [],
-      "url": "https://www.threads.net/@keke_appa/post/DVKLAKBkm52",
+      "url": "https://www.threads.com/@keke_appa/post/DVKLAKBkm52",
       "created_at": "2026-02-25 08:22:31",
       "date": "2026-02-25",
       "crawled_at": "2026-03-18T17:49:23.181",
@@ -14080,7 +14080,7 @@
       "display_name": "keke_appa",
       "full_text": "바이브코딩 다음엔 바이브기획 바이브디자인 바이브영상 바이브세무 바이브경영으로 확대될 것 그리고 이 모든 것은 LLM회사들이 집어 삼킬 것. 모든 명령어는 터미널로 진행이 될 것이며 사람은 결과물을 확인 만 할것. 난 여기에 대비하는 중",
       "media": [],
-      "url": "https://www.threads.net/@keke_appa/post/DVLajWUkuON",
+      "url": "https://www.threads.com/@keke_appa/post/DVLajWUkuON",
       "created_at": "2026-02-25 19:57:38",
       "date": "2026-02-25",
       "crawled_at": "2026-03-18T17:49:23.181",
@@ -14102,7 +14102,7 @@
       "display_name": "overtime.sam",
       "full_text": "Google AI 연구팀이 재밌는 실험을 했거든요.\n\nAI한테 참고 자료 없이 답하게 하면\n오답률이 10%였어요.\n\n근데 부족한 참고 자료를 주니까\n66%로 뛰었어요.\n\n참고 자료를 줬는데 오히려 더 틀리는 구조예요.\n\n저도 이거였거든요.\n옵시디언에 메모 쌓고,\nAI한테 \"내 메모 참고해서 답변해\" 연결해뒀어요.\n\n메모도 있고. AI도 붙였고.\n끝 아닌가? 아니었어요.\n\n---\n\n메모가 10개일 땐 괜찮았어요.\nAI가 다 읽어도 문제없었거든요.\n\n근데 100개, 200개 쌓이니까 달라져요.\n읽긴 읽어요. 근데 많아질수록\n정작 필요한 걸 놓쳐요.\n\n분명 메모에 적어뒀는데\nAI한테 물으면 \"관련 자료를 찾지 못했습니다.\"\n\n아니 분명 있는데?\n\n없는 게 아니라 읽고도 못 쓴 거예요.\n메모가 많을수록 오히려 이런 일이 잦아져요.\n\n팀원한테 \"위키에서 관련 자료 찾아봐\" 하고\n대충 던진 거랑 똑같은 구조예요.\n찾을 수도 있고 못 찾을 수도 있고. 운이에요.\n\n---\n\n못 찾으면 차라리 나아요.\n\"모르겠다\"고 하니까.\n\n진짜 문제는 엉뚱한 걸 찾아왔을 때예요.\n\n관련 없는 메모를 근거로 삼아서\n\"이 방향이 좋겠습니다\"\n이러면서 자신 있게 답하거든요.\n\nGoogle 연구가 이 얘기였어요.\n관련 없는 참고 자료가 들어오면\nAI가 \"모르겠다\"를 잘 안 해요.\n뭐라도 참고할 게 있으니까 일단 답을 만들어버려요.\n\n틀린 답인데 자신 있어 보여요.\n솔직히 저도 그냥 믿었어요. 한동안.\n\n---\n\n그래서 바꾼 게 두 가지예요.\n\n첫째, 데이터를 정리했어요.\n메모마다 태그 달고, 폴더 나누고,\n제목이랑 요약 붙여서 AI가 구분하기 쉽게 만들었어요.\n\n재료가 엉망이면\n아무리 잘 찾으려 해도 한계가 있거든요.\n\n둘째, 찾는 방식을 둘로 나눴어요.\n키워드 검색은 정확한 단어는 잘 잡는데\n비슷한 의미의 다른 표현은 놓쳐요.\n의미 기반 검색은 맥락은 잘 잡는데\n정확한 용어를 놓칠 때가 있고요.\n\n그래서 둘 다 써요.\n서로 못 잡는 걸 보완하는 구조예요.\n\n\"참고해\"만 던지면 운에 맡기는 거예요.\n뭘 찾고, 어떻게 찾을지를 설계해야 시스템이 돼요.\n\n---\n\n정리하면요.\n\n기록을 쌓는 것. 1단계.\nAI에 연결하는 것. 2단계.\nAI가 잘 찾게 설계하는 것. 3단계.\n\n옵시디언에 메모 쌓고 AI에 연결까지 해두면\n\"나 꽤 잘하고 있는데?\" 싶거든요.\n솔직히 저도 오래 거기서 멈춰 있었어요.\n\n근데 3단계가 빠지면\n메모가 아무리 많아도 검색 방식을 설계 안 하면 제대로 못 써요.\n\n저도 아직 다듬고 있는 중이에요.\n데이터를 어떻게 정리했고, 검색을 어떻게 나눴는지\n다음 글에서 하나씩 풀어볼게요.",
       "media": [],
-      "url": "https://www.threads.net/@overtime.sam/post/DVLjTVLCSZh",
+      "url": "https://www.threads.com/@overtime.sam/post/DVLjTVLCSZh",
       "created_at": "2026-02-25 21:14:45",
       "date": "2026-02-25",
       "crawled_at": "2026-03-18T17:49:23.181",
@@ -14126,7 +14126,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/640199643_17854783314623803_1114736459000449998_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTQ0MHgxODAwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QEbpMJRfSzzGkT5zIQI4Wx9y1yksr00h5Uqj0Hs9sh6PpkVZdw9tOTSnPRqJh0RQGo&_nc_ohc=DeFCBC-nvKcQ7kNvwGPJrFU&_nc_gid=AhNuSZGJq_J5a4lHsqhqCw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzg0MDEwMTIyMDQzNDQzMzY3MA%3D%3D.3-ccb7-5&oh=00_AfzGaQ-HVAglKAl0xshQOVJqr80NUHvn07PZ_mcCvUtMCg&oe=69C05097&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@vibe.tip/post/DVKyIA4k0sn",
+      "url": "https://www.threads.com/@vibe.tip/post/DVKyIA4k0sn",
       "created_at": "2026-02-25 14:04:23",
       "date": "2026-02-25",
       "crawled_at": "2026-03-18T17:49:23.182",
@@ -14152,7 +14152,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/607079637_17936359272129032_6874227643251674131_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTA4MHgyMzQwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QEnOh2iolpf_j2oQyxPngLoYy4bfY5-Hsuc5JRh2WnQZK7F_6OJezJGO7oJ2DXxDMk&_nc_ohc=OHX50f_CYpQQ7kNvwESy6EQ&_nc_gid=zhTuztjQHE22vLlwKI_D9Q&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc5ODMwODQ4Mzc0NjAzODI1MA%3D%3D.3-ccb7-5&oh=00_AfzuRepgqvP6yie2_TdQ9ahUQU-vKJKJiFqtOi_AzkDzgg&oe=69C0208A&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@mina_y.island/post/DS2TXERCQHq",
+      "url": "https://www.threads.com/@mina_y.island/post/DS2TXERCQHq",
       "created_at": "2025-12-29 22:07:57",
       "date": "2025-12-29",
       "crawled_at": "2026-03-18T17:49:26.203",
@@ -14181,7 +14181,7 @@
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/640403710_17947091628112976_1004763335209766560_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTI4MHgxMTAzLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHV_EXVHv204-lsgb3bgvkncFQOIfPwsVGh692l-C1A5aXFnigXsjqe668Uqt4Jajo&_nc_ohc=5Y3c5jEzbKsQ7kNvwH18GHE&_nc_gid=lcSaHsmCju2YO-LG9irIqg&edm=AI6eXeABAAAA&ccb=7-5&ig_cache_key=Mzg0MDAzNzExMjc0NTM2OTY4OQ%3D%3D.3-ccb7-5&oh=00_Afw73qSXp4nubPo2LgibHO7y0Mm0UgcouGhhgadY60WYQw&oe=69C04210&_nc_sid=6efbad",
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/641268733_17947091616112976_5261067783000445895_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTI4MHgxMDg3LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHV_EXVHv204-lsgb3bgvkncFQOIfPwsVGh692l-C1A5aXFnigXsjqe668Uqt4Jajo&_nc_ohc=Pvwqy8fmTwMQ7kNvwHcwXrO&_nc_gid=lcSaHsmCju2YO-LG9irIqg&edm=AI6eXeABAAAA&ccb=7-5&ig_cache_key=Mzg0MDAzNzExMzY5MzMxNjAxNA%3D%3D.3-ccb7-5&oh=00_AfzBlqnQsuF2JyQ7OIWlskfnJDb8w-uAsj4mgVUr7RRGVQ&oe=69C04655&_nc_sid=6efbad"
       ],
-      "url": "https://www.threads.net/@marketer.ai.seulki/post/DVKsy5mjwr1",
+      "url": "https://www.threads.com/@marketer.ai.seulki/post/DVKsy5mjwr1",
       "created_at": "2026-02-25 13:17:48",
       "date": "2026-02-25",
       "crawled_at": "2026-03-18T17:49:26.203",
@@ -14214,7 +14214,7 @@
       "display_name": "sihyun_adventure",
       "full_text": "CLAUDE.md, AGENTS.md 쓰지마라?\n\n1. 저는 이슈 관리 방법, 브랜치 규칙, 커밋 형식, CHANGELOG까지 죄다 문서에 넣어뒀는데요. 최근 나온 논문 읽고 좀 충격받았습니다. ETH 취리히 연구팀이 AGENTS.md가 실제로 효과가 있는지 처음으로 엄밀하게 실험했는데, 결과가 꽤 놀랍습니다.\n\n2. LLM이 자동 생성한 AGENTS.md는 오히려 성공률을 2% 낮추고 비용을 20% 이상 올렸습니다. 개발자가 직접 쓴 것도 성공률은 4% 정도 올랐지만 비용은 똑같이 올라갑니다. OpenAI, Anthropic 같은 에이전트 개발사들이 강력 권장하는 방식인데 정작 효과는 미미하거나 역효과라는 거죠.\n\n---\n\n3. 왜 이러냐 하면 AI는 AGENTS.md에 적힌 걸 충실하게 따르려고 합니다. 작은 버그 하나 고칠 때도 브랜치 만들고, 전체 테스트 돌리고, CHANGELOG 쓰고, 리뷰어 태그 달고 정작 문제 해결보다 프로세스에 토큰을 다 써버립니다. \n\n4. 실제로 GPT-5.2 기준 추론 토큰이 22%나 늘었는데, 이건 AI가 \"이 작업 복잡하네\"라고 느낀다는 신호입니다. 폴더 구조 설명 같은 개요도 사실상 무의미했고요. 있어도 없어도 관련 파일 찾는 속도가 동일했습니다.\n\n---\n\n5. 많은 사람들이 오해하는 게 그렇다고 완전히 쓰지 말라는 말은 아니에요. 논문의 결론은 이렇습니다. \n1) LLM '자동 생성한' AGENTS.md → \"일단 쓰지 마라\" (명확히 권고)\n2) 개발자가 직접 쓴 AGENTS.md → \"최소한의 요구사항만 담아라\" (쓰되 줄여라)\n\n즉 /init 명령어로 AI한테 자동으로 만들게 하는 건 지금 당장 끄는 게 낫고, 직접 쓰는 건 괜찮은데 내용을 최소화하라는 거예요. 논문 원문 표현도 \"unnecessary requirements make tasks harder\"라서, 문제는 파일의 존재 자체가 아니라 불필요한 지침의 양이라는 거죠.\n\n6. 다 지우면 너무 불편할 것 같은데요. 절충안이 있습니다. 강제형을 조건부 권고형으로 바꾸는 겁니다. \"브랜치를 만들어라\" 대신 \"새 기능이나 큰 변경은 브랜치를 권장\"으로, \"전체 테스트를 돌려라\" 대신 \"로직 변경이 포함된 경우 관련 테스트 실행\"으로요.\n\n---\n\n7. 그러면 AI가 이슈 규모를 보고 알아서 판단합니다. 여기에 작업 모드 키워드를 추가하면 좋습니다. AGENTS.md에 `[quick]`이면 프로세스 최소화, `[full]`이면 전체 프로세스 적용이라고 정의해두고, 이슈 줄 때 앞에 붙이는 거죠. 급할 때는 `[quick] 버튼 색 바꿔줘`, 중요한 기능은 `[full] 결제 로직 추가해줘`처럼요. (물론 모델마다 다를 거예요. 클로드는 이것저것 다 찾아서 읽는 편이거든요)\n\n8.  그리고 조건부로 읽어야 하는 문서로 변경하면 되지 않을까 싶습니다. Skills나 docs에 넣고 필요할 때만 읽도록 권장하는 방식입니다.\n\n---\n\n9. 정리하면 \"이 저장소에서만 통하는 꼭 필요한 것\"만 강제하고 나머지는 AI 판단에 맡겨라. `pnpm`만 써야 한다거나, 특정 폴더는 건드리지 말라거나, 이런 것들만 필수로 남기고 일반적인 개발 프로세스는 조건부로 바꾸는 게 핵심입니다. 빠르게 개선되는 AI 환경에서 AGENTS.md 관리법도 같이 진화해야 할 것 같습니다.\n\n---\n\nhttps://arxiv.org/abs/2602.11988",
       "media": [],
-      "url": "https://www.threads.net/@sihyun_adventure/post/DVKFUUDk2ak",
+      "url": "https://www.threads.com/@sihyun_adventure/post/DVKFUUDk2ak",
       "created_at": "2026-02-25 07:32:50",
       "date": "2026-02-25",
       "crawled_at": "2026-03-18T17:49:26.203",
@@ -14236,7 +14236,7 @@
       "display_name": "elon_sbm",
       "full_text": "1번 : AI가 돈을 벌어다 줄 거다\n2번 : AI가 시간을 벌어다 줄 거다\n\n어느쪽이신가요?\n\n---\n\nAI는 돈을 벌어다 주지 않아요.\n제가 세일즈 퍼널 제자들한테 항상 하는 말이 있습니다.\n사업 처음 하는데 처음부터 자동화 하려고 하면 반드시 망한다고.\n수동으로 모든걸 매뉴얼리하게 하나 하나 마이크로 컨트롤 하면서 디테일을 잡아가면서 먼저 돈을 벌어야됩니다.\n\n---\n\nAI와 별개로 광고비를 쓰든 인건비(나 포함)를 쓰든, 1000만원 써서 3~5천만원 이상 벌리는 상황이 되면, 그때 자동화를 하는 겁니다. 예를 들면 사람이 전화하던 걸 CRM 메시지로 대체한다든가, 실시간 강의를 하던걸 VOD로 대체한다든지, 내가 직접 하던걸 직원에게 위임한다든지 하는거죠. 그리고 거기엔 반드시 트레이드 오프가 있습니다.\n\n---\n\n수동으로 신경쓰면서 하던걸 자동화 하면? 당연히 수동으로 하던것보다 디테일이 떨어집니다. 내가 하던걸 직원이 하면? 당연히 나보다 못합니다. 효율이 조금 떨어지는걸 감수하면서 하는 겁니다. 인건비나 자동화 비용은 추가로 들어가고요.\nROAS 700~800% 나오던 상황에서 자동화를 이것 저것 하면, 내 시간을 충분히 확보하고 500~600% 나오는 수준으로 자동화가 되면 다행인 거죠.\n\n---\n\n결국, 비즈니스 '자동화'는 자동이 아닐때의 순이익을 약간 손해보면서 자동으로 바꾸는 과정이기 떄문에, 일단 전환률이나 순이익을 충분히 확보하고 나서 자동화 하는게 가능합니다. 그런데 AI는 다르다구요? 사람보다 일을 잘 한다구요?\n\n---\n\n네 그래서 AI가 강력한거 맞습니다. 하지만 본질적으로 보면, 시간이 없어서 못하던 일을 하게 해주거나, 원래 하던 일을 AI한테 시키는 것 뿐입니다. 인건비 절감이에요. 사람의 시간을 아껴주는 역할을 하는 겁니다.\n여기서 AI를 써서 돈을 버는 조건이 나옵니다.\n\n---\n\n여러분한테, 혹은 여러분 직원들한테 하루가 24시간이 아니라 36~48시간이면 돈을 더 많이 벌까요? 라는 질문에 자신있게 Yes라면, AI를 활용했을 때 당장 돈을 더 벌 수 있습니다.\n그런데 지금 돈을 벌지 않고 있고, AI를 안썼을때 언제 돈벌지 기약이 없다면, AI를 써도 똑같습니다. 단지 여러분의 시간을 아껴주는 도구니까요.\n이상, AI 서비스 런칭 2달 반만에 매출 3억 한 스타트업 대표가 씀",
       "media": [],
-      "url": "https://www.threads.net/@elon_sbm/post/DU-E09dE0YA",
+      "url": "https://www.threads.com/@elon_sbm/post/DU-E09dE0YA",
       "created_at": "2026-02-20 15:37:40",
       "date": "2026-02-20",
       "crawled_at": "2026-03-18T17:49:26.203",
@@ -14257,7 +14257,7 @@
       "display_name": "박현우",
       "full_text": "Agent Client 라는 플러그인으로 Codex 연결해서 사용 중이에요\n\nhttps://github.com/RAIT-09/obsidian-agent-client",
       "media": [],
-      "url": "https://www.threads.net/@hyunsdev/post/DVGDcUhk3Ye",
+      "url": "https://www.threads.com/@hyunsdev/post/DVGDcUhk3Ye",
       "created_at": "2026-02-23 17:59:30",
       "date": "2026-02-23",
       "crawled_at": "2026-03-18T17:49:29.223",
@@ -14286,7 +14286,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/640462768_17945133462116197_6314056529601088599_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMjE1NHgxNDQwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QEZbA3EKe0ybH2frozZm_gr-qbfc7PUH_SnxyWbU8IxFl7n76FipOUsbt3nIFXNEXk&_nc_ohc=Tc82TYFUptIQ7kNvwHKG2nL&_nc_gid=i9bvDybnpb1ltjvs1kSzsQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzODczMTgwNTIzNTUxMDc4NQ%3D%3D.3-ccb7-5&oh=00_AfwU3qWSdmg9dIJVesqZFHftH_sU7ySDgrY0RiwIHvinVA&oe=69C049D5&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@hyunsdev/post/DVF6j0HDn4B",
+      "url": "https://www.threads.com/@hyunsdev/post/DVF6j0HDn4B",
       "created_at": "2026-02-23 16:41:53",
       "date": "2026-02-23",
       "crawled_at": "2026-03-18T17:49:29.223",
@@ -14312,7 +14312,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/641296969_17875508538521221_3306748074657523754_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTU5M3gxNjU1LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QF7LFsgQvHnwkR6xj7n11IYYnR1cnxhUkS0sJsp4N4d3CT7VSA88G_rqsHuRnIZB9w&_nc_ohc=-x51d3smVoUQ7kNvwGXXZy_&_nc_gid=Z_X3hjpy4k0d8mfADqDYCQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzODcwODUxMTAwMjI2NDQ0Mw%3D%3D.3-ccb7-5&oh=00_Afz08FDYvp4LB11SHMFpKCb1jB4DITJ6gkPJhryznpR8mA&oe=69C02DB5&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@miniminim71/post/DVF1Q1qjwN7",
+      "url": "https://www.threads.com/@miniminim71/post/DVF1Q1qjwN7",
       "created_at": "2026-02-23 15:55:36",
       "date": "2026-02-23",
       "crawled_at": "2026-03-18T17:49:29.224",
@@ -14336,7 +14336,7 @@
       "display_name": "miniminim71",
       "full_text": "[Openclaw 세팅을 해보면서]\n\n윈도우 + 도커 + codex oauth + 텔레그램 + 백업히 암호화로 구성했습니다.\n\n1. 요금제 폭탄 : codex oauth로 연결. -> 인증서 탈취당해도 파산하지는 않아요!\n\n2. 보안이슈 : 게이트웨이가 뚫리면 컴퓨터에서 무슨 일이 일어날지 모름 -> 도커로 최소한의 안전장치\n\n3. 그럼에도 불구하고 : \"편리성\" \"멋\" \"개인화\" \"통제가능\"\n\n쓰기 전에는 이해하지 못했습니다. 뭐든지 경험해 봐야 합니다.\n\n- 산출물, 채팅기록 데이터를 전부 로컬에 확보해서 통제 가능\n- 하나 채팅에서 모든 작업 가능\n- 아이디어 던져주면 상호작용 하면서 구체화, 해당 내용을 정리하여 로컬에 문서화 가능.\n- Soul.md에 적어놓은 성격대로 행동해서 애착이 감.\n- 일하는 모습을 보지 않아도 됨. 에이전트가 일하는 모습을 멍하니 보는 것도 고된 일임.\n- 나만의 작은 비서..\n\n---\n\n* 보안이 무서워서 구글드라이브, 이메일 등등 다른 계정연결은 못시켰습니다.",
       "media": [],
-      "url": "https://www.threads.net/@miniminim71/post/DVFTox8j7-Q",
+      "url": "https://www.threads.com/@miniminim71/post/DVFTox8j7-Q",
       "created_at": "2026-02-23 11:01:46",
       "date": "2026-02-23",
       "crawled_at": "2026-03-18T17:49:29.224",
@@ -14358,7 +14358,7 @@
       "display_name": "gurunamu.ai",
       "full_text": "SaaS 기능 하나 추가할 때마다\n\"이건 진짜 치트키다\" 싶은\n나만의 프롬프트 공유!\n\n여러분도 있나요?\n\n---\n\n\"GitHub, npm, PyPI, HuggingFace에서 [기능명]을 구현할 수 있는 오픈소스 라이브러리를 찾아줘. 각각 ⭐스타 수, 최근 업데이트일, 장단점, 라이선스를 비교표로 정리하고 추천해줘\"\n\n---\n\n\"잠시 실행을 멈추고, 실패의 원인을 깊게 생각해보고, 개선할수 있는 단계별 계획을 세워줘\"\n\n---\n\n\"코드베이스를 전부 읽어보고, 다시 분석해보자\"\n\n---\n\n\"[경쟁 SaaS명]의 핵심 기능, 가격 정책, UI 구조, 부족한 점을 분석해줘. 우리가 차별화할 수 있는 포인트 3가지를 제안해줘\"\n\n---\n\n\"기능을 구현하는 데 쓸 수 있는 외부 API를 찾아줘. 무료 플랜 한도, 응답 속도, 가격, 문서 품질을 비교해줘\"\n\n---\n\n\"데이터베이스 스키마를 설계해줘. 테이블, 관계, 인덱스 포함. ERD 형태로 보여주고 마이그레이션 SQL도 줘\"\n\n---\n\n\"이 에러 메시지를 분석해줘 원인 3가지와 해결 방법을 우선순위대로 알려줘. 비슷한 GitHub Issue가 있으면 링크도\"\n\n---\n\n\"이 코드를 리뷰해줘. 보안 취약점, 성능 이슈, 클린코드 관점에서 개선점을 알려주고 리팩토링 코드를 보여줘\"\n\n---\n\n이 기능에 대한 테스트 케이스를 만들어줘. 정상 케이스, 엣지 케이스, 에러 케이스 포함. Jest/Pytest 코드로 작성해줘\"",
       "media": [],
-      "url": "https://www.threads.net/@gurunamu.ai/post/DVClwD0k_ko",
+      "url": "https://www.threads.com/@gurunamu.ai/post/DVClwD0k_ko",
       "created_at": "2026-02-22 09:42:19",
       "date": "2026-02-22",
       "crawled_at": "2026-03-18T17:49:32.277",
@@ -14380,7 +14380,7 @@
       "display_name": "lean._.kim",
       "full_text": "클로드코드 성능 100배로 즐기는 방법\n스테로이드 맞은 클로드코드 설정, 이거면 됩니다.\n\n'oh-my-claudecode' 설치\n아래는 명령어 모음입니다.\n\n계획 / 설계\n1. /plan : 큰 작업 시작 전\n- 전략 수립 + 실행 계획\n2. /ralplan : 중요한 설계 결정\n- 플래너 + 아키텍트 + 크리틱 3명이 합의할때까지 반복\n\n코드 작업\n1. /ralph : 끈까지 완료해야 할 작업\n- 자동 반복 - 구현 + 검증 완료까지 멈추지 않음\n2. /autopilot : 아이디어 하나로 전체 구현\n- 스펙 > 설계 > 구현 > QA > 검증 5단계 작동\n3. /build-fix : 빌드/타입 에러 날 때\n- 최소 변경으로 빌드 에러만 수정\n4. /tdd : 버그 수정할 때\n- 테스트 먼저 작성 > 실패 확인 > 수정 > 통과\n\n---\n\n코드 리뷰/분석\n1. /code-review : PR 전 품질 점검\n- 종합 코드 리뷰(보안, 품질, 스타일)\n2. /security-review : 배포 전 보안 점검\n- 취약점, 인증, OWASP Top 10\n3. /analyze : 버그 원인 모를 때\n- 근본 원인 분석 + 디버깅\n\n작업 유형별 추천 흐름\n\n“버그 고치기”\n/analyze → /tdd → /code-review\n\n“새 기능 만들기”\n/plan → /ralph → /code-review\n\n“아이디어를 처음부터 끝까지”\n/autopilot (한 마디면 됩니다)\n\n“배포하기”\n~/.claude/scripts/deploy.sh /프로젝트경로",
       "media": [],
-      "url": "https://www.threads.net/@lean._.kim/post/DVEARfHE-d2",
+      "url": "https://www.threads.com/@lean._.kim/post/DVEARfHE-d2",
       "created_at": "2026-02-22 22:53:19",
       "date": "2026-02-22",
       "crawled_at": "2026-03-18T17:49:32.277",
@@ -14403,7 +14403,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/638880311_17890993458425243_4473387493682560008_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTA1MngyMTYwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2QGkEeJmxKvhaQiGrZysyyFGG0pgLm1bZpI2hb7g8GL6CkKkFFRSrP_2roXslLfkErY&_nc_ohc=l7ISW-ySisEQ7kNvwEGfUwQ&_nc_gid=uyk88_IbALJXn31Sh70ttg&edm=AI6eXeABAAAA&ccb=7-5&ig_cache_key=MzgzNzc3MzU3Nzg0ODg2ODA0MQ%3D%3D.3-ccb7-5&oh=00_AfwUZ9g-nXbH0RsUzaWoaoCQgeoWkty7joq0GwT1P89Y8A&oe=69C048CB&_nc_sid=6efbad"
       ],
-      "url": "https://www.threads.net/@hmpglab/post/DVCgrxUD8zJ",
+      "url": "https://www.threads.com/@hmpglab/post/DVCgrxUD8zJ",
       "created_at": "2026-02-22 08:58:03",
       "date": "2026-02-22",
       "crawled_at": "2026-03-18T17:49:32.277",
@@ -14434,7 +14434,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/639746177_17875430295521221_85879276178080592_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTAyNHg1NDcuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QEdtIHboLFVvySCf5ifdrs6DSWgd11RLZKK1rYVVzO8ean8iT-jZPjT2L9xce_MJG4&_nc_ohc=t2J6jsakNHoQ7kNvwG76Tp5&_nc_gid=nS-TIRUQQ7VWcuaSU8Meuw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzODI1NDM0Njk3NTI1ODIyMQ%3D%3D.3-ccb7-5&oh=00_AfyxKKV7RQwGts30IaQAG_uvp7pg-bRZUNNrzWK_M6Ja7w&oe=69C0293F&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@miniminim71/post/DVEN_4dDyZt",
+      "url": "https://www.threads.com/@miniminim71/post/DVEN_4dDyZt",
       "created_at": "2026-02-23 00:53:15",
       "date": "2026-02-23",
       "crawled_at": "2026-03-18T17:49:32.277",
@@ -14457,7 +14457,7 @@
       "display_name": "평범한 직장인",
       "full_text": "내가 몇년에 걸쳐 쌓은 정책서 노하우를\n신입이 AI 버튼 하나로 비슷하게 뽑아낸다면?\n\nMollick 교수 말대로, AI는 모두를 상위권으로 끌어올립니다.\n\n그 말은 곧 — 당신의 경력 우위가 평준화된다는 뜻.\nFortune에서도 “AI가 도제 시스템을 붕괴시키고 있다”고 했어요.",
       "media": [],
-      "url": "https://www.threads.net/@overtime.sam/post/DUsx9d3kqWM",
+      "url": "https://www.threads.com/@overtime.sam/post/DUsx9d3kqWM",
       "created_at": "2026-02-13 22:25:43",
       "date": "2026-02-13",
       "crawled_at": "2026-03-18T17:49:32.278",
@@ -14484,7 +14484,7 @@
       "display_name": "overtime.sam",
       "full_text": "Wharton × BCG 연구에서 758명 컨설턴트를 대상으로 실험했는데,\n\nAI를 쓴 하위 퍼포머의 82%가 상위권으로 올라갔다고 합니다.\n\n이거 좋은 소식 같죠?\n\n저는 PM으로서 이게 가장 무서운 뉴스였습니다.\n왜 무서운지 이야기해볼게요.\n\n---\n\n평소 운영정책서 구조 설계하는데 꽤 시간이 걸렸어요.\n경쟁사 분석은 몇일, 회의록 정리는 30분.\n\n근데 Claude한테 시켰더니\n정책서 30분, 경쟁사 분석 하루, 회의록 3분.\n\n야근이 사라졌습니다.\n근데 동시에 불안해졌어요.\n\n---\n\n내가 몇년에 걸쳐 쌓은 정책서 노하우를\n신입이 AI 버튼 하나로 비슷하게 뽑아낸다면?\n\nMollick 교수 말대로, AI는 모두를 상위권으로 끌어올립니다.\n\n그 말은 곧 — 당신의 경력 우위가 평준화된다는 뜻.\nFortune에서도 “AI가 도제 시스템을 붕괴시키고 있다”고 했어요.\n\n---\n\n그런데 이상한 게 하나 있었어요.\n\n같은 AI를 쓰는데 제가 쓰면 한 번에 쓸 만한 게 나오고 동료가 쓰면 쓰지 못할 결과물이 나왔어요.\n\n차이는 하나였어요.\n\n저는 “우리 서비스는 이런 맥락이고, 지난번에 이런 이유로 이렇게 결정했고라는“ 컨텍스트를 AI가 알고 있었지만\n\n동료의 AI는 동료의 컨텍스트를 모르고 있었어요.\n\n---\n\n이는 같은 AI를 쓰더라도 누가 어떻게 쓰냐에 따라 시니어 퀄리티가 나오고, 신입 퀄리티가 나올 수 있다는 것이었어요.\n\n결과물 차이의 핵심은 자기 경험과 판단 기준을 얼마나 정확하게 AI에게 전달하느냐. 그 차이였어요.\n\n이걸 “컨텍스트”라고 부릅니다.\n\n---\n\n문제는 이 컨텍스트가 전부 머릿속에만 있다는 거예요.\n\n“그때 왜 그렇게 결정했어요?” → 기억 안 남\n“비슷한 거 전에 했었는데…” → 기록 없음\n“퇴사한 동료 업무 인수” → 지식 전부 증발\n\n기록 안 하면 AI한테 전달할 수도 없고,\n전달 못 하면 그저그런 결과가 나옵니다.\n\n---\n\n그래서 저는 지금 의사결정 기준, 판단 근거, 맥락을\n매일 기록하고 있습니다.\n\nAI가 모두를 같게 만드는 시대, 유일하게 복제 불가능한 건 ‘나의 맥락’이에요.\n\n기록하세요.\n\n그게 AI 시대 진짜 경쟁력입니다.\n\n다음 글에서 어떻게 메모하고, 어떻게 업무에 적용하는지 알려드릴게요.",
       "media": [],
-      "url": "https://www.threads.net/@overtime.sam/post/DUsx9e4EsJJ",
+      "url": "https://www.threads.com/@overtime.sam/post/DUsx9e4EsJJ",
       "created_at": "2026-02-13 22:25:43",
       "date": "2026-02-13",
       "crawled_at": "2026-03-18T17:49:32.278",
@@ -14510,7 +14510,7 @@
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/639558122_17854355478669671_1709380848102563193_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTI1NngzNzQuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2QHjh4Al23QvDaUfqtMAMb3mlSIfOPHyaK7kx4fYJoMU8ydHZzcpd5YU_EkKx5btmUk&_nc_ohc=ubYjo3ELQPwQ7kNvwGtoVyU&_nc_gid=zZ_L26Edp4fCAxWlVaF5aw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzODEzNTgwMjQwNTAyNjA3NA%3D%3D.3-ccb7-5&oh=00_AfxRh4fas6bfBBfTONFea006s-jiC3eJvnSnDiyz78sNrA&oe=69C0244C&_nc_sid=10d13b",
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/639719327_17854355490669671_353282497901927054_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTk2NHgxNDMwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2QHjh4Al23QvDaUfqtMAMb3mlSIfOPHyaK7kx4fYJoMU8ydHZzcpd5YU_EkKx5btmUk&_nc_ohc=Nsd1kmwo5IEQ7kNvwFrvwY-&_nc_gid=zZ_L26Edp4fCAxWlVaF5aw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzODEzNTc2MjgxMDgyNTI1MQ%3D%3D.3-ccb7-5&oh=00_AfwIq059QmFwJlpBJ-Q2oHdqVFK9wbaBeeNXJqvknM9unA&oe=69C032BE&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@lian.lab71/post/DVDzCMjDyOw",
+      "url": "https://www.threads.com/@lian.lab71/post/DVDzCMjDyOw",
       "created_at": "2026-02-22 20:57:38",
       "date": "2026-02-22",
       "crawled_at": "2026-03-18T17:49:32.278",
@@ -14536,7 +14536,7 @@
       "display_name": "lian.lab71",
       "full_text": "내가 아는 인스타그램, 스레드 키우는 방법\n\n1. 초반에 유사 주제 계정 팔로우 \n> 알고리즘한테 나는 ~~ 계정이야\n2. 한 가지 주제로 계속 글 발행 \n> 초반 알고리즘 세팅 \n3. 터진 글(저장, 리트윗, 조회수 등) 포맷 참고\n> 이미 보장된 방식\n4. SNS는 관계형! 댓글 소통하는 것 좋음 \n5. 불특정 다수 노출 조심하기 \n> 스하리, 맞팔, 1000명프로젝트 등\n> 일상계정은 몰라도 주제 뾰족하다면 알고리즘 망가짐\n6. 초반에 노출 잘시켜줌 \n> 특히 스레드 첫글 \n\n결론\n바이브 코딩, AI 관심 있는 분들 소통해요😉",
       "media": [],
-      "url": "https://www.threads.net/@lian.lab71/post/DU9prNND-Xv",
+      "url": "https://www.threads.com/@lian.lab71/post/DU9prNND-Xv",
       "created_at": "2026-02-20 11:40:25",
       "date": "2026-02-20",
       "crawled_at": "2026-03-18T17:49:32.278",
@@ -14559,7 +14559,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/628848481_17945888730111285_8761177333983770489_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTA4MHg2MDguc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QEEiDlYsn1wLt3KD-q9AhlyuuxZdUT2hAXpf9XOLK34eu18DcNHRxNIzSxIbmLpE-I&_nc_ohc=J4KKWXb1d9kQ7kNvwGbw8HU&_nc_gid=sRs4uROfcQj5QP2D-Sy6SQ&edm=AI6eXeABAAAA&ccb=7-5&ig_cache_key=MzgzODEzMzM4NDAwMzE0MjEwNg%3D%3D.3-ccb7-5&oh=00_Afy8NwhrOWrN69pbc8NZjL2eFgwdzb_BCKl17--WAETkDQ&oe=69C03EC5&_nc_sid=6efbad"
       ],
-      "url": "https://www.threads.net/@overtime.sam/post/DVDyfo6E0Ha",
+      "url": "https://www.threads.com/@overtime.sam/post/DVDyfo6E0Ha",
       "created_at": "2026-02-22 20:53:31",
       "date": "2026-02-22",
       "crawled_at": "2026-03-18T17:49:35.306",
@@ -14587,7 +14587,7 @@
       "display_name": "평범한 직장인",
       "full_text": "[기록 도구: Obsidian]\n\n전 테슬라 자율주행 AI 디렉터\nKarpathy도 쓰는 메모/기록 서비스\n\nhttps://www.threads.com/@overtime.sam/post/DUviKJjEn6L",
       "media": [],
-      "url": "https://www.threads.net/@overtime.sam/post/DVDyrs1E_Zv",
+      "url": "https://www.threads.com/@overtime.sam/post/DVDyrs1E_Zv",
       "created_at": "2026-02-22 20:55:08",
       "date": "2026-02-22",
       "crawled_at": "2026-03-18T17:49:35.307",
@@ -14614,7 +14614,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/639854871_17946985242102227_5226695373109682834_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uODI0eDUxMC5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2QEEiDlYsn1wLt3KD-q9AhlyuuxZdUT2hAXpf9XOLK34eu18DcNHRxNIzSxIbmLpE-I&_nc_ohc=jJ2wONgds98Q7kNvwG_THOj&_nc_gid=sRs4uROfcQj5QP2D-Sy6SQ&edm=AI6eXeABAAAA&ccb=7-5&ig_cache_key=MzgzNzAxNjAwMDMwMzQzNjI2OQ%3D%3D.3-ccb7-5&oh=00_AfwxfTf3ZED7bB7ulZ0onBrgS-CCbojZ6KgujJTtPtdVdQ&oe=69C0290F&_nc_sid=6efbad"
       ],
-      "url": "https://www.threads.net/@sleepcycle_/post/DU_0bkPk5Ht",
+      "url": "https://www.threads.com/@sleepcycle_/post/DU_0bkPk5Ht",
       "created_at": "2026-02-21 07:52:53",
       "date": "2026-02-21",
       "crawled_at": "2026-03-18T17:49:35.309",
@@ -14646,7 +14646,7 @@
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/640296297_17925818613232485_7984860121028599500_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMjA4NHgxMjk4LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QGnrqd68xQu3EBC7WzOCAg9mbJaVDBSNlehzfN39eBemFiJDWx6DPtVen-LIN8bago&_nc_ohc=nb51l5ooRbUQ7kNvwHTE1X_&_nc_gid=505cMFsIfTqfT5Ntvfk74g&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzODEyMjg3NjE3MjY0NzE4Ng%3D%3D.3-ccb7-5&oh=00_Afzvh8-F3Gs_RXcuv19R4vEHTBPuWJVcvu7QGFMHGX8M3g&oe=69C03B41&_nc_sid=10d13b",
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/639746128_17925818784232485_3577622791522188542_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMjE2MHgxMzUyLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QGnrqd68xQu3EBC7WzOCAg9mbJaVDBSNlehzfN39eBemFiJDWx6DPtVen-LIN8bago&_nc_ohc=mUVgK3HSX1EQ7kNvwHqyeXz&_nc_gid=505cMFsIfTqfT5Ntvfk74g&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzODEyMzk2NjI1NTQ5MjgwOA%3D%3D.3-ccb7-5&oh=00_AfzflpEbOdi6VkRjebHPFRimnHfbX8gUDj1txqi8IdJyIg&oe=69C05526&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@aicoffeechat/post/DVDwGuukjsS",
+      "url": "https://www.threads.com/@aicoffeechat/post/DVDwGuukjsS",
       "created_at": "2026-02-22 20:32:03",
       "date": "2026-02-22",
       "crawled_at": "2026-03-18T17:49:35.309",
@@ -14670,7 +14670,7 @@
       "display_name": "mindly",
       "full_text": "claude.md 파일은 100-150줄이 권장입니다. 150줄이 넘어가면 성능이 저하되기  시작하고 500줄이 넘어가면 심각한 성능저하 뿐아니라 대부분 무시됩니다 (출처 공식문서)\n\nhttps://code.claude.com/docs/en/best-practices",
       "media": [],
-      "url": "https://www.threads.net/@mindly.im/post/DU-25MCkxF8",
+      "url": "https://www.threads.com/@mindly.im/post/DU-25MCkxF8",
       "created_at": "2026-02-20 22:55:09",
       "date": "2026-02-20",
       "crawled_at": "2026-03-18T17:49:35.311",
@@ -14698,7 +14698,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/632513866_17946158196105671_3350381377317824396_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uOTk0eDk4MC5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2QHY3oABZhqGnMb3vSZdfUT6I7qjYpySzbtuMYC0JKAAnYiju-603yREcD2s5nxutqs&_nc_ohc=XPx45zHKA0MQ7kNvwGAPER2&_nc_gid=GH080lRuA3XW_vm5qmHJMA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNDgyNjIzOTk3NTMxMjE5NQ%3D%3D.3-ccb7-5&oh=00_Afx7Yvk81LvZQS__9S1tkeDy5C2uyx_rG9qId1IwF2GFJA&oe=69C04A48&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@biggerthanseoul.ai/post/DU4CiXBE0tD",
+      "url": "https://www.threads.com/@biggerthanseoul.ai/post/DU4CiXBE0tD",
       "created_at": "2026-02-18 07:22:13",
       "date": "2026-02-18",
       "crawled_at": "2026-03-18T17:49:35.311",
@@ -14724,7 +14724,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/639794923_17943897108108898_388823125645234832_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTc4NHg1NTIuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QFUW5nZClrY4UoqjLlraBZvWdoUnyGG4qTCQ9ye_JWogIgYXjbH_erBLC4DPJMkz9k&_nc_ohc=aYWzsw2xk1QQ7kNvwEb4wmg&_nc_gid=tr_cCMJ9QCPg2Egm3ZHfHQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzODAwMDA4NzE2ODE3NjI2Mg%3D%3D.3-ccb7-5&oh=00_AfwzQMOfy4RnCsTkqvcyxjsTTR6aB82EvgXp6YV0k9snSg&oe=69C0231C&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@gyunny/post/DVDUL6jk9CG",
+      "url": "https://www.threads.com/@gyunny/post/DVDUL6jk9CG",
       "created_at": "2026-02-22 16:28:05",
       "date": "2026-02-22",
       "crawled_at": "2026-03-18T17:49:35.311",
@@ -14750,7 +14750,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/639565075_17946998856102227_7193467278971994396_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTg4NngxNDQwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2QEpBR8ff8OHs_Z6U6xw5ZE7wT1ZWtjoCUXx7Nl0WBXtZ0RS8ge8R4OMU90wFoP9sKI&_nc_ohc=nyH4mHaVUJIQ7kNvwErDswL&_nc_gid=KJialD4g-k605nMWFB3W_A&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNzA2ODU0NTgzOTMyNjYyOQ%3D%3D.3-ccb7-5&oh=00_AfyQSuV58WwSaqB-RreWZ1gtDSfdP9GAasa10S01tL1xqw&oe=69C02226&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@sleepcycle_/post/DVAAYNFk-Wl",
+      "url": "https://www.threads.com/@sleepcycle_/post/DVAAYNFk-Wl",
       "created_at": "2026-02-21 09:37:17",
       "date": "2026-02-21",
       "crawled_at": "2026-03-18T17:49:35.311",
@@ -14776,7 +14776,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/637280750_17945335230107657_4789589926689489805_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTI4MHg3MjAuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QGOrCxOLSJVSt48NVrfo1OQY7F8CgZL8VhTaCX7l1Vsma34K2FcJ1mMGuVRksJNfHg&_nc_ohc=roOtZtrLutwQ7kNvwG8zJN_&_nc_gid=XkO2ySQKL_d4ZxfNZl3D7w&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNzE4MDQ0MTI1NDgxMTcwMg%3D%3D.3-ccb7-5&oh=00_AfzgauKmZGsHmtZys-SeIncoY_tPyyDyq7ETVORskanGbg&oe=69C04B9B&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@cokac_com/post/DVAZ0f0Edg2",
+      "url": "https://www.threads.com/@cokac_com/post/DVAZ0f0Edg2",
       "created_at": "2026-02-21 13:19:36",
       "date": "2026-02-21",
       "crawled_at": "2026-03-18T17:49:38.332",
@@ -14800,7 +14800,7 @@
       "display_name": "euniceverasong",
       "full_text": "디자인 실력 없는 기획자? 이제 걱정없다\n이렇게만 하면 Canva도 필요없음\n\n1. Gemini와 슬라이드별 구성(텍스트, 이미지)를 잡고\n2. Notebook LM에 복사한 텍스트를 소스로 추가한뒤\n3. 슬라이드 자료 만들어서\n4. 깨진 한글을 지우기위해 Gemini에게 돌아와서 \"이미지의 모든 텍스트를 삭제해달라\"고 한뒤\n5. Google Slide에서 텍스트 입력",
       "media": [],
-      "url": "https://www.threads.net/@euniceverasong/post/DU_QO6vE490",
+      "url": "https://www.threads.com/@euniceverasong/post/DU_QO6vE490",
       "created_at": "2026-02-21 02:36:35",
       "date": "2026-02-21",
       "crawled_at": "2026-03-18T17:49:38.332",
@@ -14822,7 +14822,7 @@
       "display_name": "jangmk97",
       "full_text": "Claude Code 혹은 Codex를 쓰다보면 특정 사이트에서 Fetch를 통해 데이터를 가져오지 못하는 경우 있지들 않아?\n\n그럴땐 Gemini CLI를 활용해봐 \n\nhttps://news.hada.io/topic?id=26526 \n링크에 들어가면 클로드 코드 해커톤 우승자들의 팁을 번역한 문서가 있어 \n\nGemini CLI를 통해 접근이 안되는 페이지에 내용을 가져오게 하는 방법이 있지\n\nQ.Playwright로 우회해서 접근하면 되는거 아냐?\nA. 그럼 그 컨텍스트와 토큰은 조상님이 대신 내줘? 속도도 느리고 말이야\n\n---\n\n나는 예전부터 클로드 코드의 CLAUDE.md에 Gemini CLI 호출 방식을 작성해서 사용해 왔어 \n\n근데 나도 이 방법은 최근에 알게되었고 매우 유용하게 사용하고 있어서 공유 해봐 \n\n아니면 내가 만든 mcp를 활용하는것 방법이야 !!\n\nhttps://github.com/Dokkabei97/all-agents-mcp",
       "media": [],
-      "url": "https://www.threads.net/@jangmk97/post/DVAte0SkYvV",
+      "url": "https://www.threads.com/@jangmk97/post/DVAte0SkYvV",
       "created_at": "2026-02-21 16:11:24",
       "date": "2026-02-21",
       "crawled_at": "2026-03-18T17:49:38.332",
@@ -14846,7 +14846,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/638272661_1413980080185377_3392059637424841157_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDM2MC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QHwUyp6QjQaGm7V4W4XsK3aTed0h6D7-drerso9p95BvLGSd4BrqqOebyBUGFNkMuk&_nc_ohc=AeHnviNay_IQ7kNvwE7pqMW&_nc_gid=qDwMve1Y09T5jvn9CPrLQw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNjc5OTI2NDQ0MTQwMzU4OQ%3D%3D.3-ccb7-5&oh=00_AfwlC-PJhZHIxoMwhNKHYHJnqENxAn90YljQYPJEhY9Rrg&oe=69C01EA4&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@taaaaes/post/DU_DJpPgojF",
+      "url": "https://www.threads.com/@taaaaes/post/DU_DJpPgojF",
       "created_at": "2026-02-21 00:45:55",
       "date": "2026-02-21",
       "crawled_at": "2026-03-18T17:49:38.332",
@@ -14872,7 +14872,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/640418862_17930588520194777_4438930446279257264_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTA1MHg5MDIuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QHF9KPXaLmBx271pRlnJaXmtGVkXQ353DJmXNnj8zHp1r5excBwWudHaeW04JrvNDA&_nc_ohc=P6gtQ_ecoSwQ7kNvwFWtfQ3&_nc_gid=pLtt9s1sALpWcRKka0z7cg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNjk4MTc4NzUzMzQxODg2MA%3D%3D.3-ccb7-5&oh=00_AfwyDNZA6H5wPzQ-FbcmvEFYSyXSJ00uW-ilBWGeA1NfAw&oe=69C024D8&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@chatgwajang/post/DU_t59NkkEn",
+      "url": "https://www.threads.com/@chatgwajang/post/DU_t59NkkEn",
       "created_at": "2026-02-21 06:55:52",
       "date": "2026-02-21",
       "crawled_at": "2026-03-18T17:49:41.353",
@@ -14898,7 +14898,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/638871780_947228694405317_2614012054421175182_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDM2MC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QFoua1GxNafOAWjWuxyDr8A6Lr95OfybRlvog9DDQYuv8Wswi0F30Alwoc9T0nHSnA&_nc_ohc=2DQpEllD1VQQ7kNvwH_yyfL&_nc_gid=MkaX36eMvnLK-Cu-h9Lq-g&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNjQ1MTgyOTIxOTIxMjI4Ng%3D%3D.3-ccb7-5&oh=00_AfwVrmM7dGGHbezcTIo9fRQKARXgssgIYZxEcYK3orST1Q&oe=69C03FFD&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@tofukyung/post/DU90Jy-gjv-",
+      "url": "https://www.threads.com/@tofukyung/post/DU90Jy-gjv-",
       "created_at": "2026-02-20 13:12:20",
       "date": "2026-02-20",
       "crawled_at": "2026-03-18T17:49:41.353",
@@ -14924,7 +14924,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/635606109_1861183211204945_4404326941238215859_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDMwNC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QFLiZiyuRmTiJLxsM9ClSyx1D5FmiCqXLfPKw4eRJsmOzJKGcxyaKx3ChkyXNHRd-Q&_nc_ohc=Q4Owo2HodncQ7kNvwFZ7lnD&_nc_gid=YxczvX3CebnrywhQlTEi5Q&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNjI4MTYwMDk2ODA2MDc0Mg%3D%3D.3-ccb7-5&oh=00_AfyQEE7IPjQyPi4WQheINj953a4C4F4NupC_TZl2vb1M1g&oe=69C01FD1&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@specal1849/post/DU9NcpkEW9G",
+      "url": "https://www.threads.com/@specal1849/post/DU9NcpkEW9G",
       "created_at": "2026-02-20 07:39:02",
       "date": "2026-02-20",
       "crawled_at": "2026-03-18T17:49:41.353",
@@ -14954,7 +14954,7 @@
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/639826829_17895487902406917_7352181104545859345_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTg4NXg4MjEuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QETsQamlGYK769exxJAxms21cdC9uuD86lNkE2Zg-WsT9-1W1niF5jcl2ozLzMuSzc&_nc_ohc=LmBCSeaJyCcQ7kNvwFWBl8n&_nc_gid=UxSFHfKWXuRasKU9HLxg5Q&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNzI4Mzk0NDkxNjc3Mzg3NA%3D%3D.3-ccb7-5&oh=00_AfywpMpqLQPnalr1CX79jYzG5hkRpiqen4R-8PSNTP_gzg&oe=69C05019&_nc_sid=10d13b",
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/639674950_17895488754406917_7114330200171098596_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTYzNXg2ODAuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QETsQamlGYK769exxJAxms21cdC9uuD86lNkE2Zg-WsT9-1W1niF5jcl2ozLzMuSzc&_nc_ohc=q3MrOfnhIPsQ7kNvwHIC2pA&_nc_gid=UxSFHfKWXuRasKU9HLxg5Q&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNzI4NDAzNTM0NTk2ODMyOA%3D%3D.3-ccb7-5&oh=00_Afx3cvK-hKd0EAI0gh5dHgCS_gAmFv30P-njBjkPouh8Pw&oe=69C0525F&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@specal1849/post/DVAxTwjErQM",
+      "url": "https://www.threads.com/@specal1849/post/DVAxTwjErQM",
       "created_at": "2026-02-21 16:44:50",
       "date": "2026-02-21",
       "crawled_at": "2026-03-18T17:49:41.353",
@@ -14984,7 +14984,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/634230188_17875543185509572_4717202038353845608_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTEyNXg2MzIuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QHRpdEZP9WoGzZ3V8BSVTI56dwqi1PIsy-yilW1ZxZ7T4xESrwF5SHbQQW4igmgBdg&_nc_ohc=yF4vA-gfQoIQ7kNvwGWP1Yu&_nc_gid=VSs3LuC9w9rHBTss3_bSaQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzMzQ3NDYwNjI5MzAyNTEwMw%3D%3D.3-ccb7-5&oh=00_AfxmYs1kmd4jM5Ut8RTmKN5otD7UjRPCSr5e54hFYNALsA&oe=69C024A6&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@ai_younggle_man/post/DUzPNgDk4FP",
+      "url": "https://www.threads.com/@ai_younggle_man/post/DUzPNgDk4FP",
       "created_at": "2026-02-16 10:36:46",
       "date": "2026-02-16",
       "crawled_at": "2026-03-18T17:49:44.368",
@@ -15010,7 +15010,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/523804136_17864648919429430_5772022171487328940_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uNDkyeDI2MC5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QFCfLqwbrC9nZNOhnCDWvw8N8Fh2gF-jWosaGe8AAGwF91q-aszOBAtO9tFMRqI1es&_nc_ohc=8cr9AMjMWlwQ7kNvwGVq_g1&_nc_gid=sx5rpA6tGO2rKhFpE0GlJQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzY4Mjc1ODIzMzgwODY4MDgzOQ%3D%3D.3-ccb7-5&oh=00_AfxW1WvsbywxK4xBdyffuYfijOj7VhNmu_Nx-DHQH95b7g&oe=69C0441E&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@danielmentality_insta/post/DMbyRt6zesM",
+      "url": "https://www.threads.com/@danielmentality_insta/post/DMbyRt6zesM",
       "created_at": "2025-07-23 11:50:15",
       "date": "2025-07-23",
       "crawled_at": "2026-03-18T17:49:44.368",
@@ -15036,7 +15036,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/637051073_17894532450408836_2048946120468296841_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uNzgxeDc5Ni5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHgTI0w1_vRIYNvOlMtrZoDwh4urBx7q518wMd94j2hQXPbpejlKIT8gm_j-Otc2Nw&_nc_ohc=zYRPoSMWeiEQ7kNvwFdPUNH&_nc_gid=07Xr2rC7ErnV5CVPNwC2LA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNTIyMTU3NjgzMzUwNTAxMw%3D%3D.3-ccb7-5&oh=00_AfwvPNs5VWgDhBrRZXKxTFbWXyKM4AQSFLiV1Ufm9jNobw&oe=69C02E99&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@gptaku_ai/post/DU5cbYwE-aL",
+      "url": "https://www.threads.com/@gptaku_ai/post/DU5cbYwE-aL",
       "created_at": "2026-02-18 20:27:42",
       "date": "2026-02-18",
       "crawled_at": "2026-03-18T17:49:44.368",
@@ -15060,7 +15060,7 @@
       "display_name": "maker.evan",
       "full_text": "개발자가 디자인 잘하려면 이것만 지켜.\n1. Coolors에서 컬러 추천 받아서 컬러코드 그대로 넣어\n2. 컬러는 딱 2개만. main 하나, sub 하나. 이게 끝이야.\n3. Stitch 적극 활용해. 대신 컬러코드 정확히 넣고 레퍼런스 사이트 묘사는 영문으로 써\n4. MCP로 디자인하지 마. 토큰 터져서 일관성 떨어질 때가 많음.\n5. 대신 Skills 써. web-design-guidelines나 frontend-design 추천\n6. Next.js 쓸 때 MUI 말고 shadcn 써. 커스터마이징이 다름.\n\n---\n\n이런 정보 더 알고싶으면 \nhttps://discord.gg/UDndhtsr\n방문!",
       "media": [],
-      "url": "https://www.threads.net/@maker.evan/post/DUr5HUHD_R4",
+      "url": "https://www.threads.com/@maker.evan/post/DUr5HUHD_R4",
       "created_at": "2026-02-13 14:09:00",
       "date": "2026-02-13",
       "crawled_at": "2026-03-18T17:49:44.368",
@@ -15081,7 +15081,7 @@
       "display_name": "벨만",
       "full_text": "꿀팁하나더+ ; 홈서버 하나 세팅하셔서 네이티브 우분투를 헤드레스버전으로 깔아서 원격으로 쓰시면 무지 쾌적함",
       "media": [],
-      "url": "https://www.threads.net/@bellman.pub/post/DUzSAR_EsMi",
+      "url": "https://www.threads.com/@bellman.pub/post/DUzSAR_EsMi",
       "created_at": "2026-02-16 11:01:10",
       "date": "2026-02-16",
       "crawled_at": "2026-03-18T17:49:47.429",
@@ -15107,7 +15107,7 @@
       "display_name": "pm_anyway",
       "full_text": "클로드코드 auto-run 하는 방법 찾았다!\n\nclaude --dangerously-skip-permissions 로 시작하면 되는 거였네\n근데 혹시 모르니 더 안전하게 하려면 아래 프롬프트를 참고해\n\n혹시 더 좋은 방법 아는 고수님 있으면 알려줘",
       "media": [],
-      "url": "https://www.threads.net/@pm_anyway/post/DTfC9XAEgCD",
+      "url": "https://www.threads.com/@pm_anyway/post/DTfC9XAEgCD",
       "created_at": "2026-01-14 17:53:30",
       "date": "2026-01-14",
       "crawled_at": "2026-03-18T17:49:47.430",
@@ -15131,7 +15131,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/589843858_17853919641590872_6874949964369957277_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMTAwMHgxMDAwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QEk9fN94lmObp_J_2TiEFMI3TLSS4PI16NgWBRTHx3QSWXwQyq8vo-jOdOLJZHOW8I&_nc_ohc=weweZkafl3EQ7kNvwHK7UPy&_nc_gid=hNXSK2DuKAEk9IH5ANSBSA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc4MzY5NDAyNjgwNjYyMTUzNw%3D%3D.3-ccb7-5&oh=00_Afwjpt-Ftc3d5w7vH99vxJB--tpeBjH8hr9b2XfdtDKcWQ&oe=69C02F10&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@gwon_vibe/post/DSCYa1wk6PG",
+      "url": "https://www.threads.com/@gwon_vibe/post/DSCYa1wk6PG",
       "created_at": "2025-12-09 18:11:39",
       "date": "2025-12-09",
       "crawled_at": "2026-03-18T17:49:47.430",
@@ -15157,7 +15157,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/622804928_1550046089407833_6481500802482050165_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDQxMi5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QEIrubUw4nmkltoEKQCOagwh2kZ9180BQk02YBZu10NLtXe8Zi1v0FpJnuFGONxplo&_nc_ohc=J_XmSRYneS8Q7kNvwFnIHH2&_nc_gid=jctYF8z7gIiTylso-6211A&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgyMDQ4ODQ1NDMxNzE2MTkyNg%3D%3D.3-ccb7-5&oh=00_Afx0bNFype3aRejls4P83ZQthq4bDSMy7gDhZxum4XAErA&oe=69C0406B&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@kook0526/post/DUFGgHkDj3G",
+      "url": "https://www.threads.com/@kook0526/post/DUFGgHkDj3G",
       "created_at": "2026-01-29 12:36:18",
       "date": "2026-01-29",
       "crawled_at": "2026-03-18T17:49:47.430",
@@ -15181,7 +15181,7 @@
       "display_name": "ai_younggle_man",
       "full_text": "클로드코드 오퍼스 모델 컨텍스트 윈도우 \n100만으로 늘리는 방법 !! \n클로드코드 시작할때  모델지정해서 시작해야 \n오류가 안생깁니당 세션중에 모델변경은 안된다고 하네용 ㅎㅎ\n\nwindows :\n복붙 1: claude --model=opus[1m]\n복붙 2: claude --dangerously-skip-permissions --model=opus[1m]\n\nmac :\n복붙 1: claude --model \"opus[1m]\n복붙 2: claude --dangerously-skip-permissions --model \"opus[1m]\n---\n둘중에 더 편한 방법으로 클로드코드 실행",
       "media": [],
-      "url": "https://www.threads.net/@ai_younggle_man/post/DU4T-ZPE0MS",
+      "url": "https://www.threads.com/@ai_younggle_man/post/DU4T-ZPE0MS",
       "created_at": "2026-02-18 09:54:35",
       "date": "2026-02-18",
       "crawled_at": "2026-03-18T17:49:50.504",
@@ -15205,7 +15205,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/632632866_1250693163655266_7391747925187025525_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uNjQweDc5NC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QGYuUZXLAFrRLyDb3n43QegBGxWlEIf26sL6ayFqPfW3zl6xeMpnczFkqAONYsSjSw&_nc_ohc=ryVqmZ_TYo4Q7kNvwHM1rK4&_nc_gid=hh_k9vEh1sqpn106g0-tfw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNTY3MzI5MzQwMDA0MzQzNA%3D%3D.3-ccb7-5&oh=00_AfxrDg8JgDMtG65oNa6Qy08s0UDGpY9TsL70p57dvUFF6A&oe=69C04AA3&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@brandbuilder_bb/post/DU7DdPRj7dt",
+      "url": "https://www.threads.com/@brandbuilder_bb/post/DU7DdPRj7dt",
       "created_at": "2026-02-19 11:27:58",
       "date": "2026-02-19",
       "crawled_at": "2026-03-18T17:49:50.505",
@@ -15231,7 +15231,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/632629964_1381673634008507_9168159904886808074_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDM2MC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2QFUncfuA6WKSRlfj8MEwTouQxTsCzD36-WbPLqS4s3PbXH88kbon9g-kd80rwDH_m0&_nc_ohc=I_PlUEDh6X8Q7kNvwHKoIt5&_nc_gid=9TVA5t3ZG8fFaWDyKWMxkQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNTU0NDUyODk0NjU0NTQ5NQ%3D%3D.3-ccb7-5&oh=00_AfxSn7hjlVYyYP5gZzJPfN50nkaWvQjFX35wBrqNcOZ-YQ&oe=69C044ED&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@mino.biz/post/DU6l21wDUNX",
+      "url": "https://www.threads.com/@mino.biz/post/DU6l21wDUNX",
       "created_at": "2026-02-19 07:12:40",
       "date": "2026-02-19",
       "crawled_at": "2026-03-18T17:49:50.505",
@@ -15257,7 +15257,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/633733714_2395797564187984_1346913461434513218_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDEzODYuc2RyLmY3MTg3OC5kZWZhdWx0X2NvdmVyX2ZyYW1lLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QHY3xEkN1kmp3YtxAsBglrXuzxIZmoVNTMcN62EfAQn5iNBa5uc_UXSEoVVCT9cH9c&_nc_ohc=-qQS8NfasbgQ7kNvwElDdl7&_nc_gid=0Wfwxf03mD8NmjVKGu0gpQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNTU5NjQ1OTY5ODQ0OTUwNA%3D%3D.3-ccb7-5&oh=00_Afxdgnt0wbvHHAirMAOpHiFmWZ-elU_OH4QeH91fqNb64Q&oe=69C03ADB&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@cokac_com/post/DU6xqiCEmxg",
+      "url": "https://www.threads.com/@cokac_com/post/DU6xqiCEmxg",
       "created_at": "2026-02-19 08:53:17",
       "date": "2026-02-19",
       "crawled_at": "2026-03-18T17:49:50.505",
@@ -15281,7 +15281,7 @@
       "display_name": "bellman.pub",
       "full_text": "Codex CLI 쓰면서 oh-my-codex 모르면 손해임\n\n에이전트 병렬 실행, 세션 관리, 팁음 커스터마이징\n프로들은 이미 쓴다\n\nhttps://github.com/Yeachan-Heo/oh-my-codex",
       "media": [],
-      "url": "https://www.threads.net/@bellman.pub/post/DU8SN9NErEV",
+      "url": "https://www.threads.com/@bellman.pub/post/DU8SN9NErEV",
       "created_at": "2026-02-19 22:56:12",
       "date": "2026-02-19",
       "crawled_at": "2026-03-18T17:49:53.525",
@@ -15303,7 +15303,7 @@
       "display_name": "calmtiger_",
       "full_text": "바이브코딩 막상 해보니까 '딸각' 안되서 속상하지?\n\n그럼 이거 딱 2개만 만들고 시작해봐!\n\n1. PRD 문서: 뭘 만들고, 뭘 성공으로 볼지 정리한 제품기획서\n\n2. OpenSpec 문서: 무엇을 어떻게 만들지 정리한 요구사항 명세서\n\n프롬프트에 \"(누가)(무엇을)(어떻게)하다 겪는 (문제)를 (솔루션)으로 해결 하려고 해. PRD 먼저 작성하고 핵심기능을 기준으로 OpenSpec까지 작성해줘\"라고 해봐~",
       "media": [],
-      "url": "https://www.threads.net/@calmtiger_/post/DU7ruAhAdBG",
+      "url": "https://www.threads.com/@calmtiger_/post/DU7ruAhAdBG",
       "created_at": "2026-02-19 17:19:47",
       "date": "2026-02-19",
       "crawled_at": "2026-03-18T17:49:53.525",
@@ -15325,7 +15325,7 @@
       "display_name": "lian.lab71",
       "full_text": "이번에 다운로드 폴더에 파일 400개 정리하면서 \n사용한 클로드 코워크 prompt💻",
       "media": [],
-      "url": "https://www.threads.net/@lian.lab71/post/DU8Tp-OD3m8",
+      "url": "https://www.threads.com/@lian.lab71/post/DU8Tp-OD3m8",
       "created_at": "2026-02-19 23:08:46",
       "date": "2026-02-19",
       "crawled_at": "2026-03-18T17:49:53.525",
@@ -15349,7 +15349,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/633789722_17898748662391515_7396410710921537864_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uMjg3OXgxNjYxLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QHV454_35ORUUovyom_ULl_Uz1nec0rp3fbISV-SrDCESNc7DJEB_oazFazuk4eW44&_nc_ohc=xRDHVeN9y30Q7kNvwGgk98D&_nc_gid=7AdebjGNJ2AonUbDbMhdyw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNjA3Mjg2Mjc1NTgzNDA2NA%3D%3D.3-ccb7-5&oh=00_Afwpp8fzA7hdEt_zMY59FU1NxtyvH9foOaJit1tmMcjZ4Q&oe=69C04110&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@daehyeon.xyz/post/DU8d_N9E1KI",
+      "url": "https://www.threads.com/@daehyeon.xyz/post/DU8d_N9E1KI",
       "created_at": "2026-02-20 00:39:03",
       "date": "2026-02-20",
       "crawled_at": "2026-03-18T17:49:53.525",
@@ -15375,7 +15375,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/639683615_17894653776408836_2219317920614578175_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uNTM1eDQ5OC5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QFf8Ao83gM2gkFGpqCBHejZOFjocPWgSw0jVL-ANbIJRGjjM3vThIgwY3qa2sBwb0M&_nc_ohc=h01r4aKO5bcQ7kNvwEaF96P&_nc_gid=R1uN0ckp55iai1eYPSsHAA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNTg3MjA1NTIwMDU1MDM3MA%3D%3D.3-ccb7-5&oh=00_AfwlZlbyMBJQ4kgJPferDHap6z9Ofs3sff79TkND8KMGoA&oe=69C030F3&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@gptaku_ai/post/DU7wVFKkyoL",
+      "url": "https://www.threads.com/@gptaku_ai/post/DU7wVFKkyoL",
       "created_at": "2026-02-19 18:00:05",
       "date": "2026-02-19",
       "crawled_at": "2026-03-18T17:49:53.530",
@@ -15402,7 +15402,7 @@
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/639504228_17940938037119731_2042892200768658775_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uOTMweDU0NS5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QF1mtjlXgVgRSMH6x2eWTDB1BamA7-LtX3tDYQ0sP13UEEHcpWKcuX34RNuzPjhuQs&_nc_ohc=Q9IQzmDRv1IQ7kNvwGSgH8Q&_nc_gid=RzBbrWnweQ8RCl7tTaSRcQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNTgxNDM1NTMzNDU4OTgwMw%3D%3D.3-ccb7-5&oh=00_AfzGxVNQSwrWWhlIB8fcp1rQh1AmvoQq4STi4cfA30k4wg&oe=69C04A20&_nc_sid=10d13b",
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/639758731_17940960501119731_9041369083515868477_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNzUweDU3Ni5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QF1mtjlXgVgRSMH6x2eWTDB1BamA7-LtX3tDYQ0sP13UEEHcpWKcuX34RNuzPjhuQs&_nc_ohc=ErYKad5-YHQQ7kNvwEMXZzn&_nc_gid=RzBbrWnweQ8RCl7tTaSRcQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNTkxNzg5MTk4ODg3MTExNQ%3D%3D.3-ccb7-5&oh=00_AfwCsp1tWvwI5c1C_73Fw5UeEZErhhadUOdA-oX-PSyOhg&oe=69C0206D&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@amyhong0/post/DU7jNVKD-1r",
+      "url": "https://www.threads.com/@amyhong0/post/DU7jNVKD-1r",
       "created_at": "2026-02-19 16:05:25",
       "date": "2026-02-19",
       "crawled_at": "2026-03-18T17:49:53.530",
@@ -15431,7 +15431,7 @@
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/632157015_17886025110443390_9124911119498414576_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNTk4eDYwOC5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QE8hxBsG31qJltAoSwLxF8-0pmbHBSmeZSkDroaeb8KuraX3iWU3n_SvRQMLrF3MdM&_nc_ohc=cOwtkEtgk1kQ7kNvwEDFLoO&_nc_gid=GYGGfGNTz3UiEB57ZbOtdw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNTc4Nzg3MDgzODE0ODUwNQ%3D%3D.3-ccb7-5&oh=00_AfxQoh6nqzA2SRtRc7VwmqWzfO5kUrrR7qKoYX506l6-IA&oe=69C032A1&_nc_sid=10d13b",
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/631583989_17886025503443390_5646485644574854818_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTMxOHgxNjc4LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QE8hxBsG31qJltAoSwLxF8-0pmbHBSmeZSkDroaeb8KuraX3iWU3n_SvRQMLrF3MdM&_nc_ohc=XA6iAu57ZPMQ7kNvwHmXQ_4&_nc_gid=GYGGfGNTz3UiEB57ZbOtdw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNTc4Nzk0MTAwODg1NzcwNg%3D%3D.3-ccb7-5&oh=00_AfxLtU2ZLhmpT_ul34BrvvdYhAR4OhzHJfQw9ntXSyWtoA&oe=69C02F1B&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@snuglab_dev/post/DU7b3RMj3QB",
+      "url": "https://www.threads.com/@snuglab_dev/post/DU7b3RMj3QB",
       "created_at": "2026-02-19 15:01:15",
       "date": "2026-02-19",
       "crawled_at": "2026-03-18T17:49:53.530",
@@ -15457,7 +15457,7 @@
       "display_name": "gogosing__77",
       "full_text": "나는 SNS에 매일 글을 올려도 반응이 없었다.\n\n그런데 2026년에는\nGemini가 같은 콘텐츠를\n알고리즘 구조에 맞게 재설계했다.\n\n조회수 100에서 50만으로.\n\n아래 7가지 프롬프트를 복사해서\n운에 맡기는 콘텐츠를 끝내라:\n\n---\n\n1/ 내 콘텐츠가 왜 안 뜨는지 ‘감’이 아니라 ‘구조’로 분석하기\n\nGemini야.\n내 계정 주제는 [주제]이고\n현재 평균 조회수는 [숫자]다.\n\n최근 올린 콘텐츠 10개의 공통점을\n후킹, 체류 시간, 공감 요소, 공유 유도 구조 기준으로 분석해줘.\n\n조회수가 낮은 진짜 원인이\n① 첫 3줄 문제인지\n② 메시지 밀도 문제인지\n③ 알고리즘 적합도 문제인지\n구조적으로 진단해줘.\n\n추상적인 조언 말고\n수정 가능한 지점만 정리해줘.\n\n---\n\n2/ 첫 문장을 ‘설명’이 아니라 ‘결과’로 시작하기\n\nGemini야.\n내가 쓰는 콘텐츠 도입부를\n상황 설명이 아니라\n결과 중심 문장으로 재작성해줘.\n\n예:\n“나는 블로그를 시작했다”가 아니라\n“블로그 글 20개로 월 100을 만들었다”처럼.\n\n내 주제에 맞게\n사람이 스크롤을 멈출 수밖에 없는\n결과형 도입 10개 만들어줘.\n\n---\n\n3/ 사람들이 저장하는 글 구조로 재설계하기\n\nGemini야.\n내 콘텐츠를\n단순 소비형이 아니라\n저장·공유가 발생하는 구조로 바꾸고 싶다.\n\n저장이 발생하는 콘텐츠의 공통 구조를 정리해주고,\n내 주제에 맞게\n\n문제 제시 → 구조 제안 → 실행 단계 → 요약 체크리스트\n\n흐름으로 재작성해줘.\n\n각 단계에\n반드시 들어가야 할 문장 유형도 함께 알려줘.\n\n읽고 끝나는 글이 아니라\n“다시 보려고 저장하는 글”로 바꾸고 싶다.\n\n---\n\n4/ 두루뭉술한 문장을 전부 ‘판단 가능한 문장’으로 바꾸기\n\nGemini야.\n내 콘텐츠에서 자주 쓰는\n\n열심히\n꾸준히\n중요하다\n도움 된다\n\n같은 모호한 표현을 전부 찾아줘.\n\n그리고 이 문장들을\n\n숫자\n기간\n전·후 비교\n구체적 행동\n\n기준으로 다시 써줘.\n\n읽는 사람이\n“그래서 뭐가 달라졌는데?”라고\n묻지 않게 만들고 싶다.\n\n---\n\n5/ 반응이 터진 글에서 ‘감’이 아니라 ‘패턴’만 추출하기\n\nGemini야.\n내 계정에서\n반응이 좋았던 글 3개를 기준으로\n\n도입 구조\n문장 길이\n정보 밀도\n마무리 방식\n\n의 공통 패턴을 분석해줘.\n\n그리고 그 패턴을\n다른 주제에도 적용할 수 있도록\n\n복붙 가능한 템플릿 형태로 정리해줘.\n\n감으로 따라 쓰는 게 아니라\n구조로 복제하고 싶다.\n\n---\n\n6/ 댓글과 공유가 발생하는 ‘선택 질문’ 설계하기\n\nGemini야.\n내 콘텐츠의 마지막 문장이\n항상 애매하게 끝난다.\n\n“어떻게 생각하세요?” 같은 질문 말고\n\nA or B 선택\n경험 유도\n공감 유도\n\n형식으로\n사람이 댓글을 달 수밖에 없는\n마무리 질문 10개 만들어줘.\n\n내 주제에 맞게\n바로 쓸 수 있는 문장으로 작성해줘.\n\n---\n\n7/ 이 계정이 왜 성장할 수밖에 없는지 구조로 설명하기\n\nGemini야.\n지금까지 재설계한 콘텐츠 구조를 기준으로\n\n이 계정이\n왜 성장할 수밖에 없는지를\n\n한 문단으로 정리해줘.\n\n이 문장은\n프로필 소개글이나\n고정 글에 그대로 쓸 수 있게\n\n감성적인 표현 말고\n논리 중심으로 작성해줘.\n\n이제 이 구조면\n콘텐츠는 더 이상\n“오늘 뭐 올리지?”가 아니라\n\n“이 패턴대로 쓰면 된다”가 됩니다.\n\n조회수는 운이 아니라\n구조입니다.\n\n---\n\n부업을 꿈꾸는 직장인·워킹맘이라면 지금 주목하세요❗️❗️\n\n단 6주 만에 월 2,000만원을 판매한\n전자책 3단계 공식,\n이번에 무료로 공개합니다.\n\n30대부터 60대까지 가능합니다.\n전문 지식 필요 없습니다.\n글을 잘 쓸 필요도 없습니다.\n\n-AI로 전자책을 30분 만에 만드는 방법\n-4주 안에 월 100만원 자동수익을 만드는 로드맵\n-실전 판매 구조까지\n\n이 3가지를\n이프로코치님의 라이브 무료 강의에서 전부 공개합니다.\n\n지금 무료 강의를 신청하시면\n49만원 상당의 자료를 무료로 드립니다 🎁\n\n그리고 라이브를 끝까지 참여하신 분들께는\n어디에서도 공개하지 않은\n100만원 상당의 실전 특급 자료를 추가로 드립니다.\n\n3월 11일\nAI가 쓰고, 30일 안에 월 200을 만드는\n전자책 3단계 공식.\n\n지금 바로 신청하세요.\nhttps://leadgeny.kr/lpo.php?seq=4d7a55794e7a5534",
       "media": [],
-      "url": "https://www.threads.net/@gogosing__77/post/DU7UX8-EYtS",
+      "url": "https://www.threads.com/@gogosing__77/post/DU7UX8-EYtS",
       "created_at": "2026-02-19 13:55:48",
       "date": "2026-02-19",
       "crawled_at": "2026-03-18T17:49:53.530",
@@ -15478,7 +15478,7 @@
       "display_name": "데이터 드리븐 디자인",
       "full_text": "shadcn이랑 mui랑 고민을 많이했는데요, 가장 결정적으로\n\nmui에서 제공하는 시멘틱 토큰을 활용하는게 디자인 시스템 본연의 장점을 살릴 수 있다는 개인적인 판단하에 그렇게 하고있습니다.\n\nshadcn은 헤드리스로 LLM이 컴퍼넌트를 유연하게 커스텀할 수 있는 장점이 있지만, 결과적으로 이것떄문에 일관성이 꺠지고 스케일럽 되었을대 이를 바로 잡는 비용이 크더라고요.",
       "media": [],
-      "url": "https://www.threads.net/@dddesign.io/post/DU7QcLqCQL6",
+      "url": "https://www.threads.com/@dddesign.io/post/DU7QcLqCQL6",
       "created_at": "2026-02-19 13:21:26",
       "date": "2026-02-19",
       "crawled_at": "2026-03-18T17:49:59.553",
@@ -15507,7 +15507,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/638861288_17945299701120123_820132120242075349_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uOTgyeDk2Ni5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QEBR6FviN7gT5AJ8HVgmpMOYybfWHWdV2bZAJHKpAmyPaHyHmXkpC0sc1-xSetac3w&_nc_ohc=ZikgKWGLxZgQ7kNvwFIJ134&_nc_gid=azlJ-0XwrCUOxr85CxIVAQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNTY5MjQyMDI4OTg5NDczNQ%3D%3D.3-ccb7-5&oh=00_AfwesbzQPfoZ4dLYDZxEr70kru0zdjdPpaYAApElR8nlwg&oe=69C0254B&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@dddesign.io/post/DU7He8TCZlP",
+      "url": "https://www.threads.com/@dddesign.io/post/DU7He8TCZlP",
       "created_at": "2026-02-19 12:03:10",
       "date": "2026-02-19",
       "crawled_at": "2026-03-18T17:49:59.553",
@@ -15537,7 +15537,7 @@
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/639459634_831122449948657_1857640138456695116_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuQ0FST1VTRUxfSVRFTS5pbWFnZV91cmxnZW4uNjQweDQ0Mi5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QH3Tu8h6kgmwoDejmPuIFpaZO19dzuxxdf1m4V5oFnRGeCG8ipi_NuMBVzeZmoIPXE&_nc_ohc=N_3UOBTBOVYQ7kNvwEk6_LD&_nc_gid=CKCI9TDWF5A2tatrF8IsVQ&edm=AI6eXeABAAAA&ccb=7-5&ig_cache_key=MzgzNTc3NjMyMzI5ODI5MzI4Mg%3D%3D.3-ccb7-5&oh=00_Afw67Sc8DX767QWSLKSzxxhuCGj_rq4LILP6LWpOFdlFtA&oe=69C05146&_nc_sid=6efbad",
         "https://scontent-ssn1-1.cdninstagram.com/o1/v/t16/f2/m84/AQMSefv73XOofj2sKjpfa6XzSUeKI6m13rTXEnq2PFlzJo7eD54K3b9n3Jo4Phg6TTxKI616hyWjielAhcls_1xXSxU5wngvUIPqwRM.mp4?_nc_cat=104&_nc_sid=5e9851&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=YTHQ6Nl4-yEQ7kNvwFOo6TZ&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0FST1VTRUxfSVRFTS5DMy4xMDQwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTc5NDUzMjMzMjkxMjAxMjMsImFzc2V0X2FnZV9kYXlzIjoyNywidmlfdXNlY2FzZV9pZCI6MTAxNjQsImR1cmF0aW9uX3MiOjQsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=CKCI9TDWF5A2tatrF8IsVQ&_nc_ss=8&_nc_zt=28&vs=df3c086aaee3a2d6&_nc_vs=HBkcFQIYTGlnX2JhY2tmaWxsX3RpbWVsaW5lX3ZvZC9COTQ3MjBBRDQ4REZDNkNFRTVCMjQ0MzcwRTYzMjM5NF92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAKAAYABsCiAd1c2Vfb2lsATEScHJvZ3Jlc3NpdmVfcmVjaXBlATEVAAAm9p3L5qXL4D8VAigCQzMsF0ATu2RaHKwIGBJkYXNoX2Jhc2VsaW5lXzFfdjERAHXuB2XongEA&oh=00_AfzGLJoGXpOHp6vVNIAvZ7VQxsivDsjEJpZLp1bV2tAlrg&oe=69BC56A8"
       ],
-      "url": "https://www.threads.net/@dddesign.io/post/DU7alOVCVH0",
+      "url": "https://www.threads.com/@dddesign.io/post/DU7alOVCVH0",
       "created_at": "2026-02-19 14:50:03",
       "date": "2026-02-19",
       "crawled_at": "2026-03-18T17:49:59.553",
@@ -15566,7 +15566,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/634656433_1233167049000111_3166432382141044030_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDMwOC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QGUHGOAwSv7l5qyITTywKigt1G0q2in3q_u-7MpcDbB_v5_VOXre0fnYbfZ9eGmSrs&_nc_ohc=GcWEzzvsGasQ7kNvwF6QSDt&_nc_gid=IvFhA57bqHBNI1UGVJECag&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNTY5NjIyOTkwMDcwNTA0Ng%3D%3D.3-ccb7-5&oh=00_AfyK7ZnyBaExIu0_pmb4mFbQjZPueqfP-aZrAmh-kP6MHA&oe=69C02527&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@reframe77/post/DU7IWYRiV0W",
+      "url": "https://www.threads.com/@reframe77/post/DU7IWYRiV0W",
       "created_at": "2026-02-19 12:16:40",
       "date": "2026-02-19",
       "crawled_at": "2026-03-18T17:49:59.553",
@@ -15590,7 +15590,7 @@
       "display_name": "joshproductletter",
       "full_text": "하루종일 클로드 코드를 안쓰고\nCodex와 Antigravity를 테스트했다.\n(순전히 강의와 콘텐츠 때문에)\n\n1. 우선 Dangerously Skip Permissions가 없는게 너무너무 불편했다.\n2. Codex App은 제품 자체의 마감이 별로다. Automation은 돌아가지도 않는다.\n3. 안티그라비티로 PC폴더 내 자동화를 시도했는데 극하의 퀄리티였다. 엑셀 자동화를 시도했더니 이상한 라이브러리 설치하고 난리가 났다. 코워크로 5분만에 할 일인데..\n4. 마치 2025년 6-7월에 바이브코딩 할 때 시절에서 크게 벗어난 느낌이 아니었다.\n\n굳이 클코가 아니라 이 도구들을 왜 써야 하는건지 이유를 알고 싶었다. (물론 Codex 5.3 Spark나 Gemini 모델은 좋다.)\n\n---\n\n내일 더 써보고 장점을 찾아봐야겠다. 클코 1황 같은데 아직은..?",
       "media": [],
-      "url": "https://www.threads.net/@joshproductletter/post/DU5wMH2Ccw7",
+      "url": "https://www.threads.com/@joshproductletter/post/DU5wMH2Ccw7",
       "created_at": "2026-02-18 23:20:22",
       "date": "2026-02-18",
       "crawled_at": "2026-03-18T17:50:02.584",
@@ -15614,7 +15614,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/639447623_17863118769596285_530836772120061055_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTQ0MHgxNDQwLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QGEfebcHVA2Pag1hqWMkU4GFbyZ42-YwIHf27_wE7_c4kz0rIEAFYltnwwphzfO-5I&_nc_ohc=-k_qW6p-hKcQ7kNvwEhWa77&_nc_gid=YbXXp2D01kendTvJk9LaiQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNTMyMjY1NzU2MjIzNTI0NQ%3D%3D.3-ccb7-5&oh=00_AfxJ-Oi7NIZhanABRkhwR0M-u9YKUVPiy5UIx-su5ZsNRA&oe=69C036D4&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@notion_larry/post/DU5zaL7ARFt",
+      "url": "https://www.threads.com/@notion_larry/post/DU5zaL7ARFt",
       "created_at": "2026-02-18 23:48:30",
       "date": "2026-02-18",
       "crawled_at": "2026-03-18T17:50:02.584",
@@ -15638,7 +15638,7 @@
       "display_name": "qjc.ai",
       "full_text": "Claude 사용하면서 \"왜 이렇게 빨리 한도에 도달하지?\n\n싶었던 적 있으신가요? 저도 그랬습니다.\n\n그래서 직접 조사해봤는데, 범인을 찾았습니다.\n\n---\n\n1/ 먼저 충격적인 사실 하나.\n\nMCP 서버를 여러 개 켜놓으면 대화 시작 전에 이미 컨텍스트의 30~70%가 사라집니다.\n\n실제 측정값을 보면 이렇습니다.\n\n- mcp-omnisearch: 20개 tool에 약 14,000 토큰\n- playwright: 21개 tool에 약 13,600 토큰\n- Jira 단독: 약 17,000 토큰\n\n5개 서버만 연결해도 55,000 토큰이 증발합니다. \n\n200K 컨텍스트 기준으로 25% 이상이 사라지는 거죠.\n\n---\n\n2/ MCP가 이렇게 토큰을 잡아먹는 이유는 구조적인 문제 때문입니다.\n\n모든 tool 정의가 대화 시작과 동시에 컨텍스트에 로딩됩니다. 각 tool마다 설명, 파라미터, 반환값 등이 포함되어 있어서 tool 하나당 평균 700 토큰 정도를 소비합니다.\n\n앤트로픽 내부에서도 최적화 전 tool 정의만으로 134,000 토큰을 소비한 사례가 있었다고 합니다. 이건 코드팩토리 채널에서도 \"기존 MCP의 가장 큰 문제\"로 지적한 부분이기도 합니다.\n\n---\n\n3/ 그럼 Skills는 어떨까요?\n\n여기서 반전이 있습니다. \n\nSkills는 컨텍스트를 거의 먹지 않습니다.\n\nSkills는 \"flash drive\"처럼 작동합니다. 20개의 다른 Skills 지침이 sidelines에 앉아 있으면서 활성 컨텍스트 윈도우 공간을 전혀 소비하지 않습니다. Skill을 호출할 때만 해당 지침에 접근하고, 메인 대화와 병렬로 실행됩니다.\n\nMCP는 켜놓기만 해도 수만 토큰인데, Skills는 수십 개 등록해도 부담이 거의 없습니다.\n\n---\n\n4/ 앤트로픽도 이 문제를 알고 있었습니다.\n\n2025년 11월에 해결책을 내놨습니다.\n\n첫 번째는 Tool Search입니다. 모든 tool을 미리 로딩하는 대신, defer_loading: true로 설정하면 필요할 때만 동적으로 tool을 발견합니다. 토큰 사용량이 85% 감소하고, 정확도도 Opus 4 기준 49%에서 74%로 향상됩니다.\n\n자주 쓰는 3~5개 tool만 항상 로드하고, 나머지는 defer 처리하는 게 최적입니다.\n\n---\n\n5/ 두 번째는 Programmatic Tool Calling입니다. \n\n기존에는 데이터를 요청하면 전체 데이터를 무작정 가져와서 컨텍스트에 넣으려다 에러가 나거나 비용이 낭비됐습니다.\n\n이 기능은 Claude가 직접 코드를 작성해서 정확히 필요한 데이터만 추출해옵니다. 실행된 코드의 결과값만 컨텍스트에 들어가니까 효율성이 극대화됩니다. 실제로 43,588에서 27,297 토큰으로 37% 절감을 달성했습니다.\n\n---\n\n6/ 세 번째는 Effort Parameter입니다. \n\nClaude가 응답에 사용하는 토큰 양을 직접 조절할 수 있습니다.\n\nHigh effort: 복잡한 분석에 최대 품질\nMedium effort: 대부분의 프로덕션 용도\nLow effort: 대량 자동화에 가장 효율적\n\n간단한 작업에 굳이 High effort를 쓸 필요가 없습니다.\n\n---\n\n7/ Claude Code 사용자라면 이 명령어들을 반드시 알아두세요.\n\n/clear는 대화 초기화입니다. 작업 간 전환할 때 씁니다.\n/compact는 대화 요약입니다. 컨텍스트 70~80% 도달하면 씁니다.\n/context는 현재 토큰 사용량을 확인합니다.\n\n숙련된 개발자들 사이에서는 \"20번 반복마다 컨텍스트 리셋\"이 규칙처럼 통합니다. 20회 이후 성능이 급격히 저하되기 때문입니다.\n\n---\n\n8/ MCP 응답을 Skill로 처리하면 토큰을 97%까지 아낄 수 있습니다.\n\nBefore: list_deployments() 직접 호출하면 10,100 토큰\nAfter: Skill이 파일 분석 후 300 토큰 요약\n\nElvis S.라는 전 Meta AI 연구원은 MCP tool을 컨텍스트에서 제거하고 Python과 bash 실행으로 트리거하는 방식으로 토큰 사용량 약 90% 절감을 달성했다고 합니다.\n\n---\n\n9/ Prompt Caching도 강력합니다. API 사용자라면 반복되는 시스템 프롬프트나 문서를 캐싱해서 비용 최대 90%, 지연시간 최대 85%를 절감할 수 있습니다. 캐시 읽기는 기본 입력 토큰 가격의 10%만 청구됩니다.\n\n정적 콘텐츠(tool 정의, 시스템 지침, 예시)를 프롬프트 시작 부분에 배치하고 cache_control 파라미터로 재사용 가능한 콘텐츠의 끝을 표시하면 됩니다.\n\n---\n\n10/ 정리하면 이렇습니다.\n\nTool Search로 defer_loading 활용하면 85% 절감\n\nSkill 패턴으로 MCP 응답 처리하면 97% 절감\n\nMCP 제거 후 Python/bash 실행하면 90% 절감\n\n/clear와 /compact 활용하면 50~70% 절감\n\nPrompt Caching 활용하면 최대 90% 절감\n\n---\n\n11/ 당장 적용할 수 있는 실전 팁입니다.\n\n불필요한 MCP 연결을 끄세요. 작업에 필요한 것만 켜두면 됩니다.\n긴 대화는 주기적으로 새 채팅으로 시작하세요.\n한 채팅에서 여러 주제를 섞지 마세요.\nSkills는 컨텍스트 부담이 거의 없으니 적극 활용하세요.\n\n앤트로픽이 MCP를 리눅스 재단에 기부하면서 \"중립적 오픈소스\"로 만들려는 움직임도 있습니다. 앞으로 Tool Search 같은 기능이 더 발전할 가능성이 높습니다.\n\n---\n\n12/ Claude 토큰 관리는\n\n결국 \"필요한 것만 로드하고, 불필요한 것은 버리는 것\"입니다. 모든 기능을 켜놓고 쓰는 게 아니라, 작업에 맞게 선별하는 습관이 중요합니다.",
       "media": [],
-      "url": "https://www.threads.net/@qjc.ai/post/DSKaU75D9h1",
+      "url": "https://www.threads.com/@qjc.ai/post/DSKaU75D9h1",
       "created_at": "2025-12-12 21:02:15",
       "date": "2025-12-12",
       "crawled_at": "2026-03-18T17:50:02.584",
@@ -15662,7 +15662,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/639717141_17891584389422952_5773033432187628778_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTQ0MHgyMDA3LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QH271w3mmeDeVI4_w1XlQPRYNoPLCkK3wbJdabOlAoLgG1sIdjaV7mSck6RvO4iHJw&_nc_ohc=Qdh09AYZzakQ7kNvwEPZYIK&_nc_gid=AszXxrypjsewixJCZgvmTw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNTcxMjk0MDMyNjYxMTc5OA%3D%3D.3-ccb7-5&oh=00_AfxhVmnf1Q0taC9ec_gOicoamOa5ypJb2M4km8jQ5Ar9wA&oe=69C02D79&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@aicode.lab/post/DU7MJjEiWtW",
+      "url": "https://www.threads.com/@aicode.lab/post/DU7MJjEiWtW",
       "created_at": "2026-02-19 12:43:56",
       "date": "2026-02-19",
       "crawled_at": "2026-03-18T17:50:02.584",
@@ -15688,7 +15688,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/588968177_17905181082294542_5827313333347539505_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTI0OHgxNjQ0LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QGgUCJO7Mxdt7Y4NVsSL7zEVvjqNPZYpHWj8aCZu-WiOtjY4-7tYEQEzVtSgzo30Do&_nc_ohc=7hQeiXqAvD0Q7kNvwFbbvGi&_nc_gid=eaIgGQhNo0yVYPac8ghUuw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mzc3NDc1MDI5NjM5NzQ3NTg1Nw%3D%3D.3-ccb7-5&oh=00_AfxuuM0sh1cigoRE4-2rUvM8DaiQyHecp3Xvs-DRpYUC7A&oe=69C0226E&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@toy_crane911/post/DRim2UkknAR",
+      "url": "https://www.threads.com/@toy_crane911/post/DRim2UkknAR",
       "created_at": "2025-11-27 10:02:02",
       "date": "2025-11-27",
       "crawled_at": "2026-03-18T17:50:05.596",
@@ -15712,7 +15712,7 @@
       "display_name": "taesuk1984",
       "full_text": "누구나 무엇이든 만드는 AI 시대, 압도적 차이는 결국 '무엇을 만들 것인가'라는 취향(Taste)에서 온다.\n\n폴 그레이엄이 남긴 좋은 취향을 정의하는 14가지 원칙 (무려 2002년 아티클!!)\n\n---\n\n1. 단순함 (Simple): 장식을 빼고 본질에 집중하라.\n2. 시대를 초월함 (Timeless): 유행을 좇으면 백퍼 촌스러워짐.\n3. 올바른 문제 해결 (Solves the Right Problem): 아무리 아름다워도 엉뚱한 문제를 풀면 망함.\n4. 암시적임 (Suggestive): 다 떠먹여 주지 마라. 사용자가 레고 블록처럼 스스로 조합하고 개입할 여지를 남겨둘 것.\n5. 약간의 유머 (Slightly Funny): 창작자의 자신감이 담긴 지적 여유를 더해보자.\n6. 어려움 (Hard): 어려운 문제를 풀수록 군더더기 없는 해결책이 나온다.\n7. 쉬워 보임 (Looks Easy): 수많은 반복으로 복잡함을 없애고 명쾌함만 남겨라.\n(계속)\n\n---\n\n8. 대칭성 (Uses Symmetry): 대칭과 재귀(Recursion)는 구조적 안정감을 주고 단순함을 달성하는 가장 강력한 법칙임.\n9. 자연을 닮음 (Resembles Nature): 수억 년 최적화된 자연의 패턴을 차용해보기.\n10. 재설계 (Redesign): 한 번에 완벽할 순 없음. 과감히 버리고 끊임없이 수정하기.\n11. 모방의 수용 (Can Copy): 거장들은 억지스러운 '독창성'보다 '올바른 정답'을 찾는 데 집중한다.\n12. 기묘함 (Often Strange): 최고의 결과물엔 특유의 기묘함이 있다. 꾸며낸 것이 아니라, 진리를 좇다 보면 자연스레 배어 나오는 것.\n13. 무리지어 일어남 (Happens in Chunks): 위대한 작업은 15세기 피렌체처럼, 뛰어난 동료들이 모인 커뮤니티 속에서 폭발함.\n14. 대담함 (Often Daring): 상식과 관습에 진실이 가려져 있다면 기꺼이 도전하라.\n\n---\n\n출처: https://paulgraham.com/taste.html",
       "media": [],
-      "url": "https://www.threads.net/@taesuk1984/post/DU4jCUmj4Uj",
+      "url": "https://www.threads.com/@taesuk1984/post/DU4jCUmj4Uj",
       "created_at": "2026-02-18 12:06:12",
       "date": "2026-02-18",
       "crawled_at": "2026-03-18T17:50:05.596",
@@ -15734,7 +15734,7 @@
       "display_name": "ddg.kang",
       "full_text": "저는 지난 주부터 클로드코드로 대부분 한 번에 모든 기능을 버그 없이 완성합니다. 심지어 복잡한 앱까지.\n\n비결은 최적화된 팀모드입니다.\n\n이해할 고수들만 이해하라고 쓰는...\n클코 팀모드 미친 꿀팁 (전세계에서 최초일 듯)\n\n1주일 째 클코 팀모드 하루종일 돌리는 중입니다.\n클로드 5명이 동시에 코드 짜면서 서로 대화합니다.\n\n시니어 개발팀 채용한 느낌.\n(사실 더 좋음.. 24시간 내내 돌릴 수 있으니...)\n근데 그냥 돌리면 망합니다.\n\n1주일간 하루 15시간씩 해서 실전에서 터득한\n지금 제가 실제 사용중인 팁 나눕니다.\n\n---\n\n꿀팁 1: 리더한테 코딩시키지 마세요. (작업 외주화)\n\n팀모드에는 리더가 있고 팀원이 있습니다.\n리더는 내가 직접 대화하는 메인 클로드예요.\n\n이 리더의 기억 공간이 전체 작전을 기억하는 유일한 곳입니다.\n여기서 코드까지 짜게 하면 기억이 순식간에 꽉 차요.\n\n\"아까 뭐 하고 있었지?\" 이 상태가 됩니다.\n리더는 전략만. 코딩은 전부 팀원한테.\n\n리더가 직접 하는 순간 팀 전체가 멍청해집니다.\n\n---\n\n꿀팁 2: 기억을 파일에 쓰세요. 클로드의 기억력을 믿지 마세요. (기억 외부화)\n\n클로드는 대화가 길어지면 오래된 내용을 자동으로 압축합니다.\n압축되면 아까 정한 것도 까먹어요.\n\n중요한 결정 나올 때마다 파일에 바로 적게 시키세요.\n기억을 날려도 이 파일만 읽으면 다시 돌아옵니다.\n저는 중요한 것을 끊임없이 decisions.md에 적게 합니다.\n\n안 하면 같은 논의를 3번 반복합니다. 당해봤습니다.\n\n---\n\n꿀팁 3: 팀원은 쓰고 버리고 새로 뽑으세요. (계속 해고하기)\n\n팀원도 일을 시키다 보면 기억이 꽉 차요.\n꽉 차면 느려지고, 엉뚱한 코드를 짜기 시작합니다.\n\n작업 끝난 팀원은 해고하고,\n새로 뽑으면서 이전 결과 요약만 넘겨주세요.\n\n항상 머리가 깨끗한 팀원한테 시키는 겁니다.\n속도랑 정확도가 동시에 올라갑니다.\n\nP.S.\n이거 전부 자동화하면?\n\n리더가 알아서 팀 짜고, 조사하고, 팀원 바꿔가면서 구현까지.\n\n한 번에 버그 없이 기능이 완성됩니다.\n\n한번 이 주제로 클코랑 대화해보세요.\n\n\"팀모드에서 리더 기억 보존하면서 팀원 자동 교체하는 워크플로우 만들어줘\"AI\n\n이 한 줄이면 시작됩니다.\n\n---\n\n[간략한 워크플로우]\n내가 팀리더한테 일시킴 ->\n팀리더가 4명의 팀원한테 리서치 시킴 ->\n각 팀원이 심부름꾼 3~8개 병렬로 호출해서 리서치 시킴 ->\n병렬로 약 심부름꾼 최대 30명이 동시에 리서치 돌아감 (엄청 빠름) ->\n팀원들은 심부름꾼이 가져다준 리서치 자료로 서로 실시간 대화 ->\n모든 작업이 끝나면 각 팀원이 보고서를 팀리더에게 제출 ->\n팀리더가 종합해서 3가지 제안서를 나에게 보고 ->\n내가 가장 좋은 것으로 승인 ->\n팀리더가 기존 팀원 전원 해고 ->\n새 팀원 4명 뽑아서 다시 일 시킴 ->\n새 팀원들이 또 각각 심부름꾼 불러서 작업 ->\n병렬로 심부름꾼 약 30명이 동시에 구현 ->\n심부름꾼이 완료한 것들 각각 팀원이 검토 ->\n그 후에 팀원이 팀리더에게 보고 ->\n팀리더는 30명 심부름꾼이 구현한거 최종검토 ->\n나에게 최종 보고 = 버그 하나도 없음",
       "media": [],
-      "url": "https://www.threads.net/@ddg.kang/post/DU5tyzgE3jr",
+      "url": "https://www.threads.com/@ddg.kang/post/DU5tyzgE3jr",
       "created_at": "2026-02-18 22:59:26",
       "date": "2026-02-18",
       "crawled_at": "2026-03-18T17:50:05.596",
@@ -15758,7 +15758,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/634382070_17894412357408836_5026865428467603063_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTQwOHg3Njguc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QGITbZSFCzc0Xvc0NTh7utYoZW5Q8liEr4SRKO3z-Z5akqtG8FKQ6qMTZdrqWhWJrE&_nc_ohc=nfB0r92o2foQ7kNvwGyI8dY&_nc_gid=88dEL9cwS3xG-zvlKHppyw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNDUyNjc4NjUwODc1OTYxMw%3D%3D.3-ccb7-5&oh=00_Afwrfqg-gNJbOQOJN5X-7_tHsxVKSpgLlxivh44nvWyiMg&oe=69C03AF5&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@gptaku_ai/post/DU2-cvPkyI9",
+      "url": "https://www.threads.com/@gptaku_ai/post/DU2-cvPkyI9",
       "created_at": "2026-02-17 21:27:15",
       "date": "2026-02-17",
       "crawled_at": "2026-03-18T17:50:05.596",
@@ -15784,7 +15784,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/634091917_2170597663712235_2224821167503033355_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDQ3MC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QG2o7xxAHBbRFbpB2CPJxE7pA_J588d7yTfh0GQZo8ti-KJH8E3W6sw4inkSmQFO2I&_nc_ohc=aqt6kTtQ7xYQ7kNvwGHa6-R&_nc_gid=AsaSs7BtP1rZJhaMXMM99Q&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNDU4MDcxMzMwNDQ4NDQ2MQ%3D%3D.3-ccb7-5&oh=00_AfzGzBTxZWy6lJlmy52NJsAfY7oRgVRuujwbmMxUrT5rZg&oe=69C02B31&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@mosa_stock/post/DU3KtefE-pt",
+      "url": "https://www.threads.com/@mosa_stock/post/DU3KtefE-pt",
       "created_at": "2026-02-17 23:14:56",
       "date": "2026-02-17",
       "crawled_at": "2026-03-18T17:50:08.610",
@@ -15810,7 +15810,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/630528137_17913497922298970_1557229559120683186_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uOTQ2eDU3OS5zZHIuZjgyNzg3LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QHlH4aqJ95v6JGgiZrOvohQCRBNprBAVRsh0ByVA0BYjQXwHTQTNreP3VfZ0s3eo-4&_nc_ohc=1Wwze1L8eoMQ7kNvwGfG4a0&_nc_gid=2PwjMZ7lAFzJUiIHgjgspw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNDk4ODIxNjQ2Mjg2MTM2MA%3D%3D.3-ccb7-5&oh=00_AfyW2pk5VoRU0H6iLrCZR4cLcr5XI_S5rh8y1jTJawiRBA&oe=69C0222D&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@studiobyprompt/post/DU4nW8bE7bg",
+      "url": "https://www.threads.com/@studiobyprompt/post/DU4nW8bE7bg",
       "created_at": "2026-02-18 12:43:58",
       "date": "2026-02-18",
       "crawled_at": "2026-03-18T17:50:08.611",
@@ -15834,7 +15834,7 @@
       "display_name": "appcast",
       "full_text": "Codex 0.103.0 버전 업데이트\n- 멀티에이전트 기능 추가",
       "media": [],
-      "url": "https://www.threads.net/@appcast/post/DU4UIw6EmHo",
+      "url": "https://www.threads.com/@appcast/post/DU4UIw6EmHo",
       "created_at": "2026-02-18 09:56:00",
       "date": "2026-02-18",
       "crawled_at": "2026-03-18T17:50:08.611",
@@ -15858,7 +15858,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/632621905_17875847586509572_8912150050193090692_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTAyNHg1NjQuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QEZfds5VMxuuebF488MpAQmN4JzTaz4QbFjgl8kY_CtkhNPo36iQhEUbevS9N26Ztk&_nc_ohc=DwMuGfTh690Q7kNvwE80Ht2&_nc_gid=nNQBon7mQp5VwA_-0LR5Qg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNTIxNDM2Mjc2NDg3MzM2MA%3D%3D.3-ccb7-5&oh=00_AfyQBD5qDgqzj3tRF-YfMGeXL-sq_8BpZ0gQ3V31ha6u7g&oe=69C05480&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@ai_younggle_man/post/DU5aySiE46Q",
+      "url": "https://www.threads.com/@ai_younggle_man/post/DU5aySiE46Q",
       "created_at": "2026-02-18 20:13:21",
       "date": "2026-02-18",
       "crawled_at": "2026-03-18T17:50:08.611",
@@ -15882,7 +15882,7 @@
       "display_name": "ambition_monkey",
       "full_text": "바이브코딩하는 사람 빨리 받아가셔요..\n\n65줄짜리 텍스트 파일 하나가 AI 코딩을 바꿨다?\n\n깃헙에서 하루에 별 400개씩 받고 있는 파일이 있는데\n그냥 마크다운 65줄임 ㅋㅋㅋ\n\nCLAUDE.md라고 하는 건데\nAndrej Karpathy가 \"LLM 코딩 이렇게 하면 안 된다\"고 지적한 걸\n규칙으로 정리해서 AI한테 먹인 거야 📝\n\n넣으면 뭐가 달라지냐면\nAI가 쓸데없는 리팩토링 안 하고\n 엉뚱한 추측 안 하고\n시키는 대로만 딱 함\n\n써본 사람들 반응이 \"확실히 달라졌다\" vs \"글쎄…\"로 갈리긴 하는데\n하루 400 스타는 실화임 😮\n\n프롬프트도 글빨이 필요한 시대라니\n\n#AI #ClaudeCode\n\n---\n\n제 피드에 AI해커톤 우승자가 남긴 팁도 있으니 가져가세요",
       "media": [],
-      "url": "https://www.threads.net/@ambition_monkey/post/DU4LE79kkLu",
+      "url": "https://www.threads.com/@ambition_monkey/post/DU4LE79kkLu",
       "created_at": "2026-02-18 08:36:50",
       "date": "2026-02-18",
       "crawled_at": "2026-03-18T17:50:11.634",
@@ -15906,7 +15906,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t45.1600-15/516258475_2225286691263928_6391964253183928693_n.png?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6ImFkc19pbWFnZSJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QGWElUIGTLxe_1Dj04jlGN3gzuDsd2J4mzZI6KPzVHoEUqNCNXVmLY17HyQe58IjR8&_nc_ohc=j4z8oJSTQeMQ7kNvwHrEk7a&_nc_gid=jv2cRbRTJYNsQ3LDAPoN9w&edm=APs17CUBAAAA&ccb=7-5&oh=00_Afy8IaZY4cY__Lv00G74HFkVg_ndOLvqQleWUF8z3dYVyw&oe=69C05433&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@learningspoons/post/DMkH5Stg2bI",
+      "url": "https://www.threads.com/@learningspoons/post/DMkH5Stg2bI",
       "created_at": "2025-07-26 17:33:04",
       "date": "2025-07-26",
       "crawled_at": "2026-03-18T17:50:11.634",
@@ -15932,7 +15932,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/627980775_17941165476118905_2389517296207311576_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTQyN3g4ODkuc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QGjd_d65PQFG7a1WsXXed6QPtq2AgZ5rCPvRdt4FPp4NMsf6aQlF6DIZF3sMTNjSH4&_nc_ohc=76-Sb13f5GYQ7kNvwFN3Vo4&_nc_gid=lybOzLD_TIORuGDfzbmsDg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNTAwMDQxNDY0ODAwNjkzOA%3D%3D.3-ccb7-5&oh=00_Afzr0sI33x0DuLmaWJMlo9884KwsqdVoKonvQlXf8cBrxg&oe=69C046A9&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@jungathena_ai/post/DU4qI70kfka",
+      "url": "https://www.threads.com/@jungathena_ai/post/DU4qI70kfka",
       "created_at": "2026-02-18 13:08:16",
       "date": "2026-02-18",
       "crawled_at": "2026-03-18T17:50:11.634",
@@ -15957,7 +15957,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/638861024_17935972812167954_1027106282579490699_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTQwOHg3Njguc2RyLmY4Mjc4Ny5kZWZhdWx0X2ltYWdlLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2QFC0gAl89upVliFpbGEpjdioNAjJVU3BcD-m4iS7w5nyr88tpdJvGH28l7gmPmV9IY&_nc_ohc=MUyKGwbhVwUQ7kNvwHgVBR4&_nc_gid=Ly_Yl1S1FW1i9yL4vmkUPw&edm=AI6eXeABAAAA&ccb=7-5&ig_cache_key=MzgzNTA1MjExNDAxNjU5NzA3Ng%3D%3D.3-ccb7-5&oh=00_AfzXL2UTpsyvVFHmfjVPQrwvuB-WSSdaYbkjNZZjyhKu8g&oe=69C0545E&_nc_sid=6efbad"
       ],
-      "url": "https://www.threads.net/@hunyfocus/post/DU415QnEfRU",
+      "url": "https://www.threads.com/@hunyfocus/post/DU415QnEfRU",
       "created_at": "2026-02-18 14:50:59",
       "date": "2026-02-18",
       "crawled_at": "2026-03-18T17:50:11.634",
@@ -15988,7 +15988,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/632009478_849936754716216_8177435134933688970_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDQxNC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2QGmqz87W_LtRGBga_AN-5wM8ctYemlSKTb6qumHsQ4i5KR0_ci-YU5krHoIg3jC-V4&_nc_ohc=CrI5iADzpeMQ7kNvwFNve_z&_nc_gid=XL0dvlcJc4eJ2SO7mVXQuQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNTE1NjAxNTM4MTc4NDA4MA%3D%3D.3-ccb7-5&oh=00_AfxFidrtRbr24-OZgPevUGaEK_MO_LdMLPcLe1QN_NXZoQ&oe=69C05042&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@silrobag/post/DU5NhOTCKYQ",
+      "url": "https://www.threads.com/@silrobag/post/DU5NhOTCKYQ",
       "created_at": "2026-02-18 18:19:11",
       "date": "2026-02-18",
       "crawled_at": "2026-03-18T17:50:11.638",
@@ -16012,7 +16012,7 @@
       "display_name": "teo_daily_business",
       "full_text": "구글과 MS가 동시에 발표했습니다.\n\n\"2026년은 AI 에이전트 원년\"\n\n근데 대부분 직장인은 아직도\n'어떤 툴 쓸까' 고민 중입니다.\n\n진짜 문제는 툴이 아닙니다.\n퇴사 전에 AI 팀 만들려면\n\n지금 당장 이 3가지부터 시작하세요\n\n---\n\n1/ AI 에이전트 시대의 본질\n\n에이전트는 '똑똑한 챗봇'이 아닙니다.\n당신 대신 일하는 직원입니다.\n\n1. 24시간 일하는 마케터\n2. 자는 동안 콘텐츠 쓰는 작가\n3. 주말에도 작동하는 퍼널 시스템\n\n도구로 쓰면 도구가 되고\n직원으로 쓰면 직원이 됩니다\n\n---\n\n2/ 대부분이 실패하는 이유\n\n\"ChatGPT 알아요. 근데 실제로는 잘 안 써요.\"\n\n알면서 실행 못 하는 건\n시간이나 툴 문제가 아닙니다.\n\n진짜 이유는\n무엇을 위임할지 몰라서입니다\n\n당신이 뭘 하는 사람인지\n명확하지 않으면 AI도 못 씁니다.\n\n---\n\n3/ 지금 당장 해야 할 첫 번째\n\n\"나는 뭘 하는 사람인가\" 정의하기\n\n퇴근 후 2시간으로 뭘 만들 건가요?\n블로그? 유튜브? 코칭?\n\n이게 명확해야\nAI한테 뭘 시킬지 보입니다.\n\n예: 나는 직장인 대상 AI 코칭 콘텐츠를 만드는 사람\n→ AI는 초안 작성 담당\n\n---\n\n4/ 지금 당장 해야 할 두 번째\n\n\"반복 작업 3개\" 찾기\n\n당신이 매번 하는 것 중\n패턴이 있는 일 3개만 뽑으세요.\n\n• 블로그 제목 짓기\n• 이메일 초안 쓰기\n• 리서치 자료 정리\n\n이 3개만 AI에 맡겨도\n퇴근 후 시간이 2배로 늘어납니다\n\n---\n\n5/ 지금 당장 해야 할 세 번째\n\n\"일하는 방식\" 설계하기\n\nAI는 지시를 따릅니다.\n당신이 시스템을 만들어야 합니다.\n\n1. 주제 리스트 정리 (월요일)\n2. AI에게 초안 요청 (화~목)\n3. 내가 다듬기 (금요일)\n\n이 루틴이 있으면\nAI가 직원처럼 움직입니다\n\n---\n\n6/ 툴은 나중 문제입니다\n\n대부분 \"어떤 툴 쓸까\"부터 시작합니다.\n그래서 툴만 쌓이고 실행은 안 됩니다.\n\n순서를 바꾸세요:\n\n1. 내 역할 정의\n2. 반복 작업 찾기\n3. 일하는 방식 설계\n4. 그다음에 툴 선택\n\n이 순서로 가면 AI 팀이 만들어집니다.\n\n---\n\n7/ 2026년은 이미 시작됐습니다\n\nGemini 3, Sonnet 5, GPT-5.3, DeepSeek V4\n매달 메이저 모델이 쏟아집니다.\n\n준비 안 된 사람은\n계속 \"시간 없어\"라고 합니다.\n\n준비된 사람은\n퇴근 후 2시간으로 팀을 만듭니다\n\n---\n\n8/ 결론\n\nAI 에이전트 시대는\n툴 싸움이 아닙니다.\n\n\"나는 누구고, 뭘 만들 건가\"\n이 질문에 답할 수 있는 사람이 이깁니다.\n\n퇴사 전에 시스템을 먼저 만드세요\n\nAI가 일하게 하고, 당신은 생각하세요.\n혼자여도 팀입니다. AI 팀을 빌드하세요\n\n---\n\n더 구체적인 가이드는\n뉴스레터에서 공유합니다.\n\n매주 AI 팀 빌더 인사이트 받아보기:\nhttps://maily.so/teobusinesslab/posts/l1zqg0lyr5x",
       "media": [],
-      "url": "https://www.threads.net/@teo_daily_business/post/DU5L2L3kmud",
+      "url": "https://www.threads.com/@teo_daily_business/post/DU5L2L3kmud",
       "created_at": "2026-02-18 18:02:48",
       "date": "2026-02-18",
       "crawled_at": "2026-03-18T17:50:11.638",
@@ -16036,7 +16036,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/632046362_17935076820180514_7098107170928352344_n.jpg?stp=cp6_dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMjE2MHgxMzMzLnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2QEixWLABU8nRLWErpT0OaK56OpYA3D-1QxftOkD-iLMabmKcF41su5oFkKQ0uc5U5M&_nc_ohc=5xlx1zq4jccQ7kNvwEZepcI&_nc_gid=YUWYrDEo5rJNNPLFSO8OfA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNTA1MTM3Nzc0MDA0MDQ1MA%3D%3D.3-ccb7-5&oh=00_AfxrwwF9P9-la36dq54waEpHiUvoq6MbNSvJb6ZYGnvPWQ&oe=69C05359&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@leehc_09/post/DU41ui5kUkC",
+      "url": "https://www.threads.com/@leehc_09/post/DU41ui5kUkC",
       "created_at": "2026-02-18 14:49:31",
       "date": "2026-02-18",
       "crawled_at": "2026-03-18T17:50:11.638",
@@ -16062,7 +16062,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/630222161_17851740606631065_7650993724484078836_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNDMyMHgyMzQ4LnNkci5mODI3ODcuZGVmYXVsdF9pbWFnZS5jMiJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QFyyd1iwfgTVYO2mZwImiLlg94Vcosvr26CJAzexhSYjNLCOwYbjvS3BvMalesO3tU&_nc_ohc=IZ_HraHXEzsQ7kNvwFqWZLA&_nc_gid=5Ma8_cmnouYPA8O4sgDgdg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNDkzODc1OTc0NTQ3ODQ2Nw%3D%3D.3-ccb7-5&oh=00_AfxV2_QOSp7g2L30c-s7cJykF1uSSfJh3w8Fi0pIYvmAkg&oe=69C053A4&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@tiger_in_seoul/post/DU4cHvOAZ9D",
+      "url": "https://www.threads.com/@tiger_in_seoul/post/DU4cHvOAZ9D",
       "created_at": "2026-02-18 11:05:46",
       "date": "2026-02-18",
       "crawled_at": "2026-03-18T17:50:11.638",
@@ -16088,7 +16088,7 @@
       "media": [
         "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/628577335_2368457996913937_160835588908254591_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uNjQweDMxOC5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUuYzIifQ&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2QF7U2EoAI2LgJGD31dg430siURfhaOvsFki0AbJvog_fUOF2yXd4NXrjKHxdDgIGrg&_nc_ohc=rYZJX12St48Q7kNvwGvZX77&_nc_gid=dUfKyZqedCddWA-1Bve6Sg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzgzNDc2ODI5ODY4NTQ2OTI2MA%3D%3D.3-ccb7-5&oh=00_AfwNbe_mipJbyd1szeDWeUEWl1Mp00V6M7frD-KwP1xg4Q&oe=69C0486D&_nc_sid=10d13b"
       ],
-      "url": "https://www.threads.net/@snapplug.app/post/DU31XM_E5JM",
+      "url": "https://www.threads.com/@snapplug.app/post/DU31XM_E5JM",
       "created_at": "2026-02-18 05:28:42",
       "date": "2026-02-18",
       "crawled_at": "2026-03-18T17:50:14.659",
@@ -16112,7 +16112,7 @@
       "display_name": "beroducky",
       "full_text": "최근 테크 업계와 소셜 미디어를 뜨겁게 달구고 있는 '멀티 에이전트 시스템'에 대한 환상을 가진 분들이 많습니다. 기획자, 디자이너, 개발자, QA 역할을 하는 AI 에이전트들이 서로 협업하여 팀을 구성하고, 앱 하나를 뚝딱 만들어내는 마법 같은 미래가 다가왔고 마치 잘 동작하는 것처럼 쓰레드 글도 많이 보입니다. OpenClaw 같은 프레임워크가 등장하면서 누구나 자신만의 AI 직원들을 고용해 회사를 굴린다며, 직원 15명으로 구성된 팀 조직도와 15명을 10만원에 24시간 부리고 있다는 등의 이야기를 하는 글을 엄청나게 보셨을 겁니다.\n\n하지만 엔지니어의 시각으로 이 구조를 조금만 들여다보면, 현실은 녹녹치 않습니다. 그저 확률모델일 뿐인 LLM이 그럴듯하게 보이는 협업!?을 하는 것처럼 보이나, 분야와 어떤 목적으로 사용하냐, 프롬프트 구조를 얼마나 잘 짜냐에 따라 잘 되는 경우도 분명 있겠지만, 현실은 대부분 잘 동작하지 않습니다.\n\n---\n\n가장 치명적인 문제는 바로 정보의 전달 과정에서 발생하는 문맥의 한계입니다. 즉, 컨텍스트 엔트로피의 증가입니다. 이론상으로는 기획 AI가 기획을 넘기면 개발 AI가 코드를 짜고 QA AI가 검수한다고 하지만, 실제 LLM(‘확률’모델) 간의 소통은 인간의 소통과 질적으로 다릅니다. 인간은 문맥을 읽고, 암묵적인 합의를 바탕으로 업무를 수행하지만, 에이전트들은 오직 텍스트 데이터와 확률에만 의존합니다. 기획 에이전트가 사용자 친화적인 UI라는 추상적인 지시를 내리면, 디자인 에이전트는 이를 자신의 학습된 데이터에 편향적으로 해석하고, 개발 에이전트는 또다시 왜곡된 해석을 바탕으로 코드를 작성합니다. 단계가 거듭될수록 최초의 의도는 희석되고 와전되어, 결국 결과물은 그럴듯해 보이지만 기능적으로는 텅 빈, 누구의 의도도 반영되지 않은 이상한 결과물이 나올 ‘확률’이 매우 높아집니다. 비유하자면, 가족오락관 단어 추론 게임 마지막사람이 엉뚱한 단어를 대답하는 것과 비슷합니다.\n\n---\n\n더욱 심각한 케이스는 돈을 잡아먹는 '무한 루프의 지옥’이 벌어질 수 있습니다. 개발 에이전트와 QA 에이전트가 붙었을 때, 이들은 종종 해결 불가능한 교착 상태에 빠질 수 있습니다. QA 에이전트가 오류를 지적하면, 개발 에이전트는 근본적인 원인을 추론하는 대신 확률적으로 가장 그럴듯한 수정안을 내놓습니다. QA는 다시 거부하고, 개발은 다시 엉뚱한 코드를 짭니다. 실제 사람 엔지니어라면 잘못된 코드나 테스트 케이스를 읽고 빠르게 판단하고 수정 루프를 거치겠지만, 에이전트들은 주어진 프롬프트의 ‘감옥’ 안에서 서로에게 의미 없는 텍스트를 던지며 API 비용만 천문학적으로 나가게 되버립니다. 자고 일어나면 완성된 앱이 있는 것이 아니라, 텅 빈 통장과 수천 줄의 에러 로그만이 남아있을 가능성이 큽니다. 다시한번 말씀드리지만 잘 돌아가는 케이스도 간혹 있습니다만, 대부분 쓰레드에서 글쓰시는분들은 시도해보고, 그 자체로 즐거워서 글쓰는 분들이 대부분일겁니다. 그럴싸해보이니까요.\n\n---\n\n물론 이 방식이 완전히 무용한 것은 아닙니다. 뉴스 기사를 요약하고, 번역하고, 포맷을 맞추는 식의 선형적 파이프라인에서는 훌륭하게 작동합니다. 하지만 대부분의 사람들은 이런 선형적 프로세스보다는 루프가 있는 창작활동을 자동화하고 싶어합니다. 변수가 통제되고 정답이 정해진 작업에서는 위력을 발휘하지만, 소프트웨어 개발이나 비즈니스 전략처럼 불확실성이 높고 고도의 추론과 창의적 판단이 필요한 영역, 즉 '비선형적 문제’ 앞에서는 잘 동작하지 않을 가능성이 훨씬 높습니다. 우리 회사의 3분기 마케팅 전략을 짜고 앱을 개선해라는 모호한 명령은 수많은 변수를 고려해야 하는 작업이며, 이를 각기 다른 환각(Hallucination) 가능성을 지닌 LLM들에게 쪼개서 맡기는 것은 위에 말씀드린 리스크를 감수해야 합니다. API비용만 왕창 내고 결과물은 제대로 안나올 가능성이 매우 높습니다. 빛 좋은 개살구죠.\n\n---\n\n실제 좋은 현업 엔지니어들은 '완전 자동화'라는 허상보다는, 반자동화, 생상선 향상이라는 현실적이고 실현가능한 사람이 포함되어있는 피드백 루프를 돌리게 됩니다. Anthropic도 그렇게 해서 100% AI가 코드를 작성합니다. AI가 모든 것을 결정하고 실행하게 두는 것이 아니라, AI는 지루하고 반복적인 초안 작업이나 데이터 수집 같은 작업을 수행하고, 결정적인 판단과 수정의 순간에는 반드시 인간이 개입해야 합니다. 오픈클로 같은 도구를 사용하여 Jira 티켓을 가져오고 브랜치를 생성하며 기본 코드나 플랜을 작성하게 한 뒤, 실행 버튼을 누르기 전 인간이 검토하는 프로세스가 좋은 예입니다. 이는 AI를 대체자가 아닌 강력한 생산성 향상 도구로 사용하는 것입니다. 서로 대화하며 산으로 가는 AI 팀을 꾸리는 것보다, 내 손발이 되어줄 똑똑한 비서 하나를 확실하게 통제하는 것이 훨씬 더 경제적이고, 빠르며, 무엇보다 결과물의 품질을 보장할 수 있는 보장가능한 방법일 것입니다.\n\n---\n\n그럼에도 불구하고 우리는 AI 기술진화 속도와 일하는 방식의 변화를 부정할 수는 없습니다. 지금은 엉성해 보이는 에이전트 간의 자동화도, 모델의 추론 능력이 비약적으로 상승하고 기억 용량이 확장됨에 따라 머지않아 인간의 개입을 최소화하는 수준으로 정교해질 것이기 때문입니다. 물론 정말 많은 시간(5~10년)이 걸릴것이라 생각하고 있습니다. 기술의 역사는 언제나 초기 단계의 조롱을 받았습니다. 지금 우리가 겪는 무한 루프와 환각 현상은 완전한 자율 에이전트 시대로 가는 과도기의 성장통이고 얼리아탑터의 노력일 것입니다. 중요한 것은 현재의 한계를 명확히 인지하되, 그 가능성을 닫아두지 않고 끊임없이 실험하며 최적의 모델을 찾야한다는 것입니다. 결국 다가올 미래에 살아남는 것은 완벽한 도구가 나오기를 기다리는 자가 아니라, 지금의 삐걱거리는 도구를 고쳐가며 그 작동 원리를 온몸으로 체득하고 먼저 실패해 본 이들이 될 것입니다.\n\n우리 모두 끊임없이 준비하고 공부해야합니다.",
       "media": [],
-      "url": "https://www.threads.net/@beroducky/post/DU3ChuFkW5G",
+      "url": "https://www.threads.com/@beroducky/post/DU3ChuFkW5G",
       "created_at": "2026-02-17 22:02:53",
       "date": "2026-02-17",
       "crawled_at": "2026-03-18T17:50:14.659",
@@ -16134,7 +16134,7 @@
       "display_name": "agenpreneur",
       "full_text": "바이브코딩 완전 초보자분들을 위한 글. 저장해놓고 꼭 보세요. 왠만한 바이브코딩 강의한다는 유료강의보다도 실질적으로 많은 도움이 되실거에요. 유튜브나 강의팔이에 일부 복잡하게 설명한 것들 전부 무시하셔도 좋습니다.\n\n왜냐면 장담컨대 이 글 하나로, 아예 클로드코드 같은걸 사용해보지도 못한분들도 바로 지금 결과를 낼 수 있을것이기 때문입니다. \n\n준비물은 클로드 월20달러짜리 결제, 이거 하나 뿐입니다.\n\n1.클로드코드 선택을 권장합니다.\n제 팔로워분들 설문조사결과 가장 많이 이용하시는 툴은, 코덱스5.3스파크가 출시된 현재도 클로드코드입니다. 제 개인적 의견으로는, 알아서 많은걸 처리해주기에 초보자들부터 고수까지, 이용 편의성이 높은 편입니다.\n\n2.기본 구독으로 우선은 충분합니다.\n월100달러나, 맥스로 월200달러까지는 결제 안하셔도됩니다. 이제 시작하신거라면 클로드코드 20달러로도 충분합니다. 그냥 클로드 월구독 20달러짜리 구매하면 끝입니다.\n\n---\n\n3.클로드나 GPT에게 클로드코드 설치방법을 물어보세요.\n*이건 솔직히 요즘시대에 긴 설명이나 강의가 사실상 전혀 필요없으며, 솔직히 말해서 유튜브를 볼 필요도 없습니다. AI에 그냥 물어보는것 이게 끝입니다. 윈도우든, 맥북이든 똑같습니다.\n\n아래 프롬프트를 사용하시는 가장 성능좋은 AI에게 복붙하세요. (웹검색 켜시구요)\n\"나 클로드 20달러 결제했어. 클로드코드 사용하고 싶은데 어떻게해? 나 윈도우컴퓨터(또는 맥북)야. 내가 이해하기 쉽게 어떻게 해야하는지 알려줘\"\n\n이제 시키는대로 하시면 끝입니다.\n\n축하드립니다. 이제 클로드코드를 사용하실 수 있게 되었습니다.\n\n---\n\n4.폴더를 만드세요.\n아무데나 폴더를 만드세요. test라 만들어봅시다.\n그리고 클로드를 접속하세요.\n\n접속시에는 \n1)cd 폴더위치(그냥 폴더 드래그하시면 됩니다)\n2)그 위치에서 클로드 접속\nclaude --dangerously-skip-permissions 라고 입력해서 접속하세요.\n\n---\n\n끝입니다.\n\n이제 이렇게 말해보세요.\n\n\"홈페이지 아무거나 테스트로 만들어봐. 그리고 완료되면 로컬 포트 3000으로 열어\"\n\n---\n\n끝입니다.\n축하드립니다. 이제 당신은 개발자가 되셨습니다.\n\n질문 있으시면 언제든 남겨주세요. \n제 팔로워라면 모든지 아낌없이 알려드립니다.",
       "media": [],
-      "url": "https://www.threads.net/@agenpreneur/post/DU5BdVDkixQ",
+      "url": "https://www.threads.com/@agenpreneur/post/DU5BdVDkixQ",
       "created_at": "2026-02-18 16:32:02",
       "date": "2026-02-18",
       "crawled_at": "2026-03-18T17:50:14.659",
@@ -16156,7 +16156,7 @@
       "display_name": "agenpreneur",
       "full_text": "팔로워분들을 위한 두번째 설문조사를 실시합나다.\n안녕하세요. 10년 차 개발자로 바닥부터 시작해 연매출 50억 법인을 만들기까지, 결국 시장에서 살아남는 건 속도와 효율이더군요. 요즘 AI 툴 없이는 사실상 비즈니스 속도를 따라잡기 힘든 게 냉정한 현실입니다.\n\n아시다시피 저를 믿고 따라와 주시는 팔로워분들을 위해 진짜 현업에서 도움이 되는 무상 서비스를 하나 기획하고 있습니다. 대충 만들 생각은 추호도 없으니, 여러분이 실제로 어떤 환경에서 개발하는지 알아야 제대로 준비할 수 있을 것 같네요.\n\n혹시 지금 어떤 AI 코딩 툴을 메인으로 쓰고 계신가요.\n\n단순히 코드를 자동 완성하는 수준을 넘어, 여러분의 생각과 의도를 가장 잘 파악해주는 파트너가 누구인지 궁금합니다. 가장 많이 사용하는 툴을 알려주세요. 기타의경우 오마이오픈코드, 구글스튜디오, 안티그라비티, 볼트, 리플릿, 또는 일반 LLM챗봇등 여러분이 사용하고 계시는것을 솔직하게 말씀해주세요.\n\n---\n\n남겨주신 의견을 바탕으로 제 10년 노하우를 갈아 넣은 서비스를 팔로워분들께 무료로 배포할 예정입니다. 여러분은 맨땅에 헤딩하지 마세요. 제가 겪은 시행착오는 제가 안고 가고, 여러분은 제가 닦아놓은 길로 편하게 오시면 됩니다.\n\n여러분의 참여와 선택이 곧 내놓을 서비스의 핵심이 됩니다. 투표나 댓글로 자유롭게 의견 남겨주세요. 제대로 된 게 무엇인지 확실하게 보여드리겠습니다.",
       "media": [],
-      "url": "https://www.threads.net/@agenpreneur/post/DU4q0IsEq8y",
+      "url": "https://www.threads.com/@agenpreneur/post/DU4q0IsEq8y",
       "created_at": "2026-02-18 13:14:10",
       "date": "2026-02-18",
       "crawled_at": "2026-03-18T17:50:14.659",
@@ -20112,7 +20112,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/662384267_17937753003207210_8808741195911093995_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ig_cache_key=Mzg3MjMwMjk0OTE2MjY0ODQxOA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEzOTB4NTIyLnNkci5DMyJ9&_nc_ohc=B2LdaKtntVQQ7kNvwFs7bXh&_nc_oc=AdpSmKWloL4PnUuShKfz4a91J7xEoVS1IeUTLAcpMLnbY94PSF2VRYXZchVKz1jjlZU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=hkdH6ccmhyI9H6JCfp6Q-A&_nc_ss=7a32e&oh=00_Af08H443zxBdZ9G1-pd54Wj7eMuPAj2RCxBmtCqeiB8OgQ&oe=69DFD598"
       ],
-      "url": "https://www.threads.net/@unclejobs.ai/post/DW9LwQTiYNi",
+      "url": "https://www.threads.com/@unclejobs.ai/post/DW9LwQTiYNi",
       "created_at": "2026-04-11 00:21:45",
       "date": "2026-04-11",
       "crawled_at": "2026-04-11T17:20:03.841",
@@ -20135,7 +20135,7 @@
       "display_name": "l_dabi",
       "full_text": "l_dabi\n@unclejobs.ai님에게 남긴 답글\n에르메스는 codex oauth안되나요ㅠ",
       "media": [],
-      "url": "https://www.threads.net/@l_dabi/post/DW9LCwWkuCv",
+      "url": "https://www.threads.com/@l_dabi/post/DW9LCwWkuCv",
       "created_at": "2026-04-11 00:19:42",
       "date": "2026-04-11",
       "crawled_at": "2026-04-11T17:20:03.916",
@@ -20159,7 +20159,7 @@
       "display_name": "ddg.kang",
       "full_text": "4월 11일 기준 AI 코딩 최고 셋업은\n에르메스(Hermes) + 코덱스 + OmX인듯...\n\n또한 화장실 AI 코딩을 위해 맥미니를 집에 서버같이 24시간 켜놓고\ntailscale + ssh + tmux 셋업이면\n안드로이드에서는 Termius로\n회사 윈도우컴에서는 순정 윈도우 터미널로 ssh mac 치면 바로 접속\n그냥 쉬지않고 코딩... 너무 좋다...😭😭😭\n\n---\n\n예산 더 있으시면 클코 + OmC로 디자인까지 하면 완벽 그자체 👍👍",
       "media": [],
-      "url": "https://www.threads.net/@ddg.kang/post/DW9YdT_GjgH",
+      "url": "https://www.threads.com/@ddg.kang/post/DW9YdT_GjgH",
       "created_at": "2026-04-11 02:12:45",
       "date": "2026-04-11",
       "crawled_at": "2026-04-11T17:20:03.962",
@@ -20183,7 +20183,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/670611124_17911661325362349_2039655740546402568_n.jpg?stp=cp6_dst-jpg_e35_tt6&_nc_cat=107&ig_cache_key=Mzg3MjY3MTQ5ODYzNjkwODA3MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE0NDB4MTU0Ny5zZHIuQzMifQ%3D%3D&_nc_ohc=YDr4ghJtFnQQ7kNvwHO-55A&_nc_oc=AdoVRz0Qs0gg1OApArEZ1DnKZpscAbUfHlLhx9SPs4aNjMvmCO27rj7BpoB4QLZAwB8&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=l48k8lPx4Xh74tq4XLjvEw&_nc_ss=7a32e&oh=00_Af3sHmDawhIhNKmZn1sv3jDGPn_p1M-t0_BIxc2RhaFOnw&oe=69DFE9CF"
       ],
-      "url": "https://www.threads.net/@aboutcorelab/post/DW-fojLk2RS",
+      "url": "https://www.threads.com/@aboutcorelab/post/DW-fojLk2RS",
       "created_at": "2026-04-11 12:34:42",
       "date": "2026-04-11",
       "crawled_at": "2026-04-11T17:20:04.051",
@@ -20209,7 +20209,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/659889432_17953624122115549_1292888203104520470_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ig_cache_key=Mzg2OTc5MTgyOTMyMzkzNTgyMg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwMjR4MTAyNC5zZHIuQzMifQ%3D%3D&_nc_ohc=KHoiXaXV5fkQ7kNvwHHG_Bs&_nc_oc=AdouaxAfT3zmUgQn70Se-K4fftx2DZDwx3vc1m2wdAK7kkSuUexOdd5LktTNXpYDWtI&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=GyPWsQAH77KMhzJW8F_7pQ&_nc_ss=7a32e&oh=00_Af3CPC9bPQ1rqBuWcYyIwKRti7PEEPBNsOwmYdX_4xSL8w&oe=69DFC4A0"
       ],
-      "url": "https://www.threads.net/@tab.tiny/post/DW0Qyptj_BO",
+      "url": "https://www.threads.com/@tab.tiny/post/DW0Qyptj_BO",
       "created_at": "2026-04-07 13:12:36",
       "date": "2026-04-07",
       "crawled_at": "2026-04-11T17:20:10.146",
@@ -20235,7 +20235,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/662537037_17855203545650740_5929973253586822358_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ig_cache_key=Mzg3MDQxOTIxNzQ3NzE2ODI2NQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEzNzZ4NzY4LnNkci5DMyJ9&_nc_ohc=-J01xzQu4tsQ7kNvwF_RAag&_nc_oc=AdoPi-vTGZbi4SXWU4oOH8TYonMzsSoTkZbhT6eGAJu0s6BBl0sgqHMfUPw0-YBDthE&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=tv2_8WbEd13YzDf1JL2o7A&_nc_ss=7a32e&oh=00_Af0t0I8tNXI9xN5uVhsCNgWtOdfy6kPpvnVtfB3gMffXLw&oe=69DFECFA"
       ],
-      "url": "https://www.threads.net/@dante_ailab/post/DW2fcWdkmyJ",
+      "url": "https://www.threads.com/@dante_ailab/post/DW2fcWdkmyJ",
       "created_at": "2026-04-08 09:59:12",
       "date": "2026-04-08",
       "crawled_at": "2026-04-11T17:20:10.146",
@@ -20260,7 +20260,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/o1/v/t16/f2/m84/AQPR37uRgvT1kFKgJgBxAw1Xz8lExCX0eyKYPD0wvBCMXCbY9H8ks6JhGrEhEDS_T8yMwIrpKiRtq_F_nF4w3bb6Bo8gVAoJrbQt71U.mp4?_nc_cat=101&_nc_sid=5e9851&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_ohc=FYwo40VYTj0Q7kNvwFUrN2-&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uRkVFRC5DMy4xMDY4LmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTc5MzIyMTUxNDQyMzI0ODUsImFzc2V0X2FnZV9kYXlzIjo0LCJ2aV91c2VjYXNlX2lkIjoxMDE2NCwiZHVyYXRpb25fcyI6MTUsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=cc02752b7db230f3&_nc_vs=HBksFQIYTGlnX2JhY2tmaWxsX3RpbWVsaW5lX3ZvZC8wMjRBMDg2NEZGNUMwRjQwQTRBQzM3ODIwMzU5Q0NBNF92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyL0ZENEM5NDM5NEM3ODlERjREMzYzMzY2QzRGMTQ1Nzk2X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbK2KmbptDaPxUCKAJDMywXQC-ZmZmZmZoYEmRhc2hfYmFzZWxpbmVfMV92MREAdeoHZeieAQA&_nc_gid=YPu3WbEj1RxfyRj-iTIzcA&_nc_zt=28&_nc_ss=7a32e&oh=00_Af0i7R40fekVSUii0BX0uH3aT49jG14C9X2zhD3AKZByPw&oe=69DBE43F"
       ],
-      "url": "https://www.threads.net/@aicoffeechat/post/DWzq8qVCuLU",
+      "url": "https://www.threads.com/@aicoffeechat/post/DWzq8qVCuLU",
       "created_at": "2026-04-07 07:44:36",
       "date": "2026-04-07",
       "crawled_at": "2026-04-11T17:20:10.146",
@@ -20288,7 +20288,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/659651567_17903540571404021_5328605592488245735_n.jpg?stp=cp6_dst-jpg_e35_tt6&_nc_cat=103&ig_cache_key=Mzg2NjcxNDA4NDQyMzcyMzA4OA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjExNzB4NDgzLnNkci5DMyJ9&_nc_ohc=FXtaN0wBQJAQ7kNvwHfBbB3&_nc_oc=AdpNX_io9t17O7UnwNYuJUdYmY8sbUkQaGHJKIZMhfXmjnMrXLON8WZDrmRi-tg2DXY&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=BCgPV4yekqHU0DJFmtismw&_nc_ss=7a32e&oh=00_Af3IRhQJPeyFlui-snHnDDvvQQIL50YAXakK3aVLqKXHiA&oe=69DFBD10"
       ],
-      "url": "https://www.threads.net/@alex_ai_mcp/post/DWpU_shk8tM",
+      "url": "https://www.threads.com/@alex_ai_mcp/post/DWpU_shk8tM",
       "created_at": "2026-04-03 07:17:41",
       "date": "2026-04-03",
       "crawled_at": "2026-04-11T17:20:10.146",
@@ -20311,7 +20311,7 @@
       "display_name": "엉클잡스 | Ai 시대, 돈이 되는 정보 전달",
       "full_text": "같은 문제를 다른 방향에서 풀고 있는 프로젝트도 있습니다.\n\n세컨드 클로드 코드(Second Claude Code)예요.\n\nagent-skills는 \"프로세스를 심는다\"입니다.\n스펙 → 테스트 → 리뷰를 순서대로 밟게 하는 방식.\n\n세컨드 클로드 코드는 \"모델 간 견제를 만든다\"입니다.\n\n17개 서브에이전트가 PDCA 품질 루프를 돌리고,\nArtifact Viewer가 결과를 웹으로 시각화합니다.\n\n하나는 습관으로, 하나는 합의로.\n같이 쓸 수 있는 구조예요.\n\n제가 만들어서 홍보중 \n\nㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ\n\n→ GitHub: https://github.com/unclejobs-ai/second-claude-code",
       "media": [],
-      "url": "https://www.threads.net/@unclejobs.ai/post/DWy4tB4E9w1",
+      "url": "https://www.threads.com/@unclejobs.ai/post/DWy4tB4E9w1",
       "created_at": "2026-04-07 00:22:53",
       "date": "2026-04-07",
       "crawled_at": "2026-04-11T17:20:10.151",
@@ -20338,7 +20338,7 @@
       "display_name": "unclejobs.ai",
       "full_text": "구글 엔지니어링 문화가 직접 녹아 있어요.\n\n스킬 곳곳에 구글에서 쓰는 원칙이 박혀 있습니다.\n\nShift Left.\n문제를 개발 초기에 잡아라.\n배포 후에 발견하면 비용이 몇 배로 올라간다.\n\"스펙 → 테스트 → 리뷰\" 순서가 이걸 강제해요.\n\nChesterton's Fence.\n왜 있는지 이해하기 전에 없애지 마라.\n에이전트가 \"이 코드 불필요해 보여서 삭제했다\"고 하면\n그 코드가 왜 있었는지를 먼저 확인하라는 규칙.\n\nHyrum's Law.\n사용자가 충분히 많으면 모든 동작이 의존성이 된다.\n\"아무도 이렇게 안 쓸 거야\"는 통하지 않는다.\n\n일반적인 프롬프트 모음이 아니에요.\n실전 엔지니어링 문화를 인코딩한 겁니다.\n\n---\n\n쓰는 방법은 간단해요.\n\n설치 한 줄.\n`npx skills add addyosmani/agent-skills`\n\nClaude Code에서는:\n`claude plugin add agent-skills`\n\n설치하면 슬래시 커맨드 7개가 생겨요.\n`/spec` — 스펙 먼저 쓰기.\n`/plan` — 태스크 분해.\n`/build` — 점진적 구현.\n`/test` — TDD 워크플로.\n`/review` — 코드 리뷰.\n`/code-simplify` — 코드 단순화.\n`/ship` — 배포 전 체크리스트.\n\n에이전트 페르소나도 3개 있습니다.\ncode-reviewer, test-engineer, security-auditor.\n각각 코드 리뷰, 테스트 전략, 보안 점검에 특화돼 있어요.\n\n---\n\n어디서든 쓸 수 있습니다.\n\nClaude Code, Cursor, Windsurf, GitHub Copilot, Codex, Antigravity.\n마크다운 파일을 받는 모든 에이전트에서 작동해요.\n\nCLAUDE.md와 AGENTS.md가 둘 다 포함돼 있어서\nClaude Code와 Codex 양쪽에서 바로 읽힙니다.\n\n---\n\n되짚어봅니다.\n\nOsmani가 이런 말을 했어요.\n\"소프트웨어 엔지니어링은 더 이상 코드를 쓰는 것이 아니다.\n소프트웨어를 만드는 팩토리를 만드는 것이다.\"\n\nagent-skills가 하는 일이 그거예요.\n에이전트한테 코드를 짜게 하는 게 아니라,\n코드를 올바르게 짜는 프로세스를 심는 것.\n\n에이전트가 아무리 똑똑해져도\n스펙 없이 코딩하고, 테스트 없이 머지하고, 리뷰 없이 배포하면\n결과물은 불안정합니다.\n\n도구가 아니라 습관이 품질을 결정해요.\n\n---\n\n→ GitHub: https://github.com/addyosmani/agent-skills\n→ Beyond Vibe Coding: https://beyond.addy.ie\n→ Addy Osmani: https://addyosmani.com\n\n---\n\n같은 문제를 다른 방향에서 풀고 있는 프로젝트도 있습니다.\n\n세컨드 클로드 코드(Second Claude Code)예요.\n\nagent-skills는 \"프로세스를 심는다\"입니다.\n스펙 → 테스트 → 리뷰를 순서대로 밟게 하는 방식.\n\n세컨드 클로드 코드는 \"모델 간 견제를 만든다\"입니다.\n\n17개 서브에이전트가 PDCA 품질 루프를 돌리고,\nArtifact Viewer가 결과를 웹으로 시각화합니다.\n\n하나는 습관으로, 하나는 합의로.\n같이 쓸 수 있는 구조예요.\n\n제가 만들어서 홍보중 \n\nㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ\n\n→ GitHub: https://github.com/unclejobs-ai/second-claude-code",
       "media": [],
-      "url": "https://www.threads.net/@unclejobs.ai/post/DWy4tANE86_",
+      "url": "https://www.threads.com/@unclejobs.ai/post/DWy4tANE86_",
       "created_at": "2026-04-07 00:22:52",
       "date": "2026-04-07",
       "crawled_at": "2026-04-11T17:20:10.151",
@@ -20362,7 +20362,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/660290559_17902407021408836_3958994304976596907_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ig_cache_key=Mzg3MDY3MjE0ODg1NjI3Mzk2Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjIxNjB4MTIxNS5zZHIuQzMifQ%3D%3D&_nc_ohc=S8ct4lsfHQYQ7kNvwEFiJdZ&_nc_oc=Adr0RaXniJJc_6x_4IqC-78QX6D_XdvKETsU4E0pBAWQ9WFYG-f8N-1PKsgpuav_dn0&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=V3zLzpuooYm2i559faL3Xw&_nc_ss=7a32e&oh=00_Af0vKqEpK7OmipAA4ykR9l_3veQGDVCzxAeRjuycHgrGbg&oe=69DFDBFC"
       ],
-      "url": "https://www.threads.net/@gptaku_ai/post/DW3Y9GZk0M0",
+      "url": "https://www.threads.com/@gptaku_ai/post/DW3Y9GZk0M0",
       "created_at": "2026-04-08 18:21:39",
       "date": "2026-04-08",
       "crawled_at": "2026-04-11T17:20:10.151",
@@ -20386,7 +20386,7 @@
       "display_name": "1.ta.ai",
       "full_text": "<안유명하고 짜잘한 나의 클로드 코드 업무 환경 세팅> \n\n1. 터미널: cmux \n- 한동안 warp 쓰다가 cmux 로 갈아탐\n\n2. 원격제어: ssh & tailscale\n- 컴퓨터 2개 왔다갔다하기 용도! \n\n3. 자동완성: oh my zshrc \n- 엥간하면 적당히 누르면 다 자동완성 됨\n\n4. 워크스페이스\n- 자주 사용하는 레포들 모아서 상위 폴더 만들고 사용! 터미널 열면 일단 여기서 열리게 세팅해둠. cd 언제누르냐. \n- Projects 하위에 레포들 넣어둠\n\n5. 단축어\n- cc, ㅊㅊ 등 alias 도 설정! clau... 언제쓰냐! \n- ㅋㅍ = 커밋푸시, ㅋㅍㅁ = 커밋푸시메인에 머지\n\n---\n\n초보자들은 5번 cc 을 보통 흥미로워함\n중수들은 1.2 좋아함 \n고수들은? 이미 다 알고잇음 더한 미친 단축어 광들 있음",
       "media": [],
-      "url": "https://www.threads.net/@1.ta.ai/post/DW1ZM6SkQ6r",
+      "url": "https://www.threads.com/@1.ta.ai/post/DW1ZM6SkQ6r",
       "created_at": "2026-04-07 23:45:20",
       "date": "2026-04-07",
       "crawled_at": "2026-04-11T17:20:10.151",
@@ -20410,7 +20410,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.71878-15/662019540_1861407414521492_7113030432276867442_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=103&ig_cache_key=Mzg3MDc2OTg2ODQ1NTM2OTEwMQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY0MHgzNjAuc2RyLkMzIn0%3D&_nc_ohc=l9qv1uVe3QAQ7kNvwFbRRnB&_nc_oc=AdoDpMRFlCkoBP3S88swyAEuc1xbS6E1t3_srwGbv5Exs38Y3ouiFu64SvZpPEAKIRk&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=L6IpSJSZzCwFi9hr4NLoEw&_nc_ss=7a32e&oh=00_Af2iBNXr5vpaSvQzIyRZI7a2l7-TQl2dbNJixGdpszVcGA&oe=69DFEAAE"
       ],
-      "url": "https://www.threads.net/@tab.tiny/post/DW3vK_okVmN",
+      "url": "https://www.threads.com/@tab.tiny/post/DW3vK_okVmN",
       "created_at": "2026-04-08 21:37:02",
       "date": "2026-04-08",
       "crawled_at": "2026-04-11T17:20:10.151",
@@ -20436,7 +20436,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/656706065_17919088359318915_8821865200973544435_n.jpg?stp=cp6_dst-jpg_e35_tt6&_nc_cat=103&ig_cache_key=Mzg2MjE3Nzc4MDc4NDY3NDMyNg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjc2NXgxNjI0LnNkci5DMyJ9&_nc_ohc=m4aiSOgEm-MQ7kNvwH12MuZ&_nc_oc=Adqcik0AvSN5GW3gRWcvUsnF2TL4v4RM-ET6OtpzBQcoBTT6WQ_69_jOkhsRJaLTO9s&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=RTJ5kx3oCR_Gbw9zu2b0jQ&_nc_ss=7a32e&oh=00_Af2wBEupaowA26H-6U8dtAo9sPZZ4f7yqEV4zErBpgUyUg&oe=69DFCE62"
       ],
-      "url": "https://www.threads.net/@vibe.aipm/post/DWZNnK9k77n",
+      "url": "https://www.threads.com/@vibe.aipm/post/DWZNnK9k77n",
       "created_at": "2026-03-28 01:05:19",
       "date": "2026-03-28",
       "crawled_at": "2026-04-11T17:20:13.202",
@@ -20462,7 +20462,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/660133617_17956133307114754_5647023482320243578_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=Mzg2OTM4MzY2NTU2MjkzNTY2MA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEyODB4NzIwLnNkci5DMyJ9&_nc_ohc=EkuIac1H12kQ7kNvwEPSDJ4&_nc_oc=AdoKptRYGftyoBDib5IcWptSpZJu6ybdO_DYl7yVASl4___sbzLphTytuRdYieD0AqI&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=iqtiXgCSomtNkvKY3g8P1g&_nc_ss=7a32e&oh=00_Af1HU_w8JpBYRF7v_aV4cao9DVlyuGcfdPnLScI3b0krGw&oe=69DFE575"
       ],
-      "url": "https://www.threads.net/@jokerburg.builder/post/DWyz_Flk-Fs",
+      "url": "https://www.threads.com/@jokerburg.builder/post/DWyz_Flk-Fs",
       "created_at": "2026-04-06 23:41:39",
       "date": "2026-04-06",
       "crawled_at": "2026-04-11T17:20:13.202",
@@ -20488,7 +20488,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/659216080_17853868104691575_3796223584207831596_n.jpg?stp=cp6_dst-jpg_e35_tt6&_nc_cat=109&ig_cache_key=Mzg2NzEyMzUzNTQ3NTQ3NDgzOQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjc5Mng1MTMuc2RyLkMzIn0%3D&_nc_ohc=Jn9hT8-0vycQ7kNvwFMyOYA&_nc_oc=AdodNAzpZ5CWBR6oJXft3Iq2lH8cDbtvuRNIVPVJtHAlQp8cfZm56Rdkzdlpon9n8Bs&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=XWaNDM96KKwPFlQSJirnHQ&_nc_ss=7a32e&oh=00_Af3dW-2QOMWU6rw5qDr9nj7630o3-fvOGoe5pBe707d-WQ&oe=69DFBE5B"
       ],
-      "url": "https://www.threads.net/@bunniesossdev/post/DWqyF3akYGX",
+      "url": "https://www.threads.com/@bunniesossdev/post/DWqyF3akYGX",
       "created_at": "2026-04-03 20:51:11",
       "date": "2026-04-03",
       "crawled_at": "2026-04-11T17:20:13.202",
@@ -20515,7 +20515,7 @@
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/660940512_17937169260207210_6521368495333239993_n.jpg?stp=cp6_dst-jpg_e35_tt6&_nc_cat=100&ig_cache_key=Mzg2OTQwNDQxNjY4MDYyOTIwNg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE5Njh4ODIwLnNkci5DMyJ9&_nc_ohc=_KIUephHcKIQ7kNvwEbO5mY&_nc_oc=Adq9NKLP3syGigOSorn4Zdd9Oyv8paBCTZEdS1LjUf_ky5bWulpwkQf9GlEKlYhTSz4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=NBaNoArii-gLdSBf1GhSYw&_nc_ss=7a32e&oh=00_Af16tWft6H_XgkI8DZtSW4clPxRysbmWHMHn9IgbJYIJjQ&oe=69DFD032",
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/660111238_17937169368207210_5221558301201554755_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=Mzg2OTQwNDQxNjczOTMzMDc2NQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjMyMHgzMjAuc2RyLkMzIn0%3D&_nc_ohc=gP0p-Nj2hz8Q7kNvwGLrC1z&_nc_oc=AdqJualnn-bnGj4NwseO-nEsoChO9ToC5w1rQHdEKDlrk2MBWPkWrGym26j95Ckrfy0&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=NBaNoArii-gLdSBf1GhSYw&_nc_ss=7a32e&oh=00_Af0donmEo6i8XC8QjI9R41oK89baJkzWLjDnZKhPHUeiTA&oe=69DFC53A"
       ],
-      "url": "https://www.threads.net/@unclejobs.ai/post/DWy4tLakxU3",
+      "url": "https://www.threads.com/@unclejobs.ai/post/DWy4tLakxU3",
       "created_at": "2026-04-07 00:22:54",
       "date": "2026-04-07",
       "crawled_at": "2026-04-11T17:20:13.202",
@@ -20542,7 +20542,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.71878-15/658659620_961695556326262_3038875497878271390_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=101&ig_cache_key=Mzg2NzMwMTY0MjE3MjkxNDAyOA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY0MHgxMTM2LnNkci5DMyJ9&_nc_ohc=ztbXTvu1-nkQ7kNvwGu7ni6&_nc_oc=AdqVg91Q-nhsP_mT_svOe7yTcCoge4FF_bljrxTXZFZbwbFX6I6mhUKwZVwUEVrEJYs&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=ucNzEHEw_ZyX-oDtQ3O-vw&_nc_ss=7a32e&oh=00_Af1c7isRFzHJ1uLwsSsXi2l1s5h5LapPgKcmG8iBxq77zQ&oe=69DFF3D4"
       ],
-      "url": "https://www.threads.net/@suho_hp/post/DWralqNAFls",
+      "url": "https://www.threads.com/@suho_hp/post/DWralqNAFls",
       "created_at": "2026-04-04 02:46:44",
       "date": "2026-04-04",
       "crawled_at": "2026-04-11T17:20:16.332",
@@ -20568,7 +20568,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/660509375_17920362276318915_74745281640589514_n.jpg?stp=cp6_dst-jpegr_e35_tt6&_nc_cat=108&ig_cache_key=Mzg2Nzg5NzEyMTQwNDU1MTc0OA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE0NDB4MTkyMC5oZHIuQzMifQ%3D%3D&_nc_ohc=VIyL7qkXNikQ7kNvwE_Ab45&_nc_oc=AdobNQ7Y5U27mSxwn1Zm-xVUh0Rpm3_E2u9Mn619D7jvOvrqp9-ZIk2n31LL4O1sps8&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=gIO43_JoY6ktdiekpuGrxw&_nc_ss=7a32e&oh=00_Af2QO56m7WWIs-cBgjan0f9lcuNI-gpWOxIJB9XkMqGGjA&oe=69DFDAD7"
       ],
-      "url": "https://www.threads.net/@vibe.aipm/post/DWtigu1E_OH",
+      "url": "https://www.threads.com/@vibe.aipm/post/DWtigu1E_OH",
       "created_at": "2026-04-04 22:32:45",
       "date": "2026-04-04",
       "crawled_at": "2026-04-11T17:20:16.332",
@@ -20593,7 +20593,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/658947282_17936991873207210_6405911567990262820_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=Mzg2ODQ5MTk1MTg5Mjk0MDg3Nw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEyMDB4ODAxLnNkci5DMyJ9&_nc_ohc=EfEyF8AXNHcQ7kNvwEMas_D&_nc_oc=AdogvsrkQkrvnVPveqnIVrCNIChqaZEBs_-koMFNapmDC-5fEdAECewYaLwuAdtXKV0&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=PPBJmW1E_OWvOzy7WsUFZw&_nc_ss=7a32e&oh=00_Af1b_QzwTf8KI375jyosME1MAnFRXBEoCVNixdx24g72Vg&oe=69DFEB3A"
       ],
-      "url": "https://www.threads.net/@unclejobs.ai/post/DWvpO8hCUhN",
+      "url": "https://www.threads.com/@unclejobs.ai/post/DWvpO8hCUhN",
       "created_at": "2026-04-05 18:09:58",
       "date": "2026-04-05",
       "crawled_at": "2026-04-11T17:20:16.333",
@@ -20624,7 +20624,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.71878-15/657580860_966245872751720_6737975895323318761_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=109&ig_cache_key=Mzg2ODAyNzM0NzcyMzgyODI0NQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY0MHgxMTM2LnNkci5DMyJ9&_nc_ohc=qvLIYPeRTtcQ7kNvwHq-w59&_nc_oc=Adql5AhQCC05FuRGq2m0DW5KYORhWie3KH93IAy_I_dw0ZxwUanV4lpjZH0d3W6ADek&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=s8JFS9dY0AMcuRUjdJgYJA&_nc_ss=7a32e&oh=00_Af199GyYi0QR12acBFt7tm-DQQNBUTrBrpj69Nx_i5W0ZA&oe=69DFE192"
       ],
-      "url": "https://www.threads.net/@suho_hp/post/DWt_mEKkzwV",
+      "url": "https://www.threads.com/@suho_hp/post/DWt_mEKkzwV",
       "created_at": "2026-04-05 02:46:56",
       "date": "2026-04-05",
       "crawled_at": "2026-04-11T17:20:16.333",
@@ -20648,7 +20648,7 @@
       "display_name": "kimkj008",
       "full_text": "클로드 코드 & 코워크 실전 사용사례 110선\n사용빈도순 정렬 | 각 항목별 구현 방법론 포함\n2026년 4월 기준 | 김경진 변호사\n\nhttps://kimkj.com/ai-board/?mod=document&uid=198&execute_uid=198",
       "media": [],
-      "url": "https://www.threads.net/@kimkj008/post/DWv3m8lj5gF",
+      "url": "https://www.threads.com/@kimkj008/post/DWv3m8lj5gF",
       "created_at": "2026-04-05 20:15:35",
       "date": "2026-04-05",
       "crawled_at": "2026-04-11T17:20:19.391",
@@ -20674,7 +20674,7 @@
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/659728807_18081475517094085_7987582478949267409_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ig_cache_key=Mzg2ODUyMDQ3MTQ5MTgwMDE5OQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEyMDB4ODgwLnNkci5DMyJ9&_nc_ohc=QufiQq9mSm4Q7kNvwFntc5X&_nc_oc=AdojVoxHEMTDHrMeyCOWWNLXrx15FYunIEjJ9Ci7n5QAP7UFGyKXYtqWziKXw8snKkc&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=6GFZSA30pZRB2nIsAUXZ4w&_nc_ss=7a32e&oh=00_Af3tqQF8sKLv83xBmzEnP6UkgZzMSQ6cgSzQQnKlsFO76g&oe=69DFCA25",
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/659000392_18081475541094085_2665269740263598312_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ig_cache_key=Mzg2ODUyMDUzNzUxMDE2NDIwNw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEyMDB4MTEwMi5zZHIuQzMifQ%3D%3D&_nc_ohc=xPJZ9KtF6IIQ7kNvwHOJ-t6&_nc_oc=Adp6dGIPsOpVd5SQhJSXGGXFW7hErPi3eARaZnFY1V6vPLgPc_P2IpRsvhyaocxODf8&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=6GFZSA30pZRB2nIsAUXZ4w&_nc_ss=7a32e&oh=00_Af3ibcNFWLjywnjSzsNs9thfnbr8OxB2wJFPhKpRLuTYEA&oe=69DFEC87"
       ],
-      "url": "https://www.threads.net/@vibe.w.flow/post/DWvvqw5mLcH",
+      "url": "https://www.threads.com/@vibe.w.flow/post/DWvvqw5mLcH",
       "created_at": "2026-04-05 19:06:12",
       "date": "2026-04-05",
       "crawled_at": "2026-04-11T17:20:19.391",
@@ -20700,7 +20700,7 @@
       "display_name": "leveluponlyme",
       "full_text": "코드 한 줄 없는데 10시간 만에 별 1,757개 박힌 역대급 파일 등장함\n테슬라 전 AI 책임자 안드레 카파시가 깃허브에 마크다운 문서 하나 올렸는데 전 세계 개발자들이 열광하는 중임\n앱도 없고 설치할 것도 없는데 별점이 폭발한 이유는 이 문서가 우리가 AI를 쓰는 방식을 완전히 뒤집어놨기 때문임\n\n---\n\n지금까지 우리는 AI를 '일회용 금붕어'처럼 써왔음\n파일 던져주고 요약해달라 하면 그때만 반짝 읽고 다음 질문하면 또 까먹음\n이걸 기술적으로 RAG라고 부르는데 사실 매일 같은 책을 처음 읽는 사람한테 질문하는 꼴이랑 다를 바 없음\n지식은 쌓이지 않고 매번 0에서 시작하는 비효율의 극치였음\n\n---\n\n카파시가 제안한 해결책은 AI 전용 '위키(Wiki)'를 만드는 거임\nAI가 지식을 읽을 때마다 답만 뱉고 끝내는 게 아니라 자기만의 노트를 계속 업데이트하게 함\n새 자료가 들어올수록 위키는 더 정교해지고 연결됨\n마치 이자가 붙는 복리처럼 시간이 갈수록 AI가 나보다 내 전문 분야를 더 잘 알게 됨\n\n---\n\n시스템 구조는 의외로 단순하게 딱 세 겹임\n원본 자료는 절대 안 건드리고 AI가 직접 쓰고 관리하는 마크다운 파일들이 핵심임\n여기에 AI한테 위키 관리법을 알려주는 설정 파일 하나만 더하면 끝임\n카파시는 이걸 두고 옵시디언은 화면이고 AI는 프로그래머며 위키는 코드베이스라고 정의함\n\n---\n\n예를 들어 소설 한 권 읽으면서 챕터별로 AI한테 넘겨주면 대박임\n다 읽을 때쯤이면 인물 관계도와 복선 추적 페이지가 자동으로 완성되어 있음\n수천 명이 몇 년 걸려 만드는 팬 위키를 혼자서 책 한 권 읽는 시간에 뚝딱 만드는 세상이 온 거임\n단순 요약을 넘어 지식의 '지도'를 그리는 방식임\n\n---\n\n카파시는 예전부터 \"영어는 가장 핫한 프로그래밍 언어\"라고 주장해왔음\n이번 llm-wiki 파일도 (https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) 결국 코드가 아니라 '생각'을 공유한 거임\n이제는 앱을 설치하는 시대가 아니라 아이디어를 내 AI 에이전트에게 복붙하면 AI가 내 환경에 맞게 알아서 구현하는 시대로 변하고 있음\n\n---\n\n기존 오픈소스는 코드를 공유하고 우리가 직접 삽질하며 설치해야 했음\n하지만 카파시의 방식은 '실행 가능한 아이디어' 그 자체를 공유하는 거임\n전문가들은 이걸 소프트웨어 3.0의 서막이라고 부르기도 함\n개발자가 환경 설정을 고민하는 게 아니라 AI가 사용자의 의도를 읽고 지식 체계를 스스로 구축하는 단계임\n\n---\n\n결국 정보가 너무 많아서 문제가 아니라 연결되지 않는 게 문제였음\n에이전트의 무한한 인내심을 빌려 우리만의 지식 정원을 가꿀 기회가 온 거임",
       "media": [],
-      "url": "https://www.threads.net/@leveluponlyme/post/DWvMRVVlAB9",
+      "url": "https://www.threads.com/@leveluponlyme/post/DWvMRVVlAB9",
       "created_at": "2026-04-05 13:56:54",
       "date": "2026-04-05",
       "crawled_at": "2026-04-11T17:20:19.391",
@@ -20722,7 +20722,7 @@
       "display_name": "vyblor",
       "full_text": "Karpathy가 쓰는 RAG는 벡터DB가 없다. 설정 시간 0분. 🔥\n\n---\n\nObsidian vault에 raw/ 폴더랑\nwiki/ 폴더 두 개만 만들어.\n\nWeb Clipper로 글 스크랩하면\nClaude Code가 알아서\n파일 기반 RAG로 검색해줌.\n\nLightRAG, GraphRAG 같은 거\n설치할 필요 없어.\n벡터DB 유지보수도 0 🙌\n\n---\n\n핵심은 폴더 구조가 곧 인덱스라는 거.\n\nraw/에 원본 던져놓고\nwiki/에 정리본 넣으면\nClaude Code가 컨텍스트로 읽어.\n\nLocal Images Plus 플러그인까지\n쓰면 이미지도 포함됨.\n\n개인 지식 베이스 만들 때\n제일 심플한 방법이야 ⚡",
       "media": [],
-      "url": "https://www.threads.net/@vyblor/post/DWu4BurkVoc",
+      "url": "https://www.threads.com/@vyblor/post/DWu4BurkVoc",
       "created_at": "2026-04-05 11:00:08",
       "date": "2026-04-05",
       "crawled_at": "2026-04-11T17:20:19.391",
@@ -20744,7 +20744,7 @@
       "display_name": "stashby.me",
       "full_text": "앱은 AI가 다 만들어줘도 보는 눈이 없으면 잘 만들어진건지 판단하기 어렵죠? 그래서 요즘은 레퍼런스를 많이 보고 좋은 눈을 기르는게 더 중요합니다.\n\n👇🏻 앱 만들때 보는 눈을 길러주는 디자인 레퍼런스 사이트\n\nhttps://60fps.design/\n- 특이한 앱 인터렉션들을 영상으로 캡쳐해 수집해둔 사이트\n\nmobbin.com\n- 실제 앱들의 UI 화면을 온보딩, 결제, 프로필 등 UX 플로우별로 볼 수 있는 모바일 UI 레퍼런스 사이트\n\nhttps://refero.design\n- SaaS와 모바일 앱의 실제 제품 UI를 모아둔 디자인 레퍼런스 라이브러리\n\npageflow.com\n- iOS, Android별 실제 UX 흐름이 스크린샷으로 모아져있음\n\n---\n\n[가장 중요] 그리고 여기서 인상깊게본 레퍼런스는 스태시바이에 수집하기\n\n---\n\n마지막 링크 제가 잘못 적었네요...! \n👇🏻여기입니다!\nhttps://pageflows.com/",
       "media": [],
-      "url": "https://www.threads.net/@stashby.me/post/DVksGIHAIed",
+      "url": "https://www.threads.com/@stashby.me/post/DVksGIHAIed",
       "created_at": "2026-03-07 15:31:57",
       "date": "2026-03-07",
       "crawled_at": "2026-04-11T17:20:19.400",
@@ -20768,7 +20768,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/625837517_17875722135492123_1171449601827785128_n.jpg?stp=cp6_dst-jpg_e35_tt6&_nc_cat=108&ig_cache_key=MzgyNjk5NTUyMjk5NDA0Nzg4NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjIxNjB4MTIyNi5zZHIuQzMifQ%3D%3D&_nc_ohc=d4q2ISozvy8Q7kNvwEbA-Yc&_nc_oc=AdrQO0qm2pHMqwc2HA_kkWw5iqe_H8dQBhVDMoihPcYUxNoRqiv1Oi6MyKhthOMDqb0&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=mR8-dNGMvZ_2oyZambThmQ&_nc_ss=7a32e&oh=00_Af0CupoklH88csyKitvzj-ukvEBW692RxHf2YndoknG7wA&oe=69DFC5AF"
       ],
-      "url": "https://www.threads.net/@stashby.me/post/DUcOCbhEguM",
+      "url": "https://www.threads.com/@stashby.me/post/DUcOCbhEguM",
       "created_at": "2026-02-07 12:03:59",
       "date": "2026-02-07",
       "crawled_at": "2026-04-11T17:20:19.400",
@@ -20792,7 +20792,7 @@
       "display_name": "stashby.me",
       "full_text": "사이드 프로젝트 할 때 알면 좋은 무료 서비스들 - 2\n\n💵 Polar.sh\n- 사업자 없이 아주 쉽게 붙일 수 있는 글로벌 결제\n\n🗳️ Featurebase (www.featurebase.app)\n- 올인원 피드백 플랫폼 (문의 채팅, 기능 제안 투표)\n\n✉️ Mailchimp (mailchimp.com)\n- 뉴스레터 1등 서비스. maily나 stibee보다 무료 사용량 높음\n\n✉️ Resend (resend.com)\n- 인증, 알림 메일을 코드 몇 줄로 보낼 수 있는 API\n\n🔗 Stashby (stashby.me)\n- 웹/앱에서 디자인, 마케팅 레퍼런스 한곳에 모아보기\n\n🚄 Railway (railway.com)\n- 저장소만 연결하면 아주 쉽게 MVP 배포 가능\n\n---\n\n1탄 보러가기\n\nhttps://www.threads.com/@stashby.me/post/DLce-8iyjGK?xmt=AQF0w4yvVQerdTj5E7K8EQFDCtOWHofo0yFH1N7SkpUx3A",
       "media": [],
-      "url": "https://www.threads.net/@stashby.me/post/DTCYCp1ErLv",
+      "url": "https://www.threads.com/@stashby.me/post/DTCYCp1ErLv",
       "created_at": "2026-01-03 14:39:44",
       "date": "2026-01-03",
       "crawled_at": "2026-04-11T17:20:19.400",
@@ -20814,7 +20814,7 @@
       "display_name": "n4.vicboss",
       "full_text": "지난 한달간 오픈클로 사용에 대한 소회.\n\n- 여기저기 호들갑에 난리부르스이길래 솔직히 기대 1도 안했어요. 보통 저런 호들갑이 보이는 경우는 사짜들만 득실대기 때문이죠. 아니 근데 이게 왠걸. 그저그런 개발자 친화적인 하나의 tool이 하나 나왔겠거니 싶었습니다만, 그간 제 모든 지식과 경험을 완전히 리셋하는 형태의 툴로 받아들이고 세팅하고 익히는 중입니다. \n\n- 여태까지 제가 했던 업무들인 전략기획, 사업개발을 비롯하여 대표적인 BM이었던 앱,웹개발, 브로슈어 및 전단 & 홍보물 제작 및 배포(SEO)등에 투입된 모든 기획,개발,그래픽,아트,사운드까지 정말 모든 전문가 영역을 '신중하게 고민한 한 문장'으로 지시하면 운에 따라 일부는 사람보다 훨씬 나은 결과를, 운이 나쁘거나 지시가 별로일 때엔 '거의 전문가스러운' 결과물을 뽑아 냅니다.\n\n- 십수년간 업계에서 구르며 성장한 인력들을 넘어서거나 그에 준하거나 다소 모자란 정도의 결과를 보이면서도 들어가는 비용은 1/100 정도\n\n---\n\n- 그러니까 월급 500만원을 주고 '정직원'으로 채용해서 해당 직원의 급여 생활에 대한 안정감을 주어야 비로소 얻을 수 있던 결과물을 단돈 5만원이면 얻을 수 있게 된 셈이죠. '즉시  해고'가 가능하다는 것은 덤이구요. (비약이 좀 있긴 하지만요)\n\n- 기획은 A사이트(혹은 프로그램), 코딩에는 B,  그래픽은 C, 사운드 및 음성은 D, 그리고 이 모든 작업을 별도의 공간에서 진행하고 또 이것들을 수합하여 E라는 툴을 이용해 결과를 도출하거나 하는 그런 번거로운 수준이 아니에요.\n\n- 아직 카톡은 지원하지 않지만 텔레그램에 사람처럼 친구 등록을 해 두고 '그 것'과 사람처럼 메세지를 주고 받으면서 '지시와 명령 그리고 수행'을 명하면 위에 말한 모든 작업을 완성해 옵니다. 한 곳, 그냥 메신져 등록해두고 비서 부리듯이 구어체로 지시만 하면 됩니다.\n\n- 상상하는 모든 것이 다 됩니다. 마블의 쟈비스, 영화 HER의 '그녀'처럼요. 성능의 차이가 있을지언정 기능은 모두 구현됨\n\n---\n\n- 심지어 지시자인 사람인 나와의 1:1의 개념으로 끝나는 것이 아닙니다. 각각에 대하여 가상의 인격을 부여하고 역할을 부여해서 기획,개발,그래픽,영상,사운드부터 이를 총괄하는 PM까지 모두 생성하여 AI팀을 꾸릴 수 있습니다. AI끼리 놀게 하는거죠.\n\n- 심지어(2) 이 AI팀은 24시간 서로 커뮤니케이션을 하며 결과물을 만들어갑니다. log를 보고 있으면 사람과 다를게 없어요. 감정이 없기에 외려 사람보다 낫습니다. 체력 고갈 이슈도 없고요. 제가 자고 있을 때에도 얘넨 일을 합니다. 권한만 적절히 부여하면 시장조사부터 자료수합, 분석을 통해 수익성 예측 후 필요한 개발에 바로 투입합니다.\n\n- 심지어(3) 결과가 좋은 경우가 많아요. 아직은 부족한 것이 제법 티가 나지만 이대로만 발전한대도 꽤 많은 직종의 인력들이 모두 대체 되어도 하등 이상할 것이 없다는 생각이 들 정도입니다.\n\n- 감이 안오신다구요?\n\n- AI팀을 세팅하기까지는 손이 좀 많이 가는 것이 사실입니다만\n\n---\n\n- 팀이 세팅 되고 난 이후는 이렇게만 하면 됩니다. 텔레그램에서 '그 것'에게 말을 겁니다.\n\n- '나 곧 오는 6월달에 제주도에서 나는 초당옥수수를 팔아 볼 계획이야. 육지를 비롯하여 필요하면 수출할 수 있는 방법까지 고려하고 있어. 이에 작년까지 제주 초당옥수수의 생장과 수확 그리고 판매가 된 모든 자료들을 수집하고 분석해서 수정 및 보완이 필요한 모든 결론을 도출한 다음 사업성 여부를 판단해. 순 수익률이 총 20%이상 보장되는 안건 세가지를 뽑고, 그 중 가장 실현 가능성이 높은 안을 토대로 기획안을 제작 한 다음 필요한 모든 것을 진행해. 이를테면 스토어형 웹페이지 제작이나 네이버 스마트플레이스 등록, 전용 앱 개발이나 관련 정부과제 신청이나 판매 루트 다각화 등. 진행하면서 드러날 모든 문제에 대한 대응도 리스트 업 해 줘'\n\n- 물론 프롬프트가 보다 더 디테일하고 길어질겁니다만, 저렇게만 해도 담당 AI들이 모두 달려나갑(?)니다. 구글링해서 자료를 수집하기 시작해요\n\n---\n\n- 그간 무슨 문제가 있는지, 왜 이 일을 하면 안되는지, 혹은 할 수 있는지, 해야만 하는지, 매우 논리적으로 분석하여 결과를 도출합니다. 찔러넣은 20%가 안되면 드랍하고, 넘으면 바로 판매에 필요한 모든 수단을 기획해요. 전용 앱 개발이라던가 웹페이지 개발까지도요.\n\n- 그 와중에 권한이 필요한 일이 있으면 저한테 일을 시키기도 합니다. '여기가서 가입하고 결제하고 아이디 비번 저한테 줘요' 같은 거나 '이 자료는 어느 부서에 제출하고 저 자료는 어디에 제출하셔' 라고요\n\n- 이게... 됩디다? -_-a\n\n- 지난 한달간 진짜 재미나게 놀았고요. 앞으로 몇달은 더 재미나게 놀 수 있을 듯 합니다.\n\n+ 호들갑 떨기에 충분한데요. 호들갑 떠는 사람들을 잘 관찰하면 눈에 띄는 공통점이 있습니다. 공포를 자극해요. 이 툴을 모르면 마치 '도태'될 것 처럼 자극을 하죠. 그리고 유혹을 합니다. 빠른 습득과 선점을 통해 '돈을 벌게 해 주겠다'라고 꼬십니다.\n\n---\n\n++ 그렇게 그들은 뭘 그렇게 팝니다. 소소하게(?)는 강의를 팔구요. 프로세스를 밟아 나가는데 필요한 효율성을 담보로 한 skill이나 plugin을 개발해 팔기도 합니다. 책도 출간해서 팔고요. 아니면 욕심이 없는 순수함을 전면에 드러내놓고 이 기회를 이용해 '셀럽'이나 인플루언서가 되고자 합니다.\n\n+++ 그런데 돈 쓰지 마세요. 제가 위에 나열 한 모든 것들을 한번 체험해 보시려면 89만원짜리 맥미니 깡통 한대 들이시면 됩니다. 나머진 chatGPT같은 ai들에게 물어물어 하시면 되구요. 초기 설치 방법부터 세팅까지 모두 다 자세하게 알려줍니다. 더이상 사람을 쓰지 않을 기술을 배우는 걸 사람에게 습득하려는 것이 좀 아이러닉하지 않나요.\n\n++++ 컴맹이라도 금새 따라하실거에요. 다소 개발자 친화적이지만 하다보면 결국 복사/붙여넣기만 하는 수준으로 기능 구현에 성공하게 되실겁니다. 결국 '나'조차도 쟤가 시키는 대로 하고 있는걸 보고 좀 소오름..이 돋는다는 게 함정이지만요.\n\n---\n\n- 보다 대중친화적이고 친절한 오픈클로가 곧 나오게 될겁니다. 그 때 사용해도 늦지 않는다고 봐요. 다만 미리 좀 만져두고 익숙해지면 사고의 확장이 그만큼 더 유연해지고 가속화 될거란 생각이 듭니다.\n\n- 그리하여 저의 소회를 빌어 이 글을 읽으시는 모두에게 한번 써 보시라 추천합니다.\n\n- 저는 또 쟤랑 놀러 떠납니다. 슝-",
       "media": [],
-      "url": "https://www.threads.net/@n4.vicboss/post/DWubt3-k2gC",
+      "url": "https://www.threads.com/@n4.vicboss/post/DWubt3-k2gC",
       "created_at": "2026-04-05 06:52:37",
       "date": "2026-04-05",
       "crawled_at": "2026-04-11T17:20:19.400",
@@ -20838,7 +20838,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/657723261_17882623284492123_4430727265610006782_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ig_cache_key=Mzg2MzI4NjkxODM0NzI2NzczOA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjk5OHgyMTYwLnNkci5DMyJ9&_nc_ohc=ZRmdN5rSn_sQ7kNvwHk2iQz&_nc_oc=Adozg_o-VsXxvHfhsZ8smYQHH9OUPzs7M9CUitu07KOpT2D9zYimgzlQVTm2zOLR2Fk&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=x3DUfv-Xxgs4-nrUwPhhsw&_nc_ss=7a32e&oh=00_Af0yZyXA1ct7LdeDenEk-rxiDSeRWzgFvn1B8nmcWELyqQ&oe=69DFC4C0"
       ],
-      "url": "https://www.threads.net/@stashby.me/post/DWdJwF8AHvW",
+      "url": "https://www.threads.com/@stashby.me/post/DWdJwF8AHvW",
       "created_at": "2026-03-29 13:48:33",
       "date": "2026-03-29",
       "crawled_at": "2026-04-11T17:20:22.542",
@@ -20864,7 +20864,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/658902788_18584289577021627_5001195560807178762_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=Mzg2NzYwODMzMDI5NDg3OTgxNA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjc2NHg5NTguc2RyLkMzIn0%3D&_nc_ohc=W-IWlzaPVBwQ7kNvwH978Bp&_nc_oc=Adp4p3eu8Uo3czxbb_bT9Rcn6i27ntszmxBIpbQb5URo21pP_uInvkH_Ye0YpGO6Xso&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=nWWZRhPRiQlIYyde6WgZSQ&_nc_ss=7a32e&oh=00_Af0emU1M7AZGnv962QO3WTF_aS9w9FCtzmjC1b8wtukt1g&oe=69DFCA85"
       ],
-      "url": "https://www.threads.net/@peterkimpmp/post/DWsgUwVkTei",
+      "url": "https://www.threads.com/@peterkimpmp/post/DWsgUwVkTei",
       "created_at": "2026-04-04 12:54:24",
       "date": "2026-04-04",
       "crawled_at": "2026-04-11T17:20:22.543",
@@ -20890,7 +20890,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/659689697_17860339725623803_2183911160159679683_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ig_cache_key=Mzg2NzkzNTM2NzU1MTA0OTI2NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwODB4MTM1MC5zZHIuQzMifQ%3D%3D&_nc_ohc=GK_dymCKPToQ7kNvwE5ab0g&_nc_oc=AdpFIW7qAlPemzixeKzmAnTm8VZQemHYDeNyk041BaA_PtexM-nhk7ZyY2EN918-Db8&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=1HLA020AeRl2xLVvusgsZA&_nc_ss=7a32e&oh=00_Af2m3att_uq7MNTYCVGdAFtHlK2H3_0GyCXtYM0A8Nt4Dw&oe=69DFE600"
       ],
-      "url": "https://www.threads.net/@vibe.tip/post/DWtquNok-mt",
+      "url": "https://www.threads.com/@vibe.tip/post/DWtquNok-mt",
       "created_at": "2026-04-04 23:44:30",
       "date": "2026-04-04",
       "crawled_at": "2026-04-11T17:20:22.543",
@@ -20916,7 +20916,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.71878-15/657885088_2003741167687500_7191125261432702370_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=111&ig_cache_key=Mzg2ODAxMTI0MjU3NzkxNjAxNA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY0MHg0Mjguc2RyLkMzIn0%3D&_nc_ohc=rfoLng78qEgQ7kNvwHgEcLD&_nc_oc=Adp4DGbVt0AtpAnS740jLwtYLUFNHPJILUlCq9kGI6WTzqXX3vY0A2f7HtpKAwq0Lr8&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=2VX44LWk9HGQ9SrMp3lmnA&_nc_ss=7a32e&oh=00_Af2OiX8ZsXfibxDsNtrH_2W-yh_QbXkbsjoIXuL4w0snBQ&oe=69DFEC90"
       ],
-      "url": "https://www.threads.net/@hue_0525/post/DWt770QEq6a",
+      "url": "https://www.threads.com/@hue_0525/post/DWt770QEq6a",
       "created_at": "2026-04-05 02:14:54",
       "date": "2026-04-05",
       "crawled_at": "2026-04-11T17:20:22.543",
@@ -20943,7 +20943,7 @@
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/658914215_17877452775553516_9188335536448550351_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=Mzg2NzQ3OTA4ODIxMTEwNzE4Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjM3NngxODAuc2RyLkMzIn0%3D&_nc_ohc=9Xltnf88Gz4Q7kNvwG2KD6Q&_nc_oc=AdosG8zf-FnALi8oaDChwh33UgnbwAxntILnBu7cX1n5gbHt2gJqLfuR7Bc5yGqDqKk&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=MmOlmeDELIVBwfQbexAl1w&_nc_ss=7a32e&oh=00_Af1Grx-ChgmXfBVxIKNFD6KLNribtlzXKL5TW-GX03C7Sw&oe=69DFC278",
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/658397544_17877450357553516_7734430161517558495_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ig_cache_key=Mzg2NzQ2NjQxNTA2MjUxMTQzMw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjgxM3g1NTYuc2RyLkMzIn0%3D&_nc_ohc=zu8bbsRxdyEQ7kNvwHJwCxj&_nc_oc=Adoiyg7_v-CIna6Q7u63rSwjWeqVvG3ASGq9M21gBGYZ2WVyW0T5nIiHLqKuwuIKjGM&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=MmOlmeDELIVBwfQbexAl1w&_nc_ss=7a32e&oh=00_Af2VvnZdvwHLQSCQQZEfMQb3bsDERUJMPjB2noEKqAECPA&oe=69DFD71E"
       ],
-      "url": "https://www.threads.net/@chris_gomdori/post/DWsC71tEx1y",
+      "url": "https://www.threads.com/@chris_gomdori/post/DWsC71tEx1y",
       "created_at": "2026-04-04 08:37:36",
       "date": "2026-04-04",
       "crawled_at": "2026-04-11T17:20:25.619",
@@ -20968,7 +20968,7 @@
       "display_name": "ai_sync_club",
       "full_text": "요즘 트렌드 파악하기 너무 벅차시죠?\n\n최근 30일간의 레딧, X, 유튜브를\nAI가 싹 다 뒤져서 요약해줍니다.\nlast30days-skill로 해결하세요.\n\n---\n\n[주요 기능]\n- 6개 플랫폼 동시 교차 검증 검색\n- 단순 키워드 아닌 문맥 기반 검색\n- 조회수/댓글 등 실제 반응도 반영\n- 검색 결과를 마크다운 문서로 자동 저장\n\n---\n\n[사용 예시]\n\"요즘 핫한 AI 코딩 툴 트렌드 알려줘\"\n이렇게 입력하면 AI가 커뮤니티를 돌며\n실제 개발자들이 추천하는 툴과\n그 이유를 완벽하게 정리해옵니다.\n\n---\n\n[활용 팁]\n단순한 구글 검색보다 훨씬 깊이 있습니다.\n특정 주제에 대한 대중의 진짜 반응이나\n숨겨진 꿀팁 찾을 때 꼭 써보세요.\n리서치 시간이 10분의 1로 줄어듭니다.\n\n→ github.com/mvanhorn/last30days-skill",
       "media": [],
-      "url": "https://www.threads.net/@ai_sync_club/post/DWscUhkk0jw",
+      "url": "https://www.threads.com/@ai_sync_club/post/DWscUhkk0jw",
       "created_at": "2026-04-04 12:19:25",
       "date": "2026-04-04",
       "crawled_at": "2026-04-11T17:20:25.619",
@@ -20992,7 +20992,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/657973132_17955399285112832_1606449749171841381_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ig_cache_key=Mzg2NzQ0NTQzNTE3OTM3NDQ2NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjExMTR4MTE3MC5zZHIuQzMifQ%3D%3D&_nc_ohc=FIs0DXQOzDUQ7kNvwFlV4mN&_nc_oc=AdqnRbaHZdT3EKZdtjNylx49FQZ-JEyEBwGTqLJR0M3qtvjyNp9i-gRgMhiJBcajJcg&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=ERKE9QqGTjIF2Ia1oPauMw&_nc_ss=7a32e&oh=00_Af0hWBTh8OoTb7sqJSCTu4CusiCgg1kqUFuTBwKGyxTF5g&oe=69DFC095"
       ],
-      "url": "https://www.threads.net/@choi.openai/post/DWr7SH4EpeA",
+      "url": "https://www.threads.com/@choi.openai/post/DWr7SH4EpeA",
       "created_at": "2026-04-04 07:30:44",
       "date": "2026-04-04",
       "crawled_at": "2026-04-11T17:20:25.619",
@@ -21020,7 +21020,7 @@
         "https://scontent-icn2-1.cdninstagram.com/v/t51.71878-15/657757579_1423618339810214_6274494220176103863_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=101&ig_cache_key=Mzg2NzU3MTIxMTE1NjM4MTI5Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY0MHg0MTQuc2RyLkMzIn0%3D&_nc_ohc=ZHz3aWtMVmQQ7kNvwHklBOq&_nc_oc=Adpt_JXsBRkGmexC7kXEu2SsirrpYQIEwZIbmNkuDYsWjqoQBFE5qG77Sz9k8qtL3VU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=zgqOKSevXKgzusYIRGkKag&_nc_ss=7a32e&oh=00_Af1NXgL0kcpUyTOARre7qSi3qa8Z7-f6iqpNV5BlHYzLjQ&oe=69DFCB18",
         "https://scontent-icn2-1.cdninstagram.com/v/t51.71878-15/658352167_1650769142743400_5830051180798685418_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=106&ig_cache_key=Mzg2ODI4MzQ0NTI3Mzg0NDU3Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY0MHgxMjY0LnNkci5DMyJ9&_nc_ohc=q7XZsR-D8ScQ7kNvwH6RIUu&_nc_oc=AdouCA8l1ZkjPheOo300s6QU9bFmqp6XG3XdRA7WqVDlZcmqhQquY4a3Yk0HlglQMoc&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=zgqOKSevXKgzusYIRGkKag&_nc_ss=7a32e&oh=00_Af0irC2aZ8KD8Ggm5SQBbHUhVPKbzV47yEmo1qFmrSFxMA&oe=69DFD823"
       ],
-      "url": "https://www.threads.net/@stashby.me/post/DWsU0PGgGO6",
+      "url": "https://www.threads.com/@stashby.me/post/DWsU0PGgGO6",
       "created_at": "2026-04-04 11:19:33",
       "date": "2026-04-04",
       "crawled_at": "2026-04-11T17:20:25.619",
@@ -21046,7 +21046,7 @@
       "display_name": "chiftkey",
       "full_text": "AI Agent와 일을 하다보면...\n\n파일을 찾을 때, find 를 쓰고\n문자열을 찾을 때, grep을 쓰고\n디렉토리 구조를 확인할 때 ls를 주로 쓰는 걸\n볼 수 있다\n\n---\n\n학습데이터의 영향인지는 전문가가 아니라\n알 수 없지만..\n\n모던 CLI를 사용하게 하면, 컨텍스트도\n절약하고, CLI 실행 처리에 대한 속도도\n개선할 수 있다\n\n---\n\n예를 들면 이런식이다\n\n\"파일을 찾을 때 find 대신 fd를 사용해\n문자열을 검색할 때 grep 대신 rg를 사용해\"\n\n모던 CLI들에 간략한 정보는 아래링크를 참고\nhttps://ikrima.dev/dev-notes/linux/linux-modern-tools/\n\n---\n\n당장 shell에서 grep 대신 rg를 입력해서\n문자열을 찾아보면 얼마나 빨라지는 지\n체감해볼 수 있다\n\n---\n\n요즘은 이것을 Agent가 CLI를 실행할 때\n강제하기 위해서, hooks에 연동하는 걸\n해보는 중인데, 아직은 잘 안되는 중..",
       "media": [],
-      "url": "https://www.threads.net/@chiftkey/post/DWruy1pk-LW",
+      "url": "https://www.threads.com/@chiftkey/post/DWruy1pk-LW",
       "created_at": "2026-04-04 05:41:36",
       "date": "2026-04-04",
       "crawled_at": "2026-04-11T17:20:25.629",
@@ -21070,7 +21070,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/657856053_17888295294462362_7705406628798920395_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ig_cache_key=Mzg2Nzg2Nzc4MzkyNTc2MTU4OQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE5NzJ4MTM5MC5zZHIuQzMifQ%3D%3D&_nc_ohc=HiIfP3FiCv4Q7kNvwFk-Of3&_nc_oc=Adq2mjmJiXQPG8F9WTgddSHPz0BVtnmsZUMyjnil9hbYloxUG1VSZ6XE-awiB0OCMEE&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=sL0olgkVB9vlmLrQwtzB_g&_nc_ss=7a32e&oh=00_Af11mnWYtL8tH1HoNb6Z-bmOa2ZCKKZQupEKhajxmJp3Cg&oe=69DFE089"
       ],
-      "url": "https://www.threads.net/@lucas_flatwhite/post/DWtbUjWEcCb",
+      "url": "https://www.threads.com/@lucas_flatwhite/post/DWtbUjWEcCb",
       "created_at": "2026-04-04 21:29:55",
       "date": "2026-04-04",
       "crawled_at": "2026-04-11T17:20:25.629",
@@ -21096,7 +21096,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/658731569_17859797748622325_6465900805055987461_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ig_cache_key=Mzg2NzQ0NDI0NTc0MTg3MTE4Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwODB4MTA4MC5zZHIuQzMifQ%3D%3D&_nc_ohc=bEVUs2IinHoQ7kNvwEQakJI&_nc_oc=AdqZ1o28lQSkmwRJaeIgo-ypLgCFnwDy6x1koEm5gsuYkwLCyY_d8X1L-T_pgLYyzn0&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=HRRPStq9T9k_W8b6XY9t3Q&_nc_ss=7a32e&oh=00_Af25xRmJmDFR2Miut3elmwfFcOG3uLPnUEjvTOS2k9y1uw&oe=69DFD1B6"
       ],
-      "url": "https://www.threads.net/@aisolutiondev/post/DWr7H-9EmOW",
+      "url": "https://www.threads.com/@aisolutiondev/post/DWr7H-9EmOW",
       "created_at": "2026-04-04 07:29:25",
       "date": "2026-04-04",
       "crawled_at": "2026-04-11T17:20:25.629",
@@ -21122,7 +21122,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/658943330_17901738342408836_5675869512738200153_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ig_cache_key=Mzg2NzU3NjEzOTcwODA2Mjg3NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjMyMHgzMDUuc2RyLkMzIn0%3D&_nc_ohc=gBVCtkqbeO8Q7kNvwEXtNwK&_nc_oc=Adr2htq6SOXu3yKJILboPNd6UxeIWrdY97jEhUYzJ5t55Mm1MtvvxCKm3hAgJGXhKFk&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=jrVeJD8Gn7TfanN9iCsoNA&_nc_ss=7a32e&oh=00_Af3KkVRZdOFEuz-ZHX3-07-fmy-rzibbsxpcUAk430Fhfg&oe=69DFD0D0"
       ],
-      "url": "https://www.threads.net/@gptaku_ai/post/DWsZAPtE6H0",
+      "url": "https://www.threads.com/@gptaku_ai/post/DWsZAPtE6H0",
       "created_at": "2026-04-04 11:50:26",
       "date": "2026-04-04",
       "crawled_at": "2026-04-11T17:20:25.630",
@@ -21148,7 +21148,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.71878-15/658430770_1938733296766819_7761859476649994742_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=103&ig_cache_key=Mzg2NzI1MTk5NjE5MzczODY1Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY0MHg2NTguc2RyLkMzIn0%3D&_nc_ohc=GO0OvDxYUFsQ7kNvwH3ep2e&_nc_oc=AdoUVU7N77yaqi4ezSsqVrwDTWXADrUACEVy2AAS3-NVWyOACqtx6cBNwxWf-1RomYI&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=3EcRZ4q8SZHP4isVGPB4XQ&_nc_ss=7a32e&oh=00_Af3WKWp3CPXMi9S_B42F05Sj4DuOsBZYg-VoWapHchwbkg&oe=69DFE742"
       ],
-      "url": "https://www.threads.net/@suho_hp/post/DWrPVWxmLwI",
+      "url": "https://www.threads.com/@suho_hp/post/DWrPVWxmLwI",
       "created_at": "2026-04-04 01:06:42",
       "date": "2026-04-04",
       "crawled_at": "2026-04-11T17:20:28.882",
@@ -21174,7 +21174,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/659506247_17860305993623803_2779376231249947847_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ig_cache_key=Mzg2Nzc5NTI0NTk4Nzk5NTAxMA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwODB4MTM1MC5zZHIuQzMifQ%3D%3D&_nc_ohc=ImscSWn6lNEQ7kNvwH-AzXT&_nc_oc=AdplmEOH19ZOTlRBlkh-Y3pLooKw1qy523TTOi9YrkGcOAzwytk4g47aKq7TfR4Oaqc&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=5U9AEPF8gMLLzkBp0ruCaA&_nc_ss=7a32e&oh=00_Af1UUFTcgy3ScKHQba4bXAyl9hbxxuqF3tVXcT1E05TsDg&oe=69DFE20A"
       ],
-      "url": "https://www.threads.net/@vibe.tip/post/DWtK21LE5YY",
+      "url": "https://www.threads.com/@vibe.tip/post/DWtK21LE5YY",
       "created_at": "2026-04-04 19:06:03",
       "date": "2026-04-04",
       "crawled_at": "2026-04-11T17:20:28.882",
@@ -21198,7 +21198,7 @@
       "display_name": "ai.trend.ray",
       "full_text": "옵시디언으로 제 2의 두뇌를 만들 수 있다고? 난 반대다. 제 2의 두뇌가 될수 있지만 만들기는 하늘의 별따기. 직접 속성값 설정하고 링크걸고. 차라리 그 시간에 집정리를 하는게 낫다. \n\n무작정 옵시디언을 쓰면 쓰지않는 물건을 모아두는 제 2의 창고가 된다. \n옵시디언 가르쳐주는 유명한 유튜버도 inbox(임시생성폴더)에 노트가 가득하더라. \n\n맨땅박치기 옵시디언으로 서비스 만드는 경험팁이니 아무것도 모르는 문과들은 들어라.\n\n---\n\n1. 옵시디언은 AI가 노트를 만들고 노트를 쓰고 정리하고 연결하게 하라. 기깔나게 만들고 연결한다. 그럴려면 다음 스텝을 기억해라. \n\n반드시 로그를 남겨라. 맥락을 알아야 ai의 이해도가 올라간다. \n\n작업이 끝나면 반드시 문서정리를 다시 시켜라. 그리고 반드시 검수를 시켜 논리와 링크가 끊긴 부분을 보완한다.\n\n---\n\n2. 폴더구조를 짜고 문서 규칙을 만들어달라고해라. \n\n옵시디언에서 \n1) 폴더는 00. 01. 02….식으로  시작하면 좋다. \n\n2) 문서는 00.01로 시작하면 좋다. 그래야 문서만 봐도 어느 폴더구조와 연결되는지 알수있다. \n\n3) 한 문서에는 하나의 정의만 담는다 (제텔카스텐)\n\n4) 연결을 위한 속성(property)값은 ai가 연결시키게 명령하라. \n\n5) 단어규칙을 만들어라. 개발자가 아니면 개발용어에 익숙하지 않고, 서비스에 대한 모호한 개념은 ai가 치환해준다. 사용자는 더욱 선명해지는 작업을 지시할수 있다.\n\n---\n\n3. But, 함정이 있다. 문서를 강화하다 결국 따라갈수없는 지점이 온다. 맥락을 잡을 수 없는 지점이 오는건. 모든 것을 ai에게 정리시켰기 때문이다. \n\n문서를 확인하고 구체화 하고 싶은 부분은 자기만의 노트 표시 방식을 ai한테 이야기하고 다음 검수때 검토 및 정리하라고 시키면 된다. 나의 경우 [!note]로 표시한다\n\n---\n\n4. 무슨 말인지 모르겠다면 ai cli를 사용해본적없거나 옵시디언을 안써본 사람일 가능성이 높다.",
       "media": [],
-      "url": "https://www.threads.net/@ai.trend.ray/post/DWs2389EVNU",
+      "url": "https://www.threads.com/@ai.trend.ray/post/DWs2389EVNU",
       "created_at": "2026-04-04 16:11:27",
       "date": "2026-04-04",
       "crawled_at": "2026-04-11T17:20:28.882",
@@ -21222,7 +21222,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.71878-15/649212712_1354564169763293_217562163241552192_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=105&ig_cache_key=Mzg0NzkzNzAxMzc4OTY2NzcxNQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY0MHgzNTAuc2RyLkMzIn0%3D&_nc_ohc=gx8qFsqU4gcQ7kNvwGe_-Be&_nc_oc=AdpycqB-plyCU2MBgKo_DIFJV8jJ5mBFzrGf1Ta7jcup3HlDAj7TRSJVnxXCRiuguOw&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=0i673xfsUQdYxzuq3N1KSw&_nc_ss=7a32e&oh=00_Af1ZVeqTqDmXpGOExjqaasL6TGDQn_lKzWUylFw_lg-LWw&oe=69DFD8A3"
       ],
-      "url": "https://www.threads.net/@choi.openai/post/DVmnlOpArGD",
+      "url": "https://www.threads.com/@choi.openai/post/DVmnlOpArGD",
       "created_at": "2026-03-08 09:30:59",
       "date": "2026-03-08",
       "crawled_at": "2026-04-11T17:20:28.882",
@@ -21248,7 +21248,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/658045218_18068507312344114_1246845752976867246_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ig_cache_key=Mzg2NjUwOTIyNzQxODI3MDM2NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjIxNTZ4MTM0NS5zZHIuQzMifQ%3D%3D&_nc_ohc=Hg2TZqKMyDEQ7kNvwGED8mB&_nc_oc=Adpmk3J9YvTim_yzkm1tFIE4LbZkTMyU9yamzvq8neBIjsxiaMEGlOk0ukqY7nYcMfU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=ZEiHE5jjaSIIl52S6gxexg&_nc_ss=7a32e&oh=00_Af2pt5j22e0e3HMMzEwrvT7YTuHtsOLaBaaJofAdEwJXDQ&oe=69DFD47A"
       ],
-      "url": "https://www.threads.net/@vibe.code.kr/post/DWomamsCZf9",
+      "url": "https://www.threads.com/@vibe.code.kr/post/DWomamsCZf9",
       "created_at": "2026-04-03 00:30:40",
       "date": "2026-04-03",
       "crawled_at": "2026-04-11T17:20:31.944",
@@ -21274,7 +21274,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.71878-15/658155103_1474634330983814_1264134859714769946_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=103&ig_cache_key=Mzg2NjE3MzI4NDQ0NzEyMTM0NQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY0MHg1MzIuc2RyLkMzIn0%3D&_nc_ohc=1QA1xNBn4V4Q7kNvwExW52e&_nc_oc=AdrKARIWWimPbRRz-2jLO0rDayzIG6w1Zf3-LOxM1DPPRsc_55Q713H7eCGKBs_Uiv8&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=3SWze2JGp1UdP4I-N1HwwA&_nc_ss=7a32e&oh=00_Af3wxUsxa1ZV4DhTJ3qbzbEdGFGAtVGr_qHiltNG70Sn1g&oe=69DFF2FB"
       ],
-      "url": "https://www.threads.net/@gptaku_ai/post/DWnaCDqk8Bb",
+      "url": "https://www.threads.com/@gptaku_ai/post/DWnaCDqk8Bb",
       "created_at": "2026-04-02 13:23:13",
       "date": "2026-04-02",
       "crawled_at": "2026-04-11T17:20:31.944",
@@ -21300,7 +21300,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/658818194_17955330810114754_1164028077354138325_n.jpg?stp=cp6_dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=Mzg2NzA5MTQxOTcxNTA0NzM2Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwMjB4ODAxLnNkci5DMyJ9&_nc_ohc=1EwkXx5yUzYQ7kNvwGtuitu&_nc_oc=AdoHSDT3PhQfBA8hl5UG4bTlkeok4uOE_9B9ok63novVuszauQZrG4-qsky-LxMzm-w&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=7PajvIlPGmWd1CNudFD0NQ&_nc_ss=7a32e&oh=00_Af3HEF5e4y8tb7_CY2kNjDQjzWcno9iMFho8zGdlqqEBFA&oe=69DFF1D6"
       ],
-      "url": "https://www.threads.net/@jokerburg.builder/post/DWqqyhSE4_D",
+      "url": "https://www.threads.com/@jokerburg.builder/post/DWqqyhSE4_D",
       "created_at": "2026-04-03 19:47:22",
       "date": "2026-04-03",
       "crawled_at": "2026-04-11T17:20:31.944",
@@ -21326,7 +21326,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/658263683_17903057307404808_3858589837857267895_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ig_cache_key=Mzg2NjI4NDI0MDMyMTU4NjcyMA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjQ2OHgyODQuc2RyLkMzIn0%3D&_nc_ohc=IJ_HoaEKfaEQ7kNvwEc7SKb&_nc_oc=Adru8foA__Pz_MbExWJQA7FTNc9Dj-Ar406SQC8c-uIfuVq2_okA41N1cZILbtbD5bQ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=WuYjYu6Iv8vyImDAvxYC7g&_nc_ss=7a32e&oh=00_Af3nZZ2A52XE7xVImBweUrfnPhcaKht1cKlfBYVwb5JvDw&oe=69DFE10F"
       ],
-      "url": "https://www.threads.net/@masterkeyai/post/DWnzQg5DyYg",
+      "url": "https://www.threads.com/@masterkeyai/post/DWnzQg5DyYg",
       "created_at": "2026-04-02 17:03:39",
       "date": "2026-04-02",
       "crawled_at": "2026-04-11T17:20:31.945",
@@ -21349,7 +21349,7 @@
       "display_name": "바이브코딩 태일러",
       "full_text": "하네스 엔지니어링을 공부할 때\n논문보다 먼저 읽으면 좋은 4명이 있습니다.\n\n제 기준 추천은 이 4명입니다.\n\nMitchell Hashimoto\nSimon Willison\nChip Huyen\nAndrej Karpathy\n\n이 4명이 좋은 이유는\n다 같은 얘기를 하지 않기 때문입니다.\n\n각자 보는 축이 다릅니다.\n\n하시모토: 개발자 워크플로\n사이먼: 코딩 에이전트 운영\n칩 후옌: 프로덕션 AI 시스템\n카파시: 모델과 에이전트의 근본 직관\n\n제 스승 4명에 대해 더 상세히 알아보겠습니다.",
       "media": [],
-      "url": "https://www.threads.net/@shuntailor/post/DWnbVTimvkM",
+      "url": "https://www.threads.com/@shuntailor/post/DWnbVTimvkM",
       "created_at": "2026-04-02 13:34:35",
       "date": "2026-04-02",
       "crawled_at": "2026-04-11T17:20:31.947",
@@ -21374,7 +21374,7 @@
       "display_name": "1.ta.ai",
       "full_text": "agent browser/ light panda 가 토큰 소비 1/10 합니당",
       "media": [],
-      "url": "https://www.threads.net/@1.ta.ai/post/DWlrAmLCRLo",
+      "url": "https://www.threads.com/@1.ta.ai/post/DWlrAmLCRLo",
       "created_at": "2026-04-01 21:13:05",
       "date": "2026-04-01",
       "crawled_at": "2026-04-11T17:20:31.948",
@@ -21402,7 +21402,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/657815157_17881129164509951_8716887806637479382_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ig_cache_key=Mzg2NTY1Njk5NDk0MjYyNTg3MA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE1NDJ4MzQwLnNkci5DMyJ9&_nc_ohc=t1dcZXX7j1wQ7kNvwHcYjgy&_nc_oc=AdrfVxT40YmP5o7iHYmzuVrMKZhYrX9CKPQ-lmFSk5J2_Lh8Subnx-zc-OJg0YQqs68&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=byDfOz88Y1O0Ik1XCSq8qw&_nc_ss=7a32e&oh=00_Af1bVKI6nZr1niYZmDrauRM2A70T-acYcsUUQDgJOa8UTQ&oe=69DFE5A0"
       ],
-      "url": "https://www.threads.net/@coding.sabu/post/DWlko5HDyhO",
+      "url": "https://www.threads.com/@coding.sabu/post/DWlko5HDyhO",
       "created_at": "2026-04-01 20:17:25",
       "date": "2026-04-01",
       "crawled_at": "2026-04-11T17:20:31.948",
@@ -21428,7 +21428,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/660180568_17956970595103328_7085521725170265530_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ig_cache_key=Mzg2NjIxMDA1ODA1NzcwNTU5Mg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjExMjJ4NjQ4LnNkci5DMyJ9&_nc_ohc=5Ryqwu5eyxsQ7kNvwG0jjmF&_nc_oc=AdqKvGW5xcOKhGaXOPTV-rIs0H36HaYygmZiHarrPfzfJhuiIyPzoJo8cLMqnj723W4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=vYpnYHak4CrqutNIhes-Uw&_nc_ss=7a32e&oh=00_Af05VU3if0aup1CoWOUfl6bH1HG4Nthbg854yA3hJWeBGQ&oe=69DFD389"
       ],
-      "url": "https://www.threads.net/@hue_0525/post/DWniZHfEn0j",
+      "url": "https://www.threads.com/@hue_0525/post/DWniZHfEn0j",
       "created_at": "2026-04-02 14:36:16",
       "date": "2026-04-02",
       "crawled_at": "2026-04-11T17:20:31.948",
@@ -21452,7 +21452,7 @@
       "display_name": "biggerthanseoul.ai",
       "full_text": "스레드 알고리즘 md 파일이야. 잘 활용해.\n\n---\n\n바이브로 자동화하는 사람들을 위해 md 파일로 하나 만들었으니 잘 활용하면 좋을 것 같아.",
       "media": [],
-      "url": "https://www.threads.net/@biggerthanseoul.ai/post/DWjGRlXmtrU",
+      "url": "https://www.threads.com/@biggerthanseoul.ai/post/DWjGRlXmtrU",
       "created_at": "2026-03-31 21:13:37",
       "date": "2026-03-31",
       "crawled_at": "2026-04-11T17:20:35.052",
@@ -21476,7 +21476,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/656802932_17859269865622325_113412084550791614_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ig_cache_key=Mzg2NDU2ODY1ODU1MTU1MDgxMA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwODB4MTA4MC5zZHIuQzMifQ%3D%3D&_nc_ohc=a9u563KjDyQQ7kNvwFkAMIC&_nc_oc=AdoALFrEDv73exx-iDBDCmqdiKDvDQ1BvtARuaPMLRIfZ4B0YA_fD4wSLqWiOQw1Hf4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=QeAkLqRsrx9Cm5oBmc1few&_nc_ss=7a32e&oh=00_Af1SMx5AmIepCPscyJamhqE0ZbmvwCA_4IHg66BAv9C6FA&oe=69DFDF59"
       ],
-      "url": "https://www.threads.net/@aisolutiondev/post/DWhtQ7gkizW",
+      "url": "https://www.threads.com/@aisolutiondev/post/DWhtQ7gkizW",
       "created_at": "2026-03-31 08:15:53",
       "date": "2026-03-31",
       "crawled_at": "2026-04-11T17:20:35.052",
@@ -21502,7 +21502,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/657290748_17893034808441258_3214095103662539003_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=Mzg2NTE2ODkzNjA1NzQxNTk5NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE2MTR4MTA3Ny5zZHIuQzMifQ%3D%3D&_nc_ohc=gUAfQD8Nm0oQ7kNvwH1OubM&_nc_oc=AdqJdBuERgkl2pfhY2cAEhp1JPZhywfMWklPU71j47EGaC9-1hT4p5b9HxRi4jHFIOI&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=6xHNCIm_9n5iTaTLrRlmZg&_nc_ss=7a32e&oh=00_Af1v3OLGyXI8_Bd6cJiyGUm-i0R_svzYXw3W0XEerOOdNw&oe=69DFDD7F"
       ],
-      "url": "https://www.threads.net/@kkongdon_story/post/DWj1qs2k6k6",
+      "url": "https://www.threads.com/@kkongdon_story/post/DWj1qs2k6k6",
       "created_at": "2026-04-01 04:07:44",
       "date": "2026-04-01",
       "crawled_at": "2026-04-11T17:20:35.052",
@@ -21528,7 +21528,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/657727619_17936235141207210_4098912002627088900_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ig_cache_key=Mzg2NDcyOTc5ODI5OTk2MzA4Mg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjIxNjB4MTE5NC5zZHIuQzMifQ%3D%3D&_nc_ohc=FM59bU2jV50Q7kNvwFs3_0E&_nc_oc=Adqvvr4IFQwKoJp9ZL5HJi0pIdk9ftQwHJSIQEErdYGXiIyvMwup7WLoqJTDKe9qJRU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=c1gqj1fIYbHndQRMjdXpAQ&_nc_ss=7a32e&oh=00_Af1yc8V7qR1cJsUIVy-V8w1iRKWXIR9SurcrwainRkWfHg&oe=69DFF183"
       ],
-      "url": "https://www.threads.net/@unclejobs.ai/post/DWiRz4iiXcE",
+      "url": "https://www.threads.com/@unclejobs.ai/post/DWiRz4iiXcE",
       "created_at": "2026-03-31 13:35:11",
       "date": "2026-03-31",
       "crawled_at": "2026-04-11T17:20:35.052",
@@ -21554,7 +21554,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/658221736_17859299589622325_7284438108962298243_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ig_cache_key=Mzg2NDc0OTg0NDQ5MDEwODQwNg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwODB4MTA4MC5zZHIuQzMifQ%3D%3D&_nc_ohc=gjUqmBQ2DugQ7kNvwH6m0q1&_nc_oc=AdozyJo_uQjtEOH7bA8i-vuZZ4MObYhRgMQmAR1avIjUmHqQROQ-CoCZcpOhdyWQluI&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=ixJZxSJfPQF9APuf59MDFA&_nc_ss=7a32e&oh=00_Af1a-SgkVbfW1DtDFt4i0miVpdtShIGVQbKZLD02bzPNPQ&oe=69DFBFAF"
       ],
-      "url": "https://www.threads.net/@aisolutiondev/post/DWiWcJXFNQi",
+      "url": "https://www.threads.com/@aisolutiondev/post/DWiWcJXFNQi",
       "created_at": "2026-03-31 14:15:43",
       "date": "2026-03-31",
       "crawled_at": "2026-04-11T17:20:38.221",
@@ -21578,7 +21578,7 @@
       "display_name": "life.of.haru",
       "full_text": "#Paperclip AI 완벽 가이드: 설치부터 무인 AI 회사 구축까지 (AI 에이전트 오케스트레이션) https://harulogs.com/forum/blog/4407",
       "media": [],
-      "url": "https://www.threads.net/@life.of.haru/post/DWiKKANkx0j",
+      "url": "https://www.threads.com/@life.of.haru/post/DWiKKANkx0j",
       "created_at": "2026-03-31 12:28:17",
       "date": "2026-03-31",
       "crawled_at": "2026-04-11T17:20:38.223",
@@ -21600,7 +21600,7 @@
       "display_name": "tilnote",
       "full_text": "npm 쓰는 개발자, 오늘 바로 확인해야 함\n\naxios가 뚫렸어.\n주간 다운로드 1억 회.\n거의 모든 JS 프로젝트에 깔려 있는 그 axios.\n\n---\n\n2026년 3월 31일, axios 리드 메인테이너 계정이 탈취됐어.\n\n공격자가 계정 이메일을 ProtonMail로 바꾸고\nGitHub Actions CI/CD를 우회해서\nnpm CLI로 직접 악성 버전을 퍼블리시했어.\n\n두 릴리스 브랜치가 39분 안에 동시 감염.\n\n---\n\n감염 버전: axios@1.14.1 / axios@0.30.4\n안전 버전: axios@1.14.0 / axios@0.30.3\n\n악성 의존성 plain-crypto-js@4.2.1이 주입되고\npostinstall 스크립트로 크로스플랫폼 RAT(원격 접근 트로이목마)가 깔려.\n\nmacOS, Windows, Linux 전부 타깃이야.\n\n---\n\n더 무서운 건 자기 은폐야.\n\n설치 후 악성코드가 스스로를 삭제하고\npackage.json을 깨끗한 버전으로 바꿔놔.\n\nnode_modules 열어봐도 정상으로 보여.\n눈으로는 절대 못 잡아.\n\n---\n\n지금 당장 해야 할 것 딱 3가지.\n\n1. npm ls axios 로 프로젝트 전체 버전 확인\n2. 감염 버전 설치 이력 있으면 시크릿 전부 로테이션 (API 키, SSH 키, DB 접속 정보)\n3. package.json에서 ^ ~ 제거하고 버전 정확히 핀 고정\n\n공급망 공격은 내가 조심해도 당할 수 있어.\nlockfile 핀 고정과 --ignore-scripts 습관이 방어막이야.\n\n전체 IOC 정보랑 대응 가이드 정리해뒀어.\nhttps://tilnote.io/pages/69cb6e51380f446d3faa49cb\n\n클로드 코드나 코덱스에 링크 주고 문제 있는지 확인해봐.\n\n---\n\n아오 힘들다 진짜 ㅋㅋ local 에 github 까지 싹다 뒤졌다. 다행히 설치 이력 없음.\n최신 특정 버전(3일 전)이라서 설치가 안된거 같아.\n지금은 npm에서 저 버전이 내려갔지만 설치 이력이 있다면 조치해야함.\n스친이들 별 일 없길 바랄게!",
       "media": [],
-      "url": "https://www.threads.net/@tilnote/post/DWiixLQk2wz",
+      "url": "https://www.threads.com/@tilnote/post/DWiixLQk2wz",
       "created_at": "2026-03-31 16:03:21",
       "date": "2026-03-31",
       "crawled_at": "2026-04-11T17:20:38.224",
@@ -21624,7 +21624,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/657350862_17880296568535788_4538715557792151480_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ig_cache_key=Mzg2NDkzNjQxNDM0NTc3MDU1Mg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwODB4MTM1MC5zZHIuQzMifQ%3D%3D&_nc_ohc=cCEPgU8ltCUQ7kNvwGx33VW&_nc_oc=Adpbglea4bQ19nURuvaj9GpTFnq9XvFS9akTTp4EaT434kd4TURoGWNvAwPKxihuLbY&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=lvshju8gK9yVx13Vp7vg_Q&_nc_ss=7a32e&oh=00_Af3xntbKgv5N3z0mnNEnnM8jvoV8AeMv2TfdEyu-vijQnA&oe=69DFBDF5"
       ],
-      "url": "https://www.threads.net/@marketadapter/post/DWjA0BnE5Qm",
+      "url": "https://www.threads.com/@marketadapter/post/DWjA0BnE5Qm",
       "created_at": "2026-03-31 20:25:53",
       "date": "2026-03-31",
       "crawled_at": "2026-04-11T17:20:38.224",
@@ -21647,7 +21647,7 @@
       "display_name": "and__yc",
       "full_text": "깔끔하게 정리한 웹사이트 1 (정말 빠르다...)\n\nhttps://www.mintlify.com/VineeTagarwaL-code/claude-code/concepts/how-it-works",
       "media": [],
-      "url": "https://www.threads.net/@and__yc/post/DWjWXFRkSSQ",
+      "url": "https://www.threads.com/@and__yc/post/DWjWXFRkSSQ",
       "created_at": "2026-03-31 23:34:10",
       "date": "2026-03-31",
       "crawled_at": "2026-04-11T17:20:38.232",
@@ -21674,7 +21674,7 @@
       "display_name": "and__yc",
       "full_text": "https://github.com/instructkr/claude-code\n\n유출된 Claude Code 원본 TypeScript 소스는 삭제됐다\n-밤 9시 38분 기준으로 삭제 완료\n관리자(HongMinhee)가 법적/윤리적 이유를 근거로 내림\n\n(다만 이미 받을 사람은 다 봤다는거… 포크 수가 ㄷㄷ)\n\n---\n\n깔끔하게 정리한 웹사이트 1 (정말 빠르다...)\n\nhttps://www.mintlify.com/VineeTagarwaL-code/claude-code/concepts/how-it-works\n\n---\n\n'Hidden Features'라고 정리한 웹사이트 2 (정말 빠르다22)\n\nhttps://www.ccleaks.com/",
       "media": [],
-      "url": "https://www.threads.net/@and__yc/post/DWjLVl1EVBn",
+      "url": "https://www.threads.com/@and__yc/post/DWjLVl1EVBn",
       "created_at": "2026-03-31 21:57:51",
       "date": "2026-03-31",
       "crawled_at": "2026-04-11T17:20:38.232",
@@ -21698,7 +21698,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.71878-15/658856390_1960033604904573_3384677354291708689_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=110&ig_cache_key=Mzg2NDU5Nzk3OTI1MTkwMzU1OQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY0MHgxMDY2LnNkci5DMyJ9&_nc_ohc=H0sjVd9DNb0Q7kNvwEEJ40O&_nc_oc=AdrF9NzfMby1kWQvMLU4IOnsygf25vQD8OXGNJJHS6lqPfOLMBv7wLNLEJJRRzbA6o8&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=dEMLfckMEJ3VINoktVFnlw&_nc_ss=7a32e&oh=00_Af2nG5SRKIS2blFoOuTuR9qDpyPUpoacEg6c5ixCxYgLdQ&oe=69DFC914"
       ],
-      "url": "https://www.threads.net/@bizmentor_kr/post/DWhz2L5AIxH",
+      "url": "https://www.threads.com/@bizmentor_kr/post/DWhz2L5AIxH",
       "created_at": "2026-03-31 09:13:46",
       "date": "2026-03-31",
       "crawled_at": "2026-04-11T17:20:38.232",
@@ -21724,7 +21724,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/657394058_17878908243538450_6701138236981447390_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ig_cache_key=Mzg2NDgwNzE3ODAwODYzODMzNg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjU5NngzMzUuc2RyLkMzIn0%3D&_nc_ohc=1ZBVoj2XaT8Q7kNvwFTfeS8&_nc_oc=Adp9hfweN90mVg2u9g5PyKtzqsvPulKCxuRKuNmgVfyLHXtAwt2NSfg7gn-LLUiZDcg&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=GlB-l7qCECWO3EsSlhrEUA&_nc_ss=7a32e&oh=00_Af2-luBOvIGQliwe8Zb_L20wl2EswY3xqWQL-rFYJAR1RQ&oe=69DFF2EB"
       ],
-      "url": "https://www.threads.net/@crealwork/post/DWijabalbOA",
+      "url": "https://www.threads.com/@crealwork/post/DWijabalbOA",
       "created_at": "2026-03-31 16:08:59",
       "date": "2026-03-31",
       "crawled_at": "2026-04-11T17:20:38.232",
@@ -21747,7 +21747,7 @@
       "display_name": "김우영",
       "full_text": "늦기 전에 이거 해두십쇼.",
       "media": [],
-      "url": "https://www.threads.net/@wooing0306/post/DWiu94JEY_M",
+      "url": "https://www.threads.com/@wooing0306/post/DWiu94JEY_M",
       "created_at": "2026-03-31 17:49:57",
       "date": "2026-03-31",
       "crawled_at": "2026-04-11T17:20:38.232",
@@ -21775,7 +21775,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/658751618_17947970982130525_7605427027360458325_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ig_cache_key=Mzg2NTAxNjI3OTA2MTY3NTExNw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjExMjV4OTk1LnNkci5DMyJ9&_nc_ohc=QSovnwmdBzUQ7kNvwF1pkof&_nc_oc=AdpYRMP8bX18f7nOZMU0sXJxC87urLfsTwTjnw0BExlzoFKuzCJNAlKVrurWJO7Hh58&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=nigLAeQ4Ay36YSRiYwuyiQ&_nc_ss=7a32e&oh=00_Af1_piJEBinav6L3O7RaFBtP1KgJyWoORDnhU00fxQnfZQ&oe=69DFDA0D"
       ],
-      "url": "https://www.threads.net/@mdmstudio_design/post/DWjS9P8krxt",
+      "url": "https://www.threads.com/@mdmstudio_design/post/DWjS9P8krxt",
       "created_at": "2026-03-31 23:04:26",
       "date": "2026-03-31",
       "crawled_at": "2026-04-11T17:20:41.294",
@@ -21801,7 +21801,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/657944752_17936280438207210_415846373900646713_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ig_cache_key=Mzg2NDk2NDAwMTAyMTExNjI0NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEyMDB4NDgwLnNkci5DMyJ9&_nc_ohc=DBUioobftVMQ7kNvwFRCXzA&_nc_oc=Adrw6-bMm2Hed9k4fLikQSXyRHSJNFVz9vMi21zpo17KA_qYmGCRfenu1_53lH-zgTE&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=95haRYAj6pNiqn1E1PqkiA&_nc_ss=7a32e&oh=00_Af269xrvYNTJfR5Mpzv4swOPdHpPyHoLQ3IbbJhsUdn_0g&oe=69DFDEF1"
       ],
-      "url": "https://www.threads.net/@unclejobs.ai/post/DWjHEgOiT9U",
+      "url": "https://www.threads.com/@unclejobs.ai/post/DWjHEgOiT9U",
       "created_at": "2026-03-31 21:20:34",
       "date": "2026-03-31",
       "crawled_at": "2026-04-11T17:20:41.295",
@@ -21834,7 +21834,7 @@
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/657086695_17901483090406917_456413370234436038_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ig_cache_key=Mzg2NDgxMzE2MTI1ODczMjM1MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY2OXgzOTcuc2RyLkMzIn0%3D&_nc_ohc=8wVG__gCCeoQ7kNvwGZMUsZ&_nc_oc=AdrrzuBryzd9EwuJs67f3YV2ozcIGp6MXos9kdsw9KA5TvqdEG2HtsPRGvGvPnIbe2Y&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=kEwt0su9iu9CR1ieNysHpA&_nc_ss=7a32e&oh=00_Af0q18iWNByqWzas1seHWEuU6b_QjVN-DAz0T2jAmL2RAg&oe=69DFEA32",
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/658928594_17901483213406917_3485397501841517457_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ig_cache_key=Mzg2NDgxMzIyMzgwNDE0ODc2NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY1MXg0MzEuc2RyLkMzIn0%3D&_nc_ohc=_6NvT4aSoogQ7kNvwGu5l02&_nc_oc=Adp1QzfFwXLwlxyRM7W6Awp9ZOqg1fQ4lVNJsSXRoMW5oKm1ewVN1r2QJNm52eL6rVc&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=kEwt0su9iu9CR1ieNysHpA&_nc_ss=7a32e&oh=00_Af0SQE9sC21cg8ZRh36b3namQlXXZxjTWzjfhyl0MsgmcA&oe=69DFDC8E"
       ],
-      "url": "https://www.threads.net/@specal1849/post/DWiiExQkTgk",
+      "url": "https://www.threads.com/@specal1849/post/DWiiExQkTgk",
       "created_at": "2026-03-31 16:20:05",
       "date": "2026-03-31",
       "crawled_at": "2026-04-11T17:20:41.295",
@@ -21865,7 +21865,7 @@
       "display_name": "ok_min87",
       "full_text": "Claude Code 2.1.88 업데이트\n\n긴 세션에서 프롬프트 캐시가 점점 빠지면서 느려지셨나요? 캐시 적중률 문제가 수정되었고, CLAUDE_CODE_NO_FLICKER=1로 깜빡임 없는 터미널 렌더링도 선택할 수 있게 되었습니다.\n\n---\n\n새 기능\n- CLAUDE_CODE_NO_FLICKER=1 환경변수로 alt-screen 렌더링을 활성화할 수 있습니다. 가상 스크롤백과 함께 터미널 깜빡임이 근본적으로 해소됩니다.\n- PermissionDenied 훅이 추가되었습니다. auto mode에서 명령이 거부된 후 훅이 실행되며, {retry: true}를 반환하면 모델이 자동으로 재시도합니다.\n- 이름이 지정된 서브에이전트가 @ 멘션 자동완성에 표시됩니다. [@]my-agent처럼 입력하면 바로 에이전트를 호출할 수 있습니다.\n\n---\n\n개선\n- auto mode에서 거부된 명령어가 알림으로 표시되고, /permissions의 Recent 탭에서 확인할 수 있게 되었습니다. 어떤 명령이 왜 거부됐는지 추적이 쉬워집니다.\n- thinking 요약이 기본적으로 비활성화되었습니다. 필요하신 분은 showThinkingSummaries: true 설정으로 다시 켤 수 있습니다.\n- /env 설정이 PowerShell 도구에도 적용됩니다. 이전에는 Bash 도구에만 적용되어 환경변수가 누락되는 경우가 있었습니다.\n\n---\n\n수정\n- 긴 세션에서 도구 스키마 바이트 변경으로 프롬프트 캐시가 풀리던 문제가 수정되었습니다. 장시간 작업 시 토큰 비용이 크게 줄어듭니다.\n- StructuredOutput 스키마 캐시 버그로 여러 스키마를 사용하는 워크플로우에서 약 50% 실패율을 보이던 문제가 해결되었습니다.\n- 중첩된 CLAUDE[.]md 파일이 긴 세션에서 수십 번 재주입되어 컨텍스트를 낭비하던 문제가 수정되었습니다.\n- Windows에서 Edit/Write 도구가 CRLF를 두 번 적용하고, 마크다운의 줄바꿈(trailing spaces)을 잘라내던 문제가 수정되었습니다.",
       "media": [],
-      "url": "https://www.threads.net/@ok_min87/post/DWh_Z84E_RM",
+      "url": "https://www.threads.com/@ok_min87/post/DWh_Z84E_RM",
       "created_at": "2026-03-31 10:54:21",
       "date": "2026-03-31",
       "crawled_at": "2026-04-11T17:20:41.295",
@@ -21886,7 +21886,7 @@
       "display_name": "and__yc",
       "full_text": "Claude code 업데이트가 매일같이 쏟아져서 정리 중이었는데... \n친애하는(?) 클코의 창시자 Boris께서 또 정리를 올려주심 😆🫡\n\n\"Claude Code를 만든 Boris입니다. 제가 즐겨 쓰는 숨겨진 기능, 그리고 아직 많이 활용되지 않는 기능들을 공유하려고 합니다. 제가 가장 많이 쓰는 것 위주로 정리했습니다.\"",
       "media": [],
-      "url": "https://www.threads.net/@and__yc/post/DWfqy8ikQWW",
+      "url": "https://www.threads.com/@and__yc/post/DWfqy8ikQWW",
       "created_at": "2026-03-30 13:15:47",
       "date": "2026-03-30",
       "crawled_at": "2026-04-11T17:20:44.334",
@@ -21912,7 +21912,7 @@
       "display_name": "jakob__solopreneur",
       "full_text": "한국 법전을 통체로 옮겨놓은 mcp가 오픈소스화 되었네요.\n사회 기득층에서 독점되던 정보들이  이제는 ai가 아주 쉽게 사용할수 있도록 만드는 서비스 계속 나오겠죠\n\nhttps://github.com/SeoNaRu/lexguard-mcp",
       "media": [],
-      "url": "https://www.threads.net/@jakob__solopreneur/post/DWfXlonE_u2",
+      "url": "https://www.threads.com/@jakob__solopreneur/post/DWfXlonE_u2",
       "created_at": "2026-03-30 10:27:56",
       "date": "2026-03-30",
       "crawled_at": "2026-04-11T17:20:44.334",
@@ -21936,7 +21936,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/659117030_18048281249539495_6975789105651140878_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ig_cache_key=Mzg2NDMwMDQxNTkxNjE2OTI1Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwODB4MTM1MC5zZHIuQzMifQ%3D%3D&_nc_ohc=flrfYXFgkiUQ7kNvwHfa2KH&_nc_oc=AdpNS5WbZSWyJlYC1kpzTnD-GhyRqKf9D3BZ82kylAspKJ_BpOrEH17gE0Btb__J4AY&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=VsyjSGLqbvU2besmDvu9jA&_nc_ss=7a32e&oh=00_Af1eEAXVVlW4kcTsCC1gmHnRAoESHf-6VZQyqybr0VR8dA&oe=69DFD07F"
       ],
-      "url": "https://www.threads.net/@bizmentor_kr/post/DWgwSY2k8hl",
+      "url": "https://www.threads.com/@bizmentor_kr/post/DWgwSY2k8hl",
       "created_at": "2026-03-30 23:23:07",
       "date": "2026-03-30",
       "crawled_at": "2026-04-11T17:20:44.334",
@@ -21960,7 +21960,7 @@
       "display_name": "johnson05ok",
       "full_text": "노트북LM 슬라이드\n\n지금 당장 실무에서 써보세요\n2026년 3월 업데이트로 회사 PPT 템플릿을 거의 그대로 유지하면서 AI가 슬라이드를 만들어주는 기능이 크게 좋아졌습니다.\n직장인들이 가장 궁금해하는 실전 가이드로 정리해드릴게요.\n\n---\n\n가장 중요한 준비 단계 (소스 정제)\nStep 1. 좋은 슬라이드를 만들려면 소스를 먼저 깨끗하게 정리하세요\n\n노트북을 새로 만들고, 자료를 업로드한 뒤\n“신뢰도 낮은 소스 목록 만들어줘”라고 물어보세요 → 빨간색 표시된 소스는 과감히 삭제\n남은 소스 이름 앞에 “1. ”, “2. ”처럼 숫자를 붙여서 위쪽으로 정렬하세요\n한 번에 너무 많은 소스를 넣지 말고, 주제별로 10개 이하로 유지\n\n이 준비를 제대로 하면 AI가 헛소리하는 확률이 크게 줄어듭니다.\n\n---\n\n회사 템플릿 유지하면서 슬라이드 만드는 법\nStep 2. 회사 디자인 그대로 유지하는 실전 방법\n\n기존에 쓰던 회사 PPT 파일에서 대표 슬라이드 3~5장을 PDF나 이미지로 저장해서 소스로 업로드\n채팅창에 아래처럼 입력하세요:\n\n“우리 회사 슬라이드 스타일을 분석해서 스타일 가이드를 만들어줘. 색상, 폰트, 헤더 디자인, 레이아웃 규칙을 자세히 정리해.”\n\n만들어진 스타일 가이드를 복사해서 프롬프트에 붙여넣고\n“이 스타일 가이드를 적용해서 [주제]에 대한 슬라이드 10장을 만들어줘”라고 요청\n\n이렇게 하면 AI가 회사 템플릿에 맞는 슬라이드를 뽑아줍니다.\n생성 후에는 NotebookLM 안에서 바로 텍스트나 색상을 수정할 수도 있어요.\n\n---\n\n바로 써먹을 수 있는 실전 예제\nStep 3. 실무에서 바로 써볼 수 있는 9가지 예제 중 추천하는 것들\n\n사진 몇 장만 업로드 → 키오스크 사용 가이드 슬라이드 자동 제작\n음성 파일(MP3) 업로드 → 자동 전사 후 초보자 수준으로 쉽게 설명하는 슬라이드 만들기\n만화 캐릭터 이미지 넣기 → 재미있는 스타일의 교육/홍보 슬라이드 제작\n제품 설명서 + 이미지 → 고객 제안서 스타일 슬라이드 초안 만들기\n\n무료 사용자라면 Google 계정을 여러 개 만들어서 생성 한도를 늘리는 것도 실전 팁입니다.\n한 번에 많은 장을 만들고 싶으면 목차를 먼저 자세히 만들어서 단계적으로 생성하세요.\n\n---\n\n마무리와 추가 팁\n실전에서 더 잘 쓰는 마지막 팁\n\n슬라이드 목차를 논리적으로 먼저 만들면 전체 흐름이 훨씬 자연스러워집니다\nAI가 만든 슬라이드는 초안으로 생각하고, PPT로 내보내서 세밀하게 다듬는 게 가장 좋습니다\n여러 노트북을 동시에 쓰고 싶을 때는 1~2개 정도로 제한하는 게 정확도에 유리합니다",
       "media": [],
-      "url": "https://www.threads.net/@johnson05ok/post/DWh3v4cj99g",
+      "url": "https://www.threads.com/@johnson05ok/post/DWh3v4cj99g",
       "created_at": "2026-03-31 09:47:26",
       "date": "2026-03-31",
       "crawled_at": "2026-04-11T17:20:44.334",
@@ -21982,7 +21982,7 @@
       "display_name": "adite",
       "full_text": "AI 에이전트의 문서 검색 속도를 2-3초에서 10ms로 줄였다.\n온톨로지를 붙였다. 새로운 기술이 아니다. 오히려 아주 전통적인 거다.\n근데 이게 원래 사람이 직접 구축하려면 죽어나는 작업이었다. 관계 하나하나 정의하고 유지보수하고...\nAI한테 토큰을 녹여서 시켰더니 사람이 손으로 짜는 것보다 더 촘촘한 관계를 만들어낸다. 이게 되는 시대가 온 거다.\n\n---\n\n내가 만들어 사용하는 업무용 에이전트 이야기다.\n기본적인 인프라 구성 등 메타데이터 형식과 AI 에이전트로 처리한 작업들을 문서로 계속 정리하면서 \"예전에 AA작업 기억나? 그 문서 가져와봐\" 하고 개떡같이 물어봐도 찰떡같이 필요한 문서를 가져올 수 있는 구조로 만들었었다.\n\n처음에는 RAG로 시작했다. 마크다운 문서마다 YAML 프론트매터를 붙이고, ChromaDB에 임베딩을 넣고, \"DB 장애\" 검색하면 코사인 유사도로 관련 문서를 뱉어주는 구조.\n\n근데 이게 쓰다 보니 한계가 보인다.\n\n1. \"DB 관련 문서 전부 보여줘\" — 벡터 검색은 \"유사한 거\"를 찾지, \"관련된 전부\"를 보장하지 않는다\n2. \"이 서버가 죽으면 뭐가 영향받아?\" — 의존관계 같은 구조적 질문에 벡터 유사도는 무력하다\n3. 태그 정규화를 아무리 해도 동의어가 검색 때마다 빠지는 문서가 생긴다\n\n---\n\n그래서 BM25 키워드 검색을 붙이고, 백링크 그래프를 만들고, 태그 동의어 사전을 만들고, 관련성 게이트를 달고... 점점 검색 파이프라인이 복잡해졌다. 잘 돌아가긴 하는데, \"이 파이프라인은 왜 이 문서를 1등으로 올렸는가?\"를 설명하기가 어렵더라. \n물론 가져와야 할 문서를 정말 잘 가져오긴 했다.\n그런데 나만 쓸게 아니라 멀티유저를 생각했을 때 각자의 언어로 자유롭게 마구 문서를 불러올텐데 그때도 이게 잘 작동할까? 하는 의문이 들었다. \n내가 평소 쓰던 말투와 다른 방식으로 요청을 하면 문서를 제대로 못찾는 케이스가 일부 확인이 되었다. \n이건 고민을 안 할 수가 없는 문제...\n\n---\n\n그러다 친구가 찬양하는 온톨로지를 붙여봤다.\n진짜 어찌나 찬양을 하는지 그래 얘기나 들어보자는 심정으로 들어봤는데 이게 사람을 홀리네... \nRDF 트리플스토어. 기존 마크다운 프론트매터에서 자동으로 트리플을 생성해서, \"이 클러스터는 데이터베이스의 하위 타입이고, 이 장애 리포트는 이 리소스를 가리키고, 이 운영 스킬은 이 리소스에 적용된다\" 같은 정보를 그래프로 표현한다. \n아, GraphRAG와는 접근이 다르다. 그건 LLM이 관계를 추출하는 거고, 이건 관계를 직접 정의하는 거다.\n\n온톨로지를 구축하자 검색 흐름이 바뀌었다!!! \n(그리고 토큰도 녹았다!!!!)\n\n- 기존: 쿼리 → 벡터 유사도 + BM25 + 태그 필터 + 백링크 확장 → 스코어 정렬\n- 현재: 쿼리 → 용어 정규화 → 쿼리 분류(엔티티/토픽/장애/스킬/영향분석) → SPARQL로 구조적 탐색 → RAG로 보완\n\n---\n\n그렇다고 RAG를 버린 건 아니다. 온톨로지가 \"구조적으로 연결된 것\"을 찾으면, RAG가 \"구조에 없지만 의미적으로 관련된 것\"을 보완한다. \n이게 내가 고민끝에 내놓은 하이브리드방식이다. \n결과적으로 검색 파이프라인이 오히려 단순해졌다. 예전엔 BM25 가중치 조절하고, 백링크 hop 수 정하고, 관련성 게이트 임계값 깎고... 튜닝의 늪이었는데, \n지금은 온톨로지가 구조를 잡아주니까 RAG는 보완만 하면 된다. \n설명 가능성도 올라갔다. \"왜 이 문서가 나왔어?\"에 \"이 리소스의 장애 리포트니까\"라고 관계를 보여줄 수 있다.\n\n---\n\n어쨌든 300개 조금 안되는 문서에 대략 1,300 트리플정도 잡혀있다. 기존 RAG 검색이 2-3초 걸리던 쿼리가 온톨로지에서는 10ms도 안 걸린다. 관계를 미리 정의해놨으니 검색 시점에 유사도 계산을 안 해도 되는 거다.\n\n조금 더 정확히 이야기하면 초기 로딩을 포함한 검색속도는 온톨로지가 34배정도 (8,691ms vs 254ms) 캐싱 후에는 288배 (2,589ms vs 9ms) 더 빨라졌다. \n\nRAG는 문서를 검색해서 찾아오고, 온톨로지는 관계를 탐색해서 가져온다. 문서가 쌓일수록 이 차이가 벌어질 것 같아서 좀 기대된다. \n으흐흫흫흐ㅡ흫흐흐흐ㅡ흐흐하하하하핳하ㅏㅏ하하!!!!",
       "media": [],
-      "url": "https://www.threads.net/@adite/post/DWd03MYD6T2",
+      "url": "https://www.threads.com/@adite/post/DWd03MYD6T2",
       "created_at": "2026-03-29 20:05:16",
       "date": "2026-03-29",
       "crawled_at": "2026-04-11T17:20:47.465",
@@ -22004,7 +22004,7 @@
       "display_name": "devdesign.kr",
       "full_text": "Claude Code 스킬 쓰면서\n매번 같은 수정 요청 하고 있다면\n\n스킬은 원래 완벽하지 않음\n진짜 문제는 피드백이 다음 세션에\n반영 안 되는 것이 문제\n\n파일 3개만 넣으면\n스킬이 피드백을 기억하고 알아서 진화함\n\n---\n\n구조는 이거임\n\nCLAUDE.md에 \"Learnings Loop\" 규칙을 추가함\n-> 사용자가 수정하면 그게 피드백인걸 인식\n-> learnings.md에 스킬별로 자동 기록\n-> 같은 패턴이 반복되면 스킬 자체를 업데이트\n\n핵심은 피드백 축적 -> 스킬 진화\n레슨런이 쌓여서 스킬 자체가 바뀌는 구조임\n\n---\n\n그리고 커맨드 2개를 만듦\n\n/wrap-up: 세션 끝날 때 치면\n대화에서 피드백을 자동 수집하고\nlearnings.md에 정리해줌\n같은 실수가 반복되면 스킬 지시문에 승격시킴\n\n/project-init: 새 프로젝트에서 치면\n파일 및 디렉토리 구조가 한 번에 생성됨\n\n---\n\n스킬 쓸수록 나한테 맞게 진화하는 구조임\n남의 스킬 가져다 쓰는 것과 차원이 다름\n\nCLAUDE.md에 넣는 규칙 전문,\n커맨드 파일 내용, 프로젝트 구조 설명까지\n복붙 가능하게 오픈카톡방 공지에 정리해둠\n\n프로필 링크에서 확인",
       "media": [],
-      "url": "https://www.threads.net/@devdesign.kr/post/DWgFthJkuQ1",
+      "url": "https://www.threads.com/@devdesign.kr/post/DWgFthJkuQ1",
       "created_at": "2026-03-30 17:10:58",
       "date": "2026-03-30",
       "crawled_at": "2026-04-11T17:20:47.465",
@@ -22025,7 +22025,7 @@
       "display_name": "and__yc",
       "full_text": "4/ Hooks — 에이전트의 동작 전후에 원하는 로직을 자동으로 끼워 넣는 기능입니다\n\n예를 들면:\nClaude 시작할 때마다 필요한 컨텍스트를 자동 로드 (SessionStart)\n모델이 실행하는 모든 bash 명령어를 자동 로깅 (PreToolUse)\n권한 요청이 뜨면 WhatsApp으로 알림을 보내서 승인/거부 (PermissionRequest)\nClaude가 작업을 멈출 때마다 자동으로 \"계속해\"라고 찔러주기 (Stop)\nhttps://code.claude.com/docs/en/hooks",
       "media": [],
-      "url": "https://www.threads.net/@and__yc/post/DWfq1XyEZqy",
+      "url": "https://www.threads.com/@and__yc/post/DWfq1XyEZqy",
       "created_at": "2026-03-30 13:16:07",
       "date": "2026-03-30",
       "crawled_at": "2026-04-11T17:20:47.465",
@@ -22052,7 +22052,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/658428668_17950571454120852_2139144383948704288_n.jpg?stp=cp6_dst-jpg_e35_tt6&_nc_cat=105&ig_cache_key=Mzg2Mzk5NTcyMDY4NTE3NzYwOA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEyMDJ4NDkyLnNkci5DMyJ9&_nc_ohc=W9P5klSbkXwQ7kNvwHzS5Fu&_nc_oc=AdptLTSuJt7zOLqYRUdei5ZFGLvacf-Gq2OWPvY_HUK6h_MuOAW2XA2xdZR_7k_G5Wg&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=vMA0xwacY5b9QZVXLD0rYg&_nc_ss=7a32e&oh=00_Af0_KgpoPuSCSE-1tBWBoAwUhquM9EU_3bVSNOyZ0i9cAQ&oe=69DFCB84"
       ],
-      "url": "https://www.threads.net/@and__yc/post/DWfq6K5EcsI",
+      "url": "https://www.threads.com/@and__yc/post/DWfq6K5EcsI",
       "created_at": "2026-03-30 13:16:46",
       "date": "2026-03-30",
       "crawled_at": "2026-04-11T17:20:47.465",
@@ -22083,7 +22083,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/657633708_17960149965105006_520715939037397842_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ig_cache_key=Mzg2MzM0NTcxNDgzOTUxNDExNA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjM2MXg3NDUuc2RyLkMzIn0%3D&_nc_ohc=8CsXZCxAFwQQ7kNvwFrrimr&_nc_oc=AdptwCYXn-V0Suey_GTuqUmaYI9WF4TZDVcOqujaeLHGG3P4KNTAUoYUonoKsDvIJUg&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=Z2QFnKq5mXlUh6j45Iq4Uw&_nc_ss=7a32e&oh=00_Af0fTlKkcWZcy8zkdWcax86vKkqFQZX8Bf1BP0T8Ot8DYg&oe=69DFE069"
       ],
-      "url": "https://www.threads.net/@zhugehyuk/post/DWdXHVxiWwC",
+      "url": "https://www.threads.com/@zhugehyuk/post/DWdXHVxiWwC",
       "created_at": "2026-03-29 15:45:19",
       "date": "2026-03-29",
       "crawled_at": "2026-04-11T17:20:47.480",
@@ -22109,7 +22109,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/656290009_17889980916448489_1375159167150788715_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=Mzg2MzM0NjM4MjI1NDY1MTg4Mg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEyMTJ4NzE4LnNkci5DMyJ9&_nc_ohc=j6uZBuNlqG8Q7kNvwGdvyUL&_nc_oc=AdrgzcimXIo5O6cTR_DiISHybA-498WQrlqejk0mg5mkZwmnOxXXihiFHBP5gTqpIq0&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=0iaQzCWi9W7qpcFpbIvfWA&_nc_ss=7a32e&oh=00_Af13fEOuIwlAWpYSp3FLaxSLsOH_Ns3II9jaEp0h_12ZtA&oe=69DFC3B8"
       ],
-      "url": "https://www.threads.net/@2_taewoo/post/DWdXRDWlDnq",
+      "url": "https://www.threads.com/@2_taewoo/post/DWdXRDWlDnq",
       "created_at": "2026-03-29 15:46:39",
       "date": "2026-03-29",
       "crawled_at": "2026-04-11T17:20:47.483",
@@ -22135,7 +22135,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.71878-15/656054387_2363645520890469_2319504594147885334_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=104&ig_cache_key=Mzg2MzgzNTQxMjY0MDk0NTExOA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY0MHg2MTQuc2RyLkMzIn0%3D&_nc_ohc=s26RN7_vx0IQ7kNvwEFjn1s&_nc_oc=AdrVcS61xF-NZouJB88Th5CkIr4BevBQcXX2hJ-ZxnOQBxw2ElRCD-nGzBlJ1wggfNw&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=mHYFIpIzk0Ww2KFufXVfvw&_nc_ss=7a32e&oh=00_Af0gR4OAn-PZzIRErtF68_S7cbXzDVSmog3TsTek_W93fg&oe=69DFDC2E"
       ],
-      "url": "https://www.threads.net/@dddesign.io/post/DWfGdYZCdPe",
+      "url": "https://www.threads.com/@dddesign.io/post/DWfGdYZCdPe",
       "created_at": "2026-03-30 07:58:40",
       "date": "2026-03-30",
       "crawled_at": "2026-04-11T17:20:47.483",
@@ -22161,7 +22161,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.71878-15/657520423_2335034877007002_4802622649831040377_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=107&ig_cache_key=Mzg2MzE2ODM2NjU0NzIxNjM4OA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY0MHg3MjYuc2RyLkMzIn0%3D&_nc_ohc=3Wgx3MqnyloQ7kNvwE0zqD4&_nc_oc=AdprOC4yXIpJZmPaAOdmnxMWhgQvgWNrbGgdfzPTTs8u4EtliucmwMaX_bkNKyAghgA&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=b3oAhh5XmuUsE9NRaPXUJA&_nc_ss=7a32e&oh=00_Af0W8GRVMwmHW6xsC02mjVTUe0xHcMiiYGMeRQoW7pkV9g&oe=69DFE047"
       ],
-      "url": "https://www.threads.net/@ai_margin_/post/DWcuylTkqgE",
+      "url": "https://www.threads.com/@ai_margin_/post/DWcuylTkqgE",
       "created_at": "2026-03-29 09:53:41",
       "date": "2026-03-29",
       "crawled_at": "2026-04-11T17:20:47.483",
@@ -22187,7 +22187,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/658173033_17929995246216828_7581227399632903949_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ig_cache_key=Mzg2MzM5NzA0NTc3MjcyMzU0NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE0NDB4MTgwMC5zZHIuQzMifQ%3D%3D&_nc_ohc=efF6EiD02OAQ7kNvwGoAN5v&_nc_oc=AdrvWv14MQ5OSrtEWN_VzFLUL_8iV5-cvt6M7lhqjMz6wkTJFCYfhhX_SJThxpq1xnM&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=N1h7P-nY1KjHYwSheLY_Dw&_nc_ss=7a32e&oh=00_Af09Txw3S5k5qwi1T9EU7ni1dYQyjo5BQBMFz8aHI8YzMg&oe=69DFC6A2"
       ],
-      "url": "https://www.threads.net/@hyunsoo.it/post/DWdi0gPj2wm",
+      "url": "https://www.threads.com/@hyunsoo.it/post/DWdi0gPj2wm",
       "created_at": "2026-03-29 17:27:36",
       "date": "2026-03-29",
       "crawled_at": "2026-04-11T17:20:50.659",
@@ -22213,7 +22213,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.71878-15/660760279_969485225765813_3057944423809664599_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=107&ig_cache_key=Mzg2MzI5OTc2NDM1MTIwMzE3OA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY0MHg2NjIuc2RyLkMzIn0%3D&_nc_ohc=Pz6k6OHa4HEQ7kNvwFrQpF4&_nc_oc=AdpHm1_iAg7G90aUnJjZiK9WGfzJonwsuN4AJdMoQwEp6DW9wRMFyS-6N-GP63Db5bE&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=U5Jb1l96GymxNthiR-rwfA&_nc_ss=7a32e&oh=00_Af2oeAslDnCiBQK8QNjD9sBdWUt3flQxvnhyywGfgBfjSQ&oe=69DFC8A4"
       ],
-      "url": "https://www.threads.net/@moongi_adventures/post/DWdMqrDAPdq",
+      "url": "https://www.threads.com/@moongi_adventures/post/DWdMqrDAPdq",
       "created_at": "2026-03-29 14:14:09",
       "date": "2026-03-29",
       "crawled_at": "2026-04-11T17:20:50.659",
@@ -22239,7 +22239,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.71878-15/657255783_1634085894398290_713073948095028683_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=108&ig_cache_key=Mzg2MTY2NTQzMjIwNTM2MjQ2OQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY0MHg1NTYuc2RyLkMzIn0%3D&_nc_ohc=yduBookXfwkQ7kNvwHmLG34&_nc_oc=AdoPcKxLwuxIdBcXtZAMYZgZ2VRM1QDVSsxfa9_n6V72SJnVJImOEenUgtCK8OC3HBc&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=kH7Y3MvTGkeiyh-yaAHV6A&_nc_ss=7a32e&oh=00_Af2PZwhHisq6miZPR85Is8bIVgoqJApU9nf8SxLPM-vq4g&oe=69DFCD1E"
       ],
-      "url": "https://www.threads.net/@moongi_adventures/post/DWXZEJ1gXyA",
+      "url": "https://www.threads.com/@moongi_adventures/post/DWXZEJ1gXyA",
       "created_at": "2026-03-27 08:06:55",
       "date": "2026-03-27",
       "crawled_at": "2026-04-11T17:20:50.659",
@@ -22263,7 +22263,7 @@
       "display_name": "moongi_adventures",
       "full_text": "나노바나나 가이드 여기에 올려놔요-\n\n작년에 올렸던 스팩으로 도면 만드는 프롬프트\n여전히 찾아오시는 분들 많은데, 예전것까지\n보내드리는게 버거워서 여기에 올려놓을게요.\n\n가이드 안에도 들어있으니 참고하시면 될듯요!\n\n---\n\nhttps://sunny-larkspur-2d5.notion.site/2e078e4bf5c980209e44cfc8912c69dc?source=copy_link",
       "media": [],
-      "url": "https://www.threads.net/@moongi_adventures/post/DWU6l1ij_ih",
+      "url": "https://www.threads.com/@moongi_adventures/post/DWU6l1ij_ih",
       "created_at": "2026-03-26 09:02:09",
       "date": "2026-03-26",
       "crawled_at": "2026-04-11T17:20:50.659",
@@ -22288,7 +22288,7 @@
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/656426667_17891546079448307_1999727819279430875_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ig_cache_key=Mzg2MjAwMzc1MDUxMzQxNDg0Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjExOTZ4MTA1Mi5zZHIuQzMifQ%3D%3D&_nc_ohc=kyr_f0HdPQEQ7kNvwFNmOXs&_nc_oc=AdqLn4FdYoIZTBxTd3EWijlbdXN15yxXV7Y-mRiRF7DVT2vSDTYUjdW9dYmXNzjd4Hs&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=GrtWqCfP0i8NY4rfYs-wDw&_nc_ss=7a32e&oh=00_Af3E43vap9VOnjY5th9Ve5NNOvK_G48ApibRKCeUyW3YPg&oe=69DFD1CD",
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/657706813_17891546244448307_5362546533976593401_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ig_cache_key=Mzg2MjAwMzc5NTUzNTA4OTM3NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE4MDR4MTQ0MC5zZHIuQzMifQ%3D%3D&_nc_ohc=Zhxws7gOVzYQ7kNvwEpW1KT&_nc_oc=AdoxRzsim-UBLOhjm6p8_NMKHCBDnBmrQqkiLwHpOvtbdCn4dThZq44WTfI3L43UHJ4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=GrtWqCfP0i8NY4rfYs-wDw&_nc_ss=7a32e&oh=00_Af0MyHDynuic8rxXb7CzBBOiLdcNsuOiVp6TzpoB3GnHqQ&oe=69DFE377"
       ],
-      "url": "https://www.threads.net/@jaeminyxjames/post/DWYl_MGlBK-",
+      "url": "https://www.threads.com/@jaeminyxjames/post/DWYl_MGlBK-",
       "created_at": "2026-03-27 19:19:05",
       "date": "2026-03-27",
       "crawled_at": "2026-04-11T17:20:50.667",
@@ -22313,7 +22313,7 @@
       "display_name": "nick.frontier.curator",
       "full_text": "Claude Code 쓰는 분들,\n`/last30days` 이 명령어 알고 계세요? 🧵\n\n최근에 알게 된 건데,\nClaude Code 플러그인 중에\n토픽 하나 던지면\nReddit·YouTube·HN 등 10개 이상 플랫폼의\n최근 30일치 반응을 자동으로 긁어서\n정리해주는 게 있더라고요.\n\n`/last30days cursor` 이렇게 한 줄 치면,\n각 플랫폼에서 뭐라고 하는지\n출처 포함 마크다운으로 정리해주는 구조예요.\n\n---\n\n스캔하는 플랫폼이 꽤 많아요.\n\nReddit, X, Bluesky, YouTube,\nTikTok, Instagram, Hacker News,\n웹 검색, 그리고 Polymarket(예측 시장)까지.\n\n예측 시장 데이터를 같이 본다는 게\n좀 독특하더라고요.\n단순 SNS 반응이 아니라\n시장 신호까지 교차 확인하는 거거든요.\n\n설치는 Claude Code에서 이 두 줄이면 돼요:\n/plugin marketplace add mvanhorn/last30days-skill\n/plugin install last30days@last30days-skill\n\n---\n\n솔직히 말하면 전제 조건이 있어요.\n\nClaude Code 유료 플랜(Pro 이상)이 필요하고,\n풀 기능은 ScrapeCreators API 키,\nX 쿠키 토큰도 별도 설정해야 해요.\n\n설치 자체는 `/plugin` 두 줄이면 끝인데,\n세팅이 좀 있는 편이에요.\n리서치 소요 시간도 토픽에 따라 2~8분 정도.\n\n공짜로 뚝딱은 아니라는 거예요.\n\n---\n\n탭 10개 열고\n플랫폼 돌아다니면서 정리하던 걸\n명령어 한 줄로 넘기는 구조.\n\n이런 리서치 자동화 도구가\n점점 나오고 있다는 게 흥미롭더라고요.\n\n써본다면 어떤 토픽부터 물어보고 싶으세요?\n저는 아직 고민 중이에요 🤔\n\nhttps://github.com/mvanhorn/last30days-skill",
       "media": [],
-      "url": "https://www.threads.net/@nick.frontier.curator/post/DWbFLLGlgSX",
+      "url": "https://www.threads.com/@nick.frontier.curator/post/DWbFLLGlgSX",
       "created_at": "2026-03-28 18:30:08",
       "date": "2026-03-28",
       "crawled_at": "2026-04-11T17:20:50.667",
@@ -22337,7 +22337,7 @@
       "media": [
         "http://static.cdninstagram.com/rsrc.php/null.jpg"
       ],
-      "url": "https://www.threads.net/@creative.mir/post/DWazk9Qk4FW",
+      "url": "https://www.threads.com/@creative.mir/post/DWazk9Qk4FW",
       "created_at": "2026-03-28 15:56:19",
       "date": "2026-03-28",
       "crawled_at": "2026-04-11T17:20:50.667",
@@ -22361,7 +22361,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/658378090_17901506073408219_7795876987432298406_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ig_cache_key=Mzg2MzEwMTU3MzIzNzI1MzE3Nw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY4NXg4NDEuc2RyLkMzIn0%3D&_nc_ohc=pmKTUkXKBW0Q7kNvwGQY1L8&_nc_oc=Adpc68ibcsOk_qTv3i0vM9BBYjW3tBBuv8ECyxVsb222qPZgRM2bGSdYGzRoZsu0Fb0&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=L-PaoQ6qNvjpDWnodDoUwg&_nc_ss=7a32e&oh=00_Af0YWGWkN1V2vADfcANhi8drmA1vDPg9eGJ6ycjbeRLwNg&oe=69DFCB97"
       ],
-      "url": "https://www.threads.net/@human__bro/post/DWcf0D0ksJf",
+      "url": "https://www.threads.com/@human__bro/post/DWcf0D0ksJf",
       "created_at": "2026-03-29 07:42:05",
       "date": "2026-03-29",
       "crawled_at": "2026-04-11T17:20:50.667",
@@ -22388,7 +22388,7 @@
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/657357952_17921246967274407_4630738118353737654_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=Mzg2MTkyMTk4MTY0MjUxNzk3MA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjc3MXgzMjUuc2RyLkMzIn0%3D&_nc_ohc=SJxmDIXMmFMQ7kNvwEEaSKJ&_nc_oc=AdqIcKjA1gFtaUrqcFJWcNBWUTnhes2fiZmhk6Mz8STL7WlW2gEommfwdbIwml87X5s&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=LAysz8K-ZJHyNHHwwj03Pw&_nc_ss=7a32e&oh=00_Af1L0zJCAwO3as3Ud5J94HPXqQUpOgtJtg5gV806WyPcPg&oe=69DFE664",
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/657630421_17921245362274407_6946337715713805348_n.jpg?stp=cp6_dst-jpg_e35_tt6&_nc_cat=109&ig_cache_key=Mzg2MTkyMjE4MDYzNzA3NzIxMw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE0MjR4NDQ4LnNkci5DMyJ9&_nc_ohc=JYsopn0lP14Q7kNvwETaryw&_nc_oc=Adr4s8W6z2pxILrRSSZc_BiIggFyDGheVopeYOeebpDzCgGSaArHU08y9XoTLN5_d5E&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=LAysz8K-ZJHyNHHwwj03Pw&_nc_ss=7a32e&oh=00_Af08Yko2aDSREHbVThnmJhBS_1ZTTCEUs1HsoVwWJd6H7Q&oe=69DFBFC9"
       ],
-      "url": "https://www.threads.net/@ai__jeong/post/DWYTZS6Ey3S",
+      "url": "https://www.threads.com/@ai__jeong/post/DWYTZS6Ey3S",
       "created_at": "2026-03-27 16:36:37",
       "date": "2026-03-27",
       "crawled_at": "2026-04-11T17:20:53.704",
@@ -22413,7 +22413,7 @@
       "display_name": "joonlee0228",
       "full_text": "월 $20 Claude 구독 취소각인가... 🤔\n\nHN 지금 난리남: $500짜리 GPU 하나로 로컬 모델 돌렸더니 Claude Sonnet 코딩 벤치마크를 이겼다는 실험\n\n그게 왜 중요하냐면:\n\n• API 과금 없음 → 전기세만 내면 됨\n• 코드가 클라우드로 안 넘어감 → 프라이버시 자체 해결\n• 인터넷 끊겨도 작동 → 비행기 딥워크 🛫\n• 1~2년 쓰면 월정액보다 싸짐\n\n근데 솔직히 말하면\n벤치마크 이겼다고 실무에서 이긴 건 아님\n컨텍스트 window, 멀티모달, 속도… 클라우드가 아직 잘하는 게 분명히 있어\n\n그래도 이 뉴스가 의미하는 건 하나야:\n'AI 종속에서 벗어날 선택지가 드디어 생겼다' 💻\n\n로컬 모델로 넘어간 분 있어요? 어떤 워크플로우 쓰는지 궁금함\n\n---\n\nSource: https://github.com/itigges22",
       "media": [],
-      "url": "https://www.threads.net/@joonlee0228/post/DWY_LyZFOsy",
+      "url": "https://www.threads.com/@joonlee0228/post/DWY_LyZFOsy",
       "created_at": "2026-03-27 22:59:15",
       "date": "2026-03-27",
       "crawled_at": "2026-04-11T17:20:53.704",
@@ -22434,7 +22434,7 @@
       "display_name": "에이정",
       "full_text": "9/\n\n맥락 중심 학습용\n커스텀 에이전트 제작중임.\n\n완료되는대로 공유할 예정\n팔로우 부탁함😋",
       "media": [],
-      "url": "https://www.threads.net/@ai__jeong/post/DWYTeenE7wl",
+      "url": "https://www.threads.com/@ai__jeong/post/DWYTeenE7wl",
       "created_at": "2026-03-27 16:37:20",
       "date": "2026-03-27",
       "crawled_at": "2026-04-11T17:20:53.704",
@@ -22463,7 +22463,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/657630421_17921245362274407_6946337715713805348_n.jpg?stp=cp6_dst-jpg_e35_tt6&_nc_cat=109&ig_cache_key=Mzg2MTkyMjE4MDYzNzA3NzIxMw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE0MjR4NDQ4LnNkci5DMyJ9&_nc_ohc=JYsopn0lP14Q7kNvwETaryw&_nc_oc=Adr4s8W6z2pxILrRSSZc_BiIggFyDGheVopeYOeebpDzCgGSaArHU08y9XoTLN5_d5E&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=k-xQvKx_KLXchXcsJTfiYg&_nc_ss=7a32e&oh=00_Af2jF1x4bSj7GtZoUL8eaIWUBrGJ9ZQk15tWXypKzl1eqw&oe=69DFBFC9"
       ],
-      "url": "https://www.threads.net/@ai__jeong/post/DWYTa5ck_h9",
+      "url": "https://www.threads.com/@ai__jeong/post/DWYTa5ck_h9",
       "created_at": "2026-03-27 16:36:50",
       "date": "2026-03-27",
       "crawled_at": "2026-04-11T17:20:53.704",
@@ -22489,7 +22489,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/658435699_17920970238274407_1014861808527324436_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ig_cache_key=Mzg2MDY1NTY5NzUyNTE2Nzk2Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEyODB4NzE4LnNkci5DMyJ9&_nc_ohc=e03HkvfTelEQ7kNvwG2CS0K&_nc_oc=AdohFFRJzR_BT62xClMV1uvytjrpoHGz2kUiEtDELOYa2fYqssd44tr6gvHJMQ81UYc&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=LTY_qTQi9K1A0jtJX_HfWA&_nc_ss=7a32e&oh=00_Af1hewKhTa3Fhv4hr33pvbQaHfm2AMzorbGBntodkzO0rg&oe=69DFE97D"
       ],
-      "url": "https://www.threads.net/@ai__jeong/post/DWTzeb7E1db",
+      "url": "https://www.threads.com/@ai__jeong/post/DWTzeb7E1db",
       "created_at": "2026-03-25 22:40:44",
       "date": "2026-03-25",
       "crawled_at": "2026-04-11T17:20:53.704",
@@ -22515,7 +22515,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/656703823_17858132799681018_836972026781443679_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ig_cache_key=Mzg2MTc3Njc4Nzk4MjM3MjQ2MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwMjR4NTcxLnNkci5DMyJ9&_nc_ohc=B4uHmR_OknIQ7kNvwEszLmM&_nc_oc=Adohc3xNF8-gPZTC6egYg6c5pn1XuPo_uaksuuUDeNg6dvc9_R-3kdWuj7Yv6CO08gk&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=riFrnIv-oi5JANBO2WX8EA&_nc_ss=7a32e&oh=00_Af292z2TO7DbVusJ4JPyJSgHrZuJaSsgr1UL1TFyqMyOug&oe=69DFD317"
       ],
-      "url": "https://www.threads.net/@managerkim.ai/post/DWXyYcxic5t",
+      "url": "https://www.threads.com/@managerkim.ai/post/DWXyYcxic5t",
       "created_at": "2026-03-27 11:48:19",
       "date": "2026-03-27",
       "crawled_at": "2026-04-11T17:20:53.707",
@@ -22539,7 +22539,7 @@
       "display_name": "mangopeach0",
       "full_text": "클로드코드를 활용해서 나만의 Tax Agent 만들기 팁:\n\n1. 국가법령정보 OpenAPI를 신청한다(가입 후 신청하면 됨)\n2. 승인이 나면 클로드코드에게 RAG 활용하기 위해 DB를 구축한다고 말한 후, API를 활용하여 법, 령, 칙, 예규판례를 다 긁어온다. 서로 참조하는 구조로 되어있어 알아서 그래프DB를 잘 형성해 줌.\n3. /skill-creator를 활용해서 아래와 같은 스킬을 작성한다.\na. 프롬프트 분석 Skill\nb. DB 검색 Skill\nc. 검증 Skill\nd. 답변 Skill\n4. 원하는 수준의 결과물이 나올때까지 Skill 문서를 개선한다.\n5. 위 전체 워크플로우를 하나의 스킬으로 명명한다(예: /tax-consult)\n\n위와 같은 스킬을 활용하면, 법령칙/예판 검색 시 Hallucination이 거의 없습니다\n\n---\n\n(여기서부터는 개인 활용 용도에 따라 응용이 무궁무진하다.)\n6. 블로그 글 쓴 후 /tax-consult 활용해서 글의 세무 내용 검증\n7. 쓰레드에 회계사/세무사 님들 인사이트 복사해서 /tax-consult로 검색 후 디벨롭시키기\n8. 일반적인 예판 검색\n\n*주의* 국가법령정보센터는 개정법령이 실시간으로 반영되지 않아서, 2026 개정세법은 별도로 검증하는 Logic을 추가하셔야 합니다",
       "media": [],
-      "url": "https://www.threads.net/@mangopeach0/post/DWZHwN-k9YY",
+      "url": "https://www.threads.com/@mangopeach0/post/DWZHwN-k9YY",
       "created_at": "2026-03-28 00:14:08",
       "date": "2026-03-28",
       "crawled_at": "2026-04-11T17:20:53.707",
@@ -22564,7 +22564,7 @@
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/656694911_17954357226114903_4993323986431146593_n.jpg?stp=cp6_dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=Mzg2MjE4MTA1OTIxOTI1Nzg5Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE2MjR4MzU0LnNkci5DMyJ9&_nc_ohc=R5xnrbuqkY8Q7kNvwEpSEv_&_nc_oc=AdoCefg2q1fvOkqyisozWIxwFHPwdkJisv5oZ5sB6cRtovOv_mF3sIl6SYhAxNdY28g&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=XJNW2lJEhb8GfGWsdKtKqQ&_nc_ss=7a32e&oh=00_Af32cOyM7ilyoMrjfy7kdBuoLxytYggX-IeAu8OZygFQfA&oe=69DFEAF8",
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/657742398_17954358261114903_4848864913785147278_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=Mzg2MjE4MTI2NDg2NjAwNzgxNw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE3MDJ4MTMyNi5zZHIuQzMifQ%3D%3D&_nc_ohc=xD4lwy6QOGMQ7kNvwGOhcBX&_nc_oc=AdqSjzm5VoVwCd7VFVNBoh11jAnOLIhm3372fNnsv0YNAkWiKxqUzcaS51ZnyKhVcr4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=XJNW2lJEhb8GfGWsdKtKqQ&_nc_ss=7a32e&oh=00_Af0OHhFJpyfI2EkzIXfN9RqXVIz-AYmDUyFlBjK2K1loMg&oe=69DFDE00"
       ],
-      "url": "https://www.threads.net/@kyungju_benj/post/DWZOTXtAXol",
+      "url": "https://www.threads.com/@kyungju_benj/post/DWZOTXtAXol",
       "created_at": "2026-03-28 01:11:21",
       "date": "2026-03-28",
       "crawled_at": "2026-04-11T17:20:53.707",
@@ -22591,7 +22591,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.71878-15/658060731_1914777445813227_8558463741424906261_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=103&ig_cache_key=Mzg2MTg5NjM2ODQ0NTI3MjU1Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY0MHgzNjAuc2RyLkMzIn0%3D&_nc_ohc=86tUmsturKQQ7kNvwGRP7r1&_nc_oc=AdrPj5DvqbdlAI8dixohzF4-7Rs69TcC4bETDF8bKsRWfADWVKWkBhHxY8pMzMy_ScU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=nC27zoMLz6RjGYKdPZGocQ&_nc_ss=7a32e&oh=00_Af1olWfXhNE7GUpYzqpjXcHuPTUOrzwt8tFrEzx_kRmWPg&oe=69DFC11F"
       ],
-      "url": "https://www.threads.net/@daon_k/post/DWYNkkwjTHs",
+      "url": "https://www.threads.com/@daon_k/post/DWYNkkwjTHs",
       "created_at": "2026-03-27 15:46:08",
       "date": "2026-03-27",
       "crawled_at": "2026-04-11T17:20:53.708",
@@ -22615,7 +22615,7 @@
       "display_name": "1.ta.ai",
       "full_text": "Claude Code 에서 스킬 만들고\n그냥 방치하고 있다면? \n아래 프롬포트 넣고 개선해달라고 해봐 ✨\n\n1. 클로드 코드 창시자인 Boris Cherny 라면 이 스킬에 대해 어떻게 조언해줬을것 같아? \n2. 오늘 26년 3월 27일이야. 최근 1달내 발행된 Anthropic 공식 문서를 SSOT 라 생각하고 조언해줘. \n3. 이 스킬이 상위 1% 클로드 코드 유저의 패턴일까? 100점짜리 스킬로 만들기 위해선 어떤걸 개선해야할까? \n\n나는 스킬들의 등급도 매겨서 관리하고 있어! \n(하단에)\n\n---\n\n내가 스킬 등급 매기는 기준\n1. Trigger (트리거 발동성)\n- 슬래시로 불러야 오는 스킬은 0점\n- 자연어로 알아서 발동되어야해. \n- 영어만 있어도 안돼! 한국어 필수! \n\n2. Structure (구조 품질)\n- 500줄 넘으면 감점. \n- 참조 파일 분리 안 했으면 감점! \n\n3. Verification (검증 체계) \n- evals 없으면 감점. \n- positive + negative 케이스 둘 다 있어야 만점!\n\n4. Utility (실용성)\n- 산출물 템플릿 없으면 감점\n- scope 무제한이면 감점!\n\n---\n\n참고로 skills 2.0 체계는 나온지 2주 정도 된것 같아. 이때 eval 폴더 구조도 생겼어~ \n\n내가 만든 스킬이 한달 전에 만든거다? 하면 2.0 체계에 맞추어 한번 업그레이드해봐!",
       "media": [],
-      "url": "https://www.threads.net/@1.ta.ai/post/DWWix7DEff9",
+      "url": "https://www.threads.com/@1.ta.ai/post/DWWix7DEff9",
       "created_at": "2026-03-27 00:12:34",
       "date": "2026-03-27",
       "crawled_at": "2026-04-11T17:20:56.746",
@@ -22637,7 +22637,7 @@
       "display_name": "tatum_hq",
       "full_text": "클로드 코드에게 물어봐야 할\n배포 전 마지막 질문\n\n이 목록이 길면\n아직 배포하면 안 됩니다.",
       "media": [],
-      "url": "https://www.threads.net/@tatum_hq/post/DWXVOIQEzNc",
+      "url": "https://www.threads.com/@tatum_hq/post/DWXVOIQEzNc",
       "created_at": "2026-03-27 07:33:20",
       "date": "2026-03-27",
       "crawled_at": "2026-04-11T17:20:56.746",
@@ -22661,7 +22661,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/657177455_17918836683301725_3668841672778319518_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=Mzg2MTM5MzM1NTUzMjQ3MjQzNA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE5NTR4MTQzOS5zZHIuQzMifQ%3D%3D&_nc_ohc=XoBM_WKnHz0Q7kNvwHzEstL&_nc_oc=AdqSITs52MhYmkasyKrDkfohVGd_-PmKNQN7PilUlxJ9-bs6noapF4aSpzXxOl4nna8&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=6j4-dYScFXGs0OggUI5KRQ&_nc_ss=7a32e&oh=00_Af32xkeopyNbs4POvzttmMBvl9jdvoC2sJYfzuZTPxHUJw&oe=69DFEFD0"
       ],
-      "url": "https://www.threads.net/@yeon8079/post/DWWbM6sEYSB",
+      "url": "https://www.threads.com/@yeon8079/post/DWWbM6sEYSB",
       "created_at": "2026-03-26 23:06:21",
       "date": "2026-03-26",
       "crawled_at": "2026-04-11T17:20:56.746",
@@ -22687,7 +22687,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/656651447_17917223451318729_3938200131097786756_n.jpg?stp=cp6_dst-jpg_e35_tt6&_nc_cat=111&ig_cache_key=Mzg2MTg4MzMzMjY1NzkxMjk0NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEyMTV4MjE2MC5zZHIuQzMifQ%3D%3D&_nc_ohc=2Q9ZISMQ0CIQ7kNvwGYpuMv&_nc_oc=AdoX3_mlYJsWtVufM9kydVw9a1RlowFejKGaZfGG7JfaX3xWED2ZDnjZCCKAJBKtn5g&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=pGMCCpOXubTLlDr8i5npyA&_nc_ss=7a32e&oh=00_Af0E1s6E-eYYiA-Md1DsEJQvKc-BCYGMKdDNIxgVI76WHQ&oe=69DFDF2D"
       ],
-      "url": "https://www.threads.net/@inthe2floor/post/DWYLJZuj1HU",
+      "url": "https://www.threads.com/@inthe2floor/post/DWYLJZuj1HU",
       "created_at": "2026-03-27 15:24:32",
       "date": "2026-03-27",
       "crawled_at": "2026-04-11T17:20:56.746",
@@ -22711,7 +22711,7 @@
       "display_name": "neehoot",
       "full_text": "대기업에서 혼자 바이브코딩으로 에이전트를 만들었습니다.\n어제 드디어 임원 보고가 끝났네요.\n4개월간 달리느라 정신적으로 신체적으로 피폐해져서 조금 쉬면서 정리를 해야겠습니다.\n\n하네스를 깎는건 고통이었는데\n정말 정말 마지막에 \nautoresearch의 개념을 가지고 돌리니 \n진짜 신기하게 잘되더라구요.\n\n서비스에 온톨로지가 들어가는데\n왜 팔란티어가 비싼지, 그리고 진짜 팔란티어가 게임체인저였다는 것을 이해하는 시간이었습니다.\n(근데 생각보가 해자가 크진 않은 느낌입니다.)\n\n재밌습니다.\n진짜 너무 재밌고, 신기합니다.\n\n바로 공개는 어려울듯 하지만\n세일즈팩이 나오면 한번 풀어보겠습니다.\n그전까지는 기술이나 개념, 참고한 오픈소스등을 풀어볼게요.\n\n---\n\n4개월간 커밋 수가 1400정도 되는 것 같습니다.\n코드 라인은 50만 라인 정도 되네요.\n수정한 라인은 ai통해 물어보니 400만 라인정도가 됩니다.\n이제 보안쪽 보완하고, 여러 차별점을 다듬어야겠습니다.\n\n---\n\n맥락상 그렇긴 한데\n여러분 온톨로지보다 오토리서치가 찐이에요!\n코덱스 클코 튜닝하세요 여러분",
       "media": [],
-      "url": "https://www.threads.net/@neehoot/post/DWV-8uyEs5j",
+      "url": "https://www.threads.com/@neehoot/post/DWV-8uyEs5j",
       "created_at": "2026-03-26 18:59:28",
       "date": "2026-03-26",
       "crawled_at": "2026-04-11T17:20:59.787",
@@ -22732,7 +22732,7 @@
       "display_name": "정새미 | 직장인 주치의",
       "full_text": "아직 클로드 공식 가이드 안읽은 사람?\n\n저요..\n\n대 클로드 시대에 미루고 미루다가 \n이제야 앤트로픽 공식 스킬 가이드를 읽고 있다. \n귀찮아서 번역해서 읽었는데 원문과 번역을 같이 읽으니 뼈대가 쉽게 잡힌다.\n\n제1장 기초: 스킬 구조, MCP와의 관계\n제2장 기획 및 설계: 사용 사례 정의, 3가지 카테고리, 성공 기준, 기술적 요구사항, YAML 전문 작성법\n제3장 테스트 및 반복: 트리거링/기능/성능 테스트, skill-creator 활용, 반복 방법\n제4장 배포 및 공유: 배포 모델, API 사용, GitHub 호스팅, 포지셔닝\n제5장 패턴 및 문제 해결: 5가지 패턴 + 상세한 트러블슈팅\n제6장 리소스: 공식 문서, 도구, 지원 방법\n부록 A, B, C:  체크리스트, YAML 전문 참고, 완전한 스킬 예시\n\n원문과 번역본은 아래에 첨부.",
       "media": [],
-      "url": "https://www.threads.net/@saemidoc/post/DWGD46OgbXq",
+      "url": "https://www.threads.com/@saemidoc/post/DWGD46OgbXq",
       "created_at": "2026-03-20 14:34:48",
       "date": "2026-03-20",
       "crawled_at": "2026-04-11T17:20:59.789",
@@ -22760,7 +22760,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/656182996_17953397448112832_3771492544337854038_n.jpg?stp=cp6_dst-jpg_e35_tt6&_nc_cat=100&ig_cache_key=Mzg2MTMxNDcxMjg2ODgxMTI4MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjIxNjB4MTIxNy5zZHIuQzMifQ%3D%3D&_nc_ohc=EwxY5M_FIvQQ7kNvwGlibWa&_nc_oc=Adq2ZfMaZIOOtFr-qG3lTxkk97rp5QJ_ncOhrLZnwIcxUJKvMfuc9H6t0Tc8ECfaHZA&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=9KwStGZTaGIWuS20U8dd_w&_nc_ss=7a32e&oh=00_Af1Y48kcOLm0fOEhOCXVyGfaKANt9Y-pQU19G-thxrt-cA&oe=69DFCD91"
       ],
-      "url": "https://www.threads.net/@choi.openai/post/DWWJUXyiPIR",
+      "url": "https://www.threads.com/@choi.openai/post/DWWJUXyiPIR",
       "created_at": "2026-03-26 20:30:05",
       "date": "2026-03-26",
       "crawled_at": "2026-04-11T17:20:59.789",
@@ -22786,7 +22786,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.71878-15/655488428_1640180660344511_5434294844732144128_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=111&ig_cache_key=Mzg2MDYyODUzNzc4NjY1NDgxNg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY0MHg0MDIuc2RyLkMzIn0%3D&_nc_ohc=T3zAtdbSSYIQ7kNvwEX1B6A&_nc_oc=AdqoYT6bldq_Vyx74o3OhCw3BInU-_5NtrA8TDLRUwdoj8dENoLujcmZM_qRjV31UUs&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=ggnqIJTSNuQvykkCvD0LrA&_nc_ss=7a32e&oh=00_Af0br6YvYLqF_-zSmdfGAAgo_j60jhTEHHompBtS6GR_9g&oe=69DFF099"
       ],
-      "url": "https://www.threads.net/@overtime.sam/post/DWTtTNcgmBg",
+      "url": "https://www.threads.com/@overtime.sam/post/DWTtTNcgmBg",
       "created_at": "2026-03-25 21:47:24",
       "date": "2026-03-25",
       "crawled_at": "2026-04-11T17:20:59.789",
@@ -22810,7 +22810,7 @@
       "display_name": "bin.sohn",
       "full_text": "OpenClaw 쓸 때 LLM API 95% 이상 아끼는 꿀팁\n\n---\n\n1. 비용의 구조에 대한 이해\n\nLLM API는 모델에 따라 100만 토큰당 $0.1에서 $6 사이의 가격을 형성한다. 100만 토큰은 단어로 치면 약 75만 단어에 해당하며, 이는 백과사전 반권 분량과 맞먹는 양이다. 일반적인 대화라면 하루 종일 대화해도 1만 토큰을 넘기기가 어렵다.\n\n그런데 AI 에이전트를 운영할 때는 이 토큰이 의외로 빠르게 소모된다.\n\n---\n\n2. 보이지 않는 토큰 소모\n\n대화창에 보이는 결과물만큼만 토큰이 소모된다고 생각하기 쉽지만, 실제로는 보이지 않는 곳에서 훨씬 더 많은 토큰이 소모된다.\n\n• 도구 호출을 위한 검색 결과 페이지 수십 개\n• 중간 사고 과정 (Chain of Thought)\n• 다양한 도구의 출력물\n\n이 모든 것이 컨텍스트에 누적되고, 그 누적된 내용이 다음 질문에서도 중복으로 주입된다. 심지어 전혀 상관없는 질문에서도 말이다.\n\n---\n\n3. 구체적인 예시\n\n\"김정은 몸무게를 딥리서치해줘\"라고 요청했을 때를 생각해보자.\n\n결과물 자체는 A4 용지 한 장 분량에 불과하므로, 토큰도 그만큼만 소모될 것이라고 기대하기 쉽다.\n\n하지만 실제로는 리서치 과정에서 수천 페이지의 정보가 컨텍스트에 쌓인다. 그리고 그 결과를 확인한 후 \"내일 날씨는 어때?\"라고 물으면, 그 수천 페이지의 리서치 정보가 다시 중복으로 주입된다.\n\n이런 방식으로 5개의 서로 다른 작업을 시킨 후 \"안녕?\"이라고 인사하면, \"응 안녕\"이라는 답변을 받는 데에 무려 5만 토큰이 소모될 수 있다.\n\n---\n\n4. 해결책 1: Subagent로 작업 분리\n\n중간 사고과정이나 중간 결과물이 최종 결과에 중요하지 않은 작업은, 명시적으로 subagent로 작업하도록 명령하는 것이 효과적이다.\n\n예를 들어 김정은 체중 리포트를 .md 파일로 작성하게 한 후, 요약본만 메인 컨텍스트로 가져오는 방식이다.\n\n이렇게 하면 중간 리서치 과정의 수천 페이지는 subagent의 로컬 컨텍스트에서만 존재하고 사라진다. 최종 결과물만 깔끔하게 남는다.\n\n---\n\n5. 해결책 2: 수시로 /compact\n\n작업이 진행된 후에는 /compact 명령으로 컨텍스트를 요약 정리하는 것이 중요하다.\n\n김정은 체중 리서치 관련 논의가 모두 끝나면 compaction을 통해 \"결론만\" 남기고, 불필요한 중간 과정을 정리한다. 그러면 다음 날씨 질문을 할 때 김정은 관련 정보가 중복으로 따라오지 않는다.\n\n이 작업을 하지 않으면, 10번째 질문을 할 때 1번째부터 9번째까지의 작업의 쓸모없는 중간 과정이 전부 누적되어 컨텍스트를 오염시키고 있다.\n\n---\n\n6. 이 방식만으로는 한계가 있다\n\n그러나 subagent와 compaction만으로는 본질적인 한계가 존재한다.\n\nSubagent의 한계는, 당연하게도, 중간 사고과정이 모두 날아간다는 점이다. 중간 과정에서 에이전트가 습득한 정보에 관해 추가적인 질의나 상호작용을 할 수가 없다. 예를 들어 리서치 중간에 \"아까 찾은 3페이지의 출처가 어디야?\"라고 물을 수 없다. 결과물만 남고 과정은 닫혀버린다.\n\nCompaction의 한계는 반복하면 기억을 다 날려버린다는 점이다. \"김정은 체중 프로젝트\"가 끝난 후 일주일간 여러 차례 컴팩션을 거치면 일주일 후 \"그때 김정은 리서치 뭐였더라?\"고 물으면 자세한 맥락을 기억하기 힘들어진다.\n\n---\n\n7. 근본적인 해결: 메인은 가볍게, 정보는 유실 없이\n\n이 문제를 근본적으로 해결하려면 두 가지를 동시에 실현해야 한다:\n\n• 메인 세션의 컨텍스트는 가볍게: Subagent와 compaction으로 당장 쓰지 않는 정보는 메인에서 제외하고\n• 수집한 정보는 유실 없이: 장기 메모리에 체계적으로 기록하고 인덱싱하여 필요시 적절히 retrieve 할 수 있어야 한다.\n\n예를 들어 김정은 체중 리서치를 subagent로 진행하면서, 중간 결과물들은 .md 파일로 저장한다. 메인 컨텍스트에는 요약만 남기고, 상세 내용은 파일로 보관. 리서치가 끝나면 compaction으로 메인을 정리해도, 파일로 저장된 정보는 남아있다.\n\n일주일 후 \"그때 김정은 리서치 뭐였더라?\"고 물으면, 장기 메모리에서 해당 파일을 검색해서 다시 불러올 수 있다. 필요할 때만 선택적으로 로딩되는 것이다.\n\n---\n\n8. 시스템화: Hipocampus\n\n지금까지 설명한 방식을 매번 수동으로, ad hoc하게 실행하는 것은 쉽지 않다. 까먹기도 하고, 일관되지도 않고, 결국에는 귀찮아서 안 하게 된다.\n\n이걸 자동화하고 시스템화해주는 것이 바로 Hipocampus다.\n\n3-tier 메모리 구조:\n\n• Hot (WORKING.md, SCRATCHPAD.md): 매 세션 접근하는 active 상태. 현재 하고 있는 작업, 임시 메모, 진행 중인 맥락\n• Warm (Daily logs): 매일 작성되는 raw 로그 (YYYY-MM-DD.md). full context 보존, revisability 보장\n• Cold (Weekly/Monthly summaries): compaction을 거쳐 정리된 장기 기억. 핵심 정보만 추출\n\n---\n\n9. 장기 메모리를 위한 5-level compaction tree:\n\nWarm과 Cold 레이어를 관리하는 구조로, raw daily → weekly → monthly → root 순으로 컨텍스트가 압축 정리된다.\n\n• Daily: 매일의 raw 로그를 WORKING.md/SCRATCHPAD.md에서 추출하여 보존\n• Weekly: 일주일치 daily를 요약하여 통합\n• Monthly: 월간 weekly들을 더욱 압축하여 통합\n• Root (ROOT.md): 최종적으로 정리된 knowledge awareness. Cold 레이어(daily/weekly/monthly)에 어떤 지식들이 있는지 indexing한 인덱스. 매 세션 시작 시 로드되어 \"내가 무엇을 알고 있는지\" 파악\n\nSubagent 작업 결과는 .md 파일로 저장되면 자동으로 인덱싱되어, 나중에 필요할 때 검색으로 꺼내쓸 수 있다. 이 모든 것이 프로토콜로 강제되어 까먹을 수가 없다.\n\n---\n\n10. 이 구조에서는 \"김정은 체중 프로젝트\"가 끝나서 compact했어도 정보가 유실되지 않는다. 메인 컨텍스트(WORKING.md)는 가볍게, 수집한 정보는 Cold 레이어에 안전하게, 그리고 ROOT.md의 indexing 덕분에 필요할 때만 검색으로 정확히 불러온다.\n\n---\n\n11. 정리\n\n비효율적인 방식: 모든 작업을 메인 컨텍스트에서 처리하고, 컨텍스트를 무한 누적시키며, 정보를 유실하거나 메인을 과부하시키고, 필요할 때 못 찾는 구조.\n\n효율적인 방식: Subagent로 중간 과정을 분리하고, Compaction으로 정기적으로 정리하며, 3-tier와 compaction tree로 정보를 계층화하여 저장하고, ROOT.md의 indexing으로 필요할 때 검색해서 꺼내쓰는 구조.\n\n결국 비용을 아끼려면 \"쓰고 버리는\" 것도, \"무조건 다 메인에 쌓는\" 것도 아니라, 메인은 가볍게 유지하면서도 정보는 유실 없이 계층화하여 저장하고, 필요할 때만 검색으로 꺼내쓰는 구조로 가야 한다.\n\n이걸 매번 수동으로 하지 않고 프로토콜로 만든 것이 Hipocampus다.\n\n🔗 Hipocampus: github.com/kevin-hs-sohn/hipocampus",
       "media": [],
-      "url": "https://www.threads.net/@bin.sohn/post/DWO-qjSEhZ5",
+      "url": "https://www.threads.com/@bin.sohn/post/DWO-qjSEhZ5",
       "created_at": "2026-03-24 01:42:18",
       "date": "2026-03-24",
       "crawled_at": "2026-04-11T17:21:02.842",
@@ -22834,7 +22834,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.71878-15/656139825_1248311757460234_2601510093112345402_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=107&ig_cache_key=Mzg1OTc3NDg4MTgxNDU5MDU4MA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY0MHgzOTAuc2RyLkMzIn0%3D&_nc_ohc=t1ucilImn40Q7kNvwFFP7N8&_nc_oc=Adpk-WijWHSMKTs2BB_aC48j2BYIBLlIWn1Cz0ZM9J6OX3cwLGqUjDee8yztNDn8kyI&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=C0PHOaxQDrgoiHELN7mo3A&_nc_ss=7a32e&oh=00_Af05gzZSC_bxYmkmXNVt7GAT4LkEPnL-oXDpn7VkshuAXw&oe=69DFBF83"
       ],
-      "url": "https://www.threads.net/@daon_k/post/DWQrM4XiLR0",
+      "url": "https://www.threads.com/@daon_k/post/DWQrM4XiLR0",
       "created_at": "2026-03-24 17:30:43",
       "date": "2026-03-24",
       "crawled_at": "2026-04-11T17:21:02.842",
@@ -22858,7 +22858,7 @@
       "display_name": "autogod.ai",
       "full_text": "클로드 코드 때문에 그동안 만들던 에이전트 프로젝트 접습니다!\n코드 60만줄, 도메인 26개, 4개월.. 눈물머금고 보내줍니다.\n\n작년에 에이전트 회사 개념에 영감을 받아서,\n\"비개발자를 위한 쉬운 에이전트 시스템을 만들자!\",\n\"지식노동을 다 자동화하는 에이전트를 만들자!\"\n했는데, 어느 순간 클로드 코드가 그 해답이더라고요..\n\n그동안 들어간 매몰비용 때문에 포기못하다가\n저번주에 클로드 코드 업데이트 속도 보고 '내가 혼자 무슨 싸움을 하는거지?'\n하고 주제파악 제대로 해버렸습니다ㅎㅎㅎ\n비즈니스 실력도 없고 그냥 에이전트 연구만 했네요\n\n그래도 그동안 배운 점 정리합니다!\n\n---\n\n1. 자원에 맞는 전략을 짜라\n\"First Principle Thinking으로 추상화, 구조 설계하자\"\n\"노션, 피그마처럼 추상화 시스템부터 만들고 버티컬하게 들어가자\"\n\"다들 버티컬하게 하니깐 범용적인 시스템 만들자\"\n오케이 다 좋다 이거야,\n근데 돈 없고 자원 없으면 거기에 맞는 전략을 세워..\n\n2. 시장의 유스케이스를 해결하자\n시스템 설계와 시장의 유스케이스 사이의 균형을 잘 유지해야함\n\n3. 에이전트 시스템 연구\n커서, BMAD Method, 클로드 코드 등 에이전트 시스템 리버스 엔지니어링 했음\n그러면서 컨텍스트 시스템 설계부터 cli 기반 tool call, 에이전트 네이티브 앱/파일시스템 \n재밌는 구조들 설계함. 그래도 이 개념들은 남음.\n\n이번 실패 인정하기까지 또 너무 오랜 시간이 들었지만, 또 바로 다음 도전 간다.\n다음에는 작은 문제부터 풀어본다!",
       "media": [],
-      "url": "https://www.threads.net/@autogod.ai/post/DWVjOagE4HR",
+      "url": "https://www.threads.com/@autogod.ai/post/DWVjOagE4HR",
       "created_at": "2026-03-26 14:57:13",
       "date": "2026-03-26",
       "crawled_at": "2026-04-11T17:21:02.842",
@@ -22882,7 +22882,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/658428874_17952148380113255_3501997982246960476_n.webp?_nc_cat=101&ig_cache_key=Mzg2MDY1NDAxNDU2MDY1Nzg0NQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwODB4MTQ0OS5zZHIuQzMifQ%3D%3D&_nc_ohc=-PQZKrsfYFkQ7kNvwGgo7RF&_nc_oc=Adpi-IrdNY32hubISFDKnoUJONtfxs4jGFFpPGD92J4tm03dWyaVf2sSstOMAH1LhBw&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=VUMp00dEcbgKumZ6cr7QvA&_nc_ss=7a32e&oh=00_Af1wYJcf9HK9aFTSdG4RSof9dnpN6YeDFwEFwmZ6-tEUQw&oe=69DFC213"
       ],
-      "url": "https://www.threads.net/@ceo_swb05/post/DWTzF8ikuG1",
+      "url": "https://www.threads.com/@ceo_swb05/post/DWTzF8ikuG1",
       "created_at": "2026-03-25 22:37:24",
       "date": "2026-03-25",
       "crawled_at": "2026-04-11T17:21:02.842",
@@ -22906,7 +22906,7 @@
       "display_name": "digit2sight",
       "full_text": "PPT 41장 자동완성 실화냐 ㄷㄷ\n클로드 스킬이라는 거 써봤는데\n놋북LM으로 내용 잡고 → 클로드 스킬 파일 뽑고 → PPT 41장 완성\n이 세 줄이 전부임 ㅋㅋㅋ\n폰트 컬러 레이아웃 41장 전부 똑같이 나오는 거 보고 소름 돋았음\n코드? 몰라도 됨\nAPI? 그게 뭔데요 수준이어도 됨\n\n---\n\n한 번에 41장 요청하면 \n클로드가 사용한도 도달 드립 치긴 하는데\n10장씩 쪼개면 해결됨 ㅋㅎ",
       "media": [],
-      "url": "https://www.threads.net/@digit2sight/post/DWOubKalN0d",
+      "url": "https://www.threads.com/@digit2sight/post/DWOubKalN0d",
       "created_at": "2026-03-23 23:20:24",
       "date": "2026-03-23",
       "crawled_at": "2026-04-11T17:21:02.852",
@@ -22927,7 +22927,7 @@
       "display_name": "♻️ Peter Cha",
       "full_text": "간단하게 하나 만들어봤습니다.🤗\n\n🧢 𝗖𝗔𝗣 - Claude Allowance Pluse \n입니다. 아래 명령어를 claude에게 입력하시면 알아서 세팅해줄거에요.🙂\n\n/plugin marketplace add PeterCha90/CAP\n/plugin install cap\n\n한 번만 껏다 클로드 코드를 껏다가 다시 켜주시면, 위에 있는 사진처럼 CAP을 만나실 수 있을거에요 :) 마음에 드셨다면 https://github.com/PeterCha90/CAP 에 ⭐️ 한 번씩만 부탁드려요!🙇‍♂️",
       "media": [],
-      "url": "https://www.threads.net/@_petercha/post/DWEWBbWgR0b",
+      "url": "https://www.threads.com/@_petercha/post/DWEWBbWgR0b",
       "created_at": "2026-03-19 22:34:46",
       "date": "2026-03-19",
       "crawled_at": "2026-04-11T17:21:02.852",
@@ -22956,7 +22956,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/653991415_17952038055108996_5012242511760236167_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ig_cache_key=Mzg1NjMwMzk3MDkzNDkyODAwMA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY4OHgxNTAuc2RyLkMzIn0%3D&_nc_ohc=NwOdkhgQDDUQ7kNvwEBKKJc&_nc_oc=AdqxNa608qJpjQ-VYkbIF8Dqb7Ood5J6HGx_zl---hr1lfYTHElvIrve_hIDG2IFzHk&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=eCEdaML7__5QBV9JgVyWsQ&_nc_ss=7a32e&oh=00_Af19af2QBqGdm7Bm2KV0OcUnehVOVfTzSnW9XAcj2R2Sew&oe=69DFC3B6"
       ],
-      "url": "https://www.threads.net/@_petercha/post/DWEWAetgTKA",
+      "url": "https://www.threads.com/@_petercha/post/DWEWAetgTKA",
       "created_at": "2026-03-19 22:34:38",
       "date": "2026-03-19",
       "crawled_at": "2026-04-11T17:21:02.852",
@@ -22980,7 +22980,7 @@
       "display_name": "ai_margin_",
       "full_text": "\"스레드 글 어떻게 매일 올려요?\"\n\n수동으로 안 올림.\n\n1. 바이브코딩으로 인기글 자동 수집\n2. AI가 리라이팅\n3. 쿠팡 링크 자동 교체\n4. 예약 포스팅\n\n4단계가 코드 한 줄로 돌아감.\n\n처음엔 6단계짜리 복잡한 시스템 만들었는데\n전부 갈아엎고 4단계로 줄였음.\n\n복잡한 게 잘하는 게 아니라\n단순한 게 진짜 실력임.",
       "media": [],
-      "url": "https://www.threads.net/@ai_margin_/post/DWMAhLLiEuh",
+      "url": "https://www.threads.com/@ai_margin_/post/DWMAhLLiEuh",
       "created_at": "2026-03-22 22:00:47",
       "date": "2026-03-22",
       "crawled_at": "2026-04-11T17:21:02.853",
@@ -23004,7 +23004,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/655232430_17952895272108996_3069867605185482049_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=Mzg1OTEwMTY2MzExNDQyNTA0NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjc3NXgzOTUuc2RyLkMzIn0%3D&_nc_ohc=mVIrFZId79kQ7kNvwHW9Weu&_nc_oc=Adp537YT_vdCKxFxV91mXwN5aM2h9RUFAHSzoCxFg4mPy0bnMl5uWxYqDvnjbBfshHQ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=1zeCl0mymtloRNX-m0-ZDw&_nc_ss=7a32e&oh=00_Af3yND2Euh1R1Sb4W3woncBGMVxpw7qN_DnvAp05vBEGsQ&oe=69DFD095"
       ],
-      "url": "https://www.threads.net/@_petercha/post/DWOSPyhAZp8",
+      "url": "https://www.threads.com/@_petercha/post/DWOSPyhAZp8",
       "created_at": "2026-03-23 19:14:10",
       "date": "2026-03-23",
       "crawled_at": "2026-04-11T17:21:02.853",
@@ -23030,7 +23030,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/655349364_17857876551622325_1839157402639168686_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ig_cache_key=Mzg1NzYwNTI3MDQ1Mzg5NTIwMw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwODB4MTA4MC5zZHIuQzMifQ%3D%3D&_nc_ohc=z4fX3c0H1GMQ7kNvwEZW2A5&_nc_oc=AdpIXSOLAHbIAZ3Xv7Cjmie3jgayUALcrjBFZUfms0VStRuj52wzgasRpiWjjTAEvgg&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=M00-GAOg9y-WYpGgpJi_tw&_nc_ss=7a32e&oh=00_Af2iMen4scT70XxsTb9lWvivE_5d0t28_C3qowV36yEjsw&oe=69DFE3ED"
       ],
-      "url": "https://www.threads.net/@aisolutiondev/post/DWI98ngFA6G",
+      "url": "https://www.threads.com/@aisolutiondev/post/DWI98ngFA6G",
       "created_at": "2026-03-21 17:40:41",
       "date": "2026-03-21",
       "crawled_at": "2026-04-11T17:21:05.923",
@@ -23054,7 +23054,7 @@
       "display_name": "kkummolda_ceo",
       "full_text": "지원사업 발표는 “전체”를 보여주는 싸움이 아니에요.\r\n심사위원 머릿속에 ‘한 장’이 남는 싸움이에요.\nProblem / Proof / Plan / Ask\r\n네 장이면 끝.\n\n---\n\n지원사업 합격률 올리는 실전 노하우\r\n1) Problem: “문제”가 아니라 문제의 비용을 박아라\r\n•\t한 문장: “이 문제는 (누가)에게 (주당/월) ○○ 손실을 만든다.” \r\n•\t비용 단위는 3개 중 하나만: 시간 / 돈 / 리스크 \r\n•\t금지: “불편합니다” “니즈가 있습니다” (약함) \n\n2) Proof: “우리는 할 수 있다” 대신 이미 일어났다로 말해라\r\n•\t증거는 TOP3만: 결제 / 반복사용 / LOI·파일럿 \r\n•\t못생긴 숫자 1개만 박아도 된다: “37명”, “3곳 중 2곳” \r\n•\t금지: “반응이 좋았습니다” (증거 아님)\n\n---\n\n3) Plan: 로드맵은 기능표가 아니라 리스크 제거표로 써라\r\n•\t항목 형식 고정: 검증질문 → 실험 → 성공기준(숫자) → 기한 \r\n•\t“다음 8주” 안에 된다/안된다 결론 나는 구조로 \r\n•\t금지: “고도화/확장/브랜딩” 같은 뭉뚱그린 단어 \n\n4) Ask: “지원 부탁” 말고 지원금 → 지표 → 매출로 연결해라\r\n•\t사용처는 딱 3개: 인건비/검증비/도입비 (흩어지면 불안) \r\n•\t마지막 한 줄: “이 지원이면 ○주 안에 ○○지표를 ○○까지” \r\n•\t금지: “지원만 해주시면” (감정 호소로 들림)\n\n---\n\n심사위원 펜 움직이는 ‘마지막 15초’ 대본\r\n“오늘 요청은 ○○ 지원입니다. 지원금은 인건비/검증비/도입비 3곳에만 쓰겠습니다.\r\n○주 안에 ○○지표를 ○○까지 만들겠습니다.\r\n되면 키우고, 안 되면 ○주 내 기준 미달이면 접겠습니다.”",
       "media": [],
-      "url": "https://www.threads.net/@kkummolda_ceo/post/DWIeljvj3ex",
+      "url": "https://www.threads.com/@kkummolda_ceo/post/DWIeljvj3ex",
       "created_at": "2026-03-21 13:06:34",
       "date": "2026-03-21",
       "crawled_at": "2026-04-11T17:21:05.923",
@@ -23075,7 +23075,7 @@
       "display_name": "Billy l 빌리쌤",
       "full_text": "2만 명이 몰래 본 핵심 '글쓰기 방법' 2탄\n\n1년에 2만 명 > 현재 2.5만 명\n대기업 출신 기획자의 '꿀팁'입니다.\n\n내 친구들만 몰래 보고, 저장하세요.\n자 시작합니다. (이것만 알면 끝!)",
       "media": [],
-      "url": "https://www.threads.net/@billy___ssam/post/DWI70GEkXkG",
+      "url": "https://www.threads.com/@billy___ssam/post/DWI70GEkXkG",
       "created_at": "2026-03-21 17:21:57",
       "date": "2026-03-21",
       "crawled_at": "2026-04-11T17:21:05.923",
@@ -23101,7 +23101,7 @@
       "display_name": "homebodify",
       "full_text": "요즘 AI로 프로토타이핑할 때 딱! 이것만 씀.\n\n👨‍💻 Opencode\nClaude Code가 부족하고, 쿨타임 짜증!\n그래서 이걸로 다른 모델과 작업이 가능.\n(Claude Code도 병행해서 사용)\n\n🔌 oh-my-opencode\nopencode에서 멀티 에이전트 쓴다면 강추!\n해외 opencode 유저들 사이에서도 난리.\n시지프스 쵝오!\n\n🤹‍♂️ Conductor\nCLI로 병렬 작업할 때 필요.\n프로젝트, 태스크를 여러개 작업을 한다?\n개발자와 비개발자 모두 만족 시킬 수 있음.\n\n⚡ mgrep\nCLI 속도 무쟈게 빠르게 만들어 줌.\nOpencode랑 찰떡! 다른 CLI도 지원.\n최소 시간 두 배이상 빨라지고,\n비용도 절감됨. (API 사용한다면 특히 강추!)\n\n👆 React Grab\n특정 영역을 선택하고 작업 지시 가능.\n당신이 개발자가 아니라면 이거 필수!",
       "media": [],
-      "url": "https://www.threads.net/@homebodify/post/DTZ6HqrgTPI",
+      "url": "https://www.threads.com/@homebodify/post/DTZ6HqrgTPI",
       "created_at": "2026-01-12 18:00:05",
       "date": "2026-01-12",
       "crawled_at": "2026-04-11T17:21:05.923",
@@ -23125,7 +23125,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.71878-15/655367370_1432130208644816_5863379870440154440_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=106&ig_cache_key=Mzg1NzM3MzkyNjczNzkyNDA1Mg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY0MHgzNjAuc2RyLkMzIn0%3D&_nc_ohc=MDDQ9AvL8OAQ7kNvwFV_xex&_nc_oc=Adpj5yw0rAsHulMOCb3I8CU6uUGIYU1iAlrKHI5hacF2V7BjOYnUtERZdSwQF-tp9kQ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=M_h5xsfOEDQ6dCOvkc1cSA&_nc_ss=7a32e&oh=00_Af2_qb6A3dqDtUmnCQ4tPwB3_B8R7cABibm2Lfg-FKB6tA&oe=69DFC2B5"
       ],
-      "url": "https://www.threads.net/@choi.openai/post/DWIJSYtEU_U",
+      "url": "https://www.threads.com/@choi.openai/post/DWIJSYtEU_U",
       "created_at": "2026-03-21 10:00:27",
       "date": "2026-03-21",
       "crawled_at": "2026-04-11T17:21:05.926",
@@ -23151,7 +23151,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.71878-15/655302054_915249678155789_7499830820501875321_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=103&ig_cache_key=Mzg1NzM2NDM0MDA2ODk5NTYzNw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY0MHgxMzg2LnNkci5DMyJ9&_nc_ohc=ZSs5qR9hNREQ7kNvwGPIaBk&_nc_oc=AdqeIrhlPT_WL4nWR05K6DPODjiiSGqOpfu1cpThSLb2JBQpHLhrF_BcoDOGVDGDubU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=RxgKZpJko-iF0NsYa-AKnw&_nc_ss=7a32e&oh=00_Af1-nrZJsfvq-u3SgaDFD3B13TMbLlo6cvIW9uOolGpsuA&oe=69DFEC04"
       ],
-      "url": "https://www.threads.net/@promania_ai/post/DWIHNdCku5l",
+      "url": "https://www.threads.com/@promania_ai/post/DWIHNdCku5l",
       "created_at": "2026-03-21 09:42:18",
       "date": "2026-03-21",
       "crawled_at": "2026-04-11T17:21:05.926",
@@ -23174,7 +23174,7 @@
       "display_name": "엉클잡스 | Ai 시대, 돈이 되는 정보 전달",
       "full_text": "AutoResearch — 연구자를 병목에서 빼라\n\n본인이 GPT 모델을 수천 번 직접 튜닝했습니다. 20년 경력. 충분히 잘 튜닝했다고 생각했는데, AutoResearch를 하룻밤 돌렸더니 본인이 못 본 걸 찾아냈습니다. 값 임베딩에 weight decay를 빠뜨렸고, Adam 베타값이 충분히 튜닝되지 않았고, 이 둘이 상호작용해서 같이 조정해야 했던 겁니다.\n\n핵심 원칙: 연구자가 루프 안에 있으면 시스템이 느려진다. 목표와 메트릭을 정해주고 빠져라. 토큰 처리량을 극대화하되 본인은 개입하지 마라.\n\n더 나아가서 program.md(연구 조직의 역할과 프로세스를 정의한 마크다운)를 여러 버전 만들어서 어떤 조직 구조가 더 좋은 결과를 내는지, 그것 자체를 메타 최적화할 수 있다고 했습니다.",
       "media": [],
-      "url": "https://www.threads.net/@unclejobs.ai/post/DWJWkwKCcHW",
+      "url": "https://www.threads.com/@unclejobs.ai/post/DWJWkwKCcHW",
       "created_at": "2026-03-21 21:15:47",
       "date": "2026-03-21",
       "crawled_at": "2026-04-11T17:21:05.926",
@@ -23203,7 +23203,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/655302392_17934728523207210_3320101749309372280_n.jpg?stp=cp6_dst-jpg_e35_tt6&_nc_cat=108&ig_cache_key=Mzg1NzcxNTU2NzIwOTgzMjkyNw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwOTJ4MTg1Ni5zZHIuQzMifQ%3D%3D&_nc_ohc=jcbrjdbSB9AQ7kNvwFoFCCz&_nc_oc=AdooyxkSOoS54HHg63Q-5QHMcxs-5Xms3YqRQcdR2I1lAKaVXLyLmh_dL3gC4b4z1Wg&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=SM3apr3EjuY1Z_SzWKTilg&_nc_ss=7a32e&oh=00_Af221bYLoIWmRnOaRtu9Yz4gFBbEncEbhxHVbrNUiQj6Yg&oe=69DFE75D"
       ],
-      "url": "https://www.threads.net/@unclejobs.ai/post/DWJWii4CQiG",
+      "url": "https://www.threads.com/@unclejobs.ai/post/DWJWii4CQiG",
       "created_at": "2026-03-21 21:15:29",
       "date": "2026-03-21",
       "crawled_at": "2026-04-11T17:21:05.926",
@@ -23226,7 +23226,7 @@
       "display_name": "엉클잡스 | Ai 시대, 돈이 되는 정보 전달",
       "full_text": "소프트웨어 엔지니어 수요는 줄까? 오히려 늘 수 있다\n\nJevons Paradox를 언급합니다. 어떤 자원이 싸지면 수요가 줄어드는 게 아니라 오히려 폭발합니다. ATM이 나왔을 때 은행 직원이 사라질 거라고 했지만, 은행 지점 운영 비용이 내려가면서 지점이 늘어나고 직원도 늘었습니다.\n\n소프트웨어도 마찬가지. 소프트웨어가 싸지면, 지금까지 비용 때문에 못 만들던 것들을 전부 만들기 시작합니다. 맞춤형 소프트웨어, 일회용 소프트웨어, 에이전트가 실시간으로 짜는 소프트웨어. 코드는 이제 영속적인 게 아니라 휘발성입니다. 그래서 적어도 당분간은 소프트웨어 엔지니어링 수요가 늘 거라고 봅니다.\n\n단, 프론티어 랩 연구자들은 자기 자신을 자동화하고 있다는 자각이 있다고. Karpathy가 OpenAI 다닐 때 동료들한테 직접 말했다고 합니다. \"우리가 성공하면 우리 전부 직업을 잃는 거 알지?\"",
       "media": [],
-      "url": "https://www.threads.net/@unclejobs.ai/post/DWJWmFkCZpB",
+      "url": "https://www.threads.com/@unclejobs.ai/post/DWJWmFkCZpB",
       "created_at": "2026-03-21 21:15:58",
       "date": "2026-03-21",
       "crawled_at": "2026-04-11T17:21:05.926",
@@ -23255,7 +23255,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/655302392_17934728523207210_3320101749309372280_n.jpg?stp=cp6_dst-jpg_e35_tt6&_nc_cat=108&ig_cache_key=Mzg1NzcxNTU2NzIwOTgzMjkyNw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwOTJ4MTg1Ni5zZHIuQzMifQ%3D%3D&_nc_ohc=jcbrjdbSB9AQ7kNvwFoFCCz&_nc_oc=AdooyxkSOoS54HHg63Q-5QHMcxs-5Xms3YqRQcdR2I1lAKaVXLyLmh_dL3gC4b4z1Wg&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=sLCQ25C5N9I2RD4MroPCnw&_nc_ss=7a32e&oh=00_Af1oH7Ml1e73oy_ua11sIrupSCwcuOwCcXHhTemjQznpgg&oe=69DFE75D"
       ],
-      "url": "https://www.threads.net/@unclejobs.ai/post/DWJWj3aicDO",
+      "url": "https://www.threads.com/@unclejobs.ai/post/DWJWj3aicDO",
       "created_at": "2026-03-21 21:15:40",
       "date": "2026-03-21",
       "crawled_at": "2026-04-11T17:21:05.926",
@@ -23281,7 +23281,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.71878-15/655085753_1269910875097982_2475306437245255308_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=106&ig_cache_key=Mzg1Njg1NTAxNTM3MzI2OTM0NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY0MHg1ODIuc2RyLkMzIn0%3D&_nc_ohc=rv3kEP_7qVIQ7kNvwFOH0jz&_nc_oc=AdqBoaJGjv8ux_-dcCaS3--MWHdJ3f9hmfL774vBEP7V7qrYMky2wRSGmmkIwL0pdh8&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=rklhFY2ViKTWdZLOirLW0A&_nc_ss=7a32e&oh=00_Af1WWck-IBqqVdhLZBK4mQQ8iCWhVghLgpD2WvlcjDEhog&oe=69DFD4C1"
       ],
-      "url": "https://www.threads.net/@aipreneur_j/post/DWGTTO1gelg",
+      "url": "https://www.threads.com/@aipreneur_j/post/DWGTTO1gelg",
       "created_at": "2026-03-20 16:49:46",
       "date": "2026-03-20",
       "crawled_at": "2026-04-11T17:21:08.983",
@@ -23307,7 +23307,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/648099858_17896802553408836_1406285929424475977_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=Mzg0NjQ5NTU0ODY2MTExNTcwNg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjQ0NXgyOTEuc2RyLkMzIn0%3D&_nc_ohc=SYaU5k4DsGcQ7kNvwFItb56&_nc_oc=AdrH5-7-JxnzEbpADp3Aa9aAQkwkIPmqcTBIAQtV2rUab5O_9Lp3msy6TB9w67sCdzo&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=15gCXfTKmCCgPzb1urBUcw&_nc_ss=7a32e&oh=00_Af0JDla53NrukVYcyT9eZYeivZKmquG-b8Y7oNrIxN8gpw&oe=69DFEA87"
       ],
-      "url": "https://www.threads.net/@gptaku_ai/post/DVhgqV3E1Bu",
+      "url": "https://www.threads.com/@gptaku_ai/post/DVhgqV3E1Bu",
       "created_at": "2026-03-06 09:54:19",
       "date": "2026-03-06",
       "crawled_at": "2026-04-11T17:21:08.984",
@@ -23334,7 +23334,7 @@
         "https://scontent-icn2-1.cdninstagram.com/v/t51.71878-15/653886141_1501947214613650_3883285129642588044_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=107&ig_cache_key=Mzg1NjAzMDk2NTYzNDgwMzgxOA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY0MHgzNjAuc2RyLkMzIn0%3D&_nc_ohc=rpL_hjOVQKMQ7kNvwFAJm3C&_nc_oc=AdqJWbqABiSKp30q5bymj-TH-8rsUjW13C4Mzh0gVDG-AZy2w0GdwSEv_z1Uux6HDXU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=t8UlTra6nMdc4z1uNXgfCw&_nc_ss=7a32e&oh=00_Af3iXsrcuz-OLkVvTsowDeIiOAyUcn7fp9_z9WnxiiQoXw&oe=69DFC97E",
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/655109861_17919342846276085_4693970442303486244_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=Mzg1NjA0MzgyMjk2MzMwOTU5MA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjIxNjB4MTM0OS5zZHIuQzMifQ%3D%3D&_nc_ohc=QBESn1VE3tgQ7kNvwH5ZZEd&_nc_oc=AdqRji3j_3RIBKUE6I3bzD7EphOOaRG5fdWrO8JxdSOW7xMc9kEAkPg6DOYd4nQQMoc&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=t8UlTra6nMdc4z1uNXgfCw&_nc_ss=7a32e&oh=00_Af0p7COqxfTmp1Lwzgt1TKHOadFwnmNAaWZG7PZkBbkXBA&oe=69DFC7CD"
       ],
-      "url": "https://www.threads.net/@jinsolisme1/post/DWDX7utkahq",
+      "url": "https://www.threads.com/@jinsolisme1/post/DWDX7utkahq",
       "created_at": "2026-03-19 13:39:04",
       "date": "2026-03-19",
       "crawled_at": "2026-04-11T17:21:08.984",
@@ -23362,7 +23362,7 @@
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/656230047_17901274557404021_7510088727595756644_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ig_cache_key=Mzg1NzQyOTA2NDcxNDM5NTk5OA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjk5OHgyMTYwLnNkci5DMyJ9&_nc_ohc=yKldsC535VQQ7kNvwEi_lV5&_nc_oc=AdrQ_U5wHdcVGI7jRm0P4x7c0lqDtO3-91smLTaoZHXtGoWD_R52YlvS3y0ua9qZEdc&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=ECptwY8Ie-qHbTi7fQwpzg&_nc_ss=7a32e&oh=00_Af3XecGsVTy2qi243zag94ooEjtKT0wSr79x-X9ebxkWaA&oe=69DFE82C",
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/656281243_17901285396404021_8006957772121498223_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ig_cache_key=Mzg1NzQ2MTM0NjkzMDEzMDcyNQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjk5OHgyMTYwLnNkci5DMyJ9&_nc_ohc=0utBi4IVuM0Q7kNvwHmYT_v&_nc_oc=AdoAdEESmLV-lWgS5xsynR3OnlhsRGJfMhcYm33Gky2wcvYBuxcflS5KG3_45IZceX8&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=ECptwY8Ie-qHbTi7fQwpzg&_nc_ss=7a32e&oh=00_Af03-NvmBaZMY_4W99VJo0s8gIrJT7wzWnyH34qRnW41xg&oe=69DFC083"
       ],
-      "url": "https://www.threads.net/@alex_ai_mcp/post/DWIY67Tkfvb",
+      "url": "https://www.threads.com/@alex_ai_mcp/post/DWIY67Tkfvb",
       "created_at": "2026-03-21 12:17:03",
       "date": "2026-03-21",
       "crawled_at": "2026-04-11T17:21:08.984",
@@ -23392,7 +23392,7 @@
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/655084532_17864490900606405_5294403408249576890_n.jpg?stp=cp6_dst-jpg_e35_tt6&_nc_cat=104&ig_cache_key=Mzg1Njc4MzA0MzY1OTk2NDM1NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjIxNjB4MTIxMC5zZHIuQzMifQ%3D%3D&_nc_ohc=ygZ4OfnXZ8kQ7kNvwEWuwDA&_nc_oc=AdpgSChCKVs2ZphNDsqfY2MKSPR6TW85KAIEn5PIp6OJPjDIU5A0VMdJFwxQyu6rLr4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=s6XxsTzcOL0fjBcgwrB9MQ&_nc_ss=7a32e&oh=00_Af2ZiAXXeTHlzkhAWSlNGWrTB4lAPs87edpdItMinYfR2w&oe=69DFC4F3",
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/656282963_17864492928606405_5156448461489722629_n.jpg?stp=cp6_dst-jpg_e35_tt6&_nc_cat=108&ig_cache_key=Mzg1Njc5MDk5ODg4NzM1MTU4MA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjIxNjB4MTExOS5zZHIuQzMifQ%3D%3D&_nc_ohc=IZPQioej_1oQ7kNvwEswThW&_nc_oc=AdptMp8F0Q4ngyPWVpAbFN29G3eUbfa0giX3m2TVx9-rmpoRGSSppXM28w_JWVjedfQ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=s6XxsTzcOL0fjBcgwrB9MQ&_nc_ss=7a32e&oh=00_Af0iVTcHKg6dVqpS52cR5p-I6ZkAUhj7sK5CYDhkhDZN4A&oe=69DFDF90"
       ],
-      "url": "https://www.threads.net/@shuntailor/post/DWF2Germsm_",
+      "url": "https://www.threads.com/@shuntailor/post/DWF2Germsm_",
       "created_at": "2026-03-20 12:34:19",
       "date": "2026-03-20",
       "crawled_at": "2026-04-11T17:21:08.986",
@@ -23418,7 +23418,7 @@
       "display_name": "비노 | 개발자의디자인",
       "full_text": "Claude Code 쓰면서\n이 설정 안 해놓으면 언젠간 사고남\n\n앞으로 Claude Code로\n내부 파일시스템까지 관리할 사람들이라면\n이 설정 꼭 해야함\n\nClaude Code는 파일 삭제 시 rm 명령어를 사용함\n문제는 이게 그냥 복구 불가한 영구 삭제라는 점임\n\ngit 같은 버전 관리 시스템 쓰는 중이면 복구 가능한데\n그렇지 않으면 복구 불가\n\n그래서 나는 이렇게 설정해서 해결함",
       "media": [],
-      "url": "https://www.threads.net/@devdesign.kr/post/DWGqlw0Eo8v",
+      "url": "https://www.threads.com/@devdesign.kr/post/DWGqlw0Eo8v",
       "created_at": "2026-03-20 20:12:58",
       "date": "2026-03-20",
       "crawled_at": "2026-04-11T17:21:08.986",
@@ -23444,7 +23444,7 @@
       "display_name": "gpt_minje",
       "full_text": "이거 인정",
       "media": [],
-      "url": "https://www.threads.net/@gpt_minje/post/DWBiCLNEd6W",
+      "url": "https://www.threads.com/@gpt_minje/post/DWBiCLNEd6W",
       "created_at": "2026-03-18 20:22:00",
       "date": "2026-03-18",
       "crawled_at": "2026-04-11T17:21:08.986",
@@ -23468,7 +23468,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/654080728_17857830477654003_1479742126913299610_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ig_cache_key=Mzg1NjI4MTg5MDAwNTg2NzE0Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjg4N3g2NjAuc2RyLkMzIn0%3D&_nc_ohc=Viv2YiKIapEQ7kNvwF6zK8A&_nc_oc=AdomMN66e3SXrF17K6iMUgUcTyfeXnCG6fR6BYw2UTJqYtjfxY6gqQTKIVpqG7RfQ4c&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=tKXjM5litMG61QI2WP8Cuw&_nc_ss=7a32e&oh=00_Af0ggW_09mFpcOesu60URqcNDdxypTfXbqYwMuOZmYTh1A&oe=69DFE2B7"
       ],
-      "url": "https://www.threads.net/@automation_claire/post/DWEQ_KPklqK",
+      "url": "https://www.threads.com/@automation_claire/post/DWEQ_KPklqK",
       "created_at": "2026-03-19 21:50:46",
       "date": "2026-03-19",
       "crawled_at": "2026-04-11T17:21:08.987",
@@ -23494,7 +23494,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/652816682_18045604841535214_6086702525779820614_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ig_cache_key=Mzg1NTUyNTExNzYxNTcwMjkwMA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEzMDh4OTIxLnNkci5DMyJ9&_nc_ohc=vuWrYiBSIWEQ7kNvwGOat0b&_nc_oc=AdrUIWwQCtC3NhTTtQWy8cZ3rGMorVq1tH46Hw-5tHPje1mB0F3k1-Ke0U4bdUIPKag&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=4KatgHIrynoyDoHHbhu3eg&_nc_ss=7a32e&oh=00_Af3Tug5ox2dJQjvMBJeI9r1IuCu3OpE3Y6rot_rrP-W0Aw&oe=69DFD865"
       ],
-      "url": "https://www.threads.net/@snuzalan/post/DWBk6rCFIN0",
+      "url": "https://www.threads.com/@snuzalan/post/DWBk6rCFIN0",
       "created_at": "2026-03-18 20:47:11",
       "date": "2026-03-18",
       "crawled_at": "2026-04-11T17:21:12.041",
@@ -23520,7 +23520,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/655061468_17921746878268077_7177888483682136072_n.webp?_nc_cat=101&ig_cache_key=Mzg1NTQ5MTg3NzMwMzUzNzE2NQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjQzMjB4MjE4MC5zZHIuQzMifQ%3D%3D&_nc_ohc=i-pQ9QLqFGAQ7kNvwFGh3Hu&_nc_oc=Adoq4HntuKLle6N1tIMkzirP4pfOrB8oFCz9KuCVcac5bjsvuNro-QX-Pbq5zyqjsnQ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=o_L_SJjNVpshF0gmCdRJCw&_nc_ss=7a32e&oh=00_Af1GDqpPMCbYTV1zyUkk-v7qsrtvtdIas262SXlRc-RNGg&oe=69DFD96A"
       ],
-      "url": "https://www.threads.net/@freainer/post/DWBdW9lFM4N",
+      "url": "https://www.threads.com/@freainer/post/DWBdW9lFM4N",
       "created_at": "2026-03-18 19:41:09",
       "date": "2026-03-18",
       "crawled_at": "2026-04-11T17:21:12.041",
@@ -23544,7 +23544,7 @@
       "display_name": "voidlight00",
       "full_text": "Claude Code 스킬이 밤새 스스로 개선됩니다.\n\nKarpathy autoresearch 루프를 스킬에 적용한 방법이에요.\n\n구조는 간단해요:\n- eval.json에 25개 참/거짓 테스트 작성\n- 루프 실행 → 점수 오르면 커밋, 내리면 롤백 → 반복\n- \"사람이 멈출 때까지 절대 멈추지 마라\" 프롬프트 한 줄\n\n실제로 마케팅 카피 스킬을 돌렸더니 두 번 만에 만점 달성했다고 해요.\n\n구조, 포맷, 단어 수 같은 규칙은 자동화 가능하고, 톤이나 창의성 판단은 여전히 사람 몫이에요.\n\n---\n\n깃허브 사이트가 궁금하신가요?\n\n---\n\n리포가 어마무시하구만\n\n---\n\n직접 써보신 분 있으신가요? 어떤 스킬/프롬프트에 돌려봤는지 궁금해요 👀\n\n저는 voidnews-sns 스킬에 돌렸는데 25/25 만점 나왔어요.\n\n---\n\nhttps://github.com/VoidLight00/autoimprove-cc",
       "media": [],
-      "url": "https://www.threads.net/@voidlight00/post/DWDwFi2jyI_",
+      "url": "https://www.threads.com/@voidlight00/post/DWDwFi2jyI_",
       "created_at": "2026-03-19 17:03:16",
       "date": "2026-03-19",
       "crawled_at": "2026-04-11T17:21:12.041",
@@ -23571,7 +23571,7 @@
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/652769016_17951060532114754_7312348672998903712_n.jpg?stp=cp6_dst-jpg_e35_tt6&_nc_cat=103&ig_cache_key=Mzg1NTQ2MzIzMzY4MDAzMDY2MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjExNzl4NjU4LnNkci5DMyJ9&_nc_ohc=xPgdgQJwZ4MQ7kNvwGCgaEU&_nc_oc=AdrWvhMTRKUXUr3YwqohrqbvQVuqZ7YXBCZrZlnQCXp-Ev_KrGAFPaLk10lg5rI_-bY&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=htA1DiODKgosdIyUGh5A9g&_nc_ss=7a32e&oh=00_Af0HT_NG-XYaiOJgYobjrzXNGA7qfken0JdcIHeOSpoJRQ&oe=69DFE33A",
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/652624171_17951060514114754_2341821395173082495_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ig_cache_key=Mzg1NTQ2MzIxODkyNDQzNjk3NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEyMDB4NjMwLnNkci5DMyJ9&_nc_ohc=WSwl0IOcC-cQ7kNvwEVCGk-&_nc_oc=AdpZQCOnRh3B6swhcjPxaHbdTr2mBXxhnNowgZcYpMa9iH3FGcz1yi-PeMW7cgSJSfc&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=htA1DiODKgosdIyUGh5A9g&_nc_ss=7a32e&oh=00_Af1boApnncyPOq3zgkl6zu6C4qH53Axh4CYgsomnKYerDg&oe=69DFEE40"
       ],
-      "url": "https://www.threads.net/@jokerburg.builder/post/DWBWF1Vkw8R",
+      "url": "https://www.threads.com/@jokerburg.builder/post/DWBWF1Vkw8R",
       "created_at": "2026-03-18 18:44:21",
       "date": "2026-03-18",
       "crawled_at": "2026-04-11T17:21:12.041",
@@ -23600,7 +23600,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/650403668_17953766454104669_6239596591660336891_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ig_cache_key=Mzg1NTM2ODQ4MzI3ODI0MDg3NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY3NHg1NjEuc2RyLkMzIn0%3D&_nc_ohc=2YSIno0eni8Q7kNvwHdZvio&_nc_oc=AdpLp47AQrHyWqnuA8g_mA9nD0-Xy6ua5GMjla4zNu-1INNmjDV-NxxSDzbVRDl0lMs&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=IwP3Fj_SFghoVApguUoFaA&_nc_ss=7a32e&oh=00_Af13rz72Jt246ES2D9uv0Me4bpVn2GgFqgjb47rcE4MpoA&oe=69DFC040"
       ],
-      "url": "https://www.threads.net/@ha_rim_kang/post/DWBBTV8CTxq",
+      "url": "https://www.threads.com/@ha_rim_kang/post/DWBBTV8CTxq",
       "created_at": "2026-03-18 15:35:59",
       "date": "2026-03-18",
       "crawled_at": "2026-04-11T17:21:15.112",
@@ -23626,7 +23626,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.71878-15/654414365_1368439075040288_2472076476100333222_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=106&ig_cache_key=Mzg1NDcwNzA2MjM0MDY3MTI4MA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY0MHg0NzQuc2RyLkMzIn0%3D&_nc_ohc=lUjx7SXkHdQQ7kNvwGNBp3W&_nc_oc=Adq7fOPdT5t_0b2tI9TgqqvYgN2na4TAhFH3WhUta3VLMjjdsMW5B0WE-2D4DK9YV0c&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=PgjwoCGSA7nyWMpYFm1JFA&_nc_ss=7a32e&oh=00_Af0HsfBWaVCJlngqGy4ifpwCSvKVhlLxpo5haZOyD70OLw&oe=69DFE9A4"
       ],
-      "url": "https://www.threads.net/@approval.sb/post/DV-q6ZsAVcw",
+      "url": "https://www.threads.com/@approval.sb/post/DV-q6ZsAVcw",
       "created_at": "2026-03-17 17:45:45",
       "date": "2026-03-17",
       "crawled_at": "2026-04-11T17:21:15.113",
@@ -23652,7 +23652,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.71878-15/652672205_2365838437270014_8948704702408595404_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=107&ig_cache_key=Mzg1NTc4ODg0OTE5MjgwNTYyOA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY0MHgzNTAuc2RyLkMzIn0%3D&_nc_ohc=Ta817j_s6HMQ7kNvwGvwxEs&_nc_oc=Adrouz0paNaTWh7dmGPv74G8Hvz8BIJKRYIdchkcaTKRMPYd2kVKuSFjqjEEE0PmMAU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=1651e44s-fOiaEQz1mra1w&_nc_ss=7a32e&oh=00_Af2CmP98_BUq6PBzYv4uqCveUHFEURYHeqlU9xe_FLxRDA&oe=69DFCD78"
       ],
-      "url": "https://www.threads.net/@pnkmath/post/DWCg4eNDKT8",
+      "url": "https://www.threads.com/@pnkmath/post/DWCg4eNDKT8",
       "created_at": "2026-03-19 05:32:58",
       "date": "2026-03-19",
       "crawled_at": "2026-04-11T17:21:15.113",
@@ -23678,7 +23678,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/652823726_17918860533279062_4918213019379238459_n.jpg?stp=cp6_dst-jpg_e35_tt6&_nc_cat=108&ig_cache_key=Mzg1NTU5MzI1MzEwMjAwMjIyNw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEyMDZ4NjMwLnNkci5DMyJ9&_nc_ohc=X4YRQKPpQkYQ7kNvwEWiT2E&_nc_oc=AdooWNnaeLFN2dDwXnIA65tgWK9XhOV3L6qbf_B25kLsW1pDRii5JxvBiIDfREiT-9s&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=XUTMYqvI1zx9sq43PK3rIA&_nc_ss=7a32e&oh=00_Af19Py7kSlmbw-C5GAVOvrdchc1ZtDfI2OsG0LaVFWhtuQ&oe=69DFBF20"
       ],
-      "url": "https://www.threads.net/@slowsoyang/post/DWB2Lu1CSAV",
+      "url": "https://www.threads.com/@slowsoyang/post/DWB2Lu1CSAV",
       "created_at": "2026-03-18 23:18:04",
       "date": "2026-03-18",
       "crawled_at": "2026-04-11T17:21:15.113",
@@ -23704,7 +23704,7 @@
       "media": [
         "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/652794614_17873470767559701_2260009155657635319_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=Mzg1MzkxNjE3NDIyMDU3MTQ0Nw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEyODB4NzIwLnNkci5DMyJ9&_nc_ohc=A_wxiED1PX8Q7kNvwHKLYFb&_nc_oc=AdoM0PTJL20LgVBej9sjKXbkavMejMAgVxjmq_wxBhFNd_4BOP76b7AM89n3r3c6w5M&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=IL8ssp5haWjYFouuiaY6lQ&_nc_ss=7a32e&oh=00_Af37l8JNbfJaAR1NGt1PFxWiP8oZTc0gN1S0y3kM_Ovoew&oe=69DFE89A"
       ],
-      "url": "https://www.threads.net/@softdaddy_o/post/DV73FdujLM3",
+      "url": "https://www.threads.com/@softdaddy_o/post/DV73FdujLM3",
       "created_at": "2026-03-16 15:30:30",
       "date": "2026-03-16",
       "crawled_at": "2026-04-11T17:21:15.116",
@@ -23737,6 +23737,2216 @@
       "user_link": "https://www.linkedin.com/in/ACoAACY7KJQBDtSTk6IuIwZY6ntBGJx1fCYwsYI",
       "content_type": "text",
       "platform_sequence_id": 357
+    },
+    {
+      "sequence_id": 983,
+      "platform_id": "DV1Uh5kkXzw",
+      "sns_platform": "threads",
+      "code": "DV1Uh5kkXzw",
+      "urn": "",
+      "username": "shuntailor",
+      "display_name": "바이브코딩 태일러",
+      "full_text": "[1일차] 대박….\nClaude Code 오늘 처음 써봤는데 말도 안돼…..\n\n나는 에이전트들이 실제로 움직이고 협업하는 모습을 시각화해야 비개발자라는 거대한 시장을 장악한다고 생각했어. 그래서 해봤지. \n\n실제 Md파일을 읽을 수가 있고\n회의실에 원하는 직원을 소집해서 회이진행 시킬 수 있어. 회의는 Claude APi로 월 1달러 정도 비용이 나가.\n회의록은 바로 gmail 로 보내줘….\n\n이거 수요 많으면 내 유튜브에 강의 올릴까 생각도 하고 있어. 구독해서 기다려줘~~\n\n---\n\n이 프로젝트의 출처: \n - VS Code 플러그인과는 무관\n - 이전 대화에서 처음부터 직접 개발한 커스텀 프로젝트 \n - Phaser 3 (게임 엔진) + Express (서버) + Vite (빌드) 조합 \n \n  구성 요소 전부 직접 작성: \n - 픽셀아트 오피스 렌더링 (Room.js, Character.js) \n - 부서별 방 배치, 책상, 모니터, 직원 캐릭터 \n - .company/ MD 파일 감시 → 실시간 시각화 \n - 우측 패널 (ActivityFeed, 회의 소집, 업무 요청 탭)",
+      "media": [
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.71878-15/652772660_26653617147578252_4802061472289457216_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=102&ig_cache_key=Mzg1MjA3NTM0Njc3NTA4MDE3Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY0MHgzNjAuc2RyLkMzIn0%3D&_nc_ohc=6M6GS5b44vcQ7kNvwGbtmL2&_nc_oc=AdobvxKniu7AnyQGjouUFdlQTslcfpKdH_ngzpZpsmCn5V2VbgYNQZe4SCfeZRzEptQ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=k9dU_l8NypYPk-Xq7hCHfg&_nc_ss=7a32e&oh=00_Af0cY4rSvYl3GO28L-J6G-QknHJm3X8xiWZUmpkiRrTN4w&oe=69E4DB5D"
+      ],
+      "url": "https://www.threads.com/@shuntailor/post/DV1Uh5kkXzw",
+      "created_at": "2026-03-14 02:38:08",
+      "date": "2026-03-14",
+      "crawled_at": "2026-04-13T09:09:48.471",
+      "source": "consumer_detail",
+      "local_images": [
+        "web_viewer/images/c89e6b8961633bae28307987a2476e6c.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DV1Uh5kkXzw",
+      "pk": "3852075346775080176",
+      "taken_at": 1773423488,
+      "original_item_count": 2,
+      "platform_sequence_id": 666
+    },
+    {
+      "sequence_id": 984,
+      "platform_id": "DV5CAJ3kvxy",
+      "sns_platform": "threads",
+      "code": "DV5CAJ3kvxy",
+      "urn": "",
+      "username": "ai.winey_ny",
+      "display_name": "국내 최대 AI 커뮤니티 리더 | 와인바 사장 | 고양이 집사",
+      "full_text": "클로드코드 실행하려고 터미널에서 \n매번 명령어 치는 거 귀찮았던 분 손 🙋\n\nclaude —dangerously-skip-permissions\n명령어는 절대 외우기도 어렵고… \n\n이제는 ccc, ccd만 치면\n바로 클로드코드가 열립니다.\nzshrc에 단축어 alias 3줄만 추가하면 끝.\n\ncc → Claude Code 실행\nccc → Chrome 브라우저 연동\nccd → 권한 스킵 자동 승인\n\n터미널에 이거 복붙하세요.\necho 'alias cc=\"claude\"' >> ~/.zshrc\necho 'alias ccc=\"claude —chrome\"' >> ~/.zshrc\necho 'alias ccd=\"claude —dangerously-skip-permissions —chrome\"' >> ~/.zshrc\nsource ~/.zshrc\n\n클코 자주 쓰는 사람 무조건 세팅해두세요 💪",
+      "media": [
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.71878-15/652766770_1408056263917554_6408153616896793625_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=108&ig_cache_key=Mzg1MzExOTc2Mjg4MTI0ODM3MA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY0MHgzNzYuc2RyLkMzIn0%3D&_nc_ohc=yoVZk56uzt8Q7kNvwGJCKTn&_nc_oc=AdrOv6flg7wD6MiCT5my5Qcu_GG-wozrIWUGWgg-zKcX8mhi_IAi4r5rfTvwrg2O1eQ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=43yDmxSWIvmq1hKfKYeoPg&_nc_ss=7a32e&oh=00_Af2p2Xogy8xymUGH4NOU7YPoer7t_5IRSOp_1SMt87XqQg&oe=69E4DB6F"
+      ],
+      "url": "https://www.threads.com/@ai.winey_ny/post/DV5CAJ3kvxy",
+      "created_at": "2026-03-15 13:09:23",
+      "date": "2026-03-15",
+      "crawled_at": "2026-04-13T09:09:48.471",
+      "source": "consumer_detail",
+      "local_images": [
+        "web_viewer/images/6d6286cbd63ed35a9edcb8d21b4af5f3.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DV5CAJ3kvxy",
+      "pk": "3853119762881248370",
+      "taken_at": 1773547763,
+      "original_item_count": 1,
+      "platform_sequence_id": 667
+    },
+    {
+      "sequence_id": 985,
+      "platform_id": "DV5RQ9nE2-K",
+      "sns_platform": "threads",
+      "code": "DV5RQ9nE2-K",
+      "urn": "",
+      "username": "nakseo.growth",
+      "display_name": "Nak서장ㅣ자기계발, AI, 콘텐츠",
+      "full_text": "Google NotebookLM이나 젠스파크 같은\n슬라이드 제작 도구들, 디자인 통일성 없어서\n아쉬웠던 분들 주목!\n\n이제 그 고민을 끝낼 방법을 찾았습니다.\n바로 클로드(Claude) 추가 기능을 활용한\nPPT 자동화입니다.\n\n실제 저희 회사의 '일임 서비스 가이드'를\n이 방식으로 단 1시간 만에 제작했습니다.\n이제 저희 팀은 기획안(글)만 작성하면,\n디자인은 AI가 회사의 가이드라인에 맞춰\n완벽하게 입혀줍니다.\n\n제가 어떤 프로세스로 구현했는지,\n그리고 실무에서 바로 써먹을 수 있는\n핵심 팁은 무엇인지 이어지는 답글에서\n모두 공개하겠습니다!\n\n---\n\n1단계. 슬라이드 마스터에 우리 회사 색감\n및 테마, 로고 설정하기 🎨\n\nAI가 내 마음대로 디자인하는 걸 막으려면\n'도면'부터 잘 짜야 합니다.\nPPT의 슬라이드 마스터는 AI가 지켜야 할\n디자인 가이드라인이 됩니다.\n\n-로고 & 폰트 고정: 마스터 슬라이드에\n회사 로고를 넣고 폰트를 지정하면,\nAI가 생성하는 모든 슬라이드에 자동 적용됩니다.\n-색상 팔레트 추출: 회사 웹사이트나\n기존 자료에서 색상 코드를 추출해\n테마를 설정하세요.\n-레이아웃 정리: 제목형, 본문형, 차트형 등\n자주 쓰는 레이아웃만 남겨두면\nAI가 훨씬 정확하게 내용을 배치합니다.\n\n💡 Tip: 우측 상단에 색상 팔레트 이미지를\n작게 넣어두면, 나중에 AI가 만든 도형 색상을\n스포이트로 수정할 때 정말 편해요!\n\n---\n\n2단계. 내용과 디자인 가이드를 노션에\n정리하기 📝\n\n무작정 AI를 돌리기보다, '무엇을 적을지'와\n'어떻게 보여줄지'를 미리 정리하는 과정이\n필요합니다. 저는 노션 페이지를 활용했습니다.\n\n-슬라이드별 핵심 내용: 각 페이지에 들어갈\n텍스트를 구조화해서 정리합니다.\n-디자인 가이드 추가: \"문장은 전문적인 톤으로\",\n\"차트는 어떤 스타일로\"와 같은 세부 가이드를\n별도 파일로 준비하면 AI가 훨씬 정교한 결과물을\n내놓습니다.\n사실 전 이것도 귀찮아서 gemini 사용했어요.\n-프롬프트 준비: 색상 코드나 특정 스타일을\n유지하게 만드는 전용 프롬프트를 미리\n복사해두면 작업 속도가 2배는 빨라집니다.\n\n---\n\n3단계: 클로드 활성화 및 AI 실행 (feat. 비용) ⚡\n\n이제 모든 준비가 끝났습니다. PPT 안에서 클로드를 깨워 일을 시킬 차례예요!\n\n-활성화 방법: PPT 홈 탭 → 추가 기능 → 'Claude' 검색 후 설치.\n-설치 후 본인의 클로드 계정으로 로그인하면 우측에 채팅창이 뜹니다.\n-비용 안내: 이 기능은 현재 클로드 유료 사용자(Pro, Team 등)만 이용 가능합니다.\n월 약 $20(한화 약 2.7만 원) 정도의 구독료가 발생하지만, 작업 시간을 몇 시간씩 단축해 주는 걸 생각하면 좋은 투자라고 생각해요! \n\n💡 Tip: 노션에 정리한 내용을 붙여넣으며 \"슬라이드 마스터와 ~색상 테마를 참고해서 디자인해줘\"라고 명령하세요.",
+      "media": [
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.71878-15/653828737_1191000099563469_2818636677295567225_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=106&ig_cache_key=Mzg1MzE4NjcxOTg2OTUzMTk5NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY0MHgxMTM2LnNkci5DMyJ9&_nc_ohc=U4dYGHymZ7UQ7kNvwHIAXK8&_nc_oc=AdoJTECNOFGaGDDOOOj7-re2nKPRdyoCfnvS1oFRyjaq0ZLLMWkLDm5HlG6tkp4pi9k&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=ltPsXHt-FyJKqKHSDHjouQ&_nc_ss=7a32e&oh=00_Af1aEyB2Km9z_B7UOlOVyQ-9FDXEeZWh23IYE4BKonihLA&oe=69E4F1AE",
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/652156778_17879252607485598_8555550696047985498_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ig_cache_key=Mzg1MzE4ODIzMTc5MDMxNDQ1Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjIxNjB4MTExMS5zZHIuQzMifQ%3D%3D&_nc_ohc=RnjCGzu1DnMQ7kNvwH-6f6G&_nc_oc=AdomP1KkIru_UHyR6TgzWO2qWM0B9zZ6P5BY_nN4J_qgVJAMNU8RbQrBIpxc8QTt8JM&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=ltPsXHt-FyJKqKHSDHjouQ&_nc_ss=7a32e&oh=00_Af2rHI_VCQ4VOmL3-ksgVnStQNNKH007W1jUZLD_a7OfLw&oe=69E4E2E9",
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/652303394_17879252661485598_8372946890963729461_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ig_cache_key=Mzg1MzE4OTM3OTIyNjAyNDQxMg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE1NjZ4MTQ0MC5zZHIuQzMifQ%3D%3D&_nc_ohc=oWWpXRw5lSkQ7kNvwGqVc8A&_nc_oc=AdpSF8fGPXV-uJrkB2ZAb34YW2ft0XqYQ3Jh4KftJI46_3QuFJ26OtZczTkS6o-6o84&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=ltPsXHt-FyJKqKHSDHjouQ&_nc_ss=7a32e&oh=00_Af3JFBtz9SDYqQoh3uuYagjeCPtlNYrrVtPEozlavtODfw&oe=69E4CE67",
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/652665155_17879252856485598_2011131943086383930_n.jpg?stp=cp6_dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=Mzg1MzE5MDg1NDMyMDgwNDg3Nw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjIxNjB4MTM5Ni5zZHIuQzMifQ%3D%3D&_nc_ohc=oTo4EVjNiuYQ7kNvwGKvPBK&_nc_oc=AdoaKQBvlNWKfBxpMLV7zfZx2YT3oV5oS3mjqK8CejAsPhMwCIinwkJhV6MDqatU6QY&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=ltPsXHt-FyJKqKHSDHjouQ&_nc_ss=7a32e&oh=00_Af2kU2GaoZz6b-E9WyVpcUfLLAIrf__PVMtuURQOJzlmfg&oe=69E4FB8B"
+      ],
+      "url": "https://www.threads.com/@nakseo.growth/post/DV5RQ9nE2-K",
+      "created_at": "2026-03-15 15:21:33",
+      "date": "2026-03-15",
+      "crawled_at": "2026-04-13T09:09:48.471",
+      "source": "consumer_detail",
+      "local_images": [
+        "web_viewer/images/3316f3b9be6a8ac482a0a0e0e8bcd8fb.jpg",
+        "web_viewer/images/5360b1526ce00d4274fffa98fa94cb2a.jpg",
+        "web_viewer/images/97ce41578e5048945f121990d662cda0.jpg",
+        "web_viewer/images/badcfdbf70f4d062ba61e61a21296c09.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DV5RQ9nE2-K",
+      "pk": "3853186888648322954",
+      "taken_at": 1773555693,
+      "original_item_count": 4,
+      "platform_sequence_id": 668
+    },
+    {
+      "sequence_id": 986,
+      "platform_id": "DV5DA2IEX42",
+      "sns_platform": "threads",
+      "code": "DV5DA2IEX42",
+      "urn": "",
+      "username": "jwon.ig",
+      "display_name": "제이원(jwon)",
+      "full_text": "클로드 코드로\n큰 프로젝트를 한 번에 만들려고 하면\n처음엔 미쳤나 싶을 정도로 순조롭다.\n\n하지만 조금 지나면\n앞에서 한 말 잊고\n코드 꼬이고\n변수 바꾸고\n갑자기 엉뚱한 방향으로 간다.\n\n이건, 클로드 코드가 멍청해서가 아니다.\n일 시키는 방식이 잘못된 경우가 많다.\n\n---\n\n큰 프로젝트를\n프롬프트 1개로 끝내려는 건\n설계도 없이 건물 짓는 것과 같다.\n\n웹서비스\nSaaS\n게임\n대규모 앱\n\n이런 건 기능이 많아서\n중간부터 컨텍스트가 넘친다.\n\n그 순간부터\n환각\n누락\n재작업이 반복된다.\n\n순식간에 토큰이 녹아 내릴다.\n\n---\n\n이럴 때 필요한 건\n“더 좋은 프롬프트”가 아니라\n“작업 구조”다.\n\n보통 이렇게 나누면 안정적이다.\n\nrequirements_md → 무엇을 만들지\nplan_md → 어떤 단계로 만들지\nprogress_md → 어디까지 했는지\nCLAUDE_md → 규칙과 원칙\n\n큰 프로젝트일수록\n클로드 코드도 문서 보고 일하게 해야 한다.\n\n---\n\n한 번에 만들게 하지 말고\nPhase 1\nPhase 2\nPhase 3\n\n이렇게 쪼개서 시켜야 한다.\n\n그러면\n세션이 끊겨도 쉽게 이을 수 있고\n토큰 낭비도 줄이고\n디버깅 쉬워지고\n환각 확률도 크게 줄어든다.\n\n클로드 코드 잘 쓰는 사람을 보면\n프롬프트 잘 쓰는 사람이 아니라\n작업 구조를 잘 짜는 사람들이었다.\n\n---\n\n클로드 코드 쓰다가\n“처음엔 잘되더니 왜 뒤로 갈수록 망하지?”\n\n이 느낌 들었다면\n실력 문제가 아니라\n작업 방식 문제일 가능성이 크다.\n\n클로드 코드는 마법사가 아니다.\n정리 안 된 프로젝트를 만나면\n같이 길을 잃는다.\n\n큰 프로젝트일수록\n프롬프트보다\n설계 문서가 먼저다.",
+      "media": [],
+      "url": "https://www.threads.com/@jwon.ig/post/DV5DA2IEX42",
+      "created_at": "2026-03-15 13:17:01",
+      "date": "2026-03-15",
+      "crawled_at": "2026-04-13T09:09:48.471",
+      "source": "consumer_detail",
+      "local_images": [],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DV5DA2IEX42",
+      "pk": "3853124208449125942",
+      "taken_at": 1773548221,
+      "original_item_count": 5,
+      "platform_sequence_id": 669
+    },
+    {
+      "sequence_id": 987,
+      "platform_id": "DV4ynfTk3uN",
+      "sns_platform": "threads",
+      "code": "DV4ynfTk3uN",
+      "urn": "",
+      "username": "kk_zang",
+      "display_name": "크크",
+      "full_text": "앤트로픽 스킬 본따서 코덱스에도 적용해봤는데\n아 왜 진작에 이렇게 안했지 빠가사리였네 나",
+      "media": [
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/652224536_17949408291111094_7730691212109678070_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ig_cache_key=Mzg1MzA1MjA5NzIxNTAzNjMwMQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjcwNng3NjQuc2RyLkMzIn0%3D&_nc_ohc=OSnrH9X6IdgQ7kNvwHSAuxQ&_nc_oc=AdrSigCsFgT7rBLT21KG8UtPlRgTb4PSuT0GWPOjagCo7c9K-9gWNu5_n6UfNTd8uIY&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=nBHFX9py6LSim4n9CWzvvw&_nc_ss=7a32e&oh=00_Af13CTP_5aNQIyLKHTqkDzQMYdryJodkbSM5eRJfzp9BpQ&oe=69E4E986"
+      ],
+      "url": "https://www.threads.com/@kk_zang/post/DV4ynfTk3uN",
+      "created_at": "2026-03-15 10:53:44",
+      "date": "2026-03-15",
+      "crawled_at": "2026-04-13T09:09:48.475",
+      "source": "consumer_detail",
+      "local_images": [
+        "web_viewer/images/daccbe4ac3c2ad37914a4de648b498ff.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DV4ynfTk3uN",
+      "pk": "3853052097215036301",
+      "taken_at": 1773539624,
+      "original_item_count": 1,
+      "platform_sequence_id": 662
+    },
+    {
+      "sequence_id": 988,
+      "platform_id": "DV4uaOmgWWg",
+      "sns_platform": "threads",
+      "code": "DV4uaOmgWWg",
+      "urn": "",
+      "username": "exitnomadlab",
+      "display_name": "Exit nomad lab",
+      "full_text": "디자인 하는 사람이라면\n꼭 알아두면 좋은 AI 디자인 툴이 있다.\nKittl\n아직 한국에서는\n생각보다 많이 알려지지 않았다.\n이 툴은\n사용자가 원하는\n스타일이나 테마를 입력하면\nAI가 디자인 템플릿을 자동으로 만들어준다.\n\n---\n\n그래서\n포스터\n티셔츠 디자인\n타이포그래피\n로고\n같은 디자인을\n훨씬 빠르게 만들 수 있다.\n\n특히\nPrint on Demand(POD)\n굿즈 제작\n같은 비즈니스에서\n많이 사용된다.\n\n---\n\n생성된 디자인은\n텍스트와 폰트를 수정하면서\n자신만의 디자인으로 발전시킬 수도 있다.\n그리고\n목업 이미지 생성\n짧은 영상 콘텐츠 제작\n까지 가능해서\n콘텐츠 제작과\n제품 디자인을\n한 번에 만들 수 있다.\n그래서 요즘\n디자인 작업을 하는 사람들에게\n꽤 유용한 AI 툴로 알려지고 있다.",
+      "media": [
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/652593828_18039621389587946_8473410256880358359_n.webp?_nc_cat=102&ig_cache_key=Mzg1MzAzMzU4ODU4MDc2Mjg0NQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjExMjB4OTQwLnNkci5DMyJ9&_nc_ohc=zqNrbW9h8w4Q7kNvwF6aKZW&_nc_oc=AdoFR5Zp_fqWOaBCUH87yguLQcKemiguORarzM6RXsiaL8e74tPjBFkB86M_wlpBwk0&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=HTz_2MDFsU34L0uWXIbKzQ&_nc_ss=7a32e&oh=00_Af1x59_gKJKXselEcwZmKebA60Dfl-DUfyD9LV7Z2LAUYw&oe=69E4E66E"
+      ],
+      "url": "https://www.threads.com/@exitnomadlab/post/DV4uaOmgWWg",
+      "created_at": "2026-03-15 10:16:59",
+      "date": "2026-03-15",
+      "crawled_at": "2026-04-13T09:09:48.475",
+      "source": "consumer_detail",
+      "local_images": [
+        "web_viewer/images/7ae208749ae447568b55ddbf3b9cfab6.webp"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DV4uaOmgWWg",
+      "pk": "3853033593739765152",
+      "taken_at": 1773537419,
+      "original_item_count": 3,
+      "platform_sequence_id": 663
+    },
+    {
+      "sequence_id": 989,
+      "platform_id": "DV54nVDDW3c",
+      "sns_platform": "threads",
+      "code": "DV54nVDDW3c",
+      "username": "ahrom.insights",
+      "display_name": "Ahrom Kim, Ph.D. | Career pivot• LinkedIn tips • Growth Mindset",
+      "full_text": "처음에 클로드 코드를 쓸때\n다들 데스크탑 어플로 하잖아\n나도 처음에 그렇게 시작해서\n전에 이야기한 냉장고 매니저랑 지출 관리 시스템을 만들었거든\n\n그러고나서는\n터미널 클로드코드+ 옵시디언 을 사용한\n지식 + 할일 + 글쓰기 + LLM 컨텍스트 + 파일 관리 시스템을 만들었는데\n이거 진짜 미쳤단 말이지\n\n만든 슬래시 명령어 7개 + 에이전트 2개\n하나씩 설명해줄게\n\n그림은 노트북LM이 만들어준\n일간 주간 워크플로우야!",
+      "media": [
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/652125715_17927632884248024_76806093937433450_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ig_cache_key=Mzg1MzM1OTg2NzI4MTM5NDg0NQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjIxNjB4MTIwNi5zZHIuQzMifQ%3D%3D&_nc_ohc=QquDzmoatUgQ7kNvwEJGaHy&_nc_oc=AdqrdslXiTQTL2FE0XzePTJ6zgvt0A7cSAyWotM5uRCWaynkwOk6qJlOgk-gLNHc1i0&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=8pfCKLnY6fFECBlBWbEewA&_nc_ss=7a32e&oh=00_Af1HvlpKC0QxoblrQeXDbghtxGYtxahIAAlhd63mxEPT8w&oe=69E1EEAB",
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/652666043_17927632896248024_2682081362378119431_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ig_cache_key=Mzg1MzM1OTg3NTY0NDgxNjA5NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjIxNjB4MTIwNi5zZHIuQzMifQ%3D%3D&_nc_ohc=OOz0UqKM-1wQ7kNvwHicsBS&_nc_oc=Adpe6mOiw3sWnRt0my3C1RsU4osFG00kK9TcL6hWpaszLIu15i1WyQQ41RmTe-CTecc&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=8pfCKLnY6fFECBlBWbEewA&_nc_ss=7a32e&oh=00_Af0y4yZR1EIl_e_ExamA4Vf70NFR8z87NcoQbf27XH-Uww&oe=69E21E29",
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/652252883_17927632911248024_8200439381109375446_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=Mzg1MzM1OTg4NTQ1MTA3Nzg2NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjIxNjB4MTIwNi5zZHIuQzMifQ%3D%3D&_nc_ohc=ZxMbWEDnLRUQ7kNvwFzTCd0&_nc_oc=Adqr7qb7iFNU_q4IPg1cQRIMKL6soVQFHL4OgN5R9NTX-D_edjz4LQF-z8WMD8sYifs&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=8pfCKLnY6fFECBlBWbEewA&_nc_ss=7a32e&oh=00_Af10NR0bQjAQWULifhqwMmZY3F7TtIBnnpygcoaA7UUouw&oe=69E1FB17"
+      ],
+      "url": "https://www.threads.com/@ahrom.insights/post/DV54nVDDW3c",
+      "created_at": "2026-03-15 21:05:23",
+      "date": "2026-03-15",
+      "crawled_at": "2026-04-13T09:09:48.475",
+      "source": "network",
+      "local_images": [
+        "web_viewer/images/5efd063c9640918b0f82eda668543e37.jpg",
+        "web_viewer/images/3d175c0d1b3789cdbac1120494532815.jpg",
+        "web_viewer/images/2c0b5b66fe868be781f3e84066528219.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": false,
+      "root_code": "DV54nVDDW3c",
+      "like_count": 382,
+      "reply_count": 76,
+      "repost_count": 99,
+      "quote_count": 6,
+      "pk": "3853359949456174556",
+      "media_type": 8,
+      "content_type": "carousel",
+      "platform_sequence_id": 664
+    },
+    {
+      "sequence_id": 990,
+      "platform_id": "DV54nOpjePk",
+      "sns_platform": "threads",
+      "code": "DV54nOpjePk",
+      "urn": "",
+      "username": "ahrom.insights",
+      "display_name": "Ahrom Kim, Ph.D. | Career pivot• LinkedIn tips • Growth Mindset",
+      "full_text": "내가 ADHD 인이라서\n컨텍스트 스위치를 잘하는데 못해\n\n뭔말이냐면\n시도때도 없이 생각이 여기저기로 튀는데\n이 모든걸 한곳에서 볼 시스템이 항상 필요했거든\n\n근데 옵시디언+클코가 그걸 해냄...\n것도 3일만에 ㅠㅠㅠㅠ\n미친거 아니냐고.. \n\n거기다 파일 분류 자동화?\n미쳤어..\n\n나 원래 데스크탑이랑 다운로드 폴더에\n파일 거짓말 안하고 몇백개 있던 사람인데\n다 분류 끝\n\n깨끗해졌어 ㅠㅠㅠㅠㅠ\n\n그리고 이 시스템은 아직도 업데이트 중 😆\n\n궁금한거 있으면 언제든지 물어봐줘!\n\n---\n\n처음에 클로드 코드를 쓸때\n다들 데스크탑 어플로 하잖아\n나도 처음에 그렇게 시작해서\n전에 이야기한 냉장고 매니저랑 지출 관리 시스템을 만들었거든\n\n그러고나서는\n터미널 클로드코드+ 옵시디언 을 사용한\n지식 + 할일 + 글쓰기 + LLM 컨텍스트 + 파일 관리 시스템을 만들었는데\n이거 진짜 미쳤단 말이지\n\n만든 슬래시 명령어 7개 + 에이전트 2개\n하나씩 설명해줄게\n\n그림은 노트북LM이 만들어준\n일간 주간 워크플로우야!\n\n---\n\n☀️ 아침 루틴\n /today → 오늘 할일 + 이번주 목표 + 논문 요약 자동 생성\n /research → 내 키워드 30개로 arXiv 논문 자동 수집 + 요약\n\n📎 작업 중 아무때나\n /capture → URL이나 메모 던지면 20개 주제 폴더에 자동 분류 + 저장\n /process-inbox → 받은함에 쌓인 거 한번에 AI 요약 + 분류 + 정리\n\n🌙 하루 끝날 때\n /learned → 대화에서 배운 거 컨텍스트 파일에 자동 저장\n /build-log → 작업 내역 자동 문서화 (뭘 만들었는지 + 왜)\n\n📊 금요일\n /weekly-digest → 한주 논문 + 완료한 일 + 다음주 계획 정리\n\n📚 PDF Sorter + Librarian \n구글드라이브와 원드라이브에 PDF 넣으면\nAI가 읽고 → 분류하고 → 태그 달고 → 옵시디언에 요약 .md 생성\n이걸로 PDF 400개 자동 분류함\n\n근데 진짜 중요한건\n\n---\n\n공유가 많이 되어서\n내가 짧은 기간에 빠르게 많은 걸 구축할 수 있었던 \n비결도 공유할게!",
+      "media": [
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/652125715_17927632884248024_76806093937433450_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ig_cache_key=Mzg1MzM1OTg2NzI4MTM5NDg0NQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjIxNjB4MTIwNi5zZHIuQzMifQ%3D%3D&_nc_ohc=OMUzcVIDhvMQ7kNvwGmUWF6&_nc_oc=Adofda2nP48AQS1DVVd0Gf2aVmWhM7qMQ4v5oFvXOQMTCEZdrBOkQroYKLkEEZsi-KM&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=DZx8Px2y1c7p1_cPj3QmlA&_nc_ss=7a32e&oh=00_Af390FnoEIx2EXa8fikoRhsPns-FVStPUsDMWtNPRftslw&oe=69E4C9EB"
+      ],
+      "url": "https://www.threads.com/@ahrom.insights/post/DV54nOpjePk",
+      "created_at": "2026-03-15 21:05:22",
+      "date": "2026-03-15",
+      "crawled_at": "2026-04-13T09:09:48.475",
+      "source": "consumer_detail",
+      "local_images": [
+        "web_viewer/images/9e1e1131f4c9784715c56e5d24f44f33.jpg"
+      ],
+      "is_detail_collected": false,
+      "is_merged_thread": true,
+      "root_code": "DV54nVDDW3c",
+      "pk": "3853359942585934820",
+      "taken_at": 1773576322,
+      "original_item_count": 4,
+      "platform_sequence_id": 664
+    },
+    {
+      "sequence_id": 991,
+      "platform_id": "DV5WkP9ib3u",
+      "sns_platform": "threads",
+      "code": "DV5WkP9ib3u",
+      "username": "unclejobs.ai",
+      "display_name": "엉클잡스 | Ai 시대, 돈이 되는 정보 전달",
+      "full_text": "v5에서 뭐가 바뀌었나\n\n3월 9일에 나온 Superpowers 5의 핵심 변화 세 가지.\n\n- Visual Brainstorming\n\nv5의 가장 큰 변화입니다. 기존에 Claude가 디자인이나 UX를 설명할 때 ASCII 아트로 그렸잖아요. 이제 HTML로 렌더링해서 브라우저에서 보여줍니다. 목업, 다이어그램, 비교표를 실제 화면으로 볼 수 있어요.\n\nJesse의 말: \"Claude한테 계속 '그걸 HTML로 써서 보여줘'라고 하다가, 에이전틱 코딩의 가장 중요한 원칙을 떠올렸다 — '내가 왜 이걸 하고 있지?'\" 그래서 자동화한 거예요.",
+      "media": [],
+      "url": "https://www.threads.com/@unclejobs.ai/post/DV5WkP9ib3u",
+      "created_at": "2026-03-15 16:07:52",
+      "date": "2026-03-15",
+      "crawled_at": "2026-04-13T09:09:48.475",
+      "source": "network",
+      "is_detail_collected": true,
+      "is_merged_thread": false,
+      "root_code": "DV5WkP9ib3u",
+      "like_count": 2,
+      "reply_count": 1,
+      "repost_count": 0,
+      "quote_count": 0,
+      "pk": "3853210204255141358",
+      "media_type": 19,
+      "content_type": "image",
+      "platform_sequence_id": 665
+    },
+    {
+      "sequence_id": 992,
+      "platform_id": "DV5WiZwCbpp",
+      "sns_platform": "threads",
+      "code": "DV5WiZwCbpp",
+      "urn": "",
+      "username": "unclejobs.ai",
+      "display_name": "엉클잡스 | Ai 시대, 돈이 되는 정보 전달",
+      "full_text": "자, \n프롬프트 대신 Skills가 이해되셨다면 \n무지성 강추 드리는 플러그인 입니다.\n\n왜냐하면,\nClaude Code에 Superpowers를 깔면, \nAI가 일하는 방식이 바뀌기 때문이죠.\n\n\"블로그 글 써줘\"라고 하면 바로 쓰기 시작하는 게 아니라, 먼저 뭘 만들려는 건지 묻고, 스펙을 잡고, 작업을 쪼개고, 병렬로 실행하고, 검수한 다음에 결과를 내놓아요.\n\nGitHub 스타 약 8만 개. 매일 트렌딩. 2026년 1월 15일에 Anthropic 공식 마켓플레이스에 등재됐고, 3월 9일에 v5가 나오면서 한 단계 더 올라갔습니다. \n\n그런데 쓰는 사람 대부분이 개발자예요. \n마케터, 기획자, 크리에이터가 쓰면 더 강력한 도구인데..\n\n다들 모르고 계시죠. 사실, 저만 알고 싶긴 해요.\n\n---\n\nSuperpowers가 뭔가\n\nJesse Vincent(obra)@obrajesse 가 만든 \n오픈소스 Skills 프레임워크입니다. \n\nClaude Code 위에 설치하면, AI가 작업을 시작하기 전에 구조화된 파이프라인을 강제로 따르게 됩니다.\n\n핵심 워크플로우는 이래요.\n\n① 브레인스토밍: 뭘 만들려는지 질문하고, 대안을 탐색하고, 디자인을 섹션별로 쪼개서 보여줌. 바로 실행하지 않음.\n② 스펙 확정: 대화에서 뽑아낸 설계를 문서로 정리. 사용자가 읽고 승인해야 다음 단계로 넘어감.\n\n---\n\n③ 실행 계획: 작업을 2~5분짜리 마이크로 태스크로 분해. 각 태스크에 정확한 파일 경로, 코드, 검증 단계가 포함됨.\n④ 서브에이전트 실행: 태스크마다 별도의 AI 에이전트를 띄워서 병렬로 처리. 한 에이전트가 한 작업만 담당. 컨텍스트가 섞이지 않음.\n⑤ 코드 리뷰: 스펙 준수 여부 → 코드 품질 순으로 2단계 검토. 심각한 문제가 있으면 진행 차단.\n⑥ 완료: 테스트 통과 확인, 머지/PR/유지/폐기 중 선택.\n\n이 모든 게 자동으로 발동합니다. 사용자가 특별히 뭘 하지 않아도, Skills가 관련 작업을 감지하면 해당 워크플로우가 작동해요.\n\n---\n\nv5에서 뭐가 바뀌었나\n\n3월 9일에 나온 Superpowers 5의 핵심 변화 세 가지.\n\n- Visual Brainstorming\n\nv5의 가장 큰 변화입니다. 기존에 Claude가 디자인이나 UX를 설명할 때 ASCII 아트로 그렸잖아요. 이제 HTML로 렌더링해서 브라우저에서 보여줍니다. 목업, 다이어그램, 비교표를 실제 화면으로 볼 수 있어요.\n\nJesse의 말: \"Claude한테 계속 '그걸 HTML로 써서 보여줘'라고 하다가, 에이전틱 코딩의 가장 중요한 원칙을 떠올렸다 — '내가 왜 이걸 하고 있지?'\" 그래서 자동화한 거예요.\n\n---\n\n- 서브에이전트 기본값 전환\n\n이전에는 서브에이전트 개발과 수동 실행 중 선택할 수 있었어요. 5개월간의 데이터를 보니 서브에이전트 방식이 압도적으로 더 효과적이었다고 합니다. 이제 서브에이전트를 지원하는 환경이면 자동으로 서브에이전트 모드로 돌아갑니다.\n\n그리고 비용 최적화도 들어갔어요. 브레인스토밍 + 계획 작성 과정에서 태스크가 충분히 상세해지면, 실제 구현은 Claude Haiku 같은 저렴한 모델로 돌립니다.\n\n- 계획 문서 자동 검증\n\nClaude Opus 4.5부터 긴 스펙이나 계획 문서에서 \"TBD\" 또는 \"나중에 채울 것\"이라고 남겨놓는 경우가 있었어요. 이러면 실행 단계에서 당연히 문제가 생깁니다. v5에서는 계획 작성이 끝나면 별도 서브에이전트가 문서를 검토합니다. 누락된 항목, \"TBD\" 섹션을 잡아내요.\n\n---\n\n개발자가 아닌 사람이 쓰면\n\n원래 개발 워크플로우용으로 만들어졌지만, 핵심 원리는 분야를 안 가려요. \"먼저 생각하고, 계획 세우고, 쪼개서 실행하고, 검수한다.\" 이건 마케팅이든 기획이든 똑같이 적용되는 구조니까요.\n\nX의 유저 @ shannholmberg가 이걸 정리했어요.\n\n마케팅에 적용하면 이렇습니다.\n\n---\n\nbrainstorming skill → 캠페인 앵글, 콘텐츠 아이디어, 포지셔닝 도출\nwriting plans skill → 런칭을 마이크로 태스크로 분해. 정확한 산출물 명시\n서브에이전트 → 리서처, 라이터, 에디터, 퍼블리셔를 병렬 실행. 각자 독립 컨텍스트\nsystematic debugging → 캠페인이 왜 부진한지 진단. 원인 분석 먼저, 변경은 나중에\nverification → 모든 초안을 브랜드 보이스에 대조 검수\n\n그리고 자기만의 Skills를 만들 수 있어요.\n\ncopywriting[.]md → 프레임워크, 톤 규칙, 채점 기준\nseo-audit[.]md → 방법론, 체크리스트, 도구\nsocial-post[.]md → 포맷 템플릿, 보이스 가이드, 플랫폼별 규칙\ncold-email[.]md → 시퀀스, 개인화, 데이터 보강\n\nSuperpowers가 이 파일들을 자동으로 읽고 매번 따릅니다. 한 번 세팅하면 끝.\n\n---\n\n설치는, 딸깍 하시면 됩니다\n\n---\n\n왜 이게 중요한가\n\n대부분의 사람이 AI한테 \"블로그 글 써줘\"라고 합니다. 이건 개발자한테 \"코드 짜줘\"라고 스펙 없이 던지는 거랑 같아요. 결과물이 들쭉날쭉한 건 AI가 멍청해서가 아니라, 프로세스가 없기 때문입니다.\n\nSuperpowers는 그 프로세스를 강제합니다. 브레인스토밍 → 스펙 → 계획 → 병렬 실행 → 검수. 이 파이프라인을 한 번 태우면, 같은 AI가 전혀 다른 수준의 결과를 내요.\n\nv5의 Visual Brainstorming은 여기에 시각적 피드백까지 더했습니다. 마케터가 캠페인 구조를 브라우저에서 바로 보면서 수정할 수 있어요. ASCII 아트로 레이아웃을 상상하는 시대는 끝났습니다.\n\n더 빨라서가 아닙니다. 실행하기 전에 생각하게 만드니까 강력한 거예요.\n\n---\n\nGitHub → https://github.com/obra/superpowers\nSuperpowers 5 발표 → https://blog.fsck.com/2026/03/09/superpowers-5/\nv5.0.1 릴리즈 → https://blog.fsck.com/releases/2026/03/10/superpowers-v5-0-1/",
+      "media": [
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/651360347_17933758077207210_1304702819605234012_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ig_cache_key=Mzg1MzIxMDA3NzMyNzExMjgwOQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjMyMHgxNzkuc2RyLkMzIn0%3D&_nc_ohc=pfh2gkmnpaoQ7kNvwHTKCuJ&_nc_oc=AdqKEYgP5Bc39-vpF2FVSnUAXtliQXFCBvmFRPF3rRBUv99dclywITtXN1Y3N-47Sew&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=NhwxxqFXyZcWH3wI6bjZQw&_nc_ss=7a32e&oh=00_Af3Hm548B0z7WYV2cXq9VcGghtlaub-6Yk8ilVT7C3l3TA&oe=69E4D092",
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/651266499_17933758368207210_6941429447542453989_n.jpg?stp=cp6_dst-jpg_e35_tt6&_nc_cat=109&ig_cache_key=Mzg1MzIxMDI3MDI3MzQ4MTU5Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEyMjB4MTgzNi5zZHIuQzMifQ%3D%3D&_nc_ohc=AioD_7AJwFIQ7kNvwH0kqZN&_nc_oc=Ado4_7Gye-o3wjHYVQqy_97AHJBT7sSyoEA82eyioq9DIafImP-qvwbejLAIUX_0dU4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=NhwxxqFXyZcWH3wI6bjZQw&_nc_ss=7a32e&oh=00_Af3cj_qb76btLo7BezUaRGfnO6UJ_CetCLq8Kb7HZgAW9w&oe=69E4DF7B",
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/651171691_17933758563207210_6610560698541828477_n.jpg?stp=cp6_dst-jpg_e35_tt6&_nc_cat=105&ig_cache_key=Mzg1MzIxMDM2NzgwNzg0NDk2MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEzMTZ4MTAwMC5zZHIuQzMifQ%3D%3D&_nc_ohc=vH5nXf6qSDEQ7kNvwGUg5Ft&_nc_oc=AdpvMdGB0HxSEGohFDeFLZFQfQfJ77dVdEixBCUrNDFcVKHZY34paipA6cbBT0ui7NU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=NhwxxqFXyZcWH3wI6bjZQw&_nc_ss=7a32e&oh=00_Af2__es3sJvxwAPmX54JWDVT986vuOvizfSgBTquuVF1fA&oe=69E4CAA0"
+      ],
+      "url": "https://www.threads.com/@unclejobs.ai/post/DV5WiZwCbpp",
+      "created_at": "2026-03-15 16:07:37",
+      "date": "2026-03-15",
+      "crawled_at": "2026-04-13T09:09:48.475",
+      "source": "consumer_detail",
+      "local_images": [
+        "web_viewer/images/acb44bbbccc3bb53aca2daefb8c289e1.jpg",
+        "web_viewer/images/601a8acb3aca8c7b6cc8f8354267dca7.jpg",
+        "web_viewer/images/3ea32c7d8bf2178d579613ce8e4e46c9.jpg"
+      ],
+      "is_detail_collected": false,
+      "is_merged_thread": true,
+      "root_code": "DV5WkP9ib3u",
+      "pk": "3853210077327112809",
+      "taken_at": 1773558457,
+      "original_item_count": 10,
+      "platform_sequence_id": 665
+    },
+    {
+      "sequence_id": 993,
+      "platform_id": "DVyK1_6FBpl",
+      "sns_platform": "threads",
+      "code": "DVyK1_6FBpl",
+      "urn": "",
+      "username": "jjlabsio",
+      "display_name": "jjlabsio",
+      "full_text": "얼마 전 korea-stock-mcp를 소개하는 쓰레드 글이 조회수 2만을 넘겼습니다.\n\n그리고 얼마 지나지 않아, 현업에서 쓰고 있다는 분께 메일이 왔습니다.\n\n---\n\n\"다트 + 거래소 API 모두 연결한 거 너무 좋은데, 1MB 넘는 공시는 조회가 안 되더라고요. 해결 방법이 있을까요?\"\n\n전혀 몰랐습니다.\n\n한국 상장사 사업보고서 같은 건 수십 MB를 넘기도 하는데, MCP 프로토콜 특성상 한 번에 전부 넘기면 그냥 터진다는 걸 메일을 받고 나서야 알았어요.\n\n---\n\n개선 방식은 이렇습니다.\n\n공시가 크면 → 전체 내용 대신 **목차(TOC)만 먼저 반환**\nAI가 목차 보고 필요한 섹션 파악 → `section_id`로 원하는 부분만 쏙 가져오기\n\n대용량 감사보고서도 이제 섹션 단위로 읽을 수 있습니다.\n\n---\n\n\"현업에서 쓰고 있다\"는 한 마디가 생각보다 많이 동기부여가 됐습니다.\n\n오픈소스 만들고 나면 실제로 쓰는 사람이 있는지 잘 모르는데, 이렇게 피드백이 오니 뿌듯하고 기분이 좋네요.",
+      "media": [],
+      "url": "https://www.threads.com/@jjlabsio/post/DVyK1_6FBpl",
+      "created_at": "2026-03-12 21:10:47",
+      "date": "2026-03-12",
+      "crawled_at": "2026-04-13T09:09:51.515",
+      "source": "consumer_detail",
+      "local_images": [],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVyK1_6FBpl",
+      "pk": "3851188322572704357",
+      "taken_at": 1773317447,
+      "original_item_count": 4,
+      "platform_sequence_id": 658
+    },
+    {
+      "sequence_id": 994,
+      "platform_id": "DVqu0GNE8Dm",
+      "sns_platform": "threads",
+      "code": "DVqu0GNE8Dm",
+      "urn": "",
+      "username": "miminode_",
+      "display_name": "miminode",
+      "full_text": "비전공자 바이브코딩 입문시 추천 자료 모음\n(쌩초보) (지속 업뎃 예정)\n\n---\n\n1. 바이브코딩 완전 입문 + 완전 자세하고 친절한 자료\nhttps://www.gwonvibe.com/products\n@gwon_vibe 님 자료입니다. 최고에요...\n\n---\n\n2. 안티그래비티 소개 및 설치 방법+ 기본세팅\nhttps://www.elancer.co.kr/blog/detail/1046\n\n---\n\n3. 바이브코딩에 사용하는 AI 툴 비교\nhttps://youtu.be/-yvXmaRmALY?si=zd3TqYivN9YYMdJX\n\n---\n\n4. SaaS 란 대체 무엇일까요?\nhttps://brunch.co.kr/@segimalpm/14\n\n---\n\n5. 코딩 시키기 전에 기획부터 제대로 하기\nhttps://brunch.co.kr/@jadusprinkles/16\n바이브코딩으로 페이지를 처음 만들면서 한다고 했는데도 기획이 많이 부족했구나 느낌. 때문에 찾아본 기획 가이드.\n스파게티 코드 방지하는 법, 오류 하루종일 고치지 않는 최선의 방법은 완성도 높은 기획이다!! + 기획도 ai 와 함께하면 더 수월함",
+      "media": [],
+      "url": "https://www.threads.com/@miminode_/post/DVqu0GNE8Dm",
+      "created_at": "2026-03-09 23:51:08",
+      "date": "2026-03-09",
+      "crawled_at": "2026-04-13T09:09:51.515",
+      "source": "consumer_detail",
+      "local_images": [],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVqu0GNE8Dm",
+      "pk": "3849094721755660518",
+      "taken_at": 1773067868,
+      "original_item_count": 6,
+      "platform_sequence_id": 659
+    },
+    {
+      "sequence_id": 995,
+      "platform_id": "DVyanGMks7X",
+      "sns_platform": "threads",
+      "code": "DVyanGMks7X",
+      "urn": "",
+      "username": "devdesign.kr",
+      "display_name": "비노 | 개발자의디자인",
+      "full_text": "내가 Claude Code와 노트앱으로\n옵시디언만 쓰는 이유\n\n간단한 설정으로\nAI가 내 노트 전체에 접근하고\n노트 자료 시각화까지 해줌\n\n---\n\n옵시디언은 모든 노트가 마크다운 파일임\nClaude Code가 직접 읽고 쓸 수 있는 포맷\n\n노션이나 다른 앱은 MCP 연동이 필요한데\n옵시디언은 그냥 파일이라 바로 접근 가능\n\n그래서 간단한 설정만으로\n노트 저장, 검색, 시각화까지 전부 됨\n\n---\n\n그리고 옵시디언에서 canvas는 잘 모르는 사람들이 많은데\n노드+화살표로 구조도를 만드는 기능임\n\n나 같은 경우엔 이 기능을 유튜브 영상 핵심만 요약해서 옵시디언에 저장하고 canvas로 시각화하는 스킬을 만들어 쓰고있음\n\n시각화해서 학습하면 효과가 비교도 안되게 좋아 자주 사용하고 있음\n\n---\n\n그리고 설정법도 간단함\n\n1. settings.json에 옵시디언 경로 추가\n2. 같은 파일에서 읽기/쓰기/검색 권한 허용\n3. CLAUDE.md에 폴더 구조 + 저장 규칙 작성\n\n이 3단계면 끝\nCLAUDE.md에 규칙 적어놓으면\nClaude Code가 매번 그대로 알아서 정리해줌\n\n---\n\n정리하면\n옵시디언은 마크다운 기반이라\nClaude Code가 MCP 없이 바로 접근 가능하고\ncanvas로 시각화까지 자동으로 해줌\n\n구체적인 설정 가이드, 팁, 활용법은\n오픈카톡방에 올려놨으니 관심 있으면 프로필링크 통해서 확인해보셈",
+      "media": [
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/642594125_17917493760289001_8469177227867773977_n.jpg?stp=cp6_dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=Mzg1MTI1NzczNjY2ODAxOTIzNQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE5MTh4MTQzOS5zZHIuQzMifQ%3D%3D&_nc_ohc=bmIKtx-WMrIQ7kNvwGMFyPK&_nc_oc=Adrv8LmnQyEgwwoXo9JtAMyzRA_KeVZNjKM5RVkGs8TA2bHyzJpmYL8_wgaed5MUgP0&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=xcvttBAwWszes3EdGcw46g&_nc_ss=7a32e&oh=00_Af0DSrbgJiFVpaFPtzUECmgK0-MuxzHxxGIdTLBgeP94nA&oe=69E4CC28"
+      ],
+      "url": "https://www.threads.com/@devdesign.kr/post/DVyanGMks7X",
+      "created_at": "2026-03-12 23:28:32",
+      "date": "2026-03-12",
+      "crawled_at": "2026-04-13T09:09:51.515",
+      "source": "consumer_detail",
+      "local_images": [
+        "web_viewer/images/c97d2f94464e3d361b8e74757c9ed2f3.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVyanGMks7X",
+      "pk": "3851257667277475543",
+      "taken_at": 1773325712,
+      "original_item_count": 5,
+      "platform_sequence_id": 660
+    },
+    {
+      "sequence_id": 996,
+      "platform_id": "DV4zFBuD9gA",
+      "sns_platform": "threads",
+      "code": "DV4zFBuD9gA",
+      "urn": "",
+      "username": "since_1985_love",
+      "display_name": "먹는게 제일 좋은 나",
+      "full_text": "솔직히 Claude Code 쓰면서 \n슬래시 명령어 안 쓰는 사람 많던데 \n그거 절반도 못 쓰고 있는 거다\n코드 짜는 건 누구나 시킬 수 있다 \n진짜 차이는 \"검증\"에서 나옴 \n1.simplify  AI 에이전트 3개가 동시에 \n네 코드 리뷰함  중복 코드, 쓸데없는 쿼리, 죽은 변수 \n사람이면 30분 걸릴 거 10초 만에 다 잡아냄 \n이거 안 돌리고 커밋하는 건 코드 리뷰 안 받겠다는 거랑 같음 \n2.quality-gate  lint, format, \n타입체크, 테스트 전부 원클릭  커밋하고 \npre-commit 터져서 다시 고치는 거 \n시간 낭비인 거 본인도 알잖아 \n3.ultrathink \"이거 구조 어떻게 잡지\" 싶을 때 씀 \n일반 모드랑 차원이 다른 설계가 나옴 \n복잡한 리팩토링에서 진가 발휘됨 \n4.security-audit  SQL 인젝션, 데이터 격리 구멍 \n배포하고 새벽에 알림 받고 싶으면 안 돌려도 됨",
+      "media": [],
+      "url": "https://www.threads.com/@since_1985_love/post/DV4zFBuD9gA",
+      "created_at": "2026-03-15 10:57:46",
+      "date": "2026-03-15",
+      "crawled_at": "2026-04-13T09:09:51.515",
+      "source": "consumer_detail",
+      "local_images": [],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DV4zFBuD9gA",
+      "pk": "3853054127031441408",
+      "taken_at": 1773539866,
+      "original_item_count": 1,
+      "platform_sequence_id": 661
+    },
+    {
+      "sequence_id": 997,
+      "platform_id": "DVyPuOtCRGt",
+      "sns_platform": "threads",
+      "code": "DVyPuOtCRGt",
+      "urn": "",
+      "username": "olive.r_327",
+      "display_name": "Oliver 🇰🇷",
+      "full_text": "1. 예전엔 제 아이디어로 SaaS 웹이랑 앱을 이것저것 많이 만들어봤습니다.\n근데 거의 다 실패했습니다.\n\n이유는 늘 비슷했어요.\n아무도 안 씀.\n사용자가 없으니까 당연히 돈도 안 벌렸습니다.\n\n---\n\n2. 왜 실패했는지 뜯어보면 보통 이런 문제였습니다.\n\n시장 규모가 너무 작거나\n마케팅이 너무 어렵거나\n광고비가 너무 비싸거나\n유지보수가 생각보다 훨씬 힘든 아이디어였습니다.\n\n만드는 건 되는데, 굴러가게 만드는 건 안 됐습니다.\n\n---\n\n3. 그러다가 해외 유튜브에서\n1인 SaaS / 1인 앱 성공 사례를 엄청 보기 시작했습니다.\n\n계속 보다 보니까 한 가지 공통점이 보이더라고요.\n\n성공한 사람들 중 꽤 많은 사람이\n“완전히 새로운 내 아이디어”보다\n“이미 검증된 시장의 검증된 아이디어”로 들어가고 있었습니다.\n\n---\n\n4. 그때 생각을 바꿨습니다.\n\n내 아이디어부터 시작하지 말자.\n이미 돈이 돌고 있는 시장에서\n이미 검증된 걸 가져오자.\n\n그게 훨씬 현실적이라고 봤습니다.\n\n---\n\n5.그래서 분석한 게 Cal AI였습니다.\n\n음식 사진으로 칼로리 추적하고\n식단 관리해주는 앱.\n\n이건 이미 시장도 검증됐고\n실제로 꽤 큰 수익이 나는 것도 확인했습니다.\n\n“아, 이쪽은 진짜 돈이 도는 시장이구나” 싶었습니다.\n\n---\n\n6. 그러다가 이런 생각이 들었습니다.\n\n굳이 모든 칼로리를 다 관리하게 하지 말고\n설탕만 추적하고 관리하고 싶은 사람들만 위한 앱이면 어떨까?\n\n조금 더 좁게, 조금 더 선명하게 가보자는 생각이었습니다.\n\n---\n\n7. 바로 시장을 다시 봤는데\n설탕 관리 앱은 이미 시중에 꽤 많았습니다.\n\n근데 오히려 그게 더 좋았습니다.\n이미 비슷한 앱들이 많다는 건\n그만큼 수요가 있다는 뜻이니까요.\n\n없는 시장을 억지로 만드는 것보다 훨씬 나았습니다.\n\n---\n\n8. 더 좋았던 건 기존 앱들 퀄리티가 생각보다 많이 아쉽다는 점이었습니다.\n\n리뷰를 계속 읽어봤는데\n불편하다\n정확하지 않다\nUX가 별로다\n광고가 너무 많다\n이런 얘기가 반복해서 나오더라고요.\n\n그걸 보고 확신이 생겼습니다.\n\n---\n\n9. 솔직히 그때 든 생각은 이거였습니다.\n\n“이거 Cal AI급까지는 아니어도\n그 10분의 1 정도 퀄리티만 나와도\n충분히 이 시장에서 먹히겠다.”\n\n그렇게 바로 만들기 시작했습니다.\n\n---\n\n10. Cal AI의 UI, UX, 온보딩 흐름을 최대한 참고해서\n일단 MVP 버전까지 만들었고\n배포까지는 성공했습니다.\n\n여기까지는 꽤 빨랐습니다.\n\n문제는 항상 그다음이었습니다.\n\n빌드가 아니라 마케팅.\n\n---\n\n11. 조사해보니까 Cal AI뿐 아니라\n기존 칼로리 앱들도 대부분\n인플루언서 마케팅을 엄청 활용하고 있었습니다.\n\n그래서 저도 해보려고 했습니다.\n\n마이크로 인플루언서들한테 DM도 보내보고\n직접 계정도 찾고 리스트도 만들어봤는데\n생각보다 너무 비효율적이었습니다.\n\n---\n\n12. 답장은 잘 안 오고\n찾는 데 시간도 너무 많이 들고\n플랫폼을 써보려니 비용도 만만치 않았습니다.\n\nModash, Postedapp 같은 툴도 찾아봤는데\n플랫폼 이용료도 있고\n크리에이터 비용까지 생각하면\n지금 단계에선 버짓 초과였습니다.\n\n---\n\n13. 그래서 다시 처음 생각했던 방향으로 돌아왔습니다.\n\n이미 검증된 바이럴 형식을 따라\n숏폼을 꾸준히 찍어내자.\n\n새로운 방식 발명하려고 하지 말고\n이미 먹히는 형식을 반복하자는 쪽으로요.\n\n---\n\n14. 근데 이것도 직접 하나하나 만들려니까\n또 시간과 비용이 꽤 들었습니다.\n\n그래서 지금은\n이미 검증된 밈 퍼널 형식의 게시물을 만들어주는 툴도 써보고 있습니다.\n\n일단 중요한 건\n“내가 잘 만든 콘텐츠”가 아니라\n“사람들이 멈춰보는 콘텐츠”라고 생각하고 있습니다.\n\n---\n\n15. 미국 타겟으로 만든 제 앱 인스타 계정도 세팅했습니다.\n\n이것도 해보니까 별거 아닌 게 아니더라고요.\nus based 느낌으로 계정 만들고\n세팅 맞추고\n초반 웜업하는 데도 생각보다 시간이 꽤 들어갔습니다.\n\n진짜 하나하나가 다 비용이고 시간입니다.\n\n---\n\n16. 지금은 계정 웜업하면서\n검증된 형식의 콘텐츠를 계속 양산해보는 중입니다.\n\n목표는 단순합니다.\n\n콘텐츠로 첫 유입 만들고\n첫 수익 만들고\n그 수익으로 다시 인플루언서 마케팅에 투자하는 것.",
+      "media": [
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/651270254_17860350252665587_573043108007385204_n.jpg?stp=cp6_dst-jpg_e35_tt6&_nc_cat=104&ig_cache_key=Mzg1MTE5OTgxNDM3ODI5MDY0OA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEyMDZ4MjYyMi5zZHIuQzMifQ%3D%3D&_nc_ohc=xOi5PREJFGQQ7kNvwGxeL-I&_nc_oc=AdrPSDcGhH6nFXQse5Y-CFZ7ugUTNEPaeiD0VKXpb-YR65CktjP75Wj1Jf5w_EMsy9w&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=w7jh-F6ISYIEPjrHhQxOhQ&_nc_ss=7a32e&oh=00_Af0LsxQcyUX_-ROVZ6ivkd2qR4U2ecoaGkSTqI-h3VE4KQ&oe=69E4EBEF"
+      ],
+      "url": "https://www.threads.com/@olive.r_327/post/DVyPuOtCRGt",
+      "created_at": "2026-03-12 21:53:23",
+      "date": "2026-03-12",
+      "crawled_at": "2026-04-13T09:09:54.558",
+      "source": "consumer_detail",
+      "local_images": [
+        "web_viewer/images/bfce2d8a9cf448c288b75b64bf3efeb7.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVyPuOtCRGt",
+      "pk": "3851209778936746413",
+      "taken_at": 1773320003,
+      "original_item_count": 16,
+      "platform_sequence_id": 657
+    },
+    {
+      "sequence_id": 998,
+      "platform_id": "DUclnm1EyFm",
+      "sns_platform": "threads",
+      "code": "DUclnm1EyFm",
+      "urn": "",
+      "username": "gptaku_ai",
+      "display_name": "스레드 클코대장 지피타쿠",
+      "full_text": "클로드코드 바이패스 모드 킬때마다\n어디 저장해둔 명령어 찾아다 입력해 아직도?\n\n만약 그렇다면 이렇게 한번 요청해봐\n앞으로 그냥 cc, ccd, ccr만 입력해",
+      "media": [],
+      "url": "https://www.threads.com/@gptaku_ai/post/DUclnm1EyFm",
+      "created_at": "2026-02-07 15:30:02",
+      "date": "2026-02-07",
+      "crawled_at": "2026-04-13T09:09:54.559",
+      "source": "consumer_detail",
+      "local_images": [],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DUclnm1EyFm",
+      "pk": "3827099232831218022",
+      "taken_at": 1770445802,
+      "original_item_count": 1,
+      "platform_sequence_id": 655
+    },
+    {
+      "sequence_id": 999,
+      "platform_id": "DVyQzjBmgSp",
+      "sns_platform": "threads",
+      "code": "DVyQzjBmgSp",
+      "urn": "",
+      "username": "biggerthanseoul.ai",
+      "display_name": "Kyoungtae Yi",
+      "full_text": "클로드 코드 하면서 이런 저런 편리한 명령어 없는 지 찾다가 이런 걸 정리해봤어.\n\n<<<<<<< Claude Code 유용한 명령어 100선 >>>>>>>\n\n터미널에서 AI랑 같이 코딩하는 시대를 맞아 설치부터 고급 자동화까지 카테고리별로 정리했어.\n\n저장해두고 필요할 때 꺼내 쓰면 좋을거야.\n\n설치 & 기본 실행 (1~5)\n\nnpm install -g @anthropic-ai/claude-code\n→ 전역 설치\n\nclaude\n→ 대화형 REPL 시작\n\nclaude --version\n→ 버전 확인\n\nclaude update\n→ 최신 버전으로 업데이트\n\nclaude \"이 프로젝트 요약해줘\"\n→ 초기 프롬프트로 바로 시작\n\n---\n\n세션 관리 (6~10)\n\nclaude -c\n→ 마지막 세션 이어서 진행\n\nclaude --continue\n→ 세션 계속하기 (긴 형식)\n\nclaude -r \"abc123\"\n→ 특정 세션 ID로 재개\n\nclaude --resume abc123 \"쿼리\"\n→ 세션 재개 + 쿼리 동시 전달\n\nclaude -c -p \"타입 오류 확인해줘\"\n→ 이전 세션 이어서 SDK 모드 실행\n\n---\n\n슬래시 명령어 — 세션 안에서 사용 (11~22)\n\n/help → 전체 명령어 목록\n/clear → 대화 히스토리 초기화\n/compact → 대화 압축 (컨텍스트 절약)\n/compact \"핵심만 남겨줘\" → 지시 포함 압축\n/exit → 종료\n/config → 설정 패널\n/doctor → 설치 상태 진단\n/cos → 현재 세션 비용 확인\n/ide → IDE 통합 관리\n/mcp → MCP 서버 관리\n/insights → 사용 패턴 분석 리포트\n/init → CLAUDE.md 자동 생성\n\n---\n\nCLI 플래그 — 출력 & 모드 (23~27)\n\nclaude -p \"쿼리\"\n→ Print 모드 (실행 후 바로 종료)\n\nclaude --output-format json\n→ JSON 형식 출력 (스크립팅용)\n\nclaude --output-format text\n→ 텍스트 형식 출력\n\nclaude --verbose\n→ 상세 로그 출력\n\nclaude --max-turns 5 \"쿼리\"\n→ 최대 대화 턴 수 제한\n\n---\n\n권한 & 보안 (28~32)\n\nclaude --allowedTools \"Bash(git:*)\" \"Write\"\n→ 허용할 도구만 지정\n\nclaude --disallowedTools \"Bash(rm:)\" \"Bash(sudo:)\"\n→ 금지할 도구 지정\n\nclaude --allowedTools \"Bash(git log:)\" \"Bash(git diff:)\"\n→ git 읽기만 허용\n\nclaude --dangerously-skip-permissions\n→ ⚠️ 권한 확인 전부 건너뜀 (YOLO 모드)\n\nclaude -p --permission-prompt-tool mcp_auth_tool \"쿼리\"\n→ 특정 도구 권한만 확인 요청\n\n---\n\n파일 & 디렉토리 참조 (33~37)\n\n@./src/components/Button.tsx\n→ 특정 파일 참조\n\n@./src/\n→ 디렉토리 전체 참조\n\nclaude --add-dir ../frontend ../backend\n→ 다중 디렉토리 접근 허용\n\nclaude --add-dir ../apps ../lib ../tools\n→ 복수 앱 디렉토리 동시 접근\n\n\"Review @./src/api for security issues\"\n→ 파일 지정 + 분석 요청\n\n💡 팁: 막연하게 \"파일 찾아봐\"보다\n@경로 로 정확히 지정하면 훨씬 정확한 답변이 나와.\n\n---\n\n세션 안에서 쉘 명령어 실행 — ! 프리픽스 (38~42)\n\n!npm test → 테스트 바로 실행\n!git status → git 상태 확인\n!ls -la → 파일 목록 확인\n!npm run build → 빌드 실행\n!cat package.json → 파일 내용 출력\n\n💡 팁: ! 붙이면 Claude 대화 중에\n터미널 명령어를 바로 실행할 수 있어.\n\n---\n\n파이프라인 & 자동화 (43~48)\n\ncat logs.txt | claude -p \"오류 원인 분석\"\n→ 로그 파일 분석\n\ngit log --oneline | claude -p \"커밋 요약\"\n→ git 로그 요약\n\ncat error.log | claude -p \"근본 원인 찾기\"\n→ 에러 로그 진단\n\nls -la | claude -p \"디렉토리 구조 설명\"\n→ 디렉토리 구조 파악\n\nclaude -p \"분석\" --output-format json > result.json\n→ JSON으로 결과 저장\n\nclaude -p \"테스트 생성\" --max-turns 3 > tests.txt\n→ 결과를 파일로 저장\n\n---\n\n모델 선택 (49~51)\n\nclaude --model claude-sonnet-4-6\n→ 기본값, 속도와 품질의 균형\n\nclaude --model claude-haiku-4-5\n→ 빠르고 저렴, 단순 작업용\n\nclaude --model claude-opus-4-6\n→ 가장 강력, 복잡한 문제용\n\n💡 비용 절감 팁\n서브에이전트나 탐색 작업엔 haiku\n핵심 판단은 sonnet 또는 opus로 나눠 쓰면 좋아.\n\n---\n\n시스템 프롬프트 커스터마이징 (52~55)\n\nclaude --append-system-prompt \"항상 한국어로 답변해줘\"\n→ 기본 프롬프트에 내용 추가\n\nclaude --append-system-prompt-file ./my-rules.md\n→ 파일에서 프롬프트 추가\n\nclaude --system-prompt \"너는 시니어 백엔드 엔지니어야\"\n→ 시스템 프롬프트 완전 교체\n\nclaude --system-prompt-file ./custom-prompt.md\n→ 파일로 시스템 프롬프트 교체\n\n💡 팁: 대부분의 경우\n--append-system-prompt 를 권장\n기본 기능은 유지하면서 규칙만 추가할 수 있어.\n\n---\n\nConfig 설정 (56~59)\n\nclaude config set --global preferredNotifChannel terminal_bell\n→ 작업 완료 시 터미널 벨 알림\n\nclaude config set model claude-haiku-4-5\n→ 기본 모델 변경\n\nclaude config list\n→ 현재 설정 목록 확인\n\nclaude config get model\n→ 특정 설정값 확인\n\n---\n\nCLAUDE.md — Claude의 프로젝트 기억 (60~64)\n\n/init (세션 내)\n→ CLAUDE.md 자동 생성\n\n기록해두면 좋은 섹션들 👇\n\nCoding standards\n→ TypeScript 사용, ESLint 규칙 등\n\nArchitecture\n→ 프론트/백엔드/DB 구조\n\nFile organization\n→ 폴더별 역할 정리\n\nTest conventions\n→ 테스트 작성 규칙\n\n💡 팁: 팀 프로젝트라면\nCLAUDE.md를 git에 커밋해서 공유하면 좋아.\n\n---\n\n서브에이전트 — 역할별 전담 AI (65~69)\n\nclaude --agents '{\"reviewer\": {...}}'\n→ CLI에서 커스텀 에이전트 정의\n\n.claude/agents/reviewer.md 생성\n→ 코드 리뷰 전용 에이전트\n\n.claude/agents/debugger.md 생성\n→ 디버깅 전용 에이전트\n\nmodel: haiku (agents 내 설정)\n→ 서브에이전트에 저렴한 모델 적용\n\ntools: [\"Read\", \"Grep\", \"Glob\"] (agents 내)\n→ 서브에이전트 사용 도구 제한\n\n💡 복잡한 작업일수록 역할을 나눠서\n전문화된 서브에이전트에 맡기면 더 좋은 결과가 나와.\n\n---\n\n커스텀 슬래시 명령어 & Skills (70~74)\n\n.claude/commands/review.md 생성\n→ /review 커스텀 명령어\n\n.claude/commands/test.md 생성\n→ /test 커스텀 명령어\n\n.claude/commands/deploy.md 생성\n→ /deploy 커스텀 명령어\n\n.claude/skills/review/SKILL.md 생성\n→ Skills 방식 (더 강력, 권장)\n\n~/.claude/commands/ 에 파일 저장\n→ 모든 프로젝트에서 쓰는 전역 명령어\n\n---\n\nMCP 서버 연동 (75~79)\n\nclaude --mcp\n→ MCP 서버 관리\n\n/mcp (세션 내)\n→ MCP 기능 접근\n\nMCP로 GitHub 연동\n→ PR 생성, 이슈 관리 자동화\n\nMCP로 Sentry 연동\n→ 에러 추적 자동화\n\nMCP로 DB 연동\n→ 데이터베이스 직접 쿼리\n\n💡 MCP로 연결하면 Claude가\n외부 서비스를 직접 다룰 수가 있어.\n(GitHub, Slack, Notion 등 3000개+ 통합)\n\n---\n\nPlan Mode — 먼저 생각하고 짜기 (80~83)\n\n\"먼저 계획만 세워줘, 코드는 짜지 말고\"\n→ 구현 전 분석 단계 분리\n\n\"@./src/ 읽기 전용으로 분석하고 접근 방법 제안해줘\"\n→ 코드 분석 후 계획\n\n프롬프트에 ultrathink 포함\n→ 확장 사고(Extended Thinking) 활성화\n\n/compact 후 구현 시작\n→ 계획 압축 후 구현 효율화\n\n💡 복잡한 작업일수록\n\"계획 먼저\" 습관이 실수를 크게 줄일 수 있어.\n\n---\n\nGit 워크플로우 (84~88)\n\ngit log --oneline | claude -p \"릴리즈 노트 작성\"\n→ 릴리즈 노트 자동화\n\nclaude --allowedTools \"Bash(git:*)\"\n→ git 명령만 허용\n\n\"@./src/ PR 잠재적 문제점 리뷰해줘\"\n→ PR 리뷰 자동화\n\n!git diff HEAD~1 HEAD 후 분석 요청\n→ 변경사항 분석\n\nCI에서 claude -p \"린트 오류 수정\"\n→ CI/CD 파이프라인 통합\n\n---\n\n테스트 & 디버깅 프롬프트 (89~93)\n\n\"@./src/utils/validation.js 단위 테스트 생성\"\n→ 특정 파일 테스트 자동 생성\n\n\"TypeError: ... 디버깅 @./src/user-service.js\"\n→ 에러 메시지 + 파일 지정 디버깅\n\n!npm test 후 실패 테스트 수정 요청\n→ TDD 사이클 완성\n\n\"@./src/routes/ 모든 엔드포인트 API 문서 생성\"\n→ API 문서 자동화\n\n\"@./src/services/EmailService.js 의존성 주입으로 리팩터링\"\n→ 리팩터링 자동화\n\n---\n\n키보드 단축키 (94~97)\n\nCtrl + C → 현재 작업 취소\nCtrl + D → Claude Code 종료\nTab → 자동 완성\n↑ / ↓ → 이전/다음 명령어 탐색\n\n---\n\n고급 복합 명령어 (98~100)\n\nclaude --model claude-sonnet-4-6 \n--add-dir ../apps ../lib \n--allowedTools \"Bash(git:*)\" \"Write\" \"Read\" \n--verbose --output-format json\n→ 풀 옵션 조합\n\nclaude -p \"codebase 분석\" --output-format json > analysis.json \n&& claude -p \"분석 기반 테스트 생성\" --max-turns 3\n→ 분석 → 테스트 파이프라인\n\nclaude \n--append-system-prompt \"답변은 한국어로, TypeScript만 사용\" \n--model claude-sonnet-4-6 \n--add-dir ./src ./tests\n→ 한국어 + TypeScript 특화 세팅",
+      "media": [],
+      "url": "https://www.threads.com/@biggerthanseoul.ai/post/DVyQzjBmgSp",
+      "created_at": "2026-03-12 22:02:51",
+      "date": "2026-03-12",
+      "crawled_at": "2026-04-13T09:09:54.559",
+      "source": "consumer_detail",
+      "local_images": [],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVyQzjBmgSp",
+      "pk": "3851214542400521385",
+      "taken_at": 1773320571,
+      "original_item_count": 20,
+      "platform_sequence_id": 656
+    },
+    {
+      "sequence_id": 1000,
+      "platform_id": "7448554932695105536",
+      "sns_platform": "linkedin",
+      "username": "ACoAAEYsARgBdQazrHf4u7lcZ1nlSjTNE7YbpOs",
+      "display_name": "한성국",
+      "full_text": "Claude 파트너 1차 합격 연락을 받았습니다.\n패스트캠퍼스 강의를 마치고\n처음으로 5일을 가족과 보냈습니다.\n그사이 클로드에서 메일이 왔습니다.\nClaude 파트너 1차 합격!\n1차 합격 메일에서 제시한 다음 준비사항은 2가지였습니다.\n① 팀원 10명 선정\n② Anthropic 프로젝트 정리\n10명의 정예 멤버는 이미 선정했고,\n현재 대기업과 협업 중인 Claude 프로젝트가 있는데,\n이번 파트너 신청에 함께 정리해서 제출할 예정입니다.\n최종 파트너사 선정까지 끝까지 완주해볼게요\n여행도 잘 마쳤으니, 이제 본격적으로 달립니다.\n교육을 준비하면서 발견한 것들을\n유튜브, 링크드인, 쓰레드에 모두 녹여낼 계획입니다.\nClaude를 활용한 AI 에이전트 정보,\n꾸준히 공유드리겠습니다.\n계속 받아보고 싶으신 분들,\n댓글로 저요! 남겨주세요.",
+      "media": [
+        "https://media.licdn.com/dms/image/v2/D5622AQEB4Dv0cmrWbQ/feedshare-shrink_2048_1536/B56Z16VPWoHkAk-/0/1775873881926?e=1777507200&v=beta&t=PvHorjN6Yg_dsrJQxyK1Gxx2fzaffR_4X1Sr8D11deQ"
+      ],
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:7448554932695105536?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7448554932695105536%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "created_at": "2026-04-11 11:18:03",
+      "date": "2026-04-11",
+      "crawled_at": "2026-04-14T13:56:52.927",
+      "source": "network",
+      "local_images": [
+        "web_viewer/images/592a51e6bf26cdf5106160bd48bac2b7.jpg"
+      ],
+      "time_text": "3일",
+      "profile_slogan": "AI 에이전트로 혼자서도 팀처럼 일할 수 있습니다",
+      "user_link": "https://www.linkedin.com/in/ACoAAEYsARgBdQazrHf4u7lcZ1nlSjTNE7YbpOs",
+      "content_type": "image",
+      "platform_sequence_id": 358
+    },
+    {
+      "sequence_id": 1001,
+      "platform_id": "7449406101365739521",
+      "sns_platform": "linkedin",
+      "username": "ACoAADheaU8BMhGPt149UknhFx-LRQzlwdPdVIA",
+      "display_name": "ZEMMA Juhye Shin",
+      "full_text": "'Claude Code는 터미널에서 쓰는 거'라는 고정관념이 빠르게 깨지고 있습니다.\n셀피쉬클럽 클로드코드 워크샵 단톡방에서 이런 질문을 받았습니다.\n\"집에서 하던 작업을 노트북에서도 이어서 할 수 있을까요?\"\n답을 정리하면서 이번에 알게된 건 —\nClaude Code가 데스크탑 앱에서는 물론이지만,\n이미 웹 브라우저에서도 돌아간다는 사실이에요.\n*클로드코드 웹\n: Anthropic이 2025년 11월에 Claude Code on the Web을 런칭했고,\n지금은 Pro/Max/Team/Enterprise 전 플랜이 지원\n정리해보니 양쪽 PC를 잇는 방법이 3가지나 있더라고요.\n1️⃣ Claude Code on the Web — 클라우드 VM이 대신 돌림\n2️⃣ Remote Control — 집 PC를 켜둔 채 회사에서 브라우저로 조작\n3️⃣ Claude Sync — ~/.claude 폴더를 암호화해서 동기화 (Git 없이) 한 참여자분이 정리본 보고 이렇게 말씀하셨어요.\n\"대박!!! Git으로 pull 안 하고 할 수 있는 방안으로 생각하면 되는 거지요.\" 정확합니다. 👏 이게 지금 Claude Code의 방향성을 잘 보여줘요.\n\"개발자 전용 도구\"에서 \"누구나 쓰는 AI 워크벤치\"로 넘어가는 중🙌🏻 이라는 것.\n비개발자 워크샵을 돌리면서 제가 체감하는 변화예요.\n👉🏻 3가지 방법 전체 정리 + 구조도 댓글에 남겨둘게요",
+      "media": [
+        "https://media.licdn.com/dms/image/v2/D5622AQGAyFXojtkgWg/feedshare-shrink_1280/B56Z2GbX76IUAM-/0/1776076816355?e=1777507200&v=beta&t=Yx9ANhDTpIwIYLc2ZbQpeEqUYHG7ICQ2-wemlFjxsSc"
+      ],
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:7449406101365739521?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7449406101365739521%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "created_at": "2026-04-13 19:40:17",
+      "date": "2026-04-13",
+      "crawled_at": "2026-04-14T13:56:52.927",
+      "source": "network",
+      "local_images": [
+        "web_viewer/images/49b8860bae498bf2035b82c9b8503a96.jpg"
+      ],
+      "time_text": "18시간",
+      "profile_slogan": "AX마케팅&비즈니스 디렉터 | 셀피쉬클럽(SELFISH CLUB) 마스터 | UX 프로모션 방법론 개발 | AI뤼튼(wrtn) 공인 컨설턴트 | | AI마케팅 워크샵 및 강연 | Free Agent & Community Owner | User Journey Specialist",
+      "user_link": "https://www.linkedin.com/in/ACoAADheaU8BMhGPt149UknhFx-LRQzlwdPdVIA",
+      "content_type": "image",
+      "platform_sequence_id": 359
+    },
+    {
+      "sequence_id": 1002,
+      "platform_id": "7447969635687112705",
+      "sns_platform": "linkedin",
+      "username": "ACoAAFT_4OYBaCIB1IuY3xCucNN2-9JzgTHdRe8",
+      "display_name": "Jaewoo Kim",
+      "full_text": "비개발자를 위한 Claude Code - Git 완전정복 강좌내용을 공개합니다.\n왜 이 강좌인가?\nVibe Coding이 일상화되면서 \"AI에게 코드를 시킬 수 있다\"는 분들은 늘었지만, AI가 무엇을 어떻게 바꿨는지 추적하거나 실수를 되돌리는 방법을 모르는 경우가 많습니다. Git은 바로 그 안전망입니다.\n몇몇 기업들이 Claude Code를 도입하려고 고려하며 교육요청이 와서 막상해보면 Git조차 잘 모르는 분들이 많아 그런 비개발자 분들을 대상으로 Claude Code × Git을 실전에서 함께 쓰는 방법을 다루고 있습니다.\nAI와 사람이 협업하는 시대, Git은 그 공통 언어라고 생각합니다. 국내 개발자·기획자·디자이너뿐만 아니라 AI를 활용하려는 일반인들에게도 도움이 되길 바랍니다.\nhttps://lnkd.in/gFfVziMf\n#Git #ClaudeCode #AICoding #VibeCoding #개발자 #기술번역 #AI코딩 #클로드코드 #GitHub 👍",
+      "media": [],
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:7447969635687112705?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7447969635687112705%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "created_at": "2026-04-09 20:32:17",
+      "date": "2026-04-09",
+      "crawled_at": "2026-04-14T13:56:52.927",
+      "source": "network",
+      "local_images": [],
+      "time_text": "4일",
+      "profile_slogan": "AI Workflow Automation Architect, AI LLM Performance Engineer, Vibe Engineering, Cursor/Claude Code, AI강의/개발/기술자문",
+      "user_link": "https://www.linkedin.com/in/ACoAAFT_4OYBaCIB1IuY3xCucNN2-9JzgTHdRe8",
+      "content_type": "text",
+      "platform_sequence_id": 360
+    },
+    {
+      "sequence_id": 1003,
+      "platform_id": "7448349198606835713",
+      "sns_platform": "linkedin",
+      "username": "ACoAADPa2KIB5Skb_NdQWdtPBOM7_i1mID-DpPw",
+      "display_name": "Jinju Park",
+      "full_text": "아파트명만 넣으면 주변 입지 분석 완료!\n클로드 데스크탑에 간단한 설정만으로 가능합니다. 부동산 투자나 매수 고려 중이신 분들은 미리 세팅해보세요\n원리는 간단해요. 클로드한테 구글 지도 검색 능력을 얹어주는 거죠. 설정법은 요렇게\n1. Apify 가입 (무료로 월 $5 크레딧 줌)\n2. 프로필 > Settings > API 토큰 복사\n3. 클로드 데스크탑 > 사용자 지정 > 커넥터 > 커넥터 둘러보기에서 Apify 검색 후 추가\n4. 클로드 데스크탑 껐다 켜고, 커넥터 설정 > 구성에서 Apify Token 입력\n5. Enabled tools에 compass/crawler-google-places 넣고 저장\n6. 하단 사용자 권한에서 \"항상 허용\"이나 \"권한 요청\"으로 설정\n7. 클로드 데스크탑 다시 시작하면 Apify 커넥터 활성화 완료!\n자, 이제 준비 끝! 채팅창에 아파트명을 넣고 입지 분석을 요청하면 클로드가 알아서:\n- 위치의 위경도 잽싸게 확인하고\n- Apify Google Maps Scraper로 주변 경쟁 단지, 공원, 마트, 지하철역, 학교 싹 다 뒤져서\n- 웹 검색으로 교통 호재나 산업단지 같은 지역 개발 정보까지 찾아낸 다음\n- 교통, 편의시설, 학군, 개발 호재 쫙 정리된 보고서 + OpenStreetMap 기반 인터랙티브 지도까지 만들어줍니다.\n제가 \"풍무역 푸르지오 시티\"로 테스트해봤는데, 지하철역까지 걸어서 몇 분인지, 초품아인지, 근처 대형마트랑 공원 위치까지 완전 깔끔하게 정리된 보고서가 나오더라고요.\n꿀팁 하나 더! \"이 대화내용 바탕으로 Skill 만들어줘\"라고 하면 부동산 이름만 넣으면 자동으로 보고서 뽑아주는 자동화 스킬도 만들 수 있습니다. (설정 > 기능에서 \"코드 실행 및 파일 생성\" 켜져 있어야 함!)\n프롬프트 예시와 자세한 튜토리얼은 이번 주 뉴스레터 전문에서 확인하세요!\nhttps://lnkd.in/gMWCASPe\n챗대리 AI 뉴스레터 구독하기\nhttps://lnkd.in/gMnMVgZY",
+      "media": [
+        "https://media.licdn.com/dms/image/v2/D5610AQFT5TsmAVD3HQ/image-shrink_1280/B56Z13aIabHkAc-/0/1775824832468?e=1776747600&v=beta&t=aTB5DWjFLRAFEMUfYjAhTsaEoXcoHcFsJml8zC9ptL4"
+      ],
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:7448349198606835713?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7448349198606835713%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "created_at": "2026-04-10 21:40:32",
+      "date": "2026-04-10",
+      "crawled_at": "2026-04-14T13:56:52.927",
+      "source": "network",
+      "local_images": [
+        "web_viewer/images/095820d699e6649e827f92a396f386ec.jpg"
+      ],
+      "time_text": "3일",
+      "profile_slogan": "인공지능과 함께 일하는 법을 연구하고 있습니다 | AI Contents Creator & Marketer",
+      "user_link": "https://www.linkedin.com/in/ACoAADPa2KIB5Skb_NdQWdtPBOM7_i1mID-DpPw",
+      "content_type": "image",
+      "platform_sequence_id": 361
+    },
+    {
+      "sequence_id": 1004,
+      "platform_id": "7448885043126620160",
+      "sns_platform": "linkedin",
+      "username": "ACoAAChsCqABHbZtEaJtYtkT7lT7f1V9dwBlyIE",
+      "display_name": "Seungpil Lee",
+      "full_text": "이거 꼭 저장하세요. 클로드 코드 에이전트팀 만드는법 제대로 알려드립니다.\nAI 직원이 각자의 독립된 공간에서 동시에(병렬로) 일을 처리하고, claude.md가 프로젝트의 지휘자가 되어 이들을 통솔하는 완벽한 파이프라인을 구축해 봅니다. 코딩이나 AI 툴이 낯선 분들도 바로 따라 하실 수 있도록 차근차근 친절하게 담았습니다.\n하나의 챗봇 작업창에 너무 길고 복잡한 지시를 내리면, AI도 '기억력의 한계'에 부딪혀 핵심을 잊어버리거나 결과물의 퀄리티가 떨어집니다. 이때 필요한 것이 바로 클로드 코드(Claude Code)의 강력한 기능, '서브에이전트(Sub-agent)'입니다.\n단순히 AI에게 질문하는 수준을 넘어, AI를 똑똑한 '팀'으로 부리며 업무 생산성을 200% 끌어올리고 싶다면 지금 바로 영상에서 그 노하우를 확인해 보세요! 👇\n🔗 영상으로 AI 팀 세팅법 확인하기: https://lnkd.in/grwN-any",
+      "media": [],
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:7448885043126620160?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7448885043126620160%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "created_at": "2026-04-12 09:09:47",
+      "date": "2026-04-12",
+      "crawled_at": "2026-04-14T13:56:52.927",
+      "source": "network",
+      "local_images": [],
+      "time_text": "2일",
+      "profile_slogan": "Founder at 사용성연구소",
+      "user_link": "https://www.linkedin.com/in/ACoAAChsCqABHbZtEaJtYtkT7lT7f1V9dwBlyIE",
+      "content_type": "text",
+      "platform_sequence_id": 362
+    },
+    {
+      "sequence_id": 1005,
+      "platform_id": "DXD4MmvEZxy",
+      "sns_platform": "threads",
+      "code": "DXD4MmvEZxy",
+      "urn": "",
+      "username": "kimtbot",
+      "display_name": "김트봇 | 자기계발 • 구매대행 • 1인사업",
+      "full_text": "진짜 미쳤습니다.\n컨텐츠 만드는 분들은 무조건 클로드 쓰세요.\n\n---\n\n1.\n글을 논리적으로 잘 못 쓰겠다고요?\n\n그럼\n평소에 재밌게 봤던 영상이나 글을\n그대로 복사해서 넣고\n“이 구조를 벤치마킹해서 써줘”\n이렇게 해보세요.\n\n그러면\n내가 막연하게 느꼈던 좋은 글의 흐름을\nAI가 바로 구조로 바꿔줍니다.\n\n---\n\n2.\n또, 평소에 내가 조리 있게 말 못한다고\n느끼는 분들 있죠.\n\n그럼 그냥 음성녹음부터 켜세요.\n생각나는 대로 주절주절 말해보세요.\n\n그리고 그걸 가지고\n블로그 포스팅용으로 바꿔달라,\n스레드 컨텐츠용으로 바꿔달라,\n릴스 대본으로 바꿔달라\n이렇게 시키면 됩니다.\n\n---\n\n3.\n그러면\n내 머릿속에만 있던 생각이\n컨텐츠로 바로 바뀌기 시작합니다.\n\n1인 사업자분들은\n이거 진짜 무조건 쓰셔야 합니다.\n\n---\n\n4.\n한 달 3만 원이면\n인건비 한 명 줄이는 수준이 아니라\n잘만 쓰면 그 이상도 합니다.\n\n이제는 AI를 잘 써서\n생산성을 몇 배로 뽑는 사람이\n무조오건 유리한 시대입니다.\n\n당장 사용해보세요.\n\n---\n\n1인 사업자 분들을 위한 꿀팁도\n부지런히 풀고 있습니다.\n\n팔로우 눌러주시면 꿀팁들 계속 전달드릴게요 :)\n\n---\n\n유익하셨다면 리포스트,\n이 정보가 도움 될 분들께 공유해주세요 🔥\n\n---\n\nㅇ와 뭐야 이 글 왜 이렇게 반응이 좋아;;;;\n\n자영업하는 분들,\n1인 사업자분들 팔로우하고 기대해주세요\n\n혼자서\n블로그 유튜브 스레드 커머스 교육사업\n다 할 수 있었던 인사이트\n팡팡 터트려드릴게요 🔥",
+      "media": [
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/670635503_17962409529106246_3237748135293215677_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=Mzg3NDE4NzI2MTI5ODk3MzgxMA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjM5NngxNTIuc2RyLkMzIn0%3D&_nc_ohc=n6y2uaFrM4UQ7kNvwFaUdBn&_nc_oc=Adql56hOwerltfqz-sXcbTvrcC2V-Gsr8RJWhIBQQtCSwtiD80wcNgIq65hxusuAej8&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=Ym4WfHyfCksO8b7mAy6XGQ&_nc_ss=7a32e&oh=00_Af0h-o5PcjIF2d7J6VpF8wSMRSXP_O4ERCCi7HinnKlcLg&oe=69E4D592"
+      ],
+      "url": "https://www.threads.com/@kimtbot/post/DXD4MmvEZxy",
+      "created_at": "2026-04-13 14:45:32",
+      "date": "2026-04-13",
+      "crawled_at": "2026-04-14T13:57:11.250",
+      "source": "consumer_detail",
+      "local_images": [
+        "web_viewer/images/985df324d6b019f75125286b7dea2ec1.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DXD4MmvEZxy",
+      "pk": "3874187261298973810",
+      "taken_at": 1776059132,
+      "original_item_count": 8,
+      "platform_sequence_id": 685
+    },
+    {
+      "sequence_id": 1006,
+      "platform_id": "DXDW9AfE_cz",
+      "sns_platform": "threads",
+      "code": "DXDW9AfE_cz",
+      "urn": "",
+      "username": "unclejobs.ai",
+      "display_name": "엉클잡스 | Ai 시대, 돈이 되는 정보 전달",
+      "full_text": "스킬이 수천 개인 시대에,\n문서파일 8개로 해결하려 합니다.\n\nWaza(技)라는 오픈소스예요.\n일본어로 무술의 \"기(技)\".\n\nClaude Code 스킬 라이브러리인데, 코드가 한 줄도 없이\n마크다운만으로 이루어져 있습니다.\n\n만든 사람은 tw93. Mole의 아버지죠.\n\nSuperpowers를 깔아봤는데 무거웠고,\ngstack도 써봤는데 여전히 무거웠대요.\n심플하고, 쓸만하고, 뭘 하는지 투명한 걸 원했습니다.\n\n\"이 8개만 깔면 된다. 더 건드릴 필요 없다.\"\n\n8개 스킬이 도구가 아니라,\nAI 시대에 엔지니어가 갖춰야 할 8가지 습관에 대응해요.\n\n---\n\n/think — 사고.\nAI는 코드를 빨리 짜요. 근데 방향이 틀리면 빨리 달릴수록 더 멀어집니다.\n문제 자체를 먼저 의심하고, 계획을 스트레스 테스트하고,\n설계를 확정한 뒤에 실행시키는 습관.\n\n/design — 디자인.\nAI가 만든 프론트엔드는 다 비슷하게 생겼어요.\n이모지에 파란-보라 그라데이션. 작자가 \"극혐\"이라고 표현했습니다.\n취향과 기준을 주입해서 \"AI 냄새\"를 없애는 스킬.\n\n/hunt — 디버깅.\nAI가 버그를 고칠 때 \"바꿔보고 다시 돌려보기\" 루프에 빠지기 쉬워요.\n근본 원인부터 찾고, 한 번에 제대로 고치는 방식.\n\n/check — 검수.\nAI가 쓴 코드는 사람이 더 꼼꼼히 봐야 해요.\ndiff를 먼저 리뷰하고, 자동 수정할 건 자동으로,\n판단이 필요한 건 모아서 보여주고,\n감이 아니라 근거로 검증합니다.\n\n---\n\n/read — 읽기.\nURL이나 PDF를 깔끔한 마크다운으로 변환해서\n작업 흐름에 바로 넣는 스킬. 2차 요약 대신 1차 소스를 읽는 습관.\n\n/write — 글쓰기.\n배운 걸 명확하게 전달하는 능력.\n기술이 아무리 강해도 설명을 못 하면 전달이 안 됩니다.\n\n/learn — 학습.\n수집 → 소화 → 개요 → 초안 → 다듬기 → 발행.\n읽기만 하는 게 아니라 출력으로 학습을 구동하는 구조.\n\n/health — 유지보수.\nCLAUDE.md, rules, hooks, MCP 설정이\n시간이 지나면 어긋나기 시작해요.\n정기 점검을 돌려서 어디가 문제인지 빠르게 파악합니다.\n\n---\n\n/design 구현이 특히 흥미롭습니다.\n\n직접 만든 UI 사이트들과 튜닝 기록을\nClaude Code에 넣어서 best practice와 anti-pattern 기준선을 만들었어요.\n\n거기에 pbakaus/impeccable에서\n금지 폰트 목록, 색상 시스템, 금지 CSS 패턴, 애니메이션 규격 등\n구체적인 가이드라인을 가져왔습니다.\n\ngetdesign에서는 Google Stitch의 9섹션 디자인 프레임워크를 참고했어요.\n\n그리고 /design을 실행하면 먼저 질문을 합니다.\n누구를 위한 건지, 어떤 미적 방향인지,\n사용자가 페이지에서 뭘 기억하길 원하는지,\n가장 싫어하는 게 뭔지.\n\n이 맥락을 먼저 확보한 뒤에 작업하니까\n\"AI가 만든 티\"가 훨씬 덜 나요.\n\n코드 0줄. 마크다운만으로 이루어진 오픈소스.\n\"AI 이전이라면 프로그래머로서 부끄러웠을 것\"이라고 작자가 썼어요.\n\n모델 성능이 좋아지고 \n하네스 엔지니어링이 뜨는 지금, 마크다운이 코드입니다.\n\n---\n\n→ https://github.com/tw93/waza\n\n---\n\n몰레를 만든 사람은 뭘 해도 놀래\n이런걸 몰래 만들다니..",
+      "media": [
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/670268892_17938081704207210_1000475768778761379_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ig_cache_key=Mzg3NDA0MTA1MzkwMTQ4NTg3NQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEyMDB4MTIwMC5zZHIuQzMifQ%3D%3D&_nc_ohc=45fY8xzDRDgQ7kNvwEtVz-g&_nc_oc=AdoQezbiW5jRYwtlydordRAhtIJ370Ge-81TEnUfvl1RlhHbJl5j3NLMuqWQ3muX9Dk&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=9Oan2AHU3RVLPLncUVOuXA&_nc_ss=7a32e&oh=00_Af1wMIv-7_0JfbO7elGbruasdrtSNmZYCNe64LsRQxgM8A&oe=69E4F5FB"
+      ],
+      "url": "https://www.threads.com/@unclejobs.ai/post/DXDW9AfE_cz",
+      "created_at": "2026-04-13 09:55:03",
+      "date": "2026-04-13",
+      "crawled_at": "2026-04-14T13:57:11.272",
+      "source": "consumer_detail",
+      "local_images": [
+        "web_viewer/images/f07f0eabe290c86e0aafd276d77bbbcd.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DXDW9AfE_cz",
+      "pk": "3874041053901485875",
+      "taken_at": 1776041703,
+      "original_item_count": 6,
+      "platform_sequence_id": 684
+    },
+    {
+      "sequence_id": 1007,
+      "platform_id": "DXDs0GtEb6h",
+      "sns_platform": "threads",
+      "code": "DXDs0GtEb6h",
+      "urn": "",
+      "username": "devitez",
+      "display_name": "데브잇이지 | devitez",
+      "full_text": "클로드코드 세미나, 커피챗을 진행하며\n꼭 공유드리는 링크/자료 들입니다.\n\n보통 이걸 하고 싶어하시는데 못 찾으시거든요.\n최소 300시간의 커피챗/강연의 경험이 농축된 링크모음입니다.\n\n1. 디스코드에서 클로드 코드 사용하기\nhttps://code.claude.com/docs/ko/channels#how-channels-compare\n\n2. claude code라는 운영체제에 서비스 개발하기\nhttps://platform.claude.com/docs/en/managed-agents/quickstart\n\n---\n\n하네스=에이전트를 움직이는 법\n모바일 앱=휴대폰을 움직이는 법\n\n하네스 = 클로드코드 Agent Application\n\n3. 하네스 만드는 하네스 github\nhttps://github.com/revfactory/harness\n\n4. 개인 지식 베이스LLM wiki 관련 아티클\nhttps://okky.kr/articles/1554820\n\n---\n\n5. 내가 만든 하네스를 제일 쉽게 배포하기 / 설치하기\nhttps://anpm.io\n\n6. 하네스 만드는 사람들이 모이는 오픈채팅방\nhttps://open.kakao.com/o/p2Yde0ei\n\n---\n\n마지막 오픈채팅방은 귀여운 홍보로 봐주시고,\n도움되셨다면 하트&리포스트 부탁드립니다 ㅎㅎ",
+      "media": [],
+      "url": "https://www.threads.com/@devitez/post/DXDs0GtEb6h",
+      "created_at": "2026-04-13 13:06:04",
+      "date": "2026-04-13",
+      "crawled_at": "2026-04-14T13:57:11.297",
+      "source": "consumer_detail",
+      "local_images": [],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DXDs0GtEb6h",
+      "pk": "3874137199126625953",
+      "taken_at": 1776053164,
+      "original_item_count": 4,
+      "platform_sequence_id": 683
+    },
+    {
+      "sequence_id": 1008,
+      "platform_id": "DW8ZNrTE-QT",
+      "sns_platform": "threads",
+      "code": "DW8ZNrTE-QT",
+      "urn": "",
+      "username": "mdmstudio_design",
+      "display_name": "설득 구조 만드는 마자이너 | MDM",
+      "full_text": "[상세페이지, 랜딩페이지 AI 기획 방법]\n1.핀터레스트에 landing page structure 혹은 landing page formula를 검색하세요.\n\n2. AI에게 전달해서 구조의 요소들이 무엇이있고 어떤 기능을 하는지 정의하고 학습 시키세요.\n\n3. 랜딩페이지 제작이 필요한 서비스, 제품에대한 정보를 제공하고 기획안 작성을 진행하세요.\n\n4. 전환율을 최대로 끌어올리는 피드백을 달라고 요청하세요.\n\n여기에 더해서 17단계 랜딩페이지 구조를 영상으로 정리해 두었습니다.\n\n---\n\n랜딩페이지 기획이 필요하다면 \n아래 영상을 확인해주세요 :)\n\nhttps://youtu.be/ipT38WXonhw?si=mse9p5g9qjdlRFsu",
+      "media": [
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/659653396_17949371208130525_4257588663040694883_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ig_cache_key=Mzg3MjA4MDY2MzIyMzE2OTE5Nw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjczNngxNTM5LnNkci5DMyJ9&_nc_ohc=B62UTLYfBFoQ7kNvwGQ5iqF&_nc_oc=Adr-lhhaPbiaCzYiQu5ypgEGl0IZotg7DHJ8WTvCN20VwxGYCVxmhWFfn8iHn87ZD8A&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=q8N5FADC3579kw5z9mTNPQ&_nc_ss=7a32e&oh=00_Af2PG4ELtdarktCA3GVfgwWInAdh75K8zQe9DtZfVK7mrw&oe=69E4F01D"
+      ],
+      "url": "https://www.threads.com/@mdmstudio_design/post/DW8ZNrTE-QT",
+      "created_at": "2026-04-10 17:00:07",
+      "date": "2026-04-10",
+      "crawled_at": "2026-04-14T13:57:17.350",
+      "source": "consumer_detail",
+      "local_images": [
+        "web_viewer/images/7b4db0cce97a2b8a4b12599c790eb8bc.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DW8ZNrTE-QT",
+      "pk": "3872080670638728211",
+      "taken_at": 1775808007,
+      "original_item_count": 2,
+      "platform_sequence_id": 680
+    },
+    {
+      "sequence_id": 1009,
+      "platform_id": "DW9P9hNCXOY",
+      "sns_platform": "threads",
+      "code": "DW9P9hNCXOY",
+      "username": "unclejobs.ai",
+      "display_name": "엉클잡스 | Ai 시대, 돈이 되는 정보 전달",
+      "full_text": "YouTube, TikTok, Instagram, X.\n링크 붙여넣으면 끝입니다.\n\nReClip이라는 오픈소스예요.\n1,000개 이상의 사이트에서 영상과 오디오를 받아줍니다.\n\n광고 없음. 팝업 없음. 트래커 없음. 계정 없음.\n\n링크를 붙여넣으면 썸네일이 뜨고,\nMP4(영상) 또는 MP3(오디오)를 고르고,\n해상도 선택하고 다운로드.\n\n여러 링크를 한꺼번에 넣으면 일괄 다운로드.\n중복은 자동으로 걸러줘요.\n\n내 컴퓨터에서 돌아가니까\n데이터가 밖으로 나가지 않습니다.",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/663138497_1588609625544430_9054578140387013200_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=102&ig_cache_key=Mzg3MjMyMTQ0NzczNzc3MzcwNA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY0MHg0MjIuc2RyLkMzIn0%3D&_nc_ohc=S5jKyR9O0BgQ7kNvwFsxZ22&_nc_oc=AdqOfG9OaDVJVuTX3GdcEY8vXjGsQX71NALwhThK3OPIy8Myu1PzRafXxsgwHV9yOGE&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_gid=DNf2LzxyhBCFUfG6K09gkg&_nc_ss=7a32e&oh=00_Af3FgvKrnbdcKbTKasfRPaHAYQzKFclpenhojVBhYSE9-g&oe=69E3A4B7",
+        "https://scontent-ssn1-1.cdninstagram.com/o1/v/t16/f2/m84/AQOGTVqEFp3vIdjUDYshgDZJ-0oO5mDvzoq34GukG857drF18lEOFNYhI2s4g9jhbUx6QEhzLJLmKpjvuMGQKnt5LYyN7Bj-eKwMKl4.mp4?_nc_cat=110&_nc_sid=5e9851&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=qTXgrDuY78UQ7kNvwGDludM&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0FST1VTRUxfSVRFTS5DMy4xMDg4LmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTc5Mzc3NTU2ODIyMDcyMTAsImFzc2V0X2FnZV9kYXlzIjozLCJ2aV91c2VjYXNlX2lkIjoxMDE2NCwiZHVyYXRpb25fcyI6NCwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=e530673a9a2bcd3a&_nc_vs=HBkcFQIYTGlnX2JhY2tmaWxsX3RpbWVsaW5lX3ZvZC9ERjQ1MkQ4NjI0ODZFMzgyNjI2OTYxMEQ0NzM1OUM5RF92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAKAAYABsCiAd1c2Vfb2lsATEScHJvZ3Jlc3NpdmVfcmVjaXBlATEVAAAm1NeLuOaS3T8VAigCQzMsF0AWMzMzMzMzGBJkYXNoX2Jhc2VsaW5lXzFfdjERAHXuB2XongEA&_nc_gid=DNf2LzxyhBCFUfG6K09gkg&_nc_zt=28&_nc_ss=7a32e&oh=00_Af1YPawO_PCltjD49VOrMpoeTi1MszLwnqUhWmuimXmFgg&oe=69DFBB92",
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/671115214_17937755712207210_7253738477264317137_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ig_cache_key=Mzg3MjMyMTQ0Nzk2NDMwODc3Nw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEyNzZ4NzY3LnNkci5DMyJ9&_nc_ohc=rJ4SxFAvFJAQ7kNvwHS8qSy&_nc_oc=AdrRf1cejwvt3juycoral76gNsTMbQ1hNCpsEkAaIIPtUTbqVZasTB3ctnB5FX0YJ7A&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_gid=DNf2LzxyhBCFUfG6K09gkg&_nc_ss=7a32e&oh=00_Af1omtl1I91eZTSp36QYOo7wr4I7t7ua4p8jgarIqmhRIw&oe=69E3A81E"
+      ],
+      "url": "https://www.threads.com/@unclejobs.ai/post/DW9P9hNCXOY",
+      "created_at": "2026-04-11 00:58:31",
+      "date": "2026-04-11",
+      "crawled_at": "2026-04-14T13:57:17.350",
+      "source": "network",
+      "local_images": [
+        "web_viewer/images/aed2ba6f698e5374c9ba90b5ba891ee4.jpg",
+        "web_viewer/images/d3f82f272235bdef7bc174f1de614294.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": false,
+      "root_code": "DW9P9hNCXOY",
+      "like_count": 246,
+      "reply_count": 33,
+      "repost_count": 96,
+      "quote_count": 2,
+      "pk": "3872321452846445464",
+      "media_type": 8,
+      "content_type": "carousel",
+      "platform_sequence_id": 681
+    },
+    {
+      "sequence_id": 1010,
+      "platform_id": "DW9P9UhiQxd",
+      "sns_platform": "threads",
+      "code": "DW9P9UhiQxd",
+      "urn": "",
+      "username": "unclejobs.ai",
+      "display_name": "엉클잡스 | Ai 시대, 돈이 되는 정보 전달",
+      "full_text": "파이썬 150줄이에요. 프론트엔드는 순수 HTML.\n의존성 2개. Docker도 됩니다.\n\nReddit, Facebook, Vimeo, Twitch,\nSoundCloud, Threads, LinkedIn까지 전부 지원해요.\n\n10년간 광고 범벅 다운로더 사이트를 쓰던 사람들이 감탄했죠.\n며칠 만에 GitHub 스타 수천 개.\n\n완전 무료\n\n---\n\n→ https://github.com/averygan/reclip\n\n---\n\n내것도 그런데.. ㅠ\n\n---\n\nYouTube, TikTok, Instagram, X.\n링크 붙여넣으면 끝입니다.\n\nReClip이라는 오픈소스예요.\n1,000개 이상의 사이트에서 영상과 오디오를 받아줍니다.\n\n광고 없음. 팝업 없음. 트래커 없음. 계정 없음.\n\n링크를 붙여넣으면 썸네일이 뜨고,\nMP4(영상) 또는 MP3(오디오)를 고르고,\n해상도 선택하고 다운로드.\n\n여러 링크를 한꺼번에 넣으면 일괄 다운로드.\n중복은 자동으로 걸러줘요.\n\n내 컴퓨터에서 돌아가니까\n데이터가 밖으로 나가지 않습니다.",
+      "media": [
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.71878-15/670763429_943339481783429_13321471539187776_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=103&ig_cache_key=Mzg3MjMyMTM2NDAwMjcwMDg1OA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY0MHg0MDAuc2RyLkMzIn0%3D&_nc_ohc=3JHXKzwf9a0Q7kNvwEh4fBD&_nc_oc=AdpUBUn7BnaCv0MCggUKfw1N7-zKCVeiLDru5VBGYe_btKuXCuD_BANbn55Egx1HDUM&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=S6RsR7KGSzTxQ5sVlSWfpw&_nc_ss=7a32e&oh=00_Af18NHbj3aCeViSjmSg7lWy2Jvrl1mqh2A6M-OAyDcwlFg&oe=69E4E0A2",
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.71878-15/663138497_1588609625544430_9054578140387013200_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=102&ig_cache_key=Mzg3MjMyMTQ0NzczNzc3MzcwNA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY0MHg0MjIuc2RyLkMzIn0%3D&_nc_ohc=S5jKyR9O0BgQ7kNvwGvUOh-&_nc_oc=AdpbeVZuWaS2-L4jY0W0aEpu9zjomqdt9mxiiCG5jdlI-3BFKFd6SsluG8a4F19CkBk&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=S6RsR7KGSzTxQ5sVlSWfpw&_nc_ss=7a32e&oh=00_Af2zb1GdUVH4Aq51V6Kffa1lrSaqU4tfmjjEcVhIG0c78g&oe=69E4F637"
+      ],
+      "url": "https://www.threads.com/@unclejobs.ai/post/DW9P9UhiQxd",
+      "created_at": "2026-04-11 00:58:29",
+      "date": "2026-04-11",
+      "crawled_at": "2026-04-14T13:57:17.350",
+      "source": "consumer_detail",
+      "local_images": [
+        "web_viewer/images/c9684535904d77a06e1e0fb9bfa5380e.jpg",
+        "web_viewer/images/33a18c9c1277c4446746579777834744.jpg"
+      ],
+      "is_detail_collected": false,
+      "is_merged_thread": true,
+      "root_code": "DW9P9hNCXOY",
+      "pk": "3872321439231708253",
+      "taken_at": 1775836709,
+      "original_item_count": 4,
+      "platform_sequence_id": 681
+    },
+    {
+      "sequence_id": 1011,
+      "platform_id": "DW9PyEmk1Hp",
+      "sns_platform": "threads",
+      "code": "DW9PyEmk1Hp",
+      "urn": "",
+      "username": "eu_nji_1014",
+      "display_name": "은지👩🏻‍🔬",
+      "full_text": "Calamus ppt ai 사용 후기\n장점 : 알잘딱깔센으로 깔끔하고 미니멀하고 모던한 스타일의 디자인과 레이아웃의 ppt가 나옴 (80% 완성)\n\n단점\n1. 수동 편집이 쉽지 않다. 프롬프트 요청을 통해 수정하는데 이것도 쉽지 않다. 내가 원하지 않는 곳까지도 수정해버림. 기다리는 시간 아까움..\n2. ppt 추출이 안된다.(버튼은 있는데 안됨) png(16:9 비율) 추출을 통해서 ppt 파일로 만들어야함.\n\n근데 이 단점을 다 무시하고 디자인이 괜찮아서 자주 써먹어볼 예정 ~ 레이아웃만 따서 ppt에 일단 붙여놓고 거기서 텍스트 추가 및 수정하는 방식으로 진행하는 게 좋을 듯?",
+      "media": [],
+      "url": "https://www.threads.com/@eu_nji_1014/post/DW9PyEmk1Hp",
+      "created_at": "2026-04-11 00:56:57",
+      "date": "2026-04-11",
+      "crawled_at": "2026-04-14T13:57:17.350",
+      "source": "consumer_detail",
+      "local_images": [],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DW9PyEmk1Hp",
+      "pk": "3872320666222154217",
+      "taken_at": 1775836617,
+      "original_item_count": 1,
+      "platform_sequence_id": 682
+    },
+    {
+      "sequence_id": 1012,
+      "platform_id": "DW79A1fkQ0d",
+      "sns_platform": "threads",
+      "code": "DW79A1fkQ0d",
+      "urn": "",
+      "username": "specal1849",
+      "display_name": "공냥이",
+      "full_text": "[제대로 쓰는 노트북 LM 가이드]\n제미나이 안에 노트북 LM이 합쳐졌습니다.\n\n원래는 불편하게 끌어와야했던걸 \n무척이나 편하게 사용할수있고\n\n제미나이내 편의기능을 녹여낸다면 끝없는 확장이 가능하겠네요\n사용법이나 활용법을 자세하게 정리했습니다.\n\n스레드에서 제일 자세하게 써둔 노트북LM 활용법\n\n---\n\n우선 이번 업데이트 같은경우 여러가지가 가능합니다.\n\n좌측에 노트북을 누르면 지금까지 만들어둔 노트북을 확인가능하며\n새노트북을 바로 콜해서 쓸수있죠 그럼이걸 어떻게쓰는걸까요?\n\n---\n\n새노트북을 바로 추가해봤습니다.\n\n완전히 동일한 형태의 추가가 생기긴 하는데\n아직 딥리서치나 웹검색은 내장이 안된상태네요\n\n다만 보통 이런경우 그냥 내용을 추가하기에 크게문제는 없습니다.\n\n---\n\n여러번의 제미나이 활용글만 100개정도를 넘게작성했는데요\n노트북에서 대화를 클릭하면 \n다음과 같은 형태로 모든기능이 활성화되어있고\n아래쪽에는 이미 대화가 추가되어있는 형태로 확인됩니다.\n\n딥리서치나 각종 자료연계도 가능해보여요!!\n이부분은 아직깍아봐야겠지만 정말 무한히 확장이 가능해보입니다.\n\n---\n\n특히 캔버스 기능을 활용한 시각화 인포그래픽웹 \n혹은 개념설명용 페이지를 만들어 학생들에게 공유하는 기능이\n굉장히 유용해보이고\n\n추가적으로 더많은 변주가 가능할것같습니다 :)",
+      "media": [
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.71878-15/670419573_1515472360299110_5666175572004675916_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=109&ig_cache_key=Mzg3MTk1NjY0MjkzMDE2NzA2OQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY0MHgyOTYuc2RyLkMzIn0%3D&_nc_ohc=5tWdzgDJBQMQ7kNvwGyd-Bt&_nc_oc=AdpCt5fSDmoacYl52fYxgTBVCeqPrPO0_-WtpyXSOrPTRRN-Owbc4J51v_q3U5efQS0&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=rP3hSwq5ZTtjvYlfICZrbw&_nc_ss=7a32e&oh=00_Af31Fv3Rbo7iFG-wbKYt8XyEoDd73UvxjLugvy1LRMiaTQ&oe=69E4FAEF",
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/669714990_17903070669406917_3017990504931523703_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ig_cache_key=Mzg3MTk2MDQzMDk3NDA5NTc0Nw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjg0OXg0Nzcuc2RyLkMzIn0%3D&_nc_ohc=mQXpRLGkfncQ7kNvwFl1VNT&_nc_oc=AdqxBY_qFzLZVsAeyxFYFKyd3rJw6hD2-iGBI1-28AeohtV4KDvu-wDWeRWDL_mrOsU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=rP3hSwq5ZTtjvYlfICZrbw&_nc_ss=7a32e&oh=00_Af2jRSH2ZgF916M33f7pvZjaNHjxKXq4tMUVfmxypNy_eg&oe=69E4F8CA",
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/670877684_17903070747406917_4509928157229785048_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=Mzg3MTk2MDQ5NjI3OTM5OTQwMw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjcxNngyNTUuc2RyLkMzIn0%3D&_nc_ohc=tNf0q2Z7qi8Q7kNvwGJV2Qv&_nc_oc=Adq-jGlhlOOhWkpoomwQ7vJXzPBfkNR-vzmZfLtBKQIDNLJPtHJUqVYsg97Axy3tHr0&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=rP3hSwq5ZTtjvYlfICZrbw&_nc_ss=7a32e&oh=00_Af3OSjPr3Q3VzSNS6fmj2-v2DEndQCw9D6ietGPGKp7fBw&oe=69E4FD0C",
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/670183827_17903070903406917_7246082645241081914_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ig_cache_key=Mzg3MTk2MDU2NjQxNjU2NjQ2MA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjc4MngyNTcuc2RyLkMzIn0%3D&_nc_ohc=_iethnWHDioQ7kNvwGPb2kp&_nc_oc=AdpliVltRt9gzuCmEsund2LAQMWm3Psclt_OGF01w_NiuPB8ccLHIUOQP9_i0E4YzDI&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=rP3hSwq5ZTtjvYlfICZrbw&_nc_ss=7a32e&oh=00_Af1u96d7BecpfOA0YamwCX0cNGckcCd6O_qE2GjI5F70dA&oe=69E4DFAC",
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/671140589_17903071014406917_4701027518975641819_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ig_cache_key=Mzg3MTk2MDYzMTM1Mjc3MjY0Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE2Mzl4ODY3LnNkci5DMyJ9&_nc_ohc=kfj_eF9gSAUQ7kNvwGgw_gJ&_nc_oc=Adru0PduubxQfBx_7-aq_BXrKT7LXt0jOxeuy093rWhQStqL5-HNABv4oqoduMWETQY&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=rP3hSwq5ZTtjvYlfICZrbw&_nc_ss=7a32e&oh=00_Af3OgFiZpffB1ktPQy0kiY9nbLrDrsE8J40Xvkckvc4I5g&oe=69E4FDCE"
+      ],
+      "url": "https://www.threads.com/@specal1849/post/DW79A1fkQ0d",
+      "created_at": "2026-04-10 13:01:08",
+      "date": "2026-04-10",
+      "crawled_at": "2026-04-14T13:57:17.351",
+      "source": "consumer_detail",
+      "local_images": [
+        "web_viewer/images/fef1c76892dc56028d2590a8b8d28eb5.jpg",
+        "web_viewer/images/95526f08effdbadbdb64dc6050d87d21.jpg",
+        "web_viewer/images/5ca2442f14f434e64fa116fb217a8b5d.jpg",
+        "web_viewer/images/34c7cf1e6e4b630ba68973e5a6021afe.jpg",
+        "web_viewer/images/171a6e6f3875359a3244d5453f3d85e8.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DW79A1fkQ0d",
+      "pk": "3871956642930167069",
+      "taken_at": 1775793668,
+      "original_item_count": 5,
+      "platform_sequence_id": 679
+    },
+    {
+      "sequence_id": 1013,
+      "platform_id": "DW8rs69iTYG",
+      "sns_platform": "threads",
+      "code": "DW8rs69iTYG",
+      "urn": "",
+      "username": "unclejobs.ai",
+      "display_name": "엉클잡스 | Ai 시대, 돈이 되는 정보 전달",
+      "full_text": "Claude Code 안에서 GPT-5.4를 굴립니다\n\n월 100달러(약 13만 원) GPT 요금제가 출시되었죠. Codex 쪽 한도가 Plus 대비 다섯 배, 프로모션 기간엔 열 배까지 올라가죠. 그런 GPT 5.4를 Claude Code의 단축키와 화면은 그대로 쓰면서, 뒤에서 모델만 갈아 끼울 수 있습니다. \n\n이름은 CCS, Claude Code Switch. \n\n어제 또 토큰이 리셋된 김에 \n@catlovessubakba 추천 받아서 직접 갈아 끼워 봤어요.\n\n---\n\nCCS는 Claude Code 뒤편에 다른 AI를 꽂아 넣는 어댑터입니다.\n\n터미널 UI는 Claude Code 그대로 쓰면서, 응답을 만드는 모델만 OpenAI나 Google, OpenRouter, 로컬 모델로 교체하는 라우터예요. 멀티탭 콘센트를 떠올리면 비슷해요. 콘센트 모양은 하나인데 어느 구멍에 어느 가전을 꽂느냐만 사용자가 정하는 식이죠.\n\n\"설정 파일을 매번 갈아엎지 않고도 Claude, Codex, Droid 프로필, GLM, 로컬 모델, Anthropic 호환 접속 통로(API)를 한자리에서 돌리세요.\"\n\n---\n\n설치는 npm 한 줄, 실행은 `ccs codex` 한 줄입니다.\n\n전제 조건은 Node.js와 본인 명의의 ChatGPT 계정 하나. 쓴 만큼은 ChatGPT 쪽에서 차감됩니다.\n\n처음 실행하면 브라우저가 열리고 OpenAI 로그인 화면이 뜹니다. 로그인하면 OAuth 토큰이 로컬에 캐시되고, 이후엔 명령어 한 줄로 백엔드가 Codex로 전환돼요. API 키를 따로 발급받을 필요가 없죠.\n\n다중 계정도 분리해서 굴릴 수 있어요. `ccs work`, `ccs personal` 식으로 프로필 이름만 바꿔주면 회사 계정과 개인 계정이 섞이지 않습니다. 모니터링용 대시보드와 로컬 웹 검색 도구도 같이 깔리는데, 처음엔 무시해도 무방해요.\n\n---\n\nGPT-5.4는 터미널에서 도구를 다루는 솜씨가 한 단계 위입니다.\n\nGPT-5.4는 Pro, Thinking, mini, nano 네 갈래로 나뉘어요. Codex CLI가 바로 이 계열을 기반 모델로 씁니다.\n\n코딩 시험 성적은 어떨까요. 가장 차이가 크게 벌어진 지표가 Terminal-Bench예요. 실제 터미널에서 명령어를 짜고 디버깅하는 작업을 시키는 시험입니다. GPT-5.4가 75.1%, Claude Opus 4.5가 59.1%. 같은 리그에서 16점 격차는 보기 드물어요. 다른 코딩 시험에서는 거의 동률인데, 자동화된 명령 실행 쪽에선 GPT-5.4가 또렷하게 앞섭니다.\n\n---\n\n빠르기는 거꾸로입니다. 초당 뽑아내는 글자 수로만 보면 Claude Sonnet이 Codex보다 두세 배 빨라요. 한 번에 길게 생각하는 작업엔 답답할 수 있죠.\n\n복잡한 아키텍처 설계는 Claude Code가 여전히 편하고, 끝없이 명령어를 두드려 자동 실행시키는 작업엔 Codex 쪽 가성비가 좋습니다. CCS를 쓰면 한 자리에서 둘을 번갈아 쓸 수 있다는 게 핵심이에요.\n\n---\n\n100달러 요금제는 마르지 않는 샘물이 아닙니다.\n\n오해하기 쉬운 부분이 여기예요. 새 요금제는 분명 매력적입니다. 200달러짜리 Pro를 결제해야만 받던 Codex 한도를 절반 값에 쓸 수 있으니까요. 5월 31일까지는 프로모션으로 Plus 대비 열 배까지 올라갑니다.\n\n다만 한도는 두 겹으로 깎여요. 5시간 단위로 리셋되는 로컬 메시지 한도가 하나, 한 주 단위로 돌릴 수 있는 클라우드 작업 수가 또 하나. 절대 무제한이 아닙니다. 프로모션이 끝나는 5월 31일 이후엔 열 배가 다섯 배로 내려가요.\n\n깃허브 이슈에 올라온 사용자 보고도 흥미로워요. \"임의의 사용량 리셋이 일어나서 오히려 토큰을 통째로 잃어버린다\"는 사례가 여러 건 쌓여 있습니다. 저도 어제 새벽에 갑자기 한도가 채워지길래 좋다고 굴려 봤지만, 며칠 뒤 다시 얼마가 남을지는 아무도 모릅니다. Codex 쪽 정책은 여전히 예측 불가에 가까워요.\n\n더 넉넉해진 수돗물이지 샘물은 아닙니다.\n\n---\n\nAnthropic ToS D.4의 경계선을 정확히 그어야 합니다.\n\nCCS 같은 도구를 다루다 보면 가장 헷갈리는 대목이 약관이에요. Anthropic은 최근 몇 달간 OpenClaw, Antigravity 같은 제3자 도구로 Claude 구독을 우회하는 사례를 강하게 단속해 왔습니다. 경고 없이 계정을 막은 사례도 보고됐어요.\n\n근거 조항이 Consumer Terms of Service Section D.4입니다.\n\n\"Claude Free·Pro·Max 계정에서 받은 OAuth 토큰을 다른 제품·도구·서비스에서 쓰는 행위는 허용되지 않으며 Consumer 이용약관 위반입니다.\"\n\n---\n\n여기서 두 갈래를 명확히 나눠야 합니다.\n\n(A) 안전한 경로: CCS를 Codex 전용 프로파일로만 실행하고, 백엔드는 본인 ChatGPT 계정의 Codex 인증으로만 라우팅. 이때 Claude Pro나 Max에 로그인하지 않으면 Claude OAuth 토큰 자체가 발급되지 않아요. D.4의 직접 대상이 아닙니다. CCS가 만든 터미널 화면만 빌리는 셈이죠.\n\n(B) 위험한 경로: CCS의 다중 Claude 프로파일 기능을 써서 Claude Pro나 Max 토큰을 다른 도구에 꽂아 돌리는 방식. D.4가 정면으로 겨냥하는 행위입니다. 쌓인 사례도 많고 처벌도 즉각적이에요.\n\n도구 자체가 불법이 아니라, 어느 구멍에 어느 토큰을 꽂느냐의 문제입니다. Codex 한도만 빌려 쓰려는 사람한테는 회색지대도 아니에요. Claude 구독까지 묶어서 굴리려는 순간부터 위험이 시작됩니다.\n\n---\n\n누가 써볼 만한지 정리해 봅니다.\n\nChatGPT Pro 100달러 요금제를 이미 결제했고, 평소 Claude Code의 단축키와 흐름이 손에 익은 사람이라면 가장 잘 맞아요. 인터페이스는 익숙한 그대로 쓰면서 OpenAI의 자동 실행 강점을 덤으로 끌어다 쓸 수 있습니다.\n\n반대로 Claude Pro나 Max를 우회해서 비용을 아끼려는 의도라면 멈추는 게 좋습니다. 계정이 막히는 순간 한 달 치 작업 흐름이 통째로 끊길 수 있어요. 절약하려다 더 비싼 값을 치르는 셈이죠.\n\nCodex가 또 토큰을 리셋해 준 김에 어제 몇 시간 굴려본 결론은 단순합니다. 도구로서는 충분히 흥미롭고, 쓰는 방식만 정돈하면 합법적인 효율을 챙길 수 있어요. 다만 어떤 토큰을 쓰는지 매번 자기 자신한테 한 번씩 묻는 습관은 필요합니다.\n\n---\n\n- CCS 공식 저장소 → https://github.com/kaitranntt/ccs\n\n---\n\n- Claude Code vs Codex CLI 비교 → https://www.nxcode.io/resources/news/claude-code-vs-codex-cli-terminal-coding-comparison-2026\n- Anthropic의 제3자 도구 차단 정책 → https://www.theregister.com/2026/02/20/anthropic_clarifies_ban_third-party_claude_access/\n\n---\n\n\"우리에겐 카카오 for GPT 와 갓티보가 있다.\"\n\n원한다면, \n토큰 리셋",
+      "media": [
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/669775567_17937721008207210_9060085814944909604_n.jpg?stp=cp6_dst-jpg_e35_tt6&_nc_cat=108&ig_cache_key=Mzg3MjE2MTk4MjU5ODE2NjAyMg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjMwNjV4MTUyMS5zZHIuQzMifQ%3D%3D&_nc_ohc=64cu1TszrP0Q7kNvwG2aEyC&_nc_oc=AdogR8g-SyPtYQss9mjd1Esilb3_K13QB4HcomARvhev1Kcby1Uon-fFXGgjuutCjZw&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=6qJy7lXnzR6sNhz4xSROhg&_nc_ss=7a32e&oh=00_Af1uOMs0KV3s6Utk5pnmKpK2ySD4IK3H_hxoYj6bX6Pi2A&oe=69E4EDD7",
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/662333127_17937721065207210_6136875492263634734_n.jpg?stp=cp6_dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=Mzg3MjE2MTk4MjUzOTQ5NTA1OQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE0OTJ4NjU2LnNkci5DMyJ9&_nc_ohc=smT9kmbdfccQ7kNvwHiaqAF&_nc_oc=AdqFihV3n6FbNPyyzsAt_wpbcWxDQ_Ecu5VGXTs66NoG2_EUTcobLOlTK3Gk-_n_0gM&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=6qJy7lXnzR6sNhz4xSROhg&_nc_ss=7a32e&oh=00_Af0Ex89pcJIepjCuXmb3wblbDiSOQzClGfomUcG46sAMIg&oe=69E4E347",
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/658922582_17937721212207210_8151504956508157226_n.jpg?stp=cp6_dst-jpg_e35_tt6&_nc_cat=104&ig_cache_key=Mzg3MjE2MTk4MjYxNDk2NzA0OA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjIxNjB4MTI0Ny5zZHIuQzMifQ%3D%3D&_nc_ohc=sYl-rpT28rAQ7kNvwHgG0nR&_nc_oc=AdoCbHiOF0zEh2JvgSroUxSBCHE1QhHSx9IvYmHzSrgTX1FPPhguw3dI38XszAuKM-o&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=6qJy7lXnzR6sNhz4xSROhg&_nc_ss=7a32e&oh=00_Af22opWeQlwsQexfRZXhgN5IDbUrNcLyKX0NNnaVsIhk5g&oe=69E4DFE4",
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/670914313_17937721383207210_455764996775713252_n.jpg?stp=cp6_dst-jpg_e35_tt6&_nc_cat=108&ig_cache_key=Mzg3MjE2MTk4MDY4NTU4MTczNQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE5MTh4MTQ0MC5zZHIuQzMifQ%3D%3D&_nc_ohc=Ngm7v4O1qt4Q7kNvwGwEidQ&_nc_oc=Adofw_J7TWYX38wkJhj0Vd9Aw2bnBUfmv0dYOe6X2tahr5NjJLepnhezWXz8swAtoWw&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=6qJy7lXnzR6sNhz4xSROhg&_nc_ss=7a32e&oh=00_Af1TlHOYONPoADCln3uU1wAO4KUQAPmJVO0l70fCWiGQGg&oe=69E4F61A",
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/658840033_17937721464207210_7632736648608720758_n.jpg?stp=cp6_dst-jpg_e35_tt6&_nc_cat=100&ig_cache_key=Mzg3MjE2MTk4MjUxNDI3NzMxOQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE3NDl4MTQ0MC5zZHIuQzMifQ%3D%3D&_nc_ohc=fXzwfZz06XAQ7kNvwGkYjHX&_nc_oc=AdokQQirvL0EfB9gvnb1llcA2NYmwFrTDoKS5T6rF3E3eYNJIEvfSDIUpT9rbNJUu6I&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=6qJy7lXnzR6sNhz4xSROhg&_nc_ss=7a32e&oh=00_Af1x_BGw79-5EaOh7NgbbLaK6vkAcdQYrBhaegM2CVTf0A&oe=69E50137"
+      ],
+      "url": "https://www.threads.com/@unclejobs.ai/post/DW8rs69iTYG",
+      "created_at": "2026-04-10 19:41:40",
+      "date": "2026-04-10",
+      "crawled_at": "2026-04-14T13:57:20.372",
+      "source": "consumer_detail",
+      "local_images": [
+        "web_viewer/images/ce5b9dd47c3c0d99a6273ecb3d4f5cb0.jpg",
+        "web_viewer/images/641775a6a22801b99d9b39fe367d8c73.jpg",
+        "web_viewer/images/8a106bd951932759a5c457419aff2e08.jpg",
+        "web_viewer/images/ff707f0fb0d219c3f634984c742ca357.jpg",
+        "web_viewer/images/b9202b4a8b358bbe835c8b028f8d0039.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DW8rs69iTYG",
+      "pk": "3872161982598166022",
+      "taken_at": 1775817700,
+      "original_item_count": 12,
+      "platform_sequence_id": 675
+    },
+    {
+      "sequence_id": 1014,
+      "platform_id": "DW0bw7GAOzZ",
+      "sns_platform": "threads",
+      "code": "DW0bw7GAOzZ",
+      "urn": "",
+      "username": "kiwibreaksme",
+      "display_name": "skyle",
+      "full_text": "디자이너 없이 바이브코딩으로 토스급 UI 뽑는 법\n\n---\n\n디자이너 없이 앱 만드는데 UI가 너무 구려서\n  디자인 규칙을 직접 정리해서 AI한테 먹였습니다.\n\n---\n\n실제로 내 앱에 적용해서 잘 쓰고 있고\n다른 사람들도 쓰면 좋겠어서 오픈소스로 공개합니다 \n \n  github.com/bitjaru/styleseed\n\n---\n\n한번에 짠나오진않지만 디자인시스템이란걸 가지고 각 요소별 토큰을 가지고코딩을 하게하고 기본적인 세련된 ui에\n보이는 룰셋을 견고하게 시키기때문에 훨씬 견고한 ui 디자인 구현이가능해집니다\n\n---\n\n구현 과정: \n토스 디자인시스템 분석->figmake ai로 제너럴한 컴포넌트 및 페이지 예제 생성 -> 역추산으로 ui/ux이론 적용한 룰셋시스템 작성\n\n---\n\n커밋 컨트리뷰트 언제든 환영입니다 star도한번씩 눌러주세요\n\n---\n\nreadme에 있지만 한가지 팁을 드리면 \nhttps://github.com/VoltAgent/awesome-design-md\n여기서 취향에 맞는 디자인 컨셉을 같이 주고 만들면 훨씬 잘만듦니다\n\n---\n\n스킨입혀서 이것저것 예제만들었습니다(한번에 딸깍으로나옴)\n\n---\n\nhttps://dev.to/kiwibreaksme/your-vibe-coded-app-looks-ugly-heres-the-one-file-fix-4ef0",
+      "media": [
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.71878-15/669996508_3802120766749929_2087643610197497616_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=100&ig_cache_key=Mzg3NDI2MjI1NDU5MDI5MDI1NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY0MHg4NzAuc2RyLkMzIn0%3D&_nc_ohc=DIOWA7LVLYEQ7kNvwFZxVT-&_nc_oc=AdpYWdQ4F6T-q0OsqrTeGLNtVitJ0HD8QFOEaTpTLuDO1hmDLivnWV-irF1labC0XVU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=RLemaW5XkP8bH9efY_vzog&_nc_ss=7a32e&oh=00_Af37_kABr6kqpJZksPCH-23cdqetR29G6TGpA8UI4wXq8w&oe=69E4EACA"
+      ],
+      "url": "https://www.threads.com/@kiwibreaksme/post/DW0bw7GAOzZ",
+      "created_at": "2026-04-07 14:48:29",
+      "date": "2026-04-07",
+      "crawled_at": "2026-04-14T13:57:20.372",
+      "source": "consumer_detail",
+      "local_images": [
+        "web_viewer/images/33fd3535849fee9c54861c4bb14f3f9f.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DW0bw7GAOzZ",
+      "pk": "3869840089060273369",
+      "taken_at": 1775540909,
+      "original_item_count": 9,
+      "platform_sequence_id": 676
+    },
+    {
+      "sequence_id": 1015,
+      "platform_id": "DW9RXecAel9",
+      "sns_platform": "threads",
+      "code": "DW9RXecAel9",
+      "username": "papapat.ai",
+      "display_name": "papapat.ai",
+      "full_text": "v2.1.90, 4월 1일 추가됐다\n\n/powerup\n\nclaude-code-playbook.pages.dev/docs/level-2/slash-commands",
+      "media": [],
+      "url": "https://www.threads.com/@papapat.ai/post/DW9RXecAel9",
+      "created_at": "2026-04-11 01:10:47",
+      "date": "2026-04-11",
+      "crawled_at": "2026-04-14T13:57:20.372",
+      "source": "network",
+      "is_detail_collected": true,
+      "is_merged_thread": false,
+      "root_code": "DW9RXecAel9",
+      "like_count": 5,
+      "reply_count": 0,
+      "repost_count": 1,
+      "quote_count": 0,
+      "pk": "3872327634629290365",
+      "media_type": 19,
+      "content_type": "image",
+      "platform_sequence_id": 677
+    },
+    {
+      "sequence_id": 1016,
+      "platform_id": "DW9RXcigdgg",
+      "sns_platform": "threads",
+      "code": "DW9RXcigdgg",
+      "urn": "",
+      "username": "papapat.ai",
+      "display_name": "papapat.ai",
+      "full_text": "Claude Code에 안 써본 기능이 꽤 있을 거다\n\nhooks, sub-agents, plan mode, worktrees, MCP 등\n기능은 많은데 제대로 다 써본 적은 없을 거다\n\n/powerup이라는 커맨드가 생겼다\n터미널 안에서 바로 배울 수 있다\n\n---\n\n실행하면 10개 파워업 목록이 뜬다\n하나 열어서 읽고, 이해하면 엔터로 체크\n진행률이 올라간다\n\n모드 전환, 되돌리기, MCP, sub-agents까지 다 있다\n\n문서 찾아다닐 필요 없다\n쓰던 터미널에서 그냥 치면 된다\n\n---\n\nv2.1.90, 4월 1일 추가됐다\n\n/powerup\n\nclaude-code-playbook.pages.dev/docs/level-2/slash-commands",
+      "media": [],
+      "url": "https://www.threads.com/@papapat.ai/post/DW9RXcigdgg",
+      "created_at": "2026-04-11 01:10:47",
+      "date": "2026-04-11",
+      "crawled_at": "2026-04-14T13:57:20.372",
+      "source": "consumer_detail",
+      "local_images": [],
+      "is_detail_collected": false,
+      "is_merged_thread": true,
+      "root_code": "DW9RXecAel9",
+      "pk": "3872327632590854176",
+      "taken_at": 1775837447,
+      "original_item_count": 3,
+      "platform_sequence_id": 677
+    },
+    {
+      "sequence_id": 1017,
+      "platform_id": "DW7gU6KATXB",
+      "sns_platform": "threads",
+      "code": "DW7gU6KATXB",
+      "urn": "",
+      "username": "lian.lab71",
+      "display_name": "리안 | AI · 바이브 코딩",
+      "full_text": "사람들이 자꾸 AI가 개발자를 대체하냐고 묻습니다.\n하지만 지금 더 중요한 건, \n개발자가 어떤 역할로 바뀌고 있느냐입니다.\n\n---\n\nAnthropic의 2026 Agentic Coding Trends Report 내용을 알려드립니다. \n\n개발자들은 이미 업무 전반에 AI를 쓰고 있지만,\n완전히 맡길 수 있다고 느끼는 비중은 아직 0~20% 수준입니다.\n즉, 2026년의 핵심은 완전 자율보다는 설계입니다.\n\n리포트는 8가지 흐름을 제시합니다.\n\n---\n\n첫째, 소프트웨어 개발 생애주기 자체가 바뀝니다.\n코드를 직접 많이 쓰는 사람보다,\n문제를 구조화하고 에이전트를 배치하는 사람이 더 중요해집니다.\n\n---\n\n둘째, 단일 에이전트보다 멀티 에이전트 구조가 중요해집니다.\n하나의 모델이 다 하는 방식보다,\n역할이 나뉜 에이전트 팀이 더 현실적인 운영 방식으로 떠오릅니다.\n\n---\n\n셋째, 장시간 실행되는 작업이 늘어납니다.\n짧은 답변을 주는 도구가 아니라,\n몇십 분 이상 실제 작업을 이어가는 시스템이 중요해집니다.\n\n---\n\n넷째, 사람의 역할은 줄어드는 게 아니라 바뀝니다.\n직접 타이핑하는 시간이 줄어드는 대신,\n감독·검증·판단의 비중이 커집니다.\n\n---\n\n다섯째, 에이전틱 코딩은 개발팀 밖으로 퍼집니다.\n이제는 개발자만이 아니라\n운영, 분석, 비즈니스 팀도 자동화와 워크플로우를 직접 만지기 시작합니다.\n\n---\n\n여섯째, 생산성 향상은 단순한 속도 개선넘어서,\nAI 덕분에 원래 하지 않았을 작업까지 수행하게 된다고 설명합니다. \n보고서에는 AI 보조 작업의 약 27%가 원래라면 하지 않았을 작업이라고 나옵니다.\n\n---\n\n일곱째, 인간-에이전트 협업은 더 정교해집니다.\n“한 번 시키고 끝”이 아니라,\n중간 점검과 역할 재분배가 설계의 일부가 됩니다.\n\n---\n\n여덟째, 보안은 설계의 출발점이됩니다. \n강한 에이전트를 쓰려면\n권한, 샌드박스, 로그, 검증이 처음부터 들어가야 합니다.\n\n---\n\n이 리포트의 핵심을 가장 짧게 정리하면 이렇습니다.\n개발자가 직접 개발하던 시기를 지나, AI를 지휘하는 오케스트레이터로 가고 있습니다.\n\n---\n\n원문 보기: \nhttps://resources.anthropic.com/hubfs/2026%20Agentic%20Coding%20Trends%20Report.pdf?",
+      "media": [
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/669727232_17865244992669671_4233035541037738137_n.jpg?stp=cp6_dst-jpg_e35_tt6&_nc_cat=105&ig_cache_key=Mzg3MTgzMDQ3ODk3Nzg0MDU3Nw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEzNTJ4MTAwMi5zZHIuQzMifQ%3D%3D&_nc_ohc=r6cSi8hlwEYQ7kNvwERB6a5&_nc_oc=AdpVaapriI0ALPOt4U9qDQgZ8ne22-03qGKxX2zEDuBavkelzlpeVQQYw6SPrGxq9G4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=GdWG3ZQDjByzR3BoaxornQ&_nc_ss=7a32e&oh=00_Af2lUDQ9b0f-PV1ZjT_gs5aWos37E15oY2Oesldsrfdceg&oe=69E4E6CC",
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/669180251_17865245040669671_1307406512906123804_n.jpg?stp=cp6_dst-jpg_e35_tt6&_nc_cat=109&ig_cache_key=Mzg3MTgzMDU2OTMwNjQwODEyMg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEyOTJ4NzM2LnNkci5DMyJ9&_nc_ohc=ps3qgDZwHpAQ7kNvwFfYgGI&_nc_oc=AdqC4yvLFdjqE53LT8LZHZyubij9c2SZYS44scYDU62iqiNblRxoA44GM7-AnLrmP6E&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=GdWG3ZQDjByzR3BoaxornQ&_nc_ss=7a32e&oh=00_Af3gqToDzz5ElU8RpVENxEgw_rzehWlZyZnJYfKnbZs0Gw&oe=69E4C998",
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/668891538_17865245013669671_7464787701029399283_n.jpg?stp=cp6_dst-jpg_e35_tt6&_nc_cat=105&ig_cache_key=Mzg3MTgzMDY0MTI1NTUxMjUxMA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEzNDR4MTI1OC5zZHIuQzMifQ%3D%3D&_nc_ohc=4x8lwC7T2DoQ7kNvwH0E5hm&_nc_oc=AdrJqBnslYUBxv8DeT3lQiEXOR-844nIUdPL7EaDzMn8RaD9UAv13f9a3CY73HlwtFg&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=GdWG3ZQDjByzR3BoaxornQ&_nc_ss=7a32e&oh=00_Af1sCr06Fj0Ua0kmCYil8PYCmftU6It3vFWOw1tG1ZvcNQ&oe=69E4E6A6"
+      ],
+      "url": "https://www.threads.com/@lian.lab71/post/DW7gU6KATXB",
+      "created_at": "2026-04-10 08:43:02",
+      "date": "2026-04-10",
+      "crawled_at": "2026-04-14T13:57:20.372",
+      "source": "consumer_detail",
+      "local_images": [
+        "web_viewer/images/1372c34977efdf3ffb60ce882c44adb7.jpg",
+        "web_viewer/images/1314fa282605adf2e362e5fe68067d6f.jpg",
+        "web_viewer/images/782409c1f753216ddb503274ab99e387.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DW7gU6KATXB",
+      "pk": "3871830478977840577",
+      "taken_at": 1775778182,
+      "original_item_count": 12,
+      "platform_sequence_id": 678
+    },
+    {
+      "sequence_id": 1018,
+      "platform_id": "DVVRaH3kYkF",
+      "sns_platform": "threads",
+      "code": "DVVRaH3kYkF",
+      "urn": "",
+      "username": "alex_ai_mcp",
+      "display_name": "Alex AI",
+      "full_text": "이거 이거 재밌는 장난감이잖아????\n\n리모션 써보신분 댓에 작품들 올려주삼\n\n같이 보자구!!!!!\n\n---\n\n없으면 내가 계속 올림\n\n---\n\n사진첨부도 가능하군\n\n---\n\n천잰데????노트북LM과",
+      "media": [
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.71878-15/642491701_821966317580591_2799023436153442903_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=107&ig_cache_key=Mzg0MzA1NDQxODk3NjE0NzcxNw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY0MHgzNjAuc2RyLkMzIn0%3D&_nc_ohc=VVV5q73IvowQ7kNvwG1_OE-&_nc_oc=AdpGrkfaNxJ_0mBojTxtz3h-x2Y_BRowUgd6MItPvtn0OJoa30opHSQ1y1WY8mVOAuw&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=Wii3WYtOyVoKgqel_bVkWw&_nc_ss=7a32e&oh=00_Af1ALlikfwzKf0zg-quTz286NLHgxeSJh53i7hCgA7fSCw&oe=69E4FF7A",
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.71878-15/641529493_885646374463776_6746377608261438181_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=111&ig_cache_key=Mzg0MzA1Nzk4NzQyMjg4ODY4NQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY0MHgzNjAuc2RyLkMzIn0%3D&_nc_ohc=DgCxDPJyngkQ7kNvwGeZtNj&_nc_oc=AdqVpluw-8QuDI-vvL78FP80oNj6Y5PbyeU1eQfx7k6tFsUuJwSKvMKS3axO2lfD1Sg&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=Wii3WYtOyVoKgqel_bVkWw&_nc_ss=7a32e&oh=00_Af0ywc8JgNleMKctWypuVWzzlB02czuW6V4LZrT0IHmsug&oe=69E50115",
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.71878-15/639729682_1447855300376792_3659805566570559945_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=111&ig_cache_key=Mzg0MzA2Mjg3Mzk2MzIxNzAxNQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY0MHgzNjAuc2RyLkMzIn0%3D&_nc_ohc=ZVs1qP7TVsQQ7kNvwF41llf&_nc_oc=AdrGt73xgxJmLOYimqTDcLdzTH0Il8RMCd7rEPwS6iafE4YOfXMDvJZTn8h8aJxS8bY&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=Wii3WYtOyVoKgqel_bVkWw&_nc_ss=7a32e&oh=00_Af2DH7MclLTRg36B644GTZl-0lUbolUiCzV9roQTDemhEw&oe=69E4D57D"
+      ],
+      "url": "https://www.threads.com/@alex_ai_mcp/post/DVVRaH3kYkF",
+      "created_at": "2026-03-01 15:51:05",
+      "date": "2026-03-01",
+      "crawled_at": "2026-04-14T13:57:23.389",
+      "source": "consumer_detail",
+      "local_images": [
+        "web_viewer/images/9fd2ecf1d6c561643dc59d7b7f755c46.jpg",
+        "web_viewer/images/ca0abb1f9b0937da9ff0bf40d25da538.jpg",
+        "web_viewer/images/c8be1dcf889e3806a12b0f6c612183c7.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DVVRaH3kYkF",
+      "pk": "3843054418976147717",
+      "taken_at": 1772347865,
+      "original_item_count": 4,
+      "platform_sequence_id": 671
+    },
+    {
+      "sequence_id": 1019,
+      "platform_id": "DW8k05MEj9D",
+      "sns_platform": "threads",
+      "code": "DW8k05MEj9D",
+      "username": "catlovessubakba",
+      "display_name": "강정석",
+      "full_text": "https://github.com/kaitranntt/ccs 스윽...",
+      "media": [],
+      "url": "https://www.threads.com/@catlovessubakba/post/DW8k05MEj9D",
+      "created_at": "2026-04-10 18:41:36",
+      "date": "2026-04-10",
+      "crawled_at": "2026-04-14T13:57:23.389",
+      "source": "network",
+      "is_merged_thread": false,
+      "root_code": "DW8k05MEj9D",
+      "like_count": 1,
+      "reply_count": 0,
+      "repost_count": 1,
+      "quote_count": 0,
+      "pk": "3872131744124780355",
+      "media_type": 19,
+      "content_type": "image",
+      "platform_sequence_id": 672
+    },
+    {
+      "sequence_id": 1020,
+      "platform_id": "DW7wRVUD82s",
+      "sns_platform": "threads",
+      "code": "DW7wRVUD82s",
+      "urn": "",
+      "username": "aychan3927",
+      "display_name": "Yechan Ahn",
+      "full_text": "[Claude Code 두뇌를 GPT-5.4 로 바꿔서 쓰는 법 대공개]\n\n요즘 Claude Code 토큰 너무 창렬하죠.. 저도 맥스 100 쓰는데 요즘은 정말 눈 깜짝할 사이에 없어기도 합니다 ㅠ\n\n그래서 저는 GPT-5.4를 Claude Code에 물려서 쓰고 있는데 진짜 좋습니다.\n\n원래는 MCP로 GPT한테 보냈다 받았다 했는데 그것도 토큰 잡아먹고 세팅도 번거로웠거든요.\n\n댓글에 GPT 달아주시면.. 은 아니고 ㅋㅋ \n\nVibeProxy(오픈소스) 쓰면 Claude Code UI·세팅·CLAUDE.md 전부 그대로 쓰면서 모델만 GPT-5.4로 바꿀 수 있어요.\n\n---\n\n세팅 3분:\n\n  1. VibeProxy 설치 (github.com/automazeio/vibeproxy)\n 2. 앱 실행 → OpenAI 구독 로그인\n  3. 터미널에서: ANTHROPIC_BASE_URL=http://localhost:8318 ANTHROPIC_MODEL=gpt-5.4 claude\n\n근데 위에처럼 할 필요도 없고, 그냥 저 깃허브레포 넣고 클코에게 세팅해달라고 하시면 됩니다. \n\n저는 한 프로젝트에 터미널 두 개 켜놓고 Opus 물린 클코랑 GPT-5.4 물린 클코 두개 번갈아 쓰는데, Claude Code의 모든 세팅 그대로 유지되니까 전환 비용이 없어요.\n\n꼭 한번 써보셔서 ChatGPT 의 혜자함을 클코에서 누리시길..!\n\np.s. 아 근데 이건 맥에서만 되는거로 알고 있고, 윈도우는 또 다른 방법이 있는거로 알고 있습니다 ㅎㅎ",
+      "media": [
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/662271868_17934204903219087_4638154710678324775_n.jpg?stp=cp6_dst-jpg_e35_tt6&_nc_cat=108&ig_cache_key=Mzg3MTkwMDYwMjAwMzg2OTEwMA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwMjR4MzI0LnNkci5DMyJ9&_nc_ohc=-IGQrmDzgBUQ7kNvwE9LqX4&_nc_oc=AdoXKW_5UkVKsO7yIXhfbwhYzv5a_U_Ns_WPDd4LblXQycE00q8Z08gGaaYmqy5tuTs&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=JflMylxsapU6KQDewjq2mg&_nc_ss=7a32e&oh=00_Af0-S-S3nmD0DabYNo1mm3Jbvdg35GnXC1XrfzMOKw-EzQ&oe=69E4D786"
+      ],
+      "url": "https://www.threads.com/@aychan3927/post/DW7wRVUD82s",
+      "created_at": "2026-04-10 11:02:21",
+      "date": "2026-04-10",
+      "crawled_at": "2026-04-14T13:57:23.389",
+      "source": "consumer_detail",
+      "local_images": [
+        "web_viewer/images/5bf1d0fb3f012c58163d6ea4e99ad69d.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DW7wRVUD82s",
+      "pk": "3871900602003869100",
+      "taken_at": 1775786541,
+      "original_item_count": 2,
+      "platform_sequence_id": 673
+    },
+    {
+      "sequence_id": 1021,
+      "platform_id": "DW7rE9qjwIn",
+      "sns_platform": "threads",
+      "code": "DW7rE9qjwIn",
+      "urn": "",
+      "username": "senjttn",
+      "display_name": "senjttn",
+      "full_text": "Omo, omc 솔직히 좀 구리다.\n다른 사람들은 다 좋다는데 뭔소리냐고?\n\n그래서 문제인거다.\n내 글을 읽어보면 생각이 바뀔지 모른다.\n\n---\n\n1. 이상한 것 투성이\n무려 깃허브 스타수 증가율 1위(한 때)를 찍은 omo, 그를 따라 높은 스타수를 기록한 omc(oh-my-claude code/codex) 모두 스타수에 비해 다운로드율이 극도로 낮다. 써보지도 않고 스타만 누르는 경우가 많다는 얘기다.\n\n해외 대규모 커뮤니티에서도 마찬가지이다. 그나마 omo 관련 토론(부정적인 의견이 대부분이긴 하지만) omc 시리즈 관련 토론은 0건이다. 못믿겠으면 검색해봐라.\n\n---\n\n2. 실 사용 경험\n사용 경험 또한 처참하다. 막상 써보면 순정 에이전트 대비 과도한 토큰을 사용하고, 또 그렇다고 괜찮은 결과를 내는것도 아니다. 사용 과정에서 오류도 매우 많고(오픈소스라 당연하지만 이 스타인데? 소리가 절로 나온다) 오히려 이상한 결과를 내기도 한다.\n\n---\n\n물론 이 도구들을 사용해 중-대형급 규모의 프로젝트에서 며칠간 계속 골머리를 앓아가며 정합성을 높힌 경험은 기대조차 하지 않았다. 하지만 이건 너무 수준 낮은 후기 아닌가? \"토스 미니앱\", \"백엔드조차 제대로 구현되지 않은 토이 프로젝트\"\n\n---\n\n4. 결론\n사실 당연하다. 소스를 뜯어보면 아직 검증되지 않은 그럴듯한 방법론 투성이. 분명 그때 당시 괜찮은 로직도 있었겠지만, 하루마다 업데이트가 쏟아져 나오는 지금 시점에선 이 도구들은 시간이 지날수록 쓰레기가 된다.\n\n---\n\n특히 한국인들이 바이럴에 취약하다. 남들이 좋다 하면 그냥 좋은가보다 하고 따라하는 허수아비들. \n좋아보이는 도구는 무작정 스타를 누르는게 아닌 적어도 사용을 해보고 누르는게 좋다. 이 바닥에서 스타는 \"좋아요\"가 아니다.\n일반인들 사이에서 운좋게 바이럴 된 그저 그런 프로젝트들..\n\n---\n\n3. 그래서 뭐가 좋은건데?\n실제 thrads에서 omo, omc 시리즈를 찬양하듯이 활동하는 사람들에게 물어보았다. \"그래서 뭐가 좋은데?\" 돌아오는 답변은 패턴이 있다. \"뭔가 막 일하고있어.\", \"내가 승인을 안눌러도 끝까지 돌아가\"\n뭔가 이상하지 않은가?",
+      "media": [],
+      "url": "https://www.threads.com/@senjttn/post/DW7rE9qjwIn",
+      "created_at": "2026-04-10 10:16:58",
+      "date": "2026-04-10",
+      "crawled_at": "2026-04-14T13:57:23.389",
+      "source": "consumer_detail",
+      "local_images": [],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DW7rE9qjwIn",
+      "pk": "3871877761745224231",
+      "taken_at": 1775783818,
+      "original_item_count": 7,
+      "platform_sequence_id": 674
+    },
+    {
+      "sequence_id": 1022,
+      "platform_id": "DWq9TgCGcp3",
+      "sns_platform": "threads",
+      "code": "DWq9TgCGcp3",
+      "username": "alex_ai_mcp",
+      "display_name": "Alex AI",
+      "full_text": "```\nClaude Code로 작업 걸어놓고 자리 비운 적 있으세요?\n\n저는 꽤 자주 그랬습니다. 집이나 회사 컴퓨터에 Claude Code 켜놓고, 밖에서 Claude Code 채널로 원격으로 작업을 시키다가 — 갑자기 응답이 없어요. 채팅은 보내지는데 클로드가 아무 말이 없고, 알고 보면 집 터미널이 죽어있는 겁니다. 그 상황에서 할 수 있는 건 없어요. 그냥 집에 가거나, 회사로 돌아가거나, 누군가한테 부탁하거나. 그 전까지는 그냥 기다립니다. 혹시 살아있을까봐.\n\n직접 만들기로 한 건 그때였습니다.\n\n만든 건 단순해요. Claude가 살아있으면 조용히 지켜보고, 죽으면 다시 살려줍니다. 에러가 짧은 시간 안에 반복되면 재시작시켜주고, 너무 오래 아무 반응이 없어도 재시작시켜줍니다. PowerShell 스크립트 하나입니다. 설치도, 의존성도 없어요.",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/658030849_17903629515404021_6435333531829194794_n.jpg?stp=cp6_dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=Mzg2NzE3Mjg0MjY5MDM5MzkwNw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjExNjl4MTU3NS5zZHIuQzMifQ%3D%3D&_nc_ohc=t8wTecgXgJsQ7kNvwEZztrm&_nc_oc=AdpaFrX3ZNANevUIV9ehId8mgBIr2vDSGwu57r3yQLeqlQhlYoTtQCzw71cRURlL-9E&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_gid=wdgXAHZ5m0Y4XzPxiVyN4Q&_nc_ss=7a32e&oh=00_Af07a25TLbec_d8euMqm6XkAcry8tvkNnD2ECNPvFy8q7g&oe=69E3A3B2",
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/657348174_17903629518404021_5419389995873872536_n.jpg?stp=cp6_dst-jpg_e35_tt6&_nc_cat=100&ig_cache_key=Mzg2NzE3Mjg0MjY5MDQyODY3NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjk5OHgyMTYwLnNkci5DMyJ9&_nc_ohc=cbVh61Oj5lsQ7kNvwGutxDq&_nc_oc=Adq6KtxuzAuLPLwDFXt9BdVEBTa2Y1oexIIqDngpSrbs6TDY2mMpNxaQvSavFMOQiwY&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_gid=wdgXAHZ5m0Y4XzPxiVyN4Q&_nc_ss=7a32e&oh=00_Af0-WlNGxVIwmeUiLBPYt5PWbUgGVgkbb3ImyzSovstFbg&oe=69E39C05"
+      ],
+      "url": "https://www.threads.com/@alex_ai_mcp/post/DWq9TgCGcp3",
+      "created_at": "2026-04-03 22:29:09",
+      "date": "2026-04-03",
+      "crawled_at": "2026-04-14T13:57:26.414",
+      "source": "network",
+      "local_images": [
+        "web_viewer/images/50665733b2afd5ffb7bb26795e386621.jpg",
+        "web_viewer/images/9874aced5e30fae8177647ad2f162001.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": false,
+      "root_code": "DWq9TgCGcp3",
+      "like_count": 13,
+      "reply_count": 1,
+      "repost_count": 3,
+      "quote_count": 0,
+      "pk": "3867172850953210487",
+      "media_type": 8,
+      "content_type": "carousel",
+      "platform_sequence_id": 670
+    },
+    {
+      "sequence_id": 1023,
+      "platform_id": "DWq9TWWmfFU",
+      "sns_platform": "threads",
+      "code": "DWq9TWWmfFU",
+      "urn": "",
+      "username": "alex_ai_mcp",
+      "display_name": "Alex AI",
+      "full_text": "원격으로 Claude Code 쓰는 분들한테 특히 도움이 될 것 같습니다. 터미널이 죽어도 자동으로 살아나니까, 밖에서 채널 보내면 그냥 응답이 옵니다.\n\nhttps://github.com/AlexAI-MCP/winclaude-alive\n\n---\n\n```\nClaude Code로 작업 걸어놓고 자리 비운 적 있으세요?\n\n저는 꽤 자주 그랬습니다. 집이나 회사 컴퓨터에 Claude Code 켜놓고, 밖에서 Claude Code 채널로 원격으로 작업을 시키다가 — 갑자기 응답이 없어요. 채팅은 보내지는데 클로드가 아무 말이 없고, 알고 보면 집 터미널이 죽어있는 겁니다. 그 상황에서 할 수 있는 건 없어요. 그냥 집에 가거나, 회사로 돌아가거나, 누군가한테 부탁하거나. 그 전까지는 그냥 기다립니다. 혹시 살아있을까봐.\n\n직접 만들기로 한 건 그때였습니다.\n\n만든 건 단순해요. Claude가 살아있으면 조용히 지켜보고, 죽으면 다시 살려줍니다. 에러가 짧은 시간 안에 반복되면 재시작시켜주고, 너무 오래 아무 반응이 없어도 재시작시켜줍니다. PowerShell 스크립트 하나입니다. 설치도, 의존성도 없어요.",
+      "media": [
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/658030849_17903629515404021_6435333531829194794_n.jpg?stp=cp6_dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=Mzg2NzE3Mjg0MjY5MDM5MzkwNw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjExNjl4MTU3NS5zZHIuQzMifQ%3D%3D&_nc_ohc=RLvt0zUVuQ8Q7kNvwHr38UL&_nc_oc=AdrFCEEokojrGzPOayHYCsq2AAsP4kKc4sdkFYhwFel0J8qgSLaOsSxnswiQ8UudFM0&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=vNGIgcJsyZKNRie6_nraOg&_nc_ss=7a32e&oh=00_Af1nbeH1J-LrNjPICTGjnrraFRcGigQ7aq3U-Ry6bkEWcA&oe=69E4F532"
+      ],
+      "url": "https://www.threads.com/@alex_ai_mcp/post/DWq9TWWmfFU",
+      "created_at": "2026-04-03 22:29:08",
+      "date": "2026-04-03",
+      "crawled_at": "2026-04-14T13:57:26.414",
+      "source": "consumer_detail",
+      "local_images": [
+        "web_viewer/images/b69800d24f98e636a2adef8df90db0e8.jpg"
+      ],
+      "is_detail_collected": false,
+      "is_merged_thread": true,
+      "root_code": "DWq9TgCGcp3",
+      "pk": "3867172840559735124",
+      "taken_at": 1775222948,
+      "original_item_count": 2,
+      "platform_sequence_id": 670
+    },
+    {
+      "sequence_id": 1024,
+      "platform_id": "7449476690268880896",
+      "sns_platform": "linkedin",
+      "username": "ACoAACNr1JcBlmUm9OfOiDBxLgFB5j19llAW6mM",
+      "display_name": "Ayoung Jo",
+      "full_text": "#클로드코드 에서 오늘도 \"Session limit reached\" 보셨나요?\n그러면 내일 출근해서 이 스킬 바로 사용해보세요.\n토큰 사용량 2배 넉넉하게 만들어준 알짜배기 팁 모음 claude-token-diet 스킬입니다.\n최근 클코 세션이 너무 빨리 차서 도대체 왜 그런지 연구했더니, 범인은 제가 보낸 \"질문\"이 아니더라고요.\nClaude Code가 매 메시지마다 전체 대화, MCP 도구, 규칙 파일을 처음부터 다시 읽고 있었어요. 덕분에 메시지가 길어질수록 기하급수적으로 토큰 사용량이 많아졌고요.\n피같은 토큰이 녹아내리는 게 너무 아까워서 유튜브, 커뮤니티 열심히 뒤졌습니다.\n그렇게 여러 팁을 적용하다보니 어떤 구조/환경이 문제인지 알겠더라고요.\n그래서 아예 스킬로 만들었습니다.\n💪claude-token-diet💪 (링크는 댓글에)\n핵심은\n1. compact, clear 등 사용 습관 숙지\n2. MCP 정리, .claudeignore 활용\n3. CLAUDE.md, rules, Thinking 레벨 조정\n4. ReadOnce 훅 활용이었어요.\n솔직히 비개발자인 저는 이 방법들 찾았을 때 바로 이해 못한 게 많았습니다.\n클형한테 엄청 물어보면서 하나씩 개념을 알아갔어요.\nMCP도 단순히 on/off가 아니라 내부에서 사용할 도구만 지정할 수 있더라고요.\n(제 Jira MCP는 무려 72개 도구가 있었는데 그 중 반은 필요 없었던... 근데 클로드가 매번 이걸 다 껴안고 있었던...)\n알아서 뚝딱 해주는 AI가 있으면 좋겠지만 그건 불가능하고,\nAI를 쓸수록 멍청해지는 기분이 싫어서 토큰 다이어트 + 학습을 같이 할 수 있는 스킬로 만들었습니다.\n이게 어떤 개념이고, 왜 해야 하는지 설명하면서 사용자가 직접 본인 환경을 이해하고 선택할 수 있도록요.\n에이전트처럼 한 번에 알아서 처리해주는 걸 원하시면 이건 맞지 않으실 거예요.\n대신 저처럼 비개발자인데 클로드코드 하네스 엔지니어링이 뭔지 감이 없었던 분은\n이 스킬 한 바퀴 돌리시면 토큰 절약 + 하네스 엔지니어링 개념이 같이 생길 겁니다.\n요즘 핫한 하네스 엔지니어링이 결국 AI가 작동하는 환경과 구조를 설계하는 거라고 생각하거든요.\n개발 지식이 부족해서 힘들었던 분들에게 조금이나마 도움이되길 바랍니다.\n주변에 클코 쓰시는 분들께 공유해주세요!\n#ClaudeCode #HarnessEngineering #TokenDiet #오픈소스",
+      "media": [
+        "https://media.licdn.com/dms/image/v2/D5622AQF-7jqGuD4FzA/feedshare-shrink_2048_1536/B56Z2Hbky4GsAg-/0/1776093646363?e=1778112000&v=beta&t=UpeGr5yvyf8FyHxNrkLN0IW38baq8Zj5SvZ3-4J4HZg"
+      ],
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:7449476690268880896?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7449476690268880896%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "created_at": "2026-04-14 00:20:47",
+      "date": "2026-04-14",
+      "crawled_at": "2026-04-15T13:21:54.289",
+      "source": "network",
+      "local_images": [
+        "web_viewer/images/005df50bdfe54364de85459a0b4c0956.jpg"
+      ],
+      "time_text": "1일",
+      "profile_slogan": "AI 자동화 서비스 기획자 | 눈으로 설득하는 바이브코더",
+      "user_link": "https://www.linkedin.com/in/ACoAACNr1JcBlmUm9OfOiDBxLgFB5j19llAW6mM",
+      "content_type": "image",
+      "platform_sequence_id": 363
+    },
+    {
+      "sequence_id": 1025,
+      "platform_id": "DXHGbw_E4pM",
+      "sns_platform": "threads",
+      "code": "DXHGbw_E4pM",
+      "urn": "",
+      "username": "overtime.sam",
+      "display_name": "평범한 직장인",
+      "full_text": "PM은 문제정의에 미쳐있어야 해요.\n\n그동안 일하면서 쌓은\n문제정의 노하우를 스킬로 만들어봤어요.\n누구나 쓸 수 있게.\n\n모호한 현상 → 측정 가능한 사실\n→ Why로 쪼개기 → 실행 가능한 원인.\n\n올바른 방향으로 문제 해결하고 싶으신 분\n꼭 한번 써보세요.\n후회 안 하실 거예요.\nhttps://gist.github.com/samsam3210/17531dd4773adfe4d80845f3a342a3bf\n\n---\n\n제미나이 쓰는 분은 Gem으로\nGPT 쓰는 분은 GPT로\n클로드 쓰는 분은 스킬로 설정해두면 돼요.\n\n문제정의가 필요할 때\n본인이 쓰는 AI랑 대화하면서\n코칭 받으시면 됩니다.",
+      "media": [],
+      "url": "https://www.threads.com/@overtime.sam/post/DXHGbw_E4pM",
+      "created_at": "2026-04-14 20:47:52",
+      "date": "2026-04-14",
+      "crawled_at": "2026-04-15T13:22:15.543",
+      "source": "consumer_detail",
+      "local_images": [],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DXHGbw_E4pM",
+      "pk": "3875094300678392396",
+      "taken_at": 1776167272,
+      "original_item_count": 2,
+      "platform_sequence_id": 700
+    },
+    {
+      "sequence_id": 1026,
+      "platform_id": "DXFwCaaE_gY",
+      "sns_platform": "threads",
+      "code": "DXFwCaaE_gY",
+      "urn": "",
+      "username": "cokac_com",
+      "display_name": "코드깎는노인",
+      "full_text": "cokacdir은 텔레그램, 디스코드등의 메신저로 클로드코드 코덱스 오픈코드와 같은 코딩에이전트를 편리하게 사용할 수 있게 하는데에 주된 목적을 두고 이를 위해 견고하게 만들어졌습니다.\n\n결과적으로 사용자 입장에서는 cokacdir을 통해 코딩에이전트를 openclaw, hermes와 같은 사용경험으로 이들에서는 제공될 수 없는 클로드코드나 코덱스의 Plus, Pro, Max같은 플랜으로 정해진 사용량 안에서 마음편하게 즐기실 수 있게됩니다\n\n이 글이 cokacdir의 존재를 몰라 비싼 API를 태워야하는 openclaw, hermes만을 선택지로 두실 수 밖에 없었던 분들께 전해지기를 바랍니다\n\ncokacdir은 다음 설치명령어로 바로 시작 가능합니다\n\n---\n\nhttps://github.com/kstost/cokacdir",
+      "media": [],
+      "url": "https://www.threads.com/@cokac_com/post/DXFwCaaE_gY",
+      "created_at": "2026-04-14 08:12:43",
+      "date": "2026-04-14",
+      "crawled_at": "2026-04-15T13:22:15.562",
+      "source": "consumer_detail",
+      "local_images": [],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DXFwCaaE_gY",
+      "pk": "3874714326448470040",
+      "taken_at": 1776121963,
+      "original_item_count": 2,
+      "platform_sequence_id": 699
+    },
+    {
+      "sequence_id": 1027,
+      "platform_id": "DXEwBtXD_Dd",
+      "sns_platform": "threads",
+      "code": "DXEwBtXD_Dd",
+      "username": "woong2v",
+      "display_name": "woong2v",
+      "full_text": "woong2v\nS&P500 똑같이 사도,\n누구는 수익을 적게 가져 가고,\n누구는 100% 다 가져간다.\n이게 무슨 말이냐면 (계속)\n/\n1천",
+      "media": [],
+      "url": "https://www.threads.com/@woong2v/post/DXEwBtXD_Dd",
+      "created_at": "2026-04-14 13:21:54",
+      "date": "2026-04-14",
+      "crawled_at": "2026-04-15T13:22:15.577",
+      "source": "initial_dom",
+      "is_detail_collected": true,
+      "is_merged_thread": false,
+      "pk": null,
+      "like_count": -1,
+      "reply_count": -1,
+      "repost_count": -1,
+      "quote_count": -1,
+      "content_type": "text",
+      "platform_sequence_id": 698
+    },
+    {
+      "sequence_id": 1028,
+      "platform_id": "DXEwBJGj9v2",
+      "sns_platform": "threads",
+      "code": "DXEwBJGj9v2",
+      "urn": "",
+      "username": "woong2v",
+      "display_name": "웅이아부지",
+      "full_text": "1.\n투자의 핵심은 '얼마나 버느냐'도 중요한데, '얼마나 지키느냐'도 중요해.\n사람들은 수익률 올리려고 밤새 차트 보면서, 정작 내 수익의 15.4%가 세금으로 빠져나가는 건 무덤덤하더라. 그 세금만 아껴서 재투자해도 네 복리 그래프는 2배 더 빠르게 꺾여. 이제 '세금 0원' 만드는 바구니로 갈아탈 시간이야.\n\n---\n\n2.\n그래서 우리는 계좌를 딱 3개 정도는 알아야 해.\n연금저축, ISA, IRP. 이 세가지 바구니는 국가가 대놓고 \"세금 깎아줄 테니 여기서 놀아라\"라고 판 깔아준 곳이야. 여기서 안 놀고 일반 계좌에서 세금 다 내며 투자하는 건, 핸디캡 짊어지고 달리기하는 거랑 똑같아.\n\n---\n\n3.\n[1단계] 무조건 받아야 할 보너스 (연저펀1 + IRP)\n연금저축 600만 원, IRP 300만 원. 이 900만 원은 묻지도 따지지도 말고 1순위야. 연말정산 때 13.2~16.5% 세액공제받는 건, 시장이 하락해도 먹고 들어가는 '확정 수익'이지. 남들 마이너스 날 때도 일단 네 계좌는 100만 원 넘게 벌고 시작하는 거야.\n\n---\n\n5.\n[3단계] 시드를 폭주시키는 'ISA 8,000 루틴'\n매년 2천만 원씩 ISA에 넣고 3년 만기 채워서 8천만 원을 만들면, 그다음 이걸 연금저축 2번 계좌로 몽땅 이체하는 거야. 여기서 추가 세액공제 300만 원 또 받고, 네 시드는 눈덩이처럼 커지게 돼.\n\n---\n\n7.\n종목은 '국내상장 미국 지수 ETF'가 정답이야.\nS&P500이랑 나스닥100을 이 바구니들에 담아봐. 일반 계좌였으면 수익 날 때마다 15.4% 세금 떼야 하는데, 여기선 단 1원도 안 떼고 그대로 재투자돼. 남들 세금 낼 때 넌 그 세금까지 굴려서 복리 효과를 수직으로 세우는 거지.\n\n---\n\n9.\n\"나중에 연금 탈 때 세금 폭탄 맞으면 어떡해요?\"\n아니, 네가 넣은 세액공제 받지 않은 '원금'은 뺄 때 세금 0원이야. 그리고 공제받은 금액과 수익 난 부분만 나중에 3.3~5.5% 아주 낮은 세금 내는 거야. 15% 뜯기는 지금이 무섭노, 나중에 내는 5%가 무섭노? 답은 이미 나와 있어.\n\n---\n\n4.\n[2단계] 돈 묶일 걱정 없는 '연저펀 2번 계좌'\n\"연금은 55세까지 못 빼잖아요?\" 이거 진짜 큰 오해야. 900만 원을 추가 납부한 세액공제 안 받은 원금은 페널티 없이 언제든 뺄 수 있어. 과세이연도 받으면서 금융소득종합과세 구간에도 안 들어고, 건보료 상승에도 영향없는 금액. 그래서 '2번 계좌'가 필요해. 묶이는 돈이 아니라, '세금 방패'가 달린 자유 입출금 통장이라고 생각하면 돼.\n\n---\n\n6.\n이 루틴의 핵심, 옮긴 돈도 자유롭게 인출 가능해!\nISA에서 연금으로 옮긴 8천만 원 중, 공제받은 300만 원만 빼면 나머지 7,700만 원은 네 마음대로 넣었다 뺐다 할 수 있어. 유동성 걱정 때문에 연금 안 한다는 소리는 이제 진짜 핑계일 뿐이야.\n\n---\n\nS&P500 똑같이 사도,\n누구는 수익을 적게 가져 가고,\n누구는 100% 다 가져간다.\n\n이게 무슨 말이냐면 (계속)\n\n---\n\n8.\n보이지 않는 차이가 수억 원을 만든다.\n가령 리밸런싱 할 때, 수익금에 세금을 안 떼고 그대로 재투자하는 걸 '과세이연'이라고 해. 10년, 20년 뒤에 이 작은 차이가 자산 규모를 수억 원씩 갈라놔. 이게 바로 내가 말한 '세금까지 굴리는' 시스템의 무서움이야.\n\n---\n\n10.\n자본주의는 공부한 사람에게 보상을 주지.\n계좌 나누는 거 귀찮지? 하지만 그 귀찮음의 대가가 20년 뒤 수억 원이라면? 씁쓸하지만 자본주의는 부지런히 '일만' 하는 사람의 돈을 거두어, 시스템을 '공부'하는 사람에게 기회를 몰아주는 게임이야. 나랑 같이 '시간의 주인'이 될 사람만 함께 공부하는 걸로. 끝. 🙏✨\n\n---\n\n11.\n혹시 이해안되는 친구들은\n<인스타 DM>열려있으니 요기 문의 가능.\n스레드 : 앞풀이 강의실\n인스타 : 뒷풀이 소통공간\n*인스타걸음마중이라 활성화 차원에서.🙏",
+      "media": [],
+      "url": "https://www.threads.com/@woong2v/post/DXEwBJGj9v2",
+      "created_at": "2026-04-13 22:53:18",
+      "date": "2026-04-13",
+      "crawled_at": "2026-04-15T13:22:15.577",
+      "source": "consumer_detail",
+      "local_images": [],
+      "is_detail_collected": false,
+      "is_merged_thread": true,
+      "root_code": "DXEwBtXD_Dd",
+      "pk": "3874432764171246582",
+      "taken_at": 1776088398,
+      "original_item_count": 12,
+      "platform_sequence_id": 698
+    },
+    {
+      "sequence_id": 1029,
+      "platform_id": "DXGsyQrklXF",
+      "sns_platform": "threads",
+      "code": "DXGsyQrklXF",
+      "urn": "",
+      "username": "keke_appa",
+      "display_name": "keke",
+      "full_text": "https://github.com/nousresearch/hermes-agent\n\n헤르메스 에이전트를 보고 이것을 전부 발라서 내 에이전트에다가 집어 넣고 있다 ㅎㅎㅎ 아이디어가 좋넹\n앞으로 이런 에이전트들이나 이런 개발 툴들의 제품 수명은 극히 짧을 것임\n올인할 필요가 전혀 없음",
+      "media": [],
+      "url": "https://www.threads.com/@keke_appa/post/DXGsyQrklXF",
+      "created_at": "2026-04-14 17:03:33",
+      "date": "2026-04-14",
+      "crawled_at": "2026-04-15T13:22:15.598",
+      "source": "consumer_detail",
+      "local_images": [],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DXGsyQrklXF",
+      "pk": "3874981497330095557",
+      "taken_at": 1776153813,
+      "original_item_count": 1,
+      "platform_sequence_id": 697
+    },
+    {
+      "sequence_id": 1030,
+      "platform_id": "DXDsNvrk7mU",
+      "sns_platform": "threads",
+      "code": "DXDsNvrk7mU",
+      "urn": "",
+      "username": "choi.openai",
+      "display_name": "CHOI",
+      "full_text": "최근 Claude가 유독 멍청해졌다고 느끼셨다면 단순한 기분 탓이 아니었습니다.\n\n로그 까보니 thinking 깊이 67% 감소, 코드 읽지도 않고 수정하는 사례까지 나왔습니다.\n\n현재 Claude에서 발생하고 있는 문제점을 정리했습니다. 🧵\n\n---\n\n1/ 최근 Claude 사용자들이 2026년 2월을 기점으로 모델의 성능과 사용 환경에 이상함을 느끼기 시작했습니다.\n\n모델이 이전처럼 코드를 꼼꼼히 읽지 않고 곧바로 수정에 뛰어들어 전에 없던 버그를 양산하거나, 'Thinking'의 깊이가 67%나 급감했다는 불만이 쏟아졌습니다.\n\n클로드 코드의 책임자인 보리스 체르니(Boris Cherny)는 깃허브를 통해, 성능 제한이 아니라 쉬운 작업에서 토큰을 절약하기 위해 도입한 '적응형 사고(Adaptive thinking)' 기능이 복잡한 문제까지 억제해 버린 결과라고 해명했습니다.\n\n또한, 사용자가 최고 수준(High)의 노력을 설정하더라도 특정 턴에서 추론을 완전히 '0'으로 만들어버리는 버그가 존재했음을 스스로 인정했습니다.\n\n컴퓨팅 수요가 폭발적으로 증가하는 AI 과도기에서, 사용자들은 모델이 강력해짐과 동시에 기업이 몰래 성능을 낮추는 이른바 '잠수함 패치'에 대한 강한 반발감을 드러내고 있습니다.\n\n---\n\n2/ AMD의 선임 AI 디렉터가 수천 건의 로그를 분석한 결과도 동일했는데요.\n\n앤트로픽이 클로드의 기본 '노력 수준(Effort level)'을 은밀하게 낮추고 모델 스스로 추론량을 결정하는 '적응형 사고'를 도입하여 코드를 읽는 비율은 6.6배에서 2.0배로 곤두박질쳤고, 추론 토큰을 전혀 할당하지 않은 채 환각을 일으키는 사례가 급증했다고 말합니다.\n\n심지어 오후 5시와 7시 등 서버 트래픽이 몰리는 시간대에 성능 저하가 가장 심해, 이는 명백히 GPU 부하를 줄이기 위한 기업 측의 의도적인 조치으로 추정되는 상황입니다.\n\n사용자들은 이를 똑같은 가격을 내고 더 멍청한 AI를 쓰게 만드는 'AI 슈링크플레이션(Shrinkflation)'이라 부르며 분노하고 있습니다.\n\n---\n\n3/ 특히 최근 유출된 소스 코드에서 앤스로픽 내부 직원들(ant)에게만 \"작업 완료 전 실제로 작동하는지 검증하라\"는 우수한 시스템 프롬프트를 제공하는 등, 일반 고객과 철저히 차별화된 서비스를 몰래 운영해 온 사실까지 드러나 신뢰성에 큰 타격을 입었습니다.\n\n이러한 성능 제한 논란은 벤치마크 테스트에서도 발생하고 있습니다.\n\nClaude Opus 4.6 모델은 불과 일주일 전까지만 해도 환각 벤치마크(BridgeBench)에서 83.3%의 정확도로 2위를 기록했으나, 최근 재테스트 결과 정확도가 68.3%로 폭락하며 10위로 밀려났습니다.\n\n하지만, 해당 실험이 과거 6개였던 테스트 항목을 30개로 임의로 늘려 비교한 잘못된 실험이며, 공통된 6개 작업만 비교하면 정확도 하락은 통계적으로 무의미한 수준(p ≈ 0.19)의 '통계적 잡음'에 불과하다는 팽팽한 이견도 존재하지만, 실제 체감상 환각과 성능적 저하에 대한 이슈는 지속적으로 발생하는 중입니다.\n\n---\n\n4/ 성능뿐만 아니라 과금 시스템에도 은밀한 변화가 있었습니다.\n\n2026년 3월 초, 앤트로픽은 프롬프트 캐시 유지 시간(Cache TTL)을 1시간에서 5분으로 조용히 단축했습니다.\n\n이로 인해 5분 이상 대화를 멈추면 캐시가 초기화되어, 사용자는 훨씬 비싼 '캐시 생성(Cache creation)' 비용을 반복적으로 지불해야만 했습니다.\n\n분석 결과, 이 조치로 인해 사용자들은 20~32%의 비용을 낭비하게 되었고, 이전에는 한 번도 한도에 걸리지 않던 유료 구독자들조차 5시간 할당량 제한에 부딪혀 작업이 마비되는 사태가 벌어졌습니다.\n\n심지어 한 개발자의 한 달 API 청구 비용이 26달러에서 무려 42,121달러로 폭등하는 어처구니없는 금전적 피해까지 발생했습니다.\n\n---\n\n5/ 사용자들의 불만과 문제 제기에 대한 기업의 태도 역시 논란의 중심에 섰습니다.\n\n사용자들이 증거를 제시하며 캐시 정책 복원을 요구하자, 앤트로픽 측은 \"1시간 유지는 버그였으며, 5분으로 단축한 것이 오히려 전체적인 비용을 낮추는 최적화 작업\"이라는 해명을 내놓으며 요구를 일축했습니다.\n\n이에 대해 사용자들은 \"기업의 비용을 줄이기 위해 고객에게 부담을 전가하는 변명\"이라며 극도로 실망하는 반응을 보였습니다.\n\n일각에서는 이번 사태가 새로운 모델 출시를 위한 치밀한 네거티브 전략이라고 의심합니다.\n\n앤트로픽의 전형적인 플레이북은 '새로운 모델(Mythos Preview 등)을 출시하면서, 기존 모델을 조용히 바보로 만들고, 사람들이 이를 눈치채면 사용자의 프롬프트 탓으로 돌리는 것'이라는 비판이 쏟아집니다.\n\n---\n\n6/ 이 사태는 특정 AI 기업에 나의 작업 방식과 워크플로우를 전적으로 의존하는 것이 얼마나 위험한가 하는 점입니다.\n\nAMD의 경우 클로드에 기반한 AI 컴파일러 워크플로우를 구축해 두었으나, 단 한 번의 은밀한 업데이트로 인해 시스템 전체가 마비되는 피해를 입고 결국 다른 제공업체로 갈아타야만 했습니다.\n\n모든 AI 기업은 궁극적으로 고객의 워크플로우가 아닌 자사의 이윤을 위해 최적화할 수밖에 없음을 명심해야 합니다.\n\n앞으로 AI 기업들의 이러한 수익성 강화 및 자원 통제 시도는 계속될 것입니다.\n\n단일 공급업체가 우리의 생산성을 독점하지 않도록 모델에 종속되지 않는 범용적인 구조 설계 능력을 길러야 합니다.",
+      "media": [
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/670264955_17957735418112832_2108219613785128494_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ig_cache_key=Mzg3NDEzNDYzODY0NjczNTM5OQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwODB4OTE4LnNkci5DMyJ9&_nc_ohc=sY8LmtKEZFgQ7kNvwHsEwDw&_nc_oc=AdpwCB3Fz2nly6UpFclOn-Vmqn7YMTmey1-z9A8tC8vEVzRMUtZyQzGgOigoTEUMfdY&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=L8oN35-acwD18KH-0wGMBg&_nc_ss=7a32e&oh=00_Af3uen4qgxCs5HfhRhy1CcGLsiT_gth8_k0tbF2TvkTkrQ&oe=69E4C9BE",
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/670693930_17957735487112832_6200849944893867989_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ig_cache_key=Mzg3NDEzNDczODczOTYzMTA2NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjkxNXgxMTk5LnNkci5DMyJ9&_nc_ohc=fZ1vD_JxI1cQ7kNvwFQxKtM&_nc_oc=AdrgTA3ZEZ_OinUj0rAH7gMlEFzQZr2qSMVLVXE92NyfGi9Rz_Y24Igeusic4dk4yZo&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=L8oN35-acwD18KH-0wGMBg&_nc_ss=7a32e&oh=00_Af2fqV65EqX-jxYhTD_LVU76sFkzEbtVjtvyCShovRf0Ew&oe=69E4DD70",
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/669844754_17957735508112832_215107465382459657_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ig_cache_key=Mzg3NDEzNDgyODM4MDI3NTA0Nw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEyMDB4OTY1LnNkci5DMyJ9&_nc_ohc=EGCudIJUzrAQ7kNvwE578f4&_nc_oc=AdosO60k4HQsmzeEUcJbTVK5rsFxmCfATUVmWq8LMOX15oGMa0t_xbn-o3NVo-hQ3Is&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=L8oN35-acwD18KH-0wGMBg&_nc_ss=7a32e&oh=00_Af1IU13KresxmlrC4-KGbSfdveQWu-HadvbkGxuBj-5ozg&oe=69E4F6C6",
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/670092071_17957735670112832_3495363209261309646_n.jpg?stp=cp6_dst-jpg_e35_tt6&_nc_cat=103&ig_cache_key=Mzg3NDEzNDkyMTc5NTg2MjIwNw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE1NDF4MTQ0MC5zZHIuQzMifQ%3D%3D&_nc_ohc=Ehd9TbTmgOwQ7kNvwF4jbtN&_nc_oc=Adp5nP1HVNLF1oMCRfEX6EUSzDMVKJ9kFX1mue83Xj3xFdBCMKKGl12ZRIn2UMQyVYY&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=L8oN35-acwD18KH-0wGMBg&_nc_ss=7a32e&oh=00_Af0tR7s_lLAnJMr_7BoieBp-7974ChFn8XZP54xpU-fQbQ&oe=69E4EE03"
+      ],
+      "url": "https://www.threads.com/@choi.openai/post/DXDsNvrk7mU",
+      "created_at": "2026-04-13 13:00:50",
+      "date": "2026-04-13",
+      "crawled_at": "2026-04-15T13:22:21.673",
+      "source": "consumer_detail",
+      "local_images": [
+        "web_viewer/images/455f98ad12d6239f532e4f5e0b4bfccc.jpg",
+        "web_viewer/images/05319307f8da46bff2a93e856040b5a2.jpg",
+        "web_viewer/images/ba3f1178ccab0a99b609ba1ceb0bd89f.jpg",
+        "web_viewer/images/39c69e6b474668e75b0f1ba0719be855.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DXDsNvrk7mU",
+      "pk": "3874134563065411988",
+      "taken_at": 1776052850,
+      "original_item_count": 7,
+      "platform_sequence_id": 693
+    },
+    {
+      "sequence_id": 1031,
+      "platform_id": "DXDb7NcEwrj",
+      "sns_platform": "threads",
+      "code": "DXDb7NcEwrj",
+      "urn": "",
+      "username": "notalentbutai",
+      "display_name": "notalentbutai",
+      "full_text": "클코는 왜 PPT를 못만들까?\nUIUX는 나름 쫌 치면서 왜 PPT는 못만들까......\n디자인도 구리고 텍스트 줄바꿈도 이상하고 너무 구린데\n클코로 PPT 쫌 치시는분 없나요~~?",
+      "media": [],
+      "url": "https://www.threads.com/@notalentbutai/post/DXDb7NcEwrj",
+      "created_at": "2026-04-13 10:38:30",
+      "date": "2026-04-13",
+      "crawled_at": "2026-04-15T13:22:21.673",
+      "source": "consumer_detail",
+      "local_images": [],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DXDb7NcEwrj",
+      "pk": "3874062920603339491",
+      "taken_at": 1776044310,
+      "original_item_count": 1,
+      "platform_sequence_id": 694
+    },
+    {
+      "sequence_id": 1032,
+      "platform_id": "DXCYGNGk5V9",
+      "sns_platform": "threads",
+      "code": "DXCYGNGk5V9",
+      "urn": "",
+      "username": "the.brain.trinity",
+      "display_name": "Brain Trinity",
+      "full_text": "큰 것이 온다.\nKarpathy가 외치면, 파도가 옵니다.\n바이브 코딩도 그랬고, 컨텍스트 엔지니어링도 그랬습니다.\n이번엔 LLM Wiki.\nClaude Code × Obsidian × LLM Wiki × Graphify\n이 조합이 지금 폭발적으로 떠오르고 있습니다.\nGarbage In, Garbage Out의 시대는 끝났습니다.\n이제는 Gold In, Gold Out.\n목적 있는 수집, 복리로 쌓이는 나만의 지식 그래프.\nRAG를 넘어선 다음 메타가 시작됩니다!\n\nhttps://youtu.be/cNlvrU-KcRg?si=MoOE3OprhcmS-9Gd",
+      "media": [
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/670269765_18070538858345926_6716836962309095848_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=105&ig_cache_key=Mzg3Mzc2NDU4Nzk4MDY5NDI5Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE0NDB4ODEwLnNkci5DMyJ9&_nc_ohc=5-WejamrDCcQ7kNvwEH1QB_&_nc_oc=AdotL3KhPxYTeZ4p6lUjm0DTdULGOE_I2GG7tx96weSQSIgXhjU1JBaOo0oWfsQaSDw&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=FmIGvXXwxHlGMdzjLtvTHQ&_nc_ss=7a32e&oh=00_Af060zMsnU0KEB_2H2wwpJIKb_kOORfqqbAvofwpr2QNNA&oe=69E4F1CE"
+      ],
+      "url": "https://www.threads.com/@the.brain.trinity/post/DXCYGNGk5V9",
+      "created_at": "2026-04-13 00:45:48",
+      "date": "2026-04-13",
+      "crawled_at": "2026-04-15T13:22:21.673",
+      "source": "consumer_detail",
+      "local_images": [
+        "web_viewer/images/8d83be8ef19b22eac8be842011e620a5.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DXCYGNGk5V9",
+      "pk": "3873764608994153853",
+      "taken_at": 1776008748,
+      "original_item_count": 1,
+      "platform_sequence_id": 695
+    },
+    {
+      "sequence_id": 1033,
+      "platform_id": "DXD80kwCYdS",
+      "sns_platform": "threads",
+      "code": "DXD80kwCYdS",
+      "urn": "",
+      "username": "unclejobs.ai",
+      "display_name": "엉클잡스 | Ai 시대, 돈이 되는 정보 전달",
+      "full_text": "Claude Code가 느려진 게 아닙니다.\n생각을 덜 하고 있었어요.\n\n추천하는 해결법을 가져와봤습니다.\n~/.claude/settings.json에 아래 설정을 넣으세요.\n\n\"effortLevel\": \"high\"\n-> 생각 깊이를 항상 높게 고정.\n\nCLAUDE_CODE_DISABLE_ADAPTIVE_THINKING\n-> Claude가 알아서 생각을 줄이는 기능을 끔.\n\nCLAUDE_CODE_DISABLE_1M_CONTEXT\n->컨텍스트 창 비대화 방지.\n\nCLAUDE_CODE_DISABLE_AUTO_MEMORY\n-> 오래된 정보를 기억하는 자동 메모리 끔.\n\n전 Meta 개발자 Kun Chen이 공유한 설정이에요.\n이걸 넣으면 체감이 달라집니다.\n\n완벽한 해결책은 아닙니다. 참고만 하셔야 해요.\n\n근데 왜 이게 필요한지, 무슨 일이 있었는지를 알아야\n다음에 같은 일이 생겨도 대응할 수 있어요.\n\n---\n\n타임라인부터 봅시다.\n2월 5일, Opus 4.6이 출시됐어요.\n\n2월 9일, \"적응형 사고(Adaptive Thinking)\"가 도입됐습니다.\nClaude가 매 응답마다\n\"이 질문에 얼마나 깊이 생각할지\"를\n스스로 판단하는 기능이에요.\n\n3월 3일, 기본 effort 레벨이 \"high\"에서 \"medium\"으로 내려갔습니다.\neffort란 Claude가 응답 전에 얼마나 깊이 추론할지를 정하는 값이에요.\nhigh면 깊이 생각하고, medium이면 적당히, low면 빠르게.\n\n이 두 가지가 겹쳤어요.\n\n---\n\n생각의 깊이가 medium으로 내려갔는데,\n그 medium 안에서도 Claude가 \"이건 쉬운 질문이네\"라고 판단하면\n생각을 더 줄이거나 아예 건너뛰는 거예요.\n\n결과: 빠르지만 얕은 응답.\n복잡한 코딩 작업에서 할루시네이션이 급증했어요.\n존재하지 않는 커밋 SHA를 만들어내고,\n없는 패키지 이름을 지어내고,\n한 번도 존재한 적 없는 API를 참조하는 코드를 써냈습니다.\n\n3월 한 달간 14개 제품 업데이트와 5번의 장애 사이에 묻혔어요.\n별도 공지 없이.\n\n---\n\n3월 내내 불만이 쌓였지만 \"느낌\"이었어요.\n데이터가 없었습니다.\n\n4월 2일, Stella Laurenzo가 데이터를 들고 나왔어요.\nAMD 시니어 디렉터. LLVM 컨퍼런스 발표자.\n실력이 검증된 엔지니어예요.\n\n6,852개의 Claude Code 세션을 분석했습니다.\n\nAnthropic이 3월 초에 사고 과정(thinking) 로그를 UI에서 숨기기 시작했어요.\nBoris Cherny(Claude Code 창시자)는\n\"UI 변경일 뿐, 실제 추론에는 영향 없다\"고 했습니다.\n\n---\n\nLaurenzo는 우회 방법을 썼어요.\n사고 내용은 숨겨졌지만 서명(signature) 필드는 남아 있었거든요.\n7,146개 샘플을 분석한 결과,\n서명 길이와 사고 깊이의 상관계수가 0.971.\n1에 가까울수록 완벽한 상관관계인데, 거의 1이에요.\n\n이 방법으로 측정한 결과, 사고 깊이가 2월 대비 67% 줄어 있었습니다.\n\n이 하락은 UI 변경(3월 8일) 이전인 2월 말부터 시작됐어요.\n\"UI만 바꿨다\"는 설명과 맞지 않았습니다.\n\n---\n\nBoris Cherny가 GitHub과 Hacker News에서 공개 대응했어요.\n\n인정한 것 두 가지,\n적응형 사고 도입 (2월 9일).\n기본 effort 레벨 하향 (3월 3일).\n\n그리고 버그 하나를 추가 확인했어요.\n일부 턴에서 적응형 사고가 추론 토큰을 0개 할당했다.\nClaude가 말 그대로 한 번도 생각하지 않고 답한 거예요.\n\n시스템 프롬프트에는\n<reasoning_effort>85</reasoning_effort>라는 태그가 있어요.\n100이 최대. 이 값이 한때 20까지 내려가 있었다는 보고가 나왔습니다.\n현재는 85로 돌아와 있어요.\n\n---\n\n그래서 1장에서 드린 설정이 필요한 거예요.\n\neffortLevel: \"high\" \n-> medium 기본값을 덮어씀.\n\nDISABLE_ADAPTIVE_THINKING\n-> Claude가 알아서 낮추는 걸 차단.\n\n이 두 개가 핵심이에요.\nAnthropic이 낮춘 걸 사용자가 다시 올리는 거예요.\n\nDISABLE_1M_CONTEXT는 다른 이유예요. 1M 컨텍스트는 실제로 256K 이상에서 성능이 떨어지고 토큰을 과도하게 소모합니다. 잘 범위를 잡은 요청이라면 1M이 필요할 일이 거의 없어요.\n\nDISABLE_AUTO_MEMORY도 별개 이유. 자동 메모리가 오래된 정보나 비효율적인 프로세스를 기억해서 오히려 방해가 되는 경우가 있습니다. 기억시킬 게 있으면 CLAUDE.md에 직접 넣는 게 정확해요.\n\nLaurenzo 팀은 이 설정을 전부 적용해도\n성능 저하가 지속된다고 보고했어요.\n\n완전한 해결책은 아닙니다.\n하지만 지금 할 수 있는 최선이에요.\n\n---\n\n\"의도적 성능 하향\"이라기보다는\n평균 사용자를 위한 비용/속도 최적화 결정이\n파워 유저의 경험을 조용히 망가뜨린 거예요.\n\n벤치마크에서는 여전히 1위입니다.\nLMSYS Chatbot Arena에서 Opus 4.6 Thinking이\nElo 1504로 역대 최초 1500 돌파.\n\n근데 벤치마크가 측정하는 건 짧은 대화예요.\nLaurenzo가 문제를 제기한 건\n수 시간짜리 멀티파일 엔지니어링 세션.\nArena가 테스트하지 않는 영역이에요.\n\n벤치마크 1위와 실사용 성능 저하가 동시에 성립합니다.\n\n$200/월을 내고 있는데\n생각을 얼마나 할지를 Anthropic이 조절하고 있었어요.\n그걸 사용자가 데이터로 증명하고 나서야 대응이 나왔습니다.\n\n설정을 바꾸세요. 그리고 지켜보세요.\n\n---\n\n→ Stella Laurenzo 분석: https://github.com/anthropics/claude-code/issues/46099\n→ Claude Code 공식 문서: https://code.claude.com/docs/en/overview",
+      "media": [
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/669831040_17938108122207210_6921036952764840082_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=Mzg3NDIwNzYwMDEzMjg1MTUzOA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwOTZ4Njc4LnNkci5DMyJ9&_nc_ohc=4kLx9ZEfkAEQ7kNvwFLkWR3&_nc_oc=AdrCuztjBSih4c-whfCsOpBGMvKFoytA3wAT9l3WaljnzU5TCSOPXSGxb3eLfvq4wzc&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=exqZoakx1ZeyvHwPjAZ_rg&_nc_ss=7a32e&oh=00_Af0vDhXmA_KImwM2HJgwOuKMEw1l7coZJynX-KLXaHr7tQ&oe=69E4DBB3",
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/670372317_17938108266207210_7752986117453814878_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ig_cache_key=Mzg3NDIwNzYwMTE0Nzg1MzI4MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjc5OXg1ODQuc2RyLkMzIn0%3D&_nc_ohc=YaFbgLMiRYAQ7kNvwHRo49-&_nc_oc=AdoB2Qhpg5ZgPxIYmFT2QnEnSI-DYdeA8wlPCVumfppj1qxr4wPwZ1-ohc83S03Yq2Q&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=exqZoakx1ZeyvHwPjAZ_rg&_nc_ss=7a32e&oh=00_Af2VhhaL4TEeGm-9OyFEFNzuy_Qbf9wuV3CSMZGBHmag3A&oe=69E4FEF0"
+      ],
+      "url": "https://www.threads.com/@unclejobs.ai/post/DXD80kwCYdS",
+      "created_at": "2026-04-13 15:25:57",
+      "date": "2026-04-13",
+      "crawled_at": "2026-04-15T13:22:21.673",
+      "source": "consumer_detail",
+      "local_images": [
+        "web_viewer/images/48aaf46bf9352f6ca2a567f3b42c46be.jpg",
+        "web_viewer/images/da46117b674bdc20a98f4ae09408dae6.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DXD80kwCYdS",
+      "pk": "3874207600132851538",
+      "taken_at": 1776061557,
+      "original_item_count": 9,
+      "platform_sequence_id": 696
+    },
+    {
+      "sequence_id": 1034,
+      "platform_id": "DXDQOLzkocY",
+      "sns_platform": "threads",
+      "code": "DXDQOLzkocY",
+      "urn": "",
+      "username": "goos.kim",
+      "display_name": "Goos Kim",
+      "full_text": "모두의AI Claude Cowork Plugins v.1.0 무료로 공개합니다\n\nClaude Cowork 도메인 전문가 AI 마켓플레이스\n\n자연어 한 줄이면 사업계획서, 계약서 검토, 세금 계산, PPT 제작, 데이터 분석, 특허 검색까지 — 16개 독립 플러그인과 65개 전문 스킬이 업무를 대신합니다.\n\nhttps://github.com/modu-ai/cowork-plugins",
+      "media": [],
+      "url": "https://www.threads.com/@goos.kim/post/DXDQOLzkocY",
+      "created_at": "2026-04-13 08:56:14",
+      "date": "2026-04-13",
+      "crawled_at": "2026-04-15T13:22:24.699",
+      "source": "consumer_detail",
+      "local_images": [],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DXDQOLzkocY",
+      "pk": "3874011447962011416",
+      "taken_at": 1776038174,
+      "original_item_count": 1,
+      "platform_sequence_id": 691
+    },
+    {
+      "sequence_id": 1035,
+      "platform_id": "DXEUsMBDZjp",
+      "sns_platform": "threads",
+      "code": "DXEUsMBDZjp",
+      "urn": "",
+      "username": "daon_k",
+      "display_name": "곽성재",
+      "full_text": "요즘 프로젝트마다 DESIGN.md 붙이는 게 루틴이 됐어요.\nawesome-design-md 정말 잘 쓰고 있는데, 딱 하나 번거로운 게 있더라고요.\n\n매번 DESIGN.md 가져와서 색깔 바꾸고, 타이포 바꾸고, \n토큰 이름 프로젝트에 맞게 고치고… 이걸 프로젝트마다 반복.\n\n매번 이 과정을 반복하면서 생각했어요. \n\"그냥 대기업 디자인 시스템 하나 골라서, \n내 취향에 맞춰서으로 커스텀하고, 바로 export되면 안 되나?\"\n\n그래서 만들고 있어요. 프로젝트명은 OMD, oh-my-design이에요.\n이름 그대로, DESIGN.md를 위한 플랫폼이에요.\n\n지금 한창 작업 중이고, 완성되면 스레드에 풀거예요.\nDESIGN.md 루틴 가진 분들한테는 꽤 쓸만할 거라 자신해요 !!\n\n팔로우해두시면 론칭 소식 바로 받아보실 수 있어요 👀",
+      "media": [
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.71878-15/669774284_1440067470932298_5409091718898760383_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=106&ig_cache_key=Mzg3NDMxMjU3NjkzNTIzNzg2NQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY0MHg0MzIuc2RyLkMzIn0%3D&_nc_ohc=iQvFVXhz154Q7kNvwGKnrut&_nc_oc=AdoYbrRsykWYTNTc0anJAoZhVATp2--twV6ub_w7FjBqcazTCG-7hPCqHqRBJc5n5jM&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=sxAuEMJB9Im3Z0Vx7Mxyng&_nc_ss=7a32e&oh=00_Af1_74MQUT8HXlXy-JIYDMD3iWMkI8kMVHSagVYGwHjYHg&oe=69E4CC48"
+      ],
+      "url": "https://www.threads.com/@daon_k/post/DXEUsMBDZjp",
+      "created_at": "2026-04-13 18:55:22",
+      "date": "2026-04-13",
+      "crawled_at": "2026-04-15T13:22:24.699",
+      "source": "consumer_detail",
+      "local_images": [
+        "web_viewer/images/3b11342613f7f672ce0bef1e4d65c1e1.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DXEUsMBDZjp",
+      "pk": "3874312576935237865",
+      "taken_at": 1776074122,
+      "original_item_count": 1,
+      "platform_sequence_id": 692
+    },
+    {
+      "sequence_id": 1036,
+      "platform_id": "DWROO2NDQ2i",
+      "sns_platform": "threads",
+      "code": "DWROO2NDQ2i",
+      "urn": "",
+      "username": "choi.openai",
+      "display_name": "CHOI",
+      "full_text": "전 세계의 활용팁을 모은 Claude 가이드북 배포.\n\n정리했던 내용이 많은 관심을 받아 좀 더 읽기 쉽게 내용을 좀 더 업데이트 해서 배포합니다.\n최근 AI 트렌드와 글로벌 동향 그리고 실제 적용법을 심화적으로 담았습니다.\n다음에는 OpenClaw와 Codex 마스터 가이드를 공유할 예정입니다. \n많은 관심 부탁드립니다.\n\n---\n\n링크 :\nhttps://drive.google.com/file/d/1SAGAkIk4GGxQOtAjs--oqWRfiYLHYBtP/view?usp=sharing",
+      "media": [
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.71878-15/656443635_865722363160648_2377679466642832384_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=105&ig_cache_key=Mzg1OTkyODk0ODU1ODA3MzI1MA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY0MHg0MjAuc2RyLkMzIn0%3D&_nc_ohc=_IbYlpvn-UUQ7kNvwFf-Lwr&_nc_oc=AdpSzXQ6ZHSw-vHlbDQafZOo3rVr-p1-bxBD7l87ctwxy6zN5x0E83a6chhrE371hmk&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=XBNxW3uaQCYrW7vzGnGejQ&_nc_ss=7a32e&oh=00_Af2xgm_rRyzXvAxalRQrCuBPfUBZFKvrF0C7BaeTgL5tGw&oe=69E4E4B7"
+      ],
+      "url": "https://www.threads.com/@choi.openai/post/DWROO2NDQ2i",
+      "created_at": "2026-03-24 22:39:19",
+      "date": "2026-03-24",
+      "crawled_at": "2026-04-15T13:22:27.737",
+      "source": "consumer_detail",
+      "local_images": [
+        "web_viewer/images/174c21a38bf6ee7fb2d5922af98f5f5e.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DWROO2NDQ2i",
+      "pk": "3859928948558073250",
+      "taken_at": 1774359559,
+      "original_item_count": 2,
+      "platform_sequence_id": 688
+    },
+    {
+      "sequence_id": 1037,
+      "platform_id": "DWn9J1mEpb4",
+      "sns_platform": "threads",
+      "code": "DWn9J1mEpb4",
+      "urn": "",
+      "username": "choi.openai",
+      "display_name": "CHOI",
+      "full_text": "구글의 디자인 도구 'Stitch'에서 처음 도입한 DESIGN.md라는 개념이 화제입니다.\n\n기존 개발자들이 소스 코드의 설명을 README.md에 적었듯, 이 파일에는 색상, 폰트, 여백, 그림자, 디자인 원칙 등 해당 프로젝트의 시각적 정체성을 마크다운 형식으로 적어둡니다.\n\n이를 활용한 awesome-design-md라는 깃허브 저장소가 순식간에 인기를 끌고 있는데요. 이 저장소에는 애플, 스포티파이, 노션, 에어비앤비 등 유명 서비스들의 디자인 가이드라인이 DESIGN.md 파일로 정리되어 있습니다.\n\n원하는 서비스의 디자인 파일을 복사해 내 프로젝트 폴더에 넣고, AI 코딩 에이전트에게 \"이 느낌으로 페이지를 만들어줘\"라고 지시하기만 하면 됩니다.\n\n그동안 AI가 만들어주는 UI 디자인은 엉성하고 일관성이 없었지만, 이제는 텍스트 파일 하나로 전문적인 디자인 시스템을 완벽하게 이식할 수 있게 되었습니다.\n\n---\n\n깃허브 :\nhttps://github.com/VoltAgent/awesome-design-md",
+      "media": [
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/658414962_17955137091112832_3879772117927258469_n.jpg?stp=cp6_dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=Mzg2NjMyNzc2MTk4MDM5NzMwNA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE1ODd4MTQzOS5zZHIuQzMifQ%3D%3D&_nc_ohc=EoXwJzACxBsQ7kNvwFWq92V&_nc_oc=AdqamX3lkbpbobl8twDLJ4kuOCjuYh9kGbHrrBbh0pTuHcE7wflub6qnxZSSvJjxlQo&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=cigLSF_g3qFFHcjBTtoxTQ&_nc_ss=7a32e&oh=00_Af0h8R9cytxk0PMG5YbBxXM_0R0IAPLKqp6hBd-XCUXScA&oe=69E4FD45"
+      ],
+      "url": "https://www.threads.com/@choi.openai/post/DWn9J1mEpb4",
+      "created_at": "2026-04-02 18:30:07",
+      "date": "2026-04-02",
+      "crawled_at": "2026-04-15T13:22:27.737",
+      "source": "consumer_detail",
+      "local_images": [
+        "web_viewer/images/47f39f7d727dac018e97193d56c339ed.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DWn9J1mEpb4",
+      "pk": "3866327761980397304",
+      "taken_at": 1775122207,
+      "original_item_count": 2,
+      "platform_sequence_id": 689
+    },
+    {
+      "sequence_id": 1038,
+      "platform_id": "DQ8mqRaEtUL",
+      "sns_platform": "threads",
+      "code": "DQ8mqRaEtUL",
+      "urn": "",
+      "username": "catlovessubakba",
+      "display_name": "강정석",
+      "full_text": "CCS 라는 툴을 써봤다. \n\n클로드 코드 MAX를 써도 사실 부족할때가 많아서 일전에 GLM 을 쿼터로 구독했다.\n\n쿼터에 90 달러, 그것도 첫 구매는 절반으로 할인해줬나 해서 샀었는데, 매번 CC랑 왔다 갔다 APi 세팅하기가 힘들었었는데.....\n\nccs 라는 툴로 이젠 왔다갔다가 훨씬 편해졌다. \n\nhttps://github.com/kaitranntt/ccs\n\nCCS로 하면 그냥 CC를, ccs glm으로 하면 glm 구독제에서 쓰는 방향으로 나간다. 대-혁-신",
+      "media": [],
+      "url": "https://www.threads.com/@catlovessubakba/post/DQ8mqRaEtUL",
+      "created_at": "2025-11-12 15:49:15",
+      "date": "2025-11-12",
+      "crawled_at": "2026-04-15T13:22:27.737",
+      "source": "consumer_detail",
+      "local_images": [],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DQ8mqRaEtUL",
+      "pk": "3764053419251389707",
+      "taken_at": 1762930155,
+      "original_item_count": 1,
+      "platform_sequence_id": 690
+    },
+    {
+      "sequence_id": 1039,
+      "platform_id": "DWeNl73jxfT",
+      "sns_platform": "threads",
+      "code": "DWeNl73jxfT",
+      "urn": "",
+      "username": "choi.openai",
+      "display_name": "CHOI",
+      "full_text": "🚨 전세계 Codex의 모든 활용법을 담았습니다.\n오픈AI 공식에서 알려주는 사례와 엔지니어링 기법을 싹 직접 정리해서 공유해드립니다.\n\n---\n\n가이드북 :\nhttps://drive.google.com/file/d/1xKEbx_2f7hbdvSTYiMfC69znoS21SrCB/view?usp=sharing\n\n---\n\nClaude Code 편 :\n\n---\n\nOpenClaw 편 :",
+      "media": [
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/657762688_17954211618112832_7411622038524516480_n.jpg?stp=cp6_dst-jpg_e35_tt6&_nc_cat=108&ig_cache_key=Mzg2MzU4NTMxMTgzODY0MDA4Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjIxNjB4MTIxNC5zZHIuQzMifQ%3D%3D&_nc_ohc=cMKzLLt_saYQ7kNvwEYum44&_nc_oc=AdoyEMeHOd9EilFKq_xG1sttmuyP3NduA3e1ikUnJAu8WBz9g0IHE1B_OD3IZmAtqUU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=-8XOcbdyUp0KoOsvTzGwig&_nc_ss=7a32e&oh=00_Af2aMImwbYk8TzADeTEc7z2_cfnCzcZXwx5auzWKm8mn3w&oe=69E4F4B1"
+      ],
+      "url": "https://www.threads.com/@choi.openai/post/DWeNl73jxfT",
+      "created_at": "2026-03-29 23:41:21",
+      "date": "2026-03-29",
+      "crawled_at": "2026-04-15T13:22:30.767",
+      "source": "consumer_detail",
+      "local_images": [
+        "web_viewer/images/543a98188bfc972ad1661479aaef45ad.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DWeNl73jxfT",
+      "pk": "3863585311838640083",
+      "taken_at": 1774795281,
+      "original_item_count": 4,
+      "platform_sequence_id": 687
+    },
+    {
+      "sequence_id": 1040,
+      "platform_id": "DW4vSYWE8NG",
+      "sns_platform": "threads",
+      "code": "DW4vSYWE8NG",
+      "username": "daniel._.choi",
+      "display_name": "Daniel Jong-ho, Choi / 34",
+      "full_text": "클로드코드 쓰는데\n“생각은 잘하는데 손발이 하나 더 있었으면” 싶을 때가 있음\n\n그럴 때 붙이는 게 Codex 플러그인임\n\n클로드코드가 메인 오케스트레이터라면,\nCodex는 옆에서 코드 검토하고, 구현안 던지고, 다른 시각으로 한 번 더 찔러보는 서브 브레인 느낌\n\n다운로드 방법은 다음 쓰레드에서 ↓↓↓↓↓",
+      "media": [
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/662360650_17958427470104970_2171947775598014065_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=Mzg3MTA1MTg0Mjg4OTkzNjQyMw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEyMzh4NTUwLnNkci5DMyJ9&_nc_ohc=Z_IameeAji8Q7kNvwFihPfN&_nc_oc=AdruVXCZwqrVfIkJz7dwik0pvJlu_69pNWEZL9vJs8dDITcydhtf_0bXxacp2gYEBQM&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=7KTUSgCTK9nqWq9L4WHk0A&_nc_ss=7a32e&oh=00_Af1ujFiN1F3faqzccwO7fcgd90l1i9w43422ba1WEPJTdg&oe=69E4FB74",
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/669844680_17958427479104970_3747027416741039339_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ig_cache_key=Mzg3MTA1MTg0Mjg2NDgwNzczNQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjg0OXgzOTkuc2RyLkMzIn0%3D&_nc_ohc=FzXgL_NcbKsQ7kNvwEhvkKH&_nc_oc=AdqUKHVEI6Q-GBLgLqrHTaVer5do9u4ZXY29a_7QqT0oHSqPQfw20HeD-tg6VRia4k8&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=7KTUSgCTK9nqWq9L4WHk0A&_nc_ss=7a32e&oh=00_Af2PFCbhFxevhXw24dbvIBvit204fzl3bT6mKEi70oXTAA&oe=69E4EE80"
+      ],
+      "url": "https://www.threads.com/@daniel._.choi/post/DW4vSYWE8NG",
+      "created_at": "2026-04-09 06:56:02",
+      "date": "2026-04-09",
+      "crawled_at": "2026-04-15T13:22:30.768",
+      "source": "network",
+      "local_images": [
+        "web_viewer/images/9162a14d7891cdeeddb32b144410b912.jpg",
+        "web_viewer/images/feb77542755f68fc8a043f0a95a1a0cf.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": false,
+      "root_code": "DW4vSYWE8NG",
+      "like_count": 11,
+      "reply_count": 3,
+      "repost_count": 2,
+      "quote_count": 0,
+      "pk": "3871051851001742150",
+      "media_type": 8,
+      "content_type": "carousel",
+      "platform_sequence_id": 686
+    },
+    {
+      "sequence_id": 1041,
+      "platform_id": "DW4vSMgk_OX",
+      "sns_platform": "threads",
+      "code": "DW4vSMgk_OX",
+      "urn": "",
+      "username": "daniel._.choi",
+      "display_name": "Daniel Jong-ho, Choi / 34",
+      "full_text": "설치도 의외로 안 복잡함\n\nClaude Code 터미널에서 아래 순서대로 치면 됨.\n\n/plugin marketplace add openai/codex-plugin-cc\n/plugin install codex@openai-codex\n/reload-plugins\n/codex:setup\n\n세팅 과정에서 Codex CLI 설치랑 로그인까지 이어짐\n설치 끝나면 /codex:review 같은 슬래시 커맨드가 뜨는지 보면 체크 가능\n\n---\n\n이걸 왜 붙이냐면\n클로드코드한테는 큰 방향, 맥락, 아키텍처를 맡기고\nCodex에는 구현 검토, 코드 리뷰, 대안 제시 같은 걸 붙이기 좋음\n\n예를 들면 이런 식\n\n“전체 구조는 클로드코드가 잡고”\n“이 함수 리팩토링은 Codex로 한 번 더 보고”\n“PR 들어가기 전 검토도 한 번 더 받고”\n\n혼자 코딩하는데\n옆자리에 개발자 한 명 더 앉혀두는 느낌이 딱 이거임\n\n---\n\n주의할 점도 있음.\n\nNode.js 18.18+ 필요하고\n비용도 사실상 이중 구조임\nClaude Code 쪽 비용 + ChatGPT 또는 OpenAI API 쪽 비용\n\n그래도\n클로드코드를 ‘메인 지휘관’으로 쓰는 사람이라면\nCodex 붙여서 보조 추론, 리뷰, 구현 서포트 받는 조합이 꽤 괜찮음\n\n한 줄로 정리하면\n클로드코드를 더 세게 쓰고 싶으면, Codex는 꽤 쓸만한 참모다\n\n---\n\n클로드코드 쓰는데\n“생각은 잘하는데 손발이 하나 더 있었으면” 싶을 때가 있음\n\n그럴 때 붙이는 게 Codex 플러그인임\n\n클로드코드가 메인 오케스트레이터라면,\nCodex는 옆에서 코드 검토하고, 구현안 던지고, 다른 시각으로 한 번 더 찔러보는 서브 브레인 느낌\n\n다운로드 방법은 다음 쓰레드에서 ↓↓↓↓↓",
+      "media": [
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/662360650_17958427470104970_2171947775598014065_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=Mzg3MTA1MTg0Mjg4OTkzNjQyMw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEyMzh4NTUwLnNkci5DMyJ9&_nc_ohc=Z_IameeAji8Q7kNvwFihPfN&_nc_oc=AdruVXCZwqrVfIkJz7dwik0pvJlu_69pNWEZL9vJs8dDITcydhtf_0bXxacp2gYEBQM&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=rsGfukNDnYJycJo9nhX9aw&_nc_ss=7a32e&oh=00_Af1uf4n7En_yBDhnCZYM2rDD4krZCa4X4cwYC7OIVNnUTw&oe=69E4FB74"
+      ],
+      "url": "https://www.threads.com/@daniel._.choi/post/DW4vSMgk_OX",
+      "created_at": "2026-04-09 06:56:01",
+      "date": "2026-04-09",
+      "crawled_at": "2026-04-15T13:22:30.768",
+      "source": "consumer_detail",
+      "local_images": [
+        "web_viewer/images/2e895a901b35cf985779fb534dcf6373.jpg"
+      ],
+      "is_detail_collected": false,
+      "is_merged_thread": true,
+      "root_code": "DW4vSYWE8NG",
+      "pk": "3871051838293013399",
+      "taken_at": 1775685361,
+      "original_item_count": 4,
+      "platform_sequence_id": 686
+    },
+    {
+      "sequence_id": 1042,
+      "platform_id": "7450348366204436481",
+      "sns_platform": "linkedin",
+      "username": "ACoAACkadIABsYoadkJXuZXMASkhnSFeoK_nVw8",
+      "display_name": "Jeongmin Lee",
+      "full_text": "🔄 Claude Code 컨텍스트 관리를 5개의 명령어로 하는 가이드라인이 무료로 풀렸습니다\n클로드 코드 사용 시 어떻게 채팅창을 열어야 하는지 모르겠다면 이거 하나만 저장해두세요.\n보통 우리는 세션을 하나만 씁니다. Claude Code 로 뭘 하든 하나의 화면에서 계속 이어가는 게 당연했어요.\nClaude Code 개발팀 Thariq 이 세션 관리 가이드를 공개하고 나서야 알았습니다. 매번 같은 화면에서 \"그거 아니고 이렇게 해봐\"라고 치던 습관 자체가 문제일 수 있습니다.\n1️⃣ Context rot. 컨텍스트가 클수록 모델은 멍해집니다\nThariq 의 세션 가이드 원문: https://lnkd.in/g3xgBRXZ\ncontext window 는 모델이 한 번에 볼 수 있는 전부입니다. 시스템 프롬프트와 대화 기록에 tool call 결과와 읽은 파일까지 전부 쌓입니다.\ncontext 에 쌓인 내용이 많아질수록 attention 이 분산되고 오래된 정보가 현재 작업을 방해해요. 세션을 관리한다는 건 이 rot 을 직접 통제한다는 뜻입니다. 일종의 '사용자 측면' 에서의 컨텍스트 엔지니어링입니다.\n• context rot 은 컨텍스트 크기에 비례해 성능이 떨어지는 현상\n• 직전 디버깅 로그가 새 작업 판단을 오염시킴\n• 3시간짜리 세션 후반부에 체감이 확 달라집니다\n2️⃣ Rewind. 수정 요청보다 되감기가 낫습니다\nClaude 가 파일 5개를 읽고 접근법 A 를 시도했는데 실패했습니다. 보통은 \"그건 안 됐으니까 B 로 해봐\"라고 치죠. 이러면 실패한 시도의 tool call 과 결과가 context 에 그대로 남습니다.\nEsc 두 번(또는 /rewind)으로 파일을 읽은 시점까지 돌아간 뒤 \"A 방식은 foo 모듈이 노출 안 되니 바로 B 로 가라\"고 다시 진행하는 것이 더 좋습니다.\n• 수정 메시지는 실패 맥락을 context 에 누적시킴\n• rewind 는 실패 이후 기록을 context 에서 제거\n• 직접 써보니 같은 작업에서 삽질 횟수가 눈에 띄게 줄었습니다\n3️⃣ Compact vs Clear. 둘은 목적이 다릅니다\n/compact 는 모델이 대화를 요약해서 기존 기록을 대체합니다. 편하지만 뭐가 중요한지 Claude 가 판단하죠.\n반면 /clear 는 \"지금 작업은 X, 관련 파일은 A 와 B, Y 접근법은 배제\"라고 직접 써서 새 세션을 여는 겁니다. 손이 더 가지만 context 를 내가 설계합니다.\n• /compact: 낮은 노력. 방향 전환 직전에 쓰면 요약이 빗나갈 수 있음\n• /clear: 높은 노력. context rot 가 전혀 없는 상태에서 시작\n• /compact 'focus on auth refactor', 'drop test debugging' 처럼 힌트를 붙이면 품질이 오름 (개인적으로는 문제 해결을 요청할 때 'Find the root cause.' 를 붙이면 훨씬 효과적입니다)\n4️⃣ Subagent. 결론만 가져오면 될 때 씁니다\n중간 과정의 tool output 이 다시 필요 없을 때 subagent 가 맞습니다. Agent tool 로 subagent 를 띄우면 별도 context window 가 열리고 최종 결과만 부모 세션에 돌아와요.\n\"이 spec 기준으로 subagent 띄워서 검증해\"라고 명시적으로 지시할 수 있습니다.\n• \"다른 코드베이스 auth flow 읽고 요약한 뒤 같은 방식으로 구현해\" 패턴\n• git 변경 기반으로 문서 작성을 subagent 에 위임하는 패턴\n• 긴 코드 리뷰를 넘기니 부모 세션이 깨끗하게 유지됩니다\n5️⃣ 종합. 5가지 선택지는 전부 같은 질문에서 출발합니다\n공통점이 있습니다.\nContinue 를 제외한 4가지 선택지 모두 \"지금 이 context 에 뭘 남기고 뭘 버릴 것인가\"를 사용자가 결정하는 행위라는 겁니다.\nRewind 는 실패한 시도를 제거하고\nCompact 는 모델에게 긴 내용의 요약을 맡기고\nClear 는 사용자가 직접 context 를 설계하고\nSubagent 는 중간 출력을 격리해 컨텍스트의 품질을 관리합니다\n프롬프트를 잘 쓰는 것만이 context engineering 이 아닙니다.\n실제로 에이전트를 설계하는 것만이 context engineering 이 아닙니다.\n세션 하나를 열고 닫는 판단까지 포함돼요.\n다음 Enter 전 5초의 판단이 AI 의 결과물 품질을 다르게 할 수 있습니다.",
+      "media": [
+        "https://media.licdn.com/dms/image/v2/D5622AQEGhVwLKAkTuQ/feedshare-shrink_2048_1536/B56Z2T0W83HkAg-/0/1776301469838?e=1778112000&v=beta&t=4_VDthfsabam0WDGFTGEC5rLvDs_3DXB3mCbT9Ra6tw"
+      ],
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:7450348366204436481?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7450348366204436481%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "created_at": "2026-04-16 10:04:31",
+      "date": "2026-04-16",
+      "crawled_at": "2026-04-17T09:50:01.894",
+      "source": "network",
+      "local_images": [
+        "web_viewer/images/33c09a870931fa21ca77f82d232cd4ab.jpg"
+      ],
+      "time_text": "23시간",
+      "profile_slogan": "Control opinions with AI",
+      "user_link": "https://www.linkedin.com/in/ACoAACkadIABsYoadkJXuZXMASkhnSFeoK_nVw8",
+      "content_type": "image",
+      "platform_sequence_id": 364
+    },
+    {
+      "sequence_id": 1043,
+      "platform_id": "7448711215146614784",
+      "sns_platform": "linkedin",
+      "username": "ACoAACzGiXkBVgwM4TzSL91V6rZqtKHAePj53ok",
+      "display_name": "Dion Nam",
+      "full_text": "브라우저 AI 자동화하면\n토큰이 정말 순식간에 사라집니다 ㅠㅠ\n페이지를 이동할 때마다 쓸 데없는 화면 정보까지\n전부 읽어버리기 때문입니다.\n특히 여러 페이지를 오가거나,\n폼을 찾고 다음 단계로 넘어가는 작업에서 정말 심합니다..\n그래서 Playwright MCP 응답을\n조금 더 가볍게 정리해주는\nplaywright-optimizer를 만들었습니다.\n중간에서 한 번 먼저 요약해서,\nAI가 지금 필요한 정보만 보고 바로 다음 액션을 하게 해줍니다.\nOptimizer 사용해서 토큰아끼세요!\ngithub:\nhttps://lnkd.in/gS3wvNDA\n--\n실무에서 얻은 AX/AI 자동화 인사이트를 꾸준히 공유하고 있습니다.\n편하게 1촌 신청해 주세요. 함께 인사이트 나누며 성장했으면 합니다.",
+      "media": [
+        "https://media.licdn.com/dms/image/v2/D5622AQG282FeUaceIQ/feedshare-shrink_2048_1536/B56Z18jYaIIYAk-/0/1775911143291?e=1778112000&v=beta&t=mm4uUz4b_fFTVPTVUj-bkldmBfqtVcmzxahKpQdxmhY"
+      ],
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:7448711215146614784?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7448711215146614784%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "created_at": "2026-04-11 21:39:04",
+      "date": "2026-04-11",
+      "crawled_at": "2026-04-17T09:50:01.894",
+      "source": "network",
+      "local_images": [
+        "web_viewer/images/b5730b675a68c4dca1db97e90b802724.jpg"
+      ],
+      "time_text": "5일",
+      "profile_slogan": "AI Native Engineer | Automation & AI Systems",
+      "user_link": "https://www.linkedin.com/in/ACoAACzGiXkBVgwM4TzSL91V6rZqtKHAePj53ok",
+      "content_type": "image",
+      "platform_sequence_id": 365
+    },
+    {
+      "sequence_id": 1044,
+      "platform_id": "7449825131591286785",
+      "sns_platform": "linkedin",
+      "username": "ACoAADheaU8BMhGPt149UknhFx-LRQzlwdPdVIA",
+      "display_name": "ZEMMA Juhye Shin",
+      "full_text": "클로드코드 없이 Claude in Chrome으로\nSNS 캡쳐 + 인사이트 분석 및 해석 가능합니다.\n이번달 달바글로벌팀 교육 프로젝트를 진행하면서,\n교육 과정 전반을 Claude 중심으로 재설계하고 있습니다.\n최근 현장에서 반응이 제일 좋았던 게\nClaude in Chrome을 활용한 인스타그램 리서치입니다.\n기존: 경쟁 브랜드 계정 하나하나 수기로 긁고,\n캡션 복사하고, 엑셀에 정리 (반나절)\n개선:\n크롬 사이드 패널에서 프롬프트 한 번\n→ 게시물·이미지·캡션·참여도 지표 수집 → 엑셀 아웃풋 (수 분)\n👉🏻실무에서 붙여보며 정리한 포인트 세 가지입니다\n1. 크롬 사이드 패널이 데스크톱 앱보다 훨씬 효율적입니다. Claude 데스크톱 앱의 Browser Use 기능도 동일하게 브라우저 컨트롤이 가능하지만, 실제 업무에서 체감 속도는 크롬 사이드 패널 > 데스크톱 앱입니다. 별도 Analysis Tool이나 코드 실행 환경 없이 일반 채팅에서 바로 돌아간다는 것도 큰 장점이고요.\n2. 교육은 \"툴 소개\"가 아니라 \"워크플로우 단축\"이어야 합니다. 기업 AI 교육에서 가장 많이 하는 실수가 기능 나열입니다. 현업 마케터가 원하는 건 \"이 툴로 내 반나절이 10분이 되느냐\"예요. 달바 교육에서도 이 관점으로 커리큘럼을 다시 짰고, 반응이 확연히 달라졌습니다.\n3. AI의 경쟁력은 \"뭘 할 수 있냐\"가 아니라 \"실행 속도를 얼마나 당기느냐\"입니다. 기술이 평준화된 지금, 해자는 Go-to-market 속도에서 나옵니다. 리서치 시간이 줄면 실행·테스트·학습 사이클이 그만큼 빨라져요. 이게 진짜 임팩트입니다.\n---\n혹시 필요한 분들 댓글주시면\n노션으로 간단리 정리한 내용 보내드릴게요",
+      "media": [
+        "https://media.licdn.com/dms/image/v2/D5605AQGHwilKcFpEbQ/videocover-high/B56Z2MYVd.KYBc-/0/1776176693352?e=1776992400&v=beta&t=inZoKS72l4NATwcFT4gW9RhrwKkOIvhVdIfWDB7TTyg"
+      ],
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:7449825131591286785?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7449825131591286785%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "created_at": "2026-04-14 23:25:22",
+      "date": "2026-04-14",
+      "crawled_at": "2026-04-17T09:50:01.894",
+      "source": "network",
+      "local_images": [
+        "web_viewer/images/5807b00a08eaf932fe2fffb2e784d39e.jpg"
+      ],
+      "time_text": "2일",
+      "profile_slogan": "AX마케팅&비즈니스 디렉터 | 셀피쉬클럽(SELFISH CLUB) 마스터 | UX 프로모션 방법론 개발 | AI뤼튼(wrtn) 공인 컨설턴트 | | AI마케팅 워크샵 및 강연 | Free Agent & Community Owner | User Journey Specialist",
+      "user_link": "https://www.linkedin.com/in/ACoAADheaU8BMhGPt149UknhFx-LRQzlwdPdVIA",
+      "content_type": "video",
+      "platform_sequence_id": 366
+    },
+    {
+      "sequence_id": 1045,
+      "platform_id": "7445702164146110464",
+      "sns_platform": "linkedin",
+      "username": "ACoAADoFXQ8BnuLrfcxsjZsa_ZhDAHu1dFGMGUU",
+      "display_name": "Kyeongmin Kim",
+      "full_text": "깃허브 스타 60개짜리 프로젝트가 다른회사CI에 들어갈뻔 썰 풉니다.\n오늘 오픈소스 프로젝트에 PR이 하나 들어왔습니다.\n\"스킬 파일 5개를 개선했습니다.\"\n스크린샷까지 첨부하고, before/after 점수표도 깔끔하게 정리해왔어요.\n27% → 100%. 수치만 보면 감동적이었습니다.\n근데 diff를 열어보니까 GitHub Action이 하나 끼어있었어요.\n본인 회사 제품이었습니다.\n점수를 매긴 도구도 본인 회사 거였고요.\n자기 기준으로 점수를 매기고,\n자기 기준으로 점수를 올리고,\n자기 도구를 CI에 설치하는 PR이었습니다.\n솔직히 스킬 문서 개선 자체는 괜찮았어요.\n본인이 회사직원이라고 밝힌 것도 정직했고요.\n하지만 서드파티 Action을 @main에 핀하고\npull-requests: write 권한까지 요구하는 건\n제 레포에 넣을 이유가 없었습니다.\n짧게 감사 인사를 남기고 PR을 닫았습니다.\n오픈소스를 하다 보면 기여와 마케팅의 경계에 있는 PR을 만나게 돼요.\n둘 다 나쁜 의도는 아닐 수 있습니다.\n중요한 건 메인테이너가 그 경계를 판단할 수 있어야 한다는 거예요.\ndiff는 거짓말을 안 합니다. 항상 열어보세요.",
+      "media": [
+        "https://media.licdn.com/dms/image/v2/D4D22AQG-15pxZ0hm9w/feedshare-shrink_1280/B4DZ1RyqcGH4AM-/0/1775193729274?e=1778112000&v=beta&t=1ZnTQWEcCbLaHhIdwkvPn1aWCKyNNH5od1r5IKvS554"
+      ],
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:7445702164146110464?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7445702164146110464%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "created_at": "2026-04-03 14:22:10",
+      "date": "2026-04-03",
+      "crawled_at": "2026-04-17T09:50:01.894",
+      "source": "network",
+      "local_images": [
+        "web_viewer/images/caf3b84c9457d83617eae6dfa3627a40.jpg"
+      ],
+      "time_text": "1주",
+      "profile_slogan": "Data engineer",
+      "user_link": "https://www.linkedin.com/in/ACoAADoFXQ8BnuLrfcxsjZsa_ZhDAHu1dFGMGUU",
+      "content_type": "image",
+      "platform_sequence_id": 367
+    },
+    {
+      "sequence_id": 1046,
+      "platform_id": "7447916258668253186",
+      "sns_platform": "linkedin",
+      "username": "ACoAAChsCqABHbZtEaJtYtkT7lT7f1V9dwBlyIE",
+      "display_name": "Seungpil Lee",
+      "full_text": "저는 매일 터미널 12개를 동시에 돌리고 있습니다. Claude Code 멀티 에이전트로요. 저는 그저 AI를 feeding해주는 인간인 것 같습니다.\n한쪽은 리서치, 한쪽은 코드 생성, 한쪽은 문서 작성.\n사람이 아닙니다. 전부 AI입니다.\n이걸 매일 반복하다 보니 한 가지 생각이 들었습니다.\n→ 5년 뒤, 진정한 나도 필요없는 AI-Native 팀을 만들 수 있겠다.\n그러면 사람인 나는 뭘 해야 할까요.\n영업을 뜁니다.\n고객을 만납니다.\n사람 대 사람으로 신뢰를 만듭니다.\nAI가 분석해준 전략을 들고 회의실에 들어갑니다.\n결국 남는 건 피플스킬 같습니다.\n그런데 역설이 있습니다.\nAI-Native 팀을 설계하려면\nAI의 한계를 몸으로 알아야 합니다.\n어디까지 맡기고 어디서 사람이 들어가야 하는지 압니다.\n지금 AI를 극한으로 써보는 경험이\n5년 뒤 자기 역할의 프로토타입이 됩니다.\nAI 시대에 가장 중요한 스킬은\nAI를 잘 쓰는 것이 아니라\nAI가 못하는 것을 아는 것 같습니다.",
+      "media": [],
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:7447916258668253186?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7447916258668253186%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "created_at": "2026-04-09 17:00:11",
+      "date": "2026-04-09",
+      "crawled_at": "2026-04-17T09:50:01.894",
+      "source": "network",
+      "local_images": [],
+      "time_text": "1주",
+      "profile_slogan": "Founder at 사용성연구소",
+      "user_link": "https://www.linkedin.com/in/ACoAAChsCqABHbZtEaJtYtkT7lT7f1V9dwBlyIE",
+      "content_type": "text",
+      "platform_sequence_id": 368
+    },
+    {
+      "sequence_id": 1047,
+      "platform_id": "7448220116607184896",
+      "sns_platform": "linkedin",
+      "username": "ACoAADheaU8BMhGPt149UknhFx-LRQzlwdPdVIA",
+      "display_name": "ZEMMA Juhye Shin",
+      "full_text": "셀피쉬크루 문주희가 구축중인 셀피쉬클럽 CRM구조를 공개합니다.\n셀피쉬클럽 CRM은 진짜 말그대로 전환 될때까지 다양한 채널을 통해 진행이 되는데요\n스타트업이나 프리랜서분들 참고하시기 좋을듯 합니다.",
+      "media": [
+        "https://media.licdn.com/dms/image/v2/D5622AQGWkhOCNdAHeQ/feedshare-shrink_2048_1536/B56Z11SSjVGsAg-/0/1775789222476?e=1778112000&v=beta&t=nKq2-XiTuR1wBcnv4r_3G5AxYqCb5r5p1Y_1YEhQSJQ"
+      ],
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:7448220116607184896?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7448220116607184896%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "created_at": "2026-04-10 13:07:37",
+      "date": "2026-04-10",
+      "crawled_at": "2026-04-17T09:50:01.894",
+      "source": "network",
+      "local_images": [
+        "web_viewer/images/be3777b265588b3271a1f6f3eaea258c.jpg"
+      ],
+      "time_text": "문주희님의 글을 퍼감6일",
+      "profile_slogan": "AX마케팅&비즈니스 디렉터 | 셀피쉬클럽(SELFISH CLUB) 마스터 | UX 프로모션 방법론 개발 | AI뤼튼(wrtn) 공인 컨설턴트 | | AI마케팅 워크샵 및 강연 | Free Agent & Community Owner | User Journey Specialist",
+      "user_link": "https://www.linkedin.com/in/ACoAADheaU8BMhGPt149UknhFx-LRQzlwdPdVIA",
+      "content_type": "image",
+      "platform_sequence_id": 369
+    },
+    {
+      "sequence_id": 1048,
+      "platform_id": "7449957004166750209",
+      "sns_platform": "linkedin",
+      "username": "ACoAACkadIABsYoadkJXuZXMASkhnSFeoK_nVw8",
+      "display_name": "Jeongmin Lee",
+      "full_text": "🖥️ Claude Code 가 프로그래밍을 넘어 더 많은 것을 향해 갑니다\nClaude Code 데스크톱 앱이 새로이 디자인 되었습니다. 병렬 세션에 사이드바 관리가 붙어 Codex 데스크톱 앱과 유사한 모습을 보여줍니다.\n그런데 HTML 프리뷰 패널이 눈에 걸렸습니다. 코딩 도구에 왜 웹페이지 프리뷰가 필요한 걸까요. 같은 날 The Information 이 보도한 Opus 4.7 디자인 도구 소식을 보고 나서야 퍼즐이 맞춰졌어요.\n1️⃣ HTML 프리뷰 패널. 디자인 도구를 위한 포석이었습니다\nThe Information: https://lnkd.in/gdD75u5R\n이번 주 출시 예정인 Opus 4.7 에는 프롬프트로 웹사이트와 프레젠테이션을 만드는 디자인 도구가 함께 나옵니다. 랜딩 페이지와 슬라이드를 자연어로 생성하는 거예요.\n데스크톱 앱에 HTML 과 PDF 프리뷰 패널을 넣은 이유가 여기서 연결됩니다. 디자인을 만들면서 바로 확인할 수 있는 환경을 먼저 깔아놓은 겁니다. artifact 로 랜딩 페이지를 만들어봤는데 전용 도구가 붙으면 비개발자도 결과물 수준이 완전히 달라질 거예요.\n• 보도 직후 Adobe(ADBE), Figma(FIG) 주가 2~3% 이상 하락\n2️⃣ 패널 조립형 레이아웃. 결국 IDE 가 정답이었습니다\ndocs: https://lnkd.in/gCXSY8Qh\n터미널과 파일 에디터와 diff viewer 와 프리뷰가 각각 독립 패널로 존재합니다. drag-and-drop 으로 원하는 위치에 배치하는 구조예요. VS Code 에서 터미널을 아래에 두고 에디터를 가운데 놓고 사이드바에 파일 트리를 여는 것과 같은 방식입니다.\nAI 코딩 에이전트를 쓸 때 가장 많이 보는 화면은 여전히 터미널이에요. 에이전트가 어떤 명령을 실행하는지 로그를 직접 봐야 신뢰가 생기거든요.\nAnthropic 은 터미널을 없애지 않고 앱 안에 그대로 품었고 기존 CLI 플러그인도 동일하게 작동합니다. 직접 업데이트해보니 hooks 설정이 터미널에서 쓰던 것과 완전히 같았어요.\n• diff viewer 패널에서 라인별 코멘트 후 일괄 제출 가능\n• 파일 에디터 내장. 에이전트 작업 중 수동 수정도 같은 창에서 처리\n3️⃣ 병렬 세션. Codex 가 연 시장에 다른 답을 냈습니다\nCodex 앱: https://lnkd.in/gf42Ka_b\nCodex 가 2월에 데스크톱 앱을 내놓으면서 병렬 에이전트 관리라는 카테고리를 열었습니다. 터미널 하나에 세션 하나로 쓰면서 제일 아쉬웠던 부분이에요. 그래서 cmux 등의 신규 터미널 앱이 많이 등장했습니다.\n이번 리디자인으로 하나의 창에서 여러 세션을 나란히 띄울 수 있고 사이드바에서 전환합니다. Git worktree 자동 격리까지 들어가서 에이전트끼리 코드 충돌이 없어요.\n여기서 중요한 건 병렬로 돌리는 세션이 전부 코딩일 필요가 없다는 점입니다. 한쪽에서는 버그를 고치고 다른 쪽에서는 랜딩 페이지를 만들고 또 다른 쪽에서는 프레젠테이션을 생성하는 워크플로가 가능해져요.\n• Codex 앱은 출시 3개월 만에 주간 활성 사용자 200만 돌파\n• Claude Code 는 worktree 격리로 세션 간 코드 충돌 방지\n• Routines 기능도 같은 날 발표. 반복 작업 스케줄링 지원\n4️⃣ 세 요소가 가리키는 방향\n공통점이 있습니다.\nClaude Code 가 코딩 에이전트에서 작업 에이전트로 확장되고 있다는 겁니다.\nHTML 프리뷰 패널은 디자인 도구의 출력 화면이 되고\nIDE 형 레이아웃은 코딩과 디자인을 같은 공간에서 처리하게 만들고\n병렬 세션은 여러 종류의 작업을 동시에 돌리는 기반이 됩니다\n모델을 더 똑똑하게 만드는 것만으로는 부족합니다. 그 모델이 할 수 있는 일의 범위를 넓히고 그걸 담는 작업 환경까지 먼저 깔아야 해요.\n어젯밤 Adobe 와 Figma 주가가 빠진 건 코딩 도구의 리디자인 때문이 아닙니다. 코딩 도구가 더 이상 코딩만 하지 않겠다는 신호 때문입니다. 사실 이미 많은 사람들이 소프트웨어 개발을 넘어 더 많은 업무를 클로드 코드와 함께 하고 있고, 클로드 코드가 더 무섭게 진화하고 있는 모습입니다.",
+      "media": [
+        "https://media.licdn.com/dms/image/v2/D5605AQEexoVsrRQFjA/videocover-high/B56Z2OQYVLHEBc-/0/1776208153498?e=1776992400&v=beta&t=A05txyGcFQlMf4MXH-0LjgtzXdaI9U-2aru7_7hp7qs"
+      ],
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:7449957004166750209?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7449957004166750209%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "created_at": "2026-04-15 08:09:23",
+      "date": "2026-04-15",
+      "crawled_at": "2026-04-17T09:50:01.894",
+      "source": "network",
+      "local_images": [
+        "web_viewer/images/533cd7cd06db47c5fc0b1eac68cbbb53.jpg"
+      ],
+      "time_text": "2일",
+      "profile_slogan": "Control opinions with AI",
+      "user_link": "https://www.linkedin.com/in/ACoAACkadIABsYoadkJXuZXMASkhnSFeoK_nVw8",
+      "content_type": "video",
+      "platform_sequence_id": 370
+    },
+    {
+      "sequence_id": 1049,
+      "platform_id": "7442348326420754432",
+      "sns_platform": "linkedin",
+      "username": "ACoAAChsCqABHbZtEaJtYtkT7lT7f1V9dwBlyIE",
+      "display_name": "Seungpil Lee",
+      "full_text": "Claude Code 기억력을 10배 올리는 설정이 나왔습니다. Auto-dream. 이 글 저장하고 가서 바로 설정해보세요.\n✅ Claude Code에서 /memory 치면 나옵니다.\n배경부터 설명하겠습니다.\n한달 전, Auto Memory가 추가됐습니다.\nClaude가 작업하면서 알아서 메모를 남기는 기능입니다.\n\"이 프로젝트는 이렇게 빌드해\"\n\"이 에러는 이렇게 고쳤어\"\n이런 것들을 자동으로 적어둡니다.\n🙈 문제는 이 메모가 쌓인다는 겁니다.\n신입사원이 포스트잇에 뭐든 적는다고 생각해보세요.\n한 달 지나면 모니터 주변이 포스트잇 범벅입니다.\n같은 내용이 3장씩 있고\n\"어제 팀장님이 말한 거\"는 언제 적었는지도 모르고\n이미 끝난 프로젝트 메모가 그대로 붙어있습니다.\n메모가 많아질수록 오히려 일을 못 합니다.\nClaude도 똑같은 상황이었습니다.\n✅ Auto Dream은 이걸 해결합니다.\n작업이 끝나면 Claude가 혼자 깨어나서\n쌓인 메모를 자동으로 정리합니다.\n→ 중복 메모 삭제\n→ 서로 모순되는 내용 정리\n→ \"어제\", \"지난주\" → 정확한 날짜로 변환\n→ 쓸모없어진 메모 버림\n→ 주제별로 다시 분류\n왜 이름이 Dream이냐?\n우리도 자면서 기억을 정리합니다.\n낮에 들어온 정보 중 필요한 건 장기 기억으로,\n필요 없는 건 버립니다.\n잠을 못 자면 기억력이 떨어지는 이유가 이겁니다.\nClaude도 마찬가지입니다.\n메모만 하고 정리를 안 하면 점점 멍청해집니다.\nDream을 켜면 \"잠을 자면서\" 기억을 정리합니다.\n설정법:\n1. Claude Code에서 /memory 입력\n2. Auto-dream을 on으로 변경\n3. 바로 정리 실행하려면 /dream 입력\nClaude Code 오래 쓸수록 기억력이 떨어진다고 느끼셨다면 이 설정 하나로 달라집니다.",
+      "media": [
+        "https://media.licdn.com/dms/image/v2/D5622AQFa5fJPieg2RQ/feedshare-shrink_1280/B56Z0iIXNuKMAM-/0/1774394111076?e=1778112000&v=beta&t=Qq4FsLSyutS-T-AoXi1bnWsOYmQxwYkqlHOSp5qiK_k"
+      ],
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:7442348326420754432?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7442348326420754432%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "created_at": "2026-03-25 08:15:13",
+      "date": "2026-03-25",
+      "crawled_at": "2026-04-17T09:50:01.894",
+      "source": "network",
+      "local_images": [
+        "web_viewer/images/2b35c94ee4345ad747d4072563b34ed1.jpg"
+      ],
+      "time_text": "3주",
+      "profile_slogan": "Founder at 사용성연구소",
+      "user_link": "https://www.linkedin.com/in/ACoAAChsCqABHbZtEaJtYtkT7lT7f1V9dwBlyIE",
+      "content_type": "image",
+      "platform_sequence_id": 371
+    },
+    {
+      "sequence_id": 1050,
+      "platform_id": "7449930426137194497",
+      "sns_platform": "linkedin",
+      "username": "ACoAAARSnHkBv1yIY9I4rX-EaqgfHQm-GX_o89o",
+      "display_name": "Seunghoon Lee",
+      "full_text": "역량 있는 팀장님들의 특징\nBCG 시절 밑에서도 함께 일하고 싶어하고 위에서도 좋아하던 팀장님들의 가뭄에 콩나듯 있었다. Ringle 창업 후에도, '역량 있는 팀장(일도 잘 시키고, 팀 역량.동기부여도 잘 올려주시는)'에 대한 고민은 매일 지속되고 있다.\n지금까지 내가 만났던 '몇 안되는' 역량 있는 팀장님들의 공통점은 아래와 같다.\n1. 무엇보다 Why (일의 context 설명, 왜 이 일을 해야 하는지?)에 대해 전달을 팀에게 잘 해주신다. 팀은 Why 에 대한 공감 또는 나름 비판적 자세를 가지고 일을 할 수 있게 된다.\n2. 언제까지 (Due), 무엇을 (결과물), 어떤 수준으로 (Expectation)를 명확하게 전달한다.\n3. 중간 Check-up 을 잘하신다. 잘한다의 의미는, 팀이 필요한 타이밍에 스스로 알아서 찾아올 수 있게 팀을 트레이닝 시켜주신다. 결과적으로 관리 cost 가 줄어들고, 팀의 자발성이 증가한다.\n4. 리더십과 주기적 소통을 부지런히 하며 alignment 를 놓치지 않는다. 리더십과 정식 미팅을 잡아놓고 소통하는 것을 넘어, 리더십과 함께 있는 기회만 생기면 (예: 함께 짧게 이동하는 시간에, 같이 엘레베이터 탔을 때, 함께 식사/커피 짧게 마시며 등) 그 짭은 틈을 이용하여 alignment 을 맞춰놓는다. '틈 소통'이 의외로 alignment 구축에 매우 효과적/효율적이다.\n5. 팀이 업무에 집중할 수 있는 시간을 제공한다. 즉, 계속 물어보면서 확인하지 않는다. (팀장이 정서불안이거나, 팀장이 안절부절 못할때... 팀원들은 매우 힘들다)\n6. 언제나 1분 컷으로 요점을 이야기 할 수 있는 준비가 되어 있다. 그리고 이를 30분 버전으로도 소화 가능하다. (숏폼도, 롱폼도 언제든 가능하다) --> 일례로... 엘레베이터에서 만난 사장님과 1분 소통 후, 지금 30분 시간되나? 했을 때 바로 가능하다.\n7. 팀의 80점짜리 output 을 짧은 시간 내 95점으로 만들어 낼 수 있는 역량이 있다 (예; 내 1장 서머리가 팀장님 손을 타면 최고의 1장 서머리가 된다). 이 convert 과정을 팀과 함께 하며 (어떻게 바꾸는지 직접 보여주며) 팀이 그렇게 따라하게 만드는 은사가 있다.\n8. 실수를 기가막히게 발견해낸다. 일을 명확히 파악하고 있으면 '튀기는 숫자/정보'가 본능적으로 보이는데, 그 본능이 있다.\n9. 자기관리를 잘한다. 그리고 엄청 바쁜 사람인데, 꽤 많은 것이 잘 정돈되어 있다.\n10. 골프보다 더 좋아하는 취미가 존재하는 분들이 많았다.\n11. 말하기 보다 질문하기를 더 잘하고, 말하기 보다 듣기를 더 잘한다. 회식 시, 회사 이야기는 20% 정도 impact 있게 하고, 나머지 80%는.. 결과적으로 내일을 사는데 도움이 되는 이야기인데 업무 내용은 아닌 이야기들로 가득 채워지는 시간을 잘 만들어 낸다.\n나열해놓고 보니, 위의 내용을 알면서도 나는 그 동안 뭐했나 싶다 -_-;;; 그 만큼 아는 것과 실천하는 것은 매우 다르다...",
+      "media": [],
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:7449930426137194497?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7449930426137194497%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "created_at": "2026-04-15 06:23:46",
+      "date": "2026-04-15",
+      "crawled_at": "2026-04-17T09:50:01.894",
+      "source": "network",
+      "local_images": [],
+      "time_text": "2일",
+      "profile_slogan": "Co Founder at Ringle 1:1 Online English Education Service",
+      "user_link": "https://www.linkedin.com/in/ACoAAARSnHkBv1yIY9I4rX-EaqgfHQm-GX_o89o",
+      "content_type": "text",
+      "platform_sequence_id": 372
+    },
+    {
+      "sequence_id": 1051,
+      "platform_id": "7450489926619668480",
+      "sns_platform": "linkedin",
+      "username": "ACoAACzGiXkBVgwM4TzSL91V6rZqtKHAePj53ok",
+      "display_name": "Dion Nam",
+      "full_text": "Claude Code → Codex 마이그레이션 툴을 만들었습니다.\nClaude code max 3개, 약 100만원을 쓰는 Claude-native이지만,,\nClaude의 불안정성과 높은 토큰 비용 때문에, 일부 워크로드를 Codex로 옮기고 있습니다.\n막상 옮기려니 가장 어려운 건 Claude Code에서 쓰던 플러그인, MCP, 메모리, 하네스 등을 그대로 가져오기 어렵다는 점이었습니다.\n그래서 저희 팀에서 사용중인 migration을 도와주는 툴을 만들어 공개합니다!\ngithub: https://lnkd.in/gmn_zzei\n다음에는 현시점 Claude vs Codex 사용 경험을 포스팅해보겠습니다!\n--\n실무에서 얻은 AX/AI 자동화 인사이트를 꾸준히 공유하고 있습니다.\n편하게 1촌 신청해 주세요. 함께 인사이트 나누며 성장했으면 합니다",
+      "media": [
+        "https://media.licdn.com/dms/image/v2/D5622AQFyhHq8kM1jcg/feedshare-shrink_1280/B56Z2V1G52GsAM-/0/1776335220687?e=1778112000&v=beta&t=WyG0MxHXe0gMq93-ovF9Yx4ilw0sHuTmAojUBr08ul4"
+      ],
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:7450489926619668480?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7450489926619668480%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "created_at": "2026-04-16 19:27:01",
+      "date": "2026-04-16",
+      "crawled_at": "2026-04-17T09:50:01.894",
+      "source": "network",
+      "local_images": [
+        "web_viewer/images/71f0795998277f450d1b9db3c8e9a7fc.jpg"
+      ],
+      "time_text": "14시간",
+      "profile_slogan": "AI Native Engineer | Automation & AI Systems",
+      "user_link": "https://www.linkedin.com/in/ACoAACzGiXkBVgwM4TzSL91V6rZqtKHAePj53ok",
+      "content_type": "image",
+      "platform_sequence_id": 373
+    },
+    {
+      "sequence_id": 1052,
+      "platform_id": "7449890360186654720",
+      "sns_platform": "linkedin",
+      "username": "ACoAAEfge9wBkuSc3dRg1HmOY8tsGkKwmGxrO6I",
+      "display_name": "Donghee Kim",
+      "full_text": "Anthropic 공식 코스 17개를 전부 수료했습니다. (시간이 꽤 걸렸네요...)\n공식 교육 자료답게 퀄리티가 꽤 좋습니다.\n당연히 가장 베스트는 시간을 내서 직접 학습하는 건데, 현업에 있다 보면 코스를 일일이 완주하기엔 시간이 부족하죠.\n그래서 우리 팀 가이드로 쓰려고 새벽에 틈틈이 요약본을 정리하기 시작했는데, 만들다 보니 50페이지가 넘는 꽤 밀도 높은 자료가 됐습니다.\n팀에 가이드 후 폴더에 썩히기엔 아까운 자료라 그냥 공유합니다.\n공식 코스를 정주행할 여유가 없는 분들에겐 괜찮은 이정표가 될 것 같아요.\n#AWS #AWSAllStar #AWSAmbassador #AWSCommunity\n#KSUGAI #awstronaut\n#CloudBroAI #CloudBroAICommunity\n#Anthropic #Claude #ClaudeCode #ClaudeCowork #ClaudeCommunity #ClaudeCommunityAmbassadors #AI #MCP\nETEVERS GROUP ETECH SYSTEM 이테크시스템 클라우드",
+      "media": [
+        "https://media.licdn.com/dms/image/v2/D561FAQEsJaBQClDkog/feedshare-document-cover-images_480/B56Z2NTdj.KwBA-/0/1776192184519?e=1776992400&v=beta&t=IwZPvSOXGQH-ulsDaccYXACzLgGpuye607smKh1ZZbg"
+      ],
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:7449890360186654720?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7449890360186654720%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "created_at": "2026-04-15 03:44:34",
+      "date": "2026-04-15",
+      "crawled_at": "2026-04-17T09:50:01.894",
+      "source": "network",
+      "local_images": [
+        "web_viewer/images/4ea64e368c6a1885b6e0059c30102aed.jpg"
+      ],
+      "time_text": "2일",
+      "profile_slogan": "AWS SA | AI Architect | AWS All-Star (13× AWS Certified) | awstronaut | Experienced in achieving ISMS-P Certification",
+      "user_link": "https://www.linkedin.com/in/ACoAAEfge9wBkuSc3dRg1HmOY8tsGkKwmGxrO6I",
+      "content_type": "document",
+      "platform_sequence_id": 374
+    },
+    {
+      "sequence_id": 1053,
+      "platform_id": "7450133666623799296",
+      "sns_platform": "linkedin",
+      "username": "ACoAACZfqCcB7Tmya601YQuGRqiAzlUKO_u-pro",
+      "display_name": "류장근",
+      "full_text": "구글 Gemma 4 오픈 모델을 누구나 무료로 바로 쓸 수 있게 만들었습니다. 구독료 없이, 데이터 유출 걱정 없이. 최신 고성능 AI를 내 맥에서 직접 소유하세요.\n이번 주, BatiFlow에 온디바이스(On-device) AI 기능을 대폭 강화했습니다. 클라우드에 의존하지 않고 내 컴퓨터의 자원만으로 돌아가는 강력한 '나만의 에이전트' 환경입니다.\n핵심은 \"원클릭 로컬 AI\"입니다. 터미널 명령어 한 줄 몰라도 괜찮습니다. 앱만 설치하면 BatiFlow가 내 맥의 사양을 자동으로 감지해 최적의 모델을 추천하고 즉시 설치합니다.\n왜 지금 Gemma 4인가? 최근 공개된 Gemma 4는 Arena 벤치마크 기준 Claude Sonnet 4.5에 필적하는 성능을 보여주면서도, 누구나 무료로 쓸 수 있는 오픈 라이선스 모델입니다.\n- 바티 자체 최적화 모델: 공식 대비 메모리 4GB 절약\n- 실측 성능: 16GB 맥에서도 경량 모델이 쾌적하게 돌아갑니다.\n- 보안: 데이터가 외부로 나가지 않습니다.\n- 원격 제어: 텔레그램을 연결하면 외부에서도 집 맥에 접속해 \"카톡 보내줘\", \"오늘 일정 요약해줘\" 같은 명령이 가능합니다.\n※ 영상은 맥미니 16GB (89만원)에서 1배속 촬영입니다.\n오픈소스 커뮤니티의 도움으로 정말 좋은 세상에 살고 있다고 느낍니다. 저희 바티팀도 그 혜택을 입은 만큼, 본업인 커머스 자동화 외의 이 프로젝트는 앞으로도 100% 무료로 유지할 계획입니다.\n개발자가 아니어도 괜찮습니다. 클릭 몇 번으로 최신 AI 기술을 내 것으로 만드세요. \"Work Less, More Impact\"\n👇 다운로드 링크와 모델 상세 정보는 첫 번째 댓글에 남겨두었습니다.\n#BatiFlow #Gemma4 #로컬AI",
+      "media": [
+        "https://media.licdn.com/dms/image/v2/D5605AQFuYpsSweXdpA/videocover-high/B56Z2QxCjTKoBY-/0/1776250271031?e=1776992400&v=beta&t=iHjQd1vSch2d37GiO-IPyRBXEmb6p_zUXuQ-OG-oxew"
+      ],
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:7450133666623799296?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7450133666623799296%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "created_at": "2026-04-15 19:51:22",
+      "date": "2026-04-15",
+      "crawled_at": "2026-04-17T09:50:01.894",
+      "source": "network",
+      "local_images": [
+        "web_viewer/images/9ebb6c234e89180db4e49639800302b1.jpg"
+      ],
+      "time_text": "1일",
+      "profile_slogan": "CEO @ BATI.AI | Global Commerce Intelligence for Beauty Brands",
+      "user_link": "https://www.linkedin.com/in/ACoAACZfqCcB7Tmya601YQuGRqiAzlUKO_u-pro",
+      "content_type": "video",
+      "platform_sequence_id": 375
+    },
+    {
+      "sequence_id": 1054,
+      "platform_id": "DXMjhX4khj9",
+      "sns_platform": "threads",
+      "code": "DXMjhX4khj9",
+      "urn": "",
+      "username": "choi_hyug_8110",
+      "display_name": "최병혁",
+      "full_text": "클로드 코드에 notebooklm 해마 장착하기\n\n- 클코가 참 좋은데 검토해야하는 문서 (특히 논문)가 늘어나면 토큰부터 성능까지 활용하기가 난감한 경우가 많습니다. 물론 이런 경우에 hub를 만들어서 데이터를 관리하는 방법도 있지만, 일반인들이 DB 구조를 설계하는 것은 생각보다 어려운 일입니다.\n\n- notebooklm은 비전공자가 사용할 수 있는 최고의 RAG 시스템으로 다수의 파일을 정말 최고의 효율로 정리하고 불러올 수 있습니다. 그래서 클로드로 매번 다수의 파일을 읽는 대신 notebooklm으로 파일을 정리해두고, 클로드가 필요한 정보를 notebooklm과 소통하면서 찾게하면 클로드가 매번 파일들을 뒤진다고 토큰을 소모하지 않으면서 notebooklm의 데이터 서치 능력을 그대로 가지고 올 수 있습니다.\n\n많은 분들이 어떻게 클코에 notebooklm을 붙이는지 문의주셨는데요.\n\n정말 쉽습니다. 주소가 길어서 덧글에 남겨두겠습니다.\n\n---\n\nhttps://github.com/PleasePrompto/notebooklm-mcp\n\n여기 notebooklm MCP 깃허브 주소를 클로드코드에 붙여넣으시고 \"여기 깃허브에 있는 notebooklm skills를 다운받아서 내 notebooklm과 연결해줘\" 라고 하시면 깃허브에 있는 skills를 통해 자동으로 연결할 수 있는 세팅을 클로드가 해줍니다.\n\n사람은 무엇을 해야 가치있는 것인지를 고민하고, 그것을 하는 방법은 에이전트가 찾는 시대가 왔습니다!!",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/670281823_17921918436327226_4124207577654519938_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ig_cache_key=Mzg3NjYyOTYwNDI3NDkzNjA2MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwNzJ4NjAzLnNkci5DMyJ9&_nc_ohc=q4uSpKcDg-AQ7kNvwGDIfN8&_nc_oc=AdrHHzh2uT8oPTN0MDfEPflNw0YdlpjWZlkHI7KomDzEigCurhXcPptFC5OAdDudTHE&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_gid=XGQ1HY2TPCSdo4h3kucy7A&_nc_ss=7a32e&oh=00_Af1cczaM3NgnK8BeD_J6Lt9kWUgq4JjOCRvKXR6MSLqu6Q&oe=69E76538"
+      ],
+      "url": "https://www.threads.com/@choi_hyug_8110/post/DXMjhX4khj9",
+      "created_at": "2026-04-16 23:38:02",
+      "date": "2026-04-16",
+      "crawled_at": "2026-04-17T09:50:19.282",
+      "source": "consumer_detail",
+      "local_images": [
+        "web_viewer/images/e1b3002a381178f80e929d5dd7da2666.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DXMjhX4khj9",
+      "pk": "3876629604274936061",
+      "taken_at": 1776350282,
+      "original_item_count": 2,
+      "platform_sequence_id": 712
+    },
+    {
+      "sequence_id": 1055,
+      "platform_id": "DXLPw-1GsWv",
+      "sns_platform": "threads",
+      "code": "DXLPw-1GsWv",
+      "urn": "",
+      "username": "seungha__n",
+      "display_name": "김승한",
+      "full_text": "[ 엄청난 내공의 실력자 발견!! ]\nrhwp는 브라우저에서 HWP/HWPX 문서를 바로 열고, \n편집하고, 인쇄할 수 있는 무료 오픈소스 확장 프로그램입니다. \n별도 프로그램 설치가 필요 없습니다. \n대부분의 아래한글 편집 기능이 동작합니다. \n설치도 필요없고 그냥 웹브라우저에서 동작\nedwardkim.github.io/rhwp 즉시 사용가능\n\n---\n\nhttps://www.facebook.com/gesar69 님 이십니다.",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/670282909_17959055580105969_742464841737988435_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ig_cache_key=Mzg3NjI2MTI0MDk3NzkzMzc0Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwMzF4NzMzLnNkci5DMyJ9&_nc_ohc=udGtzobGswwQ7kNvwEcYFHe&_nc_oc=AdpPhAS-79EHASUpe1yRgPXmjwfbcwzTHpVWNX2uJy7_1gybjWaOp5AdQeCmzdMBfzk&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_gid=yxbZj1xs9Xa6lW-Bp4k3aQ&_nc_ss=7a32e&oh=00_Af2ykLLmSGVvTk_62JmjSpNwnWwYl9OBZ0j5XsF4-x_WDw&oe=69E7503C"
+      ],
+      "url": "https://www.threads.com/@seungha__n/post/DXLPw-1GsWv",
+      "created_at": "2026-04-16 11:26:10",
+      "date": "2026-04-16",
+      "crawled_at": "2026-04-17T09:50:19.309",
+      "source": "consumer_detail",
+      "local_images": [
+        "web_viewer/images/be1bc31f78d958c91f9f02b1e0378916.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DXLPw-1GsWv",
+      "pk": "3876261240977933743",
+      "taken_at": 1776306370,
+      "original_item_count": 2,
+      "platform_sequence_id": 711
+    },
+    {
+      "sequence_id": 1056,
+      "platform_id": "DXMU-XZj6tW",
+      "sns_platform": "threads",
+      "code": "DXMU-XZj6tW",
+      "urn": "",
+      "username": "marketer.ai.seulki",
+      "display_name": "Seulki Kang",
+      "full_text": "자동화 wow 효과는 딱 하루\n다음날부터 \n\"이 숫자 어떻게 나온 거예요?\" 반복\n설명해도 안 믿음. \n그냥 엑셀로 돌아감\n\n뷰가 하나인데 원하는 건 다 다름\n수정 요청 쌓이고\n나는 어느새 요청처리 담당자\n기존 숫자가 더 정답처럼 느껴지고\n새 숫자 나오면 대시보드를 의심하기\n\n---\n\n그래서 대시보드는 어떻게 살렸냐\n별거 없었어\n회의 때 내가 직접 열었지\n\"보세요\"가 아니라 같이 봄\n숫자 이상하면 그 자리에서 같이 고침\n\n---\n\nKPI 합의도 AI 도입보다 먼저 해야 해.\n시멘트 없이 건물 쌓는 거랑 같음\n합의 없으면 자동화해봤자 아무도 안 믿음\n\n---\n\nAX가 기업에 정착 못하는 이유,\n공들여 만든 대시보드가 \n방치되는 이유랑 똑같더라\n\n---\n\n데이터팀장 시절 확신했음\n\"대시보드만 만들면 다 해결됨\"\n흩어진 데이터 한 땀 한 땀 모으고\n1시간짜리 수동 집계 자동화하고\n전사 교육에 매뉴얼까지 배포함\n결과?\n\n대시보드 조회수 처참 🥲\n\n---\n\nAI 자동화도 똑같음\n\n오픈클로에\n유튜브 채널 맡기면\n10만 조회수 달성할 때까지\n영상 올리고, hook 바꾸고, 썸네일 수정하고\nAI가 혼자 끝없이 재시도하지\n들으면 솔깃해.\n\n근데 일반 마케팅 팀에 이걸 들이면?\n팀장: 브랜드 톤 망가지는 거 아님?\n콘텐츠 담당: 저장률이 더 중요한데요\n경영진: 매출 전환은요?\nKPI 하나에 아무도 동의 안 함\n시작조차 못 함\n\n---\n\n완전 자동화는\nKPI가 하나로 수렴된 조직에서만 작동함\n대부분의 조직은 그렇지 않음\n합의 없이 자동화 들이면\n아무도 결과를 안 믿음\n대시보드 때랑 구조가 완전히 같음\n\n---\n\nAX 방법도 같아\n\"AI 활용도 제고\" 캠페인 말고\n회의에서부터 함께 경험해야해.\n\n\"AI한테 초안 맡겼는데 같이 다듬어봅시다\"\n이 한마디가 AI를 팀의 초안 담당자로 만듦\n\nAI가 이상한 카피 뽑아오면\n혼자 조용히 고치는기 아니라\n\"이거 좀 이상하죠? 프롬프트 어떻게 바꿔볼까요?\"\n팀 앞에서 같이 고칠 것\n\n완벽해 보이는 블랙박스가 가장 불신을 키움\n실패를 같이 목격한 팀이 오히려 더 씀",
+      "media": [],
+      "url": "https://www.threads.com/@marketer.ai.seulki/post/DXMU-XZj6tW",
+      "created_at": "2026-04-16 21:30:55",
+      "date": "2026-04-16",
+      "crawled_at": "2026-04-17T09:50:19.328",
+      "source": "consumer_detail",
+      "local_images": [],
+      "is_detail_collected": false,
+      "is_merged_thread": true,
+      "root_code": "DXMU-ajjyUc",
+      "pk": "3876565625921842006",
+      "taken_at": 1776342655,
+      "original_item_count": 8,
+      "platform_sequence_id": 710
+    },
+    {
+      "sequence_id": 1057,
+      "platform_id": "DXGEZ02k9lA",
+      "sns_platform": "threads",
+      "code": "DXGEZ02k9lA",
+      "urn": "",
+      "username": "ai_younggle_man",
+      "display_name": "AI영끌맨",
+      "full_text": "[AI영끌맨 hermes agent 주요 명령어]\n\n복붙해서 메모장에 키핑해두세영 \n\n--저도 외워야함--\n\n---\n\n지금보니 가독성 영 안좋쿤연ㅇㅅㅇ\n정돈버전",
+      "media": [],
+      "url": "https://www.threads.com/@ai_younggle_man/post/DXGEZ02k9lA",
+      "created_at": "2026-04-14 11:10:41",
+      "date": "2026-04-14",
+      "crawled_at": "2026-04-17T09:50:25.474",
+      "source": "consumer_detail",
+      "local_images": [],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DXGEZ02k9lA",
+      "pk": "3874803896322087232",
+      "taken_at": 1776132641,
+      "original_item_count": 2,
+      "platform_sequence_id": 706
+    },
+    {
+      "sequence_id": 1058,
+      "platform_id": "DXHFoKnDyN3",
+      "sns_platform": "threads",
+      "code": "DXHFoKnDyN3",
+      "urn": "",
+      "username": "dev_roach_log",
+      "display_name": "roach",
+      "full_text": "3줄만에 새 에이전트를 만들 수 있어요.\n\nhermes profile create coder\ncoder setup\ncoder chat\n\n이제 coder라는 독립 명령어가 생기는 거예요.\ncoder chat, coder gateway start, coder config set...\n모두 독립적으로 운영돼요.\n\n---\n\n각 프로필은 별도의 게이트웨이 프로세스를 동요해요.\n달라야 하는 부분은 동일한 봇 토큰을 쓰면 안 돼요.\n토큰 잠금(Token Lock)으로 안전하게 막힌다고 해요.\n\n설정을 바탕으로 다른 에이전트에게 복제할 수도 있어요.\n--clone은 config만, --clone-all은 메모리까지 포함해서 복제해요.\n\n---\n\n프로필 관리도 쉽죠.\nlist, show, rename, export, import 모두 지원해요.\nhermes update를 하면 모든 프로필에 번들 스킬이 자동 동기화돼요.\n\nHERMES_HOME 환경변수로 각 프로필의 경로가 자동으로 분리돼요.\n기존 default 프로필과 동일하게 동작하니까 마이그레이션 걱정은 필요 없어요.\n\n---\n\nTelegram 이나 Discord 에 연동하고 설정하려면 좀 길어지더라고요.\n\n혹시 유튜브 라이브나 영상올리면 보실분들이 계실까요?\n\n---\n\nHermes에서 멀티 에이전트를 구축하는 방법을 카드뉴스로 정리했어요.\n\n한 대의 머신에서 여러 에이전트를 어떻게 완전히 격리할 수 있을까요?\n\nHermes의 Profile 기능으로 가능해요.\n\nProfile이란 완전히 격리된 Hermes 환경이에요.\n각 프로필은 독립적인 config, 메모리, 세션, 스킬, 게이트웨이를 가져요.",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/672458760_17865783306613459_1047450784423062490_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ig_cache_key=Mzg3NTA5MDc1OTU2OTg2ODQ1NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwODB4MTA4MC5zZHIuQzMifQ%3D%3D&_nc_ohc=LBelB1ci9nUQ7kNvwEhSxch&_nc_oc=Adrn0UsF3NIzcE1oOWGKrsyrY-5m1op08Kc9jc1lqthR_qc_Th6XdxgrnaXyh-7G6_c&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_gid=D8xNkktb7NLnrGZvARTyVA&_nc_ss=7a32e&oh=00_Af0-7xmBL1nGC89H34ZWnr38bvPYtTKo9TWRZLesExaStQ&oe=69E7570F"
+      ],
+      "url": "https://www.threads.com/@dev_roach_log/post/DXHFoKnDyN3",
+      "created_at": "2026-04-14 20:40:37",
+      "date": "2026-04-14",
+      "crawled_at": "2026-04-17T09:50:25.474",
+      "source": "consumer_detail",
+      "local_images": [
+        "web_viewer/images/8d2f3f2d83267a4848f360aef3aa8d8f.jpg"
+      ],
+      "is_detail_collected": false,
+      "is_merged_thread": true,
+      "root_code": "DXHFoWqj_mI",
+      "pk": "3875090754779947895",
+      "taken_at": 1776166837,
+      "original_item_count": 5,
+      "platform_sequence_id": 707
+    },
+    {
+      "sequence_id": 1059,
+      "platform_id": "DXGHS83GFNW",
+      "sns_platform": "threads",
+      "code": "DXGHS83GFNW",
+      "urn": "",
+      "username": "1.ta.ai",
+      "display_name": "1.ta.ai",
+      "full_text": "AI한테 디자인 시켰는데\n왜 이렇게 구리지? 2편.\n\n반응 좋아서 씀!\n\n라이브러리 안 써서 그래.\n라이브러리 하나만 지정해도\n거의 준수하게 나오거든.\n\n내가 쓰는 라이브러리 3개 알려줄게!\n\n---\n\n1/ shadcn\nhttps://ui.shadcn.com\n\n어드민이나 대시보드 만들 때\n가장 먼저 찾는 라이브러리야.\n\n버튼, 테이블, 폼, 모달 같은 거\n기본 디자인이 이미 깔끔하게 잡혀있어서\nAI가 조합만 해줘도 준수하게 나와.\n\n\"shadcn으로 어드민 만들어줘\"\n이 한 줄이면 돼.\n\n---\n\n2/ Aceternity UI\nhttps://ui.aceternity.com\n\n애플 사이트 같은 느낌 내고싶을 때.\n스크롤하면 부드럽게 움직이고\n배경이 살짝 반짝이는 그런 거 있잖아.\n\n랜딩페이지 히어로 섹션이나\n제품 소개 페이지 만들 때 좋아.\n\n\"Aceternity UI 써서 랜딩페이지 만들어줘\"\n이러고 쓸 컴포넌트 찝어주면 돼.\n\n---\n\n3/ React Bits\nhttps://www.reactbits.dev\n\n애니메이션 넣고싶은데\n뭐부터 해야할지 모를 때 여기 둘러봐.\n\n텍스트 흘러가는 효과, 버튼 호버,\n스크롤 트리거 애니메이션까지\n그냥 가져다 쓰면 되는 형태야.\n\n\"React Bits의 [컴포넌트 이름]으로 만들어줘\"\n이렇게 이름까지 찝어주면 정확해.\n\n---\n\n도움되엇으면 팔로우~ 해줘",
+      "media": [],
+      "url": "https://www.threads.com/@1.ta.ai/post/DXGHS83GFNW",
+      "created_at": "2026-04-14 11:36:02",
+      "date": "2026-04-14",
+      "crawled_at": "2026-04-17T09:50:25.474",
+      "source": "consumer_detail",
+      "local_images": [],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DXGHS83GFNW",
+      "pk": "3874816618023899990",
+      "taken_at": 1776134162,
+      "original_item_count": 5,
+      "platform_sequence_id": 708
+    },
+    {
+      "sequence_id": 1060,
+      "platform_id": "DXGDTJrj3_m",
+      "sns_platform": "threads",
+      "code": "DXGDTJrj3_m",
+      "urn": "",
+      "username": "masterkeyai",
+      "display_name": "masterkey",
+      "full_text": "제품의 구성도를 기술적인 정보를 포함한 3D투시도로 제작해주는 나노바나나 이미지 프롬프트 공유합니다.\n\n한글과 영문 프롬프트 앞에 만들고 싶은 제품이나 종류를 적어주시면 됩니다.\n투시도를 영문으로 하고 싶으시면 가능한 영어 프롬프트를 사용하시기 바랍니다.\n\n---\n\n3D 투시도 한글 프롬프트\n\n---\n\n3D 투시도 영어 프롬프트",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/671203110_17904833019404808_6232892996681263814_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=Mzg3NDc5Nzc2NzM4NjUyMTI5MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE0NDB4MTQ0MC5zZHIuQzMifQ%3D%3D&_nc_ohc=xKAAR0nlROUQ7kNvwHFUdSh&_nc_oc=AdoR72zZILV1suH7f-fPLI-hsxktvPyEa1MUErV7SVzsC1dWd6b5Ybd6MiR4x3V1ww0&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_gid=uHc9nCYIbUeHJDM77rsRag&_nc_ss=7a32e&oh=00_Af2WiKFRsFXcpo8gsvTZedMSPlvESCxvZtw0pHzegvJ2aw&oe=69E74532"
+      ],
+      "url": "https://www.threads.com/@masterkeyai/post/DXGDTJrj3_m",
+      "created_at": "2026-04-14 11:01:02",
+      "date": "2026-04-14",
+      "crawled_at": "2026-04-17T09:50:25.474",
+      "source": "consumer_detail",
+      "local_images": [
+        "web_viewer/images/07d7dae5e9d5f29d11cec5bd58038b0c.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DXGDTJrj3_m",
+      "pk": "3874799039602982886",
+      "taken_at": 1776132062,
+      "original_item_count": 3,
+      "platform_sequence_id": 709
+    },
+    {
+      "sequence_id": 1061,
+      "platform_id": "DXIdyJEnyL0",
+      "sns_platform": "threads",
+      "code": "DXIdyJEnyL0",
+      "urn": "",
+      "username": "wannaquitprogramming",
+      "display_name": "Eunkwang Shin",
+      "full_text": "oma-pdf 란 스킬로 만들어뒀으니 비교해보세요 https://github.com/first-fluke/oh-my-agent",
+      "media": [],
+      "url": "https://www.threads.com/@wannaquitprogramming/post/DXIdyJEnyL0",
+      "created_at": "2026-04-15 09:30:56",
+      "date": "2026-04-15",
+      "crawled_at": "2026-04-17T09:50:25.477",
+      "source": "consumer_detail",
+      "local_images": [],
+      "is_detail_collected": false,
+      "is_merged_thread": true,
+      "root_code": "DXHKmqRlAuI",
+      "pk": "3875478468416185076",
+      "taken_at": 1776213056,
+      "original_item_count": 1,
+      "platform_sequence_id": 705
+    },
+    {
+      "sequence_id": 1062,
+      "platform_id": "DXDcGDykXYz",
+      "sns_platform": "threads",
+      "code": "DXDcGDykXYz",
+      "urn": "",
+      "username": "specal1849",
+      "display_name": "공냥이",
+      "full_text": "AX AI 실무자들을 위한 PDF 공유[총 30권정도 됩니다]\n\n요즘 AI공부하는데 비싸다는 말이 많습니다.\n\n무료니까 걍 이거보세요 각장별로 정리된자료\n이미지 영상 활용 기초이론 다모아뒀습니다.\n\n강의팔이가 제대로 수업에 사용하려고 만든 PDF 입니다\n\n오늘기준 최신논문 단어까지 다반영했고 프롬프트 모음집 \n\n하네스 스킬스 최신이론 다 반영되었으며\n클로드코드 GPT 제미나이를 사용하기위한 기초이론\n\n에이전트 심화내용까지 모두다루고있습니다.\n[DM 필요 X 그냥 마지막에 구글드라이브에 넣어둠]\n\n---\n\n이용법 아래 스킬로 찍어낸겁니다.\n\n사용이미지에는 도표와 노트북 LM PPT\nMD파일은 클로드코드나 GPT 제미나이 가이드학습에 던지시면 됩니다.\n\n현대 AI개론은 이론중심의 약간의 고루한스타일\n수업용은 llm수업문서 (codex+claude+gemini) 를 보시면되며\n안에 모든자료가 다들어가 있습니다.\n\n---\n\n걍 다넣어뒀어요 사용을위한 활용을위한 모든이론 다있다 보면됩니다.\n\n그런데 유튜브나 영상으로 보고싶어요\n이러시면 아래 추천영상 다넣어뒀습니다.\n\n---\n\n이미지 영상관련 기법이 필요하시다면\n\n현업에서 쓸법한거 다만들어서 레퍼까지 다쟁여 뒀습니다.\n\n---\n\n이거보고 도움받았다면 나중에 \n책나오면 책이나 한권사주세요\n이게 2만원의 가치는 있다고봐...",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/670128474_3307190366129062_1406613421710916496_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=106&ig_cache_key=Mzg3NDA2MzY2NjE1NzU0OTEwNw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY0MHgzNDYuc2RyLkMzIn0%3D&_nc_ohc=M2Sao8EU0j4Q7kNvwFcSR0y&_nc_oc=Adr3hKB9vuWzOFwgb53DDjmeJf4JNaNZ5BzS-Y05qpUF6OcswWlvWpMOsOUssKDdmdc&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_gid=I38dxizbdxCR8nSddLgtvA&_nc_ss=7a32e&oh=00_Af3Fxg8wCahmxpvl42I3pSPDdvh-y1sRYqmnlA4kC-kz0A&oe=69E76E03",
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/669717716_17903505771406917_7611711808102938445_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=Mzg3NDA3MDIzNzM0MDE0NzAzNw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjc3MHgzNDYuc2RyLkMzIn0%3D&_nc_ohc=MozWuZ2auN0Q7kNvwGAt0Wf&_nc_oc=AdpMa8pBnAgH3qcBDRvMYiocV-VNkhjHB5iNqLh1O9EbIs36Uc0nl8TGLoDqR-8l49o&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_gid=I38dxizbdxCR8nSddLgtvA&_nc_ss=7a32e&oh=00_Af3XzbhBU_apF_uyByACAkpvmlwzaEI0us_X3xikjJEOfA&oe=69E76B89",
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/669842460_17903506035406917_2315140597870797821_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ig_cache_key=Mzg3NDA3MDMxODI2NTAyMDQ2Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjgxNXgxMDY5LnNkci5DMyJ9&_nc_ohc=XPcnQzuwQSIQ7kNvwH5CCA5&_nc_oc=AdqIPNw3c80xblOQWVH9YquFo1_bzj3sHzESHAzdCQGOnqRAvEy9WWaXDeYjECNxmn0&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_gid=I38dxizbdxCR8nSddLgtvA&_nc_ss=7a32e&oh=00_Af1XTUzNAczohhxjchgKJXawC6eqoUzTfKgOxF9FDjRvwA&oe=69E7483D"
+      ],
+      "url": "https://www.threads.com/@specal1849/post/DXDcGDykXYz",
+      "created_at": "2026-04-13 10:52:58",
+      "date": "2026-04-13",
+      "crawled_at": "2026-04-17T09:50:28.537",
+      "source": "consumer_detail",
+      "local_images": [
+        "web_viewer/images/2a8df3696897993a6e58424b0278ec99.jpg",
+        "web_viewer/images/04387300f378ace8774fbb8f1ff6732c.jpg",
+        "web_viewer/images/f61f850f2ff5c55c3476e0d8a77c0352.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DXDcGDykXYz",
+      "pk": "3874063666157549107",
+      "taken_at": 1776045178,
+      "original_item_count": 5,
+      "platform_sequence_id": 701
+    },
+    {
+      "sequence_id": 1063,
+      "platform_id": "DXEXl5IGt-_",
+      "sns_platform": "threads",
+      "code": "DXEXl5IGt-_",
+      "urn": "",
+      "username": "seungha__n",
+      "display_name": "김승한",
+      "full_text": "회사 사내 프로젝트를 공개합니다.\n프로그램 무료 프리웨어로 배포중!\n\nHWP를 AI가 읽을 수 있게 바꾸는 게 \n생각보다 지옥이라 직접 만들었습니다.\n(공공기관 시절 만들어진 문서들, 현재는 공공기관X)\n\n한컴 파서 + 온갖 오픈소스 파서를 조합하고, \n부족한 부분은 Rust로 직접 작성.\n\nHWP/PDF/DOCX 등 9개 포맷 \n→ 깨끗한 Markdown 변환 엔진입니다.\n\n- 기존 오픈소스 Pandoc보다 23%p 높은 변환 품질\n- 383페이지 PDF → 5.6초\n- Markdown = JSON 대비 34~38% 적은 토큰 → AI 파이프라인 최적 포맷\n\n---\n\n오늘 데스크톱 앱(Mac app) 프리뷰를 공개합니다.\n[윈도우는 오늘 저녁에 작업 진행해보겠습니다.]\n\n파일 드래그 → 즉시 변환 → 뷰어에서 확인. 배치 변환도 됩니다.\nTauri 2.0 기반, 앱 크기 9.4MB.\n\nRAG 전처리, 사내 문서 AI 검색, 공공데이터 분석, \nLLM 학습 데이터 정제 등에 바로 쓸 수 있습니다.\n\n---\n\n다운로드 (macOS, Windows 준비중):\nhttps://github.com/seunghan91/mdm-desktop/releases/tag/v0.1.0\n\nPython: pip install mdm-core\n\n피드백 환영합니다.\n\n---\n\n데모 gif",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/669765258_1633259361052480_3310016225602553909_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=111&ig_cache_key=Mzg3NDMyNjE5MjI2NjA2NDk5NQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY0MHgzNjAuc2RyLkMzIn0%3D&_nc_ohc=Zt77LkEJcFsQ7kNvwHcfVds&_nc_oc=AdrvxAF8Ian9xoh2LLvuYhrLfinxzwY4Wij-zhCOdF4Kblgcnux6nmAmlUoJPY9jIaU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_gid=5xkyn0DzBK-oM6WBkmf3BA&_nc_ss=7a32e&oh=00_Af069QpcjCGXHevqJD_ohAXvIdmZkw4kQtx_vLjfVkUOOw&oe=69E73D63"
+      ],
+      "url": "https://www.threads.com/@seungha__n/post/DXEXl5IGt-_",
+      "created_at": "2026-04-13 19:19:52",
+      "date": "2026-04-13",
+      "crawled_at": "2026-04-17T09:50:28.537",
+      "source": "consumer_detail",
+      "local_images": [
+        "web_viewer/images/1335e5c3d4a078f288aa153fda7ee2d9.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DXEXl5IGt-_",
+      "pk": "3874325338475126719",
+      "taken_at": 1776075592,
+      "original_item_count": 4,
+      "platform_sequence_id": 702
+    },
+    {
+      "sequence_id": 1064,
+      "platform_id": "DXElXu5jywO",
+      "sns_platform": "threads",
+      "code": "DXElXu5jywO",
+      "urn": "",
+      "username": "1.ta.ai",
+      "display_name": "1.ta.ai",
+      "full_text": "AI한테 디자인 시켰는데\n왜 이렇게 구리지?\n\n레퍼런스 없이 시켜서 그래.\n나도 그랬거든 😂\n\n레퍼런스 찾을 때 쓰는 사이트 5개 알려줄게.\n\n---\n\n1/ Component Gallery\nhttps://www.component.gallery\n\n실제 서비스들의 UI 컴포넌트를\n모아놓은 사이트야.\n\n버튼, 카드, 네비게이션 같은 거\n다른 회사들은 어떻게 만들었나\n보고 싶을 때 좋아.\n\n\"navigation 이런 식으로 해줘\"\n이러고 예시 붙여주면 돼.\n\n---\n\n2/ Mobbin\nhttps://www.mobbin.com\n\n모바일 앱 UI 레퍼런스는 여기가 끝판이야.\n\n실제 앱들 스크린샷이\n플로우별로 정리돼 있거든.\n\n로그인, 온보딩, 설정 화면\n\"이 앱의 이 화면처럼 해줘\"\n이러고 붙여주면 결과가 달라져.\n\n---\n\n3/ Dribbble\nhttps://www.dribbble.com\n\n디자이너들이 제일 많이 쓰는 곳.\n\n실제 서비스라기보다는\n디자이너들의 포트폴리오라서\n무드보드나 스타일 참고할 때 좋아.\n\n\"이 분위기로 만들어줘\"\n할 때 가져다 붙이기 좋은 곳.\n\n---\n\n4/ Awwwards\nhttps://www.awwwards.com\n\n웹 디자인 수상작 모아놓은 곳이야.\n\n트렌디하고 퀄리티 높은 웹사이트를\n한눈에 볼 수 있거든.\n\n랜딩페이지나 포트폴리오 사이트\n만들 때 여기서 찾아봐.\n\n---\n\n5/ Godly\nhttps://godly.website\n\n요즘 트렌드 따라가고 싶으면 여기.\n\n최신 웹 디자인만 큐레이션해서\n지금 뭐가 유행인지 바로 보여.\n\n\"요즘 트렌드에 맞게 만들어줘\"\n하고 링크 붙여주면 돼!",
+      "media": [],
+      "url": "https://www.threads.com/@1.ta.ai/post/DXElXu5jywO",
+      "created_at": "2026-04-13 21:20:21",
+      "date": "2026-04-13",
+      "crawled_at": "2026-04-17T09:50:28.537",
+      "source": "consumer_detail",
+      "local_images": [],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DXElXu5jywO",
+      "pk": "3874385938072153102",
+      "taken_at": 1776082821,
+      "original_item_count": 6,
+      "platform_sequence_id": 703
+    },
+    {
+      "sequence_id": 1065,
+      "platform_id": "DXDlSFQmB63",
+      "sns_platform": "threads",
+      "code": "DXDlSFQmB63",
+      "username": "minorabanggu",
+      "display_name": "민방구",
+      "full_text": "⚠️ Google AI Studio로 앱 만들고 Cloud Run 배포하셨나요?\n\n저희 회사에서 3월 31일 단 하루 만에 Gemini API 비용 6,100만 원이 청구됐습니다.\n\nAI Studio 기본 구조의 치명적인 보안 허점 때문입니다.\n같은 피해 없으시길 바라며 공유합니다. 🧵",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/670563695_17898983292424098_8528132183367214881_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ig_cache_key=Mzg3NDEwNDA3NDc4NzM2NDUzNQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE2MjJ4MTA1OS5zZHIuQzMifQ%3D%3D&_nc_ohc=_A3sq2zRy48Q7kNvwFcnXW8&_nc_oc=AdrS3uxG8v_HUl_errqMPTY2MoRmGZfHHtzBG-iRR-Iz6LNDeSAuYSpSbdwe2SG7Ink&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_gid=_KSCqqoA6hIGOGDwXsoJ6A&_nc_ss=7a32e&oh=00_Af0-xlJw5oQroJFoKyrNmcbAQEJJkr4YkKYqjzchepXRXQ&oe=69E74E50"
+      ],
+      "url": "https://www.threads.com/@minorabanggu/post/DXDlSFQmB63",
+      "created_at": "2026-04-13 12:00:16",
+      "date": "2026-04-13",
+      "crawled_at": "2026-04-17T09:50:28.537",
+      "source": "network",
+      "local_images": [
+        "web_viewer/images/46317c04f8d1d3a9faa4abb2d9784443.jpg"
+      ],
+      "is_merged_thread": false,
+      "root_code": "DXDlSFQmB63",
+      "like_count": 204,
+      "reply_count": 57,
+      "repost_count": 60,
+      "quote_count": 4,
+      "pk": "3874104074787364535",
+      "media_type": 1,
+      "content_type": "image",
+      "platform_sequence_id": 704
     }
   ]
 };

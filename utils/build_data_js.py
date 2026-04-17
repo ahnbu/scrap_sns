@@ -2,13 +2,19 @@
 
 import glob
 import json
+import os
+import re
 import sys
 
 from utils.post_schema import validate_post
 
 
 def build() -> None:
-    files = sorted(glob.glob("output_total/total_full_*.json"))
+    files = sorted(
+        path
+        for path in glob.glob("output_total/total_full_*.json")
+        if re.fullmatch(r"total_full_\d{8}\.json", os.path.basename(path))
+    )
     if not files:
         print("[ERROR] no total_full_*.json found", file=sys.stderr)
         raise SystemExit(1)

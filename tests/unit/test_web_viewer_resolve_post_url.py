@@ -62,6 +62,6 @@ def test_resolve_post_url_handles_threads_legacy_and_standard_shapes():
 
     assert completed.returncode == 0, completed.stderr
     payload = json.loads(completed.stdout.strip())
-    assert payload["standard"] == "https://www.threads.net/@testuser/post/ABC123"
-    assert payload["legacyThreads"] == "https://www.threads.net/@testuser/post/ABC123"
+    assert payload["standard"] == "https://www.threads.com/@testuser/post/ABC123"
+    assert payload["legacyThreads"] == "https://www.threads.com/@testuser/post/ABC123"
     assert payload["legacyUrl"] == "https://example.com/legacy"

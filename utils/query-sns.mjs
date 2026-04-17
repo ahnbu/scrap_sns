@@ -149,15 +149,29 @@ function sortByCreatedDesc(posts) {
 }
 
 function resolvePostUrl(post) {
-  if (post.url) return post.url;
+  const normalizeThreadsUrl = (url) => {
+    if (!url || typeof url !== 'string') return '';
+    return url
+      .replace(/^https?:\/\/www\.threads\.net\//, 'https://www.threads.com/')
+      .replace(/^https?:\/\/threads\.net\//, 'https://www.threads.com/')
+      .replace(/^https?:\/\/threads\.com\//, 'https://www.threads.com/');
+  };
+
+  if (post.url) {
+    return normalizeThreadsUrl(post.url) || post.url;
+  }
 
   const platform = normalizePlatformName(post.sns_platform);
   if (platform === 'threads') {
     const user = post.username || post.user;
     const code = post.platform_id || post.code;
     if (user && code) {
-      return `https://www.threads.net/@${user}/post/${code}`;
+      return `https://www.threads.com/@${user}/post/${code}`;
     }
+  }
+
+  if (platform === 'threads') {
+    return normalizeThreadsUrl(post.post_url || post.source_url || '');
   }
 
   return post.post_url || post.source_url || '';

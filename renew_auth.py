@@ -36,7 +36,7 @@ def renew_session(sns_name, url, target_file):
 # 순차적으로 실행 (사용자가 하나씩 처리 가능)
 sessions = [
     ("LinkedIn", "https://www.linkedin.com/login", "auth/auth_linkedin.json"),
-    ("Threads", "https://www.threads.net/login", "auth/auth_threads.json"),
+    ("Threads", "https://www.threads.com/login", "auth/auth_threads.json"),
     ("Twitter(X)", "https://x.com/i/flow/login", "auth/auth_twitter.json")
 ]
 
