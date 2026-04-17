@@ -1,27 +1,81 @@
 # SNS Scrap 프로젝트 운영 규칙 (GEMINI.md)
 
-## 🎯 핵심 원칙
-- **파싱과 제어의 분리**: 브라우저 제어(Playwright)와 데이터 추출(Parser) 로직은 엄격히 분리한다. 모든 추출 로직은 `utils/*_parser.py`에 위치시킨다.
-- **TDD(Test-Driven Development) 필수 적용**: 파싱 로직 수정 시 반드시 `tests/unit/test_*_parser.py`를 먼저 실행하여 검증한다.
-- **데이터 정합성 유지**: 모든 플랫폼 파서는 Web Viewer 호환을 위해 다음 표준 필드를 반드시 포함해야 한다:
-  - `sequence_id`, `platform_id`, `sns_platform`, `username`, `full_text`, `media` (URL 리스트), `url`, `created_at`, `crawled_at`.
+## 핵심 원칙
 
-## 🛠️ 개발 및 운영 워크플로우
-1. **TDD 사이클**: Red(Fixture 준비/실패 확인) → Green(로직 수정/성공 확인) → Refactor(통합).
-2. **스냅샷 디버깅**: 스크랩 실패 시 `tests/fixtures/snapshots/`의 데이터를 Fixture로 활용한다.
-3. **인코딩 안전**: JSON/MD 저장 시 반드시 `utf-8-sig` 인코딩을 사용하고, JSON 저장 시 `ensure_ascii=False`를 설정하여 이모지 및 다국어 유실을 방지한다.
+- 브라우저 제어와 파싱 로직을 분리한다. 추출 로직은 `utils/*_parser.py`에 둔다.
+- 파서나 URL 정규화 로직을 바꿀 때는 관련 unit test를 먼저 확인하고 수정 후 다시 실행한다.
+- 표준 데이터 스키마의 정본은 `utils/post_schema.py`다. 문서나 임의 dict 순서를 기준으로 삼지 않는다.
 
-## 📂 파일 및 경로 규칙
-- **Parser**: `utils/{platform}_parser.py`
-- **Tests**: `tests/unit/test_{platform}_parser.py`
-- **Auth**: `auth/auth_{platform}.json` (세션 정보 포함, 외부에 노출 금지)
-- **Snapshots**: `tests/fixtures/snapshots/{platform}/` (최신 10개 유지)
+## 현재 활성 범위
 
-## 📖 참조 문서 (관련 코드 수정 시 함께 현행화)
-- `docs/development.md` — 플랫폼별 데이터 구조·URL 형식 (Threads canonical: `www.threads.com`)
-- `docs/crawling_logic.md` — 크롤링 필드 정의 및 흐름 상세
+- 플랫폼: Threads, LinkedIn, X(Twitter)
+- 메인 오케스트레이터: `total_scrap.py`
+- 뷰어 진입: `wscript sns_hub.vbs` 또는 `SNS허브_바로가기.lnk`
+- API 서버: `server.py`
 
-## ⚠️ 보안 및 안정성 (Anti-Ban)
-- **계정 보호**: 파싱 로직 수정 시 브라우저를 반복 실행하지 말고 Snapshot 파일을 활용한다.
-- **속도 제한**: 실제 스크랩 시 요청 간 최소 3~5초의 `asyncio.sleep` 또는 `time.sleep`을 부여하여 IP/계정 차단을 예방한다.
-- **인증 갱신**: 세션 만료 시 `renew_auth.py` 등 지정된 스크립트를 통해 인증 정보를 수동 갱신하며, `auth/` 폴더 내 파일을 직접 수정하는 것을 지양한다.
+## 표준 Post 스키마
+
+현재 필드 순서는 아래와 같다.
+
+```python
+[
+    "sequence_id",
+    "platform_id",
+    "sns_platform",
+    "code",
+    "urn",
+    "username",
+    "display_name",
+    "full_text",
+    "media",
+    "url",
+    "created_at",
+    "date",
+    "crawled_at",
+    "source",
+    "local_images",
+    "is_detail_collected",
+    "is_merged_thread",
+]
+```
+
+- 필수 필드: `sns_platform`, `username`, `url`, `created_at`
+- 레거시 필드(`user`, `timestamp`, `post_url`, `source_url`)는 `normalize_post()`가 현재 스키마로 승격한다.
+- Threads canonical URL은 `https://www.threads.com/@{username}/post/{code}`다.
+
+## 개발 및 운영 워크플로우
+
+1. 관련 테스트와 기존 구현을 먼저 확인한다.
+2. 파서 또는 스키마를 수정한다.
+3. 필요하면 `migrate_schema.py`, `migrate_threads_domain.py`로 기존 데이터를 점검한다.
+4. `python -m utils.build_data_js`로 뷰어용 정적 데이터를 재생성한다.
+5. 관련 pytest와 CLI 검증을 다시 실행한다.
+
+## 주요 경로
+
+- Parser: `utils/{platform}_parser.py`
+- Tests: `tests/unit/test_*`, `tests/contract/test_schemas.py`
+- Auth: `auth/auth_threads.json`, `auth/auth_linkedin.json`, `auth/x_user_data/`
+- Viewer state: `web_viewer/data.js`, `web_viewer/sns_tags.json`
+
+## 권장 검증
+
+```powershell
+pytest tests/unit
+pytest tests/contract
+pytest tests/e2e/test_api_security.py
+node utils/query-sns.mjs --help
+python migrate_threads_domain.py --dry-run
+```
+
+## 참조 문서
+
+- `README.md` — 실행 진입점, 태그 저장, 주요 명령
+- `docs/development.md` — 플랫폼별 데이터 구조·URL 형식
+- `docs/crawling_logic.md` — 필드 정의와 전체 흐름
+
+## 주의 사항
+
+- `server.py`는 현재 API 제공이 중심이다. shipped HTML 진입은 레포 루트 `index.html` 기준으로 이해한다.
+- 태그는 `localStorage`와 `web_viewer/sns_tags.json`을 함께 사용한다.
+- X는 리다이렉트와 실제 사용자명 보정 때문에 URL과 본문이 단순 1:1이 아닐 수 있다.
