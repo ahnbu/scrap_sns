@@ -1,65 +1,254 @@
 {
-    "https://www.linkedin.com/feed/update/urn:li:activity:7423840081410678784?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7423840081410678784%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
+    "https://www.linkedin.com/feed/update/urn:li:activity:7278585811854376960?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7278585811854376960%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "기획"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7314662801090781184?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7314662801090781184%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "기획"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7332298575994920960?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7332298575994920960%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "마케팅"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7349611659310624770?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7349611659310624770%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "마케팅"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7364298758177636352?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7364298758177636352%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드",
+        "이미지"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7387653708110737409?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7387653708110737409%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "마케팅"
     ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7424102643498774528?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7424102643498774528%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "콘텐츠자동화",
-        "기획",
+    "https://www.linkedin.com/feed/update/urn:li:activity:7395635427879129088?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7395635427879129088%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "마케팅"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7397324001875980288?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7397324001875980288%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "이미지",
         "gemini"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7397540321351524352?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7397540321351524352%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "기획",
+        "마케팅",
+        "이미지"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7399048817557368832?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7399048817557368832%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "gemini"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7400284864094101504?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7400284864094101504%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "마케팅",
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7400530968190750720?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7400530968190750720%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "gemini"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7401027653564047361?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7401027653564047361%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "마케팅"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7401368244718411776?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7401368244718411776%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "이미지",
+        "gemini",
+        "노트북LM",
+        "ppt"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7401429747706351616?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7401429747706351616%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "기획"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7401569692362203136?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7401569692362203136%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "노트북LM",
+        "나노바나나",
+        "이미지",
+        "gemini"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7401626875682570241?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7401626875682570241%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "나노바나나",
+        "이미지"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7405145895417221120?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7405145895417221120%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "이미지",
+        "gemini"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7405773526021963777?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7405773526021963777%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "기획"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7406137139891134464?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7406137139891134464%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "노트북LM"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7406236411500081152?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7406236411500081152%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "나노바나나"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7406575376073687040?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7406575376073687040%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "gemini"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7406611878879281152?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7406611878879281152%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "노트북LM"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7406689415416356864?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7406689415416356864%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "ppt",
+        "나노바나나",
+        "이미지"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7407327158521647104?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7407327158521647104%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "나노바나나",
+        "이미지"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7407438752777678848?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7407438752777678848%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "노트북LM",
+        "ppt"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7407591782605099009?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7407591782605099009%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "노트북LM",
+        "클로드",
+        "gemini"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7407636477167296512?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7407636477167296512%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "기획"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7407932761396654080?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7407932761396654080%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "기획"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7408959519537426432?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7408959519537426432%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "이미지"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7409057669149396992?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7409057669149396992%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "ppt",
+        "클로드",
+        "gemini"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7410431723471187969?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7410431723471187969%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "gemini"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7410439276661813248?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7410439276661813248%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "ppt",
+        "나노바나나"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7410446819371081728?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7410446819371081728%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7410446824572026880?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7410446824572026880%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7410683563362181120?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7410683563362181120%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "ppt"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7410801664141656065?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7410801664141656065%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드",
+        "gemini"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7410992158503272448?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7410992158503272448%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "노션"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7411152720650227712?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7411152720650227712%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "마케팅",
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7411209406790414336?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7411209406790414336%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7411303033344692224?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7411303033344692224%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "기획"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7411330156092616704?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7411330156092616704%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "ppt",
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7411338754214420480?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7411338754214420480%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7411922908916297728?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7411922908916297728%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "ppt",
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7412526387820978176?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7412526387820978176%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "ppt",
+        "기획",
+        "마케팅"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7413704535048908801?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7413704535048908801%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드",
+        "gemini"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7413907038138904577?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7413907038138904577%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드",
+        "마케팅"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7414070699071442944?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7414070699071442944%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7414175957487562752?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7414175957487562752%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드",
+        "마케팅",
+        "노션"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7414417993180303360?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7414417993180303360%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드",
+        "gemini"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7415022011720318978?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7415022011720318978%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "노트북LM",
+        "이미지"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7415376843815608320?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7415376843815608320%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "기획",
+        "노션"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7415878861919379456?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7415878861919379456%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드"
     ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7424482472438120448?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7424482472438120448%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+    "https://www.linkedin.com/feed/update/urn:li:activity:7415961577650012160?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7415961577650012160%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드"
     ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7424206243277381632?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7424206243277381632%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "기획",
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7424076125506740224?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7424076125506740224%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+    "https://www.linkedin.com/feed/update/urn:li:activity:7416467077739200512?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7416467077739200512%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "gemini"
     ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7422400422361096192?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7422400422361096192%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+    "https://www.linkedin.com/feed/update/urn:li:activity:7416721599988518912?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7416721599988518912%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "기획",
+        "gemini",
+        "ppt"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7416954710819127296?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7416954710819127296%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "이미지",
+        "gemini"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7417148730602201088?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7417148730602201088%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7417486931770499072?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7417486931770499072%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7417508847441022976?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7417508847441022976%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "노트북LM"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7417789055347863552?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7417789055347863552%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "기획",
+        "ppt",
+        "노트북LM"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7417813623470751745?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7417813623470751745%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7417843854562840576?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7417843854562840576%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
+        "gemini"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7418185693136306176?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7418185693136306176%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "기획"
     ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7423134165010763776?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7423134165010763776%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
+    "https://www.linkedin.com/feed/update/urn:li:activity:7418542725496754176?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7418542725496754176%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "기획",
+        "나노바나나",
+        "이미지"
     ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7422409393570344960?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7422409393570344960%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7422209668422324224?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7422209668422324224%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7422035691510984705?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7422035691510984705%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드",
-        "하네스"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7421804762028961792?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7421804762028961792%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+    "https://www.linkedin.com/feed/update/urn:li:activity:7418791458029121536?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7418791458029121536%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "마케팅",
+        "기획"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7419010986470211584?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7419010986470211584%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "노트북LM",
+        "나노바나나",
+        "이미지",
+        "ppt"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7419142685543882752?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7419142685543882752%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7421318465455722496?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7421318465455722496%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "마케팅"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7421022478979948545?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7421022478979948545%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "이미지",
-        "클로드",
-        "gemini"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7420216201961906177?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7420216201961906177%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "마케팅"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7419563139156992000?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7419563139156992000%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "이미지",
-        "클로드",
-        "gemini"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7419514854060797952?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7419514854060797952%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "ppt",
@@ -68,920 +257,107 @@
         "클로드",
         "gemini"
     ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7419010986470211584?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7419010986470211584%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "노트북LM",
-        "나노바나나",
+    "https://www.linkedin.com/feed/update/urn:li:activity:7419563139156992000?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7419563139156992000%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "이미지",
-        "ppt"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7418791458029121536?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7418791458029121536%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "마케팅",
-        "기획"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7418542725496754176?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7418542725496754176%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "기획",
-        "나노바나나",
-        "이미지"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7418185693136306176?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7418185693136306176%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "기획"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7417843854562840576?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7417843854562840576%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
         "gemini"
     ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7417813623470751745?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7417813623470751745%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7417508847441022976?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7417508847441022976%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "노트북LM"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7417148730602201088?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7417148730602201088%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7416954710819127296?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7416954710819127296%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "이미지",
-        "gemini"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7416467077739200512?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7416467077739200512%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "gemini"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7415961577650012160?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7415961577650012160%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7415376843815608320?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7415376843815608320%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "기획",
-        "노션"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7415022011720318978?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7415022011720318978%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "노트북LM",
-        "이미지"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7414417993180303360?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7414417993180303360%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드",
-        "gemini"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7414175957487562752?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7414175957487562752%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드",
-        "마케팅",
-        "노션"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7414070699071442944?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7414070699071442944%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7413907038138904577?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7413907038138904577%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드",
+    "https://www.linkedin.com/feed/update/urn:li:activity:7420216201961906177?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7420216201961906177%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "마케팅"
     ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7412526387820978176?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7412526387820978176%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "ppt",
-        "기획",
+    "https://www.linkedin.com/feed/update/urn:li:activity:7421022478979948545?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7421022478979948545%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "이미지",
+        "클로드",
+        "gemini"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7421318465455722496?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7421318465455722496%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "마케팅"
     ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7411922908916297728?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7411922908916297728%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "ppt",
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7411338754214420480?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7411338754214420480%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7411330156092616704?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7411330156092616704%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "ppt",
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7411303033344692224?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7411303033344692224%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "기획"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7411209406790414336?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7411209406790414336%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7411152720650227712?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7411152720650227712%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+    "https://www.linkedin.com/feed/update/urn:li:activity:7421804762028961792?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7421804762028961792%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "마케팅",
         "클로드"
     ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7410992158503272448?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7410992158503272448%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "노션"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7410801664141656065?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7410801664141656065%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+    "https://www.linkedin.com/feed/update/urn:li:activity:7422035691510984705?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7422035691510984705%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
-        "gemini"
+        "하네스"
     ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7410446824572026880?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7410446824572026880%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+    "https://www.linkedin.com/feed/update/urn:li:activity:7422209668422324224?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7422209668422324224%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드"
     ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7410446819371081728?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7410446819371081728%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7410439276661813248?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7410439276661813248%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "ppt",
-        "나노바나나"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7410431723471187969?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7410431723471187969%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "gemini"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7409057669149396992?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7409057669149396992%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "ppt",
-        "클로드",
-        "gemini"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7408959519537426432?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7408959519537426432%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "이미지"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7407932761396654080?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7407932761396654080%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "기획"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7407636477167296512?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7407636477167296512%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "기획"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7407591782605099009?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7407591782605099009%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "노트북LM",
-        "클로드",
-        "gemini"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7407438752777678848?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7407438752777678848%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "노트북LM",
-        "ppt"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7407327158521647104?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7407327158521647104%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "나노바나나",
-        "이미지"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7406689415416356864?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7406689415416356864%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "ppt",
-        "나노바나나",
-        "이미지"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7406611878879281152?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7406611878879281152%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "노트북LM"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7406575376073687040?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7406575376073687040%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "gemini"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7406236411500081152?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7406236411500081152%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "나노바나나"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7405773526021963777?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7405773526021963777%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "기획"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7405145895417221120?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7405145895417221120%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "이미지",
-        "gemini"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7401626875682570241?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7401626875682570241%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "나노바나나",
-        "이미지"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7401569692362203136?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7401569692362203136%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "노트북LM",
-        "나노바나나",
-        "이미지",
-        "gemini"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7401429747706351616?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7401429747706351616%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "기획"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7401368244718411776?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7401368244718411776%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "이미지",
-        "gemini",
-        "노트북LM",
-        "ppt"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7401027653564047361?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7401027653564047361%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "마케팅"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7400530968190750720?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7400530968190750720%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "gemini"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7400284864094101504?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7400284864094101504%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+    "https://www.linkedin.com/feed/update/urn:li:activity:7422267328026836992?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7422267328026836992%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "마케팅",
         "클로드"
     ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7399048817557368832?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7399048817557368832%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "gemini"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7397540321351524352?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7397540321351524352%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "기획",
-        "마케팅",
-        "이미지"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7397324001875980288?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7397324001875980288%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "이미지",
-        "gemini"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7395635427879129088?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7395635427879129088%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "마케팅"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7364298758177636352?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7364298758177636352%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+    "https://www.linkedin.com/feed/update/urn:li:activity:7422400422361096192?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7422400422361096192%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
-        "이미지"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7349611659310624770?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7349611659310624770%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "마케팅"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7332298575994920960?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7332298575994920960%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "마케팅"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7314662801090781184?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7314662801090781184%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "기획"
     ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7423161860318851072?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7423161860318851072%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "이미지",
-        "ppt"
+    "https://www.linkedin.com/feed/update/urn:li:activity:7422409393570344960?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7422409393570344960%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드"
     ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7423161763308707840?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7423161763308707840%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "기획"
+    "https://www.linkedin.com/feed/update/urn:li:activity:7422438686518272002?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7422438686518272002%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7422780935894544384?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7422780935894544384%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7422971668609966080?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7422971668609966080%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
         "기획",
         "ppt"
     ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7422780935894544384?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7422780935894544384%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+    "https://www.linkedin.com/feed/update/urn:li:activity:7423134165010763776?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7423134165010763776%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드"
     ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7278585811854376960?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7278585811854376960%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+    "https://www.linkedin.com/feed/update/urn:li:activity:7423161763308707840?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7423161763308707840%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "기획"
     ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7417486931770499072?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7417486931770499072%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7413704535048908801?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7413704535048908801%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드",
-        "gemini"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7406137139891134464?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7406137139891134464%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "노트북LM"
-    ],
-    "https://www.threads.com/@choi.openai/post/DT6sAONj9K8": [
-        "클로드"
-    ],
-    "https://www.threads.com/@lazypencil_lab/post/DUAmX2YkSSm": [
-        "ppt",
-        "노트북LM",
-        "gemini",
+    "https://www.linkedin.com/feed/update/urn:li:activity:7423161860318851072?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7423161860318851072%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "이미지",
-        "나노바나나"
-    ],
-    "https://www.threads.com/@hinjiroffffff/post/DUIEGGAAagR": [
-        "gemini"
-    ],
-    "https://www.threads.com/@starcomo/post/DULCfk1EqLV": [
-        "기획"
-    ],
-    "https://www.threads.com/@gogosing__77/post/DTjxDSCkeae": [
-        "gemini",
-        "기획",
-        "마케팅",
-        "노션"
-    ],
-    "https://www.threads.com/@kook0526/post/DUIjrz2DkLv": [
-        "클로드",
-        "기획",
         "ppt"
     ],
-    "https://www.threads.com/@xeona.xyz/post/DUVOj-xAVR3": [
+    "https://www.linkedin.com/feed/update/urn:li:activity:7423840081410678784?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7423840081410678784%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드"
     ],
-    "https://www.threads.com/@geumverse_ai/post/DUUYhntk4Ey": [
-        "마케팅",
+    "https://www.linkedin.com/feed/update/urn:li:activity:7423871060590338048?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7423871060590338048%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드"
     ],
-    "https://www.threads.com/@inner.builder/post/DUUBhjKgeKZ": [
-        "노트북LM",
-        "옵시디언"
-    ],
-    "https://www.threads.com/@keke_appa/post/DUTTMTDEoas": [
-        "클로드"
-    ],
-    "https://www.threads.com/@gaebalsaybal/post/DUWSRnukzT3": [
-        "클로드"
-    ],
-    "https://www.threads.com/@specal1849/post/DUZLMwvkojo": [
-        "클로드"
-    ],
-    "https://www.threads.com/@bellman.pub/post/DUX8tp_EvRN": [
-        "gemini",
-        "클로드"
-    ],
-    "https://www.threads.com/@kkongdon_story/post/DUFb5JKkajY": [
-        "마케팅"
-    ],
-    "https://www.threads.com/@easygpt2526/post/DUUXKhGAG4-": [
-        "ppt",
-        "gemini",
-        "이미지"
-    ],
-    "https://www.threads.com/@kkongdon_story/post/DUS4la6Ebp2": [
-        "기획"
-    ],
-    "https://www.threads.com/@_keunyoung_/post/DUUNQMpE2m3": [
-        "클로드"
-    ],
-    "https://www.threads.com/@ur.future.ai/post/DUU0S9ZkqQr": [
-        "기획"
-    ],
-    "https://www.threads.com/@itszoejeong/post/DURwmBAEh6d": [
-        "안티그래비티",
-        "노트북LM",
-        "옵시디언",
+    "https://www.linkedin.com/feed/update/urn:li:activity:7424076125506740224?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7424076125506740224%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "gemini"
     ],
-    "https://www.threads.com/@_ju_tiger_lee_/post/DUQTYlyElVu": [
-        "클로드"
-    ],
-    "https://www.threads.com/@mega_fluke/post/DUL4ogEko_E": [
-        "gemini",
-        "클로드",
-        "안티그래비티"
-    ],
-    "https://www.threads.com/@lov_entp/post/DUQZfiwDzO2": [
-        "gemini",
-        "클로드",
+    "https://www.linkedin.com/feed/update/urn:li:activity:7424102643498774528?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7424102643498774528%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "콘텐츠자동화",
         "기획",
-        "안티그래비티"
-    ],
-    "https://www.threads.com/@bellman.pub/post/DUKe4kFklIf": [
-        "클로드"
-    ],
-    "https://www.threads.com/@yeoamlog/post/DUQT-dageiP": [
-        "노션",
-        "옵시디언"
-    ],
-    "https://www.threads.com/@stormleehj/post/DUQTVuyD1V9": [
-        "노션",
-        "옵시디언"
-    ],
-    "https://www.threads.com/@proverbsnapshots/post/DUPuqTXk-f3": [
-        "기획",
-        "옵시디언",
-        "안티그래비티"
-    ],
-    "https://www.threads.com/@proverbsnapshots/post/DUQqrL-k6dQ": [
-        "노트북LM",
-        "안티그래비티"
-    ],
-    "https://www.threads.com/@silsangv/post/DUPcmH7EZJc": [
-        "gemini",
-        "클로드",
-        "안티그래비티"
-    ],
-    "https://www.threads.com/@meteorsimulation/post/DUOV38Dktnd": [
-        "클로드",
-        "기획"
-    ],
-    "https://www.threads.com/@starcomo/post/DUK7uIXkklz": [
-        "기획"
-    ],
-    "https://www.threads.com/@qjc.ai/post/DUK7AjFDxeH": [
-        "기획",
-        "마케팅",
-        "클로드"
-    ],
-    "https://www.threads.com/@opal.gongbang/post/DUK66UNE-rX": [
         "이미지",
-        "나노바나나"
-    ],
-    "https://www.threads.com/@build_daemon/post/DUJ1km1kkNt": [
-        "이미지"
-    ],
-    "https://www.threads.com/@hinjiroffffff/post/DUFkzGvAa6T": [
-        "gemini",
-        "기획"
-    ],
-    "https://www.threads.com/@ody_daddy/post/DUHGprsCrmE": [
-        "클로드",
-        "기획",
-        "노트북LM"
-    ],
-    "https://www.threads.com/@info__sum/post/DUHdfmjEizy": [
-        "gemini",
-        "이미지"
-    ],
-    "https://www.threads.com/@hinjiroffffff/post/DUIEKu_gZ64": [
         "gemini"
     ],
-    "https://www.threads.com/@redbearhbj/post/DUHi67GEhVw": [
-        "마케팅",
-        "클로드",
-        "ppt"
-    ],
-    "https://www.threads.com/@c.reator_c/post/DUHJvgwE8QV": [
-        "이미지"
-    ],
-    "https://www.threads.com/@guuu.dev/post/DUIde2xEySD": [
-        "클로드"
-    ],
-    "https://www.threads.com/@planum.one/post/DUGJxoEkbWv": [
-        "클로드"
-    ],
-    "https://www.threads.com/@slowsoyang/post/DUGCUWLCUFc": [
-        "클로드",
-        "안티그래비티",
-        "노션",
-        "옵시디언"
-    ],
-    "https://www.threads.com/@builder.inkeun/post/DUDz4LoDyoB": [
-        "클로드"
-    ],
-    "https://www.threads.com/@gyeol_hh/post/DUDvQcJkoSP": [
-        "클로드",
-        "노션"
-    ],
-    "https://www.threads.com/@jinsimcode/post/DUCrNqMk8vz": [
-        "클로드"
-    ],
-    "https://www.threads.com/@hinjiroffffff/post/DUC8laUCQ5M": [
-        "gemini"
-    ],
-    "https://www.threads.com/@lazypencil_lab/post/DUAmXxokePp": [
-        "ppt",
-        "gemini",
-        "이미지",
-        "노트북LM",
-        "나노바나나"
-    ],
-    "https://www.threads.com/@itszoejeong/post/DUAvS3CkiXu": [
-        "노트북LM",
-        "ppt"
-    ],
-    "https://www.threads.com/@iamdrtk/post/DUBeqaViJkN": [
-        "노션",
-        "옵시디언",
-        "클로드"
-    ],
-    "https://www.threads.com/@ai.winey_ny/post/DT-VHfnEshJ": [
-        "노션"
-    ],
-    "https://www.threads.com/@freainer/post/DUALirekrKe": [
-        "클로드"
-    ],
-    "https://www.threads.com/@ody_daddy/post/DT_mtLmk6ix": [
-        "gemini",
-        "기획"
-    ],
-    "https://www.threads.com/@lumiham0/post/DT-h_5NARCF": [
-        "이미지"
-    ],
-    "https://www.threads.com/@pm_anyway/post/DT99oVWkh8u": [
-        "노트북LM"
-    ],
-    "https://www.threads.com/@ai_sync_club/post/DTW7GQ0iujL": [
-        "ppt",
-        "노트북LM"
-    ],
-    "https://www.threads.com/@seulgi.kaang/post/DT93hEfj7TV": [
-        "클로드",
-        "안티그래비티"
-    ],
-    "https://www.threads.com/@itszoejeong/post/DT-HYr3Eofo": [
-        "gemini",
-        "노션",
-        "ppt"
-    ],
-    "https://www.threads.com/@data_richard/post/DOm2OujEQC1": [
-        "노션"
-    ],
-    "https://www.threads.com/@data_richard/post/DS_7QrXFRRu": [
-        "노션"
-    ],
-    "https://www.threads.com/@data_richard/post/DT9Gyvtj-Rb": [
-        "클로드"
-    ],
-    "https://www.threads.com/@steady__study.dev/post/DT8s5gck3xJ": [
-        "마케팅",
-        "클로드"
-    ],
-    "https://www.threads.com/@builder_10x/post/DT8EUxBic2M": [
-        "gemini",
-        "클로드"
-    ],
-    "https://www.threads.com/@pitchtitan/post/DT93gttj4S1": [
-        "안티그래비티",
-        "gemini"
-    ],
-    "https://www.threads.com/@build_daemon/post/DT863uQkmuV": [
-        "클로드"
-    ],
-    "https://www.threads.com/@robin_just_ship_it/post/DT9e9jOkc7M": [
-        "gemini",
-        "이미지",
-        "클로드"
-    ],
-    "https://www.threads.com/@newnatrd/post/DT4v2-dEzVu": [
+    "https://www.linkedin.com/feed/update/urn:li:activity:7424206243277381632?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7424206243277381632%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "기획",
         "클로드"
     ],
-    "https://www.threads.com/@choi.openai/post/DT6r--5j5Pp": [
-        "클로드"
-    ],
-    "https://www.threads.com/@heon_yun/post/DT5T4kmEsEG": [
-        "클로드",
-        "안티그래비티"
-    ],
-    "https://www.threads.com/@cloudian__/post/DT2vUQliQgk": [
-        "gemini",
-        "이미지",
-        "클로드",
-        "안티그래비티"
-    ],
-    "https://www.threads.com/@social.romanc/post/DTykKIbES09": [
-        "기획",
-        "마케팅"
-    ],
-    "https://www.threads.com/@health_love_wealth_/post/DT0InBtEnzX": [
-        "gemini"
-    ],
-    "https://www.threads.com/@choi.openai/post/DRuFda3D2Ca": [
-        "gemini",
-        "이미지"
-    ],
-    "https://www.threads.com/@choi.openai/post/DRk6TWjAjI-": [
-        "나노바나나"
-    ],
-    "https://www.threads.com/@gwon_vibe/post/DTO3zt4EwZx": [
-        "이미지",
-        "클로드",
-        "안티그래비티",
-        "나노바나나"
-    ],
-    "https://www.threads.com/@qjc.ai/post/DTzr3XyD9pL": [
-        "gemini",
-        "클로드",
-        "안티그래비티"
-    ],
-    "https://www.threads.com/@gonnector/post/DTzWbLkE2JY": [
-        "gemini",
-        "이미지",
-        "노트북LM",
-        "ppt"
-    ],
-    "https://www.threads.com/@ciaokevin/post/DTzodsdkkhu": [
-        "이미지",
-        "클로드",
-        "안티그래비티"
-    ],
-    "https://www.threads.com/@keke_appa/post/DTzeV51Ek3p": [
-        "클로드",
-        "gemini"
-    ],
-    "https://www.threads.com/@akitect_cat/post/DTvVAAykggl": [
-        "안티그래비티",
-        "클로드"
-    ],
-    "https://www.threads.com/@qjc.ai/post/DTwVSyTjMaz": [
-        "gemini",
-        "이미지",
-        "클로드"
-    ],
-    "https://www.threads.com/@tofukyung/post/DTq4Wg9E8Tn": [
-        "클로드",
-        "안티그래비티",
-        "옵시디언"
-    ],
-    "https://www.threads.com/@yyn.star/post/DTo7IpQAQnf": [
-        "이미지"
-    ],
-    "https://www.threads.com/@conanssam/post/DTpLCjKmBNN": [
-        "클로드",
-        "ppt"
-    ],
-    "https://www.threads.com/@choi.director/post/DTo2byxifgG": [
-        "ppt",
-        "기획"
-    ],
-    "https://www.threads.com/@matt_dancho/post/DTnXmC9DuZZ": [
-        "gemini",
-        "클로드"
-    ],
-    "https://www.threads.com/@hajae.code/post/DTojOZDDwdm": [
-        "gemini",
-        "이미지",
-        "마케팅"
-    ],
-    "https://www.threads.com/@jeju_harry/post/DTo-ESagY-U": [
-        "나노바나나"
-    ],
-    "https://www.threads.com/@monica_from_korea/post/DTjHQUWk-Hy": [
-        "gemini"
-    ],
-    "https://www.threads.com/@qjc.ai/post/DThwzd7D_z-": [
-        "gemini",
-        "클로드"
-    ],
-    "https://www.threads.com/@manusai_kr/post/DTfeub8kXPD": [
-        "이미지"
-    ],
-    "https://www.threads.com/@jisang0914/post/DThEbxXk726": [
-        "클로드"
-    ],
-    "https://www.threads.com/@steady__study.dev/post/DTgpH7LE7g-": [
-        "ppt",
-        "이미지",
-        "클로드"
-    ],
-    "https://www.threads.com/@tech.taek/post/DTe6-aPCY76": [
-        "gemini",
-        "안티그래비티"
-    ],
-    "https://www.threads.com/@the_unwork/post/DTgo1tgkzfe": [
-        "기획",
-        "마케팅",
-        "노션"
-    ],
-    "https://www.threads.com/@aiecorofficial/post/DTdDlJBEr3W": [
-        "ppt",
-        "gemini",
-        "기획"
-    ],
-    "https://www.threads.com/@immersivebama/post/DTdRm8xlJv6": [
-        "안티그래비티"
-    ],
-    "https://www.threads.com/@pangol82/post/DTb_O9qgYEJ": [
-        "gemini",
-        "노트북LM"
-    ],
-    "https://www.threads.com/@jisang0914/post/DTXV6R6E-IZ": [
-        "클로드"
-    ],
-    "https://www.threads.com/@dev_shibaa/post/DTW2wockmnA": [
-        "안티그래비티",
-        "gemini"
-    ],
-    "https://www.threads.com/@careerhackeralex/post/DTUrjxHlL_-": [
-        "클로드"
-    ],
-    "https://www.threads.com/@edtkworker/post/DTW40xejLeJ": [
-        "이미지",
-        "나노바나나",
-        "ppt"
-    ],
-    "https://www.threads.com/@specal1849/post/DTWRE-4EbAC": [
-        "gemini"
-    ],
-    "https://www.threads.com/@sarah.eat.mom/post/DTUEEroki7e": [
-        "나노바나나"
-    ],
-    "https://www.threads.com/@sangdamgac/post/DTTJ9SJE4YD": [
-        "마케팅"
-    ],
-    "https://www.threads.com/@taehyeong_lim/post/DTVOakVkSUb": [
-        "안티그래비티",
-        "옵시디언"
-    ],
-    "https://www.threads.com/@yourgpt3650/post/DTUAdBHjV7G": [
-        "기획"
-    ],
-    "https://www.threads.com/@ai_sync_club/post/DTU3wjAihFa": [
-        "ppt"
-    ],
-    "https://www.threads.com/@lucy_prime788/post/DTSPxhJFUre": [
-        "gemini"
-    ],
-    "https://www.threads.com/@choi.openai/post/DTRDvEhCG4L": [
-        "클로드"
-    ],
-    "https://www.threads.com/@insta_yoonchan/post/DTKt8TqgRkq": [
-        "gemini"
-    ],
-    "https://www.threads.com/@insta_yoonchan/post/DTMJC39Et_M": [
-        "마케팅"
-    ],
-    "https://www.threads.com/@gpt_park/post/DTHEhJqDa_F": [
-        "이미지",
-        "gemini"
-    ],
-    "https://www.threads.com/@tofukyung/post/DTAR3TmAj-F": [
-        "이미지",
-        "gemini",
-        "클로드"
-    ],
-    "https://www.threads.com/@irum_hahn/post/DTC13mTgtbj": [
-        "이미지"
-    ],
-    "https://www.threads.com/@aicoffeechat/post/DTAykTzEhfu": [
-        "gemini",
-        "기획",
-        "클로드"
-    ],
-    "https://www.threads.com/@heedam_i/post/DTAkzttkvIM": [
-        "이미지"
-    ],
-    "https://www.threads.com/@aicoffeechat/post/DTBpfJBk9U7": [
-        "클로드",
-        "gemini"
-    ],
-    "https://www.threads.com/@tornado_616/post/DS-BymgDQdD": [
-        "ppt",
-        "gemini",
-        "노트북LM"
-    ],
-    "https://www.threads.com/@extsvforest/post/DS_5JEXkRNy": [
-        "클로드"
-    ],
-    "https://www.threads.com/@tuberithm/post/DS_CJRHk-Lw": [
-        "노트북LM"
-    ],
-    "https://www.threads.com/@aicoffeechat/post/DS1CESekre9": [
-        "클로드"
-    ],
-    "https://www.threads.com/@starstarlight_marketing/post/DSxdPoCj5rz": [
-        "노트북LM",
-        "gemini",
-        "ppt"
-    ],
-    "https://www.threads.com/@study_ing_squirrel/post/DSy1y1QARLv": [
-        "gemini"
-    ],
-    "https://www.threads.com/@pitchtitan/post/DSxB_M8D0dn": [
-        "노트북LM",
-        "gemini",
-        "ppt"
-    ],
-    "https://www.threads.com/@specal1849/post/DSyzX_MEq66": [
-        "이미지",
-        "클로드",
-        "나노바나나",
-        "gemini"
-    ],
-    "https://www.threads.com/@gwon_vibe/post/DSSAJEckx6p": [
-        "클로드"
-    ],
-    "https://www.threads.com/@struc___ture/post/DSwwrTGk7d0": [
-        "gemini",
-        "클로드"
-    ],
-    "https://www.threads.com/@alcohol_fully/post/DSwHpNxE1U-": [
-        "gemini",
-        "이미지"
-    ],
-    "https://www.threads.com/@dev_shibaa/post/DSq3vMgkjNd": [
-        "마케팅"
-    ],
-    "https://www.threads.com/@focusrefresh/post/DSrr84flFEq": [
-        "gemini"
-    ],
-    "https://www.threads.com/@tofukyung/post/DPRP3W3Annj": [
-        "이미지",
-        "클로드"
-    ],
-    "https://www.threads.com/@specal1849/post/DRftFAqE3Pv": [
-        "gemini",
-        "나노바나나",
-        "ppt"
-    ],
-    "https://www.threads.com/@specal1849/post/DOkU-Zhkk5J": [
-        "ppt",
-        "gemini",
-        "나노바나나"
-    ],
-    "https://www.threads.com/@specal1849/post/DSmUMfvkQ_v": [
-        "노트북LM",
-        "ppt"
-    ],
-    "https://www.threads.com/@specal1849/post/DSTWkAOESmj": [
-        "gemini"
-    ],
-    "https://www.threads.com/@specal1849/post/DRp8XdFE2VH": [
-        "이미지",
-        "나노바나나",
-        "gemini"
-    ],
-    "https://www.threads.com/@specal1849/post/DSLinAmE2my": [
-        "노션",
-        "gemini",
-        "나노바나나"
-    ],
-    "https://www.threads.com/@specal1849/post/DNkdqoARStO": [
-        "나노바나나",
-        "gemini",
-        "기획"
-    ],
-    "https://www.threads.com/@programmingzombie/post/DSEhu-lE8kp": [
-        "기획",
-        "마케팅"
-    ],
-    "https://www.threads.com/@specal1849/post/DSJ-s-OEj2D": [
-        "gemini"
-    ],
-    "https://www.threads.com/@specal1849/post/DR5lIlhEntF": [
-        "클로드"
-    ],
-    "https://www.threads.com/@specal1849/post/DR5eEaEE9_R": [
-        "gemini",
-        "기획"
-    ],
-    "https://www.threads.com/@specal1849/post/DSBpzvtkVTT": [
-        "나노바나나",
-        "이미지"
-    ],
-    "https://www.threads.com/@specal1849/post/DRysL3RkpGl": [
-        "gemini",
-        "클로드",
-        "노션",
-        "기획"
-    ],
-    "https://www.threads.com/@specal1849/post/DOshd8oEcaT": [
-        "ppt",
-        "나노바나나",
-        "노션"
-    ],
-    "https://www.threads.com/@specal1849/post/DSE1xdPkpu-": [
-        "이미지",
-        "gemini"
-    ],
-    "https://www.threads.com/@specal1849/post/DSI4E1AkaQ0": [
-        "나노바나나"
-    ],
-    "https://www.threads.com/@art_director_teddy/post/DSKovq7Etdo": [
-        "이미지",
-        "나노바나나"
-    ],
-    "https://www.threads.com/@specal1849/post/DSLtNP8Em2v": [
-        "클로드",
-        "옵시디언"
-    ],
-    "https://www.threads.com/@danhovac/post/DRtU-J0E3MU": [
-        "gemini",
-        "클로드",
-        "노트북LM",
-        "이미지",
-        "ppt",
-        "기획"
-    ],
-    "https://www.threads.com/@programmingzombie/post/DSEhurTk84N": [
-        "기획",
-        "마케팅"
-    ],
-    "https://www.threads.com/@alex_ai_mcp/post/DTBq2CnkwCp": [
-        "안티그래비티",
-        "gemini"
-    ],
-    "https://www.threads.com/@qjc.ai/post/DTUq6Lpj-zt": [
-        "gemini",
-        "클로드"
-    ],
-    "https://www.threads.com/@ok_k_studio/post/DTF2ha_ibNE": [
-        "마케팅"
-    ],
-    "https://www.threads.com/@keke_appa/post/DTAfwOWkpTe": [
-        "클로드"
-    ],
-    "https://www.threads.com/@aicoffeechat/post/DSj_6YFkg6r": [
-        "gemini",
-        "기획",
-        "클로드"
-    ],
-    "https://www.threads.com/@jrara_sogood/post/DSzDa1TEeSg": [
-        "ppt",
-        "기획"
-    ],
-    "https://www.threads.com/@choi.openai/post/DSwLdrWD6DI": [
-        "gemini",
-        "노트북LM",
+    "https://www.linkedin.com/feed/update/urn:li:activity:7424265453209944066?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7424265453209944066%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7424423567607603204?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7424423567607603204%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드"
     ],
-    "https://www.threads.com/@choi.openai/post/DUg7t0qCE5C": [
-        "기획",
+    "https://www.linkedin.com/feed/update/urn:li:activity:7424482472438120448?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7424482472438120448%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드"
     ],
-    "https://www.threads.com/@claudeai/post/DUl7Ra7kbje": [
+    "https://www.linkedin.com/feed/update/urn:li:activity:7424957785756483584?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7424957785756483584%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드"
     ],
-    "https://www.threads.com/@easygpt2526/post/DUkMWqNk9OY": [
-        "gemini"
-    ],
-    "https://www.threads.com/@ddg.kang/post/DUlWTf6kyKL": [
+    "https://www.linkedin.com/feed/update/urn:li:activity:7424963722193887232?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7424963722193887232%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드"
     ],
-    "https://www.threads.com/@aicoffeechat/post/DUmEccXCjhM": [
-        "ppt"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7426965977122357248?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7426965977122357248%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드",
-        "노션"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7426931601873346560?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7426931601873346560%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "이미지",
-        "기획",
-        "마케팅"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7426891202538651648?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7426891202538651648%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "이미지",
+    "https://www.linkedin.com/feed/update/urn:li:activity:7425005536108240896?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7425005536108240896%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "마케팅",
         "기획"
     ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7426380560358383617?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7426380560358383617%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+    "https://www.linkedin.com/feed/update/urn:li:activity:7425315604485779456?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7425315604485779456%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드"
     ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7425809475447742464?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7425809475447742464%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "gemini",
-        "노트북LM",
-        "ppt"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7425792970475462656?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7425792970475462656%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "gemini",
+    "https://www.linkedin.com/feed/update/urn:li:activity:7425428410212102145?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7425428410212102145%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7425445464528863233?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7425445464528863233%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
@@ -989,76 +365,83 @@
         "클로드",
         "gemini"
     ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7425428410212102145?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7425428410212102145%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+    "https://www.linkedin.com/feed/update/urn:li:activity:7425585243174350848?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7425585243174350848%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "이미지"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7425792970475462656?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7425792970475462656%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "gemini",
         "클로드"
     ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7425315604485779456?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7425315604485779456%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7422438686518272002?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7422438686518272002%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7410683563362181120?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7410683563362181120%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+    "https://www.linkedin.com/feed/update/urn:li:activity:7425809475447742464?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7425809475447742464%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "gemini",
+        "노트북LM",
         "ppt"
     ],
-    "https://www.threads.com/@cactus.kimchi/post/DUm37rRDknp": [
-        "클로드",
-        "옵시디언"
+    "https://www.linkedin.com/feed/update/urn:li:activity:7425901355317477378?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7425901355317477378%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "기획"
     ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7427324639552581632?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7427324639552581632%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+    "https://www.linkedin.com/feed/update/urn:li:activity:7426095587395022848?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7426095587395022848%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "ppt"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7426244807364198401?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7426244807364198401%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "마케팅",
+        "노트북LM"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7426380560358383617?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7426380560358383617%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7426596202374311937?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7426596202374311937%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드"
     ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7425901355317477378?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7425901355317477378%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+    "https://www.linkedin.com/feed/update/urn:li:activity:7426891202538651648?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7426891202538651648%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "이미지",
         "기획"
     ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7425585243174350848?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7425585243174350848%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+    "https://www.linkedin.com/feed/update/urn:li:activity:7426931601873346560?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7426931601873346560%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "이미지",
+        "기획",
+        "마케팅"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7426965977122357248?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7426965977122357248%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드",
+        "노션"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7426970529548529664?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7426970529548529664%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "기획"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7427324639552581632?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7427324639552581632%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7427366428665839616?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7427366428665839616%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "노트북LM"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7427519628668649474?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7427519628668649474%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드",
+        "노션"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7427708018441773056?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7427708018441773056%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "이미지"
     ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7423871060590338048?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7423871060590338048%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+    "https://www.linkedin.com/feed/update/urn:li:activity:7427777291717447681?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7427777291717447681%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "gemini",
+        "노션",
         "클로드"
-    ],
-    "https://x.com/aiwithmayank/status/2021555296951513414": [
-        "클로드"
-    ],
-    "https://x.com/yozm_it/status/2021492537861853558": [
-        "클로드"
-    ],
-    "https://x.com/aiwithjainam/status/2021179767228354988": [
-        "클로드"
-    ],
-    "https://x.com/lucas_flatwhite/status/2021084481604771937": [
-        "클로드"
-    ],
-    "https://x.com/socialwithaayan/status/2021233357514997824": [
-        "클로드"
-    ],
-    "https://x.com/emilylambert/status/2019947921823944778": [
-        "클로드"
-    ],
-    "https://x.com/Banbo_Insight/status/2018987561604268442": [
-        "마케팅",
-        "클로드"
-    ],
-    "https://x.com/jaehwa/status/2015913055285375415": [
-        "클로드"
-    ],
-    "https://x.com/crystalsssup/status/2013558837962514741": [
-        "ppt"
-    ],
-    "https://x.com/dotey/status/2013044625238339994": [
-        "클로드",
-        "gemini"
-    ],
-    "https://x.com/aiwithjainam/status/1994363245512241167": [
-        "클로드",
-        "gemini"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7427778582690840578?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7427778582690840578%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "마케팅",
         "기획"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7427900362558394368?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7427900362558394368%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "나노바나나",
+        "gemini"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7428211220928745472?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7428211220928745472%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "ppt",
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7428402591849517056?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7428402591849517056%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "기획",
+        "클로드"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7428551113521491968?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7428551113521491968%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
@@ -1067,474 +450,30 @@
     "https://www.linkedin.com/feed/update/urn:li:activity:7428729561946722304?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7428729561946722304%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드"
     ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7424265453209944066?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7424265453209944066%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7426970529548529664?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7426970529548529664%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "기획"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7427708018441773056?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7427708018441773056%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "이미지"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7425005536108240896?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7425005536108240896%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "마케팅",
-        "기획"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7427519628668649474?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7427519628668649474%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드",
-        "노션"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7427900362558394368?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7427900362558394368%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "나노바나나",
+    "https://www.linkedin.com/feed/update/urn:li:activity:7429525749658963968?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7429525749658963968%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "gemini"
-    ],
-    "https://x.com/Marryclaire_AI/status/2023098099590467672": [
-        "노트북LM"
-    ],
-    "https://x.com/lucas_flatwhite/status/2022820131848815100": [
-        "이미지"
-    ],
-    "https://x.com/0xCrocy/status/2022307265773031472": [
-        "클로드"
-    ],
-    "https://x.com/ChrisLaubAI/status/2022243294349320283": [
-        "클로드"
-    ],
-    "https://x.com/Gonnector/status/2021791345162301752": [
-        "기획",
-        "클로드",
-        "ppt"
-    ],
-    "https://x.com/Suryanshti777/status/2024780155428982985": [
-        "클로드"
-    ],
-    "https://x.com/hayyantechtalks/status/2024716712202162490": [
-        "노트북LM"
-    ],
-    "https://x.com/lucas_flatwhite/status/2025041022003409141": [
-        "클로드"
-    ],
-    "https://x.com/Marryclaire_AI/status/2024886333085548860": [
-        "클로드"
-    ],
-    "https://x.com/sorenblank/status/2021671940646482267": [
-        "gemini"
-    ],
-    "https://x.com/heynavtoor/status/2023786876667302114": [
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7446946887913406465?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7446946887913406465%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7447794271937626112?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7447794271937626112%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7438304875874189312?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7438304875874189312%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "이미지",
-        "gemini",
-        "클로드",
-        "하네스"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7447654879734738944?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7447654879734738944%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7447673381845467136?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7447673381845467136%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "기획"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7448326878219739136?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7448326878219739136%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "노트북LM",
-        "gemini",
-        "ppt"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7448127135698821120?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7448127135698821120%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7448127608682086400?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7448127608682086400%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드",
-        "하네스"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7447270523807580161?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7447270523807580161%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "노트북LM",
-        "하네스"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7447625930178719745?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7447625930178719745%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "ppt",
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7447623645570441216?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7447623645570441216%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "노션"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7446828487379922944?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7446828487379922944%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "gemini",
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7446702746549989376?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7446702746549989376%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "옵시디언",
-        "클로드",
-        "하네스"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7447302958331113473?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7447302958331113473%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "이미지"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7447071650258354176?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7447071650258354176%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "ppt",
-        "하네스"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7446776168940404737?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7446776168940404737%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드",
-        "하네스"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7439881616262586368?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7439881616262586368%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "이미지"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7446356379344396288?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7446356379344396288%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "마케팅",
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7446212707466465281?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7446212707466465281%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드",
-        "gemini"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7446441093778493440?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7446441093778493440%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "이미지",
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7446551910691553281?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7446551910691553281%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드",
-        "하네스"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7446428728898875392?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7446428728898875392%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "기획",
-        "클로드",
-        "하네스"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7447188897098522624?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7447188897098522624%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드",
-        "ppt",
-        "하네스"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7446684782874304512?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7446684782874304512%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드",
-        "하네스"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7419142685543882752?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7419142685543882752%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7446911702195068928?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7446911702195068928%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "노션",
-        "옵시디언",
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7445993986978164736?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7445993986978164736%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7445848006551326720?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7445848006551326720%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드",
-        "ppt"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7446016234464276480?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7446016234464276480%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "gemini",
-        "클로드",
-        "하네스"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7445755902059671552?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7445755902059671552%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7444011442883772416?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7444011442883772416%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7445463222629056512?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7445463222629056512%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7446373559083462656?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7446373559083462656%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드",
-        "하네스"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7444156456867905537?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7444156456867905537%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "마케팅",
-        "기획",
-        "이미지",
-        "노션"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7444858568429887488?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7444858568429887488%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "ppt",
-        "하네스"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7444870421587595264?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7444870421587595264%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7444961094542168064?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7444961094542168064%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드",
-        "옵시디언"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7442076702438006784?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7442076702438006784%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "ppt",
-        "클로드",
-        "기획"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7445583342424535040?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7445583342424535040%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "이미지",
-        "ppt"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7444911742461259776?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7444911742461259776%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7443915312246452224?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7443915312246452224%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드",
-        "기획",
-        "gemini",
-        "ppt"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7440711488341704704?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7440711488341704704%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드",
-        "옵시디언"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7444165701033963520?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7444165701033963520%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7443630931825049600?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7443630931825049600%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "마케팅",
-        "클로드",
-        "하네스"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7444001515813363712?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7444001515813363712%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "이미지",
-        "ppt",
-        "노트북LM"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7443084381780426752?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7443084381780426752%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7441683340426129408?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7441683340426129408%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "마케팅"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7442334206590017536?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7442334206590017536%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7442627065385922560?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7442627065385922560%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "이미지",
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7443290636935467008?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7443290636935467008%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "기획",
-        "gemini",
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7441376487389433856?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7441376487389433856%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "ppt"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7443194446143475712?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7443194446143475712%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7442884102267052032?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7442884102267052032%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드",
-        "안티그래비티"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7443177913589534721?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7443177913589534721%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드",
-        "마케팅"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7442767003393835008?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7442767003393835008%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7441634831056211968?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7441634831056211968%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드",
-        "노트북LM",
-        "옵시디언"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7442706888682528768?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7442706888682528768%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "마케팅",
-        "gemini"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7442713359881449472?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7442713359881449472%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드",
-        "하네스"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7440849403088703488?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7440849403088703488%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7442260904571944960?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7442260904571944960%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7441834524671619072?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7441834524671619072%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "옵시디언",
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7441997233819992064?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7441997233819992064%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "노트북LM"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7442612121403756545?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7442612121403756545%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "기획"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7441402032441163776?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7441402032441163776%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "gemini",
-        "클로드",
-        "하네스"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7442873594306555905?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7442873594306555905%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7417789055347863552?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7417789055347863552%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "기획",
-        "ppt",
-        "노트북LM"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7440709137761734658?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7440709137761734658%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드",
-        "하네스"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7438587163157590016?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7438587163157590016%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "노션"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7440231619128352769?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7440231619128352769%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "기획",
-        "gemini",
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7436172583210881024?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7436172583210881024%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7440674643931414529?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7440674643931414529%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7439067931004579840?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7439067931004579840%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "ppt",
-        "노트북LM"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7437355075041259520?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7437355075041259520%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7437823432609812480?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7437823432609812480%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7429732494503059456?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7429732494503059456%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "노션",
         "클로드"
     ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7439083029110861824?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7439083029110861824%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "마케팅",
-        "gemini",
+    "https://www.linkedin.com/feed/update/urn:li:activity:7429869120143237120?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7429869120143237120%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드"
     ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7438766833035284481?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7438766833035284481%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7437456846925475840?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7437456846925475840%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+    "https://www.linkedin.com/feed/update/urn:li:activity:7429881050136313856?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7429881050136313856%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
-        "이미지",
-        "나노바나나"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7436886046111514624?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7436886046111514624%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드",
-        "하네스"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7436901135912775680?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7436901135912775680%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7435866146433798144?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7435866146433798144%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7435454545369124864?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7435454545369124864%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7436523650205433856?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7436523650205433856%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드",
-        "이미지",
         "ppt"
     ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7435617387984338945?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7435617387984338945%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+    "https://www.linkedin.com/feed/update/urn:li:activity:7430030865906245633?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7430030865906245633%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드",
+        "이미지"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7430402671020474368?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7430402671020474368%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7430631545163407360?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7430631545163407360%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "마케팅",
         "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7435894844042063872?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7435894844042063872%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7432977948741132288?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7432977948741132288%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "마케팅",
-        "이미지",
-        "gemini",
-        "나노바나나",
-        "노트북LM"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7430402671020474368?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7430402671020474368%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7434734358466531328?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7434734358466531328%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "기획",
-        "하네스"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7434487388384452608?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7434487388384452608%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "기획"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7432759366015164416?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7432759366015164416%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7434723037943562241?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7434723037943562241%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드",
-        "하네스"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7433347326586388480?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7433347326586388480%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7434113977590362112?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7434113977590362112%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7424963722193887232?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7424963722193887232%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7428402591849517056?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7428402591849517056%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "기획",
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7432696201612865536?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7432696201612865536%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7433857759571353600?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7433857759571353600%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드",
-        "이미지",
-        "노션"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7434361730555731968?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7434361730555731968%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7434002037815808000?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7434002037815808000%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7433314766972071936?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7433314766972071936%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7431465318620938241?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7431465318620938241%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드",
-        "기획",
-        "안티그래비티",
-        "옵시디언"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7432428295897567232?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7432428295897567232%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드",
-        "기획"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7431206454012944384?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7431206454012944384%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "노트북LM",
-        "ppt"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7432190104884006913?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7432190104884006913%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7431827709527494656?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7431827709527494656%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7432197654002061313?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7432197654002061313%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "gemini",
-        "클로드",
-        "하네스"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7416721599988518912?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7416721599988518912%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "기획",
-        "gemini",
-        "ppt"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7430744321303400448?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7430744321303400448%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드"
@@ -1546,13 +485,6 @@
         "클로드",
         "안티그래비티"
     ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7431610737912930304?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7431610737912930304%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "gemini"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7431453990397202433?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7431453990397202433%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드",
-        "하네스"
-    ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7431114251727011840?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7431114251727011840%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드"
     ],
@@ -1561,117 +493,458 @@
         "ppt",
         "안티그래비티"
     ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7427777291717447681?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7427777291717447681%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "gemini",
-        "노션",
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7430030865906245633?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7430030865906245633%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드",
-        "이미지"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7429869120143237120?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7429869120143237120%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7426244807364198401?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7426244807364198401%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "마케팅",
-        "노트북LM"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7422267328026836992?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7422267328026836992%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "마케팅",
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7427366428665839616?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7427366428665839616%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "노트북LM"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7428211220928745472?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7428211220928745472%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "ppt",
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7424957785756483584?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7424957785756483584%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7426095587395022848?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7426095587395022848%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+    "https://www.linkedin.com/feed/update/urn:li:activity:7431206454012944384?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7431206454012944384%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "노트북LM",
         "ppt"
     ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7429881050136313856?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7429881050136313856%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+    "https://www.linkedin.com/feed/update/urn:li:activity:7431453990397202433?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7431453990397202433%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
-        "ppt"
+        "하네스"
     ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7429525749658963968?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7429525749658963968%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+    "https://www.linkedin.com/feed/update/urn:li:activity:7431465318620938241?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7431465318620938241%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드",
+        "기획",
+        "안티그래비티",
+        "옵시디언"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7431610737912930304?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7431610737912930304%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "gemini"
     ],
-    "https://x.com/WhitePeach/status/2038884237840150941": [
+    "https://www.linkedin.com/feed/update/urn:li:activity:7431827709527494656?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7431827709527494656%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드"
     ],
-    "https://x.com/LearnerBR/status/2038662987242991775": [
+    "https://www.linkedin.com/feed/update/urn:li:activity:7432190104884006913?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7432190104884006913%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드"
     ],
-    "https://x.com/golbin/status/2038844901648142534": [
+    "https://www.linkedin.com/feed/update/urn:li:activity:7432197654002061313?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7432197654002061313%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "gemini",
+        "클로드",
+        "하네스"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7432428295897567232?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7432428295897567232%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드",
+        "기획"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7432696201612865536?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7432696201612865536%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7432759366015164416?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7432759366015164416%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7432977948741132288?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7432977948741132288%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "마케팅",
+        "이미지",
+        "gemini",
+        "나노바나나",
+        "노트북LM"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7433314766972071936?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7433314766972071936%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7433347326586388480?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7433347326586388480%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7433857759571353600?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7433857759571353600%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드",
+        "이미지",
+        "노션"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7434002037815808000?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7434002037815808000%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7434113977590362112?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7434113977590362112%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7434361730555731968?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7434361730555731968%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7434364428847935488?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7434364428847935488%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "하네스"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7434487388384452608?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7434487388384452608%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "기획"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7434723037943562241?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7434723037943562241%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드",
+        "하네스"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7434734358466531328?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7434734358466531328%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "기획",
+        "하네스"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7435454545369124864?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7435454545369124864%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7435617387984338945?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7435617387984338945%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7435866146433798144?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7435866146433798144%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7435894844042063872?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7435894844042063872%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7436172583210881024?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7436172583210881024%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7436523650205433856?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7436523650205433856%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드",
+        "이미지",
+        "ppt"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7436886046111514624?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7436886046111514624%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드",
+        "하네스"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7436901135912775680?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7436901135912775680%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7437355075041259520?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7437355075041259520%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7437456846925475840?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7437456846925475840%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드",
+        "이미지",
+        "나노바나나"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7437823432609812480?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7437823432609812480%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7438304875874189312?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7438304875874189312%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "이미지",
+        "gemini",
+        "클로드",
+        "하네스"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7438587163157590016?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7438587163157590016%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "노션"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7438766833035284481?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7438766833035284481%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7439067931004579840?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7439067931004579840%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "ppt",
+        "노트북LM"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7439083029110861824?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7439083029110861824%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "마케팅",
+        "gemini",
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7439881616262586368?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7439881616262586368%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "이미지"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7440231619128352769?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7440231619128352769%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "기획",
+        "gemini",
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7440674643931414529?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7440674643931414529%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7440709137761734658?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7440709137761734658%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드",
+        "하네스"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7440711488341704704?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7440711488341704704%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드",
+        "옵시디언"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7440849403088703488?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7440849403088703488%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7441376487389433856?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7441376487389433856%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "ppt"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7441402032441163776?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7441402032441163776%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "gemini",
+        "클로드",
+        "하네스"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7441634831056211968?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7441634831056211968%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드",
+        "노트북LM",
+        "옵시디언"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7441683340426129408?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7441683340426129408%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "마케팅"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7441834524671619072?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7441834524671619072%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "옵시디언",
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7441997233819992064?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7441997233819992064%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "노트북LM"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7442076702438006784?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7442076702438006784%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "ppt",
+        "클로드",
+        "기획"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7442260904571944960?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7442260904571944960%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7442334206590017536?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7442334206590017536%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7442348326420754432?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7442348326420754432%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7442612121403756545?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7442612121403756545%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "기획"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7442627065385922560?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7442627065385922560%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "이미지",
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7442706888682528768?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7442706888682528768%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "마케팅",
+        "gemini"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7442713359881449472?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7442713359881449472%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드",
+        "하네스"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7442767003393835008?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7442767003393835008%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7442873594306555905?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7442873594306555905%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7442884102267052032?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7442884102267052032%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드",
+        "안티그래비티"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7443084381780426752?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7443084381780426752%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7443177913589534721?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7443177913589534721%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드",
+        "마케팅"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7443194446143475712?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7443194446143475712%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7443290636935467008?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7443290636935467008%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "기획",
+        "gemini",
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7443630931825049600?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7443630931825049600%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "마케팅",
+        "클로드",
+        "하네스"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7443915312246452224?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7443915312246452224%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드",
+        "기획",
+        "gemini",
+        "ppt"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7444001515813363712?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7444001515813363712%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "이미지",
+        "ppt",
+        "노트북LM"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7444011442883772416?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7444011442883772416%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7444156456867905537?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7444156456867905537%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "마케팅",
+        "기획",
+        "이미지",
+        "노션"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7444165701033963520?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7444165701033963520%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7444858568429887488?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7444858568429887488%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "ppt",
+        "하네스"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7444870421587595264?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7444870421587595264%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7444911742461259776?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7444911742461259776%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7444961094542168064?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7444961094542168064%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드",
+        "옵시디언"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7445463222629056512?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7445463222629056512%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7445583342424535040?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7445583342424535040%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "이미지",
+        "ppt"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7445702164146110464?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7445702164146110464%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "마케팅"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7445755902059671552?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7445755902059671552%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7445848006551326720?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7445848006551326720%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드",
+        "ppt"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7445993986978164736?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7445993986978164736%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7446016234464276480?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7446016234464276480%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "gemini",
+        "클로드",
+        "하네스"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7446212707466465281?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7446212707466465281%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드",
+        "gemini"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7446356379344396288?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7446356379344396288%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "마케팅",
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7446373559083462656?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7446373559083462656%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드",
+        "하네스"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7446428728898875392?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7446428728898875392%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "기획",
+        "클로드",
+        "하네스"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7446441093778493440?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7446441093778493440%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "이미지",
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7446551910691553281?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7446551910691553281%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드",
+        "하네스"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7446684782874304512?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7446684782874304512%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드",
+        "하네스"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7446702746549989376?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7446702746549989376%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "옵시디언",
+        "클로드",
+        "하네스"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7446776168940404737?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7446776168940404737%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드",
+        "하네스"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7446828487379922944?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7446828487379922944%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "gemini",
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7446911702195068928?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7446911702195068928%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "노션",
+        "옵시디언",
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7446946887913406465?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7446946887913406465%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7447071650258354176?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7447071650258354176%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "ppt",
+        "하네스"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7447188897098522624?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7447188897098522624%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드",
+        "ppt",
+        "하네스"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7447261246615109632?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7447261246615109632%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "옵시디언"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7447270523807580161?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7447270523807580161%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "노트북LM",
+        "하네스"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7447302958331113473?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7447302958331113473%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "이미지"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7447452396747911170?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7447452396747911170%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
         "하네스"
     ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7448554932695105536?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7448554932695105536%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+    "https://www.linkedin.com/feed/update/urn:li:activity:7447623645570441216?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7447623645570441216%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "노션"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7447625930178719745?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7447625930178719745%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "ppt",
         "클로드"
     ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7449406101365739521?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7449406101365739521%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+    "https://www.linkedin.com/feed/update/urn:li:activity:7447654879734738944?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7447654879734738944%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7447673381845467136?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7447673381845467136%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "기획"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7447794271937626112?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7447794271937626112%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7447916258668253186?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7447916258668253186%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7447969635687112705?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7447969635687112705%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
         "기획"
     ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7448127135698821120?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7448127135698821120%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7448127608682086400?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7448127608682086400%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드",
+        "하네스"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7448326878219739136?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7448326878219739136%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "노트북LM",
+        "gemini",
+        "ppt"
+    ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7448349198606835713?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7448349198606835713%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드"
     ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7448554932695105536?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7448554932695105536%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드"
+    ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7448885043126620160?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7448885043126620160%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7449406101365739521?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7449406101365739521%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7449476690268880896?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7449476690268880896%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
         "하네스"
     ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7434364428847935488?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7434364428847935488%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "하네스"
-    ],
-    "https://x.com/geekmaker_/status/2038903921763348845": [
-        "하네스"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7450348366204436481?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7450348366204436481%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
-    ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7449825131591286785?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7449825131591286785%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
         "이미지",
         "노션"
     ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7445702164146110464?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7445702164146110464%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "마케팅"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7447916258668253186?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7447916258668253186%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+    "https://www.linkedin.com/feed/update/urn:li:activity:7449890360186654720?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7449890360186654720%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7449957004166750209?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7449957004166750209%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
         "ppt"
     ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7442348326420754432?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7442348326420754432%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+    "https://www.linkedin.com/feed/update/urn:li:activity:7450133666623799296?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7450133666623799296%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7450348366204436481?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7450348366204436481%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7450489926619668480?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7450489926619668480%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "하네스",
         "클로드"
     ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7449890360186654720?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7449890360186654720%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
-    ],
-    "https://www.linkedin.com/feed/update/urn:li:activity:7450133666623799296?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7450133666623799296%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+    "https://www.linkedin.com/feed/update/urn:li:activity:7450689022001086466?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7450689022001086466%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "이미지",
         "클로드"
     ],
     "https://www.threads.com/@06am_draw/post/DUy-OrTE1c5": [
@@ -1692,7 +965,13 @@
     "https://www.threads.com/@71_102/post/DUa78PhE_p7": [
         "클로드"
     ],
+    "https://www.threads.com/@_ju_tiger_lee_/post/DUQTYlyElVu": [
+        "클로드"
+    ],
     "https://www.threads.com/@_ju_tiger_lee_/post/DVfpUJ3E4Q1": [
+        "클로드"
+    ],
+    "https://www.threads.com/@_keunyoung_/post/DUUNQMpE2m3": [
         "클로드"
     ],
     "https://www.threads.com/@_petercha/post/DWEWAetgTKA": [
@@ -1737,6 +1016,9 @@
     "https://www.threads.com/@ai.vibecoding/post/DUrYUMiEr5-": [
         "클로드"
     ],
+    "https://www.threads.com/@ai.winey_ny/post/DT-VHfnEshJ": [
+        "노션"
+    ],
     "https://www.threads.com/@ai.winey_ny/post/DV5CAJ3kvxy": [
         "클로드"
     ],
@@ -1761,6 +1043,13 @@
     ],
     "https://www.threads.com/@ai_margin_/post/DWcuylTkqgE": [
         "안티그래비티"
+    ],
+    "https://www.threads.com/@ai_sync_club/post/DTU3wjAihFa": [
+        "ppt"
+    ],
+    "https://www.threads.com/@ai_sync_club/post/DTW7GQ0iujL": [
+        "ppt",
+        "노트북LM"
     ],
     "https://www.threads.com/@ai_sync_club/post/DVYnEO_k0ly": [
         "클로드"
@@ -1795,14 +1084,39 @@
         "노트북LM",
         "ppt"
     ],
+    "https://www.threads.com/@aicoffeechat/post/DS1CESekre9": [
+        "클로드"
+    ],
+    "https://www.threads.com/@aicoffeechat/post/DSj_6YFkg6r": [
+        "gemini",
+        "기획",
+        "클로드"
+    ],
+    "https://www.threads.com/@aicoffeechat/post/DTAykTzEhfu": [
+        "gemini",
+        "기획",
+        "클로드"
+    ],
+    "https://www.threads.com/@aicoffeechat/post/DTBpfJBk9U7": [
+        "클로드",
+        "gemini"
+    ],
     "https://www.threads.com/@aicoffeechat/post/DUWrZdMClb9": [
         "클로드"
+    ],
+    "https://www.threads.com/@aicoffeechat/post/DUmEccXCjhM": [
+        "ppt"
     ],
     "https://www.threads.com/@aicoffeechat/post/DVDwGuukjsS": [
         "옵시디언"
     ],
     "https://www.threads.com/@aicoffeechat/post/DWzq8qVCuLU": [
         "클로드"
+    ],
+    "https://www.threads.com/@aiecorofficial/post/DTdDlJBEr3W": [
+        "ppt",
+        "gemini",
+        "기획"
     ],
     "https://www.threads.com/@aipreneur_j/post/DVhsgdLiclG": [
         "클로드",
@@ -1826,7 +1140,19 @@
     "https://www.threads.com/@aisolutiondev/post/DWr7H-9EmOW": [
         "클로드"
     ],
+    "https://www.threads.com/@akitect_cat/post/DTvVAAykggl": [
+        "안티그래비티",
+        "클로드"
+    ],
+    "https://www.threads.com/@alcohol_fully/post/DSwHpNxE1U-": [
+        "gemini",
+        "이미지"
+    ],
     "https://www.threads.com/@alcohol_fully/post/DUrto3XD5g4": [
+        "gemini"
+    ],
+    "https://www.threads.com/@alex_ai_mcp/post/DTBq2CnkwCp": [
+        "안티그래비티",
         "gemini"
     ],
     "https://www.threads.com/@alex_ai_mcp/post/DVVRaH3kYkF": [
@@ -1871,6 +1197,10 @@
     "https://www.threads.com/@approval.sb/post/DV-q6ZsAVcw": [
         "마케팅"
     ],
+    "https://www.threads.com/@art_director_teddy/post/DSKovq7Etdo": [
+        "이미지",
+        "나노바나나"
+    ],
     "https://www.threads.com/@autogod.ai/post/DVivb8gE6Q6": [
         "클로드"
     ],
@@ -1885,6 +1215,13 @@
         "클로드"
     ],
     "https://www.threads.com/@baekho.chris/post/DVlgUX5k1Yy": [
+        "클로드"
+    ],
+    "https://www.threads.com/@bellman.pub/post/DUKe4kFklIf": [
+        "클로드"
+    ],
+    "https://www.threads.com/@bellman.pub/post/DUX8tp_EvRN": [
+        "gemini",
         "클로드"
     ],
     "https://www.threads.com/@bellman.pub/post/DUhnAkckr51": [
@@ -1911,8 +1248,28 @@
         "노트북LM",
         "ppt"
     ],
+    "https://www.threads.com/@build_daemon/post/DT863uQkmuV": [
+        "클로드"
+    ],
+    "https://www.threads.com/@build_daemon/post/DUJ1km1kkNt": [
+        "이미지"
+    ],
+    "https://www.threads.com/@builder.inkeun/post/DUDz4LoDyoB": [
+        "클로드"
+    ],
+    "https://www.threads.com/@builder_10x/post/DT8EUxBic2M": [
+        "gemini",
+        "클로드"
+    ],
     "https://www.threads.com/@bunniesossdev/post/DWqyF3akYGX": [
         "ppt"
+    ],
+    "https://www.threads.com/@c.reator_c/post/DUHJvgwE8QV": [
+        "이미지"
+    ],
+    "https://www.threads.com/@cactus.kimchi/post/DUm37rRDknp": [
+        "클로드",
+        "옵시디언"
     ],
     "https://www.threads.com/@calmtiger_/post/DU7ruAhAdBG": [
         "기획"
@@ -1922,6 +1279,9 @@
         "노트북LM"
     ],
     "https://www.threads.com/@calmtiger_/post/DVnTtVQgRWo": [
+        "클로드"
+    ],
+    "https://www.threads.com/@careerhackeralex/post/DTUrjxHlL_-": [
         "클로드"
     ],
     "https://www.threads.com/@careerhackeralex/post/DVXG0MrAVfH": [
@@ -1945,7 +1305,36 @@
         "이미지",
         "클로드"
     ],
+    "https://www.threads.com/@choi.director/post/DTo2byxifgG": [
+        "ppt",
+        "기획"
+    ],
+    "https://www.threads.com/@choi.openai/post/DRk6TWjAjI-": [
+        "나노바나나"
+    ],
+    "https://www.threads.com/@choi.openai/post/DRuFda3D2Ca": [
+        "gemini",
+        "이미지"
+    ],
+    "https://www.threads.com/@choi.openai/post/DSwLdrWD6DI": [
+        "gemini",
+        "노트북LM",
+        "클로드"
+    ],
+    "https://www.threads.com/@choi.openai/post/DT6r--5j5Pp": [
+        "클로드"
+    ],
+    "https://www.threads.com/@choi.openai/post/DT6sAONj9K8": [
+        "클로드"
+    ],
+    "https://www.threads.com/@choi.openai/post/DTRDvEhCG4L": [
+        "클로드"
+    ],
     "https://www.threads.com/@choi.openai/post/DTochmuDcf7": [
+        "클로드"
+    ],
+    "https://www.threads.com/@choi.openai/post/DUg7t0qCE5C": [
+        "기획",
         "클로드"
     ],
     "https://www.threads.com/@choi.openai/post/DWIJSYtEU_U": [
@@ -1972,6 +1361,20 @@
         "클로드",
         "노트북LM"
     ],
+    "https://www.threads.com/@ciaokevin/post/DTzodsdkkhu": [
+        "이미지",
+        "클로드",
+        "안티그래비티"
+    ],
+    "https://www.threads.com/@claudeai/post/DUl7Ra7kbje": [
+        "클로드"
+    ],
+    "https://www.threads.com/@cloudian__/post/DT2vUQliQgk": [
+        "gemini",
+        "이미지",
+        "클로드",
+        "안티그래비티"
+    ],
     "https://www.threads.com/@coding.sabu/post/DWlko5HDyhO": [
         "기획"
     ],
@@ -1983,6 +1386,10 @@
     ],
     "https://www.threads.com/@cokac_com/post/DXFwCaaE_gY": [
         "클로드"
+    ],
+    "https://www.threads.com/@conanssam/post/DTpLCjKmBNN": [
+        "클로드",
+        "ppt"
     ],
     "https://www.threads.com/@crealwork/post/DWijabalbOA": [
         "클로드",
@@ -2001,6 +1408,14 @@
         "gemini",
         "이미지",
         "클로드"
+    ],
+    "https://www.threads.com/@danhovac/post/DRtU-J0E3MU": [
+        "gemini",
+        "클로드",
+        "노트북LM",
+        "이미지",
+        "ppt",
+        "기획"
     ],
     "https://www.threads.com/@daniel._.choi/post/DW4vSMgk_OX": [
         "클로드"
@@ -2024,6 +1439,15 @@
     "https://www.threads.com/@daon_k/post/DWYNkkwjTHs": [
         "클로드"
     ],
+    "https://www.threads.com/@data_richard/post/DOm2OujEQC1": [
+        "노션"
+    ],
+    "https://www.threads.com/@data_richard/post/DS_7QrXFRRu": [
+        "노션"
+    ],
+    "https://www.threads.com/@data_richard/post/DT9Gyvtj-Rb": [
+        "클로드"
+    ],
     "https://www.threads.com/@dddesign.io/post/DU7He8TCZlP": [
         "클로드"
     ],
@@ -2043,6 +1467,9 @@
     "https://www.threads.com/@ddg.kang/post/DUlHaUFk2N_": [
         "클로드"
     ],
+    "https://www.threads.com/@ddg.kang/post/DUlWTf6kyKL": [
+        "클로드"
+    ],
     "https://www.threads.com/@ddg.kang/post/DUyBtrIk73q": [
         "클로드"
     ],
@@ -2057,6 +1484,13 @@
     ],
     "https://www.threads.com/@design_boc/post/DVYLkuljxBN": [
         "클로드"
+    ],
+    "https://www.threads.com/@dev_shibaa/post/DSq3vMgkjNd": [
+        "마케팅"
+    ],
+    "https://www.threads.com/@dev_shibaa/post/DTW2wockmnA": [
+        "안티그래비티",
+        "gemini"
     ],
     "https://www.threads.com/@devdesign.kr/post/DVLtjOAkvqN": [
         "이미지",
@@ -2098,6 +1532,19 @@
         "gemini",
         "이미지"
     ],
+    "https://www.threads.com/@easygpt2526/post/DUUXKhGAG4-": [
+        "ppt",
+        "gemini",
+        "이미지"
+    ],
+    "https://www.threads.com/@easygpt2526/post/DUkMWqNk9OY": [
+        "gemini"
+    ],
+    "https://www.threads.com/@edtkworker/post/DTW40xejLeJ": [
+        "이미지",
+        "나노바나나",
+        "ppt"
+    ],
     "https://www.threads.com/@ejang/post/DVVGbc1kUFj": [
         "클로드"
     ],
@@ -2115,6 +1562,9 @@
     ],
     "https://www.threads.com/@exitnomadlab/post/DV4uaOmgWWg": [
         "이미지"
+    ],
+    "https://www.threads.com/@extsvforest/post/DS_5JEXkRNy": [
+        "클로드"
     ],
     "https://www.threads.com/@feelfree_ai/post/DT4l8iRDMS1": [
         "기획",
@@ -2137,11 +1587,24 @@
     "https://www.threads.com/@flowkater/post/DVkzBZ3Dwkd": [
         "클로드"
     ],
+    "https://www.threads.com/@focusrefresh/post/DSrr84flFEq": [
+        "gemini"
+    ],
+    "https://www.threads.com/@freainer/post/DUALirekrKe": [
+        "클로드"
+    ],
     "https://www.threads.com/@freainer/post/DVmx48kiqm0": [
         "클로드",
         "기획"
     ],
     "https://www.threads.com/@freainer/post/DWBdW9lFM4N": [
+        "클로드"
+    ],
+    "https://www.threads.com/@gaebalsaybal/post/DUWSRnukzT3": [
+        "클로드"
+    ],
+    "https://www.threads.com/@geumverse_ai/post/DUUYhntk4Ey": [
+        "마케팅",
         "클로드"
     ],
     "https://www.threads.com/@geumverse_ai/post/DVOI916E_Yh": [
@@ -2154,12 +1617,24 @@
     "https://www.threads.com/@glitter_ai_factory/post/DV6zkqPk1kx": [
         "클로드"
     ],
+    "https://www.threads.com/@gogosing__77/post/DTjxDSCkeae": [
+        "gemini",
+        "기획",
+        "마케팅",
+        "노션"
+    ],
     "https://www.threads.com/@gogosing__77/post/DU7UX8-EYtS": [
         "gemini"
     ],
     "https://www.threads.com/@goldxgeum/post/DV8Jja4jEa7": [
         "gemini",
         "클로드"
+    ],
+    "https://www.threads.com/@gonnector/post/DTzWbLkE2JY": [
+        "gemini",
+        "이미지",
+        "노트북LM",
+        "ppt"
     ],
     "https://www.threads.com/@goos.kim/post/DXDQOLzkocY": [
         "ppt",
@@ -2174,6 +1649,10 @@
     ],
     "https://www.threads.com/@gpt_minje/post/DVT1I-lEpdz": [
         "클로드"
+    ],
+    "https://www.threads.com/@gpt_park/post/DTHEhJqDa_F": [
+        "이미지",
+        "gemini"
     ],
     "https://www.threads.com/@gptaku_ai/post/DU2-cvPkyI9": [
         "클로드"
@@ -2218,14 +1697,58 @@
     "https://www.threads.com/@greennuri428/post/DVd3cbWD5Pd": [
         "클로드"
     ],
+    "https://www.threads.com/@guuu.dev/post/DUIde2xEySD": [
+        "클로드"
+    ],
     "https://www.threads.com/@gwon_vibe/post/DSCYa1wk6PG": [
         "클로드"
+    ],
+    "https://www.threads.com/@gwon_vibe/post/DSSAJEckx6p": [
+        "클로드"
+    ],
+    "https://www.threads.com/@gwon_vibe/post/DTO3zt4EwZx": [
+        "이미지",
+        "클로드",
+        "안티그래비티",
+        "나노바나나"
+    ],
+    "https://www.threads.com/@gyeol_hh/post/DUDvQcJkoSP": [
+        "클로드",
+        "노션"
     ],
     "https://www.threads.com/@gyunny/post/DVDUL6jk9CG": [
         "옵시디언"
     ],
     "https://www.threads.com/@ha_rim_kang/post/DWBBTV8CTxq": [
         "기획"
+    ],
+    "https://www.threads.com/@hajae.code/post/DTojOZDDwdm": [
+        "gemini",
+        "이미지",
+        "마케팅"
+    ],
+    "https://www.threads.com/@health_love_wealth_/post/DT0InBtEnzX": [
+        "gemini"
+    ],
+    "https://www.threads.com/@heedam_i/post/DTAkzttkvIM": [
+        "이미지"
+    ],
+    "https://www.threads.com/@heon_yun/post/DT5T4kmEsEG": [
+        "클로드",
+        "안티그래비티"
+    ],
+    "https://www.threads.com/@hinjiroffffff/post/DUC8laUCQ5M": [
+        "gemini"
+    ],
+    "https://www.threads.com/@hinjiroffffff/post/DUFkzGvAa6T": [
+        "gemini",
+        "기획"
+    ],
+    "https://www.threads.com/@hinjiroffffff/post/DUIEGGAAagR": [
+        "gemini"
+    ],
+    "https://www.threads.com/@hinjiroffffff/post/DUIEKu_gZ64": [
+        "gemini"
     ],
     "https://www.threads.com/@homebodify/post/DTZ6HqrgTPI": [
         "클로드"
@@ -2270,15 +1793,55 @@
         "이미지",
         "기획"
     ],
+    "https://www.threads.com/@iamdrtk/post/DUBeqaViJkN": [
+        "노션",
+        "옵시디언",
+        "클로드"
+    ],
     "https://www.threads.com/@im__hoya/post/DVc33-glYkd": [
         "클로드",
         "하네스"
+    ],
+    "https://www.threads.com/@immersivebama/post/DTdRm8xlJv6": [
+        "안티그래비티"
+    ],
+    "https://www.threads.com/@info__sum/post/DUHdfmjEizy": [
+        "gemini",
+        "이미지"
+    ],
+    "https://www.threads.com/@inner.builder/post/DUUBhjKgeKZ": [
+        "노트북LM",
+        "옵시디언"
+    ],
+    "https://www.threads.com/@insta_yoonchan/post/DTKt8TqgRkq": [
+        "gemini"
+    ],
+    "https://www.threads.com/@insta_yoonchan/post/DTMJC39Et_M": [
+        "마케팅"
     ],
     "https://www.threads.com/@inthe2floor/post/DWYLJZuj1HU": [
         "클로드"
     ],
     "https://www.threads.com/@irijeri.gungli/post/DUWcgibE0pE": [
         "이미지"
+    ],
+    "https://www.threads.com/@irum_hahn/post/DTC13mTgtbj": [
+        "이미지"
+    ],
+    "https://www.threads.com/@itszoejeong/post/DT-HYr3Eofo": [
+        "gemini",
+        "노션",
+        "ppt"
+    ],
+    "https://www.threads.com/@itszoejeong/post/DUAvS3CkiXu": [
+        "노트북LM",
+        "ppt"
+    ],
+    "https://www.threads.com/@itszoejeong/post/DURwmBAEh6d": [
+        "안티그래비티",
+        "노트북LM",
+        "옵시디언",
+        "gemini"
     ],
     "https://www.threads.com/@jaeminyxjames/post/DWYl_MGlBK-": [
         "클로드"
@@ -2294,10 +1857,22 @@
     "https://www.threads.com/@jay_ai__/post/DVLSP_9iQoK": [
         "클로드"
     ],
+    "https://www.threads.com/@jeju_harry/post/DTo-ESagY-U": [
+        "나노바나나"
+    ],
     "https://www.threads.com/@jh_aicafe/post/DUuVPjBE42V": [
         "ppt",
         "이미지",
         "노트북LM"
+    ],
+    "https://www.threads.com/@jinsimcode/post/DUCrNqMk8vz": [
+        "클로드"
+    ],
+    "https://www.threads.com/@jisang0914/post/DTXV6R6E-IZ": [
+        "클로드"
+    ],
+    "https://www.threads.com/@jisang0914/post/DThEbxXk726": [
+        "클로드"
     ],
     "https://www.threads.com/@jjlabsio/post/DVT8ntXD9b1": [
         "클로드"
@@ -2331,6 +1906,10 @@
         "이미지",
         "클로드"
     ],
+    "https://www.threads.com/@jrara_sogood/post/DSzDa1TEeSg": [
+        "ppt",
+        "기획"
+    ],
     "https://www.threads.com/@jungathena_ai/post/DU4qI70kfka": [
         "ppt",
         "노트북LM"
@@ -2340,6 +1919,16 @@
     ],
     "https://www.threads.com/@keepgoing.lee.518/post/DVXx3OjjzlV": [
         "gemini"
+    ],
+    "https://www.threads.com/@keke_appa/post/DTAfwOWkpTe": [
+        "클로드"
+    ],
+    "https://www.threads.com/@keke_appa/post/DTzeV51Ek3p": [
+        "클로드",
+        "gemini"
+    ],
+    "https://www.threads.com/@keke_appa/post/DUTTMTDEoas": [
+        "클로드"
     ],
     "https://www.threads.com/@keke_appa/post/DVKLAKBkm52": [
         "클로드"
@@ -2356,6 +1945,12 @@
     "https://www.threads.com/@kimtbot/post/DXD4MmvEZxy": [
         "클로드"
     ],
+    "https://www.threads.com/@kkongdon_story/post/DUFb5JKkajY": [
+        "마케팅"
+    ],
+    "https://www.threads.com/@kkongdon_story/post/DUS4la6Ebp2": [
+        "기획"
+    ],
     "https://www.threads.com/@kkongdon_story/post/DVdZXJNkfDx": [
         "ppt",
         "노트북LM"
@@ -2368,6 +1963,11 @@
         "이미지",
         "클로드"
     ],
+    "https://www.threads.com/@kook0526/post/DUIjrz2DkLv": [
+        "클로드",
+        "기획",
+        "ppt"
+    ],
     "https://www.threads.com/@kyungju_benj/post/DWZOTXtAXol": [
         "gemini",
         "마케팅"
@@ -2375,6 +1975,20 @@
     "https://www.threads.com/@lazylittleyoyo/post/DVkPmm0kSWd": [
         "클로드",
         "옵시디언"
+    ],
+    "https://www.threads.com/@lazypencil_lab/post/DUAmX2YkSSm": [
+        "ppt",
+        "노트북LM",
+        "gemini",
+        "이미지",
+        "나노바나나"
+    ],
+    "https://www.threads.com/@lazypencil_lab/post/DUAmXxokePp": [
+        "ppt",
+        "gemini",
+        "이미지",
+        "노트북LM",
+        "나노바나나"
     ],
     "https://www.threads.com/@lazypencil_lab/post/DUp0sZjEdaL": [
         "노트북LM"
@@ -2406,6 +2020,12 @@
         "클로드",
         "마케팅"
     ],
+    "https://www.threads.com/@lov_entp/post/DUQZfiwDzO2": [
+        "gemini",
+        "클로드",
+        "기획",
+        "안티그래비티"
+    ],
     "https://www.threads.com/@lucas_flatwhite/post/DVm51eIEZ23": [
         "옵시디언"
     ],
@@ -2414,8 +2034,17 @@
         "클로드",
         "옵시디언"
     ],
+    "https://www.threads.com/@lucy_prime788/post/DTSPxhJFUre": [
+        "gemini"
+    ],
+    "https://www.threads.com/@lumiham0/post/DT-h_5NARCF": [
+        "이미지"
+    ],
     "https://www.threads.com/@mangopeach0/post/DWZHwN-k9YY": [
         "클로드"
+    ],
+    "https://www.threads.com/@manusai_kr/post/DTfeub8kXPD": [
+        "이미지"
     ],
     "https://www.threads.com/@marketadapter/post/DWjA0BnE5Qm": [
         "클로드"
@@ -2452,6 +2081,10 @@
         "이미지",
         "나노바나나"
     ],
+    "https://www.threads.com/@matt_dancho/post/DTnXmC9DuZZ": [
+        "gemini",
+        "클로드"
+    ],
     "https://www.threads.com/@mdmstudio_design/post/DW8ZNrTE-QT": [
         "기획"
     ],
@@ -2463,10 +2096,19 @@
         "클로드",
         "안티그래비티"
     ],
+    "https://www.threads.com/@mega_fluke/post/DUL4ogEko_E": [
+        "gemini",
+        "클로드",
+        "안티그래비티"
+    ],
     "https://www.threads.com/@mega_fluke/post/DUqKfGWket1": [
         "gemini",
         "클로드",
         "안티그래비티"
+    ],
+    "https://www.threads.com/@meteorsimulation/post/DUOV38Dktnd": [
+        "클로드",
+        "기획"
     ],
     "https://www.threads.com/@miminode_/post/DVqu0GNE8Dm": [
         "기획",
@@ -2515,6 +2157,9 @@
     "https://www.threads.com/@monca.dev/post/DVOGtKKCavr": [
         "기획"
     ],
+    "https://www.threads.com/@monica_from_korea/post/DTjHQUWk-Hy": [
+        "gemini"
+    ],
     "https://www.threads.com/@moongi_adventures/post/DWU6l1ij_ih": [
         "나노바나나"
     ],
@@ -2545,6 +2190,10 @@
     "https://www.threads.com/@neehoot/post/DWV-8uyEs5j": [
         "하네스"
     ],
+    "https://www.threads.com/@newnatrd/post/DT4v2-dEzVu": [
+        "기획",
+        "클로드"
+    ],
     "https://www.threads.com/@nick.frontier.curator/post/DWbFLLGlgSX": [
         "클로드"
     ],
@@ -2565,17 +2214,33 @@
         "기획",
         "노션"
     ],
+    "https://www.threads.com/@ody_daddy/post/DT_mtLmk6ix": [
+        "gemini",
+        "기획"
+    ],
     "https://www.threads.com/@ody_daddy/post/DTct_N_kxrn": [
         "안티그래비티"
     ],
+    "https://www.threads.com/@ody_daddy/post/DUHGprsCrmE": [
+        "클로드",
+        "기획",
+        "노트북LM"
+    ],
     "https://www.threads.com/@ody_daddy/post/DVZlMVugZRR": [
         "클로드"
+    ],
+    "https://www.threads.com/@ok_k_studio/post/DTF2ha_ibNE": [
+        "마케팅"
     ],
     "https://www.threads.com/@ok_min87/post/DWh_Z84E_RM": [
         "클로드"
     ],
     "https://www.threads.com/@olive.r_327/post/DVyPuOtCRGt": [
         "마케팅"
+    ],
+    "https://www.threads.com/@opal.gongbang/post/DUK66UNE-rX": [
+        "이미지",
+        "나노바나나"
     ],
     "https://www.threads.com/@openclaw_ko/post/DUsHiqqkYtA": [
         "클로드"
@@ -2625,6 +2290,10 @@
     "https://www.threads.com/@oz_coding_school/post/DTugejAgHNF": [
         "기획"
     ],
+    "https://www.threads.com/@pangol82/post/DTb_O9qgYEJ": [
+        "gemini",
+        "노트북LM"
+    ],
     "https://www.threads.com/@papapat.ai/post/DVYPi8FgVWn": [
         "클로드"
     ],
@@ -2641,16 +2310,71 @@
     "https://www.threads.com/@peterkimpmp/post/DWsgUwVkTei": [
         "옵시디언"
     ],
+    "https://www.threads.com/@pitchtitan/post/DSxB_M8D0dn": [
+        "노트북LM",
+        "gemini",
+        "ppt"
+    ],
+    "https://www.threads.com/@pitchtitan/post/DT93gttj4S1": [
+        "안티그래비티",
+        "gemini"
+    ],
+    "https://www.threads.com/@planum.one/post/DUGJxoEkbWv": [
+        "클로드"
+    ],
+    "https://www.threads.com/@pm_anyway/post/DT99oVWkh8u": [
+        "노트북LM"
+    ],
     "https://www.threads.com/@pm_anyway/post/DTfC9XAEgCD": [
         "클로드"
     ],
     "https://www.threads.com/@pnkmath/post/DWCg4eNDKT8": [
         "클로드"
     ],
+    "https://www.threads.com/@programmingzombie/post/DSEhu-lE8kp": [
+        "기획",
+        "마케팅"
+    ],
+    "https://www.threads.com/@programmingzombie/post/DSEhurTk84N": [
+        "기획",
+        "마케팅"
+    ],
     "https://www.threads.com/@prong_ai/post/DVc35-iks0x": [
         "이미지"
     ],
+    "https://www.threads.com/@proverbsnapshots/post/DUPuqTXk-f3": [
+        "기획",
+        "옵시디언",
+        "안티그래비티"
+    ],
+    "https://www.threads.com/@proverbsnapshots/post/DUQqrL-k6dQ": [
+        "노트북LM",
+        "안티그래비티"
+    ],
     "https://www.threads.com/@qjc.ai/post/DSKaU75D9h1": [
+        "클로드"
+    ],
+    "https://www.threads.com/@qjc.ai/post/DTUq6Lpj-zt": [
+        "gemini",
+        "클로드"
+    ],
+    "https://www.threads.com/@qjc.ai/post/DThwzd7D_z-": [
+        "gemini",
+        "클로드"
+    ],
+    "https://www.threads.com/@qjc.ai/post/DTwVSyTjMaz": [
+        "gemini",
+        "이미지",
+        "클로드"
+    ],
+    "https://www.threads.com/@qjc.ai/post/DTzr3XyD9pL": [
+        "gemini",
+        "클로드",
+        "안티그래비티"
+    ],
+    "https://www.threads.com/@qjc.ai/post/DUK7AjFDxeH": [
+        "기획",
+        "마케팅",
         "클로드"
     ],
     "https://www.threads.com/@qjc.ai/post/DVnG0Awkz02": [
@@ -2660,6 +2384,11 @@
     "https://www.threads.com/@readyto_da4/post/DUs6iJtCcdv": [
         "안티그래비티"
     ],
+    "https://www.threads.com/@redbearhbj/post/DUHi67GEhVw": [
+        "마케팅",
+        "클로드",
+        "ppt"
+    ],
     "https://www.threads.com/@reframe77/post/DU7IWYRiV0W": [
         "노션"
     ],
@@ -2668,6 +2397,11 @@
     ],
     "https://www.threads.com/@roac.h7839/post/DVnd3g0jxKk": [
         "gemini"
+    ],
+    "https://www.threads.com/@robin_just_ship_it/post/DT9e9jOkc7M": [
+        "gemini",
+        "이미지",
+        "클로드"
     ],
     "https://www.threads.com/@ryusw007/post/DUsSx7fkkzc": [
         "클로드",
@@ -2679,6 +2413,12 @@
         "클로드",
         "기획"
     ],
+    "https://www.threads.com/@sangdamgac/post/DTTJ9SJE4YD": [
+        "마케팅"
+    ],
+    "https://www.threads.com/@sarah.eat.mom/post/DTUEEroki7e": [
+        "나노바나나"
+    ],
     "https://www.threads.com/@senjttn/post/DW7rE9qjwIn": [
         "클로드"
     ],
@@ -2687,6 +2427,10 @@
     ],
     "https://www.threads.com/@seolo_o/post/DUqZbPtk3Fu": [
         "클로드"
+    ],
+    "https://www.threads.com/@seulgi.kaang/post/DT93hEfj7TV": [
+        "클로드",
+        "안티그래비티"
     ],
     "https://www.threads.com/@shuntailor/post/DV1Uh5kkXzw": [
         "클로드"
@@ -2702,12 +2446,23 @@
     "https://www.threads.com/@sihyun_adventure/post/DVKFUUDk2ak": [
         "클로드"
     ],
+    "https://www.threads.com/@silsangv/post/DUPcmH7EZJc": [
+        "gemini",
+        "클로드",
+        "안티그래비티"
+    ],
     "https://www.threads.com/@since_1985_love/post/DV4zFBuD9gA": [
         "클로드"
     ],
     "https://www.threads.com/@sleepcycle_/post/DU_0bkPk5Ht": [
         "gemini",
         "기획"
+    ],
+    "https://www.threads.com/@slowsoyang/post/DUGCUWLCUFc": [
+        "클로드",
+        "안티그래비티",
+        "노션",
+        "옵시디언"
     ],
     "https://www.threads.com/@slowsoyang/post/DWB2Lu1CSAV": [
         "클로드",
@@ -2719,17 +2474,101 @@
         "옵시디언",
         "클로드"
     ],
+    "https://www.threads.com/@social.romanc/post/DTykKIbES09": [
+        "기획",
+        "마케팅"
+    ],
     "https://www.threads.com/@softdaddy_o/post/DV73FdujLM3": [
         "클로드"
     ],
     "https://www.threads.com/@softdaddy_o/post/DViQSbAEvMI": [
         "클로드"
     ],
+    "https://www.threads.com/@specal1849/post/DNkdqoARStO": [
+        "나노바나나",
+        "gemini",
+        "기획"
+    ],
+    "https://www.threads.com/@specal1849/post/DOkU-Zhkk5J": [
+        "ppt",
+        "gemini",
+        "나노바나나"
+    ],
+    "https://www.threads.com/@specal1849/post/DOshd8oEcaT": [
+        "ppt",
+        "나노바나나",
+        "노션"
+    ],
+    "https://www.threads.com/@specal1849/post/DR5eEaEE9_R": [
+        "gemini",
+        "기획"
+    ],
+    "https://www.threads.com/@specal1849/post/DR5lIlhEntF": [
+        "클로드"
+    ],
+    "https://www.threads.com/@specal1849/post/DRftFAqE3Pv": [
+        "gemini",
+        "나노바나나",
+        "ppt"
+    ],
+    "https://www.threads.com/@specal1849/post/DRp8XdFE2VH": [
+        "이미지",
+        "나노바나나",
+        "gemini"
+    ],
+    "https://www.threads.com/@specal1849/post/DRysL3RkpGl": [
+        "gemini",
+        "클로드",
+        "노션",
+        "기획"
+    ],
+    "https://www.threads.com/@specal1849/post/DSBpzvtkVTT": [
+        "나노바나나",
+        "이미지"
+    ],
+    "https://www.threads.com/@specal1849/post/DSE1xdPkpu-": [
+        "이미지",
+        "gemini"
+    ],
+    "https://www.threads.com/@specal1849/post/DSI4E1AkaQ0": [
+        "나노바나나"
+    ],
+    "https://www.threads.com/@specal1849/post/DSJ-s-OEj2D": [
+        "gemini"
+    ],
+    "https://www.threads.com/@specal1849/post/DSLinAmE2my": [
+        "노션",
+        "gemini",
+        "나노바나나"
+    ],
+    "https://www.threads.com/@specal1849/post/DSLtNP8Em2v": [
+        "클로드",
+        "옵시디언"
+    ],
+    "https://www.threads.com/@specal1849/post/DSTWkAOESmj": [
+        "gemini"
+    ],
+    "https://www.threads.com/@specal1849/post/DSmUMfvkQ_v": [
+        "노트북LM",
+        "ppt"
+    ],
+    "https://www.threads.com/@specal1849/post/DSyzX_MEq66": [
+        "이미지",
+        "클로드",
+        "나노바나나",
+        "gemini"
+    ],
+    "https://www.threads.com/@specal1849/post/DTWRE-4EbAC": [
+        "gemini"
+    ],
     "https://www.threads.com/@specal1849/post/DU9NcpkEW9G": [
         "클로드",
         "안티그래비티",
         "기획",
         "나노바나나"
+    ],
+    "https://www.threads.com/@specal1849/post/DUZLMwvkojo": [
+        "클로드"
     ],
     "https://www.threads.com/@specal1849/post/DUwqNwDEXhp": [
         "ppt",
@@ -2753,11 +2592,31 @@
         "ppt",
         "하네스"
     ],
+    "https://www.threads.com/@starcomo/post/DUK7uIXkklz": [
+        "기획"
+    ],
+    "https://www.threads.com/@starcomo/post/DULCfk1EqLV": [
+        "기획"
+    ],
+    "https://www.threads.com/@starstarlight_marketing/post/DSxdPoCj5rz": [
+        "노트북LM",
+        "gemini",
+        "ppt"
+    ],
     "https://www.threads.com/@stashby.me/post/DTCYCp1ErLv": [
         "마케팅"
     ],
     "https://www.threads.com/@stashby.me/post/DWsU0PGgGO6": [
         "노션"
+    ],
+    "https://www.threads.com/@steady__study.dev/post/DT8s5gck3xJ": [
+        "마케팅",
+        "클로드"
+    ],
+    "https://www.threads.com/@steady__study.dev/post/DTgpH7LE7g-": [
+        "ppt",
+        "이미지",
+        "클로드"
     ],
     "https://www.threads.com/@steady__study.dev/post/DUGFSwzgfmA": [
         "클로드",
@@ -2766,8 +2625,19 @@
     "https://www.threads.com/@steady__study.dev/post/DUKUnJ3kciv": [
         "하네스"
     ],
+    "https://www.threads.com/@stormleehj/post/DUQTVuyD1V9": [
+        "노션",
+        "옵시디언"
+    ],
+    "https://www.threads.com/@struc___ture/post/DSwwrTGk7d0": [
+        "gemini",
+        "클로드"
+    ],
     "https://www.threads.com/@studiobyprompt/post/DU4nW8bE7bg": [
         "클로드"
+    ],
+    "https://www.threads.com/@study_ing_squirrel/post/DSy1y1QARLv": [
+        "gemini"
     ],
     "https://www.threads.com/@sudo.gunn.kr/post/DRrYr4-itgh": [
         "gemini",
@@ -2807,11 +2677,19 @@
     "https://www.threads.com/@tableau_viz/post/DUpETvED2hc": [
         "클로드"
     ],
+    "https://www.threads.com/@taehyeong_lim/post/DTVOakVkSUb": [
+        "안티그래비티",
+        "옵시디언"
+    ],
     "https://www.threads.com/@tatum_hq/post/DWXVOIQEzNc": [
         "클로드"
     ],
     "https://www.threads.com/@teabag_kor/post/DVU0tMvEb3V": [
         "옵시디언"
+    ],
+    "https://www.threads.com/@tech.taek/post/DTe6-aPCY76": [
+        "gemini",
+        "안티그래비티"
     ],
     "https://www.threads.com/@tech.taek/post/DUrlabpic31": [
         "이미지",
@@ -2823,6 +2701,11 @@
     "https://www.threads.com/@the.brain.trinity/post/DXCYGNGk5V9": [
         "클로드",
         "옵시디언"
+    ],
+    "https://www.threads.com/@the_unwork/post/DTgo1tgkzfe": [
+        "기획",
+        "마케팅",
+        "노션"
     ],
     "https://www.threads.com/@thedalbee/post/DUXvFrqESMP": [
         "클로드",
@@ -2838,11 +2721,33 @@
     "https://www.threads.com/@tilnote/post/DWiixLQk2wz": [
         "클로드"
     ],
+    "https://www.threads.com/@tofukyung/post/DPRP3W3Annj": [
+        "이미지",
+        "클로드"
+    ],
+    "https://www.threads.com/@tofukyung/post/DTAR3TmAj-F": [
+        "이미지",
+        "gemini",
+        "클로드"
+    ],
+    "https://www.threads.com/@tofukyung/post/DTq4Wg9E8Tn": [
+        "클로드",
+        "안티그래비티",
+        "옵시디언"
+    ],
     "https://www.threads.com/@tofukyung/post/DVetfook8lm": [
         "클로드"
     ],
+    "https://www.threads.com/@tornado_616/post/DS-BymgDQdD": [
+        "ppt",
+        "gemini",
+        "노트북LM"
+    ],
     "https://www.threads.com/@toy_crane911/post/DRim2UkknAR": [
         "클로드"
+    ],
+    "https://www.threads.com/@tuberithm/post/DS_CJRHk-Lw": [
+        "노트북LM"
     ],
     "https://www.threads.com/@unclejobs.ai/post/DUyVgLBk7NT": [
         "클로드"
@@ -2909,6 +2814,9 @@
         "클로드",
         "옵시디언"
     ],
+    "https://www.threads.com/@ur.future.ai/post/DUU0S9ZkqQr": [
+        "기획"
+    ],
     "https://www.threads.com/@vibe.aipm/post/DWZNnK9k77n": [
         "클로드",
         "노션"
@@ -2957,6 +2865,16 @@
     "https://www.threads.com/@winter_kyul/post/DUn02Eukm2o": [
         "클로드"
     ],
+    "https://www.threads.com/@xeona.xyz/post/DUVOj-xAVR3": [
+        "클로드"
+    ],
+    "https://www.threads.com/@yeoamlog/post/DUQT-dageiP": [
+        "노션",
+        "옵시디언"
+    ],
+    "https://www.threads.com/@yourgpt3650/post/DTUAdBHjV7G": [
+        "기획"
+    ],
     "https://www.threads.com/@yourgpt3650/post/DVKxns-DSHY": [
         "gemini",
         "마케팅"
@@ -2971,6 +2889,9 @@
     "https://www.threads.com/@yun_ja_dong/post/DVaS92nkzJ6": [
         "클로드",
         "기획"
+    ],
+    "https://www.threads.com/@yyn.star/post/DTo7IpQAQnf": [
+        "이미지"
     ],
     "https://www.threads.com/t/DT6r--5j5Pp": [
         "클로드"
@@ -3005,5 +2926,110 @@
         "gemini",
         "클로드",
         "안티그래비티"
+    ],
+    "https://x.com/0xCrocy/status/2022307265773031472": [
+        "클로드"
+    ],
+    "https://x.com/AlexZio00/status/2025027520668864965": [
+        "노트북LM"
+    ],
+    "https://x.com/Banbo_Insight/status/2018987561604268442": [
+        "마케팅",
+        "클로드"
+    ],
+    "https://x.com/ChrisLaubAI/status/2022243294349320283": [
+        "클로드"
+    ],
+    "https://x.com/DeepDive_KR/status/2038906644201881911": [
+        "클로드"
+    ],
+    "https://x.com/Gonnector/status/2021791345162301752": [
+        "기획",
+        "클로드",
+        "ppt"
+    ],
+    "https://x.com/LearnerBR/status/2038662987242991775": [
+        "클로드"
+    ],
+    "https://x.com/Marryclaire_AI/status/2023098099590467672": [
+        "노트북LM"
+    ],
+    "https://x.com/Marryclaire_AI/status/2024886333085548860": [
+        "클로드"
+    ],
+    "https://x.com/Suryanshti777/status/2024780155428982985": [
+        "클로드"
+    ],
+    "https://x.com/WhitePeach/status/2038884237840150941": [
+        "클로드"
+    ],
+    "https://x.com/aakashgupta/status/2038713289254064321": [
+        "클로드"
+    ],
+    "https://x.com/aiwithjainam/status/1994363245512241167": [
+        "클로드",
+        "gemini"
+    ],
+    "https://x.com/aiwithjainam/status/2021179767228354988": [
+        "클로드"
+    ],
+    "https://x.com/aiwithmayank/status/2021555296951513414": [
+        "클로드"
+    ],
+    "https://x.com/benjitaylor/status/2027902450049708385": [
+        "클로드"
+    ],
+    "https://x.com/block_atom/status/2024968812987142469": [
+        "클로드"
+    ],
+    "https://x.com/crystalsssup/status/2013558837962514741": [
+        "ppt"
+    ],
+    "https://x.com/dotey/status/2013044625238339994": [
+        "클로드",
+        "gemini"
+    ],
+    "https://x.com/emilylambert/status/2019947921823944778": [
+        "클로드"
+    ],
+    "https://x.com/geekmaker_/status/2038903921763348845": [
+        "하네스"
+    ],
+    "https://x.com/golbin/status/2038844901648142534": [
+        "클로드"
+    ],
+    "https://x.com/hayyantechtalks/status/2024716712202162490": [
+        "노트북LM"
+    ],
+    "https://x.com/heynavtoor/status/2023786876667302114": [
+        "클로드"
+    ],
+    "https://x.com/jaehwa/status/2015913055285375415": [
+        "클로드"
+    ],
+    "https://x.com/karpathy/status/2039805659525644595": [
+        "옵시디언"
+    ],
+    "https://x.com/lucas_flatwhite/status/2021084481604771937": [
+        "클로드"
+    ],
+    "https://x.com/lucas_flatwhite/status/2022820131848815100": [
+        "이미지"
+    ],
+    "https://x.com/lucas_flatwhite/status/2025041022003409141": [
+        "클로드"
+    ],
+    "https://x.com/socialwithaayan/status/2021233357514997824": [
+        "클로드"
+    ],
+    "https://x.com/sorenblank/status/2021671940646482267": [
+        "gemini"
+    ],
+    "https://x.com/toppingtest/status/2038744833351893274": [
+        "옵시디언",
+        "클로드"
+    ],
+    "https://x.com/yozm_it/status/2021492537861853558": [
+        "클로드"
     ]
 }
