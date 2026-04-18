@@ -23,6 +23,13 @@ playwright install chromium
 npm install
 ```
 
+X detail consumer 추가 준비:
+
+```powershell
+pipx install twitter-cli
+twitter --help
+```
+
 환경 변수는 `.env.local`에 둡니다.
 
 ```env
@@ -38,10 +45,22 @@ Threads와 LinkedIn 세션을 다시 저장할 때:
 python renew_auth.py
 ```
 
-X(Twitter) Chrome 프로필을 다시 저장할 때:
+X(Twitter) 인증은 producer와 consumer 역할을 분리해 관리합니다.
+
+- `twitter_scrap.py`: `auth/x_user_data/` persistent Chrome profile
+- `twitter_scrap_single.py`: `auth/x_cookies_*.json` -> `twitter-cli`
+- 인증 갱신 스크립트: `renew_twitter_auth.py`, `inject_x_cookies.py`
+
+producer용 X Chrome 프로필을 다시 저장할 때:
 
 ```powershell
 python renew_twitter_auth.py
+```
+
+저장된 고정 쿠키 파일을 persistent profile에 주입할 때:
+
+```powershell
+python inject_x_cookies.py
 ```
 
 ## 실행
@@ -83,6 +102,8 @@ python twitter_scrap_single.py
 ```
 
 `npm run scrap:threads`, `npm run scrap:linkedin`, `npm run scrap:all`도 같은 스크립트를 감싸는 래퍼입니다.
+
+X consumer 토큰이 없으면 `twitter_scrap_single.py` 상세 수집은 건너뛰고, 기존 메타데이터 기준 full 동기화만 진행합니다.
 
 ## 웹 뷰어와 태그 저장
 

@@ -114,18 +114,18 @@ REQUIRED_FIELDS = ["sns_platform", "username", "url", "created_at"]
 ### X(Twitter)
 
 - 목록 수집기: `twitter_scrap.py`
-- 상세 수집기: `twitter_scrap_single.py`
-- 상세 HTML 파서: `utils/twitter_parser.py`
+- 상세 수집기: `twitter_scrap_single.py` (`twitter-cli` 기반 focal tweet collector)
+- 레거시 상세 HTML 파서: `utils/twitter_parser.py` (회귀 테스트용 유지, runtime 미사용)
 
 주요 매핑:
 
 - `platform_id`: `rest_id`
-- `full_text`: `note_tweet` 우선, 없으면 legacy `full_text`
-- `media`: 이미지 URL 수집, 상세 단계에서 보강
-- `created_at`: Twitter API `created_at` 파싱
+- `full_text`: `twitter-cli` payload의 `data[0].text`만 저장
+- `media`: `photo`는 `wsrv` URL, `video`와 `animated_gif`는 raw URL 저장
+- `created_at`: 목록 단계 값이 있으면 유지하고, 비어 있을 때만 상세 단계 수집 시각으로 fallback 채움
 - `url`: 기본은 `https://x.com/{username}/status/{post_id}`, 사용자명이 비어 있으면 `https://x.com/i/status/{post_id}`
 
-상세 수집 단계에서 실제 이동 URL과 작성자명이 확인되면 `username`과 `url`이 재보정될 수 있다.
+상세 수집 단계에서 실제 focal tweet 작성자명이 확인되면 `username`과 `url`이 재보정될 수 있다.
 
 ## URL 정규화 규칙
 

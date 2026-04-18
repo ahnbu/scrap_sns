@@ -52,8 +52,11 @@ created: "2026-04-17 13:25"
 ### X(Twitter)
 
 1. `twitter_scrap.py`가 북마크 타임라인 JSON과 HTML fallback에서 simple 목록을 만든다.
-2. `twitter_scrap_single.py`가 상세 페이지에 들어가 본문, 미디어, 실제 작성자명을 보강한다.
-3. 3회 이상 실패한 항목은 `scrap_failures_twitter.json`을 기준으로 잠시 제외한다.
+2. `twitter_scrap_single.py`가 `auth/x_cookies_*.json`에서 `auth_token`, `ct0`를 읽고 `twitter tweet <url> --json`으로 focal tweet 상세를 조회한다.
+3. 상세 단계는 CLI payload의 첫 항목만 사용해 focal tweet 본문, 미디어, 실제 작성자명만 보강한다. 대화 전체 thread 확장은 하지 않는다.
+4. 3회 이상 실패한 항목은 `scrap_failures_twitter.json`을 기준으로 잠시 제외한다.
+
+consumer 토큰이 없으면 상세 수집은 건너뛰고, simple 기반 메타데이터/full 동기화만 계속 진행한다.
 
 주요 출력:
 
