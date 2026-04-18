@@ -4,6 +4,7 @@
 
 | 일시               | 유형       | 범위                           | 변경내용                                                                                                           |
 | ---------------- | -------- | ---------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| 2026-04-18 15:41 | docs | twitter-cli | consumer 전환 구현·검증 작업기록 저장 |
 | 2026-04-18 15:24 | docs | twitter-cli | consumer auth 분리와 focal-tweet 규칙 문서화 |
 | 2026-04-18 15:14 | fix | twitter-single | Playwright consumer를 twitter-cli 기반 browserless flow로 전환 |
 | 2026-04-18 15:01 | feat | twitter-cli | X consumer CLI adapter와 focal-tweet normalization 추가 |
