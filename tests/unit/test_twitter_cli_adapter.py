@@ -1,5 +1,6 @@
 import json
 import subprocess
+import sys
 from pathlib import Path
 
 from utils.twitter_cli_adapter import (
@@ -172,7 +173,14 @@ def test_fetch_tweet_detail_success_passes_args_env_and_parses_result():
 
     assert calls == [
         (
-            ["twitter", "tweet", "https://x.com/i/status/1", "--json"],
+            [
+                sys.executable,
+                "-m",
+                "twitter_cli.cli",
+                "tweet",
+                "https://x.com/i/status/1",
+                "--json",
+            ],
             {
                 "capture_output": True,
                 "text": True,

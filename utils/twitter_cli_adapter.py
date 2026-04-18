@@ -4,6 +4,7 @@ import glob
 import json
 import os
 import subprocess
+import sys
 from dataclasses import dataclass
 
 WSRV_PREFIX = "https://wsrv.nl/?url="
@@ -81,7 +82,7 @@ def parse_twitter_cli_payload(payload, fallback_user):
 def fetch_tweet_detail(url, target_user, env, timeout=30, runner=subprocess.run):
     try:
         result = runner(
-            ["twitter", "tweet", url, "--json"],
+            [sys.executable, "-m", "twitter_cli.cli", "tweet", url, "--json"],
             capture_output=True,
             text=True,
             encoding="utf-8",
