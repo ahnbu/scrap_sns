@@ -60,6 +60,52 @@ ai: codex
 | 최종 코드 리뷰 | commit range `ab9b3eb..a84c76f` 리뷰 | ✅ findings 없음 | `Ready to merge: yes` |
 | JSON2MD 경고 확인 | `python total_scrap.py --mode update` 로그 확인 | ⚠️ 경고 | `output_total/total_full_20260418.json` BOM 경고가 남음 |
 
+## 최종 검수 보고서
+
+검수 시점 메모: 아래 내용은 사용자 제공 최종 검수 보고서 기준을 보존한 것이다. 보고서의 커밋 수와 참고사항은 `a84c76f` 시점 기준이며, 이후 문서 저장/정리 커밋은 별도다.
+
+### 테스트 결과
+
+| 테스트 | 결과 |
+|------|------|
+| `tests/unit/test_twitter_cli_adapter.py` (11건) | ✅ passed |
+| `tests/integration/test_twitter_scrap_single_cli.py` (6건) | ✅ passed |
+| `tests/unit/test_twitter_parser.py` (2건, 레거시) | ✅ passed |
+| `tests/integration/test_parser_integration.py` (4건, 레거시) | ✅ passed |
+| `tests/contract/test_schemas.py` (1건) | ✅ passed |
+| 총 24건 | ✅ `0.4초` |
+
+### Plan 체크리스트 대조
+
+| Exit Criteria | 충족 |
+|------|------|
+| `twitter_scrap_single.py`가 Playwright 없이 실행 | ✅ Playwright import 완전 제거 확인 |
+| `utils/twitter_cli_adapter.py` 생성 | ✅ 102줄, DI 패턴 |
+| Fixture 3건 승격 | ✅ `tests/fixtures/twitter_cli/` 확인 |
+| `utils/twitter_parser.py` + 테스트 유지 | ✅ 파일 3개 모두 존재 |
+| README 인증 분리 문서화 | ✅ producer/consumer 역할 명시 |
+| `docs/development.md` 현행화 | ✅ `twitter-cli`, focal tweet 반영 |
+| `docs/crawling_logic.md` 현행화 | ✅ `twitter-cli` 기반 flow 반영 |
+| CHANGELOG 업데이트 | ✅ 2개 커밋 |
+| self-thread parity 미주장 | ✅ focal tweet만 |
+
+### 크리티컬 이슈
+
+- 없음
+
+### 비크리티컬 참고사항
+
+| 항목 | 설명 | 영향 |
+|------|------|------|
+| Task 3 docs 커밋 누락 | plan에는 3개 커밋(adapter/consumer/docs)이지만 실제는 2개(feat, fix)였고, docs 변경이 fix 커밋에 포함된 것으로 보인다는 지적 | 없음 — 코드 정합성 영향 없음 |
+| uncommitted plan 파일 변경 | `docs/01-plan/` 하위 `.plan.md` 파일들이 modified 상태라는 지적 | 없음 — 이번 작업과 무관한 기존 파일 |
+
+### 결론
+
+- 구현 완료
+- 크리티컬 이슈 없음
+- 운영 투입 가능
+
 ## 커밋 기록
 
 - `108726c` `feat(twitter-cli): X consumer CLI adapter 추가`
@@ -83,6 +129,7 @@ ai: codex
 | 출처 | 용도 |
 |------|------|
 | [[superpowers/plans/20260418_01_twitter-cli-consumer-전환계획]] | 구현 목표, scope lock, 검증 명령의 기준 |
+| [[plan-check/20260418_declarative-waddling-flask_검수보고서]] | 초기 plan 검수 지적과 수정 포인트 추적 |
 | [[development]] | X consumer source, media rule, `created_at` fallback 확인 |
 | [[crawling_logic]] | X producer/consumer 단계와 focal tweet only 규칙 확인 |
 | [[20260417_06_범위외-회귀-9건-구현-및-검증]] | 기존 작업기록 문서 구조와 기록 스타일 참조 |
