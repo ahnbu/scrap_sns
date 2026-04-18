@@ -81,9 +81,10 @@ REQUIRED_FIELDS = ["sns_platform", "username", "url", "created_at"]
 ### Threads
 
 - 목록 수집기: `thread_scrap.py`
-- 상세 수집기: `thread_scrap_single.py`
+- 상세 수집기: `thread_scrap_single.py` (`requests` 기반 browserless consumer)
+- 어댑터: `utils/threads_http_adapter.py`
 - 주요 응답 루트: `data.xdt_text_app_viewer.saved_media.edges`
-- 상세 추출 기준: `utils/threads_parser.py`
+- 상세 추출 기준: `utils/threads_parser.py` (변경 없음)
 
 주요 매핑:
 
@@ -94,7 +95,7 @@ REQUIRED_FIELDS = ["sns_platform", "username", "url", "created_at"]
 - `created_at`: `taken_at` 기반 절대 시각
 - `url`: `https://www.threads.com/@{username}/post/{code}`
 
-상세 수집기는 같은 작성자의 연속된 타래글을 병합해 `is_merged_thread`, `original_item_count` 같은 보조 정보를 붙일 수 있다.
+상세 수집기는 `auth/auth_threads.json` storage_state의 `.threads.com` 쿠키를 읽어 permalink HTML을 직접 가져오고, 같은 작성자의 연속된 타래글을 병합해 `is_merged_thread`, `original_item_count` 같은 보조 정보를 붙일 수 있다.
 
 ### LinkedIn
 

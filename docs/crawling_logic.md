@@ -28,9 +28,9 @@ created: "2026-04-17 13:25"
 ### Threads
 
 1. `thread_scrap.py`가 저장 목록을 스크롤하며 simple 파일을 만든다.
-2. simple 항목 중 `is_detail_collected`가 비어 있는 글만 `thread_scrap_single.py`가 상세 수집한다.
-3. 상세 수집기는 같은 작성자의 연속된 타래를 병합하고, full 파일에 승격한다.
-4. 저장 직전 `validate_post()`로 스키마 위반을 차단한다.
+2. simple 항목 중 `is_detail_collected`가 비어 있는 글만 `thread_scrap_single.py`가 `auth/auth_threads.json` 쿠키를 읽어 browserless `requests`로 permalink HTML을 가져온다.
+3. `utils/threads_parser.py`가 HTML에 임베드된 `thread_items`를 파싱하고, 상세 수집기는 같은 작성자의 연속된 타래를 병합해 full 파일에 승격한다.
+4. 실패 항목은 `scrap_failures_threads.json`에 누적하고, 저장 직전 `validate_post()`로 스키마 위반을 차단한다.
 
 주요 출력:
 

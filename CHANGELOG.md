@@ -4,6 +4,7 @@
 
 | 일시               | 유형       | 범위                           | 변경내용                                                                                                           |
 | ---------------- | -------- | ---------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| 2026-04-18 17:13 | docs | threads | consumer 인증 경로와 browserless 검증 내역 문서화 |
 | 2026-04-18 17:13 | fix | threads-single | Playwright consumer를 requests 기반 browserless flow로 전환 |
 | 2026-04-18 17:12 | feat | threads-http | Threads HTTP 어댑터와 browserless 상세 수집 경로 추가 |
 | 2026-04-18 15:53 | fix | twitter-cli | repo-local python 경로로 twitter-cli 0.8.5 고정 |

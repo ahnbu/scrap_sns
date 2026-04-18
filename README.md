@@ -45,6 +45,11 @@ Threads와 LinkedIn 세션을 다시 저장할 때:
 python renew_auth.py
 ```
 
+Threads 인증은 producer와 consumer가 같은 storage_state를 공유합니다.
+
+- `thread_scrap.py`: `auth/auth_threads.json` storage_state로 `/saved` 타임라인 수집
+- `thread_scrap_single.py`: 같은 storage_state의 `.threads.com` 쿠키를 `requests`에 주입
+
 X(Twitter) 인증은 producer와 consumer 역할을 분리해 관리합니다.
 
 - `twitter_scrap.py`: `auth/x_user_data/` persistent Chrome profile
@@ -104,6 +109,7 @@ python twitter_scrap_single.py
 `npm run scrap:threads`, `npm run scrap:linkedin`, `npm run scrap:all`도 같은 스크립트를 감싸는 래퍼입니다.
 
 X consumer 토큰이 없으면 `twitter_scrap_single.py` 상세 수집은 건너뛰고, 기존 메타데이터 기준 full 동기화만 진행합니다.
+Threads consumer는 Playwright 없이 `auth/auth_threads.json` 쿠키만 유효하면 실행됩니다.
 
 ## 웹 뷰어와 태그 저장
 
