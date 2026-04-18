@@ -1,5 +1,0 @@
-;/*FB_PKG_DELIM*/
-
-__d("useBarcelonaGetCommunityCustomFeedQuery$Parameters",["cr:4115"],(function(t,n,r,o,a,i,l){"use strict";i.exports=n("cr:4115")}),34);
-__d("useBarcelonaGetCommunityCustomFeedQuery_threadsRelayOperation",[],(function(t,n,r,o,a,i){a.exports="25150521051257509"}),null);
-__d("useBarcelonaGetCommunityCustomFeedQuery$Parameters.threads",["useBarcelonaGetCommunityCustomFeedQuery_threadsRelayOperation"],(function(t,n,r,o,a,i){"use strict";var e={kind:"PreloadableConcreteRequest",params:{id:n("useBarcelonaGetCommunityCustomFeedQuery_threadsRelayOperation"),metadata:{is_distillery:!0,root_field_name:["xdt_text_app_all_followed_interest_feeds"]},name:"useBarcelonaGetCommunityCustomFeedQuery",operationKind:"query",text:null}};a.exports=e}),null);
