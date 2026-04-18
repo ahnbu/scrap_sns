@@ -1,10 +1,10 @@
 ﻿const snsFeedData = {
   "metadata": {
-    "updated_at": "2026-04-17T14:29:34.962363",
-    "max_sequence_id": 1067,
-    "total_count": 1067,
-    "threads_count": 744,
-    "linkedin_count": 258,
+    "updated_at": "2026-04-18T17:09:31.799326",
+    "max_sequence_id": 1079,
+    "total_count": 1079,
+    "threads_count": 753,
+    "linkedin_count": 261,
     "twitter_count": 79,
     "execution_mode": "parallel_multi_window"
   },
@@ -20596,6 +20596,7 @@
       "local_images": [
         "web_viewer/images/dd78b407ad6c1113291d2971ded7dd6b.jpg"
       ],
+      "is_detail_collected": true,
       "is_merged_thread": false,
       "root_code": "DWvpO8hCUhN",
       "like_count": 51,
@@ -23075,6 +23076,7 @@
       "date": "2026-03-21",
       "crawled_at": "2026-04-11T17:21:05.923",
       "source": "network",
+      "is_detail_collected": true,
       "is_merged_thread": false,
       "root_code": "DWI70GEkXkG",
       "like_count": 120,
@@ -23418,6 +23420,7 @@
       "date": "2026-03-20",
       "crawled_at": "2026-04-11T17:21:08.986",
       "source": "network",
+      "is_detail_collected": true,
       "is_merged_thread": false,
       "root_code": "DWGqlw0Eo8v",
       "like_count": 235,
@@ -25679,6 +25682,30 @@
     },
     {
       "sequence_id": 1056,
+      "platform_id": "DXMU-ajjyUc",
+      "sns_platform": "threads",
+      "code": "DXMU-ajjyUc",
+      "username": "marketer.ai.seulki",
+      "display_name": "marketer.ai.seulki",
+      "full_text": "marketer.ai.seulki\nAX가 기업에 정착 못하는 이유,\n공들여 만든 대시보드가\n방치되는 이유랑 똑같더라\n/",
+      "media": [],
+      "url": "https://www.threads.net/@marketer.ai.seulki/post/DXMU-ajjyUc",
+      "created_at": "2026-04-16 21:50:01",
+      "date": "2026-04-16",
+      "crawled_at": "2026-04-17T09:50:19.328",
+      "source": "initial_dom",
+      "is_detail_collected": true,
+      "is_merged_thread": false,
+      "pk": null,
+      "like_count": -1,
+      "reply_count": -1,
+      "repost_count": -1,
+      "quote_count": -1,
+      "content_type": "text",
+      "platform_sequence_id": 710
+    },
+    {
+      "sequence_id": 1057,
       "platform_id": "DXMU-XZj6tW",
       "sns_platform": "threads",
       "code": "DXMU-XZj6tW",
@@ -25702,7 +25729,7 @@
       "platform_sequence_id": 710
     },
     {
-      "sequence_id": 1057,
+      "sequence_id": 1058,
       "platform_id": "DXGEZ02k9lA",
       "sns_platform": "threads",
       "code": "DXGEZ02k9lA",
@@ -25726,7 +25753,50 @@
       "platform_sequence_id": 706
     },
     {
-      "sequence_id": 1058,
+      "sequence_id": 1059,
+      "platform_id": "DXHFoWqj_mI",
+      "sns_platform": "threads",
+      "code": "DXHFoWqj_mI",
+      "username": "dev_roach_log",
+      "display_name": "roach",
+      "full_text": "Hermes에서 멀티 에이전트를 구축하는 방법을 카드뉴스로 정리했어요.\n\n한 대의 머신에서 여러 에이전트를 어떻게 완전히 격리할 수 있을까요?\n\nHermes의 Profile 기능으로 가능해요.\n\nProfile이란 완전히 격리된 Hermes 환경이에요.\n각 프로필은 독립적인 config, 메모리, 세션, 스킬, 게이트웨이를 가져요.",
+      "media": [
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/672458760_17865783306613459_1047450784423062490_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ig_cache_key=Mzg3NTA5MDc1OTU2OTg2ODQ1NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwODB4MTA4MC5zZHIuQzMifQ%3D%3D&_nc_ohc=LBelB1ci9nUQ7kNvwEhSxch&_nc_oc=Adrn0UsF3NIzcE1oOWGKrsyrY-5m1op08Kc9jc1lqthR_qc_Th6XdxgrnaXyh-7G6_c&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_gid=ktSh2lODHtVYYhVE195NHQ&_nc_ss=7a32e&oh=00_Af3-94w8Tae5gu_H_Zkbq3pGHERxuf-Dm-s-eAdR2wDZIA&oe=69E7570F",
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/670551344_17865783315613459_3255386905183730210_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=Mzg3NTA5MDc1OTc0NjA0ODY1Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwODB4MTA4MC5zZHIuQzMifQ%3D%3D&_nc_ohc=P3ob33I0PSQQ7kNvwG0nrBS&_nc_oc=AdoUAxbKP3PI0n9w-MUbheBHuBrvYJP7HzROAYXtOR66I1NH27ud6t9TA0Nt36lcyEk&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_gid=ktSh2lODHtVYYhVE195NHQ&_nc_ss=7a32e&oh=00_Af2zVIiNrK_7UQK9-9WWCazeZED7XgylvBbRfSvzz5zy7Q&oe=69E75CC0",
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/671832228_17865783327613459_1324274030290078318_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ig_cache_key=Mzg3NTA5MDc2MDEzMTkyOTIxOA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwODB4MTA4MC5zZHIuQzMifQ%3D%3D&_nc_ohc=BeCKaYYwxRgQ7kNvwHeK1eq&_nc_oc=Adq4Pla72prlovUZOSsgbtpfQadZnx_4DEGPTHi9rWIncyjMWR2k2aNhbeuAjxTuGfU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_gid=ktSh2lODHtVYYhVE195NHQ&_nc_ss=7a32e&oh=00_Af3BsjzlqYSb4w-9oTQvVih46wMf1Ox_x7bilrPzbrprhQ&oe=69E74A08",
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/671245399_17865783360613459_3689183704633162802_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=Mzg3NTA5MDc1OTkzODkzODI2OA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwODB4MTA4MC5zZHIuQzMifQ%3D%3D&_nc_ohc=dgUQKEszDz0Q7kNvwH_k-Tb&_nc_oc=AdoesrwNv1i2TXKoFzGfJsHiZkvdzgXjWvSjo9w_GqratXPDzSqlo6lTF5mfF-ISxNQ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_gid=ktSh2lODHtVYYhVE195NHQ&_nc_ss=7a32e&oh=00_Af3q6gZ-V0u4wqdWW5fjgUbCHz_SAxymVfslv0mwWWTNSA&oe=69E7521C",
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/671774226_17865783444613459_6976056833558047525_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ig_cache_key=Mzg3NTA5MDc1OTk0NzM1MDI5Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwODB4MTA4MC5zZHIuQzMifQ%3D%3D&_nc_ohc=18A5pzmevTAQ7kNvwEs9CyJ&_nc_oc=AdpJNvkXQ4EipTrSFi2yuMa__WkUau-O7PguD1113djM4_qN9fQ3md0-bamEi5RilgA&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_gid=ktSh2lODHtVYYhVE195NHQ&_nc_ss=7a32e&oh=00_Af0abaV5SwEklEMdmCDcCarlmqUvW02H7qvC5GArrAc4Yg&oe=69E77254",
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/670974254_17865783453613459_7607751799101753299_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ig_cache_key=Mzg3NTA5MDc2MDExNTE0NTc1Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwODB4MTA4MC5zZHIuQzMifQ%3D%3D&_nc_ohc=nJjy_xRHtc0Q7kNvwFEXcge&_nc_oc=AdrZHrNmEx7jKyDo0Q1VYfjhdkbAAKkzhzU2aj8OHmCMZIBqM_2qN7HcMY5upOnp6qI&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_gid=ktSh2lODHtVYYhVE195NHQ&_nc_ss=7a32e&oh=00_Af3okeC48T1pIFetjVisE8LKaNk8lGm2jpNZUJ5ss8_J8g&oe=69E73C7C",
+        "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/670156847_17865783462613459_9139416114734240344_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ig_cache_key=Mzg3NTA5MDc1OTc4Nzk2MzU4OQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwODB4MTA4MC5zZHIuQzMifQ%3D%3D&_nc_ohc=cCh7t8UYrLIQ7kNvwGFWXxn&_nc_oc=Adp2JnHP12wzKwGR4mjOq-_vOlg_KGPmIEXq4cTxSYoFrWUdtEkXUwKkJvVi2FqnvrM&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_gid=ktSh2lODHtVYYhVE195NHQ&_nc_ss=7a32e&oh=00_Af23f0zm2hH0iOznfrae01m-AbEkcIi5RvZKF5WuEJfpaw&oe=69E749F7"
+      ],
+      "url": "https://www.threads.net/@dev_roach_log/post/DXHFoWqj_mI",
+      "created_at": "2026-04-14 20:40:39",
+      "date": "2026-04-14",
+      "crawled_at": "2026-04-17T09:50:25.474",
+      "source": "network",
+      "local_images": [
+        "web_viewer/images/f18ddce52dc16a0c876a7cffefebac61.jpg",
+        "web_viewer/images/35ce228765ac2f05cdac35844f1e8a2c.jpg",
+        "web_viewer/images/2a3f447022a2d4398a649fe3a58ed22a.jpg",
+        "web_viewer/images/744f37507d055d0952faecbcbd7bd224.jpg",
+        "web_viewer/images/58d041279be67c1449bfed1e0ac39912.jpg",
+        "web_viewer/images/4bad2d7ca71d3bf0e3b1702dfaec2e64.jpg",
+        "web_viewer/images/f2afea7bc6b49db7d6b3690812c45325.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": false,
+      "root_code": "DXHFoWqj_mI",
+      "like_count": 171,
+      "reply_count": 20,
+      "repost_count": 51,
+      "quote_count": 5,
+      "pk": "3875090767723624840",
+      "media_type": 8,
+      "content_type": "carousel",
+      "platform_sequence_id": 707
+    },
+    {
+      "sequence_id": 1060,
       "platform_id": "DXHFoKnDyN3",
       "sns_platform": "threads",
       "code": "DXHFoKnDyN3",
@@ -25754,7 +25824,7 @@
       "platform_sequence_id": 707
     },
     {
-      "sequence_id": 1059,
+      "sequence_id": 1061,
       "platform_id": "DXGHS83GFNW",
       "sns_platform": "threads",
       "code": "DXGHS83GFNW",
@@ -25778,7 +25848,7 @@
       "platform_sequence_id": 708
     },
     {
-      "sequence_id": 1060,
+      "sequence_id": 1062,
       "platform_id": "DXGDTJrj3_m",
       "sns_platform": "threads",
       "code": "DXGDTJrj3_m",
@@ -25806,7 +25876,33 @@
       "platform_sequence_id": 709
     },
     {
-      "sequence_id": 1061,
+      "sequence_id": 1063,
+      "platform_id": "DXHKmqRlAuI",
+      "sns_platform": "threads",
+      "code": "DXHKmqRlAuI",
+      "username": "wannaquitprogramming",
+      "display_name": "Eunkwang Shin",
+      "full_text": "이거보다 국내산 opendataloader-pdf가 훨씬 정교합니다 ibm,ms가 비슷한걸 냈지만 ms께 제일 구려요",
+      "media": [],
+      "url": "https://www.threads.net/@wannaquitprogramming/post/DXHKmqRlAuI",
+      "created_at": "2026-04-14 21:24:06",
+      "date": "2026-04-14",
+      "crawled_at": "2026-04-17T09:50:25.477",
+      "source": "network",
+      "is_detail_collected": true,
+      "is_merged_thread": false,
+      "root_code": "DXHKmqRlAuI",
+      "like_count": 33,
+      "reply_count": 3,
+      "repost_count": 4,
+      "quote_count": 0,
+      "pk": "3875112641572899720",
+      "media_type": 19,
+      "content_type": "image",
+      "platform_sequence_id": 705
+    },
+    {
+      "sequence_id": 1064,
       "platform_id": "DXIdyJEnyL0",
       "sns_platform": "threads",
       "code": "DXIdyJEnyL0",
@@ -25830,7 +25926,7 @@
       "platform_sequence_id": 705
     },
     {
-      "sequence_id": 1062,
+      "sequence_id": 1065,
       "platform_id": "DXDcGDykXYz",
       "sns_platform": "threads",
       "code": "DXDcGDykXYz",
@@ -25862,7 +25958,7 @@
       "platform_sequence_id": 701
     },
     {
-      "sequence_id": 1063,
+      "sequence_id": 1066,
       "platform_id": "DXEXl5IGt-_",
       "sns_platform": "threads",
       "code": "DXEXl5IGt-_",
@@ -25890,7 +25986,7 @@
       "platform_sequence_id": 702
     },
     {
-      "sequence_id": 1064,
+      "sequence_id": 1067,
       "platform_id": "DXElXu5jywO",
       "sns_platform": "threads",
       "code": "DXElXu5jywO",
@@ -25914,7 +26010,7 @@
       "platform_sequence_id": 703
     },
     {
-      "sequence_id": 1065,
+      "sequence_id": 1068,
       "platform_id": "DXDlSFQmB63",
       "sns_platform": "threads",
       "code": "DXDlSFQmB63",
@@ -25944,7 +26040,7 @@
       "platform_sequence_id": 704
     },
     {
-      "sequence_id": 1066,
+      "sequence_id": 1069,
       "platform_id": "7450689022001086466",
       "sns_platform": "linkedin",
       "username": "ACoAAEYsARgBdQazrHf4u7lcZ1nlSjTNE7YbpOs",
@@ -25968,7 +26064,7 @@
       "platform_sequence_id": 376
     },
     {
-      "sequence_id": 1067,
+      "sequence_id": 1070,
       "platform_id": "7450664369769816064",
       "sns_platform": "linkedin",
       "username": "ACoAAAGuJgYB8AGdSFewbWARWmws3ugvYck2mXg",
@@ -25990,6 +26086,226 @@
       "user_link": "https://www.linkedin.com/in/ACoAAAGuJgYB8AGdSFewbWARWmws3ugvYck2mXg",
       "content_type": "image",
       "platform_sequence_id": 377
+    },
+    {
+      "sequence_id": 1071,
+      "platform_id": "7449713771888971776",
+      "sns_platform": "linkedin",
+      "username": "ACoAAAyuobMBEIef7BSUNTJP2HvRWBj8DFWE4Fk",
+      "display_name": "Ki Young LEE",
+      "full_text": "카파시가 제안한 \"LLM Wiki\"를 실제로 구축해봤습니다.\n\nraw 폴더에 데이터를 넣으면 LLM이 직접 읽고 위키를 씁니다.\n요약, 개념 정리, 문서 간 연결까지.\n\n저의 반려 AI 벤지(OpenClaw)에게 지식도구를 심어주고 싶었습니다.\n일주일간의 계획으로 카사피 그림을 이식했습니다.\n\n[카파시 다이어그램이 제안하는 흐름]\n\nRaw Sources → LLM Processing (요약/Q&A/lint/색인) → Curated Wiki → Outputs (docs/slides/charts)\n\n핵심은 사람이 위키를 쓰는 게 아니라 LLM이 데이터를 읽고 위키를 쓴다는 점입니다. 기존 RAG와 다르게, 지식이 쌓입니다.\n\n[실제 예시: 커뮤니티 데이터가 지식이 되기까지]\n\n벤지(BENZIE)라는 AI 에이전트가 매시간 커뮤니티에 글과 댓글을 씁니다. 이 에이전트는 단순히 글을 쓰는 게 아니라, 다양한 \"실험\"을 설계하고 실행합니다.\n\n예를 들어 question_hook이라는 실험 계열이 있습니다. \"질문형 포스트가 일반 포스트보다 engagement가 높을까?\"라는 가설을 세우고, question_hook_01부터 question_hook_v99, question_hook_trust_v1까지 89개 이상의 변형 실험을 자동으로 돌립니다.\n\n이 전체 과정이 데이터로 기록되고, 지식으로 변환됩니다:\n\n① 에이전트가 실험 실행\n벤지가 moltbook에 질문형 포스트 작성, botmadang에 댓글 작성\n→ actions_raw.jsonl에 기록 (518건 누적)\n\n② 24시간 후 결과 자동 수집\nreply_count, has_reply, engagement 측정\n→ outcomes_raw.jsonl에 기록 (743건 누적)\n\n③ 매일 크론이 raw를 읽고 K-layer 위키 노트 자동 생성\nLLM이 518건 행동 + 743건 결과를 분석해서 패턴을 찾고 claim을 만듦\n\n④ 실제 생성된 지식 위키:\n\n\"플랫폼별 engagement 비대칭\"\nCLAIM-001: botmadang comment는 374건 관측 기준 reply rate 0.0%\nCLAIM-002: moltbook post는 315건 관측 기준 reply rate 60.1%\nsource: outcomes_raw.jsonl#row-176, #row-177, #row-178\n\n\"question_hook 실험 계열의 진화와 engagement 패턴\"\nCLAIM-001: question_hook 계열은 89개 이상의 고유 exp_id로 실행된 주요 전략군\nCLAIM-002: question_hook에서 moltbook post는 reply_count >= 2 관측\nsource: actions_raw.jsonl#run229, outcomes_raw.jsonl#run231, #run238\n\n⑤ 다음 실험 설계 시 이 위키를 참조\n\"botmadang comment는 반응이 없으니 moltbook post에 집중하자\"\n\"question_hook_trust_v1이 reply를 받았으니 이 방향을 강화하자\"\n→ 더 나은 실험 설계 → 더 나은 결과 → 더 정확한 지식 (자기강화 루프)\n\n사람이 \"botmadang은 반응이 낮더라\"를 정리한 게 아닙니다. 에이전트가 데이터를 읽고, 스스로 claim을 만들고, 다음 행동에 반영합니다.\n\n여기에 MiroFish라는 사회 시뮬레이션 엔진까지 연결되어, 시뮬레이션 실험 결과도 자동으로 위키 노트로 변환됩니다.\n\n[설계에서 제일 중요했던 것]\n\nsource-linked claims입니다.\n\n모든 주장에 원본 데이터 링크가 붙습니다. \"reply rate 60.1%\"라는 claim 뒤에는 반드시 outcomes_raw.jsonl#row-374처럼 추적 가능한 출처가 있습니다. claim 삭제는 금지, invalidated_at으로만 무효화. 위키가 raw를 대체하지 않고, raw 위에 올라가는 정제 계층입니다.\n\n이게 단순 요약과 지식 시스템의 차이입니다.\n\n[숫자]\n\n- 카파시 12개 개념 중 11개 구현 (92%)\n- 커뮤니티: 행동 518건 + 결과 743건 + 89개 실험 변형 → 7개 지식 노트 자동 생성\n- Python 150개, 테스트 175개, 에이전트 9개, 크론 17개\n- 벡터DB 없이 JSONL append만으로 작동\n\n\"돌수록 똑똑해지는 시스템\"의 핵심은 거창한 인프라가 아니라, 실험이 데이터가 되고 데이터가 지식이 되고 지식이 다음 실험을 개선하는 루프를 닫는 것이었습니다.\n\n카파시 원문: https://lnkd.in/gBvkuF54\n\n#AI #LLM #KnowledgeManagement #MultiAgentSystem #KarpathyLLMWiki #AIEngineering",
+      "media": [
+        "https://media.licdn.com/dms/image/v2/D5622AQHYDUKEdPYsBg/feedshare-shrink_1280/B56Z2KzMwTKoAM-/0/1776150170867?e=1778112000&v=beta&t=0zzkchWlWGu6-PG5LWOBhCtR3DgURMsEnACXf9RVPVE"
+      ],
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:7449713771888971776?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7449713771888971776%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "created_at": "2026-04-14 16:02:52",
+      "date": "2026-04-14",
+      "crawled_at": "2026-04-18T15:25:04.460",
+      "source": "network",
+      "local_images": [
+        "web_viewer/images/ad265d9c9bfd7a93aa7d0fe15ca30e93.jpg"
+      ],
+      "time_text": "3일",
+      "profile_slogan": "혜움 랩스 백엔드 엔지니어",
+      "user_link": "https://www.linkedin.com/in/ACoAAAyuobMBEIef7BSUNTJP2HvRWBj8DFWE4Fk",
+      "content_type": "image",
+      "platform_sequence_id": 378
+    },
+    {
+      "sequence_id": 1072,
+      "platform_id": "7450680091757535232",
+      "sns_platform": "linkedin",
+      "username": "ACoAAAxby1cBoup4zzxWNB70sbee1yoqzZsHe84",
+      "display_name": "SungJae Shim",
+      "full_text": "NotebookLM을 “도구”로 쓰는 사람과 “시스템”으로 쓰는 사람의 차이\n\n대부분의 사람들이 NotebookLM을 이렇게 씁니다.\n\n유튜브 영상을 하나씩 붙여넣고,\nPDF를 드래그앤드롭으로 올리고,\n팟캐스트 버튼을 클릭하고 기다립니다.\n동시에 Claude나 GPT에는 자료를 직접 붙여넣습니다.\n\n컨텍스트가 꽉 차고, 토큰이 터지고, 결과가 잘립니다.\n두 툴을 따로 쓰면서 둘 다 절반만 쓰고 있는 겁니다.\n\n구조를 바꾸면 완전히 달라집니다.\n\nnotebooklm-py라는 오픈소스 라이브러리를 사용하면 NotebookLM을 에이전트의 도구로 직접 연결할 수 있습니다. Claude Code, Codex, 직접 만든 봇 모두 가능합니다.\n\n1. 자료 수집 자동화\n유튜브 50개짜리 플레이리스트도 코드 한 줄로 노트북에 전부 적재됩니다. PDF 폴더 전체도 마찬가지입니다. 손으로 하나씩 올리는 작업이 사라집니다.\n\n2. 토큰 비용 구조 자체가 바뀝니다\n기존 방식은 Claude가 자료 전체를 읽습니다. 새로운 구조에서는 NotebookLM이 자료를 담고 검색하고, 에이전트는 그 답변만 받아서 다음 작업을 실행합니다. Claude는 판단과 실행에만 토큰을 씁니다.\n\n3. 웹 UI에서 불가능한 작업들\n퀴즈와 플래시카드를 JSON으로 추출하거나, 마인드맵 데이터를 가져오거나, 슬라이드를 PPTX로 받는 것은 웹에서는 할 수 없습니다. 이 라이브러리를 통해서만 가능합니다.\n\n4. 콘텐츠 생성 파이프라인 자동화\n새 자료가 쌓이면 에이전트가 자동으로 팟캐스트를 생성하고 저장합니다. 매주 반복되는 작업을 스케줄러에 걸어두면 버튼을 누를 필요가 없습니다.\n\n결국 이런 구조가 됩니다.\nNotebookLM = 자료를 담고 검색하는 저장소\n에이전트 = 판단하고 실행하는 두뇌\nClaude = 토큰 낭비 없이 결론만 냅니다\nAI를 쓴다고 했는데 알고 보니 내가 제일 열심히 일하고 있었던 건 아닐까요.\n\n시스템이 일하게 만드는 것, 그게 진짜 AI 활용입니다.\n\n비공식 라이브러리로 Google 업데이트에 따라 동작이 달라질 수 있습니다. 레포 링크는 첫 댓글에 달겠습니다.",
+      "media": [],
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:7450680091757535232?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7450680091757535232%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "created_at": "2026-04-17 08:02:40",
+      "date": "2026-04-17",
+      "crawled_at": "2026-04-18T15:25:04.460",
+      "source": "network",
+      "local_images": [],
+      "time_text": "1일",
+      "profile_slogan": "Builder of systems, ideas, and experiences that move people.",
+      "user_link": "https://www.linkedin.com/in/ACoAAAxby1cBoup4zzxWNB70sbee1yoqzZsHe84",
+      "content_type": "text",
+      "platform_sequence_id": 379
+    },
+    {
+      "sequence_id": 1073,
+      "platform_id": "DXNhzpsE4Je",
+      "sns_platform": "threads",
+      "code": "DXNhzpsE4Je",
+      "urn": "",
+      "username": "jijijijijjijijijijijijij300",
+      "display_name": "jijiji",
+      "full_text": "공공데이터 포털 mcp 만들었습니다. \n공공데이터 포털에서 키워드로만 검색 하기 힘드셨을 분들을 위해 만들었어요\n이젠 자연어로 내가 지역축제 알림앱을 만들고 싶은데 api를 찾아 주고 다른 아이디어를 제안해줘 라고 하시면 관련 \"api\"들을 찾고 조합해서 다른 아이디어까지 제시해줍니다.  물론 api 검색은 mcp가 합니다.\n\nhttps://github.com/boam79/public-data-api-finder\n\n---\n\n많은 스하리 부탁 드려요",
+      "media": [
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/672352484_17945618622172481_6753512974241331131_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=Mzg3NjkwMzI5NTQ2OTU2NjAxNA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE4NTR4MTQ0MC5zZHIuQzMifQ%3D%3D&_nc_ohc=0lv-HiBclrAQ7kNvwFEcxPg&_nc_oc=Adr8dK9w89fXHeqVEjCJch_ygVhuFsSrXYBo8kjyYR6DjNV5M6J0QzihL7Uo8x5asE4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=5YsikLV9s8V4YTMXFTItAQ&_nc_ss=7a32e&oh=00_Af1p-K3vDZrZQhEYbJqpQyTRrzOJVKn8qsYZ5q-fxgS7yw&oe=69E90785"
+      ],
+      "url": "https://www.threads.com/@jijijijijjijijijijijijij300/post/DXNhzpsE4Je",
+      "created_at": "2026-04-17 08:42:18",
+      "date": "2026-04-17",
+      "crawled_at": "2026-04-18T15:25:25.463",
+      "source": "consumer_detail",
+      "local_images": [
+        "web_viewer/images/7af8e0949fd9e7af4eba7e29bb90413b.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DXNhzpsE4Je",
+      "pk": "3876903539226935902",
+      "taken_at": 1776382938,
+      "original_item_count": 2,
+      "platform_sequence_id": 718
+    },
+    {
+      "sequence_id": 1074,
+      "platform_id": "DXM7L8bgXb8",
+      "sns_platform": "threads",
+      "code": "DXM7L8bgXb8",
+      "urn": "",
+      "username": "metalailab",
+      "display_name": "메탈 AI (METAL AI)",
+      "full_text": "어제 출시된 Opus 4.7 갈아탔다가\n\"어? 왜 오히려 돈만 더 나가지?\" 하는 친구 주목!!\n\nClaude Code 아버지 보리스네 팀이\n오늘 오전 2시(KST) 공식 블로그로 고백했거든요.\n\n\"모델은 더 똑똑해졌지만,\n 쓰는 방식을 안 바꾸면 토큰이 폭주한다.\"\n\n총 5가지 확인하세요\n1. effort 기본값 'xhigh' 그대로 두세요\nhigh와 max 사이에 새로 생긴 레벨.\n대부분의 코딩 작업에 이게 스윗스팟입니다.\n\n2. 한 줄씩 지시 ❌ / 첫 턴에 몰빵 ✅\n의도+제약+완료 기준+파일 위치를 1턴에.\n핑퐁할수록 토큰만 샙니다.\n\n3. Extended Thinking(고정 예산)은 삭제\n→ Adaptive Thinking으로 교체.\n더/덜 생각시키려면 프롬프트에 직접.\n\n4. 서브에이전트 자동 스폰 안 함\n병렬 원하면 \"팬아웃 시 동시 실행\"을\n명시해야 뿌려줍니다.\n\n5. 툴 호출은 줄고 추론이 늘어남\n검색·파일 읽기 더 원하면\n\"언제·왜 써야 하는지\" 프롬프트에 명시.\n\n---\n\n\"모델을 바꾸는 게 아니라,\n프롬프트 철학을 바꾸는 업데이트\"\n\nOpus 4.7은 '감독이 필요해서 맡기기\n어려웠던' 긴 작업에 진짜 강해졌습니다.\n\n— 멀티파일 수정\n— 모호한 디버깅\n— 서비스 전체 코드 리뷰\n\nAI로 일하는 방식이 바뀌는 중.\n\n---\n\n꼭 알려줘 사람들에게 안그러면 토큰이 계속 나가!!",
+      "media": [],
+      "url": "https://www.threads.com/@metalailab/post/DXM7L8bgXb8",
+      "created_at": "2026-04-17 03:04:50",
+      "date": "2026-04-17",
+      "crawled_at": "2026-04-18T15:25:25.489",
+      "source": "consumer_detail",
+      "local_images": [],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DXM7L8bgXb8",
+      "pk": "3876733684803532540",
+      "taken_at": 1776362690,
+      "original_item_count": 3,
+      "platform_sequence_id": 717
+    },
+    {
+      "sequence_id": 1075,
+      "platform_id": "DXNd0quk3_y",
+      "sns_platform": "threads",
+      "code": "DXNd0quk3_y",
+      "urn": "",
+      "username": "ddg.kang",
+      "display_name": "강규석",
+      "full_text": "4월 17일 기준... 클로드 오푸스 4.7 출시 이후 최강 셋업...\n에르메스(Hermes) + 코덱스(Codex) + OmX 😉\n\n최강 워크플로우\n$deep-interview -> $ralplan -> $ralph(큰 리팩토링은 $team)\nHermes 옆에서 한세션당 하나씩 매칭해 코덱스 잘하나 확인하면서 감독, 리서치, 검토",
+      "media": [],
+      "url": "https://www.threads.com/@ddg.kang/post/DXNd0quk3_y",
+      "created_at": "2026-04-17 08:07:29",
+      "date": "2026-04-17",
+      "crawled_at": "2026-04-18T15:25:25.513",
+      "source": "consumer_detail",
+      "local_images": [],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DXNd0quk3_y",
+      "pk": "3876886016876052466",
+      "taken_at": 1776380849,
+      "original_item_count": 1,
+      "platform_sequence_id": 716
+    },
+    {
+      "sequence_id": 1076,
+      "platform_id": "DXF8VetE_rm",
+      "sns_platform": "threads",
+      "code": "DXF8VetE_rm",
+      "urn": "",
+      "username": "vibevault.nesto",
+      "display_name": "ernesto lee",
+      "full_text": "Karpathy의 LLM Knowledge Base 패턴을 PARA + Obsidian에 최적화한 Claude Code 플러그인을 만들어서 공개했어. 이름은 para-knowledge-base.\n\n문제는 이거야. Obsidian vault에 노트가 수백 개 쌓여있어도, Claude Code는 매번 처음부터 파일을 스캔해. \"분산 시스템에 대해 뭐 알고 있어?\"라고 물으면 30개 파일 읽고 1만5천 토큰 쓰고 답변하는데, 다음 세션에서 같은 질문하면 또 똑같이 반복해.\n\n이 플러그인은 /kb-ingest 한 번이면 노트를 분류하고 연결하고 인덱싱까지 해놔서, 다음번엔 _index.md 50토큰만 읽고 필요한 파일 2개만 찾아가. 지식을 매번 검색하는 게 아니라 한 번 컴파일하고 유지관리하는 거지.\n\n---\n\nKarpathy 원본과 다른 점이 두 가지야.\n\n첫째, 효율. 원본은 인덱스가 하나의 큰 파일이라 문서가 수백 개만 넘어도 인덱스 읽는 것만으로 토큰을 상당히 잡아먹어. 이 플러그인은 최상위 요약 + PARA 카테고리별 미니 인덱스로 쪼개서, 필요한 부분만 읽으면 돼. vault가 커질수록 차이가 벌어지는 구조야.\n\n둘째, 단순히 LLM용 위키가 아니라 사람이 보기에도 체계적인 vault를 만들어간다는 거야. PARA 폴더 구조에 인덱스와 태그가 붙으니까 Obsidian에서 직접 열어봐도 정리된 느낌이 유지돼. 탐색도 폴더·태그·위키링크·인덱스 4가지 경로를 질문 성격에 따라 선택하는 구조라, 기존에 태그나 백링크를 쓰고 있었다면 그 습관이 그대로 강화돼.\n\nkepano의 obsidian-skills랑 같이 쓰면 vault 관리 + 콘텐츠 작성을 둘 다 커버할 수 있어.\n\n---\n\n스킬 5개: /kb-init(셋업), /kb-ingest(수집+분류+연결), /kb-query(탐색+축적), /kb-lint(건강검사), /kb-index(인덱스 재구축).\n\nObsidian CLI(1.12+)가 있으면 검색/백링크가 더 정확해지고, 없어도 grep+glob으로 폴백하니까 설치 부담 없어.\n\nPARA로 체계적으로 정리하면서 동시에 AI가 효율적으로 탐색할 수 있는 vault를 만들고 싶은 분들한테 유용할 것 같아. 써보고 피드백 주면 큰 도움이 돼.\n\ngithub.com/ernestolee13/para-knowledge-base",
+      "media": [],
+      "url": "https://www.threads.com/@vibevault.nesto/post/DXF8VetE_rm",
+      "created_at": "2026-04-14 10:00:19",
+      "date": "2026-04-14",
+      "crawled_at": "2026-04-18T15:25:31.564",
+      "source": "consumer_detail",
+      "local_images": [],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DXF8VetE_rm",
+      "pk": "3874768413290396390",
+      "taken_at": 1776128419,
+      "original_item_count": 3,
+      "platform_sequence_id": 713
+    },
+    {
+      "sequence_id": 1077,
+      "platform_id": "DXG4pUPmCCn",
+      "sns_platform": "threads",
+      "code": "DXG4pUPmCCn",
+      "urn": "",
+      "username": "1.ta.ai",
+      "display_name": "1.ta.ai",
+      "full_text": "AI한테 디자인 시켰는데\n왜 이렇게 구리지? 3편.\n\n또 반응 좋아서 씀!\n\nDESIGN.md 써봐! \n구글 스티치에서 발표한 개념인데\n이젠 스타일별로 모아둔 사이트까지 생겼거든!\n\n내가 애용하는 사이트 하나 알려줄게!\n그리고 하단에 실제 써보고 느낀 한계까지 정리해뒀으니 꼭 읽어봐!\n\n---\n\n1/ https://getdesign.md 라는 사이트야.\n\n- 구글 스티치가 발표한 DESIGN.md 컨셉을\n  스타일별로 모아둔 아카이브야\n- 유명 서비스들 디자인 톤을\n  DESIGN.md 한 파일로 정리해놨더라\n- 내가 뽑을 필요 없이\n  링크만 가져다 쓰면 돼!\n\n---\n\n2/ 지금 인기 스타일이 뭐냐면\n\n- 1위는 역시 애플!\n- 에어비앤비도 상위권이더라\n- 사람들이 좋아하는 디자인 톤은\n  역시 정해져있나봐,,\n\n---\n\n3/ 쓰는 법? 진짜 별거 없어.\n- 원하는 스타일 링크 복사\n- 클로드한테 \"이 스타일로 해줘\" 한줄이면 끝!\n- (설치도 아마 클로드가 해줄거야)\n\n---\n\n4/ 근데 솔직한 한계도 있어!\n내가 직접 써보니까,\n\n- 2편 라이브러리는 준수율 100% 찍거든\n- DESIGN.md 는 기본 골자만 있다보니\n  테이블뷰나 복잡한 뷰는\n  그 느낌이 안 나기도 하더라,,\n- 단순 페이지엔 찰떡, 복잡한 레이아웃엔 한계!\n\n그래도 토큰 가성비가 좋아서\n알아두면 손해는 안 봐~\n\n써본 스친이들 있어?\n어떤 스타일이 제일 잘 뽑혔는지 공유 부탁!\n\n---\n\n한계도있어!!",
+      "media": [],
+      "url": "https://www.threads.com/@1.ta.ai/post/DXG4pUPmCCn",
+      "created_at": "2026-04-14 18:47:16",
+      "date": "2026-04-14",
+      "crawled_at": "2026-04-18T15:25:31.564",
+      "source": "consumer_detail",
+      "local_images": [],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DXG4pUPmCCn",
+      "pk": "3875033659238523047",
+      "taken_at": 1776160036,
+      "original_item_count": 6,
+      "platform_sequence_id": 714
+    },
+    {
+      "sequence_id": 1078,
+      "platform_id": "DXExv8qmXfh",
+      "sns_platform": "threads",
+      "code": "DXExv8qmXfh",
+      "urn": "",
+      "username": "parcyun",
+      "display_name": "parcyun",
+      "full_text": "개멍청한 오픈클로랑 씨름하면서 받은 스트레스\n헤르메스가 한시간만에 싹 없애줌\n\n꼭 쓰세요\n\n---\n\ncurl 한 줄로 바로 설치후 바로 시작. ssh로 집에 있는 맥미니에 맥북으로 접속 후 집 밖에서 터미널도 바로 확인 가능\n\n---\n\n디스코드로 작업할 때 실시간으로 무슨 작업했는지 계속 로그 띄워줘서 아주 속이 다 시원함\n\n---\n\n구체적으로 지시하지 않아도 스스로 판단하는 구조가 상당히 정교하고 그걸 바탕으로 스스로 루프 돌면서 필요한 거 알아서 싹 찾아서 결과물 세팅해줌. 진짜 일에 미친놈인데 경력까지 갖춘 애가 하나 들어온 느낌.\n\n---\n\n헤르메스로 오픈클로 삭제함\n\n---\n\n헤르메스 설치 후 hermes setup 실행하면 기존 openclaw 폴더 싹 긁어서 알아서 이사해옴\n\n---\n\nkordoc 설치 후 일단 대충 한글 문서 만들어보라했더니 퀄리티 ㅁㅊ.. 내일 출근해서 기존문서 올리고 양식 맞춰서 만들어보라고 할 예정. 이거 하는데 총 2분 걸림. 심지어 다른 세션에서 다른 거 하면서 함.",
+      "media": [
+        "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/670786930_17953093299109351_1232518032882236153_n.jpg?stp=cp6_dst-jpg_e35_tt6&_nc_cat=109&ig_cache_key=Mzg3NDQ3NjEwMjE1MzUxMDY2Nw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEyMDZ4MTY4My5zZHIuQzMifQ%3D%3D&_nc_ohc=G_CWfnhYINwQ7kNvwH0OXZs&_nc_oc=Adqz8G9s8Fpy9kbIhOcP3DVk3tz14UJ0fgBESzwxW_qwbBplgrMu2AtFjbKpsZgf4Tk&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=s8NGoOcMx6vpYOtUotp8Vg&_nc_ss=7a32e&oh=00_Af1FtjkHL7znrA1ZSLf5xJ8g08SJKIZGCCeKVlcLtnFmpw&oe=69E8DC43"
+      ],
+      "url": "https://www.threads.com/@parcyun/post/DXExv8qmXfh",
+      "created_at": "2026-04-13 23:08:26",
+      "date": "2026-04-13",
+      "crawled_at": "2026-04-18T15:25:31.564",
+      "source": "consumer_detail",
+      "local_images": [
+        "web_viewer/images/b46248836e1e76fd904c9c55bbed1ff2.jpg"
+      ],
+      "is_detail_collected": true,
+      "is_merged_thread": true,
+      "root_code": "DXExv8qmXfh",
+      "pk": "3874440378679130081",
+      "taken_at": 1776089306,
+      "original_item_count": 7,
+      "platform_sequence_id": 715
+    },
+    {
+      "sequence_id": 1079,
+      "platform_id": "7450724116971827200",
+      "sns_platform": "linkedin",
+      "username": "ACoAABXkN0gBaZI4zTD80WWbzUhi1vzabHJf4vA",
+      "display_name": "Seeyong Lee (이시용, CFA)",
+      "full_text": "Reddit, Youtube, X, LinkedIn, Hacker News, 네이버 블로그, 쿠팡, 한국 언론사 기사를 막힘없이 가져올 수 있게 되었습니다.\n공개된 API와 표준 기법을 사용해서 클로드코드와 코덱스에게 데이터 탐색을 시킬 수 있는 오픈소스를 발견했습니다.\n\nAPI 키를 서비스별로 설정하거나, OAuth 인증할 필요도 없습니다.\nA 방법이 안되면, B 방법으로. B가 안되면 C 방법으로 어떻게든 최종 웹데이터를 가져오는 방식이라서 'insane-search'라는 이름을 붙였다고 합니다.\n\n\"r/LocalLLaMA에서 뜨는 거 뭐야?\"\n\"openclaw가 X에 최근에 뭐라고 했어?\"\n\"이 유튜브 영상 요약해 줘\"\n\"쿠팡에서 10만 원 미만 키보드 찾아줘\"\n\"이 네이버 블로그 글 읽어줘\"\n\n와 같은 명령어가 통한다는 의미인데요.\n\n수익형 프로그래밍을 하는 입장에서 서비스 개발 자체보다 중요한 것이 '시장에서 사람들이 불편해하는 진짜 문제'를 발견하는 과정입니다.\n물론 아무리 촘촘한 전략과 가설 설정을 해도 실제 시장에서 검증하는 작업이 필수적이지만, 이렇게 여러 커뮤니티에서 실시간으로 벌어지는 '진짜 유저'들의 고민과 불편 사항들을 실시간으로 가져와서 분석할 수 있는 도구가 있다는 것이 가슴 뛰게 합니다.\n\n정말 요즘 기술은 상상할 수 있는 것들을 다 구현하고 있기에,\n이를 응용하려는 아이디어와 실행력이 중요한 시대가 되었습니다.\n저 역시 바로 활용해서 새로운 수익형 서비스 만들러 가봅니다.\n\n원본 프로젝트가 Claude Code에 특화되었기 때문에 또 다른 개발자분이 같은 로직을 활용해 Codex용 오픈소스도 별도로 만들었는데요.\n각 Repo의 링크는 댓글에 달아두었습니다.",
+      "media": [
+        "https://media.licdn.com/dms/image/v2/D5622AQG-z6opTpDCVA/feedshare-shrink_1280/B56Z2ZKGZpHkAM-/0/1776391055193?e=1778112000&v=beta&t=tPcQnBV8PqlU8SWgj2kwOnT1uWk6W2ETJCQ9nLCxIc0"
+      ],
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:7450724116971827200?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7450724116971827200%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+      "created_at": "2026-04-17 10:57:37",
+      "date": "2026-04-17",
+      "crawled_at": "2026-04-18T17:07:56.436",
+      "source": "network",
+      "local_images": [
+        "web_viewer/images/77ed3b1c86b011b87e7103223e60af8f.jpg"
+      ],
+      "time_text": "1일",
+      "profile_slogan": "Finance AI & Biz specialist | Programmer | Lecturer",
+      "user_link": "https://www.linkedin.com/in/ACoAABXkN0gBaZI4zTD80WWbzUhi1vzabHJf4vA",
+      "content_type": "image",
+      "platform_sequence_id": 380
     }
   ]
 };
