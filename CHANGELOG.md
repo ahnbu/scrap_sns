@@ -4,6 +4,7 @@
 
 | 일시               | 유형       | 범위                           | 변경내용                                                                                                           |
 | ---------------- | -------- | ---------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| 2026-04-18 17:13 | fix | threads-single | Playwright consumer를 requests 기반 browserless flow로 전환 |
 | 2026-04-18 17:12 | feat | threads-http | Threads HTTP 어댑터와 browserless 상세 수집 경로 추가 |
 | 2026-04-18 15:53 | fix | twitter-cli | repo-local python 경로로 twitter-cli 0.8.5 고정 |
 | 2026-04-18 15:47 | docs | legacy-docs | 레거시 계획·분석·원본 캡처 문서 정리 |

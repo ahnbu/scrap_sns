@@ -1,19 +1,18 @@
-import asyncio
-from playwright.async_api import async_playwright
-import json
-import time
-import os
 import glob
+import json
+import os
+import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime
 from urllib.parse import urlparse
+
 from utils.post_schema import normalize_post, validate_post
-from utils.threads_parser import (
-    format_timestamp, 
-    extract_json_from_html, 
-    find_master_pk_recursive, 
-    extract_posts_from_node, 
-    extract_items_multi_path
+from utils.threads_http_adapter import (
+    build_threads_headers,
+    fetch_thread_html,
+    load_threads_cookies,
 )
+from utils.threads_parser import extract_items_multi_path, extract_json_from_html
 
 # ==========================================
 # ⚙️ Configuration
@@ -23,40 +22,36 @@ SIMPLE_FILE_PATTERN = "threads_py_simple_*.json"
 FULL_FILE_PATTERN = "threads_py_full_{date}.json"
 FAILURES_FILE = "scrap_failures_threads.json"
 AUTH_FILE = "auth/auth_threads.json"
-CONCURRENCY_LIMIT = 3 # Number of parallel tabs
 
-# 브라우저 설정
-HEADLESS = False       # 브라우저 창을 보일지 여부
-WINDOW_X = 5000        # 화면 밖으로 보내서 사용자 방해 최소화
-WINDOW_Y = 50
-WINDOW_WIDTH = 900
-WINDOW_HEIGHT = 500
 
 # ==========================================
 # 🛠️ Utility Functions
 # ==========================================
-def load_failures():
-    if os.path.exists(FAILURES_FILE):
-        with open(FAILURES_FILE, 'r', encoding='utf-8-sig') as f:
-            try: return json.load(f)
-            except Exception: return {}
+def load_failures(path=FAILURES_FILE):
+    if os.path.exists(path):
+        with open(path, "r", encoding="utf-8-sig") as file:
+            try:
+                return json.load(file)
+            except Exception:
+                return {}
     return {}
 
-def save_failures(failures):
-    with open(FAILURES_FILE, 'w', encoding='utf-8') as f:
-        json.dump(failures, f, ensure_ascii=False, indent=4)
+
+def save_failures(failures, path=FAILURES_FILE):
+    with open(path, "w", encoding="utf-8") as file:
+        json.dump(failures, file, ensure_ascii=False, indent=4)
+
 
 def get_post_code(post):
     """Legacy-safe code resolver for simple/full datasets."""
-    code = post.get('code') or post.get('root_code') or post.get('platform_id')
+    code = post.get("code") or post.get("root_code") or post.get("platform_id")
     if code:
         return code
 
-    url = post.get('url') or ""
+    url = post.get("url") or ""
     if url:
         try:
             path = urlparse(url).path.rstrip("/")
-            # threads URL pattern: /@username/post/{code}
             if "/post/" in path:
                 return path.split("/post/")[-1]
         except Exception:
@@ -64,17 +59,17 @@ def get_post_code(post):
     return None
 
 
-def _assert_threads_schema(posts, context=''):
+def _assert_threads_schema(posts, context=""):
     """Validate threads records before persisting them."""
     bad = []
     for idx, post in enumerate(posts or []):
         if not isinstance(post, dict):
             continue
-        if (post.get('sns_platform') or '').lower() not in ('thread', 'threads'):
+        if (post.get("sns_platform") or "").lower() not in ("thread", "threads"):
             continue
         missing = validate_post(post)
         if missing:
-            bad.append((idx, post.get('platform_id') or post.get('code'), missing))
+            bad.append((idx, post.get("platform_id") or post.get("code"), missing))
     if bad:
         first = bad[0]
         raise RuntimeError(
@@ -82,142 +77,159 @@ def _assert_threads_schema(posts, context=''):
             f"first: idx={first[0]} code={first[1]} missing={first[2]}"
         )
 
+
 def merge_thread_items(thread_items):
     """Merges multiple posts from the same thread into one single post data object."""
-    if not thread_items: return None
-    sorted_items = sorted(thread_items, key=lambda x: x.get('taken_at', 0))
+    if not thread_items:
+        return None
+    sorted_items = sorted(thread_items, key=lambda x: x.get("taken_at", 0))
     root = sorted_items[0]
-    merged_text = "\n\n---\n\n".join([item.get('full_text', '') for item in sorted_items if item.get('full_text')])
+    merged_text = "\n\n---\n\n".join(
+        [item.get("full_text", "") for item in sorted_items if item.get("full_text")]
+    )
     all_media = []
     seen_media = set()
     for item in sorted_items:
-        for m in item.get('media', []):
-            if m not in seen_media:
-                all_media.append(m)
-                seen_media.add(m)
-    
+        for media in item.get("media", []):
+            if media in seen_media:
+                continue
+            all_media.append(media)
+            seen_media.add(media)
+
     merged_post = root.copy()
-    merged_post['full_text'] = merged_text
-    merged_post['media'] = all_media
-    merged_post['is_merged_thread'] = True
-    merged_post['original_item_count'] = len(sorted_items)
+    merged_post["full_text"] = merged_text
+    merged_post["media"] = all_media
+    merged_post["is_merged_thread"] = True
+    merged_post["original_item_count"] = len(sorted_items)
     return normalize_post(merged_post)
 
-def promote_to_full_history(grouped_data):
+
+def promote_to_full_history(grouped_data, output_dir=OUTPUT_DIR):
     """수집된 타래 데이터를 최신 Full DB 파일로 병합 및 승격시킵니다."""
-    if not grouped_data: return
-    
-    today = datetime.now().strftime('%Y%m%d')
-    latest_full_path = os.path.join(OUTPUT_DIR, FULL_FILE_PATTERN.format(date=today))
-    
+    if not grouped_data:
+        return
+
+    today = datetime.now().strftime("%Y%m%d")
+    latest_full_path = os.path.join(output_dir, FULL_FILE_PATTERN.format(date=today))
+
     if not os.path.exists(latest_full_path):
-        latest_full_path = import_from_simple_database()
-        
+        latest_full_path = import_from_simple_database(output_dir=output_dir)
+
     if not latest_full_path or not os.path.exists(latest_full_path):
         print("❌ [Promotion] 메인 Full 파일을 찾을 수 없습니다.")
         return
-    
-    with open(latest_full_path, 'r', encoding='utf-8-sig') as f:
-        full_content = json.load(f)
 
-    posts = full_content.get('posts', [])
+    with open(latest_full_path, "r", encoding="utf-8-sig") as file:
+        full_content = json.load(file)
+
+    posts = full_content.get("posts", [])
     merge_map = {}
-    for rc, items in grouped_data.items():
+    for root_code, items in grouped_data.items():
         merged = merge_thread_items(items)
-        if merged: merge_map[rc] = merged
+        if merged:
+            merge_map[root_code] = merged
 
     updated_count = 0
     new_posts = []
-    max_sequence_id = full_content.get('metadata', {}).get('max_sequence_id', 0)
+    max_sequence_id = full_content.get("metadata", {}).get("max_sequence_id", 0)
 
-    for p in posts:
-        code = p.get('code')
+    for post in posts:
+        code = post.get("code")
         if code in merge_map:
             merged_data = merge_map[code]
-            # 💡 기존 메타데이터(sequence_id, crawled_at) 보존
-            merged_data['sequence_id'] = p.get('sequence_id')
-            merged_data['crawled_at'] = p.get('crawled_at')
+            merged_data["sequence_id"] = post.get("sequence_id")
+            merged_data["crawled_at"] = post.get("crawled_at")
             new_posts.append(merged_data)
             updated_count += 1
-            
-            sid = merged_data.get('sequence_id', 0)
-            if sid > max_sequence_id: max_sequence_id = sid
+
+            sequence_id = merged_data.get("sequence_id", 0)
+            if sequence_id > max_sequence_id:
+                max_sequence_id = sequence_id
         else:
-            new_posts.append(p)
+            new_posts.append(post)
 
     if updated_count > 0:
-        full_content['posts'] = new_posts
-        full_content['metadata'].update({
-            'updated_at': datetime.now().isoformat(),
-            'total_count': len(new_posts),
-            'max_sequence_id': max_sequence_id
-        })
-        _assert_threads_schema(full_content['posts'], 'promote')
-        with open(latest_full_path, 'w', encoding='utf-8-sig') as f:
-            json.dump(full_content, f, ensure_ascii=False, indent=4)
-        print(f"✅ [Promotion] {updated_count}개 타래 승격 완료: {os.path.basename(latest_full_path)} (max_sequence_id: {max_sequence_id})")
+        full_content["posts"] = new_posts
+        full_content["metadata"].update(
+            {
+                "updated_at": datetime.now().isoformat(),
+                "total_count": len(new_posts),
+                "max_sequence_id": max_sequence_id,
+            }
+        )
+        _assert_threads_schema(full_content["posts"], "promote")
+        with open(latest_full_path, "w", encoding="utf-8-sig") as file:
+            json.dump(full_content, file, ensure_ascii=False, indent=4)
+        print(
+            f"✅ [Promotion] {updated_count}개 타래 승격 완료: "
+            f"{os.path.basename(latest_full_path)} (max_sequence_id: {max_sequence_id})"
+        )
 
-def import_from_simple_database():
+
+def import_from_simple_database(output_dir=OUTPUT_DIR):
     """Simple DB(목록)의 신규 데이터를 Full DB(상세)로 가져옵니다."""
-    simple_files = glob.glob(os.path.join(OUTPUT_DIR, SIMPLE_FILE_PATTERN))
-    if not simple_files: return None
+    simple_files = glob.glob(os.path.join(output_dir, SIMPLE_FILE_PATTERN))
+    if not simple_files:
+        return None
     simple_files.sort(reverse=True)
-    with open(simple_files[0], 'r', encoding='utf-8-sig') as f:
-        simple_data = json.load(f)
-    
-    today = datetime.now().strftime('%Y%m%d')
-    today_full_path = os.path.join(OUTPUT_DIR, FULL_FILE_PATTERN.format(date=today))
-    
-    full_files = glob.glob(os.path.join(OUTPUT_DIR, "threads_py_full_*.json"))
+    with open(simple_files[0], "r", encoding="utf-8-sig") as file:
+        simple_data = json.load(file)
+
+    today = datetime.now().strftime("%Y%m%d")
+    today_full_path = os.path.join(output_dir, FULL_FILE_PATTERN.format(date=today))
+
+    full_files = glob.glob(os.path.join(output_dir, "threads_py_full_*.json"))
     full_files.sort(reverse=True)
-    
+
     full_content = {"metadata": {"version": "1.0", "total_count": 0, "max_sequence_id": 0}, "posts": []}
     if os.path.exists(today_full_path):
-        with open(today_full_path, 'r', encoding='utf-8-sig') as f:
-            full_content = json.load(f)
+        with open(today_full_path, "r", encoding="utf-8-sig") as file:
+            full_content = json.load(file)
     elif full_files:
-        with open(full_files[0], 'r', encoding='utf-8-sig') as f:
-            full_content = json.load(f)
-            
-    full_posts = full_content.get('posts', [])
-    existing_codes = {c for p in full_posts if (c := get_post_code(p))}
-    
-    # Simple 파일에서 데이터 로드 시 메타데이터 포함 확인
-    simple_posts = simple_data.get('posts', [])
-    max_sequence_id = simple_data.get('metadata', {}).get('max_sequence_id', 0)
-    
+        with open(full_files[0], "r", encoding="utf-8-sig") as file:
+            full_content = json.load(file)
+
+    full_posts = full_content.get("posts", [])
+    existing_codes = {code for post in full_posts if (code := get_post_code(post))}
+
+    simple_posts = simple_data.get("posts", [])
+    max_sequence_id = simple_data.get("metadata", {}).get("max_sequence_id", 0)
     if not max_sequence_id and simple_posts:
-        max_sequence_id = max((p.get('sequence_id', 0) for p in simple_posts), default=0)
+        max_sequence_id = max(
+            (post.get("sequence_id", 0) for post in simple_posts), default=0
+        )
 
     new_items = []
-    for p in simple_posts:
-        code = get_post_code(p)
-        if not code:
+    for post in simple_posts:
+        code = get_post_code(post)
+        if not code or code in existing_codes:
             continue
-        if code not in existing_codes:
-            new_item = p.copy()
-            new_item['code'] = code
-            new_item['is_merged_thread'] = False
-            new_items.append(new_item)
-            
+        new_item = post.copy()
+        new_item["code"] = code
+        new_item["is_merged_thread"] = False
+        new_items.append(new_item)
+
     if new_items:
-        # 💡 [개선] 이미 simple 파일에서 sequence_id가 부여되어 있으므로, 
-        # 새로 계산하지 않고 그대로 가져오되 max_sequence_id만 갱신
         for item in new_items:
             full_posts.insert(0, item)
-            sid = item.get('sequence_id', 0)
-            if sid > max_sequence_id: max_sequence_id = sid
-            
-        full_content['posts'] = full_posts
-        full_content['metadata']['total_count'] = len(full_posts)
-        full_content['metadata']['max_sequence_id'] = max_sequence_id
-        
-        _assert_threads_schema(full_content['posts'], 'import_simple')
-        with open(today_full_path, 'w', encoding='utf-8-sig') as f:
-            json.dump(full_content, f, ensure_ascii=False, indent=4)
-        print(f"✅ [Import] {len(new_items)}개 목록 가져옴: {os.path.basename(today_full_path)} (max_sequence_id: {max_sequence_id})")
-    
+            sequence_id = item.get("sequence_id", 0)
+            if sequence_id > max_sequence_id:
+                max_sequence_id = sequence_id
+
+        full_content["posts"] = full_posts
+        full_content["metadata"]["total_count"] = len(full_posts)
+        full_content["metadata"]["max_sequence_id"] = max_sequence_id
+
+        _assert_threads_schema(full_content["posts"], "import_simple")
+        with open(today_full_path, "w", encoding="utf-8-sig") as file:
+            json.dump(full_content, file, ensure_ascii=False, indent=4)
+        print(
+            f"✅ [Import] {len(new_items)}개 목록 가져옴: "
+            f"{os.path.basename(today_full_path)} (max_sequence_id: {max_sequence_id})"
+        )
+
     return today_full_path
+
 
 def sync_detail_collected_flags(simple_path, full_path):
     """Synchronize is_detail_collected flags from simple DB to full DB."""
@@ -226,173 +238,221 @@ def sync_detail_collected_flags(simple_path, full_path):
     if not os.path.exists(simple_path) or not os.path.exists(full_path):
         return 0
 
-    with open(simple_path, 'r', encoding='utf-8-sig') as f:
-        simple_data = json.load(f)
-    with open(full_path, 'r', encoding='utf-8-sig') as f:
-        full_data = json.load(f)
+    with open(simple_path, "r", encoding="utf-8-sig") as file:
+        simple_data = json.load(file)
+    with open(full_path, "r", encoding="utf-8-sig") as file:
+        full_data = json.load(file)
 
-    simple_posts = simple_data.get('posts', [])
-    full_posts = full_data.get('posts', [])
+    simple_posts = simple_data.get("posts", [])
+    full_posts = full_data.get("posts", [])
 
     simple_done_codes = set()
     simple_changed = 0
-    for p in simple_posts:
-        code = get_post_code(p)
+    for post in simple_posts:
+        code = get_post_code(post)
         if not code:
             continue
-        if not p.get('code'):
-            p['code'] = code
+        if not post.get("code"):
+            post["code"] = code
             simple_changed += 1
-        if p.get('is_detail_collected') is True:
+        if post.get("is_detail_collected") is True:
             simple_done_codes.add(code)
 
     full_changed = 0
-    for p in full_posts:
-        code = get_post_code(p)
+    for post in full_posts:
+        code = get_post_code(post)
         if not code:
             continue
-        if code in simple_done_codes and p.get('is_detail_collected') is not True:
-            p['is_detail_collected'] = True
+        if code in simple_done_codes and post.get("is_detail_collected") is not True:
+            post["is_detail_collected"] = True
             full_changed += 1
 
     if simple_changed > 0:
-        _assert_threads_schema(simple_data.get('posts', []), 'sync_simple')
-        with open(simple_path, 'w', encoding='utf-8-sig') as f:
-            json.dump(simple_data, f, ensure_ascii=False, indent=4)
+        _assert_threads_schema(simple_data.get("posts", []), "sync_simple")
+        with open(simple_path, "w", encoding="utf-8-sig") as file:
+            json.dump(simple_data, file, ensure_ascii=False, indent=4)
 
     if full_changed > 0:
-        full_data['posts'] = full_posts
-        full_data.setdefault('metadata', {})
-        full_data['metadata']['updated_at'] = datetime.now().isoformat()
-        _assert_threads_schema(full_posts, 'sync_full')
-        with open(full_path, 'w', encoding='utf-8-sig') as f:
-            json.dump(full_data, f, ensure_ascii=False, indent=4)
+        full_data["posts"] = full_posts
+        full_data.setdefault("metadata", {})
+        full_data["metadata"]["updated_at"] = datetime.now().isoformat()
+        _assert_threads_schema(full_posts, "sync_full")
+        with open(full_path, "w", encoding="utf-8-sig") as file:
+            json.dump(full_data, file, ensure_ascii=False, indent=4)
 
     return full_changed
 
-class Progress:
-    total = 0
-    current = 0
 
-async def worker(context, semaphore, code, username, results, lock):
-    async with semaphore:
-        url = f"https://www.threads.com/@{username}/post/{code}"
-        page = await context.new_page()
+def collect_one(
+    code,
+    username,
+    cookies,
+    headers,
+    fetch_fn=fetch_thread_html,
+    snapshot_saver=None,
+):
+    url = f"https://www.threads.com/@{username}/post/{code}"
+    result = fetch_fn(url, cookies=cookies, headers=headers)
+    if not result:
+        return []
+
+    if snapshot_saver:
         try:
-            await page.goto(url, wait_until="domcontentloaded", timeout=30000)
-            await asyncio.sleep(3)
-            html = await page.content()
-            try:
-                from utils.common import save_debug_snapshot
-                save_debug_snapshot(html, "threads")
-            except Exception: pass
+            snapshot_saver(result.html, "threads")
+        except Exception:
+            pass
 
-            data = extract_json_from_html(html)
-            if data:
-                items = extract_items_multi_path(data, code, username)
-                async with lock:
-                    for item in items:
-                        results.append(item)
-                if items:
-                    Progress.current += 1
-                    percent = int((Progress.current / Progress.total) * 100)
-                    print(f"   ✅ 수집 완료: [{code}] ({Progress.current}/{Progress.total}, {percent}%)")
-                else:
-                    print(f"   ⚠️ 수집 실패(추출 0건): [{code}]")
-            else:
-                print(f"   ⚠️ 수집 실패(JSON 없음): [{code}]")
-        except Exception: print(f"   ❌ 수집 실패: [{code}]")
-        finally: await page.close()
+    data = extract_json_from_html(result.html)
+    if not data:
+        return []
+    return extract_items_multi_path(data, code, username)
 
-async def run():
+
+def main(
+    output_dir=OUTPUT_DIR,
+    failures_file=FAILURES_FILE,
+    auth_file=AUTH_FILE,
+    cookie_loader=load_threads_cookies,
+    header_builder=build_threads_headers,
+    fetch_fn=fetch_thread_html,
+    sleep_fn=time.sleep,
+    max_workers=5,
+    snapshot_saver=None,
+):
     start_time = time.time()
     collected_data = []
-    results_lock = asyncio.Lock()
-    
-    latest_full_path = import_from_simple_database()
-    failures = load_failures()
-    simple_files = sorted(glob.glob(os.path.join(OUTPUT_DIR, SIMPLE_FILE_PATTERN)), reverse=True)
+
+    if snapshot_saver is None:
+        try:
+            from utils.common import save_debug_snapshot
+
+            snapshot_saver = save_debug_snapshot
+        except Exception:
+            snapshot_saver = None
+
+    latest_full_path = import_from_simple_database(output_dir=output_dir)
+    failures = load_failures(failures_file)
+    simple_files = sorted(
+        glob.glob(os.path.join(output_dir, SIMPLE_FILE_PATTERN)), reverse=True
+    )
     latest_simple = simple_files[0] if simple_files else None
 
     synced = sync_detail_collected_flags(latest_simple, latest_full_path)
     if synced > 0:
         print(f"[Sync] 상세 수집 상태 {synced}개를 full DB에 동기화했습니다.")
-    
-    async with async_playwright() as p:
-        browser = await p.chromium.launch(headless=HEADLESS, args=[f"--window-position={WINDOW_X},{WINDOW_Y}"])
-        storage_state = AUTH_FILE if os.path.exists(AUTH_FILE) else None
-        context = await browser.new_context(viewport={"width": WINDOW_WIDTH, "height": WINDOW_HEIGHT}, storage_state=storage_state)
-        
-        target_codes = []
-        skipped_done = 0
-        skipped_invalid = 0
-        skipped_fail_limit = 0
-        if latest_full_path and os.path.exists(latest_full_path):
-            with open(latest_full_path, 'r', encoding='utf-8-sig') as f:
-                full_data = json.load(f)
-                for p in full_data.get('posts', []):
-                    code = get_post_code(p)
-                    if not code:
-                        skipped_invalid += 1
-                        continue
-                    if p.get('is_merged_thread'):
-                        continue
-                    if p.get('is_detail_collected') is True:
-                        skipped_done += 1
-                        continue
-                    if failures.get(code, {}).get('fail_count', 0) >= 3:
-                        skipped_fail_limit += 1
-                        continue
-                    target_codes.append({'code': code, 'username': p.get('user') or p.get('username')})
 
-        print(
-            f"[Target] 수집대상 {len(target_codes)}개 | "
-            f"기수집 스킵 {skipped_done}개 | 코드없음 스킵 {skipped_invalid}개 | "
-            f"실패한도 스킵 {skipped_fail_limit}개"
-        )
-        
-        if target_codes:
-            Progress.total = len(target_codes)
-            semaphore = asyncio.Semaphore(CONCURRENCY_LIMIT)
-            tasks = [worker(context, semaphore, t['code'], t['username'], collected_data, results_lock) for t in target_codes]
-            await asyncio.gather(*tasks)
+    target_codes = []
+    skipped_done = 0
+    skipped_invalid = 0
+    skipped_fail_limit = 0
+    if latest_full_path and os.path.exists(latest_full_path):
+        with open(latest_full_path, "r", encoding="utf-8-sig") as file:
+            full_data = json.load(file)
+        for post in full_data.get("posts", []):
+            code = get_post_code(post)
+            if not code:
+                skipped_invalid += 1
+                continue
+            if post.get("is_merged_thread"):
+                continue
+            if post.get("is_detail_collected") is True:
+                skipped_done += 1
+                continue
+            if failures.get(code, {}).get("fail_count", 0) >= 3:
+                skipped_fail_limit += 1
+                continue
+            target_codes.append(
+                {
+                    "code": code,
+                    "username": post.get("user") or post.get("username"),
+                    "url": post.get("url") or "",
+                }
+            )
+
+    print(
+        f"[Target] 수집대상 {len(target_codes)}개 | "
+        f"기수집 스킵 {skipped_done}개 | 코드없음 스킵 {skipped_invalid}개 | "
+        f"실패한도 스킵 {skipped_fail_limit}개"
+    )
+
+    if target_codes:
+        cookies = cookie_loader(auth_file=auth_file)
+        if not cookies:
+            print("❌ Threads 인증 쿠키를 찾을 수 없습니다. auth/auth_threads.json을 확인하세요.")
         else:
-            print("✨ 수집할 새로운 타래가 없습니다.")
-        await browser.close()
+            headers = header_builder()
+            total_targets = len(target_codes)
+            completed = 0
+            with ThreadPoolExecutor(max_workers=max_workers) as executor:
+                future_map = {
+                    executor.submit(
+                        collect_one,
+                        target["code"],
+                        target["username"],
+                        cookies,
+                        headers,
+                        fetch_fn,
+                        snapshot_saver,
+                    ): target
+                    for target in target_codes
+                }
+                for future in as_completed(future_map):
+                    target = future_map[future]
+                    code = target["code"]
+                    try:
+                        items = future.result()
+                    except Exception:
+                        items = []
 
-    scraped_codes = {item['root_code'] for item in collected_data}
+                    if items:
+                        collected_data.extend(items)
+                        completed += 1
+                        percent = int((completed / total_targets) * 100)
+                        print(
+                            f"   ✅ 수집 완료: [{code}] "
+                            f"({completed}/{total_targets}, {percent}%)"
+                        )
+                    else:
+                        print(f"   ⚠️ 수집 실패(추출 0건): [{code}]")
+                    sleep_fn(0.3)
+    else:
+        print("✨ 수집할 새로운 타래가 없습니다.")
+
+    scraped_codes = {item["root_code"] for item in collected_data}
     for code in scraped_codes:
-        if code in failures: del failures[code]
-    for t in target_codes:
-        if t['code'] not in scraped_codes:
-            f = failures.get(t['code'], {"fail_count": 0})
-            f['fail_count'] += 1
-            failures[t['code']] = f
-    save_failures(failures)
+        if code in failures:
+            del failures[code]
+    for target in target_codes:
+        if target["code"] in scraped_codes:
+            continue
+        fail_info = failures.get(target["code"], {"fail_count": 0})
+        fail_info["fail_count"] += 1
+        if target.get("url"):
+            fail_info["url"] = target["url"]
+        failures[target["code"]] = fail_info
+    save_failures(failures, failures_file)
 
     grouped = {}
     for item in collected_data:
-        rc = item['root_code']
-        if rc not in grouped: grouped[rc] = []
-        grouped[rc].append(item)
-    
-    promote_to_full_history(grouped)
-    
-    # Simple 파일 상태 업데이트
+        root_code = item["root_code"]
+        grouped.setdefault(root_code, []).append(item)
+
+    promote_to_full_history(grouped, output_dir=output_dir)
+
     if latest_simple and os.path.exists(latest_simple):
-        with open(latest_simple, 'r', encoding='utf-8-sig') as f:
-            simple_data = json.load(f)
+        with open(latest_simple, "r", encoding="utf-8-sig") as file:
+            simple_data = json.load(file)
         simple_marked = 0
-        for p in simple_data.get('posts', []):
-            code = get_post_code(p)
-            if code in scraped_codes and p.get('is_detail_collected') is not True:
-                p['is_detail_collected'] = True
+        for post in simple_data.get("posts", []):
+            code = get_post_code(post)
+            if code in scraped_codes and post.get("is_detail_collected") is not True:
+                post["is_detail_collected"] = True
                 simple_marked += 1
-            if code and not p.get('code'):
-                p['code'] = code
-        _assert_threads_schema(simple_data.get('posts', []), 'mark_collected')
-        with open(latest_simple, 'w', encoding='utf-8-sig') as f:
-            json.dump(simple_data, f, ensure_ascii=False, indent=4)
+            if code and not post.get("code"):
+                post["code"] = code
+        _assert_threads_schema(simple_data.get("posts", []), "mark_collected")
+        with open(latest_simple, "w", encoding="utf-8-sig") as file:
+            json.dump(simple_data, file, ensure_ascii=False, indent=4)
         if simple_marked > 0:
             print(f"[Update] simple DB 상세수집 완료 {simple_marked}개 반영")
         synced_after = sync_detail_collected_flags(latest_simple, latest_full_path)
@@ -402,5 +462,6 @@ async def run():
     duration = time.time() - start_time
     print(f"\n🏁 Finished in {duration:.2f} seconds")
 
+
 if __name__ == "__main__":
-    asyncio.run(run())
+    main()
