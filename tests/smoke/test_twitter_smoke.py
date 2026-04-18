@@ -3,11 +3,13 @@ import os
 import pytest
 from playwright.sync_api import Playwright
 
+from utils.auth_paths import x_user_data
+
 
 @pytest.mark.smoke
 def test_twitter_session_validity(playwright: Playwright):
     """Twitter(X) Persistent Context의 유효성을 검사합니다."""
-    user_data_dir = os.path.join(os.getcwd(), "auth", "x_user_data")
+    user_data_dir = str(x_user_data())
     assert os.path.exists(user_data_dir), f"세션 디렉토리가 없습니다: {user_data_dir}"
 
     try:

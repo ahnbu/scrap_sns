@@ -14,6 +14,7 @@ try:
     from bs4 import BeautifulSoup
 except ImportError:
     BeautifulSoup = None
+from utils.auth_paths import x_user_data
 
 # 환경 변수 로드
 load_dotenv('.env.local')
@@ -232,7 +233,7 @@ def main(args):
                 print(f"📡 기존 데이터 {initial_count}개 로드됨. (max_sequence_id: {max_sequence_id}, 중단점: {len(stop_ids)}개 설정)", flush=True)
             except Exception: pass
 
-    USER_DATA_DIR = os.path.join(os.getcwd(), "auth", "x_user_data")
+    USER_DATA_DIR = str(x_user_data())
     os.makedirs(USER_DATA_DIR, exist_ok=True)
 
     with sync_playwright() as p:

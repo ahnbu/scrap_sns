@@ -23,12 +23,14 @@ created: "2026-04-17 13:25"
 
 `sns_hub.vbs`는 서버를 백그라운드로 띄운 뒤 `/api/status`를 확인하고 레포 루트 `index.html`을 연다. 현재 운영 흐름은 "로컬 HTML + API 서버" 조합이다.
 
+인증 런타임 정본은 `C:\Users\ahnbu\.config\auth`다. 레포의 `auth/`는 이 경로를 가리키는 junction이며, consumer는 repo-local auth 자산을 직접 정본으로 보지 않는다.
+
 ## 플랫폼별 수집 흐름
 
 ### Threads
 
 1. `thread_scrap.py`가 저장 목록을 스크롤하며 simple 파일을 만든다.
-2. simple 항목 중 `is_detail_collected`가 비어 있는 글만 `thread_scrap_single.py`가 `auth/auth_threads.json` 쿠키를 읽어 browserless `requests`로 permalink HTML을 가져온다.
+2. simple 항목 중 `is_detail_collected`가 비어 있는 글만 `thread_scrap_single.py`가 `AUTH_HOME/threads/storage_state.json` 쿠키를 읽어 browserless `requests`로 permalink HTML을 가져온다.
 3. `utils/threads_parser.py`가 HTML에 임베드된 `thread_items`를 파싱하고, 상세 수집기는 같은 작성자의 연속된 타래를 병합해 full 파일에 승격한다.
 4. 실패 항목은 `scrap_failures_threads.json`에 누적하고, 저장 직전 `validate_post()`로 스키마 위반을 차단한다.
 
@@ -52,7 +54,7 @@ created: "2026-04-17 13:25"
 ### X(Twitter)
 
 1. `twitter_scrap.py`가 북마크 타임라인 JSON과 HTML fallback에서 simple 목록을 만든다.
-2. `twitter_scrap_single.py`가 `auth/x_cookies_*.json`에서 `auth_token`, `ct0`를 읽고 `twitter tweet <url> --json`으로 focal tweet 상세를 조회한다.
+2. `twitter_scrap_single.py`가 `AUTH_HOME/x/cookies.json`을 우선 읽고, 필요 시 latest `cookies_*.json` fallback에서 `auth_token`, `ct0`를 꺼내 `twitter tweet <url> --json`으로 focal tweet 상세를 조회한다.
 3. 상세 단계는 CLI payload의 첫 항목만 사용해 focal tweet 본문, 미디어, 실제 작성자명만 보강한다. 대화 전체 thread 확장은 하지 않는다.
 4. 3회 이상 실패한 항목은 `scrap_failures_twitter.json`을 기준으로 잠시 제외한다.
 

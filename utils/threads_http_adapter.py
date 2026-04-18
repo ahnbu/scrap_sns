@@ -2,8 +2,11 @@ from __future__ import annotations
 
 import json
 from dataclasses import dataclass
+from pathlib import Path
 
 import requests
+
+from utils.auth_paths import threads_storage
 
 
 THREADS_COOKIE_KEYS = ("sessionid", "csrftoken", "ds_user_id", "mid", "ig_did", "rur")
@@ -19,8 +22,9 @@ class ThreadsFetchResult:
     status_code: int
 
 
-def load_threads_cookies(auth_file: str = "auth/auth_threads.json") -> dict | None:
-    with open(auth_file, "r", encoding="utf-8") as file:
+def load_threads_cookies(auth_file: str | None = None) -> dict | None:
+    resolved = Path(auth_file) if auth_file else threads_storage()
+    with open(resolved, "r", encoding="utf-8") as file:
         storage_state = json.load(file)
 
     cookies = {}

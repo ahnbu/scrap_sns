@@ -10,11 +10,12 @@ from datetime import datetime, timedelta
 from playwright.sync_api import sync_playwright
 from utils.json_to_md import convert_json_to_md
 from utils.linkedin_parser import parse_linkedin_post, extract_urn_id
+from utils.auth_paths import linkedin_storage
 
 # --- 설정 ---
 TARGET_URL = "https://www.linkedin.com/my-items/saved-posts/"
 LOGIN_URL = "https://www.linkedin.com/login"
-AUTH_FILE = "auth/auth_linkedin.json"
+AUTH_FILE = str(linkedin_storage())
 DATA_DIR = "output_linkedin/python"
 UPDATE_DIR = os.path.join(DATA_DIR, "update")
 

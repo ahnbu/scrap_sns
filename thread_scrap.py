@@ -21,6 +21,7 @@ from datetime import datetime, timedelta
 from dotenv import load_dotenv
 from utils.json_to_md import convert_json_to_md
 from utils.post_schema import normalize_post, validate_post
+from utils.auth_paths import threads_storage
 
 # 환경 변수 로드
 load_dotenv('.env.local')
@@ -37,7 +38,7 @@ WINDOW_HEIGHT = 500    # 브라우저 높이
 OUTPUT_DIR = "output_threads/python"
 # 수집 완료 후 저장될 파일명 (임시 - 증분 업데이트 파일)
 OUTPUT_FILE = f"{OUTPUT_DIR}/update/threads_py_simple_update_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
-AUTH_FILE = "auth/auth_threads.json"
+AUTH_FILE = str(threads_storage())
 THREADS_ID = os.getenv("THREADS_ID")
 THREADS_PW = os.getenv("THREADS_PW")
 

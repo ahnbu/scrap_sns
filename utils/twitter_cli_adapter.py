@@ -1,11 +1,12 @@
 from __future__ import annotations
 
-import glob
 import json
-import os
 import subprocess
 import sys
 from dataclasses import dataclass
+from pathlib import Path
+
+from utils.auth_paths import read_x_cookie_tokens, x_cookies_latest
 
 WSRV_PREFIX = "https://wsrv.nl/?url="
 
@@ -18,26 +19,10 @@ class TwitterCliDetail:
 
 
 def load_twitter_tokens(auth_dir="auth"):
-    pattern = os.path.join(str(auth_dir), "x_cookies_*.json")
-    cookie_files = sorted(glob.glob(pattern), reverse=True)
-    if not cookie_files:
+    cookie_path = x_cookies_latest(Path(auth_dir) if auth_dir is not None else None)
+    if not cookie_path:
         return None
-
-    with open(cookie_files[0], "r", encoding="utf-8") as file:
-        cookies = json.load(file)
-
-    values = {
-        item.get("name"): item.get("value")
-        for item in cookies
-        if item.get("name") in {"auth_token", "ct0"}
-    }
-    if not values.get("auth_token") or not values.get("ct0"):
-        return None
-
-    return {
-        "auth_token": values["auth_token"],
-        "ct0": values["ct0"],
-    }
+    return read_x_cookie_tokens(cookie_path)
 
 
 def build_twitter_cli_env(base_env, tokens):

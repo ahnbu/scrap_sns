@@ -13,6 +13,7 @@ from utils.threads_http_adapter import (
     load_threads_cookies,
 )
 from utils.threads_parser import extract_items_multi_path, extract_json_from_html
+from utils.auth_paths import threads_storage
 
 # ==========================================
 # ⚙️ Configuration
@@ -21,7 +22,7 @@ OUTPUT_DIR = "output_threads/python"
 SIMPLE_FILE_PATTERN = "threads_py_simple_*.json"
 FULL_FILE_PATTERN = "threads_py_full_{date}.json"
 FAILURES_FILE = "scrap_failures_threads.json"
-AUTH_FILE = "auth/auth_threads.json"
+AUTH_FILE = str(threads_storage())
 
 
 # ==========================================
@@ -378,7 +379,7 @@ def main(
     if target_codes:
         cookies = cookie_loader(auth_file=auth_file)
         if not cookies:
-            print("❌ Threads 인증 쿠키를 찾을 수 없습니다. auth/auth_threads.json을 확인하세요.")
+            print(f"❌ Threads 인증 쿠키를 찾을 수 없습니다. {threads_storage()} 를 확인하세요.")
         else:
             headers = header_builder()
             total_targets = len(target_codes)

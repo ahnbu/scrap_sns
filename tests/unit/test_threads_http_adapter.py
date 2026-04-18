@@ -1,4 +1,5 @@
 import json
+import importlib
 
 import pytest
 import requests
@@ -12,6 +13,7 @@ from utils.threads_http_adapter import (
 
 
 def _write_storage_state(path, cookies):
+    path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(
         json.dumps({"cookies": cookies, "origins": []}, ensure_ascii=False, indent=2),
         encoding="utf-8",
@@ -73,6 +75,20 @@ def test_load_threads_cookies_filters_non_threads_domains(tmp_path):
     assert load_threads_cookies(str(auth_file))["sessionid"] == "session"
 
 
+def test_load_threads_cookies_uses_auth_home_default(monkeypatch, tmp_path):
+    auth_file = tmp_path / "threads" / "storage_state.json"
+    _write_storage_state(
+        auth_file,
+        [{"name": "sessionid", "value": "session", "domain": ".threads.com"}],
+    )
+    monkeypatch.setenv("AUTH_HOME", str(tmp_path))
+
+    import utils.threads_http_adapter as threads_http_adapter
+
+    importlib.reload(threads_http_adapter)
+    assert threads_http_adapter.load_threads_cookies() == {"sessionid": "session"}
+
+
 def test_build_threads_headers_preserves_override():
     headers = build_threads_headers({"User-Agent": "CustomUA/1.0"})
 
@@ -95,7 +111,9 @@ def test_fetch_thread_html_wraps_200_response():
         runner=runner,
     )
 
-    assert result == ThreadsFetchResult(html="<html>ok</html>", status_code=200)
+    assert result is not None
+    assert result.html == "<html>ok</html>"
+    assert result.status_code == 200
 
 
 def test_fetch_thread_html_returns_none_on_302():

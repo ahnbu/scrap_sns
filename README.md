@@ -37,29 +37,49 @@ THREADS_ID=...
 THREADS_PW=...
 ```
 
-## 인증 갱신
-
-Threads와 LinkedIn 세션을 다시 저장할 때:
+인증 런타임 정본은 `C:\Users\ahnbu\.config\auth`입니다. 레포의 `auth/` 폴더는 이 경로를 가리키는 junction이며, runtime source를 바꾼 뒤에는 아래 명령으로 다시 동기화합니다.
 
 ```powershell
-python renew_auth.py
+powershell -ExecutionPolicy Bypass -File .\scripts\sync_auth_runtime.ps1 `
+  -SourceRoot (Get-Location).Path `
+  -AuthHome "$env:USERPROFILE\.config\auth" `
+  -LegacyAuthDir ".\auth"
+```
+
+## 인증 갱신
+
+중앙 renew entrypoint는 `C:\Users\ahnbu\.config\auth\renew.py`입니다. 레포 루트의 `renew_auth.py`는 같은 스크립트를 호출하는 compatibility proxy입니다.
+
+LinkedIn, Threads, Skool, X 세션을 갱신할 때:
+
+```powershell
+python "$env:USERPROFILE\.config\auth\renew.py" linkedin
+python "$env:USERPROFILE\.config\auth\renew.py" threads
+python "$env:USERPROFILE\.config\auth\renew.py" skool
+python "$env:USERPROFILE\.config\auth\renew.py" x
 ```
 
 Threads 인증은 producer와 consumer가 같은 storage_state를 공유합니다.
 
-- `thread_scrap.py`: `auth/auth_threads.json` storage_state로 `/saved` 타임라인 수집
+- canonical: `AUTH_HOME/threads/storage_state.json`
+- compatibility: `AUTH_HOME/auth_threads.json`
+- `thread_scrap.py`: `/saved` 타임라인 수집
 - `thread_scrap_single.py`: 같은 storage_state의 `.threads.com` 쿠키를 `requests`에 주입
 
 X(Twitter) 인증은 producer와 consumer 역할을 분리해 관리합니다.
 
-- `twitter_scrap.py`: `auth/x_user_data/` persistent Chrome profile
-- `twitter_scrap_single.py`: `auth/x_cookies_*.json` -> `twitter-cli`
-- 인증 갱신 스크립트: `renew_twitter_auth.py`, `inject_x_cookies.py`
+- canonical profile: `AUTH_HOME/x/user_data/`
+- canonical cookie link: `AUTH_HOME/x/cookies.json`
+- compatibility cookie link: `AUTH_HOME/x_cookies_current.json`
+- dated snapshots: `AUTH_HOME/x/cookies_YYYYMMDD_HHmm.json`
+- `twitter_scrap.py`: persistent Chrome profile
+- `twitter_scrap_single.py`: `AUTH_HOME/x/cookies.json`과 latest dated snapshot fallback -> `twitter-cli`
+- `inject_x_cookies.py`: current cookie snapshot을 persistent profile에 재주입
 
 producer용 X Chrome 프로필을 다시 저장할 때:
 
 ```powershell
-python renew_twitter_auth.py
+python "$env:USERPROFILE\.config\auth\renew.py" x
 ```
 
 저장된 고정 쿠키 파일을 persistent profile에 주입할 때:
@@ -109,7 +129,7 @@ python twitter_scrap_single.py
 `npm run scrap:threads`, `npm run scrap:linkedin`, `npm run scrap:all`도 같은 스크립트를 감싸는 래퍼입니다.
 
 X consumer 토큰이 없으면 `twitter_scrap_single.py` 상세 수집은 건너뛰고, 기존 메타데이터 기준 full 동기화만 진행합니다.
-Threads consumer는 Playwright 없이 `auth/auth_threads.json` 쿠키만 유효하면 실행됩니다.
+Threads consumer는 Playwright 없이 `AUTH_HOME/threads/storage_state.json` 쿠키만 유효하면 실행됩니다.
 
 ## 웹 뷰어와 태그 저장
 

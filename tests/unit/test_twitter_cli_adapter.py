@@ -59,6 +59,22 @@ def test_load_twitter_tokens_returns_none_when_latest_cookie_missing_required_to
     assert load_twitter_tokens(auth_dir=tmp_path) is None
 
 
+def test_load_twitter_tokens_prefers_nested_current_link_over_legacy_flat_files(tmp_path):
+    legacy = tmp_path / "x_cookies_20260417_090000.json"
+    _write_cookie_file(legacy, auth_token="old-token", ct0="old-ct0")
+
+    x_dir = tmp_path / "x"
+    x_dir.mkdir()
+    actual = x_dir / "cookies_20260418_090000.json"
+    _write_cookie_file(actual, auth_token="new-token", ct0="new-ct0")
+    (x_dir / "cookies.json").symlink_to(actual.name)
+
+    assert load_twitter_tokens(auth_dir=tmp_path) == {
+        "auth_token": "new-token",
+        "ct0": "new-ct0",
+    }
+
+
 def test_build_twitter_cli_env_injects_expected_keys():
     env = build_twitter_cli_env({"PATH": "ok"}, {"auth_token": "aaa", "ct0": "bbb"})
 

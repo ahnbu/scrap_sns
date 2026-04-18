@@ -39,6 +39,12 @@ created: "2026-04-17 13:20"
 - 뷰어 정적 데이터: `web_viewer/data.js`
 - 태그 저장소: `web_viewer/sns_tags.json`
 - 브라우저 상태: `localStorage`
+- 인증 런타임: `C:\Users\ahnbu\.config\auth\`
+  - LinkedIn: `linkedin/storage_state.json`
+  - Threads: `threads/storage_state.json`
+  - Skool: `skool/storage_state.json`
+  - X canonical: `x/user_data/`, `x/cookies.json`, `x/storage_state.json`
+  - X compatibility: `x_cookies_current.json`, `x_storage_state_current.json`
 
 파싱·정규화 로직 변경 시 위 surface 중 어떤 파일이 영향을 받는지 먼저 확인해야 한다.
 
@@ -95,7 +101,7 @@ REQUIRED_FIELDS = ["sns_platform", "username", "url", "created_at"]
 - `created_at`: `taken_at` 기반 절대 시각
 - `url`: `https://www.threads.com/@{username}/post/{code}`
 
-상세 수집기는 `auth/auth_threads.json` storage_state의 `.threads.com` 쿠키를 읽어 permalink HTML을 직접 가져오고, 같은 작성자의 연속된 타래글을 병합해 `is_merged_thread`, `original_item_count` 같은 보조 정보를 붙일 수 있다.
+상세 수집기는 `C:\Users\ahnbu\.config\auth\threads\storage_state.json` storage_state의 `.threads.com` 쿠키를 읽어 permalink HTML을 직접 가져오고, 같은 작성자의 연속된 타래글을 병합해 `is_merged_thread`, `original_item_count` 같은 보조 정보를 붙일 수 있다.
 
 ### LinkedIn
 
@@ -126,7 +132,7 @@ REQUIRED_FIELDS = ["sns_platform", "username", "url", "created_at"]
 - `created_at`: 목록 단계 값이 있으면 유지하고, 비어 있을 때만 상세 단계 수집 시각으로 fallback 채움
 - `url`: 기본은 `https://x.com/{username}/status/{post_id}`, 사용자명이 비어 있으면 `https://x.com/i/status/{post_id}`
 
-상세 수집 단계에서 실제 focal tweet 작성자명이 확인되면 `username`과 `url`이 재보정될 수 있다.
+상세 수집 단계에서 실제 focal tweet 작성자명이 확인되면 `username`과 `url`이 재보정될 수 있다. 이 단계의 토큰 원본은 `C:\Users\ahnbu\.config\auth\x\cookies.json`이며, 필요 시 latest `cookies_*.json`으로 fallback한다.
 
 ## URL 정규화 규칙
 

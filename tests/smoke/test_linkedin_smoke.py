@@ -3,11 +3,13 @@ import os
 import pytest
 from playwright.sync_api import Playwright
 
+from utils.auth_paths import linkedin_storage
+
 
 @pytest.mark.smoke
 def test_linkedin_session_validity(playwright: Playwright):
     """LinkedIn 세션 파일의 유효성을 검사합니다."""
-    auth_file = "auth/auth_linkedin.json"
+    auth_file = str(linkedin_storage())
     assert os.path.exists(auth_file), f"세션 파일이 없습니다: {auth_file}"
 
     user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"

@@ -3,11 +3,13 @@ import os
 import pytest
 from playwright.sync_api import Playwright
 
+from utils.auth_paths import threads_storage
+
 
 @pytest.mark.smoke
 def test_threads_session_validity(playwright: Playwright):
     """Threads 세션 파일의 유효성을 검사합니다."""
-    auth_file = "auth/auth_threads.json"
+    auth_file = str(threads_storage())
     assert os.path.exists(auth_file), f"세션 파일이 없습니다: {auth_file}"
 
     browser = playwright.chromium.launch(headless=True)
@@ -30,7 +32,7 @@ def test_threads_session_validity(playwright: Playwright):
 @pytest.mark.smoke
 def test_threads_scraping_smoke(playwright: Playwright):
     """Threads에서 실제 1개 이상의 게시물을 가로챌 수 있는지 확인합니다."""
-    auth_file = "auth/auth_threads.json"
+    auth_file = str(threads_storage())
     assert os.path.exists(auth_file), f"세션 파일이 없습니다: {auth_file}"
 
     browser = playwright.chromium.launch(headless=True)

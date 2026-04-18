@@ -40,6 +40,9 @@ node_modules/
 .playwright-mcp/
 logs/
 scripts/*
+!scripts/auth_runtime/
+!scripts/auth_runtime/*.py
+!scripts/sync_auth_runtime.ps1
 !scripts/validate_sns_hub_launcher.ps1
 
 # Terminal Paste Image folder
