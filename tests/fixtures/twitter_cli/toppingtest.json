@@ -1,0 +1,789 @@
+{
+  "ok": true,
+  "schema_version": "1",
+  "data": [
+    {
+      "id": "2038744833351893274",
+      "text": "요즘 Claude와 Obsidian을 결합하여 활용하는 사례를 소개하는 글이 X에 빈번히 올라오고 있다.\n\n나 또한 Obsidian과 Claude를 연계하여 사용하고 있는데, 나도 어떻게 활용하고 있는지 공개하고자 한다.\n\n※ 별로 대단한 건 아니니깐 기대는 하지 마시고 보시길 바란다.\n\n1. 일단 내 주요 옵시디언 볼트는 PARA 구조로 이루어져 있다.\n\n(아래는 레알 나의 옵시디언 볼트 디렉토리 구조다)\n\n📁 C:\\obsidian\\dopping\\\n│\n├── 📂 00 Inbox\\\n│\n├── 📂 00 Me\\\n│\n├── 📂 01 Projects\\\n│   ├── 📂 ClawPet\\\n│   ├── 📂 DoppingMath\\\n│   ├── 📂 KStudio\\\n│   ├── 📂 MoneyLab\\\n│   ├── 📂 OnlyForward\\\n│   │   ├── 📂 Design\\\n│   │   ├── 📂 Features\\\n│   │   ├── 📂 Technical\\\n│   │   └── 📂 Tumblbug\\\n│   ├── 📂 PostPop\\  \n│   ├── 📂 도핑랩\\\n│   └── 📂 재\\\n│\n├── 📂 02 Areas\\\n│   ├── 📂 Developing\\  \n│   ├── 📂 Investment\\  \n│   ├── 📂 Kmong\\\n│   ├── 📂 Personal\\\n│   └── 📂 Writting\\  \n│\n├── 📂 03 Resources\\\n│   ├── 📂 ai_articles\\  \n│   ├── 📂 coding\\  \n│   ├── 📂 doppinglab_research\\ \n│   ├── 📂 markets\\  \n│   ├── 📂 ref_img\\  \n│   └── 📂 x_discord_ai\\  \n│\n└── 📂 04 Archive\\\n    ├── 📂 Old Notes\\\n    └── 📂 Old Projects\\\n\n2. 내가 핵심이라고 생각하는 폴더는 <00 Me> 폴더다.\n\n아무리 메모리 기능이 있다한들 새 세션 시작할 때마다 나를 다 아는 건 아니렷다. \n\n또한, Claude가 나를 좀 더 잘 알기를 바랐다. 그래서 모든 질문에 나에게 최적화된, 좀 더 나에게 적합한 답변을 주기를 바랐다.\n\n그래서 만들었다.\n\n00 Me 폴더 아래에는 4가지 파일을 두었다.\n\n📂 00 Me\\\n  About Me.md       ← 나는 누구인가\n  Projects Map.md   ← 내가 하는 것들\n  Goals & Vision.md ← 어디로 가고 싶은가\n  CLAUDE.md         ← Claude 전용 컨텍스트 파일\n\n3. 주요 파일은 아마도 CLAUDE.md\n\n이 파일에는 내가 Claude에게 알려주면 좋을 것들을 다 정리해두었다. 직업, 현재 진행중인 프로젝트, 에너지 패턴, 등등. Claude는 새 세션에서 이 파일을 읽고, 내가 누군지 바로 알 수 있으렷다.\n\n4. 그리고 Claude Skill도 하나 만들었다.\n\n이름하야 \"obsidian-context\" 스킬이다.\n\n세션을 시작할 때 이렇게 시작하는거다.\n\n\"나를 읽어줘\"\n\"옵시디언 읽어줘\"\n\"나에 대해 파악해\"\n\"나 기억해봐\"\n\n그러면 매번 \"나 이런 사람이고 이런 프로젝트 하고 있어\" 설명하지 않아도 된다.\n\n스킬 내용은 대략적으로 이렇게 기술하였다.\n\n\"도핑의 00 Me 폴더에 있는 모든 파일을 읽어서 이 사람이 누구인지, 어떤 프로젝트를 하는지 파악한다. 읽고 나면 준비됐다고만 짧게 말한다.\"\n\n5. 이런 식으로 사용할 수 있다.\n\n참고로 나는 벌려 놓은 일이 많고 충동적인 ADHD 중증 환자이기 때문에 더더욱 이런 연계 기능이 필요했는지도 모른다.\n\n\"아... 그. OnlyForward 프로젝트는 뭐 하던 상태였지?\"\n\n그럼 Claude는 알려준다.\n\n\"후원자 발송 단계예요. 이후 판매 전환 예정이고요.\"\n\n또 물어볼 수 있다.\n\n\"내가 벌려 놓은게 워낙 많아서... 내가 뭐 하면 되지, 이제? 뭘 해야됐더라? 급한게뭐지?\"\n\n그럼 대답하겠지.\n\n또한 내 옵시디언 볼트에는 투자 관련 자료, 인사이트들도 굉장히 많다.\n\n\"비트코인 지금 팔까 말까\"\n\n물어보면, Claude가 내 옵시디언 볼트에 있는 수많은 리소스들을 읽고 대답해준다.\n\n\"CPO 광모듈 지금 들어가면 늦은 거냐\"\n\n그럼 markets이나 research 폴더 등에 저장해놓은 최신 시장 뉴스나 아티클들을 살펴보고, 아아아주 잘 대답해준다.\n\n그 외에도 아이디어가 생겼을 때 노트 자동화 하기에도 용이하고, 번아웃 왔을 때도 나에게 맞춤 응답이 와서 좋으렷다.\n\n6. 그리고 해당 파일들은 살면서 지속적으로 업데이트 된다.\n\n그렇겠지 않나. 사람이 바뀌는데. 가치관도 바뀌고.\n\nMe 폴더에 나의 강점, 목표, 약점, 모든 걸 다 써놓으면 Claude가 나에게 맞게 반응하기 시작한다.\n\n별 건 아닌데, 막상 써보면 괜찮은 기능이다. \n\n7. 각 파일에 들어간 요소들\n\n- About Me.md : 기본 정보, 내가 하는 것들, 성격과 작동 방식, 가치관, 좋아하는 것과 관심사, 싫어하는 것, 나에게 하는 말\n\n- Projects Map.md : 현재 활성 프로젝트, 자동화 되어 있는 것들, 프로젝트들의 관계, 아직 아이디어 단계\n\n- Goals & Vision.md : 큰 그림, 올해 목표, 내가 원하는 삶의 방식, 하지 않을 것들, 지금 가장 중요한 한가지\n\n- CLAUDE.md : 나는 누구인가, 작동방식, 현재 활성 프로젝트 테이블, 자동화 인프라, 2026 핵심목표, Claude 함께 쓰는 방식, 옵시디언 폴더 구조 등",
+      "author": {
+        "id": "1884127311634784257",
+        "name": "김도핑✨️",
+        "screenName": "toppingtest",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2004127737708269573/yKHX2m3X_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 464,
+        "retweets": 138,
+        "replies": 21,
+        "quotes": 9,
+        "views": 32176,
+        "bookmarks": 727
+      },
+      "createdAt": "Mon Mar 30 22:27:00 +0000 2026",
+      "createdAtLocal": "2026-03-31 07:27",
+      "createdAtISO": "2026-03-30T22:27:00+00:00",
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HEsTPr6akAAiitk.jpg",
+          "width": 1200,
+          "height": 904
+        },
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HEsTa9FbUAA_sck.jpg",
+          "width": 1200,
+          "height": 904
+        }
+      ],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "ko",
+      "score": null
+    },
+    {
+      "id": "2038755714995486794",
+      "text": "@toppingtest 아니 요새 옵시디언+클로드 글이 유행처럼 엄청 많이 보이네요 ㄷㄷㄷ \n\n도핑님도 PARA 구조로 폴더를 사용하고 계실줄이야\n\n전혀 성인ADHD 있다는 사람이 할만한 행보가 아니잖아요 이건",
+      "author": {
+        "id": "57549703",
+        "name": "Katoo",
+        "screenName": "blazingbees",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1936442233726877696/yLPmp0tY_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 7,
+        "retweets": 0,
+        "replies": 1,
+        "quotes": 0,
+        "views": 903,
+        "bookmarks": 0
+      },
+      "createdAt": "Mon Mar 30 23:10:15 +0000 2026",
+      "createdAtLocal": "2026-03-31 08:10",
+      "createdAtISO": "2026-03-30T23:10:15+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "ko",
+      "score": null
+    },
+    {
+      "id": "2038822501405634657",
+      "text": "@blazingbees ADHD 증상을 최대한 옭아매기 위한 몸부림..",
+      "author": {
+        "id": "1884127311634784257",
+        "name": "김도핑✨️",
+        "screenName": "toppingtest",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2004127737708269573/yKHX2m3X_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 5,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 393,
+        "bookmarks": 0
+      },
+      "createdAt": "Tue Mar 31 03:35:38 +0000 2026",
+      "createdAtLocal": "2026-03-31 12:35",
+      "createdAtISO": "2026-03-31T03:35:38+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "ko",
+      "score": null
+    },
+    {
+      "id": "2038745934507680084",
+      "text": "@toppingtest 너 진짜 천재냐??? 와..... 난 구조화도 진짜 어렵던데",
+      "author": {
+        "id": "1895697924556013570",
+        "name": "김개새(Kim いぬとり)",
+        "screenName": "HiddenDeals44",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2023758604265025537/5M9EJBnV_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 3,
+        "retweets": 0,
+        "replies": 1,
+        "quotes": 0,
+        "views": 753,
+        "bookmarks": 0
+      },
+      "createdAt": "Mon Mar 30 22:31:23 +0000 2026",
+      "createdAtLocal": "2026-03-31 07:31",
+      "createdAtISO": "2026-03-30T22:31:23+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "ko",
+      "score": null
+    },
+    {
+      "id": "2038746065307074695",
+      "text": "@HiddenDeals44 개새야\n존나 쉽고별거아니여\n너도해방",
+      "author": {
+        "id": "1884127311634784257",
+        "name": "김도핑✨️",
+        "screenName": "toppingtest",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2004127737708269573/yKHX2m3X_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 3,
+        "retweets": 0,
+        "replies": 2,
+        "quotes": 0,
+        "views": 699,
+        "bookmarks": 0
+      },
+      "createdAt": "Mon Mar 30 22:31:54 +0000 2026",
+      "createdAtLocal": "2026-03-31 07:31",
+      "createdAtISO": "2026-03-30T22:31:54+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "ko",
+      "score": null
+    },
+    {
+      "id": "2038839575578284101",
+      "text": "@toppingtest 혹시 옵시디언에 자료 담으시는건 어떻게 하시나요? 매번 각각 수동으로 담거나 작성하시는지 아니면 뭔가 요령이 있으신지 궁금합니다ㅠ\n저도 옵시디언-Claude 잘 쓰고 싶은데 이게 어떻게 활용해야할지 개념이 잘 안잡혀서…",
+      "author": {
+        "id": "1642194068",
+        "name": "⚡️불꽃쓰로틀⚡️",
+        "screenName": "blazethrttl",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2032013239043964930/gkSRTX4-_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 1,
+        "retweets": 0,
+        "replies": 1,
+        "quotes": 0,
+        "views": 387,
+        "bookmarks": 0
+      },
+      "createdAt": "Tue Mar 31 04:43:29 +0000 2026",
+      "createdAtLocal": "2026-03-31 13:43",
+      "createdAtISO": "2026-03-31T04:43:29+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "ko",
+      "score": null
+    },
+    {
+      "id": "2038840968032760075",
+      "text": "@blazethrttl 종류별로 달라서여\n자동으로 들어오는것도잇꼬\n반자동으로 들어오는것도잇꼬\n수동으로는 웬만하면 잘 안넣는것같내여",
+      "author": {
+        "id": "1884127311634784257",
+        "name": "김도핑✨️",
+        "screenName": "toppingtest",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2004127737708269573/yKHX2m3X_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 1,
+        "retweets": 0,
+        "replies": 1,
+        "quotes": 0,
+        "views": 320,
+        "bookmarks": 0
+      },
+      "createdAt": "Tue Mar 31 04:49:01 +0000 2026",
+      "createdAtLocal": "2026-03-31 13:49",
+      "createdAtISO": "2026-03-31T04:49:01+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "ko",
+      "score": null
+    },
+    {
+      "id": "2038748602034688254",
+      "text": "@toppingtest 와 너 진짜 *핵심*을 찔렀어",
+      "author": {
+        "id": "1452989087439368198",
+        "name": "Cognac(꼬냑)",
+        "screenName": "supernovajunn",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2024378974298943489/voBO3RCH_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 5,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 482,
+        "bookmarks": 1
+      },
+      "createdAt": "Mon Mar 30 22:41:59 +0000 2026",
+      "createdAtLocal": "2026-03-31 07:41",
+      "createdAtISO": "2026-03-30T22:41:59+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "ko",
+      "score": null
+    },
+    {
+      "id": "2038748732871872786",
+      "text": "@toppingtest 클로드에 복붙. 따라해. ㅋㅋㅋㅋ",
+      "author": {
+        "id": "1244585836168884225",
+        "name": "심프",
+        "screenName": "simplspark",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2035154294224429060/9KqEUEWB_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 2,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 457,
+        "bookmarks": 1
+      },
+      "createdAt": "Mon Mar 30 22:42:30 +0000 2026",
+      "createdAtLocal": "2026-03-31 07:42",
+      "createdAtISO": "2026-03-30T22:42:30+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "ko",
+      "score": null
+    },
+    {
+      "id": "2038764828681191523",
+      "text": "@toppingtest 와..옵시디언하고 사용할수도 있군요 :-) 공유 감사합니다. 저도 옵시디언을 쓰고있는데 좋은 참고가 되었습니다!",
+      "author": {
+        "id": "2931766028",
+        "name": "갑각류",
+        "screenName": "crip_crap",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2037847831701315584/FwvsNzHh_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 1,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 279,
+        "bookmarks": 0
+      },
+      "createdAt": "Mon Mar 30 23:46:28 +0000 2026",
+      "createdAtLocal": "2026-03-31 08:46",
+      "createdAtISO": "2026-03-30T23:46:28+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "ko",
+      "score": null
+    },
+    {
+      "id": "2038759613760438573",
+      "text": "@toppingtest 와 멋지십니다~~",
+      "author": {
+        "id": "77488389",
+        "name": "담담쉘🌚🌝",
+        "screenName": "mongsuel",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2015622137147432960/Z83x1kgo_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 1,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 185,
+        "bookmarks": 0
+      },
+      "createdAt": "Mon Mar 30 23:25:44 +0000 2026",
+      "createdAtLocal": "2026-03-31 08:25",
+      "createdAtISO": "2026-03-30T23:25:44+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "ko",
+      "score": null
+    },
+    {
+      "id": "2038755521512239234",
+      "text": "@toppingtest @gotovision 분명 기대하지 말고 보라 그랬는데…😅",
+      "author": {
+        "id": "91324908",
+        "name": "Oliver Cho",
+        "screenName": "olivercho",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2034164305441304576/r_z1H0d0_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 1,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 345,
+        "bookmarks": 0
+      },
+      "createdAt": "Mon Mar 30 23:09:29 +0000 2026",
+      "createdAtLocal": "2026-03-31 08:09",
+      "createdAtISO": "2026-03-30T23:09:29+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "ko",
+      "score": null
+    },
+    {
+      "id": "2038813139622658360",
+      "text": "@toppingtest 기대를 충족시켜 주시네요!! ㅎㅎㅎ",
+      "author": {
+        "id": "1691279619117535232",
+        "name": "CakaStory",
+        "screenName": "cakastory",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2022111905440313344/Yfl07l4-_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 1,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 153,
+        "bookmarks": 0
+      },
+      "createdAt": "Tue Mar 31 02:58:26 +0000 2026",
+      "createdAtLocal": "2026-03-31 11:58",
+      "createdAtISO": "2026-03-31T02:58:26+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "ko",
+      "score": null
+    },
+    {
+      "id": "2038751401753686374",
+      "text": "@toppingtest 도핑랩, 도핑매쓰~~!",
+      "author": {
+        "id": "1090957947474038786",
+        "name": "심월",
+        "screenName": "mindmoon_108",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2002878849655443456/4nSRPfpm_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 1,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 379,
+        "bookmarks": 0
+      },
+      "createdAt": "Mon Mar 30 22:53:07 +0000 2026",
+      "createdAtLocal": "2026-03-31 07:53",
+      "createdAtISO": "2026-03-30T22:53:07+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "ko",
+      "score": null
+    },
+    {
+      "id": "2038825792113881368",
+      "text": "@toppingtest 오! 저도 비슷한 고민이었습니다!\nMe 폴더 좋네요!\n저는 Personal 프로젝트로 만들어서 거기에 사주를 추가하고 개인적인 이야기들 이것저것 기록해놨습니다 😅",
+      "author": {
+        "id": "972088668155297792",
+        "name": "Cryptopia",
+        "screenName": "NomadSnowLeo",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2013006824866291713/HnMhkXRh_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 1,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 202,
+        "bookmarks": 0
+      },
+      "createdAt": "Tue Mar 31 03:48:43 +0000 2026",
+      "createdAtLocal": "2026-03-31 12:48",
+      "createdAtISO": "2026-03-31T03:48:43+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "ko",
+      "score": null
+    },
+    {
+      "id": "2038748929379205551",
+      "text": "@toppingtest 저랑 비슷하게 사용하시는군요!! 좋슴내다!",
+      "author": {
+        "id": "1953391894698057728",
+        "name": "BUGI",
+        "screenName": "Bugi952",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2043274414956171264/cT1JhuYE_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 1,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 285,
+        "bookmarks": 0
+      },
+      "createdAt": "Mon Mar 30 22:43:17 +0000 2026",
+      "createdAtLocal": "2026-03-31 07:43",
+      "createdAtISO": "2026-03-30T22:43:17+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "ko",
+      "score": null
+    },
+    {
+      "id": "2038747176445362437",
+      "text": "@toppingtest 와우 굿 팁이네유!!!!",
+      "author": {
+        "id": "15287541",
+        "name": "보안프로젝트",
+        "screenName": "ngnicky",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2011559922312626182/bSjs9_Q3_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 1,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 253,
+        "bookmarks": 0
+      },
+      "createdAt": "Mon Mar 30 22:36:19 +0000 2026",
+      "createdAtLocal": "2026-03-31 07:36",
+      "createdAtISO": "2026-03-30T22:36:19+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "ko",
+      "score": null
+    },
+    {
+      "id": "2038790292711854478",
+      "text": "@toppingtest 역시 전문가",
+      "author": {
+        "id": "121787886",
+        "name": "NoD(aka.웨키)",
+        "screenName": "krstory",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2017112642163527686/j46easJ2_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 1,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 102,
+        "bookmarks": 0
+      },
+      "createdAt": "Tue Mar 31 01:27:39 +0000 2026",
+      "createdAtLocal": "2026-03-31 10:27",
+      "createdAtISO": "2026-03-31T01:27:39+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "ko",
+      "score": null
+    },
+    {
+      "id": "2038865529755320684",
+      "text": "@toppingtest 인사이트 감사합니다!!",
+      "author": {
+        "id": "2033265104410832896",
+        "name": "Sochi",
+        "screenName": "Sochitd",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2038152070709260288/mZfUOcrl_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 0,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 74,
+        "bookmarks": 0
+      },
+      "createdAt": "Tue Mar 31 06:26:37 +0000 2026",
+      "createdAtLocal": "2026-03-31 15:26",
+      "createdAtISO": "2026-03-31T06:26:37+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "ko",
+      "score": null
+    },
+    {
+      "id": "2038907653297263014",
+      "text": "@toppingtest 천재신가요?",
+      "author": {
+        "id": "1962418028609761280",
+        "name": "1byte=8bit",
+        "screenName": "1byte_hodler",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1976924767073845255/xImvMBfs_normal.jpg",
+        "verified": false
+      },
+      "metrics": {
+        "likes": 0,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 55,
+        "bookmarks": 0
+      },
+      "createdAt": "Tue Mar 31 09:14:00 +0000 2026",
+      "createdAtLocal": "2026-03-31 18:14",
+      "createdAtISO": "2026-03-31T09:14:00+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "ko",
+      "score": null
+    },
+    {
+      "id": "2040098637225853380",
+      "text": "@toppingtest H🌟edda Wolf",
+      "author": {
+        "id": "2008773154827857921",
+        "name": "JaneSander",
+        "screenName": "JaneSander99980",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2039697282434764800/v-bDMqgj_normal.jpg",
+        "verified": false
+      },
+      "metrics": {
+        "likes": 0,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 8,
+        "bookmarks": 0
+      },
+      "createdAt": "Fri Apr 03 16:06:32 +0000 2026",
+      "createdAtLocal": "2026-04-04 01:06",
+      "createdAtISO": "2026-04-03T16:06:32+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "ht",
+      "score": null
+    },
+    {
+      "id": "2038848712408182925",
+      "text": "@toppingtest 김도핑님 완전 천재 ㄷ ㄷ 뭐든 하면 되실분 👍",
+      "author": {
+        "id": "216551550",
+        "name": "쇼너(Shoner) 🍔",
+        "screenName": "ShonerStyle",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1892399502360715264/qxxaw4gN_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 0,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 83,
+        "bookmarks": 0
+      },
+      "createdAt": "Tue Mar 31 05:19:47 +0000 2026",
+      "createdAtLocal": "2026-03-31 14:19",
+      "createdAtISO": "2026-03-31T05:19:47+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "ko",
+      "score": null
+    },
+    {
+      "id": "2038874731143999631",
+      "text": "@toppingtest 멋지네요 김도핑님👍🏻",
+      "author": {
+        "id": "1577306559792967681",
+        "name": "동피랑고양이(Dongpirang Cat)😸",
+        "screenName": "mangodaon",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1975392841183731716/oJQRvibt_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 0,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 65,
+        "bookmarks": 0
+      },
+      "createdAt": "Tue Mar 31 07:03:11 +0000 2026",
+      "createdAtLocal": "2026-03-31 16:03",
+      "createdAtISO": "2026-03-31T07:03:11+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "ko",
+      "score": null
+    },
+    {
+      "id": "2045337052590522724",
+      "text": "제미나이는 사실상 끝난 것 같다. 같은 프롬프트를 제미나이3.1PRO(with 딥씽크), GPT5.4PRO(with표준씽킹), Claude OPUS 4.7(with adaptive) 으로 돌렸더니, GPT와 OPUS는 비슷한 수준으로 결과물을 뱉어내는 데, 제미나이는 너무나도 형편없어서 도저히 쓸 수없는 결과물을 내놓더라.",
+      "author": {
+        "id": "1306828661337718784",
+        "name": "Alis volat propriis",
+        "screenName": "Alisvolatprop12",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1307101410627072000/XPkSEcSv_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 168,
+        "retweets": 16,
+        "replies": 17,
+        "quotes": 8,
+        "views": 9982,
+        "bookmarks": 16
+      },
+      "createdAt": "Sat Apr 18 03:02:08 +0000 2026",
+      "createdAtLocal": "2026-04-18 12:02",
+      "createdAtISO": "2026-04-18T03:02:08+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "ko",
+      "score": null
+    },
+    {
+      "id": "2045156267690213649",
+      "text": "Introducing Claude Design by Anthropic Labs: make prototypes, slides, and one-pagers by talking to Claude.\n\nPowered by Claude Opus 4.7, our most capable vision model. Available in research preview on the Pro, Max, Team, and Enterprise plans, rolling out throughout the day. https://t.co/2BgBGtgYGX",
+      "author": {
+        "id": "1943306828697550848",
+        "name": "Claude",
+        "screenName": "claudeai",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1950950107937185792/QOfEjFoJ_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 106463,
+        "retweets": 10205,
+        "replies": 3083,
+        "quotes": 7380,
+        "views": 32918394,
+        "bookmarks": 58628
+      },
+      "createdAt": "Fri Apr 17 15:03:46 +0000 2026",
+      "createdAtLocal": "2026-04-18 00:03",
+      "createdAtISO": "2026-04-17T15:03:46+00:00",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://video.twimg.com/amplify_video/2045155754038935553/vid/avc1/1920x1080/X8tXHs1RLlKGlJJS.mp4?tag=21",
+          "width": 1920,
+          "height": 1080
+        }
+      ],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2045150646798897469",
+      "text": "게임방송 유튜버는 평생직업일 것 같다.\n\n우리 엄마 재작년에 환갑이셨음\n그런데 저녁마다 부부끼리 방에서 유튭보면서 웃음이 끊이질 않음.. (유튭으로 게임방송 보는게 루틴임) \n\n나 어릴때 컴터 게임 알려준게 아빠고, 이제 게이머가 환갑이 되는 나이인거야",
+      "author": {
+        "id": "1467772411932123136",
+        "name": "Kana",
+        "screenName": "kana_option",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1568313246062608384/1wX32feX_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 238,
+        "retweets": 25,
+        "replies": 7,
+        "quotes": 1,
+        "views": 32436,
+        "bookmarks": 30
+      },
+      "createdAt": "Fri Apr 17 14:41:25 +0000 2026",
+      "createdAtLocal": "2026-04-17 23:41",
+      "createdAtISO": "2026-04-17T14:41:25+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "ko",
+      "score": null
+    },
+    {
+      "id": "2044973221808914720",
+      "text": "소신껏 살아ㅋㅋ_blindssul\n\n13학번 어린친구가 참 마인드가 좋네요.\n\n언제는 공무원경쟁이 치솟았고, \n전에는 개발자 직함만 달면 \n여기저기서 모셔가는 분위기였고. \n\n합격만 하면 전문직 떵떵거리던 회계사도 \n요새 취직이 쉽지않다고.. \n(삼일회계법인도 AI활용으로 TO 정말 많이 줄었다고)",
+      "author": {
+        "id": "1962329973257302016",
+        "name": "미장원",
+        "screenName": "scribens2026",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2027742501847879680/cBNmRCRX_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 1753,
+        "retweets": 475,
+        "replies": 51,
+        "quotes": 102,
+        "views": 184035,
+        "bookmarks": 500
+      },
+      "createdAt": "Fri Apr 17 02:56:24 +0000 2026",
+      "createdAtLocal": "2026-04-17 11:56",
+      "createdAtISO": "2026-04-17T02:56:24+00:00",
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HGE0TgkaEAAtPXD.jpg",
+          "width": 1320,
+          "height": 1899
+        }
+      ],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "ko",
+      "score": null
+    }
+  ]
+}

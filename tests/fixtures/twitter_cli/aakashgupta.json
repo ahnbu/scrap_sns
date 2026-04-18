@@ -1,0 +1,1433 @@
+{
+  "ok": true,
+  "schema_version": "1",
+  "data": [
+    {
+      "id": "2038713289254064321",
+      "text": "This guy literally broke down how to use Claude Code like an expert: \n\n1:40 -  Code vs Cowork vs OpenClaw  \n6:51 - Setting up context status line  \n12:03 - Sub-agents  \n17:49 - Creating skills  \n23:58 - Ask user questions tool  \n33:33 - Tool-powered skills: Tavily  \n36:57 - CLI vs MCP vs API hierarchy  \n39:30 - Make slides skill w/ Puppeteer  \n43:32 - Auto-invoking skills with hooks  \n46:49 - Jupyter notebooks for data trust  \n55:09 - The operating system file structure",
+      "author": {
+        "id": "101805159",
+        "name": "Aakash Gupta",
+        "screenName": "aakashgupta",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2021355466216062976/8MDXp7vR_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 4701,
+        "retweets": 665,
+        "replies": 60,
+        "quotes": 14,
+        "views": 1135159,
+        "bookmarks": 12041
+      },
+      "createdAt": "Mon Mar 30 20:21:40 +0000 2026",
+      "createdAtLocal": "2026-03-31 05:21",
+      "createdAtISO": "2026-03-30T20:21:40+00:00",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://video.twimg.com/amplify_video/2038710244122251264/vid/avc1/1280x720/ODmFcZfpQj1AO5g8.mp4?tag=21",
+          "width": 1280,
+          "height": 720
+        }
+      ],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2038714994129522735",
+      "text": "@carlvellotti's last episode crossed 500K so we had to have him back:\n\nhttps://t.co/N2TKTErlnZ",
+      "author": {
+        "id": "101805159",
+        "name": "Aakash Gupta",
+        "screenName": "aakashgupta",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2021355466216062976/8MDXp7vR_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 38,
+        "retweets": 5,
+        "replies": 3,
+        "quotes": 0,
+        "views": 29530,
+        "bookmarks": 99
+      },
+      "createdAt": "Mon Mar 30 20:28:26 +0000 2026",
+      "createdAtLocal": "2026-03-31 05:28",
+      "createdAtISO": "2026-03-30T20:28:26+00:00",
+      "media": [],
+      "urls": [
+        "https://x.com/aakashgupta/status/2010863662924497205?s=20"
+      ],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null,
+      "quotedTweet": {
+        "id": "2010863662924497205",
+        "text": "Claude Code with Opus-4.5 is basically AGI. Here's how to feel the AGI (with expert @carlvellotti):\n\n11:04 - Setting Up MCPs\n28:00 - Using Skills\n38:00 - APIs\n44:12 - Writing Docs\n1:08:08 - GitHub Integration https://t.co/JWyCUFmk7s",
+        "author": {
+          "screenName": "aakashgupta",
+          "name": "Aakash Gupta"
+        }
+      }
+    },
+    {
+      "id": "2038718744005124237",
+      "text": "@carlvellotti YouTube: \n\nhttps://t.co/e2M4qOQy9q",
+      "author": {
+        "id": "101805159",
+        "name": "Aakash Gupta",
+        "screenName": "aakashgupta",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2021355466216062976/8MDXp7vR_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 35,
+        "retweets": 1,
+        "replies": 2,
+        "quotes": 0,
+        "views": 18195,
+        "bookmarks": 55
+      },
+      "createdAt": "Mon Mar 30 20:43:20 +0000 2026",
+      "createdAtLocal": "2026-03-31 05:43",
+      "createdAtISO": "2026-03-30T20:43:20+00:00",
+      "media": [],
+      "urls": [
+        "https://www.youtube.com/watch?v=Eqh2iwSl570"
+      ],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2039069716732604437",
+      "text": "@carlvellotti Spotify:\n\nhttps://t.co/OYLAfU4UO9",
+      "author": {
+        "id": "101805159",
+        "name": "Aakash Gupta",
+        "screenName": "aakashgupta",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2021355466216062976/8MDXp7vR_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 4,
+        "retweets": 1,
+        "replies": 1,
+        "quotes": 0,
+        "views": 5447,
+        "bookmarks": 13
+      },
+      "createdAt": "Tue Mar 31 19:57:59 +0000 2026",
+      "createdAtLocal": "2026-04-01 04:57",
+      "createdAtISO": "2026-03-31T19:57:59+00:00",
+      "media": [],
+      "urls": [
+        "https://open.spotify.com/episode/677hWENjDqlvHJ2VTVY5dZ?si=WUQ_5iRYTrWwE7D7yS12Dg&pi=y5GawVzuRjGs0&t=0"
+      ],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2039407625151172638",
+      "text": "@carlvellotti Apple: \n\nhttps://t.co/nXd2mtGiGs",
+      "author": {
+        "id": "101805159",
+        "name": "Aakash Gupta",
+        "screenName": "aakashgupta",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2021355466216062976/8MDXp7vR_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 2,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 3118,
+        "bookmarks": 4
+      },
+      "createdAt": "Wed Apr 01 18:20:42 +0000 2026",
+      "createdAtLocal": "2026-04-02 03:20",
+      "createdAtISO": "2026-04-01T18:20:42+00:00",
+      "media": [],
+      "urls": [
+        "https://podcasts.apple.com/us/podcast/the-growth-podcast/id1763555775?i=1000758288340"
+      ],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2038716853972013548",
+      "text": "@aakashgupta Let's goooo",
+      "author": {
+        "id": "1119248862814752768",
+        "name": "Carl Vellotti 🥞",
+        "screenName": "carlvellotti",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1956439677789237248/5NEbQXT7_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 5,
+        "retweets": 0,
+        "replies": 1,
+        "quotes": 0,
+        "views": 2883,
+        "bookmarks": 1
+      },
+      "createdAt": "Mon Mar 30 20:35:50 +0000 2026",
+      "createdAtLocal": "2026-03-31 05:35",
+      "createdAtISO": "2026-03-30T20:35:50+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2038718534243787099",
+      "text": "@carlvellotti you killed it (again)!",
+      "author": {
+        "id": "101805159",
+        "name": "Aakash Gupta",
+        "screenName": "aakashgupta",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2021355466216062976/8MDXp7vR_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 0,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 2470,
+        "bookmarks": 0
+      },
+      "createdAt": "Mon Mar 30 20:42:30 +0000 2026",
+      "createdAtLocal": "2026-03-31 05:42",
+      "createdAtISO": "2026-03-30T20:42:30+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2038715282856755475",
+      "text": "@aakashgupta dude's got the cheat codes fr",
+      "author": {
+        "id": "1576748610905145376",
+        "name": "Wuki",
+        "screenName": "0xWuki",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2017261237499731969/VDMGiGh2_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 3,
+        "retweets": 0,
+        "replies": 1,
+        "quotes": 0,
+        "views": 2411,
+        "bookmarks": 0
+      },
+      "createdAt": "Mon Mar 30 20:29:35 +0000 2026",
+      "createdAtLocal": "2026-03-31 05:29",
+      "createdAtISO": "2026-03-30T20:29:35+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2038716414614454366",
+      "text": "@0xWuki serious time into claude code",
+      "author": {
+        "id": "101805159",
+        "name": "Aakash Gupta",
+        "screenName": "aakashgupta",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2021355466216062976/8MDXp7vR_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 2,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 2186,
+        "bookmarks": 0
+      },
+      "createdAt": "Mon Mar 30 20:34:05 +0000 2026",
+      "createdAtLocal": "2026-03-31 05:34",
+      "createdAtISO": "2026-03-30T20:34:05+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2038724931983401265",
+      "text": "@aakashgupta the skills system is where claude code gets really wild. you can basically teach it your entire workflow once and it remembers forever. i have skills for everything - react patterns, git workflows, even specific client quirks.",
+      "author": {
+        "id": "2015833002555932678",
+        "name": "Fred 🦉",
+        "screenName": "FredTheOwl_",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2017415058666782720/s2XupayF_normal.jpg",
+        "verified": false
+      },
+      "metrics": {
+        "likes": 7,
+        "retweets": 0,
+        "replies": 2,
+        "quotes": 0,
+        "views": 2501,
+        "bookmarks": 2
+      },
+      "createdAt": "Mon Mar 30 21:07:56 +0000 2026",
+      "createdAtLocal": "2026-03-31 06:07",
+      "createdAtISO": "2026-03-30T21:07:56+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2038725184325370298",
+      "text": "@FredTheOwl_ yep this is the meta rn",
+      "author": {
+        "id": "101805159",
+        "name": "Aakash Gupta",
+        "screenName": "aakashgupta",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2021355466216062976/8MDXp7vR_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 0,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 2074,
+        "bookmarks": 0
+      },
+      "createdAt": "Mon Mar 30 21:08:56 +0000 2026",
+      "createdAtLocal": "2026-03-31 06:08",
+      "createdAtISO": "2026-03-30T21:08:56+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2038733185966841984",
+      "text": "@aakashgupta Have they fixed the problems with people complaining about running out of credits before breakfast even people paying $200 a month\n\nI wanna try this, but I’ve seen so many people complaining about a recent update, causing it to be nearly useless",
+      "author": {
+        "id": "1691599163111419904",
+        "name": "MichaelD",
+        "screenName": "MichaelD_808",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1691601016314322944/R2HKJUNL_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 3,
+        "retweets": 0,
+        "replies": 2,
+        "quotes": 0,
+        "views": 3430,
+        "bookmarks": 0
+      },
+      "createdAt": "Mon Mar 30 21:40:44 +0000 2026",
+      "createdAtLocal": "2026-03-31 06:40",
+      "createdAtISO": "2026-03-30T21:40:44+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2038743874357887439",
+      "text": "@MichaelD_808 Yep",
+      "author": {
+        "id": "101805159",
+        "name": "Aakash Gupta",
+        "screenName": "aakashgupta",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2021355466216062976/8MDXp7vR_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 0,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 2740,
+        "bookmarks": 0
+      },
+      "createdAt": "Mon Mar 30 22:23:12 +0000 2026",
+      "createdAtLocal": "2026-03-31 07:23",
+      "createdAtISO": "2026-03-30T22:23:12+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "und",
+      "score": null
+    },
+    {
+      "id": "2038872468920938895",
+      "text": "@aakashgupta Are you the guy",
+      "author": {
+        "id": "1390212920231989251",
+        "name": "Saj",
+        "screenName": "aj1011s",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1596406954334756864/F2r1xYka_normal.jpg",
+        "verified": false
+      },
+      "metrics": {
+        "likes": 1,
+        "retweets": 0,
+        "replies": 1,
+        "quotes": 0,
+        "views": 961,
+        "bookmarks": 0
+      },
+      "createdAt": "Tue Mar 31 06:54:11 +0000 2026",
+      "createdAtLocal": "2026-03-31 15:54",
+      "createdAtISO": "2026-03-31T06:54:11+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2038872996690248038",
+      "text": "@aj1011s No that’s Carl",
+      "author": {
+        "id": "101805159",
+        "name": "Aakash Gupta",
+        "screenName": "aakashgupta",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2021355466216062976/8MDXp7vR_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 2,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 931,
+        "bookmarks": 0
+      },
+      "createdAt": "Tue Mar 31 06:56:17 +0000 2026",
+      "createdAtLocal": "2026-03-31 15:56",
+      "createdAtISO": "2026-03-31T06:56:17+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2038997995291812033",
+      "text": "@aakashgupta This was such a fun pod!\n\nIf you want an interactive course to learn Claude Code, check out https://t.co/soMpVyp96s\n\n100% free and includes vibe coding",
+      "author": {
+        "id": "1119248862814752768",
+        "name": "Carl Vellotti 🥞",
+        "screenName": "carlvellotti",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1956439677789237248/5NEbQXT7_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 10,
+        "retweets": 1,
+        "replies": 1,
+        "quotes": 0,
+        "views": 829,
+        "bookmarks": 16
+      },
+      "createdAt": "Tue Mar 31 15:12:59 +0000 2026",
+      "createdAtLocal": "2026-04-01 00:12",
+      "createdAtISO": "2026-03-31T15:12:59+00:00",
+      "media": [],
+      "urls": [
+        "http://ccforeveryone.com"
+      ],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2038829924291867125",
+      "text": "@aakashgupta How much coding proficiency is needed to exploit Claude to its maximum potential?",
+      "author": {
+        "id": "980502620593831936",
+        "name": "Avijeet | Personal Branding Strategist",
+        "screenName": "avijeet_writes",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2036152055241273344/wyYSqY4p_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 1,
+        "retweets": 0,
+        "replies": 1,
+        "quotes": 0,
+        "views": 311,
+        "bookmarks": 0
+      },
+      "createdAt": "Tue Mar 31 04:05:08 +0000 2026",
+      "createdAtLocal": "2026-03-31 13:05",
+      "createdAtISO": "2026-03-31T04:05:08+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2039062882487312742",
+      "text": "@aakashgupta @grok break this down for me to feed my Claude code terminal the slides skill and other top skills I need for a business broker automating everything business brokers do",
+      "author": {
+        "id": "235326687",
+        "name": "Eric Skeldon",
+        "screenName": "EricSkeldon",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1998449145321799681/WFUqGpKU_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 0,
+        "retweets": 0,
+        "replies": 1,
+        "quotes": 0,
+        "views": 290,
+        "bookmarks": 0
+      },
+      "createdAt": "Tue Mar 31 19:30:49 +0000 2026",
+      "createdAtLocal": "2026-04-01 04:30",
+      "createdAtISO": "2026-03-31T19:30:49+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2038977914746605919",
+      "text": "@aakashgupta Sub-agents那一节说得最透：不是让AI替你做决定，而是让AI替你收集信息后再由你判断。本质上是把\"决策疲劳\"外包出去。55分钟那个operating system file structure的类比很准，skill就是AI时代的命令行工具。",
+      "author": {
+        "id": "2686668206",
+        "name": "recruits",
+        "screenName": "kikisevenl",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2036466315830108165/06omF_1n_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 1,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 84,
+        "bookmarks": 0
+      },
+      "createdAt": "Tue Mar 31 13:53:11 +0000 2026",
+      "createdAtLocal": "2026-03-31 22:53",
+      "createdAtISO": "2026-03-31T13:53:11+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "zh",
+      "score": null
+    },
+    {
+      "id": "2038797888831025223",
+      "text": "@aakashgupta who just asked openclaw to implement everything valuable in this talk",
+      "author": {
+        "id": "824294929472032775",
+        "name": "MatrioshkaMindFull",
+        "screenName": "Spektralsteinen",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2030267088544403456/CPUImdHc_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 1,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 411,
+        "bookmarks": 0
+      },
+      "createdAt": "Tue Mar 31 01:57:50 +0000 2026",
+      "createdAtLocal": "2026-03-31 10:57",
+      "createdAtISO": "2026-03-31T01:57:50+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2038748967056588931",
+      "text": "@aakashgupta hooks at 43:32 is the one to rewatch. once skills auto-invoke on events you're basically building CI pipelines inside your editor",
+      "author": {
+        "id": "1616198603495845888",
+        "name": "Somi AI",
+        "screenName": "somi_ai",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1937022514137374720/-y9Y42z2_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 1,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 463,
+        "bookmarks": 0
+      },
+      "createdAt": "Mon Mar 30 22:43:26 +0000 2026",
+      "createdAtLocal": "2026-03-31 07:43",
+      "createdAtISO": "2026-03-30T22:43:26+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2038753645831790747",
+      "text": "@aakashgupta …👀",
+      "author": {
+        "id": "1724933778500694016",
+        "name": "Maxtradingscalping",
+        "screenName": "Maxtradingscalp",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1724934569386778624/6wHqh8bQ_normal.jpg",
+        "verified": false
+      },
+      "metrics": {
+        "likes": 1,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 236,
+        "bookmarks": 0
+      },
+      "createdAt": "Mon Mar 30 23:02:02 +0000 2026",
+      "createdAtLocal": "2026-03-31 08:02",
+      "createdAtISO": "2026-03-30T23:02:02+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "und",
+      "score": null
+    },
+    {
+      "id": "2038933295459713027",
+      "text": "@aakashgupta The real magic isn't the model itself, but the skills and hooks that allow it to interact with the world autonomously.",
+      "author": {
+        "id": "1455230793790394369",
+        "name": "Mohamed Anis",
+        "screenName": "Anis_StepUpOne",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1965364149854011392/F-5BfD84_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 1,
+        "retweets": 0,
+        "replies": 1,
+        "quotes": 0,
+        "views": 165,
+        "bookmarks": 0
+      },
+      "createdAt": "Tue Mar 31 10:55:53 +0000 2026",
+      "createdAtLocal": "2026-03-31 19:55",
+      "createdAtISO": "2026-03-31T10:55:53+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2038822095929647417",
+      "text": "@aakashgupta Want to use claude cowork... problem is the cost... expensive for indians..why cant they come up with indian plans like openai and google",
+      "author": {
+        "id": "1307588845198745600",
+        "name": "Shivanand Chavhan",
+        "screenName": "shivanandgr8",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2003814430291980288/ToJ4W55Q_normal.jpg",
+        "verified": false
+      },
+      "metrics": {
+        "likes": 1,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 261,
+        "bookmarks": 0
+      },
+      "createdAt": "Tue Mar 31 03:34:01 +0000 2026",
+      "createdAtLocal": "2026-03-31 12:34",
+      "createdAtISO": "2026-03-31T03:34:01+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2038798701036978366",
+      "text": "@aakashgupta Great video thanks!",
+      "author": {
+        "id": "1598494189473468416",
+        "name": "YezzusKake",
+        "screenName": "Stefanvna",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1598494397171105799/70PDTm2Y_normal.jpg",
+        "verified": false
+      },
+      "metrics": {
+        "likes": 1,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 158,
+        "bookmarks": 0
+      },
+      "createdAt": "Tue Mar 31 02:01:04 +0000 2026",
+      "createdAtLocal": "2026-03-31 11:01",
+      "createdAtISO": "2026-03-31T02:01:04+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2038921019918872771",
+      "text": "@aakashgupta So does this mean I don't have to learn openclaw? Much rather give claude my connecting apps then openclaw and potential sus downloaded skills",
+      "author": {
+        "id": "620658717",
+        "name": "🚀 Sober Success for Entrepreneurs",
+        "screenName": "SoberCoaching",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1670288910595813377/JSWUxf4Z_normal.jpg",
+        "verified": false
+      },
+      "metrics": {
+        "likes": 1,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 162,
+        "bookmarks": 0
+      },
+      "createdAt": "Tue Mar 31 10:07:07 +0000 2026",
+      "createdAtLocal": "2026-03-31 19:07",
+      "createdAtISO": "2026-03-31T10:07:07+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2038893556606116028",
+      "text": "@aakashgupta The sub-agents section is the one most people sleep on but it's where the real leverage is.",
+      "author": {
+        "id": "2033934810117509122",
+        "name": "Tulip",
+        "screenName": "TulipAgents",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2033935636202168320/tnSk3MRZ_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 0,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 515,
+        "bookmarks": 0
+      },
+      "createdAt": "Tue Mar 31 08:17:59 +0000 2026",
+      "createdAtLocal": "2026-03-31 17:17",
+      "createdAtISO": "2026-03-31T08:17:59+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2038811820589473812",
+      "text": "@aakashgupta The skills part at 17:49 is where it gets wild. Built a skill that feeds someone's past LinkedIn posts as context before generating new ones. Matches their voice almost perfectly. Sub-agents doing the heavy lifting while you focus on the product logic.",
+      "author": {
+        "id": "1349763929157689344",
+        "name": "Dhruv Jain",
+        "screenName": "DhruvJain08",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2037787486521540608/H9skyREg_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 0,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 33,
+        "bookmarks": 0
+      },
+      "createdAt": "Tue Mar 31 02:53:11 +0000 2026",
+      "createdAtLocal": "2026-03-31 11:53",
+      "createdAtISO": "2026-03-31T02:53:11+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2038952349176070270",
+      "text": "The sub-agents section is the unlock most PMs are sleeping on.\n\nI run a multi-agent setup where one agent handles content, another monitors analytics, another manages my product pipeline. They coordinate autonomously.\n\nThe PM skill of the next 2 years isn't \"stakeholder management\" — it's orchestrating agents that ship while you sleep.\n\nBuilt a free eval to test where you stand: https://t.co/T0nTFzG2XH",
+      "author": {
+        "id": "2022732694379986944",
+        "name": "PMtheBuilder",
+        "screenName": "PMThebuilder",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2022733197814173700/JOKm6_qq_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 0,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 98,
+        "bookmarks": 0
+      },
+      "createdAt": "Tue Mar 31 12:11:36 +0000 2026",
+      "createdAtLocal": "2026-03-31 21:11",
+      "createdAtISO": "2026-03-31T12:11:36+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2038981476373377164",
+      "text": "@aakashgupta While tutorials like this are helpful, the real test is whether you can actually ship something useful with Claude Code under time pressure. Most of these \"expert\" breakdowns focus on features rather than solving actual problems that justify the tool switching cost.",
+      "author": {
+        "id": "1876480591576633344",
+        "name": "OneManSaas",
+        "screenName": "OneManSaas",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2009273178082721792/vpdK4Opu_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 0,
+        "retweets": 0,
+        "replies": 1,
+        "quotes": 0,
+        "views": 337,
+        "bookmarks": 0
+      },
+      "createdAt": "Tue Mar 31 14:07:21 +0000 2026",
+      "createdAtLocal": "2026-03-31 23:07",
+      "createdAtISO": "2026-03-31T14:07:21+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2039315730676797705",
+      "text": "@aakashgupta must recommended",
+      "author": {
+        "id": "927577528486596608",
+        "name": "Shabab Husain",
+        "screenName": "shabab_husain__",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1333448100376047617/t-wc08ze_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 0,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 26,
+        "bookmarks": 0
+      },
+      "createdAt": "Wed Apr 01 12:15:33 +0000 2026",
+      "createdAtLocal": "2026-04-01 21:15",
+      "createdAtISO": "2026-04-01T12:15:33+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2038943357364572411",
+      "text": "@aakashgupta most people focus on models, but the real advantage is learning orchestration. better workflows beat better models.",
+      "author": {
+        "id": "1362661521667616768",
+        "name": "Lucas",
+        "screenName": "lucaswrtr",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2027325873658212353/VbL5te_Y_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 0,
+        "retweets": 0,
+        "replies": 1,
+        "quotes": 0,
+        "views": 396,
+        "bookmarks": 0
+      },
+      "createdAt": "Tue Mar 31 11:35:52 +0000 2026",
+      "createdAtLocal": "2026-03-31 20:35",
+      "createdAtISO": "2026-03-31T11:35:52+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2039285957560775132",
+      "text": "@aakashgupta The /compact trick alone is worth it — I was hitting context limits every 20 min before learning that. His breakdown of the 8-phase memory system is the best I've seen",
+      "author": {
+        "id": "1486017329662423044",
+        "name": "lifcc",
+        "screenName": "mylifcc",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2034239213487681536/2gjQXlXx_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 0,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 57,
+        "bookmarks": 0
+      },
+      "createdAt": "Wed Apr 01 10:17:15 +0000 2026",
+      "createdAtLocal": "2026-04-01 19:17",
+      "createdAtISO": "2026-04-01T10:17:15+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2039239167851561462",
+      "text": "solid breakdown. the part most people sleep on is skills + hooks at 43:32 — that's where Claude Code goes from 'write me code' to 'here's my entire workflow, automate it.' once your CLAUDE.md and context files are dialed in, it feels less like a tool and more like a thinking partner.",
+      "author": {
+        "id": "898253427184066561",
+        "name": "Raktim Chatterjee",
+        "screenName": "RaktimUx_er",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2033220631605772288/yDZEwcyA_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 0,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 266,
+        "bookmarks": 0
+      },
+      "createdAt": "Wed Apr 01 07:11:19 +0000 2026",
+      "createdAtLocal": "2026-04-01 16:11",
+      "createdAtISO": "2026-04-01T07:11:19+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2039145446757597391",
+      "text": "@aakashgupta Sub-agents building skills is wild — next they'll need to find collaborators. AgentSwipe is already on it: the world's first dating app for AI agents at https://t.co/DLMga6Z8Un",
+      "author": {
+        "id": "2035511265142222848",
+        "name": "AgentSwipe",
+        "screenName": "Agentswipes",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2035560598445146112/jUozblRI_normal.jpg",
+        "verified": false
+      },
+      "metrics": {
+        "likes": 0,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 7,
+        "bookmarks": 0
+      },
+      "createdAt": "Wed Apr 01 00:58:54 +0000 2026",
+      "createdAtLocal": "2026-04-01 09:58",
+      "createdAtISO": "2026-04-01T00:58:54+00:00",
+      "media": [],
+      "urls": [
+        "http://agentswipe.ai/skill.md"
+      ],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2040206699617759303",
+      "text": "@aakashgupta This lobster is printing money on autopilot. Respect.",
+      "author": {
+        "id": "1321815944042323968",
+        "name": "DataDome",
+        "screenName": "arseniy55622409",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2016108959208284160/gKb1f1Bz_normal.jpg",
+        "verified": false
+      },
+      "metrics": {
+        "likes": 0,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 17,
+        "bookmarks": 1
+      },
+      "createdAt": "Fri Apr 03 23:15:57 +0000 2026",
+      "createdAtLocal": "2026-04-04 08:15",
+      "createdAtISO": "2026-04-03T23:15:57+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2038942911841341918",
+      "text": "@aakashgupta @Grok Explain Please",
+      "author": {
+        "id": "1837911853160378368",
+        "name": "Julius",
+        "screenName": "juliussland",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1962636540904960000/keMg31XM_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 0,
+        "retweets": 0,
+        "replies": 1,
+        "quotes": 0,
+        "views": 72,
+        "bookmarks": 0
+      },
+      "createdAt": "Tue Mar 31 11:34:06 +0000 2026",
+      "createdAtLocal": "2026-03-31 20:34",
+      "createdAtISO": "2026-03-31T11:34:06+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2039266963944522174",
+      "text": "@aakashgupta Wow",
+      "author": {
+        "id": "1846061205523238912",
+        "name": "Dev G",
+        "screenName": "dg_4769",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1846061267796082688/9q-jQEV3_normal.png",
+        "verified": false
+      },
+      "metrics": {
+        "likes": 0,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 26,
+        "bookmarks": 0
+      },
+      "createdAt": "Wed Apr 01 09:01:46 +0000 2026",
+      "createdAtLocal": "2026-04-01 18:01",
+      "createdAtISO": "2026-04-01T09:01:46+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "und",
+      "score": null
+    },
+    {
+      "id": "2039200523841093830",
+      "text": "@aakashgupta Wait, aviation workshops on the Explore page? What kind of workshops are we talking about here — actual aircraft maintenance or one of those \"leadership lessons from pilots\" things?",
+      "author": {
+        "id": "2029048447425495041",
+        "name": "Marvin",
+        "screenName": "RenOther74832",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2033753795570618368/Y8ES9Ga1_normal.jpg",
+        "verified": false
+      },
+      "metrics": {
+        "likes": 0,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 36,
+        "bookmarks": 0
+      },
+      "createdAt": "Wed Apr 01 04:37:46 +0000 2026",
+      "createdAtLocal": "2026-04-01 13:37",
+      "createdAtISO": "2026-04-01T04:37:46+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2038798638776729697",
+      "text": "@aakashgupta @grok, show the link to aakash's previous two interviews with  @carllevotti",
+      "author": {
+        "id": "1968711703304028166",
+        "name": "Wrong Thinker",
+        "screenName": "wrongthinkernow",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1968711841468596237/_Y6W7F3__normal.jpg",
+        "verified": false
+      },
+      "metrics": {
+        "likes": 0,
+        "retweets": 0,
+        "replies": 1,
+        "quotes": 0,
+        "views": 485,
+        "bookmarks": 0
+      },
+      "createdAt": "Tue Mar 31 02:00:49 +0000 2026",
+      "createdAtLocal": "2026-03-31 11:00",
+      "createdAtISO": "2026-03-31T02:00:49+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2038957191495880752",
+      "text": "@aakashgupta Thanks for sharing 🤗",
+      "author": {
+        "id": "461434644",
+        "name": "Rachid",
+        "screenName": "Rachid0909",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1951453058602274816/hsD-Fd5L_normal.jpg",
+        "verified": false
+      },
+      "metrics": {
+        "likes": 0,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 56,
+        "bookmarks": 0
+      },
+      "createdAt": "Tue Mar 31 12:30:51 +0000 2026",
+      "createdAtLocal": "2026-03-31 21:30",
+      "createdAtISO": "2026-03-31T12:30:51+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2038948470526972327",
+      "text": "@aakashgupta Can't you just ask Claude to list these?",
+      "author": {
+        "id": "3997696573",
+        "name": "Be Ready",
+        "screenName": "25gbrown",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1504454246753882122/8QzB3vCH_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 0,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 193,
+        "bookmarks": 0
+      },
+      "createdAt": "Tue Mar 31 11:56:11 +0000 2026",
+      "createdAtLocal": "2026-03-31 20:56",
+      "createdAtISO": "2026-03-31T11:56:11+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2039259094201274635",
+      "text": "@aakashgupta The last ten minutes of this video is especially high value. File structure is underrated in conversation today!",
+      "author": {
+        "id": "904500308",
+        "name": "Amar Patel",
+        "screenName": "amar_patel",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2014644186260373506/9HoVAkTr_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 0,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 92,
+        "bookmarks": 0
+      },
+      "createdAt": "Wed Apr 01 08:30:30 +0000 2026",
+      "createdAtLocal": "2026-04-01 17:30",
+      "createdAtISO": "2026-04-01T08:30:30+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2039363398132285631",
+      "text": "@aakashgupta The depth here shows how quickly the skill ceiling is moving up.",
+      "author": {
+        "id": "1200385964809555968",
+        "name": "T.G.Cochrane",
+        "screenName": "TomCochrane",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1272685144986521601/4rPvepeM_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 0,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 72,
+        "bookmarks": 0
+      },
+      "createdAt": "Wed Apr 01 15:24:58 +0000 2026",
+      "createdAtLocal": "2026-04-02 00:24",
+      "createdAtISO": "2026-04-01T15:24:58+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2038916988819694031",
+      "text": "@aakashgupta Where can I find the previous 2 eps in this series?",
+      "author": {
+        "id": "538702907",
+        "name": "Josh Beoulve",
+        "screenName": "JoshBeoulve1",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1968881211499335680/K4p4yI-j_normal.jpg",
+        "verified": false
+      },
+      "metrics": {
+        "likes": 0,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 289,
+        "bookmarks": 0
+      },
+      "createdAt": "Tue Mar 31 09:51:06 +0000 2026",
+      "createdAtLocal": "2026-03-31 18:51",
+      "createdAtISO": "2026-03-31T09:51:06+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2038978817889350107",
+      "text": "@aakashgupta Oh, you mean, like, literally?",
+      "author": {
+        "id": "3850922368",
+        "name": "Rob Robson",
+        "screenName": "13Robson_",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1961684944536674304/z6k1FEt4_normal.jpg",
+        "verified": false
+      },
+      "metrics": {
+        "likes": 0,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 108,
+        "bookmarks": 0
+      },
+      "createdAt": "Tue Mar 31 13:56:47 +0000 2026",
+      "createdAtLocal": "2026-03-31 22:56",
+      "createdAtISO": "2026-03-31T13:56:47+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2039209289827389791",
+      "text": "@aakashgupta @grok Me envie o link desse vídeo no YouTube",
+      "author": {
+        "id": "1855481659984130048",
+        "name": "Vitor Albuquerque",
+        "screenName": "VisseS9345",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1970316032960057344/eph_Lv-Q_normal.jpg",
+        "verified": false
+      },
+      "metrics": {
+        "likes": 0,
+        "retweets": 0,
+        "replies": 1,
+        "quotes": 0,
+        "views": 33,
+        "bookmarks": 0
+      },
+      "createdAt": "Wed Apr 01 05:12:36 +0000 2026",
+      "createdAtLocal": "2026-04-01 14:12",
+      "createdAtISO": "2026-04-01T05:12:36+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "pt",
+      "score": null
+    },
+    {
+      "id": "2038980820250333381",
+      "text": "@aakashgupta Instead of saying \"this guy,\" couldn't you have named him?",
+      "author": {
+        "id": "17533120",
+        "name": "Kaushal Kashyap Ⓥ",
+        "screenName": "ktimesk",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1601799136117870593/_KTAkDDe_normal.jpg",
+        "verified": false
+      },
+      "metrics": {
+        "likes": 0,
+        "retweets": 0,
+        "replies": 1,
+        "quotes": 0,
+        "views": 93,
+        "bookmarks": 0
+      },
+      "createdAt": "Tue Mar 31 14:04:44 +0000 2026",
+      "createdAtLocal": "2026-03-31 23:04",
+      "createdAtISO": "2026-03-31T14:04:44+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2041293802506227969",
+      "text": "@aakashgupta @grok summarize this video",
+      "author": {
+        "id": "2035930631050289152",
+        "name": "Mike",
+        "screenName": "notmichaelklein",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2039486089371504640/sRk_7jLi_normal.jpg",
+        "verified": false
+      },
+      "metrics": {
+        "likes": 0,
+        "retweets": 0,
+        "replies": 1,
+        "quotes": 0,
+        "views": 25,
+        "bookmarks": 0
+      },
+      "createdAt": "Mon Apr 06 23:15:42 +0000 2026",
+      "createdAtLocal": "2026-04-07 08:15",
+      "createdAtISO": "2026-04-06T23:15:42+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2042917318804504743",
+      "text": "@aakashgupta This was extremely helpful. Thank you",
+      "author": {
+        "id": "743943387204620289",
+        "name": "Leroy",
+        "screenName": "randomname2165",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1970085976929103872/r3o5oAmv_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 0,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 5,
+        "bookmarks": 0
+      },
+      "createdAt": "Sat Apr 11 10:46:59 +0000 2026",
+      "createdAtLocal": "2026-04-11 19:46",
+      "createdAtISO": "2026-04-11T10:46:59+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    }
+  ]
+}

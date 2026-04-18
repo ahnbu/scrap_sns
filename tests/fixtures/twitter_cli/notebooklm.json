@@ -1,0 +1,1558 @@
+{
+  "ok": true,
+  "schema_version": "1",
+  "data": [
+    {
+      "id": "2034688795652816948",
+      "text": "We wanted to come on here to clear the air and confirm that the rumors are true...\n\nCinematic Video Overviews are officially rolled out to 100% of Pro users in English!\n\nPlease respect our privacy during this time by flooding our replies with your favorite creations.",
+      "author": {
+        "id": "1846671939437252609",
+        "name": "NotebookLM",
+        "screenName": "NotebookLM",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1861084152054849547/uKBhfKBo_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 3822,
+        "retweets": 218,
+        "replies": 222,
+        "quotes": 45,
+        "views": 339443,
+        "bookmarks": 846
+      },
+      "createdAt": "Thu Mar 19 17:49:46 +0000 2026",
+      "createdAtLocal": "2026-03-20 02:49",
+      "createdAtISO": "2026-03-19T17:49:46+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2034688950313337044",
+      "text": "@NotebookLM Told em 👀",
+      "author": {
+        "id": "3980735590",
+        "name": "TestingCatalog News 🗞",
+        "screenName": "testingcatalog",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1899962463115751424/i-6MBWau_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 23,
+        "retweets": 0,
+        "replies": 1,
+        "quotes": 0,
+        "views": 17122,
+        "bookmarks": 1
+      },
+      "createdAt": "Thu Mar 19 17:50:23 +0000 2026",
+      "createdAtLocal": "2026-03-20 02:50",
+      "createdAtISO": "2026-03-19T17:50:23+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2034689214059880785",
+      "text": "@testingcatalog You've never led them astray ❤️",
+      "author": {
+        "id": "1846671939437252609",
+        "name": "NotebookLM",
+        "screenName": "NotebookLM",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1861084152054849547/uKBhfKBo_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 27,
+        "retweets": 0,
+        "replies": 1,
+        "quotes": 0,
+        "views": 16065,
+        "bookmarks": 1
+      },
+      "createdAt": "Thu Mar 19 17:51:25 +0000 2026",
+      "createdAtLocal": "2026-03-20 02:51",
+      "createdAtISO": "2026-03-19T17:51:25+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2034692717490622759",
+      "text": "@NotebookLM Now that Cinematic Overviews are 100% rolled out, are there plans to allow us to Guide the Director...\n\nfor example, by prompting for a specific visual style like Cyberpunk or Scientific Diagram to match our brand's aesthetic?",
+      "author": {
+        "id": "840221632992051200",
+        "name": "Hemachandiran",
+        "screenName": "Hem_chandiran",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1991012981069783041/9gyCB9_x_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 32,
+        "retweets": 0,
+        "replies": 3,
+        "quotes": 0,
+        "views": 23821,
+        "bookmarks": 6
+      },
+      "createdAt": "Thu Mar 19 18:05:21 +0000 2026",
+      "createdAtLocal": "2026-03-20 03:05",
+      "createdAtISO": "2026-03-19T18:05:21+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2034695145946587180",
+      "text": "@Hem_chandiran Only one way to find out 😉",
+      "author": {
+        "id": "1846671939437252609",
+        "name": "NotebookLM",
+        "screenName": "NotebookLM",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1861084152054849547/uKBhfKBo_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 52,
+        "retweets": 1,
+        "replies": 1,
+        "quotes": 0,
+        "views": 20142,
+        "bookmarks": 1
+      },
+      "createdAt": "Thu Mar 19 18:15:00 +0000 2026",
+      "createdAtLocal": "2026-03-20 03:15",
+      "createdAtISO": "2026-03-19T18:15:00+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2034725758594113927",
+      "text": "@NotebookLM You're shipping so fast, oh my god. Google is on fire.",
+      "author": {
+        "id": "334080889",
+        "name": "Cristian Uibar",
+        "screenName": "cristianuibar",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1436657381899972611/-mFUY9AZ_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 19,
+        "retweets": 0,
+        "replies": 1,
+        "quotes": 0,
+        "views": 9455,
+        "bookmarks": 0
+      },
+      "createdAt": "Thu Mar 19 20:16:38 +0000 2026",
+      "createdAtLocal": "2026-03-20 05:16",
+      "createdAtISO": "2026-03-19T20:16:38+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2034739589345419483",
+      "text": "@cristianuibar 🔥🔥🔥",
+      "author": {
+        "id": "1846671939437252609",
+        "name": "NotebookLM",
+        "screenName": "NotebookLM",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1861084152054849547/uKBhfKBo_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 12,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 8810,
+        "bookmarks": 0
+      },
+      "createdAt": "Thu Mar 19 21:11:36 +0000 2026",
+      "createdAtLocal": "2026-03-20 06:11",
+      "createdAtISO": "2026-03-19T21:11:36+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "qme",
+      "score": null
+    },
+    {
+      "id": "2034698698064896507",
+      "text": "@NotebookLM Respect your privacy by doing the exact opposite… got it 😭🔥",
+      "author": {
+        "id": "2030153384175734784",
+        "name": "MoneyWithChai",
+        "screenName": "MoneyWithChai",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2035978032192933889/Ghdsb6zs_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 13,
+        "retweets": 0,
+        "replies": 1,
+        "quotes": 0,
+        "views": 15755,
+        "bookmarks": 0
+      },
+      "createdAt": "Thu Mar 19 18:29:07 +0000 2026",
+      "createdAtLocal": "2026-03-20 03:29",
+      "createdAtISO": "2026-03-19T18:29:07+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2034698872577286334",
+      "text": "@MoneyWithChai 😉😉😉",
+      "author": {
+        "id": "1846671939437252609",
+        "name": "NotebookLM",
+        "screenName": "NotebookLM",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1861084152054849547/uKBhfKBo_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 4,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 14662,
+        "bookmarks": 0
+      },
+      "createdAt": "Thu Mar 19 18:29:48 +0000 2026",
+      "createdAtLocal": "2026-03-20 03:29",
+      "createdAtISO": "2026-03-19T18:29:48+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "qme",
+      "score": null
+    },
+    {
+      "id": "2034718373855039712",
+      "text": "@NotebookLM When the free users can enjoy this great feature?",
+      "author": {
+        "id": "437690855",
+        "name": "mario lucero",
+        "screenName": "metlucero",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1857230624433504256/fLcERiOx_normal.jpg",
+        "verified": false
+      },
+      "metrics": {
+        "likes": 3,
+        "retweets": 1,
+        "replies": 2,
+        "quotes": 0,
+        "views": 7524,
+        "bookmarks": 1
+      },
+      "createdAt": "Thu Mar 19 19:47:18 +0000 2026",
+      "createdAtLocal": "2026-03-20 04:47",
+      "createdAtISO": "2026-03-19T19:47:18+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2034740095534997674",
+      "text": "@metlucero You're next! 😉",
+      "author": {
+        "id": "1846671939437252609",
+        "name": "NotebookLM",
+        "screenName": "NotebookLM",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1861084152054849547/uKBhfKBo_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 14,
+        "retweets": 0,
+        "replies": 2,
+        "quotes": 0,
+        "views": 7093,
+        "bookmarks": 0
+      },
+      "createdAt": "Thu Mar 19 21:13:37 +0000 2026",
+      "createdAtLocal": "2026-03-20 06:13",
+      "createdAtISO": "2026-03-19T21:13:37+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2034749216572969384",
+      "text": "@NotebookLM I do not have Cinematic Video Overviews yet: https://t.co/h7egicwgux",
+      "author": {
+        "id": "499470797",
+        "name": "Sir-Tox-Alot",
+        "screenName": "Darths_lil_Bro",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1998108809856720896/Ie091ktc_normal.jpg",
+        "verified": false
+      },
+      "metrics": {
+        "likes": 2,
+        "retweets": 0,
+        "replies": 1,
+        "quotes": 0,
+        "views": 6887,
+        "bookmarks": 1
+      },
+      "createdAt": "Thu Mar 19 21:49:51 +0000 2026",
+      "createdAtLocal": "2026-03-20 06:49",
+      "createdAtISO": "2026-03-19T21:49:51+00:00",
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HDzhoVpWkAAEVjr.jpg",
+          "width": 918,
+          "height": 2048
+        }
+      ],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2034750487271284766",
+      "text": "@Darths_lil_Bro It's still coming to mobile! Should show up in the app in the coming weeks 😊",
+      "author": {
+        "id": "1846671939437252609",
+        "name": "NotebookLM",
+        "screenName": "NotebookLM",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1861084152054849547/uKBhfKBo_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 22,
+        "retweets": 0,
+        "replies": 1,
+        "quotes": 0,
+        "views": 5982,
+        "bookmarks": 2
+      },
+      "createdAt": "Thu Mar 19 21:54:54 +0000 2026",
+      "createdAtLocal": "2026-03-20 06:54",
+      "createdAtISO": "2026-03-19T21:54:54+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2034708005602595220",
+      "text": "@NotebookLM I still do not see it... :( https://t.co/DWY5Lp6RG8",
+      "author": {
+        "id": "2860058499",
+        "name": "Christopher Diesler",
+        "screenName": "GuterDinge",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1721213345594781696/GmKQRRF3_normal.jpg",
+        "verified": false
+      },
+      "metrics": {
+        "likes": 1,
+        "retweets": 0,
+        "replies": 1,
+        "quotes": 0,
+        "views": 9382,
+        "bookmarks": 0
+      },
+      "createdAt": "Thu Mar 19 19:06:06 +0000 2026",
+      "createdAtLocal": "2026-03-20 04:06",
+      "createdAtISO": "2026-03-19T19:06:06+00:00",
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HDy8GVGXsAASExC.png",
+          "width": 892,
+          "height": 521
+        }
+      ],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2034741106194489825",
+      "text": "@GuterDinge Your Notebook output language need to be in English. (This option can be found in Settings). \n\nLet us know if you have any issues! https://t.co/xpGT3PgxnG",
+      "author": {
+        "id": "1846671939437252609",
+        "name": "NotebookLM",
+        "screenName": "NotebookLM",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1861084152054849547/uKBhfKBo_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 18,
+        "retweets": 0,
+        "replies": 2,
+        "quotes": 0,
+        "views": 8408,
+        "bookmarks": 5
+      },
+      "createdAt": "Thu Mar 19 21:17:38 +0000 2026",
+      "createdAtLocal": "2026-03-20 06:17",
+      "createdAtISO": "2026-03-19T21:17:38+00:00",
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HDzaHYTboAIrCxB.png",
+          "width": 530,
+          "height": 900
+        }
+      ],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2034905580058407333",
+      "text": "@NotebookLM I'm afraid it's still not working even though I've changed the settings to English output. Do I have to change my account settings??",
+      "author": {
+        "id": "1660742565333745665",
+        "name": "Educación | IA & Tech | Innovación |",
+        "screenName": "jvmanjon",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1952713105932206080/j2AVsNoR_normal.jpg",
+        "verified": false
+      },
+      "metrics": {
+        "likes": 0,
+        "retweets": 0,
+        "replies": 1,
+        "quotes": 0,
+        "views": 1895,
+        "bookmarks": 0
+      },
+      "createdAt": "Fri Mar 20 08:11:11 +0000 2026",
+      "createdAtLocal": "2026-03-20 17:11",
+      "createdAtISO": "2026-03-20T08:11:11+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2035034907773489191",
+      "text": "@jvmanjon You have to change your Output Language, available in the top right corner of your NotebookLM home page! https://t.co/pxfqipHgYF",
+      "author": {
+        "id": "1846671939437252609",
+        "name": "NotebookLM",
+        "screenName": "NotebookLM",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1861084152054849547/uKBhfKBo_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 6,
+        "retweets": 0,
+        "replies": 2,
+        "quotes": 0,
+        "views": 2072,
+        "bookmarks": 1
+      },
+      "createdAt": "Fri Mar 20 16:45:05 +0000 2026",
+      "createdAtLocal": "2026-03-21 01:45",
+      "createdAtISO": "2026-03-20T16:45:05+00:00",
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HD3lZuwboAMd7Kn.png",
+          "width": 468,
+          "height": 812
+        }
+      ],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2034724804347965562",
+      "text": "@NotebookLM Hello,\nIs it possible to prepare it in English from Türkiye?\nI haven't been able to create an animated video summary yet.",
+      "author": {
+        "id": "1536684720955744261",
+        "name": "BUDA (K)",
+        "screenName": "KBULL520",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1831430335105564672/HhpNZEnZ_normal.jpg",
+        "verified": false
+      },
+      "metrics": {
+        "likes": 0,
+        "retweets": 0,
+        "replies": 1,
+        "quotes": 0,
+        "views": 5893,
+        "bookmarks": 0
+      },
+      "createdAt": "Thu Mar 19 20:12:51 +0000 2026",
+      "createdAtLocal": "2026-03-20 05:12",
+      "createdAtISO": "2026-03-19T20:12:51+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2034739792693665864",
+      "text": "@KBULL520 Yes it should be for Pro users! Just make sure your settings are in English. Then, when you tap the Video Overviews tile it should show up as an option.\n\nLet us know if you're having any issues 🙏",
+      "author": {
+        "id": "1846671939437252609",
+        "name": "NotebookLM",
+        "screenName": "NotebookLM",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1861084152054849547/uKBhfKBo_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 3,
+        "retweets": 0,
+        "replies": 3,
+        "quotes": 0,
+        "views": 5577,
+        "bookmarks": 1
+      },
+      "createdAt": "Thu Mar 19 21:12:24 +0000 2026",
+      "createdAtLocal": "2026-03-20 06:12",
+      "createdAtISO": "2026-03-19T21:12:24+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2034690872214696414",
+      "text": "@NotebookLM no, they aren't",
+      "author": {
+        "id": "1049405359000088576",
+        "name": "wojtyła 🇻🇦",
+        "screenName": "wojteq__",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1987500141943627778/MtWuVOlF_normal.jpg",
+        "verified": false
+      },
+      "metrics": {
+        "likes": 0,
+        "retweets": 0,
+        "replies": 1,
+        "quotes": 0,
+        "views": 10175,
+        "bookmarks": 0
+      },
+      "createdAt": "Thu Mar 19 17:58:01 +0000 2026",
+      "createdAtLocal": "2026-03-20 02:58",
+      "createdAtISO": "2026-03-19T17:58:01+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2034693376185180491",
+      "text": "@wojteq__ Try tapping the Video Overview tile!",
+      "author": {
+        "id": "1846671939437252609",
+        "name": "NotebookLM",
+        "screenName": "NotebookLM",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1861084152054849547/uKBhfKBo_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 9,
+        "retweets": 0,
+        "replies": 2,
+        "quotes": 0,
+        "views": 9717,
+        "bookmarks": 1
+      },
+      "createdAt": "Thu Mar 19 18:07:58 +0000 2026",
+      "createdAtLocal": "2026-03-20 03:07",
+      "createdAtISO": "2026-03-19T18:07:58+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2034921542627598394",
+      "text": "@NotebookLM NotebookLM adding video output is a bigger deal than it looks. \n\nThe audio overviews already made long research easily digestible.\n\nCongrats on the launch!",
+      "author": {
+        "id": "1115985999178420224",
+        "name": "Towards AI",
+        "screenName": "towards_AI",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1440806876132696067/zfD0D0iH_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 2,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 507,
+        "bookmarks": 1
+      },
+      "createdAt": "Fri Mar 20 09:14:37 +0000 2026",
+      "createdAtLocal": "2026-03-20 18:14",
+      "createdAtISO": "2026-03-20T09:14:37+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2034710266093408498",
+      "text": "@NotebookLM Cinematic Video Overviews turning a dense document into something you can actually watch is the kind of upgrade that makes you realize how many times you were just pretending to read things.",
+      "author": {
+        "id": "198191849",
+        "name": "Barrak",
+        "screenName": "BarrakAli",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2040142130329571328/FlJD0mEW_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 2,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 1390,
+        "bookmarks": 0
+      },
+      "createdAt": "Thu Mar 19 19:15:05 +0000 2026",
+      "createdAtLocal": "2026-03-20 04:15",
+      "createdAtISO": "2026-03-19T19:15:05+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2034688921959870801",
+      "text": "@NotebookLM Power to the people!! \n\nGreat job @NotebookLM team",
+      "author": {
+        "id": "1561774578120138754",
+        "name": "Artificially Inclined™",
+        "screenName": "Art_If_Ficial",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1924517981402312704/8ke0dQ6K_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 2,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 1765,
+        "bookmarks": 0
+      },
+      "createdAt": "Thu Mar 19 17:50:16 +0000 2026",
+      "createdAtLocal": "2026-03-20 02:50",
+      "createdAtISO": "2026-03-19T17:50:16+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2034698500177543210",
+      "text": "@NotebookLM Only for US? 👀😿",
+      "author": {
+        "id": "1433135716003766277",
+        "name": "SETI Park",
+        "screenName": "seti_park",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1995779157624766464/YivWTqFm_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 0,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 979,
+        "bookmarks": 0
+      },
+      "createdAt": "Thu Mar 19 18:28:19 +0000 2026",
+      "createdAtLocal": "2026-03-20 03:28",
+      "createdAtISO": "2026-03-19T18:28:19+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2035116048177848474",
+      "text": "@NotebookLM Holy sh**",
+      "author": {
+        "id": "1291909765455581185",
+        "name": "Rapture",
+        "screenName": "NightTheRapture",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1877114552946409472/UQZbOKRE_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 0,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 123,
+        "bookmarks": 0
+      },
+      "createdAt": "Fri Mar 20 22:07:31 +0000 2026",
+      "createdAtLocal": "2026-03-21 07:07",
+      "createdAtISO": "2026-03-20T22:07:31+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2034694784556966155",
+      "text": "@NotebookLM I have created this master piece on: \n\nCompulsive smartphone use and excessive screen time negatively and habit to fix this https://t.co/nOoRxoJflZ",
+      "author": {
+        "id": "1713562648254529536",
+        "name": "Radhakishan Jat",
+        "screenName": "rkjat65",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1840764975867994112/RPaJL2MY_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 89,
+        "retweets": 3,
+        "replies": 8,
+        "quotes": 0,
+        "views": 7703,
+        "bookmarks": 51
+      },
+      "createdAt": "Thu Mar 19 18:13:34 +0000 2026",
+      "createdAtLocal": "2026-03-20 03:13",
+      "createdAtISO": "2026-03-19T18:13:34+00:00",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://video.twimg.com/amplify_video/2034693820718465024/vid/avc1/1280x720/BD6-oxqaHB1Fg0SY.mp4?tag=21",
+          "width": 1280,
+          "height": 720
+        }
+      ],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2043937421885145249",
+      "text": "✨전회차 기립박수의 신화, 대한민국 창작뮤지컬 &lt;스윙데이즈&gt; 3차 티켓오픈✨\n\n대한민국이 자력으로 광복을 맞이할 수도 있었던 극비작전 실화를 기반으로 한 창작뮤지컬!\n\n'암호명A'라는 코드네임으로 활동한 실존 독립운동가의 이야기를 만날 수 있는 기회",
+      "author": {
+        "id": "1811690329424429057",
+        "name": "뮤지컬 스윙 데이즈",
+        "screenName": "m_swingdays",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2026145135734718464/VoIzPwkF_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 89,
+        "retweets": 30,
+        "replies": 0,
+        "quotes": 34,
+        "views": 994637,
+        "bookmarks": 10
+      },
+      "createdAt": "Tue Apr 14 06:20:30 +0000 2026",
+      "createdAtLocal": "2026-04-14 15:20",
+      "createdAtISO": "2026-04-14T06:20:30+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "ko",
+      "score": null
+    },
+    {
+      "id": "2034707866863485190",
+      "text": "@NotebookLM just tried creating one. looks interesting https://t.co/6eEFRQppQ9",
+      "author": {
+        "id": "1804621824744939520",
+        "name": "Snehal Surti",
+        "screenName": "surti_sneh65996",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2020875923244089346/4ss7H_1p_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 25,
+        "retweets": 0,
+        "replies": 2,
+        "quotes": 0,
+        "views": 4330,
+        "bookmarks": 7
+      },
+      "createdAt": "Thu Mar 19 19:05:33 +0000 2026",
+      "createdAtLocal": "2026-03-20 04:05",
+      "createdAtISO": "2026-03-19T19:05:33+00:00",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://video.twimg.com/amplify_video/2034707789927559168/vid/avc1/1280x720/9F26w-G1pI_h7daz.mp4?tag=21",
+          "width": 1280,
+          "height": 720
+        }
+      ],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2034714480748445752",
+      "text": "@NotebookLM Kharg Island Takeover....\n#iran #khargisland https://t.co/xfKs2hFbMx",
+      "author": {
+        "id": "1886469358249238531",
+        "name": "Dogs On Marz",
+        "screenName": "DogsOnMarz",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1917084857240588288/B2Y71Vjx_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 14,
+        "retweets": 1,
+        "replies": 2,
+        "quotes": 0,
+        "views": 1958,
+        "bookmarks": 4
+      },
+      "createdAt": "Thu Mar 19 19:31:50 +0000 2026",
+      "createdAtLocal": "2026-03-20 04:31",
+      "createdAtISO": "2026-03-19T19:31:50+00:00",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://video.twimg.com/ext_tw_video/2034714366864760835/pu/vid/avc1/1280x720/ls38X-lZZ3JRqIGy.mp4?tag=19",
+          "width": 1280,
+          "height": 720
+        }
+      ],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2034724486566789152",
+      "text": "@NotebookLM Last one:  Anatomy of Attrition: Decoding Iran's Strategy of Continuous Saturation\n#Iran #war #attrition #Israel https://t.co/R1i4qM6mpK",
+      "author": {
+        "id": "1886469358249238531",
+        "name": "Dogs On Marz",
+        "screenName": "DogsOnMarz",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1917084857240588288/B2Y71Vjx_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 11,
+        "retweets": 2,
+        "replies": 0,
+        "quotes": 1,
+        "views": 1496,
+        "bookmarks": 2
+      },
+      "createdAt": "Thu Mar 19 20:11:35 +0000 2026",
+      "createdAtLocal": "2026-03-20 05:11",
+      "createdAtISO": "2026-03-19T20:11:35+00:00",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://video.twimg.com/amplify_video/2034723926732152833/vid/avc1/1280x720/s7-Ye-y872rFiRdv.mp4?tag=21",
+          "width": 1280,
+          "height": 720
+        }
+      ],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2034825005507473802",
+      "text": "@NotebookLM Fed a photosynthesis text into @NotebookLM new Cinematic Overview.\n\nThe chloroplast became a “kitchen.” The chlorophyll, a “chef.”\nThat’s not AI summarizing. That’s AI teaching.\nHigh-quality multimodal learning is no longer gated by budget or team size. Thank you @googleai https://t.co/4hvEWqBLeU",
+      "author": {
+        "id": "153174696",
+        "name": "Nithin Jose",
+        "screenName": "theNijool",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1947859034662703107/Vx2OKuPb_normal.jpg",
+        "verified": false
+      },
+      "metrics": {
+        "likes": 13,
+        "retweets": 0,
+        "replies": 1,
+        "quotes": 0,
+        "views": 805,
+        "bookmarks": 8
+      },
+      "createdAt": "Fri Mar 20 02:51:01 +0000 2026",
+      "createdAtLocal": "2026-03-20 11:51",
+      "createdAtISO": "2026-03-20T02:51:01+00:00",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://video.twimg.com/amplify_video/2034824841430540292/vid/avc1/1280x720/Ni2pyVuZ_3lCLkfT.mp4?tag=21",
+          "width": 1280,
+          "height": 720
+        }
+      ],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2044296655634112609",
+      "text": "수부지 구원템! 자작나무 수분 크림\n지금 올리브영에서 20ml 추가 증정🎁",
+      "author": {
+        "id": "1906889140140134400",
+        "name": "라운드랩",
+        "screenName": "roundlab_kr",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1906902486134464512/6P8H9SVu_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 29,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 500649,
+        "bookmarks": 19
+      },
+      "createdAt": "Wed Apr 15 06:07:58 +0000 2026",
+      "createdAtLocal": "2026-04-15 15:07",
+      "createdAtISO": "2026-04-15T06:07:58+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "ko",
+      "score": null
+    },
+    {
+      "id": "2034690683919860103",
+      "text": "@NotebookLM Pro user here. Still not seeing it. https://t.co/4wICv5CbHh",
+      "author": {
+        "id": "14502348",
+        "name": "Jeff Weber",
+        "screenName": "JeffWeber",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1851335120583573504/bg9z7AEr_normal.jpg",
+        "verified": false
+      },
+      "metrics": {
+        "likes": 11,
+        "retweets": 0,
+        "replies": 3,
+        "quotes": 0,
+        "views": 6916,
+        "bookmarks": 1
+      },
+      "createdAt": "Thu Mar 19 17:57:16 +0000 2026",
+      "createdAtLocal": "2026-03-20 02:57",
+      "createdAtISO": "2026-03-19T17:57:16+00:00",
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HDysYA2XQAAFFt_.png",
+          "width": 712,
+          "height": 664
+        }
+      ],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2034741989074219096",
+      "text": "@NotebookLM Outstanding, people can now learn more with NotebookLM in five minutes than from five years of Fox News.\nThe typos in the text need some fixing but this is a great new feature.\n#history #iranregimechange https://t.co/9cEXGNjNcO",
+      "author": {
+        "id": "27242656",
+        "name": "Map Channels",
+        "screenName": "mapchannels",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1319650757/mashedworld_normal.jpg",
+        "verified": false
+      },
+      "metrics": {
+        "likes": 8,
+        "retweets": 1,
+        "replies": 0,
+        "quotes": 0,
+        "views": 820,
+        "bookmarks": 1
+      },
+      "createdAt": "Thu Mar 19 21:21:08 +0000 2026",
+      "createdAtLocal": "2026-03-20 06:21",
+      "createdAtISO": "2026-03-19T21:21:08+00:00",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://video.twimg.com/amplify_video/2034740926267248640/vid/avc1/1280x720/cIEFduzaPHf6_i-Y.mp4?tag=14",
+          "width": 1280,
+          "height": 720
+        }
+      ],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2034695396812054855",
+      "text": "@NotebookLM the streets won't forget this ☝️🫡 https://t.co/H4ddmBK8lF",
+      "author": {
+        "id": "1886340927394082816",
+        "name": "Xandred.",
+        "screenName": "Nighlok__King",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1940630903664865280/992H9O4z_normal.jpg",
+        "verified": false
+      },
+      "metrics": {
+        "likes": 10,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 1336,
+        "bookmarks": 0
+      },
+      "createdAt": "Thu Mar 19 18:16:00 +0000 2026",
+      "createdAtLocal": "2026-03-20 03:16",
+      "createdAtISO": "2026-03-19T18:16:00+00:00",
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HDywrj-boAMDxJp.jpg",
+          "width": 681,
+          "height": 681
+        }
+      ],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2034695058767978839",
+      "text": "@NotebookLM Only 2 a day on pro? That's the limit. This sucks.",
+      "author": {
+        "id": "1939813710056628224",
+        "name": "Patient Investor",
+        "screenName": "PSInvestor",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2007357124687355904/lYN_uJoc_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 6,
+        "retweets": 1,
+        "replies": 3,
+        "quotes": 0,
+        "views": 4827,
+        "bookmarks": 0
+      },
+      "createdAt": "Thu Mar 19 18:14:39 +0000 2026",
+      "createdAtLocal": "2026-03-20 03:14",
+      "createdAtISO": "2026-03-19T18:14:39+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2034697148868989070",
+      "text": "@NotebookLM Respecting your privacy by turning my boring research into A24-style cinema. The visual pacing is actually insane—it's like having a professional film editor for my notes. Absolute game changer.",
+      "author": {
+        "id": "559816758",
+        "name": "Ai Prompts Lab",
+        "screenName": "Aipromptslap",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2026659626616287232/_ova3OcT_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 4,
+        "retweets": 1,
+        "replies": 0,
+        "quotes": 0,
+        "views": 3223,
+        "bookmarks": 0
+      },
+      "createdAt": "Thu Mar 19 18:22:57 +0000 2026",
+      "createdAtLocal": "2026-03-20 03:22",
+      "createdAtISO": "2026-03-19T18:22:57+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2034695149607952856",
+      "text": "@NotebookLM I am pro but can‘t acess it yet, even if I chance the Output Language to English in order to use it. https://t.co/z0cxm3T0HQ",
+      "author": {
+        "id": "713692592236535809",
+        "name": "Gamercouch",
+        "screenName": "GamercouchLP",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/994668036979412993/w2J5VC-L_normal.jpg",
+        "verified": false
+      },
+      "metrics": {
+        "likes": 6,
+        "retweets": 0,
+        "replies": 1,
+        "quotes": 0,
+        "views": 2771,
+        "bookmarks": 0
+      },
+      "createdAt": "Thu Mar 19 18:15:01 +0000 2026",
+      "createdAtLocal": "2026-03-20 03:15",
+      "createdAtISO": "2026-03-19T18:15:01+00:00",
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HDywdAfboAAxhR4.jpg",
+          "width": 946,
+          "height": 2048
+        }
+      ],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2034702825402319304",
+      "text": "@NotebookLM Now API !!! https://t.co/lm182Y4rIF",
+      "author": {
+        "id": "1273826699113828352",
+        "name": "Ali DAKISSAGA",
+        "screenName": "Ali_Dakiss",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1851095136417042432/pCiHrWMs_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 6,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 812,
+        "bookmarks": 0
+      },
+      "createdAt": "Thu Mar 19 18:45:31 +0000 2026",
+      "createdAtLocal": "2026-03-20 03:45",
+      "createdAtISO": "2026-03-19T18:45:31+00:00",
+      "media": [
+        {
+          "type": "animated_gif",
+          "url": "https://video.twimg.com/tweet_video/HDy3bh9WQAAZzHl.mp4",
+          "width": 220,
+          "height": 174
+        }
+      ],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2034819096559108256",
+      "text": "@NotebookLM Here is a great cinematic overview video produced by NotebookLM using a document that describes a secret UAP program with an emphasis on the contrasting UAP activity with the Laws of Physics https://t.co/rq41hDrw2m",
+      "author": {
+        "id": "15951523",
+        "name": "khavas",
+        "screenName": "khavas",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1863463280238632961/T_ERD_Cp_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 6,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 1013,
+        "bookmarks": 8
+      },
+      "createdAt": "Fri Mar 20 02:27:32 +0000 2026",
+      "createdAtLocal": "2026-03-20 11:27",
+      "createdAtISO": "2026-03-20T02:27:32+00:00",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://video.twimg.com/amplify_video/2034818154049019904/vid/avc1/1280x720/Csp7f9pfFcB2hn5Z.mp4?tag=21",
+          "width": 1280,
+          "height": 720
+        }
+      ],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2034742689690984899",
+      "text": "@NotebookLM I learn about China's 2026 master plan and ask NotebookLM to make this impressive work https://t.co/nc2hwGSvCb",
+      "author": {
+        "id": "1134516785980563456",
+        "name": "G Adam",
+        "screenName": "asynchronope",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1892503699484033024/za1UaUfl_normal.jpg",
+        "verified": false
+      },
+      "metrics": {
+        "likes": 6,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 468,
+        "bookmarks": 0
+      },
+      "createdAt": "Thu Mar 19 21:23:55 +0000 2026",
+      "createdAtLocal": "2026-03-20 06:23",
+      "createdAtISO": "2026-03-19T21:23:55+00:00",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://video.twimg.com/ext_tw_video/2034742483322884096/pu/vid/avc1/1280x720/vuB1wIMdfelfWSBq.mp4?tag=19",
+          "width": 1280,
+          "height": 720
+        }
+      ],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2034702223696175457",
+      "text": "@NotebookLM Here one on how Russia is making money off the Strait of Hormuz being closed. \n#oil https://t.co/CEqmAbfyXm",
+      "author": {
+        "id": "1886469358249238531",
+        "name": "Dogs On Marz",
+        "screenName": "DogsOnMarz",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1917084857240588288/B2Y71Vjx_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 5,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 243,
+        "bookmarks": 0
+      },
+      "createdAt": "Thu Mar 19 18:43:07 +0000 2026",
+      "createdAtLocal": "2026-03-20 03:43",
+      "createdAtISO": "2026-03-19T18:43:07+00:00",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://video.twimg.com/ext_tw_video/2034702183732781056/pu/vid/avc1/1280x720/2LrMMn0jSfwUN3zV.mp4?tag=19",
+          "width": 1280,
+          "height": 720
+        }
+      ],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2034693251030991028",
+      "text": "@NotebookLM https://t.co/tejmm0XJgd",
+      "author": {
+        "id": "4388111",
+        "name": "Eduardo Bettio✍️🎭",
+        "screenName": "edubettio",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1945937423738777601/RvySskgl_normal.jpg",
+        "verified": false
+      },
+      "metrics": {
+        "likes": 4,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 1603,
+        "bookmarks": 1
+      },
+      "createdAt": "Thu Mar 19 18:07:28 +0000 2026",
+      "createdAtLocal": "2026-03-20 03:07",
+      "createdAtISO": "2026-03-19T18:07:28+00:00",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://video.twimg.com/amplify_video/2034693012488396800/vid/avc1/1280x720/_wyI2vSbZkwQro8t.mp4?tag=14",
+          "width": 1280,
+          "height": 720
+        }
+      ],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "qme",
+      "score": null
+    },
+    {
+      "id": "2034713943722401947",
+      "text": "@NotebookLM Iran Regime change.. https://t.co/iwMgjMr8YA",
+      "author": {
+        "id": "1886469358249238531",
+        "name": "Dogs On Marz",
+        "screenName": "DogsOnMarz",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1917084857240588288/B2Y71Vjx_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 4,
+        "retweets": 0,
+        "replies": 2,
+        "quotes": 0,
+        "views": 1700,
+        "bookmarks": 3
+      },
+      "createdAt": "Thu Mar 19 19:29:41 +0000 2026",
+      "createdAtLocal": "2026-03-20 04:29",
+      "createdAtISO": "2026-03-19T19:29:41+00:00",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://video.twimg.com/ext_tw_video/2034713788260524032/pu/vid/avc1/1280x720/o2BOF8k8zS5iw8aO.mp4?tag=19",
+          "width": 1280,
+          "height": 720
+        }
+      ],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "fr",
+      "score": null
+    },
+    {
+      "id": "2034696009310237007",
+      "text": "Cinematic Video Overviews turning a research doc into something you'd actually want to watch is a genuinely different way to consume information. The gap between \"I uploaded 10 papers\" and \"here's a video that explains all of it\" is wild to think about.\n@grok How does NotebookLM's video generation compare to other AI video summary tools for dense research content — is the cinematic format actually better for retention or just more impressive to look at?",
+      "author": {
+        "id": "941836526496792577",
+        "name": "koop",
+        "screenName": "Kanishk11486111",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1854202757864919055/Z6-QuhDc_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 3,
+        "retweets": 0,
+        "replies": 1,
+        "quotes": 0,
+        "views": 5746,
+        "bookmarks": 1
+      },
+      "createdAt": "Thu Mar 19 18:18:26 +0000 2026",
+      "createdAtLocal": "2026-03-20 03:18",
+      "createdAtISO": "2026-03-19T18:18:26+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2034704541648646654",
+      "text": "@NotebookLM Hey @NotebookLM - feels like the next step is a repository (YouTube channel?) composed of video overviews created by users.  Maybe a button to click to give the user the option to share the video with the community, and indexing for categories/search functionality.",
+      "author": {
+        "id": "1779277375110320130",
+        "name": "Mike F.",
+        "screenName": "starryskyshine1",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2003191151847682048/PlJ-fnEm_normal.jpg",
+        "verified": false
+      },
+      "metrics": {
+        "likes": 3,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 2078,
+        "bookmarks": 0
+      },
+      "createdAt": "Thu Mar 19 18:52:20 +0000 2026",
+      "createdAtLocal": "2026-03-20 03:52",
+      "createdAtISO": "2026-03-19T18:52:20+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2034983457906942134",
+      "text": "This is a perfect example of AI doing something actually useful instead of generating generic content nobody asked for. Taking YOUR sources and transforming them into watchable summaries solves the real problem: people capture information all day but never revisit it. Switching the output format from text to video lowers the friction of retrieval dramatically.",
+      "author": {
+        "id": "222760298",
+        "name": "Tom Solid | AI Productivity",
+        "screenName": "TomSolidPM",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2029590573963935744/XZR-n0C__normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 3,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 279,
+        "bookmarks": 0
+      },
+      "createdAt": "Fri Mar 20 13:20:39 +0000 2026",
+      "createdAtLocal": "2026-03-20 22:20",
+      "createdAtISO": "2026-03-20T13:20:39+00:00",
+      "media": [],
+      "urls": [],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2035702108608233711",
+      "text": "@NotebookLM Mind Blown how good Cinematic Overview is it explained my app https://t.co/E83JHSPlbB perfectly with an awesome steampunk style!! sooo good!! Well done notebook team https://t.co/pIljyGEtqm",
+      "author": {
+        "id": "597682170",
+        "name": "bgill55_art",
+        "screenName": "bgill55_art",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/1837949953878249478/Ybrmh4Ij_normal.jpg",
+        "verified": false
+      },
+      "metrics": {
+        "likes": 1,
+        "retweets": 1,
+        "replies": 0,
+        "quotes": 0,
+        "views": 173,
+        "bookmarks": 2
+      },
+      "createdAt": "Sun Mar 22 12:56:18 +0000 2026",
+      "createdAtLocal": "2026-03-22 21:56",
+      "createdAtISO": "2026-03-22T12:56:18+00:00",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://video.twimg.com/amplify_video/2035701849110827008/vid/avc1/1280x720/oOTLXgTjZlIuBdcD.mp4?tag=14",
+          "width": 1280,
+          "height": 720
+        }
+      ],
+      "urls": [
+        "http://vovxvivid.com"
+      ],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null
+    },
+    {
+      "id": "2034821810521612794",
+      "text": "@NotebookLM Just tested it - here is a one shot generation from a single source article. So cool! https://t.co/I2vP5mDepe",
+      "author": {
+        "id": "1371589877758763009",
+        "name": "Velco Dar",
+        "screenName": "VelcoDar",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/2034271482264903681/Fysjx2_H_normal.jpg",
+        "verified": true
+      },
+      "metrics": {
+        "likes": 3,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "views": 566,
+        "bookmarks": 0
+      },
+      "createdAt": "Fri Mar 20 02:38:19 +0000 2026",
+      "createdAtLocal": "2026-03-20 11:38",
+      "createdAtISO": "2026-03-20T02:38:19+00:00",
+      "media": [],
+      "urls": [
+        "https://x.com/VelcoDar/status/2034821348380615045?s=20"
+      ],
+      "isRetweet": false,
+      "retweetedBy": null,
+      "lang": "en",
+      "score": null,
+      "quotedTweet": {
+        "id": "2034821348380615045",
+        "text": "The Korean BCI Playbook news article - imagined by @NotebookLM new Cinematic Overview feature. https://t.co/gdDRrIK29A",
+        "author": {
+          "screenName": "VelcoDar",
+          "name": "Velco Dar"
+        }
+      }
+    }
+  ]
+}
