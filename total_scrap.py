@@ -65,6 +65,20 @@ def find_latest_full_file(directory, pattern):
     files.sort(reverse=True)
     return files[0]
 
+
+def get_failure_count(failure_info):
+    if not isinstance(failure_info, dict):
+        return 0
+
+    value = failure_info.get("fail_count")
+    if value is None:
+        value = failure_info.get("count", 0)
+
+    try:
+        return int(value or 0)
+    except (TypeError, ValueError):
+        return 0
+
 def should_run_consumer(platform):
     """상세 수집기(Consumer)를 실행할 필요가 있는지 체크"""
     if platform == "Threads":
@@ -90,7 +104,13 @@ def should_run_consumer(platform):
             try: failures = json.load(f)
             except Exception: pass
             
-    final_targets = [p for p in uncollected if failures.get(str(p.get('platform_id') or p.get('id') or p.get('code')), {}).get('count', 0) < 3]
+    final_targets = [
+        p
+        for p in uncollected
+        if get_failure_count(
+            failures.get(str(p.get('platform_id') or p.get('id') or p.get('code')))
+        ) < 3
+    ]
     
     return len(final_targets) > 0
 
