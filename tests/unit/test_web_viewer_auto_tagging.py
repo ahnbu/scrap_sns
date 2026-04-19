@@ -17,82 +17,15 @@ def run_node_json(node_script: str):
     return json.loads(stdout.splitlines()[-1])
 
 
-def test_apply_auto_tags_returns_stats_shape_when_no_rules_exist():
-    node_script = textwrap.dedent(
-        """
-        const fs = require('fs');
-        const src = fs.readFileSync('web_viewer/script.js', 'utf8');
+def test_apply_auto_tags_function_is_removed_after_server_delegation():
+    with open("web_viewer/script.js", "r", encoding="utf-8") as handle:
+        src = handle.read()
 
-        function extractFunction(name) {
-          const patterns = [`async function ${name}(`, `function ${name}(`];
-          let start = -1;
-          for (const pattern of patterns) {
-            start = src.indexOf(pattern);
-            if (start !== -1) break;
-          }
-          if (start === -1) {
-            console.error(`${name} missing`);
-            process.exit(1);
-          }
-
-          let depth = 0;
-          let end = -1;
-          for (let i = start; i < src.length; i += 1) {
-            const ch = src[i];
-            if (ch === '{') depth += 1;
-            if (ch === '}') {
-              depth -= 1;
-              if (depth === 0) {
-                end = i + 1;
-                break;
-              }
-            }
-          }
-
-          if (end === -1) {
-            console.error(`${name} parse failure`);
-            process.exit(1);
-          }
-
-          return src.slice(start, end);
-        }
-
-        const storage = {};
-        global.postTags = {};
-        global.localStorage = {
-          getItem(key) {
-            return Object.prototype.hasOwnProperty.call(storage, key) ? storage[key] : null;
-          },
-          setItem(key, value) {
-            storage[key] = String(value);
-          }
-        };
-        global.updateGlobalTags = () => {};
-        global.renderPosts = () => {};
-        global.requestAnimationFrame = (cb) => cb();
-
-        eval(extractFunction('resolvePostUrl'));
-        eval(extractFunction('applyAutoTags'));
-
-        (async () => {
-          const result = await applyAutoTags([{ full_text: 'ai only' }], true);
-          console.log(JSON.stringify(result));
-        })().catch((error) => {
-          console.error(error);
-          process.exit(1);
-        });
-        """
-    )
-
-    payload = run_node_json(node_script)
-    assert payload == {
-        "count": 0,
-        "ruleCount": 0,
-        "stats": {"hits": 0, "skips": 0, "distinctTags": 0},
-    }
+    assert "async function applyAutoTags(" not in src
+    assert "async function applyAutoTagRules(" in src
 
 
-def test_apply_auto_tags_uses_resolved_post_url_for_threads_posts():
+def test_apply_auto_tag_rules_merges_server_tags_additively():
     node_script = textwrap.dedent(
         """
         const fs = require('fs');
@@ -135,7 +68,11 @@ def test_apply_auto_tags_uses_resolved_post_url_for_threads_posts():
         const storage = {
           sns_auto_tag_rules: JSON.stringify([{ keyword: 'ai', tag: 'AI' }])
         };
-        global.postTags = {};
+        let savedPayload = null;
+        let renderCalls = 0;
+        global.postTags = {
+          'https://www.threads.com/@alice/post/ABC123': ['Manual']
+        };
         global.localStorage = {
           getItem(key) {
             return Object.prototype.hasOwnProperty.call(storage, key) ? storage[key] : null;
@@ -145,23 +82,38 @@ def test_apply_auto_tags_uses_resolved_post_url_for_threads_posts():
           }
         };
         global.updateGlobalTags = () => {};
-        global.renderPosts = () => {};
-        global.requestAnimationFrame = (cb) => cb();
+        global.renderPosts = () => {
+          renderCalls += 1;
+        };
+        global.fetch = async (url, options = {}) => {
+          if (url === '/api/auto-tag/apply') {
+            return {
+              ok: true,
+              json: async () => ({
+                url_to_auto_tags: {
+                  'https://www.threads.com/@alice/post/ABC123': ['AI']
+                },
+                matched_post_count: 1,
+                rule_count: 1
+              })
+            };
+          }
+          if (url === '/api/save-tags') {
+            savedPayload = JSON.parse(options.body || '{}');
+            return {
+              ok: true,
+              json: async () => ({ status: 'success' })
+            };
+          }
+          throw new Error(`Unexpected fetch: ${url}`);
+        };
 
-        eval(extractFunction('resolvePostUrl'));
-        eval(extractFunction('applyAutoTags'));
+        eval(extractFunction('mergeAutoTags'));
+        eval(extractFunction('applyAutoTagRules'));
 
         (async () => {
-          await applyAutoTags([
-            {
-              sns_platform: 'threads',
-              user: 'alice',
-              platform_id: 'ABC123',
-              full_text: 'AI builders'
-            }
-          ], true);
-
-          console.log(JSON.stringify(postTags));
+          const result = await applyAutoTagRules();
+          console.log(JSON.stringify({ result, postTags, savedPayload, renderCalls }));
         })().catch((error) => {
           console.error(error);
           process.exit(1);
@@ -171,7 +123,14 @@ def test_apply_auto_tags_uses_resolved_post_url_for_threads_posts():
 
     payload = run_node_json(node_script)
     assert payload == {
-        "https://www.threads.com/@alice/post/ABC123": ["AI"],
+        "result": {"matchedPostCount": 1, "ruleCount": 1},
+        "postTags": {
+            "https://www.threads.com/@alice/post/ABC123": ["Manual", "AI"],
+        },
+        "savedPayload": {
+            "https://www.threads.com/@alice/post/ABC123": ["Manual", "AI"],
+        },
+        "renderCalls": 1,
     }
 
 

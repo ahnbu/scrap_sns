@@ -1,30 +1,27 @@
 Option Explicit
 
-Dim shell, fso, repoRoot, statusUrl, indexPath
+Dim shell, fso, repoRoot, statusUrl, indexUrl
 Dim attempt
 
 Set shell = CreateObject("WScript.Shell")
 Set fso = CreateObject("Scripting.FileSystemObject")
 
 repoRoot = fso.GetParentFolderName(WScript.ScriptFullName)
-
-' Kill any process already occupying port 5000 (ensures new code is loaded).
-shell.Run "cmd /c for /f ""tokens=5"" %a in ('netstat -aon ^| findstr "":5000 ""') do taskkill /F /PID %a 2>nul", 0, True
-
-' Start the server hidden through cmd.
-shell.Run "cmd /c cd /d " & Chr(34) & repoRoot & Chr(34) & " && python server.py", 0, False
-
 statusUrl = "http://localhost:5000/api/status"
+indexUrl = "http://localhost:5000/"
 
-For attempt = 1 To 10
-    If IsServerReady(statusUrl) Then
-        Exit For
-    End If
-    WScript.Sleep 1000
-Next
+If Not IsServerReady(statusUrl) Then
+    shell.Run "cmd /c cd /d " & Chr(34) & repoRoot & Chr(34) & " && python server.py", 0, False
 
-indexPath = fso.BuildPath(repoRoot, "index.html")
-shell.Run "cmd /c cd /d " & Chr(34) & repoRoot & Chr(34) & " && start " & Chr(34) & Chr(34) & " " & Chr(34) & indexPath & Chr(34), 0, False
+    For attempt = 1 To 10
+        If IsServerReady(statusUrl) Then
+            Exit For
+        End If
+        WScript.Sleep 1000
+    Next
+End If
+
+shell.Run "cmd /c start " & Chr(34) & Chr(34) & " " & indexUrl, 0, False
 
 Function IsServerReady(url)
     On Error Resume Next

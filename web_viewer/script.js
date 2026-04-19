@@ -346,101 +346,61 @@ ${item.body}
     });
 
     // --- Core Functions ---
-    /**
-     * 자동 태그 규칙을 게시물에 적용
-     * @param {Array} posts - 대상 게시물
-     * @param {boolean} silent - true면 알림 없음, false면 결과 알림 및 렌더링
-     */
-    async function applyAutoTags(posts, silent = true, onProgress = null) {
-        const manualRules = JSON.parse(localStorage.getItem('sns_auto_tag_rules') || '[]');
-        
-        // 1. Collect all unique tags from existing posts (Implicit Rules)
-        const existingTags = new Set();
-        Object.values(postTags).forEach(tags => tags.forEach(tag => existingTags.add(tag)));
-        
-        // 2. Combine Rules: Manual Rules + Implicit Rules (Keyword = Tag)
-        const allRules = new Map();
-        
-        // Helper to validate rule
-        const isValidRule = (kw) => kw && kw.trim().length > 0;
-
-        // Add implicit rules first
-        existingTags.forEach(tag => {
-            if (isValidRule(tag)) {
-                allRules.set(tag.toLowerCase(), tag);
-            }
-        });
-
-        // Add/Overwrite with manual rules
-        manualRules.forEach(rule => {
-            if (isValidRule(rule.keyword)) {
-                allRules.set(rule.keyword.toLowerCase(), rule.tag);
-            }
-        });
-
-        if (allRules.size === 0) {
-            return {
-                count: 0,
-                ruleCount: 0,
-                stats: { hits: 0, skips: 0, distinctTags: existingTags.size }
-            };
-        }
-
-        let updateCount = 0;
-        let debugStats = { hits: 0, skips: 0, distinctTags: existingTags.size };
-        
-        const total = posts.length;
-        const CHUNK_SIZE = 100;
-        
-        for (let i = 0; i < total; i += CHUNK_SIZE) {
-            const chunk = posts.slice(i, i + CHUNK_SIZE);
-            
-            chunk.forEach(post => {
-                const text = (post.full_text || '').toLowerCase();
-                const url = resolvePostUrl(post);
-                if (!url) return;
-                
-                if (!postTags[url]) postTags[url] = [];
-                let tags = postTags[url];
-                let modified = false;
-
-                allRules.forEach((tagName, keyword) => {
-                    // Use simple includes() for partial matching as requested by user
-                    // This matches "AI" in "AI", "AInews", "GenAI", etc.
-                    if (text.includes(keyword)) {
-                        if (!tags.includes(tagName)) {
-                            tags.push(tagName);
-                            modified = true;
-                            updateCount++;
-                        } else {
-                            debugStats.skips++;
-                        }
-                        debugStats.hits++;
-                    }
-                });
-
-                if (modified) {
-                    postTags[url] = tags;
+    function mergeAutoTags(urlToAutoTags) {
+        Object.entries(urlToAutoTags || {}).forEach(([url, tags]) => {
+            const merged = new Set(postTags[url] || []);
+            (tags || []).forEach((tag) => {
+                if (tag && String(tag).trim()) {
+                    merged.add(tag);
                 }
             });
-
-            // Update Progress
-            if (onProgress) {
-                const percent = Math.min(100, Math.round(((i + chunk.length) / total) * 100));
-                onProgress(percent);
-                await new Promise(requestAnimationFrame); // Yield to UI
+            if (merged.size > 0) {
+                postTags[url] = [...merged];
             }
+        });
+    }
+
+    async function applyAutoTagRules() {
+        const rules = JSON.parse(localStorage.getItem('sns_auto_tag_rules') || '[]');
+        if (rules.length === 0) {
+            renderPosts();
+            return { matchedPostCount: 0, ruleCount: 0 };
         }
 
-        if (updateCount > 0) {
-            localStorage.setItem('sns_tags', JSON.stringify(postTags));
-            updateGlobalTags();
-            if (!silent) {
-                renderPosts();
-            }
-        } 
-        
-        return { count: updateCount, ruleCount: allRules.size, stats: debugStats };
+        const response = await fetch('/api/auto-tag/apply', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                rules: rules.map((rule) => ({
+                    ...rule,
+                    match_field: 'all',
+                })),
+            }),
+        });
+
+        if (!response.ok) {
+            throw new Error(`Failed to apply auto tag rules: ${response.status}`);
+        }
+
+        const payload = await response.json();
+        mergeAutoTags(payload.url_to_auto_tags || {});
+        localStorage.setItem('sns_tags', JSON.stringify(postTags));
+
+        const saveResponse = await fetch('/api/save-tags', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(postTags),
+        });
+        if (!saveResponse.ok) {
+            throw new Error(`Failed to save tags: ${saveResponse.status}`);
+        }
+
+        updateGlobalTags();
+        renderPosts();
+        return {
+            matchedPostCount: Number(payload.matched_post_count || 0),
+            ruleCount: Number(payload.rule_count || rules.length),
+        };
     }
 
     function migrateLegacyTagKeys(posts) {
@@ -761,8 +721,6 @@ ${item.body}
             _inFlightDetails.clear();
 
             migrateLegacyTagKeys(allPosts);
-
-            await applyAutoTags(allPosts, true);
 
             if (totalPostsCount) {
                 totalPostsCount.textContent = `${allPosts.length} 건`;
@@ -1844,10 +1802,11 @@ ${item.body}
             `;
             
             if (isManual) {
-                div.querySelector('.delete-rule-btn').addEventListener('click', () => {
+                div.querySelector('.delete-rule-btn').addEventListener('click', async () => {
                     manualRules.splice(rule.index, 1);
                     localStorage.setItem('sns_auto_tag_rules', JSON.stringify(manualRules));
                     renderAutoTagRules();
+                    await applyAutoTagRules();
                 });
             }
             container.appendChild(div);
@@ -1855,7 +1814,7 @@ ${item.body}
     }
 
     // Add Rule
-    document.getElementById('addAutoTagRuleBtn').addEventListener('click', () => {
+    document.getElementById('addAutoTagRuleBtn').addEventListener('click', async () => {
         const keywordInput = document.getElementById('autoTagKeyword');
         const tagInput = document.getElementById('autoTagTagName');
         const keyword = keywordInput.value.trim();
@@ -1873,6 +1832,7 @@ ${item.body}
         keywordInput.value = '';
         tagInput.value = '';
         renderAutoTagRules();
+        await applyAutoTagRules();
     });
 
     // Batch Update
@@ -1892,31 +1852,25 @@ ${item.body}
         progressPercent.textContent = '0%';
         resultMessage.classList.add('hidden');
         
-        // Run
-        // Run
-        const { count, ruleCount, stats } = await applyAutoTags(allPosts, false, (percent) => {
-            progressBar.style.width = `${percent}%`;
-            progressPercent.textContent = `${percent}%`;
-        });
+        try {
+            const { matchedPostCount, ruleCount } = await applyAutoTagRules();
 
-        // Done
-        progressBar.style.width = '100%';
-        progressPercent.textContent = '100%';
-        
-        let msg = count > 0 
-            ? `완료! 총 ${count}개의 태그가 추가되었습니다.` 
-            : `완료! 새로 적용된 태그가 없습니다.`;
-            
-        // Add debug info
-        msg += ` (규칙: ${ruleCount}, 감지: ${stats.hits}, 중복건너뜀: ${stats.skips})`;
-        
-        resultMessage.textContent = msg;
-        resultMessage.classList.remove('hidden');
+            progressBar.style.width = '100%';
+            progressPercent.textContent = '100%';
 
-        // Re-enable button after 500ms
-        setTimeout(() => {
-            btn.disabled = false;
-        }, 500);
+            resultMessage.textContent = matchedPostCount > 0
+                ? `완료! ${matchedPostCount}개 게시물에 자동 태그를 적용했습니다. (규칙: ${ruleCount})`
+                : `완료! 새로 적용된 자동 태그가 없습니다. (규칙: ${ruleCount})`;
+            resultMessage.classList.remove('hidden');
+        } catch (error) {
+            console.error('Failed to run batch auto tag:', error);
+            resultMessage.textContent = '자동 태그 적용 중 오류가 발생했습니다.';
+            resultMessage.classList.remove('hidden');
+        } finally {
+            setTimeout(() => {
+                btn.disabled = false;
+            }, 500);
+        }
     });
 
     // Logo / Home Logic

@@ -290,16 +290,8 @@ def save_total(new_posts, threads_count, linkedin_count, twitter_count):
         json.dump(total_data, f, ensure_ascii=False, indent=4)
     print(f"\n🏁 Total Full 저장 완료: {total_filename} (총 {len(new_posts)}개)")
     
-    # MD 변환 및 JS 갱신
+    # MD 변환
     convert_json_to_md(total_filename)
-    try:
-        data_js_path = os.path.join('web_viewer', 'data.js')
-        js_content = "const snsFeedData = " + json.dumps(total_data, ensure_ascii=False, indent=2) + ";"
-        with open(data_js_path, 'w', encoding='utf-8-sig') as f:
-            f.write(js_content)
-        print(f"   🌐 web_viewer/data.js 갱신 완료")
-    except Exception as e:
-        print(f"   data.js 갱신 실패: {e}")
 
 import requests
 import hashlib
