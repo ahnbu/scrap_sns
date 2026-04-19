@@ -106,3 +106,23 @@ def test_management_modal_open(page: Page, server_url):
     close_btn = page.locator("#closeManagementModal")
     close_btn.click()
     expect(page.locator("#managementModal")).not_to_be_visible()
+
+
+@pytest.mark.e2e
+def test_desktop_masonry_columns_keep_width_when_sentinel_exists(page: Page, server_url):
+    page.set_viewport_size({"width": 1600, "height": 1200})
+    page.goto(f"{server_url}/")
+    page.wait_for_timeout(3000)
+
+    expect(page.locator("#masonryGrid")).to_be_visible(timeout=10000)
+
+    sentinel_in_grid = page.locator("#masonryGrid > .load-sentinel")
+    assert sentinel_in_grid.count() == 0, "Sentinel must not be a direct flex child of #masonryGrid."
+
+    column_widths = page.evaluate(
+        """() => Array.from(document.querySelectorAll('#masonryGrid > .masonry-col'))
+        .map((node) => Math.round(node.getBoundingClientRect().width))"""
+    )
+
+    assert len(column_widths) == 4, f"Expected 4 desktop masonry columns, got {len(column_widths)}"
+    assert all(width > 0 for width in column_widths), f"All columns must keep positive width: {column_widths}"

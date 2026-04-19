@@ -931,7 +931,8 @@ ${item.body}
             _ioSentinel.className = 'load-sentinel';
             _ioSentinel.style.cssText = 'width:100%;height:1px;';
         }
-        masonryGrid.appendChild(_ioSentinel);
+        const sentinelHost = masonryGrid.parentElement || masonryGrid;
+        sentinelHost.appendChild(_ioSentinel);
         if (!_ioObserver) {
             _ioObserver = new IntersectionObserver((entries) => {
                 if (!entries[0].isIntersecting || _pendingPosts.length === 0) {
@@ -954,6 +955,9 @@ ${item.body}
 
         if (_ioObserver) {
             _ioObserver.disconnect();
+        }
+        if (_ioSentinel) {
+            _ioSentinel.remove();
         }
         _ioSentinel = null;
         _pendingPosts = [];
