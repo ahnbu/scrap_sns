@@ -30,6 +30,17 @@ _POSTS_CACHE = {
 }
 
 
+def _normalize_platform_filter(raw):
+    value = str(raw or "").strip().lower()
+    if value in {"", "all"}:
+        return ""
+    if value == "x":
+        return "twitter"
+    if value not in {"threads", "linkedin", "twitter"}:
+        return ""
+    return value
+
+
 def _build_posts_response_etag(base_etag, request_path):
     token = str(request_path or "").replace('"', "")
     return f'{base_etag[:-1]}:{token}"'
@@ -39,6 +50,58 @@ def _if_none_match_matches(etag):
     if not etag:
         return False
     return request.if_none_match.contains_weak(etag.strip('"'))
+
+
+def _matches_platform_filter(post, platform_filter):
+    if not platform_filter:
+        return True
+
+    platform = str(post.get("sns_platform") or "").strip().lower()
+    if platform_filter == "twitter":
+        return platform in {"twitter", "x"}
+    return platform == platform_filter
+
+
+def _sort_search_matches(posts, sort):
+    if str(sort or "").strip().lower() == "sequence":
+        return sorted(posts, key=lambda post: post.get("sequence_id") or 0, reverse=True)
+
+    return sorted(
+        posts,
+        key=lambda post: (
+            str(post.get("created_at") or ""),
+            str(post.get("date") or ""),
+            post.get("sequence_id") or 0,
+        ),
+        reverse=True,
+    )
+
+
+def _request_cache_token():
+    full_path = str(request.full_path or "").rstrip("?")
+    return full_path or (request.path or "")
+
+
+def _should_apply_cached_json_headers(request_path):
+    return (
+        request.method == "GET"
+        and (
+            request_path == "/api/posts"
+            or request_path.startswith("/api/post/")
+            or request_path == "/api/search"
+        )
+    )
+
+
+def _should_apply_gzip_json_headers(request_path):
+    return _should_apply_cached_json_headers(request_path) or (
+        request.method == "POST" and request_path == "/api/auto-tag/apply"
+    )
+
+
+def _merge_vary_header(response, value):
+    response.vary.add(value)
+    return response
 
 
 def _get_latest_total_file():
@@ -262,6 +325,109 @@ def get_post_detail(sequence_id):
         return jsonify({"error": "Failed to load post"}), 500
 
 
+@app.route('/api/search', methods=['GET'])
+def search_posts():
+    q = (request.args.get("q") or "").strip()
+    if not q:
+        return jsonify({"error": "q is required"}), 400
+
+    platform = _normalize_platform_filter(request.args.get("platform"))
+
+    try:
+        limit = int(request.args.get("limit", 500))
+    except (TypeError, ValueError):
+        limit = 500
+    limit = max(1, min(limit, 1000))
+
+    try:
+        offset = int(request.args.get("offset", 0))
+    except (TypeError, ValueError):
+        offset = 0
+    offset = max(0, offset)
+
+    try:
+        cache = _load_latest_posts()
+        query = q.lower()
+        matched_posts = []
+        for post in cache["posts_full"]:
+            if not _matches_platform_filter(post, platform):
+                continue
+            if query in str(post.get("_searchable") or ""):
+                matched_posts.append(post)
+
+        matches = [build_post_meta(post) for post in _sort_search_matches(matched_posts, request.args.get("sort"))]
+
+        sliced = matches[offset:offset + limit]
+        return jsonify(
+            {
+                "posts": sliced,
+                "query": q,
+                "total_matched": len(matches),
+                "returned": len(sliced),
+                "limit": limit,
+                "offset": offset,
+            }
+        )
+    except FileNotFoundError:
+        return jsonify({"error": "Data file not found"}), 404
+    except Exception:
+        logging.exception("Failed to search posts")
+        return jsonify({"error": "Failed to search posts"}), 500
+
+
+@app.route('/api/auto-tag/apply', methods=['POST'])
+def apply_auto_tags():
+    payload = request.get_json(silent=True) or {}
+    rules = payload.get("rules")
+    if not isinstance(rules, list):
+        return jsonify({"error": "rules is required"}), 400
+
+    try:
+        cache = _load_latest_posts()
+        url_to_auto_tags = {}
+
+        for post in cache["posts_full"]:
+            matched_tags = []
+            for rule in rules:
+                if not isinstance(rule, dict):
+                    continue
+
+                keyword = str(rule.get("keyword") or "").strip().lower()
+                tag = str(rule.get("tag") or "").strip()
+                match_field = str(rule.get("match_field") or "all").strip().lower()
+                if not keyword or not tag:
+                    continue
+
+                haystack_parts = [str(post.get("full_text") or "")]
+                if match_field == "all":
+                    haystack_parts.extend(
+                        [
+                            str(post.get("display_name") or ""),
+                            str(post.get("username") or post.get("user") or ""),
+                        ]
+                    )
+                haystack = " ".join(part for part in haystack_parts if part).lower()
+
+                if keyword in haystack and tag not in matched_tags:
+                    matched_tags.append(tag)
+
+            if matched_tags:
+                url_to_auto_tags[post["canonical_url"]] = matched_tags
+
+        return jsonify(
+            {
+                "url_to_auto_tags": url_to_auto_tags,
+                "matched_post_count": len(url_to_auto_tags),
+                "rule_count": len(rules),
+            }
+        )
+    except FileNotFoundError:
+        return jsonify({"error": "Data file not found"}), 404
+    except Exception:
+        logging.exception("Failed to apply auto tags")
+        return jsonify({"error": "Failed to apply auto tags"}), 500
+
+
 @app.after_request
 def add_json_response_headers(response):
     if not response.is_json:
@@ -271,31 +437,34 @@ def add_json_response_headers(response):
         return response
 
     request_path = request.path or ""
-    if request_path != "/api/posts" and not request_path.startswith("/api/post/"):
+    if not _should_apply_gzip_json_headers(request_path):
         return response
 
-    try:
-        cache = _load_latest_posts()
-        etag = cache.get("etag")
-    except FileNotFoundError:
-        return response
-    except Exception:
-        logging.exception("Failed to load posts cache for response headers")
-        return response
+    if request.headers.get("Origin"):
+        _merge_vary_header(response, "Origin")
+    _merge_vary_header(response, "Accept-Encoding")
 
-    if not etag:
-        return response
+    if _should_apply_cached_json_headers(request_path):
+        try:
+            cache = _load_latest_posts()
+            etag = cache.get("etag")
+        except FileNotFoundError:
+            return response
+        except Exception:
+            logging.exception("Failed to load posts cache for response headers")
+            return response
 
-    response_etag = _build_posts_response_etag(etag, request_path)
-    response.headers["ETag"] = etag
-    response.headers["Cache-Control"] = "private, max-age=0, must-revalidate"
-    response.headers["Vary"] = "Accept-Encoding"
-    response.headers["ETag"] = response_etag
+        if not etag:
+            return response
 
-    if _if_none_match_matches(response_etag):
-        response.set_data(b"")
-        response.status_code = 304
-        return response
+        response_etag = _build_posts_response_etag(etag, _request_cache_token())
+        response.headers["Cache-Control"] = "private, max-age=0, must-revalidate"
+        response.headers["ETag"] = response_etag
+
+        if _if_none_match_matches(response_etag):
+            response.set_data(b"")
+            response.status_code = 304
+            return response
 
     accepts_gzip = "gzip" in request.headers.get("Accept-Encoding", "").lower()
     if accepts_gzip and len(response.get_data()) >= 512:
