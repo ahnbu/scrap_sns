@@ -296,7 +296,8 @@ def get_status():
 def get_posts():
     try:
         cache = _load_latest_posts()
-        return jsonify({"posts": cache["posts_meta"]})
+        sorted_posts = _sort_search_matches(cache["posts_full"], request.args.get("sort"))
+        return jsonify({"posts": [build_post_meta(post) for post in sorted_posts]})
     except FileNotFoundError:
         return jsonify({"error": "Data file not found"}), 404
     except Exception:

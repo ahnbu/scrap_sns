@@ -5,7 +5,7 @@ import json
 def _write_total_payload(tmp_path):
     payload = {
         "metadata": {
-            "total_count": 1,
+            "total_count": 2,
             "updated_at": "2026-04-19T09:00:00",
         },
         "posts": [
@@ -25,7 +25,24 @@ def _write_total_payload(tmp_path):
                 "local_images": [],
                 "is_detail_collected": True,
                 "is_merged_thread": False,
-            }
+            },
+            {
+                "sequence_id": 2,
+                "platform_id": "XYZ999",
+                "sns_platform": "twitter",
+                "code": "XYZ999",
+                "username": "bob",
+                "display_name": "Bob",
+                "url": "https://x.com/bob/status/999",
+                "created_at": "2026-04-20T09:00:00",
+                "date": "2026-04-20",
+                "source": "consumer_detail",
+                "full_text": "world",
+                "media": [],
+                "local_images": [],
+                "is_detail_collected": True,
+                "is_merged_thread": False,
+            },
         ],
     }
     target = tmp_path / "total_full_20260419.json"
@@ -59,7 +76,8 @@ def test_posts_api_returns_meta_only(app, tmp_path, monkeypatch):
     assert response.headers["Content-Encoding"] == "gzip"
 
     payload = json.loads(gzip.decompress(response.data))
-    post = payload["posts"][0]
+    assert [post["sequence_id"] for post in payload["posts"]] == [2, 1]
+    post = payload["posts"][1]
 
     assert post["canonical_url"] == "https://www.threads.com/@alice/post/ABC123"
     assert "full_text" not in post
@@ -93,6 +111,33 @@ def test_posts_api_returns_304_when_if_none_match_matches(app, tmp_path, monkeyp
 
     assert response.status_code == 304
     assert response.data == b""
+
+
+def test_posts_api_applies_sequence_sort(app, tmp_path, monkeypatch):
+    import server
+
+    _write_total_payload(tmp_path)
+    monkeypatch.setattr(server, "OUTPUT_TOTAL_DIR", str(tmp_path))
+    monkeypatch.setattr(
+        server,
+        "_POSTS_CACHE",
+        {
+            "path": None,
+            "mtime": None,
+            "size": None,
+            "posts_full": None,
+            "posts_meta": None,
+            "etag": None,
+        },
+        raising=False,
+    )
+
+    client = app.test_client()
+    response = client.get("/api/posts?sort=sequence")
+
+    assert response.status_code == 200
+    payload = response.get_json()
+    assert [post["sequence_id"] for post in payload["posts"]] == [2, 1]
 
 
 def test_posts_api_returns_304_for_weak_if_none_match(app, tmp_path, monkeypatch):
