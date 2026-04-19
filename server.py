@@ -63,7 +63,9 @@ def _matches_platform_filter(post, platform_filter):
 
 
 def _sort_search_matches(posts, sort):
-    if str(sort or "").strip().lower() == "sequence":
+    sort_value = str(sort or "").strip().lower()
+
+    if sort_value == "sequence":
         return sorted(posts, key=lambda post: post.get("sequence_id") or 0, reverse=True)
 
     return sorted(
@@ -73,7 +75,7 @@ def _sort_search_matches(posts, sort):
             str(post.get("date") or ""),
             post.get("sequence_id") or 0,
         ),
-        reverse=True,
+        reverse=(sort_value != "oldest"),
     )
 
 

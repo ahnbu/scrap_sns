@@ -140,6 +140,33 @@ def test_posts_api_applies_sequence_sort(app, tmp_path, monkeypatch):
     assert [post["sequence_id"] for post in payload["posts"]] == [2, 1]
 
 
+def test_posts_api_applies_oldest_sort(app, tmp_path, monkeypatch):
+    import server
+
+    _write_total_payload(tmp_path)
+    monkeypatch.setattr(server, "OUTPUT_TOTAL_DIR", str(tmp_path))
+    monkeypatch.setattr(
+        server,
+        "_POSTS_CACHE",
+        {
+            "path": None,
+            "mtime": None,
+            "size": None,
+            "posts_full": None,
+            "posts_meta": None,
+            "etag": None,
+        },
+        raising=False,
+    )
+
+    client = app.test_client()
+    response = client.get("/api/posts?sort=oldest")
+
+    assert response.status_code == 200
+    payload = response.get_json()
+    assert [post["sequence_id"] for post in payload["posts"]] == [1, 2]
+
+
 def test_posts_api_returns_304_for_weak_if_none_match(app, tmp_path, monkeypatch):
     import server
 
