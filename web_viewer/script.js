@@ -848,7 +848,7 @@ ${item.body}
     }
 
     function buildCopyText(post) {
-        const fullText = getPostPreviewText(post);
+        const fullText = post.full_text || post.full_text_preview || '';
         const postUrl = resolvePostUrl(post);
         const author = post.display_name || post.username || post.user || '';
         const createdAt = (post.created_at || '').slice(0, 10);
