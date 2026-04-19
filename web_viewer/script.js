@@ -32,9 +32,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const invisiblePostsList = document.getElementById('invisiblePostsList');
 
     let allPosts = [];
+    let searchResults = null;
     let currentFilter = 'all';
     let searchQuery = '';
+    let _searchTimer = null;
+    let _searchAbortController = null;
+    let _pendingPosts = [];
+    let _ioObserver = null;
+    let _ioSentinel = null;
+    let columns = [];
     let currentSort = localStorage.getItem('sns_sort_order') || 'date'; // Persist sort order
+    const _postDetailCache = new Map();
+    const _inFlightDetails = new Set();
 
     // Load states from localStorage
     const favorites = new Set(JSON.parse(localStorage.getItem('sns_favorites') || '[]'));
@@ -70,8 +79,20 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Event Listeners ---
     // Search
     searchInput.addEventListener('input', (e) => {
-        searchQuery = e.target.value.toLowerCase();
-        renderPosts();
+        const nextQuery = (e.target.value || '').trim();
+        searchQuery = nextQuery;
+        clearTimeout(_searchTimer);
+        if (_searchAbortController) {
+            _searchAbortController.abort();
+        }
+        if (!nextQuery) {
+            searchResults = null;
+            renderPosts();
+            return;
+        }
+        _searchTimer = setTimeout(() => {
+            void runServerSearch(nextQuery);
+        }, 200);
     });
 
     // Filters
@@ -84,6 +105,10 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.classList.add('active');
 
         currentFilter = btn.dataset.filter;
+        if (searchQuery) {
+            void runServerSearch(searchQuery);
+            return;
+        }
         renderPosts();
     });
 
@@ -115,6 +140,10 @@ document.addEventListener('DOMContentLoaded', () => {
             document.querySelectorAll('[data-sort]').forEach(b => b.classList.remove('font-bold', 'text-primary'));
             e.target.classList.add('font-bold', 'text-primary');
 
+            if (searchQuery) {
+                void runServerSearch(searchQuery);
+                return;
+            }
             renderPosts();
         });
     });
@@ -583,131 +612,255 @@ ${item.body}
         return migrated;
     }
 
-    // --- Data Loading ---
-    async function fetchData() {
-        if (loadingIndicator) loadingIndicator.classList.remove('hidden');
-        if (noResults) noResults.classList.add('hidden');
-        if (masonryGrid) masonryGrid.innerHTML = ''; 
-        
-        let data = null;
-        let loadMode = 'unknown';
-
-        try {
-            // 1순위: 서버 API 호출 (최신 데이터 + 태그 통합 로드)
-            const [postsRes, tagsRes] = await Promise.all([
-                fetch('/api/latest-data'),
-                fetch('/api/get-tags')
-            ]);
-
-            if (postsRes.ok) {
-                data = await postsRes.json();
-                loadMode = 'live';
-                console.log('✨ Live Mode: Loaded posts from server');
-                
-                if (tagsRes.ok) {
-                    const serverTags = await tagsRes.json();
-                    console.log('🔗 Loaded tags from server sync:', Object.keys(serverTags).length);
-                    // Merge server tags into postTags
-                    Object.assign(postTags, serverTags);
-                    
-                    // Cleanup: Remove empty/invalid tags from all postTags
-                    Object.keys(postTags).forEach(url => {
-                        postTags[url] = postTags[url].filter(t => t && t.trim().length > 0);
-                        if (postTags[url].length === 0) delete postTags[url];
-                    });
-
-                    localStorage.setItem('sns_tags', JSON.stringify(postTags));
-                    syncTagsToServer(); // Update server with cleaned data if needed
-                }
-            } else {
-                throw new Error('Server response not OK');
-            }
-        } catch (error) {
-            // 2순위: 로컬 data.js 폴백
-            console.warn('📡 Server unavailable, falling back to local data.js');
-            if (typeof window.snsFeedData !== 'undefined') {
-                data = window.snsFeedData;
-                loadMode = 'offline';
-                console.log('📦 Offline Mode: Loaded from data.js');
-            } else if (typeof snsFeedData !== 'undefined') {
-                // 핸들링 보완: window 생략된 경우 대비
-                data = snsFeedData;
-                loadMode = 'offline';
-                console.log('📦 Offline Mode: Loaded from data.js (global)');
-            } else {
-                // 3순위: 데이터 없음 에러
-                console.error('❌ Data load failed: No source available');
-                if (noResults) {
-                    noResults.innerHTML = `
-                        <div class="text-center p-12">
-                            <span class="material-symbols-outlined text-gray-500 text-6xl mb-4">cloud_off</span>
-                            <p class="text-xl text-gray-300">데이터를 불러올 수 없습니다.</p>
-                            <p class="text-sm text-gray-500 mt-2">서버가 실행 중인지 확인하거나 data.js 파일이 존재하는지 확인하세요.</p>
-                        </div>
-                    `;
-                    noResults.classList.remove('hidden');
-                }
-                if (loadingIndicator) loadingIndicator.classList.add('hidden');
-                return;
-            }
-        }
-
-        // 데이터 적용
-        allPosts = Array.isArray(data) ? data : (data.posts || []);
-        
-        // Pre-process (날짜 포맷 정규화)
-        allPosts.forEach(post => {
-            // 표준 timestamp 필드 우선 사용, 없으면 created_at 또는 crawled_at 사용
-            let dateStr = post.timestamp || post.created_at || post.crawled_at;
+    function decoratePosts(posts) {
+        return (posts || []).map((post) => {
+            let dateStr = post.timestamp || post.created_at || post.date || post.crawled_at;
             if (dateStr && typeof dateStr === 'string' && dateStr.includes(' ') && !dateStr.includes('T')) {
                 dateStr = dateStr.replace(' ', 'T');
             }
             post._dateObj = dateStr ? new Date(dateStr) : new Date(0);
             post._seqId = post.sequence_id || 0;
+            return post;
         });
+    }
 
-        migrateLegacyTagKeys(allPosts);
+    function getServerPlatformFilter(filter) {
+        if (filter === 'x') return 'twitter';
+        return ['threads', 'linkedin', 'twitter'].includes(filter) ? filter : '';
+    }
 
-        // 자동 태그 적용 및 렌더링
-        await applyAutoTags(allPosts, true);
-        
-        if (totalPostsCount) {
-            totalPostsCount.textContent = `${allPosts.length} 건`;
+    function getServerSortParam() {
+        return currentSort === 'saved' ? 'sequence' : 'newest';
+    }
+
+    function getPostPreviewText(post) {
+        return String(post.full_text || post.full_text_preview || '');
+    }
+
+    function getPostTextLength(post) {
+        const preview = getPostPreviewText(post);
+        return Number(post.full_text_length || preview.length || 0);
+    }
+
+    function getPostMediaCount(post) {
+        if (Array.isArray(post.media) && post.media.length > 0) {
+            return post.media.length;
         }
-        
-        renderPosts();
-        
-        if (loadingIndicator) loadingIndicator.classList.add('hidden');
-        
-        // 모드 알림 토스트 (오프라인일 때만)
-        if (loadMode === 'offline') {
-            const toast = document.createElement('div');
-            toast.className = 'fixed bottom-6 right-6 bg-yellow-500/10 border border-yellow-500/30 text-yellow-300 px-4 py-2 rounded-xl text-xs backdrop-blur-md z-50 animate-fade-in-up';
-            toast.innerHTML = '📂 Offline Mode: 로컬 데이터 로드됨';
-            document.body.appendChild(toast);
-            setTimeout(() => toast.remove(), 4000);
+        return Number(post.media_count || 0);
+    }
+
+    function getBestImageSource(post, preferDetail = false) {
+        const localImages = Array.isArray(post.local_images) ? post.local_images : [];
+        const mediaList = Array.isArray(post.media) ? post.media : [];
+        const thumbnail = post.thumbnail || '';
+        const originalUrl = localImages[0] || mediaList[0] || thumbnail || '';
+
+        if (!preferDetail && thumbnail) {
+            return thumbnail;
+        }
+        if (!originalUrl) {
+            return '';
+        }
+        if (localImages.length > 0) {
+            return localImages[0];
+        }
+        if (originalUrl.includes('wsrv.nl') || originalUrl.includes('licdn.com')) {
+            return originalUrl;
+        }
+        return `https://wsrv.nl/?url=${encodeURIComponent(originalUrl)}&output=webp`;
+    }
+
+    function mergeDetailIntoCollections(detail) {
+        const collections = [allPosts, searchResults];
+        collections.forEach((posts) => {
+            if (!Array.isArray(posts)) return;
+            const target = posts.find((post) => post.sequence_id === detail.sequence_id);
+            if (target) {
+                Object.assign(target, detail);
+                decoratePosts([target]);
+            }
+        });
+    }
+
+    async function prefetchDetail(sequenceId) {
+        if (!sequenceId || _postDetailCache.has(sequenceId) || _inFlightDetails.has(sequenceId)) {
+            return;
+        }
+        _inFlightDetails.add(sequenceId);
+        try {
+            const response = await fetch(`/api/post/${sequenceId}`);
+            if (!response.ok) {
+                return;
+            }
+            const detail = await response.json();
+            _postDetailCache.set(sequenceId, detail);
+            mergeDetailIntoCollections(detail);
+        } catch (error) {
+            console.error('Failed to prefetch post detail:', error);
+        } finally {
+            _inFlightDetails.delete(sequenceId);
+        }
+    }
+
+    async function ensurePostDetail(post) {
+        if (!post || !post.sequence_id) {
+            return post;
+        }
+        const cached = _postDetailCache.get(post.sequence_id);
+        if (cached) {
+            Object.assign(post, cached);
+            decoratePosts([post]);
+            return post;
+        }
+        await prefetchDetail(post.sequence_id);
+        const detail = _postDetailCache.get(post.sequence_id);
+        if (detail) {
+            Object.assign(post, detail);
+            decoratePosts([post]);
+        }
+        return post;
+    }
+
+    // --- Data Loading ---
+    async function fetchData() {
+        if (loadingIndicator) loadingIndicator.classList.remove('hidden');
+        if (noResults) noResults.classList.add('hidden');
+        if (masonryGrid) masonryGrid.innerHTML = '';
+
+        clearTimeout(_searchTimer);
+        if (_searchAbortController) {
+            _searchAbortController.abort();
+        }
+
+        try {
+            const params = new URLSearchParams({ sort: getServerSortParam() });
+            const [postsRes, tagsRes] = await Promise.all([
+                fetch(`/api/posts?${params.toString()}`),
+                fetch('/api/get-tags'),
+            ]);
+
+            if (!postsRes.ok) {
+                throw new Error('Failed to load /api/posts');
+            }
+
+            const data = await postsRes.json();
+            const serverTags = tagsRes.ok ? await tagsRes.json() : {};
+
+            Object.assign(postTags, serverTags);
+            Object.keys(postTags).forEach((url) => {
+                postTags[url] = (postTags[url] || []).filter((tag) => tag && tag.trim().length > 0);
+                if (postTags[url].length === 0) {
+                    delete postTags[url];
+                }
+            });
+            localStorage.setItem('sns_tags', JSON.stringify(postTags));
+
+            allPosts = decoratePosts(Array.isArray(data) ? data : (data.posts || []));
+            searchResults = null;
+            _postDetailCache.clear();
+            _inFlightDetails.clear();
+
+            migrateLegacyTagKeys(allPosts);
+
+            await applyAutoTags(allPosts, true);
+
+            if (totalPostsCount) {
+                totalPostsCount.textContent = `${allPosts.length} 건`;
+            }
+
+            const activeQuery = (searchInput.value || '').trim();
+            if (activeQuery) {
+                searchQuery = activeQuery;
+                await runServerSearch(activeQuery);
+            } else {
+                searchQuery = '';
+                renderPosts();
+            }
+        } catch (error) {
+            console.error('❌ Data load failed:', error);
+            if (noResults) {
+                noResults.innerHTML = `
+                    <div class="text-center p-12">
+                        <span class="material-symbols-outlined text-gray-500 text-6xl mb-4">cloud_off</span>
+                        <p class="text-xl text-gray-300">데이터를 불러올 수 없습니다.</p>
+                        <p class="text-sm text-gray-500 mt-2">서버가 실행 중인지 확인하세요.</p>
+                    </div>
+                `;
+                noResults.classList.remove('hidden');
+            }
+        } finally {
+            if (loadingIndicator) loadingIndicator.classList.add('hidden');
+        }
+    }
+
+    async function runServerSearch(query) {
+        const nextQuery = (query || '').trim();
+        searchQuery = nextQuery;
+
+        if (!nextQuery) {
+            searchResults = null;
+            renderPosts();
+            return;
+        }
+
+        if (_searchAbortController) {
+            _searchAbortController.abort();
+        }
+
+        const controller = new AbortController();
+        _searchAbortController = controller;
+
+        try {
+            const params = new URLSearchParams({
+                q: nextQuery,
+                platform: getServerPlatformFilter(currentFilter),
+                sort: getServerSortParam(),
+                limit: '500',
+            });
+            const response = await fetch(`/api/search?${params.toString()}`, {
+                signal: controller.signal,
+            });
+            if (!response.ok) {
+                throw new Error(`Search request failed: ${response.status}`);
+            }
+            const data = await response.json();
+            searchResults = decoratePosts(Array.isArray(data.posts) ? data.posts : []);
+            searchResults.forEach((post) => {
+                const cached = _postDetailCache.get(post.sequence_id);
+                if (cached) {
+                    Object.assign(post, cached);
+                }
+            });
+            renderPosts();
+        } catch (error) {
+            if (error.name === 'AbortError') {
+                return;
+            }
+            console.error('Search failed:', error);
+            searchResults = [];
+            renderPosts();
+        } finally {
+            if (_searchAbortController === controller) {
+                _searchAbortController = null;
+            }
         }
     }
 
     function getFilteredPosts() {
-        return allPosts.filter(post => {
-            const matchesSearch = 
-                (post.full_text || '').toLowerCase().includes(searchQuery) ||
-                (post.display_name || post.username || post.user || '').toLowerCase().includes(searchQuery);
-            
+        const sourcePosts = searchResults ?? allPosts;
+        return sourcePosts.filter((post) => {
             const postUrl = resolvePostUrl(post);
-            
-            const matchesFilter = 
-                currentFilter === 'all' || 
-                (currentFilter === 'favorites' ? favorites.has(postUrl) : 
-                 currentFilter === 'todos' ? todos[postUrl] :
-                 (post.sns_platform || '').toLowerCase() === currentFilter || 
+            const matchesFilter =
+                currentFilter === 'all' ||
+                (currentFilter === 'favorites' ? favorites.has(postUrl) :
+                 currentFilter === 'todos' ? !!todos[postUrl] :
+                 (post.sns_platform || '').toLowerCase() === currentFilter ||
                  (currentFilter === 'x' && (post.sns_platform === 'twitter' || post.sns_platform === 'x')));
 
             const matchesTag = !currentTag || (postTags[postUrl] || []).includes(currentTag);
             const matchesVisibility = !invisiblePosts.has(postUrl);
 
-            return matchesSearch && matchesFilter && matchesTag && matchesVisibility;
+            return matchesFilter && matchesTag && matchesVisibility;
         });
     }
 
@@ -720,6 +873,9 @@ ${item.body}
                 .replace(/^https?:\/\/threads\.com\//, 'https://www.threads.com/');
         };
 
+        if (post.canonical_url) {
+            return normalizeThreadsUrl(post.canonical_url) || post.canonical_url;
+        }
         if (post.url) {
             return normalizeThreadsUrl(post.url) || post.url;
         }
@@ -734,7 +890,7 @@ ${item.body}
     }
 
     function buildCopyText(post) {
-        const fullText = post.full_text || '';
+        const fullText = getPostPreviewText(post);
         const postUrl = resolvePostUrl(post);
         const author = post.display_name || post.username || post.user || '';
         const createdAt = (post.created_at || '').slice(0, 10);
@@ -761,64 +917,103 @@ ${item.body}
         }
     }
 
-    function renderPosts() {
-        // Update global tags first to ensure the list is fresh
-        updateGlobalTags();
-        
-        // 1. Filter Data
-        let filtered = getFilteredPosts();
-
-        // 2. Sort Data
+    function sortPosts(posts) {
+        const filtered = [...posts];
         if (currentSort === 'date') {
             filtered.sort((a, b) => b._dateObj - a._dateObj);
         } else if (currentSort === 'saved') {
-            filtered.sort((a, b) => b._seqId - a._seqId); // Descending ID
-            // If sequence_id is not reliable, use original index (but filter breaks original index access)
-            // Assuming sequence_id is reliable.
+            filtered.sort((a, b) => b._seqId - a._seqId);
         } else if (currentSort === 'favorites') {
             filtered.sort((a, b) => {
-                const aUrl = a.url;
-                const bUrl = b.url;
-                const aFav = favorites.has(aUrl);
-                const bFav = favorites.has(bUrl);
+                const aFav = favorites.has(resolvePostUrl(a));
+                const bFav = favorites.has(resolvePostUrl(b));
                 if (aFav && !bFav) return -1;
                 if (!aFav && bFav) return 1;
-                return b._dateObj - a._dateObj; // Secondary sort by date
+                return b._dateObj - a._dateObj;
             });
         }
+        return filtered;
+    }
 
-        // 3. UI Updates
-        if (filtered.length === 0) {
-            noResults.classList.remove('hidden');
-            masonryGrid.innerHTML = '';
-            return;
-        } else {
-            noResults.classList.add('hidden');
-        }
-
-        // 3. Masonry Distribution
+    function buildMasonryColumns() {
+        columns = [];
         let colCount = 1;
         const width = window.innerWidth;
         if (width >= 1536) colCount = 4;
         else if (width >= 1024) colCount = 3;
         else if (width >= 768) colCount = 2;
 
-        // Reset Grid structure
-        masonryGrid.innerHTML = '';
-        const columns = [];
-        for (let i = 0; i < colCount; i++) {
+        for (let i = 0; i < colCount; i += 1) {
             const colDiv = document.createElement('div');
             colDiv.className = 'masonry-col flex-1 flex flex-col gap-6 min-w-0';
             masonryGrid.appendChild(colDiv);
             columns.push(colDiv);
         }
+    }
 
-        // Distribute posts
-        filtered.forEach((post, index) => {
+    function appendCards(batch) {
+        batch.forEach((post) => {
             const card = createCard(post);
-            const colIndex = index % colCount;
-            columns[colIndex].appendChild(card);
+            const targetColumn = columns.reduce((best, column) => {
+                if (!best) return column;
+                return column.childElementCount < best.childElementCount ? column : best;
+            }, null);
+            if (targetColumn) {
+                targetColumn.appendChild(card);
+            }
         });
+    }
+
+    function ensureSentinel() {
+        if (_pendingPosts.length === 0) {
+            return;
+        }
+        if (!_ioSentinel) {
+            _ioSentinel = document.createElement('div');
+            _ioSentinel.className = 'load-sentinel';
+            _ioSentinel.style.cssText = 'width:100%;height:1px;';
+        }
+        masonryGrid.appendChild(_ioSentinel);
+        if (!_ioObserver) {
+            _ioObserver = new IntersectionObserver((entries) => {
+                if (!entries[0].isIntersecting || _pendingPosts.length === 0) {
+                    return;
+                }
+                appendCards(_pendingPosts.splice(0, 60));
+                if (_pendingPosts.length === 0 && _ioSentinel) {
+                    _ioObserver.unobserve(_ioSentinel);
+                    _ioSentinel.remove();
+                }
+            }, { rootMargin: '800px' });
+        }
+        _ioObserver.observe(_ioSentinel);
+    }
+
+    function renderPosts() {
+        updateGlobalTags();
+
+        const filtered = sortPosts(getFilteredPosts());
+
+        if (_ioObserver) {
+            _ioObserver.disconnect();
+        }
+        _ioSentinel = null;
+        _pendingPosts = [];
+
+        if (filtered.length === 0) {
+            noResults.classList.remove('hidden');
+            masonryGrid.innerHTML = '';
+            return;
+        }
+
+        noResults.classList.add('hidden');
+        masonryGrid.innerHTML = '';
+        buildMasonryColumns();
+
+        const firstBatch = filtered.slice(0, 60);
+        _pendingPosts = filtered.slice(60);
+        appendCards(firstBatch);
+        ensureSentinel();
     }
 
     function createCard(post) {
@@ -842,6 +1037,7 @@ ${item.body}
         } else if (platform.includes('twitter') || platform === 'x') {
             platformConfig = { icon: 'close', color: '#fff', name: 'X' }; // 'close' 아이콘을 X 대용으로 사용하거나 텍스트 처리
         }
+        article.dataset.platform = platform;
 
         // Date Logic
         const dateObj = post._dateObj;
@@ -891,7 +1087,7 @@ ${item.body}
                 <button class="copy-btn p-1.5 rounded-lg hover:bg-white/10 transition-colors text-gray-400 hover:text-primary" data-url="${escapeHtml(postUrl)}" title="Copy text">
                     <span class="material-symbols-outlined text-[20px]">content_copy</span>
                 </button>
-                <button class="favorite-btn p-1.5 rounded-lg hover:bg-white/10 transition-colors group/fav" data-url="${escapeHtml(postUrl)}">
+                <button class="favorite-btn p-1.5 rounded-lg hover:bg-white/10 transition-colors group/fav" data-url="${escapeHtml(postUrl)}" data-action="favorite">
                     <span class="material-symbols-outlined text-[20px] ${isFavorited ? 'text-yellow-400 fill-1' : 'text-gray-500 group-hover/fav:text-yellow-400'} transition-all">
                         ${isFavorited ? 'star' : 'star'}
                     </span>
@@ -973,10 +1169,11 @@ ${item.body}
         const copyBtn = header.querySelector('.copy-btn');
         copyBtn.addEventListener('click', async (e) => {
             e.stopPropagation();
-            const textToCopy = buildCopyText(post);
             const icon = copyBtn.querySelector('span');
 
             try {
+                const detailedPost = await ensurePostDetail(post);
+                const textToCopy = buildCopyText(detailedPost);
                 await navigator.clipboard.writeText(textToCopy);
                 
                 // Visual Feedback
@@ -1016,9 +1213,10 @@ ${item.body}
         // --- Content Text ---
         const content = document.createElement('div');
         if (isFolded) content.classList.add('hidden-content');
-        
-        const cleanText = escapeHtml(post.full_text || '').replace(/\n/g, '<br>');
-        const isLongText = (post.full_text || '').length > 150; // Simple length check
+
+        const previewText = getPostPreviewText(post);
+        const cleanText = escapeHtml(previewText).replace(/\n/g, '<br>');
+        const isLongText = getPostTextLength(post) > 150 || getPostTextLength(post) > previewText.length;
 
         content.innerHTML = `
             <div class="relative">
@@ -1036,8 +1234,13 @@ ${item.body}
             const paragraph = content.querySelector('p');
             const indicator = content.querySelector('.read-more-indicator');
             if (indicator) {
-                indicator.addEventListener('click', (e) => {
+                indicator.addEventListener('click', async (e) => {
                     e.stopPropagation();
+                    if (!post.full_text && post.sequence_id) {
+                        const detailedPost = await ensurePostDetail(post);
+                        const detailedText = escapeHtml(getPostPreviewText(detailedPost)).replace(/\n/g, '<br>');
+                        paragraph.innerHTML = detailedText;
+                    }
                     toggleExpandableText(paragraph, indicator);
                 });
             }
@@ -1045,24 +1248,12 @@ ${item.body}
 
         // --- Images ---
         let imageDiv = null;
-        const mediaList = post.media || [];
-        if (mediaList.length > 0) {
-            const originalUrl = mediaList[0];
-            const isVideo = originalUrl.toLowerCase().includes('.mp4');
-            
-            let imgUrl = `https://wsrv.nl/?url=${encodeURIComponent(originalUrl)}&output=webp`;
-            
-            // 1. Try Local Image first
-            if (post.local_images && post.local_images.length > 0) {
-                imgUrl = post.local_images[0];
-            } 
-            // 2. LinkedIn images (licdn.com) often work better directly without proxy
-            else if (originalUrl.includes('licdn.com')) {
-                imgUrl = originalUrl;
-            }
-            
-            const moreCount = mediaList.length - 1;
-            
+        const previewImgUrl = getBestImageSource(post);
+        const mediaCount = getPostMediaCount(post);
+        if (previewImgUrl) {
+            const isVideo = previewImgUrl.toLowerCase().includes('.mp4');
+            const moreCount = Math.max(0, mediaCount - 1);
+
             imageDiv = document.createElement('div');
             imageDiv.className = 'rounded-xl overflow-hidden relative group/image mt-2 border border-white/5 bg-black/20';
             if (isFolded) imageDiv.classList.add('hidden-content');
@@ -1093,15 +1284,17 @@ ${item.body}
                 // Set img attributes safely via DOM API (avoid inline onerror/XSS)
                 const imgEl = imageDiv.querySelector('img');
                 if (imgEl) {
-                    imgEl.src = imgUrl;
-                    imgEl.dataset.src = imgUrl;
-                    imgEl.dataset.original = originalUrl;
-                    imgEl.dataset.caption = `${post.display_name || post.username || 'Unknown'}: ${(post.full_text || '').slice(0,50)}...`;
+                    imgEl.loading = 'lazy';
+                    imgEl.decoding = 'async';
+                    imgEl.src = previewImgUrl;
+                    imgEl.dataset.src = previewImgUrl;
+                    imgEl.dataset.original = previewImgUrl;
+                    imgEl.dataset.caption = `${post.display_name || post.username || 'Unknown'}: ${getPostPreviewText(post).slice(0, 50)}...`;
 
                     // onerror fallback chain via addEventListener
                     const handleImgError = function() {
-                        if (this.src !== originalUrl) {
-                            this.src = originalUrl;
+                        if (this.src !== this.dataset.original) {
+                            this.src = this.dataset.original;
                         } else {
                             this.src = placeholderImg;
                             this.removeEventListener('error', handleImgError);
@@ -1110,8 +1303,13 @@ ${item.body}
                     imgEl.addEventListener('error', handleImgError);
 
                     // Image click handler (only for actual images)
-                    imgEl.addEventListener('click', (e) => {
-                        showModal(e.target.dataset.src, e.target.dataset.caption);
+                    imgEl.addEventListener('click', async (e) => {
+                        const detailedPost = await ensurePostDetail(post);
+                        const modalSrc = getBestImageSource(detailedPost, true) || e.target.dataset.src;
+                        e.target.dataset.src = modalSrc;
+                        e.target.dataset.original = modalSrc;
+                        e.target.dataset.caption = `${post.display_name || post.username || 'Unknown'}: ${getPostPreviewText(detailedPost).slice(0, 50)}...`;
+                        showModal(modalSrc, e.target.dataset.caption);
                     });
                 }
             }
@@ -1297,6 +1495,10 @@ ${item.body}
                 }
             });
         });
+
+        article.addEventListener('mouseenter', () => {
+            void prefetchDetail(post.sequence_id);
+        }, { once: true });
 
         return article;
     }
@@ -1545,7 +1747,7 @@ ${item.body}
                 <span class="material-symbols-outlined text-[20px] shrink-0" style="color: ${iconColor}">${icon}</span>
                 <div class="invisible-content">
                     <h4 class="truncate">${escapeHtml(post.display_name || post.username || post.user || 'Unknown')}</h4>
-                    <p class="truncate text-xs opacity-60">${escapeHtml((post.full_text || 'No content').slice(0, 100))}</p>
+                    <p class="truncate text-xs opacity-60">${escapeHtml((getPostPreviewText(post) || 'No content').slice(0, 100))}</p>
                 </div>
                 <button class="restore-btn hover:scale-105 active:scale-95 transition-all shrink-0" data-url="${escapeHtml(resolvedUrl)}">
                     Restore
