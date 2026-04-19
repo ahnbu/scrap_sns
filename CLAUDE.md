@@ -11,7 +11,7 @@ This file provides guidance to Claude Code when working in this repository.
 ### 런처와 서버
 
 ```bash
-npm run view     # 권장 진입. wscript sns_hub.vbs -> python server.py -> root index.html
+npm run view     # 권장 진입. wscript sns_hub.vbs -> http://localhost:5000/
 npm run start    # python server.py
 npm run stop     # stop_viewer.bat
 ```
@@ -42,7 +42,6 @@ python renew_twitter_auth.py
 
 ```bash
 node utils/query-sns.mjs --help
-python -m utils.build_data_js
 python migrate_schema.py --target "output_total/total_full_*.json"
 python migrate_schema.py --target "output_total/total_full_*.json" --apply
 python migrate_threads_domain.py --dry-run
@@ -65,8 +64,8 @@ pytest tests/smoke
 1. `thread_scrap.py`, `linkedin_scrap.py`, `twitter_scrap.py`가 플랫폼별 목록을 수집한다.
 2. Threads와 X는 `thread_scrap_single.py`, `twitter_scrap_single.py`가 상세 본문과 미디어를 보강한다.
 3. `total_scrap.py`가 최신 full 파일을 병합해 `output_total/total_full_YYYYMMDD.json`을 만든다.
-4. `python -m utils.build_data_js`가 필요 시 `web_viewer/data.js`를 재생성한다.
-5. 뷰어는 루트 `index.html`에서 `/api/latest-data`와 `web_viewer/data.js`를 읽어 렌더링한다.
+4. 뷰어는 `GET /api/posts`로 메타 목록을 읽고, `GET /api/post/<sequence_id>`로 상세 본문과 미디어를 lazy-load 한다.
+5. 검색은 `GET /api/search`, 자동 태그 일괄 적용은 `POST /api/auto-tag/apply`를 사용한다.
 
 ### 핵심 파일
 
@@ -74,7 +73,7 @@ pytest tests/smoke
 - `thread_scrap.py`, `thread_scrap_single.py`: Threads Producer/Consumer
 - `linkedin_scrap.py`: LinkedIn 저장 게시물 수집
 - `twitter_scrap.py`, `twitter_scrap_single.py`: X Producer/Consumer
-- `server.py`: `/api/status`, `/api/latest-data`, `/api/get-tags`, `/api/save-tags`, `/api/run-scrap`
+- `server.py`: `/api/status`, `/api/posts`, `/api/post/<sequence_id>`, `/api/search`, `/api/auto-tag/apply`, `/api/get-tags`, `/api/save-tags`, `/api/run-scrap`
 - `index.html`: 현재 shipped 뷰어 진입점
 - `web_viewer/script.js`: 렌더링, 태그, 자동 태그, URL 정규화
 - `utils/post_schema.py`: Post 표준 스키마 단일 진실 원천
@@ -114,6 +113,8 @@ STANDARD_FIELD_ORDER = [
 ## Viewer and Tag State
 
 - 태그/강조/자동 태그 규칙은 `localStorage`와 `web_viewer/sns_tags.json`을 함께 사용한다.
+- 뷰어 메타 목록은 `GET /api/posts`, 상세 본문과 미디어는 `GET /api/post/<sequence_id>`에서 읽는다.
+- 서버 검색은 `GET /api/search`, 자동 태그 일괄 적용은 `POST /api/auto-tag/apply`를 사용한다.
 - 레거시 태그 키는 `web_viewer/script.js`에서 `migrateLegacyTagKeys()`로 `.threads.com` canonical에 매핑한다.
 - 뷰어에서 스크래핑 실행 버튼을 누르면 `/api/run-scrap`가 `total_scrap.py`를 foreground로 실행하고 최근 로그를 반환한다.
 
@@ -126,8 +127,8 @@ output_twitter/python/
 output_total/
   total_full_YYYYMMDD.json
 web_viewer/
-  data.js
   sns_tags.json
+  images/
 ```
 
 ## Platform Notes

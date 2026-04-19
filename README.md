@@ -96,7 +96,7 @@ python inject_x_cookies.py
 npm run view
 ```
 
-이 흐름은 `sns_hub.vbs`가 `python server.py`를 백그라운드로 띄우고, `/api/status` 확인 후 레포 루트의 `index.html`을 엽니다. 현재 shipped HTML 진입점은 루트 `index.html`이며, `server.py`는 API 제공이 중심입니다.
+이 흐름은 `sns_hub.vbs`가 `/api/status`를 확인하고 필요 시 `python server.py`를 백그라운드로 띄운 뒤, `http://localhost:5000/`를 엽니다. 현재 shipped HTML 진입점은 루트 `index.html`이며, `server.py`는 API 제공이 중심입니다.
 
 서버만 따로 올리거나 종료하려면:
 
@@ -134,7 +134,8 @@ Threads consumer는 Playwright 없이 `AUTH_HOME/threads/storage_state.json` 쿠
 ## 웹 뷰어와 태그 저장
 
 - `index.html`은 `web_viewer/script.js`를 로드해 게시물을 렌더링합니다.
-- 최신 데이터는 `/api/latest-data` 또는 `web_viewer/data.js`를 통해 읽습니다.
+- 메타 목록은 `GET /api/posts`로 읽고, 상세 본문과 미디어는 `GET /api/post/<sequence_id>`로 lazy-load 합니다.
+- 검색은 `GET /api/search`, 자동 태그 일괄 적용은 `POST /api/auto-tag/apply`를 사용합니다.
 - 태그, 강조 토글, 자동 태그 규칙은 `localStorage`와 `web_viewer/sns_tags.json`을 함께 사용합니다.
 - 태그 동기화 API는 `/api/get-tags`, `/api/save-tags`입니다.
 - 스크래퍼 트리거와 서버 상태 확인은 `/api/run-scrap`, `/api/status`를 사용합니다.
@@ -183,12 +184,6 @@ node utils/query-sns.mjs --help
 ```powershell
 python migrate_schema.py --target "output_total/total_full_*.json"
 python migrate_threads_domain.py --dry-run
-```
-
-뷰어용 정적 데이터 재생성:
-
-```powershell
-python -m utils.build_data_js
 ```
 
 ## 테스트

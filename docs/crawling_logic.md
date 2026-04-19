@@ -12,8 +12,8 @@ created: "2026-04-17 13:25"
 1. 플랫폼별 목록 수집기가 저장 게시물 목록을 읽는다.
 2. Threads와 X는 상세 수집기로 본문, 미디어, thread context를 보강한다.
 3. `total_scrap.py`가 최신 full 파일을 병합해 통합본을 만든다.
-4. 필요 시 `python -m utils.build_data_js`가 `web_viewer/data.js`를 갱신한다.
-5. 뷰어는 루트 `index.html`에서 통합 데이터와 태그 상태를 로드한다.
+4. 뷰어는 `GET /api/posts`로 메타 목록을 읽고 `GET /api/post/<sequence_id>`로 상세 본문과 미디어를 lazy-load 한다.
+5. 검색과 자동 태그 일괄 적용은 각각 `GET /api/search`, `POST /api/auto-tag/apply`를 사용한다.
 
 ## 실행 엔트리
 
@@ -21,7 +21,7 @@ created: "2026-04-17 13:25"
 - 서버 단독 실행: `python server.py`
 - 전체 수집: `python total_scrap.py --mode update` 또는 `--mode all`
 
-`sns_hub.vbs`는 서버를 백그라운드로 띄운 뒤 `/api/status`를 확인하고 레포 루트 `index.html`을 연다. 현재 운영 흐름은 "로컬 HTML + API 서버" 조합이다.
+`sns_hub.vbs`는 `/api/status`를 확인하고 필요 시 서버를 백그라운드로 띄운 뒤 `http://localhost:5000/`를 연다. 현재 운영 흐름은 "HTTP 뷰어 + API 서버" 조합이다.
 
 인증 런타임 정본은 `C:\Users\ahnbu\.config\auth`다. 레포의 `auth/`는 이 경로를 가리키는 junction이며, consumer는 repo-local auth 자산을 직접 정본으로 보지 않는다.
 
@@ -75,7 +75,7 @@ consumer 토큰이 없으면 상세 수집은 건너뛰고, simple 기반 메타
 3. 플랫폼 내부 순서를 `platform_sequence_id`로 보존
 4. ID 기준 중복 제거
 5. 통합본을 `output_total/total_full_YYYYMMDD.json`에 저장
-6. 필요 시 Markdown 변환과 뷰어용 정적 데이터 갱신 수행
+6. Markdown 변환과 로컬 이미지 다운로드를 수행
 
 로그는 `logs/`에 플랫폼별로 남긴다.
 
@@ -98,8 +98,10 @@ consumer 토큰이 없으면 상세 수집은 건너뛰고, simple 기반 메타
 
 ### 게시물 데이터
 
-- `/api/latest-data`
-- `web_viewer/data.js`
+- `/api/posts`
+- `/api/post/<sequence_id>`
+- `/api/search`
+- `/api/auto-tag/apply`
 
 ### 태그와 UI 상태
 
@@ -115,12 +117,15 @@ consumer 토큰이 없으면 상세 수집은 건너뛰고, simple 기반 메타
 `server.py`는 현재 아래 API만 안정적인 public surface로 본다.
 
 - `/api/status`
-- `/api/latest-data`
+- `/api/posts`
+- `/api/post/<sequence_id>`
+- `/api/search`
+- `/api/auto-tag/apply`
 - `/api/get-tags`
 - `/api/save-tags`
 - `/api/run-scrap`
 
-서버 `/` 라우트는 `web_viewer/index.html`을 찾도록 작성돼 있지만, 현재 저장소의 shipped 진입 HTML은 루트 `index.html`이다. 따라서 운영 문서에서는 서버 루트보다 `sns_hub.vbs` 기반 진입을 기준으로 설명한다.
+서버 `/` 라우트와 `sns_hub.vbs`는 모두 루트 `index.html`을 기준으로 동작한다. 운영 문서도 동일하게 `http://localhost:5000/` 진입을 기준으로 설명한다.
 
 ## 검증 포인트
 

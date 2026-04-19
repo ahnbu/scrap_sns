@@ -20,7 +20,7 @@ created: "2026-04-17 13:20"
 - 오케스트레이터: `total_scrap.py`
 - 뷰어 진입: `wscript sns_hub.vbs` 또는 `SNS허브_바로가기.lnk`
 - API 서버: `server.py`
-- 뷰어 상태: `web_viewer/data.js`, `web_viewer/sns_tags.json`, browser `localStorage`
+- 뷰어 상태: `web_viewer/sns_tags.json`, browser `localStorage`
 
 현재 shipped HTML 진입점은 레포 루트 `index.html`이다. `server.py`는 `/api/*` 제공이 중심이며, `/` 라우트는 현재 로컬 런처 기준 진입점으로 가정하지 않는다.
 
@@ -36,7 +36,6 @@ created: "2026-04-17 13:20"
 - X 상세: `output_twitter/python/twitter_py_full_YYYYMMDD.json`
 - X 실패 이력: `scrap_failures_twitter.json`
 - 통합본: `output_total/total_full_YYYYMMDD.json`
-- 뷰어 정적 데이터: `web_viewer/data.js`
 - 태그 저장소: `web_viewer/sns_tags.json`
 - 브라우저 상태: `localStorage`
 - 인증 런타임: `C:\Users\ahnbu\.config\auth\`
@@ -147,11 +146,15 @@ REQUIRED_FIELDS = ["sns_platform", "username", "url", "created_at"]
 ## 뷰어와 태그 상태
 
 - `index.html`은 `web_viewer/script.js`를 로드한다.
-- 최신 게시물은 `/api/latest-data` 또는 `web_viewer/data.js`에서 읽는다.
+- 메타 목록은 `GET /api/posts`에서 읽고, 상세 본문과 미디어는 `GET /api/post/<sequence_id>`에서 lazy-load 한다.
+- 검색은 `GET /api/search`, 자동 태그 일괄 적용은 `POST /api/auto-tag/apply`를 사용한다.
 - 태그는 `localStorage`와 `web_viewer/sns_tags.json`에 함께 저장된다.
 - 서버 API:
   - `/api/status`
-  - `/api/latest-data`
+  - `/api/posts`
+  - `/api/post/<sequence_id>`
+  - `/api/search`
+  - `/api/auto-tag/apply`
   - `/api/get-tags`
   - `/api/save-tags`
   - `/api/run-scrap`
@@ -162,7 +165,6 @@ REQUIRED_FIELDS = ["sns_platform", "username", "url", "created_at"]
 - `python migrate_schema.py --target "output_total/total_full_*.json"`: 레거시 필드 구조 점검
 - `python migrate_schema.py --target "output_total/total_full_*.json" --apply`: 스키마 승격 적용
 - `python migrate_threads_domain.py --dry-run`: Threads 도메인 정규화 점검
-- `python -m utils.build_data_js`: 최신 통합본을 `web_viewer/data.js`로 재생성
 - `node utils/query-sns.mjs --help`: 통합 데이터/태그 조회 CLI
 
 ## 관련 테스트
