@@ -3,10 +3,12 @@ import sys
 import glob
 import json
 import re
+import gzip
 import logging
 import subprocess
 from flask import Flask, jsonify, send_from_directory, request, abort
 from flask_cors import CORS
+from utils.post_meta import META_FIELDS, build_post_meta, canonicalize_url
 
 # Define project root explicitly
 PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
@@ -18,6 +20,89 @@ app = Flask(__name__, static_folder=None)
 CORS(app)
 
 OUTPUT_TOTAL_DIR = os.path.join(PROJECT_ROOT, "output_total")
+_POSTS_CACHE = {
+    "path": None,
+    "mtime": None,
+    "size": None,
+    "posts_full": None,
+    "posts_meta": None,
+    "etag": None,
+}
+
+
+def _build_posts_response_etag(base_etag, request_path):
+    token = str(request_path or "").replace('"', "")
+    return f'{base_etag[:-1]}:{token}"'
+
+
+def _if_none_match_matches(etag):
+    if not etag:
+        return False
+    return request.if_none_match.contains_weak(etag.strip('"'))
+
+
+def _get_latest_total_file():
+    pattern = os.path.join(OUTPUT_TOTAL_DIR, "total_full_*.json")
+    files = [
+        path
+        for path in glob.glob(pattern)
+        if re.fullmatch(r"total_full_\d{8}\.json", os.path.basename(path))
+    ]
+    if not files:
+        raise FileNotFoundError("Data file not found")
+    files.sort(reverse=True)
+    return files[0]
+
+
+def _load_latest_posts():
+    latest_file = _get_latest_total_file()
+    stat = os.stat(latest_file)
+    mtime = stat.st_mtime_ns
+    size = stat.st_size
+
+    if (
+        _POSTS_CACHE["path"] == latest_file
+        and _POSTS_CACHE["mtime"] == mtime
+        and _POSTS_CACHE["size"] == size
+        and _POSTS_CACHE["posts_full"] is not None
+        and _POSTS_CACHE["posts_meta"] is not None
+    ):
+        return _POSTS_CACHE
+
+    with open(latest_file, 'r', encoding='utf-8-sig') as f:
+        data = json.load(f)
+
+    posts_full = []
+    posts_meta = []
+    for raw_post in data.get("posts", []):
+        meta = build_post_meta(raw_post)
+        meta["canonical_url"] = meta.get("canonical_url") or canonicalize_url(raw_post)
+        meta = {field: meta.get(field) for field in META_FIELDS}
+        searchable_parts = [
+            str(raw_post.get("full_text") or ""),
+            str(raw_post.get("display_name") or ""),
+            str(raw_post.get("username") or raw_post.get("user") or ""),
+        ]
+        posts_full.append(
+            {
+                **raw_post,
+                **meta,
+                "_searchable": " ".join(part for part in searchable_parts if part).lower(),
+            }
+        )
+        posts_meta.append(meta)
+
+    _POSTS_CACHE.update(
+        {
+            "path": latest_file,
+            "mtime": mtime,
+            "size": size,
+            "posts_full": posts_full,
+            "posts_meta": posts_meta,
+            "etag": f'"{mtime}-{size}"',
+        }
+    )
+    return _POSTS_CACHE
 
 @app.route('/api/get-tags', methods=['GET'])
 def get_tags():
@@ -53,20 +138,13 @@ def save_tags():
 @app.route('/api/latest-data', methods=['GET'])
 def get_latest_data():
     try:
-        pattern = os.path.join(OUTPUT_TOTAL_DIR, "total_full_*.json")
-        files = [
-            path
-            for path in glob.glob(pattern)
-            if re.fullmatch(r"total_full_\d{8}\.json", os.path.basename(path))
-        ]
-        if not files:
-            return jsonify({"error": "Data file not found"}), 404
-        files.sort(reverse=True)
-        latest_file = files[0]
+        latest_file = _get_latest_total_file()
         # Some files might have BOM
         with open(latest_file, 'r', encoding='utf-8-sig') as f:
             data = json.load(f)
         return jsonify(data)
+    except FileNotFoundError:
+        return jsonify({"error": "Data file not found"}), 404
     except Exception as e:
         logging.exception("Failed to load latest data")
         return jsonify({"error": "Failed to load data"}), 500
@@ -74,16 +152,11 @@ def get_latest_data():
 
 def _read_latest_metadata():
     """최신 total_full_*.json의 metadata를 읽는다. 파일이 없으면 None."""
-    pattern = os.path.join(OUTPUT_TOTAL_DIR, "total_full_*.json")
-    files = [
-        path
-        for path in glob.glob(pattern)
-        if re.fullmatch(r"total_full_\d{8}\.json", os.path.basename(path))
-    ]
-    if not files:
+    try:
+        latest_file = _get_latest_total_file()
+    except FileNotFoundError:
         return None
-    files.sort(reverse=True)
-    with open(files[0], 'r', encoding='utf-8-sig') as f:
+    with open(latest_file, 'r', encoding='utf-8-sig') as f:
         data = json.load(f)
     return data.get('metadata')
 
@@ -154,6 +227,83 @@ def run_scrap():
 @app.route('/api/status', methods=['GET'])
 def get_status():
     return jsonify({"status": "running", "message": "Flask server is active"})
+
+
+@app.route('/api/posts', methods=['GET'])
+def get_posts():
+    try:
+        cache = _load_latest_posts()
+        return jsonify({"posts": cache["posts_meta"]})
+    except FileNotFoundError:
+        return jsonify({"error": "Data file not found"}), 404
+    except Exception:
+        logging.exception("Failed to load posts")
+        return jsonify({"error": "Failed to load posts"}), 500
+
+
+@app.route('/api/post/<int:sequence_id>', methods=['GET'])
+def get_post_detail(sequence_id):
+    try:
+        cache = _load_latest_posts()
+        for post in cache["posts_full"]:
+            if post.get("sequence_id") == sequence_id:
+                return jsonify(
+                    {
+                        key: value
+                        for key, value in post.items()
+                        if key != "_searchable"
+                    }
+                )
+        return jsonify({"error": "Post not found"}), 404
+    except FileNotFoundError:
+        return jsonify({"error": "Data file not found"}), 404
+    except Exception:
+        logging.exception("Failed to load post detail")
+        return jsonify({"error": "Failed to load post"}), 500
+
+
+@app.after_request
+def add_json_response_headers(response):
+    if not response.is_json:
+        return response
+
+    if response.status_code != 200:
+        return response
+
+    request_path = request.path or ""
+    if request_path != "/api/posts" and not request_path.startswith("/api/post/"):
+        return response
+
+    try:
+        cache = _load_latest_posts()
+        etag = cache.get("etag")
+    except FileNotFoundError:
+        return response
+    except Exception:
+        logging.exception("Failed to load posts cache for response headers")
+        return response
+
+    if not etag:
+        return response
+
+    response_etag = _build_posts_response_etag(etag, request_path)
+    response.headers["ETag"] = etag
+    response.headers["Cache-Control"] = "private, max-age=0, must-revalidate"
+    response.headers["Vary"] = "Accept-Encoding"
+    response.headers["ETag"] = response_etag
+
+    if _if_none_match_matches(response_etag):
+        response.set_data(b"")
+        response.status_code = 304
+        return response
+
+    accepts_gzip = "gzip" in request.headers.get("Accept-Encoding", "").lower()
+    if accepts_gzip and len(response.get_data()) >= 512:
+        response.set_data(gzip.compress(response.get_data()))
+        response.headers["Content-Encoding"] = "gzip"
+        response.headers["Content-Length"] = str(len(response.get_data()))
+
+    return response
 
 
 def _send_root_index():
