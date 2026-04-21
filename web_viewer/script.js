@@ -1198,7 +1198,7 @@ ${item.body}
             if (indicator) {
                 indicator.addEventListener('click', async (e) => {
                     e.stopPropagation();
-                    if (!post.full_text && post.sequence_id) {
+                    if (post.sequence_id) {
                         const detailedPost = await ensurePostDetail(post);
                         const detailedText = escapeHtml(getPostPreviewText(detailedPost)).replace(/\n/g, '<br>');
                         paragraph.innerHTML = detailedText;
