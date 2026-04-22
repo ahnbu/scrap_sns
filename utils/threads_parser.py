@@ -3,6 +3,36 @@ from datetime import datetime
 from urllib.parse import urlparse
 from utils.common import format_timestamp
 
+
+def _extract_balanced_json_object(text, start_idx):
+    """Return a JSON object span while ignoring braces inside strings."""
+    brace_count = 0
+    in_string = False
+    escaped = False
+
+    for idx in range(start_idx, len(text)):
+        char = text[idx]
+        if in_string:
+            if escaped:
+                escaped = False
+            elif char == "\\":
+                escaped = True
+            elif char == '"':
+                in_string = False
+            continue
+
+        if char == '"':
+            in_string = True
+        elif char == "{":
+            brace_count += 1
+        elif char == "}":
+            brace_count -= 1
+            if brace_count == 0:
+                return text[start_idx : idx + 1]
+
+    return None
+
+
 def extract_json_from_html(html_content):
     """Robustly extracts specific JSON data from Threads HTML"""
     if "thread_items" not in html_content: return None
@@ -16,15 +46,10 @@ def extract_json_from_html(html_content):
     # Find the start of the JSON object (the first '{' after the marker)
     start_obj = html_content.find('{', idx + len(marker) - 5) # Look around "data" area
     if start_obj == -1: return None
-    
-    brace_count = 0
-    json_str = ""
-    for i in range(start_obj, len(html_content)):
-        char = html_content[i]
-        if char == '{': brace_count += 1
-        elif char == '}': brace_count -= 1
-        json_str += char
-        if brace_count == 0 and char == '}': break
+
+    json_str = _extract_balanced_json_object(html_content, start_obj)
+    if not json_str:
+        return None
     
     try: 
         # result is a dictionary that contains "data" or similar
@@ -67,7 +92,7 @@ def extract_posts_from_node(node, target_code, master_pk):
         return []
 
     root_post = posts_to_process[0]
-    root_user_pk = root_post.get("user", {}).get("pk")
+    root_user_pk = (root_post.get("user") or {}).get("pk")
     if not root_post.get("code"):
         return []
 
@@ -79,20 +104,24 @@ def extract_posts_from_node(node, target_code, master_pk):
         if not code:
             continue
 
-        current_user_pk = post.get("user", {}).get("pk")
+        current_user_pk = (post.get("user") or {}).get("pk")
         if master_pk and current_user_pk != master_pk:
             continue
         if root_user_pk and current_user_pk != root_user_pk:
             continue
 
         if i > 0:
-            text_post_app_info = post.get("text_post_app_info", {})
-            reply_to_author_id = text_post_app_info.get("reply_to_author", {}).get("id")
+            text_post_app_info = post.get("text_post_app_info") or {}
+            reply_to_author = text_post_app_info.get("reply_to_author") or {}
+            reply_to_author_id = reply_to_author.get("id")
             if reply_to_author_id and root_user_pk and reply_to_author_id != root_user_pk:
                 continue
 
-        user = post.get("user", {})
+        user = post.get("user") or {}
         username = user.get("username")
+        caption = post.get("caption") or {}
+        image_versions = post.get("image_versions2") or {}
+        candidates = image_versions.get("candidates") or []
         created_at, created_date = format_timestamp(post.get("taken_at"))
         extracted.append({
             "platform_id": code,
@@ -100,8 +129,8 @@ def extract_posts_from_node(node, target_code, master_pk):
             "root_code": target_code,
             "username": username,
             "display_name": user.get("full_name") or username,
-            "full_text": post.get("caption", {}).get("text", ""),
-            "media": [c.get("url") for c in post.get("image_versions2", {}).get("candidates", [])[:1] if c.get("url")],
+            "full_text": caption.get("text", ""),
+            "media": [c.get("url") for c in candidates[:1] if c.get("url")],
             "url": f"https://www.threads.com/@{username}/post/{code}" if username else "",
             "created_at": created_at,
             "date": created_date,

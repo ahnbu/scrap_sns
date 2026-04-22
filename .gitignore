@@ -42,6 +42,7 @@ logs/
 scripts/*
 !scripts/auth_runtime/
 !scripts/auth_runtime/*.py
+!scripts/recover_threads_detail_failures.py
 !scripts/sync_auth_runtime.ps1
 !scripts/validate_sns_hub_launcher.ps1
 

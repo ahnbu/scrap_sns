@@ -19,7 +19,7 @@ def convert_json_to_md(json_path, output_path=None):
         return None
         
     try:
-        with open(json_path, 'r', encoding='utf-8') as f:
+        with open(json_path, 'r', encoding='utf-8-sig') as f:
             data = json.load(f)
     except Exception as e:
         print(f"⚠️ [JSON2MD] JSON 로드 실패 ({json_path}): {e}")
