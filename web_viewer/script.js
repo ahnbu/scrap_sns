@@ -17,7 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const totalPostsCount = document.getElementById('totalPostsCount');
     const searchInput = document.getElementById('searchInput');
     const filterContainer = document.getElementById('filterContainer');
-    const refreshBtn = document.getElementById('refreshBtn');
 
     // Modal elements
     const imageModal = document.getElementById('imageModal');
@@ -148,11 +147,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    refreshBtn.addEventListener('click', fetchData);
-
     // Run Scraper functionality
     const runScrapBtn = document.getElementById('runScrapBtn');
-    const scrapDropdown = document.getElementById('scrapDropdown');
+    const runFullScrapBtn = document.getElementById('runFullScrapBtn');
+    let scrapRunInProgress = false;
     let authRequiredPanel = null;
     const authRenewalState = {};
     const authStatusTimers = new Map();
@@ -510,19 +508,8 @@ document.addEventListener('DOMContentLoaded', () => {
         renderAuthRequiredPanel();
     }
 
-    if (runScrapBtn && scrapDropdown) {
+    if (runScrapBtn) {
         ensureAuthRequiredPanel();
-
-        runScrapBtn.addEventListener('click', (e) => {
-            e.stopPropagation();
-            scrapDropdown.classList.toggle('hidden');
-        });
-
-        document.addEventListener('click', (e) => {
-            if (!runScrapBtn.contains(e.target) && !scrapDropdown.contains(e.target)) {
-                scrapDropdown.classList.add('hidden');
-            }
-        });
 
         authRequiredPanel.addEventListener('click', (e) => {
             e.stopPropagation();
@@ -549,86 +536,104 @@ document.addEventListener('DOMContentLoaded', () => {
             showAuthRequiredPanel(verifyPlatforms, { verifyMode: true });
         }
 
-        document.querySelectorAll('[data-mode]').forEach(btn => {
-            btn.addEventListener('click', async (e) => {
-                const mode = e.currentTarget.dataset.mode;
-                const modeLabel = mode === 'all' ? '전체 크롤링' : '최근 업데이트';
-                
-                if (!confirm(`${modeLabel}을 시작하시겠습니까? (이 작업은 수 분이 소요될 수 있습니다)`)) return;
+        const setScrapButtonsDisabled = (disabled) => {
+            [runScrapBtn, runFullScrapBtn].forEach(btn => {
+                if (!btn) return;
+                btn.disabled = disabled;
+                btn.classList.toggle('opacity-50', disabled);
+                btn.classList.toggle('cursor-not-allowed', disabled);
+            });
+        };
 
-                scrapDropdown.classList.add('hidden');
-                hideAuthRequiredPanel();
+        async function executeScrap(mode, triggerBtn) {
+            if (scrapRunInProgress) {
+                alert('이미 스크랩이 실행 중입니다.');
+                return;
+            }
 
-                // UI State: Loading
-                const originalContent = runScrapBtn.innerHTML;
-                runScrapBtn.disabled = true;
-                runScrapBtn.classList.add('opacity-50', 'cursor-not-allowed');
-                runScrapBtn.innerHTML = `
+            const modeLabel = mode === 'all' ? '전체 크롤링' : '최근 업데이트';
+            if (!confirm(`${modeLabel}을 시작하시겠습니까? (이 작업은 수 분이 소요될 수 있습니다)`)) return;
+
+            hideAuthRequiredPanel();
+            scrapRunInProgress = true;
+
+            const originalContent = triggerBtn ? triggerBtn.innerHTML : null;
+            setScrapButtonsDisabled(true);
+            if (triggerBtn) {
+                triggerBtn.innerHTML = `
                     <span class="material-symbols-outlined text-[20px] animate-spin text-primary">sync</span>
                     <span class="font-medium text-xs whitespace-nowrap">Running...</span>
                 `;
+            }
 
-                try {
-                    // First, check if server is running
-                    const statusCheck = await fetch('/api/status').catch(() => null);
-                    if (!statusCheck || !statusCheck.ok) {
-                        alert('Flask 서버가 실행되고 있지 않습니다. 터미널에서 "python server.py"를 실행해주세요.');
-                        return;
-                    }
-
-                    const response = await fetch('/api/run-scrap', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json'
-                        },
-                        body: JSON.stringify({ mode: mode })
-                    });
-                    const result = await response.json().catch(() => ({}));
-                    const authRequiredPlatforms = getAuthRequiredPlatforms(result);
-
-                    if (authRequiredPlatforms.length > 0) {
-                        showAuthRequiredPanel(authRequiredPlatforms);
-                    } else if (result.status === 'success') {
-                        const stats = result.stats || {
-                            total: 0,
-                            threads: 0,
-                            linkedin: 0,
-                            twitter: 0,
-                            total_count: 0,
-                            threads_count: 0,
-                            linkedin_count: 0,
-                            twitter_count: 0
-                        };
-                        let msg;
-                        if (mode === 'all') {
-                            msg = `전체 재수집 완료! (전체 ${stats.total_count}건)\n\n`
-                                + `쓰레드 — ${stats.threads_count}건\n`
-                                + `링크드인 — ${stats.linkedin_count}건\n`
-                                + `X — ${stats.twitter_count}건\n\n`
-                                + `데이터를 새로고침합니다.`;
-                        } else {
-                            msg = `스크래핑 완료! 총 ${stats.total}건 신규 추가 (전체 ${stats.total_count}건)\n\n`
-                                + `쓰레드 — ${stats.threads}건 추가 (전체 ${stats.threads_count}건)\n`
-                                + `링크드인 — ${stats.linkedin}건 추가 (전체 ${stats.linkedin_count}건)\n`
-                                + `X — ${stats.twitter}건 추가 (전체 ${stats.twitter_count}건)\n\n`
-                                + `데이터를 새로고침합니다.`;
-                        }
-                        alert(msg);
-                        fetchData(); // Refresh feed
-                    } else {
-                        alert(`에러 발생: ${result.message}`);
-                    }
-                } catch (error) {
-                    console.error('Scraping Error:', error);
-                    alert('서버와 통신 중 오류가 발생했습니다.');
-                } finally {
-                    // Restore UI State
-                    runScrapBtn.disabled = false;
-                    runScrapBtn.classList.remove('opacity-50', 'cursor-not-allowed');
-                    runScrapBtn.innerHTML = originalContent;
+            try {
+                const statusCheck = await fetch('/api/status').catch(() => null);
+                if (!statusCheck || !statusCheck.ok) {
+                    alert('Flask 서버가 실행되고 있지 않습니다. 터미널에서 "python server.py"를 실행해주세요.');
+                    return;
                 }
-            });
+
+                const response = await fetch('/api/run-scrap', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ mode })
+                });
+                const result = await response.json().catch(() => ({}));
+                const authRequiredPlatforms = getAuthRequiredPlatforms(result);
+
+                if (authRequiredPlatforms.length > 0) {
+                    showAuthRequiredPanel(authRequiredPlatforms);
+                } else if (result.status === 'success') {
+                    const stats = result.stats || {
+                        total: 0,
+                        threads: 0,
+                        linkedin: 0,
+                        twitter: 0,
+                        total_count: 0,
+                        threads_count: 0,
+                        linkedin_count: 0,
+                        twitter_count: 0
+                    };
+                    let msg;
+                    if (mode === 'all') {
+                        msg = `전체 재수집 완료! (전체 ${stats.total_count}건)\n\n`
+                            + `쓰레드 — ${stats.threads_count}건\n`
+                            + `링크드인 — ${stats.linkedin_count}건\n`
+                            + `X — ${stats.twitter_count}건\n\n`
+                            + `데이터를 새로고침합니다.`;
+                    } else {
+                        msg = `스크래핑 완료! 총 ${stats.total}건 신규 추가 (전체 ${stats.total_count}건)\n\n`
+                            + `쓰레드 — ${stats.threads}건 추가 (전체 ${stats.threads_count}건)\n`
+                            + `링크드인 — ${stats.linkedin}건 추가 (전체 ${stats.linkedin_count}건)\n`
+                            + `X — ${stats.twitter}건 추가 (전체 ${stats.twitter_count}건)\n\n`
+                            + `데이터를 새로고침합니다.`;
+                    }
+                    alert(msg);
+                    fetchData();
+                } else {
+                    alert(`에러 발생: ${result.message}`);
+                }
+            } catch (error) {
+                console.error('Scraping Error:', error);
+                alert('서버와 통신 중 오류가 발생했습니다.');
+            } finally {
+                scrapRunInProgress = false;
+                setScrapButtonsDisabled(false);
+                if (triggerBtn && originalContent !== null) {
+                    triggerBtn.innerHTML = originalContent;
+                }
+            }
+        }
+
+        runScrapBtn.addEventListener('click', () => {
+            executeScrap('update', runScrapBtn);
         });
+
+        if (runFullScrapBtn) {
+            runFullScrapBtn.addEventListener('click', () => {
+                executeScrap('all', runFullScrapBtn);
+            });
+        }
     }
 
     // Download Functionality
