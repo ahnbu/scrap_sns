@@ -154,6 +154,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const runScrapBtn = document.getElementById('runScrapBtn');
     const scrapDropdown = document.getElementById('scrapDropdown');
     let authRequiredPanel = null;
+    const authRenewalState = {};
+    const authStatusTimers = new Map();
+    const AUTH_STATUS_POLL_INTERVAL_MS = 1500;
+    const AUTH_STATUS_MAX_POLLS = 40;
 
     const authPlatformLabels = {
         linkedin: 'LinkedIn',
@@ -198,109 +202,312 @@ document.addEventListener('DOMContentLoaded', () => {
         return [...platforms].filter(platform => Object.prototype.hasOwnProperty.call(authPlatformLabels, platform));
     }
 
+    function isLocalAuthPanelVerifyAllowed() {
+        const host = window.location.hostname;
+        return host === '127.0.0.1' || host === 'localhost' || host === '::1' || host === '';
+    }
+
+    function getAuthPanelVerifyPlatforms() {
+        if (!isLocalAuthPanelVerifyAllowed()) return [];
+
+        const raw = new URLSearchParams(window.location.search).get('verify_auth_panel');
+        if (!raw) return [];
+        if (raw === '1' || raw.toLowerCase() === 'true') return ['linkedin'];
+
+        return raw
+            .split(/[,\s]+/)
+            .map(normalizeAuthPlatform)
+            .filter(platform => Object.prototype.hasOwnProperty.call(authPlatformLabels, platform));
+    }
+
     function ensureAuthRequiredPanel() {
         if (authRequiredPanel) return authRequiredPanel;
 
         authRequiredPanel = document.createElement('div');
         authRequiredPanel.id = 'authRequiredPanel';
         authRequiredPanel.className = [
-            'hidden absolute right-0 top-full mt-2 w-[min(92vw,360px)]',
-            'rounded-xl border border-amber-400/20 bg-[#1E1E24] shadow-xl',
-            'p-3 text-xs text-gray-300 z-30'
+            'hidden w-full border-t border-amber-400/20 bg-[#141417]/95',
+            'shadow-lg shadow-black/10'
         ].join(' ');
 
-        const anchor = runScrapBtn?.parentElement || runScrapBtn;
-        if (anchor) {
-            anchor.classList.add('relative');
-            anchor.appendChild(authRequiredPanel);
+        const header = document.querySelector('header');
+        if (header) {
+            header.appendChild(authRequiredPanel);
         }
 
         return authRequiredPanel;
     }
 
+    function clearAuthStatusTimer(platform) {
+        const timer = authStatusTimers.get(platform);
+        if (timer) {
+            window.clearTimeout(timer);
+            authStatusTimers.delete(platform);
+        }
+    }
+
+    function resetAuthRenewalState() {
+        Object.keys(authRenewalState).forEach(platform => {
+            clearAuthStatusTimer(platform);
+            delete authRenewalState[platform];
+        });
+    }
+
     function hideAuthRequiredPanel() {
         if (!authRequiredPanel) return;
+        resetAuthRenewalState();
         authRequiredPanel.classList.add('hidden');
         authRequiredPanel.innerHTML = '';
     }
 
-    async function postAuthAction(platform, action, button) {
-        const endpoint = action === 'start' ? '/api/auth/start' : '/api/auth/complete';
-        const originalText = button.textContent;
-
-        button.disabled = true;
-        button.classList.add('opacity-50', 'cursor-not-allowed');
-        button.textContent = action === 'start' ? '시작 중' : '확인 중';
-
-        try {
-            const response = await fetch(endpoint, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ platform })
-            });
-            const result = await response.json().catch(() => ({}));
-
-            if (!response.ok || result.status === 'error') {
-                alert(result.message || `${authPlatformLabels[platform]} 인증 요청에 실패했습니다.`);
-                return;
-            }
-
-            if (result.url) {
-                window.open(result.url, '_blank', 'noopener,noreferrer');
-            }
-
-            if (action === 'complete') {
-                button.closest('[data-auth-platform]')?.remove();
-                if (!authRequiredPanel?.querySelector('[data-auth-platform]')) {
-                    hideAuthRequiredPanel();
-                }
-            }
-
-            alert(result.message || `${authPlatformLabels[platform]} 인증 ${action === 'start' ? '갱신을 시작했습니다.' : '확인을 완료했습니다.'}`);
-        } catch (error) {
-            console.error('Auth Error:', error);
-            alert('인증 서버와 통신 중 오류가 발생했습니다.');
-        } finally {
-            button.disabled = false;
-            button.classList.remove('opacity-50', 'cursor-not-allowed');
-            button.textContent = originalText;
-        }
+    function removeAuthPlatform(platform) {
+        clearAuthStatusTimer(platform);
+        delete authRenewalState[platform];
+        renderAuthRequiredPanel();
     }
 
-    function showAuthRequiredPanel(platforms) {
-        if (platforms.length === 0) {
-            hideAuthRequiredPanel();
+    function updateAuthPlatformState(platform, patch) {
+        authRenewalState[platform] = {
+            status: 'required',
+            sessionId: '',
+            message: '인증 갱신이 필요합니다.',
+            pollCount: 0,
+            ...(authRenewalState[platform] || {}),
+            ...patch
+        };
+        renderAuthRequiredPanel();
+    }
+
+    function jobFromAuthResult(result) {
+        return result?.job || {};
+    }
+
+    function authStatusMessage(platform, state) {
+        if (state.message) return state.message;
+        if (state.status === 'starting') return '로그인 창을 여는 중입니다.';
+        if (state.status === 'waiting') return '브라우저에서 로그인한 뒤 완료 확인을 누르세요.';
+        if (state.status === 'complete_requested') return '인증 저장 여부를 확인하는 중입니다.';
+        if (state.status === 'failed') return '확인에 실패했습니다. 다시 시도하세요.';
+        return `${authPlatformLabels[platform]} 인증이 필요합니다.`;
+    }
+
+    function renderAuthRequiredPanel() {
+        const platforms = Object.keys(authRenewalState);
+        if (!authRequiredPanel || platforms.length === 0) {
+            if (authRequiredPanel) {
+                authRequiredPanel.classList.add('hidden');
+                authRequiredPanel.innerHTML = '';
+            }
             return;
         }
 
         const panel = ensureAuthRequiredPanel();
         panel.innerHTML = `
-            <div class="flex items-start gap-2 mb-3">
-                <span class="material-symbols-outlined text-[18px] text-amber-300 shrink-0">lock</span>
-                <div class="min-w-0">
-                    <p class="text-white font-semibold leading-tight">로그인이 필요합니다</p>
-                    <p class="text-[11px] text-gray-400 leading-snug mt-1">플랫폼 인증을 갱신한 뒤 다시 실행하세요.</p>
-                </div>
-            </div>
-            <div class="flex flex-col gap-2">
-                ${platforms.map(platform => `
-                    <div class="flex items-center gap-2 min-w-0" data-auth-platform="${platform}">
-                        <span class="min-w-0 flex-1 truncate text-gray-200">${authPlatformLabels[platform]}</span>
+            <div class="max-w-[1800px] mx-auto px-6 py-3">
+                <div class="rounded-xl border border-amber-400/20 bg-amber-400/5 px-4 py-3">
+                    <div class="flex items-start justify-between gap-3 mb-3">
+                        <div class="flex items-start gap-3 min-w-0">
+                            <span class="material-symbols-outlined text-[20px] text-amber-300 shrink-0">lock</span>
+                            <div class="min-w-0">
+                                <p class="text-sm font-semibold text-white leading-tight">로그인이 필요합니다</p>
+                                <p class="text-xs text-gray-400 mt-1 leading-snug">플랫폼 인증을 갱신하면 자동으로 완료 여부를 확인합니다.</p>
+                            </div>
+                        </div>
                         <button
                             type="button"
-                            class="auth-start-btn shrink-0 px-2.5 py-1.5 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 text-[11px] text-white whitespace-nowrap"
-                            data-platform="${platform}"
-                        >로그인</button>
-                        <button
-                            type="button"
-                            class="auth-complete-btn shrink-0 px-2.5 py-1.5 rounded-lg bg-primary hover:bg-primary-hover text-[11px] text-white whitespace-nowrap"
-                            data-platform="${platform}"
-                        >확인</button>
+                            class="auth-panel-close shrink-0 size-8 rounded-lg border border-white/10 bg-white/5 text-gray-300 hover:text-white hover:bg-white/10"
+                            data-auth-action="close-panel"
+                            title="닫기"
+                        >
+                            <span class="material-symbols-outlined text-[18px]">close</span>
+                        </button>
                     </div>
-                `).join('')}
+                    <div class="flex flex-col gap-2">
+                        ${platforms.map(platform => {
+                            const state = authRenewalState[platform];
+                            const startDisabled = ['starting', 'waiting', 'complete_requested'].includes(state.status);
+                            const completeDisabled = !state.sessionId || ['starting', 'complete_requested'].includes(state.status);
+                            const startLabel = state.status === 'starting' ? '여는 중' : '로그인 열기';
+                            const completeLabel = state.status === 'complete_requested' ? '확인 중' : '완료 확인';
+                            const rowTone = state.status === 'failed' ? 'border-red-400/30 bg-red-400/5' : 'border-white/10 bg-black/15';
+                            return `
+                                <div class="flex flex-col md:flex-row md:items-center gap-3 rounded-lg border ${rowTone} px-3 py-2" data-auth-platform="${platform}">
+                                    <div class="min-w-0 flex-1">
+                                        <p class="text-sm font-semibold text-white leading-tight">${authPlatformLabels[platform]}</p>
+                                        <p class="text-xs text-gray-400 leading-snug mt-1">${authStatusMessage(platform, state)}</p>
+                                    </div>
+                                    <div class="flex items-center gap-2 shrink-0">
+                                        <button
+                                            type="button"
+                                            class="auth-action-btn px-3 py-2 rounded-lg border border-white/10 bg-white/5 hover:bg-white/10 text-xs text-white whitespace-nowrap disabled:opacity-50 disabled:cursor-not-allowed"
+                                            data-auth-action="start"
+                                            data-platform="${platform}"
+                                            ${startDisabled ? 'disabled' : ''}
+                                        >${startLabel}</button>
+                                        <button
+                                            type="button"
+                                            class="auth-action-btn px-3 py-2 rounded-lg bg-primary hover:bg-primary-hover text-xs text-white whitespace-nowrap disabled:opacity-50 disabled:cursor-not-allowed"
+                                            data-auth-action="complete"
+                                            data-platform="${platform}"
+                                            ${completeDisabled ? 'disabled' : ''}
+                                        >${completeLabel}</button>
+                                    </div>
+                                </div>
+                            `;
+                        }).join('')}
+                    </div>
+                </div>
             </div>
         `;
         panel.classList.remove('hidden');
+    }
+
+    async function pollAuthStatus(platform) {
+        const state = authRenewalState[platform];
+        if (!state?.sessionId) return;
+
+        try {
+            const response = await fetch(`/api/auth/status?session_id=${encodeURIComponent(state.sessionId)}`);
+            const result = await response.json().catch(() => ({}));
+            const job = jobFromAuthResult(result);
+
+            if (response.ok && job.status === 'completed' && job.return_code === 0) {
+                removeAuthPlatform(platform);
+                return;
+            }
+
+            if (!response.ok || job.status === 'failed' || job.status === 'not_found') {
+                updateAuthPlatformState(platform, {
+                    status: 'failed',
+                    message: '인증 저장 확인에 실패했습니다. 다시 시도하세요.'
+                });
+                return;
+            }
+
+            const nextCount = (state.pollCount || 0) + 1;
+            if (nextCount >= AUTH_STATUS_MAX_POLLS) {
+                updateAuthPlatformState(platform, {
+                    status: 'failed',
+                    message: '확인 시간이 초과되었습니다. 다시 완료 확인을 눌러주세요.',
+                    pollCount: nextCount
+                });
+                return;
+            }
+
+            authRenewalState[platform] = {
+                ...state,
+                pollCount: nextCount
+            };
+            clearAuthStatusTimer(platform);
+            authStatusTimers.set(platform, window.setTimeout(() => {
+                void pollAuthStatus(platform);
+            }, AUTH_STATUS_POLL_INTERVAL_MS));
+        } catch (error) {
+            console.error('Auth Status Error:', error);
+            updateAuthPlatformState(platform, {
+                status: 'failed',
+                message: '인증 상태 확인 중 통신 오류가 발생했습니다.'
+            });
+        }
+    }
+
+    async function postAuthAction(platform, action) {
+        const endpoint = action === 'start' ? '/api/auth/start' : '/api/auth/complete';
+        const current = authRenewalState[platform] || {};
+        const payload = { platform };
+        if (current.sessionId) {
+            payload.session_id = current.sessionId;
+        }
+
+        updateAuthPlatformState(platform, {
+            status: action === 'start' ? 'starting' : 'complete_requested',
+            message: action === 'start' ? '로그인 창을 여는 중입니다.' : '인증 저장 여부를 확인하는 중입니다.'
+        });
+
+        try {
+            const response = await fetch(endpoint, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            });
+            const result = await response.json().catch(() => ({}));
+
+            if ((!response.ok || result.status === 'error') && response.status !== 409) {
+                updateAuthPlatformState(platform, {
+                    status: 'failed',
+                    message: result.message || '인증 요청에 실패했습니다.'
+                });
+                return;
+            }
+
+            const job = jobFromAuthResult(result);
+            const sessionId = job.session_id || current.sessionId || '';
+
+            if (action === 'start') {
+                updateAuthPlatformState(platform, {
+                    status: 'waiting',
+                    sessionId,
+                    message: '브라우저에서 로그인한 뒤 완료 확인을 누르세요.'
+                });
+                return;
+            }
+
+            updateAuthPlatformState(platform, {
+                status: 'complete_requested',
+                sessionId,
+                message: '인증 저장 여부를 확인하는 중입니다.',
+                pollCount: 0
+            });
+            clearAuthStatusTimer(platform);
+            void pollAuthStatus(platform);
+        } catch (error) {
+            console.error('Auth Error:', error);
+            updateAuthPlatformState(platform, {
+                status: 'failed',
+                message: '인증 서버와 통신 중 오류가 발생했습니다.'
+            });
+        }
+    }
+
+    function handleVerifyAuthAction(platform, action) {
+        const sessionId = `verify-${platform}`;
+        if (action === 'start') {
+            updateAuthPlatformState(platform, {
+                status: 'waiting',
+                sessionId,
+                message: 'UI 검증 모드입니다. 실제 로그인 창은 열지 않습니다.'
+            });
+            return;
+        }
+
+        updateAuthPlatformState(platform, {
+            status: 'complete_requested',
+            sessionId,
+            message: 'UI 검증 모드에서 완료 처리를 확인하는 중입니다.'
+        });
+        window.setTimeout(() => {
+            removeAuthPlatform(platform);
+        }, 300);
+    }
+
+    function showAuthRequiredPanel(platforms, options = {}) {
+        if (platforms.length === 0) {
+            hideAuthRequiredPanel();
+            return;
+        }
+
+        platforms.forEach(platform => {
+            if (!authRenewalState[platform]) {
+                updateAuthPlatformState(platform, {
+                    status: 'required',
+                    message: options.verifyMode
+                        ? 'UI 검증 모드입니다. 실제 스크랩/API 호출은 실행하지 않습니다.'
+                        : `${authPlatformLabels[platform]} 인증이 필요합니다.`,
+                    verifyMode: Boolean(options.verifyMode)
+                });
+            }
+        });
+        renderAuthRequiredPanel();
     }
 
     if (runScrapBtn && scrapDropdown) {
@@ -319,16 +526,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
         authRequiredPanel.addEventListener('click', (e) => {
             e.stopPropagation();
-            const startBtn = e.target.closest('.auth-start-btn');
-            const completeBtn = e.target.closest('.auth-complete-btn');
-            if (startBtn) {
-                void postAuthAction(startBtn.dataset.platform, 'start', startBtn);
+            const actionBtn = e.target.closest('[data-auth-action]');
+            if (!actionBtn) return;
+
+            const action = actionBtn.dataset.authAction;
+            const platform = actionBtn.dataset.platform;
+            if (action === 'close-panel') {
+                hideAuthRequiredPanel();
                 return;
             }
-            if (completeBtn) {
-                void postAuthAction(completeBtn.dataset.platform, 'complete', completeBtn);
+            if (action === 'start' || action === 'complete') {
+                if (authRenewalState[platform]?.verifyMode) {
+                    handleVerifyAuthAction(platform, action);
+                    return;
+                }
+                void postAuthAction(platform, action);
             }
         });
+
+        const verifyPlatforms = getAuthPanelVerifyPlatforms();
+        if (verifyPlatforms.length > 0) {
+            showAuthRequiredPanel(verifyPlatforms, { verifyMode: true });
+        }
 
         document.querySelectorAll('[data-mode]').forEach(btn => {
             btn.addEventListener('click', async (e) => {
