@@ -11,6 +11,7 @@ from playwright.sync_api import sync_playwright
 from utils.json_to_md import convert_json_to_md
 from utils.linkedin_parser import parse_linkedin_post, extract_urn_id
 from utils.auth_paths import linkedin_storage
+from utils.auth_status import exit_auth_required, is_orchestrated_run
 
 # --- 설정 ---
 TARGET_URL = "https://www.linkedin.com/my-items/saved-posts/"
@@ -104,6 +105,13 @@ class LinkedinScraper:
             print(f"   현재 URL: {page.url}")
             page.goto(LOGIN_URL)
             print("   로그인을 완료하고 '저장된 게시물' 목록이 보이면 엔터키를 눌러주세요.")
+            if is_orchestrated_run():
+                exit_auth_required(
+                    "linkedin",
+                    reason="login_required",
+                    current_url=page.url,
+                    auth_file=AUTH_FILE,
+                )
             if not sys.stdin.isatty():
                 print("❌ 비대화형 환경에서는 로그인을 완료할 수 없습니다. 대화형 터미널에서 실행하세요.")
                 sys.exit(1)

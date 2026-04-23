@@ -15,6 +15,7 @@ try:
 except ImportError:
     BeautifulSoup = None
 from utils.auth_paths import x_user_data
+from utils.auth_status import exit_auth_required, is_orchestrated_run
 
 # 환경 변수 로드
 load_dotenv('.env.local')
@@ -282,6 +283,14 @@ def main(args):
 
         if not page.query_selector('article[data-testid="tweet"]'):
             print("💡 로그인이 필요합니다. 브라우저에서 진행해주세요...", flush=True)
+            if is_orchestrated_run():
+                context.close()
+                exit_auth_required(
+                    "x",
+                    reason="login_required",
+                    current_url=page.url,
+                    auth_file=USER_DATA_DIR,
+                )
             page.wait_for_selector('article[data-testid="tweet"]', timeout=0)
 
         print("\n📜 [2단계] 스크롤 및 실시간 수집 시작", flush=True)

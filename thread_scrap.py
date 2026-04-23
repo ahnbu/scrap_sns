@@ -22,6 +22,7 @@ from dotenv import load_dotenv
 from utils.json_to_md import convert_json_to_md
 from utils.post_schema import normalize_post, validate_post
 from utils.auth_paths import threads_storage
+from utils.auth_status import exit_auth_required, is_orchestrated_run
 
 # 환경 변수 로드
 load_dotenv('.env.local')
@@ -209,6 +210,13 @@ def manage_login(context, page):
         print("🛑 [로그인 확인 필요]")
         print("   로그인을 완료하고 '저장됨' 페이지가 보이면 Enter를 누르세요.")
         print("="*60)
+        if is_orchestrated_run():
+            exit_auth_required(
+                "threads",
+                reason="login_required",
+                current_url=page.url,
+                auth_file=AUTH_FILE,
+            )
         if not sys.stdin.isatty():
             print("❌ 비대화형 환경에서는 로그인을 완료할 수 없습니다. 대화형 터미널에서 실행하세요.")
             sys.exit(1)

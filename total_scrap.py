@@ -12,6 +12,7 @@ import requests
 from datetime import datetime
 import io
 from utils.json_to_md import convert_json_to_md
+from utils.auth_status import AUTH_REQUIRED_EXIT_CODE
 
 # Windows 터미널 인코딩 문제 해결
 if sys.platform == 'win32':
@@ -29,6 +30,12 @@ WEB_IMAGE_PREFIX = "web_viewer/images"
 # 전역 프로세스 및 로그 파일 리스트 (시그널 핸들러에서 사용)
 running_processes = []
 opened_log_files = [] # (platform, file_handle)
+
+PLATFORM_KEYS = {
+    "Threads": "threads",
+    "LinkedIn": "linkedin",
+    "X/Twitter": "x",
+}
 
 def signal_handler(sig, frame):
     # 중복 호출 방지
@@ -189,6 +196,7 @@ def should_run_consumer(platform):
 
 def run_scrapers_in_parallel(mode='update'):
     print(f"🚀 플랫폼별 스크래퍼 병렬 실행 시작 (백그라운드 모드)... (모드: {mode})")
+    platform_results = {}
     
     # logs 디렉토리 생성
     LOG_DIR = "logs"
@@ -232,6 +240,7 @@ def run_scrapers_in_parallel(mode='update'):
         # 💡 [개선] 유니코드 인코딩 에러 방지를 위해 환경 변수 설정
         env = os.environ.copy()
         env["PYTHONIOENCODING"] = "utf-8"
+        env["SNS_ORCHESTRATED_RUN"] = "1"
 
         # cmd /c 를 사용하되 명령어가 여러 개일 때도 로그가 잘 남도록 함
         p = subprocess.Popen(
@@ -243,6 +252,12 @@ def run_scrapers_in_parallel(mode='update'):
             cwd=PROJECT_ROOT
         )
         running_processes.append((platform, p))
+        platform_key = PLATFORM_KEYS.get(platform, platform.lower())
+        platform_results[platform_key] = {
+            "status": "running",
+            "returncode": None,
+            "log": log_path,
+        }
         
     print(f"\n⏳ 총 {len(running_processes)}개의 백그라운드 프로세스가 완료되기를 기다리는 중...")
     print("   (실시간 진행 상황은 logs/ 폴더의 로그 파일을 통해 확인 가능합니다.)")
@@ -254,9 +269,17 @@ def run_scrapers_in_parallel(mode='update'):
             time.sleep(1) # 1초 간격으로 폴링 (Ctrl+C 신호를 받기 위함)
             
         for platform, p in running_processes:
+            platform_key = PLATFORM_KEYS.get(platform, platform.lower())
+            result = platform_results.setdefault(platform_key, {})
+            result["returncode"] = p.returncode
             if p.returncode == 0:
+                result["status"] = "ok"
                 print(f"   ✅ {platform} 수집 완료.")
+            elif p.returncode == AUTH_REQUIRED_EXIT_CODE:
+                result["status"] = "auth_required"
+                print(f"   🔐 {platform} 인증 필요. 최신 보유 데이터로 병합을 계속합니다.")
             else:
+                result["status"] = "failed"
                 print(f"   ❌ {platform} 종료 (반환 코드: {p.returncode}). logs/{platform.lower().replace('/', '_')}.log 확인 필요.")
 
     except KeyboardInterrupt:
@@ -274,6 +297,7 @@ def run_scrapers_in_parallel(mode='update'):
         except Exception: pass
 
     print("\n모든 플랫폼 스크래핑이 종료되었습니다.")
+    return platform_results
 
 
 def merge_results():
@@ -283,17 +307,25 @@ def merge_results():
     latest_linkedin = find_latest_full_file(OUTPUT_LINKEDIN_DIR, "linkedin_py_full_*.json")
     latest_twitter = find_latest_full_file(OUTPUT_TWITTER_DIR, "twitter_py_full_*.json")
     
-    if not latest_threads or not latest_linkedin:
-        print("❌ 필수 Full 파일을 찾을 수 없어 병합할 수 없습니다.")
+    if not latest_threads and not latest_linkedin and not latest_twitter:
+        print("❌ 병합 가능한 Full 파일을 찾을 수 없습니다.")
         return None, 0, 0, 0
 
-    print(f"   - Threads: {os.path.basename(latest_threads)}")
-    print(f"   - LinkedIn: {os.path.basename(latest_linkedin)}")
+    if latest_threads:
+        print(f"   - Threads: {os.path.basename(latest_threads)}")
+    else:
+        print("   - Threads: 최신 Full 파일 없음")
+    if latest_linkedin:
+        print(f"   - LinkedIn: {os.path.basename(latest_linkedin)}")
+    else:
+        print("   - LinkedIn: 최신 Full 파일 없음")
     if latest_twitter:
         print(f"   - X/Twitter: {os.path.basename(latest_twitter)}")
+    else:
+        print("   - X/Twitter: 최신 Full 파일 없음")
 
-    threads_data = load_json(latest_threads)
-    linkedin_data = load_json(latest_linkedin)
+    threads_data = load_json(latest_threads) if latest_threads else {}
+    linkedin_data = load_json(latest_linkedin) if latest_linkedin else {}
     twitter_data = load_json(latest_twitter) if latest_twitter else {}
     
     threads_posts = threads_data.get('posts', []) if isinstance(threads_data, dict) else threads_data
@@ -420,18 +452,31 @@ def download_images(posts):
 
 
 def run(mode='update'):
-    # 1. 병렬 실행 (새 창)
-    run_scrapers_in_parallel(mode=mode)
+    platform_results = {}
+    try:
+        # 1. 병렬 실행 (새 창)
+        platform_results = run_scrapers_in_parallel(mode=mode)
 
-    # 2. 결과 병합
-    merged_results_data = merge_results()
-    
-    if merged_results_data[0]:
-        posts, threads_count, linkedin_count, twitter_count = merged_results_data
-        # 3. 이미지 다운로드
-        download_images(posts)
-        # 4. 최종 저장 및 정규화
-        save_total(posts, threads_count, linkedin_count, twitter_count)
+        # 2. 결과 병합
+        merged_results_data = merge_results()
+
+        if merged_results_data[0]:
+            posts, threads_count, linkedin_count, twitter_count = merged_results_data
+            # 3. 이미지 다운로드
+            download_images(posts)
+            # 4. 최종 저장 및 정규화
+            save_total(posts, threads_count, linkedin_count, twitter_count)
+    finally:
+        auth_required = [
+            platform
+            for platform, result in platform_results.items()
+            if result.get("status") == "auth_required"
+        ]
+        summary = {
+            "platform_results": platform_results,
+            "auth_required": auth_required,
+        }
+        print(f"SNS_SCRAP_SUMMARY {json.dumps(summary, ensure_ascii=False)}", flush=True)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='통합 SNS 스크래퍼 (멀티 윈도우 병렬 모드)')

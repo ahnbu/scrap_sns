@@ -5,7 +5,12 @@ import json
 import re
 import gzip
 import logging
+import ipaddress
+import secrets
 import subprocess
+import tempfile
+import threading
+import time
 from flask import Flask, jsonify, send_from_directory, request, abort
 from flask_cors import CORS
 from utils.post_meta import META_FIELDS, build_post_meta, canonicalize_url
@@ -20,6 +25,11 @@ app = Flask(__name__, static_folder=None)
 CORS(app)
 
 OUTPUT_TOTAL_DIR = os.path.join(PROJECT_ROOT, "output_total")
+AUTH_RENEW_SCRIPT = os.path.join(PROJECT_ROOT, "scripts", "auth_runtime", "renew.py")
+AUTH_RUNTIME_DIR = os.path.join(tempfile.gettempdir(), "scrap_sns_auth_runtime")
+ALLOWED_AUTH_PLATFORMS = {"linkedin", "threads", "x"}
+AUTH_JOBS = {}
+AUTH_JOBS_LOCK = threading.Lock()
 _POSTS_CACHE = {
     "path": None,
     "mtime": None,
@@ -28,6 +38,58 @@ _POSTS_CACHE = {
     "posts_meta": None,
     "etag": None,
 }
+
+
+def _is_local_request():
+    remote_addr = request.remote_addr or ""
+    try:
+        return ipaddress.ip_address(remote_addr).is_loopback
+    except ValueError:
+        return remote_addr in {"localhost"}
+
+
+def _require_local_request():
+    if not _is_local_request():
+        abort(403)
+
+
+def _auth_signal_path(session_id):
+    safe_id = re.sub(r"[^A-Za-z0-9_-]", "", str(session_id or ""))
+    return os.path.join(AUTH_RUNTIME_DIR, f"{safe_id}.complete")
+
+
+def _public_auth_job(job):
+    process = job.get("process")
+    return_code = process.poll() if process else job.get("return_code")
+    if return_code is None:
+        status = "running"
+    elif job.get("completed_requested"):
+        status = "completed" if return_code == 0 else "failed"
+    else:
+        status = "exited" if return_code == 0 else "failed"
+
+    return {
+        "session_id": job.get("session_id"),
+        "platform": job.get("platform"),
+        "status": status,
+        "return_code": return_code,
+        "started_at": job.get("started_at"),
+        "completed_requested": bool(job.get("completed_requested")),
+    }
+
+
+def _prune_auth_jobs():
+    stale_sessions = []
+    now = time.time()
+    for session_id, job in AUTH_JOBS.items():
+        process = job.get("process")
+        if process and process.poll() is not None:
+            job["return_code"] = process.returncode
+        if job.get("return_code") is not None and now - job.get("started_at", now) > 3600:
+            stale_sessions.append(session_id)
+
+    for session_id in stale_sessions:
+        AUTH_JOBS.pop(session_id, None)
 
 
 def _normalize_platform_filter(raw):
@@ -77,6 +139,77 @@ def _sort_search_matches(posts, sort):
         ),
         reverse=(sort_value != "oldest"),
     )
+
+
+def _parse_scrap_summary(lines):
+    pattern = re.compile(r"SNS_SCRAP_SUMMARY\s*[:=]?\s*(\{.*\})\s*$")
+    for line in reversed(lines):
+        match = pattern.search(str(line or "").strip())
+        if not match:
+            continue
+        try:
+            summary = json.loads(match.group(1))
+        except json.JSONDecodeError:
+            return None
+        if not isinstance(summary, dict):
+            return None
+        return summary
+    return None
+
+
+def _canonical_auth_platform(value):
+    platform = str(value or "").strip().lower()
+    if platform in {"threads", "thread"}:
+        return "threads"
+    if platform in {"linkedin", "linked_in"}:
+        return "linkedin"
+    if platform in {"x", "twitter", "x/twitter", "x_twitter"}:
+        return "x"
+    return ""
+
+
+def _normalize_scrap_summary(summary):
+    if not isinstance(summary, dict):
+        return {"auth_required": [], "platform_results": {}}
+
+    platform_results = {}
+    for raw_platform, raw_result in (summary.get("platform_results") or {}).items():
+        platform = _canonical_auth_platform(raw_platform)
+        if not platform:
+            continue
+        if isinstance(raw_result, dict):
+            platform_results[platform] = raw_result
+        else:
+            platform_results[platform] = {"status": str(raw_result)}
+
+    auth_required = []
+    raw_auth_required = summary.get("auth_required")
+    if isinstance(raw_auth_required, list):
+        auth_required.extend(raw_auth_required)
+    elif isinstance(raw_auth_required, dict):
+        auth_required.extend(
+            platform for platform, required in raw_auth_required.items() if required
+        )
+    elif isinstance(raw_auth_required, str):
+        auth_required.append(raw_auth_required)
+
+    for platform, result in platform_results.items():
+        status = str(result.get("status") or result.get("result") or "").lower()
+        if result.get("auth_required") or "auth" in status:
+            auth_required.append(platform)
+
+    normalized_auth_required = []
+    seen = set()
+    for raw_platform in auth_required:
+        platform = _canonical_auth_platform(raw_platform)
+        if platform and platform not in seen:
+            normalized_auth_required.append(platform)
+            seen.add(platform)
+
+    return {
+        "auth_required": normalized_auth_required,
+        "platform_results": platform_results,
+    }
 
 
 def _request_cache_token():
@@ -279,15 +412,133 @@ def run_scrap():
             'linkedin_count': after_counts['linkedin'],
             'twitter_count': after_counts['twitter'],
         }
+        summary = _normalize_scrap_summary(_parse_scrap_summary(full_output))
         return jsonify({
             "status": "success",
             "message": "Scraping finished",
             "output": stdout_val,
-            "stats": stats
+            "stats": stats,
+            "auth_required": summary["auth_required"],
+            "platform_results": summary["platform_results"],
         })
     except Exception as e:
         logging.exception("Failed to run scraping")
         return jsonify({"status": "error", "message": "Scraping failed"}), 500
+
+
+@app.route('/api/auth/start', methods=['POST'])
+def start_auth():
+    _require_local_request()
+    payload = request.get_json(silent=True) or {}
+    platform = str(payload.get("platform") or "").strip().lower()
+    if platform not in ALLOWED_AUTH_PLATFORMS:
+        return jsonify({"status": "error", "message": "Invalid platform"}), 400
+    if not os.path.exists(AUTH_RENEW_SCRIPT):
+        return jsonify({"status": "error", "message": "Renew script not found"}), 404
+
+    with AUTH_JOBS_LOCK:
+        _prune_auth_jobs()
+        for job in AUTH_JOBS.values():
+            process = job.get("process")
+            if job.get("platform") == platform and process and process.poll() is None:
+                return jsonify({
+                    "status": "error",
+                    "message": "Auth renewal already running",
+                    "job": _public_auth_job(job),
+                }), 409
+
+        os.makedirs(AUTH_RUNTIME_DIR, exist_ok=True)
+        session_id = secrets.token_urlsafe(12)
+        signal_path = _auth_signal_path(session_id)
+        env = os.environ.copy()
+        env["PYTHONIOENCODING"] = "utf-8"
+        process = subprocess.Popen(
+            [
+                sys.executable,
+                "-u",
+                AUTH_RENEW_SCRIPT,
+                "--web",
+                "--session-id",
+                session_id,
+                "--signal-dir",
+                AUTH_RUNTIME_DIR,
+                platform,
+            ],
+            cwd=PROJECT_ROOT,
+            stdin=subprocess.DEVNULL,
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+            env=env,
+        )
+        job = {
+            "session_id": session_id,
+            "platform": platform,
+            "process": process,
+            "started_at": time.time(),
+            "completed_requested": False,
+            "signal_path": signal_path,
+            "return_code": None,
+        }
+        AUTH_JOBS[session_id] = job
+
+    return jsonify({"status": "started", "job": _public_auth_job(job)})
+
+
+@app.route('/api/auth/status', methods=['GET'])
+def auth_status():
+    _require_local_request()
+    session_id = str(request.args.get("session_id") or "").strip()
+    platform = str(request.args.get("platform") or "").strip().lower()
+    if platform and platform not in ALLOWED_AUTH_PLATFORMS:
+        return jsonify({"status": "error", "message": "Invalid platform"}), 400
+
+    with AUTH_JOBS_LOCK:
+        _prune_auth_jobs()
+        if session_id:
+            job = AUTH_JOBS.get(session_id)
+            if not job:
+                return jsonify({"status": "not_found"}), 404
+            return jsonify({"status": "ok", "job": _public_auth_job(job)})
+
+        jobs = [
+            _public_auth_job(job)
+            for job in AUTH_JOBS.values()
+            if not platform or job.get("platform") == platform
+        ]
+
+    return jsonify({"status": "ok", "jobs": jobs})
+
+
+@app.route('/api/auth/complete', methods=['POST'])
+def complete_auth():
+    _require_local_request()
+    payload = request.get_json(silent=True) or {}
+    session_id = str(payload.get("session_id") or "").strip()
+    platform = str(payload.get("platform") or "").strip().lower()
+    if platform and platform not in ALLOWED_AUTH_PLATFORMS:
+        return jsonify({"status": "error", "message": "Invalid platform"}), 400
+
+    with AUTH_JOBS_LOCK:
+        _prune_auth_jobs()
+        job = AUTH_JOBS.get(session_id) if session_id else None
+        if not job and platform:
+            for candidate in AUTH_JOBS.values():
+                process = candidate.get("process")
+                if candidate.get("platform") == platform and process and process.poll() is None:
+                    job = candidate
+                    break
+        if not job:
+            return jsonify({"status": "not_found"}), 404
+        process = job.get("process")
+        if not process or process.poll() is not None:
+            job["return_code"] = process.returncode if process else job.get("return_code")
+            return jsonify({"status": "error", "message": "Auth renewal is not running", "job": _public_auth_job(job)}), 409
+
+        with open(job["signal_path"], "w", encoding="utf-8") as file:
+            json.dump({"complete": True, "at": time.time()}, file)
+        job["completed_requested"] = True
+
+    return jsonify({"status": "complete_requested", "job": _public_auth_job(job)})
 
 @app.route('/api/status', methods=['GET'])
 def get_status():
