@@ -1,0 +1,254 @@
+{
+  "data": {
+    "data": {
+      "$recipeTypes": [
+        "com.linkedin.fdc08497f0c187a569384c6f043ad3ce"
+      ],
+      "messagingDashAffiliatedMailboxesAll": {
+        "$recipeTypes": [
+          "com.linkedin.443efd0179bf33df1a78fe9ff29fae07"
+        ],
+        "elements": [
+          {
+            "mailbox": {
+              "pageMailbox": {
+                "pageMailboxes": [
+                  {
+                    "unreadCount": 0,
+                    "*pageMailbox": "urn:li:fsd_pageMailbox:84427114",
+                    "$recipeTypes": [
+                      "com.linkedin.06ab33a3929ea1868aa7a1f1d999a6c8"
+                    ],
+                    "$type": "com.linkedin.voyager.dash.messaging.PageMailboxBadge"
+                  }
+                ],
+                "aggregatedUnreadCount": 0,
+                "$recipeTypes": [
+                  "com.linkedin.c1921083b302aa6085947e239e5ff4ff"
+                ],
+                "$type": "com.linkedin.voyager.dash.messaging.PageMailboxesBadge"
+              },
+              "recruiter": null,
+              "sales": null
+            },
+            "$recipeTypes": [
+              "com.linkedin.75d428cc927cf718962414914d125dd9"
+            ],
+            "$type": "com.linkedin.voyager.dash.messaging.AffiliatedMailbox"
+          }
+        ],
+        "$type": "com.linkedin.restli.common.CollectionResponse"
+      },
+      "$type": "com.linkedin.fdc08497f0c187a569384c6f043ad3ce"
+    },
+    "extensions": {
+      "webMetadata": {}
+    }
+  },
+  "meta": {
+    "microSchema": {
+      "isGraphQL": true,
+      "version": "2.1",
+      "types": {
+        "com.linkedin.443efd0179bf33df1a78fe9ff29fae07": {
+          "fields": {
+            "elements": {
+              "type": {
+                "array": "com.linkedin.75d428cc927cf718962414914d125dd9"
+              }
+            }
+          },
+          "baseType": "com.linkedin.restli.common.CollectionResponse"
+        },
+        "com.linkedin.06ab33a3929ea1868aa7a1f1d999a6c8": {
+          "fields": {
+            "pageMailbox": {
+              "resolvedFrom": "pageMailboxUrn",
+              "type": "com.linkedin.b367174ecdbc48b36bb4c73a7df32c42"
+            },
+            "unreadCount": {
+              "type": "int"
+            },
+            "pageMailboxUrn": {
+              "type": "string"
+            }
+          },
+          "baseType": "com.linkedin.voyager.dash.messaging.PageMailboxBadge"
+        },
+        "com.linkedin.c1921083b302aa6085947e239e5ff4ff": {
+          "fields": {
+            "aggregatedUnreadCount": {
+              "type": "int"
+            },
+            "pageMailboxes": {
+              "type": {
+                "array": "com.linkedin.06ab33a3929ea1868aa7a1f1d999a6c8"
+              }
+            }
+          },
+          "baseType": "com.linkedin.voyager.dash.messaging.PageMailboxesBadge"
+        },
+        "com.linkedin.66221a223b2f1f38e5d77cd4afacbe40": {
+          "fields": {
+            "width": {
+              "type": "int"
+            },
+            "fileIdentifyingUrlPathSegment": {
+              "type": "string"
+            },
+            "expiresAt": {
+              "type": "com.linkedin.common.Time"
+            },
+            "height": {
+              "type": "int"
+            }
+          },
+          "baseType": "com.linkedin.common.VectorArtifact"
+        },
+        "com.linkedin.75d428cc927cf718962414914d125dd9": {
+          "fields": {
+            "mailboxUnion": {
+              "type": {
+                "union": {
+                  "recruiter": "com.linkedin.8c523f3e21dd33e52190bdf038542671",
+                  "pageMailbox": "com.linkedin.c1921083b302aa6085947e239e5ff4ff",
+                  "sales": "com.linkedin.c79281717340709ca0c6ff2ce266df59"
+                }
+              }
+            },
+            "mailbox": {
+              "derivedFrom": "mailboxUnion",
+              "type": {
+                "union": {
+                  "recruiter": "com.linkedin.8c523f3e21dd33e52190bdf038542671",
+                  "pageMailbox": "com.linkedin.c1921083b302aa6085947e239e5ff4ff",
+                  "sales": "com.linkedin.c79281717340709ca0c6ff2ce266df59"
+                }
+              }
+            }
+          },
+          "baseType": "com.linkedin.voyager.dash.messaging.AffiliatedMailbox"
+        },
+        "com.linkedin.255f646d1ad4e933086c68f924638c0e": {
+          "fields": {
+            "attribution": {
+              "type": "string"
+            },
+            "rootUrl": {
+              "type": "string"
+            },
+            "artifacts": {
+              "type": {
+                "array": "com.linkedin.66221a223b2f1f38e5d77cd4afacbe40"
+              }
+            }
+          },
+          "baseType": "com.linkedin.common.VectorImage"
+        },
+        "com.linkedin.8c523f3e21dd33e52190bdf038542671": {
+          "fields": {
+            "headline": {
+              "type": "string"
+            },
+            "unreadCountTotal": {
+              "type": "int"
+            }
+          },
+          "baseType": "com.linkedin.voyager.dash.messaging.RecruiterMailbox"
+        },
+        "com.linkedin.b367174ecdbc48b36bb4c73a7df32c42": {
+          "fields": {
+            "ownerOrganization": {
+              "resolvedFrom": "ownerOrganizationUnion",
+              "type": {
+                "union": {
+                  "company": "com.linkedin.365d462519398e1175ef2685e40f6109"
+                }
+              }
+            },
+            "messagingEnabled": {
+              "type": "boolean"
+            },
+            "ownerOrganizationUnion": {
+              "type": {
+                "union": {
+                  "company": "string"
+                }
+              }
+            },
+            "entityUrn": {
+              "type": "com.linkedin.voyager.dash.common.PageMailboxUrn"
+            }
+          },
+          "baseType": "com.linkedin.voyager.dash.organization.PageMailbox"
+        },
+        "com.linkedin.365d462519398e1175ef2685e40f6109": {
+          "fields": {
+            "name": {
+              "type": "string"
+            },
+            "logo": {
+              "type": {
+                "union": {
+                  "url": "com.linkedin.common.Url",
+                  "vectorImage": "com.linkedin.255f646d1ad4e933086c68f924638c0e"
+                }
+              }
+            },
+            "logoResolutionResult": {
+              "derivedFrom": "logo",
+              "type": {
+                "union": {
+                  "url": "com.linkedin.common.Url",
+                  "vectorImage": "com.linkedin.255f646d1ad4e933086c68f924638c0e"
+                }
+              }
+            },
+            "entityUrn": {
+              "type": "com.linkedin.voyager.dash.common.CompanyUrn"
+            }
+          },
+          "baseType": "com.linkedin.voyager.dash.organization.Company"
+        },
+        "com.linkedin.c79281717340709ca0c6ff2ce266df59": {
+          "fields": {
+            "headline": {
+              "type": "string"
+            }
+          },
+          "baseType": "com.linkedin.voyager.dash.messaging.SalesNavigatorMailbox"
+        },
+        "com.linkedin.fdc08497f0c187a569384c6f043ad3ce": {
+          "fields": {
+            "messagingDashAffiliatedMailboxesAll": {
+              "type": "com.linkedin.443efd0179bf33df1a78fe9ff29fae07"
+            }
+          },
+          "baseType": "com.linkedin.graphql.Query"
+        }
+      }
+    }
+  },
+  "included": [
+    {
+      "entityUrn": "urn:li:fsd_company:112693028",
+      "name": "플래닝하이",
+      "logoResolutionResult": null,
+      "$recipeTypes": [
+        "com.linkedin.365d462519398e1175ef2685e40f6109"
+      ],
+      "$type": "com.linkedin.voyager.dash.organization.Company"
+    },
+    {
+      "ownerOrganization": {
+        "*company": "urn:li:fsd_company:112693028"
+      },
+      "entityUrn": "urn:li:fsd_pageMailbox:84427114",
+      "messagingEnabled": true,
+      "$recipeTypes": [
+        "com.linkedin.b367174ecdbc48b36bb4c73a7df32c42"
+      ],
+      "$type": "com.linkedin.voyager.dash.organization.PageMailbox"
+    }
+  ]
+}
