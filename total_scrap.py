@@ -7,6 +7,8 @@ import glob
 import json
 import argparse
 import signal
+import hashlib
+import requests
 from datetime import datetime
 import io
 from utils.json_to_md import convert_json_to_md
@@ -16,10 +18,13 @@ if sys.platform == 'win32':
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
     sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8', errors='replace')
 
-OUTPUT_THREADS_DIR = "output_threads/python"
-OUTPUT_LINKEDIN_DIR = "output_linkedin/python"
-OUTPUT_TWITTER_DIR = "output_twitter/python"
-OUTPUT_TOTAL_DIR = "output_total"
+PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
+OUTPUT_THREADS_DIR = os.path.join(PROJECT_ROOT, "output_threads", "python")
+OUTPUT_LINKEDIN_DIR = os.path.join(PROJECT_ROOT, "output_linkedin", "python")
+OUTPUT_TWITTER_DIR = os.path.join(PROJECT_ROOT, "output_twitter", "python")
+OUTPUT_TOTAL_DIR = os.path.join(PROJECT_ROOT, "output_total")
+WEB_IMAGE_DIR = os.path.join(PROJECT_ROOT, "web_viewer", "images")
+WEB_IMAGE_PREFIX = "web_viewer/images"
 
 # 전역 프로세스 및 로그 파일 리스트 (시그널 핸들러에서 사용)
 running_processes = []
@@ -64,6 +69,74 @@ def find_latest_full_file(directory, pattern):
     if not files: return None
     files.sort(reverse=True)
     return files[0]
+
+
+def get_media_extension(img_url):
+    lower_url = str(img_url).lower()
+    if '.png' in lower_url:
+        return '.png'
+    if '.webp' in lower_url:
+        return '.webp'
+    return '.jpg'
+
+
+def get_local_image_paths(img_url):
+    file_hash = hashlib.md5(str(img_url).encode('utf-8')).hexdigest()
+    filename = f"{file_hash}{get_media_extension(img_url)}"
+    return os.path.join(WEB_IMAGE_DIR, filename), f"{WEB_IMAGE_PREFIX}/{filename}"
+
+
+def web_image_exists(web_path):
+    if not web_path:
+        return False
+    normalized = str(web_path).replace('/', os.sep)
+    return os.path.exists(os.path.join(PROJECT_ROOT, normalized))
+
+
+def collect_preserved_local_images():
+    preserved = {}
+    pattern = os.path.join(OUTPUT_TOTAL_DIR, "total_full_*.json")
+    for total_path in sorted(glob.glob(pattern), reverse=True):
+        if not os.path.basename(total_path).startswith("total_full_"):
+            continue
+        data = load_json(total_path, {})
+        posts = data.get('posts', []) if isinstance(data, dict) else []
+        for post in posts:
+            media_list = post.get('media') or []
+            local_images = post.get('local_images') or []
+            for index, img_url in enumerate(media_list):
+                if index >= len(local_images):
+                    continue
+                web_path = local_images[index]
+                if img_url and web_image_exists(web_path) and img_url not in preserved:
+                    preserved[img_url] = web_path
+    return preserved
+
+
+def validate_local_image_links(posts):
+    missing = []
+    for post in posts:
+        local_images = set(post.get('local_images') or [])
+        for img_url in post.get('media', []) or []:
+            if '.mp4' in str(img_url).lower():
+                continue
+            fs_path, web_path = get_local_image_paths(img_url)
+            if os.path.exists(fs_path) and web_path not in local_images:
+                missing.append({
+                    "code": post.get('code') or post.get('platform_id') or post.get('url'),
+                    "image": web_path,
+                })
+                if len(missing) >= 5:
+                    break
+        if len(missing) >= 5:
+            break
+
+    if missing:
+        examples = ", ".join(f"{item['code']}->{item['image']}" for item in missing)
+        raise RuntimeError(
+            "local_images validation failed: existing local files are not linked. "
+            f"examples: {examples}"
+        )
 
 
 def get_failure_count(failure_info):
@@ -166,7 +239,8 @@ def run_scrapers_in_parallel(mode='update'):
             creationflags=CREATE_NO_WINDOW,
             stdout=f,
             stderr=subprocess.STDOUT,
-            env=env
+            env=env,
+            cwd=PROJECT_ROOT
         )
         running_processes.append((platform, p))
         
@@ -253,6 +327,7 @@ def merge_results():
 def save_total(new_posts, threads_count, linkedin_count, twitter_count):
     today = datetime.now().strftime('%Y%m%d')
     total_filename = os.path.join(OUTPUT_TOTAL_DIR, f"total_full_{today}.json")
+    validate_local_image_links(new_posts)
     
     # 💡 [개선] '저장순' 정렬 구현 (최초 수집 시점 1순위, 플랫폼 내 순서 2순위)
     def sort_key(post):
@@ -293,15 +368,13 @@ def save_total(new_posts, threads_count, linkedin_count, twitter_count):
     # MD 변환
     convert_json_to_md(total_filename)
 
-import requests
-import hashlib
-
 def download_images(posts):
     print("\n🖼️ 미수집 이미지 로컬 다운로드 시작...")
-    fs_img_dir = os.path.join("web_viewer", "images")
-    os.makedirs(fs_img_dir, exist_ok=True)
+    os.makedirs(WEB_IMAGE_DIR, exist_ok=True)
     
     count = 0
+    linked_existing = 0
+    preserved = collect_preserved_local_images()
     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
 
     for post in posts:
@@ -309,17 +382,24 @@ def download_images(posts):
         if not remote_media: continue
             
         local_images = []
+        seen_local_images = set()
+        for existing_path in post.get('local_images') or []:
+            if web_image_exists(existing_path) and existing_path not in seen_local_images:
+                local_images.append(existing_path)
+                seen_local_images.add(existing_path)
+
         for img_url in remote_media:
             if '.mp4' in img_url.lower(): continue
             try:
-                ext = '.jpg'
-                if '.png' in img_url.lower(): ext = '.png'
-                elif '.webp' in img_url.lower(): ext = '.webp'
-                
-                file_hash = hashlib.md5(img_url.encode('utf-8')).hexdigest()
-                filename = f"{file_hash}{ext}"
-                fs_path = os.path.join(fs_img_dir, filename)
-                web_path = f"web_viewer/images/{filename}"
+                preserved_path = preserved.get(img_url)
+                if preserved_path and web_image_exists(preserved_path):
+                    if preserved_path not in seen_local_images:
+                        local_images.append(preserved_path)
+                        seen_local_images.add(preserved_path)
+                        linked_existing += 1
+                    continue
+
+                fs_path, web_path = get_local_image_paths(img_url)
                 
                 if not os.path.exists(fs_path):
                     curr_headers = headers.copy()
@@ -330,12 +410,13 @@ def download_images(posts):
                             f.write(response.content)
                         count += 1
                 
-                if os.path.exists(fs_path):
+                if os.path.exists(fs_path) and web_path not in seen_local_images:
                     local_images.append(web_path)
+                    seen_local_images.add(web_path)
             except Exception: pass
         if local_images: post['local_images'] = local_images
 
-    print(f"   ✅ 이미지 다운로드 완료: 신규 {count}개 저장됨.")
+    print(f"   ✅ 이미지 다운로드 완료: 신규 {count}개 저장, 기존 {linked_existing}개 연결됨.")
 
 
 def run(mode='update'):
