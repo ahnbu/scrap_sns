@@ -103,3 +103,33 @@ def test_stats_first_run_no_prior_file(client, tmp_path, monkeypatch):
     assert stats["linkedin"] == 4
     assert stats["twitter"] == 3
     assert stats["total_count"] == 12
+
+
+def test_phased_summary_marks_auth_required_when_only_consumer_phase_reports_auth(
+    client,
+    tmp_path,
+    monkeypatch,
+):
+    import server
+
+    monkeypatch.setattr(server, "OUTPUT_TOTAL_DIR", str(tmp_path))
+    _write_total_file(tmp_path, "20260416", total=100, threads=50, linkedin=30, twitter=20)
+
+    summary_output = "\n".join(
+        [
+            "scraping finished",
+            (
+                'SNS_SCRAP_SUMMARY {"platform_results":{"x":{"phases":'
+                '{"producer":{"status":"ok"},"consumer":{"status":"auth_required"}}}}}'
+            ),
+            "",
+        ]
+    )
+
+    with patch("subprocess.Popen", return_value=_make_process(output=summary_output)):
+        resp = client.post("/api/run-scrap", json={"mode": "update"})
+
+    assert resp.status_code == 200
+    payload = resp.get_json()
+    assert payload["auth_required"] == ["x"]
+    assert payload["platform_results"]["x"]["phases"]["consumer"]["status"] == "auth_required"

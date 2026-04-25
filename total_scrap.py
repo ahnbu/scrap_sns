@@ -159,6 +159,87 @@ def get_failure_count(failure_info):
     except (TypeError, ValueError):
         return 0
 
+
+def _phase_display_name(phase_name):
+    if phase_name == "producer":
+        return "Producer"
+    if phase_name == "consumer":
+        return "Consumer"
+    return str(phase_name or "").title()
+
+
+def _safe_platform_name(platform):
+    return str(platform).lower().replace('/', '_')
+
+
+def _status_from_returncode(returncode):
+    if returncode == 0:
+        return "ok"
+    if returncode == AUTH_REQUIRED_EXIT_CODE:
+        return "auth_required"
+    return "failed"
+
+
+def _ensure_platform_result(platform_results, platform, log_path):
+    platform_key = PLATFORM_KEYS.get(platform, str(platform).lower())
+    result = platform_results.setdefault(
+        platform_key,
+        {
+            "status": "pending",
+            "returncode": None,
+            "log": log_path,
+            "phases": {},
+        },
+    )
+    result.setdefault("phases", {})
+    if log_path:
+        result["log"] = log_path
+    return platform_key, result
+
+
+def _write_phase_log_header(file_handle, platform, phase_name, cmd):
+    phase_label = _phase_display_name(phase_name)
+    file_handle.write("================================================\n")
+    file_handle.write(
+        f"🚀 {platform} {phase_label} 시작: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
+    )
+    file_handle.write(f"💻 명령어: {cmd}\n")
+    file_handle.write("================================================\n\n")
+    file_handle.flush()
+
+
+def _finalize_platform_results(platform_results):
+    for result in platform_results.values():
+        phases = result.get("phases") or {}
+        statuses = [str(phase.get("status") or "").lower() for phase in phases.values()]
+        if any(status == "auth_required" for status in statuses):
+            result["status"] = "auth_required"
+            result["returncode"] = AUTH_REQUIRED_EXIT_CODE
+        elif any(status == "failed" for status in statuses):
+            result["status"] = "failed"
+            first_failed = next(
+                (
+                    phase.get("returncode")
+                    for phase in phases.values()
+                    if str(phase.get("status") or "").lower() == "failed"
+                ),
+                1,
+            )
+            result["returncode"] = first_failed
+        elif statuses and all(status == "ok" for status in statuses):
+            result["status"] = "ok"
+            result["returncode"] = 0
+        elif statuses:
+            result["status"] = statuses[-1]
+            result["returncode"] = next(
+                (
+                    phase.get("returncode")
+                    for phase in reversed(list(phases.values()))
+                    if phase.get("returncode") is not None
+                ),
+                None,
+            )
+
 def should_run_consumer(platform):
     """상세 수집기(Consumer)를 실행할 필요가 있는지 체크"""
     if platform == "Threads":
@@ -195,106 +276,114 @@ def should_run_consumer(platform):
     return len(final_targets) > 0
 
 def run_scrapers_in_parallel(mode='update'):
-    print(f"🚀 플랫폼별 스크래퍼 병렬 실행 시작 (백그라운드 모드)... (모드: {mode})")
+    print(f"🚀 플랫폼별 스크래퍼 병렬 실행 시작 (2-wave 모드)... (모드: {mode})")
     platform_results = {}
-    
-    # logs 디렉토리 생성
-    LOG_DIR = "logs"
-    os.makedirs(LOG_DIR, exist_ok=True)
-    
-    CREATE_NO_WINDOW = 0x08000000
-    
-    # 💡 실행 여부 사전 판단
-    run_threads_consumer = should_run_consumer("Threads")
-    run_twitter_consumer = should_run_consumer("X/Twitter")
-    
-    # -u 옵션 추가 (버퍼링 없이 즉시 로그 기록)
-    commands = {
-        "Threads": f"python -u thread_scrap.py --mode {mode}" + (" && python -u thread_scrap_single.py" if run_threads_consumer else ""),
-        "X/Twitter": f"python -u twitter_scrap.py --mode {mode}" + (" && python -u twitter_scrap_single.py" if run_twitter_consumer else ""),
-        "LinkedIn": f"python -u linkedin_scrap.py --mode {mode}"
-    }
-    
-    for platform, cmd in commands.items():
-        if platform == "Threads" and not run_threads_consumer:
-            print(f"   [-] {platform}: 상세 수집할 항목 없음 (Producer만 실행)")
-        if platform == "X/Twitter" and not run_twitter_consumer:
-            print(f"   [-] {platform} : 상세 수집할 항목 없음 (Producer만 실행)")
-            
-        print(f"   [+] {platform} 스크래퍼 실행 중 (로그: logs/{platform.lower().replace('/', '_')}.log)...")
-        
-        # 플랫폼별 로그 파일 생성 (파일명에서 / 제거)
-        safe_name = platform.lower().replace('/', '_')
-        log_path = os.path.join(LOG_DIR, f"{safe_name}.log")
-        f = open(log_path, "a", encoding="utf-8")
-        
-        # 로그 파일 상단에 시작 구분선 추가
-        f.write(f"================================================\n")
-        f.write(f"🚀 {platform} 스크래핑 시작: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
-        f.write(f"💻 명령어: {cmd}\n")
-        f.write(f"================================================\n\n")
-        f.flush()
-        
-        opened_log_files.append((platform, f))
+    running_processes.clear()
+    opened_log_files.clear()
 
-        # 💡 [개선] 유니코드 인코딩 에러 방지를 위해 환경 변수 설정
-        env = os.environ.copy()
-        env["PYTHONIOENCODING"] = "utf-8"
-        env["SNS_ORCHESTRATED_RUN"] = "1"
+    log_dir = "logs"
+    os.makedirs(log_dir, exist_ok=True)
 
-        # cmd /c 를 사용하되 명령어가 여러 개일 때도 로그가 잘 남도록 함
-        p = subprocess.Popen(
-            f"cmd /c {cmd}", 
-            creationflags=CREATE_NO_WINDOW,
-            stdout=f,
-            stderr=subprocess.STDOUT,
-            env=env,
-            cwd=PROJECT_ROOT
-        )
-        running_processes.append((platform, p))
-        platform_key = PLATFORM_KEYS.get(platform, platform.lower())
-        platform_results[platform_key] = {
-            "status": "running",
-            "returncode": None,
-            "log": log_path,
-        }
-        
-    print(f"\n⏳ 총 {len(running_processes)}개의 백그라운드 프로세스가 완료되기를 기다리는 중...")
-    print("   (실시간 진행 상황은 logs/ 폴더의 로그 파일을 통해 확인 가능합니다.)")
-    print("   (중단하시려면 Ctrl+C를 누르세요.)")
-    
+    create_no_window = 0x08000000
+    phase_commands = [
+        (
+            "producer",
+            {
+                "Threads": f"python -u thread_scrap.py --mode {mode}",
+                "X/Twitter": f"python -u twitter_scrap.py --mode {mode}",
+                "LinkedIn": f"python -u linkedin_scrap.py --mode {mode}",
+            },
+        ),
+        (
+            "consumer",
+            {
+                "Threads": "python -u thread_scrap_single.py",
+                "X/Twitter": "python -u twitter_scrap_single.py",
+            },
+        ),
+    ]
+
+    log_handles = {}
+
     try:
-        # 모든 프로세스가 완료될 때까지 대기
-        while any(p.poll() is None for _, p in running_processes):
-            time.sleep(1) # 1초 간격으로 폴링 (Ctrl+C 신호를 받기 위함)
-            
-        for platform, p in running_processes:
-            platform_key = PLATFORM_KEYS.get(platform, platform.lower())
-            result = platform_results.setdefault(platform_key, {})
-            result["returncode"] = p.returncode
-            if p.returncode == 0:
-                result["status"] = "ok"
-                print(f"   ✅ {platform} 수집 완료.")
-            elif p.returncode == AUTH_REQUIRED_EXIT_CODE:
-                result["status"] = "auth_required"
-                print(f"   🔐 {platform} 인증 필요. 최신 보유 데이터로 병합을 계속합니다.")
-            else:
-                result["status"] = "failed"
-                print(f"   ❌ {platform} 종료 (반환 코드: {p.returncode}). logs/{platform.lower().replace('/', '_')}.log 확인 필요.")
+        for phase_name, commands in phase_commands:
+            phase_label = _phase_display_name(phase_name)
+            print(f"\n🚀 {phase_label} wave 시작...")
+            running_processes.clear()
+
+            for platform, cmd in commands.items():
+                safe_name = _safe_platform_name(platform)
+                log_path = os.path.join(log_dir, f"{safe_name}.log")
+                file_handle = log_handles.get(platform)
+                if file_handle is None:
+                    file_handle = open(log_path, "a", encoding="utf-8")
+                    log_handles[platform] = file_handle
+                    opened_log_files.append((platform, file_handle))
+
+                _write_phase_log_header(file_handle, platform, phase_name, cmd)
+                print(f"   [+] {platform} {phase_label} 실행 중 (로그: {log_path})...")
+
+                env = os.environ.copy()
+                env["PYTHONIOENCODING"] = "utf-8"
+                env["SNS_ORCHESTRATED_RUN"] = "1"
+
+                p = subprocess.Popen(
+                    f"cmd /c {cmd}",
+                    creationflags=create_no_window,
+                    stdout=file_handle,
+                    stderr=subprocess.STDOUT,
+                    env=env,
+                    cwd=PROJECT_ROOT
+                )
+                running_processes.append((platform, p))
+                _, result = _ensure_platform_result(platform_results, platform, log_path)
+                result["phases"][phase_name] = {
+                    "status": "running",
+                    "returncode": None,
+                }
+
+            print(f"\n⏳ {phase_label} wave 완료 대기 중... ({len(running_processes)}개 프로세스)")
+
+            while any(p.poll() is None for _, p in running_processes):
+                time.sleep(1)
+
+            for platform, p in running_processes:
+                safe_name = _safe_platform_name(platform)
+                _, result = _ensure_platform_result(
+                    platform_results,
+                    platform,
+                    os.path.join(log_dir, f"{safe_name}.log"),
+                )
+                phase_result = result["phases"].setdefault(phase_name, {})
+                phase_result["returncode"] = p.returncode
+                phase_result["status"] = _status_from_returncode(p.returncode)
+
+                if p.returncode == 0:
+                    print(f"   ✅ {platform} {phase_label} 완료.")
+                elif p.returncode == AUTH_REQUIRED_EXIT_CODE:
+                    print(f"   🔐 {platform} {phase_label} 인증 필요. 최신 보유 데이터로 계속 진행합니다.")
+                else:
+                    print(f"   ❌ {platform} {phase_label} 종료 (반환 코드: {p.returncode}). logs/{safe_name}.log 확인 필요.")
+
+        _finalize_platform_results(platform_results)
 
     except KeyboardInterrupt:
-        # Ctrl+C 발생 시 signal_handler 직접 호출
         signal_handler(signal.SIGINT, None)
 
-    # 로그 파일들 정상 마감
-    for plat, f in opened_log_files:
-        try:
-            if not f.closed:
-                f.write(f"\n\n================================================\n")
-                f.write(f"🏁 {plat} 스크래핑 종료: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
-                f.write(f"================================================\n")
-                f.close()
-        except Exception: pass
+    finally:
+        running_processes.clear()
+        for plat, file_handle in opened_log_files:
+            try:
+                if not file_handle.closed:
+                    file_handle.write("\n\n================================================\n")
+                    file_handle.write(
+                        f"🏁 {plat} 스크래핑 종료: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
+                    )
+                    file_handle.write("================================================\n")
+                    file_handle.close()
+            except Exception:
+                pass
+        opened_log_files.clear()
 
     print("\n모든 플랫폼 스크래핑이 종료되었습니다.")
     return platform_results

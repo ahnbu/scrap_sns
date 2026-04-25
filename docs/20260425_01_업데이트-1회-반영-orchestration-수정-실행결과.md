@@ -1,0 +1,114 @@
+---
+title: 업데이트 1회 반영 오케스트레이션 수정 실행결과
+created: 2026-04-25 11:05
+tags:
+  - plan
+  - record
+  - orchestration
+  - update
+  - twitter
+session_id: codex:019dc236-a8d0-71a1-92e0-9f05f0202ca4
+session_path: C:/Users/ahnbu/.codex/sessions/2026/04/25/rollout-2026-04-25T10-17-35-019dc236-a8d0-71a1-92e0-9f05f0202ca4.jsonl
+ai: codex
+status: completed
+---
+
+# 업데이트 1회 반영 오케스트레이션 수정 실행결과
+
+**Goal:** 앱의 `업데이트` 1회 실행 안에서 신규 Threads/X 목록 수집, 상세 수집, total 병합이 모두 끝나게 해 두 번 눌러야 반영되는 현상을 제거한다.
+
+**Result:** 구현 후 사용자 수동 검증에서 앱 `업데이트` 1회 실행으로 신규 3건이 추가되는 것을 확인했다.
+
+**Architecture:** `total_scrap.py`를 `producer wave -> consumer wave -> merge/save` 3단계로 재구성했고, phase 결과를 summary에 포함해 `server.py`와 `web_viewer/script.js`가 같은 실행의 부분 실패와 인증 필요 상태를 해석할 수 있게 맞췄다.
+
+---
+
+## 발단: 문제 상황
+
+- 기존 구조에서는 `total_scrap.py`가 consumer 실행 여부를 producer 전에 고정했다.
+- 그 결과 실행 시작 시 pending detail이 0이면, 같은 실행에서 producer가 새 X/Threads 항목을 추가해도 consumer가 빠져 첫 `업데이트`에서는 simple만 늘고 total/full 반영은 다음 실행으로 밀렸다.
+- 앱은 `total_full` before/after 차이만 보여줘 실제로는 신규 simple이 생겨도 `0건`처럼 보일 수 있었다.
+
+## 구현 결과 요약
+
+### 1. Orchestration 수정
+
+- `total_scrap.py`를 2-wave 구조로 변경했다.
+- 1차 wave는 Threads, X, LinkedIn producer를 병렬 실행한다.
+- 2차 wave는 Threads와 X consumer를 항상 실행한다. 대상이 0건이면 기존 no-op 종료를 그대로 사용한다.
+- 플랫폼별 최종 상태는 phase 결과를 접어 `ok`, `failed`, `auth_required`로 다시 계산한다.
+
+### 2. Summary/서버 보강
+
+- `SNS_SCRAP_SUMMARY`에 phase 결과를 담도록 변경했다.
+- `server.py`는 기존 flat summary와 새 phased summary를 모두 읽도록 `_normalize_scrap_summary()`를 보강했다.
+- consumer phase만 `auth_required`인 경우도 API 응답의 `auth_required`에 반영되게 했다.
+
+### 3. 앱 메시지 보강
+
+- `web_viewer/script.js`에 실패 플랫폼 감지 helper를 추가했다.
+- 인증 필요와 별개로 일부 플랫폼 실패 시에도 앱이 전부 성공처럼만 보이지 않도록 보조 경고 문구를 붙였다.
+
+### 4. 문서/테스트 정리
+
+- `docs/crawling_logic.md`를 현재 2-wave 실행 순서 기준으로 현행화했다.
+- same-run 반영 회귀 테스트와 phased summary 회귀 테스트, 앱 helper 테스트를 추가했다.
+
+## 변경 파일
+
+- `total_scrap.py`
+- `server.py`
+- `web_viewer/script.js`
+- `tests/unit/test_total_scrap_orchestration.py`
+- `tests/unit/test_web_viewer_scrap_result_helpers.py`
+- `tests/integration/test_run_scrap_stats.py`
+- `docs/crawling_logic.md`
+
+## 검증계획과 실행결과
+
+| 검증 항목 | 검증 방법 | 결과 | 비고 |
+|-----------|-----------|------|------|
+| same-run orchestration 회귀 | `pytest tests/unit/test_total_scrap_orchestration.py -q` | ✅ 통과 | 초기 pending 0이어도 2차 wave consumer 실행 확인 |
+| 기존 helper 회귀 | `pytest tests/unit/test_total_scrap_should_run_consumer.py -q` | ✅ 통과 | helper 하위호환 유지 |
+| 앱 helper 회귀 | `pytest tests/unit/test_web_viewer_scrap_result_helpers.py -q` | ✅ 통과 | 실패 플랫폼 감지 로직 확인 |
+| API stats/summary 회귀 | `pytest tests/integration/test_run_scrap_stats.py -q` | ✅ 통과 | phased summary auth_required 반영 확인 |
+| Python 문법 검증 | `python -m py_compile total_scrap.py server.py` | ✅ 통과 | syntax error 없음 |
+| 앱 수동 검증 | 사용자 확인 | ✅ 통과 | 앱 `업데이트` 실행 결과 신규 3건 추가 확인 |
+
+## 구현 체크리스트
+
+- [x] `total_scrap.py`를 2-wave pipeline으로 재구성
+- [x] `SNS_SCRAP_SUMMARY`에 phase 결과 반영
+- [x] `server.py` phased summary normalize 보강
+- [x] `web_viewer/script.js` 실패 플랫폼 보조 문구 추가
+- [x] same-run 회귀 테스트 추가
+- [x] `docs/crawling_logic.md` 현행화
+- [x] 사용자 앱 수동 검증에서 신규 3건 추가 확인
+
+## 결정과 트레이드오프
+
+- 결정: Threads/X consumer를 2차 wave에서 항상 실행하는 안을 채택했다.
+- 이유: 조건 분기보다 단순하고, same-run 신규 항목과 backlog를 한 번에 흡수할 수 있다.
+- 트레이드오프: 대상이 없어도 consumer 프로세스는 한 번 기동된다. 다만 현재 구현은 대상 0건에서 빠르게 종료한다.
+
+## 영구화 surface와 마이그레이션 판단
+
+- 영향 surface: `output_threads/python/*simple*`, `output_threads/python/*full*`, `output_twitter/python/*simple*`, `output_twitter/python/*full*`, `output_total/total_full_*.json`, `/api/run-scrap` 응답 summary
+- 마이그레이션: 하지 않았다.
+- 근거: 저장 파일 패턴과 핵심 JSON 스키마는 유지되고, 이번 변경은 실행 순서와 summary 해석만 바꾼다.
+
+## 남은 리스크와 메모
+
+- Threads에 대해서도 구조상 same-run 반영이 되지만, 앱에서의 별도 수동 검증은 아직 기록하지 않았다.
+- 일부 플랫폼이 실패해도 다른 플랫폼 병합은 계속 진행한다. 이번 수정으로 앱에 경고는 추가했지만, 운영적으로 어느 수준까지 fail-open을 유지할지는 후속 판단 여지가 있다.
+
+## 참고 자료
+
+| 출처 | 용도 |
+|------|------|
+| `total_scrap.py` | 2-wave orchestration과 phase summary 구현 |
+| `server.py` | phased summary normalize 구현 |
+| `web_viewer/script.js` | 실패 플랫폼 경고 문구 구현 |
+| `tests/unit/test_total_scrap_orchestration.py` | same-run 회귀 테스트 |
+| `tests/integration/test_run_scrap_stats.py` | phased summary 회귀 테스트 |
+| `docs/crawling_logic.md` | 실행 흐름 문서 현행화 |

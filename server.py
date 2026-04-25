@@ -195,8 +195,22 @@ def _normalize_scrap_summary(summary):
 
     for platform, result in platform_results.items():
         status = str(result.get("status") or result.get("result") or "").lower()
-        if result.get("auth_required") or "auth" in status:
+        phase_statuses = [
+            str(phase_result.get("status") or phase_result.get("result") or "").lower()
+            for phase_result in (result.get("phases") or {}).values()
+            if isinstance(phase_result, dict)
+        ]
+        if result.get("auth_required") or "auth" in status or any(
+            "auth" in phase_status for phase_status in phase_statuses
+        ):
             auth_required.append(platform)
+        if not status and phase_statuses:
+            if any(phase_status == "auth_required" for phase_status in phase_statuses):
+                result["status"] = "auth_required"
+            elif any(phase_status == "failed" for phase_status in phase_statuses):
+                result["status"] = "failed"
+            elif all(phase_status == "ok" for phase_status in phase_statuses):
+                result["status"] = "ok"
 
     normalized_auth_required = []
     seen = set()

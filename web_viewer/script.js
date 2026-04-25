@@ -200,6 +200,20 @@ document.addEventListener('DOMContentLoaded', () => {
         return [...platforms].filter(platform => Object.prototype.hasOwnProperty.call(authPlatformLabels, platform));
     }
 
+    function getFailedPlatforms(result) {
+        const platforms = new Set();
+
+        Object.entries(result?.platform_results || {}).forEach(([platform, platformResult]) => {
+            const normalized = normalizeAuthPlatform(platform);
+            const status = String(platformResult?.status || platformResult?.result || '').toLowerCase();
+            if (normalized && status === 'failed') {
+                platforms.add(normalized);
+            }
+        });
+
+        return [...platforms].filter(platform => Object.prototype.hasOwnProperty.call(authPlatformLabels, platform));
+    }
+
     function isLocalAuthPanelVerifyAllowed() {
         const host = window.location.hostname;
         return host === '127.0.0.1' || host === 'localhost' || host === '::1' || host === '';
@@ -580,6 +594,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
                 const result = await response.json().catch(() => ({}));
                 const authRequiredPlatforms = getAuthRequiredPlatforms(result);
+                const failedPlatforms = getFailedPlatforms(result);
 
                 if (authRequiredPlatforms.length > 0) {
                     showAuthRequiredPanel(authRequiredPlatforms);
@@ -607,6 +622,12 @@ document.addEventListener('DOMContentLoaded', () => {
                             + `링크드인 — ${stats.linkedin}건 추가 (전체 ${stats.linkedin_count}건)\n`
                             + `X — ${stats.twitter}건 추가 (전체 ${stats.twitter_count}건)\n\n`
                             + `데이터를 새로고침합니다.`;
+                    }
+                    if (failedPlatforms.length > 0) {
+                        const failedLabels = failedPlatforms
+                            .map(platform => authPlatformLabels[platform] || platform)
+                            .join(', ');
+                        msg += `\n\n주의: ${failedLabels} 수집은 실패해 최신 보유 데이터 기준으로 유지되었을 수 있습니다.`;
                     }
                     alert(msg);
                     fetchData();

@@ -9,9 +9,9 @@ created: "2026-04-17 13:25"
 
 ## 전체 흐름
 
-1. 플랫폼별 목록 수집기가 저장 게시물 목록을 읽는다.
-2. Threads와 X는 상세 수집기로 본문, 미디어, thread context를 보강한다.
-3. `total_scrap.py`가 최신 full 파일을 병합해 통합본을 만든다.
+1. `total_scrap.py`가 1차 wave에서 플랫폼별 목록 수집기(producer)를 실행한다.
+2. 같은 실행의 2차 wave에서 Threads와 X 상세 수집기(consumer)가 최신 simple 파일을 다시 읽어 본문, 미디어, thread context를 보강한다.
+3. consumer까지 끝난 뒤 `total_scrap.py`가 최신 full 파일을 병합해 통합본을 만든다.
 4. 뷰어는 `GET /api/posts`로 메타 목록을 읽고 `GET /api/post/<sequence_id>`로 상세 본문과 미디어를 lazy-load 한다.
 5. 검색과 자동 태그 일괄 적용은 각각 `GET /api/search`, `POST /api/auto-tag/apply`를 사용한다.
 
@@ -68,14 +68,16 @@ consumer 토큰이 없으면 상세 수집은 건너뛰고, simple 기반 메타
 
 ## 병합 로직
 
-`total_scrap.py`는 플랫폼별 최신 full 파일을 찾아 아래 순서로 처리한다.
+`total_scrap.py`는 아래 순서로 처리한다.
 
-1. Threads, LinkedIn, X full 파일 로드
-2. 플랫폼 이름 정규화: `threads`, `linkedin`, `x`
-3. 플랫폼 내부 순서를 `platform_sequence_id`로 보존
-4. ID 기준 중복 제거
-5. 통합본을 `output_total/total_full_YYYYMMDD.json`에 저장
-6. Markdown 변환과 로컬 이미지 다운로드를 수행
+1. producer wave 실행: Threads, X, LinkedIn 목록 수집
+2. consumer wave 실행: Threads, X 상세 수집
+3. Threads, LinkedIn, X 최신 full 파일 로드
+4. 플랫폼 이름 정규화: `threads`, `linkedin`, `x`
+5. 플랫폼 내부 순서를 `platform_sequence_id`로 보존
+6. ID 기준 중복 제거
+7. 통합본을 `output_total/total_full_YYYYMMDD.json`에 저장
+8. Markdown 변환과 로컬 이미지 다운로드를 수행
 
 로그는 `logs/`에 플랫폼별로 남긴다.
 
