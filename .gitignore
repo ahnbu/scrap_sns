@@ -54,6 +54,7 @@ scripts/*
 # Temp/test artifacts
 temp-code/
 test_runs/
+tests/fixtures/snapshots/
 .pdca-status.json
 .playwright-cli/
 
