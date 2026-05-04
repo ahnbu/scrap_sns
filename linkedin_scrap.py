@@ -19,6 +19,14 @@ LOGIN_URL = "https://www.linkedin.com/login"
 AUTH_FILE = str(linkedin_storage())
 DATA_DIR = "output_linkedin/python"
 UPDATE_DIR = os.path.join(DATA_DIR, "update")
+SAVED_POSTS_SELECTOR = ".entity-result__content-container"
+AUTH_RESOLUTION_TIMEOUT_MS = 20000
+AUTH_POLL_INTERVAL_MS = 500
+LINKEDIN_USER_AGENT = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) "
+    "Chrome/122.0.0.0 Safari/537.36"
+)
 
 # 스크랩 설정
 TARGET_LIMIT = 0       # 0 = 무제한
@@ -38,6 +46,45 @@ WINDOW_HEIGHT = 500    # 브라우저 높이
 
 
 # 로컬 clean_text 제거 (utils.common 사용)
+
+def is_linkedin_auth_url(url):
+    normalized = (url or "").lower()
+    return any(
+        marker in normalized
+        for marker in (
+            "linkedin.com/login",
+            "linkedin.com/uas/login",
+            "linkedin.com/signup",
+            "authwall",
+            "/checkpoint/",
+            "/guest/",
+        )
+    )
+
+
+def has_saved_posts_content(page):
+    try:
+        return page.locator(SAVED_POSTS_SELECTOR).count() > 0
+    except Exception:
+        return False
+
+
+def wait_for_saved_posts_ready(page, timeout_ms=AUTH_RESOLUTION_TIMEOUT_MS):
+    deadline = time.monotonic() + (timeout_ms / 1000)
+    last_url = page.url
+
+    while time.monotonic() <= deadline:
+        last_url = page.url
+        if has_saved_posts_content(page):
+            return True, last_url
+        if "my-items/saved-posts" in last_url and not is_linkedin_auth_url(last_url):
+            return True, last_url
+        try:
+            page.wait_for_timeout(AUTH_POLL_INTERVAL_MS)
+        except Exception:
+            time.sleep(AUTH_POLL_INTERVAL_MS / 1000)
+
+    return False, last_url
 
 class LinkedinScraper:
     def __init__(self):
@@ -83,24 +130,29 @@ class LinkedinScraper:
             print(f"📂 세션 파일 로드: {AUTH_FILE}")
             try:
                 page.goto(TARGET_URL)
-                time.sleep(3)
             except Exception as e:
                 print(f"⚠️ 페이지 이동 중 에러 (무시): {e}")
-            
-            current_url = page.url
-            if "login" in current_url or "signup" in current_url:
+
+            is_ready, current_url = wait_for_saved_posts_ready(page)
+            if is_ready:
+                print(f"✅ 세션 유효함 (URL: {current_url})")
+                return
+
+            if is_linkedin_auth_url(current_url):
                 print("⚠️ 세션 만료됨. 다시 로그인 필요.")
             elif "about:blank" in current_url:
                 print("⚠️ 페이지가 로드되지 않았습니다 (about:blank). 재시도 중...")
                 page.goto(TARGET_URL)
-                time.sleep(3)
+                is_ready, current_url = wait_for_saved_posts_ready(page)
+                if is_ready:
+                    print(f"✅ 세션 유효함 (URL: {current_url})")
+                    return
                 if "about:blank" in page.url:
                      print("❌ 페이지 로드 실패.")
             else:
-                print(f"✅ 세션 유효함 (URL: {current_url})")
-                return
+                print(f"⚠️ 저장된 게시물 페이지가 준비되지 않았습니다. (URL: {current_url})")
 
-        if "login" in page.url or "signup" in page.url or "guest" in page.url or "about:blank" in page.url:
+        if is_linkedin_auth_url(page.url) or "about:blank" in page.url:
             print("🚨 로그인이 필요하거나 페이지 로드에 실패했습니다! (수동 개입 필요)")
             print(f"   현재 URL: {page.url}")
             page.goto(LOGIN_URL)
@@ -122,7 +174,7 @@ class LinkedinScraper:
             
             if page.url != TARGET_URL:
                 page.goto(TARGET_URL)
-                time.sleep(3)
+                wait_for_saved_posts_ready(page)
 
     def handle_response(self, response):
         """네트워크 응답 가로채기 (GraphQL)"""
@@ -223,7 +275,11 @@ class LinkedinScraper:
             try:
                 # viewport를 None으로 설정하면 브라우저 창 크기에 따라 자동으로 조절됨 (또는 고정값 사용 가능)
                 # 여기서는 창 크기와 비례하도록 설정하거나 특정 해상도 고정
-                context_options = {"viewport": {"width": WINDOW_WIDTH, "height": WINDOW_HEIGHT}}
+                context_options = {
+                    "viewport": {"width": WINDOW_WIDTH, "height": WINDOW_HEIGHT},
+                    "user_agent": LINKEDIN_USER_AGENT,
+                    "locale": "ko-KR",
+                }
                 if os.path.exists(AUTH_FILE):
                     context_options["storage_state"] = AUTH_FILE
 
