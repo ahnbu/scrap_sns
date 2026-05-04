@@ -9,6 +9,61 @@ function escapeHtml(str) {
         .replace(/'/g, '&#39;');
 }
 
+function isSafeHttpUrl(url) {
+    try {
+        const parsed = new URL(url);
+        return parsed.protocol === 'http:' || parsed.protocol === 'https:';
+    } catch {
+        return false;
+    }
+}
+
+function splitUrlTrailingPunctuation(url) {
+    let cleanUrl = url;
+    let trailing = '';
+
+    while (/[.,!?;:\])}]$/.test(cleanUrl)) {
+        trailing = cleanUrl.slice(-1) + trailing;
+        cleanUrl = cleanUrl.slice(0, -1);
+    }
+
+    return { cleanUrl, trailing };
+}
+
+function linkifyText(str, options = {}) {
+    if (str == null) return '';
+
+    const text = String(str);
+    const isTruncated = Boolean(options.isTruncated);
+    const urlPattern = /https?:\/\/[^\s<>"']+/gi;
+    let html = '';
+    let lastIndex = 0;
+    let match;
+
+    while ((match = urlPattern.exec(text)) !== null) {
+        const rawUrl = match[0];
+        const start = match.index;
+        const { cleanUrl, trailing } = splitUrlTrailingPunctuation(rawUrl);
+        const rawEnd = start + rawUrl.length;
+        const urlTouchesTruncatedTail = isTruncated && rawEnd === text.length;
+
+        html += escapeHtml(text.slice(lastIndex, start));
+
+        if (!cleanUrl || urlTouchesTruncatedTail || !isSafeHttpUrl(cleanUrl)) {
+            html += escapeHtml(cleanUrl);
+        } else {
+            const escapedUrl = escapeHtml(cleanUrl);
+            html += `<a href="${escapedUrl}" target="_blank" rel="noopener noreferrer" class="inline-post-link">${escapedUrl}</a>`;
+        }
+
+        html += escapeHtml(trailing);
+        lastIndex = rawEnd;
+    }
+
+    html += escapeHtml(text.slice(lastIndex));
+    return html.replace(/\n/g, '<br>');
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     // const feedJsonPath = 'output_total/total_full_20260201.json'; // ❌ 삭제됨 (동적 로딩으로 변경)
     const masonryGrid = document.getElementById('masonryGrid');
@@ -1871,8 +1926,8 @@ ${item.body}
         if (isFolded) content.classList.add('hidden-content');
 
         const previewText = getPostPreviewText(post);
-        const cleanText = escapeHtml(previewText).replace(/\n/g, '<br>');
         const isLongText = getPostTextLength(post) > 150 || getPostTextLength(post) > previewText.length;
+        const cleanText = linkifyText(previewText, { isTruncated: getPostTextLength(post) > previewText.length });
 
         content.innerHTML = `
             <div class="relative">
@@ -1894,7 +1949,7 @@ ${item.body}
                     e.stopPropagation();
                     if (post.sequence_id) {
                         const detailedPost = await ensurePostDetail(post);
-                        const detailedText = escapeHtml(getPostPreviewText(detailedPost)).replace(/\n/g, '<br>');
+                        const detailedText = linkifyText(getPostPreviewText(detailedPost));
                         paragraph.innerHTML = detailedText;
                     }
                     toggleExpandableText(paragraph, indicator);

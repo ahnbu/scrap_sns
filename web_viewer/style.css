@@ -104,6 +104,18 @@
   overflow: hidden;
 }
 
+.inline-post-link {
+  color: #c084fc;
+  overflow-wrap: anywhere;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  word-break: break-word;
+}
+
+.inline-post-link:hover {
+  color: #e9d5ff;
+}
+
 /* Modal Open State */
 body.modal-open {
   overflow: hidden;
