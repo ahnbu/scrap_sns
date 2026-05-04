@@ -6,20 +6,24 @@ from utils.threads_parser import extract_items_multi_path, extract_json_from_htm
 
 def test_extract_json_from_html_handles_braces_inside_strings():
     html = Path(
-        "tests/fixtures/snapshots/threads/snapshot_1776403205.html"
+        "tests/fixtures/snapshots/threads/snapshot_1777853522.html"
     ).read_text(encoding="utf-8")
 
     data = extract_json_from_html(html)
-    items = extract_items_multi_path(data, "DXDlSFQmB63", "minorabanggu")
+    items = extract_items_multi_path(data, "DXu-Y9XCov1", "aicoffeechat")
 
     assert [item["code"] for item in items] == [
-        "DXDlSFQmB63",
-        "DXDlSw6mG_j",
-        "DXDlTqTmI2Z",
-        "DXDlUmVmK21",
-        "DXDlVeZmCdh",
-        "DXDlV9lmOAQ",
-        "DXDxEQmmPvG",
+        "DXu-Y9XCov1",
+        "DXvrp3FE_vc",
+        "DXvrqXrEzJb",
+        "DXvrq20E1aZ",
+        "DXvrrXyk7zD",
+        "DXvrr5VkyS_",
+        "DXvrsa_E1-q",
+        "DXvrsu0k556",
+        "DXvrtI5k8vF",
+        "DXvrtxyk1Iw",
+        "DXvru3OE1J3",
     ]
 
 
