@@ -228,3 +228,241 @@ def test_build_scrap_result_view_model_includes_stats_and_auth_notice():
         "authLabels": ["X", "Threads"],
         "hasPrompt": True,
     }
+
+
+def test_build_scrap_result_view_model_includes_consistency_steps():
+    node_script = textwrap.dedent(
+        r"""
+        const fs = require('fs');
+        const src = fs.readFileSync('web_viewer/script.js', 'utf8');
+
+        function extractFunction(name) {
+          const patterns = [`async function ${name}(`, `function ${name}(`];
+          let start = -1;
+          for (const pattern of patterns) {
+            start = src.indexOf(pattern);
+            if (start !== -1) break;
+          }
+          if (start === -1) {
+            console.error(`${name} missing`);
+            process.exit(1);
+          }
+          let depth = 0;
+          let end = -1;
+          for (let i = start; i < src.length; i += 1) {
+            const ch = src[i];
+            if (ch === '{') depth += 1;
+            if (ch === '}') {
+              depth -= 1;
+              if (depth === 0) {
+                end = i + 1;
+                break;
+              }
+            }
+          }
+          if (end === -1) {
+            console.error(`${name} parse failure`);
+            process.exit(1);
+          }
+          return src.slice(start, end);
+        }
+
+        global.authPlatformLabels = { linkedin: 'LinkedIn', threads: 'Threads', x: 'X' };
+        eval(extractFunction('normalizeAuthPlatform'));
+        eval(extractFunction('getAuthRequiredPlatforms'));
+        eval(extractFunction('getFailedPlatforms'));
+        eval(extractFunction('getScrapStats'));
+        eval(extractFunction('buildAuthRenewalPrompt'));
+        eval(extractFunction('buildScrapResultViewModel'));
+
+        const model = buildScrapResultViewModel({
+          status: 'success',
+          stats: {
+            total: 1,
+            threads: 0,
+            linkedin: 1,
+            twitter: 0,
+            total_count: 1222,
+            threads_count: 844,
+            linkedin_count: 312,
+            twitter_count: 66
+          },
+          consistency_check: {
+            status: 'failed',
+            steps: [
+              { key: 'total_file', label: '통합 파일', status: 'passed', detail: '1222건' },
+              { key: 'screen', label: '화면 표시', status: 'failed', detail: '필터에 가려짐' }
+            ]
+          }
+        }, 'update');
+
+        console.log(JSON.stringify({
+          resultTitle: model.title,
+          title: model.consistencyTitle,
+          status: model.consistencyStatus,
+          rows: model.consistencyRows
+        }));
+        """
+    )
+
+    assert run_node_json(node_script) == {
+        "resultTitle": "업데이트 확인 필요",
+        "title": "정합성 확인",
+        "status": "failed",
+        "rows": [
+            {"label": "통합 파일", "status": "passed", "detail": "1222건"},
+            {"label": "화면 표시", "status": "failed", "detail": "필터에 가려짐"},
+        ],
+    }
+
+
+def test_build_scrap_result_view_model_hides_passed_consistency_steps():
+    node_script = textwrap.dedent(
+        r"""
+        const fs = require('fs');
+        const src = fs.readFileSync('web_viewer/script.js', 'utf8');
+
+        function extractFunction(name) {
+          const patterns = [`async function ${name}(`, `function ${name}(`];
+          let start = -1;
+          for (const pattern of patterns) {
+            start = src.indexOf(pattern);
+            if (start !== -1) break;
+          }
+          if (start === -1) {
+            console.error(`${name} missing`);
+            process.exit(1);
+          }
+          let depth = 0;
+          let end = -1;
+          for (let i = start; i < src.length; i += 1) {
+            const ch = src[i];
+            if (ch === '{') depth += 1;
+            if (ch === '}') {
+              depth -= 1;
+              if (depth === 0) {
+                end = i + 1;
+                break;
+              }
+            }
+          }
+          return src.slice(start, end);
+        }
+
+        global.authPlatformLabels = { linkedin: 'LinkedIn', threads: 'Threads', x: 'X' };
+        eval(extractFunction('normalizeAuthPlatform'));
+        eval(extractFunction('getAuthRequiredPlatforms'));
+        eval(extractFunction('getFailedPlatforms'));
+        eval(extractFunction('getScrapStats'));
+        eval(extractFunction('buildAuthRenewalPrompt'));
+        eval(extractFunction('buildScrapResultViewModel'));
+
+        const model = buildScrapResultViewModel({
+          status: 'success',
+          stats: {
+            total: 2,
+            threads: 1,
+            linkedin: 1,
+            twitter: 0,
+            total_count: 1222,
+            threads_count: 844,
+            linkedin_count: 312,
+            twitter_count: 66
+          },
+          consistency_check: {
+            status: 'passed',
+            steps: [
+              { key: 'new_samples', label: '신규 샘플', status: 'passed', detail: '3개 확인' }
+            ]
+          }
+        }, 'update');
+
+        console.log(JSON.stringify({
+          resultTitle: model.title,
+          title: model.consistencyTitle,
+          status: model.consistencyStatus,
+          rowCount: model.consistencyRows.length
+        }));
+        """
+    )
+
+    assert run_node_json(node_script) == {
+        "resultTitle": "업데이트 완료",
+        "title": "",
+        "status": "passed",
+        "rowCount": 0,
+    }
+
+
+def test_verify_scrap_consistency_reports_missing_new_sample():
+    node_script = textwrap.dedent(
+        r"""
+        const fs = require('fs');
+        const src = fs.readFileSync('web_viewer/script.js', 'utf8');
+
+        function extractFunction(name) {
+          const patterns = [`async function ${name}(`, `function ${name}(`];
+          let start = -1;
+          for (const pattern of patterns) {
+            start = src.indexOf(pattern);
+            if (start !== -1) break;
+          }
+          if (start === -1) {
+            console.error(`${name} missing`);
+            process.exit(1);
+          }
+          let depth = 0;
+          let end = -1;
+          for (let i = start; i < src.length; i += 1) {
+            const ch = src[i];
+            if (ch === '{') depth += 1;
+            if (ch === '}') {
+              depth -= 1;
+              if (depth === 0) {
+                end = i + 1;
+                break;
+              }
+            }
+          }
+          return src.slice(start, end);
+        }
+
+        eval(extractFunction('resolvePostUrl'));
+        eval(extractFunction('deriveConsistencyStatus'));
+        eval(extractFunction('normalizeConsistencyPlatform'));
+        eval(extractFunction('getConsistencyPostKey'));
+        eval(extractFunction('verifyScrapConsistency'));
+
+        (async () => {
+          const result = await verifyScrapConsistency({
+            new_samples: {
+              linkedin: [
+                {
+                  platform_id: 'li-new-1',
+                  sns_platform: 'linkedin',
+                  url: 'https://www.linkedin.com/feed/update/urn:li:activity:1'
+                }
+              ],
+              threads: [],
+              twitter: []
+            }
+          }, {
+            ok: true,
+            posts: []
+          });
+          console.log(JSON.stringify(result));
+        })();
+        """
+    )
+
+    assert run_node_json(node_script) == {
+        "status": "failed",
+        "steps": [
+            {
+                "key": "new_samples_linkedin",
+                "label": "LinkedIn 신규 샘플",
+                "status": "failed",
+                "detail": "1/1개 누락",
+            }
+        ],
+    }

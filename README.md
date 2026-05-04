@@ -141,6 +141,16 @@ Threads consumer는 Playwright 없이 `AUTH_HOME/threads/storage_state.json` 쿠
 - 스크래퍼 트리거와 서버 상태 확인은 `/api/run-scrap`, `/api/status`를 사용합니다.
 - 레거시 Threads 태그 키(`threads.net`, `/t/`)는 뷰어에서 `www.threads.com` canonical로 정규화합니다.
 
+## 시간·정렬 기준
+
+- `created_at`: 게시글이 플랫폼에 작성된 시간입니다. 웹 뷰어의 `작성일순` 기준입니다.
+- `crawled_at`: 게시글이 이 프로젝트의 로컬 파일에 처음 수집된 시간입니다.
+- `sequence_id`: 통합 결과 파일 안에서 다시 부여되는 로컬 순서 번호입니다.
+- `platform_sequence_id`: 플랫폼별 수집 파일에서 보존한 순서 번호입니다.
+- `platform_saved_at`: 실제 플랫폼에서 사용자가 저장한 시간입니다. 현재 스키마에는 없으며, 수집 가능성은 `BACKLOG.md`의 `BL-0504-01`에서 별도로 추적합니다.
+
+현재 웹 뷰어의 `로컬 수집순`은 실제 플랫폼 저장시간순이 아니라 `crawled_at`과 플랫폼별 순서를 기준으로 만든 로컬 정렬입니다.
+
 ## 표준 데이터 스키마
 
 정본은 `utils/post_schema.py`입니다.

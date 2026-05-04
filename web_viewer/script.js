@@ -254,6 +254,17 @@ document.addEventListener('DOMContentLoaded', () => {
         const authPlatforms = getAuthRequiredPlatforms(result);
         const failedPlatforms = getFailedPlatforms(result)
             .filter(platform => !authPlatforms.includes(platform));
+        const consistencyCheck = result?.consistency_check || null;
+        const consistencyStatus = consistencyCheck?.status || '';
+        const shouldShowConsistency = ['failed', 'warning', 'timeout'].includes(consistencyStatus);
+        const consistencyRows = shouldShowConsistency && Array.isArray(consistencyCheck?.steps)
+            ? consistencyCheck.steps.map(step => ({
+                label: step.label || step.key || '',
+                status: step.status || 'skipped',
+                detail: step.detail || ''
+            }))
+            : [];
+        const needsConsistencyReview = shouldShowConsistency;
 
         const rows = mode === 'all'
             ? [
@@ -268,7 +279,9 @@ document.addEventListener('DOMContentLoaded', () => {
             ];
 
         return {
-            title: mode === 'all' ? '전체 재수집 완료' : '업데이트 완료',
+            title: needsConsistencyReview
+                ? (mode === 'all' ? '전체 재수집 확인 필요' : '업데이트 확인 필요')
+                : (mode === 'all' ? '전체 재수집 완료' : '업데이트 완료'),
             totalLine: mode === 'all'
                 ? `전체 ${stats.total_count}건`
                 : `총 ${stats.total}건 신규 추가 · 전체 ${stats.total_count}건`,
@@ -276,7 +289,10 @@ document.addEventListener('DOMContentLoaded', () => {
             authPlatforms,
             authLabels: authPlatforms.map(platform => authPlatformLabels[platform] || platform),
             failedLabels: failedPlatforms.map(platform => authPlatformLabels[platform] || platform),
-            authPrompt: authPlatforms.length > 0 ? buildAuthRenewalPrompt(authPlatforms) : ''
+            authPrompt: authPlatforms.length > 0 ? buildAuthRenewalPrompt(authPlatforms) : '',
+            consistencyTitle: consistencyRows.length > 0 ? '정합성 확인' : '',
+            consistencyStatus,
+            consistencyRows
         };
     }
 
@@ -314,6 +330,34 @@ document.addEventListener('DOMContentLoaded', () => {
             `
             : '';
 
+        const consistencyHtml = model.consistencyRows.length > 0
+            ? `
+                <section class="mt-5">
+                    <div class="flex items-center justify-between mb-2">
+                        <p class="text-sm font-semibold text-white">${escapeHtml(model.consistencyTitle)}</p>
+                        <span class="text-xs text-gray-400">${escapeHtml(model.consistencyStatus || '확인')}</span>
+                    </div>
+                    <div class="rounded-lg border border-white/10 bg-black/15 px-4 py-2">
+                        ${model.consistencyRows.map(row => {
+                            const statusLabel = row.status === 'passed'
+                                ? '통과'
+                                : (row.status === 'failed' ? '실패' : (row.status === 'warning' ? '확인 필요' : '건너뜀'));
+                            const statusClass = row.status === 'passed'
+                                ? 'text-green-400'
+                                : (row.status === 'failed' ? 'text-red-300' : 'text-amber-200');
+                            return `
+                                <div class="scrap-result-row">
+                                    <span class="text-sm font-semibold text-white">${escapeHtml(row.label)}</span>
+                                    <span class="text-xs ${statusClass}">${escapeHtml(statusLabel)}</span>
+                                    <span class="text-xs text-gray-500">${escapeHtml(row.detail)}</span>
+                                </div>
+                            `;
+                        }).join('')}
+                    </div>
+                </section>
+            `
+            : '';
+
         const authHtml = model.authLabels.length > 0
             ? `
                 <div class="mt-5 rounded-lg border border-amber-400/20 bg-amber-400/5 px-4 py-3">
@@ -334,6 +378,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     ${rowsHtml}
                 </div>
             </section>
+            ${consistencyHtml}
             ${failedHtml}
             ${authHtml}
         `;
@@ -736,7 +781,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 if (result.status === 'success') {
                     showScrapResultModal(result, mode);
-                    fetchData();
+                    const dataState = await fetchData();
+                    const consistencyCheck = await verifyScrapConsistencyWithTimeout(result.consistency_probe, dataState, 3000);
+                    showScrapResultModal({
+                        ...result,
+                        consistency_check: consistencyCheck
+                    }, mode);
                 } else {
                     alert(`에러 발생: ${result.message}`);
                 }
@@ -1224,6 +1274,105 @@ ${item.body}
         return post;
     }
 
+    function deriveConsistencyStatus(steps) {
+        if (steps.some(step => step.status === 'failed')) return 'failed';
+        if (steps.some(step => step.status === 'warning')) return 'warning';
+        return 'passed';
+    }
+
+    function normalizeConsistencyPlatform(platform) {
+        const value = String(platform || '').toLowerCase();
+        if (value === 'x') return 'twitter';
+        if (value === 'thread') return 'threads';
+        return value;
+    }
+
+    function getConsistencyPostKey(post) {
+        if (!post) return '';
+        const platform = normalizeConsistencyPlatform(post.sns_platform);
+        const postId = String(post.platform_id || post.code || '').trim();
+        if (platform && postId) return `${platform}:id:${postId}`;
+
+        const postUrl = resolvePostUrl(post);
+        if (platform && postUrl) return `${platform}:url:${postUrl}`;
+        return '';
+    }
+
+    async function verifyScrapConsistency(consistencyProbe, dataState) {
+        const loadedPosts = Array.isArray(dataState?.posts) ? dataState.posts : allPosts;
+
+        if (dataState?.ok === false) {
+            return {
+                status: 'failed',
+                steps: [{
+                    key: 'api_posts',
+                    label: '서버 API',
+                    status: 'failed',
+                    detail: '데이터 재조회 실패'
+                }]
+            };
+        }
+
+        if (!consistencyProbe) {
+            return {
+                status: 'skipped',
+                steps: []
+            };
+        }
+
+        const samplesByPlatform = consistencyProbe.new_samples || {};
+        const loadedKeys = new Set(loadedPosts.map(getConsistencyPostKey).filter(Boolean));
+        const steps = ['linkedin', 'threads', 'twitter']
+            .map(platform => {
+                const samples = Array.isArray(samplesByPlatform[platform]) ? samplesByPlatform[platform] : [];
+                if (samples.length === 0) return null;
+
+                const missing = samples.filter(sample => !loadedKeys.has(getConsistencyPostKey({
+                    ...sample,
+                    sns_platform: sample.sns_platform || platform,
+                })));
+                const label = platform === 'linkedin' ? 'LinkedIn 신규 샘플' : (platform === 'threads' ? 'Threads 신규 샘플' : 'X 신규 샘플');
+                return {
+                    key: `new_samples_${platform}`,
+                    label,
+                    status: missing.length === 0 ? 'passed' : 'failed',
+                    detail: missing.length === 0 ? `${samples.length}개 확인` : `${missing.length}/${samples.length}개 누락`
+                };
+            })
+            .filter(Boolean);
+
+        return {
+            status: steps.length === 0 ? 'passed' : deriveConsistencyStatus(steps),
+            steps
+        };
+    }
+
+    async function verifyScrapConsistencyWithTimeout(consistencyProbe, dataState, timeoutMs = 3000) {
+        let timeoutId;
+        const timeoutResult = new Promise(resolve => {
+            timeoutId = window.setTimeout(() => {
+                resolve({
+                    status: 'timeout',
+                    steps: [{
+                        key: 'new_samples_timeout',
+                        label: '신규 샘플',
+                        status: 'warning',
+                        detail: '3초 안에 확인하지 못했습니다.'
+                    }]
+                });
+            }, timeoutMs);
+        });
+
+        try {
+            return await Promise.race([
+                Promise.resolve().then(() => verifyScrapConsistency(consistencyProbe, dataState)),
+                timeoutResult
+            ]);
+        } finally {
+            window.clearTimeout(timeoutId);
+        }
+    }
+
     // --- Data Loading ---
     async function fetchData() {
         if (loadingIndicator) loadingIndicator.classList.remove('hidden');
@@ -1277,6 +1426,7 @@ ${item.body}
                 searchQuery = '';
                 renderPosts();
             }
+            return { ok: true, posts: allPosts };
         } catch (error) {
             console.error('❌ Data load failed:', error);
             if (noResults) {
@@ -1289,6 +1439,7 @@ ${item.body}
                 `;
                 noResults.classList.remove('hidden');
             }
+            return { ok: false, posts: allPosts, error: String(error?.message || error) };
         } finally {
             if (loadingIndicator) loadingIndicator.classList.add('hidden');
         }

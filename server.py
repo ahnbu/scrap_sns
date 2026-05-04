@@ -364,13 +364,147 @@ def get_latest_data():
 
 def _read_latest_metadata():
     """최신 total_full_*.json의 metadata를 읽는다. 파일이 없으면 None."""
+    payload = _read_latest_total_payload()
+    return payload.get("metadata") if payload else None
+
+
+def _read_latest_total_payload():
+    """최신 total_full_*.json의 핵심 데이터를 읽는다. 파일이 없으면 None."""
     try:
         latest_file = _get_latest_total_file()
     except FileNotFoundError:
         return None
     with open(latest_file, 'r', encoding='utf-8-sig') as f:
         data = json.load(f)
-    return data.get('metadata')
+    return {
+        "path": latest_file,
+        "metadata": data.get("metadata") or {},
+        "posts": data.get("posts") or [],
+    }
+
+
+def _consistency_platform(value):
+    platform = str(value or "").strip().lower()
+    if platform in {"threads", "thread"}:
+        return "threads"
+    if platform in {"linkedin", "linked_in"}:
+        return "linkedin"
+    if platform in {"x", "twitter", "x/twitter", "x_twitter"}:
+        return "twitter"
+    return platform
+
+
+def _consistency_post_key(post):
+    platform = _consistency_platform(post.get("sns_platform"))
+    post_id = str(post.get("platform_id") or post.get("code") or "").strip()
+    if platform and post_id:
+        return f"{platform}:id:{post_id}"
+
+    post_url = (
+        post.get("canonical_url")
+        or canonicalize_url(post)
+        or post.get("url")
+        or post.get("post_url")
+        or post.get("source_url")
+        or ""
+    )
+    post_url = str(post_url).strip()
+    if platform and post_url:
+        return f"{platform}:url:{post_url}"
+    return ""
+
+
+def _consistency_sample(post):
+    return {
+        "sequence_id": post.get("sequence_id"),
+        "platform_id": post.get("platform_id") or post.get("code"),
+        "sns_platform": _consistency_platform(post.get("sns_platform")),
+        "url": post.get("canonical_url") or canonicalize_url(post) or post.get("url"),
+        "display_name": post.get("display_name") or post.get("username") or post.get("user"),
+    }
+
+
+def _build_consistency_probe(before_posts=None):
+    """수집 후 프런트가 서버/화면 정합성을 확인할 때 사용할 기준값."""
+    cache = _load_latest_posts()
+    posts = cache.get("posts_full") or []
+    metadata = {}
+
+    if cache.get("path"):
+        with open(cache["path"], 'r', encoding='utf-8-sig') as f:
+            metadata = (json.load(f).get("metadata") or {})
+
+    total_count = int(metadata.get("total_count") or len(posts))
+    platform_counts = {
+        "threads": int(metadata.get("threads_count") or 0),
+        "linkedin": int(metadata.get("linkedin_count") or 0),
+        "twitter": int(metadata.get("twitter_count") or 0),
+    }
+    if not any(platform_counts.values()):
+        for post in posts:
+            platform = str(post.get("sns_platform") or "").lower()
+            if platform in {"threads", "linkedin"}:
+                platform_counts[platform] += 1
+            elif platform in {"twitter", "x"}:
+                platform_counts["twitter"] += 1
+
+    before_keys = {
+        key
+        for key in (_consistency_post_key(post) for post in (before_posts or []))
+        if key
+    }
+    new_posts_by_platform = {"threads": [], "linkedin": [], "twitter": []}
+    for post in posts:
+        key = _consistency_post_key(post)
+        platform = _consistency_platform(post.get("sns_platform"))
+        if not key or key in before_keys or platform not in new_posts_by_platform:
+            continue
+        new_posts_by_platform[platform].append(post)
+
+    for platform_posts in new_posts_by_platform.values():
+        platform_posts.sort(key=lambda post: post.get("sequence_id") or 0, reverse=True)
+
+    new_counts = {
+        platform: len(platform_posts)
+        for platform, platform_posts in new_posts_by_platform.items()
+    }
+    new_samples = {
+        platform: [_consistency_sample(post) for post in platform_posts[:3]]
+        for platform, platform_posts in new_posts_by_platform.items()
+    }
+
+    probe_post = None
+    if posts:
+        probe_post = max(posts, key=lambda post: post.get("sequence_id") or 0)
+
+    probe = None
+    if probe_post:
+        full_text = str(probe_post.get("full_text") or probe_post.get("full_text_preview") or "").strip()
+        search_query = " ".join(full_text.split())[:80]
+        probe = {
+            "sequence_id": probe_post.get("sequence_id"),
+            "platform_id": probe_post.get("platform_id") or probe_post.get("code"),
+            "sns_platform": probe_post.get("sns_platform"),
+            "url": probe_post.get("canonical_url") or probe_post.get("url"),
+            "display_name": probe_post.get("display_name") or probe_post.get("username"),
+            "search_query": search_query,
+        }
+
+    source_path = cache.get("path") or ""
+    try:
+        source_file = os.path.relpath(source_path, PROJECT_ROOT) if source_path else ""
+    except ValueError:
+        source_file = os.path.basename(source_path)
+
+    return {
+        "source_file": source_file,
+        "updated_at": metadata.get("updated_at") or metadata.get("generated_at"),
+        "total_count": total_count,
+        "platform_counts": platform_counts,
+        "new_counts": new_counts,
+        "new_samples": new_samples,
+        "probe": probe,
+    }
 
 
 ALLOWED_SCRAP_MODES = {'update', 'all'}
@@ -385,7 +519,8 @@ def run_scrap():
         mode = data.get('mode', 'update')
         if mode not in ALLOWED_SCRAP_MODES:
             return jsonify({"status": "error", "message": f"Invalid mode. Allowed: {', '.join(sorted(ALLOWED_SCRAP_MODES))}"}), 400
-        before_meta = _read_latest_metadata()
+        before_payload = _read_latest_total_payload()
+        before_meta = (before_payload or {}).get("metadata")
         before_counts = {
             'total': (before_meta or {}).get('total_count', 0),
             'threads': (before_meta or {}).get('threads_count', 0),
@@ -427,11 +562,13 @@ def run_scrap():
             'twitter_count': after_counts['twitter'],
         }
         summary = _normalize_scrap_summary(_parse_scrap_summary(full_output))
+        consistency_probe = _build_consistency_probe((before_payload or {}).get("posts") or [])
         return jsonify({
             "status": "success",
             "message": "Scraping finished",
             "output": stdout_val,
             "stats": stats,
+            "consistency_probe": consistency_probe,
             "auth_required": summary["auth_required"],
             "platform_results": summary["platform_results"],
         })

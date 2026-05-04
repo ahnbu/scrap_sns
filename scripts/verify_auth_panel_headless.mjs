@@ -15,6 +15,19 @@ async function main() {
   const browser = await launchHeadlessChromium();
   const page = await browser.newPage({ viewport: { width: 1280, height: 900 } });
   const scriptUrls = new Set();
+  let searchRequestCount = 0;
+  const consistencyPost = {
+    sequence_id: 999001,
+    platform_id: 'li-consistency-20260504',
+    sns_platform: 'linkedin',
+    url: 'https://www.linkedin.com/feed/update/urn:li:activity:li-consistency-20260504',
+    canonical_url: 'https://www.linkedin.com/feed/update/urn:li:activity:li-consistency-20260504',
+    display_name: 'Consistency Tester',
+    username: 'consistency-tester',
+    created_at: '2026-05-04T09:00:00+09:00',
+    crawled_at: '2026-05-04T09:05:00+09:00',
+    full_text_preview: 'Unique Harness consistency probe'
+  };
 
   try {
     page.on('request', request => {
@@ -42,12 +55,67 @@ async function main() {
             threads: 0,
             linkedin: 7,
             twitter: 0,
-            total_count: 1248,
+            total_count: 1,
             threads_count: 520,
             linkedin_count: 410,
             twitter_count: 318
+          },
+          consistency_probe: {
+            source_file: 'output_total/sns_total_latest.json',
+            updated_at: '2026-05-04T09:05:00+09:00',
+            total_count: 1,
+            platform_counts: {
+              threads: 0,
+              linkedin: 1,
+              twitter: 0
+            },
+            new_counts: {
+              threads: 0,
+              linkedin: 1,
+              twitter: 0
+            },
+            new_samples: {
+              threads: [],
+              linkedin: [{
+                sequence_id: consistencyPost.sequence_id,
+                platform_id: consistencyPost.platform_id,
+                sns_platform: consistencyPost.sns_platform,
+                url: consistencyPost.url,
+                display_name: consistencyPost.display_name
+              }],
+              twitter: []
+            }
           }
         })
+      });
+    });
+    await page.route('**/api/status', async route => {
+      await route.fulfill({
+        status: 200,
+        contentType: 'application/json',
+        body: JSON.stringify({ status: 'ok' })
+      });
+    });
+    await page.route('**/api/posts?**', async route => {
+      await route.fulfill({
+        status: 200,
+        contentType: 'application/json',
+        body: JSON.stringify({ posts: [consistencyPost] })
+      });
+    });
+    await page.route('**/api/search?**', async route => {
+      searchRequestCount += 1;
+      await route.fulfill({
+        status: 200,
+        contentType: 'application/json',
+        body: JSON.stringify({ posts: [consistencyPost] })
+      });
+    });
+    await page.route('**/api/get-tags', async route => {
+      await route.fulfill({
+        status: 200,
+        contentType: 'application/json',
+        body: JSON.stringify({})
       });
     });
 
@@ -59,6 +127,11 @@ async function main() {
 
     await page.locator('#runScrapBtn').click();
     await page.locator('#scrapResultModal.show').waitFor({ timeout: 5000 });
+    await page.waitForFunction(
+      () => !document.querySelector('#runScrapBtn')?.disabled,
+      null,
+      { timeout: 5000 }
+    );
 
     const modalText = await page.locator('#scrapResultModal').innerText();
     await page.waitForTimeout(2200);
@@ -86,6 +159,8 @@ async function main() {
       hasAuthPlatforms: modalText.includes('X, Threads'),
       blocksAutomatedLogin: modalText.includes('자동화 브라우저로 감지'),
       hasPrompt: modalText.includes('README.md의 인증 갱신 섹션'),
+      hasNoConsistencySection: !modalText.includes('정합성 확인'),
+      hasNoSearchProbe: searchRequestCount === 0,
       promptCopyVisible,
       stillOpenAfterDelay,
       authPanelHidden: !authPanelVisible,
@@ -104,6 +179,8 @@ async function main() {
       hasAuthPlatforms: result.hasAuthPlatforms,
       blocksAutomatedLogin: result.blocksAutomatedLogin,
       hasPrompt: result.hasPrompt,
+      hasNoConsistencySection: result.hasNoConsistencySection,
+      hasNoSearchProbe: result.hasNoSearchProbe,
       promptCopyVisible: result.promptCopyVisible,
       stillOpenAfterDelay: result.stillOpenAfterDelay,
       authPanelHidden: result.authPanelHidden,
