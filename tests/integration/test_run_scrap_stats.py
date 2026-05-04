@@ -269,3 +269,73 @@ def test_run_scrap_response_includes_platform_new_samples(client, tmp_path, monk
     assert [sample["platform_id"] for sample in consistency["new_samples"]["twitter"]] == [
         "x-new-1",
     ]
+
+
+def test_run_scrap_records_filtered_progress_events(client, tmp_path, monkeypatch):
+    import server
+
+    monkeypatch.setattr(server, "OUTPUT_TOTAL_DIR", str(tmp_path))
+    _write_total_file(tmp_path, "20260416", total=100, threads=50, linkedin=30, twitter=20)
+
+    def write_after_file():
+        _write_total_file(tmp_path, "20260417", total=115, threads=52, linkedin=43, twitter=20)
+        return 0
+
+    output = "\n".join(
+        [
+            "🚀 플랫폼별 스크래퍼 병렬 실행 시작 (2-wave 모드)... (모드: update)",
+            "🚀 Producer wave 시작...",
+            "   [+] Threads Producer 실행 중 (로그: logs/threads.log)...",
+            "   [+] LinkedIn Producer 실행 중 (로그: logs/linkedin.log)...",
+            "   ✅ Threads Producer 완료.",
+            "   ✅ LinkedIn Producer 완료.",
+            "📦 결과 병합 및 데이터 정규화 시작...",
+            "Traceback with sensitive raw detail should be ignored",
+            "SNS_SCRAP_SUMMARY {\"platform_results\":{}}",
+            "",
+        ]
+    )
+
+    with patch("subprocess.Popen", return_value=_make_process(write_after_file, output=output)):
+        resp = client.post(
+            "/api/run-scrap",
+            json={"mode": "update", "run_id": "progress-test"},
+        )
+
+    assert resp.status_code == 200
+
+    progress_resp = client.get("/api/scrap-progress?run_id=progress-test&after=0")
+    assert progress_resp.status_code == 200
+    progress = progress_resp.get_json()
+    messages = [event["message"] for event in progress["events"]]
+
+    assert progress["run_id"] == "progress-test"
+    assert progress["running"] is False
+    assert messages == [
+        "최근 업데이트 스크랩 시작",
+        "플랫폼별 스크랩 시작",
+        "목록 수집 단계 시작",
+        "Threads 목록 수집 시작",
+        "LinkedIn 목록 수집 시작",
+        "Threads 목록 수집 완료",
+        "LinkedIn 목록 수집 완료",
+        "결과 병합 시작",
+        "스크랩 완료: Threads 2건, LinkedIn 13건, X 0건",
+    ]
+    assert all("Traceback" not in message for message in messages)
+    assert all("logs/" not in message for message in messages)
+
+    after_resp = client.get("/api/scrap-progress?run_id=progress-test&after=3")
+    assert [event["seq"] for event in after_resp.get_json()["events"]] == list(
+        range(4, progress["seq"] + 1)
+    )
+
+
+def test_scrap_progress_ignores_other_run_id(client):
+    resp = client.get("/api/scrap-progress?run_id=missing-run&after=0")
+
+    assert resp.status_code == 200
+    payload = resp.get_json()
+    assert payload["run_id"] == "missing-run"
+    assert payload["running"] is False
+    assert payload["events"] == []

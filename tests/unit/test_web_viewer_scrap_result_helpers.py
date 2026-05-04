@@ -466,3 +466,64 @@ def test_verify_scrap_consistency_reports_missing_new_sample():
             }
         ],
     }
+
+
+def test_scrap_progress_console_message_helpers_filter_and_format_events():
+    node_script = textwrap.dedent(
+        r"""
+        const fs = require('fs');
+        const src = fs.readFileSync('web_viewer/script.js', 'utf8');
+
+        function extractFunction(name) {
+          const patterns = [`async function ${name}(`, `function ${name}(`];
+          let start = -1;
+          for (const pattern of patterns) {
+            start = src.indexOf(pattern);
+            if (start !== -1) break;
+          }
+          if (start === -1) {
+            console.error(`${name} missing`);
+            process.exit(1);
+          }
+          let depth = 0;
+          let end = -1;
+          for (let i = start; i < src.length; i += 1) {
+            const ch = src[i];
+            if (ch === '{') depth += 1;
+            if (ch === '}') {
+              depth -= 1;
+              if (depth === 0) {
+                end = i + 1;
+                break;
+              }
+            }
+          }
+          if (end === -1) {
+            console.error(`${name} parse failure`);
+            process.exit(1);
+          }
+          return src.slice(start, end);
+        }
+
+        eval(extractFunction('isScrapProgressEventLoggable'));
+        eval(extractFunction('buildScrapProgressConsoleMessage'));
+
+        const events = [
+          { seq: 1, message: '최근 업데이트 스크랩 시작' },
+          { seq: 2, message: '' },
+          { seq: 3, message: 'LinkedIn 목록 수집 완료' },
+          { seq: 4, message: null }
+        ];
+
+        const messages = events
+          .filter(isScrapProgressEventLoggable)
+          .map(buildScrapProgressConsoleMessage);
+
+        console.log(JSON.stringify(messages));
+        """
+    )
+
+    assert run_node_json(node_script) == [
+        "[SNS Scrap] 최근 업데이트 스크랩 시작",
+        "[SNS Scrap] LinkedIn 목록 수집 완료",
+    ]

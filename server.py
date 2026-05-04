@@ -11,6 +11,7 @@ import subprocess
 import tempfile
 import threading
 import time
+from datetime import datetime, timedelta, timezone
 from flask import Flask, jsonify, send_from_directory, request, abort
 from flask_cors import CORS
 from utils.post_meta import META_FIELDS, build_post_meta, canonicalize_url
@@ -30,6 +31,17 @@ AUTH_RUNTIME_DIR = os.path.join(tempfile.gettempdir(), "scrap_sns_auth_runtime")
 ALLOWED_AUTH_PLATFORMS = {"linkedin", "threads", "x"}
 AUTH_JOBS = {}
 AUTH_JOBS_LOCK = threading.Lock()
+KST = timezone(timedelta(hours=9))
+SCRAP_PROGRESS_MAX_EVENTS = 80
+SCRAP_PROGRESS = {
+    "run_id": "",
+    "running": False,
+    "seq": 0,
+    "events": [],
+    "started_at": None,
+    "updated_at": None,
+}
+SCRAP_PROGRESS_LOCK = threading.Lock()
 _POSTS_CACHE = {
     "path": None,
     "mtime": None,
@@ -38,6 +50,152 @@ _POSTS_CACHE = {
     "posts_meta": None,
     "etag": None,
 }
+
+
+def _now_kst_iso():
+    return datetime.now(KST).isoformat(timespec="seconds")
+
+
+def _normalize_scrap_run_id(raw):
+    safe_id = re.sub(r"[^A-Za-z0-9_-]", "", str(raw or ""))[:64]
+    return safe_id or secrets.token_urlsafe(8)
+
+
+def _scrap_progress_platform_label(platform):
+    value = str(platform or "").strip().lower()
+    if value in {"x/twitter", "x_twitter", "twitter", "x"}:
+        return "X"
+    if value == "threads":
+        return "Threads"
+    if value == "linkedin":
+        return "LinkedIn"
+    return str(platform or "").strip()
+
+
+def _scrap_progress_phase_label(phase):
+    value = str(phase or "").strip().lower()
+    if value == "producer":
+        return "목록"
+    if value == "consumer":
+        return "상세"
+    return value or "스크랩"
+
+
+def _scrap_progress_message_from_line(line):
+    text = str(line or "").strip()
+    if not text or text.startswith("SNS_SCRAP_SUMMARY"):
+        return None
+
+    if "플랫폼별 스크래퍼 병렬 실행 시작" in text:
+        return "플랫폼별 스크랩 시작"
+    if "Producer wave 시작" in text:
+        return "목록 수집 단계 시작"
+    if "Consumer wave 시작" in text:
+        return "상세 수집 단계 시작"
+    if "결과 병합 및 데이터 정규화 시작" in text:
+        return "결과 병합 시작"
+    if "이미지 다운로드 완료" in text:
+        return "이미지 다운로드 완료"
+    if "Total Full 저장 완료" in text:
+        return "통합 파일 저장 완료"
+
+    running_match = re.search(
+        r"\[\+\]\s*(Threads|LinkedIn|X/Twitter)\s+(Producer|Consumer)\s+실행 중",
+        text,
+    )
+    if running_match:
+        platform = _scrap_progress_platform_label(running_match.group(1))
+        phase = _scrap_progress_phase_label(running_match.group(2))
+        return f"{platform} {phase} 수집 시작"
+
+    done_match = re.search(
+        r"✅\s*(Threads|LinkedIn|X/Twitter)\s+(Producer|Consumer)\s+완료",
+        text,
+    )
+    if done_match:
+        platform = _scrap_progress_platform_label(done_match.group(1))
+        phase = _scrap_progress_phase_label(done_match.group(2))
+        return f"{platform} {phase} 수집 완료"
+
+    auth_match = re.search(
+        r"🔐\s*(Threads|LinkedIn|X/Twitter)\s+(Producer|Consumer)\s+인증 필요",
+        text,
+    )
+    if auth_match:
+        platform = _scrap_progress_platform_label(auth_match.group(1))
+        phase = _scrap_progress_phase_label(auth_match.group(2))
+        return f"{platform} {phase} 인증 필요"
+
+    failed_match = re.search(
+        r"❌\s*(Threads|LinkedIn|X/Twitter)\s+(Producer|Consumer)\s+종료",
+        text,
+    )
+    if failed_match:
+        platform = _scrap_progress_platform_label(failed_match.group(1))
+        phase = _scrap_progress_phase_label(failed_match.group(2))
+        return f"{platform} {phase} 수집 실패"
+
+    return None
+
+
+def _append_scrap_progress(message, level="info"):
+    if not message:
+        return
+
+    with SCRAP_PROGRESS_LOCK:
+        SCRAP_PROGRESS["seq"] += 1
+        now = _now_kst_iso()
+        SCRAP_PROGRESS["updated_at"] = now
+        SCRAP_PROGRESS["events"].append(
+            {
+                "seq": SCRAP_PROGRESS["seq"],
+                "time": now,
+                "level": level,
+                "message": str(message),
+            }
+        )
+        if len(SCRAP_PROGRESS["events"]) > SCRAP_PROGRESS_MAX_EVENTS:
+            SCRAP_PROGRESS["events"] = SCRAP_PROGRESS["events"][-SCRAP_PROGRESS_MAX_EVENTS:]
+
+
+def _reset_scrap_progress(run_id, mode):
+    now = _now_kst_iso()
+    with SCRAP_PROGRESS_LOCK:
+        SCRAP_PROGRESS.update(
+            {
+                "run_id": run_id,
+                "running": True,
+                "seq": 0,
+                "events": [],
+                "started_at": now,
+                "updated_at": now,
+            }
+        )
+
+    label = "전체 재수집" if mode == "all" else "최근 업데이트"
+    _append_scrap_progress(f"{label} 스크랩 시작")
+
+
+def _finish_scrap_progress():
+    with SCRAP_PROGRESS_LOCK:
+        SCRAP_PROGRESS["running"] = False
+        SCRAP_PROGRESS["updated_at"] = _now_kst_iso()
+
+
+def _scrap_complete_message(mode, stats):
+    if mode == "all":
+        return (
+            "전체 재수집 완료: "
+            f"Threads {stats['threads_count']}건, "
+            f"LinkedIn {stats['linkedin_count']}건, "
+            f"X {stats['twitter_count']}건"
+        )
+    return (
+        "스크랩 완료: "
+        f"Threads {stats['threads']}건, "
+        f"LinkedIn {stats['linkedin']}건, "
+        f"X {stats['twitter']}건"
+    )
 
 
 def _is_local_request():
@@ -511,6 +669,7 @@ ALLOWED_SCRAP_MODES = {'update', 'all'}
 
 @app.route('/api/run-scrap', methods=['POST'])
 def run_scrap():
+    progress_started = False
     try:
         script_path = os.path.join(PROJECT_ROOT, 'total_scrap.py')
         if not os.path.exists(script_path):
@@ -519,6 +678,9 @@ def run_scrap():
         mode = data.get('mode', 'update')
         if mode not in ALLOWED_SCRAP_MODES:
             return jsonify({"status": "error", "message": f"Invalid mode. Allowed: {', '.join(sorted(ALLOWED_SCRAP_MODES))}"}), 400
+        run_id = _normalize_scrap_run_id(data.get("run_id"))
+        _reset_scrap_progress(run_id, mode)
+        progress_started = True
         before_payload = _read_latest_total_payload()
         before_meta = (before_payload or {}).get("metadata")
         before_counts = {
@@ -542,6 +704,7 @@ def run_scrap():
         if process.stdout:
             for line in iter(process.stdout.readline, ""):
                 full_output.append(line)
+                _append_scrap_progress(_scrap_progress_message_from_line(line))
         process.wait()
         stdout_val = "".join(full_output[-20:])
         after_meta = _read_latest_metadata()
@@ -563,9 +726,12 @@ def run_scrap():
         }
         summary = _normalize_scrap_summary(_parse_scrap_summary(full_output))
         consistency_probe = _build_consistency_probe((before_payload or {}).get("posts") or [])
+        _append_scrap_progress(_scrap_complete_message(mode, stats))
+        _finish_scrap_progress()
         return jsonify({
             "status": "success",
             "message": "Scraping finished",
+            "run_id": run_id,
             "output": stdout_val,
             "stats": stats,
             "consistency_probe": consistency_probe,
@@ -573,8 +739,51 @@ def run_scrap():
             "platform_results": summary["platform_results"],
         })
     except Exception as e:
+        if progress_started:
+            _append_scrap_progress("스크랩 실패", level="error")
+            _finish_scrap_progress()
         logging.exception("Failed to run scraping")
         return jsonify({"status": "error", "message": "Scraping failed"}), 500
+
+
+@app.route('/api/scrap-progress', methods=['GET'])
+def get_scrap_progress():
+    _require_local_request()
+    requested_run_id = str(request.args.get("run_id") or "").strip()
+    try:
+        after = int(request.args.get("after", 0) or 0)
+    except (TypeError, ValueError):
+        after = 0
+
+    with SCRAP_PROGRESS_LOCK:
+        current_run_id = SCRAP_PROGRESS["run_id"]
+        if requested_run_id and requested_run_id != current_run_id:
+            return jsonify(
+                {
+                    "run_id": requested_run_id,
+                    "running": False,
+                    "seq": 0,
+                    "events": [],
+                    "started_at": None,
+                    "updated_at": None,
+                }
+            )
+
+        events = [
+            event
+            for event in SCRAP_PROGRESS["events"]
+            if int(event.get("seq") or 0) > after
+        ]
+        return jsonify(
+            {
+                "run_id": current_run_id,
+                "running": bool(SCRAP_PROGRESS["running"]),
+                "seq": SCRAP_PROGRESS["seq"],
+                "events": events,
+                "started_at": SCRAP_PROGRESS["started_at"],
+                "updated_at": SCRAP_PROGRESS["updated_at"],
+            }
+        )
 
 
 @app.route('/api/auth/start', methods=['POST'])

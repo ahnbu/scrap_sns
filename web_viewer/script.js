@@ -64,6 +64,23 @@ function linkifyText(str, options = {}) {
     return html.replace(/\n/g, '<br>');
 }
 
+function createScrapRunId() {
+    const randomPart = window.crypto?.getRandomValues
+        ? Array.from(window.crypto.getRandomValues(new Uint32Array(2)))
+            .map(value => value.toString(36))
+            .join('')
+        : Math.random().toString(36).slice(2);
+    return `scrap-${Date.now().toString(36)}-${randomPart}`.slice(0, 64);
+}
+
+function isScrapProgressEventLoggable(event) {
+    return Boolean(event && String(event.message || '').trim());
+}
+
+function buildScrapProgressConsoleMessage(event) {
+    return `[SNS Scrap] ${String(event.message || '').trim()}`;
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     // const feedJsonPath = 'output_total/total_full_20260201.json'; // ❌ 삭제됨 (동적 로딩으로 변경)
     const masonryGrid = document.getElementById('masonryGrid');
@@ -214,6 +231,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const runScrapBtn = document.getElementById('runScrapBtn');
     const runFullScrapBtn = document.getElementById('runFullScrapBtn');
     let scrapRunInProgress = false;
+    let scrapProgressTimer = null;
+    let scrapProgressLastSeq = 0;
+    let currentScrapRunId = '';
     let authRequiredPanel = null;
     const authRenewalState = {};
     const authStatusTimers = new Map();
@@ -799,6 +819,52 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         };
 
+        async function pollScrapProgressOnce() {
+            if (!currentScrapRunId) return;
+
+            const params = new URLSearchParams({
+                run_id: currentScrapRunId,
+                after: String(scrapProgressLastSeq)
+            });
+            const response = await fetch(`/api/scrap-progress?${params.toString()}`, {
+                cache: 'no-store'
+            }).catch(() => null);
+            if (!response || !response.ok) return;
+
+            const payload = await response.json().catch(() => null);
+            if (!payload || payload.run_id !== currentScrapRunId) return;
+
+            (payload.events || [])
+                .filter(isScrapProgressEventLoggable)
+                .forEach(event => {
+                    scrapProgressLastSeq = Math.max(scrapProgressLastSeq, Number(event.seq || 0));
+                    console.info(buildScrapProgressConsoleMessage(event));
+                });
+        }
+
+        function startScrapProgressPolling(runId) {
+            currentScrapRunId = runId;
+            scrapProgressLastSeq = 0;
+            if (scrapProgressTimer) {
+                clearInterval(scrapProgressTimer);
+            }
+            window.setTimeout(() => {
+                void pollScrapProgressOnce();
+            }, 300);
+            scrapProgressTimer = window.setInterval(() => {
+                void pollScrapProgressOnce();
+            }, 1500);
+        }
+
+        async function stopScrapProgressPolling() {
+            if (scrapProgressTimer) {
+                clearInterval(scrapProgressTimer);
+                scrapProgressTimer = null;
+            }
+            await pollScrapProgressOnce();
+            currentScrapRunId = '';
+        }
+
         async function executeScrap(mode, triggerBtn) {
             if (scrapRunInProgress) {
                 alert('이미 스크랩이 실행 중입니다.');
@@ -827,12 +893,15 @@ document.addEventListener('DOMContentLoaded', () => {
                     return;
                 }
 
+                const runId = createScrapRunId();
+                startScrapProgressPolling(runId);
                 const response = await fetch('/api/run-scrap', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ mode })
+                    body: JSON.stringify({ mode, run_id: runId })
                 });
                 const result = await response.json().catch(() => ({}));
+                await pollScrapProgressOnce();
 
                 if (result.status === 'success') {
                     showScrapResultModal(result, mode);
@@ -849,6 +918,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 console.error('Scraping Error:', error);
                 alert('서버와 통신 중 오류가 발생했습니다.');
             } finally {
+                await stopScrapProgressPolling();
                 scrapRunInProgress = false;
                 setScrapButtonsDisabled(false);
                 if (triggerBtn && originalContent !== null) {
