@@ -76,6 +76,29 @@ X(Twitter) 인증은 producer와 consumer 역할을 분리해 관리합니다.
 - `twitter_scrap_single.py`: `AUTH_HOME/x/cookies.json`과 latest dated snapshot fallback -> `twitter-cli`
 - `inject_x_cookies.py`: current cookie snapshot을 persistent profile에 재주입
 
+X 수동 인증 갱신이 필요한 경우:
+
+- `twitter_scrap_single.py` 상세 조회가 반복 실패
+- `twitter-cli` 토큰 누락 메시지 발생
+- `AUTH_HOME/x/cookies.json`에 `auth_token` 또는 `ct0` 누락
+- X 로그인 만료, 보안 확인, 추가 인증 화면 발생
+
+앱 로그인 버튼이나 `renew.py --web`을 쓰지 않고 직접 갱신할 때:
+
+```powershell
+& "C:\Program Files\Google\Chrome\Application\chrome.exe" `
+  --user-data-dir="$env:USERPROFILE\.config\auth\x\user_data" `
+  --new-window "https://x.com/i/flow/login"
+```
+
+Chrome 로그인/동기화 안내가 뜨면 Google 계정으로 로그인하지 말고 `로그인 안함`을 선택합니다. X 로그인 후 Chrome을 완전히 닫고 export/검증을 진행합니다.
+
+수동 갱신 성공 기준:
+
+- `AUTH_HOME/x/cookies.json`이 최신 `cookies_YYYYMMDD_HHmm.json`을 가리킴
+- 쿠키에 `auth_token`, `ct0`가 모두 존재
+- `twitter-cli` 상세 조회 성공
+
 producer용 X Chrome 프로필을 다시 저장할 때:
 
 ```powershell
