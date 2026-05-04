@@ -45,6 +45,7 @@ scripts/*
 !scripts/recover_threads_detail_failures.py
 !scripts/sync_auth_runtime.ps1
 !scripts/validate_sns_hub_launcher.ps1
+!scripts/verify_auth_panel_headless.mjs
 
 # Terminal Paste Image folder
 .cp-images/

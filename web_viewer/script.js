@@ -29,6 +29,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const managementModal = document.getElementById('managementModal');
     const closeManagementModalBtn = document.getElementById('closeManagementModal');
     const invisiblePostsList = document.getElementById('invisiblePostsList');
+    const scrapResultModal = document.getElementById('scrapResultModal');
+    const scrapResultTitle = document.getElementById('scrapResultTitle');
+    const scrapResultSubtitle = document.getElementById('scrapResultSubtitle');
+    const scrapResultBody = document.getElementById('scrapResultBody');
+    const closeScrapResultModalBtn = document.getElementById('closeScrapResultModal');
+    const confirmScrapResultModalBtn = document.getElementById('confirmScrapResultModal');
+    const copyAuthRenewalPromptBtn = document.getElementById('copyAuthRenewalPromptBtn');
 
     let allPosts = [];
     let searchResults = null;
@@ -40,6 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let _ioObserver = null;
     let _ioSentinel = null;
     let columns = [];
+    let currentAuthRenewalPrompt = '';
     let currentSort = localStorage.getItem('sns_sort_order') || 'date'; // Persist sort order
     const _postDetailCache = new Map();
     const _inFlightDetails = new Set();
@@ -212,6 +220,138 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         return [...platforms].filter(platform => Object.prototype.hasOwnProperty.call(authPlatformLabels, platform));
+    }
+
+    function getScrapStats(result) {
+        return {
+            total: Number(result?.stats?.total || 0),
+            threads: Number(result?.stats?.threads || 0),
+            linkedin: Number(result?.stats?.linkedin || 0),
+            twitter: Number(result?.stats?.twitter || 0),
+            total_count: Number(result?.stats?.total_count || 0),
+            threads_count: Number(result?.stats?.threads_count || 0),
+            linkedin_count: Number(result?.stats?.linkedin_count || 0),
+            twitter_count: Number(result?.stats?.twitter_count || 0)
+        };
+    }
+
+    function buildAuthRenewalPrompt(platforms) {
+        const labels = platforms
+            .map(platform => authPlatformLabels[platform] || platform)
+            .filter(Boolean)
+            .join(', ');
+
+        return [
+            `D:\\vibe-coding\\scrap_sns 프로젝트에서 ${labels} 인증 세션을 수동 갱신하려고 합니다.`,
+            '앱의 로그인 열기 버튼이나 자동화 브라우저 로그인은 사용하지 마세요.',
+            '먼저 README.md의 인증 갱신 섹션과 utils/auth_paths.py, scripts/auth_runtime/renew.py의 현재 인증 경로를 확인한 뒤,',
+            '현재 구조에 맞는 수동 갱신 절차를 안내하고 완료 후 세션 유효성 검증까지 진행해 주세요.'
+        ].join('\n');
+    }
+
+    function buildScrapResultViewModel(result, mode) {
+        const stats = getScrapStats(result);
+        const authPlatforms = getAuthRequiredPlatforms(result);
+        const failedPlatforms = getFailedPlatforms(result)
+            .filter(platform => !authPlatforms.includes(platform));
+
+        const rows = mode === 'all'
+            ? [
+                { label: 'Threads', delta: `${stats.threads_count}건`, total: '전체 재수집' },
+                { label: 'LinkedIn', delta: `${stats.linkedin_count}건`, total: '전체 재수집' },
+                { label: 'X', delta: `${stats.twitter_count}건`, total: '전체 재수집' }
+            ]
+            : [
+                { label: 'Threads', delta: `${stats.threads}건 추가`, total: `전체 ${stats.threads_count}건` },
+                { label: 'LinkedIn', delta: `${stats.linkedin}건 추가`, total: `전체 ${stats.linkedin_count}건` },
+                { label: 'X', delta: `${stats.twitter}건 추가`, total: `전체 ${stats.twitter_count}건` }
+            ];
+
+        return {
+            title: mode === 'all' ? '전체 재수집 완료' : '업데이트 완료',
+            totalLine: mode === 'all'
+                ? `전체 ${stats.total_count}건`
+                : `총 ${stats.total}건 신규 추가 · 전체 ${stats.total_count}건`,
+            rows,
+            authPlatforms,
+            authLabels: authPlatforms.map(platform => authPlatformLabels[platform] || platform),
+            failedLabels: failedPlatforms.map(platform => authPlatformLabels[platform] || platform),
+            authPrompt: authPlatforms.length > 0 ? buildAuthRenewalPrompt(authPlatforms) : ''
+        };
+    }
+
+    function hideScrapResultModal() {
+        if (!scrapResultModal) return;
+        scrapResultModal.classList.remove('show');
+        document.body.classList.remove('modal-open');
+        window.setTimeout(() => {
+            scrapResultModal.classList.add('hidden');
+            currentAuthRenewalPrompt = '';
+        }, 300);
+    }
+
+    function renderScrapResultModal(model) {
+        if (!scrapResultTitle || !scrapResultSubtitle || !scrapResultBody) return;
+
+        scrapResultTitle.textContent = model.title;
+        scrapResultSubtitle.textContent = model.totalLine;
+        currentAuthRenewalPrompt = model.authPrompt;
+
+        const rowsHtml = model.rows.map(row => `
+            <div class="scrap-result-row">
+                <span class="text-sm font-semibold text-white">${escapeHtml(row.label)}</span>
+                <span class="text-sm text-gray-200">${escapeHtml(row.delta)}</span>
+                <span class="text-xs text-gray-500">${escapeHtml(row.total)}</span>
+            </div>
+        `).join('');
+
+        const failedHtml = model.failedLabels.length > 0
+            ? `
+                <div class="mt-5 rounded-lg border border-red-400/20 bg-red-400/5 px-4 py-3">
+                    <p class="text-sm font-semibold text-red-200">수집 실패</p>
+                    <p class="text-xs text-gray-400 mt-1">${escapeHtml(model.failedLabels.join(', '))} 수집은 실패해 최신 보유 데이터 기준으로 유지되었을 수 있습니다.</p>
+                </div>
+            `
+            : '';
+
+        const authHtml = model.authLabels.length > 0
+            ? `
+                <div class="mt-5 rounded-lg border border-amber-400/20 bg-amber-400/5 px-4 py-3">
+                    <p class="text-sm font-semibold text-amber-100">인증 갱신 필요</p>
+                    <p class="text-xs text-gray-300 mt-2 leading-relaxed">
+                        ${escapeHtml(model.authLabels.join(', '))} 로그인 세션이 만료된 것으로 보입니다.
+                        앱에서 여는 로그인 창은 자동화 브라우저로 감지되어 로그인에 실패할 수 있습니다.
+                    </p>
+                    <p class="text-xs text-gray-400 mt-3">아래 프롬프트를 입력하고 갱신하세요.</p>
+                    <pre class="scrap-auth-prompt mt-3 rounded-lg border border-white/10 bg-black/30 px-3 py-3 text-xs text-gray-200 leading-relaxed">${escapeHtml(model.authPrompt)}</pre>
+                </div>
+            `
+            : '';
+
+        scrapResultBody.innerHTML = `
+            <section>
+                <div class="rounded-lg border border-white/10 bg-black/15 px-4 py-2">
+                    ${rowsHtml}
+                </div>
+            </section>
+            ${failedHtml}
+            ${authHtml}
+        `;
+
+        if (copyAuthRenewalPromptBtn) {
+            copyAuthRenewalPromptBtn.classList.toggle('hidden', model.authLabels.length === 0);
+        }
+    }
+
+    function showScrapResultModal(result, mode) {
+        if (!scrapResultModal) return;
+        const model = buildScrapResultViewModel(result, mode);
+        renderScrapResultModal(model);
+        scrapResultModal.classList.remove('hidden');
+        window.setTimeout(() => {
+            scrapResultModal.classList.add('show');
+            document.body.classList.add('modal-open');
+        }, 10);
     }
 
     function isLocalAuthPanelVerifyAllowed() {
@@ -593,43 +733,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     body: JSON.stringify({ mode })
                 });
                 const result = await response.json().catch(() => ({}));
-                const authRequiredPlatforms = getAuthRequiredPlatforms(result);
-                const failedPlatforms = getFailedPlatforms(result);
 
-                if (authRequiredPlatforms.length > 0) {
-                    showAuthRequiredPanel(authRequiredPlatforms);
-                } else if (result.status === 'success') {
-                    const stats = result.stats || {
-                        total: 0,
-                        threads: 0,
-                        linkedin: 0,
-                        twitter: 0,
-                        total_count: 0,
-                        threads_count: 0,
-                        linkedin_count: 0,
-                        twitter_count: 0
-                    };
-                    let msg;
-                    if (mode === 'all') {
-                        msg = `전체 재수집 완료! (전체 ${stats.total_count}건)\n\n`
-                            + `쓰레드 — ${stats.threads_count}건\n`
-                            + `링크드인 — ${stats.linkedin_count}건\n`
-                            + `X — ${stats.twitter_count}건\n\n`
-                            + `데이터를 새로고침합니다.`;
-                    } else {
-                        msg = `스크래핑 완료! 총 ${stats.total}건 신규 추가 (전체 ${stats.total_count}건)\n\n`
-                            + `쓰레드 — ${stats.threads}건 추가 (전체 ${stats.threads_count}건)\n`
-                            + `링크드인 — ${stats.linkedin}건 추가 (전체 ${stats.linkedin_count}건)\n`
-                            + `X — ${stats.twitter}건 추가 (전체 ${stats.twitter_count}건)\n\n`
-                            + `데이터를 새로고침합니다.`;
-                    }
-                    if (failedPlatforms.length > 0) {
-                        const failedLabels = failedPlatforms
-                            .map(platform => authPlatformLabels[platform] || platform)
-                            .join(', ');
-                        msg += `\n\n주의: ${failedLabels} 수집은 실패해 최신 보유 데이터 기준으로 유지되었을 수 있습니다.`;
-                    }
-                    alert(msg);
+                if (result.status === 'success') {
+                    showScrapResultModal(result, mode);
                     fetchData();
                 } else {
                     alert(`에러 발생: ${result.message}`);
@@ -750,6 +856,30 @@ ${item.body}
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && imageModal.classList.contains('show')) hideModal();
     });
+
+    if (closeScrapResultModalBtn) {
+        closeScrapResultModalBtn.addEventListener('click', hideScrapResultModal);
+    }
+
+    if (confirmScrapResultModalBtn) {
+        confirmScrapResultModalBtn.addEventListener('click', hideScrapResultModal);
+    }
+
+    if (copyAuthRenewalPromptBtn) {
+        copyAuthRenewalPromptBtn.addEventListener('click', async () => {
+            if (!currentAuthRenewalPrompt) return;
+            try {
+                await navigator.clipboard.writeText(currentAuthRenewalPrompt);
+                const originalText = copyAuthRenewalPromptBtn.textContent;
+                copyAuthRenewalPromptBtn.textContent = '복사됨';
+                window.setTimeout(() => {
+                    copyAuthRenewalPromptBtn.textContent = originalText;
+                }, 1200);
+            } catch (error) {
+                alert('프롬프트 복사에 실패했습니다.');
+            }
+        });
+    }
 
     // Window resize handling for Masonry
     let resizeTimeout;
