@@ -1,9 +1,9 @@
 ﻿{
     "metadata": {
-        "updated_at": "2026-04-23T19:12:43.317110",
-        "max_sequence_id": 1113,
-        "total_count": 1113,
-        "threads_count": 782,
+        "updated_at": "2026-04-24T00:35:01.305655",
+        "max_sequence_id": 1120,
+        "total_count": 1120,
+        "threads_count": 789,
         "linkedin_count": 268,
         "twitter_count": 79,
         "execution_mode": "parallel_multi_window"
@@ -27283,6 +27283,196 @@
             "taken_at": 1776510011,
             "original_item_count": 16,
             "platform_sequence_id": 739
+        },
+        {
+            "sequence_id": 1114,
+            "platform_id": "DXeTAltgs1D",
+            "sns_platform": "threads",
+            "code": "DXeTAltgs1D",
+            "urn": "",
+            "username": "choi.openai",
+            "display_name": "CHOI",
+            "full_text": "중국의 유명 개발자 유튜버 화슈(Huashu)가 'Claude Design'을 역설계한 'Huashu Design'을 GitHub에 무료 오픈소스로 공개했습니다.\n\nClaude Design은 훌륭한 디자인 툴이지만 너무 많은 용량을 소모한다는 단점이 있었는데요.\n\n이번에 공개된 스킬은 AI 에이전트에 설치하면, 지시 한 번에 클릭 가능한 앱 프로토타입부터 편집 가능한 PPTX, 애니메이션까지 단 몇 분 만에 만들어냅니다.\n\n특정 서비스에 종속되어 있던 강력한 기능이 오픈소스로 풀리면서, 누구나 자신의 에이전트에 최상급 디자인 능력을 이식할 수 있게 되었습니다.\n\n---\n\n깃허브 :\nhttps://github.com/alchaincyf/huashu-design",
+            "media": [
+                "https://scontent-icn2-1.cdninstagram.com/v/t51.71878-15/670622865_986874223885728_2416490786800478939_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=108&ig_cache_key=Mzg4MTYyMzUzMjIxNTY1MTY1MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY0MHgzNjAuc2RyLkMzIn0%3D&_nc_ohc=ka45iPd5RtMQ7kNvwGdNroe&_nc_oc=Adr_o9Apjg29xW0rsHhgoEGRELl4D1_bLxkUhFKJxjnBJnlc6ONPlKKQJp253p5dn_U&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=S_czksQkRuAbWWVmJUefvQ&_nc_ss=7a22e&oh=00_Af2eiS0jm6jwKNHJUeXoToRK8AbLIoJo5BqyubTGL77MBQ&oe=69F00EA7"
+            ],
+            "url": "https://www.threads.com/@choi.openai/post/DXeTAltgs1D",
+            "created_at": "2026-04-23 21:00:05",
+            "date": "2026-04-23",
+            "crawled_at": "2026-04-24T00:33:35.377",
+            "source": "consumer_detail",
+            "local_images": [
+                "web_viewer/images/2db96f98d3c2ef815875df8a5f5616bf.jpg"
+            ],
+            "is_detail_collected": true,
+            "is_merged_thread": true,
+            "root_code": "DXeTAltgs1D",
+            "pk": "3881623532215651651",
+            "taken_at": 1776945605,
+            "original_item_count": 2,
+            "platform_sequence_id": 747
+        },
+        {
+            "sequence_id": 1115,
+            "platform_id": "DXeG0RhE1Yy",
+            "sns_platform": "threads",
+            "code": "DXeG0RhE1Yy",
+            "urn": "",
+            "username": "geumverse_ai",
+            "display_name": "Geum Verse",
+            "full_text": "Claude Code + Obsidian로 만드는 자동 지식 베이스 💡\n소스를 넣으면 Claude가 알아서 읽고, 엔티티·개념을 추출해 Obsidian 볼트에 위키 페이지로 정리해줌. 질문하면 위키에서 근거 페이지를 인용해 답변.\nAndrej Karpathy의 LLM Wiki 패턴 기반으로, 세션이 끝나도 hot cache로 컨텍스트가 유지됨.\n주요 기능:\n\t•\t/wiki /save /autoresearch 커맨드\n\t•\t자율 웹 리서치 → 자동 저장\n\t•\t8가지 vault 점검 (오류 링크, 고립 노트 등)\n\t•\tClaude Code 플러그인으로 2분 설치 가능\nMIT 오픈소스\n🔗 github.com/AgriciDaniel/claude-obsidian",
+            "media": [],
+            "url": "https://www.threads.com/@geumverse_ai/post/DXeG0RhE1Yy",
+            "created_at": "2026-04-23 19:13:32",
+            "date": "2026-04-23",
+            "crawled_at": "2026-04-24T00:33:35.408",
+            "source": "consumer_detail",
+            "local_images": [],
+            "is_detail_collected": true,
+            "is_merged_thread": true,
+            "root_code": "DXeG0RhE1Yy",
+            "pk": "3881569909340329522",
+            "taken_at": 1776939212,
+            "original_item_count": 1,
+            "platform_sequence_id": 746
+        },
+        {
+            "sequence_id": 1116,
+            "platform_id": "DXebWEVkrWe",
+            "sns_platform": "threads",
+            "code": "DXebWEVkrWe",
+            "urn": "",
+            "username": "choi_hyug_8110",
+            "display_name": "최병혁",
+            "full_text": "AI 토큰을 녹여 PM과 대학원의 몸값을 높이는 최고의 도구: GBrain\n\n: PM입장에서 프로젝트의 방향성을 명확하게 파악하고, 구성원들이 업무 진행을 체크하며 행정에서 빈틈이 발생하지 않게 만드는 것은 굉장히 어렵습니다.\n\n이런 고민이 있는 PM/연구자라면 이번달 핫했던 Gbrain을 꼭 한번 사용해보기를 권합니다. \n\n프로젝트에서 진행되어야 하는 핵심 모듈, 거기에 속해있는 팀과 구성원, 투자되어야 하는 자원을 정리하고 그리고 실시간으로 변하는 상황을 이 email과 회외록에서 추적해서 현재 프로젝트가 얼마나 진행되고 막혀 있는 곳이 어디인지 당신의 agent AI가 명확하게 찾아줍니다.\n\n특히 이런 문서들을 종류별로 분류할 필요 없이 메일은 자동 연결, 회의록과 연구자료는 하나의 폴더에 몰아 넣어둬도 지치지 않는 AI 에이전트가 스스로 문서를 읽고 wiki를 업데이트 합니다.\n\n비용도 매우 저렴합니다. 1년치 과제를 전부 정리해도 토큰비가 300원도 발생하니깐요.\n\n---\n\nhttps://github.com/garrytan/gbrain/tree/master\n\n연구자료/회의록/행정문서가 모여 있는 폴더에서 claude code를 열고 gbrain 스킬로 설치 후 정리해보세요. \n\n혼자사용하기도 좋고, supabase 기반으로 MCP를 여는 것 까지 skills 내에 내장되어 있습니다. 내가 만든 wiki로 프로젝트/연구에 포함된 구성원들도 현재 프로젝트가 진행되고 있는 상황이나 프로젝트에 대한 의문, 궁금증을 실시간으로 확인할 수 있는 연구의 wiki가 생깁니다.\n\nLLM wiki가 핫했지만, 결국 문서를 사람이 관리해야 하는 단계가 늘어나면 포기하기 마련인데 gbrain은 정말 이런 문제를 명확히 해결해 PM과 연구자들에게 프로젝트 전용 뇌가 되어줍니다.",
+            "media": [
+                "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/659024123_17923176411327226_5454982073457222631_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ig_cache_key=Mzg4MTY2MDE5MjU4MTEzNzgyMg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwODB4MTM1MC5zZHIuQzMifQ%3D%3D&_nc_ohc=uCbNqD6gHA4Q7kNvwH8N5gC&_nc_oc=Adp9kdMpDhxL9Yv7cjob2BnDWO9kReLeDfdbsya2_7KjqhbMKH_q7JyeRvLseGLDyPA&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=fKh2VyGN3XNxdeKAZOpMUw&_nc_ss=7a22e&oh=00_Af3lHnjRu1YMf5cDjTayARAYqYLH52Has_gdOU09O4XAQw&oe=69F006F9"
+            ],
+            "url": "https://www.threads.com/@choi_hyug_8110/post/DXebWEVkrWe",
+            "created_at": "2026-04-23 22:12:55",
+            "date": "2026-04-23",
+            "crawled_at": "2026-04-24T00:33:35.433",
+            "source": "consumer_detail",
+            "local_images": [
+                "web_viewer/images/bf27633b6a99bc4fb041c1d66ea06ea8.jpg"
+            ],
+            "is_detail_collected": true,
+            "is_merged_thread": true,
+            "root_code": "DXebWEVkrWe",
+            "pk": "3881660192581137822",
+            "taken_at": 1776949975,
+            "original_item_count": 2,
+            "platform_sequence_id": 745
+        },
+        {
+            "sequence_id": 1117,
+            "platform_id": "DXRF2clEY0f",
+            "sns_platform": "threads",
+            "code": "DXRF2clEY0f",
+            "urn": "",
+            "username": "lucas_flatwhite",
+            "display_name": "lucas",
+            "full_text": "📙 Claude Code 잘 사용하기 (89페이지)\nhttps://drive.google.com/file/d/1uxLtdgTwbQdnv_ukLESyl3LAitbUwblE/view\n\n이분은 전사 세미나에서 1시간동안 Claude Code를 주제로 발표를 하셨네요.\n\n💬 \"Context Engineering, Harness 설계, CLAUDE.md 운영, SDD/TDD, Plan Mode 활용, 멀티 에이전트 패턴, 실전 워크플로우까지 다뤄습니다.\n\n89장의 슬라이드 전부 Claude Code로 제작했고, 발표 제작 과정 자체를 마지막 섹션에서 사례로 공유했습니다.\"\n\n훌륭한 슬라이드를 공유해주셨네요. 감사드려요!\n\n---\n\n이런 공유는 더 많아지고 있어요!\n\nhttps://www.linkedin.com/posts/youngdongkim_%ED%81%B4%EB%A1%9C%EB%93%9C%EC%BD%94%EB%93%9C-%EC%9E%98-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-activity-7447188897098522624-jtPO/",
+            "media": [
+                "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/670848109_17890177608462362_662107495450478318_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=Mzg3NzkwNjQ4MDUwMzAzOTU3OQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjIxNjB4MTIxNS5zZHIuQzMifQ%3D%3D&_nc_ohc=SvE6e5fhLdAQ7kNvwEihtjy&_nc_oc=AdolRJpkhg7zTHm5L8ssKkryGAtWkbIG6hu6Lu80X3Ya-H1rJZUY0EcZBZDdehG8th4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=BsYWGd5Ta3WgWlsndOrwug&_nc_ss=7a22e&oh=00_Af0tbF-kUwbl4bEM5m-ZUQyHa-ltUHyoujvVLlYMkxr2rw&oe=69F0294C"
+            ],
+            "url": "https://www.threads.com/@lucas_flatwhite/post/DXRF2clEY0f",
+            "created_at": "2026-04-18 17:54:58",
+            "date": "2026-04-18",
+            "crawled_at": "2026-04-24T00:33:41.517",
+            "source": "consumer_detail",
+            "local_images": [
+                "web_viewer/images/ae471969f82688d7b3054a6aaf8a9147.jpg"
+            ],
+            "is_detail_collected": true,
+            "is_merged_thread": true,
+            "root_code": "DXRF2clEY0f",
+            "pk": "3877906485913685279",
+            "taken_at": 1776502498,
+            "original_item_count": 2,
+            "platform_sequence_id": 742
+        },
+        {
+            "sequence_id": 1118,
+            "platform_id": "DXQTA7AEwxL",
+            "sns_platform": "threads",
+            "code": "DXQTA7AEwxL",
+            "urn": "",
+            "username": "softdaddy_o",
+            "display_name": "아저님",
+            "full_text": "긴 문서를 AI한테 통째로 넣으면 비용이 말이 안 되지. 내가 어제 뜯어본 방법이 하나 있어.\n\nLightRAG라는 홍콩대 팀 프로젝트인데 지금 깃허브 28,000스타야. EMNLP 2025에 논문도 통과했고.\n\n일반 RAG는 문서를 잘게 쪼개서 벡터로 검색하잖아. 근데 이건 문서에서 \"누가 뭐다, 뭐랑 뭐가 연결됐다\"를 추출해서 지식 그래프를 만들어 둬. 질문이 들어오면 그래프랑 벡터를 같이 타고 가.\n\n요점은 비용이야. 논문 기준으로 GraphRAG 대비 6,000배 저렴. 토큰 자체도 10배 덜 먹어. 긴 문서일수록 격차가 벌어져.\n\n500페이지짜리 제품 매뉴얼이나 사내 위키를 생각해봐. 그냥 넣으면 한 번 질문에 수십만 토큰이 날아가는데, 그래프로 한 번 구축해두면 질문마다 필요한 조각만 꺼내 써.\n\n---\n\nhttps://github.com/HKUDS/LightRAG\n\n---\n\n간단히 만들어본 쇼케이스\n\nhttps://aiki.softdaddy-o.com/ko/projects/lightrag/",
+            "media": [
+                "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/671090153_17879445684559701_4163255066095853885_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=Mzg3NzY4MjkwNTQwMTcyMzk3OQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEyMDB4NjAwLnNkci5DMyJ9&_nc_ohc=CQG4CdCn5WYQ7kNvwEcmvga&_nc_oc=Adqn8aMNX4vA3NLYt69Bzfd5wwDv5KPjag0ddwdLsEuWnsXARvfw48AkPhA7Gv7fCC0&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=jlDVwvoQGF_Y34I7TudzCg&_nc_ss=7a22e&oh=00_Af1kvNy4Tvqqxseo96GQ_BYF2HexWWjExP9rmesmTQT37w&oe=69EFFEF1"
+            ],
+            "url": "https://www.threads.com/@softdaddy_o/post/DXQTA7AEwxL",
+            "created_at": "2026-04-18 10:30:46",
+            "date": "2026-04-18",
+            "crawled_at": "2026-04-24T00:33:41.517",
+            "source": "consumer_detail",
+            "local_images": [
+                "web_viewer/images/a76cdc55492420e4b3dd2e664fd1c7e5.jpg"
+            ],
+            "is_detail_collected": true,
+            "is_merged_thread": true,
+            "root_code": "DXQTA7AEwxL",
+            "pk": "3877682905401723979",
+            "taken_at": 1776475846,
+            "original_item_count": 3,
+            "platform_sequence_id": 743
+        },
+        {
+            "sequence_id": 1119,
+            "platform_id": "DXQ9B3rEURq",
+            "sns_platform": "threads",
+            "code": "DXQ9B3rEURq",
+            "urn": "",
+            "username": "taehyeong_lim",
+            "display_name": "Taehyeong Lim, Ph.D.",
+            "full_text": "<Claude Design 을 위한 기업 UI 디자인 라이브러리>\nhttps://github.com/bradtraversy/design-resources-for-developers#design-systems--style-guides\n\n찾아왔다. \n들어가서 봐라..\n유명 기업들 디자인 리소스 링크 다 찾아논거 퍼왔다.\n\n링크 타고 들어가면 대부분 Figma UI Kit 준다.\nFigma들어가서 save local copy 해라. 그러면 .fig 파일 다운받는다.\n그거 그냥\nClaude Design 에서 템플릿 만드는데에 가서 파일 올려라.\n\n그럼 앞으로 기업 디자인으로 일괄 적용 평생 가능하다.\n\n꿀팁 주고 간다. 진짜. 클로드 구독해라.",
+            "media": [],
+            "url": "https://www.threads.com/@taehyeong_lim/post/DXQ9B3rEURq",
+            "created_at": "2026-04-18 16:37:53",
+            "date": "2026-04-18",
+            "crawled_at": "2026-04-24T00:33:41.517",
+            "source": "consumer_detail",
+            "local_images": [],
+            "is_detail_collected": true,
+            "is_merged_thread": true,
+            "root_code": "DXQ9B3rEURq",
+            "pk": "3877867688501003370",
+            "taken_at": 1776497873,
+            "original_item_count": 1,
+            "platform_sequence_id": 744
+        },
+        {
+            "sequence_id": 1120,
+            "platform_id": "DXPI1B5D6su",
+            "sns_platform": "threads",
+            "code": "DXPI1B5D6su",
+            "urn": "",
+            "username": "ivanivan.eth",
+            "display_name": "아이반",
+            "full_text": "AI 스킬 쓰면 오히려 성능이 저하되는 이유\n\nvercel\n 에서 재미난 실험을 했는데\n스킬을 붙이면 더 똑똑해질 줄 알았는데..\n\n오히려 성능이 안 올라가거나\n떨어지는 경우가 나왔슴다\n\n그 이유에 대해 쉽게 이야기해드리겠슴다!\n\n---\n\n1/\n먼저 가장 좋은 방법은\n스킬 덕지덕지 붙이는 것보다\n\n프로젝트 루트에 AGENTS.md 하나 두고\n문서 인덱스만 넣어주는 방식임다\n\n단순해보이지만\n이게 스킬보다 더 잘 작동했다고 함다..!\n\n특히 Next.js 16처럼\n모델이 아직 잘 모르는 최신 API 환경에서는\n더 큰 차이가 벌어졌다고 하네유\n\n---\n\n2/\n보통은 이렇게 생각함다\n\n필요할 때 skill 호출해서\n문서 읽고 코드 만들면 되겠지?\n\n이론상 완벽한 구조이지만\n현실은 달랐음다\n\n---\n\n3/\n실험 결과를 보면 충격적인데\n\n- 그냥: 53%\n- 스킬: 53%\n- 스킬 + 강한 지시: 79%\n- AGENTS.md: 100%\n\n스킬을 넣어도\nAI가 제대로 활용하질 못하고 있었던 것임다..!\n\n---\n\n4/\n왜 이런 일이 생겼냐면\n\nAI 입장에서 skill 구조는\n중간에 판단이 필요함다\n\n- 지금 문서 봐야 하나?\n- skill 꺼내야 하나?\n- 코드부터 볼까?\n\n하지만 이 판단이 들어가는 순간\n성능에 영향을 줄 수 밖에 업는 문제가 있쥬\n\n---\n\n5/\n반면에 AGENTS.md는 다름다\n\n항상 참조하는 파일이라\nAI가 판단할 필요가 업슴다\n\n그래서 훨씬 안정적인 것임다\n\n---\n\n6/\n그리고 또 중요한건\n문서를 다 넣은 것이 아니라\n인덱스만 넣어도 충분함다\n\n어디 문서를 봐야 하는지만\n알려줬는데도\n성능이 제대로 나오는 것을 확인할 수 있었슴다\n\n---\n\n7/ 결론\n\nAI 성능 올리는 방법은\n더 많은 기능 추가가 아니라\n덜 고민하게 만드는 구조일 수도 있는 것임다",
+            "media": [
+                "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/669983255_17858452803630472_4586918549768382593_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=Mzg3NzM1NjYzMjcyNDcxMjIzOA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEyMDB4NjU5LnNkci5DMyJ9&_nc_ohc=jocGIBEsVt0Q7kNvwFj92FD&_nc_oc=AdqXRmCsynpOm_rN4eCvLwSpVK5vfxVAlLb04cAqB_Fys4lLf0C8oz2SqYXlgi_IwFU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=K74N5I_kQ4OtG4CjPonQoQ&_nc_ss=7a22e&oh=00_Af3plAgyijAY1yQvr6FX-vo8OUfQ_vAFdhlFBNMeMWZVUw&oe=69F01F34",
+                "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/670275141_17858452842630472_865964683785538170_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ig_cache_key=Mzg3NzM1NjcyNDE1MjE2MTUwNg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjk5Mng2OTYuc2RyLkMzIn0%3D&_nc_ohc=85S0Uy1IS70Q7kNvwG1J2c-&_nc_oc=Adp_VvhmZ6oo1Es3HoQkMkWbp6dfhW0ollaXByMn3c2UwL0tFiijr5Q2Rxh2iVPbkCA&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=K74N5I_kQ4OtG4CjPonQoQ&_nc_ss=7a22e&oh=00_Af0aGNSXtsi4CsU-7RMnnwZZaU0Me91K5cqPu4myp52ZMA&oe=69F014D6"
+            ],
+            "url": "https://www.threads.com/@ivanivan.eth/post/DXPI1B5D6su",
+            "created_at": "2026-04-17 23:42:31",
+            "date": "2026-04-17",
+            "crawled_at": "2026-04-24T00:33:44.534",
+            "source": "consumer_detail",
+            "local_images": [
+                "web_viewer/images/cf507df266eebec7dfdded7cb960f96e.jpg",
+                "web_viewer/images/e06d6a19baa91357a9fa980e3f8b44b3.jpg"
+            ],
+            "is_detail_collected": true,
+            "is_merged_thread": true,
+            "root_code": "DXPI1B5D6su",
+            "pk": "3877356632724712238",
+            "taken_at": 1776436951,
+            "original_item_count": 8,
+            "platform_sequence_id": 741
         }
     ]
 }
