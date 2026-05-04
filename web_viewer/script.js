@@ -112,6 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const bulkSelectedCount = document.getElementById('bulkSelectedCount');
     const bulkHideBtn = document.getElementById('bulkHideBtn');
     const bulkFavoriteBtn = document.getElementById('bulkFavoriteBtn');
+    const bulkUnfavoriteBtn = document.getElementById('bulkUnfavoriteBtn');
     const bulkCopyBtn = document.getElementById('bulkCopyBtn');
     const bulkClearBtn = document.getElementById('bulkClearBtn');
 
@@ -253,6 +254,21 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             addSelectedUrlsToSet(favorites, getPostUrls(selected));
+            localStorage.setItem('sns_favorites', JSON.stringify([...favorites]));
+            updateGlobalTags();
+            renderPosts();
+        });
+    }
+
+    if (bulkUnfavoriteBtn) {
+        bulkUnfavoriteBtn.addEventListener('click', () => {
+            const selected = getCurrentSelectedPosts();
+            if (selected.length === 0) {
+                clearSelection();
+                return;
+            }
+
+            removeSelectedUrlsFromSet(favorites, getPostUrls(selected));
             localStorage.setItem('sns_favorites', JSON.stringify([...favorites]));
             updateGlobalTags();
             renderPosts();
@@ -1756,15 +1772,37 @@ ${item.body}
         return posts.filter((post) => selectedUrls.has(resolvePostUrl(post)));
     }
 
+    function getBulkCopyHeading(post) {
+        const text = post.full_text || post.full_text_preview || '';
+        const firstLine = String(text)
+            .split(/\r?\n/)
+            .map((line) => line.trim())
+            .find(Boolean);
+        const fallback = post.display_name || post.username || post.user || '게시글';
+        return String(firstLine || fallback)
+            .replace(/^#+\s*/, '')
+            .slice(0, 80);
+    }
+
     function buildBulkCopyText(posts) {
         if (!Array.isArray(posts) || posts.length === 0) return '';
-        return posts.map((post) => buildCopyText(post)).join('\n\n---\n\n');
+        return posts
+            .map((post) => `## ${getBulkCopyHeading(post)}\n\n${buildCopyText(post)}`)
+            .join('\n\n---\n\n');
     }
 
     function addSelectedUrlsToSet(targetSet, selectedUrls) {
         if (!targetSet || !selectedUrls) return targetSet;
         selectedUrls.forEach((url) => {
             if (url) targetSet.add(url);
+        });
+        return targetSet;
+    }
+
+    function removeSelectedUrlsFromSet(targetSet, selectedUrls) {
+        if (!targetSet || !selectedUrls) return targetSet;
+        selectedUrls.forEach((url) => {
+            if (url) targetSet.delete(url);
         });
         return targetSet;
     }

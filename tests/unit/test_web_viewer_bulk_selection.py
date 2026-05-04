@@ -92,7 +92,7 @@ def test_get_visible_selected_posts_preserves_current_screen_order():
     assert payload["result"] == ["Alice", "Bob"]
 
 
-def test_build_bulk_copy_text_joins_existing_single_post_format():
+def test_build_bulk_copy_text_adds_obsidian_headings_to_each_post():
     node_script = textwrap.dedent(
         """
         const fs = require('fs');
@@ -134,11 +134,12 @@ def test_build_bulk_copy_text_joins_existing_single_post_format():
 
         eval(extractFunction('resolvePostUrl'));
         eval(extractFunction('buildCopyText'));
+        eval(extractFunction('getBulkCopyHeading'));
         eval(extractFunction('buildBulkCopyText'));
 
         const result = buildBulkCopyText([
           {
-            full_text: '첫 번째 본문',
+            full_text: '# 첫 번째 본문\\n나머지 본문',
             post_url: 'https://example.com/1',
             display_name: '첫작성자',
             created_at: '2026-05-04T10:00:00+09:00',
@@ -159,14 +160,79 @@ def test_build_bulk_copy_text_joins_existing_single_post_format():
 
     payload = run_node_json(node_script)
     assert payload["result"] == (
-        "첫 번째 본문\n\n"
+        "## 첫 번째 본문\n\n"
+        "# 첫 번째 본문\n나머지 본문\n\n"
         "*출처: https://example.com/1\n"
         "*첫작성자 / 2026-05-04 / linkedin\n\n"
         "---\n\n"
+        "## 두 번째 본문\n\n"
         "두 번째 본문\n\n"
         "*출처: https://example.com/2\n"
         "*second / 2026-05-04 / threads"
     )
+
+
+def test_get_bulk_copy_heading_uses_author_fallback_and_limits_length():
+    node_script = textwrap.dedent(
+        """
+        const fs = require('fs');
+        const src = fs.readFileSync('web_viewer/script.js', 'utf8');
+
+        function extractFunction(name) {
+          const patterns = [`async function ${name}(`, `function ${name}(`];
+          let start = -1;
+          for (const pattern of patterns) {
+            start = src.indexOf(pattern);
+            if (start !== -1) break;
+          }
+          if (start === -1) {
+            console.error(`${name} missing`);
+            process.exit(1);
+          }
+
+          let depth = 0;
+          let end = -1;
+          for (let i = start; i < src.length; i += 1) {
+            const ch = src[i];
+            if (ch === '{') depth += 1;
+            if (ch === '}') {
+              depth -= 1;
+              if (depth === 0) {
+                end = i + 1;
+                break;
+              }
+            }
+          }
+
+          if (end === -1) {
+            console.error(`${name} parse failure`);
+            process.exit(1);
+          }
+
+          return src.slice(start, end);
+        }
+
+        eval(extractFunction('getBulkCopyHeading'));
+
+        const longHeading = getBulkCopyHeading({
+          full_text: '가'.repeat(100),
+          display_name: '작성자'
+        });
+        const fallback = getBulkCopyHeading({
+          full_text: '\\n\\n',
+          display_name: '작성자'
+        });
+
+        console.log(JSON.stringify({
+          longLength: longHeading.length,
+          fallback
+        }));
+        """
+    )
+
+    payload = run_node_json(node_script)
+    assert payload["longLength"] == 80
+    assert payload["fallback"] == "작성자"
 
 
 def test_add_selected_urls_to_set_keeps_existing_values_and_ignores_empty_urls():
@@ -228,3 +294,64 @@ def test_add_selected_urls_to_set_keeps_existing_values_and_ignores_empty_urls()
         "https://example.com/existing",
         "https://example.com/new",
     ]
+
+
+def test_remove_selected_urls_from_set_deletes_only_selected_values():
+    node_script = textwrap.dedent(
+        """
+        const fs = require('fs');
+        const src = fs.readFileSync('web_viewer/script.js', 'utf8');
+
+        function extractFunction(name) {
+          const patterns = [`async function ${name}(`, `function ${name}(`];
+          let start = -1;
+          for (const pattern of patterns) {
+            start = src.indexOf(pattern);
+            if (start !== -1) break;
+          }
+          if (start === -1) {
+            console.error(`${name} missing`);
+            process.exit(1);
+          }
+
+          let depth = 0;
+          let end = -1;
+          for (let i = start; i < src.length; i += 1) {
+            const ch = src[i];
+            if (ch === '{') depth += 1;
+            if (ch === '}') {
+              depth -= 1;
+              if (depth === 0) {
+                end = i + 1;
+                break;
+              }
+            }
+          }
+
+          if (end === -1) {
+            console.error(`${name} parse failure`);
+            process.exit(1);
+          }
+
+          return src.slice(start, end);
+        }
+
+        eval(extractFunction('removeSelectedUrlsFromSet'));
+
+        const target = new Set([
+          'https://example.com/keep',
+          'https://example.com/remove'
+        ]);
+        removeSelectedUrlsFromSet(target, new Set([
+          'https://example.com/remove',
+          '',
+          null,
+          'https://example.com/missing'
+        ]));
+
+        console.log(JSON.stringify({ result: Array.from(target) }));
+        """
+    )
+
+    payload = run_node_json(node_script)
+    assert payload["result"] == ["https://example.com/keep"]
