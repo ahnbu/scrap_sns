@@ -58,36 +58,21 @@ def _refresh_link(link_path: Path, target_path: Path) -> None:
             temp_link.unlink()
 
 
-def export_x_artifacts(stamp: str | None = None) -> tuple[Path, Path]:
-    stamp = stamp or datetime.now().strftime("%Y%m%d_%H%M")
-    x_root = x_user_data().parent
-    x_root.mkdir(parents=True, exist_ok=True)
-    x_user_data().mkdir(parents=True, exist_ok=True)
-    storage_path = x_storage()
-    storage_path.parent.mkdir(parents=True, exist_ok=True)
-    dated_cookie_path = x_root / f"cookies_{stamp}.json"
-
-    with sync_playwright() as playwright:
-        context = playwright.chromium.launch_persistent_context(
-            user_data_dir=str(x_user_data()),
-            channel="chrome",
-            headless=True,
-        )
-        context.storage_state(path=str(storage_path))
-        cookies = context.cookies("https://x.com")
-        context.close()
-
+def _write_x_artifacts(cookies: list[dict], storage_path: Path, stamp: str) -> tuple[Path, Path]:
     token_pair = extract_token_pair(cookies)
     if token_pair is None:
         raise RuntimeError("auth_token/ct0 missing after X export")
 
+    x_root = x_user_data().parent
+    x_root.mkdir(parents=True, exist_ok=True)
+    dated_cookie_path = x_root / f"cookies_{stamp}.json"
     dated_cookie_path.write_text(
         json.dumps(cookies, ensure_ascii=False, indent=2),
         encoding="utf-8",
     )
     _refresh_link(x_cookie_link(), dated_cookie_path)
     _refresh_link(x_flat_cookie(), x_cookie_link())
-    _refresh_link(x_flat_storage(), x_storage())
+    _refresh_link(x_flat_storage(), storage_path)
 
     if not validate_x_cookie_target(dated_cookie_path.name):
         raise RuntimeError("cookies.json still points to stale export target")
@@ -95,3 +80,32 @@ def export_x_artifacts(stamp: str | None = None) -> tuple[Path, Path]:
     print(f"EXPORTED_COOKIE_FILE={dated_cookie_path.name}")
     print(f"VALIDATED_COOKIE_TARGET={dated_cookie_path.name}")
     return dated_cookie_path, storage_path
+
+
+def export_x_artifacts_from_context(context, stamp: str | None = None) -> tuple[Path, Path]:
+    stamp = stamp or datetime.now().strftime("%Y%m%d_%H%M")
+    x_user_data().mkdir(parents=True, exist_ok=True)
+    storage_path = x_storage()
+    storage_path.parent.mkdir(parents=True, exist_ok=True)
+    context.storage_state(path=str(storage_path))
+    cookies = context.cookies("https://x.com")
+    return _write_x_artifacts(cookies, storage_path, stamp)
+
+
+def export_x_artifacts(stamp: str | None = None) -> tuple[Path, Path]:
+    stamp = stamp or datetime.now().strftime("%Y%m%d_%H%M")
+    x_root = x_user_data().parent
+    x_root.mkdir(parents=True, exist_ok=True)
+    x_user_data().mkdir(parents=True, exist_ok=True)
+    storage_path = x_storage()
+    storage_path.parent.mkdir(parents=True, exist_ok=True)
+    with sync_playwright() as playwright:
+        context = playwright.chromium.launch_persistent_context(
+            user_data_dir=str(x_user_data()),
+            channel="chrome",
+            headless=True,
+        )
+        try:
+            return export_x_artifacts_from_context(context, stamp)
+        finally:
+            context.close()

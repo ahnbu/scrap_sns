@@ -58,6 +58,8 @@ created: "2026-04-17 13:25"
 3. 상세 단계는 CLI payload의 첫 항목만 사용해 focal tweet 본문, 미디어, 실제 작성자명만 보강한다. 대화 전체 thread 확장은 하지 않는다.
 4. 3회 이상 실패한 항목은 `scrap_failures_twitter.json`을 기준으로 잠시 제외한다.
 
+X 인증 정본은 `AUTH_HOME/x/user_data/` 하나다. producer는 이 profile을 직접 사용하고, consumer는 같은 profile에서 export된 `cookies.json`을 사용한다. 따라서 인증 갱신 완료 판정은 producer probe와 consumer token probe가 모두 통과해야 한다.
+
 consumer 토큰이 없으면 상세 수집은 건너뛰고, simple 기반 메타데이터/full 동기화만 계속 진행한다.
 
 주요 출력:

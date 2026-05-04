@@ -83,6 +83,7 @@ Ensure-Dir (Join-Path $AuthHome "x")
 Copy-Item (Join-Path $SourceRoot "utils\auth_paths.py") (Join-Path $AuthHome "auth_paths.py") -Force
 Copy-Item (Join-Path $SourceRoot "scripts\auth_runtime\renew.py") (Join-Path $AuthHome "renew.py") -Force
 Copy-Item (Join-Path $SourceRoot "scripts\auth_runtime\export_x_artifacts.py") (Join-Path $AuthHome "export_x_artifacts.py") -Force
+Copy-Item (Join-Path $SourceRoot "scripts\auth_runtime\verify_x_auth.py") (Join-Path $AuthHome "verify_x_auth.py") -Force
 
 if ($LegacyAuthDir -and (Test-PathAny $LegacyAuthDir)) {
   Move-IfMissing (Join-Path $LegacyAuthDir "auth_linkedin.json") (Join-Path $AuthHome "linkedin\storage_state.json")

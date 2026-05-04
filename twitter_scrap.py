@@ -20,9 +20,9 @@ from utils.auth_status import exit_auth_required, is_orchestrated_run
 # 환경 변수 로드
 load_dotenv('.env.local')
 
-# Windows 인코딩 문제 해결
-if sys.platform == 'win32':
-    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
+def configure_stdout():
+    if sys.platform == 'win32' and hasattr(sys.stdout, 'buffer'):
+        sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
 
 # ===========================
 # ⚙️ 설정
@@ -48,6 +48,23 @@ def parse_twitter_date(date_str):
         return dt.strftime('%Y-%m-%d %H:%M:%S'), dt.strftime('%Y-%m-%d')
     except Exception:
         return None, None
+
+
+def should_require_x_auth(
+    *,
+    current_url: str,
+    has_tweet_article: bool,
+    bookmark_response_seen: bool,
+    parsed_bookmark_count: int,
+) -> bool:
+    url = (current_url or "").lower()
+    if "login" in url or "signup" in url or "challenge" in url:
+        return True
+    if has_tweet_article:
+        return False
+    if parsed_bookmark_count > 0 or bookmark_response_seen:
+        return False
+    return True
 
 def get_user_info(tweet_results):
     user_res = tweet_results.get('core', {}).get('user_results', {}).get('result', {})
@@ -247,11 +264,17 @@ def main(args):
         )
         page = context.pages[0]
 
+        bookmark_response_seen = False
+        parsed_bookmark_count = 0
+
         def handle_response(response):
-            nonlocal new_count
+            nonlocal new_count, bookmark_response_seen, parsed_bookmark_count
+            if "Bookmarks?variables=" in response.url:
+                bookmark_response_seen = True
             if "Bookmarks?variables=" in response.url and response.status == 200:
                 try:
                     new_posts = extract_from_json(response.json())
+                    parsed_bookmark_count += len(new_posts)
                     for post in new_posts:
                         pid = post['platform_id']
                         # 💡 [개선] 기존 수집 상태 및 메타데이터 보존
@@ -281,7 +304,13 @@ def main(args):
         page.goto("https://x.com/i/bookmarks", wait_until="domcontentloaded")
         time.sleep(3)
 
-        if not page.query_selector('article[data-testid="tweet"]'):
+        has_tweet_article = page.query_selector('article[data-testid="tweet"]') is not None
+        if should_require_x_auth(
+            current_url=page.url,
+            has_tweet_article=has_tweet_article,
+            bookmark_response_seen=bookmark_response_seen,
+            parsed_bookmark_count=parsed_bookmark_count,
+        ):
             print("💡 로그인이 필요합니다. 브라우저에서 진행해주세요...", flush=True)
             if is_orchestrated_run():
                 context.close()
@@ -435,6 +464,7 @@ def main(args):
         context.close()
 
 if __name__ == "__main__":
+    configure_stdout()
     parser = argparse.ArgumentParser(description='X(Twitter) 목록 수집기 (Producer) - Refined')
     parser.add_argument('--mode', choices=['all', 'update'], default='update', help='크롤링 모드')
     args = parser.parse_args()

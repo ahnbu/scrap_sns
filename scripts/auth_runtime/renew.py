@@ -10,14 +10,14 @@ from pathlib import Path
 from playwright.sync_api import sync_playwright
 
 try:
-    from export_x_artifacts import export_x_artifacts
-    from auth_paths import linkedin_storage, skool_storage, threads_storage, x_storage, x_user_data
+    from export_x_artifacts import export_x_artifacts_from_context
+    from auth_paths import linkedin_storage, skool_storage, threads_storage, x_user_data
 except ImportError:
     REPO_ROOT = Path(__file__).resolve().parents[2]
     if str(REPO_ROOT) not in sys.path:
         sys.path.insert(0, str(REPO_ROOT))
-    from scripts.auth_runtime.export_x_artifacts import export_x_artifacts
-    from utils.auth_paths import linkedin_storage, skool_storage, threads_storage, x_storage, x_user_data
+    from scripts.auth_runtime.export_x_artifacts import export_x_artifacts_from_context
+    from utils.auth_paths import linkedin_storage, skool_storage, threads_storage, x_user_data
 
 
 def _require_tty() -> None:
@@ -101,8 +101,12 @@ def renew_x_profile() -> None:
         )
         page = context.pages[0] if context.pages else context.new_page()
         page.goto("https://x.com/i/flow/login")
-        input("[X] 로그인 완료 후 Enter: ")
-        context.close()
+        try:
+            input("[X] 로그인 완료 후 Enter: ")
+            export_x_artifacts_from_context(context)
+            print("USER_DATA_OK")
+        finally:
+            context.close()
 
 
 def renew_x_profile_web(
@@ -122,10 +126,12 @@ def renew_x_profile_web(
         )
         page = context.pages[0] if context.pages else context.new_page()
         page.goto("https://x.com/i/flow/login")
-        _wait_for_web_complete("X", signal_dir, session_id)
-        context.storage_state(path=str(x_storage()))
-        context.close()
-    export_x_artifacts()
+        try:
+            _wait_for_web_complete("X", signal_dir, session_id)
+            export_x_artifacts_from_context(context)
+            print("USER_DATA_OK")
+        finally:
+            context.close()
 
 
 def _parse_args(argv: list[str]) -> argparse.Namespace:
@@ -188,7 +194,6 @@ def main(argv: list[str]) -> int:
                     )
                 else:
                     renew_x_profile()
-                    export_x_artifacts()
             else:
                 print(f"알 수 없는 대상: {target}")
                 return 1

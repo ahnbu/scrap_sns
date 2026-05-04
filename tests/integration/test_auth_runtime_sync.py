@@ -70,6 +70,7 @@ def test_sync_auth_runtime_creates_nested_and_flat_links(tmp_path):
     assert result.returncode == 0, result.stderr
     assert (auth_home / "auth_paths.py").exists()
     assert (auth_home / "renew.py").exists()
+    assert (auth_home / "verify_x_auth.py").exists()
     assert (auth_home / "auth_linkedin.json").is_symlink()
     assert (auth_home / "auth_threads.json").is_symlink()
     assert (auth_home / "auth_skool.json").is_symlink()
