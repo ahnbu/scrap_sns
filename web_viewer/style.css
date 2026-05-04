@@ -121,6 +121,20 @@ body.modal-open {
   pointer-events: auto;
 }
 
+.scrap-result-panel {
+  max-height: calc(100vh - 48px);
+}
+
+.scrap-result-header {
+  padding: 1.5rem 1.5rem 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .scrap-result-panel {
+    max-height: min(720px, calc(100vh - 64px));
+  }
+}
+
 .scrap-result-row {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto auto;

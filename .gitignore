@@ -46,6 +46,7 @@ scripts/*
 !scripts/sync_auth_runtime.ps1
 !scripts/validate_sns_hub_launcher.ps1
 !scripts/verify_auth_panel_headless.mjs
+!scripts/verify_scrap_result_modal_layout.mjs
 
 # Terminal Paste Image folder
 .cp-images/
