@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="web_viewer/tailwind-built.css" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="web_viewer/style.css?v=20260504-scrap-modal-spacing" />
+    <link rel="stylesheet" href="web_viewer/style.css?v=20260504-bulk-selection" />
   </head>
 
   <body class="font-display text-white ambient-bg min-h-screen flex flex-col">
@@ -91,16 +91,6 @@
                 <span
                   class="material-symbols-outlined text-[18px] text-yellow-400"
                   >star</span
-                >
-              </button>
-              <button
-                data-filter="todos"
-                class="filter-chip flex items-center justify-center size-10 rounded-full bg-surface-glass hover:bg-surface-glass-hover text-gray-300 hover:text-white border border-border-glass transition-all whitespace-nowrap group"
-                title="TODO 리스트"
-              >
-                <span
-                  class="material-symbols-outlined text-[18px] text-orange-400"
-                  >check_box</span
                 >
               </button>
               <button
@@ -297,6 +287,29 @@
           </div>
         </div>
       </header>
+
+      <!-- Bulk Action Area -->
+      <div id="bulkActionBar" class="hidden bulk-action-bar">
+        <div class="bulk-action-inner">
+          <span id="bulkSelectedCount" class="bulk-selected-count">0개 선택됨</span>
+          <button id="bulkHideBtn" class="bulk-action-btn danger" title="선택 게시글 숨기기">
+            <span class="material-symbols-outlined text-[18px]">visibility_off</span>
+            <span>숨기기</span>
+          </button>
+          <button id="bulkFavoriteBtn" class="bulk-action-btn" title="선택 게시글 별표 추가">
+            <span class="material-symbols-outlined text-[18px]">star</span>
+            <span>별표 추가</span>
+          </button>
+          <button id="bulkCopyBtn" class="bulk-action-btn" title="선택 게시글 복사">
+            <span class="material-symbols-outlined text-[18px]">content_copy</span>
+            <span>복사</span>
+          </button>
+          <button id="bulkClearBtn" class="bulk-action-btn muted" title="선택 해제">
+            <span class="material-symbols-outlined text-[18px]">close</span>
+            <span>선택 해제</span>
+          </button>
+        </div>
+      </div>
 
       <!-- Global Tag Filter Area -->
       <div

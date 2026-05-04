@@ -108,11 +108,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeScrapResultModalBtn = document.getElementById('closeScrapResultModal');
     const confirmScrapResultModalBtn = document.getElementById('confirmScrapResultModal');
     const copyAuthRenewalPromptBtn = document.getElementById('copyAuthRenewalPromptBtn');
+    const bulkActionBar = document.getElementById('bulkActionBar');
+    const bulkSelectedCount = document.getElementById('bulkSelectedCount');
+    const bulkHideBtn = document.getElementById('bulkHideBtn');
+    const bulkFavoriteBtn = document.getElementById('bulkFavoriteBtn');
+    const bulkCopyBtn = document.getElementById('bulkCopyBtn');
+    const bulkClearBtn = document.getElementById('bulkClearBtn');
 
     let allPosts = [];
     let searchResults = null;
     let currentFilter = 'all';
     let searchQuery = '';
+    const selectedPosts = new Set();
     let _searchTimer = null;
     let _searchAbortController = null;
     let _pendingPosts = [];
@@ -130,6 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const foldedPosts = new Set(JSON.parse(localStorage.getItem('sns_folded_posts') || '[]'));
     const postTags = JSON.parse(localStorage.getItem('sns_tags') || '{}');
     const tagTypes = JSON.parse(localStorage.getItem('sns_tag_types') || '{}');
+    // Legacy TODO state is kept for URL migration/backward compatibility.
     const todos = JSON.parse(localStorage.getItem('sns_todos') || '{}');
     
     // Cleanup 'undefined' key from postTags if it exists (remnant of failed migration)
@@ -160,6 +168,7 @@ document.addEventListener('DOMContentLoaded', () => {
     searchInput.addEventListener('input', (e) => {
         const nextQuery = (e.target.value || '').trim();
         searchQuery = nextQuery;
+        clearSelection();
         clearTimeout(_searchTimer);
         if (_searchAbortController) {
             _searchAbortController.abort();
@@ -183,6 +192,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelectorAll('.filter-chip').forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
 
+        clearSelection();
         currentFilter = btn.dataset.filter;
         if (searchQuery) {
             void runServerSearch(searchQuery);
@@ -211,6 +221,7 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.addEventListener('click', (e) => {
             currentSort = e.target.dataset.sort;
             localStorage.setItem('sns_sort_order', currentSort); // Save to storage
+            clearSelection();
             document.getElementById('currentSortLabel').textContent = e.target.textContent.trim();
             // Close dropdown
             document.getElementById('sortDropdown').classList.add('hidden');
@@ -226,6 +237,71 @@ document.addEventListener('DOMContentLoaded', () => {
             renderPosts();
         });
     });
+
+    if (bulkClearBtn) {
+        bulkClearBtn.addEventListener('click', () => {
+            clearSelection();
+        });
+    }
+
+    if (bulkFavoriteBtn) {
+        bulkFavoriteBtn.addEventListener('click', () => {
+            const selected = getCurrentSelectedPosts();
+            if (selected.length === 0) {
+                clearSelection();
+                return;
+            }
+
+            addSelectedUrlsToSet(favorites, getPostUrls(selected));
+            localStorage.setItem('sns_favorites', JSON.stringify([...favorites]));
+            updateGlobalTags();
+            renderPosts();
+        });
+    }
+
+    if (bulkHideBtn) {
+        bulkHideBtn.addEventListener('click', () => {
+            const selected = getCurrentSelectedPosts();
+            if (selected.length === 0) {
+                clearSelection();
+                return;
+            }
+
+            if (!confirm(`선택한 ${selected.length}개 게시글을 피드에서 숨기시겠습니까?`)) {
+                return;
+            }
+
+            addSelectedUrlsToSet(invisiblePosts, getPostUrls(selected));
+            localStorage.setItem('sns_invisible_posts', JSON.stringify([...invisiblePosts]));
+            clearSelection();
+            renderPosts();
+        });
+    }
+
+    if (bulkCopyBtn) {
+        bulkCopyBtn.addEventListener('click', async () => {
+            const selected = getCurrentSelectedPosts();
+            if (selected.length === 0) {
+                clearSelection();
+                return;
+            }
+
+            const label = bulkCopyBtn.querySelector('span:last-child');
+            const originalLabel = label ? label.textContent : '';
+            try {
+                const detailedPosts = await Promise.all(selected.map((post) => ensurePostDetail(post)));
+                await navigator.clipboard.writeText(buildBulkCopyText(detailedPosts));
+                if (label) label.textContent = '복사됨';
+                setTimeout(() => {
+                    if (label) label.textContent = originalLabel || '복사';
+                }, 2000);
+            } catch (err) {
+                console.error('Failed to copy selected posts: ', err);
+                alert('선택한 게시글 복사에 실패했습니다.');
+                if (label) label.textContent = originalLabel || '복사';
+            }
+        });
+    }
 
     // Run Scraper functionality
     const runScrapBtn = document.getElementById('runScrapBtn');
@@ -1508,6 +1584,7 @@ ${item.body}
         if (_searchAbortController) {
             _searchAbortController.abort();
         }
+        clearSelection();
 
         try {
             const params = new URLSearchParams({ sort: getServerSortParam() });
@@ -1630,7 +1707,6 @@ ${item.body}
             const matchesFilter =
                 currentFilter === 'all' ||
                 (currentFilter === 'favorites' ? favorites.has(postUrl) :
-                 currentFilter === 'todos' ? !!todos[postUrl] :
                  (post.sns_platform || '').toLowerCase() === currentFilter ||
                  (currentFilter === 'x' && (post.sns_platform === 'twitter' || post.sns_platform === 'x')));
 
@@ -1673,6 +1749,69 @@ ${item.body}
         const createdAt = (post.created_at || '').slice(0, 10);
         const platform = post.sns_platform || '';
         return `${fullText}\n\n*출처: ${postUrl}\n*${author} / ${createdAt} / ${platform}`;
+    }
+
+    function getVisibleSelectedPosts(posts, selectedUrls) {
+        if (!Array.isArray(posts) || !selectedUrls) return [];
+        return posts.filter((post) => selectedUrls.has(resolvePostUrl(post)));
+    }
+
+    function buildBulkCopyText(posts) {
+        if (!Array.isArray(posts) || posts.length === 0) return '';
+        return posts.map((post) => buildCopyText(post)).join('\n\n---\n\n');
+    }
+
+    function addSelectedUrlsToSet(targetSet, selectedUrls) {
+        if (!targetSet || !selectedUrls) return targetSet;
+        selectedUrls.forEach((url) => {
+            if (url) targetSet.add(url);
+        });
+        return targetSet;
+    }
+
+    function getCurrentOrderedPosts() {
+        return sortPosts(getFilteredPosts());
+    }
+
+    function getCurrentSelectedPosts() {
+        return getVisibleSelectedPosts(getCurrentOrderedPosts(), selectedPosts);
+    }
+
+    function getPostUrls(posts) {
+        return posts.map((post) => resolvePostUrl(post)).filter(Boolean);
+    }
+
+    function setSelectionButtonState(button, article, isSelected) {
+        if (!button) return;
+        const icon = button.querySelector('span');
+        button.classList.toggle('selected', isSelected);
+        button.classList.toggle('text-primary', isSelected);
+        button.classList.toggle('text-gray-500', !isSelected);
+        button.setAttribute('aria-pressed', isSelected ? 'true' : 'false');
+        if (icon) {
+            icon.textContent = isSelected ? 'check_circle' : 'radio_button_unchecked';
+            icon.classList.toggle('fill-1', isSelected);
+        }
+        if (article) {
+            article.classList.toggle('selected', isSelected);
+        }
+    }
+
+    function updateBulkActionBar() {
+        if (!bulkActionBar) return;
+        const selectedCount = selectedPosts.size;
+        bulkActionBar.classList.toggle('hidden', selectedCount === 0);
+        if (bulkSelectedCount) {
+            bulkSelectedCount.textContent = `${selectedCount}개 선택됨`;
+        }
+    }
+
+    function clearSelection() {
+        selectedPosts.clear();
+        document.querySelectorAll('.select-btn').forEach((button) => {
+            setSelectionButtonState(button, button.closest('article'), false);
+        });
+        updateBulkActionBar();
     }
 
     function getReadMoreIndicatorHtml(isExpanded) {
@@ -1784,6 +1923,7 @@ ${item.body}
         if (filtered.length === 0) {
             noResults.classList.remove('hidden');
             masonryGrid.innerHTML = '';
+            updateBulkActionBar();
             return;
         }
 
@@ -1795,6 +1935,7 @@ ${item.body}
         _pendingPosts = filtered.slice(60);
         appendCards(firstBatch);
         ensureSentinel();
+        updateBulkActionBar();
     }
 
     function createCard(post) {
@@ -1805,7 +1946,9 @@ ${item.body}
         const postUrl = resolvePostUrl(post);
         const isFavorited = favorites.has(postUrl);
         const isFolded = foldedPosts.has(postUrl);
+        const isSelected = selectedPosts.has(postUrl);
         if (isFolded) article.classList.add('minimized');
+        if (isSelected) article.classList.add('selected');
 
         // --- Platform Config ---
         const platform = (post.sns_platform || 'other').toLowerCase();
@@ -1873,44 +2016,29 @@ ${item.body}
                         ${isFavorited ? 'star' : 'star'}
                     </span>
                 </button>
-                <button class="todo-btn p-1.5 rounded-lg hover:bg-white/10 transition-colors group/todo ${todos[postUrl] ? escapeHtml(todos[postUrl]) : ''}" data-url="${escapeHtml(postUrl)}" title="TODO 상태 관리">
-                    <span class="material-symbols-outlined text-[20px]">
-                        ${todos[postUrl] === 'pending' ? 'pending' : (todos[postUrl] === 'completed' ? 'task_alt' : 'radio_button_unchecked')}
+                <button class="select-btn p-1.5 rounded-lg hover:bg-white/10 transition-colors ${isSelected ? 'selected text-primary' : 'text-gray-500'}" data-url="${escapeHtml(postUrl)}" title="게시글 선택" aria-pressed="${isSelected ? 'true' : 'false'}">
+                    <span class="material-symbols-outlined text-[20px] ${isSelected ? 'fill-1' : ''}">
+                        ${isSelected ? 'check_circle' : 'radio_button_unchecked'}
                     </span>
                 </button>
             </div>
         `;
 
 
-        const todoBtn = header.querySelector('.todo-btn');
-        todoBtn.addEventListener('click', (e) => {
+        const selectBtn = header.querySelector('.select-btn');
+        selectBtn.addEventListener('click', (e) => {
             e.stopPropagation();
             const url = postUrl;
-            const icon = todoBtn.querySelector('span');
-            const currentState = todos[url];
+            const nextSelected = !selectedPosts.has(url);
 
-            if (!currentState) {
-                todos[url] = 'pending';
-                todoBtn.classList.add('pending');
-                icon.textContent = 'pending';
-            } else if (currentState === 'pending') {
-                todos[url] = 'completed';
-                todoBtn.classList.remove('pending');
-                todoBtn.classList.add('completed');
-                icon.textContent = 'task_alt';
+            if (nextSelected) {
+                selectedPosts.add(url);
             } else {
-                delete todos[url];
-                todoBtn.classList.remove('completed');
-                icon.textContent = 'radio_button_unchecked';
+                selectedPosts.delete(url);
             }
 
-            localStorage.setItem('sns_todos', JSON.stringify(todos));
-
-            if (currentFilter === 'todos' && !todos[url]) {
-                article.style.opacity = '0';
-                article.style.transform = 'scale(0.9)';
-                setTimeout(() => renderPosts(), 200);
-            }
+            setSelectionButtonState(selectBtn, article, nextSelected);
+            updateBulkActionBar();
         });
 
         const favBtn = header.querySelector('.favorite-btn');
