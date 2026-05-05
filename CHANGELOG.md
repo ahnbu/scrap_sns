@@ -4,6 +4,10 @@
 
 | 일시               | 유형       | 범위                           | 변경내용                                                                                                           |
 | ---------------- | -------- | ---------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| 2026-05-05 12:54 | fix | linkedin | 인증 갱신 환경 정렬(Chrome/122 + ko-KR + 1280x1000 viewport) 적용, 운영 검증 통과 (신규 8건, 통합 326건) |
+| 2026-05-05 12:50 | chore | data | LinkedIn 신규 8건 수집 + 통합 산출물 326건으로 갱신 (환경 정렬 후 운영 검증 통과 산출물) |
+| 2026-05-05 12:35 | fix | linkedin | linkedin_scrap.py viewport를 1280x1000으로 정렬하여 갱신기·수집기·sns_insight_update와 fingerprint 완전 일치 |
+| 2026-05-05 12:30 | fix | auth-runtime | renew_storage_state / _web에 Chrome/122 user_agent + ko-KR locale + 1280x1000 viewport 추가하여 갱신기·수집기 fingerprint 정렬 (LinkedIn step-up redirect 회복) |
 | 2026-05-05 00:56 | chore | data | 통합 수집 산출물 20260505 LinkedIn 반영 상태 추가 |
 | 2026-05-05 00:53 | docs | backlog | LinkedIn 저장글 업데이트 인증 실패 상태를 백로그에 기록 |
 | 2026-05-05 00:43 | fix | auth-runtime | X 인증 갱신을 user_data 정본과 context 기반 cookie export로 정비 |

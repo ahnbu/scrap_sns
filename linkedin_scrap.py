@@ -39,8 +39,11 @@ INCLUDE_IMAGES = True # 이미지 크롤링 포함 여부
 # 브라우저 UI 설정
 WINDOW_X = 5000           # 화면 가로 위치 (모니터 왼쪽 기준 px)
 WINDOW_Y = 200         # 화면 세로 위치 (모니터 위쪽 기준 px)
-WINDOW_WIDTH = 900     # 브라우저 너비
-WINDOW_HEIGHT = 500    # 브라우저 높이
+# viewport는 갱신기(scripts/auth_runtime/renew.py)와 sns_insight_update LinkedIn 수집기와
+# 동일하게 1280x1000으로 정렬한다. 본 세션 PoC(v3/v4/v5)가 이 viewport로 saved-posts 통과를
+# 확정했고, 갱신·수집 fingerprint 일관성을 유지하기 위함이다.
+WINDOW_WIDTH = 1280    # 브라우저 너비
+WINDOW_HEIGHT = 1000   # 브라우저 높이
 
 # --- 헬퍼 함수 ---
 

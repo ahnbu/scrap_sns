@@ -20,6 +20,18 @@ except ImportError:
     from utils.auth_paths import linkedin_storage, skool_storage, threads_storage, x_user_data
 
 
+# LinkedIn fingerprint 회복 목적으로 추가됨 (plan: docs/plans/20260505_03_renew.py-환경정렬-LinkedIn-fingerprint-회복.md).
+# 갱신기와 수집기의 user_agent/locale/viewport를 정렬해 LinkedIn step-up redirect를 회피한다.
+# Threads/Skool에도 동일 환경을 적용해 회귀 재발을 방지한다 (X는 별도 persistent profile 경로).
+BROWSER_USER_AGENT = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) "
+    "Chrome/122.0.0.0 Safari/537.36"
+)
+BROWSER_LOCALE = "ko-KR"
+BROWSER_VIEWPORT = {"width": 1280, "height": 1000}
+
+
 def _require_tty() -> None:
     if not sys.stdin.isatty():
         raise RuntimeError("interactive login required; run this command in a terminal")
@@ -50,7 +62,11 @@ def renew_storage_state(name: str, url: str, target: Path) -> None:
 
     with sync_playwright() as playwright:
         browser = playwright.chromium.launch(headless=False)
-        context_args = {}
+        context_args = {
+            "user_agent": BROWSER_USER_AGENT,
+            "locale": BROWSER_LOCALE,
+            "viewport": BROWSER_VIEWPORT,
+        }
         if target.exists() and target.stat().st_size > 10:
             context_args["storage_state"] = str(target)
         context = browser.new_context(**context_args)
@@ -79,7 +95,11 @@ def renew_storage_state_web(
             headless=False,
             args=_browser_args(window_position, window_size),
         )
-        context_args = {"viewport": {"width": width, "height": height}}
+        context_args = {
+            "user_agent": BROWSER_USER_AGENT,
+            "locale": BROWSER_LOCALE,
+            "viewport": {"width": width, "height": height},
+        }
         if target.exists() and target.stat().st_size > 10:
             context_args["storage_state"] = str(target)
         context = browser.new_context(**context_args)
