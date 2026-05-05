@@ -408,11 +408,31 @@ document.addEventListener('DOMContentLoaded', () => {
             .filter(Boolean)
             .join(', ');
 
+        // 안내문구는 "터미널에서 직접 renew.py 실행" 단일 경로만 안내한다.
+        // 과거 앱 인증 패널(--web 흐름)은 운영에서 동작하지 않아 호출이 끊긴 상태이며 (BL-0505-03 보류),
+        // AI에게 갱신을 위임할 때도 터미널 명령이 가장 신뢰 가능한 경로다.
+        const platformArgs = platforms.filter(Boolean).join(' ') || 'linkedin';
+
         return [
-            `D:\\vibe-coding\\scrap_sns 프로젝트에서 ${labels} 인증 세션을 수동 갱신하려고 합니다.`,
-            '앱의 로그인 열기 버튼이나 자동화 브라우저 로그인은 사용하지 마세요.',
-            '먼저 README.md의 인증 갱신 섹션과 utils/auth_paths.py, scripts/auth_runtime/renew.py의 현재 인증 경로를 확인한 뒤,',
-            '현재 구조에 맞는 수동 갱신 절차를 안내하고 완료 후 세션 유효성 검증까지 진행해 주세요.'
+            `D:\\vibe-coding\\scrap_sns 프로젝트에서 ${labels} 인증 세션을 갱신해 주세요.`,
+            '',
+            '실행 방식:',
+            '1) PowerShell을 엽니다.',
+            '2) 다음 명령을 실행합니다 (UTF-8 인코딩 필수):',
+            `     $env:PYTHONIOENCODING = "utf-8"`,
+            `     python "$env:USERPROFILE\\.config\\auth\\renew.py" ${platformArgs}`,
+            '3) Playwright Chromium 창이 뜨면 사용자(저)가 직접 로그인합니다.',
+            '   보안 챌린지(reCAPTCHA, 2FA, 디바이스 확인 등)도 사용자가 직접 통과합니다.',
+            '4) 로그인 완료 후 PowerShell에서 Enter를 눌러 storage_state를 저장합니다.',
+            '',
+            '검증:',
+            `   python linkedin_scrap.py --mode update`,
+            `   → "SNS_AUTH_REQUIRED login_required" 메시지가 발생하지 않으면 성공`,
+            '',
+            '참고:',
+            '- 인증 정본 경로: utils/auth_paths.py, AUTH_HOME(~/.config/auth)',
+            '- 갱신기 환경: scripts/auth_runtime/renew.py (Chrome/122 + ko-KR + 1280x1000 fingerprint 정렬됨)',
+            '- 보안 챌린지·CAPTCHA·2FA는 자동화하지 마세요. 사용자가 직접 통과합니다.'
         ].join('\n');
     }
 

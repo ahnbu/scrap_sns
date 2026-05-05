@@ -126,9 +126,11 @@ def test_build_auth_renewal_prompt_warns_against_automated_login():
         console.log(JSON.stringify({
           includesProject: prompt.includes('D:\\vibe-coding\\scrap_sns'),
           includesPlatforms: prompt.includes('X, Threads'),
-          blocksAutomatedLogin: prompt.includes('자동화 브라우저 로그인은 사용하지 마세요'),
-          includesReadme: prompt.includes('README.md의 인증 갱신 섹션'),
-          includesVerification: prompt.includes('세션 유효성 검증')
+          includesRenewCommand: prompt.includes('renew.py'),
+          includesPlatformArgs: prompt.includes('x threads'),
+          includesUtf8Env: prompt.includes('PYTHONIOENCODING'),
+          includesVerification: prompt.includes('linkedin_scrap.py --mode update'),
+          blocksAutomation: prompt.includes('자동화하지 마세요')
         }));
         """
     )
@@ -136,9 +138,11 @@ def test_build_auth_renewal_prompt_warns_against_automated_login():
     assert run_node_json(node_script) == {
         "includesProject": True,
         "includesPlatforms": True,
-        "blocksAutomatedLogin": True,
-        "includesReadme": True,
+        "includesRenewCommand": True,
+        "includesPlatformArgs": True,
+        "includesUtf8Env": True,
         "includesVerification": True,
+        "blocksAutomation": True,
     }
 
 

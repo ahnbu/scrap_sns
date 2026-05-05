@@ -81,13 +81,15 @@ X 수동 인증 갱신이 필요한 경우:
 - `twitter_scrap.py` producer probe 실패
 - X 로그인 만료, 보안 확인, 추가 인증 화면 발생
 
-앱 로그인 버튼이나 `renew.py --web`을 쓰지 않고 직접 갱신할 때:
+X persistent profile을 직접 열어 로그인할 때 (자동화 브라우저 대신 일반 Chrome 사용):
 
 ```powershell
 & "C:\Program Files\Google\Chrome\Application\chrome.exe" `
   --user-data-dir="$env:USERPROFILE\.config\auth\x\user_data" `
   --new-window "https://x.com/i/flow/login"
 ```
+
+> 참고: 과거에는 앱 UI에 "인증 갱신" 패널과 `renew.py --web` 흐름이 있었으나, 운영에서 동작하지 않아 호출이 끊긴 상태입니다. 현재 인증 갱신은 위 PowerShell 명령(터미널) 또는 일반 갱신 명령(`python renew.py linkedin` 등)으로만 진행하세요. 죽은 코드 정리는 BACKLOG `BL-0505-03` 참조.
 
 Chrome 로그인/동기화 안내가 뜨면 Google 계정으로 로그인하지 말고 `로그인 안함`을 선택합니다. X 로그인 후 Chrome을 완전히 닫고 export/검증을 진행합니다.
 
