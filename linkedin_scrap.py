@@ -30,6 +30,7 @@ LINKEDIN_USER_AGENT = (
 
 # 스크랩 설정
 TARGET_LIMIT = 0       # 0 = 무제한
+CONSECUTIVE_EXISTING_LIMIT = 20  # update 모드에서 기수집 글이 연속 N건이면 중단
 
 # CLI 인자 파싱
 CRAWL_MODE = "update only"  # 기본값 (__main__ 블록에서 CLI 인자로 덮어씀)
@@ -100,19 +101,14 @@ class LinkedinScraper:
         self.existing_codes = set()
         self.existing_posts_map = {}
         self.max_sequence_id = 0
+        self.consecutive_existing_count = 0
         
         # 전체 파일 경로 (가장 최근 날짜 파일 찾기)
         self.full_file_path = self.get_latest_full_file()
-        
-        self.stop_codes = []
             
         if self.full_file_path:
             full_data_obj = load_json(self.full_file_path)
             full_posts = full_data_obj.get("posts", []) if isinstance(full_data_obj, dict) else full_data_obj
-            
-            # 기준 게시물 (최신 5개) 추출 for Stop Condition
-            if CRAWL_MODE == "update only":
-                self.stop_codes = [p.get("platform_id") or p.get("code") for p in full_posts[:5] if (p.get("platform_id") or p.get("code"))]
 
             for p in full_posts:
                 pid = p.get("platform_id") or p.get("code")
@@ -124,8 +120,11 @@ class LinkedinScraper:
                 self.max_sequence_id = full_data_obj.get("metadata", {}).get("max_sequence_id", 0)
             
             print(f"📊 기존 데이터 {len(self.existing_codes)}개 로드됨. 현재 max_sequence_id: {self.max_sequence_id}")
-            if self.stop_codes:
-                print(f"🔄 UPDATE ONLY 모드: {self.stop_codes} 중 하나라도 발견 시 수집을 중단합니다.")
+            if CRAWL_MODE == "update only":
+                print(
+                    f"🔄 UPDATE ONLY 모드: 기존 {len(self.existing_codes)}건과 대조, "
+                    f"기수집 {CONSECUTIVE_EXISTING_LIMIT}건 연속 시 수집을 중단합니다."
+                )
 
     def manage_login(self, page):
         """로그인 처리 및 세션 관리"""
@@ -220,6 +219,9 @@ class LinkedinScraper:
 
     def extract_post_from_view_model(self, item):
         try:
+            if self.stopped_early:
+                return
+
             entity_urn = item.get("entityUrn", "")
             activity_id = extract_urn_id(entity_urn)
             
@@ -227,11 +229,15 @@ class LinkedinScraper:
                 return
 
             if activity_id in self.existing_codes:
+                if CRAWL_MODE == "update only":
+                    self.consecutive_existing_count += 1
+                    if self.consecutive_existing_count >= CONSECUTIVE_EXISTING_LIMIT:
+                        self.stopped_early = True
+                    return
+
                 # 이미지가 없는 기존 데이터라면 업데이트를 위해 통과 (선택 사항)
                 existing_post = self.existing_posts_map.get(activity_id, {})
                 if existing_post.get("media"):
-                    if CRAWL_MODE == "update only" and activity_id in self.stop_codes:
-                        if not self.stopped_early: self.stopped_early = True
                     return
 
             post_data = parse_linkedin_post(item, INCLUDE_IMAGES, CRAWL_START_TIME)
@@ -246,6 +252,7 @@ class LinkedinScraper:
 
             self.posts.append(post_data)
             self.collected_codes.add(activity_id)
+            self.consecutive_existing_count = 0
             print(f"   ⚡ [Network] [{activity_id}] ({post_data['date']}) {post_data['username']}: {post_data['full_text'][:20]}...")
 
         except Exception as e:
@@ -321,7 +328,7 @@ class LinkedinScraper:
                         time.sleep(3)
 
                     if self.stopped_early:
-                        print("🛑 기준 게시물을 모두 확인하여 수집을 종료합니다.")
+                        print(f"🛑 기수집 {CONSECUTIVE_EXISTING_LIMIT}건 연속 확인하여 수집을 종료합니다.")
                         break
 
                     if len(self.posts) == last_count:

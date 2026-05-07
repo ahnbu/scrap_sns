@@ -59,3 +59,61 @@ def test_manage_login_waits_for_transient_linkedin_redirect(monkeypatch, tmp_pat
 
     assert page.goto_calls == [linkedin_scrap.TARGET_URL]
     assert page.wait_calls >= 2
+
+
+def test_update_mode_stops_after_consecutive_existing_posts_even_when_media_is_empty(monkeypatch):
+    activity_id = "7457613653937410048"
+
+    scraper = linkedin_scrap.LinkedinScraper.__new__(linkedin_scrap.LinkedinScraper)
+    scraper.posts = []
+    scraper.collected_codes = set()
+    scraper.existing_codes = {activity_id}
+    scraper.existing_posts_map = {
+        activity_id: {
+            "platform_id": activity_id,
+            "media": [],
+        }
+    }
+    scraper.consecutive_existing_count = linkedin_scrap.CONSECUTIVE_EXISTING_LIMIT - 1
+    scraper.stopped_early = False
+
+    monkeypatch.setattr(linkedin_scrap, "CRAWL_MODE", "update only")
+
+    def fail_parse(*_args, **_kwargs):
+        raise AssertionError("existing post should not be reparsed for media backfill")
+
+    monkeypatch.setattr(linkedin_scrap, "parse_linkedin_post", fail_parse)
+
+    scraper.extract_post_from_view_model({"entityUrn": f"urn:li:activity:{activity_id}"})
+
+    assert scraper.stopped_early is True
+    assert scraper.posts == []
+
+
+def test_update_mode_resets_consecutive_existing_count_after_new_post(monkeypatch):
+    activity_id = "7457613653937410048"
+
+    scraper = linkedin_scrap.LinkedinScraper.__new__(linkedin_scrap.LinkedinScraper)
+    scraper.posts = []
+    scraper.collected_codes = set()
+    scraper.existing_codes = set()
+    scraper.existing_posts_map = {}
+    scraper.consecutive_existing_count = 3
+    scraper.stopped_early = False
+
+    monkeypatch.setattr(linkedin_scrap, "CRAWL_MODE", "update only")
+    monkeypatch.setattr(
+        linkedin_scrap,
+        "parse_linkedin_post",
+        lambda *_args, **_kwargs: {
+            "platform_id": activity_id,
+            "date": "2026-05-07",
+            "username": "tester",
+            "full_text": "new saved post",
+        },
+    )
+
+    scraper.extract_post_from_view_model({"entityUrn": f"urn:li:activity:{activity_id}"})
+
+    assert scraper.consecutive_existing_count == 0
+    assert len(scraper.posts) == 1
