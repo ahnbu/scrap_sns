@@ -51,6 +51,59 @@ WINDOW_HEIGHT = 1000   # 브라우저 높이
 
 # 로컬 clean_text 제거 (utils.common 사용)
 
+def get_post_identity(post):
+    return post.get("platform_id") or post.get("code")
+
+
+def merge_linkedin_full_posts(old_posts, scraped_posts, crawl_mode):
+    old_by_id = {}
+    old_order = []
+    for post in old_posts:
+        pid = get_post_identity(post)
+        if not pid or pid in old_by_id:
+            continue
+        old_by_id[pid] = post
+        old_order.append(pid)
+
+    final_by_id = dict(old_by_id)
+    observed_existing_ids = []
+    new_items = []
+
+    for post in scraped_posts:
+        pid = get_post_identity(post)
+        if not pid:
+            continue
+
+        existing = old_by_id.get(pid)
+        if existing:
+            merged = {**existing, **post}
+            if existing.get("sequence_id") is not None:
+                merged["sequence_id"] = existing.get("sequence_id")
+            if existing.get("crawled_at"):
+                merged["crawled_at"] = existing.get("crawled_at")
+            if existing.get("local_images") and not post.get("local_images"):
+                merged["local_images"] = existing.get("local_images")
+            final_by_id[pid] = merged
+            observed_existing_ids.append(pid)
+        else:
+            final_by_id[pid] = post
+            new_items.append(post)
+
+    observed_existing = set(observed_existing_ids)
+    unobserved_existing_ids = [pid for pid in old_order if pid not in observed_existing]
+
+    final_posts = list(final_by_id.values())
+    final_posts.sort(key=lambda item: item.get("sequence_id", 0), reverse=True)
+
+    merge_report = {
+        "crawl_mode": crawl_mode,
+        "observed_existing_count": len(observed_existing),
+        "unobserved_existing_count": len(unobserved_existing_ids),
+        "unobserved_existing_ids": unobserved_existing_ids[:20],
+    }
+
+    return final_posts, new_items, merge_report
+
 def is_linkedin_auth_url(url):
     normalized = (url or "").lower()
     return any(
@@ -408,16 +461,24 @@ class LinkedinScraper:
                 old_posts = old_data_obj
 
         if CRAWL_MODE == "all":
-            # ALL 모드일 때는 기존 데이터를 무시하고 새로 수집한 것으로 대체 (개행 등 변경사항 반영)
-            final_posts = self.posts
-            duplicate_count = 0
-            new_items = self.posts
+            final_posts, new_items, merge_report = merge_linkedin_full_posts(
+                old_posts,
+                self.posts,
+                CRAWL_MODE,
+            )
+            duplicate_count = len(self.posts) - len(new_items)
         else:
             # UPDATE 모드일 때는 기존에 없는 것만 추가
             existing_codes = {p.get("platform_id") or p.get("code") for p in old_posts}
             new_items = [p for p in self.posts if (p.get("platform_id") or p.get("code")) not in existing_codes]
             duplicate_count = len(self.posts) - len(new_items)
             final_posts = new_items + old_posts
+            merge_report = {
+                "crawl_mode": CRAWL_MODE,
+                "observed_existing_count": 0,
+                "unobserved_existing_count": 0,
+                "unobserved_existing_ids": [],
+            }
         
         # sequence_id 기준으로 내림차순 정렬 (최신순)
         final_posts.sort(key=lambda x: x.get("sequence_id", 0), reverse=True)
@@ -430,7 +491,10 @@ class LinkedinScraper:
                 "new_items_count": len(new_items),
                 "duplicates_removed": duplicate_count,
                 "source_file": source_filename,
-                "crawl_mode": CRAWL_MODE
+                "crawl_mode": CRAWL_MODE,
+                "observed_existing_count": merge_report["observed_existing_count"],
+                "unobserved_existing_count": merge_report["unobserved_existing_count"],
+                "unobserved_existing_ids": merge_report["unobserved_existing_ids"],
             })
 
         full_file = os.path.join(DATA_DIR, f"linkedin_py_full_{date_str}.json")
@@ -450,6 +514,8 @@ class LinkedinScraper:
                 "crawl_mode": CRAWL_MODE,
                 "legacy_data_count": legacy_count,
                 "verified_data_count": verified_count,
+                "all_mode_observed_existing_count": merge_report["observed_existing_count"],
+                "all_mode_unobserved_existing_count": merge_report["unobserved_existing_count"],
                 "merge_history": merge_history
             },
             "posts": final_posts
