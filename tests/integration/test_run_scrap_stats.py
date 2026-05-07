@@ -331,6 +331,52 @@ def test_run_scrap_records_filtered_progress_events(client, tmp_path, monkeypatc
     )
 
 
+def test_run_scrap_records_progress_from_child_log_files(client, tmp_path, monkeypatch):
+    import server
+
+    monkeypatch.setattr(server, "OUTPUT_TOTAL_DIR", str(tmp_path))
+    monkeypatch.setattr(
+        server,
+        "SCRAP_PROGRESS_LOG_SOURCES",
+        {"LinkedIn": str(tmp_path / "linkedin.log")},
+        raising=False,
+    )
+    _write_total_file(tmp_path, "20260416", total=100, threads=50, linkedin=30, twitter=20)
+    log_path = tmp_path / "linkedin.log"
+    log_path.write_text("", encoding="utf-8")
+
+    def write_after_file():
+        log_path.write_text(
+            "================================================\n"
+            "🚀 LinkedIn Producer 시작: 2026-05-07 10:00:00\n"
+            "================================================\n\n"
+            "   🔘 '결과 더보기' 버튼 클릭 (현재 42개)\n",
+            encoding="utf-8",
+        )
+        _write_total_file(tmp_path, "20260417", total=101, threads=50, linkedin=31, twitter=20)
+        return 0
+
+    with patch(
+        "subprocess.Popen",
+        return_value=_make_process(
+            write_after_file,
+            output='SNS_SCRAP_SUMMARY {"platform_results":{}}\n',
+        ),
+    ):
+        resp = client.post(
+            "/api/run-scrap",
+            json={"mode": "update", "run_id": "child-log-progress-test"},
+        )
+
+    assert resp.status_code == 200
+
+    progress_resp = client.get("/api/scrap-progress?run_id=child-log-progress-test&after=0")
+    messages = [event["message"] for event in progress_resp.get_json()["events"]]
+
+    assert "LinkedIn 목록 수집 시작" in messages
+    assert "LinkedIn 목록 수집 중 42개" in messages
+
+
 def test_scrap_progress_ignores_other_run_id(client):
     resp = client.get("/api/scrap-progress?run_id=missing-run&after=0")
 

@@ -33,6 +33,12 @@ AUTH_JOBS = {}
 AUTH_JOBS_LOCK = threading.Lock()
 KST = timezone(timedelta(hours=9))
 SCRAP_PROGRESS_MAX_EVENTS = 80
+SCRAP_PROGRESS_TAIL_INTERVAL_SECONDS = 1
+SCRAP_PROGRESS_LOG_SOURCES = {
+    "Threads": os.path.join(PROJECT_ROOT, "logs", "threads.log"),
+    "LinkedIn": os.path.join(PROJECT_ROOT, "logs", "linkedin.log"),
+    "X/Twitter": os.path.join(PROJECT_ROOT, "logs", "x_twitter.log"),
+}
 SCRAP_PROGRESS = {
     "run_id": "",
     "running": False,
@@ -138,11 +144,122 @@ def _scrap_progress_message_from_line(line):
     return None
 
 
+def _scrap_progress_message_from_log_line(platform, line):
+    text = str(line or "").strip()
+    if not text or text.startswith("=") or text.startswith("💻"):
+        return None
+
+    platform_label = _scrap_progress_platform_label(platform)
+
+    phase_start_match = re.search(
+        r"🚀\s*(Threads|LinkedIn|X/Twitter)\s+(Producer|Consumer)\s+시작",
+        text,
+    )
+    if phase_start_match:
+        matched_platform = _scrap_progress_platform_label(phase_start_match.group(1))
+        phase = _scrap_progress_phase_label(phase_start_match.group(2))
+        return f"{matched_platform} {phase} 수집 시작"
+
+    current_count_match = re.search(
+        r"(?:결과 더보기|스크롤 다운).+현재\s*([0-9,]+)개",
+        text,
+    )
+    if current_count_match:
+        return f"{platform_label} 목록 수집 중 {current_count_match.group(1)}개"
+
+    target_match = re.search(r"\[Target\]\s*수집대상\s*([0-9,]+)개", text)
+    if target_match:
+        return f"{platform_label} 상세 수집 대상 {target_match.group(1)}개"
+
+    detail_done_match = re.search(
+        r"수집 완료:.+\(([0-9,]+)/([0-9,]+),\s*([0-9,]+)%\)",
+        text,
+    )
+    if detail_done_match:
+        return (
+            f"{platform_label} 상세 수집 중 "
+            f"{detail_done_match.group(1)}/{detail_done_match.group(2)} "
+            f"({detail_done_match.group(3)}%)"
+        )
+
+    if "상세 수집할 새로운 항목이 없습니다" in text:
+        return f"{platform_label} 상세 수집 대상 없음"
+    if "업데이트 데이터 저장 완료" in text:
+        return f"{platform_label} 목록 파일 저장 완료"
+    if "전체 데이터 파일 저장 완료" in text or "최종 상세 데이터 동기화 완료" in text:
+        return f"{platform_label} 데이터 저장 완료"
+    if "더 이상 새로운 데이터가 없습니다" in text:
+        return f"{platform_label} 새 데이터 없음"
+    if "기준 게시물을" in text:
+        return f"{platform_label} 기준 게시물 확인 완료"
+
+    return None
+
+
+def _snapshot_scrap_log_offsets():
+    offsets = {}
+    for platform, path in SCRAP_PROGRESS_LOG_SOURCES.items():
+        try:
+            offsets[platform] = os.path.getsize(path)
+        except OSError:
+            offsets[platform] = 0
+    return offsets
+
+
+def _collect_scrap_log_progress_once(offsets, buffers):
+    for platform, path in SCRAP_PROGRESS_LOG_SOURCES.items():
+        position = offsets.get(platform, 0)
+        try:
+            size = os.path.getsize(path)
+            if size < position:
+                position = 0
+                buffers[platform] = ""
+
+            with open(path, "rb") as file:
+                file.seek(position)
+                chunk = file.read()
+                offsets[platform] = file.tell()
+        except OSError:
+            continue
+
+        if not chunk:
+            continue
+
+        text = buffers.get(platform, "") + chunk.decode("utf-8", errors="replace")
+        if text.endswith(("\n", "\r")):
+            lines = text.splitlines()
+            buffers[platform] = ""
+        else:
+            lines = text.splitlines()
+            buffers[platform] = lines.pop() if lines else text
+
+        for line in lines:
+            _append_scrap_progress(_scrap_progress_message_from_log_line(platform, line))
+
+
+def _start_scrap_log_tailer(offsets):
+    stop_event = threading.Event()
+    buffers = {}
+
+    def tail_logs():
+        while not stop_event.wait(SCRAP_PROGRESS_TAIL_INTERVAL_SECONDS):
+            _collect_scrap_log_progress_once(offsets, buffers)
+        _collect_scrap_log_progress_once(offsets, buffers)
+
+    thread = threading.Thread(target=tail_logs, name="scrap-progress-log-tailer", daemon=True)
+    thread.start()
+    return stop_event, thread
+
+
 def _append_scrap_progress(message, level="info"):
     if not message:
         return
 
+    message = str(message)
     with SCRAP_PROGRESS_LOCK:
+        if any(event.get("message") == message for event in SCRAP_PROGRESS["events"]):
+            return
+
         SCRAP_PROGRESS["seq"] += 1
         now = _now_kst_iso()
         SCRAP_PROGRESS["updated_at"] = now
@@ -151,7 +268,7 @@ def _append_scrap_progress(message, level="info"):
                 "seq": SCRAP_PROGRESS["seq"],
                 "time": now,
                 "level": level,
-                "message": str(message),
+                "message": message,
             }
         )
         if len(SCRAP_PROGRESS["events"]) > SCRAP_PROGRESS_MAX_EVENTS:
@@ -691,6 +808,9 @@ def run_scrap():
         }
         env = os.environ.copy()
         env["PYTHONIOENCODING"] = "utf-8"
+        log_offsets = _snapshot_scrap_log_offsets()
+        tailer_stop = None
+        tailer_thread = None
         process = subprocess.Popen(
             [sys.executable, "-u", script_path, "--mode", mode],
             stdout=subprocess.PIPE,
@@ -700,12 +820,19 @@ def run_scrap():
             errors='replace',
             env=env
         )
+        tailer_stop, tailer_thread = _start_scrap_log_tailer(log_offsets)
         full_output = []
-        if process.stdout:
-            for line in iter(process.stdout.readline, ""):
-                full_output.append(line)
-                _append_scrap_progress(_scrap_progress_message_from_line(line))
-        process.wait()
+        try:
+            if process.stdout:
+                for line in iter(process.stdout.readline, ""):
+                    full_output.append(line)
+                    _append_scrap_progress(_scrap_progress_message_from_line(line))
+            process.wait()
+        finally:
+            if tailer_stop:
+                tailer_stop.set()
+            if tailer_thread:
+                tailer_thread.join(timeout=2)
         stdout_val = "".join(full_output[-20:])
         after_meta = _read_latest_metadata()
         after_counts = {
