@@ -41,6 +41,8 @@
 - Python: 4칸 들여쓰기, `snake_case`; JS: `camelCase`
 - 데이터 순서·타입은 `utils/post_schema.py` 기준으로 유지
 - JSON 편집 시 UTF-8 안전 워크플로우를 사용
+- 테스트는 `tests/fixtures/snapshots/`의 자동 생성 파일을 직접 참조하지 않는다.
+- 필요한 샘플은 `tests/fixtures/golden/<platform>/`으로 승격해 git에 포함한다.
 - 검증은 변경 범위에 맞는 현재 테스트로 수행한다. 예:
   - `pytest tests/unit`
   - `pytest tests/contract`

@@ -6,25 +6,15 @@ from utils.threads_parser import extract_items_multi_path, extract_json_from_htm
 
 def test_extract_json_from_html_handles_braces_inside_strings():
     html = Path(
-        "tests/fixtures/snapshots/threads/snapshot_1777853522.html"
+        "tests/fixtures/golden/threads/thread_items_braces.html"
     ).read_text(encoding="utf-8")
 
     data = extract_json_from_html(html)
-    items = extract_items_multi_path(data, "DXu-Y9XCov1", "aicoffeechat")
+    items = extract_items_multi_path(data, "ROOT_BRACES", "testuser")
 
-    assert [item["code"] for item in items] == [
-        "DXu-Y9XCov1",
-        "DXvrp3FE_vc",
-        "DXvrqXrEzJb",
-        "DXvrq20E1aZ",
-        "DXvrrXyk7zD",
-        "DXvrr5VkyS_",
-        "DXvrsa_E1-q",
-        "DXvrsu0k556",
-        "DXvrtI5k8vF",
-        "DXvrtxyk1Iw",
-        "DXvru3OE1J3",
-    ]
+    assert [item["code"] for item in items] == ["ROOT_BRACES", "REPLY_BRACES"]
+    assert items[0]["full_text"] == "Root text with {braces} inside"
+    assert items[1]["full_text"] == "Reply text with } and { inside"
 
 
 def test_extract_items_multi_path_handles_null_text_post_app_info():
