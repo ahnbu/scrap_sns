@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="web_viewer/tailwind-built.css" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="web_viewer/style.css?v=20260508-tag-catalog" />
+    <link rel="stylesheet" href="web_viewer/style.css?v=20260508-tag-ui-icons" />
   </head>
 
   <body class="font-display text-white ambient-bg min-h-screen flex flex-col">
@@ -438,15 +438,15 @@
         <div class="flex gap-3 px-8 pt-4 border-b border-white/5 shrink-0">
           <button
             class="tab-btn active pb-3 text-base font-semibold border-b-2 border-primary text-white transition-all"
-            data-target="tabHidden"
-          >
-            숨김 관리
-          </button>
-          <button
-            class="tab-btn pb-3 text-base font-semibold border-b-2 border-transparent text-gray-500 hover:text-gray-300 transition-all"
             data-target="tabTags"
           >
             태그 관리
+          </button>
+          <button
+            class="tab-btn pb-3 text-base font-semibold border-b-2 border-transparent text-gray-500 hover:text-gray-300 transition-all"
+            data-target="tabHidden"
+          >
+            숨김 관리
           </button>
           <button
             class="tab-btn pb-3 text-base font-semibold border-b-2 border-transparent text-gray-500 hover:text-gray-300 transition-all"
@@ -459,7 +459,7 @@
         <!-- Tab Content: Hidden Posts -->
         <div
           id="tabHidden"
-          class="tab-pane flex-1 overflow-y-auto no-scrollbar"
+          class="tab-pane hidden flex-1 overflow-y-auto no-scrollbar"
         >
           <div id="invisiblePostsList" class="p-8 flex flex-col gap-6">
             <!-- Hidden items will be injected here -->
@@ -475,7 +475,7 @@
         <!-- Tab Content: Tag Management -->
         <div
           id="tabTags"
-          class="tab-pane hidden flex-1 flex flex-col overflow-hidden"
+          class="tab-pane flex-1 flex flex-col overflow-hidden"
         >
           <div class="p-6 border-b border-white/5 bg-black/20 shrink-0">
             <div class="flex items-center gap-3">
@@ -601,6 +601,6 @@
       </div>
     </div>
 
-    <script defer src="web_viewer/script.js?v=20260508-tag-catalog"></script>
+    <script defer src="web_viewer/script.js?v=20260508-tag-ui-icons"></script>
   </body>
 </html>

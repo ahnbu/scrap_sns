@@ -150,6 +150,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     let currentTag = null;
+    let tagCreateMode = false;
+    let editingTagName = null;
+    let deletingTagName = null;
+    let addingAliasTagName = null;
+    let tagManagementMessage = null;
 
     // Sync Initial Sort UI
     function syncSortUI() {
@@ -2767,10 +2772,10 @@ ${item.body}
         // Sync tags to server for export
         syncTagsToServer();
 
-        // Default to Hidden Posts tab
-        switchTab('tabHidden');
-        renderInvisibleList();
+        // Default to Tag Management tab
+        switchTab('tabTags');
         renderTagManagementList();
+        renderInvisibleList();
     }
 
     function hideManagementModal() {
@@ -2822,6 +2827,31 @@ ${item.body}
         return counts;
     }
 
+    function tagMessageHtml(key) {
+        if (!tagManagementMessage || tagManagementMessage.key !== key) {
+            return '';
+        }
+        return `<div class="tag-inline-message">${escapeHtml(tagManagementMessage.message)}</div>`;
+    }
+
+    function setTagManagementMessage(key, message) {
+        tagManagementMessage = { key, message };
+    }
+
+    function clearTagManagementMessage(key) {
+        if (!key || tagManagementMessage?.key === key) {
+            tagManagementMessage = null;
+        }
+    }
+
+    function clearTagManagementModes() {
+        tagCreateMode = false;
+        editingTagName = null;
+        deletingTagName = null;
+        addingAliasTagName = null;
+        tagManagementMessage = null;
+    }
+
     function renderTagManagementList() {
         const listContainer = document.getElementById('tagManagementList');
         const noTagsFound = document.getElementById('noTagsFound');
@@ -2844,8 +2874,68 @@ ${item.body}
             .sort();
 
         listContainer.innerHTML = '';
+
+        if (tagCreateMode) {
+            const createItem = document.createElement('div');
+            createItem.className = 'tag-manage-item tag-inline-form-row';
+            createItem.innerHTML = `
+                <div class="tag-inline-form">
+                    <input class="tag-inline-input" data-role="create-tag-input" type="text" placeholder="새 태그명 입력..." autocomplete="off">
+                    <div class="tag-inline-actions">
+                        <button class="tag-inline-save" data-action="save-create-tag">저장</button>
+                        <button class="tag-inline-cancel" data-action="cancel-create-tag">취소</button>
+                    </div>
+                    ${tagMessageHtml('create')}
+                </div>
+            `;
+
+            const createInput = createItem.querySelector('[data-role="create-tag-input"]');
+            const saveCreate = async () => {
+                const tagName = createInput.value.trim();
+                if (!tagName) {
+                    setTagManagementMessage('create', '태그명을 입력하세요.');
+                    renderTagManagementList();
+                    return;
+                }
+                if (tagCatalog[tagName]) {
+                    setTagManagementMessage('create', '이미 존재하는 태그입니다.');
+                    renderTagManagementList();
+                    return;
+                }
+
+                tagCatalog[tagName] = { primary: false, aliases: [] };
+                try {
+                    await saveTagCatalogToServer(tagCatalog);
+                    clearTagManagementModes();
+                    renderTagManagementList();
+                } catch (error) {
+                    console.error('Failed to add tag:', error);
+                    setTagManagementMessage('create', '태그 생성에 실패했습니다.');
+                    renderTagManagementList();
+                }
+            };
+
+            createItem.querySelector('[data-action="save-create-tag"]').addEventListener('click', () => void saveCreate());
+            createItem.querySelector('[data-action="cancel-create-tag"]').addEventListener('click', () => {
+                clearTagManagementModes();
+                renderTagManagementList();
+            });
+            createInput.addEventListener('keydown', (event) => {
+                if (event.key === 'Enter') {
+                    event.preventDefault();
+                    void saveCreate();
+                }
+                if (event.key === 'Escape') {
+                    clearTagManagementModes();
+                    renderTagManagementList();
+                }
+            });
+
+            listContainer.appendChild(createItem);
+            requestAnimationFrame(() => createInput.focus());
+        }
         
-        if (filteredTags.length === 0) {
+        if (filteredTags.length === 0 && !tagCreateMode) {
             noTagsFound?.classList.remove('hidden');
             return;
         }
@@ -2854,66 +2944,89 @@ ${item.body}
 
         filteredTags.forEach(tag => {
             const meta = tagCatalog[tag] || { primary: false, aliases: [] };
-            const isPrimary = isPrimaryTag(tag);
             const aliases = Array.from(new Set(meta.aliases || [])).filter(alias => alias !== tag);
             const count = usageCounts[tag] || 0;
             const item = document.createElement('div');
             item.className = 'tag-manage-item tag-manage-item--catalog';
             item.dataset.tag = tag;
-            
-            item.innerHTML = `
-                <div class="flex items-start justify-between gap-4 w-full">
-                    <div class="min-w-0 flex-1">
-                        <div class="flex items-center gap-2 flex-wrap">
-                            <span class="text-sm font-semibold text-white">${escapeHtml(tag)} (${count}개)</span>
-                            ${isPrimary ? `<span class="px-2 py-0.5 rounded bg-primary/20 text-primary text-[10px] font-bold border border-primary/20 uppercase">Primary</span>` : ''}
+            const editKey = `edit:${tag}`;
+            const aliasKey = `alias:${tag}`;
+            const deleteKey = `delete:${tag}`;
+            const isEditing = editingTagName === tag;
+            const isDeleting = deletingTagName === tag;
+            const isAddingAlias = addingAliasTagName === tag;
+            const titleHtml = isEditing
+                ? `
+                    <div class="tag-inline-form tag-inline-form--compact">
+                        <input class="tag-inline-input" data-role="rename-tag-input" type="text" value="${escapeHtml(tag)}" autocomplete="off">
+                        <div class="tag-inline-actions">
+                            <button class="tag-inline-save" data-action="save-rename-tag">저장</button>
+                            <button class="tag-inline-cancel" data-action="cancel-row-mode">취소</button>
                         </div>
-                        <div class="tag-alias-row mt-3 flex items-center gap-2 flex-wrap">
-                            <span class="text-[11px] text-gray-500 font-bold uppercase">Alias</span>
-                            <span class="px-2 py-1 rounded-lg bg-white/10 text-gray-200 text-xs border border-white/10">${escapeHtml(tag)}</span>
-                            ${aliases.map(alias => `
-                                <span class="tag-alias-chip px-2 py-1 rounded-lg bg-white/5 text-gray-300 text-xs border border-white/10 flex items-center gap-1">
-                                    ${escapeHtml(alias)}
-                                    <button class="remove-tag-alias text-gray-500 hover:text-red-300" data-tag="${escapeHtml(tag)}" data-alias="${escapeHtml(alias)}" title="Alias 삭제">
-                                        <span class="material-symbols-outlined text-[13px]">close</span>
-                                    </button>
-                                </span>
-                            `).join('')}
-                            <button class="add-tag-alias px-2 py-1 rounded-lg bg-primary/10 hover:bg-primary/20 text-primary text-xs border border-primary/20" data-tag="${escapeHtml(tag)}">
-                                +
+                    </div>
+                    ${tagMessageHtml(editKey)}
+                `
+                : `<span class="text-sm font-semibold text-white">${escapeHtml(tag)} (${count}개)</span>`;
+            const actionHtml = isEditing
+                ? ''
+                : isDeleting
+                    ? `
+                        <div class="tag-delete-confirm">
+                            <span>${count}개 게시물에서 제거됨</span>
+                            <button class="tag-inline-danger" data-action="confirm-delete-tag">삭제</button>
+                            <button class="tag-inline-cancel" data-action="cancel-row-mode">취소</button>
+                        </div>
+                        ${tagMessageHtml(deleteKey)}
+                    `
+                    : isAddingAlias
+                        ? ''
+                    : `
+                        <div class="tag-icon-actions">
+                            <button class="tag-icon-action tag-icon-action--add" data-action="start-add-alias" data-tag="${escapeHtml(tag)}" title="별칭 추가" aria-label="별칭 추가">
+                                <span class="material-symbols-outlined text-[18px]">add_circle</span>
+                            </button>
+                            <button class="tag-icon-action" data-action="start-rename-tag" title="이름 변경" aria-label="이름 변경">
+                                <span class="material-symbols-outlined text-[18px]">edit</span>
+                            </button>
+                            <button class="tag-icon-action tag-icon-action--danger" data-action="start-delete-tag" title="삭제" aria-label="삭제">
+                                <span class="material-symbols-outlined text-[18px]">delete</span>
                             </button>
                         </div>
+                    `;
+            const aliasEditorHtml = isAddingAlias
+                ? `
+                    <input class="tag-alias-input" data-role="alias-input" type="text" placeholder="별칭 추가..." autocomplete="off">
+                    <button class="tag-inline-save" data-action="save-alias">저장</button>
+                    <button class="tag-inline-cancel" data-action="cancel-row-mode">취소</button>
+                `
+                : '';
+            
+            item.innerHTML = `
+                <div class="tag-manage-row">
+                    <div class="tag-manage-main">
+                        <div class="tag-title-row">
+                            ${titleHtml}
+                        </div>
+                        <div class="tag-alias-row">
+                            <div class="tag-alias-list">
+                            ${aliases.map(alias => `
+                                <span class="tag-alias-chip">
+                                    ${escapeHtml(alias)}
+                                    <button class="remove-tag-alias" data-tag="${escapeHtml(tag)}" data-alias="${escapeHtml(alias)}" title="별칭 삭제">
+                                        <span class="material-symbols-outlined text-[11px]">close</span>
+                                    </button>
+                                </span>
+                            `).join('') || '<span class="tag-alias-empty">없음</span>'}
+                            </div>
+                            <div class="tag-alias-actions">
+                                ${aliasEditorHtml}
+                            </div>
+                        </div>
+                        ${tagMessageHtml(aliasKey)}
                     </div>
-                    <div class="flex items-center gap-3 shrink-0">
-                        <span class="text-[11px] text-gray-500">Primary</span>
-                        <label class="toggle-switch">
-                            <input class="tag-primary-toggle" type="checkbox" ${isPrimary ? 'checked' : ''} data-tag="${escapeHtml(tag)}">
-                            <span class="toggle-slider"></span>
-                        </label>
-                        <button class="tag-menu-btn p-2 text-gray-500 hover:text-white transition-colors" data-tag="${escapeHtml(tag)}" title="태그 변경 또는 삭제">
-                            <span class="material-symbols-outlined text-[20px]">more_vert</span>
-                        </button>
-                    </div>
+                    ${actionHtml}
                 </div>
             `;
-            
-            item.querySelector('.tag-primary-toggle').addEventListener('change', async (e) => {
-                const tagName = e.target.dataset.tag;
-                if (!tagCatalog[tagName]) tagCatalog[tagName] = { primary: false, aliases: [] };
-                tagCatalog[tagName].primary = e.target.checked;
-                if (e.target.checked) tagTypes[tagName] = 'primary';
-                else delete tagTypes[tagName];
-                localStorage.setItem('sns_tag_types', JSON.stringify(tagTypes));
-
-                try {
-                    await saveTagCatalogToServer(tagCatalog);
-                    renderTagManagementList();
-                    renderPosts();
-                } catch (error) {
-                    console.error('Failed to save primary tag state:', error);
-                    alert('Primary 설정 저장에 실패했습니다.');
-                }
-            });
 
             item.querySelectorAll('.remove-tag-alias').forEach(button => {
                 button.addEventListener('click', async (e) => {
@@ -2923,91 +3036,169 @@ ${item.body}
                     tagCatalog[tagName].aliases = (tagCatalog[tagName].aliases || []).filter(value => value !== alias);
                     try {
                         await saveTagCatalogToServer(tagCatalog);
+                        clearTagManagementMessage(aliasKey);
                         renderTagManagementList();
                     } catch (error) {
                         console.error('Failed to remove tag alias:', error);
-                        alert('Alias 삭제에 실패했습니다.');
+                        setTagManagementMessage(aliasKey, '별칭 삭제에 실패했습니다.');
+                        renderTagManagementList();
                     }
                 });
             });
 
-            item.querySelector('.add-tag-alias').addEventListener('click', (e) => {
-                const tagName = e.currentTarget.dataset.tag;
-                const row = item.querySelector('.tag-alias-row');
-                if (row.querySelector('.tag-alias-input')) return;
+            item.querySelector('[data-action="start-add-alias"]')?.addEventListener('click', () => {
+                tagCreateMode = false;
+                editingTagName = null;
+                deletingTagName = null;
+                addingAliasTagName = tag;
+                clearTagManagementMessage();
+                renderTagManagementList();
+            });
 
-                const input = document.createElement('input');
-                input.type = 'text';
-                input.className = 'tag-alias-input px-2 py-1 rounded-lg bg-black/40 border border-white/10 text-xs text-white outline-none focus:border-primary/50 w-32';
-                input.placeholder = 'alias';
-                row.insertBefore(input, e.currentTarget);
-                input.focus();
-
+            if (isAddingAlias) {
+                const aliasInput = item.querySelector('[data-role="alias-input"]');
                 const saveAlias = async () => {
-                    const alias = input.value.trim();
+                    const alias = aliasInput.value.trim();
                     if (!alias) {
-                        input.remove();
+                        setTagManagementMessage(aliasKey, '별칭을 입력하세요.');
+                        renderTagManagementList();
                         return;
                     }
-                    const aliases = new Set(tagCatalog[tagName].aliases || []);
-                    if (alias !== tagName) aliases.add(alias);
-                    tagCatalog[tagName].aliases = [...aliases];
+                    if (alias === tag) {
+                        setTagManagementMessage(aliasKey, '태그명은 자동 적용 기준에 이미 포함됩니다.');
+                        renderTagManagementList();
+                        return;
+                    }
+                    if ((tagCatalog[tag].aliases || []).includes(alias)) {
+                        setTagManagementMessage(aliasKey, '이미 존재하는 별칭입니다.');
+                        renderTagManagementList();
+                        return;
+                    }
+                    const aliases = new Set(tagCatalog[tag].aliases || []);
+                    aliases.add(alias);
+                    tagCatalog[tag].aliases = [...aliases];
                     try {
                         await saveTagCatalogToServer(tagCatalog);
+                        addingAliasTagName = null;
+                        clearTagManagementMessage(aliasKey);
                         renderTagManagementList();
                     } catch (error) {
                         console.error('Failed to add tag alias:', error);
-                        alert('Alias 추가에 실패했습니다.');
+                        setTagManagementMessage(aliasKey, '별칭 추가에 실패했습니다.');
+                        renderTagManagementList();
                     }
                 };
 
-                input.addEventListener('keydown', (event) => {
+                item.querySelector('[data-action="save-alias"]').addEventListener('click', () => void saveAlias());
+                aliasInput.addEventListener('keydown', (event) => {
                     if (event.key === 'Enter') {
                         event.preventDefault();
                         void saveAlias();
                     }
-                    if (event.key === 'Escape') input.remove();
+                    if (event.key === 'Escape') {
+                        clearTagManagementModes();
+                        renderTagManagementList();
+                    }
                 });
-                input.addEventListener('blur', () => {
-                    void saveAlias();
-                }, { once: true });
+                requestAnimationFrame(() => aliasInput.focus());
+            }
+
+            item.querySelector('[data-action="start-rename-tag"]')?.addEventListener('click', () => {
+                tagCreateMode = false;
+                editingTagName = tag;
+                deletingTagName = null;
+                addingAliasTagName = null;
+                clearTagManagementMessage();
+                renderTagManagementList();
             });
 
-            item.querySelector('.tag-menu-btn').addEventListener('click', async (e) => {
-                const tagName = e.currentTarget.dataset.tag;
-                const action = prompt(`"${tagName}" 태그 작업을 입력하세요.\n- 이름변경\n- 삭제`);
-                if (!action) return;
+            if (isEditing) {
+                const renameInput = item.querySelector('[data-role="rename-tag-input"]');
+                const saveRename = async () => {
+                    const nextName = renameInput.value.trim();
+                    if (!nextName) {
+                        setTagManagementMessage(editKey, '태그명을 입력하세요.');
+                        renderTagManagementList();
+                        return;
+                    }
+                    if (nextName === tag) {
+                        clearTagManagementModes();
+                        renderTagManagementList();
+                        return;
+                    }
+                    if (tagCatalog[nextName]) {
+                        setTagManagementMessage(editKey, '이미 존재하는 태그명입니다.');
+                        renderTagManagementList();
+                        return;
+                    }
 
-                if (action.trim() === '이름변경') {
-                    const nextName = prompt('새 태그명을 입력하세요.', tagName)?.trim();
-                    if (!nextName || nextName === tagName) return;
-                    if (tagCatalog[nextName] && !confirm(`"${nextName}" 태그가 이미 있습니다. 두 태그를 병합할까요?`)) return;
-
-                    renameTagInState(postTags, tagCatalog, tagName, nextName);
-                    if (tagTypes[tagName]) {
-                        tagTypes[nextName] = tagTypes[tagName];
-                        delete tagTypes[tagName];
+                    renameTagInState(postTags, tagCatalog, tag, nextName);
+                    if (tagTypes[tag]) {
+                        tagTypes[nextName] = tagTypes[tag];
+                        delete tagTypes[tag];
                         localStorage.setItem('sns_tag_types', JSON.stringify(tagTypes));
                     }
-                } else if (action.trim() === '삭제') {
-                    if (!confirm(`"${tagName}" 태그를 삭제할까요? ${count}개 게시물에서도 제거됩니다.`)) return;
-                    deleteTagFromState(postTags, tagCatalog, tagName);
-                    delete tagTypes[tagName];
-                    localStorage.setItem('sns_tag_types', JSON.stringify(tagTypes));
-                } else {
-                    alert('지원하는 작업은 "이름변경" 또는 "삭제"입니다.');
-                    return;
-                }
+                    try {
+                        await persistTagsAndCatalog();
+                        updateGlobalTags();
+                        clearTagManagementModes();
+                        renderTagManagementList();
+                        renderPosts();
+                    } catch (error) {
+                        console.error('Failed to rename tag:', error);
+                        setTagManagementMessage(editKey, '태그명 변경 저장에 실패했습니다.');
+                        renderTagManagementList();
+                    }
+                };
 
+                item.querySelector('[data-action="save-rename-tag"]').addEventListener('click', () => void saveRename());
+                renameInput.addEventListener('keydown', (event) => {
+                    if (event.key === 'Enter') {
+                        event.preventDefault();
+                        void saveRename();
+                    }
+                    if (event.key === 'Escape') {
+                        clearTagManagementModes();
+                        renderTagManagementList();
+                    }
+                });
+                requestAnimationFrame(() => {
+                    renameInput.focus();
+                    renameInput.select();
+                });
+            }
+
+            item.querySelector('[data-action="start-delete-tag"]')?.addEventListener('click', () => {
+                tagCreateMode = false;
+                editingTagName = null;
+                deletingTagName = tag;
+                addingAliasTagName = null;
+                clearTagManagementMessage();
+                renderTagManagementList();
+            });
+
+            item.querySelector('[data-action="confirm-delete-tag"]')?.addEventListener('click', async () => {
+                deleteTagFromState(postTags, tagCatalog, tag);
+                delete tagTypes[tag];
+                localStorage.setItem('sns_tag_types', JSON.stringify(tagTypes));
                 try {
                     await persistTagsAndCatalog();
                     updateGlobalTags();
+                    clearTagManagementModes();
                     renderTagManagementList();
                     renderPosts();
                 } catch (error) {
-                    console.error('Failed to update tag:', error);
-                    alert('태그 변경 저장에 실패했습니다.');
+                    console.error('Failed to delete tag:', error);
+                    setTagManagementMessage(deleteKey, '태그 삭제 저장에 실패했습니다.');
+                    renderTagManagementList();
                 }
+            });
+
+            item.querySelectorAll('[data-action="cancel-row-mode"]').forEach(button => {
+                button.addEventListener('click', () => {
+                    clearTagManagementModes();
+                    renderTagManagementList();
+                });
             });
             
             listContainer.appendChild(item);
@@ -3062,22 +3253,13 @@ ${item.body}
 
     const addTagBtn = document.getElementById('addTagBtn');
     if (addTagBtn) {
-        addTagBtn.addEventListener('click', async () => {
-            const tagName = prompt('새 태그명을 입력하세요.')?.trim();
-            if (!tagName) return;
-            if (tagCatalog[tagName]) {
-                alert('이미 존재하는 태그입니다.');
-                return;
-            }
-
-            tagCatalog[tagName] = { primary: false, aliases: [] };
-            try {
-                await saveTagCatalogToServer(tagCatalog);
-                renderTagManagementList();
-            } catch (error) {
-                console.error('Failed to add tag:', error);
-                alert('태그 생성에 실패했습니다.');
-            }
+        addTagBtn.addEventListener('click', () => {
+            tagCreateMode = true;
+            editingTagName = null;
+            deletingTagName = null;
+            addingAliasTagName = null;
+            tagManagementMessage = null;
+            renderTagManagementList();
         });
     }
 
