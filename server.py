@@ -1284,6 +1284,9 @@ def static_proxy(path):
     if _has_path_traversal(path):
         abort(403)
 
+    if path == "api" or path.startswith("api/"):
+        return jsonify({"error": "API route not found"}), 404
+
     if path in PUBLIC_ROOT_FILES:
         return send_from_directory(PROJECT_ROOT, path)
 

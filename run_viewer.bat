@@ -5,16 +5,21 @@ title SNS Feed Viewer Launcher
 
 echo ✨ SNS Feed Viewer를 시작합니다...
 
-:: 1. Flask 서버를 백그라운드로 실행 (새 창에서 실행)
-echo 🚀 Flask 백엔드 서버를 시작하는 중...
-start /b python server.py
+:: 1. Flask 서버를 신선도 확인 후 시작/재시작
+echo 🚀 Flask 백엔드 서버를 확인하는 중...
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0scripts\restart_viewer_server.ps1" -ProjectRoot "%~dp0"
+if errorlevel 1 (
+    echo ❌ 서버 시작 또는 재시작에 실패했습니다.
+    pause
+    exit /b 1
+)
 
 :: 2. 잠시 대기 (서버가 켜질 시간)
 timeout /t 2 /nobreak > nul
 
-:: 3. 기본 브라우저로 index.html 열기
+:: 3. 기본 브라우저로 로컬 서버 열기
 echo 🌐 브라우저에서 화면을 여는 중...
-start index.html
+start http://localhost:5000/
 
 echo.
 echo ✅ 실행 완료!

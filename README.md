@@ -136,7 +136,7 @@ python inject_x_cookies.py
 npm run view
 ```
 
-이 흐름은 `sns_hub.vbs`가 `/api/status`를 확인하고 필요 시 `python server.py`를 백그라운드로 띄운 뒤, `http://localhost:5000/`를 엽니다. 현재 shipped HTML 진입점은 루트 `index.html`이며, `server.py`는 API 제공이 중심입니다.
+이 흐름은 `sns_hub.vbs`가 `/api/status`와 필수 API를 확인하고, 구버전 서버가 떠 있으면 5000번 포트의 `server.py`만 재시작한 뒤 `http://localhost:5000/`를 엽니다. 현재 shipped HTML 진입점은 루트 `index.html`이며, `server.py`는 API 제공이 중심입니다.
 
 서버만 따로 올리거나 종료하려면:
 

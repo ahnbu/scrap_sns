@@ -24,6 +24,8 @@ created: "2026-04-17 13:20"
 
 현재 shipped HTML 진입점은 레포 루트 `index.html`이다. `server.py`는 `/api/*` 제공이 중심이며, `/` 라우트는 현재 로컬 런처 기준 진입점으로 가정하지 않는다.
 
+`sns_hub.vbs`와 `run_viewer.bat`는 `scripts/restart_viewer_server.ps1`을 통해 `/api/status`와 필수 API 신선도를 확인한다. 구버전 서버로 판단되면 5000번 포트를 점유한 `server.py` 프로세스만 종료하고 재시작한다.
+
 ## 영구화 surface
 
 문서나 로직을 바꿀 때 실제로 영향받는 저장 surface는 아래다.

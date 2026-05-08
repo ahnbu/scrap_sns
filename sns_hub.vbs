@@ -1,6 +1,6 @@
 Option Explicit
 
-Dim shell, fso, repoRoot, statusUrl, indexUrl
+Dim shell, fso, repoRoot, statusUrl, catalogUrl, indexUrl, restartScript, restartCommand
 Dim attempt
 
 Set shell = CreateObject("WScript.Shell")
@@ -8,13 +8,21 @@ Set fso = CreateObject("Scripting.FileSystemObject")
 
 repoRoot = fso.GetParentFolderName(WScript.ScriptFullName)
 statusUrl = "http://localhost:5000/api/status"
+catalogUrl = "http://localhost:5000/api/get-tag-catalog"
 indexUrl = "http://localhost:5000/"
+restartScript = repoRoot & "\scripts\restart_viewer_server.ps1"
 
-If Not IsServerReady(statusUrl) Then
+If fso.FileExists(restartScript) Then
+    restartCommand = "powershell.exe -NoProfile -ExecutionPolicy Bypass -File " & Chr(34) & restartScript & Chr(34) & " -ProjectRoot " & Chr(34) & repoRoot & Chr(34)
+    If shell.Run(restartCommand, 0, True) <> 0 Then
+        MsgBox "SNS Viewer 서버 재시작에 실패했습니다. stop_viewer.bat 실행 후 다시 시도하세요.", vbExclamation, "SNS Feed Viewer"
+        WScript.Quit 1
+    End If
+ElseIf Not (IsServerReady(statusUrl) And IsServerReady(catalogUrl)) Then
     shell.Run "cmd /c cd /d " & Chr(34) & repoRoot & Chr(34) & " && python server.py", 0, False
 
     For attempt = 1 To 10
-        If IsServerReady(statusUrl) Then
+        If IsServerReady(statusUrl) And IsServerReady(catalogUrl) Then
             Exit For
         End If
         WScript.Sleep 1000

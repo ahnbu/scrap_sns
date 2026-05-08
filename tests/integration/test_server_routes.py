@@ -31,6 +31,17 @@ def test_settings_has_single_tag_management_tab(app):
     assert 'id="runBatchAutoTagBtn"' in body
 
 
+def test_unknown_api_route_returns_json_404_not_index(app):
+    client = app.test_client()
+
+    resp = client.get("/api/route-that-does-not-exist")
+
+    assert resp.status_code == 404
+    assert resp.is_json
+    assert resp.get_json() == {"error": "API route not found"}
+    assert "<!doctype" not in resp.get_data(as_text=True).lower()
+
+
 def test_non_public_repo_file_is_not_served(app):
     client = app.test_client()
 
