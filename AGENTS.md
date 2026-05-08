@@ -47,5 +47,6 @@
   - `pytest tests/e2e/test_api_security.py`
   - `pytest tests/smoke`
 - UI/태그/URL 정규화 변경 시 `node utils/query-sns.mjs --help`와 관련 unit test를 함께 확인한다.
+- SNS 수집·병합·이미지·뷰어 반영 로직 변경 시 완료 기준은 최신 `output_total` 생성이 아니라 뷰어/API 반영까지다. 최소 검증은 `merge_results()` → `download_images()` → `validate_local_image_links()` 통과, 대상 ID가 최신 `output_total/total_full_YYYYMMDD.json`에 존재, 그리고 `/api/posts` 또는 뷰어 새로고침 후 목록에서 확인되는 것이다.
 - Conventional Commits 사용 (`feat`, `fix`, `refactor`, `chore`, `docs`, `test`, `ui`)
 - 커밋 제목·본문은 기본적으로 한국어로 작성하고, type/scope 토큰은 영어를 유지한다.
