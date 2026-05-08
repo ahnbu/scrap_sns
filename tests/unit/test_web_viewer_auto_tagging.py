@@ -66,7 +66,9 @@ def test_apply_auto_tag_rules_merges_server_tags_additively():
         }
 
         const storage = {
-          sns_auto_tag_rules: JSON.stringify([{ keyword: 'ai', tag: 'AI' }])
+          sns_tag_catalog: JSON.stringify({
+            AI: { primary: false, aliases: ['artificial intelligence'] }
+          })
         };
         let savedPayload = null;
         let renderCalls = 0;
@@ -87,6 +89,14 @@ def test_apply_auto_tag_rules_merges_server_tags_additively():
         };
         global.fetch = async (url, options = {}) => {
           if (url === '/api/auto-tag/apply') {
+            const requestPayload = JSON.parse(options.body || '{}');
+            const expectedRules = [
+              { keyword: 'AI', tag: 'AI', match_field: 'all' },
+              { keyword: 'artificial intelligence', tag: 'AI', match_field: 'all' }
+            ];
+            if (JSON.stringify(requestPayload.rules) !== JSON.stringify(expectedRules)) {
+              throw new Error(`Unexpected rules: ${JSON.stringify(requestPayload.rules)}`);
+            }
             return {
               ok: true,
               json: async () => ({
@@ -94,7 +104,7 @@ def test_apply_auto_tag_rules_merges_server_tags_additively():
                   'https://www.threads.com/@alice/post/ABC123': ['AI']
                 },
                 matched_post_count: 1,
-                rule_count: 1
+                rule_count: 2
               })
             };
           }
@@ -108,6 +118,8 @@ def test_apply_auto_tag_rules_merges_server_tags_additively():
           throw new Error(`Unexpected fetch: ${url}`);
         };
 
+        eval(extractFunction('normalizeTagCatalog'));
+        eval(extractFunction('buildAutoTagRulesFromCatalog'));
         eval(extractFunction('mergeAutoTags'));
         eval(extractFunction('applyAutoTagRules'));
 
@@ -123,7 +135,7 @@ def test_apply_auto_tag_rules_merges_server_tags_additively():
 
     payload = run_node_json(node_script)
     assert payload == {
-        "result": {"matchedPostCount": 1, "ruleCount": 1},
+        "result": {"matchedPostCount": 1, "ruleCount": 2},
         "postTags": {
             "https://www.threads.com/@alice/post/ABC123": ["Manual", "AI"],
         },
@@ -252,3 +264,253 @@ def test_migrate_legacy_tag_keys_repairs_threads_legacy_namespaces_and_states():
     assert payload["invisiblePosts"] == ["https://www.threads.com/@ally/post/ABC123"]
     assert payload["foldedPosts"] == ["https://www.threads.com/@ally/post/ABC123"]
     assert payload["todos"] == {"https://www.threads.com/@ally/post/ABC123": "completed"}
+
+
+def test_build_tag_catalog_from_existing_state_migrates_alias_rules_and_primary():
+    node_script = textwrap.dedent(
+        """
+        const fs = require('fs');
+        const src = fs.readFileSync('web_viewer/script.js', 'utf8');
+
+        function extractFunction(name) {
+          const patterns = [`async function ${name}(`, `function ${name}(`];
+          let start = -1;
+          for (const pattern of patterns) {
+            start = src.indexOf(pattern);
+            if (start !== -1) break;
+          }
+          if (start === -1) {
+            console.error(`${name} missing`);
+            process.exit(1);
+          }
+
+          let depth = 0;
+          let end = -1;
+          for (let i = start; i < src.length; i += 1) {
+            const ch = src[i];
+            if (ch === '{') depth += 1;
+            if (ch === '}') {
+              depth -= 1;
+              if (depth === 0) {
+                end = i + 1;
+                break;
+              }
+            }
+          }
+
+          return src.slice(start, end);
+        }
+
+        eval(extractFunction('normalizeTagCatalog'));
+        eval(extractFunction('mergeLegacyAutoTagRulesIntoCatalog'));
+        eval(extractFunction('buildTagCatalogFromExistingState'));
+
+        const postTags = {
+          'https://example.com/1': ['리서치', '클로드'],
+          'https://example.com/2': ['리서치']
+        };
+        const tagTypes = { '클로드': 'primary' };
+        const legacyRules = [
+          { keyword: '심층리서치', tag: '리서치' },
+          { keyword: 'research', tag: '리서치' },
+          { keyword: '리서치', tag: '리서치' },
+          { keyword: 'Claude Code', tag: '클로드' }
+        ];
+
+        const catalog = buildTagCatalogFromExistingState(postTags, tagTypes, legacyRules);
+        console.log(JSON.stringify(catalog));
+        """
+    )
+
+    payload = run_node_json(node_script)
+    assert payload == {
+        "리서치": {"primary": False, "aliases": ["심층리서치", "research"]},
+        "클로드": {"primary": True, "aliases": ["Claude Code"]},
+    }
+
+
+def test_merge_legacy_auto_tag_rules_into_existing_catalog():
+    node_script = textwrap.dedent(
+        """
+        const fs = require('fs');
+        const src = fs.readFileSync('web_viewer/script.js', 'utf8');
+
+        function extractFunction(name) {
+          const patterns = [`async function ${name}(`, `function ${name}(`];
+          let start = -1;
+          for (const pattern of patterns) {
+            start = src.indexOf(pattern);
+            if (start !== -1) break;
+          }
+          if (start === -1) {
+            console.error(`${name} missing`);
+            process.exit(1);
+          }
+
+          let depth = 0;
+          let end = -1;
+          for (let i = start; i < src.length; i += 1) {
+            const ch = src[i];
+            if (ch === '{') depth += 1;
+            if (ch === '}') {
+              depth -= 1;
+              if (depth === 0) {
+                end = i + 1;
+                break;
+              }
+            }
+          }
+
+          return src.slice(start, end);
+        }
+
+        eval(extractFunction('mergeLegacyAutoTagRulesIntoCatalog'));
+
+        const catalog = {
+          '리서치': { primary: false, aliases: ['research'] }
+        };
+        const changed = mergeLegacyAutoTagRulesIntoCatalog(catalog, [
+          { keyword: '심층리서치', tag: '리서치' },
+          { keyword: 'research', tag: '리서치' },
+          { keyword: 'Claude Code', tag: '클로드' }
+        ]);
+
+        console.log(JSON.stringify({ changed, catalog }));
+        """
+    )
+
+    payload = run_node_json(node_script)
+    assert payload == {
+        "changed": True,
+        "catalog": {
+            "리서치": {"primary": False, "aliases": ["research", "심층리서치"]},
+            "클로드": {"primary": False, "aliases": ["Claude Code"]},
+        },
+    }
+
+
+def test_build_auto_tag_rules_from_catalog_includes_tag_name_and_aliases():
+    node_script = textwrap.dedent(
+        """
+        const fs = require('fs');
+        const src = fs.readFileSync('web_viewer/script.js', 'utf8');
+
+        function extractFunction(name) {
+          const patterns = [`async function ${name}(`, `function ${name}(`];
+          let start = -1;
+          for (const pattern of patterns) {
+            start = src.indexOf(pattern);
+            if (start !== -1) break;
+          }
+          if (start === -1) {
+            console.error(`${name} missing`);
+            process.exit(1);
+          }
+
+          let depth = 0;
+          let end = -1;
+          for (let i = start; i < src.length; i += 1) {
+            const ch = src[i];
+            if (ch === '{') depth += 1;
+            if (ch === '}') {
+              depth -= 1;
+              if (depth === 0) {
+                end = i + 1;
+                break;
+              }
+            }
+          }
+
+          return src.slice(start, end);
+        }
+
+        eval(extractFunction('normalizeTagCatalog'));
+        eval(extractFunction('buildAutoTagRulesFromCatalog'));
+
+        const rules = buildAutoTagRulesFromCatalog({
+          '리서치': { primary: false, aliases: ['심층리서치', 'research', '리서치'] },
+          '클로드': { primary: true, aliases: ['Claude Code'] }
+        });
+        console.log(JSON.stringify(rules));
+        """
+    )
+
+    payload = run_node_json(node_script)
+    assert payload == [
+        {"keyword": "리서치", "tag": "리서치", "match_field": "all"},
+        {"keyword": "심층리서치", "tag": "리서치", "match_field": "all"},
+        {"keyword": "research", "tag": "리서치", "match_field": "all"},
+        {"keyword": "클로드", "tag": "클로드", "match_field": "all"},
+        {"keyword": "Claude Code", "tag": "클로드", "match_field": "all"},
+    ]
+
+
+def test_rename_and_delete_tag_update_catalog_and_post_tags():
+    node_script = textwrap.dedent(
+        """
+        const fs = require('fs');
+        const src = fs.readFileSync('web_viewer/script.js', 'utf8');
+
+        function extractFunction(name) {
+          const patterns = [`async function ${name}(`, `function ${name}(`];
+          let start = -1;
+          for (const pattern of patterns) {
+            start = src.indexOf(pattern);
+            if (start !== -1) break;
+          }
+          if (start === -1) {
+            console.error(`${name} missing`);
+            process.exit(1);
+          }
+
+          let depth = 0;
+          let end = -1;
+          for (let i = start; i < src.length; i += 1) {
+            const ch = src[i];
+            if (ch === '{') depth += 1;
+            if (ch === '}') {
+              depth -= 1;
+              if (depth === 0) {
+                end = i + 1;
+                break;
+              }
+            }
+          }
+
+          return src.slice(start, end);
+        }
+
+        eval(extractFunction('normalizeTagCatalog'));
+        eval(extractFunction('renameTagInState'));
+        eval(extractFunction('deleteTagFromState'));
+
+        const postTags = {
+          'https://example.com/1': ['리서치', '클로드'],
+          'https://example.com/2': ['리서치'],
+          'https://example.com/3': ['디자인']
+        };
+        const catalog = {
+          '리서치': { primary: false, aliases: ['research'] },
+          '클로드': { primary: true, aliases: [] },
+          '디자인': { primary: false, aliases: ['design'] }
+        };
+
+        renameTagInState(postTags, catalog, '리서치', '연구');
+        deleteTagFromState(postTags, catalog, '클로드');
+
+        console.log(JSON.stringify({ postTags, catalog }));
+        """
+    )
+
+    payload = run_node_json(node_script)
+    assert payload == {
+        "postTags": {
+            "https://example.com/1": ["연구"],
+            "https://example.com/2": ["연구"],
+            "https://example.com/3": ["디자인"],
+        },
+        "catalog": {
+            "연구": {"primary": False, "aliases": ["research"]},
+            "디자인": {"primary": False, "aliases": ["design"]},
+        },
+    }

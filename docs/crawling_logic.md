@@ -111,8 +111,13 @@ consumer 토큰이 없으면 상세 수집은 건너뛰고, simple 기반 메타
 
 - `localStorage`
 - `web_viewer/sns_tags.json`
+- `web_viewer/sns_tag_catalog.json`
 - `/api/get-tags`
 - `/api/save-tags`
+- `/api/get-tag-catalog`
+- `/api/save-tag-catalog`
+
+게시물별 태그는 `sns_tags.json`에 URL→태그 배열로 저장한다. 태그명, 강조 표시, alias/키워드는 `sns_tag_catalog.json`에 저장하며, 기존 `localStorage.sns_auto_tag_rules`는 첫 로드 때 카탈로그 alias로 병합한다.
 
 `web_viewer/script.js`는 `resolvePostUrl()`과 `migrateLegacyTagKeys()`로 예전 Threads 키를 현재 canonical URL 키에 매핑한다. 이 덕분에 기존 태그를 유지하면서 `.threads.com` 기반으로 점진 전환할 수 있다.
 
@@ -127,6 +132,8 @@ consumer 토큰이 없으면 상세 수집은 건너뛰고, simple 기반 메타
 - `/api/auto-tag/apply`
 - `/api/get-tags`
 - `/api/save-tags`
+- `/api/get-tag-catalog`
+- `/api/save-tag-catalog`
 - `/api/run-scrap`
 
 서버 `/` 라우트와 `sns_hub.vbs`는 모두 루트 `index.html`을 기준으로 동작한다. 운영 문서도 동일하게 `http://localhost:5000/` 진입을 기준으로 설명한다.

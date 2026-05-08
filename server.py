@@ -607,8 +607,8 @@ def get_tags():
 @app.route('/api/save-tags', methods=['POST'])
 def save_tags():
     try:
-        data = request.json
-        if not data:
+        data = request.get_json(silent=True)
+        if data is None:
             return jsonify({"status": "error", "message": "No data received"}), 400
         if not isinstance(data, dict):
             return jsonify({"status": "error", "message": "Invalid data format: expected JSON object"}), 400
@@ -621,6 +621,39 @@ def save_tags():
     except Exception as e:
         logging.exception("Failed to save tags")
         return jsonify({"status": "error", "message": "Failed to save tags"}), 500
+
+@app.route('/api/get-tag-catalog', methods=['GET'])
+def get_tag_catalog():
+    try:
+        export_path = os.path.join(WEB_VIEWER_DIR, "sns_tag_catalog.json")
+        if not os.path.exists(export_path):
+            return jsonify({})
+        with open(export_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        if not isinstance(data, dict):
+            return jsonify({})
+        return jsonify(data)
+    except Exception:
+        logging.exception("Failed to get tag catalog")
+        return jsonify({"error": "Failed to load tag catalog"}), 500
+
+@app.route('/api/save-tag-catalog', methods=['POST'])
+def save_tag_catalog():
+    try:
+        data = request.get_json(silent=True)
+        if data is None:
+            return jsonify({"status": "error", "message": "No data received"}), 400
+        if not isinstance(data, dict):
+            return jsonify({"status": "error", "message": "Invalid data format: expected JSON object"}), 400
+        if not os.path.exists(WEB_VIEWER_DIR):
+            os.makedirs(WEB_VIEWER_DIR)
+        export_path = os.path.join(WEB_VIEWER_DIR, "sns_tag_catalog.json")
+        with open(export_path, 'w', encoding='utf-8') as f:
+            json.dump(data, f, indent=4, ensure_ascii=False)
+        return jsonify({"status": "success", "message": "Tag catalog saved successfully"})
+    except Exception:
+        logging.exception("Failed to save tag catalog")
+        return jsonify({"status": "error", "message": "Failed to save tag catalog"}), 500
 
 @app.route('/api/latest-data', methods=['GET'])
 def get_latest_data():

@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="web_viewer/tailwind-built.css" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="web_viewer/style.css?v=20260504-bulk-selection" />
+    <link rel="stylesheet" href="web_viewer/style.css?v=20260508-tag-catalog" />
   </head>
 
   <body class="font-display text-white ambient-bg min-h-screen flex flex-col">
@@ -444,12 +444,6 @@
           </button>
           <button
             class="tab-btn pb-3 text-base font-semibold border-b-2 border-transparent text-gray-500 hover:text-gray-300 transition-all"
-            data-target="tabAutoTag"
-          >
-            자동 태그
-          </button>
-          <button
-            class="tab-btn pb-3 text-base font-semibold border-b-2 border-transparent text-gray-500 hover:text-gray-300 transition-all"
             data-target="tabTags"
           >
             태그 관리
@@ -478,137 +472,40 @@
           </p>
         </div>
 
-        <!-- Tab Content: Auto Tagging -->
-        <div
-          id="tabAutoTag"
-          class="tab-pane hidden flex-1 flex flex-col overflow-hidden relative"
-        >
-          <!-- Top Fixed Section: Batch Update -->
-          <div class="p-6 border-b border-white/5 bg-black/20 shrink-0">
-            <div class="flex items-center justify-between">
-              <div class="flex flex-col gap-1">
-                <span
-                  class="text-xs font-bold text-gray-400 uppercase tracking-widest"
-                  >Manual batch update</span
-                >
-                <span class="text-xs text-gray-600 italic"
-                  >Apply current rules to all existing posts</span
-                >
-              </div>
-              <button
-                id="runBatchAutoTagBtn"
-                class="flex items-center gap-3 px-6 py-3 rounded-xl bg-white/5 hover:bg-white/10 text-white text-xs font-bold border border-white/10 transition-all hover:scale-[1.02] active:scale-95 shadow-xl disabled:opacity-50 disabled:cursor-not-allowed"
-              >
-                <span class="material-symbols-outlined text-[18px]">bolt</span>
-                Tag 일괄 업데이트
-              </button>
-            </div>
-
-            <!-- Progress & Status Area (Inline) -->
-            <div
-              id="batchUpdateStatus"
-              class="mt-4 pt-4 border-t border-white/5 hidden animate-fade-in"
-            >
-              <div class="flex items-center justify-between mb-2">
-                <span
-                  id="batchStatusText"
-                  class="text-[10px] font-semibold text-gray-400 uppercase tracking-widest"
-                  >Processing...</span
-                >
-                <span
-                  id="batchProgressPercent"
-                  class="text-[10px] font-bold text-primary"
-                  >0%</span
-                >
-              </div>
-              <div class="w-full h-1.5 bg-white/5 rounded-full overflow-hidden">
-                <div
-                  id="batchProgressBar"
-                  class="h-full bg-primary transition-all duration-300 ease-out"
-                  style="width: 0%"
-                ></div>
-              </div>
-              <p
-                id="batchResultMessage"
-                class="text-xs text-gray-300 mt-2 text-center hidden"
-              ></p>
-            </div>
-          </div>
-
-          <!-- Scrollable Content -->
-          <div class="flex-1 overflow-y-auto min-h-0 custom-scrollbar">
-            <div class="p-8 flex flex-col gap-8">
-              <!-- Add Rule Form -->
-              <div
-                class="flex flex-col gap-5 p-6 bg-white/5 rounded-[24px] border border-white/5 shrink-0"
-              >
-                <h3
-                  class="text-xs font-bold text-gray-500 tracking-[0.1em] uppercase"
-                >
-                  Add New Rule
-                </h3>
-                <div class="flex flex-col gap-3">
-                  <div class="flex gap-3">
-                    <input
-                      id="autoTagKeyword"
-                      type="text"
-                      placeholder="Keyword (e.g. AI)"
-                      class="flex-1 px-4 py-3 rounded-xl bg-black/40 border border-white/10 text-sm focus:border-primary/50 outline-none transition-all placeholder:text-gray-600"
-                    />
-                    <input
-                      id="autoTagTagName"
-                      type="text"
-                      placeholder="Tag Name"
-                      class="flex-1 px-4 py-3 rounded-xl bg-black/40 border border-white/10 text-sm focus:border-primary/50 outline-none transition-all placeholder:text-gray-600"
-                    />
-                  </div>
-                  <button
-                    id="addAutoTagRuleBtn"
-                    class="w-full py-3 rounded-xl bg-primary hover:bg-primary-hover text-white text-sm font-bold transition-all shadow-lg active:scale-95"
-                  >
-                    Add Rule
-                  </button>
-                </div>
-              </div>
-
-              <!-- Rules List -->
-              <div class="flex flex-col gap-4 pb-10">
-                <div class="flex items-center justify-between px-1">
-                  <h3
-                    class="text-xs font-bold text-gray-500 tracking-[0.1em] uppercase"
-                  >
-                    Active Rules
-                  </h3>
-                  <span
-                    class="text-[10px] text-gray-600 bg-white/5 px-2 py-1 rounded-lg border border-white/5"
-                    >Auto-detected from tags</span
-                  >
-                </div>
-                <div id="autoTagRulesList" class="flex flex-col gap-3">
-                  <!-- Rules injected by JS -->
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <!-- Tab Content: Tag Management -->
         <div
           id="tabTags"
           class="tab-pane hidden flex-1 flex flex-col overflow-hidden"
         >
           <div class="p-6 border-b border-white/5 bg-black/20 shrink-0">
-            <div class="relative group">
-              <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                <span class="material-symbols-outlined text-gray-500 text-sm">search</span>
+            <div class="flex items-center gap-3">
+              <div class="relative group flex-1">
+                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                  <span class="material-symbols-outlined text-gray-500 text-sm">search</span>
+                </div>
+                <input
+                  id="tagSearchInput"
+                  type="text"
+                  placeholder="태그 검색..."
+                  class="block w-full pl-9 pr-3 py-2 rounded-xl bg-black/40 border border-white/10 text-sm focus:border-primary/50 outline-none transition-all"
+                />
               </div>
-              <input
-                id="tagSearchInput"
-                type="text"
-                placeholder="태그 검색..."
-                class="block w-full pl-9 pr-3 py-2 rounded-xl bg-black/40 border border-white/10 text-sm focus:border-primary/50 outline-none transition-all"
-              />
+              <button
+                id="addTagBtn"
+                class="flex items-center gap-2 px-4 py-2 rounded-xl bg-primary hover:bg-primary-hover text-white text-xs font-bold border border-primary/30 transition-all active:scale-95"
+              >
+                <span class="material-symbols-outlined text-[18px]">add</span>
+                태그
+              </button>
+              <button
+                id="runBatchAutoTagBtn"
+                class="flex items-center gap-2 px-4 py-2 rounded-xl bg-white/5 hover:bg-white/10 text-white text-xs font-bold border border-white/10 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                <span class="material-symbols-outlined text-[18px]">bolt</span>
+                일괄 적용
+              </button>
             </div>
+            <p id="batchResultMessage" class="text-xs text-gray-300 mt-2 hidden"></p>
           </div>
           <div class="flex-1 overflow-y-auto p-8 no-scrollbar">
             <div id="tagManagementList" class="flex flex-col gap-3">
@@ -704,6 +601,6 @@
       </div>
     </div>
 
-    <script defer src="web_viewer/script.js?v=20260504-scrap-result-modal"></script>
+    <script defer src="web_viewer/script.js?v=20260508-tag-catalog"></script>
   </body>
 </html>

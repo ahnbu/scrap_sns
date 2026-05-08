@@ -641,6 +641,11 @@ input:focus {
   border-color: rgba(255, 255, 255, 0.1);
 }
 
+.tag-manage-item--catalog {
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
 /* Simple Toggle Switch */
 .toggle-switch {
   position: relative;

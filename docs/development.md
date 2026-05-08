@@ -20,7 +20,7 @@ created: "2026-04-17 13:20"
 - 오케스트레이터: `total_scrap.py`
 - 뷰어 진입: `wscript sns_hub.vbs` 또는 `SNS허브_바로가기.lnk`
 - API 서버: `server.py`
-- 뷰어 상태: `web_viewer/sns_tags.json`, browser `localStorage`
+- 뷰어 상태: `web_viewer/sns_tags.json`, `web_viewer/sns_tag_catalog.json`, browser `localStorage`
 
 현재 shipped HTML 진입점은 레포 루트 `index.html`이다. `server.py`는 `/api/*` 제공이 중심이며, `/` 라우트는 현재 로컬 런처 기준 진입점으로 가정하지 않는다.
 
@@ -36,7 +36,8 @@ created: "2026-04-17 13:20"
 - X 상세: `output_twitter/python/twitter_py_full_YYYYMMDD.json`
 - X 실패 이력: `scrap_failures_twitter.json`
 - 통합본: `output_total/total_full_YYYYMMDD.json`
-- 태그 저장소: `web_viewer/sns_tags.json`
+- 게시물별 태그 저장소: `web_viewer/sns_tags.json`
+- 태그 카탈로그 저장소: `web_viewer/sns_tag_catalog.json`
 - 브라우저 상태: `localStorage`
 - 인증 런타임: `C:\Users\ahnbu\.config\auth\`
   - LinkedIn: `linkedin/storage_state.json`
@@ -148,7 +149,9 @@ REQUIRED_FIELDS = ["sns_platform", "username", "url", "created_at"]
 - `index.html`은 `web_viewer/script.js`를 로드한다.
 - 메타 목록은 `GET /api/posts`에서 읽고, 상세 본문과 미디어는 `GET /api/post/<sequence_id>`에서 lazy-load 한다.
 - 검색은 `GET /api/search`, 자동 태그 일괄 적용은 `POST /api/auto-tag/apply`를 사용한다.
-- 태그는 `localStorage`와 `web_viewer/sns_tags.json`에 함께 저장된다.
+- 게시물별 태그는 `localStorage.sns_tags`와 `web_viewer/sns_tags.json`에 함께 저장된다.
+- 태그명, 강조 표시, alias/키워드는 `localStorage.sns_tag_catalog`와 `web_viewer/sns_tag_catalog.json`에 저장된다.
+- 기존 `localStorage.sns_auto_tag_rules`는 첫 로드 때 태그 카탈로그 alias로 1회 병합된다.
 - 서버 API:
   - `/api/status`
   - `/api/posts`
@@ -157,6 +160,8 @@ REQUIRED_FIELDS = ["sns_platform", "username", "url", "created_at"]
   - `/api/auto-tag/apply`
   - `/api/get-tags`
   - `/api/save-tags`
+  - `/api/get-tag-catalog`
+  - `/api/save-tag-catalog`
   - `/api/run-scrap`
 - `migrateLegacyTagKeys()`는 예전 Threads URL 키를 현재 canonical 키로 이동시킨다.
 

@@ -138,6 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const foldedPosts = new Set(JSON.parse(localStorage.getItem('sns_folded_posts') || '[]'));
     const postTags = JSON.parse(localStorage.getItem('sns_tags') || '{}');
     const tagTypes = JSON.parse(localStorage.getItem('sns_tag_types') || '{}');
+    let tagCatalog = normalizeTagCatalog(JSON.parse(localStorage.getItem('sns_tag_catalog') || '{}'));
     // Legacy TODO state is kept for URL migration/backward compatibility.
     const todos = JSON.parse(localStorage.getItem('sns_todos') || '{}');
     
@@ -1176,6 +1177,165 @@ ${item.body}
     });
 
     // --- Core Functions ---
+    function normalizeTagCatalog(rawCatalog) {
+        const catalog = {};
+        Object.entries(rawCatalog || {}).forEach(([tag, meta]) => {
+            const name = String(tag || '').trim();
+            if (!name) return;
+
+            const aliases = Array.from(new Set((meta?.aliases || [])
+                .map(alias => String(alias || '').trim())
+                .filter(alias => alias && alias !== name)));
+
+            catalog[name] = {
+                primary: Boolean(meta?.primary),
+                aliases,
+            };
+        });
+        return catalog;
+    }
+
+    function mergeLegacyAutoTagRulesIntoCatalog(catalog, legacyRules) {
+        let changed = false;
+        (legacyRules || []).forEach(rule => {
+            const tag = String(rule?.tag || '').trim();
+            const keyword = String(rule?.keyword || '').trim();
+            if (!tag || !keyword || keyword === tag) return;
+            if (!catalog[tag]) {
+                catalog[tag] = { primary: false, aliases: [] };
+                changed = true;
+            }
+            if (!catalog[tag].aliases.includes(keyword)) {
+                catalog[tag].aliases.push(keyword);
+                changed = true;
+            }
+        });
+        return changed;
+    }
+
+    function buildTagCatalogFromExistingState(postTagsMap, tagTypesMap, legacyRules) {
+        const catalog = {};
+
+        Object.values(postTagsMap || {}).forEach(tags => {
+            (tags || []).forEach(tag => {
+                const name = String(tag || '').trim();
+                if (!name) return;
+                if (!catalog[name]) {
+                    catalog[name] = { primary: false, aliases: [] };
+                }
+            });
+        });
+
+        Object.entries(tagTypesMap || {}).forEach(([tag, type]) => {
+            const name = String(tag || '').trim();
+            if (!name || !catalog[name]) return;
+            catalog[name].primary = type === 'primary';
+        });
+
+        mergeLegacyAutoTagRulesIntoCatalog(catalog, legacyRules);
+
+        return normalizeTagCatalog(catalog);
+    }
+
+    function buildAutoTagRulesFromCatalog(catalog) {
+        const rules = [];
+        Object.entries(normalizeTagCatalog(catalog)).forEach(([tag, meta]) => {
+            const keywords = [tag, ...(meta.aliases || [])];
+            Array.from(new Set(keywords)).forEach(keyword => {
+                if (!keyword) return;
+                rules.push({ keyword, tag, match_field: 'all' });
+            });
+        });
+        return rules;
+    }
+
+    function renameTagInState(postTagsMap, catalog, oldName, newName) {
+        const source = String(oldName || '').trim();
+        const target = String(newName || '').trim();
+        if (!source || !target || source === target) return false;
+
+        Object.keys(postTagsMap || {}).forEach(url => {
+            const tags = postTagsMap[url] || [];
+            const nextTags = [];
+            tags.forEach(tag => {
+                const value = tag === source ? target : tag;
+                if (value && !nextTags.includes(value)) {
+                    nextTags.push(value);
+                }
+            });
+            if (nextTags.length > 0) {
+                postTagsMap[url] = nextTags;
+            } else {
+                delete postTagsMap[url];
+            }
+        });
+
+        const sourceMeta = normalizeTagCatalog({ [source]: catalog?.[source] || {} })[source] || { primary: false, aliases: [] };
+        const targetMeta = normalizeTagCatalog({ [target]: catalog?.[target] || {} })[target] || { primary: false, aliases: [] };
+        catalog[target] = {
+            primary: Boolean(targetMeta.primary || sourceMeta.primary),
+            aliases: Array.from(new Set([...(targetMeta.aliases || []), ...(sourceMeta.aliases || [])]))
+                .filter(alias => alias !== target),
+        };
+        delete catalog[source];
+        return true;
+    }
+
+    function deleteTagFromState(postTagsMap, catalog, tagName) {
+        const target = String(tagName || '').trim();
+        if (!target) return false;
+
+        Object.keys(postTagsMap || {}).forEach(url => {
+            const nextTags = (postTagsMap[url] || []).filter(tag => tag !== target);
+            if (nextTags.length > 0) {
+                postTagsMap[url] = nextTags;
+            } else {
+                delete postTagsMap[url];
+            }
+        });
+
+        delete catalog[target];
+        return true;
+    }
+
+    function ensureCatalogContainsPostTags(catalog, postTagsMap) {
+        let changed = false;
+        Object.values(postTagsMap || {}).forEach(tags => {
+            (tags || []).forEach(tag => {
+                const name = String(tag || '').trim();
+                if (!name || catalog[name]) return;
+                catalog[name] = { primary: false, aliases: [] };
+                changed = true;
+            });
+        });
+        return changed;
+    }
+
+    function isPrimaryTag(tag) {
+        return Boolean(tagCatalog?.[tag]?.primary || tagTypes[tag] === 'primary');
+    }
+
+    async function saveTagCatalogToServer(catalog) {
+        const normalized = normalizeTagCatalog(catalog);
+        tagCatalog = normalized;
+        localStorage.setItem('sns_tag_catalog', JSON.stringify(normalized));
+        const response = await fetch('/api/save-tag-catalog', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(normalized),
+        });
+        if (!response.ok) {
+            throw new Error(`Failed to save tag catalog: ${response.status}`);
+        }
+        return normalized;
+    }
+
+    async function persistTagsAndCatalog() {
+        localStorage.setItem('sns_tags', JSON.stringify(postTags));
+        await syncTagsToServer();
+        await saveTagCatalogToServer(tagCatalog);
+    }
+
     function mergeAutoTags(urlToAutoTags) {
         Object.entries(urlToAutoTags || {}).forEach(([url, tags]) => {
             const merged = new Set(postTags[url] || []);
@@ -1190,22 +1350,19 @@ ${item.body}
         });
     }
 
-    async function applyAutoTagRules() {
-        const rules = JSON.parse(localStorage.getItem('sns_auto_tag_rules') || '[]');
+    async function applyAutoTagRules(options) {
+        options = options || {};
+        const catalog = normalizeTagCatalog(JSON.parse(localStorage.getItem('sns_tag_catalog') || '{}'));
+        const rules = buildAutoTagRulesFromCatalog(catalog);
         if (rules.length === 0) {
-            renderPosts();
+            if (!options.silent) renderPosts();
             return { matchedPostCount: 0, ruleCount: 0 };
         }
 
         const response = await fetch('/api/auto-tag/apply', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-                rules: rules.map((rule) => ({
-                    ...rule,
-                    match_field: 'all',
-                })),
-            }),
+            body: JSON.stringify({ rules }),
         });
 
         if (!response.ok) {
@@ -1226,7 +1383,7 @@ ${item.body}
         }
 
         updateGlobalTags();
-        renderPosts();
+        if (!options.silent) renderPosts();
         return {
             matchedPostCount: Number(payload.matched_post_count || 0),
             ruleCount: Number(payload.rule_count || rules.length),
@@ -1624,9 +1781,10 @@ ${item.body}
 
         try {
             const params = new URLSearchParams({ sort: getServerSortParam() });
-            const [postsRes, tagsRes] = await Promise.all([
+            const [postsRes, tagsRes, catalogRes] = await Promise.all([
                 fetch(`/api/posts?${params.toString()}`),
                 fetch('/api/get-tags'),
+                fetch('/api/get-tag-catalog'),
             ]);
 
             if (!postsRes.ok) {
@@ -1635,6 +1793,7 @@ ${item.body}
 
             const data = await postsRes.json();
             const serverTags = tagsRes.ok ? await tagsRes.json() : {};
+            const serverCatalog = catalogRes.ok ? normalizeTagCatalog(await catalogRes.json()) : {};
 
             Object.assign(postTags, serverTags);
             Object.keys(postTags).forEach((url) => {
@@ -1651,6 +1810,36 @@ ${item.body}
             _inFlightDetails.clear();
 
             migrateLegacyTagKeys(allPosts);
+
+            const localCatalog = normalizeTagCatalog(JSON.parse(localStorage.getItem('sns_tag_catalog') || '{}'));
+            const legacyRules = JSON.parse(localStorage.getItem('sns_auto_tag_rules') || '[]');
+            const legacyRulesMigrated = localStorage.getItem('sns_tag_catalog_migrated') === 'true';
+            tagCatalog = Object.keys(serverCatalog).length > 0 ? serverCatalog : localCatalog;
+            if (Object.keys(tagCatalog).length === 0) {
+                tagCatalog = buildTagCatalogFromExistingState(postTags, tagTypes, legacyRules);
+                localStorage.setItem('sns_tag_catalog_migrated', 'true');
+                await saveTagCatalogToServer(tagCatalog);
+            } else {
+                let catalogChanged = ensureCatalogContainsPostTags(tagCatalog, postTags);
+                if (!legacyRulesMigrated) {
+                    catalogChanged = mergeLegacyAutoTagRulesIntoCatalog(tagCatalog, legacyRules) || catalogChanged;
+                    localStorage.setItem('sns_tag_catalog_migrated', 'true');
+                }
+                if (catalogChanged) {
+                    await saveTagCatalogToServer(tagCatalog);
+                } else {
+                    localStorage.setItem('sns_tag_catalog', JSON.stringify(tagCatalog));
+                }
+            }
+
+            const postsSignature = postsRes.headers.get('ETag')
+                || `${allPosts.length}:${allPosts[0]?.canonical_url || ''}:${allPosts[allPosts.length - 1]?.canonical_url || ''}`;
+            const nextAutoTagSignature = `${postsSignature}:${JSON.stringify(tagCatalog)}`;
+            if (localStorage.getItem('sns_auto_tag_last_signature') !== nextAutoTagSignature) {
+                const result = await applyAutoTagRules({ silent: true });
+                localStorage.setItem('sns_auto_tag_last_signature', nextAutoTagSignature);
+                console.log(`🏷️ Auto tags synced: ${result.matchedPostCount} posts, ${result.ruleCount} rules`);
+            }
 
             if (totalPostsCount) {
                 totalPostsCount.textContent = `${allPosts.length} 건`;
@@ -2298,7 +2487,7 @@ ${item.body}
             
             tags.forEach(tag => {
                 const tagChip = document.createElement('div');
-                const isPrimary = tagTypes[tag] === 'primary';
+                const isPrimary = isPrimaryTag(tag);
                 tagChip.className = `tag-chip ${isPrimary ? 'primary' : ''}`;
                 tagChip.innerHTML = `
                     <span>${escapeHtml(tag)}</span>
@@ -2489,7 +2678,7 @@ ${item.body}
         
         sortedTags.forEach(tag => {
             const tagBtn = document.createElement('button');
-            const isPrimary = tagTypes[tag] === 'primary';
+            const isPrimary = isPrimaryTag(tag);
             tagBtn.className = `global-tag-chip ${currentTag === tag ? 'active' : ''} ${isPrimary ? 'primary' : ''}`;
             tagBtn.textContent = tag;
             tagBtn.addEventListener('click', () => {
@@ -2581,7 +2770,6 @@ ${item.body}
         // Default to Hidden Posts tab
         switchTab('tabHidden');
         renderInvisibleList();
-        renderAutoTagRules();
         renderTagManagementList();
     }
 
@@ -2624,62 +2812,202 @@ ${item.body}
         tagSearchInput.addEventListener('input', () => renderTagManagementList());
     }
 
+    function getTagUsageCounts() {
+        const counts = {};
+        Object.values(postTags).forEach(tags => {
+            Array.from(new Set(tags || [])).forEach(tag => {
+                counts[tag] = (counts[tag] || 0) + 1;
+            });
+        });
+        return counts;
+    }
+
     function renderTagManagementList() {
         const listContainer = document.getElementById('tagManagementList');
         const noTagsFound = document.getElementById('noTagsFound');
         const query = (document.getElementById('tagSearchInput')?.value || '').toLowerCase();
         
         if (!listContainer) return;
+
+        if (ensureCatalogContainsPostTags(tagCatalog, postTags)) {
+            localStorage.setItem('sns_tag_catalog', JSON.stringify(tagCatalog));
+        }
         
-        // Get all unique tags from system
-        const allUniqueTags = new Set();
-        Object.values(postTags).forEach(tags => tags.forEach(tag => allUniqueTags.add(tag)));
-        
-        const filteredTags = Array.from(allUniqueTags)
-            .filter(tag => tag.toLowerCase().includes(query))
+        const usageCounts = getTagUsageCounts();
+        const filteredTags = Object.entries(normalizeTagCatalog(tagCatalog))
+            .filter(([tag, meta]) => {
+                if (!query) return true;
+                return tag.toLowerCase().includes(query)
+                    || (meta.aliases || []).some(alias => alias.toLowerCase().includes(query));
+            })
+            .map(([tag]) => tag)
             .sort();
 
         listContainer.innerHTML = '';
         
         if (filteredTags.length === 0) {
-            noTagsFound.classList.remove('hidden');
+            noTagsFound?.classList.remove('hidden');
             return;
         }
         
-        noTagsFound.classList.add('hidden');
+        noTagsFound?.classList.add('hidden');
 
         filteredTags.forEach(tag => {
-            const isPrimary = tagTypes[tag] === 'primary';
+            const meta = tagCatalog[tag] || { primary: false, aliases: [] };
+            const isPrimary = isPrimaryTag(tag);
+            const aliases = Array.from(new Set(meta.aliases || [])).filter(alias => alias !== tag);
+            const count = usageCounts[tag] || 0;
             const item = document.createElement('div');
-            item.className = 'tag-manage-item';
+            item.className = 'tag-manage-item tag-manage-item--catalog';
+            item.dataset.tag = tag;
             
             item.innerHTML = `
-                <div class="flex items-center gap-3">
-                    <span class="text-sm font-medium text-white">${escapeHtml(tag)}</span>
-                    ${isPrimary ? `<span class="px-2 py-0.5 rounded bg-primary/20 text-primary text-[10px] font-bold border border-primary/20 uppercase">Primary</span>` : ''}
-                </div>
-                <div class="flex items-center gap-3">
-                    <span class="text-[11px] text-gray-500">${isPrimary ? '강조 해제' : '강조 표시'}</span>
-                    <label class="toggle-switch">
-                        <input type="checkbox" ${isPrimary ? 'checked' : ''} data-tag="${escapeHtml(tag)}">
-                        <span class="toggle-slider"></span>
-                    </label>
+                <div class="flex items-start justify-between gap-4 w-full">
+                    <div class="min-w-0 flex-1">
+                        <div class="flex items-center gap-2 flex-wrap">
+                            <span class="text-sm font-semibold text-white">${escapeHtml(tag)} (${count}개)</span>
+                            ${isPrimary ? `<span class="px-2 py-0.5 rounded bg-primary/20 text-primary text-[10px] font-bold border border-primary/20 uppercase">Primary</span>` : ''}
+                        </div>
+                        <div class="tag-alias-row mt-3 flex items-center gap-2 flex-wrap">
+                            <span class="text-[11px] text-gray-500 font-bold uppercase">Alias</span>
+                            <span class="px-2 py-1 rounded-lg bg-white/10 text-gray-200 text-xs border border-white/10">${escapeHtml(tag)}</span>
+                            ${aliases.map(alias => `
+                                <span class="tag-alias-chip px-2 py-1 rounded-lg bg-white/5 text-gray-300 text-xs border border-white/10 flex items-center gap-1">
+                                    ${escapeHtml(alias)}
+                                    <button class="remove-tag-alias text-gray-500 hover:text-red-300" data-tag="${escapeHtml(tag)}" data-alias="${escapeHtml(alias)}" title="Alias 삭제">
+                                        <span class="material-symbols-outlined text-[13px]">close</span>
+                                    </button>
+                                </span>
+                            `).join('')}
+                            <button class="add-tag-alias px-2 py-1 rounded-lg bg-primary/10 hover:bg-primary/20 text-primary text-xs border border-primary/20" data-tag="${escapeHtml(tag)}">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3 shrink-0">
+                        <span class="text-[11px] text-gray-500">Primary</span>
+                        <label class="toggle-switch">
+                            <input class="tag-primary-toggle" type="checkbox" ${isPrimary ? 'checked' : ''} data-tag="${escapeHtml(tag)}">
+                            <span class="toggle-slider"></span>
+                        </label>
+                        <button class="tag-menu-btn p-2 text-gray-500 hover:text-white transition-colors" data-tag="${escapeHtml(tag)}" title="태그 변경 또는 삭제">
+                            <span class="material-symbols-outlined text-[20px]">more_vert</span>
+                        </button>
+                    </div>
                 </div>
             `;
             
-            const checkbox = item.querySelector('input');
-            checkbox.addEventListener('change', (e) => {
+            item.querySelector('.tag-primary-toggle').addEventListener('change', async (e) => {
                 const tagName = e.target.dataset.tag;
-                if (e.target.checked) {
-                    tagTypes[tagName] = 'primary';
-                } else {
-                    delete tagTypes[tagName];
-                }
+                if (!tagCatalog[tagName]) tagCatalog[tagName] = { primary: false, aliases: [] };
+                tagCatalog[tagName].primary = e.target.checked;
+                if (e.target.checked) tagTypes[tagName] = 'primary';
+                else delete tagTypes[tagName];
                 localStorage.setItem('sns_tag_types', JSON.stringify(tagTypes));
-                
-                // Real-time update
-                renderTagManagementList();
-                renderPosts();
+
+                try {
+                    await saveTagCatalogToServer(tagCatalog);
+                    renderTagManagementList();
+                    renderPosts();
+                } catch (error) {
+                    console.error('Failed to save primary tag state:', error);
+                    alert('Primary 설정 저장에 실패했습니다.');
+                }
+            });
+
+            item.querySelectorAll('.remove-tag-alias').forEach(button => {
+                button.addEventListener('click', async (e) => {
+                    const target = e.currentTarget;
+                    const tagName = target.dataset.tag;
+                    const alias = target.dataset.alias;
+                    tagCatalog[tagName].aliases = (tagCatalog[tagName].aliases || []).filter(value => value !== alias);
+                    try {
+                        await saveTagCatalogToServer(tagCatalog);
+                        renderTagManagementList();
+                    } catch (error) {
+                        console.error('Failed to remove tag alias:', error);
+                        alert('Alias 삭제에 실패했습니다.');
+                    }
+                });
+            });
+
+            item.querySelector('.add-tag-alias').addEventListener('click', (e) => {
+                const tagName = e.currentTarget.dataset.tag;
+                const row = item.querySelector('.tag-alias-row');
+                if (row.querySelector('.tag-alias-input')) return;
+
+                const input = document.createElement('input');
+                input.type = 'text';
+                input.className = 'tag-alias-input px-2 py-1 rounded-lg bg-black/40 border border-white/10 text-xs text-white outline-none focus:border-primary/50 w-32';
+                input.placeholder = 'alias';
+                row.insertBefore(input, e.currentTarget);
+                input.focus();
+
+                const saveAlias = async () => {
+                    const alias = input.value.trim();
+                    if (!alias) {
+                        input.remove();
+                        return;
+                    }
+                    const aliases = new Set(tagCatalog[tagName].aliases || []);
+                    if (alias !== tagName) aliases.add(alias);
+                    tagCatalog[tagName].aliases = [...aliases];
+                    try {
+                        await saveTagCatalogToServer(tagCatalog);
+                        renderTagManagementList();
+                    } catch (error) {
+                        console.error('Failed to add tag alias:', error);
+                        alert('Alias 추가에 실패했습니다.');
+                    }
+                };
+
+                input.addEventListener('keydown', (event) => {
+                    if (event.key === 'Enter') {
+                        event.preventDefault();
+                        void saveAlias();
+                    }
+                    if (event.key === 'Escape') input.remove();
+                });
+                input.addEventListener('blur', () => {
+                    void saveAlias();
+                }, { once: true });
+            });
+
+            item.querySelector('.tag-menu-btn').addEventListener('click', async (e) => {
+                const tagName = e.currentTarget.dataset.tag;
+                const action = prompt(`"${tagName}" 태그 작업을 입력하세요.\n- 이름변경\n- 삭제`);
+                if (!action) return;
+
+                if (action.trim() === '이름변경') {
+                    const nextName = prompt('새 태그명을 입력하세요.', tagName)?.trim();
+                    if (!nextName || nextName === tagName) return;
+                    if (tagCatalog[nextName] && !confirm(`"${nextName}" 태그가 이미 있습니다. 두 태그를 병합할까요?`)) return;
+
+                    renameTagInState(postTags, tagCatalog, tagName, nextName);
+                    if (tagTypes[tagName]) {
+                        tagTypes[nextName] = tagTypes[tagName];
+                        delete tagTypes[tagName];
+                        localStorage.setItem('sns_tag_types', JSON.stringify(tagTypes));
+                    }
+                } else if (action.trim() === '삭제') {
+                    if (!confirm(`"${tagName}" 태그를 삭제할까요? ${count}개 게시물에서도 제거됩니다.`)) return;
+                    deleteTagFromState(postTags, tagCatalog, tagName);
+                    delete tagTypes[tagName];
+                    localStorage.setItem('sns_tag_types', JSON.stringify(tagTypes));
+                } else {
+                    alert('지원하는 작업은 "이름변경" 또는 "삭제"입니다.');
+                    return;
+                }
+
+                try {
+                    await persistTagsAndCatalog();
+                    updateGlobalTags();
+                    renderTagManagementList();
+                    renderPosts();
+                } catch (error) {
+                    console.error('Failed to update tag:', error);
+                    alert('태그 변경 저장에 실패했습니다.');
+                }
             });
             
             listContainer.appendChild(item);
@@ -2732,155 +3060,56 @@ ${item.body}
         });
     }
 
-    // --- Auto Tagging Rules UI ---
-    function renderAutoTagRules() {
-        const manualRules = JSON.parse(localStorage.getItem('sns_auto_tag_rules') || '[]');
-        const container = document.getElementById('autoTagRulesList');
-        container.innerHTML = '';
-        
-        // 1. Collect and Merge Rules
-        const mergedRules = [];
-        
-        // A. Manual Rules
-        manualRules.forEach((rule, index) => {
-            mergedRules.push({
-                type: 'manual',
-                keyword: rule.keyword,
-                tag: rule.tag,
-                index: index
-            });
-        });
-        
-        // B. Implicit Rules (from Tags)
-        const existingTags = new Set();
-        Object.values(postTags).forEach(tags => tags.forEach(tag => existingTags.add(tag)));
-        
-        existingTags.forEach(tag => {
-            // Only add if not covered by manual rules (exact match)
-            const exists = manualRules.some(r => r.keyword.toLowerCase() === tag.toLowerCase() && r.tag === tag);
-            if (!exists) {
-                mergedRules.push({
-                    type: 'auto',
-                    keyword: tag, // Keyword is the tag itself
-                    tag: tag,
-                    index: -1
-                });
+    const addTagBtn = document.getElementById('addTagBtn');
+    if (addTagBtn) {
+        addTagBtn.addEventListener('click', async () => {
+            const tagName = prompt('새 태그명을 입력하세요.')?.trim();
+            if (!tagName) return;
+            if (tagCatalog[tagName]) {
+                alert('이미 존재하는 태그입니다.');
+                return;
             }
-        });
-        
-        // Sort: Manual first, then alphabetical by tag
-        mergedRules.sort((a, b) => {
-            if (a.type !== b.type) return a.type === 'manual' ? -1 : 1;
-            return a.tag.localeCompare(b.tag);
-        });
 
-        if (mergedRules.length === 0) {
-            container.innerHTML = '<p class="text-center py-10 text-gray-600 text-sm italic">No rules defined yet.</p>';
-            return;
-        }
-
-        mergedRules.forEach(rule => {
-            const isManual = rule.type === 'manual';
-            const badgeColor = isManual ? 'bg-primary/10 border-primary/20 text-primary' : 'bg-blue-400/10 border-blue-400/20 text-blue-400';
-            const badgeLabel = isManual ? 'Manual' : 'Auto';
-            
-            const div = document.createElement('div');
-            div.className = 'flex items-center justify-between p-4 bg-white/5 rounded-2xl border border-white/5 group/rule hover:bg-white/10 transition-colors';
-            
-            div.innerHTML = `
-                <div class="flex items-center gap-3">
-                    <div class="px-2 py-0.5 rounded text-[10px] font-bold uppercase border ${badgeColor}">${badgeLabel}</div>
-                    ${!isManual ? `<div class="text-[10px] text-gray-500 uppercase font-bold tracking-wider">Tag</div>` : `<div class="px-2 py-0.5 rounded bg-gray-700/50 text-gray-400 text-[10px] font-bold border border-white/10">Key</div>`}
-                    <span class="text-sm font-medium text-white">${escapeHtml(rule.keyword)}</span>
-
-                    ${isManual ? `
-                    <span class="material-symbols-outlined text-gray-600 text-sm">arrow_forward</span>
-                    <div class="px-2 py-0.5 rounded bg-green-900/30 text-green-400 text-[10px] font-bold border border-green-500/20">Tag</div>
-                    <span class="text-sm font-medium text-white">${escapeHtml(rule.tag)}</span>
-                    ` : ''}
-                </div>
-                
-                ${isManual ? `
-                <button class="delete-rule-btn opacity-0 group-hover/rule:opacity-100 p-2 text-gray-500 hover:text-red-400 transition-all" data-index="${rule.index}">
-                    <span class="material-symbols-outlined text-[20px]">delete</span>
-                </button>` : `
-                <div class="opacity-0 group-hover/rule:opacity-100 cursor-help" title="Generated from existing tag">
-                    <span class="material-symbols-outlined text-[18px] text-gray-600">auto_awesome</span>
-                </div>
-                `}
-            `;
-            
-            if (isManual) {
-                div.querySelector('.delete-rule-btn').addEventListener('click', async () => {
-                    manualRules.splice(rule.index, 1);
-                    localStorage.setItem('sns_auto_tag_rules', JSON.stringify(manualRules));
-                    renderAutoTagRules();
-                    await applyAutoTagRules();
-                });
+            tagCatalog[tagName] = { primary: false, aliases: [] };
+            try {
+                await saveTagCatalogToServer(tagCatalog);
+                renderTagManagementList();
+            } catch (error) {
+                console.error('Failed to add tag:', error);
+                alert('태그 생성에 실패했습니다.');
             }
-            container.appendChild(div);
         });
     }
 
-    // Add Rule
-    document.getElementById('addAutoTagRuleBtn').addEventListener('click', async () => {
-        const keywordInput = document.getElementById('autoTagKeyword');
-        const tagInput = document.getElementById('autoTagTagName');
-        const keyword = keywordInput.value.trim();
-        const tag = tagInput.value.trim();
+    const runBatchAutoTagBtn = document.getElementById('runBatchAutoTagBtn');
+    if (runBatchAutoTagBtn) {
+        runBatchAutoTagBtn.addEventListener('click', async () => {
+            if (!confirm(`총 ${allPosts.length}개 게시물에 태그 alias를 일괄 적용할까요?`)) return;
 
-        if (!keyword || !tag) {
-            alert('Please enter both keyword and tag name.');
-            return;
-        }
-
-        const rules = JSON.parse(localStorage.getItem('sns_auto_tag_rules') || '[]');
-        rules.push({ keyword, tag });
-        localStorage.setItem('sns_auto_tag_rules', JSON.stringify(rules));
-
-        keywordInput.value = '';
-        tagInput.value = '';
-        renderAutoTagRules();
-        await applyAutoTagRules();
-    });
-
-    // Batch Update
-    document.getElementById('runBatchAutoTagBtn').addEventListener('click', async () => {
-        if (!confirm(`총 ${allPosts.length}개의 게시물에 대해 자동 태그 규칙을 적용하시겠습니까?`)) return;
-
-        const btn = document.getElementById('runBatchAutoTagBtn');
-        const statusArea = document.getElementById('batchUpdateStatus');
-        const progressBar = document.getElementById('batchProgressBar');
-        const progressPercent = document.getElementById('batchProgressPercent');
-        const resultMessage = document.getElementById('batchResultMessage');
-
-        // Reset UI
-        btn.disabled = true;
-        statusArea.classList.remove('hidden');
-        progressBar.style.width = '0%';
-        progressPercent.textContent = '0%';
-        resultMessage.classList.add('hidden');
-        
-        try {
-            const { matchedPostCount, ruleCount } = await applyAutoTagRules();
-
-            progressBar.style.width = '100%';
-            progressPercent.textContent = '100%';
-
-            resultMessage.textContent = matchedPostCount > 0
-                ? `완료! ${matchedPostCount}개 게시물에 자동 태그를 적용했습니다. (규칙: ${ruleCount})`
-                : `완료! 새로 적용된 자동 태그가 없습니다. (규칙: ${ruleCount})`;
-            resultMessage.classList.remove('hidden');
-        } catch (error) {
-            console.error('Failed to run batch auto tag:', error);
-            resultMessage.textContent = '자동 태그 적용 중 오류가 발생했습니다.';
-            resultMessage.classList.remove('hidden');
-        } finally {
-            setTimeout(() => {
-                btn.disabled = false;
-            }, 500);
-        }
-    });
+            const resultMessage = document.getElementById('batchResultMessage');
+            runBatchAutoTagBtn.disabled = true;
+            if (resultMessage) resultMessage.classList.add('hidden');
+            
+            try {
+                const { matchedPostCount, ruleCount } = await applyAutoTagRules();
+                if (resultMessage) {
+                    resultMessage.textContent = matchedPostCount > 0
+                        ? `완료: ${matchedPostCount}개 게시물에 태그를 적용했습니다. (규칙 ${ruleCount}개)`
+                        : `완료: 새로 적용된 태그가 없습니다. (규칙 ${ruleCount}개)`;
+                    resultMessage.classList.remove('hidden');
+                }
+                renderTagManagementList();
+            } catch (error) {
+                console.error('Failed to run batch auto tag:', error);
+                if (resultMessage) {
+                    resultMessage.textContent = '태그 일괄 적용 중 오류가 발생했습니다.';
+                    resultMessage.classList.remove('hidden');
+                }
+            } finally {
+                runBatchAutoTagBtn.disabled = false;
+            }
+        });
+    }
 
     // Logo / Home Logic
     const logoHome = document.getElementById('logoHome');

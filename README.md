@@ -176,8 +176,10 @@ Threads consumer는 Playwright 없이 `AUTH_HOME/threads/storage_state.json` 쿠
 - `index.html`은 `web_viewer/script.js`를 로드해 게시물을 렌더링합니다.
 - 메타 목록은 `GET /api/posts`로 읽고, 상세 본문과 미디어는 `GET /api/post/<sequence_id>`로 lazy-load 합니다.
 - 검색은 `GET /api/search`, 자동 태그 일괄 적용은 `POST /api/auto-tag/apply`를 사용합니다.
-- 태그, 강조 토글, 자동 태그 규칙은 `localStorage`와 `web_viewer/sns_tags.json`을 함께 사용합니다.
-- 태그 동기화 API는 `/api/get-tags`, `/api/save-tags`입니다.
+- 게시물별 태그는 `localStorage.sns_tags`와 `web_viewer/sns_tags.json`에 함께 저장합니다.
+- 태그명, 강조 표시, alias/키워드는 `localStorage.sns_tag_catalog`와 `web_viewer/sns_tag_catalog.json`에 저장합니다.
+- 태그 동기화 API는 `/api/get-tags`, `/api/save-tags`, `/api/get-tag-catalog`, `/api/save-tag-catalog`입니다.
+- `자동 태그`는 별도 설정 탭이 아니라 `태그 관리` 탭의 alias/키워드로 관리합니다.
 - 스크래퍼 트리거와 서버 상태 확인은 `/api/run-scrap`, `/api/status`를 사용합니다.
 - 레거시 Threads 태그 키(`threads.net`, `/t/`)는 뷰어에서 `www.threads.com` canonical로 정규화합니다.
 

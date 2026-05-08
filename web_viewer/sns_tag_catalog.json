@@ -1,0 +1,70 @@
+{
+    "기획": {
+        "primary": false,
+        "aliases": []
+    },
+    "마케팅": {
+        "primary": false,
+        "aliases": []
+    },
+    "클로드": {
+        "primary": false,
+        "aliases": []
+    },
+    "이미지": {
+        "primary": false,
+        "aliases": []
+    },
+    "gemini": {
+        "primary": false,
+        "aliases": []
+    },
+    "디자인": {
+        "primary": false,
+        "aliases": []
+    },
+    "노트북LM": {
+        "primary": false,
+        "aliases": []
+    },
+    "ppt": {
+        "primary": false,
+        "aliases": []
+    },
+    "나노바나나": {
+        "primary": false,
+        "aliases": []
+    },
+    "chatgpt": {
+        "primary": false,
+        "aliases": []
+    },
+    "노션": {
+        "primary": false,
+        "aliases": []
+    },
+    "리서치": {
+        "primary": false,
+        "aliases": []
+    },
+    "하네스": {
+        "primary": false,
+        "aliases": []
+    },
+    "콘텐츠자동화": {
+        "primary": false,
+        "aliases": []
+    },
+    "오픈클로": {
+        "primary": false,
+        "aliases": []
+    },
+    "안티그래비티": {
+        "primary": false,
+        "aliases": []
+    },
+    "옵시디언": {
+        "primary": false,
+        "aliases": []
+    }
+}

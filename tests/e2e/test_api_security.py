@@ -101,6 +101,17 @@ class TestSaveTagsValidation:
         data = resp.get_json()
         assert data.get("status") == "success"
 
+    def test_s9_empty_dict_accepted(self, client):
+        """S9: 모든 태그 삭제 상태도 정상 저장"""
+        resp = client.post(
+            '/api/save-tags',
+            data=json.dumps({}),
+            content_type='application/json'
+        )
+        assert resp.status_code == 200
+        data = resp.get_json()
+        assert data.get("status") == "success"
+
 
 @pytest.mark.security
 class TestErrorInfoLeakage:
