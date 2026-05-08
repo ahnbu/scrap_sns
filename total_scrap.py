@@ -111,10 +111,12 @@ def collect_preserved_local_images():
         for post in posts:
             media_list = post.get('media') or []
             local_images = post.get('local_images') or []
-            for index, img_url in enumerate(media_list):
-                if index >= len(local_images):
-                    continue
-                web_path = local_images[index]
+            image_media = [
+                img_url
+                for img_url in media_list
+                if img_url and '.mp4' not in str(img_url).lower()
+            ]
+            for img_url, web_path in zip(image_media, local_images):
                 if img_url and web_image_exists(web_path) and img_url not in preserved:
                     preserved[img_url] = web_path
     return preserved
