@@ -227,6 +227,151 @@ def manage_login(context, page):
     else:
         print("✅ 자동 로그인 성공!")
 
+
+def parse_threads_post_href(href):
+    if not href:
+        return None, None
+    match = re.search(r"/@([^/?#]+)/post/([^/?#]+)", href)
+    if not match:
+        return None, None
+    username = match.group(1)
+    code = match.group(2)
+    return username, code
+
+
+def collect_dom_post_candidates(page):
+    return page.evaluate(
+        """
+        () => Array.from(document.querySelectorAll('div[data-pressable-container="true"]'))
+            .map((element) => {
+                const link = element.querySelector('a[href*="/post/"]');
+                const images = Array.from(element.querySelectorAll('img'))
+                    .map((img) => img.getAttribute('src'))
+                    .filter((src) => src && src.includes('scontent') && !src.includes('s150x150'));
+                return {
+                    href: link ? link.getAttribute('href') : '',
+                    text: element.innerText || '',
+                    images: Array.from(new Set(images))
+                };
+            })
+        """
+    )
+
+
+def append_dom_posts_from_candidates(
+    candidates,
+    start_time_dt,
+    collected_data,
+    all_posts_map,
+    existing_codes=None,
+    source="scroll_dom",
+    target_limit=0,
+):
+    existing_codes = existing_codes or set()
+    collected_codes = {
+        p.get("platform_id") or p.get("code")
+        for p in collected_data
+        if p.get("platform_id") or p.get("code")
+    }
+    added_count = 0
+
+    for candidate in candidates:
+        if target_limit > 0 and len(collected_data) >= target_limit:
+            break
+
+        username, code = parse_threads_post_href(candidate.get("href"))
+        if not username or not code:
+            continue
+        if code in collected_codes:
+            continue
+        if code in existing_codes:
+            continue
+
+        raw_text = candidate.get("text") or ""
+        lines = raw_text.split("\n")
+        relative_date_str = None
+        date_patterns = [r"^\d+시간$", r"^\d+분$", r"^\d+일$", r"^\d+주$", r"^\d{4}-\d{2}-\d{2}$"]
+        for line in lines[1:4]:
+            line = line.strip()
+            if any(re.match(ptr, line) for ptr in date_patterns):
+                relative_date_str = line
+                break
+
+        created_at, time_text = parse_relative_time(relative_date_str, start_time_dt)
+        cleaned_text = clean_text(raw_text, platform="threads", username=username)
+        images = list(dict.fromkeys(candidate.get("images") or []))
+
+        post_info = reorder_post({
+            "platform_id": code,
+            "username": username,
+            "display_name": username,
+            "full_text": cleaned_text,
+            "media": images,
+            "created_at": created_at,
+            "date": created_at.split(" ")[0] if created_at else None,
+            "url": f"https://www.threads.com/@{username}/post/{code}",
+            "sns_platform": "threads",
+            "pk": None,
+            "like_count": -1,
+            "reply_count": -1,
+            "repost_count": -1,
+            "quote_count": -1,
+            "content_type": "carousel" if len(images) > 1 else ("image" if images else "text"),
+            "source": source,
+            "crawled_at": datetime.now().isoformat(timespec="milliseconds"),
+            "sequence_id": None,
+        })
+
+        existing = all_posts_map.get(code)
+        if existing:
+            post_info["crawled_at"] = existing.get("crawled_at")
+            post_info["sequence_id"] = existing.get("sequence_id")
+
+        if not post_info["full_text"] and not post_info["media"]:
+            continue
+
+        collected_data.append(post_info)
+        collected_codes.add(code)
+        added_count += 1
+        print(f"   + [DOM:{source}] [{code}] {cleaned_text.replace('\n', ' ')[:15]}... ({len(collected_data)}개)")
+
+    return added_count
+
+
+def append_dom_posts_from_page(
+    page,
+    start_time_dt,
+    collected_data,
+    all_posts_map,
+    existing_codes=None,
+    source="scroll_dom",
+    target_limit=0,
+):
+    try:
+        candidates = collect_dom_post_candidates(page)
+    except Exception:
+        return 0
+    return append_dom_posts_from_candidates(
+        candidates=candidates,
+        start_time_dt=start_time_dt,
+        collected_data=collected_data,
+        all_posts_map=all_posts_map,
+        existing_codes=existing_codes,
+        source=source,
+        target_limit=target_limit,
+    )
+
+
+def scroll_saved_page(page):
+    page.evaluate(
+        """
+        () => {
+            const step = Math.max(Math.floor(window.innerHeight * 1.6), 800);
+            window.scrollBy(0, step);
+        }
+        """
+    )
+
 def run():
     start_time_dt = datetime.now()
     collected_data = []
@@ -614,9 +759,23 @@ def run():
 
                     try:
                         if page.is_closed(): break
-                        page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+                        scroll_saved_page(page)
                         print(f"⬇️ 스크롤 {i}회차...", end="\r")
                         time.sleep(3)
+
+                        dom_added = append_dom_posts_from_page(
+                            page=page,
+                            start_time_dt=start_time_dt,
+                            collected_data=collected_data,
+                            all_posts_map=all_posts_map,
+                            existing_codes=existing_codes,
+                            source="scroll_dom",
+                            target_limit=TARGET_LIMIT,
+                        )
+                        if dom_added:
+                            stop_code_found = False
+                            consecutive_dup_count = 0
+                            print(f"\n✅ DOM 보완 데이터 추가됨! (추가 {dom_added}개, 누적 {len(collected_data)}개)")
 
                         if stop_code_found:
                             print(f"\n✋ 기수집 연속 한도({CONSECUTIVE_DUP_LIMIT}건) 도달 → 스크롤 중단")
@@ -696,7 +855,7 @@ def run():
                 with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
                     json.dump(ordered_unique_collected, f, ensure_ascii=False, indent=4)
 
-                dom_cnt = sum(1 for p in ordered_unique_collected if p.get('source') == 'initial_dom')
+                dom_cnt = sum(1 for p in ordered_unique_collected if p.get('source') in ('initial_dom', 'scroll_dom'))
                 net_cnt = sum(1 for p in ordered_unique_collected if p.get('source') == 'network')
                 print(f"✅ 신규 크롤링 저장: {OUTPUT_FILE}")
                 print(f"   - Network 기반: {net_cnt}개")
