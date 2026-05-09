@@ -39,13 +39,16 @@ SCRAP_PROGRESS_LOG_SOURCES = {
     "LinkedIn": os.path.join(PROJECT_ROOT, "logs", "linkedin.log"),
     "X/Twitter": os.path.join(PROJECT_ROOT, "logs", "x_twitter.log"),
 }
+SCRAP_PROGRESS_LOG_PATH = os.path.join(PROJECT_ROOT, "logs", "scrap_progress.log")
 SCRAP_PROGRESS = {
     "run_id": "",
     "running": False,
     "seq": 0,
     "events": [],
     "started_at": None,
+    "started_monotonic": None,
     "updated_at": None,
+    "platform_list_new_counts": {},
 }
 SCRAP_PROGRESS_LOCK = threading.Lock()
 _POSTS_CACHE = {
@@ -60,6 +63,21 @@ _POSTS_CACHE = {
 
 def _now_kst_iso():
     return datetime.now(KST).isoformat(timespec="seconds")
+
+
+def _format_scrap_elapsed(started_monotonic):
+    if started_monotonic is None:
+        return None
+    elapsed_seconds = max(0, int(time.monotonic() - started_monotonic))
+    minutes, seconds = divmod(elapsed_seconds, 60)
+    return f"{minutes:02d}:{seconds:02d} 경과"
+
+
+def _parse_count(raw):
+    try:
+        return int(str(raw).replace(",", ""))
+    except (TypeError, ValueError):
+        return 0
 
 
 def _normalize_scrap_run_id(raw):
@@ -167,9 +185,28 @@ def _scrap_progress_message_from_log_line(platform, line):
     if current_count_match:
         return f"{platform_label} 목록 수집 중 {current_count_match.group(1)}개"
 
+    list_new_count_match = re.search(
+        r"최종 데이터\s*[0-9,]+개\s*저장 중\s*\(신규:\s*([0-9,]+)개\)",
+        text,
+    )
+    if list_new_count_match:
+        new_count = _parse_count(list_new_count_match.group(1))
+        if new_count > 0:
+            return {
+                "message": f"{platform_label} 목록 신규 {new_count}건 발견",
+                "platform": platform_label,
+                "list_new_count": new_count,
+            }
+        return None
+
     target_match = re.search(r"\[Target\]\s*수집대상\s*([0-9,]+)개", text)
     if target_match:
-        return f"{platform_label} 상세 수집 대상 {target_match.group(1)}개"
+        target_count = _parse_count(target_match.group(1))
+        return {
+            "message": f"{platform_label} 상세 수집 대상 {target_count}건",
+            "platform": platform_label,
+            "detail_target_count": target_count,
+        }
 
     detail_done_match = re.search(
         r"수집 완료:.+\(([0-9,]+)/([0-9,]+),\s*([0-9,]+)%\)",
@@ -188,8 +225,6 @@ def _scrap_progress_message_from_log_line(platform, line):
         return f"{platform_label} 목록 파일 저장 완료"
     if "전체 데이터 파일 저장 완료" in text or "최종 상세 데이터 동기화 완료" in text:
         return f"{platform_label} 데이터 저장 완료"
-    if "더 이상 새로운 데이터가 없습니다" in text:
-        return f"{platform_label} 새 데이터 없음"
     if "기준 게시물을" in text:
         return f"{platform_label} 기준 게시물 확인 완료"
 
@@ -251,28 +286,81 @@ def _start_scrap_log_tailer(offsets):
     return stop_event, thread
 
 
-def _append_scrap_progress(message, level="info"):
+def _normalize_scrap_progress_info(progress):
+    if not progress:
+        return None
+    if isinstance(progress, dict):
+        info = progress.copy()
+    else:
+        info = {"message": str(progress)}
+    message = str(info.get("message") or "").strip()
     if not message:
+        return None
+    info["message"] = message
+    return info
+
+
+def _write_scrap_progress_log_event(event):
+    try:
+        os.makedirs(os.path.dirname(SCRAP_PROGRESS_LOG_PATH), exist_ok=True)
+        with open(SCRAP_PROGRESS_LOG_PATH, "a", encoding="utf-8") as file:
+            elapsed = event.get("elapsed")
+            message = event.get("message")
+            if elapsed:
+                file.write(f"{event.get('time')} | {elapsed} | {message}\n")
+            else:
+                file.write(f"{event.get('time')} | {message}\n")
+    except OSError:
+        logging.exception("Failed to write scrap progress log")
+
+
+def _append_scrap_progress(progress, level="info"):
+    info = _normalize_scrap_progress_info(progress)
+    if not info:
         return
 
-    message = str(message)
+    created_event = None
     with SCRAP_PROGRESS_LOCK:
+        platform = info.get("platform")
+        if platform and "list_new_count" in info:
+            SCRAP_PROGRESS["platform_list_new_counts"][platform] = _parse_count(
+                info.get("list_new_count")
+            )
+
+        if platform and "detail_target_count" in info:
+            target_count = _parse_count(info.get("detail_target_count"))
+            new_count = SCRAP_PROGRESS["platform_list_new_counts"].get(platform)
+            if platform == "Threads" and new_count and target_count >= new_count:
+                retry_count = target_count - new_count
+                info["message"] = (
+                    f"{platform} 상세 수집 대상 {target_count}건 "
+                    f"(신규 {new_count}건 + 기존 미완료/재시도 {retry_count}건)"
+                )
+            else:
+                info["message"] = f"{platform} 상세 수집 대상 {target_count}건"
+
+        message = info["message"]
         if any(event.get("message") == message for event in SCRAP_PROGRESS["events"]):
             return
 
         SCRAP_PROGRESS["seq"] += 1
         now = _now_kst_iso()
+        elapsed = _format_scrap_elapsed(SCRAP_PROGRESS.get("started_monotonic"))
         SCRAP_PROGRESS["updated_at"] = now
-        SCRAP_PROGRESS["events"].append(
-            {
-                "seq": SCRAP_PROGRESS["seq"],
-                "time": now,
-                "level": level,
-                "message": message,
-            }
-        )
+        created_event = {
+            "seq": SCRAP_PROGRESS["seq"],
+            "time": now,
+            "level": level,
+            "message": message,
+        }
+        if elapsed:
+            created_event["elapsed"] = elapsed
+        SCRAP_PROGRESS["events"].append(created_event)
         if len(SCRAP_PROGRESS["events"]) > SCRAP_PROGRESS_MAX_EVENTS:
             SCRAP_PROGRESS["events"] = SCRAP_PROGRESS["events"][-SCRAP_PROGRESS_MAX_EVENTS:]
+
+    if created_event:
+        _write_scrap_progress_log_event(created_event)
 
 
 def _reset_scrap_progress(run_id, mode):
@@ -285,7 +373,9 @@ def _reset_scrap_progress(run_id, mode):
                 "seq": 0,
                 "events": [],
                 "started_at": now,
+                "started_monotonic": time.monotonic(),
                 "updated_at": now,
+                "platform_list_new_counts": {},
             }
         )
 

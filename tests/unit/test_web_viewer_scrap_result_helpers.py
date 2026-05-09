@@ -513,10 +513,11 @@ def test_scrap_progress_console_message_helpers_filter_and_format_events():
         eval(extractFunction('buildScrapProgressConsoleMessage'));
 
         const events = [
-          { seq: 1, message: '최근 업데이트 스크랩 시작' },
+          { seq: 1, message: '최근 업데이트 스크랩 시작', elapsed: '00:00 경과' },
           { seq: 2, message: '' },
-          { seq: 3, message: 'LinkedIn 목록 수집 완료' },
-          { seq: 4, message: null }
+          { seq: 3, message: 'LinkedIn 목록 수집 완료', elapsed: '01:12 경과' },
+          { seq: 4, message: 'Threads 목록 신규 3건 발견' },
+          { seq: 5, message: null }
         ];
 
         const messages = events
@@ -528,6 +529,7 @@ def test_scrap_progress_console_message_helpers_filter_and_format_events():
     )
 
     assert run_node_json(node_script) == [
-        "[SNS Scrap] 최근 업데이트 스크랩 시작",
-        "[SNS Scrap] LinkedIn 목록 수집 완료",
+        "[SNS Scrap] 00:00 경과 | 최근 업데이트 스크랩 시작",
+        "[SNS Scrap] 01:12 경과 | LinkedIn 목록 수집 완료",
+        "[SNS Scrap] Threads 목록 신규 3건 발견",
     ]

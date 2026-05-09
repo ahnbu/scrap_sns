@@ -377,6 +377,90 @@ def test_run_scrap_records_progress_from_child_log_files(client, tmp_path, monke
     assert "LinkedIn 목록 수집 중 42개" in messages
 
 
+def test_run_scrap_promotes_threads_new_and_retry_counts_with_elapsed_log(
+    client,
+    tmp_path,
+    monkeypatch,
+):
+    import server
+
+    clock = {"value": 100.0}
+    log_path = tmp_path / "threads.log"
+    progress_log_path = tmp_path / "scrap_progress.log"
+
+    monkeypatch.setattr(server.time, "monotonic", lambda: clock["value"])
+    monkeypatch.setattr(server, "OUTPUT_TOTAL_DIR", str(tmp_path))
+    monkeypatch.setattr(
+        server,
+        "SCRAP_PROGRESS_LOG_SOURCES",
+        {"Threads": str(log_path)},
+        raising=False,
+    )
+    monkeypatch.setattr(
+        server,
+        "SCRAP_PROGRESS_LOG_PATH",
+        str(progress_log_path),
+        raising=False,
+    )
+    _write_total_file(tmp_path, "20260508", total=849, threads=849, linkedin=0, twitter=0)
+    log_path.write_text("", encoding="utf-8")
+
+    def write_after_file():
+        clock["value"] = 136.0
+        log_path.write_text(
+            "🏁 더 이상 새로운 데이터가 없습니다.\n"
+            "💾 최종 데이터 852개 저장 중 (신규: 3개)...\n"
+            "[Target] 수집대상 5개 | 기수집 스킵 56개 | 코드없음 스킵 0개 | 실패한도 스킵 30개\n",
+            encoding="utf-8",
+        )
+        _write_total_file(tmp_path, "20260509", total=852, threads=852, linkedin=0, twitter=0)
+        return 0
+
+    with patch(
+        "subprocess.Popen",
+        return_value=_make_process(
+            write_after_file,
+            output='SNS_SCRAP_SUMMARY {"platform_results":{}}\n',
+        ),
+    ):
+        resp = client.post(
+            "/api/run-scrap",
+            json={"mode": "update", "run_id": "threads-count-progress-test"},
+        )
+
+    assert resp.status_code == 200
+
+    progress_resp = client.get(
+        "/api/scrap-progress?run_id=threads-count-progress-test&after=0"
+    )
+    events = progress_resp.get_json()["events"]
+    messages = [event["message"] for event in events]
+
+    assert "Threads 새 데이터 없음" not in messages
+    assert "Threads 목록 신규 3건 발견" in messages
+    assert (
+        "Threads 상세 수집 대상 5건 (신규 3건 + 기존 미완료/재시도 2건)"
+        in messages
+    )
+
+    elapsed_by_message = {event["message"]: event["elapsed"] for event in events}
+    assert elapsed_by_message["Threads 목록 신규 3건 발견"] == "00:36 경과"
+    assert (
+        elapsed_by_message[
+            "Threads 상세 수집 대상 5건 (신규 3건 + 기존 미완료/재시도 2건)"
+        ]
+        == "00:36 경과"
+    )
+
+    progress_log = progress_log_path.read_text(encoding="utf-8")
+    assert "00:36 경과 | Threads 목록 신규 3건 발견" in progress_log
+    assert (
+        "00:36 경과 | Threads 상세 수집 대상 5건 (신규 3건 + 기존 미완료/재시도 2건)"
+        in progress_log
+    )
+    assert "Threads 새 데이터 없음" not in progress_log
+
+
 def test_scrap_progress_ignores_other_run_id(client):
     resp = client.get("/api/scrap-progress?run_id=missing-run&after=0")
 

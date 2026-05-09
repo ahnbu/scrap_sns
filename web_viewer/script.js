@@ -78,7 +78,9 @@ function isScrapProgressEventLoggable(event) {
 }
 
 function buildScrapProgressConsoleMessage(event) {
-    return `[SNS Scrap] ${String(event.message || '').trim()}`;
+    const message = String(event.message || '').trim();
+    const elapsed = String(event.elapsed || '').trim();
+    return elapsed ? `[SNS Scrap] ${elapsed} | ${message}` : `[SNS Scrap] ${message}`;
 }
 
 document.addEventListener('DOMContentLoaded', () => {
