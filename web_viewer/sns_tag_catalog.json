@@ -1,70 +1,118 @@
 {
-    "기획": {
+    "chatgpt": {
         "primary": false,
-        "aliases": []
-    },
-    "마케팅": {
-        "primary": false,
-        "aliases": []
-    },
-    "클로드": {
-        "primary": false,
-        "aliases": []
-    },
-    "이미지": {
-        "primary": false,
-        "aliases": []
+        "aliases": [
+            "gpt",
+            "챗GPT",
+            "codex",
+            "코덱스"
+        ]
     },
     "gemini": {
         "primary": false,
-        "aliases": []
-    },
-    "디자인": {
-        "primary": false,
-        "aliases": []
-    },
-    "노트북LM": {
-        "primary": false,
-        "aliases": []
+        "aliases": [
+            "제미나이"
+        ]
     },
     "ppt": {
         "primary": false,
-        "aliases": []
+        "aliases": [
+            "슬라이드",
+            "slide",
+            "gamma"
+        ]
+    },
+    "기획": {
+        "primary": false,
+        "aliases": [
+            "제안서",
+            "기획서",
+            "사업계획"
+        ]
     },
     "나노바나나": {
         "primary": false,
-        "aliases": []
-    },
-    "chatgpt": {
-        "primary": false,
-        "aliases": []
+        "aliases": [
+            "nano bannana"
+        ]
     },
     "노션": {
         "primary": false,
-        "aliases": []
+        "aliases": [
+            "notion"
+        ]
+    },
+    "노트북LM": {
+        "primary": false,
+        "aliases": [
+            "notebooklm"
+        ]
+    },
+    "디자인": {
+        "primary": false,
+        "aliases": [
+            "design"
+        ]
     },
     "리서치": {
         "primary": false,
-        "aliases": []
+        "aliases": [
+            "perplexity",
+            "research"
+        ]
     },
-    "하네스": {
+    "마케팅": {
         "primary": false,
-        "aliases": []
-    },
-    "콘텐츠자동화": {
-        "primary": false,
-        "aliases": []
-    },
-    "오픈클로": {
-        "primary": false,
-        "aliases": []
+        "aliases": [
+            "marketing"
+        ]
     },
     "안티그래비티": {
         "primary": false,
-        "aliases": []
+        "aliases": [
+            "antigravity"
+        ]
+    },
+    "오픈클로": {
+        "primary": false,
+        "aliases": [
+            "Hermes",
+            "openclaw",
+            "nanoclaw"
+        ]
     },
     "옵시디언": {
         "primary": false,
-        "aliases": []
+        "aliases": [
+            "obsidian"
+        ]
+    },
+    "이미지": {
+        "primary": false,
+        "aliases": [
+            "나노 바나나",
+            "gpt 이미지",
+            "nano bannana",
+            "미드저니"
+        ]
+    },
+    "카드뉴스": {
+        "primary": false,
+        "aliases": [
+            "인포그래픽",
+            "infographic"
+        ]
+    },
+    "클로드": {
+        "primary": false,
+        "aliases": [
+            "claude"
+        ]
+    },
+    "하네스": {
+        "primary": false,
+        "aliases": [
+            "harness"
+        ]
     }
 }
