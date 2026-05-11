@@ -129,7 +129,9 @@ def test_build_auth_renewal_prompt_warns_against_automated_login():
           includesRenewCommand: prompt.includes('renew.py'),
           includesPlatformArgs: prompt.includes('x threads'),
           includesUtf8Env: prompt.includes('PYTHONIOENCODING'),
-          includesVerification: prompt.includes('linkedin_scrap.py --mode update'),
+          includesXVerification: prompt.includes('python scripts\\auth_runtime\\verify_x_auth.py'),
+          includesThreadsVerification: prompt.includes('python thread_scrap.py --mode update'),
+          excludesLinkedInOnlyVerification: !prompt.includes('python linkedin_scrap.py --mode update\\n   →'),
           blocksAutomation: prompt.includes('자동화하지 마세요')
         }));
         """
@@ -141,7 +143,9 @@ def test_build_auth_renewal_prompt_warns_against_automated_login():
         "includesRenewCommand": True,
         "includesPlatformArgs": True,
         "includesUtf8Env": True,
-        "includesVerification": True,
+        "includesXVerification": True,
+        "includesThreadsVerification": True,
+        "excludesLinkedInOnlyVerification": True,
         "blocksAutomation": True,
     }
 
@@ -231,6 +235,75 @@ def test_build_scrap_result_view_model_includes_stats_and_auth_notice():
         ],
         "authLabels": ["X", "Threads"],
         "hasPrompt": True,
+    }
+
+
+def test_x_auth_suppressed_result_is_failed_not_auth_required():
+    node_script = textwrap.dedent(
+        r"""
+        const fs = require('fs');
+        const src = fs.readFileSync('web_viewer/script.js', 'utf8');
+
+        function extractFunction(name) {
+          const patterns = [`async function ${name}(`, `function ${name}(`];
+          let start = -1;
+          for (const pattern of patterns) {
+            start = src.indexOf(pattern);
+            if (start !== -1) break;
+          }
+          if (start === -1) {
+            console.error(`${name} missing`);
+            process.exit(1);
+          }
+          let depth = 0;
+          let end = -1;
+          for (let i = start; i < src.length; i += 1) {
+            const ch = src[i];
+            if (ch === '{') depth += 1;
+            if (ch === '}') {
+              depth -= 1;
+              if (depth === 0) {
+                end = i + 1;
+                break;
+              }
+            }
+          }
+          if (end === -1) {
+            console.error(`${name} parse failure`);
+            process.exit(1);
+          }
+          return src.slice(start, end);
+        }
+
+        global.authPlatformLabels = { linkedin: 'LinkedIn', threads: 'Threads', x: 'X' };
+        eval(extractFunction('normalizeAuthPlatform'));
+        eval(extractFunction('getAuthRequiredPlatforms'));
+        eval(extractFunction('getFailedPlatforms'));
+
+        const result = {
+          auth_required: [],
+          platform_results: {
+            x: {
+              status: 'failed',
+              auth_suppression: {
+                suppressed_auth_required: true,
+                reason: 'current_url_not_auth',
+                current_url: 'https://x.com/i/bookmarks'
+              }
+            }
+          }
+        };
+
+        console.log(JSON.stringify({
+          auth: getAuthRequiredPlatforms(result),
+          failed: getFailedPlatforms(result)
+        }));
+        """
+    )
+
+    assert run_node_json(node_script) == {
+        "auth": [],
+        "failed": ["x"],
     }
 
 

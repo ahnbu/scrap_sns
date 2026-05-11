@@ -591,6 +591,60 @@ def _normalize_scrap_summary(summary):
     }
 
 
+def _is_auth_url(url):
+    lowered = str(url or "").lower()
+    return any(marker in lowered for marker in ("login", "signup", "challenge"))
+
+
+def _find_x_auth_signal(x_result):
+    if not isinstance(x_result, dict):
+        return {}
+
+    signal = x_result.get("auth_signal")
+    if isinstance(signal, dict):
+        return signal
+
+    for phase in (x_result.get("phases") or {}).values():
+        if not isinstance(phase, dict):
+            continue
+        signal = phase.get("auth_signal")
+        if isinstance(signal, dict):
+            return signal
+
+    return {}
+
+
+def _suppress_unreliable_x_auth_required(summary):
+    auth_required = list(summary.get("auth_required") or [])
+    if "x" not in auth_required:
+        return summary
+
+    platform_results = summary.get("platform_results") or {}
+    x_result = platform_results.get("x") or {}
+    signal = _find_x_auth_signal(x_result)
+    if not signal:
+        return summary
+
+    reason = str(signal.get("reason") or "").lower()
+    current_url = str(signal.get("current_url") or "")
+    if not current_url:
+        return summary
+    if reason == "login_required" and _is_auth_url(current_url):
+        return summary
+
+    summary["auth_required"] = [platform for platform in auth_required if platform != "x"]
+    x_result["status"] = "failed"
+    x_result.pop("auth_required", None)
+    x_result["auth_suppression"] = {
+        "suppressed_auth_required": True,
+        "reason": "current_url_not_auth",
+        "current_url": current_url,
+    }
+    platform_results["x"] = x_result
+    summary["platform_results"] = platform_results
+    return summary
+
+
 def _request_cache_token():
     full_path = str(request.full_path or "").rstrip("?")
     return full_path or (request.path or "")
@@ -975,6 +1029,7 @@ def run_scrap():
             'twitter_count': after_counts['twitter'],
         }
         summary = _normalize_scrap_summary(_parse_scrap_summary(full_output))
+        summary = _suppress_unreliable_x_auth_required(summary)
         consistency_probe = _build_consistency_probe((before_payload or {}).get("posts") or [])
         _append_scrap_progress(_scrap_complete_message(mode, stats))
         _finish_scrap_progress()

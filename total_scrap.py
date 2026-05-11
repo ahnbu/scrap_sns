@@ -210,6 +210,42 @@ def _write_phase_log_header(file_handle, platform, phase_name, cmd):
     file_handle.flush()
 
 
+def _parse_auth_signal_line(line):
+    text = str(line or "").strip()
+    prefix = "SNS_AUTH_REQUIRED"
+    if not text.startswith(prefix):
+        return None
+
+    raw_payload = text[len(prefix):].strip()
+    if not raw_payload:
+        return None
+
+    try:
+        payload = json.loads(raw_payload)
+    except json.JSONDecodeError:
+        return None
+
+    return payload if isinstance(payload, dict) else None
+
+
+def _read_auth_signal_from_log(log_path, start_offset=0):
+    if not log_path or not os.path.exists(log_path):
+        return None
+
+    latest = None
+    try:
+        with open(log_path, "r", encoding="utf-8", errors="replace") as handle:
+            handle.seek(max(0, int(start_offset or 0)))
+            for line in handle:
+                payload = _parse_auth_signal_line(line)
+                if payload:
+                    latest = payload
+    except OSError:
+        return None
+
+    return latest
+
+
 def _finalize_platform_results(platform_results):
     for result in platform_results.values():
         phases = result.get("phases") or {}
@@ -323,6 +359,7 @@ def run_scrapers_in_parallel(mode='update'):
                     opened_log_files.append((platform, file_handle))
 
                 _write_phase_log_header(file_handle, platform, phase_name, cmd)
+                phase_log_offset = file_handle.tell()
                 print(f"   [+] {platform} {phase_label} 실행 중 (로그: {log_path})...")
 
                 env = os.environ.copy()
@@ -342,6 +379,7 @@ def run_scrapers_in_parallel(mode='update'):
                 result["phases"][phase_name] = {
                     "status": "running",
                     "returncode": None,
+                    "log_offset": phase_log_offset,
                 }
 
             print(f"\n⏳ {phase_label} wave 완료 대기 중... ({len(running_processes)}개 프로세스)")
@@ -359,6 +397,22 @@ def run_scrapers_in_parallel(mode='update'):
                 phase_result = result["phases"].setdefault(phase_name, {})
                 phase_result["returncode"] = p.returncode
                 phase_result["status"] = _status_from_returncode(p.returncode)
+                if p.returncode == AUTH_REQUIRED_EXIT_CODE:
+                    try:
+                        file_handle = log_handles.get(platform)
+                        if file_handle:
+                            file_handle.flush()
+                    except Exception:
+                        pass
+                    auth_signal = _read_auth_signal_from_log(
+                        result.get("log"),
+                        phase_result.get("log_offset", 0),
+                    )
+                    if auth_signal:
+                        phase_result["auth_signal"] = auth_signal
+                        result["auth_signal"] = auth_signal
+                    else:
+                        phase_result["auth_signal_missing"] = True
 
                 if p.returncode == 0:
                     print(f"   ✅ {platform} {phase_label} 완료.")

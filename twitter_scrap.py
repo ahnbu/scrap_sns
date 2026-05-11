@@ -42,12 +42,40 @@ TARGET_LIMIT = 0
 
 
 
+TRANSIENT_X_BROWSER_ERRORS = (
+    "Browser window not found",
+    "Target page, context or browser has been closed",
+)
+
+
+def is_transient_x_browser_error(error: Exception) -> bool:
+    message = str(error)
+    return any(pattern in message for pattern in TRANSIENT_X_BROWSER_ERRORS)
+
+
 def parse_twitter_date(date_str):
     try:
         dt = datetime.strptime(date_str, '%a %b %d %H:%M:%S +0000 %Y')
         return dt.strftime('%Y-%m-%d %H:%M:%S'), dt.strftime('%Y-%m-%d')
     except Exception:
         return None, None
+
+
+def classify_x_auth_state(
+    *,
+    current_url: str,
+    has_tweet_article: bool,
+    bookmark_response_seen: bool,
+    parsed_bookmark_count: int,
+) -> tuple[bool, str]:
+    url = (current_url or "").lower()
+    if "login" in url or "signup" in url or "challenge" in url:
+        return False, "login_required"
+    if parsed_bookmark_count > 0:
+        return True, "bookmark_response"
+    if bookmark_response_seen or has_tweet_article:
+        return True, "bookmarks_loaded"
+    return False, "no_bookmark_signal"
 
 
 def should_require_x_auth(
@@ -57,14 +85,35 @@ def should_require_x_auth(
     bookmark_response_seen: bool,
     parsed_bookmark_count: int,
 ) -> bool:
-    url = (current_url or "").lower()
-    if "login" in url or "signup" in url or "challenge" in url:
-        return True
-    if has_tweet_article:
-        return False
-    if parsed_bookmark_count > 0 or bookmark_response_seen:
-        return False
-    return True
+    _ready, reason = classify_x_auth_state(
+        current_url=current_url,
+        has_tweet_article=has_tweet_article,
+        bookmark_response_seen=bookmark_response_seen,
+        parsed_bookmark_count=parsed_bookmark_count,
+    )
+    return reason == "login_required"
+
+
+def launch_x_producer_context(playwright, user_data_dir: str):
+    last_error = None
+    for attempt in range(3):
+        try:
+            return playwright.chromium.launch_persistent_context(
+                user_data_dir=user_data_dir,
+                channel="chrome",
+                headless=False,
+                args=[
+                    f"--window-position={WINDOW_X},{WINDOW_Y}",
+                    "--disable-blink-features=AutomationControlled",
+                ],
+                viewport={"width": WINDOW_WIDTH, "height": WINDOW_HEIGHT},
+            )
+        except Exception as error:
+            last_error = error
+            if not is_transient_x_browser_error(error) or attempt == 2:
+                raise
+            time.sleep(1)
+    raise last_error
 
 def get_user_info(tweet_results):
     user_res = tweet_results.get('core', {}).get('user_results', {}).get('result', {})
@@ -255,13 +304,7 @@ def main(args):
     os.makedirs(USER_DATA_DIR, exist_ok=True)
 
     with sync_playwright() as p:
-        context = p.chromium.launch_persistent_context(
-            user_data_dir=USER_DATA_DIR,
-            channel="chrome",
-            headless=False,
-            args=[f"--window-position={WINDOW_X},{WINDOW_Y}", "--disable-blink-features=AutomationControlled"],
-            viewport={"width": WINDOW_WIDTH, "height": WINDOW_HEIGHT}
-        )
+        context = launch_x_producer_context(p, USER_DATA_DIR)
         page = context.pages[0]
 
         bookmark_response_seen = False
@@ -298,19 +341,30 @@ def main(args):
                                 print(f"   + [Net] @{post['username']} | {msg}... ({len(all_posts_map)}개)", flush=True)
                 except Exception: pass
 
+        def wait_for_bookmark_signal(page) -> None:
+            try:
+                response = page.wait_for_response(
+                    lambda item: "Bookmarks?variables=" in item.url,
+                    timeout=10000,
+                )
+                handle_response(response)
+            except Exception:
+                page.wait_for_timeout(5000)
+
         page.on("response", handle_response)
         
         print("\n🔍 [1단계] 북마크 페이지 접속 중...", flush=True)
         page.goto("https://x.com/i/bookmarks", wait_until="domcontentloaded")
-        time.sleep(3)
+        wait_for_bookmark_signal(page)
 
         has_tweet_article = page.query_selector('article[data-testid="tweet"]') is not None
-        if should_require_x_auth(
+        _is_ready, auth_reason = classify_x_auth_state(
             current_url=page.url,
             has_tweet_article=has_tweet_article,
             bookmark_response_seen=bookmark_response_seen,
             parsed_bookmark_count=parsed_bookmark_count,
-        ):
+        )
+        if auth_reason == "login_required":
             print("💡 로그인이 필요합니다. 브라우저에서 진행해주세요...", flush=True)
             if is_orchestrated_run():
                 context.close()
@@ -321,6 +375,11 @@ def main(args):
                     auth_file=USER_DATA_DIR,
                 )
             page.wait_for_selector('article[data-testid="tweet"]', timeout=0)
+        elif auth_reason == "no_bookmark_signal":
+            print(
+                "⚠️ X 북마크 로딩 신호를 아직 확인하지 못했습니다. 인증 만료로 처리하지 않고 수집을 계속합니다.",
+                flush=True,
+            )
 
         print("\n📜 [2단계] 스크롤 및 실시간 수집 시작", flush=True)
         scroll_count = 0

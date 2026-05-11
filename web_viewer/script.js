@@ -420,6 +420,15 @@ document.addEventListener('DOMContentLoaded', () => {
         // 과거 앱 인증 패널(--web 흐름)은 운영에서 동작하지 않아 호출이 끊긴 상태이며 (BL-0505-03 보류),
         // AI에게 갱신을 위임할 때도 터미널 명령이 가장 신뢰 가능한 경로다.
         const platformArgs = platforms.filter(Boolean).join(' ') || 'linkedin';
+        const verificationCommands = {
+            linkedin: 'python linkedin_scrap.py --mode update',
+            threads: 'python thread_scrap.py --mode update',
+            x: 'python scripts\\auth_runtime\\verify_x_auth.py'
+        };
+        const verificationLines = platforms
+            .filter(Boolean)
+            .map(platform => verificationCommands[platform])
+            .filter(Boolean);
 
         return [
             `D:\\vibe-coding\\scrap_sns 프로젝트에서 ${labels} 인증 세션을 갱신해 주세요.`,
@@ -434,12 +443,14 @@ document.addEventListener('DOMContentLoaded', () => {
             '4) 로그인 완료 후 PowerShell에서 Enter를 눌러 storage_state를 저장합니다.',
             '',
             '검증:',
-            `   python linkedin_scrap.py --mode update`,
-            `   → "SNS_AUTH_REQUIRED login_required" 메시지가 발생하지 않으면 성공`,
+            ...verificationLines.map(command => `   ${command}`),
+            `   → 대상 플랫폼의 "SNS_AUTH_REQUIRED login_required" 메시지가 발생하지 않으면 성공`,
             '',
             '참고:',
             '- 인증 정본 경로: utils/auth_paths.py, AUTH_HOME(~/.config/auth)',
             '- 갱신기 환경: scripts/auth_runtime/renew.py (Chrome/122 + ko-KR + 1280x1000 fingerprint 정렬됨)',
+            '- X는 producer user_data와 consumer cookies를 함께 검증합니다. X 검증은 verify_x_auth.py를 사용하세요.',
+            '- AI가 PowerShell 명령을 자동 주입할 때 따옴표가 깨질 수 있으니, 사용자가 직접 PowerShell에 붙여넣는 흐름을 우선합니다.',
             '- 보안 챌린지·CAPTCHA·2FA는 자동화하지 마세요. 사용자가 직접 통과합니다.'
         ].join('\n');
     }

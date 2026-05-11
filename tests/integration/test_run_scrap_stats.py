@@ -135,6 +135,80 @@ def test_phased_summary_marks_auth_required_when_only_consumer_phase_reports_aut
     assert payload["platform_results"]["x"]["phases"]["consumer"]["status"] == "auth_required"
 
 
+def test_run_scrap_suppresses_x_auth_required_when_signal_url_is_not_auth_page(
+    client,
+    tmp_path,
+    monkeypatch,
+):
+    import server
+
+    monkeypatch.setattr(server, "OUTPUT_TOTAL_DIR", str(tmp_path))
+    _write_total_file(tmp_path, "20260510", total=100, threads=50, linkedin=30, twitter=20)
+
+    summary_output = "\n".join(
+        [
+            "scraping finished",
+            (
+                'SNS_SCRAP_SUMMARY {"platform_results":{"x":{"status":"auth_required",'
+                '"auth_signal":{"platform":"x","reason":"login_required",'
+                '"current_url":"https://x.com/i/bookmarks"},'
+                '"phases":{"producer":{"status":"auth_required","auth_signal":'
+                '{"platform":"x","reason":"login_required","current_url":"https://x.com/i/bookmarks"}},'
+                '"consumer":{"status":"ok"}}}},'
+                '"auth_required":["x"]}'
+            ),
+            "",
+        ]
+    )
+
+    with patch("subprocess.Popen", return_value=_make_process(output=summary_output)):
+        resp = client.post("/api/run-scrap", json={"mode": "update"})
+
+    assert resp.status_code == 200
+    payload = resp.get_json()
+    assert payload["auth_required"] == []
+    assert payload["platform_results"]["x"]["status"] == "failed"
+    assert payload["platform_results"]["x"]["auth_suppression"] == {
+        "suppressed_auth_required": True,
+        "reason": "current_url_not_auth",
+        "current_url": "https://x.com/i/bookmarks",
+    }
+
+
+def test_run_scrap_keeps_x_auth_required_when_signal_url_is_login_page(
+    client,
+    tmp_path,
+    monkeypatch,
+):
+    import server
+
+    monkeypatch.setattr(server, "OUTPUT_TOTAL_DIR", str(tmp_path))
+    _write_total_file(tmp_path, "20260510", total=100, threads=50, linkedin=30, twitter=20)
+
+    summary_output = "\n".join(
+        [
+            "scraping finished",
+            (
+                'SNS_SCRAP_SUMMARY {"platform_results":{"x":{"status":"auth_required",'
+                '"auth_signal":{"platform":"x","reason":"login_required",'
+                '"current_url":"https://x.com/i/flow/login"},'
+                '"phases":{"producer":{"status":"auth_required","auth_signal":'
+                '{"platform":"x","reason":"login_required","current_url":"https://x.com/i/flow/login"}}}}},'
+                '"auth_required":["x"]}'
+            ),
+            "",
+        ]
+    )
+
+    with patch("subprocess.Popen", return_value=_make_process(output=summary_output)):
+        resp = client.post("/api/run-scrap", json={"mode": "update"})
+
+    assert resp.status_code == 200
+    payload = resp.get_json()
+    assert payload["auth_required"] == ["x"]
+    assert "auth_suppression" not in payload["platform_results"]["x"]
+
+
 def test_run_scrap_response_includes_platform_new_samples(client, tmp_path, monkeypatch):
     import server
 
