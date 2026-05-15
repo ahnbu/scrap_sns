@@ -19,7 +19,8 @@
         "aliases": [
             "슬라이드",
             "slide",
-            "gamma"
+            "gamma",
+            "피피티"
         ]
     },
     "기획": {
@@ -78,7 +79,8 @@
         "aliases": [
             "Hermes",
             "openclaw",
-            "nanoclaw"
+            "nanoclaw",
+            "클로드봇"
         ]
     },
     "옵시디언": {
@@ -114,5 +116,9 @@
         "aliases": [
             "harness"
         ]
+    },
+    "테스트": {
+        "primary": false,
+        "aliases": []
     }
 }
