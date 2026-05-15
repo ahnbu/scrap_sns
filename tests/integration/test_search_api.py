@@ -44,6 +44,23 @@ def _write_total_payload(tmp_path):
                 "is_detail_collected": True,
                 "is_merged_thread": False,
             },
+            {
+                "sequence_id": 3,
+                "platform_id": "SLIDES123",
+                "sns_platform": "linkedin",
+                "code": "SLIDES123",
+                "username": "builder",
+                "display_name": "Builder",
+                "url": "https://www.linkedin.com/feed/update/urn:li:activity:123",
+                "created_at": "2026-04-21T09:00:00",
+                "date": "2026-04-21",
+                "source": "consumer_detail",
+                "full_text": "slides-grab is an HTML slide editor.",
+                "media": [],
+                "local_images": [],
+                "is_detail_collected": True,
+                "is_merged_thread": False,
+            },
         ],
     }
     target = tmp_path / "total_full_20260419.json"
@@ -99,6 +116,51 @@ def test_search_api_matches_preheated_text(app, tmp_path, monkeypatch):
     payload = response.get_json()
     assert payload["total_matched"] == 1
     assert payload["posts"][0]["canonical_url"] == "https://www.threads.com/@alice/post/ABC123"
+
+
+def test_search_api_matches_hyphenated_terms_with_space_query(app, tmp_path, monkeypatch):
+    import server
+
+    _write_total_payload(tmp_path)
+    _reset_posts_cache(server, monkeypatch, tmp_path)
+
+    client = app.test_client()
+    response = client.get("/api/search", query_string={"q": "slide grab", "limit": 10})
+
+    assert response.status_code == 200
+    payload = response.get_json()
+    assert payload["total_matched"] == 1
+    assert payload["posts"][0]["platform_id"] == "SLIDES123"
+
+
+def test_search_api_matches_hyphenated_terms_with_hyphen_or_plural_query(app, tmp_path, monkeypatch):
+    import server
+
+    _write_total_payload(tmp_path)
+    _reset_posts_cache(server, monkeypatch, tmp_path)
+
+    client = app.test_client()
+
+    for query in ("slides-grab", "slides grab", "slide-grab"):
+        response = client.get("/api/search", query_string={"q": query, "limit": 10})
+        assert response.status_code == 200
+        payload = response.get_json()
+        assert payload["total_matched"] == 1
+        assert payload["posts"][0]["platform_id"] == "SLIDES123"
+
+
+def test_search_api_does_not_treat_grap_as_grab_typo(app, tmp_path, monkeypatch):
+    import server
+
+    _write_total_payload(tmp_path)
+    _reset_posts_cache(server, monkeypatch, tmp_path)
+
+    client = app.test_client()
+    response = client.get("/api/search", query_string={"q": "slide grap", "limit": 10})
+
+    assert response.status_code == 200
+    payload = response.get_json()
+    assert payload["total_matched"] == 0
 
 
 def test_search_api_platform_all_behaves_like_no_filter(app, tmp_path, monkeypatch):

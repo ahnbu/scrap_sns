@@ -89,6 +89,28 @@ function normalizePlatformName(value = '') {
   return normalized;
 }
 
+function normalizeSearchText(value = '') {
+  return String(value || '')
+    .normalize('NFKC')
+    .toLowerCase()
+    .replace(/[-_]+/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function splitSearchTerms(value = '') {
+  return normalizeSearchText(value).split(' ').filter(Boolean);
+}
+
+function matchesSearchText(value, query) {
+  const haystack = normalizeSearchText(value);
+  const normalizedQuery = normalizeSearchText(query);
+  if (!normalizedQuery) return false;
+  if (haystack.includes(normalizedQuery)) return true;
+  const terms = splitSearchTerms(query);
+  return terms.length > 0 && terms.every((term) => haystack.includes(term));
+}
+
 function parseArgs(argv) {
   const args = argv.slice(2);
   const options = {
@@ -330,8 +352,8 @@ function cmdByUser(posts, tagsMap, keyword, options) {
 }
 
 function cmdSearch(posts, tagsMap, keyword, options) {
-  const needle = String(keyword || '').trim().toLowerCase();
-  if (!needle) {
+  const normalizedKeyword = normalizeSearchText(keyword);
+  if (!normalizedKeyword) {
     fail('search requires a keyword');
   }
 
@@ -340,16 +362,16 @@ function cmdSearch(posts, tagsMap, keyword, options) {
       const tags = getTagsForPost(post, tagsMap);
       const matchFields = [];
 
-      if (String(post.full_text || '').toLowerCase().includes(needle)) {
+      if (matchesSearchText(post.full_text, keyword)) {
         matchFields.push('full_text');
       }
-      if (String(post.display_name || '').toLowerCase().includes(needle)) {
+      if (matchesSearchText(post.display_name, keyword)) {
         matchFields.push('display_name');
       }
-      if (String(post.username || '').toLowerCase().includes(needle)) {
+      if (matchesSearchText(post.username, keyword)) {
         matchFields.push('username');
       }
-      if (tags.some((tag) => String(tag).toLowerCase().includes(needle))) {
+      if (tags.some((tag) => matchesSearchText(tag, keyword))) {
         matchFields.push('tags');
       }
 
@@ -568,4 +590,12 @@ function main() {
   }
 }
 
-main();
+if (process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.argv[1])) {
+  main();
+}
+
+export {
+  normalizeSearchText,
+  splitSearchTerms,
+  matchesSearchText,
+};

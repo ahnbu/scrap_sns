@@ -151,6 +151,7 @@ REQUIRED_FIELDS = ["sns_platform", "username", "url", "created_at"]
 - `index.html`은 `web_viewer/script.js`를 로드한다.
 - 메타 목록은 `GET /api/posts`에서 읽고, 상세 본문과 미디어는 `GET /api/post/<sequence_id>`에서 lazy-load 한다.
 - 검색은 `GET /api/search`, 자동 태그 일괄 적용은 `POST /api/auto-tag/apply`를 사용한다.
+- 검색 매칭은 대소문자를 무시하고, `-`와 `_`를 공백처럼 정규화한 뒤 다단어 AND 부분일치를 적용한다. 오타 보정과 붙여쓰기 compact 검색은 지원하지 않는다.
 - 게시물별 태그는 `localStorage.sns_tags`와 `web_viewer/sns_tags.json`에 함께 저장된다.
 - 태그명, 강조 표시, alias/키워드는 `localStorage.sns_tag_catalog`와 `web_viewer/sns_tag_catalog.json`에 저장된다.
 - 기존 `localStorage.sns_auto_tag_rules`는 첫 로드 때 태그 카탈로그 alias로 1회 병합된다.

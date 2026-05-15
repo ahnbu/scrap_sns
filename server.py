@@ -11,6 +11,7 @@ import subprocess
 import tempfile
 import threading
 import time
+import unicodedata
 from datetime import datetime, timedelta, timezone
 from flask import Flask, jsonify, send_from_directory, request, abort
 from flask_cors import CORS
@@ -506,6 +507,31 @@ def _sort_search_matches(posts, sort):
     )
 
 
+_SEARCH_SEPARATOR_RE = re.compile(r"[-_]+")
+_SEARCH_WHITESPACE_RE = re.compile(r"\s+")
+
+
+def _normalize_search_text(value):
+    normalized = unicodedata.normalize("NFKC", str(value or "")).casefold()
+    normalized = _SEARCH_SEPARATOR_RE.sub(" ", normalized)
+    return _SEARCH_WHITESPACE_RE.sub(" ", normalized).strip()
+
+
+def _split_search_terms(value):
+    return [term for term in _normalize_search_text(value).split(" ") if term]
+
+
+def _matches_search_query(searchable, query):
+    normalized_query = _normalize_search_text(query)
+    if not normalized_query:
+        return False
+    searchable_text = str(searchable or "")
+    if normalized_query in searchable_text:
+        return True
+    terms = _split_search_terms(query)
+    return bool(terms) and all(term in searchable_text for term in terms)
+
+
 def _parse_scrap_summary(lines):
     pattern = re.compile(r"SNS_SCRAP_SUMMARY\s*[:=]?\s*(\{.*\})\s*$")
     for line in reversed(lines):
@@ -718,7 +744,7 @@ def _load_latest_posts():
             {
                 **raw_post,
                 **meta,
-                "_searchable": " ".join(part for part in searchable_parts if part).lower(),
+                "_searchable": _normalize_search_text(" ".join(part for part in searchable_parts if part)),
             }
         )
         posts_meta.append(meta)
@@ -1266,12 +1292,11 @@ def search_posts():
 
     try:
         cache = _load_latest_posts()
-        query = q.lower()
         matched_posts = []
         for post in cache["posts_full"]:
             if not _matches_platform_filter(post, platform):
                 continue
-            if query in str(post.get("_searchable") or ""):
+            if _matches_search_query(post.get("_searchable"), q):
                 matched_posts.append(post)
 
         matches = [build_post_meta(post) for post in _sort_search_matches(matched_posts, request.args.get("sort"))]
