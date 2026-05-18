@@ -21,13 +21,15 @@ Commands:
   by-tag <tag>
   tag list [url]
   stats
+  export <command> [args]
 
 Options:
   --platform <platform>   Filter by platform
   --from <YYYY-MM-DD>     Include posts from this date
   --to <YYYY-MM-DD>       Include posts until this date
   --limit <N>             Limit results (default: 10)
-  --format <json|brief>   Output format (default: json)
+  --format <json|brief|md> Output format (default: json; md is for export)
+  --out <path>            Export output path
   --help, -h              Show this help
 `);
 }
@@ -121,6 +123,7 @@ function parseArgs(argv) {
     to: '',
     limit: 10,
     format: 'json',
+    out: '',
   };
 
   let index = 0;
@@ -143,6 +146,8 @@ function parseArgs(argv) {
       options.limit = parsed;
     } else if (value === '--format' && args[index + 1]) {
       options.format = args[++index];
+    } else if (value === '--out' && args[index + 1]) {
+      options.out = args[++index];
     } else if (!options.command) {
       options.command = value;
     } else {
@@ -151,8 +156,14 @@ function parseArgs(argv) {
     index += 1;
   }
 
-  if (!['json', 'brief'].includes(options.format)) {
-    fail('invalid --format value. expected json or brief');
+  if (!['json', 'brief', 'md'].includes(options.format)) {
+    fail('invalid --format value. expected json, brief, or md');
+  }
+  if (options.format === 'md' && options.command !== 'export') {
+    fail('md format is only supported for export');
+  }
+  if (options.command === 'export' && options.format === 'brief') {
+    fail('export format must be json or md');
   }
 
   return options;
@@ -212,6 +223,47 @@ function createExcerpt(text, limit = 120) {
   return `${normalized.slice(0, limit - 3)}...`;
 }
 
+function formatKstTimestamp(date = new Date()) {
+  const parts = new Intl.DateTimeFormat('sv-SE', {
+    timeZone: 'Asia/Seoul',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+    hour12: false,
+  }).format(date);
+  return `${parts} KST`;
+}
+
+function makeSafeSlug(value = 'export') {
+  const slug = String(value || 'export')
+    .normalize('NFKC')
+    .replace(/[^0-9A-Za-z가-힣_-]+/g, '_')
+    .replace(/_+/g, '_')
+    .replace(/^_+|_+$/g, '')
+    .slice(0, 60);
+  return slug || 'export';
+}
+
+function resolveExportPath(options, exportCommand, keyword, format) {
+  const extension = format === 'json' ? 'json' : 'md';
+  const basePath = options.out
+    ? path.resolve(PROJECT_ROOT, options.out)
+    : path.join(
+        PROJECT_ROOT,
+        'output_exports',
+        `sns_export_${makeSafeSlug(exportCommand)}_${makeSafeSlug(keyword)}.${extension}`
+      );
+
+  if (!fs.existsSync(basePath)) return basePath;
+
+  const parsed = path.parse(basePath);
+  const stamp = formatKstTimestamp().slice(0, 16).replace(/[-: ]/g, '');
+  return path.join(parsed.dir, `${parsed.name}_${stamp}${parsed.ext}`);
+}
+
 function postToResult(post, tags, extras = {}) {
   return {
     sequence_id: post.sequence_id ?? null,
@@ -228,6 +280,64 @@ function postToResult(post, tags, extras = {}) {
     tags,
     ...extras,
   };
+}
+
+function postToExportResult(post, tags, extras = {}) {
+  return {
+    sequence_id: post.sequence_id ?? null,
+    platform_id: post.platform_id || '',
+    code: post.code || post.platform_id || '',
+    sns_platform: normalizePlatformName(post.sns_platform),
+    username: post.username || '',
+    display_name: post.display_name || post.username || '',
+    url: resolvePostUrl(post),
+    created_at: post.created_at || '',
+    date: post.date || extractDateValue(post),
+    full_text: post.full_text || '',
+    media: Array.isArray(post.media) ? post.media : [],
+    local_images: Array.isArray(post.local_images) ? post.local_images : [],
+    tags,
+    ...extras,
+  };
+}
+
+function renderMarkdownExport(payload, context) {
+  const lines = [
+    '# SNS 조회 Export',
+    '',
+    '## 출처/조회조건',
+    '',
+    `- 생성일: ${context.generatedAt}`,
+    `- 실행한 조회: \`${context.invocation}\``,
+    `- 사용한 데이터: \`${context.dataFile}\``,
+    `- 사용한 태그 파일: ${context.tagsFile ? `\`${context.tagsFile}\`` : '없음'}`,
+    `- 전체 검색 결과: ${payload.total_matches}`,
+    `- 저장된 결과: ${payload.returned}`,
+    '',
+    '---',
+    '',
+  ];
+
+  payload.posts.forEach((post, index) => {
+    const author = post.display_name || post.username || 'unknown';
+    const username = post.username ? `@${post.username}` : 'unknown';
+    const tags = post.tags.length > 0 ? post.tags.join(', ') : '없음';
+    lines.push(`## ${index + 1}. [${post.date || 'unknown'}] ${author} (${username}) - ${post.sns_platform || 'unknown'}`);
+    lines.push('');
+    lines.push(`- URL: ${post.url ? `[Original](${post.url})` : '없음'}`);
+    lines.push(`- ID: ${post.platform_id || post.code || '없음'}`);
+    lines.push(`- Tags: ${tags}`);
+    if (Array.isArray(post.match_fields) && post.match_fields.length > 0) {
+      lines.push(`- Match fields: ${post.match_fields.join(', ')}`);
+    }
+    lines.push('');
+    lines.push(post.full_text || '(본문 없음)');
+    lines.push('');
+    lines.push('---');
+    lines.push('');
+  });
+
+  return lines.join('\n');
 }
 
 function formatBrief(post) {
@@ -510,6 +620,104 @@ function cmdStats(posts, tagsMap, dataFile, options, data) {
   };
 }
 
+function buildPayload({ data, posts, file, tagsMap, options }) {
+  switch (options.command) {
+    case 'recent':
+      return cmdRecent(posts, tagsMap, options);
+    case 'get':
+      return cmdGet(posts, tagsMap, options.positional[0]);
+    case 'search':
+      return cmdSearch(posts, tagsMap, options.positional[0], options);
+    case 'by-platform':
+      return cmdByPlatform(posts, tagsMap, options.positional[0], options);
+    case 'by-user':
+      return cmdByUser(posts, tagsMap, options.positional[0], options);
+    case 'by-tag':
+      return cmdByTag(posts, tagsMap, options.positional[0], options);
+    case 'tag':
+      if (options.positional[0] !== 'list') {
+        fail('supported tag subcommand: list');
+      }
+      return cmdTagList(posts, tagsMap, options.positional[1]);
+    case 'stats':
+      return cmdStats(posts, tagsMap, file, options, data);
+    default:
+      fail(`unknown command: ${options.command}`);
+  }
+}
+
+const EXPORTABLE_COMMANDS = new Set(['recent', 'search', 'by-platform', 'by-user', 'by-tag']);
+
+function findSourcePost(posts, result) {
+  const bySequence = posts.find((post) =>
+    post.sequence_id != null &&
+    result.sequence_id != null &&
+    String(post.sequence_id) === String(result.sequence_id)
+  );
+  if (bySequence) return bySequence;
+
+  return posts.find((post) =>
+    normalizePlatformName(post.sns_platform) === result.sns_platform &&
+    String(post.platform_id || post.code) === String(result.platform_id || result.code)
+  );
+}
+
+function cmdExport(context, options) {
+  const [exportCommand, ...exportPositionals] = options.positional;
+  if (!exportCommand) {
+    fail('export requires a command');
+  }
+  if (!EXPORTABLE_COMMANDS.has(exportCommand)) {
+    fail(`export supports: ${[...EXPORTABLE_COMMANDS].join(', ')}`);
+  }
+
+  const innerOptions = {
+    ...options,
+    command: exportCommand,
+    positional: exportPositionals,
+    format: 'json',
+  };
+  const payload = buildPayload({ ...context, options: innerOptions });
+  const exportPosts = payload.posts.map((result) => {
+    const source = findSourcePost(context.posts, result);
+    return source
+      ? postToExportResult(source, result.tags || [], {
+          match_fields: result.match_fields || [],
+        })
+      : result;
+  });
+
+  const exportPayload = {
+    ...payload,
+    posts: exportPosts,
+  };
+
+  const format = options.format === 'md' ? 'md' : 'json';
+  const outputPath = resolveExportPath(options, exportCommand, exportPositionals.join('_'), format);
+  fs.mkdirSync(path.dirname(outputPath), { recursive: true });
+
+  const dataFile = path.relative(PROJECT_ROOT, context.file).replace(/\\/g, '/');
+  const tagsFile = fs.existsSync(TAGS_PATH) ? path.relative(PROJECT_ROOT, TAGS_PATH).replace(/\\/g, '/') : null;
+  const invocation = process.argv.slice(2).join(' ');
+  const generatedAt = formatKstTimestamp();
+
+  const fileContent = format === 'json'
+    ? `${JSON.stringify(exportPayload, null, 2)}\n`
+    : renderMarkdownExport(exportPayload, { generatedAt, invocation, dataFile, tagsFile });
+  fs.writeFileSync(outputPath, fileContent, 'utf8');
+
+  return {
+    command: 'export',
+    source_command: exportCommand,
+    total_matches: exportPayload.total_matches,
+    returned: exportPayload.returned,
+    export: {
+      format,
+      output_path: path.relative(PROJECT_ROOT, outputPath).replace(/\\/g, '/'),
+    },
+  };
+}
+
 function renderBrief(payload) {
   if (Array.isArray(payload.posts)) {
     return payload.posts.map((post) => formatBrief(post)).join('\n');
@@ -549,41 +757,13 @@ function main() {
   try {
     const { data, posts, file } = loadPosts();
     const tagsMap = loadTags();
+    const context = { data, posts, file, tagsMap };
 
-    let payload;
-    switch (options.command) {
-      case 'recent':
-        payload = cmdRecent(posts, tagsMap, options);
-        break;
-      case 'get':
-        payload = cmdGet(posts, tagsMap, options.positional[0]);
-        break;
-      case 'search':
-        payload = cmdSearch(posts, tagsMap, options.positional[0], options);
-        break;
-      case 'by-platform':
-        payload = cmdByPlatform(posts, tagsMap, options.positional[0], options);
-        break;
-      case 'by-user':
-        payload = cmdByUser(posts, tagsMap, options.positional[0], options);
-        break;
-      case 'by-tag':
-        payload = cmdByTag(posts, tagsMap, options.positional[0], options);
-        break;
-      case 'tag':
-        if (options.positional[0] !== 'list') {
-          fail('supported tag subcommand: list');
-        }
-        payload = cmdTagList(posts, tagsMap, options.positional[1]);
-        break;
-      case 'stats':
-        payload = cmdStats(posts, tagsMap, file, options, data);
-        break;
-      default:
-        fail(`unknown command: ${options.command}`);
-    }
+    const payload = options.command === 'export'
+      ? cmdExport(context, options)
+      : buildPayload({ ...context, options });
 
-    printPayload(payload, options);
+    printPayload(payload, options.command === 'export' ? { ...options, format: 'json' } : options);
   } catch (error) {
     process.stderr.write(`Error: ${error.message}\n`);
     process.exit(1);

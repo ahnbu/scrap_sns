@@ -61,6 +61,17 @@ function main() {
   const help = runCli(['--help']);
   assert.equal(help.status, 0, `--help 실패\nSTDERR:\n${help.stderr}`);
   assert.match(help.stderr, /Usage:/, '--help 출력에 Usage가 없습니다.');
+  assert.match(help.stderr, /export <command>/, 'help에 export 명령이 없습니다.');
+  assert.match(help.stderr, /--out <path>/, 'help에 --out 옵션이 없습니다.');
+  assert.match(help.stderr, /json\|brief\|md/, 'help에 md format 안내가 없습니다.');
+
+  const nonExportMd = runCli(['recent', '1', '--format', 'md']);
+  assert.notEqual(nonExportMd.status, 0, 'export가 아닌 명령에서 --format md가 성공하면 안 됩니다.');
+  assert.match(
+    nonExportMd.stderr,
+    /md format is only supported for export/,
+    'non-export md 실패 메시지가 부정확합니다.'
+  );
 
   expectSuccess(['stats'], (payload) => {
     assert.equal(payload.command, 'stats');
@@ -119,6 +130,46 @@ function main() {
     2,
     'brief 출력 줄 수가 recent 개수와 다릅니다.'
   );
+
+  const exportDir = path.join(projectRoot, 'test_runs');
+  fs.mkdirSync(exportDir, { recursive: true });
+  const exportMdPath = path.join(exportDir, `query-sns-export-test-${Date.now()}.md`);
+  const exportMd = runCli(['export', 'recent', '1', '--format', 'md', '--out', exportMdPath]);
+  assert.equal(exportMd.status, 0, `export md 실패\nSTDERR:\n${exportMd.stderr}`);
+  const exportSummary = JSON.parse(exportMd.stdout);
+  assert.equal(exportSummary.command, 'export');
+  assert.equal(exportSummary.export.format, 'md');
+  assert.equal(
+    exportSummary.export.output_path.replaceAll('\\', '/'),
+    path.relative(projectRoot, exportMdPath).replaceAll('\\', '/')
+  );
+  assert.equal(fs.existsSync(exportMdPath), true, 'export md 파일이 생성되지 않았습니다.');
+
+  const mdText = fs.readFileSync(exportMdPath, 'utf8');
+  assert.match(mdText, /^# SNS 조회 Export/m, 'md 제목이 없습니다.');
+  assert.match(mdText, /## 출처\/조회조건/m, '출처/조회조건 섹션이 없습니다.');
+  assert.match(mdText, /실행한 조회:/, '실행한 조회 기록이 없습니다.');
+  assert.match(mdText, /사용한 데이터:/, '사용 데이터 파일 기록이 없습니다.');
+  assert.match(mdText, /저장된 결과:/, '저장된 결과 수 기록이 없습니다.');
+  assert.match(mdText, /## 1\. /, '첫 번째 게시글 섹션이 없습니다.');
+
+  const exportJsonPath = path.join(exportDir, `query-sns-export-test-${Date.now()}.json`);
+  const exportJson = runCli(['export', 'search', '없는키워드', '--format', 'json', '--out', exportJsonPath]);
+  assert.equal(exportJson.status, 0, `export json 실패\nSTDERR:\n${exportJson.stderr}`);
+  const exportJsonSummary = JSON.parse(exportJson.stdout);
+  assert.equal(exportJsonSummary.command, 'export');
+  assert.equal(exportJsonSummary.export.format, 'json');
+  assert.equal(exportJsonSummary.total_matches, 0);
+  assert.equal(exportJsonSummary.returned, 0);
+  assert.equal(fs.existsSync(exportJsonPath), true, 'export json 파일이 생성되지 않았습니다.');
+  const exportedJson = loadJson(exportJsonPath);
+  assert.equal(exportedJson.command, 'search');
+  assert.equal(exportedJson.total_matches, 0);
+  assert.deepEqual(exportedJson.posts, []);
+
+  const exportBrief = runCli(['export', 'recent', '1', '--format', 'brief']);
+  assert.notEqual(exportBrief.status, 0, 'export --format brief가 성공하면 안 됩니다.');
+  assert.match(exportBrief.stderr, /export format must be json or md/, 'export brief 실패 메시지가 부정확합니다.');
 }
 
 main();

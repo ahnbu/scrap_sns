@@ -231,6 +231,16 @@ SNS 데이터 조회 CLI:
 node utils/query-sns.mjs --help
 ```
 
+조회 결과를 강의 재료나 리서치 노트로 저장하려면 `export`를 사용합니다.
+
+```powershell
+node utils/query-sns.mjs export search "리서치" --limit 30 --format md
+node utils/query-sns.mjs export by-tag "클로드" --from 2026-05-01 --format md
+node utils/query-sns.mjs export by-platform linkedin --format json --out output_exports/linkedin.json
+```
+
+기본 저장 위치는 `output_exports/`이며, Markdown export에는 생성일, 실행한 조회, 사용 데이터 파일, 태그 파일, 전체/저장 결과 수가 함께 기록됩니다.
+
 레거시 스키마/도메인 점검:
 
 ```powershell
