@@ -23,6 +23,9 @@
     "https://www.linkedin.com/feed/update/urn:li:activity:7387653708110737409?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7387653708110737409%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "마케팅"
     ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7393884393532084224?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7393884393532084224%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "프롬프트"
+    ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7395635427879129088?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7395635427879129088%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "마케팅"
     ],
@@ -32,7 +35,8 @@
         "디자인",
         "마케팅",
         "카드뉴스",
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7397540321351524352?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7397540321351524352%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "기획",
@@ -43,7 +47,8 @@
         "테스트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7399048817557368832?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7399048817557368832%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "gemini"
+        "gemini",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7400284864094101504?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7400284864094101504%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "마케팅",
@@ -65,7 +70,8 @@
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7401429747706351616?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7401429747706351616%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "기획",
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7401569692362203136?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7401569692362203136%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "노트북LM",
@@ -73,11 +79,13 @@
         "이미지",
         "gemini",
         "chatgpt",
-        "카드뉴스"
+        "카드뉴스",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7401626875682570241?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7401626875682570241%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "나노바나나",
-        "이미지"
+        "이미지",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7401863462173536257?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7401863462173536257%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "chatgpt"
@@ -86,12 +94,14 @@
         "디자인"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7403920649229926400?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7403920649229926400%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7405145895417221120?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7405145895417221120%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "이미지",
         "gemini",
-        "디자인"
+        "디자인",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7405773526021963777?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7405773526021963777%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "기획"
@@ -100,7 +110,8 @@
         "노트북LM"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7406236411500081152?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7406236411500081152%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "나노바나나"
+        "나노바나나",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7406575376073687040?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7406575376073687040%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "gemini",
@@ -108,14 +119,16 @@
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7406611878879281152?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7406611878879281152%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "노트북LM",
-        "카드뉴스"
+        "카드뉴스",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7406689415416356864?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7406689415416356864%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "ppt",
         "나노바나나",
         "이미지",
         "chatgpt",
-        "카드뉴스"
+        "카드뉴스",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7407189808428724226?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7407189808428724226%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "chatgpt"
@@ -124,7 +137,8 @@
         "나노바나나",
         "이미지",
         "chatgpt",
-        "카드뉴스"
+        "카드뉴스",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7407438752777678848?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7407438752777678848%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "노트북LM",
@@ -134,7 +148,8 @@
         "노트북LM",
         "클로드",
         "gemini",
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7407636477167296512?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7407636477167296512%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "기획",
@@ -144,12 +159,14 @@
         "기획"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7408595054950354944?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7408595054950354944%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7408959519537426432?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7408959519537426432%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "이미지",
         "chatgpt",
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7409057669149396992?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7409057669149396992%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "ppt",
@@ -165,7 +182,8 @@
     "https://www.linkedin.com/feed/update/urn:li:activity:7410439276661813248?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7410439276661813248%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "ppt",
         "나노바나나",
-        "카드뉴스"
+        "카드뉴스",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7410446819371081728?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7410446819371081728%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
@@ -185,7 +203,8 @@
     "https://www.linkedin.com/feed/update/urn:li:activity:7410801664141656065?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7410801664141656065%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
         "gemini",
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7410992158503272448?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7410992158503272448%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "노션"
@@ -209,7 +228,8 @@
         "클로드",
         "디자인",
         "리서치",
-        "카드뉴스"
+        "카드뉴스",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7411338754214420480?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7411338754214420480%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드"
@@ -220,7 +240,8 @@
         "디자인"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7412104574406209536?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7412104574406209536%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7412526387820978176?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7412526387820978176%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "ppt",
@@ -259,13 +280,17 @@
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7415376843815608320?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7415376843815608320%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "기획",
-        "노션"
+        "노션",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7415878861919379456?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7415878861919379456%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7415961577650012160?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7415961577650012160%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7416288711971164160?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7416288711971164160%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7416467077739200512?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7416467077739200512%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "gemini",
@@ -276,15 +301,18 @@
         "gemini",
         "ppt",
         "디자인",
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7416954710819127296?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7416954710819127296%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "이미지",
         "gemini",
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7417148730602201088?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7417148730602201088%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
+        "클로드",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7417486931770499072?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7417486931770499072%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
@@ -307,7 +335,11 @@
     "https://www.linkedin.com/feed/update/urn:li:activity:7417843854562840576?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7417843854562840576%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
         "gemini",
-        "안티그래비티"
+        "안티그래비티",
+        "프롬프트"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7418068289974710272?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7418068289974710272%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7418185693136306176?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7418185693136306176%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "기획"
@@ -316,7 +348,8 @@
         "기획",
         "나노바나나",
         "이미지",
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7418791458029121536?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7418791458029121536%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "마케팅",
@@ -327,7 +360,8 @@
         "나노바나나",
         "이미지",
         "ppt",
-        "카드뉴스"
+        "카드뉴스",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7419142685543882752?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7419142685543882752%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드"
@@ -339,7 +373,8 @@
         "클로드",
         "gemini",
         "디자인",
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7419563139156992000?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7419563139156992000%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "이미지",
@@ -348,7 +383,8 @@
         "디자인",
         "리서치",
         "chatgpt",
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7420216201961906177?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7420216201961906177%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "마케팅"
@@ -368,10 +404,12 @@
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7422035691510984705?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7422035691510984705%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
-        "하네스"
+        "하네스",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7422209668422324224?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7422209668422324224%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
+        "클로드",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7422267328026836992?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7422267328026836992%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "마케팅",
@@ -403,7 +441,8 @@
         "클로드",
         "오픈클로",
         "chatgpt",
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7422971668609966080?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7422971668609966080%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
@@ -437,14 +476,16 @@
         "테스트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7424076125506740224?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7424076125506740224%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "gemini"
+        "gemini",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7424102643498774528?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7424102643498774528%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "카드뉴스",
         "기획",
         "이미지",
         "gemini",
-        "디자인"
+        "디자인",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7424206243277381632?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7424206243277381632%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "기획",
@@ -455,7 +496,8 @@
         "클로드"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7424423567607603204?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7424423567607603204%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
+        "클로드",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7424462704150634496?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7424462704150634496%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "테스트"
@@ -477,7 +519,8 @@
         "기획"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7425315604485779456?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7425315604485779456%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
+        "클로드",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7425428410212102145?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7425428410212102145%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
@@ -491,14 +534,17 @@
         "클로드",
         "gemini",
         "chatgpt",
-        "리서치"
+        "리서치",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7425585243174350848?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7425585243174350848%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "이미지",
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7425756662302523392?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7425756662302523392%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7425792970475462656?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7425792970475462656%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "gemini",
@@ -518,21 +564,25 @@
         "리서치"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7425901355317477378?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7425901355317477378%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "기획"
+        "기획",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7426095587395022848?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7426095587395022848%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "ppt"
+        "ppt",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7426244807364198401?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7426244807364198401%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "마케팅",
         "노트북LM",
-        "리서치"
+        "리서치",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7426380560358383617?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7426380560358383617%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7426596202374311937?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7426596202374311937%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
+        "클로드",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7426781961781846017?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7426781961781846017%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "기획"
@@ -545,7 +595,8 @@
     "https://www.linkedin.com/feed/update/urn:li:activity:7426931601873346560?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7426931601873346560%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "이미지",
         "기획",
-        "마케팅"
+        "마케팅",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7426965977122357248?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7426965977122357248%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
@@ -556,7 +607,8 @@
         "기획"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7427323466502119424?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7427323466502119424%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "ppt"
+        "ppt",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7427324639552581632?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7427324639552581632%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드"
@@ -586,7 +638,8 @@
     "https://www.linkedin.com/feed/update/urn:li:activity:7427900362558394368?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7427900362558394368%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "나노바나나",
         "gemini",
-        "디자인"
+        "디자인",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7428211220928745472?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7428211220928745472%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "ppt",
@@ -596,17 +649,21 @@
     "https://www.linkedin.com/feed/update/urn:li:activity:7428402591849517056?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7428402591849517056%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "기획",
         "클로드",
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7428551113521491968?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7428551113521491968%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
-        "ppt"
+        "ppt",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7428729561946722304?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7428729561946722304%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
+        "클로드",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7429525749658963968?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7429525749658963968%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "gemini"
+        "gemini",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7429732494503059456?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7429732494503059456%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "노션",
@@ -623,7 +680,8 @@
         "클로드",
         "ppt",
         "디자인",
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7430030865906245633?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7430030865906245633%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
@@ -631,7 +689,8 @@
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7430402671020474368?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7430402671020474368%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
-        "오픈클로"
+        "오픈클로",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7430631545163407360?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7430631545163407360%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "마케팅",
@@ -657,19 +716,22 @@
     "https://www.linkedin.com/feed/update/urn:li:activity:7431206209958895617?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7431206209958895617%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "노트북LM",
         "ppt",
-        "안티그래비티"
+        "안티그래비티",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7431206454012944384?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7431206454012944384%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "노트북LM",
         "ppt",
-        "카드뉴스"
+        "카드뉴스",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7431453990397202433?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7431453990397202433%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
         "하네스",
         "오픈클로",
         "chatgpt",
-        "마케팅"
+        "마케팅",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7431465318620938241?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7431465318620938241%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
@@ -678,7 +740,8 @@
         "옵시디언"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7431610737912930304?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7431610737912930304%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "gemini"
+        "gemini",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7431827709527494656?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7431827709527494656%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
@@ -686,7 +749,8 @@
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7432190104884006913?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7432190104884006913%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7432197654002061313?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7432197654002061313%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "gemini",
@@ -718,7 +782,8 @@
         "gemini",
         "나노바나나",
         "노트북LM",
-        "디자인"
+        "디자인",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7433314766972071936?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7433314766972071936%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
@@ -726,7 +791,8 @@
         "오픈클로"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7433347326586388480?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7433347326586388480%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
+        "클로드",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7433857759571353600?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7433857759571353600%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
@@ -742,12 +808,16 @@
     "https://www.linkedin.com/feed/update/urn:li:activity:7434361730555731968?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7434361730555731968%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
         "디자인",
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7434364428847935488?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7434364428847935488%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "하네스",
         "디자인",
         "테스트"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7434372926264500224?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7434372926264500224%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7434487388384452608?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7434487388384452608%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "기획",
@@ -756,7 +826,8 @@
     "https://www.linkedin.com/feed/update/urn:li:activity:7434723037943562241?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7434723037943562241%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
         "하네스",
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7434734358466531328?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7434734358466531328%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "기획",
@@ -765,14 +836,16 @@
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7435454545369124864?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7435454545369124864%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7435617387984338945?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7435617387984338945%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7435825294554484736?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7435825294554484736%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "디자인",
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7435866146433798144?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7435866146433798144%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
@@ -785,26 +858,38 @@
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7436172583210881024?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7436172583210881024%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7436523650205433856?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7436523650205433856%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
         "이미지",
         "ppt"
     ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7436534980140331010?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7436534980140331010%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "chatgpt",
+        "클로드",
+        "하네스"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7436712418304569344?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7436712418304569344%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "프롬프트"
+    ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7436886046111514624?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7436886046111514624%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
         "하네스",
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7436901135912775680?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7436901135912775680%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7437355075041259520?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7437355075041259520%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
         "chatgpt",
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7437456846925475840?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7437456846925475840%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
@@ -812,7 +897,8 @@
         "나노바나나",
         "디자인",
         "리서치",
-        "카드뉴스"
+        "카드뉴스",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7437823432609812480?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7437823432609812480%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
@@ -823,10 +909,12 @@
         "gemini",
         "클로드",
         "하네스",
-        "카드뉴스"
+        "카드뉴스",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7438587163157590016?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7438587163157590016%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "노션"
+        "노션",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7438766833035284481?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7438766833035284481%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
@@ -843,13 +931,15 @@
         "gemini",
         "클로드",
         "리서치",
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7439637917754613760?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7439637917754613760%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "디자인"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7439881616262586368?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7439881616262586368%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "이미지"
+        "이미지",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7440231619128352769?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7440231619128352769%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "기획",
@@ -898,7 +988,8 @@
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7441997233819992064?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7441997233819992064%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "노트북LM",
-        "디자인"
+        "디자인",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7442076702438006784?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7442076702438006784%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "ppt",
@@ -932,12 +1023,14 @@
         "마케팅",
         "gemini",
         "리서치",
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7442713359881449472?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7442713359881449472%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
         "하네스",
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7442767003393835008?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7442767003393835008%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
@@ -961,7 +1054,8 @@
         "클로드",
         "마케팅",
         "디자인",
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7443194446143475712?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7443194446143475712%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드"
@@ -970,7 +1064,8 @@
         "기획",
         "gemini",
         "클로드",
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7443630931825049600?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7443630931825049600%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "마케팅",
@@ -1026,7 +1121,8 @@
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7444961094542168064?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7444961094542168064%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
-        "옵시디언"
+        "옵시디언",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7445463222629056512?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7445463222629056512%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드"
@@ -1042,7 +1138,8 @@
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7445742005789409280?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7445742005789409280%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "디자인",
-        "마케팅"
+        "마케팅",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7445755902059671552?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7445755902059671552%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
@@ -1071,7 +1168,8 @@
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7446356379344396288?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7446356379344396288%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "마케팅",
-        "클로드"
+        "클로드",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7446373559083462656?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7446373559083462656%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
@@ -1098,7 +1196,8 @@
     "https://www.linkedin.com/feed/update/urn:li:activity:7446684782874304512?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7446684782874304512%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
         "하네스",
-        "오픈클로"
+        "오픈클로",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7446702746549989376?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7446702746549989376%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "옵시디언",
@@ -1142,7 +1241,8 @@
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7447270523807580161?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7447270523807580161%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "노트북LM",
-        "하네스"
+        "하네스",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7447302958331113473?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7447302958331113473%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "이미지"
@@ -1163,11 +1263,13 @@
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7447654879734738944?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7447654879734738944%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
-        "리서치"
+        "리서치",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7447673381845467136?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7447673381845467136%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "기획",
-        "디자인"
+        "디자인",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7447794271937626112?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7447794271937626112%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
@@ -1197,7 +1299,8 @@
         "클로드",
         "디자인",
         "ppt",
-        "기획"
+        "기획",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7448326878219739136?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7448326878219739136%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "노트북LM",
@@ -1206,7 +1309,8 @@
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7448349198606835713?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7448349198606835713%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7448554932695105536?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7448554932695105536%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드"
@@ -1237,7 +1341,8 @@
         "노션",
         "리서치",
         "chatgpt",
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7449890360186654720?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7449890360186654720%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드"
@@ -1246,7 +1351,8 @@
         "클로드",
         "ppt",
         "디자인",
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7450065106765467649?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7450065106765467649%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
@@ -1256,14 +1362,16 @@
         "클로드"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7450348366204436481?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7450348366204436481%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
+        "클로드",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7450382583999201280?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7450382583999201280%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
         "옵시디언",
         "chatgpt",
         "이미지",
-        "하네스"
+        "하네스",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7450481009596268544?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7450481009596268544%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "디자인",
@@ -1284,7 +1392,8 @@
     "https://www.linkedin.com/feed/update/urn:li:activity:7450689022001086466?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7450689022001086466%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "이미지",
         "클로드",
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7450724116971827200?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7450724116971827200%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
@@ -1306,11 +1415,13 @@
         "ppt",
         "chatgpt",
         "이미지",
-        "하네스"
+        "하네스",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7451411747497852928?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7451411747497852928%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7451439739590692864?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7451439739590692864%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
@@ -1320,7 +1431,8 @@
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7451591510392987648?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7451591510392987648%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "디자인",
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7451661674077626368?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7451661674077626368%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
@@ -1349,7 +1461,8 @@
         "이미지",
         "ppt",
         "하네스",
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7452720135561445376?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7452720135561445376%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "디자인",
@@ -1367,7 +1480,8 @@
         "디자인",
         "ppt",
         "chatgpt",
-        "이미지"
+        "이미지",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7453075993839411201?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7453075993839411201%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
@@ -1378,7 +1492,8 @@
         "클로드",
         "오픈클로",
         "chatgpt",
-        "이미지"
+        "이미지",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7453241870673158144?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7453241870673158144%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
@@ -1401,7 +1516,8 @@
         "클로드",
         "이미지",
         "하네스",
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7453567205247537152?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7453567205247537152%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
@@ -1448,7 +1564,8 @@
     "https://www.linkedin.com/feed/update/urn:li:activity:7454643039333158913?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7454643039333158913%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "ppt",
         "chatgpt",
-        "이미지"
+        "이미지",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7454752573888253952?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7454752573888253952%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "chatgpt",
@@ -1469,7 +1586,8 @@
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7455394240739733504?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7455394240739733504%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
-        "이미지"
+        "이미지",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7455465846346539008?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7455465846346539008%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "gemini"
@@ -1481,19 +1599,23 @@
     "https://www.linkedin.com/feed/update/urn:li:activity:7455481076761776129?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7455481076761776129%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
         "chatgpt",
-        "기획"
+        "기획",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7455481353447587840?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7455481353447587840%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7455516219920621568?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7455516219920621568%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
         "기획",
-        "하네스"
+        "하네스",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7455524787566612480?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7455524787566612480%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
-        "마케팅"
+        "마케팅",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7455543753194459137?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7455543753194459137%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
@@ -1524,7 +1646,8 @@
         "테스트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7456321371854508032?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7456321371854508032%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "클로드"
+        "클로드",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7456500334203564032?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7456500334203564032%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "오픈클로",
@@ -1539,7 +1662,8 @@
     "https://www.linkedin.com/feed/update/urn:li:activity:7456630988798943232?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7456630988798943232%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "옵시디언",
         "오픈클로",
-        "클로드"
+        "클로드",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7456682555220680704?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7456682555220680704%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "chatgpt",
@@ -1552,7 +1676,8 @@
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7456689855134191616?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7456689855134191616%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "리서치",
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7456700647900602368?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7456700647900602368%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드"
@@ -1579,7 +1704,8 @@
     "https://www.linkedin.com/feed/update/urn:li:activity:7457102473703366656?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7457102473703366656%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
         "리서치",
-        "gemini"
+        "gemini",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7457115894444359681?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7457115894444359681%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "디자인",
@@ -1589,7 +1715,8 @@
         "클로드"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7457305581717053441?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7457305581717053441%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "gemini"
+        "gemini",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7457350056074039296?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7457350056074039296%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
@@ -1597,7 +1724,8 @@
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7457353398170963968?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7457353398170963968%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "이미지",
-        "오픈클로"
+        "오픈클로",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7457417934869741568?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7457417934869741568%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "디자인"
@@ -1605,7 +1733,8 @@
     "https://www.linkedin.com/feed/update/urn:li:activity:7457443495138500610?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7457443495138500610%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "리서치",
         "chatgpt",
-        "gemini"
+        "gemini",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7457564812848443392?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7457564812848443392%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "마케팅",
@@ -1618,7 +1747,8 @@
         "클로드",
         "이미지",
         "디자인",
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7457736120848502784?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7457736120848502784%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
@@ -1635,13 +1765,15 @@
         "하네스",
         "chatgpt",
         "오픈클로",
-        "클로드"
+        "클로드",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7457947895615451136?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7457947895615451136%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "기획",
         "마케팅",
         "하네스",
-        "ppt"
+        "ppt",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7457962976159973376?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7457962976159973376%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "기획",
@@ -1668,7 +1800,8 @@
         "기획",
         "노트북LM",
         "리서치",
-        "이미지"
+        "이미지",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7458381853633204224?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7458381853633204224%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "chatgpt",
@@ -1677,7 +1810,8 @@
         "마케팅",
         "이미지",
         "카드뉴스",
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7458392103702798336?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7458392103702798336%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "chatgpt",
@@ -1694,7 +1828,8 @@
         "chatgpt",
         "디자인",
         "리서치",
-        "이미지"
+        "이미지",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7458495242091048960?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7458495242091048960%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "마케팅"
@@ -1741,7 +1876,8 @@
     "https://www.linkedin.com/feed/update/urn:li:activity:7459229779792257024?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7459229779792257024%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "오픈클로",
         "클로드",
-        "하네스"
+        "하네스",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7459357719884615680?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7459357719884615680%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "노션",
@@ -1760,7 +1896,8 @@
         "디자인",
         "마케팅",
         "이미지",
-        "클로드"
+        "클로드",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7459369181487140864?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7459369181487140864%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "하네스"
@@ -1771,30 +1908,41 @@
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7459419705754279936?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7459419705754279936%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "chatgpt",
-        "클로드"
+        "클로드",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7459716124071469056?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7459716124071469056%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "ppt",
         "이미지"
     ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7459720247760171009?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7459720247760171009%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "gemini",
+        "리서치",
+        "테스트",
+        "프롬프트"
+    ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7459814731575578624?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7459814731575578624%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "ppt",
         "기획",
         "이미지",
-        "클로드"
+        "클로드",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7459863087781847040?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7459863087781847040%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "chatgpt",
-        "클로드"
+        "클로드",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7459871247955386369?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7459871247955386369%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "리서치",
         "오픈클로",
         "클로드",
-        "하네스"
+        "하네스",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7459938161343975424?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7459938161343975424%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
-        "하네스"
+        "하네스",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7460003375833751553?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7460003375833751553%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "chatgpt",
@@ -1804,13 +1952,26 @@
         "chatgpt",
         "리서치",
         "클로드",
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7460266114674110465?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7460266114674110465%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "기획",
         "클로드",
         "하네스",
-        "테스트"
+        "테스트",
+        "프롬프트"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7460322105251745792?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7460322105251745792%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "chatgpt",
+        "오픈클로"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7460335887059591168?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7460335887059591168%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "chatgpt",
+        "기획",
+        "오픈클로",
+        "클로드",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7460448817516290049?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7460448817516290049%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "chatgpt",
@@ -1818,7 +1979,19 @@
         "ppt",
         "마케팅",
         "이미지",
-        "클로드"
+        "클로드",
+        "프롬프트"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7460478997743710208?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7460478997743710208%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "하네스"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7460512573260709888?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7460512573260709888%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "리서치",
+        "프롬프트"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7460513955422031872?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7460513955422031872%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "클로드",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7460686058033430528?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7460686058033430528%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "gemini",
@@ -1827,12 +2000,43 @@
         "노트북LM",
         "디자인",
         "안티그래비티",
-        "클로드"
+        "클로드",
+        "프롬프트"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7460694171754999808?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7460694171754999808%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7460840114970345472?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7460840114970345472%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "chatgpt",
         "ppt",
+        "이미지",
+        "프롬프트"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7460893983074959360?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7460893983074959360%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "chatgpt",
+        "마케팅",
+        "클로드",
+        "프롬프트"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7460895628655714304?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7460895628655714304%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "gemini",
+        "ppt",
+        "디자인",
+        "리서치",
         "이미지"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7461384986257039360?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7461384986257039360%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "chatgpt",
+        "리서치",
+        "클로드",
+        "테스트",
+        "프롬프트"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7461918367856242688?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7461918367856242688%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "chatgpt",
+        "gemini",
+        "클로드",
+        "테스트"
     ],
     "https://www.threads.com/@06am_draw/post/DUy-OrTE1c5": [
         "클로드",
@@ -1866,7 +2070,8 @@
         "chatgpt"
     ],
     "https://www.threads.com/@2_taewoo/post/DVh431DEoJb": [
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.threads.com/@2_taewoo/post/DWdXRDWlDnq": [
         "옵시디언",
@@ -1877,10 +2082,12 @@
     ],
     "https://www.threads.com/@2s.nyo/post/DXnZJRZmYUu": [
         "이미지",
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.threads.com/@2s.nyo/post/DXnZJpgmdie": [
-        "이미지"
+        "이미지",
+        "프롬프트"
     ],
     "https://www.threads.com/@71_102/post/DUa78PhE_p7": [
         "클로드",
@@ -1920,7 +2127,8 @@
     "https://www.threads.com/@agenpreneur/post/DU5BdVDkixQ": [
         "클로드",
         "chatgpt",
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.threads.com/@ahrom.insights/post/DV54nOpjePk": [
         "클로드",
@@ -1934,7 +2142,8 @@
         "옵시디언"
     ],
     "https://www.threads.com/@ahyuk_ai/post/DVKqVEwkZsg": [
-        "gemini"
+        "gemini",
+        "프롬프트"
     ],
     "https://www.threads.com/@ai.dentity.141/post/DMuxpQ-IChX": [
         "디자인"
@@ -1953,7 +2162,8 @@
     "https://www.threads.com/@ai.winey_ny/post/DT-VHfnEshJ": [
         "노션",
         "클로드",
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.threads.com/@ai.winey_ny/post/DV5CAJ3kvxy": [
         "클로드"
@@ -1963,11 +2173,17 @@
         "리서치",
         "클로드"
     ],
+    "https://www.threads.com/@ai.zettel/post/DYW9-RnCRBV": [
+        "gemini",
+        "ppt",
+        "노트북LM"
+    ],
     "https://www.threads.com/@ai__jeong/post/DWYTZS6Ey3S": [
         "클로드",
         "기획",
         "chatgpt",
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.threads.com/@ai__jeong/post/DWYTa5ck_h9": [
         "클로드",
@@ -1981,26 +2197,33 @@
         "클로드",
         "테스트"
     ],
+    "https://www.threads.com/@ai_ebrain/post/DXf7XuTjwfg": [
+        "프롬프트"
+    ],
     "https://www.threads.com/@ai_jobdori/post/DVL7QkEgaZw": [
         "클로드",
         "리서치"
     ],
     "https://www.threads.com/@ai_jobdori/post/DVMpDilk75T": [
-        "클로드"
+        "클로드",
+        "프롬프트"
     ],
     "https://www.threads.com/@ai_margin_/post/DWcuylTkqgE": [
         "안티그래비티"
     ],
     "https://www.threads.com/@ai_sync_club/post/DTU3wjAihFa": [
-        "ppt"
+        "ppt",
+        "프롬프트"
     ],
     "https://www.threads.com/@ai_sync_club/post/DTW7GQ0iujL": [
         "ppt",
-        "노트북LM"
+        "노트북LM",
+        "프롬프트"
     ],
     "https://www.threads.com/@ai_sync_club/post/DVYnEO_k0ly": [
         "클로드",
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.threads.com/@ai_sync_club/post/DWscUhkk0jw": [
         "리서치"
@@ -2016,14 +2239,16 @@
         "클로드",
         "노트북LM",
         "ppt",
-        "리서치"
+        "리서치",
+        "프롬프트"
     ],
     "https://www.threads.com/@ai_younggle_man/post/DUsQFcOk8E2": [
         "클로드",
         "chatgpt"
     ],
     "https://www.threads.com/@ai_younggle_man/post/DUzPNgDk4FP": [
-        "클로드"
+        "클로드",
+        "프롬프트"
     ],
     "https://www.threads.com/@ai_younggle_man/post/DVfJ6XjE71D": [
         "gemini",
@@ -2034,7 +2259,8 @@
     ],
     "https://www.threads.com/@ai_younggle_man/post/DVw4dI-k2or": [
         "클로드",
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.threads.com/@ai_younggle_man/post/DXGEZ02k9lA": [
         "오픈클로"
@@ -2044,21 +2270,25 @@
     ],
     "https://www.threads.com/@aicode.lab/post/DU7MJjEiWtW": [
         "노트북LM",
-        "ppt"
+        "ppt",
+        "프롬프트"
     ],
     "https://www.threads.com/@aicode.lab/post/DVcVK__EuV0": [
         "노트북LM",
         "ppt",
-        "디자인"
+        "디자인",
+        "프롬프트"
     ],
     "https://www.threads.com/@aicoffeechat/post/DS1CESekre9": [
-        "클로드"
+        "클로드",
+        "프롬프트"
     ],
     "https://www.threads.com/@aicoffeechat/post/DSj_6YFkg6r": [
         "gemini",
         "기획",
         "클로드",
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.threads.com/@aicoffeechat/post/DTAykTzEhfu": [
         "gemini",
@@ -2070,13 +2300,15 @@
         "gemini",
         "디자인",
         "chatgpt",
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.threads.com/@aicoffeechat/post/DUWrZdMClb9": [
         "클로드"
     ],
     "https://www.threads.com/@aicoffeechat/post/DUmEccXCjhM": [
-        "ppt"
+        "ppt",
+        "프롬프트"
     ],
     "https://www.threads.com/@aicoffeechat/post/DVDwGuukjsS": [
         "옵시디언"
@@ -2095,13 +2327,15 @@
     "https://www.threads.com/@aicoffeechat/post/DXu-Y9XCov1": [
         "ppt",
         "chatgpt",
-        "마케팅"
+        "마케팅",
+        "프롬프트"
     ],
     "https://www.threads.com/@aiecorofficial/post/DTdDlJBEr3W": [
         "ppt",
         "gemini",
         "기획",
-        "리서치"
+        "리서치",
+        "프롬프트"
     ],
     "https://www.threads.com/@aijiyoon/post/DYOVhV2CUzF": [
         "chatgpt",
@@ -2124,10 +2358,17 @@
         "ppt",
         "디자인"
     ],
+    "https://www.threads.com/@aijiyoon/post/DYZAqqkAN0h": [
+        "chatgpt",
+        "ppt",
+        "노션",
+        "디자인"
+    ],
     "https://www.threads.com/@aipreneur_j/post/DVhsgdLiclG": [
         "클로드",
         "나노바나나",
-        "노션"
+        "노션",
+        "프롬프트"
     ],
     "https://www.threads.com/@aipreneur_j/post/DVpO0yiiT-3": [
         "클로드"
@@ -2152,7 +2393,8 @@
     "https://www.threads.com/@akitect_cat/post/DTvVAAykggl": [
         "안티그래비티",
         "클로드",
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.threads.com/@alcohol_fully/post/DSwHpNxE1U-": [
         "gemini",
@@ -2207,11 +2449,16 @@
         "안티그래비티",
         "옵시디언"
     ],
+    "https://www.threads.com/@allenjj4911/post/DYY_0LkkfTz": [
+        "옵시디언",
+        "클로드"
+    ],
     "https://www.threads.com/@alliswellinsing/post/DTpHUUOgTVI": [
         "chatgpt"
     ],
     "https://www.threads.com/@ambition_monkey/post/DU4LE79kkLu": [
-        "클로드"
+        "클로드",
+        "프롬프트"
     ],
     "https://www.threads.com/@amyhong0/post/DU7jNVKD-1r": [
         "클로드",
@@ -2219,15 +2466,18 @@
     ],
     "https://www.threads.com/@and__yc/post/DWfq1XyEZqy": [
         "클로드",
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.threads.com/@and__yc/post/DWfq6K5EcsI": [
         "클로드",
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.threads.com/@and__yc/post/DWfqy8ikQWW": [
         "클로드",
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.threads.com/@and__yc/post/DWjLVl1EVBn": [
         "클로드"
@@ -2273,8 +2523,20 @@
         "리서치",
         "chatgpt"
     ],
+    "https://www.threads.com/@bamtolai/post/DYYlKb3HUoc": [
+        "chatgpt",
+        "gemini",
+        "나노바나나",
+        "이미지",
+        "클로드"
+    ],
     "https://www.threads.com/@bangto2095/post/DVeSDl9kpwV": [
         "오픈클로"
+    ],
+    "https://www.threads.com/@bbopters_ai/post/DYWoEdDCRFr": [
+        "chatgpt",
+        "오픈클로",
+        "이미지"
     ],
     "https://www.threads.com/@belle_epoque7/post/DXwG79sCiM6": [
         "클로드",
@@ -2304,7 +2566,8 @@
         "마케팅",
         "디자인",
         "오픈클로",
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.threads.com/@bibl_youtube/post/DXwAuDUlOEn": [
         "기획",
@@ -2317,12 +2580,14 @@
         "기획",
         "디자인",
         "리서치",
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.threads.com/@biggerthanseoul.ai/post/DVyQzjBmgSp": [
         "클로드",
         "노션",
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.threads.com/@billy___ssam/post/DWI70GEkXkG": [
         "기획"
@@ -2332,6 +2597,12 @@
         "리서치"
     ],
     "https://www.threads.com/@bizmentor_kr/post/DWgwSY2k8hl": [
+        "클로드",
+        "프롬프트"
+    ],
+    "https://www.threads.com/@blueslap/post/DYWZJ0Ukvf1": [
+        "디자인",
+        "리서치",
         "클로드"
     ],
     "https://www.threads.com/@bohe76/post/DXQebHmmem4": [
@@ -2375,7 +2646,8 @@
         "옵시디언"
     ],
     "https://www.threads.com/@calmtiger_/post/DU7ruAhAdBG": [
-        "기획"
+        "기획",
+        "프롬프트"
     ],
     "https://www.threads.com/@calmtiger_/post/DUjzx-ZAVmV": [
         "gemini",
@@ -2409,11 +2681,13 @@
     "https://www.threads.com/@chancenote/post/DVOBLbYEjD4": [
         "클로드",
         "리서치",
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.threads.com/@change.me01/post/DX-NG3Xk3nb": [
         "chatgpt",
-        "gemini"
+        "gemini",
+        "프롬프트"
     ],
     "https://www.threads.com/@channprj/post/DVMNxAbEmsF": [
         "gemini",
@@ -2435,15 +2709,18 @@
         "기획"
     ],
     "https://www.threads.com/@choi.openai/post/DRahGbdkz18": [
-        "이미지"
+        "이미지",
+        "프롬프트"
     ],
     "https://www.threads.com/@choi.openai/post/DRk6TWjAjI-": [
         "나노바나나",
-        "이미지"
+        "이미지",
+        "프롬프트"
     ],
     "https://www.threads.com/@choi.openai/post/DRuFda3D2Ca": [
         "gemini",
-        "이미지"
+        "이미지",
+        "프롬프트"
     ],
     "https://www.threads.com/@choi.openai/post/DSwLdrWD6DI": [
         "gemini",
@@ -2451,7 +2728,8 @@
         "클로드",
         "디자인",
         "리서치",
-        "이미지"
+        "이미지",
+        "프롬프트"
     ],
     "https://www.threads.com/@choi.openai/post/DT6r--5j5Pp": [
         "클로드"
@@ -2461,7 +2739,8 @@
         "디자인"
     ],
     "https://www.threads.com/@choi.openai/post/DTRDvEhCG4L": [
-        "클로드"
+        "클로드",
+        "프롬프트"
     ],
     "https://www.threads.com/@choi.openai/post/DTochmuDcf7": [
         "클로드"
@@ -2473,13 +2752,15 @@
         "기획",
         "클로드",
         "chatgpt",
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.threads.com/@choi.openai/post/DVmnlOpArGD": [
         "디자인"
     ],
     "https://www.threads.com/@choi.openai/post/DWIJSYtEU_U": [
-        "클로드"
+        "클로드",
+        "프롬프트"
     ],
     "https://www.threads.com/@choi.openai/post/DWROO2NDQ2i": [
         "클로드",
@@ -2505,7 +2786,8 @@
     ],
     "https://www.threads.com/@choi.openai/post/DXDsNvrk7mU": [
         "클로드",
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.threads.com/@choi.openai/post/DXRULkZD6F5": [
         "디자인",
@@ -2527,14 +2809,16 @@
         "gemini",
         "ppt",
         "chatgpt",
-        "카드뉴스"
+        "카드뉴스",
+        "프롬프트"
     ],
     "https://www.threads.com/@choi.openai/post/DYCdNWADxXW": [
         "chatgpt"
     ],
     "https://www.threads.com/@choi_hyug_8110/post/DXMjhX4khj9": [
         "클로드",
-        "노트북LM"
+        "노트북LM",
+        "프롬프트"
     ],
     "https://www.threads.com/@choi_hyug_8110/post/DXebWEVkrWe": [
         "클로드"
@@ -2608,7 +2892,8 @@
     "https://www.threads.com/@conanssam/post/DXb-CmZEzCg": [
         "ppt",
         "chatgpt",
-        "이미지"
+        "이미지",
+        "프롬프트"
     ],
     "https://www.threads.com/@conanssam/post/DXo7ZITGNbz": [
         "클로드",
@@ -2637,7 +2922,8 @@
         "chatgpt"
     ],
     "https://www.threads.com/@da.p.ham/post/DYV29vTklRd": [
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.threads.com/@daehyeon.xyz/post/DU8d_N9E1KI": [
         "ppt",
@@ -2659,7 +2945,8 @@
         "이미지",
         "ppt",
         "기획",
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.threads.com/@daniel._.choi/post/DW4vSMgk_OX": [
         "클로드",
@@ -2681,18 +2968,21 @@
     "https://www.threads.com/@dante_ailab/post/DW2fcWdkmyJ": [
         "클로드",
         "하네스",
-        "리서치"
+        "리서치",
+        "프롬프트"
     ],
     "https://www.threads.com/@dante_ailab/post/DXwuiPbEyqS": [
         "chatgpt",
         "디자인",
-        "이미지"
+        "이미지",
+        "프롬프트"
     ],
     "https://www.threads.com/@dante_ailab/post/DYR_HleE8WY": [
         "chatgpt",
         "gemini",
         "오픈클로",
-        "클로드"
+        "클로드",
+        "프롬프트"
     ],
     "https://www.threads.com/@daon_k/post/DWQrM4XiLR0": [
         "클로드"
@@ -2706,7 +2996,8 @@
     "https://www.threads.com/@daon_k/post/DXVlb25CRU3": [
         "디자인",
         "클로드",
-        "ppt"
+        "ppt",
+        "프롬프트"
     ],
     "https://www.threads.com/@daon_k/post/DXVlb3_Cc3J": [
         "디자인",
@@ -2720,7 +3011,8 @@
         "노션"
     ],
     "https://www.threads.com/@data_richard/post/DT9Gyvtj-Rb": [
-        "클로드"
+        "클로드",
+        "프롬프트"
     ],
     "https://www.threads.com/@dddesign.io/post/DU7He8TCZlP": [
         "클로드",
@@ -2746,7 +3038,8 @@
         "테스트"
     ],
     "https://www.threads.com/@dddesign.io/post/DYNzEvSjkrC": [
-        "디자인"
+        "디자인",
+        "프롬프트"
     ],
     "https://www.threads.com/@ddg.kang/post/DU5tyzgE3jr": [
         "클로드",
@@ -2757,7 +3050,8 @@
         "클로드"
     ],
     "https://www.threads.com/@ddg.kang/post/DUlWTf6kyKL": [
-        "클로드"
+        "클로드",
+        "프롬프트"
     ],
     "https://www.threads.com/@ddg.kang/post/DUyBtrIk73q": [
         "클로드",
@@ -2788,6 +3082,9 @@
         "클로드",
         "chatgpt"
     ],
+    "https://www.threads.com/@design.mude/post/DYR4gpLEXEC": [
+        "디자인"
+    ],
     "https://www.threads.com/@design_boc/post/DVYLkuljxBN": [
         "클로드",
         "디자인",
@@ -2799,7 +3096,8 @@
     "https://www.threads.com/@dev_one_l/post/DXdafvemjmX": [
         "chatgpt",
         "클로드",
-        "이미지"
+        "이미지",
+        "프롬프트"
     ],
     "https://www.threads.com/@dev_roach_log/post/DXHFoKnDyN3": [
         "오픈클로",
@@ -2829,7 +3127,8 @@
     "https://www.threads.com/@devdesign.kr/post/DVQ_O78krrk": [
         "옵시디언",
         "클로드",
-        "디자인"
+        "디자인",
+        "프롬프트"
     ],
     "https://www.threads.com/@devdesign.kr/post/DVgLnWECgij": [
         "옵시디언",
@@ -2881,24 +3180,28 @@
     ],
     "https://www.threads.com/@do.aiworks/post/DUpJ4AFj5dX": [
         "gemini",
-        "이미지"
+        "이미지",
+        "프롬프트"
     ],
     "https://www.threads.com/@doran.hwang/post/DXu-tOZn-O6": [
         "기획"
     ],
     "https://www.threads.com/@dyno.kr/post/DXY7rvAke03": [
-        "클로드"
+        "클로드",
+        "프롬프트"
     ],
     "https://www.threads.com/@easygpt2526/post/DUUXKhGAG4-": [
         "ppt",
         "gemini",
         "이미지",
         "디자인",
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.threads.com/@easygpt2526/post/DUkMWqNk9OY": [
         "gemini",
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.threads.com/@eddiemoon0720/post/DX8ePWok27c": [
         "gemini",
@@ -2927,13 +3230,15 @@
     ],
     "https://www.threads.com/@eu_nji_1014/post/DW9PyEmk1Hp": [
         "ppt",
-        "디자인"
+        "디자인",
+        "프롬프트"
     ],
     "https://www.threads.com/@eu_nji_1014/post/DYBp-t-k1A5": [
         "ppt",
         "디자인",
         "이미지",
-        "클로드"
+        "클로드",
+        "프롬프트"
     ],
     "https://www.threads.com/@euniceverasong/post/DU_QO6vE490": [
         "gemini",
@@ -2952,7 +3257,8 @@
     ],
     "https://www.threads.com/@feelfree_ai/post/DT4l8iRDMS1": [
         "기획",
-        "클로드"
+        "클로드",
+        "프롬프트"
     ],
     "https://www.threads.com/@feelfree_ai/post/DTgdBsrAttA": [
         "안티그래비티"
@@ -2970,6 +3276,11 @@
         "노션",
         "옵시디언"
     ],
+    "https://www.threads.com/@flowdraft.zip/post/DYXUTSIFFaX": [
+        "chatgpt",
+        "디자인",
+        "이미지"
+    ],
     "https://www.threads.com/@flowkater/post/DUhPj5VD3X8": [
         "클로드",
         "오픈클로",
@@ -2977,7 +3288,8 @@
     ],
     "https://www.threads.com/@flowkater/post/DVkzBZ3Dwkd": [
         "클로드",
-        "디자인"
+        "디자인",
+        "프롬프트"
     ],
     "https://www.threads.com/@focusrefresh/post/DSrr84flFEq": [
         "gemini"
@@ -2989,7 +3301,11 @@
         "리서치"
     ],
     "https://www.threads.com/@foodibear_/post/DYQ19KSk6OC": [
-        "이미지"
+        "이미지",
+        "프롬프트"
+    ],
+    "https://www.threads.com/@foodibear_/post/DYWq7Z5ky93": [
+        "프롬프트"
     ],
     "https://www.threads.com/@freainer/post/DUALirekrKe": [
         "클로드",
@@ -3041,18 +3357,21 @@
         "노션"
     ],
     "https://www.threads.com/@gogosing__77/post/DU7UX8-EYtS": [
-        "gemini"
+        "gemini",
+        "프롬프트"
     ],
     "https://www.threads.com/@goldxgeum/post/DV8Jja4jEa7": [
         "gemini",
-        "클로드"
+        "클로드",
+        "프롬프트"
     ],
     "https://www.threads.com/@gonnector/post/DTzWbLkE2JY": [
         "gemini",
         "이미지",
         "노트북LM",
         "ppt",
-        "카드뉴스"
+        "카드뉴스",
+        "프롬프트"
     ],
     "https://www.threads.com/@goos.kim/post/DXDQOLzkocY": [
         "ppt",
@@ -3109,7 +3428,8 @@
     ],
     "https://www.threads.com/@gptaku_ai/post/DU7wVFKkyoL": [
         "클로드",
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.threads.com/@gptaku_ai/post/DUYWtz0k29P": [
         "chatgpt"
@@ -3167,10 +3487,12 @@
         "리서치",
         "클로드",
         "하네스",
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.threads.com/@gptaku_ai/post/DYV9mEukwOQ": [
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.threads.com/@gptersorg/post/DUkNsjaEVmh": [
         "클로드",
@@ -3180,13 +3502,15 @@
     "https://www.threads.com/@gptersorg/post/DUr39e2kfxb": [
         "클로드",
         "리서치",
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.threads.com/@greennuri428/post/DVd3cbWD5Pd": [
         "클로드"
     ],
     "https://www.threads.com/@gurunamu.ai/post/DVClwD0k_ko": [
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.threads.com/@guuu.dev/post/DUIde2xEySD": [
         "클로드"
@@ -3231,15 +3555,20 @@
     ],
     "https://www.threads.com/@health_love_wealth_/post/DT0InBtEnzX": [
         "gemini",
-        "디자인"
+        "디자인",
+        "프롬프트"
     ],
     "https://www.threads.com/@heedam_i/post/DTAkzttkvIM": [
         "이미지"
     ],
+    "https://www.threads.com/@hellohyun.jang/post/DYRfWaPnxnq": [
+        "프롬프트"
+    ],
     "https://www.threads.com/@heon_yun/post/DT5T4kmEsEG": [
         "클로드",
         "안티그래비티",
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.threads.com/@hermes_agent_kr/post/DXJ053BEwPJ": [
         "ppt",
@@ -3248,17 +3577,21 @@
     ],
     "https://www.threads.com/@hesiij/post/DXqTxyMCei4": [
         "이미지",
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.threads.com/@hinjiroffffff/post/DUC8laUCQ5M": [
-        "gemini"
+        "gemini",
+        "프롬프트"
     ],
     "https://www.threads.com/@hinjiroffffff/post/DUFkzGvAa6T": [
         "gemini",
-        "기획"
+        "기획",
+        "프롬프트"
     ],
     "https://www.threads.com/@hinjiroffffff/post/DUIEGGAAagR": [
-        "gemini"
+        "gemini",
+        "프롬프트"
     ],
     "https://www.threads.com/@hinjiroffffff/post/DUIEKu_gZ64": [
         "gemini"
@@ -3267,7 +3600,8 @@
         "디자인"
     ],
     "https://www.threads.com/@hochcori/post/DXvP2fiExq-": [
-        "이미지"
+        "이미지",
+        "프롬프트"
     ],
     "https://www.threads.com/@homebodify/post/DTZ6HqrgTPI": [
         "클로드"
@@ -3287,7 +3621,8 @@
     ],
     "https://www.threads.com/@hue_0525/post/DWt770QEq6a": [
         "옵시디언",
-        "하네스"
+        "하네스",
+        "프롬프트"
     ],
     "https://www.threads.com/@hueflow_studio/post/DXQSENREaLJ": [
         "디자인",
@@ -3321,6 +3656,9 @@
     "https://www.threads.com/@humangenomicslab/post/DYFIN2xEkbn": [
         "클로드"
     ],
+    "https://www.threads.com/@hunyfocus/post/DU415QnEfRU": [
+        "프롬프트"
+    ],
     "https://www.threads.com/@hyperexecutor/post/DVYfZ00FM1c": [
         "클로드"
     ],
@@ -3342,7 +3680,8 @@
     ],
     "https://www.threads.com/@iam_betteryoon/post/DXtXe9emVjm": [
         "chatgpt",
-        "이미지"
+        "이미지",
+        "프롬프트"
     ],
     "https://www.threads.com/@iam_mychan/post/DVmW7cAEnd2": [
         "이미지",
@@ -3369,7 +3708,8 @@
         "안티그래비티"
     ],
     "https://www.threads.com/@immersivebama/post/DX_DtOOlsDW": [
-        "클로드"
+        "클로드",
+        "프롬프트"
     ],
     "https://www.threads.com/@info__sum/post/DUHdfmjEizy": [
         "gemini",
@@ -3388,8 +3728,12 @@
     "https://www.threads.com/@insta_yoonchan/post/DTMJC39Et_M": [
         "마케팅"
     ],
+    "https://www.threads.com/@interior.pulse/post/DXt-QaXkWgR": [
+        "프롬프트"
+    ],
     "https://www.threads.com/@interior.pulse/post/DXt-fQMEYUu": [
-        "이미지"
+        "이미지",
+        "프롬프트"
     ],
     "https://www.threads.com/@inthe2floor/post/DWYLJZuj1HU": [
         "클로드"
@@ -3399,7 +3743,8 @@
     ],
     "https://www.threads.com/@irum_hahn/post/DTC13mTgtbj": [
         "이미지",
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.threads.com/@itszoejeong/post/DT-HYr3Eofo": [
         "gemini",
@@ -3439,16 +3784,19 @@
         "디자인",
         "리서치",
         "chatgpt",
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.threads.com/@jay_ai__/post/DVLSP_9iQoK": [
         "클로드"
     ],
     "https://www.threads.com/@jedisjasper/post/DXvTwMRlH-r": [
-        "이미지"
+        "이미지",
+        "프롬프트"
     ],
     "https://www.threads.com/@jeju_harry/post/DTo-ESagY-U": [
-        "나노바나나"
+        "나노바나나",
+        "프롬프트"
     ],
     "https://www.threads.com/@jh_aicafe/post/DUuVPjBE42V": [
         "ppt",
@@ -3462,14 +3810,16 @@
         "마케팅"
     ],
     "https://www.threads.com/@jinsimcode/post/DUCgoCoE_bt": [
-        "디자인"
+        "디자인",
+        "프롬프트"
     ],
     "https://www.threads.com/@jinsimcode/post/DUCrNqMk8vz": [
         "클로드",
         "디자인"
     ],
     "https://www.threads.com/@jinsolisme1/post/DWDX7utkahq": [
-        "디자인"
+        "디자인",
+        "프롬프트"
     ],
     "https://www.threads.com/@jisang0914/post/DTXV6R6E-IZ": [
         "클로드",
@@ -3487,7 +3837,8 @@
         "이미지",
         "노트북LM",
         "기획",
-        "디자인"
+        "디자인",
+        "프롬프트"
     ],
     "https://www.threads.com/@jokerburg.builder/post/DWBWF1Vkw8R": [
         "클로드",
@@ -3501,7 +3852,8 @@
     ],
     "https://www.threads.com/@jokerburg.builder/post/DWyz_Flk-Fs": [
         "클로드",
-        "오픈클로"
+        "오픈클로",
+        "프롬프트"
     ],
     "https://www.threads.com/@jongbeom92/post/DYUOhFwk4f6": [
         "디자인"
@@ -3518,21 +3870,25 @@
     ],
     "https://www.threads.com/@joshproductletter/post/DVlU9k8if_O": [
         "이미지",
-        "클로드"
+        "클로드",
+        "프롬프트"
     ],
     "https://www.threads.com/@joyonghansleaker/post/DXQ8vCyEyUZ": [
         "클로드"
     ],
     "https://www.threads.com/@jrara_sogood/post/DSzDa1TEeSg": [
         "ppt",
-        "기획"
+        "기획",
+        "프롬프트"
     ],
     "https://www.threads.com/@jungathena_ai/post/DU4qI70kfka": [
         "ppt",
-        "노트북LM"
+        "노트북LM",
+        "프롬프트"
     ],
     "https://www.threads.com/@jwon.ig/post/DV5DA2IEX42": [
-        "클로드"
+        "클로드",
+        "프롬프트"
     ],
     "https://www.threads.com/@keepgoing.lee.518/post/DVXx3OjjzlV": [
         "gemini",
@@ -3601,7 +3957,8 @@
         "chatgpt"
     ],
     "https://www.threads.com/@kkongdon_story/post/DUFb5JKkajY": [
-        "마케팅"
+        "마케팅",
+        "프롬프트"
     ],
     "https://www.threads.com/@kkongdon_story/post/DUS4la6Ebp2": [
         "기획"
@@ -3610,16 +3967,19 @@
         "ppt",
         "노트북LM",
         "디자인",
-        "노션"
+        "노션",
+        "프롬프트"
     ],
     "https://www.threads.com/@kkongdon_story/post/DWj1qs2k6k6": [
         "노트북LM",
         "gemini",
         "디자인",
-        "카드뉴스"
+        "카드뉴스",
+        "프롬프트"
     ],
     "https://www.threads.com/@kkongdon_story/post/DXbgIteEUAT": [
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.threads.com/@kook0526/post/DUFGgHkDj3G": [
         "이미지",
@@ -3636,6 +3996,12 @@
         "클로드"
     ],
     "https://www.threads.com/@kuimoani/post/DX8aIWZCc5I": [
+        "클로드"
+    ],
+    "https://www.threads.com/@kwonlinker/post/DXvAe1Jkqxk": [
+        "클로드"
+    ],
+    "https://www.threads.com/@kwonlinker/post/DYWtxjPIEyQ": [
         "클로드"
     ],
     "https://www.threads.com/@kyungju_benj/post/DWZOTXtAXol": [
@@ -3704,13 +4070,15 @@
         "옵시디언"
     ],
     "https://www.threads.com/@lian.lab71/post/DU8Tp-OD3m8": [
-        "클로드"
+        "클로드",
+        "프롬프트"
     ],
     "https://www.threads.com/@lian.lab71/post/DVDzCMjDyOw": [
         "클로드",
         "마케팅",
         "디자인",
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.threads.com/@lian.lab71/post/DYQovBhj76-": [
         "클로드"
@@ -3744,7 +4112,8 @@
         "리서치"
     ],
     "https://www.threads.com/@lumiham0/post/DT-h_5NARCF": [
-        "이미지"
+        "이미지",
+        "프롬프트"
     ],
     "https://www.threads.com/@maker.evan/post/DUr5HUHD_R4": [
         "디자인"
@@ -3753,7 +4122,8 @@
         "테스트"
     ],
     "https://www.threads.com/@mangopeach0/post/DWZHwN-k9YY": [
-        "클로드"
+        "클로드",
+        "프롬프트"
     ],
     "https://www.threads.com/@mangopeach0/post/DXJ4QORk5OE": [
         "오픈클로",
@@ -3765,7 +4135,11 @@
         "클로드"
     ],
     "https://www.threads.com/@manusai_kr/post/DTfeub8kXPD": [
-        "이미지"
+        "이미지",
+        "프롬프트"
+    ],
+    "https://www.threads.com/@mark_jung_18/post/DVfKKyAEcF_": [
+        "프롬프트"
     ],
     "https://www.threads.com/@marketadapter/post/DWjA0BnE5Qm": [
         "클로드"
@@ -3779,14 +4153,16 @@
     ],
     "https://www.threads.com/@marketer.ai.seulki/post/DT93hKjDzNI": [
         "클로드",
-        "안티그래비티"
+        "안티그래비티",
+        "프롬프트"
     ],
     "https://www.threads.com/@marketer.ai.seulki/post/DUOKKcfj4wK": [
         "ppt",
         "안티그래비티",
         "기획",
         "클로드",
-        "디자인"
+        "디자인",
+        "프롬프트"
     ],
     "https://www.threads.com/@marketer.ai.seulki/post/DVKsy5mjwr1": [
         "클로드",
@@ -3796,11 +4172,13 @@
         "마케팅",
         "이미지",
         "나노바나나",
-        "카드뉴스"
+        "카드뉴스",
+        "프롬프트"
     ],
     "https://www.threads.com/@marketer.ai.seulki/post/DXMU-XZj6tW": [
         "마케팅",
-        "오픈클로"
+        "오픈클로",
+        "프롬프트"
     ],
     "https://www.threads.com/@masterkeyai/post/DWnzQg5DyYg": [
         "클로드",
@@ -3808,11 +4186,13 @@
     ],
     "https://www.threads.com/@masterkeyai/post/DXGDTJrj3_m": [
         "이미지",
-        "나노바나나"
+        "나노바나나",
+        "프롬프트"
     ],
     "https://www.threads.com/@matt_dancho/post/DTnXmC9DuZZ": [
         "gemini",
-        "클로드"
+        "클로드",
+        "프롬프트"
     ],
     "https://www.threads.com/@mayjun_sydney/post/DX_LNA_gWiX": [
         "chatgpt",
@@ -3846,7 +4226,8 @@
         "chatgpt"
     ],
     "https://www.threads.com/@metalailab/post/DXM7L8bgXb8": [
-        "클로드"
+        "클로드",
+        "프롬프트"
     ],
     "https://www.threads.com/@meteorsimulation/post/DUOV38Dktnd": [
         "클로드",
@@ -3878,10 +4259,12 @@
     "https://www.threads.com/@miniminim71/post/DUfTMPpj9GU": [
         "기획",
         "클로드",
-        "안티그래비티"
+        "안티그래비티",
+        "프롬프트"
     ],
     "https://www.threads.com/@miniminim71/post/DVEN_4dDyZt": [
-        "기획"
+        "기획",
+        "프롬프트"
     ],
     "https://www.threads.com/@miniminim71/post/DVF1Q1qjwN7": [
         "gemini",
@@ -3895,7 +4278,8 @@
     "https://www.threads.com/@miniminim71/post/DVjBYrkjzCn": [
         "기획",
         "노션",
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.threads.com/@mino.biz/post/DU6l21wDUNX": [
         "클로드"
@@ -3917,7 +4301,8 @@
         "클로드",
         "chatgpt",
         "기획",
-        "안티그래비티"
+        "안티그래비티",
+        "프롬프트"
     ],
     "https://www.threads.com/@monca.dev/post/DVOGtKKCavr": [
         "기획"
@@ -3925,9 +4310,13 @@
     "https://www.threads.com/@monica_from_korea/post/DTjHQUWk-Hy": [
         "gemini"
     ],
+    "https://www.threads.com/@moongi_adventures/post/DTfDhjHFRLD": [
+        "프롬프트"
+    ],
     "https://www.threads.com/@moongi_adventures/post/DWU6l1ij_ih": [
         "나노바나나",
-        "노션"
+        "노션",
+        "프롬프트"
     ],
     "https://www.threads.com/@moongi_adventures/post/DWXZEJ1gXyA": [
         "클로드",
@@ -3938,7 +4327,8 @@
     "https://www.threads.com/@moongi_adventures/post/DWdMqrDAPdq": [
         "클로드",
         "마케팅",
-        "노션"
+        "노션",
+        "프롬프트"
     ],
     "https://www.threads.com/@moongi_adventures/post/DX_NhplFYLj": [
         "마케팅",
@@ -3946,16 +4336,21 @@
     ],
     "https://www.threads.com/@moongi_adventures/post/DXqEGXMAEyb": [
         "클로드",
-        "노션"
+        "노션",
+        "프롬프트"
     ],
     "https://www.threads.com/@muni.view/post/DYBvlGwE2A_": [
         "클로드",
         "카드뉴스"
     ],
+    "https://www.threads.com/@mywhiteboutique/post/DYQ1WTPDUdz": [
+        "프롬프트"
+    ],
     "https://www.threads.com/@n4.vicboss/post/DWubt3-k2gC": [
         "기획",
         "chatgpt",
-        "오픈클로"
+        "오픈클로",
+        "프롬프트"
     ],
     "https://www.threads.com/@nakseo.growth/post/DV5RQ9nE2-K": [
         "클로드",
@@ -3965,7 +4360,8 @@
         "이미지",
         "gemini",
         "노션",
-        "디자인"
+        "디자인",
+        "프롬프트"
     ],
     "https://www.threads.com/@naminsoo_ai/post/DW5m0cxCFhX": [
         "ppt",
@@ -4000,7 +4396,8 @@
         "클로드",
         "리서치",
         "chatgpt",
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.threads.com/@notalentbutai/post/DXDb7NcEwrj": [
         "ppt",
@@ -4026,7 +4423,8 @@
         "gemini",
         "기획",
         "디자인",
-        "리서치"
+        "리서치",
+        "프롬프트"
     ],
     "https://www.threads.com/@ody_daddy/post/DTct_N_kxrn": [
         "안티그래비티",
@@ -4035,19 +4433,27 @@
     "https://www.threads.com/@ody_daddy/post/DUHGprsCrmE": [
         "클로드",
         "기획",
-        "노트북LM"
+        "노트북LM",
+        "프롬프트"
     ],
     "https://www.threads.com/@ody_daddy/post/DVKE3xqCRKl": [
-        "리서치"
+        "리서치",
+        "프롬프트"
     ],
     "https://www.threads.com/@ody_daddy/post/DVZlMVugZRR": [
-        "클로드"
+        "클로드",
+        "프롬프트"
     ],
     "https://www.threads.com/@ok_k_studio/post/DTF2ha_ibNE": [
-        "마케팅"
+        "마케팅",
+        "프롬프트"
+    ],
+    "https://www.threads.com/@ok_min87/post/DUWpQzlE5cF": [
+        "프롬프트"
     ],
     "https://www.threads.com/@ok_min87/post/DWh_Z84E_RM": [
-        "클로드"
+        "클로드",
+        "프롬프트"
     ],
     "https://www.threads.com/@olive.r_327/post/DVyPuOtCRGt": [
         "마케팅"
@@ -4104,12 +4510,14 @@
     "https://www.threads.com/@overtime.sam/post/DVDyfo6E0Ha": [
         "클로드",
         "옵시디언",
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.threads.com/@overtime.sam/post/DVDyrs1E_Zv": [
         "옵시디언",
         "클로드",
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.threads.com/@overtime.sam/post/DVLjTVLCSZh": [
         "옵시디언"
@@ -4178,16 +4586,22 @@
         "chatgpt"
     ],
     "https://www.threads.com/@place_coach/post/DVKuEKqktOU": [
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.threads.com/@planum.one/post/DUGJxoEkbWv": [
         "클로드"
     ],
+    "https://www.threads.com/@platter.worklab/post/DScOxOAkzam": [
+        "프롬프트"
+    ],
     "https://www.threads.com/@pm_anyway/post/DT99oVWkh8u": [
-        "노트북LM"
+        "노트북LM",
+        "프롬프트"
     ],
     "https://www.threads.com/@pm_anyway/post/DTfC9XAEgCD": [
-        "클로드"
+        "클로드",
+        "프롬프트"
     ],
     "https://www.threads.com/@pnkmath/post/DWCg4eNDKT8": [
         "클로드"
@@ -4199,7 +4613,15 @@
         "ppt",
         "디자인",
         "마케팅",
-        "클로드"
+        "클로드",
+        "프롬프트"
+    ],
+    "https://www.threads.com/@ppt_egog/post/DYUW06mCZnl": [
+        "ppt",
+        "디자인",
+        "마케팅",
+        "클로드",
+        "프롬프트"
     ],
     "https://www.threads.com/@programmingzombie/post/DSEhu-lE8kp": [
         "기획",
@@ -4210,6 +4632,9 @@
         "기획",
         "마케팅",
         "디자인"
+    ],
+    "https://www.threads.com/@programmingzombie/post/DSw2WViE_0V": [
+        "프롬프트"
     ],
     "https://www.threads.com/@prong_ai/post/DVc35-iks0x": [
         "이미지"
@@ -4228,7 +4653,8 @@
         "chatgpt"
     ],
     "https://www.threads.com/@qjc.ai/post/DSKaU75D9h1": [
-        "클로드"
+        "클로드",
+        "프롬프트"
     ],
     "https://www.threads.com/@qjc.ai/post/DTUq6Lpj-zt": [
         "gemini",
@@ -4244,13 +4670,15 @@
         "이미지",
         "클로드",
         "디자인",
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.threads.com/@qjc.ai/post/DTzr3XyD9pL": [
         "gemini",
         "클로드",
         "안티그래비티",
-        "디자인"
+        "디자인",
+        "프롬프트"
     ],
     "https://www.threads.com/@qjc.ai/post/DUK7AjFDxeH": [
         "기획",
@@ -4266,14 +4694,19 @@
     "https://www.threads.com/@qjc.ai/post/DXnXgvaE1W2": [
         "클로드",
         "chatgpt",
-        "이미지"
+        "이미지",
+        "프롬프트"
     ],
     "https://www.threads.com/@qjc.ai/post/DXqDJNtk_Lo": [
         "클로드"
     ],
     "https://www.threads.com/@qjc.ai/post/DYBgiAoE9Fn": [
         "chatgpt",
-        "클로드"
+        "클로드",
+        "프롬프트"
+    ],
+    "https://www.threads.com/@read_1p/post/DUTUR80iZ_4": [
+        "프롬프트"
     ],
     "https://www.threads.com/@readyto_da4/post/DUs6iJtCcdv": [
         "안티그래비티",
@@ -4284,18 +4717,26 @@
         "디자인",
         "테스트"
     ],
+    "https://www.threads.com/@realailab_core/post/DYVgV9fEwAt": [
+        "테스트"
+    ],
     "https://www.threads.com/@redbearhbj/post/DUHi67GEhVw": [
         "마케팅",
         "클로드",
-        "ppt"
+        "ppt",
+        "프롬프트"
     ],
     "https://www.threads.com/@reframe77/post/DU7IWYRiV0W": [
         "노션",
         "리서치"
     ],
+    "https://www.threads.com/@remedyfor/post/DYXJ78Xk7Or": [
+        "chatgpt"
+    ],
     "https://www.threads.com/@rneayan_official/post/DXX2bAPE_mz": [
         "chatgpt",
-        "이미지"
+        "이미지",
+        "프롬프트"
     ],
     "https://www.threads.com/@roac.h7839/post/DVgF6rqD8r8": [
         "gemini",
@@ -4304,11 +4745,15 @@
     "https://www.threads.com/@roac.h7839/post/DVnd3g0jxKk": [
         "gemini"
     ],
+    "https://www.threads.com/@roach_log/post/DYW1Yu_Gp8f": [
+        "오픈클로"
+    ],
     "https://www.threads.com/@robin_just_ship_it/post/DT9e9jOkc7M": [
         "gemini",
         "이미지",
         "클로드",
-        "디자인"
+        "디자인",
+        "프롬프트"
     ],
     "https://www.threads.com/@ryusw007/post/DUsSx7fkkzc": [
         "클로드",
@@ -4329,7 +4774,11 @@
         "나노바나나",
         "디자인",
         "chatgpt",
-        "카드뉴스"
+        "카드뉴스",
+        "프롬프트"
+    ],
+    "https://www.threads.com/@sasirim/post/DVXlG1pksMG": [
+        "프롬프트"
     ],
     "https://www.threads.com/@senjttn/post/DW7rE9qjwIn": [
         "클로드",
@@ -4342,12 +4791,20 @@
         "클로드",
         "chatgpt"
     ],
+    "https://www.threads.com/@seongdp/post/DYSDYOhGWeZ": [
+        "마케팅"
+    ],
     "https://www.threads.com/@seulgi.kaang/post/DT93hEfj7TV": [
         "클로드",
         "안티그래비티"
     ],
     "https://www.threads.com/@seungha__n/post/DYEVZiJArGH": [
         "클로드"
+    ],
+    "https://www.threads.com/@seungnam.t.kim/post/DYW-08xmIUX": [
+        "chatgpt",
+        "테스트",
+        "프롬프트"
     ],
     "https://www.threads.com/@shuntailor/post/DV1Uh5kkXzw": [
         "클로드"
@@ -4357,10 +4814,12 @@
         "이미지",
         "클로드",
         "디자인",
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.threads.com/@shuntailor/post/DWnbVTimvkM": [
-        "하네스"
+        "하네스",
+        "프롬프트"
     ],
     "https://www.threads.com/@sienna__ai/post/DXZH9DJia5p": [
         "디자인",
@@ -4375,13 +4834,15 @@
     "https://www.threads.com/@siliconvalleyunni/post/DYEOXE2lWU1": [
         "gemini",
         "이미지",
-        "클로드"
+        "클로드",
+        "프롬프트"
     ],
     "https://www.threads.com/@silsangv/post/DUPcmH7EZJc": [
         "gemini",
         "클로드",
         "안티그래비티",
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.threads.com/@sinabrocoding/post/DTzG-uEj-3p": [
         "테스트"
@@ -4412,7 +4873,8 @@
         "클로드",
         "노트북LM",
         "기획",
-        "gemini"
+        "gemini",
+        "프롬프트"
     ],
     "https://www.threads.com/@snuglab_dev/post/DU7b3RMj3QB": [
         "옵시디언",
@@ -4425,7 +4887,8 @@
     ],
     "https://www.threads.com/@softdaddy_o/post/DV73FdujLM3": [
         "클로드",
-        "디자인"
+        "디자인",
+        "프롬프트"
     ],
     "https://www.threads.com/@softdaddy_o/post/DViQSbAEvMI": [
         "클로드",
@@ -4435,7 +4898,8 @@
         "나노바나나",
         "gemini",
         "기획",
-        "카드뉴스"
+        "카드뉴스",
+        "프롬프트"
     ],
     "https://www.threads.com/@specal1849/post/DOkU-Zhkk5J": [
         "ppt",
@@ -4447,7 +4911,8 @@
         "ppt",
         "나노바나나",
         "노션",
-        "카드뉴스"
+        "카드뉴스",
+        "프롬프트"
     ],
     "https://www.threads.com/@specal1849/post/DR5eEaEE9_R": [
         "gemini",
@@ -4456,7 +4921,8 @@
     ],
     "https://www.threads.com/@specal1849/post/DR5lIlhEntF": [
         "클로드",
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.threads.com/@specal1849/post/DRftFAqE3Pv": [
         "gemini",
@@ -4469,7 +4935,8 @@
         "이미지",
         "나노바나나",
         "gemini",
-        "카드뉴스"
+        "카드뉴스",
+        "프롬프트"
     ],
     "https://www.threads.com/@specal1849/post/DRysL3RkpGl": [
         "gemini",
@@ -4477,24 +4944,29 @@
         "노션",
         "기획",
         "리서치",
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.threads.com/@specal1849/post/DSBpzvtkVTT": [
         "나노바나나",
         "이미지",
-        "카드뉴스"
+        "카드뉴스",
+        "프롬프트"
     ],
     "https://www.threads.com/@specal1849/post/DSE1xdPkpu-": [
         "이미지",
-        "gemini"
+        "gemini",
+        "프롬프트"
     ],
     "https://www.threads.com/@specal1849/post/DSI4E1AkaQ0": [
         "나노바나나",
-        "카드뉴스"
+        "카드뉴스",
+        "프롬프트"
     ],
     "https://www.threads.com/@specal1849/post/DSJ-s-OEj2D": [
         "gemini",
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.threads.com/@specal1849/post/DSLinAmE2my": [
         "노션",
@@ -4507,11 +4979,16 @@
         "chatgpt"
     ],
     "https://www.threads.com/@specal1849/post/DSTWkAOESmj": [
-        "gemini"
+        "gemini",
+        "프롬프트"
+    ],
+    "https://www.threads.com/@specal1849/post/DSYXjdgExsv": [
+        "프롬프트"
     ],
     "https://www.threads.com/@specal1849/post/DSmUMfvkQ_v": [
         "노트북LM",
-        "ppt"
+        "ppt",
+        "프롬프트"
     ],
     "https://www.threads.com/@specal1849/post/DSyzX_MEq66": [
         "이미지",
@@ -4528,21 +5005,24 @@
         "안티그래비티",
         "기획",
         "나노바나나",
-        "리서치"
+        "리서치",
+        "프롬프트"
     ],
     "https://www.threads.com/@specal1849/post/DUZLMwvkojo": [
         "클로드",
         "chatgpt"
     ],
     "https://www.threads.com/@specal1849/post/DUuTgS-kcfR": [
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.threads.com/@specal1849/post/DUwqNwDEXhp": [
         "ppt",
         "클로드",
         "리서치",
         "chatgpt",
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.threads.com/@specal1849/post/DVAxTwjErQM": [
         "클로드",
@@ -4566,12 +5046,14 @@
         "gemini",
         "ppt",
         "하네스",
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.threads.com/@ssen.lab.graphs/post/DXesqVEk0aA": [
         "디자인",
         "ppt",
-        "클로드"
+        "클로드",
+        "프롬프트"
     ],
     "https://www.threads.com/@starcomo/post/DUK7uIXkklz": [
         "기획"
@@ -4585,7 +5067,8 @@
         "ppt",
         "chatgpt",
         "마케팅",
-        "카드뉴스"
+        "카드뉴스",
+        "프롬프트"
     ],
     "https://www.threads.com/@stashby.me/post/DTCYCp1ErLv": [
         "마케팅",
@@ -4610,7 +5093,8 @@
     "https://www.threads.com/@steady__study.dev/post/DUGFSwzgfmA": [
         "클로드",
         "하네스",
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.threads.com/@steady__study.dev/post/DUKUnJ3kciv": [
         "하네스",
@@ -4620,7 +5104,8 @@
         "클로드",
         "디자인",
         "ppt",
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.threads.com/@stormleehj/post/DUQTVuyD1V9": [
         "노션",
@@ -4628,6 +5113,10 @@
     ],
     "https://www.threads.com/@stormleehj/post/DUWEYtYEiY7": [
         "chatgpt"
+    ],
+    "https://www.threads.com/@storyteller_jhk/post/DYYcmCgElCG": [
+        "노션",
+        "이미지"
     ],
     "https://www.threads.com/@struc___ture/post/DSwwrTGk7d0": [
         "gemini",
@@ -4640,7 +5129,8 @@
     "https://www.threads.com/@studiobyprompt/post/DU4nW8bE7bg": [
         "클로드",
         "chatgpt",
-        "오픈클로"
+        "오픈클로",
+        "프롬프트"
     ],
     "https://www.threads.com/@study_ing_squirrel/post/DSy1y1QARLv": [
         "gemini",
@@ -4648,7 +5138,8 @@
     ],
     "https://www.threads.com/@sudo.gunn.kr/post/DRrYr4-itgh": [
         "gemini",
-        "옵시디언"
+        "옵시디언",
+        "프롬프트"
     ],
     "https://www.threads.com/@suho_hp/post/DWrPVWxmLwI": [
         "클로드"
@@ -4691,12 +5182,14 @@
     ],
     "https://www.threads.com/@tableau_viz/post/DUpETvED2hc": [
         "클로드",
-        "노션"
+        "노션",
+        "프롬프트"
     ],
     "https://www.threads.com/@taehyeong_lim/post/DTVOakVkSUb": [
         "안티그래비티",
         "옵시디언",
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.threads.com/@taehyeong_lim/post/DXQ9B3rEURq": [
         "디자인",
@@ -4744,7 +5237,8 @@
         "chatgpt"
     ],
     "https://www.threads.com/@terracotta.nj/post/DYQJrwjCesU": [
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.threads.com/@the.brain.trinity/post/DXCYGNGk5V9": [
         "클로드",
@@ -4754,7 +5248,8 @@
         "기획",
         "마케팅",
         "노션",
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.threads.com/@thedalbee/post/DUXvFrqESMP": [
         "클로드",
@@ -4764,14 +5259,16 @@
     "https://www.threads.com/@thedevfounder/post/DUi3u9LjA2d": [
         "클로드",
         "노션",
-        "리서치"
+        "리서치",
+        "프롬프트"
     ],
     "https://www.threads.com/@threadhacker/post/DXn1ndtCRtM": [
         "디자인",
         "클로드",
         "ppt",
         "기획",
-        "이미지"
+        "이미지",
+        "프롬프트"
     ],
     "https://www.threads.com/@tiger_in_seoul/post/DU4cHvOAZ9D": [
         "이미지",
@@ -4788,14 +5285,16 @@
         "이미지",
         "클로드",
         "디자인",
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.threads.com/@tofukyung/post/DTAR3TmAj-F": [
         "이미지",
         "gemini",
         "클로드",
         "리서치",
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.threads.com/@tofukyung/post/DTq4Wg9E8Tn": [
         "클로드",
@@ -4812,7 +5311,8 @@
     "https://www.threads.com/@tofukyung/post/DVhhTE7EzJE": [
         "리서치",
         "chatgpt",
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.threads.com/@tornado_616/post/DS-BymgDQdD": [
         "ppt",
@@ -4822,7 +5322,8 @@
     ],
     "https://www.threads.com/@toy_crane911/post/DRim2UkknAR": [
         "클로드",
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.threads.com/@tuberithm/post/DS_CJRHk-Lw": [
         "노트북LM",
@@ -4833,14 +5334,16 @@
     "https://www.threads.com/@unclejobs.ai/post/DUyVgLBk7NT": [
         "클로드",
         "chatgpt",
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.threads.com/@unclejobs.ai/post/DV5WiZwCbpp": [
         "마케팅",
         "기획",
         "클로드",
         "디자인",
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.threads.com/@unclejobs.ai/post/DV5WkP9ib3u": [
         "클로드",
@@ -4876,12 +5379,14 @@
         "클로드",
         "오픈클로",
         "리서치",
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.threads.com/@unclejobs.ai/post/DWJWj3aicDO": [
         "chatgpt",
         "오픈클로",
-        "리서치"
+        "리서치",
+        "프롬프트"
     ],
     "https://www.threads.com/@unclejobs.ai/post/DWJWkwKCcHW": [
         "chatgpt",
@@ -4894,7 +5399,8 @@
     ],
     "https://www.threads.com/@unclejobs.ai/post/DWjHEgOiT9U": [
         "클로드",
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.threads.com/@unclejobs.ai/post/DWvpO8hCUhN": [
         "클로드"
@@ -4903,7 +5409,8 @@
         "클로드",
         "안티그래비티",
         "chatgpt",
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.threads.com/@unclejobs.ai/post/DWy4tB4E9w1": [
         "클로드",
@@ -4915,11 +5422,13 @@
         "기획",
         "안티그래비티",
         "chatgpt",
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.threads.com/@unclejobs.ai/post/DXD80kwCYdS": [
         "클로드",
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.threads.com/@unclejobs.ai/post/DXDW9AfE_cz": [
         "클로드",
@@ -4931,7 +5440,8 @@
         "클로드",
         "오픈클로",
         "리서치",
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.threads.com/@unclejobs.ai/post/DXa9BtCiatR": [
         "오픈클로"
@@ -4945,10 +5455,12 @@
         "gemini",
         "chatgpt",
         "이미지",
-        "노션"
+        "노션",
+        "프롬프트"
     ],
     "https://www.threads.com/@unclejobs.ai/post/DXn9uNbCcfz": [
-        "이미지"
+        "이미지",
+        "프롬프트"
     ],
     "https://www.threads.com/@unclejobs.ai/post/DXn_VaLiYh4": [
         "이미지"
@@ -4960,12 +5472,19 @@
     "https://www.threads.com/@unclejobs.ai/post/DYM9fAZCWvv": [
         "클로드"
     ],
+    "https://www.threads.com/@unclejobs.ai/post/DYXO8a8CW8B": [
+        "클로드",
+        "테스트",
+        "프롬프트"
+    ],
     "https://www.threads.com/@untruth.study/post/DVX4MvoADrT": [
         "클로드",
-        "옵시디언"
+        "옵시디언",
+        "프롬프트"
     ],
     "https://www.threads.com/@upnexx.ai/post/DYPfxGzmdpp": [
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.threads.com/@ur.future.ai/post/DUU0S9ZkqQr": [
         "기획",
@@ -4975,7 +5494,8 @@
     "https://www.threads.com/@vibe.aipm/post/DWZNnK9k77n": [
         "클로드",
         "노션",
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.threads.com/@vibe.aipm/post/DWtigu1E_OH": [
         "오픈클로"
@@ -5009,27 +5529,35 @@
     ],
     "https://www.threads.com/@vibe.w.flow/post/DWvvqw5mLcH": [
         "클로드",
-        "디자인"
+        "디자인",
+        "프롬프트"
     ],
     "https://www.threads.com/@vibe.w.flow/post/DXwBQ0zE0-I": [
         "클로드",
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.threads.com/@vibe_ai_cat/post/DVNZSmQEmri": [
-        "테스트"
+        "테스트",
+        "프롬프트"
+    ],
+    "https://www.threads.com/@vibe_ai_cat/post/DVNZYDvkqkz": [
+        "프롬프트"
     ],
     "https://www.threads.com/@vibevault.nesto/post/DXF8VetE_rm": [
         "클로드",
         "옵시디언"
     ],
     "https://www.threads.com/@visn__ai/post/DUUP0ZfE7y8": [
-        "이미지"
+        "이미지",
+        "프롬프트"
     ],
     "https://www.threads.com/@voidlight00/post/DWDwFi2jyI_": [
         "마케팅",
         "클로드",
         "리서치",
-        "테스트"
+        "테스트",
+        "프롬프트"
     ],
     "https://www.threads.com/@vyblor/post/DWu4BurkVoc": [
         "이미지",
@@ -5059,9 +5587,15 @@
     "https://www.threads.com/@wmleee/post/DUGYenoEnPR": [
         "디자인"
     ],
+    "https://www.threads.com/@world.best.cat/post/DYd5bo6mhwW": [
+        "chatgpt",
+        "클로드",
+        "하네스"
+    ],
     "https://www.threads.com/@xeona.xyz/post/DUVOj-xAVR3": [
         "클로드",
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.threads.com/@xomoonoui/post/DXfqg4lkl9h": [
         "디자인",
@@ -5069,12 +5603,16 @@
         "ppt",
         "chatgpt"
     ],
+    "https://www.threads.com/@yc_melan/post/DUfZZGdE71B": [
+        "프롬프트"
+    ],
     "https://www.threads.com/@yeoamlog/post/DUQT-dageiP": [
         "노션",
         "옵시디언"
     ],
     "https://www.threads.com/@yeon8079/post/DWWbM6sEYSB": [
-        "디자인"
+        "디자인",
+        "프롬프트"
     ],
     "https://www.threads.com/@yesleocan/post/DXnKCDxD9gs": [
         "디자인",
@@ -5091,25 +5629,35 @@
         "gemini",
         "클로드"
     ],
+    "https://www.threads.com/@yong076/post/DYWGD_XkSnf": [
+        "chatgpt",
+        "gemini",
+        "클로드"
+    ],
     "https://www.threads.com/@yourgpt3650/post/DSwpkD7ksP7": [
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.threads.com/@yourgpt3650/post/DTSa9uLEg9_": [
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.threads.com/@yourgpt3650/post/DTUAdBHjV7G": [
         "기획",
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.threads.com/@yourgpt3650/post/DVKxns-DSHY": [
         "gemini",
         "마케팅",
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.threads.com/@yourgpt3650/post/DVYpsQlkn8n": [
         "마케팅",
         "gemini",
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.threads.com/@yun_ja_dong/post/DULSOOKE3XD": [
         "안티그래비티"
@@ -5119,7 +5667,8 @@
         "기획"
     ],
     "https://www.threads.com/@yyn.star/post/DTo7IpQAQnf": [
-        "이미지"
+        "이미지",
+        "프롬프트"
     ],
     "https://www.threads.com/@zhugehyuk/post/DWdXHVxiWwC": [
         "리서치",
@@ -5168,7 +5717,8 @@
         "테스트"
     ],
     "https://x.com/AlexZio00/status/2025027520668864965": [
-        "노트북LM"
+        "노트북LM",
+        "프롬프트"
     ],
     "https://x.com/Banbo_Insight/status/2018987561604268442": [
         "마케팅",
@@ -5177,7 +5727,8 @@
     "https://x.com/ChrisLaubAI/status/2022243294349320283": [
         "클로드",
         "chatgpt",
-        "마케팅"
+        "마케팅",
+        "프롬프트"
     ],
     "https://x.com/DeepDive_KR/status/2038906644201881911": [
         "클로드"
@@ -5195,7 +5746,8 @@
         "클로드"
     ],
     "https://x.com/KimiProduct/status/2021428293145329990": [
-        "디자인"
+        "디자인",
+        "프롬프트"
     ],
     "https://x.com/LearnerBR/status/2038662987242991775": [
         "클로드",
@@ -5204,14 +5756,16 @@
     ],
     "https://x.com/Marryclaire_AI/status/2023098099590467672": [
         "노트북LM",
-        "리서치"
+        "리서치",
+        "프롬프트"
     ],
     "https://x.com/Marryclaire_AI/status/2024886333085548860": [
         "클로드",
         "ppt",
         "디자인",
         "리서치",
-        "마케팅"
+        "마케팅",
+        "프롬프트"
     ],
     "https://x.com/MengTo/status/2047557417718988964": [
         "디자인"
@@ -5221,10 +5775,12 @@
     ],
     "https://x.com/Suryanshti777/status/2024780155428982985": [
         "클로드",
-        "디자인"
+        "디자인",
+        "프롬프트"
     ],
     "https://x.com/WhitePeach/status/2038884237840150941": [
-        "클로드"
+        "클로드",
+        "프롬프트"
     ],
     "https://x.com/aakashgupta/status/2038713289254064321": [
         "클로드",
@@ -5240,21 +5796,28 @@
     "https://x.com/aiwithjainam/status/2021179767228354988": [
         "클로드",
         "디자인",
-        "리서치"
+        "리서치",
+        "프롬프트"
     ],
     "https://x.com/aiwithmayank/status/2021555296951513414": [
         "클로드",
-        "리서치"
+        "리서치",
+        "프롬프트"
+    ],
+    "https://x.com/alex_prompter/status/2020043830725431346": [
+        "프롬프트"
     ],
     "https://x.com/benjitaylor/status/2027902450049708385": [
-        "클로드"
+        "클로드",
+        "프롬프트"
     ],
     "https://x.com/block_atom/status/2024968812987142469": [
         "클로드"
     ],
     "https://x.com/crystalsssup/status/2013558837962514741": [
         "ppt",
-        "디자인"
+        "디자인",
+        "프롬프트"
     ],
     "https://x.com/dotey/status/2013044625238339994": [
         "클로드",
@@ -5264,7 +5827,8 @@
     ],
     "https://x.com/emilylambert/status/2019947921823944778": [
         "클로드",
-        "디자인"
+        "디자인",
+        "프롬프트"
     ],
     "https://x.com/eng_khairallah1/status/2047693100118880488": [
         "클로드"
@@ -5272,12 +5836,17 @@
     "https://x.com/geekmaker_/status/2038903921763348845": [
         "하네스"
     ],
+    "https://x.com/godofprompt/status/2020288470561038812": [
+        "프롬프트"
+    ],
     "https://x.com/godofprompt/status/2021563581637300730": [
-        "오픈클로"
+        "오픈클로",
+        "프롬프트"
     ],
     "https://x.com/godofprompt/status/2024072963734241437": [
         "리서치",
-        "마케팅"
+        "마케팅",
+        "프롬프트"
     ],
     "https://x.com/golbin/status/2038844901648142534": [
         "클로드",
@@ -5285,15 +5854,18 @@
     ],
     "https://x.com/hayyantechtalks/status/2024716712202162490": [
         "노트북LM",
-        "리서치"
+        "리서치",
+        "프롬프트"
     ],
     "https://x.com/heygurisingh/status/2024038464203964630": [
-        "chatgpt"
+        "chatgpt",
+        "프롬프트"
     ],
     "https://x.com/heynavtoor/status/2023786876667302114": [
         "클로드",
         "ppt",
-        "리서치"
+        "리서치",
+        "프롬프트"
     ],
     "https://x.com/jaehwa/status/2015913055285375415": [
         "클로드",
@@ -5303,6 +5875,12 @@
         "chatgpt",
         "노트북LM",
         "클로드"
+    ],
+    "https://x.com/kana_option/status/2023674591248265700": [
+        "프롬프트"
+    ],
+    "https://x.com/kana_option/status/2023752685275803803": [
+        "프롬프트"
     ],
     "https://x.com/karpathy/status/2039805659525644595": [
         "옵시디언",
@@ -5324,10 +5902,14 @@
     "https://x.com/ohmahahm/status/2020286419051393451": [
         "오픈클로"
     ],
+    "https://x.com/oliviscusAI/status/2021244380607123492": [
+        "프롬프트"
+    ],
     "https://x.com/socialwithaayan/status/2021233357514997824": [
         "클로드",
         "ppt",
-        "리서치"
+        "리서치",
+        "프롬프트"
     ],
     "https://x.com/sorenblank/status/2021671940646482267": [
         "gemini",

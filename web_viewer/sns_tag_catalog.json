@@ -111,14 +111,20 @@
             "claude"
         ]
     },
+    "테스트": {
+        "primary": false,
+        "aliases": []
+    },
     "하네스": {
         "primary": false,
         "aliases": [
             "harness"
         ]
     },
-    "테스트": {
+    "프롬프트": {
         "primary": false,
-        "aliases": []
+        "aliases": [
+            "prompt"
+        ]
     }
 }
