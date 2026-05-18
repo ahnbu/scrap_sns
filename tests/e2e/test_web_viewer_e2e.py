@@ -189,3 +189,19 @@ def test_u5_platform_filter_cross_check(page: Page):
                     expected = {"x", "twitter"}
                 assert platform_attr.lower() in expected, \
                     f"Card platform '{platform_attr}' doesn't match filter '{filter_value}'"
+
+
+@pytest.mark.e2e
+def test_u6_default_sort_migrates_date_to_local_sequence(page: Page):
+    """U6: 기존 작성일순 저장값이 있더라도 기본 정렬은 로컬수집순으로 승격"""
+    page.goto("http://localhost:5000/")
+    page.evaluate("""() => {
+        localStorage.setItem('sns_sort_order', 'date');
+        localStorage.removeItem('sns_sort_order_date_migrated');
+    }""")
+
+    page.reload()
+    page.wait_for_timeout(3000)
+
+    expect(page.locator("#currentSortLabel")).to_have_text("로컬수집순")
+    assert page.evaluate("localStorage.getItem('sns_sort_order')") == "saved"

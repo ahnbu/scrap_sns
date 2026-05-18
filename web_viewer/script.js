@@ -83,6 +83,33 @@ function buildScrapProgressConsoleMessage(event) {
     return elapsed ? `[SNS Scrap] ${elapsed} | ${message}` : `[SNS Scrap] ${message}`;
 }
 
+const SORT_STORAGE_KEY = 'sns_sort_order';
+const SORT_DATE_MIGRATION_KEY = 'sns_sort_order_date_migrated';
+const DEFAULT_SORT_ORDER = 'saved';
+const VALID_SORT_ORDERS = new Set(['date', 'saved', 'favorites']);
+
+function getInitialSortOrder() {
+    const storedSort = localStorage.getItem(SORT_STORAGE_KEY);
+
+    if (!storedSort || !VALID_SORT_ORDERS.has(storedSort)) {
+        localStorage.setItem(SORT_STORAGE_KEY, DEFAULT_SORT_ORDER);
+        localStorage.setItem(SORT_DATE_MIGRATION_KEY, 'true');
+        return DEFAULT_SORT_ORDER;
+    }
+
+    if (
+        storedSort === 'date' &&
+        localStorage.getItem(SORT_DATE_MIGRATION_KEY) !== 'true'
+    ) {
+        localStorage.setItem(SORT_STORAGE_KEY, DEFAULT_SORT_ORDER);
+        localStorage.setItem(SORT_DATE_MIGRATION_KEY, 'true');
+        return DEFAULT_SORT_ORDER;
+    }
+
+    localStorage.setItem(SORT_DATE_MIGRATION_KEY, 'true');
+    return storedSort;
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     // const feedJsonPath = 'output_total/total_full_20260201.json'; // ❌ 삭제됨 (동적 로딩으로 변경)
     const masonryGrid = document.getElementById('masonryGrid');
@@ -130,7 +157,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let _ioSentinel = null;
     let columns = [];
     let currentAuthRenewalPrompt = '';
-    let currentSort = localStorage.getItem('sns_sort_order') || 'date'; // Persist sort order
+    let currentSort = getInitialSortOrder();
     const _postDetailCache = new Map();
     const _inFlightDetails = new Set();
 
@@ -229,7 +256,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('[data-sort]').forEach(btn => {
         btn.addEventListener('click', (e) => {
             currentSort = e.target.dataset.sort;
-            localStorage.setItem('sns_sort_order', currentSort); // Save to storage
+            localStorage.setItem(SORT_STORAGE_KEY, currentSort);
             clearSelection();
             document.getElementById('currentSortLabel').textContent = e.target.textContent.trim();
             // Close dropdown
