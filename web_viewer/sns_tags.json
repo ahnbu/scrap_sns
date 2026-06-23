@@ -6350,5 +6350,30 @@
         "chatgpt",
         "클로드",
         "테스트"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7473591232762408960?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7473591232762408960%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "기획",
+        "디자인",
+        "이미지"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7473692684633784320?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7473692684633784320%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "chatgpt",
+        "클로드"
+    ],
+    "https://www.threads.com/@bunniesossdev/post/DZ6UDQJE-at": [
+        "chatgpt",
+        "ppt"
+    ],
+    "https://www.threads.com/@unclejobs.ai/post/DZwZCDTCf2I": [
+        "클로드"
+    ],
+    "https://www.threads.com/@yeon.gyu.kim/post/DZ6HjDiknTl": [
+        "chatgpt",
+        "리서치"
+    ],
+    "https://www.threads.com/@yeon.gyu.kim/post/DZ6UWY8EimW": [
+        "chatgpt",
+        "ppt",
+        "리서치"
     ]
 }
