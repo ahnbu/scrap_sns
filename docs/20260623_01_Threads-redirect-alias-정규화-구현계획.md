@@ -682,3 +682,133 @@ source_file=D:\vibe-coding\scrap_sns\output_total\total_full_20260623.json
 | `python -c "..."` 대상 코드 확인 | `['DYk4nq4ExZn', 'DYizvvNE_Kf']` |
 
 결론: 재발 방지 로직은 구현 및 검증 완료. 기존 `2026-06-23` total 데이터의 alias 카드 보정은 별도 승인 후 진행해야 한다.
+
+## 기존 문제 데이터 보정 권장안
+
+### 권장 결론
+
+기존 문제 데이터는 전체 마이그레이션이 아니라, 확인된 1건만 타깃 보정한다.
+
+| 선택지 | 권장도 | 이유 |
+|---|---|---|
+| 최신 문제 데이터 1건만 보정 | ✅ 권장 | 원인이 확인된 `DYk4nq4ExZn -> DYizvvNE_Kf`만 정리하므로 위험이 작다. |
+| `output_total`에서 alias만 삭제 | ❌ 비권장 | 다음 병합 때 `output_threads`에서 다시 살아날 수 있다. |
+| `root_code != code` 전체 일괄 수정 | ❌ 비권장 | 정상 merged thread까지 오탐할 수 있어 범위가 과하다. |
+| 원문 재수집으로 덮어쓰기 | ⚠️ 조건부 | 현재 문제는 수집 로직보다 기존 저장 데이터 오염이므로 먼저 데이터 보정이 맞다. |
+
+### 보정 대상
+
+- alias code: `DYk4nq4ExZn`
+- alias URL: `https://www.threads.com/@oatplat_/post/DYk4nq4ExZn`
+- canonical code: `DYizvvNE_Kf`
+- canonical URL: `https://www.threads.com/@tonyahn_80/post/DYizvvNE_Kf`
+
+### 권장 처리 절차
+
+1. 영향 파일을 백업한다.
+   - `output_threads/python/threads_py_simple_*.json`
+   - `output_threads/python/threads_py_full_*.json`
+   - `output_total/total_full_20260623.json`
+2. simple 항목에 alias 상태를 기록한다.
+   - 주의: simple 데이터의 alias 항목은 삭제하지 않는다.
+   - `DYk4nq4ExZn` 항목은 `detail_status=duplicate_of_canonical` 상태로 유지해야 한다.
+   - 그래야 이후 simple 목록 병합 시 code 기준 중복으로 인식되어 다시 신규 후보로 추가되지 않는다.
+   - `detail_status: duplicate_of_canonical`
+   - `duplicate_of: DYizvvNE_Kf`
+   - `canonical_code: DYizvvNE_Kf`
+   - `canonical_username: tonyahn_80`
+   - `requested_url`, `final_url`
+3. full 데이터에서 alias 카드를 제거한다.
+   - `DYk4nq4ExZn` 별도 post 제거
+   - `DYizvvNE_Kf`에 `redirect_aliases`로 alias URL 연결
+   - canonical post의 `root_code`는 가능하면 `DYizvvNE_Kf`로 정리
+4. total은 재생성하거나 동일 기준으로 보정한다.
+   - 최종 뷰어 기준에서는 `DYk4nq4ExZn` 카드가 사라지고 `DYizvvNE_Kf`만 보여야 한다.
+
+### 실행 방식
+
+수동 JSON 편집은 비권장한다. 별도 보정 스크립트를 만들어 아래 순서로 실행한다.
+
+```powershell
+node scripts/diagnose_threads_redirect_alias.mjs DYk4nq4ExZn
+node scripts/fix_threads_redirect_alias.mjs DYk4nq4ExZn --dry-run
+node scripts/fix_threads_redirect_alias.mjs DYk4nq4ExZn --apply
+```
+
+`fix_threads_redirect_alias.mjs`는 아직 구현하지 않는다. 기존 데이터 보정 실행을 승인받은 뒤 별도 작업으로 만든다.
+
+### 보정 후 검증 기준
+
+```powershell
+node utils/query-sns.mjs get DYk4nq4ExZn --format json
+node utils/query-sns.mjs get DYizvvNE_Kf --format json
+python -c "import json; posts=json.load(open('output_total/total_full_20260623.json', encoding='utf-8-sig'))['posts']; print([p['code'] for p in posts if p.get('code') in ('DYk4nq4ExZn','DYizvvNE_Kf')])"
+```
+
+기대 결과:
+
+- `DYk4nq4ExZn`는 웹 카드로 조회되지 않거나 alias 상태로만 확인된다.
+- `DYizvvNE_Kf`는 본문과 이미지가 정상 연결된 canonical 글로 조회된다.
+- 대상 코드 확인 결과는 `['DYizvvNE_Kf']`만 남는다.
+- 웹 뷰어에서 깨진 `오트플랫 |` 카드가 사라진다.
+
+## 기존 문제 데이터 보정 실행 결과
+
+실행일: 2026-06-23 KST
+
+### 실행 내용
+
+- `scripts/fix_threads_redirect_alias.mjs`를 추가했다.
+  - `--dry-run`: 변경 예정 내역만 출력한다.
+  - `--apply`: 백업 생성 후 최신 simple/full/total 파일의 대상 alias 1건만 보정한다.
+- `.gitignore`에 `scripts/fix_threads_redirect_alias.mjs` 예외를 추가했다.
+- 보정 대상:
+  - alias: `DYk4nq4ExZn`
+  - canonical: `DYizvvNE_Kf`
+
+### 적용 결과
+
+| 대상 | 결과 |
+|---|---|
+| simple 최신 파일 | `DYk4nq4ExZn` 항목을 삭제하지 않고 `detail_status=duplicate_of_canonical`, `duplicate_of=DYizvvNE_Kf`로 표시 |
+| full 최신 파일 | `DYk4nq4ExZn` 별도 post 제거, `DYizvvNE_Kf`에 `redirect_aliases` 추가 |
+| total 최신 파일 | `DYk4nq4ExZn` 카드 제거, `DYizvvNE_Kf`만 남김 |
+| metadata | KST 기준 `updated_at` 반영, `total_count`와 플랫폼별 count를 현재 posts 기준으로 정합화 |
+
+백업 위치:
+
+```markdown
+D:\vibe-coding\scrap_sns\tmp\threads_redirect_alias_backup_20260623032230
+```
+
+### 실행 명령
+
+```powershell
+node scripts/fix_threads_redirect_alias.mjs DYk4nq4ExZn --dry-run
+node scripts/fix_threads_redirect_alias.mjs DYk4nq4ExZn --apply
+```
+
+### 검증 결과
+
+| 검증 | 결과 |
+|---|---|
+| `node utils/query-sns.mjs get DYk4nq4ExZn --format json` | `found: false` |
+| `node utils/query-sns.mjs get DYizvvNE_Kf --format json` | `found: true`, 본문/이미지/`redirect_aliases` 확인 |
+| 대상 코드 확인 | `['DYizvvNE_Kf']` |
+| simple alias 상태 | `duplicate_of_canonical:DYizvvNE_Kf` |
+| full alias count | `0` |
+| total alias count | `0` |
+| 보정 후 dry-run | `status: already_fixed` |
+| 웹 뷰어 API 목록 | `/api/posts` → total 1668, alias 0, canonical 1 |
+| 웹 뷰어 API 상세 | `/api/post/1638` → `DYizvvNE_Kf`, `local_images=1`, `redirect_aliases=1`, `root_code=DYizvvNE_Kf` |
+| unit test | `pytest tests/unit -q` → 127 passed |
+
+### 남은 확인
+
+- 브라우저 화면 직접 확인은 아직 수행하지 않았다.
+- 웹 뷰어 API 기준으로는 깨진 `DYk4nq4ExZn` 카드가 제거되었고, canonical `DYizvvNE_Kf`에 본문, 로컬 이미지, alias 연결 정보가 남아 있다.
+
+### done-check-lite 보완
+
+- 보정 후 `scripts/fix_threads_redirect_alias.mjs DYk4nq4ExZn --dry-run`이 `not_detected`로만 보이면 운영자가 미탐지로 오해할 수 있어, 보정 완료 상태에서는 `status: already_fixed`를 반환하도록 보완했다.
+- 보완 후 `pytest tests/unit -q`는 127 passed로 통과했다.
