@@ -20,6 +20,9 @@ DEFAULT_USER_AGENT = (
 class ThreadsFetchResult:
     html: str
     status_code: int
+    requested_url: str = ""
+    final_url: str = ""
+    redirect_chain: list[dict] | None = None
 
 
 def load_threads_cookies(auth_file: str | None = None) -> dict | None:
@@ -77,4 +80,20 @@ def fetch_thread_html(
 
     if response.status_code != 200:
         return None
-    return ThreadsFetchResult(html=response.text, status_code=response.status_code)
+
+    redirect_chain = [
+        {
+            "status_code": getattr(item, "status_code", None),
+            "url": getattr(item, "url", ""),
+            "location": getattr(item, "headers", {}).get("location"),
+        }
+        for item in getattr(response, "history", [])
+    ]
+
+    return ThreadsFetchResult(
+        html=response.text,
+        status_code=response.status_code,
+        requested_url=url,
+        final_url=getattr(response, "url", url),
+        redirect_chain=redirect_chain,
+    )

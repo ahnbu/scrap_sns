@@ -105,6 +105,65 @@ def merge_thread_items(thread_items):
     return normalize_post(merged_post)
 
 
+def _apply_redirect_metadata(items, result, requested_code, requested_username):
+    if not items:
+        return items
+
+    first = items[0]
+    requested_url = getattr(result, "requested_url", "") or ""
+    final_url = getattr(result, "final_url", "") or ""
+    redirected = bool(requested_url and final_url and requested_url != final_url)
+    code_mismatch = first.get("code") != requested_code
+    user_mismatch = first.get("username") != requested_username
+
+    if not redirected and not code_mismatch and not user_mismatch:
+        for item in items:
+            item["detail_status"] = item.get("detail_status") or "collected"
+        return items
+
+    canonical_code = first.get("code")
+    canonical_username = first.get("username")
+    for item in items:
+        item["detail_status"] = "redirected"
+        item["requested_url"] = requested_url
+        item["final_url"] = final_url
+        item["canonical_code"] = canonical_code
+        item["canonical_username"] = canonical_username
+    return items
+
+
+def _mark_simple_alias_duplicate(output_dir, alias_code, canonical_code, merged_data):
+    simple_files = glob.glob(os.path.join(output_dir, SIMPLE_FILE_PATTERN))
+    if not simple_files:
+        return False
+
+    simple_files.sort(reverse=True)
+    latest_simple_path = simple_files[0]
+    with open(latest_simple_path, "r", encoding="utf-8-sig") as file:
+        simple_data = json.load(file)
+
+    changed = False
+    for post in simple_data.get("posts", []):
+        if get_post_code(post) != alias_code:
+            continue
+        post["detail_status"] = "duplicate_of_canonical"
+        post["duplicate_of"] = canonical_code
+        post["canonical_code"] = canonical_code
+        if merged_data.get("canonical_username"):
+            post["canonical_username"] = merged_data.get("canonical_username")
+        if merged_data.get("requested_url"):
+            post["requested_url"] = merged_data.get("requested_url")
+        if merged_data.get("final_url"):
+            post["final_url"] = merged_data.get("final_url")
+        post["is_detail_collected"] = True
+        changed = True
+
+    if changed:
+        with open(latest_simple_path, "w", encoding="utf-8-sig") as file:
+            json.dump(simple_data, file, ensure_ascii=False, indent=4)
+    return changed
+
+
 def promote_to_full_history(grouped_data, output_dir=OUTPUT_DIR):
     """수집된 타래 데이터를 최신 Full DB 파일로 병합 및 승격시킵니다."""
     if not grouped_data:
@@ -133,11 +192,40 @@ def promote_to_full_history(grouped_data, output_dir=OUTPUT_DIR):
     updated_count = 0
     new_posts = []
     max_sequence_id = full_content.get("metadata", {}).get("max_sequence_id", 0)
+    existing_codes = {
+        code
+        for post in posts
+        if (code := (post.get("code") or post.get("platform_id")))
+    }
+    alias_updates_by_code = {}
 
     for post in posts:
-        code = post.get("code")
+        code = post.get("code") or post.get("platform_id")
         if code in merge_map:
             merged_data = merge_map[code]
+            canonical_code = (
+                merged_data.get("canonical_code")
+                or merged_data.get("code")
+                or merged_data.get("platform_id")
+            )
+            is_redirect_alias = merged_data.get("detail_status") == "redirected"
+            is_existing_canonical = (
+                bool(canonical_code)
+                and canonical_code in existing_codes
+                and canonical_code != code
+            )
+
+            if is_redirect_alias and is_existing_canonical:
+                alias = {
+                    "code": code,
+                    "url": post.get("url") or merged_data.get("requested_url") or "",
+                    "username": post.get("username") or post.get("user") or "",
+                }
+                alias_updates_by_code.setdefault(canonical_code, []).append(alias)
+                _mark_simple_alias_duplicate(output_dir, code, canonical_code, merged_data)
+                updated_count += 1
+                continue
+
             merged_data["sequence_id"] = post.get("sequence_id")
             merged_data["crawled_at"] = post.get("crawled_at")
             new_posts.append(merged_data)
@@ -148,6 +236,15 @@ def promote_to_full_history(grouped_data, output_dir=OUTPUT_DIR):
                 max_sequence_id = sequence_id
         else:
             new_posts.append(post)
+
+    for post in new_posts:
+        code = post.get("code") or post.get("platform_id")
+        if code not in alias_updates_by_code:
+            continue
+        aliases = post.setdefault("redirect_aliases", [])
+        for alias in alias_updates_by_code[code]:
+            if alias not in aliases:
+                aliases.append(alias)
 
     if updated_count > 0:
         full_content["posts"] = new_posts
@@ -202,6 +299,8 @@ def import_from_simple_database(output_dir=OUTPUT_DIR):
 
     new_items = []
     for post in simple_posts:
+        if post.get("detail_status") == "duplicate_of_canonical":
+            continue
         code = get_post_code(post)
         if not code or code in existing_codes:
             continue
@@ -306,7 +405,8 @@ def collect_one(
     data = extract_json_from_html(result.html)
     if not data:
         return []
-    return extract_items_multi_path(data, code, username)
+    items = extract_items_multi_path(data, code, username)
+    return _apply_redirect_metadata(items, result, code, username)
 
 
 def main(

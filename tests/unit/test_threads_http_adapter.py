@@ -116,6 +116,47 @@ def test_fetch_thread_html_wraps_200_response():
     assert result.status_code == 200
 
 
+def test_fetch_thread_html_records_redirect_metadata():
+    class Response:
+        status_code = 200
+        text = "<html>ok</html>"
+        url = "https://www.threads.com/@tonyahn_80/post/DYizvvNE_Kf"
+        history = [
+            type(
+                "History",
+                (),
+                {
+                    "status_code": 301,
+                    "url": "https://www.threads.com/@oatplat_/post/DYk4nq4ExZn",
+                    "headers": {
+                        "location": "https://www.threads.com/@tonyahn_80/post/DYizvvNE_Kf"
+                    },
+                },
+            )()
+        ]
+
+    def runner(url, cookies, headers, timeout, allow_redirects):
+        assert allow_redirects is True
+        return Response()
+
+    result = fetch_thread_html(
+        "https://www.threads.com/@oatplat_/post/DYk4nq4ExZn",
+        cookies={"sessionid": "ok"},
+        headers={},
+        runner=runner,
+    )
+
+    assert result.requested_url == "https://www.threads.com/@oatplat_/post/DYk4nq4ExZn"
+    assert result.final_url == "https://www.threads.com/@tonyahn_80/post/DYizvvNE_Kf"
+    assert result.redirect_chain == [
+        {
+            "status_code": 301,
+            "url": "https://www.threads.com/@oatplat_/post/DYk4nq4ExZn",
+            "location": "https://www.threads.com/@tonyahn_80/post/DYizvvNE_Kf",
+        }
+    ]
+
+
 def test_fetch_thread_html_returns_none_on_302():
     class Response:
         status_code = 302

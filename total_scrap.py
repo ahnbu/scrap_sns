@@ -476,6 +476,11 @@ def merge_results():
     threads_posts = threads_data.get('posts', []) if isinstance(threads_data, dict) else threads_data
     linkedin_posts = linkedin_data.get('posts', []) if isinstance(linkedin_data, dict) else linkedin_data
     twitter_posts = twitter_data.get('posts', []) if isinstance(twitter_data, dict) else twitter_data
+    threads_posts = [
+        post
+        for post in threads_posts
+        if post.get("detail_status") != "duplicate_of_canonical"
+    ]
 
     # 플랫폼 정규화 및 수집 순서 보존
     for p in threads_posts: 
