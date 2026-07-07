@@ -20,7 +20,7 @@ created: "2026-04-17 13:20"
 - 오케스트레이터: `total_scrap.py`
 - 뷰어 진입: `wscript sns_hub.vbs` 또는 `SNS허브_바로가기.lnk`
 - API 서버: `server.py`
-- 뷰어 상태: `web_viewer/sns_tags.json`, `web_viewer/sns_tag_catalog.json`, browser `localStorage`
+- 뷰어 상태: `web_viewer/sns_tags.json`, `web_viewer/sns_tag_catalog.json`, `web_viewer/sns_user_metadata.json`, browser `localStorage`
 
 현재 shipped HTML 진입점은 레포 루트 `index.html`이다. `server.py`는 `/api/*` 제공이 중심이며, `/` 라우트는 현재 로컬 런처 기준 진입점으로 가정하지 않는다.
 
@@ -40,6 +40,8 @@ created: "2026-04-17 13:20"
 - 통합본: `output_total/total_full_YYYYMMDD.json`
 - 게시물별 태그 저장소: `web_viewer/sns_tags.json`
 - 태그 카탈로그 저장소: `web_viewer/sns_tag_catalog.json`
+- 사용자 메타데이터 정본: `web_viewer/sns_user_metadata.json`
+- 사용자 메타데이터 캐시: `localStorage.sns_user_metadata`
 - 브라우저 상태: `localStorage`
 - 인증 런타임: `C:\Users\ahnbu\.config\auth\`
   - LinkedIn: `linkedin/storage_state.json`
@@ -154,6 +156,8 @@ REQUIRED_FIELDS = ["sns_platform", "username", "url", "created_at"]
 - 검색 매칭은 대소문자를 무시하고, `-`와 `_`를 공백처럼 정규화한 뒤 다단어 AND 부분일치를 적용한다. 오타 보정과 붙여쓰기 compact 검색은 지원하지 않는다.
 - 게시물별 태그는 `localStorage.sns_tags`와 `web_viewer/sns_tags.json`에 함께 저장된다.
 - 태그명, 강조 표시, alias/키워드는 `localStorage.sns_tag_catalog`와 `web_viewer/sns_tag_catalog.json`에 저장된다.
+- 별표, 숨김, 메모는 `post_key` 기준으로 `web_viewer/sns_user_metadata.json`에 저장된다.
+- `canonical_url`은 원문 열기와 legacy 상태 migration 보조값으로 보존한다.
 - 기존 `localStorage.sns_auto_tag_rules`는 첫 로드 때 태그 카탈로그 alias로 1회 병합된다.
 - 서버 API:
   - `/api/status`
@@ -165,6 +169,8 @@ REQUIRED_FIELDS = ["sns_platform", "username", "url", "created_at"]
   - `/api/save-tags`
   - `/api/get-tag-catalog`
   - `/api/save-tag-catalog`
+  - `/api/get-user-metadata`
+  - `/api/save-user-metadata`
   - `/api/run-scrap`
 - `migrateLegacyTagKeys()`는 예전 Threads URL 키를 현재 canonical 키로 이동시킨다.
 
