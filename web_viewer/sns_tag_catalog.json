@@ -59,7 +59,9 @@
         "primary": false,
         "aliases": [
             "perplexity",
-            "research"
+            "research",
+            "insane-search",
+            "인세인서치"
         ]
     },
     "마케팅": {
@@ -111,20 +113,25 @@
             "claude"
         ]
     },
-    "테스트": {
-        "primary": false,
-        "aliases": []
-    },
-    "하네스": {
-        "primary": false,
-        "aliases": [
-            "harness"
-        ]
-    },
     "프롬프트": {
         "primary": false,
         "aliases": [
             "prompt"
+        ]
+    },
+    "하네스": {
+        "primary": false,
+        "aliases": [
+            "harness",
+            "lazycodex",
+            "omo",
+            "omc"
+        ]
+    },
+    "코덱스": {
+        "primary": false,
+        "aliases": [
+            "codex"
         ]
     }
 }
