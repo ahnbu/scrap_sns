@@ -10,6 +10,7 @@ const projectRoot = path.resolve(__dirname, '..');
 const cliPath = path.join(projectRoot, 'utils', 'query-sns.mjs');
 const outputTotalDir = path.join(projectRoot, 'output_total');
 const tagsPath = path.join(projectRoot, 'web_viewer', 'sns_tags.json');
+const userMetadataPath = path.join(projectRoot, 'web_viewer', 'sns_user_metadata.json');
 
 function resolveLatestJson() {
   const candidates = fs
@@ -56,7 +57,11 @@ function main() {
   const latestData = loadJson(resolveLatestJson());
   const posts = Array.isArray(latestData) ? latestData : latestData.posts || [];
   const tags = loadJson(tagsPath);
+  const userMetadata = fs.existsSync(userMetadataPath) ? loadJson(userMetadataPath) : {};
   const firstTag = Object.values(tags).find((value) => Array.isArray(value) && value.length > 0)?.[0];
+  const noteEntry = Object.entries(userMetadata).find(([, value]) =>
+    value && typeof value === 'object' && String(value.note || '').includes('sinmb79')
+  );
 
   const help = runCli(['--help']);
   assert.equal(help.status, 0, `--help 실패\nSTDERR:\n${help.stderr}`);
@@ -100,6 +105,21 @@ function main() {
     assert.equal(payload.returned, 0);
     assert.deepEqual(payload.posts, []);
   });
+
+  if (noteEntry) {
+    expectSuccess(['search', 'sinmb79', '--limit', '5'], (payload) => {
+      assert.equal(payload.command, 'search');
+      assert.ok(payload.total_matches >= 1, 'note 검색 결과가 없습니다.');
+      assert.ok(
+        payload.posts.some((post) =>
+          String(post.note || '').includes('sinmb79') &&
+          Array.isArray(post.match_fields) &&
+          post.match_fields.includes('note')
+        ),
+        '검색 결과에 note 또는 note match field가 없습니다.'
+      );
+    });
+  }
 
   expectSuccess(['by-platform', 'threads', '--limit', '3'], (payload) => {
     assert.equal(payload.command, 'by-platform');

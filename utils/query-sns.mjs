@@ -8,6 +8,7 @@ const __dirname = path.dirname(__filename);
 const PROJECT_ROOT = path.resolve(__dirname, '..');
 const OUTPUT_TOTAL_DIR = path.join(PROJECT_ROOT, 'output_total');
 const TAGS_PATH = path.join(PROJECT_ROOT, 'web_viewer', 'sns_tags.json');
+const USER_METADATA_PATH = path.join(PROJECT_ROOT, 'web_viewer', 'sns_user_metadata.json');
 
 function printUsage() {
   process.stderr.write(`Usage: node utils/query-sns.mjs <command> [args] [options]
@@ -79,6 +80,15 @@ function loadTags() {
 
   const data = readJson(TAGS_PATH);
   return data && typeof data === 'object' ? data : {};
+}
+
+function loadUserMetadata() {
+  if (!fs.existsSync(USER_METADATA_PATH)) {
+    return {};
+  }
+
+  const data = readJson(USER_METADATA_PATH);
+  return data && typeof data === 'object' && !Array.isArray(data) ? data : {};
 }
 
 function normalizePlatformName(value = '') {
@@ -210,10 +220,33 @@ function resolvePostUrl(post) {
   return post.post_url || post.source_url || '';
 }
 
+function buildPostKey(post) {
+  const platform = normalizePlatformName(post.sns_platform);
+  const identifier = post.platform_id || post.code || post.urn;
+  if (platform && identifier) {
+    return `${platform}:${identifier}`;
+  }
+
+  const url = resolvePostUrl(post);
+  if (platform && url) {
+    return `${platform}:url:${url}`;
+  }
+  return url ? `url:${url}` : '';
+}
+
 function getTagsForPost(post, tagsMap) {
   const key = resolvePostUrl(post);
   const tags = key ? tagsMap[key] : [];
   return Array.isArray(tags) ? tags : [];
+}
+
+function getUserNoteForPost(post, userMetadata) {
+  const key = post.post_key || buildPostKey(post);
+  const entry = key ? userMetadata[key] : null;
+  if (!entry || typeof entry !== 'object') {
+    return '';
+  }
+  return String(entry.note || '').trim();
 }
 
 function createExcerpt(text, limit = 120) {
@@ -264,8 +297,14 @@ function resolveExportPath(options, exportCommand, keyword, format) {
   return path.join(parsed.dir, `${parsed.name}_${stamp}${parsed.ext}`);
 }
 
+function withOptionalNote(result, note) {
+  const trimmed = String(note || '').trim();
+  return trimmed ? { ...result, note: trimmed } : result;
+}
+
 function postToResult(post, tags, extras = {}) {
-  return {
+  const { note = '', ...restExtras } = extras;
+  return withOptionalNote({
     sequence_id: post.sequence_id ?? null,
     platform_id: post.platform_id || '',
     code: post.code || post.platform_id || '',
@@ -278,12 +317,13 @@ function postToResult(post, tags, extras = {}) {
     text_excerpt: createExcerpt(post.full_text, 140),
     media_count: Array.isArray(post.media) ? post.media.length : 0,
     tags,
-    ...extras,
-  };
+    ...restExtras,
+  }, note);
 }
 
 function postToExportResult(post, tags, extras = {}) {
-  return {
+  const { note = '', ...restExtras } = extras;
+  return withOptionalNote({
     sequence_id: post.sequence_id ?? null,
     platform_id: post.platform_id || '',
     code: post.code || post.platform_id || '',
@@ -297,8 +337,8 @@ function postToExportResult(post, tags, extras = {}) {
     media: Array.isArray(post.media) ? post.media : [],
     local_images: Array.isArray(post.local_images) ? post.local_images : [],
     tags,
-    ...extras,
-  };
+    ...restExtras,
+  }, note);
 }
 
 function renderMarkdownExport(payload, context) {
@@ -327,6 +367,9 @@ function renderMarkdownExport(payload, context) {
     lines.push(`- URL: ${post.url ? `[Original](${post.url})` : '없음'}`);
     lines.push(`- ID: ${post.platform_id || post.code || '없음'}`);
     lines.push(`- Tags: ${tags}`);
+    if (post.note) {
+      lines.push(`- Note: ${post.note}`);
+    }
     if (Array.isArray(post.match_fields) && post.match_fields.length > 0) {
       lines.push(`- Match fields: ${post.match_fields.join(', ')}`);
     }
@@ -384,18 +427,20 @@ function buildListEnvelope(command, basePosts, mappedPosts, extras = {}) {
   };
 }
 
-function cmdRecent(posts, tagsMap, options) {
+function cmdRecent(posts, tagsMap, userMetadata, options) {
   const filtered = sortByCreatedDesc(applyFilters(posts, options));
   const limit = Number.parseInt(options.positional[0], 10) || options.limit;
   const limited = limitPosts(filtered, limit);
   return buildListEnvelope(
     'recent',
     filtered,
-    limited.map((post) => postToResult(post, getTagsForPost(post, tagsMap)))
+    limited.map((post) => postToResult(post, getTagsForPost(post, tagsMap), {
+      note: getUserNoteForPost(post, userMetadata),
+    }))
   );
 }
 
-function cmdGet(posts, tagsMap, platformId) {
+function cmdGet(posts, tagsMap, userMetadata, platformId) {
   if (!platformId) {
     fail('get requires a platform_id');
   }
@@ -411,15 +456,15 @@ function cmdGet(posts, tagsMap, platformId) {
     command: 'get',
     found: true,
     platform_id: platformId,
-    post: {
+    post: withOptionalNote({
       ...found,
       url: resolvePostUrl(found),
       tags: getTagsForPost(found, tagsMap),
-    },
+    }, getUserNoteForPost(found, userMetadata)),
   };
 }
 
-function cmdByPlatform(posts, tagsMap, platform, options) {
+function cmdByPlatform(posts, tagsMap, userMetadata, platform, options) {
   const normalizedPlatform = normalizePlatformName(platform);
   if (!normalizedPlatform) {
     fail('by-platform requires a platform name');
@@ -433,12 +478,14 @@ function cmdByPlatform(posts, tagsMap, platform, options) {
   return buildListEnvelope(
     'by-platform',
     filtered,
-    limited.map((post) => postToResult(post, getTagsForPost(post, tagsMap))),
+    limited.map((post) => postToResult(post, getTagsForPost(post, tagsMap), {
+      note: getUserNoteForPost(post, userMetadata),
+    })),
     { platform: normalizedPlatform }
   );
 }
 
-function cmdByUser(posts, tagsMap, keyword, options) {
+function cmdByUser(posts, tagsMap, userMetadata, keyword, options) {
   const needle = String(keyword || '').trim().toLowerCase();
   if (!needle) {
     fail('by-user requires a username or display name keyword');
@@ -456,12 +503,14 @@ function cmdByUser(posts, tagsMap, keyword, options) {
   return buildListEnvelope(
     'by-user',
     filtered,
-    limited.map((post) => postToResult(post, getTagsForPost(post, tagsMap))),
+    limited.map((post) => postToResult(post, getTagsForPost(post, tagsMap), {
+      note: getUserNoteForPost(post, userMetadata),
+    })),
     { keyword }
   );
 }
 
-function cmdSearch(posts, tagsMap, keyword, options) {
+function cmdSearch(posts, tagsMap, userMetadata, keyword, options) {
   const normalizedKeyword = normalizeSearchText(keyword);
   if (!normalizedKeyword) {
     fail('search requires a keyword');
@@ -470,6 +519,7 @@ function cmdSearch(posts, tagsMap, keyword, options) {
   const matched = applyFilters(posts, options)
     .flatMap((post) => {
       const tags = getTagsForPost(post, tagsMap);
+      const note = getUserNoteForPost(post, userMetadata);
       const matchFields = [];
 
       if (matchesSearchText(post.full_text, keyword)) {
@@ -484,12 +534,15 @@ function cmdSearch(posts, tagsMap, keyword, options) {
       if (tags.some((tag) => matchesSearchText(tag, keyword))) {
         matchFields.push('tags');
       }
+      if (matchesSearchText(note, keyword)) {
+        matchFields.push('note');
+      }
 
       if (matchFields.length === 0) {
         return [];
       }
 
-      return [{ post, tags, matchFields }];
+      return [{ post, tags, note, matchFields }];
     })
     .sort((left, right) => extractSortValue(right.post).localeCompare(extractSortValue(left.post)));
 
@@ -497,12 +550,12 @@ function cmdSearch(posts, tagsMap, keyword, options) {
   return buildListEnvelope(
     'search',
     matched,
-    limited.map(({ post, tags, matchFields }) => postToResult(post, tags, { match_fields: matchFields })),
+    limited.map(({ post, tags, note, matchFields }) => postToResult(post, tags, { note, match_fields: matchFields })),
     { keyword }
   );
 }
 
-function cmdByTag(posts, tagsMap, tag, options) {
+function cmdByTag(posts, tagsMap, userMetadata, tag, options) {
   const needle = String(tag || '').trim().toLowerCase();
   if (!needle) {
     fail('by-tag requires a tag value');
@@ -518,7 +571,9 @@ function cmdByTag(posts, tagsMap, tag, options) {
   return buildListEnvelope(
     'by-tag',
     filtered,
-    limited.map((post) => postToResult(post, getTagsForPost(post, tagsMap))),
+    limited.map((post) => postToResult(post, getTagsForPost(post, tagsMap), {
+      note: getUserNoteForPost(post, userMetadata),
+    })),
     { tag }
   );
 }
@@ -620,20 +675,20 @@ function cmdStats(posts, tagsMap, dataFile, options, data) {
   };
 }
 
-function buildPayload({ data, posts, file, tagsMap, options }) {
+function buildPayload({ data, posts, file, tagsMap, userMetadata, options }) {
   switch (options.command) {
     case 'recent':
-      return cmdRecent(posts, tagsMap, options);
+      return cmdRecent(posts, tagsMap, userMetadata, options);
     case 'get':
-      return cmdGet(posts, tagsMap, options.positional[0]);
+      return cmdGet(posts, tagsMap, userMetadata, options.positional[0]);
     case 'search':
-      return cmdSearch(posts, tagsMap, options.positional[0], options);
+      return cmdSearch(posts, tagsMap, userMetadata, options.positional[0], options);
     case 'by-platform':
-      return cmdByPlatform(posts, tagsMap, options.positional[0], options);
+      return cmdByPlatform(posts, tagsMap, userMetadata, options.positional[0], options);
     case 'by-user':
-      return cmdByUser(posts, tagsMap, options.positional[0], options);
+      return cmdByUser(posts, tagsMap, userMetadata, options.positional[0], options);
     case 'by-tag':
-      return cmdByTag(posts, tagsMap, options.positional[0], options);
+      return cmdByTag(posts, tagsMap, userMetadata, options.positional[0], options);
     case 'tag':
       if (options.positional[0] !== 'list') {
         fail('supported tag subcommand: list');
@@ -682,6 +737,7 @@ function cmdExport(context, options) {
     const source = findSourcePost(context.posts, result);
     return source
       ? postToExportResult(source, result.tags || [], {
+          note: getUserNoteForPost(source, context.userMetadata),
           match_fields: result.match_fields || [],
         })
       : result;
@@ -757,7 +813,8 @@ function main() {
   try {
     const { data, posts, file } = loadPosts();
     const tagsMap = loadTags();
-    const context = { data, posts, file, tagsMap };
+    const userMetadata = loadUserMetadata();
+    const context = { data, posts, file, tagsMap, userMetadata };
 
     const payload = options.command === 'export'
       ? cmdExport(context, options)
