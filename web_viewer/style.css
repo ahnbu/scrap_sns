@@ -219,6 +219,100 @@ body.modal-open {
   transform: scale(1.1);
 }
 
+/* Note UI */
+.note-open-btn {
+  color: rgba(255, 255, 255, 0.45);
+  opacity: 0;
+  transition: opacity 0.2s ease, color 0.2s ease;
+}
+
+.glass-card:hover .note-open-btn,
+.note-open-btn:focus-visible {
+  opacity: 1;
+}
+
+.note-open-btn:hover {
+  color: white;
+}
+
+.note-wrapper {
+  margin-top: 0.25rem;
+}
+
+.note-wrapper:empty {
+  display: none;
+}
+
+.note-section,
+.note-editor {
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding-top: 0.75rem;
+}
+
+.note-title {
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 0.7rem;
+  margin-bottom: 0.35rem;
+}
+
+.note-text {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.8rem;
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+
+.note-input {
+  background: rgba(0, 0, 0, 0.24);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  color: white;
+  font-size: 0.8rem;
+  min-height: 72px;
+  outline: none;
+  padding: 0.65rem;
+  resize: vertical;
+  width: 100%;
+}
+
+.note-input:focus {
+  border-color: rgba(127, 13, 242, 0.55);
+}
+
+.note-actions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+  margin-top: 0.5rem;
+}
+
+.note-save-btn,
+.note-cancel-btn {
+  border-radius: 8px;
+  font-size: 0.75rem;
+  padding: 0.35rem 0.7rem;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.note-save-btn {
+  background: rgba(127, 13, 242, 0.8);
+  color: white;
+}
+
+.note-save-btn:hover {
+  background: rgba(127, 13, 242, 1);
+}
+
+.note-cancel-btn {
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.note-cancel-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: white;
+}
+
 /* Tag System Styles */
 .tag-container {
   display: flex;

@@ -2147,6 +2147,54 @@ ${item.body}
         });
     }
 
+    function renderNoteSection(container, post, options) {
+        const renderOptions = options || {};
+        const postKey = resolvePostKey(post);
+        const postUrl = resolvePostUrl(post);
+        const entry = userMetadata[postKey] || {};
+        const noteText = String(entry.note || '').trim();
+        const editing = Boolean(renderOptions.editing);
+
+        container.innerHTML = '';
+        if (!noteText && !editing) return;
+
+        if (editing) {
+            container.innerHTML = `
+                <div class="note-editor">
+                    <textarea class="note-input" rows="3" placeholder="메모 입력...">${escapeHtml(noteText)}</textarea>
+                    <div class="note-actions">
+                        <button class="note-save-btn" type="button">저장</button>
+                        <button class="note-cancel-btn" type="button">취소</button>
+                    </div>
+                </div>
+            `;
+            const input = container.querySelector('.note-input');
+            input.focus();
+            container.querySelector('.note-save-btn').addEventListener('click', async () => {
+                try {
+                    await persistUserMetadataMutation(() => {
+                        setUserMetadataEntry(userMetadata, post, { note: input.value.trim() });
+                    });
+                    renderNoteSection(container, post);
+                } catch (error) {
+                    console.error('Failed to save note:', error);
+                    alert('메모 저장에 실패했습니다.');
+                }
+            });
+            container.querySelector('.note-cancel-btn').addEventListener('click', () => {
+                renderNoteSection(container, post);
+            });
+            return;
+        }
+
+        container.innerHTML = `
+            <section class="note-section">
+                <div class="note-title">메모</div>
+                <p class="note-text">${escapeHtml(noteText)}</p>
+            </section>
+        `;
+    }
+
     function buildCopyText(post) {
         const fullText = post.full_text || post.full_text_preview || '';
         const postUrl = resolvePostUrl(post);
@@ -2371,6 +2419,7 @@ ${item.body}
         
         // --- URL Definition (Critical for event handlers) ---
         const postUrl = resolvePostUrl(post);
+        const postKey = resolvePostKey(post);
         const isFavorited = isPostFavorited(post);
         const isFolded = foldedPosts.has(postUrl);
         const isSelected = selectedPosts.has(postUrl);
@@ -2782,6 +2831,11 @@ ${item.body}
         tagContainer.className = 'tag-container';
         renderTags(tagContainer, postUrl);
         tagsWrapper.appendChild(tagContainer);
+
+        const noteWrapper = document.createElement('div');
+        noteWrapper.className = 'note-wrapper';
+        if (isFolded) noteWrapper.classList.add('hidden-content');
+        renderNoteSection(noteWrapper, post);
         
         article.appendChild(header);
         article.appendChild(content);
@@ -2789,18 +2843,27 @@ ${item.body}
             article.appendChild(imageDiv);
         }
         article.appendChild(tagsWrapper);
+        article.appendChild(noteWrapper);
 
         // --- Footer (Actions) ---
         const footer = document.createElement('div');
         footer.className = 'flex items-center gap-4 pt-3 mt-auto border-t border-white/5 text-gray-500 text-xs';
         if (isFolded) footer.classList.add('hidden-content');
         footer.innerHTML = `
+            <button class="note-open-btn" type="button" data-post-key="${escapeHtml(postKey)}" title="메모 추가">
+                <span class="note-open-label">+note</span>
+            </button>
             <a href="${escapeHtml(postUrl || '#')}" target="_blank" class="flex items-center gap-1 hover:text-primary transition-colors ml-auto">
                 <span>View Original</span>
                 <span class="material-symbols-outlined text-[16px]">open_in_new</span>
             </a>
         `;
         article.appendChild(footer);
+
+        footer.querySelector('.note-open-btn')?.addEventListener('click', (event) => {
+            event.stopPropagation();
+            renderNoteSection(noteWrapper, post, { editing: true });
+        });
 
         // *** Fold Toggle Handler ***
         const foldBtn = header.querySelector('.fold-btn');
@@ -2833,7 +2896,7 @@ ${item.body}
             }
             
             // Toggle hidden-content class on actual elements
-            const elementsToToggle = [content, tagsWrapper, footer];
+            const elementsToToggle = [content, tagsWrapper, noteWrapper, footer];
             if (imageDiv) elementsToToggle.push(imageDiv);
             
             elementsToToggle.forEach(el => {

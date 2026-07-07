@@ -133,3 +133,57 @@ def test_set_user_metadata_entry_updates_and_prunes_state():
     )
 
     assert run_node_json(node_script) == {}
+
+
+def test_set_note_prunes_empty_note():
+    node_script = textwrap.dedent(
+        _extract_helper_script()
+        + """
+        eval(extractFunction('pruneUserMetadataEntry'));
+        const favoriteOnly = pruneUserMetadataEntry({ favorite: true, note: '   ' });
+        const empty = pruneUserMetadataEntry({ note: '   ' });
+        console.log(JSON.stringify({ favoriteOnly, empty }));
+        """
+    )
+
+    assert run_node_json(node_script) == {
+        "favoriteOnly": {"favorite": True},
+        "empty": None,
+    }
+
+
+def test_render_note_section_displays_existing_note():
+    node_script = textwrap.dedent(
+        _extract_helper_script()
+        + """
+        const userMetadata = {
+          'threads:ABC123': {
+            canonical_url: 'https://www.threads.com/@alice/post/ABC123',
+            note: '확인할 인사이트'
+          }
+        };
+        function escapeHtml(value) {
+          return String(value)
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;');
+        }
+        eval(extractFunction('renderNoteSection'));
+        const container = { innerHTML: '' };
+        renderNoteSection(container, {
+          post_key: 'threads:ABC123',
+          canonical_url: 'https://www.threads.com/@alice/post/ABC123'
+        });
+        console.log(JSON.stringify({
+          hasTitle: container.innerHTML.includes('메모'),
+          hasNote: container.innerHTML.includes('확인할 인사이트')
+        }));
+        """
+    )
+
+    assert run_node_json(node_script) == {
+        "hasTitle": True,
+        "hasNote": True,
+    }
