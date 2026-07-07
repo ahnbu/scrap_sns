@@ -1,4 +1,4 @@
-from utils.post_meta import build_post_meta, canonicalize_url
+from utils.post_meta import build_post_key, build_post_meta, canonicalize_url
 
 
 def _make_post():
@@ -80,3 +80,33 @@ def test_canonicalize_url_normalizes_http_threads_host():
     post["url"] = "http://www.threads.net/@alice/post/ABC123"
 
     assert canonicalize_url(post) == "https://www.threads.com/@alice/post/ABC123"
+
+
+def test_build_post_key_prefers_platform_id():
+    post = {
+        "sns_platform": "twitter",
+        "platform_id": "12345",
+        "url": "https://x.com/user/status/12345",
+    }
+
+    assert build_post_key(post) == "x:12345"
+
+
+def test_build_post_key_uses_threads_code_when_platform_id_missing():
+    post = {
+        "sns_platform": "threads",
+        "code": "ABC123",
+        "username": "alice",
+        "url": "https://www.threads.com/@alice/post/ABC123",
+    }
+
+    assert build_post_key(post) == "threads:ABC123"
+
+
+def test_build_post_key_falls_back_to_canonical_url():
+    post = {
+        "sns_platform": "linkedin",
+        "url": "https://www.linkedin.com/feed/update/urn:li:activity:1/",
+    }
+
+    assert build_post_key(post) == "linkedin:url:https://www.linkedin.com/feed/update/urn:li:activity:1/"

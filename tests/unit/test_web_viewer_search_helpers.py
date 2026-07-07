@@ -15,6 +15,60 @@ def _run_node_json(node_script: str):
     return json.loads(completed.stdout.strip().splitlines()[-1])
 
 
+def test_resolve_post_key_prefers_post_key_then_platform_identifier():
+    node_script = textwrap.dedent(
+        """
+        const fs = require('fs');
+        const src = fs.readFileSync('web_viewer/script.js', 'utf8');
+
+        function extractFunction(name) {
+          const start = src.indexOf(`function ${name}(`);
+          if (start === -1) {
+            console.error(`${name} missing`);
+            process.exit(1);
+          }
+          let depth = 0;
+          let end = -1;
+          for (let i = start; i < src.length; i += 1) {
+            const ch = src[i];
+            if (ch === '{') depth += 1;
+            if (ch === '}') {
+              depth -= 1;
+              if (depth === 0) {
+                end = i + 1;
+                break;
+              }
+            }
+          }
+          if (end === -1) {
+            console.error(`${name} parse failure`);
+            process.exit(1);
+          }
+          return src.slice(start, end);
+        }
+
+        eval(extractFunction('resolvePostUrl'));
+        eval(extractFunction('normalizePostKeyPlatform'));
+        eval(extractFunction('resolvePostKey'));
+
+        console.log(JSON.stringify({
+          explicit: resolvePostKey({ post_key: 'threads:EXISTING', sns_platform: 'threads', platform_id: 'ABC123' }),
+          twitter: resolvePostKey({ sns_platform: 'twitter', platform_id: '12345', url: 'https://x.com/u/status/12345' }),
+          threadsCode: resolvePostKey({ sns_platform: 'threads', code: 'ABC123', username: 'alice' }),
+          fallbackUrl: resolvePostKey({ sns_platform: 'linkedin', url: 'https://www.linkedin.com/feed/update/urn:li:activity:1/' })
+        }));
+        """
+    )
+
+    payload = _run_node_json(node_script)
+    assert payload == {
+        "explicit": "threads:EXISTING",
+        "twitter": "x:12345",
+        "threadsCode": "threads:ABC123",
+        "fallbackUrl": "linkedin:url:https://www.linkedin.com/feed/update/urn:li:activity:1/",
+    }
+
+
 def test_get_server_platform_filter_skips_local_only_filters():
     node_script = textwrap.dedent(
         """

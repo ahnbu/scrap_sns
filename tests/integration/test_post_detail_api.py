@@ -59,6 +59,7 @@ def test_post_detail_api_returns_full_post(app, tmp_path, monkeypatch):
     payload = response.get_json()
     assert payload["full_text"] == "hello"
     assert payload["media"] == ["https://cdn.example.com/image.jpg"]
+    assert payload["post_key"] == "threads:ABC123"
     assert payload["canonical_url"] == "https://www.threads.com/@alice/post/ABC123"
     assert "_searchable" not in payload
     assert response.headers["Vary"] == "Accept-Encoding"

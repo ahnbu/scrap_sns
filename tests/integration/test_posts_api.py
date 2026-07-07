@@ -79,6 +79,7 @@ def test_posts_api_returns_meta_only(app, tmp_path, monkeypatch):
     assert [post["sequence_id"] for post in payload["posts"]] == [2, 1]
     post = payload["posts"][1]
 
+    assert post["post_key"] == "threads:ABC123"
     assert post["canonical_url"] == "https://www.threads.com/@alice/post/ABC123"
     assert "full_text" not in post
     assert "media" not in post

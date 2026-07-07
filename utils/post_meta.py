@@ -5,6 +5,7 @@ from urllib.parse import quote, urlsplit, urlunsplit
 
 META_FIELDS = [
     "sequence_id",
+    "post_key",
     "platform_id",
     "sns_platform",
     "code",
@@ -50,6 +51,31 @@ def canonicalize_url(post: dict) -> str:
     return raw_url
 
 
+def normalize_post_key_platform(platform: str) -> str:
+    value = str(platform or "").strip().lower()
+    if value in {"thread", "threads"}:
+        return "threads"
+    if value == "linkedin":
+        return "linkedin"
+    if value in {"x", "twitter", "x/twitter", "x_twitter"}:
+        return "x"
+    return value
+
+
+def build_post_key(post: dict) -> str:
+    platform = normalize_post_key_platform(post.get("sns_platform"))
+    identifier = post.get("platform_id") or post.get("code") or post.get("urn")
+    if platform and identifier:
+        return f"{platform}:{identifier}"
+
+    canonical_url = canonicalize_url(post)
+    if platform and canonical_url:
+        return f"{platform}:url:{canonical_url}"
+    if canonical_url:
+        return f"url:{canonical_url}"
+    return ""
+
+
 def build_thumbnail(post: dict) -> str | None:
     local_images = post.get("local_images") or []
     media = post.get("media") or []
@@ -70,6 +96,7 @@ def build_post_meta(post: dict) -> dict:
 
     enriched = {
         **post,
+        "post_key": build_post_key(post),
         "canonical_url": canonicalize_url(post),
         "full_text_preview": full_text[:200],
         "full_text_length": len(full_text),

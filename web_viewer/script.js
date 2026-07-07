@@ -2012,6 +2012,24 @@ ${item.body}
         return post.post_url || post.source_url || '';
     }
 
+    function normalizePostKeyPlatform(platform) {
+        const value = String(platform || '').trim().toLowerCase();
+        if (value === 'thread' || value === 'threads') return 'threads';
+        if (value === 'linkedin') return 'linkedin';
+        if (['x', 'twitter', 'x/twitter', 'x_twitter'].includes(value)) return 'x';
+        return value;
+    }
+
+    function resolvePostKey(post) {
+        if (post?.post_key) return String(post.post_key);
+        const platform = normalizePostKeyPlatform(post?.sns_platform);
+        const identifier = post?.platform_id || post?.code || post?.urn;
+        if (platform && identifier) return `${platform}:${identifier}`;
+        const postUrl = resolvePostUrl(post);
+        if (platform && postUrl) return `${platform}:url:${postUrl}`;
+        return postUrl ? `url:${postUrl}` : '';
+    }
+
     function buildCopyText(post) {
         const fullText = post.full_text || post.full_text_preview || '';
         const postUrl = resolvePostUrl(post);
