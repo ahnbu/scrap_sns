@@ -12,11 +12,11 @@ This file provides guidance to Claude Code when working in this repository.
 
 ```bash
 npm run view     # 권장 진입. wscript sns_hub.vbs -> http://localhost:5000/
-npm run start    # python server.py
+npm run start    # python scrap_sns_server.py
 npm run stop     # stop_viewer.bat
 ```
 
-`run_viewer.bat`는 보조 런처다. 현재 shipped HTML 진입점은 레포 루트 `index.html`이며, `server.py`는 API 제공이 중심이다.
+`run_viewer.bat`는 보조 런처다. 현재 shipped HTML 진입점은 레포 루트 `index.html`이며, `scrap_sns_server.py`는 API 제공이 중심이다. 런처는 5000번 포트의 기존 `scrap_sns_server.py` 프로세스만 종료한 뒤 항상 새 서버를 시작한다.
 
 ### 스크래핑 실행
 
@@ -73,7 +73,7 @@ pytest tests/smoke
 - `thread_scrap.py`, `thread_scrap_single.py`: Threads Producer/Consumer
 - `linkedin_scrap.py`: LinkedIn 저장 게시물 수집
 - `twitter_scrap.py`, `twitter_scrap_single.py`: X Producer/Consumer
-- `server.py`: `/api/status`, `/api/posts`, `/api/post/<sequence_id>`, `/api/search`, `/api/auto-tag/apply`, `/api/get-tags`, `/api/save-tags`, `/api/run-scrap`
+- `scrap_sns_server.py`: `/api/status`, `/api/posts`, `/api/post/<sequence_id>`, `/api/search`, `/api/auto-tag/apply`, `/api/get-tags`, `/api/save-tags`, `/api/run-scrap`
 - `index.html`: 현재 shipped 뷰어 진입점
 - `web_viewer/script.js`: 렌더링, 태그, 자동 태그, URL 정규화
 - `utils/post_schema.py`: Post 표준 스키마 단일 진실 원천

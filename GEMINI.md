@@ -11,7 +11,7 @@
 - 플랫폼: Threads, LinkedIn, X(Twitter)
 - 메인 오케스트레이터: `total_scrap.py`
 - 뷰어 진입: `wscript sns_hub.vbs` 또는 `SNS허브_바로가기.lnk`
-- API 서버: `server.py`
+- API 서버: `scrap_sns_server.py`
 
 ## 표준 Post 스키마
 
@@ -76,6 +76,6 @@ python migrate_threads_domain.py --dry-run
 
 ## 주의 사항
 
-- `server.py`는 현재 API 제공이 중심이다. shipped HTML 진입은 레포 루트 `index.html` 기준으로 이해한다.
+- `scrap_sns_server.py`는 현재 API 제공이 중심이다. shipped HTML 진입은 레포 루트 `index.html` 기준으로 이해한다. 런처는 5000번 포트의 기존 `scrap_sns_server.py` 프로세스만 종료한 뒤 항상 새 서버를 시작한다.
 - 태그는 `localStorage`와 `web_viewer/sns_tags.json`을 함께 사용한다.
 - X는 리다이렉트와 실제 사용자명 보정 때문에 URL과 본문이 단순 1:1이 아닐 수 있다.

@@ -18,10 +18,10 @@ created: "2026-04-17 13:25"
 ## 실행 엔트리
 
 - 권장 런처: `wscript sns_hub.vbs`
-- 서버 단독 실행: `python server.py`
+- 서버 단독 실행: `python scrap_sns_server.py`
 - 전체 수집: `python total_scrap.py --mode update` 또는 `--mode all`
 
-`sns_hub.vbs`는 `/api/status`를 확인하고 필요 시 서버를 백그라운드로 띄운 뒤 `http://localhost:5000/`를 연다. 현재 운영 흐름은 "HTTP 뷰어 + API 서버" 조합이다.
+`sns_hub.vbs`는 기존 `scrap_sns_server.py` 프로세스를 종료한 뒤 서버를 백그라운드로 다시 띄우고 `http://localhost:5000/`를 연다. 현재 운영 흐름은 "HTTP 뷰어 + API 서버" 조합이다.
 
 인증 런타임 정본은 `C:\Users\ahnbu\.config\auth`다. 레포의 `auth/`는 이 경로를 가리키는 junction이며, consumer는 repo-local auth 자산을 직접 정본으로 보지 않는다.
 
@@ -123,7 +123,7 @@ consumer 토큰이 없으면 상세 수집은 건너뛰고, simple 기반 메타
 
 ## 서버 역할
 
-`server.py`는 현재 아래 API만 안정적인 public surface로 본다.
+`scrap_sns_server.py`는 현재 아래 API만 안정적인 public surface로 본다.
 
 - `/api/status`
 - `/api/posts`

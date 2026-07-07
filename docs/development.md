@@ -9,7 +9,7 @@ created: "2026-04-17 13:20"
 
 ## 정본
 
-- 실행 진입점 정본: `sns_hub.vbs`, `server.py`, 레포 루트 `index.html`
+- 실행 진입점 정본: `sns_hub.vbs`, `scrap_sns_server.py`, 레포 루트 `index.html`
 - 표준 Post 스키마 정본: `utils/post_schema.py`
 - 로컬 조회 CLI 정본: `utils/query-sns.mjs`
 - Threads URL 정규화 정본: `utils/post_schema.py`, `utils/query-sns.mjs`, `web_viewer/script.js`
@@ -19,12 +19,12 @@ created: "2026-04-17 13:20"
 - 플랫폼 수집기: Threads, LinkedIn, X(Twitter)
 - 오케스트레이터: `total_scrap.py`
 - 뷰어 진입: `wscript sns_hub.vbs` 또는 `SNS허브_바로가기.lnk`
-- API 서버: `server.py`
+- API 서버: `scrap_sns_server.py`
 - 뷰어 상태: `web_viewer/sns_tags.json`, `web_viewer/sns_tag_catalog.json`, `web_viewer/sns_user_metadata.json`, browser `localStorage`
 
-현재 shipped HTML 진입점은 레포 루트 `index.html`이다. `server.py`는 `/api/*` 제공이 중심이며, `/` 라우트는 현재 로컬 런처 기준 진입점으로 가정하지 않는다.
+현재 shipped HTML 진입점은 레포 루트 `index.html`이다. `scrap_sns_server.py`는 `/api/*` 제공이 중심이며, `/` 라우트는 현재 로컬 런처 기준 진입점으로 가정하지 않는다.
 
-`sns_hub.vbs`와 `run_viewer.bat`는 `scripts/restart_viewer_server.ps1`을 통해 `/api/status`와 필수 API 신선도를 확인한다. 구버전 서버로 판단되면 5000번 포트를 점유한 `server.py` 프로세스만 종료하고 재시작한다.
+`sns_hub.vbs`와 `run_viewer.bat`는 `scripts/restart_viewer_server.ps1`을 통해 5000번 포트의 기존 `scrap_sns_server.py` 프로세스만 종료한 뒤 새 서버를 시작한다. 서버가 이미 정상 응답 중이어도 런처 실행 시 항상 재시작한다.
 
 ## 영구화 surface
 

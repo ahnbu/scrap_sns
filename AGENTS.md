@@ -3,7 +3,7 @@
 ## 프로젝트 구조 및 모듈 구성
 
 - 핵심 스크립트는 레포 루트에 위치: `thread_scrap.py`, `thread_scrap_single.py`, `linkedin_scrap.py`, `twitter_scrap.py`, `twitter_scrap_single.py`, `total_scrap.py`
-- 런처와 API: `sns_hub.vbs`, `run_viewer.bat`, `stop_viewer.bat`, `server.py`, `index.html`, `web_viewer/`
+- 런처와 API: `sns_hub.vbs`, `run_viewer.bat`, `stop_viewer.bat`, `scrap_sns_server.py`, `index.html`, `web_viewer/`
 - 출력 디렉토리: `output_threads/`, `output_twitter/`, `output_linkedin/`, `output_total/`
 
 ## 빌드·테스트·개발 명령어
@@ -12,7 +12,7 @@
 - Playwright 브라우저 설치: `playwright install chromium`
 - 필요 시 프런트엔드 자산용 의존성 설치: `npm install`
 - 로컬 실행:
-  - `npm run start` → `python server.py`
+  - `npm run start` → `python scrap_sns_server.py`
   - `npm run view` → `wscript sns_hub.vbs`
   - `npm run stop` → `stop_viewer.bat`
 - 크롤링:
@@ -49,7 +49,7 @@
   - `pytest tests/e2e/test_api_security.py`
   - `pytest tests/smoke`
 - CLI·서버 검색·태그·URL 정규화 변경 시 `node utils/query-sns.mjs --help`와 관련 unit test를 함께 확인한다.
-- `server.py`, `index.html`, `web_viewer/` 변경 후에는 현재 5000번 포트의 `server.py` 프로세스 시작 시각이 변경 파일 수정 시각보다 늦은지 확인한다. 구버전 서버가 떠 있으면 5000번 포트를 점유한 `server.py`만 재시작한 뒤 검증한다.
+- `scrap_sns_server.py`, `index.html`, `web_viewer/` 변경 후에는 `wscript sns_hub.vbs` 또는 `npm run view`로 5000번 서버를 재시작한 뒤 검증한다. 런처는 5000번 포트를 점유한 `scrap_sns_server.py`만 종료하고, 서버가 이미 정상 응답 중이어도 항상 새로 시작한다.
 - 검색·필터·태그·정렬 등 웹 뷰어 사용자 경험이 바뀌는 변경은 API/CLI 결과만으로 완료 판단하지 않는다. 실제 `http://localhost:5000/` 화면에서 사용자가 하는 순서대로 입력·클릭해 결과를 확인하고, 결과 화면 캡처를 증거로 남긴다.
 - SNS 수집·병합·이미지 반영 로직 변경 시 완료 기준은 최신 `output_total` 생성이 아니라 저장 데이터와 뷰어 반영의 일치다. 최소 검증은 `merge_results()` → `download_images()` → `validate_local_image_links()` 통과, 대상 ID가 최신 `output_total/total_full_YYYYMMDD.json`에 존재, 웹 뷰어 상단 총건수와 최신 JSON 게시글 수가 일치, 그리고 실제 뷰어 화면에서 대상 게시글이 확인되는 것이다.
 - 뷰어 결과가 사용자 제보와 다를 때는 최신 `output_total/total_full_YYYYMMDD.json` 경로·게시글 수, 웹 뷰어 상단 총건수, 실제 검색 화면의 표시 카드 수, 활성 플랫폼/태그/숨김 필터 상태를 함께 확인한다.
