@@ -9,7 +9,9 @@
     "stop": "stop_viewer.bat",
     "scrap:threads": "python thread_scrap.py",
     "scrap:linkedin": "python linkedin_scrap.py",
-    "scrap:all": "python total_scrap.py"
+    "scrap:all": "python total_scrap.py",
+    "cleanup:outputs": "node scripts/cleanup_old_output_json.mjs --dry-run",
+    "cleanup:outputs:apply": "node scripts/cleanup_old_output_json.mjs --apply"
   },
   "devDependencies": {
     "@tailwindcss/container-queries": "^0.1.1",

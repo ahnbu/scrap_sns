@@ -144,3 +144,86 @@ print(json.dumps({{"commands": launched_commands, "results": results}}, ensure_a
     assert payload["results"]["x"]["phases"]["consumer"]["status"] == "ok"
     assert payload["results"]["linkedin"]["status"] == "ok"
     assert payload["results"]["linkedin"]["phases"]["producer"]["status"] == "ok"
+
+
+def test_run_calls_cleanup_after_save_total_success(tmp_path):
+    script = r"""
+import json
+import total_scrap
+
+events = []
+
+def fake_run_scrapers_in_parallel(mode="update"):
+    events.append(["run_scrapers", mode])
+    return {"threads": {"status": "ok"}}
+
+def fake_merge_results():
+    events.append(["merge_results"])
+    return ([{"platform_id": "1", "media": []}], 1, 0, 0)
+
+def fake_download_images(posts):
+    events.append(["download_images", len(posts)])
+
+def fake_save_total(posts, threads_count, linkedin_count, twitter_count):
+    events.append(["save_total", len(posts), threads_count, linkedin_count, twitter_count])
+
+def fake_cleanup():
+    events.append(["cleanup"])
+    return True
+
+total_scrap.run_scrapers_in_parallel = fake_run_scrapers_in_parallel
+total_scrap.merge_results = fake_merge_results
+total_scrap.download_images = fake_download_images
+total_scrap.save_total = fake_save_total
+total_scrap.cleanup_old_output_json_after_success = fake_cleanup
+
+total_scrap.run(mode="update")
+print(json.dumps(events, ensure_ascii=False))
+"""
+
+    completed = _run_total_scrap_probe(script, tmp_path)
+
+    assert completed.returncode == 0, completed.stderr
+    assert json.loads(completed.stdout.strip().splitlines()[-1]) == [
+        ["run_scrapers", "update"],
+        ["merge_results"],
+        ["download_images", 1],
+        ["save_total", 1, 1, 0, 0],
+        ["cleanup"],
+    ]
+
+
+def test_run_does_not_cleanup_when_save_total_fails(tmp_path):
+    script = r"""
+import json
+import total_scrap
+
+events = []
+
+total_scrap.run_scrapers_in_parallel = lambda mode="update": {}
+total_scrap.merge_results = lambda: ([{"platform_id": "1", "media": []}], 1, 0, 0)
+total_scrap.download_images = lambda posts: events.append(["download_images"])
+
+def fake_save_total(*args):
+    events.append(["save_total"])
+    raise RuntimeError("save failed")
+
+def fake_cleanup():
+    events.append(["cleanup"])
+
+total_scrap.save_total = fake_save_total
+total_scrap.cleanup_old_output_json_after_success = fake_cleanup
+
+try:
+    total_scrap.run(mode="update")
+except RuntimeError as exc:
+    print(json.dumps({"error": str(exc), "events": events}, ensure_ascii=False))
+"""
+
+    completed = _run_total_scrap_probe(script, tmp_path)
+
+    assert completed.returncode == 0, completed.stderr
+    assert json.loads(completed.stdout.strip().splitlines()[-1]) == {
+        "error": "save failed",
+        "events": [["download_images"], ["save_total"]],
+    }

@@ -601,6 +601,35 @@ def download_images(posts):
     print(f"   ✅ 이미지 다운로드 완료: 신규 {count}개 저장, 기존 {linked_existing}개 연결됨.")
 
 
+def cleanup_old_output_json_after_success():
+    repo_root = os.path.dirname(os.path.abspath(__file__))
+    script_path = os.path.join(repo_root, "scripts", "cleanup_old_output_json.mjs")
+    if not os.path.exists(script_path):
+        print(f"⚠️ 오래된 운영 JSON 정리 스크립트를 찾을 수 없습니다: {script_path}")
+        return False
+
+    completed = subprocess.run(
+        ["node", script_path, "--apply"],
+        cwd=repo_root,
+        text=True,
+        encoding="utf-8",
+        errors="replace",
+        capture_output=True,
+        check=False,
+    )
+
+    if completed.stdout:
+        print(completed.stdout.strip())
+    if completed.stderr:
+        print(completed.stderr.strip())
+
+    if completed.returncode != 0:
+        print(f"⚠️ 오래된 운영 JSON 자동 정리에 실패했습니다. exit={completed.returncode}")
+        return False
+
+    return True
+
+
 def run(mode='update'):
     platform_results = {}
     try:
@@ -616,6 +645,7 @@ def run(mode='update'):
             download_images(posts)
             # 4. 최종 저장 및 정규화
             save_total(posts, threads_count, linkedin_count, twitter_count)
+            cleanup_old_output_json_after_success()
     finally:
         auth_required = [
             platform
