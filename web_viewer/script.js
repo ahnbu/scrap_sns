@@ -1919,7 +1919,8 @@ ${item.body}
 
             const postsSignature = postsRes.headers.get('ETag')
                 || `${allPosts.length}:${allPosts[0]?.canonical_url || ''}:${allPosts[allPosts.length - 1]?.canonical_url || ''}`;
-            const nextAutoTagSignature = `${postsSignature}:${JSON.stringify(tagCatalog)}`;
+            const noteSignature = buildUserNoteSignature(userMetadata);
+            const nextAutoTagSignature = `${postsSignature}:${JSON.stringify(tagCatalog)}:${noteSignature}`;
             if (localStorage.getItem('sns_auto_tag_last_signature') !== nextAutoTagSignature) {
                 const result = await applyAutoTagRules({ silent: true });
                 localStorage.setItem('sns_auto_tag_last_signature', nextAutoTagSignature);
@@ -2084,6 +2085,15 @@ ${item.body}
         return nextEntry;
     }
 
+    function buildUserNoteSignature(metadata) {
+        return JSON.stringify(
+            Object.entries(metadata || {})
+                .map(([key, entry]) => [key, String(entry?.note || '').trim()])
+                .filter(([, note]) => note)
+                .sort(([left], [right]) => left.localeCompare(right))
+        );
+    }
+
     function setUserMetadataEntry(metadata, post, changes) {
         const postKey = resolvePostKey(post);
         if (!postKey) return;
@@ -2174,6 +2184,7 @@ ${item.body}
                 try {
                     await persistUserMetadataMutation(() => {
                         setUserMetadataEntry(userMetadata, post, { note: input.value.trim() });
+                        localStorage.removeItem('sns_auto_tag_last_signature');
                     });
                     renderNoteSection(container, post);
                 } catch (error) {

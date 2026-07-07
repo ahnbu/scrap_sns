@@ -152,6 +152,26 @@ def test_set_note_prunes_empty_note():
     }
 
 
+def test_build_user_note_signature_uses_only_non_empty_notes():
+    node_script = textwrap.dedent(
+        _extract_helper_script()
+        + """
+        eval(extractFunction('buildUserNoteSignature'));
+        const signature = buildUserNoteSignature({
+          'threads:B': { note: '  second  ', favorite: true },
+          'threads:A': { note: 'first' },
+          'threads:C': { favorite: true },
+          'threads:D': { note: '   ' }
+        });
+        console.log(JSON.stringify({ signature }));
+        """
+    )
+
+    assert run_node_json(node_script) == {
+        "signature": '[[\"threads:A\",\"first\"],[\"threads:B\",\"second\"]]',
+    }
+
+
 def test_render_note_section_displays_existing_note():
     node_script = textwrap.dedent(
         _extract_helper_script()
