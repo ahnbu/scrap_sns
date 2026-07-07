@@ -51,6 +51,26 @@ def _write_total_payload(tmp_path):
     return target
 
 
+def _write_user_metadata(tmp_path):
+    viewer_dir = tmp_path / "web_viewer"
+    viewer_dir.mkdir()
+    metadata_path = viewer_dir / "sns_user_metadata.json"
+    metadata_path.write_text(
+        json.dumps(
+            {
+                "threads:ABC123": {
+                    "canonical_url": "https://www.threads.com/@alice/post/ABC123",
+                    "note": "분류 기준 note-only-marker",
+                    "updated_at": "2026-07-07T11:58:00+09:00",
+                }
+            },
+            ensure_ascii=False,
+        ),
+        encoding="utf-8",
+    )
+    return viewer_dir
+
+
 def _reset_posts_cache(server, monkeypatch, tmp_path):
     monkeypatch.setattr(server, "OUTPUT_TOTAL_DIR", str(tmp_path))
     monkeypatch.setattr(
@@ -93,6 +113,35 @@ def test_auto_tag_apply_uses_canonical_url_key(app, tmp_path, monkeypatch):
     assert payload["url_to_auto_tags"] == {
         "https://www.threads.com/@alice/post/ABC123": ["hello-tag"],
         "https://x.com/bob/status/999": ["hello-tag"],
+    }
+
+
+def test_auto_tag_apply_matches_user_note(app, tmp_path, monkeypatch):
+    import server
+
+    _write_total_payload(tmp_path)
+    viewer_dir = _write_user_metadata(tmp_path)
+    _reset_posts_cache(server, monkeypatch, tmp_path)
+    monkeypatch.setattr(server, "WEB_VIEWER_DIR", str(viewer_dir))
+
+    client = app.test_client()
+    response = client.post(
+        "/api/auto-tag/apply",
+        json={
+            "rules": [
+                {
+                    "keyword": "note-only-marker",
+                    "tag": "note-tag",
+                    "match_field": "all",
+                }
+            ]
+        },
+    )
+
+    assert response.status_code == 200
+    payload = response.get_json()
+    assert payload["url_to_auto_tags"] == {
+        "https://www.threads.com/@alice/post/ABC123": ["note-tag"]
     }
 
 

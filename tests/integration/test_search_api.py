@@ -68,6 +68,26 @@ def _write_total_payload(tmp_path):
     return target
 
 
+def _write_user_metadata(tmp_path):
+    viewer_dir = tmp_path / "web_viewer"
+    viewer_dir.mkdir()
+    metadata_path = viewer_dir / "sns_user_metadata.json"
+    metadata_path.write_text(
+        json.dumps(
+            {
+                "linkedin:SLIDES123": {
+                    "canonical_url": "https://www.linkedin.com/feed/update/urn:li:activity:123",
+                    "note": "note-only-marker sinmb79",
+                    "updated_at": "2026-07-07T11:58:00+09:00",
+                }
+            },
+            ensure_ascii=False,
+        ),
+        encoding="utf-8",
+    )
+    return viewer_dir
+
+
 def _reset_posts_cache(server, monkeypatch, tmp_path):
     monkeypatch.setattr(server, "OUTPUT_TOTAL_DIR", str(tmp_path))
     monkeypatch.setattr(
@@ -116,6 +136,23 @@ def test_search_api_matches_preheated_text(app, tmp_path, monkeypatch):
     payload = response.get_json()
     assert payload["total_matched"] == 1
     assert payload["posts"][0]["canonical_url"] == "https://www.threads.com/@alice/post/ABC123"
+
+
+def test_search_api_matches_user_note(app, tmp_path, monkeypatch):
+    import server
+
+    _write_total_payload(tmp_path)
+    viewer_dir = _write_user_metadata(tmp_path)
+    _reset_posts_cache(server, monkeypatch, tmp_path)
+    monkeypatch.setattr(server, "WEB_VIEWER_DIR", str(viewer_dir))
+
+    client = app.test_client()
+    response = client.get("/api/search", query_string={"q": "sinmb79", "limit": 10})
+
+    assert response.status_code == 200
+    payload = response.get_json()
+    assert payload["total_matched"] == 1
+    assert payload["posts"][0]["platform_id"] == "SLIDES123"
 
 
 def test_search_api_matches_hyphenated_terms_with_space_query(app, tmp_path, monkeypatch):

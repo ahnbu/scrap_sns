@@ -56,6 +56,9 @@ _POSTS_CACHE = {
     "path": None,
     "mtime": None,
     "size": None,
+    "metadata_path": None,
+    "metadata_mtime": None,
+    "metadata_size": None,
     "posts_full": None,
     "posts_meta": None,
     "etag": None,
@@ -711,16 +714,50 @@ def _get_latest_total_file():
     return files[0]
 
 
+def _get_user_metadata_path():
+    return os.path.join(WEB_VIEWER_DIR, "sns_user_metadata.json")
+
+
+def _get_file_state(path):
+    if not os.path.exists(path):
+        return {"path": path, "mtime": None, "size": None}
+    stat = os.stat(path)
+    return {"path": path, "mtime": stat.st_mtime_ns, "size": stat.st_size}
+
+
+def _load_user_metadata():
+    path = _get_user_metadata_path()
+    if not os.path.exists(path):
+        return {}
+    with open(path, "r", encoding="utf-8-sig") as f:
+        data = json.load(f)
+    return data if isinstance(data, dict) else {}
+
+
+def _get_user_note_for_post(post, user_metadata):
+    post_key = post.get("post_key") or build_post_meta(post).get("post_key")
+    if not post_key:
+        return ""
+    entry = user_metadata.get(post_key)
+    if not isinstance(entry, dict):
+        return ""
+    return str(entry.get("note") or "").strip()
+
+
 def _load_latest_posts():
     latest_file = _get_latest_total_file()
     stat = os.stat(latest_file)
     mtime = stat.st_mtime_ns
     size = stat.st_size
+    metadata_state = _get_file_state(_get_user_metadata_path())
 
     if (
         _POSTS_CACHE["path"] == latest_file
         and _POSTS_CACHE["mtime"] == mtime
         and _POSTS_CACHE["size"] == size
+        and _POSTS_CACHE.get("metadata_path") == metadata_state["path"]
+        and _POSTS_CACHE.get("metadata_mtime") == metadata_state["mtime"]
+        and _POSTS_CACHE.get("metadata_size") == metadata_state["size"]
         and _POSTS_CACHE["posts_full"] is not None
         and _POSTS_CACHE["posts_meta"] is not None
     ):
@@ -731,20 +768,24 @@ def _load_latest_posts():
 
     posts_full = []
     posts_meta = []
+    user_metadata = _load_user_metadata()
     for raw_post in data.get("posts", []):
         meta = build_post_meta(raw_post)
         meta["canonical_url"] = meta.get("canonical_url") or canonicalize_url(raw_post)
         meta = {field: meta.get(field) for field in META_FIELDS}
+        user_note = _get_user_note_for_post({**raw_post, **meta}, user_metadata)
         searchable_parts = [
             str(raw_post.get("full_text") or ""),
             str(raw_post.get("display_name") or ""),
             str(raw_post.get("username") or raw_post.get("user") or ""),
+            user_note,
         ]
         posts_full.append(
             {
                 **raw_post,
                 **meta,
                 "_searchable": _normalize_search_text(" ".join(part for part in searchable_parts if part)),
+                "_user_note": user_note,
             }
         )
         posts_meta.append(meta)
@@ -754,9 +795,12 @@ def _load_latest_posts():
             "path": latest_file,
             "mtime": mtime,
             "size": size,
+            "metadata_path": metadata_state["path"],
+            "metadata_mtime": metadata_state["mtime"],
+            "metadata_size": metadata_state["size"],
             "posts_full": posts_full,
             "posts_meta": posts_meta,
-            "etag": f'"{mtime}-{size}"',
+            "etag": f'"{mtime}-{size}-{metadata_state["mtime"]}-{metadata_state["size"]}"',
         }
     )
     return _POSTS_CACHE
@@ -1300,7 +1344,7 @@ def get_post_detail(sequence_id):
                     {
                         key: value
                         for key, value in post.items()
-                        if key != "_searchable"
+                        if key not in {"_searchable", "_user_note"}
                     }
                 )
         return jsonify({"error": "Post not found"}), 404
@@ -1383,7 +1427,10 @@ def apply_auto_tags():
                 if not keyword or not tag:
                     continue
 
-                haystack_parts = [str(post.get("full_text") or "")]
+                haystack_parts = [
+                    str(post.get("full_text") or ""),
+                    str(post.get("_user_note") or ""),
+                ]
                 if match_field == "all":
                     haystack_parts.extend(
                         [
