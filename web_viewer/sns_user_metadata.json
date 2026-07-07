@@ -1,0 +1,47 @@
+{
+    "linkedin:7450724116971827200": {
+        "canonical_url": "https://www.linkedin.com/feed/update/urn:li:activity:7450724116971827200?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7450724116971827200%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+        "note": "[ insane-search 오리지널 ]\nhttps://github.com/fivetaku/insane-search/tree/main\n\n[ insane-search Codex ]\nhttps://github.com/sinmb79/codex-insane-search/tree/main",
+        "updated_at": "2026-07-07T11:48:57.149+09:00"
+    },
+    "linkedin:7454452006481616897": {
+        "canonical_url": "https://www.linkedin.com/feed/update/urn:li:activity:7454452006481616897?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7454452006481616897%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+        "favorite": true,
+        "updated_at": "2026-07-07T11:46:58.113+09:00"
+    },
+    "linkedin:7455543753194459137": {
+        "canonical_url": "https://www.linkedin.com/feed/update/urn:li:activity:7455543753194459137?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7455543753194459137%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+        "favorite": true,
+        "updated_at": "2026-07-07T11:46:58.113+09:00"
+    },
+    "linkedin:7457613653937410048": {
+        "canonical_url": "https://www.linkedin.com/feed/update/urn:li:activity:7457613653937410048?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7457613653937410048%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+        "favorite": true,
+        "updated_at": "2026-07-07T11:46:58.113+09:00"
+    },
+    "linkedin:7459814731575578624": {
+        "canonical_url": "https://www.linkedin.com/feed/update/urn:li:activity:7459814731575578624?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7459814731575578624%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+        "favorite": true,
+        "updated_at": "2026-07-07T11:46:58.113+09:00"
+    },
+    "threads:DX1fon8j7pE": {
+        "canonical_url": "https://www.threads.com/@mjcho7/post/DX1fon8j7pE",
+        "favorite": true,
+        "updated_at": "2026-07-07T11:46:58.113+09:00"
+    },
+    "threads:DXVlb25CRU3": {
+        "canonical_url": "https://www.threads.com/@daon_k/post/DXVlb25CRU3",
+        "favorite": true,
+        "updated_at": "2026-07-07T11:46:58.112+09:00"
+    },
+    "threads:DXZH9DJia5p": {
+        "canonical_url": "https://www.threads.com/@sienna__ai/post/DXZH9DJia5p",
+        "hidden": true,
+        "updated_at": "2026-07-07T11:46:58.113+09:00"
+    },
+    "threads:DXvTwMRlH-r": {
+        "canonical_url": "https://www.threads.com/@jedisjasper/post/DXvTwMRlH-r",
+        "favorite": true,
+        "updated_at": "2026-07-07T11:46:58.113+09:00"
+    }
+}
