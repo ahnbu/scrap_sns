@@ -1,55 +1,155 @@
-from utils.common import load_json, save_json, clean_text, reorder_post, format_timestamp, parse_relative_time
+from utils.common import clean_text, load_json, save_json
 import json
 import sys
-import time
 import os
-import glob
-import re
 import argparse
-from datetime import datetime, timedelta
-from playwright.sync_api import sync_playwright
+import subprocess
+from pathlib import Path
+from datetime import datetime
 from utils.json_to_md import convert_json_to_md
-from utils.linkedin_parser import parse_linkedin_post, extract_urn_id
-from utils.auth_paths import linkedin_storage
-from utils.auth_status import exit_auth_required, is_orchestrated_run
+from utils.linkedin_parser import extract_urn_id
+from scripts.linkedin_opencli_shadow_parse import parse_shadow_raw
 
 # --- 설정 ---
 TARGET_URL = "https://www.linkedin.com/my-items/saved-posts/"
-LOGIN_URL = "https://www.linkedin.com/login"
-AUTH_FILE = str(linkedin_storage())
 DATA_DIR = "output_linkedin/python"
 UPDATE_DIR = os.path.join(DATA_DIR, "update")
-SAVED_POSTS_SELECTOR = ".entity-result__content-container"
-AUTH_RESOLUTION_TIMEOUT_MS = 20000
-AUTH_POLL_INTERVAL_MS = 500
-LINKEDIN_USER_AGENT = (
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-    "AppleWebKit/537.36 (KHTML, like Gecko) "
-    "Chrome/122.0.0.0 Safari/537.36"
-)
-
-# 스크랩 설정
-TARGET_LIMIT = 0       # 0 = 무제한
-CONSECUTIVE_EXISTING_LIMIT = 20  # update 모드에서 기수집 글이 연속 N건이면 중단
+OPENCLI_RUNTIME_DIR = os.path.join("output_linkedin", "opencli_runtime")
+OPENCLI_PRODUCTION_SESSION = "linkedin_saved_production"
 
 # CLI 인자 파싱
 CRAWL_MODE = "update only"  # 기본값 (__main__ 블록에서 CLI 인자로 덮어씀)
 CRAWL_START_TIME = datetime.now()
-INCLUDE_IMAGES = True # 이미지 크롤링 포함 여부
-
-# 브라우저 UI 설정
-WINDOW_X = 5000           # 화면 가로 위치 (모니터 왼쪽 기준 px)
-WINDOW_Y = 200         # 화면 세로 위치 (모니터 위쪽 기준 px)
-# viewport는 갱신기(scripts/auth_runtime/renew.py)와 sns_insight_update LinkedIn 수집기와
-# 동일하게 1280x1000으로 정렬한다. 본 세션 PoC(v3/v4/v5)가 이 viewport로 saved-posts 통과를
-# 확정했고, 갱신·수집 fingerprint 일관성을 유지하기 위함이다.
-WINDOW_WIDTH = 1280    # 브라우저 너비
-WINDOW_HEIGHT = 1000   # 브라우저 높이
 
 # --- 헬퍼 함수 ---
 
 
 # 로컬 clean_text 제거 (utils.common 사용)
+
+def configure_text_output(stream=None):
+    target = stream or sys.stdout
+    encoding = (getattr(target, "encoding", "") or "").lower()
+    if encoding and encoding != "utf-8" and hasattr(target, "reconfigure"):
+        target.reconfigure(encoding="utf-8", errors="replace")
+
+
+def get_opencli_command():
+    appdata = os.environ.get("APPDATA")
+    if appdata:
+        candidate = (
+            Path(appdata)
+            / "npm"
+            / "node_modules"
+            / "@jackwener"
+            / "opencli"
+            / "dist"
+            / "src"
+            / "main.js"
+        )
+        if candidate.exists():
+            return ["node", str(candidate)]
+    return ["opencli"]
+
+
+def parse_json_stdout(stdout):
+    text = (stdout or "").lstrip("\ufeff").strip()
+    if not text:
+        raise RuntimeError("OpenCLI command returned empty stdout")
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError as exc:
+        raise RuntimeError(f"OpenCLI command returned non-JSON stdout: {text[:200]}") from exc
+
+
+def run_opencli_whoami():
+    command = get_opencli_command() + [
+        "linkedin",
+        "whoami",
+        "--site-session",
+        "persistent",
+        "-f",
+        "json",
+    ]
+    result = subprocess.run(command, capture_output=True, text=True, encoding="utf-8")
+    if result.returncode != 0:
+        message = (result.stderr or result.stdout or "").strip()
+        raise RuntimeError(f"OpenCLI LinkedIn session is not logged in: {message}")
+
+    payload = parse_json_stdout(result.stdout)
+    if not payload.get("logged_in"):
+        raise RuntimeError("OpenCLI LinkedIn session is not logged in")
+    return payload
+
+
+def run_opencli_collector(crawl_start_time, session=OPENCLI_PRODUCTION_SESSION):
+    stamp = crawl_start_time.strftime("%Y%m%d_%H%M%S")
+    raw_dir = os.path.join(OPENCLI_RUNTIME_DIR, "raw", stamp)
+    command = [
+        "node",
+        "scripts/linkedin_opencli_shadow_collect.mjs",
+        "--session",
+        session,
+        "--url",
+        TARGET_URL,
+        "--out",
+        raw_dir,
+        "--until-exhausted",
+    ]
+    result = subprocess.run(command, capture_output=True, text=True, encoding="utf-8")
+    if result.returncode != 0:
+        message = (result.stderr or result.stdout or "").strip()
+        raise RuntimeError(f"OpenCLI LinkedIn collection failed: {message}")
+
+    summary = parse_json_stdout(result.stdout)
+    if int(summary.get("pages_collected") or 0) <= 0:
+        raise RuntimeError("OpenCLI collection returned no raw pages")
+    if int(summary.get("total_unique_activity_ids") or 0) <= 0:
+        raise RuntimeError("OpenCLI collection returned no activity IDs")
+    return raw_dir, summary
+
+
+def validate_opencli_payload(payload):
+    metadata = payload.get("metadata") or {}
+    if int(metadata.get("parsed_post_count") or 0) <= 0:
+        raise RuntimeError("OpenCLI parsed post count is zero")
+    if int(metadata.get("duplicate_platform_id_count") or 0) > 0:
+        raise RuntimeError("OpenCLI duplicate platform_id detected")
+    if int(metadata.get("parser_failed_count") or 0) > 0:
+        raise RuntimeError("OpenCLI parser failed for one or more posts")
+    if int(metadata.get("entity_without_save_state_count") or 0) > 0:
+        raise RuntimeError("OpenCLI SaveState verification failed")
+    if int(metadata.get("entity_without_cluster_reference_count") or 0) > 0:
+        raise RuntimeError("OpenCLI cluster reference verification failed")
+
+
+def collect_opencli_posts(crawl_start_time):
+    whoami = run_opencli_whoami()
+    print(f"✅ OpenCLI LinkedIn 로그인 확인: {whoami.get('site', 'linkedin')}")
+
+    raw_dir, collection_summary = run_opencli_collector(crawl_start_time)
+    print(
+        "📥 OpenCLI raw 수집 완료: "
+        f"{collection_summary.get('pages_collected')} pages, "
+        f"{collection_summary.get('total_unique_activity_ids')} unique IDs"
+    )
+
+    payload = parse_shadow_raw(raw_dir, crawl_start_time, require_save_state=True)
+    validate_opencli_payload(payload)
+    metadata = payload["metadata"]
+    print(
+        "✅ OpenCLI parse 검증 통과: "
+        f"parsed={metadata.get('parsed_post_count')}, "
+        f"duplicates={metadata.get('duplicate_platform_id_count')}, "
+        f"parser_failed={metadata.get('parser_failed_count')}"
+    )
+    metadata["opencli_collection"] = collection_summary
+    metadata["opencli_whoami"] = {
+        "site": whoami.get("site"),
+        "logged_in": whoami.get("logged_in"),
+        "public_id": whoami.get("public_id"),
+    }
+    return payload["posts"], metadata
+
 
 def get_post_identity(post):
     return post.get("platform_id") or post.get("code")
@@ -104,45 +204,6 @@ def merge_linkedin_full_posts(old_posts, scraped_posts, crawl_mode):
 
     return final_posts, new_items, merge_report
 
-def is_linkedin_auth_url(url):
-    normalized = (url or "").lower()
-    return any(
-        marker in normalized
-        for marker in (
-            "linkedin.com/login",
-            "linkedin.com/uas/login",
-            "linkedin.com/signup",
-            "authwall",
-            "/checkpoint/",
-            "/guest/",
-        )
-    )
-
-
-def has_saved_posts_content(page):
-    try:
-        return page.locator(SAVED_POSTS_SELECTOR).count() > 0
-    except Exception:
-        return False
-
-
-def wait_for_saved_posts_ready(page, timeout_ms=AUTH_RESOLUTION_TIMEOUT_MS):
-    deadline = time.monotonic() + (timeout_ms / 1000)
-    last_url = page.url
-
-    while time.monotonic() <= deadline:
-        last_url = page.url
-        if has_saved_posts_content(page):
-            return True, last_url
-        if "my-items/saved-posts" in last_url and not is_linkedin_auth_url(last_url):
-            return True, last_url
-        try:
-            page.wait_for_timeout(AUTH_POLL_INTERVAL_MS)
-        except Exception:
-            time.sleep(AUTH_POLL_INTERVAL_MS / 1000)
-
-    return False, last_url
-
 class LinkedinScraper:
     def __init__(self):
         self.posts = [] # collected data
@@ -176,141 +237,8 @@ class LinkedinScraper:
             if CRAWL_MODE == "update only":
                 print(
                     f"🔄 UPDATE ONLY 모드: 기존 {len(self.existing_codes)}건과 대조, "
-                    f"기수집 {CONSECUTIVE_EXISTING_LIMIT}건 연속 시 수집을 중단합니다."
+                    "OpenCLI 현재 저장목록과 보수 병합합니다."
                 )
-
-    def manage_login(self, page):
-        """로그인 처리 및 세션 관리"""
-        if os.path.exists(AUTH_FILE):
-            print(f"📂 세션 파일 로드: {AUTH_FILE}")
-            try:
-                page.goto(TARGET_URL)
-            except Exception as e:
-                print(f"⚠️ 페이지 이동 중 에러 (무시): {e}")
-
-            is_ready, current_url = wait_for_saved_posts_ready(page)
-            if is_ready:
-                print(f"✅ 세션 유효함 (URL: {current_url})")
-                return
-
-            if is_linkedin_auth_url(current_url):
-                print("⚠️ 세션 만료됨. 다시 로그인 필요.")
-            elif "about:blank" in current_url:
-                print("⚠️ 페이지가 로드되지 않았습니다 (about:blank). 재시도 중...")
-                page.goto(TARGET_URL)
-                is_ready, current_url = wait_for_saved_posts_ready(page)
-                if is_ready:
-                    print(f"✅ 세션 유효함 (URL: {current_url})")
-                    return
-                if "about:blank" in page.url:
-                     print("❌ 페이지 로드 실패.")
-            else:
-                print(f"⚠️ 저장된 게시물 페이지가 준비되지 않았습니다. (URL: {current_url})")
-
-        if is_linkedin_auth_url(page.url) or "about:blank" in page.url:
-            print("🚨 로그인이 필요하거나 페이지 로드에 실패했습니다! (수동 개입 필요)")
-            print(f"   현재 URL: {page.url}")
-            page.goto(LOGIN_URL)
-            print("   로그인을 완료하고 '저장된 게시물' 목록이 보이면 엔터키를 눌러주세요.")
-            if is_orchestrated_run():
-                exit_auth_required(
-                    "linkedin",
-                    reason="login_required",
-                    current_url=page.url,
-                    auth_file=AUTH_FILE,
-                )
-            if not sys.stdin.isatty():
-                print("❌ 비대화형 환경에서는 로그인을 완료할 수 없습니다. 대화형 터미널에서 실행하세요.")
-                sys.exit(1)
-            input(">>> 로그인 완료 후 Enter: ")
-            
-            page.context.storage_state(path=AUTH_FILE)
-            print("💾 새 세션 저장됨.")
-            
-            if page.url != TARGET_URL:
-                page.goto(TARGET_URL)
-                wait_for_saved_posts_ready(page)
-
-    def handle_response(self, response):
-        """네트워크 응답 가로채기 (GraphQL)"""
-        if TARGET_LIMIT > 0 and len(self.posts) >= TARGET_LIMIT:
-            return
-
-        url = response.url
-        # LinkedIn Voyager GraphQL 엔드포인트 체크
-        if "voyager/api/graphql" in url and response.request.method == "GET":
-            try:
-                # 쿼리 파라미터나 URL 패턴을 좀 더 정교하게 체크할 수도 있음
-                # 예: queryId=voyagerSearchDashClusters...
-                
-                resp_json = response.json()
-                
-                try:
-                    from utils.common import save_debug_snapshot
-                    save_debug_snapshot(resp_json, "linkedin", "json")
-                except Exception: pass
-
-                # 데이터 파싱 위임
-                self.process_network_data(resp_json)
-                
-            except Exception as e:
-                # JSON 파싱 실패 등은 조용히 무시 (다른 요청일 수 있음)
-                pass
-
-    def process_network_data(self, json_data):
-        """JSON 데이터에서 게시물 정보 추출"""
-        if "included" not in json_data:
-            return
-
-        included = json_data.get("included", [])
-        # 참조 해결을 위한 URN 맵 생성
-        self.urn_map = {item.get("entityUrn"): item for item in included if item.get("entityUrn")}
-
-        for item in included:
-            if item.get("$type") == "com.linkedin.voyager.dash.search.EntityResultViewModel":
-                self.extract_post_from_view_model(item)
-
-    def extract_post_from_view_model(self, item):
-        try:
-            if self.stopped_early:
-                return
-
-            entity_urn = item.get("entityUrn", "")
-            activity_id = extract_urn_id(entity_urn)
-            
-            if not activity_id or activity_id in self.collected_codes:
-                return
-
-            if activity_id in self.existing_codes:
-                if CRAWL_MODE == "update only":
-                    self.consecutive_existing_count += 1
-                    if self.consecutive_existing_count >= CONSECUTIVE_EXISTING_LIMIT:
-                        self.stopped_early = True
-                    return
-
-                # 이미지가 없는 기존 데이터라면 업데이트를 위해 통과 (선택 사항)
-                existing_post = self.existing_posts_map.get(activity_id, {})
-                if existing_post.get("media"):
-                    return
-
-            post_data = parse_linkedin_post(item, INCLUDE_IMAGES, CRAWL_START_TIME)
-            if not post_data:
-                return
-
-            # 💡 [개선] 기존 메타데이터 보존 로직
-            existing = self.existing_posts_map.get(activity_id)
-            if existing:
-                post_data['crawled_at'] = existing.get('crawled_at')
-                post_data['sequence_id'] = existing.get('sequence_id')
-
-            self.posts.append(post_data)
-            self.collected_codes.add(activity_id)
-            self.consecutive_existing_count = 0
-            print(f"   ⚡ [Network] [{activity_id}] ({post_data['date']}) {post_data['username']}: {post_data['full_text'][:20]}...")
-
-        except Exception as e:
-            # print(f"Error parsing item: {e}")
-            pass
 
     def get_latest_full_file(self):
         if not os.path.exists(DATA_DIR):
@@ -324,82 +252,10 @@ class LinkedinScraper:
 
     def run(self):
         start_time_dt = datetime.now()
-        print("🚀 링크드인 스크래퍼 시작 (Network 모드)")
-        
-        with sync_playwright() as p:
-            browser = p.chromium.launch(
-                headless=False,
-                args=[
-                    f"--window-position={WINDOW_X},{WINDOW_Y}",
-                    f"--window-size={WINDOW_WIDTH},{WINDOW_HEIGHT}"
-                ]
-            )
+        print("🚀 링크드인 스크래퍼 시작 (OpenCLI 기본 모드)")
 
-            try:
-                # viewport를 None으로 설정하면 브라우저 창 크기에 따라 자동으로 조절됨 (또는 고정값 사용 가능)
-                # 여기서는 창 크기와 비례하도록 설정하거나 특정 해상도 고정
-                context_options = {
-                    "viewport": {"width": WINDOW_WIDTH, "height": WINDOW_HEIGHT},
-                    "user_agent": LINKEDIN_USER_AGENT,
-                    "locale": "ko-KR",
-                }
-                if os.path.exists(AUTH_FILE):
-                    context_options["storage_state"] = AUTH_FILE
-
-                context = browser.new_context(**context_options)
-                page = context.new_page()
-
-                # 네트워크 이벤트 리스너 등록
-                page.on("response", self.handle_response)
-
-                self.manage_login(page)
-
-                print("📜 스크롤 및 데이터 수집 시작...")
-                no_new_data_count = 0
-                last_count = 0
-
-                # 초기 로딩 대기
-                time.sleep(5)
-
-                while TARGET_LIMIT == 0 or len(self.posts) < TARGET_LIMIT:
-                    # 1. 먼저 "결과 더보기" 버튼 찾기
-                    try:
-                        show_more_btn = page.locator('button:has-text("결과 더보기"), button:has-text("Show more results")')
-                        if show_more_btn.count() > 0:
-                            show_more_btn.first.click()
-                            print(f"   🔘 '결과 더보기' 버튼 클릭 (현재 {len(self.posts)}개)")
-                            time.sleep(3)
-                        else:
-                            # 2. 버튼이 없으면 스크롤
-                            page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-                            print(f"   ⬇️ 스크롤 다운... (현재 {len(self.posts)}개)")
-                            time.sleep(3)
-                    except Exception as e:
-                        # 버튼 찾기 실패 시 기본 스크롤
-                        page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-                        print(f"   ⬇️ 스크롤 다운... (현재 {len(self.posts)}개)")
-                        time.sleep(3)
-
-                    if self.stopped_early:
-                        print(f"🛑 기수집 {CONSECUTIVE_EXISTING_LIMIT}건 연속 확인하여 수집을 종료합니다.")
-                        break
-
-                    if len(self.posts) == last_count:
-                        no_new_data_count += 1
-                    else:
-                        no_new_data_count = 0
-                        last_count = len(self.posts)
-
-                    if no_new_data_count >= 5:
-                        print("🛑 더 이상 새로운 데이터가 없습니다.")
-                        break
-
-                    if TARGET_LIMIT > 0 and len(self.posts) >= TARGET_LIMIT:
-                        break
-
-                self.save_results()
-            finally:
-                browser.close()
+        self.posts, self.opencli_metadata = collect_opencli_posts(CRAWL_START_TIME)
+        self.save_results()
 
         end_time_dt = datetime.now()
         duration = end_time_dt - start_time_dt
@@ -418,30 +274,23 @@ class LinkedinScraper:
             print("ℹ️ 수집된 새로운 데이터가 없습니다.")
             return
 
-        # 1. 시퀀스 ID 부여 (신규 게시물만)
-        # crawled_at 기준 오름차순(과거->최신)으로 정렬하여 ID 순차 부여
-        new_posts = sorted([p for p in self.posts if p.get("sequence_id", 0) == 0], key=lambda x: x['crawled_at'])
-        for post in new_posts:
-            self.max_sequence_id += 1
-            post["sequence_id"] = self.max_sequence_id
+        date_str = CRAWL_START_TIME.strftime("%Y%m%d")
+        full_file, final_posts, new_items = self.update_full_version(date_str)
 
-        # 2. 업데이트 파일 저장 (타임스탬프 적용: YYYYMMDD_HHMMSS)
+        # 신규 수집된 것들만 업데이트 파일에 저장
         timestamp = CRAWL_START_TIME.strftime("%Y%m%d_%H%M%S")
         update_file = os.path.join(UPDATE_DIR, f"linkedin_python_update_{timestamp}.json")
-        
-        # 신규 수집된 것들만 저장 (index 부여)
-        recent_collected_posts = [p for p in self.posts if p.get('crawled_at', '').startswith(CRAWL_START_TIME.isoformat()[:10])]
         final_indexed_posts = []
-        for idx, post in enumerate(recent_collected_posts):
+        for idx, post in enumerate(new_items):
             final_indexed_posts.append({"index": idx + 1, **post})
 
         if final_indexed_posts:
             save_json(update_file, final_indexed_posts)
             print(f"💾 업데이트 데이터 저장 완료: {update_file} ({len(final_indexed_posts)}개)")
-        
-        # 3. 전체 데이터 병합 및 저장
-        date_str = CRAWL_START_TIME.strftime("%Y%m%d")
-        self.update_full_version(date_str)
+        else:
+            print("ℹ️ 신규 LinkedIn 저장글은 없습니다.")
+
+        print(f"✅ LinkedIn full 저장 기준: {full_file} (총 {len(final_posts)}개)")
 
     def update_full_version(self, date_str):
         print("🔄 전체 데이터 병합 중...")
@@ -460,26 +309,19 @@ class LinkedinScraper:
             else:
                 old_posts = old_data_obj
 
-        if CRAWL_MODE == "all":
-            final_posts, new_items, merge_report = merge_linkedin_full_posts(
-                old_posts,
-                self.posts,
-                CRAWL_MODE,
-            )
-            duplicate_count = len(self.posts) - len(new_items)
-        else:
-            # UPDATE 모드일 때는 기존에 없는 것만 추가
-            existing_codes = {p.get("platform_id") or p.get("code") for p in old_posts}
-            new_items = [p for p in self.posts if (p.get("platform_id") or p.get("code")) not in existing_codes]
-            duplicate_count = len(self.posts) - len(new_items)
-            final_posts = new_items + old_posts
-            merge_report = {
-                "crawl_mode": CRAWL_MODE,
-                "observed_existing_count": 0,
-                "unobserved_existing_count": 0,
-                "unobserved_existing_ids": [],
-            }
-        
+        final_posts, new_items, merge_report = merge_linkedin_full_posts(
+            old_posts,
+            self.posts,
+            CRAWL_MODE,
+        )
+        duplicate_count = len(self.posts) - len(new_items)
+
+        new_items.sort(key=lambda item: item.get("crawled_at", ""))
+        for post in new_items:
+            if not post.get("sequence_id"):
+                self.max_sequence_id += 1
+                post["sequence_id"] = self.max_sequence_id
+
         # sequence_id 기준으로 내림차순 정렬 (최신순)
         final_posts.sort(key=lambda x: x.get("sequence_id", 0), reverse=True)
 
@@ -502,6 +344,9 @@ class LinkedinScraper:
         # 메타데이터 구조 (JS 버전 참고)
         legacy_count = len([p for p in final_posts if "crawled_at" not in p])
         verified_count = len(final_posts) - legacy_count
+        opencli_metadata = getattr(self, "opencli_metadata", {}) or {}
+        opencli_collection = opencli_metadata.get("opencli_collection") or {}
+        opencli_whoami = opencli_metadata.get("opencli_whoami") or {}
 
         full_data = {
             "metadata": {
@@ -514,6 +359,17 @@ class LinkedinScraper:
                 "crawl_mode": CRAWL_MODE,
                 "legacy_data_count": legacy_count,
                 "verified_data_count": verified_count,
+                "collector": "opencli",
+                "opencli_logged_in": opencli_whoami.get("logged_in"),
+                "opencli_site": opencli_whoami.get("site"),
+                "opencli_public_id": opencli_whoami.get("public_id"),
+                "opencli_raw_pages": opencli_collection.get("pages_collected"),
+                "opencli_unique_activity_ids": opencli_collection.get("total_unique_activity_ids"),
+                "opencli_parsed_post_count": opencli_metadata.get("parsed_post_count"),
+                "opencli_duplicate_platform_id_count": opencli_metadata.get("duplicate_platform_id_count"),
+                "opencli_parser_failed_count": opencli_metadata.get("parser_failed_count"),
+                "opencli_entity_without_save_state_count": opencli_metadata.get("entity_without_save_state_count"),
+                "opencli_entity_without_cluster_reference_count": opencli_metadata.get("entity_without_cluster_reference_count"),
                 "all_mode_observed_existing_count": merge_report["observed_existing_count"],
                 "all_mode_unobserved_existing_count": merge_report["unobserved_existing_count"],
                 "merge_history": merge_history
@@ -526,8 +382,11 @@ class LinkedinScraper:
         
         # Markdown 자동 변환
         convert_json_to_md(full_file)
+        return full_file, final_posts, new_items
 
 if __name__ == "__main__":
+    configure_text_output(sys.stdout)
+    configure_text_output(sys.stderr)
     parser = argparse.ArgumentParser(description='LinkedIn 스크래퍼')
     parser.add_argument('--mode', choices=['all', 'update'], default='update', help='크롤링 모드')
     args = parser.parse_args()

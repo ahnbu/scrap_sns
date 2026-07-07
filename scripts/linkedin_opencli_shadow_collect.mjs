@@ -87,7 +87,9 @@ function fetchGraphqlPage(session, start, paginationToken) {
   const token = ${JSON.stringify(paginationToken)};
   const start = ${Number(start)};
   const csrf = (document.cookie.match(/JSESSIONID="?([^";]+)/) || [])[1] || "";
-  const variables = \`(start:\${start},paginationToken:\${encodeURIComponent(token)},query:(flagshipSearchIntent:SEARCH_MY_ITEMS_SAVED_POSTS))\`;
+  const variables = token
+    ? \`(start:\${start},paginationToken:\${encodeURIComponent(token)},query:(flagshipSearchIntent:SEARCH_MY_ITEMS_SAVED_POSTS))\`
+    : \`(start:\${start},query:(flagshipSearchIntent:SEARCH_MY_ITEMS_SAVED_POSTS))\`;
   const url = \`/voyager/api/graphql?variables=\${variables}&queryId=voyagerSearchDashClusters.a7a0567fa66c52d645b5ff2f960b92aa\`;
   const response = await fetch(url, {
     credentials: "include",
@@ -198,8 +200,37 @@ function main() {
   for (let pageIndex = 1; pageIndex <= maxPages; pageIndex += 1) {
     const entry = latestGraphqlEntry(getNetworkEntries(session, pageIndex === 1 ? "2m" : "45s"), seenUrls);
     if (!entry) {
-      if (pageIndex === 1) throw new Error("SEARCH_MY_ITEMS_SAVED_POSTS GraphQL entry not found");
-      noNewIdsAttempts += 1;
+      if (pageIndex === 1) {
+        const fetchedDetail = fetchGraphqlPage(session, 0, "");
+        seenUrls.add(fetchedDetail.url);
+        const fetchedCluster = extractCluster(fetchedDetail);
+        const fetchedIds = activityIdsFromDetail(fetchedDetail);
+        const before = seenIds.size;
+        fetchedIds.forEach((id) => seenIds.add(id));
+        const newIds = seenIds.size - before;
+        noNewIdsAttempts = newIds > 0 ? 0 : noNewIdsAttempts + 1;
+        const token = fetchedCluster?.metadata?.paginationToken || "";
+        const rawPath = dryRun ? "" : writeRaw(outDir, stamp, pageIndex, fetchedDetail);
+        pages.push({
+          page: pageIndex,
+          key: fetchedDetail.key,
+          raw_path: rawPath,
+          url: fetchedDetail.url,
+          start: fetchedCluster?.paging?.start ?? null,
+          count: fetchedCluster?.paging?.count ?? null,
+          total: fetchedCluster?.paging?.total ?? null,
+          metadata_total: fetchedCluster?.metadata?.totalResultCount ?? null,
+          pagination_token_present: Boolean(token),
+          unique_activity_ids_in_page: new Set(fetchedIds).size,
+          new_activity_ids: newIds,
+          response_size: fetchedDetail.size,
+        });
+        if (token) {
+          seenTokens.add(token);
+        }
+      } else {
+        noNewIdsAttempts += 1;
+      }
     } else {
       seenUrls.add(entry.url);
       const detail = getDetail(session, entry.key);
