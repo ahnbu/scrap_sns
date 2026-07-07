@@ -4,7 +4,7 @@
     "playwright-core": "^1.58.0"
   },
   "scripts": {
-    "start": "python server.py",
+    "start": "python scrap_sns_server.py",
     "view": "wscript sns_hub.vbs",
     "stop": "stop_viewer.bat",
     "scrap:threads": "python thread_scrap.py",

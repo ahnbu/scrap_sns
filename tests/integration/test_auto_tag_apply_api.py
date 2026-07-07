@@ -89,7 +89,7 @@ def _reset_posts_cache(server, monkeypatch, tmp_path):
 
 
 def test_auto_tag_apply_uses_canonical_url_key(app, tmp_path, monkeypatch):
-    import server
+    import scrap_sns_server as server
 
     _write_total_payload(tmp_path)
     _reset_posts_cache(server, monkeypatch, tmp_path)
@@ -117,7 +117,7 @@ def test_auto_tag_apply_uses_canonical_url_key(app, tmp_path, monkeypatch):
 
 
 def test_auto_tag_apply_matches_user_note(app, tmp_path, monkeypatch):
-    import server
+    import scrap_sns_server as server
 
     _write_total_payload(tmp_path)
     viewer_dir = _write_user_metadata(tmp_path)
@@ -146,7 +146,7 @@ def test_auto_tag_apply_matches_user_note(app, tmp_path, monkeypatch):
 
 
 def test_auto_tag_apply_returns_gzip_and_vary_for_large_json(app, tmp_path, monkeypatch):
-    import server
+    import scrap_sns_server as server
 
     _write_total_payload(tmp_path)
     _reset_posts_cache(server, monkeypatch, tmp_path)
@@ -189,7 +189,7 @@ def test_auto_tag_apply_returns_gzip_and_vary_for_large_json(app, tmp_path, monk
 
 
 def test_auto_tag_apply_merges_vary_with_origin_on_gzip(app, tmp_path, monkeypatch):
-    import server
+    import scrap_sns_server as server
 
     _write_total_payload(tmp_path)
     _reset_posts_cache(server, monkeypatch, tmp_path)

@@ -8,7 +8,7 @@ import requests
 from playwright.sync_api import Page, expect
 from werkzeug.serving import make_server
 
-from server import app as flask_app
+from scrap_sns_server import app as flask_app
 
 
 def _find_free_port():

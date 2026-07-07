@@ -1067,7 +1067,7 @@ document.addEventListener('DOMContentLoaded', () => {
             try {
                 const statusCheck = await fetch('/api/status').catch(() => null);
                 if (!statusCheck || !statusCheck.ok) {
-                    alert('Flask 서버가 실행되고 있지 않습니다. 터미널에서 "python server.py"를 실행해주세요.');
+                    alert('Flask 서버가 실행되고 있지 않습니다. 터미널에서 "python scrap_sns_server.py"를 실행해주세요.');
                     return;
                 }
 

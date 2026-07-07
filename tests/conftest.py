@@ -8,7 +8,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 # === Flask test client (보안 테스트용) ===
 @pytest.fixture(scope="session")
 def app():
-    from server import app as flask_app
+    from scrap_sns_server import app as flask_app
     flask_app.config['TESTING'] = True
     return flask_app
 
@@ -16,7 +16,7 @@ def app():
 @pytest.fixture
 def client(app, tmp_path):
     """Flask test client — WEB_VIEWER_DIR을 tmp_path로 교체하여 부작용 방지"""
-    import server
+    import scrap_sns_server as server
     original_dir = server.WEB_VIEWER_DIR
     original_progress_log_path = getattr(server, "SCRAP_PROGRESS_LOG_PATH", None)
     server.WEB_VIEWER_DIR = str(tmp_path)

@@ -2,7 +2,7 @@ import json
 
 
 def test_get_user_metadata_returns_empty_object_when_file_missing(app, tmp_path, monkeypatch):
-    import server
+    import scrap_sns_server as server
 
     monkeypatch.setattr(server, "WEB_VIEWER_DIR", str(tmp_path))
 
@@ -13,7 +13,7 @@ def test_get_user_metadata_returns_empty_object_when_file_missing(app, tmp_path,
 
 
 def test_save_and_get_user_metadata_roundtrip(app, tmp_path, monkeypatch):
-    import server
+    import scrap_sns_server as server
 
     monkeypatch.setattr(server, "WEB_VIEWER_DIR", str(tmp_path))
     client = app.test_client()
@@ -40,7 +40,7 @@ def test_save_and_get_user_metadata_roundtrip(app, tmp_path, monkeypatch):
 
 
 def test_save_user_metadata_rejects_array_payload(app, tmp_path, monkeypatch):
-    import server
+    import scrap_sns_server as server
 
     monkeypatch.setattr(server, "WEB_VIEWER_DIR", str(tmp_path))
 

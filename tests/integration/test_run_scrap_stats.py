@@ -30,7 +30,7 @@ def _make_process(wait_side_effect=None, output="scraping finished\n"):
 
 
 def test_stats_present_in_response(client, tmp_path, monkeypatch):
-    import server
+    import scrap_sns_server as server
 
     monkeypatch.setattr(server, "OUTPUT_TOTAL_DIR", str(tmp_path))
     _write_total_file(tmp_path, "20260416", total=100, threads=50, linkedin=30, twitter=20)
@@ -58,7 +58,7 @@ def test_stats_present_in_response(client, tmp_path, monkeypatch):
 
 
 def test_stats_delta_calculation(client, tmp_path, monkeypatch):
-    import server
+    import scrap_sns_server as server
 
     monkeypatch.setattr(server, "OUTPUT_TOTAL_DIR", str(tmp_path))
     _write_total_file(tmp_path, "20260416", total=100, threads=50, linkedin=30, twitter=20)
@@ -85,7 +85,7 @@ def test_stats_delta_calculation(client, tmp_path, monkeypatch):
 
 
 def test_stats_first_run_no_prior_file(client, tmp_path, monkeypatch):
-    import server
+    import scrap_sns_server as server
 
     monkeypatch.setattr(server, "OUTPUT_TOTAL_DIR", str(tmp_path))
 
@@ -110,7 +110,7 @@ def test_phased_summary_marks_auth_required_when_only_consumer_phase_reports_aut
     tmp_path,
     monkeypatch,
 ):
-    import server
+    import scrap_sns_server as server
 
     monkeypatch.setattr(server, "OUTPUT_TOTAL_DIR", str(tmp_path))
     _write_total_file(tmp_path, "20260416", total=100, threads=50, linkedin=30, twitter=20)
@@ -140,7 +140,7 @@ def test_run_scrap_suppresses_x_auth_required_when_signal_url_is_not_auth_page(
     tmp_path,
     monkeypatch,
 ):
-    import server
+    import scrap_sns_server as server
 
     monkeypatch.setattr(server, "OUTPUT_TOTAL_DIR", str(tmp_path))
     _write_total_file(tmp_path, "20260510", total=100, threads=50, linkedin=30, twitter=20)
@@ -180,7 +180,7 @@ def test_run_scrap_keeps_x_auth_required_when_signal_url_is_login_page(
     tmp_path,
     monkeypatch,
 ):
-    import server
+    import scrap_sns_server as server
 
     monkeypatch.setattr(server, "OUTPUT_TOTAL_DIR", str(tmp_path))
     _write_total_file(tmp_path, "20260510", total=100, threads=50, linkedin=30, twitter=20)
@@ -210,7 +210,7 @@ def test_run_scrap_keeps_x_auth_required_when_signal_url_is_login_page(
 
 
 def test_run_scrap_response_includes_platform_new_samples(client, tmp_path, monkeypatch):
-    import server
+    import scrap_sns_server as server
 
     monkeypatch.setattr(server, "OUTPUT_TOTAL_DIR", str(tmp_path))
     _write_total_file(
@@ -346,7 +346,7 @@ def test_run_scrap_response_includes_platform_new_samples(client, tmp_path, monk
 
 
 def test_run_scrap_records_filtered_progress_events(client, tmp_path, monkeypatch):
-    import server
+    import scrap_sns_server as server
 
     monkeypatch.setattr(server, "OUTPUT_TOTAL_DIR", str(tmp_path))
     _write_total_file(tmp_path, "20260416", total=100, threads=50, linkedin=30, twitter=20)
@@ -406,7 +406,7 @@ def test_run_scrap_records_filtered_progress_events(client, tmp_path, monkeypatc
 
 
 def test_run_scrap_records_progress_from_child_log_files(client, tmp_path, monkeypatch):
-    import server
+    import scrap_sns_server as server
 
     monkeypatch.setattr(server, "OUTPUT_TOTAL_DIR", str(tmp_path))
     monkeypatch.setattr(
@@ -456,7 +456,7 @@ def test_run_scrap_promotes_threads_new_and_retry_counts_with_elapsed_log(
     tmp_path,
     monkeypatch,
 ):
-    import server
+    import scrap_sns_server as server
 
     clock = {"value": 100.0}
     log_path = tmp_path / "threads.log"

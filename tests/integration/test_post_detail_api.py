@@ -33,7 +33,7 @@ def _write_total_payload(tmp_path):
 
 
 def test_post_detail_api_returns_full_post(app, tmp_path, monkeypatch):
-    import server
+    import scrap_sns_server as server
 
     _write_total_payload(tmp_path)
     monkeypatch.setattr(server, "OUTPUT_TOTAL_DIR", str(tmp_path))
@@ -66,7 +66,7 @@ def test_post_detail_api_returns_full_post(app, tmp_path, monkeypatch):
 
 
 def test_post_detail_missing_post_ignores_if_none_match(app, tmp_path, monkeypatch):
-    import server
+    import scrap_sns_server as server
 
     _write_total_payload(tmp_path)
     monkeypatch.setattr(server, "OUTPUT_TOTAL_DIR", str(tmp_path))
@@ -94,7 +94,7 @@ def test_post_detail_missing_post_ignores_if_none_match(app, tmp_path, monkeypat
 
 
 def test_post_detail_does_not_reuse_posts_etag(app, tmp_path, monkeypatch):
-    import server
+    import scrap_sns_server as server
 
     _write_total_payload(tmp_path)
     monkeypatch.setattr(server, "OUTPUT_TOTAL_DIR", str(tmp_path))
@@ -123,7 +123,7 @@ def test_post_detail_does_not_reuse_posts_etag(app, tmp_path, monkeypatch):
 
 
 def test_post_detail_returns_304_when_own_etag_matches(app, tmp_path, monkeypatch):
-    import server
+    import scrap_sns_server as server
 
     _write_total_payload(tmp_path)
     monkeypatch.setattr(server, "OUTPUT_TOTAL_DIR", str(tmp_path))

@@ -124,7 +124,7 @@ def test_search_api_rejects_blank_q_after_trim(app):
 
 
 def test_search_api_matches_preheated_text(app, tmp_path, monkeypatch):
-    import server
+    import scrap_sns_server as server
 
     _write_total_payload(tmp_path)
     _reset_posts_cache(server, monkeypatch, tmp_path)
@@ -139,7 +139,7 @@ def test_search_api_matches_preheated_text(app, tmp_path, monkeypatch):
 
 
 def test_search_api_matches_user_note(app, tmp_path, monkeypatch):
-    import server
+    import scrap_sns_server as server
 
     _write_total_payload(tmp_path)
     viewer_dir = _write_user_metadata(tmp_path)
@@ -156,7 +156,7 @@ def test_search_api_matches_user_note(app, tmp_path, monkeypatch):
 
 
 def test_search_api_matches_hyphenated_terms_with_space_query(app, tmp_path, monkeypatch):
-    import server
+    import scrap_sns_server as server
 
     _write_total_payload(tmp_path)
     _reset_posts_cache(server, monkeypatch, tmp_path)
@@ -171,7 +171,7 @@ def test_search_api_matches_hyphenated_terms_with_space_query(app, tmp_path, mon
 
 
 def test_search_api_matches_hyphenated_terms_with_hyphen_or_plural_query(app, tmp_path, monkeypatch):
-    import server
+    import scrap_sns_server as server
 
     _write_total_payload(tmp_path)
     _reset_posts_cache(server, monkeypatch, tmp_path)
@@ -187,7 +187,7 @@ def test_search_api_matches_hyphenated_terms_with_hyphen_or_plural_query(app, tm
 
 
 def test_search_api_does_not_treat_grap_as_grab_typo(app, tmp_path, monkeypatch):
-    import server
+    import scrap_sns_server as server
 
     _write_total_payload(tmp_path)
     _reset_posts_cache(server, monkeypatch, tmp_path)
@@ -201,7 +201,7 @@ def test_search_api_does_not_treat_grap_as_grab_typo(app, tmp_path, monkeypatch)
 
 
 def test_search_api_platform_all_behaves_like_no_filter(app, tmp_path, monkeypatch):
-    import server
+    import scrap_sns_server as server
 
     _write_total_payload(tmp_path)
     _reset_posts_cache(server, monkeypatch, tmp_path)
@@ -216,7 +216,7 @@ def test_search_api_platform_all_behaves_like_no_filter(app, tmp_path, monkeypat
 
 
 def test_search_api_platform_x_and_twitter_are_compatible(app, tmp_path, monkeypatch):
-    import server
+    import scrap_sns_server as server
 
     _write_total_payload(tmp_path)
     _reset_posts_cache(server, monkeypatch, tmp_path)
@@ -231,7 +231,7 @@ def test_search_api_platform_x_and_twitter_are_compatible(app, tmp_path, monkeyp
 
 
 def test_search_api_sort_sequence_orders_descending_sequence_id(app, tmp_path, monkeypatch):
-    import server
+    import scrap_sns_server as server
 
     _write_total_payload(tmp_path)
     _reset_posts_cache(server, monkeypatch, tmp_path)
@@ -245,7 +245,7 @@ def test_search_api_sort_sequence_orders_descending_sequence_id(app, tmp_path, m
 
 
 def test_search_api_returns_gzip_vary_and_query_specific_etag(app, tmp_path, monkeypatch):
-    import server
+    import scrap_sns_server as server
 
     _write_total_payload(tmp_path)
     _reset_posts_cache(server, monkeypatch, tmp_path)
@@ -263,7 +263,7 @@ def test_search_api_returns_gzip_vary_and_query_specific_etag(app, tmp_path, mon
 
 
 def test_search_api_merges_vary_with_origin_on_gzip(app, tmp_path, monkeypatch):
-    import server
+    import scrap_sns_server as server
 
     _write_total_payload(tmp_path)
     _reset_posts_cache(server, monkeypatch, tmp_path)
@@ -283,7 +283,7 @@ def test_search_api_merges_vary_with_origin_on_gzip(app, tmp_path, monkeypatch):
 
 
 def test_search_api_returns_304_when_if_none_match_matches(app, tmp_path, monkeypatch):
-    import server
+    import scrap_sns_server as server
 
     _write_total_payload(tmp_path)
     _reset_posts_cache(server, monkeypatch, tmp_path)

@@ -17,7 +17,7 @@ def test_ui():
     
     # We want to catch server logs if it fails
     server_process = subprocess.Popen(
-        [sys.executable, "-u", "server.py"],
+        [sys.executable, "-u", "scrap_sns_server.py"],
         env=env,
         stdout=subprocess.PIPE,
         stderr=subprocess.STDOUT,

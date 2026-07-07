@@ -51,7 +51,7 @@ def _write_total_payload(tmp_path):
 
 
 def test_posts_api_returns_meta_only(app, tmp_path, monkeypatch):
-    import server
+    import scrap_sns_server as server
 
     _write_total_payload(tmp_path)
     monkeypatch.setattr(server, "OUTPUT_TOTAL_DIR", str(tmp_path))
@@ -86,7 +86,7 @@ def test_posts_api_returns_meta_only(app, tmp_path, monkeypatch):
 
 
 def test_posts_api_returns_304_when_if_none_match_matches(app, tmp_path, monkeypatch):
-    import server
+    import scrap_sns_server as server
 
     _write_total_payload(tmp_path)
     monkeypatch.setattr(server, "OUTPUT_TOTAL_DIR", str(tmp_path))
@@ -115,7 +115,7 @@ def test_posts_api_returns_304_when_if_none_match_matches(app, tmp_path, monkeyp
 
 
 def test_posts_api_applies_sequence_sort(app, tmp_path, monkeypatch):
-    import server
+    import scrap_sns_server as server
 
     _write_total_payload(tmp_path)
     monkeypatch.setattr(server, "OUTPUT_TOTAL_DIR", str(tmp_path))
@@ -142,7 +142,7 @@ def test_posts_api_applies_sequence_sort(app, tmp_path, monkeypatch):
 
 
 def test_posts_api_applies_oldest_sort(app, tmp_path, monkeypatch):
-    import server
+    import scrap_sns_server as server
 
     _write_total_payload(tmp_path)
     monkeypatch.setattr(server, "OUTPUT_TOTAL_DIR", str(tmp_path))
@@ -169,7 +169,7 @@ def test_posts_api_applies_oldest_sort(app, tmp_path, monkeypatch):
 
 
 def test_posts_api_returns_304_for_weak_if_none_match(app, tmp_path, monkeypatch):
-    import server
+    import scrap_sns_server as server
 
     _write_total_payload(tmp_path)
     monkeypatch.setattr(server, "OUTPUT_TOTAL_DIR", str(tmp_path))
@@ -197,7 +197,7 @@ def test_posts_api_returns_304_for_weak_if_none_match(app, tmp_path, monkeypatch
 
 
 def test_posts_api_sets_vary_header_without_gzip(app, tmp_path, monkeypatch):
-    import server
+    import scrap_sns_server as server
 
     _write_total_payload(tmp_path)
     monkeypatch.setattr(server, "OUTPUT_TOTAL_DIR", str(tmp_path))
@@ -223,7 +223,7 @@ def test_posts_api_sets_vary_header_without_gzip(app, tmp_path, monkeypatch):
 
 
 def test_get_tags_is_not_304_from_posts_etag(app, tmp_path, monkeypatch):
-    import server
+    import scrap_sns_server as server
 
     _write_total_payload(tmp_path)
     monkeypatch.setattr(server, "OUTPUT_TOTAL_DIR", str(tmp_path))
