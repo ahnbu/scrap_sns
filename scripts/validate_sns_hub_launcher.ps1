@@ -1,17 +1,17 @@
 $ErrorActionPreference = 'Stop'
 
 $repoRoot = (Resolve-Path (Join-Path $PSScriptRoot '..')).Path
-$shortcutPath = Join-Path $repoRoot 'SNS허브_바로가기.lnk'
+$shortcutFile = Get-ChildItem -LiteralPath $repoRoot -Filter 'SNS*.lnk' | Select-Object -First 1
 $vbsPath = Join-Path $repoRoot 'sns_hub.vbs'
 $packageJsonPath = Join-Path $repoRoot 'package.json'
 $readmePath = Join-Path $repoRoot 'README.md'
 
-if (-not (Test-Path -LiteralPath $shortcutPath)) {
-    throw "Missing shortcut: $shortcutPath"
+if (-not $shortcutFile) {
+    throw "Missing SNS shortcut in: $repoRoot"
 }
 
 $shell = New-Object -ComObject WScript.Shell
-$shortcut = $shell.CreateShortcut($shortcutPath)
+$shortcut = $shell.CreateShortcut($shortcutFile.FullName)
 $expectedTarget = [Environment]::ExpandEnvironmentVariables('%WINDIR%\System32\wscript.exe')
 $expectedArguments = '"' + (Resolve-Path -LiteralPath $vbsPath).Path + '"'
 $expectedWorkingDirectory = (Resolve-Path -LiteralPath $repoRoot).Path
@@ -29,12 +29,8 @@ if ($shortcut.WorkingDirectory -ne $expectedWorkingDirectory) {
 }
 
 $vbsText = Get-Content -LiteralPath $vbsPath -Raw
-if ($vbsText -notmatch '/api/status') {
-    throw "sns_hub.vbs does not reference /api/status"
-}
-
-if ($vbsText -notmatch 'taskkill') {
-    throw "sns_hub.vbs does not contain port kill logic"
+if ($vbsText -notmatch 'restart_viewer_server\.ps1') {
+    throw "sns_hub.vbs does not reference restart_viewer_server.ps1"
 }
 
 if ($vbsText -notmatch 'cmd\s+/c.*start' -and $vbsText -notmatch 'explorer\.exe') {
@@ -46,8 +42,14 @@ if ($packageJson.scripts.view -ne 'wscript sns_hub.vbs') {
     throw "Unexpected package.json scripts.view: $($packageJson.scripts.view)"
 }
 
+$restartScriptPath = Join-Path $repoRoot 'scripts\restart_viewer_server.ps1'
+$restartScriptText = Get-Content -LiteralPath $restartScriptPath -Raw
+if ($restartScriptText -notmatch 'scrap_sns_server\.py') {
+    throw "restart_viewer_server.ps1 does not reference scrap_sns_server.py"
+}
+
 $readmeText = Get-Content -LiteralPath $readmePath -Raw
-foreach ($required in @('SNS허브_바로가기.lnk', 'sns_hub.vbs')) {
+foreach ($required in @('npm run view', 'sns_hub.vbs')) {
     if ($readmeText -notmatch [regex]::Escape($required)) {
         throw "README.md is missing: $required"
     }

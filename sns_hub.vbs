@@ -1,46 +1,23 @@
 Option Explicit
 
-Dim shell, fso, repoRoot, statusUrl, catalogUrl, indexUrl, restartScript, restartCommand
-Dim attempt
+Dim shell, fso, repoRoot, indexUrl, restartScript, restartCommand
 
 Set shell = CreateObject("WScript.Shell")
 Set fso = CreateObject("Scripting.FileSystemObject")
 
 repoRoot = fso.GetParentFolderName(WScript.ScriptFullName)
-statusUrl = "http://localhost:5000/api/status"
-catalogUrl = "http://localhost:5000/api/get-tag-catalog"
 indexUrl = "http://localhost:5000/"
 restartScript = repoRoot & "\scripts\restart_viewer_server.ps1"
 
 If fso.FileExists(restartScript) Then
     restartCommand = "powershell.exe -NoProfile -ExecutionPolicy Bypass -File " & Chr(34) & restartScript & Chr(34) & " -ProjectRoot " & Chr(34) & repoRoot & Chr(34)
     If shell.Run(restartCommand, 0, True) <> 0 Then
-        MsgBox "SNS Viewer 서버 재시작에 실패했습니다. stop_viewer.bat 실행 후 다시 시도하세요.", vbExclamation, "SNS Feed Viewer"
+        MsgBox "SNS Viewer 서버 재시작에 실패했습니다. 5000번 포트를 다른 프로세스가 사용 중이거나 구버전 server.py가 남아 있을 수 있습니다. 해당 프로세스를 종료한 뒤 다시 시도하세요.", vbExclamation, "SNS Feed Viewer"
         WScript.Quit 1
     End If
-ElseIf Not (IsServerReady(statusUrl) And IsServerReady(catalogUrl)) Then
-    shell.Run "cmd /c cd /d " & Chr(34) & repoRoot & Chr(34) & " && python server.py", 0, False
-
-    For attempt = 1 To 10
-        If IsServerReady(statusUrl) And IsServerReady(catalogUrl) Then
-            Exit For
-        End If
-        WScript.Sleep 1000
-    Next
+Else
+    shell.Run "cmd /c cd /d " & Chr(34) & repoRoot & Chr(34) & " && python scrap_sns_server.py", 0, False
+    WScript.Sleep 3000
 End If
 
 shell.Run "cmd /c start " & Chr(34) & Chr(34) & " " & indexUrl, 0, False
-
-Function IsServerReady(url)
-    On Error Resume Next
-
-    Dim http
-    Set http = CreateObject("MSXML2.XMLHTTP")
-    http.Open "GET", url, False
-    http.Send
-
-    IsServerReady = (Err.Number = 0 And http.Status = 200)
-
-    Err.Clear
-    On Error GoTo 0
-End Function

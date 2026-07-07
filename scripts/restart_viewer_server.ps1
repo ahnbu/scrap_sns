@@ -25,7 +25,7 @@ function Test-JsonEndpoint {
     }
 }
 
-function Test-ViewerServerFresh {
+function Test-ViewerServerReady {
     $baseUrl = "http://$HostName`:$Port"
     return (
         (Test-JsonEndpoint "$baseUrl/api/status") -and
@@ -47,8 +47,8 @@ function Stop-ViewerServerOnPort {
 
         $processInfo = Get-CimInstance Win32_Process -Filter "ProcessId = $processId" -ErrorAction SilentlyContinue
         $commandLine = [string]$processInfo.CommandLine
-        if ($commandLine -notmatch "server\.py") {
-            throw "Port $Port is used by PID $processId, but it does not look like server.py. CommandLine: $commandLine"
+        if ($commandLine -notmatch "scrap_sns_server\.py") {
+            throw "Port $Port is used by PID $processId, but it does not look like scrap_sns_server.py. CommandLine: $commandLine"
         }
 
         Stop-Process -Id $processId -Force
@@ -58,14 +58,9 @@ function Stop-ViewerServerOnPort {
 function Start-ViewerServer {
     Start-Process `
         -FilePath "python" `
-        -ArgumentList "server.py" `
+        -ArgumentList "scrap_sns_server.py" `
         -WorkingDirectory $ProjectRoot `
         -WindowStyle Hidden | Out-Null
-}
-
-if (Test-ViewerServerFresh) {
-    Write-Output "Viewer server is fresh on port $Port."
-    exit 0
 }
 
 Stop-ViewerServerOnPort
@@ -73,10 +68,10 @@ Start-ViewerServer
 
 for ($attempt = 1; $attempt -le 12; $attempt += 1) {
     Start-Sleep -Seconds 1
-    if (Test-ViewerServerFresh) {
+    if (Test-ViewerServerReady) {
         Write-Output "Viewer server restarted on port $Port."
         exit 0
     }
 }
 
-throw "Viewer server did not become fresh on port $Port."
+throw "Viewer server did not become ready on port $Port."

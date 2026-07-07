@@ -5,8 +5,8 @@ title SNS Feed Viewer Launcher
 
 echo ✨ SNS Feed Viewer를 시작합니다...
 
-:: 1. Flask 서버를 신선도 확인 후 시작/재시작
-echo 🚀 Flask 백엔드 서버를 확인하는 중...
+:: 1. Flask 서버를 항상 재시작
+echo 🚀 Flask 백엔드 서버를 재시작하는 중...
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0scripts\restart_viewer_server.ps1" -ProjectRoot "%~dp0"
 if errorlevel 1 (
     echo ❌ 서버 시작 또는 재시작에 실패했습니다.
