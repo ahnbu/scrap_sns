@@ -34,3 +34,21 @@ def test_restart_helper_always_restarts_only_scrap_sns_server_on_port_5000():
     assert "Stop-Process" in helper
     assert "taskkill /F /IM python.exe" not in helper
     assert "taskkill" not in helper.lower()
+
+
+def test_restart_helper_allows_one_time_legacy_server_py_migration():
+    helper = (PROJECT_ROOT / "scripts" / "restart_viewer_server.ps1").read_text(encoding="utf-8")
+    old_server_name = "server" + ".py"
+
+    assert "Test-LegacyViewerServer" in helper
+    assert old_server_name in helper
+    assert "Test-ViewerServerReady" in helper
+
+
+def test_sns_hub_failure_message_is_ascii_safe():
+    launcher = (PROJECT_ROOT / "sns_hub.vbs").read_text(encoding="utf-8")
+    msg_lines = [line.strip() for line in launcher.splitlines() if line.strip().startswith("MsgBox ")]
+
+    assert msg_lines
+    for line in msg_lines:
+        line.encode("ascii")

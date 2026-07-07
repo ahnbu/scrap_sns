@@ -33,6 +33,17 @@ function Test-ViewerServerReady {
     )
 }
 
+function Test-LegacyViewerServer {
+    param([string]$CommandLine)
+
+    $legacyServerPath = Join-Path $ProjectRoot "server.py"
+    return (
+        ($CommandLine -match "server\.py") -and
+        (-not (Test-Path -LiteralPath $legacyServerPath)) -and
+        (Test-ViewerServerReady)
+    )
+}
+
 function Get-ListeningProcessIds {
     Get-NetTCPConnection -LocalPort $Port -State Listen -ErrorAction SilentlyContinue |
         Select-Object -ExpandProperty OwningProcess -Unique
@@ -47,8 +58,10 @@ function Stop-ViewerServerOnPort {
 
         $processInfo = Get-CimInstance Win32_Process -Filter "ProcessId = $processId" -ErrorAction SilentlyContinue
         $commandLine = [string]$processInfo.CommandLine
-        if ($commandLine -notmatch "scrap_sns_server\.py") {
-            throw "Port $Port is used by PID $processId, but it does not look like scrap_sns_server.py. CommandLine: $commandLine"
+        $looksLikeCurrentViewer = $commandLine -match "scrap_sns_server\.py"
+        $looksLikeLegacyViewer = Test-LegacyViewerServer -CommandLine $commandLine
+        if (-not ($looksLikeCurrentViewer -or $looksLikeLegacyViewer)) {
+            throw "Port $Port is used by PID $processId, but it does not look like SNS viewer server. CommandLine: $commandLine"
         }
 
         Stop-Process -Id $processId -Force

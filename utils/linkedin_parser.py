@@ -5,6 +5,9 @@ from utils.common import clean_text, reorder_post
 # 게시물 미디어 URL 패턴 화이트리스트
 MEDIA_PATTERNS = [
     "feedshare-shrink_",               # 일반 이미지 게시글
+    "feedshare-image-high-res",        # OpenCLI saved-posts 고해상도 이미지
+    "feedshare-shrink_800",            # OpenCLI saved-posts 일반 이미지
+    "feedshare-shrink_1280",           # OpenCLI saved-posts 일반 이미지
     "image-shrink_",                    # 뉴스레터/기사 이미지
     "feedshare-document-cover-images_", # 슬라이드/PDF 커버
     "feedshare-document-images_",       # 슬라이드/PDF 이미지
