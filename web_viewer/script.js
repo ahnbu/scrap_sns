@@ -162,8 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const _inFlightDetails = new Set();
 
     // Load states from localStorage
-    const favorites = new Set(JSON.parse(localStorage.getItem('sns_favorites') || '[]'));
-    const invisiblePosts = new Set(JSON.parse(localStorage.getItem('sns_invisible_posts') || '[]'));
+    let userMetadata = JSON.parse(localStorage.getItem('sns_user_metadata') || '{}');
     const foldedPosts = new Set(JSON.parse(localStorage.getItem('sns_folded_posts') || '[]'));
     const postTags = JSON.parse(localStorage.getItem('sns_tags') || '{}');
     const tagTypes = JSON.parse(localStorage.getItem('sns_tag_types') || '{}');
@@ -281,37 +280,51 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     if (bulkFavoriteBtn) {
-        bulkFavoriteBtn.addEventListener('click', () => {
+        bulkFavoriteBtn.addEventListener('click', async () => {
             const selected = getCurrentSelectedPosts();
             if (selected.length === 0) {
                 clearSelection();
                 return;
             }
 
-            addSelectedUrlsToSet(favorites, getPostUrls(selected));
-            localStorage.setItem('sns_favorites', JSON.stringify([...favorites]));
+            try {
+                await persistUserMetadataMutation(() => {
+                    selected.forEach((post) => setUserMetadataEntry(userMetadata, post, { favorite: true }));
+                });
+            } catch (error) {
+                console.error('Failed to save bulk favorite state:', error);
+                alert('선택한 게시글의 별표 저장에 실패했습니다.');
+                return;
+            }
             updateGlobalTags();
             renderPosts();
         });
     }
 
     if (bulkUnfavoriteBtn) {
-        bulkUnfavoriteBtn.addEventListener('click', () => {
+        bulkUnfavoriteBtn.addEventListener('click', async () => {
             const selected = getCurrentSelectedPosts();
             if (selected.length === 0) {
                 clearSelection();
                 return;
             }
 
-            removeSelectedUrlsFromSet(favorites, getPostUrls(selected));
-            localStorage.setItem('sns_favorites', JSON.stringify([...favorites]));
+            try {
+                await persistUserMetadataMutation(() => {
+                    selected.forEach((post) => setUserMetadataEntry(userMetadata, post, { favorite: false }));
+                });
+            } catch (error) {
+                console.error('Failed to save bulk unfavorite state:', error);
+                alert('선택한 게시글의 별표 해제 저장에 실패했습니다.');
+                return;
+            }
             updateGlobalTags();
             renderPosts();
         });
     }
 
     if (bulkHideBtn) {
-        bulkHideBtn.addEventListener('click', () => {
+        bulkHideBtn.addEventListener('click', async () => {
             const selected = getCurrentSelectedPosts();
             if (selected.length === 0) {
                 clearSelection();
@@ -322,8 +335,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            addSelectedUrlsToSet(invisiblePosts, getPostUrls(selected));
-            localStorage.setItem('sns_invisible_posts', JSON.stringify([...invisiblePosts]));
+            try {
+                await persistUserMetadataMutation(() => {
+                    selected.forEach((post) => setUserMetadataEntry(userMetadata, post, { hidden: true }));
+                });
+            } catch (error) {
+                console.error('Failed to save bulk hidden state:', error);
+                alert('선택한 게시글 숨김 저장에 실패했습니다.');
+                return;
+            }
             clearSelection();
             renderPosts();
         });
@@ -1826,10 +1846,11 @@ ${item.body}
 
         try {
             const params = new URLSearchParams({ sort: getServerSortParam() });
-            const [postsRes, tagsRes, catalogRes] = await Promise.all([
+            const [postsRes, tagsRes, catalogRes, userMetadataRes] = await Promise.all([
                 fetch(`/api/posts?${params.toString()}`),
                 fetch('/api/get-tags'),
                 fetch('/api/get-tag-catalog'),
+                fetch('/api/get-user-metadata'),
             ]);
 
             if (!postsRes.ok) {
@@ -1839,6 +1860,7 @@ ${item.body}
             const data = await postsRes.json();
             const serverTags = tagsRes.ok ? await tagsRes.json() : {};
             const serverCatalog = catalogRes.ok ? normalizeTagCatalog(await catalogRes.json()) : {};
+            const serverUserMetadata = userMetadataRes.ok ? await userMetadataRes.json() : {};
 
             Object.assign(postTags, serverTags);
             Object.keys(postTags).forEach((url) => {
@@ -1855,6 +1877,24 @@ ${item.body}
             _inFlightDetails.clear();
 
             migrateLegacyTagKeys(allPosts);
+
+            userMetadata = (serverUserMetadata && typeof serverUserMetadata === 'object' && !Array.isArray(serverUserMetadata))
+                ? serverUserMetadata
+                : {};
+            localStorage.setItem('sns_user_metadata', JSON.stringify(userMetadata));
+
+            if (shouldMergeLegacyUserMetadata()) {
+                const migratedLegacyFavorites = JSON.parse(localStorage.getItem('sns_favorites') || '[]');
+                const migratedLegacyInvisiblePosts = JSON.parse(localStorage.getItem('sns_invisible_posts') || '[]');
+                mergeLegacyStateIntoUserMetadata(
+                    userMetadata,
+                    allPosts,
+                    migratedLegacyFavorites,
+                    migratedLegacyInvisiblePosts
+                );
+                await syncUserMetadataToServer();
+                localStorage.setItem('sns_user_metadata_legacy_migrated', 'true');
+            }
 
             const localCatalog = normalizeTagCatalog(JSON.parse(localStorage.getItem('sns_tag_catalog') || '{}'));
             const legacyRules = JSON.parse(localStorage.getItem('sns_auto_tag_rules') || '[]');
@@ -1973,15 +2013,15 @@ ${item.body}
     function getFilteredPosts() {
         const sourcePosts = searchResults ?? allPosts;
         return sourcePosts.filter((post) => {
-            const postUrl = resolvePostUrl(post);
             const matchesFilter =
                 currentFilter === 'all' ||
-                (currentFilter === 'favorites' ? favorites.has(postUrl) :
+                (currentFilter === 'favorites' ? isPostFavorited(post) :
                  (post.sns_platform || '').toLowerCase() === currentFilter ||
                  (currentFilter === 'x' && (post.sns_platform === 'twitter' || post.sns_platform === 'x')));
 
+            const postUrl = resolvePostUrl(post);
             const matchesTag = !currentTag || (postTags[postUrl] || []).includes(currentTag);
-            const matchesVisibility = !invisiblePosts.has(postUrl);
+            const matchesVisibility = !isPostHidden(post);
 
             return matchesFilter && matchesTag && matchesVisibility;
         });
@@ -2028,6 +2068,83 @@ ${item.body}
         const postUrl = resolvePostUrl(post);
         if (platform && postUrl) return `${platform}:url:${postUrl}`;
         return postUrl ? `url:${postUrl}` : '';
+    }
+
+    function getKstIsoString(now = new Date()) {
+        const offsetMs = 9 * 60 * 60 * 1000;
+        return new Date(now.getTime() + offsetMs).toISOString().replace('Z', '+09:00');
+    }
+
+    function pruneUserMetadataEntry(entry) {
+        const nextEntry = { ...entry };
+        if (!nextEntry.favorite) delete nextEntry.favorite;
+        if (!nextEntry.hidden) delete nextEntry.hidden;
+        if (!String(nextEntry.note || '').trim()) delete nextEntry.note;
+        if (!nextEntry.favorite && !nextEntry.hidden && !nextEntry.note) return null;
+        return nextEntry;
+    }
+
+    function setUserMetadataEntry(metadata, post, changes) {
+        const postKey = resolvePostKey(post);
+        if (!postKey) return;
+
+        const nextEntry = {
+            ...(metadata[postKey] || {}),
+            canonical_url: resolvePostUrl(post),
+            ...changes,
+            updated_at: getKstIsoString(),
+        };
+        const prunedEntry = pruneUserMetadataEntry(nextEntry);
+        if (prunedEntry) {
+            metadata[postKey] = prunedEntry;
+        } else {
+            delete metadata[postKey];
+        }
+    }
+
+    function isPostFavorited(post) {
+        return Boolean(userMetadata[resolvePostKey(post)]?.favorite);
+    }
+
+    function isPostHidden(post) {
+        return Boolean(userMetadata[resolvePostKey(post)]?.hidden);
+    }
+
+    function shouldMergeLegacyUserMetadata() {
+        return localStorage.getItem('sns_user_metadata_legacy_migrated') !== 'true';
+    }
+
+    function mergeLegacyStateIntoUserMetadata(metadata, posts, favoriteUrls, hiddenUrls) {
+        const postsByUrl = new Map();
+        posts.forEach((post) => {
+            const postKey = resolvePostKey(post);
+            const postUrl = resolvePostUrl(post);
+            if (postKey && postUrl) {
+                postsByUrl.set(postUrl, { post, postKey, postUrl });
+            }
+        });
+
+        favoriteUrls.forEach((url) => {
+            const item = postsByUrl.get(url);
+            if (!item) return;
+            metadata[item.postKey] = {
+                ...(metadata[item.postKey] || {}),
+                canonical_url: item.postUrl,
+                favorite: true,
+                updated_at: getKstIsoString(),
+            };
+        });
+
+        hiddenUrls.forEach((url) => {
+            const item = postsByUrl.get(url);
+            if (!item) return;
+            metadata[item.postKey] = {
+                ...(metadata[item.postKey] || {}),
+                canonical_url: item.postUrl,
+                hidden: true,
+                updated_at: getKstIsoString(),
+            };
+        });
     }
 
     function buildCopyText(post) {
@@ -2151,8 +2268,8 @@ ${item.body}
             filtered.sort((a, b) => b._seqId - a._seqId);
         } else if (currentSort === 'favorites') {
             filtered.sort((a, b) => {
-                const aFav = favorites.has(resolvePostUrl(a));
-                const bFav = favorites.has(resolvePostUrl(b));
+                const aFav = isPostFavorited(a);
+                const bFav = isPostFavorited(b);
                 if (aFav && !bFav) return -1;
                 if (!aFav && bFav) return 1;
                 return b._dateObj - a._dateObj;
@@ -2254,7 +2371,7 @@ ${item.body}
         
         // --- URL Definition (Critical for event handlers) ---
         const postUrl = resolvePostUrl(post);
-        const isFavorited = favorites.has(postUrl);
+        const isFavorited = isPostFavorited(post);
         const isFolded = foldedPosts.has(postUrl);
         const isSelected = selectedPosts.has(postUrl);
         if (isFolded) article.classList.add('minimized');
@@ -2352,13 +2469,22 @@ ${item.body}
         });
 
         const favBtn = header.querySelector('.favorite-btn');
-        favBtn.addEventListener('click', (e) => {
+        favBtn.addEventListener('click', async (e) => {
             e.stopPropagation();
-            const url = postUrl;
             const icon = favBtn.querySelector('span');
+            const wasFavorited = isPostFavorited(post);
             
-            if (favorites.has(url)) {
-                favorites.delete(url);
+            try {
+                await persistUserMetadataMutation(() => {
+                    setUserMetadataEntry(userMetadata, post, { favorite: !wasFavorited });
+                });
+            } catch (error) {
+                console.error('Failed to save favorite state:', error);
+                alert('별표 저장에 실패했습니다.');
+                return;
+            }
+
+            if (wasFavorited) {
                 icon.classList.remove('text-yellow-400', 'fill-1');
                 icon.classList.add('text-gray-500');
                 if (currentFilter === 'favorites') {
@@ -2368,7 +2494,6 @@ ${item.body}
                     setTimeout(() => renderPosts(), 200);
                 }
             } else {
-                favorites.add(url);
                 icon.classList.add('text-yellow-400', 'fill-1');
                 icon.classList.remove('text-gray-500');
                 
@@ -2380,7 +2505,6 @@ ${item.body}
                 ], { duration: 300, easing: 'cubic-bezier(0.175, 0.885, 0.32, 1.275)' });
             }
             
-        localStorage.setItem('sns_favorites', JSON.stringify([...favorites]));
             updateGlobalTags(); // Update global tags to reflect favorite/tag changes if needed (though favorites doesn't affect tags currently)
         });
 
@@ -2412,13 +2536,19 @@ ${item.body}
 
         // --- Invisible Toggle Handler ---
         const invisibleBtn = header.querySelector('.invisible-btn');
-        invisibleBtn.addEventListener('click', (e) => {
+        invisibleBtn.addEventListener('click', async (e) => {
             e.stopPropagation();
-            const url = postUrl;
             
             if (confirm('이 게시글을 피드에서 숨기시겠습니까? (추후 설정에서 복구 가능)')) {
-                invisiblePosts.add(url);
-                localStorage.setItem('sns_invisible_posts', JSON.stringify([...invisiblePosts]));
+                try {
+                    await persistUserMetadataMutation(() => {
+                        setUserMetadataEntry(userMetadata, post, { hidden: true });
+                    });
+                } catch (error) {
+                    console.error('Failed to save hidden state:', error);
+                    alert('숨김 저장에 실패했습니다.');
+                    return;
+                }
                 
                 // Add fade-out animation
                 article.style.opacity = '0';
@@ -2801,6 +2931,30 @@ ${item.body}
 
     // --- Management Modal Functions ---
     // --- Server Sync Functions ---
+    async function persistUserMetadataMutation(mutator) {
+        const previousMetadata = JSON.parse(JSON.stringify(userMetadata || {}));
+        mutator();
+        try {
+            await syncUserMetadataToServer();
+        } catch (error) {
+            userMetadata = previousMetadata;
+            localStorage.setItem('sns_user_metadata', JSON.stringify(userMetadata));
+            throw error;
+        }
+    }
+
+    async function syncUserMetadataToServer() {
+        localStorage.setItem('sns_user_metadata', JSON.stringify(userMetadata));
+        const response = await fetch('/api/save-user-metadata', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(userMetadata)
+        });
+        if (!response.ok) {
+            throw new Error(`Failed to sync user metadata: ${response.status}`);
+        }
+    }
+
     async function syncTagsToServer() {
         try {
             const tags = JSON.parse(localStorage.getItem('sns_tags') || '{}');
@@ -3266,8 +3420,9 @@ ${item.body}
     function renderInvisibleList() {
         invisiblePostsList.innerHTML = '';
         const noHiddenPosts = document.getElementById('noHiddenPosts');
+        const hiddenItems = allPosts.filter(post => isPostHidden(post));
         
-        if (invisiblePosts.size === 0) {
+        if (hiddenItems.length === 0) {
             noHiddenPosts.classList.remove('hidden');
             invisiblePostsList.classList.add('hidden');
             return;
@@ -3276,9 +3431,9 @@ ${item.body}
         noHiddenPosts.classList.add('hidden');
         invisiblePostsList.classList.remove('hidden');
 
-        const hiddenItems = allPosts.filter(post => invisiblePosts.has(resolvePostUrl(post)));
         hiddenItems.forEach(post => {
             const resolvedUrl = resolvePostUrl(post);
+            const postKey = resolvePostKey(post);
             const item = document.createElement('div');
             item.className = 'invisible-post-item w-full';
             const platform = (post.sns_platform || 'other').toLowerCase();
@@ -3293,17 +3448,22 @@ ${item.body}
                     <h4 class="truncate">${escapeHtml(post.display_name || post.username || post.user || 'Unknown')}</h4>
                     <p class="truncate text-xs opacity-60">${escapeHtml((getPostPreviewText(post) || 'No content').slice(0, 100))}</p>
                 </div>
-                <button class="restore-btn hover:scale-105 active:scale-95 transition-all shrink-0" data-url="${escapeHtml(resolvedUrl)}">
+                <button class="restore-btn hover:scale-105 active:scale-95 transition-all shrink-0" data-post-key="${escapeHtml(postKey)}" data-url="${escapeHtml(resolvedUrl)}">
                     Restore
                 </button>
             `;
             
-            item.querySelector('.restore-btn').addEventListener('click', (e) => {
-                const url = e.target.dataset.url;
-                invisiblePosts.delete(url);
-                localStorage.setItem('sns_invisible_posts', JSON.stringify([...invisiblePosts]));
-                renderInvisibleList();
-                renderPosts();
+            item.querySelector('.restore-btn').addEventListener('click', async () => {
+                try {
+                    await persistUserMetadataMutation(() => {
+                        setUserMetadataEntry(userMetadata, post, { hidden: false });
+                    });
+                    renderInvisibleList();
+                    renderPosts();
+                } catch (error) {
+                    console.error('Failed to restore hidden post:', error);
+                    alert('숨김 복구 저장에 실패했습니다.');
+                }
             });
             invisiblePostsList.appendChild(item);
         });
