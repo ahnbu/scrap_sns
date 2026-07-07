@@ -825,6 +825,47 @@ def save_tag_catalog():
         logging.exception("Failed to save tag catalog")
         return jsonify({"status": "error", "message": "Failed to save tag catalog"}), 500
 
+
+def _atomic_write_json(path, data):
+    directory = os.path.dirname(path)
+    os.makedirs(directory, exist_ok=True)
+    tmp_path = f"{path}.tmp"
+    with open(tmp_path, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=4, ensure_ascii=False)
+    os.replace(tmp_path, path)
+
+
+@app.route("/api/get-user-metadata", methods=["GET"])
+def get_user_metadata():
+    try:
+        export_path = os.path.join(WEB_VIEWER_DIR, "sns_user_metadata.json")
+        if not os.path.exists(export_path):
+            return jsonify({})
+        with open(export_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        if not isinstance(data, dict):
+            return jsonify({})
+        return jsonify(data)
+    except Exception:
+        logging.exception("Failed to load user metadata")
+        return jsonify({"error": "Failed to load user metadata"}), 500
+
+
+@app.route("/api/save-user-metadata", methods=["POST"])
+def save_user_metadata():
+    try:
+        data = request.get_json(silent=True)
+        if data is None:
+            return jsonify({"status": "error", "message": "No data received"}), 400
+        if not isinstance(data, dict):
+            return jsonify({"status": "error", "message": "Invalid data format: expected JSON object"}), 400
+        export_path = os.path.join(WEB_VIEWER_DIR, "sns_user_metadata.json")
+        _atomic_write_json(export_path, data)
+        return jsonify({"status": "success", "message": "User metadata saved successfully"})
+    except Exception:
+        logging.exception("Failed to save user metadata")
+        return jsonify({"status": "error", "message": "Failed to save user metadata"}), 500
+
 @app.route('/api/latest-data', methods=['GET'])
 def get_latest_data():
     try:

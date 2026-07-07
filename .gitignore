@@ -21,6 +21,8 @@ output_threads/js/
 output_threads/python/update/
 output_total/update/
 web_viewer/images/
+web_viewer/sns_user_metadata.json
+web_viewer/sns_user_metadata.json.tmp
 output_linkedin_user/temp/
 output_linkedin_user/*/update/
 output_linkedin_user/*/python/update/
