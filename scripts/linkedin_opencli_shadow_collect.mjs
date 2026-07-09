@@ -61,6 +61,10 @@ function browser(session, commandArgs, options = {}) {
   return runOpenCli(["browser", session, ...commandArgs], options);
 }
 
+function closeBrowserSession(session) {
+  browser(session, ["close"]);
+}
+
 function sleep(seconds) {
   browser("_noop", ["wait", "time", String(seconds)]).catch?.(() => {});
 }
@@ -173,9 +177,12 @@ function readRaw(rawPath) {
   return readFileSync(rawPath, "utf8").replace(/^\uFEFF/, "");
 }
 
+let activeSession = "";
+
 function main() {
   const args = parseArgs(process.argv.slice(2));
   const session = args.session;
+  activeSession = session;
   const url = args.url;
   const outDir = args.out || "output_linkedin/opencli_shadow/raw";
   const stamp = timestamp();
@@ -370,5 +377,13 @@ try {
   main();
 } catch (error) {
   console.error(error.message);
-  process.exit(1);
+  process.exitCode = 1;
+} finally {
+  if (activeSession) {
+    try {
+      closeBrowserSession(activeSession);
+    } catch (error) {
+      console.error(`OpenCLI browser cleanup failed: ${error.message}`);
+    }
+  }
 }
