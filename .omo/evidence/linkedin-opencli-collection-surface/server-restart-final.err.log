@@ -1,0 +1,37 @@
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+127.0.0.1 - - [09/Jul/2026 15:43:57] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jul/2026 15:43:58] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [09/Jul/2026 15:43:58] "GET /web_viewer/tailwind-built.css HTTP/1.1" 304 -
+127.0.0.1 - - [09/Jul/2026 15:43:58] "GET /web_viewer/style.css?v=20260508-tag-ui-icons HTTP/1.1" 304 -
+127.0.0.1 - - [09/Jul/2026 15:43:58] "GET /web_viewer/script.js?v=20260508-tag-ui-icons HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jul/2026 15:43:59] "GET /api/get-tag-catalog HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jul/2026 15:43:59] "GET /api/get-tags HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jul/2026 15:43:59] "GET /api/get-user-metadata HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jul/2026 15:43:59] "GET /api/posts?sort=sequence HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jul/2026 15:44:00] "GET /web_viewer/images/8d3fbb23da56e938694454707fde9a6d.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [09/Jul/2026 15:44:00] "GET /web_viewer/images/42796ab610c10d260663e4bfcd84e06b.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [09/Jul/2026 15:44:00] "GET /web_viewer/images/dfad798c5cb198e80e3c4de1ceb71ce8.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [09/Jul/2026 15:44:00] "GET /web_viewer/images/f76b2f7e4eb484a93c96b8f7b14510f8.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [09/Jul/2026 15:44:00] "GET /web_viewer/images/a2aee88048a0261053be0029ee21ecae.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [09/Jul/2026 15:44:00] "GET /web_viewer/images/fc0461dcfe1b2eb732bf1a0fd5862fbf.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [09/Jul/2026 15:44:00] "GET /web_viewer/images/6920add2c20de324f87d85f9c9821e76.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [09/Jul/2026 15:44:00] "GET /web_viewer/images/703c912ab47ddcf197b6d446167e66ba.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [09/Jul/2026 15:44:01] "GET /web_viewer/images/f1ce4d6bd9bbd2067a4efd2a07f2ca1d.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jul/2026 15:44:01] "GET /web_viewer/images/49243cda26e8537b446c896968327750.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jul/2026 15:44:01] "GET /web_viewer/images/e5677d5b39adc93577866988394ac4c8.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jul/2026 15:44:01] "GET /web_viewer/images/a6dbb70f2cb2ef1a3ae821ad2a667557.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jul/2026 15:44:01] "GET /web_viewer/images/d95b065888ed8308b631a5ac8a15f7ac.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jul/2026 15:44:01] "GET /web_viewer/images/3dbab7c13333332b9416a7974023b0eb.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jul/2026 15:44:01] "GET /web_viewer/images/de0fb56c3cee97fe7b0290fa248083a0.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jul/2026 15:44:01] "GET /web_viewer/images/3f6ba8440d6418bcbfca9171e6af90c5.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jul/2026 15:44:01] "POST /api/auto-tag/apply HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jul/2026 15:44:01] "POST /api/save-tags HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jul/2026 15:44:12] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jul/2026 15:46:25] "POST /api/run-scrap HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jul/2026 15:49:34] "GET /api/post/1770 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jul/2026 15:49:35] "GET /api/post/1769 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jul/2026 15:49:35] "GET /api/post/1768 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jul/2026 15:50:12] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jul/2026 15:50:12] "GET /api/get-tag-catalog HTTP/1.1" 200 -

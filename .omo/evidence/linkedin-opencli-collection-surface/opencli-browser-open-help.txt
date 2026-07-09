@@ -1,0 +1,8 @@
+Usage: opencli browser <session> open [options] <url>
+
+Open URL in the browser session
+
+Options:
+  --tab <targetId>  Target tab/page identity returned by "browser open",
+                    "browser tab new", or "browser tab list"
+  -h, --help        display help for command

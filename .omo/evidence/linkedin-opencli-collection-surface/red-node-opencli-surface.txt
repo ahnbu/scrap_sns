@@ -1,0 +1,25 @@
+file:///D:/vibe-coding/scrap_sns/tests/unit/test_linkedin_opencli_surface_lifecycle.mjs:5
+  closeBrowserSession,
+  ^^^^^^^^^^^^^^^^^^^
+SyntaxError: The requested module '../../scripts/linkedin_opencli_shadow_collect.mjs' does not provide an export named 'closeBrowserSession'
+    at #asyncInstantiate (node:internal/modules/esm/module_job:326:21)
+    at async ModuleJob.run (node:internal/modules/esm/module_job:429:5)
+    at async node:internal/modules/esm/loader:639:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)
+
+Node.js v24.15.0
+✖ tests\unit\test_linkedin_opencli_surface_lifecycle.mjs (81.3538ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 0
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 89.3918
+
+✖ failing tests:
+
+test at tests\unit\test_linkedin_opencli_surface_lifecycle.mjs:1:1
+✖ tests\unit\test_linkedin_opencli_surface_lifecycle.mjs (81.3538ms)
+  'test failed'

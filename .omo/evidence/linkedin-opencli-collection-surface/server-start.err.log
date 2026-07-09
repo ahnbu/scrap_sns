@@ -1,0 +1,35 @@
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+127.0.0.1 - - [09/Jul/2026 15:27:41] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jul/2026 15:28:00] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jul/2026 15:31:04] "POST /api/run-scrap HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jul/2026 15:31:04] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jul/2026 15:31:04] "GET /web_viewer/tailwind-built.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jul/2026 15:31:04] "GET /web_viewer/style.css?v=20260508-tag-ui-icons HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jul/2026 15:31:04] "GET /web_viewer/script.js?v=20260508-tag-ui-icons HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jul/2026 15:31:04] "GET /api/get-user-metadata HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jul/2026 15:31:04] "GET /api/get-tag-catalog HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jul/2026 15:31:04] "GET /api/get-tags HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jul/2026 15:31:05] "GET /api/posts?sort=sequence HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jul/2026 15:31:05] "POST /api/save-user-metadata HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jul/2026 15:31:05] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jul/2026 15:31:06] "POST /api/auto-tag/apply HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jul/2026 15:31:06] "POST /api/save-tags HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jul/2026 15:31:06] "GET /web_viewer/images/f76b2f7e4eb484a93c96b8f7b14510f8.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jul/2026 15:31:06] "GET /web_viewer/images/a2aee88048a0261053be0029ee21ecae.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jul/2026 15:31:06] "GET /web_viewer/images/703c912ab47ddcf197b6d446167e66ba.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jul/2026 15:31:06] "GET /web_viewer/images/dfad798c5cb198e80e3c4de1ceb71ce8.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jul/2026 15:31:06] "GET /web_viewer/images/8d3fbb23da56e938694454707fde9a6d.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jul/2026 15:31:06] "GET /web_viewer/images/42796ab610c10d260663e4bfcd84e06b.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jul/2026 15:31:06] "GET /web_viewer/images/6920add2c20de324f87d85f9c9821e76.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jul/2026 15:31:06] "GET /web_viewer/images/fc0461dcfe1b2eb732bf1a0fd5862fbf.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jul/2026 15:39:25] "GET /api/post/1768 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jul/2026 15:39:26] "GET /api/post/1767 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jul/2026 15:39:27] "GET /api/post/1770 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jul/2026 15:39:33] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jul/2026 15:39:34] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jul/2026 15:40:23] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jul/2026 15:40:23] "GET /api/scrap-progress?after=0 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jul/2026 15:41:01] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jul/2026 15:41:01] "GET /api/get-tag-catalog HTTP/1.1" 200 -

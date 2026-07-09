@@ -1,0 +1,57 @@
+Usage: opencli browser <session> <command> [options]
+
+analyze, back, bind, check, click, close, console, dblclick, dialog, drag, eval,
+extract, fill, find, focus, frames, get, hover, init, keys, network, open,
+screenshot, scroll, select, state, tab, type, unbind, uncheck, upload, verify,
+wait
+
+Options:
+  --window <mode>                             Browser window mode: foreground or background
+  -h, --help                                  display help for command
+
+Commands:
+  bind                                        Bind the current Chrome tab/window to the browser session named by <session>
+  unbind                                      Detach the bound browser session named by <session> without closing the user tab/window
+  tab                                         Tab management — list, create, and close tabs in the browser session
+  open [options] <url>                        Open URL in the browser session
+  back [options]                              Go back in browser history
+  scroll [options] <direction>                Scroll page
+  state [options]                             Page state: URL, title, interactive elements with [N] indices
+  frames [options]                            List cross-origin iframe targets in snapshot order
+  screenshot [options] [path]                 Take screenshot
+  console [options]                           Read recent browser console messages
+  analyze [options] <url>                     Classify site: anti-bot vendor, real-data API candidates, pattern (A/B/C/D), nearest adapter, next step
+  find [options]                              Find DOM elements by CSS or semantic locator — returns JSON {matches_n, entries[]}
+  get                                         Get page properties
+  click [options] [target]                    Click element — JSON envelope {clicked, target, matches_n}
+  type [options] [targetOrText] [text]        Click element, then type text — JSON envelope {typed, text, target, matches_n, autocomplete}
+  hover [options] [target]                    Move the mouse over an element — JSON envelope {hovered, target, matches_n}
+  focus [options] [target]                    Focus an element — JSON envelope {focused, target, matches_n}
+  dblclick [options] [target]                 Double-click element — JSON envelope {dblclicked, target, matches_n}
+  check [options] [target]                    Ensure a checkbox/radio/aria-checked control is checked — JSON envelope {checked, changed, target, matches_n}
+  uncheck [options] [target]                  Ensure a checkbox/aria-checked control is unchecked — JSON envelope {checked, changed, target, matches_n}
+  upload [options] [targetOrFile] [files...]  Attach local files to a file input — JSON envelope {uploaded, files, file_names, target, matches_n}
+  drag [options] [source] [target]            Drag one element to another — JSON envelope {dragged, source, target, source_matches_n, target_matches_n}
+  fill [options] [targetOrText] [text]        Set input/textarea/contenteditable text exactly and verify the value — JSON envelope {filled, verified, text, actual}
+  select [options] [targetOrOption] [option]  Select dropdown option — JSON envelope {selected, target, matches_n}
+  keys [options] <key>                        Press keyboard key
+  dialog                                      Handle a blocking JavaScript alert/confirm/prompt dialog
+  wait [options] <type> [value]               Wait for selector, text, time, matching XHR, or browser download (e.g. wait selector ".loaded", wait text "Success", wait time 3, wait xhr "/api/search", wait download receipt.pdf)
+  eval [options] <js>                         Execute JS in page context, return result
+  extract [options]                           Extract page content as markdown, paragraph-aware chunks for long pages
+  network [options]                           Capture network requests as shape previews; retrieve full bodies by key
+  init <name>                                 Generate adapter scaffold in ~/.opencli/clis/
+  verify [options] <name>                     Execute an adapter and validate output; uses fixture at ~/.opencli/sites/<site>/verify/<cmd>.json when present
+  close                                       Release the current browser session tab lease
+  help [command]                              display help for command
+
+<session> is a required positional: pass the name of the browser session every subcommand should operate on. Reuse the same name across calls to keep the tab/state alive; pick a different name to isolate parallel browser work.
+
+Examples:
+  $ opencli browser work open https://x.com
+  $ opencli browser work open https://x.com --window background
+  $ opencli browser work click 12
+  $ opencli browser work state
+  $ opencli browser work bind
+  $ opencli browser work unbind
+

@@ -1,0 +1,4 @@
+pytest_status=1
+node_test_status=0
+integration_status=0
+node_check_status=0

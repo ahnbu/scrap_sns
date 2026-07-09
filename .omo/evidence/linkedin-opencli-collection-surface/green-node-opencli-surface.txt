@@ -1,0 +1,14 @@
+OpenCLI browser tab close ABC123 failed: target already closed
+✔ extractOpenedPageId reads the target id returned by browser open (0.7063ms)
+✔ extractOpenedPageId returns empty string when OpenCLI response lacks a page id (1.0365ms)
+✔ closeBrowserSession closes only the collection-owned target before releasing OpenCLI (1.1386ms)
+✔ closeBrowserSession still releases OpenCLI when target close fails (0.5563ms)
+✔ closeBrowserSession does not close an arbitrary target when page id is absent (0.3551ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 88.8038

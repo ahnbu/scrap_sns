@@ -1,0 +1,6 @@
+Daemon: running (PID 45956)
+Version: v1.8.6
+Uptime: 368ms
+Extension: disconnected
+Memory: 63.8 MB
+Port: 19825
