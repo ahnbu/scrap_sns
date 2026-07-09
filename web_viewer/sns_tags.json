@@ -6811,5 +6811,8 @@
     "https://www.linkedin.com/feed/update/urn:li:activity:7480446307682107392?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7480446307682107392%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "마케팅",
         "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7480805871900438528?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7480805871900438528%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "프롬프트"
     ]
 }
