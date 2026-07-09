@@ -6799,5 +6799,13 @@
     ],
     "https://www.threads.com/@unclejobs.ai/post/DajR5l7E2Sp": [
         "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7480778601060048897?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7480778601060048897%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "리서치"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7480811564950966272?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7480811564950966272%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "기획",
+        "리서치",
+        "프롬프트"
     ]
 }
