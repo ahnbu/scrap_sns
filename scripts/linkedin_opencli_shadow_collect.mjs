@@ -189,9 +189,12 @@ function main() {
   const stamp = timestamp();
   const dryRun = Boolean(args["dry-run"]);
   const maxPages = Number(args["max-pages"] || 200);
+  const useBoundSession = Boolean(args["use-bound-session"]);
 
-  browser(session, ["open", url, "--window", "background"], { expectJson: true });
-  wait(session, 5);
+  if (!useBoundSession) {
+    browser(session, ["open", url, "--window", "background"], { expectJson: true });
+    wait(session, 5);
+  }
 
   const state = pageState(session);
   if (!state.includes("저장한 게시물") && !state.includes("Saved")) {
