@@ -187,10 +187,9 @@ The requested module '../../scripts/linkedin_opencli_shadow_collect.mjs' does no
 
 Modify `scripts/linkedin_opencli_shadow_collect.mjs`:
 
+기존 import는 이미 `spawnSync`, `mkdirSync`/`readFileSync`/`writeFileSync`, `join`을 포함한다(파일 상단 1-4행). `pathToFileURL`만 추가한다. 나머지는 다시 추가하지 않는다.
+
 ```javascript
-import { spawnSync } from "node:child_process";
-import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
-import { join } from "node:path";
 import { pathToFileURL } from "node:url";
 ```
 
@@ -210,7 +209,7 @@ export function applyExistingStreak(orderedIds, existingIds, currentStreak, limi
 }
 ```
 
-Replace the bottom execution block:
+파일 하단의 실제 실행 블록은 **`import.meta` 가드가 없는** `try { main() } ... finally { ... }` 형태다(파일 끝 `try {`부터 마지막 `}`까지). 이 기존 블록 전체를 아래 가드 버전으로 교체한다. helper export(`applyExistingStreak` 등)를 test에서 import할 때 `main()`이 실행되지 않도록 가드가 필요하다.
 
 ```javascript
 if (import.meta.url === pathToFileURL(process.argv[1]).href) {
@@ -340,7 +339,14 @@ freshIds.forEach((id) => seenIds.add(id));
 const newIds = seenIds.size - before;
 ```
 
-For the `fetchedIds` branches, apply the same pattern.
+`fetchedIds`를 쓰는 분기는 두 곳이다: page-1 fallback fetch(약 221행)와 next-page fetch(약 307행). 두 곳 모두 아래 패턴으로 교체한다.
+
+```javascript
+const freshIds = observeIdsForFastStop(fetchedIds);
+const before = seenIds.size;
+freshIds.forEach((id) => seenIds.add(id));
+const newIds = seenIds.size - before;
+```
 
 After each page is pushed to `pages`, before fetching the next page, add:
 
@@ -496,11 +502,13 @@ Add helper near OpenCLI helpers:
 ```python
 def write_existing_ids_file(raw_dir, existing_codes):
     existing_ids = sorted(str(code) for code in existing_codes if code)
-    ids_path = os.path.join(os.path.dirname(raw_dir), "existing_ids.json")
-    os.makedirs(os.path.dirname(ids_path), exist_ok=True)
+    os.makedirs(raw_dir, exist_ok=True)
+    ids_path = os.path.join(raw_dir, "existing_ids.json")
     save_json(ids_path, existing_ids)
     return ids_path
 ```
+
+> `existing_ids.json`은 반드시 stamp 하위 `raw_dir` 내부에 쓴다. `os.path.dirname(raw_dir)`(공통 `.../raw` 폴더)에 고정 파일명으로 쓰면 `--mode update` 동시 실행 시 덮어쓰기 경합으로 엉뚱한 ID 세트가 collector에 주입된다.
 
 - [ ] **Step 5: `run_opencli_collector()` mode별 command 구현**
 
@@ -817,3 +825,11 @@ fix(linkedin): update 모드 20건 연속 중단 복귀 — 전체 검증과 빠
 - Placeholder scan: 미완성 표식이 남지 않았고, 현재 남는 검색 매치는 코드 기호(`__init__`)뿐이다.
 - Type/name consistency: `CONSECUTIVE_EXISTING_LIMIT`, `--existing-ids-file`, `--stop-after-existing-streak`, `existing_streak_20`, and metadata keys are used consistently.
 - Risk note: this plan assumes the prior owned-window work remains uncommitted/dirty but present. Before implementation, re-run `git status --short` and preserve unrelated dirty output JSON/viewer state.
+
+## Plan Check 반영 이력 (2026-07-09)
+
+agy(Gemini 3.1 Pro) + Claude 코드 대조 검수 결과를 반영했다. 검수보고서: `_docs/plan-check/20260709_02_LinkedIn-update-20건-연속중단-복귀-구현계획_검수보고서.md`
+
+- Task 3/Step 4: `existing_ids.json`을 `raw_dir` 내부(stamp 하위)에 쓰도록 수정. 공통 `.../raw` 폴더 고정 파일명 사용 시 동시 실행 덮어쓰기 경합 제거.
+- Task 2/Step 3: import 지시를 `pathToFileURL`만 추가하도록 정정(`join` 등 기존 import 중복 제거). 종료 블록 교체 대상을 실제 파일의 가드 없는 `try/finally`로 명시.
+- Task 2/Step 4: `fetchedIds` 분기(약 221·307행) 교체 코드를 명시해 스코프 모호성 제거.
