@@ -11,8 +11,10 @@ import hashlib
 import requests
 from datetime import datetime
 import io
+from urllib.parse import urlsplit, urlunsplit
 from utils.json_to_md import convert_json_to_md
 from utils.auth_status import AUTH_REQUIRED_EXIT_CODE
+from utils.post_meta import build_post_key
 
 # Windows 터미널 인코딩 문제 해결
 if sys.platform == 'win32':
@@ -36,12 +38,14 @@ PLATFORM_KEYS = {
     "LinkedIn": "linkedin",
     "X/Twitter": "x",
 }
+SIGNAL_HANDLER_CALLED = False
 
 def signal_handler(sig, frame):
+    global SIGNAL_HANDLER_CALLED
     # 중복 호출 방지
-    if getattr(signal_handler, '_called', False):
+    if SIGNAL_HANDLER_CALLED:
         return
-    signal_handler._called = True
+    SIGNAL_HANDLER_CALLED = True
 
     print("\n\n🛑 사용자에 의해 중단되었습니다 (Ctrl+C). 모든 백그라운드 프로세스를 종료합니다...")
     
@@ -87,8 +91,16 @@ def get_media_extension(img_url):
     return '.jpg'
 
 
+def get_image_identity_key(img_url):
+    parsed = urlsplit(str(img_url))
+    host = parsed.netloc.lower()
+    if host.endswith("licdn.com"):
+        return urlunsplit((parsed.scheme, parsed.netloc, parsed.path, "", ""))
+    return str(img_url)
+
+
 def get_local_image_paths(img_url):
-    file_hash = hashlib.md5(str(img_url).encode('utf-8')).hexdigest()
+    file_hash = hashlib.md5(get_image_identity_key(img_url).encode('utf-8')).hexdigest()
     filename = f"{file_hash}{get_media_extension(img_url)}"
     return os.path.join(WEB_IMAGE_DIR, filename), f"{WEB_IMAGE_PREFIX}/{filename}"
 
@@ -117,9 +129,32 @@ def collect_preserved_local_images():
                 if img_url and '.mp4' not in str(img_url).lower()
             ]
             for img_url, web_path in zip(image_media, local_images):
-                if img_url and web_image_exists(web_path) and img_url not in preserved:
-                    preserved[img_url] = web_path
+                key = get_image_identity_key(img_url)
+                if img_url and web_image_exists(web_path) and key not in preserved:
+                    preserved[key] = web_path
     return preserved
+
+
+def validate_declared_local_images(posts):
+    missing = []
+    for post in posts:
+        for web_path in post.get('local_images') or []:
+            if not web_image_exists(web_path):
+                missing.append({
+                    "code": post.get('code') or post.get('platform_id') or post.get('url'),
+                    "image": web_path,
+                })
+                if len(missing) >= 5:
+                    break
+        if len(missing) >= 5:
+            break
+
+    if missing:
+        examples = ", ".join(f"{item['code']}->{item['image']}" for item in missing)
+        raise RuntimeError(
+            "local_images validation failed: declared local files are missing. "
+            f"examples: {examples}"
+        )
 
 
 def validate_local_image_links(posts):
@@ -290,7 +325,7 @@ def should_run_consumer(platform):
     if not latest: return True
     
     data = load_json(latest)
-    posts = data.get('posts', [])
+    posts = data.get('posts', []) if isinstance(data, dict) else []
     
     # 💡 수집 완료되지 않은 항목이 있는지 확인
     uncollected = [p for p in posts if not p.get('is_detail_collected')]
@@ -506,10 +541,17 @@ def merge_results():
 
     return unique_posts, len(threads_posts), len(linkedin_posts), len(twitter_posts)
 
-def save_total(new_posts, threads_count, linkedin_count, twitter_count):
+def save_total(
+    new_posts,
+    threads_count,
+    linkedin_count,
+    twitter_count,
+    local_image_link_posts=None,
+):
     today = datetime.now().strftime('%Y%m%d')
     total_filename = os.path.join(OUTPUT_TOTAL_DIR, f"total_full_{today}.json")
-    validate_local_image_links(new_posts)
+    validate_declared_local_images(new_posts)
+    validate_local_image_links(local_image_link_posts if local_image_link_posts is not None else new_posts)
     
     # 💡 [개선] '저장순' 정렬 구현 (최초 수집 시점 1순위, 플랫폼 내 순서 2순위)
     def sort_key(post):
@@ -551,11 +593,20 @@ def save_total(new_posts, threads_count, linkedin_count, twitter_count):
     convert_json_to_md(total_filename)
 
 def download_images(posts):
-    print("\n🖼️ 미수집 이미지 로컬 다운로드 시작...")
     os.makedirs(WEB_IMAGE_DIR, exist_ok=True)
-    
+
+    candidates = [
+        img_url
+        for post in posts
+        for img_url in (post.get('media') or [])
+        if img_url and '.mp4' not in str(img_url).lower()
+    ]
+    print(f"\n🖼️ 이미지 처리 시작: 대상 게시글 {len(posts)}건, 후보 이미지 {len(candidates)}개")
+
     count = 0
     linked_existing = 0
+    skipped_existing = 0
+    failed = 0
     preserved = collect_preserved_local_images()
     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
 
@@ -573,12 +624,14 @@ def download_images(posts):
         for img_url in remote_media:
             if '.mp4' in img_url.lower(): continue
             try:
-                preserved_path = preserved.get(img_url)
+                preserved_path = preserved.get(get_image_identity_key(img_url))
                 if preserved_path and web_image_exists(preserved_path):
                     if preserved_path not in seen_local_images:
                         local_images.append(preserved_path)
                         seen_local_images.add(preserved_path)
                         linked_existing += 1
+                    else:
+                        skipped_existing += 1
                     continue
 
                 fs_path, web_path = get_local_image_paths(img_url)
@@ -591,14 +644,74 @@ def download_images(posts):
                         with open(fs_path, 'wb') as f:
                             f.write(response.content)
                         count += 1
+                    else:
+                        failed += 1
+                else:
+                    skipped_existing += 1
                 
                 if os.path.exists(fs_path) and web_path not in seen_local_images:
                     local_images.append(web_path)
                     seen_local_images.add(web_path)
-            except Exception: pass
+            except Exception:
+                failed += 1
         if local_images: post['local_images'] = local_images
 
-    print(f"   ✅ 이미지 다운로드 완료: 신규 {count}개 저장, 기존 {linked_existing}개 연결됨.")
+    print(
+        f"   ✅ 이미지 처리 완료: 신규 {count}개 저장, 기존 {linked_existing}개 유지, "
+        f"스킵 {skipped_existing}개, 실패 {failed}개"
+    )
+
+
+def collect_existing_post_state():
+    latest_total = find_latest_full_file(OUTPUT_TOTAL_DIR, "total_full_*.json")
+    if not latest_total:
+        return set(), {}
+
+    data = load_json(latest_total, {})
+    posts = data.get('posts', []) if isinstance(data, dict) else []
+    keys = set()
+    local_images_by_key = {}
+
+    for post in posts:
+        key = build_post_key(post)
+        if not key:
+            continue
+        keys.add(key)
+        local_images = [
+            web_path
+            for web_path in (post.get('local_images') or [])
+            if web_image_exists(web_path)
+        ]
+        if local_images:
+            local_images_by_key[key] = local_images
+
+    return keys, local_images_by_key
+
+
+def collect_existing_post_keys():
+    keys, _local_images_by_key = collect_existing_post_state()
+    return keys
+
+
+def preserve_existing_local_images(posts, local_images_by_key):
+    for post in posts:
+        key = build_post_key(post)
+        if not key or key not in local_images_by_key:
+            continue
+
+        merged = []
+        for web_path in (post.get('local_images') or []) + local_images_by_key[key]:
+            if web_path and web_path not in merged:
+                merged.append(web_path)
+
+        if merged:
+            post['local_images'] = merged
+
+
+def select_image_download_posts(posts, mode, existing_post_keys):
+    if mode != "update" or not existing_post_keys:
+        return posts
+    return [post for post in posts if build_post_key(post) not in existing_post_keys]
 
 
 def cleanup_old_output_json_after_success():
@@ -633,6 +746,9 @@ def cleanup_old_output_json_after_success():
 def run(mode='update'):
     platform_results = {}
     try:
+        existing_post_keys, existing_local_images = (
+            collect_existing_post_state() if mode == "update" else (set(), {})
+        )
         # 1. 병렬 실행 (새 창)
         platform_results = run_scrapers_in_parallel(mode=mode)
 
@@ -641,10 +757,18 @@ def run(mode='update'):
 
         if merged_results_data[0]:
             posts, threads_count, linkedin_count, twitter_count = merged_results_data
+            preserve_existing_local_images(posts, existing_local_images)
             # 3. 이미지 다운로드
-            download_images(posts)
+            image_posts = select_image_download_posts(posts, mode, existing_post_keys)
+            download_images(image_posts)
             # 4. 최종 저장 및 정규화
-            save_total(posts, threads_count, linkedin_count, twitter_count)
+            save_total(
+                posts,
+                threads_count,
+                linkedin_count,
+                twitter_count,
+                local_image_link_posts=image_posts if mode == "update" else posts,
+            )
             cleanup_old_output_json_after_success()
     finally:
         auth_required = [

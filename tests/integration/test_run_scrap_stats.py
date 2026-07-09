@@ -405,6 +405,23 @@ def test_run_scrap_records_filtered_progress_events(client, tmp_path, monkeypatc
     )
 
 
+def test_scrap_progress_maps_image_stage_lines():
+    import scrap_sns_server as server
+
+    assert (
+        server._scrap_progress_message_from_line(
+            "🖼️ 이미지 처리 시작: 대상 게시글 2건, 후보 이미지 3개"
+        )
+        == "이미지 처리 시작: 대상 게시글 2건, 후보 이미지 3개"
+    )
+    assert (
+        server._scrap_progress_message_from_line(
+            "   ✅ 이미지 처리 완료: 신규 1개 저장, 기존 2개 유지, 스킵 0개, 실패 0개"
+        )
+        == "이미지 처리 완료: 신규 1개 저장, 기존 2개 유지, 스킵 0개, 실패 0개"
+    )
+
+
 def test_run_scrap_records_progress_from_child_log_files(client, tmp_path, monkeypatch):
     import scrap_sns_server as server
 

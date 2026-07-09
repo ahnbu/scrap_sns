@@ -53,15 +53,15 @@ SCRAP_PROGRESS = {
 }
 SCRAP_PROGRESS_LOCK = threading.Lock()
 _POSTS_CACHE = {
-    "path": None,
-    "mtime": None,
-    "size": None,
-    "metadata_path": None,
-    "metadata_mtime": None,
-    "metadata_size": None,
-    "posts_full": None,
-    "posts_meta": None,
-    "etag": None,
+    "path": "",
+    "mtime": 0,
+    "size": 0,
+    "metadata_path": "",
+    "metadata_mtime": 0,
+    "metadata_size": 0,
+    "posts_full": [],
+    "posts_meta": [],
+    "etag": "",
 }
 
 
@@ -122,6 +122,10 @@ def _scrap_progress_message_from_line(line):
         return "상세 수집 단계 시작"
     if "결과 병합 및 데이터 정규화 시작" in text:
         return "결과 병합 시작"
+    if "이미지 처리 시작:" in text:
+        return text.lstrip("🖼️ ").strip()
+    if "이미지 처리 완료:" in text:
+        return text.lstrip("✅ ").strip()
     if "이미지 다운로드 완료" in text:
         return "이미지 다운로드 완료"
     if "Total Full 저장 완료" in text:
@@ -790,19 +794,15 @@ def _load_latest_posts():
         )
         posts_meta.append(meta)
 
-    _POSTS_CACHE.update(
-        {
-            "path": latest_file,
-            "mtime": mtime,
-            "size": size,
-            "metadata_path": metadata_state["path"],
-            "metadata_mtime": metadata_state["mtime"],
-            "metadata_size": metadata_state["size"],
-            "posts_full": posts_full,
-            "posts_meta": posts_meta,
-            "etag": f'"{mtime}-{size}-{metadata_state["mtime"]}-{metadata_state["size"]}"',
-        }
-    )
+    _POSTS_CACHE["path"] = latest_file
+    _POSTS_CACHE["mtime"] = mtime
+    _POSTS_CACHE["size"] = size
+    _POSTS_CACHE["metadata_path"] = metadata_state["path"]
+    _POSTS_CACHE["metadata_mtime"] = metadata_state["mtime"]
+    _POSTS_CACHE["metadata_size"] = metadata_state["size"]
+    _POSTS_CACHE["posts_full"] = posts_full
+    _POSTS_CACHE["posts_meta"] = posts_meta
+    _POSTS_CACHE["etag"] = f'"{mtime}-{size}-{metadata_state["mtime"]}-{metadata_state["size"]}"'
     return _POSTS_CACHE
 
 @app.route('/api/get-tags', methods=['GET'])
