@@ -36,6 +36,36 @@
 - `docs/development.md` — 플랫폼별 데이터 구조·URL 형식, 표준 스키마
 - `docs/crawling_logic.md` — Producer/Consumer 흐름, 병합, 뷰어 연동
 
+## 작업별 정본 위치
+
+- Post 스키마 변경: `utils/post_schema.py`
+- API 메타데이터 변경: `utils/post_meta.py`, `scrap_sns_server.py`
+- Threads URL 정규화: `utils/post_schema.py`, `utils/post_meta.py`, `utils/query-sns.mjs`, `web_viewer/script.js`
+- 뷰어 태그·상태 변경: `web_viewer/script.js`, `web_viewer/sns_tags.json`, `web_viewer/sns_tag_catalog.json`, `web_viewer/sns_user_metadata.json`
+- 수집 파이프라인 변경: 플랫폼별 수집기와 `total_scrap.py`
+- 로컬 SNS 조회: 원천 JSON 직접 조회보다 `node utils/query-sns.mjs` 우선
+
+## 영구 데이터 surface
+
+- 플랫폼 출력: `output_threads/python/*`, `output_linkedin/python/*`, `output_twitter/python/*`
+- 통합 출력: `output_total/total_full_YYYYMMDD.json`
+- 실패 이력: `scrap_failures_threads.json`, `scrap_failures_twitter.json`
+- 뷰어 상태: `web_viewer/sns_tags.json`, `web_viewer/sns_tag_catalog.json`, `web_viewer/sns_user_metadata.json`, browser `localStorage`
+- 인증 런타임 정본: `C:/Users/ahnbu/.config/auth/`; repo `auth/`는 정본으로 보지 않는다.
+
+## 데이터 identity 규칙
+
+- `sequence_id`는 통합 파일 안에서 다시 부여되는 로컬 순서값이며 durable identity로 쓰지 않는다.
+- 별표, 숨김, 메모는 `post_key` 기준으로 `web_viewer/sns_user_metadata.json`에 저장한다.
+- `canonical_url`은 원문 열기와 legacy migration 보조값이며, 사용자 상태의 주 key가 아니다.
+- 의미 있는 뷰어 상태는 file-backed JSON에 남기고, `localStorage`는 cache 또는 migration 보조로 본다.
+
+## 수집 데이터 수정 규칙
+
+- `output_total/total_full_YYYYMMDD.json`은 downstream 통합 산출물이다.
+- LinkedIn 본문·메타데이터를 durable하게 바꾸려면 최신 `output_linkedin/python/linkedin_py_full_*.json`도 함께 맞춘 뒤 통합본을 재생성한다.
+- 수집·병합 변경 완료 기준은 프로세스 성공이 아니라 upstream full 파일, downstream total 파일, 웹 뷰어 표시가 일치하는 것이다.
+
 ## 코딩·테스트·PR 기준
 
 - Python: 4칸 들여쓰기, `snake_case`; JS: `camelCase`
