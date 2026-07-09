@@ -29,8 +29,9 @@ CRAWL_START_TIME = datetime.now()
 def configure_text_output(stream=None):
     target = stream or sys.stdout
     encoding = (getattr(target, "encoding", "") or "").lower()
-    if encoding and encoding != "utf-8" and hasattr(target, "reconfigure"):
-        target.reconfigure(encoding="utf-8", errors="replace")
+    reconfigure = getattr(target, "reconfigure", None)
+    if encoding and encoding != "utf-8" and callable(reconfigure):
+        reconfigure(encoding="utf-8", errors="replace")
 
 
 def get_opencli_command():
@@ -81,6 +82,37 @@ def run_opencli_whoami():
     return payload
 
 
+def should_stop_opencli_daemon():
+    return os.environ.get("SCRAP_SNS_KEEP_OPENCLI_DAEMON") != "1"
+
+
+def run_opencli_browser_session_command(action, session=OPENCLI_PRODUCTION_SESSION):
+    command = get_opencli_command() + ["browser", session, action]
+    result = subprocess.run(command, capture_output=True, text=True, encoding="utf-8")
+    if result.returncode != 0:
+        message = (result.stderr or result.stdout or "").strip()
+        print(f"OpenCLI browser {action} 실패: {message}")
+        return False
+    print(f"OpenCLI browser {action} 완료")
+    return True
+
+
+def cleanup_opencli_browser_session(session=OPENCLI_PRODUCTION_SESSION):
+    run_opencli_browser_session_command("unbind", session=session)
+    run_opencli_browser_session_command("close", session=session)
+
+
+def stop_opencli_daemon():
+    command = get_opencli_command() + ["daemon", "stop"]
+    result = subprocess.run(command, capture_output=True, text=True, encoding="utf-8")
+    if result.returncode != 0:
+        message = (result.stderr or result.stdout or "").strip()
+        print(f"OpenCLI daemon 종료 실패: {message}")
+        return False
+    print("OpenCLI daemon 종료 완료")
+    return True
+
+
 def run_opencli_collector(crawl_start_time, session=OPENCLI_PRODUCTION_SESSION):
     stamp = crawl_start_time.strftime("%Y%m%d_%H%M%S")
     raw_dir = os.path.join(OPENCLI_RUNTIME_DIR, "raw", stamp)
@@ -123,32 +155,37 @@ def validate_opencli_payload(payload):
 
 
 def collect_opencli_posts(crawl_start_time):
-    whoami = run_opencli_whoami()
-    print(f"✅ OpenCLI LinkedIn 로그인 확인: {whoami.get('site', 'linkedin')}")
+    try:
+        whoami = run_opencli_whoami()
+        print(f"✅ OpenCLI LinkedIn 로그인 확인: {whoami.get('site', 'linkedin')}")
 
-    raw_dir, collection_summary = run_opencli_collector(crawl_start_time)
-    print(
-        "📥 OpenCLI raw 수집 완료: "
-        f"{collection_summary.get('pages_collected')} pages, "
-        f"{collection_summary.get('total_unique_activity_ids')} unique IDs"
-    )
+        raw_dir, collection_summary = run_opencli_collector(crawl_start_time)
+        print(
+            "📥 OpenCLI raw 수집 완료: "
+            f"{collection_summary.get('pages_collected')} pages, "
+            f"{collection_summary.get('total_unique_activity_ids')} unique IDs"
+        )
 
-    payload = parse_shadow_raw(raw_dir, crawl_start_time, require_save_state=True)
-    validate_opencli_payload(payload)
-    metadata = payload["metadata"]
-    print(
-        "✅ OpenCLI parse 검증 통과: "
-        f"parsed={metadata.get('parsed_post_count')}, "
-        f"duplicates={metadata.get('duplicate_platform_id_count')}, "
-        f"parser_failed={metadata.get('parser_failed_count')}"
-    )
-    metadata["opencli_collection"] = collection_summary
-    metadata["opencli_whoami"] = {
-        "site": whoami.get("site"),
-        "logged_in": whoami.get("logged_in"),
-        "public_id": whoami.get("public_id"),
-    }
-    return payload["posts"], metadata
+        payload = parse_shadow_raw(raw_dir, crawl_start_time, require_save_state=True)
+        validate_opencli_payload(payload)
+        metadata = payload["metadata"]
+        print(
+            "✅ OpenCLI parse 검증 통과: "
+            f"parsed={metadata.get('parsed_post_count')}, "
+            f"duplicates={metadata.get('duplicate_platform_id_count')}, "
+            f"parser_failed={metadata.get('parser_failed_count')}"
+        )
+        metadata["opencli_collection"] = collection_summary
+        metadata["opencli_whoami"] = {
+            "site": whoami.get("site"),
+            "logged_in": whoami.get("logged_in"),
+            "public_id": whoami.get("public_id"),
+        }
+        return payload["posts"], metadata
+    finally:
+        cleanup_opencli_browser_session()
+        if should_stop_opencli_daemon():
+            stop_opencli_daemon()
 
 
 def get_post_identity(post):

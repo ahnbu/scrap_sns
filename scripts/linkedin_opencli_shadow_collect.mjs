@@ -62,6 +62,7 @@ function browser(session, commandArgs, options = {}) {
 }
 
 function closeBrowserSession(session) {
+  browser(session, ["unbind"]);
   browser(session, ["close"]);
 }
 
