@@ -179,6 +179,7 @@ function readRaw(rawPath) {
 }
 
 let activeSession = "";
+let ownsBrowserSession = false;
 
 function main() {
   const args = parseArgs(process.argv.slice(2));
@@ -190,8 +191,9 @@ function main() {
   const dryRun = Boolean(args["dry-run"]);
   const maxPages = Number(args["max-pages"] || 200);
   const useBoundSession = Boolean(args["use-bound-session"]);
+  ownsBrowserSession = !useBoundSession;
 
-  if (!useBoundSession) {
+  if (ownsBrowserSession) {
     browser(session, ["open", url, "--window", "background"], { expectJson: true });
     wait(session, 5);
   }
@@ -383,7 +385,7 @@ try {
   console.error(error.message);
   process.exitCode = 1;
 } finally {
-  if (activeSession) {
+  if (activeSession && ownsBrowserSession) {
     try {
       closeBrowserSession(activeSession);
     } catch (error) {

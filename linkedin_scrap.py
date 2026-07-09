@@ -1,9 +1,12 @@
 from utils.common import clean_text, load_json, save_json
+from utils.auth_status import exit_auth_required
+from dataclasses import dataclass
 import json
 import sys
 import os
 import argparse
 import subprocess
+import time
 from pathlib import Path
 from datetime import datetime
 from utils.json_to_md import convert_json_to_md
@@ -16,6 +19,10 @@ DATA_DIR = "output_linkedin/python"
 UPDATE_DIR = os.path.join(DATA_DIR, "update")
 OPENCLI_RUNTIME_DIR = os.path.join("output_linkedin", "opencli_runtime")
 OPENCLI_PRODUCTION_SESSION = "linkedin_saved_production"
+CHROME_PATHS = [
+    "C:/Program Files/Google/Chrome/Application/chrome.exe",
+    "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe",
+]
 
 # CLI 인자 파싱
 CRAWL_MODE = "update only"  # 기본값 (__main__ 블록에서 CLI 인자로 덮어씀)
@@ -25,6 +32,19 @@ CRAWL_START_TIME = datetime.now()
 
 
 # 로컬 clean_text 제거 (utils.common 사용)
+
+@dataclass(frozen=True)
+class ChromeWindowInfo:
+    hwnd: int
+    title: str
+    process_id: int
+
+
+class LinkedInAuthRequiredError(RuntimeError):
+    def __init__(self, reason, current_url=None):
+        super().__init__(reason)
+        self.reason = reason
+        self.current_url = current_url
 
 def configure_text_output(stream=None):
     target = stream or sys.stdout
@@ -82,8 +102,148 @@ def run_opencli_whoami():
     return payload
 
 
+def resolve_chrome_executable():
+    for chrome_path in CHROME_PATHS:
+        if Path(chrome_path).exists():
+            return chrome_path
+    return None
+
+
+def _process_image_name(process_id):
+    if os.name != "nt":
+        return ""
+
+    import ctypes
+    from ctypes import wintypes
+
+    PROCESS_QUERY_LIMITED_INFORMATION = 0x1000
+    kernel32 = ctypes.WinDLL("kernel32", use_last_error=True)
+    handle = kernel32.OpenProcess(PROCESS_QUERY_LIMITED_INFORMATION, False, process_id)
+    if not handle:
+        return ""
+    try:
+        buffer = ctypes.create_unicode_buffer(32768)
+        size = wintypes.DWORD(len(buffer))
+        if not kernel32.QueryFullProcessImageNameW(handle, 0, buffer, ctypes.byref(size)):
+            return ""
+        return buffer.value
+    finally:
+        kernel32.CloseHandle(handle)
+
+
+def snapshot_visible_chrome_windows():
+    if os.name != "nt":
+        return []
+
+    import ctypes
+    from ctypes import wintypes
+
+    user32 = ctypes.WinDLL("user32", use_last_error=True)
+    windows = []
+
+    def enum_window(hwnd, _lparam):
+        if not user32.IsWindowVisible(hwnd):
+            return True
+
+        length = user32.GetWindowTextLengthW(hwnd)
+        if length <= 0:
+            return True
+
+        buffer = ctypes.create_unicode_buffer(length + 1)
+        user32.GetWindowTextW(hwnd, buffer, length + 1)
+        process_id = wintypes.DWORD()
+        user32.GetWindowThreadProcessId(hwnd, ctypes.byref(process_id))
+        image_name = _process_image_name(int(process_id.value))
+        if os.path.basename(image_name).lower() == "chrome.exe":
+            windows.append(ChromeWindowInfo(hwnd=int(hwnd), title=buffer.value, process_id=int(process_id.value)))
+        return True
+
+    enum_proc = ctypes.WINFUNCTYPE(wintypes.BOOL, wintypes.HWND, wintypes.LPARAM)(enum_window)
+    user32.EnumWindows(enum_proc, 0)
+    return windows
+
+
+def launch_chrome_new_window(chrome_path):
+    subprocess.Popen(
+        [chrome_path, "--new-window", TARGET_URL],
+        stdout=subprocess.DEVNULL,
+        stderr=subprocess.DEVNULL,
+    )
+
+
+def record_chrome_window_candidates(reason, candidates):
+    payload = {
+        "reason": reason,
+        "candidates": [
+            {"hwnd": candidate.hwnd, "title": candidate.title, "process_id": candidate.process_id}
+            for candidate in candidates
+        ],
+    }
+    print(f"OpenCLI Chrome HWND candidates: {json.dumps(payload, ensure_ascii=False)}")
+
+
+def open_owned_chrome_window(poll_attempts=20, poll_interval=0.5):
+    chrome_path = resolve_chrome_executable()
+    if not chrome_path:
+        raise RuntimeError("Chrome executable not found")
+
+    baseline = {window.hwnd for window in snapshot_visible_chrome_windows()}
+    launch_chrome_new_window(chrome_path)
+
+    latest_candidates = []
+    for _ in range(poll_attempts):
+        latest_candidates = [
+            window
+            for window in snapshot_visible_chrome_windows()
+            if window.hwnd not in baseline
+        ]
+        if len(latest_candidates) == 1:
+            return latest_candidates[0].hwnd
+        if len(latest_candidates) > 1:
+            record_chrome_window_candidates("ambiguous_candidates", latest_candidates)
+            raise RuntimeError(f"{len(latest_candidates)} new visible Chrome windows after launch")
+        if poll_interval:
+            time.sleep(poll_interval)
+
+    record_chrome_window_candidates("no_candidates", latest_candidates)
+    raise RuntimeError("0 new visible Chrome windows after launch")
+
+
+def focus_chrome_window(hwnd):
+    if os.name != "nt":
+        return False
+
+    import ctypes
+
+    user32 = ctypes.WinDLL("user32", use_last_error=True)
+    return bool(user32.SetForegroundWindow(int(hwnd)))
+
+
+def close_owned_chrome_window(hwnd):
+    if os.name != "nt":
+        return False
+
+    import ctypes
+
+    WM_CLOSE = 0x0010
+    user32 = ctypes.WinDLL("user32", use_last_error=True)
+    return bool(user32.PostMessageW(int(hwnd), WM_CLOSE, 0, 0))
+
+
 def should_stop_opencli_daemon():
     return os.environ.get("SCRAP_SNS_KEEP_OPENCLI_DAEMON") != "1"
+
+
+def is_opencli_daemon_running():
+    command = get_opencli_command() + ["daemon", "status"]
+    try:
+        result = subprocess.run(command, capture_output=True, text=True, encoding="utf-8")
+    except FileNotFoundError:
+        return False
+    if result.returncode != 0:
+        return False
+    output = f"{result.stdout}\n{result.stderr}".lower()
+    return "daemon: running" in output
 
 
 def run_opencli_browser_session_command(action, session=OPENCLI_PRODUCTION_SESSION):
@@ -94,6 +254,41 @@ def run_opencli_browser_session_command(action, session=OPENCLI_PRODUCTION_SESSI
         print(f"OpenCLI browser {action} 실패: {message}")
         return False
     print(f"OpenCLI browser {action} 완료")
+    return True
+
+
+def is_linkedin_saved_posts_url(url):
+    return "linkedin.com/my-items/saved-posts" in str(url or "")
+
+
+def bind_opencli_browser_session(session=OPENCLI_PRODUCTION_SESSION, max_attempts=3, retry_interval=1.0):
+    last_url = ""
+    for attempt in range(max_attempts):
+        command = get_opencli_command() + ["browser", session, "bind"]
+        result = subprocess.run(command, capture_output=True, text=True, encoding="utf-8")
+        if result.returncode != 0:
+            message = (result.stderr or result.stdout or "").strip()
+            print(f"OpenCLI browser bind 실패: {message}")
+            raise RuntimeError("OpenCLI browser bind failed")
+
+        payload = parse_json_stdout(result.stdout)
+        last_url = str(payload.get("url") or "")
+        if is_linkedin_saved_posts_url(last_url):
+            print("OpenCLI browser bind 완료")
+            return payload
+
+        print(f"OpenCLI browser bind URL 불일치: {last_url}")
+        if attempt + 1 < max_attempts:
+            time.sleep(retry_interval)
+
+    raise RuntimeError(f"OpenCLI browser bind attached to unexpected URL: {last_url}")
+
+
+def prepare_owned_chrome_window_for_bind(hwnd, settle_delay=1.0):
+    if not focus_chrome_window(hwnd):
+        return False
+    if settle_delay:
+        time.sleep(settle_delay)
     return True
 
 
@@ -113,6 +308,48 @@ def stop_opencli_daemon():
     return True
 
 
+def run_opencli_browser_eval(script, session=OPENCLI_PRODUCTION_SESSION):
+    command = get_opencli_command() + ["browser", session, "eval", script]
+    result = subprocess.run(command, capture_output=True, text=True, encoding="utf-8")
+    if result.returncode != 0:
+        message = (result.stderr or result.stdout or "").strip()
+        raise RuntimeError(f"OpenCLI browser eval failed: {message}")
+    return parse_json_stdout(result.stdout)
+
+
+def run_opencli_browser_state(session=OPENCLI_PRODUCTION_SESSION):
+    command = get_opencli_command() + ["browser", session, "state"]
+    result = subprocess.run(command, capture_output=True, text=True, encoding="utf-8")
+    if result.returncode != 0:
+        message = (result.stderr or result.stdout or "").strip()
+        raise RuntimeError(f"OpenCLI browser state failed: {message}")
+    return result.stdout or ""
+
+
+def validate_bound_opencli_session(session=OPENCLI_PRODUCTION_SESSION):
+    script = """(() => ({
+  href: location.href,
+  title: document.title,
+  text: (document.body && document.body.innerText || "").slice(0, 5000)
+}))()"""
+    page = run_opencli_browser_eval(script, session=session)
+    state = run_opencli_browser_state(session=session)
+    href = str(page.get("href") or "")
+    title = str(page.get("title") or "")
+    text = str(page.get("text") or "")
+    combined = f"{href}\n{title}\n{text}\n{state}"
+    lowered = combined.lower()
+
+    if "checkpoint" in lowered or "login" in lowered or "authwall" in lowered:
+        raise LinkedInAuthRequiredError("login_required", href)
+    if "linkedin.com/my-items/saved-posts" not in href:
+        raise RuntimeError(f"LinkedIn saved posts URL was not confirmed: {href}")
+    if "저장한 게시물" not in combined and "Saved" not in combined:
+        raise RuntimeError("LinkedIn saved posts page was not confirmed")
+
+    return {"site": "linkedin", "logged_in": True, "public_id": page.get("public_id")}
+
+
 def run_opencli_collector(crawl_start_time, session=OPENCLI_PRODUCTION_SESSION):
     stamp = crawl_start_time.strftime("%Y%m%d_%H%M%S")
     raw_dir = os.path.join(OPENCLI_RUNTIME_DIR, "raw", stamp)
@@ -125,6 +362,7 @@ def run_opencli_collector(crawl_start_time, session=OPENCLI_PRODUCTION_SESSION):
         TARGET_URL,
         "--out",
         raw_dir,
+        "--use-bound-session",
         "--until-exhausted",
     ]
     result = subprocess.run(command, capture_output=True, text=True, encoding="utf-8")
@@ -155,9 +393,18 @@ def validate_opencli_payload(payload):
 
 
 def collect_opencli_posts(crawl_start_time):
+    owned_hwnd = None
+    opencli_session_touched = False
+    daemon_was_running = None
     try:
-        whoami = run_opencli_whoami()
-        print(f"✅ OpenCLI LinkedIn 로그인 확인: {whoami.get('site', 'linkedin')}")
+        owned_hwnd = open_owned_chrome_window()
+        if not prepare_owned_chrome_window_for_bind(owned_hwnd):
+            raise RuntimeError(f"OpenCLI Chrome focus failed for HWND {owned_hwnd}")
+        daemon_was_running = is_opencli_daemon_running()
+        opencli_session_touched = True
+        bind_opencli_browser_session()
+        bound_session_state = validate_bound_opencli_session()
+        print(f"✅ OpenCLI LinkedIn 저장글 창 확인: {bound_session_state.get('site', 'linkedin')}")
 
         raw_dir, collection_summary = run_opencli_collector(crawl_start_time)
         print(
@@ -177,15 +424,27 @@ def collect_opencli_posts(crawl_start_time):
         )
         metadata["opencli_collection"] = collection_summary
         metadata["opencli_whoami"] = {
-            "site": whoami.get("site"),
-            "logged_in": whoami.get("logged_in"),
-            "public_id": whoami.get("public_id"),
+            "site": bound_session_state.get("site"),
+            "logged_in": bound_session_state.get("logged_in"),
+            "public_id": bound_session_state.get("public_id"),
         }
         return payload["posts"], metadata
     finally:
-        cleanup_opencli_browser_session()
-        if should_stop_opencli_daemon():
-            stop_opencli_daemon()
+        if opencli_session_touched:
+            try:
+                cleanup_opencli_browser_session()
+            except RuntimeError as exc:
+                print(f"OpenCLI browser cleanup 실패: {exc}")
+        if opencli_session_touched and should_stop_opencli_daemon() and daemon_was_running is False:
+            try:
+                stop_opencli_daemon()
+            except RuntimeError as exc:
+                print(f"OpenCLI daemon cleanup 실패: {exc}")
+        if owned_hwnd is not None:
+            try:
+                close_owned_chrome_window(owned_hwnd)
+            except RuntimeError as exc:
+                print(f"Chrome window cleanup 실패: {exc}")
 
 
 def get_post_identity(post):
@@ -421,12 +680,24 @@ class LinkedinScraper:
         convert_json_to_md(full_file)
         return full_file, final_posts, new_items
 
-if __name__ == "__main__":
+def main(argv=None):
     configure_text_output(sys.stdout)
     configure_text_output(sys.stderr)
     parser = argparse.ArgumentParser(description='LinkedIn 스크래퍼')
     parser.add_argument('--mode', choices=['all', 'update'], default='update', help='크롤링 모드')
-    args = parser.parse_args()
+    args = parser.parse_args(argv)
+    global CRAWL_MODE
     CRAWL_MODE = "update only" if args.mode == "update" else "all"
     scraper = LinkedinScraper()
-    scraper.run()
+    try:
+        scraper.run()
+    except LinkedInAuthRequiredError as exc:
+        exit_auth_required(
+            "linkedin",
+            reason=exc.reason,
+            current_url=exc.current_url,
+        )
+
+
+if __name__ == "__main__":
+    main()
