@@ -1,0 +1,28 @@
+
+🖼️ 이미지 처리 시작: 대상 게시글 1건, 후보 이미지 1개
+   ✅ 이미지 처리 완료: 신규 1개 저장, 기존 0개 유지, 스킵 0개, 실패 0개
+
+🏁 Total Full 저장 완료: C:\Users\Public\Documents\ESTsoft\CreatorTemp\scrap-sns-manual-qa-27g4i2gw\output_total\total_full_20260709.json (총 2개)
+SNS_SCRAP_SUMMARY {"platform_results": {"linkedin": {"status": "ok"}}, "auth_required": []}
+{
+  "request_count": 1,
+  "requested_urls": [
+    "https://media.licdn.com/new.jpg?sig=one"
+  ],
+  "post_count": 2,
+  "posts": [
+    {
+      "id": "old-post",
+      "local_images": [
+        "web_viewer/images/old.jpg"
+      ]
+    },
+    {
+      "id": "new-post",
+      "local_images": [
+        "web_viewer/images/c2b9325036d0b2dfe4a290c0167d4afc.jpg"
+      ]
+    }
+  ],
+  "created_image_count": 2
+}

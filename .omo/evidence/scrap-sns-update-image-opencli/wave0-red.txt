@@ -1,0 +1,180 @@
+============================= test session starts =============================
+platform win32 -- Python 3.13.14, pytest-9.0.2, pluggy-1.6.0
+rootdir: D:\vibe-coding\scrap_sns
+configfile: pytest.ini
+plugins: anyio-4.12.1, asyncio-1.3.0, base-url-2.1.0, cov-7.0.0, playwright-0.7.2
+asyncio: mode=Mode.STRICT, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function
+collected 21 items
+
+tests\unit\test_opencli_cleanup.py F                                     [  4%]
+tests\unit\test_total_scrap_local_images.py .F                           [ 14%]
+tests\unit\test_total_scrap_orchestration.py ....F.                      [ 42%]
+tests\integration\test_run_scrap_stats.py ........F...                   [100%]
+
+================================== FAILURES ===================================
+_______ test_linkedin_opencli_collector_declares_browser_close_cleanup ________
+
+    def test_linkedin_opencli_collector_declares_browser_close_cleanup():
+        script_path = Path(__file__).resolve().parents[2] / "scripts" / "linkedin_opencli_shadow_collect.mjs"
+        source = script_path.read_text(encoding="utf-8")
+    
+>       assert 'browser(session, ["close"]' in source
+E       assert 'browser(session, ["close"]' in '#!/usr/bin/env node\nimport { spawnSync } from "node:child_process";\nimport { mkdirSync, readFileSync, writeFileSync...ummary, null, 2));\n}\n\ntry {\n  main();\n} catch (error) {\n  console.error(error.message);\n  process.exit(1);\n}\n'
+
+tests\unit\test_opencli_cleanup.py:8: AssertionError
+_____ test_linkedin_signed_url_query_change_reuses_preserved_local_image ______
+
+tmp_path = WindowsPath('C:/Users/Public/Documents/ESTsoft/CreatorTemp/pytest-of-ahnbu/pytest-40/test_linkedin_signed_url_query0')
+
+    def test_linkedin_signed_url_query_change_reuses_preserved_local_image(tmp_path):
+        repo_root = Path(__file__).resolve().parents[2]
+        image_root = tmp_path / "web_viewer" / "images"
+        image_root.mkdir(parents=True)
+        expected_image = "web_viewer/images/linkedin-existing.jpg"
+        (image_root / "linkedin-existing.jpg").write_bytes(b"linkedin")
+    
+        output_total = tmp_path / "output_total"
+        output_total.mkdir()
+        old_url = (
+            "https://media.licdn.com/dms/image/v2/D5622AQH-image/feedshare-shrink_800/"
+            "feedshare-shrink_800/0/1771147145934?e=1784764800&v=beta&t=old-token"
+        )
+        new_url = (
+            "https://media.licdn.com/dms/image/v2/D5622AQH-image/feedshare-shrink_800/"
+            "feedshare-shrink_800/0/1771147145934?e=1785369600&v=beta&t=new-token"
+        )
+        (output_total / "total_full_20990101.json").write_text(
+            json.dumps(
+                {
+                    "posts": [
+                        {
+                            "platform_id": "LINKEDIN1",
+                            "sns_platform": "linkedin",
+                            "media": [old_url],
+                            "local_images": [expected_image],
+                        }
+                    ]
+                },
+                ensure_ascii=False,
+            ),
+            encoding="utf-8",
+        )
+    
+        env = os.environ.copy()
+        env["PYTHONPATH"] = str(repo_root)
+        script = f"""
+    import json
+    import total_scrap
+    
+    new_url = {new_url!r}
+    
+    total_scrap.PROJECT_ROOT = {str(tmp_path)!r}
+    total_scrap.OUTPUT_TOTAL_DIR = {str(output_total)!r}
+    
+    preserved = total_scrap.collect_preserved_local_images()
+    fs_path, web_path = total_scrap.get_local_image_paths(new_url)
+    print(json.dumps({{
+        "preserved": preserved.get(new_url),
+        "web_path": web_path,
+    }}, ensure_ascii=False))
+    """
+    
+        completed = subprocess.run(
+            [sys.executable, "-c", script],
+            cwd=repo_root,
+            capture_output=True,
+            text=True,
+            env=env,
+            check=False,
+        )
+    
+        assert completed.returncode == 0, completed.stderr
+        payload = json.loads(completed.stdout.strip().splitlines()[-1])
+>       assert payload["preserved"] == expected_image
+E       AssertionError: assert None == 'web_viewer/images/linkedin-existing.jpg'
+
+tests\unit\test_total_scrap_local_images.py:140: AssertionError
+_ test_run_update_downloads_images_only_for_posts_missing_from_previous_total _
+
+tmp_path = WindowsPath('C:/Users/Public/Documents/ESTsoft/CreatorTemp/pytest-of-ahnbu/pytest-40/test_run_update_downloads_imag0')
+
+    def test_run_update_downloads_images_only_for_posts_missing_from_previous_total(tmp_path):
+        script = f"""
+    import json
+    from pathlib import Path
+    import total_scrap
+    
+    events = []
+    output_total = Path({str(tmp_path / "output_total")!r})
+    output_total.mkdir()
+    (output_total / "total_full_20990101.json").write_text(json.dumps({{
+        "posts": [
+            {{"sns_platform": "linkedin", "platform_id": "old-post", "media": ["https://media.licdn.com/old.jpg"]}}
+        ]
+    }}, ensure_ascii=False), encoding="utf-8")
+    
+    def fake_run_scrapers_in_parallel(mode="update"):
+        events.append(["run_scrapers", mode])
+        return {{"threads": {{"status": "ok"}}}}
+    
+    def fake_merge_results():
+        events.append(["merge_results"])
+        return ([
+            {{"sns_platform": "linkedin", "platform_id": "old-post", "media": ["https://media.licdn.com/old.jpg"]}},
+            {{"sns_platform": "linkedin", "platform_id": "new-post", "media": ["https://media.licdn.com/new.jpg"]}},
+        ], 0, 2, 0)
+    
+    def fake_download_images(posts):
+        events.append(["download_images", [post["platform_id"] for post in posts]])
+    
+    def fake_save_total(posts, threads_count, linkedin_count, twitter_count):
+        events.append(["save_total", [post["platform_id"] for post in posts]])
+    
+    total_scrap.OUTPUT_TOTAL_DIR = str(output_total)
+    total_scrap.run_scrapers_in_parallel = fake_run_scrapers_in_parallel
+    total_scrap.merge_results = fake_merge_results
+    total_scrap.download_images = fake_download_images
+    total_scrap.save_total = fake_save_total
+    total_scrap.cleanup_old_output_json_after_success = lambda: True
+    
+    total_scrap.run(mode="update")
+    print(json.dumps(events, ensure_ascii=False))
+    """
+    
+        completed = _run_total_scrap_probe(script, tmp_path)
+    
+        assert completed.returncode == 0, completed.stderr
+>       assert json.loads(completed.stdout.strip().splitlines()[-1]) == [
+            ["run_scrapers", "update"],
+            ["merge_results"],
+            ["download_images", ["new-post"]],
+            ["save_total", ["old-post", "new-post"]],
+        ]
+E       AssertionError: assert [['run_scrape... 'new-post']]] == [['run_scrape... 'new-post']]]
+E         
+E         At index 2 diff: ['download_images', ['old-post', 'new-post']] != ['download_images', ['new-post']]
+E         Use -v to get more diff
+
+tests\unit\test_total_scrap_orchestration.py:242: AssertionError
+_________________ test_scrap_progress_maps_image_stage_lines __________________
+
+    def test_scrap_progress_maps_image_stage_lines():
+        import scrap_sns_server as server
+    
+>       assert (
+            server._scrap_progress_message_from_line(
+                "\U0001f5bc\ufe0f \uc774\ubbf8\uc9c0 \ucc98\ub9ac \uc2dc\uc791: \ub300\uc0c1 \uac8c\uc2dc\uae00 2\uac74, \ud6c4\ubcf4 \uc774\ubbf8\uc9c0 3\uac1c"
+            )
+            == "이미지 처리 시작: 대상 게시글 2건, 후보 이미지 3개"
+        )
+E       AssertionError: assert None == '이미지 처리 시작: 대상 게시글 2건, 후보 이미지 3개'
+E        +  where None = <function _scrap_progress_message_from_line at 0x0000023383C76D40>('\U0001f5bc\ufe0f \uc774\ubbf8\uc9c0 \ucc98\ub9ac \uc2dc\uc791: \ub300\uc0c1 \uac8c\uc2dc\uae00 2\uac74, \ud6c4\ubcf4 \uc774\ubbf8\uc9c0 3\uac1c')
+E        +    where <function _scrap_progress_message_from_line at 0x0000023383C76D40> = <module 'scrap_sns_server' from 'D:\\vibe-coding\\scrap_sns\\scrap_sns_server.py'>._scrap_progress_message_from_line
+
+tests\integration\test_run_scrap_stats.py:411: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/unit/test_opencli_cleanup.py::test_linkedin_opencli_collector_declares_browser_close_cleanup
+FAILED tests/unit/test_total_scrap_local_images.py::test_linkedin_signed_url_query_change_reuses_preserved_local_image
+FAILED tests/unit/test_total_scrap_orchestration.py::test_run_update_downloads_images_only_for_posts_missing_from_previous_total
+FAILED tests/integration/test_run_scrap_stats.py::test_scrap_progress_maps_image_stage_lines
+======================== 4 failed, 17 passed in 4.65s =========================

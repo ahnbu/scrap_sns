@@ -1,0 +1,26 @@
+SESSION=linkedin_saved_production
+--- open surrogate collection tab ---
+{
+  "url": "https://example.com",
+  "page": "132BD09D802AAFFC8BA08EB1D2B8691C"
+}
+--- daemon after open ---
+Daemon: running (PID 44800)
+Version: v1.8.6
+Uptime: 11s
+Extension: connected (v1.0.22)
+Profiles: 5mzdn866 v1.0.22
+Memory: 62.9 MB
+Port: 19825
+--- daemon after cleanup ---
+Daemon: running (PID 44800)
+Version: v1.8.6
+Uptime: 2m 1s
+Extension: connected (v1.0.22)
+Profiles: 5mzdn866 v1.0.22
+Memory: 62 MB
+Port: 19825
+--- daemon after cleanup retry ---
+Daemon: not running
+--- daemon after idempotence check ---
+Daemon: not running
