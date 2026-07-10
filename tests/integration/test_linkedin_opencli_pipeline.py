@@ -141,7 +141,7 @@ def test_collect_opencli_posts_cleans_browser_session_before_daemon_stop(monkeyp
     monkeypatch.setattr(
         linkedin_scrap,
         "run_opencli_collector",
-        lambda _crawl_start_time: (
+        lambda _crawl_start_time, existing_codes=None: (
             "raw",
             {"pages_collected": 1, "total_unique_activity_ids": 1},
         ),
@@ -198,7 +198,7 @@ def test_collect_opencli_posts_keeps_browser_cleanup_when_daemon_stop_is_disable
     monkeypatch.setattr(
         linkedin_scrap,
         "run_opencli_collector",
-        lambda _crawl_start_time: (
+        lambda _crawl_start_time, existing_codes=None: (
             "raw",
             {"pages_collected": 1, "total_unique_activity_ids": 1},
         ),
@@ -395,7 +395,7 @@ def test_collect_opencli_posts_uses_bound_validation_without_whoami(monkeypatch)
     monkeypatch.setattr(
         linkedin_scrap,
         "run_opencli_collector",
-        lambda _crawl_start_time: ("raw", {"pages_collected": 1, "total_unique_activity_ids": 1}),
+        lambda _crawl_start_time, existing_codes=None: ("raw", {"pages_collected": 1, "total_unique_activity_ids": 1}),
     )
     monkeypatch.setattr(
         linkedin_scrap,
@@ -492,7 +492,7 @@ def test_collect_opencli_posts_closes_only_recorded_hwnd_after_later_failure(mon
         "validate_bound_opencli_session",
         lambda: {"site": "linkedin", "logged_in": True, "public_id": None},
     )
-    monkeypatch.setattr(linkedin_scrap, "run_opencli_collector", lambda _crawl_start_time: (_ for _ in ()).throw(RuntimeError("boom")))
+    monkeypatch.setattr(linkedin_scrap, "run_opencli_collector", lambda _crawl_start_time, existing_codes=None: (_ for _ in ()).throw(RuntimeError("boom")))
     monkeypatch.setattr(
         linkedin_scrap,
         "cleanup_opencli_browser_session",
@@ -530,7 +530,7 @@ def test_collect_opencli_posts_fails_before_bind_when_focus_fails(monkeypatch):
     monkeypatch.setattr(
         linkedin_scrap,
         "run_opencli_collector",
-        lambda _crawl_start_time: ("raw", {"pages_collected": 1, "total_unique_activity_ids": 1}),
+        lambda _crawl_start_time, existing_codes=None: ("raw", {"pages_collected": 1, "total_unique_activity_ids": 1}),
     )
     monkeypatch.setattr(
         linkedin_scrap,
@@ -643,3 +643,23 @@ def test_all_mode_collector_keeps_until_exhausted(monkeypatch, tmp_path):
     assert "--until-exhausted" in command
     assert "--existing-ids-file" not in command
     assert "--stop-after-existing-streak" not in command
+
+
+def test_update_metadata_records_fast_stop_without_treating_unobserved_as_deletion():
+    import linkedin_scrap
+
+    old_posts = [
+        {"platform_id": "old-1", "sequence_id": 1, "full_text": "old"},
+        {"platform_id": "old-2", "sequence_id": 2, "full_text": "old"},
+    ]
+    scraped_posts = [
+        {"platform_id": "new-1", "sequence_id": 0, "full_text": "new"},
+        {"platform_id": "old-2", "sequence_id": 2, "full_text": "old again"},
+    ]
+
+    final_posts, new_items, report = linkedin_scrap.merge_linkedin_full_posts(old_posts, scraped_posts, "update only")
+
+    assert {post["platform_id"] for post in final_posts} == {"old-1", "old-2", "new-1"}
+    assert [post["platform_id"] for post in new_items] == ["new-1"]
+    assert report["unobserved_existing_count"] == 1
+    assert report["unobserved_existing_policy"] == "preserved_not_deletion_candidate"

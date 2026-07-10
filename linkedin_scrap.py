@@ -509,11 +509,17 @@ def merge_linkedin_full_posts(old_posts, scraped_posts, crawl_mode):
     final_posts = list(final_by_id.values())
     final_posts.sort(key=lambda item: item.get("sequence_id", 0), reverse=True)
 
+    unobserved_policy = (
+        "preserved_not_deletion_candidate"
+        if crawl_mode == "update only"
+        else "preserved_pending_full_sync_review"
+    )
     merge_report = {
         "crawl_mode": crawl_mode,
         "observed_existing_count": len(observed_existing),
         "unobserved_existing_count": len(unobserved_existing_ids),
         "unobserved_existing_ids": unobserved_existing_ids[:20],
+        "unobserved_existing_policy": unobserved_policy,
     }
 
     return final_posts, new_items, merge_report
@@ -551,7 +557,7 @@ class LinkedinScraper:
             if CRAWL_MODE == "update only":
                 print(
                     f"🔄 UPDATE ONLY 모드: 기존 {len(self.existing_codes)}건과 대조, "
-                    "OpenCLI 현재 저장목록과 보수 병합합니다."
+                    f"기수집 {CONSECUTIVE_EXISTING_LIMIT}건 연속 확인 시 수집을 중단합니다."
                 )
 
     def get_latest_full_file(self):
@@ -651,6 +657,7 @@ class LinkedinScraper:
                 "observed_existing_count": merge_report["observed_existing_count"],
                 "unobserved_existing_count": merge_report["unobserved_existing_count"],
                 "unobserved_existing_ids": merge_report["unobserved_existing_ids"],
+                "unobserved_existing_policy": merge_report["unobserved_existing_policy"],
             })
 
         full_file = os.path.join(DATA_DIR, f"linkedin_py_full_{date_str}.json")
@@ -686,6 +693,11 @@ class LinkedinScraper:
                 "opencli_entity_without_cluster_reference_count": opencli_metadata.get("entity_without_cluster_reference_count"),
                 "all_mode_observed_existing_count": merge_report["observed_existing_count"],
                 "all_mode_unobserved_existing_count": merge_report["unobserved_existing_count"],
+                "unobserved_existing_policy": merge_report["unobserved_existing_policy"],
+                "opencli_end_reason": opencli_collection.get("end_reason"),
+                "opencli_existing_streak_stop_limit": opencli_collection.get("existing_streak_stop_limit"),
+                "opencli_existing_streak_at_end": opencli_collection.get("existing_streak_at_end"),
+                "opencli_existing_ids_loaded": opencli_collection.get("existing_ids_loaded"),
                 "merge_history": merge_history
             },
             "posts": final_posts

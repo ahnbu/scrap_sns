@@ -1,7 +1,10 @@
 import test from "node:test";
 import assert from "node:assert/strict";
+import { mkdtempSync, writeFileSync, rmSync } from "node:fs";
+import { join } from "node:path";
+import { tmpdir } from "node:os";
 
-import { applyExistingStreak } from "../../scripts/linkedin_opencli_shadow_collect.mjs";
+import { applyExistingStreak, loadExistingIdsFile } from "../../scripts/linkedin_opencli_shadow_collect.mjs";
 
 test("applyExistingStreak reaches limit after consecutive existing IDs", () => {
   const existingIds = new Set(Array.from({ length: 25 }, (_, index) => `old-${index + 1}`));
@@ -34,4 +37,16 @@ test("applyExistingStreak is disabled when limit is zero", () => {
   const result = applyExistingStreak(["old-1"], existingIds, 0, 0);
 
   assert.deepEqual(result, { streak: 1, reached: false });
+});
+
+test("loadExistingIdsFile reads platform IDs from JSON array", () => {
+  const dir = mkdtempSync(join(tmpdir(), "linkedin-existing-"));
+  const file = join(dir, "existing_ids.json");
+  writeFileSync(file, `${JSON.stringify(["111", "222", "", null])}\n`, "utf8");
+  try {
+    const result = loadExistingIdsFile(file);
+    assert.deepEqual([...result].sort(), ["111", "222"]);
+  } finally {
+    rmSync(dir, { recursive: true, force: true });
+  }
 });

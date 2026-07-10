@@ -179,6 +179,15 @@ function readRaw(rawPath) {
   return readFileSync(rawPath, "utf8").replace(/^\uFEFF/, "");
 }
 
+export function loadExistingIdsFile(path) {
+  if (!path) return new Set();
+  const values = JSON.parse(readFileSync(path, "utf8"));
+  if (!Array.isArray(values)) {
+    throw new Error("--existing-ids-file must contain a JSON array");
+  }
+  return new Set(values.filter((value) => typeof value === "string" && value.length > 0));
+}
+
 export function applyExistingStreak(orderedIds, existingIds, currentStreak, limit) {
   let streak = currentStreak;
   let reached = false;
@@ -205,6 +214,10 @@ function main() {
   const maxPages = Number(args["max-pages"] || 200);
   const useBoundSession = Boolean(args["use-bound-session"]);
   ownsBrowserSession = !useBoundSession;
+  const existingIds = loadExistingIdsFile(args["existing-ids-file"]);
+  const stopAfterExistingStreak = Number(args["stop-after-existing-streak"] || 0);
+  let existingStreak = 0;
+  let existingStreakReached = false;
 
   if (ownsBrowserSession) {
     browser(session, ["open", url, "--window", "background"], { expectJson: true });
@@ -223,6 +236,14 @@ function main() {
   let noNewIdsAttempts = 0;
   let endReason = "max_pages";
 
+  function observeIdsForFastStop(ids) {
+    const freshIds = ids.filter((id) => !seenIds.has(id));
+    const result = applyExistingStreak(freshIds, existingIds, existingStreak, stopAfterExistingStreak);
+    existingStreak = result.streak;
+    existingStreakReached = result.reached;
+    return freshIds;
+  }
+
   for (let pageIndex = 1; pageIndex <= maxPages; pageIndex += 1) {
     const entry = latestGraphqlEntry(getNetworkEntries(session, pageIndex === 1 ? "2m" : "45s"), seenUrls);
     if (!entry) {
@@ -231,8 +252,9 @@ function main() {
         seenUrls.add(fetchedDetail.url);
         const fetchedCluster = extractCluster(fetchedDetail);
         const fetchedIds = activityIdsFromDetail(fetchedDetail);
+        const freshIds = observeIdsForFastStop(fetchedIds);
         const before = seenIds.size;
-        fetchedIds.forEach((id) => seenIds.add(id));
+        freshIds.forEach((id) => seenIds.add(id));
         const newIds = seenIds.size - before;
         noNewIdsAttempts = newIds > 0 ? 0 : noNewIdsAttempts + 1;
         const token = fetchedCluster?.metadata?.paginationToken || "";
@@ -263,8 +285,9 @@ function main() {
       const cluster = extractCluster(detail);
       const token = cluster?.metadata?.paginationToken || "";
       const ids = activityIdsFromDetail(detail);
+      const freshIds = observeIdsForFastStop(ids);
       const before = seenIds.size;
-      ids.forEach((id) => seenIds.add(id));
+      freshIds.forEach((id) => seenIds.add(id));
       const newIds = seenIds.size - before;
       noNewIdsAttempts = newIds > 0 ? 0 : noNewIdsAttempts + 1;
 
@@ -303,6 +326,11 @@ function main() {
       break;
     }
 
+    if (existingStreakReached) {
+      endReason = `existing_streak_${stopAfterExistingStreak}`;
+      break;
+    }
+
     const lastPage = pages[pages.length - 1];
     const lastDetail = lastPage ? JSON.parse(readRaw(lastPage.raw_path, lastPage, dryRun)) : null;
     const lastCluster = lastDetail ? extractCluster(lastDetail) : null;
@@ -317,8 +345,9 @@ function main() {
       seenUrls.add(fetchedDetail.url);
       const fetchedCluster = extractCluster(fetchedDetail);
       const fetchedIds = activityIdsFromDetail(fetchedDetail);
+      const freshIds = observeIdsForFastStop(fetchedIds);
       const before = seenIds.size;
-      fetchedIds.forEach((id) => seenIds.add(id));
+      freshIds.forEach((id) => seenIds.add(id));
       const newIds = seenIds.size - before;
       noNewIdsAttempts = newIds > 0 ? 0 : noNewIdsAttempts + 1;
       const token = fetchedCluster?.metadata?.paginationToken || "";
@@ -346,6 +375,10 @@ function main() {
         break;
       }
       seenTokens.add(token);
+      if (existingStreakReached) {
+        endReason = `existing_streak_${stopAfterExistingStreak}`;
+        break;
+      }
     } catch {
       let clicked = false;
       try {
@@ -378,6 +411,9 @@ function main() {
     end_reason: endReason,
     pages_collected: pages.length,
     total_unique_activity_ids: seenIds.size,
+    existing_streak_stop_limit: stopAfterExistingStreak,
+    existing_streak_at_end: existingStreak,
+    existing_ids_loaded: existingIds.size,
     pages,
   };
 
