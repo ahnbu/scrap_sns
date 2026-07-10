@@ -2,6 +2,7 @@
 import { spawnSync } from "node:child_process";
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
+import { pathToFileURL } from "node:url";
 
 function parseArgs(argv) {
   const args = { session: "linkedin_saved_shadow", url: "https://www.linkedin.com/my-items/saved-posts/" };
@@ -176,6 +177,18 @@ function writeRaw(outDir, stamp, pageIndex, detail) {
 
 function readRaw(rawPath) {
   return readFileSync(rawPath, "utf8").replace(/^\uFEFF/, "");
+}
+
+export function applyExistingStreak(orderedIds, existingIds, currentStreak, limit) {
+  let streak = currentStreak;
+  let reached = false;
+  for (const id of orderedIds) {
+    streak = existingIds.has(id) ? streak + 1 : 0;
+    if (limit > 0 && streak >= limit) {
+      reached = true;
+    }
+  }
+  return { streak, reached };
 }
 
 let activeSession = "";
@@ -379,17 +392,19 @@ function main() {
   console.log(JSON.stringify(summary, null, 2));
 }
 
-try {
-  main();
-} catch (error) {
-  console.error(error.message);
-  process.exitCode = 1;
-} finally {
-  if (activeSession && ownsBrowserSession) {
-    try {
-      closeBrowserSession(activeSession);
-    } catch (error) {
-      console.error(`OpenCLI browser cleanup failed: ${error.message}`);
+if (import.meta.url === pathToFileURL(process.argv[1]).href) {
+  try {
+    main();
+  } catch (error) {
+    console.error(error.message);
+    process.exitCode = 1;
+  } finally {
+    if (activeSession && ownsBrowserSession) {
+      try {
+        closeBrowserSession(activeSession);
+      } catch (error) {
+        console.error(`OpenCLI browser cleanup failed: ${error.message}`);
+      }
     }
   }
 }

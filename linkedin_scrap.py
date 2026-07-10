@@ -27,6 +27,7 @@ CHROME_PATHS = [
 # CLI 인자 파싱
 CRAWL_MODE = "update only"  # 기본값 (__main__ 블록에서 CLI 인자로 덮어씀)
 CRAWL_START_TIME = datetime.now()
+CONSECUTIVE_EXISTING_LIMIT = 20
 
 # --- 헬퍼 함수 ---
 
@@ -350,7 +351,15 @@ def validate_bound_opencli_session(session=OPENCLI_PRODUCTION_SESSION):
     return {"site": "linkedin", "logged_in": True, "public_id": page.get("public_id")}
 
 
-def run_opencli_collector(crawl_start_time, session=OPENCLI_PRODUCTION_SESSION):
+def write_existing_ids_file(raw_dir, existing_codes):
+    existing_ids = sorted(str(code) for code in existing_codes if code)
+    os.makedirs(raw_dir, exist_ok=True)
+    ids_path = os.path.join(raw_dir, "existing_ids.json")
+    save_json(ids_path, existing_ids)
+    return ids_path
+
+
+def run_opencli_collector(crawl_start_time, existing_codes=None, session=OPENCLI_PRODUCTION_SESSION):
     stamp = crawl_start_time.strftime("%Y%m%d_%H%M%S")
     raw_dir = os.path.join(OPENCLI_RUNTIME_DIR, "raw", stamp)
     command = [
@@ -363,8 +372,17 @@ def run_opencli_collector(crawl_start_time, session=OPENCLI_PRODUCTION_SESSION):
         "--out",
         raw_dir,
         "--use-bound-session",
-        "--until-exhausted",
     ]
+    if CRAWL_MODE == "update only":
+        ids_path = write_existing_ids_file(raw_dir, existing_codes or set())
+        command.extend([
+            "--existing-ids-file",
+            ids_path,
+            "--stop-after-existing-streak",
+            str(CONSECUTIVE_EXISTING_LIMIT),
+        ])
+    else:
+        command.append("--until-exhausted")
     result = subprocess.run(command, capture_output=True, text=True, encoding="utf-8")
     if result.returncode != 0:
         message = (result.stderr or result.stdout or "").strip()
@@ -392,7 +410,7 @@ def validate_opencli_payload(payload):
         raise RuntimeError("OpenCLI cluster reference verification failed")
 
 
-def collect_opencli_posts(crawl_start_time):
+def collect_opencli_posts(crawl_start_time, existing_codes=None):
     owned_hwnd = None
     opencli_session_touched = False
     daemon_was_running = None
@@ -406,7 +424,7 @@ def collect_opencli_posts(crawl_start_time):
         bound_session_state = validate_bound_opencli_session()
         print(f"✅ OpenCLI LinkedIn 저장글 창 확인: {bound_session_state.get('site', 'linkedin')}")
 
-        raw_dir, collection_summary = run_opencli_collector(crawl_start_time)
+        raw_dir, collection_summary = run_opencli_collector(crawl_start_time, existing_codes=existing_codes)
         print(
             "📥 OpenCLI raw 수집 완료: "
             f"{collection_summary.get('pages_collected')} pages, "
@@ -550,7 +568,7 @@ class LinkedinScraper:
         start_time_dt = datetime.now()
         print("🚀 링크드인 스크래퍼 시작 (OpenCLI 기본 모드)")
 
-        self.posts, self.opencli_metadata = collect_opencli_posts(CRAWL_START_TIME)
+        self.posts, self.opencli_metadata = collect_opencli_posts(CRAWL_START_TIME, existing_codes=self.existing_codes)
         self.save_results()
 
         end_time_dt = datetime.now()

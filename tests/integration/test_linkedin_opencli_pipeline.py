@@ -1,4 +1,6 @@
+import json
 from datetime import datetime
+from pathlib import Path
 
 import pytest
 
@@ -576,3 +578,68 @@ def test_bound_validation_authwall_maps_to_auth_required_exit(monkeypatch):
 
     assert exc_info.value.code == AUTH_REQUIRED_EXIT_CODE
     assert events == ["unbind", "close", "stop", ("wm_close", 3003)]
+
+
+def test_update_mode_collector_uses_existing_streak_stop(monkeypatch, tmp_path):
+    import linkedin_scrap
+
+    commands = []
+
+    class FakeCompletedProcess:
+        returncode = 0
+        stdout = '{"pages_collected": 2, "total_unique_activity_ids": 20, "end_reason": "existing_streak_20"}'
+        stderr = ""
+
+    def fake_run(command, capture_output, text, encoding):
+        commands.append(command)
+        return FakeCompletedProcess()
+
+    monkeypatch.setattr(linkedin_scrap, "CRAWL_MODE", "update only")
+    monkeypatch.setattr(linkedin_scrap, "OPENCLI_RUNTIME_DIR", str(tmp_path))
+    monkeypatch.setattr(linkedin_scrap.subprocess, "run", fake_run)
+
+    raw_dir, summary = linkedin_scrap.run_opencli_collector(
+        datetime(2026, 7, 9, 18, 0, 0),
+        existing_codes={"111", "222"},
+    )
+
+    command = commands[0]
+    assert "--use-bound-session" in command
+    assert "--until-exhausted" not in command
+    assert "--existing-ids-file" in command
+    assert "--stop-after-existing-streak" in command
+    assert command[command.index("--stop-after-existing-streak") + 1] == "20"
+    ids_path = command[command.index("--existing-ids-file") + 1]
+    assert json.loads(Path(ids_path).read_text(encoding="utf-8")) == ["111", "222"]
+    assert summary["end_reason"] == "existing_streak_20"
+    assert raw_dir.endswith("raw\\20260709_180000") or raw_dir.endswith("raw/20260709_180000")
+
+
+def test_all_mode_collector_keeps_until_exhausted(monkeypatch, tmp_path):
+    import linkedin_scrap
+
+    commands = []
+
+    class FakeCompletedProcess:
+        returncode = 0
+        stdout = '{"pages_collected": 62, "total_unique_activity_ids": 602, "end_reason": "load_button_absent"}'
+        stderr = ""
+
+    def fake_run(command, capture_output, text, encoding):
+        commands.append(command)
+        return FakeCompletedProcess()
+
+    monkeypatch.setattr(linkedin_scrap, "CRAWL_MODE", "all")
+    monkeypatch.setattr(linkedin_scrap, "OPENCLI_RUNTIME_DIR", str(tmp_path))
+    monkeypatch.setattr(linkedin_scrap.subprocess, "run", fake_run)
+
+    linkedin_scrap.run_opencli_collector(
+        datetime(2026, 7, 9, 18, 0, 0),
+        existing_codes={"111", "222"},
+    )
+
+    command = commands[0]
+    assert "--use-bound-session" in command
+    assert "--until-exhausted" in command
+    assert "--existing-ids-file" not in command
+    assert "--stop-after-existing-streak" not in command
