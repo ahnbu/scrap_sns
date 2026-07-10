@@ -183,6 +183,21 @@ def record_chrome_window_candidates(reason, candidates):
     print(f"OpenCLI Chrome HWND candidates: {json.dumps(payload, ensure_ascii=False)}")
 
 
+def is_chrome_restore_prompt(candidate):
+    return "페이지를 복원하시겠습니까" in candidate.title or "restore pages" in candidate.title.lower()
+
+
+def select_owned_chrome_window_candidate(candidates):
+    if len(candidates) == 1:
+        return candidates[0]
+
+    non_restore_candidates = [candidate for candidate in candidates if not is_chrome_restore_prompt(candidate)]
+    if len(non_restore_candidates) == 1:
+        return non_restore_candidates[0]
+
+    return None
+
+
 def open_owned_chrome_window(poll_attempts=20, poll_interval=0.5):
     chrome_path = resolve_chrome_executable()
     if not chrome_path:
@@ -198,8 +213,9 @@ def open_owned_chrome_window(poll_attempts=20, poll_interval=0.5):
             for window in snapshot_visible_chrome_windows()
             if window.hwnd not in baseline
         ]
-        if len(latest_candidates) == 1:
-            return latest_candidates[0].hwnd
+        selected_candidate = select_owned_chrome_window_candidate(latest_candidates)
+        if selected_candidate:
+            return selected_candidate.hwnd
         if len(latest_candidates) > 1:
             record_chrome_window_candidates("ambiguous_candidates", latest_candidates)
             raise RuntimeError(f"{len(latest_candidates)} new visible Chrome windows after launch")
@@ -262,9 +278,20 @@ def is_linkedin_saved_posts_url(url):
     return "linkedin.com/my-items/saved-posts" in str(url or "")
 
 
-def bind_opencli_browser_session(session=OPENCLI_PRODUCTION_SESSION, max_attempts=3, retry_interval=1.0):
+def bind_opencli_browser_session(
+    session=OPENCLI_PRODUCTION_SESSION,
+    max_attempts=3,
+    retry_interval=1.0,
+    owned_hwnd=None,
+):
     last_url = ""
     for attempt in range(max_attempts):
+        attempt_number = attempt + 1
+        if owned_hwnd is not None:
+            if not prepare_owned_chrome_window_for_bind(owned_hwnd):
+                raise RuntimeError(f"OpenCLI Chrome focus failed for HWND {owned_hwnd}")
+            print(f"OpenCLI browser bind 전 LinkedIn 창 focus 완료: {attempt_number}/{max_attempts}")
+
         command = get_opencli_command() + ["browser", session, "bind"]
         result = subprocess.run(command, capture_output=True, text=True, encoding="utf-8")
         if result.returncode != 0:
@@ -278,15 +305,26 @@ def bind_opencli_browser_session(session=OPENCLI_PRODUCTION_SESSION, max_attempt
             print("OpenCLI browser bind 완료")
             return payload
 
-        print(f"OpenCLI browser bind URL 불일치: {last_url}")
+        print(
+            "OpenCLI browser bind URL 불일치 "
+            f"({attempt_number}/{max_attempts}): expected LinkedIn saved posts, actual={last_url}"
+        )
+        run_opencli_browser_session_command("unbind", session=session)
         if attempt + 1 < max_attempts:
             time.sleep(retry_interval)
 
     raise RuntimeError(f"OpenCLI browser bind attached to unexpected URL: {last_url}")
 
 
-def prepare_owned_chrome_window_for_bind(hwnd, settle_delay=1.0):
-    if not focus_chrome_window(hwnd):
+def prepare_owned_chrome_window_for_bind(hwnd, settle_delay=1.0, focus_attempts=3, focus_retry_interval=0.5):
+    focused = False
+    for attempt in range(focus_attempts):
+        if focus_chrome_window(hwnd):
+            focused = True
+            break
+        if attempt + 1 < focus_attempts:
+            time.sleep(focus_retry_interval)
+    if not focused:
         return False
     if settle_delay:
         time.sleep(settle_delay)
@@ -346,7 +384,7 @@ def validate_bound_opencli_session(session=OPENCLI_PRODUCTION_SESSION):
     if "linkedin.com/my-items/saved-posts" not in href:
         raise RuntimeError(f"LinkedIn saved posts URL was not confirmed: {href}")
     if "저장한 게시물" not in combined and "Saved" not in combined:
-        raise RuntimeError("LinkedIn saved posts page was not confirmed")
+        print("OpenCLI LinkedIn 저장글 페이지 문구 미확인: URL 기준으로 계속 진행")
 
     return {"site": "linkedin", "logged_in": True, "public_id": page.get("public_id")}
 
@@ -412,15 +450,15 @@ def validate_opencli_payload(payload):
 
 def collect_opencli_posts(crawl_start_time, existing_codes=None):
     owned_hwnd = None
-    opencli_session_touched = False
+    validated_bound_session = False
+    opencli_daemon_touched = False
     daemon_was_running = None
     try:
         owned_hwnd = open_owned_chrome_window()
-        if not prepare_owned_chrome_window_for_bind(owned_hwnd):
-            raise RuntimeError(f"OpenCLI Chrome focus failed for HWND {owned_hwnd}")
         daemon_was_running = is_opencli_daemon_running()
-        opencli_session_touched = True
-        bind_opencli_browser_session()
+        opencli_daemon_touched = True
+        bind_opencli_browser_session(owned_hwnd=owned_hwnd)
+        validated_bound_session = True
         bound_session_state = validate_bound_opencli_session()
         print(f"✅ OpenCLI LinkedIn 저장글 창 확인: {bound_session_state.get('site', 'linkedin')}")
 
@@ -448,12 +486,12 @@ def collect_opencli_posts(crawl_start_time, existing_codes=None):
         }
         return payload["posts"], metadata
     finally:
-        if opencli_session_touched:
+        if validated_bound_session:
             try:
                 cleanup_opencli_browser_session()
             except RuntimeError as exc:
                 print(f"OpenCLI browser cleanup 실패: {exc}")
-        if opencli_session_touched and should_stop_opencli_daemon() and daemon_was_running is False:
+        if opencli_daemon_touched and should_stop_opencli_daemon() and daemon_was_running is False:
             try:
                 stop_opencli_daemon()
             except RuntimeError as exc:

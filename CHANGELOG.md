@@ -4,6 +4,7 @@
 
 | 일시               | 유형       | 범위                           | 변경내용                                                                                                           |
 | ---------------- | -------- | ---------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| 2026-07-10 14:26 | fix | linkedin-opencli-bind | LinkedIn OpenCLI bind를 전용 Chrome 창 기준으로 재시도하고 wrong URL bind는 unbind만 수행하도록 안정화 |
 | 2026-07-10 13:37 | chore | tags | SNS 뷰어 태그 매핑 상태를 수집된 최신 결과로 갱신 |
 | 2026-07-10 13:36 | chore | data | 수집된 Threads 및 Twitter SNS 게시글 데이터 파일 추가 |
 | 2026-07-10 12:02 | fix | linkedin-collector | Node collector에 loadExistingIdsFile + observeIdsForFastStop 조기종료 로직 추가, merge_linkedin_full_posts에 unobserved_existing_policy/update_full_version metadata 추가, integration test 5곳 mock 시그니처 정정 |

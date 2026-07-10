@@ -4,6 +4,8 @@ from scripts.linkedin_opencli_shadow_parse import (
     extract_cluster_entity_result_urns,
     extract_save_state_activity_ids,
     parse_shadow_detail,
+    parse_shadow_raw,
+    save_json,
 )
 
 
@@ -84,3 +86,28 @@ def test_parse_shadow_detail_requires_cluster_reference_and_save_state():
     assert result["metadata"]["cluster_save_state_matched_post_count"] == 1
     assert result["metadata"]["entity_without_cluster_reference_count"] == 1
     assert result["metadata"]["entity_without_save_state_count"] == 1
+
+
+def test_parse_shadow_raw_ignores_existing_ids_file(tmp_path):
+    save_json(tmp_path / "existing_ids.json", ["111", "222"])
+    save_json(
+        tmp_path / "linkedin_opencli_raw_20260710141158_page001.json",
+        {
+            "body": {
+                "data": {
+                    "data": {
+                        "searchDashClustersByAll": {
+                            "elements": [],
+                        },
+                    },
+                },
+                "included": [],
+            },
+        },
+    )
+
+    payload = parse_shadow_raw(tmp_path, datetime(2026, 7, 10, 14, 11, 58), require_save_state=True)
+
+    assert payload["metadata"]["raw_file_count"] == 1
+    assert payload["metadata"]["raw_entity_result_count"] == 0
+    assert payload["posts"] == []

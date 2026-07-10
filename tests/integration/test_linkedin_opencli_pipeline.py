@@ -126,7 +126,7 @@ def test_collect_opencli_posts_cleans_browser_session_before_daemon_stop(monkeyp
     monkeypatch.setattr(linkedin_scrap, "open_owned_chrome_window", lambda: 1001)
     monkeypatch.setattr(linkedin_scrap, "focus_chrome_window", lambda _hwnd: True)
     monkeypatch.setattr(linkedin_scrap, "is_opencli_daemon_running", lambda: False)
-    monkeypatch.setattr(linkedin_scrap, "bind_opencli_browser_session", lambda: None)
+    monkeypatch.setattr(linkedin_scrap, "bind_opencli_browser_session", lambda owned_hwnd=None: None)
     monkeypatch.setattr(
         linkedin_scrap,
         "validate_bound_opencli_session",
@@ -183,7 +183,7 @@ def test_collect_opencli_posts_keeps_browser_cleanup_when_daemon_stop_is_disable
     monkeypatch.setattr(linkedin_scrap, "open_owned_chrome_window", lambda: 1001)
     monkeypatch.setattr(linkedin_scrap, "focus_chrome_window", lambda _hwnd: True)
     monkeypatch.setattr(linkedin_scrap, "is_opencli_daemon_running", lambda: False)
-    monkeypatch.setattr(linkedin_scrap, "bind_opencli_browser_session", lambda: None)
+    monkeypatch.setattr(linkedin_scrap, "bind_opencli_browser_session", lambda owned_hwnd=None: None)
     monkeypatch.setattr(
         linkedin_scrap,
         "validate_bound_opencli_session",
@@ -280,10 +280,48 @@ def test_is_opencli_daemon_running_does_not_match_not_running(monkeypatch):
     assert linkedin_scrap.is_opencli_daemon_running() is False
 
 
+def test_validate_bound_opencli_session_accepts_saved_url_without_loaded_page_text(monkeypatch):
+    import linkedin_scrap
+
+    monkeypatch.setattr(
+        linkedin_scrap,
+        "run_opencli_browser_eval",
+        lambda script, session=linkedin_scrap.OPENCLI_PRODUCTION_SESSION: {
+            "href": "https://www.linkedin.com/my-items/saved-posts/",
+            "title": "LinkedIn",
+            "text": "Loading...",
+        },
+    )
+    monkeypatch.setattr(linkedin_scrap, "run_opencli_browser_state", lambda session=linkedin_scrap.OPENCLI_PRODUCTION_SESSION: "")
+
+    assert linkedin_scrap.validate_bound_opencli_session() == {
+        "site": "linkedin",
+        "logged_in": True,
+        "public_id": None,
+    }
+
+
+def test_prepare_owned_chrome_window_for_bind_retries_focus_failure(monkeypatch):
+    import linkedin_scrap
+
+    events = []
+    focus_results = [False, True]
+
+    monkeypatch.setattr(linkedin_scrap, "focus_chrome_window", lambda hwnd: events.append(("focus", hwnd)) or focus_results.pop(0))
+    monkeypatch.setattr(linkedin_scrap.time, "sleep", lambda interval: events.append(("sleep", interval)))
+
+    assert linkedin_scrap.prepare_owned_chrome_window_for_bind(6161, settle_delay=0, focus_retry_interval=0) is True
+    assert events == [
+        ("focus", 6161),
+        ("sleep", 0),
+        ("focus", 6161),
+    ]
+
+
 def test_bind_opencli_browser_session_retries_until_saved_posts_url(monkeypatch):
     import linkedin_scrap
 
-    commands = []
+    events = []
     sleeps = []
     payloads = [
         '{"session":"linkedin_saved_production","url":"https://my-bookstations.vercel.app/","title":"마이 북스테이션"}',
@@ -298,19 +336,36 @@ def test_bind_opencli_browser_session_retries_until_saved_posts_url(monkeypatch)
             self.stdout = stdout
 
     def fake_run(command, capture_output, text, encoding):
-        commands.append(command)
-        return FakeCompletedProcess(payloads.pop(0))
+        action = command[-1]
+        if action == "bind":
+            events.append(("bind", None))
+            return FakeCompletedProcess(payloads.pop(0))
+        if action == "unbind":
+            events.append(("unbind", None))
+            return FakeCompletedProcess("{}")
+        pytest.fail(f"unexpected OpenCLI command: {command}")
 
+    def fake_prepare(hwnd):
+        events.append(("focus", hwnd))
+        return True
+
+    monkeypatch.setattr(linkedin_scrap, "prepare_owned_chrome_window_for_bind", fake_prepare)
     monkeypatch.setattr(linkedin_scrap.subprocess, "run", fake_run)
     monkeypatch.setattr(linkedin_scrap.time, "sleep", lambda interval: sleeps.append(interval))
 
-    linkedin_scrap.bind_opencli_browser_session(retry_interval=0)
+    linkedin_scrap.bind_opencli_browser_session(retry_interval=0, owned_hwnd=6161)
 
-    assert len(commands) == 2
+    assert events == [
+        ("focus", 6161),
+        ("bind", None),
+        ("unbind", None),
+        ("focus", 6161),
+        ("bind", None),
+    ]
     assert sleeps == [0]
 
 
-def test_collect_opencli_posts_cleans_opencli_after_wrong_url_bind_failure(monkeypatch):
+def test_collect_opencli_posts_refocuses_and_unbinds_between_wrong_url_bind_attempts(monkeypatch):
     import linkedin_scrap
 
     events = []
@@ -320,6 +375,12 @@ def test_collect_opencli_posts_cleans_opencli_after_wrong_url_bind_failure(monke
             self.returncode = returncode
             self.stdout = stdout
             self.stderr = stderr
+
+    wrong_payloads = [
+        '{"session":"linkedin_saved_production","url":"http://127.0.0.1:51981/","title":"Local"}',
+        '{"session":"linkedin_saved_production","url":"https://github.com/","title":"GitHub"}',
+        '{"session":"linkedin_saved_production","url":"https://github.com/","title":"GitHub"}',
+    ]
 
     def fake_run(command, capture_output, text, encoding):
         if command[-2:] == ["daemon", "status"]:
@@ -332,11 +393,12 @@ def test_collect_opencli_posts_cleans_opencli_after_wrong_url_bind_failure(monke
         action = command[-1]
         if action == "bind":
             events.append(("bind", None))
-            return FakeCompletedProcess(
-                stdout='{"session":"linkedin_saved_production","url":"https://wrong.example/","title":"Wrong"}'
-            )
-        if action in {"unbind", "close"}:
-            events.append((action, None))
+            return FakeCompletedProcess(stdout=wrong_payloads.pop(0))
+        if action == "unbind":
+            events.append(("unbind", None))
+            return FakeCompletedProcess(stdout="{}")
+        if action == "close":
+            events.append(("close", None))
             return FakeCompletedProcess(stdout="{}")
 
         pytest.fail(f"unexpected OpenCLI command: {command}")
@@ -346,20 +408,27 @@ def test_collect_opencli_posts_cleans_opencli_after_wrong_url_bind_failure(monke
     monkeypatch.setattr(linkedin_scrap.subprocess, "run", fake_run)
     monkeypatch.setattr(linkedin_scrap.time, "sleep", lambda _interval: None)
     monkeypatch.setattr(linkedin_scrap, "validate_bound_opencli_session", lambda: pytest.fail("validation must not run"))
-    monkeypatch.setattr(linkedin_scrap, "run_opencli_collector", lambda _crawl_start_time: pytest.fail("collector must not run"))
+    monkeypatch.setattr(
+        linkedin_scrap,
+        "run_opencli_collector",
+        lambda _crawl_start_time, existing_codes=None: pytest.fail("collector must not run"),
+    )
     monkeypatch.setattr(linkedin_scrap, "close_owned_chrome_window", lambda hwnd: events.append(("wm_close", hwnd)))
 
-    with pytest.raises(RuntimeError, match="OpenCLI browser bind attached to unexpected URL: https://wrong.example/"):
-        linkedin_scrap.collect_opencli_posts(datetime(2026, 7, 9, 13, 0, 0))
+    with pytest.raises(RuntimeError, match="OpenCLI browser bind attached to unexpected URL: https://github.com/"):
+        linkedin_scrap.collect_opencli_posts(datetime(2026, 7, 10, 13, 31, 37))
 
     assert events == [
-        ("focus", 6161),
         ("daemon_status", None),
-        ("bind", None),
-        ("bind", None),
+        ("focus", 6161),
         ("bind", None),
         ("unbind", None),
-        ("close", None),
+        ("focus", 6161),
+        ("bind", None),
+        ("unbind", None),
+        ("focus", 6161),
+        ("bind", None),
+        ("unbind", None),
         ("daemon_stop", None),
         ("wm_close", 6161),
     ]
@@ -386,7 +455,7 @@ def test_collect_opencli_posts_uses_bound_validation_without_whoami(monkeypatch)
     monkeypatch.setattr(linkedin_scrap, "open_owned_chrome_window", lambda: 1001)
     monkeypatch.setattr(linkedin_scrap, "focus_chrome_window", lambda hwnd: events.append(("focus", hwnd)) or True)
     monkeypatch.setattr(linkedin_scrap, "is_opencli_daemon_running", lambda: False)
-    monkeypatch.setattr(linkedin_scrap, "bind_opencli_browser_session", lambda: events.append(("bind", None)))
+    monkeypatch.setattr(linkedin_scrap, "bind_opencli_browser_session", lambda owned_hwnd=None: events.append(("bind", None)))
     monkeypatch.setattr(
         linkedin_scrap,
         "validate_bound_opencli_session",
@@ -415,7 +484,6 @@ def test_collect_opencli_posts_uses_bound_validation_without_whoami(monkeypatch)
     assert posts == [{"platform_id": "1"}]
     assert metadata["opencli_whoami"] == {"site": "linkedin", "logged_in": True, "public_id": None}
     assert events == [
-        ("focus", 1001),
         ("bind", None),
         ("unbind", None),
         ("close", None),
@@ -429,7 +497,7 @@ def test_open_owned_chrome_window_fails_before_bind_when_chrome_missing(monkeypa
 
     events = []
     monkeypatch.setattr(linkedin_scrap, "resolve_chrome_executable", lambda: None)
-    monkeypatch.setattr(linkedin_scrap, "bind_opencli_browser_session", lambda: events.append("bind"))
+    monkeypatch.setattr(linkedin_scrap, "bind_opencli_browser_session", lambda owned_hwnd=None: events.append("bind"))
 
     with pytest.raises(RuntimeError, match="Chrome executable not found"):
         linkedin_scrap.collect_opencli_posts(datetime(2026, 7, 9, 13, 0, 0))
@@ -479,6 +547,28 @@ def test_open_owned_chrome_window_fails_without_closing_when_hwnd_is_ambiguous(m
     assert records == [("ambiguous_candidates", candidates)]
 
 
+def test_open_owned_chrome_window_ignores_chrome_restore_prompt_candidate(monkeypatch):
+    import linkedin_scrap
+
+    baseline = [linkedin_scrap.ChromeWindowInfo(hwnd=10, title="Existing - Chrome", process_id=100)]
+    restore_prompt = linkedin_scrap.ChromeWindowInfo(hwnd=11, title="페이지를 복원하시겠습니까?", process_id=101)
+    saved_posts = linkedin_scrap.ChromeWindowInfo(hwnd=12, title="제목 없음 - Chrome", process_id=101)
+    events = []
+    records = []
+    snapshots = [baseline, baseline + [restore_prompt, saved_posts]]
+
+    monkeypatch.setattr(linkedin_scrap, "resolve_chrome_executable", lambda: "chrome.exe")
+    monkeypatch.setattr(linkedin_scrap, "snapshot_visible_chrome_windows", lambda: snapshots.pop(0))
+    monkeypatch.setattr(linkedin_scrap, "launch_chrome_new_window", lambda _chrome_path: events.append("launch"))
+    monkeypatch.setattr(linkedin_scrap, "record_chrome_window_candidates", lambda reason, values: records.append((reason, values)))
+
+    hwnd = linkedin_scrap.open_owned_chrome_window(poll_attempts=1, poll_interval=0)
+
+    assert hwnd == 12
+    assert events == ["launch"]
+    assert records == []
+
+
 def test_collect_opencli_posts_closes_only_recorded_hwnd_after_later_failure(monkeypatch):
     import linkedin_scrap
 
@@ -486,7 +576,7 @@ def test_collect_opencli_posts_closes_only_recorded_hwnd_after_later_failure(mon
     monkeypatch.setattr(linkedin_scrap, "open_owned_chrome_window", lambda: 4242)
     monkeypatch.setattr(linkedin_scrap, "focus_chrome_window", lambda hwnd: events.append(("focus", hwnd)) or True)
     monkeypatch.setattr(linkedin_scrap, "is_opencli_daemon_running", lambda: False)
-    monkeypatch.setattr(linkedin_scrap, "bind_opencli_browser_session", lambda: events.append(("bind", None)))
+    monkeypatch.setattr(linkedin_scrap, "bind_opencli_browser_session", lambda owned_hwnd=None: events.append(("bind", None)))
     monkeypatch.setattr(
         linkedin_scrap,
         "validate_bound_opencli_session",
@@ -505,7 +595,6 @@ def test_collect_opencli_posts_closes_only_recorded_hwnd_after_later_failure(mon
         linkedin_scrap.collect_opencli_posts(datetime(2026, 7, 9, 13, 0, 0))
 
     assert events == [
-        ("focus", 4242),
         ("bind", None),
         ("unbind", None),
         ("close", None),
@@ -521,7 +610,6 @@ def test_collect_opencli_posts_fails_before_bind_when_focus_fails(monkeypatch):
     monkeypatch.setattr(linkedin_scrap, "open_owned_chrome_window", lambda: 5151)
     monkeypatch.setattr(linkedin_scrap, "focus_chrome_window", lambda hwnd: events.append(("focus", hwnd)) or False)
     monkeypatch.setattr(linkedin_scrap, "is_opencli_daemon_running", lambda: events.append(("daemon_status", None)) or False)
-    monkeypatch.setattr(linkedin_scrap, "bind_opencli_browser_session", lambda: events.append(("bind", None)))
     monkeypatch.setattr(
         linkedin_scrap,
         "validate_bound_opencli_session",
@@ -548,7 +636,14 @@ def test_collect_opencli_posts_fails_before_bind_when_focus_fails(monkeypatch):
     with pytest.raises(RuntimeError, match="OpenCLI Chrome focus failed"):
         linkedin_scrap.collect_opencli_posts(datetime(2026, 7, 9, 13, 0, 0))
 
-    assert events == [("focus", 5151), ("wm_close", 5151)]
+    assert events == [
+        ("daemon_status", None),
+        ("focus", 5151),
+        ("focus", 5151),
+        ("focus", 5151),
+        ("stop", None),
+        ("wm_close", 5151),
+    ]
 
 
 def test_bound_validation_authwall_maps_to_auth_required_exit(monkeypatch):
@@ -559,7 +654,7 @@ def test_bound_validation_authwall_maps_to_auth_required_exit(monkeypatch):
     monkeypatch.setattr(linkedin_scrap, "open_owned_chrome_window", lambda: 3003)
     monkeypatch.setattr(linkedin_scrap, "focus_chrome_window", lambda _hwnd: True)
     monkeypatch.setattr(linkedin_scrap, "is_opencli_daemon_running", lambda: False)
-    monkeypatch.setattr(linkedin_scrap, "bind_opencli_browser_session", lambda: None)
+    monkeypatch.setattr(linkedin_scrap, "bind_opencli_browser_session", lambda owned_hwnd=None: None)
     monkeypatch.setattr(
         linkedin_scrap,
         "validate_bound_opencli_session",

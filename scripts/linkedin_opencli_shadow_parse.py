@@ -136,7 +136,7 @@ def parse_shadow_detail(detail, raw_path, crawl_start_time, require_save_state=F
 
 
 def parse_shadow_raw(raw_dir, crawl_start_time, require_save_state=False):
-    raw_paths = sorted(glob.glob(os.path.join(raw_dir, "*.json")))
+    raw_paths = sorted(glob.glob(os.path.join(raw_dir, "linkedin_opencli_raw_*.json")))
     posts_by_id = {}
     raw_entity_result_count = 0
     parser_failed = []
