@@ -89,9 +89,9 @@ ai: codex
 
 - `output_linkedin/opencli_runtime/`
   - raw/parsed/report 임시 산출물. git 제외.
-- `docs/plan-check-lite/20260707_06_...`
+- `docs/plan-check/20260707_06_...`
   - plan-check 요청 시 생성.
-- `docs/done-check-lite/20260707_06_...`
+- `docs/done-check/20260707_06_...`
   - 완료 검수 요청 시 생성.
 
 ## 데이터 쓰기 원칙
@@ -472,7 +472,7 @@ Blocking issue 없음
 완료 기준:
 
 - 검수 결과의 blocking issue가 있으면 구현을 수정한다.
-- 검수 문서는 `docs/done-check-lite/`에 저장한다.
+- 검수 문서는 `docs/done-check/`에 저장한다.
 
 - [ ] **Step 2: 커밋**
 
@@ -513,7 +513,7 @@ docs(linkedin): OpenCLI 도입 결과와 검수 기록 추가
 - 수정: `linkedin_scrap.py`
 - 수정: `scripts/linkedin_opencli_shadow_collect.mjs`
 - 생성: `tests/integration/test_linkedin_opencli_pipeline.py`
-- 생성: `docs/plan-check-lite/20260707_06_LinkedIn-OpenCLI-기본수집기-도입계획_경량계획검수보고서.md`
+- 생성: `docs/plan-check/20260707_06_LinkedIn-OpenCLI-기본수집기-도입계획_경량계획검수보고서.md`
 - 갱신: `output_linkedin/python/linkedin_py_full_20260707.json`
 - 갱신: `output_total/total_full_20260707.json`
 - 갱신: `output_threads/python/threads_py_full_20260707.json`
@@ -521,9 +521,9 @@ docs(linkedin): OpenCLI 도입 결과와 검수 기록 추가
 - 갱신: `output_twitter/python/twitter_py_full_20260707.json`
 - 갱신: `output_twitter/python/twitter_py_simple_20260707.json`
 - 갱신: `web_viewer/sns_tags.json`
-- 증거: `docs/done-check-lite/evidence/viewer_home_20260707.png`
-- 증거: `docs/done-check-lite/evidence/viewer_search_codex_20260707.png`
-- 생성: `docs/done-check-lite/20260707_06_LinkedIn-OpenCLI-기본수집기-도입계획_경량완료검수보고서.md`
+- 증거: `docs/done-check/evidence/viewer_home_20260707.png`
+- 증거: `docs/done-check/evidence/viewer_search_codex_20260707.png`
+- 생성: `docs/done-check/20260707_06_LinkedIn-OpenCLI-기본수집기-도입계획_경량완료검수보고서.md`
 
 ### 검증 결과
 
@@ -606,8 +606,8 @@ GET http://localhost:5000/api/search?q=Codex&platform=linkedin&limit=3
 - 화면 총건수 1755 표시 확인
 - `Codex` 검색 결과 화면 표시 확인
 - 캡처 저장:
-  - `docs/done-check-lite/evidence/viewer_home_20260707.png`
-  - `docs/done-check-lite/evidence/viewer_search_codex_20260707.png`
+  - `docs/done-check/evidence/viewer_home_20260707.png`
+  - `docs/done-check/evidence/viewer_search_codex_20260707.png`
 
 태그 파일 확인:
 
@@ -625,7 +625,7 @@ done-check-lite --agent
 
 - Verdict: 완료
 - Blocking Gaps: 없음
-- 보고서: `docs/done-check-lite/20260707_06_LinkedIn-OpenCLI-기본수집기-도입계획_경량완료검수보고서.md`
+- 보고서: `docs/done-check/20260707_06_LinkedIn-OpenCLI-기본수집기-도입계획_경량완료검수보고서.md`
 
 ### 미실행 항목
 

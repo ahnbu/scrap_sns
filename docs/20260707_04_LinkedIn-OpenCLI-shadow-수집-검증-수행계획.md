@@ -459,7 +459,7 @@ worktree는 이 검증이 통과한 뒤 사용한다. shadow 수집기와 비교
 
 ### Plan-check
 
-- 보고서: `docs/plan-check-lite/20260707_04_LinkedIn-OpenCLI-shadow-수집-검증-수행계획_경량계획검수보고서.md`
+- 보고서: `docs/plan-check/20260707_04_LinkedIn-OpenCLI-shadow-수집-검증-수행계획_경량계획검수보고서.md`
 - Verdict: `실행 가능`
 - 반영 사항:
   - `opencli linkedin whoami --site-session linkedin_saved_shadow`는 유효하지 않아 `--site-session persistent`로 정정했다.
