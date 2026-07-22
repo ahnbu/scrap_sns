@@ -1,5 +1,27 @@
 # SNS 허브
 
+## 실행 정보
+
+> 최종 확인: 2026-07-22
+
+| 항목 | 값 |
+|---|---|
+| 실행 형태 | 🖥️ 로컬 전용 (배포 없음) |
+| 실행 방법 | `sns_hub.vbs` 더블클릭 — 서버(`scrap_sns_server.py`) 기동 + 브라우저 열기 |
+| 백엔드 | Python Flask |
+| DB | ❌ 없음 — **JSON 파일이 DB 역할** |
+| 데이터 정본 | `output_threads/`, `output_linkedin/`, `output_twitter/`, `output_total/` (레포 내부) |
+| 인증 | ⚠️ 사용자 로그인 없음. **스크래핑용 SNS 세션 쿠키**는 별개 |
+| 인증 정본 | `C:\Users\ahnbu\.config\auth` — 레포의 `auth/`는 이 경로를 가리키는 junction |
+| 외부 API | Threads, LinkedIn, X(Twitter) — 스크래핑 |
+| 필요 환경변수 | `THREADS_ID`, `THREADS_PW` (`.env.local`) |
+| 테스트 | `pytest` (설정: `pytest.ini`) |
+
+> 수집 산출물이 레포 내부에 쌓이므로 용량이 증가한다. 정리는 `npm run cleanup:outputs`(dry-run) / `cleanup:outputs:apply`를 사용한다.
+> 조회는 `node D:/vibe-coding/scrap_sns/utils/query-sns.mjs`(CLI)를 우선 사용한다.
+
+---
+
 Threads, LinkedIn, X(Twitter)의 저장 게시물을 수집하고, 통합 JSON과 로컬 웹 뷰어로 관리하는 프로젝트입니다.
 
 ## 현재 구성
