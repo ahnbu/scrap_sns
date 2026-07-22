@@ -20,4 +20,5 @@ Else
     WScript.Sleep 3000
 End If
 
+shell.Run "node ""D:\vibe-coding\_usage\log-usage.mjs"" scrap_sns", 0, False
 shell.Run "cmd /c start " & Chr(34) & Chr(34) & " " & indexUrl, 0, False
