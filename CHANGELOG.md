@@ -4,6 +4,7 @@
 
 | 일시               | 유형       | 범위                           | 변경내용                                                                                                           |
 | ---------------- | -------- | ---------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| 2026-07-26 15:42 | refactor | linkedin-scraper | LinkedIn 수집기를 OpenCLI bind 방식에서 Playwright + storage_state 방식으로 롤백 — bind 실패로 16일간 수집 중단된 문제 해소 |
 | 2026-07-22 17:56 | fix | pnpm-policy | preinstall 가드가 pnpm 자신을 차단하던 버그 수정 — npm_execpath 폴백 검사 추가 |
 | 2026-07-22 17:05 | chore | pnpm-policy | packageManager 고정 및 preinstall 가드 추가 — npm/yarn 혼용 차단 |
 | 2026-07-22 15:53 | docs | readme | 실행 정보 절 추가 - 실행 방법, auth junction, DB 없이 JSON 파일 저장 구조 기록 |

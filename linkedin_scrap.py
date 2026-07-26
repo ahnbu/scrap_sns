@@ -1,507 +1,55 @@
-from utils.common import clean_text, load_json, save_json
-from utils.auth_status import exit_auth_required
-from dataclasses import dataclass
+from utils.common import load_json, save_json, clean_text, reorder_post, format_timestamp, parse_relative_time
 import json
 import sys
-import os
-import argparse
-import subprocess
 import time
-from pathlib import Path
-from datetime import datetime
+import os
+import glob
+import re
+import argparse
+from datetime import datetime, timedelta
+from playwright.sync_api import sync_playwright
 from utils.json_to_md import convert_json_to_md
-from utils.linkedin_parser import extract_urn_id
-from scripts.linkedin_opencli_shadow_parse import parse_shadow_raw
+from utils.linkedin_parser import parse_linkedin_post, extract_urn_id
+from utils.auth_paths import linkedin_storage
+from utils.auth_status import exit_auth_required, is_orchestrated_run
 
 # --- 설정 ---
 TARGET_URL = "https://www.linkedin.com/my-items/saved-posts/"
+LOGIN_URL = "https://www.linkedin.com/login"
+AUTH_FILE = str(linkedin_storage())
 DATA_DIR = "output_linkedin/python"
 UPDATE_DIR = os.path.join(DATA_DIR, "update")
-OPENCLI_RUNTIME_DIR = os.path.join("output_linkedin", "opencli_runtime")
-OPENCLI_PRODUCTION_SESSION = "linkedin_saved_production"
-CHROME_PATHS = [
-    "C:/Program Files/Google/Chrome/Application/chrome.exe",
-    "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe",
-]
+SAVED_POSTS_SELECTOR = ".entity-result__content-container"
+AUTH_RESOLUTION_TIMEOUT_MS = 20000
+AUTH_POLL_INTERVAL_MS = 500
+LINKEDIN_USER_AGENT = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) "
+    "Chrome/122.0.0.0 Safari/537.36"
+)
+
+# 스크랩 설정
+TARGET_LIMIT = 0       # 0 = 무제한
+CONSECUTIVE_EXISTING_LIMIT = 20  # update 모드에서 기수집 글이 연속 N건이면 중단
 
 # CLI 인자 파싱
 CRAWL_MODE = "update only"  # 기본값 (__main__ 블록에서 CLI 인자로 덮어씀)
 CRAWL_START_TIME = datetime.now()
-CONSECUTIVE_EXISTING_LIMIT = 20
+INCLUDE_IMAGES = True # 이미지 크롤링 포함 여부
+
+# 브라우저 UI 설정
+WINDOW_X = 5000           # 화면 가로 위치 (모니터 왼쪽 기준 px)
+WINDOW_Y = 200         # 화면 세로 위치 (모니터 위쪽 기준 px)
+# viewport는 갱신기(scripts/auth_runtime/renew.py)와 sns_insight_update LinkedIn 수집기와
+# 동일하게 1280x1000으로 정렬한다. 본 세션 PoC(v3/v4/v5)가 이 viewport로 saved-posts 통과를
+# 확정했고, 갱신·수집 fingerprint 일관성을 유지하기 위함이다.
+WINDOW_WIDTH = 1280    # 브라우저 너비
+WINDOW_HEIGHT = 1000   # 브라우저 높이
 
 # --- 헬퍼 함수 ---
 
 
 # 로컬 clean_text 제거 (utils.common 사용)
-
-@dataclass(frozen=True)
-class ChromeWindowInfo:
-    hwnd: int
-    title: str
-    process_id: int
-
-
-class LinkedInAuthRequiredError(RuntimeError):
-    def __init__(self, reason, current_url=None):
-        super().__init__(reason)
-        self.reason = reason
-        self.current_url = current_url
-
-def configure_text_output(stream=None):
-    target = stream or sys.stdout
-    encoding = (getattr(target, "encoding", "") or "").lower()
-    reconfigure = getattr(target, "reconfigure", None)
-    if encoding and encoding != "utf-8" and callable(reconfigure):
-        reconfigure(encoding="utf-8", errors="replace")
-
-
-def get_opencli_command():
-    appdata = os.environ.get("APPDATA")
-    if appdata:
-        candidate = (
-            Path(appdata)
-            / "npm"
-            / "node_modules"
-            / "@jackwener"
-            / "opencli"
-            / "dist"
-            / "src"
-            / "main.js"
-        )
-        if candidate.exists():
-            return ["node", str(candidate)]
-    return ["opencli"]
-
-
-def parse_json_stdout(stdout):
-    text = (stdout or "").lstrip("\ufeff").strip()
-    if not text:
-        raise RuntimeError("OpenCLI command returned empty stdout")
-    try:
-        return json.loads(text)
-    except json.JSONDecodeError as exc:
-        raise RuntimeError(f"OpenCLI command returned non-JSON stdout: {text[:200]}") from exc
-
-
-def run_opencli_whoami():
-    command = get_opencli_command() + [
-        "linkedin",
-        "whoami",
-        "--site-session",
-        "persistent",
-        "-f",
-        "json",
-    ]
-    result = subprocess.run(command, capture_output=True, text=True, encoding="utf-8")
-    if result.returncode != 0:
-        message = (result.stderr or result.stdout or "").strip()
-        raise RuntimeError(f"OpenCLI LinkedIn session is not logged in: {message}")
-
-    payload = parse_json_stdout(result.stdout)
-    if not payload.get("logged_in"):
-        raise RuntimeError("OpenCLI LinkedIn session is not logged in")
-    return payload
-
-
-def resolve_chrome_executable():
-    for chrome_path in CHROME_PATHS:
-        if Path(chrome_path).exists():
-            return chrome_path
-    return None
-
-
-def _process_image_name(process_id):
-    if os.name != "nt":
-        return ""
-
-    import ctypes
-    from ctypes import wintypes
-
-    PROCESS_QUERY_LIMITED_INFORMATION = 0x1000
-    kernel32 = ctypes.WinDLL("kernel32", use_last_error=True)
-    handle = kernel32.OpenProcess(PROCESS_QUERY_LIMITED_INFORMATION, False, process_id)
-    if not handle:
-        return ""
-    try:
-        buffer = ctypes.create_unicode_buffer(32768)
-        size = wintypes.DWORD(len(buffer))
-        if not kernel32.QueryFullProcessImageNameW(handle, 0, buffer, ctypes.byref(size)):
-            return ""
-        return buffer.value
-    finally:
-        kernel32.CloseHandle(handle)
-
-
-def snapshot_visible_chrome_windows():
-    if os.name != "nt":
-        return []
-
-    import ctypes
-    from ctypes import wintypes
-
-    user32 = ctypes.WinDLL("user32", use_last_error=True)
-    windows = []
-
-    def enum_window(hwnd, _lparam):
-        if not user32.IsWindowVisible(hwnd):
-            return True
-
-        length = user32.GetWindowTextLengthW(hwnd)
-        if length <= 0:
-            return True
-
-        buffer = ctypes.create_unicode_buffer(length + 1)
-        user32.GetWindowTextW(hwnd, buffer, length + 1)
-        process_id = wintypes.DWORD()
-        user32.GetWindowThreadProcessId(hwnd, ctypes.byref(process_id))
-        image_name = _process_image_name(int(process_id.value))
-        if os.path.basename(image_name).lower() == "chrome.exe":
-            windows.append(ChromeWindowInfo(hwnd=int(hwnd), title=buffer.value, process_id=int(process_id.value)))
-        return True
-
-    enum_proc = ctypes.WINFUNCTYPE(wintypes.BOOL, wintypes.HWND, wintypes.LPARAM)(enum_window)
-    user32.EnumWindows(enum_proc, 0)
-    return windows
-
-
-def launch_chrome_new_window(chrome_path):
-    subprocess.Popen(
-        [chrome_path, "--new-window", TARGET_URL],
-        stdout=subprocess.DEVNULL,
-        stderr=subprocess.DEVNULL,
-    )
-
-
-def record_chrome_window_candidates(reason, candidates):
-    payload = {
-        "reason": reason,
-        "candidates": [
-            {"hwnd": candidate.hwnd, "title": candidate.title, "process_id": candidate.process_id}
-            for candidate in candidates
-        ],
-    }
-    print(f"OpenCLI Chrome HWND candidates: {json.dumps(payload, ensure_ascii=False)}")
-
-
-def is_chrome_restore_prompt(candidate):
-    return "페이지를 복원하시겠습니까" in candidate.title or "restore pages" in candidate.title.lower()
-
-
-def select_owned_chrome_window_candidate(candidates):
-    if len(candidates) == 1:
-        return candidates[0]
-
-    non_restore_candidates = [candidate for candidate in candidates if not is_chrome_restore_prompt(candidate)]
-    if len(non_restore_candidates) == 1:
-        return non_restore_candidates[0]
-
-    return None
-
-
-def open_owned_chrome_window(poll_attempts=20, poll_interval=0.5):
-    chrome_path = resolve_chrome_executable()
-    if not chrome_path:
-        raise RuntimeError("Chrome executable not found")
-
-    baseline = {window.hwnd for window in snapshot_visible_chrome_windows()}
-    launch_chrome_new_window(chrome_path)
-
-    latest_candidates = []
-    for _ in range(poll_attempts):
-        latest_candidates = [
-            window
-            for window in snapshot_visible_chrome_windows()
-            if window.hwnd not in baseline
-        ]
-        selected_candidate = select_owned_chrome_window_candidate(latest_candidates)
-        if selected_candidate:
-            return selected_candidate.hwnd
-        if len(latest_candidates) > 1:
-            record_chrome_window_candidates("ambiguous_candidates", latest_candidates)
-            raise RuntimeError(f"{len(latest_candidates)} new visible Chrome windows after launch")
-        if poll_interval:
-            time.sleep(poll_interval)
-
-    record_chrome_window_candidates("no_candidates", latest_candidates)
-    raise RuntimeError("0 new visible Chrome windows after launch")
-
-
-def focus_chrome_window(hwnd):
-    if os.name != "nt":
-        return False
-
-    import ctypes
-
-    user32 = ctypes.WinDLL("user32", use_last_error=True)
-    return bool(user32.SetForegroundWindow(int(hwnd)))
-
-
-def close_owned_chrome_window(hwnd):
-    if os.name != "nt":
-        return False
-
-    import ctypes
-
-    WM_CLOSE = 0x0010
-    user32 = ctypes.WinDLL("user32", use_last_error=True)
-    return bool(user32.PostMessageW(int(hwnd), WM_CLOSE, 0, 0))
-
-
-def should_stop_opencli_daemon():
-    return os.environ.get("SCRAP_SNS_KEEP_OPENCLI_DAEMON") != "1"
-
-
-def is_opencli_daemon_running():
-    command = get_opencli_command() + ["daemon", "status"]
-    try:
-        result = subprocess.run(command, capture_output=True, text=True, encoding="utf-8")
-    except FileNotFoundError:
-        return False
-    if result.returncode != 0:
-        return False
-    output = f"{result.stdout}\n{result.stderr}".lower()
-    return "daemon: running" in output
-
-
-def run_opencli_browser_session_command(action, session=OPENCLI_PRODUCTION_SESSION):
-    command = get_opencli_command() + ["browser", session, action]
-    result = subprocess.run(command, capture_output=True, text=True, encoding="utf-8")
-    if result.returncode != 0:
-        message = (result.stderr or result.stdout or "").strip()
-        print(f"OpenCLI browser {action} 실패: {message}")
-        return False
-    print(f"OpenCLI browser {action} 완료")
-    return True
-
-
-def is_linkedin_saved_posts_url(url):
-    return "linkedin.com/my-items/saved-posts" in str(url or "")
-
-
-def bind_opencli_browser_session(
-    session=OPENCLI_PRODUCTION_SESSION,
-    max_attempts=3,
-    retry_interval=1.0,
-    owned_hwnd=None,
-):
-    last_url = ""
-    for attempt in range(max_attempts):
-        attempt_number = attempt + 1
-        if owned_hwnd is not None:
-            if not prepare_owned_chrome_window_for_bind(owned_hwnd):
-                raise RuntimeError(f"OpenCLI Chrome focus failed for HWND {owned_hwnd}")
-            print(f"OpenCLI browser bind 전 LinkedIn 창 focus 완료: {attempt_number}/{max_attempts}")
-
-        command = get_opencli_command() + ["browser", session, "bind"]
-        result = subprocess.run(command, capture_output=True, text=True, encoding="utf-8")
-        if result.returncode != 0:
-            message = (result.stderr or result.stdout or "").strip()
-            print(f"OpenCLI browser bind 실패: {message}")
-            raise RuntimeError("OpenCLI browser bind failed")
-
-        payload = parse_json_stdout(result.stdout)
-        last_url = str(payload.get("url") or "")
-        if is_linkedin_saved_posts_url(last_url):
-            print("OpenCLI browser bind 완료")
-            return payload
-
-        print(
-            "OpenCLI browser bind URL 불일치 "
-            f"({attempt_number}/{max_attempts}): expected LinkedIn saved posts, actual={last_url}"
-        )
-        run_opencli_browser_session_command("unbind", session=session)
-        if attempt + 1 < max_attempts:
-            time.sleep(retry_interval)
-
-    raise RuntimeError(f"OpenCLI browser bind attached to unexpected URL: {last_url}")
-
-
-def prepare_owned_chrome_window_for_bind(hwnd, settle_delay=1.0, focus_attempts=3, focus_retry_interval=0.5):
-    focused = False
-    for attempt in range(focus_attempts):
-        if focus_chrome_window(hwnd):
-            focused = True
-            break
-        if attempt + 1 < focus_attempts:
-            time.sleep(focus_retry_interval)
-    if not focused:
-        return False
-    if settle_delay:
-        time.sleep(settle_delay)
-    return True
-
-
-def cleanup_opencli_browser_session(session=OPENCLI_PRODUCTION_SESSION):
-    run_opencli_browser_session_command("unbind", session=session)
-    run_opencli_browser_session_command("close", session=session)
-
-
-def stop_opencli_daemon():
-    command = get_opencli_command() + ["daemon", "stop"]
-    result = subprocess.run(command, capture_output=True, text=True, encoding="utf-8")
-    if result.returncode != 0:
-        message = (result.stderr or result.stdout or "").strip()
-        print(f"OpenCLI daemon 종료 실패: {message}")
-        return False
-    print("OpenCLI daemon 종료 완료")
-    return True
-
-
-def run_opencli_browser_eval(script, session=OPENCLI_PRODUCTION_SESSION):
-    command = get_opencli_command() + ["browser", session, "eval", script]
-    result = subprocess.run(command, capture_output=True, text=True, encoding="utf-8")
-    if result.returncode != 0:
-        message = (result.stderr or result.stdout or "").strip()
-        raise RuntimeError(f"OpenCLI browser eval failed: {message}")
-    return parse_json_stdout(result.stdout)
-
-
-def run_opencli_browser_state(session=OPENCLI_PRODUCTION_SESSION):
-    command = get_opencli_command() + ["browser", session, "state"]
-    result = subprocess.run(command, capture_output=True, text=True, encoding="utf-8")
-    if result.returncode != 0:
-        message = (result.stderr or result.stdout or "").strip()
-        raise RuntimeError(f"OpenCLI browser state failed: {message}")
-    return result.stdout or ""
-
-
-def validate_bound_opencli_session(session=OPENCLI_PRODUCTION_SESSION):
-    script = """(() => ({
-  href: location.href,
-  title: document.title,
-  text: (document.body && document.body.innerText || "").slice(0, 5000)
-}))()"""
-    page = run_opencli_browser_eval(script, session=session)
-    state = run_opencli_browser_state(session=session)
-    href = str(page.get("href") or "")
-    title = str(page.get("title") or "")
-    text = str(page.get("text") or "")
-    combined = f"{href}\n{title}\n{text}\n{state}"
-    lowered = combined.lower()
-
-    if "checkpoint" in lowered or "login" in lowered or "authwall" in lowered:
-        raise LinkedInAuthRequiredError("login_required", href)
-    if "linkedin.com/my-items/saved-posts" not in href:
-        raise RuntimeError(f"LinkedIn saved posts URL was not confirmed: {href}")
-    if "저장한 게시물" not in combined and "Saved" not in combined:
-        print("OpenCLI LinkedIn 저장글 페이지 문구 미확인: URL 기준으로 계속 진행")
-
-    return {"site": "linkedin", "logged_in": True, "public_id": page.get("public_id")}
-
-
-def write_existing_ids_file(raw_dir, existing_codes):
-    existing_ids = sorted(str(code) for code in existing_codes if code)
-    os.makedirs(raw_dir, exist_ok=True)
-    ids_path = os.path.join(raw_dir, "existing_ids.json")
-    save_json(ids_path, existing_ids)
-    return ids_path
-
-
-def run_opencli_collector(crawl_start_time, existing_codes=None, session=OPENCLI_PRODUCTION_SESSION):
-    stamp = crawl_start_time.strftime("%Y%m%d_%H%M%S")
-    raw_dir = os.path.join(OPENCLI_RUNTIME_DIR, "raw", stamp)
-    command = [
-        "node",
-        "scripts/linkedin_opencli_shadow_collect.mjs",
-        "--session",
-        session,
-        "--url",
-        TARGET_URL,
-        "--out",
-        raw_dir,
-        "--use-bound-session",
-    ]
-    if CRAWL_MODE == "update only":
-        ids_path = write_existing_ids_file(raw_dir, existing_codes or set())
-        command.extend([
-            "--existing-ids-file",
-            ids_path,
-            "--stop-after-existing-streak",
-            str(CONSECUTIVE_EXISTING_LIMIT),
-        ])
-    else:
-        command.append("--until-exhausted")
-    result = subprocess.run(command, capture_output=True, text=True, encoding="utf-8")
-    if result.returncode != 0:
-        message = (result.stderr or result.stdout or "").strip()
-        raise RuntimeError(f"OpenCLI LinkedIn collection failed: {message}")
-
-    summary = parse_json_stdout(result.stdout)
-    if int(summary.get("pages_collected") or 0) <= 0:
-        raise RuntimeError("OpenCLI collection returned no raw pages")
-    if int(summary.get("total_unique_activity_ids") or 0) <= 0:
-        raise RuntimeError("OpenCLI collection returned no activity IDs")
-    return raw_dir, summary
-
-
-def validate_opencli_payload(payload):
-    metadata = payload.get("metadata") or {}
-    if int(metadata.get("parsed_post_count") or 0) <= 0:
-        raise RuntimeError("OpenCLI parsed post count is zero")
-    if int(metadata.get("duplicate_platform_id_count") or 0) > 0:
-        raise RuntimeError("OpenCLI duplicate platform_id detected")
-    if int(metadata.get("parser_failed_count") or 0) > 0:
-        raise RuntimeError("OpenCLI parser failed for one or more posts")
-    if int(metadata.get("entity_without_save_state_count") or 0) > 0:
-        raise RuntimeError("OpenCLI SaveState verification failed")
-    if int(metadata.get("entity_without_cluster_reference_count") or 0) > 0:
-        raise RuntimeError("OpenCLI cluster reference verification failed")
-
-
-def collect_opencli_posts(crawl_start_time, existing_codes=None):
-    owned_hwnd = None
-    validated_bound_session = False
-    opencli_daemon_touched = False
-    daemon_was_running = None
-    try:
-        owned_hwnd = open_owned_chrome_window()
-        daemon_was_running = is_opencli_daemon_running()
-        opencli_daemon_touched = True
-        bind_opencli_browser_session(owned_hwnd=owned_hwnd)
-        validated_bound_session = True
-        bound_session_state = validate_bound_opencli_session()
-        print(f"✅ OpenCLI LinkedIn 저장글 창 확인: {bound_session_state.get('site', 'linkedin')}")
-
-        raw_dir, collection_summary = run_opencli_collector(crawl_start_time, existing_codes=existing_codes)
-        print(
-            "📥 OpenCLI raw 수집 완료: "
-            f"{collection_summary.get('pages_collected')} pages, "
-            f"{collection_summary.get('total_unique_activity_ids')} unique IDs"
-        )
-
-        payload = parse_shadow_raw(raw_dir, crawl_start_time, require_save_state=True)
-        validate_opencli_payload(payload)
-        metadata = payload["metadata"]
-        print(
-            "✅ OpenCLI parse 검증 통과: "
-            f"parsed={metadata.get('parsed_post_count')}, "
-            f"duplicates={metadata.get('duplicate_platform_id_count')}, "
-            f"parser_failed={metadata.get('parser_failed_count')}"
-        )
-        metadata["opencli_collection"] = collection_summary
-        metadata["opencli_whoami"] = {
-            "site": bound_session_state.get("site"),
-            "logged_in": bound_session_state.get("logged_in"),
-            "public_id": bound_session_state.get("public_id"),
-        }
-        return payload["posts"], metadata
-    finally:
-        if validated_bound_session:
-            try:
-                cleanup_opencli_browser_session()
-            except RuntimeError as exc:
-                print(f"OpenCLI browser cleanup 실패: {exc}")
-        if opencli_daemon_touched and should_stop_opencli_daemon() and daemon_was_running is False:
-            try:
-                stop_opencli_daemon()
-            except RuntimeError as exc:
-                print(f"OpenCLI daemon cleanup 실패: {exc}")
-        if owned_hwnd is not None:
-            try:
-                close_owned_chrome_window(owned_hwnd)
-            except RuntimeError as exc:
-                print(f"Chrome window cleanup 실패: {exc}")
-
 
 def get_post_identity(post):
     return post.get("platform_id") or post.get("code")
@@ -547,20 +95,53 @@ def merge_linkedin_full_posts(old_posts, scraped_posts, crawl_mode):
     final_posts = list(final_by_id.values())
     final_posts.sort(key=lambda item: item.get("sequence_id", 0), reverse=True)
 
-    unobserved_policy = (
-        "preserved_not_deletion_candidate"
-        if crawl_mode == "update only"
-        else "preserved_pending_full_sync_review"
-    )
     merge_report = {
         "crawl_mode": crawl_mode,
         "observed_existing_count": len(observed_existing),
         "unobserved_existing_count": len(unobserved_existing_ids),
         "unobserved_existing_ids": unobserved_existing_ids[:20],
-        "unobserved_existing_policy": unobserved_policy,
     }
 
     return final_posts, new_items, merge_report
+
+def is_linkedin_auth_url(url):
+    normalized = (url or "").lower()
+    return any(
+        marker in normalized
+        for marker in (
+            "linkedin.com/login",
+            "linkedin.com/uas/login",
+            "linkedin.com/signup",
+            "authwall",
+            "/checkpoint/",
+            "/guest/",
+        )
+    )
+
+
+def has_saved_posts_content(page):
+    try:
+        return page.locator(SAVED_POSTS_SELECTOR).count() > 0
+    except Exception:
+        return False
+
+
+def wait_for_saved_posts_ready(page, timeout_ms=AUTH_RESOLUTION_TIMEOUT_MS):
+    deadline = time.monotonic() + (timeout_ms / 1000)
+    last_url = page.url
+
+    while time.monotonic() <= deadline:
+        last_url = page.url
+        if has_saved_posts_content(page):
+            return True, last_url
+        if "my-items/saved-posts" in last_url and not is_linkedin_auth_url(last_url):
+            return True, last_url
+        try:
+            page.wait_for_timeout(AUTH_POLL_INTERVAL_MS)
+        except Exception:
+            time.sleep(AUTH_POLL_INTERVAL_MS / 1000)
+
+    return False, last_url
 
 class LinkedinScraper:
     def __init__(self):
@@ -595,8 +176,141 @@ class LinkedinScraper:
             if CRAWL_MODE == "update only":
                 print(
                     f"🔄 UPDATE ONLY 모드: 기존 {len(self.existing_codes)}건과 대조, "
-                    f"기수집 {CONSECUTIVE_EXISTING_LIMIT}건 연속 확인 시 수집을 중단합니다."
+                    f"기수집 {CONSECUTIVE_EXISTING_LIMIT}건 연속 시 수집을 중단합니다."
                 )
+
+    def manage_login(self, page):
+        """로그인 처리 및 세션 관리"""
+        if os.path.exists(AUTH_FILE):
+            print(f"📂 세션 파일 로드: {AUTH_FILE}")
+            try:
+                page.goto(TARGET_URL)
+            except Exception as e:
+                print(f"⚠️ 페이지 이동 중 에러 (무시): {e}")
+
+            is_ready, current_url = wait_for_saved_posts_ready(page)
+            if is_ready:
+                print(f"✅ 세션 유효함 (URL: {current_url})")
+                return
+
+            if is_linkedin_auth_url(current_url):
+                print("⚠️ 세션 만료됨. 다시 로그인 필요.")
+            elif "about:blank" in current_url:
+                print("⚠️ 페이지가 로드되지 않았습니다 (about:blank). 재시도 중...")
+                page.goto(TARGET_URL)
+                is_ready, current_url = wait_for_saved_posts_ready(page)
+                if is_ready:
+                    print(f"✅ 세션 유효함 (URL: {current_url})")
+                    return
+                if "about:blank" in page.url:
+                     print("❌ 페이지 로드 실패.")
+            else:
+                print(f"⚠️ 저장된 게시물 페이지가 준비되지 않았습니다. (URL: {current_url})")
+
+        if is_linkedin_auth_url(page.url) or "about:blank" in page.url:
+            print("🚨 로그인이 필요하거나 페이지 로드에 실패했습니다! (수동 개입 필요)")
+            print(f"   현재 URL: {page.url}")
+            page.goto(LOGIN_URL)
+            print("   로그인을 완료하고 '저장된 게시물' 목록이 보이면 엔터키를 눌러주세요.")
+            if is_orchestrated_run():
+                exit_auth_required(
+                    "linkedin",
+                    reason="login_required",
+                    current_url=page.url,
+                    auth_file=AUTH_FILE,
+                )
+            if not sys.stdin.isatty():
+                print("❌ 비대화형 환경에서는 로그인을 완료할 수 없습니다. 대화형 터미널에서 실행하세요.")
+                sys.exit(1)
+            input(">>> 로그인 완료 후 Enter: ")
+            
+            page.context.storage_state(path=AUTH_FILE)
+            print("💾 새 세션 저장됨.")
+            
+            if page.url != TARGET_URL:
+                page.goto(TARGET_URL)
+                wait_for_saved_posts_ready(page)
+
+    def handle_response(self, response):
+        """네트워크 응답 가로채기 (GraphQL)"""
+        if TARGET_LIMIT > 0 and len(self.posts) >= TARGET_LIMIT:
+            return
+
+        url = response.url
+        # LinkedIn Voyager GraphQL 엔드포인트 체크
+        if "voyager/api/graphql" in url and response.request.method == "GET":
+            try:
+                # 쿼리 파라미터나 URL 패턴을 좀 더 정교하게 체크할 수도 있음
+                # 예: queryId=voyagerSearchDashClusters...
+                
+                resp_json = response.json()
+                
+                try:
+                    from utils.common import save_debug_snapshot
+                    save_debug_snapshot(resp_json, "linkedin", "json")
+                except Exception: pass
+
+                # 데이터 파싱 위임
+                self.process_network_data(resp_json)
+                
+            except Exception as e:
+                # JSON 파싱 실패 등은 조용히 무시 (다른 요청일 수 있음)
+                pass
+
+    def process_network_data(self, json_data):
+        """JSON 데이터에서 게시물 정보 추출"""
+        if "included" not in json_data:
+            return
+
+        included = json_data.get("included", [])
+        # 참조 해결을 위한 URN 맵 생성
+        self.urn_map = {item.get("entityUrn"): item for item in included if item.get("entityUrn")}
+
+        for item in included:
+            if item.get("$type") == "com.linkedin.voyager.dash.search.EntityResultViewModel":
+                self.extract_post_from_view_model(item)
+
+    def extract_post_from_view_model(self, item):
+        try:
+            if self.stopped_early:
+                return
+
+            entity_urn = item.get("entityUrn", "")
+            activity_id = extract_urn_id(entity_urn)
+            
+            if not activity_id or activity_id in self.collected_codes:
+                return
+
+            if activity_id in self.existing_codes:
+                if CRAWL_MODE == "update only":
+                    self.consecutive_existing_count += 1
+                    if self.consecutive_existing_count >= CONSECUTIVE_EXISTING_LIMIT:
+                        self.stopped_early = True
+                    return
+
+                # 이미지가 없는 기존 데이터라면 업데이트를 위해 통과 (선택 사항)
+                existing_post = self.existing_posts_map.get(activity_id, {})
+                if existing_post.get("media"):
+                    return
+
+            post_data = parse_linkedin_post(item, INCLUDE_IMAGES, CRAWL_START_TIME)
+            if not post_data:
+                return
+
+            # 💡 [개선] 기존 메타데이터 보존 로직
+            existing = self.existing_posts_map.get(activity_id)
+            if existing:
+                post_data['crawled_at'] = existing.get('crawled_at')
+                post_data['sequence_id'] = existing.get('sequence_id')
+
+            self.posts.append(post_data)
+            self.collected_codes.add(activity_id)
+            self.consecutive_existing_count = 0
+            print(f"   ⚡ [Network] [{activity_id}] ({post_data['date']}) {post_data['username']}: {post_data['full_text'][:20]}...")
+
+        except Exception as e:
+            # print(f"Error parsing item: {e}")
+            pass
 
     def get_latest_full_file(self):
         if not os.path.exists(DATA_DIR):
@@ -610,10 +324,82 @@ class LinkedinScraper:
 
     def run(self):
         start_time_dt = datetime.now()
-        print("🚀 링크드인 스크래퍼 시작 (OpenCLI 기본 모드)")
+        print("🚀 링크드인 스크래퍼 시작 (Network 모드)")
+        
+        with sync_playwright() as p:
+            browser = p.chromium.launch(
+                headless=False,
+                args=[
+                    f"--window-position={WINDOW_X},{WINDOW_Y}",
+                    f"--window-size={WINDOW_WIDTH},{WINDOW_HEIGHT}"
+                ]
+            )
 
-        self.posts, self.opencli_metadata = collect_opencli_posts(CRAWL_START_TIME, existing_codes=self.existing_codes)
-        self.save_results()
+            try:
+                # viewport를 None으로 설정하면 브라우저 창 크기에 따라 자동으로 조절됨 (또는 고정값 사용 가능)
+                # 여기서는 창 크기와 비례하도록 설정하거나 특정 해상도 고정
+                context_options = {
+                    "viewport": {"width": WINDOW_WIDTH, "height": WINDOW_HEIGHT},
+                    "user_agent": LINKEDIN_USER_AGENT,
+                    "locale": "ko-KR",
+                }
+                if os.path.exists(AUTH_FILE):
+                    context_options["storage_state"] = AUTH_FILE
+
+                context = browser.new_context(**context_options)
+                page = context.new_page()
+
+                # 네트워크 이벤트 리스너 등록
+                page.on("response", self.handle_response)
+
+                self.manage_login(page)
+
+                print("📜 스크롤 및 데이터 수집 시작...")
+                no_new_data_count = 0
+                last_count = 0
+
+                # 초기 로딩 대기
+                time.sleep(5)
+
+                while TARGET_LIMIT == 0 or len(self.posts) < TARGET_LIMIT:
+                    # 1. 먼저 "결과 더보기" 버튼 찾기
+                    try:
+                        show_more_btn = page.locator('button:has-text("결과 더보기"), button:has-text("Show more results")')
+                        if show_more_btn.count() > 0:
+                            show_more_btn.first.click()
+                            print(f"   🔘 '결과 더보기' 버튼 클릭 (현재 {len(self.posts)}개)")
+                            time.sleep(3)
+                        else:
+                            # 2. 버튼이 없으면 스크롤
+                            page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+                            print(f"   ⬇️ 스크롤 다운... (현재 {len(self.posts)}개)")
+                            time.sleep(3)
+                    except Exception as e:
+                        # 버튼 찾기 실패 시 기본 스크롤
+                        page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+                        print(f"   ⬇️ 스크롤 다운... (현재 {len(self.posts)}개)")
+                        time.sleep(3)
+
+                    if self.stopped_early:
+                        print(f"🛑 기수집 {CONSECUTIVE_EXISTING_LIMIT}건 연속 확인하여 수집을 종료합니다.")
+                        break
+
+                    if len(self.posts) == last_count:
+                        no_new_data_count += 1
+                    else:
+                        no_new_data_count = 0
+                        last_count = len(self.posts)
+
+                    if no_new_data_count >= 5:
+                        print("🛑 더 이상 새로운 데이터가 없습니다.")
+                        break
+
+                    if TARGET_LIMIT > 0 and len(self.posts) >= TARGET_LIMIT:
+                        break
+
+                self.save_results()
+            finally:
+                browser.close()
 
         end_time_dt = datetime.now()
         duration = end_time_dt - start_time_dt
@@ -632,23 +418,30 @@ class LinkedinScraper:
             print("ℹ️ 수집된 새로운 데이터가 없습니다.")
             return
 
-        date_str = CRAWL_START_TIME.strftime("%Y%m%d")
-        full_file, final_posts, new_items = self.update_full_version(date_str)
+        # 1. 시퀀스 ID 부여 (신규 게시물만)
+        # crawled_at 기준 오름차순(과거->최신)으로 정렬하여 ID 순차 부여
+        new_posts = sorted([p for p in self.posts if p.get("sequence_id", 0) == 0], key=lambda x: x['crawled_at'])
+        for post in new_posts:
+            self.max_sequence_id += 1
+            post["sequence_id"] = self.max_sequence_id
 
-        # 신규 수집된 것들만 업데이트 파일에 저장
+        # 2. 업데이트 파일 저장 (타임스탬프 적용: YYYYMMDD_HHMMSS)
         timestamp = CRAWL_START_TIME.strftime("%Y%m%d_%H%M%S")
         update_file = os.path.join(UPDATE_DIR, f"linkedin_python_update_{timestamp}.json")
+        
+        # 신규 수집된 것들만 저장 (index 부여)
+        recent_collected_posts = [p for p in self.posts if p.get('crawled_at', '').startswith(CRAWL_START_TIME.isoformat()[:10])]
         final_indexed_posts = []
-        for idx, post in enumerate(new_items):
+        for idx, post in enumerate(recent_collected_posts):
             final_indexed_posts.append({"index": idx + 1, **post})
 
         if final_indexed_posts:
             save_json(update_file, final_indexed_posts)
             print(f"💾 업데이트 데이터 저장 완료: {update_file} ({len(final_indexed_posts)}개)")
-        else:
-            print("ℹ️ 신규 LinkedIn 저장글은 없습니다.")
-
-        print(f"✅ LinkedIn full 저장 기준: {full_file} (총 {len(final_posts)}개)")
+        
+        # 3. 전체 데이터 병합 및 저장
+        date_str = CRAWL_START_TIME.strftime("%Y%m%d")
+        self.update_full_version(date_str)
 
     def update_full_version(self, date_str):
         print("🔄 전체 데이터 병합 중...")
@@ -667,19 +460,26 @@ class LinkedinScraper:
             else:
                 old_posts = old_data_obj
 
-        final_posts, new_items, merge_report = merge_linkedin_full_posts(
-            old_posts,
-            self.posts,
-            CRAWL_MODE,
-        )
-        duplicate_count = len(self.posts) - len(new_items)
-
-        new_items.sort(key=lambda item: item.get("crawled_at", ""))
-        for post in new_items:
-            if not post.get("sequence_id"):
-                self.max_sequence_id += 1
-                post["sequence_id"] = self.max_sequence_id
-
+        if CRAWL_MODE == "all":
+            final_posts, new_items, merge_report = merge_linkedin_full_posts(
+                old_posts,
+                self.posts,
+                CRAWL_MODE,
+            )
+            duplicate_count = len(self.posts) - len(new_items)
+        else:
+            # UPDATE 모드일 때는 기존에 없는 것만 추가
+            existing_codes = {p.get("platform_id") or p.get("code") for p in old_posts}
+            new_items = [p for p in self.posts if (p.get("platform_id") or p.get("code")) not in existing_codes]
+            duplicate_count = len(self.posts) - len(new_items)
+            final_posts = new_items + old_posts
+            merge_report = {
+                "crawl_mode": CRAWL_MODE,
+                "observed_existing_count": 0,
+                "unobserved_existing_count": 0,
+                "unobserved_existing_ids": [],
+            }
+        
         # sequence_id 기준으로 내림차순 정렬 (최신순)
         final_posts.sort(key=lambda x: x.get("sequence_id", 0), reverse=True)
 
@@ -695,7 +495,6 @@ class LinkedinScraper:
                 "observed_existing_count": merge_report["observed_existing_count"],
                 "unobserved_existing_count": merge_report["unobserved_existing_count"],
                 "unobserved_existing_ids": merge_report["unobserved_existing_ids"],
-                "unobserved_existing_policy": merge_report["unobserved_existing_policy"],
             })
 
         full_file = os.path.join(DATA_DIR, f"linkedin_py_full_{date_str}.json")
@@ -703,9 +502,6 @@ class LinkedinScraper:
         # 메타데이터 구조 (JS 버전 참고)
         legacy_count = len([p for p in final_posts if "crawled_at" not in p])
         verified_count = len(final_posts) - legacy_count
-        opencli_metadata = getattr(self, "opencli_metadata", {}) or {}
-        opencli_collection = opencli_metadata.get("opencli_collection") or {}
-        opencli_whoami = opencli_metadata.get("opencli_whoami") or {}
 
         full_data = {
             "metadata": {
@@ -718,24 +514,8 @@ class LinkedinScraper:
                 "crawl_mode": CRAWL_MODE,
                 "legacy_data_count": legacy_count,
                 "verified_data_count": verified_count,
-                "collector": "opencli",
-                "opencli_logged_in": opencli_whoami.get("logged_in"),
-                "opencli_site": opencli_whoami.get("site"),
-                "opencli_public_id": opencli_whoami.get("public_id"),
-                "opencli_raw_pages": opencli_collection.get("pages_collected"),
-                "opencli_unique_activity_ids": opencli_collection.get("total_unique_activity_ids"),
-                "opencli_parsed_post_count": opencli_metadata.get("parsed_post_count"),
-                "opencli_duplicate_platform_id_count": opencli_metadata.get("duplicate_platform_id_count"),
-                "opencli_parser_failed_count": opencli_metadata.get("parser_failed_count"),
-                "opencli_entity_without_save_state_count": opencli_metadata.get("entity_without_save_state_count"),
-                "opencli_entity_without_cluster_reference_count": opencli_metadata.get("entity_without_cluster_reference_count"),
                 "all_mode_observed_existing_count": merge_report["observed_existing_count"],
                 "all_mode_unobserved_existing_count": merge_report["unobserved_existing_count"],
-                "unobserved_existing_policy": merge_report["unobserved_existing_policy"],
-                "opencli_end_reason": opencli_collection.get("end_reason"),
-                "opencli_existing_streak_stop_limit": opencli_collection.get("existing_streak_stop_limit"),
-                "opencli_existing_streak_at_end": opencli_collection.get("existing_streak_at_end"),
-                "opencli_existing_ids_loaded": opencli_collection.get("existing_ids_loaded"),
                 "merge_history": merge_history
             },
             "posts": final_posts
@@ -746,26 +526,11 @@ class LinkedinScraper:
         
         # Markdown 자동 변환
         convert_json_to_md(full_file)
-        return full_file, final_posts, new_items
-
-def main(argv=None):
-    configure_text_output(sys.stdout)
-    configure_text_output(sys.stderr)
-    parser = argparse.ArgumentParser(description='LinkedIn 스크래퍼')
-    parser.add_argument('--mode', choices=['all', 'update'], default='update', help='크롤링 모드')
-    args = parser.parse_args(argv)
-    global CRAWL_MODE
-    CRAWL_MODE = "update only" if args.mode == "update" else "all"
-    scraper = LinkedinScraper()
-    try:
-        scraper.run()
-    except LinkedInAuthRequiredError as exc:
-        exit_auth_required(
-            "linkedin",
-            reason=exc.reason,
-            current_url=exc.current_url,
-        )
-
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser(description='LinkedIn 스크래퍼')
+    parser.add_argument('--mode', choices=['all', 'update'], default='update', help='크롤링 모드')
+    args = parser.parse_args()
+    CRAWL_MODE = "update only" if args.mode == "update" else "all"
+    scraper = LinkedinScraper()
+    scraper.run()
