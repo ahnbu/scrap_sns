@@ -44,7 +44,8 @@ created: "2026-04-17 13:25"
 
 1. `linkedin_scrap.py`가 Voyager GraphQL 응답을 가로채 저장 게시물을 추출한다.
 2. 기존 full 파일을 읽어 증분 중복을 막고, 필요한 메타데이터를 보존한다.
-3. 결과를 최신 full 파일과 update 디렉토리에 반영한다.
+3. `all` 모드는 `media` 없는 기존 글을 재수집 대상으로 삼는다.
+4. 결과를 최신 full 파일과 update 디렉토리에 반영한다.
 
 주요 출력:
 
@@ -77,6 +78,8 @@ consumer 토큰이 없으면 상세 수집은 건너뛰고, simple 기반 메타
 3. Threads, LinkedIn, X 최신 full 파일 로드
 4. 플랫폼 이름 정규화: `threads`, `linkedin`, `x`
 5. 플랫폼 내부 순서를 `platform_sequence_id`로 보존
+   (LinkedIn은 이 필드를 생성하지 않으며, 수집 배열 순서 자체가 화면 순서와 무관하다.
+    `docs/development.md`의 LinkedIn 수집 순서 항목 참조)
 6. ID 기준 중복 제거
 7. 통합본을 `output_total/total_full_YYYYMMDD.json`에 저장
 8. Markdown 변환과 로컬 이미지 다운로드를 수행

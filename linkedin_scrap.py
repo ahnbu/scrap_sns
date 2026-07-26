@@ -419,8 +419,13 @@ class LinkedinScraper:
             return
 
         # 1. 시퀀스 ID 부여 (신규 게시물만)
-        # crawled_at 기준 오름차순(과거->최신)으로 정렬하여 ID 순차 부여
-        new_posts = sorted([p for p in self.posts if p.get("sequence_id", 0) == 0], key=lambda x: x['crawled_at'])
+        # crawled_at 오름차순(과거->최신) 1차, 같은 수집 시각 내에서는 date 오름차순 2차.
+        # 한 번의 실행에서 crawled_at은 모두 같으므로 실질 정렬 키는 date다.
+        # 수집 배열 순서는 화면 순서와 무관하므로(BACKLOG BL-0726-02) 배열 순서에 의존하지 않는다.
+        new_posts = sorted(
+            [p for p in self.posts if p.get("sequence_id", 0) == 0],
+            key=lambda x: (x['crawled_at'], x.get('date') or '')
+        )
         for post in new_posts:
             self.max_sequence_id += 1
             post["sequence_id"] = self.max_sequence_id

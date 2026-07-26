@@ -122,6 +122,27 @@ REQUIRED_FIELDS = ["sns_platform", "username", "url", "created_at"]
 - `media`: VectorImage artifact 또는 fallback URL
 - `url`: 게시물 permalink
 
+#### 수집 순서
+
+Voyager GraphQL 응답의 배열 순서는 화면 표시 순서를 보장하지 않는다.
+
+- 실측(2026-07-26): 화면 상위 9건이 수집 배열에서 `9, 0, 7, 3, 1, 2, 5, 6, 4` 위치에 분산
+- 응답 자체는 `start=0, 10, 20…` 오름차순으로 정상 도착하므로 네트워크 도착 순서 문제는 아니다
+- 원인 미규명 상태이며 BACKLOG BL-0726-02로 추적한다
+- `sequence_id` 부여 시 배열 순서를 신뢰하지 않는다
+- `crawled_at`은 한 번의 실행에서 전부 동일하므로 단독 정렬 키가 되지 못한다
+- 2차 정렬 키로 `date`(작성일) 오름차순을 사용한다. 단 저장 순서와 작성일 순서는 다를 수 있으므로 근사치다
+- 실제 저장 순서가 필요하면 브라우저에서 저장글 페이지 DOM을 직접 읽어 대조한다
+- 화면 순서 정본 예시: `tests/fixtures/golden/linkedin/20260726_saved_posts_screen_order.json`
+
+#### 모드별 스킵 규칙
+
+`--mode all`은 "이미 수집한 글"이 아니라 **`media`가 있는 기존 글**을 건너뛴다.
+
+- `--mode update`: 기존 글을 만나면 스킵하고, 20건 연속 시 조기 종료(`CONSECUTIVE_EXISTING_LIMIT`)
+- `--mode all`: 기존 글이어도 `media`가 없으면 재수집(이미지 보강 목적)
+- 따라서 `all` 실행 배열에 최신 글이 없을 수 있으며 이는 정상 동작이다
+
 ### X(Twitter)
 
 - 목록 수집기: `twitter_scrap.py`

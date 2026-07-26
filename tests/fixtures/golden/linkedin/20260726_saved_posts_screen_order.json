@@ -1,0 +1,149 @@
+{
+  "captured_at": "2026-07-26T16:35:00+09:00",
+  "source": "LinkedIn 저장글 페이지 DOM 직접 추출 (Chrome 확장)",
+  "source_url": "https://www.linkedin.com/my-items/saved-posts/",
+  "method": "urn:li:activity ID를 DOM 등장 순서대로 추출 후 중복 제거. 화면 상단이 최근 저장.",
+  "screen_total_captured": 88,
+  "target_scope": "2026-07-26 15:29 수집분 17건 (sequence_id 733~749)",
+  "purpose": "LinkedIn 수집 배열 순서가 화면 순서와 무관함(무작위)을 실측한 근거이자, sequence_id 교정의 정본. 향후 순서 관련 검증의 기준 데이터로 사용한다.",
+  "finding": "수집 배열에서 화면 1~9번이 idx 9,0,7,3,1,2,5,6,4 에 분산됨. 뒤집힘도 부분정렬도 아닌 무작위.",
+  "caveat": "화면 1번(2026-07-22)이 2번(2026-07-23)보다 작성일이 오래됨. 즉 저장 순서와 작성일 순서는 일치하지 않으므로 작성일 정렬로는 이 순서를 재현할 수 없다.",
+  "items": [
+    {
+      "screen_position": 1,
+      "platform_id": "7485488225780649985",
+      "sequence_id_before": 742,
+      "sequence_id_after": 749,
+      "date": "2026-07-22",
+      "excerpt": "안드레이 카파시가 \"자기가 AI 쓰는 방식\" 하나 공개  요약하면 '프롬"
+    },
+    {
+      "screen_position": 2,
+      "platform_id": "7485915418151460864",
+      "sequence_id_before": 733,
+      "sequence_id_after": 748,
+      "date": "2026-07-23",
+      "excerpt": "🚨 Claude Code 토큰비 줄이는 프롬프트 공유합니다.  원인부터"
+    },
+    {
+      "screen_position": 3,
+      "platform_id": "7485103480131657728",
+      "sequence_id_before": 740,
+      "sequence_id_after": 747,
+      "date": "2026-07-21",
+      "excerpt": "AI한테 \"PPT 만들어줘\" 하지 마세요. 어차피 밋밋하고 'AI 티' "
+    },
+    {
+      "screen_position": 4,
+      "platform_id": "7484462056679710720",
+      "sequence_id_before": 736,
+      "sequence_id_after": 746,
+      "date": "2026-07-19",
+      "excerpt": "[신입 PM을 위한 Q&A 1. 전혀 다른 분야의 경험도 PM에 도움이 "
+    },
+    {
+      "screen_position": 5,
+      "platform_id": "7484249044932812801",
+      "sequence_id_before": 734,
+      "sequence_id_after": 745,
+      "date": "2026-07-18",
+      "excerpt": "AI 구독 조합, 예산과 용도별로 고르는 법 정리했습니다  AI 구독을 "
+    },
+    {
+      "screen_position": 6,
+      "platform_id": "7483684375738601472",
+      "sequence_id_before": 735,
+      "sequence_id_after": 744,
+      "date": "2026-07-17",
+      "excerpt": "GPT-5.6의 Sol, Terra, Luna. 어떤 일을 누구에게 맡길"
+    },
+    {
+      "screen_position": 7,
+      "platform_id": "7482408555648593920",
+      "sequence_id_before": 738,
+      "sequence_id_after": 743,
+      "date": "2026-07-13",
+      "excerpt": "깃허브에서 배포하기  누구나 쉽게 말로 원하는 웹앱을 만들 수 있는 바이"
+    },
+    {
+      "screen_position": 8,
+      "platform_id": "7483664268966514688",
+      "sequence_id_before": 739,
+      "sequence_id_after": 742,
+      "date": "2026-07-17",
+      "excerpt": "(충격 받았습니다) Fable 5 를 이긴 오픈 소스 모델이 나왔습니다:"
+    },
+    {
+      "screen_position": 9,
+      "platform_id": "7483302144633344000",
+      "sequence_id_before": 737,
+      "sequence_id_after": 741,
+      "date": "2026-07-16",
+      "excerpt": "AI 시대에 PM과 디자이너에게 요구되는 역할이 빠르게 변하고 있습니다."
+    },
+    {
+      "screen_position": 10,
+      "platform_id": "7483388433885786112",
+      "sequence_id_before": 741,
+      "sequence_id_after": 740,
+      "date": "2026-07-16",
+      "excerpt": "AI로 웹사이트 만들면 왜 다 똑같이 생겼을까요?  보라 그라데이션 히어"
+    },
+    {
+      "screen_position": 11,
+      "platform_id": "7483283006112022528",
+      "sequence_id_before": 743,
+      "sequence_id_after": 739,
+      "date": "2026-07-16",
+      "excerpt": "모든 것이 팩토리처럼 변하고 있습니다. 지난주 서울에서 열린 ICML은 "
+    },
+    {
+      "screen_position": 12,
+      "platform_id": "7482787607328952320",
+      "sequence_id_before": 748,
+      "sequence_id_after": 738,
+      "date": "2026-07-14",
+      "excerpt": "Chatgpt 5.6 Sol Light로 바이브코딩! @site로 호출만"
+    },
+    {
+      "screen_position": 13,
+      "platform_id": "7483304861275680769",
+      "sequence_id_before": 745,
+      "sequence_id_after": 737,
+      "date": "2026-07-16",
+      "excerpt": "에이전트 전환을 원하신다면 '초기 세팅' 에 시간을 아끼지 말아야 합니다"
+    },
+    {
+      "screen_position": 14,
+      "platform_id": "7482233621014020096",
+      "sequence_id_before": 744,
+      "sequence_id_after": 736,
+      "date": "2026-07-13",
+      "excerpt": "\"1000만원의 토큰을 사용한 실험 결과를 공유합니다.\" — Fable,"
+    },
+    {
+      "screen_position": 15,
+      "platform_id": "7481914966363619328",
+      "sequence_id_before": 746,
+      "sequence_id_after": 735,
+      "date": "2026-07-12",
+      "excerpt": "발표자모드 프로그램 오픈소스로 공개합니다 🫡 (HTML로 발표용 자료 "
+    },
+    {
+      "screen_position": 16,
+      "platform_id": "7481313460060889088",
+      "sequence_id_before": 749,
+      "sequence_id_after": 734,
+      "date": "2026-07-10",
+      "excerpt": "퇴사 후 백수 약사에서, AI 커뮤니티 사업을 하기까지 그 여정을 카드뉴"
+    },
+    {
+      "screen_position": 17,
+      "platform_id": "7481608806032953344",
+      "sequence_id_before": 747,
+      "sequence_id_after": 733,
+      "date": "2026-07-11",
+      "excerpt": "빌더들은 이미 Codex 설정을 고쳐서 성능과 사용량을 둘 다 지키고 있"
+    }
+  ]
+}
