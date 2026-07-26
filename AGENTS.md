@@ -33,8 +33,7 @@
 ## 참조 문서
 
 - `README.md` — 현재 실행 진입점, 설치, 태그 동기화 개요
-- `docs/development.md` — 플랫폼별 데이터 구조·URL 형식, 표준 스키마
-- `docs/crawling_logic.md` — Producer/Consumer 흐름, 병합, 뷰어 연동
+- `docs/architecture.md` — 플랫폼별 데이터 구조·수집 흐름, 표준 스키마, 병합, 뷰어·API surface
 
 ## 작업별 정본 위치
 
@@ -56,7 +55,7 @@
 ## 데이터 identity 규칙
 
 - `sequence_id`는 통합 파일 안에서 다시 부여되는 로컬 순서값이며 durable identity로 쓰지 않는다.
-- LinkedIn 수집 배열 순서는 화면 순서와 무관하다. 순서 관련 변경 전 `docs/development.md`의 LinkedIn 수집 순서 항목을 확인한다.
+- LinkedIn 수집 배열 순서는 화면 순서와 무관하다. 순서 관련 변경 전 `docs/architecture.md`의 LinkedIn 수집 순서 항목을 확인한다.
 - 별표, 숨김, 메모는 `post_key` 기준으로 `web_viewer/sns_user_metadata.json`에 저장한다.
 - `canonical_url`은 원문 열기와 legacy migration 보조값이며, 사용자 상태의 주 key가 아니다.
 - 의미 있는 뷰어 상태는 file-backed JSON에 남기고, `localStorage`는 cache 또는 migration 보조로 본다.

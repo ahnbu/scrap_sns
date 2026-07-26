@@ -29,7 +29,7 @@ Threads, LinkedIn, X(Twitter)의 저장 게시물을 수집하고, 통합 JSON�
 - 수집기: `thread_scrap.py`, `thread_scrap_single.py`, `linkedin_scrap.py`, `twitter_scrap.py`, `twitter_scrap_single.py`, `total_scrap.py`
 - 뷰어/API: `index.html`, `web_viewer/`, `scrap_sns_server.py`
 - 데이터 산출물: `output_threads/`, `output_linkedin/`, `output_twitter/`, `output_total/`
-- 참조 문서: `docs/development.md`, `docs/crawling_logic.md`
+- 참조 문서: `docs/architecture.md`
 - 자동 검증: `tests/`
 
 ## 설치
@@ -201,10 +201,12 @@ Threads consumer는 Playwright 없이 `AUTH_HOME/threads/storage_state.json` 쿠
 - 게시물별 태그는 `localStorage.sns_tags`와 `web_viewer/sns_tags.json`에 함께 저장합니다.
 - 태그명, 강조 표시, alias/키워드는 `localStorage.sns_tag_catalog`와 `web_viewer/sns_tag_catalog.json`에 저장합니다.
 - 게시글별 별표, 숨김, 메모는 `localStorage.sns_user_metadata`와 `web_viewer/sns_user_metadata.json`에 함께 저장합니다.
-- 태그 동기화 API는 `/api/get-tags`, `/api/save-tags`, `/api/get-tag-catalog`, `/api/save-tag-catalog`입니다.
-- 사용자 메타데이터 API는 `/api/get-user-metadata`, `/api/save-user-metadata`입니다.
+- 태그 동기화 API는 `GET /api/get-tags`, `POST /api/save-tags`, `GET /api/get-tag-catalog`, `POST /api/save-tag-catalog`입니다.
+- 사용자 메타데이터 API는 `GET /api/get-user-metadata`, `POST /api/save-user-metadata`입니다.
 - `자동 태그`는 별도 설정 탭이 아니라 `태그 관리` 탭의 alias/키워드로 관리합니다.
-- 스크래퍼 트리거와 서버 상태 확인은 `/api/run-scrap`, `/api/status`를 사용합니다.
+- 스크래퍼 트리거와 진행 상태는 `POST /api/run-scrap`, `GET /api/scrap-progress`, 서버 상태 확인은 `GET /api/status`를 사용합니다.
+- 최신 데이터 파일 메타는 `GET /api/latest-data`로 조회합니다.
+- 인증 API `POST /api/auth/start`, `GET /api/auth/status`, `POST /api/auth/complete` 3종은 현재 미사용입니다(BL-0505-03). 2026-05-04 `f7205f4`로 프론트엔드 호출이 끊긴 죽은 코드로, 라우트만 남아 있습니다.
 - 레거시 Threads 태그 키(`threads.net`, `/t/`)는 뷰어에서 `www.threads.com` canonical로 정규화합니다.
 
 ## 시간·정렬 기준
@@ -286,7 +288,6 @@ UI 세부 검증 스크립트와 CLI 검증 스크립트도 `tests/ui_verificati
 
 ## 참조 문서
 
-- [개발 가이드](./docs/development.md): 플랫폼별 데이터 구조, canonical URL, 영구화 surface
-- [크롤링 로직](./docs/crawling_logic.md): Producer/Consumer 흐름, 병합, 뷰어 연동
+- [아키텍처](./docs/architecture.md): 플랫폼별 데이터 구조·수집 흐름, canonical URL, 영구화 surface, 병합, 뷰어·API surface
 - [CHANGELOG](./CHANGELOG.md): 변경 이력
 - [BACKLOG](./BACKLOG.md): 후속 작업 후보

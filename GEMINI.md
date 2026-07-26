@@ -71,8 +71,7 @@ python migrate_threads_domain.py --dry-run
 ## 참조 문서
 
 - `README.md` — 실행 진입점, 태그 저장, 주요 명령
-- `docs/development.md` — 플랫폼별 데이터 구조·URL 형식
-- `docs/crawling_logic.md` — 필드 정의와 전체 흐름
+- `docs/architecture.md` — 플랫폼별 데이터 구조·URL 형식, 필드 정의, 전체 흐름
 
 ## 주의 사항
 
