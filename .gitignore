@@ -65,6 +65,7 @@ scripts/*
 !scripts/verify_threads_dedupe.py
 !scripts/verify_viewer_total_count_headless.mjs
 !scripts/merge_total_only.py
+!scripts/backfill_threads_display_name.py
 
 # Terminal Paste Image folder
 .cp-images/
@@ -123,3 +124,9 @@ temp/
 
 # 수집 데이터 수정 작업 백업 (local-only)
 _docs/backup/
+
+# 저자 필터 E2E 실패 스크린샷 (local-only)
+tests/e2e/_artifacts/
+
+# Threads display_name 백필 산출물 (local-only)
+output_threads/python/*.bak_*

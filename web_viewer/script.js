@@ -178,6 +178,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     let currentTag = null;
+    let currentAuthor = null;   // { platform, username, label } | null
     let tagCreateMode = false;
     let editingTagName = null;
     let deletingTagName = null;
@@ -2023,8 +2024,57 @@ ${item.body}
             const postUrl = resolvePostUrl(post);
             const matchesTag = !currentTag || (postTags[postUrl] || []).includes(currentTag);
             const matchesVisibility = !isPostHidden(post);
+            const matchesAuthor = !currentAuthor
+                || (normalizePostKeyPlatform(post.sns_platform) === currentAuthor.platform
+                    && String(post.username || post.user || '') === currentAuthor.username);
 
-            return matchesFilter && matchesTag && matchesVisibility;
+            return matchesFilter && matchesTag && matchesVisibility && matchesAuthor;
+        });
+    }
+
+    function buildAuthorKey(post) {
+        return {
+            platform: normalizePostKeyPlatform(post?.sns_platform),
+            username: String(post?.username || post?.user || ''),
+            label: post?.display_name || post?.username || post?.user || 'Unknown',
+        };
+    }
+
+    function isSameAuthor(a, b) {
+        return !!a && !!b && a.platform === b.platform && a.username === b.username;
+    }
+
+    function setCurrentAuthor(nextAuthor) {
+        currentAuthor = nextAuthor;
+        clearSelection();
+        renderPosts();
+    }
+
+    function bindAuthorLink(header, post) {
+        const authorLink = header.querySelector('.author-link');
+        if (!authorLink) return;
+
+        const authorKey = buildAuthorKey(post);
+
+        // username이 없으면 필터 키를 만들 수 없다 - 클릭 비활성화
+        if (!authorKey.username) return;
+
+        authorLink.classList.add('cursor-pointer', 'hover:text-primary', 'hover:underline');
+        authorLink.setAttribute('role', 'button');
+        authorLink.setAttribute('tabindex', '0');
+        authorLink.setAttribute('title', '이 저자의 글만 보기');
+
+        const toggleAuthor = (e) => {
+            e.stopPropagation();
+            setCurrentAuthor(isSameAuthor(currentAuthor, authorKey) ? null : authorKey);
+        };
+
+        authorLink.addEventListener('click', toggleAuthor);
+        authorLink.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();   // Space가 페이지를 스크롤하지 않도록
+                toggleAuthor(e);
+            }
         });
     }
 
@@ -2477,16 +2527,16 @@ ${item.body}
         }
 
         header.innerHTML = `
-            <div class="flex items-center gap-3">
+            <div class="flex items-center gap-3 min-w-0">
                 ${iconHtml}
                 <div class="min-w-0">
-                    <h3 class="text-sm font-semibold text-white truncate max-w-[150px]">${escapeHtml(post.display_name || post.username || post.user || 'Unknown')}</h3>
+                    <h3 class="author-link text-sm font-semibold text-white truncate max-w-[150px]">${escapeHtml(post.display_name || post.username || post.user || 'Unknown')}</h3>
                     <p class="text-xs text-gray-400 truncate" title="${escapeHtml(post.created_at || post.crawled_at)}">
                         ${escapeHtml(dateLabel)}
                     </p>
                 </div>
             </div>
-            <div class="flex items-center gap-1">
+            <div class="flex items-center gap-1 shrink-0">
                 <button class="fold-btn p-1.5 rounded-lg hover:bg-white/10 text-gray-400" data-url="${escapeHtml(postUrl)}" title="${isFolded ? 'Unfold card' : 'Fold card'}">
                     <span class="material-symbols-outlined text-[20px]">
                         ${isFolded ? 'expand_more' : 'expand_less'}
@@ -2511,6 +2561,8 @@ ${item.body}
             </div>
         `;
 
+
+        bindAuthorLink(header, post);
 
         const selectBtn = header.querySelector('.select-btn');
         selectBtn.addEventListener('click', (e) => {
@@ -2935,14 +2987,18 @@ ${item.body}
         Object.values(postTags).forEach(tags => tags.forEach(tag => allUniqueTags.add(tag)));
         
         const sortedTags = Array.from(allUniqueTags).sort();
-        
+
+        // 저자 배지는 태그 유무와 무관하게 항상 렌더한다.
+        // (태그가 0개일 때 조기 반환하면 저자 필터를 해제할 수단이 사라진다)
         if (sortedTags.length === 0) {
             container.innerHTML = '';
+            renderAuthorBadge(container);
             return;
         }
 
         container.innerHTML = '';
-        
+        renderAuthorBadge(container);
+
         sortedTags.forEach(tag => {
             const tagBtn = document.createElement('button');
             const isPrimary = isPrimaryTag(tag);
@@ -2962,6 +3018,24 @@ ${item.body}
         if (currentTag && !allUniqueTags.has(currentTag)) {
             currentTag = null; // If selected tag was deleted
         }
+    }
+
+    function renderAuthorBadge(container) {
+        if (!currentAuthor) return;
+
+        const badge = document.createElement('button');
+        badge.className = 'author-filter-badge';
+        badge.type = 'button';
+        badge.title = '저자 필터 해제';
+        badge.innerHTML = `
+            <span class="material-symbols-outlined text-[16px]">person</span>
+            <span class="author-filter-badge-label">${escapeHtml(currentAuthor.label)}</span>
+            <span class="material-symbols-outlined text-[16px]">close</span>
+        `;
+        badge.addEventListener('click', () => {
+            setCurrentAuthor(null);
+        });
+        container.appendChild(badge);
     }
 
     // Modal Logic

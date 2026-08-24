@@ -475,6 +475,35 @@ body.modal-open {
   width: 100%;
 }
 
+/* 저자 필터 활성 배지 - 태그 칩 옆에 노출되며 클릭 시 해제 */
+.author-filter-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  cursor: pointer;
+  background: rgba(127, 13, 242, 0.2);
+  border: 1px solid rgba(127, 13, 242, 0.5);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.35rem 0.7rem 0.35rem 0.55rem;
+  border-radius: 9999px;
+  color: #c084fc;
+  max-width: 320px;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.author-filter-badge:hover {
+  background: rgba(127, 13, 242, 0.32);
+  border-color: rgba(127, 13, 242, 0.75);
+  color: #fff;
+}
+
+.author-filter-badge-label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .global-tag-chip {
   cursor: pointer;
   background: rgba(255, 255, 255, 0.03);
