@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import re
 import subprocess
 import sys
 from dataclasses import dataclass
@@ -45,12 +46,45 @@ def _normalize_media(media_items):
     return normalized
 
 
-def parse_twitter_cli_payload(payload, fallback_user):
+def extract_tweet_id(url):
+    """Return the numeric tweet id from a tweet URL or a bare id."""
+    text = str(url or "").strip()
+    if text.isdigit():
+        return text
+    match = re.search(r"/status/(\d+)", text)
+    return match.group(1) if match else None
+
+
+def select_focal_tweet(items, expected_id=None):
+    """Pick the requested tweet instead of trusting payload order.
+
+    Only falls back to the first item when the caller has no expected id at all.
+    Once an id is expected, the match must be explicit: a payload that carries no
+    ids, or carries ids that none of which match, yields None so the caller fails
+    instead of writing another tweet's content into this record.
+
+    Taking items[0] on faith is what poisoned 36 X records under the pre-ee9fb37
+    collector, so it is not offered as a fallback here even for compatibility.
+    """
+    if not items:
+        return None
+    if not expected_id:
+        return items[0]
+
+    for item in items:
+        if str(item.get("id") or "") == str(expected_id):
+            return item
+    return None
+
+
+def parse_twitter_cli_payload(payload, fallback_user, expected_id=None):
     if not payload.get("ok") or not payload.get("data"):
         return None
 
-    # The CLI payload is expected to return the focal tweet first.
-    main_tweet = payload["data"][0]
+    main_tweet = select_focal_tweet(payload["data"], expected_id)
+    if main_tweet is None:
+        return None
+
     real_user = ((main_tweet.get("author") or {}).get("screenName")) or fallback_user
     full_text = main_tweet.get("text") or ""
     media = _normalize_media(main_tweet.get("media", []))
@@ -85,4 +119,8 @@ def fetch_tweet_detail(url, target_user, env, timeout=30, runner=subprocess.run)
     except json.JSONDecodeError:
         return None
 
-    return parse_twitter_cli_payload(payload, fallback_user=target_user)
+    return parse_twitter_cli_payload(
+        payload,
+        fallback_user=target_user,
+        expected_id=extract_tweet_id(url),
+    )

@@ -383,6 +383,30 @@ def sync_detail_collected_flags(simple_path, full_path):
     return full_changed
 
 
+FAILED_SNAPSHOT_DIR = os.path.join("tests", "fixtures", "snapshots", "threads_failed")
+
+
+def save_failed_snapshot(html, code, directory=FAILED_SNAPSHOT_DIR):
+    """Keep the HTML of a detail fetch that produced nothing, for diagnosis.
+
+    The shared snapshot helper keeps only the newest 10 files regardless of
+    outcome, so a failure is pushed out by the next successful run before anyone
+    can look at it. Failures are rare, so they get their own directory and are
+    named by code instead of timestamp. The path sits under
+    ``tests/fixtures/snapshots/`` which .gitignore already excludes.
+    """
+    if not code:
+        return None
+    try:
+        os.makedirs(directory, exist_ok=True)
+        path = os.path.join(directory, f"{code}.html")
+        with open(path, "w", encoding="utf-8") as file:
+            file.write(html or "")
+        return path
+    except OSError:
+        return None
+
+
 def collect_one(
     code,
     username,
@@ -390,6 +414,7 @@ def collect_one(
     headers,
     fetch_fn=fetch_thread_html,
     snapshot_saver=None,
+    failed_snapshot_saver=save_failed_snapshot,
 ):
     url = f"https://www.threads.com/@{username}/post/{code}"
     result = fetch_fn(url, cookies=cookies, headers=headers)
@@ -404,8 +429,12 @@ def collect_one(
 
     data = extract_json_from_html(result.html)
     if not data:
+        if failed_snapshot_saver:
+            failed_snapshot_saver(result.html, code)
         return []
     items = extract_items_multi_path(data, code, username)
+    if not items and failed_snapshot_saver:
+        failed_snapshot_saver(result.html, code)
     return _apply_redirect_metadata(items, result, code, username)
 
 

@@ -6,9 +6,11 @@ from pathlib import Path
 from utils.twitter_cli_adapter import (
     TwitterCliDetail,
     build_twitter_cli_env,
+    extract_tweet_id,
     fetch_tweet_detail,
     load_twitter_tokens,
     parse_twitter_cli_payload,
+    select_focal_tweet,
 )
 
 
@@ -166,6 +168,7 @@ def test_fetch_tweet_detail_success_passes_args_env_and_parses_result():
                     "ok": True,
                     "data": [
                         {
+                            "id": "1",
                             "text": "hello",
                             "author": {"screenName": "target_user"},
                             "media": [
@@ -275,4 +278,86 @@ def test_fetch_tweet_detail_returns_none_when_runner_raises_oserror():
             runner=oserror_runner,
         )
         is None
+    )
+
+
+def test_extract_tweet_id_reads_url_and_bare_id():
+    assert extract_tweet_id("https://x.com/i/status/2024990776531587145") == "2024990776531587145"
+    assert extract_tweet_id("https://x.com/kana_option/status/123?s=20") == "123"
+    assert extract_tweet_id("2038713289254064321") == "2038713289254064321"
+    assert extract_tweet_id("https://x.com/kana_option") is None
+    assert extract_tweet_id(None) is None
+
+
+def test_select_focal_tweet_picks_requested_id_not_first_item():
+    items = [
+        {"id": "111", "text": "parent tweet"},
+        {"id": "222", "text": "requested tweet"},
+    ]
+
+    assert select_focal_tweet(items, "222")["text"] == "requested tweet"
+
+
+def test_select_focal_tweet_returns_none_when_requested_id_absent():
+    items = [
+        {"id": "111", "text": "someone else's tweet"},
+        {"id": "333", "text": "another tweet"},
+    ]
+
+    assert select_focal_tweet(items, "222") is None
+
+
+def test_select_focal_tweet_refuses_payload_without_ids_when_id_expected():
+    """A payload with no ids cannot prove which tweet it holds, so it is refused.
+
+    Taking items[0] on faith here is exactly how the pre-ee9fb37 collector wrote
+    one account's body onto 36 other records.
+    """
+    items = [{"text": "id-less payload"}, {"text": "second"}]
+
+    assert select_focal_tweet(items, "222") is None
+    assert select_focal_tweet(items, None)["text"] == "id-less payload"
+
+
+def test_parse_twitter_cli_payload_rejects_mismatched_focal_tweet():
+    payload = {
+        "ok": True,
+        "data": [
+            {
+                "id": "111",
+                "text": "1인개발자 필수 사이트 모음",
+                "author": {"screenName": "lucas_flatwhite"},
+                "media": [],
+            }
+        ],
+    }
+
+    assert parse_twitter_cli_payload(payload, fallback_user="kana_option", expected_id="222") is None
+
+
+def test_parse_twitter_cli_payload_uses_expected_id_over_order():
+    payload = {
+        "ok": True,
+        "data": [
+            {
+                "id": "111",
+                "text": "parent tweet",
+                "author": {"screenName": "other_user"},
+                "media": [],
+            },
+            {
+                "id": "222",
+                "text": "requested tweet",
+                "author": {"screenName": "target_user"},
+                "media": [],
+            },
+        ],
+    }
+
+    detail = parse_twitter_cli_payload(payload, fallback_user="fallback_user", expected_id="222")
+
+    assert detail == TwitterCliDetail(
+        full_text="requested tweet",
+        media=[],
+        real_user="target_user",
     )

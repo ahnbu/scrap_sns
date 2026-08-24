@@ -58,6 +58,13 @@ scripts/*
 !scripts/linkedin_opencli_shadow_parse.py
 !scripts/linkedin_shadow_compare.mjs
 !scripts/linkedin_media_audit.mjs
+!scripts/reset_twitter_full_tweet_scan.py
+!scripts/restore_twitter_failed_reset.py
+!scripts/verify_twitter_reset.py
+!scripts/dedupe_threads_full.py
+!scripts/verify_threads_dedupe.py
+!scripts/verify_viewer_total_count_headless.mjs
+!scripts/merge_total_only.py
 
 # Terminal Paste Image folder
 .cp-images/
@@ -113,3 +120,6 @@ _backup_*/
 .env
 temp/
 .temp/
+
+# 수집 데이터 수정 작업 백업 (local-only)
+_docs/backup/

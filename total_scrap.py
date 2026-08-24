@@ -528,16 +528,40 @@ def merge_results():
         p['sns_platform'] = 'x'
         p['platform_sequence_id'] = p.get('sequence_id', 0)
 
-    # 중복 제거 (ID 기준)
+    # 중복 제거 (ID 기준 + 플랫폼 고유 pk 기준)
+    # platform_id 만으로 걸러내면 같은 글이 서로 다른 code 로 두 번 들어온 경우를
+    # 놓친다. Threads 상세 수집이 리다이렉트 원글의 code 로 레코드를 바꿔치기하던
+    # 시절에 실제로 그런 쌍이 생겼다. pk 가 있으면 그쪽을 우선 키로 쓴다.
     seen_ids = set()
+    seen_pks = set()
     unique_posts = []
+    dropped_by_id = 0
+    dropped_by_pk = 0
     all_posts = threads_posts + linkedin_posts + twitter_posts
-    
+
     for p in all_posts:
         pid = str(p.get('platform_id') or p.get('id') or p.get('code') or p.get('url'))
-        if pid not in seen_ids:
-            unique_posts.append(p)
-            seen_ids.add(pid)
+        if pid in seen_ids:
+            dropped_by_id += 1
+            continue
+
+        pk = str(p.get('pk') or '')
+        pk_key = (p.get('sns_platform'), pk) if pk else None
+        if pk_key and pk_key in seen_pks:
+            dropped_by_pk += 1
+            continue
+
+        unique_posts.append(p)
+        seen_ids.add(pid)
+        if pk_key:
+            seen_pks.add(pk_key)
+
+    dropped = dropped_by_id + dropped_by_pk
+    if dropped:
+        print(
+            f"   ⚠️ 중복 제거: {dropped}건 "
+            f"(platform_id 기준 {dropped_by_id}건, pk 기준 {dropped_by_pk}건)"
+        )
 
     return unique_posts, len(threads_posts), len(linkedin_posts), len(twitter_posts)
 
