@@ -43,5 +43,20 @@
         "canonical_url": "https://www.threads.com/@jedisjasper/post/DXvTwMRlH-r",
         "favorite": true,
         "updated_at": "2026-07-07T11:46:58.113+09:00"
+    },
+    "threads:DcYIuwlkTih": {
+        "canonical_url": "https://www.threads.com/@pureyunji/post/DcYIuwlkTih",
+        "favorite": true,
+        "updated_at": "2026-08-24T10:45:36.824+09:00"
+    },
+    "threads:DcYctjfGqMF": {
+        "canonical_url": "https://www.threads.com/@conanssam/post/DcYctjfGqMF",
+        "hidden": true,
+        "updated_at": "2026-08-24T10:45:28.183+09:00"
+    },
+    "threads:DcYiZk5E0V8": {
+        "canonical_url": "https://www.threads.com/@taehyeong_lim/post/DcYiZk5E0V8",
+        "hidden": true,
+        "updated_at": "2026-08-24T10:45:34.288+09:00"
     }
 }

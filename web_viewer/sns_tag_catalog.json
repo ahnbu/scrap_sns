@@ -11,7 +11,10 @@
     "gemini": {
         "primary": false,
         "aliases": [
-            "제미나이"
+            "제미나이",
+            "안티그래비티",
+            "agy",
+            "antigravity"
         ]
     },
     "ppt": {
@@ -20,7 +23,17 @@
             "슬라이드",
             "slide",
             "gamma",
-            "피피티"
+            "피피티",
+            "파워포인트"
+        ]
+    },
+    "글로벌규칙": {
+        "primary": false,
+        "aliases": [
+            "claude.md",
+            "agents.md",
+            "gemini.md",
+            "글로벌 규칙"
         ]
     },
     "기획": {
@@ -28,7 +41,8 @@
         "aliases": [
             "제안서",
             "기획서",
-            "사업계획"
+            "사업계획",
+            "보고서"
         ]
     },
     "나노바나나": {
@@ -73,7 +87,8 @@
     "안티그래비티": {
         "primary": false,
         "aliases": [
-            "antigravity"
+            "antigravity",
+            "agy"
         ]
     },
     "오픈클로": {
@@ -82,7 +97,8 @@
             "Hermes",
             "openclaw",
             "nanoclaw",
-            "클로드봇"
+            "클로드봇",
+            "헤르메스"
         ]
     },
     "옵시디언": {
@@ -107,6 +123,12 @@
             "infographic"
         ]
     },
+    "코덱스": {
+        "primary": false,
+        "aliases": [
+            "codex"
+        ]
+    },
     "클로드": {
         "primary": false,
         "aliases": [
@@ -126,12 +148,6 @@
             "lazycodex",
             "omo",
             "omc"
-        ]
-    },
-    "코덱스": {
-        "primary": false,
-        "aliases": [
-            "codex"
         ]
     }
 }
