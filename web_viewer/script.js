@@ -179,6 +179,38 @@ document.addEventListener('DOMContentLoaded', () => {
     
     let currentTag = null;
     let currentAuthor = null;   // { platform, username, label } | null
+    let metricsOnly = false;    // 참여지표 보유 게시물만 표시
+
+    // 참여지표 공통 헬퍼 — 정렬·필터·카드 렌더가 같은 기준을 쓴다.
+    // -1은 과거 DOM 경로가 남긴 "값 없음" 표식이므로 유효값으로 보지 않는다.
+    const METRIC_SORT_FIELDS = ['like_count', 'comment_count', 'share_count'];
+    function hasMetricValue(value) {
+        return value !== null && value !== undefined && value !== -1 && value !== '';
+    }
+    function postHasAnyMetric(post) {
+        return METRIC_SORT_FIELDS.some((field) => hasMetricValue(post[field]))
+            || hasMetricValue(post.quote_count)
+            || hasMetricValue(post.bookmark_count)
+            || hasMetricValue(post.view_count);
+    }
+    // view_count는 X만 제공하므로 플랫폼 간 비교를 왜곡시켜 합산에서 제외한다.
+    function getEngagementScore(post) {
+        return METRIC_SORT_FIELDS.reduce((sum, field) => {
+            const n = Number(post[field]);
+            return sum + (hasMetricValue(post[field]) && Number.isFinite(n) ? n : 0);
+        }, 0);
+    }
+
+    // 필터가 걸리면 `보이는수 / 전체수 건`, 없으면 `전체수 건`.
+    // visibleCount === null 이면 필터 결과를 아직 모르는 시점(최초 로드)이다.
+    function updateTotalPostsLabel(visibleCount) {
+        const el = totalPostsCount;
+        if (!el) return;
+        const total = allPosts.length;
+        el.textContent = (visibleCount === null || visibleCount === total)
+            ? `${total} 건`
+            : `${visibleCount} / ${total} 건`;
+    }
     let tagCreateMode = false;
     let editingTagName = null;
     let deletingTagName = null;
@@ -236,6 +268,23 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         renderPosts();
     });
+
+    // 지표 보유만 토글
+    const metricsOnlyBtn = document.getElementById('metricsOnlyBtn');
+    if (metricsOnlyBtn) {
+        metricsOnlyBtn.addEventListener('click', () => {
+            metricsOnly = !metricsOnly;
+            metricsOnlyBtn.setAttribute('aria-pressed', metricsOnly ? 'true' : 'false');
+            metricsOnlyBtn.classList.toggle('text-primary', metricsOnly);
+            metricsOnlyBtn.classList.toggle('border-primary', metricsOnly);
+            clearSelection();
+            if (searchQuery) {
+                void runServerSearch(searchQuery);
+                return;
+            }
+            renderPosts();
+        });
+    }
 
     // Sort Dropdown Toggle
     const sortBtn = document.getElementById('sortBtn');
@@ -1928,9 +1977,7 @@ ${item.body}
                 console.log(`🏷️ Auto tags synced: ${result.matchedPostCount} posts, ${result.ruleCount} rules`);
             }
 
-            if (totalPostsCount) {
-                totalPostsCount.textContent = `${allPosts.length} 건`;
-            }
+            updateTotalPostsLabel(null);
 
             const activeQuery = (searchInput.value || '').trim();
             if (activeQuery) {
@@ -2027,8 +2074,9 @@ ${item.body}
             const matchesAuthor = !currentAuthor
                 || (normalizePostKeyPlatform(post.sns_platform) === currentAuthor.platform
                     && String(post.username || post.user || '') === currentAuthor.username);
+            const matchesMetrics = !metricsOnly || postHasAnyMetric(post);
 
-            return matchesFilter && matchesTag && matchesVisibility && matchesAuthor;
+            return matchesFilter && matchesTag && matchesVisibility && matchesAuthor && matchesMetrics;
         });
     }
 
@@ -2383,6 +2431,16 @@ ${item.body}
                 if (!aFav && bFav) return 1;
                 return b._dateObj - a._dateObj;
             });
+        } else if (currentSort === 'engagement') {
+            filtered.sort((a, b) => {
+                // 지표 미보유는 후순위로 밀어 성과순 상단이 전부 배지를 갖게 한다.
+                const aHas = postHasAnyMetric(a);
+                const bHas = postHasAnyMetric(b);
+                if (aHas !== bHas) return aHas ? -1 : 1;
+                const diff = getEngagementScore(b) - getEngagementScore(a);
+                if (diff !== 0) return diff;
+                return b._dateObj - a._dateObj;
+            });
         }
         return filtered;
     }
@@ -2446,6 +2504,7 @@ ${item.body}
         updateGlobalTags();
 
         const filtered = sortPosts(getFilteredPosts());
+        updateTotalPostsLabel(filtered.length);
 
         if (_ioObserver) {
             _ioObserver.disconnect();
@@ -2724,7 +2783,7 @@ ${item.body}
             { field: 'quote_count', icon: 'format_quote' },
             { field: 'bookmark_count', icon: 'bookmark' },
         ];
-        const hasMetric = (value) => value !== null && value !== undefined && value !== -1 && value !== '';
+        const hasMetric = hasMetricValue;
         const visibleMetrics = METRIC_DEFS.filter((def) => hasMetric(post[def.field]));
         if (visibleMetrics.length > 0) {
             metricsDiv = document.createElement('div');

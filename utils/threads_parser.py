@@ -260,7 +260,7 @@ def extract_posts_from_node(node, target_code, master_pk):
         image_versions = post.get("image_versions2") or {}
         candidates = image_versions.get("candidates") or []
         created_at, created_date = format_timestamp(post.get("taken_at"))
-        extracted.append({
+        item = {
             "platform_id": code,
             "code": code,
             "root_code": target_code,
@@ -275,8 +275,48 @@ def extract_posts_from_node(node, target_code, master_pk):
             "source": "consumer_detail",
             "pk": post.get("pk"),
             "taken_at": post.get("taken_at"),
-        })
+        }
+        item.update(extract_engagement_metrics(post))
+        extracted.append(item)
     return extracted
+
+
+# Threads 원본 지표명 -> 공통 스키마명 (utils/post_schema.py STANDARD_FIELD_ORDER 기준).
+# reply_count / repost_count 는 2026-08-24에 폐기된 옛 이름이므로 쓰지 않는다.
+THREADS_METRIC_FIELD_MAP = {
+    "like_count": "like_count",
+    "direct_reply_count": "comment_count",
+    "repost_count": "share_count",
+    "quote_count": "quote_count",
+}
+
+
+def extract_engagement_metrics(post):
+    """상세 응답(data.media)의 참여지표를 공통 스키마 필드명으로 뽑는다.
+
+    값이 없거나 정수로 해석되지 않으면 그 필드를 생략한다 - 키를 만들지 않아야
+    normalize_post 가 None 기본값을 넣고, 병합 단계의 보존 가드가 기존값을 지킨다.
+    음수는 과거 DOM 경로가 쓰던 '값 없음' 표식이므로 버린다.
+    """
+    if not isinstance(post, dict):
+        return {}
+
+    metrics = {}
+    text_post_app_info = post.get("text_post_app_info") or {}
+    for source_key, schema_key in THREADS_METRIC_FIELD_MAP.items():
+        value = post.get(source_key)
+        if value is None and isinstance(text_post_app_info, dict):
+            value = text_post_app_info.get(source_key)
+        if value is None or isinstance(value, bool):
+            continue
+        try:
+            number = int(value)
+        except (TypeError, ValueError):
+            continue
+        if number < 0:
+            continue
+        metrics[schema_key] = number
+    return metrics
 
 def extract_items_multi_path(data, target_code, username):
     """

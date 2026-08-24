@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="web_viewer/tailwind-built.css" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="web_viewer/style.css?v=20260824-metrics" />
+    <link rel="stylesheet" href="web_viewer/style.css?v=20260824-metrics-w1" />
   </head>
 
   <body class="font-display text-white ambient-bg min-h-screen flex flex-col">
@@ -126,6 +126,16 @@
               >
                 <span class="text-[14px] font-bold text-white">X</span>
               </button>
+              <button
+                id="metricsOnlyBtn"
+                type="button"
+                aria-pressed="false"
+                class="flex items-center gap-1.5 px-3 py-2 rounded-full bg-surface-glass hover:bg-surface-glass-hover text-gray-300 hover:text-white text-sm font-medium border border-border-glass transition-all whitespace-nowrap"
+                title="참여지표가 있는 게시물만 보기"
+              >
+                <span class="material-symbols-outlined text-[16px]">favorite</span>
+                지표 보유만
+              </button>
               <!-- <button
                 data-filter="instagram"
                 class="filter-chip flex items-center gap-2 px-4 py-2 rounded-full bg-surface-glass hover:bg-surface-glass-hover text-gray-300 hover:text-white text-sm font-medium border border-border-glass transition-all whitespace-nowrap group"
@@ -175,6 +185,12 @@
                     class="block w-full text-left px-4 py-3 text-sm text-gray-300 hover:bg-white/5 hover:text-white transition-colors"
                   >
                     즐겨찾기순
+                  </button>
+                  <button
+                    data-sort="engagement"
+                    class="block w-full text-left px-4 py-3 text-sm text-gray-300 hover:bg-white/5 hover:text-white transition-colors"
+                  >
+                    성과순
                   </button>
                 </div>
               </div>
@@ -601,6 +617,6 @@
       </div>
     </div>
 
-    <script defer src="web_viewer/script.js?v=20260824-metrics"></script>
+    <script defer src="web_viewer/script.js?v=20260824-metrics-w1"></script>
   </body>
 </html>

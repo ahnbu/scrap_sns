@@ -94,14 +94,19 @@ def should_require_x_auth(
     return reason == "login_required"
 
 
-def launch_x_producer_context(playwright, user_data_dir: str):
+def launch_x_producer_context(playwright, user_data_dir: str, headless: bool = True):
+    """X 수집용 브라우저 컨텍스트.
+
+    headless 기본값은 True다 - 대량 재수집 중 창이 뜨면 사용자 포커스를 빼앗는다.
+    수동 로그인이 필요할 때만 --no-headless로 창을 띄운다.
+    """
     last_error = None
     for attempt in range(3):
         try:
             return playwright.chromium.launch_persistent_context(
                 user_data_dir=user_data_dir,
                 channel="chrome",
-                headless=False,
+                headless=headless,
                 args=[
                     f"--window-position={WINDOW_X},{WINDOW_Y}",
                     "--disable-blink-features=AutomationControlled",
@@ -312,7 +317,9 @@ def main(args):
     os.makedirs(USER_DATA_DIR, exist_ok=True)
 
     with sync_playwright() as p:
-        context = launch_x_producer_context(p, USER_DATA_DIR)
+        context = launch_x_producer_context(
+            p, USER_DATA_DIR, headless=getattr(args, "headless", True)
+        )
         page = context.pages[0]
 
         bookmark_response_seen = False
@@ -535,5 +542,12 @@ if __name__ == "__main__":
     configure_stdout()
     parser = argparse.ArgumentParser(description='X(Twitter) 목록 수집기 (Producer) - Refined')
     parser.add_argument('--mode', choices=['all', 'update'], default='update', help='크롤링 모드')
+    parser.add_argument(
+        '--headless',
+        dest='headless',
+        action=argparse.BooleanOptionalAction,
+        default=True,
+        help='브라우저 창 없이 실행 (기본값). 수동 로그인이 필요하면 --no-headless',
+    )
     args = parser.parse_args()
     main(args)

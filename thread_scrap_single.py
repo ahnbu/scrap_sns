@@ -168,6 +168,38 @@ def _mark_simple_alias_duplicate(output_dir, alias_code, canonical_code, merged_
     return changed
 
 
+METRIC_FIELDS = (
+    "like_count",
+    "comment_count",
+    "share_count",
+    "quote_count",
+    "bookmark_count",
+    "view_count",
+)
+
+
+def preserve_existing_metrics(new_post, existing_post):
+    """상세 재수집이 기존 참여지표를 덮어쓰지 않게 막는다.
+
+    promote_to_full_history 는 기존 레코드를 통째로 교체하므로, 새 응답이
+    지표를 싣지 않으면 이미 확보한 값이 조용히 사라진다. 신규값이 없을 때만
+    기존값을 이월한다.
+
+    0 은 유효한 지표값이지만 falsy 이므로 반드시 `is None` 으로 판정한다 -
+    truthy 검사로 구현하면 좋아요 0건이 기존값으로 되살아난다.
+    """
+    if not isinstance(new_post, dict) or not isinstance(existing_post, dict):
+        return new_post
+    for field in METRIC_FIELDS:
+        if new_post.get(field) is not None:
+            continue
+        old_value = existing_post.get(field)
+        if old_value is None or old_value == -1:
+            continue
+        new_post[field] = old_value
+    return new_post
+
+
 def promote_to_full_history(grouped_data, output_dir=OUTPUT_DIR):
     """수집된 타래 데이터를 최신 Full DB 파일로 병합 및 승격시킵니다."""
     if not grouped_data:
@@ -232,6 +264,7 @@ def promote_to_full_history(grouped_data, output_dir=OUTPUT_DIR):
 
             merged_data["sequence_id"] = post.get("sequence_id")
             merged_data["crawled_at"] = post.get("crawled_at")
+            preserve_existing_metrics(merged_data, post)
             new_posts.append(merged_data)
             updated_count += 1
 
