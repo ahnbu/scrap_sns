@@ -58,6 +58,143 @@ def extract_json_from_html(html_content):
         print(f"JSON Parsing Error: {e}")
         return None
 
+RESULT_DATA_MARKER = '"result":{"data"'
+
+
+def iter_result_data_blocks(html_content):
+    """Yield every parsed ``"result":{"data" ...}`` block in the page.
+
+    The old response shape put the whole thread in one block, so
+    ``extract_json_from_html`` only ever looked at one. The current shape
+    spreads a single post across five blocks - one holds the post body,
+    another holds the reply/self-thread tree - so callers need all of them.
+    Blocks that fail to parse are skipped rather than aborting the scan.
+    """
+    if not html_content:
+        return
+
+    idx = 0
+    while True:
+        idx = html_content.find(RESULT_DATA_MARKER, idx)
+        if idx == -1:
+            return
+        start_obj = html_content.find("{", idx + len(RESULT_DATA_MARKER) - 5)
+        idx += len(RESULT_DATA_MARKER)
+        if start_obj == -1:
+            continue
+        json_str = _extract_balanced_json_object(html_content, start_obj)
+        if not json_str:
+            continue
+        try:
+            yield json.loads(json_str)
+        except Exception:
+            continue
+
+
+def _is_detail_media(media):
+    """A block holds the requested post only if its media carries the body."""
+    if not isinstance(media, dict):
+        return False
+    if "caption" not in media or not media.get("code"):
+        return False
+    return bool((media.get("user") or {}).get("username"))
+
+
+def select_detail_media(blocks, target_code=None, username=None):
+    """Pick the block holding the requested post, or None when ambiguous.
+
+    Block order is not stable - across 42 captured pages the body block sat at
+    index 0, 1 or 2 - so position must never decide. Every one of those pages
+    had exactly one block satisfying ``_is_detail_media``. When more than one
+    somehow matches, fall back to the requested code and then the requested
+    username; if neither disambiguates, return None so the fetch is recorded as
+    a failure. Guessing here is what produced the author/body contamination
+    that ``utils/twitter_cli_adapter.select_focal_tweet`` had to be hardened
+    against.
+    """
+    candidates = []
+    for block in blocks:
+        if not isinstance(block, dict):
+            continue
+        media = block.get("media")
+        if _is_detail_media(media):
+            candidates.append(media)
+    if not candidates:
+        return None
+    if len(candidates) == 1:
+        return candidates[0]
+
+    by_code = [m for m in candidates if m.get("code") == target_code]
+    if len(by_code) == 1:
+        return by_code[0]
+    by_user = [m for m in candidates if (m.get("user") or {}).get("username") == username]
+    if len(by_user) == 1:
+        return by_user[0]
+    return None
+
+
+def collect_self_thread_nodes(blocks, media_id, root_username):
+    """Return the author's own follow-up posts for the selected media.
+
+    The chain lives under ``text_post_app_info.self_thread`` on a block whose
+    ``media.id`` matches the body block. ``direct_replies`` sits right next to
+    it and holds other people's posts, so it is never read.
+    """
+    if not media_id:
+        return []
+
+    nodes = []
+    for block in blocks:
+        if not isinstance(block, dict):
+            continue
+        media = block.get("media")
+        if not isinstance(media, dict) or media.get("id") != media_id:
+            continue
+        text_post_app_info = media.get("text_post_app_info") or {}
+        self_thread = text_post_app_info.get("self_thread") or {}
+        edges = (self_thread.get("posts") or {}).get("edges") or []
+        for edge in edges:
+            node = (edge or {}).get("node")
+            if not isinstance(node, dict):
+                continue
+            if (node.get("user") or {}).get("username") != root_username:
+                continue
+            nodes.append(node)
+    return nodes
+
+
+def extract_items_from_media_html(html_content, target_code, username):
+    """Extract posts from the current ``data.media`` response shape.
+
+    Used when ``extract_json_from_html`` finds no ``thread_items`` anchor. The
+    author-consistency filter keys off the selected root's own ``user.pk``
+    rather than the requested username, because a repost redirects to the
+    original and the requested username is then absent from the payload.
+    """
+    blocks = list(iter_result_data_blocks(html_content))
+    if not blocks:
+        return []
+
+    root_media = select_detail_media(blocks, target_code, username)
+    if not root_media:
+        return []
+
+    root_user = root_media.get("user") or {}
+    root_username = root_user.get("username")
+    master_pk = root_user.get("pk")
+
+    extracted = extract_posts_from_node(root_media, target_code, master_pk)
+    for node in collect_self_thread_nodes(blocks, root_media.get("id"), root_username):
+        extracted.extend(extract_posts_from_node(node, target_code, master_pk))
+
+    dedup = {}
+    for item in extracted:
+        code = item.get("code")
+        if code:
+            dedup[code] = item
+    return list(dedup.values())
+
+
 def find_master_pk_recursive(data, username):
     """Recursively search the user pk matching URL username."""
     if not username:

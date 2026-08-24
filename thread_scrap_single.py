@@ -12,7 +12,11 @@ from utils.threads_http_adapter import (
     fetch_thread_html,
     load_threads_cookies,
 )
-from utils.threads_parser import extract_items_multi_path, extract_json_from_html
+from utils.threads_parser import (
+    extract_items_from_media_html,
+    extract_items_multi_path,
+    extract_json_from_html,
+)
 from utils.auth_paths import threads_storage
 
 # ==========================================
@@ -427,12 +431,16 @@ def collect_one(
         except Exception:
             pass
 
+    # Threads serves two response shapes. The older one nests the whole thread
+    # under `thread_items`; the current one puts the post in `data.media` and
+    # its follow-up chain in a sibling block. Try the old path first so the
+    # existing behaviour is untouched, then fall back to the media shape.
     data = extract_json_from_html(result.html)
-    if not data:
-        if failed_snapshot_saver:
-            failed_snapshot_saver(result.html, code)
-        return []
-    items = extract_items_multi_path(data, code, username)
+    if data:
+        items = extract_items_multi_path(data, code, username)
+    else:
+        items = extract_items_from_media_html(result.html, code, username)
+
     if not items and failed_snapshot_saver:
         failed_snapshot_saver(result.html, code)
     return _apply_redirect_metadata(items, result, code, username)
