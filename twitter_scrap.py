@@ -176,6 +176,8 @@ def extract_from_json(json_data):
             ts_full, ts_short = parse_twitter_date(legacy.get('created_at'))
             post_id = tweet_results.get('rest_id')
             
+            views_obj = tweet_results.get('views') or legacy.get('views') or {}
+
             if post_id:
                 posts.append(reorder_post({
                     "platform_id": post_id,
@@ -185,6 +187,12 @@ def extract_from_json(json_data):
                     "media": media,
                     "created_at": ts_full,
                     "date": ts_short,
+                    "like_count": legacy.get("favorite_count"),
+                    "comment_count": legacy.get("reply_count"),
+                    "share_count": legacy.get("retweet_count"),
+                    "quote_count": legacy.get("quote_count"),
+                    "bookmark_count": legacy.get("bookmark_count"),
+                    "view_count": views_obj.get("count"),
                     "url": f"https://x.com/{username}/status/{post_id}" if username else f"https://x.com/i/status/{post_id}",
                     "sns_platform": "x",
                     "source": "network",
@@ -324,7 +332,8 @@ def main(args):
                         existing = all_posts_map.get(pid)
                         was_collected = existing.get('is_detail_collected', False) if existing else False
                         
-                        if pid not in all_posts_map or len(post['full_text']) > len(all_posts_map[pid].get('full_text', '')):
+                        has_new_metrics = existing is not None and existing.get('like_count') is None and post.get('like_count') is not None
+                        if pid not in all_posts_map or len(post['full_text']) > len(all_posts_map[pid].get('full_text', '')) or has_new_metrics:
                             if pid not in all_posts_map: 
                                 new_count += 1
                                 post['crawled_at'] = datetime.now().isoformat(timespec='milliseconds')

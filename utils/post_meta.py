@@ -23,6 +23,12 @@ META_FIELDS = [
     "thumbnail",
     "is_detail_collected",
     "is_merged_thread",
+    "like_count",
+    "comment_count",
+    "share_count",
+    "quote_count",
+    "bookmark_count",
+    "view_count",
 ]
 
 

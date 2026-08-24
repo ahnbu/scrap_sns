@@ -1,6 +1,6 @@
 ﻿{
     "metadata": {
-        "updated_at": "2026-08-24T16:12:12.637619",
+        "updated_at": "2026-08-24T17:01:54.382682",
         "max_sequence_id": 1995,
         "total_count": 1995,
         "threads_count": 1240,
@@ -1781,10 +1781,10 @@
             "is_merged_thread": false,
             "pk": null,
             "like_count": -1,
-            "reply_count": -1,
-            "repost_count": -1,
             "quote_count": -1,
             "content_type": "text",
+            "comment_count": -1,
+            "share_count": -1,
             "platform_sequence_id": 2
         },
         {
@@ -2075,12 +2075,12 @@
             "is_merged_thread": false,
             "root_code": "DUfZZ8Wk5K_",
             "like_count": 62,
-            "reply_count": 1,
-            "repost_count": 1,
             "quote_count": 0,
             "pk": "3827889942241186495",
             "media_type": 19,
             "content_type": "image",
+            "comment_count": 1,
+            "share_count": 1,
             "platform_sequence_id": 13
         },
         {
@@ -2101,12 +2101,12 @@
             "is_merged_thread": false,
             "root_code": "DUiW8Uekmf0",
             "like_count": 3,
-            "reply_count": 1,
-            "repost_count": 0,
             "quote_count": 0,
             "pk": "3828723535397939188",
             "media_type": 19,
             "content_type": "image",
+            "comment_count": 1,
+            "share_count": 0,
             "platform_sequence_id": 14
         },
         {
@@ -3077,12 +3077,12 @@
             "is_merged_thread": false,
             "root_code": "DUQf51ekbqu",
             "like_count": 6,
-            "reply_count": 0,
-            "repost_count": 1,
             "quote_count": 0,
             "pk": "3823696397510752942",
             "media_type": 19,
             "content_type": "image",
+            "comment_count": 0,
+            "share_count": 1,
             "platform_sequence_id": 54
         },
         {
@@ -3150,12 +3150,12 @@
             "is_merged_thread": false,
             "root_code": "DUQeA6CDzDP",
             "like_count": 4,
-            "reply_count": 0,
-            "repost_count": 0,
             "quote_count": 0,
             "pk": "3823688087344459983",
             "media_type": 19,
             "content_type": "image",
+            "comment_count": 0,
+            "share_count": 0,
             "platform_sequence_id": 56
         },
         {
@@ -3350,12 +3350,12 @@
             "is_merged_thread": false,
             "root_code": "DULCfk1EqLV",
             "like_count": 1,
-            "reply_count": 0,
-            "repost_count": 0,
             "quote_count": 0,
             "pk": "3822159674695918293",
             "media_type": 19,
             "content_type": "image",
+            "comment_count": 0,
+            "share_count": 0,
             "platform_sequence_id": 64
         },
         {
@@ -3460,12 +3460,12 @@
             "is_merged_thread": false,
             "root_code": "DUG6cYok5Qr",
             "like_count": 37,
-            "reply_count": 13,
-            "repost_count": 4,
             "quote_count": 0,
             "pk": "3820998371164001323",
             "media_type": 8,
             "content_type": "carousel",
+            "comment_count": 13,
+            "share_count": 4,
             "platform_sequence_id": 68
         },
         {
@@ -3512,12 +3512,12 @@
             "is_merged_thread": false,
             "root_code": "DUKPfu1Aa6T",
             "like_count": 36,
-            "reply_count": 1,
-            "repost_count": 0,
             "quote_count": 0,
             "pk": "3821935385060159123",
             "media_type": 19,
             "content_type": "image",
+            "comment_count": 1,
+            "share_count": 0,
             "platform_sequence_id": 70
         },
         {
@@ -3995,12 +3995,12 @@
             "is_merged_thread": false,
             "root_code": "DUIde6ZE-Zy",
             "like_count": 45,
-            "reply_count": 33,
-            "repost_count": 4,
             "quote_count": 0,
             "pk": "3821433951454750322",
             "media_type": 1,
             "content_type": "image",
+            "comment_count": 33,
+            "share_count": 4,
             "platform_sequence_id": 89
         },
         {
@@ -4197,12 +4197,12 @@
             "is_merged_thread": false,
             "root_code": "DS4TktPD6BP",
             "like_count": 1,
-            "reply_count": 0,
-            "repost_count": 0,
             "quote_count": 0,
             "pk": "3798872371042951247",
             "media_type": 19,
             "content_type": "image",
+            "comment_count": 0,
+            "share_count": 0,
             "platform_sequence_id": 97
         },
         {
@@ -6733,12 +6733,12 @@
             "is_merged_thread": false,
             "root_code": "DTBvORnkpUy",
             "like_count": 2,
-            "reply_count": 0,
-            "repost_count": 0,
             "quote_count": 0,
             "pk": "3801527249653634354",
             "media_type": 18,
             "content_type": "image",
+            "comment_count": 0,
+            "share_count": 0,
             "platform_sequence_id": 197
         },
         {
@@ -7733,12 +7733,12 @@
             "is_merged_thread": false,
             "root_code": "DSEhu-lE8kp",
             "like_count": 5,
-            "reply_count": 1,
-            "repost_count": 0,
             "quote_count": 0,
             "pk": "3784297950722902313",
             "media_type": 19,
             "content_type": "image",
+            "comment_count": 1,
+            "share_count": 0,
             "platform_sequence_id": 234
         },
         {
@@ -10831,12 +10831,12 @@
             "is_merged_thread": false,
             "root_code": "DUlWT4Ok5v0",
             "like_count": 38,
-            "reply_count": 1,
-            "repost_count": 3,
             "quote_count": 1,
             "pk": "3829565181215874036",
             "media_type": 19,
             "content_type": "image",
+            "comment_count": 1,
+            "share_count": 3,
             "platform_sequence_id": 260
         },
         {
@@ -13178,12 +13178,12 @@
             "is_merged_thread": false,
             "root_code": "DVe3nW7AUQq",
             "like_count": 6,
-            "reply_count": 1,
-            "repost_count": 2,
             "quote_count": 0,
             "pk": "3845755729050944554",
             "media_type": 19,
             "content_type": "image",
+            "comment_count": 1,
+            "share_count": 2,
             "platform_sequence_id": 457
         },
         {
@@ -14059,12 +14059,12 @@
             "is_merged_thread": false,
             "root_code": "DVLSP_9iQoK",
             "like_count": 8,
-            "reply_count": 1,
-            "repost_count": 0,
             "quote_count": 0,
             "pk": "3840243371570956810",
             "media_type": 19,
             "content_type": "image",
+            "comment_count": 1,
+            "share_count": 0,
             "platform_sequence_id": 421
         },
         {
@@ -14221,12 +14221,12 @@
             "is_merged_thread": false,
             "root_code": "DVNPQnWEgLM",
             "like_count": 9,
-            "reply_count": 0,
-            "repost_count": 2,
             "quote_count": 0,
             "pk": "3840793169672405708",
             "media_type": 19,
             "content_type": "image",
+            "comment_count": 0,
+            "share_count": 2,
             "platform_sequence_id": 412
         },
         {
@@ -14481,12 +14481,12 @@
             "is_merged_thread": false,
             "root_code": "DVNZYDvkqkz",
             "like_count": 27,
-            "reply_count": 0,
-            "repost_count": 1,
             "quote_count": 0,
             "pk": "3840837661666486579",
             "media_type": 19,
             "content_type": "image",
+            "comment_count": 0,
+            "share_count": 1,
             "platform_sequence_id": 406
         },
         {
@@ -14899,12 +14899,12 @@
             "is_merged_thread": false,
             "root_code": "DVGDcUhk3Ye",
             "like_count": 15,
-            "reply_count": 2,
-            "repost_count": 2,
             "quote_count": 0,
             "pk": "3838770872702957086",
             "media_type": 19,
             "content_type": "image",
+            "comment_count": 2,
+            "share_count": 2,
             "platform_sequence_id": 385
         },
         {
@@ -15100,12 +15100,12 @@
             "is_merged_thread": false,
             "root_code": "DUsx9d3kqWM",
             "like_count": 20,
-            "reply_count": 1,
-            "repost_count": 0,
             "quote_count": 0,
             "pk": "3831657111223444876",
             "media_type": 19,
             "content_type": "image",
+            "comment_count": 1,
+            "share_count": 0,
             "platform_sequence_id": 375
         },
         {
@@ -16093,12 +16093,12 @@
             "is_merged_thread": false,
             "root_code": "DU7QcLqCQL6",
             "like_count": 1,
-            "reply_count": 1,
-            "repost_count": 0,
             "quote_count": 0,
             "pk": "3835731813042029306",
             "media_type": 19,
             "content_type": "image",
+            "comment_count": 1,
+            "share_count": 0,
             "platform_sequence_id": 335
         },
         {
@@ -16126,12 +16126,12 @@
             "is_merged_thread": false,
             "root_code": "DU7alOVCVH0",
             "like_count": 1,
-            "reply_count": 2,
-            "repost_count": 0,
             "quote_count": 0,
             "pk": "3835776414851355124",
             "media_type": 8,
             "content_type": "carousel",
+            "comment_count": 2,
+            "share_count": 0,
             "platform_sequence_id": 336
         },
         {
@@ -19258,6 +19258,9 @@
                 "save_state_verified": true,
                 "cluster_reference_verified": true
             },
+            "like_count": 498,
+            "comment_count": 20,
+            "share_count": 30,
             "platform_sequence_id": 275
         },
         {
@@ -20302,6 +20305,9 @@
                 "save_state_verified": true,
                 "cluster_reference_verified": true
             },
+            "like_count": 513,
+            "comment_count": 18,
+            "share_count": 15,
             "platform_sequence_id": 309
         },
         {
@@ -20694,6 +20700,9 @@
                 "save_state_verified": true,
                 "cluster_reference_verified": true
             },
+            "like_count": 383,
+            "comment_count": 19,
+            "share_count": 28,
             "platform_sequence_id": 322
         },
         {
@@ -21210,6 +21219,9 @@
                 "save_state_verified": true,
                 "cluster_reference_verified": true
             },
+            "like_count": 553,
+            "comment_count": 27,
+            "share_count": 60,
             "platform_sequence_id": 339
         },
         {
@@ -21766,6 +21778,12 @@
             "crawled_at": "2026-04-11T17:20:01.228",
             "source": "network",
             "is_detail_collected": true,
+            "like_count": 60859,
+            "comment_count": 2927,
+            "share_count": 7389,
+            "quote_count": 2196,
+            "bookmark_count": 108648,
+            "view_count": "21807727",
             "platform_sequence_id": 67
         },
         {
@@ -21787,6 +21805,12 @@
                 "web_viewer/images/52678a51fa0d8e5733b2b07d7543c2d8.jpg"
             ],
             "is_detail_collected": true,
+            "like_count": 4706,
+            "comment_count": 61,
+            "share_count": 682,
+            "quote_count": 13,
+            "bookmark_count": 11935,
+            "view_count": "1158133",
             "platform_sequence_id": 68
         },
         {
@@ -21794,20 +21818,16 @@
             "platform_id": "2038884237840150941",
             "sns_platform": "x",
             "username": "WhitePeach",
-            "display_name": "ᴡʜɪᴛᴇᴘᴇᴀᴄʜ",
+            "display_name": "백도☕",
             "full_text": "토큰 효율성을 높이는 방법 공유!\n클로드.md에 규칙을 수정해서 보다 효율적으로 일하게 하는 방법이네요.\n그냥 클로드 앱 켜서\nhttps://t.co/gyWDTkpYPU\n이 주소를 적용하라고 명령하시면 됩니다! https://t.co/KECUYsEBnB",
             "media": [
-                "https://wsrv.nl/?url=https://pbs.twimg.com/media/HEtmgLMbwAElToj",
-                "https://wsrv.nl/?url=https://pbs.twimg.com/media/HEuR6q2b0AAOj2S?format=jpg&name=small",
-                "https://wsrv.nl/?url=https://pbs.twimg.com/media/HEtmgLMbwAElToj?format=png&name=240x240",
-                "https://wsrv.nl/?url=https://pbs.twimg.com/media/HEuR6q2b0AAOj2S",
                 "https://wsrv.nl/?url=https://pbs.twimg.com/media/HEuR6q2b0AAOj2S.jpg"
             ],
             "url": "https://x.com/WhitePeach/status/2038884237840150941",
             "created_at": "2026-03-31 07:40:57",
             "date": "2026-03-31",
             "crawled_at": "2026-04-11T17:20:01.228",
-            "source": "full_tweet_cli",
+            "source": "network",
             "local_images": [
                 "web_viewer/images/180d1d8d6d4e5b293f8b1b428d5a9a2f.jpg",
                 "web_viewer/images/d81aa985a8be1afaee21cee143f7b3cd.jpg",
@@ -21815,6 +21835,12 @@
             ],
             "is_detail_collected": true,
             "timestamp": "2026-04-11 17:22:13",
+            "like_count": 1016,
+            "comment_count": 7,
+            "share_count": 385,
+            "quote_count": 10,
+            "bookmark_count": 1724,
+            "view_count": "100148",
             "platform_sequence_id": 69
         },
         {
@@ -21824,16 +21850,20 @@
             "username": "LearnerBR",
             "display_name": "Dev Bora 개발자 이보라 🇰🇷",
             "full_text": "Claude에게 ‘이 코드는 Codex가 작성한 거야’라고 말하면 Claude의 IQ가 순간 +20점 오른다.\n\n사람들이 실제로 테스트해 본 결과 (댓글 요약)\n\n“주니어 개발자가 쓴 코드”라고 하면 → Claude가 멘토 모드로 들어가서 반을 다시 고쳐 씀.\n\n“시니어 엔지니어가 쓴 코드”라고 하면 → 거의 건드리지 않고 “잘 됐네요” 식으로 넘김.\n\n“Claude가 쓴 거다”라고 Codex에게 말하면 → Codex가 사과 모드로 들어감 \n\n“Claude가 쓴 코드”라고 하면 Claude가 더 공격적으로 리뷰함.",
-            "media": [
-                "https://wsrv.nl/?url=https://pbs.twimg.com/media/HEutdRNbQAAOxV6"
-            ],
+            "media": [],
             "url": "https://x.com/LearnerBR/status/2038662987242991775",
             "created_at": "2026-03-30 17:01:47",
             "date": "2026-03-30",
             "crawled_at": "2026-04-11T17:20:01.228",
-            "source": "full_tweet_cli",
+            "source": "network",
             "is_detail_collected": true,
             "timestamp": "2026-04-11 17:22:02",
+            "like_count": 600,
+            "comment_count": 9,
+            "share_count": 237,
+            "quote_count": 24,
+            "bookmark_count": 518,
+            "view_count": "114359",
             "platform_sequence_id": 70
         },
         {
@@ -22219,12 +22249,12 @@
             "is_merged_thread": false,
             "root_code": "DWy4tB4E9w1",
             "like_count": 5,
-            "reply_count": 0,
-            "repost_count": 1,
             "quote_count": 0,
             "pk": "3869404414860319797",
             "media_type": 19,
             "content_type": "image",
+            "comment_count": 0,
+            "share_count": 1,
             "platform_sequence_id": 643
         },
         {
@@ -22504,12 +22534,12 @@
             "is_merged_thread": false,
             "root_code": "DWvpO8hCUhN",
             "like_count": 51,
-            "reply_count": 16,
-            "repost_count": 18,
             "quote_count": 1,
             "pk": "3868491951892940877",
             "media_type": 1,
             "content_type": "image",
+            "comment_count": 16,
+            "share_count": 18,
             "platform_sequence_id": 635
         },
         {
@@ -23281,12 +23311,12 @@
             "is_merged_thread": false,
             "root_code": "DWlrAmLCRLo",
             "like_count": 10,
-            "reply_count": 1,
-            "repost_count": 2,
             "quote_count": 0,
             "pk": "3865685012154749672",
             "media_type": 19,
             "content_type": "image",
+            "comment_count": 1,
+            "share_count": 2,
             "platform_sequence_id": 603
         },
         {
@@ -23555,12 +23585,12 @@
             "is_merged_thread": false,
             "root_code": "DWjWXFRkSSQ",
             "like_count": 2,
-            "reply_count": 1,
-            "repost_count": 1,
             "quote_count": 0,
             "pk": "3865031248448660624",
             "media_type": 19,
             "content_type": "image",
+            "comment_count": 1,
+            "share_count": 1,
             "platform_sequence_id": 591
         },
         {
@@ -24332,12 +24362,12 @@
             "is_merged_thread": false,
             "root_code": "DWYTeenE7wl",
             "like_count": 20,
-            "reply_count": 1,
-            "repost_count": 1,
             "quote_count": 0,
             "pk": "3861922337806072869",
             "media_type": 19,
             "content_type": "image",
+            "comment_count": 1,
+            "share_count": 1,
             "platform_sequence_id": 565
         },
         {
@@ -24828,12 +24858,12 @@
             "is_merged_thread": false,
             "root_code": "DWEWBbWgR0b",
             "like_count": 7,
-            "reply_count": 0,
-            "repost_count": 0,
             "quote_count": 0,
             "pk": "3856304036047297819",
             "media_type": 19,
             "content_type": "image",
+            "comment_count": 0,
+            "share_count": 0,
             "platform_sequence_id": 546
         },
         {
@@ -24976,12 +25006,12 @@
             "is_merged_thread": false,
             "root_code": "DWI70GEkXkG",
             "like_count": 120,
-            "reply_count": 21,
-            "repost_count": 38,
             "quote_count": 0,
             "pk": "3857596145518868742",
             "media_type": 19,
             "content_type": "image",
+            "comment_count": 21,
+            "share_count": 38,
             "platform_sequence_id": 541
         },
         {
@@ -25076,12 +25106,12 @@
             "is_merged_thread": false,
             "root_code": "DWJWkwKCcHW",
             "like_count": 7,
-            "reply_count": 1,
-            "repost_count": 0,
             "quote_count": 0,
             "pk": "3857713838451966422",
             "media_type": 19,
             "content_type": "image",
+            "comment_count": 1,
+            "share_count": 0,
             "platform_sequence_id": 537
         },
         {
@@ -25128,12 +25158,12 @@
             "is_merged_thread": false,
             "root_code": "DWJWmFkCZpB",
             "like_count": 5,
-            "reply_count": 1,
-            "repost_count": 0,
             "quote_count": 0,
             "pk": "3857713930156218945",
             "media_type": 19,
             "content_type": "image",
+            "comment_count": 1,
+            "share_count": 0,
             "platform_sequence_id": 538
         },
         {
@@ -25320,12 +25350,12 @@
             "is_merged_thread": false,
             "root_code": "DWGqlw0Eo8v",
             "like_count": 235,
-            "reply_count": 25,
-            "repost_count": 98,
             "quote_count": 4,
             "pk": "3856957443876753199",
             "media_type": 19,
             "content_type": "image",
+            "comment_count": 25,
+            "share_count": 98,
             "platform_sequence_id": 529
         },
         {
@@ -25837,12 +25867,12 @@
             "is_merged_thread": false,
             "root_code": "DV54nVDDW3c",
             "like_count": 382,
-            "reply_count": 76,
-            "repost_count": 99,
             "quote_count": 6,
             "pk": "3853359949456174556",
             "media_type": 8,
             "content_type": "carousel",
+            "comment_count": 76,
+            "share_count": 99,
             "platform_sequence_id": 664
         },
         {
@@ -25891,12 +25921,12 @@
             "is_merged_thread": false,
             "root_code": "DV5WkP9ib3u",
             "like_count": 2,
-            "reply_count": 1,
-            "repost_count": 0,
             "quote_count": 0,
             "pk": "3853210204255141358",
             "media_type": 19,
             "content_type": "image",
+            "comment_count": 1,
+            "share_count": 0,
             "platform_sequence_id": 665
         },
         {
@@ -26393,12 +26423,12 @@
             "is_merged_thread": false,
             "root_code": "DW9P9hNCXOY",
             "like_count": 246,
-            "reply_count": 33,
-            "repost_count": 96,
             "quote_count": 2,
             "pk": "3872321452846445464",
             "media_type": 8,
             "content_type": "carousel",
+            "comment_count": 33,
+            "share_count": 96,
             "platform_sequence_id": 681
         },
         {
@@ -26573,12 +26603,12 @@
             "is_merged_thread": false,
             "root_code": "DW9RXecAel9",
             "like_count": 5,
-            "reply_count": 0,
-            "repost_count": 1,
             "quote_count": 0,
             "pk": "3872327634629290365",
             "media_type": 19,
             "content_type": "image",
+            "comment_count": 0,
+            "share_count": 1,
             "platform_sequence_id": 677
         },
         {
@@ -26771,12 +26801,12 @@
             "is_merged_thread": false,
             "root_code": "DWq9TgCGcp3",
             "like_count": 13,
-            "reply_count": 1,
-            "repost_count": 3,
             "quote_count": 0,
             "pk": "3867172850953210487",
             "media_type": 8,
             "content_type": "carousel",
+            "comment_count": 1,
+            "share_count": 3,
             "platform_sequence_id": 670
         },
         {
@@ -26905,10 +26935,10 @@
             "is_merged_thread": false,
             "pk": null,
             "like_count": -1,
-            "reply_count": -1,
-            "repost_count": -1,
             "quote_count": -1,
             "content_type": "text",
+            "comment_count": -1,
+            "share_count": -1,
             "platform_sequence_id": 698
         },
         {
@@ -27260,12 +27290,12 @@
             "is_merged_thread": false,
             "root_code": "DW4vSYWE8NG",
             "like_count": 11,
-            "reply_count": 3,
-            "repost_count": 2,
             "quote_count": 0,
             "pk": "3871051851001742150",
             "media_type": 8,
             "content_type": "carousel",
+            "comment_count": 3,
+            "share_count": 2,
             "platform_sequence_id": 686
         },
         {
@@ -27746,10 +27776,10 @@
             "is_merged_thread": false,
             "pk": null,
             "like_count": -1,
-            "reply_count": -1,
-            "repost_count": -1,
             "quote_count": -1,
             "content_type": "text",
+            "comment_count": -1,
+            "share_count": -1,
             "platform_sequence_id": 710
         },
         {
@@ -27835,12 +27865,12 @@
             "is_merged_thread": false,
             "root_code": "DXHFoWqj_mI",
             "like_count": 171,
-            "reply_count": 20,
-            "repost_count": 51,
             "quote_count": 5,
             "pk": "3875090767723624840",
             "media_type": 8,
             "content_type": "carousel",
+            "comment_count": 20,
+            "share_count": 51,
             "platform_sequence_id": 707
         },
         {
@@ -27941,12 +27971,12 @@
             "is_merged_thread": false,
             "root_code": "DXHKmqRlAuI",
             "like_count": 33,
-            "reply_count": 3,
-            "repost_count": 4,
             "quote_count": 0,
             "pk": "3875112641572899720",
             "media_type": 19,
             "content_type": "image",
+            "comment_count": 3,
+            "share_count": 4,
             "platform_sequence_id": 705
         },
         {
@@ -28411,10 +28441,10 @@
             "is_merged_thread": false,
             "pk": null,
             "like_count": -1,
-            "reply_count": -1,
-            "repost_count": -1,
             "quote_count": -1,
             "content_type": "text",
+            "comment_count": -1,
+            "share_count": -1,
             "platform_sequence_id": 729
         },
         {
@@ -28544,12 +28574,12 @@
             "is_merged_thread": false,
             "root_code": "DXI9Potk_gx",
             "like_count": 118,
-            "reply_count": 25,
-            "repost_count": 39,
             "quote_count": 2,
             "pk": "3875616834695985201",
             "media_type": 1,
             "content_type": "image",
+            "comment_count": 25,
+            "share_count": 39,
             "platform_sequence_id": 723
         },
         {
@@ -28622,12 +28652,12 @@
             "is_merged_thread": false,
             "root_code": "DXJ4QPxk9rU",
             "like_count": 34,
-            "reply_count": 5,
-            "repost_count": 14,
             "quote_count": 0,
             "pk": "3875876361383172820",
             "media_type": 19,
             "content_type": "image",
+            "comment_count": 5,
+            "share_count": 14,
             "platform_sequence_id": 725
         },
         {
@@ -28683,12 +28713,12 @@
             "is_merged_thread": false,
             "root_code": "DXA176HmXtY",
             "like_count": 189,
-            "reply_count": 18,
-            "repost_count": 73,
             "quote_count": 2,
             "pk": "3873332892857367384",
             "media_type": 8,
             "content_type": "carousel",
+            "comment_count": 18,
+            "share_count": 73,
             "platform_sequence_id": 721
         },
         {
@@ -28770,12 +28800,12 @@
             "is_merged_thread": false,
             "root_code": "DXE53yvmZ8L",
             "like_count": 4,
-            "reply_count": 0,
-            "repost_count": 1,
             "quote_count": 0,
             "pk": "3874476102153510667",
             "media_type": 1,
             "content_type": "image",
+            "comment_count": 0,
+            "share_count": 1,
             "platform_sequence_id": 719
         },
         {
@@ -28910,12 +28940,12 @@
             "is_merged_thread": false,
             "root_code": "DXQSENREaLJ",
             "like_count": 311,
-            "reply_count": 73,
-            "repost_count": 52,
             "quote_count": 2,
             "pk": "3877678733126116041",
             "media_type": 2,
             "content_type": "video",
+            "comment_count": 73,
+            "share_count": 52,
             "platform_sequence_id": 735
         },
         {
@@ -28975,12 +29005,12 @@
             "is_merged_thread": false,
             "root_code": "DXJjf6WibCm",
             "like_count": 3,
-            "reply_count": 1,
-            "repost_count": 0,
             "quote_count": 0,
             "pk": "3875785078915838118",
             "media_type": 8,
             "content_type": "carousel",
+            "comment_count": 1,
+            "share_count": 0,
             "platform_sequence_id": 730
         },
         {
@@ -29974,12 +30004,12 @@
             "is_merged_thread": false,
             "root_code": "DXX4ag3E0r6",
             "like_count": 68,
-            "reply_count": 48,
-            "repost_count": 18,
             "quote_count": 1,
             "pk": "3879817716597738234",
             "media_type": 8,
             "content_type": "carousel",
+            "comment_count": 48,
+            "share_count": 18,
             "platform_sequence_id": 751
         },
         {
@@ -30189,8 +30219,14 @@
             "created_at": "2026-04-24 13:48:41",
             "date": "2026-04-24",
             "crawled_at": "2026-04-25T10:41:51.839",
-            "source": "full_tweet_cli",
+            "source": "network",
             "is_detail_collected": true,
+            "like_count": 248,
+            "comment_count": 3,
+            "share_count": 64,
+            "quote_count": 1,
+            "bookmark_count": 271,
+            "view_count": "10267",
             "platform_sequence_id": 80
         },
         {
@@ -30201,18 +30237,23 @@
             "display_name": "Meng To",
             "full_text": "I recorded a 43-min video on how to turn a DESIGN.md into landing pages, mobile screens and motion design https://t.co/f4YMefoQH8",
             "media": [
-                "https://wsrv.nl/?url=https://pbs.twimg.com/amplify_video_thumb/2047554540845813760/img/pw8ABS6EZ6ZlN8t9.jpg",
-                "https://video.twimg.com/amplify_video/2047554540845813760/vid/avc1/2880x2160/oYClmuMC8pIV4AhC.mp4?tag=21"
+                "https://wsrv.nl/?url=https://pbs.twimg.com/amplify_video_thumb/2047554540845813760/img/pw8ABS6EZ6ZlN8t9.jpg"
             ],
             "url": "https://x.com/MengTo/status/2047557417718988964",
             "created_at": "2026-04-24 06:05:04",
             "date": "2026-04-24",
             "crawled_at": "2026-04-25T10:41:51.840",
-            "source": "full_tweet_cli",
+            "source": "network",
             "local_images": [
                 "web_viewer/images/4ff694e14d5ec409fc866b613f4c27c0.jpg"
             ],
             "is_detail_collected": true,
+            "like_count": 2299,
+            "comment_count": 33,
+            "share_count": 214,
+            "quote_count": 9,
+            "bookmark_count": 4642,
+            "view_count": "218808",
             "platform_sequence_id": 81
         },
         {
@@ -30223,18 +30264,23 @@
             "display_name": "Khairallah AL-Awady",
             "full_text": "🚨 Anthropic's own team just showed how to actually use Claude Code properly.\n\n30 minutes. free. the person who created Claude Code.\n\nwatch the workshop. bookmark it.\n\nworth more than every $500 course you almost bought.\n\nyou've been using Claude without knowing 40 of its commands.\n\nThen read the guide below.",
             "media": [
-                "https://wsrv.nl/?url=https://pbs.twimg.com/amplify_video_thumb/2047692516628242432/img/6aPaHmt1txHU6BiL.jpg",
-                "https://video.twimg.com/amplify_video/2047692516628242432/vid/avc1/1280x720/Ei9syuYObKxcEQoe.mp4?tag=21"
+                "https://wsrv.nl/?url=https://pbs.twimg.com/amplify_video_thumb/2047692516628242432/img/6aPaHmt1txHU6BiL.jpg"
             ],
             "url": "https://x.com/eng_khairallah1/status/2047693100118880488",
             "created_at": "2026-04-24 15:04:14",
             "date": "2026-04-24",
             "crawled_at": "2026-04-25T10:41:51.840",
-            "source": "full_tweet_cli",
+            "source": "network",
             "local_images": [
                 "web_viewer/images/592a849686d096e46b49e85fea895239.jpg"
             ],
             "is_detail_collected": true,
+            "like_count": 29667,
+            "comment_count": 265,
+            "share_count": 4895,
+            "quote_count": 150,
+            "bookmark_count": 95408,
+            "view_count": "7395250",
             "platform_sequence_id": 82
         },
         {
@@ -30323,6 +30369,9 @@
                 "save_state_verified": true,
                 "cluster_reference_verified": true
             },
+            "like_count": 479,
+            "comment_count": 6,
+            "share_count": 45,
             "platform_sequence_id": 399
         },
         {
@@ -31334,12 +31383,12 @@
             "is_merged_thread": false,
             "root_code": "DXn_VaLiYh4",
             "like_count": 182,
-            "reply_count": 4,
-            "repost_count": 23,
             "quote_count": 0,
             "pk": "3884351751780403320",
             "media_type": 8,
             "content_type": "carousel",
+            "comment_count": 4,
+            "share_count": 23,
             "platform_sequence_id": 772
         },
         {
@@ -31656,12 +31705,12 @@
             "is_merged_thread": false,
             "root_code": "DXa9BtCiatR",
             "like_count": 145,
-            "reply_count": 63,
-            "repost_count": 57,
             "quote_count": 6,
             "pk": "3880682426850716497",
             "media_type": 2,
             "content_type": "video",
+            "comment_count": 63,
+            "share_count": 57,
             "platform_sequence_id": 760
         },
         {
@@ -32576,6 +32625,9 @@
                 "save_state_verified": true,
                 "cluster_reference_verified": true
             },
+            "like_count": 284,
+            "comment_count": 4,
+            "share_count": 13,
             "platform_sequence_id": 434
         },
         {
@@ -33256,12 +33308,12 @@
             "is_merged_thread": false,
             "root_code": "DXt-QaXkWgR",
             "like_count": 185,
-            "reply_count": 30,
-            "repost_count": 44,
             "quote_count": 1,
             "pk": "3886035860198615057",
             "media_type": 2,
             "content_type": "video",
+            "comment_count": 30,
+            "share_count": 44,
             "platform_sequence_id": 806
         },
         {
@@ -33325,12 +33377,12 @@
             "is_merged_thread": false,
             "root_code": "DXnZJpgmdie",
             "like_count": 1324,
-            "reply_count": 146,
-            "repost_count": 367,
             "quote_count": 11,
             "pk": "3884183817838778526",
             "media_type": 8,
             "content_type": "carousel",
+            "comment_count": 146,
+            "share_count": 367,
             "platform_sequence_id": 807
         },
         {
@@ -38037,12 +38089,12 @@
             "is_merged_thread": false,
             "root_code": "DX0S-Fvk6gh",
             "like_count": 2646,
-            "reply_count": 80,
-            "repost_count": 768,
             "quote_count": 23,
             "pk": "3887815809939253281",
             "media_type": 1,
             "content_type": "image",
+            "comment_count": 80,
+            "share_count": 768,
             "platform_sequence_id": 813
         },
         {
@@ -38344,10 +38396,10 @@
             "is_merged_thread": false,
             "pk": null,
             "like_count": -1,
-            "reply_count": -1,
-            "repost_count": -1,
             "quote_count": -1,
             "content_type": "carousel",
+            "comment_count": -1,
+            "share_count": -1,
             "platform_sequence_id": 833
         },
         {
@@ -38472,12 +38524,12 @@
             "is_merged_thread": false,
             "root_code": "DX9hjx9kTyY",
             "like_count": 638,
-            "reply_count": 43,
-            "repost_count": 126,
             "quote_count": 5,
             "pk": "3890413247480806552",
             "media_type": 19,
             "content_type": "image",
+            "comment_count": 43,
+            "share_count": 126,
             "platform_sequence_id": 829
         },
         {
@@ -38527,12 +38579,12 @@
             "is_merged_thread": false,
             "root_code": "DW51Tw7EQtV",
             "like_count": 1,
-            "reply_count": 0,
-            "repost_count": 0,
             "quote_count": 0,
             "pk": "3871359809367378773",
             "media_type": 18,
             "content_type": "image",
+            "comment_count": 0,
+            "share_count": 0,
             "platform_sequence_id": 830
         },
         {
@@ -38677,12 +38729,12 @@
             "is_merged_thread": false,
             "root_code": "DX9W9QQkfWb",
             "like_count": 69,
-            "reply_count": 3,
-            "repost_count": 18,
             "quote_count": 0,
             "pk": "3890366619487171995",
             "media_type": 8,
             "content_type": "carousel",
+            "comment_count": 3,
+            "share_count": 18,
             "platform_sequence_id": 827
         },
         {
@@ -39125,8 +39177,14 @@
             "created_at": "2026-04-25 09:25:51",
             "date": "2026-04-25",
             "crawled_at": "2026-05-08T16:18:42.105",
-            "source": "full_tweet_cli",
+            "source": "network",
             "is_detail_collected": true,
+            "like_count": 450,
+            "comment_count": 46,
+            "share_count": 72,
+            "quote_count": 10,
+            "bookmark_count": 1461,
+            "view_count": "656584",
             "platform_sequence_id": 83
         },
         {
@@ -39175,10 +39233,10 @@
             "is_merged_thread": false,
             "pk": null,
             "like_count": -1,
-            "reply_count": -1,
-            "repost_count": -1,
             "quote_count": -1,
             "content_type": "text",
+            "comment_count": -1,
+            "share_count": -1,
             "platform_sequence_id": 848
         },
         {
@@ -39757,8 +39815,14 @@
             "created_at": "2026-05-10 03:13:16",
             "date": "2026-05-10",
             "crawled_at": "2026-05-11T12:25:07.969",
-            "source": "full_tweet_cli",
+            "source": "network",
             "is_detail_collected": true,
+            "like_count": 710,
+            "comment_count": 8,
+            "share_count": 197,
+            "quote_count": 5,
+            "bookmark_count": 989,
+            "view_count": "72496",
             "platform_sequence_id": 84
         },
         {
@@ -39773,8 +39837,14 @@
             "created_at": "2026-05-10 04:14:32",
             "date": "2026-05-10",
             "crawled_at": "2026-05-11T12:40:22.369",
-            "source": "full_tweet_cli",
+            "source": "network",
             "is_detail_collected": true,
+            "like_count": 28,
+            "comment_count": 0,
+            "share_count": 6,
+            "quote_count": 2,
+            "bookmark_count": 38,
+            "view_count": "5635",
             "platform_sequence_id": 85
         },
         {
@@ -40328,10 +40398,10 @@
             "is_merged_thread": false,
             "pk": null,
             "like_count": -1,
-            "reply_count": -1,
-            "repost_count": -1,
             "quote_count": -1,
             "content_type": "image",
+            "comment_count": -1,
+            "share_count": -1,
             "platform_sequence_id": 861
         },
         {
@@ -40374,8 +40444,14 @@
             "created_at": "2026-05-11 16:20:21",
             "date": "2026-05-11",
             "crawled_at": "2026-05-13T08:02:28.063",
-            "source": "full_tweet_cli",
+            "source": "network",
             "is_detail_collected": true,
+            "like_count": 19413,
+            "comment_count": 1048,
+            "share_count": 2026,
+            "quote_count": 484,
+            "bookmark_count": 21539,
+            "view_count": "4003346",
             "platform_sequence_id": 86
         },
         {
@@ -40459,10 +40535,10 @@
             "is_merged_thread": false,
             "pk": null,
             "like_count": -1,
-            "reply_count": -1,
-            "repost_count": -1,
             "quote_count": -1,
             "content_type": "carousel",
+            "comment_count": -1,
+            "share_count": -1,
             "platform_sequence_id": 857
         },
         {
@@ -40522,10 +40598,10 @@
             "is_merged_thread": false,
             "pk": null,
             "like_count": -1,
-            "reply_count": -1,
-            "repost_count": -1,
             "quote_count": -1,
             "content_type": "image",
+            "comment_count": -1,
+            "share_count": -1,
             "platform_sequence_id": 856
         },
         {
@@ -41213,10 +41289,10 @@
             "is_merged_thread": false,
             "pk": null,
             "like_count": -1,
-            "reply_count": -1,
-            "repost_count": -1,
             "quote_count": -1,
             "content_type": "carousel",
+            "comment_count": -1,
+            "share_count": -1,
             "platform_sequence_id": 866
         },
         {
@@ -42152,12 +42228,12 @@
             "is_merged_thread": false,
             "root_code": "DYQ1YovjEws",
             "like_count": 21,
-            "reply_count": 0,
-            "repost_count": 0,
             "quote_count": 0,
             "pk": "3895848467155405868",
             "media_type": 18,
             "content_type": "image",
+            "comment_count": 0,
+            "share_count": 0,
             "platform_sequence_id": 889
         },
         {
@@ -42213,12 +42289,12 @@
             "is_merged_thread": false,
             "root_code": "DYRuniyCdH8",
             "like_count": 0,
-            "reply_count": 0,
-            "repost_count": 0,
             "quote_count": 0,
             "pk": "3896100180198019580",
             "media_type": 18,
             "content_type": "image",
+            "comment_count": 0,
+            "share_count": 0,
             "platform_sequence_id": 888
         },
         {
@@ -42274,12 +42350,12 @@
             "is_merged_thread": false,
             "root_code": "DYM_Fs6D8Zw",
             "like_count": 3,
-            "reply_count": 0,
-            "repost_count": 0,
             "quote_count": 0,
             "pk": "3894765246514972272",
             "media_type": 18,
             "content_type": "image",
+            "comment_count": 0,
+            "share_count": 0,
             "platform_sequence_id": 887
         },
         {
@@ -43342,18 +43418,23 @@
             "display_name": "Zain Shah",
             "full_text": "Imagine every pixel on your screen, streamed live directly from a model. No HTML, no layout engine, no code. Just exactly what you want to see.\n\n@eddiejiao_obj, @drewocarr and I built a prototype to see how this could actually work, and set out to make it real. We're calling it Flipbook. (1/5)",
             "media": [
-                "https://wsrv.nl/?url=https://pbs.twimg.com/amplify_video_thumb/2046982244917809152/img/BI-fNy85fQ0vk3ri.jpg",
-                "https://video.twimg.com/amplify_video/2046982244917809152/vid/avc1/1716x1080/bbBD3UPpNDnrjm4T.mp4?tag=21"
+                "https://wsrv.nl/?url=https://pbs.twimg.com/amplify_video_thumb/2046982244917809152/img/BI-fNy85fQ0vk3ri.jpg"
             ],
             "url": "https://x.com/zan2434/status/2046982383430496444",
             "created_at": "2026-04-22 16:00:05",
             "date": "2026-04-22",
             "crawled_at": "2026-05-27T15:06:11.008",
-            "source": "full_tweet_cli",
+            "source": "network",
             "local_images": [
                 "web_viewer/images/38b5d3d4d053eb43f4e36fd6245fbbac.jpg"
             ],
             "is_detail_collected": true,
+            "like_count": 28879,
+            "comment_count": 1144,
+            "share_count": 3739,
+            "quote_count": 1166,
+            "bookmark_count": 25409,
+            "view_count": "6036152",
             "platform_sequence_id": 87
         },
         {
@@ -43665,10 +43746,10 @@
             "is_merged_thread": false,
             "pk": null,
             "like_count": -1,
-            "reply_count": -1,
-            "repost_count": -1,
             "quote_count": -1,
             "content_type": "carousel",
+            "comment_count": -1,
+            "share_count": -1,
             "platform_sequence_id": 930
         },
         {
@@ -43901,6 +43982,9 @@
                 "save_state_verified": true,
                 "cluster_reference_verified": true
             },
+            "like_count": 738,
+            "comment_count": 10,
+            "share_count": 84,
             "platform_sequence_id": 663
         },
         {
@@ -44390,10 +44474,10 @@
             "is_merged_thread": false,
             "pk": null,
             "like_count": -1,
-            "reply_count": -1,
-            "repost_count": -1,
             "quote_count": -1,
             "content_type": "image",
+            "comment_count": -1,
+            "share_count": -1,
             "platform_sequence_id": 950
         },
         {
@@ -45298,10 +45382,10 @@
             "is_merged_thread": false,
             "pk": null,
             "like_count": -1,
-            "reply_count": -1,
-            "repost_count": -1,
             "quote_count": -1,
             "content_type": "text",
+            "comment_count": -1,
+            "share_count": -1,
             "platform_sequence_id": 960
         },
         {
@@ -45437,10 +45521,10 @@
             "is_merged_thread": false,
             "pk": null,
             "like_count": -1,
-            "reply_count": -1,
-            "repost_count": -1,
             "quote_count": -1,
             "content_type": "image",
+            "comment_count": -1,
+            "share_count": -1,
             "platform_sequence_id": 955
         },
         {
@@ -45954,6 +46038,9 @@
                 "save_state_verified": true,
                 "cluster_reference_verified": true
             },
+            "like_count": 116,
+            "comment_count": 76,
+            "share_count": 8,
             "platform_sequence_id": 698
         },
         {
@@ -46134,6 +46221,9 @@
                 "save_state_verified": true,
                 "cluster_reference_verified": true
             },
+            "like_count": 252,
+            "comment_count": 9,
+            "share_count": 16,
             "platform_sequence_id": 704
         },
         {
@@ -46740,8 +46830,14 @@
             "created_at": "2026-07-05 15:52:56",
             "date": "2026-07-05",
             "crawled_at": "2026-07-07T10:08:31.206",
-            "source": "full_tweet_cli",
+            "source": "network",
             "is_detail_collected": true,
+            "like_count": 383,
+            "comment_count": 18,
+            "share_count": 39,
+            "quote_count": 0,
+            "bookmark_count": 957,
+            "view_count": "109605",
             "platform_sequence_id": 88
         },
         {
@@ -46756,8 +46852,14 @@
             "created_at": "2026-06-11 15:09:34",
             "date": "2026-06-11",
             "crawled_at": "2026-07-07T10:08:31.207",
-            "source": "full_tweet_cli",
+            "source": "network",
             "is_detail_collected": true,
+            "like_count": 2515,
+            "comment_count": 64,
+            "share_count": 401,
+            "quote_count": 106,
+            "bookmark_count": 8143,
+            "view_count": "6324607",
             "platform_sequence_id": 89
         },
         {
@@ -46768,18 +46870,23 @@
             "display_name": "codila",
             "full_text": "Anthropic Engineer Andrej Karpathy:\n\n\"The biggest mistake in AI right now - people are forcing agents to work instead of mastering the model first\n\nWe made that mistake in 2016 at OpenAI - It cost us 5 years \"\n\nwhat Karpathy actually means:\n\nstep 1 → stop forcing your agent to do everything, understand the model underneath first\n\nstep 2 → demos are easy - products take a decade. self-driving proved it - if you skip the foundation, everything breaks\n\nstep 3 → the agent is not the product. the foundation is. build that - and agents emerge on their own\n\n\"you building agents right now - you're at the forefront. not OpenAI. not DeepMind. you \"\n\nwatch - bookmark, then read article below ↓",
             "media": [
-                "https://wsrv.nl/?url=https://pbs.twimg.com/amplify_video_thumb/2073544183965458432/img/q4xxo1iTO-hd_-cu.jpg",
-                "https://video.twimg.com/amplify_video/2073544183965458432/vid/avc1/1278x852/HO0bw4s3WCJSQIW8.mp4?tag=28"
+                "https://wsrv.nl/?url=https://pbs.twimg.com/amplify_video_thumb/2073544183965458432/img/q4xxo1iTO-hd_-cu.jpg"
             ],
             "url": "https://x.com/0xCodila/status/2073544407643496771",
             "created_at": "2026-07-04 23:08:06",
             "date": "2026-07-04",
             "crawled_at": "2026-07-07T10:08:31.207",
-            "source": "full_tweet_cli",
+            "source": "network",
             "local_images": [
                 "web_viewer/images/faae7b5a66f43f7cac3a1876e5e67388.jpg"
             ],
             "is_detail_collected": true,
+            "like_count": 7215,
+            "comment_count": 168,
+            "share_count": 752,
+            "quote_count": 62,
+            "bookmark_count": 15132,
+            "view_count": "1908376",
             "platform_sequence_id": 90
         },
         {
@@ -46790,18 +46897,23 @@
             "display_name": "Anatoli Kopadze",
             "full_text": "Anthropic Managed Agents Lead:  \n\n\"Over 90% of Anthropic engineers already build with self-improving loops.\n\nMy agentic loops run for hours and cost almost nothing.\"\n\nIn 40 minutes she builds an AI agent from scratch and shows how engineers at Anthropic use them daily.\n\nThis video is worth more than any $600 course on agents.\n\nWatch it today, then read the guide on building loops below.",
             "media": [
-                "https://wsrv.nl/?url=https://pbs.twimg.com/amplify_video_thumb/2073759696985391104/img/nxfhC3d4_EPMlvcb.jpg",
-                "https://video.twimg.com/amplify_video/2073759696985391104/vid/avc1/1920x1080/_12z7QyfeY9UqcRU.mp4?tag=28"
+                "https://wsrv.nl/?url=https://pbs.twimg.com/amplify_video_thumb/2073759696985391104/img/nxfhC3d4_EPMlvcb.jpg"
             ],
             "url": "https://x.com/AnatoliKopadze/status/2073761540671496493",
             "created_at": "2026-07-05 13:30:54",
             "date": "2026-07-05",
             "crawled_at": "2026-07-07T10:08:31.207",
-            "source": "full_tweet_cli",
+            "source": "network",
             "local_images": [
                 "web_viewer/images/607d03eb9603524ffe48bc1ad5c63ba2.jpg"
             ],
             "is_detail_collected": true,
+            "like_count": 726,
+            "comment_count": 54,
+            "share_count": 106,
+            "quote_count": 4,
+            "bookmark_count": 1586,
+            "view_count": "158114",
             "platform_sequence_id": 91
         },
         {
@@ -46812,18 +46924,23 @@
             "display_name": "Movez",
             "full_text": "Anthropic just dropped 5 workshops on building self-improving agentic systems from scratch:\n\n00:00 - Ship your first Claude agent\n36:44 - Build memory for Claude agents\n1:05:06 - Make your agent autonomous\n1:26:46 - Set up a proactive agent\n2:03:35 - self-improving agents (tools,skills)\n\nThese 3-hours of free Claude workshops will replace 10 paid agentic courses.\n\nWatch today, then read article below on how to build a self-improving agentic system with Fable 5.",
             "media": [
-                "https://wsrv.nl/?url=https://pbs.twimg.com/amplify_video_thumb/2073763750868369408/img/yE6VCRILoKRMtouo.jpg",
-                "https://video.twimg.com/amplify_video/2073763750868369408/vid/avc1/1920x1080/akmXE70V5TiONIjE.mp4?tag=28"
+                "https://wsrv.nl/?url=https://pbs.twimg.com/amplify_video_thumb/2073763750868369408/img/yE6VCRILoKRMtouo.jpg"
             ],
             "url": "https://x.com/0xMovez/status/2073765125958348964",
             "created_at": "2026-07-05 13:45:09",
             "date": "2026-07-05",
             "crawled_at": "2026-07-07T10:08:31.207",
-            "source": "full_tweet_cli",
+            "source": "network",
             "local_images": [
                 "web_viewer/images/a9c1ae6ced07801f4fde151221c605a4.jpg"
             ],
             "is_detail_collected": true,
+            "like_count": 2984,
+            "comment_count": 74,
+            "share_count": 521,
+            "quote_count": 18,
+            "bookmark_count": 7402,
+            "view_count": "925541",
             "platform_sequence_id": 92
         },
         {
@@ -46840,11 +46957,17 @@
             "created_at": "2026-07-06 02:22:55",
             "date": "2026-07-06",
             "crawled_at": "2026-07-07T10:08:31.207",
-            "source": "full_tweet_cli",
+            "source": "network",
             "local_images": [
                 "web_viewer/images/caea14472b1029f71e96dd2dd90cdd73.jpg"
             ],
             "is_detail_collected": true,
+            "like_count": 99,
+            "comment_count": 6,
+            "share_count": 29,
+            "quote_count": 0,
+            "bookmark_count": 168,
+            "view_count": "10850",
             "platform_sequence_id": 93
         },
         {
@@ -47475,10 +47598,10 @@
             "is_merged_thread": false,
             "pk": null,
             "like_count": -1,
-            "reply_count": -1,
-            "repost_count": -1,
             "quote_count": -1,
             "content_type": "image",
+            "comment_count": -1,
+            "share_count": -1,
             "platform_sequence_id": 984
         },
         {
@@ -47655,10 +47778,10 @@
             "is_merged_thread": false,
             "pk": null,
             "like_count": -1,
-            "reply_count": -1,
-            "repost_count": -1,
             "quote_count": -1,
             "content_type": "carousel",
+            "comment_count": -1,
+            "share_count": -1,
             "platform_sequence_id": 980
         },
         {
@@ -47873,12 +47996,12 @@
             "is_merged_thread": false,
             "root_code": "DaNKvhgkz6_",
             "like_count": 90,
-            "reply_count": 3,
-            "repost_count": 7,
             "quote_count": 0,
             "pk": "3930845296024829631",
             "media_type": 8,
             "content_type": "carousel",
+            "comment_count": 3,
+            "share_count": 7,
             "platform_sequence_id": 972
         },
         {
@@ -48110,10 +48233,10 @@
             "is_merged_thread": false,
             "pk": null,
             "like_count": -1,
-            "reply_count": -1,
-            "repost_count": -1,
             "quote_count": -1,
             "content_type": "text",
+            "comment_count": -1,
+            "share_count": -1,
             "platform_sequence_id": 965
         },
         {
@@ -48396,11 +48519,17 @@
             "created_at": "2026-07-07 05:59:00",
             "date": "2026-07-07",
             "crawled_at": "2026-07-09T11:29:14.765",
-            "source": "full_tweet_cli",
+            "source": "network",
             "local_images": [
                 "web_viewer/images/f1ce4d6bd9bbd2067a4efd2a07f2ca1d.jpg"
             ],
             "is_detail_collected": true,
+            "like_count": 151,
+            "comment_count": 1,
+            "share_count": 49,
+            "quote_count": 2,
+            "bookmark_count": 246,
+            "view_count": "9052",
             "platform_sequence_id": 94
         },
         {
@@ -48515,10 +48644,10 @@
             "is_merged_thread": false,
             "pk": null,
             "like_count": -1,
-            "reply_count": -1,
-            "repost_count": -1,
             "quote_count": -1,
             "content_type": "carousel",
+            "comment_count": -1,
+            "share_count": -1,
             "platform_sequence_id": 1015
         },
         {
@@ -48949,18 +49078,23 @@
             "display_name": "Yero",
             "full_text": "Google acaba de soltar un curso de solo 1 hora sobre Ingeniería Agentiva que destroza a la mayoría de cursos de pago 🔥\n\nTimestamps:  \n00:00 → Cómo construir tu primer agente de IA  \n08:24 → Memoria de agente (corta, persistente y larga)  \n28:34 → Bucles agentivos y agentes de larga duración  \n40:04 → MCP vs API (esto solo ya vale la pena)  \n1:00:22 → Sistemas multiagentivos\n\nEn 60 minutos aprendes más que en 10 cursos pagos. Míralo hoy. Luego lee el artículo y construye un sistema agentivo que se auto-mejora solo.\n\n¿Lo vas a ver ahora o lo guardas para “después”? 👀",
             "media": [
-                "https://wsrv.nl/?url=https://pbs.twimg.com/amplify_video_thumb/2075246077947658240/img/b9e5J0AGAMMOv8J_.jpg",
-                "https://video.twimg.com/amplify_video/2075246077947658240/vid/avc1/1920x1080/PDwJ2laHUDtCvbdc.mp4?tag=28"
+                "https://wsrv.nl/?url=https://pbs.twimg.com/amplify_video_thumb/2075246077947658240/img/b9e5J0AGAMMOv8J_.jpg"
             ],
             "url": "https://x.com/Yerocode0/status/2075247073411191121",
             "created_at": "2026-07-09 15:53:53",
             "date": "2026-07-09",
             "crawled_at": "2026-07-18T13:53:37.419",
-            "source": "full_tweet_cli",
+            "source": "network",
             "local_images": [
                 "web_viewer/images/d91f6a04ccbe1aa1d81359e8e805db46.jpg"
             ],
             "is_detail_collected": true,
+            "like_count": 2150,
+            "comment_count": 28,
+            "share_count": 519,
+            "quote_count": 2,
+            "bookmark_count": 3477,
+            "view_count": "143581",
             "platform_sequence_id": 95
         },
         {
@@ -49060,10 +49194,10 @@
             "is_merged_thread": false,
             "pk": null,
             "like_count": -1,
-            "reply_count": -1,
-            "repost_count": -1,
             "quote_count": -1,
             "content_type": "text",
+            "comment_count": -1,
+            "share_count": -1,
             "platform_sequence_id": 1083
         },
         {
@@ -49273,10 +49407,10 @@
             "is_merged_thread": false,
             "pk": null,
             "like_count": -1,
-            "reply_count": -1,
-            "repost_count": -1,
             "quote_count": -1,
             "content_type": "carousel",
+            "comment_count": -1,
+            "share_count": -1,
             "platform_sequence_id": 1078
         },
         {
@@ -49962,10 +50096,10 @@
             "is_merged_thread": false,
             "pk": null,
             "like_count": -1,
-            "reply_count": -1,
-            "repost_count": -1,
             "quote_count": -1,
             "content_type": "text",
+            "comment_count": -1,
+            "share_count": -1,
             "platform_sequence_id": 1054
         },
         {
@@ -51146,6 +51280,9 @@
             "profile_slogan": "Explore how far one person can grow with AI",
             "user_link": "https://www.linkedin.com/in/ACoAACkadIABsYoadkJXuZXMASkhnSFeoK_nVw8",
             "content_type": "image",
+            "like_count": 235,
+            "comment_count": 3,
+            "share_count": 55,
             "platform_sequence_id": 733
         },
         {
@@ -51242,6 +51379,9 @@
             "profile_slogan": "Explore how far one person can grow with AI",
             "user_link": "https://www.linkedin.com/in/ACoAACkadIABsYoadkJXuZXMASkhnSFeoK_nVw8",
             "content_type": "image",
+            "like_count": 114,
+            "comment_count": 5,
+            "share_count": 16,
             "platform_sequence_id": 737
         },
         {
@@ -51266,6 +51406,9 @@
             "profile_slogan": "AI, Digital Change, HR 및 변화관리(Change Management) 전문성을 바탕으로, 조직이 AI를 실질적으로 도입하고 활용하도록 돕는 AX(AI Transformation) 전략가로 활동 중임. 단순히 기술 도입을 넘어, transforamation 경험과 Design Thinking with AI& Agile 방법론을 통해 구성원이 AI로 일하는 방식을 설계함",
             "user_link": "https://www.linkedin.com/in/ACoAADk-HPIB9Dfu21FvR7IWiubg2RoPiyFq_PY",
             "content_type": "image",
+            "like_count": 40,
+            "comment_count": 0,
+            "share_count": 4,
             "platform_sequence_id": 738
         },
         {
@@ -51286,6 +51429,9 @@
             "profile_slogan": "Host of Ralphthon | Optimistic Engineer",
             "user_link": "https://www.linkedin.com/in/ACoAACY7KJQBDtSTk6IuIwZY6ntBGJx1fCYwsYI",
             "content_type": "text",
+            "like_count": 87,
+            "comment_count": 2,
+            "share_count": 8,
             "platform_sequence_id": 739
         },
         {
@@ -51422,6 +51568,9 @@
             "profile_slogan": "Explore how far one person can grow with AI",
             "user_link": "https://www.linkedin.com/in/ACoAACkadIABsYoadkJXuZXMASkhnSFeoK_nVw8",
             "content_type": "image",
+            "like_count": 227,
+            "comment_count": 10,
+            "share_count": 33,
             "platform_sequence_id": 745
         },
         {
@@ -51494,6 +51643,9 @@
             "profile_slogan": "Founder at AX LABS",
             "user_link": "https://www.linkedin.com/in/ACoAAChsCqABHbZtEaJtYtkT7lT7f1V9dwBlyIE",
             "content_type": "image",
+            "like_count": 176,
+            "comment_count": 1,
+            "share_count": 50,
             "platform_sequence_id": 748
         },
         {
@@ -51566,6 +51718,9 @@
             "profile_slogan": "Explore how far one person can grow with AI",
             "user_link": "https://www.linkedin.com/in/ACoAACkadIABsYoadkJXuZXMASkhnSFeoK_nVw8",
             "content_type": "image",
+            "like_count": 52,
+            "comment_count": 1,
+            "share_count": 8,
             "platform_sequence_id": 751
         },
         {
@@ -51704,10 +51859,10 @@
             "is_merged_thread": false,
             "pk": null,
             "like_count": -1,
-            "reply_count": -1,
-            "repost_count": -1,
             "quote_count": -1,
             "content_type": "carousel",
+            "comment_count": -1,
+            "share_count": -1,
             "platform_sequence_id": 1102
         },
         {
@@ -51843,10 +51998,10 @@
             "is_merged_thread": false,
             "pk": null,
             "like_count": -1,
-            "reply_count": -1,
-            "repost_count": -1,
             "quote_count": -1,
             "content_type": "image",
+            "comment_count": -1,
+            "share_count": -1,
             "platform_sequence_id": 1098
         },
         {
@@ -52023,6 +52178,9 @@
             "profile_slogan": "Explore how far one person can grow with AI",
             "user_link": "https://www.linkedin.com/in/ACoAACkadIABsYoadkJXuZXMASkhnSFeoK_nVw8",
             "content_type": "image",
+            "like_count": 242,
+            "comment_count": 18,
+            "share_count": 51,
             "platform_sequence_id": 757
         },
         {
@@ -52237,10 +52395,10 @@
             "is_merged_thread": false,
             "pk": null,
             "like_count": -1,
-            "reply_count": -1,
-            "repost_count": -1,
             "quote_count": -1,
             "content_type": "carousel",
+            "comment_count": -1,
+            "share_count": -1,
             "platform_sequence_id": 1104
         },
         {
@@ -52294,6 +52452,9 @@
             "profile_slogan": "AI, Digital Change, HR 및 변화관리(Change Management) 전문성을 바탕으로, 조직이 AI를 실질적으로 도입하고 활용하도록 돕는 AX(AI Transformation) 전략가로 활동 중임. 단순히 기술 도입을 넘어, transforamation 경험과 Design Thinking with AI& Agile 방법론을 통해 구성원이 AI로 일하는 방식을 설계함",
             "user_link": "https://www.linkedin.com/in/ACoAADk-HPIB9Dfu21FvR7IWiubg2RoPiyFq_PY",
             "content_type": "image",
+            "like_count": 92,
+            "comment_count": 2,
+            "share_count": 16,
             "platform_sequence_id": 758
         },
         {
@@ -52318,6 +52479,9 @@
             "profile_slogan": "Founder at AX LABS",
             "user_link": "https://www.linkedin.com/in/ACoAAChsCqABHbZtEaJtYtkT7lT7f1V9dwBlyIE",
             "content_type": "image",
+            "like_count": 723,
+            "comment_count": 9,
+            "share_count": 266,
             "platform_sequence_id": 759
         },
         {
@@ -52366,6 +52530,9 @@
             "profile_slogan": "Explore how far one person can grow with AI / Codex Ambassador",
             "user_link": "https://www.linkedin.com/in/ACoAACkadIABsYoadkJXuZXMASkhnSFeoK_nVw8",
             "content_type": "image",
+            "like_count": 461,
+            "comment_count": 12,
+            "share_count": 140,
             "platform_sequence_id": 761
         },
         {
@@ -52690,10 +52857,10 @@
             "is_merged_thread": false,
             "pk": null,
             "like_count": -1,
-            "reply_count": -1,
-            "repost_count": -1,
             "quote_count": -1,
             "content_type": "carousel",
+            "comment_count": -1,
+            "share_count": -1,
             "platform_sequence_id": 1127
         },
         {
@@ -53166,6 +53333,9 @@
             "profile_slogan": "Founder at AX LABS",
             "user_link": "https://www.linkedin.com/in/ACoAAChsCqABHbZtEaJtYtkT7lT7f1V9dwBlyIE",
             "content_type": "text",
+            "like_count": 59,
+            "comment_count": 2,
+            "share_count": 0,
             "platform_sequence_id": 762
         },
         {
@@ -53186,10 +53356,10 @@
             "is_merged_thread": false,
             "pk": null,
             "like_count": -1,
-            "reply_count": -1,
-            "repost_count": -1,
             "quote_count": -1,
             "content_type": "text",
+            "comment_count": -1,
+            "share_count": -1,
             "platform_sequence_id": 1146
         },
         {
@@ -53517,6 +53687,9 @@
             "profile_slogan": "Founder at AX LABS",
             "user_link": "https://www.linkedin.com/in/ACoAAChsCqABHbZtEaJtYtkT7lT7f1V9dwBlyIE",
             "content_type": "image",
+            "like_count": 183,
+            "comment_count": 4,
+            "share_count": 58,
             "platform_sequence_id": 764
         },
         {
@@ -53824,6 +53997,9 @@
             "profile_slogan": "Founder at AX LABS",
             "user_link": "https://www.linkedin.com/in/ACoAAChsCqABHbZtEaJtYtkT7lT7f1V9dwBlyIE",
             "content_type": "text",
+            "like_count": 33,
+            "comment_count": 1,
+            "share_count": 2,
             "platform_sequence_id": 767
         },
         {
@@ -54564,6 +54740,9 @@
             "profile_slogan": "Founder at AX LABS",
             "user_link": "https://www.linkedin.com/in/ACoAAChsCqABHbZtEaJtYtkT7lT7f1V9dwBlyIE",
             "content_type": "text",
+            "like_count": 26,
+            "comment_count": 1,
+            "share_count": 4,
             "platform_sequence_id": 772
         },
         {
@@ -54680,6 +54859,9 @@
             "profile_slogan": "Explore how far one person can grow with AI / Codex Ambassador",
             "user_link": "https://www.linkedin.com/in/ACoAACkadIABsYoadkJXuZXMASkhnSFeoK_nVw8",
             "content_type": "image",
+            "like_count": 167,
+            "comment_count": 2,
+            "share_count": 4,
             "platform_sequence_id": 777
         },
         {
@@ -54724,6 +54906,9 @@
             "profile_slogan": "AI 에이전트로 혼자서도 팀처럼 일할 수 있습니다",
             "user_link": "https://www.linkedin.com/in/ACoAAEYsARgBdQazrHf4u7lcZ1nlSjTNE7YbpOs",
             "content_type": "text",
+            "like_count": 51,
+            "comment_count": 1,
+            "share_count": 0,
             "platform_sequence_id": 779
         },
         {

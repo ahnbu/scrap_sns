@@ -17,6 +17,12 @@ STANDARD_FIELD_ORDER = [
     "created_at",
     "date",
     "crawled_at",
+    "like_count",
+    "comment_count",
+    "share_count",
+    "quote_count",
+    "bookmark_count",
+    "view_count",
     "source",
     "local_images",
     "is_detail_collected",
@@ -77,6 +83,12 @@ def normalize_post(post: dict) -> dict:
         "local_images": [],
         "is_detail_collected": False,
         "is_merged_thread": False,
+        "like_count": None,
+        "comment_count": None,
+        "share_count": None,
+        "quote_count": None,
+        "bookmark_count": None,
+        "view_count": None,
     }
     for field in STANDARD_FIELD_ORDER:
         if field in defaults and field not in out:

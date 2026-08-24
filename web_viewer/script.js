@@ -2474,6 +2474,14 @@ ${item.body}
         updateBulkActionBar();
     }
 
+    function formatMetricCount(value) {
+        const n = Number(value);
+        if (!Number.isFinite(n)) return String(value);
+        if (n >= 10000) return `${(n / 10000).toFixed(1).replace(/\.0$/, '')}만`;
+        if (n >= 1000) return `${(n / 1000).toFixed(1).replace(/\.0$/, '')}천`;
+        return String(n);
+    }
+
     function createCard(post) {
         const article = document.createElement('article');
         article.className = 'glass-card rounded-2xl p-4 flex flex-col gap-3 group break-inside-avoid relative overflow-hidden transition-all duration-300';
@@ -2707,6 +2715,39 @@ ${item.body}
             }
         }
 
+        // --- Engagement Metrics ---
+        let metricsDiv = null;
+        const METRIC_DEFS = [
+            { field: 'like_count', icon: 'favorite' },
+            { field: 'comment_count', icon: 'chat_bubble' },
+            { field: 'share_count', icon: 'repeat' },
+            { field: 'quote_count', icon: 'format_quote' },
+            { field: 'bookmark_count', icon: 'bookmark' },
+        ];
+        const hasMetric = (value) => value !== null && value !== undefined && value !== -1 && value !== '';
+        const visibleMetrics = METRIC_DEFS.filter((def) => hasMetric(post[def.field]));
+        if (visibleMetrics.length > 0) {
+            metricsDiv = document.createElement('div');
+            metricsDiv.className = 'flex flex-wrap items-center gap-3 pt-2 mt-1 border-t border-white/5';
+            if (isFolded) metricsDiv.classList.add('hidden-content');
+            metricsDiv.innerHTML = visibleMetrics.map((def) => `
+                <span class="flex items-center gap-1 text-xs text-gray-400">
+                    <span class="material-symbols-outlined text-[14px]">${def.icon}</span>
+                    ${formatMetricCount(post[def.field])}
+                </span>
+            `).join('');
+        }
+        if (hasMetric(post.view_count)) {
+            const viewBadge = header.querySelector('.min-w-0 p.text-xs');
+            if (viewBadge) {
+                viewBadge.insertAdjacentHTML('afterend', `
+                    <p class="text-xs text-gray-500 flex items-center gap-1">
+                        <span class="material-symbols-outlined text-[13px]">visibility</span>${formatMetricCount(post.view_count)}
+                    </p>
+                `);
+            }
+        }
+
         // --- Images ---
         let imageDiv = null;
         const previewImgUrl = getBestImageSource(post);
@@ -2904,6 +2945,9 @@ ${item.body}
         article.appendChild(content);
         if (imageDiv) {
             article.appendChild(imageDiv);
+        }
+        if (metricsDiv) {
+            article.appendChild(metricsDiv);
         }
         article.appendChild(tagsWrapper);
         article.appendChild(noteWrapper);
