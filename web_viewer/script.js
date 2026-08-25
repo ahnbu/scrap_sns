@@ -2417,15 +2417,27 @@ ${item.body}
             : `<span>Read more</span><span class="material-symbols-outlined text-[14px]">expand_more</span>`;
     }
 
+    // 유튜브 본문은 제목 + 구분선 + 요약 2줄이라 4줄로는 요약이 안 보인다.
+    // 나머지 플랫폼은 본문이 한 덩어리라 4줄 그대로 둔다.
+    function clampClassFor(post) {
+        return normalizePostKeyPlatform(post?.sns_platform) === 'youtube'
+            ? 'line-clamp-6'
+            : 'line-clamp-4';
+    }
+
     function toggleExpandableText(paragraph, indicator) {
         if (!paragraph || !indicator) return;
 
-        const isCollapsed = paragraph.classList.contains('line-clamp-4');
+        // 클램프 클래스 목록을 함수 안에 두는 이유: 이 함수는 단위 테스트가
+        // 본문만 뽑아 eval 로 실행한다. 바깥 상수를 참조하면 그 테스트가 깨진다.
+        const clampClasses = ['line-clamp-4', 'line-clamp-6'];
+        const clampClass = paragraph.dataset?.clampClass || 'line-clamp-4';
+        const isCollapsed = clampClasses.some((name) => paragraph.classList.contains(name));
         if (isCollapsed) {
-            paragraph.classList.remove('line-clamp-4');
+            clampClasses.forEach((name) => paragraph.classList.remove(name));
             indicator.innerHTML = getReadMoreIndicatorHtml(true);
         } else {
-            paragraph.classList.add('line-clamp-4');
+            paragraph.classList.add(clampClass);
             indicator.innerHTML = getReadMoreIndicatorHtml(false);
         }
     }
@@ -2773,9 +2785,10 @@ ${item.body}
         const isLongText = getPostTextLength(post) > 150 || getPostTextLength(post) > previewText.length;
         const cleanText = linkifyText(previewText, { isTruncated: getPostTextLength(post) > previewText.length });
 
+        const clampClass = clampClassFor(post);
         content.innerHTML = `
             <div class="relative">
-                <p class="text-sm text-gray-200 leading-relaxed font-light ${isLongText ? 'line-clamp-4' : ''} transition-all" id="text-${escapeHtml(postUrl)}">
+                <p class="text-sm text-gray-200 leading-relaxed font-light ${isLongText ? clampClass : ''} transition-all" id="text-${escapeHtml(postUrl)}" data-clamp-class="${clampClass}">
                     ${cleanText}
                 </p>
                 ${isLongText ? `

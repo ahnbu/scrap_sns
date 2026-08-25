@@ -341,6 +341,31 @@ def _find_username_with_multiple_display_names(page, platform="threads"):
     )
 
 
+def _card_for_username(page, username):
+    """해당 저자의 카드를 data-url 로 특정한다.
+
+    인덱스로 훑으면 초기 렌더 60건(무한스크롤) 안에 없는 저자를 못 찾는다 -
+    실제로 그 이유로 이 테스트가 깨져 있었다.
+    """
+    urls = page.evaluate(
+        """async (username) => {
+            const res = await fetch('/api/posts');
+            const data = await res.json();
+            return (data.posts || data)
+                .filter(p => p.username === username)
+                .map(p => p.canonical_url || p.url)
+                .filter(Boolean);
+        }""",
+        username,
+    )
+    cards = page.locator(CARD)
+    for i in range(cards.count()):
+        holder = cards.nth(i).locator("[data-url]")
+        if holder.count() and holder.first.get_attribute("data-url") in urls:
+            return i
+    return None
+
+
 @pytest.mark.e2e
 def test_author_click_groups_across_display_name_variants(viewer):
     """3. Threads 저자 표시명이 카드마다 달라도 같은 username 이면 한 묶음이다."""
@@ -348,17 +373,21 @@ def test_author_click_groups_across_display_name_variants(viewer):
     if not target:
         pytest.skip("display_name 이 갈리는 Threads 저자를 찾지 못했습니다.")
 
-    # 두 표시명 중 하나가 붙은 카드를 찾아 클릭한다.
-    idx = None
-    for i in range(min(_card_count(viewer), 60)):
-        info = _author_of(viewer, i)
-        if info and info.get("username") == target["username"]:
-            idx = i
-            break
-    assert idx is not None, f"{target['username']} 카드를 화면에서 찾지 못했습니다."
+    # 대상 저자가 초기 렌더 범위 밖일 수 있으므로 검색으로 먼저 화면에 올린다.
+    # username 으로 검색하면 _searchable 이 username 을 포함해 그 저자 글이 전부 나온다.
+    viewer.locator("#searchInput").fill(target["username"])
+    viewer.wait_for_timeout(1200)
+
+    idx = _card_for_username(viewer, target["username"])
+    assert idx is not None, f"{target['username']} 카드를 검색 후에도 찾지 못했습니다."
 
     viewer.locator(f"{CARD} h3.author-link").nth(idx).click()
     viewer.wait_for_timeout(700)
+
+    # 검색어를 지운다. 남겨두면 저자 필터가 무력화되는 회귀를 검색 결과가 가린다 -
+    # 아래 단정이 저자 필터 단독으로 판정되도록 만든다.
+    viewer.locator("#searchInput").fill("")
+    viewer.wait_for_timeout(1200)
 
     shown_names = viewer.evaluate(
         """async (username) => {

@@ -104,6 +104,17 @@
   overflow: hidden;
 }
 
+/* 유튜브 카드만 6줄. 제목(최대 2줄) + 구분선 + 요약 2줄이 들어가야 하는데
+   4줄로는 제목과 구분선이 다 먹어 요약이 0글자 노출된다.
+   다른 플랫폼은 본문이 한 덩어리라 4줄 그대로 둔다. */
+.line-clamp-6 {
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 .inline-post-link {
   color: #c084fc;
   overflow-wrap: anywhere;

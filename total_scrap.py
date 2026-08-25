@@ -368,7 +368,10 @@ def run_scrapers_in_parallel(mode='update'):
                 "X/Twitter": f"python -u twitter_scrap.py --mode {mode}",
                 "LinkedIn": f"python -u linkedin_scrap.py --mode {mode}",
                 # 계획서 4.7 — 1차는 파일럿(drive7)만. 전량 전환은 이 인자만 바꾼다.
-                "YouTube": f"python -u youtube_scrap.py --mode {mode} --playlists drive7",
+                # --max-summaries: 뷰어 「업데이트」 버튼은 동기 블로킹이라 요약이
+                # 길어지면 버튼이 묶인다. 신규가 20건을 넘으면 나머지는 남겨두고
+                # 터미널에서 웨이브로 처리한다.
+                "YouTube": f"python -u youtube_scrap.py --mode {mode} --playlists drive7 --max-summaries 20",
             },
         ),
         (
@@ -589,6 +592,40 @@ def merge_results():
         len(youtube_posts),
     )
 
+def _normalize_ts(value):
+    """플랫폼별 타임스탬프 표기를 문자열 비교 가능한 형태로 맞춘다.
+
+    threads 는 '2026-02-12T18:44:53.240', youtube 는 '2026-08-25 10:55:28' 로
+    구분자가 다르다. 'T'(0x54) > ' '(0x20) 이라 같은 날짜에서 유튜브가 항상
+    앞서는 왜곡이 생긴다.
+
+    🔴 밀리초는 자르지 않는다. Threads 는 같은 초 안에 여러 건이 찍히는데
+    (실측: 2026-02-18T10:58:10.089 / .122) 밀리초를 버리면 그 건들이 동률이 돼
+    2차 키로 넘어가면서 기존 순서가 뒤집힌다. 실제로 그 회귀를 만들었다.
+    """
+    return str(value or '').replace('T', ' ')
+
+
+def _saved_at_key(post):
+    """「저장순」 1차 키. 플랫폼마다 '내가 저장한 시각'의 정본이 다르다.
+
+    유튜브는 재생목록 추가 시각을 API 가 준다. crawled_at 은 일괄 수집 시각이라
+    81건이 3분 안에 몰려 순서를 만들지 못하고, 그 3분의 초 단위 차이는
+    playlistItems API 반환 순서라 실제 저장 순서와 무관하다.
+    실측: 이 키를 쓰기 전 뷰어 순서와 재생목록 추가 순서의 스피어만 상관이 -1.000
+    (완전 역순)이었다.
+
+    다른 플랫폼은 저장 시각을 얻을 방법이 없어 crawled_at 이 최선의 대리물이다.
+    """
+    if str(post.get('sns_platform') or '').lower() == 'youtube':
+        added = str(post.get('playlist_added_at') or '').strip()
+        if added:
+            return _normalize_ts(added)
+    raw = (post.get('crawled_at') or post.get('created_at')
+           or post.get('timestamp') or post.get('date') or '0000-00-00')
+    return _normalize_ts(raw)
+
+
 def save_total(
     new_posts,
     threads_count,
@@ -602,15 +639,10 @@ def save_total(
     validate_declared_local_images(new_posts)
     validate_local_image_links(local_image_link_posts if local_image_link_posts is not None else new_posts)
     
-    # 💡 [개선] '저장순' 정렬 구현 (최초 수집 시점 1순위, 플랫폼 내 순서 2순위)
+    # 💡 '저장순' 정렬 (저장 시점 1순위, 플랫폼 내 순서 2순위)
     def sort_key(post):
-        # 1. 최초 수집 시점 (ISO 포맷 문자열 비교)
-        # crawled_at이 없는 레거시 데이터는 timestamp/created_at으로 대체
-        c_at = post.get('crawled_at') or post.get('created_at') or post.get('timestamp') or post.get('date') or '0000-00-00'
-        # 2. 플랫폼 내부 저장 순서
-        psid = post.get('platform_sequence_id', 0)
-        return (c_at, psid)
-        
+        return (_saved_at_key(post), post.get('platform_sequence_id', 0))
+
     new_posts.sort(key=sort_key)
     
     # 전역 ID 재부여 및 순서 정렬
