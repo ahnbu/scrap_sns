@@ -7,5 +7,9 @@ python-dotenv==1.2.1
 beautifulsoup4==4.12.2
 twitter-cli==0.8.5
 
+# YouTube (자막 취득 — 버전 미고정: YouTube 대응상 최신 추종 필요)
+yt-dlp
+bgutil-ytdlp-pot-provider
+
 # Dev
 pytest==9.0.2

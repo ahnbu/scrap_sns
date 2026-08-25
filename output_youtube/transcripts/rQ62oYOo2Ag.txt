@@ -1,0 +1,1108 @@
+said you wanted to know how to use credit efficiently, and while there are so many ways,
+this is the first and most important thing.
+You need to choose and use a model that fits that.
+So I
+call it a "clod core" that you can't escape once you use it
+.  When using AR well, the most important
+thing is data—first, second, and third—
+unconditionally [music] data.
+I must create my own skill ending.
+Actually, it is
+time to optimize direction, not speed.   As you
+introduced me, my name is Kim Yun-myo-yeong, and I run Vice Wobersa
+Design Studio
+.  Nice to meet you.   We
+plan to proceed with the Sangsaek curriculum in these three ways today.
+Since many people are confused about book codes, I would like to
+briefly go over the definition and then share how to use them in practice
+.  So, I
+think you will likely learn basic functions and skills as you follow along with the practical application methods.  First, let me
+briefly explain what Claude is
+.  Flode is a
+place founded by engineers from Google and OpenAI.
+Entropic is the company name.  [Music]
+The name of the next-generation artificial intelligence model they created is Claude.  They are
+people who believe that adhering to human values ​​is extremely important.
+Therefore, it is characterized by providing a
+safer and more reliable left-hand side based on constitutional AI principles
+.
+So, they actually
+test things like errors caused by AIs internally and
+send out a lot of reports
+.  Another thing is that the early
+Claude wrote well.  So, I used to
+use Claude a lot when writing blog posts or short stories.
+I noticed recently that this has appeared.  What I mean is,
+this is the core screen.  Those of
+you who opened and looked at it have probably checked it
+.  So, if you click this and
+go into [Clear Your Neck], as you
+can see, it provides
+guidance on how to safely use the Clod Coe
+.  So, it explains in detail what to watch out for in Co-hak right now and
+how to minimize risks
+.  So,
+besides this, the government has done a really good job with the Close site itself, including
+how to use it and even new features
+.
+Where do you all get new information from me sometimes
+?  It is set up to receive newsletters, and it also has a
+feature that automatically crawls and sends them to my email, but [Music]
+sometimes I go in and check the site when I'm curious
+.  This place is always the best
+organized.  For one thing, no matter
+how much Clother strengthens its security, we are still
+using it through the internet.   If you are not
+uploading it to an internal server but using it
+via the internet, you really
+have to consider that there is a security [music] issue
+.  So right now, everyone finds
+VIBE coding so much fun and it feels like a whole
+new world, so they are just creating and using it like crazy
+. [Music] Personally, I think that more of these security issues will emerge even before the second half of the year begins.  It was said that Claude has surpassed
+GPT users as he has recently been receiving the most attention
+.
+And we have become able to process a very large amount of tokens all at once
+.  That is
+why it has become possible to analyze and answer thousands of pages of documents at once, and to
+automatically
+determine quests and produce results
+.
+It is the cloud code and core that made the agent function fully possible.  You can say that it regained
+attention because of that
+.
+I will explain a little more by comparing the three.  Claude
+Chat is a feature that simply allows you to chat, just like the GPT Funnai you used a lot
+.  You can have a conversation using the Wayna [Music] app
+.  Fore is a
+desktop app.  You can
+think of it as an agent-type tool. Clod Code is
+described as a terminal CLI tool, so you can view it as a development tool that allows you to write and modify code directly in the terminal
+.  Set was for all users, and you
+can consider Core as a mode for working professionals, and
+Code as a mode for developers
+.  [Music] So, were they
+developed and released in order? That wasn't the case.
+Claude Code came out first.  It's really
+useful, but honestly, even though I use the code, I'm not sure if I'm
+using it correctly
+.  I'm really just
+doing exactly as he tells me to.  [Music] But since there are so
+many things that need to be modified via terminal access,
+honestly, people like me who learned development only in theory
+[Music] feel anxious.
+Knowing that things can go wrong if handled incorrectly, the
+nose was created to be easier to use for such people.  So
+right now, Claude Code is a huge topic of discussion, and
+YouTubers and
+Instagram users are giving the impression that you will be left behind if you don't use it, but actually, for
+practical work, just the code is sufficient.
+In a one-dimensional sense.  So today,
+instead of talking about chords, I’d like to
+introduce [Music] a chord that is easy to approach first
+.  Currently, with the Claude font,
+uploading text image files is
+possible, but direct access to folders is
+not possible.  But the nose is possible.   The
+Claude code is described as a full wrapper, so you can
+consider it to mean that it has full access to the backend of my computer.
+So, if Chat focuses on single-turn conversations,
+Co-op
+allows for autonomous agent execution, and the
+code is identical.  First of all, regarding books, I
+think you will be asked a lot of questions and will likely be asked a lot of writing or simple analysis.  You will likely use Hoe a
+lot for directly organizing and creating documents or data, and as for
+Code, you can probably
+use [Music] a lot when coding or debugging
+.  So, we are going to
+look into the nose, and to explain a little further, you
+can directly access the [clear throat] file.
+Therefore, if you just connect the folder, it
+can automatically analyze it, generate documents, and put them
+into that folder.
+Automation is also possible. This automation
+is the real blind spot of [music].  Automation is
+truly automation even if you do everything from A to Z.  Even
+automating just one repetitive task is automation.  However, there are
+so many people who make me feel like I’m falling behind if I don’t automate my current work.
+[Music]
+Automation is something you all
+do very repetitively and it takes a lot of time,
+but if you think of it as solving things one by one, starting with the simplest ones, I
+think it will be much easier.  So, you
+cannot use this code in normal free mode.  You need to use at least the
+Pro version.
+If you make me do some [music] coding with this, the
+crashes will disappear quickly.  So, those of
+you who have tried this a bit are probably already
+using Max.  Also, it
+cannot be used on the web and can only be utilized in the desktop [Music]
+app.
+If you look, the chat is in the middle, the core is in the middle, and the
+code icon on the right is the
+code; if you consider that, it
+becomes [Music].  So we are going to
+work on the side core today, but there are
+n't many buttons here.  But first of all, this is the
+most important thing.  It says Opus 4.7 7,
+So Haiku 4.5
+.  [Music] First of all, the
+Opus 4.7, which you have likely heard of a lot, has the
+best performance.  So, what does that mean?   I
+use [music] the most credits.
+Next, the one in the middle is a sonnet.   yes
+.  This one is about average, so
+[music] naturally, the credits would be
+placed somewhere between the one below and the one above, right?
+Next, since this haiku
+was released for high school students, it is actually sufficient for simple repetitive
+tasks, questions, or writing text
+.  But since
+most people say that Ops 4.7 is good, you're
+using that for everything from questions to sense of opportunity, right?
+You can consider the credits to be burning brightly.  Today, many of
+you asked about
+how to use credit efficiently. There are so
+many things to consider, but first and foremost, this is the most
+important.
+You need to choose and use a model that fits that.  So I
+call it a "clod core" that you can't escape once you use it.
+So, we're going to try going through them one by one.
+Actually, I
+brought all 12 of them because they are so useful [music], but for
+example, I think there might be some of you who don't use Slack
+.
+For easy automation here, use Slack for messenger,
+GMA for email, and
+Google Calendar for calendar.  Of course, everything else is
+possible as well.  You can keep asking and
+modifying it, but if it is set up like this,
+writing [Music] is really convenient.
+There are four great tips for utilizing the actual load core.   As
+I've mentioned many times, you must connect the [Music]
+folder first.  Sometimes,
+there are many people who insist on missing this and say it cannot be done.  Well, for that, you have
+to connect a folder.  How do I
+connect it?  It is currently set to 'Download', but if you
+click it, you
+can select a folder like this.
+So, since you
+won't be able to do [music] today if you don't know where it's saved,
+I think it would be good if you created a folder on your desktop, put all the materials I'm giving you later into it, and tried it out.   You
+can change the folder at any time.
+Next, it's about making good use of Seulgi.
+These days, if you
+watch a lot of Instagram or [music] YouTube, there are tons of
+skill sets that are great to use on Momo
+.  There are a lot of things
+circulating, and most of them are uploaded to a place called Git.
+Gitter
+is a site that acts as a community for developers.  If
+you press the plus button for skills, there is a skill creator
+.  I'm saying that I can create and use
+[music] here.  The
+point is [music] that, basically, it is right for me to create skills that suit my work.
+Next, if you look at the bottom, there is a connector; you can
+consider this where you connect the necessary programs.  [Music]
+Well, I'm connected to Figma, Slack, and Froms
+.  Next, there are
+plugins. If
+you look at marketing, plugins are a collection of various marketing tools, such as
+brand voices or
+Traft [music] content.
+If you want to find more, there are also many other
+necessary items organized there, such as design and sales
+.  At first,
+there are people who install it indiscriminately thinking that using this will work well, but that is also just a token.  Since it is
+actually difficult to use [music] if it doesn't suit me, I
+recommend testing each one individually before installing.  Then what on earth is the
+difference between a skill and a plugin?  You can think of a
+[Music] skill
+as a file designed to enable you to perform specific tasks repeatedly and well
+.  Then, what is written in my skill file
+?  [Music] For
+example, when we say Vice Versa
+Design Studio, we
+write VV in uppercase, but when we say Design Studio, we
+use D and S in lowercase.
+All our official documents must be written that way.
+But what would he do if I obviously didn't tell him
+?  They'll probably write it all in capital letters
+.  Then I have to fix everything
+.  That is also included in the skills
+.  Then, for example,
+when I create a document in PowerPoint, there are certain prompts that I use all the time
+.  For example, visualize qualitative
+data as much as possible
+using diagrams [music], and
+visualize qualitative data as much as possible using graphs.
+Also,
+use tools like D3 to do it like this.
+There is a word you always use like this [music], but if
+you use that every time, that is also a token.   You can
+think of it as a good idea to organize repetitive tasks into skills, so then
+what is Plugny?  Since doing it individually is troublesome and difficult, I
+set up multiple functions at once
+.  Just like before, if you install a marketing plugin, everything you
+need, starting with voice tones, is
+included.  Now, it is
+set up so that you can select and use such things
+.  So, in a way, you can view the roles as being
+structured like a team or a company-level workflow
+.
+So, he gave me an analogy: you can think of skills as
+recipes and plugs as kitchen sets
+.  You can schedule the next recurring task
+.  This is an agent.
+All simple repetitive tasks
+can be scheduled.  There is a feature called Schedule
+.  [Music] You've probably heard of MCP Online a lot.
+To put it simply, you can
+think of it as connecting things like GL, Google Drive, and Figma.  But for
+those shooting for the first time, this is too
+easy, isn't it?  When we were first told that Figma and the
+cloud would be integrated with NCP, it took us all day,
+but we couldn't do it
+.  [Laughs] It was that difficult
+.  But if your account is currently
+connected, just do as instructed—saying "Yes,
+yes" a few times—and it
+will connect automatically.  It's
+gotten really easy.  We will now
+begin the workshop in earnest.
+[Music] Are you ready?  If you have successfully connected folders,
+I think you should give this a try.  What I
+wrote inside the light green square is a file.
+That is why you
+don't need to upload your files here.
+Since the folder is already set up, you just need to
+paste this into the chat window and press Enter
+.  What should happen now if I press Enter
+?  Claude took my meeting minutes and just
+analyzed them for me.   It will probably be presented with an explanation
+like this, covering what the Taxi Manwon was, what the Decision Usage was, and even what the Action Items are
+.  So, actually, you might
+not be surprised because I gave you a short document, but you can really
+put in several hundred pages.   It’s
+a bit fascinating when that happens.  Then, if you
+say you want to receive this in writing, you can just have them do it again.   If you ask it to
+make this into a Word document,
+it will create a Word document, and it will
+already be
+saved in the [Music] folder that you have linked.   You do
+n't need to download it like in the old days
+.  This is all time.
+Clicking to download,
+uploading things—these small moments come
+together to enrich my life
+.  At first, I wondered what the folder
+connection was?
+I thought it wasn't a big deal, but as I use it, it feels so comfortable.   I'm going to try
+organizing the receipts, so I
+brought the receipt file as well.   Please
+check all the receipt files in the receipt folder and organize them into an Excel file
+.  I hope you will definitely make a request.   I
+asked them to just organize the expense details from the receipts into an Excel file, but you can
+order whatever you want.   Whether you ask him to
+separate categories,
+organize by date, or
+split it into multiple sheets,
+he
+does exactly as he is told.  Now, there was
+one interesting thing hidden here as well.  I
+ordered the exact same thing, and as you can see, there were four images
+but five receipts.
+Because there were two receipts for one photo
+.  He
+figured that out perfectly, so here, the two receipts were
+taken together.  It was like this
+.  So, that's why you organized it
+well into five.  Okay, so
+regarding the file, yes,
+if you go into the folder and open the Excel file inside, it will
+open like this.  [Music] For example, sometimes
+I ask to be categorized by date, business name,
+payment, amount, VAT, etc., or sometimes I ask to
+divide the categories into food expenses, transportation expenses, meeting expenses, supplies expenses, and so on. That is how I
+write it.  Do
+not fill in items where the information is unclear;
+mark them as needing verification.  Then, if
+there are duplicate receipts, please mark them as suspected duplicates
+.  If I give him a command, he does
+n't handle things on his own and
+asks me everything he's curious about.  And actually,
+after organizing all the receipts, please
+divide the sheets by category.  All of this is
+possible, too.  If you tell me, everything will work.
+So, I handled the receipts just now, but you need to be
+careful when dealing with actual financial files.  Basically,
+when we give information to the AI, we
+remove things like names.
+When I analyze something, I upload it after completely removing personal information
+.  We can just match it later
+.  Since I can handle that matching locally as well, I
+think you absolutely must not do things like uploading financial statements that include the company name.  As you organize your receipts, you will come to a
+realization.
+Of course, image analysis can be incorrect if the photo is not clear
+.  But anyway, as long as the photo is
+clear and not blurry, it is still quite
+accurate.  Next, the second thing is that you
+can freely create and edit Excel files.  Then, you'll
+make the third Word file and PPTX well, too.
+[Music] It makes you think.  Then you
+could try these things, right?   You are letting your
+imagination run wild.   For
+example, what I actually use the most is taking
+screenshots while looking at Instagram or other things.  My phone is just completely full of screenshots
+.  If you
+organize it in a folder and ask them to
+take the contents and
+create a preliminary report, they will make it for you
+.  hmm.  So, I
+use it a lot in those situations.  So, whether they ask me to make it into a
+report or presentation
+slides, I
+usually just have them do things like this before leaving work.  I'd
+like you to do it when I'm not around.
+Then, you will be writing down everything for the quotation
+.  It's very easy.  Then, I get asked a
+lot to merge Excel files.  When I
+receive data, sometimes it is organized by month and the
+items are all different, so
+in the past,
+matching them was a lot of work.  Actually, if we did
+n't do it manually, one or two would get wrong and a
+lot of [music] would be missing, so we
+deliberately poured all our labor into it
+.  But lately, he's been getting really
+good at it.  Next, it is also a good idea to amend the contract
+or draft a new one
+.  [Music] But in the
+case of contracts, we include them without our names.   I
+just copy and paste the content without the contractor
+.  Since we've removed things like dates and are
+working on many new projects, there are
+many contracts that deviate from those of a design company. [Music] First of all, there are
+legal prompts for that.
+As a lawyer, if you ask me to
+verify things based on these criteria and analyze risk factors,
+running it through three or four times is usually quite effective.  So even though we always
+get confirmation from the lawyer even when we do that, there are no revisions these days
+.  The lawyer
+praised me.  You wrote it well.  [Music]
+So, it works that well, but you
+absolutely must not use the one that came out in one go.  You have to
+check a lot to make it better. [Music] The
+summoning you gave had a lot of mistakes
+.  So now, Excel and
+CSV are very, very well-suited for this
+. Analyze this sales data to
+find monthly trends and outliers.  They are
+really good at things like this.  However, up
+to what percentage can you trust it?  This
+can vary by industry and
+by the quality of the [music] data.
+I make it like this every time I give a lecture
+.
+I created the dashboard like this even during the webinar.
+Actually, since it wasn't a paid service, I did
+n't run ads, but if I were to
+run ads, I could try things out very quickly by aligning with things like East Maps
+.  This was
+made in the same way, too. Whenever I
+show this to people, they
+often ask how I make it.   I'll just
+share our prompt with you as well
+.  This is something frequently
+used when creating dashboards. They ask that I visualize the data as much as possible using word clouds and
+various D3-based graphs,
+separately organize the key insights that can be derived from the data, and
+create it as downloadable, dynamic, interactive HTML.  I'm saying
+this because it's easier for me to launch it since I have my own local machine.   Even though I
+remove everything myself, if I
+ask it to ensure that personal information, such as names and phone numbers, is not leaked just in case, it will
+automatically remove and organize any items that I might have forgotten to delete out of exhaustion.
+Next, I'll try organizing the filenames
+.  I asked you to change the filenames of the photos in the receipt folder to Year
+Underscore Month Underscore 1
+Underscore, so they are currently set to
+[Music]. Please try changing the ones currently
+in the download list however
+you like.  Well, like
+leaving only the name behind.  So
+originally, it was taken from the iPhone like that,
+with 'img', an underscore, and [Music], but it
+changed to the one on the right
+. If you compare the folders, yes.   The
+left side is [Music] and the
+right side is After, but they are exactly swapped
+.  So, what this means is that you
+can automatically organize folders and change file names, and you
+can close files without having to click on them individually
+.  Organizing folders takes a while, so
+I usually leave a lot of them when I get off work, but you can also have
+this done periodically
+.  For example,
+folders are very long.  The content isn't
+clear because it organizes my download folder
+.  So,
+the file that finished extracting is Jiho.  Then, I am telling you to find duplicate
+files, temporary files, installed [music]
+files, and unnecessary screenshop files,
+classify them as cleanup candidates,
+but not delete them immediately. Instead, divide them into deletion candidates, storage, recommended items, and
+items requiring verification,
+get my confirmation, and then clean them up
+.  Because
+if he deletes everything, I might regret it later
+.  I look at it and delete what isn't needed, and
+this is the actual screen.
+I've been so busy for a while that my
+download folder is a mess.  You can also
+order this periodically, once a week
+.  Actually, what this means is that it can
+organize all the multi-files and
+create a single report
+.  [Music] So, if you put in all the recorded
+files, the project proposal, the research data, and the
+captured images, and ask them to
+make a draft, they will make it for you
+.  I always ask that you include the
+exact source for [music] in every region
+.  Then I
+can go in and see if I made a mistake or not
+.  So, if you write it like that, it will be
+easier for you to write, and
+actually, when I am asked to create a report, I
+never write it like this.  They say to insert these key keywords clearly for a report intended for a specific purpose, for which someone
+will view it
+.  Now, the
+quality is much better, so it would be
+easier to revise if someone wrote at least a draft.
+But [Music] I
+keep using this prompt for things like this too.  Then
+how?  You just need to register it as a skill.
+But you can consider that you use a skill in such situations
+.  So now, we are going to
+try making a presentation.  They had quite a
+lot of needs.  [Music] From
+now on, I will just copy and paste the e-flips
+.  In
+exchange for topics and things like that, you can
+apply and write the parts inside yourselves
+.  Also, if you do
+n't want to use too many tokens, please set the amount from the beginning
+.  Three slides, something like that
+.  So, basically,
+many people ask how to use the prompt properly,
+but ultimately, you have to think it through and
+input it yourself.  It’s
+not just about providing the topic; the more basic information you include—what the goal is, what the target is,
+what the core message is, and how
+many minutes the presentation will take—the better. [Music]
+Of course, AI has gotten smarter these days, so it
+asks you again.  Should I do this for you or that? I
+want this.
+But then tokens would keep going out.
+And actually, if you want to
+receive the design [music] quality well, you will have to
+proceed with Office 4.7
+.  The design difference is huge.   If you have
+time later, I hope you will try
+comparing the [music] yourself
+.  When I was in the sonnet, and
+Opus.  But actually, dust doesn't really
+need a high-quality design
+.  yes.  The second one is also [music]
+similar.  This time, they are asking me to
+design the structure for each slide.  You
+can do it in Han from the beginning.  However, if you do that, the
+quality of the writing will
+not be good. The more you break this process down into detailed steps,
+the better the quality turns out.   We
+learn this when we write, you know.   It's exactly the
+same as telling me to write a ridiculously funny piece.
+So, I give him time to brainstorm first, and
+then I give him precise instructions
+.  Please organize the slide title, [Music]
+key content, purpose, and flow so that they
+connect well.  But for this, you just need to
+add everything you need.  Whether you
+ask for storytelling or to
+input logical data, you can
+consider it a general structure
+.  I also specify the tone of voice.
+He always does it in the order of Nida, Da
+.  But actually, reports
+often use the format 'mum-eum,' so if you ask me to
+organize it in the 'mum-im-mum-eum' style, I will do
+that.  You can order anything you want
+.  Then,
+instead of immediately asking him to design it, since there are designers here and
+non-designers, I am asking him to
+propose a design guide
+.  Write down what you want here, such as a recommendation
+layout or graphic elements that make vaccine messages clearer.
+[Music] First, you are asking us to
+create a design guide before the design process begins
+.  Then, you can ask them to
+create the slides.  But
+I don't ask for the design to be done right away here; instead, I
+mention it again.
+After asking them to create the slides, I tell them to
+organize the message of each slide one more time, taking into account the target taxi message presentation time.   Please
+minimize the text and sharpen the key points to
+structure it so that a clear idea is conveyed.  So, they keep making me
+listen to all the [music]
+.  So, for us too, once we
+create something, the quality actually improves as we refine it,
+right?  So, he also absolutely
+never makes you do design work immediately after using it once.  You have to keep making them do it.
+continue.  That way, the
+quality of the [music] will gradually improve as it is polished, and
+this is really a simplified version.
+In reality, in practice, you would likely be asked to do much more
+in detail [music].   This
+is a proposal frequently used when verifying claims.
+Please paste in any arguments or ideas you have in mind.   I am asking for a
+dispassionate review, but
+most AIs
+do not review it dispassionately.  He is so kind.  So, could you focus
+on analyzing the blind spots I haven't recognized [music], the hidden assumptions presupposed for its establishment, and the potential risks that may arise during the execution process
+?  If you do that, it gets a little better to some extent
+.  If you happen
+to want to verify the arguments you've written at work,
+I think it would be good to give it a try.  There is another thing that is
+commonly used by people working at large corporations. Since you asked
+how to approach future forecast reports, I’ll just
+share one method that I use effectively.
+As an expert in the field of [blank], I am being asked to propose five scenarios that could occur over the next 10 years, based on current market
+data and changes in the technology industry
+.  Could you analyze the
+probability of occurrence, ripple effects, and the impact of major trigger factors on
+stakeholders for each scenario, along with
+the reasons for your assessment and the expected impact
+? If you ask me to do this much, it’s at least somewhat
+watchable.  Rather than just asking them to
+write a future report.
+And as I have mentioned repeatedly, you are free to add or subtract from these standards to
+suit your specific profession
+.  [Music]
+Every morning when I wake up, I receive and look at this report
+.  It
+comes like this.  [Music] Receive AI-related news
+.  But it hasn't been sent and is in the
+drafts folder.  Because I
+turned off the [music] computer use function I mentioned earlier.  I realized I ca
+n't leave this on.  If you want,
+you can turn it on to send, but from my perspective, it makes no
+difference whether I look at the inbox or drafts, so I just leave it enabled for now and receive them
+.  So, I'm going to try setting up this [Music]
+.  Please try
+this prompt that I will copy and paste for you
+.  Then he will
+keep asking questions.  Then,
+whenever they ask a question, please listen carefully and ask them to email you to let you know if you will allow it.
+That is how you should do it.  But
+this is the same thing.  At first, I
+asked them to only include AI-related news, but later I saw that they were including really old stuff as well
+.  So
+now, they keep placing bets like this on AI-related news published within the last 48 hours
+.  Conditions.  So, you can
+order it like this for now and then hang it
+.  [Music] This is a
+kind of automation right now.  You can
+think of it as automating it with an agent.
+So, actually, once everything is set up, it
+even teaches you how to test it yourself.  To check
+whether the [music] is set up properly
+.  You
+can consider the process to be completely finished up to that point. However, since the instructions may
+vary slightly depending on the environment and PC, please
+read through it and just follow along slowly
+.  I actually use the schedule registration feature
+a lot.
+It's one of the things I use most often.  Claude is installed on my phone
+.  You
+just give instructions by voice on your phone, like when driving
+.  Open the dog and add something on a certain day and at what time
+.  Or just take the text right away, put it in, and put it in
+yourself.
+Then, he takes care of organizing and putting it in himself
+.  I am asking you to
+let me know which slots are available for a meeting for about three hours. Please
+tell me in order of priority.   Since I
+don't have any plans then, I think Tuesday would be the
+best. As for what I liked the most, I
+sometimes forget that I'm on annual leave and end up
+scheduling things
+.  But if it's annual leave, they definitely give you the exact amount
+.  They had drawn a line right there.   I
+really like it.  Even on days when I have
+so many meetings that I think I wo
+n't have time to eat,
+he tells me.  I don't have time to eat a proper meal, so I'm telling you to
+have a snack from such and such a time.  And you know how sometimes you have no choice but to schedule meetings all at once?
+Then please let me know when you organize your schedule the day before
+.  Since you don't have time to prepare for my meeting, I
+think it would be best to prepare between what time today.  So, it's really better than a secretary
+.  So, regarding
+how this needs to work, it is only possible if
+everything is connected at the connector like this
+.  This is
+much more powerful when Slack is fully connected every day, rather than just the calendar.
+Why?  Because I call everyone over and let them know.  My
+schedule.  If there is anything coming up on Slack that I couldn't add to the calendar, I will
+[music] that as well.
+If the connector is no longer
+visible here.  I have everything, so I just had to turn it on, and I can
+turn it off when I don't need it
+.  But if that isn't the case, you can just
+add a connector.  If you click it, just like I
+showed you earlier, there is everything you
+need for a Google Drive calendar
+.  [Music] It keeps getting added.
+So, regarding connectors, I am also looking into them, and if I find a good one, I
+add it and test it out.
+That is how I am using them.  [Music] But I've noticed that people sometimes get
+confused when the time zone changes
+.  Things can get complicated if you go on an overseas business trip
+.  [Music] So, in
+that case, it would be good if you could specify what time period it is
+.  I'm using a Korean calendar, but
+I'm in the UK.  Then
+[music] this one might get confusing.
+In an instant.  Then please enter it
+in UK time zone.  Alternatively, you can
+specify that you want to set it to the Korean time zone
+.  Next, this is my favorite.
+If you use Slack, every day
+at 5:30 PM, it analyzes
+all the documents, messages, and emails I received that day in my Slack and
+tells me what I completed today and what I need to do tomorrow.  But the best thing is that I
+forget to write a reply every day because I'm on the phone.  Okay, I didn't
+send it.  Then, [Music], let him
+tell us.  You promised to send it every day until today, but
+you still haven't sent it
+.  Let's go send it out now.   They
+send it every 5:30, and since I get off work at
+6:30, sending it at 5:30
+was quite useful.  So, if everything
+inside the folder—from planning documents and designs to deadlines and feedback—is all
+incredibly well organized
+.  Then, if you ask me to make a status board, I'll
+make the whole thing for you.  We
+couldn't bring this here either because it contains a lot of personal information, but
+that shows just how important file organization is.
+When using AR effectively, the most important thing—first,
+second, and third—is data.  Unconditional
+[Music] data.  So these days, they make me
+research tasks needed for the next day and
+leave work, or ask me to call PPTX and leave work; they make me do that
+a lot
+.  If you give me materials as a PDF, it's
+such a hassle, so I
+ask you to convert it to a PowerPoint or automate the process before
+leaving work.  If you find it bothersome to
+keep creating icons in the same style, you can use
+Vibe Coding to generate
+similar
+icons continuously just by entering a noun; I think I created something like that last year. In
+the case of Inverse, the client clicks while looking at their iPad from the left, and the icons
+appear one after another on this side.  Of course, tea sets
+are available.  And when you click send, if they fill in the
+company name and email address themselves, the
+email will be sent
+along with the quotation. Since it already
+includes the email address I have written and our company portfolio, they will
+receive everything without me having to do anything, and
+their records will be thoroughly preserved in my database
+.  You can go there and see it all at once
+.  You are free to use these skills as much as you want
+.  What skill?   For
+things like booking SRT tickets, checking KTX schedules, and verifying the weather—information provided in API form that I just need to view—you can
+essentially utilize the skills provided
+.  So, you have prepared a lot of things useful for Koreans, and in
+this way, you have
+gathered a huge number of essential skills that we couldn't even have imagined.
+So, I shared the link in case you need anything for your [music] project and want to try using it
+.
+What on earth is Skill MD?  This is a personalized work design document that enables AI to work according to your own
+standards, repetitive tasks, judgment methods, and
+output styles
+.  The dot 'd'
+refers to the Markdown file format
+.  AI is easy to read.  So
+these days, files are often saved as MD files rather than Word documents
+.
+If you actually use the Claude Core, the window on the right will probably have
+appeared.
+The moment I give him a task, he takes it upon himself to create a design MD or a
+kid.  Therefore, you
+cannot automate tomorrow with someone else's skill MD
+.  I have to create my own skill MD
+.  Why?  I know my love story
+well.  Now, don't try to
+write everything in extreme detail. If you
+first organize the [Music] that I frequently and repeatedly ask you to do well into a Skill MD, you
+can use fewer Pooken,
+save time, and improve the quality
+.  I can't help you with that, but I
+think I can help with Design Andy. I saw this site recently, and
+personally, I really, really liked it
+.  I liked the color tones and things like that
+.  You
+can choose any site you want, but you are selecting the design from [Music]
+.  You can just attach the U column and
+use it like this.  If you ask it to analyze and
+create a design system, it will automatically
+create a design system [music]
+.  It takes turns generating it into HTML, and
+then this is complete.
+[Music] If you look closely at the right side, I
+analyzed that site earlier and organized it into a design file showing their tone and manner,
+what colors they use,
+how they use fonts and icons, and so
+on
+.  [Music] So that's why I
+picked out the guide.  Is it accurate?
+no.  That is not the case.  They did a good job imitating it
+.  However, if ordinary people are
+using this to create PPTs, I
+think this would actually be sufficient.
+I made a card news because I showed it to you in the PPT.
+[Music] I didn't make the card news right away,
+so I
+[Music] asked them to make only the necessary MD files.   If you ask them to
+create an MD file, it
+comes out like this.  Huh, what is this?  Why
+are there two?  yes.  The reason there are two is that the original
+MD file is structured like the one on the left.   It looks
+like a table,
+composed of lines and dotted lines.  But now that I've seen it so much, I find this
+comfortable.   It was
+very uncomfortable at first.
+Designers really hate that.
+So, if you use something called Redux, it
+looks like a pretty document again.  [Music]
+I use Windows.  Then mark
+text.  I use a Mac.  Then, if you
+search for and download something called "MacDown,"
+you can view the MD file [Music] nicely, just like before
+.  You can view it like a document
+.  Then, I gave the order
+. "Can you
+design the content below as a card news to match this design MD
+?"  They keep blah blah blah, but I
+always use this.  Because [Music] when these are
+created, it really bothers me that elements like the title and body text are the
+same, but they aren't the same size or in the exact
+same position.
+So, it’s one of the things I always talk about
+.  So I asked them to do it like that, and they
+made this card news. Anything gets
+better if a person puts effort into it.  There is
+no such thing as a giant in the world.  It all takes time.   To get even
+a little better.  Then,
+we had created it using client terminology, and
+surprisingly, while it looked plausible, there were so
+many errors that a person had to
+correct everything.  But anyway, it
+turned out pretty well, so I guess I can use it for a card news
+.  So, I
+put that in, and as you can see, it was
+changed back into the Foundation Man exactly as it was without me having to touch it at all.  I
+didn't specify a font, but it does improve a lot if you just set one
+.  Then, if you feel that this is a
+hassle and seems to be consuming too many tokens, there
+is one more easy way to do it.  This
+is a Google Chrome extension.  For
+those of you who don't have it installed like me,
+[Music] will probably be set to installed.
+So, if you click it, it will be installed as an extension
+.  Then,
+icons like that appear on top of Chrome.  It's that
+green icon.  So if you
+click on him, this site will perfectly display the [Music]
+design MD and steel MD like that
+.  So, if you want to get it simply, you
+can try this, and
+while it works well sometimes, basically,
+yes.  Please organize the [music] like this now
+.  It looks shorter than before, even at a glance.
+But now you can download it, and there
+are various other methods.  [Music] It was
+organized like this.
+If you look at the MD file.  But now, just looking at the MD group,
+night is coming.  [Music] It did
+n't seem like it was done that well.   I skimmed through it and the
+quality wasn't good
+.  It just came out like this.
+[Music] Card.  The content is the same.
+So, the more time you give it, the
+better it gets.  This is what I made earlier.
+I ordered the exact same thing, [Music].
+That is why design MD is so
+important.  I didn't touch a single thing here
+.  If this were actually our project, we would
+read through every single detail and make corrections.   For
+the H1 font, you specify the size, bold format, and
+so on.
+We actually design a sheet ourselves and have
+him do it while looking at it; the point is that we
+cannot just use what he provides exactly as is
+.  But I don't really understand this, and being a
+designer is too difficult.  Then, if you
+go to the site called Design MD.App, you will find
+that many people have already
+organized a lot of MD [music] files.   As
+indicated by the "app" label, this site is primarily
+focused on applications and websites,
+but you can use the [music] color chips as much as you want
+.  As you can see, you
+can view the design images like this, and since the
+source code is all
+organized below, you can simply
+copy and paste it to use on Claude or elsewhere
+.  So,
+if it is difficult for you to make them individually like we did, you can just find decent-
+designed merchandise [music]
+.  But I'm a designer.
+Then I think creating a design MD is a
+skill.  Because ultimately, this [music] is just
+copying.
+Copying Apple's style, copying Samsung's style, or whatever
+other style—that’s not right for me
+.  In other words, it means that it is
+really easy to be copied.
+Ultimately, even
+if I don't design every single element myself like before, if I want to work
+with AI, I must make this Design
+MD very, very, very well
+.  Performs well in any environment.
+That is not easy.  Now that the Clud Design has been
+released, everyone is cheering for the [music], right
+?  The quality has really
+improved.  But looking at this, it's so
+obvious.  Why?  This is a representation of our design
+process.  If you just ask me to
+design it like before, a design won't
+come out.  You have to put everything in.  I need to specify who the
+target is, what the purpose is, and so on for the
+design to turn out well
+.  But
+[music] has a feature that asks people about that
+.  But when you answer that question,
+you naturally show a better result [music], and since you show it even better than expected,
+people are finding it elegant right now
+.  But this is really a token-
+consuming one.  It takes a tremendous amount
+.  So, if you go in and take a look, the
+advantage of Claude or any other AI service is that it
+demonstrates the E-gram very well like this
+.  The sampler has already shown how far this can go
+.  So now you can go in here and
+get some inspiration [from the music].
+Ultimately, whether you get inspiration or work directly, if you
+enter the design [music] system behind this, that is where it all
+starts. The
+revolutionary thing was that for
+those who had a well-organized guide in Figma, all they had to do was
+provide the Figma link.
+So, in the end, teams with assets have
+no choice but to use AI effectively.  As I
+mentioned [music], the first, second, and
+third are all data.  So, if you
+look at it now, the wording is a bit strange because I translated it into Korean.
+I previously did it in English, but since you said it was
+inconvenient, if
+someone sees that it is organized on Git, you can just
+insert the Git or GitUp link.
+Otherwise, you can insert a Figma link, and if you
+put the SS here for the logo or similar files, I will insert it correctly for you
+.  In the end, he did have me do it
+this way, using the design AI that he had been using well before
+.  In a way, it is
+standard, but you can view it as a system designed to be more user-friendly, and the
+actual results [music] are quite
+good.  I’ve only
+shown you really beautiful and good things so far.  This
+is my daily life.  The reason I did this is that after
+installing the ski on both the desktop and the
+laptop, they don't match
+.  It doesn't match.  But I really
+want to move it.  Do I have to do the
+tedious work of checking and moving everything one by one
+?  So, I had the cloud do it
+.  Please list everything laid out here
+.  Then, I asked them to organize the [music] exactly as it is here so I could
+transfer it to my laptop, and they
+created a file called something-sh, but it was the first time in my life I had ever seen 'shh'
+.  So you can
+see I'm just timid, right?  I was thinking of trying
+to install everything exactly as it is in the Claude Code
+.  I looked at it and it seemed like it said what to do, so I assumed it was
+set to a mental code, but there was
+no reaction.
+There is no reaction from the sand either.  So I
+asked later, and they said that you aren't supposed to do it here; you have to use
+CLI commands and handle it in the terminal
+.  I turned on the terminal.
+So I did as I was told.  But
+then, things kept flashing out on the screen like crazy, and I couldn't
+tell what was actually happening
+.  So I asked again in the screenshot
+.  Is it installing it?
+And they said the installation is going well.
+Then, keep asking questions.
+The terminal here keeps asking for permission or something
+.  Is this okay? Don't
+do it.  But there are so
+many words I don't know, so I take screenshots and ask every time
+.  So, I'm
+not sure if I'm a developer or a designer right now, but I'm using [music] well
+.  So, how
+can you use Close?  If you look, it's really
+well organized.  Even if you don't
+do anything specific, if you look at it, you can see that what you are curious about—whether it is how to use hair removal tools or even
+how to utilize things related to the human body—is something that
+someone all over the world has already been curious about
+.  [Music] So, since
+the examples on how to use them are organized,
+I think it would be good to take a look, go in, and try them out one by one.  They keep adding to this as well, so
+now whenever I have time, I go closer to take a
+look.  There are a few
+useful links to get started with Claude Code
+.  Once this is all over, you're going to ask
+me questions.
+How do you write Claude Code?  Well, since this person has organized everything
+very well, I recommend that
+those who are curious take a look, and we will also try to
+arrange a class
+.  Next, someone compiled
+50 tips and best
+practice examples for using the Clot Code, so I brought
+this along as well.  You can just go
+in and take a look to
+see if there is anything you like, but even that is a hassle.  Then
+what should I do?  If I upload a file and say, "I'm
+someone who does this kind of work, so recommend the top 3 things I need," it will probably do it for me
+.  But I usually do Top Fab
+.  Because one or two are
+useless.  I usually ask for five or six, keeping in mind that I might end up throwing them away
+.  That's what I
+hear the most these days.   Whenever I go to a
+meeting, they
+say they want to introduce Electronic AX to me.  What is AX?   It's like this
+.  [Music] It
+refers to redesigning the organization's working methods, decision-making, service operation structures, etc., around AI, [Music] the business structure itself.   I'm
+not just talking about using AI.  Actually, we have been telling you
+repeatedly that our work processes have changed a lot as well
+.  In the past,
+I made the design guard at the very end.
+I am making [music] for the first time right now.
+Because I don't work alone.   If you want to
+pull a Chohwan from the AI, you have to
+make a good guide quickly [music]
+.  It's been a long time since the work order changed
+.  So, when I go out for
+consulting or something like that, people ask me
+what I do, and at first, I just
+listen.  Just listen for 3 or 4 hours
+.  There is only one question.  They are asking me to
+write down the work process.  I ask
+what kind of AI you are using and how in which areas you are currently working
+.  Then, if I
+ask them what they are dissatisfied with, they suddenly
+become extremely dissatisfied.  Nothing works, it's
+inconvenient, and I'm not sure if I'm smart or not, but
+surprisingly, about 20 or 30% is
+resolved on the spot.  There are
+many cases where people are using the wrong AI incorrectly.  Connecting folders
+isn't a big deal, but for those who do the same repetitive work,
+[Music] is incredibly useful.
+There are organizations where just doing that actually allows you to leave work earlier.  So, how and what you
+use is quite important.
+If you used to save time and improve work efficiency by using [music] cost combinations, in my opinion, now it
+is business expansion for everyone.  I think those who are currently employed might
+also
+need to expand the scope of their work impact.
+If you are running a company, I think you
+won't be able to avoid using it, if only for business expansion
+.  So,
+essentially, AX is
+talking about AI transformation, and
+simply put, it is this.  It can be very complicated, but it is
+not AI, but rather utilizing A-T
+[music].  We are
+maximizing production lines through automation.   I'm
+talking about going beyond just one person writing well.  [Music] But
+how do I use this well?  As I
+mentioned earlier, the first, second, and third priority is the
+data—that is, training it well.   It is only
+actually possible if we structure the business know-how as much as possible and train this agent
+.  And then,
+they say that this system became AX only when the organization internalized [music].  It is
+set as a company version, but the same goes for [music]
+individuals.  I mean turning what I am doing into an
+agent and training it so that
+my work system and decision-making
+methods change.
+Actually, the most important thing here is the
+second one: how do you train it?   In the
+case of companies, there is DV and
+ERP.  If you are an individual, you
+likely have your own [music] computer. Actually, excluding this ERP as an agent is what
+companies do for AX, but what I
+wanted to say here is that it is
+important to organize the discernment that exists only in someone's head into [music] data and train it.
+When you delegate tasks to AI, you likely [music] often skip the top part
+and figure it out in your head before giving it instructions,
+or simply take what others have created and
+use it for now.
+However, as I conduct my consulting, I find there are an enormous number of
+work processing methods that only I know and only that person knows
+.
+So actually, the AX conversion isn't working well
+.  Personally, when you are working, if you try to
+clearly organize your processes and
+check where you are using AI the most and [music] where a lot of time is being spent repeatedly, I think you will be able to use it a little more efficiently
+.  So, ultimately,
+without a reorganizer for business processes or the organization, a
+true AX transition for [music] is
+impossible.  The way of fitting this into the work is
+already a thing of the past
+.  You need to [music] consider how to change your work processes to
+use them efficiently
+.  yes.   I
+bought Song Ki-ryong's book *Sidaebo* and went to a
+conference to listen to the discussion, where management positions
+disappear.  They said that only those who do the work themselves
+survive.  Actually, he
+said one more thing after that.
+What it was was that all agencies would perish
+[music]
+.  But now the reason is the same.
+Companies have become able to do the work directly without an agency
+.  The data
+[music] is actually held by companies.
+AI can be utilized as powerfully as the size of your imagination
+.
+Actually, now is the
+time when we need to optimize direction, not speed.
+Technology is getting faster with every passing day [of music]
+.  Actually, the speed at which
+he improves is
+much faster than the speed at which I learn and master things.  [Music]
+Then do I not have to use it until then?  I
+think that's a bit of a different story.  Because it
+changes so fast that if you let go of it completely, it is
+impossible to keep up
+.
+I think I should at least ride it.  However, while it is good that you are riding, I
+think it is important [music] to check if you are moving in the right direction rather than blindly chasing after it.  So, I am not sure if today's
+simple workshop will be helpful in your work, but I
+sincerely
+hope that you all become winners of the next era through a strategic transition to AX.   That's
+all.  thank you
+[clap]

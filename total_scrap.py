@@ -25,6 +25,7 @@ PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
 OUTPUT_THREADS_DIR = os.path.join(PROJECT_ROOT, "output_threads", "python")
 OUTPUT_LINKEDIN_DIR = os.path.join(PROJECT_ROOT, "output_linkedin", "python")
 OUTPUT_TWITTER_DIR = os.path.join(PROJECT_ROOT, "output_twitter", "python")
+OUTPUT_YOUTUBE_DIR = os.path.join(PROJECT_ROOT, "output_youtube", "python")
 OUTPUT_TOTAL_DIR = os.path.join(PROJECT_ROOT, "output_total")
 WEB_IMAGE_DIR = os.path.join(PROJECT_ROOT, "web_viewer", "images")
 WEB_IMAGE_PREFIX = "web_viewer/images"
@@ -37,6 +38,7 @@ PLATFORM_KEYS = {
     "Threads": "threads",
     "LinkedIn": "linkedin",
     "X/Twitter": "x",
+    "YouTube": "youtube",
 }
 SIGNAL_HANDLER_CALLED = False
 
@@ -365,6 +367,8 @@ def run_scrapers_in_parallel(mode='update'):
                 "Threads": f"python -u thread_scrap.py --mode {mode}",
                 "X/Twitter": f"python -u twitter_scrap.py --mode {mode}",
                 "LinkedIn": f"python -u linkedin_scrap.py --mode {mode}",
+                # 계획서 4.7 — 1차는 파일럿(drive7)만. 전량 전환은 이 인자만 바꾼다.
+                "YouTube": f"python -u youtube_scrap.py --mode {mode} --playlists drive7",
             },
         ),
         (
@@ -486,10 +490,11 @@ def merge_results():
     latest_threads = find_latest_full_file(OUTPUT_THREADS_DIR, "threads_py_full_*.json")
     latest_linkedin = find_latest_full_file(OUTPUT_LINKEDIN_DIR, "linkedin_py_full_*.json")
     latest_twitter = find_latest_full_file(OUTPUT_TWITTER_DIR, "twitter_py_full_*.json")
-    
-    if not latest_threads and not latest_linkedin and not latest_twitter:
+    latest_youtube = find_latest_full_file(OUTPUT_YOUTUBE_DIR, "youtube_py_full_*.json")
+
+    if not latest_threads and not latest_linkedin and not latest_twitter and not latest_youtube:
         print("❌ 병합 가능한 Full 파일을 찾을 수 없습니다.")
-        return None, 0, 0, 0
+        return None, 0, 0, 0, 0
 
     if latest_threads:
         print(f"   - Threads: {os.path.basename(latest_threads)}")
@@ -503,14 +508,20 @@ def merge_results():
         print(f"   - X/Twitter: {os.path.basename(latest_twitter)}")
     else:
         print("   - X/Twitter: 최신 Full 파일 없음")
+    if latest_youtube:
+        print(f"   - YouTube: {os.path.basename(latest_youtube)}")
+    else:
+        print("   - YouTube: 최신 Full 파일 없음")
 
     threads_data = load_json(latest_threads) if latest_threads else {}
     linkedin_data = load_json(latest_linkedin) if latest_linkedin else {}
     twitter_data = load_json(latest_twitter) if latest_twitter else {}
-    
+    youtube_data = load_json(latest_youtube) if latest_youtube else {}
+
     threads_posts = threads_data.get('posts', []) if isinstance(threads_data, dict) else threads_data
     linkedin_posts = linkedin_data.get('posts', []) if isinstance(linkedin_data, dict) else linkedin_data
     twitter_posts = twitter_data.get('posts', []) if isinstance(twitter_data, dict) else twitter_data
+    youtube_posts = youtube_data.get('posts', []) if isinstance(youtube_data, dict) else youtube_data
     threads_posts = [
         post
         for post in threads_posts
@@ -524,8 +535,11 @@ def merge_results():
     for p in linkedin_posts: 
         p['sns_platform'] = 'linkedin'
         p['platform_sequence_id'] = p.get('sequence_id', 0)
-    for p in twitter_posts: 
+    for p in twitter_posts:
         p['sns_platform'] = 'x'
+        p['platform_sequence_id'] = p.get('sequence_id', 0)
+    for p in youtube_posts:
+        p['sns_platform'] = 'youtube'
         p['platform_sequence_id'] = p.get('sequence_id', 0)
 
     # 중복 제거 (ID 기준 + 플랫폼 고유 pk 기준)
@@ -537,7 +551,7 @@ def merge_results():
     unique_posts = []
     dropped_by_id = 0
     dropped_by_pk = 0
-    all_posts = threads_posts + linkedin_posts + twitter_posts
+    all_posts = threads_posts + linkedin_posts + twitter_posts + youtube_posts
 
     for p in all_posts:
         pid = str(p.get('platform_id') or p.get('id') or p.get('code') or p.get('url'))
@@ -563,13 +577,20 @@ def merge_results():
             f"(platform_id 기준 {dropped_by_id}건, pk 기준 {dropped_by_pk}건)"
         )
 
-    return unique_posts, len(threads_posts), len(linkedin_posts), len(twitter_posts)
+    return (
+        unique_posts,
+        len(threads_posts),
+        len(linkedin_posts),
+        len(twitter_posts),
+        len(youtube_posts),
+    )
 
 def save_total(
     new_posts,
     threads_count,
     linkedin_count,
     twitter_count,
+    youtube_count=0,
     local_image_link_posts=None,
 ):
     today = datetime.now().strftime('%Y%m%d')
@@ -604,6 +625,7 @@ def save_total(
             "threads_count": threads_count,
             "linkedin_count": linkedin_count,
             "twitter_count": twitter_count,
+            "youtube_count": youtube_count,
             "execution_mode": "parallel_multi_window"
         },
         "posts": final_ordered_posts
@@ -780,7 +802,7 @@ def run(mode='update'):
         merged_results_data = merge_results()
 
         if merged_results_data[0]:
-            posts, threads_count, linkedin_count, twitter_count = merged_results_data
+            posts, threads_count, linkedin_count, twitter_count, youtube_count = merged_results_data
             preserve_existing_local_images(posts, existing_local_images)
             # 3. 이미지 다운로드
             image_posts = select_image_download_posts(posts, mode, existing_post_keys)
@@ -791,6 +813,7 @@ def run(mode='update'):
                 threads_count,
                 linkedin_count,
                 twitter_count,
+                youtube_count,
                 local_image_link_posts=image_posts if mode == "update" else posts,
             )
             cleanup_old_output_json_after_success()

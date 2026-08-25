@@ -51,6 +51,7 @@ scripts/*
 !scripts/restart_viewer_server.ps1
 !scripts/verify_auth_panel_headless.mjs
 !scripts/verify_scrap_result_modal_layout.mjs
+!scripts/verify_youtube_viewer_headless.mjs
 !scripts/diagnose_threads_redirect_alias.mjs
 !scripts/fix_threads_redirect_alias.mjs
 !scripts/cleanup_old_output_json.mjs
@@ -107,6 +108,17 @@ output_twitter/*
 output_twitter/python/*
 !output_twitter/python/twitter_py_full_[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9].json
 !output_twitter/python/twitter_py_simple_[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9].json
+!output_youtube/
+output_youtube/*
+!output_youtube/python/
+output_youtube/python/*
+!output_youtube/python/youtube_py_full_[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9].json
+!output_youtube/transcripts/
+output_youtube/transcripts/*
+!output_youtube/transcripts/*.txt
+!output_youtube/summaries/
+output_youtube/summaries/*
+!output_youtube/summaries/*.json
 !output_total/
 output_total/*
 !output_total/total_full_*.json

@@ -52,7 +52,7 @@ def main():
         print("❌ 병합할 게시글이 없습니다.")
         return 1
 
-    posts, threads_count, linkedin_count, twitter_count = merged
+    posts, threads_count, linkedin_count, twitter_count, youtube_count = merged
     preserve_existing_local_images(posts, existing_local_images)
 
     image_posts = select_image_download_posts(posts, args.mode, existing_post_keys)
@@ -63,6 +63,7 @@ def main():
         threads_count,
         linkedin_count,
         twitter_count,
+        youtube_count,
         local_image_link_posts=image_posts if args.mode == "update" else posts,
     )
     return 0

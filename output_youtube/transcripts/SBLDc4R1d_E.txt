@@ -1,0 +1,370 @@
+In the beginning,
+there was prompt engineering.  The most important thing was figuring out what to say to the child to
+get a better answer
+.  Now, next, context
+engineering appeared.  I realized that
+what information,
+memory, and tools you provide to the model is more
+important than a single line of prompt.  So,
+with the emergence of AI agents, we started focusing on loop engineering
+.  This is a fairly
+recent item, and it has an iterative structure where AI plans,
+executes, checks results, and
+makes revisions.
+Now, however, the tables are
+turning once again.  Now, simply making one AI
+smarter is not
+enough.  We must now design this entire flow as a single structure, determining which AI
+moves first, which tasks to
+handle simultaneously, where to return in case of failure,
+which decisions to make by the code, and at what
+moments a human intervenes
+.  How to design the path for AI to move from the prompt to the context,
+from the context to the loop, and beyond the loop to the
+graph
+.  Today we will learn about graph
+engineering.  I don't think there is anyone
+among those who have followed my channel who doesn't know what prompt
+engineering and context engineering are
+.   Right
+?  Now, the most confusing thing is probably what exactly is the
+difference between loop engineering and graph engineering
+.  Now, actually,
+people who have experience in software development can
+understand this immediately just by looking at the name.
+Now, a loop
+refers to a system that runs continuously in repetition, while a graph
+refers to a system connected by nodes and edges.  Now, simply put,
+that is the extent of the difference, but just as prompt
+engineering, context engineering, and
+loop engineering were previously superior versions of each other, the same
+applies to graph engineering.  We will gradually discuss in what aspects that is the case
+.  Now, you can understand graph engineering
+most easily if you think of it as dividing tasks into multiple nodes and designing movement rules between them, instead of entrusting everything to a single AI
+.  Now, here, the node
+signifies a task.  You can think of an edge as the path to the
+next task, and a
+state as the
+information passed between tasks.   It is
+that state.  Now, finally, you can
+think of condition as a rule that determines which path to take.
+Well, since our subscribers are skilled,
+I think a change like this will come along pretty easily.  Now, if we look at this structure, it
+actually looks
+very similar to the systems we already frequently use
+.  Everyone is
+very familiar with dynamic workflows, right?  If we consider a model where we plan, conduct parallel
+research, work in parallel, and
+aggregate for verification, it
+is a structure where nodes and edges are connected and already transmit state to each other.  So,
+most of you were already
+using graph engineers without even realizing it
+.  So, let's start by looking at it
+from a basic perspective and gradually
+increase the difficulty level.
+What would you say is the biggest limitation of a single agent?
+For example, let's assume we made a request like this
+. Let's assume we asked you to
+research this market, analyze competitors,
+write a report, and verify whether there is any incorrect information
+.  Now, all these responsibilities are
+contained within a single model. The biggest problem with this form is that it is
+difficult to tell whether the plan was flawed, the search was performed incorrectly, the information was misinterpreted, or verification was skipped
+.  The only thing
+we can know is that the final result was wrong.   You can
+think of graph engineering as dividing tasks into multiple nodes and designing movement rules between them, instead of entrusting everything to a single AI.  Now,
+while the Daniel Agent automatically makes decisions regarding planning, searching, verification, and termination, graph engineering—specifically
+AI—handles systematic decisions such as keyword generation, document summarization, and
+result creation
+.  With the code, the conditional maximum
+number of submissions, the existence of required sources,
+spending limits, and human approval are the most
+important.  So, the
+point is that we can determine whether or not such a need exists.
+Simply put, it means we can implement it by entrusting ambiguous judgments
+to AI and
+rules that must be followed to the code
+.   You
+can mix them.  Now, let's take a look at
+what kind of graph patterns there are
+.  Now,
+since graphs are made up of nodes and edges, there are quite a
+variety of patterns.
+We are going to take a look at just the four most basic things, and you will get the hang of it quickly
+.  Okay, first,
+there is the router pattern.  Now, the router pattern is, quite literally, a
+method of delivering actions to the appropriate agent based on conditions.  Now, secondly, there is
+parallel execution.  You are probably familiar with this form as it is
+widely used in dynamic workflows; it allows
+us to perform multiple tasks quickly in the shortest possible time when we provide a specific timeframe
+.  Now, once
+a request is received like this, we can conduct market research, competitor
+research, and customer research simultaneously,
+combine the results, and obtain the final outcome
+.  Now, the third is the
+constructor and evaluator pattern.
+So, it is a method where the work agent performs the task, and the
+evaluation agent verifies it and
+proceeds with the corrections.  It is a kind of
+loop.  Now, the fourth is the user
+approval pattern, which is
+one of the most important elements in graph engineering.   You can
+view this as the point where we efficiently divide the areas where humans work and the areas where AI actively takes charge
+.  Now,
+there are many other diverse patterns besides these, but we do
+n't really need to give them names. I think you have understood this much and will be
+able to judge for yourselves
+.  You probably have a rough idea
+.  Now, please keep in mind that
+we don't necessarily have to use just one of these patterns; of course, we can
+mix and match several of them
+.  Okay, now that you have a basic
+understanding of the concept, let's try to
+experience firsthand why graph engineering is necessary
+.  Now, I'm going to have you do the same job in two different
+ways.  Now, the
+first is a method where everything is entrusted to a single agent,
+and the second is a method where
+roles and flows are divided by applying graph engineering
+.  Now, for
+example, let's
+assume we are given a task like this.   I am planning to
+develop an AI automation SaaS in Korea. Please
+research the market size, identify key
+competitors, pinpoint customers' major
+pain points, and finally,
+suggest what product I should build.   Now
+, if we just
+throw this to a single agent.  It will usually
+move like this.  Well, on the surface, it looks like I'm doing
+well, right?  Now, but the
+problem is that it is difficult for
+us to accurately control what happened inside
+.  So, the point is that whether market research was
+sufficient, how many competitors
+were investigated, whether customer and competitor
+research were conducted simultaneously, what criteria
+were used to determine sufficiency, and whether incorrect information was overlooked—all of
+these things are
+left to the model's internal judgment
+.  Now, simply put, the
+entire operation becomes like one giant
+black box
+.  Now, however, if we
+apply graph engineering, the structure
+changes completely.  Now, first, the first
+node can analyze user requests
+.  Now, for the next
+download, we can plan how many sub-
+tasks we will divide this work into
+.  Now, this is where the
+advantages of graphics start to emerge:
+we can divide market research, competitor research, and customer pain point research into separate
+nodes and
+execute them simultaneously.
+So, with this approach, it not only becomes faster,
+but it also clarifies exactly what each node
+needs to do, makes
+it visible to us, and allows
+us to independently verify the results of each task
+.
+For example, in the competitor research node, you could
+add rules like this.  Investigate at least
+ten competitors.
+In market research nodes, you must include the source for market size figures
+.  Collect
+at least 20 actual user opinions in the customer research node
+.  This means that
+we can assign clear responsibilities to each node in this way
+.  Now, once these
+tasks are finished,
+we can pass the results to the next step through the state
+.  The point is that all information—market research results, competitor
+lists, and customer pain points—
+is accumulated in a single state, and
+we can aggregate this at the next node
+.  Now, that's
+not the end.  Next,
+we can place another verification node.
+This is also a pattern we see very often
+. This validation node
+checks all the results.  Whether the initial target is sufficient, whether the
+number of competitors satisfies the conditions,
+whether market size figures conflict, and
+whether the customer pain points are derived from actual data.  Now, if we
+satisfy this condition, we can move on to the next step
+.  Now, however, if the
+conditions are not met.
+So, instead of just completing the report right away,
+we can make it return to the necessary node
+.  Now, for example,
+only five competitors appeared.  Now, let's go back to the competitor
+research node.
+If market size sources are insufficient,
+return to the market research node.  Now, this
+is the core of Egef Engineering.  It means that instead of
+deciding to investigate further based on intuition, the
+conditions and movement paths are clearly defined in the presentation of the graph itself
+.  I mentioned that graph engineering is a
+kind of superior version of loop engineering
+. As you can
+see in this pattern just now,
+we can also add loop engineering to each of these nodes
+.  Alternatively, we could operate a few
+nodes and edges as independent
+LUBs.  Now, you
+can also add user approval here.  Hmm, for example, let's
+assume that the AI ​​ultimately reached a conclusion like this
+.  Now, the best opportunity is to create an AI telephone consultation automation system for small and medium-sized hospitals in Korea
+.  So,
+instead of starting development immediately to the next step,
+we stop the graph here.
+Now, they will ask the user, right? "Shall we
+proceed with product planning in this direction?"  Right
+?  Because this
+is an important decision.  So, if the user
+approves, we move on to the next node, and if they
+reject it,
+we can return to the idea generation node
+.  So, this would be the
+Humand we were talking about earlier, right?   So
+, if we apply the graph engineer like that
+...  It means that AI does
+n't just work hard on its own, but works
+within this defined organizational structure
+.  Now, I think this is the
+best analogy for understanding that engineer
+.  Now, if a single
+agent
+entrusts all tasks to one competent employee, you can think of graph
+engineering as designing the entire company
+.  It is designing the company itself
+.  So, you can think of graph engineering as structuring in advance who conducts market research,
+who investigates competitors, who verifies the
+results, when to reassign
+tasks, and when the CEO personally approves decisions.
+So, rather than saying that graph
+engineering is a technology that makes AI smarter, you should
+view it as a technology that designs structures to ensure smart AI does not make mistakes.
+Now, there is a more
+important point here:
+we don't need to create everything as AI agents just by doing this graphic engineering
+.  Now, this is a very
+important point for you to keep in mind: a
+good graph is one that does
+not use AI where it is not needed
+.  That way, we can save money and
+increase efficiency.
+Okay, for example, are there
+more than 10 competitors?  Okay, so we
+obviously don't need to ask him about this, right?  You
+just need to count the numbers using the code.   Right
+?  Now, are there at least three sources for market size
+?  Now, we
+can just check this with code as well.  Now,
+but which of the two markets is
+more attractive?  Now, since this
+is a judgment where the correct answer is not clear, we can
+leave it to the AI.  Or you could
+hand it over to someone.
+So, ultimately, we are
+returning to the principle we discussed earlier:
+ambiguous judgments are made by AI or humans, while
+clear rules are handled by code.  Now,
+graph engineering
+includes the task of combining these two in the most appropriate way
+.  Now, then, a
+question like this might arise here.  So,
+then couldn't we just make all kinds of AI apps
+?  Now, we have these very
+extreme older brothers quite often, but
+uh, that is obviously not true.  For
+example, there is no need to go out of your way to create graphs for tasks that can be completed with just one or two tool calls, such as simple glazing, simple
+questions, or answers
+.  Now, the
+fact that over-engineering is bad applies not only to the pre-
+AI era but also to the AI ​​era
+.  Now, if you
+use graphs, the structure becomes more
+complex, the number of points to debug
+increases, and naturally, it could also incur higher costs
+.  Because more agents are being
+used.  We've
+used dynamic workflows before, haven't we?  The tokens just
+melt away.  So, the
+moment graph engineering is truly needed is when the task
+itself is complex—when we want to design an extremely intricate structure
+and create a pattern for it. That is when I am saying
+you should
+use a graph engineer
+.  Now, when there are
+multiple stages, conditional branching, the
+need for parallel processing, the need to
+return in case of failure, human
+intervention, and verification of results—
+and when
+we need to control all of these things through governance—it
+starts to become powerful because managing with only a single agent loop becomes difficult in such situations.  So,
+I think that the flow from prompt engineering to context
+engineering, and
+from context engineering to loop engineering,
+naturally
+continues into graph engineering as well.  And in
+fact, these are patterns that have
+always coexisted with developers like us
+. As the capabilities of AI
+increase, the complexity we can design
+becomes more sophisticated.  So,
+prompt engineering designed what the AI
+hears,
+context engineering designed what the AI
+knows, and loop
+engineering designed how the AI ​​repeatedly
+acts.
+And finally, you can think of graph
+engineering as designing how various AIs can
+work together within a specific structure
+.  This is the
+biggest difference.  In the end, it's just a continuous
+upgrade.  Right?  Now, as this
+AI agent
+starts to handle more complex real-world tasks in the future, it is highly likely that
+how well this graph was designed will become much more
+important than the performance of this developed agent.  Of course, by
+that time, another buzzworld will
+emerge, and completely new engineering methods, as well as
+more upgraded ones, could come out
+.  But you understand what I mean, right
+?  Now, the model will
+continue to improve.  The
+AI ​​will also automatically generate the prompts well.
+You use MetaPrompting a lot, right?  In fact, there is
+practically no one running a context engine right now, either
+.  Now, the loop will also
+get smarter and smarter.  Now, but
+there are still things that someone has to decide.  The person designing this structure—determining which tasks to divide,
+where to execute in parallel, where to
+verify, where to
+return in case of failure, and where to hand over
+decision-making authority to humans—will
+determine the quality of future AI systems.  Now, of course, there is no absolute need for a
+person to do this structure itself from scratch
+.   It
+means that it is entirely possible for us to design with AI, just like metaprompting or dynamic workflows.  So, I think you just need to remember one thing from today's video: we are
+definitely transitioning from an era of making AI give good answers to an era of making AI work in a good way
+.  Now, you can think of the reason as being that AI is
+advancing too much
+.  Now, you can
+consider the method of designing that as graph engineering
+.  I
+think there might be some of you who felt the aftermath as I swept through, but it's nothing
+special.  You
+were naturally already using it, and if you
+specifically want to design it yourself, you can
+think of it as something that can be designed without much difficulty
+.  Okay, next time, I plan to
+film a video of me actually working with the Easy Ring.
+If you enjoyed this video, please subscribe, like, turn on notifications, and hit the
+hi. I will come back
+with even better information in my next video
+.  Soasji.

@@ -20,7 +20,7 @@ created: "2026-07-26 18:40"
 
 ### 구성 요소
 
-- 플랫폼 수집기: Threads, LinkedIn, X(Twitter)
+- 플랫폼 수집기: Threads, LinkedIn, X(Twitter), YouTube
 - 오케스트레이터: `total_scrap.py`
 - 뷰어 진입: `wscript sns_hub.vbs` 또는 `SNS허브_바로가기.lnk`
 - API 서버: `scrap_sns_server.py`
@@ -228,11 +228,11 @@ consumer 토큰이 없으면 상세 수집은 건너뛰고, simple 기반 메타
 
 `total_scrap.py`는 아래 순서로 처리한다.
 
-1. producer wave 실행: Threads, X, LinkedIn 목록 수집
-2. consumer wave 실행: Threads, X 상세 수집
-3. Threads, LinkedIn, X 최신 full 파일 로드
-4. 플랫폼 이름 정규화: `threads`, `linkedin`, `x`
-5. 플랫폼 내부 순서를 `platform_sequence_id`로 부여 (3개 플랫폼 전부)
+1. producer wave 실행: Threads, X, LinkedIn, YouTube 목록 수집
+2. consumer wave 실행: Threads, X 상세 수집 (YouTube는 producer 단계에서 상세까지 끝낸다)
+3. Threads, LinkedIn, X, YouTube 최신 full 파일 로드
+4. 플랫폼 이름 정규화: `threads`, `linkedin`, `x`, `youtube`
+5. 플랫폼 내부 순서를 `platform_sequence_id`로 부여 (4개 플랫폼 전부)
    단 LinkedIn 값은 화면 순서를 반영하지 않는다(4.2절 수집 순서 참조). 정렬에 사용하지 말 것.
 6. ID 기준 중복 제거
 7. 통합본을 `output_total/total_full_YYYYMMDD.json`에 저장
@@ -253,6 +253,9 @@ consumer 토큰이 없으면 상세 수집은 건너뛰고, simple 기반 메타
 | X 목록 | `output_twitter/python/twitter_py_simple_YYYYMMDD.json` |
 | X 상세 | `output_twitter/python/twitter_py_full_YYYYMMDD.json` |
 | X 실패 이력 | `scrap_failures_twitter.json` |
+| YouTube 전체 | `output_youtube/python/youtube_py_full_YYYYMMDD.json` |
+| YouTube 자막 전문 | `output_youtube/transcripts/{videoId}.txt` |
+| YouTube 요약 캐시 | `output_youtube/summaries/{videoId}.json` |
 | 통합본 | `output_total/total_full_YYYYMMDD.json` |
 | 게시물별 태그 | `web_viewer/sns_tags.json` |
 | 태그 카탈로그 | `web_viewer/sns_tag_catalog.json` |

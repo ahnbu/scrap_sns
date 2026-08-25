@@ -1,0 +1,523 @@
+Uh, for this video, I was thinking about how to introduce the workflow feature, which was recently
+released in Claude Code, to
+you all. And
+uh, I think I can use this workflow feature to slim down my
+harness a bit
+.  I
+thought this was the perfect task, so
+in this video, I will cover
+how you can use this workflow feature
+to diet and optimize your HANS
+.  Uh, first of all, since there might be some
+people who missed the video I uploaded to YouTube a while ago, let me
+briefly explain it.
+Lately, we have been
+carrying out a process called "harness engineering," where we stabilize coding agents by attaching safety devices called harnesses one by one. However, what
+I have been feeling lately is that a
+harness, once created, probably won't last forever
+.  Uh, because previously, the
+model itself didn't follow instructions, so you had to
+read this file first no matter what.  And do
+not implement it immediately.
+Make sure to make a plan before you start working.
+We needed a
+process of continuously putting up fences around this agent in this way
+.  But gradually, the
+LM model of the coding agent itself also starts to
+improve.  So, as the performance of such models
+improves, situations may arise where
+actions we previously had to forcibly bind become
+unnecessary
+.  It seems like the current situation is exactly like that
+.  Ops
+4.8 model, GPT 5.5 model.
+The performance of the L model has really improved a lot these days
+.  Uh, and the
+Claude Code, Codex, cursors, and things like that that we use are
+not simply model calling windows that call LLM models.
+These could also be considered a harness
+.  You can consider that a vast array of harnesses—including file creation, code
+modification, terminals, command execution,
+memory, tools, and skills—are
+already built into this coding agent
+.  So, if we
+create a separate HANS and
+attach it to this coding agent, it can
+essentially be seen as a structure where we are placing
+our own HANS on top of the HANS called the coding agent
+.  Uh,
+then, the problem could arise here
+.  Uh, the
+harness we made three months ago would probably have been
+needed back then.  Uh, but now
+Claude Code might have
+basically become good at that action even without that harness
+.  Or, a
+better method than the Hannes we created may have been introduced
+.  Uh, if that happens, the
+harness we made in the past might have
+changed into a form that no longer helps the agent but actually becomes a hindrance
+.  There may be some parts where
+instructions are duplicated
+.  Nowadays, coding
+agent models are already so smart that they try to handle things on their own, but the
+harness we created—that is, these
+outdated rules—can keep interfering with the coding agent and
+actually hinder it
+.  So, the
+part we need to focus on right now isn't about
+what additional Hans to attach to this coding agent, but rather, since
+you all likely already have a huge number of Hans built up
+.  I think now is the time to focus on
+how to eliminate the unnecessary things among those Hannes
+.
+So, in this video, I’m going to
+cover a feature called Dynamic Workflow in Claude Code
+. You can consider this Dynamic Workflow
+feature
+to be a brand-new feature that was recently released by Claude Code
+.  So, in this video, I will
+explain to you in detail what the concept of this workflow feature is, how it differs from various existing technologies, and what methods there are for using and creating it.  Uh,
+and it doesn't end here
+.  In fact,
+when utilizing workflow features like this, it is
+crucial to determine which parts of your actual work and tasks are efficient and which are not. As
+I mentioned earlier,
+harnesses are
+not permanent.
+Therefore, we need to identify issues with the various harnesses we have created
+and eliminate unnecessary ones. I
+believe this workflow feature can be very useful in this regard.  So, in
+this video, based on my legacy HANS, I will
+use the workflow function to identify the issues with my HANS, and based on those identified
+problems, I will proceed to improve my
+legacy HANS to the point where I can actually streamline it
+.  I would say that dynamic workflow is a
+feature that uses JavaScript to orchestrate multiple sub-agents simultaneously
+.
+So, if we
+use a workflow, when we pass a task to Claude Code,
+Claude Code writes a
+script suitable for that task in JavaScript and
+executes it, and
+it runs in the background
+.  And existing sessions can
+continue to be used for other tasks
+.  So, it seems there are basically two ways to
+utilize this workflow feature in Claude Code
+.  The first method is to insert a keyword
+called Ultra Code when writing the prompt
+.  Now that I
+type "Ultra Code," the keyword is highlighted like this, and it shows here
+that a dynamic workflow
+was requested in this turn
+.  So, you can consider the first method as the workflow running by writing the
+keyword "Ultracode" like this and
+specifying the tasks for the workflow you want after it
+.  Or,
+if you cannot remember the keyword called UltraCode, you can
+request the workflow to perform such and such tasks in this way, and the
+workflow will be retrieved and executed
+.  Uh, and you
+can also set the effort level like this. For example, if you
+input the effort command, you
+can basically set the effort level to determine how much thought Claude Code will put into the work.  There, you can basically set five levels: Low,
+Medium, High, Xi, and Max. There
+is also an effort level called Ultra Code.  So, if you
+select this and press Enter, you can
+make it perform all tasks in Claude Code at the Ultra Code Effort level like this.   If
+necessary, you can view it as Claude Code being
+able to carry out your work through a feature called Workflow
+.  However, I am not
+proceeding with the basic mode set to Effort; instead, I have it set
+to Lex or X-High, and I
+think I can execute the workflow by entering a keyword like "Ultra Code" when necessary or by writing a prompt to create a workflow.  Uh, and now there is
+basically one workflow built into the Claude Code
+.
+If you write a command called Deep Research, you can utilize the dynamic workflow feature
+built into this cloud code
+. Let's try using this Deep Research
+feature
+.  In this way, I plan to request that Claude
+Code users research
+how they use Claude.md and MD skill hooks, looking into the
+common patterns of skilled users and common
+mistakes
+.  In that case,
+since the Deep Research function is a workflow, it will
+now operate in the background as a workflow
+.  So, they are saying that they will now execute deep research in this manner and will use a
+multi-agent workflow to perform search, source,
+collection, adversarial verification, and generate a comprehensive report
+.
+And below, you
+can see that the background agent now runs separately in the workflow like this
+.  And if you
+want to see the progress of an ongoing workflow, you
+can view the current status of the workflow by entering the command called slashworkflow.
+Since this is running in the background, it can be
+seen as a situation where other tasks may continue to be performed on the current session.  So, I’m going to
+use the workflow command to
+view the progress of the currently ongoing workflow like this.   It
+is divided into a total of five phases, and it is said that one scope is currently in
+progress.
+If you look at this search phase, you can see that a total of
+six sub-agents are
+currently conducting their respective searches in parallel
+.
+You
+can use the arrow keys to move back and forth and check what each sub-item is doing
+.  And following the search stage, the
+patching stage takes place
+. In this patching stage, you can understand it as the
+process of actually patching documents from the web using the web patching function
+.  In this patch process, you can see that a total of
+28 sub-agents are in operation,
+rapidly retrieving a vast amount of information from the map
+.  Once the patch is complete, it will
+proceed to the verification stage like this.  In the verification phase, a
+total of 75 sub-agents have
+appeared like this.  So, by operating a large number of
+server agents in this way, we
+conduct adversarial verification of the findings we have researched from multiple perspectives and adversarial viewpoints.  And
+in the final step, the
+things that were searched, patched, and verified earlier are
+combined and synthesized to
+create a final research report; you can consider this as Deep Research, a workflow that is built into A Cloud Code by
+default
+.  And now, once the
+execution of the Claude Code workflow called Deep Research is
+complete, you can see the final report
+appearing like this
+.  In Deep Research's
+internal workflow,
+after collecting 28 sources and 55 claims, a
+technical review is conducted following the adversarial verification stage, and a
+final report is output.
+However, by having this process
+run in separate sub-agents rather than within the main agent's current session, the
+main
+agent only
+receives the final report generated. This allows for a
+structure that maximizes the efficient utilization of the main agent's context
+.  So, you can consider
+these features, which were obtained by utilizing this deep research function,
+as the basic framework of the workflow
+.  So, to
+execute a workflow, you can enter keywords like "Ultra Code,"
+input the workflow natural language,
+or utilize saved slash
+commands.
+For example, we have utilized the
+built-in workflow of Claude Code called Deep Research, and
+next, we will
+create these two workflows.
+First, we are going to create a
+workflow that can scan for issues with our legacy harness
+.  And
+secondly, based on the report scanned by the first workflow, we will
+create a total of two workflow functions, including a workflow that can actually optimize and diet this harness
+.
+Based on the official Entropic documentation, you can run a total of up to
+16 sub-agents simultaneously in the workflow
+.  And since it says that up to 1,000 sub-agents can be run
+cumulatively for a single execution, you can
+think of it as a feature that allows you to launch a very large number of sub-agents.  And if you
+look at the workflow differences compared to existing functions such as sub-agents, skills, and agent teams, the biggest difference is
+who holds this plan
+.   It can be
+viewed from the perspective of who holds the planning document itself
+.  In the case of a sub-agent,
+when the code executes each sub-agent, there may be a part where the
+plan is managed on a turn-by-turn basis for each sub-agent
+.  Secondly,
+regarding skills, we can see that plans are managed
+in the current main session based on the prompts we have written,
+whereas for the agent team, the structure is set up so that the team lead
+agent manages all plans centrally
+.
+Also, the feature called "workflow" utilized in this video
+operates internally based on JavaScript, so the
+difference is that the plan is managed at the script level
+.  So, since plans are managed at the script level, you can
+consider the characteristic of this workflow to be that it allows for a structure where the scale of agents can range from dozens to hundreds of executions.  So,
+now we are going to create our own custom Claude Code
+workflow
+.  First, we will create a
+workflow called the Harness Legacy Scan to
+verify and audit our current Harness structure, determine if it is appropriate, and identify any areas that need improvement
+.  And
+here, a Hannes verification report will be
+generated. Based on that report, the
+second
+workflow we will create is called the "Harness Diet." Based on the
+report generated in the first workflow, we will
+create things that can actually help our Hannes lose weight—that is, optimize it and help it lose some weight
+.  Uh, here, the
+workflow called Harness Legacy Scan is almost the same pattern as the workflow called Deep Research that we used a little while ago
+.  Uh, the
+pattern of this workflow called deep research was like
+this.  Deep research was implemented in this way, through a process of searching the web,
+cross-validating, and finally
+synthesizing the cross-validated results to
+produce a final report
+.
+However, you can view the Hannes legacy scan we created as having
+exactly the same structure as the Deep Research pattern
+.  For example, if our
+Hanness has
+over 50 implementations across various categories, we will use a workflow called the
+Hanness Legacy
+Scan to verify whether each item is necessary, if there are any conflicts with the product's core functions, and whether it is worth implementing globally or should be separated into project units, and then
+generate a report.  We will try to make it possible to
+view our Hannes from many different angles
+.
+Therefore,
+for tasks requiring adversarial and multi-faceted verification, it
+seems that the new feature called "Workflow" introduced in Claude Code is very suitable.  Okay,
+I have written a prompt for creating a workflow, and I would like to
+share this prompt with you all.
+Okay, I've inserted the keyword called UltraCode like this
+.  And I requested that you design and execute a dynamic workflow to audit my
+coding agent, Hannes, in read-only mode
+.  First, we will now create things that allow us to audit
+our workflow in read-only mode like this
+.  As I mentioned earlier, the workflow name is
+Harness
+Legacy Scan.  We
+set our workflow goal to identify outdated rules, redundant knowledge, excessive global context, overly broad skills, unnecessary hooks, MCPs, and settings that duplicate product core functions remaining in our harness.
+And now, when we have an agent review something, they
+may view it from a biased perspective.
+To prevent this as much as possible, it is
+very important to request that the agent review it from multiple angles.
+So, you need to design the workflow in
+such a way that the agent can be analyzed by dividing it into multiple perspectives
+.
+First, there would be an Inventory
+Agent running to list Hannes-related files and
+gender settings,
+and second, I think it would be good to include a Global
+Context Tax Agent to
+verify whether there are any unnecessary context costs, such as Claude.md,md, mdAgent.md, and Cursor Rules
+.  And a skill management agent capable of analyzing whether each skill is still
+needed, whether the description is designed too broadly, and whether the
+skill point
+MD is too long
+.
+And now, I mentioned that agents like Claude Code, Codex, and
+Cursor are also a
+harness layer
+.  Therefore, since these coding
+agents already have
+established harnesses, having my
+custom harnesses
+duplicated can actually
+degrade performance. So, you can think of the
+Product Overlap Agent as checking to ensure that rules or harnesses that were previously necessary but are already included in coding agents like the Clod Code Codex Cursor do not duplicate them. Additionally, since
+hooks,
+add tools, and MCPs typically
+contain many functions for granting permissions, it is necessary to analyze whether
+permissions are being granted overly broad areas
+.  And based on the
+analysis
+results from multiple agents mentioned above, a final process was required for the refactor agent to classify whether refactoring was actually
+needed—whether to
+keep, compress, move,
+split, transform, or
+delete the harness. We
+included this feature, and
+finally, we added a safeguard by
+launching multiple adversarial reviewer agents
+to critically examine items that could become risky if deleted or reduced
+.
+So, based on this prompt, I will
+request that Claude Code create a workflow called our Harness Legacy Scan
+.  I copied and pasted the prompt I showed you a moment ago exactly as it is
+.  Since we
+requested that the workflow be designed and executed based on the keyword Ultra Code,
+Claude Code will now
+generate our workflow called Hannes Legacy Scan
+.  Okay, so they say the workflow has been
+fully created and is currently
+running in the background
+.  So, let's
+use the workflow command to enter and
+check our workflow
+.  You can see that it is executed in a total of four stages: Inventory, Analyze,
+Plan, and Hostile Review
+.  In the inventory phase, the
+configuration files for our harness are all loaded to
+first identify how the harness is configured.
+Secondly, there is an analyze phase where you
+can see that a total of 13 sub-agents are running. You can see that the
+workflow reviews skills and even
+safety permissions, and that this
+analyze phase is conducted through this process
+.
+So, you can
+check how each skill is being verified
+. It seems that Product
+Overlap now verifies things that were necessary in the past but have become
+unnecessary as the coding agent has been updated
+.  And finally,
+safety permissions check to ensure that you are not currently granting overly broad
+permissions
+.  Once the analysis in the analyze phase is
+complete, the process moves on
+to the plan phase. A
+sub-agent called the Refactor Planner is
+created, and
+in the third plan phase, it proceeds to
+create a preliminary plan regarding whether to maintain, compress, move, or reconfigure the harness verified in the verification phase.
+Okay, and
+now, let's say the planning phase is complete
+.  After drafting the initial plan in this way, the
+fourth and final step is the adversarial review
+stage.  If there is a request to
+delete or change something during the third stage, the planning stage,
+those requests will be critically verified
+during this final adversarial review stage to ensure that
+deleting them does
+not cause any problems or side effects. After
+verifying this at the final stage, a final plan document
+report will be prepared.   I
+divided the process into these phases by adding a final stage for adversarial rebuttal review of items classified as high risk, so that the final report can be produced more stably.  If you
+decide it is necessary, you
+can specify things like the number of agents for each step when designing the workflow.  It says that the Legosianness
+Scan dynamic workflow has
+finished executing.  I'll wait for the final report
+results.   They say that they
+utilized a total of 16 agents to
+discover 109 items and
+used approximately 1.6 million tokens
+.  The agent workflow ran for 17 minutes
+.  So, let's say the
+final report has been written
+.  If you
+take a look at the report, you will see that the
+Hannesle Legacy Scan read-only audit
+report was created like this.
+Overall, it shows how our agent conducted the audit,
+and it summarizes things like which HANS to keep, which to
+reduce, which to divide, which to move, and which to
+delete
+.  And for each Hans, the
+items that need to be reduced are
+listed like this, and I have organized the
+items that require user confirmation and
+those that need to be mechanically deleted without confirmation into a
+table like this
+.  So, based on this Hannes report, we can now
+create a new Hannes diet workflow that allows us to finally modify and improve the Hannes diet
+.  So, the workflow we are going to create this time is called the
+Harness Diet, and
+like this, I will now
+share the prompt with you
+.  So, I would like to request that you design and execute a dynamic workflow that
+applies only lowless harness improvements based on the Hannes legacy scan report
+.  I gave the prompt to the A Clod Code exactly as it was
+.  So, let's say the
+harness diet workflow has
+now been executed.   If you take a look at the
+Dieter workflow, you will see that the
+workflow is executed in two stages: Split and Refine
+.  So,
+based on the Legacy Anesthesia Report from the previous stage, this is the
+stage of splitting various skills like this.
+And now, if
+there are any unnecessary descriptions or instructions in the skills, you can see that a
+step to redefine them is carried out during the refine stage.
+Similarly, you can
+see that multiple agents run in parallel to improve my harness skills
+.  So, now I’m going to show you how to save the Harness Legacy Scan workflow we previously ran while the Hannes
+Diet workflow is in progress. If
+you used a workflow to specify a
+task to be executed, the
+workflow is created like this
+.  However, if you
+want to reuse this workflow next time, you can save it by
+pressing the S key on your keyboard
+.  If you press the S key, you
+can name the workflow like this.  I’m going to name it Harness
+Legacy Scan
+.  So now, a
+legacy scan JavaScript file is
+created within the folder called Clod Workflow,
+allowing you to save the workflow so that it can be reused next time.
+So, if you run the code like this and
+search for "Harness Legacy Scan," you can
+see the workflow we created
+.  Similarly, if you save the
+workflow called the Hannes Diet
+by pressing the S key, you will be
+able to confirm that the Hannes Diet workflow has also been added when you restart Claude Code.  Uh, I
+also explained how to save workflows so they can be reused, specifically how to save them using slash commands.
+So, it is said that the workflow to improve
+my legacy harness in a better direction, based on the report generated by the Hannes legacy scan, has now
+been completed.  So, if you wait a bit, the
+Hannes diet
+workflow will generate a summary of the final results
+.
+Overall, we proceed to verify the
+improvements or deletions made to the Hannes diet workflow,
+check what has been added, and finally verify whether the improved Hannes skills function correctly when executed
+.  Now, they say that the harness
+diet workflow has completed and
+generated a final report
+.  It is said that the application report was
+created like this, and overall,
+about ten skills have been organized,
+12 new references have been added, and
+items that have been moved to storage are also listed here
+.  In the case of the main body of the Skill Point MD, it
+was previously about 2,600 lines, but it has been reduced to around 1,800 lines, a
+reduction of about 760 lines.
+Since this alone
+seems to have changed the system to allow us to use the overall context window more effectively.  Also, the number of active skills has
+decreased from 29 to 28, and a
+skill called 'A Notion Workspace'
+has been saved.  I have recently been in the process of
+switching my context management from Notion to Obsidian or the local layer. Since
+this skill is actually a legacy skill that I
+used only in the past and do not use these days,
+I also think that archiving it like this is more appropriate, and
+overall, I think the skill has been improved well
+.  So, to
+summarize one last time, making a harness
+is not a one-time process.
+The model evolves, and the Claude
+Code itself continues to evolve as well
+.  Therefore, I personally
+believe that a good harness is
+not just about continuously building upon it; it is crucial to set up the workflow in a structure where existing harnesses are
+periodically reviewed and continuously
+updated
+.
+So, I recommend running the two workflows we created in this video
+periodically
+.  I think running it once or twice a month should be
+enough.  Uh, you could integrate these
+two steps
+into a single workflow, but the
+method I recommend is to run the
+harness legacy scan workflow first and
+review the results yourself if possible.
+And if you are satisfied with the result, please do
+not do it manually, one by one.   I
+believe that if you incorporate the workflow known as the Hannes Diet into the final improvements and applications of your results, you will be able to manage your year a little more efficiently.
+So, I will now share the prompts for creating the two workflows shown in this video on
+Git
+.  You can try improving
+your own workflow based on the prompts I am sharing
+.  So, if the workflow I shared in this video
+has improved your HANS, I would appreciate it if you could
+leave lots of comments.
+I will be back in the next video with more useful
+information
+.  Uh, I
+wanted to give you a fresh vibe today, so I
+came outside to film an intro. I would appreciate it if you could
+leave a lot of feedback on this video format.
+Now, I will go inside and
+cover the workflow.   That's it
+.

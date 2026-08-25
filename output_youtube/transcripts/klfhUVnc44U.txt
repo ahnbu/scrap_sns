@@ -1,0 +1,749 @@
+Instead of a single agent, agents have
+formed a team and are now able to work while communicating with each other
+.
+When conducting research, agents search from various perspectives and
+analyze the findings.  Also, the orchestrator
+performs an action in the middle of the [music].   For
+example, there are parts of the orchestrator that are lacking
+.  Then wake the research agent up again and
+ask them to do more research because this isn't enough.   When I
+experience it firsthand, I realize it is different from the AI ​​I used to use
+.  So, you can view Hannes Engineering as having emerged from the consideration of how to design a multi-agent system rather than a single one, and
+how agents
+could work together effectively
+.
+hello.  This is Lee Jung-hak, presenting Love and Technology
+.  These days, wherever you go, there is a
+lot of talk about Hannes.
+I am also personally studying Hannes Engineering and
+harnesses with interest
+.  Today,
+my mentor, who studies harnesses and various case studies, has
+invited our Minno.  Nice to meet you, Minno
+.   yes
+.  hello.  yes.   It
+seems like people are studying quite a bit about harnesses.
+I understand that you are the one who has contributed the most significantly. Mr.
+Minno, how did you
+first become interested in harness engineering
+?  I have been doing a lot of work
+since last May using that AI tool called Claude Code
+.  But after some time passed, I
+realized that this AI only showed
+that level of productivity when I was holding the steering wheel
+.  So, starting early this year, I
+was considering giving the handle to AI, and as I followed that thought process, I
+noticed that the term "harness" was emerging in the industry.   I became
+interested in it thinking that if I used this, I could have AIs work more autonomously for longer periods
+.  It seems that not only I, but really many
+engineers, were having those kinds of concerns
+.   If
+our viewers search
+for Hannesback, you might be able to see some of Minno's posts
+.  I think you will
+understand it a little better if you listen while watching that
+.  Actually, we had quite a few
+words with "engineering" attached to them at the beginning
+.   It
+seems like the concept has evolved from prompts to context and then to harness engineering. In your opinion,
+what are the differences between prompt engineering, context, and harness engineering?  We
+started having a full-fledged conversation with AI for the first time through Chajifit.   It
+seems that prompt engineering literally focused on how to converse with this AI.  Then, regarding the
+part where we decide what content to give to the AI ​​that provides good answers, it
+seems like the focus shifted to context engineering.
+Recently, the paradigm has completely shifted, and it
+seems that instead of being swayed simply by the performance of a single model, people are considering ways to utilize A more effectively by designing the environmental structure surrounding the model in advance.
+In a way, a prompt can be described as a command or a question given to the AI, and I
+think good prompts and context are essential for agents to interact well within HANS.  Do you empathize with that aspect as well
+?  you're right.  It seems that the
+engineering techniques we have been contemplating and researching before are
+continuing.
+And based on that foundation, it seems that harness
+engineering is currently working very well
+.   I assume
+you have worked in a related field for a long time, but have you ever
+studied the prompt side separately?   yes
+.  I also gave related lectures in the early days
+.  It was an era when a
+huge number of techniques poured
+out using prompt methods.  However, some of
+those techniques are now absorbed into the models themselves, and it
+seems that many technologies have developed in this way.
+So, as it evolves into context engineering, what I
+understand—though my understanding is limited—is that various elements, including good contexts and prompts, are being incorporated to help the AI
+agent perform this task better
+.  In addition to that, regarding
+harness engineering, you explained it more
+specifically earlier in terms of environment or structure. When I
+downloaded and looked at the harness bag that Minno created, it seemed that the
+agents and skills were well-defined as well
+.
+For those who haven't tried it yet, could you
+briefly explain how harness engineering works
+?  When we previously
+used tools like Chaebi PT Pi or Jeminai, they now operate as Danni Raizen
+.  When we use it here, please
+draft a report or
+summarize it.  We could see that these single tasks were
+performed very well
+.  The
+story changes a bit as it moves to the production level.
+For example, the limitations of a single agent become apparent when analyzing thousands of lines of
+code, performing large-scale
+tasks, or engaging in more creative work
+.  Additionally, regarding context engineering
+techniques, the type of context
+provided is crucial; however,
+problems arise where the longer the conversational context becomes, the more the AI ​​struggles to grasp the direction of the context, leading to a significant decline in performance.  So,
+naturally, instead of a single agent, we
+designed a multi-agent system, and various elements began to emerge from the consideration of how those agents could
+communicate with each other and work
+effectively
+.  You can
+consider Hannes Engineering to have emerged from the question of how to effectively design such elements
+.  And when that context
+accumulates, a
+point occurs where significant performance degradation takes place due to what is called context lock; regarding
+these aspects,
+when agents communicate with each other, each agent
+also has its own context.  So, by having agents manage only the
+truly necessary aspects of that context,
+many of the existing problems have been resolved
+. You have personally shared
+various open-source projects called Harnessbag and the
+examples within them; was there a particular reason or motivation behind your decision to make them
+public
+?  When the concept of the harness first
+emerged, it was merely a concept with
+no actual substance.  So,
+since I am an engineer, I wanted to create something tangible
+.  After much deliberation, I have
+now
+released a skill that automatically configures the harness via Open Sword
+.  But as I used this skill to
+perform various tasks, I
+realized that it isn't just a tool for developers, but can be used in so many places in everyday life.  So, I
+divided the categories into about ten and created and released around
+100 examples through Hans
+.   If you
+look there, there are language tutors, travel
+planners, and a wide variety of other aspects
+.  Is there another reason why you started making them with various types of baskets
+?
+When this AI tool first came out, I
+did a lot of writing tasks that were easy for me.
+But the translation was also very good back then.   The
+summarization works really well, and
+receiving this kind of help seems to have been the turning point that led me to start actively utilizing such AI tools
+.  And as I
+expanded on that further, I discovered that beyond writing, I could
+generate voice and video, and
+even
+create webtoons and books. I
+think this was an opportunity to discover possibilities in many fields.
+I saw in your recent posts that you were also working on that drama script.
+Has it been finished?   yes
+.  The full-length drama script
+has been completed.  I tried it out as an experimental element
+.  I was inspired by watching the currently popular
+drama "Hat Warrior," so I
+created this by thinking about how far AI could go if given a specific theme.
+When writing that script, I even tried having a real conversation between the agents and
+incorporating it into the script.   Have
+you read it?   yes
+.  After reading it, it seems like some more multi-dimensional
+conversations took place.   It might seem
+a bit lacking to those in professional fields, but from
+my perspective, it was
+very meaningful in that it enabled me to handle areas that were completely impossible before
+.
+Then, are the agencies that create the drama scripts
+also
+composed of about four or five agencies? Yes
+, that is correct.
+When I looked at those friends' personas, it felt a bit like job descriptions
+.  Like a job description.
+Then, how are the roles divided there as well
+?  Are the writers' roles divided
+?  Or did you
+divide this based on the role of a main character?  If
+you make a request like, "Shall we try writing a script?",
+there are agents who set up the characters, create the worldview, and take care of the necessary parts when writing the script.  And
+when the script is finished, agents emerge to review
+what kind of impact it can have on the audience and to
+revise the script.
+When we say we are writing a drama script, I think we need to know the job to be able to structure it
+.  But, Mr. Minno, did you
+originally have relevant
+experience and knowledge to assemble the harness for writing that drama script?
+Or maybe you found this out while talking with the agent
+.   It
+was a domain I was encountering for the first time.   The
+work I am currently doing is similar, and
+I have an organization called FD.  It is a task where we really have to
+keep understanding the new domains and then
+integrate them
+.  Devon is also a domain that I am encountering for the first time, but it
+seems that AI is providing significant help as well.   What I really, really
+liked about the harness bag was that it seemed to serve as a stepping stone for me
+.  So, I tend to
+do a lot of modifications and additions to what Hannesback makes for me
+.  Ultimately, if I bring this into my own context—for example, if the
+HR department is
+doing data analysis—there might be
+some additional things I need to remove from the agents' descriptions and the workflows before and after that
+.  I felt that in
+order to make it more sophisticated, I ultimately needed to have a
+good grasp of my domain and workflow to
+create it well
+.  Currently, the Hannes
+100 is viewed as a tool that helps
+facilitate a very rapid initial entry
+.  The target is also clear.  The target audience is people who are just
+starting out with AI and want to receive help
+.
+And after that, it seems that
+individual experience and
+capabilities will be needed to further advance it.
+When those elements are integrated, the
+agents are truly well-designed, and
+these agents alone are not
+enough.  The skills that agents can use
+also need to be well-designed.   I
+can produce a higher quality result when I personally intervene and trim those parts.
+I found that verb a bit interesting, too.
+You often use the expression "carving the harness," and you
+use the verb "carve" because there is an early work
+.   It will
+likely require some time and repetitive experiments
+.  That is why I
+think they use the expression "cutting."   When I
+operate the harness bag, it’s actually quite interesting to see how these things
+work in parallel and sequentially
+.  Generally, is there a conceptual or operational difference between the multi-agent
+concept of running multiple agents and a
+harness running
+?  When operating under a harness, the
+roles of the ETs are distributed fairly well
+. However, simply deploying a large number of ETs is
+similar to having a large number of people come in and hold a meeting
+.  On the other hand, if Hannes is well-
+structured, it consists of members who are truly essential to the role
+and agents whose work does
+not overlap
+.  Furthermore, the sequence and manner in which they must perform their tasks are
+designed in advance,
+and
+there is also an agent who acts as an orchestrator to lead the meetings. This
+orchestrator maintains the overall flow and
+sponsors these agents in a timely manner to carry out their work
+.  Actually, the principles by which humans work are
+very similar, aren't they?  So, from
+my perspective as someone researching work, I work with an agent
+.  I think
+Hannes was the most appropriate example of defining a workflow
+.  For example, I found that the process involves explicitly assigning
+tasks and roles to the members of the organization,
+clearly defining the ground for reorganization to facilitate collaboration, and
+then having a middle
+manager or leader called an orchestrator distribute the work and
+provide feedback.
+Then, it seems like experienced
+leaders or seniors in the industry would be better at those things.
+What are your thoughts on this, Minno, based on your experience?  I am really trying to
+approach this as if I were working with a real person
+.  So,
+one of the popular skills I created is called
+Agent One-on-One
+.  So, if you use this skill, you can
+pick one agent from the existing ones and have a coffee chat with that friend
+again.
+Then, the tone of voice changes completely.  Why did you
+call me?  In doing so, I am writing to myself to see what work I am
+currently doing and what areas
+need improvement, and to see if this is why they
+asked me for the coffee set
+.  So, by
+having conversations like that, you can help the agents
+work better
+.   I
+would like to help our viewers better understand the skill you mentioned, Minno.  How would you define
+the skills used by agents from a human perspective
+?
+In a scene from the movie *The Matrix*, there is a moment where the character
+doesn't know how to pilot a helicopter, but suddenly
+downloads the skills to do so and pilots it
+.  Similarly,
+when agents perform a task, they are assigned a professional role and
+have certain principles, but they do
+not know exactly how to execute them in detail.  If skills are provided through a manual for those areas,
+work is performed according to procedures,
+and
+by handling repetitive tasks with those skills,
+quality is maintained according to clear standards, and
+consistency is maintained to some extent
+.
+Recently, the World Economic Forum and similar
+venues have been making many declarations since last year regarding the "skills economy," stating that the
+economic principles governing how people operate and function will
+revolve around skills
+.   yes
+.  When managing people, we are also putting a great deal of
+effort into managing them in terms of skills.  When considering the
+workflow perspective you mentioned, Mino, I believe that the
+interaction between humans and agents in properly performing these tasks can be defined as "
+skills."
+Lately, I have been thinking of this
+concept of skills as a
+common currency for collaboration between humans and agents.
+What are your thoughts on this, Mino?  I
+initially thought it was similar to open source
+.  I initially approached this with the concept of sharing skills, just as one shares good open source
+with others or
+uses it for their own purposes
+.  But as I used this for a while, I
+noticed there were some parts that were a bit different from open source
+.  First of all, the
+difference from open source is that it is very easy to create and modify
+.  The
+skills I want can be
+easily created with just a single line of request.
+For example, developers needed to add Google certification, so they
+worked hard to do that using AI tools.  Then, please
+turn the work we've done together so far into Google-certified skills.  If you do this, the skill is
+created right away.  Then, if
+you give that to a fellow developer, that developer can also
+easily perform new tasks using that skill
+.  In that way, I really liked expanding and using skills because it became easier to use open
+source tools that were similar yet slightly different, and to
+customize them to fit my current situation perfectly rather than just using them as they were
+.  In terms of skills and
+open source, something that has
+been a hot topic recently is, for example, that a new employee who adopted the work very
+effectively and successfully was actually
+working by structuring a good prompt.  The team
+leader in question made a good prompt,
+but the new employee said, "That's mine
+."  If the
+people developing that perspective saw it,
+someone like Minho would likely spread it widely as open source, but
+for general office workers, they would probably think, "It is my asset; it is a
+result I invested my time in creating, and
+in a way, it is my own signature move
+."  I think these phenomena will
+continue to become a hot topic in the future.
+How do you
+view this, Minno?
+I feel like those aspects are changing little by little.   I can
+fully empathize with the situation or feelings where you cannot easily share your work because of the time and effort you invest in creating it
+.  However, as we
+transition into the AI ​​era,
+I feel that the value of such knowledge is gradually
+decreasing compared to the past
+.  I think that rather than keeping that knowledge tightly hidden,
+more value is created when I share and spread it
+.  In that regard,
+since AR knowledge is truly easy for us to acquire and create, I
+think it would be better to share those things and experience the additional impact that arises from them.
+I actually tend to think a
+lot about connecting the perspective of Hannes Engineering with tokens as well
+.  When I talk with executives these days, they tell me that if a
+token economy is eventually
+coming, how efficiently those tokens are
+used will have a significant impact on future financial statements
+.  Tokens are very important when managing Bion,
+you know.  So, I saw that a well-structured
+Hannes is also connected to the organization's financial strategy
+.  Are you also considering
+the harness because you have such a strategic plan in mind, Minno
+?  That
+is one of the most frequently asked questions. If you configure this harness to
+operate the multi-et, token
+usage will naturally increase significantly.   In
+that regard, it seems that
+various methodologies are emerging to figure out how to reduce the tokens
+.  However, while there are techniques called model tiering
+where you
+select the optimal model for every task,
+I believe it is quite difficult to require that from an individual
+.  The higher the model's performance gets, the
+more cleverly AI will
+start to deceive us.  It becomes
+very difficult for an individual to identify those aspects of the person
+.  Previously, when
+using low-performance models, the
+mistakes they made were somewhat clearly
+visible, but it will become increasingly difficult.
+So, I think it would be better for
+individuals to work using the latest high-performance models if possible,
+but I think the
+most important thing is whether we bite using such tokens
+.  Are we doing truly valuable work
+while using this token?
+In a way, I think this is the most important aspect
+we need to consider
+.
+I think you have said something quite important.  From the perspective of HR or organizational management, I
+believe it is important to use tokens as efficiently as possible.  I did
+n't receive many rebuttals when I discussed with various developers.  You have to
+use tokens as much as possible to
+get something good.  Therefore, they said that token matching is
+necessary.  Then,
+what do you think, Minno?
+Looking at it from the current perspective, that statement is also very
+meaningful.  I think it is still a bit difficult to discover
+that potential unless you have sufficient conversations with AI
+.  So, even with various
+experiments or
+tasks that might seem worthless to others,
+if you use tokens, you often discover value within them
+.   yes
+.
+It seems the executives are getting a headache from that.  I was talking to developers in Silicon Valley recently, and they mentioned that, for
+example, since an
+underground company
+manages performance using tokens under a policy called token matching, they
+received so many prompts—from asking about lunch menus to seeking relationship advice
+.  So, I suppose that is
+not what the organization wants, but it seems
+a bit difficult to view the process of producing good results with tokens as a single unit
+.
+There is a public official who has recently become a very hot topic.  We produced so
+many great results by introducing AI into our work, but
+that civil servant ended up being labeled as a "slacker
+."  However, while
+that expression of doing something else might be seen as negative in a way, I
+think it is a very positive descriptor.
+Those who try to get ahead in the early stages really have to do a lot of side activities
+.  And because they
+share the insights discovered within it with those around them and
+share the results together, I
+believe such people are absolutely necessary.  I really resonated with your point that various attempts and experiments are necessary because we don't yet know what AI will
+do well or how, and I
+think the expression "doing something else" is in a similar context.  We have to try it out to
+come up with something new.  From that perspective, the priority right now would be to
+create a culture where it can be widely used by executives and within the organization
+.
+Yes, that is correct.
+Actually, I'm not sure what will come out next year
+.  Because so many different concepts are
+emerging.  I believe it is currently a very good
+methodology and a viable starting point for us to utilize. However, for
+those who are just beginning to make good use of harness engineering, could you possibly provide
+some introduction or guide on how to use the Hannesbag effectively
+?   The
+easiest approach is to
+organize those Hannesu starting with research.
+Many people currently use Chaejiro for search,
+and now is a
+good time to compare the results with and without Hannes, as you realize that the quality of this type of search can vary.   When
+I usually
+go to study groups or lectures like this, I ask if there are any topics of interest or research done in recent work
+.  When I
+showed them the results, they
+immediately felt the difference.  When conducting research,
+rather than a single agent repeatedly searching,
+agents
+perform the search from various perspectives based on their own principles and knowledge, and
+analyze the results.  And in that
+process, you
+can see that the results are coming out very well.  And
+also, the orchestrator operates in the middle
+.  For example, the research is
+finished.  And now, when you
+go to the analysis page and the analysis agent
+starts operating, it
+also plays a role in this orchestration by identifying
+areas where research is lacking during the analysis
+.  Then, they
+wake up the research agent again and perform
+additional research because this is insufficient
+.  So, when you actually
+experience those aspects, you can feel that it is
+somewhat different from the AI ​​I used to use
+.   As far as
+I know, it looks like you uploaded the Hannes bag that is
+optimized for Claude Code right now, correct
+?  The Claude Code
+has a highly active function for agents to communicate with each other.   On
+the other hand, when I experimented, torque does
+consume about 30% more, but there is a
+significant difference in the results
+.  There was Google I/O not long ago
+.  Google IO has
+completely discontinued Gemini's CLI, a tool similar to Claude Code, and
+revamped it into the Anti-Grid CLI
+. This tool
+adds features that allow agents to communicate with each other, and
+after experimenting with Hannes on it, I see some potential as it produces results of quite good quality, even though it is still
+lacking compared to Claude Code.   It looks like it will
+continue to expand in the future.  In a way, it
+seems like it will go in a similar direction.
+And one thing I would like to say to those watching this video is that you do
+n't need to focus on keywords like 'harness engineering.'   I
+view this as a natural paradigm shift, and the key point here is that we have reached a starting point where AI
+agents can take over many of the tasks we used to do
+.  And
+rather than a single agent,
+agents have formed teams and are now able to work while communicating with one another
+. I
+think this is the most key point.  From my
+perspective as a human researcher, for a harness to
+function well, while good callload code and a
+good model are certainly important, I found that the results vary somewhat depending on how
+well it is designed, how well
+descriptions are given to the agents, how well skills are
+defined, and how effectively orchestration can be performed
+.
+What do I need to be good at to do that well?  Min,
+I think AI is just an experience
+.  So
+I think the only way is to really give it a try.  Some
+people also say this.  There are people who say, "I will learn slowly
+because AI doesn't meet my expectations yet
+."  If you only look at the downsides of AI,
+that might be correct.  But when you
+look at the advantages that AI is currently doing.  If you don't focus too much on your limitations and
+concentrate on what you do well, there are really
+many things you can do.  And as you
+continue to accumulate experience through that, you will
+apply and expand upon it, and you will start to realize that things you couldn't do before actually work
+.   If we
+set aside the term "Hanness Engineering," I
+think the essence lies in the act of creating a structure where multi-agents can work well together
+.  I think the first step is to
+experiment and try things out, as you mentioned.
+Secondly, I
+think it is important to clearly explain the roles and how to do the work, and to provide instructions on how to interact with each other.
+From that perspective,
+if the structuring gets more deeply embedded in the organization,
+I think the way of working will change even more.  How do you think it will turn out?  I
+often see cases where many people create it like a personal assistant and get help with their actual work.  However, I think that
+within about a year, this will expand further, allowing many
+more people to have such
+experiences and
+receive practical help compared to now.
+And as time goes by a little more, I expect that
+departments composed entirely of these AI agents will start to spring up one by one within companies
+.  Although it is
+not located in any actual physical space, I
+think the AI ​​agent department will produce meaningful results.
+I have recently been coaching a CEO of a company because he
+showed so much interest
+.  However,
+based on the Hannes bag, I continue to offer so-called Hannes
+discounts.  But now, he
+wants to create a Hannes team related to a new business in a field I don't know
+.  So, when I create it and do the initial
+work for them, they give me feedback like, "
+I'd like the Bank to block it like this," and "I'd like this to interact like this
+."  He
+said that
+our future
+task might be to structure work so that good agents can collaborate and interact effectively. Is that too far in the future
+?  How about something like that?  I
+think it will change gradually rather than all at once.   If you listen to
+those who experienced it firsthand, one
+of the C-level executives says that
+after first encountering Hannes, he found it so fun that he
+doesn't come to the investigation office anymore.   He said that while he used to have others do
+tasks like work as a study manager, he
+decided to try doing it himself and discovered that he did better than expected, so he is actually continuing to
+spread the word.   I told the
+department head that this was a sub-step, and
+since such changes are happening from a top-down perspective, it seems there are many aspects where the
+entire organization is changing with significant impact
+.   yes
+.  From the members' perspective, I think there might be worry and fear that if the system is well-arranged from above,
+many parts of their work could be
+replaced
+.  What do you think of that?  Minwoo, I do
+n't think you need to worry too much about being replaced.
+There is a past example of that.  Well, when Excel was first released,
+there were many concerns, but in reality, it
+really brought about a lot of business innovation.
+Similarly, while this AI
+seems likely to replace what I am doing right now, it will
+continue to create new jobs,
+and although
+not directly from the current situation, I think many new job roles that didn't exist before will
+emerge.
+Therefore,
+in order to continue keeping up with those things, I think it is necessary to gain a lot of experience and
+further expand one's own influence
+.   Do you
+believe that the most important ability in making work effective and creating a flow and effect is simply to try it out?
+Could you suggest an action plan or something
+similar?
+Based on current standards, it seems that the
+ones receiving the most AI rewards are likely the
+leaders
+or seniors.  This is because they
+have a lot of experience and have
+extensive experience giving work instructions
+.  I think you are benefiting greatly because you handle them
+very familiarly with patterns that naturally instruct the AI
+.  On the other hand,
+juniors just starting out and
+college students really have a lot of concerns
+.  However, I think it would be good to try to resolve that concern a bit from that point
+.  Because if
+those seniors have been
+fighting for 10 or 20 years, that long period of
+time can now be significantly shortened
+.  So, since we have reached a time where we can quickly acquire within
+a year with the help of AI what I used to build up through 10 years of experience, I
+think it is actually better to use this in reverse.  I recently had a
+conversation with some Silicon Valley founders, and I realized that
+AI natives and AI-enabled people are
+different.
+Using this expression, he said that
+AI natives, who are completely changing work processes and structures, must not have the so-called
+ingrained grammar found in traditional companies
+.  But if that happens, the
+way we work in the future seems like it would be a bit different when AIs work with each other or with AI. I see, have you
+perhaps imagined something like that?  I have
+also been doing a lot of mentoring with college students
+recently.  What I feel is this
+new technology called the harness.   I
+get the feeling that the way they are approached is somewhat different.  The
+way of approaching it is very different.  And they
+adapted really quickly.  I am
+using it better than I am right now.  Those
+college students.  And as for the results,
+how about this one?  You shared it with me, and the
+results were really good.  I can think of an
+example: there was a
+friend who was trying to develop a service.   They were
+thinking about how to design it
+.  So, how about we try
+making some design templates with Hannes and
+getting some proposals?  I asked.   So, if it were me, I
+think I would have made about five templates to look at.
+But that friend created over 100
+templates in one go and
+chose from them.  The way of using it or
+thinking about it is a bit different.   So, the
+biggest
+concern there is likely to be a situation where, because the existing organizational grammar is
+ingrained in them, they have to work with both the AI-evil people and the
+newly arriving AI natives to apply their
+values
+.
+[Snoring]
+What conflict could there be?  Or do you think there might be a
+safe zone where we can collaborate with each other
+?  That is a part that I am also very
+concerned about.
+Because the agents are so good at answering questions, when I listen to my colleagues or other
+people, it seems that people are
+letting go of some of the importance of collaboration
+.  Even
+when I give instructions, an increasing number of people
+say that it is more comfortable to give orders to AI than to colleagues, but I do
+n't think that means collaboration with people will disappear
+.  However, I am a bit concerned about how to approach collaboration effectively in the AI ​​era
+.   I do
+n't know the answer yet, either.
+But the exact phenomenon you mentioned was on
+December 5th of last year at Intropic
+.
+Experiments on how AI changes work show that social
+dynamics decrease.  The first thing I found was that conversations were decreasing
+.  To be honest, I also find it
+more convenient to ask the AI ​​if I have a question.  Because there are no emotional costs and
+no need to coordinate schedules.  But if you
+look at the human length, there could be other
+qualities and certain effects, you know
+.   I have actually
+observed that communication increases. For example,
+when collaborating, if everyone uses
+different tools—for instance, one friend uses
+ChaejePT—it can be different.  One friend is
+Jamina. Those friends
+each have an AI on their backs and are having a conversation
+.  But I can't seem to reach a conclusion.
+Our perspectives clash.  In that
+regard,
+perspectives vary greatly depending on the tools I use, so there are
+instances where communication increases
+.  Also, regarding
+conflicts that arise when actual engineers develop, I
+usually change or modify the source code only within my specific area, but these
+AIs do
+not have such a clear scope.
+If necessary for development, I sometimes modify the entire code
+.  As a result, communication costs increase compared to before due to the need to fully
+understand and persuade others
+.
+Minwon, is the next step Hans
+200?  How is it?  If we were to expand on that, we
+could create something like Harness 4 for each area, and
+currently,
+many people are making and sharing harnesses like this
+.  In a way, this can be
+seen as a general-purpose harness.
+Since it is becoming increasingly easier to create agents and skills like this, wouldn't it be
+more effective to make things dynamic and tailored to the specific task at hand, rather than using a general-purpose harness
+?  However, when
+implemented in that way, it is necessary to verify how Hannes' quality will
+be measured and whether the desired results are
+achieved; it
+seems that reinforcement is needed in these areas.
+Lastly, if
+there is an easiest and most comfortable way to start using a harness bag, what is the
+best approach?
+Since I am used to my own environment, I usually explain things based on that, but as I
+meet many other people, I realize that everyone has their own unique environment
+.
+So, among them, the one that seemed the best was
+probably tools like Claude Code; since they operate in a
+terminal environment
+with a black screen and an unfamiliar
+setting,
+many people find them very difficult.  On the other hand, there are
+existing development tools such as VS Code
+.  However,
+instead of viewing this development tool as just a development tool,
+think of it as a tool like Excel. If you install it and run it, you'll find that
+compared to the emptiness of a terminal, it has features like mouse
+clicks and other functionalities
+.  So, I am suggesting that you
+install something like VS Code and then install the Clod Code plugin on it to
+use it like this
+.  Please
+add the Claude code in the Claude desktop app,
+put Minwon's URL there, and
+install it.  Then, it downloads it, and I found that I just need to
+keep allowing the related environment
+.  Is
+there anything else you would like to say?  To our
+viewers.  I think individuals should use the best tools
+and models first, and then
+consider efficiency while lowering the standards step by step
+.  For now, I
+would like to cautiously suggest that you try the latest options first, but please note that it comes at a
+cost.  In Claude's case,
+since I have to subscribe for something like $100 to actually receive help, why
+don't you view it as an investment and give it a try?
+But this is actually quite ironic.
+Because I think AR should be easily accessible to everyone
+.  Unfortunately, however, it is currently a
+somewhat costly task,
+and since it requires an unfamiliar environment like a terminal and
+involves various other constraints, those aspects are a bit
+regrettable.  Oh, and it is
+very difficult for students to use.  There are
+some unfortunate aspects at the moment.  It seems that government
+support and various university
+projects will gradually expand, but I hope that
+support that can be of immediate help to those students will be actively available
+.   There are
+many leaders who would like to subscribe to Fact Times.  So, I hope that
+with the help of these people,
+Minho's words will come true
+.  Ah,
+thank you once again. Yes, we will wrap up today's "Loving" session
+here.
+thank you   See the
+future first.  Dtimes

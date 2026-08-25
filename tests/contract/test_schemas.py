@@ -45,7 +45,7 @@ def test_total_json_schema():
             
         # 4. 데이터 정합성 (sequence_id는 양수)
         assert sample["sequence_id"] > 0
-        assert sample["sns_platform"] in ["threads", "linkedin", "x", "twitter"]
+        assert sample["sns_platform"] in ["threads", "linkedin", "x", "twitter", "youtube"]
 
 
 def _local_image_path(media_url):

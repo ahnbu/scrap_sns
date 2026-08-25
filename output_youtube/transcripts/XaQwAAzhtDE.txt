@@ -1,0 +1,573 @@
+share this prompt that I put effort into making after work.   It's
+not like it's a job for life, and I'm just going to work there for a few years and then quit
+.  A
+newbie who never shares the prompt.  What should I do?  Will a
+result like this—where a line or two of text is written as if it were some kind of tremendous competitive edge—
+actually be recognized as my own work?   Is it
+possible to refuse well without causing friction in a relationship? If you try to
+understand the psychological state of both sides,
+deep down,
+yes.  hello.  I am Attorney Ryu Jeon.
+Recently, there was something that
+became a huge issue in an office worker community
+.
+What should I do about a new employee who absolutely refuses to share their prompt?  It
+was a drawing titled...
+AI has been introduced company-wide, and the
+youngest employee utilizes it exceptionally well,
+producing outstanding results very quickly.  However, the problem is that when other team members
+ask about the prompt, he doesn't share it
+.  Meanwhile,
+complaints continue to come in from other employees
+.  After much deliberation, the team leader
+asked if he could possibly share the prompt, but the youngest member ultimately refused despite the team leader's request
+.  This alone
+gets tens of thousands of views.
+Hundreds of comments have been posted by you all.  Uh, the
+original text is this part.  Later, I asked again in the
+team chat if they could share their work for the
+team members to use because their results were good, but they
+refused, saying, "Ah, that would be a bit difficult." Then, when I
+asked again in a private chat, they
+refused once more, saying, "This is my personal know-how that I have developed over a long period of time by studying on my own and dedicating time to it on weekends and after work. I don't think it is right to share this with others for free without any compensation."
+Regarding these two opposing positions—the team leader's position and the employee's position—which one do you sympathize with more
+?  I think this isn't so much a matter of who is right and
+who is wrong, but rather about the
+perspective from which you view the problem
+.  How does the team leader turn out so well
+?  hmm.  Let
+'s share some know-how on these things together.  I think it will be necessary for our organization's
+work performance
+.  That is our position.  The new
+employee's position is that they are somewhat reluctant to simply hand over the deliverables for
+various reasons
+.
+Actually, I can
+sympathize with both sides to some extent.  It’s
+a bit frustrating from the team’s perspective.  Right?  hmm.
+Because I believe I am making a legitimate request to improve the overall productivity of the company's team
+.  Also, they requested a prompt that the
+new employee is already using for company work
+.  And
+[sniff] I also think the
+newcomer is being a bit selfish for taking all of this for himself
+.  And it
+seems like you might also feel pressure to reduce your dependence on a specific person.  On the other hand, new employees might
+not quite understand the team leader.   Please just
+share this prompt that you put effort into creating after work.
+And without saying anything about any compensation
+.  Besides,
+it's not like it's a job for life; I'm only going to work there for a few years and then quit, so do
+I really have to share this
+?  uh.  And from my perspective,
+this is one of the few
+weapons I have to create a differentiating point, so
+aren't I losing it?
+I mean, you might have thoughts like these.  Please think about this for a moment
+.
+What kind of comment has garnered the most agreement in this community
+?  Should I support the team leader?
+Or should I support the new employee's story
+?  There were several, but this is
+the comment that received overwhelming support.  Study.  It’s
+bad that the youngest one won’t tell you, but if you’re going to be so tacky as to ask them that and get
+rejected like that, just study.  There doesn't seem to be anything about a villain or anything
+.  This
+was the comment that received the most agreement from you all by an overwhelming margin.  I was a bit
+surprised.  In most of our
+culture, I expected that comments expressing a
+somewhat negative view of a new employee who appears a bit selfish would receive the
+most empathy, but that was not the case
+at all in this community
+. This is
+one of the aspects that was very different from what I expected
+.  Of course, there were comments criticizing the new employee's attitude, but the
+comment that received overwhelming agreement was the one conveying the
+message that if they were dissatisfied, they should just study more on their own.
+Now, before we take a closer look at these issues,
+how can we assess this from a legal standpoint
+?  In particular, there
+are three perspectives.  The first is whether
+copyright is recognized for AI outputs?
+Second, will copyright for the prompt
+be recognized?  Third, let's take a look at the
+concept of "business storage"
+one by one
+.   First
+of all, before talking about prompts, it's the one
+created by generative AI, right?
+If we type out the entire prompt and an AI output is produced, will copyright actually
+be recognized?  What do you all
+think?  hmm.  I wrote the prompt,
+so the result came out.  My
+effort went into it.  Right? You need to consider whether this
+result will actually be recognized as my stored property.
+Fundamentally,
+we
+need to re-examine the concept of "stored property" under copyright law.   A
+stored work
+refers to a creative work that expresses human thoughts or emotions.  And
+the author refers to the person who created the stored work
+.  The key is
+these two concepts: that it is a creation made by humans
+.  Right?  Therefore, the
+Storage Fist method is basically designed on the premise of creation by a natural person
+.  Therefore, under current laws, it is currently difficult to protect
+such results and outputs created by non-human AI as
+stored materials
+.  For
+your reference, there is a concept we need to distinguish:
+unlike pure AI output, there is a growing interpretation that copyright can be recognized for AI-utilized works—that is, within the
+scope where human creative contribution is acknowledged
+.  For example,
+I write the entire draft of the manuscript
+.  There is a growing view that if the
+final result is produced by having AI make modifications or supplements to this, the
+saved work should be recognized within the scope of human creative contribution
+.  However, since
+there are no explicit provisions under the current Copyright Act, it is an
+area that requires legislative safeguards.  Now, a
+separate question may follow regarding whether the prompt I created to elicit the AI ​​output—which is not the AI ​​output itself—can be recognized as a copyrighted work
+.  Under copyright law, a stored work is a
+creative work that expresses human thoughts or feelings.  Right?  I
+definitely created my prompt.  Right?
+Therefore, the concept of humans is
+satisfied and there are no problems.  Now,
+we can think about the concept of a second creative work.
+Regarding the requirement of originality for a stored work, the Supreme Court has consistently ruled that for originality to be recognized, a
+work must
+not merely be a mere imitation of another's work, but must contain the
+creator's own unique expression of thoughts or emotions
+.  Ultimately, the key to the judgment may be whether the prompt I created
+satisfies the level of originality recognized under Supreme Court precedents
+.   Let me give you
+three or four examples
+.  Please draw a cute cat picture in a simple command style
+.  It
+appears to be at a level that cannot be recognized as firewood.  Please summarize the one-sided,
+conventional expressions on one A4 page
+.  We will
+draft the same contract regardless of who writes it.  It will be difficult for us to have the level of creativity
+discussed by the Supreme Court recognized with mere listings of keywords
+.   If we look at a
+slightly different precedent once again...  The court
+ruled that expressions that are bound to be the same or similar regardless of who writes them—that is, expressions that do not reveal the creative individuality of the creator of the work—cannot be considered as works with creative potential
+.  Now, if we
+think about it again, imagine that the
+creator's concerns, ideologies, thoughts, and
+emotions—all directly generated by a human—are all inputted, and a
+specific prompt, generated in seconds, is
+written to fill several pages of A4 paper
+.  In such cases,
+I believe that since originality is recognized as a creative
+prompt, there is a
+possibility that it will be judged as a stored work with recognized originality in the future, even though there are no Supreme Court precedents yet
+. As this matter is
+still under various discussion, I suggest that you
+assess this possibility yourselves
+.  The third concept
+is the concept of a work created in the course of employment.
+Article 2, Subparagraph 31 of the Copyright Act
+defines a work created in the course of employment as a material created by a person engaged in the business of a corporation, etc., under the planning of a corporation, organization, or other entity, and if such material is recognized as a work created in the course of employment, it becomes the property of the company
+.  However, if you interpret work-related
+stored materials too broadly,
+various problems will arise.   Right
+?  If the person who
+produced such goods through their own efforts were to have them
+all recognized as goods created in the course of business and
+become the property of the company, it
+could lead to various
+problems and lack of motivation. Therefore, the Constitutional
+Court has ruled that goods created in the course of business must
+meet very strict requirements to be
+recognized.   Only when
+all five requirements mentioned here are met is it recognized as a work created in the course of employment, and thus
+ownership of the work
+becomes the company's property.  Now, if we apply this to option 4,
+although we are applying it based on extremely limited information, we
+can examine a few points
+.  First, it is naturally not easy for
+AI outputs generated through prompts to be recognized as stored assets
+.
+And regarding the second general prompt, it is
+not practically easy to have the originality, which is a requirement for a stored item under storage rights law, recognized.  Regarding this matter, I
+think it would be more appropriate to approach it from the perspective of organizational culture, dialogue, negotiation, and communication strategies, rather than from a legal standpoint.
+Okay, first of all, what's
+so great about the AI ​​prompt?  The temperature difference is
+considered to be much greater than expected.   In
+the past, we had the concept of "Excel seniors," right?   Those
+seniors who were really good at Excel.
+And if we
+compare new employees who use AI prompts very well recently,
+we can see that the perception and evaluation of them are different than expected
+.
+Seniors who were good at Excel in the past will first gain a
+good reputation regarding that.  He also
+received respect and was treated to lunch,
+and he could see that the lifespan of the skill he possessed was
+relatively long
+.  And when this is shared, I am
+actually grateful, but even if it is
+shared, it still
+takes quite a while for me to master the skills, so
+I am still the expert.  The
+significance of my know-how is that it
+clearly helps solidify my position within the organization.
+But just because
+there are new employees who use AI prompts very well recently, does the
+company recognize their value to that extent
+?  There are
+many cases where that is not the case, and the
+lifespan of one's technology is not as long as expected
+.  AI is changing very rapidly, and the
+prompt environment is also changing significantly.
+Even after sharing, the feeling is still less like "I am the
+expert" and more like "Oh, will it be immediately
+copied and replaced?"  These
+psychological tendencies are strong, and it
+seems there are surprisingly many cases where people view their know-how not as something that helps solidify their standing within the organization, but rather as a quiet weapon to use when changing jobs. If we examine the psychology
+of these two individuals in
+more detail—specifically the
+employee who refuses—it
+appears that about four points can be identified.  The first reason
+seems to be the biggest resistance to free sharing: "Why should the company take the results I spent my time creating for free?"  Secondly, since they
+don't even acknowledge the effort I put in,
+dissatisfaction regarding my need for recognition builds up.
+Third, and this part in particular seems to be a big problem, is that it is
+not fair
+.  hmm.  It seems they have a strong aversion to the idea of ​​"Why do I give away so much, but what do
+I get in return?" The
+fourth point is [snorting]: "If
+I ultimately give away everything, won't my
+bargaining power and value eventually decrease, and won't I become replaceable
+?"  It seems the anxiety about losing competitiveness and being replaced is
+much greater than expected
+. I suspect that what is ultimately hidden is
+not so much about being stingy, aggressive, or selfish, but rather rooted in emotional anxiety and dissatisfaction—such as a sense of hurt from not being acknowledged, and the feeling of being deprived
+when sharing something with nothing in return
+.  Conversely, if you consider the
+team leader's mindset, their
+position is more understandable than you might think.
+The first is that the sense of responsibility and
+pressure on the manager is greater than expected.  The organizational pressure from upper management to make the
+entire organization use AI effectively is much
+greater than expected these days.  Also, the
+team leader is feeling very uncomfortable because he is constantly under pressure in the middle of complaints from junior team members who say it is inconvenient that the employee does not share the Prompt.  The
+pressure regarding the second team's performance must also be intense.  We need to
+demonstrate the results of AI implementation to upper management, but we are having a really hard time managing this
+.  Third, our team tries to
+foster a collaborative atmosphere, but if a
+new employee joins in this manner, it will
+feel like they are ruining that spirit
+. Fourth, we might wonder, "Do
+we really need to rely on just one person like this?"  We have to rely on a
+new employee like this with just a prompt
+.  You will
+also have thoughts like this.  As for the fifth point,
+honestly, I'm not sure either. I'm not sure
+how I should utilize this AI,
+and I
+suspect the team leader's anxiety about falling behind might be greater than expected. If we examine the psychological states of both sides,
+deep within their hearts lies a sense of insecurity regarding their own value and
+usefulness
+.  Although we express it differently, the
+truth is that we are all experiencing
+great anxiety in this unpredictable and rapidly changing era
+.
+You are all anxious, and actually, I am
+anxious too.
+We are living in an era where everyone is anxious, staggering and unable to keep their wits about them because so many things are changing so suddenly and so quickly
+.  But there is one thing you all
+need to consider: this new hire is
+basically a hard-working person.
+He is a friend who is troubled.  He appears to be the kind of friend who
+seriously contemplates his competitiveness and usefulness and
+possesses an attitude of striving to develop them.  And the fact that
+other team members and the team leader continued to
+request limits on this prompt to such an extent indicates that
+the gap is so significant that they
+themselves recognize and
+acknowledge that this person's capabilities are necessary for our organization and our team.
+We cannot deny this point
+.  I think the worst attitude regarding this would be something like this, and there was a
+comment like this on a post in that community.
+Hehe.  I understand how you feel, but if it were me, I would kick you out
+of my team.  Organizational culture can fall apart in
+an instant, so perhaps
+because I am a newcomer, writing just a line or two of prompt text
+feels like a huge competitive edge
+.
+A lot is contained within these two or three lines of text
+.  Right?  hmm.  The first is
+just blatant disregard for the newcomer.
+Second, they describe a newcomer's prompt engineering
+ability as if writing just one or two lines of prompt is a
+tremendous competitive advantage
+.  Right?
+Non-recognition of the value of the impact.  The
+somewhat unreasonable attitudes contained in that expression, "I think I'll hit it" from the third team.  hmm.   The
+organizational culture this person is talking about does
+not fundamentally appear to be a culture of recognizing growth, communication, and opportunities.  It is interpreted as signifying an organizational culture of mutual
+obedience to superiors' instructions and orders
+.  However, the problem is that
+if you continue to push this new employee with this kind of attitude—if you act petty and
+selfish—the new employee will
+eventually leave
+.  hmm.  Right?
+I believe that a new employee who has more outstanding qualities, is concerned about their own growth, and carves out time to develop those areas is much more likely than expected to choose a quiet resignation when driven to a dead end
+.  If that is the case, I also have concerns that eventually
+, all those friends who can provide new stimulation will
+leave, and
+only those who cannot stimulate each other will remain in the organization
+.  I
+looked into a specific case and
+asked some developers for their opinions. I called and met with them to
+discuss how they might view this issue, and one of my very close developer friends told me
+this.
+One thing to note is that there is a culture
+among developers of making their code open
+source.
+Through open source shared in this way,
+some people receive help, while others
+further develop it.
+However, whenever that happens, developers usually
+press "Like" or "Fork" when they receive help or when someone shares outstanding open source
+.  And just like when a master's or
+doctoral thesis is cited, within
+that culture and community, it becomes established
+as recognition for one's open-source code.
+Furthermore, by receiving feedback such as
+finding errors or suggesting improvements,
+people provide
+practical help and
+mutual emotional acknowledgment.
+In other words, they voluntarily share open source because they believe that sharing code provides a
+clear emotional reward and
+is more beneficial in terms of their influence
+.  This is
+not about disclosing your open source code under duress or orders.
+Ultimately, I
+believe that sharing is more beneficial to me in various ways, so I
+share even if I am told not to
+.  Right?  Since
+we have only been
+living in the AI ​​era for a few years, I
+believe it will take a little more time to create this kind of atmosphere and organizational culture. As we are
+currently in the early stages and transitional phase, I
+suspect that various concerns and conflicts are likely arising here and there within the organization.  Ultimately, I believe that if these four
+patterns create a virtuous cycle, it can support a culture that benefits both me and the
+organization
+.  Therefore, trust is
+necessary, which leads to voluntary
+sharing. We must acknowledge that voluntary sharing, and this
+acknowledgment should
+not be merely verbal; it must be followed by emotional and tangible
+rewards. This
+rebuilds trust, which in turn leads to the
+sharing of developed content. I think
+we need to give
+some thought to how to create a virtuous cycle of these links of trust, rather than viewing this
+person personally as an enemy or
+selfish.  The attitude is bad.   We should
+not push this too hard; I
+believe that this will be repeated many, dozens, or even hundreds of times in the upcoming AI era
+.   I would
+like to speak a bit about this attitude and communication style to both the new employee and the team leader.
+Regarding the new employee flatly refusing the team leader's repeated requests by saying, "I think that would be
+difficult,"
+comments in various communities have criticized the new employee's
+attitude, saying things like, "The new employee has
+n't adapted to professional life yet."  I don't know well.   There is
+no concept.  There was actually
+quite a lot of feedback like this.  In my opinion,
+new employees also
+need to give some thought to their attitude and communication skills
+.  Let's try
+thinking the opposite way.  When do you
+feel bad when you are rejected
+?
+I found that a bit like that.  I felt
+a bit bad when I was rejected like this
+.  The first is when I gave it some
+thought and asked for a favor with difficulty, but
+they refused without even properly considering it
+.  The second is when, after I
+made a request, they puff out their chest,
+think they are superior, and
+slightly belittle or ignore the person who refused.  The third is
+when you react emotionally and recklessly without any standards.  I realized that it feels
+really bad when I get rejected in situations like this
+.  So, let's think about this
+from the opposite perspective and consider
+how a new employee
+can politely decline something without causing friction in relationships
+.  The first step
+starts with your awareness of rejection.  Refusal
+is not an unreasonable action.  I believe that refusal is
+fundamentally a form of work coordination
+.  As we go about our work, we
+cannot say yes to everything the other person says.  Then you end up
+falling into a "good mountain" complex
+.
+I fundamentally believe that refusal is an important process in managing work, and that being able to refuse well is also a crucial competency
+.  For the second one, I
+think we need to take a little extra time.
+Barone or not.  Both are
+problematic.  If I immediately speak up when the other person makes a request, a
+problem arises where I end up sacrificing various inner time and precious things to take responsibility for saying yes.  And
+if you refuse immediately as if you can't cut them off, the other person will feel
+bad.  Then, the attitude
+becomes an issue.  I think it would be good to take a little more time and
+approach it this way
+.  yes.
+Instead of saying "I will try" reflexively, I will check and let you
+know within the feasible range.   If you don't mind,
+could I take some time to think about my current tasks and priorities, organize my thoughts, and then get back to you?
+There are many cases where taking a little time and speaking slowly in this manner actually comes across as much more professional than accepting immediately.  The third
+method is to accept it on a conditional basis.  Team Leader, I’ve given some
+thought to what you mentioned.
+How about we proceed by sharing the core principles and keywords for creating prompts during next week’s town hall meeting?   I am saying that
+my prompts are optimized for the AI ​​I use, so the
+results may differ even if others apply them as is, and since
+copying and pasting them directly involves
+specific aspects such as my personal writing style and word selection, I think it would be more helpful to share the
+core principles of prompt engineering and key
+keywords instead
+.  If you listen to it, you'll find it persuasive
+.  It’s not that I unconditionally refused; after
+thinking about it,
+there are principles to the methods of creating it, and I will
+share them with you, but even if you try to copy the writing style,
+it might not be helpful anyway
+.  Right?  If I do
+n't say yes to everything, but divide it up—saying
+yes to about 35% and
+politely declining the rest—how would the other person
+feel?  Ah, but this friend is
+making an effort.  It makes you think that the attitude isn't that bad
+.
+And it is not a
+bad idea to express your honest feelings when refusing
+.  And Team Leader, to be honest,
+personally, I feel a bit uncomfortable sharing the prompt that I spent so much time thinking about and creating over the weekend and after work with everyone
+.
+You are welcome to use expressions like this.   hmm.
+Conveying my disappointment or concerns politely in this way actually helps make the other person feel
+indebted and
+helps build persuasiveness.  I think it is also good to
+talk about reasonable compensation as the fifth point
+.  Also, if possible,
+could you please consider a way to acknowledge my contribution?  That way, I
+think I can stay continuously motivated as I reflect on how I can put more effort into things. If
+you all learn these five patterns of refusal and actually put them into
+practice, I believe you will be able to
+refuse effectively without damaging your relationships
+.  Conversely, it is also necessary to consider the matter from the
+perspective of organizational culture and the team leader
+.
+I think the worst approach is something like this.  Are you
+working alone?  hmm.
+Don't you have any concept of teamwork?  Right?
+I think we can hear things like this.  You made this while working at that company, did
+n't you?  That company is a beggar.  Is that yours
+?  You could ask like this, or I'm doing this just for your own
+good.  Are kids these days
+naturally that calculating?
+Asking like this completely corners the other person
+.  Right?
+And then, you can visit a day or two later
+.  Team Leader,
+whenever I have something to say, it has
+never been anything good.  You guys, right?  hmm.
+Therefore, I need to consider how to approach this wisely and
+how to create an atmosphere within the organization where we exchange values, rather than being someone who unilaterally steals the knowledge and know-how of others
+.   The
+core concept, from your leadership
+perspective, is the concept of pre-persuasion.
+What is that concept, everyone?  You must be
+persuaded before you can persuade.
+Negotiations must take place before negotiations can begin.  Right?
+From the perspective of how to design a framework to persuade the other party, you
+can consider four patterns
+.  The first step is to acknowledge it first.
+And the second reward.  Third
+range. Fourth record. It would be helpful if
+you could remember and apply the Yone Yone patterns
+.  Let me start with an example of acknowledgment
+.  It is to first acknowledge [Team] that
+as my official expert, I consider you to be a specialist in AX
+.  Right?   I will
+definitely reflect these aspects in both compensation and performance evaluations, and I will
+conduct an evaluation at the end of the year.
+Regarding the scope,
+instead of disclosing everything unconditionally, could you please share it
+step-by-step, starting with the core principles or samples
+?  I would like
+you to remember and try using these four patterns, such as clearly leaving a template and recording who made it so that credit can be given
+.  Let me give you a slightly more specific
+example.  If the other
+employee is, for example, Jeong-min, I would say, "
+Jeong-min, you've worked really hard learning on your own even after work, haven't you
+?"
+First is emotional acknowledgment.  Right?
+Everyone, even those with an MBTI T personality type
+must start the first sentence with F.
+Second, I acknowledge Jungmin's expertise
+.  I
+know very well that he is more excellent than anyone else.
+It includes a sentence about respecting values.
+Third, I know it must be uncomfortable for you to decline every time, Jeongmin, but
+would it be possible to share the core principles of creating prompts and how to write them for specific cases, rather than the entire prompt?  I
+think it will be very helpful to the employees, and it will also help Jeongmin produce good deliverables for the project he is involved in.  These are the requirements for each stage.   Right
+?  We can also mention specific compensation
+.  Of course, I will record these aspects and Jeongmin's
+contributions, and take them into account for future
+evaluations.  Additionally, I am
+planning to request the HR team to provide AX training opportunities so that Jeongmin can further develop in this area.   It is
+referring to the fifth future
+.  I believe that if you continue to think together like this,
+Jeongmin will
+become the standard for our team when it comes to AI utilization
+.  If you mention it to this extent, I
+think the conversation could become a pattern where we share sufficient mutual understanding and exchange value, rather than an atmosphere of taking and being taken from one another in various ways
+.  Basically, negotiation
+is an exchange of value, not a command.   The
+other party moves when they feel value.
+In that way, you need to first identify the other person's core needs
+.  In particular, we
+need to consider the concept of problem solving that makes me feel like I am the party solving the common problem, rather than an atmosphere where we are growling at each other and taking and being taken from one another.  And persuasion, as always,
+begins not with information, but with emotion.  Please keep in mind the pattern of first
+building rapport and acknowledging, then
+sharing information and logic,
+and finally leading to action
+.  As expected, I
+believe that negotiation theory in the AI ​​era also begins with two things.   You must have
+likeability and trust capital
+.  Logic and information are now
+replaceable.
+Negotiations as a trusted messenger accelerate the speed of transactions and
+reduce transaction costs.  How can I make
+that person trust me when communicating within an organization in this capitalist era
+?  You need to consider whether you can make that person
+think favorably of you
+.  Therefore, I
+think it is necessary for both of us to communicate within the indoor connection as trusted messengers.   yes
+.  So far, we have discussed who possesses the kind of proportion that
+could easily be found around us in the AI ​​era,
+whether or not they can provide it,
+and also considered the organizational
+culture and communication
+aspects related to this
+.  Actually, I do
+n't think this is a question with a single correct answer.  And it
+is a problem that cannot be solved solely through legal means.  Fundamentally, we need to consider fair
+recognition, compensation, organizational culture,
+and the link of trust together
+.  I think the best approach would be to apply things step by step,
+one by one, to create an atmosphere where we
+can generate value through mutual synergy
+.  The same goes for the best negotiations and the best conversations
+.  I hope you will engage in negotiations and conversations where you ultimately have
+nothing you want and can preserve your relationship with that person
+.  This has been
+Attorney Lee.  no see.  [music]

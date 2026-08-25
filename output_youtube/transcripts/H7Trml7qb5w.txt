@@ -1,0 +1,907 @@
+The department head's position is in jeopardy
+.
+Developers aren't developing.   My
+workload has increased.   My
+workload has increased.   I'm
+just alone.  But he is the team leader
+.   I asked
+which team leader you were.  It has become an
+illusory era where humans alone can no longer outperform machines.
+[Music]
+Hello.
+A time to freely imagine the post-AI era.
+We are Han Seok-jun, here at the end of AI.   My name is
+Jo Aran.  Nice to meet you.
+With the emergence of AI, everything that humanity has taken for granted until now is
+changing.
+There are also people who feel fear regarding the question of how human life will change after AI.
+There are also people who feel anticipation.  So
+today, we will be talking with SK, who are more sincere than anyone else about AI
+.
+In fact,
+there are also semiconductors needed for AI learning.  Well,
+there are also data centers that operate 24 hours a day.
+[Music] Then, since heat is generated,
+cooling technology to dissipate the heat is also necessary. And there must
+also be energy solutions to support all of this
+.  SK is the one building the AI ​​infrastructure from
+start to finish for [music] like this
+.  It is said that SK is going
+beyond technology and contemplating humanity and society as well
+.  I hope my
+raw and unrestrained imagination can be at least a little bit of an
+answer to [music] for you.
+So, today's topic is 1.
+AI and 1... well, in a way, it feels a bit
+obvious, as it is actually a
+topic that has already been covered so much and discussed extensively in various videos
+.  We have
+talked a lot about certain
+jobs disappearing, being replaced, and
+remaining.  Not things like that.
+Beyond that, I would like to talk about
+what work means to humans, and what will and will not change in the future
+.  So, we have invited
+people who are well-versed in today's work
+.
+hello.  I'm in my 17th year as a publishing
+marketer
+. Ah, you've increased in such a short time.  It's been a while since I got to know the department head
+.  yes.
+[Laughs] I
+'m Jo Aran, working as a publishing marketer.
+And you've probably seen this person a lot in videos as well
+.  Writer Song Gi-ryeong.   yes
+.  hello.  This is Seonggyul.   I am a
+mind miner who digs into people's hearts,
+and now I am translating
+[Music] into Sicheonhae, a bold initiative that digs into the heart of the times
+.   Now
+, this is Professor Hwang Seong-hyeon.
+hello.  I am Professor Hwang Seong-hyeon, a human resources expert with 34 years of experience
+.  Nice to meet you.
+Now, lastly, writer Kim Ye-ji.  He is the person
+among our cast members who has experienced the widest spectrum of
+jobs.  He is
+someone with a lot of very unique experiences.  He has
+been a janitor for 12 years.  I have also been active as an
+illustrator under the name Kim Gaji for 10 years
+.  Welcome.
+hello.  I am
+Kim Gaji Kim Yeji, an artist who cleans and draws
+[Music]
+.   So
+, today we have experts from a truly diverse range of
+fields joining us
+.  HR cleaning creation of lectures and publications
+.  How about you all?  It
+looks like a really multi-dimensional story is going to come out, doesn't it?
+Okay, so first, I’d like to talk about the first story.
+What book did you bring with you
+?  Uh, since
+I also work at a publishing company, I
+prepared a book to try doing my main job a bit.  We're going to talk about work, you know
+.  So,
+the work that immediately came to mind was the
+author's *The Remaining Days*, a
+work about the family ritual.   It is a
+story about a protagonist named Stevenson who has served as a butler his entire life and looks back on his experiences at the twilight of his life. Stevenson spends his whole life deeply
+fixated on the idea of ​​what a perfect wife is.
+So, the episode from his life that he takes the most pride in is that even on the day his father passed away, he suppressed all his emotions and carried out the work without even observing his father's customs in order to perfectly execute the ceremony taking place at the mansion.  The
+character is so rigid and narrow-minded that he takes pride in living up to his reputation as a perfect butler.
+However, since this is a
+[musical]
+piece where he reflects on whether the professional value to which he dedicated his entire life was truly worth it, I thought it might offer something to think about for us today, so
+I decided to raise this topic.
+[Music] Have you ever had an experience like this where your work or something you took for granted was turned upside down
+?
+I think that way these days.  Ah, I'm so glad I
+was born early.  [Laughs] You
+were at Google back in the early days of AI, right when our AlphaGo was locked in a fierce battle with Lee Sedol.   yes
+.  I was there even before that.   The
+things I did back then
+were like this.  If we ask a machine about this emotion we are having right now, will it be
+able to answer?  This
+was the main topic.  Of course, you couldn't
+do it back then.  So, what is the way forward
+?  Let's prepare this.
+That is actually deep learning and machine
+learning.  So I started those kinds of works back then, and looking
+back now, I
+realize that was when things were just starting to stir.  Personally, I get the feeling that in just 10 years, it has grown from having
+intelligence that was almost like a baby or just an animal back then to
+now being almost at the level of a Ph.D.   Do
+you have any?  Author,
+I don't have any yet, but in *Sangjakil*,
+AI has replaced drawing so much and even
+written scenarios, and there are
+many such things now. You know how they talk a lot about how blue-collar jobs will survive in the AI ​​era
+.  But I saw a
+humanoid named Helix that came out recently
+.  But he's doing such a great job
+.
+Cleaning work, which was once said to be an area that AI could not handle, could actually be
+replaced.  This
+was a bit of a surprise to me.
+Ah, is the blue color being replaced as well?   Would
+n't it turn out that way?  But right now, I do
+n't know what AI will replace.   It seems like
+saying what is safe and what is unsafe doesn't really have much meaning anymore
+.  I actually hear that
+creativity is hard to replace, but when I
+ask someone, they often give
+answers that are much more creative than mine [laughs], so that makes me
+question it a bit
+.
+So these days, AI does work that a fairly smart employee would have likely done in the past
+.  I heard that in your consulting field,
+three people are doing work that used to take over 30 employees to do?   yes
+.  In fact, there were
+35 people in the six months or so that I advise on the company's annual funeral service.
+However, I recently met with the representative and
+discussed the matter. Now that only three people remain, the
+three agents have designed the middle section to allow them to
+work among themselves, and I asked
+how much
+freedom the agents should have.  So, do
+as I say.  There is
+no freedom, either.  Your degree of freedom is about 50%
+.  You do as you please.
+[Music] is playing the role of defining things to that extent, and
+since AI isn't perfect yet, those three
+people are currently verifying the results in their respective areas, but I do
+n't know how long this will last.  It
+seems that is the reality right now.
+Today, labor costs for 32 people
+were reduced.  It’s not like they just paid him less than his wages; he’s
+doing much more work, and he
+can do much more.
+In the publishing industry, recently there was a publishing company called "Ttak-kkak Publishing"
+[laughs] that published a whopping
+9,000 books in a year, and it
+became a huge sensation.  Even though Nisa is
+considered a major publisher, as you
+know, releasing about 200 titles is
+actually a lot.   There are
+n't many publishers that produce 200 titles, right?   yes
+.  Exactly.  I remember it becoming a
+huge sensation that they churned out 9,000 titles when releasing 200 is considered a very tight schedule; they even
+appeared on the news and gave
+interviews.
+However, since the quality of the published materials is
+n't that great yet,
+people
+seem to have just laughed it off as a mere happening, but I
+find it a bit scary.  It feels like the
+traditional meanings of jobs and the scope of work that we used to think of are
+all becoming
+meaningless. Honestly, I
+can't really imagine what will emerge, but it is so
+obvious what will disappear.
+It's scary.  So, you didn't start cleaning just to prevent this situation from being replaced by AI, did you?  Right
+?  Because that didn't exist back then
+.   yes
+.  yes.  It was
+16 years ago when I started, and back then, the
+organizational culture just didn't suit me.
+So, as I left the company,
+I needed to make a living as an individual
+.  At that time, cleaning work was
+cost-effective.  Just yes.  You can
+make good money relative to the time invested, but
+young people these days are all about cost-effectiveness.   In
+that case, I thought, "Ah, if I just discard other people's opinions,
+this job suits me perfectly
+."  So that’s how I ended up starting,
+but ironically, now that time has
+passed and AI has become a major topic, there was something that really
+became a hot topic.  So I
+thought it was a bit fun.
+New jobs are being created anyway
+.  Depending on that work, the form of work is
+also becoming very new.  But
+some people are also
+very afraid of becoming new like that.   yes
+.  It feels like something that always happens
+.  You have to sow seeds and plow, and at
+first, you probably did that by hand.   As they
+went through the process, they probably realized it was such a difficult
+task that they created a tool.
+A friend named Homi.  Since it's a bit late, a
+cow would be better than me going there.  Well, the
+tractor came out after a while.  In that
+way, we are constantly
+creating something to do it better
+.  But the current issue is that it
+seems like too many tools have been released at the same time.  So, this person had spent their whole life
+handling cows well and was
+used to working with this friend, so they were taken aback when the tractor suddenly
+appeared.
+So this has always been the case, but
+now it is a bit more widespread.  It seems like the possibility that it could
+turn ugly is coming across as a great fear
+.  But
+ultimately, the goal is to plow the field well.   As I
+mentioned earlier, I said that people feel
+uncomfortable with new things coming out, and
+that is only natural, isn't it?
+That’s not really strange. For example,
+those team leaders who used to be good at frying oil pans back in the day—
+they lost their jobs once calculators and Excel came out
+.  But
+there is a curve you go through because of that, and you end up experiencing lethargy
+.  Since I can't do what I used to do,
+we are currently experiencing my strengths disappearing completely
+.  I used to be an Excel master, but
+who uses Excel these days?  They do everything for free
+.  I once
+had a book like that.  The "Hong Dae-rim, the Accounting Genius"
+series
+was a truly precious book, and if you mastered it, getting a job was
+so easy.
+I read that book from the beginning up to page 30 about
+ten times.   They
+still find it difficult.
+great.  So,
+what is the job of an HR professional?  There are many ways to
+define work, but the way I
+define it is that we
+solve specific problems in our respective positions
+.
+We are all here to solve problems
+.  However, their fields are somewhat different:
+I am someone who solves problems involving people and organizations,
+people in finance solve money-related
+problems, and marketing is about
+promotion—making the company known. But
+solving those problems
+requires various influences.  The first thing is that you
+need logical reasoning skills.  Then, you need to
+identify the one that will have the most impact among all these areas and delve deeply into it
+.  That is what we call analytical ability
+.  Then, if you
+do "Pow-wise, why, why" about five times until the very end, a real problem will
+emerge, and
+trying to solve it in a way that hasn't been done before is what we
+call creativity.  But since this has
+traditionally been required of us humans,
+who would be best at these two skills at the beginning: logic and analysis
+?  It has now become an uninnovative era where humans cannot outperform machines
+.
+This is the biggest shock.  From a human perspective
+.  But the problem is that even though times have
+changed, if you look at our major companies and
+such, they still hire people with good academic backgrounds,
+high grades, and high TOEIC scores
+.  I think this will be a huge burden on the organization
+.  So, the way of working
+itself changes completely.
+We teach AI and things like that, but it is
+unfortunate that we are not seriously considering the actual way of working right now.
+It seems that our perspective on work has become somewhat rigid as we have worked together.  Back when there was no holy city, there was
+talk about this person being a baker or something like that, you know?  Back then,
+my entire professional identity
+was connected as one, but the funny thing is, even that
+bakery needs to know the cost price.
+That is the only way to maintain this.
+And shouldn't you also know about distribution
+?  You need to know how many people are coming to be able to do it
+.  So I
+did it all with my own body, and it grew bigger
+.  So,
+I wanted to give bread to people all over the country, but couldn't I even give it to the whole world
+? From that moment on,
+global cooperation became necessary, along with new know-how regarding massive internal distribution—things like
+social media marketing—and that is how the
+company grew.  The advantage of doing so is that you can build a very large industry, but the difficulty is that the members working on it cannot see the whole picture.
+I am someone who only deals with the cost.
+But the current situation is that from the moment I said I could converge all the work and rephrase it, I was
+n't looking at the whole picture, so I have to revert my job back to its
+original state.  From my
+perspective, it seems like we are
+going from craftsmen to office workers and then back to craftsmen again, after about 200 years
+.   I
+came from being a craftsman to being an office worker, and I am
+going back to being a craftsman.   It
+means that so many people and organizations are no longer needed to carry out a task.
+Since organizations that do not do that will emerge,
+we will have no choice but to follow suit.
+Ah, [sigh] so, it has become a
+society where really a lot needs to change.
+How will offices change in the post-AI era
+?
+We continue after SKAI
+.  Now, an
+individual adapting to a changing world.  The organization
+also has to embrace that individual.  It seems that both individuals and organizations have a
+lot of concerns. If the day comes when AI and
+humans work together in the office,
+what do you think it will look like?   yes
+.  Actually, I am using AI little by little
+on a personal level.  yes.
+My team members and I are all using it, and it
+feels just like having a personal assistant. The truth is, the
+work isn't disappearing; in fact, it
+seems like it has created even more work for us right now.
+Oh, really?  Has the workload increased?   My
+workload has increased.  So, because
+originally, I used it as an excuse to say, "Ah, I can't do this alone
+."  There is no cost.  Well,
+since this is a technical matter, we need to hire someone
+.  By doing this,
+all the things we couldn't do before can now be done.  Just say it.
+If you try doing something like Claude's code earlier,
+naturally you can't develop it because you're a non-developer, but
+now you can at least somewhat mimic it
+.  So, I ended up
+doing all the things that used to be said marketers just couldn't do [laughs].  So work
+multiplies infinitely.
+ah.  Ah, actually, the work has increased.  Infinite
+multiplication.  There are too many.
+How do HR managers view this?  It
+seems like we are still in the early stages of the transition. The existing way of working remains the same, but only the
+technology has changed slightly
+.  Let's use an analogy.
+And it's Kimbap Heaven, and it has a kitchen.   The number of staff
+in the kitchen has increased, with people
+washing dishes, cooking, and even an
+assistant head chef; if we try to
+run things too fast, it will just
+backfire on everyone.
+While learning AI is very necessary right now, the really
+important thing is that we need to get rid of the existing 50-year-old
+processes.
+Last year, I had an HR conference at SK
+.  1,400 people from all HR departments gathered in the organizational group
+.  A
+specialist from one of SK's subsidiaries has arrived.
+Come over and tell that affiliate, if you look back at the past, "
+Hey, go investigate our US marketing
+."  Go investigate the competitive situation right now
+.  Then it would have gone through about four steps to come up
+to the person in charge, been
+commented on, the report accepted, and then gone up
+to the survivor, but
+that doesn't work.
+Since everyone can now possess the same technology, it is unacceptable for executives at the senior vice president level or higher to conduct
+research for lower-level positions.   Do
+it yourself.  I think this kind of behavior needs to
+happen much more often.
+But as I listen to Professor Hwang, if I have a
+concern, it is that the
+increased individual capabilities seem to have some positive aspects
+.  However, precisely because of this, the
+environment where lower-level employees or new hires can learn new skills is shrinking
+.  Well, no matter how it breaks, whether we investigate, or whatever, we have to do it
+together to realize, "Ah, this is how it needs to be done
+."  I see that I
+need data like this.  There must be something like this, but right
+now the person above me
+does everything by themselves, so I do
+n't have time to gain any experience.  I went to
+Silicon Valley a month or two ago—well, a month ago—and heard a bit about that, and they were saying something like that
+.  The organizational structure is the part
+most affected by the introduction of AI
+.  The organizational structure is now
+becoming flat, and the way it is
+becoming flat is that the flow of information has become extremely
+fast.
+What used to go through several steps can now be grasped by simply
+inserting a few lines of text from above
+.  So the step has lost its meaning now
+.  It seems highly likely that there are movements among the working-level staff to view the
+managers above them as competitors and
+try to secure information in any way possible
+.   There
+were also discussions from the working-level staff.   I don't want to
+expose to others any skills that I think only I can perform
+.   That's right
+.  But now, all of that is going to be exposed
+.   In
+such cases, what form
+would the organization take?  Will we all become cut off because we keep each other in check too much
+?
+So, primarily, that major direction is
+summarized as Gre flattening.  From the perspective of someone who has observed organizations,
+even just three years ago, I thought that was
+theoretical and asked, "How can people
+work horizontally?"  I used to say
+a lot that we were just communicating horizontally, but I deeply regret it
+.  That is not an exaggeration at all; it
+feels like it has suddenly hit me in just a year or two.  The fact that
+AI has already started replacing the actions of managers came as a
+huge
+shock to me.  So, I
+knew that would happen, but it turned out there were already
+organizations that had it infiltrated
+.  What are you doing?
+So, if we think about the word "bureaucracy" in the past, it was "
+burocras."
+So, passing on what was originally done by someone next to or below you to the
+next person is
+bureaucracy.
+So, the less value ads there are, the more it
+leans toward management-oriented management.  However, in
+the past, no matter how large the organization, the
+people at the bottom handled the practical work, while the
+five or six
+people below them played the role of reviewing what was there and sending it up
+.
+But who is the best at these areas now
+?  So,
+AI has surpassed the value of these people
+.  That is why their
+value has been lost.  So, people
+usually say that since these people are currently over-reading, they still have a little time left, but that time will just
+disappear in about two or three years.
+We generally categorize the role of a team leader into three types
+.
+Setting goals, getting the work done, and checking the results—that's really all there is to it
+.  But when I went to
+check this time, I found that AI has been incorporated into the goals as well
+.  Goal setting.  Then,
+regarding the feedback in the middle, for example,
+who is the best at giving feedback on coding
+?
+Feedback on the coding?
+AI does the best job.
+Ah, that's true.   Since you're
+good at coding, they
+give you feedback that isn't unpleasant.
+But then, shouldn't the meaning and role of leadership
+change?   That's right
+.  In that case, we need to consider what value I, as a leader or
+head of an organization, should provide to such an organization
+.   But this
+spacing and this wasn't the value, but
+now as the water level
+drops, it becomes clear who isn't moving in with a swimsuit
+.
+Now, Mr. Manager, your position is in jeopardy
+.  What value will you provide
+?
+Ah, but what I find a bit scary is that even if
+I'm not the department head,
+AI could replace my job.  Well, it
+replaces our team members.  I can understand that up to this point, but if you
+think about receiving instructions from AI, that
+seems a bit dystopian.   But do
+n't you think this might cause a problem?   It is already
+coming.  But
+the things that are quantified from the moment we started talking about KPIs are putting pressure on me in a way, just like my former department head used to
+.  It is
+now a battle over whether a person will explicitly do what is set out to do, or move freely on their own after recognizing the goal.
+But now, for now, there is
+no longer a need to work collectively.
+In the past, there was quite a
+lot of work involved in sharing, bringing, combining, and lifting things up, but now you have them
+do it themselves.  Then, the
+subordinate organizations no longer hold any meaning, yet they still
+exist out of inertia.   The
+interesting thing is, it doesn't make sense to call him a department head when he doesn't have any
+.
+Right now, I'm confused about my position and my close friend.
+So, there are many cases where a person is given the title of team leader even though they do not have an official position; to
+take it to the extreme, one could be a team leader with
+no team members.   If
+this was just a
+courtesy of calling him by name right now, we could actually move toward a method where we
+pay an agent no fee and work together with them
+. Therefore, organizations that have transferred people like this need to recognize that they are aware of these things.
+Then, what should we
+change the title to?  Companies are already
+moving in this direction; you've gone pro.
+So, things were done horizontally, but because people still
+hold onto the old hierarchy in their minds, an
+issue has arisen here.
+Another reason is that since the compensation was for livelihood, people naturally
+earned less at first because they were learning, and earned more later. Because of this
+system,
+those who have now become department heads feel a sense of injustice.   It's
+unfair.   Since
+your title is
+now Department Head, there must be some department involved,
+right?  How many employees are in the marketing department
+?  Five people below me.   I'm telling you, there are only
+five of them
+.  Back in the day, there should have
+been at least 50 people with the title of department head.   Right
+.  Right.   The
+lightweight pipe was progressing steadily, but now the speed has
+completely accelerated, so it is just standing on its own
+.
+But he is the team leader.   I asked
+which team leader you were.  Alone on another
+team.   That's right
+.  It's my own team.  Honestly, considering the
+issue of titles and everything else, it feels like the sense of working as a
+leader is going to
+disappear a lot.
+Recently, an acquaintance of mine returned to work, and the
+first task they were assigned was firing team members
+.
+Reduce the team members as soon as you return to work.  But
+you set the standards and notify them
+. They say they received this task.  But
+if AI were to start handling such management
+tasks, any AI would have to use
+certain criteria to decide whether to fire or hire, right?
+Then, regarding this, who should bear the responsibility for personnel matters
+or management duties
+?
+First of all, you must not be the HR team leader.
+Actually, I'm not joking, there are
+cases now where the HR team takes responsibility for such things
+.  You end up getting dragged around
+to court or the Labor Relations Commission; that’s exactly what happens in
+unfair dismissal cases
+.  That's right.  So, eventually, it led to the
+representative doctor position, and
+while this is something everyone already knows and a
+cliché, if I look at it with a completely
+open mind, I think it goes something like this.
+Currently, there are two types of legal entities:
+natural persons and legal persons.   Aside
+from corporations, couldn't a
+third legal standard be introduced for things like AI
+?  So, ultimately, it will make
+decisions based on algorithms set up by humans,
+which means, for example, it
+won't be able to operate for a specific period.   I mean, if you think
+completely crazy, would
+n't something like that eventually come true?  However,
+I think that for the time being, as a transitional period, we ultimately have no choice but to remain with the people of that organization
+. Of course, the
+judgment on whether to hold the person who devised the algorithm or the legal representative accountable still remains.
+In that sense, I also think that writer Kim Rye-ji was
+wise
+[clears throat]. Yes.
+So, that was
+n't what I intended, but it's
+a bit interesting and fascinating that the interpretation is changing.  Actually, a
+lot of young people come to me.   To
+learn.  It's in the news a lot these days, too
+.  Blue is on the rise.
+Many young people are drifting toward something or that direction
+.
+Seeing that, I didn't foresee it, but it turned out really well
+.   A
+person from the future.  [Laughs]
+Seriously, to someone from the future.
+But what would you like me to tell you?
+To those young people.  These days,
+a lot of people are leaving their jobs early.  But
+when I ask what the reason for that might be, I
+think I've been thinking more about my own self lately.  So, in
+the past, we thought that graduating from college and
+joining a good company to
+walk a smooth path was the only answer, but I am telling you that
+finding your own work and pursuing it might actually be a better
+path now.   If the
+current era continues, I
+think universities will be in real danger.
+Don't you talk about that at school?
+The professor next to me
+is a genius developer, and while I used to
+change the curriculum about once a year, now I change it once a
+month
+.
+I think that's how it should be.  No, because if it became a
+new one and came out, you can't help but do it, right?   I was
+really envious when this professor first came in
+.  What is there to change in development
+?  I was a machine anyway, but now I'm a little better
+.  Since the greetings came a little
+late,
+development became the most difficult.  But the
+developers aren't developing.
+I think that part is really interesting.
+Traditionally—or actually,
+without even needing to call it traditional—until just a few years ago,
+developers were the best.  So, I guess I have to
+learn coding.  It's only been two or three years
+.  But suddenly, they say everything is going to be replaced. It’s
+such a shock to hear that professions like accountants and lawyers—jobs that everyone really wants to become and has spent so much time trying to get—are being replaced first.
+So, I
+think that is probably why originality is cited as one of the keywords for our world.
+So, luxury goods will become more expensive, and I
+think that is exactly what it means that the experience of owning old things that others cannot have becomes more important.
+So now, this is something that everyone watching the video is
+probably curious about.
+What kind of person will be needed in the future?  Who will
+not be replaced in this era of the Great I?
+What skills do I need to have?
+We always cherish people who give us something precious
+.  Conversely, if what he
+gives me is insignificant or
+actually puts a burden on me, I would be reluctant to have a relationship with him
+.  So, I think we need to look into whether we can actually convey this value
+.  I am
+a bit afraid that I might have to do things that AI cannot do.  So, I don't know what AI ca
+n't do
+.  Ah, even our
+writer Kim Ji said she wouldn't clean, but
+now she might actually clean
+.
+So, to put it bluntly, it
+seems that those who can always leave will stay.
+yes.  [Laughs] I do
+n't think it will be easy for someone who wants to leave something behind
+.
+People who say, "I'm ready to leave the organization," are actually the ones who stay.   It
+means it has market value.
+Ah, on
+the other hand, for someone who thinks, "Uh, I can't get fired," it might be
+possible if they put in the effort, but if they are the
+type who wants the organization's favor, I do
+n't think it will be easy.   It will be
+difficult for those who receive benefits from the organization to stay for long.   yes
+.  So, I think that if you
+have enough power to fly, you wouldn't need to worry
+.
+Ah, is that how it works?  So, recently
+I gave a lecture in that course, and a representative from a
+leading company
+mentioned that.  You've started a startup and now you
+want to stay with your team members for a long time.  So what I said is that you just need to
+help all of them get out.   hmm.   I
+told you this, didn't I? This um.  It seems we have reached an
+era where that has become the standard.
+So, regarding HR matters,
+ultimately, regarding who can stay with the company
+and who
+shouldn't, ca
+n't we also say that this applies to people who do their job well and those who don't?
+So, in terms of HR, is the
+concept of a good worker a bit different now compared to about three years ago
+?  It
+seems like it will be different.  First of all, if you consider the people who work well versus those who don't, it is still a
+good company.  They
+don't really care about things like that—whether it's being good at networking
+or
+drinking—
+because in most of
+these traditional companies we've been to until now, there isn't
+much difference whether you're good at your job or not
+.  Because the job itself was
+n't that complicated.   They say it was like that back about
+10 years ago.
+So, we just selected people who
+received a good standard university education, had good grades, and did well on the TOEIC
+.  Then, if
+we teach them again, we assume they have a decent level of intelligence, and if they
+graduate from a university of the caliber we usually talk about, we just
+pick anyone. We don't
+expect anything extraordinary from this student
+.
+So, after that, they selected someone who was smart enough to receive an education
+.
+We call that academic background.
+Sincerity is certainly not a bad value even now, but
+in the past, you
+could endure on that alone; now, however,
+that alone is not enough.  In that case, as
+I mentioned earlier, the analysis and
+logical reasoning parts require time
+.  However, since AI is still an entity that processes
+existing inputs effectively to
+produce results, I think that humans will still be able to compete for a few years, perhaps
+until 2045, which is usually when Singil Worthy is expected to arrive
+.
+When I look at new companies, the criteria for preferring new employees vary each time, but in the past, I highly valued sincerity—that is, the ability to steadfastly endure tasks that may look glamorous, like marketing or government work, but often involve a lot of sleep and behind-the-scenes work that isn't so glamorous. Now, however, I look for someone who doesn't lose their curiosity even in situations where there is no right answer, and who is proactive enough to create their own manuals. The phrase "having a master's mindset"—it sounds like an old-fashioned expression, doesn't it?  But it
+seems like it has returned.  People who can
+take responsibility for their own projects from start to finish
+.  [Music] It seems like
+we have a tendency to prefer hiring people like that as new employees
+.
+What should we do to become an organization that does not lose talent after SKAI
+?  When you are in the process of solving problems together and realizing your dreams, there are
+plenty of things worth doing.
+Otherwise, if the work is sufficiently finished or
+no longer continues, they will leave.
+The reason is that life has become longer, so
+even if I spend a lot of time here, it has become nothing more than a small part of my
+life.
+already.   hmm.
+Then will permanent jobs disappear?  The
+form it takes now seems to be a matter of
+how it is protected by laws and systems and how
+stability regarding value exchange is
+ensured, but it seems
+certain that it can become more liquid
+.  Compared to before.
+I joined SK in 1993
+.  My first job was at SK.
+[Clears throat] There is something called SKMS, and
+it is still a management system that is like the Bible.  When I was here, there was a
+corporate hall.
+As far as I know, that philosophy has disappeared these days, but I still cherish it because I believe it was 100% correct. The corporate philosophy I held back then was to contribute diligently until I could no longer contribute, and then leave at the appropriate time.  But the employees
+objected a bit at the time, so I think they
+changed it and removed the "Amai" itself, and I
+think there is nothing more accurate than that.  But since this
+is wording from the 80s and 90s, back then they had to employ people for life, so
+why are they telling them to leave first
+?
+yes.
+There was such a discussion, but I
+think you were very far ahead of your time
+.  I've been talking about
+that at the construction site lately.   If there are
+many young people in the audience, are there
+people in their 20s here?  If
+you raise your hand, you will live for another 100 years
+.  Then, if I only grow within one organization for a period of 100 years, I feel like both
+society and I are missing out on so many opportunities
+.
+So, it seems like I'll live for 100 years, but
+that is the real problem.   What
+I want to say, especially
+to those currently in school or in the early stages of their careers, is that what I
+thought about a little earlier was that I needed to find a job.
+So, instead of staying at one company, I work for various
+companies and across different industries while maintaining my profession
+.  I just say hello
+.  It's definitely me.  Now,
+having worked for various companies and traveled to many countries, I am
+becoming an expert solely in human resources.
+But now, this is over too.
+So, beyond starting a business, we
+must ultimately create new jobs.  I have to
+create my own work to survive in the end; I don't
+think doing other people's work would be very fun.
+Then, I am curious if there are any examples of organizations helping individuals. I heard that
+SKTM has good examples.
+I was very surprised by this. They created a platform where even those who
+cannot code can develop and use agents, and for tasks
+such as security coding and verification automation systems, it
+reduced the workload of the person in charge by about 3,000 hours per year
+.  Then, they
+even resolved the inconveniences of the on-site staff in a more proactive way
+.  I
+think this is a very good example that we can learn from.  This isn't easy.   They
+provided everything to the employees.  Even in the
+future, some people will still
+want to get a job, and if one is building their first career after graduating from school, it might seem
+somewhat easier to learn the ropes within an organization. So,
+what meaning will a workplace hold in the future
+?  For now, it seems like the
+total number of employees hired by a single workplace will decrease a bit compared to before
+.  Anyway, if we define a job as something we all create and
+divide roles to
+help one another, I
+think we need to give bigger dreams to attract more outstanding people, and the experience here needs to be helpful to their lives so they can continue doing well.  So, I think the definition of a good workplace might change depending on whether
+we can dream such a big dream together
+.  For
+those of you struggling with your career choices, since I’ve worked for a
+long time, here are some
+good keywords on how to make the most of your company.  When I said I was using the company, I
+think I went to work with that kind of feeling.
+So, regarding filming YouTube videos,
+honestly, given my personal nature, I might have gladly given it a try if someone told me to
+film it or if there was an editor involved. However, I do
+n't think I would have planned everything from scratch and carved out time after work to take on that challenge first
+.  But I can
+use company resources at work to try out things that are good to do these days, you know?  In
+that regard,
+assuming the organization is flexible, I believe it would be very
+beneficial for an individual to
+work for a company if the structure allows them to run small projects or start small businesses using company funds, reduce their risk, and contribute to the company. While
+relationships are certainly necessary, there must
+also be equal cooperation, and many people
+view this as an inclusive relationship
+.  Because they went in, they are recognized as people from there
+.  I saw this too.   I asked about a
+part-time job after finishing work, but they said no because concurrent
+employment is prohibited. I told them it was a
+different profession, but they insisted that I need to rest properly to work during
+the day, and that's how the
+conversation went.  Of course, the number of such
+companies has decreased significantly, but we are
+viewing them all as part of an inclusive relationship.
+no.  Equal.  Is this a good mountain?
+yes.  yes.  yes.
+I think it's kind of turning out that way.  uh.   So
+, now that AI has become so
+deeply integrated into our daily lives, I’m starting to get
+curious about things like this.
+Will AI really replace all the work humans do?  So, will it
+replace everything like mental ability or physical ability?  Then do
+all humans play?  What should we do if we just play like that? What
+should we do?  Ah, is this a "good luck no matter what"
+?  What should we do when we're not working?  What do
+you want to do?  There are actually people
+among those who played together who
+invested as individuals and
+quit their jobs using the capital gains
+.  So, those people just
+reserve a tennis court like this during the day to
+play tennis, and
+yes, so when they play, they will play tennis.   It looked
+really nice to see people enjoying their hobbies and gathering together to have good conversations like this
+.   I want to do that
+.  That is quite a
+sage's perspective.  If you
+look at Cosley's Double Brave New World, you'll see plenty of things like working a little, going out at night to
+listen to electronic music,
+playing electronic golf, and so on
+.  But people find it really
+boring.  [Laughs]
+So, I
+think there is a possibility.   I'll
+eat for digestion.  I see
+things like them taking medication to eliminate the mental depression
+.
+Of course, Master Black Eagle
+must have naturally shown us a somewhat dystopian version of our possible futures.
+But since that implies we shouldn't live like this,
+I think we will eventually engage in actions to find some meaning, and whether to call that work or a hobby is a choice up to each individual.  This is a matter of personal
+preference, but
+I think I'll probably end up doing it for sand as well.  I think Yoo
+Jae-seok would probably be the best at answering the question "What do you do when you play?"
+[Laughs].   I feel like we need to take
+another look at what work is
+.
+What should be the meaning of work in this era
+?  Ultimately, I think the real work should be figuring out what value it can provide
+.
+Something that can provide value.  Writer Kim Jin,
+what do you think?  But in the end, we have to
+make money, you know.  Well, whether AI
+exists or not, whatever.  So I just
+keep thinking that the meaning of work is the responsibility of my life
+.
+I think it's just going to keep going like that.  But only the form keeps
+changing.  I
+think it would be easier if you just thought of it simply like that.
+So,
+in a way, I think doing what you like is also a form of mental victory
+.  [Laughs] I worked
+to earn money, but
+I like this.   If you
+hate it too much, it will be painful, so
+let's try to like it.  [Laughs]
+Let's give it a try.
+yes.  I think that kind of thing has come a bit too.
+Don't you think what you just mentioned would be a good title for my book?   Let's try to
+like my job.   uh
+.  [Laughs]
+Uh.  I think it will be fine.  yes.  Could it be that the
+reason the cooperation system has grown is because our greed has
+grown?  I tend to make
+estimations of that kind.   It's like this
+.  We want to live longer,
+eat tastier food, and if possible,
+see beautiful things. Because of this,
+being alone is difficult, but with things like
+pretty phones brought from all over the world, it
+seems we view such augmentation as our entire expansion.  As I think about it, I
+believe that even as the system was created, it likely underwent some form of evolution.  It's like this.   I'm telling you,
+work is fun.  Why?  Then we'll be
+together.  We had lunch together, and
+then I received an award as a member of the Uso Temple.
+So, I felt a bit proud, and I
+think I worked on it by amplifying the primal instincts we possess through [music] a bit more.  However, since it
+seems we won't be together like that anymore, I think the question that will
+arise is how to redefine the joy of that new relationship, and if, moving beyond that, a beautiful cooperation where we can be eager for one another is possible even in a looser form, the current tight bond will likely loosen. I wonder how we will adapt to that
+.  Now, this will
+be the last question for today. Writer Kim Hyun, if
+there is something you can do better simply because you are human, what do you think it is?
+After all, AI
+doesn't have a sense of ownership.  But anyway, I do it with a sense of ownership
+.  And one thing is,
+AI can only handle the input font
+.  When I clean, I
+take care of things in addition to what you requested.
+So, literally, when looking at the dust here,
+the owner didn't know there were cobwebs.
+So, if I take over and clean it up, or something that goes beyond the scope of the Prompt—I think that, for now, it is still within the realm of what humans can accomplish.   I hope we work without ever losing sight of the idea that
+we must become the masters of our own lives and
+work
+.  But let's work less and
+see more.  [Laughs]
+Go, humans.
+Now, I am really, really curious to know what you all thought while watching today's video
+.   Please
+leave a comment with what you think the future will look like
+.  [Music] Yudageyo.
+[music]

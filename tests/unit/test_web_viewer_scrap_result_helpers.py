@@ -211,7 +211,9 @@ def test_build_scrap_result_view_model_includes_stats_and_auth_notice():
             total_count: 1248,
             threads_count: 520,
             linkedin_count: 410,
-            twitter_count: 318
+            twitter_count: 318,
+            youtube: 0,
+            youtube_count: 0
           }
         }, 'update');
 
@@ -232,6 +234,7 @@ def test_build_scrap_result_view_model_includes_stats_and_auth_notice():
             {"label": "Threads", "delta": "5건 추가", "total": "전체 520건"},
             {"label": "LinkedIn", "delta": "7건 추가", "total": "전체 410건"},
             {"label": "X", "delta": "0건 추가", "total": "전체 318건"},
+            {"label": "YouTube", "delta": "0건 추가", "total": "전체 0건"},
         ],
         "authLabels": ["X", "Threads"],
         "hasPrompt": True,

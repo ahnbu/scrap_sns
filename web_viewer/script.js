@@ -503,7 +503,9 @@ document.addEventListener('DOMContentLoaded', () => {
             total_count: Number(result?.stats?.total_count || 0),
             threads_count: Number(result?.stats?.threads_count || 0),
             linkedin_count: Number(result?.stats?.linkedin_count || 0),
-            twitter_count: Number(result?.stats?.twitter_count || 0)
+            twitter_count: Number(result?.stats?.twitter_count || 0),
+            youtube: Number(result?.stats?.youtube || 0),
+            youtube_count: Number(result?.stats?.youtube_count || 0)
         };
     }
 
@@ -573,12 +575,14 @@ document.addEventListener('DOMContentLoaded', () => {
             ? [
                 { label: 'Threads', delta: `${stats.threads_count}건`, total: '전체 재수집' },
                 { label: 'LinkedIn', delta: `${stats.linkedin_count}건`, total: '전체 재수집' },
-                { label: 'X', delta: `${stats.twitter_count}건`, total: '전체 재수집' }
+                { label: 'X', delta: `${stats.twitter_count}건`, total: '전체 재수집' },
+                { label: 'YouTube', delta: `${stats.youtube_count}건`, total: '전체 재수집' }
             ]
             : [
                 { label: 'Threads', delta: `${stats.threads}건 추가`, total: `전체 ${stats.threads_count}건` },
                 { label: 'LinkedIn', delta: `${stats.linkedin}건 추가`, total: `전체 ${stats.linkedin_count}건` },
-                { label: 'X', delta: `${stats.twitter}건 추가`, total: `전체 ${stats.twitter_count}건` }
+                { label: 'X', delta: `${stats.twitter}건 추가`, total: `전체 ${stats.twitter_count}건` },
+                { label: 'YouTube', delta: `${stats.youtube}건 추가`, total: `전체 ${stats.youtube_count}건` }
             ];
 
         return {
@@ -1688,7 +1692,7 @@ ${item.body}
 
     function getServerPlatformFilter(filter) {
         if (filter === 'x') return 'twitter';
-        return ['threads', 'linkedin', 'twitter'].includes(filter) ? filter : '';
+        return ['threads', 'linkedin', 'twitter', 'youtube'].includes(filter) ? filter : '';
     }
 
     function getServerSortParam() {
@@ -1831,7 +1835,7 @@ ${item.body}
 
         const samplesByPlatform = consistencyProbe.new_samples || {};
         const loadedKeys = new Set(loadedPosts.map(getConsistencyPostKey).filter(Boolean));
-        const steps = ['linkedin', 'threads', 'twitter']
+        const steps = ['linkedin', 'threads', 'twitter', 'youtube']
             .map(platform => {
                 const samples = Array.isArray(samplesByPlatform[platform]) ? samplesByPlatform[platform] : [];
                 if (samples.length === 0) return null;
@@ -1840,7 +1844,10 @@ ${item.body}
                     ...sample,
                     sns_platform: sample.sns_platform || platform,
                 })));
-                const label = platform === 'linkedin' ? 'LinkedIn 신규 샘플' : (platform === 'threads' ? 'Threads 신규 샘플' : 'X 신규 샘플');
+                const label = platform === 'linkedin' ? 'LinkedIn 신규 샘플'
+                    : platform === 'threads' ? 'Threads 신규 샘플'
+                    : platform === 'youtube' ? 'YouTube 신규 샘플'
+                    : 'X 신규 샘플';
                 return {
                     key: `new_samples_${platform}`,
                     label,
@@ -2155,6 +2162,7 @@ ${item.body}
         const value = String(platform || '').trim().toLowerCase();
         if (value === 'thread' || value === 'threads') return 'threads';
         if (value === 'linkedin') return 'linkedin';
+        if (value === 'youtube') return 'youtube';
         if (['x', 'twitter', 'x/twitter', 'x_twitter'].includes(value)) return 'x';
         return value;
     }
@@ -2564,6 +2572,8 @@ ${item.body}
             platformConfig = { icon: 'work', color: '#0A66C2', name: 'LinkedIn' };
         } else if (platform.includes('twitter') || platform === 'x') {
             platformConfig = { icon: 'close', color: '#fff', name: 'X' }; // 'close' 아이콘을 X 대용으로 사용하거나 텍스트 처리
+        } else if (platform.includes('youtube')) {
+            platformConfig = { icon: 'play_circle', color: '#FF0000', name: 'YouTube' };
         }
         article.dataset.platform = platform;
 
@@ -2589,6 +2599,8 @@ ${item.body}
             iconHtml = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#0A66C2"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>`;
         } else if (platform.includes('twitter') || platform === 'x') {
             iconHtml = `<div class="size-5 flex items-center justify-center bg-white/10 rounded-md"><span class="text-[11px] font-black text-white">X</span></div>`;
+        } else if (platform.includes('youtube')) {
+            iconHtml = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#FF0000"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>`;
         } else {
             iconHtml = `<span class="material-symbols-outlined text-[20px]" style="color: ${platformConfig.color}">${platformConfig.icon}</span>`;
         }
@@ -3692,6 +3704,7 @@ ${item.body}
             let iconColor = '#888';
             if (platform.includes('thread')) { icon = 'alternate_email'; iconColor = '#fff'; }
             else if (platform.includes('linkedin')) { icon = 'work'; iconColor = '#0A66C2'; }
+            else if (platform.includes('youtube')) { icon = 'play_circle'; iconColor = '#FF0000'; }
             
             item.innerHTML = `
                 <span class="material-symbols-outlined text-[20px] shrink-0" style="color: ${iconColor}">${icon}</span>

@@ -39,6 +39,12 @@ export const TARGETS = [
     regex: /^twitter_py_simple_(\d{8})\.json$/,
   },
   {
+    id: "youtube_full",
+    label: "YouTube full",
+    dir: "output_youtube/python",
+    regex: /^youtube_py_full_(\d{8})\.json$/,
+  },
+  {
     id: "total_full",
     label: "Total full",
     dir: "output_total",

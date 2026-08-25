@@ -1,0 +1,189 @@
+tool I had just created with the mindset that if it didn't work out, I would keep it for myself. However, after launching it, about
+500 users had already signed up and were
+using it.  [Music] It was a somewhat fascinating experience to see the Productants
+continuously leaving comments,
+telling me directly what users wanted, and
+expressing complaints that were actually absent before.
+hello.
+I'm Mingyu from Ask Immoim
+.  I am an entrepreneur who started my business about a year ago
+.  I am
+developing a product called SnapDeck.
+You can view SnapDeck as a product that adds a lot more human-like elements to the editing or creation process compared to existing AI presentation generation tools.   This
+product aims to provide a level of editing capabilities similar to existing services or editing tools like PowerPoint.   The
+biggest strength is actually that users can get
+help from A without deviating significantly from their existing workflow for creating presentations
+.  Also,
+when users create a presentation, it seems there are times when they forget the original message they intended to convey
+while trying to visualize it or while meticulously crafting the slides
+.  However,
+since SnapDeck reduces the time spent on the deck-building process itself, I think the advantage is that the
+original purpose of the message you intend to convey can be reached more effectively
+.
+We actually understood that the purpose was not so much the creation of slides itself, but
+rather the user
+conveying a message and the
+need for visual aids to do so.
+It seems that the best presentation results are obtained by inputting the specific message you wish to convey using SnapWait.
+When I first started making Snap Decks, I was
+making a lot of decks to secure seed funding or government support programs, but back then, I think I only used Snap
+Decks to make about two decks. However,
+now, if the deck
+consists of 30 cards, I only make two or three myself, and I
+find myself working almost entirely with Snap Decks.   If you
+input the purpose first and then receive help from StackDeck in the
+process of configuring the deck to match that purpose,
+[Music] it
+seems that a deck is completed that can convey the process of building the deck or the original purpose you intended to create much better.  Uh, actually, I
+think we started making the product called Snapdaegi in earnest around this time last year, around May.  However,
+we tried releasing it as a Figma plugin
+to verify the MVP.
+However, when we checked, we could
+n't receive payments because we don't have a business license. What
+we were trying to measure was
+n't the payment itself, but the customer said first, "I will pay
+you for this via PayPal, so please allow me to make the
+payment
+."  Make it usable like a paid plan
+.  We decided to start a business after seeing how it turned out
+.
+Based on what we gathered, we launched on Productant on September 22nd, and the
+user response was very
+positive.  I just went to sleep and woke up to find that about
+500 users had already signed up and were
+using it.  So, I found that so
+fascinating that I asked users why they were using it. There must have been
+Gamma users among them, and the fact that they
+experienced SnapDeck and told me what SnapDeck was
+better than Gamma was the
+decisive factor that led me to start SnapDeck
+.   At
+that time, I actually
+had friends I wanted to start a business with.  I'm going to
+contact those friends and ask them to
+quit their current jobs and
+start a business with me.  I think I often talked about how it would be
+more fun to go on adventures with me rather than go to a big corporation. I also really wanted to help
+those friends relieve some of their anxiety, and I
+thought that investment could be one way to do that
+.  So, regarding [Music], I
+think I personally sent out a lot of cold emails to the investment firms that are frequently mentioned in Korea, and it seems
+there were many people who resonated with my ideas on how to develop it
+.
+I think I wanted to receive investment from people who shared their thoughts on how to develop Sseudek, and as a result, a
+Korean investment accelerator showed so much
+interest and interest that I was able to receive investment and
+proceed with the business
+.   I
+understand that currently, there are about 60,000 users who have signed up globally and in Korea.  Among them, I am
+quite familiar with the tools used by people working in Silicon Valley or in the financial sector in New York when writing reports
+.  One interesting case was that the decision-
+makers working on Figma actually
+purchased our product and tried
+using it for educational materials or decks they needed to produce quickly within the company. Instead of leaving, they
+actively referred their internal staff and
+continued to make
+monthly payments themselves, which I
+found a bit fascinating.
+Since we initially pursued following decks made by humans, I think we assumed that people would
+buy decks made by Korean experts even if it meant paying a high price
+.
+So,
+how can it be proven that building a deck like this is worth the money?   I think I was wondering
+how we could prove this outside of the service, and the
+co-founder who joined at the time suggested, "
+Since there
+are many people who need decks, let's try
+outsourcing it."  Let's
+try having them outsource to us and tell
+the customers to make payments only if they are satisfied
+.  When proceeding in this manner, I think I realized that
+pursuing a single deck would
+not satisfy all users. I believe the
+conclusion I reached from my outsourcing experience was that by effectively utilizing the data and background information the customer possesses, we might be able to create the deck they desire.   There was
+a senior in the startup club I belonged to who had won first place in the Korea Claude competition.  However,
+that person has to pay tokens to the AI ​​every month, which is as much as
+paying monthly rent
+.  You have to spend half of your annual salary recklessly
+.  It seems like these things are being reported a
+lot in the media, and
+while I don't spend quite that much myself, I
+feel like I am spending a significant amount of money on AI.  However, rather than limiting myself to using just one model, in
+this
+case, it seems that people tend to use all of them because models like the Codex, Claude Code, and the
+Chinese model each have
+slightly different advantages
+.  When handling slightly complex tasks, I seem to
+use Hannes engineering techniques to employ different models as sub-agents—
+such as the Kimi model, which is better at design, or the
+Claude-Office model, which is good at complex computations and planning—and
+combine them with GPT, which reads the code in detail and has a lower token cost compared to Claude. I
+think this is the method I currently use, and I actually seem to apply it quite a bit to tasks outside of coding as well
+.   I've noticed that
+when working on a startup, whether it's Excel or PowerPoint, you end up
+writing quite a lot of documents
+.  However, recently, it
+seems that I am getting a lot of help through things like the Codex or Claude Code, such as getting a feel for things and working on Korean documents. In this process, many
+people think that there might be no more tasks that AI cannot do
+.  Human jobs might
+really disappear.
+I think he talked about this a lot.  However, since I believe
+the strength of AI is that it allows you to pursue the things you wanted to do with minimal time investment, I think there is
+definitely a possibility for AI and humans to coexist in [music], and I believe we are
+also moving in tandem quite a bit
+.
+[Music]
+So, it seems we have also been
+putting up recruitment notices and
+making a lot of effort to expand the team over the past month or so.
+We are actually so sincere about AI that we spent
+about 1 million won worth of Claude tokens the month before last.
+However, we are a team that really enjoys not just listening to the AI
+but having people make decisions and
+produce results.
+But we realized there is
+definitely one thing that five people can do.
+Even if AI is helpful.  As such, just as
+developers are quickly mastering coding,
+VIBE coding, and AI-related
+skills, it seems that planners are also
+learning quickly,
+absorbing many of the concepts used by developers, and applying them in their actual work
+.
+Since there are clearly decisions that people need to make in addition to tasks handled by AI, I believe there will
+continue to be people building decks even after Snapda is released
+.
+So, what we are actually witnessing is something
+fascinating: people in the outsourcing market are
+utilizing
+Snapdaeg to generate initial drafts,
+communicating with AI to integrate their design and engineering skills, and
+producing these results as outsourced deliverables. We find this quite intriguing
+.  We tend to
+call people like that "experts
+."  It seems that the more the tools become used first by experts, the more
+valuable data we can collect, and the
+easier it becomes to identify what customers want.   We do
+n't think we are a company that wants AI to take away people's jobs or leave them with nothing to do just because AI has emerged.  We believe that
+there is a point that people clearly need to address in [music], and I
+think that among those, the most powerful thing is delivering a message and persuading someone.  So, our goal is to ensure that SnapDeck and our future products can be utilized in all tasks, such
+as the process of creating decks, writing reports, and even going
+further to
+create marketing posts, and we
+seem to be undertaking many challenges to achieve this.
+Previously, SnapDeck was actually
+designed to allow the creation of comments categorized into four purposes, such as giving a presentation in a huge hall or submitting a report without a presentation.
+However, within these four objectives, we wanted to
+provide more variety, so internally we
+prepared to enable the AI ​​to read various contexts.  As a result,
+many decks are coming out that look more like they were made by humans,
+and I think the
+concern I had—that it might be obvious that a deck was made by a rapper—is also being largely
+resolved.  So, I think there will likely be an
+update. If you
+use the Step Deck, the
+deck-building process feels more like it is
+done by a human, and
+since the AI ​​catches the parts you might miss during the process, I think you will be able to
+create even better decks and presentations
+.

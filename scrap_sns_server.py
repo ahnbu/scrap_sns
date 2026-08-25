@@ -39,6 +39,7 @@ SCRAP_PROGRESS_LOG_SOURCES = {
     "Threads": os.path.join(PROJECT_ROOT, "logs", "threads.log"),
     "LinkedIn": os.path.join(PROJECT_ROOT, "logs", "linkedin.log"),
     "X/Twitter": os.path.join(PROJECT_ROOT, "logs", "x_twitter.log"),
+    "YouTube": os.path.join(PROJECT_ROOT, "logs", "youtube.log"),
 }
 SCRAP_PROGRESS_LOG_PATH = os.path.join(PROJECT_ROOT, "logs", "scrap_progress.log")
 SCRAP_PROGRESS = {
@@ -97,6 +98,8 @@ def _scrap_progress_platform_label(platform):
         return "Threads"
     if value == "linkedin":
         return "LinkedIn"
+    if value == "youtube":
+        return "YouTube"
     return str(platform or "").strip()
 
 
@@ -132,7 +135,7 @@ def _scrap_progress_message_from_line(line):
         return "통합 파일 저장 완료"
 
     running_match = re.search(
-        r"\[\+\]\s*(Threads|LinkedIn|X/Twitter)\s+(Producer|Consumer)\s+실행 중",
+        r"\[\+\]\s*(Threads|LinkedIn|X/Twitter|YouTube)\s+(Producer|Consumer)\s+실행 중",
         text,
     )
     if running_match:
@@ -141,7 +144,7 @@ def _scrap_progress_message_from_line(line):
         return f"{platform} {phase} 수집 시작"
 
     done_match = re.search(
-        r"✅\s*(Threads|LinkedIn|X/Twitter)\s+(Producer|Consumer)\s+완료",
+        r"✅\s*(Threads|LinkedIn|X/Twitter|YouTube)\s+(Producer|Consumer)\s+완료",
         text,
     )
     if done_match:
@@ -150,7 +153,7 @@ def _scrap_progress_message_from_line(line):
         return f"{platform} {phase} 수집 완료"
 
     auth_match = re.search(
-        r"🔐\s*(Threads|LinkedIn|X/Twitter)\s+(Producer|Consumer)\s+인증 필요",
+        r"🔐\s*(Threads|LinkedIn|X/Twitter|YouTube)\s+(Producer|Consumer)\s+인증 필요",
         text,
     )
     if auth_match:
@@ -159,7 +162,7 @@ def _scrap_progress_message_from_line(line):
         return f"{platform} {phase} 인증 필요"
 
     failed_match = re.search(
-        r"❌\s*(Threads|LinkedIn|X/Twitter)\s+(Producer|Consumer)\s+종료",
+        r"❌\s*(Threads|LinkedIn|X/Twitter|YouTube)\s+(Producer|Consumer)\s+종료",
         text,
     )
     if failed_match:
@@ -178,7 +181,7 @@ def _scrap_progress_message_from_log_line(platform, line):
     platform_label = _scrap_progress_platform_label(platform)
 
     phase_start_match = re.search(
-        r"🚀\s*(Threads|LinkedIn|X/Twitter)\s+(Producer|Consumer)\s+시작",
+        r"🚀\s*(Threads|LinkedIn|X/Twitter|YouTube)\s+(Producer|Consumer)\s+시작",
         text,
     )
     if phase_start_match:
@@ -403,13 +406,15 @@ def _scrap_complete_message(mode, stats):
             "전체 재수집 완료: "
             f"Threads {stats['threads_count']}건, "
             f"LinkedIn {stats['linkedin_count']}건, "
-            f"X {stats['twitter_count']}건"
+            f"X {stats['twitter_count']}건, "
+            f"YouTube {stats['youtube_count']}건"
         )
     return (
         "스크랩 완료: "
         f"Threads {stats['threads']}건, "
         f"LinkedIn {stats['linkedin']}건, "
-        f"X {stats['twitter']}건"
+        f"X {stats['twitter']}건, "
+        f"YouTube {stats['youtube']}건"
     )
 
 
@@ -471,7 +476,7 @@ def _normalize_platform_filter(raw):
         return ""
     if value == "x":
         return "twitter"
-    if value not in {"threads", "linkedin", "twitter"}:
+    if value not in {"threads", "linkedin", "twitter", "youtube"}:
         return ""
     return value
 
@@ -954,6 +959,8 @@ def _consistency_platform(value):
         return "linkedin"
     if platform in {"x", "twitter", "x/twitter", "x_twitter"}:
         return "twitter"
+    if platform == "youtube":
+        return "youtube"
     return platform
 
 
@@ -1002,11 +1009,12 @@ def _build_consistency_probe(before_posts=None):
         "threads": int(metadata.get("threads_count") or 0),
         "linkedin": int(metadata.get("linkedin_count") or 0),
         "twitter": int(metadata.get("twitter_count") or 0),
+        "youtube": int(metadata.get("youtube_count") or 0),
     }
     if not any(platform_counts.values()):
         for post in posts:
             platform = str(post.get("sns_platform") or "").lower()
-            if platform in {"threads", "linkedin"}:
+            if platform in {"threads", "linkedin", "youtube"}:
                 platform_counts[platform] += 1
             elif platform in {"twitter", "x"}:
                 platform_counts["twitter"] += 1
@@ -1016,7 +1024,7 @@ def _build_consistency_probe(before_posts=None):
         for key in (_consistency_post_key(post) for post in (before_posts or []))
         if key
     }
-    new_posts_by_platform = {"threads": [], "linkedin": [], "twitter": []}
+    new_posts_by_platform = {"threads": [], "linkedin": [], "twitter": [], "youtube": []}
     for post in posts:
         key = _consistency_post_key(post)
         platform = _consistency_platform(post.get("sns_platform"))
@@ -1093,6 +1101,7 @@ def run_scrap():
             'threads': (before_meta or {}).get('threads_count', 0),
             'linkedin': (before_meta or {}).get('linkedin_count', 0),
             'twitter': (before_meta or {}).get('twitter_count', 0),
+            'youtube': (before_meta or {}).get('youtube_count', 0),
         }
         env = os.environ.copy()
         env["PYTHONIOENCODING"] = "utf-8"
@@ -1128,16 +1137,19 @@ def run_scrap():
             'threads': (after_meta or {}).get('threads_count', 0),
             'linkedin': (after_meta or {}).get('linkedin_count', 0),
             'twitter': (after_meta or {}).get('twitter_count', 0),
+            'youtube': (after_meta or {}).get('youtube_count', 0),
         }
         stats = {
             'total': after_counts['total'] - before_counts['total'],
             'threads': after_counts['threads'] - before_counts['threads'],
             'linkedin': after_counts['linkedin'] - before_counts['linkedin'],
             'twitter': after_counts['twitter'] - before_counts['twitter'],
+            'youtube': after_counts['youtube'] - before_counts['youtube'],
             'total_count': after_counts['total'],
             'threads_count': after_counts['threads'],
             'linkedin_count': after_counts['linkedin'],
             'twitter_count': after_counts['twitter'],
+            'youtube_count': after_counts['youtube'],
         }
         summary = _normalize_scrap_summary(_parse_scrap_summary(full_output))
         summary = _suppress_unreliable_x_auth_required(summary)

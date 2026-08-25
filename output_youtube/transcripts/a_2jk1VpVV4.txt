@@ -1,0 +1,1315 @@
+to kill all the product managers.  [Laughs]
+Ah, I'm
+not sure if I should say this, but my
+team members might be listening to the podcast, so...
+this is just my personal opinion.
+When I started my startup career, I
+began as a PM.
+Ah, okay, I started a pier too.
+So I ran away, but oh, and
+regardless of Hyun-jung's interests, I just
+threw that out there for now, but
+seeing how you got hit right away, that’s the essence of it.
+[Music]
+Hello.  I am Wonjun Jang from Beyond Product.
+I originally
+worked as a VC, but I
+felt that AI is changing the existing hierarchy of customers and products in the startup scene. I am hosting
+this podcast to provide solutions and interpretations from a more business-oriented, top-down perspective
+.   yes
+.  hello.  I'm Choi Hyun-jong.   I now call myself a
+GTM specialist
+.  Now that we have
+entered the AI ​​era and it has
+become so easy for people to encounter products, I find myself wondering, "How can I
+deliver something to customers faster?"   I am
+Choi Hyun, contemplating and tracking how to create greater overseas appeal for customers, thereby acquiring and satisfying them much faster than conventional marketing or sales methods.
+Ah, that's good.  Actually, the
+concept we’ve been focusing on since last week is that we need to keep paying
+attention every week.
+We wanted to keep dropping new updates so that
+even if people only listen to this, they can get a sense of how the world works.   that's
+right.  And another key
+point is that as I was working on this, I thought, "Let's skip the
+generalities and go AI-centric
+."   I had just made up
+my mind, but yesterday or the day before yesterday, a really
+good podcast popped up, so I immediately went and
+listened to it intently
+.  What is it?  Ah, this
+is a story about how Entropy set up its growth team and grew. Uh, actually,
+most people probably know Entropy mainly as an LM company, but
+in reality, it is a
+product-centric company like Claude Cotte that is very
+good at building strong customer satisfaction, so
+yes.  I came here so excited, thinking, "This is totally a treasure trove
+."
+Exactly.  And just recently, there was also an
+incident where the code was leaked, and that is
+correct.   The
+enthusiasm was incredibly high, but I
+also think the Claude Code fits the product well. Since
+we
+developed our own syntax—such as Claude MD and the Agent Team—and
+other LM services are
+referencing it, I
+really feel that we are a product-centric company. Furthermore, one thing that
+was quite famous among our sales and marketing teams was that a single
+employee was able to
+handle SEO and exhibitions worth tens of millions of won, to the extent that it was considered a complete replacement
+.  It's
+hot even over something like this.
+Ah, that's right.  So, by really wrapping up even just that
+one use case in a
+fun way and delivering it to customers, and seeing
+sales actually
+rising so well, there was so much to
+refer to.  But uh, I just got back from the
+U.S. last week.
+And now, uh, I spent about
+two or three days going around with the team that refactored and delivered the leaked Claude code, and
+ah,
+yes.  We had become close enough to party all night and stuff like that,
+yes.  Since I'm doing exactly that
+again, ah, this is a bit
+[snorting]. Well, I was
+born in '91.  But somehow, it felt like the '
+90s generation is coming,' and then
+[laughs] the department heads at the company would
+ask, "Is this right?"
+I think I came here having seen something like that.
+So I thought, "Ah, this new rule is a bit
+confusing."   that's
+right.  I also thought, "Oh, as I watched it,
+something like this could spread this quickly, and there might be some
+self-proclaimed controversy."
+Ethically speaking, too.  That's right.  I also have
+people I'm
+talking to about this topic.   In
+a way, this actually means that a
+company worth hundreds of trillions of won has spent years honing its
+intangible know-how, and that this is being indiscriminately
+taken and used everywhere simply because it was leaked
+. It means that replication has become far too easy.  that's right.
+Actually, because of AI, the act of finding blessings
+itself has just become too easy.   that's
+right.  That is also why we are doing this
+.
+Exactly.  So
+the point of whether this is logical or illogical is also very complex,
+but I think one thing is certain: it was exactly right
+.  Well, I
+think it would be good to cover this further later, but
+yes.
+There is a counterargument to this, but
+even Claude Cod
+actually keeps releasing beta tests, and does
+n't he allow customers to build their own products and skills based on that?  hmm.
+And even Clod Code
+said that they use their LLM to write over 90% of their code, right?  They themselves.
+Then it wasn't written by AI?  Ah,
+so regarding who the original author is and
+how this came about, I felt that our
+traditional values ​​need to be significantly challenged and
+redefined. I
+saw articles in newspapers like the Daily Economy today and yesterday, but I
+thought, "Ah, this isn't the kind of change that can be captured in places like this."
+Ah, that is actually true.  That is
+correct, because the LM itself learns from existing things and replicates them, so rather than producing completely new results, it simply produces good prediction outcomes.  Those people
+make websites at Vibe Coding, you know.  But
+everyone thinks they created it themselves, but
+in reality, they just learn from a really cool and great
+reference website and
+use it, so without even
+realizing it, they are infringing on someone's copyright
+.   that's
+right.  that's right.
+So, what is copyright anyway?   I
+feel like a lot needs to come.  It really is
+difficult.  Of course, I also
+used it a bit since it was leaked this time.   I
+did study a bit.  I was
+so curious about how it works that I actually have a
+chatbot on my company website as well.  But that was at a
+very light level, but after
+studying the leaked data and
+taking note of how it works, we upgraded our website
+arrest to a superpower
+.
+Ah, so... I mean, you wrote a post on LinkedIn, so you're in a
+dopamine max state right now, aren't you?   that's
+right.  that's right.  A lot of people were really
+interested.  Actually, I didn't
+think so.  I just
+wrote it lightly, thought, "Oh, how about structuring it like this and using it as a
+reference to make something like Channeler?" So,
+honestly, I really didn't do anything special
+.  I just looked at it and wondered if there was anything I could
+refer to, so I just
+clicked a few times. But because I was
+thinking of it as something really amazing, I felt a bit
+humbled, and I also wondered if I was doing it right. It was
+a bit confusing, so I
+guess it was fun and confusing at the same time.  The
+point I liked about that is that,
+ultimately, when we use AI to do something,
+we do
+n't just think the way we originally did; instead,
+we need to refine and structure our thinking so that the AI ​​can create it well
+.
+So, I think the very process that Hyunjong went through using the Claude Code served as a
+great source of inspiration for people.
+Hmm, for me too, it wasn't really about "
+what marketing hit went viral."
+Instead, since it's
+so easy for a
+marketing campaign to go viral and so easy to fail, I found myself thinking a lot about how to repeat the process, how to keep moving forward little by little, and how to compound the results. I think
+people showed a bit of that kind of framework, which is why I think they were
+very interested. Hmm,
+I see.  okay.  I'll frame it that way
+.  [Laughs]
+Yes.  great.  So, well, I'm going to
+talk about entropics in more depth a little later, but
+the point where my thinking shifted the most this week was that
+AI-native growth
+breaks down many things.
+Breaking down pricing policies is
+obvious, but
+we now need to re-evaluate and
+look at PMF.
+I think the um... was quite different.   that's
+right.  So, they grew
+incredibly fast, in a way that was vastly different from the typical growth of GTM or any other company
+. Just look at these examples.
+So I do think it might be exactly different
+.  So, the traditional
+Product Market Fit (PMF) is essentially the
+point where you upload something and find it difficult because there is too much demand. PMF is achieved when, at that moment of difficulty, your
+product aligns perfectly with the market. Since
+this can happen on the very first day or
+accumulate over time, you really
+need to define it well and move forward. Because the difference between a successful state and an unsuccessful state is incredibly clear, there
+was a recent post emphasizing that you must pursue that very, very effectively.
+And if you look at that, it mentions Clay—yes, Clay, which Hyunjong really
+likes—and it says that it took the
+longest time for them to reach that level
+.   That's right
+.  I mean, it took a really long time, like about six years
+.  If we
+interpret this now, it is a SAS company that is doing exceptionally well in the AI ​​era
+.  You might say it's strange, but in
+reality, it
+took a very long time to reach that point.   hmm.
+But on the other hand, conversely... well,
+first of all, regarding what I was curious about,
+how do we determine that we have found the PB star?
+Uh,
+those AI companies,
+AI companies,
+AI native companies,
+AI native companies, yes, yes
+.
+Ah, but regarding the subject itself, it seems like BMF is
+always the same emotion. So, if I just say, "Ah, never mind," and
+define it for myself, then I feel like, "
+Ah, that's it."
+Ah, this is a bit of an example. But for Do Pan-min and
+Max, when things turned out beyond their imagination,
+isn't that usually the turning point?   hmm.
+Then, how much faster are those companies
+?  So, compared to ordinary existing
+SAS or companies that simply build products,
+how quickly do AI-native companies
+reach the PM level?
+Ah, I don't think reaching PMF quickly is the
+key point anymore.
+Actually, the point I want to make here is that you
+should only continue until you discover PMF.   hmm.
+So, what I think is that, up until now, we used to
+cut down on product features—thinking, "Oh, maybe
+customers are dissatisfied because this feature is missing?"—and while maintaining a good
+overall hypothesis, if we did something like that, it was
+n't like that. Instead, we should have been sharper and more precise to
+satisfy them; if we didn't, we should have discarded it or completely re-evaluated
+our
+approach. The cycle is changing significantly and
+evolving more rapidly,
+and that is the shifting perspective, which I believe is correct
+.  So, you have to
+keep taking something sharp and fast enough to overturn the entire product hypothesis
+.
+Is it kind of like this?
+you're right.   hmm.  hmm.
+So, in the past, instead of thinking, "I am making the right product and
+customers are moderately satisfied," I
+considered "moderately satisfied" to mean they were practically satisfied or dissatisfied. I
+thought of it as either super satisfied or slightly undersatisfied. So,
+to achieve super satisfied customers, you have to do something super amazing, right?   I
+think the key point is that one must constantly cultivate a frame of thought, as well as the mindset and perspective itself necessary for managing and living in this era.
+That perspective is vinyl.  So, it
+'s either 0 or 1.  you're right.   Will it fail,
+or will it be a huge success?
+you're right.   There are
+no middle moats.   yes
+.  But to me, this feels like a deep sleep for a startup, and it
+seems to be getting too close to the original rules.
+So, usually,
+startup CEOs consider receiving investment a
+major milestone, and
+investors always say, "Yeah, this is a given." There is an
+unavoidable difference, but this is becoming
+increasingly apparent. If you fail after
+receiving Series A, B, or C funding,
+why did you put in all that effort?  It would be better
+not to get a Series A, because things just don't go well from the start
+.
+yes.  yes.  yes.
+But it
+seems like that kind of thing is gradually being incorporated into management strategies and customer relations as well.  So, what was
+interesting here was that the
+process of determining whether or not PMF was present became so fast because, in
+fact, resistance to paid subscriptions was
+extremely low.
+Ah, premium.  Oh, that's
+true, but if you just think about it, our country was uniquely stingy when it came to paying for subscription software.  that's right.
+Honestly, a lot of people really do the whip payment
+.   that's
+right.  That's why they call it digital
+rent these days.
+Exactly.   It's
+incredibly easy.  However,
+in a country that used to heavily rely on pirated goods, people have become quite accustomed to
+paying for things. Perhaps because there is a basic expectation that "if this is useful, it will be
+very good for me," it does not take
+long to reach a critical threshold like in the past. I believe this is a
+new customer phenomenon of this era, and it seems that we need to
+understand this and incorporate it into our management strategies
+.   hmm.
+Then, because of the AI, it ends up being
+0 or 1, but if we
+have Pimiple like that, the
+existing formulas we used won't be blocked,
+right?  So it's really fast.  Right now it's
+fast, vinyl, and in this form,
+so I understand that the teams taking responsibility for this and growing—I mean,
+0 and 1—are the ones.  I get that you
+hit the jackpot.  Then what should I do
+?  I'm having a bit of a dilemma like this.   That's right
+.  I think the product manufacturing team just
+needs to make the product well.
+For the product designed to make 1 out of 0, I just thought, "Oh, this is a
+failure."  Then you can just go with the
+new product.
+But that's right.  So, the Growth Team—or whatever the
+Customer Team—is basically saying, "Okay, sorry, it all went to hell, so
+you start over from the beginning." That’s how it goes
+.
+Exactly.  That is really
+embarrassing.
+yes.  However, we are currently working with and discussing
+many companies that are doing those things well, and as I
+mentioned earlier, Entropy is
+now actively utilizing all of those things within its internal framework
+.
+Last time, Lovable also reached
+100 points and managed the Lovable score, and I
+heard that Antropic uses a system called Cache.
+Cash?  Are you making money?  You can view it as Claude
+Accelerateable
+thinking about Hypercross with four specific points,
+actually integrating AI extensively to check how far it can go, and
+frameworkizing the process of using AI to satisfy customers,
+testing it step by step, and cultivating it
+.  But
+explaining it this way feels a bit vague.
+Andrei Kapathy recently created a
+wiki, and things
+like Auto Research all have a similar
+feel.
+Ultimately, if you set up a framer well and
+run the AI ​​indefinitely inside it, there are
+parts it can handle accurately and
+parts it cannot.
+Then, the structure is designed so that humans can focus on the parts they cannot do
+.
+Um, I think you just need to understand the overall concept a little more
+.  Oh,
+I really relate to this because
+one of the projects I'm currently working on at my company is exactly that
+.  So, what I am doing is
+that company is
+transitioning its product to a PG, and since it originally
+used B2 to
+operate as a self-server for sending to customers, there is
+absolutely no CRM sequence.  I am
+setting this up entirely from scratch, and
+well, our team is huge.
+So, we are checking when, why, and how various departments
+send messages, and
+then we have to design this ourselves. I
+structured it in just a few clicks, but you're telling me to
+refer to papers or services from experts in CRM.
+And as we go through the setup, we'll have
+50 virtual agents.
+After listening to our client's previous back data, I'll say, "
+Hey, run this sequence to see if it's
+appropriate."  So, let's
+run a cycle like this to see how far we can reach our desired goal.  Then, if I review the results and
+find anything lacking, I provide feedback and
+run it again; if it passes the relevant checks, I run it again for reference
+.
+I feel like it is somewhat similar to that kind of process.  So, after establishing the structure and
+running the AI ​​through it,
+I just looked at the results and made judgments like, "Ah, this is where
+I need to collaborate with which department and
+what kind of data I need to extract," and it turned out to be really
+easy and fast.  In about 4 hours
+.  So, I just finished off the task of figuring out what message to send from the warrior
+.   That's right
+.  So,
+since you have established the framework and infrastructure, even if the product
+keeps changing, if we simply adapt and
+apply it little by little, you
+can view it as the journey and structure of how we interact with customers continuously building up
+.  Because, as is being said here,
+while we might view Entropic as a competent and
+good company, the
+things they sell—like Glued, Code, and
+Core—actually make things too diverse. Since there are
+AI models that perform exceptionally well and
+others that perform very poorly, they say it is very
+difficult to effectively communicate this to customers.
+So, as they were doing this, they realized
+they could never do it.  They say they are building it now, insisting that they must proceed by creating the system this way no matter what
+.  So, because of that, I have a question: you know how to
+build a system.  Then A
+takes care of everything on their own.  So, I want to know
+how far this has gone and what has been done. I actually
+use this quite often myself,
+but there are times when I just want to go through it automatically in Dangerous Skill mode and
+only see the final result
+.  If you set up the system
+well.  yes.  yes.
+So now, to what extent should I approve or
+not approve?  I was a bit
+worried about this again.  Ah, but since
+this person is
+the head of this organization, they do
+n't go into such detailed talk on the Lenis podcast.
+[Laughs]
+Okay.   Do as you please
+.  Do as you please.
+Alago.  Ah, that really seemed like a bit of a
+real-world internet friction
+.
+yes.  Ah, but if we start with this person, I
+think the story will be a bit more engaging.
+Uh, he was originally a startup founder, and
+before that, he was in charge of things like Head of Cross at a company called Mercury, where he also
+produced a lot of Masterclasses and growth lectures
+.  So, in
+fact, from the perspective of customer acquisition, he is someone who has already established a certain degree of
+agenda leadership and
+created his own world
+.   hmm.  hmm.  hmm.
+But uh, this person is the only one in the Antropics, and the only one
+in the Cross Team,
+yes.
+Uh, Mario is said to be
+someone who was hired after contacting the founder via cold call
+.
+Oh, really?
+Wow, that's amazing.  [Laughs] It really isn't easy to make a call
+.
+Ah, so he has been an expert in cold calling
+and has
+honed his skills for many years, but it
+seems like that is actually what makes him naturally inclined toward a company like Entro.
+How many calls would that founder
+receive?   hmm.  hmm.
+However, to make a good impact on that person, you should
+n't take the conventional route
+.  hmm.
+While doing so, now yes.  I heard that he passed away like that
+.
+Oh, you're an amazing person.   yes
+.  So, I
+heard that they somehow found the personal email address, packed the subject line,
+the topic, and the value limits they could offer right into it, and
+delivered it really well.   hmm.
+So, ah, as expected of a crazy person, the customer is really
+good at using an axe right away as soon as they arrive.  But
+then, the way these people have
+solved problems and the
+frameworks they have used seemed to be very helpful to us
+.
+So, well, let's move on to the next topic right away
+. Yes.
+Actually, if you are at a company like Antropics,
+most
+people in the startup world
+strive to join a rapidly growing company
+.  that's right.
+Or, if they are doing it to build a company they know into
+that kind of thing,
+what is important is not what they are doing, but
+spending a lot of resources on solving the numerous problems that arise from rapid growth.   uh
+.  hmm.  hmm.  hmm.
+Actually, if there are no problems, it
+doesn't mean it is growing rapidly.
+what.  That's right.  Right.   It's
+normal growth.  huh.  huh.  huh.   huh
+.  However, most problem-solving
+consumes a lot of energy. To reduce that, they utilized the
+caching framework I mentioned earlier and leveraged AI to
+continuously define the sustainable
+management needs and move forward. I think the biggest difference was that they delegated these tasks.
+So, what they were actually confident about was
+taking actions for future growth—about 50 to 70 percent of the time—rather than just maintenance; that was exactly where their
+confidence lay.  hmm.
+But while listening earlier, I was
+curious about the level of sophistication in that automated system that runs automatically within a cache structure.
+Well, that company also has a brand called Amplitu, and they are really
+good at customer behavior analysis data
+.
+Companies that have been excellent at making such tools for the past few decades now create AI agents, Wenfleet
+Agent tools, and they
+automatically design product experiments, provide
+guidance, and
+continuously make changes.   For
+example, it automatically handles things like changing website city butter
+or tweaking wording, or
+designing things autonomously to boost sales by popping up a pop-up
+window at the right moment to say "do this." But after listening to
+what was actually done and what is
+good to do within the caching framework mentioned in CloteCode, I heard that
+this person clearly defined it as: "Don't do anything that isn't cool
+."   Do
+n't do things that aren't cool.
+There is a bit of this mindset, and what really struck me as
+correct was that this
+person has the confidence that since
+Entropic is doing well, I have to do well too
+.  There was a bit of this, so what I
+mean is,
+how many times more do you think AI will be used in two years
+?   They
+thought it was 1,000 times more than now.
+A thousand times?  Yeah, whatever, whatever. Let's just say you're
+confident
+.
+But then, what should I do now
+?  huh.  huh.  huh.
+So, I changed the membership registration route and
+um.   It means that it’s
+not about customer service or anything like that
+.   That's right
+.  Exactly.   If I have to do
+everything unconditionally for the next thing, unconditionally for something completely new, then I
+think it is actually a more appropriate way of thinking to entrust everything I have been doing so far to AI.
+Ah,
+A/B testing, turn it off.   huh
+.  huh.  huh.
+Uh, customer funnel loop off.   But then
+how do you do that
+?
+There are accidents that could come out of that, you know.  yes.  It seems like they have implemented a massive number of patchwork measures, such as training AI to detect things like a sudden surge in customer inquiries or a
+server crash that causes a sharp
+drop in traffic, by
+installing agents that monitor all messages within Slack before such problems occur
+.   hmm.
+So, to summarize, since it is going to be a huge
+success anyway, I
+assume that our service will be incredibly popular. I
+break down the potential problems that might arise,
+build a system structure capable of solving them, and then, after that, I
+spend my time deliberating on the customer-oriented values ​​or methodologies we need to provide. Is that a correct way to define it
+?   That is
+exactly right.   hmm.   okay
+.  So my head is a bit forward here
+.   hmm.  hmm.   To be
+honest, since I have
+n't actually worked in a team like this myself,
+I am a bit confused about exactly when to introduce a particular method, but the
+mindset is
+different.
+So, it's totally like being a cleanup hitter—it's like having to
+hit a lot.
+So, I don't do small things.  I only
+hit big ones.  A bit like this:
+uh, yeah, yeah [laughs]
+hero, hero mindset.  Ah, that's right.   You know, I was
+actually a bit like that with Love Lover too
+.  That internal structure and
+when I heard it.  But that is actually pretty much
+right.  But this Antropic is
+cool,
+ah, it's cool again.
+Ah, do you know how much revenue we'll get in '23?   It was
+zero won.
+Ah, [laughs] yes.  okay.   It was
+100 million ARR in 24 years.
+Ah,
+here.  So you're saying it was 150 billion won?   yes
+.
+Ah,
+the exchange rate is crazy.   yes
+.  Then, uh, the following year
+was one billion.   I am
+currently 14 years old.
+and.  It doubled every year, so oh yeah, well, if you
+multiply it a few more times like that, it's going to go a thousand times.
+[Laughs]
+Ah, but it's so different... ah,
+no, never mind.  I
+actually do
+feel a sense of disconnect.
+Ah, but I
+think this is really right.
+Ah, that's right.
+Assuming an AYOY mindset, should I say it
+feels like targeting the next step—how ​​to use AI, and how I change my workflow?  But the reason is that back when things
+like Facebook and Uber were doing well,
+they
+grew by creating a formula that didn't exist before.   That's right
+.
+But at some point, it
+seems like they believe there is some kind of formula in Star Top Shin.   hmm.
+And they said I just need to do that well.   huh
+.  huh.  huh.  huh.
+But the one who created it is the best, right? Right.
+The rest are just
+copying that, aren't they?  I mean, actually, I feel like we are in a chaotic
+era right now, and it seems
+like the people who spout their own quirky philosophies and conduct various experiments within their companies are the ones who actually reach the conclusions. It might be a bit
+paradoxical, but I don't know if the
+people who used to make a fuss have a lot of meta-knowledge or what, but are
+n't they constantly ending up in important positions?
+Oh, right.  It
+seems like those kinds of people create their own space to fight.
+So, it
+seems like it keeps getting bigger.
+So, to put it bluntly, if we ask which
+company has seen the most revenue growth,
+Entropic Lovely comes up. Since
+these growth leaders are coming out to share their stories, there is
+so much we can refer to and learn from them, and we
+want to catch up quickly.
+Yes.  But from what I heard, they were originally
+influencers.  hmm.
+What is this?  It makes me wonder if companies hire influencers just like they make celebrities. Since it’s a
+complete Warring States period right now, I get
+the feeling that those who throw out various ideas and get hit by various things, or those who listen to various information, are constantly getting slightly ahead.  hmm.
+Hearing that kind of talk makes me think
+about teams that are really good at experiments.
+I mean, ultimately, they will conduct a huge number of
+experiments based on their own unique philosophy, won't they?   That's right
+.  Then, after conducting those experiments,
+I have been
+developing it within that group, within the existing grammar, through such experiments.   I'm also a bit
+curious about what kind of mindset is required to carry out the experiments in the next steps
+.   hmm.  What they
+immediately presented here
+was exactly this.  So, the
+first is the owners'
+mindset.   hmm.
+Ah, yeah, damn it, I'm right. In this AI era, I
+have to grow 100 times, 1,000 times.   It’s a
+different
+matter what you are actually doing to grow, not just shouting.
+But to do that, it
+seems really simple—just
+get the right mindset, change what isn't working right now, and
+then remove the bottleneck right away
+.
+Which disease should we remove first?  Ah
+[snorted]
+From the CEO's perspective, this
+is a change in organization.
+The organization... ah, right.  Right.  Usually, that's the case
+.
+yes.  So, if you adjust HR, the rest will match that
+.  that's right.  that's right.  It's the most
+important thing.  okay.
+And then, what was said was to
+kill all the product managers.  [Laughs]
+[Gasping for breath]
+Ah, I'm
+not sure if I should say this, but my
+team members might be listening to the podcast.
+ah.  Ah, that's just my personal opinion.
+When I started my startup career, I
+began as a PM.
+Ah, okay.  I
+started pier too.  So I ran away, but ah,
+regardless of Ms. Hyeonjeong's interests.
+So I just threw it out there, but
+seeing it get hit right away, it’s the essence.
+[Laughs]
+Ah, because this is definitely not that place, but a
+certain CEO said that the
+culture of contraception using PRD needs to be
+killed.  Ah, that is the bottleneck.
+They must now ensure the completeness of the product—that is, that no
+accidents should occur with the product
+.  I heard that because they were focusing on things like how to avoid getting into edge cases and how to ensure
+Kana's
+features could have a big impact and settle well into the overall system
+without causing side effects, they
+started worrying less about actual growth and actual customer success
+.  To be precise, a structure that
+can resolve that problem much better is
+now emerging.
+Uh, what I'm talking about here is that originally, there was
+one PM and a product-related team of
+about four or five people—that is, a 1:5 ratio—but the product
+team's productivity has doubled or tripled.   hmm.   Then it's
+1 to 15.
+So [laughs] the above is bound to be a
+bottleneck.  that's right.
+Uh, so I heard that within Antropic, only
+about 20 to 30% of the work actually uses PRD, while
+70 to 80% now
+just work without using PRD.   They say that an
+engineer will personally become the PM and
+handle the work, and the standard is
+two weeks.
+Running that sprint for two weeks.
+Uh, if that task can be solved within two weeks, they just push it out
+without communicating.
+Ah, so, uh, as I mentioned earlier,
+then 70 or 80% of the work happens
+without going through the PM's hands anymore
+.  Then, the PM
+becomes a slightly higher level, and
+although it plays the role of organizing the numerous 70 or 80% of tasks that require RD or
+occur automatically
+at a metal level,
+ultimately, the PM disappears.   uh
+.  Ah, something I could relate to while listening is that we do a
+lot of these kinds of experiments at our company.  Recently, our
+CEO has
+built an environment where our website can perform highly automated optimization and autonomous driving using AI
+.  I
+discarded all the existing cold files called WebRaws and built a new one,
+yes.
+There is a virtual CR with that CR.   hmm.  hmm.
+So, he looks through the data, and
+after looking at it for a week or so, he
+looks at it for a day or so and says, "Hey,
+looking at this data, it's like this, and since there is this
+hypothesis, if we do this, it will
+change," and throws it at me.  Then, the
+person in charge, like me, or the marketers simply look at that and
+decide whether or not to adopt it
+.
+But so, it feels like Pee has become a bit of an AI
+.   hmm.   It
+seemed like that was the case.  Now that
+I look at it.  So, actually, this is a task that should have been
+tackled like a TF, but it's just a
+machine that handles it automatically plus takes care of
+all the minor builds.   that's
+right.  that's right.  Actually,
+changing the website doesn't really change much. What's
+more important is the website itself
+.  So, originally, there used to be a
+PM who would go through a process of thinking about what needed to be done,
+setting timelines, and allocating resources. But just
+looking at our case, since we replaced all of that with AI, it’s
+incredibly fast.
+So you can spend more time on slightly larger bets
+.   hmm.  hmm.
+But regarding this, I’ve
+heard that the concept is a bit difficult in Korea. Ever since
+I was a college student, whenever I
+interacted with people at Naver or similar places, I heard a
+lot of comments like this.
+Except for Japan and Korea, the job title of "planner"
+itself does not exist.
+We have traditionally been a bit of a management-oriented people, to the extent that there is even a saying like this.
+On the other hand, that implies that engineers can take on a
+challenge to see if they have sufficient capability to become a PM themselves, and
+um.   uh
+.  yes.  And can a PM also do more of this level of
+more strategic thinking
+?  So, the PO role has
+n't been around for very long, right?   that's
+right.  that's right.
+So,
+I think this role change is violent to everyone.  Actually, we jokingly approached the
+PM first, but when we did, we were like, "Wow,
+this is
+possible."   hmm.
+Because I
+was born in Germany and received a Western education before
+coming to Korea, what I'm really
+good at is asking questions.   hmm.  hmm.
+[Laughs] Professor, you're good at this kind of thing without worrying about what others think. But if
+there isn't a culture like that, actually, the basics of problem
+definition and solution aren't known.   You should
+n't act a bit like a goody-two-shoes
+.   That's right
+.  That's right.  You absolutely have to
+go in with the float.  So originally, we
+had somewhat concentrated the sales and non-product organization's roles, but since
+everyone is being told to do the same, I
+think, "Ah, this isn't going to be easy
+."   that's
+right.  So, it feels a bit like the Warring States period. Yes, it’s
+really like engineers who are good at talking—
+that is, people who are good at asserting their opinions
+and, ultimately, if
+I were to sum it up in one word—
+people who are accustomed to defining and solving problems—I
+think they are really good at this.
+So, even if you aren't a PM, in my
+case, I am currently handling a sales role within the organization and leading the development of a
+new product. While it might seem that
+anyone just needs to solve problems well, it isn't that
+easy in Korea
+.  I felt that organizational change and, I mean, the
+CEO's philosophy, are also really important
+.
+Exactly.  That philosophy is important, and the
+members
+must also be prepared to face this change.  But actually, I
+think it's a good opportunity to increase my market value.  hmm.  That's right.  That's right.
+Yes. As AI is being widely applied,
+within the organization, the "new technology
+lovers"—who were originally seen as troublesome,
+underperforming guys—are actually... well
+, there is something like this.  I heard that
+place is good.  Just as the
+roles and
+treatment of AI evangelists have improved, it
+seems that for engineers, while they originally had a stronger engineering mindset, the ability to persuade and coordinate with others is becoming more important.  In a way, it
+feels like the Palantir people again.   As
+we mentioned at the beginning of Episode 1,
+those developers, like Palan, are also reading books where they have to persuade others,
+right?
+It seems like that is becoming quite common, and I’m kind of like an AI Evalenchest at my company as well
+.
+me too.  But whenever people like that
+gather, there is always one
+episode they experience where they cause trouble.   hmm.
+So, they tend to cause safety and security incidents
+.  So, I’d like to take this opportunity to
+apologize once again to our security [laughs]. It’s kind of
+fascinating to come across something so new.  Let's
+apply it quickly.  Let's make an impact.  As I
+do things this way, I get the feeling that there is always a bit of a trade-off regarding safety
+.  So I'm having some
+concerns about that.   Yes,
+Antropic is really amazing
+.
+So, it turns out there is another protocol to deal with that
+.
+Ah, that's really amazing.
+Ah, but everything is there.  why?  No,
+but I think this is kind of up to you to explain
+.
+Ah, but uh, I think this is
+something worth thinking about right now.
+Uh, you
+commit countless acts while growing up, so
+how can you be safe?
+Ah, that's right.  That is my
+mindset.   They said they had
+thrown away the sales.
+Ah,
+well, it's ridiculous.
+Discard sales.   uh
+.  uh.
+So, uh, ultimately, people
+say a lot about what the actual problem is, but yeah.   The
+real problem is
+when they don't provide that service to the person who pays.
+Right?  Then it would be a complete legal issue as well
+.
+So yes.  It’s a customer thing, so saying, "Hey, I’m trying to
+buy your stuff, why aren’t you replying?" is a
+problem in the brain, but it’s not a problem in reality
+.   hmm.  That's right
+.  So, I think the
+most
+important point was that we primarily pursue sales within a capacity we can actually handle, rather than blindly prioritizing making money. If we think about
+this a little differently and
+more deeply, you can view the idea of
+going completely in the opposite direction as essentially attacking the funnel-centric way of thinking
+.   That's
+right.   yes
+.  So, the process of a customer getting to know us,
+converting them into a buyer, and
+retaining them
+ultimately involves continuously resolving those bottlenecks to make it
+smooth, right?   So you can
+pay with a click and use it right away
+.   Right
+?  that's right.  that's right.
+But they say that shouldn't happen.   hmm.  hmm.
+Since we cannot handle or respond to those people in this regard,
+we have decided to introduce an intentional friction criterion beforehand and only accept those who pass it
+.   hmm.
+But then, that is
+n't a funnel either.  So, there is a funnel, and when
+passing through it, is it like only those who are meant to pass are allowed
+to go?
+Ah, that's right.  But the word "funnel"
+itself is just a neutral word.
+Exactly.
+yes.  It's just the journey to get here, you know.
+But regarding the term "funnel," they say that we
+absolutely have to
+pass on the methodology that Salesforce has created, which is so deeply ingrained.
+Ah, that's right.  Moving on to the next step. Ah, that's right, that's
+correct.  that's right.
+So blow it away.   There is
+no 'get rid of'.   There wasn't anything like having to set the
+net tight here
+.   Right, right
+.  But here, you have to
+intentionally place a net.
+However, that is not the core of the network; rather, the point is that we need to
+intentionally incorporate many survey elements, such as using the network to identify customer needs.
+Regarding the activities we conduct—both at Delta and at Delta Soji—I am
+truly sorry, and from a business perspective, it might be an odd
+decision, but we always
+intentionally eliminate a huge number of candidates.   hmm.
+To be honest, even with things like our AI Native Camp, we actually started by rejecting about 70 or 80% of the students.
+Um,
+even when we hold events, we always reject more than half. Uh, I don't
+know.  Since we are
+conveying our thoughts anyway, it wouldn't be
+good to convey them to more people
+.  You might think, "Yeah, yeah," but
+we just
+scoff. If we're just trying to convey
+our ideas, well, we can just use
+media. However, when it comes to actual
+community interactions or
+exchanging value with customers, we tend to
+use a lot of intentional friction like this
+.
+While doing so, we listen to people's thoughts a lot, and whenever we do
+various activities, we always end up
+asking, "What is it?"
+What is the motive?  yes.
+And if you
+come here, what can you contribute?   huh
+.  Yeah, yeah.  huh.   That's
+arrogant.  They are asking what I will contribute to the customer
+.
+But I know that you come to us because our value lies in having only those kinds of people gather
+.  So, we
+have to protect that; protecting the customer's fun is
+not our protection.   hmm.
+I think there is one more point where one might be curious and ask a counter-question.
+I mean, actually, we focus on
+glossing over the obvious, just as you mentioned
+.  But as we walked around and kept
+passing by, we ended up
+finding a group that we really needed to find. You know how we use the
+technical term "
+managing the court" to describe that?
+So just shove everything in for now.
+Move on to the next step.  But if you establish a specific
+domain and it has repeatability,
+good retention, and satisfaction, then
+spreading the grammar or methodology developed there to other domains to persuade them is also a form of grammar.
+So, when you talk about entroping, is it like saying that
+instead of establishing such domains, you create friction from the start to ensure only the most valuable
+people—like a metal or gold mine—just
+come in right away?
+Ah, that... but regarding the court,
+justice could
+come out much more in depth, you know?
+Ten thousand people came and 100 paid, but
+three of them were coats and things like that, right?
+Actually, yes.  So,
+I think there are some parts that are a bit confusing.   To
+explain.
+However, the core point is that we
+received a lot of customer feedback within that filter, so...
+And now, as I mentioned earlier,
+what contributions can we make?  What is your
+motivation?  Basically, the
+customers have a certain homogeneity and
+core essence that is similar, you know.   that's
+right.  that's right.
+That is how we can plan it.
+Ah yes.  So, from the very beginning, you take that coat and conduct an
+experiment to
+create an overwhelming product, or set
+limits like that, and then use that to
+satisfy the whole. I mean, you
+add a bit more HUD, and with the will,
+values, and homogeneity I mentioned enough to pass through that HUD, you
+add something to
+make a big impact, and then bring that back to the first
+funner, like a
+cycle.
+So, because as I mentioned earlier, they say that
+with AI, things will increase 100-fold in two years.
+Therefore, the important thing is not just filtering people, but rather using that filtering process to achieve something that
+satisfies 100 times that amount at once. The
+key is moving toward a "something" that can satisfy everyone at once.
+To do this, we need to accurately define
+who our customers are through intentional friction and
+run a cycle that satisfies them.   You
+can view the sound value as the overall flow.   I tend to like
+applying the insights I gain from working on Perquest directly in the field.
+So, if we decide to intentionally create friction to retain
+some homosexual people in our service, remember what I
+said at the beginning was that we are sacrificing a certain amount of revenue
+.  How am
+I supposed to convince Sirebek of that?  So,
+I want to sacrifice sales, create friction in the Udujeong area, and really find this and move forward.  Could I also
+easily decide on this in Korea
+?  I did have a bit of a thought like that,
+though.
+Uh, but I was actually really annoyed by this
+.  It felt like the button was suddenly
+pressed, but
+wasn't everything you just said logical? Yes, it is logical.
+Ah,
+so
+isn't that the logic for growing 100 or 1,000 times?   that's
+right.  that's right.
+But how can I refuse that?   So, it
+was just something like this feeling.  Oh yes.
+So, uh, but this itself
+was logic.  hmm.   But I
+think this is it.
+Then how are you going to grow a hundred or a thousand times
+?  I think that is actually a more correct question
+. Right.
+ah.  ah.  Ah, okay.  So, this is it
+.  To be honest, none
+of the executives listening to this—I
+mean, aside from the co-founders—
+hold more than 5% of the shares, right?
+Honestly, it doesn't exist structurally.
+okay.  Then, the people who don't have the 5% wo
+n't say anything.  Will everyone keep their
+mouths shut?  why?  Because that person has
+20 or 30 times more than me.
+hmm.  I won't say.
+Then they have to find a way
+.   that's
+right.  that's right.
+How are you going to find it?   Since
+we are discussing a solution for that right now
+.  Well,
+of course, I do think that is something they need to consider more seriously
+.
+Listen to this.
+Ah, why?  [Laughs] It’s better to have someone else
+say it.
+Ah, right, right, right.   It is
+difficult to say it yourself.  Please listen
+.   yes
+.  Please let me hear this.  Please send us our channel
+.  But, uh, I
+think the flow itself was just a logic.   hmm.  I
+understand.  yes.   hmm.
+Ah, of course, you should discard the customer
+.  That doesn't make sense.  But there
+is no right answer to how to grow 100 times while capturing all the customers anyway.   hmm.
+Well, I
+think that's absolutely right.   hmm.  Looking
+back a bit, when I was
+launching my product, I also thought that to get
+nice metrics, it would be easier to just gather a lot of people and work with the results
+.  However, since we brought in people who didn't seem like our customers,
+and because I brought them in so smoothly without any intentional friction—looking at how
+many active organizations there were—I was actually
+having some difficulty interpreting the data and moving on to the next stage because there was a lot of messy data
+.  But [snorting] as I listen to them, I think they're
+really right
+.
+Ah, the incentive line is really
+important here, you know.   "
+Oh, I'll give you a 200 shining bonus right now. But what's
+better than that is... well, a
+startup is going to be hugely successful in 10 years anyway, so we work under that premise. So just align yourself with that. But if
+I want to get my performance recognized right now,
+[laughs] I have to do something else, and ah,
+this is difficult."
+Yes. I
+think it might be this part.   that's
+right.  that's right.
+yes.   Please
+give me some incentives.  [Laughs]
+Ah, but hearing it like this,
+yes.  Uh,
+actually. It seems like
+people like Head of Growth use external media to
+position themselves in a more advantageous position,
+using game theory to their advantage.
+Ah,
+so
+as an employee, it’s not easy to call for such fundamental changes and work subordinately
+.  huh.  huh.  huh.
+But you throw this out to the outside and
+get empathy from the outside.   huh
+.
+Face each other from the outside.
+Then, it feels like we have no choice but to persuade them from the inside
+.  Uh, well, well, that's right
+.  So, I
+think this won't be easy because there is feedback from the outside, who knows best that what you said is right.  Because, what I found
+really interesting was that when I was on the Hyundai Motor CBC
+team, investing in something was
+incredibly difficult.  Well, naturally, our
+team's role is investment, so we do it. But since
+the goal for most Hyundai Motor teams is to make good products and
+satisfy customers, we don't like it when they keep telling us to
+partner with others.   huh
+.
+So, when someone suggests doing something, it absolutely cannot be done
+.   hmm.   I
+invested.  They say they'll do everything once it comes out on the news.
+Ah,
+so actually, if I look at the daily economy and say, "
+Oh, our company did this,"
+those main workplaces change and
+contact me.
+ah.
+So, it seems that external initiatives are more powerful than internal ones.
+Breaking away from this customer-centric, product-centric worldview seems to involve external
+PR efforts that actually
+empower the internal structure.   hmm.
+Then, really, Im Ju-won—I mean, individuals—will
+have to handle media on their own.  Just like
+I said back then.
+Ah, if you want to be treated properly...
+ah, but rather than proper treatment,
+uh, if I want to engage in bold,
+um,
+activities and have my achievements recognized,
+because actually, if I
+want to...
+yes.  Because everyone attends startups wanting to multiply a hundredfold or a thousandfold, and while it's all just
+classes,
+sometimes there are those that hit the jackpot,
+um.  I think
+everyone works because they want to become the kind of person that the countless employees at Coupang have earned over 10 billion won.
+You also
+have to make a bet on that ideal, but I
+believe the impact comes not from traditional management methodologies or doing things in a conventional way, but from doing things in a completely different way.   hmm.  I'm
+sorry.
+Ah,
+as we talk like this, we end up discussing a lot about Antropic's
+bets on its customers, its differentiating
+elements, its
+way of thinking, and those
+inverted aspects
+.
+Exactly.  If we're going to talk about today,
+how would you define the content of the podcast you listened to?   hmm.  To
+summarize it... well, it feels like I always end up
+summarizing it the same way no matter what I hear.
+[Clears throat]
+Uh, just do the system.
+Systematize it.   We
+need to systematize something regarding customers
+.  Manage the system by entrusting a lot to AI
+.  hmm.
+And another thing is to
+move beyond the perspective of the funnel and
+instead identify ways to deliver a stronger impact to core customers, reframe
+that, and turn it into a
+business.   hmm.
+Because the reason product manufacturing has become cheaper is that the intended
+usage
+direction and routes have changed, I
+think many people are doing it this way.   hmm.  hmm.
+And it seems like organizational change is becoming quite strong, and
+within that,
+people's mindsets and the
+roles they are expected to play are changing significantly.
+I think organizational change is especially the most important thing.  Ultimately, just like in our last
+episode,
+organizations like Duolingo aren't simply "benefit"
+organizations; instead, they operate as "customer success"
+organizations, focusing on how to maximize
+customer satisfaction at every stage of the journey. In
+fact, organizations need to change in this way so that an
+individual's role
+becomes clearer, and because that role
+operates within that structure, it really does allow for a significant impact.
+So, [snorting]
+as we have to change existing grammar and organizational changes, as I
+keep hearing this, I actually think that the
+HR team—that is, the People Team—needs to
+think much more about AI Native.  I did kind of
+think that.
+So, it
+seems like this is the point where the impact of the work you are doing becomes incredibly high.
+Compared to the past.  hmm.   If it
+were maintenance, now it really
+feels like being on the frontier of pioneering.  So,
+people teams and HR-
+related organizations need to become even more familiar and accustomed to these AI-
+native technical aspects for
+real organizational change to
+occur.  Honestly, from the perspective of an individual employee, if you just tell them to figure it out on their own, it
+feels like we are running endlessly without any organizational change, so it is really difficult.
+So, we have to do this even though no one takes responsibility for it
+.
+yes.  [Laughs] It just turned out that way
+.  So, that
+thought suddenly crossed my mind.  Self-reflection.
+great.  Finally, shall we talk
+a little about America as a matter of anguish?   yes
+.  yes.  yes.  I heard that a
+lot happened on your way back,
+so what exactly are you curious about?  Well,
+first of all, I'm curious about what you did and what you
+actually felt was the biggest change there.   I am also
+more curious about the things in Korea that I haven't yet experienced.
+Ah, but as for what I did there,
+I think I attended three events and had quite a few meetings.
+Uh, for the
+two events, I helped with an event called Ralphton and an
+event called Omocon.
+What exactly is Ralphton?  I noticed that a
+lot of people were curious about Ralph.
+Ah, yes.  You might have seen things like LinkedIn, but it’s
+like the Claude Code; you create a specific
+situation and, until it is executed—for
+example, you have to
+solve math problems until you get a perfect score—you know, something like that
+.  It is based on the Ralph Loop, which is an
+anthropomorphic like the Simpsons character that spins forever.
+Similarly, when
+you run a Life Loop to make a specific product, it doesn't work immediately; it has to
+run for tens of minutes or several hours.   yes
+.  We set it up to run,
+pressed Ralph, and a few hours later, we
+held a competition using that product. It was a
+hackathon-style
+event called Ralphton, where those who utilized AI well and structured it effectively could achieve results. The concept was
+interesting, so
+builders showed a lot of interest.
+Also, OMA's Open Code—an
+open-source harness project that allows you to effectively utilize the AI ​​environment—became a huge
+global hit.
+The people who helped build it and formed that community
+went to a meet-up event.   hmm.
+There are even people who just took a plane all the way from Arizona and things like that.
+Wow, that's amazing.
+yes.  So, since they asked me a lot about the concept of that somewhat core product, Jin, and the
+context of how it is made, I
+also went to that event.
+Now that I've looked through it all, what I
+felt was, 'Well, even so, considering that
+this is happening in Sampran, the
+center of the global startup scene, in a very small country like Korea—which accounts for about
+1.7% to 7% of the world's
+GDP—there is something special about the very fact that people are showing so much interest and doing something like this.' I guess I felt that way, and I thought, 'I need to do something,' so the next day, we
+held an after-party with a specific concept
+.   yes
+.  Uh, is it like KAI?
+I think KI is a bit right.
+Uh, some people in our country—
+our generation doesn't know this, but the
+older generation knows it very well—
+[clears throat] they really
+like that a lot of internet cables have been laid out.   yes
+.
+Did you know there was a time when people took pride in Korea's fast internet speeds?  yes.  uh.  Well, I do
+n't really know.
+Oh, really?  yes.  So,
+thinking that the internet is the next something, whether
+government-led or centered on border enterprises,
+ah, it sounds like something I've heard of [clears throat]
+.   yes
+.  They laid a lot of groundwork, and back
+when things like MegaPass existed, those things served as the foundation that allowed them to ride the IT
+boom in a favorable way
+.
+I also heard that he played a part in the PC bang business.
+Oh, that's right.  Something like that.   yes
+.  In fact,
+regarding certain phenomena, our country is at a somewhat frontier
+level. What I felt was that
+we are a country that is quite serious about AI applications—
+that is, using AI to do things
+.   oh
+.  Ah, actually, even
+when we just looked at Entropack or Open, they
+established branches in Korea and showed interest in the country. As
+we
+keep saying, they are
+companies that have grown tremendously in scale.  But usually, when
+such companies enter the Asian market, they tend to establish their
+headquarters in Singapore and then move on to China,
+Japan, and then Korea. So, showing
+interest right away in Korea... well, I'm just
+kidding.  When I see Brother Elon Musk
+occasionally interacting with us in Korea quite a bit,
+I also get the feeling that there is something to it.   yes
+.  So, there really is a bit of a gap. I
+mean, things that are taken for granted overseas—like, "Oh, that's obvious"—when they
+come to Korea, people just think, "Oh, I see." But when I
+went there, everyone was talking about G-Stacks—that is, harnesses—saying things like, "It's the
+G-Stack made by the Germans," and asking things like, "
+How do you use it?" or "What do you
+need to do?" It
+felt like the discussions there weren't very deep.
+Oh, now is the time, everyone. Yes, yes.
+Actually, whether it's various
+news or newsletters
+related to different products, back in the
+days of SAS and B2B, you used to get
+the feeling that the experimental depth here was really profound. But
+now, the
+depth of experimentation and deliberation happening around us is quite deep and at a
+front-end level. Just
+like how our domestic team was the best at catching the leaked code, quickly distributing it, and turning it into a project.  huh.   huh
+.
+ah.  It feels like something is dense.   Rather
+than expected.  hmm.  huh.   Since I went
+there, there was a lot of blindness, and
+Sampran was too builder-centric.
+Ah, that's right.  That's right.  yes.  yes.
+yes.  It's the city of makers.
+yes.  So, they go around carrying things around and saying, "
+Oh, I
+made something like this."  If I don't say things like this, they
+don't treat me like a human being [laughs], I guess that's just the
+feeling.  So, regarding the
+focus on creating and spreading things, there is a lot of crappy
+culture surrounding it,
+so it feels like only this aspect is visible.
+The scope for utilizing AI is
+much broader at the corporate and business levels, but rather
+than experimenting with that, it feels like people are still rushing ahead because they think creating something here will be a huge hit. Since
+our country is
+not in an environment where we can create such impactful things, to be
+frank, it
+seems like there are actually a lot of news cases and contexts about how to use it effectively.   hmm.  I
+think it would be really great if people in Korea who want to create such cases or pursue this could talk with us and gather together.  I'm way
+ahead of you, really fast.
+Exactly.  So, I’ve been thinking about
+how we can structure these opportunities to provide them effectively.
+Now that Hyunjong
+has created the website, if we just add things to Beyond Product
+there,
+everyone can contact us.  I'll add
+something to the comments section here in the description
+.
+Ah, I speak in real-time, then build and insert it
+.   yes
+.  Ah, well, I do
+n't have it right now, but I'll
+definitely do it.  yes.
+AI helps make it possible.   yes
+.  great.  So, every week we will
+bring you topics worth discussing and some more interesting cases than you might expect, so we will see you again
+next week
+. This has been
+Biondoo Product.
+thank you

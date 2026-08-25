@@ -47,13 +47,15 @@ threads_dir.mkdir(parents=True)
 total_scrap.OUTPUT_THREADS_DIR = str(threads_dir)
 total_scrap.OUTPUT_LINKEDIN_DIR = "output_linkedin"
 total_scrap.OUTPUT_TWITTER_DIR = "output_twitter"
+total_scrap.OUTPUT_YOUTUBE_DIR = "output_youtube"
 
-posts, threads_count, linkedin_count, twitter_count = total_scrap.merge_results()
+posts, threads_count, linkedin_count, twitter_count, youtube_count = total_scrap.merge_results()
 print(json.dumps({
     "codes": [post["code"] for post in posts],
     "threads_count": threads_count,
     "linkedin_count": linkedin_count,
     "twitter_count": twitter_count,
+    "youtube_count": youtube_count,
 }, ensure_ascii=False))
 """
 
@@ -75,4 +77,5 @@ print(json.dumps({
         "threads_count": 1,
         "linkedin_count": 0,
         "twitter_count": 0,
+        "youtube_count": 0,
     }
