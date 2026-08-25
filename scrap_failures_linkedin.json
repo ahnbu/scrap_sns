@@ -1,0 +1,38 @@
+{
+  "7468525662471942145": {
+    "count": 3,
+    "url": "https://www.linkedin.com/feed/update/urn:li:activity:7468525662471942145?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7468525662471942145%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+    "reason": "no-metrics-in-dom",
+    "last_failed_at": "2026-08-25T15:13:09.554"
+  },
+  "7469631072692133890": {
+    "count": 3,
+    "url": "https://www.linkedin.com/feed/update/urn:li:activity:7469631072692133890?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7469631072692133890%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+    "reason": "no-metrics-in-dom",
+    "last_failed_at": "2026-08-25T15:13:18.326"
+  },
+  "7407591782605099009": {
+    "count": 3,
+    "url": "https://www.linkedin.com/feed/update/urn:li:activity:7407591782605099009?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7407591782605099009%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+    "reason": "no-metrics-in-dom",
+    "last_failed_at": "2026-08-25T15:13:26.707"
+  },
+  "7431989991947321344": {
+    "count": 3,
+    "url": "https://www.linkedin.com/feed/update/urn:li:activity:7431989991947321344?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7431989991947321344%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+    "reason": "no-metrics-in-dom",
+    "last_failed_at": "2026-08-25T15:13:42.715"
+  },
+  "7431206454012944384": {
+    "count": 3,
+    "url": "https://www.linkedin.com/feed/update/urn:li:activity:7431206454012944384?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7431206454012944384%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+    "reason": "no-metrics-in-dom",
+    "last_failed_at": "2026-08-25T15:13:50.961"
+  },
+  "7314662801090781184": {
+    "count": 2,
+    "url": "https://www.linkedin.com/feed/update/urn:li:activity:7314662801090781184?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7314662801090781184%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+    "reason": "no-metrics-in-dom",
+    "last_failed_at": "2026-08-25T15:13:58.781"
+  }
+}

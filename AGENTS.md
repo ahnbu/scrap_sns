@@ -42,13 +42,14 @@
 - Threads URL 정규화: `utils/post_schema.py`, `utils/post_meta.py`, `utils/query-sns.mjs`, `web_viewer/script.js`
 - 뷰어 태그·상태 변경: `web_viewer/script.js`, `web_viewer/sns_tags.json`, `web_viewer/sns_tag_catalog.json`, `web_viewer/sns_user_metadata.json`
 - 수집 파이프라인 변경: 플랫폼별 수집기와 `total_scrap.py`
+- LinkedIn 참여지표: `utils/linkedin_metrics.py`(추출·대상 선정 정본), `linkedin_metric_single.py`(상시 consumer), `scripts/linkedin_metric_backfill.py`(백필). 지표는 로그인 경로로 얻을 수 없어 비로그인 공개 페이지에서 읽는다
 - 로컬 SNS 조회: 원천 JSON 직접 조회보다 `node utils/query-sns.mjs` 우선
 
 ## 영구 데이터 surface
 
 - 플랫폼 출력: `output_threads/python/*`, `output_linkedin/python/*`, `output_twitter/python/*`
 - 통합 출력: `output_total/total_full_YYYYMMDD.json`
-- 실패 이력: `scrap_failures_threads.json`, `scrap_failures_twitter.json`
+- 실패 이력: `scrap_failures_threads.json`, `scrap_failures_twitter.json`, `scrap_failures_linkedin.json`
 - 뷰어 상태: `web_viewer/sns_tags.json`, `web_viewer/sns_tag_catalog.json`, `web_viewer/sns_user_metadata.json`, browser `localStorage`
 - 인증 런타임 정본: `C:/Users/ahnbu/.config/auth/`; repo `auth/`는 정본으로 보지 않는다.
 

@@ -136,6 +136,9 @@ print(json.dumps({{"commands": launched_commands, "results": results}}, ensure_a
         "cmd /c python -u youtube_scrap.py --mode update --playlists drive7",
         "cmd /c python -u thread_scrap_single.py",
         "cmd /c python -u twitter_scrap_single.py",
+        # LinkedIn 지표는 저장글 목록 API 응답에 없어 producer 가 가져올 수 없다.
+        # 이 consumer 만 로그인 없이 공개 페이지에서 지표를 읽는다.
+        "cmd /c python -u linkedin_metric_single.py",
     ]
     assert payload["results"]["threads"]["status"] == "ok"
     assert payload["results"]["threads"]["phases"]["producer"]["status"] == "ok"

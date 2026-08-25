@@ -376,6 +376,10 @@ def run_scrapers_in_parallel(mode='update'):
             {
                 "Threads": "python -u thread_scrap_single.py",
                 "X/Twitter": "python -u twitter_scrap_single.py",
+                # LinkedIn 지표는 저장글 목록 API 응답에 없어서 producer 가 가져올 수 없다.
+                # 이 consumer 만 로그인하지 않고 공개 페이지에서 지표를 읽는다.
+                # 계획: _docs/20260825_01_LinkedIn-참여지표-비로그인-수집전환-계획.md
+                "LinkedIn": "python -u linkedin_metric_single.py",
             },
         ),
     ]

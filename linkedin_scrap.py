@@ -55,6 +55,46 @@ def get_post_identity(post):
     return post.get("platform_id") or post.get("code")
 
 
+# 병합 시 기존값을 지켜야 하는 필드.
+# thread_scrap_single.py 의 METRIC_FIELDS 6개 + metrics_updated_at.
+#
+# metrics_updated_at 은 지표가 아니라 메타데이터지만 반드시 함께 이월해야 한다.
+# 지표만 살리고 갱신 시각을 잃으면 "지표는 있는데 언제 읽었는지 모름" 상태가 되고,
+# 상시 갱신 정책(계획 3.4절)이 대상을 고를 수 없게 된다.
+# Threads 의 METRIC_FIELDS 를 그대로 복사하면 이 필드가 빠지므로 주의한다.
+PRESERVED_METRIC_FIELDS = (
+    "like_count",
+    "comment_count",
+    "share_count",
+    "quote_count",
+    "bookmark_count",
+    "view_count",
+    "metrics_updated_at",
+)
+
+
+def preserve_existing_metrics(merged, existing):
+    """새 수집분이 기존 지표를 덮어쓰지 않게 막는다.
+
+    merge_linkedin_full_posts 는 `{**existing, **post}` 로 합치므로, 새 응답이
+    지표를 None 으로 싣고 오면 이미 확보한 값이 조용히 사라진다. 저장글 목록 API 는
+    지표를 주지 않으므로(계획 2.2절) 이 상황은 정상 동작 중에도 발생할 수 있다.
+
+    0 은 유효한 지표값이지만 falsy 이므로 반드시 `is None` 으로 판정한다 -
+    truthy 검사로 구현하면 좋아요 0건이 기존값으로 되살아난다.
+    """
+    if not isinstance(merged, dict) or not isinstance(existing, dict):
+        return merged
+    for field in PRESERVED_METRIC_FIELDS:
+        if merged.get(field) is not None:
+            continue
+        old_value = existing.get(field)
+        if old_value is None or old_value == -1:
+            continue
+        merged[field] = old_value
+    return merged
+
+
 def merge_linkedin_full_posts(old_posts, scraped_posts, crawl_mode):
     old_by_id = {}
     old_order = []
@@ -77,6 +117,7 @@ def merge_linkedin_full_posts(old_posts, scraped_posts, crawl_mode):
         existing = old_by_id.get(pid)
         if existing:
             merged = {**existing, **post}
+            preserve_existing_metrics(merged, existing)
             if existing.get("sequence_id") is not None:
                 merged["sequence_id"] = existing.get("sequence_id")
             if existing.get("crawled_at"):

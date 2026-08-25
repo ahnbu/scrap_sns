@@ -220,7 +220,7 @@ consumer 토큰이 없으면 상세 수집은 건너뛰고, simple 기반 메타
 ### 전체 흐름
 
 1. `total_scrap.py`가 1차 wave에서 플랫폼별 목록 수집기(producer)를 실행한다.
-2. 같은 실행의 2차 wave에서 Threads와 X 상세 수집기(consumer)가 최신 simple 파일을 다시 읽어 본문, 미디어, thread context를 보강한다.
+2. 같은 실행의 2차 wave에서 Threads와 X 상세 수집기(consumer)가 최신 simple 파일을 다시 읽어 본문, 미디어, thread context를 보강한다. LinkedIn은 같은 wave에서 `linkedin_metric_single.py`가 참여지표만 보강한다 — 이 consumer만 **로그인하지 않는다**.
 3. consumer까지 끝난 뒤 `total_scrap.py`가 최신 full 파일을 병합해 통합본을 만든다.
 4. 뷰어는 `GET /api/posts`로 메타 목록을 읽고 `GET /api/post/<int:sequence_id>`로 상세 본문과 미디어를 lazy-load 한다.
 
@@ -229,7 +229,8 @@ consumer 토큰이 없으면 상세 수집은 건너뛰고, simple 기반 메타
 `total_scrap.py`는 아래 순서로 처리한다.
 
 1. producer wave 실행: Threads, X, LinkedIn, YouTube 목록 수집
-2. consumer wave 실행: Threads, X 상세 수집 (YouTube는 producer 단계에서 상세까지 끝낸다)
+2. consumer wave 실행: Threads, X 상세 수집 + LinkedIn 참여지표 수집 (YouTube는 producer 단계에서 상세까지 끝낸다)
+   - LinkedIn 참여지표는 저장글 목록 API(Voyager GraphQL) 응답에 값이 담기지 않아 producer가 가져올 수 없다. 그래서 consumer가 게시글 공개 permalink에 **비로그인**으로 접근해 `data-num-reactions`·`data-num-comments` DOM 속성에서 읽는다. 로그인 컨텍스트를 쓰지 않으므로 `auth_required` 시그널을 내지 않는다. 같은 페이지의 JSON-LD `interactionStatistic`은 좋아요 수가 부정확해 사용하지 않는다.
 3. Threads, LinkedIn, X, YouTube 최신 full 파일 로드
 4. 플랫폼 이름 정규화: `threads`, `linkedin`, `x`, `youtube`
 5. 플랫폼 내부 순서를 `platform_sequence_id`로 부여 (4개 플랫폼 전부)

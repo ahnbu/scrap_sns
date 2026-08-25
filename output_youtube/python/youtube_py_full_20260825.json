@@ -1,15 +1,15 @@
 {
     "metadata": {
         "version": "1.0",
-        "crawled_at": "2026-08-25T10:58:22.107384",
+        "crawled_at": "2026-08-25T15:07:01.428528",
         "total_count": 81,
         "max_sequence_id": 81,
-        "crawl_mode": "all",
+        "crawl_mode": "update",
         "playlists": [
             "drive7"
         ],
-        "new_count": 81,
-        "transcript_available": true
+        "new_count": 0,
+        "transcript_available": false
     },
     "posts": [
         {

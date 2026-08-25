@@ -55,6 +55,7 @@ scripts/*
 !scripts/diagnose_threads_redirect_alias.mjs
 !scripts/fix_threads_redirect_alias.mjs
 !scripts/cleanup_old_output_json.mjs
+!scripts/linkedin_metric_backfill.py
 !scripts/linkedin_opencli_shadow_collect.mjs
 !scripts/linkedin_opencli_shadow_parse.py
 !scripts/linkedin_shadow_compare.mjs

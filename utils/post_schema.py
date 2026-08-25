@@ -23,6 +23,7 @@ STANDARD_FIELD_ORDER = [
     "quote_count",
     "bookmark_count",
     "view_count",
+    "metrics_updated_at",
     "source",
     "local_images",
     "is_detail_collected",
@@ -89,6 +90,9 @@ def normalize_post(post: dict) -> dict:
         "quote_count": None,
         "bookmark_count": None,
         "view_count": None,
+        # 지표를 마지막으로 읽은 시각(ISO 8601). crawled_at 은 본문 수집 시각이라
+        # 대체할 수 없다 - 본문은 한 번 받으면 끝이지만 지표는 반복해서 읽는다.
+        "metrics_updated_at": None,
     }
     for field in STANDARD_FIELD_ORDER:
         if field in defaults and field not in out:
