@@ -2754,6 +2754,11 @@
     "https://www.linkedin.com/feed/update/urn:li:activity:7496810905842905088?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7496810905842905088%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드"
     ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7497608672445947904?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7497608672445947904%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "ppt",
+        "디자인",
+        "클로드"
+    ],
     "https://www.threads.com/@06am_draw/post/DUy-OrTE1c5": [
         "클로드",
         "안티그래비티",
@@ -2812,6 +2817,10 @@
         "클로드",
         "chatgpt",
         "코덱스"
+    ],
+    "https://www.threads.com/@7days_claude/post/DcF70gsj19-": [
+        "글로벌규칙",
+        "클로드"
     ],
     "https://www.threads.com/@_0.beomi_/post/Da0cn-6Ce3l": [
         "chatgpt",
@@ -3118,6 +3127,11 @@
         "이미지",
         "코덱스",
         "클로드"
+    ],
+    "https://www.threads.com/@aicoffeechat/post/DccSu8WExVi": [
+        "chatgpt",
+        "이미지",
+        "프롬프트"
     ],
     "https://www.threads.com/@aiecorofficial/post/DTdDlJBEr3W": [
         "ppt",
@@ -4397,6 +4411,10 @@
         "기획",
         "프롬프트"
     ],
+    "https://www.threads.com/@ex_plaintext/post/DccFhLsgjkB": [
+        "디자인",
+        "클로드"
+    ],
     "https://www.threads.com/@exitnomadlab/post/DV4uaOmgWWg": [
         "이미지",
         "디자인"
@@ -4473,6 +4491,9 @@
     ],
     "https://www.threads.com/@freainer/post/DWBdW9lFM4N": [
         "클로드"
+    ],
+    "https://www.threads.com/@freelance_dreamer_min/post/DccdJvdkz78": [
+        "기획"
     ],
     "https://www.threads.com/@gaebalsaybal/post/DUWSRnukzT3": [
         "클로드"
@@ -4692,6 +4713,10 @@
     ],
     "https://www.threads.com/@gptaku_ai/post/DajijiWkwtS": [
         "chatgpt"
+    ],
+    "https://www.threads.com/@gptaku_ai/post/DcaFkBcE3an": [
+        "chatgpt",
+        "클로드"
     ],
     "https://www.threads.com/@gptersorg/post/DUkNsjaEVmh": [
         "클로드",
@@ -5392,6 +5417,9 @@
         "기획",
         "ppt",
         "디자인"
+    ],
+    "https://www.threads.com/@kook0526/post/Dccp9HKgbKq": [
+        "마케팅"
     ],
     "https://www.threads.com/@koyou_ax/post/DYUYmnJjiPY": [
         "클로드",
@@ -7071,6 +7099,10 @@
         "클로드",
         "프롬프트"
     ],
+    "https://www.threads.com/@think.5x/post/Dccnx5WH37u": [
+        "옵시디언",
+        "클로드"
+    ],
     "https://www.threads.com/@threadhacker/post/DXn1ndtCRtM": [
         "디자인",
         "클로드",
@@ -7758,16 +7790,28 @@
     ],
     "https://www.youtube.com/watch?v=-5RC9-uaVVQ": [
         "디자인",
-        "클로드"
+        "클로드",
+        "마케팅"
+    ],
+    "https://www.youtube.com/watch?v=00-00z1ZKVo": [
+        "기획"
     ],
     "https://www.youtube.com/watch?v=00AvCh06Y2g": [
-        "디자인"
+        "디자인",
+        "기획",
+        "클로드"
     ],
     "https://www.youtube.com/watch?v=0jp2xA5sLRY": [
         "디자인"
     ],
+    "https://www.youtube.com/watch?v=2bBhnfh4StU": [
+        "chatgpt",
+        "기획"
+    ],
     "https://www.youtube.com/watch?v=2qcampab5XE": [
-        "노션"
+        "노션",
+        "gemini",
+        "안티그래비티"
     ],
     "https://www.youtube.com/watch?v=3NSKVwvbArU": [
         "마케팅",
@@ -7777,7 +7821,14 @@
         "디자인"
     ],
     "https://www.youtube.com/watch?v=43Un_SJs0RQ": [
-        "디자인"
+        "디자인",
+        "gemini",
+        "노트북LM",
+        "리서치",
+        "프롬프트"
+    ],
+    "https://www.youtube.com/watch?v=4UocogoElG4": [
+        "기획"
     ],
     "https://www.youtube.com/watch?v=5CaOXPstq_8": [
         "chatgpt",
@@ -7789,11 +7840,16 @@
         "클로드",
         "하네스"
     ],
+    "https://www.youtube.com/watch?v=7Zt2t_SRyP8": [
+        "디자인",
+        "마케팅"
+    ],
     "https://www.youtube.com/watch?v=8p3bqzysZf0": [
         "chatgpt",
         "gemini",
         "오픈클로",
-        "프롬프트"
+        "프롬프트",
+        "기획"
     ],
     "https://www.youtube.com/watch?v=8q2WyEUwpOE": [
         "마케팅"
@@ -7801,7 +7857,9 @@
     "https://www.youtube.com/watch?v=CBjn8iLzXa4": [
         "기획",
         "디자인",
-        "클로드"
+        "클로드",
+        "chatgpt",
+        "프롬프트"
     ],
     "https://www.youtube.com/watch?v=DTuLaY_dZpw": [
         "chatgpt",
@@ -7816,18 +7874,26 @@
         "클로드"
     ],
     "https://www.youtube.com/watch?v=H7Trml7qb5w": [
-        "리서치"
+        "리서치",
+        "프롬프트"
+    ],
+    "https://www.youtube.com/watch?v=HKKTMc-umJ0": [
+        "마케팅"
     ],
     "https://www.youtube.com/watch?v=HeAZ6XckX5s": [
-        "마케팅"
+        "마케팅",
+        "디자인"
     ],
     "https://www.youtube.com/watch?v=JU5XetT0M-c": [
         "chatgpt",
         "디자인",
-        "이미지"
+        "이미지",
+        "기획",
+        "프롬프트"
     ],
     "https://www.youtube.com/watch?v=JxFhuGsQy6s": [
-        "클로드"
+        "클로드",
+        "리서치"
     ],
     "https://www.youtube.com/watch?v=K6Rsy-pHBi0": [
         "chatgpt",
@@ -7836,20 +7902,29 @@
         "클로드",
         "프롬프트"
     ],
+    "https://www.youtube.com/watch?v=L1SvTQuQlVs": [
+        "프롬프트"
+    ],
     "https://www.youtube.com/watch?v=NYDJwfbmVhU": [
         "클로드",
-        "프롬프트"
+        "프롬프트",
+        "디자인"
+    ],
+    "https://www.youtube.com/watch?v=OIx_OOcjy8U": [
+        "마케팅"
     ],
     "https://www.youtube.com/watch?v=OOScU5c8rPQ": [
         "chatgpt",
         "오픈클로",
         "클로드",
         "프롬프트",
-        "하네스"
+        "하네스",
+        "코덱스"
     ],
     "https://www.youtube.com/watch?v=OgCYk2qzw7E": [
         "기획",
-        "프롬프트"
+        "프롬프트",
+        "디자인"
     ],
     "https://www.youtube.com/watch?v=PYpRfmwo92E": [
         "chatgpt",
@@ -7885,7 +7960,10 @@
     "https://www.youtube.com/watch?v=T9DdLtrmNWw": [
         "chatgpt",
         "gemini",
-        "클로드"
+        "클로드",
+        "기획",
+        "디자인",
+        "코덱스"
     ],
     "https://www.youtube.com/watch?v=USU0Vf8N22g": [
         "ppt",
@@ -7915,7 +7993,10 @@
     "https://www.youtube.com/watch?v=_Pd1G33_R48": [
         "기획",
         "오픈클로",
-        "클로드"
+        "클로드",
+        "chatgpt",
+        "옵시디언",
+        "코덱스"
     ],
     "https://www.youtube.com/watch?v=a_2jk1VpVV4": [
         "기획",
@@ -7935,7 +8016,8 @@
         "노션",
         "디자인",
         "클로드",
-        "프롬프트"
+        "프롬프트",
+        "이미지"
     ],
     "https://www.youtube.com/watch?v=fInMcawbKng": [
         "리서치",
@@ -7944,7 +8026,8 @@
         "하네스"
     ],
     "https://www.youtube.com/watch?v=ggFKB45anK4": [
-        "기획"
+        "기획",
+        "이미지"
     ],
     "https://www.youtube.com/watch?v=hywIbOy2xOc": [
         "chatgpt",
@@ -7963,11 +8046,16 @@
     "https://www.youtube.com/watch?v=iqoPgoYBVaM": [
         "기획",
         "클로드",
-        "하네스"
+        "하네스",
+        "chatgpt",
+        "리서치",
+        "코덱스",
+        "프롬프트"
     ],
     "https://www.youtube.com/watch?v=kR-rsfkFiJw": [
         "디자인",
-        "마케팅"
+        "마케팅",
+        "이미지"
     ],
     "https://www.youtube.com/watch?v=klfhUVnc44U": [
         "리서치",
@@ -7976,7 +8064,8 @@
     ],
     "https://www.youtube.com/watch?v=l0ljwkQbYqw": [
         "리서치",
-        "클로드"
+        "클로드",
+        "하네스"
     ],
     "https://www.youtube.com/watch?v=l8hD7J_cHHw": [
         "디자인"
@@ -7989,7 +8078,8 @@
         "코덱스",
         "클로드",
         "프롬프트",
-        "하네스"
+        "하네스",
+        "기획"
     ],
     "https://www.youtube.com/watch?v=meECgAvvdX4": [
         "디자인"
@@ -7999,6 +8089,14 @@
         "프롬프트"
     ],
     "https://www.youtube.com/watch?v=nrCln3sWXqU": [
+        "클로드",
+        "프롬프트"
+    ],
+    "https://www.youtube.com/watch?v=oflXH0em4mo": [
+        "chatgpt",
+        "기획",
+        "마케팅",
+        "코덱스",
         "클로드"
     ],
     "https://www.youtube.com/watch?v=rOkKUp9VAF4": [
@@ -8019,15 +8117,22 @@
         "기획",
         "디자인",
         "리서치",
-        "카드뉴스"
+        "카드뉴스",
+        "마케팅",
+        "이미지",
+        "클로드",
+        "프롬프트"
     ],
     "https://www.youtube.com/watch?v=s04NYW3nOxA": [
         "디자인",
         "리서치",
-        "마케팅"
+        "마케팅",
+        "기획",
+        "이미지"
     ],
     "https://www.youtube.com/watch?v=sxyJUgCrWpA": [
-        "기획"
+        "기획",
+        "클로드"
     ],
     "https://www.youtube.com/watch?v=t4XEda3CB3Q": [
         "옵시디언",
@@ -8043,17 +8148,27 @@
     "https://www.youtube.com/watch?v=uMCx1XxHzHI": [
         "리서치",
         "프롬프트",
-        "하네스"
+        "하네스",
+        "기획"
     ],
     "https://www.youtube.com/watch?v=wObw3m9h3js": [
         "클로드"
     ],
     "https://www.youtube.com/watch?v=wf-Xf1Ushq4": [
-        "클로드"
+        "클로드",
+        "chatgpt",
+        "노션",
+        "코덱스"
     ],
     "https://www.youtube.com/watch?v=z0uTSpwHZj8": [
         "ppt",
-        "노션"
+        "노션",
+        "chatgpt",
+        "기획",
+        "마케팅",
+        "코덱스",
+        "클로드",
+        "하네스"
     ],
     "https://x.com/0ooooo0/status/2024990776531587145": [
         "gemini",

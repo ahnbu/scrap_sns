@@ -1,573 +1,805 @@
-share this prompt that I put effort into making after work.   It's
-not like it's a job for life, and I'm just going to work there for a few years and then quit
-.  A
-newbie who never shares the prompt.  What should I do?  Will a
-result like this—where a line or two of text is written as if it were some kind of tremendous competitive edge—
-actually be recognized as my own work?   Is it
-possible to refuse well without causing friction in a relationship? If you try to
-understand the psychological state of both sides,
-deep down,
-yes.  hello.  I am Attorney Ryu Jeon.
-Recently, there was something that
-became a huge issue in an office worker community
-.
-What should I do about a new employee who absolutely refuses to share their prompt?  It
-was a drawing titled...
-AI has been introduced company-wide, and the
-youngest employee utilizes it exceptionally well,
-producing outstanding results very quickly.  However, the problem is that when other team members
-ask about the prompt, he doesn't share it
-.  Meanwhile,
-complaints continue to come in from other employees
-.  After much deliberation, the team leader
-asked if he could possibly share the prompt, but the youngest member ultimately refused despite the team leader's request
-.  This alone
-gets tens of thousands of views.
-Hundreds of comments have been posted by you all.  Uh, the
-original text is this part.  Later, I asked again in the
-team chat if they could share their work for the
-team members to use because their results were good, but they
-refused, saying, "Ah, that would be a bit difficult." Then, when I
-asked again in a private chat, they
-refused once more, saying, "This is my personal know-how that I have developed over a long period of time by studying on my own and dedicating time to it on weekends and after work. I don't think it is right to share this with others for free without any compensation."
-Regarding these two opposing positions—the team leader's position and the employee's position—which one do you sympathize with more
-?  I think this isn't so much a matter of who is right and
-who is wrong, but rather about the
-perspective from which you view the problem
-.  How does the team leader turn out so well
-?  hmm.  Let
-'s share some know-how on these things together.  I think it will be necessary for our organization's
-work performance
-.  That is our position.  The new
-employee's position is that they are somewhat reluctant to simply hand over the deliverables for
-various reasons
-.
-Actually, I can
-sympathize with both sides to some extent.  It’s
-a bit frustrating from the team’s perspective.  Right?  hmm.
-Because I believe I am making a legitimate request to improve the overall productivity of the company's team
-.  Also, they requested a prompt that the
-new employee is already using for company work
-.  And
-[sniff] I also think the
-newcomer is being a bit selfish for taking all of this for himself
-.  And it
-seems like you might also feel pressure to reduce your dependence on a specific person.  On the other hand, new employees might
-not quite understand the team leader.   Please just
-share this prompt that you put effort into creating after work.
-And without saying anything about any compensation
-.  Besides,
-it's not like it's a job for life; I'm only going to work there for a few years and then quit, so do
-I really have to share this
-?  uh.  And from my perspective,
-this is one of the few
-weapons I have to create a differentiating point, so
-aren't I losing it?
-I mean, you might have thoughts like these.  Please think about this for a moment
-.
-What kind of comment has garnered the most agreement in this community
-?  Should I support the team leader?
-Or should I support the new employee's story
-?  There were several, but this is
-the comment that received overwhelming support.  Study.  It’s
-bad that the youngest one won’t tell you, but if you’re going to be so tacky as to ask them that and get
-rejected like that, just study.  There doesn't seem to be anything about a villain or anything
-.  This
-was the comment that received the most agreement from you all by an overwhelming margin.  I was a bit
-surprised.  In most of our
-culture, I expected that comments expressing a
-somewhat negative view of a new employee who appears a bit selfish would receive the
-most empathy, but that was not the case
-at all in this community
-. This is
-one of the aspects that was very different from what I expected
-.  Of course, there were comments criticizing the new employee's attitude, but the
-comment that received overwhelming agreement was the one conveying the
-message that if they were dissatisfied, they should just study more on their own.
-Now, before we take a closer look at these issues,
-how can we assess this from a legal standpoint
-?  In particular, there
-are three perspectives.  The first is whether
-copyright is recognized for AI outputs?
-Second, will copyright for the prompt
-be recognized?  Third, let's take a look at the
-concept of "business storage"
-one by one
-.   First
-of all, before talking about prompts, it's the one
-created by generative AI, right?
-If we type out the entire prompt and an AI output is produced, will copyright actually
-be recognized?  What do you all
-think?  hmm.  I wrote the prompt,
-so the result came out.  My
-effort went into it.  Right? You need to consider whether this
-result will actually be recognized as my stored property.
-Fundamentally,
-we
-need to re-examine the concept of "stored property" under copyright law.   A
-stored work
-refers to a creative work that expresses human thoughts or emotions.  And
-the author refers to the person who created the stored work
-.  The key is
-these two concepts: that it is a creation made by humans
-.  Right?  Therefore, the
-Storage Fist method is basically designed on the premise of creation by a natural person
-.  Therefore, under current laws, it is currently difficult to protect
-such results and outputs created by non-human AI as
-stored materials
-.  For
-your reference, there is a concept we need to distinguish:
-unlike pure AI output, there is a growing interpretation that copyright can be recognized for AI-utilized works—that is, within the
-scope where human creative contribution is acknowledged
-.  For example,
-I write the entire draft of the manuscript
-.  There is a growing view that if the
-final result is produced by having AI make modifications or supplements to this, the
-saved work should be recognized within the scope of human creative contribution
-.  However, since
-there are no explicit provisions under the current Copyright Act, it is an
-area that requires legislative safeguards.  Now, a
-separate question may follow regarding whether the prompt I created to elicit the AI ​​output—which is not the AI ​​output itself—can be recognized as a copyrighted work
-.  Under copyright law, a stored work is a
-creative work that expresses human thoughts or feelings.  Right?  I
-definitely created my prompt.  Right?
-Therefore, the concept of humans is
-satisfied and there are no problems.  Now,
-we can think about the concept of a second creative work.
-Regarding the requirement of originality for a stored work, the Supreme Court has consistently ruled that for originality to be recognized, a
-work must
-not merely be a mere imitation of another's work, but must contain the
-creator's own unique expression of thoughts or emotions
-.  Ultimately, the key to the judgment may be whether the prompt I created
-satisfies the level of originality recognized under Supreme Court precedents
-.   Let me give you
-three or four examples
-.  Please draw a cute cat picture in a simple command style
-.  It
-appears to be at a level that cannot be recognized as firewood.  Please summarize the one-sided,
-conventional expressions on one A4 page
-.  We will
-draft the same contract regardless of who writes it.  It will be difficult for us to have the level of creativity
-discussed by the Supreme Court recognized with mere listings of keywords
-.   If we look at a
-slightly different precedent once again...  The court
-ruled that expressions that are bound to be the same or similar regardless of who writes them—that is, expressions that do not reveal the creative individuality of the creator of the work—cannot be considered as works with creative potential
-.  Now, if we
-think about it again, imagine that the
-creator's concerns, ideologies, thoughts, and
-emotions—all directly generated by a human—are all inputted, and a
-specific prompt, generated in seconds, is
-written to fill several pages of A4 paper
-.  In such cases,
-I believe that since originality is recognized as a creative
-prompt, there is a
-possibility that it will be judged as a stored work with recognized originality in the future, even though there are no Supreme Court precedents yet
-. As this matter is
-still under various discussion, I suggest that you
-assess this possibility yourselves
-.  The third concept
-is the concept of a work created in the course of employment.
-Article 2, Subparagraph 31 of the Copyright Act
-defines a work created in the course of employment as a material created by a person engaged in the business of a corporation, etc., under the planning of a corporation, organization, or other entity, and if such material is recognized as a work created in the course of employment, it becomes the property of the company
-.  However, if you interpret work-related
-stored materials too broadly,
-various problems will arise.   Right
-?  If the person who
-produced such goods through their own efforts were to have them
-all recognized as goods created in the course of business and
-become the property of the company, it
-could lead to various
-problems and lack of motivation. Therefore, the Constitutional
-Court has ruled that goods created in the course of business must
-meet very strict requirements to be
-recognized.   Only when
-all five requirements mentioned here are met is it recognized as a work created in the course of employment, and thus
-ownership of the work
-becomes the company's property.  Now, if we apply this to option 4,
-although we are applying it based on extremely limited information, we
-can examine a few points
-.  First, it is naturally not easy for
-AI outputs generated through prompts to be recognized as stored assets
-.
-And regarding the second general prompt, it is
-not practically easy to have the originality, which is a requirement for a stored item under storage rights law, recognized.  Regarding this matter, I
-think it would be more appropriate to approach it from the perspective of organizational culture, dialogue, negotiation, and communication strategies, rather than from a legal standpoint.
-Okay, first of all, what's
-so great about the AI ​​prompt?  The temperature difference is
-considered to be much greater than expected.   In
-the past, we had the concept of "Excel seniors," right?   Those
-seniors who were really good at Excel.
-And if we
-compare new employees who use AI prompts very well recently,
-we can see that the perception and evaluation of them are different than expected
-.
-Seniors who were good at Excel in the past will first gain a
-good reputation regarding that.  He also
-received respect and was treated to lunch,
-and he could see that the lifespan of the skill he possessed was
-relatively long
-.  And when this is shared, I am
-actually grateful, but even if it is
-shared, it still
-takes quite a while for me to master the skills, so
-I am still the expert.  The
-significance of my know-how is that it
-clearly helps solidify my position within the organization.
-But just because
-there are new employees who use AI prompts very well recently, does the
-company recognize their value to that extent
-?  There are
-many cases where that is not the case, and the
-lifespan of one's technology is not as long as expected
-.  AI is changing very rapidly, and the
-prompt environment is also changing significantly.
-Even after sharing, the feeling is still less like "I am the
-expert" and more like "Oh, will it be immediately
-copied and replaced?"  These
-psychological tendencies are strong, and it
-seems there are surprisingly many cases where people view their know-how not as something that helps solidify their standing within the organization, but rather as a quiet weapon to use when changing jobs. If we examine the psychology
-of these two individuals in
-more detail—specifically the
-employee who refuses—it
-appears that about four points can be identified.  The first reason
-seems to be the biggest resistance to free sharing: "Why should the company take the results I spent my time creating for free?"  Secondly, since they
-don't even acknowledge the effort I put in,
-dissatisfaction regarding my need for recognition builds up.
-Third, and this part in particular seems to be a big problem, is that it is
-not fair
-.  hmm.  It seems they have a strong aversion to the idea of ​​"Why do I give away so much, but what do
-I get in return?" The
-fourth point is [snorting]: "If
-I ultimately give away everything, won't my
-bargaining power and value eventually decrease, and won't I become replaceable
-?"  It seems the anxiety about losing competitiveness and being replaced is
-much greater than expected
-. I suspect that what is ultimately hidden is
-not so much about being stingy, aggressive, or selfish, but rather rooted in emotional anxiety and dissatisfaction—such as a sense of hurt from not being acknowledged, and the feeling of being deprived
-when sharing something with nothing in return
-.  Conversely, if you consider the
-team leader's mindset, their
-position is more understandable than you might think.
-The first is that the sense of responsibility and
-pressure on the manager is greater than expected.  The organizational pressure from upper management to make the
-entire organization use AI effectively is much
-greater than expected these days.  Also, the
-team leader is feeling very uncomfortable because he is constantly under pressure in the middle of complaints from junior team members who say it is inconvenient that the employee does not share the Prompt.  The
-pressure regarding the second team's performance must also be intense.  We need to
-demonstrate the results of AI implementation to upper management, but we are having a really hard time managing this
-.  Third, our team tries to
-foster a collaborative atmosphere, but if a
-new employee joins in this manner, it will
-feel like they are ruining that spirit
-. Fourth, we might wonder, "Do
-we really need to rely on just one person like this?"  We have to rely on a
-new employee like this with just a prompt
-.  You will
-also have thoughts like this.  As for the fifth point,
-honestly, I'm not sure either. I'm not sure
-how I should utilize this AI,
-and I
-suspect the team leader's anxiety about falling behind might be greater than expected. If we examine the psychological states of both sides,
-deep within their hearts lies a sense of insecurity regarding their own value and
-usefulness
-.  Although we express it differently, the
-truth is that we are all experiencing
-great anxiety in this unpredictable and rapidly changing era
-.
-You are all anxious, and actually, I am
-anxious too.
-We are living in an era where everyone is anxious, staggering and unable to keep their wits about them because so many things are changing so suddenly and so quickly
-.  But there is one thing you all
-need to consider: this new hire is
-basically a hard-working person.
-He is a friend who is troubled.  He appears to be the kind of friend who
-seriously contemplates his competitiveness and usefulness and
-possesses an attitude of striving to develop them.  And the fact that
-other team members and the team leader continued to
-request limits on this prompt to such an extent indicates that
-the gap is so significant that they
-themselves recognize and
-acknowledge that this person's capabilities are necessary for our organization and our team.
-We cannot deny this point
-.  I think the worst attitude regarding this would be something like this, and there was a
-comment like this on a post in that community.
-Hehe.  I understand how you feel, but if it were me, I would kick you out
-of my team.  Organizational culture can fall apart in
-an instant, so perhaps
-because I am a newcomer, writing just a line or two of prompt text
-feels like a huge competitive edge
-.
-A lot is contained within these two or three lines of text
-.  Right?  hmm.  The first is
-just blatant disregard for the newcomer.
-Second, they describe a newcomer's prompt engineering
-ability as if writing just one or two lines of prompt is a
-tremendous competitive advantage
-.  Right?
-Non-recognition of the value of the impact.  The
-somewhat unreasonable attitudes contained in that expression, "I think I'll hit it" from the third team.  hmm.   The
-organizational culture this person is talking about does
-not fundamentally appear to be a culture of recognizing growth, communication, and opportunities.  It is interpreted as signifying an organizational culture of mutual
-obedience to superiors' instructions and orders
-.  However, the problem is that
-if you continue to push this new employee with this kind of attitude—if you act petty and
-selfish—the new employee will
-eventually leave
-.  hmm.  Right?
-I believe that a new employee who has more outstanding qualities, is concerned about their own growth, and carves out time to develop those areas is much more likely than expected to choose a quiet resignation when driven to a dead end
-.  If that is the case, I also have concerns that eventually
-, all those friends who can provide new stimulation will
-leave, and
-only those who cannot stimulate each other will remain in the organization
-.  I
-looked into a specific case and
-asked some developers for their opinions. I called and met with them to
-discuss how they might view this issue, and one of my very close developer friends told me
-this.
-One thing to note is that there is a culture
-among developers of making their code open
-source.
-Through open source shared in this way,
-some people receive help, while others
-further develop it.
-However, whenever that happens, developers usually
-press "Like" or "Fork" when they receive help or when someone shares outstanding open source
-.  And just like when a master's or
-doctoral thesis is cited, within
-that culture and community, it becomes established
-as recognition for one's open-source code.
-Furthermore, by receiving feedback such as
-finding errors or suggesting improvements,
-people provide
-practical help and
-mutual emotional acknowledgment.
-In other words, they voluntarily share open source because they believe that sharing code provides a
-clear emotional reward and
-is more beneficial in terms of their influence
-.  This is
-not about disclosing your open source code under duress or orders.
-Ultimately, I
-believe that sharing is more beneficial to me in various ways, so I
-share even if I am told not to
-.  Right?  Since
-we have only been
-living in the AI ​​era for a few years, I
-believe it will take a little more time to create this kind of atmosphere and organizational culture. As we are
-currently in the early stages and transitional phase, I
-suspect that various concerns and conflicts are likely arising here and there within the organization.  Ultimately, I believe that if these four
-patterns create a virtuous cycle, it can support a culture that benefits both me and the
-organization
-.  Therefore, trust is
-necessary, which leads to voluntary
-sharing. We must acknowledge that voluntary sharing, and this
-acknowledgment should
-not be merely verbal; it must be followed by emotional and tangible
-rewards. This
-rebuilds trust, which in turn leads to the
-sharing of developed content. I think
-we need to give
-some thought to how to create a virtuous cycle of these links of trust, rather than viewing this
-person personally as an enemy or
-selfish.  The attitude is bad.   We should
-not push this too hard; I
-believe that this will be repeated many, dozens, or even hundreds of times in the upcoming AI era
-.   I would
-like to speak a bit about this attitude and communication style to both the new employee and the team leader.
-Regarding the new employee flatly refusing the team leader's repeated requests by saying, "I think that would be
-difficult,"
-comments in various communities have criticized the new employee's
-attitude, saying things like, "The new employee has
-n't adapted to professional life yet."  I don't know well.   There is
-no concept.  There was actually
-quite a lot of feedback like this.  In my opinion,
-new employees also
-need to give some thought to their attitude and communication skills
-.  Let's try
-thinking the opposite way.  When do you
-feel bad when you are rejected
-?
-I found that a bit like that.  I felt
-a bit bad when I was rejected like this
-.  The first is when I gave it some
-thought and asked for a favor with difficulty, but
-they refused without even properly considering it
-.  The second is when, after I
-made a request, they puff out their chest,
-think they are superior, and
-slightly belittle or ignore the person who refused.  The third is
-when you react emotionally and recklessly without any standards.  I realized that it feels
-really bad when I get rejected in situations like this
-.  So, let's think about this
-from the opposite perspective and consider
-how a new employee
-can politely decline something without causing friction in relationships
-.  The first step
-starts with your awareness of rejection.  Refusal
-is not an unreasonable action.  I believe that refusal is
-fundamentally a form of work coordination
-.  As we go about our work, we
-cannot say yes to everything the other person says.  Then you end up
-falling into a "good mountain" complex
-.
-I fundamentally believe that refusal is an important process in managing work, and that being able to refuse well is also a crucial competency
-.  For the second one, I
-think we need to take a little extra time.
-Barone or not.  Both are
-problematic.  If I immediately speak up when the other person makes a request, a
-problem arises where I end up sacrificing various inner time and precious things to take responsibility for saying yes.  And
-if you refuse immediately as if you can't cut them off, the other person will feel
-bad.  Then, the attitude
-becomes an issue.  I think it would be good to take a little more time and
-approach it this way
-.  yes.
-Instead of saying "I will try" reflexively, I will check and let you
-know within the feasible range.   If you don't mind,
-could I take some time to think about my current tasks and priorities, organize my thoughts, and then get back to you?
-There are many cases where taking a little time and speaking slowly in this manner actually comes across as much more professional than accepting immediately.  The third
-method is to accept it on a conditional basis.  Team Leader, I’ve given some
-thought to what you mentioned.
-How about we proceed by sharing the core principles and keywords for creating prompts during next week’s town hall meeting?   I am saying that
-my prompts are optimized for the AI ​​I use, so the
-results may differ even if others apply them as is, and since
-copying and pasting them directly involves
-specific aspects such as my personal writing style and word selection, I think it would be more helpful to share the
-core principles of prompt engineering and key
-keywords instead
-.  If you listen to it, you'll find it persuasive
-.  It’s not that I unconditionally refused; after
-thinking about it,
-there are principles to the methods of creating it, and I will
-share them with you, but even if you try to copy the writing style,
-it might not be helpful anyway
-.  Right?  If I do
-n't say yes to everything, but divide it up—saying
-yes to about 35% and
-politely declining the rest—how would the other person
-feel?  Ah, but this friend is
-making an effort.  It makes you think that the attitude isn't that bad
-.
-And it is not a
-bad idea to express your honest feelings when refusing
-.  And Team Leader, to be honest,
-personally, I feel a bit uncomfortable sharing the prompt that I spent so much time thinking about and creating over the weekend and after work with everyone
-.
-You are welcome to use expressions like this.   hmm.
-Conveying my disappointment or concerns politely in this way actually helps make the other person feel
-indebted and
-helps build persuasiveness.  I think it is also good to
-talk about reasonable compensation as the fifth point
-.  Also, if possible,
-could you please consider a way to acknowledge my contribution?  That way, I
-think I can stay continuously motivated as I reflect on how I can put more effort into things. If
-you all learn these five patterns of refusal and actually put them into
-practice, I believe you will be able to
-refuse effectively without damaging your relationships
-.  Conversely, it is also necessary to consider the matter from the
-perspective of organizational culture and the team leader
-.
-I think the worst approach is something like this.  Are you
-working alone?  hmm.
-Don't you have any concept of teamwork?  Right?
-I think we can hear things like this.  You made this while working at that company, did
-n't you?  That company is a beggar.  Is that yours
-?  You could ask like this, or I'm doing this just for your own
-good.  Are kids these days
-naturally that calculating?
-Asking like this completely corners the other person
-.  Right?
-And then, you can visit a day or two later
-.  Team Leader,
-whenever I have something to say, it has
-never been anything good.  You guys, right?  hmm.
-Therefore, I need to consider how to approach this wisely and
-how to create an atmosphere within the organization where we exchange values, rather than being someone who unilaterally steals the knowledge and know-how of others
-.   The
-core concept, from your leadership
-perspective, is the concept of pre-persuasion.
-What is that concept, everyone?  You must be
-persuaded before you can persuade.
-Negotiations must take place before negotiations can begin.  Right?
-From the perspective of how to design a framework to persuade the other party, you
-can consider four patterns
-.  The first step is to acknowledge it first.
-And the second reward.  Third
-range. Fourth record. It would be helpful if
-you could remember and apply the Yone Yone patterns
-.  Let me start with an example of acknowledgment
-.  It is to first acknowledge [Team] that
-as my official expert, I consider you to be a specialist in AX
-.  Right?   I will
-definitely reflect these aspects in both compensation and performance evaluations, and I will
-conduct an evaluation at the end of the year.
-Regarding the scope,
-instead of disclosing everything unconditionally, could you please share it
-step-by-step, starting with the core principles or samples
-?  I would like
-you to remember and try using these four patterns, such as clearly leaving a template and recording who made it so that credit can be given
-.  Let me give you a slightly more specific
-example.  If the other
-employee is, for example, Jeong-min, I would say, "
-Jeong-min, you've worked really hard learning on your own even after work, haven't you
-?"
-First is emotional acknowledgment.  Right?
-Everyone, even those with an MBTI T personality type
-must start the first sentence with F.
-Second, I acknowledge Jungmin's expertise
-.  I
-know very well that he is more excellent than anyone else.
-It includes a sentence about respecting values.
-Third, I know it must be uncomfortable for you to decline every time, Jeongmin, but
-would it be possible to share the core principles of creating prompts and how to write them for specific cases, rather than the entire prompt?  I
-think it will be very helpful to the employees, and it will also help Jeongmin produce good deliverables for the project he is involved in.  These are the requirements for each stage.   Right
-?  We can also mention specific compensation
-.  Of course, I will record these aspects and Jeongmin's
-contributions, and take them into account for future
-evaluations.  Additionally, I am
-planning to request the HR team to provide AX training opportunities so that Jeongmin can further develop in this area.   It is
-referring to the fifth future
-.  I believe that if you continue to think together like this,
-Jeongmin will
-become the standard for our team when it comes to AI utilization
-.  If you mention it to this extent, I
-think the conversation could become a pattern where we share sufficient mutual understanding and exchange value, rather than an atmosphere of taking and being taken from one another in various ways
-.  Basically, negotiation
-is an exchange of value, not a command.   The
-other party moves when they feel value.
-In that way, you need to first identify the other person's core needs
-.  In particular, we
-need to consider the concept of problem solving that makes me feel like I am the party solving the common problem, rather than an atmosphere where we are growling at each other and taking and being taken from one another.  And persuasion, as always,
-begins not with information, but with emotion.  Please keep in mind the pattern of first
-building rapport and acknowledging, then
-sharing information and logic,
-and finally leading to action
-.  As expected, I
-believe that negotiation theory in the AI ​​era also begins with two things.   You must have
-likeability and trust capital
-.  Logic and information are now
-replaceable.
-Negotiations as a trusted messenger accelerate the speed of transactions and
-reduce transaction costs.  How can I make
-that person trust me when communicating within an organization in this capitalist era
-?  You need to consider whether you can make that person
-think favorably of you
-.  Therefore, I
-think it is necessary for both of us to communicate within the indoor connection as trusted messengers.   yes
-.  So far, we have discussed who possesses the kind of proportion that
-could easily be found around us in the AI ​​era,
-whether or not they can provide it,
-and also considered the organizational
-culture and communication
-aspects related to this
-.  Actually, I do
-n't think this is a question with a single correct answer.  And it
-is a problem that cannot be solved solely through legal means.  Fundamentally, we need to consider fair
-recognition, compensation, organizational culture,
-and the link of trust together
-.  I think the best approach would be to apply things step by step,
-one by one, to create an atmosphere where we
-can generate value through mutual synergy
-.  The same goes for the best negotiations and the best conversations
-.  I hope you will engage in negotiations and conversations where you ultimately have
-nothing you want and can preserve your relationship with that person
-.  This has been
-Attorney Lee.  no see.  [music]
+[00:00]
+퇴근 후에 노력을 해서 만든이
+프롬프트를 그냥 공유를 해 달라.
+평생 직장도 아니고 내가 몇 년
+다니다가 말 건데. 프롬프트를 절대
+공유 안 하는 신입. 어떡하죠? 무슨
+프롬프트 한두 줄 짠게 엄청난
+경쟁력처럼이 결과물에 대해서 나의
+저장물로 인정이 과연 될 것인가?
+관계에 대해서 마찰를 가지지 않고
+거절을 잘할 수 있을 것인가?이 이
+양쪽의 심리 상태를 모두 한번 파악을
+해 보면 그 마음 깊이에는
+네. 안녕하세요. 류전 변호사입니다.
+최근에 여러분들 한 직장인
+커뮤니티에서 굉장히 이슈가 됐던 그런
+그리한게 있었는데요. 프롬프트를 절대
+공유 안 하는 신입 어떡하죠? 라는
+제목의 그리였습니다.
+회사에 AI가 전사로 도입이 됐고
+막내 직원이 유독 AI를 잘 활용을
+해서 결과물을 아주 빠르고 뛰어나게
+잘 뽑아냅니다. 그런데 다른 팀원들이
+[01:00]
+프롬프트를 물어보면 공유를 안 해
+준다는 거예요. 그러면서 다른
+직원들로부터 불만들이 계속
+들려옵니다. 고민 끝에 팀장이 혹시
+프럼프트를 공유해 줄 수 있겠니라고
+물어봤더니이 팀장의 요청에도 막내는
+끝내 거절을 했다는 것이죠. 이게
+조회수만 수만회가 나오고요. 댓글이
+여러분들 수백개가 달렸습니다. 어,
+원문은 이런 부분인데요. 이후 다시
+팀 채팅방에도 누구님의 결과물이
+좋아서 그런데 팀원들이 사용할 수
+있게 공유해 줄 수 있는지 물었더니
+아, 그건 좀 힘들 것 같습니다.라고
+라고 거절하고 이후 다시 개인
+채팅으로 다시 물어봤더니 제가
+예전부터 개인적으로 공부하고 주말이랑
+퇴근 후에도 시간을 들여서 발전시킨
+제 개인의 노하우인데 이걸 아무 대가
+없이 다른 분들께 무상으로 공유하는
+건 좀 아닌 것 같아서요라고 하면서
+다시 제차 거절을 했다는 것이죠.
+[02:00]
+여러분들은이 상반된 입장, 팀장의
+입장과 또 사원의 입장이 두 입장에
+대해서 어떤 입장이 더 공감이
+가시나요? 이건 여러분들 누가 맞고
+누가 틀리고의 문제라기보다는
+어떤 관점에서 문제를 바라보는가인 것
+같은데요. 팀장은 어떻게 그렇게 잘
+나와요? 음. 같이 좀 이런 부분들
+노하우를 공유합시다. 우리 조직의
+업무 성과를 위해서 필요할 거
+같아요. 이런 입장이고요. 신입
+사원은 결과물에 대해서 그냥 드리는
+거는 조금 여러 가지로 안
+내킵니다라는 입장입니다.
+여러분들이 양쪽다 사실 다 입장이
+어느 정도는 공감이 되는데요. 팀량
+입장에서는 좀 답답하죠. 그죠? 음.
+왜냐면 회사의 팀 전체 생산성 향상을
+위해서 본인은 정당하게 요구하고
+있다라고 생각을 하고요. 또 이미
+신입이 회사 업무에 활용 중인 그런
+[03:00]
+프롬프트를 요청을 한 겁니다. 그리고
+[콧방귀] 혼자 이것들을 전부 다
+차지하고 있는 신입이 약간 이기적으로
+생각이 들기도 하고요. 그리고
+특정인에 대한 의존도를 본인이 좀
+낮춰야 된다라는 그런 압박감도 생길
+것 같습니다. 반대로 신입에서는
+팀장이 좀 이해가 안 될 겁니다.
+퇴근 후에 본인이 노력을 해서 만든이
+프롬프트를 그냥 공유를 해 달라.
+그리고 무슨 아무 대가에 대해서도
+이야기를 하지 않고. 그리고 평생
+직장도 아니고 내가 몇 년 다니다가
+말 건데 굳이 내가 이걸 나눠 줘야
+되나? 어. 그리고 내 입장에서는
+이게 내가 몇 안 되는 차별화
+포인트를 만들 수 있는 무기인데 이게
+뺏기는 거 아닌가? 이런 생각들도 들
+거란 말이죠. 여러분들 한번 생각을
+해 보십시오.이 커뮤니티에서 가장
+많은 공감을 얻어낸 그런 댓글은 어떤
+댓글일까요? 팀장을 지지할까요?
+아니면 신입 사원의 이야기를
+지지할까요? 여러들이 있었는데
+[04:00]
+압도적으로 많은 지지를 받은
+댓글입니다. 공부하세요. 안 알려주는
+막내도 별로지만 막내한테 뭐
+추접스럽게 그 정도 물어보고 그 정도
+거절당했으면 그냥 공부하세요. 빌런이
+어쩌고 저쩌고 하는 것도 없어
+보여요. 이게 여러분들 압도적으로
+가장 많은 공감을 얻어낸
+댓글이었습니다. 저는 좀 깜짝
+놀랬거든요. 대부분 우리나라의
+문화에서는 이런 좀 이기적이어 보이는
+신입 사원의 어떤 좀 부정적인 시선을
+보내는 댓글들이 공감이 가장 많을 줄
+알았는데이 커뮤니티에서는 전혀 그렇지
+않았다는 것이죠.이 이 부분이
+예상과는 매우 달랐던 부분 중에 한
+개입니다. 물론 신입의 태도에 대해서
+지적을 했던 그런 댓글들도 있었지만
+역시 압도적인 공감을 받았던 댓글은
+바로 아쉬우면 그냥 본인이 더
+공부하라라는 메시지의 댓글이었습니다.
+자,이 쟁점들에 대해서 본격적으로
+[05:00]
+한번 좀 살펴보기 전에 과연
+법적으로는 어떻게 우리가 좀 판단을
+해 볼 수 있을 것인가? 특히 세
+가지 관점입니다. 첫 번째는 AI
+산출물에 대한 저작권이 인정되는가?
+두 번째는 프롬프트에 대한 저작권이
+인정될 것인가? 세 번째는 업무상
+저장물이라고 하는 개념은 과연 어떤
+개념일까에 대해서 한 가지씩 한번
+살펴보도록 하겠습니다.
+우선 프롬프트에 대해서 먼저 이야기를
+하기 전에 생성형 AI가 만든 그죠.
+우리가 프롬프트를 전부 다 쳐서 AI
+산출물이 나왔을 때 과연 저작권이
+인정될 것인가? 여러분들 어떻게
+생각을 하세요? 음. 내가 프롬프트를
+짜서 그래서 결과물이 나왔습니다. 내
+노력이 들여갔죠. 그죠?이 이
+결과물에 대해서 나의 저장물로 인정이
+과연 될 것인가에 대해서 여러분들께서
+한번 생각을 해 보실 필요가 있는데
+기본적으로 여러분들 저작권법상에
+[06:00]
+저장물이라는 개념에 대해서 우리가
+다시 한번 살펴볼 필요가 있습니다.
+저장물은 인간의 사상 또는 감정을
+표현한 창작물을 말합니다. 그리고
+저작자는 저장물을 창작한 자를
+이야기를 하죠. 핵심은 인간이
+만들어낸 창작물이라는이 두 가지
+개념이죠. 그죠? 그래서 기본적으로
+저장권법은 자연인의 창작을 전제로
+설계되어 있습니다. 그래서 인간이
+아닌 AI가 만들어낸 그런 결과물과
+산출물에 대해서는 현행법상으로는
+저장물로 보호받기는 현재는 쉽지 않은
+구조로 되어 있습니다. 참고로
+여러분들 우리가 구분해서 생각해야 될
+개념이 있는데 순수한 AI 산출물과는
+달리 AI 활용물에 대해서 즉 인간이
+창작적 기여가 인정되는 범위에서는
+저작권이 인정될 수 있다는 해석이
+점점 더 많아지고 있습니다. 예를
+[07:00]
+들면 내가 원고 초안을 전부 다
+쓰고요. 여기에 대해서 AI에게 어
+수정을 하거나 보완을 시켜서 마지막
+결과물이 만들어졌을 경우에 인간의
+창작의 기여 범위에서는이 저장물이
+인정되어야 된다라는 견해가 점점
+많아지고 있다는 것이죠. 다만 현행
+저작권법상으로는
+명시적인 규정은 없어서 입법적 보안이
+필요한 영역이긴 합니다. 자,
+이어지는 질문은 그러면 AI 산출물이
+아니고 내가 AI 산출물을 이끌어내기
+위해서 내가 만들어 낸 프롬프트는
+과연 저작물로서 인정받을 수 있을
+것인가와 관련된 별개의 질문이 따라올
+수 있습니다. 저작권법상으로 저장물은
+인간의 사상 또는 감정을 표현한
+창작물입니다. 그죠? 내 프롬프트는
+분명히 내가 만들어냈죠. 그죠?
+그렇기 때문에 인간의 개념에 대해서는
+충족이 되고 문제가 없습니다. 이제는
+[08:00]
+두 번째 창작물이라는 개념에 대해서
+우리가 생각해 볼 수 있는데요.
+대법원은 저장물의 창작성 요건에
+관해서 창작성이 인정되려면 적어도
+어떠한 작품이 단순히 남의 것을
+모방한 것이어서는 안 되고 사상이나
+감정에 대한 창작자 자신의 독자적인
+표현을 담고 있어야 한다라고 일관되게
+판시하고 있습니다. 과연 내가 만들어
+낸 그 프롬프트가이
+대법원의 판례상 인정되는 수준의
+창작성 수준을 만족시킬 수 있는가가
+결국 판단의 핵심이 될 수 있습니다.
+예를 한 세네 가지 한번 들어
+보면요. 단순 명령형 귀여운 고양이
+그림을 그려 줘. 장작성으로는 인정될
+수 없는 수준이라고 보이고요. 일방적
+통상적 표현 A4 한 장 분량으로
+요약해줘. 누가 작성해도 동일한
+계약서 초안을 작성해 죠. 단순
+키워드 나열 이런 것들은 전부 다이
+정도 수준으로는 대법원에서 이야기를
+[09:00]
+하는이 창작성 수준을 우리가
+인정받기는 쉽지가 않을 것입니다.
+조금은 다른 판례를 다시 한번 더
+들어보면요. 누가 하더라도 같거나
+비슷할 수밖에 없는 표현, 즉 저장물
+작성자의 창조적 개성이 드러나지 않는
+표현을 담고 있는 것은 장작성이 있는
+저장물이라고 할 수는 없다라고 판시을
+하고 있습니다. 자, 다시 한번
+생각을 해 보면 그러면 사람이 직접
+생성한 창작자의 고민과 사상, 생각과
+감정이 모두 투입이 되고 초단위로
+생성된 구체적인 프롬프트를 A4용지
+수페이지가 되도록 만약에 작성을
+했습니다. 이런 경우에는 여러분들
+제가 생각하기로는 창의적인
+프롬프트로서이
+창작성이 인정이 돼서 대법원 판례는
+아직은 없지만 향후에는 창작성이
+인정되는 저장물로 판단될 가능성이
+있다고 생각을 합니다.이 부분은
+[10:00]
+아직도 여러 가지 논의가 되고 있기
+때문에 여러분들께서 그 가능성에
+대해서 판단을 한번 해 보시면 좋을
+것 같습니다. 세 번째 개념은 바로
+업무상 저작물이라는 개념인데요.
+저작권법 제 2조 31호에서는 업무성
+저작물은 법인 단체 그 밖자의
+기획하에 법인 등의 업무에 종사하는
+자가 업무상 작성하는 저장물을
+이야기를 하고이 업무상 저장물로
+인정이 되면 그 저장물이 회사 소유가
+된다는 것이죠. 근데 여러분들 업무상
+저장물을 너무나 넓게 인정을 하면
+여러 가지 문제가 생길 겁니다.
+그죠? 그 장작자가 본인의 노력을
+통해서 그런 저장물을 만들어 냈는데
+이것이 전부 다 업무상 저장물로
+인정이 돼서 회사 소유가 된다면 여러
+가지 동기 부여도 안 될 수 있고
+문제들이 생길 수 있어서 헌법
+재판소는 업무상 저장물을 굉장히
+엄격한 그런 요건을 갖추어야만
+[11:00]
+인정된다고 판실을 하고 있습니다.
+여기서 언급하는 다섯 가지 요건을
+모두 갖추어야만 업무상 저작물로
+인정이 돼서이 저작물의 소유가 회사
+소유가 된다는 것이죠. 자, 4안에
+한번 적용을 해 보면 극히 제한된
+정보를 전제로 우리가 적용을 하지만
+몇 가지를 한번 따져 볼 수
+있습니다. 첫 번째는 프롬프트를 통해
+생성된 AI 산출물은 저장물로
+인정받기는 당연히 쉽지가 않고요.
+그리고 두 번째 일반적인 프롬프트는
+저장권법상 저장물의 요건인 창작성을
+인정받기가 현실적으로는 쉽지는
+않습니다. 본 사안에 대해서는 이걸
+법률적으로 접근하기보다는 아무래도
+조직 문화와 대화, 협상,
+커뮤니케이션 전략의 관점에서 접근하는
+것이 맞지 않을까라는 생각이 듭니다.
+자, 우선 AI 프롬프트가 뭐가
+대단해? 대한 온도 차이가 생각보다
+[12:00]
+굉장히 크다고 여겨지는데요.
+과거에 여러분들 우리가 엑셀 선배라는
+개념이 있었죠.
+엑셀을 워낙 잘하던 그런 선배들.
+그리고 최근에 AI 프롬프트를 아주
+잘 쓰는 신입 사원들을 한번 비교를
+해 보면 생각보다 그에 대한 인식과
+가치 평가가 다르다는 것을 우리가
+생각을 해 볼 수 있습니다. 과거에
+엑셀을 잘했던 그런 선배들은 일단
+거기에 대해서 평판이 좋아지고요. 또
+존경도 받고 또 점심도 얻어 먹을 수
+있고 그리고 자기가 가진 그 기술에
+대한 수명이 비교적 길었다는 것을 알
+수 있습니다. 그리고 이걸 공유를 해
+줬을 때 사실 고마워하기도 하고
+여전히 공유를 해 줘도 나의 기술을
+습득하는데 시간이 꽤 걸리기 때문에
+여전히 내가 제일 전문가고요. 그 내
+노하우의 의미가 조직 내 입질를
+다지는데도 분명히 도움이 됩니다.
+근데 최근에 여러분들 AI 프롬프트를
+[13:00]
+아주 잘 쓰는 신입 사원들이 있다고
+해서 그 가치를 회사에서 그만큼
+인정을 해 주는가? 생각보다 그렇지
+않은 경우들이 많고 그리고 자기
+기술의 수명이 생각보다 길지 않다는
+것이죠. AI가 워낙 빠르게 바뀌고
+프롬프트 환경도 많이 바뀝니다. 공유
+후의 심리도 뭔가 여전히 내가
+전문가다 이런 느낌보다는 아 즉시
+카피돼서 좀 대체될까 불안하다. 이런
+심리들이 강하고 그 내 노하우에 대한
+의미도 이게 조직 내에 내 입질를
+다지는데 도움이 된다라기보다는
+이직을 할 때 조용한 무기가 된다라는
+수준으로 생각하는 경우들이 의외로
+많은 거 같습니다.이
+이 두 사람의 각각의 심리에 대해서
+우리가 조금 더 자세히 한번 살펴보면
+먼저 거절하는 사람 그 직원의 심리를
+한번 파악을 해 보면네 가지 정도가
+정리가 되는 거 같습니다. 첫 번째는
+[14:00]
+왜 내가 내 시간을 들여서 만들어 낸
+결과물을 회사 공짜로 가져가지?이
+무상 공유에 대한 거부감이 제일 큰
+거 같고요. 두 번째는 내가 드린
+노력에 대해서 인정도 안 해 주면서
+인정 욕구에 대한 불만이 쌓이죠. 세
+번째, 특히이 부분이 많이 문제가
+되는 거 같은데 공정하지 않다는
+거예요. 음. 왜 나는 나눠 주는데
+나에게 돌아오는 것은 뭔데라는 부분에
+대해서 강한 반감을 가지는 거
+같고요.네 번째는 [콧방귀] 이거
+내가 결국 나눠 주면 궁극적으로 내
+협상력과 가치가 낮아지고 대체될 수
+있지 않을까? 경쟁력 상실과 대체에
+대한 불안감이 생각보다 아주 큰 거
+같습니다.이 결국 숨기는게 내가
+인색하거나 공격하거나 이기적인 그런
+포인트라기보다는
+인정해 주지 않음에 대한 그런 서운함
+그리고 공유해 주고 아무것도 돌아오는
+것이 없을 때 뺏기는 기분 그런
+감정적인 불안감과 불만에 기반하고
+[15:00]
+있지 않나라는 생각이 듭니다. 반대로
+팀장의 심리를 한번 생각을 해 보면
+팀장의 입장도 생각보다 이해는 되죠.
+첫 번째는 관리자의 그 책임감과
+압박감이 생각보다 큽니다. AI를
+조직 전체가 잘 쓰게 하라고 하는
+윗선의 조직적인 어떤 압박감이
+생각보다 요즘 너무 크고요. 그리고
+사원이 프럼프트를 공유하지 않아서
+불편하다는
+밑에 후배 팀원들의 불만도 중간에서
+계속 이제 압박을 받다 보니까이
+팀장도 너무 불편하고요. 두 번째 팀
+성과에 대한 압박도 심하겠죠. 뭔가
+AI 도입의 성과를 상부의 결과물을
+보여 줘야 되는데 우리가 이걸
+정어하는데 너무 애를 먹고 있는
+것이죠. 세 번째는 아 우리 팀이
+그래도 협업하는 분위기를 만드는데
+이런 방식으로 신입사원이 나오면이
+협업의 분위기를 깬다 이런 느낌도
+받을 것이고요.네 번째는 한 명에게
+[16:00]
+이렇게 우리가 의존해야 되나? 고작이
+프롬프트를 가지고 신입 사원에게
+우리가 이렇게 의존해야 돼. 이런
+생각도 가질 겁니다. 다섯 번째는
+솔직히 나도 잘 모르겠어.이 이
+AI를 활용을 해서 내가 어떻게 해야
+될지 잘 모르겠는데 그런 뒤쳐짐에
+대한 불안감이 팀장도 생각보다 크지
+않을까라는 생각이 듭니다.이 양쪽의
+심리 상태를 모두 한번 파악을 해
+보면 그 마음 깊이에는 나의 가치와
+쓸모에 대한 불안함감이 자리잡고
+있습니다. 표현을 달리하고 있지만
+사실 우리 모두가이 예측 불가능하고
+빠르게 변하는이 시대에 커다란
+불안감을 겪고 있는 것이죠.
+여러분들도 불안하고 사실 저도
+불안합니다.
+너무 많은 것들이 너무 갑자기 이렇게
+빨리 변하기 때문에 우리도 정신을
+차리지 못하고 휘청휘청하면서 모두가
+불안한 그런 시대를 살아가고
+있습니다. 근데 여러분들 한 가지
+[17:00]
+생각해 봐야 될 점은이 신입은
+기본적으로 열심히 하는 친구죠.
+고민을 하는 친구고요. 자신의
+경쟁력과 쓸모에 대해서 진지하게
+고민을 하고 발전시키려고 하는 태도를
+갖춘 그런 친구로 보입니다. 그리고
+다른 팀원들도 팀장도이 프롬프트를
+한계를 달라고 그렇게까지 요청을
+계속했다는 거는 그만큼 격차가 커서이
+친구의 역량이 우리 조직에 우리 팀에
+필요하다는 것을 스스로 인식하고
+인정하고 있다는 것이죠.이 이 부분에
+대해서는 우리가 부정을 할 수
+없습니다. 여기에 대해서 가장 안
+좋은 방식의 태도는 이런 태도일
+것이라고 생각드는데 그 커뮤니티의
+글에 이런 댓글이 한 개 있었습니다.
+크크. 마음은 이해는 된다만 저라면
+제 팀에서 내칠듯. 조직 문화
+개판나는 건 한 순간이라 아무래도
+신입이다 보니 무슨 프롬프트 한두 줄
+짠게 엄청난 경쟁력처럼 느껴지나
+봅니다.이
+[18:00]
+두 세 줄의 문장에 많은 것들이 담겨
+있습니다. 그죠? 음. 첫 번째는
+그냥 신입에 대한 노골적인 무시. 두
+번째는 신입의 그 프롬프트 엔지니어링
+능력을 무슨 프롬프트 한두 줄 짠게
+엄청난 경쟁력처럼이라고
+표현을 하고 있죠. 그죠? 영향에
+대한 가치에 대한 불인정. 세 번째
+팀에서 내 칠듯이라고 이야기하는 그
+표현에 담긴 좀 무리한 태도들. 음.
+이분이 말하는 조직 문화는 기본적으로
+성장과 소통과 기회에 대한 인정의
+문화는 아니어 보이고요. 상사의
+지시와 명령에 대해서 상명 화복의
+조직 문화를 의미하는 것으로
+읽힙니다. 근데 여러분들 문제는
+만약에 이런 태도를 가지고이 신입
+사원을 계속 몰아갈 때 그래서 치사한
+사람, 이기적인 인간이 구도로 계속
+몰고 가게 되면 결국이 신입은 나가게
+될 겁니다. 음. 그죠? 이
+영향적으로 그래도 더 뛰어난 부분이
+[19:00]
+있는 그리고 본인의 성장에 대해서
+고민하는 그리고 본인의 시간을 쪼개서
+그런 부분들을 개발하는이
+신입은 결국 막다른 골목까지 몰렸을
+때 결국 조용한 퇴사를 선택할
+가능성이 생각보다 저는 너무 크다고
+생각을 하고요. 만약에 그렇다면 결국
+그런 친구들, 새로운 자극을 줄 수
+있는 그런 친구들은 전부 다 나가고
+서로 아무런 자극도 줄 수 없는 그런
+사람들만 조직에 남게 되지 않을까라는
+그런 우려도 저는 생기더라고요. 제가
+한 가지이 사례를 보면서 어
+개발자들에게 한번 의견을 좀
+물어봤습니다.음 음, 전화를 해서
+만나서 혹시 이런 사안에 대해서
+개발자들을 어떻게 생각할까에 대해서
+이야기를 했더니 제 아주 친한 개발자
+한 명이 이런 이야기를 하더라고요.
+한 가지 참고할 점은 개발자들
+사이에서 자신이 개발한 코드를 오픈
+[20:00]
+소스와 하여는 문화가 있다는 거예요.
+이렇게 공유한 오픈 소스를 통해서
+누군가는 도움을 받기도 하고 누군가는
+거기서 더 발전을 시키기도 하는데
+근데 그럴 때마다 개발자들은 보통은
+본인이 도움을 받거나 좀 빼어난 오픈
+소스를 공유를 해 주면 좋아요를
+누르거나 포크를 누르기도 한다는
+것이죠. 그리고 그것이 마치 석사나
+박사 논문 인용될 때와 같이 나름의
+그 문화에서는 그 신에서는 자신의
+코드 오픈 소스에 대한 인정으로 자리
+매임하게 되고 또 그 코드에 오류를
+찾거나 보완점을 이야기를 해 주는
+그런 피드백을 받으면서 서로가
+실질적인 도움을 주고 받고 정서적인
+인정을 서로 해 준다는 것이죠.
+즉 코드를 공유하는 것이 자신에게
+정서적으로 분명한 보상이 되고 자신의
+영향적으로도 더 도움이 된다고 생각을
+해서 오픈 소스를 스스로 자발적으로
+공유를 한다는 것이죠. 이게 여러분들
+[21:00]
+누구에게 강압적인 분위기에서 지시나
+명령을 해서 오픈 소스를 본인의
+커드를 공개하는게 아니고요. 이게
+결국은 공유하는 것이 내게 여러
+가지로 저 더 이익이 된다고 생각하니
+공유하지 말라 그래도 공유를 하는
+것이죠. 그죠? 이런 분위기, 이런
+조직 문화를 만들기까지는 사실 우리가
+AI 시대를 살아온 것이 몇 년
+되지도 않기 때문에 아직은 시간이
+조금 더 걸릴 것이라고 생각하고
+지금은 초기 단계로 과도기적으로 여러
+가지 조직 내에서 이런 고민들과
+갈등들이 여기저기서 일어나고 있지
+않을까라는 생각이 듭니다. 결국이네
+가지 패턴이 선순환이 되면 나에게도
+이득이 되고 조직에도 이득이 되는
+그런 문화가 좀 뒷받침 될 수 있다고
+생각을 하고요. 그래서 신뢰가
+필요하고 그러면 자발쪽 공유하게 되고
+자발쪽 공유해 준 것에 대해서 인정을
+해 주고 인정한 부분에 대해서 그냥
+[22:00]
+말로만 인정하는 것이 아니고 정서적
+실질적으로 보상이 뒤따르고 그러면
+다시 신뢰가 쌓이고 그러면 다시
+개발된 걸 공유하고이 이제 신뢰의
+연결 고리들을 우리가 선순환으로
+어떻게 만들지에 대한 그런 좀 고민이
+필요할 것 같고이 사람을 개인적으로
+적으로 이기적이다. 태도가 안 좋다.
+몰아붙일 것이 아니고 저는이 일은
+수차례, 수십자례, 수백차례 앞으로
+AI 시대 반복될 것이라고 생각을
+합니다.
+신입 사원에게도 팀장님에게도이
+태도와 커뮤니케이션 방식에 대해서도
+좀 이야기를 드려 보고 싶은 부분이
+있는데 이제 신입사원이 팀장의 그
+반복적인 요구에 대해서 아 그건 좀
+힘들 것 같습니다라고 이제 딱 잘라서
+거절을 한 것에 대해서 여러
+커뮤니티에서 이제 댓글로 신입 사원의
+태도가 좋지 않다.음 신입사원이 아직
+[23:00]
+사회생활을 못 한다. 잘 모른다.
+개념이 없다. 이런 방식의 피드백들이
+은근히 많았습니다. 제가 보기에는
+신입 사원도이 태도와 커뮤니케이션
+스킬에 대해서는 좀 고민해 볼 필요가
+있을 것 같은데요. 여러분들은 반대로
+한번 생각을 해 보시죠. 여러분들은
+어떤 거절을 당할 때 기분이
+나쁘신가요?
+저는 좀 그렇더라고요. 저는 이런
+거절을 당할 때 좀 기분이
+나빴습니다. 첫 번째는 내가 좀
+고민을 해서 어렵게 부탁을 했는데
+얘는 그냥 제대로 고민도 안 해 보고
+거절할 때. 두 번째는 내가 부탁을
+했던지가 으쓱하면서 자기가 더
+우월하다고 생각하면서 거절한 사람
+약간 비하거나 무시할 때. 세 번째는
+기준도 없이 감정적으로 우하고 대응을
+할 때. 이럴 때 내가 거절을 당할
+때 아주 기분 나쁘다라는 생각이
+들더라고요. 그러면 여기에 대해서
+우리가 역으로 생각을 해 봐서 과연
+신입 사원의 입장에서 어떻게 거절을
+[24:00]
+하면 조금 더 세련되게 그리고 관계에
+대해서 마찰를 가지지 않고 거절을
+잘할 수 있을 것인가에 대해서 한번
+고민을 해 보도록 하겠습니다. 첫
+번째는 여러분들 거절에 대한
+인식으로부터 시작합니다. 거절은
+무리한 행동이 아닙니다. 저는 거절이
+기본적으로 업무의 조율이라고 생각을
+합니다. 업무를 여러분들 우리가 하다
+보면 상대방의 말에 대해서 전부 다
+예스를 할 수가 없습니다. 그러면
+착한산 컴플렉스에 빠지게 되는
+것이죠.이
+이 거절은 업무를 초율하는 중요한
+과정이고 거절을 잘하는 것도 중요한
+역량이라고 저는 기본적으로 생각을
+합니다. 두 번째는 조금 시간적
+여유를 가질 필요가 있을 것 같아요.
+바로네 또는 바로 아니요. 둘 다
+문제가 됩니다. 상대방이 부탁을 했을
+때 바로 내를 이야기를 하면 그러면
+내가 그 예스를 한 것에 대해서
+책임을지기 위해서 여러 가지 내면의
+시간과 소중한 것들을 희생하게 되는
+[25:00]
+그런 문제가 발생하고요. 그리고 바로
+못자르듯이 거절을 하면 상대방이
+기분이 나빠요. 그럼 태도를 문제
+삼게 됩니다. 저는 조금 더 시간을
+가지고 이렇게 접근을 하면 좋을 것
+같습니다. 네. 해보겠습니다라고 조건
+반사적으로 이야기하지 말고 확인해
+보고 가능한 범위에서
+말씀드리겠습니다.
+괜찮으시면 지금 하는 업무와 우선
+순위를 생각을 해서 한번 정리해 보고
+말씀드려도 될까요?이 이 정도
+방식으로 조금 시간을 두고 좀 천천히
+이야기를 하면 오히려 즉 수락을 하는
+것보다 훨씬 더 프로답게 느껴지는
+경우들이 많습니다. 세 번째는
+여러분들 조건부로 나누어서 승낙하는
+것도 방법이죠. 팀장님, 제가 말씀
+주신 부분에 대해서 한번 고민을 해
+봤는데 혹시 제가 다음 주 타운홀
+미팅 때 제가 프롬프트를 만드는
+핵심적인 원칙과 키워드를 공유해
+드리는 방식으로 진행하면 어떨까요?
+제 프롬프트는 제가 활용하는 AI에
+[26:00]
+최적화되어 있어서 다른 분들이 그대로
+적용해도 결과가 달라질 수도 있고 그
+자체를 복사해서 드리는 건 아무래도
+제 개인적인 문체라든지 단어 선정
+등의 특수한 부분이 있어 프롬프트
+엔지니어링 핵심 원칙과 주요
+키워드들을 공유해 드리는게 더 도움이
+될 것 같습니다라고 이야기를 하는
+것이죠. 들어보면 여러분들 설득력이
+있죠. 무조건적으로 내가 거절한게
+아니고 생각을 해 보니까 그걸 만드는
+방식들의 원칙은 있는데 제가 그걸
+공유를 해 드릴 텐데 재문체를 어차피
+따라해 봤자 이게 도움이 안 될 수도
+있습니다. 그죠? 내가 전부 다
+예스를 하는게 아니고 그걸 나누어서
+35% 정도는 예스를 하고 나머지는
+정중하게 거절 한다면 상대방이 어떻게
+느낄까요? 아, 그래도이 친구는
+노력을 한다. 태도가 그렇게 나쁘지는
+않다라고 생각을 하게 된다는 것이죠.
+그리고 여러분들 거절을 할 때 나의
+솔직한 감정을 표현하는 것도 나쁘지
+[27:00]
+않습니다. 그리고 팀장님 솔직히
+말씀드리자면 제가 주말과 퇴근 후에
+사실 치열하게 고민해서 만든
+프롬프트를 모두에게 다 공유해
+드리는게 개인적으로는 조금 불편한
+마음이 들기도 합니다. 이런 표현은
+여러분들 해도 좋아요.
+>> 음.
+정중하게 이렇게 내 서운함이나 내
+우려를 전달하는 것은 오히려 상대방이
+마음에 빚을지게 하고 그리고 설득력을
+갖추는 데는 도움이 됩니다. 다섯
+번째 합리적인 보상에 대해서 이야기를
+하는 것도 저는 괜찮다고 생각을
+합니다. 그리고 혹시 가능하시다면
+이러한 제 기여를 인정해 주실 수
+있는 방법을 팀장님께서 고민을 해 봐
+주실 수 있을까요? 그래야 저도
+어떻게 더 기어를 할 수 있을지
+고민하면서 지속적으로 동기 부여가 될
+수 있을 것 같습니다.요 한 네,
+다섯 가지의 거절의 패턴들을
+여러분들께서 한번 익혀서 실제로
+활용을 해 보신다면 관계도 그렇게
+해지지 않으면서도 잘 거절할 수 있지
+않을까 생각이 듭니다. 반대로 조직
+[28:00]
+문화와 팀장 관점에서도 한번 생각을
+해 볼 필요가 있는데요. 가장 나쁜
+접근 방식은 이런 건 거 같아요. 너
+혼자 일하냐? 음. 팀워크라는 개념
+없냐? 그죠? 이런 말들을 수 있을
+것 같고요. 그 회사에서 일하면서
+만든 거잖아. 그 회사 거지. 그게네
+거냐? 이렇게 물어볼 수도 있고 너만
+잘되려고 그러는 거야. 요즘 애들은
+원래 그렇게 계산적이냐?
+이렇게 물어보면 상대방을 완전 코너로
+몰아가는 것이죠. 그죠?
+그리고 나면 하루 이틀 뒤에 찾아올
+수 있습니다. 팀장님 드릴 말씀이
+하면 드릴 말씀이 좋았던 적은
+없습니다. 여러분들 그죠? 음.
+그래서 어떻게 하면 내가 좀 지혜롭게
+접근할 것인지 내가이 조직에서
+상대방의 지식과 노하우를 일방적으로
+빼앗는 사람이 아니고 서로의 가치를
+교환하는 그런 분위기를 어떻게 만들
+것인지를 좀 고민해 볼 필요가
+[29:00]
+있습니다.
+핵심적인 개념은 여러분들 리더십
+관점에서는 초전 설득이라는 개념이죠.
+무슨 개념이죠, 여러분들? 설득하기
+전에 설득이 되어야 된다. 협상하기
+전에 협상이 되어야 된다. 그죠?
+내가 어떻게 상대방을 설득시킬 수
+있는 판을 설계할 것인가 관점에서네
+가지 패턴을 한번 생각을 해 볼 수
+있습니다. 첫 번째는 먼저 인정.
+그리고 두 번째 보상. 세 번째
+범위.네 번째 기록.요네 요네 가지의
+패턴을 여러분들께서 한번 기억을
+하시고 적용을 해 보시면 도움이 될
+거 같습니다. 인정부터 한번 예를
+들어 보겠습니다. 팀 [콧방귀] 내
+공식적인 전문가로서 네가 AX의
+스페셜리스트라고 나는 생각을 해라고
+먼저 인정을 해 주는 것이죠. 그죠?
+보상에 대해서도 성과 평가에도 내가
+이런 부분들은 분명히 반영을 해서
+연말에 평가를 한번 해 보도록 할게.
+범위에 대해서도 전부 공개,
+[30:00]
+무조건적인 공개가 아니라 핵심
+원칙이나 샘플부터 한번 단계적으로
+공유를 해 줄 수 있겠니? 누가
+만들었는지 기록에 대해서도 내가
+템플릿을 명확하게 남기고 기록을 해서
+크레딧을 인정을 해 줄게라는요네 가지
+패턴을 여러분들께서 기억을 하시고
+활용을 한번 해 보시면 좋을 것
+같습니다. 조금 구체적으로 여러분들
+예를 한번 들어 볼게요. 상대방
+직원이 예를 들면 정민님이라고 예를
+든다면 정민 님 그동안 퇴근 후에도
+혼자 익히느라 고생 많으셨죠?
+먼저 감정적으로 인정입니다. 그죠?
+여러분, MBTI T 성향인 분들도
+첫 문장은 F로 시작해야 된다. 두
+번째 저는 정민님의 전문성
+인정하고요. 그분에 있어서 누구보다
+탁월하라는 것을 잘 알고 있습니다.
+가치 존중의 문장이 들어가고요. 세
+번째 아마 정민님도 매번 거절하기가
+불편하실 텐데 혹시 프롬프트 전체
+말고 프롬프트 만드는 핵심 원칙과
+[31:00]
+사례별 작성법 공유 가능할까요? 아마
+직원들에게도 도움이 많이 될 거 같고
+정민 님이 속해 있는 프로젝트
+결과물을 잘 만들어 내는데도 도움이
+될 것 같네요. 단계별 요구입니다.
+그죠? 구체적 보상도 언급할 수
+있죠. 물론 이런 부분들과 정민님에
+대한 기여은 제가 기록해 두고 향후
+평가에도 고려를 하겠습니다. 추가로
+정민님이 이런 부분 더 발전시킬 수
+있게 인사팀에게 요청해서 AX 교육
+기회도 제공하려고 생각하고 있습니다.
+다섯 번째 미래에 대해서 언급을 하는
+것이죠. 제가 생각하기에 이렇게 함께
+고민해 주시면 정민 님이 AI 활용에
+있어서만큼은 우리 팀의 기준이 될
+것입니다. 요렇게까지 언급을 해
+준다면 아마도 여러 가지로 서로가
+누군가를 빼앗고 뺏기고 이런 분위기가
+아니고 서로가 충분한 교감을 나누고
+가치를 주고받는 그런 패턴의 대화가
+될 수 있지 않을까라는 생각이
+[32:00]
+듭니다. 기본적으로 여러분들 협상은
+명령이 아니라 가치 교환이죠.
+상대는 가치를 느낄 때 움직이고요.
+그렇게 상대의 핵심적인 욕구를 먼저
+파악해 볼 필요가 있습니다. 특히
+내가 상대방과 서로 으르렁거리면서
+뺏고 빼앗기는 그런 분위기가 아니고
+내가 공통의 문제를 해결하는
+당사자다라는 생각을 하게 만드는 그런
+프블럼 솔브의 개념을 생각해 볼
+필요가 있고요. 그리고 설득은 역시
+여러분들 정보부터가 아니고
+감정으로부터 시작됩니다. 먼저 호감을
+만들고 인정을 해 주고 그리고 나서
+정보를 이야기하고 논리를 이야기하고
+그리고 나서 행동까지 이끄는요 패턴을
+기억을 해 두시기 바랍니다. 역시나
+여러분들 AI 시대 협상론도 저는 두
+가지로부터 시작된다고 생각합니다.
+호감이 있어야 되고 신뢰 자본이
+있어야 됩니다. 논리와 정보는 이제는
+대체가 가능합니다. 신뢰받는
+메신저로서 협상은 거래의 속도가
+[33:00]
+빨라지고 거래의 비용이 현재이
+줄어듭니다. 어떻게 하면 자본주의
+시대에 내가 조직 내부에서
+커뮤니케이션 할 때도 저 사람이 나를
+믿게 만들 것인가? 저 사람이 나를
+호감으로 생각하게 만들 것인가를
+고민해 볼 필요가 있습니다. 그래서
+둘 다 신뢰받는 메신저로 실내 연결
+고리에서 커뮤니케이션을 해 나갈
+필요가 있을 것이라고 생각이 듭니다.
+네. 지금까지 여러분들 AI 시대에
+얼마든지 우리 주위에 있을 수 있는
+그런 프로포트를 누가 소유하고 또
+그걸 줄 수 있을 것인가 말 것인가
+그리고 또이 부분에 대한 어떤 조직
+문화적인 그리고 커뮤니케이션적인
+부분도 한번 같이 고민을 해
+봤습니다. 사실 이게 여러분들 정답이
+있는 문제는 아닌 거 같고요. 그리고
+법적으로만 해결할 수도 없는
+문제입니다. 기본적으로는 정당한
+인정과 그리고 보상 그리고 조직 문화
+그리고 신뢰 연결 고리를 함께 고민을
+해 봐야 될 것이고요. 단계적으로
+[34:00]
+하나씩 우리가 적용을 해 봐서 서로
+시너지를 내면서 가치를 낼 수 있는
+그런 분위기를 만들어 나가는 그런
+방식이 가장 좋지 않을까라는 생각이
+듭니다. 최고의 협상도 최고의 대화도
+마찬가지죠. 결국 내가 원하는 것도
+없고 저 사람과의 관계도 지키는 그런
+협상, 그런 대화 여러분들께서 해
+나가시길 바라겠습니다. 지금까지 리
+변호사였습니다. 입니다. [음악]

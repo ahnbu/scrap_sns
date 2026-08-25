@@ -1,523 +1,792 @@
-Uh, for this video, I was thinking about how to introduce the workflow feature, which was recently
-released in Claude Code, to
-you all. And
-uh, I think I can use this workflow feature to slim down my
-harness a bit
-.  I
-thought this was the perfect task, so
-in this video, I will cover
-how you can use this workflow feature
-to diet and optimize your HANS
-.  Uh, first of all, since there might be some
-people who missed the video I uploaded to YouTube a while ago, let me
-briefly explain it.
-Lately, we have been
-carrying out a process called "harness engineering," where we stabilize coding agents by attaching safety devices called harnesses one by one. However, what
-I have been feeling lately is that a
-harness, once created, probably won't last forever
-.  Uh, because previously, the
-model itself didn't follow instructions, so you had to
-read this file first no matter what.  And do
-not implement it immediately.
-Make sure to make a plan before you start working.
-We needed a
-process of continuously putting up fences around this agent in this way
-.  But gradually, the
-LM model of the coding agent itself also starts to
-improve.  So, as the performance of such models
-improves, situations may arise where
-actions we previously had to forcibly bind become
-unnecessary
-.  It seems like the current situation is exactly like that
-.  Ops
-4.8 model, GPT 5.5 model.
-The performance of the L model has really improved a lot these days
-.  Uh, and the
-Claude Code, Codex, cursors, and things like that that we use are
-not simply model calling windows that call LLM models.
-These could also be considered a harness
-.  You can consider that a vast array of harnesses—including file creation, code
-modification, terminals, command execution,
-memory, tools, and skills—are
-already built into this coding agent
-.  So, if we
-create a separate HANS and
-attach it to this coding agent, it can
-essentially be seen as a structure where we are placing
-our own HANS on top of the HANS called the coding agent
-.  Uh,
-then, the problem could arise here
-.  Uh, the
-harness we made three months ago would probably have been
-needed back then.  Uh, but now
-Claude Code might have
-basically become good at that action even without that harness
-.  Or, a
-better method than the Hannes we created may have been introduced
-.  Uh, if that happens, the
-harness we made in the past might have
-changed into a form that no longer helps the agent but actually becomes a hindrance
-.  There may be some parts where
-instructions are duplicated
-.  Nowadays, coding
-agent models are already so smart that they try to handle things on their own, but the
-harness we created—that is, these
-outdated rules—can keep interfering with the coding agent and
-actually hinder it
-.  So, the
-part we need to focus on right now isn't about
-what additional Hans to attach to this coding agent, but rather, since
-you all likely already have a huge number of Hans built up
-.  I think now is the time to focus on
-how to eliminate the unnecessary things among those Hannes
-.
-So, in this video, I’m going to
-cover a feature called Dynamic Workflow in Claude Code
-. You can consider this Dynamic Workflow
-feature
-to be a brand-new feature that was recently released by Claude Code
-.  So, in this video, I will
-explain to you in detail what the concept of this workflow feature is, how it differs from various existing technologies, and what methods there are for using and creating it.  Uh,
-and it doesn't end here
-.  In fact,
-when utilizing workflow features like this, it is
-crucial to determine which parts of your actual work and tasks are efficient and which are not. As
-I mentioned earlier,
-harnesses are
-not permanent.
-Therefore, we need to identify issues with the various harnesses we have created
-and eliminate unnecessary ones. I
-believe this workflow feature can be very useful in this regard.  So, in
-this video, based on my legacy HANS, I will
-use the workflow function to identify the issues with my HANS, and based on those identified
-problems, I will proceed to improve my
-legacy HANS to the point where I can actually streamline it
-.  I would say that dynamic workflow is a
-feature that uses JavaScript to orchestrate multiple sub-agents simultaneously
-.
-So, if we
-use a workflow, when we pass a task to Claude Code,
-Claude Code writes a
-script suitable for that task in JavaScript and
-executes it, and
-it runs in the background
-.  And existing sessions can
-continue to be used for other tasks
-.  So, it seems there are basically two ways to
-utilize this workflow feature in Claude Code
-.  The first method is to insert a keyword
-called Ultra Code when writing the prompt
-.  Now that I
-type "Ultra Code," the keyword is highlighted like this, and it shows here
-that a dynamic workflow
-was requested in this turn
-.  So, you can consider the first method as the workflow running by writing the
-keyword "Ultracode" like this and
-specifying the tasks for the workflow you want after it
-.  Or,
-if you cannot remember the keyword called UltraCode, you can
-request the workflow to perform such and such tasks in this way, and the
-workflow will be retrieved and executed
-.  Uh, and you
-can also set the effort level like this. For example, if you
-input the effort command, you
-can basically set the effort level to determine how much thought Claude Code will put into the work.  There, you can basically set five levels: Low,
-Medium, High, Xi, and Max. There
-is also an effort level called Ultra Code.  So, if you
-select this and press Enter, you can
-make it perform all tasks in Claude Code at the Ultra Code Effort level like this.   If
-necessary, you can view it as Claude Code being
-able to carry out your work through a feature called Workflow
-.  However, I am not
-proceeding with the basic mode set to Effort; instead, I have it set
-to Lex or X-High, and I
-think I can execute the workflow by entering a keyword like "Ultra Code" when necessary or by writing a prompt to create a workflow.  Uh, and now there is
-basically one workflow built into the Claude Code
-.
-If you write a command called Deep Research, you can utilize the dynamic workflow feature
-built into this cloud code
-. Let's try using this Deep Research
-feature
-.  In this way, I plan to request that Claude
-Code users research
-how they use Claude.md and MD skill hooks, looking into the
-common patterns of skilled users and common
-mistakes
-.  In that case,
-since the Deep Research function is a workflow, it will
-now operate in the background as a workflow
-.  So, they are saying that they will now execute deep research in this manner and will use a
-multi-agent workflow to perform search, source,
-collection, adversarial verification, and generate a comprehensive report
-.
-And below, you
-can see that the background agent now runs separately in the workflow like this
-.  And if you
-want to see the progress of an ongoing workflow, you
-can view the current status of the workflow by entering the command called slashworkflow.
-Since this is running in the background, it can be
-seen as a situation where other tasks may continue to be performed on the current session.  So, I’m going to
-use the workflow command to
-view the progress of the currently ongoing workflow like this.   It
-is divided into a total of five phases, and it is said that one scope is currently in
-progress.
-If you look at this search phase, you can see that a total of
-six sub-agents are
-currently conducting their respective searches in parallel
-.
-You
-can use the arrow keys to move back and forth and check what each sub-item is doing
-.  And following the search stage, the
-patching stage takes place
-. In this patching stage, you can understand it as the
-process of actually patching documents from the web using the web patching function
-.  In this patch process, you can see that a total of
-28 sub-agents are in operation,
-rapidly retrieving a vast amount of information from the map
-.  Once the patch is complete, it will
-proceed to the verification stage like this.  In the verification phase, a
-total of 75 sub-agents have
-appeared like this.  So, by operating a large number of
-server agents in this way, we
-conduct adversarial verification of the findings we have researched from multiple perspectives and adversarial viewpoints.  And
-in the final step, the
-things that were searched, patched, and verified earlier are
-combined and synthesized to
-create a final research report; you can consider this as Deep Research, a workflow that is built into A Cloud Code by
-default
-.  And now, once the
-execution of the Claude Code workflow called Deep Research is
-complete, you can see the final report
-appearing like this
-.  In Deep Research's
-internal workflow,
-after collecting 28 sources and 55 claims, a
-technical review is conducted following the adversarial verification stage, and a
-final report is output.
-However, by having this process
-run in separate sub-agents rather than within the main agent's current session, the
-main
-agent only
-receives the final report generated. This allows for a
-structure that maximizes the efficient utilization of the main agent's context
-.  So, you can consider
-these features, which were obtained by utilizing this deep research function,
-as the basic framework of the workflow
-.  So, to
-execute a workflow, you can enter keywords like "Ultra Code,"
-input the workflow natural language,
-or utilize saved slash
-commands.
-For example, we have utilized the
-built-in workflow of Claude Code called Deep Research, and
-next, we will
-create these two workflows.
-First, we are going to create a
-workflow that can scan for issues with our legacy harness
-.  And
-secondly, based on the report scanned by the first workflow, we will
-create a total of two workflow functions, including a workflow that can actually optimize and diet this harness
-.
-Based on the official Entropic documentation, you can run a total of up to
-16 sub-agents simultaneously in the workflow
-.  And since it says that up to 1,000 sub-agents can be run
-cumulatively for a single execution, you can
-think of it as a feature that allows you to launch a very large number of sub-agents.  And if you
-look at the workflow differences compared to existing functions such as sub-agents, skills, and agent teams, the biggest difference is
-who holds this plan
-.   It can be
-viewed from the perspective of who holds the planning document itself
-.  In the case of a sub-agent,
-when the code executes each sub-agent, there may be a part where the
-plan is managed on a turn-by-turn basis for each sub-agent
-.  Secondly,
-regarding skills, we can see that plans are managed
-in the current main session based on the prompts we have written,
-whereas for the agent team, the structure is set up so that the team lead
-agent manages all plans centrally
-.
-Also, the feature called "workflow" utilized in this video
-operates internally based on JavaScript, so the
-difference is that the plan is managed at the script level
-.  So, since plans are managed at the script level, you can
-consider the characteristic of this workflow to be that it allows for a structure where the scale of agents can range from dozens to hundreds of executions.  So,
-now we are going to create our own custom Claude Code
-workflow
-.  First, we will create a
-workflow called the Harness Legacy Scan to
-verify and audit our current Harness structure, determine if it is appropriate, and identify any areas that need improvement
-.  And
-here, a Hannes verification report will be
-generated. Based on that report, the
-second
-workflow we will create is called the "Harness Diet." Based on the
-report generated in the first workflow, we will
-create things that can actually help our Hannes lose weight—that is, optimize it and help it lose some weight
-.  Uh, here, the
-workflow called Harness Legacy Scan is almost the same pattern as the workflow called Deep Research that we used a little while ago
-.  Uh, the
-pattern of this workflow called deep research was like
-this.  Deep research was implemented in this way, through a process of searching the web,
-cross-validating, and finally
-synthesizing the cross-validated results to
-produce a final report
-.
-However, you can view the Hannes legacy scan we created as having
-exactly the same structure as the Deep Research pattern
-.  For example, if our
-Hanness has
-over 50 implementations across various categories, we will use a workflow called the
-Hanness Legacy
-Scan to verify whether each item is necessary, if there are any conflicts with the product's core functions, and whether it is worth implementing globally or should be separated into project units, and then
-generate a report.  We will try to make it possible to
-view our Hannes from many different angles
-.
-Therefore,
-for tasks requiring adversarial and multi-faceted verification, it
-seems that the new feature called "Workflow" introduced in Claude Code is very suitable.  Okay,
-I have written a prompt for creating a workflow, and I would like to
-share this prompt with you all.
-Okay, I've inserted the keyword called UltraCode like this
-.  And I requested that you design and execute a dynamic workflow to audit my
-coding agent, Hannes, in read-only mode
-.  First, we will now create things that allow us to audit
-our workflow in read-only mode like this
-.  As I mentioned earlier, the workflow name is
-Harness
-Legacy Scan.  We
-set our workflow goal to identify outdated rules, redundant knowledge, excessive global context, overly broad skills, unnecessary hooks, MCPs, and settings that duplicate product core functions remaining in our harness.
-And now, when we have an agent review something, they
-may view it from a biased perspective.
-To prevent this as much as possible, it is
-very important to request that the agent review it from multiple angles.
-So, you need to design the workflow in
-such a way that the agent can be analyzed by dividing it into multiple perspectives
-.
-First, there would be an Inventory
-Agent running to list Hannes-related files and
-gender settings,
-and second, I think it would be good to include a Global
-Context Tax Agent to
-verify whether there are any unnecessary context costs, such as Claude.md,md, mdAgent.md, and Cursor Rules
-.  And a skill management agent capable of analyzing whether each skill is still
-needed, whether the description is designed too broadly, and whether the
-skill point
-MD is too long
-.
-And now, I mentioned that agents like Claude Code, Codex, and
-Cursor are also a
-harness layer
-.  Therefore, since these coding
-agents already have
-established harnesses, having my
-custom harnesses
-duplicated can actually
-degrade performance. So, you can think of the
-Product Overlap Agent as checking to ensure that rules or harnesses that were previously necessary but are already included in coding agents like the Clod Code Codex Cursor do not duplicate them. Additionally, since
-hooks,
-add tools, and MCPs typically
-contain many functions for granting permissions, it is necessary to analyze whether
-permissions are being granted overly broad areas
-.  And based on the
-analysis
-results from multiple agents mentioned above, a final process was required for the refactor agent to classify whether refactoring was actually
-needed—whether to
-keep, compress, move,
-split, transform, or
-delete the harness. We
-included this feature, and
-finally, we added a safeguard by
-launching multiple adversarial reviewer agents
-to critically examine items that could become risky if deleted or reduced
-.
-So, based on this prompt, I will
-request that Claude Code create a workflow called our Harness Legacy Scan
-.  I copied and pasted the prompt I showed you a moment ago exactly as it is
-.  Since we
-requested that the workflow be designed and executed based on the keyword Ultra Code,
-Claude Code will now
-generate our workflow called Hannes Legacy Scan
-.  Okay, so they say the workflow has been
-fully created and is currently
-running in the background
-.  So, let's
-use the workflow command to enter and
-check our workflow
-.  You can see that it is executed in a total of four stages: Inventory, Analyze,
-Plan, and Hostile Review
-.  In the inventory phase, the
-configuration files for our harness are all loaded to
-first identify how the harness is configured.
-Secondly, there is an analyze phase where you
-can see that a total of 13 sub-agents are running. You can see that the
-workflow reviews skills and even
-safety permissions, and that this
-analyze phase is conducted through this process
-.
-So, you can
-check how each skill is being verified
-. It seems that Product
-Overlap now verifies things that were necessary in the past but have become
-unnecessary as the coding agent has been updated
-.  And finally,
-safety permissions check to ensure that you are not currently granting overly broad
-permissions
-.  Once the analysis in the analyze phase is
-complete, the process moves on
-to the plan phase. A
-sub-agent called the Refactor Planner is
-created, and
-in the third plan phase, it proceeds to
-create a preliminary plan regarding whether to maintain, compress, move, or reconfigure the harness verified in the verification phase.
-Okay, and
-now, let's say the planning phase is complete
-.  After drafting the initial plan in this way, the
-fourth and final step is the adversarial review
-stage.  If there is a request to
-delete or change something during the third stage, the planning stage,
-those requests will be critically verified
-during this final adversarial review stage to ensure that
-deleting them does
-not cause any problems or side effects. After
-verifying this at the final stage, a final plan document
-report will be prepared.   I
-divided the process into these phases by adding a final stage for adversarial rebuttal review of items classified as high risk, so that the final report can be produced more stably.  If you
-decide it is necessary, you
-can specify things like the number of agents for each step when designing the workflow.  It says that the Legosianness
-Scan dynamic workflow has
-finished executing.  I'll wait for the final report
-results.   They say that they
-utilized a total of 16 agents to
-discover 109 items and
-used approximately 1.6 million tokens
-.  The agent workflow ran for 17 minutes
-.  So, let's say the
-final report has been written
-.  If you
-take a look at the report, you will see that the
-Hannesle Legacy Scan read-only audit
-report was created like this.
-Overall, it shows how our agent conducted the audit,
-and it summarizes things like which HANS to keep, which to
-reduce, which to divide, which to move, and which to
-delete
-.  And for each Hans, the
-items that need to be reduced are
-listed like this, and I have organized the
-items that require user confirmation and
-those that need to be mechanically deleted without confirmation into a
-table like this
-.  So, based on this Hannes report, we can now
-create a new Hannes diet workflow that allows us to finally modify and improve the Hannes diet
-.  So, the workflow we are going to create this time is called the
-Harness Diet, and
-like this, I will now
-share the prompt with you
-.  So, I would like to request that you design and execute a dynamic workflow that
-applies only lowless harness improvements based on the Hannes legacy scan report
-.  I gave the prompt to the A Clod Code exactly as it was
-.  So, let's say the
-harness diet workflow has
-now been executed.   If you take a look at the
-Dieter workflow, you will see that the
-workflow is executed in two stages: Split and Refine
-.  So,
-based on the Legacy Anesthesia Report from the previous stage, this is the
-stage of splitting various skills like this.
-And now, if
-there are any unnecessary descriptions or instructions in the skills, you can see that a
-step to redefine them is carried out during the refine stage.
-Similarly, you can
-see that multiple agents run in parallel to improve my harness skills
-.  So, now I’m going to show you how to save the Harness Legacy Scan workflow we previously ran while the Hannes
-Diet workflow is in progress. If
-you used a workflow to specify a
-task to be executed, the
-workflow is created like this
-.  However, if you
-want to reuse this workflow next time, you can save it by
-pressing the S key on your keyboard
-.  If you press the S key, you
-can name the workflow like this.  I’m going to name it Harness
-Legacy Scan
-.  So now, a
-legacy scan JavaScript file is
-created within the folder called Clod Workflow,
-allowing you to save the workflow so that it can be reused next time.
-So, if you run the code like this and
-search for "Harness Legacy Scan," you can
-see the workflow we created
-.  Similarly, if you save the
-workflow called the Hannes Diet
-by pressing the S key, you will be
-able to confirm that the Hannes Diet workflow has also been added when you restart Claude Code.  Uh, I
-also explained how to save workflows so they can be reused, specifically how to save them using slash commands.
-So, it is said that the workflow to improve
-my legacy harness in a better direction, based on the report generated by the Hannes legacy scan, has now
-been completed.  So, if you wait a bit, the
-Hannes diet
-workflow will generate a summary of the final results
-.
-Overall, we proceed to verify the
-improvements or deletions made to the Hannes diet workflow,
-check what has been added, and finally verify whether the improved Hannes skills function correctly when executed
-.  Now, they say that the harness
-diet workflow has completed and
-generated a final report
-.  It is said that the application report was
-created like this, and overall,
-about ten skills have been organized,
-12 new references have been added, and
-items that have been moved to storage are also listed here
-.  In the case of the main body of the Skill Point MD, it
-was previously about 2,600 lines, but it has been reduced to around 1,800 lines, a
-reduction of about 760 lines.
-Since this alone
-seems to have changed the system to allow us to use the overall context window more effectively.  Also, the number of active skills has
-decreased from 29 to 28, and a
-skill called 'A Notion Workspace'
-has been saved.  I have recently been in the process of
-switching my context management from Notion to Obsidian or the local layer. Since
-this skill is actually a legacy skill that I
-used only in the past and do not use these days,
-I also think that archiving it like this is more appropriate, and
-overall, I think the skill has been improved well
-.  So, to
-summarize one last time, making a harness
-is not a one-time process.
-The model evolves, and the Claude
-Code itself continues to evolve as well
-.  Therefore, I personally
-believe that a good harness is
-not just about continuously building upon it; it is crucial to set up the workflow in a structure where existing harnesses are
-periodically reviewed and continuously
-updated
-.
-So, I recommend running the two workflows we created in this video
-periodically
-.  I think running it once or twice a month should be
-enough.  Uh, you could integrate these
-two steps
-into a single workflow, but the
-method I recommend is to run the
-harness legacy scan workflow first and
-review the results yourself if possible.
-And if you are satisfied with the result, please do
-not do it manually, one by one.   I
-believe that if you incorporate the workflow known as the Hannes Diet into the final improvements and applications of your results, you will be able to manage your year a little more efficiently.
-So, I will now share the prompts for creating the two workflows shown in this video on
-Git
-.  You can try improving
-your own workflow based on the prompts I am sharing
-.  So, if the workflow I shared in this video
-has improved your HANS, I would appreciate it if you could
-leave lots of comments.
-I will be back in the next video with more useful
-information
-.  Uh, I
-wanted to give you a fresh vibe today, so I
-came outside to film an intro. I would appreciate it if you could
-leave a lot of feedback on this video format.
-Now, I will go inside and
-cover the workflow.   That's it
-.
+[00:00]
+어, 이번 영상에서 얼마 전에 이제
+클로드 코드에 새로 나온 기능인
+워크플로우 기능을 어떻게 여러분들께
+소개를 해 드릴까 그렇게 고민을 하고
+있었는데 어,이 워크플로 기능을
+활용을 해서 하네스를 좀 다이어트를
+시킬 수가 있겠다. 딱 맞는
+작업이다라고 생각이 들어 가지고 이번
+영상에서 여러분들께이 워크 플로
+기능으로 어떻게 하면은 여러분들의
+한스를 다이어트 시켜서 최적화를 시켜
+갈 수가 있는지에 대한 부분들을
+다뤄보도록 할 겁니다. 어, 일단은
+제가 얼마 전에 유튜브에 올렸던 걸
+못 봤던 분들이 계실 수가 있으니까
+어, 그걸 한번 이제 간단하게 말씀을
+드리면은 어, 우리가 요즘에 이제
+하네스 엔지니어링이라고 해 가지고
+코딩 에이전트에게 하네스라고 하는
+이런 안전 장치를 하나씩 하나씩 달아
+주면서 에이전트를 조금 더 안정화해
+나가는 그런 과정을 진행을 해 주고
+있는데 요즘 들어서 제가 느끼는 점은
+한 번 만든 하네스가 영원하게 가지는
+않을 것 같다라고 생각이 드는 거
+같아요. 어, 왜냐면은 예전에 이제
+모델 자체가 지시를 따르지를 않으니까
+무조건이 파일부터 읽어라. 그리고
+바로 구현하지 말아라. 반드시
+계획부터 세우고 작업을 해라. 뭐
+이런 식으로 우리가이 에이전트에게
+계속해서 울타리를 쳐 나가는 과정이
+필요했었습니다. 그런데 점점이 코딩
+에이전트의 LM 모델 자체도 막
+좋아지게 되잖아요. 그럼 이런 모델의
+[01:00]
+성능이 좋아지면은 좋아질수록 예전에는
+우리가 강제로 묶어야 됐던 행동이
+필요 없어지는 상황이 생길 수가
+있거든요. 지금 현재 상황이 딱 그런
+상황인 거 같습니다. 오프스
+4.8모델, GPT 5.5 모델.
+요즘에 L 모델 성능이 정말 많이
+좋아졌잖아요. 어, 그리고 우리가
+쓰는 클로드 코드, 코덱스, 뭐 커서
+이런 애들은 단순히 LLM 모델을
+호출하는 모델 호출창이 아니고요.
+얘네도 이미 하나의 하네스라고 볼
+수가 있겠죠. 어 파일 일으키, 코드
+수정, 터미널, 명령어 실행,
+메모리, 툴, 스킬 굉장히 많은
+하네스가 이미 이런 코딩 에이전트에
+다 내장이 되어 있는 상태라고 보시면
+되는데요. 그러니까 우리가 어떤
+한스를 또 따로 만들어 가지고 이런
+코딩 에이전트에게 달아주게 되면은
+사실상 그건 이제 코딩 에이전트라고
+하는 이런 한스 위에 우리만의 한스를
+또 얹혀 주게 된 그런 구조라고 볼
+수가 있을 것 같습니다. 어,
+그렇다면 이제 문제는 여기서 생길
+수가 있겠죠. 어, 3개월 전에
+우리가 만든 하네스는 그때는 아마
+필요했을 거예요. 어, 그런데 지금은
+클로드 코드가 그 하네스가 없어도
+기본적으로 그 행동을 잘하게 됐을
+수도 있고요. 또는 우리가 만든
+한네스보다 더 좋은 방식이 들어오게
+됐을 수가 있습니다. 어, 그렇게
+되면은 우리가 예전에 만든 하네스는
+[02:00]
+더 이상 에이전트에게 도움을 주는
+방식이 아니고 오히려 방해가 되는
+그런 형태로 변화가 됐을 수가 있을
+거거든요. 뭔가 어떤 부분에서는
+중복으로 지시하는 부분이 생기게 됐을
+수가 있습니다. 이미 요즘에 코딩
+에이전트의 모델 자체가 너무 똑똑해서
+모델은 알아서 잘하려고 하는데 어
+우리가 만든 하네스 그러니까 이런
+낡은 룰이 코딩 에이전트에 계속해서
+끼어 들어 가지고 코딩 에이전트를
+오히려 방해하게 만들고 있을 수가
+있습니다. 그래서 우리가 지금 현재
+집중해야 될 부분은이 코딩
+에이전트에게 어떤 한스를 더 붙여
+줄까에 집중하는게 아니고 이미 굉장히
+많은 한네스들이 여러분들도 쌓여 있을
+거잖아요. 그런 한네스들 중에서
+불필요한 것들을 어떻게 하면은
+덜어낼까에 집중해야 되는 그런
+타이밍이라고 생각을 합니다. 어 자
+그래서 이번 영상에서 다뤄 볼 기능은
+바로이 클로드 코드의 다이나믹
+워크플로우라고 하는 기능을 다뤄
+보려고 합니다.이 다이나믹 워크플로우
+기능은 클로드 코드에서 얼마 전에
+나온 따끈따끈한 신 기능이라고 보시면
+되고요. 그래서 이번 영상에서
+전체적으로이 워크플로우 기능이 어떤
+개념을 가지고 있는 개념인지 그리고
+기존에 있는 여러 가지 다른
+기술들과의 차이점은 무엇이고 사용하는
+방법 만드는 방법들이 어떤 것들이
+[03:00]
+있는지에 대해서 여러분들께 전체적으로
+다 말씀을 드리도록 할 거고요. 어,
+그리고 이제 여기서 끝나는 거는
+아니고요. 실제로 우리가 이런
+워크플로 기능 같은 것들을 활용할 때
+여러분들의 실제 업무 그리고
+여러분들의 한해스 이런 것들에서 어떤
+부분에서 적용하면 효율적이고 어떤
+부분은 또 아닌지에 대한 이런
+부분들이 또 굉장히 중요할 수밖에
+없는데 그래서 제가 앞서 말씀드렸던
+것처럼 하네스라고 하는 것은
+영원하지가 않다라고 말씀을 드렸는데
+그렇다면 우리가 기존에 만들었던
+여러분들만의 여러 가지 한네스들에
+대한 문제점을 파악을 할 수가 있어야
+되고 불필요한 것들은 또 제거할 수가
+있어야 되는데 이런 부분에서이
+워크플로 기능이 굉장히 또 유용하게
+활용이 가능할 것 같습니다. 그래서
+이번 영상에서는 제 레거시 한네스들을
+기반으로 해 가지고 제 한네스에 대한
+문제점들을이 워크플로우 기능을
+활용해서 뽑아내고 그렇게 뽑아낸
+문제점을 기반으로 해서 어 실제로 제
+레거시 한스를 다이어트를 시킬 수가
+있는 부분까지 쭉 개선을 시켜 보도록
+하겠습니다. 다이나믹 워크플로우는
+자바스크립트를 사용해서 여러 개의
+서브 에이전트를 한꺼번에
+오케스트레이션 해 주는 기능이다라고
+[04:00]
+말씀을 드릴 수가 있을 것 같습니다.
+어 그러니까 우리가 워크 플로기을
+활용하면은 클로드 코드에게 어떤
+작업을 던지면 클로드 코드가 그
+작업에 맞는 스크립트를이 자바스크립트
+언어로 짜 가지고 실행을 하게 되고
+그게 이제 백그라운드에서 돌게
+됩니다. 그리고 기존에 있는 세션은
+계속해서 다른 일에서 사용을 할 수가
+있게 되어 있고요. 그래서 클로드
+코드에서이 워크플로우 기능을 활용하는
+방법은 크게 이제 두 가지가 있을 것
+같은데요. 첫 번째 방법은 프롬프트를
+작성할 때 울트라 코드라고 하는 이런
+키워드를 넣어 주시면 됩니다. 지금
+울트라 코드라고 작성하니까 이렇게
+키워드가 하이라이트가 되어 있고
+이쪽에 이렇게 다이나믹 워크플로우가
+이번 턴에서 요청이 되었다라고 뜨게
+되어 있죠. 그래서 이렇게
+울트라코드라고 하는 키워드를
+작성하고이 뒤쪽에다가 여러분들이
+원하는 워크플로에 대한 작업을 명시를
+하게 되면은 워크플로우가 동작을
+하는게이 첫 번째 방법이라고 보시면
+되고요. 또는이 울트라코드라고 하는
+키워드가 기억이 안 난다라고 하시면은
+이런 식으로 워크플로우로 무슨무슨
+작업을 진행해 줘라고 요청을 하셔도
+[05:00]
+워크플로우가 불러와서 동작이 되게
+됩니다. 어, 그리고 이렇게
+에포트라고 하는 것도 이제 정해 줄
+수가 있는데 예를 들어서 에포트
+명령을 입력해서 보게 되면은
+기본적으로이 클로드 코드가 얼마만큼의
+생각을 하고 작업을 진행하게 해 줄
+거냐를 이렇게 에포트 레벨을 정해 줄
+수가 있습니다. 거기서 이제 로우,
+미디움, 하이, Xi, 맥스 이렇게
+다섯 가지를 기본적으로 넣어 줄 수가
+있는데 여기서 이제 울트라 코드라고
+하는 에포트 레벨도 있습니다. 그래서
+요거를 이제 선택해서 엔터를 눌러
+주시면은 이렇게 울트라 코드 에포트
+레벨로 클로드 코드에서 모든 작업을
+다 진행하게 만들 수가 있고요.
+필요하다라고 하면 클로드 코드가
+워크플로우라고 하는 기능을 통해서
+여러분들의 작업을 진행을 해 줄 수가
+있게 된다라고 봐 주실 수가 있을 것
+같습니다. 그런데 저는 기본적인
+모드를 에포트로 해서 진행을 하지는
+않고 있고 렉스 또는 X하이로 두고
+필요할 때 울트라 코드라고 하는 이런
+키워드를 입력을 해 주거나 또는
+워크플로우를 생성해 줘라고 하는 이런
+프롬프트를 작성해서 워크플로우를
+동작을 시켜 줄 수가 있을 것
+같습니다. 어, 그리고 이제
+기본적으로 클로드 코드에 내장된
+[06:00]
+워크플로우가 하나가 있습니다. 딥
+리서치라고 하는 명령어를 작성하면은이
+클러드 코드에 기본 내장되어 있는
+다이나믹 워크플로우 기능을 활용을
+하실 수가 있는데요.이 이 딥 리서치
+기능을 한번 활용을 해 보도록
+하겠습니다. 이런 식으로 저는 클로드
+코드 사용자들이 클로드.md, MD
+스킬 훅을 어떻게 쓰는지 잘 쓰는
+사람들의 공통 패턴이나 흔히 하는
+실수를 리서치 해 줘라고 이렇게
+요청을 해 보도록 할 거고요. 그렇게
+되면은 이제 딥 리서치 기능은이
+워크플로우이기 때문에 워크플로우로서
+이제 백그라운드에서 동작을 하게 될
+겁니다. 자, 이런 식으로 이제 딥
+리서치를 실행하겠다라고 하고
+멀티이전트 워크플로우로 검색, 출처,
+수집, 적대적 검증, 종합 리포트를
+생성을 해 주겠다라고 하고 있고요.
+그리고 밑에 이런 식으로 워크플로우로
+백그라운드 에이전트가 이제 별도로
+돌아가게 되는 것을 확인을 할 수가
+있습니다. 그리고 여러분들이 이제
+진행 중인 워크플로우의 진행 상황을
+보고 싶다라고 하면은 이렇게
+슬래쉬워크플로우라고
+하는 명령을 입력하면은 현재 진행
+중인 워크플로우의 진행 상황을 보실
+수가 있고요. 지금 이건 이제
+백그라운드에서 돌아가는 거기 때문에
+[07:00]
+현재 세션에 대해서는 계속해서 다른
+작업을 또 진행을 할 수도 있는 그런
+상황이라고 볼 수가 있습니다. 그래서
+한번 워크플로우 명령어를 활용해서
+현재 진행 중인 워크플로우의 진행
+상황을 이렇게 보도록 할 거고요.
+이렇게 총 다섯 단계의 페이즈로
+나눠지게 되고 하나의 스코프가 지금
+진행이 되고 있다라고 하고 있죠.요
+요 서치 단계를 보게 되면 이렇게 총
+이렇게 여섯 개의 서브 에이전트가
+병렬로 지금 현재 어 각각의 서치를
+이렇게 진행해 주고 있는 모습을
+확인하실 수가 있고요. 이게 방향키를
+활용해서 왔다 갔다 하면서 여러분들이
+각각의 서브에트가 어떤 작업을
+하는지도 이렇게 확인을 하실 수가
+있습니다. 그리고 검색 단계 다음에는
+이렇게 패치 단계가 이루어지게
+되고요.이 이 패치 단계에서는 이제
+웹 패치 기능을 활용해서 실제로 웹에
+있는 어떤 문서들을 패치해 오는 그런
+과정이 진행이 된다라고 보시면 될 거
+같고요. 이렇게 패치 작업에서는 총
+28개의 서브 에이전트가 동작을
+하면서 맵에 있는 굉장히 많은
+정보들을 빠르게 가져와 주는 것을
+확인할 수가 있고요. 패치가 완료가
+되게 되면 이런 식으로 이제 검증
+[08:00]
+단계로 넘어가게 됩니다. 검증 단계선
+이제 총 75개의 서브 에이전트가
+이렇게 뜨게 되었네요. 그래서 굉장히
+여러 개의 서버 에이전트를 이렇게
+동작을 시켜 가지고 다각도의 관점에서
+그리고 적대적인 관점에서 우리가
+리서치한 내용들을 적대적 검증을
+진행을 해 주게 됩니다. 그리고
+마지막 단계에서는 이렇게 앞에서
+검색하고 패치하고 검증한 것들을 이제
+종합해 가지고 합성하는 단계가
+들어가서 최종적인 리서치 보고서를
+만들어 주는게 어 클러드 코드에
+기본적으로 내장되어 있는
+워크플로우인이 딥 리서치라고 보시면은
+됩니다. 그리고 이제 딥 리서치라고
+하는 클로드 코드의 워크플로우 실행이
+완료가 되게 되면은 최종적인 보고서가
+요렇게 나오게 되는 것을 보실 수가
+있고요. 이건 이제 딥 리서치
+내부적인 워크플로우에서는 이렇게
+28개의 출처 그리고 쉰 다섯 개의
+주장을 수집한 다음에 적대적인 검증
+단계를 따라서 기술적 검토를 하고
+최종적인 보고서를 이렇게 출력을 해
+주게 되는데 이제 메인 에이전트의
+현재 세션에서 진행하는 것이 아니고
+별도의 각각의 서브 에이전트에서
+진행하게 해 줌으로써 메인
+[09:00]
+에이전트에선 최종적으로 생성된 이런
+최종 보고서만 받아볼 수가 있게 되어
+있기 때문에 메인 에이전트의
+컨텍스트를 최대한 효율적으로 활용할
+할 수가 있는 구조로 만들어 줄 수가
+있겠죠. 어 그래서이 딥 리서치
+기능을 활용해서 본 이런 기능들이
+워크플로우의 기본 골격이라고 보시면
+될 거 같고요. 그래서 워크플로우를
+실행하는 거는 이렇게 울트라 코드라고
+하는 키워드를 입력을 해 주시든지
+아니면은 워크플로 자연어를 입력을 해
+주시든지 아니면 저장된 슬래시
+명령어를 활용하는 방법도 있습니다.
+예를 들어서 우리는이 딥 리서치라고
+하는 클로드 코드의 기본 내장된
+워크플로우를 한번 활용을 해
+봤는데이어서 우리가 만들어 볼
+워크플로우는이 두 가지 워크플로우를
+만들어 보도록 하겠습니다. 첫
+번째로는 우리의 레거시 하네스에 대한
+문제점을 스캔할 수 있는 워크플로우를
+하나 만들어 볼 거고요. 그리고 두
+번째론는 첫 번째 워크플로우로 스캔한
+그런 보고서를 기반으로 해서이
+하네스를 실제로 다이어트를 시킬 수
+있는 최적화를 시킬 수 있는 이런
+워크플로우까지 총 두 가지의
+워크플로우 기능을 만들어 보도록
+하겠습니다. 엔트로픽 공식 문서
+기반으로 해서는 워크플로우에서는 총
+[10:00]
+최대 동시 16개의 서브 에이전트를
+띄울 수가 있고요. 그리고 하나의
+실행에 대해서 누적으로는
+1천000개의 서브 에이전트까지
+동작을 시킬 수가 있다라고 하니까 어
+서브 에이전트를 굉장히 많이 띄울
+수가 있게 되는 그런 기능이라고
+보시면 될 거 같고요. 그리고 기존에
+서브 에이전트나 스킬, 에이전트 팀
+이런 기능들과의 워크플로의 차이점을
+보게 되면은 가장 큰 차이점은이
+플랜을 누가 들고 있냐에 대한 부분이
+차이점이라고 보시면 될 거 같습니다.
+계획하는 그 문서 자체를 누가 들고
+있냐라고 하는 관점에서 볼 수가
+있겠죠. 어 서브 에이전트의 경우에는
+클로드 코드가 이제 각각의 서브
+에이전트를 실행했을 때 각각의 서브
+에이전트마다의 턴 단위로 이제 플랜이
+관리가 되는 부분이 있을 수가
+있고요. 그리고 두 번째로 이제
+스킬의 경우에는 우리가 작성한
+프롬프트에 따라서 현재 메인 세션에서
+이런 플랜이 관리가 된다라고 볼 수가
+있고 에이전트 팀의 경우에는 팀 리드
+에이전트가 모든 플랜을이 중앙에서
+관리해 주는 구조로 되어 있죠.
+그리고 이번 영상에서 활용하는이
+워크플로우라고 하는 기능은 이제
+내부적으로는 이제 자바스크립트
+스크립트 기반으로 동작하기 때문에 그
+스크립트 단에서이 플랜을 관리해
+[11:00]
+준다는 차이점이 있다라고 볼 수가
+있습니다. 그래서이 스크립트 단에서
+플랜을 관리하기 때문에 이제
+에이전트의 규모가 이렇게 수십에서
+수백개까지도 실행이 가능한 구조로 갈
+수가 있는게이 워크플로우의 특징이라고
+보시면 될 거 같습니다. 어 그래서
+이제 우리만의 클로드 코드 커스텀
+워크플로우를 만들어 보도록 할
+거고요. 첫 번째로는 이렇게 하네스
+레가시 스캔이라고 하는 워크플로를
+만들어서 우리 현재 한네스 구조가
+어떻게 되어 있고 적합한 구조로 되어
+있는지 그리고 뭔가 개선해야 될
+부분이 있는지 없는지를 검증하고
+감사해 주는 이런 워크플로우를 하나
+만들어 보도록 할 거고요. 그리고
+여기서 어떤 한네스 검증 레포트가
+생성이 되게 될 건데 그런 레포트를
+기반으로 해서 두 번째로 만들
+워크플로우는 하네스 다이어트라고 하는
+워크플로우를 만들어서 첫 번째
+워크플로우에서 생성한 레포트를
+기반으로 해서 실제로 우리의 한스를
+다이어트 시킬 수 있는 그러니까
+최적화를 시키고 뭔가 살을 좀 빼게
+만들어 줄 수 있는 것들을 만들어
+보도록 하겠습니다. 어, 여기서
+이제이 하네스 레가시 스캔이라고 하는
+워크플로우는 우리가 조금 전에 활용해
+봤던이 딥 리서치라고 하는
+[12:00]
+워크플로우와 거의 동일한 패턴이라고
+보시면 될 거 같은데요. 어,이 딥
+리서치라고 하는 워크플로우의 패턴은
+이랬죠. 이제 웹에서 검색을 하고
+교차 검증을 해서 최종적으로 그렇게
+교차 검증한 결과를 합성해서 최종
+레포트를 만들어내는 과정으로 이렇게
+딥 리서치가 구현이 되어 있었습니다.
+그런데 우리가 만들이 한네스 레거시
+스캔도이 딥 리서치 패턴과 정확하게
+동일한 구조라고 봐 주시면 될 거
+같습니다. 예를 들어서 우리의
+한네스가 이런 여러 가지 카테고리에서
+뭐 50개가 넘게 구현이 되어
+있다라고 하면은 그 항목들에 대한
+것들이 이제 각각 필요한지 제품에
+있는 기본 기능과 충돌이 되는 것들은
+없는지 그리고 이제 전역으로 들
+가치가 있는지 프로젝트 단위로
+떼어내야 되는지 이런 것들을
+전체적으로 이제이 하네스 레거시
+스캔이라고 하는 워크플로에서 검증하고
+레포트를 작성하게 할 거고요. 굉장히
+다각도로 우리의 한네스를 바라볼 수
+있도록 만들어 보도록 할 겁니다.
+그래서 이렇게 적대적인 검증,
+다각도의 검증이 필요한 작업에서는
+우리가이 클로드 코드에 이번에 새로
+난 워크플로우라고 하는 신 기능이
+[13:00]
+아주 적합하다라고 볼 수가 있을 것
+같습니다. 자, 워크플로우를 작성하기
+위한 프롬프트를 제가 작성을
+했고요.요 프롬프트는 여러분들께도
+한번 공유를 드리도록 하겠습니다.
+자, 울트라코드라고 하는 키워드를
+이렇게 넣어 주었고요. 그리고 내
+코딩 에이전트 한네스를 읽기 전용으로
+감사하는 다이나믹 워크플로우를
+설계하고 실행을 해 줘라고 요청을
+했습니다. 첫 번째는 이제 이렇게
+읽기 전용으로 우리 워크플로우에
+감사를 할 수 있는 것들을 만들어
+주도록 할 겁니다. 워크플로우 이름은
+제가 아까 말씀드린 것처럼 하네스
+레거시 스캔이라고 했고요. 목표는
+우리의 하네스 안에 남아 있는 낡은
+규칙, 중복 지식, 과도한 전역
+컨텍스트, 너무 넓은 스킬, 불필요한
+훅, MCP, 제품 기본 기능과
+중복되는 설정을 찾아내는 것을 우리
+워크플로우 목표로 정해 주었습니다.
+그리고 이제 우리가 에이전트에게 어떤
+것들이 검토를 시킬 때 편양된
+시각으로 바라볼 수가 있는데 그런
+것들을 이제 최대한 방지하기 위해서는
+다각도의 관점으로 에이전트에게 검토를
+하게 요청하는게 굉장히 중요합니다.
+그래서 여러 개의 관점으로 에이전트를
+나누어서 분석할 수 있게 그런 식으로
+워크플로우를 설계를 해 줘야 되고요.
+[14:00]
+첫 번째는 이렇게 인벤토리
+에이전트라고 해서 한네스 관련 파일과
+성 설정을 목록화하는 에이전트가 돌게
+되고 그리고 두 번째로는 글로벌
+컨텍스트 텍스 에이전트라고 해서
+클로드.md,md, md이전트.md,
+커서 룰스 같은 것처럼 굳이 불필요한
+컨텍스트 비용이 있는지 없는지를
+검증하는 부분이 들어가면 좋을 거
+같고요. 그리고 각각의 스킬이 지금도
+필요한지 디스크립션이 너무 넓게
+설계가 되어 있는 거는 아닌지 스킬점
+MD가 너무 길진 않은지들을 분석할
+수 있는 스킬을 관리하는 에이전트.
+그리고 이제 클로드 코드나 코덱스,
+커서 같은 이런 에이전트들도 제가 어
+하나의 하네스 레이어라고 말씀을
+드렸죠. 그렇기 때문에 이런 코딩
+에이전트들에서 이미 어떤 하네스가
+구축이 되어 있는데 내가 만든 내
+커스텀 하네스 그런 것들이 또
+중복으로 들어가 있게 되면은 오히려
+성능을 더 저화시킬 수가 있기 때문에
+어 그래서 예전에는 필요했지만 이미
+클로드 코드 코덱스 커서와 같은 코딩
+에이전트에 들어간 규칙이나 어떤
+하네스가 있다라고 하면은 그것들은
+중복되지 않게 처리해 주는 것들을
+프로덕트 오버랩 에이전트에서 이제 검
+감사를 해 주게 된다라고 보시면 될
+[15:00]
+거 같고 그리고 보통 이런 훅이나
+얼로드 툴이나 MCP 같은 것들에서
+이제 권한가 같은 것들을 부여하거나
+하는 부분들이 많이 들어 있는데 너무
+넓은 부분에 대한 권한이 부여되고
+있지 않은지에 대해서도 분석이 필요할
+것 같습니다. 그리고 이렇게 위에서
+여러 개의 에이전트를 통해서 분석한
+결과를 가지고 실제로 리팩토링이
+필요한 것들이 있는지에 대해서
+마지막에 리펙터 에이전트가 하네스를
+유지를 할 건지 압축을 시킬 건지
+옮길 건지 나눌 건지 변환할 건지
+삭제할 건지 이런 것들이 이제 분류해
+주는 과정이 또 필요하게 되어서
+이거를 넣어 주었고 그리고
+최종적으로는 이렇게 적대적 리뷰어
+에이전트들을 여러 개를 막 띄워
+가지고 삭제하거나 줄이면 오히려
+위험해질 수 있는 항목을 반박적으로
+검토할 수 있게 최종적인 보완 안정
+장치까지 추가를 해 주었습니다.
+그래서 이런 프롬프트를 기반으로 해서
+클로드 코드에게 우리의 하네스 레거시
+스캔이라고 하는 워크플로우를 만들어
+달라라고 한번 요청을 해 보도록
+하겠습니다. 조금 전에 보여 드린
+이런 프롬프트를 그대로 복사해서 넣어
+주었고요. 울트라 코드라고 하는
+[16:00]
+키워드를 기반으로 해서 워크플로우를
+설계하고 실행해 달라고 요청을 했기
+때문에 이제 클로드 코드가 우리의
+한네스 레거치 스캔이라고 하는
+워크플로우를 생성을 해 주게 될
+겁니다. 어 자 이제 워크플로가 다
+생성이 완료가 되었다라고 하고 지금
+이제 백그라운드에서 실행 중이라고
+하거든요. 그래서 한번 워크플로우
+명령어를 사용해서 한번 들어가서 우리
+워크플로우를 확인을 해 보도록
+하겠습니다. 인벤토리, 애널라이즈,
+플랜, 적대적 리뷰 이렇게 총네 개의
+단계로 실행이 되는 것을 확인할 수가
+있고요. 인벤토리 페이즈에서는 우리의
+하네스의 설정 파일들을 다 로드를 해
+가지고 내 한네스가 어떻게 구성이
+되어 있는지를 먼저 파악하는 작업이
+완료가 되었다라고 하고 그리고 두
+번째로는 이렇게 애널라이즈 단계가
+있어서 여기서 이제 총 13개의 서브
+에이전트가 돌고 있는 것을 확인할
+수가 있는데 스킬 같은 것들을
+워크플로우에서 이렇게 다 리뷰를 해
+주고 세이프티 퍼미션까지 이런
+애널라이즈 단계를 분석 단계를 거치게
+되는 것을 확인을 할 수가 있습니다.
+그래서 이렇게 각각의 스킬에 대해서
+어떻게 검증이 되고 있는지를 확인을
+할 수가 있고요.이 프로덕트
+오버랩에서는 예전에는 이제 필요했지만
+[17:00]
+코딩 에이전트가 업데이트가 되면서
+현재는 불필요해진 것들에 대한 것들을
+이제 프로덕트 오버랩에서 한번 검증을
+해 주게 된다라고 볼 수가 있을 것
+같습니다. 그리고 마지막으로 이렇게
+세이프티 퍼미션에서는 현재 너무 넓은
+권한을 주고 있지를 않은지를 확인을
+해 주게 되고요. 애널라이즈 단계가
+분석이 완료가 되게 되었다라고 하면은
+그다음에 이렇게 플랜 단계로 넘어가게
+되는데 리펙터 플래너라고 하는 서브
+에이전트가 또 하나가 생성이 되게
+되어서 이번 검증 단계에서 검증한
+우리 하네스를 유지할 건지 아니면
+압축할 건지 옮길 건지 재구성할 건지
+이런 것들을 이제 3번 플랜 단계에서
+일차적인 계획을 작성해 주는 것을
+진행을 해 주게 됩니다. 자, 그리고
+이제 플랜 단계가 완료가 되었다라고
+하고요. 이렇게 일차적으로 계획을
+작성해 주고 그다음에 이제
+마지막으로네 번째 단계로 적대적 리뷰
+단계를 거치게 됩니다. 세 번째
+단계인 플랜 단계에서 삭제하라고
+하거나 변경하라고 한 어떤 한스가
+있다라고 했을 때 그것들을 이제
+최종적으로이 적대적 리뷰 단계에서
+최종 검증을 비판적인 시각으로 해
+[18:00]
+주게 되면서 정말로 이거를 삭제했을
+때 어떤 문제가 나타나진 않은지
+사이드 이펙트가 발생하지는 않을지에
+대한 부분들을 이제 마지막 단에서
+검증을 하고 최종적인 이제 계획 문서
+리포트를 작성해 주게 될 겁니다.
+하이스크로 분류된 항목들을 적대적으로
+반박 검토하는 단계를 마지막에 이렇게
+넣어 주어서 최종적인 리포트가 조금
+더 안정적으로 나올 수 있게 이런
+페이즈를 나눠 주었고요. 이제
+필요하다라고 하면은 여러분들이 이제
+워크플로를 설계하실 때 단계마다
+에이전트의 개수 같은 것들도 지정을
+해 줄 수가 있습니다. 레고시안네스
+스캔 다이나믹 워크플로우가 실행이
+끝났다라고 하고요. 최종 레포트
+결과를 한번 기다려 보도록 할게요.
+총 16개의 에이전트를 활용해서
+109개의 항목을 발견을 했고
+160만 토큰 정도를 사용을 했다라고
+하고요. 17분 동안 에이전트
+워크플로우가 실행이 되었습니다. 자,
+그래서 이제 최종 레포트가 작성이
+되었다라고 하고요. 레포트를 한번
+보게 되면은 어, 요런 식으로 이제
+한네슬 레가시 스캔 읽기 전용 감사
+리포트가 이렇게 만들어졌습니다.
+전체적으로 우리의 에이전트가 어떤
+[19:00]
+방식으로 감사를 했는지에 대한 부분이
+나와 있고 그리고 유지해야 될 한스
+줄여야 될 한 나눠야 될 한 옮겨야
+될 하네스 삭제해야 될 한스 같은
+것들을 이렇게 쭉 정리를 해
+주었고요. 그리고 각각의 한스별로
+이제 줄여야 될 항목에 대해서 이렇게
+쭉 나와 있게 되고 사용자의 확인이
+필요한 것들 그리고 확인 없이 그냥
+기계적으로 삭제해야 되는 것들을
+이렇게 표로 쭉 정리를 해
+주었습니다. 그럼 우리는 요런 한네스
+레포트를 기반으로 해 가지고 이제
+최종적으로 이제 한네스를 수정할 수
+있고 개선할 수 있는 그런 한네스
+다이어트 워크플로우를 또 새로 만들어
+보면 되겠죠. 그래서 이번에 만들어
+볼 워크플로우는 하네스 다이어트라고
+하는 워크플로우를 만들어 볼 거고
+요것도 마찬가지로 제가 이제
+여러분들께요 프롬프트는 공유를
+드리도록 하겠습니다. 그래서 한네스
+레가시 스캔 리포트를 바탕으로 해서
+로우리스 하네스 개선만 적용하는
+다이나믹 워크플로우를 설계하고 실행해
+달라고 한번 요청을 해 보도록
+하고요. 어 클로드 코드에게 고대로
+프롬프트를 넣어 주었습니다. 자 이제
+여기 하네스 다이어트 워크플로우가
+이제 실행이 되었다라고 하고요.
+다이터 워크플로를 한번 들어가서 보게
+되면 이렇게 스플릿과 리파인 단계 두
+[20:00]
+단계로 이제 나눠 가지고 어크플로가
+실행이 되게 됩니다. 그래서
+앞단계에서 레거시안네스 리포트가 나온
+것들을 기반으로 해서 여러 가지 이런
+스킬에 대해서 스플릿하는 단계.
+그리고 이제 뭐 스킬에 불필요한
+디스크립션이나 불필요한 지시 사항
+같은 것들이 있으면 재정이할 수 있는
+그런 단계를 이제 리파인 단계에서
+진행을 해 주게 되는 모습을 확인할
+수가 있고 이것들도 마찬가지로 이렇게
+에이전트가이 여러 개가 병렬로
+돌아가면서 제 하네스 스킬들을 개선을
+해 주는 모습을 확인을 하실 수가
+있습니다. 어 그래서 이제 한네스
+다이어트 워크플로우가 이제 진행이
+되는 동안에 기존에 우리가 진행했던
+하네스 레거시 스캔 워크플로우를 이제
+저장하는 방법을 알려 드릴 건데
+여러분들 이렇게 워크플로우를 사용해서
+어떤 작업을 실행해 줘라고 했으면은
+이렇게 워크플로우가 생성이 되게
+되거든요. 근데 여기서 이제 해당
+워크 플로우를 다음번에도 재사용하게
+만들고 싶다라고 하면은 어 키보드에서
+S 키를 눌러 주시면은 해당
+워크플로우를 저장을 시킬 수가
+있습니다. 한번 S키 눌러 보면은
+이렇게 워크플로우 이름을 지어 줄
+[21:00]
+수가 있고요. 저는 이렇게 하네스
+레거시 스캔이라고 지어 주도록
+하고요. 그럼 이제 여러분들의
+워크플로우가 이렇게 클로드
+워크플로우라고 하는 폴더 내에 한네
+레거시 스캔 자바스크립트 파일이
+생성이 되면서 다음 번에도 해당
+워크플로우를 재사용할 수 있게 이렇게
+저장을 시켜 줄 수가 있습니다.
+그래서 한번 이렇게 클로드 코드를
+실행을 해 가지고 하네스 레거시
+스캔이라고 검색을 해 보면이 우리가
+만든 워크플로우가 나오는 것을 확인할
+수가 있고요. 마찬가지로 하네스
+다이어트라고 하는 워크플로우도 이렇게
+S키를 눌러서 저장해 주게 되면은
+클로드 코드를 다시 한번 재시작했을
+때 한네스 다이어트라고 하는요
+워크플로우도 같이 추가가 된 것을
+확인을 할 수가 있겠죠. 어, 이렇게
+워크플로우를 재사용할 수 있게
+저장하는 방법, 슬래시 명령으로
+저장하는 방법도 말씀을 드렸고요.
+그래서 이제 한네스 레거시 스캔으로
+만든 리포트 기반으로 해서 제 레거시
+하네스를 조금 더 나은 방향으로
+개선시키는 작업이 이렇게 워크플로우가
+완료가 되었다라고 합니다. 그래서 좀
+기다려 보면은 이제 한네스 다이어트
+워크플로우에서 최종 결과를 요약해
+주는 거를 만들어 주게 될 건데요.
+전체적으로 한네스 다이어트
+워크플로우에서 이제 얘가 개선하거나
+[22:00]
+삭제하거나 한 것들을 이제 한 번씩
+검증해 주는 것들을 진행을 하게 되고
+어떤 것들이 이제 추가가 되었는지
+실제로 이제 개선된 한네스 그러니까
+스킬 같은 것들을 이제 실행을 해
+봤을 때 스킬이 정상적으로 동작이
+되는지도 이제 최종적으로 체크를 해
+주게 됩니다. 자, 이제 하네스
+다이어트 워크플로우가 동작이 완료가
+되어 가지고 최종 보고서도 만들어
+줬다라고 하거든요. 적용 리포트를
+이렇게 만들어 주었고 전체적으로 이제
+스킬이 열개 정도 정리가 되었고 신규
+레퍼런스는 12개가 추가가 되었고
+보관으로 이동이 된 것들도 이렇게
+있다라고 합니다. 스킬점 MD의 본문
+같은 경우도 기존에는 2,600줄
+정도가 있었는데 1800줄 정도로
+이제 760줄 정도가 결감이
+되었다라고 하기 때문에 이것만 해도
+우리가 전체적으로 가져가야 될
+컨텍스트 윈도우를 조금 더 효과적으로
+사용을 할 수가 있게 변경이 된 거
+같고요. 그리고 활성된 스킬수 같은
+경우도 29개에서 28개로 줄어들었고
+어 노션 워크스페이스라고 하는 스킬이
+보관 처리가 되었네요. 제가 최근에
+이제 노션 말고 이제 옵시디언이나
+이쪽 로컬 단으로 이제 컨텍스트
+[23:00]
+관리하는 것을 좀 변경하고 있는
+와중이어서 해당 스킬은 실제로 제가
+요즘에는 사용하지 않고 예전에만
+사용하고 있던 레거시 스킬이기 때문에
+이렇게 보관 처리가 된 것이 더
+적합하다라고 저도 생각을 하고 있고
+전체적으로 이제 스킬 개선이 한번 잘
+된 거 같습니다. 그래서 마지막으로
+한번 정리해 보면은 하네스라고 하는
+것은 한번 만들고 끝이 아닙니다.
+모델도 진화를 하고 그리고 클로드
+코드 자체도 계속해서 진화를 하게
+되잖아요. 그래서 제가 개인적으로
+생각하는 좋은 하네스라고 하는 것은
+계속해서 쌓아 나가는 거에서 끝나는게
+아니고 기존에 있는 한스도 주기적으로
+한 번씩 검토해 주면서 계속해서
+갱신될 수 있는 구조로 그렇게
+워크플로우를 세팅해 나가는 것이
+굉장히 중요하다라고 생각을 합니다.
+그래서 이번 영상에서 만들었던이 두
+가지 워크 플로우를 주기적으로 한
+번씩 돌려 주시는 것을 권장을
+드리고요. 한 달에 한두 번 정도
+돌리면은 충분할 것 같습니다. 어,이
+두 단계의 워크플로우를 하나의
+워크플로우로 통합해도 되지만은 제가
+권장드리는 방법은 가능하면 이렇게
+하네스 레거시 스캔 워크플로우를 먼저
+한번 돌려 가지고 결과를 먼저
+여러분들이 직접 검토를 하시고요.
+그리고 결과가 마음에 든다라고 하면은
+[24:00]
+그거를 이제 하나하나 여러분들이 또
+손으로 수작업을 하시지 마시고요.
+결과를 이제 최종적으로 개선하고
+적용하는 것들도이 한네스 다이어트라고
+하는 워크플로우를 추가해 가지고
+활용하시면 어 조금 더 효율적으로
+여러분들의 한해를 관리할 수가 있지
+않을까라고 생각이 되는 거 같습니다.
+그래서 이번 영상에서 보여 드린이 두
+가지의 워크플로우를 만들 수 있는
+프롬프트는 제가 이제 기트에다가
+공유를 드리도록 할 거니깐요. 제가
+공유드리는 프롬프트를 기반으로 해서
+여러분들만의 워크 플로우를 조금 더
+개선하는 작업을 진행을 해 보시면 될
+거 같습니다. 그래서 이번 영상에서
+공유드린이 워크플로우로 여러분들의
+한스가 개선이 되었다라고 하면은 댓글
+많이 남겨 주시면 좋을 거 같고요.
+저는 이제 다음 영상에서 더 유용한
+정보 가지고 다시 돌아오도록
+하겠습니다. 어, 오늘은 뭔가 이제
+새로운 느낌을 드리고 싶어서 한번
+이렇게 밖에 나와 가지고 인트로를
+찍었는데 이런 영상 폼에 또 어떤지
+의견을 많이 남겨 주시면 좋을 거
+같고 저 이제 들어가 가지고
+워크플로우를 다뤄 보도록 하겠습니다.
+됐습니다.

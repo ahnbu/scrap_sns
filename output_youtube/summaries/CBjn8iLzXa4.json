@@ -1,7 +1,18 @@
 {
     "video_id": "CBjn8iLzXa4",
-    "model": "gemini-flash-latest",
-    "generated_at": "2026-08-25 10:56:35",
-    "summary": "이 영상은 클로드 디자인과 클로드 코드를 활용해 기획 문서(PRD)로부터 실제 작동하는 퀴즈 생성 MVP 서비스를 개발하는 과정을 다룹니다. 클로드 디자인으로 UI 디자인을 생성하는 동안 넥스트 제이에스 개발 환경을 세팅하고 오픈AI API 키를 연동합니다. 이후 클로드 코드에 기획서와 완성된 디자인을 전달하여 화면 개발과 로직 구현을 완성합니다. 마지막으로 PDF 자료를 업로드하여 시험 퀴즈가 정상적으로 생성되는지 테스트하며 개발 지식 없이 AI 툴만으로 서비스를 구현하는 방법을 제시합니다.",
-    "transcript_sha1": "4109afc2b91a848aa56ce6d0165e14518672623b"
+    "model": "gemini-3.7-flash-medium",
+    "prompt_version": "v2",
+    "prompt_sha1": "1a2446b042d7b917482477d5da5cda70874b56c5",
+    "generated_at": "2026-08-25 20:15:52",
+    "summary": "[요약] Claude Design과 Claude Code를 활용해 10분 만에 실제 작동하는 MVP 서비스를 완성한다.\n\n- PRD 문서를 기반으로 Claude Design에 MVP 화면 디자인을 요청한다.\n- 디자인 생성 대기 시간 동안 Next.js 환경 설정, API 키 등록, 기반 로직 개발을 병렬로 진행한다.\n- 완성된 디자인 핸드오프 파일을 Claude Code에 전달하여 화면 구현과 자동 테스트를 완료한다.\n- 비개발자도 AI 도구를 조합해 기획 문서와 학습 자료로 동작하는 자격증 퀴즈 서비스를 만들 수 있다.\n\n[상세]\n디자인 요청과 병렬 개발 준비\n기획 단계에서 작성한 PRD 문서를 Claude Design에 첨부하여 MVP 중심의 UI 디자인 생성을 요청합니다. 디자인이 생성되는 10분에서 15분의 대기 시간 동안 Next.js 프레임워크 설치와 폴더 구성을 마칩니다. 이어서 Claude Code를 실행하고 UI와 무관한 기반 로직 작업을 프롬프트로 전달해 사전 개발을 진행합니다. 아울러 퀴즈 생성을 위해 OpenAI 플랫폼에서 GPT API 키를 발급받아 환경 변수로 안전하게 등록합니다.\n\n디자인 핸드오프와 최종 MVP 완성\nClaude Design에서 완성된 핸드오프 디자인 파일을 다운로드하여 프로젝트 내 폴더에 배치합니다. Claude Code에 디자인 시안을 반영하도록 요청하고 컨펌 게이트의 세부 질의에 응답하여 화면 개발을 완료합니다. AI가 자동으로 화면을 띄워 테스트를 마친 후 한식조리기능사 필기 자료 PDF를 업로드해 퀴즈 생성을 검증합니다. 비개발자도 복잡한 코딩 없이 기획과 AI 도구 연계만으로 작동하는 MVP 서비스를 빠르게 제작할 수 있음을 보여줍니다.",
+    "transcript_sha1": "6ca509db4fe8cc1d35a3ec0798f6e5b3df6df726",
+    "usage": {
+        "input_tokens": 24424,
+        "output_tokens": 1875,
+        "thinking_tokens": 1483,
+        "cache_read_tokens": 0,
+        "total_tokens": 26299
+    },
+    "duration_seconds": 8.8653887,
+    "agy_conversation_id": "47aae2b0-f1b2-45b0-94cb-9d52ee4698e3"
 }

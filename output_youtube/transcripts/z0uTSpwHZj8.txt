@@ -1,189 +1,298 @@
-tool I had just created with the mindset that if it didn't work out, I would keep it for myself. However, after launching it, about
-500 users had already signed up and were
-using it.  [Music] It was a somewhat fascinating experience to see the Productants
-continuously leaving comments,
-telling me directly what users wanted, and
-expressing complaints that were actually absent before.
-hello.
-I'm Mingyu from Ask Immoim
-.  I am an entrepreneur who started my business about a year ago
-.  I am
-developing a product called SnapDeck.
-You can view SnapDeck as a product that adds a lot more human-like elements to the editing or creation process compared to existing AI presentation generation tools.   This
-product aims to provide a level of editing capabilities similar to existing services or editing tools like PowerPoint.   The
-biggest strength is actually that users can get
-help from A without deviating significantly from their existing workflow for creating presentations
-.  Also,
-when users create a presentation, it seems there are times when they forget the original message they intended to convey
-while trying to visualize it or while meticulously crafting the slides
-.  However,
-since SnapDeck reduces the time spent on the deck-building process itself, I think the advantage is that the
-original purpose of the message you intend to convey can be reached more effectively
-.
-We actually understood that the purpose was not so much the creation of slides itself, but
-rather the user
-conveying a message and the
-need for visual aids to do so.
-It seems that the best presentation results are obtained by inputting the specific message you wish to convey using SnapWait.
-When I first started making Snap Decks, I was
-making a lot of decks to secure seed funding or government support programs, but back then, I think I only used Snap
-Decks to make about two decks. However,
-now, if the deck
-consists of 30 cards, I only make two or three myself, and I
-find myself working almost entirely with Snap Decks.   If you
-input the purpose first and then receive help from StackDeck in the
-process of configuring the deck to match that purpose,
-[Music] it
-seems that a deck is completed that can convey the process of building the deck or the original purpose you intended to create much better.  Uh, actually, I
-think we started making the product called Snapdaegi in earnest around this time last year, around May.  However,
-we tried releasing it as a Figma plugin
-to verify the MVP.
-However, when we checked, we could
-n't receive payments because we don't have a business license. What
-we were trying to measure was
-n't the payment itself, but the customer said first, "I will pay
-you for this via PayPal, so please allow me to make the
-payment
-."  Make it usable like a paid plan
-.  We decided to start a business after seeing how it turned out
-.
-Based on what we gathered, we launched on Productant on September 22nd, and the
-user response was very
-positive.  I just went to sleep and woke up to find that about
-500 users had already signed up and were
-using it.  So, I found that so
-fascinating that I asked users why they were using it. There must have been
-Gamma users among them, and the fact that they
-experienced SnapDeck and told me what SnapDeck was
-better than Gamma was the
-decisive factor that led me to start SnapDeck
-.   At
-that time, I actually
-had friends I wanted to start a business with.  I'm going to
-contact those friends and ask them to
-quit their current jobs and
-start a business with me.  I think I often talked about how it would be
-more fun to go on adventures with me rather than go to a big corporation. I also really wanted to help
-those friends relieve some of their anxiety, and I
-thought that investment could be one way to do that
-.  So, regarding [Music], I
-think I personally sent out a lot of cold emails to the investment firms that are frequently mentioned in Korea, and it seems
-there were many people who resonated with my ideas on how to develop it
-.
-I think I wanted to receive investment from people who shared their thoughts on how to develop Sseudek, and as a result, a
-Korean investment accelerator showed so much
-interest and interest that I was able to receive investment and
-proceed with the business
-.   I
-understand that currently, there are about 60,000 users who have signed up globally and in Korea.  Among them, I am
-quite familiar with the tools used by people working in Silicon Valley or in the financial sector in New York when writing reports
-.  One interesting case was that the decision-
-makers working on Figma actually
-purchased our product and tried
-using it for educational materials or decks they needed to produce quickly within the company. Instead of leaving, they
-actively referred their internal staff and
-continued to make
-monthly payments themselves, which I
-found a bit fascinating.
-Since we initially pursued following decks made by humans, I think we assumed that people would
-buy decks made by Korean experts even if it meant paying a high price
-.
-So,
-how can it be proven that building a deck like this is worth the money?   I think I was wondering
-how we could prove this outside of the service, and the
-co-founder who joined at the time suggested, "
-Since there
-are many people who need decks, let's try
-outsourcing it."  Let's
-try having them outsource to us and tell
-the customers to make payments only if they are satisfied
-.  When proceeding in this manner, I think I realized that
-pursuing a single deck would
-not satisfy all users. I believe the
-conclusion I reached from my outsourcing experience was that by effectively utilizing the data and background information the customer possesses, we might be able to create the deck they desire.   There was
-a senior in the startup club I belonged to who had won first place in the Korea Claude competition.  However,
-that person has to pay tokens to the AI ​​every month, which is as much as
-paying monthly rent
-.  You have to spend half of your annual salary recklessly
-.  It seems like these things are being reported a
-lot in the media, and
-while I don't spend quite that much myself, I
-feel like I am spending a significant amount of money on AI.  However, rather than limiting myself to using just one model, in
-this
-case, it seems that people tend to use all of them because models like the Codex, Claude Code, and the
-Chinese model each have
-slightly different advantages
-.  When handling slightly complex tasks, I seem to
-use Hannes engineering techniques to employ different models as sub-agents—
-such as the Kimi model, which is better at design, or the
-Claude-Office model, which is good at complex computations and planning—and
-combine them with GPT, which reads the code in detail and has a lower token cost compared to Claude. I
-think this is the method I currently use, and I actually seem to apply it quite a bit to tasks outside of coding as well
-.   I've noticed that
-when working on a startup, whether it's Excel or PowerPoint, you end up
-writing quite a lot of documents
-.  However, recently, it
-seems that I am getting a lot of help through things like the Codex or Claude Code, such as getting a feel for things and working on Korean documents. In this process, many
-people think that there might be no more tasks that AI cannot do
-.  Human jobs might
-really disappear.
-I think he talked about this a lot.  However, since I believe
-the strength of AI is that it allows you to pursue the things you wanted to do with minimal time investment, I think there is
-definitely a possibility for AI and humans to coexist in [music], and I believe we are
-also moving in tandem quite a bit
-.
-[Music]
-So, it seems we have also been
-putting up recruitment notices and
-making a lot of effort to expand the team over the past month or so.
-We are actually so sincere about AI that we spent
-about 1 million won worth of Claude tokens the month before last.
-However, we are a team that really enjoys not just listening to the AI
-but having people make decisions and
-produce results.
-But we realized there is
-definitely one thing that five people can do.
-Even if AI is helpful.  As such, just as
-developers are quickly mastering coding,
-VIBE coding, and AI-related
-skills, it seems that planners are also
-learning quickly,
-absorbing many of the concepts used by developers, and applying them in their actual work
-.
-Since there are clearly decisions that people need to make in addition to tasks handled by AI, I believe there will
-continue to be people building decks even after Snapda is released
-.
-So, what we are actually witnessing is something
-fascinating: people in the outsourcing market are
-utilizing
-Snapdaeg to generate initial drafts,
-communicating with AI to integrate their design and engineering skills, and
-producing these results as outsourced deliverables. We find this quite intriguing
-.  We tend to
-call people like that "experts
-."  It seems that the more the tools become used first by experts, the more
-valuable data we can collect, and the
-easier it becomes to identify what customers want.   We do
-n't think we are a company that wants AI to take away people's jobs or leave them with nothing to do just because AI has emerged.  We believe that
-there is a point that people clearly need to address in [music], and I
-think that among those, the most powerful thing is delivering a message and persuading someone.  So, our goal is to ensure that SnapDeck and our future products can be utilized in all tasks, such
-as the process of creating decks, writing reports, and even going
-further to
-create marketing posts, and we
-seem to be undertaking many challenges to achieve this.
-Previously, SnapDeck was actually
-designed to allow the creation of comments categorized into four purposes, such as giving a presentation in a huge hall or submitting a report without a presentation.
-However, within these four objectives, we wanted to
-provide more variety, so internally we
-prepared to enable the AI ​​to read various contexts.  As a result,
-many decks are coming out that look more like they were made by humans,
-and I think the
-concern I had—that it might be obvious that a deck was made by a rapper—is also being largely
-resolved.  So, I think there will likely be an
-update. If you
-use the Step Deck, the
-deck-building process feels more like it is
-done by a human, and
-since the AI ​​catches the parts you might miss during the process, I think you will be able to
-create even better decks and presentations
-.
+[00:00]
+그냥 만들고 잘 안 되면은 나만 쓰는
+도구로 써야지 이렇게 생각을 하고
+있었던 도구였는데 런칭을 하고 한
+500명의 사용자가 이미 가입을 해서
+쓰고 있는 거예요. 프로덕턴트에서도
+계속 댓글을 남기고 뭔가 사용자들이
+원하는 걸 저한테 직접 이야기를 하고
+기존에는 오히려 없었던 불만과 같은
+표현들을 해줬던게 [음악] 조금
+신기했던 경험이었습니다. 안녕하세요.
+저는 에스크임모임민규라고
+하고요. 지금 창업한지 1년 정도 된
+창업가입니다. 스냅덱이라고 하는
+프로덕 만들고 있는데요. 스냅덱은
+기존 AI 프레젠테이션 생성 도구들
+대비 뭔가 편집이라던가 혹은 생성의
+과정에 있어서 좀 더 사람이 만든듯한
+그런 부분을 좀 많이 더한
+프로덕트라고 봐 주시면 되고요.
+기존에 있던 서비스들이나 파워포인트
+같은 그런 편집 도구들하고 비슷한
+수준의 편집을 할 수 있는 걸 좀
+목표로 갖고 있는 프로덕트입니다.
+제일 큰 강점은 사실 기존의 사용자가
+프레젠테이션을 만들던 워크플로우에서
+크게 벗어나지 않고 A한테 도움을
+받을 수 있다라는 거고요. 그리고
+사용자가 원래 프레젠테이션을 만들다
+보면은 처음에 전달하려는 메시지를
+시억화를 한다거나 혹은 장표를 열심히
+깎다 보면은 까먹게 되는 경우가 있는
+[01:00]
+거 같아요. 근데 스냅덱은 덱을
+만드는 과정의 시간 자체를 줄여 주기
+때문에 처음에 전달하려고 하는
+메시지의 목적 자체가 좀 더 잘
+도달할 수 있게 되는게 장점인 거
+같습니다.
+저희는 사실 슬라이드 생성 자체의
+목적을 갖고 있다기보다는 사용자가
+메시지를 전달하는 거, 그러기 위해서
+시각 자료가 필요하다라는 거를 좀
+이해를 하고 있었고 전달하고 싶으신
+발을 스냅대기 입력을 하시는게 가장
+장표가 잘 나오는 거 같습니다. 저도
+처음에 스냅덱 만들고 있을 때 그때도
+막 시드 투자라든가 혹은 정부 지원
+사업 받기 위해서 많이 덱을
+만들었었는데 그때는 냅대을 활용해서
+만든 덱양이 1월에서 2알 정도밖에
+안 됐던 거 같은데 지금 같은 경우는
+전체가 30장이라고 하면은 두 세 장
+정도만 제가 만들고 거의 스냅대과
+함께 작업을 하게 되는 거 같아요.
+목적을 먼저 입력을 하고 그리고 그
+목적에 맞게끔 덱을 구성하는 과정
+자체도 스택덱한테 도움을 받게 되면은
+[음악]
+훨씬 덱을 만드는 과정이라던가 혹은
+내가 처음에 만들려고 했던 어떤
+목적이나라던가 이런 것들을 잘 전달할
+수 있는 그런 덱이 [음악] 완성되는
+[02:00]
+거 같습니다. 어 사실 저희는
+본격적으로 스냅대기라고 하는 제품을
+만든 거는 딱 작년 이맘쯤
+5월쯤부터였던 거 같고요. 근데
+피그마 플러그인의 형태로 저희가
+MVP 검증을 하려고 한번 내봤어요.
+근데 내봤을 때 저희가 사업자가
+없으니까 결제를 받을 수 없었는데
+저희가 측정하려던 건 결제가
+아니었는데 고객이 먼저 아 내가 이거
+비용을 너희한테 페이팔로 지부를
+할테니까 결제를 할 수 있게 해
+줘라. 유료플랜처럼 쓸 수 있게 해
+줘라. 이렇게 나오는 걸 보고 저희는
+창업을 하게 됐거든요. 파악된 것들
+바탕으로 9월 22일에 프로덕턴트에
+런칭을 했는데 사용자들 반응이 되게
+좋았어요. 그냥 자고 일어났더니 한
+500명의 사용자가 이미 가입을 해서
+쓰고 있는 거예요. 그래서 그게 너무
+신기해 가지고 사용자들한테 왜 쓰고
+있는지 물어보고 감마 사용자들이
+분명히 있었을 텐데 그런 사용자들이
+스냅덱그을 한번 경험하고서 스냅덱이
+감마보다 좋은 점이 이런 거가
+있다라고 말씀을 해 주셨던 것들이 좀
+결정적으로 스냅덱그로 창업을 하게
+됐던 계기였던 거 같습니다.
+그 시점에 저한테는 사실 같이 창업을
+하고 싶었던 친구들이 있었는데요. 그
+친구들한테 이제 연락을 해 가지고
+[03:00]
+지금 다니고 있는 회사를 그만두고
+나랑 창업을 하자. 대기업 가는
+것보다 나랑 같이 모험뭘뭐 하는게 더
+재밌지 않겠냐 이런 얘기를 많이 했던
+거 같고 그 친구들이 불안함을 좀 덜
+수 있으면 좋겠다라는 생각을 많이
+했던 거 같고 그게 투자도 하나의
+방법일 수 있겠다라고 생각을 했던 거
+같습니다. 그래서 [음악] 좀 제가
+한국에서 좀 많이 거론되는 그런
+투자사들한테 콜드메일을 직접 많이
+돌렸던 거 같고 좀 어떻게 발전을
+시키면 좋을까 이런 것들을 많이
+공감을 해 주시는 분들이 계셨던 거
+같아요. 어떻게 쓰덱을 발전시킬지
+이야기 많이 주시는 분들한테 투자를
+받고 싶었던 거 같고 그러다 보니
+한국 투자 엑셀러이터가 너무 많은
+사람과 관심을 주셔서 투자를 받고
+사업을 진행을 하게 됐던 거
+같습니다.
+현재 글로벌하게 그리고 한국에서
+사용자가 약 6만 명 정도 가입을 한
+걸로 알고 있는데요. 개중에는 뭔가
+실리콘 밸리에서 일하시는 분들 혹은
+뉴욕에서 뭔가 실제로 좀 금융권에서
+일을 하시는 분들이 보고서를 쓰실 때
+이용하시는 것들을 좀 많이 알고
+있습니다. 신기했던 사례는 사실
+피그마를 만들고 계시는 의사 결정자
+레벨에 계신 분들이 저희 제품을
+결제를 해서 본인들 산내에서 뭔가
+[04:00]
+교육 자료라든가 혹은 본인들 사내에서
+빠르게 만들어야 되는 덱들을 한번
+사용해 보시고 이탈을 하시는게 아니라
+내부에 계신 직원분들한테 막 레퍼럴
+하시기도 하시고 본인들 스스로도 계속
+매달 결제를 하시면서 이용을 하시는게
+조금 신기했던 [음악] 거 같습니다.
+사람이 만든 덱을 저희는 계속
+따라가려는 걸 처음에 추구를 했다
+보니까 그렇게 되면 한국인 전문가가
+만든 덱을 비싼 돈을 주더라도 구매를
+할 거라고 생각을 했던 것 같아요.
+그래서 어 이런 덱을 만드는 거가
+돈을 낼 만큼의 어떤 가치를
+한다라는게 어떻게 증명될 수 있을까?
+이게 서비스 외적으로 증명될 수 있을
+것 같은데 어떻게 하면 좋을까라고
+생각을 했던 거 같고 당시에
+공동창업자로 합류하셨던님이 아이디어를
+주셨던게 아 우리가 그러면은 덱
+필요로 하는 사람들 많이 있으니까
+한번 외주를 줘 보자. 외주를
+우리한테 맡기게끔 해보고 마음에 드는
+경우에만 고객들한테 결제를 하라고
+하자. 요런 식으로 진행을 했었을 때
+결과적으로는 하나의 덱을 추구해서는
+모든 사용자를 만족시킬 수 없겠다
+이렇게 생각을 했던 거 같고 고객이
+갖고 있는 어떤 데이터라든가
+백그라운드라든가 이런 것들을 잘
+활용을 해서 덱을 만들면은 고객이
+[05:00]
+원하는 덱을 만들 수 있을지도
+모른다라고 생각을 했던게 외주
+경험에서의 좀 결과였던 거 같습니다.
+제가 속해 있던 창업 동아리 선배분
+중에 한국 클로드
+1위 하셨던 분이 계시더라고요. 근데
+그분이 AI에다 토큰을 매달
+월세를내는 것만큼 많은 비용을 지불를
+해야 한다. 연봉의 절반을 막
+사용해야 된다. 이런 것들이 좀
+매체를 통해서 많이 나오고 있는 거
+같은데 저도 그만큼은 아니기는 한데
+되게 많은 비용을 AI한테 쓰게 되는
+거 같아요. 근데 한 모델만 국한대서
+사용을 하는게 아니라 지금 같은
+경우도 코덱스라든가 클로드 코드라든가
+중국 모델이라든가 이런 모델들의
+각각의 장점이 약간씩 다르기 때문에
+모두 이용을 하게 되는 편인 거
+같고요. 조금 복잡한 업무를 처리할
+때는 한네스 엔지니어링 기법을 좀
+이용을 해서 서브 에이전트로 다른
+모델을 채용해 가지고 디자인을 좀 더
+잘하는 키미 모델이라든가 혹은 좀
+복잡한 연산과 계획을 잘 짜는 클로드
+오프스 모델이라든가 그리고 좀
+세부적으로 코드를 읽어서 작업을 하고
+클로드 대비 토큰 비용이 좀 저렴한
+GPT를 이렇게 섞어서 이용을 하게
+되는게 제가 사용하고 있는 방법인 거
+[06:00]
+같고 사실 코딩 외의 작업에서도 좀
+많이 쓰고 있는 거 같은데요.
+엑셀이라든가 파워포인트라든가
+스타트업을 하다 보면은 필렌적으로 좀
+많이 작성을 하게 되는 거
+같더라고요. 근데 최근 들어서는
+코덱스라든가 클로드 코드를 통해서는
+어떤 감 맞춰야 되는 것들 그리고
+한글문서 작업 같은 경우에도 조금
+많이 도움을 받고 [음악] 있는 거
+같습니다.이 과정에 있어서 되게 많은
+분들께서 AI가 할 수 없는 일이
+없어질지도 모른다. 인간의 일자리가
+진짜 없어질지도 모른다. 이렇게
+얘기를 많이 하셨던 거 같아요. 근데
+저는 적은 시간을 투자해서 본인이
+도전하고자 했던 것들을 도전할 수
+있다라는게 AI 강점이라고 생각을
+하기 때문에 AI와 사람이 공존을 할
+수 있는게 분명히 [음악] 있고 저희
+역시도 좀 공전을 많이 하고 있다고
+생각을 하는 거 같습니다.
+[음악]
+그래서 저희도 최근 한 1개월간 체용
+공고도 올리고 팀을 확장하기 위해서
+노력을 많이 하고 있는 거 같고요.
+저희는 사실 지지난 달에 클로드를
+대략 1,00만 원 정도 토큰을
+사용을 했을 정도로 AI의 진심이고
+근데 AI의 진심인데 AI의 말만
+[07:00]
+듣는게 아니라 뭔가 사람들이 결정을
+해서 결과를 내리는 걸 되게 즐기는
+팀이고 근데 다섯 명이 할 수 있는
+일은 분명 한 개가 있더라고요.
+AI에 도움이 있더라도. 그런만큼
+개발자분들이 빠르게 어떤 코딩이라든가
+바이브 코딩이라든가 이런 AI 관련된
+걸 익히시는만큼 기획자분들도 조금
+빠르게 배우시면서 개발자들이 쓰는
+어떤 개념들이나 이런 것들을 조금
+많이 흡수하고 그리고 실제 업무적으로
+사용을 하고 있는 거 같습니다.
+AI가 작업을 하는 거 외에도
+사람들이 결정을 해야 되는게 분명
+존재하기 때문에 스냅대이 나온
+이후에도 덱을 만드시는 분들은 계속
+계실 거라고 생각을 하고 있어요.
+그래서 저희가 실제로 좀 목격하고
+있는 신기한 거는 외주 시장에 계신
+분들이 스냅대 활용을 해 가지고
+스냅대그를 통해서 초환을 뽑고
+본인들의 디자인 스킬이라든가 본인들의
+설계 스킬들을 AI와 함께 소통을
+하면서 입혀 가지고 외주의 결과물로서
+내시는 걸 좀 신기하게 바라보고
+있거든요. 저희는 그런 분들
+꾼들이라고 좀 부르게 되는 거
+같은데요. 꾼들이 먼저 사용하는
+도구가 될수록 저희 입장에서도 되게
+좋은 데이터를 많이 모을 수 있게
+되는 거 같고 고객이 원하는 바를 좀
+더 찾기 쉬워지는 거 같아요.
+[08:00]
+저희는 AI가 등장을 했다고 해서
+사람들이 막 일자리를 뺏고 사람들이
+할 일이 없어지고 이런 걸 바라는
+기업은 아닌 거 같아요. 저희는
+[음악] 사람들이 분명 해야 되는
+지점이 있다라고 생각을 하고 있고 전
+그중에서 되게 강력한게 메시지를
+전달하고 누군가를 설득하는 일이라고
+생각을 하고 있습니다. 그래서 덱을
+만드는 과정이라던가 혹은 보고서를
+만드는 과정 후에 더 나아가서는
+마케팅 게시물을 만드는 과정 이런
+작업 모두에서 스냅덱이나 앞으로
+저희가 만들 제품들이 활용될 수 있게
+하는게 저희의 목표고 그런 도전들을
+많이 하고 있는 거 같습니다.
+기존에는 스냅덱이 사실 목적별로네
+가지로 나눠서 뭐 엄청 큰 홀에서
+발표를 한다거나 아니면 이건 발표를
+안 하고 보고서로 제출을 한다거나
+이런 식으로네 가지 목적을 나눠서
+댓글을 생성할 수 있게 제작이
+되었었어요. 근데 저희는이네 가지
+목적 안에서도 좀 더 베리에이션을
+다양하게 주고자 좀 저희 내부적으로는
+다양한 컨텍스트를 AI가 읽을 수
+있게 준비를 했는데요. 그러다 보니까
+덱이 보다 사람이 만든 것처럼 많이
+나오고 그리고 제가 좀 우려했던
+[09:00]
+상황인 덱을 랩덱그 만든 거가 티가
+나면 어떨까라는 우려 지점도 많이
+깨지고 있게 되는 거 같아요. 그래서
+아마 한번 업데이트를 하게 될 거
+같은데 그 스텝덱을 이용하시게 되면은
+좀 덱을 만드는 과정에 있어서 보다
+사람이 만드는 거 같고 그리고 덱을
+만드는 과정에 있어서 내가 놓치는
+부분들 이런 것들 AI가 좀 더 잘
+잡아 주기 때문에 더 훌륭한 덱, 더
+훌륭한 프레젠테이션 만드실 수 있을
+것 습니다.
