@@ -98,8 +98,11 @@ def try_load_json(path: Path) -> Any | None:
         return None
 
 
-def write_json(path: Path, payload: Any) -> None:
-    path.write_text(json.dumps(payload, ensure_ascii=False, indent=4), encoding="utf-8")
+def write_json(path: Path, payload: Any, *, sort_keys: bool = False) -> None:
+    path.write_text(
+        json.dumps(payload, ensure_ascii=False, indent=4, sort_keys=sort_keys),
+        encoding="utf-8",
+    )
 
 
 def latest_total_file() -> Path:
@@ -223,7 +226,7 @@ def apply_tag_rewrite(canonical_by_code: dict[str, str]) -> tuple[int, int]:
     pending = count_tag_legacy_keys(original, canonical_by_code)
     if migrated != original:
         create_backup(TAGS_PATH)
-        write_json(TAGS_PATH, migrated)
+        write_json(TAGS_PATH, migrated, sort_keys=True)
         return pending, 1
     return pending, 0
 

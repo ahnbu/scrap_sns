@@ -830,7 +830,7 @@ def save_tags():
             os.makedirs(WEB_VIEWER_DIR)
         export_path = os.path.join(WEB_VIEWER_DIR, "sns_tags.json")
         with open(export_path, 'w', encoding='utf-8') as f:
-            json.dump(data, f, indent=4, ensure_ascii=False)
+            json.dump(data, f, indent=4, ensure_ascii=False, sort_keys=True)
         return jsonify({"status": "success", "message": "Tags saved successfully"})
     except Exception as e:
         logging.exception("Failed to save tags")
@@ -863,7 +863,7 @@ def save_tag_catalog():
             os.makedirs(WEB_VIEWER_DIR)
         export_path = os.path.join(WEB_VIEWER_DIR, "sns_tag_catalog.json")
         with open(export_path, 'w', encoding='utf-8') as f:
-            json.dump(data, f, indent=4, ensure_ascii=False)
+            json.dump(data, f, indent=4, ensure_ascii=False, sort_keys=True)
         return jsonify({"status": "success", "message": "Tag catalog saved successfully"})
     except Exception:
         logging.exception("Failed to save tag catalog")
@@ -875,7 +875,7 @@ def _atomic_write_json(path, data):
     os.makedirs(directory, exist_ok=True)
     tmp_path = f"{path}.tmp"
     with open(tmp_path, "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=4, ensure_ascii=False)
+        json.dump(data, f, indent=4, ensure_ascii=False, sort_keys=True)
     os.replace(tmp_path, path)
 
 

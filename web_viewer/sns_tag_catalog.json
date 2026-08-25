@@ -1,153 +1,153 @@
 {
     "chatgpt": {
-        "primary": false,
         "aliases": [
             "gpt",
             "챗GPT",
             "codex",
             "코덱스"
-        ]
+        ],
+        "primary": false
     },
     "gemini": {
-        "primary": false,
         "aliases": [
             "제미나이",
             "안티그래비티",
             "agy",
             "antigravity"
-        ]
+        ],
+        "primary": false
     },
     "ppt": {
-        "primary": false,
         "aliases": [
             "슬라이드",
             "slide",
             "gamma",
             "피피티",
             "파워포인트"
-        ]
+        ],
+        "primary": false
     },
     "글로벌규칙": {
-        "primary": false,
         "aliases": [
             "claude.md",
             "agents.md",
             "gemini.md",
             "글로벌 규칙"
-        ]
+        ],
+        "primary": false
     },
     "기획": {
-        "primary": false,
         "aliases": [
             "제안서",
             "기획서",
             "사업계획",
             "보고서"
-        ]
+        ],
+        "primary": false
     },
     "나노바나나": {
-        "primary": false,
         "aliases": [
             "nano bannana"
-        ]
+        ],
+        "primary": false
     },
     "노션": {
-        "primary": false,
         "aliases": [
             "notion"
-        ]
+        ],
+        "primary": false
     },
     "노트북LM": {
-        "primary": false,
         "aliases": [
             "notebooklm"
-        ]
+        ],
+        "primary": false
     },
     "디자인": {
-        "primary": false,
         "aliases": [
             "design"
-        ]
+        ],
+        "primary": false
     },
     "리서치": {
-        "primary": false,
         "aliases": [
             "perplexity",
             "research",
             "insane-search",
             "인세인서치"
-        ]
+        ],
+        "primary": false
     },
     "마케팅": {
-        "primary": false,
         "aliases": [
             "marketing"
-        ]
+        ],
+        "primary": false
     },
     "안티그래비티": {
-        "primary": false,
         "aliases": [
             "antigravity",
             "agy"
-        ]
+        ],
+        "primary": false
     },
     "오픈클로": {
-        "primary": false,
         "aliases": [
             "Hermes",
             "openclaw",
             "nanoclaw",
             "클로드봇",
             "헤르메스"
-        ]
+        ],
+        "primary": false
     },
     "옵시디언": {
-        "primary": false,
         "aliases": [
             "obsidian"
-        ]
+        ],
+        "primary": false
     },
     "이미지": {
-        "primary": false,
         "aliases": [
             "나노 바나나",
             "gpt 이미지",
             "nano bannana",
             "미드저니"
-        ]
+        ],
+        "primary": false
     },
     "카드뉴스": {
-        "primary": false,
         "aliases": [
             "인포그래픽",
             "infographic"
-        ]
+        ],
+        "primary": false
     },
     "코덱스": {
-        "primary": false,
         "aliases": [
             "codex"
-        ]
+        ],
+        "primary": false
     },
     "클로드": {
-        "primary": false,
         "aliases": [
             "claude"
-        ]
+        ],
+        "primary": false
     },
     "프롬프트": {
-        "primary": false,
         "aliases": [
             "prompt"
-        ]
+        ],
+        "primary": false
     },
     "하네스": {
-        "primary": false,
         "aliases": [
             "harness",
             "lazycodex",
             "omo",
             "omc"
-        ]
+        ],
+        "primary": false
     }
 }
