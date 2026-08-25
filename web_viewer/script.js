@@ -86,7 +86,7 @@ function buildScrapProgressConsoleMessage(event) {
 const SORT_STORAGE_KEY = 'sns_sort_order';
 const SORT_DATE_MIGRATION_KEY = 'sns_sort_order_date_migrated';
 const DEFAULT_SORT_ORDER = 'saved';
-const VALID_SORT_ORDERS = new Set(['date', 'saved', 'favorites']);
+const VALID_SORT_ORDERS = new Set(['date', 'saved', 'favorites', 'engagement', 'views']);
 
 function getInitialSortOrder() {
     const storedSort = localStorage.getItem(SORT_STORAGE_KEY);
@@ -193,12 +193,17 @@ document.addEventListener('DOMContentLoaded', () => {
             || hasMetricValue(post.bookmark_count)
             || hasMetricValue(post.view_count);
     }
-    // view_count는 X만 제공하므로 플랫폼 간 비교를 왜곡시켜 합산에서 제외한다.
+    // view_count는 플랫폼별 스케일 차이가 커(X는 수백만, YouTube는 수천) 합산하면
+    // 반응 지표를 압도하므로 여기서 제외하고 별도 '조회수순' 정렬로 다룬다.
     function getEngagementScore(post) {
         return METRIC_SORT_FIELDS.reduce((sum, field) => {
             const n = Number(post[field]);
             return sum + (hasMetricValue(post[field]) && Number.isFinite(n) ? n : 0);
         }, 0);
+    }
+    function getViewScore(post) {
+        const n = Number(post.view_count);
+        return hasMetricValue(post.view_count) && Number.isFinite(n) ? n : 0;
     }
 
     // 필터가 걸리면 `보이는수 / 전체수 건`, 없으면 `전체수 건`.
@@ -2441,11 +2446,21 @@ ${item.body}
             });
         } else if (currentSort === 'engagement') {
             filtered.sort((a, b) => {
-                // 지표 미보유는 후순위로 밀어 성과순 상단이 전부 배지를 갖게 한다.
+                // 지표 미보유는 후순위로 밀어 반응순 상단이 전부 배지를 갖게 한다.
                 const aHas = postHasAnyMetric(a);
                 const bHas = postHasAnyMetric(b);
                 if (aHas !== bHas) return aHas ? -1 : 1;
                 const diff = getEngagementScore(b) - getEngagementScore(a);
+                if (diff !== 0) return diff;
+                return b._dateObj - a._dateObj;
+            });
+        } else if (currentSort === 'views') {
+            // 조회수는 플랫폼별 스케일이 달라 반응 지표와 합산하지 않고 단독으로 정렬한다.
+            filtered.sort((a, b) => {
+                const aHas = hasMetricValue(a.view_count);
+                const bHas = hasMetricValue(b.view_count);
+                if (aHas !== bHas) return aHas ? -1 : 1;
+                const diff = getViewScore(b) - getViewScore(a);
                 if (diff !== 0) return diff;
                 return b._dateObj - a._dateObj;
             });
@@ -2788,7 +2803,9 @@ ${item.body}
 
         // --- Engagement Metrics ---
         let metricsDiv = null;
+        // 도달(조회수)을 맨 앞에 두고 반응 지표가 뒤따르게 해 성과를 한 줄에 모은다.
         const METRIC_DEFS = [
+            { field: 'view_count', icon: 'visibility' },
             { field: 'like_count', icon: 'favorite' },
             { field: 'comment_count', icon: 'chat_bubble' },
             { field: 'share_count', icon: 'repeat' },
@@ -2799,24 +2816,15 @@ ${item.body}
         const visibleMetrics = METRIC_DEFS.filter((def) => hasMetric(post[def.field]));
         if (visibleMetrics.length > 0) {
             metricsDiv = document.createElement('div');
-            metricsDiv.className = 'flex flex-wrap items-center gap-3 pt-2 mt-1 border-t border-white/5';
+            // metrics-row: 테스트·스크립트가 지표 행을 특정하기 위한 식별용 클래스.
+            metricsDiv.className = 'metrics-row flex flex-wrap items-center gap-3 pt-2 mt-1 border-t border-white/5';
             if (isFolded) metricsDiv.classList.add('hidden-content');
             metricsDiv.innerHTML = visibleMetrics.map((def) => `
-                <span class="flex items-center gap-1 text-xs text-gray-400">
+                <span class="metric-badge flex items-center gap-1 text-xs text-gray-400" data-metric="${def.field}">
                     <span class="material-symbols-outlined text-[14px]">${def.icon}</span>
                     ${formatMetricCount(post[def.field])}
                 </span>
             `).join('');
-        }
-        if (hasMetric(post.view_count)) {
-            const viewBadge = header.querySelector('.min-w-0 p.text-xs');
-            if (viewBadge) {
-                viewBadge.insertAdjacentHTML('afterend', `
-                    <p class="text-xs text-gray-500 flex items-center gap-1">
-                        <span class="material-symbols-outlined text-[13px]">visibility</span>${formatMetricCount(post.view_count)}
-                    </p>
-                `);
-            }
         }
 
         // --- Images ---
@@ -3076,6 +3084,7 @@ ${item.body}
             // Toggle hidden-content class on actual elements
             const elementsToToggle = [content, tagsWrapper, noteWrapper, footer];
             if (imageDiv) elementsToToggle.push(imageDiv);
+            if (metricsDiv) elementsToToggle.push(metricsDiv);
             
             elementsToToggle.forEach(el => {
                 if (newFoldedState) {
