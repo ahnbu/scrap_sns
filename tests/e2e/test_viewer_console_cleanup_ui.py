@@ -27,7 +27,7 @@ CARD = "#masonryGrid article.glass-card"
 VIEWER_URL = os.environ.get("SNS_VIEWER_URL", "http://localhost:5000")
 
 # index.html 이 서빙해야 하는 캐시버스터 값. W1 종료 시점 값이다.
-EXPECTED_CACHE_BUSTER = "20260826-w1"
+EXPECTED_CACHE_BUSTER = "20260826-w1t"
 
 
 @pytest.fixture(scope="module")

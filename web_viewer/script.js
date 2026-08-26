@@ -2959,7 +2959,12 @@ ${item.body}
                 input.focus();
 
                 // Suggestions logic
-                const allExistingTags = new Set();
+                // 재료는 태그 카탈로그 + 게시글에 붙은 태그의 합집합이다.
+                // postTags 만 쓰면 새로 만들어 아직 아무 글에도 안 붙은 태그가
+                // 구조적으로 추천에 나올 수 없다 - 한 번 직접 타이핑해야만
+                // 그다음부터 보이는 닭-달걀 상태가 된다.
+                // 카탈로그의 키는 정규 태그명뿐이므로 alias 는 섞이지 않는다(normalizeTagCatalog).
+                const allExistingTags = new Set(Object.keys(tagCatalog || {}));
                 Object.values(postTags).forEach(tags => tags.forEach(tag => allExistingTags.add(tag)));
                 const postExistingTags = new Set(postTags[url] || []);
                 const suggestions = Array.from(allExistingTags)
