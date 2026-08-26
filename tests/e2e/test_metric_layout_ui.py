@@ -318,21 +318,15 @@ def test_v8_sort_persists_across_reload(viewer, sort_key, label):
 
 
 @pytest.mark.e2e
-def test_v9_metrics_only_filter_shows_only_carded_posts(viewer):
-    """V9: 지표 보유만 보기를 켜면 표시된 모든 카드가 지표 행을 갖는다."""
-    viewer.click("#metricsOnlyBtn")
-    viewer.wait_for_timeout(1500)
+def test_v9_metrics_only_button_removed(viewer):
+    """V9: '지표 보유만' 버튼은 제거됐다.
 
-    cards = viewer.locator(CARD)
-    total = cards.count()
-    assert total > 0, "필터 적용 후 카드가 하나도 없다"
-
-    for i in range(min(total, 30)):
-        assert cards.nth(i).locator(METRICS_ROW).count() == 1, \
-            f"{i}번째 카드에 지표 행이 없다"
-
-    viewer.click("#metricsOnlyBtn")
-    viewer.wait_for_timeout(800)
+    지표 보유율이 93.6% 에 이르러 이 필터는 6.4% 만 걸러내고,
+    `반응순` 정렬이 이미 지표 보유 글을 상단으로 올린다.
+    계획: _docs/20260826_02_뷰어정리-유튜브확대-지표갱신-웨이브계획.md (P2)
+    """
+    assert viewer.query_selector("#metricsOnlyBtn") is None, \
+        "'지표 보유만' 버튼이 아직 DOM 에 남아 있다"
 
 
 @pytest.mark.e2e

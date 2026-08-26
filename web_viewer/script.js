@@ -179,7 +179,6 @@ document.addEventListener('DOMContentLoaded', () => {
     
     let currentTag = null;
     let currentAuthor = null;   // { platform, username, label } | null
-    let metricsOnly = false;    // 참여지표 보유 게시물만 표시
 
     // 참여지표 공통 헬퍼 — 정렬·필터·카드 렌더가 같은 기준을 쓴다.
     // -1은 과거 DOM 경로가 남긴 "값 없음" 표식이므로 유효값으로 보지 않는다.
@@ -273,23 +272,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         renderPosts();
     });
-
-    // 지표 보유만 토글
-    const metricsOnlyBtn = document.getElementById('metricsOnlyBtn');
-    if (metricsOnlyBtn) {
-        metricsOnlyBtn.addEventListener('click', () => {
-            metricsOnly = !metricsOnly;
-            metricsOnlyBtn.setAttribute('aria-pressed', metricsOnly ? 'true' : 'false');
-            metricsOnlyBtn.classList.toggle('text-primary', metricsOnly);
-            metricsOnlyBtn.classList.toggle('border-primary', metricsOnly);
-            clearSelection();
-            if (searchQuery) {
-                void runServerSearch(searchQuery);
-                return;
-            }
-            renderPosts();
-        });
-    }
 
     // Sort Dropdown Toggle
     const sortBtn = document.getElementById('sortBtn');
@@ -1754,6 +1736,12 @@ ${item.body}
     }
 
     async function prefetchDetail(sequenceId) {
+        // 스크랩 중에는 브라우저 4개가 동시에 뜨면서 Chrome 이 네트워크 상태 변화로
+        // 진행 중인 요청을 전부 끊는다(ERR_NETWORK_CHANGED). hover 프리페치는 없어도
+        // 클릭 시 ensurePostDetail 이 다시 가져오므로, 그동안은 아예 요청하지 않는다.
+        if (scrapRunInProgress) {
+            return;
+        }
         if (!sequenceId || _postDetailCache.has(sequenceId) || _inFlightDetails.has(sequenceId)) {
             return;
         }
@@ -1767,7 +1755,9 @@ ${item.body}
             _postDetailCache.set(sequenceId, detail);
             mergeDetailIntoCollections(detail);
         } catch (error) {
-            console.error('Failed to prefetch post detail:', error);
+            // 프리페치 실패는 화면에 영향이 없다 - 클릭 시 ensurePostDetail 이 다시 가져온다.
+            // error 로 남기면 진짜 결함이 콘솔에서 묻힌다.
+            console.debug('Failed to prefetch post detail:', error);
         } finally {
             _inFlightDetails.delete(sequenceId);
         }
@@ -2086,9 +2076,7 @@ ${item.body}
             const matchesAuthor = !currentAuthor
                 || (normalizePostKeyPlatform(post.sns_platform) === currentAuthor.platform
                     && String(post.username || post.user || '') === currentAuthor.username);
-            const matchesMetrics = !metricsOnly || postHasAnyMetric(post);
-
-            return matchesFilter && matchesTag && matchesVisibility && matchesAuthor && matchesMetrics;
+            return matchesFilter && matchesTag && matchesVisibility && matchesAuthor;
         });
     }
 
@@ -2887,6 +2875,15 @@ ${item.body}
 
                     // onerror fallback chain via addEventListener
                     const handleImgError = function() {
+                        // 스크랩 시작 순간 Chrome 이 진행 중인 요청을 끊으면(ERR_NETWORK_CHANGED)
+                        // 멀쩡한 이미지가 깨진 채 남는다. 같은 URL 재요청으로 복구되지만,
+                        // 진짜 404 와 구분할 수 없으므로 1회만 시도한다(무한 재시도 방지).
+                        if (!this.dataset.retried) {
+                            this.dataset.retried = '1';
+                            const base = this.dataset.original || '';
+                            this.src = base + (base.includes('?') ? '&' : '?') + '_retry=1';
+                            return;
+                        }
                         if (this.src !== this.dataset.original) {
                             this.src = this.dataset.original;
                         } else {
