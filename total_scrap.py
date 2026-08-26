@@ -367,11 +367,13 @@ def run_scrapers_in_parallel(mode='update'):
                 "Threads": f"python -u thread_scrap.py --mode {mode}",
                 "X/Twitter": f"python -u twitter_scrap.py --mode {mode}",
                 "LinkedIn": f"python -u linkedin_scrap.py --mode {mode}",
-                # 계획서 4.7 — 1차는 파일럿(drive7)만. 전량 전환은 이 인자만 바꾼다.
+                # 재생목록 3개 전량. 파일럿(drive7)만 보던 제한을 풀었다 —
+                # 나머지 2개에 미수집 376건이 쌓여 있었는데 화면에는 드러나지 않았다.
+                # 계획: _docs/20260826_02 (P3)
                 # --max-summaries: 뷰어 「업데이트」 버튼은 동기 블로킹이라 요약이
-                # 길어지면 버튼이 묶인다. 신규가 20건을 넘으면 나머지는 남겨두고
-                # 터미널에서 웨이브로 처리한다.
-                "YouTube": f"python -u youtube_scrap.py --mode {mode} --playlists drive7 --max-summaries 20",
+                # 길어지면 버튼이 묶인다. 병렬 3 기준 15건이 약 1분 40초다.
+                # 미처리분은 매 실행마다 15건씩 자동으로 줄어든다.
+                "YouTube": f"python -u youtube_scrap.py --mode {mode} --playlists all --max-summaries 15",
             },
         ),
         (

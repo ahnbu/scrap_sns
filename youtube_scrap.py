@@ -23,8 +23,9 @@ import os
 import re
 import subprocess
 import sys
+import threading
 import time
-from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta, timezone
 
 import requests
@@ -77,6 +78,16 @@ POT_READY_TIMEOUT_SECONDS = 90
 
 SUMMARY_MODEL = "gemini-3.7-flash-medium"
 TRANSCRIPT_WORKERS = 4
+
+# 요약 동시 호출 수. call_agy 는 subprocess.run 한 번으로 끝나는 무상태 호출이라
+# 병렬화에 구조적 장애물이 없다. 3 으로 잡은 이유는 두 가지다.
+# (1) agy --sandbox 가 호출마다 프로세스를 새로 띄우고 고정 오버헤드가 붙는다.
+# (2) Gemini 쪽 rate limit 은 agy CLI 가 감싸고 있어 우리 코드에서 알 수 없다.
+# 원장에 신규 ERROR 가 늘지 않으면 4 로 올린다.
+SUMMARY_WORKERS = 3
+
+# 원장은 append 모드 파일 쓰기라 병렬 호출 시 줄이 섞인다.
+_LEDGER_LOCK = threading.Lock()
 
 # 뷰어는 마크다운을 렌더링하지 않는다(linkifyText 가 URL 만 링크로 바꾼다).
 # 구분선은 화면에서 제목과 요약을 가르고, 복사했을 때도 한 줄로 살아남는다.
@@ -468,10 +479,14 @@ def append_ledger(record):
 
     파일럿에서 청구가 실제 필요량의 2.2배였는데 로그가 없어 사후 역산으로만
     알았다. 원인을 잡으려면 계측이 먼저다.
+
+    요약을 병렬로 호출하므로 lock 으로 감싼다. 없으면 줄이 섞여 원장이
+    json.loads 로 읽히지 않게 된다 - 계측이 목적인 파일이 계측 불가가 된다.
     """
     os.makedirs(os.path.dirname(LEDGER_PATH), exist_ok=True)
-    with open(LEDGER_PATH, "a", encoding="utf-8") as handle:
-        handle.write(json.dumps(record, ensure_ascii=False) + "\n")
+    with _LEDGER_LOCK:
+        with open(LEDGER_PATH, "a", encoding="utf-8") as handle:
+            handle.write(json.dumps(record, ensure_ascii=False) + "\n")
 
 
 # ---------------------------------------------------------------- summary
@@ -805,39 +820,97 @@ def run(args):
     elif ordered_ids:
         print("   ⚠️ PO token provider 미가동 — 자막 없이 메타만 수집합니다.")
 
-    collected = []
-    summarized = 0
-    for video_id in ordered_ids:
-        entry = pending[video_id]
-        detail = details.get(video_id)
-        if not detail:
-            continue
+    # --- 요약 계획 수립 -------------------------------------------------
+    # 상한은 루프 안에서 세지 않고 제출 전에 목록을 잘라서 건다. 병렬로 호출하면
+    # 카운터 방식은 상한을 넘겨 호출할 수 있고, 그건 그대로 과금이다.
+    #
+    # 캐시 히트는 agy 를 부르지 않으므로 상한을 소비하지 않는다. 상한이 소비되면
+    # 이미 요약된 건들이 배치를 잡아먹어 미처리분이 줄지 않는다.
+    usable_ids = [vid for vid in ordered_ids if details.get(vid)]
+    summary_inputs = {}
+    summary_results = {}
+    call_targets = []
+
+    for video_id in usable_ids:
+        detail = details[video_id]
         snippet = detail.get("snippet") or {}
-        transcript_status, transcript = transcripts.get(
+        _, transcript = transcripts.get(
             video_id, ("blocked" if not provider_ok else "failed", "")
         )
 
         if args.skip_summaries:
-            summary, summary_status = "", "skipped"
-        elif args.max_summaries is not None and summarized >= args.max_summaries:
-            summary, summary_status = "", "deferred"
-        else:
-            prose, _ = split_description(str(snippet.get("description") or ""))
-            summary, summary_status = summarize(
-                video_id,
-                str(snippet.get("title") or "").strip(),
-                prose,
-                transcript,
-                model,
-                args.refresh_summaries,
-                args.wave,
-            )
-            if summary_status == "ok":
-                summarized += 1
+            summary_results[video_id] = ("", "skipped")
+            continue
+        if not transcript:
+            summary_results[video_id] = ("", "no_transcript")
+            continue
 
+        if not args.refresh_summaries:
+            cached = load_cached_summary(video_id, sha1_of(transcript), model)
+            if cached:
+                summary_results[video_id] = (cached, "ok")
+                continue
+
+        prose, _ = split_description(str(snippet.get("description") or ""))
+        summary_inputs[video_id] = (
+            str(snippet.get("title") or "").strip(),
+            prose,
+            transcript,
+        )
+        call_targets.append(video_id)
+
+    if args.max_summaries is not None and len(call_targets) > args.max_summaries:
+        deferred = call_targets[args.max_summaries:]
+        call_targets = call_targets[: args.max_summaries]
+        for video_id in deferred:
+            summary_results[video_id] = ("", "deferred")
+        print(f"   ⏭️ 요약 상한 {args.max_summaries}건 — {len(deferred)}건은 다음 실행으로 미룸")
+
+    # --- 요약 병렬 호출 -------------------------------------------------
+    # 한 건이 타임아웃으로 막혀도 나머지는 계속 간다. 순차 구조에서 1건이
+    # 32분(재시도 3회)을 붙잡았던 실측이 병렬화의 직접 동기다.
+    if call_targets:
+        print(f"   🤖 요약 {len(call_targets)}건 (병렬 {SUMMARY_WORKERS})...")
+        with ThreadPoolExecutor(max_workers=SUMMARY_WORKERS) as pool:
+            futures = {
+                pool.submit(
+                    summarize,
+                    video_id,
+                    summary_inputs[video_id][0],
+                    summary_inputs[video_id][1],
+                    summary_inputs[video_id][2],
+                    model,
+                    args.refresh_summaries,
+                    args.wave,
+                ): video_id
+                for video_id in call_targets
+            }
+            done = 0
+            for future in as_completed(futures):
+                video_id = futures[future]
+                try:
+                    summary_results[video_id] = future.result()
+                except Exception as error:  # noqa: BLE001 - 개별 실패가 전체를 막지 않는다
+                    print(f"      ⚠️ 요약 예외 {video_id}: {type(error).__name__}: {error}")
+                    summary_results[video_id] = ("", "failed")
+                done += 1
+                if done % 10 == 0:
+                    print(f"      진행 {done}/{len(call_targets)}")
+
+    # --- 결과 조립 (제출 순서가 아니라 원래 순서를 따른다) --------------
+    collected = []
+    for video_id in usable_ids:
+        entry = pending[video_id]
+        detail = details[video_id]
+        transcript_status, transcript = transcripts.get(
+            video_id, ("blocked" if not provider_ok else "failed", "")
+        )
+        summary, summary_status = summary_results.get(video_id, ("", "skipped"))
         collected.append(
             build_post(entry, detail, transcript_status, transcript, summary, summary_status)
         )
+
+    summarized = len(call_targets)
 
     stop_provider(provider_process)
 

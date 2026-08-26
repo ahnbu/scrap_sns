@@ -180,6 +180,19 @@ def _scrap_progress_message_from_log_line(platform, line):
 
     platform_label = _scrap_progress_platform_label(platform)
 
+    # 유튜브는 시작 줄에 대상 재생목록이 함께 실린다. 재생목록 3개 중 1개만
+    # 보고 있었는데 완료 팝업이 "0건 추가"만 보여줘 정상 동작과 범위 누락을
+    # 구분할 수 없었다. phase_start_match 보다 먼저 판정해야 한다 - 그쪽이
+    # 같은 줄을 먼저 잡아 대상 정보를 버린다.
+    # 계획: _docs/20260826_02 (P3, W2-d)
+    youtube_scope_match = re.search(
+        r"🚀\s*YouTube Producer 시작 \(모드:\s*[^,]+,\s*대상:\s*([^)]+)\)",
+        text,
+    )
+    if youtube_scope_match:
+        scope = youtube_scope_match.group(1).strip()
+        return f"YouTube 목록 수집 시작 (대상: {scope})"
+
     phase_start_match = re.search(
         r"🚀\s*(Threads|LinkedIn|X/Twitter|YouTube)\s+(Producer|Consumer)\s+시작",
         text,
