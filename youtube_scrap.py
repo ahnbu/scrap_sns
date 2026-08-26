@@ -30,6 +30,7 @@ from datetime import datetime, timedelta, timezone
 
 import requests
 
+from utils import metric_refresh
 from utils.agy_client import call_agy
 from utils.common import load_json, save_json
 from utils.post_schema import normalize_post
@@ -713,6 +714,11 @@ def build_post(entry, detail, transcript_status, transcript, summary, summary_st
         "share_count": None,
         "quote_count": None,
         "bookmark_count": None,
+        # 지표를 언제 읽었는지 남긴다. 이 값이 없으면 일자별 파일에서
+        # "안 변한 것"과 "안 읽은 것"을 구분할 수 없다 - 재수집하지 않은 글도
+        # 병합 과정에서 같은 값이 그대로 복사돼 실리기 때문이다.
+        # 계획: _docs/20260826_02 (P4, W3)
+        "metrics_updated_at": now_kst_iso(),
         "playlist_added_at": entry["playlist_added_at"],
         "transcript_status": transcript_status,
         "transcript_path": (
@@ -917,6 +923,45 @@ def run(args):
     merged = dict(existing)
     for post in collected:
         merged[str(post["platform_id"])] = post
+
+    # --- 기존 영상 지표 갱신 -------------------------------------------
+    # videos.list 가 50건 배치라 전량 갱신해도 API 호출이 몇 번뿐이다.
+    # 자막·요약은 절대 다시 만들지 않는다 - 그쪽이 비싼 부분이다.
+    # 계획: _docs/20260826_02 (W5)
+    refresh_stats = {"refreshed": 0, "changed": 0, "max_delta": 0}
+    refresh_targets = metric_refresh.select_targets(
+        [post for vid, post in merged.items() if vid not in pending],
+        "youtube",
+        limit=None,
+        identity=lambda post: str(post.get("platform_id") or ""),
+        platform_field=None,
+    )
+    if refresh_targets:
+        refresh_ids = [str(post["platform_id"]) for post in refresh_targets]
+        print(f"   🔄 기존 영상 지표 갱신 대상 {len(refresh_ids)}건 (자막·요약 재생성 없음)")
+        fresh_details = fetch_video_details(refresh_ids, api_key)
+        for post in refresh_targets:
+            detail = fresh_details.get(str(post.get("platform_id")))
+            if not detail:
+                continue
+            statistics = detail.get("statistics") or {}
+            before = (post.get("like_count"), post.get("comment_count"), post.get("view_count"))
+            post["like_count"] = to_int(statistics.get("likeCount"))
+            post["comment_count"] = to_int(statistics.get("commentCount"))
+            post["view_count"] = to_int(statistics.get("viewCount"))
+            post["metrics_updated_at"] = now_kst_iso()
+            after = (post["like_count"], post["comment_count"], post["view_count"])
+            refresh_stats["refreshed"] += 1
+            if before != after:
+                refresh_stats["changed"] += 1
+                for old_value, new_value in zip(before, after):
+                    if isinstance(old_value, int) and isinstance(new_value, int):
+                        refresh_stats["max_delta"] = max(
+                            refresh_stats["max_delta"], new_value - old_value
+                        )
+        refresh_line = metric_refresh.format_refresh_log(refresh_stats)
+        if refresh_line:
+            print(f"   📈 {refresh_line}")
 
     posts = list(merged.values())
     posts.sort(key=lambda post: str(post.get("playlist_added_at") or ""), reverse=True)

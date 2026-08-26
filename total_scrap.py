@@ -4,6 +4,7 @@ import time
 import os
 import sys
 import glob
+import re
 import json
 import argparse
 import signal
@@ -15,6 +16,7 @@ from urllib.parse import urlsplit, urlunsplit
 from utils.json_to_md import convert_json_to_md
 from utils.auth_status import AUTH_REQUIRED_EXIT_CODE
 from utils.post_meta import build_post_key
+from utils import metric_refresh
 
 # Windows 터미널 인코딩 문제 해결
 if sys.platform == 'win32':
@@ -628,6 +630,39 @@ def _saved_at_key(post):
     return _normalize_ts(raw)
 
 
+def _metric_change_key(post):
+    """플랫폼이 섞인 통합본에서 같은 글을 다시 찾기 위한 키."""
+    platform = str(post.get("sns_platform") or "").strip().lower()
+    identity = post.get("platform_id") or post.get("code") or post.get("url") or ""
+    return f"{platform}:{identity}" if identity else ""
+
+
+def _summarize_metric_refresh(total_filename, new_posts):
+    """직전 통합본과 대조한 갱신 요약 한 줄. 실패해도 저장을 막지 않는다."""
+    try:
+        previous = _find_previous_total(total_filename)
+        if not previous:
+            return ""
+        with open(previous, "r", encoding="utf-8-sig") as file:
+            old_posts = json.load(file).get("posts", [])
+        stats = metric_refresh.count_metric_changes(old_posts, new_posts, _metric_change_key)
+        return metric_refresh.format_refresh_log(stats)
+    except Exception as error:  # noqa: BLE001 - 요약 실패가 수집을 막으면 안 된다
+        print(f"⚠️ 지표 갱신 요약 생략: {type(error).__name__}: {error}")
+        return ""
+
+
+def _find_previous_total(total_filename):
+    """오늘 파일을 뺀 가장 최근 통합본. 없으면 빈 문자열."""
+    candidates = sorted(
+        path
+        for path in glob.glob(os.path.join(OUTPUT_TOTAL_DIR, "total_full_*.json"))
+        if re.fullmatch(r"total_full_\d{8}\.json", os.path.basename(path))
+        and os.path.abspath(path) != os.path.abspath(total_filename)
+    )
+    return candidates[-1] if candidates else ""
+
+
 def save_total(
     new_posts,
     threads_count,
@@ -669,9 +704,18 @@ def save_total(
         "posts": final_ordered_posts
     }
     
+    # 직전 통합본과 대조해 지표가 실제로 얼마나 갱신·변동했는지 센다.
+    # 이 한 줄이 매 실행마다 화면에 뜨면, 갱신 주기 파라미터를 다시 볼 시점을
+    # 사람이 달력에 기억할 필요가 없다. "3주째 변화 0건"이면 그 자리에서
+    # 주기를 늘리는 판단이 선다. 측정 코드가 아니라 운영 로그다.
+    # 계획: _docs/20260826_02 (P4, W5)
+    refresh_line = _summarize_metric_refresh(total_filename, final_ordered_posts)
+
     with open(total_filename, 'w', encoding='utf-8-sig') as f:
         json.dump(total_data, f, ensure_ascii=False, indent=4)
     print(f"\n🏁 Total Full 저장 완료: {total_filename} (총 {len(new_posts)}개)")
+    if refresh_line:
+        print(f"📈 {refresh_line}")
     
     # MD 변환
     convert_json_to_md(total_filename)

@@ -133,7 +133,7 @@ print(json.dumps({{"commands": launched_commands, "results": results}}, ensure_a
         "cmd /c python -u thread_scrap.py --mode update",
         "cmd /c python -u twitter_scrap.py --mode update",
         "cmd /c python -u linkedin_scrap.py --mode update",
-        "cmd /c python -u youtube_scrap.py --mode update --playlists drive7 --max-summaries 20",
+        "cmd /c python -u youtube_scrap.py --mode update --playlists all --max-summaries 15",
         "cmd /c python -u thread_scrap_single.py",
         "cmd /c python -u twitter_scrap_single.py",
         # LinkedIn 지표는 저장글 목록 API 응답에 없어 producer 가 가져올 수 없다.

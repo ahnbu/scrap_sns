@@ -22,6 +22,8 @@ import re
 import time
 from datetime import datetime
 
+from utils import metric_refresh
+
 # 공개 페이지에서 지표를 담고 있는 DOM 속성.
 REACTION_ATTR = "data-num-reactions"
 COMMENT_ATTR = "data-num-comments"
@@ -137,82 +139,37 @@ def polite_sleep(min_seconds: float = 4.0, max_seconds: float = 6.0) -> None:
     time.sleep(random.uniform(min_seconds, max_seconds))
 
 
-# --- 갱신 대상 선정 (계획 3.4절) --------------------------------------
+# --- 갱신 대상 선정 --------------------------------------------------
+#
+# 판정 로직 자체는 `utils/metric_refresh.py` 로 승격했다 - Threads·YouTube 도
+# 같은 정책을 쓰는데 세 번 복붙하면 정책이 세 벌로 갈라진다.
+# 여기 남는 것은 LinkedIn 고유의 두 가지뿐이다: activity_id 로 식별한다는 것과
+# 파라미터 상수의 하위 호환 별칭.
 
-# 작성 후 이 기간이 지난 글은 갱신하지 않는다.
-# LinkedIn 게시물의 반응은 대체로 1~2주 안에 수렴하므로, 오래된 글을 반복해
-# 읽는 것은 시간만 쓰고 값은 거의 바뀌지 않는다.
-FRESH_POST_DAYS = 30
-
-# 마지막 갱신 후 이 기간이 지나야 다시 읽는다.
-REFRESH_AFTER_DAYS = 7
-
-# 1회 실행 상한. 상한이 없으면 첫 실행에서 660건을 시도해
-# 「업데이트」가 55분간 끝나지 않는다.
-DEFAULT_RUN_LIMIT = 120
+FRESH_POST_DAYS = metric_refresh.PLATFORM_POLICIES["linkedin"]["fresh_post_days"]
+REFRESH_AFTER_DAYS = metric_refresh.PLATFORM_POLICIES["linkedin"]["refresh_after_days"]
+DEFAULT_RUN_LIMIT = metric_refresh.PLATFORM_POLICIES["linkedin"]["run_limit"]
 
 
-def _parse_dt(value):
-    if not value:
-        return None
-    text = str(value).strip().replace("Z", "")
-    for fmt in ("%Y-%m-%dT%H:%M:%S.%f", "%Y-%m-%dT%H:%M:%S", "%Y-%m-%d %H:%M:%S", "%Y-%m-%d"):
-        try:
-            return datetime.strptime(text[: len(fmt) + 6], fmt)
-        except ValueError:
-            continue
-    try:
-        return datetime.fromisoformat(text)
-    except ValueError:
-        return None
-
-
-def _days_since(value, now):
-    parsed = _parse_dt(value)
-    if parsed is None:
-        return None
-    return (now - parsed).total_seconds() / 86400.0
+def _identity(post):
+    return extract_activity_id(post.get("url"))
 
 
 def classify_target(post, now=None, failure_counts=None, max_failures=3):
     """게시글 하나의 갱신 우선순위를 판정한다.
 
     반환값은 (순위, 사유). 순위가 None 이면 이번 실행에서 건드리지 않는다.
-    순위가 작을수록 먼저 처리한다.
     """
-    now = now or datetime.now()
-    activity_id = extract_activity_id(post.get("url"))
-    if not activity_id:
-        return None, "no-activity-id"
-
-    if failure_counts:
-        if failure_counts.get(activity_id, 0) >= max_failures:
-            return None, "failure-limit"
-
-    # 1순위 - 지표가 아예 없다. 커버리지를 먼저 채운다.
-    if post.get("like_count") is None:
-        return 1, "missing-metrics"
-
-    # 여기부터는 지표를 이미 가진 글이다. 반응이 수렴했으면 다시 읽지 않는다.
-    # 작성일을 알 수 없는 글도 갱신 대상에서 뺀다 - 신선도를 판단할 근거가 없고,
-    # 지표는 이미 갖고 있으므로 매 실행마다 다시 읽는 쪽이 더 나쁘다.
-    age_days = _days_since(post.get("created_at"), now)
-    if age_days is None or age_days > FRESH_POST_DAYS:
-        return None, "settled"
-
-    stale_days = _days_since(post.get("metrics_updated_at"), now)
-
-    # 2순위 - 작성 30일 이내인데 갱신 시각이 없다.
-    # 갱신 시각 미상은 "오래된 것"으로 보수적으로 취급한다.
-    # (이 모듈 도입 전에 수집된 레거시 데이터가 여기 해당한다)
-    if stale_days is None:
-        return 2, "fresh-never-updated"
-
-    # 3순위 - 반응이 아직 늘어나는 구간이면서 마지막 갱신이 오래됐다.
-    if stale_days >= REFRESH_AFTER_DAYS:
-        return 3, "stale-fresh-post"
-
-    return None, "up-to-date"
+    return metric_refresh.classify_target(
+        post,
+        fresh_post_days=FRESH_POST_DAYS,
+        refresh_after_days=REFRESH_AFTER_DAYS,
+        now=now,
+        identity=_identity,
+        failure_counts=failure_counts,
+        max_failures=max_failures,
+        identity_reason="no-activity-id",
+    )
 
 
 def select_targets(posts, now=None, limit=DEFAULT_RUN_LIMIT, failure_counts=None):
@@ -220,18 +177,11 @@ def select_targets(posts, now=None, limit=DEFAULT_RUN_LIMIT, failure_counts=None
 
     limit 이 None 이면 상한 없이 전부 반환한다(백필용).
     """
-    now = now or datetime.now()
-    ranked = []
-    for post in posts:
-        if (post.get("sns_platform") or "").lower() != "linkedin":
-            continue
-        rank, _reason = classify_target(post, now=now, failure_counts=failure_counts)
-        if rank is None:
-            continue
-        ranked.append((rank, post))
-
-    ranked.sort(key=lambda item: item[0])
-    selected = [post for _rank, post in ranked]
-    if limit is None:
-        return selected
-    return selected[:limit]
+    return metric_refresh.select_targets(
+        posts,
+        "linkedin",
+        now=now,
+        limit=limit,
+        identity=_identity,
+        failure_counts=failure_counts,
+    )

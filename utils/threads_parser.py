@@ -316,6 +316,13 @@ def extract_engagement_metrics(post):
         if number < 0:
             continue
         metrics[schema_key] = number
+
+    # 값이 하나라도 잡혔을 때만 읽은 시각을 남긴다. 이 필드가 없으면
+    # 일자별 파일에서 "안 변한 것"과 "안 읽은 것"을 구분할 수 없다 -
+    # 재수집하지 않은 글도 병합 과정에서 같은 값이 그대로 복사돼 실리기 때문이다.
+    # 계획: _docs/20260826_02 (P4, W3)
+    if metrics:
+        metrics["metrics_updated_at"] = datetime.now().isoformat(timespec="milliseconds")
     return metrics
 
 def extract_items_multi_path(data, target_code, username):

@@ -134,6 +134,14 @@ def _scrap_progress_message_from_line(line):
     if "Total Full 저장 완료" in text:
         return "통합 파일 저장 완료"
 
+    # 지표 갱신 결과를 완료 팝업까지 올린다. 이 함수는 화이트리스트라 분기를
+    # 추가하지 않으면 total_scrap.py 가 아무리 출력해도 여기서 버려진다.
+    # 이 한 줄이 매 실행마다 보이면 갱신 주기 재검토 시점을 사람이 기억할
+    # 필요가 없다. 계획: _docs/20260826_02 (P4, W5)
+    metric_refresh_match = re.search(r"(지표 갱신\s*[0-9,]+건\s*·\s*값이 바뀐 글\s*[0-9,]+건[^\n]*)", text)
+    if metric_refresh_match:
+        return metric_refresh_match.group(1).strip()
+
     running_match = re.search(
         r"\[\+\]\s*(Threads|LinkedIn|X/Twitter|YouTube)\s+(Producer|Consumer)\s+실행 중",
         text,

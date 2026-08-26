@@ -6,6 +6,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime
 from urllib.parse import urlparse
 
+from utils import metric_refresh
 from utils.post_schema import normalize_post, validate_post
 from utils.threads_http_adapter import (
     build_threads_headers,
@@ -175,6 +176,10 @@ METRIC_FIELDS = (
     "quote_count",
     "bookmark_count",
     "view_count",
+    # 지표가 아니라 메타데이터지만 반드시 함께 이월한다. 이 값만 사라지면
+    # 지표는 남고 "언제 읽은 값인지"를 잃어, 안 변한 것과 안 읽은 것을
+    # 구분할 수 없게 된다. linkedin_scrap.py 의 PRESERVED_METRIC_FIELDS 와 같은 이유다.
+    "metrics_updated_at",
 )
 
 
@@ -513,6 +518,7 @@ def main(
         print(f"[Sync] 상세 수집 상태 {synced}개를 full DB에 동기화했습니다.")
 
     target_codes = []
+    refresh_candidates = []
     skipped_done = 0
     skipped_invalid = 0
     skipped_fail_limit = 0
@@ -526,11 +532,15 @@ def main(
                 continue
             if post.get("is_merged_thread"):
                 continue
-            if post.get("is_detail_collected") is True:
-                skipped_done += 1
-                continue
             if failures.get(code, {}).get("fail_count", 0) >= 3:
                 skipped_fail_limit += 1
+                continue
+            if post.get("is_detail_collected") is True:
+                # 기수집이어도 반응이 아직 자라는 구간이면 다시 읽는다.
+                # 이 분기가 없으면 지표가 최초 1회 스냅샷으로 영구 고정된다.
+                # 계획: _docs/20260826_02 (P4, W5)
+                skipped_done += 1
+                refresh_candidates.append(post)
                 continue
             target_codes.append(
                 {
@@ -540,8 +550,37 @@ def main(
                 }
             )
 
+    # 상한은 시간이 아니라 계정 리스크로 정해진다 - LinkedIn 과 달리 Threads 지표는
+    # 로그인 세션으로 읽는다. 신규 수집분이 이미 상한을 넘으면 갱신은 다음으로 미룬다.
+    refresh_limit = metric_refresh.PLATFORM_POLICIES["threads"]["run_limit"]
+    remaining = max(0, refresh_limit - len(target_codes))
+    refresh_targets = (
+        metric_refresh.select_targets(
+            refresh_candidates,
+            "threads",
+            limit=remaining,
+            identity=get_post_code,
+            failure_counts={
+                code: info.get("fail_count", 0) for code, info in failures.items()
+            },
+            platform_field=None,
+        )
+        if remaining
+        else []
+    )
+    for post in refresh_targets:
+        skipped_done -= 1
+        target_codes.append(
+            {
+                "code": get_post_code(post),
+                "username": post.get("user") or post.get("username"),
+                "url": post.get("url") or "",
+            }
+        )
+
     print(
-        f"[Target] 수집대상 {len(target_codes)}개 | "
+        f"[Target] 수집대상 {len(target_codes)}개 "
+        f"(신규 {len(target_codes) - len(refresh_targets)}개 + 지표갱신 {len(refresh_targets)}개) | "
         f"기수집 스킵 {skipped_done}개 | 코드없음 스킵 {skipped_invalid}개 | "
         f"실패한도 스킵 {skipped_fail_limit}개"
     )

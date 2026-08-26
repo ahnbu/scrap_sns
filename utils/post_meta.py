@@ -29,6 +29,10 @@ META_FIELDS = [
     "quote_count",
     "bookmark_count",
     "view_count",
+    # 지표를 "언제 읽은 값"인지 카드에 표시하려면 목록 응답에 실려야 한다.
+    # 이 목록에 없으면 /api/posts 가 값을 떨어뜨려 뷰어가 볼 수 없다.
+    # 계획: _docs/20260826_02 (W3)
+    "metrics_updated_at",
 ]
 
 

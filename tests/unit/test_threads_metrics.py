@@ -31,12 +31,26 @@ class TestExtractEngagementMetrics:
             "repost_count": 3,
             "quote_count": 1,
         }
-        assert extract_engagement_metrics(post) == {
+        result = extract_engagement_metrics(post)
+
+        # metrics_updated_at 은 시각이라 값을 고정할 수 없으므로 따로 뗀다.
+        assert result.pop("metrics_updated_at", None), "읽은 시각이 기록되지 않았다"
+        assert result == {
             "like_count": 140,
             "comment_count": 8,
             "share_count": 3,
             "quote_count": 1,
         }
+
+    def test_records_read_time_only_when_a_value_was_found(self):
+        """값이 하나도 없으면 시각도 남기지 않는다.
+
+        빈 dict 를 반환해야 병합 단계의 보존 가드가 기존값을 지킨다.
+        시각만 실어 보내면 "읽었는데 값이 없었다"와 "안 읽었다"가 뒤섞인다.
+        계획: _docs/20260826_02 (W3)
+        """
+        assert extract_engagement_metrics({"like_count": -1}) == {}
+        assert "metrics_updated_at" in extract_engagement_metrics({"like_count": 0})
 
     def test_zero_is_a_real_value(self):
         assert extract_engagement_metrics({"like_count": 0})["like_count"] == 0

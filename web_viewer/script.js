@@ -2556,6 +2556,24 @@ ${item.body}
         updateBulkActionBar();
     }
 
+    // 지표를 "언제 읽은 값"인지 카드에 드러낸다. 갱신 주기를 아무리 짧게 잡아도
+    // 시점 차이는 남으므로, 숫자만 보여주면 서로 다른 시점의 값을 같은 기준으로
+    // 비교하게 된다. 값이 없으면 아무 것도 그리지 않는다 - 아직 기록이 없는
+    // 레거시 수집분에 "미상" 배지를 붙이면 소음만 는다.
+    // 계획: _docs/20260826_02 (P4, W3)
+    function renderMetricAsOfHtml(post) {
+        const raw = post && post.metrics_updated_at;
+        if (!raw) return '';
+        const parsed = new Date(raw);
+        if (Number.isNaN(parsed.getTime())) return '';
+        const label = `${parsed.getMonth() + 1}/${parsed.getDate()} 기준`;
+        return `
+                <span class="metric-as-of text-[11px] text-gray-500 ml-auto" title="이 지표를 읽은 시각: ${raw}">
+                    ${label}
+                </span>
+            `;
+    }
+
     function formatMetricCount(value) {
         const n = Number(value);
         if (!Number.isFinite(n)) return String(value);
@@ -2825,7 +2843,7 @@ ${item.body}
                     <span class="material-symbols-outlined text-[14px]">${def.icon}</span>
                     ${formatMetricCount(post[def.field])}
                 </span>
-            `).join('');
+            `).join('') + renderMetricAsOfHtml(post);
         }
 
         // --- Images ---
