@@ -27,6 +27,10 @@
         ],
         "primary": false
     },
+    "✅SNS벤치마킹": {
+        "aliases": [],
+        "primary": false
+    },
     "글로벌규칙": {
         "aliases": [
             "claude.md",
