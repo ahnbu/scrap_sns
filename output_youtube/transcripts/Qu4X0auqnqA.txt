@@ -1,0 +1,755 @@
+[00:00]
+회사 팀 차원에서 AI를 활용하는
+가장 좋은 방법은 뭘까요? 왜 기존
+회사들은 AI 시대에 뒤쳐질 수밖에
+없을까요? 그리고 왜 지금이 작은
+스타트업이 거대 기업을 이길 수 있는
+역사적 기회일까요? 다이에나 후는
+세계 최고의 스타트업 엑셀러레이터,
+와이 콤비네이터의 파트너입니다.
+그녀가 지금 몇 달 사이에 목격한
+아주 놀라운 현상에 대해 이야기하려고
+나섰습니다. 만약 당신이 창업자거나
+팀을 이끄는 사람이거나 혹은 조금 전
+질문의 답이 궁금하시다면 꼭 끝까지
+들어보세요. 저는 보충 설명과 내용
+정리로 여러분의 이해를 도와드릴게요.
+Hi, I'm Diana and
+I'm a partner at YC.
+Over the past few
+months, it's become
+clear to me that AI
+is not just going to
+change how quickly
+software gets built
+or what workflows
+get automated. It's
+going to
+fundamentally change
+the way startup
+should be run from
+what rules will
+exist to what
+products are
+possible to build.
+In this episode, I'm
+going to discuss how
+[01:00]
+founders should
+think about building
+an AI native
+company, what roles
+their team should
+have, and what
+concrete internal
+practices they can
+adopt right now to
+move much faster.
+Currently, most
+people talk about AI
+in terms of
+productivity.
+They'll talk at
+length about how it
+can make engineers
+more productive or
+say we need to add
+copilot to existing
+workflows and ship
+more features. This
+framing misses the
+shift we're
+currently seeing
+which is less about
+productivity booths
+than entirely a new
+capabilities. The
+right person with AI
+tools can now build
+features that used
+to require an entire
+team or were just
+impossible. Thinking
+about AI in terms of
+new capabilities has
+several implications
+for how founders
+should run their
+companies. At a high
+level, the way to
+think about AI is
+that should not be a
+tool your company
+just uses. It should
+be the operating
+company runs on.
+Yor은 유수의 회사들을 초기에
+키워낸 세계에서 가장 영향력 있는
+[02:00]
+벤처 캐피털이에요. 2005년 폴
+그레이엄이 설립했고 오픈 AI의
+샘트먼이 약 5년 정도 사장직을
+여임했죠. YC 파트너라는 자리는
+매년 수백개 회사가 어떻게 성공하고
+실패하는지를 가장 가까이 있어
+지켜보는 위치입니다. 따라서 AI는
+도구가 아니라 운영 체제가 되어야
+한다는이에나의 주장은 최근 실제로
+빠르게 성장하는 회사들에서 공통적으로
+관찰된 패턴이라는 점에서 무게가
+실리죠. 참고로 다이에나 본인도
+엔지니어 출신이고요. 포켓몬 고를
+만든 회사 나이엔틱에서 AIAR AR
+분야를 이끈 경력이 있습니다. 어떤
+이야기를 하는지 더 들어보시죠.
+workfow, every
+decision and every
+process should flow
+through an
+intelligent layer
+that is constantly
+learning and
+improving. What this
+means concretely is
+every important
+process in your
+company should be
+captured by an
+intelligent close
+loop. A close loop
+captures
+inflammation, feeds
+it back into an
+intelligence
+systems, and improve
+the process over
+time. If you've ever
+studied control
+[03:00]
+systems, you will be
+familiar with the
+difference between
+an open loop and a
+close loop system.
+Open loops are
+control systems
+without feedback
+loops. In the old
+world, companies
+basically ran as
+open loops. You made
+a decision, executed
+it, and didn't
+always
+systematically
+measure the outcome
+and adjust the
+process. Open loops
+are inherently
+lossy. A close loop,
+on the other hand,
+is self-regulating.
+It continuously
+monitors its output
+and adjusts its
+process to better
+meet the stated
+goal. Close loops
+are extremely
+powerful for
+correctness and
+stability with ag
+개방 폐쇄루프에 대한 이야기가
+나왔는데요. 이걸 이해하는 가장 쉬운
+비유는 요리인 것 같습니다. 개방
+루프는 레시피만 보고 요리하는
+방식이에요. 물m, 뭐 간장 두
+스푼, 10분 끓이기 적힌 대로만
+요리하고 중간에 맛을 보지 않습니다.
+음식이 짠지 싱거운지 미리 알 수
+없죠. 반면 폐쇄 루프는 중간중간
+[04:00]
+간을 보면서 요리하는 방식이에요.
+끓이다가 한번 맛보고 싱거우면 소금을
+더 넣고 다시 맛보고 이렇게 결과를
+측정하고 조정하는 행위를 반복합니다.
+에어컨도 그렇죠. 설정 온도에
+도달했는지 계속 측정하면서 에어컨
+스스로 더우면 더 강하게 그리고
+시원해지면 약하게 자동 조절하죠.
+이런게 폐쇄 루프입니다. 다이에나가
+말하는 핵심은 이겁니다. 기존
+회사들은 회의, 결정, 실행으로
+끝나고 그 결과가 좋았는지 나빴는지
+체계적으로 확인하지 않습니다.
+체계적으로라는 말이 중요한데 결과를
+확인하고 반영하고자 하는 의지가
+있다고 해도 기존의 운영 체제가 이걸
+받쳐 주지 못합니다. 반면 AI
+네이티브 회사는 실행부터 결과 분석
+그다음 결정까지 체계적이고 근본적으로
+가능합니다. 속도도 빠르고 정확도도
+높죠. these close
+loops you will need
+to make your entire
+company queryable in
+other words the
+whole organization
+should be legible to
+AI every important
+action should
+produce an artifact
+[05:00]
+that the
+intelligence at the
+center of the
+company can learn
+from and use to
+self-improve this
+means recording your
+meetings with a AI
+notaker, minimizing
+DMs and emails, and
+embedding agents
+throughout
+communication of all
+channels. It also
+means building
+custom dash with
+everything in the
+company. revenue,
+sales, engineering,
+hiring, ops,
+everything. Here's a
+concrete example of
+how it could work.
+Take engineering,
+management, and
+sprint planning. If
+you have an agent
+that has access to
+your linear tickets,
+all your Slack
+engineering
+channels, all
+customer feedback
+from emails or tools
+like PIN and GitHub,
+highlevel plans in a
+notion or Google
+doc, sales calls and
+recordings from
+daily standups, then
+the agent can
+analyze what was
+actually shipped in
+your previous print
+and how well they
+met customers needs
+for real. From
+there, you can go a
+step further with
+full visibility into
+what shipped, what
+worked and what
+didn't. Agents can
+start looking ahead.
+[06:00]
+They can propose
+sprint plans for
+engineers that are
+way more predictable
+and accurate and on
+track. The days of
+manager status
+rollups that are
+super lossy are
+gone. Having managed
+engineering teas
+myself and now
+seeing this across
+multiple YC
+companies, this is a
+game changer. What
+used to require
+constant
+coordination becomes
+legible and querable
+by default. I've
+seen teams that do
+this cut their
+engineering sprint
+time in half and get
+close to 10x more
+than in that time.
+The overarching
+principle here is
+that to get their
+full capabilities,
+you need to provide
+models with as much
+context as you would
+provide an employee.
+When you do this,
+your company stops
+operating as a open
+loop where
+information is
+fragmented and
+manually
+interpreted. It
+becomes instead a
+close loop system.
+Status, decisions
+and outcomes are
+continuously
+captured and fed
+back into this
+intelligence layer.
+The result is a
+system that has an
+update view of리는
+[07:00]
+데이터베이스에 질문한다라는 뜻인데요.
+다이에나가 말한 AI 네이티브 운영
+체제가 작동한다면 데이터베이스가
+아니라 AI에게 질문함으로써 서비스에
+대한 모든 답이 나오는 상태가 되는
+거겠죠. 뭐 예를 들어 지난달 우리
+고객들이 가장 많이 불평한 문제 세
+가지가 뭔가? 이번 분기에 영업 팀이
+어떤 기능을 가장 많이 요청받았는가?
+지난 6개월간 우리 회사가 내린 결정
+중에 실패한 것의 공통점은 무엇인가?
+다음 업데이트 때 반드시 넣어야 하는
+기능은 이런 질문을 누구나 할 수
+있고 누구에게나 정확도가 높은 응답이
+돌아옵니다. 현재 이런 시스템이 잘
+거쳐지지 않는 이유는 회사의 정보가
+여기저기 흩어져 있기 때문이고요.이를
+사람이 이어주고 전달해 주는 방식은
+정보 전달에 누수가 생길 수밖에
+없어요. 주요 정보가 오가하는 회의는
+반드시 전부 데이터화해야 한다고
+말하고 중요한 정보가 오가지만 정보가
+공유되지도 않고 쌓이지도 않는
+다이렉트 메시지나 산의 이메일은
+[08:00]
+최소한으로 사용하라는 팁도 중요한 것
+같습니다. 메신저 메시지나 구두로
+중요 정보가 오가는 바람에 특정
+관리자와 친하지 않으면 정보와
+멀어지는 상황. 회사를 다녀본 분들은
+한 번쯤 경험하시거나 목격하셨을
+거예요. DM으로 업무 지시를 받고
+구두로 회의 결론을 내고 결정 과정을
+문서로 남기지 않는 문화. 저는
+스타트업에서도 많이 보고 들었습니다.
+이런 관행은 AI 시대에는 큰 약점이
+됩니다. AI가 학습할 수 있는
+데이터가 남지 않기 때문이죠.
+product AI software
+factories. If you're
+familiar with the
+test driven
+development or TDD,
+this is the next
+evolution of that.
+With software
+factories, humans
+right aspect and a
+set of tests that
+define success. And
+then AI agents
+generate the
+implementation
+and code and iterate
+until the test pass.
+The human defines
+what to build and
+[09:00]
+judges the output.
+The actual code is
+the agent job. Some
+companies have
+already pushed this
+to the point where
+the repost contain
+no handwritten code,
+just specs and test
+hardnesses. Strong
+DMs AI team is an
+example of how to do
+this. Their end goal
+was a system that
+essentially
+eliminated the need
+for a human to write
+or review code. And
+so they build their
+own software factory
+where specs and
+scenario based
+validations drive
+agents to write test
+and iterate and code
+until it meets a
+probabilistic
+satisfaction
+thresold and it
+works. This is how
+you achieve thex
+engineer that Steve
+talked about by
+surrounding a single
+engineer with a
+system of agents
+that enable them to
+build things they
+would have never
+been able to build
+before. The era of
+10,000 X engineer is
+here.
+>> AI 소프트웨어 팩토리와 기존 회사의
+차이를 좀 더 쉽게 이야기해 보면요.
+[10:00]
+기존 방식은 건축가가 설계도를 그리고
+인부들이 직접 벽돌를 쌓아서 집을
+짓는 방식이라면 AI 소프트웨어
+팩토리에서는
+건축가가이 집은 침실 세 개, 화장실
+두 개 무너지지 않아야 하고 단열이
+잘 되어야 한다. 이런 요구 사항과
+어 합격 기준만 작성합니다. 그러면
+로봇 인부들이 알아서 집을 짓고 또
+테스트도 하고 통과할 때까지
+자기들끼리 고치고 짓는 걸 반복하죠.
+중간 피드백, 최종 검수 이런
+절차까지도 사라지겠죠. td라는 말은
+간단히 말씀을 드리면 코드를 짜기
+전에 합격 기준을 먼저 정하는
+방식인데요. 시험 문제를 먼저 만들어
+놓고 그 시험을 통과하는 답안을
+나중에 작성하는 것과 비슷합니다.
+단, td에서는 그 답안을 사람이
+쓰는데 AI 소프트웨어 팩토리는
+사람은 시어 문제, 즉 스펙과
+테스트까지만 만들고 답안을 쓰는 건
+AI 에이전트가 맞습니다. 요약하면
+소프트웨어 팩토리는 사람은 무엇을
+[11:00]
+만들지만 결정하고 AI는 어떻게
+만들지를 알아서 처리하는 분업입니다.
+심지어 사람이 다음에 무엇을 만들지
+결정할 때 도움이 될 만한 분석
+자료와 정보들까지 제공해 주겠죠.
+꿈만 같은 일처럼 들리지만 이미
+도입되고 있고 가능한 일입니다.
+In the new world,
+the intelligence
+layer serves that
+purpose. If your
+company is
+queryable, artifact
+rich and legible to
+an AI, you should
+have almost no human
+middleware. This
+matters because your
+company's velocities
+is only as fast as
+its information
+flow. Every layer of
+human routing you
+can remove is a
+[12:00]
+direct speed gain. A
+great example is
+what Jack Dory is
+doing over at block.
+After going deep on
+the tools, he's come
+to the same
+conclusion many
+half. This is about
+more than just
+incremental
+productivity gains.
+His view is that if
+you keep the same
+org chart and
+management
+structure, you miss
+the shift entirely.
+The company itself
+has to be rebuilt as
+an intelligence
+layer with humans at
+the edge guiding it
+rather than routing
+information through
+it. Going forward,
+Jack suggests every
+company will have
+three employee
+archetypes. The
+first is the
+individual
+contributor or IC.
+Basically the
+builder operator.
+This is someone who
+directly makes and
+runs things. In an
+AI native company
+this is not limited
+to engineers.
+Everyone builts,
+ops, support sales.
+Everyone comes to
+meetings with
+working prototypes,
+not pitch. Second is
+the DRI, the
+directly responsible
+individual. Focus on
+[13:00]
+strategy and
+customer outcomes.
+This is not a
+classic manager is
+the person with a
+clear responsibility
+for the result. One
+person, one outcome,
+no hiding. The third
+is the AI founder
+type. This person
+still builds, still
+coaches and leads by
+example. If you're
+the founder, this
+needs to be you at
+the forefront.
+showing your team
+what massive
+capability gains
+look like. Not
+delicating your AI
+strategy to someone
+else. With this
+structure, companies
+will be able to get
+outsized results
+with much smaller
+teams. Maximizing
+token usage not head
+count will be the
+critical shift. The
+best companies will
+be the ones that are
+maxing. 잭도시가 누구냐면요
+지금은 X죠. 트위터의 공동
+창업자이자 결제회사 블록의
+CEO인데요. 실리콘 밸리에서 가장
+영향력이 있는 창업자 중에 한
+명입니다. 블록은 미국의 카드 결제
+서비스, 송금앱 등을 운영하고
+있어요. 즉 도시는 2024년
+경부터이 블록의 조직 구조를 과감하게
+[14:00]
+뜯어친 것으로 화자가 됐습니다. 중간
+관리자가 너무 많다면서 매니저 직급을
+대거 주렸고 직접 만들고 실행하는
+사람들 중심으로 팀을 재편한 거죠.
+어, 다시 보니까이 세 가지 유형
+중에 하나에 속한다는 개념이라기보다
+복수의 유형을 한 사람이 겸할 수
+있는 속성의 개념인 것 같습니다.
+내가 100% 책임을 져야 하는 담당
+지표, 업무 이런게 있고요.이를 위해
+AI 도구를 능통하게 쓰면서 필요할
+땐 직접 제품이나 도구를 만드는
+사람, 포지션을 불문하고 최고의
+직원이 되겠죠. 이런 직원을 원한다면
+AI 운영 체제를 세팅하는 것은
+기본이고 정보를 전달하는 중간
+관리자를 없애거나 최소화하는 것도
+필수적으로 동반되어야 될 것 같아요.
+중간 관리자의 존재는 책임이 분산되는
+체계이자 작업자가 자기 미션을
+달성하기 위한 정보를 100% 얻기
+어려운 체계의 방증입니다. 참고로
+크랙 팀에서는 팀 내에서 필요한 여러
+가지 도구들을 AI로 그때그때 빠르게
+[15:00]
+만들어 주는 전단 포지션이 있다고
+합니다. 예전에는 개발자한테 어떤
+고객 데이터를 모아서 달라고 요청하면
+뭐 하루 이틀 뒤에 엑셀 파일로 주는
+방식이었죠. 대부분. 그런데 이제는
+개발자가 아니어도 궁금한 고객
+데이터를 마음껏 물어볼 수 있는
+간단한 프로그램을 하루 이틀 기다리지
+않아도 이용할 수 있다는 겁니다. 잭
+도시가 말한 세 가지 유형의 팀원들만
+남도록 체질 개선을 하는 것이 너무
+무리인 것 같다면 중간 단계로 시도해
+볼 만한 방법인 것 같습니다.
+Think of the tradeof
+this way. One person
+with AI tools can be
+the equivalent of
+what used to take a
+large engineering
+team at a pre
+company. That means
+grammatically
+engineering, design,
+HR and admin teams.
+And so you should be
+willing to run an
+uncomfortably high
+API bill because
+it's replacing what
+would have taken a
+far more expensive
+and inflated head
+count. But don't
+just take my word
+for any of this. You
+cannot outsource
+your conviction on
+[16:00]
+the power of these
+tools. You need to
+develop it yourself
+by actually sitting
+with coding agents
+and using them until
+you start to break
+your own priors
+about what is now
+possible to build.
+If you are an early
+stage founder, you
+have a huge
+advantage in getting
+ahead on this. You
+don't have legacy
+systems, interest or
+charts or thousands
+of people to
+retrain. You are
+small enough to
+build your company
+right from day one.
+The opposite is the
+case for existing
+companies. They have
+to maintain and grow
+a live product while
+unwinding years of
+standard operating
+procedures and core
+assumptions about
+how software gets
+built. Some
+companies can
+achieve this by
+spinning up small
+internal scunkw
+teams that can build
+AI native systems
+from scratch
+separate from the
+core business.
+Mutney is a great
+example of this but
+for most every
+change to their core
+processes risk
+breaking something
+that already works.
+So by their nature
+these large
+companies will have
+a much harder time
+going AI native.
+[17:00]
+Startups don't have
+that constraint and
+that's a major edge
+to take advantage
+of. You can design
+your system workfows
+and culture around
+AI from the start
+and as a result
+operate
+다이에나는 제로베이스에서 AI
+네이티브 운영 체제를 세팅할 수 있는
+스타트업에게 유리한 판이라는 것을
+강조하면서도 기존 회사에게도
+아이디어를 주고 있어요. 먼저 스크
+웍스란 말이 나왔는데요. 회사 본부의
+복잡한 절차와 보고 라인에서 떨어져
+나와서 소수의 정애 멤버가 자유롭게
+새로운 것을 실험하는 작은 팀을
+의미합니다. 별동대라는 개념과 비슷할
+것 같은데요. 기존 회사가 AI
+리이티브 운영 체제를 도입하고 싶다면
+핵심 비즈니스와 아무런 관계가 없는
+작은 AI 네이티브 팀이 스краਅ크
+웍스 팀을 만들어서 그 팀이 완전히
+새로운 방식으로 일하면서 실험해 보는
+겁니다. 영상에 언급된 뮤티니는
+Y콤비네이터 출신 스타트업으로
+영업팀, 마케팅 팀이 필요한 고객
+[18:00]
+대면 자료를 AI로 만들어 주는
+서비스인데요. 2018년에 설립되어서
+AI 네이티브 조직은 아니었어요.이
+레거시 팀이 AI 네이티 운영 체제와
+조직으로 아주 잘 변모한 듯합니다.이
+영상의 핵심을 간단하게 요약하면요.
+가장 중요한 메시지는 이겁니다.
+여러분은 AI가 일을 더 빨리 하게
+해 주는 도구가 아니라 팀의 체질를
+바꾸는 새로운 운영 방식으로
+이해하셔야 합니다. 뭐 지금까지 업무
+보조 도구로 생각하면서 직원들에게 뭐
+보조금, 지원금 정도만 주고 있다면
+생각을 크게 바꾸시는게 좋겠습니다.
+세 가지 핵심 개념이 나왔는데요. 첫
+번째는 폐쇄 루프 회사. 스스로
+학습하는 회사 시스템이죠. 모든 의사
+결정과 그 결과를 AI가 추적하고
+분석할 수 있게 만들어야 하고요. 두
+번째는 AI 소프트웨어 팩토리죠.
+사람은 무엇을 만들지 스펙만 정하고
+AI가 어떻게 만들지를 담당하는
+구조죠. 이게 잘 작동하면 엔지니어
+한 명이 과거 천명이 하던 일을 할
+수 있게 됩니다. 세 번째는 새로운
+[19:00]
+조직 구조예요. 중간 관리자가 없는
+평평한 조직이 필요합니다. 정보를
+위아래로 전달하는 중간 관리자는 더
+이상 필요가 없습니다. 모든 직원이
+직접 만들고 명확한 책임을지면서
+창업자는 AI 활용에 선두에서야
+합니다. 우리에게 가장 힘이 되는
+대목은 마지막에 나온 것 같은데요.
+지금이 스타트업이 강좌를 앞지를 수
+있는 저로의 기회입니다. 기존
+시스템, 업조, 직원수, 소수
+정애입니다. 의사 결정 속도는
+기본적으로 빠르고요. AI 네이티브
+전환은 처음부터 [음악] 기초부터
+가능합니다. 작고 빠른 AI 네이티브
+스타트업은 기존 기업을 압도할
+[음악] 수 있는 역사적인 기회를
+거어줄 수 습니다.
+[음악]

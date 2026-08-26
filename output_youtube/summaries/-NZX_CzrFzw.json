@@ -1,0 +1,18 @@
+{
+    "video_id": "-NZX_CzrFzw",
+    "model": "gemini-3.7-flash-medium",
+    "prompt_version": "v2",
+    "prompt_sha1": "1a2446b042d7b917482477d5da5cda70874b56c5",
+    "generated_at": "2026-08-26 11:58:57",
+    "summary": "[요약] AI 도구와 디자인 스킬을 비교하며 AI에게 디자인 감각을 주입하는 방법과 안목의 중요성을 다룬다.\n\n- Impeccable 스킬을 활용해 기획부터 제작, 디자인 비평, 접근성 검사, 다듬기까지 체계적인 워크플로를 시연했다.\n- Claude Code, Claude Design, Kimi Code, Google Stitch로 동일한 웹사이트를 제작해 결과물과 속도를 비교했다.\n- Open Design은 플러그인 연동의 불안정성과 유료 결제 모델 요구 등 실무 적용 시의 한계를 지적했다.\n- AI 모델 발전과 무관하게 사용자가 좋은 레퍼런스를 식별하고 방향을 제시하는 디자인 안목이 핵심임을 강조했다.\n\n[상세]\nImpeccable 스킬을 활용한 단계별 디자인 프로세스\nImpeccable 오픈소스 스킬을 설치하여 초기 맥락 설정인 init부터 계획을 수립하는 shape 단계까지 순차적으로 진행했습니다. 이후 craft 명령어로 실제 코드를 구현하고, critique와 audit 명령어를 통해 디자인 결함과 접근성 및 기술적 문제를 점검했습니다. 마지막으로 polish 명령어로 발견된 문제를 보완하며 AI 특유의 전형적인 느낌을 덜어내는 개선 과정을 확인했습니다.\n\nAI 도구별 웹사이트 구현 및 배포 기능 비교\n동일한 다낭 3박 4일 여행 가이드 주제로 Claude Code, Claude Design, Kimi Code, Google Stitch의 디자인 결과물을 비교했습니다. Claude Code는 빠른 제작 속도와 함께 자체 웹 호스팅 및 링크 공유 기능을 통한 배포 편의성을 보여주었습니다. 반면 Kimi Code는 세부 요소 표현은 양호했으나 30분 이상 소요되었고, Google Stitch는 이미지 구성 면에서 시각적 완성도가 높게 나타났습니다.\n\nOpen Design의 한계와 사용자 디자인 안목의 중요성\nOpen Design 플러그인은 Codex 연동 오류와 데스크톱 앱 설치 후 유료 구독 요구 등으로 인해 실무 활용에 제약이 있었습니다. 외부 도구 의존보다 Dribbble, Pinterest, Canva 등에서 검증된 레퍼런스를 확보해 프롬프트로 전달하는 방식이 효과적 대안으로 제시되었습니다. AI 기술이 발전하더라도 좋은 디자인을 판별하고 적합한 디자인 시스템을 주입하는 사용자의 시각이 최종 품질을 결정합니다.",
+    "transcript_sha1": "97ff1479d6edeeca806081216cda786d40b63301",
+    "usage": {
+        "input_tokens": 43958,
+        "output_tokens": 1582,
+        "thinking_tokens": 1062,
+        "cache_read_tokens": 0,
+        "total_tokens": 45540
+    },
+    "duration_seconds": 7.0428338,
+    "agy_conversation_id": "e2dcbec4-26d9-49df-a7e4-4cbd06c55140"
+}
