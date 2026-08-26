@@ -10,6 +10,7 @@ import io
 from datetime import datetime
 from dotenv import load_dotenv
 from playwright.sync_api import sync_playwright
+from urllib.parse import urlparse, parse_qs, urlencode, quote
 try:
     from bs4 import BeautifulSoup
 except ImportError:
@@ -37,6 +38,21 @@ OUTPUT_FILE_PATTERN = "twitter_py_simple_{date}.json"
 
 # ✨ 테스트용 제한 개수 (0: 무제한)
 TARGET_LIMIT = 0 
+
+# 커서 페이지네이션 설정
+# /i/bookmarks 가 /i/history 로 리다이렉트된 뒤로 스크롤은 북마크 목록을 굴리지 못한다.
+# 페이지가 보낸 Bookmarks 요청을 잡아 cursor 만 바꿔 재발행하는 방식으로 대체한다.
+MAX_BOOKMARK_PAGES = 120      # 무한 루프 최종 방어 (1페이지 20건 기준 2,400건)
+BOOKMARK_PAGE_DELAY = 1.5     # 커서 재발행 간 지연(초)
+RATE_LIMIT_FLOOR = 20         # 잔여 호출이 이 아래면 진행분을 보존하고 중단
+REPLAY_HEADER_KEYS = {
+    'authorization',
+    'x-csrf-token',
+    'content-type',
+    'x-twitter-active-user',
+    'x-twitter-auth-type',
+    'x-twitter-client-language',
+}
 
 # 로컬 clean_text 제거 (utils.common 사용)
 
@@ -138,6 +154,20 @@ def get_user_info(tweet_results):
             display_name = u_legacy.get('name')
             
     return username, display_name
+
+def extract_bottom_cursor(json_data):
+    """Bookmarks 응답에서 다음 페이지 커서(Bottom)를 꺼낸다. 없으면 None."""
+    try:
+        timeline = json_data.get('data', {}).get('bookmark_timeline_v2', {}).get('timeline', {})
+        for inst in timeline.get('instructions', []):
+            for entry in inst.get('entries', []) or []:
+                content = entry.get('content', {}) or {}
+                if content.get('cursorType') == 'Bottom':
+                    return content.get('value')
+    except Exception:
+        pass
+    return None
+
 
 def extract_from_json(json_data):
     posts = []
@@ -325,53 +355,90 @@ def main(args):
         bookmark_response_seen = False
         parsed_bookmark_count = 0
 
-        def handle_response(response):
-            nonlocal new_count, bookmark_response_seen, parsed_bookmark_count
-            if "Bookmarks?variables=" in response.url:
-                bookmark_response_seen = True
-            if "Bookmarks?variables=" in response.url and response.status == 200:
-                try:
-                    new_posts = extract_from_json(response.json())
-                    parsed_bookmark_count += len(new_posts)
-                    for post in new_posts:
-                        pid = post['platform_id']
-                        # 💡 [개선] 기존 수집 상태 및 메타데이터 보존
-                        existing = all_posts_map.get(pid)
-                        was_collected = existing.get('is_detail_collected', False) if existing else False
-                        
-                        has_new_metrics = existing is not None and existing.get('like_count') is None and post.get('like_count') is not None
-                        if pid not in all_posts_map or len(post['full_text']) > len(all_posts_map[pid].get('full_text', '')) or has_new_metrics:
-                            if pid not in all_posts_map: 
-                                new_count += 1
-                                post['crawled_at'] = datetime.now().isoformat(timespec='milliseconds')
-                            else:
-                                # 기존 메타데이터 보존
-                                post['crawled_at'] = existing.get('crawled_at')
-                                post['sequence_id'] = existing.get('sequence_id')
-                                
-                            all_posts_map[pid] = post
-                            all_posts_map[pid]['is_detail_collected'] = was_collected
-                            
-                            if not was_collected:
-                                msg = clean_text(post['full_text'])[:30]
-                                print(f"   + [Net] @{post['username']} | {msg}... ({len(all_posts_map)}개)", flush=True)
-                except Exception: pass
+        seen_this_run = set()
+        last_bottom_cursor = {"value": None}
+        captured_request = {}
 
-        def wait_for_bookmark_signal(page) -> None:
+        def ingest_bookmark_payload(payload):
+            """Bookmarks 응답 본문 1건을 수집 맵에 반영하고 파싱된 platform_id 목록을 돌려준다."""
+            nonlocal new_count, parsed_bookmark_count
+            cursor = extract_bottom_cursor(payload)
+            if cursor:
+                last_bottom_cursor["value"] = cursor
             try:
-                response = page.wait_for_response(
+                new_posts = extract_from_json(payload)
+            except Exception:
+                return []
+
+            parsed_bookmark_count += len(new_posts)
+            page_ids = []
+            for post in new_posts:
+                pid = post['platform_id']
+                page_ids.append(pid)
+                seen_this_run.add(pid)
+                # 💡 [개선] 기존 수집 상태 및 메타데이터 보존
+                existing = all_posts_map.get(pid)
+                was_collected = existing.get('is_detail_collected', False) if existing else False
+
+                has_new_metrics = existing is not None and existing.get('like_count') is None and post.get('like_count') is not None
+                if pid not in all_posts_map or len(post['full_text']) > len(all_posts_map[pid].get('full_text', '')) or has_new_metrics:
+                    if pid not in all_posts_map:
+                        new_count += 1
+                        post['crawled_at'] = datetime.now().isoformat(timespec='milliseconds')
+                    else:
+                        # 기존 메타데이터 보존
+                        post['crawled_at'] = existing.get('crawled_at')
+                        post['sequence_id'] = existing.get('sequence_id')
+
+                    all_posts_map[pid] = post
+                    all_posts_map[pid]['is_detail_collected'] = was_collected
+
+                    if not was_collected:
+                        msg = clean_text(post['full_text'])[:30]
+                        print(f"   + [Net] @{post['username']} | {msg}... ({len(all_posts_map)}개)", flush=True)
+            return page_ids
+
+        def handle_response(response):
+            nonlocal bookmark_response_seen
+            if "Bookmarks?variables=" not in response.url:
+                return
+            bookmark_response_seen = True
+            if response.status != 200:
+                return
+            try:
+                payload = response.json()
+            except Exception:
+                return
+            ingest_bookmark_payload(payload)
+
+        def handle_request(request):
+            """첫 Bookmarks 요청의 URL·헤더를 잡아둔다. 커서 재발행에 그대로 쓴다."""
+            if "Bookmarks?variables=" in request.url and "url" not in captured_request:
+                captured_request["url"] = request.url
+                captured_request["headers"] = dict(request.headers)
+
+        def goto_bookmarks_and_wait(page) -> None:
+            """북마크 페이지로 이동하며 첫 Bookmarks 응답을 결정적으로 기다린다.
+
+            expect_response 는 컨텍스트매니저라 응답을 유발하는 goto 자체를 감싸야 한다.
+            goto 가 끝난 뒤 대기를 시작하면 응답이 이미 도착해 매번 타임아웃으로 떨어진다
+            (동기 API 에는 wait_for_response 가 없어 기존 코드는 항상 5초 blind wait 였다).
+            """
+            try:
+                with page.expect_response(
                     lambda item: "Bookmarks?variables=" in item.url,
                     timeout=10000,
-                )
-                handle_response(response)
+                ) as response_info:
+                    page.goto("https://x.com/i/bookmarks", wait_until="domcontentloaded")
+                handle_response(response_info.value)
             except Exception:
                 page.wait_for_timeout(5000)
 
+        page.on("request", handle_request)
         page.on("response", handle_response)
-        
+
         print("\n🔍 [1단계] 북마크 페이지 접속 중...", flush=True)
-        page.goto("https://x.com/i/bookmarks", wait_until="domcontentloaded")
-        wait_for_bookmark_signal(page)
+        goto_bookmarks_and_wait(page)
 
         has_tweet_article = page.query_selector('article[data-testid="tweet"]') is not None
         _is_ready, auth_reason = classify_x_auth_state(
@@ -397,68 +464,122 @@ def main(args):
                 flush=True,
             )
 
-        print("\n📜 [2단계] 스크롤 및 실시간 수집 시작", flush=True)
-        scroll_count = 0
-        consecutive_no_new = 0
-        
-        while True:
-            before_count = len(all_posts_map)
-            
-            # 1. DOM 스캔
-            html_posts = extract_from_html(page.content(), "initial_dom" if scroll_count == 0 else "network")
-            found_stop = False
+        print("")
+        print("[2단계] 커서 페이지네이션 수집 시작", flush=True)
+        api_pages = 0
+        stop_reason = "not_started"
+        cursor = last_bottom_cursor.get("value")
 
-            for post in html_posts:
+        if not captured_request.get("url"):
+            stop_reason = "request_not_captured"
+            print("   Bookmarks 요청을 캡처하지 못했습니다. 페이지네이션을 건너뜁니다.", flush=True)
+        elif not cursor:
+            stop_reason = "cursor_absent"
+            print("   첫 응답에 다음 페이지 커서가 없습니다. 1페이지로 종료합니다.", flush=True)
+        else:
+            parsed_request = urlparse(captured_request["url"])
+            query_params = parse_qs(parsed_request.query)
+            base_url = f"{parsed_request.scheme}://{parsed_request.netloc}{parsed_request.path}"
+            replay_headers = {
+                key: value
+                for key, value in captured_request["headers"].items()
+                if key.lower() in REPLAY_HEADER_KEYS
+            }
+
+            for page_no in range(1, MAX_BOOKMARK_PAGES + 1):
+                variables = json.loads(query_params["variables"][0])
+                variables["cursor"] = cursor
+                replay_query = {"variables": json.dumps(variables, separators=(",", ":"))}
+                for key in ("features", "fieldToggles"):
+                    if key in query_params:
+                        replay_query[key] = query_params[key][0]
+                request_url = base_url + "?" + urlencode(replay_query, quote_via=quote)
+
+                time.sleep(BOOKMARK_PAGE_DELAY)
+                try:
+                    result = page.evaluate(
+                        """async ([url, headers]) => {
+                            const res = await fetch(url, { headers, credentials: 'include' });
+                            return {
+                                status: res.status,
+                                rateRemaining: res.headers.get('x-rate-limit-remaining'),
+                                body: await res.text(),
+                            };
+                        }""",
+                        [request_url, replay_headers],
+                    )
+                except Exception as error:
+                    stop_reason = "fetch_failed"
+                    print(f"   요청 실패로 중단합니다: {error}", flush=True)
+                    break
+
+                if result.get("status") != 200:
+                    stop_reason = f"http_{result.get('status')}"
+                    print(f"   HTTP {result.get('status')} 응답으로 중단합니다. 진행분은 보존됩니다.", flush=True)
+                    break
+
+                try:
+                    payload = json.loads(result.get("body") or "")
+                except Exception:
+                    stop_reason = "invalid_json"
+                    print("   응답 본문을 해석하지 못해 중단합니다. 진행분은 보존됩니다.", flush=True)
+                    break
+
+                before_seen = len(seen_this_run)
+                page_ids = ingest_bookmark_payload(payload)
+                fresh_in_run = len(seen_this_run) - before_seen
+                api_pages += 1
+                rate_remaining = result.get("rateRemaining")
+                print(
+                    f"   {page_no}페이지: {len(page_ids)}건 수신 (누계 {len(seen_this_run)}건, 잔여호출 {rate_remaining})",
+                    flush=True,
+                )
+
+                next_cursor = last_bottom_cursor.get("value")
+                if not page_ids:
+                    stop_reason = "empty_entries"
+                    break
+                if fresh_in_run == 0:
+                    stop_reason = "no_fresh_in_run"
+                    break
+                if not next_cursor:
+                    stop_reason = "cursor_absent"
+                    break
+                if next_cursor == cursor:
+                    stop_reason = "cursor_repeat"
+                    break
+                if TARGET_LIMIT > 0 and len(all_posts_map) >= TARGET_LIMIT:
+                    stop_reason = "target_limit"
+                    break
+                if rate_remaining is not None and str(rate_remaining).isdigit() and int(rate_remaining) < RATE_LIMIT_FLOOR:
+                    stop_reason = "rate_limit_floor"
+                    print(f"   잔여 호출 {rate_remaining}회로 중단합니다. 진행분은 보존됩니다.", flush=True)
+                    break
+
+                cursor = next_cursor
+            else:
+                stop_reason = "max_pages"
+
+        # API 경로가 한 장도 못 가져온 경우에만 DOM 을 보조로 쓴다.
+        # 리다이렉트된 /i/history 화면의 article 은 북마크가 아닐 수 있어 상시 사용하지 않는다.
+        if api_pages == 0:
+            print("   API 수집분이 없어 DOM 스캔으로 보조 수집합니다.", flush=True)
+            for post in extract_from_html(page.content(), "initial_dom"):
                 pid = post['platform_id']
                 if args.mode == 'update' and pid in stop_ids:
-                    found_stop = True
                     break
-                
-                # 💡 [개선] 기존 메타데이터 확인
-                existing = all_posts_map.get(pid)
-                was_collected = existing.get('is_detail_collected', False) if existing else False
-                
                 if pid not in all_posts_map:
                     post['crawled_at'] = datetime.now().isoformat(timespec='milliseconds')
+                    post['is_detail_collected'] = False
                     all_posts_map[pid] = post
-                    all_posts_map[pid]['is_detail_collected'] = was_collected
                     new_count += 1
-                    msg = clean_text(post['full_text'])[:30]
-                    print(f"   + [DOM] @{post['username']} | {msg}... ({len(all_posts_map)}개)", flush=True)
-                elif not was_collected and len(post['full_text']) > len(all_posts_map[pid].get('full_text', '')):
-                    # 업데이트 시 기존 메타데이터 유지하며 내용만 갱신
-                    c_at = existing.get('crawled_at')
-                    s_id = existing.get('sequence_id')
-                    all_posts_map[pid].update(post)
-                    all_posts_map[pid]['crawled_at'] = c_at
-                    all_posts_map[pid]['sequence_id'] = s_id
-            
-            if found_stop:
-                print(f"\n✋ 기존 수집 지점({pid}) 도달. 수집을 종료합니다.", flush=True)
-                break
-            
-            # 2. 신규 데이터 발견 여부 판단 (Network + DOM 통합)
-            after_count = len(all_posts_map)
-            if after_count > before_count:
-                print(f"   ✅ 신규 데이터 {after_count - before_count}개 추가됨! (누계: {after_count}개)", flush=True)
-                consecutive_no_new = 0
-            else:
-                consecutive_no_new += 1
-                print(f"   zzz... 대기 중 ({consecutive_no_new}/5)", flush=True)
 
-            if consecutive_no_new >= 5: 
-                print("\n🏁 더 이상 새로운 게시물이 없습니다.", flush=True)
-                break
-                
-            if TARGET_LIMIT > 0 and len(all_posts_map) >= TARGET_LIMIT: 
-                print(f"\n🎯 목표 개수({TARGET_LIMIT})에 도달했습니다.", flush=True)
-                break
+        print("")
+        print(
+            f"수집 종료 (사유: {stop_reason}, API {api_pages}페이지, 누계 {len(all_posts_map)}건)",
+            flush=True,
+        )
 
-            # 3. 스크롤 수행
-            page.mouse.wheel(0, 3000) # 스크롤 양 약간 증가
-            scroll_count += 1
-            time.sleep(3.0) # 네트워크 응답 대기를 위해 시간 약간 증가
-            print(f"⬇️ 스크롤 {scroll_count}회차 진행 중...", end="\r", flush=True)
 
         # 결과 저장
         # 💡 [개선] 신규 게시물에 sequence_id 부여

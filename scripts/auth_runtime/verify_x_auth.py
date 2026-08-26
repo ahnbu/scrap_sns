@@ -103,13 +103,15 @@ def probe_producer() -> tuple[bool, str]:
                 state["parsed_bookmark_count"] += 1
 
             page.on("response", handle_response)
-            page.goto("https://x.com/i/bookmarks", wait_until="domcontentloaded")
+            # expect_response 는 컨텍스트매니저라 응답을 유발하는 goto 를 감싸야 한다.
+            # 동기 API 에 wait_for_response 가 없어 기존 코드는 항상 5초 blind wait 로 떨어졌다.
             try:
-                response = page.wait_for_response(
+                with page.expect_response(
                     lambda item: "Bookmarks?variables=" in item.url,
                     timeout=10000,
-                )
-                handle_response(response)
+                ) as response_info:
+                    page.goto("https://x.com/i/bookmarks", wait_until="domcontentloaded")
+                handle_response(response_info.value)
             except Exception:
                 page.wait_for_timeout(5000)
             article_count = page.locator('article[data-testid="tweet"]').count()
