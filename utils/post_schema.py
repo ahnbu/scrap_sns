@@ -28,6 +28,11 @@ STANDARD_FIELD_ORDER = [
     "local_images",
     "is_detail_collected",
     "is_merged_thread",
+    # 내가 쓴 글인지. 저장글(남의 글)과 성격이 달라 뷰어 MY 필터와 갱신 정책이 갈린다.
+    # source 로 대신하지 않는다 - source 는 수집 경로 값(opencli_shadow 등 8종)이라
+    # 의미가 꼬인다. username 매칭도 LinkedIn 저장글이 불투명 ID(ACoAA...)라 취약하다.
+    # 계획: _docs/20260826_03 (3.5)
+    "is_own_post",
 ]
 
 REQUIRED_FIELDS = ["sns_platform", "username", "url", "created_at"]
@@ -93,6 +98,7 @@ def normalize_post(post: dict) -> dict:
         # 지표를 마지막으로 읽은 시각(ISO 8601). crawled_at 은 본문 수집 시각이라
         # 대체할 수 없다 - 본문은 한 번 받으면 끝이지만 지표는 반복해서 읽는다.
         "metrics_updated_at": None,
+        "is_own_post": False,
     }
     for field in STANDARD_FIELD_ORDER:
         if field in defaults and field not in out:

@@ -33,6 +33,10 @@ META_FIELDS = [
     # 이 목록에 없으면 /api/posts 가 값을 떨어뜨려 뷰어가 볼 수 없다.
     # 계획: _docs/20260826_02 (W3)
     "metrics_updated_at",
+    # 뷰어 MY 필터가 이 값으로 내 글을 가려낸다. 이 목록에 없으면 /api/posts 가
+    # 필드를 떨어뜨려 프런트에서 항상 undefined 가 되고 필터가 조용히 무동작한다.
+    # 계획: _docs/20260826_03 (3.9 T9)
+    "is_own_post",
 ]
 
 

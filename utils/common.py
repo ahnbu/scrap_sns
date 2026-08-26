@@ -81,12 +81,18 @@ def clean_text(text, platform=None, **kwargs):
     return '\n'.join(cleaned_lines).strip()
 
 def reorder_post(post):
-    # 표준 필드 순서 (최신 요구사항 반영)
+    # 표준 필드 순서. 정본은 utils/post_schema.py:STANDARD_FIELD_ORDER 이고
+    # 이 사본은 그것과 값이 일치해야 한다 - 어긋나면 reorder_post() 를 타는 글과
+    # normalize_post() 를 타는 글의 필드 순서가 갈린다.
+    # (중복 자체 제거는 BL-0825-01 과 함께 판단한다. 계획: _docs/20260826_03 3.5)
     STANDARD_FIELD_ORDER = [
         'sequence_id', 'platform_id', 'sns_platform', 'code', 'urn',
-        'username', 'display_name', 'full_text', 'media', 'url', 
-        'created_at', 'date', 'crawled_at', 'source', 'local_images', 
-        'is_detail_collected', 'is_merged_thread'
+        'username', 'display_name', 'full_text', 'media', 'url',
+        'created_at', 'date', 'crawled_at',
+        'like_count', 'comment_count', 'share_count', 'quote_count',
+        'bookmark_count', 'view_count', 'metrics_updated_at',
+        'source', 'local_images',
+        'is_detail_collected', 'is_merged_thread', 'is_own_post'
     ]
     ordered_post = {}
     for field in STANDARD_FIELD_ORDER:

@@ -83,6 +83,21 @@ function buildScrapProgressConsoleMessage(event) {
     return elapsed ? `[SNS Scrap] ${elapsed} | ${message}` : `[SNS Scrap] ${message}`;
 }
 
+const OWN_POSTS_ONLY_STORAGE_KEY = 'sns_own_posts_only';
+
+function getInitialOwnPostsOnly() {
+    try {
+        return localStorage.getItem(OWN_POSTS_ONLY_STORAGE_KEY) === 'true';
+    } catch (error) {
+        // 프라이빗 창 등에서 접근이 막힐 수 있다. 기본값(꺼짐)으로 계속 간다.
+        return false;
+    }
+}
+
+function isOwnPost(post) {
+    return post?.is_own_post === true;
+}
+
 const SORT_STORAGE_KEY = 'sns_sort_order';
 const SORT_DATE_MIGRATION_KEY = 'sns_sort_order_date_migrated';
 const DEFAULT_SORT_ORDER = 'saved';
@@ -148,6 +163,10 @@ document.addEventListener('DOMContentLoaded', () => {
     let allPosts = [];
     let searchResults = null;
     let currentFilter = 'all';
+    // 내 게시물만 보기. 정렬과 같이 localStorage 에 남긴다 - 저장하지 않으면
+    // 새로고침마다 꺼져 상시 작업 흐름에 자리 잡지 못한다(`지표 보유만` 이 그렇게 폐기됐다).
+    // 계획: _docs/20260826_03 (3.8 T5)
+    let showOwnPostsOnly = getInitialOwnPostsOnly();
     let searchQuery = '';
     const selectedPosts = new Set();
     let _searchTimer = null;
@@ -272,6 +291,32 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         renderPosts();
     });
+
+    // MY 필터 - 내가 쓴 글만 보기. 계획: _docs/20260826_03 (3.8 T5)
+    const myPostsBtn = document.getElementById('myPostsBtn');
+    if (myPostsBtn) {
+        const applyMyPostsButtonState = () => {
+            myPostsBtn.setAttribute('aria-pressed', showOwnPostsOnly ? 'true' : 'false');
+            myPostsBtn.classList.toggle('active', showOwnPostsOnly);
+        };
+        applyMyPostsButtonState();
+
+        myPostsBtn.addEventListener('click', () => {
+            showOwnPostsOnly = !showOwnPostsOnly;
+            try {
+                localStorage.setItem(OWN_POSTS_ONLY_STORAGE_KEY, showOwnPostsOnly ? 'true' : 'false');
+            } catch (error) {
+                // 저장 실패는 이번 세션 동작을 막지 않는다.
+            }
+            applyMyPostsButtonState();
+            clearSelection();
+            if (searchQuery) {
+                void runServerSearch(searchQuery);
+                return;
+            }
+            renderPosts();
+        });
+    }
 
     // Sort Dropdown Toggle
     const sortBtn = document.getElementById('sortBtn');
@@ -2076,7 +2121,9 @@ ${item.body}
             const matchesAuthor = !currentAuthor
                 || (normalizePostKeyPlatform(post.sns_platform) === currentAuthor.platform
                     && String(post.username || post.user || '') === currentAuthor.username);
-            return matchesFilter && matchesTag && matchesVisibility && matchesAuthor;
+            // 플랫폼 칩과 AND 로 결합한다 - "LinkedIn 중 내 글"이 성립해야 한다.
+            const matchesOwn = !showOwnPostsOnly || isOwnPost(post);
+            return matchesFilter && matchesTag && matchesVisibility && matchesAuthor && matchesOwn;
         });
     }
 

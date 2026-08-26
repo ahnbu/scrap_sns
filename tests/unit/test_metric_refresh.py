@@ -39,8 +39,15 @@ def _classify(post, platform="threads", **kwargs):
 
 
 class TestPolicies:
-    def test_three_platforms_are_defined(self):
-        assert set(metric_refresh.PLATFORM_POLICIES) == {"linkedin", "threads", "youtube"}
+    def test_defined_policies(self):
+        # linkedin_own 은 내 게시물 전용 정책이다. 저장글과 신선도·상한이 달라
+        # 같은 linkedin 키를 나눠 쓸 수 없다(계획 _docs/20260826_03 3.7).
+        assert set(metric_refresh.PLATFORM_POLICIES) == {
+            "linkedin",
+            "threads",
+            "youtube",
+            "linkedin_own",
+        }
 
     def test_threads_is_shorter_than_linkedin(self):
         """관측이 0건이라 짧게 잡아 먼저 쌓는다 - 계획서 W5 근거."""

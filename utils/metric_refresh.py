@@ -35,6 +35,12 @@ PLATFORM_POLICIES = {
     # YouTube 는 videos.list 가 50건 배치라 전량 갱신해도 API 호출이 몇 번뿐이다.
     # 상한을 두지 않는다(run_limit=None).
     "youtube": {"fresh_post_days": 30, "refresh_after_days": 7, "run_limit": None},
+    # 내 게시물. 저장글과 달리 성과 추적 대상이라 "수렴했으니 그만 읽는다"가 성립하지 않는다.
+    # fresh_post_days=None 은 신선도 검사 자체를 건너뛴다(작성 30일이 지나도 계속 갱신).
+    # run_limit 은 저장글 예산(120건)과 공유하지 않는 전용 슬롯이다 - 공유하면 내 글이
+    # 항상 후보에 올라 앞자리를 잠식해 저장글 갱신이 굶는다.
+    # 계획: _docs/20260826_03 (3.7)
+    "linkedin_own": {"fresh_post_days": None, "refresh_after_days": 7, "run_limit": 20},
 }
 
 _DT_FORMATS = (
@@ -112,9 +118,14 @@ def classify_target(
     # 여기부터는 지표를 이미 가진 글이다. 반응이 수렴했으면 다시 읽지 않는다.
     # 작성일을 알 수 없는 글도 갱신 대상에서 뺀다 - 신선도를 판단할 근거가 없고,
     # 지표는 이미 갖고 있으므로 매 실행마다 다시 읽는 쪽이 더 나쁘다.
-    age_days = days_since(post.get("created_at"), now)
-    if age_days is None or age_days > fresh_post_days:
-        return None, "settled"
+    #
+    # fresh_post_days 가 None 이면 이 검사를 통째로 건너뛴다. 내 게시물처럼
+    # 오래돼도 계속 추적해야 하는 대상이 여기 해당한다(계획 _docs/20260826_03 3.7).
+    # 이때는 작성일을 몰라도 탈락시키지 않는다 - 신선도를 안 보기 때문이다.
+    if fresh_post_days is not None:
+        age_days = days_since(post.get("created_at"), now)
+        if age_days is None or age_days > fresh_post_days:
+            return None, "settled"
 
     stale_days = days_since(post.get("metrics_updated_at"), now)
 
@@ -141,7 +152,7 @@ def select_targets(
     failure_counts=None,
     max_failures=DEFAULT_MAX_FAILURES,
     has_metric=None,
-    platform_field="sns_platform",
+    platform_field: str | None = "sns_platform",
 ):
     """갱신할 게시글을 우선순위 순으로 고른다.
 

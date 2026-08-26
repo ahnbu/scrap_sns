@@ -316,6 +316,10 @@ function postToResult(post, tags, extras = {}) {
     date: post.date || extractDateValue(post),
     text_excerpt: createExcerpt(post.full_text, 140),
     media_count: Array.isArray(post.media) ? post.media.length : 0,
+    // 내가 쓴 글인지. 이 화이트리스트에 없으면 조회 결과에서 사라져
+    // 저장글과 내 글을 같은 질의로 대조할 수 없다.
+    // 계획: _docs/20260826_03 (3.9 T7)
+    is_own_post: post.is_own_post === true,
     tags,
     ...restExtras,
   }, note);
@@ -336,6 +340,7 @@ function postToExportResult(post, tags, extras = {}) {
     full_text: post.full_text || '',
     media: Array.isArray(post.media) ? post.media : [],
     local_images: Array.isArray(post.local_images) ? post.local_images : [],
+    is_own_post: post.is_own_post === true,
     tags,
     ...restExtras,
   }, note);

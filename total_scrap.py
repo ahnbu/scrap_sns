@@ -28,6 +28,9 @@ OUTPUT_THREADS_DIR = os.path.join(PROJECT_ROOT, "output_threads", "python")
 OUTPUT_LINKEDIN_DIR = os.path.join(PROJECT_ROOT, "output_linkedin", "python")
 OUTPUT_TWITTER_DIR = os.path.join(PROJECT_ROOT, "output_twitter", "python")
 OUTPUT_YOUTUBE_DIR = os.path.join(PROJECT_ROOT, "output_youtube", "python")
+# 내 게시물 전용 출력. 저장글(output_linkedin)과 분리해 consumer 웨이브의
+# 쓰기 경합을 막는다. 계획: _docs/20260826_03 (3.4.1)
+OUTPUT_LINKEDIN_OWN_DIR = os.path.join(PROJECT_ROOT, "output_linkedin_own", "python")
 OUTPUT_TOTAL_DIR = os.path.join(PROJECT_ROOT, "output_total")
 WEB_IMAGE_DIR = os.path.join(PROJECT_ROOT, "web_viewer", "images")
 WEB_IMAGE_PREFIX = "web_viewer/images"
@@ -41,6 +44,9 @@ PLATFORM_KEYS = {
     "LinkedIn": "linkedin",
     "X/Twitter": "x",
     "YouTube": "youtube",
+    # 내 게시물은 LinkedIn 글이지만 수집 경로가 달라 실행 결과를 따로 보고한다.
+    # 계획: _docs/20260826_03 (3.4)
+    "MyPosts": "my_posts",
 }
 SIGNAL_HANDLER_CALLED = False
 
@@ -387,6 +393,13 @@ def run_scrapers_in_parallel(mode='update'):
                 # 이 consumer 만 로그인하지 않고 공개 페이지에서 지표를 읽는다.
                 # 계획: _docs/20260825_01_LinkedIn-참여지표-비로그인-수집전환-계획.md
                 "LinkedIn": "python -u linkedin_metric_single.py",
+                # 내 게시물 노출수는 로그인 recent-activity 에서만 나온다.
+                # producer 가 아니라 여기 있는 이유는 producer 의 linkedin_scrap.py 도
+                # 로그인 세션을 쓰기 때문이다 - 같은 계정 세션 2개가 동시에 붙는 것을 피한다.
+                # 같은 웨이브의 LinkedIn consumer 는 비로그인이라 충돌하지 않고,
+                # 출력 파일도 서로 달라 쓰기 경합이 없다.
+                # 계획: _docs/20260826_03 (3.4, 3.4.1)
+                "MyPosts": "python -u my_posts_scrap.py",
             },
         ),
     ]
@@ -502,8 +515,11 @@ def merge_results():
     latest_linkedin = find_latest_full_file(OUTPUT_LINKEDIN_DIR, "linkedin_py_full_*.json")
     latest_twitter = find_latest_full_file(OUTPUT_TWITTER_DIR, "twitter_py_full_*.json")
     latest_youtube = find_latest_full_file(OUTPUT_YOUTUBE_DIR, "youtube_py_full_*.json")
+    # 내 게시물은 저장글과 별도 파일에 산다(계획 _docs/20260826_03 3.4.1).
+    # 여기서 읽지 않으면 통합본에서 영구 누락된다.
+    latest_own = find_latest_full_file(OUTPUT_LINKEDIN_OWN_DIR, "linkedin_own_full_*.json")
 
-    if not latest_threads and not latest_linkedin and not latest_twitter and not latest_youtube:
+    if not latest_threads and not latest_linkedin and not latest_twitter and not latest_youtube and not latest_own:
         print("❌ 병합 가능한 Full 파일을 찾을 수 없습니다.")
         return None, 0, 0, 0, 0
 
@@ -523,12 +539,18 @@ def merge_results():
         print(f"   - YouTube: {os.path.basename(latest_youtube)}")
     else:
         print("   - YouTube: 최신 Full 파일 없음")
+    if latest_own:
+        print(f"   - 내 게시물: {os.path.basename(latest_own)}")
+    else:
+        print("   - 내 게시물: 최신 Full 파일 없음")
 
     threads_data = load_json(latest_threads) if latest_threads else {}
     linkedin_data = load_json(latest_linkedin) if latest_linkedin else {}
     twitter_data = load_json(latest_twitter) if latest_twitter else {}
     youtube_data = load_json(latest_youtube) if latest_youtube else {}
+    own_data = load_json(latest_own) if latest_own else {}
 
+    own_posts = own_data.get('posts', []) if isinstance(own_data, dict) else own_data
     threads_posts = threads_data.get('posts', []) if isinstance(threads_data, dict) else threads_data
     linkedin_posts = linkedin_data.get('posts', []) if isinstance(linkedin_data, dict) else linkedin_data
     twitter_posts = twitter_data.get('posts', []) if isinstance(twitter_data, dict) else twitter_data
@@ -552,6 +574,11 @@ def merge_results():
     for p in youtube_posts:
         p['sns_platform'] = 'youtube'
         p['platform_sequence_id'] = p.get('sequence_id', 0)
+    for p in own_posts:
+        p['sns_platform'] = 'linkedin'
+        p['platform_sequence_id'] = p.get('sequence_id', 0)
+        # 어댑터가 이미 True 로 넣지만, 레거시 파일이 섞여도 플래그가 꺼지지 않게 고정한다.
+        p['is_own_post'] = True
 
     # 중복 제거 (ID 기준 + 플랫폼 고유 pk 기준)
     # platform_id 만으로 걸러내면 같은 글이 서로 다른 code 로 두 번 들어온 경우를
@@ -562,7 +589,10 @@ def merge_results():
     unique_posts = []
     dropped_by_id = 0
     dropped_by_pk = 0
-    all_posts = threads_posts + linkedin_posts + twitter_posts + youtube_posts
+    # 내 게시물을 앞에 둔다. 같은 activity 가 저장글에도 있으면 중복 제거가
+    # 먼저 나온 쪽을 남기는데, 내 글 레코드가 노출수와 is_own_post 를 갖고 있어
+    # 더 풍부하다. 뒤에 두면 그 정보가 조용히 버려진다.
+    all_posts = own_posts + threads_posts + linkedin_posts + twitter_posts + youtube_posts
 
     for p in all_posts:
         pid = str(p.get('platform_id') or p.get('id') or p.get('code') or p.get('url'))
@@ -588,10 +618,14 @@ def merge_results():
             f"(platform_id 기준 {dropped_by_id}건, pk 기준 {dropped_by_pk}건)"
         )
 
+    if own_posts:
+        print(f"   🙋 내 게시물 {len(own_posts)}건 병합")
+
     return (
         unique_posts,
         len(threads_posts),
-        len(linkedin_posts),
+        # 내 글도 LinkedIn 글이다. 뷰어 플랫폼 집계가 갈리지 않게 같은 칸에 넣는다.
+        len(linkedin_posts) + len(own_posts),
         len(twitter_posts),
         len(youtube_posts),
     )

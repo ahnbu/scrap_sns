@@ -42,6 +42,12 @@ DATA_DIR = os.path.join(REPO_ROOT, "output_linkedin", "python")
 FULL_GLOB = os.path.join(DATA_DIR, "linkedin_py_full_*.json")
 FAILURE_FILE = os.path.join(REPO_ROOT, "scrap_failures_linkedin.json")
 
+# 내 게시물은 저장글과 다른 파일에 산다. 같은 파일을 쓰면 consumer 웨이브에서
+# my_posts_scrap.py 와 이 스크립트가 동시에 read-modify-write 해 경합이 난다.
+# 계획: _docs/20260826_03 (3.4.1)
+OWN_DATA_DIR = os.path.join(REPO_ROOT, "output_linkedin_own", "python")
+OWN_FULL_GLOB = os.path.join(OWN_DATA_DIR, "linkedin_own_full_*.json")
+
 # 지표만 갱신하므로 이 필드 외에는 어떤 키도 쓰지 않는다.
 WRITABLE_FIELDS = ("like_count", "comment_count", "metrics_updated_at")
 
@@ -50,6 +56,12 @@ MAX_FAILURES = 3
 
 def latest_full_file() -> str | None:
     files = sorted(glob.glob(FULL_GLOB))
+    return files[-1] if files else None
+
+
+def latest_own_full_file() -> str | None:
+    """내 게시물 full 파일. 아직 한 번도 수집하지 않았으면 None."""
+    files = sorted(glob.glob(OWN_FULL_GLOB))
     return files[-1] if files else None
 
 

@@ -185,3 +185,28 @@ def select_targets(posts, now=None, limit=DEFAULT_RUN_LIMIT, failure_counts=None
         identity=_identity,
         failure_counts=failure_counts,
     )
+
+
+#: 내 게시물 전용 상한. 저장글 예산과 공유하지 않는다(계획 _docs/20260826_03 3.7).
+OWN_RUN_LIMIT = metric_refresh.PLATFORM_POLICIES["linkedin_own"]["run_limit"]
+
+
+def select_own_targets(posts, now=None, limit=OWN_RUN_LIMIT, failure_counts=None):
+    """내 게시물 중 갱신할 것을 고른다.
+
+    `linkedin_own` 정책은 신선도 검사를 하지 않는다 - 저장글과 달리 내 글은
+    작성 30일이 지나도 성과를 계속 추적한다.
+
+    ⚠️ `platform_field=None` 인 이유: 내 글의 `sns_platform` 은 여전히 `linkedin`
+       이다. 정책 이름(`linkedin_own`)으로 필드를 매칭하면 아무것도 안 걸린다.
+       호출자가 내 글 목록만 넘기는 것을 전제로 플랫폼 필터를 끈다.
+    """
+    return metric_refresh.select_targets(
+        posts,
+        "linkedin_own",
+        now=now,
+        limit=limit,
+        identity=_identity,
+        failure_counts=failure_counts,
+        platform_field=None,
+    )

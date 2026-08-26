@@ -100,6 +100,9 @@ def _scrap_progress_platform_label(platform):
         return "LinkedIn"
     if value == "youtube":
         return "YouTube"
+    # 내 게시물 수집기. 계획: _docs/20260826_03 (3.4)
+    if value == "myposts":
+        return "내 게시물"
     return str(platform or "").strip()
 
 
@@ -143,7 +146,7 @@ def _scrap_progress_message_from_line(line):
         return metric_refresh_match.group(1).strip()
 
     running_match = re.search(
-        r"\[\+\]\s*(Threads|LinkedIn|X/Twitter|YouTube)\s+(Producer|Consumer)\s+실행 중",
+        r"\[\+\]\s*(Threads|LinkedIn|X/Twitter|YouTube|MyPosts)\s+(Producer|Consumer)\s+실행 중",
         text,
     )
     if running_match:
@@ -152,7 +155,7 @@ def _scrap_progress_message_from_line(line):
         return f"{platform} {phase} 수집 시작"
 
     done_match = re.search(
-        r"✅\s*(Threads|LinkedIn|X/Twitter|YouTube)\s+(Producer|Consumer)\s+완료",
+        r"✅\s*(Threads|LinkedIn|X/Twitter|YouTube|MyPosts)\s+(Producer|Consumer)\s+완료",
         text,
     )
     if done_match:
@@ -161,7 +164,7 @@ def _scrap_progress_message_from_line(line):
         return f"{platform} {phase} 수집 완료"
 
     auth_match = re.search(
-        r"🔐\s*(Threads|LinkedIn|X/Twitter|YouTube)\s+(Producer|Consumer)\s+인증 필요",
+        r"🔐\s*(Threads|LinkedIn|X/Twitter|YouTube|MyPosts)\s+(Producer|Consumer)\s+인증 필요",
         text,
     )
     if auth_match:
@@ -170,7 +173,7 @@ def _scrap_progress_message_from_line(line):
         return f"{platform} {phase} 인증 필요"
 
     failed_match = re.search(
-        r"❌\s*(Threads|LinkedIn|X/Twitter|YouTube)\s+(Producer|Consumer)\s+종료",
+        r"❌\s*(Threads|LinkedIn|X/Twitter|YouTube|MyPosts)\s+(Producer|Consumer)\s+종료",
         text,
     )
     if failed_match:
@@ -202,7 +205,7 @@ def _scrap_progress_message_from_log_line(platform, line):
         return f"YouTube 목록 수집 시작 (대상: {scope})"
 
     phase_start_match = re.search(
-        r"🚀\s*(Threads|LinkedIn|X/Twitter|YouTube)\s+(Producer|Consumer)\s+시작",
+        r"🚀\s*(Threads|LinkedIn|X/Twitter|YouTube|MyPosts)\s+(Producer|Consumer)\s+시작",
         text,
     )
     if phase_start_match:

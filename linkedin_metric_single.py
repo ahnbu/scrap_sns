@@ -31,6 +31,7 @@ from scripts.linkedin_metric_backfill import (  # noqa: E402
     clear_failure,
     failure_counts,
     latest_full_file,
+    latest_own_full_file,
     load_failures,
     load_full,
     record_failure,
@@ -39,10 +40,12 @@ from scripts.linkedin_metric_backfill import (  # noqa: E402
 )
 from utils.linkedin_metrics import (  # noqa: E402
     DEFAULT_RUN_LIMIT,
+    OWN_RUN_LIMIT,
     extract_activity_id,
     fetch_metrics,
     new_anonymous_context,
     polite_sleep,
+    select_own_targets,
     select_targets,
 )
 
@@ -57,6 +60,12 @@ def main(argv=None) -> int:
         default=DEFAULT_RUN_LIMIT,
         help=f"1회 처리 상한 (기본 {DEFAULT_RUN_LIMIT})",
     )
+    parser.add_argument(
+        "--own-limit",
+        type=int,
+        default=OWN_RUN_LIMIT,
+        help=f"내 게시물 1회 처리 상한 (기본 {OWN_RUN_LIMIT}). 저장글 예산과 공유하지 않는다",
+    )
     parser.add_argument("--min-delay", type=float, default=4.0)
     parser.add_argument("--max-delay", type=float, default=6.0)
     parser.add_argument("--save-every", type=int, default=25)
@@ -64,26 +73,34 @@ def main(argv=None) -> int:
 
     print("🔎 [LinkedIn] 참여지표 갱신 시작 (비로그인)", flush=True)
 
-    full_path = latest_full_file()
-    if not full_path:
-        print("ℹ️ [LinkedIn] full 파일이 없어 지표 갱신을 건너뜁니다.", flush=True)
-        return 0
-
-    container, posts = load_full(full_path)
     failures = load_failures()
 
-    targets = select_targets(
-        posts, limit=args.limit, failure_counts=failure_counts(failures)
-    )
-    if not targets:
-        print("✅ [LinkedIn] 갱신할 지표 대상이 없습니다.", flush=True)
+    # 저장글과 내 게시물은 별도 파일에 있고 갱신 정책도 다르다.
+    # 내 글은 신선도 제한이 없고 전용 상한(20건)을 쓴다.
+    # 계획: _docs/20260826_03 (3.4.1, 3.7)
+    sources = []
+    for label, path, selector, limit in (
+        ("저장글", latest_full_file(), select_targets, args.limit),
+        ("내 글", latest_own_full_file(), select_own_targets, args.own_limit),
+    ):
+        if not path:
+            print(f"ℹ️ [LinkedIn] {label} full 파일이 없어 건너뜁니다.", flush=True)
+            continue
+        container, posts = load_full(path)
+        targets = selector(posts, limit=limit, failure_counts=failure_counts(failures))
+        if not targets:
+            print(f"✅ [LinkedIn] {label} 갱신 대상이 없습니다.", flush=True)
+            continue
+        print(f"🎯 [LinkedIn] {label} 지표 갱신 대상 {len(targets)}건", flush=True)
+        sources.append((label, path, container, posts, targets))
+
+    if not sources:
+        save_failures(failures)
         return 0
 
-    print(f"🎯 [LinkedIn] 지표 갱신 대상 {len(targets)}건", flush=True)
-
-    total = len(targets)
     ok = 0
     failed = 0
+    total = sum(len(item[4]) for item in sources)
     started = time.time()
 
     with sync_playwright() as playwright:
@@ -91,44 +108,51 @@ def main(argv=None) -> int:
         browser = playwright.chromium.launch(headless=True)
         context = new_anonymous_context(browser)
         page = context.new_page()
+        processed = 0
 
         try:
-            for index, post in enumerate(targets, start=1):
-                activity_id = extract_activity_id(post.get("url"))
-                if not activity_id:
-                    failed += 1
-                    continue
+            for label, path, container, posts, targets in sources:
+                for index, post in enumerate(targets, start=1):
+                    processed += 1
+                    activity_id = extract_activity_id(post.get("url"))
+                    if not activity_id:
+                        failed += 1
+                        continue
 
-                try:
-                    metrics = fetch_metrics(page, activity_id)
-                except Exception as exc:  # noqa: BLE001 - 사유만 기록한다
-                    metrics = None
-                    reason = type(exc).__name__
-                else:
-                    reason = "no-metrics-in-dom"
+                    try:
+                        metrics = fetch_metrics(page, activity_id)
+                    except Exception as exc:  # noqa: BLE001 - 사유만 기록한다
+                        metrics = None
+                        reason = type(exc).__name__
+                    else:
+                        reason = "no-metrics-in-dom"
 
-                if metrics:
-                    apply_metrics(post, metrics)
-                    clear_failure(failures, activity_id)
-                    ok += 1
-                    print(
-                        f"   ⚡ [Metric] [{activity_id}] "
-                        f"like={metrics['like_count']} comment={metrics['comment_count']}",
-                        flush=True,
-                    )
-                else:
-                    record_failure(failures, activity_id, post.get("url", ""), reason)
-                    failed += 1
-                    print(f"   ⚠️ [Metric] [{activity_id}] 실패 ({reason})", flush=True)
+                    if metrics:
+                        apply_metrics(post, metrics)
+                        clear_failure(failures, activity_id)
+                        ok += 1
+                        print(
+                            f"   ⚡ [Metric/{label}] [{activity_id}] "
+                            f"like={metrics['like_count']} comment={metrics['comment_count']}",
+                            flush=True,
+                        )
+                    else:
+                        record_failure(failures, activity_id, post.get("url", ""), reason)
+                        failed += 1
+                        print(
+                            f"   ⚠️ [Metric/{label}] [{activity_id}] 실패 ({reason})",
+                            flush=True,
+                        )
 
-                if index % args.save_every == 0:
-                    save_full(full_path, container, posts)
-                    save_failures(failures)
+                    if index % args.save_every == 0:
+                        save_full(path, container, posts)
+                        save_failures(failures)
 
-                if index < total:
-                    polite_sleep(args.min_delay, args.max_delay)
+                    if processed < total:
+                        polite_sleep(args.min_delay, args.max_delay)
         finally:
-            save_full(full_path, container, posts)
+            for _label, path, container, posts, _targets in sources:
+                save_full(path, container, posts)
             save_failures(failures)
             browser.close()
 
