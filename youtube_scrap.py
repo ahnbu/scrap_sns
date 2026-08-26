@@ -370,12 +370,20 @@ def pick_subtitle_file(produced, video_id):
     return sorted(produced)[0] if produced else ""
 
 
-def download_transcript(video_id, scratch_dir, refresh=False):
-    """yt-dlp 로 자동 자막을 받아 정제 텍스트를 반환. (status, text) 반환."""
+def download_transcript(video_id, scratch_dir, refresh=False, allow_download=True):
+    """yt-dlp 로 자동 자막을 받아 정제 텍스트를 반환. (status, text) 반환.
+
+    allow_download=False 는 PO token provider 가 없는 상태다. 새로 받는 것만 막고
+    캐시는 그대로 읽는다 - provider 사고를 이유로 이미 가진 자막까지 없는 셈 치면,
+    all 모드에서 전량이 blocked/no_transcript 로 덮여 기존 요약이 통합본에서
+    사라진다(2026-08-26 발견).
+    """
     target = transcript_path_for(video_id)
-    if os.path.exists(target) and not refresh:
+    if os.path.exists(target) and (not refresh or not allow_download):
         with open(target, "r", encoding="utf-8") as handle:
             return "ok", handle.read()
+    if not allow_download:
+        return "blocked", ""
 
     os.makedirs(scratch_dir, exist_ok=True)
     output_template = os.path.join(scratch_dir, f"{video_id}.%(ext)s")
@@ -626,6 +634,63 @@ def load_existing_posts():
     return {str(post.get("platform_id")): post for post in posts if post.get("platform_id")}
 
 
+# 요약이 끝나지 않은 채 저장된 상태들. 다음 실행에서 다시 대상이 되어야 한다.
+#   deferred — --max-summaries 상한에 걸려 호출조차 안 된 건
+#   failed   — agy 호출이 예외·타임아웃으로 끝난 건 (토큰은 거의 안 썼다)
+# no_transcript 는 넣지 않는다. 자막이 없으면 요약할 재료가 없어서 다시 불러도
+# 결과가 같고, 자막 재시도는 --refresh-transcripts 의 몫이다.
+SUMMARY_RETRY_STATUSES = {"deferred", "failed"}
+
+
+def needs_summary_retry(post):
+    """이미 수집된 글인데 요약만 남은 건인지 판정한다.
+
+    update 모드의 대상이 "existing 에 없는 영상"뿐이라, 한 번 deferred 로 저장된
+    영상은 다시는 요약 대상이 되지 않고 영구 고립됐다(BL-0826-04). 자막이 캐시된
+    건만 되살린다 - 자막 파일이 없으면 자막부터 다시 받아야 하고, 그건 요약 재시도가
+    아니라 재수집이다.
+    """
+    if str(post.get("summary_status") or "") not in SUMMARY_RETRY_STATUSES:
+        return False
+    if str(post.get("transcript_status") or "") != "ok":
+        return False
+    video_id = str(post.get("platform_id") or "")
+    return bool(video_id) and os.path.exists(transcript_path_for(video_id))
+
+
+def select_update_targets(entries, existing, allow_retry=True):
+    """update 모드의 처리 대상을 (신규, 요약 재시도) 로 가른다.
+
+    재시도분은 자막·메타가 이미 있어 추가 수집 비용이 없고, load_cached_summary()
+    가 완료분을 걸러 준다. allow_retry=False 는 --skip-summaries 전용이다 -
+    요약을 건너뛰는 실행이 대기분을 다시 쓰면 deferred 표시가 skipped 로 덮여
+    대기 상태 자체가 사라진다.
+    """
+    new_ids = [vid for vid in entries if vid not in existing]
+    retry_ids = []
+    if allow_retry:
+        retry_ids = [
+            vid for vid in entries
+            if vid in existing and needs_summary_retry(existing[vid])
+        ]
+    return new_ids, retry_ids
+
+
+def order_new_first(ordered_ids, retry_ids):
+    """신규를 앞, 요약 재시도를 뒤로 보낸다.
+
+    --max-summaries 는 목록 뒤를 잘라 상한을 건다. 재시도분이 앞에 서면 방금 저장한
+    영상이 대기분 295건 뒤로 밀려 몇 번을 돌려도 요약되지 않는다. 반대로 뒤에 두면
+    신규가 적은 평시 실행에서 남는 여유만큼 대기분이 줄어든다.
+    """
+    if not retry_ids:
+        return list(ordered_ids)
+    retry = set(retry_ids)
+    return [vid for vid in ordered_ids if vid not in retry] + [
+        vid for vid in ordered_ids if vid in retry
+    ]
+
+
 def collect_playlist_entries(playlists, api_key):
     cutoff = datetime.now() - timedelta(days=RECENT_MONTHS * 30)
     entries = {}
@@ -787,9 +852,17 @@ def run(args):
     print(f"   📦 필터 통과 {len(entries)}건")
 
     existing = load_existing_posts()
+    retry_ids = set()
     if args.mode == "update":
-        pending = {vid: entry for vid, entry in entries.items() if vid not in existing}
-        print(f"   🔁 update 모드: 신규 {len(pending)}건 (기존 {len(existing)}건 재사용)")
+        new_ids, retry_list = select_update_targets(
+            entries, existing, allow_retry=not args.skip_summaries
+        )
+        retry_ids = set(retry_list)
+        pending = {vid: entries[vid] for vid in new_ids + retry_list}
+        print(
+            f"   🔁 update 모드: 신규 {len(new_ids)}건 + 요약 대기 {len(retry_list)}건"
+            f" (기존 {len(existing)}건 재사용)"
+        )
     else:
         pending = dict(entries)
         print(f"   🔁 all 모드: {len(pending)}건 전량 처리")
@@ -800,18 +873,31 @@ def run(args):
     if len(ordered_ids) != len(pending):
         print(f"   🎯 웨이브 필터 적용: {len(pending)}건 → {len(ordered_ids)}건")
 
+    # 대기분끼리의 순서는 apply_wave_filters 가 매긴 자막 짧은 순 그대로다.
+    ordered_ids = order_new_first(ordered_ids, retry_ids)
+
     provider_ok, provider_process = (False, None)
     if ordered_ids:
         provider_ok, provider_process = ensure_provider()
 
     scratch_dir = os.path.join(OUTPUT_DIR, "_scratch")
     transcripts = {}
-    if ordered_ids and provider_ok:
-        label = "재수집" if args.refresh_transcripts else "수집"
+    if ordered_ids:
+        if provider_ok:
+            label = "재수집" if args.refresh_transcripts else "수집"
+        else:
+            label = "캐시만 읽기"
+            print("   ⚠️ PO token provider 미가동 — 새 자막은 못 받지만 캐시는 그대로 씁니다.")
         print(f"   📝 자막 {label} {len(ordered_ids)}건 (병렬 {TRANSCRIPT_WORKERS})...")
         with ThreadPoolExecutor(max_workers=TRANSCRIPT_WORKERS) as pool:
             futures = {
-                pool.submit(download_transcript, vid, scratch_dir, args.refresh_transcripts): vid
+                pool.submit(
+                    download_transcript,
+                    vid,
+                    scratch_dir,
+                    args.refresh_transcripts,
+                    provider_ok,
+                ): vid
                 for vid in ordered_ids
             }
             for done, future in enumerate(futures, start=1):
@@ -823,8 +909,6 @@ def run(args):
                     transcripts[video_id] = ("failed", "")
                 if done % 20 == 0:
                     print(f"      진행 {done}/{len(ordered_ids)}")
-    elif ordered_ids:
-        print("   ⚠️ PO token provider 미가동 — 자막 없이 메타만 수집합니다.")
 
     # --- 요약 계획 수립 -------------------------------------------------
     # 상한은 루프 안에서 세지 않고 제출 전에 목록을 잘라서 건다. 병렬로 호출하면
@@ -991,8 +1075,11 @@ def run(args):
 
     ok_transcripts = sum(1 for post in posts if post.get("transcript_status") == "ok")
     ok_summaries = sum(1 for post in posts if post.get("summary_status") == "ok")
+    # 남은 대기분을 매 실행 로그에 남긴다. 이 숫자가 안 줄면 고립이 재발한 것이다.
+    waiting = sum(1 for post in posts if post.get("summary_status") in SUMMARY_RETRY_STATUSES)
     print(f"✅ YouTube Producer 완료: 총 {len(posts)}건 (처리 {len(collected)}건)")
     print(f"   자막 {ok_transcripts}건, 요약 {ok_summaries}건 (이번 실행 agy 호출 {summarized}건)")
+    print(f"   요약 대기 {waiting}건 (다음 실행에서 다시 대상이 된다)")
     print(f"   저장: {output_path}")
     return 0
 

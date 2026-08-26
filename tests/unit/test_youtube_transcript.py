@@ -234,3 +234,46 @@ def test_wave_filter_sorts_by_transcript_size(tmp_path, monkeypatch):
 @pytest.mark.parametrize("duration,expected", [("PT1H2M3S", 3723), ("PT10M", 600), ("", 0)])
 def test_parse_iso_duration(duration, expected):
     assert ys.parse_iso_duration(duration) == expected
+
+# ------------------------------------------- provider 미가동 시 캐시 자막 사용
+
+def test_cached_transcript_is_read_without_provider(tmp_path, monkeypatch):
+    """provider 사고로 새 자막을 못 받아도, 이미 가진 자막까지 없는 셈 치면 안 된다.
+
+    all 모드에서 전량이 blocked 로 덮이면 기존 요약이 통합본에서 사라진다.
+    """
+    monkeypatch.setattr(ys, "TRANSCRIPT_DIR", str(tmp_path))
+    (tmp_path / "vid1.txt").write_text("캐시된 자막", encoding="utf-8")
+
+    status, text = ys.download_transcript("vid1", str(tmp_path / "_scratch"), allow_download=False)
+
+    assert status == "ok"
+    assert text == "캐시된 자막"
+
+
+def test_missing_transcript_without_provider_is_blocked(tmp_path, monkeypatch):
+    """캐시가 없으면 yt-dlp 를 부르지 않고 blocked 로 끝낸다."""
+    monkeypatch.setattr(ys, "TRANSCRIPT_DIR", str(tmp_path))
+    monkeypatch.setattr(
+        ys.subprocess, "run",
+        lambda *a, **k: pytest.fail("provider 없이 yt-dlp 를 부르면 안 된다"),
+    )
+
+    assert ys.download_transcript("vid1", str(tmp_path / "_scratch"), allow_download=False) == (
+        "blocked", ""
+    )
+
+
+def test_refresh_falls_back_to_cache_without_provider(tmp_path, monkeypatch):
+    """--refresh-transcripts 라도 provider 가 없으면 재수집이 불가능하다.
+
+    캐시를 버리면 멀쩡한 자막을 잃는다. 재수집은 provider 가 살아난 뒤로 미룬다.
+    """
+    monkeypatch.setattr(ys, "TRANSCRIPT_DIR", str(tmp_path))
+    (tmp_path / "vid1.txt").write_text("옛 자막", encoding="utf-8")
+
+    status, text = ys.download_transcript(
+        "vid1", str(tmp_path / "_scratch"), refresh=True, allow_download=False
+    )
+
+    assert (status, text) == ("ok", "옛 자막")
