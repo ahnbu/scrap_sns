@@ -6,6 +6,11 @@
 - 런처와 API: `sns_hub.vbs`, `run_viewer.bat`, `stop_viewer.bat`, `scrap_sns_server.py`, `index.html`, `web_viewer/`
 - 출력 디렉토리: `output_threads/`, `output_twitter/`, `output_linkedin/`, `output_total/`
 
+## 설계 원칙
+
+- 브라우저 제어와 파싱 로직을 분리한다. 추출 로직은 `utils/*_parser.py`에 둔다.
+- 파서나 URL 정규화 로직을 바꿀 때는 관련 unit test를 먼저 확인하고, 수정 후 다시 실행한다.
+
 ## 빌드·테스트·개발 명령어
 
 - 런타임 설치: `pip install -r requirements.txt`
@@ -23,6 +28,8 @@
 - 유틸리티:
   - `node utils/query-sns.mjs --help`
   - `python migrate_threads_domain.py --dry-run`
+  - `python migrate_schema.py` — 기존 데이터의 스키마 점검
+  - `python -m utils.build_data_js` — 뷰어용 정적 데이터(`web_viewer/data.js`) 재생성. 파서·스키마를 고친 뒤 뷰어 검증 전에 돌린다
 
 ## 에이전트 관련 메모
 
@@ -51,6 +58,7 @@
 - 통합 출력: `output_total/total_full_YYYYMMDD.json`
 - 실패 이력: `scrap_failures_threads.json`, `scrap_failures_twitter.json`, `scrap_failures_linkedin.json`
 - 뷰어 상태: `web_viewer/sns_tags.json`, `web_viewer/sns_tag_catalog.json`, `web_viewer/sns_user_metadata.json`, browser `localStorage`
+- 뷰어 정적 데이터: `web_viewer/data.js` — `python -m utils.build_data_js` 산출물이며 손으로 고치지 않는다
 - 인증 런타임 정본: `C:/Users/ahnbu/.config/auth/`; repo `auth/`는 정본으로 보지 않는다.
 
 ## 데이터 identity 규칙
@@ -60,6 +68,7 @@
 - 별표, 숨김, 메모는 `post_key` 기준으로 `web_viewer/sns_user_metadata.json`에 저장한다.
 - `canonical_url`은 원문 열기와 legacy migration 보조값이며, 사용자 상태의 주 key가 아니다.
 - 의미 있는 뷰어 상태는 file-backed JSON에 남기고, `localStorage`는 cache 또는 migration 보조로 본다.
+- X(Twitter)는 리다이렉트와 실제 사용자명 보정 때문에 URL과 본문이 단순 1:1이 아닐 수 있다.
 
 ## 수집 데이터 수정 규칙
 
