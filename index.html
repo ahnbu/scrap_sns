@@ -149,10 +149,9 @@
                 id="myPostsBtn"
                 type="button"
                 aria-pressed="false"
-                class="flex items-center gap-1.5 px-3 py-2 rounded-full bg-surface-glass hover:bg-surface-glass-hover text-gray-300 hover:text-white text-sm font-medium border border-border-glass transition-all whitespace-nowrap"
+                class="flex items-center px-3 py-2 rounded-full bg-surface-glass hover:bg-surface-glass-hover text-gray-300 hover:text-white text-sm font-medium border border-border-glass transition-all whitespace-nowrap"
                 title="내가 쓴 글만 보기"
               >
-                <span class="material-symbols-outlined text-[16px]">person</span>
                 MY
               </button>
               <!-- <button
@@ -491,10 +490,49 @@
           </button>
           <button
             class="tab-btn pb-3 text-base font-semibold border-b-2 border-transparent text-gray-500 hover:text-gray-300 transition-all"
+            data-target="tabDisplay"
+          >
+            표시
+          </button>
+          <button
+            class="tab-btn pb-3 text-base font-semibold border-b-2 border-transparent text-gray-500 hover:text-gray-300 transition-all"
             data-target="tabMaintenance"
           >
             전체 크롤링
           </button>
+        </div>
+
+        <!-- Tab Content: Display Options. 계획: _docs/20260827_03 (3.4 T3) -->
+        <div
+          id="tabDisplay"
+          class="tab-pane hidden flex-1 overflow-y-auto no-scrollbar"
+        >
+          <div class="p-8 flex flex-col gap-8">
+            <div class="flex flex-col gap-5 p-6 bg-white/5 rounded-[24px] border border-white/5 shrink-0">
+              <div class="flex flex-col gap-2">
+                <h3 class="text-xs font-bold text-gray-500 tracking-[0.1em] uppercase">
+                  My Posts
+                </h3>
+                <p class="text-sm text-gray-300 leading-relaxed">
+                  스크랩 목록은 남의 글 모음입니다. 내가 쓴 글을 목록에서 빼두면
+                  스크랩한 글만 보입니다. 내 글은 상단 <strong class="text-white">MY</strong> 버튼으로 언제든 볼 수 있습니다.
+                </p>
+              </div>
+              <label
+                for="hideOwnPostsToggle"
+                class="flex items-center justify-between gap-4 cursor-pointer select-none"
+              >
+                <span class="text-sm font-medium text-white"
+                  >목록에서 내 글 숨기기</span
+                >
+                <input
+                  id="hideOwnPostsToggle"
+                  type="checkbox"
+                  class="size-5 rounded accent-primary cursor-pointer"
+                />
+              </label>
+            </div>
+          </div>
         </div>
 
         <!-- Tab Content: Hidden Posts -->

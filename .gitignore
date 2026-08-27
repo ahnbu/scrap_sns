@@ -70,6 +70,7 @@ scripts/*
 !scripts/backfill_threads_display_name.py
 !scripts/check_youtube_saved_order.py
 !scripts/check_platform_order_regression.py
+!scripts/rebuild_total.py
 
 # Terminal Paste Image folder
 .cp-images/

@@ -8,6 +8,7 @@
 """
 
 import os
+import re
 from pathlib import Path
 
 import pytest
@@ -255,3 +256,157 @@ def test_saved_threads_posts_excluded_from_my_filter(viewer, api_posts):
         "MY + Threads 화면에 내 글이 아닌 카드가 섞였습니다."
     )
     _capture_threads_own(viewer, "v10_saved_posts_excluded")
+
+
+# --- 내 글 숨기기 토글 · MY 버튼 정리 (계획 _docs/20260827_03 V7~V12) --------
+
+EVIDENCE_DIR_HIDE_OWN = (
+    Path(__file__).resolve().parents[2] / "_docs" / "evidence" / "20260827_03"
+)
+
+TOTAL_LABEL = "#totalPostsCount"
+HIDE_OWN_TOGGLE = "#hideOwnPostsToggle"
+
+
+def _capture_hide_own(page, name):
+    EVIDENCE_DIR_HIDE_OWN.mkdir(parents=True, exist_ok=True)
+    page.screenshot(path=str(EVIDENCE_DIR_HIDE_OWN / f"{name}.png"), full_page=False)
+
+
+def _open_display_tab(page):
+    """설정 모달의 「표시」 탭을 연다. 셀렉터는 아이디로 고정한다."""
+    page.click("#settingsBtn")
+    page.wait_for_timeout(500)
+    page.click('.tab-btn[data-target="tabDisplay"]')
+    page.wait_for_timeout(300)
+
+
+def _close_settings(page):
+    page.click("#closeManagementModal")
+    page.wait_for_timeout(500)
+
+
+def _visible_from_label(page):
+    """상단 라벨의 보이는 수. `N / M 건` 과 `N 건` 을 모두 받는다."""
+    label = page.locator(TOTAL_LABEL).inner_text()
+    return int(label.split("/")[0].replace("건", "").strip())
+
+
+def _population_from_label(page):
+    """상단 라벨의 모집단(분모).
+
+    ⚠️ 보이는 수로 판정하지 않는다. 사용자가 숨긴 글이 있으면 보이는 수가 모집단보다
+       작아진다(실측: 숨김 3건). 숨김 토글이 바꾸는 것은 모집단이므로 그쪽을 본다.
+    """
+    label = page.locator(TOTAL_LABEL).inner_text()
+    return int(label.split("/")[-1].replace("건", "").strip())
+
+
+# V7 - MY 버튼에서 아이콘을 뺀다
+def test_my_button_has_no_icon(viewer):
+    button = viewer.locator(MY_BTN)
+    assert button.count() == 1
+    assert button.locator(".material-symbols-outlined").count() == 0, (
+        "MY 버튼에 아이콘 span 이 남아 있습니다."
+    )
+    assert button.inner_text().strip() == "MY"
+    _capture_hide_own(viewer, "v7_my_button_text_only")
+
+
+# V8 - 숨김 토글 기본 켜짐. 목록에서 내 글이 빠진다
+def test_hide_own_toggle_removes_own_posts(viewer, api_posts):
+    not_own = len([p for p in api_posts if p.get("is_own_post") is not True])
+
+    assert _population_from_label(viewer) == not_own, (
+        "기본 상태의 모집단에 내 글이 남아 있습니다."
+    )
+
+    _open_display_tab(viewer)
+    assert viewer.locator(HIDE_OWN_TOGGLE).is_checked(), "숨김 토글 기본값이 꺼져 있습니다."
+    _capture_hide_own(viewer, "v8_display_tab_default_on")
+    _close_settings(viewer)
+
+
+# V8b - 토글을 끄면 내 글이 다시 들어온다
+def test_hide_own_toggle_off_restores_own_posts(viewer, api_posts):
+    _open_display_tab(viewer)
+    viewer.uncheck(HIDE_OWN_TOGGLE)
+    viewer.wait_for_timeout(900)
+    _close_settings(viewer)
+
+    assert _population_from_label(viewer) == len(api_posts), (
+        "토글을 껐는데 모집단이 전체 건수로 돌아오지 않았습니다."
+    )
+
+
+# V9 - MY 버튼이 숨김 토글보다 우선한다
+def test_hide_own_toggle_yields_to_my_button(viewer, api_posts):
+    own_total = len([p for p in api_posts if p.get("is_own_post") is True])
+
+    _toggle_my(viewer)
+    assert viewer.locator(MY_BTN).get_attribute("aria-pressed") == "true"
+    assert _visible_from_label(viewer) == own_total, (
+        "숨김 토글이 켜진 상태에서 MY 를 눌렀는데 내 글이 다 나오지 않습니다."
+    )
+    _capture_hide_own(viewer, "v9_my_button_wins")
+
+
+# V10 - 토글 상태가 새로고침을 넘어간다
+def test_hide_own_toggle_persists_across_reload(viewer):
+    _open_display_tab(viewer)
+    viewer.uncheck(HIDE_OWN_TOGGLE)
+    viewer.wait_for_timeout(600)
+    _close_settings(viewer)
+
+    viewer.reload()
+    viewer.wait_for_selector(CARD, timeout=20000)
+    viewer.wait_for_timeout(1200)
+
+    _open_display_tab(viewer)
+    assert not viewer.locator(HIDE_OWN_TOGGLE).is_checked(), (
+        "새로고침 후 숨김 토글이 되살아났습니다. localStorage 저장이 동작하지 않습니다."
+    )
+    _capture_hide_own(viewer, "v10_toggle_persisted_off")
+
+
+# V11 - 라벨의 `N / M 건` 형태를 지킨다. 기존 테스트가 이 형태를 파싱한다
+def test_total_label_keeps_slash_form(viewer):
+    _toggle_my(viewer)
+    label = viewer.locator(TOTAL_LABEL).inner_text().strip()
+    assert re.fullmatch(r"\d+\s*/\s*\d+\s*건", label), (
+        f"MY 필터 상태의 라벨이 `N / M 건` 형태가 아닙니다: {label!r}"
+    )
+
+
+# V12 - 내 글이 최신순으로 보인다 (T1 정렬 수정의 화면 반영)
+@pytest.mark.parametrize("platform", ["linkedin", "threads"])
+def test_my_posts_newest_first_in_viewer(viewer, api_posts, platform):
+    """「로컬수집순」에서 내 글 블록의 맨 위가 그 플랫폼의 가장 최근 글이어야 한다.
+
+    수집기가 최신 글부터 훑어 crawled_at 과 sequence_id 양쪽에 역순을 새기는
+    문제를 total_scrap 의 정렬 키가 바로잡았는지 화면에서 판정한다.
+
+    ⚠️ 플랫폼 칩과 함께 건다. 「로컬수집순」은 작성일 전체 정렬이 아니라 수집 묶음
+       단위 정렬이라, MY 만 걸면 맨 위가 마지막 수집 묶음(Threads)의 최신 글이다.
+       플랫폼을 고정해야 "블록 안에서 최신이 위" 를 판정할 수 있다.
+    계획: _docs/20260827_03 (3.2 T1)
+    """
+    own = [
+        p for p in api_posts
+        if p.get("is_own_post") is True and p.get("sns_platform") == platform
+    ]
+    assert own, f"내 {platform} 글이 API 응답에 없습니다."
+    newest = max(own, key=lambda p: str(p.get("created_at") or ""))
+
+    _toggle_my(viewer)
+    viewer.click(f'button[data-filter="{platform}"]')
+    viewer.wait_for_timeout(900)
+    first_card = viewer.locator(CARD).first.inner_text()
+
+    # 목록 API 는 본문 전문을 주지 않는다. 카드에 실리는 미리보기로 대조한다.
+    head = str(newest.get("full_text_preview") or newest.get("full_text") or "").strip()[:20]
+    assert head, "최신 내 글의 본문이 비어 있습니다."
+    assert head in first_card, (
+        f"MY + {platform} 맨 위 카드가 최신 글이 아닙니다. 기대 본문 앞부분: {head!r}"
+    )
+    _capture_hide_own(viewer, f"v12_newest_first_{platform}")

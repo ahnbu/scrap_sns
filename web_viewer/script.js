@@ -98,6 +98,21 @@ function isOwnPost(post) {
     return post?.is_own_post === true;
 }
 
+// 목록에서 내 글 숨기기. 스크랩 목록의 본래 대상은 남의 글이라 기본값이 켜짐이다.
+// 계획: _docs/20260827_03 (3.4 T3)
+const HIDE_OWN_POSTS_STORAGE_KEY = 'sns_hide_own_posts';
+
+function getInitialHideOwnPosts() {
+    try {
+        const stored = localStorage.getItem(HIDE_OWN_POSTS_STORAGE_KEY);
+        // 저장값이 없으면 켜짐. 저장은 하지 않는다 - 껐다는 기록만 의미가 있다.
+        return stored === null ? true : stored === 'true';
+    } catch (error) {
+        // 프라이빗 창 등에서 접근이 막힐 수 있다. 기본값(켜짐)으로 계속 간다.
+        return true;
+    }
+}
+
 const SORT_STORAGE_KEY = 'sns_sort_order';
 const SORT_DATE_MIGRATION_KEY = 'sns_sort_order_date_migrated';
 const DEFAULT_SORT_ORDER = 'saved';
@@ -167,6 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 새로고침마다 꺼져 상시 작업 흐름에 자리 잡지 못한다(`지표 보유만` 이 그렇게 폐기됐다).
     // 계획: _docs/20260826_03 (3.8 T5)
     let showOwnPostsOnly = getInitialOwnPostsOnly();
+    let hideOwnPostsInAll = getInitialHideOwnPosts();
     let searchQuery = '';
     const selectedPosts = new Set();
     let _searchTimer = null;
@@ -224,12 +240,21 @@ document.addEventListener('DOMContentLoaded', () => {
         return hasMetricValue(post.view_count) && Number.isFinite(n) ? n : 0;
     }
 
+    // 숨김 토글이 걸린 동안에는 내 글이 모집단 밖이다. 아무 필터도 안 걸었는데
+    // `2486 / 2554 건` 이 상시로 뜨면 필터가 걸린 것으로 오해한다.
+    // MY 버튼이 켜지면 숨김 정책이 무효라(3.4) 모집단도 원래대로 돌아온다.
+    // 계획: _docs/20260827_03 (3.5 T3-b)
+    function getPopulationTotal() {
+        if (!hideOwnPostsInAll || showOwnPostsOnly) return allPosts.length;
+        return allPosts.reduce((count, post) => count + (isOwnPost(post) ? 0 : 1), 0);
+    }
+
     // 필터가 걸리면 `보이는수 / 전체수 건`, 없으면 `전체수 건`.
     // visibleCount === null 이면 필터 결과를 아직 모르는 시점(최초 로드)이다.
     function updateTotalPostsLabel(visibleCount) {
         const el = totalPostsCount;
         if (!el) return;
-        const total = allPosts.length;
+        const total = getPopulationTotal();
         el.textContent = (visibleCount === null || visibleCount === total)
             ? `${total} 건`
             : `${visibleCount} / ${total} 건`;
@@ -309,6 +334,27 @@ document.addEventListener('DOMContentLoaded', () => {
                 // 저장 실패는 이번 세션 동작을 막지 않는다.
             }
             applyMyPostsButtonState();
+            clearSelection();
+            if (searchQuery) {
+                void runServerSearch(searchQuery);
+                return;
+            }
+            renderPosts();
+        });
+    }
+
+    // 목록에서 내 글 숨기기 토글. 계획: _docs/20260827_03 (3.4 T3)
+    const hideOwnPostsToggle = document.getElementById('hideOwnPostsToggle');
+    if (hideOwnPostsToggle) {
+        hideOwnPostsToggle.checked = hideOwnPostsInAll;
+
+        hideOwnPostsToggle.addEventListener('change', () => {
+            hideOwnPostsInAll = hideOwnPostsToggle.checked;
+            try {
+                localStorage.setItem(HIDE_OWN_POSTS_STORAGE_KEY, hideOwnPostsInAll ? 'true' : 'false');
+            } catch (error) {
+                // 저장 실패는 이번 세션 동작을 막지 않는다.
+            }
             clearSelection();
             if (searchQuery) {
                 void runServerSearch(searchQuery);
@@ -2122,7 +2168,11 @@ ${item.body}
                 || (normalizePostKeyPlatform(post.sns_platform) === currentAuthor.platform
                     && String(post.username || post.user || '') === currentAuthor.username);
             // 플랫폼 칩과 AND 로 결합한다 - "LinkedIn 중 내 글"이 성립해야 한다.
-            const matchesOwn = !showOwnPostsOnly || isOwnPost(post);
+            // MY 버튼이 숨김 토글보다 우선한다 - 둘 다 켜져도 내 글만 남는다.
+            // 계획: _docs/20260827_03 (3.4 T3)
+            const matchesOwn = showOwnPostsOnly
+                ? isOwnPost(post)
+                : !(hideOwnPostsInAll && isOwnPost(post));
             return matchesFilter && matchesTag && matchesVisibility && matchesAuthor && matchesOwn;
         });
     }

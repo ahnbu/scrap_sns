@@ -606,6 +606,20 @@ def merge_results():
         p['platform_sequence_id'] = p.get('sequence_id', 0)
         p['is_own_post'] = True
 
+    # 내 글은 프로필을 최신→과거로 훑는다. 그 진행 방향이 crawled_at 과
+    # sequence_id 양쪽에 역순으로 새겨져 「저장순」 화면이 뒤집힌다.
+    # (실측: LinkedIn 36건은 crawled_at 이 전부 같아 2차 키가, Threads 32건은
+    #  crawled_at 이 초 단위로 갈려 1차 키가 각각 역순을 만들었다.)
+    # 묶음 전체를 한 시각으로 묶어 블록을 유지하고, 내부 순서는 작성일로 다시 정한다.
+    # 계획: _docs/20260827_03 (3.2 T1)
+    for group in (own_posts, threads_own_posts):
+        if not group:
+            continue
+        batch_key = min(_normalize_ts(p.get('crawled_at')) for p in group)
+        for rank, p in enumerate(sorted(group, key=lambda q: str(q.get('created_at') or '')), start=1):
+            p['platform_sequence_id'] = rank
+            p['_own_batch_key'] = batch_key
+
     # 중복 제거 (ID 기준 + 플랫폼 고유 pk 기준)
     # platform_id 만으로 걸러내면 같은 글이 서로 다른 code 로 두 번 들어온 경우를
     # 놓친다. Threads 상세 수집이 리다이렉트 원글의 code 로 레코드를 바꿔치기하던
@@ -684,8 +698,14 @@ def _saved_at_key(post):
     실측: 이 키를 쓰기 전 뷰어 순서와 재생목록 추가 순서의 스피어만 상관이 -1.000
     (완전 역순)이었다.
 
+    내 글은 '저장'한 적이 없다. crawled_at 이 저장 시각이 아니라 스크롤이 지나간
+    시각이라 순서로 쓰면 화면이 뒤집힌다. merge_results() 가 묶음 대표값을 심어둔다.
+
     다른 플랫폼은 저장 시각을 얻을 방법이 없어 crawled_at 이 최선의 대리물이다.
     """
+    own_batch = post.get('_own_batch_key')
+    if own_batch:
+        return own_batch
     if str(post.get('sns_platform') or '').lower() == 'youtube':
         added = str(post.get('playlist_added_at') or '').strip()
         if added:
@@ -746,7 +766,13 @@ def save_total(
         return (_saved_at_key(post), post.get('platform_sequence_id', 0))
 
     new_posts.sort(key=sort_key)
-    
+
+    # 정렬에만 쓰는 임시 필드다. reorder_post() 가 미등재 필드를 지우지 않고 뒤에
+    # 붙여 저장하므로, 여기서 걷어내지 않으면 통합본 스키마가 오염된다.
+    # 계획: _docs/20260827_03 (3.2 T1)
+    for p in new_posts:
+        p.pop('_own_batch_key', None)
+
     # 전역 ID 재부여 및 순서 정렬
     final_ordered_posts = []
     for i, p in enumerate(new_posts):
