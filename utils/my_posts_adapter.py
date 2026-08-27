@@ -30,7 +30,21 @@ OWN_POST_SOURCE = "my_insight_recent_activity"
 LOGIN_PATH_METRIC_FIELDS = ("view_count",)
 
 #: 비로그인 경로가 담당하므로 로그인 경로가 건드리면 안 되는 필드(계획 3.6).
-NON_LOGIN_PATH_METRIC_FIELDS = ("like_count", "comment_count", "share_count")
+#
+# 🔴 `metrics_updated_at` 이 여기 있는 이유(계획 _docs/20260827_04 3.5 T5-d):
+#    이 필드는 "지표를 언제 읽었는가"이지 "레코드를 언제 수집했는가"가 아니다.
+#    어댑터가 `collected_at` 으로 덮으면 갱신 시각이 매 실행마다 「지금」으로
+#    리셋되고, 신선도 정책(`utils/metric_refresh.py` `refresh_after_days`)이
+#    "방금 읽었다"고 오판해 **지표를 영원히 다시 읽지 않는다.**
+#    `linkedin_scrap.py:PRESERVED_METRIC_FIELDS` 와
+#    `thread_scrap_single.py:METRIC_FIELDS` 가 같은 이유로 이 필드를 넣어뒀다 -
+#    이 세 번째 복사본만 빠져 있었다.
+NON_LOGIN_PATH_METRIC_FIELDS = (
+    "like_count",
+    "comment_count",
+    "share_count",
+    "metrics_updated_at",
+)
 
 
 def _to_standard_datetime(value):

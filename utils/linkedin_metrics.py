@@ -23,6 +23,7 @@ import time
 from datetime import datetime
 
 from utils import metric_refresh
+from utils.auth_status import KST
 
 # 공개 페이지에서 지표를 담고 있는 DOM 속성.
 REACTION_ATTR = "data-num-reactions"
@@ -108,7 +109,12 @@ def parse_metrics_from_dom(raw: dict | None) -> dict | None:
     return {
         "like_count": like_count,
         "comment_count": comment_count,
-        "metrics_updated_at": datetime.now().isoformat(timespec="milliseconds"),
+        # 🔴 타임존을 붙인다. 어댑터 경로는 이미 `+09:00` 을 넣고 있어, 여기서
+        #    타임존 없는 값을 쓰면 한 파일 안에 두 형식이 섞인다. 그 상태로 문자열
+        #    비교나 파싱을 하면 경계에서 어긋난다.
+        #    읽는 쪽(`metric_refresh.days_since`)의 타임존 흡수가 선행 조건이다.
+        # 계획: _docs/20260827_04 (3.6 T6-a. 선행: T6-0)
+        "metrics_updated_at": datetime.now(KST).isoformat(timespec="milliseconds"),
     }
 
 

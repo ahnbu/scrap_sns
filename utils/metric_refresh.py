@@ -25,6 +25,8 @@ from __future__ import annotations
 
 from datetime import datetime
 
+from utils.auth_status import KST
+
 DEFAULT_MAX_FAILURES = 3
 
 # 플랫폼별 갱신 파라미터. 여기 한 곳에서만 바꾼다.
@@ -40,7 +42,11 @@ PLATFORM_POLICIES = {
     # run_limit 은 저장글 예산(120건)과 공유하지 않는 전용 슬롯이다 - 공유하면 내 글이
     # 항상 후보에 올라 앞자리를 잠식해 저장글 갱신이 굶는다.
     # 계획: _docs/20260826_03 (3.7)
-    "linkedin_own": {"fresh_post_days": None, "refresh_after_days": 7, "run_limit": 20},
+    # run_limit 40: 내 글은 68건뿐이고 성과 비교가 이 데이터의 목적이라, 20 이면
+    # 절반이 항상 2주 전 값이 돼 비교가 어긋난다. 대신 consumer 웨이브가
+    # 약 6분 늘어난다(건당 약 11초 x 33건 실측).
+    # 계획: _docs/20260827_04 (3.5 T5-c)
+    "linkedin_own": {"fresh_post_days": None, "refresh_after_days": 7, "run_limit": 40},
 }
 
 _DT_FORMATS = (
@@ -52,25 +58,49 @@ _DT_FORMATS = (
 
 
 def parse_dt(value):
-    """수집기마다 다른 시각 표기를 하나로 읽는다. 못 읽으면 None."""
+    """수집기마다 다른 시각 표기를 하나로 읽는다. 못 읽으면 None.
+
+    🔴 `fromisoformat` 을 먼저 시도한다. 아래 strptime 루프는 입력을
+       `text[: len(fmt) + 6]` 로 자르는데, **마이크로초 6자리와 타임존이 같이 있으면
+       그 절단이 정확히 타임존만 잘라내고 나머지가 성공적으로 파싱된다.**
+       실측: `2026-08-26T12:56:09.799854+00:00` -> `12:56:09.799854` (tzinfo=None).
+       UTC 값이 로컬로 읽혀 9시간 어긋난다. Threads Graph API 가 UTC 를 주는
+       레포라 이 조합은 언제든 들어온다.
+       순서만 바꾸므로 기존에 파싱되던 값이 파싱 안 되는 경우는 없다 -
+       `_DT_FORMATS` 4개 형식 모두 `fromisoformat` 이 그대로 읽는다(Python 3.11+).
+    계획: _docs/20260827_04 (3.6 T6-0b)
+    """
     if not value:
         return None
     text = str(value).strip().replace("Z", "")
+    try:
+        return datetime.fromisoformat(text)
+    except ValueError:
+        pass
     for fmt in _DT_FORMATS:
         try:
             return datetime.strptime(text[: len(fmt) + 6], fmt)
         except ValueError:
             continue
-    try:
-        return datetime.fromisoformat(text)
-    except ValueError:
-        return None
+    return None
 
 
 def days_since(value, now):
+    """`now` 기준 경과 일수. 못 읽으면 None.
+
+    🔴 타임존이 붙은 값과 안 붙은 값이 한 파일에 섞여 있다 - 어댑터는
+       `+09:00` 을 넣고 지표 수집기는 타임존 없는 값을 넣어 왔다.
+       naive - aware 는 TypeError 이고, 그 예외는 `select_targets()` 를 타고
+       올라가 지표 갱신 프로세스를 통째로 죽인다(호출부에 try 가 없다).
+       `now` 를 aware 로 올리지 않는 이유: `now` 는 호출자가 넘기는 값이라
+       (테스트 다수 포함) 그쪽을 전부 깨뜨린다. 읽는 쪽에서 흡수한다.
+    계획: _docs/20260827_04 (3.6 T6-0)
+    """
     parsed = parse_dt(value)
     if parsed is None:
         return None
+    if parsed.tzinfo is not None:
+        parsed = parsed.astimezone(KST).replace(tzinfo=None)
     return (now - parsed).total_seconds() / 86400.0
 
 

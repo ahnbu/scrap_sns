@@ -292,3 +292,23 @@ def test_select_targets_ignores_other_platforms():
 
     assert len(selected) == 1
     assert selected[0]["sns_platform"] == "linkedin"
+
+
+# ---------------------------------------------------------------------------
+# V20 - metrics_updated_at 은 타임존을 포함한다 (P6)
+#
+# 값을 만드는 곳은 parse_metrics_from_dom() 이다. apply_metrics() 는 복사만 한다.
+# 계획: _docs/20260827_04 (3.6 T6-a / V20)
+# ---------------------------------------------------------------------------
+
+def test_parse_metrics_from_dom_stamps_timezone_aware_timestamp():
+    metrics = parse_metrics_from_dom(
+        {"reactions": "12", "comments_attr": "3", "comments_text": None}
+    )
+    assert metrics is not None
+    stamped = metrics["metrics_updated_at"]
+    parsed = datetime.fromisoformat(stamped)
+    assert parsed.tzinfo is not None, (
+        f"타임존 없는 값이 어댑터의 +09:00 값과 한 파일에 섞인다: {stamped!r}"
+    )
+    assert parsed.utcoffset() == timedelta(hours=9)

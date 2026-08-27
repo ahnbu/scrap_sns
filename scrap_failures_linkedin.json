@@ -34,5 +34,17 @@
     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7314662801090781184?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7314662801090781184%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
     "reason": "no-metrics-in-dom",
     "last_failed_at": "2026-08-25T20:03:37.045"
+  },
+  "7416455140850843648": {
+    "count": 2,
+    "url": "https://www.linkedin.com/feed/update/urn:li:activity:7416455140850843648/",
+    "reason": "no-metrics-in-dom",
+    "last_failed_at": "2026-08-27T20:03:34.832"
+  },
+  "7407234823783821312": {
+    "count": 2,
+    "url": "https://www.linkedin.com/feed/update/urn:li:activity:7407234823783821312/",
+    "reason": "no-metrics-in-dom",
+    "last_failed_at": "2026-08-27T20:03:42.884"
   }
 }

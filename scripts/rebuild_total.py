@@ -15,6 +15,7 @@
 import argparse
 import os
 import sys
+from collections import Counter
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if REPO_ROOT not in sys.path:
@@ -62,36 +63,44 @@ def _print_own_preview(posts):
 
     뷰어 「로컬수집순」은 sequence_id 내림차순이므로(web_viewer/script.js),
     정렬 결과를 뒤집어 출력하면 화면 위에서 아래 순서가 된다.
+
+    ⚠️ 플랫폼별이 아니라 **내 글 전체를 한 블록으로** 본다. 두 플랫폼을 한 묶음으로
+       세우면서(_docs/20260827_04 T1) 순번이 날짜순으로 교차하므로, 플랫폼별로
+       연속성을 재면 정상 동작인데도 "아니오"가 나와 오판을 부른다.
     """
     ordered = sorted(posts, key=_preview_sort_key)
-    own_index = {
-        id(post): rank
+    own = [
+        (rank, post)
         for rank, post in enumerate(ordered, start=1)
         if post.get("is_own_post") is True
-    }
-    if not own_index:
+    ]
+    if not own:
         print("   ℹ️ 내 글이 없어 미리보기를 건너뜁니다.")
         return
 
-    for platform in ("linkedin", "threads"):
-        group = [
-            post for post in ordered
-            if post.get("is_own_post") is True
-            and str(post.get("sns_platform") or "").lower() == platform
-        ]
-        if not group:
-            continue
-        ranks = [own_index[id(post)] for post in group]
-        # 뷰어는 큰 번호를 위에 놓는다. 화면 순서로 뒤집는다.
-        on_screen = list(reversed(group))
-        print(f"\n   🙋 내 {platform} 글 {len(group)}건 / 예상 sequence_id {min(ranks)}~{max(ranks)}")
-        print(f"      연속 블록: {'예' if max(ranks) - min(ranks) + 1 == len(ranks) else '아니오'}")
-        for label, sample in (("화면 위", on_screen[:PREVIEW_EDGE]), ("화면 아래", on_screen[-PREVIEW_EDGE:])):
-            print(f"      [{label}]")
-            for post in sample:
-                created = str(post.get("created_at") or "")[:19]
-                head = str(post.get("full_text") or "").replace("\n", " ")[:34]
-                print(f"        {created}  {head}")
+    ranks = [rank for rank, _post in own]
+    contiguous = max(ranks) - min(ranks) + 1 == len(ranks)
+    platforms = Counter(
+        str(post.get("sns_platform") or "?").lower() for _rank, post in own
+    )
+    summary = " / ".join(f"{name} {count}" for name, count in sorted(platforms.items()))
+
+    print("")
+    print(f"   🙋 내 글 {len(own)}건 ({summary}) / 예상 sequence_id {min(ranks)}~{max(ranks)}")
+    print(f"      연속 블록: {'예' if contiguous else '아니오 ⚠️ 사이에 다른 글이 끼었다'}")
+
+    # 뷰어는 큰 번호를 위에 놓는다. 화면 순서로 뒤집는다.
+    on_screen = list(reversed(own))
+    for label, sample in (
+        ("화면 위", on_screen[:PREVIEW_EDGE]),
+        ("화면 아래", on_screen[-PREVIEW_EDGE:]),
+    ):
+        print(f"      [{label}]")
+        for _rank, post in sample:
+            platform = str(post.get("sns_platform") or "?")[:8]
+            created = str(post.get("created_at") or "")[:19]
+            head = str(post.get("full_text") or "").replace(chr(10), " ")[:30]
+            print(f"        {platform:<8} {created}  {head}")
 
 
 def main(argv=None) -> int:

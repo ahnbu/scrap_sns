@@ -17,6 +17,7 @@ from utils.json_to_md import convert_json_to_md
 from utils.auth_status import AUTH_REQUIRED_EXIT_CODE
 from utils.post_meta import build_post_key
 from utils import metric_refresh
+from utils.own_post_order import assign_own_post_order, normalize_ts
 
 # Windows 터미널 인코딩 문제 해결
 if sys.platform == 'win32':
@@ -396,15 +397,25 @@ def run_scrapers_in_parallel(mode='update'):
                 "X/Twitter": "python -u twitter_scrap_single.py",
                 # LinkedIn 지표는 저장글 목록 API 응답에 없어서 producer 가 가져올 수 없다.
                 # 이 consumer 만 로그인하지 않고 공개 페이지에서 지표를 읽는다.
-                # 계획: _docs/20260825_01_LinkedIn-참여지표-비로그인-수집전환-계획.md
-                "LinkedIn": "python -u linkedin_metric_single.py",
+                # `--only saved`: 내 글은 MyPosts 슬롯 뒤에 붙여 직렬로 돈다(아래).
+                # 계획: _docs/20260825_01, _docs/20260827_04 (3.5 T5-b)
+                "LinkedIn": "python -u linkedin_metric_single.py --only saved",
                 # 내 게시물 노출수는 로그인 recent-activity 에서만 나온다.
                 # producer 가 아니라 여기 있는 이유는 producer 의 linkedin_scrap.py 도
                 # 로그인 세션을 쓰기 때문이다 - 같은 계정 세션 2개가 동시에 붙는 것을 피한다.
-                # 같은 웨이브의 LinkedIn consumer 는 비로그인이라 충돌하지 않고,
-                # 출력 파일도 서로 달라 쓰기 경합이 없다.
-                # 계획: _docs/20260826_03 (3.4, 3.4.1)
-                "MyPosts": "python -u my_posts_scrap.py",
+                #
+                # 🔴 `&&` 로 지표 갱신을 뒤에 붙여 **직렬화**한다.
+                #    두 프로세스가 같은 linkedin_own_full 파일을 read-modify-write 하는데,
+                #    병렬로 두면 늦게 저장하는 쪽이 이긴다. 2026-08-26 에 실제로 41초
+                #    간격으로 겹쳤고 순서가 반대였으면 지표 3건이 사라졌다.
+                #    `&&` 라 앞이 실패하면 뒤가 안 돈다 - 내 글 수집이 실패했는데
+                #    지표만 갱신하는 상황을 막고, 인증 실패 종료코드도 그대로 전달된다.
+                #    이 배치가 "파일이 없을 때 지표 수집기가 그냥 지나감" 문제도 없앤다.
+                # 계획: _docs/20260826_03 (3.4, 3.4.1), _docs/20260827_04 (3.5 T5-b)
+                "MyPosts": (
+                    "python -u my_posts_scrap.py"
+                    " && python -u linkedin_metric_single.py --only own"
+                ),
                 # 내 Threads 글은 Graph API 라 로그인 세션 제약이 없지만,
                 # 실패 격리를 위해 consumer 에 둔다 - 저장글 수집(producer)이
                 # 내 글 수집 실패로 멈추면 안 된다.
@@ -606,19 +617,7 @@ def merge_results():
         p['platform_sequence_id'] = p.get('sequence_id', 0)
         p['is_own_post'] = True
 
-    # 내 글은 프로필을 최신→과거로 훑는다. 그 진행 방향이 crawled_at 과
-    # sequence_id 양쪽에 역순으로 새겨져 「저장순」 화면이 뒤집힌다.
-    # (실측: LinkedIn 36건은 crawled_at 이 전부 같아 2차 키가, Threads 32건은
-    #  crawled_at 이 초 단위로 갈려 1차 키가 각각 역순을 만들었다.)
-    # 묶음 전체를 한 시각으로 묶어 블록을 유지하고, 내부 순서는 작성일로 다시 정한다.
-    # 계획: _docs/20260827_03 (3.2 T1)
-    for group in (own_posts, threads_own_posts):
-        if not group:
-            continue
-        batch_key = min(_normalize_ts(p.get('crawled_at')) for p in group)
-        for rank, p in enumerate(sorted(group, key=lambda q: str(q.get('created_at') or '')), start=1):
-            p['platform_sequence_id'] = rank
-            p['_own_batch_key'] = batch_key
+    assign_own_post_order(own_posts, threads_own_posts)
 
     # 중복 제거 (ID 기준 + 플랫폼 고유 pk 기준)
     # platform_id 만으로 걸러내면 같은 글이 서로 다른 code 로 두 번 들어온 경우를
@@ -676,17 +675,8 @@ def merge_results():
     )
 
 def _normalize_ts(value):
-    """플랫폼별 타임스탬프 표기를 문자열 비교 가능한 형태로 맞춘다.
-
-    threads 는 '2026-02-12T18:44:53.240', youtube 는 '2026-08-25 10:55:28' 로
-    구분자가 다르다. 'T'(0x54) > ' '(0x20) 이라 같은 날짜에서 유튜브가 항상
-    앞서는 왜곡이 생긴다.
-
-    🔴 밀리초는 자르지 않는다. Threads 는 같은 초 안에 여러 건이 찍히는데
-    (실측: 2026-02-18T10:58:10.089 / .122) 밀리초를 버리면 그 건들이 동률이 돼
-    2차 키로 넘어가면서 기존 순서가 뒤집힌다. 실제로 그 회귀를 만들었다.
-    """
-    return str(value or '').replace('T', ' ')
+    """정본은 `utils/own_post_order.normalize_ts()` 다. 호출부 호환용 별칭."""
+    return normalize_ts(value)
 
 
 def _saved_at_key(post):

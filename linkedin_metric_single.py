@@ -66,6 +66,15 @@ def main(argv=None) -> int:
         default=OWN_RUN_LIMIT,
         help=f"내 게시물 1회 처리 상한 (기본 {OWN_RUN_LIMIT}). 저장글 예산과 공유하지 않는다",
     )
+    parser.add_argument(
+        "--only",
+        choices=("all", "saved", "own"),
+        default="all",
+        help=(
+            "처리 범위. 기본 all 은 저장글·내 글을 둘 다 처리한다(기존 동작). "
+            "consumer 웨이브에서 내 글 파일 쓰기를 직렬화하려고 갈라 쓴다"
+        ),
+    )
     parser.add_argument("--min-delay", type=float, default=4.0)
     parser.add_argument("--max-delay", type=float, default=6.0)
     parser.add_argument("--save-every", type=int, default=25)
@@ -78,11 +87,16 @@ def main(argv=None) -> int:
     # 저장글과 내 게시물은 별도 파일에 있고 갱신 정책도 다르다.
     # 내 글은 신선도 제한이 없고 전용 상한(20건)을 쓴다.
     # 계획: _docs/20260826_03 (3.4.1, 3.7)
+    # `--only` 는 라벨이 아니라 이 키로 거른다. 라벨은 사람이 읽는 로그용이라
+    # 바뀔 수 있고, 그때 조용히 필터가 빗나가면 안 된다.
+    # 계획: _docs/20260827_04 (3.5 T5-a)
     sources = []
-    for label, path, selector, limit in (
-        ("저장글", latest_full_file(), select_targets, args.limit),
-        ("내 글", latest_own_full_file(), select_own_targets, args.own_limit),
+    for scope, label, path, selector, limit in (
+        ("saved", "저장글", latest_full_file(), select_targets, args.limit),
+        ("own", "내 글", latest_own_full_file(), select_own_targets, args.own_limit),
     ):
+        if args.only != "all" and args.only != scope:
+            continue
         if not path:
             print(f"ℹ️ [LinkedIn] {label} full 파일이 없어 건너뜁니다.", flush=True)
             continue

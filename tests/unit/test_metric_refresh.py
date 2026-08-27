@@ -201,3 +201,78 @@ class TestChangeSummary:
             {"refreshed": 12, "changed": 3, "max_delta": 18}
         )
         assert line == "지표 갱신 12건 · 값이 바뀐 글 3건 (최대 +18)"
+
+
+# ---------------------------------------------------------------------------
+# V23 - 타임존이 붙은 시각을 안전하게 읽는다 (P8 회귀 가드)
+#
+# 이 레포는 한 파일 안에 타임존 있는 값과 없는 값이 섞여 있다 - 어댑터는 `+09:00`
+# 을 넣고 지표 수집기는 안 넣어 왔다. naive - aware 는 TypeError 이고, 그 예외가
+# select_targets() 를 타고 올라가면 지표 갱신 프로세스가 통째로 죽는다.
+# 계획: _docs/20260827_04 (3.6 T6-0, T6-0b / V23)
+# ---------------------------------------------------------------------------
+
+def test_days_since_accepts_timezone_aware_value():
+    """V23-a - 타임존 있는 값에서 예외가 나지 않는다."""
+    now = datetime(2026, 8, 27, 16, 0)
+    assert metric_refresh.days_since("2026-08-26T12:56:09+09:00", now) is not None
+
+
+def test_parse_dt_keeps_timezone_with_microseconds():
+    """V23-b - 마이크로초 6자리 + 타임존에서 타임존이 살아남는다.
+
+    strptime 절단 경로(`text[: len(fmt) + 6]`)가 이 조합에서 타임존만 잘라내고
+    성공해버려, 타임존이 조용히 사라진 naive 값이 나왔다.
+    """
+    parsed = metric_refresh.parse_dt("2026-08-26T12:56:09.799854+00:00")
+    assert parsed is not None
+    assert parsed.tzinfo is not None, (
+        "타임존이 조용히 사라지면 UTC 값이 로컬로 읽혀 9시간 어긋난다"
+    )
+
+
+def test_days_since_converts_utc_to_kst():
+    """V23-c - UTC 값이 KST 로 환산돼 계산된다."""
+    now = datetime(2026, 8, 27, 12, 0)
+    utc_days = metric_refresh.days_since("2026-08-26T12:00:00+00:00", now)
+    kst_days = metric_refresh.days_since("2026-08-26T12:00:00+09:00", now)
+    assert utc_days is not None and kst_days is not None
+    # 같은 벽시계 숫자라도 UTC 12:00 은 KST 21:00 이라 9시간 **더 최근**이다.
+    assert abs((kst_days - utc_days) - 9 / 24) < 1e-6
+
+
+def test_parse_dt_keeps_reading_existing_formats():
+    """V23-d - fromisoformat 을 앞에 둬도 기존 형식이 그대로 파싱된다."""
+    cases = {
+        "2026-08-26 12:56:09": (2026, 8, 26, 12, 56, 9),
+        "2026-02-12T18:44:53.240": (2026, 2, 12, 18, 44, 53),
+        "2026-08-25 10:55:28": (2026, 8, 25, 10, 55, 28),
+        "2026-08-26": (2026, 8, 26, 0, 0, 0),
+    }
+    for text, expected in cases.items():
+        parsed = metric_refresh.parse_dt(text)
+        assert parsed is not None, f"{text!r} 를 못 읽는다"
+        assert parsed.tzinfo is None, f"{text!r} 에 없던 타임존이 생기면 안 된다"
+        actual = (parsed.year, parsed.month, parsed.day,
+                  parsed.hour, parsed.minute, parsed.second)
+        assert actual == expected, f"{text!r} -> {actual} (기대 {expected})"
+
+
+def test_select_targets_survives_timezone_aware_metrics_updated_at():
+    """V24 - 지표를 이미 가진 글의 갱신 시각에 타임존이 붙어도 죽지 않는다.
+
+    이 경로가 P8 의 실제 폭발 지점이다 - 지표가 없으면 1순위로 빠져나가
+    신선도 검사에 도달하지 않지만, 지표가 채워지는 순간 도달한다.
+    """
+    posts = [
+        {
+            "sns_platform": "linkedin",
+            "created_at": "2026-08-20 10:00:00",
+            "like_count": 5,
+            "metrics_updated_at": "2026-08-26T12:56:09+09:00",
+        }
+    ]
+    selected = metric_refresh.select_targets(
+        posts, "linkedin", now=datetime(2026, 8, 27, 16, 0)
+    )
+    assert isinstance(selected, list)

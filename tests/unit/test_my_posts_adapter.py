@@ -151,11 +151,14 @@ def test_own_run_limit_is_separate_from_saved_budget():
     own_limit = metric_refresh.get_policy("linkedin_own")["run_limit"]
     saved_limit = metric_refresh.get_policy("linkedin")["run_limit"]
 
-    assert own_limit == 20
+    # 40: 내 글은 68건뿐이고 성과 비교가 목적이라 20 이면 절반이 항상 2주 전 값이 된다.
+    # 계획: _docs/20260827_04 (3.5 T5-c)
+    assert own_limit == 40
     assert saved_limit == 120
+    assert own_limit != saved_limit, "전용 슬롯이라 저장글 예산과 공유하지 않는다"
 
     posts = []
-    for index in range(50):
+    for index in range(own_limit + 10):
         post = to_standard_post(insight_record(platform_post_id=str(7480000000000000000 + index)))
         post["url"] = f"https://www.linkedin.com/feed/update/urn:li:activity:{post['platform_id']}/"
         posts.append(post)
@@ -223,3 +226,45 @@ def test_common_reorder_shares_field_order_with_schema(field):
 
     assert field in ordered
     assert ordered == STANDARD_FIELD_ORDER
+
+
+# ---------------------------------------------------------------------------
+# V25 - 로그인 경로가 metrics_updated_at 을 덮지 않는다 (P9 회귀 가드)
+#
+# 이 필드는 "지표를 언제 읽었는가"이지 "레코드를 언제 수집했는가"가 아니다.
+# 어댑터가 collected_at 으로 덮으면 신선도 정책이 "방금 읽었다"고 오판해
+# 지표를 영원히 다시 읽지 않는다.
+# 계획: _docs/20260827_04 (3.5 T5-d / V25)
+# ---------------------------------------------------------------------------
+
+def test_merge_own_post_preserves_metrics_updated_at():
+    existing = {
+        "platform_id": "1",
+        "like_count": 10,
+        "comment_count": 2,
+        "metrics_updated_at": "2026-08-20T10:00:00+09:00",
+        "view_count": 100,
+    }
+    incoming = {
+        "platform_id": "1",
+        "like_count": None,
+        "comment_count": None,
+        "metrics_updated_at": "2026-08-27T09:00:00+09:00",  # 수집 시각
+        "view_count": 150,
+    }
+
+    merged = merge_own_post(existing, incoming)
+
+    assert merged["metrics_updated_at"] == "2026-08-20T10:00:00+09:00", (
+        "지표 갱신 시각을 수집 시각으로 덮으면 신선도 판정이 거짓말을 한다"
+    )
+    assert merged["like_count"] == 10, "반응수는 기존대로 보존"
+    assert merged["view_count"] == 150, "노출수는 로그인 경로가 갱신"
+
+
+def test_merge_own_post_uses_incoming_when_no_existing_record():
+    incoming = {"platform_id": "1", "metrics_updated_at": "2026-08-27T09:00:00+09:00"}
+    merged = merge_own_post(None, incoming)
+    assert merged["metrics_updated_at"] == "2026-08-27T09:00:00+09:00", (
+        "신규 레코드는 수집 시각을 그대로 쓴다 - like_count 가 없어 어차피 1순위로 뽑힌다"
+    )

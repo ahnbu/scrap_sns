@@ -138,11 +138,17 @@ print(json.dumps({{"commands": launched_commands, "results": results}}, ensure_a
         "cmd /c python -u twitter_scrap_single.py",
         # LinkedIn 지표는 저장글 목록 API 응답에 없어 producer 가 가져올 수 없다.
         # 이 consumer 만 로그인 없이 공개 페이지에서 지표를 읽는다.
-        "cmd /c python -u linkedin_metric_single.py",
+        # `--only saved`: 내 글은 MyPosts 슬롯 뒤에 직렬로 붙는다(아래).
+        "cmd /c python -u linkedin_metric_single.py --only saved",
         # 내 게시물 노출수는 로그인 recent-activity 에서만 나온다. producer 가 아니라
         # consumer 에 있는 이유는 producer 의 linkedin_scrap.py 도 로그인 세션을 쓰기 때문이다.
-        # 계획: _docs/20260826_03 (3.4)
-        "cmd /c python -u my_posts_scrap.py",
+        #
+        # 🔴 `&&` 로 지표 갱신이 뒤에 붙어 **한 슬롯 안에서 직렬로** 돈다.
+        #    두 프로세스가 같은 linkedin_own_full 파일을 read-modify-write 하는데
+        #    병렬로 두면 늦게 저장하는 쪽이 이긴다(2026-08-26 실제로 41초 간격 발생).
+        # 계획: _docs/20260826_03 (3.4), _docs/20260827_04 (3.5 T5-b)
+        "cmd /c python -u my_posts_scrap.py"
+        " && python -u linkedin_metric_single.py --only own",
         # 내 Threads 글은 Graph API 라 로그인 세션 제약이 없지만, 저장글 수집이
         # 내 글 수집 실패로 멈추지 않도록 consumer 에 둔다.
         # 계획: _docs/20260827_02 (3.6)
