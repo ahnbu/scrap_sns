@@ -85,17 +85,54 @@ function buildScrapProgressConsoleMessage(event) {
 
 const OWN_POSTS_ONLY_STORAGE_KEY = 'sns_own_posts_only';
 
-function getInitialOwnPostsOnly() {
+// MY 상태를 저장하지 않는다. 저장하던 시절에는 한 번 켜면 브라우저를 껐다 켜도 켜진 채로
+// 남았고, 켜졌다는 표시가 화면에 없어서(활성 스타일 부재) 사용자가 빠져나올 방법이 없었다.
+// 그 상태로 X·YouTube 를 누르면 0건이 떴다. 과거 저장값은 한 번 지운다.
+// 계획: _docs/20260827_05 (T3)
+function clearLegacyOwnPostsOnly() {
     try {
-        return localStorage.getItem(OWN_POSTS_ONLY_STORAGE_KEY) === 'true';
+        localStorage.removeItem(OWN_POSTS_ONLY_STORAGE_KEY);
     } catch (error) {
-        // 프라이빗 창 등에서 접근이 막힐 수 있다. 기본값(꺼짐)으로 계속 간다.
-        return false;
+        // 프라이빗 창 등에서 접근이 막힐 수 있다. 지우지 못해도 이번 세션 동작은 같다.
     }
 }
 
 function isOwnPost(post) {
     return post?.is_own_post === true;
+}
+
+// 교차 게시 판정. 같은 날 + 본문 앞 40자 동일 + 플랫폼 상이면 같은 글로 본다.
+// 실측(2026-08-27): 내 글 68건 중 23쌍이 걸리고 전부 LinkedIn 1 + Threads 1, 작성일 차이 0일.
+// 앞 40자와 앞 60자가 같은 45편을 주는 안정 구간이라 40자를 쓴다.
+// 계획: _docs/20260827_05 (T6)
+function buildOwnPostGroupKey(post) {
+    const day = String(post?.created_at || '').slice(0, 10);
+    const head = String(post?.full_text || post?.full_text_preview || '')
+        .replace(/[^가-힣A-Za-z0-9]/g, '')
+        .slice(0, 40);
+    return `${day}|${head}`;
+}
+
+// 교차 게시를 한 편으로 친 글 수. 같은 날 같은 도입부라도 플랫폼이 같으면 서로 다른 글로 본다 -
+// 한 플랫폼에 같은 글을 두 번 올린 것을 하나로 합치면 실제보다 적게 세게 된다.
+function countUniqueOwnPosts(posts) {
+    const groups = new Map();
+    posts.forEach((post) => {
+        const key = buildOwnPostGroupKey(post);
+        if (!groups.has(key)) groups.set(key, new Map());
+        const byPlatform = groups.get(key);
+        const platform = String(post?.sns_platform || '').toLowerCase();
+        byPlatform.set(platform, (byPlatform.get(platform) || 0) + 1);
+    });
+    let total = 0;
+    groups.forEach((byPlatform) => {
+        let widest = 0;
+        byPlatform.forEach((count) => {
+            if (count > widest) widest = count;
+        });
+        total += widest;
+    });
+    return total;
 }
 
 // 목록에서 내 글 숨기기. 스크랩 목록의 본래 대상은 남의 글이라 기본값이 켜짐이다.
@@ -178,10 +215,10 @@ document.addEventListener('DOMContentLoaded', () => {
     let allPosts = [];
     let searchResults = null;
     let currentFilter = 'all';
-    // 내 게시물만 보기. 정렬과 같이 localStorage 에 남긴다 - 저장하지 않으면
-    // 새로고침마다 꺼져 상시 작업 흐름에 자리 잡지 못한다(`지표 보유만` 이 그렇게 폐기됐다).
-    // 계획: _docs/20260826_03 (3.8 T5)
-    let showOwnPostsOnly = getInitialOwnPostsOnly();
+    // 내 게시물만 보기. 저장하지 않는다 - 뷰어를 열면 항상 전체 글부터 시작한다.
+    // 계획: _docs/20260827_05 (T3)
+    clearLegacyOwnPostsOnly();
+    let showOwnPostsOnly = false;
     let hideOwnPostsInAll = getInitialHideOwnPosts();
     let searchQuery = '';
     const selectedPosts = new Set();
@@ -240,24 +277,30 @@ document.addEventListener('DOMContentLoaded', () => {
         return hasMetricValue(post.view_count) && Number.isFinite(n) ? n : 0;
     }
 
-    // 숨김 토글이 걸린 동안에는 내 글이 모집단 밖이다. 아무 필터도 안 걸었는데
-    // `2486 / 2554 건` 이 상시로 뜨면 필터가 걸린 것으로 오해한다.
-    // MY 버튼이 켜지면 숨김 정책이 무효라(3.4) 모집단도 원래대로 돌아온다.
-    // 계획: _docs/20260827_03 (3.5 T3-b)
-    function getPopulationTotal() {
-        if (!hideOwnPostsInAll || showOwnPostsOnly) return allPosts.length;
-        return allPosts.reduce((count, post) => count + (isOwnPost(post) ? 0 : 1), 0);
-    }
-
-    // 필터가 걸리면 `보이는수 / 전체수 건`, 없으면 `전체수 건`.
-    // visibleCount === null 이면 필터 결과를 아직 모르는 시점(최초 로드)이다.
-    function updateTotalPostsLabel(visibleCount) {
+    // 분모를 붙이지 않는다. 플랫폼별 수집 건수를 단순 합산한 값이라 "내가 본 글이 몇 개냐"와
+    // 다르고, 내 글 쪽은 교차 게시가 겹쳐 세어져 애초에 정확하지 않았다.
+    // 지금 화면에 몇 개가 걸렸는지만 말한다.
+    // 계획: _docs/20260827_05 (T5)
+    //
+    // MY 가 켜진 동안에는 `N편 · M건` 으로 쓴다. 편은 교차 게시를 한 편으로 친 실제 글 수,
+    // 건은 화면에 있는 카드 수다. 카드는 합치지 않는다 - 같은 글이라도 플랫폼별 조회수·좋아요가
+    // 달라서 합치면 성과 비교를 할 수 없다.
+    // 계획: _docs/20260827_05 (T6)
+    function updateTotalPostsLabel(visibleCount, visiblePosts) {
         const el = totalPostsCount;
         if (!el) return;
-        const total = getPopulationTotal();
-        el.textContent = (visibleCount === null || visibleCount === total)
-            ? `${total} 건`
-            : `${visibleCount} / ${total} 건`;
+        if (visibleCount === null) {
+            el.textContent = `${allPosts.length} 건`;
+            return;
+        }
+        if (showOwnPostsOnly && Array.isArray(visiblePosts)) {
+            const unique = countUniqueOwnPosts(visiblePosts);
+            el.textContent = unique === visibleCount
+                ? `${visibleCount} 건`
+                : `${unique}편 · ${visibleCount}건`;
+            return;
+        }
+        el.textContent = `${visibleCount} 건`;
     }
     let tagCreateMode = false;
     let editingTagName = null;
@@ -303,10 +346,19 @@ document.addEventListener('DOMContentLoaded', () => {
     filterContainer.addEventListener('click', (e) => {
         const btn = e.target.closest('.filter-chip');
         if (!btn) return;
+        // MY 도 filter-chip 이지만 플랫폼 선택이 아니다. 자기 핸들러가 처리한다.
+        if (btn.id === 'myPostsBtn') return;
 
-        // Update active visual state
+        // Update active visual state. MY 의 활성 표시는 여기서 끄지 않는다 -
+        // 아래 showOwnPostsOnly 해제와 함께 syncMyPostsButtonState() 가 맞춘다.
         document.querySelectorAll('.filter-chip').forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
+
+        // 플랫폼을 골랐다는 건 그 플랫폼 글을 보겠다는 뜻이다. 내 글만 보는 상태를 유지하지 않는다.
+        // 이게 없으면 MY 가 켜진 채로 X·YouTube 를 눌러 0건이 뜬다.
+        // 계획: _docs/20260827_05 (T2)
+        showOwnPostsOnly = false;
+        syncMyPostsButtonState();
 
         clearSelection();
         currentFilter = btn.dataset.filter;
@@ -317,23 +369,22 @@ document.addEventListener('DOMContentLoaded', () => {
         renderPosts();
     });
 
-    // MY 필터 - 내가 쓴 글만 보기. 계획: _docs/20260826_03 (3.8 T5)
+    // MY 필터 - 내가 쓴 글만 보기. 계획: _docs/20260827_05 (T1~T3)
     const myPostsBtn = document.getElementById('myPostsBtn');
+
+    // 플랫폼 칩 핸들러도 이걸 부른다. 켜짐 표시를 한 곳에서만 맞춘다.
+    function syncMyPostsButtonState() {
+        if (!myPostsBtn) return;
+        myPostsBtn.setAttribute('aria-pressed', showOwnPostsOnly ? 'true' : 'false');
+        myPostsBtn.classList.toggle('active', showOwnPostsOnly);
+    }
+
     if (myPostsBtn) {
-        const applyMyPostsButtonState = () => {
-            myPostsBtn.setAttribute('aria-pressed', showOwnPostsOnly ? 'true' : 'false');
-            myPostsBtn.classList.toggle('active', showOwnPostsOnly);
-        };
-        applyMyPostsButtonState();
+        syncMyPostsButtonState();
 
         myPostsBtn.addEventListener('click', () => {
             showOwnPostsOnly = !showOwnPostsOnly;
-            try {
-                localStorage.setItem(OWN_POSTS_ONLY_STORAGE_KEY, showOwnPostsOnly ? 'true' : 'false');
-            } catch (error) {
-                // 저장 실패는 이번 세션 동작을 막지 않는다.
-            }
-            applyMyPostsButtonState();
+            syncMyPostsButtonState();
             clearSelection();
             if (searchQuery) {
                 void runServerSearch(searchQuery);
@@ -2624,7 +2675,7 @@ ${item.body}
         updateGlobalTags();
 
         const filtered = sortPosts(getFilteredPosts());
-        updateTotalPostsLabel(filtered.length);
+        updateTotalPostsLabel(filtered.length, filtered);
 
         if (_ioObserver) {
             _ioObserver.disconnect();
@@ -2933,7 +2984,11 @@ ${item.body}
         if (visibleMetrics.length > 0) {
             metricsDiv = document.createElement('div');
             // metrics-row: 테스트·스크립트가 지표 행을 특정하기 위한 식별용 클래스.
-            metricsDiv.className = 'metrics-row flex flex-wrap items-center gap-3 pt-2 mt-1 border-t border-white/5';
+            // 구분선을 두지 않는다. 카드가 이미 gap 12px 로 블록을 나누고 있어서
+            // 선은 그 위에 덧그은 것이었고, 바로 아래 태그 행에는 선이 없어 일관성도 없었다.
+            // 카드에 남기는 가로선은 푸터 위 하나뿐이다 - 정보와 액션의 경계.
+            // 계획: _docs/20260827_05 (T4)
+            metricsDiv.className = 'metrics-row flex flex-wrap items-center gap-3 pt-2 mt-1';
             if (isFolded) metricsDiv.classList.add('hidden-content');
             metricsDiv.innerHTML = visibleMetrics.map((def) => `
                 <span class="metric-badge flex items-center gap-1 text-xs text-gray-400" data-metric="${def.field}">

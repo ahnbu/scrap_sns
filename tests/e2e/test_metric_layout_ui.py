@@ -28,6 +28,7 @@ BADGE = ".metric-badge"
 VIEWER_URL = os.environ.get("SNS_VIEWER_URL", "http://localhost:5000")
 
 EVIDENCE_DIR = Path(__file__).resolve().parents[2] / "_docs" / "evidence" / "20260825_03"
+EVIDENCE_DIR_05 = Path(__file__).resolve().parents[2] / "_docs" / "evidence" / "20260827_05"
 
 REACTION_FIELDS = ("like_count", "comment_count", "share_count")
 
@@ -331,7 +332,67 @@ def test_v9_metrics_only_button_removed(viewer):
 
 @pytest.mark.e2e
 def test_v10_total_count_matches_api(viewer, posts):
-    """V10: 상단 총건수가 /api/posts 응답 건수와 일치한다."""
-    text = viewer.locator("#totalPostsCount").inner_text()
-    digits = "".join(ch for ch in text.split("/")[-1] if ch.isdigit())
-    assert int(digits) == len(posts), f"총건수 불일치: {text!r} vs API {len(posts)}건"
+    """V10: 상단 건수가 화면에 실제로 걸린 글 수와 맞는다.
+
+    ⚠️ 더 이상 분모(전체 건수)를 붙이지 않는다. 플랫폼별 수집 건수를 단순 합산한 값이라
+       "내가 본 글이 몇 개냐"와 달랐고, 내 글 쪽은 교차 게시가 겹쳐 세어졌다.
+       이제 라벨은 지금 화면에 걸린 건수 하나다.
+       기본 상태는 내 글이 빠지고(설정의 숨김 기본 켜짐) 사용자가 숨긴 글도 빠지므로
+       API 총건수와 같을 수 없다. 타인 글 총수를 상한으로 두고 판정한다.
+    계획: _docs/20260827_05 (T5)
+    """
+    text = viewer.locator("#totalPostsCount").inner_text().strip()
+    assert "/" not in text, f"라벨에 분모가 남아 있습니다: {text!r}"
+
+    visible = int("".join(ch for ch in text if ch.isdigit()))
+    not_own = len([p for p in posts if p.get("is_own_post") is not True])
+    assert 0 < visible <= not_own, (
+        f"상단 건수 {visible}이 타인 글 총수 {not_own} 범위를 벗어납니다. 라벨: {text!r}"
+    )
+
+
+# --- 카드 구분선 정리 (계획 _docs/20260827_05 T4) --------------------------
+
+
+@pytest.mark.e2e
+def test_card_keeps_only_footer_divider(viewer):
+    """카드 안 가로 구분선은 푸터 위 하나뿐이어야 한다.
+
+    이전에는 지표 행 위와 메모 위에도 선이 있어 카드마다 2~3개가 반복됐다.
+    카드가 이미 gap 12px 로 블록을 나누고 있어 선은 그 위에 덧그은 것이었고,
+    바로 아래 태그 행에는 선이 없어 일관성도 없었다.
+    이미지 테두리는 구분선이 아니라 액자라서 대상이 아니다.
+    계획: _docs/20260827_05 (T4)
+    """
+    counts = viewer.evaluate(
+        """() => [...document.querySelectorAll('#masonryGrid article.glass-card')]
+              .map(card => {
+                  const rows = [...card.children].filter(el => {
+                      const w = parseFloat(getComputedStyle(el).borderTopWidth) || 0;
+                      // 사방 테두리를 두른 것(이미지 액자)은 구분선이 아니다.
+                      const all = parseFloat(getComputedStyle(el).borderBottomWidth) || 0;
+                      return w > 0 && all === 0;
+                  });
+                  return rows.length;
+              })"""
+    )
+    assert counts, "카드가 하나도 렌더되지 않았습니다."
+    assert set(counts) == {1}, (
+        f"카드마다 가로선이 1개여야 하는데 실제 분포는 {sorted(set(counts))} 입니다."
+    )
+
+    metrics = viewer.locator(METRICS_ROW).first
+    assert metrics.count() > 0, "지표 행이 없으면 이 테스트가 무의미합니다."
+    metrics_border = viewer.evaluate(
+        """() => getComputedStyle(document.querySelector('.metrics-row')).borderTopWidth"""
+    )
+    assert parseint(metrics_border) == 0, (
+        f"지표 행 위에 아직 구분선이 있습니다: {metrics_border}"
+    )
+
+    EVIDENCE_DIR_05.mkdir(parents=True, exist_ok=True)
+    viewer.locator(CARD).first.screenshot(path=str(EVIDENCE_DIR_05 / "card_dividers.png"))
+
+
+def parseint(value):
+    return int(float(str(value).replace("px", "").strip() or 0))

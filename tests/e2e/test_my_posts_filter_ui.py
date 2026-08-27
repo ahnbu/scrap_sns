@@ -17,9 +17,17 @@ from playwright.sync_api import sync_playwright
 
 CARD = "#masonryGrid article.glass-card"
 MY_BTN = "#myPostsBtn"
+TOTAL_LABEL = "#totalPostsCount"
 
 VIEWER_URL = os.environ.get("SNS_VIEWER_URL", "http://localhost:5000")
 EVIDENCE_DIR = Path(__file__).resolve().parents[2] / "_docs" / "evidence" / "20260826_03"
+EVIDENCE_DIR_05 = Path(__file__).resolve().parents[2] / "_docs" / "evidence" / "20260827_05"
+
+# 상단 라벨은 두 형태뿐이다(계획 _docs/20260827_05 T5·T6).
+#   `2487 건`        - 분모를 붙이지 않는다
+#   `45편 · 68건`    - MY 가 켜졌을 때. 편은 교차 게시를 한 편으로 친 수
+LABEL_PLAIN = re.compile(r"^(\d+)\s*건$")
+LABEL_UNIQUE = re.compile(r"^(\d+)\s*편\s*·\s*(\d+)\s*건$")
 
 
 @pytest.fixture(scope="module")
@@ -65,9 +73,70 @@ def _capture(page, name):
     page.screenshot(path=str(EVIDENCE_DIR / f"{name}.png"), full_page=False)
 
 
+def _capture_05(page, name):
+    """계획 20260827_05 의 증거 캡처. 부모 폴더가 없으면 만든다."""
+    EVIDENCE_DIR_05.mkdir(parents=True, exist_ok=True)
+    page.screenshot(path=str(EVIDENCE_DIR_05 / f"{name}.png"), full_page=False)
+
+
 def _toggle_my(page):
     page.click(MY_BTN)
     page.wait_for_timeout(900)
+
+
+def _click_filter(page, name):
+    page.click(f'button[data-filter="{name}"]')
+    page.wait_for_timeout(900)
+
+
+def _label_text(page):
+    return page.locator(TOTAL_LABEL).inner_text().strip()
+
+
+def _visible_from_label(page):
+    """상단 라벨의 보이는 건수. `N 건` 과 `N편 · M건` 을 모두 받는다.
+
+    ⚠️ 카드 개수로 총량을 재지 않는다. 마소너리가 60장씩 지연 로딩하므로
+       60을 넘는 결과는 전부 60으로 보인다.
+    """
+    text = _label_text(page)
+    matched = LABEL_UNIQUE.fullmatch(text)
+    if matched:
+        return int(matched.group(2))
+    matched = LABEL_PLAIN.fullmatch(text)
+    assert matched, f"상단 라벨 형식을 알 수 없습니다: {text!r}"
+    return int(matched.group(1))
+
+
+def _unique_from_label(page):
+    """`N편 · M건` 의 편 수. 그 형태가 아니면 None."""
+    matched = LABEL_UNIQUE.fullmatch(_label_text(page))
+    return int(matched.group(1)) if matched else None
+
+
+def _pin_sort_saved(page):
+    """정렬을 「로컬수집순」으로 못박는다. 최신순 단언이 이 정렬에서만 성립한다."""
+    page.evaluate("() => localStorage.setItem('sns_sort_order', 'saved')")
+    page.reload()
+    page.wait_for_selector(CARD, timeout=20000)
+    page.wait_for_timeout(1200)
+
+
+def _own_posts(api_posts):
+    return [p for p in api_posts if p.get("is_own_post") is True]
+
+
+def _unique_own_count(api_posts):
+    """교차 게시를 한 편으로 친 내 글 수. 뷰어의 countUniqueOwnPosts 와 같은 규칙."""
+    groups = {}
+    for post in _own_posts(api_posts):
+        day = str(post.get("created_at") or "")[:10]
+        body = str(post.get("full_text") or post.get("full_text_preview") or "")
+        head = re.sub(r"[^가-힣A-Za-z0-9]", "", body)[:40]
+        platform = str(post.get("sns_platform") or "").lower()
+        by_platform = groups.setdefault(f"{day}|{head}", {})
+        by_platform[platform] = by_platform.get(platform, 0) + 1
+    return sum(max(by_platform.values()) for by_platform in groups.values())
 
 
 # --- V6b: API 노출 ---------------------------------------------------------
@@ -98,14 +167,12 @@ def test_my_filter_shows_only_own_posts(viewer, api_posts):
     ⚠️ 카드 개수로 판정하지 않는다. 마소너리가 60장 단위로 지연 로딩하므로,
        내 글이 60건을 넘어가면 켜기 전후 모두 60장이라 `after < before` 가
        거짓이 된다(2026-08-27 내 Threads 글 32건 추가로 68건이 되며 실제 발생).
-       상단 라벨은 `보이는수 / 전체수 건` 이라 지연 로딩과 무관하다.
     """
     _toggle_my(viewer)
     assert viewer.locator(MY_BTN).get_attribute("aria-pressed") == "true"
 
-    own_total = len([p for p in api_posts if p.get("is_own_post") is True])
-    label = viewer.locator("#totalPostsCount").inner_text()
-    visible = int(label.split("/")[0].strip())
+    own_total = len(_own_posts(api_posts))
+    visible = _visible_from_label(viewer)
 
     assert visible == own_total, (
         f"MY 필터 결과가 {visible}건인데 API 기준 내 글은 {own_total}건입니다."
@@ -125,29 +192,44 @@ def test_my_filter_toggles_off_by_reclick(viewer):
     assert viewer.locator(CARD).count() == before
 
 
-def test_my_filter_combines_with_platform_chip(viewer):
-    """플랫폼 칩과 AND 로 결합한다.
+def test_platform_chip_releases_my_filter(viewer, api_posts):
+    """플랫폼 칩을 누르면 MY 가 저절로 풀린다.
 
-    ⚠️ 2026-08-27 이전에는 'Threads 칩 + MY = 0건'을 단언했다. 내 Threads 글이
-       수집 범위 밖이었기 때문이다. `_docs/20260827_02` 로 수집이 붙어 전제가
-       바뀌었으므로 양쪽 다 0건보다 커야 한다.
+    이걸 안 하면 MY 가 켜진 채로 X·YouTube 를 눌러 0건이 뜬다 - 그것도 MY 가 켜졌다는
+    표시 없이. 세 가지 이상 현상이 전부 여기서 나왔다.
+    계획: _docs/20260827_05 (T2)
     """
     _toggle_my(viewer)
-    viewer.click('button[data-filter="threads"]')
-    viewer.wait_for_timeout(900)
+    assert viewer.locator(MY_BTN).get_attribute("aria-pressed") == "true"
 
-    assert viewer.locator(CARD).count() > 0, "Threads + MY 조합이 0건입니다."
+    _click_filter(viewer, "threads")
+    assert viewer.locator(MY_BTN).get_attribute("aria-pressed") == "false", (
+        "Threads 를 눌렀는데 MY 가 켜진 채로 남았습니다."
+    )
 
-    viewer.click('button[data-filter="linkedin"]')
-    viewer.wait_for_timeout(900)
-    assert viewer.locator(CARD).count() > 0, "LinkedIn + MY 조합이 0건입니다."
-    _capture(viewer, "v9_my_filter_with_linkedin_chip")
+    threads_total = len([
+        p for p in api_posts if str(p.get("sns_platform") or "").lower() == "threads"
+    ])
+    own_threads = len([p for p in _own_posts(api_posts) if p.get("sns_platform") == "threads"])
+    visible = _visible_from_label(viewer)
+    assert visible > own_threads, (
+        f"Threads 탭이 {visible}건뿐입니다. 내 글 {own_threads}건만 남은 것으로 보입니다."
+    )
+    assert visible <= threads_total
+
+    _capture_05(viewer, "platform_chip_releases_my")
 
 
 # --- V10: 상태 영속 --------------------------------------------------------
 
 
-def test_my_filter_persists_across_reload(viewer):
+def test_my_filter_resets_on_reload(viewer):
+    """새로고침하면 MY 가 꺼져 있어야 한다.
+
+    저장하던 시절에는 한 번 켜면 브라우저를 껐다 켜도 켜진 채로 남았고, 켜졌다는
+    표시가 화면에 없어 사용자가 빠져나올 방법이 없었다. 저장을 없앤 것이 이 그물이다.
+    계획: _docs/20260827_05 (T3)
+    """
     _toggle_my(viewer)
     assert viewer.locator(MY_BTN).get_attribute("aria-pressed") == "true"
 
@@ -155,10 +237,13 @@ def test_my_filter_persists_across_reload(viewer):
     viewer.wait_for_selector(CARD, timeout=20000)
     viewer.wait_for_timeout(1200)
 
-    assert viewer.locator(MY_BTN).get_attribute("aria-pressed") == "true", (
-        "새로고침 후 MY 토글이 꺼졌습니다. localStorage 저장이 동작하지 않습니다."
+    assert viewer.locator(MY_BTN).get_attribute("aria-pressed") == "false", (
+        "새로고침 후에도 MY 가 켜져 있습니다. 상태가 아직 저장되고 있습니다."
     )
-    _capture(viewer, "v10_my_filter_persisted")
+    assert viewer.evaluate("() => localStorage.getItem('sns_own_posts_only')") is None, (
+        "sns_own_posts_only 가 localStorage 에 남아 있습니다."
+    )
+    _capture_05(viewer, "my_resets_on_reload")
 
 
 # --- V11: 노출수 배지 ------------------------------------------------------
@@ -218,42 +303,46 @@ def test_own_threads_body_is_merged(api_posts):
     )
 
 
-def test_my_filter_shows_threads_own_posts(viewer, api_posts):
-    """MY 필터 + Threads 칩에 내 Threads 글이 실제로 뜬다."""
+def test_my_filter_includes_threads_own_posts(viewer, api_posts):
+    """MY 화면에 내 Threads 글이 실제로 담긴다.
+
+    ⚠️ 플랫폼 칩을 함께 누르지 않는다. 칩을 누르면 MY 가 풀리기 때문이다(T2).
+       MY 는 두 플랫폼을 함께 보여주므로 화면에 Threads 카드가 섞여 있는지로 판정한다.
+    """
     _toggle_my(viewer)
-    viewer.click('button[data-filter="threads"]')
-    viewer.wait_for_timeout(900)
 
-    shown = viewer.locator(CARD).count()
     own_threads = len([
-        p for p in api_posts
-        if p.get("is_own_post") is True and p.get("sns_platform") == "threads"
+        p for p in _own_posts(api_posts) if p.get("sns_platform") == "threads"
     ])
+    assert own_threads > 0, "내 Threads 글이 API 응답에 없습니다."
 
-    assert shown > 0, "MY + Threads 조합에 카드가 없습니다."
-    assert shown <= own_threads, (
-        f"내 Threads 글 {own_threads}건보다 많은 {shown}건이 표시됐습니다. 필터가 샙니다."
+    platforms = viewer.evaluate(
+        """() => [...document.querySelectorAll('#masonryGrid article.glass-card')]
+                 .map(a => a.getAttribute('data-platform'))"""
+    )
+    assert "threads" in platforms, "MY 화면에 Threads 카드가 하나도 없습니다."
+    assert set(platforms) <= {"threads", "linkedin"}, (
+        f"MY 화면에 내 글이 없는 플랫폼이 섞였습니다: {sorted(set(platforms))}"
     )
     _capture_threads_own(viewer, "v10_my_filter_threads")
 
 
 def test_saved_threads_posts_excluded_from_my_filter(viewer, api_posts):
-    """저장글(남의 글)은 MY 필터에 절대 나오면 안 된다."""
+    """저장글(남의 글)은 MY 필터에 절대 나오면 안 된다.
+
+    ⚠️ 플랫폼 칩을 함께 누르지 않는다 - 누르면 MY 가 풀린다(T2). 상단 라벨의
+       건수가 내 글 총수와 정확히 같은지로 판정한다.
+    """
+    own_total = len(_own_posts(api_posts))
+    total_threads = len([
+        p for p in api_posts if str(p.get("sns_platform") or "").lower() == "threads"
+    ])
+    own_threads = len([p for p in _own_posts(api_posts) if p.get("sns_platform") == "threads"])
+    assert total_threads > own_threads, "저장글이 없으면 이 테스트가 무의미합니다."
+
     _toggle_my(viewer)
-    viewer.click('button[data-filter="threads"]')
-    viewer.wait_for_timeout(900)
-
-    own_codes = {
-        str(p.get("code"))
-        for p in api_posts
-        if p.get("is_own_post") is True and p.get("sns_platform") == "threads"
-    }
-    total_threads = len([p for p in api_posts if p.get("sns_platform") == "threads"])
-    assert total_threads > len(own_codes), "저장글이 없으면 이 테스트가 무의미합니다."
-
-    body = viewer.locator("#masonryGrid").inner_text()
-    assert "byungwook.an" in body or viewer.locator(CARD).count() <= len(own_codes), (
-        "MY + Threads 화면에 내 글이 아닌 카드가 섞였습니다."
+    assert _visible_from_label(viewer) == own_total, (
+        "MY 화면 건수가 내 글 총수와 다릅니다. 저장글이 섞였을 수 있습니다."
     )
     _capture_threads_own(viewer, "v10_saved_posts_excluded")
 
@@ -264,7 +353,6 @@ EVIDENCE_DIR_HIDE_OWN = (
     Path(__file__).resolve().parents[2] / "_docs" / "evidence" / "20260827_03"
 )
 
-TOTAL_LABEL = "#totalPostsCount"
 HIDE_OWN_TOGGLE = "#hideOwnPostsToggle"
 
 
@@ -286,22 +374,6 @@ def _close_settings(page):
     page.wait_for_timeout(500)
 
 
-def _visible_from_label(page):
-    """상단 라벨의 보이는 수. `N / M 건` 과 `N 건` 을 모두 받는다."""
-    label = page.locator(TOTAL_LABEL).inner_text()
-    return int(label.split("/")[0].replace("건", "").strip())
-
-
-def _population_from_label(page):
-    """상단 라벨의 모집단(분모).
-
-    ⚠️ 보이는 수로 판정하지 않는다. 사용자가 숨긴 글이 있으면 보이는 수가 모집단보다
-       작아진다(실측: 숨김 3건). 숨김 토글이 바꾸는 것은 모집단이므로 그쪽을 본다.
-    """
-    label = page.locator(TOTAL_LABEL).inner_text()
-    return int(label.split("/")[-1].replace("건", "").strip())
-
-
 # V7 - MY 버튼에서 아이콘을 뺀다
 def test_my_button_has_no_icon(viewer):
     button = viewer.locator(MY_BTN)
@@ -315,10 +387,19 @@ def test_my_button_has_no_icon(viewer):
 
 # V8 - 숨김 토글 기본 켜짐. 목록에서 내 글이 빠진다
 def test_hide_own_toggle_removes_own_posts(viewer, api_posts):
+    """기본 상태(All)의 건수에 내 글이 섞이지 않는다.
+
+    ⚠️ 분모로 판정하지 않는다. 상단 라벨에서 분모를 뺐다(계획 20260827_05 T5).
+       사용자가 숨긴 글이 있으면 보이는 수가 타인 글 총수보다 작으므로 `<=` 로 본다.
+    """
     not_own = len([p for p in api_posts if p.get("is_own_post") is not True])
 
-    assert _population_from_label(viewer) == not_own, (
-        "기본 상태의 모집단에 내 글이 남아 있습니다."
+    visible = _visible_from_label(viewer)
+    assert 0 < visible <= not_own, (
+        f"기본 상태 건수 {visible}이 타인 글 총수 {not_own}을 넘습니다. 내 글이 섞였습니다."
+    )
+    assert _unique_from_label(viewer) is None, (
+        "MY 가 꺼진 상태인데 라벨이 `N편 · M건` 형태입니다."
     )
 
     _open_display_tab(viewer)
@@ -329,19 +410,28 @@ def test_hide_own_toggle_removes_own_posts(viewer, api_posts):
 
 # V8b - 토글을 끄면 내 글이 다시 들어온다
 def test_hide_own_toggle_off_restores_own_posts(viewer, api_posts):
+    """토글을 끄면 보이는 건수가 정확히 내 글 수만큼 늘어난다.
+
+    숨겨진 내 글은 실측 0건이므로 증가분이 내 글 총수와 정확히 같아야 한다.
+    """
+    own_total = len(_own_posts(api_posts))
+    before = _visible_from_label(viewer)
+
     _open_display_tab(viewer)
     viewer.uncheck(HIDE_OWN_TOGGLE)
     viewer.wait_for_timeout(900)
     _close_settings(viewer)
 
-    assert _population_from_label(viewer) == len(api_posts), (
-        "토글을 껐는데 모집단이 전체 건수로 돌아오지 않았습니다."
+    after = _visible_from_label(viewer)
+    assert after - before == own_total, (
+        f"토글을 껐는데 건수가 {before} → {after} 로 {after - before}건만 늘었습니다. "
+        f"내 글은 {own_total}건입니다."
     )
 
 
 # V9 - MY 버튼이 숨김 토글보다 우선한다
 def test_hide_own_toggle_yields_to_my_button(viewer, api_posts):
-    own_total = len([p for p in api_posts if p.get("is_own_post") is True])
+    own_total = len(_own_posts(api_posts))
 
     _toggle_my(viewer)
     assert viewer.locator(MY_BTN).get_attribute("aria-pressed") == "true"
@@ -369,44 +459,139 @@ def test_hide_own_toggle_persists_across_reload(viewer):
     _capture_hide_own(viewer, "v10_toggle_persisted_off")
 
 
-# V11 - 라벨의 `N / M 건` 형태를 지킨다. 기존 테스트가 이 형태를 파싱한다
-def test_total_label_keeps_slash_form(viewer):
+# V11 - 라벨에 분모를 붙이지 않는다 (계획 20260827_05 T5)
+def test_total_label_has_no_denominator(viewer):
+    """분모를 뺐다. 플랫폼별 수집 건수를 단순 합산한 값이라 정확하지 않았다."""
+    plain = _label_text(viewer)
+    assert "/" not in plain, f"라벨에 분모가 남아 있습니다: {plain!r}"
+    assert LABEL_PLAIN.fullmatch(plain), f"라벨이 `N 건` 형태가 아닙니다: {plain!r}"
+
     _toggle_my(viewer)
-    label = viewer.locator(TOTAL_LABEL).inner_text().strip()
-    assert re.fullmatch(r"\d+\s*/\s*\d+\s*건", label), (
-        f"MY 필터 상태의 라벨이 `N / M 건` 형태가 아닙니다: {label!r}"
+    my_label = _label_text(viewer)
+    assert "/" not in my_label, f"MY 라벨에 분모가 남아 있습니다: {my_label!r}"
+    assert LABEL_PLAIN.fullmatch(my_label) or LABEL_UNIQUE.fullmatch(my_label), (
+        f"MY 라벨이 `N 건` 도 `N편 · M건` 도 아닙니다: {my_label!r}"
     )
 
 
-# V12 - 내 글이 최신순으로 보인다 (T1 정렬 수정의 화면 반영)
-@pytest.mark.parametrize("platform", ["linkedin", "threads"])
-def test_my_posts_newest_first_in_viewer(viewer, api_posts, platform):
-    """「로컬수집순」에서 내 글 블록의 맨 위가 그 플랫폼의 가장 최근 글이어야 한다.
+# V12 - 내 글이 최신순으로 보인다 (계획 20260827_03·04 의 화면 반영 확인)
+def test_my_tab_newest_first(viewer, api_posts):
+    """「로컬수집순」에서 MY 화면 첫 카드가 내 글 전체의 최신 글이어야 한다.
 
-    수집기가 최신 글부터 훑어 crawled_at 과 sequence_id 양쪽에 역순을 새기는
-    문제를 total_scrap 의 정렬 키가 바로잡았는지 화면에서 판정한다.
+    수집기가 최신 글부터 훑어 crawled_at 과 sequence_id 양쪽에 역순을 새기는 문제를
+    total_scrap 의 정렬 키가 바로잡았는지, 그리고 계획 04 의 두 플랫폼 병합이
+    화면에 실제로 반영됐는지 판정한다. 이 그물이 사라지면 정렬이 틀어져도 모른다.
 
-    ⚠️ 플랫폼 칩과 함께 건다. 「로컬수집순」은 작성일 전체 정렬이 아니라 수집 묶음
-       단위 정렬이라, MY 만 걸면 맨 위가 마지막 수집 묶음(Threads)의 최신 글이다.
-       플랫폼을 고정해야 "블록 안에서 최신이 위" 를 판정할 수 있다.
-    계획: _docs/20260827_03 (3.2 T1)
+    ⚠️ 플랫폼 칩을 함께 누르지 않는다 - 누르면 MY 가 풀린다(계획 05 T2).
+       계획 04 가 두 플랫폼을 날짜순으로 섞어 놓아 플랫폼 고정 없이도 성립한다.
+    ⚠️ 본문만으로 단언하지 않는다. 내 글 최신 2건은 같은 글을 두 플랫폼에 올린 것이라
+       본문이 사실상 같다. 잘못된 카드가 위에 있어도 본문 대조는 통과해 버린다.
+       카드의 data-platform 을 함께 본다.
+    계획: _docs/20260827_05 (4.2)
     """
-    own = [
-        p for p in api_posts
-        if p.get("is_own_post") is True and p.get("sns_platform") == platform
-    ]
-    assert own, f"내 {platform} 글이 API 응답에 없습니다."
+    own = _own_posts(api_posts)
+    assert own, "내 글이 API 응답에 없습니다."
     newest = max(own, key=lambda p: str(p.get("created_at") or ""))
 
+    _pin_sort_saved(viewer)
     _toggle_my(viewer)
-    viewer.click(f'button[data-filter="{platform}"]')
-    viewer.wait_for_timeout(900)
-    first_card = viewer.locator(CARD).first.inner_text()
 
-    # 목록 API 는 본문 전문을 주지 않는다. 카드에 실리는 미리보기로 대조한다.
+    first = viewer.locator(CARD).first
+    assert first.get_attribute("data-platform") == newest.get("sns_platform"), (
+        f"MY 맨 위 카드의 플랫폼이 {first.get_attribute('data-platform')!r} 인데 "
+        f"최신 내 글은 {newest.get('sns_platform')!r} 입니다. 정렬이 뒤집혔습니다."
+    )
+
     head = str(newest.get("full_text_preview") or newest.get("full_text") or "").strip()[:20]
     assert head, "최신 내 글의 본문이 비어 있습니다."
-    assert head in first_card, (
-        f"MY + {platform} 맨 위 카드가 최신 글이 아닙니다. 기대 본문 앞부분: {head!r}"
+    assert head in first.inner_text(), (
+        f"MY 맨 위 카드가 최신 글이 아닙니다. 기대 본문 앞부분: {head!r}"
     )
-    _capture_hide_own(viewer, f"v12_newest_first_{platform}")
+    _capture_05(viewer, "my_newest_first")
+
+
+# --- 계획 20260827_05 신설 -------------------------------------------------
+
+
+def test_my_button_shows_active_state(viewer):
+    """MY 가 켜지면 화면에서 보여야 한다.
+
+    이게 이번 결함의 근본 원인이었다. `.active` 를 스타일링하는 규칙이
+    `.filter-chip.active` 뿐인데 MY 버튼에 그 클래스가 없어서, 켠 상태와 끈 상태가
+    픽셀 단위로 같았다. 그래서 X 를 눌러 0건이 떠도 이유를 알 수 없었다.
+    계획: _docs/20260827_05 (T1)
+    """
+    def background():
+        return viewer.evaluate(
+            "() => getComputedStyle(document.getElementById('myPostsBtn')).backgroundColor"
+        )
+
+    off = background()
+    _capture_05(viewer, "my_off")
+
+    _toggle_my(viewer)
+    on = background()
+    _capture_05(viewer, "my_on")
+
+    assert viewer.locator(MY_BTN).get_attribute("aria-pressed") == "true"
+    assert on != off, (
+        f"MY 를 켰는데 배경색이 그대로입니다({off}). 켜진 것을 화면에서 알 수 없습니다."
+    )
+    assert viewer.locator(f"{MY_BTN}.active").count() == 1, "MY 버튼에 active 가 안 붙었습니다."
+
+
+def test_my_label_counts_unique_posts(viewer, api_posts):
+    """MY 라벨이 교차 게시를 한 편으로 쳐서 보여준다.
+
+    같은 글을 LinkedIn·Threads 양쪽에 올리면 2건으로 세어져 "내가 몇 편 썼나"를
+    알 수 없었다. 카드는 합치지 않는다 - 플랫폼별 조회수·좋아요가 달라서다.
+    계획: _docs/20260827_05 (T6)
+    """
+    own_total = len(_own_posts(api_posts))
+    unique_total = _unique_own_count(api_posts)
+    assert unique_total < own_total, (
+        "교차 게시가 하나도 없으면 이 테스트가 무의미합니다."
+    )
+
+    _toggle_my(viewer)
+
+    assert _visible_from_label(viewer) == own_total
+    assert _unique_from_label(viewer) == unique_total, (
+        f"MY 라벨의 편 수가 {_unique_from_label(viewer)} 인데 "
+        f"API 기준 중복 제외 수는 {unique_total} 입니다. 라벨: {_label_text(viewer)!r}"
+    )
+    _capture_05(viewer, "my_label_unique_count")
+
+
+def test_viewer_scenario_after_fix(viewer, api_posts):
+    """사용자가 보고한 조작 순서를 그대로 재현해 전부 정상인지 판정한다.
+
+    수정 전 실측(계획 20260827_05 2.3 절):
+      MY 켬 → X 클릭 = 0건 / YouTube 클릭 = 0건 / Threads 클릭 = 내 글 32건만 /
+      All 클릭 = 내 글 68건만. 게다가 그 상태가 영구 저장됐다.
+    수정 후에는 MY 가 플랫폼 클릭 시 풀리므로 모든 단계가 정상이어야 한다.
+    계획: _docs/20260827_05 (4.4 완료 기준 2)
+    """
+    def platform_total(name):
+        keys = {"x", "twitter"} if name == "x" else {name}
+        return len([
+            p for p in api_posts if str(p.get("sns_platform") or "").lower() in keys
+        ])
+
+    _toggle_my(viewer)
+    assert _visible_from_label(viewer) == len(_own_posts(api_posts))
+    _capture_05(viewer, "scenario_1_my_on")
+
+    for step, name in enumerate(["x", "youtube", "threads", "all"], start=2):
+        _click_filter(viewer, name)
+        visible = _visible_from_label(viewer)
+
+        assert viewer.locator(MY_BTN).get_attribute("aria-pressed") == "false", (
+            f"{name} 을 눌렀는데 MY 가 켜진 채로 남았습니다."
+        )
+        assert visible > 0, f"{name} 탭이 0건입니다. 수정 전 증상이 그대로입니다."
+        if name != "all":
+            assert visible <= platform_total(name), (
+                f"{name} 탭 건수 {visible}이 그 플랫폼 총수를 넘습니다."
+            )
+        _capture_05(viewer, f"scenario_{step}_{name}")

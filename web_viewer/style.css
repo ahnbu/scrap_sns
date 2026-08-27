@@ -254,9 +254,10 @@ body.modal-open {
   display: none;
 }
 
+/* 구분선을 두지 않는다. 메모도 「글에 딸린 정보」라 지표·태그와 같은 대접을 받는다.
+   카드에 남기는 가로선은 푸터 위 하나뿐이다. 계획: _docs/20260827_05 (T4) */
 .note-section,
 .note-editor {
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
   padding-top: 0.75rem;
 }
 

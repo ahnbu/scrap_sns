@@ -143,13 +143,15 @@
                   />
                 </svg>
               </button>
-              <!-- 내 게시물만 보기. 플랫폼 칩과 AND 로 결합한다.
-                   계획: _docs/20260826_03 (3.8 T5) -->
+              <!-- 내 게시물만 보기. filter-chip 클래스는 켜짐 상태를 보이게 하려고 붙였다 -
+                   `.filter-chip.active` 가 유일한 활성 스타일이라 이게 없으면 켜도 티가 안 난다.
+                   data-filter 는 붙이지 않는다. 플랫폼 선택이 아니라 별도 토글이다.
+                   계획: _docs/20260827_05 (T1) -->
               <button
                 id="myPostsBtn"
                 type="button"
                 aria-pressed="false"
-                class="flex items-center px-3 py-2 rounded-full bg-surface-glass hover:bg-surface-glass-hover text-gray-300 hover:text-white text-sm font-medium border border-border-glass transition-all whitespace-nowrap"
+                class="filter-chip flex items-center px-3 py-2 rounded-full bg-surface-glass hover:bg-surface-glass-hover text-gray-300 hover:text-white text-sm font-medium border border-border-glass transition-all whitespace-nowrap"
                 title="내가 쓴 글만 보기"
               >
                 MY
