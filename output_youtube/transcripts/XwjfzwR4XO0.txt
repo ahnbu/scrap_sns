@@ -1,0 +1,558 @@
+[00:00]
+One of the things [music] that I don't
+think the AI native people fall trap to
+is that the AI native people understand
+what the capabilities are like today and
+they treat the AI in that very powerful
+way. Versus someone who was using AI
+tools in 2022, they sort of see it still
+as like an assistant. Maybe they're
+misjudging the capabilities. And so what
+we all need to do is we need to sort of
+think like the AI native person, someone
+who just grew up using AI from day one.
+People often are saying, "Okay, what's
+the step-by-step playbook of how to do
+things?" [music] That made sense last
+year. And I think as we're looking to
+where the technology is now, what we
+really need is to give more of this
+context to the AI and then let [music]
+it do its thing. And in some ways it is
+a social skill. It's not just a
+technical skill. Sure, early days of AI
+was how do you prompt it [music] this
+and that way, but ultimately you have to
+treat this more as a colleague, as a
+collaborator. And so then it becomes
+more like a social skill.
+My name is Drew Bent. I lead education
+at [music] Anthropic. My whole career
+[01:00]
+has been focused on tutoring. So my
+parents are educators. I grew up just
+loving learning and loving, you know,
+peer tutoring people at my school. Later
+I founded a tutoring nonprofit, became a
+high school math teacher, and now I'm
+working on AI tutors. Trying to figure
+out what does great tutoring look like
+and more importantly, how do we scale
+that up? A world-class education to
+everyone everywhere. It was worth
+fighting for, but to do it at scale was
+always going to be the challenge. But
+now finally with AI, we're finally able
+to take something that was previously
+only available if you had that amount of
+money and now [music] bring it to the
+whole world.
+One of the things that I think holds us
+all back is we give AI tools pretty
+simple problems when we could be giving
+them much more complex problems. And so
+that's the thing that I've struggled
+[02:00]
+with where you kind of know the AI
+models of you know, last year and so you
+sort of give it a problem that was like
+the hardest type of problem that AI tool
+could have done last year. But then when
+I look at my colleagues, they're doing
+all sorts of powerful things that the AI
+tools were there able to do all sorts of
+things that I didn't even know were
+possible. And so a lot of this is just
+kind of seeing what others are doing.
+Being able to open up your eyes to what
+the current AI models are able to do
+today and then lots of experimentation.
+Ultimately, you're going to need to feel
+it yourself. You're going to need to be
+the one to go in and try it out. But
+what that means is you're constantly
+going to need to be raising your
+ambition of the type of problems. You
+were probably hand-holding these AI
+tools originally, but how can you start
+to give it more latitude to actually
+make more judgment calls?
+But then I've also spent time in places
+like Rwanda and India where people are
+AI native. Like some of the first
+technology they've been using outside of
+just, you know, cell phone and WhatsApp
+technology are AI tools. And of course
+there's a lot of similarities, but one
+[03:00]
+of the things that I don't think the AI
+native people fall trap to is that the
+AI native people understand what the
+capabilities are like today and they
+treat the AI in that very powerful way.
+Versus someone who was using AI tools in
+2022, [music]
+they sort of see it still as like an
+assistant. Maybe they're misjudging the
+capabilities. [music]
+Someone who may have never played with
+this technology before in some ways has
+the upper hand because they can kind of
+see what the technology's capable of
+today and where it's headed.
+>> [music]
+>> And so what we all need to do is we need
+to sort of think like the AI native
+person, someone who just grew up using
+AI from day one and say, "What are the
+models capable of today and what will
+they be capable of tomorrow?"
+Elevating our ambition with what we can
+do with these AI tools as the AI tools
+get smarter. Where can I push you
+further? Where can you push me further?
+And you really need to elevate your
+ambition with what is possible with
+these tools and always be pushing
+yourself [music] to the limits of trying
+things that are not quite possible in
+today's AI models or today's hardnesses
+[04:00]
+because then when the next model comes
+out, you try [music] that same thing and
+then you're at the cutting edge of
+something that no one else has figured
+out they could do. We as humans are very
+used to linear or like static things.
+[music] And so it's like you have a
+colleague and every day you come in to
+work,
+>> [music]
+>> they're just getting exponentially
+better. We as humans don't have a a way
+to think about that and so you're always
+treating your colleague like they had
+the capabilities from last month. But
+actually it could have doubled in the
+past month. And that's like a really,
+really hard thing to grok. But those I
+find who are really, really good at
+using the AI tools [music] are treating
+it like something that is gone from an
+assistant to collaborator. And
+eventually, if we're looking ahead,
+there will be in some cases I think this
+inversion of control where actually the
+AI model is doing some of the highest
+level strategic [music] thinking and
+then delegating to you the human for the
+areas that require human taste, human
+agency.
+There was a study that Anthropic did
+[05:00]
+recently, one of our research fellows,
+where they looked at it particularly
+with coding education and CS education.
+And what they did is they created two
+groups. Both had to do some assignment,
+coding assignment. One of them could use
+AI tools, one group couldn't. And what
+they found of course, as you may expect,
+is the the group that could use the the
+AI tools were able to, you know, finish
+the assignment much quicker. But what
+they then did is they had a separate
+assessment afterwards where they
+couldn't use AI at all in either group
+to assess their understanding of the
+concepts that they had [music] just used
+in that assignment before. And what they
+found is that the group that didn't use
+AI tools actually performed [music] 17%
+better. They understood the concepts
+better because they had sort of slogged
+through this work without AI and they
+really had to internalize it. And that's
+I think the warning for all of AI in
+education is that the more we use these
+tools,
+>> [music]
+>> the more it raises questions of this
+like skill atrophy. Now the good news
+with that particular study was that not
+all of them did worse. And actually the
+[06:00]
+ones that were using the AI tools not in
+such a transactional way, but more of an
+an inquiry way and they were probing and
+asking questions, they actually were
+able to perform well on the final
+assessment. How you use the AI tools
+really matters. It's not just that
+you're using them or not using them,
+it's the way in which you're engaging.
+What is your goal when you show up to
+this AI tool? Are you just trying to get
+the task done as quickly as possible?
+And we all fall trap to that. Or are you
+really trying to maybe do the task, but
+also get better and smarter as you're
+doing it. People often go to the AI tool
+just with a particular solution in mind
+and you ask a very particular question
+cuz you're trying to get that solution.
+Where really the best practice is
+probably to come with the problem, not
+the solution. And say, "This is the
+thing I'm wrestling with." And you know,
+maybe you know some potential solutions,
+but actually [music] when you just come
+into an AI bot with the particular
+solution, it's going to give a very
+narrow answer around that. Versus if you
+come with a much more open-ended
+problem, the AI models of today are
+[07:00]
+actually pretty good at helping you
+wrestle with this problem. In 2026, we
+can come with the hairier problem and
+really try to get that input from the AI
+tool. One misconception I think that's
+out [music] there is that all this
+learning is going to take place in the
+form factor of an AI chatbot.
+Ultimately, we need to think 10x about
+what those formats and what this this
+media looks like in which you're
+engaging with an AI. And I don't think
+we've quite cracked it in 2026, but let
+me give you a preview of what I see
+happening at Anthropic and beyond.
+Claude Code, this is, you know,
+Anthropic's coding agent. It was not
+meant for learning.
+And yet we've seen people use it to
+learn in very creative ways. Not things
+like coding, just general things.
+Learning a new language, learning some
+economics concept. And what they'll do
+is, you know, they'll go into Claude
+Code and they'll start to build this
+memory and this context about what
+they're learning, about who they are,
+about how they learn best. And so it
+ultimately becomes this coach. As you
+start to see these coding agents and
+[08:00]
+people using them in ways that are kind
+of unexpected, [music] I think it's
+pointing at where things are headed with
+learning. And now we're headed into a
+world where I think the interfaces are
+going to be much richer.
+I've done the stopwatch activity before
+and I found that sometimes it's actually
+increasing the amount of time I'm
+spending on a task versus if I just done
+it by hand. But I think that is expected
+where we are right now in this
+exponential in 2026, especially if you
+go back to this idea that we always need
+to be pushing the limits of what's
+possible. So I wouldn't recommend taking
+everything in your life and trying to
+use AI for it when it doesn't make
+sense. But I do think you can assume
+that there's some fraction of your time
+you should spend experimenting and it's
+like R&D, research and development. You
+may be losing a little time here and
+there, but you're sort of understanding
+the limits of these tools. Some fraction
+of our time we should be pushing the
+limits and what it may mean is that
+today you're actually wasting a little
+time to use these tools, but tomorrow
+you will be saving time.
+[09:00]
+AIs have become quite powerful as we all
+know, but of course they're only as
+powerful as the context you give them.
+And I would say this is probably the
+biggest gap when I look at people who
+are excellent at using AI tools versus
+not. If you give the AI enough context,
+it can actually usually do pretty well
+with most types of tasks. [music] So
+when I go to the AI tool, I actually
+spend most of my time before I even ask
+my question throwing in all the context
+I can about other documents I've
+written, you know, the company I work
+at, the questions I'm thinking about.
+Maybe I'll even throw in a stream of
+consciousness of thinking I've done
+around this topic. And so the AI models
+can take in a lot of context and bring
+it all together. But what they're not
+going to be able to do is with very
+little context just reason their way
+through the world because they won't
+understand how you're thinking about it.
+But it was around a year ago that we
+looked into the data around how people
+were using the tool and we knew that
+people were using Anthropic for coding
+[10:00]
+and software development and work. But I
+think what surprised us was that one of
+the top use cases was also educators
+using it, students using it. But when we
+looked further into the data, we were a
+little dismayed around how people were
+using it. And often it was being used as
+kind of a crutch, you know, very
+transactionally. Students were just
+going in and asking for, you know,
+answers to their homework. And And those
+are the things that I mean, honestly,
+keep me up at night.
+When it comes to education, there's been
+a lot of research showing that
+one-on-one tutoring can be one of the
+most effective ways to learn. And so
+that's why I think there's sort of like
+elusive dream in AI and and technology
+and education has been, how do we scale
+up this truly personalized learning? But
+I will say there's a little more than
+just that, because we want learning
+that's personalized, but you also hear
+it in the word personalized. We want
+learning that is personal. And
+ultimately, that's human-to-human
+interaction. And you go to school not
+just to learn particular algebra concept
+or some historical figure, you go to
+learn to also how to interact with your,
+[11:00]
+you know, fellow citizens and your, you
+know, colleagues and your friends. And
+so when we think about the role of AI in
+education, how can we have AI further
+the human-to-human connections in the
+classroom, putting humans at the center?
+What I would love to see if you go into
+a classroom [music] in 2030 is you walk
+in and you don't even see the
+technology. And it's operating behind
+the scenes, you know, maybe teachers are
+using save time and build personalized
+lesson plans and group students. It's
+just a rich learning environment and
+something that you may see right now if
+you go into, you know, a private school,
+you have the resources to build this
+type of environment, but you bring that
+type of education to every school. I'm
+in a WhatsApp group with teachers across
+the world, actually in a bunch of
+different countries. [music] And every
+morning I wake up, I'll see new WhatsApp
+messages from these teachers where
+they're sharing about how they built,
+you know, these custom tools [music]
+with AIs like Claude. And it's not just
+like custom lesson plans, I think that's
+like the first level, but these are
+[12:00]
+teachers who are building, you know,
+flashcard apps for their students
+[music] and, you know, formative
+assessments. And they're able to sort of
+just envision something that previously,
+you know, you could have thought about,
+but it may take a year to build a new
+curriculum, a new lesson plan, a new way
+to assess your students. And they can
+just every morning wake up, come up with
+this idea, build the tool with, you
+know, Claude or Claude Code or Claude
+Artifact, and then just deploy it in
+their class with their students. And it
+just builds for a much, much richer
+learning environment. What I'm excited
+about in 2030, I'll sort of paint a
+picture of what I think this could look
+like. So first of all, these AI tools
+are going to need to know a lot about
+your context. Let's say you're a student
+in school, they're not just going to be
+using some generic curriculum. They're
+going to know the context of your
+school's curriculum, your state
+curriculum, and they're going to be able
+to tie everything back to that. So one,
+they know more about your context. Two,
+they're going to know more about you.
+You know, I was a teacher before, and it
+would have been very disappointing to
+all my students if every time I walked
+into the classroom, I said, "Oh yeah,
+[13:00]
+remind me, what are you working on? And
+what do you know?" And And that's the
+type of interaction we're having right
+now in 2026. [music]
+And I think where we have to head is a
+world where this is a real learning
+companion and it understands where
+you're coming from and you get to choose
+to give it [music] this context so that
+you're growing with it and AI tool is
+also growing with you.
+So I've known Sal Khan since I was a
+high schooler when I first interned at
+Khan Academy. And Sal Khan, before he
+created Khan Academy, he was doing
+one-on-one tutoring with his cousins
+over Skype. And so actually his initial
+vision with Khan Academy was, how can I
+scale this type of tutoring to more
+people? But of course, Khan Academy was
+sort of based on YouTube videos. And so
+in 2020, we started to wonder, how else
+could we recreate this one-on-one
+tutoring experience with Sal Khan, but
+make that available to everyone? And so
+that's why we built this peer-to-peer
+[music]
+tutoring platform called Schoolhouse,
+where anyone in the world log on and
+receive free [music] peer-to-peer
+[14:00]
+tutoring in subjects like math, science,
+test prep. And then also, if you want to
+give back, you can go volunteer and be a
+tutor. What we notice with Schoolhouse
+is that if we create a global learning
+community, there's actually more shared
+elements than you may initially think.
+I've tutored, [music] you know, tutoring
+sessions on Schoolhouse where I have
+someone from Russia, someone from
+Colombia, someone from the US, and
+someone from China, all in the same Zoom
+call together, learning the same topics.
+And then the students will start to
+share, "Oh, in my school, we learn it
+this way. In my school, we learn it that
+way." [music] And there's been something
+kind of magical where you can actually
+bring people together, the world feels a
+lot smaller, and you have these high
+schoolers learning together and also
+[music]
+forming connections that were previously
+not have been possible. And so to
+actually bring them into the same room,
+to have them learn together, I think
+it's just [music] incredible. For me, an
+incredibly compelling way to scale up
+tutoring. Sure, AI tutoring is a part of
+it and
+>> [music]
+>> we're going to have amazing AI tutors.
+At the same time, there's a a personal
+[15:00]
+dynamic to it. And having someone who
+cares about your progress, who holds you
+accountable is equally important, if not
+more important.
+We essentially have birthed this new
+[music] species
+of artificial intelligence into the
+world. And then when I think about my
+own education experience, I went through
+15-plus years of school learning how to
+interact with other humans. [music] But
+now we're entering in a a world where we
+have another type of being, which is
+artificial intelligence, which is going
+to be in our workplaces as a colleague.
+You're going to just see it show up in
+Slack one day as as a coworker. It's
+going to be showing up in schools. This
+is a whole type of different skill,
+which is, how do you not just interact
+with other humans productively, but how
+do you collaborate with an AI? And in
+some ways it it is a social skill. It's
+not just a technical skill. Sure, early
+days of AI was, how do you prompt it
+this and that way? But I think that era
+is over. We're We're done with the days
+of just like technical like, how do you
+[16:00]
+prompt? But ultimately, you have to
+treat this more as a colleague, as a
+collaborator. And so then it becomes
+more like a social skill. Like, what is
+the way in which I can interact with an
+AI so that it understands more about
+what I'm looking for, [music] I
+understand more about how the AI works.
+And that's like a type of dialogue that
+is similar to how we're building these
+social skills with other humans. Now
+we're going to be in a very multifaceted
+environment where you have multiple
+humans working with shared AIs. And
+that's why I keep going back to this
+idea of practice and reps. You just
+spend time with an AI,
+>> [music]
+>> sort of treating it more like a
+colleague, interacting with it,
+understanding its limitations today, its
+capabilities. But that's going to come
+through practice and repetitions.
+We should all be having dozens or
+hundreds of agents working for us. So
+over time I built up this team of 40 AI
+marketing agents to work with me. I'm
+the only marketing person at Related
+Dev. I have an AI coach that once a week
+tells me, here are the themes that seem
+to be really working well or the styles
+that are working really well for you. Do
+[17:00]
+more of this, do less of that. That's
+why I've had a few very successful posts
+on LinkedIn. So for example, the post
+was, here are the 40 marketing agents
+that I actually use. And that post so
+far has 1.5 million impressions and the
+most comments ever on a LinkedIn post.
+If your job is as a junior content
+marketer to take a [music] YouTube video
+and write a blog post based on that
+YouTube video, that job won't exist
+anymore. A high-quality marketing
+contractor, let's say I had four people
+at $12,500 per month each, that would be
+$50,000 a month and my AI bill is $500 a
+month. Building AI agents is the
+fundamental skill that will define every
+professional's career for the next 30
+years. It's a requirement. In the same
+way that knowing how to use spreadsheets
+like Microsoft Excel was a requirement
+for the last 40 years, knowing how to
+build AI agents is a requirement for the
+next 40 years. We are all using it for
+probably 1% of what we should be using
+it for. Here's what I'll say.
+AI is way under hyped.
+[18:00]
+>> [music]

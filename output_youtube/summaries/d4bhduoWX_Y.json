@@ -1,0 +1,18 @@
+{
+    "video_id": "d4bhduoWX_Y",
+    "model": "gemini-3.7-flash-medium",
+    "prompt_version": "v2",
+    "prompt_sha1": "1a2446b042d7b917482477d5da5cda70874b56c5",
+    "generated_at": "2026-08-27 13:22:31",
+    "summary": "[요약] AI 에이전트 스킬 3종의 특징을 비교하고 상황별 적합한 도구 선택 기준을 제시한다.\n\n- Matt Pocock Skills는 사용자가 통제권을 쥐고 필요한 스킬만 골라 쓰는 가벼운 도구 상자다.\n- Superpowers는 브레인스토밍부터 테스트 및 검증까지 자율 작업을 강제하는 완결형 방법론이다.\n- GStack은 기획부터 브라우저 QA와 배포까지 전 과정을 아우르는 풀스택 가상 전문가 팀이다.\n- 프로세스를 프레임워크가 주도할지 개발자가 주도할지에 따라 적합한 도구를 선택해야 한다.\n\n[상세]\n대표 에이전트 스킬 3종의 핵심 철학과 동작 방식\nMatt Pocock Skills는 고전 소프트웨어 공학 원칙 기반의 마크다운 문서로 구성되어 가볍고 모델 종속 없이 필요한 순간 슬래시 커맨드로 호출합니다. 반면 Superpowers는 훅 기반으로 자동 발동하여 브레인스토밍과 서브에이전트 리뷰 및 테스트 주도 개발을 강제해 에이전트의 이탈과 나태함을 막습니다. GStack은 Y Combinator CEO Garry Tan이 공개한 도구로 CEO 리뷰와 디자이너 및 보안 감사를 포함하는 가상 엔지니어링 팀 형태로 동작합니다.\n\n커버 범위와 프로젝트 성격에 따른 도구 선택 기준\nMatt Pocock Skills와 Superpowers는 주로 코드 구현 품질에 집중하지만 GStack은 실제 크로미움 기반 브라우저 QA와 배포 후 모니터링까지 전 주기를 지원합니다. 숙련된 엔지니어가 직접 제어할 때는 가벼운 Matt Pocock Skills가 유리하고, 장시간 자율 작업과 프로세스 강제가 필요할 때는 Superpowers가 적합합니다. 제품 전 과정을 혼자 구축하는 1인 빌더나 다층 리뷰가 필요할 때는 GStack을 권장하며, 팀 협업이나 대형 프로젝트에는 BMAD나 GitHub Spec Kit 같은 스펙 주도 도구를 고려할 수 있습니다.",
+    "transcript_sha1": "ab3b8d61836d62115ce8bceaf78b9a8322b19eac",
+    "usage": {
+        "input_tokens": 36271,
+        "output_tokens": 1228,
+        "thinking_tokens": 771,
+        "cache_read_tokens": 0,
+        "total_tokens": 37499
+    },
+    "duration_seconds": 5.1946872,
+    "agy_conversation_id": "43f4cccd-f925-4ae1-80bd-520e1a5e310b"
+}

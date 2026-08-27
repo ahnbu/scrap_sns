@@ -1,0 +1,421 @@
+[00:00]
+So, Open AI just released this
+open-source repo called Symphony. On the
+surface level, it looks like a
+orchestrator that allow you to manage
+coding agents through ticket tracker
+like linear, but it is a lot more than
+just connecting linear. It's a totally
+different way of interacting with
+agents. So, the way we use coding agent
+has shifted a lot for the past few
+months. From initially just the
+auto-complete to primarily interactive
+session with coding agent to now most of
+us around two or three different
+sessions in parallel, each working
+isolated work tree for different
+features or bug fixing. And then new
+tooling like Super set or conductor that
+has been introduced to help you run and
+manage different interactive coding
+sessions easier. The problem is that
+even with those tools, many people,
+including myself, will feel this burden
+when we are working on more than like
+three different sessions cuz we just
+can't context switch every minute. And I
+personally have had multiple times
+sending the wrong instruction to the
+wrong thread. So, ceiling of how much we
+can get out from those coding agent is
+no longer the model capability, but our
+own attention and cognitive load. And
+the recent project Symphony is so
+[01:00]
+interesting is that Open AI's
+engineering team had this realization
+that the current experience has been
+orienting around coding session, merge
+PRs, but in reality for the past
+decades, software workflow are largely
+organized around deliverables, things
+like issues, tasks, tickets, milestones.
+Engineer leaders have been managing
+massive amount of tasks across thousands
+of workers, not by reviewing everyone's
+PR, but looking at final outcomes using
+tools like linear and Atlassian. And
+Open AI's proposed solution is move
+human up a level. Instead of managing
+two three interactive sessions, you
+manage tickets. The agent works at
+ticket level, report back through the
+ticket itself, and you stay in the loop
+without monitoring individual sessions.
+The ticket tracker becomes state machine
+itself. And the way Symphony makes this
+work is almost embarrassingly simple,
+but very effective. It's a background
+process. You run it once, point to a
+workflow file, which we'll talk a bit
+more, and then it runs forever. Every 30
+seconds, this background process will
+glance through your linear board. If it
+finds any ticket in to-do slots, it will
+set up an isolated workspace and start
+agent in that workspace. And the whole
+[02:00]
+system has three key components. One is
+the scheduler, the background process
+that is pulling ticket data and set up
+workspace, manage session life cycle,
+and a workflow.md file that lives inside
+your repo. It contains configuration of
+scheduler and detailed instruction for
+coding agent to know how to work with
+those ticketing system. And those
+external system like linear is a durable
+state machine for human to interact with
+agent. And this whole setup is actually
+very flexible. You don't have to use
+linear. You don't have to use Code X.
+You can actually customize to whatever
+you want. But overall implementation
+concept is what's interesting. And the
+most interesting part is this
+workflow.md file. It basically break
+down into two parts. The top part is the
+YAML front matter. It configures
+scheduler directly, like which linear
+project it is, what type of ticket it
+should pick up, where should agent
+create isolated workspace, and even
+programmatic hooks to run after it set
+up the workspace. And this is very
+useful, so you no longer need to rely on
+agent to set those things up. As well as
+how many agents can be run in parallel
+and specific agent settings. And after
+that, the bottom half is a markdown
+file. This is the prompt agent every
+[03:00]
+single turn details rendered in. It's a
+standard operating procedure for
+handling tickets in this repo. How
+should agent plan task? How should agent
+go validate its work? And what would be
+considered as done? And when should
+outreach for human review? And what I
+love about this design is that the same
+file just live inside your repo, so it's
+version controlled and can be changed
+through normal pull request. And the
+file itself contains some programmatic
+rule that controls scheduler and also
+what an agent does. There's no separate
+config service, no admin panel, no UI at
+all. And the team only code base on this
+workflow. So, when you onboard a new
+agent capability of adding new step in
+the process, you just very easily change
+this markdown file, and the rest will
+just follow. And this whole system is
+designed very flexible. You don't have
+to use Code X, and you don't have to use
+linear. They have one example
+implementation in Elixir, which is a
+programming language. But they have this
+spec.md file that's detailing how this
+framework or system is designed. So, you
+can just drop this file to any coding
+agent and ask it to build and design a
+system in any programming language.
+There are already a lot of different
+[04:00]
+community attempts. Like someone
+building custom TUI based on the task
+data. And also another person already
+rebuilt it to support Cloud Code as
+agent harness. And I'm going to show you
+step by step how you can set these
+things up. But orchestrating agent is
+only part of the work. As Open AI
+mentioned, this whole thing only works
+if your coding agent's environment is
+set up properly in a way that it can
+complete tickets end-to-end atomically,
+which you can call it harness engineer,
+but fundamentally just whether your
+environment or code base has been set up
+in the right way, so agent has
+everything it needs to complete task
+end-to-end. And typical things like is
+the system bootable, so agent can just
+run a script to get everything set up
+without spending time to figure that
+part out. And does the system has a
+proper documentation structure for
+different things. And I think most
+people does have these two things
+properly set up in your code.md or
+agent.md file. But the part I think most
+of team didn't set up is those
+self-verifying tools. They allow agent
+to do an end-to-end test after
+implementing something. And even submit
+a video recording to prove that it have
+tested and it's working in the ticket
+directly just like in their demo. But in
+[05:00]
+the doc, they didn't really mention how
+they were handling this part. So, I did
+some research across many major skills.
+And the best one I found is this
+Playwright CRI tool. So, I believe many
+of us are pretty familiar with
+Playwright MCP, which allow agent to use
+the browser and do a task, check the
+logs. But the problem before was that
+Playwright with MCP setup, it took a
+huge amount of tokens in context window
+even when it's not needed. But they have
+released this Playwright CRI tool
+alongside agent skill that detailing
+every single comment. And the most
+interesting comment is this video
+recording CRI. So, Playwright allow
+agent to run commands like video start
+and video stop to capture browser
+session into a MP4 or WebM video. They
+even have some pretty advanced video
+rendering capability where they can add
+different chapter on the screen. Like
+here's one example video where it can
+record its own session and even add new
+HTML element on top of the screen to
+annotate the action the agent took. And
+then upload session into linear, so you
+can very easily verify if things
+actually work. And as far as I know,
+[06:00]
+other tools like Chrome DevTools MCP or
+agent browser don't have this video
+capability out of box. So, this is one
+very important skill that will make your
+whole experience complete. And
+meanwhile, there are also other skills
+that you should add. And I just take one
+of the repo I have as example. We have
+this Playwright CRI tool that has a
+skill as well as a list of reference for
+agent to know how to like record a video
+and tracing the debug logs. And we also
+have a skill here to tell agent how to
+start server locally. And because ours
+is pretty straightforward, so it's just
+a skill file. But sometimes for more
+complicated things, you can create
+predefined script as well. So, agent no
+longer spends cognitive power on those
+type of stuff. And meanwhile, I also
+created this linear skill that allow
+agent to know how to operate linear
+tickets by using linear API as well as
+things like upload video evidence of the
+test. And we actually have more
+documentations about different parts of
+system. And in the agent.md or cloud.md
+file, this is where we have a proper
+index of different documentation
+systems, so you can always go and find
+the relevant information. We also give
+more detailed debugging skills. For
+example, we use Grafana to track and
+store all the logging in production. And
+[07:00]
+we add a relevant Grafana log skill in
+our repo, so the agent can fetch real
+production logs for bug fixing. And all
+those things are try to serve one
+purpose, which is setting up your code
+base so that your agent can fix bug,
+building new features, verify things are
+working fully atomically end-to-end. I
+put all skills inside AI Build Club, so
+you can copy-paste and ask your agent to
+customize for your own code base. I put
+the link in the description below, so
+you can join and access. And once you
+set this up, even though you don't use
+Symphony, they're still going to be
+really useful. But after that, this is
+where we can start setting up the
+Symphony, connect to linear, as well as
+this workflow.md file. So, once you
+clone the Symphony repo, you'll see
+folder like this. You'll have this
+folder of Elixir. So, this is one
+version implementing Elixir programming
+language from Open AI. And most of the
+time, you can just use this Elixir
+directly. But if you want to customize
+it to like connect not linear, but
+connect to Trello or Jira, you can ask
+coding agent to customize it or even
+building a different language by
+pointing to spec.md file. And here's
+basically what I did in Python folder. I
+just point to spec.md file and ask it to
+[08:00]
+build a new version in Python. But most
+of the time, you actually don't need to
+do that. You can just reuse what Open AI
+provided. And firstly, you can confirm
+whether the script is So, you can run
+script by doing this, which point to the
+Symphony program that has been built.
+And run help. So, this should show you
+the actual command about how to run
+Symphony. You basically just do Symphony
+and point to a path to workflow.md file.
+And by default, you can't just run the
+Symphony like this. You can run this to
+bind Symphony command to the specific
+path. So, just run this. And then you
+can do Symphony, point to a specific
+workflow.md file. And by default, it
+will give you this warning. Then you can
+add this argument to the command, which
+will set our Symphony background process
+like this. It will track all the tasks,
+show you the project, and next refresh
+time. It will track a specific linear
+project you set up every 30 seconds. If
+there any ticket in to-do, it will pick
+up and show up in this list. And all
+those configurations are actually
+defined in workflow.md file. So, in
+workflow.md file, at the front matter,
+there is a project slug. And Symphony
+script will basically read that
+[09:00]
+metadata,
+importing information from a specific
+project. Same thing for all the other
+configurations, like how frequently it
+should pull the ticket data, what are
+things it should do after setting up a
+new workspace, how many agent can be run
+at the same time, and the Code X
+configuration. But once you set up this,
+it's basically monitoring the specific
+Symphony repo with Elixir
+implementation. What we want to do is
+apply this to your own workspace. It's
+actually pretty straightforward. You can
+just open any coding agent like Code X
+or Cloud Code, point to the spec.md file
+and say, "I want to set up Symphony for
+my repo, and we will reuse the Elixir
+implementation here, and help me build
+the workflow.md file for my repo." With
+just one command, coding agent is smart
+enough to look at your own repo and
+design a workflow.md file inside there.
+And this is the one it created for me,
+including the project slug and API key
+and all the other configurations. But
+you do need to set up linear first. If
+you haven't created linear account yet,
+just go create a one and then add a new
+project. And in this project, click on
+the button here, you can just paste into
+your coding agent. This thing in the
+[10:00]
+middle here is a project slot, or you
+can manually paste into the workflow.md
+file as well. And meanwhile, you need to
+get a linear API key, which you can get
+by clicking on settings, security and
+access, and add a new personal API key
+here. And once you did that, you should
+run this command, which will save the
+linear API key globally on your
+computer. So, every time when agent try
+to use linear, it can access any
+projects you have access to. And there
+are some configuration you should do,
+which is status. So, Symphony out-of-box
+are designed for some specials status
+control flow, like human review status
+and also merging status. Once you put a
+ticket into do, Symphony will
+automatically pick up and put that in
+progress and trigger an agent session.
+And once agent finish the work, it will
+change to human review status, so that
+you can review the work. And once
+finished, you can set the status to be
+merging, which will trigger the agent
+automatically raise a PR from this work.
+And once you did all that, you can do
+run Symphony past through your
+workflow.md file, plus this I understand
+that this will be running without the
+usual guardrail comment. And now
+Symphony will be working and picking up
+all the tickets in your project here. To
+[11:00]
+make it easier, you can also create a
+new view, set up this board, so that you
+get this kind of Kanban experience. But
+to just test, I can just create ticket
+change the landing page hero copy from
+your company on autopilot to your AI
+growth team, and the set up the status
+to be to do. And this should trigger our
+agent here. If I go back here, you can
+see this time it pick up this ticket,
+and then you can see the agent session
+show up, and then last agent message
+here. And depends on your settings, you
+can also go check this workspace. You
+can see inside this workspace, it has
+one workspace per ticket. So, each one
+is running isolated environment. And
+this example implementation also has uh
+kind of web UI dashboard that you can
+visit, and this will list out similar
+information you will see in terminal
+here. Not particularly useful, but I
+just thought I'd mention this. And you
+can see after a while, this agent
+changes ticket to in progress status,
+which reflect in our linear board as
+well. And if I click on that, agent made
+a plan and logged all the steps it did.
+After a few minutes, the agent check off
+every single items on the checklist, and
+upload a video recording to verify
+[12:00]
+things are working. And as a human, I
+can just very easily see if things are
+working or not. And once I mark
+something as merging, it will also
+create a PR for me. So, this is a whole
+end-to-end process and how you set
+things up. It definitely feels like
+future. If you hit any blockers, I have
+more detailed step-by-step breakdown, as
+well as all skills posted in the AI
+Build Club. Every week, we have workshop
+to go through those latest learnings and
+answer any questions. So, if you're
+interested, you can click on the link
+below and join our next batch. But this
+is project Symphony, how it works and
+what's the implications. If you found
+this video useful, please give me a
+subscribe and comment below. Thank you,
+and I see you next time.

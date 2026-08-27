@@ -1,0 +1,18 @@
+{
+    "video_id": "MVIkG2rL7nM",
+    "model": "gemini-3.7-flash-medium",
+    "prompt_version": "v2",
+    "prompt_sha1": "1a2446b042d7b917482477d5da5cda70874b56c5",
+    "generated_at": "2026-08-27 13:02:08",
+    "summary": "[요약] Claude Code의 터미널 출력을 압축해 토큰을 절약하는 오픈소스 RTK를 소개한다.\n\n- RTK는 Claude Code가 실행하는 터미널 시스템 출력의 노이즈를 압축해 토큰 소비를 크게 줄여주는 오픈소스 도구이다.\n- PreToolUse 인터페이스 기반의 후킹 기술과 Rust 언어를 활용해 속도 저하 없이 명령어를 가로채고 출력을 단축한다.\n- 파일 탐색, Git diff, 테스트 러너 등 대형 프로젝트의 반복 출력이 많은 작업일수록 토큰 절감 효과가 두드러진다.\n- 정보 압축에 따른 손실 위험이 존재하므로 안정성을 고려한 업데이트 흐름을 확인하며 보조 도구로 활용하는 것이 좋다.\n\n[상세]\nRTK의 핵심 원리와 명령어 압축 방식\nClaude Code는 문제 해결을 위해 터미널 명령어를 실행하며 이때 발생하는 방대한 시스템 출력이 전부 입력 토큰으로 소모됩니다. RTK(Rust Token Killer)는 grep, find, ls, git diff, npm test 같은 주요 명령어의 불필요한 노이즈를 제거하고 핵심 정보만 압축해 전달합니다. 성공한 테스트는 요약 결과만 넘기고 실패 시 에러 로그만 표시하는 등 복잡한 출력을 단축하여 토큰 낭비를 줄입니다. 특히 탐색 대상 소스 파일이 수천 개에 달하는 대형 프로젝트일수록 토큰 절감 효과가 극대화됩니다.\n\n후킹 동작 구조와 실전 활용 시 고려사항\nRTK는 PreToolUse 인터페이스에 RTK Rewrite를 연결해 Claude가 실행하려는 명령어를 가로채 RTK CLI로 실행하는 후킹 구조를 가집니다. 빠른 속도와 안전성을 갖춘 Rust 기반으로 제작되어 중간 중계 과정에서 발생하는 속도 저하 오버헤드가 미미합니다. SWE-Bench 데이터셋 기반 테스트로 검증되었으며, 지나친 정보 압축으로 인한 재작업 가능성 등의 트레이드오프는 안정성 중심의 업데이트를 통해 보완되고 있습니다. 사용자는 rtk gain 명령어로 절감량을 정량적으로 확인하며 바이브 코딩의 토큰 절약 보조 도구로 활용할 수 있습니다.",
+    "transcript_sha1": "9d9945c39110eca6443095674f18806d5f84b12c",
+    "usage": {
+        "input_tokens": 24220,
+        "output_tokens": 1748,
+        "thinking_tokens": 1263,
+        "cache_read_tokens": 0,
+        "total_tokens": 25968
+    },
+    "duration_seconds": 6.2999318,
+    "agy_conversation_id": "8678e3fe-f39d-41fd-9c3f-983999ccc8f9"
+}

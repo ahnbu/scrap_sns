@@ -1,0 +1,18 @@
+{
+    "video_id": "af3OJ0L1jEU",
+    "model": "gemini-3.7-flash-medium",
+    "prompt_version": "v2",
+    "prompt_sha1": "1a2446b042d7b917482477d5da5cda70874b56c5",
+    "generated_at": "2026-08-27 13:04:15",
+    "summary": "[요약] GStack과 Superpowers를 조합해 클로드 코드의 작업 흐름과 완성도를 높이는 실전 활용법.\n\n- GStack의 Office Hours로 작업 전 심층 인터뷰를 진행하여 아이디어와 요구사항을 명확히 구체화합니다.\n- Superpowers의 Brainstorming과 Writing Plans 스킬로 단계별 계획서를 작성하고 이중 검증을 거칩니다.\n- Git Worktrees 기능과 자동 작업 기록을 활용해 독립된 작업 공간을 유지하고 개발 내역을 보존합니다.\n- Sub-agent Driven Development를 통해 큰 작업을 세분화하여 각 파트별 집중도와 결과물 품질을 높입니다.\n\n[상세]\nGStack을 활용한 사전 기획과 디자인 리뷰\nGStack의 Office Hours는 프로젝트 시작 전 클로드와 10분에서 20분 동안 인터뷰를 진행하며 흐릿한 아이디어를 구체화하는 상담 시간입니다. 무작정 구현을 요청하지 않고 사전 질문에 답하면서 원하는 요구사항과 개발 방향을 명확하게 정의할 수 있습니다. 또한 디자인 리뷰 기능을 활용하면 과도한 그라데이션이나 이모지 같은 AI 슬롭을 걸러내어 깔끔하고 완성도 높은 결과물을 얻을 수 있습니다.\n\nSuperpowers의 서브에이전트와 독립 작업 공간 관리\nSuperpowers는 큰 프로젝트를 작은 작업 단위로 나누어 작은 클로드들이 각자 파트에 집중하게 만드는 Sub-agent Driven Development를 지원합니다. Git Worktrees 기능을 통해 기능별 작업 공간을 독립적으로 분리하여 여러 작업을 동시에 진행해도 서로 간섭하거나 코드가 꼬이는 문제를 방지합니다. 또한 의미 있는 작업 단위마다 변경 사항을 자동으로 기록하여 개발 흐름이 끊기지 않도록 도와줍니다.\n\n체계적인 계획 수립과 목업 기반 실전 워크플로우\n본격적인 개발 전 Brainstorming 스킬로 놓친 부분을 보완하고 Writing Plans 스킬로 단계별 계획서를 작성해 작업의 기준점을 세웁니다. 작성된 계획서는 추가 리뷰를 통해 이중 검증을 진행하며, 중간에 방향을 잃지 않도록 돕는 설계 도면 역할을 합니다. 더불어 Brainstorming 스킬로 UI 및 UX 목업 화면을 바로 추출하고 실시간으로 수정 디렉팅을 진행할 수 있어 개발 속도와 작업 효율이 크게 향상됩니다.",
+    "transcript_sha1": "17a21fc142b3fdec6282667cb6fc9b6a803fcb03",
+    "usage": {
+        "input_tokens": 24492,
+        "output_tokens": 2262,
+        "thinking_tokens": 1754,
+        "cache_read_tokens": 0,
+        "total_tokens": 26754
+    },
+    "duration_seconds": 7.3227816,
+    "agy_conversation_id": "34a6dd79-304f-4f1c-a0f1-7315652b8e8d"
+}

@@ -1,0 +1,18 @@
+{
+    "video_id": "aelyPpDGiZQ",
+    "model": "gemini-3.7-flash-medium",
+    "prompt_version": "v2",
+    "prompt_sha1": "1a2446b042d7b917482477d5da5cda70874b56c5",
+    "generated_at": "2026-08-27 13:11:00",
+    "summary": "[요약] Codex와 오픈소스로 화이트보드 애니메이션 영상을 자동 제작하는 방법이다.\n\n- Codex에 srt-whiteboard-animation과 hyperframes 오픈소스를 클론하여 작업 환경을 구축한다.\n- 입력 데이터를 바탕으로 10가지 시나리오 중 하나를 선택하고 최대 15개 장면의 일러스트를 병렬 생성한다.\n- 환경 변수 파일에 Gemini API 키를 등록하여 자연스러운 Cori 음성 TTS를 생성한다.\n- 완성된 이미지와 음성, 자막을 오픈소스로 조립해 화이트보드 손그림 애니메이션 MP4 영상을 렌더링한다.\n\n[상세]\n오픈소스 환경 설정 및 프로젝트 준비\nCodex 데스크톱 앱에서 프로젝트 폴더를 생성하고 srt-whiteboard-animation과 hyperframes 저장소를 클론합니다. srt-whiteboard-animation은 자막을 25에서 30초 단위로 나누어 손그림 애니메이션을 구현하고, hyperframes는 내레이션과 배경음을 합쳐 MP4 영상을 제작합니다. 사용자는 자체 데이터를 준비하거나 AI를 활용해 시나리오 작성에 필요한 기초 데이터를 구성할 수 있습니다.\n\n시나리오 작성 및 일러스트 병렬 생성\n입력한 연애 상담 데이터를 바탕으로 제안받은 10가지 시나리오 중 2번 주제를 선택해 자막 스크립트를 작성합니다. 각 신별로 최대 15개의 세부 장면을 구성한 후 Codex 내장 기능을 호출해 손그림 일러스트를 생성합니다. 이미지를 생성하는 동안 새로운 대화창을 열어 음성 제작 작업을 동시에 병렬로 진행합니다.\n\n고품질 TTS 연동 및 최종 영상 렌더링\n기본 OS 음성의 한계를 보완하기 위해 .env 환경 변수 파일에 Gemini API 키를 등록하고 자연스러운 Cori 음성을 추출합니다. 완성된 음성 파일과 자막, 손그림 애니메이션을 결합하도록 지시하여 최종 화이트보드 영상을 생성합니다. 완성된 결과물은 자막 크기나 톤을 추가로 수정할 수 있으며 마케팅이나 교육 자료로 활용하기에 적합합니다.",
+    "transcript_sha1": "58adb8b0e38eafd7c40f43f6ac8a21b5170021d7",
+    "usage": {
+        "input_tokens": 25721,
+        "output_tokens": 1963,
+        "thinking_tokens": 1491,
+        "cache_read_tokens": 0,
+        "total_tokens": 27684
+    },
+    "duration_seconds": 8.3080806,
+    "agy_conversation_id": "9e5e6d05-67da-4511-a67b-e6e69a7f671d"
+}

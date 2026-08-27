@@ -1,0 +1,18 @@
+{
+    "video_id": "cSWpNjXeahE",
+    "model": "gemini-3.7-flash-medium",
+    "prompt_version": "v2",
+    "prompt_sha1": "1a2446b042d7b917482477d5da5cda70874b56c5",
+    "generated_at": "2026-08-27 12:56:57",
+    "summary": "[요약] Codex와 Remotion에 미드저니 소스를 더해 감각적인 영상을 제작하는 방법이다.\n\n- Remotion 설치 시 템플릿 없이 전용 스킬만 연동하여 제작의 자유도를 높인다.\n- 텍스트 중심의 단조로운 영상에 Midjourney로 생성한 GIF 소스를 추가해 입체감을 더한다.\n- 토큰 한도가 넉넉한 Codex 환경을 활용해 효율적으로 리액트 기반 영상 코딩을 진행한다.\n- 빠른 렌더링과 자동 스크린샷 검수 과정을 거쳐 완성도 높은 멀티레이어 영상을 제작한다.\n\n[상세]\nRemotion 환경 설정 및 미디어 소스 준비\nRemotion 웹사이트의 설치 명령어로 종속성과 전용 스킬을 설정하되 템플릿은 적용하지 않는 것이 자유로운 영상 제작에 유리합니다. 기본 텍스트와 파티클만 사용하면 딱딱한 PPT 느낌이 나므로 Midjourney 등에서 생성한 이미지와 애니메이션 에셋을 함께 활용해야 합니다. 이때 영상 소스는 MP4 대신 용량이 가벼운 GIF 형식으로 다운로드하여 참조 폴더에 배치하는 것이 작업 속도와 효율 측면에서 좋습니다.\n\nCodex를 활용한 멀티레이어 영상 제작 및 검수\n작업 디렉터리의 맥락을 인식하는 Codex에 내려받은 3개의 GIF 영상을 추가해 세련된 광고 영상으로 제작하도록 지시합니다. Gemini 3.1 Pro나 Claude Code에 비해 토큰이 넉넉한 Codex를 활용하면 리액트 기반 렌더링 작업을 안정적으로 수행할 수 있습니다. 빠른 렌더링과 인코딩 진행 후 자동으로 스크린샷을 찍어 결과를 검수한 뒤 감각적인 멀티레이어 영상이 완성됩니다.",
+    "transcript_sha1": "acee03074107a762282dc5477ffa04968b3ca041",
+    "usage": {
+        "input_tokens": 22913,
+        "output_tokens": 1387,
+        "thinking_tokens": 1001,
+        "cache_read_tokens": 0,
+        "total_tokens": 24300
+    },
+    "duration_seconds": 5.9049118,
+    "agy_conversation_id": "d77a9d6b-c3b5-4eef-8705-bd06749c9eef"
+}

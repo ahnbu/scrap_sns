@@ -1,0 +1,22 @@
+[00:00]
+Should you be using rag or should you be
+using Obsidian with your cloud code
+projects? Well, the answer is you
+probably should be using Obsidian and
+here's why.
+For most people rag while awesome is
+just completely overkill unless you have
+something that you're working on that
+has thousands and thousands of documents
+that you need to call upon and get
+answers about, Obsidian is probably more
+than enough especially for just dealing
+with basic text markdown files. Because
+until you're at a crazy scale Obsidian
+will work just fine for you and on top
+of that it's infinitely easier to set up
+and it's free. You can always move to a
+rag system if your system gets too large
+but at the beginning just stick with
+Obsidian and if you need to shift to rag
+it's going to be pretty obvious.

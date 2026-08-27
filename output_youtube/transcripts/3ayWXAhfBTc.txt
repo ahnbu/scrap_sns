@@ -1,0 +1,340 @@
+[00:00]
+it is like it is a much better time now
+than it was 12 months ago.
+>> Mhm.
+Yeah, I mean one of the things
+anecdotally from the entrepreneurs that
+that I I talked to that start their
+businesses on Replit. The The cool thing
+is there are a lot of businesses that
+uh you know, Silicon Valley has a
+certain bias like where where you know,
+a lot of the people that start companies
+are are programmers.
+Um and there are you know, large parts
+of the economy that you know, software
+has not even reached like we have this
+entrepreneur in Europe that built
+software for for ice skating rinks.
+And it's it's on its way to becoming a
+multi-million dollar business. He's on
+his own. Um I don't think anyone in
+Silicon Valley has ever thought about
+ice skating rinks.
+>> [laughter]
+>> Yeah. Well, actually um so I want to
+come back to that in a second and ask
+about some kind of representative Replit
+entrepreneurs to kind of tease that out.
+Um but it
+the ice skating rink is a nice example
+of how sort of tongue-in-cheek for the
+last I don't know, seven or eight years
+when people have asked me, you know,
+what sector of technology I'm excited
+about, you know, is it drones? Is it AI?
+[01:00]
+Is it crypto? You know, whatever. I've
+said it's vertical SaaS.
+And I'm being a bit tongue-in-cheek but
+but um but I think there is something
+there where sort of the the
+opportunities of software and the
+internet and the new ways we can
+coordinate and new marketplaces and
+markets that can be enabled and
+geographic coverage, you know, all those
+things haven't really been brought to
+most sectors still and there's just
+still a ton of opportunity which I guess
+vertical SaaS kind of by definition um
+helps enable. Um so so anyway, that
+really resonates and I actually wanted
+to ask you like Replit obviously started
+out as a learn-to-code platform. I think
+when I first met you in New York a long
+time ago, that's obviously what Replit
+was focused on. Um now you're becoming
+hugely successful for programming
+generally, for deployment, for building
+businesses. And so I guess I'm just
+curious like as you think about
+businesses built on Replit, what are the
+couple of representative examples or you
+particularly cool ones that you you've
+come across? Just what what um you know,
+help put a more um picture on that.
+>> Right, for sure.
+We obviously see a lot of Silicon Valley
+[02:00]
+style companies, a lot of YC startups,
+things like that.
+But, the more exciting thing is
+uh
+domain um experts
+that have a certain insight over their
+their field or um or or something
+they're working on
+uh that they they can suddenly apply
+software and technology and and AI to.
+We had a teacher during during COVID um
+started thinking about education, what
+he enjoyed as a teacher doing. He's been
+seeing a lot of teachers quitting their
+jobs, and
+you know, ChatGPT had just come out.
+He's like, "Okay, how can we use AI to
+make the the the teacher's job easier?"
+So, he
+uh he built this product, which he
+called Magic School,
+that allows teachers to create
+assignments, um
+you know, grade assignments very
+quickly, and all of that.
+And because he knows how the education
+system works, you know, a lot of the
+dogma in Silicon Valley tends to be
+like, "Don't build a tech businesses
+[03:00]
+because they're they're terrible."
+It was It was one of the early example
+of AI companies that went from zero to
+like 10 million ARR in like a few
+months, and now it's like a half a
+billion-dollar uh company. Um and
+>> So, a half-a-billion-dollar company that
+was built with Replit.
+>> Yes. Yeah, yeah.
+>> Well, that's incredible.
+>> Yeah, it's it's it's awesome. It's
+really awesome. It's uh And it And it
+feels like otherwise, it wouldn't have
+been built like I I I other you know,
+but not for what happened with AI, what
+we built with with Replit. And I think
+that's the that's the thing that gets me
+excited is
+um
+you know, people Everyone has ideas at
+Everyone goes through life, and they see
+problems in their respective domains,
+but they weren't They didn't have the
+tools to be able to solve them.
+>> So, what's the in
+5 years, 10 years, you know, some some
+medium-term period out, um
+what's the thing the human is doing
+like in
+in 10 years say. So we're we're
+expecting a lot of model progress. Let's
+[04:00]
+say I am one of the very successful
+entrepreneurs running a business on
+Replit. When I log into the dashboard,
+what's the thing that I'm doing?
+>> Right. I mean I think it gets pretty
+philosophical pretty quickly. Like what
+is special about humans?
+My my view is that
+at least the current era of LLMs and and
+it doesn't it doesn't look like looks
+like LLMs will just continue to scale
+with almost the same properties which is
+um
+you know,
+they're just like they're still a
+function of their data, right?
+That means they're great
+you know
+machines for doing what already
+existingly works but not necessarily
+what's on the edge of what's possible,
+what's what's on the edge of culture.
+That's why they're not very good at like
+naming or marketing
+you know, things like that.
+Um
+And I think that the role of the human
+is to like have a sense of what other
+people want. What
+[05:00]
+what's there in the like you know, there
+like a there's an entrepreneur that
+built like a looksmaxing app on on
+Replit. Like ChatGPT would not even know
+what looksmaxing app
+you know, would be like and that's like
+a moment in culture.
+And so a lot of it is about just finding
+these opportunities and executing on
+them.
+>> What here reminds you of is um
+I'm a fan of Suno the the music
+generating service. But I wonder a lot
+if jazz didn't exist if that had never
+been discovered or invented
+could Suno create it? Or what would have
+to be true of a model in order for it to
+be creatable? Can you express some
+linear combination of the vectors of
+music space to kind of describe jazz
+again if jazz didn't exist. And I think
+the answer in practice today is no. I
+could be wrong on that. Um and it's kind
+of hard to prove because,
+you know,
+um you would need to use Suno to produce
+a genre that in fact doesn't exist, and
+[06:00]
+it's hard to know if that's like a real
+genre. You know, so it's it's kind of
+hard to demonstrate. But I think it's
+actually pretty hard to get these models
+out of their I mean, it's kind of what
+you're saying, to get them out of their
+pre-trained distributions.
+>> Yes.
+>> Um and it's pretty hard to train them to
+be good at that because, you know,
+what's a reward function? Like by
+definition, it's it's a reward for
+something that doesn't exist.
+>> closed system.
+>> Yeah. So, um so yeah, I I I think this
+this creativity breaking out of
+distribution problem is like really a
+deep one.
+>> Uh you probably think a lot about it
+with regards to science, too, because um
+you know, uh Thomas Kuhn, the
+philosopher of science, talked about
+this concept of paradigm shifts. And I I
+you know, big question for me on AI and
+science is that if there's an existing
+research program, I think AI could run
+it, but could AI do these paradigm
+shifts? Or do you need someone crazy
+like Einstein, you know, you know,
+dreaming on his chair and like falling
+or like a an apple falling or like all
+these serendipitous interactions that
+that create
+and maybe that that sort of hints at at
+[07:00]
+at what is really special about about
+humans.
+>> Abstract problem.
+>> Um What would if if maybe you try to
+imagine yourself starting over, what
+would you go try to build? Like how
+would you try to
+get into entrepreneurship? What are some
+practical ideas?
+>> Yeah, um hm.
+I I have a lot of affinity for the um
+the vertical SaaS ideas. That is to say,
+taking some space that has not been
+massively amplified and transformed by
+software and uh by uh by really bringing
+it to bear. Or in many domains, there's
+a really janky, annoying, cludgy 1990s
+thing that's kind of dominant, but it's
+it has a terrible mobile app and it has
+zero AI support and terrible
+collaboration features and you know,
+whatever. And so just going and building
+the good version for that after that
+particular domain. So I think there's
+still a ton of opportunities there. Um
+and and then I think there's something I
+mean I think I think this can be a
+[08:00]
+little bit risky, but I think a pretty
+interesting pattern is what's what's
+uh popular among young people but low
+status. Um obviously crypto was that
+back you know, 10 or so years ago. I
+mean
+maybe it's still that to some extent
+today, but but but but certainly in the
+past it was and
+>> such that it's overlooked by the
+incumbents.
+>> Yeah.
+>> Yeah. And and I mean even even
+startups as a market were that
+>> Yes.
+>> 15 years ago, right? Like Stripe sold
+two startups and we had no competition
+because nobody else thought that was an
+important market
+because we you know, didn't have all the
+success cases that we now do. So I think
+those would be those would be Yeah, I
+think number one just try anything.
+Number two, just look for other domains
+where software hasn't really been
+brought to bear in an effective way. And
+then number three, yeah, what is popular
+among you among young people but low
+status.
+>> Yeah.
+>> would be and actually this is what I was
+curious to get your thoughts on would be
+as we transition to a world in which the
+[09:00]
+marginal cost of producing software
+>> Mhm.
+>> uh plummets, maybe asymptotes to close
+to zero. There's sort of a question of
+well, what will determine which um which
+software companies are valuable and you
+know, how valuable they are.
+>> Mhm.
+>> And I think it's pretty obviously true
+that the answer is not that uh none of
+them will be.
+Um I think the simplest demonstration of
+this is an exchange. Like an exchange is
+just a software program, but the value's
+in the coordination that everyone has
+chosen to trade there. There's the most
+liquidity there. You get the best prices
+either a buyer or a seller. And so, it's
+not the case like the hard part of
+setting up an exchange is not writing
+the code for the exchange. It's
+convincing everybody to coordinate
+around yours rather than somebody
+else's.
+>> In many ways the software was was you
+know, maybe there are few cases of
+businesses where
+they built like tremendously like
+difficult to to to produce and and test
+software, but for the most cases it's I
+[10:00]
+I don't think it ever was the moat.
+>> Okay, so so I was going to ask you this.
+What do you I mean, to what degree if at
+all do you think in 5 years or 10 years
+the shape of moats in software will have
+changed?
+>> I I don't think they will change all
+that much. You know, one of my favorite
+books on the subject is Hamilton
+Helmer's uh you know, seven powers.
+And
+yeah, and and it's basically it's like
+there's seven seven moats.
+And you go back in history or you try to
+predict forward in history and it's it's
+you can map these seven powers on
+whatever
+business you study and typically
+businesses that are valuable continue to
+be valuable and capture a lot of value
+and and maintain their defensive
+position in the market tend to be tend
+to have one of those moats.

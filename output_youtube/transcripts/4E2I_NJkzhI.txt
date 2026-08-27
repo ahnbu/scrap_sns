@@ -1,0 +1,648 @@
+[00:00]
+Video editing with Claude just got a
+major update, because Hyperframes, the
+open-source video editing tool by the
+guys at Haidgen, just shipped multiple
+updates that not only let you add
+subtitles to your videos, [music]
+add floating card animations like this,
+but it can also automatically apply
+smooth animations, visually striking 3D
+assets, and even motion graphics like
+what you're seeing in this video. And
+the best part is Hyperframes is free and
+open-source. So, if you want to learn
+the latest capability that AI agents
+have when it comes to video editing,
+then you've come to the right place. And
+if you're new here, my name is Jay. I
+spend over a decade working with brands
+you probably know, have been in AI since
+my master's in data science, and now I
+run our AI solutions practice in one of
+the largest AI communities globally.
+Let's get started.
+>> [music]
+>> So, what is Hyperframes? Well,
+Hyperframes is this open-source project
+by the guys at Haidgen. And basically,
+what it lets you do is automatically
+create videos like this all using code.
+And the great thing about this is that
+with tools like Claude Code or whatever
+agentic platform you're using, you don't
+even need to look at the code in order
+to produce great videos like this. You
+[01:00]
+can just have your agent handle all of
+the heavy lifting and let Hyperframes
+create these materials for you. And
+what's also awesome about this project,
+apart from the fact that it's free and
+open-source, is that the Haidgen team
+has been actively shipping a lot of
+updates on it recently. Like, if you
+follow them on X, you can see they
+implemented Hyperframes for the Hermes
+agent. They introduced this
+hyperframes.dev community website. And
+all of these videos that they've used
+for promotions are probably using
+Hyperframes as well. And in my view,
+automatically adding text and motion
+graphics to videos has a wide variety of
+use cases. Like, if you're someone who
+creates these intros for podcasts, for
+example, this is definitely possible now
+using this Hyperframes tool. Or if you
+need a quick promotional announcement
+video like this example that I
+one-shotted using Hyperframes, then that
+is completely within the realm of
+possibilities have now. And all of the
+elements here, like the text, the copy,
+and even the speed of the animations,
+you can directly control just by talking
+to Claude Code. So, we'll go through
+some use cases so that you can start
+automating your videos as well. But just
+to make this as easy as possible for
+everyone, what I did here is to create
+[02:00]
+this Hyperframes helper skill in
+Toolkit, which you can just get in the
+description below. And what that does,
+once you give that to your agent,
+whether it's Claude Code, Hermes, Open
+Claude, or what have you, is it will
+just equip it with the right knowledge
+to install Hyperframes, the best ways to
+use it, and basically everything that I
+will showcase in this video. And in case
+you're new, what this is is essentially
+a skill markdown text file that is a
+pretty long system prompt, essentially,
+that gives all of the instructions to
+your agent on how to create storyboards,
+how to compose videos, and render them
+so that you can get great quality videos
+right from the onset. Now, real quick,
+we just released the agentic AI
+masterclass for our members at Robo
+Nuggets, which takes you from zero to
+mastery when working with agents.
+There's a link to the community in the
+pinned comment below. We've got founders
+in there who landed their first client
+in weeks, live build sessions where we
+create this stuff together, and the
+actual templates behind what I showed in
+this video. The community is also the
+reason these lessons get made, so see
+that below if that's for you. And when
+you're learning how to automate videos,
+there's actually three levels to it. And
+the first one is the easiest among the
+three, because it takes advantage of
+this new website to video feature that
+[03:00]
+Hyperframes has given. Because if we
+quickly jump to Hyperframes'
+documentation here, you can see under
+their catalog, this is actually a really
+good reference, because here they
+already have pre-built cards and
+animations, which, let's say, you want
+this TikTok follow animation to appear
+in your video, you can just copy this
+page and give that to your agent so that
+you can immediately build animations
+like this. Now, if you go to
+documentation and go to website to
+video, this is a newly released feature
+that they have where, essentially, you
+can give a website link to Hyperframes
+and it will do several steps in order to
+convert that into a video. So, to give
+one example as a test, we are using this
+buvindran.com, which is actually a
+portfolio website coming from one of our
+members and students in Robo Nuggets.
+And you can see he has a pretty cool
+website in here, and it is showcasing
+his previous works, his past clients,
+his profile, and a lot of just really
+good material that I think Hyperframes
+can use as a test. And if we open a
+Claude Code session, you can see here I
+just loaded that Hyperframes helper
+skill that I was talking about. And as a
+[04:00]
+next prompt, what I basically did is
+this really simple command where I gave
+it the website and I said, "Use
+Hyperframes website to video to turn
+this into a 10-second video." So, that's
+the only command, and then we'll see
+what we'll get from that. But using this
+skill, what Claude Code essentially did
+here is scrape and look at all of the
+content and details and even the photos
+of this website, extract the brand and
+design palettes based on that screenshot
+that it took, and even download the
+assets there in order to put them
+together into a video. Now, this sort of
+really simple one-shot command actually
+takes you quite far in order to generate
+a video, but as you will see later, once
+this video is generated, often with
+these creative assets, you need to guide
+your agents a bit in order to give them
+an idea of what good looks like, which
+we'll tackle how to automate later on in
+level three. But here you go, it says
+that the video is now done.
+And there you go. So, you can see all
+the text is appropriate. It even
+captured his logo that included in
+there. These photos are also from his
+website, but as you can see, if I just
+look at these ones without any guidance,
+there are some text here that is pretty
+[05:00]
+squeezed in there, and I also probably
+would have guided the agent to center
+this or make them bigger as well. But
+that's pretty good for a one-shot,
+right? And you can definitely use this
+as a basis or a draft for a finalized
+product. Now, when we get to level two,
+I'll show you how best to control the
+output of this so that it doesn't just
+decide on its own what good looks like,
+and you can guide it. But one pretty
+easy trick that you can do in order to
+directly improve your Hyperframes
+automatic videos is simply by already
+taking inspiration from existing HTML
+components. And the reason why this
+works is because remember, Hyperframes
+just operates from within HTML code. So,
+it just renders code that the agent
+writes and turns them into video. So, to
+give an example, this is a template
+component that is originally meant for a
+website, and it has this nice animation
+that shows your mobile app view for you
+along with this iPhone, and it has these
+smooth animations as you scroll down.
+And in fact, this website, 21st.dev, has
+a lot of these components that you can
+take inspiration from. And even though
+they're originally meant for websites,
+what's great about a tool like
+Hyperframes is that since it operates
+[06:00]
+within HTML, it can actually take
+inspiration from these HTML components
+and use these styles for you in that
+video. And the way you do that is simply
+by opening a component here, copying the
+prompt, and then in that session,
+basically what I did to test it out is
+say, "Can you do something like this?"
+And then I pasted that whole prompt,
+which I got from 21st.dev, into the
+chat. And coming from that, we got this
+video, which you can see is quite
+similar to that side component that we
+talked about earlier, but it is
+customized now for our website. But even
+though level one is easy, because we
+just literally gave it a website and out
+comes the video, you can see that if
+you're pushing for quality, it is not
+the best method to do this. And so, if
+we go to level two, we can now introduce
+the concept of storyboards into the
+video automation process. And for this
+test, what I basically wanted to do was
+to integrate this wireframe.globe into
+the video just to see how it can do a
+more complex animation like this. And
+what I did here is just copy the prompt
+here, like I did earlier. And then all I
+asked Claude Code here to do is to try
+and integrate this in a Hyperframes
+video. And then I pasted here the prompt
+[07:00]
+that I copied from 21st.dev. And here
+you can see that because this is a more
+complex task, what it recommended is to
+do a storyboard first for that
+Hyperframes helper skill that we gave
+it. And to give you a view of the
+storyboard that it created for us, it
+basically rendered this whole website
+page for us, where it describes what
+this video is going to be about, how
+many scenes it is, how many seconds in
+total it is, and even gave us this nice
+sort of view of what happens per part of
+the video based on the split in the
+seconds comprising that whole 12-second
+count. And then for those three scenes,
+it gave us this sort of nice mock-up of
+the globe just so we can imagine how it
+would look, gave us the copy, which you
+can imagine it is much easier to give
+feedback to this agent that, let's say,
+for scene one, you don't want this
+particular wording or you want the font
+to be styled differently, that is
+something you can do from this
+storyboard. And then on scene two, it
+says that it will move the globe to the
+right. And then it has this one agent
+every region copy at the left. And then
+for scene three, as a closing, it will
+just have this translucent rectangle
+[08:00]
+that says "The world is the workspace."
+So, just from that, without rendering
+any video and without spending a lot of
+tokens, having a storyboard like this
+gets you much better aligned to your
+agent, which is what's key when it comes
+to a lot of these creative projects or
+with any project, really. And so, you
+can give feedback to this. But coming
+from this storyboard, what it created
+for us basically is this video.
+So, it was able to render that wireframe
+globe for us perfectly.
+It moves to the right, and it says "One
+agent for every region."
+And basically, what we got from the
+storyboard is what it rendered in full.
+And the reason why this is better versus
+the level one video that we saw earlier
+is because you are much more aligned now
+with your agent versus if you just try
+and one-shot a prompt and trust that
+your agent will get the output that you
+want. Now, what if you have a more
+complex video that you want to have
+motion graphics overlaid in? So, let's
+say you have a footage that you want to
+overlay some text in, have some
+animations for the subtitles as well,
+and even deploy animations like these,
+[09:00]
+these 3D assets, as well as the
+basically the motion graphics that
+you've seen in the intro. In fact, you
+can even have title card animations like
+these that are a bit more complex versus
+just those text animations you saw in
+the intro. You can also actually achieve
+this with Hyperframes as well. But the
+way you do it is a specific three-step
+process that I would recommend. Because
+this is something that I think is
+difficult, really difficult for you to
+get from just one single prompt. But the
+good news is there is a way to automate
+it. And the framework that we often use
+internally is this BIT framework. So, it
+stands for build, integrate, and tune,
+where the first step is for you to build
+with your agent and ship the first
+version of that video by guiding it
+towards what good looks like. And then
+we integrate it by basically making
+everything you did in that session to
+guide it into a skill. So, that the next
+time that you do it, it already knows
+what good looks like, it already has
+that sense of taste that you aligned it
+with. And the last part is for you to
+just tune it so that whenever you use
+this skill, when whenever you do this
+the workflow, the same video, you can
+continuously tune it and improve it so
+that you slowly but surely train your
+[10:00]
+agents towards the quality that you
+desire. And just to give you an example,
+so this footage was my base footage that
+I used for the intro, and you can see
+here that I am adjusting my mic, and
+this whole video is a minute and 16
+seconds long, and it includes pauses,
+mistakes, and silences, which you won't
+cut in the final video. So, I'll show
+you now the process of how I transform
+this raw footage into something like
+this with the card animations and the
+video cut as well. And like I mentioned
+in the BIT framework, first what we need
+is a process to build the MVP of what
+we're trying to do. And at least how I
+did it, there's three steps that I took.
+First is to have Claude Code cut the
+video for us so that we can trim the
+silences and the pauses and the
+mistakes. I then storyboarded the title
+cards so that I can see what Claude Code
+is planning to do using hyperframes
+before animating the final media. And
+then lastly, I had it add in those
+motion graphics, which you see here in
+the end. And here you can see the prompt
+that I sent in order to do step one of
+cutting the video is I basically sent
+[11:00]
+the file path to this video, which was
+my raw footage, and I said here for
+Claude to edit my raw recording into a
+clean final cut ready for hyperframes.
+My only instructions were to cut all the
+silences and the dead air out, and also
+transcribe the audio so we can see
+word-level timestamps. I asked to use
+the last take rule, so if I say a phrase
+twice, then keep the second one and cut
+the first. And also to build me this
+HTML page that shows the current script
+versus the proposed clean script side by
+side. And it was able to do that, and it
+gave me this HTML page, which was really
+useful because from here you can see the
+word-level timestamps that it has, the
+mistakes that I made, which it crossed
+out, and also the parts of the script
+that it was able to keep. So, if you
+have an hour-long footage, for example,
+then doing this step before rendering
+the final video is a nice step to take
+so that you can double-check if the
+script that it is about to cut is what
+you would expect. And for my side, it
+already ran. So, this was the raw
+footage, so that was around 76 seconds,
+and this edited one is only around 30
+[12:00]
+seconds. Video editing with Claude just
+got a major upgrade because hyperframes,
+the open-source video editing tool by
+the guys at Haegin, just shipped
+multiple
+and it goes on for a total of 30
+seconds, and it's all now cut according
+to its plan here. And by the way, if
+you're curious how Claude Code handled
+the cutting of that video, that is
+enabled through this tool called FFmpeg,
+which cuts your video for you
+automatically, that's open-source and
+free as well, and also fast whisper,
+which is also free. So, this is the
+underlying tech that you don't
+necessarily need to master. So, if you
+install that hyperframes helper skill,
+then your Claude Code should be able to
+understand how to use these tools for
+you. And so, with that video cut, what I
+did now is to storyboard the title cards
+that you saw. And to do that, the prompt
+that I sent was to have it build me a
+one-page HTML storyboard that visually
+shows my plan for the video. And
+basically, my plan for the video is two
+parts. So, part one, when I talk about
+floating cards and subtitles, I want to
+keep the video full bleed, so basically
+full screen, show subtitles, and also
+sample cards on the right at around 80%
+[13:00]
+opacity. And then I want that to
+transition into part two, where the
+video would collapse into like a
+vertical rounded rectangle at the bottom
+right, and I just ask it to fill in the
+center stage with placeholder boxes,
+which I will add in later. And of
+course, I want it to use our Robo Labs
+design system for font colors, which it
+has an understanding of based on its
+memory of me. And from that, what it
+gave me was okay, to say the least. It
+was able to understand the part one and
+part two of what I was thinking about,
+but I think the cards in here were not
+up to spec because it misunderstood the
+assignment that I only want like one
+card in here. But this is good because
+at least we're able to align the
+intention before rendering this final
+video. The transition though is looking
+like it understood it because it is
+showing that the cards will exit, the
+video contracts, and the motion stage
+opens with placeholders here. So, that
+at least was properly mapped. And from
+that, what I did is to send Claude this
+prompt, where I said to edit that
+storyboard, what I want is only one card
+animating per beat, where the card
+enters, holds while I say the line, and
+then exits, then the next one comes in.
+[14:00]
+And also, I requested the cards to be
+more liquid glassy in style, and also
+add the relevant logos. And also, I just
+instructed it for the card text to just
+repeat what I'm saying word for word
+with two to six-ish word phrases so that
+it is aligned to what I want. And from
+that instruction, it was able to craft
+the storyboard for part one, which is
+much better than where we started. So,
+you can see that major upgrade is
+starting to form, although it failed to
+grab the Claude Code logo there. The
+hyperframes by Haegin uh was properly
+built in, and also this last card with
+the subtitles cards and more. And what I
+basically did is send it another prompt
+just giving the paths to the Claude Code
+logo that I have on my device so that
+it's able to grab that properly, which
+you can see here. They also ask it to up
+the ante in terms of the animations,
+basically. So, you can see that nice
+animation of the Haegin logo. It did
+that by itself, so I didn't even
+instruct it to that. I just asked it to
+make it as visually appealing as
+possible in terms of the animations.
+Another thing that I did is also give it
+our Haegin icons, which I have again in
+our device. So, these are SVG icons, and
+[15:00]
+I just wanted them to appear in there.
+So, this is looking good. And from that,
+what I did next is to just instruct
+Claude to open the hyperframes studio
+and apply those slide card motion
+graphics to our cut video. And
+hyperframes studio is this nice addition
+that they built in, where it's basically
+this nice interface that your Claude
+Code gives you. And you can see it just
+running on my localhost, basically on my
+computer, and it is this nice timeline
+view, where you yourself can edit the
+video or the clips if you wish. But
+here, what's good is you can preview the
+card animations properly as well as
+those subtitles that we added just to
+check if they've been properly applied
+before you render the final video. And
+these cards at least look really good to
+me. And if you go to part two, that sort
+of nice animation into the motion
+graphics parts also blended really well.
+Now, I actually took it a step further
+just to see how far I can push it, and
+what I did is to just iterate on it a
+bit so that I can see if I can have two
+cards on the left, one on the right for
+the three of these beats, and that is
+the one that I rendered in that intro
+video. And then I just asked Claude to
+[16:00]
+update our studio using these card
+animations, and that is part one already
+done. But if we go to part two, you can
+see I have some couple of motion
+graphics in here, and the way that I
+added those is quite simple, really,
+because this shader that you saw, this
+world wireframe globe that you saw,
+those are all just assets from 21st.dev.
+So, literally what I did is to find the
+component all over at 21st.dev, copy the
+prompt, send it to Claude Code, and tell
+it which part of the animation of the
+video I want it applied, which is here
+in this case from part one to part two.
+And then this wireframe globe, you saw
+me use it earlier, so it's the same
+thing. I just asked it to get the
+wireframe globe from 21st.dev, put it in
+the center, have it move to the left,
+and then add in a text in there. Now,
+what's unique that I wanted to try out
+as well is this Claude Code 3D logo. So,
+where is that from? Well, what's great
+about hyperframes is that it can also
+apply color keying as well, which is
+basically just removing the green screen
+part of a video. So, essentially what I
+did is just ask Claude to generate an
+[17:00]
+image of the Claude logo with a green
+screen background using Nano Banana 2,
+and then immediately animate that into
+like a 3D logo that is rotating using
+Clean 3.0. So, if you're curious how I
+generate these myself, I made a separate
+video on this that I will link somewhere
+in this lesson. And that is basically
+how I got this. I just asked Claude to
+place that in there, and then the Haegin
+animation as well as the Haegin icons in
+here are just all assets that we gave it
+from earlier. And there you go, from
+that we have these card animations now.
+We have that nice 3D effect and smooth
+animations, and I actually made that
+version first before arriving to this
+because to go from that version to this
+one, all I really did is just ask Claude
+to remove the cards, go from full screen
+to slightly zoomed in, and just have it
+render those texts without the cards for
+me. And in the end, I actually chose
+this as the intro which you saw because
+I just thought that it is much cleaner
+than the other version. But you may have
+noticed that if you're trying to push
+for quality like what we just did, you
+can see how much we guided the agent in
+order to produce that output for us,
+[18:00]
+right? And that's just the reality of
+these agents right now. You can't really
+get quality output from just one-shot
+prompts. But the good news is, number
+one, I think it's still much faster
+versus having to cut and edit those
+videos yourself, which I've definitely
+done before and it takes a while,
+especially in After Effects. And number
+two, if you now go to the second phase
+of the BIT framework, which is to
+integrate it, you can actually turn that
+whole session that you just work with it
+into a skill or to update an existing
+skill so that the next time that you
+work with this agent, it'll be able to
+remember what good looks like. And as
+you work with it further day by day, if
+you are into video editing at all, you
+can continue to tune it and improve it
+using this process that I'm about to
+describe. So, what you can do is in that
+same session that you were editing your
+video, you can just say something like,
+"Hey, so I want to capture all of the
+learnings in this session and update the
+hyperframes helper skill based on my
+feedback to you and all the best
+practices that you captured based on our
+conversation." So, you can either send a
+prompt like that. At least for me, since
+I do this quite a lot, I made this
+separate skill called calibrate, which
+[19:00]
+just allows me to instantly invoke the
+agent to do that sort of self-analysis
+and recommend to me bullet-point ideas
+on how it can calibrate our skills, our
+memory in order to make itself better at
+the end of every session. And you can
+see when we send that, it sent to me six
+recommendations for that particular
+skill that you can either review all
+yourself, make it a bit more easy to
+read, or just have it apply those
+changes so that the skill is slowly but
+surely being fine-tuned to your specific
+needs. And there you go, that is how you
+use hyperframes to automate quality
+videos. I hope that was helpful, and if
+it is, then consider subscribing because
+that helps us a lot to put out more
+educational content like this. And if
+you want to find out how I made those
+HTML slides using Claude Code, which are
+these same ones that I used in this
+video, then you can watch this video
+next. I'll see you guys next time. Thank
+you.
+>> [music]
+>> Mhm.

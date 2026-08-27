@@ -312,7 +312,17 @@ TRANSCRIPT_BUCKET_SECONDS = 60
 
 # 자동 자막은 ko-orig 가 원어(한국어) 트랙이다. 알파벳 정렬로 고르면 .en.vtt 가
 # 먼저 와서 영어를 집는다 - 실제로 그런 결함이 있었다.
-SUBTITLE_LANG_PRIORITY = ("ko-orig", "ko", "en")
+#
+# en-orig 는 영어 원본 영상의 원어 트랙이다. 1차 요청이 .*-orig 라 실제로 내려오는
+# 파일이 이 이름인데 목록에 없어서 우선순위를 못 타고 있었다(2026-08-27).
+SUBTITLE_LANG_PRIORITY = ("ko-orig", "ko", "en-orig", "en")
+
+# 1차는 원본(-orig) 자막만 요청한다. ko 나 en 을 직접 요청하면 원어가 다른 영상에서
+# "자동 번역 자막" 요청이 되는데, 유튜브는 번역 자막에 HTTP 429 를 던진다. 그래서
+# 영어권 영상 24건이 "자막 없음"으로 잘못 기록돼 있었다(2026-08-27 실측).
+# 2차는 1차가 빈손일 때만 쓴다. -orig 트랙이 없고 수동 자막만 있는 영상을 잡는다.
+TRANSCRIPT_LANG_PRIMARY = ".*-orig"
+TRANSCRIPT_LANG_FALLBACK = "ko,en"
 
 
 def clean_vtt(raw_text, bucket_seconds=TRANSCRIPT_BUCKET_SECONDS):
@@ -370,8 +380,55 @@ def pick_subtitle_file(produced, video_id):
     return sorted(produced)[0] if produced else ""
 
 
+def fetch_subtitle_files(video_id, scratch_dir, sub_langs):
+    """yt-dlp 를 한 번 돌려 (받은 vtt 목록, 합친 출력) 을 반환한다.
+
+    호출부가 언어 조합을 바꿔 두 번 부를 수 있게 갈라 뒀다.
+    """
+    output_template = os.path.join(scratch_dir, f"{video_id}.%(ext)s")
+    command = [
+        "yt-dlp",
+        "--skip-download",
+        "--write-auto-subs",
+        "--write-subs",
+        "--sub-langs", sub_langs,
+        "--sub-format", "vtt",
+        "--extractor-args", "youtube:player_client=web_safari",
+        "-o", output_template,
+        f"https://www.youtube.com/watch?v={video_id}",
+    ]
+    try:
+        completed = subprocess.run(
+            command, capture_output=True, text=True, encoding="utf-8",
+            errors="replace", timeout=180, check=False,
+        )
+    except subprocess.TimeoutExpired:
+        return None, ""
+    produced = glob.glob(os.path.join(scratch_dir, f"{video_id}*.vtt"))
+    return produced, f"{completed.stdout}\n{completed.stderr}"
+
+
+def is_members_only(output_text):
+    """멤버 전용 영상인지 판정한다.
+
+    두 형태로 나온다(2026-08-27 실측). 공통 토큰은 members 다 - members-only 만
+    보면 두 번째를 놓친다.
+      ERROR: ... Join this channel to get access to members-only content ...
+      ERROR: ... This video is available to this channel's members on level: 서포터즈 ...
+    """
+    return "ERROR" in output_text and "members" in output_text
+
+
 def download_transcript(video_id, scratch_dir, refresh=False, allow_download=True):
     """yt-dlp 로 자동 자막을 받아 정제 텍스트를 반환. (status, text) 반환.
+
+    자막 요청은 2단계다. 1차는 원본(-orig) 트랙만 부른다. ko 를 직접 부르면 원어가
+    영어인 영상에서 "번역 자막" 요청이 되고 유튜브가 429 로 끊는다 - 그래서 영어권
+    24건이 no_subtitle 로 잘못 기록돼 있었다(2026-08-27). 2차는 1차가 빈손일 때만
+    쓰며 -orig 가 없고 수동 자막만 있는 영상을 잡는다.
+
+    언어를 한 번에 나열하면 안 된다. ko 가 먼저 429 를 맞으면 뒤 언어까지 못 간다
+    (ko-orig,ko,en-orig,en 으로 실측 확인).
 
     allow_download=False 는 PO token provider 가 없는 상태다. 새로 받는 것만 막고
     캐시는 그대로 읽는다 - provider 사고를 이유로 이미 가진 자막까지 없는 셈 치면,
@@ -386,33 +443,29 @@ def download_transcript(video_id, scratch_dir, refresh=False, allow_download=Tru
         return "blocked", ""
 
     os.makedirs(scratch_dir, exist_ok=True)
-    output_template = os.path.join(scratch_dir, f"{video_id}.%(ext)s")
-    command = [
-        "yt-dlp",
-        "--skip-download",
-        "--write-auto-subs",
-        "--write-subs",
-        # ko-orig 하나만 요청한다. 3종을 매번 받으면 요청이 3배가 되고 실제로
-        # HTTP 429 를 맞았다. 한국어가 없으면 아래에서 en 으로 한 번 더 시도한다.
-        "--sub-langs", "ko-orig,ko",
-        "--sub-format", "vtt",
-        "--extractor-args", "youtube:player_client=web_safari",
-        "-o", output_template,
-        f"https://www.youtube.com/watch?v={video_id}",
-    ]
-    try:
-        completed = subprocess.run(
-            command, capture_output=True, text=True, encoding="utf-8",
-            errors="replace", timeout=180, check=False,
-        )
-    except subprocess.TimeoutExpired:
-        return "failed", ""
 
-    produced = glob.glob(os.path.join(scratch_dir, f"{video_id}*.vtt"))
+    produced, combined = fetch_subtitle_files(
+        video_id, scratch_dir, TRANSCRIPT_LANG_PRIMARY
+    )
+    if produced is None:
+        return "failed", ""
     if not produced:
-        combined = f"{completed.stdout}\n{completed.stderr}"
         if "PO token" in combined:
             return "blocked", ""
+        if is_members_only(combined):
+            # 멤버십 결제 전에는 원리적으로 못 받는다. 2차를 돌려도 같다.
+            return "members_only", ""
+        produced, combined = fetch_subtitle_files(
+            video_id, scratch_dir, TRANSCRIPT_LANG_FALLBACK
+        )
+        if produced is None:
+            return "failed", ""
+
+    if not produced:
+        if "PO token" in combined:
+            return "blocked", ""
+        if is_members_only(combined):
+            return "members_only", ""
         return "no_subtitle", ""
 
     chosen = pick_subtitle_file(produced, video_id)
@@ -638,8 +691,15 @@ def load_existing_posts():
 #   deferred — --max-summaries 상한에 걸려 호출조차 안 된 건
 #   failed   — agy 호출이 예외·타임아웃으로 끝난 건 (토큰은 거의 안 썼다)
 # no_transcript 는 넣지 않는다. 자막이 없으면 요약할 재료가 없어서 다시 불러도
-# 결과가 같고, 자막 재시도는 --refresh-transcripts 의 몫이다.
+# 결과가 같다. 자막 자체를 다시 받아야 하는 건은 아래 TRANSCRIPT_RETRY_STATUSES 가 맡는다.
 SUMMARY_RETRY_STATUSES = {"deferred", "failed"}
+
+# 자막을 다시 받아야 하는 상태들.
+#   no_subtitle — 그때는 못 받았지만 업로더가 자막을 켤 수 있다. 실측 4초라 싸다
+#   failed      — yt-dlp 타임아웃 등 일시 장애
+#   blocked     — PO token provider 가 죽어 있던 실행
+# members_only 는 넣지 않는다. 멤버십 결제 전에는 몇 번을 불러도 같은 답이다.
+TRANSCRIPT_RETRY_STATUSES = {"no_subtitle", "failed", "blocked"}
 
 
 def needs_summary_retry(post):
@@ -658,20 +718,39 @@ def needs_summary_retry(post):
     return bool(video_id) and os.path.exists(transcript_path_for(video_id))
 
 
-def select_update_targets(entries, existing, allow_retry=True):
-    """update 모드의 처리 대상을 (신규, 요약 재시도) 로 가른다.
+def needs_transcript_retry(post):
+    """자막부터 다시 받아야 하는 건인지 판정한다.
 
-    재시도분은 자막·메타가 이미 있어 추가 수집 비용이 없고, load_cached_summary()
-    가 완료분을 걸러 준다. allow_retry=False 는 --skip-summaries 전용이다 -
-    요약을 건너뛰는 실행이 대기분을 다시 쓰면 deferred 표시가 skipped 로 덮여
-    대기 상태 자체가 사라진다.
+    자막 요청 언어가 틀려 영어권 24건이 no_subtitle 로 잘못 굳어 있었다(2026-08-27).
+    언어 폴백을 고쳐도 update 모드가 그 건들을 대상에 넣지 않으면 영원히 그대로다.
+    """
+    if str(post.get("transcript_status") or "") not in TRANSCRIPT_RETRY_STATUSES:
+        return False
+    return bool(str(post.get("platform_id") or ""))
+
+
+def select_update_targets(entries, existing, allow_retry=True):
+    """update 모드의 처리 대상을 (신규, 재시도) 로 가른다.
+
+    재시도군은 두 종류를 합친다.
+      - 요약만 남은 건: 자막·메타가 이미 있어 추가 수집 비용이 없다
+      - 자막부터 다시 받아야 하는 건: 언어 폴백 수정으로 회수 가능해진 건들
+    load_cached_summary() 가 완료분을 걸러 주므로 중복 과금은 없다.
+
+    allow_retry=False 는 --skip-summaries 전용이다 - 요약을 건너뛰는 실행이 대기분을
+    다시 쓰면 deferred 표시가 skipped 로 덮여 대기 상태 자체가 사라진다. 자막 재시도군도
+    같이 묶는다. 그쪽도 no_transcript 가 skipped 로 덮이면 재시도 표시를 잃는다.
     """
     new_ids = [vid for vid in entries if vid not in existing]
     retry_ids = []
     if allow_retry:
         retry_ids = [
             vid for vid in entries
-            if vid in existing and needs_summary_retry(existing[vid])
+            if vid in existing
+            and (
+                needs_summary_retry(existing[vid])
+                or needs_transcript_retry(existing[vid])
+            )
         ]
     return new_ids, retry_ids
 
@@ -860,7 +939,7 @@ def run(args):
         retry_ids = set(retry_list)
         pending = {vid: entries[vid] for vid in new_ids + retry_list}
         print(
-            f"   🔁 update 모드: 신규 {len(new_ids)}건 + 요약 대기 {len(retry_list)}건"
+            f"   🔁 update 모드: 신규 {len(new_ids)}건 + 재처리 대기 {len(retry_list)}건"
             f" (기존 {len(existing)}건 재사용)"
         )
     else:
@@ -1078,7 +1157,12 @@ def run(args):
     # 남은 대기분을 매 실행 로그에 남긴다. 이 숫자가 안 줄면 고립이 재발한 것이다.
     waiting = sum(1 for post in posts if post.get("summary_status") in SUMMARY_RETRY_STATUSES)
     print(f"✅ YouTube Producer 완료: 총 {len(posts)}건 (처리 {len(collected)}건)")
+    # 자막이 없는 사유를 갈라 찍는다. members_only 는 결제 전에는 안 되는 것이고
+    # no_subtitle 은 업로더가 자막을 켜면 되는 것이라 대응이 다르다.
+    members_only = sum(1 for post in posts if post.get("transcript_status") == "members_only")
+    no_subtitle = sum(1 for post in posts if post.get("transcript_status") == "no_subtitle")
     print(f"   자막 {ok_transcripts}건, 요약 {ok_summaries}건 (이번 실행 agy 호출 {summarized}건)")
+    print(f"   자막 없음: 멤버 전용 {members_only}건 · 자막 미제공 {no_subtitle}건")
     print(f"   요약 대기 {waiting}건 (다음 실행에서 다시 대상이 된다)")
     print(f"   저장: {output_path}")
     return 0

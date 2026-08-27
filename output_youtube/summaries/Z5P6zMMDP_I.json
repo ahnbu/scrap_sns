@@ -1,0 +1,18 @@
+{
+    "video_id": "Z5P6zMMDP_I",
+    "model": "gemini-3.7-flash-medium",
+    "prompt_version": "v2",
+    "prompt_sha1": "1a2446b042d7b917482477d5da5cda70874b56c5",
+    "generated_at": "2026-08-27 13:08:48",
+    "summary": "[요약] Codex와 최소 하네스, Hermes 중심의 최신 AI 업무 스택을 공유한다.\n\n- 잦은 장애와 비용 부담이 있는 Claude 대신 안정성과 가성비가 높은 Codex로 메인 도구를 전환했습니다.\n- 하네스는 모델 발전에 맞춰 Superpowers와 Compound Engineering 개념 중심으로 최소화해 운영합니다.\n- 세부적인 기획과 다각도 검토가 필요한 작업에는 페르소나를 부여하는 gstack을 보조로 활용합니다.\n- 세션 초기화 시 기억 유실을 줄이기 위해 OpenClaw에 더해 Hermes와 gbrain을 도입했습니다.\n\n[상세]\nClaude에서 Codex로 도구 전환\nClaude의 잦은 장애와 성능 저하 의혹으로 인해 100% 업타임을 유지하는 Codex로 메인 개발 도구를 변경했습니다. 새롭게 출시된 100달러 요금제는 Claude 200달러 요금제 대비 절반 가격에 훨씬 많은 사용량을 제공해 가성비가 높습니다. 또한 GPT-5.4 mini와 nano로 경량 작업을 분배하고, 컴퓨터 제어 및 브라우저 제어 기능이 추가되어 작업 편의성이 크게 향상되었습니다.\n\n경량화된 하네스 엔지니어링 구축\nAI 모델 성능이 발전할수록 하네스 의존도가 낮아지므로 Superpowers와 Compound Engineering 위주로 구조를 단순하게 유지합니다. 플랜, 실행, 검토 과정에서 발생한 반성 목록을 별도 스킬로 만들어 다음 작업 시 같은 실수를 반복하지 않도록 구성했습니다. 더 정밀한 계획 수립이나 다각적인 리뷰가 필요할 때는 역할을 부여할 수 있는 gstack을 연계해 사용합니다.\n\nOpenClaw와 Hermes 중심의 비서 에이전트 운용\nOpenClaw의 컨텍스트 압축 및 세션 초기화에 따른 기억 유실 문제를 해결하기 위해 Hermes를 함께 활용하고 있습니다. Hermes는 대화가 끝날 때마다 사용자에 대한 정보와 스킬을 자체 업데이트하며, gbrain을 통해 장기 기억을 안정적으로 유지합니다. 로컬 컴퓨터 제어가 가능한 OpenClaw와 기억력이 뛰어난 Hermes의 장점을 살려 상호 연계하는 방식으로 운영하고 있습니다.",
+    "transcript_sha1": "6c9615112be02601d996a429a5426b2b78c9ec89",
+    "usage": {
+        "input_tokens": 25644,
+        "output_tokens": 1653,
+        "thinking_tokens": 1167,
+        "cache_read_tokens": 0,
+        "total_tokens": 27297
+    },
+    "duration_seconds": 7.3721686,
+    "agy_conversation_id": "0b9690ed-f8f7-4d05-b668-966d4e20ddac"
+}

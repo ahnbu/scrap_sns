@@ -1,0 +1,465 @@
+[00:00]
+The quality of the code I'm producing
+and the speed that I'm producing at is
+literally 10 times what it was a month
+ago. And the change all comes down to
+just a handful of skills that I'm using
+in the process in the order that I'm
+walking through each of them with every
+time I want to create software, whether
+it's internal to run my company or
+externally to provide value to
+customers. And in this video I'm going
+to walk you through exactly the skills
+that I'm using, how you can get them and
+install them, as well as a new autopilot
+and kind of yolo version of all of these
+skills put together. Okay, at the core
+of everything here is a concept called
+Ralph. And if you're a developer, you
+will have heard of this. It's a few
+months old and Ralph stands for
+repetitive autonomous loop for PRD
+handling. So, repetitive does things
+over and over, it's in a loop uh for PRD
+handling. And PRD is product
+requirements document, which is a very
+specific plan for how you want to
+[01:00]
+generate code. And first of all, shout
+out to Matt Pocock for creating the
+original three skills here and the
+concept of like a Ralph loop and and
+implementing it. I got all of this from
+him. And so, if you don't follow Matt uh
+on YouTube and in GitHub, you definitely
+should cuz his stuff is amazing.
+Uh but really this starts with a skill
+called grill me. And if you check out
+Matt's repository here, you can see the
+grill me
+skill. And it's dead simple. It's three
+lines. Interview me relentlessly about
+every aspect of this plan until we reach
+a shared understanding. Walk down each
+branch of the design tree resolving
+discrepancies between decisions one by
+one. For each question, provide your
+recommended answer. Ask questions one at
+a time. If a question can be answered by
+exploring the code base, explore the
+code base instead. So, this is a
+replacement for plan mode in Claude
+code. And so, you would run {slash}
+grill me instead of entering plan mode
+[02:00]
+when you want to do something. And and
+we're going to walk through this whole
+process in just a minute with a real
+feature that I'm going to be developing
+for one of my products. But I just want
+to lay the groundwork for all we're
+going to do here. So, we're going to use
+grill me for interviewing. It's going to
+ask you technical questions, going to
+ask you user gen user story kind of
+questions, ask you
+uh model questions and cost questions
+and pricing and all these kinds of
+things. Usually grill me asks me between
+20 and 35 or 40 questions. And it can
+take an hour. So, we're not going to run
+through the entire thing today, but
+we're going to start a grill session
+just so you can see what it's like.
+Okay, so once we
+have done the grill me session, we have
+all of the context in a chat to create a
+product requirements doc, a PRD. And
+that's the second skill here is you run
+PRD.
+And PRD, if we go to Matt's repo here,
+and again, Matt like created all of
+these. I just want to share them with
+you and then I'm going to share you the
+[03:00]
+autopilot version of this. So, write a
+PRD. Write a product requirements doc
+that summarizes all of the context that
+we just got and puts it into a really
+nice organized format for you to
+uh to reference and it pushes it to
+GitHub. So, this is like a plan doc that
+you might have had locally in like a
+plan area on your computer before, but
+it's creating it as a GitHub issue,
+which is really important because the
+next step is
+PRD to issues. We're take this giant
+plan, and a plan could be like, you
+imagine it like a Google Doc like five
+[snorts] pages long. It's really
+specific, really detailed. And we're
+going to break this into tiny pieces and
+each of these are going to be individual
+issues in GitHub. So, we'll have one PRD
+and might have dozens of issues
+depending on how big the the scope of
+the feature is that we're building.
+Cool.
+And then, and this is the cool part,
+we're going to run Ralph. And Ralph
+means repetitive autonomous loop for PRD
+[04:00]
+handling. It's just going to pick each
+issue,
+do the work, commit it, test it,
+and then move to the next issue and do
+the work, write the code, test it,
+commit it. It's going to go and go and
+go and go and go. And you can imagine
+what we're going to do here. We're going
+to create We're going to spend an hour
+to create exactly what we want to build.
+It's going to document that as the PRD.
+It's going to break that into tiny
+little chunks. It's going to go
+individually one by one through those
+and write the code and it's going to
+commit it. And so, the way that you
+would want to do this is you spend time
+at your keyboard during the day. I'm
+going to create a PRD. I'm going to
+break it into issues. And then at 5:00
+like it is right now, I'm just going to
+fire off a Ralph loop and it's just
+going to do all the work. And then it's
+going to put it into Docker on your
+computer. And Docker's kind of a safe
+sandbox area to where uh we're going to
+be in kind of yolo mode in Claude code
+like uh dangerously accept permissions.
+Uh it can't really break your whole
+[05:00]
+computer because it's in a sandbox in
+Claude code.
+In Docker, I'm sorry.
+Okay, so those are the four steps. And
+then the place where I added my own kind
+of spin to this, and we're going to
+we're going to actually do this here in
+a minute, is a new skill called shape.
+And shape is basically grill me on
+autopilot. So, it's going to go through
+and ask all the questions, answer it
+itself, and then create the PRD for you
+automatically. Okay? So, we're going to
+run through both of these. So, um so it
+in step one here, you can do grill me
+and then write a PRD or you can just do
+shape, which does grill me automatically
+and writes the PRD. Cool. Okay, so um
+let's go in our terminal here.
+Um and let's go to a new session here.
+And I'm in an actual product that we
+have in the Castos family. It's called
+Outlier, outlier.so. So, it helps you
+find winning video ideas for your
+YouTube channel. Okay? And so, we're
+going to actually create a PRD um using
+[06:00]
+the shape kind of autopilot version of
+this. Okay? So, I already have shape
+installed. And so, I'm just going to
+type {slash} shape.
+And I'm going to talk into the
+microphone here and I'm going to use
+super whisper to dictate the kind of
+feature that I want to build.
+I want to create a weekly email summary
+for users of the performance of their
+YouTube channel over the previous week.
+This will pull analytics from their
+channel
+and give uh performance of the videos
+and outliers
+uh and in particular things like
+retention and click-through rate uh and
+all the important metrics that we know
+that YouTube
+posters need to pay attention to. So,
+it'll have uh the data from their
+channel and the videos they published
+the previous week. In addition, it will
+pull uh
+winning videos from their niche and we
+should look at the competitor area of
+[07:00]
+their channel to pull winning videos
+from their niche that they might not
+have known about. The email should be
+configurable to be sent on the day and
+time that they would like, but we can
+default it to Monday morning at 7:00
+a.m. local time for them. Uh this email
+will be sent via our normal email
+sending platform, which is Bento,
+and will be in plain text with a little
+bit of styling.
+Okay, so we ran the shape command and we
+just dictated a whole bunch of stuff in
+here and we're going to hit enter. And
+it has all of the stuff I just said. And
+so, now what it's going to do is it's
+going to go and explore the code base
+because that's what the skill says is if
+you can answer the question, look in the
+code base first. So, it's going to go
+analyze the entire code base and it's
+going to find all of the things that
+might have to do with email, YouTube
+API, scheduling, competitor tracking,
+right? So, all of the contextual things
+[08:00]
+that it thinks it might need to know
+based on what I just said.
+After it's done with this, it's going to
+start asking itself these questions.
+Like, hey, what about the data model? Do
+I need to include any other APIs or
+external services? Do I need to um do I
+need to add a database table here? Do I
+need to add a UI element? Do I need to
+ask users permission for anything? And
+you'll see in just a second like it's
+going to start
+asking itself these questions and then
+answering them automatically. And this
+is the real difference between shape and
+grill me. If you do grill me, it's going
+to ask you these questions individually.
+And often times I find I just go with
+its recommendation. And so, that's why I
+like shape because I'm like 90% of the
+time I'm just going with whatever Claude
+code thinks is best. But I think this is
+a better way to generate code because
+it's it's going through the process of
+reading the entire code base,
+understanding what's going on from a
+contextual standpoint with the kind of
+[09:00]
+thing we're trying to build, and then
+thinking through all of these edge cases
+and scenarios and coming up with best
+practices based on everything that it
+knows about how to write software.
+So, it's going to explore this here for
+a minute. And once it's done, it's going
+to start asking itself questions and
+then answering it based on really senior
+level software developer best practices.
+And at the end we're going to have a
+full product requirements doc that we
+can just look at and if we want to edit
+it, we can. And otherwise, we can
+continue on to
+the next steps, which are to do PRD to
+issue, which
+takes that PRD and creates individual
+issues for it. And then we can run the
+Ralph loop. Cool.
+Okay, so it's done exploring the code
+base and now it's going to start asking
+itself questions. Like, hey, what do I
+do when this thing happens or what about
+this scenario and what about this edge
+case? And it's It's to just answer them
+and it's going to put all of that into a
+document once it's done.
+Okay, so it's now asking itself these
+[10:00]
+questions. Who are eligible actors for
+this feature? Oh, all customers. Should
+this extend the existing agent send
+digest in job? Um okay, so it's going to
+be a new kind of scheduling job here.
+What scheduling infrastructure is
+already in place? Okay, so we already
+have all these things in place, right?
+So, instead of it asking me these
+questions and me giving it an answer,
+it's kind of asking itself and
+documenting these questions as as it
+goes.
+And I'm having it the skill kind of
+intentionally outputs all the questions
+and the answers. So, as it's thinking, I
+can look through this and be like, "Hmm,
+I don't think this one is quite right."
+So, I can kind of note to myself, "Hey,
+that what you answered here to this
+question is not right. I want you to
+update this." Instead of kind of going
+one by one and manually kind of
+answering a question or just accepting
+what it says most of the time, I'm just
+accepting what it's saying out of the
+box, and then if there's an exception
+where I need to correct it, I can.
+And so, you can see these are dozens of
+[11:00]
+questions. Okay, now it's done and it's
+writing the prior product requirements
+doc. So, it's created a folder here for
+product requirements doc, and it'll be
+placing this into that folder here in
+just a second. So, let's open that up so
+we can take a look.
+Okay, so you can see here it created the
+product requirements doc, and we can
+come in here to our editor, click this,
+and take a look at it. This is a very
+detailed kind of problem statement
+solution, user stories,
+uh implementation decisions, all the
+technical stuff that it would need to
+uh to execute on this concept that I
+have, right? Uh what's out of scope,
+other notes, decision logs, right? All
+the questions that it asked itself and
+that
+it answered. If you want to change any
+of this, we can change it here. Okay, an
+important thing in this actual repo, I
+hadn't used the PRD to issues skill
+before. So, I loaded it just in the
+regular terminal window over here. Um
+and and so, I'll just walk you through.
+So, you just do
+uh this command, NPX skills latest uh
+[12:00]
+Matt Pocock, that's where it came from,
+PRD to issues, and has this cool kind of
+builder here. And I say I want to load
+this skill. I want to load it just in
+this project, and I'm going to symlink
+it so that if Matt changes the skill, it
+automatically updates. Uh and it goes
+through and it did this, and that was
+cool.
+Then, if you're in an active Cloud Code
+project, you have to restart, you have
+to quit and restart Cloud Code to load a
+new skill. And so, I had to do that, and
+then I used uh cloud-c
+from the terminal to restart the
+previous session so I retained all the
+context here. So, if you if your
+computer restarts or something like
+that, just in the regular terminal, not
+in Cloud Code, just write cloud-c to
+restart it. And so, now I can do PRD to
+issues.
+And this will uh create issues for
+each of the little bits of work that we
+want to do from the PRD.
+Okay, so it asked me up here if I wanted
+to do this. Uh do you want to push this
+to GitHub issue? And I should have just
+[13:00]
+said yes. Um but I I didn't because I
+was too busy filming this video. Okay,
+so that's great, and now I'll just do
+PRD to issues.
+And it knows that we're talking about
+this PRD.
+Cool. So, what it's going to do is it's
+going to go through this entire
+document. Like, let's go look at the
+document again. It's going to go through
+this entire document say like, "Hey, how
+do I want to slice and dice this big
+piece of work into kind of concise
+individual little bits for me to be able
+to run the Ralph loop on?" Cuz remember,
+the Ralph loop is entirely autonomous.
+It's AFK, away from keyboard. You're
+going to run this and come back a few
+hours later, and the whole thing is
+going to be done. So, we need to make
+sure that the the the documentation and
+the scope of each of these is really
+specific. And the Ralph loop, the way I
+implement it in in this whole kind of
+set of skills here, um has like
+test-driven development, and it reviews
+its own code, and all this kind of
+stuff. You guys don't need to know that,
+but just come in here and just do all of
+this, and it'll set it up for you, okay?
+And if you don't know how to do any of
+[14:00]
+it, just point Cloud Code at this. It's
+open source. And you say, "Hey, like do
+all this. Like, I want to I want to make
+this happen." And it'll do it for you.
+You are going to need Docker on your
+computer. So, if you don't have Docker
+yet, get it. It's entirely free.
+Okay, so PRD to issues says, "Cool.
+I'm going to break it up into these kind
+of four chunks. Does this all sound
+good?" And I'll say, "Yeah, all sounds
+great."
+And it's going to go just do this.
+It's going to create a whole bunch of
+these issues in GitHub, creating issues
+these in dependency order, one and two
+parallel first, then three and four,
+which is cool because when you go point
+your Ralph loop at this later, it's
+going to know if uh a certain issue is
+blocked or dependent on another issue,
+and it will pick the right one
+uh based on that. And that's it. We went
+from just an idea to a really detailed
+plan to now individual little bite-size
+bits. And when this is done, it'll this
+will take kind of 10 or 15 minutes
+[15:00]
+probably to create all these issues. And
+then when it's done, we'll just run
+Ralph. And if you want to do Ralph AFK
+and just the issue number of your PRD,
+it'll just grab that, and it'll have all
+of the individual issues that are
+related to that, and it'll just do all
+of it. And you'll come back a couple
+hours later, and the entire feature will
+be done. And it's pretty much right
+because it's checking its code along the
+way, too. So, a link for this skills uh
+kind of session will be in the link in
+the description below. I hope you give
+it a try. I hope you like it. If you do
+or you don't, leave a comment below and
+let me know what you think. Uh it is
+open source, so you can uh create a pull
+request and add to this, or just leave a
+comment and tell me what you want kind
+of more and less of. But I just really
+want to share this with you because I
+think the grill me and the PRD and the
+issues and the Ralph loop is really
+interesting. I just found myself
+babysitting a lot, so I created the
+shape version, which is like
+the grill me on autopilot, which 90-plus
+percent of the time is correct for me.
+So, I hope you enjoy it. Hope it's
+helpful. If so, please like, subscribe,
+[16:00]
+smash the bell, share this with someone
+who you think would benefit from it as
+well.

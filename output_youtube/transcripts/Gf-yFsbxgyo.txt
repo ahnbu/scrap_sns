@@ -1,0 +1,454 @@
+[00:00]
+What if you could turn any idea to a
+beautiful diagram in seconds? Business
+plans, system designs, and even
+workflows. You just describe it and
+watch it appear on screen. [music] Well,
+Claude now has a new tool that lets it
+integrate with Excalidraw, the number
+one diagram tool used by millions of
+developers and designers, so that you
+can build great-looking diagrams,
+understand complex topics easier, or
+even communicate them to clients or
+peers easily. In this lesson, I'll show
+you the setup, a live demo, and the one
+trick that makes your diagrams look like
+a designer made them. And if you're new
+here, my name is Jay. over a decade
+working with brands you probably know.
+Have been in AI since my master's in
+data science, and now I run our AI
+solutions practice in one of the largest
+AI communities globally. Let's get
+started.
+>> [music]
+>> So, if you've done any sort of knowledge
+work, you know that diagrams are
+everywhere. You have architecture maps,
+you have content pipelines, and almost
+every professional needs them at some
+point. But, the common problem is that
+making them is painful. Usually, with
+tools like Figma or draw.io, you connect
+boxes around, you draw arrows, you fix
+the alignment, and it's all very manual.
+[01:00]
+Well, what if you could just describe it
+in plain English and the diagram shows
+up for you, ready for you to use? Well,
+that is what Excalidraw is about. It's a
+free drawing tool. It runs in your
+browser. Everything looks hand-drawn,
+which gives it that clean whiteboard or
+blackboard style. And what's new is that
+it now integrates seamlessly with
+Claude. And so, if you describe to
+Claude, or even schedule it, to create a
+diagram for you, it handles all of the
+drawing, and it even shows you real-time
+what it is making, while also visually
+assessing what is in there, so that it
+can iterate to fit whatever it is that
+you want visualized. And the great thing
+about this integration is that Claude
+actually thinks about what you are
+describing. So, it decides dynamically
+what should be a box, what should be an
+arrow, and what connects to what. All
+right. So, for you to set this up, the
+first thing that you would need is
+access to Claude. Now, there's multiple
+ways to use Claude, actually, but the
+most accessible for people is probably
+the Claude desktop app. So, if you go to
+claude.com/download,
+you can download the desktop app here.
+And once you have that set up, you can
+see there's three tabs in here. And just
+to give you a quick overview, in case
+[02:00]
+you're new, Claude Chat explains things
+for you. So, it's basically sort of like
+a ChatGPT equivalent. Claude Cowork does
+things for you. So, let's say, if you
+want to organize your files, or even
+have Claude access the web and use your
+browser the same way that a person
+would, then Claude Cowork would be your
+go-to. Now, the one we're using today is
+Claude Code. So, Claude Code builds
+things for you. And among these three,
+Claude Code is also the most capable, in
+my view, and it will let you connect to
+Excalidraw to build out those diagrams
+automatically. So, they're very simple.
+Chat explains things for you. Cowork
+does things for you. And Code builds
+things for you. And just to mention it,
+yes, the Claude desktop app is probably
+the most approachable way that you can
+use Claude Code. For me, personally, I
+like to use it in an IDE software, an
+integrated development environment
+software, like Antigravity, and I just
+have Claude Code running as an extension
+in here. And this is good because I am
+also able to access the terminal version
+of Claude Code in here, where you can
+see I have six long-running Claude Code
+sessions, which basically act as my
+agents, which works well for me because
+I have it connected to Telegram, so that
+[03:00]
+I can just message them individually
+every time I want. And if you want to
+learn how to set this up, I made a
+separate lesson for it, and I'll
+probably link that in this video
+somewhere. Now, real quick, we just
+released the Agentic AI Masterclass for
+our members at Robo Nuggets, which takes
+you from zero to mastery when working
+with agents. There's a link to the
+community in the pinned comment below.
+We've got founders in there who landed
+their first client in weeks, live build
+sessions where we create this stuff
+together, and the actual templates
+behind what I showed in this video. The
+community is also the reason these
+lessons get made, so see that below if
+that's for you. Now, what I've done to
+make this really simple for everyone is
+I've made this skill, which you can just
+grab in our free network below. And if
+you look at this skill, that's basically
+just a text file that, when you give it
+to your agent, it will instantly
+understand how to connect to Excalidraw,
+as well as a few good design principles,
+so that you can instantly talk to it,
+and it will create great diagrams for
+you. So, if you're after architectural
+diagrams, flowcharts, or decision
+charts, or even visual comparisons, then
+this skill will let you do any of those
+things. And here in Claude Code, you can
+see I just gave it that skill, and now
+it now knows these multiple techniques
+in order to create those diagrams for
+[04:00]
+us. In case you're technical and you
+want to understand what it is that this
+skill is installing also for you, it is
+basically this MCP Excalidraw project
+over at GitHub. It is open source,
+already a couple of hundred stars in
+here. And the big difference of this
+versus the other Excalidraw connections,
+even the official one from Excalidraw,
+is that this can actually let you see
+the diagrams being built out live. And
+it also gives you Claude Code vision of
+what is happening here, which is great
+for troubleshooting. So, you can see
+they have a nice comparison chart here
+of the official Excalidraw MCP, where
+they're saying that this project has a
+persistent live canvas that syncs in
+real-time. And this piece, which I
+really like, is the iterative
+refinement. So, Claude will be able to
+draw, look at what it's creating, adjust
+it, and so on. Now, once you install it,
+the first thing that you want to do is
+to have it open your canvas for you. You
+can see when I send that, it is now
+directing me to this localhost:3000,
+which basically means that it is a link
+that I can open on my browser. And if
+you go there, you should now see an
+empty canvas where your Claude Code will
+now be drawing its diagrams. And once
+you have it open, what you can now do is
+[05:00]
+just ask Claude Code to diagram anything
+for you. Hey Claude, can you do a
+diagram of how the Excalidraw MCP skill
+works? Make it simple, but visually
+compelling. And also, I want you to use
+the Excalidraw skill that we just
+installed for you to do this. And also,
+for this particular run, can you run
+through your steps just so that we can
+demo it to the people? So, if you send a
+prompt like that, obviously you don't
+need to do this last step where I'm
+asking it to illustrate its steps for
+us. I'm just doing this so that you can
+see what exactly it is going to do under
+the hood. So, what it's doing now is
+that it is currently reading the design
+guide, so the diagram looks
+professional. It cleared the canvas for
+us, which is a step that it does every
+time. And now, it is planning the
+diagram layout. Now, when you're aiming
+for quality, you can have it stop at
+this point, so that it can double-check
+with you if whatever its plan is is
+going to be sufficient for whatever your
+use case is. And for step four, you can
+see that it just created the diagram,
+and it even did a zoom-to-fit. I'm not
+sure if you caught that earlier, so that
+everything is visible. Now, the great
+[06:00]
+thing about this integration is that
+Claude Code can actually also see what
+is in your canvas. So, you can see here
+for step six that it took a screenshot
+of what it just did, just to verify the
+result, and just to verify that the
+information there is correct. Now, if we
+take a look at this, you can see we can
+probably optimize this a bit more,
+because if I read this and I'm not so
+technical, then I probably won't
+understand it. It really depends on who
+your audience is. And at least with the
+prompt that we gave it earlier, it is
+quite general, right? So, it didn't
+really understand if this is for
+technical people or for non-technical
+people. And so, what you can do, since
+Claude Code understands and sees what's
+on the screen, you can just give it
+feedback in order to iterate. And then,
+by the end of it, we'll be asking it to
+improve the skill that we just built for
+it, so that whatever your use case is,
+it can fit to whatever spec it is that
+you want it to do. So, for example, for
+this one, hey, so I see now the version
+one of what you did. Couple of things I
+think we need to, number one, lessen the
+technical terms, so that it is much more
+understandable even for laypeople.
+Number two, I do want more visual
+[07:00]
+elements in there. So, feel free to use
+emojis, check your skill for how you can
+improve it further, and even have
+variations on the font styling. And
+maybe, for this run, give me three
+different variations, so that I can
+choose which one is directionally more
+correct and aligned to my intent. And we
+can send that prompt to it, because this
+is entirely free. So, I'm just asking it
+to create three different diagrams, so
+that we can choose which one works.
+Because with a lot of these AI models,
+the more volume that you give it, then
+you, as the quality tester, you'll be
+able to dive into whatever it's creating
+here, and actually give feedback, so
+that Claude understands which one is
+best for your setup. And there you go.
+You can see it's now doing this live.
+What it did is it cleared the canvas.
+It's now creating variation one, which
+is the simple pipeline. So, clean
+left-to-right, emoji icons, plain
+language. That actually looks leagues
+better versus what we started, but let's
+see what it does for variation two. And
+now it did this conversation which is
+sort of describing the different steps
+[08:00]
+that the Excalidraw MCP works. And then
+finally, you have variation three, which
+is more of a vertical view, which I
+think, amongs those, this is probably
+the one that works best for us. So,
+let's say, directionally, I think
+variation three would be the one that we
+want. If you want to refine it further,
+for example, this, I'm not too keen on
+the fact that the text is overflowing
+outside of the boxes. That is something
+that we can give feedback to Claude as
+well. Hey, so can you take a look at the
+diagram that you just created for
+variation three? I think directionally
+that is the one that we want, but I just
+want you to clean up the formatting, um
+and for example, wrap the text within
+the boxes, and also center everything,
+so that the diagrams that we create are
+properly laid out and professional. So,
+what you're doing here, basically, is
+tuning your model to your own creative
+taste and whatever it is that you need
+to do. So, if you don't like the font,
+you can change up the font. If you don't
+like a certain design element, you can
+just teach Claude to do that. And this
+is all happening in the background now,
+and you don't need to necessarily drag
+and drop things to make diagrams like
+these. So, there you go. I think this
+one is much better than what we started
+[09:00]
+with. It will probably take another
+screenshot just to confirm everything.
+And now, what you can do, if you like
+this particular style, you can just say,
+hey, so from our conversation today, how
+can you update our skill so that it
+tunes more to the direction of the
+design that I like? Can you ask me
+numbered questions as well, so that the
+intent is clear? In that way, you'll be
+able to improve the skill, so that
+you're able to create better diagrams
+the next time. And you can follow this
+process, by the way, for any sort of
+creative endeavor that you want Claude
+to do for you, because by themselves,
+they don't really have that taste
+element baked in. And so, you, as the
+sort of human in the loop in this case,
+will need to provide that and guide them
+to it, so that next time they'll be able
+to better follow that skill, which is
+now attuned to what you think is good.
+And I just like doing it this way, where
+I'm asking it to give me numbered
+questions, so that I can give feedback
+on each of these. And I'll just hit each
+one. So, let's say, for the language
+level, yes, let's always use plain
+language over technical terms, unless I
+tell you not to. For the layout
+preference, I think the key here is I
+[10:00]
+want you to give me multiple options
+every time. It doesn't need to be
+vertical, but just having more options
+is key. Number three, for the visual
+elements,
+yes, let's do that. I think more visual,
+like the emojis as icons, numbered badge
+circles, is better overall. Text
+handling, that is a big one, so make
+sure that overflow issue doesn't happen
+again. Number five, yes, we talked about
+this, three options before committing,
+that's good. For the color scheme, at
+least for me, I think let's do orange
+and gray as the primary colors, so
+orange is the primary, gray is the
+secondary, and maybe green as the
+tertiary color. There, I think those are
+the key ones. Can you update the skill
+to reflect that, please? And once you
+give that feedback, basically it will
+just rewrite the skill to improve it,
+which is a useful practice to do. Now,
+from here, what can you do? Because
+obviously this canvas is living right
+now in your browser right now. Similar
+to Excalidraw, if you've used Excalidraw
+before, you can export the image, you
+can save the dot Excalidraw file so that
+you can open it next time. And by the
+[11:00]
+way, you can also change the background
+of it if you wish, and shift it to dark
+mode, which is always pretty cool. I'll
+actually probably keep this. Or you can
+just have Claude do that for you. And
+so, if we go back to Claude, so you can
+see here just updated that skill for us,
+which is good. Now, let's just say,
+"Hey, I want to understand what are my
+options when it comes to exporting this
+diagram for us. Can you lay out the
+options, the ones that you can do?" And
+with that, you can see that it can
+export it as different image files or
+even a dot Excalidraw file if you want
+to edit it yourself. Now, let's take
+this one level up, because obviously,
+with this illustration, you are still
+talking to Claude in order to create
+these diagrams, right? But what if you
+want to use Claude to do this in the
+background for you without you even
+having to prompt it? Well, there's
+multiple ways to do this. One way to do
+it is to go to this schedule tab, and
+that way you'll be able to schedule task
+in here. So, if you click on new task,
+you can type out a name for this task, a
+description, as well as the prompt in
+here. But again, since this is Claude,
+you don't actually need to type this
+out. Because if you go back to our chat,
+Claude code is actually smart enough to
+[12:00]
+understand if you want to schedule
+something. So, let's say, "Hey, so I
+actually want you to create a diagram
+for me every day at, let's say, 12:00
+noon Sydney time, in order to teach me
+something new about the latest
+development on AI. So, I'm looking for
+new things like, let's say, Claude Metas
+just got published by Anthropic for
+their cybersecurity peers, news like
+that. I want you to give me a diagram
+every day, send it to my Telegram so
+that instantly I can understand these
+complex topics in a diagram format. Make
+sure to use the Excalidraw skill. At
+least for this one, tell me the steps
+that you will take in order to set that
+up so that we can illustrate it to the
+people watching this. And through that
+via natural language, you can invoke
+Claude code's capabilities to schedule
+things for you. And what's good about it
+is that it will actually align it to
+whatever your setup is. And you can see
+here it outlines for me the different
+steps that it will do. Of course, it
+will do some research, will pick the
+topic, it will read the skill, create
+the diagram, and export it as a picture
+to be sent to Telegram. And now it's
+[13:00]
+going to create a scheduled task for us,
+and now I have it logged as this daily
+AI diagram as part of my scheduled cron
+workflows. And you can see it also
+recommended me to do a test run, which
+is good. So, I just asked it to do that.
+And there you go, right on schedule, it
+sent me this AI diagram, and it looked
+through what Metas is about, and even
+gave me this nice infographic, which
+just presents the information better
+versus it arriving to a wall of text.
+And there you go. I hope that was
+helpful, and if it is, then consider
+subscribing, because that helps us a lot
+to put out more educational content like
+this. And if you also want to learn how
+to make beautiful slides using Claude,
+then you can watch this video next. I'll
+see you guys next time. Thank you.
+Okay.

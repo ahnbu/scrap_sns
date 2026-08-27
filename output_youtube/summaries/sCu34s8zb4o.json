@@ -1,0 +1,18 @@
+{
+    "video_id": "sCu34s8zb4o",
+    "model": "gemini-3.7-flash-medium",
+    "prompt_version": "v2",
+    "prompt_sha1": "1a2446b042d7b917482477d5da5cda70874b56c5",
+    "generated_at": "2026-08-27 13:02:54",
+    "summary": "[요약] Awesome Design MD와 OpenCode를 활용해 완성도 높은 프런트엔드 UI를 구축하는 가이드이다.\n\n- Awesome Design MD는 55개 이상의 실제 웹사이트 디자인 규칙을 담은 마크다운 라이브러리다.\n- 빌드 규칙을 담는 agents.md와 시각적 스타일을 정의하는 design.md를 분리해 AI의 집중도를 높인다.\n- 오픈소스 터미널 코딩 에이전트 OpenCode에 design.md를 참조시켜 일관된 UI 코드를 생성한다.\n- 라이브러리와 에이전트는 무료이며 사용량에 따른 AI 모델 API 비용만 발생한다.\n\n[상세]\nAwesome Design MD의 개념과 특징\nAI 코딩 에이전트가 생성하는 프런트엔드 결과물의 시각적 품질을 높이기 위해 만들어진 라이브러리입니다. 색상 팔레트, 간격, 타이포그래피, 구성 요소 스타일 등 실제 웹사이트 기반의 디자인 규칙을 담은 55개 이상의 마크다운 파일을 제공합니다. 별도의 설정이나 JSON 스키마 없이 LLM이 바로 이해할 수 있는 마크다운 형식으로 작성되었으며, HTML 미리보기를 통해 라이트 및 다크 모드를 사전에 확인할 수 있습니다. 구현 방식을 정의하는 agents.md와 외형을 담당하는 design.md를 분리하여 AI가 더 일관된 결과물을 내도록 돕습니다.\n\nOpenCode 연동 워크플로 및 활용 팁\nGitHub에서 14만 개 이상의 별을 받은 터미널 기반 AI 코딩 에이전트 OpenCode를 프로젝트와 연결하여 사용합니다. 원하는 design.md 파일을 프로젝트 루트에 배치한 후, /init 명령어로 agents.md를 생성하고 프롬프트에서 디자인 파일을 명시적으로 지정합니다. 계획 모드와 빌드 모드를 전환하며 컴포넌트 생성 계획을 검토한 뒤 코드를 작성하면 규격화된 고품질 UI가 완성됩니다. 원본 웹사이트와 지나치게 유사해지지 않도록 브랜딩과 콘텐츠는 변경해 사용하는 것이 권장되며, 36,000개 이상의 별을 보유한 해당 저장소에 새로운 디자인을 요청할 수도 있습니다.",
+    "transcript_sha1": "1097e4814a1e6a0dbdde6e0819500ca1dce657e8",
+    "usage": {
+        "input_tokens": 15850,
+        "output_tokens": 2475,
+        "thinking_tokens": 1995,
+        "cache_read_tokens": 8152,
+        "total_tokens": 18325
+    },
+    "duration_seconds": 7.7775705,
+    "agy_conversation_id": "dc85b631-5bd5-4d19-bdd9-e97fbe33c6ae"
+}

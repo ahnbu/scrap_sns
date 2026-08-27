@@ -1,0 +1,18 @@
+{
+    "video_id": "ova4oT9gniA",
+    "model": "gemini-3.7-flash-medium",
+    "prompt_version": "v2",
+    "prompt_sha1": "1a2446b042d7b917482477d5da5cda70874b56c5",
+    "generated_at": "2026-08-27 12:54:52",
+    "summary": "[요약] 게리 탄이 개발한 하네스 엔지니어링 도구 gstack의 프로세스를 소개한다.\n\n- Y Combinator CEO 게리 탄이 만든 하네스 엔지니어링 도구 gstack이 주목받고 있습니다.\n- 코드를 직접 작성하지 않고 간단한 명령어만으로 기획부터 QA 및 배포까지 처리합니다.\n- Claude Code를 기본으로 사용하며 Codex나 Gemini도 연동하여 활용할 수 있습니다.\n- CEO, 엔지니어, 디자이너, 보안 등 역할별 특화 에이전트가 협업해 제품을 완성합니다.\n\n[상세]\ngstack의 개발 배경과 주요 특징\nY Combinator CEO인 게리 탄이 하네스 엔지니어링 도구 gstack을 개발해 공개했습니다. 이 도구는 사용자가 소스 코드를 한 줄도 직접 작성하지 않고 제품을 완성할 수 있도록 돕습니다. 기본적으로 Claude Code를 기반으로 동작하며 Codex나 Gemini도 선택하여 활용할 수 있습니다.\n\n역할별 에이전트 기반의 개발 파이프라인\ngstack은 기획부터 배포까지 단계별 전용 명령어로 전체 프로세스를 수행합니다. 아이디어를 구체화하는 기획 단계부터 CEO, 엔지니어, 디자이너의 리뷰를 거쳐 코드를 작성하고 브라우저 기반 QA와 배포까지 이어집니다. 각 단계마다 전용 프롬프트가 적용된 개별 에이전트들이 보안과 성능 점검 등 자기 역할에 맞게 업무를 수행합니다.",
+    "transcript_sha1": "ffe819b284c6a8e45b8073f4f32facfdbdb57a7a",
+    "usage": {
+        "input_tokens": 21710,
+        "output_tokens": 1355,
+        "thinking_tokens": 1023,
+        "cache_read_tokens": 0,
+        "total_tokens": 23065
+    },
+    "duration_seconds": 5.1297687,
+    "agy_conversation_id": "86221456-66f8-4966-b0ef-76b33c971b10"
+}

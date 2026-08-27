@@ -1,0 +1,520 @@
+[00:00]
+Imagine if we can give claw code or
+codex the ability here to take over our
+social media accounts to network on our
+behalf or even better to query data or
+we could perform some actions on our
+school communities. But keep in mind
+that there is no CLIs or any MCPs that
+school or social media accounts like red
+note actually offers. And what we're
+going to show you in this video is a
+tool that we can be able to actually
+building out our own CLI tool that we
+can connect it to any apps we're
+currently using day-to-day. So that's
+why in this video I'm going to show you
+exactly how you can be able to create
+your CLI tools that you can connect your
+AI agent here to take over your
+application you're using day-to-day. So
+pretty much that's what we're going to
+cover in this video. With that being
+said, if you're interested, let's get
+into the video. Now to get started, the
+tool that we're going to use in this
+video is called printing press. And
+essentially what it does is a CLI
+factory that we can convert any apps or
+websites into a CLI tool that we can
+have our AI agent here to access those
+applications and performing actions on
+our behalf. But before diving deep into
+this tool called printing press, what I
+want to talk about here is what even is
+a CLI? Well, CLI stands for command
+interface. Is a way here to use a
+[01:00]
+computer or software by simply typing
+text commands in a terminal instead of
+just clicking buttons. So a simple
+example could be like you're creating a
+folder in your desktop folder and simply
+all you had to do here in a normal case,
+you just right click and create a
+folder. But if you do it as in a CLI,
+simply just going to open a terminal,
+type in a command like this and it's
+going to create that folder instantly.
+So rather than using the graphical user
+interface, you're just using the CLI
+here to basically creating that action.
+Now using CLI isn't just one tool that
+you can have your AI agent here to take
+over your computer, right? There's a
+tool called computer use which we would
+talk about on this channel where you can
+have your AI agent here to operate your
+softwares through a visual interface by
+looking at the screenshots, right? Take
+a screenshot of what you're currently
+looking at right now, moving the cursor,
+clicking the buttons here, typing the
+text exactly like how you're acting in
+any software you're using. But the
+problem here is if you're using computer
+use, it's going to take a screenshot and
+feed it into your AI. And especially for
+image here, it consumes significantly
+more context which means tokens, than
+text. So, if you're using CLI,
+[02:00]
+everything are all in text, right, in
+the terminal. But, if you're using like
+something like computer use or browser
+use, for example, it's going to take a
+screenshot or download the entire
+website for the accessibility tree. It's
+going to feed that into your AI, and
+that's going to take so many more
+context tokens, which means that it's
+going to cost you more money. And then,
+higher the context, the lower the
+accuracy for AI to making decisions. And
+that's why the author of printing press
+here even said it's going to cost so
+much tokens. And that's why we're using
+something like this, like a CLI factory,
+that we can have our computers to call
+in the APIs of those applications and
+try to perform the actions on our
+behalf. And before we get into the
+printing press, how we can install it,
+one more question you'll be asking is
+why do we use MCPs? And the simple
+reason is this. CLI tool here consume
+low tokens. MCP here consume more tokens
+for the same identical task. And the CLI
+tools here have the ability here to
+filter data. So, let's say the API
+returns a block of text. So, instead of
+returning that entire block of text here
+[03:00]
+to the AI context window, it's going to
+using commands like grep here to
+basically filter data from that block of
+text. But, whereas MCP here, it doesn't
+do that. It just pass the entire data
+here into your context window here and
+let AI here to process that. And the
+most important part is that rather than
+just load up all the tools, right, into
+your context window, CLI tools here only
+loads when you need it. So, it loads the
+tools on the met, which is saves a lot
+more token up front. And that's the
+clear reason why the CLI here is
+preferred, the best tool for using AI
+agent here when it performing task,
+because it's highly token efficient. And
+most importantly, large language model
+that we're using today already possess a
+deep native understanding of common
+developer tools like Git, Docker, AWS,
+or grep from its initial training data.
+So, it knows exactly how to run those
+command lines right off the bat, without
+you having to teach it every single time
+on how to run it.
+Now, before we continue, I recently
+launched our school community where I
+help you to master AI agents,
+automations, and building real AI
+products. This has come from someone who
+[04:00]
+used to work as a senior AI software
+engineer at companies like Amazon and
+Microsoft. And in this community, you're
+going to get full AI builder roadmap
+where you're going to start with AI
+automations, then later on moving into
+AI agents, research systems, SaaS
+buildings, and eventually how to
+productize and market your AI skills.
+You're going to get the templates,
+workflows, weekly live calls, and direct
+community supports. So, when you get
+stuck, you can ask questions and get
+help right away. And the goal here is
+not just to watch more videos. It's
+actually build, post your progress, get
+feedback, and start to level up. So, if
+you're interested, make sure you jump
+right in, start the first course, and
+I'll see you in a community. All right,
+so now you know exactly why we should be
+using CLI over MCPs and why is CLI
+better for your AI agents. Let's take a
+look at Printing Press, the library
+itself. So, right here you can see I'm
+on the printingpress.dev. And there's
+actually two ways on how you can
+converting any apps or APIs or sites
+into a CLI that you can connect it to
+your AI agents. One is you can be able
+to using the factory skill where you can
+converting that application that you're
+[05:00]
+using every single day into a CLI tool.
+And the other way you can do this is you
+can try to come down to the bottom here
+and there's so many categories of apps
+that you can actually search for. So,
+let's say you're using Instagram a lot.
+Okay, I'm just going to type in
+Instagram. You can see that we have two
+CLI tools that we can actually be able
+to use. So, one is a CLI for Instagram
+Business where you can look at the
+business metrics. And let's say if
+you're using Linear a lot. Okay, so
+there's a in Linear CLI. If you're using
+school, you want to converting your
+entire school community into a CLI where
+your AI agent here can be able to
+pulling information on your behalf, you
+can also do that. Now, what you're
+looking at here, you can see there's
+over 300 CLIs in the library itself. So,
+you can actually be able to use it right
+off the bat. And the other option that
+you can do this is you can just
+searching for the apps that you're using
+on Google and try to see if there's
+actually official CLI that has already
+been built in by their official vendor
+or company. For example, let's say if I
+want to using the Firecrawl, you can see
+here that Firecrawl already has its own
+CLI tool. And if you were to look at
+Stripe, you can see that Stripe also has
+their own CLI tool based on their
+documentation. And we can literally
+[06:00]
+using that CLI tool here instead of
+using like their MCPs or their API or
+SDK or whatever, right? This will
+basically save you so much time without
+you have to go through the remaining of
+this video here to install everything.
+And furthermore, you can see if you're
+part of the Google Workspace Suite,
+there is also a Google Workspace CLI,
+which you can see here that you can
+actually be installed where now you can
+be able to give your AI agent here the
+ability here to access like Google
+Drive, Gmail, Calendar, Sheets, and so
+many more. So, try to use the official
+open-source CLI tools as much as you
+can. And only try to create one or try
+to find one only if it doesn't have it.
+So, now let me show you exactly how
+we're going to be using Printing Press
+Dev and try to install and creating our
+own CLI. Okay, so in this case, let's
+take a look at what we're trying to
+build today. So, right here you can see
+this is called Red Note, which is a
+Chinese version of Instagram. And people
+are posting all kinds of things. So,
+what I'm looking at here is I want to
+network with with people who are related
+to AI and I want to have coffee chat
+with them. So, I want to network and I
+want to searching for this kind of
+keywords. And here you can see there's
+bunch of posts that we can network with.
+[07:00]
+So, what I want to do here is that I
+want to building a CLI version of this
+so that it can be able to like scraping
+all the posts and try to find the
+relevant post, maybe adding a comments
+or DM the uh creator of the post and try
+to ask for coffee chat or network or
+join the group. And also combining that
+with what we talked about on this
+channel for context engineering where we
+can be able to combining with all the
+context that AI knows about us where we
+set in the knowledge base and try to use
+our context here to find the relevant
+people that we want to coffee chat and
+network. So, in this case, let's try to
+take a look at how we can do this. So,
+in the case, first thing first, what I'm
+going to do here is I'm going to go to
+my printing press, right? I'm going to
+search for if there's actually a CLI
+already for this. So, in this case, I'm
+going to search for Red Note or the
+actual name Xiaohongshu. In this case,
+it doesn't have that. So, what we're
+going to do here is I'm going to open
+the repository for the CLI or in this
+case, the Printing Press repository. And
+simply, if you were to scroll down, it
+tells exactly how you can install it.
+Because I'm using Code X, but if you're
+using Cloud Code, there's also an option
+[08:00]
+for you to install that. So, simply, you
+can see just going to install it by
+copying this command right here. Do a
+curl command here to install it. Or you
+can just copy this entire repository and
+just let AI here install it for you. So,
+in this case, I'm going to copy the
+link. So, right here, I'm coming back to
+my Code X here. I'm using GPT-3.5 medium
+and I'm going to choose a project here.
+First thing's first, I'm going to do
+here is to tell Code X try to install
+this repository. So, I'm going to
+instruct it and try to install it right
+here. All right, so once we have this
+installed, the next thing I'm going to
+do here is to restart our Code X
+session. So, in this case, I'm going to
+open a new session here. So, in this
+case, I'm going to click on this pencil
+icon and it's going to restart a new
+session. So, the next thing we're going
+to do here is we're going to start to
+passing the URL and we're just going to
+have it to install it. So, there's
+actually a command that we can actually
+use here. So, if we were to go to the
+repository and if we want to use a In
+this case, if I want to convert
+anything, right, into a CLI, you can see
+all we have to do here is just going to
+[09:00]
+passing the website URL and just specify
+what you want it to do and you can see
+it's going to do it, right? So, for
+example, if you wanted to convert Notion
+to a CLI, you can just do that. So, in
+this case, I'm going to take the
+Printing Press skill here and I'm just
+going to go to my Code X passing that.
+So, now we should have the Printing
+Press Generate skill, right? So, we
+would generate a CLI from a website or
+whatever. And what we're going to do
+here is we're going to copy the website.
+So, in this case, the xiaohongshu.com
+and that's going to be the website link
+right here. Okay, and I'm just we're
+just going to converting that into a
+CLI. So, in this case, I'm going to
+specify that and let's try to see what
+printing press does. Okay, so here you
+can see printing press here has created
+this CLI tool and here you can see it
+creates a plugin for this. So, now if I
+were to click on this, which is pretty
+cool, that this is a plugin and I can be
+able to install it and be able to use it
+right away. And then here you can see
+these are the capabilities that I can be
+able to search things, read, write,
+[10:00]
+social, right? So, it's things things
+like that, right? So, which is pretty
+cool. I'm just going to click on install
+right here. Everything is all set up.
+And then here you can see I just asked
+like, "Hey, what do you do behind the
+scenes? Is it using like a browser or is
+it using the terminal? How does it
+work?" So, the Codex plugin, which calls
+the local uh Xiao Hongshu command,
+right? So, this is the uh CLI tool that
+we built and it uses your local browser
+cookies, right? Or a QR scan session
+here to actually proceed. So, it doesn't
+do any puppeteer here on your browser
+for each action. Uh it's just only using
+your browser cookies here with the uh
+CLI that it builds to basically try to
+process that. So, in this case, I'm
+going to say, "Hey, why don't you just
+run this command right here? Okay, uh
+give me the barcode so that I can be
+able to, you know, scan it right now and
+be able to log in into my account." All
+right, so the next thing I'm going to do
+here is once we have our AI agent here
+is now authenticated to that account.
+And the next thing I'm going to do here
+is come back to Red Notes and try to
+find things that are relevant to we're
+looking for. So, right here you can see
+I just type in like a search term, copy
+that link, and paste it into Codex. And
+[11:00]
+what Codex did here is first of all,
+verify that we do have access to Xiao
+Hongshu right now. And it also has
+logged in. And the next thing I'm going
+to do here is you can see it has not
+searched that yet, but has gathered the
+context based on what we have. So, on
+our channel, we talk about about context
+engineering a lot, right? So, the more
+context you give, the smarter the AI
+here knows exactly what it needs to
+propose or what option does it need to
+give you, right? So, here you can see
+this is exactly what it proposed me. So,
+first of all, it tells you exactly,
+"Hey, what I know about you." And here
+you You see this is what I propose based
+on your goal, based your context. And
+then here you can see it gives you some
+options to choose on exactly what we
+should target, what is the outcome that
+you want it to be, right? For this
+automation outreach. So here you can see
+I'm just going to give my answer and
+once I give my answer here, I'm going to
+come back and we're just going to
+proceed forward. But before we do so,
+let me introduce you the sponsor of this
+video, Document360.
+>> Most teams don't have one documentation
+problem, they have three. Internal
+knowledge lives in Notion, developer
+docs end up in GitBook or Mintifi, the
+[12:00]
+help center sits somewhere else
+entirely, and support keeps getting the
+same tickets because nobody finds the
+right answer fast enough. Document360 is
+the AI powered knowledge base built to
+replace all three. Unlike Notion, it is
+built for structured publishing with
+version control and a proper public
+site. Unlike GitBook, non-technical
+teams like support and product get the
+same editor experience as engineering.
+Unlike Mintifi, it covers SOPs, user
+manuals, and help centers alongside API
+documentation. For non-technical teams,
+the workflow runs through the portal, a
+dedicated editor for writers, reviewers,
+and admins. You create articles, move
+them through a custom approval workflow,
+control role-based permissions, track
+analytics, and import content from PDF
+or Word. For engineering teams, the
+developer documentation experience is
+built separately but connected. Import
+your Open API or Swagger spec and
+endpoints, parameters, authentication
+flows, and response codes auto-populate
+into a structured reference. Developers
+get code samples in multiple languages
+[13:00]
+and a try-it-out API playground inside
+the same knowledge base. The AI layer is
+where Document360 separates from every
+other tool. Eddy AI powers an AI search
+that delivers synthesized answers from
+your docs, not a simple list of links.
+The AI chatbot embeds on your knowledge
+base site and answers user questions in
+real time from your actual content.
+Writers get AI powered drafting,
+rewriting, and auto-generated
+glossaries. The support ticket deflector
+surfaces relevant articles when a ticket
+arrives, cutting volume before it
+reaches your team. One platform, every
+documentation workflow. Start your free
+trial today.
+>> All right, so finally you can see that
+once I give my answer, I have codex here
+to run in the background. And you can
+see that these are all the keywords that
+it has searched and try to network with
+people who are related to each every
+single keywords that we have. Now, you
+can also do this with school, right? So,
+you can see that with different social
+media platform like school, if you want
+to uh you can see here that I created a
+skill or in this case a COI tool called
+school PPC COI. And what you can do here
+is that you can using this COI tool to
+basically interact with the school
+[14:00]
+community is through your AI agents. And
+like I said, keep in mind that school
+doesn't have its own MZP or COI. And you
+can literally using this COI factory
+skill here to build it out, right? So,
+you can see the COI tool can build you
+engage with our community, knows
+everything about us, and also has
+ability here to creating posts, updates,
+deletes, and so much more. And
+furthermore, you can see we have the
+ability here to list out all the
+members, checking out how the members
+are doing, right? Extracting courses, or
+be able to look at our calendars, right?
+Look at the courses in markdown format
+so that AI can be able to ingest it.
+Things like calendar, notifications, and
+so many more. And honestly, what you can
+do with this is you can literally using
+this to analyzing school community.
+Let's say you join multiple school
+community here, you want to ingesting
+those data into your AI agents, you can
+do that here. And furthermore, you can
+also even take this even further and
+taking applications, which I'm going to
+do a uh lesson on in my school
+community, where you can actually
+uh taking a brand new site like Fiverr
+for example. Let's say if you're
+currently an HR, you want to hire the
+right people, or let's say you're a
+freelancer here, you want to talk to
+[15:00]
+multiple clients, then what you can do
+here is you can just converting that
+into a COI tool, have your AI agent here
+to interact with it, right? So, in my
+school community right now, I do have a
+course right now. So, right now in my
+school community for my Hermes agent
+track, you can see that there is a
+section called the apps to Hermes agent
+tool, where we can be able to build out
+and connecting those apps, right?
+Converting them into CLIs. So, we're
+going to have our Hermes agent, your
+Codex AI agent here, connected to that
+application. So, that's pretty much it
+for this video on Printing Press, which
+is a CLI factory that converting any
+apps here into a CLI. And if you do find
+my this video, please make sure to like
+this video. Consider subscribe for more
+content like this. But with that being
+said, I'll see you in the next video.

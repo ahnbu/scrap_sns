@@ -1,0 +1,18 @@
+{
+    "video_id": "ju-T6uQNPSg",
+    "model": "gemini-3.7-flash-medium",
+    "prompt_version": "v2",
+    "prompt_sha1": "1a2446b042d7b917482477d5da5cda70874b56c5",
+    "generated_at": "2026-08-27 13:10:45",
+    "summary": "[요약] 모델 제한 없는 로컬 오픈소스 도구인 Open Design의 특징과 활용법을 소개합니다.\n\n- Claude Design의 사용량 한계와 모델 종속성을 해결하는 로컬 오픈소스 도구 Open Design을 소개합니다.\n- Apache 2.0 라이선스로 상업적 활용이 가능하며 71개 이상의 브랜드 디자인 시스템을 지원합니다.\n- Claude Code, ChatGPT, Gemini 등 다양한 대형 언어 모델을 자유롭게 연동해 비용을 절감할 수 있습니다.\n- 5가지 파일 형식 내보내기와 Vercel 배포, 이미지 생성 API 연동 등 풍부한 실무 기능을 제공합니다.\n\n[상세]\nOpen Design의 주요 특징과 강점\nClaude Design은 사용량 제한이 엄격하고 단일 모델만 지원하여 대규모 작업이나 상업적 활용에 제약이 큽니다. 반면 12일 전 공개된 Open Design은 Apache 2.0 라이선스를 적용한 100% 로컬 구동 오픈소스 도구입니다. 사용자 환경 외부로 데이터를 전송하지 않으며 71개 이상의 브랜드 디자인 시스템이 내장되어 상업적 프로젝트에 자유롭게 쓸 수 있습니다. 또한 PDF, PowerPoint, ZIP, HTML 내보내기와 Vercel 즉시 배포 기능을 제공합니다.\n\n다중 모델 연동 및 추천 작업 방식\nOpen Design은 Claude Code뿐만 아니라 ChatGPT, Gemini, Codex, DeepSeek 등 다양한 모델을 교체하며 작업할 수 있습니다. 초기 디자인 설계는 강력한 성능의 Opus를 활용하고, 이후 세부 수정이나 확장은 비용이 저렴한 모델을 투입하는 방식이 권장됩니다. OpenAI API 키를 입력해 UI 내부에 맞춤형 이미지를 생성하는 등 다채로운 부가 기능도 지원합니다. 월 20달러나 200달러 구독료 대비 비용 효율을 극대화하여 에이전시나 프리랜서에게 유용합니다.",
+    "transcript_sha1": "82353084a19bfde91d9bda7b39cd9a3234fc104b",
+    "usage": {
+        "input_tokens": 18726,
+        "output_tokens": 1817,
+        "thinking_tokens": 1396,
+        "cache_read_tokens": 8156,
+        "total_tokens": 20543
+    },
+    "duration_seconds": 6.0839846,
+    "agy_conversation_id": "37c649a0-85f9-4327-b2ae-173bf83b7727"
+}

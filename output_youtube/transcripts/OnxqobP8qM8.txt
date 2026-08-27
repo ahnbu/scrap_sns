@@ -1,0 +1,27 @@
+[00:00]
+I compared GSD Superpowers and Vanilla
+Cloud Code in a head-to-head-to-head
+test to see which one actually was the
+best. I had each one of them create me a
+landing page for my AI agency, include a
+blog post, and also create a blog
+generator where I could give it any sort
+of article or YouTube video and have it
+scrape the content, create a blog in my
+voice, give me the ability to edit it,
+and then automatically post it. And all
+in all, the final results were pretty
+similar. However, when we compare their
+token usage and time spent coding, the
+differences are massive. For Cloud Code
+to do all that, it took about 20 minutes
+for just the vanilla. For Superpowers,
+it took 60 minutes. For GSD, it took an
+hour 45.
+For tokens, Cloud Code took about 200K.
+Superpowers was roughly 250.
+And GSD was 1.3
+million.
+So, with that in mind, I think the
+answer is pretty clear. And that is
+vanilla Cloud Code was the clear winner.

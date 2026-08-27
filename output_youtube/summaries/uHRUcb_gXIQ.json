@@ -1,0 +1,18 @@
+{
+    "video_id": "uHRUcb_gXIQ",
+    "model": "gemini-3.7-flash-medium",
+    "prompt_version": "v2",
+    "prompt_sha1": "1a2446b042d7b917482477d5da5cda70874b56c5",
+    "generated_at": "2026-08-27 12:59:25",
+    "summary": "[요약] Bear와 Kotlin 기반으로 구축한 실무 및 영상 제작용 개인 AI 워크플로우를 소개한다.\n\n- Bear CLI를 영속 계층으로 삼아 Claude Code, Codex, Antigravity 간 세션 연속성을 구축했다.\n- mingus-kit로 업무 관련 API와 페르소나를 스킬화해 분석 및 초안 작성을 자동화했다.\n- mingus-studio로 Whisper 기반 로컬 자막 생성 및 맞춤형 타이밍 설정을 구현해 비용과 오류를 줄였다.\n- JetBrains의 Kotlin AI 프레임워크 Koog를 활용해 자막 보정과 181개 질문 태그 분류를 객체 기반으로 구현했다.\n\n[상세]\nAI 워크플로우 기반과 세션 연속성 구축\n유행을 좇는 과도한 자동화보다 자신에게 필요한 기능을 직접 만들어 효율을 높이는 접근 방식을 제시합니다. 전체 시스템의 영속 계층으로 Bear CLI를 선택하여 읽기, 쓰기, 검색 및 MCP 연동을 처리합니다. 핵심 프로젝트인 mingus-kit는 Claude Code, Codex, Antigravity 등 여러 도구를 오가는 환경에서 Bear를 통해 세션 히스토리를 기록하고 복원합니다. 또한 3,000개 댓글 분석 기반 페르소나와 업무 API를 연동해 트래픽 분석 및 영상 초안 작성을 자동화합니다.\n\n로컬 영상 제작 자동화와 Kotlin 프레임워크 연동\n영상 제작을 돕는 mingus-studio는 Whisper 기반 로컬 받아쓰기로 Final Cut Pro XML 자막을 생성해 비용 없이 타이밍 깨짐 문제를 해결합니다. 0.05초 단위 미세 조정 등 맞춤 설정을 적용한 뒤, 자막 후보정 작업을 위해 프로그램 내부에서 LLM을 연동합니다. 이때 JetBrains의 Kotlin AI 프레임워크 Koog를 도입해 단순 문자열이 아닌 구조화된 객체 형태로 모델 입출력을 처리합니다. 이를 통해 자막 보정뿐 아니라 블로그에 등록된 181개 질문의 태그 분류 작업까지 경량 로컬 LLM으로 통합 관리합니다.",
+    "transcript_sha1": "6a8f1c26efd9bd488fd68fd282c0b6e65c5a4b62",
+    "usage": {
+        "input_tokens": 17396,
+        "output_tokens": 1428,
+        "thinking_tokens": 968,
+        "cache_read_tokens": 8147,
+        "total_tokens": 18824
+    },
+    "duration_seconds": 6.8769665,
+    "agy_conversation_id": "01fb147a-ae0d-47d2-b9da-f11038a77801"
+}

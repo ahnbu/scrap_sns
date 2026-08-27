@@ -1,0 +1,18 @@
+{
+    "video_id": "mNbVD2fw-fA",
+    "model": "gemini-3.7-flash-medium",
+    "prompt_version": "v2",
+    "prompt_sha1": "1a2446b042d7b917482477d5da5cda70874b56c5",
+    "generated_at": "2026-08-27 13:00:09",
+    "summary": "[요약] taste-skill과 Claude Design의 웹 디자인 품질 및 토큰 소모량 비교\n\n- taste-skill은 AI 특유의 부자연스러운 느낌인 AI Slop을 제거해 주는 프론트엔드 개발 스킬이다.\n- Hermes Agent 환경에서 동일한 여행 예약 플랫폼 프롬프트로 Claude Design과 taste-skill을 비교했다.\n- Claude Design은 3단계로 5분 미만에 빠르게 생성했으나 UI 정렬과 간격에서 다소 아쉬운 완성도를 보였다.\n- taste-skill은 이미지 생성과 검증을 포함한 4단계를 거치며 약 15분이 걸렸으나 훨씬 뛰어난 디자인 품질을 냈다.\n\n[상세]\ntaste-skill 소개 및 Hermes Agent 설정\ntaste-skill은 프론트엔드 웹 개발 시 AI가 만든 티를 줄이고 완성도 높은 디자인을 구현하도록 돕는 스킬이다. GitHub 저장소를 클론한 후 Hermes Agent의 스킬 디렉토리에 연결하여 설치할 수 있다. 기본 프론트엔드 디자인 스킬 외에도 톤을 차분하게 만드는 소프트 스킬, 깔끔한 설계를 지원하는 미니멀리스트 스킬 등 다양한 옵션을 지원한다.\n\nClaude Design과의 동일 프롬프트 웹 제작 비교\n야놀자와 유사한 비행기, 호텔, 패키지 예약 플랫폼을 제작하는 동일한 프롬프트로 두 스킬을 테스트했다. Claude Design은 3단계 작업을 거쳐 신속하게 결과물을 냈으나 박스가 다소 기울어지고 여백이 좁은 모습을 보였다. 반면 taste-skill은 4단계에 걸쳐 3장의 이미지를 직접 생성하고 렌터카 항목을 추가하는 등 더 세밀하고 정돈된 웹 UI를 완성했다.\n\n토큰 사용량 및 생성 시간과 품질 평가\nClaude Design은 5분 미만의 수행 시간과 상대적으로 적은 토큰 소모량을 기록했다. taste-skill은 이미지 생성과 추가 검증 단계로 인해 약 15분이 소요되었으며 토큰 사용량도 Claude Design 대비 약 3배 수준으로 높았다. 그러나 최종 웹 UI의 시각적 완성도와 깔끔함 측면에서는 taste-skill이 훨씬 우수하여 품질을 중시할 때 활용 가치가 높다.",
+    "transcript_sha1": "8b3bd5658fd65e1c3b9cd4710a20a4130e859f5a",
+    "usage": {
+        "input_tokens": 23664,
+        "output_tokens": 1556,
+        "thinking_tokens": 1059,
+        "cache_read_tokens": 0,
+        "total_tokens": 25220
+    },
+    "duration_seconds": 5.6929908000000005,
+    "agy_conversation_id": "b655063a-04ce-48b5-83a1-87960c1d3573"
+}

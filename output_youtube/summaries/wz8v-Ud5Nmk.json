@@ -1,0 +1,18 @@
+{
+    "video_id": "wz8v-Ud5Nmk",
+    "model": "gemini-3.7-flash-medium",
+    "prompt_version": "v2",
+    "prompt_sha1": "1a2446b042d7b917482477d5da5cda70874b56c5",
+    "generated_at": "2026-08-27 13:15:18",
+    "summary": "[요약] API와 MCP 개념을 비유로 이해하고 날씨 앱과 챗봇, 배경 영상을 제작하는 실전 가이드다.\n\n- API는 프로그램 간 데이터를 이어주는 웨이터이고, API 키는 사용자 식별과 과금을 위한 회원 카드다.\n- MCP는 Anthropic이 발표한 AI 모델과 외부 도구를 일관되게 연결해 주는 공통 규격이다.\n- 무료 날씨 API인 Open-Meteo와 shadcn 디자인 시스템을 써서 24시간 및 7일치 예보를 보여주는 날씨 앱을 만든다.\n- Claude API로 날씨 질의응답 챗봇을 연동하고, Higgsfield MCP를 붙여 12가지 날씨 배경 영상을 생성해 완성한다.\n\n[상세]\nAPI와 API 키, MCP의 기본 개념\nAPI는 사용자와 거대한 데이터 주방을 연결하는 웨이터와 같아서 직접 시스템을 구축하지 않고도 원하는 기능을 가져다 쓸 수 있게 해줍니다. API 키는 신분증이나 회원 카드 역할을 하여 무분별한 사용을 방지하고 사용량을 측정해 요금을 계산합니다. MCP는 AI 모델이 외부 도구나 데이터와 소통할 수 있도록 연결 방식을 하나로 통일한 일종의 만능 콘센트 표준 규격입니다.\n\nOpen-Meteo를 활용한 날씨 웹 앱 구현\nAPI 키가 필요 없는 무료 날씨 서비스인 Open-Meteo를 활용해 도시 검색과 온도 단위 변경이 가능한 날씨 앱을 제작합니다. Claude Code에 프롬프트를 입력하여 shadcn 디자인 시스템과 Lucide 아이콘을 적용한 효율적인 반응형 화면을 구성합니다. 24시간 시간별 날씨와 7일치 예보 데이터를 화면에 보기 좋게 배치하고 박스 간 정렬을 다듬어 앱의 완성도를 높입니다.\n\nClaude API 챗봇과 Higgsfield MCP 영상 연동\nClaude API 키를 발급받아 환경 변수 파일에 안전하게 보관한 뒤 특정 지역의 날씨를 묻고 답하는 날씨 박사 플로팅 챗봇을 구현합니다. Higgsfield MCP 서버를 연결하고 인증을 거쳐 현실감 있는 낮과 밤 날씨 애니메이션 영상을 생성하도록 요청합니다. 총 12가지 날씨 조건에 맞추어 6달러 비용의 Kling 모델로 영상을 생성하고 이를 앱 배경에 연동하여 최종 결과물을 완성합니다.",
+    "transcript_sha1": "57e18f0d4819120bab6c43047c1145f751f8390f",
+    "usage": {
+        "input_tokens": 27738,
+        "output_tokens": 2140,
+        "thinking_tokens": 1620,
+        "cache_read_tokens": 0,
+        "total_tokens": 29878
+    },
+    "duration_seconds": 7.0705984,
+    "agy_conversation_id": "e89bb800-e0ff-4309-ba75-e402058d38d2"
+}

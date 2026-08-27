@@ -1,0 +1,18 @@
+{
+    "video_id": "fVSdfEviwsQ",
+    "model": "gemini-3.7-flash-medium",
+    "prompt_version": "v2",
+    "prompt_sha1": "1a2446b042d7b917482477d5da5cda70874b56c5",
+    "generated_at": "2026-08-27 13:20:03",
+    "summary": "[요약] Hermes Agent를 VPS에 올려 24시간 운영하는 AI 비서 구축법을 소개한다.\n\n- Claude Code나 Codex와 달리 Hermes Agent는 24시간 상주 비서 역할에 특화된 오픈소스 도구다.\n- Hostinger VPS의 Ubuntu 환경에 도커로 설치하여 저렴하고 안정적인 24시간 가동 서버를 구성한다.\n- Telegram과 Slack을 연동하여 메신저 환경에서 상시 소통하고 작업 진행 상황을 확인한다.\n- SOUL.md와 메모리로 사용자 정보를 학습하며 반복 업무를 스킬과 cron 일정으로 자동화한다.\n\n[상세]\nHermes Agent와 기존 AI 도구의 차이점\nClaude Code나 Codex가 책상에 앉아 직접 실무를 맡기는 작업 도구라면 Hermes Agent는 24시간 자율 동작하는 개인 비서에 가깝습니다. 특정 AI 모델에 종속되지 않고 작업 성격에 맞춰 다양한 모델을 선택해 동시에 활용할 수 있습니다. 장기 기억 메모리와 cron 예약 실행, 자동 스킬 생성 기능이 기본 탑재되어 비개발자도 손쉽게 반복 업무를 위임할 수 있습니다.\n\nHostinger VPS 도커 설치 및 메신저 연동\n별도 장비 구매 없이 Hostinger VPS를 월 13,000원대에 구독하여 Ubuntu 환경에서 도커 컨테이너로 원클릭 설치를 진행합니다. 컨테이너 내부 셋업에서 코덱스 등의 모델 프로바이더를 등록한 뒤 BotFather와 Slack API를 통해 토큰을 발급받습니다. 게이트웨이 연동 설정을 마치면 Telegram 대화창이나 Slack 메인 채널에서 실시간으로 대화하고 작업을 지시할 수 있습니다.\n\n영구 볼륨 관리 및 VS Code SSH 원격 연결\n컨테이너 재생성 시에도 데이터가 유지되도록 YAML 에디터에서 영구 볼륨 매핑 상태를 반드시 확인해야 합니다. 보안 강화를 위해 패스프레이즈가 포함된 SSH 키를 생성하여 서버에 등록하고 로컬 설정을 완료합니다. VS Code의 Remote SSH 확장을 활용해 원격 서버에 접속하면 생성된 결과물 파일과 스킬 문서를 손쉽게 점검하고 수정할 수 있습니다.\n\n페르소나 설정과 업무 자동화 프로세스\nSOUL.md 문서에서 비서의 이름과 역할을 정의하고, 질의응답을 통해 user.md에 사용자의 취향과 업무 방식을 자동으로 학습시킵니다. 리서치 업무를 수행하면 작업 구조를 스스로 파악하여 스킬로 등록하고 PDF 보고서 생성 권한까지 반영합니다. 사용자가 프롬프트로 원하는 주기를 말하기만 하면 한국 시간 기준 cron 일정으로 등록되어 매주 자동 리서치와 보고가 실행됩니다.",
+    "transcript_sha1": "e50163d922aef6568b8b3aca6a1c77bda8ccd298",
+    "usage": {
+        "input_tokens": 31572,
+        "output_tokens": 1981,
+        "thinking_tokens": 1383,
+        "cache_read_tokens": 0,
+        "total_tokens": 33553
+    },
+    "duration_seconds": 7.7543569,
+    "agy_conversation_id": "858d01dc-1c6a-43b3-b888-c6d97f735eb2"
+}

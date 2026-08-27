@@ -1,0 +1,601 @@
+[00:00]
+Mostly I get asked,
+"What should my kids do for a living?"
+Probably from all of them.
+We actually have a similar question.
+I'm sure you do.
+Everybody asks that, that's right.
+The Beginning of the Question
+2022.11.30
+ChatGPT Is Released to the Public
+And it was it was even worse that because
+I would basically go to bed at like 4 a.m.
+I actually sent emails to my entire faculty.
+"Education Must Be Completely Reinvented"
+A World Completely Transformed
+No doubt students are cheating at a rate
+they've never cheated before.
+No one's going to show you they're using AI in your company,
+if they're worried they're going to get fired
+if they're more productive, right?
+School and work, turned upside down
+How should we live with AI?
+[01:00]
+I think this is a chance for exploration.
+So I mean, I would go one step further
+"Ambition is rewarded right now"
+And even a failure is further than you'd get before
+and teaches you something.
+The Prompt
+Collaborate with AI
+Ethan Mollick
+Hi, I'm Professor Ethan Mollick.
+I teach and research at the Wharton School of the
+University of Pennsylvania. Run the Generative AI labs there.
+I've also written a book on AI called
+"Co-intelligence" which is sold in Korea as along with the US.
+[Selected by TIME in 2024]
+One of the most influential people in AI
+(Professor of Management, Wharton School)
+New York Times bestseller 『Dual Brain』
+Co-Intelligence Companies and universities worldwide
+have followed his experiments
+Leading an AI research lab
+A management scholar who works with AI every day
+"AI isn't a competitor — it's a collaboration partner."
+How do you define AI?
+So, it actually one of the biggest problems
+is the definition of AI is really vague right?
+[02:00]
+So if we talked about AI prior to sort of 2010,
+we were talking about sort of the science
+fictional idea of artificial intelligence
+where only a few computer scientists cared about it.
+We talked about it from like 2010 to 2022,
+you'd be talking about big data.
+And then since then we've been talking about AI,
+we talk about generative AI
+like Large Language Models and related technologies that are very different than what came before.
+What AI tools do you use most these days?
+So, when you think about AI right now, you
+kind of think about three things.
+You think about the AI model itself, right?
+So, the big three at the time we're recording this
+But it's not just about the models, that's the brains of the
+AI. It's also about the actual, software applications you use.
+And then finally, what we call ‘harnesses’. ‘Harnesses’ are
+the pieces of equipment given to the AI to let it do things.
+So, ’harnesses‘ let AI create images if they need to
+write code, do web searches, all the kinds of access your files.
+[03:00]
+So now when you think about AI tools, you think
+about all three of those together. So I use all of them,
+but I tend to use a lot of
+OpenAI's Codeex and Claude's Claude Code
+and Co-work, which are versions
+that use your computer to help you do more work.
+Chapter 1
+Why Is AI an Alien Intelligence?
+Why do you call AI "Alien Mind"
+rather than "Artificial Intelligence"?
+Because a few things. One is I think we all have this
+idea of AI from many years of television and movies, right?
+It was this, it's a machine that
+if the stereotypical bad science fiction version is it can't,
+"I do not understand love" and then the robot explodes if you try and explain love to it, right?
+Like we expect it to be logical and
+to not act quite like a human
+and to be all about sort of
+cool reasoning to understand emotion.
+Instead we got Large Language Models which in a lot of ways work a lot like people.
+They are all about emotional content they are about empathy.
+They were originally worse at math, than other topics.
+Now that they've closed that gap
+[04:00]
+and so it's worthy thinking about them as a person,
+because that's the most easy way to get them to do work.
+At the same time,
+you have to remind yourself they're not a person.
+So, ‘Alien’ kind of puts that nice distance
+between yourself and the AI.
+The day ChatGPT first launched in 2022
+what was so shocking about it?
+So ‘The three sleepless nights’ idea from the book
+is really one where,
+everybody who uses these systems enough has like
+a moment of crisis where they're like,
+"What is does this mean? What am I doing?"
+And actually, I work with my wife on this a lot. We run the
+we started the AI lab together. We do a lot of work together.
+And it was it was even worse that
+because I would basically go to bed at like 4 a.m.
+Then she'd wake up at 4 a.m. and start working on AI stuff.
+In the morning, we'd be like passing each
+other messages about what we did.
+And to me, it was,
+“Wow, this thing could do stuff.”
+So, you start projects I couldn't accomplish.
+Now, I'm doing it.
+“What if I test it this way? What happens?”
+And so, there's a lot of anxiety, especially when
+you first use AI, it can almost, almost miraculous.
+Then you start to see the flaws after time,
+but at first, it's like ”What does this all mean for us“,
+and so that really hit me in November.
+I actually sent emails to my entire faculty saying we really have to change everything about how we teach
+[05:00]
+the next day and they've come to believe me
+over the last couple years.
+How is AI now different from AI when it first came out?
+So there's a few things that are
+different. The biggest difference is the ability.
+GPT-3.5 which was the original ChatGPT is
+just dumber on every characteristic.
+And we could talk about test scores.
+It was basically it looked like it was sort of
+a smart high school student when you measured it.
+And now we've got GPT-5.5 is solving math problems
+that only two or three people on the planet can solve.
+It also has become ‘agentic’.
+Now, this is one of those buzzwords that means a lot of things,
+but an agent is basically an AI tool that can go ahead
+and do work for you.
+If you say, "Put together, you know, a TV script
+for me or something," it won't just write an answer.
+It'll do research for you. It'll look, you
+know, create images. It'll look up information
+And it will actually do hours of work for
+you by just asking. So those are the big gaps.
+[06:00]
+What do you make of claims
+that AI's rapid progress is a "bubble"?
+A Bubble?
+So, I could see arguing six months ago
+that AI was a bubble.
+Because we hadn't yet entered the sort of agentic era of AI
+use. I don't think many people think this is a bubble right now.
+Companies, I talk to CEOs of companies all the time
+who are getting huge amounts of value out of the system.
+I keep talking to companies that are blowing through their
+entire AI budget in months that they expect to spend on years.
+So there's a lot of money that people are getting
+value out of them as users of these systems.
+So, it's hard to imagine there being a real bubble. Now
+that doesn't mean financial markets do what they do, right?
+It's always possible that something's over inflated or not.
+So, we can separate a financial bubble,
+But if we want to talk about
+"Is there a use bubble? Is AI going to go away?
+Is it not useful?"
+I don't see any way you could argue that at this point.
+Ethan Mollick's AI Capability Test:
+"Draw an otter using a laptop on an airplane"
+[07:00]
+Ethan Mollick's playful experiments continue
+Chapter2
+The Great Education Shift in the AI Era
+Just two weeks after ChatGPT launched,
+you co-authored the academic paper
+on AI in Education with your wife.
+What made you write it that fast?
+So, we have actually collaborated for a long time.
+She has a doctorate in education.
+"A New Way to Learn With AI Chatbots"
+[Co-authored by Professors Ethan Mollick & Lilach Mollick]
+Turning AI's flaws, wrong answers, hallucinations,
+Into a teaching tool
+Three assignments to sharpen
+students' critical thinking and boost learning
+We ran before this something called ‘Wharton Interactive’
+and we built games for teaching.
+So, I've always been interested how do we democratize especially business education for the world.
+So, we built games,
+that would teach people how to do entrepreneurship.
+We built a fake space simulator
+that actually secretly taught you leadership skills.
+So I've been spending a lot of time
+thinking about how do we teach people with AI.
+And when ChatGPT came out, we saw that
+it solved a whole bunch of problems
+that have plagued the education field for 10 years.
+I mean it's causing problems too to be clear but,
+also solved could solve a whole bunch of problems.
+No doubt students are cheating at a rate
+they've never cheated before,
+but on the other hand it could be an amazing tutor.
+[08:00]
+And we thought it was important to illuminate
+for all these people trying to experiment
+what were some ways to actually use this to go forward.
+How are you using AI in your classes these days?
+I actually have been kind of running this.
+I teach a entrepreneurship class and that's where I've been teaching about AI
+and I just did a new version of the class
+called ‘vibe founding’.
+and students launched startup ideas in three days.
+So they had to go from they were doing a semester's,
+worth of work in three days.
+So, AI helped generate the ideas.
+It built the business plan.
+They had to actually launch with working code, which a lot
+of them were never most of them never coded in their lives.
+They had working code.
+they had to have a working PowerPoint presentation.
+All the financial models all of that had to be built.
+So, I know you can get a huge amount
+further today than you could.
+So how should students actually work with AI?
+So the first thing that is really annoying to
+tell students and nobody likes to hear is that,
+“Learning is hard and kind of has to be hard.”
+then we so we call this ‘desirable difficulties.
+It is the phrasing in, in education theory.
+[09:00]
+And so part of the problem with using AI is
+if you're just asking for help,
+the AI is trained to be a helpful assistant to you.
+And it will give you the answers to problems.
+and you'll think you're learning something,
+but you're not actually learning
+because you're not doing the mental work yourself.
+So, it's really important
+to get the AI to act like a tutor or a teacher.
+And there's a few ways to do that.
+First of all, all three of the big AI companies have a ‘tutor mode’
+that makes the AI less likely to give you answers.
+So using it to tutor you to ask answer
+questions to quiz you, very powerful for AI use
+and now we have data that shows that's true.
+There's a really nice study
+one out of Taiwan, another one out of Africa
+that show that when you make AI work like a tutor,
+you get big impacts in education,
+but if you just ask it questions, you're not going to learn.
+Could you give us one example a student could try tomorrow?
+Sure.
+So, a really useful thing might be to say,
+give the information about yourself.
+“I am a student in Seoul
+and, in high school or college or
+whatever grade you're in studying this.”
+[10:00]
+“Here's my interests.
+”I'm having difficulty with this.”
+here are a couple math problems that I was asked to solve
+or a couple history problems.”
+“Can you help quiz me on these topics
+and then explain what I'm missing
+and help get me understand the missing pieces
+and then quiz me about them again?”
+“So, just ask and say don't give me any answers.
+I just need to be able to learn this on my own."
+And that will get you part of the way there.
+What's the AI role you use most often?
+So, there's a little update to this too.
+We've done some research at the Generative AI
+lab. It used to be personas did two things for you.
+They would change how the AI responded so. act like Socrates.
+But the other was it would actually make the AI better at things.
+So if you said "You are a physicist" it would do better at physics.
+That's no longer true.
+So telling the AI you are good at physics or you're a physicist or you're a mathematician
+doesn't make it better at math
+but it still does change how it talks to you.
+So the personas I use the most often and the one
+everyone should actually use the most is "Be a critic".
+Because remember, we talked earlier about how AI
+can be sycophantic, how it wants to make you happy.
+[11:00]
+But what's actually needed is honest answers and challenge.
+So "Be a critic." Is one of the most
+useful things you could say.
+When I'm writing I often have different personas for writing too.
+"You are a reader who is confused about AI.
+What should I clarify here?"
+So, I use personas for both kind of projecting what
+my work might do but also to help me think more clearly.
+For education to truly transform in the AI era,
+what does the education world need to do?
+So, part of this is, we have to recognize
+that there are losses along with gains.
+Like people are cheating right now.
+A lot of educational methods that we used to use
+that worked really well don't work well anymore.
+If you assign long essays to people,
+the AI will help them with essays.
+Like more of your student
+your students will always wanted to cheat.
+They're always busy. They have other things to do.
+They're very incentivized to get high grades.
+They will cheat.
+So we have to think about how we're solving that problem.
+We have to take advantage of the strengths of AI
+as an individualized personalized tutor,
+but also think about how we're going to assess people,
+how we're going to make classroom experience meaningful.
+[12:00]
+The right way is probably something called
+a ‘flipped classroom’.
+So you'll use AI tutors outside of class
+to teach you things and inside of class
+and a lot of people already do this, like my students are assigned YouTube videos to watch outside of class
+and then in class they do math, right?
+That's how we're going to end up doing things in a lot of fields.
+Outside of class you'll be assigned to use AI to learn something
+and then in class you'll be doing exercises, experiences, working with other students on things.
+I think that's how things will end up looking.
+Chapter 3
+Surviving the Workplace in the AI Era
+In the AI era, what kind of people and companies will survive?
+I think you want to be a ‘T-shaped
+person’, right?
+So, I think you want to be a generalist
+with one area of deep expertise.
+So, deep knowledge in a field,
+have a good understanding of related fields
+so that you know different things
+you directions you might want to head in.
+then having a sense of ‘taste’ just about
+what you want to do, right?
+Like the AI can give you thousands of
+images, thousands of paragraphs.
+How do you select the right one?
+And then finally, the idea of ‘agency’
+[13:00]
+of actually going out and giving things a try.
+So I find people who experiment, especially
+experiment in their field, tend to be very good at using AI.
+In terms of organizations, what I find is that
+if the CEO or top leadership team
+believes in AI deeply and is
+willing to take the risk that comes from experimenting,
+that is a big change that is a big factor in company success.
+What does an individual actually need to start?
+“Try and use AI for everything.”
+I wish I could say that there was a cheap way to do this,
+but I think you have to pay one of the three big AI companies. You know, in the US it's $20 a month.
+There's $8 a month versions in some countries.
+But you have to pay and you have to use the better model.
+And you should try using them for everything.
+Like try you're going to interview me ask it to do the research
+In your field of expertise,
+it's very cheap for you to start to learn is AI good or bad.
+You'll see the question you'll be like
+"It's not very good asking questions."
+But maybe if I ask them a different way and prompt the AI a
+different way, I'll get different kinds of better questions.
+So experimenting in your field as much as
+you can with real tasks is the big thing.
+[14:00]
+Is individual productivity growth
+actually translating into company performance?
+So, it's a really interesting question.
+We know at the individual level both from research we've done
+and lots of other people that you get individual productivity gains that are quite large.
+Whether those translate to company productivity gains is
+at this point you have to think about
+how you change your company.
+So let's take coding for example.
+One of the biggest changes is in software programming.
+If you talk to any really good programmer right now,
+they are writing almost none of their own code.
+Like, literally they instruct the AI to do things.
+They spend their time thinking about how to manage the AI,
+manage the process,
+But they're not writing code anymore.
+And so, let's say you're 10 times more productive
+or 100 times more productive.
+That you're individually more productive,
+but has your company changed how it's making software?
+Or are you still sitting in a meeting
+where every two weeks you have a planning meeting
+and so it doesn't matter that you're doing a 100 times more work because the rest of the company's holding you back.
+So, it's not just about individual AI use right that
+helps you as an entrepreneur it helps you make progress.
+But, it is beyond the individual entrepreneurial use.
+[15:00]
+It is that bigger picture.
+How do we use AI as in organizations,
+in companies in government
+that you see productivity gains from.
+Companies think of AI first as a way to cut costs.
+Is there a way to move forward without laying people off?
+To me, that is the most urgent immediate problem of AI,
+which is easy to know what to do with productivity,
+because we've done productivity gain.
+For the last 30 years.
+What do you do when you have an IT gain?
+You fire people, right?
+"More likely we're five times, you know, 5% more productive. Fired 5% of our workers."
+That is the easy path, right?
+And it doesn't require a lot of imagination.
+I think that leads you to disaster in a few ways.
+First of all, AI use we just talked about is being
+discovered by people using these systems in your company.
+No one's going to show you they're using AI in your company,
+if they're worried they're going to get fired
+if they're more productive, right?
+So, you're not going to see any productivity gains.
+So, you're sabotaging yourself.
+But the bigger issue is that failure of imagination means eventually you're just turning over your business
+to be run by Claude, right? Or by ChatGPT,
+and that you have no advantage versus anyone else.
+So I think the big thing to experiment with is
+“How do we make humans do more?”
+[16:00]
+“How do we help them and support them
+in parts of their job that they like least?”
+That's a really big challenge.
+For a company just starting with AI
+what are the things you tell them to do first?
+So the first thing you need to do
+you need three pieces to succeed.
+You need what I call ‘Leadership, Lab and Crowd’.
+So, ‘Leadership’ means that you need your leadership team
+to be thinking about this and they have to try it themselves.
+they have to decide what incentives there are
+for people using these things.
+How are they going to talk about
+what their goals of using AI are?
+How are they going to start to re-imagine
+how their company works?
+For the ‘Crowd’,
+the crowd is everyone using these systems.
+You need to give people access to a good AI model.
+So you need to give them access to a model
+and give them a little bit of training,
+give them encouragement to use it.
+And then you need the ‘Lab’.
+You need to set up some part of your company
+that's doing 24/7 experimentation with AI.
+It doesn't have to be technical people, by the way.
+Often it's not technical people.
+It's the people in your organization
+who are already coming to you every day saying,
+"I figured out a way to solve this with AI!"
+And you're like,
+"Okay, go. Go back to your cubicle."
+[17:00]
+Those people will form your lab.
+So you need those three pieces in place.
+With AI blocking entry-level hiring,
+how should young people build their careers,
+and how should companies develop talent?
+So, those are two really hard questions.
+first is, it's really bad idea for
+companies to give in their junior pipeline.
+They're going to have to think about
+how to train people differently,
+but if you don't have junior people,
+you're not going to have senior people in the future.
+So, we're going to have to think differently about
+how we bring junior people in.
+They may not be as useful compared to AI,
+but they are important for the future.
+We're not seeing a huge collapse yet, in sort of junior jobs.
+There's sort of signs it might happen.
+We don't really know, right?
+But I think that, the idea is being flexible
+as a junior person entering the field as a student,
+not betting only on one thing, which is good idea anyway.
+I mean, there's lots of people
+who wanted a job in finance in 2007
+and when the financial crisis came along,
+those jobs weren't there.
+So, I think maintaining some flexibility
+is important,
+but it's really on companies to think about
+how do they keep their junior talent pipeline going?
+If you were 22 today, what would you actually do?
+[18:00]
+I think this is a golden age for entrepreneurship.
+I mean, if the honest truth is the best thing you could do with your time is launch a startup company, right?
+It's an incredible time for that.
+By the way I don't mean an AI company like it
+doesn't mean that you have to launch yet another AI company.
+But I am where I'm seeing a lot of AI
+transformation is in boring businesses
+where people say like "What if I think about insurance?"
+Or what if I think about you know
+how do you use AI to better manage a golf course
+or how do I use AI to better manage a laundry mat?
+At 22, you don't know a lot of things
+you have a lot of disadvantages,
+but the AI does know a lot of things.
+So suddenly it can support you and help you write code,
+it can do all kinds of stuff for you.
+What Can AI Do for Humanity?
+A philosopher once posed this question
+[Nick Bostrom · Philosopher, University of Oxford]
+A factory owner orders an AI:
+"Make as many paperclips as possible."
+The AI does exactly as told
+Cars, buildings, even people become raw material for paperclips
+It's not that the AI is evil,
+it just did what it was told
+[19:00]
+The problem isn't AI
+It's what we choose to ask it to do
+CHAPTER 4
+What Future Will AI Create?
+Some scholars warn about an AI "doomsday," while others frame it as humanity's salvation, both narratives are emerging at once.
+How does your view compare?
+So, there are serious people worried about this,
+which should be enough to be to take this somewhat seriously, nobody knows anything.
+Interestingly Nick Bostrom is now like
+in favor of fast AI development.
+So, even though he invented
+the idea of the paperclip maximizer.
+I think it is worth taking that seriously.
+I think that I worry a little bit that conversations about doomsday
+or “The AI saves us all and cures all disease" that stuff ends up taking all the oxygen out of the room.
+Because, it's really hard have an argument about
+how to best adopt AI and education
+“When you're like in five years we'll all be dead or saved.”
+I think the far more likely scenario that we should worry about those kind of things is that
+the world looks like this one but projected forward.
+That the world is not ended or changed
+[20:00]
+and we need to spend a lot of time thinking
+about the world we want to build as a result.
+We may be the last generation able to define what AI becomes. What kind of presence do we want AI to become?
+And in some ways my really annoying answer is,
+this is what I want everyone to be debating.
+We're all going to die who cares, and then or it's all hype
+it's going to go away, and I don't think it's going to go away.
+So I think it's lots of little choices that make this decision.
+Is it okay to use AI to interview me?
+Would it be all right?
+You know I've got the a great crew of people here filming me,
+a lot of work went into this kind of meeting.
+Is that a thing we would let AI do?
+Is that a good idea or a bad idea?\
+We get to decide those kind of things, right?
+It's not the technology is not automatic.
+It doesn't do things to us. We get to decide what it does.
+I heard you have teenage children.
+How do you hope they'll live in the AI era?
+So I mean all the usual.
+Nothing changes about what you want as a parent.
+You want your kids to be happy and kind and flexible and successful and all the things that you want.
+Humans don't change that much, right?
+Now, what do I want them to do to navigate a
+technological environment that's changing? Flexibility.
+[21:00]
+But, careers are long
+I teach students very few of them end up going
+into their career the way they think it's going to be.
+People change jobs, life changes where they go.
+The things alter and vary.
+So, I think ‘resilience’ is important.
+Some people say "Will my job survive?",
+then how would you say to him?
+So I think you should think about a job
+as not one thing but as many things.
+A job are bundles of tasks.
+So, as a journalist, we were just talking about
+there's a bunch of stuff that you already do, right?
+You have to fly here for these
+and fill out your expense reports and interview me
+and prep for an interview and, go to story meetings
+and whatever all the other things that you end up doing, right?
+And so, if AI is good at some of that stuff,
+it's probably not good at all of them.
+It transforms your job rather than destroying it for most people.
+And also, you just pointed out earlier
+that you can expand your job, too.
+Suddenly, you can do things you couldn't do before.
+So, I think job transformation is
+more likely than job destruction.
+I think this is a chance for exploration.
+So I mean, I would go one step further
+[22:00]
+I think it's a great time to expand what we do
+and to think you know big.
+"Ambition is rewarded right now"
+And even a failure is further than you'd get before
+and teaches you something.
+Thank you so much for making time for us.
+These were some of the best questions I was ever asked.
+So thank you. You're amazing. I appreciate it.
+- Thank you very much.

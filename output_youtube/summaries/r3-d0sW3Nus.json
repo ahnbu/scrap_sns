@@ -1,0 +1,18 @@
+{
+    "video_id": "r3-d0sW3Nus",
+    "model": "gemini-3.7-flash-medium",
+    "prompt_version": "v2",
+    "prompt_sha1": "1a2446b042d7b917482477d5da5cda70874b56c5",
+    "generated_at": "2026-08-27 13:14:08",
+    "summary": "[요약] ChatGPT Work로 엑셀·PPT·대시보드를 제작하고 Claude Cowork와 성능을 비교한다.\n\n- ChatGPT Work는 폴더를 연동해 데이터 분석과 문서 생성을 자동 수행하는 비개발자용 AI 업무 도구다.\n- 22,000건 이상의 카페 데이터를 분석해 수식 기반 엑셀 시트와 10장 분량의 경영진 보고용 PPT를 생성했다.\n- ChatGPT Sites 플러그인으로 웹 URL 배포와 직접 배치가 가능한 인터랙티브 대시보드를 구현했다.\n- Claude Cowork와 비교 시 원샷 분석 깊이는 코워크가 앞서나, 워크는 넉넉한 사용량과 간편한 배포가 강점이다.\n\n[상세]\nChatGPT Work를 활용한 업무 산출물 제작\nChatGPT Work는 작업 폴더를 지정하면 로컬 파일에 접근해 지식 업무를 대신 처리하는 AI 도구입니다. 22,000건이 넘는 가상 카페 데이터를 바탕으로 25분에서 30분에 걸쳐 수식 검증이 포함된 분석 엑셀 파일과 마크다운 인사이트 문서를 작성했습니다. 이어서 17분 30초 만에 로고와 핵심 지표를 반영한 10장 분량의 경영진용 PPT 슬라이드를 생성했습니다. 마지막으로 ChatGPT Sites 기능을 통해 웹 URL로 즉시 공유하고 카드를 직접 편집할 수 있는 대시보드까지 완성했습니다.\n\nClaude Cowork와의 결과물 비교 및 총평\n동일 과제 기준 원샷 산출물의 세부 분석 깊이와 초기 대시보드 디자인 완성도는 Claude Cowork가 상대적으로 우수했습니다. 그러나 ChatGPT Work는 대시보드 UI를 직접 드래그하여 수정할 수 있고 웹 링크로 간편하게 배포할 수 있는 뚜렷한 사용 편의성을 갖췄습니다. 또한 20달러 플랜 기준으로 사용량 제한이 빠르게 발생하는 코워크에 비해, 워크는 많은 작업을 수행한 후에도 사용량 잔여가 93%에 달할 정도로 여유롭습니다. 따라서 지시를 잘 따르는 특성을 살려 피드백을 주고받으며 완성도를 높여갈 경우 비개발자 실무에 매우 유용합니다.",
+    "transcript_sha1": "89800b87b31f3db2b8f7c6a5c7b00527c238c515",
+    "usage": {
+        "input_tokens": 27119,
+        "output_tokens": 1806,
+        "thinking_tokens": 1309,
+        "cache_read_tokens": 0,
+        "total_tokens": 28925
+    },
+    "duration_seconds": 6.7371703,
+    "agy_conversation_id": "279f8d87-2b09-4347-8697-7183612dfd8d"
+}

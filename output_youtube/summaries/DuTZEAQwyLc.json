@@ -1,0 +1,18 @@
+{
+    "video_id": "DuTZEAQwyLc",
+    "model": "gemini-3.7-flash-medium",
+    "prompt_version": "v2",
+    "prompt_sha1": "1a2446b042d7b917482477d5da5cda70874b56c5",
+    "generated_at": "2026-08-27 13:20:52",
+    "summary": "[요약] Hermes-Agent의 칸반과 프로필 기능으로 Slack 기반 멀티 AI 에이전트 팀을 구축하고 운영한다.\n\n- Hermes-Agent에 추가된 프로필과 칸반 보드 기능을 통해 태스크 할당과 단계별 업무 관리를 자동화할 수 있다.\n- Codex를 활용해 단테가 개발한 Slack 전용 보드 플러그인을 설치하고 메신저 안에서 칸반 UI를 직접 제어한다.\n- Slack 앱과 게이트웨이를 1:1 매핑하여 4명의 AI 직원을 생성하고 멘션 기반 개별 호출 환경을 구축한다.\n- 슬래시 미팅 명령어로 AI 직원 간 자동 회의를 진행하고 Typecast TTS 음성 요약과 최종 결론을 제공받는다.\n\n[상세]\nSlack 칸반 보드 연동을 통한 워크플로 관리\nHermes-Agent의 칸반 기능을 메신저에서 활용하기 위해 Codex를 거쳐 Slack 블록킷 기반의 보드 플러그인을 설치합니다. 슬래시 보드 명령어로 웹 대시보드와 실시간 동기화되는 칸반 UI를 호출하여 태스크를 등록하고 상태를 이동할 수 있습니다. Google Workspace CLI 스킬과 연계해 이메일 스팸 검사와 답장 초안 작성을 의존성 있게 순차 처리하도록 워크플로를 구성합니다.\n\n프로필 기반 멀티 에이전트 회의실 및 음성 요약 구현\n브라이언, 그레이스, 마이크, 써니 등 4명의 페르소나 프로필을 정의하고 각 프로필을 개별 Slack 앱 및 게이트웨이와 1:1로 매핑합니다. 슬래시 미팅 명령어를 실행하면 모더레이터가 회의를 주재하며 참가자 에이전트들이 각자의 관점에서 의견을 나눕니다. Typecast TTS API를 연동하여 에이전트별 고유 목소리로 발언 요약과 최종 결론을 음성으로 전달받습니다.\n\n설치형 에이전트 운영 전략과 플랫폼 비교\n단순 챗봇을 넘어 로컬 저장소 활용, 스케줄링, 커스텀 스킬 등록 등의 자동화 작업을 위해 셀프 호스팅 에이전트를 운영하는 것이 효과적입니다. OpenClaw는 빠른 코드 중심 작업에 강점이 있고 Hermes-Agent는 개인화와 장기 기억을 통한 팀 협업에 강점을 지닙니다. 단일 도구만 선택하기보다 Hostinger VPS KVM2 환경에서 두 에이전트를 동시에 운용하며 작업 특성에 맞춰 역할을 분담하는 방식을 권장합니다.",
+    "transcript_sha1": "39acfade1752e913f5760eb77d830a6afeae0eeb",
+    "usage": {
+        "input_tokens": 34239,
+        "output_tokens": 1892,
+        "thinking_tokens": 1322,
+        "cache_read_tokens": 0,
+        "total_tokens": 36131
+    },
+    "duration_seconds": 7.7974664,
+    "agy_conversation_id": "3a04e7b6-d9be-44ba-b472-2ee76382542d"
+}

@@ -1,0 +1,1848 @@
+[00:00]
+Okay, so let me kind of show you how to
+build a worker. So, I'm going to call
+this builder Josh YT [music] for
+YouTube.
+>> Okay.
+>> So, I'm going to then start a sync
+skill. So, we [music] have worker it's
+done its work, it's tested. Everything
+we just did is only running on my
+machine. You can't [music] break Notion.
+You're not going to break your
+workspace. All of this is sandboxed and
+controlled. And now the last step is I'm
+going to run NTN workers [music] deploy.
+If I go into any one of the successful
+syncs, we can begin to see the full
+logging.
+>> Yeah.
+>> Let's actually [music] see how it looks
+in Notion. So, here they are. I can see
+the descriptions are being pulled in. I
+can see how [music] long it is in
+seconds, the engagement, we load the
+thumbnail on there. So, this is all your
+YouTube stats [music] syncing right in.
+And every time you create a new video,
+we'll catch and upload that here as
+well.
+[01:00]
+>> Hello Eric. Yeah. How are you?
+>> Wow, I'm great. I'm so excited to be
+here.
+>> [laughter]
+>> Is this the first visiting to Korea?
+>> This is my first time in South Korea and
+I'm loving it. Amazing country.
+>> Okay. So, um is your first official
+Korea trip since joining Notion?
+>> Yeah.
+>> And what's been your first impression of
+Korean builder or developer community
+you've met so far? Have you met some any
+engineers?
+>> Um I've met our team here. I've been
+going through So, we're in a WeWork and
+so I've been impressed by how many
+people in this entire office use Notion.
+I've stepped into a couple cafes and I
+see Notion on computers, on phones. Uh
+it's just amazing to kind of see how
+much it's kind of interwoven into the
+tech scene here in South Korea. I mean,
+we always see it. It's one of our
+[02:00]
+largest markets, but to see it and kind
+of feel the enthusiasm has been really
+cool. And um just Korea such a fun, kind
+of like forward-feeling environment for
+technology. So, it's really kind of cool
+to see this all happening.
+>> [laughter]
+>> It's cool. Um could you give a quick
+yourself introduction to our
+subscribers? [music]
+>> Yeah. So, I'm actually fairly new to
+Notion. I've been at Notion since August
+when a company that my co-founder and I,
+Anthony, built was acquired by Notion.
+And so, kind of stepping back, I first
+got into technology. I studied at the
+University of Southern California. And
+at that time,
+>> [music]
+>> in like 2011,
+that was right when YouTube was just
+kind of becoming a thing. You could
+upload 2-minute video clips to YouTube.
+That was the maximum. It was brand new
+and coming out of university where I
+studied economics, I just wanted to do
+and join any company that was working in
+new media, in short-form video. So, I
+immediately started joining startups
+[03:00]
+and worked at a company that became
+called Zephyr.
+And so, we did a [music] bunch of work
+in YouTube, those skippable ad formats
+we worked a lot on, and I found myself
+in product. And actually at Zephyr is
+when I first started hearing about
+Notion. I first started using it for
+personal notes. They didn't have
+databases at the time.
+Uh but it was a product that I really
+enjoyed using. Although it was very
+early back then. But at Zephyr, we built
+these big systems to sync YouTube and
+Facebook [music] and Snapchat into our
+advertising system. So, we started
+building as my first exposure to the
+hard problems of building developer
+tools to sync and connect to data
+sources.
+>> [music]
+>> And from that experience is when Anthony
+and I, my co-founder, we started a
+company called Sequin
+>> Mhm. [music]
+to build developer tools that made that
+process of syncing data, interacting
+with third-party APIs, making that much
+easier.
+[04:00]
+And that continued to grow, and we
+eventually started seeing that Notion
+was actually beginning to look and use
+our products. And uh one day we chatted
+with Ivan and Max. And
+>> [music]
+>> they have such a clear overlap. I don't
+think I fully appreciated at the time
+how much Notion is in this really unique
+position
+>> Yeah.
+>> to sync data because it
+it doesn't just sync the data into some
+random database or data warehouse
+>> [music]
+>> that nobody has access to. It syncs it
+to a place that an entire team can
+actually use it.
+And so for the past,
+you know, 6 months or so we've been
+working on bringing that technology into
+Notion.
+>> [music]
+>> And we just released it as a part of the
+developer platform here a couple days
+ago, really.
+>> [laughter]
+>> Yes, yeah. But actually, I recognize the
+Notion workers from the in the setting
+tab.
+>> Mhm.
+>> Maybe it's kind of an early access
+program, so at the time I didn't know
+what is it here. But from maybe almost 2
+weeks ago, I realized that Notion
+workers is kind of innovative program
+[05:00]
+for developer or every workers.
+Especially my audience in my in my
+channel are so very passionate about
+making some every single
+>> Mhm.
+>> tool software using by the coding, but
+even though they are not really
+developers. But I'm excited to show
+uh this [music] program.
+>> Yeah.
+>> Maybe Eric. So, um but I'm wondering
+that um you know, Sequen was
+infrastructure for streaming database
+changes
+into other system. How does that
+experience especially and show up in how
+you're designing Notion developer
+platform today?
+>> Yes.
+So, I think our Our streaming what, you
+know, billions and billions of rows
+through through Sequin showed us the
+millions of ways that syncs can fail.
+>> Mhm.
+>> Um
+>> [music]
+>> and it also taught us how important it
+is that we build a set of developer
+tools
+>> [music]
+>> or in the way that we think about it at
+[06:00]
+Notion these blocks that are very
+powerful but simple and extensible. And
+so
+to give you some examples there
+you know, I think Notion is the hub of a
+lot of people's personal lives. It's a
+beautiful place to organize and
+structure all sorts of information.
+>> Yeah. Yeah. I agree.
+>> But it's it's not a place where you
+know, all your information's going to
+originate. You know,
+>> [music]
+>> you might track your health on an Apple
+Watch or some sort of
+um health device. You might track movies
+you love in another platform. But if you
+can get it all into one place
+>> Yeah.
+>> it's really helpful for you to kind of
+>> [music]
+>> organize and really kind of have a
+second brain or like a really complete
+set. I think what's really unique about
+Notion is it can be a a place where for
+you
+>> [music]
+>> everything about you can be captured.
+And that can give you like a lot of
+confidence and tools to express yourself
+and look at [music] how you're growing
+and changing and set goals and all of
+those things. And so with the developer
+platform we wanted to create a set of
+[07:00]
+tools
+>> [music]
+>> that are developer enterprise grade.
+They can they can connect to very very
+powerful complex systems [music]
+but would be easy enough to use for all
+of our
+Notion users that never touched a
+developer tool in their life, have never
+tried a coding agent.
+And so from Sequin we knew how to begin
+to harness that power
+and all of the thousands of ways we
+should make it really easy to use.
+>> [music]
+>> And then we were able to bring all of
+that understanding into Notion which is
+not just for developers, it's for
+builders.
+>> Yeah. Yeah.
+>> And really expose this as just a set of
+building blocks. [music] So that's
+really what we learned from Sequin and I
+think why the fit with Notion has been
+so so good. [music]
+>> Yeah, this is really the great point to
+merging Coda experience to the Notion.
+Yeah, so a Notion has long been known as
+a collaboration workspace, right? Yeah.
+But the team has started using phrase
+agent OS.
+>> [music]
+>> But what does that positioning shift
+[08:00]
+actually mean?
+>> So, for the longest time we talked about
+it as a Notion 2.0 before we we did our
+make a Notion event last year, which is
+Notion is a place for teams of people to
+work together to share docs.
+>> [music]
+>> Multiplayers built in right from the
+beginning. You can at mention people
+with their real name and they get
+notified.
+But as we've evolved to really bring
+agents into that experience and not
+just, you know, like your personal agent
+in the corner, it's these custom agents.
+We have a fundamental belief at Notion
+that these agents aren't going to
+replace the work.
+They're going to be an extension of your
+team and they should be given the
+benefits of that. And so when we start
+to talk about it as an agent OS,
+>> [music]
+>> I think it's really fun to to think
+about this through the lens of if you
+just added another team member to your
+workspace.
+And you expected them to start helping
+you do your work to solve problems or to
+[music] take care of little chores.
+[09:00]
+But you didn't give them access to any
+of the other tools you use or you didn't
+give them permissions
+>> [music]
+>> to access the right, you know, pages and
+databases in Notion or you didn't log
+those behaviors. You would really never
+expect that teammate to be successful.
+And
+we've been working really hard with a
+developer platform and custom agents to
+make them really full
+capable teammates in Notion that you can
+collaborate with. And so when we talk
+about the agent OS,
+it really is about how
+you and a team of agents can really work
+together
+to do really meaningful work. And the
+last part of that is really if [music]
+the agent can do the work, if it can
+read the file, or it can find the
+contact, or it can update the page, then
+we think it's really, really important
+that all the human team members in your
+workspace can do it, too.
+So, that is what creates a shared
+context, so you can really work
+[10:00]
+together.
+>> [music]
+>> The inverse, where, for example, a
+custom agent could edit a page, but you
+can never see the edits it made, or see
+the page, or it could access a system,
+but you can never see
+what data it retrieved.
+That'd be really unnerving. It makes it
+really hard to collaborate and build
+[music] trust. And so, we've really been
+thinking about what the features are
+that make that possible uh for the
+agents in the platform.
+>> Actually, I watched your GTM demo uh
+maybe 2 months ago, and in that video,
+you mentioned that the most of Fortune
+500 customers use a lot of the 80s uh
+tools outside Notion. So, building
+integration for all of them is
+essentially maybe I think impossible,
+but so, that's why maybe Notion, not
+just the people who are building, just
+any added the the feature for the
+workers.
+>> Yes.
+>> Yeah, so, I would love to hear how that
+decision was made internally. Yeah.
+>> Yeah. So, we've been talking to our
+customers. We talk to our customers all
+the time. We have a big
+[11:00]
+>> [music]
+>> uh ethos inside Notion that we're
+there's a customer in every room, and
+when we were chatting with a lot of
+customers, there was two big problems
+that Notion was facing. One, it didn't
+[music] connect to most tools, right?
+So, as you just mentioned, most
+companies, most people have many systems
+they work with. And to cover every
+single system in every single industry
+that Notion is used in, from
+construction
+to students
+>> [music]
+>> to law
+offices,
+it's thousands and thousands of
+integrations.
+>> Yeah, yeah.
+>> And to build every single one of those
+would almost be impossible.
+But I think the second part of it is
+Notion sets a very high quality bar for
+how we want those integrations to work.
+>> [music]
+>> They need to be very seamless. They need
+to connect to all the data you want.
+And most importantly is they need to
+work the way you want that data to land
+in Notion.
+And I think that's the second biggest
+thing we heard, which is every customer
+wanted data differently. [music]
+So, an example of that is we've always
+[12:00]
+had a GitHub integration. We've had that
+for a very long time. But if you were to
+talk to five customers about how they
+wanted that data structured in their
+Notion workspace, you would get five
+different answers. They all wanted that
+data in a slightly different way. And
+we decided ultimately that the best way
+to cover thousands and thousands of
+integrations while making it possible
+for every single one of those
+integrations to be exactly customized
+the way
+each user wants it
+>> Yeah.
+>> is we needed to build a very powerful
+abstraction. And that's how we came to
+decide that workers were probably the
+best path. The last big thing that
+changed is we started working on this
+>> [music]
+>> uh internally in August is when we first
+started working on what this might look
+like. When we saw the coding models come
+out [music] in December, when we saw uh
+Opus 4.6 from Anthropic,
+>> right. It's kind of very specific
+moment, I think that.
+>> I think everyone kind of felt this
+moment where you could ask a coding
+[13:00]
+agent to build something and it would
+basically just get it right. It wasn't
+perfect, but [music]
+that moment convinced us that builders
+that use Notion will love that type of
+tool
+and because that type of tool can work
+really well with developer abstractions,
+there was a really unique opportunity
+to
+make workers the the core solution to
+how we would do all of these
+integrations. [music]
+Because the the average Notion builder
+could go, find a worker, use a coding
+agent, and build the exact integration
+they wanted with any platform
+into the exact taste and style that they
+wanted it to be. And that's really the
+opportunity we see with this approach.
+>> I see. I see. I can fully understand
+what you said. It's so personally my
+just first question without any
+any prepared questions. I think some
+integration with the workers. But um I
+personally use the Notion workers in the
+CLI environment. And actually I
+[14:00]
+recognize that Notion worker is a single
+tool in the CLI, but not integrated with
+a cloud code or codex.
+>> Yes.
+>> As a plugin. Yeah. But why did you
+decide the some single CLI tool to make
+this kind of environment for the
+developers?
+>> Yeah. So, we decided to go and pursue a
+CLI CLI at Notion for a couple reasons.
+It first gets back to that kind of Agent
+OS question you asked before about our
+kind of core values about how agents and
+people need to work together, which is
+we knew we wanted to build a set of
+developer tools, but we didn't want to
+build the developer tools in a way that
+only a coding agent could work with
+them.
+We didn't want to over bind ourselves to
+anyone agent not only because the agents
+are evolving very quickly, but we also
+want to allow any user to use any agent
+they want. But the second
+reality there is ultimately a developer
+should be able to do anything the agent
+[15:00]
+can do. As we've already kind of talked
+about, that's a a core principle of
+ours, which is if the agent can go and
+update and change your workspace,
+>> [music]
+>> but you as a developer don't have the
+same tools, how are you going to be able
+to understand what's going on? How are
+you going to be able to fix it?
+Uh how will we be able to improve it and
+make it understandable to us and to
+other developers.
+>> [music]
+>> So, the CLI, actually very funny turn of
+events that we are all back using the
+terminal and CLIs, but the CLI is a very
+simple interface for both developers and
+agents to really work together on these
+tools.
+It exposes all of the capabilities to
+create pages and blocks and databases
+and now workers
+to developers. It's very easy and and we
+can show it when we kind of get into it,
+but it's also very very easy for an
+agent to find those same tools and use
+those.
+And [music] so, it allows any agent to
+[16:00]
+access Notion, whether it's Claude,
+Code, or Codex, or Pi, or
+>> [music]
+>> whatever new agents emerge in the next
+couple months, but it also makes it very
+easy for a developer to go in and check
+that work and see what's happening.
+And it sets the foundation for us to
+begin to expose all of these tools to
+our own agents as well. And and we're
+working on the capability so that your
+personal agents in Notion can build
+these workers for you and with you. And
+the CLI creates that kind of common
+[music]
+technical interface for for everybody to
+understand what's happening.
+>> [music]
+>> Yeah. Yeah, I totally agree with you
+because as a builder,
+>> [laughter]
+>> I sometimes change my main operating
+system CLI. I use Codex sometimes. I use
+Code sometimes. Every single time I
+change my tools. So, yeah, your decision
+is making some great decision maybe.
+>> Yeah, I mean, what you should be able to
+choose whatever tool you want. We don't
+want to lock you into a an agent, but
+more I think for us, we want whatever is
+the best frontier model or open source
+[17:00]
+model to be available to you. So,
+we are seeing some of the new open
+source models get very very good
+>> [music]
+>> and they're much more affordable. So,
+why would we keep that from you, you
+know? Why not use that? Why not try it?
+And I think the other big thing is
+the only certainty with these models
+right now
+is that [music]
+they will change.
+>> Yeah.
+>> Like next week you might want to try
+Codex again and then the week after go
+back to Cloud Code and then the week
+after that go back to PaLM.
+>> and then you today today Jimmy and I
+introduced the Gemini 3.5. So
+>> Yeah.
+>> We have to use that as a builder.
+>> Gemini, yeah, like
+>> Yeah, but every time it changes. So
+Notion's decision is I think is best
+decision for this environment. So um
+I actually watched the the GTM's video.
+At the time I realized that the Notion
+workers is installing in CLI environment
+in not just [music] the the difficult
+way. So could you show up to Notion
+[18:00]
+workers for our
+>> Yeah, absolutely.
+Okay, so let me kind of show you how to
+build a worker. And I thought what would
+be a really fun worker for Builder Josh
+is we will build a worker
+that syncs in all of the statistics
+about all of your YouTube videos. And
+it's a pretty fun simple use case, but
+it begins to show maybe a fun way to to
+think about workers. So the first step
+in building a worker is
+>> [music]
+>> you are going to open up your terminal.
+>> Yeah.
+>> And for everybody watching
+this is in my perspective as as one of
+the product leaders on this, the hardest
+part of the entire product, which is if
+you've never used your terminal before,
+it might feel a little different. But
+what I want to encourage everybody is if
+you can use Notion, you can use a
+terminal. You can totally do it.
+>> You don't have to be afraid to terminal
+every time.
+>> Yeah. It doesn't do a lot of things like
+it's hard to go back and delete and text
+edit, but you can work with it from
+[19:00]
+there. So first thing you're going to do
+if you haven't already is you're going
+to install the Notion CLI.
+And so you can find that on our website.
+So if you haven't been to it yet, go to
+notion.dev.
+This is our new developer website.
+>> Okay.
+>> You'll get the command to install our
+CLI right at the top.
+>> Yeah.
+>> [music]
+>> And if you hit want to do something
+really fun, I encourage you to scroll
+all the way to the bottom and we built a
+game. Uh so, just a fun.
+>> [laughter]
+>> What was the goal in the game, actually?
+>> Uh the point of building the game is
+just that it's fun and we thought uh
+developers might think it's cool. This
+is really our new introduction of our
+developer platform. And we wanted to
+give you all a a new space for
+developers to really like find a home
+and begin to see where we're going to be
+releasing a lot new a lot of new
+features and powerful tools uh into
+Notion. So,
+head over to the website. This is where
+you can get the command to install the
+CLI. It's the first [music] step.
+>> Yeah, that's right.
+>> But,
+>> I have questions. Is this good for some
+Windows environment?
+[20:00]
+>> We are working to make the CLI native on
+Microsoft machines. We should have a
+release very soon for the CLI to run
+natively on Microsoft. Uh but, right
+now, it's built for Unix-based systems,
+like Apple uh macOS.
+>> Actually, the most developers in the
+Korea uses Mac, actually. But, um most
+builders, especially not just for some
+really really engineering backgrounds,
+yeah. They are using the Windows
+environment. So, that's why I'm a I'm a
+kind of instructor for the many many
+huge companies.
+I every time I see the Windows
+environment, I face the Yeah. Some kind
+of accident every time. [laughter]
+>> It's a different experience and yeah,
+so, we support Unix and Linux today and
+then we will, in the next couple weeks,
+have a Windows-supported CLI for
+everybody building on Windows.
+>> [music]
+>> Yeah.
+>> Yeah. You will be supported. And once
+[21:00]
+you install the CLI, you'll see a bunch
+of kind of helpful tools here. What I
+most recommend is if you want to learn
+what to do with the CLI, just open up
+your coding agent and ask what the CLI
+can do. It will tell you. But, if you
+don't do that, you'll just run ntn
+{dash} {dash} help, and you'll begin to
+see the full list of tools built into
+the CLI.
+>> Okay. Okay.
+>> So,
+whenever you need help, you'll just run
+the help command, and you'll be able to
+see all of the different tools and
+capabilities we have in the CLI.
+And this is what we call progressive
+disclosure of the tools.
+>> It's right.
+>> you as a developer can learn how to use
+the CLI, and it's also how agents learn
+what the CLI can do as well.
+>> Yeah, I I knew that the progressive
+disclosure is in the maybe [music]
+skills domain the in every time. So, we
+you make the some same mutual notion or
+>> And the reason we do that is we want to
+be as efficient for an agent as
+possible.
+>> [music]
+>> So, when you do progressive disclosure,
+[22:00]
+the agent can decide how many tokens
+it's going to
+to burn to keep learning how to use the
+tool. The inverse is if we were to just
+show you all the tools all at once, we
+would consume so much of the token
+context window for any one of the agents
+that would be very unnecessarily
+expensive
+and unnecessarily slow. And a major
+focus for us is to make Notion very
+efficient and affordable. And so, that's
+why we're doing these very progressive
+disclosures on of the tools. So, once
+you have the CLI installed, the first
+command you're going to run I'm just
+going to clear my terminal and run ntn
+>> [music]
+>> workers new.
+So, this is just saying, "Notion, I need
+a new worker."
+And what it is going to do is it's going
+to bring up an interactive set of
+prompts to get you going.
+So, I'm going to call this builder
+Josh.
+YT for YouTube.
+>> Okay.
+>> And it's going to install the template
+of the worker, and then it's going to
+[23:00]
+ask me two helpful things. Do I want to
+initialize Git? [music]
+>> Git, yeah.
+>> So, Git is a classic developer tool for
+versioning. Essential, yeah. Essential.
+I completely agree. And then you're
+going to install the dependencies as
+well. And then we are going to stand up
+or scaffold the worker for you.
+So, you now have on your computer
+all the code that can run a worker. And
+it's just running locally on the
+machine. So, it's going to give you a
+little set of next steps. First, CD,
+which means change directory.
+>> Move to that that directory.
+>> Exactly. So, CD
+builderjoshyt.
+So, now we are in
+the worker. We are in the folder that
+contains all the information for the
+worker.
+>> [music]
+>> And at this point in time, I could show
+you how to look at the files. I could
+explain what's in those files.
+But for you, you really shouldn't do You
+don't need to do it. Let your coding
+agent do this for you.
+[24:00]
+>> [music]
+>> So, I'm just going to turn on my coding
+agent. In this case, [music]
+it's going to be Claude code.
+>> Yeah.
+>> And I'm going to run it in a skip
+permissions mode. If you're comfortable
+with it, try it. It makes it much more
+efficient and you're running your coding
+agent in a contained area that we've
+already kind of set up where you should
+be very comfortable letting this coding
+agent really work and do its job. We've
+done a lot of hard work to ensure that
+these coding agents can be successful
+and safe and
+>> Sure. But for the other thing in there,
+I don't recommend the the dangerous
+script permission.
+>> want to yeah, you may want to answer
+every question.
+>> It This is the best decision.
+>> Yeah.
+>> [music]
+>> So, I'm going to then go and start a
+sync skill. So, you'll see that your
+Notion worker comes with a bunch of
+skills built in.
+>> I see. Do you make the comment line or
+some some custom comment or
+>> No, so Yeah, so we built a custom skill.
+It comes natively with your worker. So
+when you ran the NTN workers new, we
+[25:00]
+installed
+>> Uh-huh.
+>> a bunch of skills.
+>> Okay.
+>> And these skills teach Claude code
+>> Mhm.
+>> how sinks work.
+>> Mhm.
+>> [music]
+>> And in these skills, we've imparted all
+sorts of knowledge about how our SDK is
+shaped,
+>> [music]
+>> how to build a sync, how to test it, how
+to structure it. And actually what it
+does, you'll see what it did just there,
+is it parsed the name of our file.
+>> Yeah. [music]
+>> And it immediately realized, "Oh, you
+might want to do a YouTube video sync."
+And that's exactly what I want to do.
+>> I see.
+>> [music]
+>> So, I'm basically just going to say,
+"Yes, I do want to do a YouTube video
+sync." And it's going to begin to come
+up with a plan for how to do this sync.
+>> Mhm.
+>> And so, we are going to go through and
+give it a bit more information. So, it's
+asking what channel ID you want. I'm
+going to provide the handle.
+>> Mhm.
+>> And it's asking if I have a YouTube API
+key, which I do have. And I'll provide
+that. It wants to know how frequently I
+want to sync videos from your YouTube
+channel.
+[26:00]
+I'll say every hour. Maybe
+uh maybe once a day. We'll do once a
+day.
+>> Yeah.
+>> And it now has all the context it needs.
+>> Mhm.
+>> And I think what is really helpful there
+is
+our sync skill understood that these
+were the the additional pieces of
+information to provide. I have yet to
+even write a prompt.
+>> Uh-huh.
+>> Right? I just ran the sync skill and
+pointed it at this directory.
+>> It's ready fine and everything, right?
+So
+>> Yep.
+>> Yeah.
+>> So, now we are just going to let this
+coding agent begin to work. So, it is
+asking me what information it it's
+asking me now what the channel handle is
+and what the YouTube API is. So, I'm
+going to grab those things right now.
+So, first
+>> [music]
+>> I'm going to go back to my browser, go
+back to your YouTube channel, and I'm
+going to grab the link to your YouTube
+channel.
+Throw that in here.
+And then I also created a API token just
+for this [music]
+this demo.
+And I'm going to go grab that from my
+one password.
+So, let me see YouTube API key. So, I
+provided the Builder Josh
+[27:00]
+YouTube channel and I provided an API
+token that can
+>> [music]
+>> access the YouTube API.
+And then we're going to let it go. Now,
+something I do want to share is our sync
+skill will almost always give you the
+instructions for how to get the API
+token or how to set up the
+authentication.
+>> Yeah.
+>> If we could automatically do that for
+you every time we would, but most of the
+time you need to go and find that API
+token.
+>> [music]
+>> It's kind of the hardest part right now.
+>> Yeah, that's right. That's right.
+>> So,
+it's [music] gone through and it's
+proposing what the database might look
+like. I think that looks pretty good.
+What I do think would be fun
+is let's see, we got the title, video
+ID.
+I think that actually looks like a great
+set of tools. So, let's go ahead and let
+it begin to build the sync.
+>> Okay.
+>> So,
+the agent will now begin to process our
+SDK. It'll begin to use all of the
+information we provided to it to begin
+to build and test the sync.
+>> Mhm.
+>> And what's really unique about our
+approach here
+>> [music]
+>> is for a coding agent to be successful,
+[28:00]
+it needs to be able to verify and test
+the work it's done.
+>> [music]
+>> And we've created all the tools in the
+SDK and in the workers so that this
+agent can actually go and test its own
+work. Uh it can validate that it wrote
+wrote the right code, that it has the
+right types. There's a lot of little
+details in here that make this this
+really possible.
+>> Mhm.
+>> So, let's let it think. It'll just take
+a moment here.
+>> Yeah, yeah.
+>> So, we have the
+>> [music]
+>> worker, it's done its work, it's tested.
+And if we were to scroll back in here,
+you'll see like it made mistakes.
+>> Yeah.
+>> It wasn't perfect,
+>> Mhm.
+>> [music]
+>> but we gave it the tools to find out how
+to fix the mistakes it made
+>> Mhm.
+>> and
+>> [music]
+>> and and get to a good outcome. And so,
+now it's asking if we want to deploy.
+I could totally let this agent deploy.
+>> Ah, okay.
+>> And we could let it do that. I think for
+the purposes of the demo, I just want to
+show you what you do. And this is why we
+built tools that both the agent can use
+>> [music]
+>> and you can use. So, you can work with
+it. So, I'm going to go and just open a
+new tab really quick. And you'll see I'm
+[29:00]
+still in the same directory where we
+started the builder Josh. And now I'm
+going to do the deploy.
+>> Mhm. [music]
+>> So, first I just want to make sure that
+I'm logged into the right instance. So,
+I'm just going to run a quick log out.
+And I'm going to log back in to make
+sure that I deploy this to the workspace
+that that we want to. So, I'm going to
+run n8n login.
+And what it's going to do is we are now
+going to connect my local computer where
+I've built and started writing this
+code. And for everyone watching, the
+code, everything we just did is only
+running on my machine. It's only on my
+computer. And that's why it's [music]
+should be a very comfortable space for
+you to play around, try something. You
+can't break Notion.
+>> Mhm.
+>> We have created all the like you're
+you're not going to break your
+workspace. All of this is sandboxed and
+controlled.
+>> Yes.
+>> [music]
+>> So, now I'm going to select where I want
+to sync it. I'll put it right into the
+same space that we built for our keynote
+demo, actually.
+So, it's authorized and connected to the
+[30:00]
+Notion environment. And now I can go
+[music] back to my terminal and we're
+logged in.
+And now the last step is I'm going
+[music] to run n8n
+workers
+deploy. It's going to ask again for the
+name. So, builder Josh [music]
+YouTube
+sync. It's a little bit of a easier to
+use name.
+And at this point, Notion is going to
+check the code you wrote, verify that
+it's safe and secure to deploy,
+>> Oh.
+>> bundle it, so actually turn it into a
+buildable and executable file,
+>> Oh.
+>> and then upload it into our
+infrastructure, which is the workers
+infrastructure.
+>> Mhm. So, engineers don't need the any
+kind of some real server to the deploy
+for the for deploying. Yeah.
+>> Yep, it's the you don't need to create a
+server, you don't need to manage a
+server, you don't need to check on it.
+We take care of all of that and
+>> [music]
+>> if I could show you all of the systems
+internally we have that make sure that
+the system runs all the time and is
+[31:00]
+reliable. I would but it's internal
+dashboards and it'd be very boring.
+>> Okay.
+>> So, it's now deployed. The last thing we
+need to do is we have that YouTube
+secret the API the API token that
+actually is how we connect and that is
+only existing right now on my computer.
+Now I need to push that security token
+up into Notion so that Notion can
+establish a connection to
+>> Ah, is it secure?
+>> It's completely secure. So, when I when
+I run this command which is NTN workers
+[music]
+ENV or environment push
+it's going to take that security token
+encrypt it, send it up to Notion and
+then we will only decrypt it on the
+sandbox.
+When this worker makes a network call to
+make the returns.
+So, we'll run this command to push it
+and now you'll see that it's asking me
+that we're going to create two new
+environment variables that'll be stored
+on the worker.
+And so for anyone watching this like
+never used environment variables, is
+fairly new to coding, just think about
+these as passwords. If you're using any
+[32:00]
+other password manager, we're securing
+these [music]
+credentials as passwords and storing
+them on the environment of the machine
+so that you can [music]
+actually connect to systems you use. So,
+I'll press Y and now that's all been
+deployed. And so at this point we've
+built the worker,
+we've programmed the sync, we've
+deployed it and we've pushed [music] the
+password. And so now we just need to see
+if the sync is working.
+>> Okay. So, I have a question. Yeah. So,
+after deploying API key, so how can I
+handle the this kind of of API keys in
+the Notion workers environment.
+>> Yeah, so great question. So
+I'll show you exactly how I'm going to
+go about it. I would go and just run NTN
+workers
+>> [music]
+>> ENV
+{dash} {dash} help. So, this takes us
+back to that help command. If you ever
+have a question like that, just go
+straight to what you just did and run
+the help command, and you'll begin to
+see all the tools you or your agent has
+[33:00]
+to see these passwords. So, here I can
+run you can see that there's a list
+command here. So, I can run NTN
+>> [music]
+>> workers and list,
+and there I can see that we created
+those tokens. But, we will never reveal
+those tokens. We don't even Those
+they're completely encrypted to us, so
+we don't even know what they are. All we
+know is we created them and they're
+stored under these variable names.
+>> [music]
+>> Now, I could delete them. I can also
+pull them back down to my machine if I
+need to.
+So, there's a lot of tools in here for
+us to manage these secure tokens end to
+end, and for you to do that or your
+coding agent to help you.
+>> So, don't you have any user interface in
+the terminal environment? So, maybe I
+recognize that there's the [music] TUI.
+>> That's right. TUI, terminal user
+interface. So, you can run NTN workers
+TUI,
+and you'll see kind of our
+our user interface for kind of seeing
+how workers are going. And so, here we
+have a couple different ones built. If I
+go to the builder Josh worker,
+[34:00]
+>> [music]
+>> I can see we've built the builder sync,
+and I can select it.
+There's the database where it's syncing
+to.
+It's running.
+It's up-sorted 83 videos so far.
+It's taking it 4.6 seconds to run every
+cycle.
+>> It is working healthy.
+>> It's healthy.
+Um I can go in deeper as well. A couple
+things I just want to show you here just
+so you kind of understand. You can see
+that for the first right after we
+deployed it was actually hitting an
+error.
+And the reason it was hitting that error
+is I can go into any one of these runs
+and I can see it's hitting an error
+because it doesn't have a YouTube API
+key cuz we hadn't pushed up the
+environment variable yet.
+If I go into any one of the successful
+syncs, we can begin to see the full
+logging.
+>> Yeah, it's full Korean, but
+>> [laughter]
+>> I have no idea what that says. Um
+but I am seeing, you know, emojis in
+there. I'm presuming this is, you know,
+some successful YouTube logs.
+And so that's all running there.
+>> [music]
+>> And you'll also be able to see where you
+were asking before. This is another
+[35:00]
+place where you can see those
+environment variables are set.
+So it looks like it's all healthy and
+running. So I think what we should
+really do is let's actually see how it
+looks in Notion.
+So I'm going to go ahead and open the
+database link here.
+>> Wow.
+>> And I believe these are all your videos.
+So here they are. I can see the
+descriptions are being pulled in.
+I can see how long it is in seconds,
+[music] the engagement, we load the
+thumbnail on there.
+So this is all your YouTube stats
+syncing right in. And every time you
+create a new video,
+we'll catch and upload that here as
+well.
+>> It automatically syncs every videos,
+every single videos after I uploaded the
+video.
+>> Yep.
+>> Oh my gosh.
+>> And what's cool about that, a couple new
+things, right? You'll be able to see
+that it's a sync and the health of the
+status. Like we're beginning to bring
+some nice tools into it. But it's also a
+full-powered Notion database. So you can
+add your own properties here, right? You
+[36:00]
+can add statuses, you can add AI
+auto-fill properties.
+So you can begin to extend and [music]
+make this set of data about your YouTube
+content exactly yours.
+It works with all the views you want,
+right? I can work with it in my custom
+agent, in my personal agent. So you
+really have all the tools to begin to
+work with this data. And we never looked
+like we we were here though. We never
+looked at the code. I have yet to read
+the code. We let the coding agent really
+build and deploy all of it.
+>> It helps okay, especially marketing team
+when they control these kind of the
+statistics or competitive analytics,
+[music] right? So, I actually use these
+kind of feature in by the N8N.
+>> Yeah.
+>> Actually, but now I can fully use this
+kind of feature in the Notion workers.
+>> Exactly. Something we actually do with a
+lot of our customers
+you know, before we had workers, the
+best way to do this was absolutely N8N.
+You could use Zapier. There's a bunch of
+[37:00]
+them work. There's a lot of different
+tools to it. If you want to move those
+into workers, a really fun way to do it
+>> [music]
+>> is for example, you can take a
+screenshot of your N8N workflows.
+And when you're in Claude code, you can
+literally just paste in
+the image
+>> Yeah.
+>> of your N8N flow or your zap.
+>> Yeah.
+>> It'll parse that image and help you turn
+that into a worker for you.
+And then it'll it'll be maintainable and
+editable through through code and
+workers.
+>> right. So, I can finally use my natural
+language by not using N8N workflow
+because I sometimes I really memorize
+every single some [music] dots by the
+nodes, right? So, but
+>> Yeah.
+>> From now on, I can use my natural
+language. Yeah, right.
+>> Yeah, and the way that that goes is you
+know, like what's really nice about N8N
+and Zapier is you can see the flows and
+it's laid out to you in a nice visual
+way.
+And the transition you'll make if if you
+want to move them into Notion cuz
+[38:00]
+they're really powerful tools. It's
+really nice to be able to lay it out
+that way.
+>> Fully right.
+>> Is once you move it into Notion, you'll
+now manage that through your coding
+agent. So, any change you'd otherwise
+make by going into Zapier and you know,
+changing the workflow, you'll now make
+that change by just asking [music]
+your coding agent to improve it. So,
+now we can build all sorts of stuff on
+top of the sync you have. We could build
+some tools that edit or change
+descriptions of your videos. We could do
+all sorts of powerful capabilities from
+here because we've now begun to create
+this coding environment that's fully
+customizable. There's no limit to what
+you can build once you have it set up as
+a local app.
+>> Wow. Yeah. Yes, this is really powerful.
+So,
+I'm going to move to even ask the
+questions. In Korea, the phrase vibe
+coding
+caught on a lot. Yeah. [music]
+And it's a style where instead of
+writing precise specs, but you give a
+coding agent and context
+>> [music]
+>> and build alongside it. Yeah. And what
+value do you think Workers offers
+[39:00]
+specially to [music] the vibe coders?
+>> Yeah. So, vibe coding, some people love
+the phrase. I think some developers have
+turned to not love it. What I think is
+really important about Workers is I
+think Workers are a very good set of
+work that [music] is very vibe codable.
+So, what do I mean by that? Sometimes
+you're building a system or building a
+set of tools as a developer that is very
+complex, has a lot of logic, and is
+brand new. So, it's very hard to just go
+into a coding agent
+>> [music]
+>> and ask it to build a very complex
+system all on its own.
+But with Workers, I think Workers are
+very vibe codable
+because our engineering team has put a
+ton of time building really helpful
+abstractions
+so that a coding agent can really just
+learn how to use the tool on its own.
+From your perspective, you're just
+vibing. You're just giving it, you know,
+a sense of direction of where to go.
+[40:00]
+>> [music]
+>> But really under the hood, we've set up
+uh the SDK, the skills, the entire
+development and workflow pipeline
+>> [music]
+>> that the code that's actually being
+written, actually deployed, is not vibed
+at all. It's very rigorously tested.
+It's very secure. It has all the
+governance features.
+So, for you as a builder,
+go in and just describe what you want.
+We've done all the hard engineering so
+that it can feel like Viving to you, but
+for the code that's actually deployed
+and running in Notion, it's very
+high-grade, end-to-end tested code that
+that'll work.
+>> totally agree with you. So, on the flip
+side, uh the
+is evolving Viver coding environment is
+kind of making some security problems,
+right? Yeah. So, how is Workers putting
+guardrails around that? So, um maybe
+yeah, something like that.
+>> Yeah. So,
+>> [music]
+>> when you're writing code that, from our
+perspective, any piece of code that you
+deploy, we have no idea what it does.
+[41:00]
+And our position [music] is that we
+don't trust it, believe it could be
+malicious, and are putting it [music] in
+a sandbox environment so that it cannot
+do any harm. So, our position there is
+you should be using coding agents.
+They're very powerful. They can write
+really complete applications. [music]
+And then we've done a lot of hard work
+around governance, security, and
+deployment to ensure that that code is
+secure and safe and can't do harm to
+Notion, to your workspace, or to others.
+So, that's what the Worker environment
+really does. It is a sandbox
+environment. What sandboxing means it's
+completely contained in a way that it
+can be immediately turned off by us. It
+can't access and and connect to other
+systems that that we can't govern and
+verify. And it allows us to create a
+security environment around it so that
+we can ensure that your passwords and
+other, you know, secure information in
+Notion can never be accessed in an
+unauthorized way. So, those are all
+these big steps we've made so that you
+can write code that you've never even
+[42:00]
+completely read or bug-checked, but that
+you can still deploy and run in a Notion
+server. And And we've partnered with
+some exceptional companies like Vercel
+>> [music]
+>> and AWS to ensure that that that those
+runtimes are very secure and can be can
+be governed by us.
+>> Yeah. Yeah, great. Great. So, in Korea,
+enormous range of teams use Notion as a
+kind of second brain for the team. So,
+it is working as a collaboration tools
+for every single
+startup or some huge companies as well.
+But,
+when those teams adapt the developer
+platform,
+>> Mhm.
+>> how do you expect their collaboration
+patterns to shift? I was wondering that.
+Why developer platform needs to the the
+team even if they are using Notion as a
+collaboration tools, not only just
+developer, but also builders? [music]
+>> Yeah.
+So, for teams and builders, what we
+observed, like why do people want to put
+all this data in Notion anyway? So, it
+[43:00]
+is a really powerful second brain,
+but as we were talking about right in
+the beginning, not all your information
+is in Notion. We don't expect that to be
+the case, especially for teams of
+people. You might be taking your notes,
+and you might be taking your you know,
+using our meeting notes features and
+building really nice databases,
+but maybe all your customers live in
+your CRM, right? Or your YouTube videos
+live in YouTube. Like, that's just where
+the we're not a video hosting platform.
+Like, you got to put it on YouTube.
+So, once that begins to happen and
+you're just in the nature of building,
+you start creating work that lives in a
+CRM or on a social media platform,
+>> [music]
+>> you know, you now have information
+that's just not in your brain. So, we
+really would love you to use Workers to
+just connect that data back to your
+brain.
+>> [music]
+>> And what we're seeing, I think, like a
+very common use case where we're seeing
+this succeed is with CR CRM syncs. So,
+Salesforce, HubSpot, you might be using
+Shopify.
+>> [music]
+>> There's so many other tools where you're
+keeping track of customers and
+shipments, but when you bring it into
+[44:00]
+Notion, what begins to happen is [music]
+people that aren't even on sales can
+begin to see, oh, these are my
+customers."
+Your marketing team can match, you know,
+campaigns and efforts to the data that
+lives in your CRM and used to only be
+available to your sales team.
+You know, you can begin to share and
+reference your prior videos
+in notes and documents you maybe share
+with
+other collabora- collaborators or other
+partners that you want to kind of collab
+with.
+And it really just begins to allow you
+to really kind of have a complete set
+and brain of all the information you
+otherwise might not have.
+>> Yeah, yeah, yeah. He's that that's a
+very clever decision because I as a
+builder I use Notion for my team. Not
+only just to making some memos or some
+pages or some kind of little database,
+but I really wanted to use the
+collaboration canvas for the Notion app.
+>> And I think the other big point there is
+um
+[45:00]
+because we also want you to use agents.
+Agents are particularly hamstrung if
+they don't have access to it. So, if you
+wanted to go in today without the
+YouTube sync
+and started asking your agent about how
+your YouTube videos are doing, what
+would be a good idea of what to do next?
+Think about what it has to do to answer
+that question. It would have to go out
+to the internet, try to find all your
+YouTube videos. It would need to be, you
+know, parsing all this information. It
+may or may not succeed.
+>> That's right. That's right. This is this
+is a great point. So, I actually
+recognize that the Notion agent controls
+not only just the data. Maybe I can make
+a dashboard for the team to, you know,
+control [music]
+or some show up to the data or every
+single analytics, right?
+>> Yes. So, that's why it is clever
+decision, maybe. So, I I really realize
+that.
+>> Exactly. Yeah.
+What we begin to see with with teams and
+[46:00]
+companies is context is is a critical
+part of the next era of agents and that
+context can be retrieved, but if if the
+agent misses just one piece of
+information that is critical, it will
+make the wrong decision, it will do the
+wrong work,
+>> [music]
+>> it won't be successful.
+And giving it the space to be very
+successful is incredibly important to
+Notion. We really want you to operate
+your agents wherever they may be from
+Notion and then see those agents
+actually do work that's really
+meaningful to you and valuable.
+And for both of those things to be true,
+the agent also needs to be very
+efficient. It needs to be able to do
+that work in a cost-effective way.
+>> Yeah.
+>> And for that to happen, it cannot be
+spending, you know, millions of tokens
+every run just going to try and find the
+information it needs.
+>> [music]
+>> And if it does spend that much time
+finding that information,
+it needs to accurately [music] get every
+piece of context so that it can do the
+[47:00]
+right work.
+And syncing and the worker tool calls
+we've rolled out are our answers to
+those problems. [music]
+The worker sync allows all that context
+to live in Notion
+so that we can index and vectorize it
+and make it accessible to your agents.
+We can be confident that the agent is
+getting all the information it needs.
+>> [music]
+>> And as a result, it can also be way more
+efficient.
+We're in a very unique position at
+Notion in that we're not a frontier lab
+company yet.
+>> [music]
+>> Um
+we're very motivated to make our agents
+really economical and we see workers as
+a really powerful way to make those
+agents very, very efficient.
+>> [music]
+>> So, that's kind of why we're really
+doubling down on the developer platform.
+>> [music]
+>> I see.
+So, Korean companies often adopt new
+tools bottom up. Yeah, but um an
+individual
+practitioner tried something that it
+spread.
+Uh what would you recommend as the most
+[48:00]
+effective first use case for a single
+builder trying to introduce workers to
+the team?
+>> Yeah.
+>> So, yeah, two answers here. First,
+for
+we love that
+the
+Notion loves the like
+individual finds Notion, begins to love
+it, use it, brings it to their team. And
+so, if you're an individual building on
+Notion, my number one recommendation
+with workers is just start by building a
+sync that is valuable to you personally.
+>> [music]
+>> That is doing something that saves you,
+you know, having to click and log into
+another system. So, if you'd love to be
+in Notion, but you always find yourself
+going into GitHub, build a GitHub sync.
+If you really enjoy Notion, but you're
+constantly going out into [music]
+Shopify, build a Shopify sync. If none
+of that is true, but you love Notion and
+you love music, and you use Spotify,
+build a Spotify sync.
+>> [music]
+>> Anyone of those examples will teach you
+so much about Notion and how to be more
+productive on it. And then, once you
+[49:00]
+build something like a Notion worker,
+I actually think the number one thing
+I'd recommend you to build for your team
+is an agent
+that helps route information across your
+team.
+>> Uh-huh.
+>> Those So, if you're using Slack,
+>> Mhm.
+>> build an agent that helps take feedback
+from your customers and send it to a,
+you know, send it to the right person.
+And the reason I love that use case is
+it not only will save you time,
+>> Mhm.
+>> it's really helpful to your team for
+them to see an agent actually
+take care of some painful kind of busy
+work that your team would otherwise have
+to do. And so, those types of little
+agents will make you a little hero in
+your team if you can save your team time
+that way.
+>> Ah, yeah.
+>> Yeah. So, I think for companies to
+really that want to become more AI
+native and bring agentic processes into
+their company. The way to use Notion
+workers and our agents together is I'd
+[50:00]
+first start by making sure that Notion's
+becoming a place that is [music]
+accurate and has the context it needs.
+And so we provide your teams with
+meeting notes and notes and databases so
+your team can really begin to
+collaborate and build kind of a center
+of knowledge.
+And then you can use those workers to
+extend it just the way we showed so you
+can sync a lot of data into Notion. So
+you have your CRM data, all the critical
+information that your company relies on
+every day. Getting that into one place
+is the first step. It's super valuable
+for your team.
+But then it sets the foundation for you
+to actually start building agents that
+you'll find helpful.
+Those agents will be able to find the
+answers in your documents. They'll be
+able to find the solutions in your CRMs.
+[music]
+And you can begin to build an agent that
+appears across your company and is
+really helpful. Something that I am
+still really surprised about
+is right now inside of Notion, you know,
+we're about a thousand people. I think
+they have over 3,000 agents.
+[51:00]
+And so all throughout my day I'm
+engaging with agents. I see probably I
+am engaging with an agent probably every
+15 minutes to every 30 minutes. When I
+talk to a lot of teams still, they a lot
+of team members may have never worked
+with an agent ever. They've worked with
+a chat box, they've tried chat GPT, but
+they've never ever seen an agent
+actually help them. And so my experience
+at work is becoming so different than a
+lot of other team members
+because I'm getting very familiar with
+agents and how they save me time. And so
+to bring that same type of thing to your
+company to find a set of agents that
+your team might engage with once a day,
+every hour that they actually find
+helpful.
+>> [music]
+>> Yeah, that's right.
+>> That starting point is just your
+workspace and beginning from there. So,
+that's kind of where [music] I'd begin.
+>> I totally agree with with your points.
+Yeah. First of all, we need to wrap the
+old kind of data
+>> Yep.
+>> into it something valuable software.
+[52:00]
+Maybe it's going to be maybe Notion.
+But,
+yeah, that's the maybe first step to go
+to AI native company and think that. So.
+>> And I think we would say like the reason
+I'm really finding I actually work at
+Notion, but something I think is really
+valuable starting with Notion is your
+company could begin by putting all this
+data into a warehouse.
+You know, Snowflake, Databricks, or you
+could put it into a database. But, those
+are highly highly technical systems.
+>> Yeah, yeah.
+>> That very few people at your company can
+access and work with safely. It's very
+very hard to make your Snowflake data
+warehouse accessible to your company in
+a place where they can work with it,
+improve it, edit it, keep it up to date.
+What's really striking me about Notion
+is it's a place It looks like [music] a
+doc.
+It looks like a page.
+>> Yes.
+>> It looks like an Excel spreadsheet. And
+underneath it though are all these tools
+that make it secure, permissioned. So,
+as soon as you begin to put the data in
+a place like that, it's actually
+[53:00]
+accessible to everybody. And it's
+accessible to your agents in a way that
+you can understand kind of as we talked
+about. [music]
+So,
+that's really our our goal.
+>> That will only engineers, but also every
+single Yeah, workers for in the company.
+>> they can open up a page and start
+typing, they can add to your to your
+agentic workflow.
+>> Yeah, that's right.
+>> And that's accessible to everybody at
+your company.
+>> All right. We're going to go to the
+closing. For Korean builders who
+finishes watching this and think I
+should try this, what's the very first
+resource or documentation you'd point it
+them to?
+>> Yeah. So, [music] if you want to try out
+anything we just talked about, go go
+notion.dev.
+That's n o t i o n.dev.
+[music]
+And you'll go to our brand new developer
+landing page.
+You'll see all the commands we just
+talked about about how to install the
+CLI.
+>> [music]
+>> You'll see how we build syncs, but
+you'll also learn about a bunch of
+features Josh and I like didn't have
+[54:00]
+time to talk about today.
+And you'll see all of our help
+documentation. And you'll also find out
+a way to get in touch directly with me.
+You can join our developer slack
+channel.
+And I and our entire engineering team is
+available to answer your questions from
+there.
+>> Okay. Yeah, as a builder in the AI
+native era, so what mindset do you think
+matters most? I'd like to hear your
+personal opinion.
+>> Yeah, we talk a lot about a notion. We
+talk a lot about agency. You're hearing
+a lot of this conversation about it.
+It's really important to have taste or
+all of these types of things. What I
+would most encourage is whatever
+question when you start working with
+these AI tools, especially when you
+start working with something like
+building a worker,
+whatever question you have, you're going
+to hit all sorts of questions. You've
+never You might have never used these
+tools before. The beauty of these tools
+is just
+take that curiosity and just immediately
+ask an agent to try.
+>> Mhm.
+That's right.
+>> In your coding agent, if you hit an
+error, just be like, "What does this
+[55:00]
+error mean?"
+If you are building a new worker and it
+doesn't make sense, ask it what it did.
+It'll tell you and it can teach you
+something new. If you're hitting a
+question in Notion, just try asking the
+agent.
+And when you go from thinking about
+these things as just a thing that builds
+and does work for you to also something
+that helps you learn, I think that's a
+big breakthrough in building the
+confidence to realize [music] you've
+always had this in you to build these
+types of things. And if you're building
+a Notion,
+you're already that kind of person.
+You're already somebody that wants to
+build tools that solve your problems.
+You already want to make things look
+nice and clean, and these agents are
+just here to help you do that better and
+faster.
+That's really our take on it.
+>> That's great great answer because every
+time I use the cloud called but but
+before using cloud the core or something
+this kind of AI native tool, I didn't
+realize that was possible what what it
+can do but after using it, I really feel
+really free every time. Wow, I can use
+[56:00]
+everything. I can make everything
+like that. So, please try Notion workers
+because if you use this kind of tool,
+you can expand your world from today.
+So,
+>> Love it.
+>> Yeah, love it. So, this is final
+question. Please introduce your vision
+in the Notion for the our audience.
+>> Mhm.
+Uh
+>> Your personal vision.
+>> Oh, my personal vision for Notion? Yeah,
+I think what I really love about Notion
+is where today it started as like a
+place where you can keep taking [music]
+docs and you can build databases and now
+we're beginning to put agents in there
+that kind of help you begin to do your
+work.
+I think our ultimate vision for
+something like Notion is that it evolves
+from just being a place where you have
+agents and you have docs and [music]
+it kind of looks like software you've
+always used into something that you
+might begin to realize looks a lot more
+like an operating system for you and
+your team.
+>> [music]
+>> It has all the context you need. It has
+[57:00]
+all of these really powerful agents in
+there. And now with our developer
+platform, it can be tailored to your
+exact needs. It can look exactly like
+you want. It's completely malleable and
+customizable for you and it becomes
+something that just
+can run your life. It can run your team
+and it can run all the software you need
+to to do that really efficiently. So,
+our vision a little bit, at least what
+I'm really excited about at Notion, is
+that we have all these building blocks
+that can now come together to build like
+a very complete operating system for
+you. And that's where I'd love to see
+this product go in the next couple
+months and years. We're going really
+fast, so I hope we can do it.
+[58:00]
+Thank you.

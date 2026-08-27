@@ -1,0 +1,560 @@
+[00:00]
+Claude design is amazing, but the limits
+are brutal and it can stop you dead in
+your tracks. Open design is a clone of
+Claude design and it is 100% local. And
+in this video, I'll show you exactly how
+to use this to build any website, app,
+or design that you want with any model
+you want to, even 100% for free, so you
+can stop wasting time and start growing
+your business. And if you don't know who
+I am, my name is Jack Roberts. I built
+and sold my last tech startup with
+thousands and thousands of customers.
+Now I'm on my own ad companies and share
+the exact things that work. [music] So,
+if you haven't already, grab that coffee
+and let's dive straight in. So,
+replacing Claude design, the limits are
+so high on Claude design, you just say
+the word Claude and you're 50% of the
+way through it. Now, Open design is a
+new GitHub repo that is fast trending
+and I expect it to rise very, very
+quickly because essentially with Claude
+design, we're locked in, it's only Opus
+4.7, has limitations. I'll show you.
+Open design has a completely different
+[01:00]
+license and you can use it with as many
+models as you want to. Now, Claude
+design itself is pretty cool. We've all
+seen what Claude design looks like. You
+can build nice individual graphics and
+stuff. I mean, we've all seen all the
+wonders of Claude design. It's a pretty
+cool software, right? But what's the
+problem with it? Well, there's a few
+problems with it. It kind of sucks and
+it sucks because, you know, it's so easy
+to use it. 10 prompts and you're 95% of
+the way done. I built out a design
+system with it and it was pretty much
+baked and cooked at that very moment.
+So, it really restricts you, which I
+think if you actually can do meaningful
+can be a little bit limiting. Yes, you
+can export to good Claude code, but it
+has its limitations. And some of the
+biggest issues that people say they cat
+mouse and like just 25 minutes, you can
+do one meaningful project a week.
+Everyone thinks the output looks like AI
+slop at $20 pro and you can only have
+one model, which is Opus 4.7. And of
+course, you're locked into the Anthropic
+ecosystem with this. And the issue with
+this model swap is what if you want to
+use a different model or you want to do
+it more cheaply so you can do this at
+scale, you kind of held back. This is
+where open design comes into play. Now,
+[02:00]
+first thing to call out is it's got an
+Apache 2.0 license. So, there are other
+repos, but they try to replicate and
+clone what cool design does, but you
+can't actually use them. And I've seen
+videos that have gone off recently on
+this. You can't use it in a client
+project. And for me, that just I don't
+really see the point of that if you
+can't use it commercially. This has an
+Apache 2.0 license. It's got over 71 of
+my basic brand design systems, loads of
+skills, and you can effectively build
+out in so many different brand designs,
+as I'll show you inside the video. And
+the way this works is you pick a brand,
+the agent inherits the voice,
+typography, palette, layout language,
+and the code. It was built off a really
+popular GitHub that went viral called
+Vault Designs. It's a really really cool
+one, so it's great to see that they're
+building on this. So, specifically, what
+this can do that you can't do in cool
+design, and then we're going to download
+this and build something cool together
+so we can see this for ourselves. First
+of all, you can pick any large language
+model you already pay for. We can The
+interface for this is really cool. This
+could be a free model. If I want to
+bring in ChatGPT or Gemini, I can do all
+of that stuff. You have 71 brand systems
+[03:00]
+that are baked into it. You have Apache
+2.0, which means it's safe for clients.
+You can use it on client work, side
+products built with it, never ask
+permission, never pay royalties forever,
+unlike other GitHub repos I've seen
+popping off on YouTube. So, it's it's
+really important to bear that in mind.
+It's local first. Nothing uploads, which
+is great. So, it's all in your own
+ecosystem. If you want to design
+something controversial, go ahead and do
+it. You have five different export
+formats, so HTML, PowerPoint, PDF, you
+know, ZIPs. And these uh and you can
+discover first. So, basically, surface
+audience tone brand scale forces the
+model to ask before it writes. So, let's
+go ahead and try this puppy out. So,
+what you're going to do is shoot over to
+this. Now, this is an example of what it
+looks like to give you a bit of an
+overview. Design with the agent already
+on your laptop. As you can see, these
+are examples of what the product looks
+like. This is basically open design. And
+expect this to get more and more popular
+over time, by the way. It just goes out.
+This kind of like taking the system
+prompt intelligence and building
+something local. So, all you're going to
+do is come up to code like so. You're
+going to copy this. So, you're going to
+pop over to your environment of choice.
+I'm in anti-gravity here and what I'd
+like to do is come up here and just say,
+"Hey there, I'd like to go ahead and
+[04:00]
+clone this repo, please, and then open
+it up for me." All right? And then all
+you're going to do is paste in a GitHub
+repo like so, drop that in, and let it
+work its magic in the background. Now,
+one thing that's good to understand
+about this is it isn't just you talking
+to the repo. It's actually got its own
+environment, which is so freaking cool
+because it opens up in basically your
+browser, which is your own locally
+hosted Claude design replica, which is
+freaking cool. So, when you ask it to
+open up, it may need just to install
+something, but again, Claude code or
+anti-gravity will do that all for you
+directly. And I just want to call that
+out as well. On the left hand side,
+you've got all these different things in
+the design systems, right? We've got
+Airtable, Apple, Binance, Coinbase,
+Kraken. We've got Nike, we've got
+PlayStation, all these different design
+MDs from really cool websites. So, if
+you want a website in that basic style,
+it'll do that for you and it can
+leverage that, which is super cool. And
+then this is what it opens up. This is
+Open Design. Now, first thing you'll
+notice when you open up Open Design is
+you're basically deciding the models
+that you've already installed. I've
+installed Gemini, I've got Hermes, I've
+got Codex. There's so many different
+things you can do. If you want to know
+[05:00]
+how to install those, I'll put a link on
+screen for a video I did literally a
+couple of days ago that show you all
+that process. But basically, you can add
+the models that are on your computer
+currently and use it. So, let's say that
+I want to use Claude code, which is
+great. You can also do a bring your own
+keys if you want to. That's really cool.
+But we're just going to use the CLI for
+this one. So, if you've got Claude code
+downloaded on your laptop, this will be
+here ready to rock and roll. You've got
+the model, so I can actually
+specifically go ahead and choose that to
+do whatever I want to. Again, and if I
+wanted to do some like a free model, I
+can go ahead and use that, too. But I'm
+going to go ahead with Claude code here
+and click on get started. So, for
+instance, cool. So, now we're rocking
+and rolling. Let's give it a project
+name. And you'll bear in mind, it bears
+an uncanny resemblance to the one that
+you've seen before. So, I just say
+something like analytics. Okay. And then
+I'm going to come down here, wireframe
+high fidelity. And guys, it looks very,
+very similar, but it's basically an open
+source thing. So, let me bring this over
+so you can see. Okay, cool. So, I'm
+going to come down on my a analytics
+dashboard. That sounds really cool. Just
+click send on that and see what it does.
+And then what you get within this as
+well, quick brief such to say it's going
+to be for desktop web, which is going to
+be cool. Who's the primary viewer? I'll
+say founder exec is decent. Turn with
+[06:00]
+dark and utility. You know, they want
+Datadog, linear, Stripe, radar,
+Bloomberg. And let's just go for pure
+operator density, hairline grids, green
+amber and status, quieter and grayscale,
+softer dark, warm accent, more white
+space, terminal maximum density, no
+decoration. Let's give it a bit of a
+Stripe style dashboard. I think that
+could be really cool. Product name, I'm
+going to give it something like Vantage.
+Brand context, pick a direction for me.
+Scope, I'll just say simple dense
+overview page, that's fine. Or I could
+do overview tab with two to three
+sliding tabs. That's cool. Make it super
+interactive, go just beautiful
+animations, something that has a wow
+factor but is also beautifully designed.
+When that's done, let's go ahead and
+just click on send answers. Cool. And
+then it's got to pick a dark direction.
+So, again, we can just pick which of the
+brand palettes that we like and we think
+is pretty cool. So, why don't we go for
+one that's got this kind of nice The
+quick brown fox. That looks decent. And
+then we've got accent override, where
+should the single wild moment land?
+Again, it's kind of working with us
+iteratively and coming back and forth on
+this. Let's just go for world heat map
+would be cool. I'll just click on send
+answers. And then literally, guys, you
+can see it's going to be working through
+all those to-do lists on the left-hand
+side. And effectively, they've taken the
+[07:00]
+essence and basically what makes cool
+design and they've just open-sourced it
+and let you work through everything on
+your own computer. This is 100% local
+right now. And the actual user
+interfaces pretty pleasant to use, to be
+honest. Guys, and then just like that, I
+open up and this is the dashboard that
+it's given me. I mean, look at the
+interactivity on this. Monthly recurring
+revenue, active workforces, workspace
+retention chart. This is, by the way,
+one shot. I've done nothing else since
+and it's live. Like things are adding
+in. Like that could be tidied up a
+little bit right, which is cool. But
+look at this. Like this is really
+impressive. Now, the cool thing about
+this is that I can, if I wanted to,
+change the models. So, if I want to do
+this, I'm like, "You know what? I've
+spent, you know, my Opus 4.7 is out or I
+want to use ChatGPT." I can come down
+now in the bottom left, which you can
+see because I've got this thing down
+here. Look, we'll see a light. I click
+on this. And then all you're going to do
+is just switch it over to Codex. Cool.
+And then I come down, click on save,
+which is wonderful. Now that's done, I
+click back on Vanguard. Now I'm talking
+with ChatGPT. So here for example, I
+might come back over and I might just
+hit something like, "Hey there dude,
+could you just make an improvement to
+the live event stream? It looks a little
+[08:00]
+bit laggy when it comes in. Just make
+that a bit smoother for me, please."
+Release, and then basically ChatGPT can
+do the work for us. And by the way, you
+can see when you do switch the models
+you have Codex. Codex is initializing,
+Codex is running, and that's how easy it
+is now to get any model to code and
+rapid click code design like that. I
+think this is really cool. I didn't
+really have too many expectations coming
+into this. And as always, the goal of
+this channel is to share the stuff that
+works. A little hack that I personally
+found guys is that, you know, use Opus,
+use Claude to get the initial design,
+then you can tag in the other models
+once there's like an existing design
+architecture. It's like the rooms Think
+of it like a a basically a room being
+painted, and you get kind of vibe. It's
+way easier to do more of the same than
+it is to completely engineer from first
+principles up. So that's why I think
+it's helpful to get these things to make
+amendments. Now that says it's done,
+let's just full screen this for example
+and check it out. Now if I come down, do
+I see this being changed a little bit? I
+think we need to probably just refresh
+it, right? So let's just maybe come off
+this one here and we come back over and
+[09:00]
+do we see a difference? I'm going to
+come down and see. Okay, there we go.
+And that is slightly different. So the
+first iteration wasn't perfect. I give
+it a second piece of feedback and look
+at this. It's pretty much ready to roll.
+and roll. That whole design thing is
+completely different. And then you got
+this wonderful thing. And if I want to
+export it, here's a cool thing. I come
+over here to share at the top. I can
+export as a PDF, as a PowerPoint,
+download as a zip, export as standalone
+HTML, or save as template, or you can
+even publish this directly to Vercel
+from this app, which is crazy. So if I
+click on deploy to Vercel for example,
+you can see here all I have to do is
+include my Vercel token, which I can get
+from online. Why is this important?
+Well, this now becomes a fully fledged
+app. You open Visio, you connect it, and
+you can basically pop it out, which is
+absolutely wild. Or if you want to play
+around with it in anti-gravity or
+different systems, I can do that.
+Download it as a zip and have that on my
+desktop. Then I could open it up into
+Kodak. I could open up into Claude or
+anti-gravity or your own individual
+environment of choice. Then, if I come
+back, for example, and you can also
+import your basically Claude design zips
+[10:00]
+by clicking here. So, if you build like
+a Claude designer over there, you can
+bring that over, which I think is really
+cool. Again, you've got design systems
+that all visible here on the design
+system section. You've got image
+prompts, which is freaking awesome. So,
+if you want to collect more of these
+kind of images, that's fantastic. Video
+prompts as well. So, you can see all of
+this different stuff. Like it literally
+is becoming like the Higgs field of
+design. Like that's effectively what
+we're seeing here. You have your own
+design systems that you can pick if you
+want to. Do you like the Lamborghini
+design system? Now, anything we create
+will be in the Lamborghini design system
+style. Then, for example, if you click
+on your little profile at the top,
+there's another way of getting into
+that. You can see we have a local CLI.
+You can have Anthropic API where you
+bring your own keys if you want to.
+Media provided, so these you can just
+integrate everything you want to. So,
+for example, if I want to build to
+create GPT images, I can go ahead and
+grab my OpenAI key. And so, when I come
+back over here, I just throw the API key
+in here, which is called the top, click
+on save, and then it is ready to rock
+and roll. So, technically then, if I
+just come back over to my designs, click
+on Vanguard, then I might come down and
+say, "Hey there, add to me a beautiful
+Ghibli style image in one of the boxes
+[11:00]
+like, I don't know, some kind of
+investment piggy bank." I use the GPT
+API to do this. And just like this,
+guys, it is now complete. So, I scroll
+down, and do I see it? Guys, look at
+that. And what's really cool, I don't
+know if you can see this now. I'll just
+try if I can zoom in a little bit. Give
+it a fresh look on this thing. But can
+you see how not only is it added it in,
+it's added this beautiful kind of blur
+gradient. That has lifted the quality of
+this so much. And that that's just one
+shot. And now I've got that integrated,
+I can do it as much as I want to. I'm
+genuinely pretty impressed with that, to
+be fair. Because you've also got to
+think, if you're building this in
+Claude, like you're not able to actually
+naturally integrate, like design like
+that with any of the models. And let's
+be fair, they all have their own
+individual superpowers. Like the
+Avengers, right? Imagine if it was just
+the Hulk. Well, the Hulk's cool, but he
+can't fly and shoot lasers out of his
+eyes, right? So, we kind of want to mix
+and match based on our preferences. Then
+to take this one step further, you can
+also code completely to free yourself.
+I'll put the skill down below for free.
+It'll be in the communities. Just go
+ahead and grab that.
+All you're going to do is copy all this
+[12:00]
+stuff, then head back over to
+anti-gravity. So, all you're going to
+say to anti-gravity is, "Awesome. I'd
+now like to have a new CLI. Basically,
+using open router, use the below skill
+to set the sole up." So, I just want to
+be able to use a series of free models
+to do all of my design via the CLI. Just
+drop that in, and then you can just
+literally paste the entire thing in that
+you got from the skill, and then we're
+good to go. And this, of course, is
+using open code, which effectively lets
+you use any models that you want to it
+within one umbrella. It's very cool.
+I'll put a link on screen somewhere for
+you so you can see my full open code
+breakdown. So, you get a sense of just
+how epic that is. Now, my recommendation
+is that you always go paid,
+realistically, because again, it's just
+going to be way better. But you can do
+path A, which is free models, which is
+going to be like DeepSeekV3.1, etc. Or
+path B, which is going to be Sonic 4.7,
+different ones. Say for example, I just
+want to go down to that and I want to
+say, "Hey, do path A for me." Now, bear
+in mind, models like DeepSeekV4 are
+great. They're like a 1/100 of the cost
+for like 95% of the same performance.
+And in some categories, it even exceeds
+Anthropic models. So, these are just
+[13:00]
+some things for you to bear in mind. But
+if you're designing, generally speaking,
+initially, you want to lead on Opus. And
+obviously, at this point, we're just
+going to head to open router and grab
+our API key. Then, of course, go and
+grab your API key. You'll need at least
+$5 or $10. I recommend at least 10, even
+if you're using free models, because
+basically, it needs to validate you're
+not looking for some kind of like spam
+account. So, once you've done that,
+basically, open code will be available
+right here. You click on get started,
+and then we are ready to rock and roll,
+and you're connected to any of the
+models you connected in open code. And
+so, where does this leave us? Well,
+look, here's the thing, right? You've
+got two kind of like roots here. You've
+got the Anthropic path, so that could be
+$20 a month, $200 a month. I'm on the
+$200 a month plan. I find I didn't
+really get any more usage than the $20
+plan, actually. So, I run out pretty
+quickly. You're looking at a couple
+designs a week, uh again, Opus 4.7
+mainly, and there's a monthly cost. The
+open path is from $0. You can use things
+like ChatGPT in that, and any model that
+you literally want to. Now, what would I
+recommend? I don't recommend that you
+use free models in it. But, what I do
+recommend that you do is you build
+existing styles that you like using
+Opus. And then, once you've got that,
+[14:00]
+then deploy your ChatGPTs, deploy your
+Geminis, your other different models,
+DeepSeek, whatever you want to, to
+design as a scale, which you can then
+either deploy directly in Vercel and
+post, or you can pretty much do whatever
+you want to. And obviously, if you're
+doing production-grade stuff for
+clients, guys, always make sure that
+you're going to check that Codex, like
+ChatGPT 5.5, to review all the code as
+well, just to make sure that you're
+fully backed up. But again, initial
+design system Anthropic, which is why
+this is so freaking cool. So, quick tell
+there. What is it great for? It's great
+if you're an agency freelancer, you want
+to design
+commercially safe and be able to sell
+it. You're a multi-model operator,
+you're already paying for Claude Code,
+Codex, or Cursor. You're burning Claude
+designs a weekly cap, and you're like,
+"Jack, I just want more designs." Well,
+this is a great option. And you're
+building brand-specific work. Again, so
+many different design systems. Um when
+is it to skip? Um probably if you are
+very fresh. Well, look, if you've made
+it this far in the video, you're
+freaking killers. If it doesn't apply to
+you, but if you are speaking to you like
+dad, or your mate's older brother that
+[15:00]
+works at like IBM, and is very
+technophobic, you might be like, "Dude,
+just use, you know, Claude design for
+now, and get started with that." Um
+again, if you're doing this and you're
+happy with the UI, and you're happy with
+the limitation, that's cool, that's one
+thing. Um but ultimately, I think it's a
+really brilliant addition. The other
+caveat to bear in mind is that this
+repo, Open Design, is 12 days old. So,
+there are a couple of bugs picking up
+here and there. I didn't run into any
+personally, but just kind of, you know,
+give it some grace and mileage might
+vary a little bit. The guy seems to
+working really hard on it, but I think
+it's pretty cool. My favorite feature of
+the TV fat is the fact that I can port
+in chat GPT image generation and use any
+model I want to. I genuinely think that
+is really freaking cool. And so now
+you've got your own open design system
+locked down. Next thing that we need to
+do is learn how to bring in chat GPT and
+Gemini effortlessly when we're using
+Claude. So we always get the best model
+for a job which we're going to learn by
+watching this video right here.

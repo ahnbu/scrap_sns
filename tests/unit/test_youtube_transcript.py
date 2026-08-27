@@ -3,6 +3,9 @@
 계획서: _docs/20260825_02_유튜브-요약-파이프라인-재설계-구현계획(실행완료).md
 """
 
+import os
+import types
+
 import pytest
 
 import youtube_scrap as ys
@@ -277,3 +280,180 @@ def test_refresh_falls_back_to_cache_without_provider(tmp_path, monkeypatch):
     )
 
     assert (status, text) == ("ok", "옛 자막")
+
+
+# ------------------------------------------- 자막 언어 2단계 폴백 (2026-08-27)
+
+class _FakeRun:
+    """yt-dlp 호출을 가로채 언어 조합별 결과를 흉내낸다.
+
+    sub-langs 값을 키로 (생성할 vtt 파일명 목록, 출력 텍스트) 를 돌려준다.
+    호출 이력은 self.calls 에 순서대로 쌓인다.
+    """
+
+    def __init__(self, table):
+        self.table = table
+        self.calls = []
+
+    def __call__(self, command, **kwargs):
+        langs = command[command.index("--sub-langs") + 1]
+        out_template = command[command.index("-o") + 1]
+        scratch = os.path.dirname(out_template)
+        self.calls.append(langs)
+        files, output = self.table.get(langs, ([], ""))
+        os.makedirs(scratch, exist_ok=True)
+        for name in files:
+            with open(os.path.join(scratch, name), "w", encoding="utf-8") as handle:
+                handle.write(VTT_SAMPLE)
+        return types.SimpleNamespace(stdout=output, stderr="", returncode=0)
+
+
+def test_primary_request_asks_only_original_tracks(tmp_path, monkeypatch):
+    """1차는 -orig 만 부른다. ko 를 직접 부르면 번역 요청이 되어 429 를 맞는다."""
+    monkeypatch.setattr(ys, "TRANSCRIPT_DIR", str(tmp_path))
+    fake = _FakeRun({ys.TRANSCRIPT_LANG_PRIMARY: (["vid1.ko-orig.vtt"], "")})
+    monkeypatch.setattr(ys.subprocess, "run", fake)
+
+    status, text = ys.download_transcript("vid1", str(tmp_path / "_scratch"))
+
+    assert status == "ok"
+    assert text
+    assert fake.calls == [ys.TRANSCRIPT_LANG_PRIMARY]
+
+
+def test_english_video_is_recovered_by_original_track(tmp_path, monkeypatch):
+    """영어 원본 영상은 en-orig 로 내려온다. 예전에는 no_subtitle 로 잘못 굳었다."""
+    monkeypatch.setattr(ys, "TRANSCRIPT_DIR", str(tmp_path))
+    fake = _FakeRun({ys.TRANSCRIPT_LANG_PRIMARY: (["vid1.en-orig.vtt"], "")})
+    monkeypatch.setattr(ys.subprocess, "run", fake)
+
+    assert ys.download_transcript("vid1", str(tmp_path / "_scratch"))[0] == "ok"
+
+
+def test_fallback_runs_only_when_primary_is_empty(tmp_path, monkeypatch):
+    """-orig 가 없는 영상(수동 자막만)은 2차에서 잡는다."""
+    monkeypatch.setattr(ys, "TRANSCRIPT_DIR", str(tmp_path))
+    fake = _FakeRun({
+        ys.TRANSCRIPT_LANG_PRIMARY: ([], "has no automatic captions"),
+        ys.TRANSCRIPT_LANG_FALLBACK: (["vid1.en.vtt"], ""),
+    })
+    monkeypatch.setattr(ys.subprocess, "run", fake)
+
+    status, _ = ys.download_transcript("vid1", str(tmp_path / "_scratch"))
+
+    assert status == "ok"
+    assert fake.calls == [ys.TRANSCRIPT_LANG_PRIMARY, ys.TRANSCRIPT_LANG_FALLBACK]
+
+
+def test_no_subtitle_when_both_stages_are_empty(tmp_path, monkeypatch):
+    monkeypatch.setattr(ys, "TRANSCRIPT_DIR", str(tmp_path))
+    fake = _FakeRun({})
+    monkeypatch.setattr(ys.subprocess, "run", fake)
+
+    assert ys.download_transcript("vid1", str(tmp_path / "_scratch")) == ("no_subtitle", "")
+    assert len(fake.calls) == 2
+
+
+@pytest.mark.parametrize("message", [
+    "ERROR: [youtube] AmePj1SI6Z4: Join this channel to get access to members-only content like this video, and other exclusive perks.",
+    "ERROR: [youtube] 3fvglK7Czjg: This video is available to this channel's members on level: 서포터즈 (or any higher level).",
+])
+def test_members_only_is_detected_in_both_wordings(tmp_path, monkeypatch, message):
+    """두 문구 모두 잡아야 한다. members-only 만 보면 두 번째를 놓친다."""
+    monkeypatch.setattr(ys, "TRANSCRIPT_DIR", str(tmp_path))
+    fake = _FakeRun({ys.TRANSCRIPT_LANG_PRIMARY: ([], message)})
+    monkeypatch.setattr(ys.subprocess, "run", fake)
+
+    assert ys.download_transcript("vid1", str(tmp_path / "_scratch")) == ("members_only", "")
+
+
+def test_members_only_skips_the_fallback_call(tmp_path, monkeypatch):
+    """멤버십 결제 전에는 2차를 돌려도 같다. 헛호출을 하지 않는다."""
+    monkeypatch.setattr(ys, "TRANSCRIPT_DIR", str(tmp_path))
+    fake = _FakeRun({
+        ys.TRANSCRIPT_LANG_PRIMARY: ([], "ERROR: members-only content"),
+    })
+    monkeypatch.setattr(ys.subprocess, "run", fake)
+
+    ys.download_transcript("vid1", str(tmp_path / "_scratch"))
+
+    assert fake.calls == [ys.TRANSCRIPT_LANG_PRIMARY]
+
+
+def test_po_token_failure_still_reports_blocked(tmp_path, monkeypatch):
+    """provider 사고는 자막 없음이 아니다. 기존 판정을 유지한다."""
+    monkeypatch.setattr(ys, "TRANSCRIPT_DIR", str(tmp_path))
+    fake = _FakeRun({ys.TRANSCRIPT_LANG_PRIMARY: ([], "PO token is required")})
+    monkeypatch.setattr(ys.subprocess, "run", fake)
+
+    assert ys.download_transcript("vid1", str(tmp_path / "_scratch")) == ("blocked", "")
+
+
+def test_en_orig_is_in_language_priority():
+    """1차가 실제로 내려주는 파일명이라 우선순위 목록에 있어야 한다."""
+    assert "en-orig" in ys.SUBTITLE_LANG_PRIORITY
+    assert ys.SUBTITLE_LANG_PRIORITY.index("ko-orig") < ys.SUBTITLE_LANG_PRIORITY.index("en-orig")
+
+
+def test_pick_subtitle_file_prefers_korean_over_english_original():
+    produced = ["/x/vid1.en-orig.vtt", "/x/vid1.ko-orig.vtt"]
+    assert ys.pick_subtitle_file(produced, "vid1").endswith("ko-orig.vtt")
+
+
+# ------------------------------------------- 자막 재시도 대상 선정 (2026-08-27)
+
+@pytest.mark.parametrize("status,expected", [
+    ("no_subtitle", True),
+    ("failed", True),
+    ("blocked", True),
+    ("members_only", False),
+    ("ok", False),
+])
+def test_transcript_retry_targets(status, expected):
+    post = {"platform_id": "vid1", "transcript_status": status}
+    assert ys.needs_transcript_retry(post) is expected
+
+
+def test_members_only_never_returns_to_the_queue():
+    """결제 전에는 몇 번을 불러도 같은 답이라 매 실행 재질의하지 않는다."""
+    existing = {"vid1": {"platform_id": "vid1", "transcript_status": "members_only",
+                         "summary_status": "no_transcript"}}
+    new_ids, retry_ids = ys.select_update_targets({"vid1": {}}, existing)
+    assert (new_ids, retry_ids) == ([], [])
+
+
+def test_no_subtitle_is_picked_up_by_update_mode(tmp_path, monkeypatch):
+    """언어 폴백을 고쳐도 update 가 대상에 넣지 않으면 영원히 그대로다."""
+    monkeypatch.setattr(ys, "TRANSCRIPT_DIR", str(tmp_path))
+    existing = {"vid1": {"platform_id": "vid1", "transcript_status": "no_subtitle",
+                         "summary_status": "no_transcript"}}
+    new_ids, retry_ids = ys.select_update_targets({"vid1": {}}, existing)
+    assert (new_ids, retry_ids) == ([], ["vid1"])
+
+
+def test_transcript_retry_is_suppressed_by_skip_summaries(tmp_path, monkeypatch):
+    """요약을 건너뛰는 실행이 대상을 다시 쓰면 재시도 표시가 skipped 로 덮인다."""
+    monkeypatch.setattr(ys, "TRANSCRIPT_DIR", str(tmp_path))
+    existing = {"vid1": {"platform_id": "vid1", "transcript_status": "no_subtitle",
+                         "summary_status": "no_transcript"}}
+    _, retry_ids = ys.select_update_targets({"vid1": {}}, existing, allow_retry=False)
+    assert retry_ids == []
+
+
+def test_summary_and_transcript_retries_coexist(tmp_path, monkeypatch):
+    """두 재시도군이 한 실행에서 같이 잡혀야 319건이 한 번에 소진된다."""
+    monkeypatch.setattr(ys, "TRANSCRIPT_DIR", str(tmp_path))
+    (tmp_path / "vid_sum.txt").write_text("자막", encoding="utf-8")
+    existing = {
+        "vid_sum": {"platform_id": "vid_sum", "transcript_status": "ok",
+                    "summary_status": "deferred"},
+        "vid_tr": {"platform_id": "vid_tr", "transcript_status": "no_subtitle",
+                   "summary_status": "no_transcript"},
+        "vid_done": {"platform_id": "vid_done", "transcript_status": "ok",
+                     "summary_status": "ok"},
+    }
+    entries = {"vid_sum": {}, "vid_tr": {}, "vid_done": {}, "vid_new": {}}
+    new_ids, retry_ids = ys.select_update_targets(entries, existing)
+
+    assert new_ids == ["vid_new"]
+    assert set(retry_ids) == {"vid_sum", "vid_tr"}

@@ -1,0 +1,18 @@
+{
+    "video_id": "LbHzX_6SNN8",
+    "model": "gemini-3.7-flash-medium",
+    "prompt_version": "v2",
+    "prompt_sha1": "1a2446b042d7b917482477d5da5cda70874b56c5",
+    "generated_at": "2026-08-27 12:54:17",
+    "summary": "[요약] Claude Code /ultraplan으로 플래닝을 클라우드에 넘겨 터미널을 비우는 방법이다.\n\n- 기존 /plan과 달리 /ultraplan은 플래닝을 Anthropic 클라우드에 맡겨 터미널을 즉시 비웁니다.\n- 클라우드의 여러 서브 에이전트가 코드베이스를 동시에 분석하여 브라우저에서 완성된 플랜을 보여줍니다.\n- 브라우저 환경에서 플랜을 섹션별로 검토하고 코멘트를 달거나 수정을 요청할 수 있습니다.\n- Pro 이상 구독, Claude Code 버전 2.1.91 이상, GitHub 리포지토리 연결이 필요한 Research Preview 기능입니다.\n\n[상세]\n기존 /plan의 한계와 /ultraplan의 동작 방식\n기존 /plan 명령어는 터미널 안에서 실행되어 플래닝이 끝날 때까지 터미널을 점유하고 결과도 스크롤로만 확인해야 했습니다. 반면 /ultraplan을 사용하면 플래닝 작업이 Anthropic 클라우드로 넘어가 터미널을 즉시 비울 수 있습니다. 클라우드 상에서 여러 서브 에이전트가 코드베이스를 동시에 분석해 플랜을 작성합니다. 완성된 결과물은 브라우저 인터페이스에서 섹션별로 코멘트를 남기거나 수정을 요청하며 검토할 수 있습니다.\n\n지원 환경 및 권장 활용 작업\n현재 이 기능은 Research Preview 상태로 제공되고 있습니다. 사용을 위해서는 Pro 이상 구독, Claude Code 버전 2.1.91 이상, GitHub 리포지토리 연결이 필요합니다. 복잡한 마이그레이션이나 대규모 리팩터링처럼 플래닝에 시간이 많이 소요되는 작업에 적합합니다. 세부적인 안내는 공식 웹사이트의 문서를 통해 확인할 수 있습니다.",
+    "transcript_sha1": "77958b0631c7ef9bb54b4046c6a8ebbf8effa177",
+    "usage": {
+        "input_tokens": 21329,
+        "output_tokens": 1501,
+        "thinking_tokens": 1103,
+        "cache_read_tokens": 0,
+        "total_tokens": 22830
+    },
+    "duration_seconds": 5.0640291,
+    "agy_conversation_id": "91e72526-c8f2-4da6-a2fc-fab5d4aa29e4"
+}

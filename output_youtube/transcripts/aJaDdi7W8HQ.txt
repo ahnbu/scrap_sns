@@ -1,0 +1,42 @@
+[00:00]
+If you're using Claude code to build
+websites and custom applications, but
+you didn't know that you can create
+custom automations through the GitHub
+repos themselves, then you're probably
+still using NAN and I feel sorry for
+you. Every time I post a new long-form
+video on YouTube, it'll then
+automatically transcribe the video and
+create a custom SEO enriched blog post
+for my website. And it's not just a copy
+of my transcription. It has all my
+special keywords, [music] it links back
+to my YouTube, and it even speaks in my
+voice. And the coolest part is this is
+free traffic from Google and other AI
+search engines. So now I'm stacking
+social media traffic as well as Google
+and AI traffic. And it's actually pretty
+easy to set these automations up. The
+first thing you want to do is find the
+website or application and just copy the
+path. Give Claude the path as well as
+the workflow idea. And then Claude will
+go ahead and actually build out the
+script and push it to your GitHub repo.
+And I made sure that Claude actually
+pulled my humanizer skill, my blog
+[01:00]
+rules, and my SEO rules into the repo
+itself. So now every time this workflow
+runs, it'll take the video's thumbnail
+and its transcription and then write the
+blog post and post it for me
+automatically. And I have it set on a
+time-sensitive trigger, so it can see if
+there are any new videos that it needs
+to do this workflow for. If you guys
+found this useful, follow your boy for
+more, and comment AI agent below for the
+full playbook.
