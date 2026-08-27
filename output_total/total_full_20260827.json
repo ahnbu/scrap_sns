@@ -1,9 +1,9 @@
 ﻿{
     "metadata": {
-        "updated_at": "2026-08-27T13:24:19.835524",
-        "max_sequence_id": 2522,
-        "total_count": 2522,
-        "threads_count": 1274,
+        "updated_at": "2026-08-27T13:56:09.771069",
+        "max_sequence_id": 2554,
+        "total_count": 2554,
+        "threads_count": 1314,
         "linkedin_count": 698,
         "twitter_count": 95,
         "youtube_count": 460,
@@ -8887,7 +8887,6 @@
             "view_count": "28351",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-02-18 11:07:04",
             "platform_sequence_id": 1
         },
         {
@@ -8912,7 +8911,6 @@
             "view_count": "122106",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-02-18 11:06:51",
             "platform_sequence_id": 2
         },
         {
@@ -8961,7 +8959,6 @@
             "view_count": "3510",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-02-18 11:06:26",
             "platform_sequence_id": 4
         },
         {
@@ -8989,7 +8986,6 @@
             "view_count": "50334",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-02-18 11:06:14",
             "platform_sequence_id": 5
         },
         {
@@ -9012,7 +9008,6 @@
             "view_count": "168839",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-02-18 11:06:00",
             "platform_sequence_id": 6
         },
         {
@@ -9037,7 +9032,6 @@
             "view_count": "76670",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-02-18 11:05:49",
             "platform_sequence_id": 7
         },
         {
@@ -9087,7 +9081,6 @@
             "view_count": "86118",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-02-18 11:05:23",
             "platform_sequence_id": 9
         },
         {
@@ -9112,7 +9105,6 @@
             "view_count": "733243",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-02-18 11:05:11",
             "platform_sequence_id": 10
         },
         {
@@ -9137,7 +9129,6 @@
             "view_count": "483365",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-02-18 11:04:59",
             "platform_sequence_id": 11
         },
         {
@@ -9162,7 +9153,6 @@
             "view_count": "1880187",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-02-18 11:04:47",
             "platform_sequence_id": 12
         },
         {
@@ -9187,7 +9177,6 @@
             "view_count": "706658",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-02-18 11:04:35",
             "platform_sequence_id": 13
         },
         {
@@ -9212,7 +9201,6 @@
             "view_count": "37746",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-02-18 11:04:23",
             "platform_sequence_id": 14
         },
         {
@@ -9235,7 +9223,6 @@
             "view_count": "7478",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-02-18 11:04:11",
             "platform_sequence_id": 15
         },
         {
@@ -9260,7 +9247,6 @@
             "view_count": "72696",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-02-18 11:03:59",
             "platform_sequence_id": 16
         },
         {
@@ -9285,7 +9271,6 @@
             "view_count": "6601",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-02-18 11:03:47",
             "platform_sequence_id": 17
         },
         {
@@ -9310,7 +9295,6 @@
             "view_count": "41720",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-02-18 11:03:34",
             "platform_sequence_id": 18
         },
         {
@@ -9335,7 +9319,6 @@
             "view_count": "86093",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-02-18 11:03:22",
             "platform_sequence_id": 19
         },
         {
@@ -9360,7 +9343,6 @@
             "view_count": "79665",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-02-18 11:03:10",
             "platform_sequence_id": 20
         },
         {
@@ -9386,7 +9368,6 @@
             "view_count": "28019",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-02-18 11:02:56",
             "platform_sequence_id": 21
         },
         {
@@ -9411,7 +9392,6 @@
             "view_count": "30874",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-02-18 11:02:44",
             "platform_sequence_id": 22
         },
         {
@@ -9438,7 +9418,6 @@
             "view_count": "36902",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-02-18 11:02:32",
             "platform_sequence_id": 23
         },
         {
@@ -9463,7 +9442,6 @@
             "view_count": "231853",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-02-18 11:02:19",
             "platform_sequence_id": 24
         },
         {
@@ -9486,7 +9464,6 @@
             "view_count": "327352",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-02-18 11:02:07",
             "platform_sequence_id": 25
         },
         {
@@ -9511,7 +9488,6 @@
             "view_count": "158515",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-02-18 11:01:55",
             "platform_sequence_id": 26
         },
         {
@@ -9536,7 +9512,6 @@
             "view_count": "125606",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-02-18 11:01:43",
             "platform_sequence_id": 27
         },
         {
@@ -9564,7 +9539,6 @@
             "view_count": "6766",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-02-18 11:01:31",
             "platform_sequence_id": 28
         },
         {
@@ -9589,7 +9563,6 @@
             "view_count": "143066",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-02-18 11:01:13",
             "platform_sequence_id": 29
         },
         {
@@ -9612,7 +9585,6 @@
             "view_count": "14485",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-02-18 11:00:53",
             "platform_sequence_id": 30
         },
         {
@@ -9637,7 +9609,6 @@
             "view_count": "57694",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-02-18 11:00:27",
             "platform_sequence_id": 31
         },
         {
@@ -9662,7 +9633,6 @@
             "view_count": "84504",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-02-12 19:39:34",
             "platform_sequence_id": 32
         },
         {
@@ -9687,7 +9657,6 @@
             "view_count": "665418",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-02-12 19:39:24",
             "platform_sequence_id": 33
         },
         {
@@ -9712,7 +9681,6 @@
             "view_count": "183594",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-02-12 19:39:13",
             "platform_sequence_id": 34
         },
         {
@@ -10216,7 +10184,6 @@
             "view_count": "25074",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-02-18 11:00:09",
             "platform_sequence_id": 35
         },
         {
@@ -10266,7 +10233,6 @@
             "view_count": "102467",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-02-18 10:59:44",
             "platform_sequence_id": 37
         },
         {
@@ -12213,7 +12179,6 @@
             "view_count": "53706",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-04-11 17:27:24",
             "platform_sequence_id": 44
         },
         {
@@ -12238,7 +12203,6 @@
             "view_count": "59213",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-04-11 17:27:11",
             "platform_sequence_id": 45
         },
         {
@@ -12336,7 +12300,6 @@
             "view_count": "11451",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-04-11 17:26:20",
             "platform_sequence_id": 49
         },
         {
@@ -12362,7 +12325,6 @@
             "view_count": "191714",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-04-11 17:26:06",
             "platform_sequence_id": 50
         },
         {
@@ -12387,7 +12349,6 @@
             "view_count": "22239",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-04-11 17:25:53",
             "platform_sequence_id": 51
         },
         {
@@ -12412,7 +12373,6 @@
             "view_count": "73780",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-04-11 17:25:40",
             "platform_sequence_id": 52
         },
         {
@@ -12439,7 +12399,6 @@
             "view_count": "21320",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-04-11 17:25:27",
             "platform_sequence_id": 53
         },
         {
@@ -12467,7 +12426,6 @@
             "view_count": "69097",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-04-11 17:25:11",
             "platform_sequence_id": 54
         },
         {
@@ -12495,7 +12453,6 @@
             "view_count": "27551",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-04-11 17:24:59",
             "platform_sequence_id": 55
         },
         {
@@ -12518,7 +12475,6 @@
             "view_count": "24254",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-04-11 17:24:47",
             "platform_sequence_id": 56
         },
         {
@@ -12543,7 +12499,6 @@
             "view_count": "11101",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-04-11 17:24:35",
             "platform_sequence_id": 57
         },
         {
@@ -12568,7 +12523,6 @@
             "view_count": "43150",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-04-11 17:24:23",
             "platform_sequence_id": 58
         },
         {
@@ -12613,7 +12567,6 @@
             "view_count": "1579",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-04-11 17:23:58",
             "platform_sequence_id": 60
         },
         {
@@ -12636,7 +12589,6 @@
             "view_count": "43379",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-04-11 17:23:45",
             "platform_sequence_id": 61
         },
         {
@@ -12661,7 +12613,6 @@
             "view_count": "136420",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-04-11 17:23:33",
             "platform_sequence_id": 62
         },
         {
@@ -12878,7 +12829,6 @@
             "view_count": "17012",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-04-11 17:23:21",
             "platform_sequence_id": 63
         },
         {
@@ -12905,7 +12855,6 @@
             "view_count": "354553",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-04-11 17:23:08",
             "platform_sequence_id": 64
         },
         {
@@ -12930,7 +12879,6 @@
             "view_count": "58617",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-04-11 17:22:58",
             "platform_sequence_id": 65
         },
         {
@@ -12955,7 +12903,6 @@
             "view_count": "67996",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-04-11 17:22:46",
             "platform_sequence_id": 66
         },
         {
@@ -24823,7 +24770,6 @@
             "view_count": "737",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-04-11 17:21:27",
             "platform_sequence_id": 73
         },
         {
@@ -24846,7 +24792,6 @@
             "view_count": "148",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-04-11 17:21:16",
             "platform_sequence_id": 74
         },
         {
@@ -24869,7 +24814,6 @@
             "view_count": "22255",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-04-11 17:21:04",
             "platform_sequence_id": 75
         },
         {
@@ -24914,7 +24858,6 @@
             "view_count": "6988869",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-04-11 17:20:42",
             "platform_sequence_id": 77
         },
         {
@@ -24937,7 +24880,6 @@
             "view_count": "2515342",
             "source": "network",
             "is_detail_collected": true,
-            "timestamp": "2026-04-11 17:20:32",
             "platform_sequence_id": 78
         },
         {
@@ -28911,14 +28853,14 @@
             "url": "https://www.youtube.com/watch?v=dRknHajPOP4",
             "created_at": "2026-04-10 17:21:55",
             "date": "2026-04-10",
-            "crawled_at": "2026-08-27 13:23:58",
+            "crawled_at": "2026-08-27 13:55:33",
             "like_count": 404,
             "comment_count": 3,
             "share_count": null,
             "quote_count": null,
             "bookmark_count": null,
             "view_count": 19348,
-            "metrics_updated_at": "2026-08-27 13:23:58",
+            "metrics_updated_at": "2026-08-27 13:55:33",
             "source": "기획new",
             "local_images": [
                 "web_viewer/images/cf98038cc7ce4a24ff669e20f73a32df.jpg"
@@ -50794,14 +50736,14 @@
             "url": "https://www.youtube.com/watch?v=KWBYZHZaPd8",
             "created_at": "2026-05-10 02:13:38",
             "date": "2026-05-10",
-            "crawled_at": "2026-08-27 13:23:58",
+            "crawled_at": "2026-08-27 13:55:33",
             "like_count": 13,
             "comment_count": 0,
             "share_count": null,
             "quote_count": null,
             "bookmark_count": null,
             "view_count": 1541,
-            "metrics_updated_at": "2026-08-27 13:23:58",
+            "metrics_updated_at": "2026-08-27 13:55:33",
             "source": "ai.new2",
             "local_images": [
                 "web_viewer/images/ec82a1ccfd9fdefb8f271646c4e27f34.jpg"
@@ -52055,14 +51997,14 @@
             "url": "https://www.youtube.com/watch?v=3zTzIZi32vI",
             "created_at": "2022-02-14 22:32:28",
             "date": "2022-02-14",
-            "crawled_at": "2026-08-27 13:23:58",
+            "crawled_at": "2026-08-27 13:55:33",
             "like_count": 270,
             "comment_count": null,
             "share_count": null,
             "quote_count": null,
             "bookmark_count": null,
             "view_count": 16545,
-            "metrics_updated_at": "2026-08-27 13:23:58",
+            "metrics_updated_at": "2026-08-27 13:55:33",
             "source": "기획new",
             "local_images": [
                 "web_viewer/images/2c71cc005c0f8197e7cc88caabde6679.jpg"
@@ -52163,14 +52105,14 @@
             "url": "https://www.youtube.com/watch?v=0jp2xA5sLRY",
             "created_at": "2024-09-05 17:45:17",
             "date": "2024-09-05",
-            "crawled_at": "2026-08-27 13:23:58",
+            "crawled_at": "2026-08-27 13:55:33",
             "like_count": null,
             "comment_count": 0,
             "share_count": null,
             "quote_count": null,
             "bookmark_count": null,
             "view_count": 246,
-            "metrics_updated_at": "2026-08-27 13:23:58",
+            "metrics_updated_at": "2026-08-27 13:55:33",
             "source": "drive7",
             "local_images": [],
             "is_detail_collected": true,
@@ -52206,7 +52148,7 @@
             "quote_count": null,
             "bookmark_count": null,
             "view_count": 603,
-            "metrics_updated_at": "2026-08-27 13:24:00",
+            "metrics_updated_at": "2026-08-27 13:55:33",
             "source": "drive7",
             "local_images": [],
             "is_detail_collected": true,
@@ -53084,7 +53026,7 @@
             "urn": "",
             "username": "빌더 조쉬 Builder Josh",
             "display_name": "빌더 조쉬 Builder Josh",
-            "full_text": "Codex가 최고라는 소문 직접 검증합니다, 세팅부터 실전 앱 개발까지 전 과정 공개 (feat. OpenAI)\n────────────────\n[요약] OpenAI Codex CLI 환경 세팅부터 bkit과 goal 기능을 활용한 실전 앱 개발 및 배포 전 과정을 다룬다.\n\n- Codex CLI의 패스트 모드와 전체 접근 권한 설정으로 개발 편의성과 작업 속도를 높인다.\n- 4단계 사전 기획 및 설계 문서 구축을 통해 바이브 코딩 시 발생하는 오류를 최소화한다.\n- bkit 플러그인의 PDCA 방법론을 적용해 사내 휴가 등록 ERP 시스템을 안정적으로 구현한다.\n- OpenAI API와 /goal 기능을 활용해 482초 만에 실시간 회의록 전사 앱을 완성하고 Vercel에 배포한다.\n\n[상세]\nCodex CLI 환경과 초기 세팅\n터미널에서 한 줄의 npm 명령어로 Codex CLI를 간편하게 설치하고 실행할 수 있습니다. 토큰을 1.5배 더 소모하여 작업 속도를 높이는 패스트 모드와 승인 절차를 생략하는 풀 액세스 모드를 설정합니다. 복잡한 개발 지식 없이도 직관적인 CLI 인터페이스를 통해 효율적인 코딩 환경을 구축합니다.\n\n플러그인 생태계와 디자인 시스템 구축\nCodex 앱을 통해 노션, 슬랙, 피그마 등의 플러그인을 손쉽게 탐색하고 연동할 수 있습니다. getdesign.md와 같은 사이트에서 디자인 시스템을 가져와 DESIGN.md 파일을 작성하면 고도화된 UI를 제작할 수 있습니다. 또한 재사용 가능한 워크플로우인 스킬을 활용하여 토큰 소모를 줄이고 이미지 생성이나 프레젠테이션 제작을 자동화합니다.\n\nbkit 기반 사내 휴가 등록 ERP 시스템 구현\n성공적인 바이브 코딩을 위해 Plan, Design, DESIGN.md, AGENTS.md의 4단계 문서를 사전에 작성합니다. bkit 플러그인의 PDCA 방법론을 따라 143줄의 상위 기획서와 360줄의 상세 설계서를 체계적으로 구축합니다. 사전 설계가 완료된 후 Do 명령을 실행하여 잔여 연차 확인과 휴가 신청 및 승인 대기 기능이 포함된 ERP 화면을 오류 없이 완성합니다.\n\n/goal 기능을 활용한 실시간 회의록 전사 앱 제작 및 배포\nOpenAI API 키를 .env 파일에 연동하고 config.toml에서 목표 완수를 돕는 /goal 기능을 활성화합니다. 음성 녹음과 전사 기능 구현 중 발생한 오류를 Codex가 자체 재검증과 수정을 거쳐 해결하도록 유도합니다. 482초 만에 ElevenLabs 스타일의 UI를 갖춘 회의록 전사 앱을 완성하고 로컬 환경을 넘어 Vercel에 성공적으로 최종 배포합니다.\n<!-- GOAL_COMPLETE -->\n\n[설명]\n✨ 궁금하신 분들은 코덱스 직접 써보세요:\n(26.05.13 라이브 편집본)\n🤖 Codex 활용 바이브 코딩 리뷰 — 세팅, 스킬, 자동화, 실전 앱 개발까지\n최근 대세로 떠오른 코딩 도구 Codex를 활용하여 비개발자도 쉽게 따라 할 수 있는 바이브 코딩 가이드를 소개합니다. 터미널 기반의 기초 세팅부터 YOLO 모드 설정, 그리고 이미지 생성 모델을 활용한 디자인 고도화까지 한눈에 확인하실 수 있습니다. 특히 bkit 플러그인을 활용한 사내 휴가 등록 ERP 시스템 구축과 OpenAI API 연동을 통한 실시간 미팅 회의록 전사 앱 제작 과정을 상세히 다룹니다.\n⏱️ 타임스탬프 (Timestamps)\n🔑 핵심 요점 (Key Points)\n1. Codex는 뛰어난 토큰 효율성을 자랑하며 CLI 환경에서 파워풀한 코딩 경험을 제공합니다.\n2. /goal 기능을 활성화하면 AI가 목표 설정부터 검증 및 Vercel 배포까지 스스로 진행합니다.\n3. 바이브 코딩의 핵심은 무작정 코딩을 시작하는 것이 아니라 상위 기획서(Plan), 상세 기획서(Design), 스타일 가이드(DESIGN.md), 시스템 규칙(AGENTS.md)의 4단계 문서를 먼저 탄탄하게 구축하는 것입니다.\n4. bkit 플러그인을 활용해 PDCA 순환 구조를 만들면 에러를 최소화하고 밀도 높은 완성작을 얻을 수 있습니다.\n5. 개발 지식이 부족한 비개발자도 AI 도구와 API 연동을 적절히 조합하면 상상하는 서비스를 직접 배포하고 운영할 수 있는 시대가 되었습니다.\n📝 세부 내용 요약 (Section Summaries)\n■ Codex CLI 특징과 초기 세팅 방법\n최근 개발자들 사이에서 큰 인기를 끌고 있는 OpenAI 기반 코딩 도구 Codex의 주요 기능과 강점을 소개합니다. Codex는 토큰 효율 면에서 큰 강점을 가지며 터미널을 통해 간편하게 실행할 수 있습니다. 비개발자에게는 다소 낯설 수 있는 터미널 창을 열고 NPM 명령어를 통해 Codex CLI를 단 한 줄로 설치하는 과정을 보여줍니다. 또한 매번 승인을 요구하는 번거로움을 줄이기 위해 Full Access 권한을 부여하는 일명 YOLO 모드 설정법과 토큰을 더 소모하더라도 작업 속도를 높이는 패스트 모드 설정법을 안내합니다.\n■ 플러그인 생태계와 디자인 시스템 문서 활용\nCodex CLI 환경의 한계를 보완해 주는 직관적인 Codex 앱과 플러그인 생태계를 탐색합니다. 노션, 슬랙, 지메일 요약뿐만 아니라 디자이너들이 애용하는 피그마 플러그인을 연동하여 간단한 명령만으로 랜딩 페이지 시안이나 카드 뉴스를 뚝딱 만들어내는 모습을 시연합니다. 특히 전 세계 대기업들의 디자인 자산을 모아둔 getdesign.md나 국내 디자인 시스템을 활용해 DESIGN.md 문서를 생성하고 이를 참조 시켜 무미건조한 레이아웃을 완성도 높은 비주얼로 고도화하는 핵심 디자인 꿀팁을 전수합니다.\n■ bkit 기반 사내 휴가 등록 ERP 구축 (바이브 코딩)\n본격적인 바이브 코딩 세션에서는 bkit 플러그인을 도입하여 계획적인 개발 프로세스를 구축합니다. 성공적인 바이브 코딩을 위해서는 단순한 지시보다 사전에 상세한 계획 문서를 작성하는 것이 우월합니다. PDCA 방법론에 따라 상위 기획서인 Plan 문서를 뽑아내고 300줄이 넘는 상세 설계 기획서를 차례로 빌드합니다. 이후 프로젝트의 척추 역할을 하는 AGENTS.md 파일에 한글로 시스템 지침과 맥락을 입력합니다. 기초 하네스 세팅이 완료된 상태에서 Do 명령을 내리자 임직원 잔여 연차 확인 및 신청, 승인 대기 기능이 포함된 ERP 화면이 에러 없이 구현됩니다.\n■ /goal 기능을 적용한 실시간 회의록 앱 전사 및 최종 배포\n두 번째 프로덕트로 OpenAI API 키를 env 파일에 연동하여 마이크 음성을 실시간으로 텍스트로 바꿔주는 미팅 회의록 앱을 제작합니다. 이번 단계에서는 특별히 수동 제어 대신 목표만 던지면 끝까지 검증하는 /goal 기능을 활용합니다. 시연 도중 API 호출 주소 문제로 UI가 깨지거나 전사 실패가 뜨는 시연의 저주를 겪기도 하지만 Codex에게 재배포 및 재검증 지시를 내려 스스로 에러를 해결하도록 유도합니다. 결국 482초 만에 완벽한 전사 기능과 깔끔한 일레븐랩스 스타일의 UI를 갖춘 앱을 완성하고 로컬 호스트를 넘어 Vercel 프로덕션 환경에 최종 배포된 URL까지 성공적으로 확보합니다.\n----\n[조쉬의 뉴스레터 및 소셜 미디어]\n🗞️ 조쉬의 뉴스레터 (1만명 이상 구독 중)\n뉴스레터를 구독하고, 가장 빨리 AI 인사이트를 받아보세요!\n🔗 소셜 미디어 (도합 3만 이상)\nThreads:\nLinkedIn:\n🚀 ASC 모집 (연간 멤버십 프로그램)\n조쉬의 '실행' 중심 연간 멤버십 프로그램 모집 정보를 확인하세요!\n\n[타임라인]\n0:00 - 하이라이트 및 라이브 소개\n0:44 - Codex의 대세 기능 및 /goal 기능 소개\n1:44 - 터미널을 통한 Codex CLI 설치 및 초기 세팅 방법\n2:26 - YOLO 모드 및 권한 설정 꿀팁\n3:05 - Codex 앱과 다양한 플러그인 탐색 (피그마, 지메일 등)\n4:13 - bkit 플러그인을 활용한 PDCA 방법론과 문서화의 중요성\n5:24 - 이미지 스킬 및 프레젠테이션 스킬을 활용한 PPT 자동 생성\n6:13 - DESIGN.md를 활용한 피그마 랜딩 페이지 디자인 고도화\n7:03 - 바이브 코딩 파트 1: 회사 휴가 등록 ERP 시스템 구현 및 Vercel 배포\n8:20 - AGENTS.md 시스템 가이드라인 문서 작성법\n8:53 - 바이브 코딩 파트 2: /goal 기능을 활용한 실시간 미팅 기록 앱 제작\n10:03 - 음성 전사 API 연동 테스트 및 최종 URL 배포 확인",
+            "full_text": "Codex가 최고라는 소문 직접 검증합니다, 세팅부터 실전 앱 개발까지 전 과정 공개 (feat. OpenAI)\n────────────────\n[요약] OpenAI Codex CLI 환경 세팅부터 bkit과 goal 기능을 활용한 실전 앱 개발 및 배포 전 과정을 다룬다.\n\n- Codex CLI의 패스트 모드와 전체 접근 권한 설정으로 개발 편의성과 작업 속도를 높인다.\n- 4단계 사전 기획 및 설계 문서 구축을 통해 바이브 코딩 시 발생하는 오류를 최소화한다.\n- bkit 플러그인의 PDCA 방법론을 적용해 사내 휴가 등록 ERP 시스템을 안정적으로 구현한다.\n- OpenAI API와 /goal 기능을 활용해 482초 만에 실시간 회의록 전사 앱을 완성하고 Vercel에 배포한다.\n\n[상세]\nCodex CLI 환경과 초기 세팅\n터미널에서 한 줄의 npm 명령어로 Codex CLI를 간편하게 설치하고 실행할 수 있습니다. 토큰을 1.5배 더 소모하여 작업 속도를 높이는 패스트 모드와 승인 절차를 생략하는 풀 액세스 모드를 설정합니다. 복잡한 개발 지식 없이도 직관적인 CLI 인터페이스를 통해 효율적인 코딩 환경을 구축합니다.\n\n플러그인 생태계와 디자인 시스템 구축\nCodex 앱을 통해 노션, 슬랙, 피그마 등의 플러그인을 손쉽게 탐색하고 연동할 수 있습니다. getdesign.md와 같은 사이트에서 디자인 시스템을 가져와 DESIGN.md 파일을 작성하면 고도화된 UI를 제작할 수 있습니다. 또한 재사용 가능한 워크플로우인 스킬을 활용하여 토큰 소모를 줄이고 이미지 생성이나 프레젠테이션 제작을 자동화합니다.\n\nbkit 기반 사내 휴가 등록 ERP 시스템 구현\n성공적인 바이브 코딩을 위해 Plan, Design, DESIGN.md, AGENTS.md의 4단계 문서를 사전에 작성합니다. bkit 플러그인의 PDCA 방법론을 따라 143줄의 상위 기획서와 360줄의 상세 설계서를 체계적으로 구축합니다. 사전 설계가 완료된 후 Do 명령을 실행하여 잔여 연차 확인과 휴가 신청 및 승인 대기 기능이 포함된 ERP 화면을 오류 없이 완성합니다.\n\n/goal 기능을 활용한 실시간 회의록 전사 앱 제작 및 배포\nOpenAI API 키를 .env 파일에 연동하고 config.toml에서 목표 완수를 돕는 /goal 기능을 활성화합니다. 음성 녹음과 전사 기능 구현 중 발생한 오류를 Codex가 자체 재검증과 수정을 거쳐 해결하도록 유도합니다. 482초 만에 ElevenLabs 스타일의 UI를 갖춘 회의록 전사 앱을 완성하고 로컬 환경을 넘어 Vercel에 성공적으로 최종 배포합니다.\n\n[설명]\n✨ 궁금하신 분들은 코덱스 직접 써보세요:\n(26.05.13 라이브 편집본)\n🤖 Codex 활용 바이브 코딩 리뷰 — 세팅, 스킬, 자동화, 실전 앱 개발까지\n최근 대세로 떠오른 코딩 도구 Codex를 활용하여 비개발자도 쉽게 따라 할 수 있는 바이브 코딩 가이드를 소개합니다. 터미널 기반의 기초 세팅부터 YOLO 모드 설정, 그리고 이미지 생성 모델을 활용한 디자인 고도화까지 한눈에 확인하실 수 있습니다. 특히 bkit 플러그인을 활용한 사내 휴가 등록 ERP 시스템 구축과 OpenAI API 연동을 통한 실시간 미팅 회의록 전사 앱 제작 과정을 상세히 다룹니다.\n⏱️ 타임스탬프 (Timestamps)\n🔑 핵심 요점 (Key Points)\n1. Codex는 뛰어난 토큰 효율성을 자랑하며 CLI 환경에서 파워풀한 코딩 경험을 제공합니다.\n2. /goal 기능을 활성화하면 AI가 목표 설정부터 검증 및 Vercel 배포까지 스스로 진행합니다.\n3. 바이브 코딩의 핵심은 무작정 코딩을 시작하는 것이 아니라 상위 기획서(Plan), 상세 기획서(Design), 스타일 가이드(DESIGN.md), 시스템 규칙(AGENTS.md)의 4단계 문서를 먼저 탄탄하게 구축하는 것입니다.\n4. bkit 플러그인을 활용해 PDCA 순환 구조를 만들면 에러를 최소화하고 밀도 높은 완성작을 얻을 수 있습니다.\n5. 개발 지식이 부족한 비개발자도 AI 도구와 API 연동을 적절히 조합하면 상상하는 서비스를 직접 배포하고 운영할 수 있는 시대가 되었습니다.\n📝 세부 내용 요약 (Section Summaries)\n■ Codex CLI 특징과 초기 세팅 방법\n최근 개발자들 사이에서 큰 인기를 끌고 있는 OpenAI 기반 코딩 도구 Codex의 주요 기능과 강점을 소개합니다. Codex는 토큰 효율 면에서 큰 강점을 가지며 터미널을 통해 간편하게 실행할 수 있습니다. 비개발자에게는 다소 낯설 수 있는 터미널 창을 열고 NPM 명령어를 통해 Codex CLI를 단 한 줄로 설치하는 과정을 보여줍니다. 또한 매번 승인을 요구하는 번거로움을 줄이기 위해 Full Access 권한을 부여하는 일명 YOLO 모드 설정법과 토큰을 더 소모하더라도 작업 속도를 높이는 패스트 모드 설정법을 안내합니다.\n■ 플러그인 생태계와 디자인 시스템 문서 활용\nCodex CLI 환경의 한계를 보완해 주는 직관적인 Codex 앱과 플러그인 생태계를 탐색합니다. 노션, 슬랙, 지메일 요약뿐만 아니라 디자이너들이 애용하는 피그마 플러그인을 연동하여 간단한 명령만으로 랜딩 페이지 시안이나 카드 뉴스를 뚝딱 만들어내는 모습을 시연합니다. 특히 전 세계 대기업들의 디자인 자산을 모아둔 getdesign.md나 국내 디자인 시스템을 활용해 DESIGN.md 문서를 생성하고 이를 참조 시켜 무미건조한 레이아웃을 완성도 높은 비주얼로 고도화하는 핵심 디자인 꿀팁을 전수합니다.\n■ bkit 기반 사내 휴가 등록 ERP 구축 (바이브 코딩)\n본격적인 바이브 코딩 세션에서는 bkit 플러그인을 도입하여 계획적인 개발 프로세스를 구축합니다. 성공적인 바이브 코딩을 위해서는 단순한 지시보다 사전에 상세한 계획 문서를 작성하는 것이 우월합니다. PDCA 방법론에 따라 상위 기획서인 Plan 문서를 뽑아내고 300줄이 넘는 상세 설계 기획서를 차례로 빌드합니다. 이후 프로젝트의 척추 역할을 하는 AGENTS.md 파일에 한글로 시스템 지침과 맥락을 입력합니다. 기초 하네스 세팅이 완료된 상태에서 Do 명령을 내리자 임직원 잔여 연차 확인 및 신청, 승인 대기 기능이 포함된 ERP 화면이 에러 없이 구현됩니다.\n■ /goal 기능을 적용한 실시간 회의록 앱 전사 및 최종 배포\n두 번째 프로덕트로 OpenAI API 키를 env 파일에 연동하여 마이크 음성을 실시간으로 텍스트로 바꿔주는 미팅 회의록 앱을 제작합니다. 이번 단계에서는 특별히 수동 제어 대신 목표만 던지면 끝까지 검증하는 /goal 기능을 활용합니다. 시연 도중 API 호출 주소 문제로 UI가 깨지거나 전사 실패가 뜨는 시연의 저주를 겪기도 하지만 Codex에게 재배포 및 재검증 지시를 내려 스스로 에러를 해결하도록 유도합니다. 결국 482초 만에 완벽한 전사 기능과 깔끔한 일레븐랩스 스타일의 UI를 갖춘 앱을 완성하고 로컬 호스트를 넘어 Vercel 프로덕션 환경에 최종 배포된 URL까지 성공적으로 확보합니다.\n----\n[조쉬의 뉴스레터 및 소셜 미디어]\n🗞️ 조쉬의 뉴스레터 (1만명 이상 구독 중)\n뉴스레터를 구독하고, 가장 빨리 AI 인사이트를 받아보세요!\n🔗 소셜 미디어 (도합 3만 이상)\nThreads:\nLinkedIn:\n🚀 ASC 모집 (연간 멤버십 프로그램)\n조쉬의 '실행' 중심 연간 멤버십 프로그램 모집 정보를 확인하세요!\n\n[타임라인]\n0:00 - 하이라이트 및 라이브 소개\n0:44 - Codex의 대세 기능 및 /goal 기능 소개\n1:44 - 터미널을 통한 Codex CLI 설치 및 초기 세팅 방법\n2:26 - YOLO 모드 및 권한 설정 꿀팁\n3:05 - Codex 앱과 다양한 플러그인 탐색 (피그마, 지메일 등)\n4:13 - bkit 플러그인을 활용한 PDCA 방법론과 문서화의 중요성\n5:24 - 이미지 스킬 및 프레젠테이션 스킬을 활용한 PPT 자동 생성\n6:13 - DESIGN.md를 활용한 피그마 랜딩 페이지 디자인 고도화\n7:03 - 바이브 코딩 파트 1: 회사 휴가 등록 ERP 시스템 구현 및 Vercel 배포\n8:20 - AGENTS.md 시스템 가이드라인 문서 작성법\n8:53 - 바이브 코딩 파트 2: /goal 기능을 활용한 실시간 미팅 기록 앱 제작\n10:03 - 음성 전사 API 연동 테스트 및 최종 URL 배포 확인",
             "media": [
                 "https://i.ytimg.com/vi/ZDfNfEGo7Fc/maxresdefault.jpg"
             ],
@@ -56497,7 +56439,7 @@
             "urn": "",
             "username": "시민개발자 구씨",
             "display_name": "시민개발자 구씨",
-            "full_text": "상위 1% 클로드코드 사용자는 프롬프트 대신 루프를 씁니다\n────────────────\n[요약] Claude Code의 루프 기능과 LOOP.md로 반복 업무를 자동화하는 방법\n\n- Claude Code의 /loop 명령어는 정해진 주기마다 작업을 실행하여 실시간으로 누적되는 반복 업무를 이어받아 처리합니다.\n- 복잡한 일회성 완수를 위한 /goal이나 PC가 꺼져도 도는 스케줄링 도구와 달리, /loop은 작업 중 능동적 진척에 적합합니다.\n- 효율적 관리를 위해 작업 규칙(CLAUDE.md), 루프 장부(LOOP.md), 실행 이력(주간 루프 리포트)의 3가지 운영 문서를 구축합니다.\n- 최대 7일 지속, 활성 세션 의존, 토큰 소모량, 외부 발송 시 사람 검토 필요성 등 4가지 주의점을 고려해 설계해야 합니다.\n\n[상세]\n루프 기능의 개념과 유사 기능 비교\nClaude Code의 루프 기능은 정해진 시간 간격마다 작업을 자동 재실행하여 실시간으로 쌓이는 업무를 다음 단계로 넘겨주는 시스템입니다. 특정 조건 충족 시까지 멈추지 않고 한 번에 대량 작업을 완수하는 슬래시고(/goal) 기능과 구분하여 사용해야 합니다. 또한 PC가 꺼져 있어도 독립적으로 정해진 스케줄에 실행되는 크론이나 루틴 기능과 달리, 루프는 사용자가 PC를 사용하는 동안 실시간 작업을 보조하는 데 최적화되어 있습니다. 각 도구의 특성을 파악하여 업무 성격에 맞게 적합한 방식을 선택하는 것이 중요합니다.\n\n운영 문서 3종 기반의 루프 엔지니어링 구축\n체계적인 루프 운영을 위해 작업 규칙을 정의한 CLAUDE.md, 생성할 루프의 정보와 프롬프트를 담은 루프 장부인 LOOP.md, 실행 이력을 관리하는 주간 루프 리포트 문서를 세팅합니다. 영상 실습에서는 Google Workspace CLI(gws)를 연동하여 구글 시트 데이터와 지메일(Gmail) 초안 생성을 자동화하는 환경을 구성합니다. 1시간 주기의 고객 문의 분류 루프와 30분 주기의 아웃바운드 리드 초안 작성 루프를 장부에 등록하고 활성화하여 일괄 실행을 진행합니다. 별도의 루프 장부를 마련해 두면 루프가 비활성화되더라도 매번 프롬프트를 다시 작성할 필요 없이 손쉽게 재등록할 수 있습니다.\n\n루프 활용 시 반드시 숙지해야 할 4가지 주의점\n루프는 PC 세션이 유지되는 동안만 동작하며 최대 7일까지만 활성화되므로 장기 보관을 위해 LOOP.md 관리가 필수적입니다. PC가 꺼지면 세션이 중단되므로 백그라운드 무인 자동화보다는 실제 작업 중인 환경에서 실시간 보조 용도로 활용해야 합니다. 컨텍스트 파악으로 인해 토큰 한도에 빠르게 도달할 수 있으므로 실시간 반복 업무 2~3개 정도로 제한하여 실행하는 것을 권장합니다. 마지막으로 모니터링 공백에 따른 리스크를 방지하기 위해 이메일 발송 등 외부 전달 작업은 즉시 전송하지 않고 임시 보관함 초안 생성까지만 맡겨 사람이 최종 검토해야 합니다.\n\n<!-- GOAL_COMPLETE -->\n\n[설명]\n여러분, 클로드코드한테 아직도 매번 같은 프롬프트를 복붙해서 일을 시키고 계신가요? 손에 익을수록 그 반복 요청 자체가 또 하나의 일처럼 느껴지죠. 이번 영상에서는 프롬프트를 매번 치는 대신, /loop과 LOOP.md로 반복 업무가 알아서 다음 단계로 굴러가는 운영 구조를 직접 만들어봅니다.\n매번 같은 작업을 클로드코드와 반복하시는 분이라면 오늘 영상 도움되실 겁니다.\n상세 가이드에는 한 단계 더 나아가, LOOP.md를 '다음 작업 판단 기준서'처럼 써서 AI가 안전한 다음 작업 1개를 고르는 응용 예시도 추가해뒀습니다. 이때는 우선순위만 던지는 게 아니라 완료 기준, 검증 방법, 멈춤 조건, 기록 위치까지 함께 정해두는 방식으로 정리했어요. 처음에는 오늘처럼 대상과 결과가 명확한 루프부터 시작하고, 익숙해진 뒤 조금씩 general loop로 확장하는 흐름으로 보시면 됩니다.\n여러분은 어떤 반복 업무를 가장 먼저 루프로 만들어보고 싶으신가요? 댓글로 편하게 남겨주세요.😊\n[타임라인]\n────────────────────────\n[상세 설명 가이드]\n[Claude Code /loop (예약 작업) 공식 문서]\n[Claude Code /goal 공식 문서]\n[googleworkspace-cli (gws) GitHub]\n\n[타임라인]\n0:00 인트로\n1:10 /loop, /goal, Hermes cron 차이\n3:06 루프 셋팅전 준비 작업: 클로드코드, 운영문서, gws cli 설치\n6:40 LOOP.md, CLAUDE.md 등 관리 문서 & 루프 생성\n11:35 LOOP.md 문서 기반 루프 실행 테스트\n14:52 /loop 한계와 유의할 점\n17:14 아웃트로",
+            "full_text": "상위 1% 클로드코드 사용자는 프롬프트 대신 루프를 씁니다\n────────────────\n[요약] Claude Code의 루프 기능과 LOOP.md로 반복 업무를 자동화하는 방법\n\n- Claude Code의 /loop 명령어는 정해진 주기마다 작업을 실행하여 실시간으로 누적되는 반복 업무를 이어받아 처리합니다.\n- 복잡한 일회성 완수를 위한 /goal이나 PC가 꺼져도 도는 스케줄링 도구와 달리, /loop은 작업 중 능동적 진척에 적합합니다.\n- 효율적 관리를 위해 작업 규칙(CLAUDE.md), 루프 장부(LOOP.md), 실행 이력(주간 루프 리포트)의 3가지 운영 문서를 구축합니다.\n- 최대 7일 지속, 활성 세션 의존, 토큰 소모량, 외부 발송 시 사람 검토 필요성 등 4가지 주의점을 고려해 설계해야 합니다.\n\n[상세]\n루프 기능의 개념과 유사 기능 비교\nClaude Code의 루프 기능은 정해진 시간 간격마다 작업을 자동 재실행하여 실시간으로 쌓이는 업무를 다음 단계로 넘겨주는 시스템입니다. 특정 조건 충족 시까지 멈추지 않고 한 번에 대량 작업을 완수하는 슬래시고(/goal) 기능과 구분하여 사용해야 합니다. 또한 PC가 꺼져 있어도 독립적으로 정해진 스케줄에 실행되는 크론이나 루틴 기능과 달리, 루프는 사용자가 PC를 사용하는 동안 실시간 작업을 보조하는 데 최적화되어 있습니다. 각 도구의 특성을 파악하여 업무 성격에 맞게 적합한 방식을 선택하는 것이 중요합니다.\n\n운영 문서 3종 기반의 루프 엔지니어링 구축\n체계적인 루프 운영을 위해 작업 규칙을 정의한 CLAUDE.md, 생성할 루프의 정보와 프롬프트를 담은 루프 장부인 LOOP.md, 실행 이력을 관리하는 주간 루프 리포트 문서를 세팅합니다. 영상 실습에서는 Google Workspace CLI(gws)를 연동하여 구글 시트 데이터와 지메일(Gmail) 초안 생성을 자동화하는 환경을 구성합니다. 1시간 주기의 고객 문의 분류 루프와 30분 주기의 아웃바운드 리드 초안 작성 루프를 장부에 등록하고 활성화하여 일괄 실행을 진행합니다. 별도의 루프 장부를 마련해 두면 루프가 비활성화되더라도 매번 프롬프트를 다시 작성할 필요 없이 손쉽게 재등록할 수 있습니다.\n\n루프 활용 시 반드시 숙지해야 할 4가지 주의점\n루프는 PC 세션이 유지되는 동안만 동작하며 최대 7일까지만 활성화되므로 장기 보관을 위해 LOOP.md 관리가 필수적입니다. PC가 꺼지면 세션이 중단되므로 백그라운드 무인 자동화보다는 실제 작업 중인 환경에서 실시간 보조 용도로 활용해야 합니다. 컨텍스트 파악으로 인해 토큰 한도에 빠르게 도달할 수 있으므로 실시간 반복 업무 2~3개 정도로 제한하여 실행하는 것을 권장합니다. 마지막으로 모니터링 공백에 따른 리스크를 방지하기 위해 이메일 발송 등 외부 전달 작업은 즉시 전송하지 않고 임시 보관함 초안 생성까지만 맡겨 사람이 최종 검토해야 합니다.\n\n[설명]\n여러분, 클로드코드한테 아직도 매번 같은 프롬프트를 복붙해서 일을 시키고 계신가요? 손에 익을수록 그 반복 요청 자체가 또 하나의 일처럼 느껴지죠. 이번 영상에서는 프롬프트를 매번 치는 대신, /loop과 LOOP.md로 반복 업무가 알아서 다음 단계로 굴러가는 운영 구조를 직접 만들어봅니다.\n매번 같은 작업을 클로드코드와 반복하시는 분이라면 오늘 영상 도움되실 겁니다.\n상세 가이드에는 한 단계 더 나아가, LOOP.md를 '다음 작업 판단 기준서'처럼 써서 AI가 안전한 다음 작업 1개를 고르는 응용 예시도 추가해뒀습니다. 이때는 우선순위만 던지는 게 아니라 완료 기준, 검증 방법, 멈춤 조건, 기록 위치까지 함께 정해두는 방식으로 정리했어요. 처음에는 오늘처럼 대상과 결과가 명확한 루프부터 시작하고, 익숙해진 뒤 조금씩 general loop로 확장하는 흐름으로 보시면 됩니다.\n여러분은 어떤 반복 업무를 가장 먼저 루프로 만들어보고 싶으신가요? 댓글로 편하게 남겨주세요.😊\n[타임라인]\n────────────────────────\n[상세 설명 가이드]\n[Claude Code /loop (예약 작업) 공식 문서]\n[Claude Code /goal 공식 문서]\n[googleworkspace-cli (gws) GitHub]\n\n[타임라인]\n0:00 인트로\n1:10 /loop, /goal, Hermes cron 차이\n3:06 루프 셋팅전 준비 작업: 클로드코드, 운영문서, gws cli 설치\n6:40 LOOP.md, CLAUDE.md 등 관리 문서 & 루프 생성\n11:35 LOOP.md 문서 기반 루프 실행 테스트\n14:52 /loop 한계와 유의할 점\n17:14 아웃트로",
             "media": [
                 "https://i.ytimg.com/vi/sm7NCaXEESE/maxresdefault.jpg"
             ],
@@ -64418,14 +64360,14 @@
             "url": "https://www.youtube.com/watch?v=ChsmNLwoHmw",
             "created_at": "2026-07-10 17:07:19",
             "date": "2026-07-10",
-            "crawled_at": "2026-08-27 13:23:58",
+            "crawled_at": "2026-08-27 13:55:33",
             "like_count": 726,
             "comment_count": 72,
             "share_count": null,
             "quote_count": null,
             "bookmark_count": null,
             "view_count": 18891,
-            "metrics_updated_at": "2026-08-27 13:23:58",
+            "metrics_updated_at": "2026-08-27 13:55:33",
             "source": "drive7",
             "local_images": [],
             "is_detail_collected": true,
@@ -64813,14 +64755,14 @@
             "url": "https://www.youtube.com/watch?v=HNtS6WGGhNU",
             "created_at": "2026-07-16 13:56:43",
             "date": "2026-07-16",
-            "crawled_at": "2026-08-27 13:23:58",
-            "like_count": 5983,
+            "crawled_at": "2026-08-27 13:55:33",
+            "like_count": 5986,
             "comment_count": 180,
             "share_count": null,
             "quote_count": null,
             "bookmark_count": null,
-            "view_count": 118033,
-            "metrics_updated_at": "2026-08-27 13:23:58",
+            "view_count": 118064,
+            "metrics_updated_at": "2026-08-27 13:55:33",
             "source": "ai.new2",
             "local_images": [
                 "web_viewer/images/f35730ce4ffd02e8b48747f1d218d628.jpg"
@@ -72191,7 +72133,7 @@
             "urn": "",
             "username": "AI싱크클럽",
             "display_name": "AI싱크클럽",
-            "full_text": "클로드 코드 대량 업무 필수 기능 , 다이나믹 워크플로우 | Claude code Dynamic Workflow 개념부터 실행까지\n────────────────\n[요약] 클로드 코드 다이나믹 워크플로우의 개념과 6가지 패턴 및 실전 활용법을 설명한다.\n\n- 스킬과 서브에이전트를 넘어 클로드가 직접 실행 스크립트를 짜서 다수의 에이전트를 병렬 조율하는 기능이다.\n- 하나의 목표를 깊게 파고드는 슬래시 골과 달리 독립된 업무를 넓게 펼쳐 병렬 처리하고 종합하는 데 특화되어 있다.\n- 분류 처리, 분할 종합, 교차 검증, 과잉 생성 선별, 토너먼트, 조건 충족 반복이라는 6가지 패턴으로 구동된다.\n- 200페이지 검토 데모처럼 대규모 과업에 유용하지만 호출 비용이 크므로 토큰 상한과 작업 범위 설정이 중요하다.\n\n[상세]\n다이나믹 워크플로우의 정의와 등장 배경\n클로드가 작업에 맞춘 실행 스크립트를 동적으로 작성하여 수십 개 이상의 서브에이전트를 병렬로 가동하고 자체 검증까지 수행하는 기능입니다. 단일 대화가 길어질 때 나타나는 모델의 게으름, 자기 결과에 대한 후한 평가 편향, 목표가 흐려지는 목표 표류 문제를 구조적으로 해결합니다. 메인 클로드가 계획을 직접 관리하는 기존 서브에이전트 방식과 달리 생성된 스크립트 파일이 계획을 보유하므로 저장과 재실행이 가능합니다.\n\n슬래시 골과의 차이점 및 6가지 워크플로우 형태\n슬래시 골이 하나의 목표를 향해 끝까지 깊게 파고드는 방식이라면, 다이나믹 워크플로우는 서로 다른 일을 하는 에이전트들을 옆으로 넓게 펼쳐 동시에 수행한 뒤 결과를 취합합니다. 워크플로우는 접수원처럼 업무를 나누는 분류 후 처리, 큰일을 쪼개 병렬로 돌리고 합치는 분할 종합, 악마의 변호인처럼 결과를 반박하는 교차 검증 형태로 구성됩니다. 여기에 아이디어를 대량 생성해 거르는 선별, 둘씩 짝지어 비교하는 토너먼트, 문제가 해결될 때까지 지속하는 조건 반복까지 총 6가지 패턴을 제공합니다.\n\n실전 데모와 비용 효율적인 사용 기준\n실제 200페이지가 넘는 원고 검토 실습에서는 19개 에이전트와 120만 토큰을 투입하여 13분 만에 전체 분석 및 최신성 검토를 완료했습니다. 해당 기능은 동시에 굴러가는 여러 조각으로 분할 가능한 대규모 코드베이스 점검이나 방대한 자료 조사에 적합하며, 단순 코드 수정이나 빠른 질의응답에는 쓸 필요가 없습니다. 각 에이전트마다 독립된 호출이 발생해 토큰 소모가 크기 때문에 토큰 상한을 지정하고 읽기 작업에는 하이쿠 같은 가벼운 모델을 배치해 비용을 아껴야 합니다.\n\n<!-- GOAL_COMPLETE -->\n\n[설명]\n안녕하세요 AI싱크클럽입니다.\n서브에이전트, 에이전트팀, /goal, 그리고 새로 나온 다이나믹 워크플로우.\n다 비슷해 보여서 클로드 코드 다이나믹 워크플로우는 뭐가 다르지?\" 헷갈리셨던 분 계실 거예요.\n오늘 이 영상 하나로 Claude code Dynamic Workflow 정체부터 사용법,\n언제 켜고 언제 꺼야 이득인지까지 다 정리해드립니다.\n━━━━━━━━━━━━━━━━━━━━━━━\n📌 이 영상에서 배우는 것\n• 클로드코드 실행 방식 사다리\n• 다이나믹 워크플로우의 정의와 왜 생겼는지\n• /goal 과의 차이 — 깊이냐 너비냐\n• 워크플로우 6가지 형태\n• 실전 데모 — 200페이지 원고를 13분 만에 재검토\n• 언제 켜고 끄는 게 이득인지 + 토큰 절약\n━━━━━━━━━━━━━━━━━━━━━━━\n⏱️ 타임라인\n[다이나믹 워크플로우란?]\n[워크플로우 6가지 형태]\n[실전 데모]\n[언제 쓰나]\n[마무리]\n━━━━━━━━━━━━━━━━━━━━━━━\n📚 자료 & 커뮤니티\n📌 AI싱크클럽 카카오톡 단톡방 (정보공유)\n→\n📦 무료 자료 다운로드 (사다리 지도 + \"언제 켤까\" 결정 트리 + 6가지 형태 호출 프롬프트 + 토큰 절약 치트시트)\n→\n━━━━━━━━━━━━━━━━━━━━━━━\n📢 이 영상이 도움이 되셨다면\n👍 좋아요 꾹! (알고리즘이 더 많은 분들께 추천합니다)\n💬 댓글로 다이나믹 워크플로우를 써보고 싶은 작업 공유해주세요!\n🔔 구독 + 알림 설정으로 다음 영상(/goal 깊게 파기) 놓치지 마세요!\n🔗 AI싱크클럽 단톡방 참여해서 함께 성장해요!\n━━━━━━━━━━━━━━━━━━━━━━━\n\n[타임라인]\n00:00 인트로\n01:10 오늘 자료 안내\n01:26 실행 방식 사다리\n03:06 정의 + 왜 생겼나\n04:56 /goal vs 워크플로우\n05:39 6가지 형태 시작\n05:51 ① 분류 후 처리\n06:34 ② 펼쳐서 조합\n07:13 ③ 반대로 검증\n07:35 ④ 많이 만들고 선별\n08:12 ⑤ 토너먼트\n08:44 ⑥ 될 때까지 반복\n09:15 패턴 쌓기 + 토큰 상한\n10:08 실전 시작\n10:17 두 가지 실행 방법\n10:43 ultracode·/deep-research 호출\n12:19 200페이지 원고 재검토 실행\n16:32 결과 - 에이전트 19개·120만 토큰·13분\n17:18 언제 켜고, 언제 끄나\n18:17 토큰 절약 3가지\n19:14 코드 말고 업무에도\n19:32 핵심 정리 + 다음 영상 예고\n19:54 무료 자료 안내",
+            "full_text": "클로드 코드 대량 업무 필수 기능 , 다이나믹 워크플로우 | Claude code Dynamic Workflow 개념부터 실행까지\n────────────────\n[요약] 클로드 코드 다이나믹 워크플로우의 개념과 6가지 패턴 및 실전 활용법을 설명한다.\n\n- 스킬과 서브에이전트를 넘어 클로드가 직접 실행 스크립트를 짜서 다수의 에이전트를 병렬 조율하는 기능이다.\n- 하나의 목표를 깊게 파고드는 슬래시 골과 달리 독립된 업무를 넓게 펼쳐 병렬 처리하고 종합하는 데 특화되어 있다.\n- 분류 처리, 분할 종합, 교차 검증, 과잉 생성 선별, 토너먼트, 조건 충족 반복이라는 6가지 패턴으로 구동된다.\n- 200페이지 검토 데모처럼 대규모 과업에 유용하지만 호출 비용이 크므로 토큰 상한과 작업 범위 설정이 중요하다.\n\n[상세]\n다이나믹 워크플로우의 정의와 등장 배경\n클로드가 작업에 맞춘 실행 스크립트를 동적으로 작성하여 수십 개 이상의 서브에이전트를 병렬로 가동하고 자체 검증까지 수행하는 기능입니다. 단일 대화가 길어질 때 나타나는 모델의 게으름, 자기 결과에 대한 후한 평가 편향, 목표가 흐려지는 목표 표류 문제를 구조적으로 해결합니다. 메인 클로드가 계획을 직접 관리하는 기존 서브에이전트 방식과 달리 생성된 스크립트 파일이 계획을 보유하므로 저장과 재실행이 가능합니다.\n\n슬래시 골과의 차이점 및 6가지 워크플로우 형태\n슬래시 골이 하나의 목표를 향해 끝까지 깊게 파고드는 방식이라면, 다이나믹 워크플로우는 서로 다른 일을 하는 에이전트들을 옆으로 넓게 펼쳐 동시에 수행한 뒤 결과를 취합합니다. 워크플로우는 접수원처럼 업무를 나누는 분류 후 처리, 큰일을 쪼개 병렬로 돌리고 합치는 분할 종합, 악마의 변호인처럼 결과를 반박하는 교차 검증 형태로 구성됩니다. 여기에 아이디어를 대량 생성해 거르는 선별, 둘씩 짝지어 비교하는 토너먼트, 문제가 해결될 때까지 지속하는 조건 반복까지 총 6가지 패턴을 제공합니다.\n\n실전 데모와 비용 효율적인 사용 기준\n실제 200페이지가 넘는 원고 검토 실습에서는 19개 에이전트와 120만 토큰을 투입하여 13분 만에 전체 분석 및 최신성 검토를 완료했습니다. 해당 기능은 동시에 굴러가는 여러 조각으로 분할 가능한 대규모 코드베이스 점검이나 방대한 자료 조사에 적합하며, 단순 코드 수정이나 빠른 질의응답에는 쓸 필요가 없습니다. 각 에이전트마다 독립된 호출이 발생해 토큰 소모가 크기 때문에 토큰 상한을 지정하고 읽기 작업에는 하이쿠 같은 가벼운 모델을 배치해 비용을 아껴야 합니다.\n\n[설명]\n안녕하세요 AI싱크클럽입니다.\n서브에이전트, 에이전트팀, /goal, 그리고 새로 나온 다이나믹 워크플로우.\n다 비슷해 보여서 클로드 코드 다이나믹 워크플로우는 뭐가 다르지?\" 헷갈리셨던 분 계실 거예요.\n오늘 이 영상 하나로 Claude code Dynamic Workflow 정체부터 사용법,\n언제 켜고 언제 꺼야 이득인지까지 다 정리해드립니다.\n━━━━━━━━━━━━━━━━━━━━━━━\n📌 이 영상에서 배우는 것\n• 클로드코드 실행 방식 사다리\n• 다이나믹 워크플로우의 정의와 왜 생겼는지\n• /goal 과의 차이 — 깊이냐 너비냐\n• 워크플로우 6가지 형태\n• 실전 데모 — 200페이지 원고를 13분 만에 재검토\n• 언제 켜고 끄는 게 이득인지 + 토큰 절약\n━━━━━━━━━━━━━━━━━━━━━━━\n⏱️ 타임라인\n[다이나믹 워크플로우란?]\n[워크플로우 6가지 형태]\n[실전 데모]\n[언제 쓰나]\n[마무리]\n━━━━━━━━━━━━━━━━━━━━━━━\n📚 자료 & 커뮤니티\n📌 AI싱크클럽 카카오톡 단톡방 (정보공유)\n→\n📦 무료 자료 다운로드 (사다리 지도 + \"언제 켤까\" 결정 트리 + 6가지 형태 호출 프롬프트 + 토큰 절약 치트시트)\n→\n━━━━━━━━━━━━━━━━━━━━━━━\n📢 이 영상이 도움이 되셨다면\n👍 좋아요 꾹! (알고리즘이 더 많은 분들께 추천합니다)\n💬 댓글로 다이나믹 워크플로우를 써보고 싶은 작업 공유해주세요!\n🔔 구독 + 알림 설정으로 다음 영상(/goal 깊게 파기) 놓치지 마세요!\n🔗 AI싱크클럽 단톡방 참여해서 함께 성장해요!\n━━━━━━━━━━━━━━━━━━━━━━━\n\n[타임라인]\n00:00 인트로\n01:10 오늘 자료 안내\n01:26 실행 방식 사다리\n03:06 정의 + 왜 생겼나\n04:56 /goal vs 워크플로우\n05:39 6가지 형태 시작\n05:51 ① 분류 후 처리\n06:34 ② 펼쳐서 조합\n07:13 ③ 반대로 검증\n07:35 ④ 많이 만들고 선별\n08:12 ⑤ 토너먼트\n08:44 ⑥ 될 때까지 반복\n09:15 패턴 쌓기 + 토큰 상한\n10:08 실전 시작\n10:17 두 가지 실행 방법\n10:43 ultracode·/deep-research 호출\n12:19 200페이지 원고 재검토 실행\n16:32 결과 - 에이전트 19개·120만 토큰·13분\n17:18 언제 켜고, 언제 끄나\n18:17 토큰 절약 3가지\n19:14 코드 말고 업무에도\n19:32 핵심 정리 + 다음 영상 예고\n19:54 무료 자료 안내",
             "media": [
                 "https://i.ytimg.com/vi/EUdILv8yNwI/maxresdefault.jpg"
             ],
@@ -74068,7 +74010,7 @@
             "display_name": "글리터 AI 팩토리",
             "full_text": "사진에 빨간 선만 그으면\n드론샷이 만들어짐 \n\n구글 플로우 → 모델 Omni Flash\n→ 선 그은 사진 업로드 → 프롬프트 붙여넣기 → 생성\n\n프롬프트 댓글",
             "media": [
-                "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/777297555_17940192336321996_4878108598978821334_n.webp?_nc_cat=103&ig_cache_key=Mzk2NjM4OTk3MTY1NzM0OTE0OA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTI4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=yma14Q2ny1wQ7kNvwHUwZW8&_nc_oc=AdqRgQvBX9uDr56eCEac2H77va9eLPYCoHoSuGUSzjudBuf4Ol58Wit6eS4cLe5x4Gg&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_gid=b0fwhpSCY2Wk4xCiCgcegg&_nc_ss=722a8&oh=00_AQG8wN8QgI-1uEP1oATu1gvMp6R_zFzxGvLtxX1Tg_1Hew&oe=6A9443E6"
+                "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/777297555_17940192336321996_4878108598978821334_n.webp?_nc_cat=103&ig_cache_key=Mzk2NjM4OTk3MTY1NzM0OTE0OA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTI4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=yma14Q2ny1wQ7kNvwHUwZW8&_nc_oc=AdqRgQvBX9uDr56eCEac2H77va9eLPYCoHoSuGUSzjudBuf4Ol58Wit6eS4cLe5x4Gg&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_gid=36D1aCAl2yhCweE02fxPuA&_nc_ss=732a8&oh=00_AQG4wgWxOQ8VIXl9vVApbJt1KX0Blwfl95CvBbodC3TkvA&oe=6A959566"
             ],
             "url": "https://www.threads.com/@glitter_ai_factory/post/DcLcsNNE56v",
             "created_at": "2026-08-18 19:56:05",
@@ -74080,7 +74022,7 @@
             "quote_count": 2,
             "bookmark_count": null,
             "view_count": null,
-            "metrics_updated_at": "2026-08-26T13:06:06.156",
+            "metrics_updated_at": "2026-08-27T13:47:34.478",
             "source": "consumer_detail",
             "local_images": [],
             "is_detail_collected": false,
@@ -74550,7 +74492,7 @@
             "display_name": "윤뇽 | 부캐 다마고치",
             "full_text": "직장 밖의 세상에서는 결국 ‘꿀통은 언젠가 마른다’는 감각을 가지고 있어야 하는 것 같음.\n\n처음에는 AI를 먼저 쓸 줄 아는 사람이 유리했음. 그다음에는 어떤 소재가 터지는지 아는 사람이 유리했고, 그것도 알려지기 시작하면 더 많이 테스트하고 더 빠르게 성공 공식을 찾는 사람이 유리해짐.\n\n왜냐면 돈이 된다는 게 보이는 순간 사람들이 몰리기 때문임. 그리고 사람이 많이 모이면 반드시 나보다 더 잘하는 사람이 나옴. 그걸 또 다른 사람들이 따라하고, 결국 시장은 포화됨.\n\n---\n\n물론 난이도에 따라 속도는 다르겠지. 3개월 만에 따라잡히는 것도 있고, 몇 년 걸리는 것도 있음.\n\n근데 중요한 건 “이 꿀통이 얼마나 오래갈까?”를 맞히는 게 아니라, 꿀통이 열려 있을 때 나는 무엇을 남길 것인가인 것 같음.\n\n직장에서는 내가 맡은 일을 잘하면 어느 정도 게임이 계속됨. 그런데 크리에이터나 사업의 세계에서는 어제 잘되던 방식이 내일 갑자기 안 먹힐 수도 있음.\n\n그래서 하나의 성공 공식을 오래 붙잡는 것보다, 계속 경쟁력을 한 단계씩 위로 옮겨야 함.\n\n---\n\nSkill → System → Distribution → Ownership.\n\n처음에는 내가 잘하는 기술이 있고, 그다음에는 그걸 반복해서 성과 내는 시스템을 만들고, 그걸로 사람과 유통을 쌓고, 마지막에는 브랜드나 고객, 관계처럼 내가 실제로 소유하는 걸 남기는 것.\n\n결국 직장 밖에서 중요한 마인드셋은 이것 같음.\n\n꿀통을 찾았다고 안심하지 말 것.\n항상 “이 꿀통이 마른 뒤에도 나한테 뭐가 남지?”를 생각할 것.\n\n☝🏻 부캐의 자산이라는 블로그 글에 자세한 내용 있오\n\n---\n\nAI건축 숏츠 신비한 건축사전이 뜨고, \n그걸 따라 만드는 법을 알려주는 \nAI 유튜브 계정들이 우르르 생기는 걸 보면서 든 생각.",
             "media": [
-                "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/775727202_17891776815668454_3606940317633240276_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ig_cache_key=Mzk2NjA5NTEzMzI0Nzc2OTQ4OA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTE3OS5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=kTPkMH-G2TAQ7kNvwG5T-xG&_nc_oc=Adqmp1Hfknanb0O3GRgSDTGpbixS63W0ulju5S0zcXKCsDd5snLUhKSD4tzjMYlT8KY&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_gid=xwSo_FVrUirYFEcMGUGKHQ&_nc_ss=722a8&oh=00_AQHYCdI01do34F2N1dYnHF_CM2YkrvXI0xdOjYSR-82pNQ&oe=6A9448BF"
+                "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/775727202_17891776815668454_3606940317633240276_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ig_cache_key=Mzk2NjA5NTEzMzI0Nzc2OTQ4OA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTE3OS5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=kTPkMH-G2TAQ7kNvwG5T-xG&_nc_oc=Adqmp1Hfknanb0O3GRgSDTGpbixS63W0ulju5S0zcXKCsDd5snLUhKSD4tzjMYlT8KY&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_gid=JK_M_vCuoFHtvNtw7c6IGQ&_nc_ss=732a8&oh=00_AQFFjofKaTnqXqO2Ew6dNQzOwnn2iKwxVKmPEBMXeir90Q&oe=6A959A3F"
             ],
             "url": "https://www.threads.com/@yoonyongnyong/post/DcKZzgtGAKY",
             "created_at": "2026-08-18 10:11:37",
@@ -74562,7 +74504,7 @@
             "quote_count": 0,
             "bookmark_count": null,
             "view_count": null,
-            "metrics_updated_at": "2026-08-26T13:06:04.853",
+            "metrics_updated_at": "2026-08-27T13:47:34.438",
             "source": "consumer_detail",
             "local_images": [],
             "is_detail_collected": false,
@@ -75367,19 +75309,19 @@
             "display_name": "오토프로그 | AI 자동화",
             "full_text": "남들 다 해본다는 신비한 건축사전\n스탈 영상 만들어봄 남아도는 구글 flow 크레딧 활용\n\n클로드코드 -> 어사이드 조작 -> 구글flow 생성 -> 클로드 조립\n\n---\n\n오우쉣!! Aside  Cli로 되는거\n다들 알고있었어? \n\n나는 cli 되는지 모르고 굳이 쓸이유없다고 안쓰고있었는데 대박 잘되잖아\n\n\"Aside cli 로 구글omni 영상제작해\"\n\n클로드 계정 여러개 쓰는분들\n클로드인크롬 짜증나는데 어사이드\n깔끔하네 다들 알고들 있었어?\n\n나만 이제 안거야?🤐\n나만 시대 뒤쳐진거야 ㅜㅜ",
             "media": [
-                "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/782252205_2477117566143566_8978137133550732967_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=108&ig_cache_key=Mzk3MDEwNjgzNTU3MTE4NjUyMA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuNjQwLnNkci52aWRlb19kZWZhdWx0X2NvdmVyX2ZyYW1lLkMzIn0%3D&_nc_ohc=FK6OLqPe2eoQ7kNvwFxr_Zs&_nc_oc=Adql8cfzEOQoUBuv77wGugcIVkTyn1FVEkS7YqePlx0ht_BAuObYoMxaR0MCRAr6WWM&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_gid=NJ7QrMVBRzx_F4_Kk7ME4Q&_nc_ss=722a8&oh=00_AQHKtwV5r9Vg805UEsxPtzDDL6S8O37ui0GOdqWrcDdIUA&oe=6A94511B"
+                "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/782252205_2477117566143566_8978137133550732967_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=108&ig_cache_key=Mzk3MDEwNjgzNTU3MTE4NjUyMA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuNjQwLnNkci52aWRlb19kZWZhdWx0X2NvdmVyX2ZyYW1lLkMzIn0%3D&_nc_ohc=FK6OLqPe2eoQ7kNvwFxr_Zs&_nc_oc=Adql8cfzEOQoUBuv77wGugcIVkTyn1FVEkS7YqePlx0ht_BAuObYoMxaR0MCRAr6WWM&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_gid=IfRUR39zC_7BjuJlpkQhgA&_nc_ss=732a8&oh=00_AQGTU3IDR6pRRNuaVtWUwGET89p1a1zNvyqyAm_6C_FRiw&oe=6A95A29B"
             ],
             "url": "https://www.threads.com/@autofrog.kr/post/DcYpv_qkrkS",
             "created_at": "2026-08-23 23:00:19",
             "date": "2026-08-23",
             "crawled_at": "2026-08-24T10:43:23.183",
-            "like_count": 4,
+            "like_count": 5,
             "comment_count": 3,
             "share_count": 0,
             "quote_count": 0,
             "bookmark_count": null,
             "view_count": null,
-            "metrics_updated_at": "2026-08-26T13:06:04.750",
+            "metrics_updated_at": "2026-08-27T13:47:34.607",
             "source": "consumer_detail",
             "local_images": [],
             "is_detail_collected": false,
@@ -76650,8 +76592,8 @@
             "display_name": "코난쌤",
             "full_text": "구독자 단톡방에 오시면 \n제가 검수한 최신 AI정보들과 꿀팁들을 알려드려요\nhttps://open.kakao.com/o/gXxFpUnh\n비번 0715\n\n---\n\n1만 팔로우 기념 자기소개 \n\n대전 거주 \n14년차 초등교사 \nNvidia DLI ambassador, Instructor\n대학강사\n실용인공지능학회 이사 \n유튜버 \nINTP\n이게되네 오픈클로 외 4권 저자\nAI 강사\n\n---\n\n오늘 NIA AX 강의하고 왔어요 \n요렇게 스킬 만들면 꽤 좋아요👍",
             "media": [
-                "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/785858156_17981932137118395_4536360186987433426_n.jpg?stp=cp6_dst-jpegr_e35_tt6&_nc_cat=108&ig_cache_key=Mzk3MTQxMTEzNDE3MDUzMTU0Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuNDAwMC5oZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=xN8SoUnV2HUQ7kNvwFR6pWX&_nc_oc=Adqz_Qw-CEyrva1mC_RQFZqyGdyp7RrC152s8e4lF-a9gOGXxnq4ULd5S0z8WE843Ys&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_gid=P50UPi8a5vJPGZ9lEe7cJA&_nc_ss=732a8&oh=00_AQHfOzKIdY_VQV1QwYjL-BHmtrm05qegsUIaF5Wy-4wIrA&oe=6A943C30",
-                "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/784875354_17981932596118395_8769935804119195698_n.jpg?stp=dst-jpegr_e35_tt6&_nc_cat=104&ig_cache_key=Mzk3MTQxMzc4NzE1MTgzODc3NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTkyMC5oZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=JMCpSw0gGxAQ7kNvwEPO8Ev&_nc_oc=AdpXSZoTHvfySd5WcEAAA94wG1NMcz3p1lOdW-8h-L_ypBMHYC3vJ9UyBZqdp9OCma4&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_gid=kHHsDzszPPymFDZ4N-vufw&_nc_ss=732a8&oh=00_AQGQJcg6TYIXLGP1t5my5_eTMZ0GqiP1FMvTsNOB86QRdg&oe=6A942F9B"
+                "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/785858156_17981932137118395_4536360186987433426_n.jpg?stp=cp6_dst-jpegr_e35_tt6&_nc_cat=108&ig_cache_key=Mzk3MTQxMTEzNDE3MDUzMTU0Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuNDAwMC5oZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=xN8SoUnV2HUQ7kNvwFR6pWX&_nc_oc=Adqz_Qw-CEyrva1mC_RQFZqyGdyp7RrC152s8e4lF-a9gOGXxnq4ULd5S0z8WE843Ys&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_gid=KPAgvP5JRdvYAs1Y0y_rgA&_nc_ss=732a8&oh=00_AQHI35OWdkLWSQxObkwGUOkdGiivD-YH1ZzcTyMSgjq2bA&oe=6A958DB0",
+                "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/784875354_17981932596118395_8769935804119195698_n.jpg?stp=dst-jpegr_e35_tt6&_nc_cat=104&ig_cache_key=Mzk3MTQxMzc4NzE1MTgzODc3NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTkyMC5oZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=-lkRH61oPQIQ7kNvwFNDOD7&_nc_oc=AdrymJvqO7BbPO1EwMLq-nKApKPCU_EgeG5GSa6_wAxFCIB0cymaezyHLdS4cfBSsAw&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_gid=_9pSU6UAB4IA3wvxfHavrw&_nc_ss=732a8&oh=00_AQHAhc3Z8M8KV98USWCTa6ouSsTtmpPfy2sRctxOwm6MFQ&oe=6A95811B"
             ],
             "url": "https://www.threads.com/@conanssam/post/DcdS8uOEawf",
             "created_at": "2026-08-25 18:17:17",
@@ -76663,7 +76605,7 @@
             "quote_count": 0,
             "bookmark_count": null,
             "view_count": null,
-            "metrics_updated_at": "2026-08-26T13:06:04.943",
+            "metrics_updated_at": "2026-08-27T13:47:34.753",
             "source": "consumer_detail",
             "local_images": [],
             "is_detail_collected": false,
@@ -78055,6 +77997,998 @@
             "summary_status": "ok",
             "duration": "PT2H35M",
             "platform_sequence_id": 1
+        },
+        {
+            "sequence_id": 2523,
+            "platform_id": "Dcc_53EEsQG",
+            "sns_platform": "threads",
+            "code": "Dcc_53EEsQG",
+            "urn": "",
+            "username": "byungwook.an",
+            "display_name": "byungwook.an",
+            "full_text": "AI 바이브코딩 강의, 해보기 전엔 미처 몰랐던 것들\n\n최근 비개발자 20명 대상 3일간 AI 바이브코딩 실습 강의를 했습니다. \n(경기도공익활동지원센터 지원)\n\n저야 클로드 Max 유저기도 하고, 지난 6개월간 3,900번 커밋하며 익숙하게 써왔지만, 가르치는 건 또 다르더군요.\n\n[ 해보니까 알게 된 3가지 ]\n\n1. 미리 해오라고 해도 절반은 그냥 온다\n설치·결제 가이드까지 드렸지만 절반은 그냥 오셨더군요. 결국 첫 시간부터 현장 설치·결제를 다 같이 진행했습니다.\n\n2. 20명이 동시 가입하니 깃허브·버셀이 공격으로 차단하더라\n한 공간에서 일제히 가입하니 막혔습니다. 다행히 3일 강의라 다른 실습 먼저 하고 각자 가입하도록 해 풀었습니다.\n\n3. 구글 로그인은 생각보다 큰 복병이다\n구글 콘솔과 수파베이스 2개를 오가며 세팅하니 2배로 헷갈려하셨습니다. 가장 애먹은 구간입니다.\n\n반응이 가장 좋았던 '100p 실습 가이드북' PDF 나눠드립니다.\n아래 댓글 확인해주세요 👇\n\n[ 의외로 좋아해 주신 3가지 ]\n\n1. 스크린샷을 하나하나 넣은 100p 가이드북\n클릭할 화면을 빠짐없이 캡처해 두었더니, 수업 중 놓쳐도 혼자 따라올 수 있다며 가장 좋아하셨습니다.\n\n2. 버튼 하나로 AI가 글을 알아서 채워주는 기능\nGemini API를 연결해 버튼을 누르면 AI가 글을 알아서 써주는 실무 기능을 가장 신기해하셨습니다.\n\n3. 내가 만든 사이트를 모바일 앱처럼 바로 쓰는 경험\n앱스토어 등록 없이도 폰 바탕화면에 앱 아이콘을 띄워(PWA) 바로 써볼 수 있어 만족도가 높았습니다.\n\n---\n\n비개발자 AI 실습은 코딩 자체보다 계정·가입·세팅 같은 '환경의 허들'을 넘겨드리는 게 가장 큰 과제였습니다.\n\n정성껏 준비한 가이드북과 기능들을 좋아해 주셔서 만족도도 4.91점(5점 만점)이 나와 뿌듯했습니다.\n\n👉 100페이지 실습 가이드북 PDF가 필요하신 분은 \"가이드\"라고 댓글 남겨주시면 구글 드라이브 링크로 보내드릴께요.",
+            "media": [
+                "https://scontent-ssn1-1.cdninstagram.com/o1/v/t16/f2/m84/AQPO_HLHTsyZle4rFMqBoWusp9s3Nbd8dU_LvG2G0dP3HMeGgqKDY8EINJS1h-wlugTL0s-CUqHK18BwWgMtHqfByi3UjgDfOGqWaGQ.mp4?_nc_cat=106&_nc_sid=1d576d&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=H62AzPk7tW0Q7kNvwEwaMxs&efg=eyJ2ZW5jb2RlX3RhZyI6InZ0c192b2RfdXJsZ2VuLmZlZWQudW5rbm93bi1DMy43MjAuZGFzaF9iYXNlbGluZV8xX3YxIiwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=17920199634440207_2575342955&_nc_vs=HBksFQIYTGlnX2JhY2tmaWxsX3RpbWVsaW5lX3ZvZC9ERTQzREFCQ0QwRUM4NEFCQTVCRTkzOTMwOTYwMjNCMF92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzVCNEREOEYzOEIzQjgwQTQwMUUyMjczMkUzOUQwRjg1X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwGIB3VzZV9vaWwBMRUAACaezJCI85TVPxUCKAJDMywXQCuIMSbpeNUYEmRhc2hfYmFzZWxpbmVfMV92MREAdeoHZeieAQA%3D&_nc_gid=zvpuBCHNm_zO8vdzmTEbfA&edm=ACx9VUEEAAAA&_nc_zt=28&oh=00_AQGHMdm38ZCzsZP5pIRPbHviHUkbOb7QNl930hEne9kvMw&oe=6A91B596"
+            ],
+            "url": "https://www.threads.com/@byungwook.an/post/Dcc_53EEsQG",
+            "created_at": "2026-08-25 15:31:04",
+            "date": "2026-08-25",
+            "crawled_at": "2026-08-27T13:35:08+09:00",
+            "like_count": 0,
+            "comment_count": 4,
+            "share_count": 0,
+            "quote_count": 0,
+            "bookmark_count": null,
+            "view_count": 91,
+            "metrics_updated_at": "2026-08-27T13:35:08+09:00",
+            "source": "my_insight_threads_api",
+            "local_images": [],
+            "is_detail_collected": true,
+            "is_merged_thread": true,
+            "is_own_post": true,
+            "platform_sequence_id": 1
+        },
+        {
+            "sequence_id": 2524,
+            "platform_id": "DbLFk8VE6Kq",
+            "sns_platform": "threads",
+            "code": "DbLFk8VE6Kq",
+            "urn": "",
+            "username": "byungwook.an",
+            "display_name": "byungwook.an",
+            "full_text": "AI한테 \"그 파일 찾아줘\" 했더니 2분씩 걸린다.\n심지어 파일이 있는데도 못 찾는다.\n\n혹시 이런 문제 한 번이라도 겪었다면 \"Everything CLI(es)\" 써보세요.\n(참고로 무료) \n\nAI는 Glob이나 find로 하나씩 뒤지면서 찾아요. 그러니 느릴 수밖에 없어요. 게다가 D드라이브처럼 다른 데 있으면 아예 못 찾아요. AI가 쓰는 find는 108초가 걸리고도 못 찾았는데, es는 0.13초에 찾았어요. 약 800배 차이예요. 직접 재본 거에요.\n\n사실 저는 Everything 앱을 작업표시줄에 고정해두고 매일 씁니다. 그런데 이걸 AI에서도 쓸 수 있다는 걸 몰랐어요. 그래서 처음엔 경로를 일일이 복붙했죠. 알고 보니 CLI가 따로 있더라고요. 글로벌 규칙에 \"파일 찾을 땐 find 말고 es로\" 한 줄 넣어두면, 이제 경로 안 붙여줘도 AI가 순식간에 찾아요.\n\n파일 찾느라 고생하지 말고, Everything 앱이랑 es CLI 써보세요\n(설치 방법은 아래👇)\n\n[설치법]\n\n설치가 어려우면요, 이 글을 그대로 복사해서 AI한테 붙여넣고 \"설치해줘\"라고 해보세요. 글로벌 규칙에 \"파일 찾을 땐 find 말고 es로\" 한 줄도 같이 넣어달라고 하면 끝이에요.\n\n• scoop 쓰시면: scoop install everything-cli 한 줄이면 CLI랑 앱이 같이 깔려요. 이게 제일 간단해요.\n• scoop 없으면: 구글에 \"everything 앱\" 검색해서 앱부터 설치(무료)하고, CLI(es)는 따로 얹으면 돼요.\n\n실행은 es 검색어. 단, Everything 앱이 켜져 있어야 작동해요 (트레이에 떠 있으면 됩니다).\n\nscoop을 모르셔도 괜찮아요. 우선 Everything 앱만 써보셔도 충분하거든요. CLI는 AI한테 파일 검색 시킬 때 필요한 거라서요.\n\n⚠️ Everything앱은 윈도우만 됩니다.",
+            "media": [],
+            "url": "https://www.threads.com/@byungwook.an/post/DbLFk8VE6Kq",
+            "created_at": "2026-07-24 20:02:43",
+            "date": "2026-07-24",
+            "crawled_at": "2026-08-27T13:35:08+09:00",
+            "like_count": 26,
+            "comment_count": 6,
+            "share_count": 4,
+            "quote_count": 0,
+            "bookmark_count": null,
+            "view_count": 2767,
+            "metrics_updated_at": "2026-08-27T13:35:08+09:00",
+            "source": "my_insight_threads_api",
+            "local_images": [],
+            "is_detail_collected": true,
+            "is_merged_thread": true,
+            "is_own_post": true,
+            "platform_sequence_id": 2
+        },
+        {
+            "sequence_id": 2525,
+            "platform_id": "DaUix2Uk2Cg",
+            "sns_platform": "threads",
+            "code": "DaUix2Uk2Cg",
+            "urn": "",
+            "username": "byungwook.an",
+            "display_name": "byungwook.an",
+            "full_text": "‘대딸깍’의 시대입니다.\n\n웹사이트도, 영상도, 코드도 이제는 딸깍하면 만들어집니다.\n\n하지만 딸깍이 쉬워질수록, 딸깍 자체의 가치는 낮아집니다. 누구나 쉽게 만들 수 있는 것은 결국 빠르게 흔해지고, 차별화되기 어려워지기 때문입니다.\n\n결국 진짜 가치는 딸깍 이전과 딸깍 이후에서 생겨납니다.\nAI가 빠르게 만들어주는 시대일수록 중요한 질문은 달라집니다.\n\n1. 어떤 문제가 풀 만한 가치가 있는 문제인가?\n2. AI가 만든 결과물에 나만의 관점과 엣지를 더해 개선할 수 있는가?\n\n이 감각을 연마하는 것, 저는 이것이 바로 'AI 시대에도 통하는 기획사고'라고 생각합니다.\n\n지난 6월, 판교에 본사를 둔 시가총액 1조원대 코스피 상장기업 다우기술에서 신입사원 대상 7시간 강의를 진행했습니다. \n\n주제는 “AI 시대 기획사고와 AI협업”이었습니다.\n\n🎁 강의에서 활용한 10단계 문제코칭 스킬을 정리해두었습니다.\n필요하신 분은 댓글에 “문제코칭 스킬”이라고 남겨주시면 공유해드리겠습니다.\n\nAI 시대일수록 문제정의가 중요하다고들 합니다. \n하지만 막상 어떻게 해야 하는지 막막하고, 실제로 해보면 쉽지 않습니다.\n\n실제 실무 현장에서는 이런 일이 자주 벌어집니다.\n\n1. 불편을 곧 문제라고 착각한다.\n2. 풀 만한 가치가 있는 문제인지 보기 전에 해결책부터 떠올린다.\n3. AI가 답을 내놓아도 무엇을 고쳐야 할지 몰라, 결국 그대로 쓴다.\n\n이런 함정에 빠지지 않기 위해, 이번 강의에서는 일부러 AI 도구를 먼저 쓰지 않았습니다. 먼저 가치 있는 문제를 정의하고, 뻔한 해결책으로 바로 가지 않도록 문제 정의와 대안 도출을 분리했습니다. 그 다음에야 AI에게 일을 시키고 검토하는 실습을 진행했습니다.\n\n단순히 AI 도구만 잘 쓴다고 성과가 나오지는 않습니다. 성과는 결국 AI를 쓰는 사람이 문제를 정의하고 판단하는 역량에 달려 있습니다.\n\n이번 교육은 바로 이 역량을 키우는 데 집중했습니다.",
+            "media": [
+                "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/730160603_17908713903440207_7704262281813227795_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=6nVSX0BztBsQ7kNvwE1zvEa&_nc_oc=AdomoU92pODDRyRcADmQkM-LRlFVDzhY2Jm6iruSz529D1UgmDWSOsiqirOiG-dfV8E&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ACx9VUEEAAAA&_nc_gid=zvpuBCHNm_zO8vdzmTEbfA&_nc_tpa=Q5bMBQK1haTSNG-f_wZPvCvXQmWbWBRkKJGzSVgxCD6ATdT8wduFIudW7jUi6YOldN2lnCVwc1Az9SlU3g&oh=00_AQFPed_IZwEVrmEGXjdRdTUdAPhsSbcikLlz0cEDIhoOFQ&oe=6A95A537"
+            ],
+            "url": "https://www.threads.com/@byungwook.an/post/DaUix2Uk2Cg",
+            "created_at": "2026-07-03 15:39:39",
+            "date": "2026-07-03",
+            "crawled_at": "2026-08-27T13:35:09+09:00",
+            "like_count": 1,
+            "comment_count": 1,
+            "share_count": 0,
+            "quote_count": 0,
+            "bookmark_count": null,
+            "view_count": 34,
+            "metrics_updated_at": "2026-08-27T13:35:09+09:00",
+            "source": "my_insight_threads_api",
+            "local_images": [
+                "web_viewer/images/1acc63632641094380f2415227c98ab3.jpg"
+            ],
+            "is_detail_collected": true,
+            "is_merged_thread": true,
+            "is_own_post": true,
+            "platform_sequence_id": 3
+        },
+        {
+            "sequence_id": 2526,
+            "platform_id": "DYWG2zwExJE",
+            "sns_platform": "threads",
+            "code": "DYWG2zwExJE",
+            "urn": "",
+            "username": "byungwook.an",
+            "display_name": "byungwook.an",
+            "full_text": "와, 클로드 토큰이 남다니.\n\n이제 클로드 해지해도 될 것 같다.\n\n예전엔 상상하기 어려운 일이었다.\n클로드 Max 토큰이 모자라서 리셋을 기다렸고,\n코덱스를 켰다가도 결국 클로드로 돌아갔다.\n\n그런데 요즘은 반대다.\n클로드를 켰다가도 금방 코덱스로 돌아간다.\n\n이전엔 비개발자로 클로드를 쓰는 이유는 딱 3가지였다.\n\n1. 알잘딱깔센. 길게 말 안 해도 맥락을 잡았다.\n2. 글쓰기 하면 클로드. 문서로 말하는 비개발 업무에 필수.\n3. 안정적인 터미널 성능. 코덱스 CLI는 표도 깨졌다.\n\n그런데 3가지가 모두 뒤집혔다.\n\n1. 클로드가 토큰 절감하느라 멍청해졌다. 4월말 성능저하 공식인정 후에도 별로다.\n2. GPT5.5 이후 코덱스가 글을 잘 쓴다. 때론 클로드보다 낫다.\n3. 이젠 터미널보다 코덱스 앱이 더 편하다. 표도 안 깨진다.\n+ 여기에 체감상 토큰을 2~4배 더 많이 준다. \n+ 게다가 gpt2 이미지는 압도적이다.\n\n나는 개발자는 아니다.\n비개발 50%, 개발 50% 정도로 쓴다.\n그 개발도 문서, 리서치, 반복 업무 자동화가 많다.\n\n비개발자용으로 누가 추천해달라면,\n이젠 코덱스를 추천할 것 같다.\n\n진짜 클로드 토큰이 남는 날이 올 줄은 몰랐다.\n\n격세지감이다.\n\n참고로 이건 Claude Max($100) + ChatGPT Pro($200/Codex)를 같이 쓰는 개인적인 후기입니다.  윈도우+비개발자+개인 기준이에요. 다음 달엔 또 뭘로 바뀔지도 모릅니다 ㅋㅋ",
+            "media": [
+                "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/699624218_17900572644440207_5622371062789935163_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=5-YSv3FILFEQ7kNvwEyxyZ1&_nc_oc=AdpQUxwK5Wb1AKEu82e1Wz5u5FHl0gPz1J38COFzbdwCBjIgLmal1L_X6Cb80TZKWAw&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ACx9VUEEAAAA&_nc_gid=zvpuBCHNm_zO8vdzmTEbfA&_nc_tpa=Q5bMBQL6RcKINA4lDThKRh6FZ5k_ivivl2NlenvtypotZpciUDwKUTamaJo4bBS-9puiwQQlJAih83kzXg&oh=00_AQGGq3-WYbgFOtb79J_kPr73ENHvzRTysBsKdmSUJPzz8A&oe=6A95A6A3"
+            ],
+            "url": "https://www.threads.com/@byungwook.an/post/DYWG2zwExJE",
+            "created_at": "2026-05-15 13:11:21",
+            "date": "2026-05-15",
+            "crawled_at": "2026-08-27T13:35:10+09:00",
+            "like_count": 52,
+            "comment_count": 28,
+            "share_count": 5,
+            "quote_count": 0,
+            "bookmark_count": null,
+            "view_count": 15473,
+            "metrics_updated_at": "2026-08-27T13:35:10+09:00",
+            "source": "my_insight_threads_api",
+            "local_images": [
+                "web_viewer/images/4bf079140b053cb7644018fdf7b4b969.jpg"
+            ],
+            "is_detail_collected": true,
+            "is_merged_thread": true,
+            "is_own_post": true,
+            "platform_sequence_id": 4
+        },
+        {
+            "sequence_id": 2527,
+            "platform_id": "DX8rQSxEwaN",
+            "sns_platform": "threads",
+            "code": "DX8rQSxEwaN",
+            "urn": "",
+            "username": "byungwook.an",
+            "display_name": "byungwook.an",
+            "full_text": "이제 클로드 구독이 없어도,\n클로드 디자인 쿼터가 끝나도,\n비슷한 방식으로 계속 디자인을 뽑을 수 있습니다.\n\nOpen Design\n\n깃허브 현재 별 2.5만 개.\n5월 4일 rising-repo 기준 상승 레포 1위.\n\n쉽게 말하면,\n내가 쓰는 AI로 클로드 디자인 같은 작업을 할 수 있게 해주는 거에요.\n\n클로드 코드를 쓰면 클로드 코드가,\n코덱스를 쓰면 코덱스가,\n제미나이를 쓰면 제미나이가\n디자인 엔진 역할을 합니다.\n\n설치하면 클로드 코드, 코덱스, 제미나이를 알아서 감지해줍니다.\n이미 만들어진 72개 디자인 시스템이 들어가 있습니다.\n\n클로드 디자인은 좋은데, 쿼터가 너무 적어요.\n저는 클로드 Max인데도\n클로드 디자인만 만료되어 1주일 기다렸습니다.\n\n레포와 설치 방법은 댓글에 남깁니다.\n\n필요하신 분은 아래 설치파일을 다운로드해서 설치하세요.\n잘 모르겠으면 AI에게 아래 내용 복붙해서 설치해달라고 해보세요.\n\nOpen Design 깃허브\nhttps://github.com/nexu-io/open-design\n\n최신 설치 파일 다운로드\nhttps://github.com/nexu-io/open-design/releases/latest\n\n윈도우\n- Windows x64 setup.exe 다운로드\n- 실행 후 설치\n- 서명되지 않은 앱이라 SmartScreen이 뜨면\n  More info → Run anyway로 진행\n\n맥\n- Apple Silicon 맥만 지원\n- macOS 11 Big Sur 이상\n- mac-arm64.dmg 다운로드 후 설치\n- 인텔 맥은 v0.3.0 기준 미지원\n\n설치 후 Open Design 실행.\n클로드 코드, 코덱스, 제미나이 명령어 도구가 잡혀 있으면 앱에서 자동 감지됩니다.",
+            "media": [
+                "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/685262405_17899077057440207_120808751185591807_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=Ia8nN9XcKL8Q7kNvwEusTUG&_nc_oc=Adr9ZGJ24wCEBCgLnIvtI7pq_cGIQTvxizwXs3pmZJziUdQVUSFupfP_3lLUT2gCnV8&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ACx9VUEEAAAA&_nc_gid=zvpuBCHNm_zO8vdzmTEbfA&_nc_tpa=Q5bMBQJTboUQ7OLIWYx6CGKJNYYCYkZjgom2IqCmfb1VDNQp8Pg-qezvOtK5FxiiZ_P5-8Iiv1eos9JZcw&oh=00_AQGKy2ZRQFggOuLRo7-DqH14VVYRnibYX4U8jUZuJLMwkg&oe=6A958DAB"
+            ],
+            "url": "https://www.threads.com/@byungwook.an/post/DX8rQSxEwaN",
+            "created_at": "2026-05-05 16:09:09",
+            "date": "2026-05-05",
+            "crawled_at": "2026-08-27T13:35:10+09:00",
+            "like_count": 4,
+            "comment_count": 2,
+            "share_count": 4,
+            "quote_count": 0,
+            "bookmark_count": null,
+            "view_count": 670,
+            "metrics_updated_at": "2026-08-27T13:35:10+09:00",
+            "source": "my_insight_threads_api",
+            "local_images": [
+                "web_viewer/images/cad9917eae1888109048af13a245bbd5.jpg"
+            ],
+            "is_detail_collected": true,
+            "is_merged_thread": true,
+            "is_own_post": true,
+            "platform_sequence_id": 5
+        },
+        {
+            "sequence_id": 2528,
+            "platform_id": "DXdJVC6Exkg",
+            "sns_platform": "threads",
+            "code": "DXdJVC6Exkg",
+            "urn": "",
+            "username": "byungwook.an",
+            "display_name": "byungwook.an",
+            "full_text": "\"AI스러운 디자인, 10가지만 지우세요\"\n\n요즘 클로드디자인이 주목 받고 있습니다.\n비전공자도 디자인시스템을 구축해서 찍어낼 수 있게 되었으니까요.\n\n문제는 결과물이 묘하게 AI스럽다는 것.\n보라 그라데이션, 아이콘이나 이모지 남발, 어색한 여백...\n\n하나하나는 그럴듯한데, 쌓이면 금방 티가 납니다.\n\n그래서 AI가 만든 티를 줄이기 위한\n디자인 검수 체크리스트 10가지를 정리했습니다.\n\nImpeccable과 StyleSeed 같은\n디자인 전문 Skill에서 나온 60가지 넘는 가이드 중에서\n비전공자가 놓치기 쉬운 것만 추렸습니다.\n\n저장해두고, AI 디자인 결과물 검수할 때 한 번씩 보세요.",
+            "media": [
+                "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/670875930_17897070771440207_5097460657709712499_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=NsjienbGqM8Q7kNvwGUaQh6&_nc_oc=AdrRWRsEx3bQq37olgZOL_waJJ1MgsFk-V3MfGu9IAU0g5hhs6590JAZhZcrXhraKNk&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ACx9VUEEAAAA&_nc_gid=zvpuBCHNm_zO8vdzmTEbfA&_nc_tpa=Q5bMBQJw7scIBw3Grxdn0B41-4iZ_FnMgxo2yxejBVZFV9_LND9gV2A4ElqWQ9yDYuNLlNd57dSPqUUZSQ&oh=00_AQGPRjKmvPCX_qT06d-hsxwF3vR5mH4DXz7YNEdt6IoDlA&oe=6A958D89"
+            ],
+            "url": "https://www.threads.com/@byungwook.an/post/DXdJVC6Exkg",
+            "created_at": "2026-04-23 10:16:15",
+            "date": "2026-04-23",
+            "crawled_at": "2026-08-27T13:35:11+09:00",
+            "like_count": 9,
+            "comment_count": 0,
+            "share_count": 3,
+            "quote_count": 1,
+            "bookmark_count": null,
+            "view_count": 635,
+            "metrics_updated_at": "2026-08-27T13:35:11+09:00",
+            "source": "my_insight_threads_api",
+            "local_images": [
+                "web_viewer/images/62e2830120205ccb4bb2be54422b13be.jpg"
+            ],
+            "is_detail_collected": true,
+            "is_merged_thread": false,
+            "is_own_post": true,
+            "platform_sequence_id": 6
+        },
+        {
+            "sequence_id": 2529,
+            "platform_id": "DWi-PZ5k88n",
+            "sns_platform": "threads",
+            "code": "DWi-PZ5k88n",
+            "urn": "",
+            "username": "byungwook.an",
+            "display_name": "byungwook.an",
+            "full_text": "<평범한 딸깍 제안서, 엣지 있게 바꾸는 3가지 노하우>\n\n링크드인에서 AI강사 구한다는 게시글 보고, \n클로드 코워크로 제안서를 \"딸깍\" 뽑았다.\n물론 강의록, 후기 등을 모으고 정리하는 건 전혀 딸깍이 아니었다. \n\n번잡한 작업 끝에 나온 결과물은 깔끔했다.\n근데, \"깔끔하기만 했다. 그리고 평범했다\" \n— 이걸로 경쟁을 뚫을 수 있을까? No!\n\n그래서 전혀 딸깍스럽지 않게 핑퐁했고, \n그 결과 나온 최종본과 딸깍본, 핵심적인 차이점을 뜯어봤다.\n\n✅01_깔끔한 AI 디자인보다 울퉁불퉁한 인간 냄새를 넣는다.\n\n(before) AI가 강의 후기를 이쁘게 정리해줬다. 깔끔하게.\n→ 근데, 도리어 가짜 같다. 확 신뢰가 떨어진다.\n\n(after) 실제 카톡 메시지, 후기 캡처를 그대로 넣었다.\n→ 거칠어보인다. 드디어 \"진짜\"로 보인다. \n\nAI시대일수록 매끄럽게 두지 말자. 록커처럼 거칠게 써보자.\n\n✅02_고객은 끝까지 읽지 않는다 - 제안서도, 메일도.\n\n(before) \"AI 활용 교육 제안서\"\n→ 벌써 지루하다. 이런 제안서가 수십개다. 과연 읽을까?\n\n(after) \"Why 이 사람을 뽑아야 하는 3가지 이유\"\n→ 제안서 제목은 대학 레포트 제목이 아니다. 광고 헤드라인처럼 써야 한다.\n\n여기서 변칙 플레이 하나.\n3가지 이유를 표지에 포함해버렸다.\n(마치 Executive Summary + 표지 느낌)\n\n이러면 \"요 녀석 봐라?\" 하면서 흥미가 생긴다. \n그러면 50%는 성공한 거다.\n제안서에서 최악은 지루한 거다.\n\n메일 제목도 마찬가지.\n\n(before) \"[강사지원] 안병욱 — AI 활용 강의 지원드립니다\"\n → 고객 메일엔 이런게 20개 쌓여있다. 갑자기 클릭이 귀찮아진다.\n\n(after) \"[강사지원] 안병욱 — 15년 기획경력 + 누적수강생 893명 + 클로드코드MAX유저\"\n → 핵심이 제목에 있다. 심지어 읽어볼 필요도 없다. 근데 역설적으로 궁금해진다.",
+            "media": [
+                "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/657754525_17893622631440207_6550585245995558505_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=9gxhreB0ZyAQ7kNvwEtiVTn&_nc_oc=AdoMhsMgVPX4IvT4wgU4TD5EDEG5-yKeNKRRkTX7eonq5FKD3wPGj5N_pv3R5Jg4FHE&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ACx9VUEEAAAA&_nc_gid=zvpuBCHNm_zO8vdzmTEbfA&_nc_tpa=Q5bMBQIaXkPVc5craF2xf1lCkSTOuj9uY5xROVjMPNnBCYfnzARO9XhzdTFJM8rJ8ws_kGfTeOwQO_OoAQ&oh=00_AQF_Kc5lX91mHSRAlL-f7N7FCdqa6-rhTrI__1L5PEb9Ig&oe=6A958557"
+            ],
+            "url": "https://www.threads.com/@byungwook.an/post/DWi-PZ5k88n",
+            "created_at": "2026-03-31 20:03:25",
+            "date": "2026-03-31",
+            "crawled_at": "2026-08-27T13:35:12+09:00",
+            "like_count": 2,
+            "comment_count": 3,
+            "share_count": 0,
+            "quote_count": 0,
+            "bookmark_count": null,
+            "view_count": 278,
+            "metrics_updated_at": "2026-08-27T13:35:12+09:00",
+            "source": "my_insight_threads_api",
+            "local_images": [
+                "web_viewer/images/52a068462d8df1ad0503d649d7e056cf.jpg"
+            ],
+            "is_detail_collected": true,
+            "is_merged_thread": true,
+            "is_own_post": true,
+            "platform_sequence_id": 7
+        },
+        {
+            "sequence_id": 2530,
+            "platform_id": "DWVjfKHkhT0",
+            "sns_platform": "threads",
+            "code": "DWVjfKHkhT0",
+            "urn": "",
+            "username": "byungwook.an",
+            "display_name": "byungwook.an",
+            "full_text": "스킬 63만 개 시대,\n아직도 스킬 처음부터 만드나요?\n\n스킬검색 사이트 4종 완전 비교분석 가이드 공유합니다!\n(클로드, Antigravity, Codex, Gemini CLI도 사용 가능)\n\n1. skills.sh — find-skills로 가장 유명한 스킬 허브 (12K stars)\n - 스킬 9만개, npx skills add 한 줄로 즉시 설치.\n\n2. skillsmp.com — 스킬 DB 최대 규모\n - 스킬 63만개. 자연어 검색으로 검색 매칭 잘됨.\n\n3. vibeindex.ai — 스킬·MCP·플러그인 한번에 검색\n - 스킬 10만 / MCP 6천 / 플러그인 1.4만.\n\n4. smithery.ai — 스킬 이용자수, 품질점수 제공\n - 스킬 13만 / MCP 3천\n\n직접 다 써보고, 테스트해서 만들었어요.\n원하면 \"스킬\"이라고 댓글 달아주면 보내드릴게요.",
+            "media": [
+                "https://scontent-ssn1-1.cdninstagram.com/o1/v/t16/f2/m84/AQOD9LUqWpr3CFD2L3chRX3p29Se21hqssPMLfDKPtAKhJ0epAoLLV3JeCvfY54C5pixz3SKbOQ66bH9_B0Hl5lyxdlyKvujQ9zXdEE.mp4?_nc_cat=109&_nc_sid=1d576d&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=y0zU51j7MZ4Q7kNvwFKN1rY&efg=eyJ2ZW5jb2RlX3RhZyI6InZ0c192b2RfdXJsZ2VuLmZlZWQudW5rbm93bi1DMy42NDAuZGFzaF9iYXNlbGluZV8zX3YxIiwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=1672713343725195_1646674451&_nc_vs=HBksFQIYTGlnX2JhY2tmaWxsX3RpbWVsaW5lX3ZvZC8wOTQwNzQyN0NENzMwODA4QzI5RDY1M0M5MDgzNjhBRF92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzUxNEJCMjYyNzY1MUY5MTkxMENCMENCM0VDMjBFRjlGX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwGIB3VzZV9vaWwBMRUAACaev%2Bv8l9nIPxUCKAJDMywXQCJEGJN0vGoYEmRhc2hfYmFzZWxpbmVfM192MREAdeoHZeieAQA%3D&_nc_gid=zvpuBCHNm_zO8vdzmTEbfA&edm=ACx9VUEEAAAA&_nc_zt=28&oh=00_AQHQY0syqMmlW2d9AE9Fv914PhqOm7Qe8llcqfy6QWUsMw&oe=6A919EFF"
+            ],
+            "url": "https://www.threads.com/@byungwook.an/post/DWVjfKHkhT0",
+            "created_at": "2026-03-26 15:00:18",
+            "date": "2026-03-26",
+            "crawled_at": "2026-08-27T13:35:13+09:00",
+            "like_count": 52,
+            "comment_count": 128,
+            "share_count": 31,
+            "quote_count": 0,
+            "bookmark_count": null,
+            "view_count": 3768,
+            "metrics_updated_at": "2026-08-27T13:35:13+09:00",
+            "source": "my_insight_threads_api",
+            "local_images": [],
+            "is_detail_collected": true,
+            "is_merged_thread": false,
+            "is_own_post": true,
+            "platform_sequence_id": 8
+        },
+        {
+            "sequence_id": 2531,
+            "platform_id": "DWFt2fdE0ws",
+            "sns_platform": "threads",
+            "code": "DWFt2fdE0ws",
+            "urn": "",
+            "username": "byungwook.an",
+            "display_name": "byungwook.an",
+            "full_text": "클로드코드 yolo 모드 쓰는데, 업데이트하고 갑자기 Yes를 자꾸 누르란다.\n\n알고보니까, v2.1.78 업데이트에서 .claude/ 폴더 전체에 보호 로직이 걸렸다. 원래는 settings.json 같은 민감 파일만 지키려던 건데, 범위가 너무 넓게 잡힌 거다. 스킬이나 훅을 조금만 건드려도 승인하라고 계속 뜬다.\n\nAnthropic이 공식 실수로 인정했다.\n직접 github 이슈에다 regression(퇴행) 라벨을 붙인 것.\n\n불편해서 3시간동안 시행착오 끝에 이 방법으로 성공했다. \nnpm이나 winget은 경고 뜨고 자동 업데이트되니까, native installer로 해야 한다.\n나처럼 돌아가고 싶으면, 이렇게 하면 된다.\n혹시 잘 모르겠으면, 이거 붙여 넣고 클로드한테 물어보자.",
+            "media": [],
+            "url": "https://www.threads.com/@byungwook.an/post/DWFt2fdE0ws",
+            "created_at": "2026-03-20 11:22:13",
+            "date": "2026-03-20",
+            "crawled_at": "2026-08-27T13:35:14+09:00",
+            "like_count": 0,
+            "comment_count": 0,
+            "share_count": 0,
+            "quote_count": 0,
+            "bookmark_count": null,
+            "view_count": 560,
+            "metrics_updated_at": "2026-08-27T13:35:14+09:00",
+            "source": "my_insight_threads_api",
+            "local_images": [],
+            "is_detail_collected": true,
+            "is_merged_thread": false,
+            "is_own_post": true,
+            "platform_sequence_id": 9
+        },
+        {
+            "sequence_id": 2532,
+            "platform_id": "DWDGf8-k-Dl",
+            "sns_platform": "threads",
+            "code": "DWDGf8-k-Dl",
+            "urn": "",
+            "username": "byungwook.an",
+            "display_name": "byungwook.an",
+            "full_text": "AI한테 뭔가 시켜놓고, 보다가 포기한 적 있으세요?\n\n저는 꽤 자주 그랬어요. 특히 비교분석 시킬 때. 이거저거 잘 만들어주긴 한데... 결국 느낌으로 결정하고 있더라고요.\n\n원인을 찾아봤습니다.\n\nAI가 만드는 표에 기준이 없었어요.\n\n에러 없다고 빨간 X, 치명적 에러라고 빨간 X.\n기능이 좋아서 초록 O, 에러 있어서 초록 O.\n막대바도 마찬가지예요.\n\n기준이 없으니까 뇌가 매번 번역해야 하고,\n결국 판단 대신 느낌으로 고르게 됩니다.\n\n그래서 Custom Instruction을 직접 만들었어요.\n\n01/ ✅는 가장 유리한 옵션, ❌는 불리\n02/ 막대바는 항상 많이 찰수록 유리\n03/ 낮을수록 유리한 지표는 이름 바꿈 (비용 → 비용효율)\n\nGemini, Claude, ChatGPT 다 됩니다.\n\n(반응 좋으면 Claude Code 스킬 버전도 풀어볼게요)\n\n명령어는 댓글에.\n써보고 좋으면 스하리 ㄱㄱ^^\n\nCustom Instruction 명령어입니다.\nGemini → 설정 → 개인별 맞춤 AI → 복붙하시면 돼요.\nClaude, ChatGPT도 동일하게 적용됩니다.",
+            "media": [
+                "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/653347057_17891533182440207_6369258508238005895_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=UIvRIb5SKKkQ7kNvwGIqAGO&_nc_oc=AdqeNTmyMv5B3wWLAoPvDtQaeqcGaYx78tK-pq9oTUH78OCGtjJluczGQsKRZi20JyA&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ACx9VUEEAAAA&_nc_gid=zvpuBCHNm_zO8vdzmTEbfA&_nc_tpa=Q5bMBQK2cLzmBWSBp34ceWOOgfGlkH6a0SDFzgPjQDwYwmfAdzYPFOsaQdMkPIZOA8QWS2wketYQ-94bng&oh=00_AQENy4RYl6jU0jQtx7Y3_2X0vmyhlMVBHxRgvH9bbekEyw&oe=6A959594"
+            ],
+            "url": "https://www.threads.com/@byungwook.an/post/DWDGf8-k-Dl",
+            "created_at": "2026-03-19 10:59:53",
+            "date": "2026-03-19",
+            "crawled_at": "2026-08-27T13:35:14+09:00",
+            "like_count": 1,
+            "comment_count": 2,
+            "share_count": 0,
+            "quote_count": 0,
+            "bookmark_count": null,
+            "view_count": 226,
+            "metrics_updated_at": "2026-08-27T13:35:14+09:00",
+            "source": "my_insight_threads_api",
+            "local_images": [
+                "web_viewer/images/23b687bc73b739c194b668881f13ac8d.jpg"
+            ],
+            "is_detail_collected": true,
+            "is_merged_thread": true,
+            "is_own_post": true,
+            "platform_sequence_id": 10
+        },
+        {
+            "sequence_id": 2533,
+            "platform_id": "DVx5H52E9Q1",
+            "sns_platform": "threads",
+            "code": "DVx5H52E9Q1",
+            "urn": "",
+            "username": "byungwook.an",
+            "display_name": "byungwook.an",
+            "full_text": "<15만원짜리 Max 요금제 쓰는데, 주간한도 3% 남았다>\n\n사용량을 보니 Sonnet이 40%나 남았다. \n오... 소넷 쓰면 되겠네.\n\n근데 전체가 5%밖에 안 남았다는데\n소넷이 40%나 된다는게 이상해서 2시간을 뒤졌다.\n\n✅ 결론부터 말하면, 안 된다.\n\n01/ 소넷 사용량은 참고용이다.\n\n즉, 주간한도를 다 쓰면 소넷이 40% 남아도 못쓴다. \n반대로 소넷을 먼저 다 쓰면 소넷만 못 쓴다. \n(참고로 Opus는 이런 제한이 없다. 비싸니까?)\n마치 5시간 제한이랑 7일 제한 둘 중 하나만 걸려도 못쓰는 거랑 마찬가지\n\n02/ 그럼 뭐하러 Sonnet 사용량 따로 보여주나\n\n소넷만 쓰지 말라는 거다. \n소넷이 오퍼스보다 1.67배 싸니까... \n전체 90%까지는 소넷을 쓸 수 있다.\n즉, 최소 10%는 오퍼스 쓰라는 거다.\n\n클로드 공식 GitHub 이슈에\n낚인 사용자들 분노 댓글이 쌓이고 있다. \n\n왜 이렇게 설레게(?) 만들었냐고.\n혹시 일부러 그런 건 아니겠지...ㅋ",
+            "media": [
+                "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/650155509_17890538700440207_5570909980869477821_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=GQ3zylry7j8Q7kNvwGzo16-&_nc_oc=AdoXcRUV_1yFaX1V1-pOK_qZqzOCDei_LGx0_FVXEL2fJp0dP4czHhHH6mF6-cJFgEo&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ACx9VUEEAAAA&_nc_gid=zvpuBCHNm_zO8vdzmTEbfA&_nc_tpa=Q5bMBQL6bnqxMyvjAuI6h-JscySz3hfc3o7r_y1leuemHwSefo1KqTd_yFJ85TSHEDGz48MjZVB-jklNeA&oh=00_AQEzqGh4XhTqHwOJZVKChHYBWbHMAxEorgKERHwBihiEWQ&oe=6A9580B6"
+            ],
+            "url": "https://www.threads.com/@byungwook.an/post/DVx5H52E9Q1",
+            "created_at": "2026-03-12 18:35:55",
+            "date": "2026-03-12",
+            "crawled_at": "2026-08-27T13:35:15+09:00",
+            "like_count": 2,
+            "comment_count": 0,
+            "share_count": 0,
+            "quote_count": 0,
+            "bookmark_count": null,
+            "view_count": 250,
+            "metrics_updated_at": "2026-08-27T13:35:15+09:00",
+            "source": "my_insight_threads_api",
+            "local_images": [
+                "web_viewer/images/220aa785699ec6bdfbb2ed8ff23416a3.jpg"
+            ],
+            "is_detail_collected": true,
+            "is_merged_thread": false,
+            "is_own_post": true,
+            "platform_sequence_id": 11
+        },
+        {
+            "sequence_id": 2534,
+            "platform_id": "DVapXpBk_f4",
+            "sns_platform": "threads",
+            "code": "DVapXpBk_f4",
+            "urn": "",
+            "username": "byungwook.an",
+            "display_name": "byungwook.an",
+            "full_text": "이렇게 하고 나서,\n안티그래비티 토큰 부족한 적 없다.\n\n안티그래비티 편하긴 한데, 토큰이 생각보다 금방 바닥난다.\n내 말도 잘 안듣고, 코딩도 에러투성이고...\n\n01/ Gemini CLI 같이 써라.\n\n같은 제미나이인데, 토큰이 따로다.\n그래서 아무리 써도 안티그래비티 토큰은 100% 그대로다.\n게다가 코딩하다 열받고 짜증낼 일이 80% 줄어든다.\n특히 bkit, superpowers 깔면 거의 에러가 안난다.\n(Yolo모드 켜면 더욱 편하다 : 단축키 Ctrl+Y)\n\n02/ 까만 터미널이 부담이면 VS Code + Gemini Code Assist(확장) 추천!\n\n안티그래비티랑 비슷하게 생겨서 편하게 쓸 수 있다.\n단, bkit 같은 확장팩 안되고, 슬래시커맨드 안된다.\n그래도 토큰 부족할 때 가끔 쓰기 좋다.\n(Agent Yolo Mode => 이거 켜놓으면 편하다.)\n\n저장해두고, 토큰 바닥날 때 꺼내보세요.\n\n이 글이 좋았다면, 스하리 ㄱㄱ^^\n\n[퀴즈] 이 화면은 안티그래비티일까? VS code일까? \n정답은 VS Code 화면이다. \n\n안티그래비티랑 비슷하게 생겨서 그만큼 편하다는 얘기.\n이거 저장해두고, 토큰 막힐 때 써보세요^^",
+            "media": [
+                "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/642174350_17889173805440207_7703239543407542453_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=qxIxv9wW_AwQ7kNvwGMhmR5&_nc_oc=AdolWo8CNxVnOB_BvmQLgZJ9MCSv3Pjtpft_ZFKmiAiPv2b6arnJo43cwxMvskKkJRM&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ACx9VUEEAAAA&_nc_gid=zvpuBCHNm_zO8vdzmTEbfA&_nc_tpa=Q5bMBQK2Z3O3GtElbunzxO57hJLQtnHtuKj7HgnWyuiQZYFQ1MntbllG5LNTMO6IbJq0iDL7-1FB2mZVLg&oh=00_AQHnJ5SKbGM0TFMmM2F_y-PuEAtiGmlObX1ODRLIQOTKYA&oe=6A95ABA9"
+            ],
+            "url": "https://www.threads.com/@byungwook.an/post/DVapXpBk_f4",
+            "created_at": "2026-03-03 17:55:43",
+            "date": "2026-03-03",
+            "crawled_at": "2026-08-27T13:35:16+09:00",
+            "like_count": 21,
+            "comment_count": 1,
+            "share_count": 4,
+            "quote_count": 0,
+            "bookmark_count": null,
+            "view_count": 1332,
+            "metrics_updated_at": "2026-08-27T13:35:16+09:00",
+            "source": "my_insight_threads_api",
+            "local_images": [
+                "web_viewer/images/9e89dee86729195dd67e9dd8fad516ef.jpg"
+            ],
+            "is_detail_collected": true,
+            "is_merged_thread": true,
+            "is_own_post": true,
+            "platform_sequence_id": 12
+        },
+        {
+            "sequence_id": 2535,
+            "platform_id": "DVBhZELE1U_",
+            "sns_platform": "threads",
+            "code": "DVBhZELE1U_",
+            "urn": "",
+            "username": "byungwook.an",
+            "display_name": "byungwook.an",
+            "full_text": "허... 진짜 누워서 코딩이 되네..\n오픈클로 아니고, 클로드코드 공식 앱에서.\n\nAnthropic 해커톤 우승자 블로그 글 읽다가 발견해서\n진짜 되나 싶어서 해봤는데.\n안드로이드 앱 기준으로 진짜 됨.\n(아이폰도 된다고 함)\n\n첨에 github 리포지토리 연동하라는데\n그것만 하면 쌉가능.\n\n맥미니 대란이라더니...\n복잡하게 세팅할 필요도 없고, 안전하고.\n급할때 그냥 이렇게 하면 되겠네.\n\n특히 아이디어 생각날 때\n바로바로 프로토타입 만들기 좋을 것 같다.",
+            "media": [
+                "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/639856197_17887817193440207_4741875579403226139_n.webp?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=3zXdNOSGvoEQ7kNvwG6QQWa&_nc_oc=AdqHJdDuTvn6bofR0l5EqXjrVl6lgShgSyy2Xi_1Hsc4VSJyUICSfJIJ5YNgj581W3Q&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ACx9VUEEAAAA&_nc_gid=zvpuBCHNm_zO8vdzmTEbfA&_nc_tpa=Q5bMBQJwpjPXa-yBP_x5gO5qR4mIdNNrPBxRc1GAaJcRCkRPDu5pL2xQmKclETIel3bgLSZucWTmUOPsaQ&oh=00_AQHE8GhFDJa6V1IiAAx2Y1bMDncFQ0VmcOwe_Bue8T6ZJw&oe=6A9587C5"
+            ],
+            "url": "https://www.threads.com/@byungwook.an/post/DVBhZELE1U_",
+            "created_at": "2026-02-21 23:45:00",
+            "date": "2026-02-21",
+            "crawled_at": "2026-08-27T13:35:16+09:00",
+            "like_count": 14,
+            "comment_count": 7,
+            "share_count": 3,
+            "quote_count": 0,
+            "bookmark_count": null,
+            "view_count": 2137,
+            "metrics_updated_at": "2026-08-27T13:35:16+09:00",
+            "source": "my_insight_threads_api",
+            "local_images": [
+                "web_viewer/images/925aad2d9aafe29d4e78b2cd7fdb73e4.webp"
+            ],
+            "is_detail_collected": true,
+            "is_merged_thread": false,
+            "is_own_post": true,
+            "platform_sequence_id": 13
+        },
+        {
+            "sequence_id": 2536,
+            "platform_id": "DU8Deq3kwtt",
+            "sns_platform": "threads",
+            "code": "DU8Deq3kwtt",
+            "urn": "",
+            "username": "byungwook.an",
+            "display_name": "byungwook.an",
+            "full_text": "클로드코드 tool_search 쓰면 90% 토큰 절약된다길래 해봤어요.\n필요할 때만 MCP를 불러오는 거예요. 잘 됩니다.\n\n저는 4개 기준 6% 차지해요.\n작아보이지만 매 세션마다 반복되는 거라 중요해요.\n\n욕심이 생겨서, 자주 쓰는 도구만 즉시 불러오고,\n나머지는 필요할 때만 불러오려고 했거든요.\n\ndefer_loading 쓰면 된다기에 해봤는데\n/context 열어보니까 안 돼요.\n\n반나절 넘게 5가지 조합으로 실험했는데 전부 똑같은 결과.\n에러 메시지도 없이 그냥 조용히 안 됩니다ㅠ\n\n알고 보니 defer_loading은 API 사용자만 되는 거였어요.\n여기저기서 이거 된다는 분들 많았는데,\n안 써본 분들인 것 같아요ㅠㅠ\n\nAPI 사용하지 않는 일반 클코 사용자라면\nENABLE_TOOL_SEARCH 환경변수만 쓰세요.\n\n이런 안내가 없으니까, 괜히 열받아서\n비개발자인데 처음으로 클로드코드 공식 GitHub에\n고쳐달라고 이슈 올렸어요.\n\n혹시 반영되면 소식 또 올릴게요.\n\n✅ 혹시 tool_search 처음 보신 분들 꼭 설정해보세요. \n토큰 아끼는데 큰 도움 됩니다^^ \n\n`C:\\Users\\{사용자이름}\\.claude\\settings.json` 열고 \n`\"env\": { \"ENABLE_TOOL_SEARCH\": \"true\" }` 추가하면 됩니다.\n안되면, 클코에 물어보시고요^^\n\nGitHub Issue + 실험결과가 궁금하다면 아래 링크 참고하세요.\nhttps://github.com/anthropics/claude-code/issues/26844",
+            "media": [
+                "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/639490323_17887542129440207_8742666015738395405_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=pREoytyIdmIQ7kNvwFVvJ_K&_nc_oc=AdoVNjI4TJD2uhIpsUuspHLv4jYyG8lowivl-_sbWAKMn0v5iBwe__LwNcwkgPd5g2I&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ACx9VUEEAAAA&_nc_gid=zvpuBCHNm_zO8vdzmTEbfA&_nc_tpa=Q5bMBQLJL2xKHunNY_8hPd3K_92SR3wXcvu19fa-zxjDvvnTE8WQ94zIM9hQ9l2KtC9fsDbYyzn8cMD6PA&oh=00_AQGGkRIF1Fkv9OE8zrIx2-FWAOv4Rv1xUNhvlKNzRciQaQ&oe=6A95A9B7"
+            ],
+            "url": "https://www.threads.com/@byungwook.an/post/DU8Deq3kwtt",
+            "created_at": "2026-02-19 20:47:25",
+            "date": "2026-02-19",
+            "crawled_at": "2026-08-27T13:35:17+09:00",
+            "like_count": 34,
+            "comment_count": 1,
+            "share_count": 7,
+            "quote_count": 1,
+            "bookmark_count": null,
+            "view_count": 2789,
+            "metrics_updated_at": "2026-08-27T13:35:17+09:00",
+            "source": "my_insight_threads_api",
+            "local_images": [
+                "web_viewer/images/51313c67a770169dcd9e4677cf01f158.jpg"
+            ],
+            "is_detail_collected": true,
+            "is_merged_thread": true,
+            "is_own_post": true,
+            "platform_sequence_id": 14
+        },
+        {
+            "sequence_id": 2537,
+            "platform_id": "DUyGX-Pk_89",
+            "sns_platform": "threads",
+            "code": "DUyGX-Pk_89",
+            "urn": "",
+            "username": "byungwook.an",
+            "display_name": "byungwook.an",
+            "full_text": "이번 설엔 제미나이로 \"관상\" 해보세요.\n​어색한 침묵, 뻔한 덕담... 지겹지 않으세요?\n이 프롬프트 하나면 명절 분위기, 순식간에 바뀝니다.\n\n오늘 저녁에 재미로 해봤는데 2시간이 순삭 지나갔네요.\n재미로 시작했다 소름 돋는 정확도에 할 말을 잃었습니다. 해보니까 손금보다 관상이 훨씬 정확해요.\n\n​그냥 물어보면 뻔한 AI 답변만 나옵니다.\n핵심은 AI의 '예의바름'을 해제하는 것입니다.\n\n​[3단계]\n01/ ​하얀 벽 앞에서 찍으세요. (데이터 잡음 제거)\n02 / 사진 업로드 + ​입력: \"그냥 설명해\" 대신 \"솔직하고 직설적으로\"라고 명령하세요. (사고 or 프로 모드 권장)\n03 / 답변나오면 음성모드 켜고 \"지금 답변 솔직하고 직설적으로 말로 설명해줘\"... 즉석 제미나이의 관상풀이 들어보세요. 뒤집어집니다^^\n\n​[복붙용 프롬프트]\n\"새로운 40대 중반 남자의 얼굴이야. 관상을 재물운, 애정운 포함해 아주 상세하고 직설적으로 분석해줘.\"\n\n​[부부라면?]\n(한 명 분석 후 배우자 사진 업로드)\n\"다음 사람이 이 여자의 남편이야. 두 부부의 실제 생활이 어떨지 가감 없이 솔직하게 풀어줘.\"\n\n(주의) 부부 사이 좋은 분들만 하세요... 안그럼 괜히 싸울 수도.. ㅠㅠ",
+            "media": [
+                "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/634126069_17887048851440207_6886824421093958848_n.webp?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=RG6GdZRyhVwQ7kNvwHHDJYA&_nc_oc=AdqtICeWUnW5OGZi0Rmb_swahFjJkMCk0HDj3-Z5nYx-pdb9Vny3dhFLKF7byux6l7o&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ACx9VUEEAAAA&_nc_gid=zvpuBCHNm_zO8vdzmTEbfA&_nc_tpa=Q5bMBQKDNNeQtszeC4O-gKCWIe-xrNrClaSe27EgOiE9_GqGNeMuyy9IJM_m-Wz1o-owOGwHU1OiwuekbA&oh=00_AQFAVjjjwIDJR7UMs1dHZUB3lpjixfz6COhUvdxz5VjJeQ&oe=6A95A562"
+            ],
+            "url": "https://www.threads.com/@byungwook.an/post/DUyGX-Pk_89",
+            "created_at": "2026-02-16 00:00:18",
+            "date": "2026-02-16",
+            "crawled_at": "2026-08-27T13:35:18+09:00",
+            "like_count": 2,
+            "comment_count": 1,
+            "share_count": 0,
+            "quote_count": 0,
+            "bookmark_count": null,
+            "view_count": 812,
+            "metrics_updated_at": "2026-08-27T13:35:18+09:00",
+            "source": "my_insight_threads_api",
+            "local_images": [
+                "web_viewer/images/678cd97f7e18104fa916920ec9821c06.webp"
+            ],
+            "is_detail_collected": true,
+            "is_merged_thread": true,
+            "is_own_post": true,
+            "platform_sequence_id": 15
+        },
+        {
+            "sequence_id": 2538,
+            "platform_id": "DUrznC3Eypg",
+            "sns_platform": "threads",
+            "code": "DUrznC3Eypg",
+            "urn": "",
+            "username": "byungwook.an",
+            "display_name": "byungwook.an",
+            "full_text": "🚨 잘 못 사면 소멸된다 : 카카오 ChatGPT Pro 대란, 4가지 주의점!!\n\n1/ 등록 버튼 누르면, 환불 불가\n2/ 등록 안하면 100% 환불 가능, 유효기간 지나면 90% 환불\n3/ 유효기간 이후 실수로 \"사용취소\" 누르면 망한다. (0원 된다)\n4/ 등록만 하고 깜빡하고 \"사용신청\" 안한 채로 유효기간 지나면 0원 된다.\n\nQ. 5개도 사용 가능한가? \n→ 가능하다. 단 등록 → \"사용신청\" 해야 한다.\n이러면 1개는 \"구독\"으로 바로 쓰고, 나머지는 \"사용예정\"이 된다. \n차례대로 자동으로 적용된다. \n\nQ. 10개도 사용 가능한가?\n→ 가능하다. 가족이름으로 5개 사서 선물해달라고 한다.\n\n✅ 3줄 요약\n\n- 잘 모르겠음. 등록하지 마라. (환불가능)\n- 확실히 쓸거는, 전부 등록 → \"사용신청\"까지 해놔라.\n- 등록하고 건들지 마라. (사용취소하면 나락간다)\n\n.\n.\n.\n\n근데 난 쫄보라서 3개만 샀다.\n\n자세한 근거는 댓글에. 👇\n\n썰보다 공식문구로만 정리한다.\n\n✅ \"유효기간은 사용 신청을 할 수 있는 유효기간입니다\"\n→ 유효기간 내 \"사용신청\"하면 사용 가능하다.\n\n✅ \"현재 이용 중인 상품 종료 후 이용권이 자동으로 사용됩니다.\"\n→  여러개 \"사용신청\"해도 차례대로 자동으로 이어서 사용된다.",
+            "media": [
+                "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/630054334_17886687828440207_1604231816148596536_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=5ndIYMAVnl8Q7kNvwGhO201&_nc_oc=AdpT_ZE1LlW6_ccXiyUJ4GpN14iiAdoBcw04xD1Caf-4J3USsdItjNBGBcAWA3XV_o8&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ACx9VUEEAAAA&_nc_gid=zvpuBCHNm_zO8vdzmTEbfA&_nc_tpa=Q5bMBQLbliczZ_wwaX7bjQ0Sv9-_vhyb1JLKGkW2mUU88ikcNjtwLt0uu_G3lKY86NHEpcH6O4r9ftowmg&oh=00_AQHXd1393D_8QrtDl4eAH3AJ5kI7SrR3hMLS2-GMq9YVJA&oe=6A957AE9"
+            ],
+            "url": "https://www.threads.com/@byungwook.an/post/DUrznC3Eypg",
+            "created_at": "2026-02-13 13:20:54",
+            "date": "2026-02-13",
+            "crawled_at": "2026-08-27T13:35:19+09:00",
+            "like_count": 16,
+            "comment_count": 10,
+            "share_count": 2,
+            "quote_count": 0,
+            "bookmark_count": null,
+            "view_count": 3486,
+            "metrics_updated_at": "2026-08-27T13:35:19+09:00",
+            "source": "my_insight_threads_api",
+            "local_images": [
+                "web_viewer/images/d4628c96a2736177ef9511bb72d15291.jpg"
+            ],
+            "is_detail_collected": true,
+            "is_merged_thread": true,
+            "is_own_post": true,
+            "platform_sequence_id": 16
+        },
+        {
+            "sequence_id": 2539,
+            "platform_id": "DUmvgS6E4a-",
+            "sns_platform": "threads",
+            "code": "DUmvgS6E4a-",
+            "urn": "",
+            "username": "byungwook.an",
+            "display_name": "byungwook.an",
+            "full_text": "매번 프롬프트 생각해서 쓰시나요?\n저는 gemini에 5개 명령어를 박아뒀습니다.\n(클로드, ChatGPT도 됩니다)\n\n쓰기 힘들면 대충 쓰지만, 명령어로 해두면 자주 쓰게 되요.\n그만큼 답변의 퀄러티가 달라집니다.\n\n/summary - 뻔한 요약x, 놓치기 쉬운 것만!\n/editor - 맛있게 글을 쓰고 싶을 때\n/insight -  뻔한 얘기만 반복하기 싫다면\n/critic - 발표 전에 구멍 찾을 때\n/wrap - 복잡한 AI와 대화 정리할 때\n\n[사용법]\nGemini → 설정 → 개인별 맞춤 AI → 명령어 복붙\n\n명령어는 댓글에.\n\n본인한테 맞는 거 1-2개만 써보세요.\n\"/summary 유튜브링크\", \"/critic\", \"/wrap\" 이렇게만 넣어도 됩니다. \n\n써보고 좋으면, 스하리 ㄱㄱ^^\n\n\"1. 명령어(/summary) 입력 시, 제공된 콘텐츠 또는 URL을 요약하고, 핵심 근거가 되는 부분은 발췌하여 제시한다. 해당 콘텐츠에서 대중의 관점에 반대되거나, 대다수가 간과하는 인사이트가 있다면 이를 부각시킨다. \"\n\n\"2. 명령어(/critic): 입력 시 내 가설을 객관적으로 평가하고, 솔직한 비평과 레드 플래그를 제공한다. \"\n\n\"3. 명령어(/insight): 입력 시, 현재 맥락에 대해 통념을 뒤집는 '이면의 본질'을 파헤친다. 뻔하고 일반적인 분석 대신, 대다수가 간과하는 구조적 모순, 근원적 실상, 혹은 불편하지만 중요한 진실을 날카롭고 매력적인 관점으로 제시하라. \"",
+            "media": [],
+            "url": "https://www.threads.com/@byungwook.an/post/DUmvgS6E4a-",
+            "created_at": "2026-02-11 14:08:49",
+            "date": "2026-02-11",
+            "crawled_at": "2026-08-27T13:35:20+09:00",
+            "like_count": 253,
+            "comment_count": 23,
+            "share_count": 79,
+            "quote_count": 7,
+            "bookmark_count": null,
+            "view_count": 17244,
+            "metrics_updated_at": "2026-08-27T13:35:20+09:00",
+            "source": "my_insight_threads_api",
+            "local_images": [],
+            "is_detail_collected": true,
+            "is_merged_thread": true,
+            "is_own_post": true,
+            "platform_sequence_id": 17
+        },
+        {
+            "sequence_id": 2540,
+            "platform_id": "DUQMZA6E09C",
+            "sns_platform": "threads",
+            "code": "DUQMZA6E09C",
+            "urn": "",
+            "username": "byungwook.an",
+            "display_name": "byungwook.an",
+            "full_text": "<프롬프트 시대가 끝나고 있다>\n\n어디선가 굴러다니는 ‘마법의 프롬프트’를 찾아 헤매던 시절은 끝났다. 이제 프롬프트를 엮어 복잡한 실무를 수행하게 만드는 ‘에이전트’의 시대다.\n\n여전히 많은 이들이 프롬프트 방식으로 AI를 대한다. 하지만 에이전트 시대의 AI 활용법은 전혀 달라야 한다. 프롬프트가 실무자 방식이라면, 에이전트는 유능한 리더가 일하는 ‘구조’를 닮아있기 때문이다.\n\n01/ 혼자 뛰지 않는다. 판을 짠다. (Orchestration)\n\n리더가 되고서도 실무를 손에서 놓지 못한다면 그 조직은 정체된다. 리더의 진짜 능력은 직접 뛰는 것이 아니라, 팀원들이 성과를 낼 수 있는 ‘판’을 짜는 데 있다. AI도 마찬가지다.\n\n단순한 질문을 넘어서, 현실의 업무 노하우와 AI의 특성을 결합해 체계적인 워크플로우를 설계하는 설계자의 감각이 곧 실력이 된다.\n\n02/ 병목이 되지 않는다. 빨리 판단하고 넘긴다. (Sub-agents)\n\n보고서를 들고 가도 한참이나 붙들고 답이 없는 상사가 있다. 반면 유능한 리더는 의사결정이 빠르다. 본인이 병목이 되면 조직 전체가 느려진다는 것을 알기 때문이다. AI에서도 전문적인 서브 에이전트를 활용하여 병렬로 일이 돌아가게 만든다.\n\n03/ 매번 새롭게 만들지 않는다. 체계화된 틀을 재사용한다. (Skills)\n\n일 잘하는 사람의 특징은 파일 탐색기만 봐도 안다. 노하우가 언제든 다시 쓸 수 있게 체계적으로 정리되어 있다. 결국 AI활용도 필요할 때마다 체계화된 기술(Skills)을 호출하는 사람과, 매번 바닥부터 새롭게 설명하는 사람의 결과가 같을 수는 없다.\n\n결국 에이전트는 단순한 프롬프트의 모음집이 아니다. 기술이 고도화될수록 역설적으로 노련한 리더의 뛰어난 일머리가 다시 빛난다.\n\n판이 바뀌고 있다.\n\n프롬프트는 누구나 베낄 수 있지만, 일머리는 쉽게 베낄 수 없다.",
+            "media": [
+                "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/624639018_17885359449440207_345286611660650709_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=p1E-O6SWdSwQ7kNvwGaTQs7&_nc_oc=Adr-B9GOwZurbsPxvuRV0FEW6Lmgx-bI5Sa44CMlZ65SHCmxXW5FVOQK-dO4A6tJ4mA&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ACx9VUEEAAAA&_nc_gid=zvpuBCHNm_zO8vdzmTEbfA&_nc_tpa=Q5bMBQKPZavXgS9daCxpMPuZF_NQ5dCjCyVRXoHbppE65IXUvyU2vw-Uwzq5A_8wC24uml6Oeut2uyecoA&oh=00_AQFEb87MfZlSJj5TR4-heHm7wFV8fCHr5-Pk1xEjUZWPvQ&oe=6A958ACD"
+            ],
+            "url": "https://www.threads.com/@byungwook.an/post/DUQMZA6E09C",
+            "created_at": "2026-02-02 19:58:42",
+            "date": "2026-02-02",
+            "crawled_at": "2026-08-27T13:35:21+09:00",
+            "like_count": 162,
+            "comment_count": 15,
+            "share_count": 30,
+            "quote_count": 2,
+            "bookmark_count": null,
+            "view_count": 6836,
+            "metrics_updated_at": "2026-08-27T13:35:21+09:00",
+            "source": "my_insight_threads_api",
+            "local_images": [
+                "web_viewer/images/13aeac6ac2876a4761b64679c9322d11.jpg"
+            ],
+            "is_detail_collected": true,
+            "is_merged_thread": true,
+            "is_own_post": true,
+            "platform_sequence_id": 18
+        },
+        {
+            "sequence_id": 2541,
+            "platform_id": "DUGExMHkzZt",
+            "sns_platform": "threads",
+            "code": "DUGExMHkzZt",
+            "urn": "",
+            "username": "byungwook.an",
+            "display_name": "byungwook.an",
+            "full_text": "이제 기획도 에이전트로 하는 시대다.\n\n분야는 다르지만, 아이디어를 얻고자,\n마케터 AI 도구 독립 밋업에 다녀왔다.\n\n내가 관심있던 세션은 \n홍민지Hong Minji 님이 진행하는 안티그래비티로 하는 마케팅 에이전트.\n\n앱스 스크립트, lovable, 에이전트 3가지 세션이 있었는데\n확실히 마지막 에이전트에 질문이 가장 많았다.\n\n올해는 확실히 에이전트 한 해가 될 것 같다.\n\n나도 그동안 기획 노하우와 프로세스를 담아서 \n기획 에이전트로 제작하고 있다.\n\n올해 교육은 기획 에이전트 활용이 중심으로 할 것 같다.",
+            "media": [
+                "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/625115365_17884855986440207_584963161160609307_n.webp?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=g8XwVRDgyMAQ7kNvwGQueN4&_nc_oc=Adqxx37gbuei0MY744VVCcZMtEYOJhEhU1zkdWm3bF4Mfd4uhIyC0Wy_JYHly6b2xnw&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ACx9VUEEAAAA&_nc_gid=zvpuBCHNm_zO8vdzmTEbfA&_nc_tpa=Q5bMBQIXCInedMRHFQdhLqx9DfGXSpBsV35bU3wgRcRS7q3fFFbS9QCbGuNzIr6gxThe_j12-Y_5CLmmGg&oh=00_AQFsEhxV-7_iGMIe5Q4jSVvWcloz-ysA8_6ukCzV8Ze52A&oe=6A958337"
+            ],
+            "url": "https://www.threads.com/@byungwook.an/post/DUGExMHkzZt",
+            "created_at": "2026-01-29 21:39:41",
+            "date": "2026-01-29",
+            "crawled_at": "2026-08-27T13:35:22+09:00",
+            "like_count": 3,
+            "comment_count": 0,
+            "share_count": 0,
+            "quote_count": 0,
+            "bookmark_count": null,
+            "view_count": 190,
+            "metrics_updated_at": "2026-08-27T13:35:22+09:00",
+            "source": "my_insight_threads_api",
+            "local_images": [
+                "web_viewer/images/961001a47dabc5e02deaa3dd498ace2a.webp"
+            ],
+            "is_detail_collected": true,
+            "is_merged_thread": false,
+            "is_own_post": true,
+            "platform_sequence_id": 19
+        },
+        {
+            "sequence_id": 2542,
+            "platform_id": "DUCtKzoE_ll",
+            "sns_platform": "threads",
+            "code": "DUCtKzoE_ll",
+            "urn": "",
+            "username": "byungwook.an",
+            "display_name": "byungwook.an",
+            "full_text": "<AI 시대, 스킬보다 비싼 건 ‘의욕’이다>\n\n스킬은 누구나 배울 수 있다. 하지만 바닥난 의욕을 채우는 건 기술로 불가능하다. 나 역시 10년 전, 의욕 고갈로 사표를 던졌다.\n\n상사의 짜증, 자책, 소모적인 관계... 직장인은 여기서 에너지의 8할을 쓴다. 그래서 내 강의는 노하우만 던져주지 않는다. 노하우가 온전히 흡수될 수 있도록, 가로막고 있는 '감정의 방해물'부터 걷어내는 데 초점을 둔다. \n\n회사 잘되라고 의욕 내라는 게 아니다. 내가 행복하게 일하려면 내 안의 호기심과 에너지를 지켜야 하기 때문이다. 10년 전의 나처럼 수강생들이 번아웃에 시달리지 않길 바라는 마음을 기획 강의에 담았다.\n\n\"이 일을 계속할까\" 고민이 많았다. 그런데 내 강의가 현재까지 진행된 강의 중 최고 평점(4.8)을 찍었다고 한다. \"새로운 꿈이 생겼다\"는 수강생의 후기도 전해 들었다.\n\n기술보다 의욕을 깨웠다는 사실이 더 기쁘다. \n아직, 이 일을 조금 더 해볼 이유가 생겼다.",
+            "media": [
+                "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/621801075_17884686198440207_7147224199788173979_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=wup_zG_oYHgQ7kNvwGYrPon&_nc_oc=AdpyZjrgf6X-8qlwIW3WVUJJPwdNSLfGgnnk6-fbd5PHwK_Bo7yYmYcHL3Z797-g93g&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ACx9VUEEAAAA&_nc_gid=zvpuBCHNm_zO8vdzmTEbfA&_nc_tpa=Q5bMBQKT0WZS0ye0Y1IPYf3Yk8LYX0uAveMhiUfW8qIxb8Gkz7eFNV3zjAdZpkWVvJo7LbesFwPQ95rIDw&oh=00_AQEvv_yn9P6nZ15GjQqPIl40yEgdlpnLMnqriHvQ5CpHyw&oe=6A957E16"
+            ],
+            "url": "https://www.threads.com/@byungwook.an/post/DUCtKzoE_ll",
+            "created_at": "2026-01-28 14:15:45",
+            "date": "2026-01-28",
+            "crawled_at": "2026-08-27T13:35:22+09:00",
+            "like_count": 2,
+            "comment_count": 0,
+            "share_count": 0,
+            "quote_count": 0,
+            "bookmark_count": null,
+            "view_count": 109,
+            "metrics_updated_at": "2026-08-27T13:35:22+09:00",
+            "source": "my_insight_threads_api",
+            "local_images": [
+                "web_viewer/images/9f17e057441b2307df89b751f71b87be.jpg"
+            ],
+            "is_detail_collected": true,
+            "is_merged_thread": false,
+            "is_own_post": true,
+            "platform_sequence_id": 20
+        },
+        {
+            "sequence_id": 2543,
+            "platform_id": "DT5MzJ-E2kQ",
+            "sns_platform": "threads",
+            "code": "DT5MzJ-E2kQ",
+            "urn": "",
+            "username": "byungwook.an",
+            "display_name": "byungwook.an",
+            "full_text": "안티그래비티, 드디어 맛이 갔다. \n\n개발자도 아니고, Pro 요금제인데도 \n생성되는 파일이 자꾸 50줄에서 끊긴다. \n\n더 길게 쓰려면 추가로 요청해야 한다. \n문제는 이게 자동으로 돌아가는 에이전트 Workflow에서는 \n치명적이라는 거. \n\n처음엔 내가 만든 스킬 문제인 줄 알고 여러 번 고쳤는데, \n클로드 소넷 4.5로 돌려보니 너무 잘 나온다.\n\n알아보니 나만 그런 게 아니었다. \n원래 5시간이던 리셋 주기도 일부 헤비 유저들에겐 1주일로 대폭 늘어났다고 한다. 아... 결국 클로드코드 Max로 가야 하나...\n\n혹시 다른 분들은 어떠신가요?\n아니면 다른 방법이 있는 건가요?\n\n고수분들께 조언을 구해봅니다.\n\n---\n\n(참고) 스샷은 강의에 쓰려고 만들고 있는 \"기획 에이전트 Skills\"\n주제를 주면 8개 스킬이 리서치-분석-토론을 거쳐 기획서를 만든다.",
+            "media": [
+                "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/619850866_17884227372440207_9159027349207042325_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=cyZBEBHMkAcQ7kNvwEGYPIB&_nc_oc=AdpgW_4qeT6w_aavwhnsYprz9tLjt9g95sCIj8ZhNUYEiTq-odgdGwfXe-Ytf4RvdNg&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ACx9VUEEAAAA&_nc_gid=zvpuBCHNm_zO8vdzmTEbfA&_nc_tpa=Q5bMBQKetPTOBhMsGPjw-uVaB2R6UwGn_hjbhUmzCs-IaaTEnrR9FacchwU_FrSGKJslj5PFDRsovPTdHw&oh=00_AQEL1HTl2Rp-FGwKbazghgoxQQiUZsq5r6_Kfa3ykZtkJw&oe=6A9592D2"
+            ],
+            "url": "https://www.threads.com/@byungwook.an/post/DT5MzJ-E2kQ",
+            "created_at": "2026-01-24 21:39:44",
+            "date": "2026-01-24",
+            "crawled_at": "2026-08-27T13:35:23+09:00",
+            "like_count": 5,
+            "comment_count": 8,
+            "share_count": 0,
+            "quote_count": 0,
+            "bookmark_count": null,
+            "view_count": 404,
+            "metrics_updated_at": "2026-08-27T13:35:23+09:00",
+            "source": "my_insight_threads_api",
+            "local_images": [
+                "web_viewer/images/914dadfc570be39ab447bb0be4cc6b32.jpg"
+            ],
+            "is_detail_collected": true,
+            "is_merged_thread": false,
+            "is_own_post": true,
+            "platform_sequence_id": 21
+        },
+        {
+            "sequence_id": 2544,
+            "platform_id": "DT12rBeEymO",
+            "sns_platform": "threads",
+            "code": "DT12rBeEymO",
+            "urn": "",
+            "username": "byungwook.an",
+            "display_name": "byungwook.an",
+            "full_text": "<AI 시대, 질문력 키우라는 조언이 무책임한 이유>\n\n01/ 이제 AI가 실행은 다 하니, 당신은 좋은 질문만 하세요.\n\n듣기엔 그럴싸하다.\n하지만 '좋은 질문'이란 게 유튜브 강의 몇 편 보고 되는 건가?\n\n질문력은 테크닉이 아니다.\n그건 수천 번 삽질하고, 수백 번 틀리고, 그 과정에서 \"아, 이건 이래서 안 되는구나\"를 몸으로 체득한 사람만이 가지는 경험의 결정체다.\n\n\"채소의 익힘 정도가 타이트하지 않다\"\n\n흑백요리사의 심사위원 안성재가 이렇게 말할 수 있는 건,\n그가 20여년간 수없이 망치고, 욕먹고, 그래도 칼을 놓지 않았기 때문이다.\n\n그런데 요즘 AI 전문가들은 \n동네 음식점에 이제 막 들어온 요리사한테 \n내일부터 최강록, 안성재처럼 질문하라고 닦달하는 것 같다.\n\n02/ 방법은 안 가르쳐주고 목표만 던진다\n\n\"질문력을 키우세요.\"\n\"판단력을 길러야 합니다.\"\n\"본질을 꿰뚫는 통찰이 필요합니다.\"\n\n다 맞는 말이다.\n근데 어떻게?\n\n이 질문에 답하는 전문가는 없다.\n대신 이렇게 말한다.\n\n\"많이 생각하세요.\"\n\"다양한 경험을 쌓으세요.\"\n\"책을 많이 읽으세요.\"\n\n이건 조언이 아니라 \"공허한 주문\"이다.\n정말 실행할 있는 조언이라고 생각하는 것인지,\n아니면 본인도 딱히 할 말이 없어서 그러는 것인지 모르겠다.\n\nAI 시대 필요한 질문력이라는게 \n신입이 뭣도 모르고, 이런게 뭐에요? 라고 묻는 것을 말하는 건가?\n안성재, 백종원의 촌철살인 같은 질문을 말하는 것이 아니던가?\n\n이런 질문력이 책 몇권 읽었다고, 생각 좀 몇 번 했다고\n하루 아침에, 아니 1년만에라도 생겨 날 수 있는 것인가?",
+            "media": [],
+            "url": "https://www.threads.com/@byungwook.an/post/DT12rBeEymO",
+            "created_at": "2026-01-23 14:28:40",
+            "date": "2026-01-23",
+            "crawled_at": "2026-08-27T13:35:24+09:00",
+            "like_count": 5,
+            "comment_count": 8,
+            "share_count": 0,
+            "quote_count": 0,
+            "bookmark_count": null,
+            "view_count": 255,
+            "metrics_updated_at": "2026-08-27T13:35:24+09:00",
+            "source": "my_insight_threads_api",
+            "local_images": [],
+            "is_detail_collected": true,
+            "is_merged_thread": true,
+            "is_own_post": true,
+            "platform_sequence_id": 22
+        },
+        {
+            "sequence_id": 2545,
+            "platform_id": "DTp6fk4EhKJ",
+            "sns_platform": "threads",
+            "code": "DTp6fk4EhKJ",
+            "urn": "",
+            "username": "byungwook.an",
+            "display_name": "byungwook.an",
+            "full_text": "<노트북LM 로고 삭제, 답답해서 직접 만들었어요!>\n\n노트북LM 슬라이드 이쁘긴 한데, 로고가 눈에 걸린다.\nPDF라 로고 지우기도 힘들고, 일일이 지우자니 귀찮고.\n\n또, PDF를 PPT로 변환하려면\n따로 사이트 들어가서, 올리고, 다운받고…\n손이 여러 번 간다.\n\n그래서 이것저것 찾아봤는데,\n로고만 지워주거나, PDF만 PPT를 바꿔주거나…\n둘 다 한번에 해 주는 건 없더라.\n\n그래서 직접 만들었다.\n\n👍 좋은 점 4가지\n1. 워터마크 한방에 자동 삭제!\n2. PDF만 던지면, PDF뿐 아니라, PPT, PNG도 된다.\n3. 서버 업로드 안한다. 브라우저 내에서만 처리하니 찜찜할게 없다.\n3. 광고극혐하는 내가 쓰려고 만든거라, 광고 없다!\n\n필요하신 분들은 즐겨찾기 해놓고 쓰시길.\n혼자 쓰긴 아까워서 서버비 안 드는 선에서 공유합니다.\n\n👉 링크: https://pdf2pptx.pages.dev\n\nTip!\n배경이 단색이면 워터마크가 깔끔하게 지워집니다.\n근데, 배경이 복잡하면 지운 티가 좀 나요.\n\n그럴 땐, 노트북LM 슬라이드 만들 때 이 프롬프트 추가해 보세요.\n\"style: solid color background\" (단순한 배경으로 넣어달라는 뜻)\n\n(참고) PPT는 텍스트 편집 가능한 게 아니라, 로고 삭제된 이미지가 슬라이드에 들어가는 방식이다.",
+            "media": [
+                "https://scontent-ssn1-1.cdninstagram.com/o1/v/t16/f2/m84/AQM9V8mhah0L31QHfHd7Iq-IQEFFr-qNTUfMV3Ahz6UdUsxBtprp1Ngu1KKjoQXGYk_mVfoc4UYqjyOjR2J30qPaZhTi0xL4Sis4ifI.mp4?_nc_cat=109&_nc_sid=1d576d&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=7355PAGRW00Q7kNvwHiedym&efg=eyJ2ZW5jb2RlX3RhZyI6InZ0c192b2RfdXJsZ2VuLmZlZWQudW5rbm93bi1DMy4zNjAuZGFzaF9iYXNlbGluZV8zX3YxIiwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=1558793125354493_3380869307&_nc_vs=HBksFQIYTGlnX2JhY2tmaWxsX3RpbWVsaW5lX3ZvZC80NzQyOTk1MzdGQ0IxQTIzNTJGRTM1REZBMjM3RDg4NV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzhDNEVFMUEyMTU0RDczOEM4QzMxQzYxMEVCN0NFODhEX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwGIB3VzZV9vaWwBMRUAACaeo9Gwpr3EPxUCKAJDMywXQB2ZmZmZmZoYEmRhc2hfYmFzZWxpbmVfM192MREAdeoHZeieAQA%3D&_nc_gid=zvpuBCHNm_zO8vdzmTEbfA&edm=ACx9VUEEAAAA&_nc_zt=28&oh=00_AQGvIYwwyIHpDIy1m9DZs9CPvtHxjXO9QJ0yNs0wnKDPcg&oe=6A9189D3"
+            ],
+            "url": "https://www.threads.com/@byungwook.an/post/DTp6fk4EhKJ",
+            "created_at": "2026-01-18 23:11:43",
+            "date": "2026-01-18",
+            "crawled_at": "2026-08-27T13:35:25+09:00",
+            "like_count": 1,
+            "comment_count": 1,
+            "share_count": 0,
+            "quote_count": 0,
+            "bookmark_count": null,
+            "view_count": 68,
+            "metrics_updated_at": "2026-08-27T13:35:25+09:00",
+            "source": "my_insight_threads_api",
+            "local_images": [],
+            "is_detail_collected": true,
+            "is_merged_thread": true,
+            "is_own_post": true,
+            "platform_sequence_id": 23
+        },
+        {
+            "sequence_id": 2546,
+            "platform_id": "DTjw96Lk-UJ",
+            "sns_platform": "threads",
+            "code": "DTjw96Lk-UJ",
+            "urn": "",
+            "username": "byungwook.an",
+            "display_name": "byungwook.an",
+            "full_text": "<AI가 기획서 써주는 시대, '만드는 법'만 가르치는 건 낭비다>\n\n서울시 강서구 청년사관학교,\n오늘까지 3일, 총 24시간 동안 AI 활용 기획 강의를 하고 있다.\n\n강의의 60%는 실습. \n직접 하면서 시행착오를 겪어야 가장 빠르게 성장하기 때문이다.\nPPT보다는 기획의 핵심 설계도를 세우는 “스토리라인”이 가장 큰 비중을 차지한다.\n\n이러면, 수강생들이 습관처럼 묻는다.\n\n“이렇게 하면 되는 건가요?”\n\n그러면 즉답하지 않고 3가지를 되묻는다.\n\n1. [“1분 안에 발표해보세요”] Maker가 아니라, Seller!\n\n대부분은 처음엔 당황하다, \n그리고 열의 아홉은 만든 과정을 설명한다.\n \"이 부분은 이렇게 만들었는데요…”\n\n그러면 잠깐 멈추고선 다시 묻는다.\n\n“보고 받는 사람은 만든과정, 고생담은 궁금하지 않아요…”\n“자, 실습 주제에 해당하는 회사 사장에게 1분 안에 보고한다고 합시다. \n ‘안녕하십니까, OOO 건 보고드리겠습니다… ‘“ \n\n그리고 수강생의 눈을 지긋이 쳐다보고 기다린다.\n\n그러면 비로소 수강생의 모드가 바뀐다.\n만드는 사람(Maker)가 아니라, 파는 사람(Seller)으로.\n\n2. [”스토리의 헤드라인만 읽어보세요”] 말이랑 글이 따로 논다.\n\n그래도 헤매는 경우가 많다.\n그러면 작성한 스토리라인의 헤드라인을 따라 자연스럽게 설명해보라고 한다. 그리고 묻는다.\n\n“방금 강조한게 스토리 헤드라인에 있나요?”\n“…아.. 아니요..”\n\n중요하다며 막상 강조한 내용이\n스토리라인의 구석에 처박혀 있는 경우가 태반이다.\n\n그렇게 기획서는\n“대응전략, 매출증대방안”과 같은 \n의미없는… 도무지 결론을 알 수 없는 것들로 채워진다.",
+            "media": [
+                "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/615692138_17883215850440207_3993639275332856660_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=5iQ_29vj6GYQ7kNvwHqrxGn&_nc_oc=AdoJ5xz-e-xT4Ck7nc5HOHCR2BBtZs_Wwvqy4A0ztXJHBmQhNYKLzJB0T9UKda6JR8M&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ACx9VUEEAAAA&_nc_gid=zvpuBCHNm_zO8vdzmTEbfA&_nc_tpa=Q5bMBQKGZPiUAtl8WtnVDSQZpvNKiB8p0DAZoepyXi3a3-zjX0OZ1nFDDR9uOI0pQVnmnCESqo6XNSFaoA&oh=00_AQFP0c-dZeJRAaF2VhO9n5iCQLy501AuwZCEcTeLTs_7iA&oe=6A957CB3"
+            ],
+            "url": "https://www.threads.com/@byungwook.an/post/DTjw96Lk-UJ",
+            "created_at": "2026-01-16 13:52:29",
+            "date": "2026-01-16",
+            "crawled_at": "2026-08-27T13:35:25+09:00",
+            "like_count": 10,
+            "comment_count": 7,
+            "share_count": 2,
+            "quote_count": 0,
+            "bookmark_count": null,
+            "view_count": 981,
+            "metrics_updated_at": "2026-08-27T13:35:25+09:00",
+            "source": "my_insight_threads_api",
+            "local_images": [
+                "web_viewer/images/7327d0b5dfe502d4ae6c6681eaf2c3df.jpg"
+            ],
+            "is_detail_collected": true,
+            "is_merged_thread": true,
+            "is_own_post": true,
+            "platform_sequence_id": 24
+        },
+        {
+            "sequence_id": 2547,
+            "platform_id": "DTaRzLZkogO",
+            "sns_platform": "threads",
+            "code": "DTaRzLZkogO",
+            "urn": "",
+            "username": "byungwook.an",
+            "display_name": "byungwook.an",
+            "full_text": "<노트북LM PDF, 원클릭으로 PPT 만드세요!>\n\n노트북LM에서 슬라이드 많이들 쓰시죠?\n이게 다 좋은데 PDF라서 PPT로 변환하는게 번거롭습니다.\n\n제가 필요해서 직접 만들었습니다^^\n\n노트북LM에서 만든 PDF를\n바로 PPT나 이미지로 만들어줍니다.\n원하시면 일부만 선택해서 PPT or 이미지 변환도 가능합니다.\n\n(주의!!) \n편집가능한 PPT 되는 거 아닙니다. \n이미지 상태로 PPT 되는 거에요.\n\n좋은점1. 매번 스크린샷 딸 필요없어요. 한방에 PPT/이미지 됩니다.\n좋은점2. PPT로 보면 여러장 보기나 조작이 편해서 좋아요.\n좋은점3. 혹시 편집할 일이 있으면 PPT에서 편집하기도 좋아요.\n\n즐겨찾기 해놓고 원클릭으로 사용해보세요.\n참고로, 저는 엄청 자주 써요^^\n\n👇 링크 \nhttps://pdf2pptx.pages.dev/\n\n간단한 서비스지만 혹시 소스코드가 궁금하신 분들을 위해 github 주소도 공유합니다.\n\nhttps://github.com/ahnbu/pdf2pptx",
+            "media": [
+                "https://scontent-ssn1-1.cdninstagram.com/o1/v/t16/f2/m84/AQP1jWz7B4CjlBPj5LTIs2nB5EdI36472pBN77eEnynBsJiqRawbGhYiWVk-AEev20l2U9uF86Kd-RQw9Q617VYPv5J5mcVMOxmsRNc.mp4?_nc_cat=109&_nc_sid=1d576d&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=2gov9M69AqkQ7kNvwHdXx7F&efg=eyJ2ZW5jb2RlX3RhZyI6InZ0c192b2RfdXJsZ2VuLmZlZWQudW5rbm93bi1DMy42NDAuZGFzaF9iYXNlbGluZV8zX3YxIiwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=1219543796776972_2926262595&_nc_vs=HBksFQIYTGlnX2JhY2tmaWxsX3RpbWVsaW5lX3ZvZC9FRDQ5QjZGMjg2MkZFRkI3RkY5M0IwQzUwQzAyREM4MV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYOnBhc3N0aHJvdWdoX2V2ZXJzdG9yZS9HSjVrZFNTUEt3MkVpbGtFQU5qZ3A2aGl2YnRWYnNwVEFRQUYVAgLIARIAKAAYABsBiAd1c2Vfb2lsATEVAAAmnqLXgLiUxD8VAigCQzMsF0AlVP3ztkWiGBJkYXNoX2Jhc2VsaW5lXzNfdjERAHXqB2XongEA&_nc_gid=zvpuBCHNm_zO8vdzmTEbfA&edm=ACx9VUEEAAAA&_nc_zt=28&oh=00_AQHrR9e60dCvQPIMnPuGA9RaKKZymo3zNtwz5ZhoDJIXxA&oe=6A91A9BB"
+            ],
+            "url": "https://www.threads.com/@byungwook.an/post/DTaRzLZkogO",
+            "created_at": "2026-01-12 21:27:10",
+            "date": "2026-01-12",
+            "crawled_at": "2026-08-27T13:35:26+09:00",
+            "like_count": 0,
+            "comment_count": 1,
+            "share_count": 0,
+            "quote_count": 0,
+            "bookmark_count": null,
+            "view_count": 50,
+            "metrics_updated_at": "2026-08-27T13:35:26+09:00",
+            "source": "my_insight_threads_api",
+            "local_images": [],
+            "is_detail_collected": true,
+            "is_merged_thread": true,
+            "is_own_post": true,
+            "platform_sequence_id": 25
+        },
+        {
+            "sequence_id": 2548,
+            "platform_id": "DTSqLguE3Yk",
+            "sns_platform": "threads",
+            "code": "DTSqLguE3Yk",
+            "urn": "",
+            "username": "byungwook.an",
+            "display_name": "byungwook.an",
+            "full_text": "<AI로 내 일자리를 잃었다. 그리고 \"저소득층\"이 되었다.>\n\n1. 내 수입의 50%를 차지하던 일이 없어졌다. \n\n퇴사한지 10년차, \nN잡이 유행하기도 한 참 전부터, 나는 N잡러로 살았다.\n내 수입의 1/2 정도는 \"리서치\"에서 왔다.\n그런데 작년에 \"리서치\" 일이 끊겼다. \n\n업계 사람들끼리는 엉덩이로 하는 낮은 단가의 지적 노가다지만,\n마음만 먹으면 환갑까지도 할 수 있다는게 이 일의 매력이라면 매력이었다.\n\n그런데, AI가 \"딥리서치 잘한다\" 떠들썩하더니 일이 없어졌다.\n\n2. 국민연금 왈, \"저소득층입니다\"\n\n연초에 국민연금에서 우편이 왔다. \n소득이 줄어서 연금을 줄여주겠다는 내용.\n자동으로 해주진 않고, 전화해서 신청해야 줄여준단다.\n\n그래서 오늘 전화해봤더니,\n상담원이 연금납부액이 반으로 줄어든단다.\n게다가 \"저소득층\"이라 50% 지원도 해주겠단다...\n\n\"네... 저소득층이요?...\"\n\n뭐 그래봤자 커피 몇 잔 값이지만,\n국민연금이 깎일 생각에 기분이 좋다가도,\n한편으론 이 정도 상황이구나 생경하다.\n\n아... 작년에 리서치가 끊겨서 \n미니멀하게 지내긴 했지만... 이 정도였구나.\n\n어떻게든 한걸음씩 가다보면 길이 또 열리겠지 했는데...\n\"저소득층\"이라니...",
+            "media": [
+                "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/612612716_17882480064440207_3150334980441808435_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=EGwW7R9PhXsQ7kNvwEQ5smz&_nc_oc=Adrt7FCOveAhsq7cfg4OFrufKH8dtRH2e7CiPFDWWtofGu1CEHo8MtNSn5kbWh10lIE&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ACx9VUEEAAAA&_nc_gid=zvpuBCHNm_zO8vdzmTEbfA&_nc_tpa=Q5bMBQISOu7UR0wL4NskrE0G9W7peK-2TGL74u2LFl3new0enxxVYc0SChfjcgAXU9_G6LZCdlGpk65pzQ&oh=00_AQGaxdBwCFmOkiAqAfakYIspAHslD46YVrVa0dHDkLQb9A&oe=6A95966A"
+            ],
+            "url": "https://www.threads.com/@byungwook.an/post/DTSqLguE3Yk",
+            "created_at": "2026-01-09 22:26:05",
+            "date": "2026-01-09",
+            "crawled_at": "2026-08-27T13:35:27+09:00",
+            "like_count": 69,
+            "comment_count": 5,
+            "share_count": 4,
+            "quote_count": 0,
+            "bookmark_count": null,
+            "view_count": 9546,
+            "metrics_updated_at": "2026-08-27T13:35:27+09:00",
+            "source": "my_insight_threads_api",
+            "local_images": [
+                "web_viewer/images/767fd37bcd5d7508b1d9d879296413e2.jpg"
+            ],
+            "is_detail_collected": true,
+            "is_merged_thread": true,
+            "is_own_post": true,
+            "platform_sequence_id": 26
+        },
+        {
+            "sequence_id": 2549,
+            "platform_id": "DTCranfk3aJ",
+            "sns_platform": "threads",
+            "code": "DTCranfk3aJ",
+            "urn": "",
+            "username": "byungwook.an",
+            "display_name": "byungwook.an",
+            "full_text": "<직장인이라면, 챗GPT 무료는 쓰지 말자>\n\n1. 직접 테스트해봤다. (7개 모델 비교 테스트)\n\n요즘, AI에 웹검색이 되면서 환각이 많이 줄었다는데..진짜 그런가?\nperplexity 유료 구독하고 있고, 매일같이 쓰는 사람으로서\n궁금해서, 직접 테스트해봤다.\n\n\"웹검색을 통해서 중고나라, 당근마켓, 번개장터의 2020년~2025년까지의 연도별 매출과 영업이익을 정리해달라.\"\n\n2. 결과를 보면 조금 충격적이다.\n\n- 챗GPT(무료) 답변의 50%는 거짓말\n- 정확하다는 perplexity(무료)도 거짓말이 있고, 미응답도 30%.\n- 무료 중에서는 제미나이, 클로드, 그록이 그나마 낫다.\n\n재미난 것은,\n- perplexity(유료) 쓰면 성능이 크게 개선된다.\n- 챗GPT 유료급 쓰면 환각률이 7%대로 낮아진다.\n\n3. 돈쓰라고 유도하는 방법도 다르다.\n\n- 챗GPT: 이왕에 할 거짓말 시원하게 한다. 돈쓰라고!! \n (공포마케팅)\n- perplexity: 알면서도 모른척 한다. 알고싶지? 돈써라! \n (희소성 마케팅)\n- 그록, 제미나이, 클로드: 내 실력 어때? 더쓰고 싶지? 돈써라! \n (체험 마케팅)\n\n정리하면, 진지한 업무에 아무 생각없이 챗GPT 무료버전 쓰면 큰일난다.\n\n4. 공짜로 괜찮은 검색/리서치 하고 싶다면\n\n- 간단한 건, 클로드, 제미나이 추천!\n- 조금 많다면 lmarena에서 web search 추천!\n: https://lmarena.ai/ko 가서, 웹아이콘 누르고 사용하면 된다.\n: lmarena는 최신 모델들 블라이드 테스트로 점수 매기는 사이트라, 무료 이용 가능 (AI모델의 흑백요리사 버전)\n\n*(공유) 모델별 테스트결과가 담긴 Raw 엑셀파일\nhttps://buly.kr/BIW6jCV",
+            "media": [
+                "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/610660268_17881800762440207_5823931105367551788_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=L5A6atIp4QIQ7kNvwGtRz5Z&_nc_oc=AdosO1n5isf0IJzx9pZ-7ehU6pna0ISg_ZiQw7udhKjvs6iJcmPM9p9OvS-CANz92VU&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ACx9VUEEAAAA&_nc_gid=zvpuBCHNm_zO8vdzmTEbfA&_nc_tpa=Q5bMBQIEhTDMmlUlNANEcNpJPt7xzlr8redLCcLVgNfb3aop3qXGI4AzJyXpktB5eZbGpyhkCC6yMJqyNA&oh=00_AQHKxk7TOcdU3UVYJvtqGPsUWdizTh6ayeMTMs2lBT53gg&oe=6A95777B"
+            ],
+            "url": "https://www.threads.com/@byungwook.an/post/DTCranfk3aJ",
+            "created_at": "2026-01-03 17:29:02",
+            "date": "2026-01-03",
+            "crawled_at": "2026-08-27T13:35:27+09:00",
+            "like_count": 7,
+            "comment_count": 2,
+            "share_count": 3,
+            "quote_count": 0,
+            "bookmark_count": null,
+            "view_count": 1149,
+            "metrics_updated_at": "2026-08-27T13:35:27+09:00",
+            "source": "my_insight_threads_api",
+            "local_images": [
+                "web_viewer/images/4704c3e9c9c27a1925a156aabd231154.jpg"
+            ],
+            "is_detail_collected": true,
+            "is_merged_thread": true,
+            "is_own_post": true,
+            "platform_sequence_id": 27
+        },
+        {
+            "sequence_id": 2550,
+            "platform_id": "DStzsV9E8zQ",
+            "sns_platform": "threads",
+            "code": "DStzsV9E8zQ",
+            "urn": "",
+            "username": "byungwook.an",
+            "display_name": "byungwook.an",
+            "full_text": "12월 초 국회미래연구원 간담회에서 발표한\n2025년 글로벌 AI 투자 발표자료(16p) 공유합니다. \n\n투자, 법률, 인력 3개 분야였는데, 제가 AI투자를 맡았어요.\n\n<발표자료 다운로드 링크>\nhttps://drive.google.com/file/d/1JsKA7GQUC5UzBLzbckPYBB4pwKndX9qk/view?usp=sharing\n\n빠르게 변하는\nAI투자의 전체 그림과 핵심 트렌드가 궁금하시다면, 일독 권합니다.\n\n여담으로,\n어떻게 알고 연락하셨냐고 하니까,\n국회도서관에 올라온 AI 투자 리포트를 보고\n직접 수소문해서 연락하셨다고 하네요.\n\n자료에 있는 빅테크 투자규모는 \n유료 DB인 Crunchbase에서 한땀한땀 수집하고 분석한 결과에요. \n아마 이런 자료를 다른데서 찾기 어려웠기에 \n저를 불러주신게 아닌가 싶습니다.\n\n혹시 풀버전이 필요하신 분들을 위해 공유합니다.\n작년에 한국지능정보사회진흥원(NIA) 내부 프로젝트하면서,\n작성했던 71p 분량 보고서입니다.\n(참고로 이 자료는 2024년 5월 기준입니다)\n\nhttps://nsp.nanet.go.kr/plan/subject/detail.do?nationalPlanControlNo=PLAN0000048606",
+            "media": [
+                "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/604623241_17880779550440207_926478113407558192_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=yotD89EUCOgQ7kNvwHXgFEc&_nc_oc=Adp_R287gv5zofTPwbIapQlWSxpInLvh3kAyamb03iAUONGd8cHpNC0YA9S9mBRy_Fo&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ACx9VUEEAAAA&_nc_gid=zvpuBCHNm_zO8vdzmTEbfA&_nc_tpa=Q5bMBQIBOxua6WQztMsCfzvff6QBJ9uOWN5xXUs1x8ZTd6UZpZkrB-ipngwYD_eGNxra9oshMq6s2WqGWw&oh=00_AQEtOuKC4p08TVDl-jxjQVtJDfw1lxhov_NH2h-k7D2L5w&oe=6A959D67"
+            ],
+            "url": "https://www.threads.com/@byungwook.an/post/DStzsV9E8zQ",
+            "created_at": "2025-12-26 14:57:19",
+            "date": "2025-12-26",
+            "crawled_at": "2026-08-27T13:35:28+09:00",
+            "like_count": 8,
+            "comment_count": 1,
+            "share_count": 2,
+            "quote_count": 0,
+            "bookmark_count": null,
+            "view_count": 574,
+            "metrics_updated_at": "2026-08-27T13:35:28+09:00",
+            "source": "my_insight_threads_api",
+            "local_images": [
+                "web_viewer/images/1ed10738d85fc5524530a281d72aec41.jpg"
+            ],
+            "is_detail_collected": true,
+            "is_merged_thread": true,
+            "is_own_post": true,
+            "platform_sequence_id": 28
+        },
+        {
+            "sequence_id": 2551,
+            "platform_id": "DSq_JDukyEu",
+            "sns_platform": "threads",
+            "code": "DSq_JDukyEu",
+            "urn": "",
+            "username": "byungwook.an",
+            "display_name": "byungwook.an",
+            "full_text": "브런치에도 글 올려볼까? \n그리고는 몇 개 글 써둔 것을 올려놓고서\n브런치 신청을 했는데. 아... 안됐다.\n\n(생각해보면 별건 아닌데...)\n이런 메일 받고보니, 마치 면접 떨어진 거 같은 기분이다.\n\n떨어지고 나서야\n여기저기 떨어진 후기들을 찾아봤다.\n\n뾰족한 주제를 가지고,\n책 목차처럼 체계적인 원고 작성 계획을 세워서,\n그것에 부합하는 글을 심사 대상에 올려야 한단다.\n뭔가 실제 출판사가 후보군을 추리는 느낌이다.\n\n하긴, 3개 글 중에 \n일상소재1개, AI관련주제2개 올렸는데.. 이게 문젠가?\n생각보다 빡세네...\n\n아.. 여기 말고는 쓸 데 없을까봐? 하는 심통이 잠시 나다가도,\n한편으론 이런 것도 해보니까, 알게 된 거지 싶기도 하다.\n오늘도 굳은살 하나 추가.",
+            "media": [
+                "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/604673294_17880638142440207_1334247816112859328_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=PIQlp2wHFf4Q7kNvwHUSFAE&_nc_oc=Adr43j6vo2gu46xVnLdWcKC4cBwcfmK0VbznFFdh0GL89ooLGQlyPOmHqcRBNaRVX0g&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ACx9VUEEAAAA&_nc_gid=zvpuBCHNm_zO8vdzmTEbfA&_nc_tpa=Q5bMBQIoZBsrkyYJquUsbW6ag158xlvf_WweJTpQWdMNHciVjrGC8a4nJ7URLCEeB2vvgeu9WlFT1gF2nw&oh=00_AQGtjJyJ2h6eQdZmjszJ6Jrk8wgkFhJNm9yr4Tb6uwKYDQ&oe=6A959BF5"
+            ],
+            "url": "https://www.threads.com/@byungwook.an/post/DSq_JDukyEu",
+            "created_at": "2025-12-25 12:39:38",
+            "date": "2025-12-25",
+            "crawled_at": "2026-08-27T13:35:29+09:00",
+            "like_count": 3,
+            "comment_count": 0,
+            "share_count": 0,
+            "quote_count": 0,
+            "bookmark_count": null,
+            "view_count": 180,
+            "metrics_updated_at": "2026-08-27T13:35:29+09:00",
+            "source": "my_insight_threads_api",
+            "local_images": [
+                "web_viewer/images/5f0a19513a917a1172cb37fea8f01120.jpg"
+            ],
+            "is_detail_collected": true,
+            "is_merged_thread": false,
+            "is_own_post": true,
+            "platform_sequence_id": 29
+        },
+        {
+            "sequence_id": 2552,
+            "platform_id": "DSg-0FrkyFQ",
+            "sns_platform": "threads",
+            "code": "DSg-0FrkyFQ",
+            "urn": "",
+            "username": "byungwook.an",
+            "display_name": "byungwook.an",
+            "full_text": "개인적으로 2025년 AI 승자는 구글 제미나이,\n\n글로벌 다운로드 점유율이 10% -> 30% 대로 3배 급증\n\nChatGPT가 여전히 다운로드 건수 1위이긴 하다.\n\n9월 전까지만 해도 70%대로 압도적 1위였는데,\n이제는 50% 아래로 밀린다. 이제 1등 자리도 위태롭다.\n\n샘 알트먼이 Code Red 발동할만도 하다.\n\n*SensorTower(2025년 12월) 자료를 TechCrunch가 보도한 기사를 차트로 정리해봤다.\n\nhttps://techcrunch.com/2025/12/05/chatgpts-user-growth-has-slowed-report-finds/",
+            "media": [
+                "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/604233681_17880177303440207_5427733197984174562_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=YQjeWZFmWBEQ7kNvwGjoIQU&_nc_oc=AdoK_HKXH5zGGDhjfWunIwcHdSsyiPG2enGNvzyEDFMxAqZb8daBCy96UdvOTDM6y_g&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ACx9VUEEAAAA&_nc_gid=zvpuBCHNm_zO8vdzmTEbfA&_nc_tpa=Q5bMBQLmT1IatwO-sUbH37bbV30TOAt6YGmLouez2OYoGjIZ0R8VU0rh38Aku7d9e6yBLWlCuiOE5L1iqA&oh=00_AQH2jMtMBNQSNtCn8KIiPdbLnDGWmDtuWzNgIYrjI4yTlA&oe=6A9578C2"
+            ],
+            "url": "https://www.threads.com/@byungwook.an/post/DSg-0FrkyFQ",
+            "created_at": "2025-12-21 15:24:22",
+            "date": "2025-12-21",
+            "crawled_at": "2026-08-27T13:35:29+09:00",
+            "like_count": 5,
+            "comment_count": 0,
+            "share_count": 1,
+            "quote_count": 0,
+            "bookmark_count": null,
+            "view_count": 835,
+            "metrics_updated_at": "2026-08-27T13:35:29+09:00",
+            "source": "my_insight_threads_api",
+            "local_images": [
+                "web_viewer/images/b0bbf991e17f5537aa56c64084d67afe.jpg"
+            ],
+            "is_detail_collected": true,
+            "is_merged_thread": false,
+            "is_own_post": true,
+            "platform_sequence_id": 30
+        },
+        {
+            "sequence_id": 2553,
+            "platform_id": "DSep8hKkxfr",
+            "sns_platform": "threads",
+            "code": "DSep8hKkxfr",
+            "urn": "",
+            "username": "byungwook.an",
+            "display_name": "byungwook.an",
+            "full_text": "<무능한 인간의 개입보다 AI 단독이 더 낫다>\n: Nature가 경고하는 AI 협업의 역설\n\n최근 Nature Human Behaviour(2024.10)에 발표된 연구 결과*는 AI를 쓰면 성과가 향상된다는 믿음에 의문을 제기한다. 이 논문은 2020년에서 2023년까지 발행된 AI 관련 논문에서 370개 실험 데이터를 분석한다.\n\n✅ 인간이 AI보다 능력이 떨어지는 경우, 가만 있는게 낫다. (시너지 효과)\n\n하려는 작업에서 AI보다 능력이 낮은 사람이 AI를 사용하면, AI 단독으로 낼 수 있는 성능보다 도리어 떨어지는 경우가 많아진다.(g=-0.23) 다시 말해 사람이 자기 능력을 넘어선 무분별한 참견을 남발하면 결과가 도리어 나빠진다는 것. 마치 AI라는 능력 있는 팀원이 있어도, 서울사는 김부장처럼 무능력하다면 팀원도 무능해진다는 것. (인간 < 인간 + AI < AI)\n\n반대로, 인간이 AI보다 뛰어난 경우는 AI 단독으로 또는 인간 단독으로 낼 수 있는 것보다 더 큰 성과를 낸다. 이건 굳이 AI 시대가 아니어도, 회사생활 좀 해본 사람이라면, 쉽게 경험할 수 있다. 같은 사람이라도 능력있는 리더와 일하냐, 무능한 리더와 일하냐에 따라서 얼마나 다른 생활이 펼쳐지는지는 굳이 묻지 않아도 될 일이다. (AI < 인간 < 인간 + AI)\n\n✅ 물론 AI 사용하는 게 더 낫다. (증강 효과)\n\n(인간 < 인간 + AI) AI를 사용하면 AI 없이 인간 단독으로 작업할 때보다 성과가 향상된다.(g=0.64) 그러니까, 자신의 성과를 지금보다 높이고 싶다면 AI 활용은 필수라 할 수 있다.",
+            "media": [],
+            "url": "https://www.threads.com/@byungwook.an/post/DSep8hKkxfr",
+            "created_at": "2025-12-20 17:43:32",
+            "date": "2025-12-20",
+            "crawled_at": "2026-08-27T13:35:30+09:00",
+            "like_count": 1,
+            "comment_count": 6,
+            "share_count": 0,
+            "quote_count": 0,
+            "bookmark_count": null,
+            "view_count": 116,
+            "metrics_updated_at": "2026-08-27T13:35:30+09:00",
+            "source": "my_insight_threads_api",
+            "local_images": [],
+            "is_detail_collected": true,
+            "is_merged_thread": true,
+            "is_own_post": true,
+            "platform_sequence_id": 31
+        },
+        {
+            "sequence_id": 2554,
+            "platform_id": "DSbfUn3E7HT",
+            "sns_platform": "threads",
+            "code": "DSbfUn3E7HT",
+            "urn": "",
+            "username": "byungwook.an",
+            "display_name": "byungwook.an",
+            "full_text": "<무소의 뿔처럼 혼자서 가라>\n\n종종 되뇌어보는 말이다. \n처음에는 \"혼자서 가라\"는 말이 마음에 들어서,\n나중에는 \"그물에 걸리지 않는 바람\"이 마음에 들어서..\n\n\"소리에 놀라지 않는 사자처럼, \n 그물에 걸리지 않는 바람처럼, \n 흙탕물에 더럽혀지지 않는 연꽃처럼, \n 무소의 뿔처럼 혼자서 가라\"\n\n- 불교 고대경전 <숫타니파타>의 문구\n\n여러번 되뇌이다 보니 문득 이런 생각이 든다.\n\n산다는게,\n놀라 당혹스러울만한 소리(와 소식)가 난무하고,\n걸려넘어질 그물(함정)이 여기저기 있고,\n자칫하면 흙탕물로 더럽혀지기 쉽다는 거 구나.\n\n그래서, \n지금까지 살면서\n그리도 당혹스러웠고,\n그리고 이런 저런 구덩이에 빠져 허우적댔구나.\n그래서 여기저기 지저분해졌었구나.\n\n그래서... 그랬구나.",
+            "media": [],
+            "url": "https://www.threads.com/@byungwook.an/post/DSbfUn3E7HT",
+            "created_at": "2025-12-19 12:12:59",
+            "date": "2025-12-19",
+            "crawled_at": "2026-08-27T13:35:31+09:00",
+            "like_count": 1,
+            "comment_count": 1,
+            "share_count": 0,
+            "quote_count": 0,
+            "bookmark_count": null,
+            "view_count": 102,
+            "metrics_updated_at": "2026-08-27T13:35:31+09:00",
+            "source": "my_insight_threads_api",
+            "local_images": [],
+            "is_detail_collected": true,
+            "is_merged_thread": false,
+            "is_own_post": true,
+            "platform_sequence_id": 32
         }
     ]
 }

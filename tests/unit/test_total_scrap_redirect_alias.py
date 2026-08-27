@@ -51,6 +51,7 @@ total_scrap.OUTPUT_YOUTUBE_DIR = "output_youtube"
 # 내 게시물 디렉터리도 tmp 로 돌려놔야 한다. 비워두면 절대경로 기본값이 남아
 # 실제 레포의 내 글이 이 테스트 결과에 섞인다(계획 _docs/20260826_03 3.4.1).
 total_scrap.OUTPUT_LINKEDIN_OWN_DIR = "output_linkedin_own"
+total_scrap.OUTPUT_THREADS_OWN_DIR = "output_threads_own"
 
 posts, threads_count, linkedin_count, twitter_count, youtube_count = total_scrap.merge_results()
 print(json.dumps({

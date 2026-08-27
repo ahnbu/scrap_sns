@@ -143,6 +143,10 @@ print(json.dumps({{"commands": launched_commands, "results": results}}, ensure_a
         # consumer 에 있는 이유는 producer 의 linkedin_scrap.py 도 로그인 세션을 쓰기 때문이다.
         # 계획: _docs/20260826_03 (3.4)
         "cmd /c python -u my_posts_scrap.py",
+        # 내 Threads 글은 Graph API 라 로그인 세션 제약이 없지만, 저장글 수집이
+        # 내 글 수집 실패로 멈추지 않도록 consumer 에 둔다.
+        # 계획: _docs/20260827_02 (3.6)
+        "cmd /c python -u my_threads_scrap.py",
     ]
     assert payload["results"]["threads"]["status"] == "ok"
     assert payload["results"]["threads"]["phases"]["producer"]["status"] == "ok"

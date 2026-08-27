@@ -110,6 +110,11 @@ output_threads/*
 output_threads/python/*
 !output_threads/python/threads_py_full_[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9].json
 !output_threads/python/threads_py_simple_[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9].json
+!output_threads_own/
+output_threads_own/*
+!output_threads_own/python/
+output_threads_own/python/*
+!output_threads_own/python/threads_own_full_[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9].json
 !output_twitter/
 output_twitter/*
 !output_twitter/python/

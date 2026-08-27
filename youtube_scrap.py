@@ -585,7 +585,24 @@ def load_cached_summary(video_id, transcript_sha1, model):
         return None
     if cached.get("model") != model:
         return None
-    return cached.get("summary") or None
+    # 정제는 저장 시점에도 하지만 여기서 한 번 더 건다. 정제 도입 전에 저장된
+    # 캐시가 남아 있고, 그건 캐시 히트라 다시 만들어지지 않는다.
+    return sanitize_summary(cached.get("summary")) or None
+
+
+# agy CLI 가 응답 끝에 자기 제어 마커를 남기는 경우가 있다. 449건 중 3건에서
+# `<!-- GOAL_COMPLETE -->` 가 요약 본문에 그대로 섞여 캐시·통합본·MD 까지 흘렀다
+# (2026-08-27 실측). 뷰어 카드는 앞부분만 보여줘 화면에는 안 뜨지만 검색에는 잡힌다.
+# 마커 하나만 지우지 않고 HTML 주석 전체를 걷어낸다 - 요약문에 주석이 있을 이유가 없다.
+HTML_COMMENT_RE = re.compile(r"<!--.*?-->", re.DOTALL)
+
+
+def sanitize_summary(text):
+    """모델 응답에서 요약이 아닌 잔재를 걷어낸다."""
+    cleaned = HTML_COMMENT_RE.sub("", str(text or ""))
+    # 마커가 있던 자리에 빈 줄이 세 줄씩 남는다.
+    cleaned = re.sub(r"\n{3,}", "\n\n", cleaned)
+    return cleaned.strip()
 
 
 def store_summary(video_id, model, transcript_sha1, summary, usage, duration, conversation_id):
@@ -652,7 +669,10 @@ def summarize(video_id, title, description, transcript, model, refresh, wave="")
         print(f"      🔴 {video_id}: num_turns={result.get('num_turns')} — 도구 호출 흔적. 격리합니다.")
         return "", "suspicious"
 
-    summary = result["response"]
+    summary = sanitize_summary(result["response"])
+    if not summary:
+        print(f"      ⚠️ 요약 정제 후 빈 문자열 {video_id}")
+        return "", "failed"
     store_summary(
         video_id, model, transcript_sha1, summary,
         result.get("usage"), result.get("duration_seconds"), result.get("conversation_id"),

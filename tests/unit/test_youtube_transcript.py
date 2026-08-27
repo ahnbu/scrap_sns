@@ -457,3 +457,59 @@ def test_summary_and_transcript_retries_coexist(tmp_path, monkeypatch):
 
     assert new_ids == ["vid_new"]
     assert set(retry_ids) == {"vid_sum", "vid_tr"}
+
+
+# ------------------------------------------- 요약 응답 정제 (2026-08-27)
+
+def test_sanitize_removes_agy_control_marker():
+    """agy 가 응답 끝에 남긴 제어 마커가 요약 본문에 섞여 있었다(449건 중 3건)."""
+    raw = "[요약] 한 줄 요약이다.\n\n- 핵심\n\n<!-- GOAL_COMPLETE -->"
+    out = ys.sanitize_summary(raw)
+    assert "GOAL_COMPLETE" not in out
+    assert "<!--" not in out
+    assert out.endswith("- 핵심")
+
+
+def test_sanitize_removes_any_html_comment():
+    """마커 하나만 지우면 다음 마커에 또 뚫린다. 주석 전체를 걷어낸다."""
+    raw = "[요약] 앞부분\n<!-- 다른 마커 -->\n[상세] 뒷부분"
+    out = ys.sanitize_summary(raw)
+    assert "<!--" not in out
+    assert "앞부분" in out and "뒷부분" in out
+
+
+def test_sanitize_handles_multiline_comment():
+    raw = "[요약] 본문\n\n<!--\n여러 줄\n주석\n-->\n"
+    assert ys.sanitize_summary(raw) == "[요약] 본문"
+
+
+def test_sanitize_collapses_blank_runs_left_behind():
+    """마커를 지운 자리에 빈 줄이 세 줄씩 남으면 뷰어 카드가 벌어진다."""
+    raw = "가\n\n<!-- x -->\n\n나"
+    assert ys.sanitize_summary(raw) == "가\n\n나"
+
+
+def test_sanitize_keeps_normal_summary_untouched():
+    raw = "[요약] 정상 요약\n\n- 핵심 1\n- 핵심 2\n\n[상세]\n소제목\n설명 문장."
+    assert ys.sanitize_summary(raw) == raw
+
+
+@pytest.mark.parametrize("value", [None, "", "   \n\n  "])
+def test_sanitize_returns_empty_for_blank_input(value):
+    assert ys.sanitize_summary(value) == ""
+
+
+def test_cached_summary_is_sanitized_on_read(tmp_path, monkeypatch):
+    """정제 도입 전 저장된 캐시는 히트라 다시 만들어지지 않는다. 읽을 때 걷어낸다."""
+    monkeypatch.setattr(ys, "SUMMARY_DIR", str(tmp_path))
+    ys.store_summary("VID", "m", "sha-1", "요약본", {}, 1.0, "conv")
+    # 정제 도입 전에 저장된 상태를 흉내낸다.
+    import json as _json
+    path = ys.summary_path_for("VID")
+    with open(path, "r", encoding="utf-8") as handle:
+        data = _json.load(handle)
+    data["summary"] = "요약본\n\n<!-- GOAL_COMPLETE -->"
+    with open(path, "w", encoding="utf-8") as handle:
+        _json.dump(data, handle, ensure_ascii=False)
+
+    assert ys.load_cached_summary("VID", "sha-1", "m") == "요약본"
