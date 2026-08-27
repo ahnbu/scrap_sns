@@ -99,6 +99,11 @@ output_linkedin/*
 !output_linkedin/python/
 output_linkedin/python/*
 !output_linkedin/python/linkedin_py_full_[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9].json
+!output_linkedin_own/
+output_linkedin_own/*
+!output_linkedin_own/python/
+output_linkedin_own/python/*
+!output_linkedin_own/python/linkedin_own_full_[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9].json
 !output_threads/
 output_threads/*
 !output_threads/python/
