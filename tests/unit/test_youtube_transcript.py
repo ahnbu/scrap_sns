@@ -478,9 +478,29 @@ def test_sanitize_removes_any_html_comment():
     assert "앞부분" in out and "뒷부분" in out
 
 
-def test_sanitize_handles_multiline_comment():
-    raw = "[요약] 본문\n\n<!--\n여러 줄\n주석\n-->\n"
-    assert ys.sanitize_summary(raw) == "[요약] 본문"
+def test_sanitize_does_not_swallow_body_across_lines():
+    """여는 주석과 화살표 표기(A --> B)가 짝이 맞아 본문이 통째로 사라진 적이 있다.
+
+    DOTALL 정규식이 원인이었다(실측: 85자 요약에서 38자 소실). 정제 범위를 한 줄로
+    묶어, 닫히지 않은 주석은 차라리 남기고 본문을 지킨다.
+    """
+    raw = ("[요약] 파이프라인 설명이다.\n\n- 첫 단계 <!-- 여기서 주석이 열림\n"
+           "- 둘째 단계\n- 셋째 단계는 A --> B 로 흐른다.")
+    out = ys.sanitize_summary(raw)
+    assert "둘째 단계" in out
+    assert "셋째 단계" in out
+
+
+def test_sanitize_keeps_arrow_notation():
+    """요약이 화살표 표기를 쓰는 경우가 있다. 그것만으로 지워지면 안 된다."""
+    raw = "[요약] A --> B 로 데이터가 흐른다.\n\n- 입력 --> 처리 --> 출력"
+    assert ys.sanitize_summary(raw) == raw
+
+
+def test_sanitize_ignores_overlong_comment():
+    """200자를 넘는 한 줄 주석은 마커가 아니다. 손대지 않는다."""
+    raw = "[요약] 앞<!-- " + "x" * 250 + " -->뒤"
+    assert ys.sanitize_summary(raw) == raw
 
 
 def test_sanitize_collapses_blank_runs_left_behind():
