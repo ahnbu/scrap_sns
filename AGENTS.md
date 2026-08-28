@@ -29,7 +29,8 @@
   - `node utils/query-sns.mjs --help`
   - `python migrate_threads_domain.py --dry-run`
   - `python migrate_schema.py` — 기존 데이터의 스키마 점검
-  - `python -m utils.build_data_js` — 뷰어용 정적 데이터(`web_viewer/data.js`) 재생성. 파서·스키마를 고친 뒤 뷰어 검증 전에 돌린다
+  - `node scripts/lilys_library.mjs list` / `node scripts/livewiki_library.mjs list` — 외부 요약 라이브러리 수집
+  - `node scripts/build_external_summaries.mjs` — 위 두 산출물을 합쳐 `web_viewer/sns_external_summaries.json` 생성
 
 ## 에이전트 관련 메모
 
@@ -58,7 +59,7 @@
 - 통합 출력: `output_total/total_full_YYYYMMDD.json`
 - 실패 이력: `scrap_failures_threads.json`, `scrap_failures_twitter.json`, `scrap_failures_linkedin.json`
 - 뷰어 상태: `web_viewer/sns_tags.json`, `web_viewer/sns_tag_catalog.json`, `web_viewer/sns_user_metadata.json`, browser `localStorage`
-- 뷰어 정적 데이터: `web_viewer/data.js` — `python -m utils.build_data_js` 산출물이며 손으로 고치지 않는다
+- 외부 요약 매핑: `web_viewer/sns_external_summaries.json` — `scripts/build_external_summaries.mjs` 산출물이며 손으로 고치지 않는다. 중간 산출물 `output_external/*.json`은 재생성 가능하므로 git 무시 대상이다
 - 인증 런타임 정본: `C:/Users/ahnbu/.config/auth/`; repo `auth/`는 정본으로 보지 않는다.
 
 ## 데이터 identity 규칙

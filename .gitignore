@@ -71,6 +71,10 @@ scripts/*
 !scripts/check_youtube_saved_order.py
 !scripts/check_platform_order_regression.py
 !scripts/rebuild_total.py
+!scripts/lilys_library.mjs
+!scripts/livewiki_library.mjs
+!scripts/build_external_summaries.mjs
+!scripts/verify_external_summary_icons.mjs
 
 # Terminal Paste Image folder
 .cp-images/

@@ -53,6 +53,11 @@ SCRAP_PROGRESS = {
     "platform_list_new_counts": {},
 }
 SCRAP_PROGRESS_LOCK = threading.Lock()
+# 비정상 종료로 running 이 참인 채 남으면 서버 재시작 전까지 새 수집이 영구히 막힌다.
+# 이 시간을 넘긴 실행은 죽은 것으로 보고 새 실행을 허용한다.
+# 값 근거: logs/scrap_progress.log 실측 --mode update 완료 1~6분, 관측 최대 13분 05초.
+# 그 13배 여유다. --mode all + youtube 요약이 update 보다 오래 걸리는 것을 감안했다.
+SCRAP_STALE_SECONDS = 10800
 _POSTS_CACHE = {
     "path": "",
     "mtime": 0,
@@ -398,9 +403,38 @@ def _append_scrap_progress(progress, level="info"):
         _write_scrap_progress_log_event(created_event)
 
 
+def _active_scrap_run(now_monotonic=None):
+    """실행 중인 수집이 있으면 그 정보를, 없거나 stale 이면 None 을 준다.
+
+    호출자는 반드시 SCRAP_PROGRESS_LOCK 을 잡은 상태여야 한다.
+    검사와 상태 갱신 사이에 틈이 생기면 가드가 무의미해진다.
+    """
+    if not SCRAP_PROGRESS.get("running"):
+        return None
+    started = SCRAP_PROGRESS.get("started_monotonic")
+    if started is None:
+        return None
+    elapsed = (now_monotonic if now_monotonic is not None else time.monotonic()) - started
+    if elapsed > SCRAP_STALE_SECONDS:
+        return None
+    return {
+        "run_id": SCRAP_PROGRESS.get("run_id", ""),
+        "started_at": SCRAP_PROGRESS.get("started_at"),
+        "elapsed_seconds": int(max(0, elapsed)),
+    }
+
+
 def _reset_scrap_progress(run_id, mode):
+    """진행 상태를 새 실행으로 초기화한다.
+
+    이미 실행 중이면 초기화하지 않고 그 실행 정보를 반환한다.
+    검사와 갱신을 같은 lock 안에서 한다 - 사이에 틈이 생기면 가드가 무의미하다.
+    """
     now = _now_kst_iso()
     with SCRAP_PROGRESS_LOCK:
+        active = _active_scrap_run()
+        if active is not None:
+            return active
         SCRAP_PROGRESS.update(
             {
                 "run_id": run_id,
@@ -416,6 +450,7 @@ def _reset_scrap_progress(run_id, mode):
 
     label = "전체 재수집" if mode == "all" else "최근 업데이트"
     _append_scrap_progress(f"{label} 스크랩 시작")
+    return None
 
 
 def _finish_scrap_progress():
@@ -924,6 +959,30 @@ def get_user_metadata():
         return jsonify({"error": "Failed to load user metadata"}), 500
 
 
+@app.route("/api/get-external-summaries", methods=["GET"])
+def get_external_summaries():
+    """Lilys/LiveWiki 외부 요약 링크 매핑.
+
+    쓰기 짝(/api/save-*)이 없다. 이 파일은 사용자 상태가 아니라
+    scripts/build_external_summaries.mjs 가 만드는 파생 데이터다.
+    파일이 없어도 200 과 빈 items 를 준다 - 수집기를 한 번도 안 돌린 상태에서도
+    뷰어가 정상 동작해야 한다.
+    """
+    empty = {"items": {}}
+    try:
+        export_path = os.path.join(WEB_VIEWER_DIR, "sns_external_summaries.json")
+        if not os.path.exists(export_path):
+            return jsonify(empty)
+        with open(export_path, "r", encoding="utf-8-sig") as f:
+            data = json.load(f)
+        if not isinstance(data, dict) or not isinstance(data.get("items"), dict):
+            return jsonify(empty)
+        return jsonify(data)
+    except Exception:
+        logging.exception("Failed to load external summaries")
+        return jsonify({"error": "Failed to load external summaries"}), 500
+
+
 @app.route("/api/save-user-metadata", methods=["POST"])
 def save_user_metadata():
     try:
@@ -1116,7 +1175,18 @@ def run_scrap():
         if mode not in ALLOWED_SCRAP_MODES:
             return jsonify({"status": "error", "message": f"Invalid mode. Allowed: {', '.join(sorted(ALLOWED_SCRAP_MODES))}"}), 400
         run_id = _normalize_scrap_run_id(data.get("run_id"))
-        _reset_scrap_progress(run_id, mode)
+        # 중복 실행 가드. 프런트에도 가드가 있지만 탭 단위 JS 변수라
+        # 두 번째 탭, 실행 중 새로고침, 직접 API 호출은 통과한다.
+        # 두 벌이 돌면 같은 날짜 output JSON 과 통합본을 동시에 써서 데이터가 섞인다.
+        active = _reset_scrap_progress(run_id, mode)
+        if active is not None:
+            return jsonify({
+                "status": "error",
+                "message": "이미 스크랩이 실행 중입니다.",
+                "running_run_id": active["run_id"],
+                "started_at": active["started_at"],
+                "elapsed_seconds": active["elapsed_seconds"],
+            }), 409
         progress_started = True
         before_payload = _read_latest_total_payload()
         before_meta = (before_payload or {}).get("metadata")

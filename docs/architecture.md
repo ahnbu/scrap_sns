@@ -209,6 +209,21 @@ X 인증 정본은 `AUTH_HOME/x/user_data/` 하나다. producer는 이 profile�
 
 consumer 토큰이 없으면 상세 수집은 건너뛰고, simple 기반 메타데이터/full 동기화만 계속 진행한다.
 
+**producer가 persistent profile을 쓰는 이유 — 검증된 선택이 아니라 관성이다**
+
+이 방식은 최초 X 커밋(`0e8ec80`, 2026-02-12)에 들어간 뒤 한 번도 재검토되지 않았다. LinkedIn/Threads의 `storage_state` 채택이 `docs/20260505_02_LinkedIn_인증접근방식_테스트계획.md`에서 persistent profile까지 비교한 결과인 것과 대비된다.
+
+2026-08-28 비파괴 A/B probe 실측: 북마크 타임라인 접근을 persistent profile과 `storage_state` 두 방식으로 비교한 결과가 **동일했다**. 둘 다 레포 기준(`classify_producer_probe`의 `bookmark_response`)을 통과했고 실제 북마크 entry도 40건으로 같았다. 4개월 지난 `x/storage_state.json`(2026-05-04) 스냅샷으로도 통과했다 — X 쿠키 회전 때문에 스냅샷이 금방 낡는다는 우려는 실증되지 않았다.
+
+즉 **`storage_state`가 X에서 안 되는 것이 아니다.** 그런데도 전환하지 않는 이유는 다음과 같다.
+
+- 현재 방식이 깨지고 있지 않다 (`scripts/auth_runtime/verify_x_auth.py` producer/consumer 모두 통과).
+- 전환 이득(profile 2.8GB → 4KB, 프로필 경합 제거)이 지금 실제 문제를 일으키고 있지 않다.
+- X 인증은 이 레포에서 사고 이력이 가장 많은 지점이다(`4f9dca9` 오탐, `a64f9d4` 정본화, `docs/20260425_01_...`). 1회 probe 통과가 120페이지 커서 페이지네이션 장시간 실행에서의 봇 탐지까지 보장하지 않는다.
+- 동시 실행 문제의 올바른 해결 위치는 인증 방식이 아니라 `/api/run-scrap`의 중복 실행 가드다.
+
+profile 용량이나 경합이 실제 문제를 일으키면 이 실측을 출발점으로 전환을 검토한다.
+
 **출력**
 
 - `output_twitter/python/twitter_py_simple_YYYYMMDD.json`
@@ -341,11 +356,12 @@ python scripts/rebuild_total.py             # 통합본 재생성
 - `GET /api/get-tags` / `POST /api/save-tags`
 - `GET /api/get-tag-catalog` / `POST /api/save-tag-catalog`
 - `GET /api/get-user-metadata` / `POST /api/save-user-metadata`
+- `GET /api/get-external-summaries` — Lilys/LiveWiki 요약 링크 매핑. 쓰기 짝이 없다. 사용자 상태가 아니라 `scripts/build_external_summaries.mjs` 산출물이라 뷰어가 쓰지 않는다. 파일이 없어도 200 과 빈 `items` 를 준다
 - `POST /api/auto-tag/apply`
 
 **수집 실행**
 
-- `POST /api/run-scrap`
+- `POST /api/run-scrap` — 이미 실행 중이면 409. `SCRAP_STALE_SECONDS`(10800초)를 넘긴 실행은 죽은 것으로 보고 새 실행을 허용한다
 - `GET /api/scrap-progress`
 
 **인증 (미사용 — BL-0505-03)**

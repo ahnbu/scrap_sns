@@ -270,6 +270,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const postTags = JSON.parse(localStorage.getItem('sns_tags') || '{}');
     const tagTypes = JSON.parse(localStorage.getItem('sns_tag_types') || '{}');
     let tagCatalog = normalizeTagCatalog(JSON.parse(localStorage.getItem('sns_tag_catalog') || '{}'));
+    // video_id -> { lilys, livewiki }. 서버가 매번 주므로 localStorage 에 담지 않는다.
+    let externalSummaries = {};
     // Legacy TODO state is kept for URL migration/backward compatibility.
     const todos = JSON.parse(localStorage.getItem('sns_todos') || '{}');
     
@@ -1338,6 +1340,17 @@ document.addEventListener('DOMContentLoaded', () => {
                     body: JSON.stringify({ mode, run_id: runId })
                 });
                 const result = await response.json().catch(() => ({}));
+
+                // 서버가 중복 실행을 막았다. 다른 탭이나 새로고침 뒤 재클릭으로 올 수 있다.
+                // 진행 상태는 실행 중인 쪽 것이므로 여기서 덮어쓰지 않는다.
+                if (response.status === 409) {
+                    const elapsed = Number(result.elapsed_seconds || 0);
+                    const minutes = Math.floor(elapsed / 60);
+                    const seconds = elapsed % 60;
+                    alert(`이미 스크랩이 실행 중입니다. (${minutes}분 ${seconds}초 경과)`);
+                    return;
+                }
+
                 await pollScrapProgressOnce();
 
                 if (result.status === 'success') {
@@ -2116,11 +2129,12 @@ ${item.body}
 
         try {
             const params = new URLSearchParams({ sort: getServerSortParam() });
-            const [postsRes, tagsRes, catalogRes, userMetadataRes] = await Promise.all([
+            const [postsRes, tagsRes, catalogRes, userMetadataRes, externalSummariesRes] = await Promise.all([
                 fetch(`/api/posts?${params.toString()}`),
                 fetch('/api/get-tags'),
                 fetch('/api/get-tag-catalog'),
                 fetch('/api/get-user-metadata'),
+                fetch('/api/get-external-summaries'),
             ]);
 
             if (!postsRes.ok) {
@@ -2131,6 +2145,11 @@ ${item.body}
             const serverTags = tagsRes.ok ? await tagsRes.json() : {};
             const serverCatalog = catalogRes.ok ? normalizeTagCatalog(await catalogRes.json()) : {};
             const serverUserMetadata = userMetadataRes.ok ? await userMetadataRes.json() : {};
+            // 사용자 상태가 아니라 스크립트가 만든 파생 데이터라 localStorage 에 캐시하지 않는다.
+            // 수집 실패로 매핑을 못 받아도 아이콘만 사라지고 뷰어는 그대로 돈다.
+            externalSummaries = externalSummariesRes.ok
+                ? ((await externalSummariesRes.json()).items || {})
+                : {};
 
             Object.assign(postTags, serverTags);
             Object.keys(postTags).forEach((url) => {
@@ -2562,6 +2581,35 @@ ${item.body}
         `;
     }
 
+    // 외부 요약 서비스. 라벨은 title/aria-label 로만 노출하고 화면에는 아이콘만 남긴다.
+    const EXTERNAL_SUMMARY_SERVICES = [
+        { key: 'lilys', label: 'Lilys 요약', glyph: 'auto_awesome' },
+        { key: 'livewiki', label: 'LiveWiki 요약', glyph: 'article' },
+    ];
+
+    /**
+     * 유튜브 카드이고 매핑에 있을 때만 외부 요약 앵커를 만든다.
+     * 매핑이 없으면 빈 문자열이라 아이콘이 아예 렌더되지 않는다 - 죽은 아이콘을 만들지 않는다.
+     */
+    function buildExternalSummaryLinks(post) {
+        const platform = String(post?.sns_platform || '').toLowerCase();
+        if (platform !== 'youtube') return '';
+        const videoId = post?.platform_id || post?.code || '';
+        const entry = videoId ? externalSummaries[videoId] : null;
+        if (!entry) return '';
+
+        return EXTERNAL_SUMMARY_SERVICES
+            .filter((service) => entry[service.key])
+            .map((service) => `
+                <a href="${escapeHtml(entry[service.key])}" target="_blank" rel="noopener"
+                   data-external-summary="${service.key}"
+                   class="footer-link-btn hover:text-primary transition-colors"
+                   title="${service.label}" aria-label="${service.label}">
+                    <span class="material-symbols-outlined text-[16px]">${service.glyph}</span>
+                </a>`)
+            .join('');
+    }
+
     function buildCopyText(post) {
         const fullText = post.full_text || post.full_text_preview || '';
         const postUrl = resolvePostUrl(post);
@@ -2867,6 +2915,10 @@ ${item.body}
             platformConfig = { icon: 'play_circle', color: '#FF0000', name: 'YouTube' };
         }
         article.dataset.platform = platform;
+        // 외부 요약 매핑 대조용. headless 검증이 DOM 구조를 추측하지 않게 한다.
+        if (post.platform_id || post.code) {
+            article.dataset.platformId = post.platform_id || post.code;
+        }
 
         // Date Logic
         const dateObj = post._dateObj;
@@ -3334,10 +3386,14 @@ ${item.body}
             <button class="note-open-btn" type="button" data-post-key="${escapeHtml(postKey)}" title="메모 추가">
                 <span class="note-open-label">+note</span>
             </button>
-            <a href="${escapeHtml(postUrl || '#')}" target="_blank" class="flex items-center gap-1 hover:text-primary transition-colors ml-auto">
-                <span>View Original</span>
-                <span class="material-symbols-outlined text-[16px]">open_in_new</span>
-            </a>
+            <div class="footer-links ml-auto flex items-center gap-1">
+                ${buildExternalSummaryLinks(post)}
+                <a href="${escapeHtml(postUrl || '#')}" target="_blank" rel="noopener"
+                   class="footer-link-btn hover:text-primary transition-colors"
+                   title="원본 보기" aria-label="원본 보기">
+                    <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+                </a>
+            </div>
         `;
         article.appendChild(footer);
 
