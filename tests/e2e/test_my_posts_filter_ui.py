@@ -595,3 +595,205 @@ def test_viewer_scenario_after_fix(viewer, api_posts):
                 f"{name} 탭 건수 {visible}이 그 플랫폼 총수를 넘습니다."
             )
         _capture_05(viewer, f"scenario_{step}_{name}")
+
+
+# --- 20260828_01: MY 를 켤 때 조건별 단계 완화 --------------------------------
+#
+# 선행 계획 20260827_05 는 「플랫폼 칩 → MY 해제」한 방향만 넣었다. 반대 방향
+# (플랫폼을 고른 뒤 MY 를 켜는 것)은 그대로 두어, 내 글이 0건인 플랫폼·태그·작성자에서
+# 조용히 빈 화면이 됐다. 사용자 보고: 「유튜브 선택 상태에서 MY 를 누르면 하나도 안 나온다」.
+#
+# 이제 MY 를 켤 때 내 글이 나올 때까지 조건을 하나씩 푼다(작성자 → 태그 → 플랫폼).
+# 계획: _docs/20260828_01_뷰어-MY필터-조건별-단계완화-계획.md
+
+EVIDENCE_DIR_20260828_01 = (
+    Path(__file__).resolve().parents[2] / "_docs" / "evidence" / "20260828_01"
+)
+
+PLATFORM_CHIPS = ["all", "favorites", "linkedin", "threads", "x", "youtube"]
+
+
+def _capture_20260828_01(page, name):
+    """계획 20260828_01 의 증거 캡처. headless 브라우저가 직접 찍는다."""
+    EVIDENCE_DIR_20260828_01.mkdir(parents=True, exist_ok=True)
+    page.screenshot(path=str(EVIDENCE_DIR_20260828_01 / f"{name}.png"), full_page=False)
+
+
+def _active_platform(page):
+    """켜져 있는 플랫폼 칩의 data-filter. MY 는 플랫폼이 아니므로 제외한다."""
+    return page.evaluate(
+        """() => {
+            const chip = [...document.querySelectorAll('.filter-chip.active')]
+                .find((b) => b.id !== 'myPostsBtn');
+            return chip ? chip.dataset.filter : null;
+        }"""
+    )
+
+
+def _click_tag(page, name):
+    page.evaluate(
+        """(name) => {
+            const chip = [...document.querySelectorAll('.global-tag-chip')]
+                .find((t) => t.textContent.trim() === name);
+            if (!chip) throw new Error(`태그 칩을 찾을 수 없습니다: ${name}`);
+            chip.click();
+        }""",
+        name,
+    )
+    page.wait_for_timeout(900)
+
+
+def _active_tag(page):
+    return page.evaluate(
+        """() => {
+            const chip = document.querySelector('.global-tag-chip.active');
+            return chip ? chip.textContent.trim() : null;
+        }"""
+    )
+
+
+def _own_count_for_platform(api_posts, platform):
+    keys = {"x", "twitter"} if platform == "x" else {platform}
+    return len([
+        p for p in _own_posts(api_posts)
+        if str(p.get("sns_platform") or "").lower() in keys
+    ])
+
+
+def _tag_with_own_posts(page):
+    """내 글이 1건 이상 붙은 태그 이름. 없으면 테스트를 건너뛴다."""
+    return page.evaluate(
+        """() => {
+            const names = [...document.querySelectorAll('.global-tag-chip')]
+                .map((t) => t.textContent.trim());
+            return names;
+        }"""
+    )
+
+
+# N1: 내 글이 있는 플랫폼은 유지된다
+def test_my_keeps_platform_with_own_posts(viewer, api_posts):
+    """LinkedIn 은 내 글이 있으므로 MY 를 켜도 칩이 살아남는다.
+
+    이게 이번 변경으로 얻는 것이다. 예전에는 `LinkedIn → MY` 는 되고
+    `MY → LinkedIn` 은 MY 가 풀려, 같은 두 버튼이 순서로 갈렸다.
+    """
+    own_linkedin = _own_count_for_platform(api_posts, "linkedin")
+    assert own_linkedin > 0, "LinkedIn 내 글이 없어 이 테스트가 성립하지 않습니다."
+
+    _click_filter(viewer, "linkedin")
+    _toggle_my(viewer)
+
+    assert _active_platform(viewer) == "linkedin", (
+        "LinkedIn 은 내 글이 있으므로 MY 를 켜도 유지돼야 합니다."
+    )
+    assert _visible_from_label(viewer) == own_linkedin
+    _capture_20260828_01(viewer, "n1_linkedin_kept")
+
+
+# N2: 내 글이 없는 플랫폼은 풀린다 (사용자 보고 건)
+def test_my_releases_platform_without_own_posts(viewer, api_posts):
+    """YouTube 는 내 글이 0건이므로 MY 를 켜면 All 로 풀린다.
+
+    사용자가 보고한 「유튜브 선택 상태에서 MY 를 누르면 하나도 안 나온다」가 이것이다.
+    """
+    assert _own_count_for_platform(api_posts, "youtube") == 0, (
+        "YouTube 내 글이 생겼습니다. 이 테스트의 전제가 바뀌었습니다."
+    )
+
+    _click_filter(viewer, "youtube")
+    _toggle_my(viewer)
+
+    assert _active_platform(viewer) == "all", (
+        "YouTube 는 내 글이 0건이므로 MY 를 켜면 All 로 풀려야 합니다."
+    )
+    visible = _visible_from_label(viewer)
+    assert visible > 0, "수정 전 증상(0건)이 그대로입니다."
+    assert visible == len(_own_posts(api_posts))
+    _capture_20260828_01(viewer, "n2_youtube_released")
+
+
+# N3: 내 글이 있는 태그는 유지된다
+def test_my_keeps_tag_with_own_posts(viewer):
+    _click_tag(viewer, "클로드")
+    before = _visible_from_label(viewer)
+    _toggle_my(viewer)
+
+    assert _active_tag(viewer) == "클로드", (
+        "내 글이 있는 태그는 MY 를 켜도 유지돼야 합니다."
+    )
+    visible = _visible_from_label(viewer)
+    assert 0 < visible < before
+    _capture_20260828_01(viewer, "n3_tag_kept")
+
+
+# N4: 내 글이 없는 태그는 풀린다
+def test_my_releases_tag_without_own_posts(viewer, api_posts):
+    _click_tag(viewer, "하네스")
+    _toggle_my(viewer)
+
+    assert _active_tag(viewer) is None, (
+        "내 글이 0건인 태그는 MY 를 켜면 풀려야 합니다."
+    )
+    assert _visible_from_label(viewer) == len(_own_posts(api_posts))
+    _capture_20260828_01(viewer, "n4_tag_released")
+
+
+# N6: 빈 화면 안내판이 걸린 조건을 이름으로 말한다
+def test_empty_state_names_active_filters(viewer):
+    """검색어는 자동 해제 대상이 아니므로 0건이 남을 수 있다. 그때 이유를 말해야 한다.
+
+    ⚠️ 플랫폼은 반드시 LinkedIn 이어야 한다. YouTube 는 내 글이 0건이라 완화가
+       플랫폼까지 풀어버려 안내판에 이름이 남지 않는다(계획 게이트 2차 검수 지적).
+    """
+    _click_filter(viewer, "linkedin")
+    viewer.fill("#searchInput", "카드뉴스")
+    viewer.wait_for_timeout(2500)
+    _toggle_my(viewer)
+    viewer.wait_for_timeout(1500)
+
+    assert _visible_from_label(viewer) == 0, "이 조합은 0건이어야 테스트가 성립합니다."
+    text = viewer.locator("#noResultsText").inner_text()
+    assert "LinkedIn" in text, f"안내판에 플랫폼 이름이 없습니다: {text!r}"
+    assert "MY" in text, f"안내판에 MY 가 없습니다: {text!r}"
+    assert "카드뉴스" in text, f"안내판에 검색어가 없습니다: {text!r}"
+    _capture_20260828_01(viewer, "n6_empty_state_names_filters")
+
+
+# S1: 어떤 플랫폼 칩에서 MY 를 켜도 0건이 되지 않는다
+def test_my_never_yields_empty_from_platform_chip(viewer, api_posts):
+    """2.2 표의 6개 칩을 전부 순회한다. 이게 사용자 보고를 막는 그물이다."""
+    own_total = len(_own_posts(api_posts))
+
+    for chip in PLATFORM_CHIPS:
+        if viewer.locator(MY_BTN).get_attribute("aria-pressed") == "true":
+            _toggle_my(viewer)
+        _click_filter(viewer, chip)
+        _toggle_my(viewer)
+
+        visible = _visible_from_label(viewer)
+        assert visible > 0, f"{chip} 칩에서 MY 를 켰더니 0건입니다."
+        assert visible <= own_total, (
+            f"{chip} + MY 가 {visible}건으로 내 글 전체({own_total})를 넘습니다."
+        )
+        _capture_20260828_01(viewer, f"s1_{chip}")
+
+
+# S2: MY 를 끄면 아무 조건도 바뀌지 않는다
+def test_my_off_changes_nothing(viewer, api_posts):
+    """완화는 켤 때만 일어난다. 끌 때 조건을 건드리면 사용자가 자리를 잃는다."""
+    _click_filter(viewer, "linkedin")
+    _toggle_my(viewer)
+    assert _active_platform(viewer) == "linkedin"
+
+    _toggle_my(viewer)
+
+    assert viewer.locator(MY_BTN).get_attribute("aria-pressed") == "false"
+    assert _active_platform(viewer) == "linkedin", (
+        "MY 를 껐더니 플랫폼 선택까지 바뀌었습니다."
+    )
+    linkedin_total = len([
+        p for p in api_posts if str(p.get("sns_platform") or "").lower() == "linkedin"
+    ])
+    assert _visible_from_label(viewer) <= linkedin_total
+    _capture_20260828_01(viewer, "s2_my_off_keeps_platform")

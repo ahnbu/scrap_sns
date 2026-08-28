@@ -135,6 +135,37 @@ function countUniqueOwnPosts(posts) {
     return total;
 }
 
+// MY 를 켤 때 걸려 있던 조건 때문에 0건이 되는 것을 막는 완화 절차.
+// 내 글이 나올 때까지 조건을 하나씩 푼다 - 지킬 수 있는 조건은 지킨다.
+//
+// 푸는 순서(작성자 → 태그 → 플랫폼)에는 이유가 있다.
+//   작성자: 남의 작성자면 내 글과의 교집합이 구조적으로 항상 0이다. 먼저 버린다.
+//   태그  : 플랫폼보다 좁고, 사용자가 방금 누른 것일 가능성이 낮다.
+//   플랫폼: 상단 칩 줄은 늘 보이고 사용자가 가장 의식하는 조건이다. 가장 오래 지킨다.
+//
+// 조건을 따로따로 검사하지 않는 이유: 플랫폼에도 태그에도 내 글이 있는데 둘을 겹치면
+// 0건인 조합이 있다(한 플랫폼에만 올린 주제 태그). 개별 검사는 그걸 통과시켜 버린다.
+// 매 단계 실제로 세면 함정이 사라지고, 태그만 풀고 플랫폼은 지키는 결과가 나온다.
+//
+// DOM·전역 상태를 만지지 않는 순수 절차다. 그래야 실데이터에 없는 교집합 함정을
+// unit test 로 재현할 수 있다(현재 데이터에는 그 조합이 0개다).
+// 계획: _docs/20260828_01 (3.1, T1, 4.2 N5)
+function relaxOwnPostFilters(state, countOwnPosts) {
+    const next = { platform: state.platform, tag: state.tag, author: state.author };
+    const releases = [
+        (s) => { s.author = null; },
+        (s) => { s.tag = null; },
+        (s) => { s.platform = 'all'; },
+    ];
+    for (const release of releases) {
+        if (countOwnPosts(next) > 0) return next;
+        release(next);
+    }
+    // 다 풀었는데도 0이면 남은 원인은 검색어뿐이다. 검색어는 여기서 풀지 않는다 -
+    // 검색창의 글자와 화면이 어긋나면 더 헷갈린다. 빈 화면 안내판이 이유를 말한다.
+    return next;
+}
+
 // 목록에서 내 글 숨기기. 스크랩 목록의 본래 대상은 남의 글이라 기본값이 켜짐이다.
 // 계획: _docs/20260827_03 (3.4 T3)
 const HIDE_OWN_POSTS_STORAGE_KEY = 'sns_hide_own_posts';
@@ -342,17 +373,24 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 200);
     });
 
+    // 플랫폼 선택과 칩 켜짐 표시를 한 곳에서 맞춘다. 위임 핸들러와 MY 완화(T1)가 같이 쓴다.
+    // MY 버튼은 건드리지 않는다 - 자기 상태(showOwnPostsOnly)를 따르며
+    // syncMyPostsButtonState() 가 맡는다.
+    // 계획: _docs/20260828_01 (T1-a)
+    function setPlatformFilter(name) {
+        currentFilter = name;
+        document.querySelectorAll('.filter-chip').forEach((b) => {
+            if (b.id === 'myPostsBtn') return;
+            b.classList.toggle('active', b.dataset.filter === name);
+        });
+    }
+
     // Filters
     filterContainer.addEventListener('click', (e) => {
         const btn = e.target.closest('.filter-chip');
         if (!btn) return;
         // MY 도 filter-chip 이지만 플랫폼 선택이 아니다. 자기 핸들러가 처리한다.
         if (btn.id === 'myPostsBtn') return;
-
-        // Update active visual state. MY 의 활성 표시는 여기서 끄지 않는다 -
-        // 아래 showOwnPostsOnly 해제와 함께 syncMyPostsButtonState() 가 맞춘다.
-        document.querySelectorAll('.filter-chip').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
 
         // 플랫폼을 골랐다는 건 그 플랫폼 글을 보겠다는 뜻이다. 내 글만 보는 상태를 유지하지 않는다.
         // 이게 없으면 MY 가 켜진 채로 X·YouTube 를 눌러 0건이 뜬다.
@@ -361,7 +399,7 @@ document.addEventListener('DOMContentLoaded', () => {
         syncMyPostsButtonState();
 
         clearSelection();
-        currentFilter = btn.dataset.filter;
+        setPlatformFilter(btn.dataset.filter);
         if (searchQuery) {
             void runServerSearch(searchQuery);
             return;
@@ -379,11 +417,49 @@ document.addEventListener('DOMContentLoaded', () => {
         myPostsBtn.classList.toggle('active', showOwnPostsOnly);
     }
 
+    // 임의의 조건 조합에서 내 글이 몇 건인지 센다. 전역 조건을 잠깐 갈아끼웠다 되돌린다 -
+    // getFilteredPosts() 가 전역을 읽기 때문이고, 이 함수가 유일한 예외다.
+    //
+    // 검색 중이면 searchResults 는 이미 플랫폼으로 좁혀져 있다(runServerSearch 가
+    // platform 파라미터를 함께 보낸다). 그 배열로는 "플랫폼을 풀면 내 글이 나오는가"를
+    // 판정할 수 없으므로 allPosts 를 모집단으로 쓴다.
+    // 계획: _docs/20260828_01 (T1-c)
+    function countOwnPostsUnder(state) {
+        const savedFilter = currentFilter;
+        const savedTag = currentTag;
+        const savedAuthor = currentAuthor;
+        currentFilter = state.platform;
+        currentTag = state.tag;
+        currentAuthor = state.author;
+        try {
+            return getFilteredPosts(searchQuery ? allPosts : undefined).length;
+        } finally {
+            currentFilter = savedFilter;
+            currentTag = savedTag;
+            currentAuthor = savedAuthor;
+        }
+    }
+
+    // 순수 절차 relaxOwnPostFilters() 의 결과를 화면 상태에 반영한다.
+    // 판정 로직은 그 함수에 있다(파일 상단). 여기는 대입만 한다.
+    // 계획: _docs/20260828_01 (T1)
+    function relaxFiltersForOwnPosts() {
+        const relaxed = relaxOwnPostFilters(
+            { platform: currentFilter, tag: currentTag, author: currentAuthor },
+            countOwnPostsUnder,
+        );
+        currentTag = relaxed.tag;
+        currentAuthor = relaxed.author;
+        if (relaxed.platform !== currentFilter) setPlatformFilter(relaxed.platform);
+    }
+
     if (myPostsBtn) {
         syncMyPostsButtonState();
 
         myPostsBtn.addEventListener('click', () => {
             showOwnPostsOnly = !showOwnPostsOnly;
+            // 끌 때는 아무 조건도 건드리지 않는다.
+            if (showOwnPostsOnly) relaxFiltersForOwnPosts();
             syncMyPostsButtonState();
             clearSelection();
             if (searchQuery) {
@@ -2203,8 +2279,41 @@ ${item.body}
         }
     }
 
-    function getFilteredPosts() {
-        const sourcePosts = searchResults ?? allPosts;
+    // 빈 화면에 걸린 조건을 이름으로 적는다. 어떤 조건 때문에 0건인지 말해주지 않으면
+    // 사용자가 스스로 빠져나올 단서가 화면에 없다.
+    // 알림이 아니라 안내판이다 - 막다른 길에서만 보이고 평상시에는 나타나지 않는다.
+    //
+    // 플랫폼 이름은 매핑 테이블을 새로 만들지 않고 칩의 title 을 그대로 쓴다.
+    // (index.html 의 Favorites·LinkedIn·Threads·X (Twitter)·YouTube)
+    // 이름이 두 곳으로 갈라지지 않는다.
+    // 계획: _docs/20260828_01 (T3)
+    function describeActiveFilters() {
+        const parts = [];
+        if (currentFilter && currentFilter !== 'all') {
+            const chip = document.querySelector(`.filter-chip[data-filter="${currentFilter}"]`);
+            parts.push((chip?.title || chip?.textContent || currentFilter).trim());
+        }
+        if (currentTag) parts.push(`태그 "${currentTag}"`);
+        if (currentAuthor) parts.push(`작성자 ${currentAuthor.label}`);
+        if (showOwnPostsOnly) parts.push('MY');
+        if (searchQuery) parts.push(`검색어 "${searchQuery}"`);
+        return parts;
+    }
+
+    function updateNoResultsText() {
+        // 데이터 로드 실패 시 noResults 안쪽이 통째로 교체된다. 그때는 건너뛴다.
+        const el = document.getElementById('noResultsText');
+        if (!el) return;
+        const parts = describeActiveFilters();
+        el.textContent = parts.length === 0
+            ? '조건에 맞는 글이 없습니다.'
+            : `${parts.join(' · ')} 조건에 맞는 글이 없습니다.`;
+    }
+
+    // sourceOverride 는 MY 완화 판정 전용이다(계획: _docs/20260828_01 T1-c).
+    // 평상시에는 넘기지 않고 기존대로 검색 결과 또는 전체를 쓴다.
+    function getFilteredPosts(sourceOverride) {
+        const sourcePosts = sourceOverride ?? (searchResults ?? allPosts);
         return sourcePosts.filter((post) => {
             const matchesFilter =
                 currentFilter === 'all' ||
@@ -2687,6 +2796,7 @@ ${item.body}
         _pendingPosts = [];
 
         if (filtered.length === 0) {
+            updateNoResultsText();
             noResults.classList.remove('hidden');
             masonryGrid.innerHTML = '';
             updateBulkActionBar();
