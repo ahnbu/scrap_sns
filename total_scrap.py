@@ -16,6 +16,7 @@ from urllib.parse import urlsplit, urlunsplit
 from utils.json_to_md import convert_json_to_md
 from utils.auth_status import AUTH_REQUIRED_EXIT_CODE
 from utils.post_meta import build_post_key
+from utils.media_expiry import has_live_media_url
 from utils import metric_refresh
 from utils.own_post_order import assign_own_post_order, normalize_ts
 
@@ -918,9 +919,32 @@ def preserve_existing_local_images(posts, local_images_by_key):
 
 
 def select_image_download_posts(posts, mode, existing_post_keys):
+    """이미지 다운로드를 시도할 게시글을 고른다.
+
+    신규 글만 받으면 첫 수집에서 놓친 이미지는 영영 복구되지 않는다. licdn 서명
+    URL 은 몇 주 만에 만료되므로, 놓친 채로 한 바퀴 돌면 그 글의 이미지는 죽는다.
+    그래서 기존 글이라도 '아직 살아 있는 이미지 URL 이 있는데 로컬 파일이 없는'
+    경우는 다시 시도한다.
+
+    만료 URL 만 가진 글은 계속 제외한다. 매 실행마다 죽은 URL 에 403 요청을
+    반복해봐야 수집 시간만 늘어난다.
+    """
     if mode != "update" or not existing_post_keys:
         return posts
-    return [post for post in posts if build_post_key(post) not in existing_post_keys]
+
+    selected = []
+    for post in posts:
+        if build_post_key(post) not in existing_post_keys:
+            selected.append(post)
+            continue
+
+        if post.get('local_images'):
+            continue
+
+        if has_live_media_url(post.get('media')):
+            selected.append(post)
+
+    return selected
 
 
 def cleanup_old_output_json_after_success():
@@ -952,6 +976,65 @@ def cleanup_old_output_json_after_success():
     return True
 
 
+def refresh_external_summaries_after_success():
+    """Lilys·LiveWiki 요약 라이브러리를 새로 받아 뷰어 매핑을 다시 만든다.
+
+    이 단계가 없으면 매핑은 사람이 3개 명령을 손으로 칠 때만 갱신된다. 그러면
+    새로 요약한 영상은 요약이 실제로 존재해도 뷰어가 알 방법이 없다.
+
+    실패해도 수집 전체를 실패로 만들지 않는다. 요약 링크는 부가 정보이고, 이것
+    때문에 수집 결과를 버리면 손해가 훨씬 크다.
+
+    수집 두 단계가 실패해도 빌더는 반드시 부른다. 빌더는 입력이 하나만 있어도
+    진행하고 둘 다 없으면 기존 출력을 지킨다(scripts/build_external_summaries.mjs
+    상단 주석). 게다가 수집이 실패하면 그쪽 입력 파일은 덮어써지지 않고 이전
+    성공본이 남으므로, 빌더를 막으면 성공한 쪽 요약까지 반영이 끊길 뿐이다.
+    """
+    repo_root = os.path.dirname(os.path.abspath(__file__))
+    steps = [
+        ("Lilys 라이브러리", [os.path.join(repo_root, "scripts", "lilys_library.mjs"), "list"]),
+        ("LiveWiki 라이브러리", [os.path.join(repo_root, "scripts", "livewiki_library.mjs"), "list"]),
+        ("외부 요약 매핑 빌드", [os.path.join(repo_root, "scripts", "build_external_summaries.mjs")]),
+    ]
+
+    all_ok = True
+    for label, script_args in steps:
+        script_path = script_args[0]
+        if not os.path.exists(script_path):
+            print(f"⚠️ {label} 스크립트를 찾을 수 없습니다: {script_path}")
+            all_ok = False
+            continue
+
+        completed = subprocess.run(
+            ["node", *script_args],
+            cwd=repo_root,
+            text=True,
+            encoding="utf-8",
+            errors="replace",
+            capture_output=True,
+            check=False,
+        )
+
+        if completed.stdout:
+            print(completed.stdout.strip())
+        if completed.stderr:
+            print(completed.stderr.strip())
+
+        if completed.returncode != 0:
+            all_ok = False
+            print(f"⚠️ {label} 갱신에 실패했습니다. exit={completed.returncode}")
+            if "library.mjs" in script_path:
+                login_cmd = os.path.basename(script_path)
+                print(f"   재로그인이 필요할 수 있습니다: node scripts/{login_cmd} login")
+
+    if all_ok:
+        print("   ✅ 외부 요약 매핑 갱신 완료")
+    else:
+        print("⚠️ 외부 요약 매핑을 일부만 갱신했습니다. 수집 결과 자체는 정상입니다.")
+
+    return all_ok
+
+
 def run(mode='update'):
     platform_results = {}
     try:
@@ -980,6 +1063,7 @@ def run(mode='update'):
                 local_image_link_posts=image_posts if mode == "update" else posts,
             )
             cleanup_old_output_json_after_success()
+            refresh_external_summaries_after_success()
     finally:
         auth_required = [
             platform

@@ -1,3 +1,5 @@
+import time
+
 import pytest
 
 import linkedin_scrap
@@ -117,3 +119,69 @@ def test_update_mode_resets_consecutive_existing_count_after_new_post(monkeypatc
 
     assert scraper.consecutive_existing_count == 0
     assert len(scraper.posts) == 1
+
+
+def _expired_licdn_url():
+    past = int(time.time()) - 30 * 86_400
+    return f"https://media.licdn.com/dms/image/v2/DEAD/feedshare-image/0/1/?e={past}&v=beta"
+
+
+def _live_licdn_url():
+    future = int(time.time()) + 30 * 86_400
+    return f"https://media.licdn.com/dms/image/v2/LIVE/feedshare-image/0/1/?e={future}&v=beta"
+
+
+def _existing_scraper(activity_id, media, monkeypatch, parse_result=None):
+    scraper = linkedin_scrap.LinkedinScraper.__new__(linkedin_scrap.LinkedinScraper)
+    scraper.posts = []
+    scraper.collected_codes = set()
+    scraper.existing_codes = {activity_id}
+    scraper.existing_posts_map = {activity_id: {"platform_id": activity_id, "media": media}}
+    scraper.consecutive_existing_count = linkedin_scrap.CONSECUTIVE_EXISTING_LIMIT - 1
+    scraper.stopped_early = False
+
+    monkeypatch.setattr(linkedin_scrap, "CRAWL_MODE", "update only")
+    if parse_result is None:
+        def fail_parse(*_args, **_kwargs):
+            raise AssertionError("existing post should not be reparsed")
+
+        monkeypatch.setattr(linkedin_scrap, "parse_linkedin_post", fail_parse)
+    else:
+        monkeypatch.setattr(
+            linkedin_scrap, "parse_linkedin_post", lambda *_a, **_k: parse_result
+        )
+    return scraper
+
+
+def test_update_mode_reparses_existing_post_when_all_media_urls_expired(monkeypatch):
+    """licdn 서명 URL 이 전부 만료된 글은 새 URL 을 받으려고 다시 파싱한다."""
+    activity_id = "7457613653937410048"
+    scraper = _existing_scraper(
+        activity_id,
+        [_expired_licdn_url()],
+        monkeypatch,
+        parse_result={
+            "platform_id": activity_id,
+            "date": "2026-08-31",
+            "username": "tester",
+            "full_text": "refreshed",
+            "media": [_live_licdn_url()],
+        },
+    )
+
+    scraper.extract_post_from_view_model({"entityUrn": f"urn:li:activity:{activity_id}"})
+
+    assert scraper.stopped_early is False
+    assert scraper.consecutive_existing_count == 0
+    assert len(scraper.posts) == 1
+
+
+def test_update_mode_skips_existing_post_when_media_url_is_still_live(monkeypatch):
+    """아직 살아 있는 URL 은 다시 긁을 이유가 없다. 조기 종료 카운트를 그대로 센다."""
+    activity_id = "7457613653937410048"
+    scraper = _existing_scraper(activity_id, [_live_licdn_url()], monkeypatch)
+
+    scraper.extract_post_from_view_model({"entityUrn": f"urn:li:activity:{activity_id}"})
+
+    assert scraper.stopped_early is True
+    assert scraper.posts == []

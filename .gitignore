@@ -75,6 +75,8 @@ scripts/*
 !scripts/livewiki_library.mjs
 !scripts/build_external_summaries.mjs
 !scripts/verify_external_summary_icons.mjs
+!scripts/verify_external_summary_links_headless.mjs
+!scripts/verify_linkedin_images_headless.mjs
 
 # Terminal Paste Image folder
 .cp-images/
@@ -160,3 +162,9 @@ tests/e2e/_artifacts/
 
 # Threads display_name 백필 산출물 (local-only)
 output_threads/python/*.bak_*
+
+# 검증 산출물 (headless 실패 시 스크린샷)
+_docs/evidence/*.png
+_docs/evidence/*.log
+output_total/*.bak
+output_linkedin/python/*.bak

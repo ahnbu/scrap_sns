@@ -10,6 +10,7 @@ from datetime import datetime, timedelta
 from playwright.sync_api import sync_playwright
 from utils.json_to_md import convert_json_to_md
 from utils.linkedin_parser import parse_linkedin_post, extract_urn_id
+from utils.media_expiry import has_live_media_url
 from utils.auth_paths import linkedin_storage
 from utils.auth_status import exit_auth_required, is_orchestrated_run
 
@@ -323,15 +324,28 @@ class LinkedinScraper:
                 return
 
             if activity_id in self.existing_codes:
-                if CRAWL_MODE == "update only":
-                    self.consecutive_existing_count += 1
-                    if self.consecutive_existing_count >= CONSECUTIVE_EXISTING_LIMIT:
-                        self.stopped_early = True
-                    return
-
-                # 이미지가 없는 기존 데이터라면 업데이트를 위해 통과 (선택 사항)
                 existing_post = self.existing_posts_map.get(activity_id, {})
-                if existing_post.get("media"):
+                existing_media = existing_post.get("media") or []
+                # licdn 이미지 URL 은 쿼리 `e=` 의 만료 epoch 가 지나면 어떤 헤더로도
+                # 403 이다. media 값이 '있다'는 사실만 보고 넘기면 죽은 URL 이
+                # 영원히 교체되지 않는다. 새 서명 URL 을 받아야 이미지가 살아난다.
+                media_all_expired = bool(existing_media) and not has_live_media_url(existing_media)
+
+                if CRAWL_MODE == "update only":
+                    if media_all_expired:
+                        # URL 갱신이 필요한 글은 '기수집'으로 세지 않는다. 세어버리면
+                        # 만료 글이 목록 깊은 곳에 몰려 있을 때 조기 종료가 먼저 걸려
+                        # 닿지 못한다. 이미지가 아예 없는 글은 갱신할 것이 없으므로
+                        # 예전처럼 센다 - 안 그러면 조기 종료가 영영 안 걸린다.
+                        self.consecutive_existing_count = 0
+                    else:
+                        self.consecutive_existing_count += 1
+                        if self.consecutive_existing_count >= CONSECUTIVE_EXISTING_LIMIT:
+                            self.stopped_early = True
+                        return
+
+                # 이미지가 없는 기존 데이터는 예전처럼 통과시켜 갱신 기회를 준다.
+                if existing_media and not media_all_expired:
                     return
 
             post_data = parse_linkedin_post(item, INCLUDE_IMAGES, CRAWL_START_TIME)

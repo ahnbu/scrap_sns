@@ -1933,6 +1933,24 @@ ${item.body}
         return Number(post.media_count || 0);
     }
 
+    /**
+     * 서명 URL 이 이미 만료됐는지 판정한다.
+     * licdn 은 쿼리 `e=` 에 만료 epoch(초) 를 담는다. 만료된 URL 은 어떤 헤더로도
+     * 403 이라 img.src 에 넣어봐야 깨진 자리표시자만 남는다.
+     * 참조 정본: utils/media_expiry.py - 규칙을 바꿀 때 양쪽을 함께 고친다.
+     */
+    function isMediaUrlExpired(url) {
+        if (!url) return false;
+        let expiry;
+        try {
+            expiry = new URL(url, window.location.origin).searchParams.get('e');
+        } catch (error) {
+            return false;
+        }
+        if (!expiry || !/^\d+$/.test(expiry)) return false;
+        return Number(expiry) * 1000 <= Date.now();
+    }
+
     function getBestImageSource(post, preferDetail = false) {
         const localImages = Array.isArray(post.local_images) ? post.local_images : [];
         const mediaList = Array.isArray(post.media) ? post.media : [];
@@ -1947,6 +1965,11 @@ ${item.body}
         }
         if (localImages.length > 0) {
             return localImages[0];
+        }
+        // 로컬 파일이 없고 원격 URL 마저 만료면 렌더할 것이 없다. 빈 문자열을
+        // 돌려 이미지 영역 자체를 만들지 않는다 - 깨진 자리표시자보다 낫다.
+        if (isMediaUrlExpired(originalUrl)) {
+            return '';
         }
         if (originalUrl.includes('wsrv.nl') || originalUrl.includes('licdn.com')) {
             return originalUrl;
@@ -2581,10 +2604,12 @@ ${item.body}
         `;
     }
 
-    // 외부 요약 서비스. 라벨은 title/aria-label 로만 노출하고 화면에는 아이콘만 남긴다.
+    // 외부 요약 서비스. 아이콘(auto_awesome/article)은 어느 서비스인지 읽히지
+    // 않아 이름 배지로 바꿨다. 배지 둘이 동시에 붙는 카드는 전체 유튜브 481건 중
+    // 5건뿐이라 푸터 폭에 부담이 없다.
     const EXTERNAL_SUMMARY_SERVICES = [
-        { key: 'lilys', label: 'Lilys 요약', glyph: 'auto_awesome' },
-        { key: 'livewiki', label: 'LiveWiki 요약', glyph: 'article' },
+        { key: 'lilys', label: 'Lilys 요약', badge: 'Lilys', tone: 'lilys' },
+        { key: 'livewiki', label: 'LiveWiki 요약', badge: 'LiveWiki', tone: 'livewiki' },
     ];
 
     /**
@@ -2603,10 +2628,8 @@ ${item.body}
             .map((service) => `
                 <a href="${escapeHtml(entry[service.key])}" target="_blank" rel="noopener"
                    data-external-summary="${service.key}"
-                   class="footer-link-btn hover:text-primary transition-colors"
-                   title="${service.label}" aria-label="${service.label}">
-                    <span class="material-symbols-outlined text-[16px]">${service.glyph}</span>
-                </a>`)
+                   class="external-summary-badge external-summary-badge--${service.tone}"
+                   title="${service.label}" aria-label="${service.label}">${service.badge}</a>`)
             .join('');
     }
 

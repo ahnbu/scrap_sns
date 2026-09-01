@@ -1103,3 +1103,35 @@ input:checked + .toggle-slider:before {
   outline: 2px solid #7f0df2;
   outline-offset: 1px;
 }
+
+/* 외부 요약 링크. 아이콘 대신 서비스 이름을 그대로 읽히게 한다. */
+.external-summary-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 20px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  border: 0.5px solid transparent;
+  font-size: 11px;
+  line-height: 1.4;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: filter 0.15s ease;
+}
+.external-summary-badge:hover {
+  filter: brightness(1.25);
+}
+.external-summary-badge:focus-visible {
+  outline: 2px solid #7f0df2;
+  outline-offset: 1px;
+}
+.external-summary-badge--lilys {
+  background-color: #3a2a12;
+  border-color: #6b4a1c;
+  color: #f0b155;
+}
+.external-summary-badge--livewiki {
+  background-color: #12303a;
+  border-color: #1d5a6b;
+  color: #5ec7dd;
+}

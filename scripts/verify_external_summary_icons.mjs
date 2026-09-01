@@ -112,7 +112,17 @@ async function main() {
             externals: external.map((a) => ({
               service: a.getAttribute('data-external-summary'),
               href: a.getAttribute('href') || '',
+              text: (a.textContent || '').trim(),
+              className: a.className || '',
+              title: a.getAttribute('title') || '',
+              ariaLabel: a.getAttribute('aria-label') || '',
+              rel: a.getAttribute('rel') || '',
             })),
+            footerOverflow: (() => {
+              const footer = card.querySelector('.footer-links');
+              if (!footer) return null;
+              return footer.scrollWidth > footer.clientWidth + 1;
+            })(),
             originalCount: original.length,
             originalLabelled: original.every(
               (a) => Boolean(a.getAttribute('title') || a.getAttribute('aria-label'))
@@ -180,6 +190,41 @@ async function main() {
       youtubeCards.length - externalCards.length === unmappedVisible.length
         || unmappedVisible.length === 0,
       `매핑 없는 화면 유튜브 ${unmappedVisible.length}건`
+    );
+
+    // V7~V9: 아이콘을 이름 배지로 바꾼 뒤 추가된 검사.
+    // 계획: _docs/20260901_01_링크드인-이미지-복구와-외부요약-자동화-아이콘-개선-계획.md
+    const allExternals = externalCards.flatMap((c) => c.externals);
+    const EXPECTED_BADGE = { lilys: 'Lilys', livewiki: 'LiveWiki' };
+    const badBadgeText = allExternals.filter(
+      (e) => e.text !== EXPECTED_BADGE[e.service]
+    );
+    record(
+      'V7 외부 요약 앵커가 서비스 이름을 그대로 노출한다',
+      allExternals.length > 0 && badBadgeText.length === 0,
+      allExternals.length === 0
+        ? '외부 앵커가 하나도 렌더되지 않았다'
+        : `앵커 ${allExternals.length}개 중 이름 불일치 ${badBadgeText.length}개`
+        + (badBadgeText.length
+          ? ` (예: ${badBadgeText[0].service} -> "${badBadgeText[0].text}")`
+          : '')
+    );
+
+    const badAccessibility = allExternals.filter(
+      (e) => !e.title || !e.ariaLabel || !/noopener/.test(e.rel)
+        || !e.className.includes('external-summary-badge')
+    );
+    record(
+      'V8 배지가 라벨·rel·전용 클래스를 유지한다',
+      allExternals.length > 0 && badAccessibility.length === 0,
+      `앵커 ${allExternals.length}개 중 위반 ${badAccessibility.length}개`
+    );
+
+    const overflowCards = snapshot.cards.filter((c) => c.footerOverflow === true);
+    record(
+      'V9 배지를 넣어도 카드 푸터가 가로로 넘치지 않는다',
+      overflowCards.length === 0,
+      `푸터 가로 넘침 ${overflowCards.length}건`
     );
 
     const failed = checks.filter((check) => !check.ok);
