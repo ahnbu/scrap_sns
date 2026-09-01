@@ -40,12 +40,12 @@ def server_url():
         if response.status_code != 200:
             pytest.fail(
                 f"뷰어 서버가 비정상 응답: {VIEWER_URL} -> {response.status_code}. "
-                f"`wscript sns_hub.vbs` 또는 `npm run view` 로 서버를 먼저 띄우세요."
+                f"`npm run restart` 로 서버를 먼저 띄우세요."
             )
     except requests.exceptions.RequestException as exc:
         pytest.fail(
             f"뷰어 서버에 접속할 수 없습니다: {VIEWER_URL} ({exc}). "
-            f"`wscript sns_hub.vbs` 또는 `npm run view` 로 서버를 먼저 띄우세요."
+            f"`npm run restart` 로 서버를 먼저 띄우세요."
         )
     return VIEWER_URL
 

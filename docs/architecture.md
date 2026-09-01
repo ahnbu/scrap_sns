@@ -34,7 +34,7 @@ created: "2026-07-26 18:40"
 
 현재 shipped HTML 진입점은 레포 루트 `index.html`이다. `scrap_sns_server.py`는 `/api/*` 제공이 중심이며, 서버 `/` 라우트와 `sns_hub.vbs`는 모두 루트 `index.html`을 기준으로 동작한다. 운영 문서도 동일하게 `http://localhost:5000/` 진입을 기준으로 설명한다.
 
-`sns_hub.vbs`와 `run_viewer.bat`는 `scripts/restart_viewer_server.ps1`을 통해 5000번 포트의 기존 `scrap_sns_server.py` 프로세스만 종료한 뒤 새 서버를 시작한다. 서버가 이미 정상 응답 중이어도 런처 실행 시 항상 재시작한다.
+`sns_hub.vbs`와 `run_viewer.bat`는 `scripts/restart_viewer_server.ps1`을 통해 5000번 포트의 기존 `scrap_sns_server.py` 프로세스만 종료한 뒤 새 서버를 시작한다. 서버가 이미 정상 응답 중이어도 런처 실행 시 항상 재시작한다. `npm run restart`는 같은 `restart_viewer_server.ps1`을 브라우저 탭 없이 직접 호출하는 세 번째 진입점이며, 코드 수정 후 검증용 재시작은 이쪽을 쓴다.
 
 ### 인증 런타임
 

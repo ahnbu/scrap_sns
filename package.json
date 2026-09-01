@@ -6,6 +6,7 @@
   "scripts": {
     "preinstall": "node -e \"var a=process.env.npm_config_user_agent||'',e=process.env.npm_execpath||'';if(!/pnpm/.test(a)&&!/pnpm/.test(e)){console.error('This repo uses pnpm only. Use: pnpm install');process.exit(1)}\"",
     "start": "python scrap_sns_server.py",
+    "restart": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/restart_viewer_server.ps1",
     "view": "wscript sns_hub.vbs",
     "stop": "stop_viewer.bat",
     "scrap:threads": "python thread_scrap.py",

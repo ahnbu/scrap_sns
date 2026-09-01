@@ -160,12 +160,15 @@ npm run view
 
 이 흐름은 `sns_hub.vbs`가 `scripts/restart_viewer_server.ps1`을 호출해 5000번 포트의 기존 `scrap_sns_server.py` 프로세스만 종료한 뒤 새 서버를 시작하고 `http://localhost:5000/`를 엽니다. 서버가 이미 정상 응답 중이어도 런처 실행 시 항상 재시작합니다. 현재 shipped HTML 진입점은 루트 `index.html`이며, `scrap_sns_server.py`는 API 제공이 중심입니다.
 
-서버만 따로 올리거나 종료하려면:
+서버만 따로 올리거나, 재시작하거나, 종료하려면:
 
 ```powershell
 npm run start
+npm run restart
 npm run stop
 ```
+
+`npm run restart`는 `sns_hub.vbs`가 내부에서 쓰는 `scripts/restart_viewer_server.ps1`을 그대로 호출합니다. 재시작 동작은 `npm run view`와 같지만 브라우저 탭을 열지 않으므로, 코드 수정 후 검증하려고 서버만 새로 띄울 때 씁니다.
 
 `run_viewer.bat`는 수동 실행용 보조 런처입니다. 기본 진입 문서로 가정하지 마세요.
 

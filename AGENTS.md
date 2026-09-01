@@ -18,8 +18,9 @@
 - 필요 시 프런트엔드 자산용 의존성 설치: `npm install`
 - 로컬 실행:
   - `npm run start` → `python scrap_sns_server.py`
-  - `npm run view` → `wscript sns_hub.vbs`
-  - `npm run stop` → `stop_viewer.bat`
+  - `npm run restart` → `scripts/restart_viewer_server.ps1` (서버만 재시작, 창·탭 없음)
+  - `npm run view` → `wscript sns_hub.vbs` (서버 재시작 + 브라우저 탭)
+  - `npm run stop` → `stop_viewer.bat` (대화형 `pause`가 있어 사용자용이다. 에이전트가 서버를 내릴 일은 `npm run restart`로 갈음한다)
 - 크롤링:
   - `npm run scrap:threads`
   - `npm run scrap:linkedin`
@@ -90,8 +91,8 @@
   - `pytest tests/e2e/test_api_security.py`
   - `pytest tests/smoke`
 - CLI·서버 검색·태그·URL 정규화 변경 시 `node utils/query-sns.mjs --help`와 관련 unit test를 함께 확인한다.
-- `scrap_sns_server.py`, `index.html`, `web_viewer/` 변경 후에는 `wscript sns_hub.vbs` 또는 `npm run view`로 5000번 서버를 재시작한 뒤 검증한다. 런처는 5000번 포트를 점유한 `scrap_sns_server.py`만 종료하고, 서버가 이미 정상 응답 중이어도 항상 새로 시작한다.
-- 검색·필터·태그·정렬 등 웹 뷰어 사용자 경험이 바뀌는 변경은 API/CLI 결과만으로 완료 판단하지 않는다. 실제 `http://localhost:5000/` 화면에서 사용자가 하는 순서대로 입력·클릭해 결과를 확인하고, 결과 화면 캡처를 증거로 남긴다.
+- `scrap_sns_server.py`, `index.html`, `web_viewer/` 변경 후에는 `npm run restart`로 5000번 서버를 재시작한 뒤 검증한다. 5000번 포트를 점유한 `scrap_sns_server.py`만 종료하고, 서버가 이미 정상 응답 중이어도 항상 새로 시작한다. `npm run view`·`wscript sns_hub.vbs`는 브라우저 탭까지 여는 사용자용 진입점이라, 사용자가 화면을 보겠다고 한 경우에만 쓴다.
+- 검색·필터·태그·정렬 등 웹 뷰어 사용자 경험이 바뀌는 변경은 API/CLI 결과만으로 완료 판단하지 않는다. 실제 `http://localhost:5000/` 화면에서 사용자가 하는 순서대로 입력·클릭해 결과를 확인하고, 결과 화면 캡처를 증거로 남긴다. 단 창을 띄우지 않는다 — `scripts/verify_*.mjs`처럼 `_shared/hidden-browser-verify-runner.mjs`를 쓰고, 창이 꼭 필요한 예외는 사유를 적는다.
 - SNS 수집·병합·이미지 반영 로직 변경 시 완료 기준은 최신 `output_total` 생성이 아니라 저장 데이터와 뷰어 반영의 일치다. 최소 검증은 `merge_results()` → `download_images()` → `validate_local_image_links()` 통과, 대상 ID가 최신 `output_total/total_full_YYYYMMDD.json`에 존재, 웹 뷰어 상단 총건수와 최신 JSON 게시글 수가 일치, 그리고 실제 뷰어 화면에서 대상 게시글이 확인되는 것이다.
 - 뷰어 결과가 사용자 제보와 다를 때는 최신 `output_total/total_full_YYYYMMDD.json` 경로·게시글 수, 웹 뷰어 상단 총건수, 실제 검색 화면의 표시 카드 수, 활성 플랫폼/태그/숨김 필터 상태를 함께 확인한다.
 - Conventional Commits 사용 (`feat`, `fix`, `refactor`, `chore`, `docs`, `test`, `ui`)
