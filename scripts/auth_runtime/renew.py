@@ -20,7 +20,7 @@ except ImportError:
     from utils.auth_paths import linkedin_storage, skool_storage, threads_storage, x_user_data
 
 
-# LinkedIn fingerprint 회복 목적으로 추가됨 (plan: docs/plans/20260505_03_renew.py-환경정렬-LinkedIn-fingerprint-회복.md).
+# LinkedIn fingerprint 회복 목적으로 추가됨 (plan: _docs/plans/20260505_03_renew.py-환경정렬-LinkedIn-fingerprint-회복.md).
 # 갱신기와 수집기의 user_agent/locale/viewport를 정렬해 LinkedIn step-up redirect를 회피한다.
 # Threads/Skool에도 동일 환경을 적용해 회귀 재발을 방지한다 (X는 별도 persistent profile 경로).
 BROWSER_USER_AGENT = (

@@ -477,7 +477,7 @@ class LinkedinScraper:
         # crawled_at 오름차순(과거->최신) 1차, 같은 수집 시각 내에서는 date 오름차순 2차.
         # 한 번의 실행에서 crawled_at은 모두 같으므로 실질 정렬 키는 date다.
         # 수집 배열 순서는 저장글 화면 순서와 무관하므로 배열 순서에 의존하지 않는다.
-        # 원인은 응답 자체이며 수집 코드가 아니다. docs/architecture.md의 LinkedIn 수집 순서 참조.
+        # 원인은 응답 자체이며 수집 코드가 아니다. _docs/architecture.md의 LinkedIn 수집 순서 참조.
         new_posts = sorted(
             [p for p in self.posts if p.get("sequence_id", 0) == 0],
             key=lambda x: (x['crawled_at'], x.get('date') or '')

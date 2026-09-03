@@ -1,6 +1,6 @@
 """API surface가 문서와 일치하는지 검증한다.
 
-라우트를 추가·삭제하면 docs/architecture.md도 함께 고쳐야 한다.
+라우트를 추가·삭제하면 _docs/architecture.md도 함께 고쳐야 한다.
 이 테스트가 실패하면 코드가 아니라 문서를 먼저 확인할 것.
 """
 import os

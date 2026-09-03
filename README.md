@@ -29,7 +29,7 @@ Threads, LinkedIn, X(Twitter)의 저장 게시물을 수집하고, 통합 JSON�
 - 수집기: `thread_scrap.py`, `thread_scrap_single.py`, `linkedin_scrap.py`, `twitter_scrap.py`, `twitter_scrap_single.py`, `total_scrap.py`
 - 뷰어/API: `index.html`, `web_viewer/`, `scrap_sns_server.py`
 - 데이터 산출물: `output_threads/`, `output_linkedin/`, `output_twitter/`, `output_total/`
-- 참조 문서: `docs/architecture.md`
+- 참조 문서: `_docs/architecture.md`
 - 자동 검증: `tests/`
 
 ## 설치
@@ -84,7 +84,7 @@ python "$env:USERPROFILE\.config\auth\renew.py" x
 
 갱신 창이 뜨면 사용자가 직접 로그인합니다. 보안 챌린지(reCAPTCHA, 2FA, 디바이스 확인)도 사용자가 직접 통과해야 합니다. 로그인이 끝나면 PowerShell에서 Enter를 눌러 storage_state를 저장합니다.
 
-LinkedIn 갱신기는 수집기와 동일한 fingerprint(Chrome/122 + ko-KR + 1280x1000 viewport)로 저장하도록 정렬되어 있습니다. fingerprint 불일치로 saved-posts가 `authwall/checkpoint`로 밀리던 회귀는 2026-05-05 `cf7877e`에서 해결됐습니다. 자세한 배경은 `docs/specs/20260505_01_LinkedIn-인증-갱신-구조-정리와-개선.md`를 참고하세요.
+LinkedIn 갱신기는 수집기와 동일한 fingerprint(Chrome/122 + ko-KR + 1280x1000 viewport)로 저장하도록 정렬되어 있습니다. fingerprint 불일치로 saved-posts가 `authwall/checkpoint`로 밀리던 회귀는 2026-05-05 `cf7877e`에서 해결됐습니다. 자세한 배경은 `_docs/specs/20260505_01_LinkedIn-인증-갱신-구조-정리와-개선.md`를 참고하세요.
 
 LinkedIn/Threads 갱신 후 검증:
 
@@ -291,6 +291,6 @@ UI 세부 검증 스크립트와 CLI 검증 스크립트도 `tests/ui_verificati
 
 ## 참조 문서
 
-- [아키텍처](./docs/architecture.md): 플랫폼별 데이터 구조·수집 흐름, canonical URL, 영구화 surface, 병합, 뷰어·API surface
+- [아키텍처](./_docs/architecture.md): 플랫폼별 데이터 구조·수집 흐름, canonical URL, 영구화 surface, 병합, 뷰어·API surface
 - [CHANGELOG](./CHANGELOG.md): 변경 이력
 - [BACKLOG](./BACKLOG.md): 후속 작업 후보

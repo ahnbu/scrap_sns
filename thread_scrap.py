@@ -453,9 +453,9 @@ def run():
                                 return
 
                             if DEBUG_SAVE:
-                                os.makedirs("docs/temp", exist_ok=True)
+                                os.makedirs("_docs/temp", exist_ok=True)
                                 ts = datetime.now().strftime('%H%M%S_%f')
-                                with open(f"docs/temp/threads_res_{ts}.json", "w", encoding="utf-8") as f:
+                                with open(f"_docs/temp/threads_res_{ts}.json", "w", encoding="utf-8") as f:
                                     json.dump(json_data, f, ensure_ascii=False, indent=2)
 
                             data_part = json_data.get("data", {})
