@@ -13,3 +13,7 @@ bgutil-ytdlp-pot-provider
 
 # Dev
 pytest==9.0.2
+# playwright 본체와 별개 패키지다. `playwright`·`page` fixture 를 제공하며
+# tests/e2e 8개와 tests/smoke 3개가 이것에 의존한다. 빠지면 그 테스트들이
+# fixture 미발견으로 전부 error 가 난다.
+pytest-playwright==0.7.2

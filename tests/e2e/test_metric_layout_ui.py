@@ -150,7 +150,12 @@ def _search_until_card(page, candidates, *, limit=8):
     """
     tried = []
     for post in candidates[:limit]:
-        _search(page, post["display_name"])
+        # display_name 이 비면 검색할 키워드가 없다. 순회의 목적이 「안 되면 다음
+        # 후보로」이므로 여기서 KeyError 로 죽지 않고 건너뛴다.
+        keyword = post.get("display_name")
+        if not keyword:
+            continue
+        _search(page, keyword)
         card = _find_card(page, post)
         if card is not None:
             return post, card
