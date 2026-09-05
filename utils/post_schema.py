@@ -14,6 +14,9 @@ STANDARD_FIELD_ORDER = [
     "full_text",
     "media",
     "url",
+    # created_at·date 는 전 플랫폼 KST 기준이다. 오프셋 표기가 없는 naive 문자열이라
+    # 값만 봐서는 기준을 알 수 없으므로 새 수집기를 붙일 때 반드시 KST 로 맞춘다.
+    # 플랫폼별 변환 지점: _docs/architecture.md 2절.
     "created_at",
     "date",
     "crawled_at",

@@ -17,6 +17,7 @@ except ImportError:
     BeautifulSoup = None
 from utils.auth_paths import x_user_data
 from utils.auth_status import exit_auth_required, is_orchestrated_run
+from utils.x_time import format_kst, parse_api_date, parse_iso_date, warn_on_snowflake_drift
 
 # 환경 변수 로드
 load_dotenv('.env.local')
@@ -70,11 +71,14 @@ def is_transient_x_browser_error(error: Exception) -> bool:
 
 
 def parse_twitter_date(date_str):
-    try:
-        dt = datetime.strptime(date_str, '%a %b %d %H:%M:%S +0000 %Y')
-        return dt.strftime('%Y-%m-%d %H:%M:%S'), dt.strftime('%Y-%m-%d')
-    except Exception:
+    """X API created_at → (KST 전체시각, KST 날짜).
+
+    다른 플랫폼과 같은 KST 기준으로 맞춘다 — 근거는 utils/x_time.py 모듈 주석.
+    """
+    dt = parse_api_date(date_str)
+    if dt is None:
         return None, None
+    return format_kst(dt)
 
 
 def classify_x_auth_state(
@@ -210,7 +214,8 @@ def extract_from_json(json_data):
             media = [f"https://wsrv.nl/?url={m.get('media_url_https')}" for m in (legacy.get('extended_entities', {}).get('media', []) or legacy.get('entities', {}).get('media', [])) if m.get('media_url_https')]
             ts_full, ts_short = parse_twitter_date(legacy.get('created_at'))
             post_id = tweet_results.get('rest_id')
-            
+            warn_on_snowflake_drift(parse_api_date(legacy.get('created_at')), post_id)
+
             views_obj = tweet_results.get('views') or legacy.get('views') or {}
 
             if post_id:
@@ -279,9 +284,10 @@ def extract_from_html(html_content, source_label="initial_dom"):
             
             dt_str = time_tag.get('datetime')
             ts_full, ts_short = (None, None)
-            if dt_str:
-                dt = datetime.fromisoformat(dt_str.replace('Z', '+00:00'))
-                ts_full, ts_short = dt.strftime('%Y-%m-%d %H:%M:%S'), dt.strftime('%Y-%m-%d')
+            dt = parse_iso_date(dt_str)
+            if dt:
+                ts_full, ts_short = format_kst(dt)
+                warn_on_snowflake_drift(dt, post_id)
             
             name_div = article.find('div', {'data-testid': 'User-Name'})
             display_name = name_div.find('span').get_text() if name_div and name_div.find('span') else ""

@@ -1,6 +1,9 @@
 ---
 title: "SNS Crawler 아키텍처"
 created: "2026-07-26 18:40"
+session_id: a5dafda2-b9f5-43c3-8833-8e751bc91743
+session_path: C:/Users/ahnbu/.claude/projects/C--Users-ahnbu-cowork-01---/a5dafda2-b9f5-43c3-8833-8e751bc91743.jsonl
+ai: claude
 ---
 
 # SNS Crawler 아키텍처
@@ -69,6 +72,18 @@ REQUIRED_FIELDS = ["sns_platform", "username", "url", "created_at"]
 ```
 
 추가 규칙:
+
+- 🕘 **`created_at`·`date`는 전 플랫폼 KST 기준이다.** 값에 오프셋 표기가 없는 naive 문자열(`YYYY-MM-DD HH:MM:SS`)이라 어느 기준인지 값만 봐서는 알 수 없으므로, 새 수집기를 붙이거나 시각을 분석에 쓸 때 이 줄을 기준으로 삼는다. 플랫폼별 변환 지점은 아래와 같다.
+
+  | 플랫폼 | 변환 지점 | 방식 |
+  |---|---|---|
+  | Threads | `utils/common.py` `format_timestamp()` | `datetime.fromtimestamp()` — 로컬(KST) |
+  | LinkedIn | `utils/linkedin_parser.py` `get_date_from_snowflake_id()` | Snowflake 디코딩 후 로컬(KST) |
+  | YouTube | `youtube_scrap.py` | `astimezone(+9)` 명시 |
+  | X | `utils/x_time.py` | `%z` 파싱 후 `astimezone(KST)` |
+
+  > ⚠️ **X는 2026-09-05까지 UTC로 저장돼 있었다.** API의 `+0000`을 `%z`가 아니라 포맷 리터럴로 파싱해 tz 정보가 사라졌고, 변환 없이 기록했다. 기존 95건은 트윗 Snowflake ID에서 재계산해 백필했다(`scripts/backfill_twitter_created_at_kst.py`). 경위는 [[20260905_01_X-게시일시-UTC저장-결함수정과-95건-백필-계획_실행완료]].
+  > `utils/x_time.py`의 `warn_on_snowflake_drift()`가 파싱 결과와 ID 복원값이 60초 이상 어긋나면 경고를 남긴다 — 같은 회귀가 조용히 재발하지 않게 하는 장치다.
 
 - `full_text`와 `media` 중 하나는 반드시 있어야 한다.
 - `normalize_post()`는 `user`, `timestamp`, `post_url`, `source_url`를 현재 필드로 승격한다. 레거시 필드 rename도 `normalize_post()`가 처리한다.
@@ -191,8 +206,10 @@ Voyager GraphQL 응답의 배열 순서는 저장글 화면의 표시 순서와 
 - `platform_id`: `rest_id`
 - `full_text`: `twitter-cli` payload의 `data[0].text`만 저장
 - `media`: `photo`는 `wsrv` URL, `video`와 `animated_gif`는 raw URL 저장
-- `created_at`: 목록 단계 값이 있으면 유지하고, 비어 있을 때만 상세 단계 수집 시각으로 fallback 채움
+- `created_at`: 목록 단계 값이 있으면 유지하고, 비어 있을 때만 상세 단계 수집 시각으로 fallback 채움. **KST 기준**이며 변환은 `utils/x_time.py`가 맡는다 — API 경로는 `parse_api_date()`(`%z` 파싱 후 `astimezone`), HTML 폴백 경로는 `parse_iso_date()`. 2절의 타임존 규칙 참조
 - `url`: 기본은 `https://x.com/{username}/status/{post_id}`, 사용자명이 비어 있으면 `https://x.com/i/status/{post_id}`
+
+**`platform_id`에서 발행 시각을 복원할 수 있다.** 트윗 ID는 Snowflake라 상위 41비트가 epoch(`1288834974657`) 이후 밀리초다. `utils/x_time.py`의 `created_at_from_id()`가 이를 KST로 돌려준다. 저장값과 독립적으로 계산되므로 **시각 검증·백필의 정본**으로 쓴다 — 저장값에 시간을 더하는 방식과 달리 몇 번 실행해도 결과가 같다. 검증은 `scripts/verify_twitter_created_at_kst_headless.mjs`(종료코드 0/1)가 한다.
 
 **수집 흐름**
 

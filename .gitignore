@@ -77,6 +77,8 @@ scripts/*
 !scripts/verify_external_summary_icons.mjs
 !scripts/verify_external_summary_links_headless.mjs
 !scripts/verify_linkedin_images_headless.mjs
+!scripts/backfill_twitter_created_at_kst.py
+!scripts/verify_twitter_created_at_kst_headless.mjs
 
 # Terminal Paste Image folder
 .cp-images/
@@ -168,3 +170,5 @@ _docs/evidence/*.png
 _docs/evidence/*.log
 output_total/*.bak
 output_linkedin/python/*.bak
+# X created_at KST 백필 백업 (local-only, Snowflake ID 로 재계산 가능)
+output_twitter/python/*.bak
