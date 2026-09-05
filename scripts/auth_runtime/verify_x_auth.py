@@ -83,46 +83,62 @@ def probe_consumer() -> bool:
     return bool(tokens and tokens.get("auth_token") and tokens.get("ct0"))
 
 
-def probe_producer() -> tuple[bool, str]:
+def probe_producer(playwright=None) -> tuple[bool, str]:
+    """X producer 세션이 살아 있는지 확인한다.
+
+    `playwright` 를 주면 그 인스턴스를 쓰고, 없으면 직접 연다.
+
+    주입 경로가 필요한 이유: `sync_playwright()` 는 **이미 실행 중인 이벤트 루프**
+    안에서 부르면 거부한다. pytest-playwright 의 `playwright` fixture 는 session
+    스코프라 한 번 쓰이면 세션 끝까지 루프를 잡고 있고, 그 뒤에 이 함수가 자기
+    `sync_playwright()` 를 열면 중첩이 되어 끊긴다. 그래서 테스트는 fixture 가 만든
+    인스턴스를 그대로 넘긴다. 단독 실행(`main()`)은 종전대로 직접 연다.
+    """
+    if playwright is not None:
+        return _probe_producer_with(playwright)
+    with sync_playwright() as owned_playwright:
+        return _probe_producer_with(owned_playwright)
+
+
+def _probe_producer_with(playwright) -> tuple[bool, str]:
     state = {"bookmark_response_seen": False, "parsed_bookmark_count": 0}
-    with sync_playwright() as playwright:
-        context = launch_x_persistent_context(playwright)
-        try:
-            page = context.pages[0] if context.pages else context.new_page()
+    context = launch_x_persistent_context(playwright)
+    try:
+        page = context.pages[0] if context.pages else context.new_page()
 
-            def handle_response(response):
-                if "Bookmarks?variables=" not in response.url:
-                    return
-                state["bookmark_response_seen"] = True
-                if response.status != 200:
-                    return
-                try:
-                    response.json()
-                except Exception:
-                    return
-                state["parsed_bookmark_count"] += 1
-
-            page.on("response", handle_response)
-            # expect_response 는 컨텍스트매니저라 응답을 유발하는 goto 를 감싸야 한다.
-            # 동기 API 에 wait_for_response 가 없어 기존 코드는 항상 5초 blind wait 로 떨어졌다.
+        def handle_response(response):
+            if "Bookmarks?variables=" not in response.url:
+                return
+            state["bookmark_response_seen"] = True
+            if response.status != 200:
+                return
             try:
-                with page.expect_response(
-                    lambda item: "Bookmarks?variables=" in item.url,
-                    timeout=10000,
-                ) as response_info:
-                    page.goto("https://x.com/i/bookmarks", wait_until="domcontentloaded")
-                handle_response(response_info.value)
+                response.json()
             except Exception:
-                page.wait_for_timeout(5000)
-            article_count = page.locator('article[data-testid="tweet"]').count()
-            return classify_producer_probe(
-                current_url=page.url,
-                bookmark_response_seen=state["bookmark_response_seen"],
-                parsed_bookmark_count=state["parsed_bookmark_count"],
-                article_count=article_count,
-            )
-        finally:
-            context.close()
+                return
+            state["parsed_bookmark_count"] += 1
+
+        page.on("response", handle_response)
+        # expect_response 는 컨텍스트매니저라 응답을 유발하는 goto 를 감싸야 한다.
+        # 동기 API 에 wait_for_response 가 없어 기존 코드는 항상 5초 blind wait 로 떨어졌다.
+        try:
+            with page.expect_response(
+                lambda item: "Bookmarks?variables=" in item.url,
+                timeout=10000,
+            ) as response_info:
+                page.goto("https://x.com/i/bookmarks", wait_until="domcontentloaded")
+            handle_response(response_info.value)
+        except Exception:
+            page.wait_for_timeout(5000)
+        article_count = page.locator('article[data-testid="tweet"]').count()
+        return classify_producer_probe(
+            current_url=page.url,
+            bookmark_response_seen=state["bookmark_response_seen"],
+            parsed_bookmark_count=state["parsed_bookmark_count"],
+            article_count=article_count,
+        )
+    finally:
+        context.close()
 
 
 def main() -> int:

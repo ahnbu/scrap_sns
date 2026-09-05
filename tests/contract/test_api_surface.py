@@ -7,7 +7,7 @@ import os
 import re
 
 _REPO_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-DOC_PATH = os.path.join(_REPO_ROOT, "docs", "architecture.md")
+DOC_PATH = os.path.join(_REPO_ROOT, "_docs", "architecture.md")
 EXPECTED_ROUTE_COUNT = 18
 
 

@@ -17,7 +17,6 @@ from pathlib import Path
 
 import pytest
 import requests
-from playwright.sync_api import sync_playwright
 
 CARD = "#masonryGrid article.glass-card"
 METRICS_ROW = ".metrics-row"
@@ -60,11 +59,17 @@ def posts(server_url):
 
 
 @pytest.fixture(scope="module")
-def browser():
-    with sync_playwright() as p:
-        instance = p.chromium.launch(headless=True)
-        yield instance
-        instance.close()
+def browser(playwright):
+    """playwright 인스턴스는 pytest-playwright fixture 에서 받는다.
+
+    직접 sync_playwright() 를 열면 안 된다 — 그 fixture 는 session 스코프라
+    같은 세션의 다른 e2e 모듈이 한 번 쓰면 끝까지 이벤트 루프를 잡고 있고,
+    그 안에서 sync_playwright() 를 또 열면 중첩으로 끊긴다.
+    headless=True 는 고정한다. 창이 뜨면 사용자 포커스를 뺏는다.
+    """
+    instance = playwright.chromium.launch(headless=True)
+    yield instance
+    instance.close()
 
 
 @pytest.fixture
@@ -110,6 +115,20 @@ def _first_card(page):
     return page.locator(CARD).first
 
 
+def _find_card(page, post):
+    """검색 결과에서 해당 게시글의 카드를 URL 로 찾는다. 없으면 None."""
+    url = post.get("url") or post.get("canonical_url")
+    if not url:
+        return None
+    cards = page.locator(CARD)
+    for i in range(cards.count()):
+        card = cards.nth(i)
+        btn = card.locator(".fold-btn")
+        if btn.count() and btn.first.get_attribute("data-url") == url:
+            return card
+    return None
+
+
 def _card_for(page, post):
     """검색 결과 중 해당 게시글의 카드를 URL 로 특정한다.
 
@@ -117,13 +136,26 @@ def _card_for(page, post):
     """
     url = post.get("url") or post.get("canonical_url")
     assert url, f"게시글에 url 이 없다: {post.get('display_name')}"
-    cards = page.locator(CARD)
-    for i in range(cards.count()):
-        card = cards.nth(i)
-        btn = card.locator(".fold-btn")
-        if btn.count() and btn.first.get_attribute("data-url") == url:
-            return card
-    raise AssertionError(f"해당 URL 의 카드를 찾지 못했다: {url}")
+    card = _find_card(page, post)
+    assert card is not None, f"해당 URL 의 카드를 찾지 못했다: {url}"
+    return card
+
+
+def _search_until_card(page, candidates, *, limit=8):
+    """카드가 실제로 렌더되는 후보를 찾을 때까지 검색을 바꿔 본다.
+
+    API 가 주는 첫 후보가 항상 화면에 그려지는 것은 아니다 — 검색 결과가
+    많으면 그 글이 렌더 대상 밖일 수 있다. 첫 후보 하나에 매달리면 코드가
+    멀쩡해도 데이터 구성에 따라 실패한다.
+    """
+    tried = []
+    for post in candidates[:limit]:
+        _search(page, post["display_name"])
+        card = _find_card(page, post)
+        if card is not None:
+            return post, card
+        tried.append(post.get("url") or post.get("canonical_url"))
+    raise AssertionError(f"후보 {len(tried)}건 모두 카드가 렌더되지 않았다: {tried}")
 
 
 def _badge_fields(card):
@@ -194,12 +226,12 @@ def test_v2_x_card_shows_all_metrics_in_one_row(viewer, posts):
 @pytest.mark.parametrize("platform", ["threads", "linkedin"])
 def test_v3_platforms_without_views_unchanged(viewer, posts, platform):
     """V3: 조회수를 제공하지 않는 플랫폼은 배지 구성이 API 값과 일치하고 조회수 배지가 없다."""
-    target = next(
+    candidates = [
         p for p in posts
         if p.get("sns_platform") == platform and _metric_int(p, "like_count")
-    )
-    _search(viewer, target["display_name"])
-    card = _card_for(viewer, target)
+    ]
+    assert candidates, f"{platform} 에 like_count 가 있는 게시글이 없다"
+    target, card = _search_until_card(viewer, candidates)
 
     fields = _badge_fields(card)
     assert "view_count" not in fields, f"{platform} 카드에 조회수 배지가 있다: {fields}"

@@ -16,7 +16,6 @@ import os
 
 import pytest
 import requests
-from playwright.sync_api import sync_playwright
 
 CARD = "#masonryGrid article.glass-card"
 VIEWER_URL = os.environ.get("SNS_VIEWER_URL", "http://localhost:5000")
@@ -49,11 +48,17 @@ def server_url():
 
 
 @pytest.fixture(scope="module")
-def browser():
-    with sync_playwright() as p:
-        instance = p.chromium.launch(headless=True)
-        yield instance
-        instance.close()
+def browser(playwright):
+    """playwright 인스턴스는 pytest-playwright fixture 에서 받는다.
+
+    직접 sync_playwright() 를 열면 안 된다 — 그 fixture 는 session 스코프라
+    같은 세션의 다른 e2e 모듈이 한 번 쓰면 끝까지 이벤트 루프를 잡고 있고,
+    그 안에서 sync_playwright() 를 또 열면 중첩으로 끊긴다.
+    headless=True 는 고정한다. 창이 뜨면 사용자 포커스를 뺏는다.
+    """
+    instance = playwright.chromium.launch(headless=True)
+    yield instance
+    instance.close()
 
 
 @pytest.fixture
