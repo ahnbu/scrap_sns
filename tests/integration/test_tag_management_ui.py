@@ -12,9 +12,17 @@ def _render_tag_management_block():
 
 
 def _tag_management_crud_block():
+    """태그 관리 CRUD 구간만 자른다.
+
+    끝을 `renderInvisibleList()` 로 잡는다. 종전에는 `const runBatchAutoTagBtn`
+    까지 늘려 잡아 **숨김 목록 기능(renderInvisibleList) 전체가 범위에 딸려
+    들어왔고**, 거기 있는 `alert('숨김 복구 저장에 실패했습니다.')` 때문에
+    태그 관리와 무관한 이유로 test_tag_management_crud_does_not_use_browser_prompts
+    가 실패했다. 위 `_render_tag_management_block()` 은 처음부터 이 경계를 쓴다.
+    """
     script = (PROJECT_ROOT / "web_viewer" / "script.js").read_text(encoding="utf-8")
     start = script.index("function renderTagManagementList()")
-    end = script.index("const runBatchAutoTagBtn")
+    end = script.index("function renderInvisibleList()")
     return script[start:end]
 
 

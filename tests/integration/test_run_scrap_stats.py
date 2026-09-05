@@ -50,10 +50,12 @@ def test_stats_present_in_response(client, tmp_path, monkeypatch):
         "threads",
         "linkedin",
         "twitter",
+        "youtube",
         "total_count",
         "threads_count",
         "linkedin_count",
         "twitter_count",
+        "youtube_count",
     }
 
 
@@ -72,15 +74,19 @@ def test_stats_delta_calculation(client, tmp_path, monkeypatch):
 
     assert resp.status_code == 200
     stats = resp.get_json()["stats"]
+    # youtube 는 _write_total_file 이 쓰지 않으므로 0 이다. 서버는 지원 플랫폼을
+    # 빠짐없이 담으므로(scrap_sns_server.py 의 stats 구성) 기대값에도 있어야 한다.
     assert stats == {
         "total": 10,
         "threads": 6,
         "linkedin": 1,
         "twitter": 3,
+        "youtube": 0,
         "total_count": 110,
         "threads_count": 56,
         "linkedin_count": 31,
         "twitter_count": 23,
+        "youtube_count": 0,
     }
 
 
@@ -330,7 +336,12 @@ def test_run_scrap_response_includes_platform_new_samples(client, tmp_path, monk
 
     assert resp.status_code == 200
     consistency = resp.get_json()["consistency_probe"]
-    assert consistency["new_counts"] == {"threads": 2, "linkedin": 4, "twitter": 1}
+    assert consistency["new_counts"] == {
+        "threads": 2,
+        "linkedin": 4,
+        "twitter": 1,
+        "youtube": 0,
+    }
     assert [sample["platform_id"] for sample in consistency["new_samples"]["linkedin"]] == [
         "li-new-4",
         "li-new-3",
@@ -394,7 +405,7 @@ def test_run_scrap_records_filtered_progress_events(client, tmp_path, monkeypatc
         "Threads 목록 수집 완료",
         "LinkedIn 목록 수집 완료",
         "결과 병합 시작",
-        "스크랩 완료: Threads 2건, LinkedIn 13건, X 0건",
+        "스크랩 완료: Threads 2건, LinkedIn 13건, X 0건, YouTube 0건",
     ]
     assert all("Traceback" not in message for message in messages)
     assert all("logs/" not in message for message in messages)
