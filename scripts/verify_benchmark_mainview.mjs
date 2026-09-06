@@ -222,7 +222,14 @@ try {
     return { perAccount, total, nameOf, jangpmActive: activeIds.has('jangpm') };
   });
 
-  const shown = await page.evaluate(() => {
+  // 카드는 첫 60개만 렌더되고 나머지는 스크롤 때 붙는다(script.js 의 firstBatch).
+  // 스크롤하지 않고 세면 61번째부터를 「안 나온다」로 오판한다.
+  const shown = await page.evaluate(async () => {
+    for (let i = 0; i < 10; i += 1) {
+      window.scrollTo(0, document.body.scrollHeight);
+      await new Promise((r) => setTimeout(r, 350));
+    }
+    window.scrollTo(0, 0);
     const chips = [...document.querySelectorAll('.benchmark-chip')]
       .map((c) => c.textContent.trim())
       .filter((t) => !t.startsWith('전체'));

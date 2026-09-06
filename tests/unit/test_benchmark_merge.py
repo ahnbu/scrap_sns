@@ -144,6 +144,18 @@ def test_merge_results_reads_benchmark_directory():
     assert "+ youtube_bm_posts" in _TOTAL_SCRAP_SRC, "벤치마킹분이 all_posts 에 들어가야 한다"
 
 
+def test_merge_results_reads_linkedin_benchmark_directory():
+    """LinkedIn 벤치마킹분도 같은 함정을 밟지 않는지.
+
+    유튜브 때와 글자 하나 다르지 않은 실패다 - 소스 한 줄이 빠지면 수집은
+    되는데 화면에 영원히 안 나온다. 계획: _docs/20260906_03 (W3)
+    """
+    assert 'OUTPUT_LINKEDIN_BENCHMARK_DIR = os.path.join(PROJECT_ROOT, "output_linkedin_user", "python")' in _TOTAL_SCRAP_SRC
+    assert 'find_latest_full_file(\n        OUTPUT_LINKEDIN_BENCHMARK_DIR, "linkedin_user_full_*.json"\n    )' in _TOTAL_SCRAP_SRC
+    assert "+ linkedin_bm_posts" in _TOTAL_SCRAP_SRC, "LinkedIn 벤치마킹분이 all_posts 에 들어가야 한다"
+    assert "len(linkedin_bm_posts)" in _TOTAL_SCRAP_SRC, "플랫폼 집계에도 들어가야 뷰어 건수와 맞는다"
+
+
 def test_benchmark_posts_are_last_in_merge_order():
     """배열 순서가 곧 정책이다. 벤치마킹이 앞에 서면 기존 저장글이 버려진다."""
     order_start = _TOTAL_SCRAP_SRC.index("all_posts = (")

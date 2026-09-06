@@ -56,6 +56,7 @@ total_scrap.OUTPUT_THREADS_OWN_DIR = "output_threads_own"
 # 실제 레포의 벤치마킹 60건이 이 테스트 결과에 섞인다
 # (계획 _docs/20260906_01 D13).
 total_scrap.OUTPUT_YOUTUBE_BENCHMARK_DIR = "output_youtube_user"
+total_scrap.OUTPUT_LINKEDIN_BENCHMARK_DIR = "output_linkedin_user"
 
 posts, threads_count, linkedin_count, twitter_count, youtube_count = total_scrap.merge_results()
 print(json.dumps({

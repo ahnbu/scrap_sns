@@ -31,6 +31,7 @@ OUTPUT_LINKEDIN_DIR = os.path.join(PROJECT_ROOT, "output_linkedin", "python")
 OUTPUT_TWITTER_DIR = os.path.join(PROJECT_ROOT, "output_twitter", "python")
 OUTPUT_YOUTUBE_DIR = os.path.join(PROJECT_ROOT, "output_youtube", "python")
 OUTPUT_YOUTUBE_BENCHMARK_DIR = os.path.join(PROJECT_ROOT, "output_youtube_user", "python")
+OUTPUT_LINKEDIN_BENCHMARK_DIR = os.path.join(PROJECT_ROOT, "output_linkedin_user", "python")
 # 내 게시물 전용 출력. 저장글(output_linkedin)과 분리해 consumer 웨이브의
 # 쓰기 경합을 막는다. 계획: _docs/20260826_03 (3.4.1)
 OUTPUT_LINKEDIN_OWN_DIR = os.path.join(PROJECT_ROOT, "output_linkedin_own", "python")
@@ -547,11 +548,16 @@ def merge_results():
     latest_youtube_bm = find_latest_full_file(
         OUTPUT_YOUTUBE_BENCHMARK_DIR, "youtube_user_full_*.json"
     )
+    # LinkedIn 벤치마킹분(계획 _docs/20260906_03 W3). 유튜브와 같은 함정이라
+    # 여기 한 줄이 빠지면 수집은 되는데 화면에 영원히 안 나온다.
+    latest_linkedin_bm = find_latest_full_file(
+        OUTPUT_LINKEDIN_BENCHMARK_DIR, "linkedin_user_full_*.json"
+    )
 
     if (
         not latest_threads and not latest_linkedin and not latest_twitter
         and not latest_youtube and not latest_own and not latest_threads_own
-        and not latest_youtube_bm
+        and not latest_youtube_bm and not latest_linkedin_bm
     ):
         print("❌ 병합 가능한 Full 파일을 찾을 수 없습니다.")
         return None, 0, 0, 0, 0
@@ -588,6 +594,7 @@ def merge_results():
     own_data = load_json(latest_own) if latest_own else {}
     threads_own_data = load_json(latest_threads_own) if latest_threads_own else {}
     youtube_bm_data = load_json(latest_youtube_bm) if latest_youtube_bm else {}
+    linkedin_bm_data = load_json(latest_linkedin_bm) if latest_linkedin_bm else {}
 
     own_posts = own_data.get('posts', []) if isinstance(own_data, dict) else own_data
     threads_own_posts = (
@@ -599,6 +606,9 @@ def merge_results():
     youtube_posts = youtube_data.get('posts', []) if isinstance(youtube_data, dict) else youtube_data
     youtube_bm_posts = (
         youtube_bm_data.get('posts', []) if isinstance(youtube_bm_data, dict) else youtube_bm_data
+    )
+    linkedin_bm_posts = (
+        linkedin_bm_data.get('posts', []) if isinstance(linkedin_bm_data, dict) else linkedin_bm_data
     )
     threads_posts = [
         post
@@ -623,6 +633,10 @@ def merge_results():
         p['sns_platform'] = 'youtube'
         p['platform_sequence_id'] = p.get('sequence_id', 0)
         # 수집기가 이미 심지만, 레거시 파일이 섞여도 꺼지지 않게 고정한다.
+        p['is_saved'] = False
+    for p in linkedin_bm_posts:
+        p['sns_platform'] = 'linkedin'
+        p['platform_sequence_id'] = p.get('sequence_id', 0)
         p['is_saved'] = False
     for p in own_posts:
         p['sns_platform'] = 'linkedin'
@@ -656,7 +670,7 @@ def merge_results():
     all_posts = (
         own_posts + threads_own_posts
         + threads_posts + linkedin_posts + twitter_posts + youtube_posts
-        + youtube_bm_posts
+        + youtube_bm_posts + linkedin_bm_posts
     )
 
     # pid → 살아남은 레코드. 중복으로 버려질 레코드의 표식을 여기로 옮긴다.
@@ -731,12 +745,15 @@ def merge_results():
         print(f"   🧵 내 게시물(Threads) {len(threads_own_posts)}건 병합")
     if youtube_bm_posts:
         print(f"   🎯 벤치마킹 계정(YouTube) {len(youtube_bm_posts)}건 병합")
+    if linkedin_bm_posts:
+        print(f"   🎯 벤치마킹 계정(LinkedIn) {len(linkedin_bm_posts)}건 병합")
 
     return (
         unique_posts,
         # 내 글도 각 플랫폼 글이다. 뷰어 플랫폼 집계가 갈리지 않게 같은 칸에 넣는다.
         len(threads_posts) + len(threads_own_posts),
-        len(linkedin_posts) + len(own_posts),
+        # 벤치마킹 수집분도 LinkedIn 글이다. 유튜브와 같은 이유로 같은 칸에 넣는다.
+        len(linkedin_posts) + len(own_posts) + len(linkedin_bm_posts),
         len(twitter_posts),
         # 벤치마킹 수집분도 유튜브 글이다. 여기서 빼면 뷰어 플랫폼 집계와
         # 실제 표시 건수가 어긋난다.

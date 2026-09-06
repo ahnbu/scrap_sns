@@ -92,6 +92,7 @@ scripts/*
 !scripts/verify_benchmark_scenarios.mjs
 !scripts/verify_benchmark_mainview.mjs
 !scripts/_bench_verify_server.mjs
+!scripts/verify_benchmark_linkedin.py
 !scripts/verify_twitter_created_at_kst_headless.mjs
 
 # 설정 모달 탭 세로 레일 전환 (계획 _docs/20260906_02)
