@@ -13,8 +13,16 @@
  *   M7 끄면 원래 화면으로 돌아온다
  *   M8 켠 계정이 없으면 안내 문구가 나온다
  *
+ * W1(_docs/20260906_03) 로 아래가 붙었다. 겹친 글이 벤치마킹 뷰에서만
+ * 사라지던 결함의 회귀 가드다.
+ *
+ *   M9  겹침이 전부인 계정도 칩에 나온다 (장피엠 5)
+ *   M10 칩 숫자 합계 == API 기대값
+ *   M11 렌더 카드 수 == API 기대값
+ *   M12 별표·메모 건수가 실행 전후 같다
+ *
  * Usage: node scripts/verify_benchmark_mainview.mjs [--shot-dir <dir>]
- * 계획: _docs/20260906_01 (P9)
+ * 계획: _docs/20260906_01 (P9), _docs/20260906_03 (W1)
  */
 import fs from 'node:fs';
 import path from 'node:path';
@@ -27,7 +35,26 @@ function arg(flag, fallback = null) {
   const index = process.argv.indexOf(flag);
   return index !== -1 ? process.argv[index + 1] : fallback;
 }
-const shotDir = arg('--shot-dir', path.join('_docs', 'evidence', '20260906_01', 'mainview'));
+const shotDir = arg('--shot-dir', path.join('_docs', 'evidence', '20260906_03', 'mainview'));
+const METADATA_PATH = path.join('web_viewer', 'sns_user_metadata.json');
+
+/** 별표·메모 항목 수. W1 이 사용자 상태를 안 건드리는지 보는 값이다. */
+function readUserStateCounts() {
+  try {
+    const raw = JSON.parse(fs.readFileSync(METADATA_PATH, 'utf8').replace(/^﻿/, ''));
+    const entries = Object.values(raw?.posts || raw || {});
+    let starred = 0;
+    let memo = 0;
+    entries.forEach((entry) => {
+      if (!entry || typeof entry !== 'object') return;
+      if (entry.starred || entry.favorite || entry.is_starred) starred += 1;
+      if (typeof entry.memo === 'string' && entry.memo.trim()) memo += 1;
+    });
+    return { starred, memo };
+  } catch {
+    return null;
+  }
+}
 
 const checks = [];
 function record(name, ok, detail) {
@@ -42,6 +69,7 @@ const runnerPath = path.join(
 const { launchHeadlessChromium } = await import(pathToFileURL(runnerPath).href);
 
 const originalAccounts = fs.readFileSync(ACCOUNTS_PATH, 'utf8');
+const stateBefore = readUserStateCounts();
 const browser = await launchHeadlessChromium();
 try {
   fs.mkdirSync(shotDir, { recursive: true });
@@ -150,12 +178,86 @@ try {
     `MY=${myState.myActive} 벤치마킹=${myState.btnActive} 카드 ${myState.cards}개`);
 
   // M7 끄면 원래대로
+  //
+  // 배지 총수 0 을 기대하지 않는다 - W1 이후 겹친 글(내 저장글이면서 벤치마킹
+  // 계정 소속)은 기본 화면에도 있고 배지를 단다. 벤치마킹 「전용」 글이
+  // 0건인지를 본다. 계획: _docs/20260906_03 (W1)
   await page.click('#myPostsBtn');
   await page.waitForTimeout(700);
   const restored = await snapshot();
+  const benchOnlyBadges = await page.evaluate(() =>
+    document.querySelectorAll('[data-benchmark-also-saved="0"]').length);
   record('M7 끄면 원래 화면으로 돌아온다',
-    restored.cards === before.cards && restored.benchmarkBadges === 0,
-    `카드 ${before.cards} → ${restored.cards} · 배지 ${restored.benchmarkBadges}개`);
+    restored.cards === before.cards && benchOnlyBadges === 0,
+    `카드 ${before.cards} → ${restored.cards} · 벤치마킹 전용 배지 ${benchOnlyBadges}개`);
+
+  // ── W1 회귀 가드 ────────────────────────────────────────────────
+  // 기대값을 스크립트에 박지 않는다. 켠 계정이 바뀌면 숫자가 바뀌므로
+  // API 가 준 계정 상태와 게시글에서 그때그때 계산한다.
+  await page.click('#benchmarkBtn');
+  await page.waitForTimeout(800);
+
+  const expected = await page.evaluate(async () => {
+    const [accRes, postRes] = await Promise.all([
+      fetch('/api/get-benchmark-accounts'),
+      fetch('/api/posts?limit=100000'),
+    ]);
+    const accounts = (await accRes.json()).accounts || [];
+    const posts = (await postRes.json()).posts || [];
+    const activeIds = new Set(accounts.filter((a) => a.status === 'active').map((a) => a.id));
+    const perAccount = {};
+    let total = 0;
+    posts.forEach((post) => {
+      const ids = (post.benchmark_accounts || []).filter((id) => activeIds.has(id));
+      if (!ids.length) return;
+      total += 1;
+      ids.forEach((id) => { perAccount[id] = (perAccount[id] || 0) + 1; });
+    });
+    const nameOf = {};
+    accounts.forEach((a) => { nameOf[a.id] = a.name || a.id; });
+    return { perAccount, total, nameOf, jangpmActive: activeIds.has('jangpm') };
+  });
+
+  const shown = await page.evaluate(() => {
+    const chips = [...document.querySelectorAll('.benchmark-chip')]
+      .map((c) => c.textContent.trim())
+      .filter((t) => !t.startsWith('전체'));
+    const sum = chips.reduce((acc, t) => acc + (Number(t.split(' ').pop()) || 0), 0);
+    return { chips, sum, cards: document.querySelectorAll('.glass-card').length };
+  });
+
+  // M9 겹침이 전부인 계정도 칩에 나온다
+  if (expected.jangpmActive) {
+    const want = expected.perAccount.jangpm || 0;
+    const chip = shown.chips.find((t) => t.startsWith(expected.nameOf.jangpm));
+    const got = chip ? Number(chip.split(' ').pop()) : null;
+    record('M9 겹침이 전부인 계정도 칩에 나온다',
+      Boolean(chip) && got === want && want > 0,
+      `기대 ${expected.nameOf.jangpm} ${want} · 화면 ${chip || '칩 없음'}`);
+  } else {
+    record('M9 겹침이 전부인 계정도 칩에 나온다', false, 'jangpm 이 꺼져 있어 확인 불가');
+  }
+
+  // M10 칩 숫자 합계 == 기대값
+  const expectedChipSum = Object.values(expected.perAccount).reduce((a, b) => a + b, 0);
+  record('M10 칩 숫자 합계가 기대값과 같다',
+    shown.sum === expectedChipSum,
+    `기대 ${expectedChipSum} · 화면 ${shown.sum}`);
+
+  // M11 렌더 카드 수 == 기대값
+  record('M11 렌더 카드 수가 기대값과 같다',
+    shown.cards === expected.total,
+    `기대 ${expected.total} · 화면 ${shown.cards}`);
+  await page.screenshot({ path: path.join(shotDir, 'M11_overlap_restored.png') });
+
+  // M12 사용자 상태(별표·메모)가 안 바뀌었다
+  const stateAfter = readUserStateCounts();
+  record('M12 별표·메모 건수가 실행 전후 같다',
+    Boolean(stateBefore) && Boolean(stateAfter)
+      && stateBefore.starred === stateAfter.starred && stateBefore.memo === stateAfter.memo,
+    stateBefore && stateAfter
+      ? `별표 ${stateBefore.starred}→${stateAfter.starred} · 메모 ${stateBefore.memo}→${stateAfter.memo}`
+      : '메타데이터를 읽지 못함');
 
   // M8 켠 계정이 없을 때 안내
   await page.evaluate(async () => {
