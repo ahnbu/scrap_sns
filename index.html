@@ -370,6 +370,18 @@
         </div>
       </div>
 
+      <!--
+        벤치마킹 계정 칩 줄. 태그 칩과 같은 줄에 두면 구분되지 않는다 —
+        칩 규격이 같고, 줄바꿈(flex-wrap) 때문에 구분선이 줄 끝으로 밀려
+        경계 역할을 못 한다. 계획: _docs/20260906_03 (W5)
+      -->
+      <div
+        id="benchmarkChipsRow"
+        class="max-w-[1800px] mx-auto px-6 pt-2 flex flex-wrap gap-2 justify-start items-center hidden"
+      >
+        <!-- Account chips will be injected by JS -->
+      </div>
+
       <!-- Global Tag Filter Area -->
       <div
         id="globalTagsContainer"

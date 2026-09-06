@@ -3716,18 +3716,20 @@ ${item.body}
         
         const sortedTags = Array.from(allUniqueTags).sort();
 
+        // 계정 칩은 전용 줄에 산다. 태그와 같은 줄에 두면 구분이 안 된다.
+        // 계획: _docs/20260906_03 (W5)
+        renderBenchmarkAccountChips();
+
         // 저자 배지는 태그 유무와 무관하게 항상 렌더한다.
         // (태그가 0개일 때 조기 반환하면 저자 필터를 해제할 수단이 사라진다)
         if (sortedTags.length === 0) {
             container.innerHTML = '';
             renderAuthorBadge(container);
-            renderBenchmarkAccountChips(container);
             return;
         }
 
         container.innerHTML = '';
         renderAuthorBadge(container);
-        renderBenchmarkAccountChips(container);
 
         sortedTags.forEach(tag => {
             const tagBtn = document.createElement('button');
@@ -3757,8 +3759,22 @@ ${item.body}
      * 「이 계정은 뭐가 잘 됐나」를 볼 수단이 없다. 태그 칩 줄과 같은 자리·같은
      * 모양이라 새 개념이 아니다. 계획: _docs/20260906_01 (P9)
      */
-    function renderBenchmarkAccountChips(container) {
-        if (!showBenchmarkOnly) return;
+    function renderBenchmarkAccountChips() {
+        const container = document.getElementById('benchmarkChipsRow');
+        if (!container) return;
+        container.innerHTML = '';
+        if (!showBenchmarkOnly) {
+            container.classList.add('hidden');
+            return;
+        }
+        container.classList.remove('hidden');
+
+        // 이 줄이 무엇인지 말한다. 라벨이 없으면 숫자만 늘어선 칩 줄이 하나 더
+        // 생긴 것으로만 읽힌다.
+        const label = document.createElement('span');
+        label.className = 'benchmark-row-label';
+        label.textContent = '벤치마킹 계정';
+        container.appendChild(label);
 
         const accounts = activeBenchmarkAccountsWithCounts();
         if (!accounts.length) {
@@ -3796,13 +3812,6 @@ ${item.body}
             });
             container.appendChild(chip);
         });
-
-        // 계정 칩 뒤에 태그 칩이 바로 이어진다. 경계가 없으면 「Jay Choi 4」 다음의
-        // 「SNS노하우」가 같은 종류로 읽힌다.
-        const divider = document.createElement('span');
-        divider.className = 'benchmark-chip-divider';
-        divider.setAttribute('aria-hidden', 'true');
-        container.appendChild(divider);
     }
 
     function renderAuthorBadge(container) {
