@@ -156,6 +156,14 @@ def test_merge_results_reads_linkedin_benchmark_directory():
     assert "len(linkedin_bm_posts)" in _TOTAL_SCRAP_SRC, "플랫폼 집계에도 들어가야 뷰어 건수와 맞는다"
 
 
+def test_merge_results_reads_threads_benchmark_directory():
+    """Threads 벤치마킹분도 통합본 소스여야 한다. 계획: _docs/20260906_03 (W4)"""
+    assert 'OUTPUT_THREADS_BENCHMARK_DIR = os.path.join(PROJECT_ROOT, "output_threads_user", "python")' in _TOTAL_SCRAP_SRC
+    assert 'find_latest_full_file(\n        OUTPUT_THREADS_BENCHMARK_DIR, "threads_user_full_*.json"\n    )' in _TOTAL_SCRAP_SRC
+    assert "+ threads_bm_posts" in _TOTAL_SCRAP_SRC, "Threads 벤치마킹분이 all_posts 에 들어가야 한다"
+    assert "len(threads_bm_posts)" in _TOTAL_SCRAP_SRC, "플랫폼 집계에도 들어가야 뷰어 건수와 맞는다"
+
+
 def test_benchmark_posts_are_last_in_merge_order():
     """배열 순서가 곧 정책이다. 벤치마킹이 앞에 서면 기존 저장글이 버려진다."""
     order_start = _TOTAL_SCRAP_SRC.index("all_posts = (")

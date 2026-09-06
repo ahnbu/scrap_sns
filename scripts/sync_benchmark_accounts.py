@@ -69,7 +69,9 @@ DEFAULT_LIMIT = 5
 
 PLATFORM_KEYS = ("youtube", "threads", "linkedin", "x")
 # 지금 계정 단위 수집이 되는 플랫폼. 화면의 「수집 가능」 배지가 이 값을 쓴다.
-COLLECTABLE_PLATFORMS = {"youtube", "linkedin"}
+# Threads 는 비로그인 계정 페이지에서 긁는다 - SPEC §64 가 「수집기 없음」이라
+# 적었으나 실측으로 뒤집혔다(_docs/20260906_03 §2.5). X 는 아직 없다.
+COLLECTABLE_PLATFORMS = {"youtube", "linkedin", "threads"}
 
 
 # --------------------------------------------------------------- 공통 유틸

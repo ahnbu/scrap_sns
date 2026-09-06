@@ -112,7 +112,7 @@
         "seed",
         "scrap_sns"
       ],
-      "status": "off",
+      "status": "active",
       "unverified": []
     },
     {
@@ -217,7 +217,7 @@
         "seed",
         "scrap_sns"
       ],
-      "status": "off",
+      "status": "active",
       "unverified": []
     },
     {
@@ -354,7 +354,7 @@
         "scrap_sns",
         "creator_profile"
       ],
-      "status": "off",
+      "status": "active",
       "unverified": []
     },
     {
@@ -437,7 +437,7 @@
         "scrap_sns",
         "creator_profile"
       ],
-      "status": "off",
+      "status": "active",
       "unverified": []
     },
     {
