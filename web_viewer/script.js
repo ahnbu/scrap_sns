@@ -2499,9 +2499,15 @@ ${item.body}
     function isBenchmarkVisible(post) {
         const isBenchmarkOnlyPost = post?.is_saved === false;
 
-        // 「벤치마킹만」이 켜지면 남의 계정 글만 남긴다. MY 의 반대편이다.
+        // 「벤치마킹만」이 켜지면 켜둔 계정이 가리키는 글을 남긴다.
+        //
+        // 저장 여부로 거르지 않는다. 종전에는 `is_saved === false` 인 것만 남겼는데,
+        // 그러면 내가 저장도 한 글이 벤치마킹 뷰에서만 사라졌다 - SPEC D4 가 겹친 글을
+        // "내가 좋다고 판단한 글이라 벤치마킹 학습의 출발점"이라 한 것과 정반대다.
+        // 겹침이 전부인 계정은 칩까지 사라져 "켰는데 왜 없지"가 됐다(장피엠 5편).
+        // 계획: _docs/20260906_03 (W1)
         if (showBenchmarkOnly) {
-            return isBenchmarkOnlyPost && matchesActiveBenchmarkAccount(post);
+            return matchesActiveBenchmarkAccount(post);
         }
 
         // 내 저장글은 어떤 상태에서도 계속 보인다(R8). 필드가 없는 레거시
@@ -2524,11 +2530,16 @@ ${item.body}
         });
     }
 
-    /** 켜진 계정 + 그 계정으로 들어온 글 수. 계정 칩 줄이 쓴다. */
+    /**
+     * 켜진 계정 + 그 계정으로 들어온 글 수. 계정 칩 줄이 쓴다.
+     *
+     * 세는 기준이 `isBenchmarkVisible()` 의 「벤치마킹만」 분기와 같아야 한다 -
+     * 어긋나면 "목록엔 5편 있는데 칩은 0"이 된다. 두 곳에 같은 규칙이 있으므로
+     * 한쪽만 고치지 않는다. 계획: _docs/20260906_03 (W1)
+     */
     function activeBenchmarkAccountsWithCounts() {
         const counts = new Map();
         allPosts.forEach((post) => {
-            if (post?.is_saved !== false) return;
             (post.benchmark_accounts || []).forEach((id) => {
                 counts.set(id, (counts.get(id) || 0) + 1);
             });
@@ -2813,17 +2824,24 @@ ${item.body}
      * 배지 3개가 겹치는 카드는 2건뿐이고 여유 294px 안에 들어간다.
      */
     function buildBenchmarkBadge(post) {
-        if (post?.is_saved !== false) return '';
         const names = activeBenchmarkNames(post);
         if (!names.length) return '';
         const ids = (post.benchmark_accounts || []).filter((id) =>
             benchmarkAccounts.some((a) => a.id === id && a.status === 'active'));
+        // 내가 저장도 한 글이면 그 사실을 배지가 말한다. 종전에는 이 글에
+        // 배지 자체가 안 붙어, 벤치마킹 뷰에 나와도 왜 나왔는지 알 수 없었다.
+        // 계획: _docs/20260906_03 (W1)
+        const alsoSaved = post?.is_saved !== false;
         const label = names.length === 1 ? names[0] : `벤치마킹 ${names.length}`;
-        const title = `${names.join(', ')} — 눌러서 이 계정 글만 보기`;
+        const title = alsoSaved
+            ? `${names.join(', ')} — 내 저장글이기도 함 · 눌러서 이 계정 글만 보기`
+            : `${names.join(', ')} — 눌러서 이 계정 글만 보기`;
+        const savedFlag = alsoSaved ? ' external-summary-badge--benchmark-saved' : '';
         // 배지를 눌러 그 계정만 보게 한다. 저자명 클릭으로 저자 필터를 거는
         // 기존 동작과 같은 결이다 - 카드에서 바로 좁힐 수 있어야 쓸 수 있다.
-        return `<button type="button" class="external-summary-badge external-summary-badge--benchmark"
+        return `<button type="button" class="external-summary-badge external-summary-badge--benchmark${savedFlag}"
                       data-benchmark-badge="1" data-benchmark-account="${escapeHtml(ids[0] || '')}"
+                      data-benchmark-also-saved="${alsoSaved ? '1' : '0'}"
                       title="${escapeHtml(title)}" aria-label="${escapeHtml(title)}">${escapeHtml(label)}</button>`;
     }
 
@@ -3915,14 +3933,13 @@ ${item.body}
 
     // Tab Switching
     function switchTab(targetId) {
+        // 상태는 .active 와 aria-selected 만 토글하고 색·배치는 style.css 가 정한다.
+        // 배치가 두 벌(세로 레일/가로 폴더 탭)이라 Tailwind 유틸리티를 여기서
+        // 붙였다 떼면 감당이 안 된다. 계획: _docs/20260906_02 (T3)
         document.querySelectorAll('.tab-btn').forEach(btn => {
-            if (btn.dataset.target === targetId) {
-                btn.classList.add('active', 'border-primary', 'text-white');
-                btn.classList.remove('border-transparent', 'text-gray-500');
-            } else {
-                btn.classList.remove('active', 'border-primary', 'text-white');
-                btn.classList.add('border-transparent', 'text-gray-500');
-            }
+            const isTarget = btn.dataset.target === targetId;
+            btn.classList.toggle('active', isTarget);
+            btn.setAttribute('aria-selected', isTarget ? 'true' : 'false');
         });
 
         document.querySelectorAll('.tab-pane').forEach(pane => {

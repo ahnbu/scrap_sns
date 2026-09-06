@@ -93,6 +93,9 @@ scripts/*
 !scripts/verify_benchmark_mainview.mjs
 !scripts/verify_twitter_created_at_kst_headless.mjs
 
+# 설정 모달 탭 세로 레일 전환 (계획 _docs/20260906_02)
+!scripts/verify_settings_tab_layout.mjs
+
 # Terminal Paste Image folder
 .cp-images/
 

@@ -491,50 +491,80 @@
           </button>
         </header>
 
-        <!-- Tab Navigation -->
-        <!-- overflow-x-auto: 좁은 창에서 탭이 잘려 누를 수 없게 되는 것을 막는다.
-             실측(2026-09-06) - 430px 뷰포트에서 탭 바 내부폭 364px 중 4개가 349px 를
-             써 여유가 15px 뿐이었다. 5번째 탭은 라벨을 줄여도 안 들어간다.
-             넓은 화면에서는 아무 변화가 없다. 계획: _docs/20260906_01 (P7) -->
-        <div class="flex gap-3 px-8 pt-4 border-b border-white/5 shrink-0 overflow-x-auto no-scrollbar">
-          <button
-            class="tab-btn active pb-3 text-base font-semibold border-b-2 border-primary text-white transition-all"
-            data-target="tabTags"
-          >
-            태그 관리
-          </button>
-          <button
-            class="tab-btn pb-3 text-base font-semibold border-b-2 border-transparent text-gray-500 hover:text-gray-300 transition-all"
-            data-target="tabHidden"
-          >
-            숨김 관리
-          </button>
-          <button
-            class="tab-btn pb-3 text-base font-semibold border-b-2 border-transparent text-gray-500 hover:text-gray-300 transition-all"
-            data-target="tabDisplay"
-          >
-            표시
-          </button>
-          <button
-            class="tab-btn pb-3 text-base font-semibold border-b-2 border-transparent text-gray-500 hover:text-gray-300 transition-all whitespace-nowrap"
-            data-target="tabBenchmark"
-          >
-            벤치마킹
-          </button>
-          <!-- 전체 크롤링은 되돌리기 어려운 조작이라 맨 끝에 둔다. 새 탭을 그 뒤에
-               붙이면 그 배치가 깨진다. 계획: _docs/20260906_01 (P7) -->
-          <button
-            class="tab-btn pb-3 text-base font-semibold border-b-2 border-transparent text-gray-500 hover:text-gray-300 transition-all whitespace-nowrap"
-            data-target="tabMaintenance"
-          >
-            전체 크롤링
-          </button>
-        </div>
+        <!-- 탭 바와 본문을 한 래퍼로 묶는다. 데스크톱(>=640px)은 세로 레일,
+             모바일은 가로 폴더 탭 - 배치는 style.css 가 정하고 DOM 은 한 벌이다.
+             min-h-0 이 없으면 모달의 max-h-[85vh] + overflow-hidden 아래에서
+             내부 스크롤이 죽는다. 계획: _docs/20260906_02 (T1) -->
+        <div class="settings-body flex-1 min-h-0 overflow-hidden">
+          <!-- Tab Navigation -->
+          <div class="settings-tabs" role="tablist" aria-label="설정 탭">
+            <button
+              class="tab-btn active whitespace-nowrap"
+              data-target="tabTags"
+              id="tabBtnTags"
+              role="tab"
+              aria-selected="true"
+              aria-controls="tabTags"
+            >
+              <span class="material-symbols-outlined tab-icon" aria-hidden="true">sell</span>
+              태그 관리
+            </button>
+            <button
+              class="tab-btn whitespace-nowrap"
+              data-target="tabHidden"
+              id="tabBtnHidden"
+              role="tab"
+              aria-selected="false"
+              aria-controls="tabHidden"
+            >
+              <span class="material-symbols-outlined tab-icon" aria-hidden="true">visibility_off</span>
+              숨김 관리
+            </button>
+            <button
+              class="tab-btn whitespace-nowrap"
+              data-target="tabDisplay"
+              id="tabBtnDisplay"
+              role="tab"
+              aria-selected="false"
+              aria-controls="tabDisplay"
+            >
+              <span class="material-symbols-outlined tab-icon" aria-hidden="true">grid_view</span>
+              표시
+            </button>
+            <button
+              class="tab-btn whitespace-nowrap"
+              data-target="tabBenchmark"
+              id="tabBtnBenchmark"
+              role="tab"
+              aria-selected="false"
+              aria-controls="tabBenchmark"
+            >
+              <span class="material-symbols-outlined tab-icon" aria-hidden="true">target</span>
+              벤치마킹
+            </button>
+            <!-- 전체 크롤링은 되돌리기 어려운 조작이라 맨 끝에 둔다. 새 탭을 그 뒤에
+                 붙이면 그 배치가 깨진다. 계획: _docs/20260906_01 (P7) -->
+            <button
+              class="tab-btn whitespace-nowrap"
+              data-target="tabMaintenance"
+              id="tabBtnMaintenance"
+              role="tab"
+              aria-selected="false"
+              aria-controls="tabMaintenance"
+            >
+              <span class="material-symbols-outlined tab-icon" aria-hidden="true">sync</span>
+              전체 크롤링
+            </button>
+          </div>
+
+          <div class="settings-panes">
 
         <!-- Tab Content: Display Options. 계획: _docs/20260827_03 (3.4 T3) -->
         <div
           id="tabDisplay"
           class="tab-pane hidden flex-1 overflow-y-auto no-scrollbar"
+          role="tabpanel"
+          aria-labelledby="tabBtnDisplay"
         >
           <div class="p-8 flex flex-col gap-8">
             <div class="flex flex-col gap-5 p-6 bg-white/5 rounded-[24px] border border-white/5 shrink-0">
@@ -599,6 +629,8 @@
         <div
           id="tabHidden"
           class="tab-pane hidden flex-1 overflow-y-auto no-scrollbar"
+          role="tabpanel"
+          aria-labelledby="tabBtnHidden"
         >
           <div id="invisiblePostsList" class="p-8 flex flex-col gap-6">
             <!-- Hidden items will be injected here -->
@@ -615,6 +647,8 @@
         <div
           id="tabTags"
           class="tab-pane flex-1 flex flex-col overflow-hidden"
+          role="tabpanel"
+          aria-labelledby="tabBtnTags"
         >
           <div class="p-6 border-b border-white/5 bg-black/20 shrink-0">
             <div class="flex items-center gap-3">
@@ -660,6 +694,8 @@
         <div
           id="tabBenchmark"
           class="tab-pane hidden flex-1 flex flex-col overflow-hidden"
+          role="tabpanel"
+          aria-labelledby="tabBtnBenchmark"
         >
           <div class="p-6 border-b border-white/5 bg-black/20 shrink-0">
             <div class="flex items-center gap-3">
@@ -709,6 +745,8 @@
         <div
           id="tabMaintenance"
           class="tab-pane hidden flex-1 overflow-y-auto no-scrollbar"
+          role="tabpanel"
+          aria-labelledby="tabBtnMaintenance"
         >
           <div class="p-8 flex flex-col gap-8">
             <div class="flex flex-col gap-5 p-6 bg-white/5 rounded-[24px] border border-white/5 shrink-0">
@@ -730,6 +768,8 @@
             </div>
           </div>
         </div>
+          </div><!-- /.settings-panes -->
+        </div><!-- /.settings-body -->
 
         <!-- <footer id="modalFooter" class="p-8 border-t border-white/5 text-center text-[11px] text-gray-600 font-medium tracking-wide shrink-0">
           Settings are saved locally in your browser to preserve your privacy.

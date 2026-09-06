@@ -704,26 +704,108 @@ body.modal-open {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-/* Tab Navigation Styles */
+/* Tab Navigation Styles — 설정 모달 탭.
+   기본(모바일 우선)은 가로 폴더 탭, 640px 이상은 세로 레일이다. DOM 은 한 벌이고
+   배치는 여기서만 정한다. 보라 강조색은 이 프로젝트에 CSS 변수가 없어 리터럴
+   #7f0df2 을 쓴다. 계획: _docs/20260906_02 (T2) */
+.settings-body {
+  display: flex;
+  flex-direction: column;
+}
+.settings-panes {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+.settings-tabs {
+  display: flex;
+  flex-direction: row;
+  flex: 0 0 auto;
+  gap: 2px;
+  padding: 6px 8px 0;
+  background: #16161b;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+}
+.settings-tabs::-webkit-scrollbar {
+  display: none;
+}
 .tab-btn {
   position: relative;
-  opacity: 0.6;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 40px;
+  padding: 10px 14px;
+  border-radius: 9px 9px 0 0;
+  /* opacity 를 곱하지 않는다. 이전 구현은 #6B7280 x 0.6 이라 대비가 2.06:1 이었다. */
+  color: #9ba1ac;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.2s, color 0.2s;
+}
+.tab-btn:hover {
+  background: rgba(255, 255, 255, 0.06);
+  color: #fff;
 }
 .tab-btn.active {
-  opacity: 1;
-  color: white;
+  background: #1e1e24;
+  color: #fff;
+  /* 위 3px 보라 + 좌우 1px 헤어라인. 아래 변을 비워 본문과 한 장으로 잇는다. */
+  box-shadow: inset 0 3px 0 #7f0df2,
+    inset 1px 0 0 rgba(255, 255, 255, 0.08),
+    inset -1px 0 0 rgba(255, 255, 255, 0.08);
 }
-.tab-btn.active::after {
-  content: '';
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: #7f0df2;
-  box-shadow: 0 0 15px rgba(127, 13, 242, 0.6);
-  border-radius: 2px;
+/* 전체 크롤링은 되돌리기 어려운 조작이라 붉은 계열로 구분한다. */
+.tab-btn[data-target='tabMaintenance'].active {
+  box-shadow: inset 0 3px 0 #e24b4a,
+    inset 1px 0 0 rgba(255, 255, 255, 0.08),
+    inset -1px 0 0 rgba(255, 255, 255, 0.08);
+}
+.tab-btn[data-target='tabMaintenance']:hover {
+  background: rgba(226, 75, 74, 0.12);
+  color: #fff;
+}
+.tab-icon {
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .settings-body {
+    flex-direction: row;
+  }
+  .settings-tabs {
+    flex-direction: column;
+    flex: 0 0 152px;
+    gap: 2px;
+    padding: 12px 0 12px 8px;
+    overflow-x: visible;
+    overflow-y: auto;
+  }
+  .tab-btn {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 9px 0 0 9px;
+    text-align: left;
+  }
+  .tab-btn.active {
+    /* 왼쪽 3px 보라 + 위아래 1px 헤어라인. 오른쪽 변을 비워 본문과 잇는다. */
+    box-shadow: inset 3px 0 0 #7f0df2,
+      inset 0 1px 0 rgba(255, 255, 255, 0.08),
+      inset 0 -1px 0 rgba(255, 255, 255, 0.08);
+  }
+  .tab-btn[data-target='tabMaintenance'].active {
+    box-shadow: inset 3px 0 0 #e24b4a,
+      inset 0 1px 0 rgba(255, 255, 255, 0.08),
+      inset 0 -1px 0 rgba(255, 255, 255, 0.08);
+  }
+  .tab-icon {
+    display: inline-flex;
+    font-size: 20px;
+  }
 }
 
 .tab-pane {
@@ -1261,6 +1343,13 @@ input:checked + .toggle-slider:before {
 button.external-summary-badge--benchmark {
   cursor: pointer;
   font-family: inherit;
+}
+/* 내가 저장도 한 글. 벤치마킹 전용분과 한눈에 갈려야 "이건 내가 고른 것"이
+   읽힌다. 별표와 같은 금색 계열을 써서 새 색을 늘리지 않는다.
+   계획: _docs/20260906_03 (W1) */
+button.external-summary-badge--benchmark-saved {
+  border-color: rgba(250, 204, 21, 0.45);
+  color: #facc15;
 }
 .benchmark-chip-divider {
   display: inline-block;
