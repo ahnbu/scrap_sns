@@ -269,6 +269,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // 계획: _docs/20260906_01 (A2, D9)
     let benchmarkAccounts = [];
     let showBenchmarkPosts = getInitialShowBenchmarkPosts();
+    // 「벤치마킹만 보기」. MY(showOwnPostsOnly)와 대칭이고 같은 규칙을 따른다 -
+    // 저장하지 않는다. 뷰어를 열면 항상 내 저장글부터 시작한다.
+    let showBenchmarkOnly = false;
+    // 계정 하나만 보기. 벤치마킹 칩이 켜졌을 때 계정 칩 줄에서 고른다.
+    let currentBenchmarkAccount = null;
     let searchQuery = '';
     const selectedPosts = new Set();
     let _searchTimer = null;
@@ -400,7 +405,8 @@ document.addEventListener('DOMContentLoaded', () => {
     function setPlatformFilter(name) {
         currentFilter = name;
         document.querySelectorAll('.filter-chip').forEach((b) => {
-            if (b.id === 'myPostsBtn') return;
+            // MY·벤치마킹은 플랫폼 선택이 아니라 별도 토글이다. 자기 상태를 따른다.
+            if (b.id === 'myPostsBtn' || b.id === 'benchmarkBtn') return;
             b.classList.toggle('active', b.dataset.filter === name);
         });
     }
@@ -409,8 +415,8 @@ document.addEventListener('DOMContentLoaded', () => {
     filterContainer.addEventListener('click', (e) => {
         const btn = e.target.closest('.filter-chip');
         if (!btn) return;
-        // MY 도 filter-chip 이지만 플랫폼 선택이 아니다. 자기 핸들러가 처리한다.
-        if (btn.id === 'myPostsBtn') return;
+        // MY·벤치마킹도 filter-chip 이지만 플랫폼 선택이 아니다. 자기 핸들러가 처리한다.
+        if (btn.id === 'myPostsBtn' || btn.id === 'benchmarkBtn') return;
 
         // 플랫폼을 골랐다는 건 그 플랫폼 글을 보겠다는 뜻이다. 내 글만 보는 상태를 유지하지 않는다.
         // 이게 없으면 MY 가 켜진 채로 X·YouTube 를 눌러 0건이 뜬다.
@@ -435,6 +441,16 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!myPostsBtn) return;
         myPostsBtn.setAttribute('aria-pressed', showOwnPostsOnly ? 'true' : 'false');
         myPostsBtn.classList.toggle('active', showOwnPostsOnly);
+    }
+
+    // 벤치마킹 필터 - 남의 계정 글만 보기. MY 와 대칭이다.
+    // 계획: _docs/20260906_01 (P9)
+    const benchmarkBtn = document.getElementById('benchmarkBtn');
+
+    function syncBenchmarkButtonState() {
+        if (!benchmarkBtn) return;
+        benchmarkBtn.setAttribute('aria-pressed', showBenchmarkOnly ? 'true' : 'false');
+        benchmarkBtn.classList.toggle('active', showBenchmarkOnly);
     }
 
     // 임의의 조건 조합에서 내 글이 몇 건인지 센다. 전역 조건을 잠깐 갈아끼웠다 되돌린다 -
@@ -478,9 +494,40 @@ document.addEventListener('DOMContentLoaded', () => {
 
         myPostsBtn.addEventListener('click', () => {
             showOwnPostsOnly = !showOwnPostsOnly;
+            // 내 글과 남의 계정 글은 교집합이 0이다. 둘 다 켜면 항상 빈 화면이 된다.
+            if (showOwnPostsOnly) {
+                showBenchmarkOnly = false;
+                currentBenchmarkAccount = null;
+                syncBenchmarkButtonState();
+            }
             // 끌 때는 아무 조건도 건드리지 않는다.
             if (showOwnPostsOnly) relaxFiltersForOwnPosts();
             syncMyPostsButtonState();
+            clearSelection();
+            if (searchQuery) {
+                void runServerSearch(searchQuery);
+                return;
+            }
+            renderPosts();
+        });
+    }
+
+    if (benchmarkBtn) {
+        benchmarkBtn.addEventListener('click', () => {
+            showBenchmarkOnly = !showBenchmarkOnly;
+            if (showBenchmarkOnly) {
+                // MY 와 상호 배타. 그리고 플랫폼·태그·저자로 좁혀둔 상태에서 켜면
+                // 0건이 뜨기 쉽다 - MY 가 relaxFiltersForOwnPosts() 로 푸는 것과
+                // 같은 이유로 여기서도 푼다.
+                showOwnPostsOnly = false;
+                syncMyPostsButtonState();
+                currentTag = null;
+                currentAuthor = null;
+                setPlatformFilter('all');
+            } else {
+                currentBenchmarkAccount = null;
+            }
+            syncBenchmarkButtonState();
             clearSelection();
             if (searchQuery) {
                 void runServerSearch(searchQuery);
@@ -2392,6 +2439,10 @@ ${item.body}
         if (currentTag) parts.push(`태그 "${currentTag}"`);
         if (currentAuthor) parts.push(`작성자 ${currentAuthor.label}`);
         if (showOwnPostsOnly) parts.push('MY');
+        if (showBenchmarkOnly) {
+            const account = benchmarkAccounts.find((a) => a.id === currentBenchmarkAccount);
+            parts.push(account ? `벤치마킹 「${account.name}」` : '벤치마킹');
+        }
         if (searchQuery) parts.push(`검색어 "${searchQuery}"`);
         return parts;
     }
@@ -2446,16 +2497,47 @@ ${item.body}
      * 계획: _docs/20260906_01 (D9)
      */
     function isBenchmarkVisible(post) {
+        const isBenchmarkOnlyPost = post?.is_saved === false;
+
+        // 「벤치마킹만」이 켜지면 남의 계정 글만 남긴다. MY 의 반대편이다.
+        if (showBenchmarkOnly) {
+            return isBenchmarkOnlyPost && matchesActiveBenchmarkAccount(post);
+        }
+
         // 내 저장글은 어떤 상태에서도 계속 보인다(R8). 필드가 없는 레거시
         // 레코드도 여기로 떨어진다 - 서버가 기본값 true 를 채워 보낸다.
-        if (post?.is_saved !== false) return true;
+        if (!isBenchmarkOnlyPost) return true;
         if (!showBenchmarkPosts) return false;
-        const tags = post?.benchmark_accounts || [];
-        if (!tags.length) return false;
-        return tags.some((accountId) => {
+        return matchesActiveBenchmarkAccount(post);
+    }
+
+    /** 켜진 계정에 속하나. 계정 하나를 고른 상태면 그 계정만. */
+    function matchesActiveBenchmarkAccount(post) {
+        const ids = post?.benchmark_accounts || [];
+        if (!ids.length) return false;
+        if (currentBenchmarkAccount) {
+            return ids.includes(currentBenchmarkAccount);
+        }
+        return ids.some((accountId) => {
             const account = benchmarkAccounts.find((a) => a.id === accountId);
             return account?.status === 'active';
         });
+    }
+
+    /** 켜진 계정 + 그 계정으로 들어온 글 수. 계정 칩 줄이 쓴다. */
+    function activeBenchmarkAccountsWithCounts() {
+        const counts = new Map();
+        allPosts.forEach((post) => {
+            if (post?.is_saved !== false) return;
+            (post.benchmark_accounts || []).forEach((id) => {
+                counts.set(id, (counts.get(id) || 0) + 1);
+            });
+        });
+        return benchmarkAccounts
+            .filter((account) => account.status === 'active')
+            .map((account) => ({ ...account, count: counts.get(account.id) || 0 }))
+            .filter((account) => account.count > 0)
+            .sort((a, b) => b.count - a.count || String(a.name).localeCompare(String(b.name)));
     }
 
     /** 이 글을 가리키는 켜진 벤치마킹 계정 이름들. 카드 배지에 쓴다. */
@@ -2734,10 +2816,15 @@ ${item.body}
         if (post?.is_saved !== false) return '';
         const names = activeBenchmarkNames(post);
         if (!names.length) return '';
-        const title = `벤치마킹 계정 수집분 - ${names.join(', ')}`;
-        return `<span class="external-summary-badge external-summary-badge--benchmark"
-                      data-benchmark-badge="1"
-                      title="${escapeHtml(title)}" aria-label="${escapeHtml(title)}">벤치마킹</span>`;
+        const ids = (post.benchmark_accounts || []).filter((id) =>
+            benchmarkAccounts.some((a) => a.id === id && a.status === 'active'));
+        const label = names.length === 1 ? names[0] : `벤치마킹 ${names.length}`;
+        const title = `${names.join(', ')} — 눌러서 이 계정 글만 보기`;
+        // 배지를 눌러 그 계정만 보게 한다. 저자명 클릭으로 저자 필터를 거는
+        // 기존 동작과 같은 결이다 - 카드에서 바로 좁힐 수 있어야 쓸 수 있다.
+        return `<button type="button" class="external-summary-badge external-summary-badge--benchmark"
+                      data-benchmark-badge="1" data-benchmark-account="${escapeHtml(ids[0] || '')}"
+                      title="${escapeHtml(title)}" aria-label="${escapeHtml(title)}">${escapeHtml(label)}</button>`;
     }
 
     function buildCopyText(post) {
@@ -3533,6 +3620,23 @@ ${item.body}
             renderNoteSection(noteWrapper, post, { editing: true });
         });
 
+        // 배지를 누르면 그 계정 글만 본다. 저자명 클릭과 같은 결이다.
+        footer.querySelector('[data-benchmark-badge]')?.addEventListener('click', (event) => {
+            event.stopPropagation();
+            const accountId = event.currentTarget.dataset.benchmarkAccount;
+            if (!accountId) return;
+            showBenchmarkOnly = true;
+            showOwnPostsOnly = false;
+            currentBenchmarkAccount = currentBenchmarkAccount === accountId ? null : accountId;
+            currentTag = null;
+            currentAuthor = null;
+            setPlatformFilter('all');
+            syncMyPostsButtonState();
+            syncBenchmarkButtonState();
+            clearSelection();
+            renderPosts();
+        });
+
         // *** Fold Toggle Handler ***
         const foldBtn = header.querySelector('.fold-btn');
         foldBtn.addEventListener('click', (e) => {
@@ -3599,11 +3703,13 @@ ${item.body}
         if (sortedTags.length === 0) {
             container.innerHTML = '';
             renderAuthorBadge(container);
+            renderBenchmarkAccountChips(container);
             return;
         }
 
         container.innerHTML = '';
         renderAuthorBadge(container);
+        renderBenchmarkAccountChips(container);
 
         sortedTags.forEach(tag => {
             const tagBtn = document.createElement('button');
@@ -3624,6 +3730,61 @@ ${item.body}
         if (currentTag && !allUniqueTags.has(currentTag)) {
             currentTag = null; // If selected tag was deleted
         }
+    }
+
+    /**
+     * 벤치마킹 계정 칩 줄. 「벤치마킹만」이 켜졌을 때만 나온다.
+     *
+     * 이게 없으면 토글을 켜도 남의 글 수십 건이 한 덩어리로 섞여 나올 뿐이라
+     * 「이 계정은 뭐가 잘 됐나」를 볼 수단이 없다. 태그 칩 줄과 같은 자리·같은
+     * 모양이라 새 개념이 아니다. 계획: _docs/20260906_01 (P9)
+     */
+    function renderBenchmarkAccountChips(container) {
+        if (!showBenchmarkOnly) return;
+
+        const accounts = activeBenchmarkAccountsWithCounts();
+        if (!accounts.length) {
+            const hint = document.createElement('span');
+            hint.className = 'benchmark-chip-hint';
+            hint.textContent = benchmarkAccounts.some((a) => a.status === 'active')
+                ? '켠 계정의 수집분이 아직 없습니다. 수집을 한 번 돌리세요.'
+                : '켜둔 벤치마킹 계정이 없습니다. 설정 → 벤치마킹에서 켜세요.';
+            container.appendChild(hint);
+            return;
+        }
+
+        const total = accounts.reduce((sum, account) => sum + account.count, 0);
+        const allChip = document.createElement('button');
+        allChip.type = 'button';
+        allChip.className = `global-tag-chip benchmark-chip ${currentBenchmarkAccount ? '' : 'active'}`;
+        allChip.textContent = `전체 ${total}`;
+        allChip.addEventListener('click', () => {
+            currentBenchmarkAccount = null;
+            clearSelection();
+            renderPosts();
+        });
+        container.appendChild(allChip);
+
+        accounts.forEach((account) => {
+            const chip = document.createElement('button');
+            chip.type = 'button';
+            chip.className = `global-tag-chip benchmark-chip ${currentBenchmarkAccount === account.id ? 'active' : ''}`;
+            chip.textContent = `${account.name} ${account.count}`;
+            chip.title = account.memo || account.group || account.name;
+            chip.addEventListener('click', () => {
+                currentBenchmarkAccount = currentBenchmarkAccount === account.id ? null : account.id;
+                clearSelection();
+                renderPosts();
+            });
+            container.appendChild(chip);
+        });
+
+        // 계정 칩 뒤에 태그 칩이 바로 이어진다. 경계가 없으면 「Jay Choi 4」 다음의
+        // 「SNS노하우」가 같은 종류로 읽힌다.
+        const divider = document.createElement('span');
+        divider.className = 'benchmark-chip-divider';
+        divider.setAttribute('aria-hidden', 'true');
+        container.appendChild(divider);
     }
 
     function renderAuthorBadge(container) {

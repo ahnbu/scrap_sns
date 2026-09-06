@@ -1238,3 +1238,35 @@ input:checked + .toggle-slider:before {
   border-color: rgba(127, 13, 242, 0.3);
   color: #7f0df2;
 }
+
+/* 벤치마킹 계정 칩. 태그 칩(.global-tag-chip)과 같은 규격을 쓰고 색만 갈린다 -
+   같은 줄에 나란히 서므로 모양이 달라지면 다른 종류로 읽힌다.
+   계획: _docs/20260906_01 (P9) */
+.benchmark-chip {
+  border-color: rgba(127, 13, 242, 0.3);
+}
+.benchmark-chip.active {
+  background-color: rgba(127, 13, 242, 0.2);
+  border-color: rgba(127, 13, 242, 0.3);
+  color: #fff;
+}
+.benchmark-chip-hint {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.75rem;
+  color: #6b7280;
+  padding: 2px 4px;
+}
+/* 배지가 버튼이 됐다. 눌러서 그 계정만 볼 수 있다는 것이 보여야 한다. */
+button.external-summary-badge--benchmark {
+  cursor: pointer;
+  font-family: inherit;
+}
+.benchmark-chip-divider {
+  display: inline-block;
+  width: 1px;
+  align-self: stretch;
+  min-height: 20px;
+  margin: 0 2px;
+  background: rgba(255, 255, 255, 0.12);
+}

@@ -90,6 +90,7 @@ scripts/*
 !scripts/verify_benchmark_viewer_headless.mjs
 !scripts/verify_benchmark_ui_design.mjs
 !scripts/verify_benchmark_scenarios.mjs
+!scripts/verify_benchmark_mainview.mjs
 !scripts/verify_twitter_created_at_kst_headless.mjs
 
 # Terminal Paste Image folder
