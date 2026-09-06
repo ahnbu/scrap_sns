@@ -19,9 +19,13 @@ import { execFileSync } from 'node:child_process';
 import fs from 'node:fs';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
+import { startBenchmarkVerifyServer } from './_bench_verify_server.mjs';
 
-const BASE_URL = process.env.SNS_HUB_BASE_URL || 'http://127.0.0.1:5000/';
-const ACCOUNTS_PATH = path.join('web_viewer', 'benchmark_accounts.json');
+// 검증 전용 서버를 띄운다. 운영 5000번과 운영 계정 파일을 건드리지 않는다.
+// 계획: _docs/20260906_03 (W2)
+const verifyServer = await startBenchmarkVerifyServer();
+const BASE_URL = verifyServer.baseUrl;
+const ACCOUNTS_PATH = verifyServer.accountsPath;
 
 const checks = [];
 function record(name, ok, detail) {
@@ -90,15 +94,18 @@ try {
   });
 
   // 화면에 실제로 배지가 붙는지는 별도로 본다(0인지 아닌지만).
-  const badgeCount = () => page.evaluate(async () => {
+  // selector 를 받는다. W1 이후 겹친 글(내 저장글이면서 벤치마킹 계정 소속)도
+  // 배지를 달기 때문에, 「전용 글이 있나」와 「배지가 있나」가 갈렸다.
+  // 계획: _docs/20260906_03 (W2)
+  const badgeCount = (selector = '[data-benchmark-badge]') => page.evaluate(async (sel) => {
     for (let i = 0; i < 6; i++) {
       window.scrollBy(0, 3000);
       await new Promise((r) => setTimeout(r, 200));
     }
-    const count = document.querySelectorAll('[data-benchmark-badge]').length;
+    const count = document.querySelectorAll(sel).length;
     window.scrollTo(0, 0);
     return count;
-  });
+  }, selector);
 
   const hiddenTabCount = () => page.evaluate(async () => {
     document.getElementById('settingsBtn')?.click();
@@ -117,8 +124,9 @@ try {
   console.log(`데이터: 전체 ${stats.total} · 저장글 ${stats.saved} · 벤치마킹 전용 ${stats.benchmarkOnly}`);
 
   await setToggle(false);
-  const offBadges = await badgeCount();
-  record('V1 기본(꺼짐)에서 벤치마킹 글이 안 보인다', offBadges === 0, `배지 ${offBadges}개`);
+  // 겹친 글은 내 저장글이라 꺼짐 상태에서도 보인다 - 「전용」 글만 0 이어야 한다.
+  const offBadges = await badgeCount('[data-benchmark-also-saved="0"]');
+  record('V1 기본(꺼짐)에서 벤치마킹 전용 글이 안 보인다', offBadges === 0, `전용 배지 ${offBadges}개`);
 
   const hiddenBefore = await hiddenTabCount();
 
@@ -195,6 +203,7 @@ try {
 } finally {
   await browser.close();
   fs.writeFileSync(ACCOUNTS_PATH, originalAccounts, 'utf8');
+  await verifyServer.stop();
 }
 
 // V6 CLI 가 같은 판정을 하는지

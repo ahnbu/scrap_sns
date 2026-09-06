@@ -20,9 +20,13 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
+import { startBenchmarkVerifyServer } from './_bench_verify_server.mjs';
 
-const BASE_URL = process.env.SNS_HUB_BASE_URL || 'http://127.0.0.1:5000/';
-const ACCOUNTS_PATH = path.join('web_viewer', 'benchmark_accounts.json');
+// 검증 전용 서버를 띄운다. 운영 5000번과 운영 계정 파일을 건드리지 않는다.
+// 계획: _docs/20260906_03 (W2)
+const verifyServer = await startBenchmarkVerifyServer();
+const BASE_URL = verifyServer.baseUrl;
+const ACCOUNTS_PATH = verifyServer.accountsPath;
 
 function arg(flag, fallback = null) {
   const index = process.argv.indexOf(flag);
@@ -216,6 +220,7 @@ try {
   await browser.close();
   // 검증이 바꾼 상태를 되돌린다.
   fs.writeFileSync(ACCOUNTS_PATH, originalAccounts, 'utf8');
+  await verifyServer.stop();
 }
 
 const failed = checks.filter((c) => !c.ok);

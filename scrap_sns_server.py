@@ -987,6 +987,17 @@ _load_env_once()
 
 
 def _get_benchmark_accounts_path():
+    """벤치마킹 계정 파일 경로.
+
+    `SNS_BENCHMARK_ACCOUNTS_PATH` 가 있으면 그것을 쓴다. 검증 스크립트가
+    운영 파일을 건드리지 않게 하는 유일한 통로다 - 종전에는 검증이 API 로
+    운영 파일을 바꾼 뒤 `finally` 에서 되돌렸고, 그 되돌리기가 실패하면
+    계정이 꺼진 채 굳었다. 되돌릴 것을 만들지 않는 편이 낫다.
+    계획: _docs/20260906_03 (W2)
+    """
+    override = os.environ.get("SNS_BENCHMARK_ACCOUNTS_PATH", "").strip()
+    if override:
+        return os.path.abspath(override)
     return os.path.join(WEB_VIEWER_DIR, "benchmark_accounts.json")
 
 
