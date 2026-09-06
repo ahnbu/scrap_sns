@@ -1135,3 +1135,106 @@ input:checked + .toggle-slider:before {
   border-color: #1d5a6b;
   color: #5ec7dd;
 }
+
+/* 벤치마킹 계정 관리. 태그 관리 행(.tag-manage-item)과 같은 규격을 쓴다 -
+   같은 모달 안에서 행 모양이 갈리면 다른 화면처럼 보인다.
+   계획: _docs/20260906_01 (P3, P7) */
+.bm-account-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  transition: all 0.2s;
+}
+.bm-account-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+.bm-account-item--excluded {
+  opacity: 0.55;
+}
+.bm-account-head {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-height: 44px;
+}
+.bm-account-name {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #fff;
+}
+.bm-account-sub {
+  font-size: 0.6875rem;
+  color: #6b7280;
+}
+/* 「수집 가능」 배지. 지금 계정 단위로 긁히는 것은 YouTube·LinkedIn 뿐이다.
+   구분해 보여주지 않으면 "등록했는데 왜 0건이냐"가 된다(SPEC D11). */
+.bm-chan {
+  display: inline-flex;
+  align-items: center;
+  min-height: 20px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  border: 0.5px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  color: #6b7280;
+  font-size: 11px;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+/* 신규 색을 만들지 않는다 - 화면이 이미 쓰는 값만 조합한다.
+   bg-primary/20 은 Settings 헤더 아이콘, border-primary/30 은 추가 버튼,
+   text-primary 는 활성 탭에 이미 쓰인다. */
+.bm-chan--collectable {
+  border-color: rgba(127, 13, 242, 0.3);
+  background: rgba(127, 13, 242, 0.2);
+  color: #7f0df2;
+}
+.bm-section-title {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #6b7280;
+  margin-top: 0.5rem;
+}
+.bm-detail {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+.bm-detail label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 11px;
+  color: #6b7280;
+}
+.bm-detail input,
+.bm-detail select {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 0.375rem 0.5rem;
+  color: #fff;
+  font-size: 0.75rem;
+  outline: none;
+}
+.bm-detail input:focus,
+.bm-detail select:focus {
+  border-color: rgba(127, 13, 242, 0.5);
+}
+/* 벤치마킹 배지. 외부 요약 배지와 같은 채도대를 쓴다 - 기존 팔레트 밖의
+   색을 새로 들이지 않는다(P7 합격 기준). primary 계열이라 "내 도구가 붙인
+   표시"로 읽힌다. 계획: _docs/20260906_01 (P6) */
+.external-summary-badge--benchmark {
+  background-color: rgba(127, 13, 242, 0.2);
+  border-color: rgba(127, 13, 242, 0.3);
+  color: #7f0df2;
+}

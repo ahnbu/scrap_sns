@@ -697,13 +697,29 @@ def select_playlists(selector):
     return chosen
 
 
-def find_latest_full_file():
-    files = glob.glob(os.path.join(OUTPUT_PYTHON_DIR, "youtube_py_full_*.json"))
+# 벤치마킹 수집분은 재생목록 수집분과 **다른 파일**에 쓴다.
+# 같은 파일에 섞으면 두 가지가 깨진다.
+#   (1) is_saved 를 파일 출처로 도출할 수 없다
+#   (2) select_update_targets() 가 벤치마킹 영상을 "이미 저장한 재생목록 영상"으로
+#       오인해 내 재생목록 수집이 망가진다
+# linkedin_own / threads_own 이 이미 같은 구조다. 계획: _docs/20260906_01 (D13)
+OUTPUT_BENCHMARK_DIR = os.path.join(PROJECT_ROOT, "output_youtube_user", "python")
+
+
+def output_context(channel_mode):
+    if channel_mode:
+        return OUTPUT_BENCHMARK_DIR, "youtube_user_full_"
+    return OUTPUT_PYTHON_DIR, "youtube_py_full_"
+
+
+def find_latest_full_file(channel_mode=False):
+    directory, prefix = output_context(channel_mode)
+    files = glob.glob(os.path.join(directory, f"{prefix}*.json"))
     return max(files, key=os.path.getmtime) if files else None
 
 
-def load_existing_posts():
-    latest = find_latest_full_file()
+def load_existing_posts(channel_mode=False):
+    latest = find_latest_full_file(channel_mode)
     if not latest:
         return {}
     data = load_json(latest, {})
@@ -826,6 +842,99 @@ def collect_playlist_entries(playlists, api_key):
     return entries
 
 
+def fetch_channel_uploads_playlist(handle, api_key):
+    """@handle → (channel_id, uploads 재생목록 id, 채널명). 실패하면 (None, None, "")."""
+    normalized = handle if str(handle).startswith("@") else f"@{handle}"
+    payload = api_get(
+        "channels",
+        {"part": "snippet,contentDetails", "forHandle": normalized},
+        api_key,
+    )
+    items = payload.get("items") or []
+    if not items:
+        return None, None, ""
+    item = items[0]
+    uploads = (
+        ((item.get("contentDetails") or {}).get("relatedPlaylists") or {}).get("uploads")
+    )
+    title = str((item.get("snippet") or {}).get("title") or "")
+    return item.get("id"), uploads, title
+
+
+def collect_channel_entries(accounts, api_key, per_account_limit):
+    """벤치마킹 계정의 최신 영상을 계정당 상한만큼 모은다.
+
+    재생목록 수집과 달리 `RECENT_MONTHS` 로 자르지 않는다 - 계정을 갓 켠 시점에
+    최근 6개월치가 상한보다 적으면 표본이 0에 가까워진다. 상한이 곧 범위다.
+
+    반환 entry 는 재생목록 경로와 같은 모양이라 아래 파이프라인을 그대로 탄다.
+    다만 `benchmark_account_id` 가 붙어 build_post 가 표식을 심는다.
+    계획: _docs/20260906_01 (P5, D13)
+    """
+    entries = {}
+    for account in accounts:
+        handle = str((account.get("channels") or {}).get("youtube") or "").strip()
+        if not handle:
+            continue
+        channel_id, uploads, title = fetch_channel_uploads_playlist(handle, api_key)
+        if not uploads:
+            print(f"   ⚠️ {account.get('name')} ({handle}) 채널을 못 찾았습니다. 건너뜁니다.")
+            continue
+        limit = int(account.get("limit") or per_account_limit)
+        print(f"   📺 {account.get('name')} ({title}) 최신 {limit}편")
+
+        collected = 0
+        page_token = None
+        while collected < limit:
+            params = {
+                "part": "snippet,contentDetails",
+                "playlistId": uploads,
+                "maxResults": min(50, limit - collected),
+            }
+            if page_token:
+                params["pageToken"] = page_token
+            payload = api_get("playlistItems", params, api_key)
+            items = payload.get("items") or []
+            if not items:
+                break
+            for item in items:
+                snippet = item.get("snippet") or {}
+                if str(snippet.get("title") or "") in UNAVAILABLE_TITLES:
+                    continue
+                video_id = (item.get("contentDetails") or {}).get("videoId")
+                if not video_id or video_id in entries:
+                    continue
+                published = to_local_naive(parse_api_datetime(snippet.get("publishedAt")))
+                entries[video_id] = {
+                    "video_id": video_id,
+                    # source 필드로 들어간다. 재생목록 이름 자리에 계정 id 를 둬
+                    # "어느 경로로 들어왔나"가 레코드만 봐도 읽힌다.
+                    "playlist": f"benchmark:{account['id']}",
+                    "playlist_added_at": published.strftime("%Y-%m-%d %H:%M:%S") if published else "",
+                    "benchmark_account_id": account["id"],
+                    "channel_id": channel_id or "",
+                }
+                collected += 1
+                if collected >= limit:
+                    break
+            page_token = payload.get("nextPageToken")
+            if not page_token:
+                break
+    return entries
+
+
+def load_active_benchmark_accounts():
+    path = os.path.join(PROJECT_ROOT, "web_viewer", "benchmark_accounts.json")
+    data = load_json(path, {}) or {}
+    accounts = data.get("accounts") if isinstance(data, dict) else None
+    if not isinstance(accounts, list):
+        return []
+    return [
+        account for account in accounts
+        if account.get("status") == "active" and (account.get("channels") or {}).get("youtube")
+    ]
+
+
 def build_full_text(title, summary, prose, timeline):
     """요약이 카드에 보이도록 구성한다.
 
@@ -869,6 +978,10 @@ def build_post(entry, detail, transcript_status, transcript, summary, summary_st
         "code": video_id,
         "username": channel,
         "display_name": channel,
+        # channelId 를 남긴다. username 은 채널 표시명이라 계정 주소(@handle)와
+        # 이어지지 않는다 - 벤치마킹 계정과 게시물을 잇는 유일한 안정 키다.
+        # 계획: _docs/20260906_01 (D12)
+        "channel_id": str(snippet.get("channelId") or ""),
         "full_text": full_text,
         "media": [thumbnail] if thumbnail else [],
         "url": f"https://www.youtube.com/watch?v={video_id}",
@@ -896,6 +1009,18 @@ def build_post(entry, detail, transcript_status, transcript, summary, summary_st
         "summary_status": summary_status,
         "duration": content_details.get("duration") or "",
     }
+
+    # 벤치마킹 계정 수집분은 내 북마크가 아니다. 이 두 필드가 뷰어의
+    # `보임 = is_saved OR (benchmark_accounts 중 켜진 계정)` 판정을 만든다.
+    # 재생목록 경로는 손대지 않는다 - 그쪽은 normalize_post 의 기본값(True)을 쓴다.
+    # 계획: _docs/20260906_01 (D14, P5)
+    benchmark_id = entry.get("benchmark_account_id")
+    if benchmark_id:
+        post["is_saved"] = False
+        post["benchmark_accounts"] = [benchmark_id]
+    if entry.get("channel_id") and not post.get("channel_id"):
+        post["channel_id"] = entry["channel_id"]
+
     return normalize_post(post)
 
 
@@ -946,19 +1071,37 @@ def run(args):
         return 1
 
     model = args.summary_model
-    playlists = select_playlists(args.playlists)
-    print(f"🚀 YouTube Producer 시작 (모드: {args.mode}, 대상: {', '.join(p['name'] for p in playlists)})")
+    channel_mode = bool(args.channel)
+
+    if channel_mode:
+        accounts = load_active_benchmark_accounts()
+        if not accounts:
+            print("⚠️ 켜진 벤치마킹 계정이 없습니다. Settings → 벤치마킹 탭에서 켜세요.")
+            return 0
+        playlists = []
+        print(f"🚀 YouTube 벤치마킹 수집 시작 (계정 {len(accounts)}개, 계정당 기본 {args.channel_limit}편)")
+        entries = collect_channel_entries(accounts, api_key, args.channel_limit)
+    else:
+        accounts = []
+        playlists = select_playlists(args.playlists)
+        print(f"🚀 YouTube Producer 시작 (모드: {args.mode}, 대상: {', '.join(p['name'] for p in playlists)})")
+        entries = collect_playlist_entries(playlists, api_key)
+
     if args.wave:
         print(f"   🌊 웨이브 {args.wave}")
-
-    entries = collect_playlist_entries(playlists, api_key)
     print(f"   📦 필터 통과 {len(entries)}건")
 
-    existing = load_existing_posts()
+    existing = load_existing_posts(channel_mode)
     retry_ids = set()
     if args.mode == "update":
         new_ids, retry_list = select_update_targets(
-            entries, existing, allow_retry=not args.skip_summaries
+            entries,
+            existing,
+            # 벤치마킹 레코드는 요약 재시도군에 넣지 않는다. 넣으면 2차로 편수를
+            # 올리는 순간 남아 있던 deferred 가 조용히 요약돼 「1차 60회만」이
+            # 지켜지지 않는다. 늘리려면 --max-summaries 를 명시적으로 올려야 한다.
+            # 계획: _docs/20260906_01 (P5 L1)
+            allow_retry=not args.skip_summaries and not channel_mode,
         )
         retry_ids = set(retry_list)
         pending = {vid: entries[vid] for vid in new_ids + retry_list}
@@ -1156,7 +1299,9 @@ def run(args):
         post["sequence_id"] = index
 
     today = datetime.now().strftime("%Y%m%d")
-    output_path = os.path.join(OUTPUT_PYTHON_DIR, f"youtube_py_full_{today}.json")
+    directory, prefix = output_context(channel_mode)
+    os.makedirs(directory, exist_ok=True)
+    output_path = os.path.join(directory, f"{prefix}{today}.json")
     save_json(
         output_path,
         {
@@ -1165,8 +1310,9 @@ def run(args):
                 "crawled_at": datetime.now().isoformat(),
                 "total_count": len(posts),
                 "max_sequence_id": len(posts),
-                "crawl_mode": args.mode,
+                "crawl_mode": "channel" if channel_mode else args.mode,
                 "playlists": [p["name"] for p in playlists],
+                "benchmark_accounts": [a["id"] for a in accounts],
                 "new_count": len(collected),
                 "transcript_available": provider_ok,
                 "wave": args.wave,
@@ -1200,6 +1346,15 @@ def main():
         "--playlists",
         default=",".join(DEFAULT_PLAYLISTS),
         help="수집할 재생목록 이름(쉼표 구분) 또는 all. 기본값은 파일럿 대상 drive7",
+    )
+    parser.add_argument(
+        "--channel", action="store_true",
+        help="재생목록 대신 켜진 벤치마킹 계정의 최신 영상을 수집한다. "
+             "출력은 output_youtube_user/ 로 분리되며 is_saved=False 가 붙는다",
+    )
+    parser.add_argument(
+        "--channel-limit", type=int, default=5,
+        help="계정별 limit 이 없을 때 쓰는 계정당 편수 기본값(--channel 전용)",
     )
     parser.add_argument("--refresh-summaries", action="store_true", help="요약 캐시를 무시하고 재생성")
     parser.add_argument(

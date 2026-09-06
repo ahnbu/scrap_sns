@@ -37,6 +37,13 @@ META_FIELDS = [
     # 필드를 떨어뜨려 프런트에서 항상 undefined 가 되고 필터가 조용히 무동작한다.
     # 계획: _docs/20260826_03 (3.9 T9)
     "is_own_post",
+    # 벤치마킹 표시·필터가 이 셋을 쓴다. 위 is_own_post 와 같은 함정이다 -
+    # 이 목록에 없으면 /api/posts 가 값을 떨어뜨려 프런트가 항상 undefined 를 보고
+    # `보임 = is_saved OR 켜진 계정` 이 전건 거짓이 된다(화면 백지).
+    # 계획: _docs/20260906_01 (D16)
+    "is_saved",
+    "benchmark_accounts",
+    "channel_id",
 ]
 
 
@@ -117,5 +124,12 @@ def build_post_meta(post: dict) -> dict:
         "media_count": len(media),
         "local_images_count": len(local_images),
         "thumbnail": build_thumbnail(post),
+        # 필드가 없는 레코드에도 안전한 값을 준다. normalize_post() 의 defaults 에만
+        # 기대면 안 된다 - 뷰어는 이미 만들어진 통합본을 그대로 읽고, 그 파일에는
+        # is_saved 가 없다. None 이 나가면 프런트의 `보임 = is_saved OR 켜진 계정` 이
+        # 전건 거짓이 되어 화면이 통째로 빈다. 계획: _docs/20260906_01 (D14)
+        "is_saved": post.get("is_saved", True),
+        "benchmark_accounts": post.get("benchmark_accounts") or [],
+        "channel_id": post.get("channel_id") or "",
     }
     return {field: enriched.get(field) for field in META_FIELDS}

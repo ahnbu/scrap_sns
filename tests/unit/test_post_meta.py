@@ -110,3 +110,43 @@ def test_build_post_key_falls_back_to_canonical_url():
     }
 
     assert build_post_key(post) == "linkedin:url:https://www.linkedin.com/feed/update/urn:li:activity:1/"
+
+
+def test_build_post_meta_defaults_is_saved_for_legacy_records():
+    """이미 만들어진 통합본에는 is_saved 가 없다.
+
+    None 이 나가면 프런트 필터가 전건 거짓이 되어 화면이 빈다.
+    계획: _docs/20260906_01 (D14, D16)
+    """
+    meta = build_post_meta(
+        {
+            "sns_platform": "threads",
+            "platform_id": "ABC123",
+            "username": "alice",
+            "url": "https://www.threads.com/@alice/post/ABC123",
+            "full_text": "legacy record",
+        }
+    )
+
+    assert meta["is_saved"] is True
+    assert meta["benchmark_accounts"] == []
+    assert meta["channel_id"] == ""
+
+
+def test_build_post_meta_carries_benchmark_fields():
+    meta = build_post_meta(
+        {
+            "sns_platform": "youtube",
+            "platform_id": "vid1",
+            "username": "channel",
+            "url": "https://www.youtube.com/watch?v=vid1",
+            "full_text": "benchmark record",
+            "is_saved": False,
+            "benchmark_accounts": ["builderjosh", "pfif"],
+            "channel_id": "UCxj3eVTAv9KLdrowXcuCFDQ",
+        }
+    )
+
+    assert meta["is_saved"] is False
+    assert meta["benchmark_accounts"] == ["builderjosh", "pfif"]
+    assert meta["channel_id"] == "UCxj3eVTAv9KLdrowXcuCFDQ"

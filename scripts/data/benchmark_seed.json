@@ -1,0 +1,39 @@
+{
+    "_note": "SPEC _docs/specs/20260906_01 D8 의 25계정 시드. 동기화 스크립트가 후보 풀을 채울 때 쓰는 출발점이며, 사용자가 화면에서 바꾼 status·limit·memo 는 재실행해도 덮어쓰지 않는다.",
+    "_note_aliases": "aliases 는 수집 데이터에서 그 사람을 찾기 위한 탐색어다. 게시물 매칭에는 쓰지 않는다 - 매칭은 여기서 찾아낸 match_keys 로만 한다(SPEC D12). LinkedIn 저장글은 표시명이 영문이라 한글 이름으로는 안 잡힌다: 빌더 조쉬는 'Josh Kim', 이승필은 'Seungpil Lee', 이지인은 'Jiin (Jinny) Lee'다.",
+    "accounts": [
+        {"id": "fireship", "name": "Fireship", "group": "①해외원천", "purpose": "선점소재", "status": "active", "channels": {"youtube": "@Fireship"}},
+        {"id": "matthew_berman", "name": "Matthew Berman", "group": "①해외원천", "purpose": "선점소재", "status": "active", "channels": {"youtube": "@matthew_berman"}},
+        {"id": "two_minute_papers", "name": "Two Minute Papers", "group": "①해외원천", "purpose": "선점소재", "status": "active", "channels": {"youtube": "@TwoMinutePapers"}},
+        {"id": "lennys_podcast", "name": "Lenny's Podcast", "group": "①해외원천", "purpose": "선점소재", "status": "active", "channels": {"youtube": "@LennysPodcast"}},
+        {"id": "a16z", "name": "a16z", "group": "①해외원천", "purpose": "선점소재", "status": "active", "channels": {"youtube": "@a16z"}},
+
+        {"id": "heydi", "name": "헤이디", "group": "⑤실무활용", "purpose": "형식학습", "status": "active", "channels": {"youtube": "@헤이디"}},
+        {"id": "wooseokjin", "name": "우석지니", "group": "⑤실무활용", "purpose": "형식학습", "status": "active", "channels": {"youtube": "@wooseokjin"}},
+        {"id": "pptpro", "name": "피프", "group": "⑤실무활용", "purpose": "형식학습", "status": "active", "channels": {"youtube": "@pptpro"}},
+        {"id": "citizendev9c", "name": "시민개발자 구씨", "group": "⑤실무활용", "purpose": "형식학습", "status": "active", "channels": {"youtube": "@citizendev9c"}},
+        {"id": "jayychoii", "name": "Jay Choi", "group": "⑤실무활용", "purpose": "형식학습", "status": "active", "channels": {"youtube": "@jayychoii"}},
+
+        {"id": "builderjosh", "aliases": ["Josh Kim"], "name": "빌더 조쉬", "group": "③B2C", "purpose": "형식학습", "status": "active", "channels": {"youtube": "@builderjoshkim", "threads": "@joshproductletter", "linkedin": "uxjosh"}},
+        {"id": "jangpm", "name": "일잘러 장피엠", "group": "③B2C", "purpose": "형식학습", "status": "active", "channels": {"youtube": "@jangpm"}},
+
+        {"id": "chester_roh", "name": "노정석", "group": "7월실측복원", "purpose": "선점소재", "status": "off", "channels": {"youtube": "@chester_roh"}},
+        {"id": "sudoremove", "name": "sudoremove", "group": "7월실측복원", "purpose": "선점소재", "status": "off", "channels": {"youtube": "@sudoremove", "threads": "@sudo.gunn.kr"}},
+        {"id": "editorp89", "name": "편집자P", "group": "7월실측복원", "purpose": "형식학습", "status": "off", "channels": {"youtube": "@editorp89"}},
+        {"id": "yong_aiclass", "name": "김용성", "group": "7월실측복원", "purpose": "형식학습", "status": "off", "channels": {"youtube": "@yong_aiclass"}},
+
+        {"id": "kkongdon_story", "name": "꽁돈", "group": "④바이럴", "purpose": "형식학습", "status": "off", "channels": {"threads": "@kkongdon_story"}},
+        {"id": "yunjadong", "name": "윤자동", "group": "④바이럴", "purpose": "형식학습", "status": "off", "channels": {"youtube": "@yunjadong"}},
+        {"id": "gptaku_ai", "name": "지피타쿠", "group": "④바이럴", "purpose": "형식학습", "status": "off", "channels": {"threads": "@gptaku_ai"}},
+        {"id": "choi_openai", "name": "CHOI", "group": "④바이럴", "purpose": "형식학습", "status": "off", "channels": {"threads": "@choi.openai"}},
+        {"id": "marketer_ai_seulki", "name": "강슬기", "group": "④바이럴", "purpose": "형식학습", "status": "off", "channels": {"threads": "@marketer.ai.seulki"}},
+
+        {"id": "kook0526", "aliases": ["한성국"], "name": "한성국", "group": "②B2B", "purpose": "선점판정", "status": "off", "channels": {"threads": "@kook0526", "linkedin": "ACoAAEYsARgBdQazrHf4u7lcZ1nlSjTNE7YbpOs"}, "memo": "멀티채널 - §4는 링크드인만 적었으나 쓰레드에도 있다. LinkedIn 주소는 불투명 ID다"},
+        {"id": "minjung_kim", "aliases": ["Minjung Kim"], "name": "김민정", "group": "②B2B", "purpose": "선점판정", "status": "off", "channels": {"linkedin": "ACoAADk-HPIB9Dfu21FvR7IWiubg2RoPiyFq_PY"}, "memo": "LinkedIn 주소가 vanity slug 가 아니라 불투명 ID 다. 형태를 구분하지 않고 그대로 쓴다(SPEC D10)"},
+        {"id": "seungpil", "aliases": ["Seungpil Lee"], "name": "이승필", "group": "②B2B", "purpose": "선점판정", "status": "off", "channels": {"linkedin": "seungpil"}},
+
+        {"id": "jiin_jinny_lee", "aliases": ["Jiin (Jinny) Lee", "Jiin", "Jinny"], "name": "이지인", "group": "③B2C", "purpose": "형식학습", "status": "off", "channels": {"linkedin": "jiin-jinny-lee-15b4072b8"}},
+
+        {"id": "themodellers", "name": "themodellers", "group": "7월실측복원", "purpose": "형식학습", "status": "excluded", "channels": {"youtube": "@themodellers_korea"}, "memo": "2026-09-06 제외. 누적 9건이나 최근 저장이 2026-06-28로 2개월 이상 오래됐다. 수집 데이터에 9건이 남아 있어 excluded 로 명시하지 않으면 동기화마다 후보로 되살아난다"}
+    ]
+}

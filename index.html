@@ -479,7 +479,11 @@
         </header>
 
         <!-- Tab Navigation -->
-        <div class="flex gap-3 px-8 pt-4 border-b border-white/5 shrink-0">
+        <!-- overflow-x-auto: 좁은 창에서 탭이 잘려 누를 수 없게 되는 것을 막는다.
+             실측(2026-09-06) - 430px 뷰포트에서 탭 바 내부폭 364px 중 4개가 349px 를
+             써 여유가 15px 뿐이었다. 5번째 탭은 라벨을 줄여도 안 들어간다.
+             넓은 화면에서는 아무 변화가 없다. 계획: _docs/20260906_01 (P7) -->
+        <div class="flex gap-3 px-8 pt-4 border-b border-white/5 shrink-0 overflow-x-auto no-scrollbar">
           <button
             class="tab-btn active pb-3 text-base font-semibold border-b-2 border-primary text-white transition-all"
             data-target="tabTags"
@@ -499,7 +503,15 @@
             표시
           </button>
           <button
-            class="tab-btn pb-3 text-base font-semibold border-b-2 border-transparent text-gray-500 hover:text-gray-300 transition-all"
+            class="tab-btn pb-3 text-base font-semibold border-b-2 border-transparent text-gray-500 hover:text-gray-300 transition-all whitespace-nowrap"
+            data-target="tabBenchmark"
+          >
+            벤치마킹
+          </button>
+          <!-- 전체 크롤링은 되돌리기 어려운 조작이라 맨 끝에 둔다. 새 탭을 그 뒤에
+               붙이면 그 배치가 깨진다. 계획: _docs/20260906_01 (P7) -->
+          <button
+            class="tab-btn pb-3 text-base font-semibold border-b-2 border-transparent text-gray-500 hover:text-gray-300 transition-all whitespace-nowrap"
             data-target="tabMaintenance"
           >
             전체 크롤링
@@ -531,6 +543,34 @@
                 >
                 <input
                   id="hideOwnPostsToggle"
+                  type="checkbox"
+                  class="size-5 rounded accent-primary cursor-pointer"
+                />
+              </label>
+            </div>
+
+            <!-- 벤치마킹 표시. 기본은 꺼둔다 - 기본 화면이 남의 글로 덮이면
+                 내 북마크를 찾을 때마다 헤집게 된다. 계획: _docs/20260906_01 (A2) -->
+            <div class="flex flex-col gap-5 p-6 bg-white/5 rounded-[24px] border border-white/5 shrink-0">
+              <div class="flex flex-col gap-2">
+                <h3 class="text-xs font-bold text-gray-500 tracking-[0.1em] uppercase">
+                  Benchmark Posts
+                </h3>
+                <p class="text-sm text-gray-300 leading-relaxed">
+                  벤치마킹 계정에서 긁어온 글을 목록에 함께 보여줍니다. 기본은 꺼둡니다 —
+                  내가 저장한 글을 찾을 때 남의 글이 섞이지 않도록 합니다.
+                  켜면 카드에 <strong class="text-white">벤치마킹</strong> 표시가 붙습니다.
+                </p>
+              </div>
+              <label
+                for="showBenchmarkPostsToggle"
+                class="flex items-center justify-between gap-4 cursor-pointer select-none"
+              >
+                <span class="text-sm font-medium text-white"
+                  >목록에 벤치마킹 글 함께 보기</span
+                >
+                <input
+                  id="showBenchmarkPostsToggle"
                   type="checkbox"
                   class="size-5 rounded accent-primary cursor-pointer"
                 />
@@ -596,6 +636,55 @@
             </div>
             <p id="noTagsFound" class="hidden p-12 text-center text-gray-500 italic text-sm">
               검색 결과가 없습니다.
+            </p>
+          </div>
+        </div>
+
+        <!-- Tab Content: Benchmark Accounts. 계획: _docs/20260906_01 (P3) -->
+        <div
+          id="tabBenchmark"
+          class="tab-pane hidden flex-1 flex flex-col overflow-hidden"
+        >
+          <div class="p-6 border-b border-white/5 bg-black/20 shrink-0">
+            <div class="flex items-center gap-3">
+              <div class="relative group flex-1">
+                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                  <span class="material-symbols-outlined text-gray-500 text-sm">search</span>
+                </div>
+                <input
+                  id="benchmarkSearchInput"
+                  type="text"
+                  placeholder="계정 검색..."
+                  class="block w-full pl-9 pr-3 py-2 rounded-xl bg-black/40 border border-white/10 text-sm focus:border-primary/50 outline-none transition-all"
+                />
+              </div>
+              <button
+                id="addBenchmarkBtn"
+                class="flex items-center gap-2 px-4 py-2 rounded-xl bg-primary hover:bg-primary-hover text-white text-xs font-bold border border-primary/30 transition-all active:scale-95"
+              >
+                <span class="material-symbols-outlined text-[18px]">add</span>
+                계정
+              </button>
+              <button
+                id="toggleExcludedBtn"
+                class="flex items-center gap-2 px-4 py-2 rounded-xl bg-white/5 hover:bg-white/10 text-white text-xs font-bold border border-white/10 transition-all"
+              >
+                <span class="material-symbols-outlined text-[18px]">visibility_off</span>
+                제외한 계정
+              </button>
+            </div>
+            <p class="text-xs text-gray-400 mt-2">
+              켠 계정의 글이 목록에 함께 나옵니다. 끄면 그 계정으로만 들어온 글이 숨겨지고,
+              <strong class="text-white">내가 저장했던 글은 그대로 남습니다.</strong>
+            </p>
+            <p id="benchmarkStatusMessage" class="text-xs text-gray-300 mt-2 hidden"></p>
+          </div>
+          <div class="flex-1 overflow-y-auto p-8 no-scrollbar">
+            <div id="benchmarkAccountList" class="flex flex-col gap-3">
+              <!-- Benchmark account rows will be injected here -->
+            </div>
+            <p id="noBenchmarkAccounts" class="hidden p-12 text-center text-gray-500 italic text-sm">
+              등록된 벤치마킹 계정이 없습니다.
             </p>
           </div>
         </div>

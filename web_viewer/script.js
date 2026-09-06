@@ -181,6 +181,19 @@ function getInitialHideOwnPosts() {
     }
 }
 
+const SHOW_BENCHMARK_POSTS_STORAGE_KEY = 'sns_show_benchmark_posts';
+
+function getInitialShowBenchmarkPosts() {
+    try {
+        const stored = localStorage.getItem(SHOW_BENCHMARK_POSTS_STORAGE_KEY);
+        // 저장값이 없으면 꺼짐. hideOwnPostsToggle 과 반대 방향의 기본값이다 -
+        // 남의 글은 명시적으로 켜야 보인다. 계획: _docs/20260906_01 (A2)
+        return stored === null ? false : stored === 'true';
+    } catch (error) {
+        return false;
+    }
+}
+
 const SORT_STORAGE_KEY = 'sns_sort_order';
 const SORT_DATE_MIGRATION_KEY = 'sns_sort_order_date_migrated';
 const DEFAULT_SORT_ORDER = 'saved';
@@ -251,6 +264,11 @@ document.addEventListener('DOMContentLoaded', () => {
     clearLegacyOwnPostsOnly();
     let showOwnPostsOnly = false;
     let hideOwnPostsInAll = getInitialHideOwnPosts();
+    // 벤치마킹 계정 목록과 표시 토글. 토글 기본값은 꺼짐이다 - 기본 화면이
+    // 남의 글로 덮이면 내 북마크를 찾을 때마다 헤집게 된다.
+    // 계획: _docs/20260906_01 (A2, D9)
+    let benchmarkAccounts = [];
+    let showBenchmarkPosts = getInitialShowBenchmarkPosts();
     let searchQuery = '';
     const selectedPosts = new Set();
     let _searchTimer = null;
@@ -481,6 +499,31 @@ document.addEventListener('DOMContentLoaded', () => {
             hideOwnPostsInAll = hideOwnPostsToggle.checked;
             try {
                 localStorage.setItem(HIDE_OWN_POSTS_STORAGE_KEY, hideOwnPostsInAll ? 'true' : 'false');
+            } catch (error) {
+                // 저장 실패는 이번 세션 동작을 막지 않는다.
+            }
+            clearSelection();
+            if (searchQuery) {
+                void runServerSearch(searchQuery);
+                return;
+            }
+            renderPosts();
+        });
+    }
+
+    // 목록에 벤치마킹 글 함께 보기. 기본은 꺼짐이다.
+    // 계획: _docs/20260906_01 (A2, P6)
+    const showBenchmarkPostsToggle = document.getElementById('showBenchmarkPostsToggle');
+    if (showBenchmarkPostsToggle) {
+        showBenchmarkPostsToggle.checked = showBenchmarkPosts;
+
+        showBenchmarkPostsToggle.addEventListener('change', () => {
+            showBenchmarkPosts = showBenchmarkPostsToggle.checked;
+            try {
+                localStorage.setItem(
+                    SHOW_BENCHMARK_POSTS_STORAGE_KEY,
+                    showBenchmarkPosts ? 'true' : 'false'
+                );
             } catch (error) {
                 // 저장 실패는 이번 세션 동작을 막지 않는다.
             }
@@ -2152,12 +2195,16 @@ ${item.body}
 
         try {
             const params = new URLSearchParams({ sort: getServerSortParam() });
-            const [postsRes, tagsRes, catalogRes, userMetadataRes, externalSummariesRes] = await Promise.all([
+            const [postsRes, tagsRes, catalogRes, userMetadataRes, externalSummariesRes, benchmarkRes] = await Promise.all([
                 fetch(`/api/posts?${params.toString()}`),
                 fetch('/api/get-tags'),
                 fetch('/api/get-tag-catalog'),
                 fetch('/api/get-user-metadata'),
                 fetch('/api/get-external-summaries'),
+                // 계정 목록이 없으면 벤치마킹 글의 표시 여부를 판정할 수 없다.
+                // 실패해도 빈 목록으로 계속 간다 - 그러면 벤치마킹 글만 안 보이고
+                // 내 저장글은 그대로 나온다. 계획: _docs/20260906_01 (D9)
+                fetch('/api/get-benchmark-accounts'),
             ]);
 
             if (!postsRes.ok) {
@@ -2173,6 +2220,9 @@ ${item.body}
             externalSummaries = externalSummariesRes.ok
                 ? ((await externalSummariesRes.json()).items || {})
                 : {};
+            benchmarkAccounts = benchmarkRes.ok
+                ? ((await benchmarkRes.json()).accounts || [])
+                : [];
 
             Object.assign(postTags, serverTags);
             Object.keys(postTags).forEach((url) => {
@@ -2291,6 +2341,10 @@ ${item.body}
                 platform: getServerPlatformFilter(currentFilter),
                 sort: getServerSortParam(),
                 limit: '500',
+                // 서버가 500건으로 자르기 전에 걸러야 한다. 여기서 안 넘기면
+                // 벤치마킹을 꺼둔 상태에서 광범위 검색 시 내 저장글이 예전보다
+                // 덜 나온다. 계획: _docs/20260906_01 (M2)
+                include_benchmark: showBenchmarkPosts ? 'true' : 'false',
             });
             const response = await fetch(`/api/search?${params.toString()}`, {
                 signal: controller.signal,
@@ -2375,8 +2429,41 @@ ${item.body}
             const matchesOwn = showOwnPostsOnly
                 ? isOwnPost(post)
                 : !(hideOwnPostsInAll && isOwnPost(post));
-            return matchesFilter && matchesTag && matchesVisibility && matchesAuthor && matchesOwn;
+            return matchesFilter && matchesTag && matchesVisibility && matchesAuthor
+                && matchesOwn && isBenchmarkVisible(post);
         });
+    }
+
+    /**
+     * 벤치마킹 글의 표시 여부. 숨김 상태를 저장하지 않고 렌더 시점에 파생시킨다.
+     *
+     *     보임 = is_saved OR (benchmark_accounts 중 status == "active")
+     *
+     * 기존 숨김 기능(Hidden 탭)에 태우면 세 군데가 샌다 - 자동 숨김 수십 건이
+     * 쏟아져 사용자가 손으로 숨긴 글이 묻히고, 거기서 숨김 해제하면 "계정은
+     * 꺼졌는데 글은 보이는" 모순이 생기며, 재활성 시 원래 숨겼던 것까지 되살아난다.
+     * 파생 방식이면 "다시 켜면 다시 보인다"가 구현 대상이 아니라 자동 결과가 된다.
+     * 계획: _docs/20260906_01 (D9)
+     */
+    function isBenchmarkVisible(post) {
+        // 내 저장글은 어떤 상태에서도 계속 보인다(R8). 필드가 없는 레거시
+        // 레코드도 여기로 떨어진다 - 서버가 기본값 true 를 채워 보낸다.
+        if (post?.is_saved !== false) return true;
+        if (!showBenchmarkPosts) return false;
+        const tags = post?.benchmark_accounts || [];
+        if (!tags.length) return false;
+        return tags.some((accountId) => {
+            const account = benchmarkAccounts.find((a) => a.id === accountId);
+            return account?.status === 'active';
+        });
+    }
+
+    /** 이 글을 가리키는 켜진 벤치마킹 계정 이름들. 카드 배지에 쓴다. */
+    function activeBenchmarkNames(post) {
+        return (post?.benchmark_accounts || [])
+            .map((accountId) => benchmarkAccounts.find((a) => a.id === accountId))
+            .filter((account) => account && account.status === 'active')
+            .map((account) => account.name || account.id);
     }
 
     function buildAuthorKey(post) {
@@ -2631,6 +2718,26 @@ ${item.body}
                    class="external-summary-badge external-summary-badge--${service.tone}"
                    title="${service.label}" aria-label="${service.label}">${service.badge}</a>`)
             .join('');
+    }
+
+    /**
+     * 벤치마킹 배지. 외부 요약 배지와 같은 pill 규격을 쓴다.
+     *
+     * A8 확정으로 벤치마킹 글에도 AI 요약이 붙는다 - 본문만 보면 내 저장글과
+     * 구별되지 않으므로 이 배지가 유일한 구분 수단이다. 누락되면 치명 결함이다.
+     * 계획: _docs/20260906_01 (P6, P7)
+     *
+     * 푸터 폭 실측(2026-09-06): 카드 448px · 푸터 414px · 현재 사용 120px.
+     * 배지 3개가 겹치는 카드는 2건뿐이고 여유 294px 안에 들어간다.
+     */
+    function buildBenchmarkBadge(post) {
+        if (post?.is_saved !== false) return '';
+        const names = activeBenchmarkNames(post);
+        if (!names.length) return '';
+        const title = `벤치마킹 계정 수집분 - ${names.join(', ')}`;
+        return `<span class="external-summary-badge external-summary-badge--benchmark"
+                      data-benchmark-badge="1"
+                      title="${escapeHtml(title)}" aria-label="${escapeHtml(title)}">벤치마킹</span>`;
     }
 
     function buildCopyText(post) {
@@ -3410,6 +3517,7 @@ ${item.body}
                 <span class="note-open-label">+note</span>
             </button>
             <div class="footer-links ml-auto flex items-center gap-1">
+                ${buildBenchmarkBadge(post)}
                 ${buildExternalSummaryLinks(post)}
                 <a href="${escapeHtml(postUrl || '#')}" target="_blank" rel="noopener"
                    class="footer-link-btn hover:text-primary transition-colors"
@@ -3664,15 +3772,405 @@ ${item.body}
         if (targetId === 'tabTags') {
             renderTagManagementList();
         }
+        if (targetId === 'tabBenchmark') {
+            renderBenchmarkAccountList();
+        }
     }
 
     document.querySelectorAll('.tab-btn').forEach(btn => {
         btn.addEventListener('click', () => switchTab(btn.dataset.target));
     });
 
+    bindBenchmarkTab();
+
     const tagSearchInput = document.getElementById('tagSearchInput');
     if (tagSearchInput) {
         tagSearchInput.addEventListener('input', () => renderTagManagementList());
+    }
+
+    // ------------------------------------------------------- 벤치마킹 계정
+    // 계정 관리는 두 층이다 - 후보 풀은 코드(scripts/sync_benchmark_accounts.py)가
+    // 채우고, 여기서는 켜고 끄기만 한다. 계획: _docs/20260906_01 (P3)
+
+    const BENCHMARK_PURPOSES = ['선점소재', '선점판정', '형식학습', '알림'];
+    // 지금 계정 단위 수집이 되는 플랫폼. 이 구분을 화면에 안 보여주면
+    // "등록했는데 왜 0건이냐"가 된다(SPEC D11).
+    const BENCHMARK_COLLECTABLE = new Set(['youtube', 'linkedin']);
+    const BENCHMARK_PLATFORMS = ['youtube', 'threads', 'linkedin', 'x'];
+
+    let benchmarkExpandedId = null;
+    let benchmarkShowExcluded = false;
+    let benchmarkCandidatesCollapsed = true;
+
+    function setBenchmarkStatusMessage(message) {
+        const el = document.getElementById('benchmarkStatusMessage');
+        if (!el) return;
+        el.textContent = message || '';
+        el.classList.toggle('hidden', !message);
+    }
+
+    async function loadBenchmarkAccounts() {
+        try {
+            const response = await fetch('/api/get-benchmark-accounts');
+            if (!response.ok) return;
+            const data = await response.json();
+            benchmarkAccounts = Array.isArray(data?.accounts) ? data.accounts : [];
+        } catch (error) {
+            console.error('Failed to load benchmark accounts:', error);
+            benchmarkAccounts = [];
+        }
+    }
+
+    async function saveBenchmarkAccounts() {
+        const response = await fetch('/api/save-benchmark-accounts', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ accounts: benchmarkAccounts }),
+        });
+        const result = await response.json().catch(() => ({}));
+        if (!response.ok || result.status === 'error') {
+            throw new Error(result.message || '저장에 실패했습니다.');
+        }
+    }
+
+    /** 이 계정으로만 들어온 글 수. 끄기 경고에 쓰는 실제 숫자다. */
+    function countBenchmarkOnlyPosts(accountId) {
+        return allPosts.filter((post) => {
+            if (post?.is_saved !== false) return false;
+            return (post?.benchmark_accounts || []).includes(accountId);
+        }).length;
+    }
+
+    function benchmarkChannelBadges(account) {
+        return BENCHMARK_PLATFORMS
+            .filter((platform) => account?.channels?.[platform])
+            .map((platform) => {
+                const collectable = BENCHMARK_COLLECTABLE.has(platform);
+                const title = collectable
+                    ? `${platform} - 지금 수집됩니다`
+                    : `${platform} - 주소는 등록되지만 계정 단위 수집기가 아직 없어 수집되지 않습니다`;
+                return `<span class="bm-chan ${collectable ? 'bm-chan--collectable' : ''}" title="${escapeHtml(title)}">${escapeHtml(platform)}</span>`;
+            })
+            .join('');
+    }
+
+    function benchmarkDetailHtml(account) {
+        const channelInputs = BENCHMARK_PLATFORMS.map((platform) => `
+            <label>${escapeHtml(platform)} 주소
+                <input type="text" data-bm-channel="${platform}"
+                       value="${escapeHtml(account.channels?.[platform] || '')}"
+                       placeholder="${platform === 'youtube' ? '@handle' : '주소'}">
+            </label>`).join('');
+        const purposeOptions = BENCHMARK_PURPOSES.map((purpose) => `
+            <option value="${escapeHtml(purpose)}" ${account.purpose === purpose ? 'selected' : ''}>${escapeHtml(purpose)}</option>`).join('');
+        return `
+            <div class="bm-detail">
+                ${channelInputs}
+                <label>목적
+                    <select data-bm-field="purpose">${purposeOptions}</select>
+                </label>
+                <label>편수 (플랫폼당)
+                    <input type="number" min="1" max="500" data-bm-field="limit" value="${Number(account.limit) || 5}">
+                </label>
+                <label style="grid-column: 1 / -1;">메모
+                    <input type="text" data-bm-field="memo" value="${escapeHtml(account.memo || '')}">
+                </label>
+            </div>
+            <div class="flex items-center justify-end gap-2 pt-1">
+                <span class="bm-account-sub" data-bm-verify-result></span>
+                <button class="px-3 py-1.5 rounded-lg bg-white/5 hover:bg-white/10 text-white text-xs font-bold border border-white/10" data-bm-action="verify">주소 확인</button>
+                <button class="px-3 py-1.5 rounded-lg bg-primary hover:bg-primary-hover text-white text-xs font-bold border border-primary/30" data-bm-action="save">저장</button>
+            </div>`;
+    }
+
+    function buildBenchmarkRow(account) {
+        const item = document.createElement('div');
+        item.className = 'bm-account-item';
+        if (account.status === 'excluded') item.classList.add('bm-account-item--excluded');
+        item.dataset.bmId = account.id;
+
+        const expanded = benchmarkExpandedId === account.id;
+        const savedNote = account.saved_count
+            ? `내 저장글 ${account.saved_count}건 · 최근 ${escapeHtml(account.last_saved_at || '-')}`
+            : '내 저장글 없음';
+        const excludedControl = account.status === 'excluded'
+            ? `<button class="p-1.5 rounded-lg hover:bg-white/10 text-gray-400 hover:text-primary" data-bm-action="restore" title="후보로 되돌리기"><span class="material-symbols-outlined text-[20px]">undo</span></button>`
+            : `<button class="p-1.5 rounded-lg hover:bg-white/10 text-gray-400 hover:text-red-400" data-bm-action="exclude" title="후보에서 빼기 (데이터는 지우지 않습니다)"><span class="material-symbols-outlined text-[20px]">block</span></button>`;
+
+        item.innerHTML = `
+            <div class="bm-account-head">
+                <input type="checkbox" class="size-5 rounded accent-primary cursor-pointer shrink-0"
+                       data-bm-action="toggle" ${account.status === 'active' ? 'checked' : ''}
+                       ${account.status === 'excluded' ? 'disabled' : ''}
+                       title="켜면 이 계정의 글이 목록에 함께 나옵니다">
+                <div class="min-w-0 flex-1">
+                    <div class="bm-account-name truncate">${escapeHtml(account.name || account.id)}</div>
+                    <div class="bm-account-sub truncate">${escapeHtml(account.group || '')} · ${savedNote}</div>
+                </div>
+                <div class="flex items-center gap-1 shrink-0">${benchmarkChannelBadges(account)}</div>
+                <div class="flex items-center gap-1 shrink-0">
+                    <button class="p-1.5 rounded-lg hover:bg-white/10 text-gray-400" data-bm-action="expand" title="상세 편집">
+                        <span class="material-symbols-outlined text-[20px]">${expanded ? 'expand_less' : 'expand_more'}</span>
+                    </button>
+                    ${excludedControl}
+                </div>
+            </div>
+            ${expanded ? benchmarkDetailHtml(account) : ''}`;
+        return item;
+    }
+
+    function renderBenchmarkAccountList() {
+        const listContainer = document.getElementById('benchmarkAccountList');
+        const emptyState = document.getElementById('noBenchmarkAccounts');
+        if (!listContainer) return;
+
+        const query = (document.getElementById('benchmarkSearchInput')?.value || '').toLowerCase();
+        const matches = (account) => !query
+            || String(account.name || '').toLowerCase().includes(query)
+            || String(account.id || '').toLowerCase().includes(query)
+            || Object.values(account.channels || {}).some((v) => String(v).toLowerCase().includes(query));
+
+        const visible = benchmarkAccounts.filter(matches);
+        const active = visible.filter((a) => a.status === 'active');
+        const off = visible.filter((a) => a.status === 'off');
+        const excluded = visible.filter((a) => a.status === 'excluded');
+
+        listContainer.innerHTML = '';
+
+        // 후보 25개가 늘 펼쳐져 있으면 목록으로 못 쓴다. 대상과 후보를 갈라
+        // 후보는 접어 두고 개수만 보여준다. 계획: _docs/20260906_01 (P7)
+        const addSection = (title, accounts, options = {}) => {
+            if (!accounts.length) return;
+            const heading = document.createElement('div');
+            heading.className = 'bm-section-title';
+            if (options.collapsible) {
+                heading.style.cursor = 'pointer';
+                heading.dataset.bmSection = options.key;
+                heading.textContent = `${title} ${accounts.length} ${options.collapsed ? '▸' : '▾'}`;
+            } else {
+                heading.textContent = `${title} ${accounts.length}`;
+            }
+            listContainer.appendChild(heading);
+            if (options.collapsed) return;
+            accounts.forEach((account) => listContainer.appendChild(buildBenchmarkRow(account)));
+        };
+
+        addSection('수집 대상', active);
+        addSection('후보', off, {
+            collapsible: true,
+            collapsed: benchmarkCandidatesCollapsed && !query,
+            key: 'candidates',
+        });
+        if (benchmarkShowExcluded) addSection('제외한 계정', excluded);
+
+        const nothing = !visible.length || (!active.length && !off.length && !benchmarkShowExcluded);
+        if (emptyState) {
+            emptyState.classList.toggle('hidden', !nothing);
+            emptyState.textContent = query
+                ? '검색 결과가 없습니다.'
+                : '등록된 벤치마킹 계정이 없습니다. scripts/sync_benchmark_accounts.py 를 돌리면 후보가 채워집니다.';
+        }
+    }
+
+    async function persistBenchmarkChange(action) {
+        try {
+            await action();
+            await saveBenchmarkAccounts();
+            renderBenchmarkAccountList();
+            renderPosts();
+        } catch (error) {
+            console.error('Failed to save benchmark accounts:', error);
+            alert(error.message || '벤치마킹 계정 저장에 실패했습니다.');
+            await loadBenchmarkAccounts();
+            renderBenchmarkAccountList();
+        }
+    }
+
+    function bindBenchmarkTab() {
+        const listContainer = document.getElementById('benchmarkAccountList');
+        const searchInput = document.getElementById('benchmarkSearchInput');
+        const excludedBtn = document.getElementById('toggleExcludedBtn');
+        const addBtn = document.getElementById('addBenchmarkBtn');
+
+        if (searchInput) {
+            searchInput.addEventListener('input', () => renderBenchmarkAccountList());
+        }
+        if (excludedBtn) {
+            excludedBtn.addEventListener('click', () => {
+                benchmarkShowExcluded = !benchmarkShowExcluded;
+                excludedBtn.classList.toggle('bg-white/10', benchmarkShowExcluded);
+                renderBenchmarkAccountList();
+            });
+        }
+        if (addBtn) {
+            addBtn.addEventListener('click', async () => {
+                const name = prompt('계정 이름을 입력하세요.');
+                if (!name || !name.trim()) return;
+                const id = `manual_${Date.now()}`;
+                await persistBenchmarkChange(() => {
+                    benchmarkAccounts.push({
+                        id,
+                        name: name.trim(),
+                        group: '직접 추가',
+                        status: 'off',
+                        purpose: '형식학습',
+                        limit: 5,
+                        channels: {},
+                        match_keys: {},
+                        collectable: [],
+                        unverified: [],
+                        memo: '',
+                        saved_count: 0,
+                        last_saved_at: '',
+                        sources: ['manual'],
+                    });
+                    benchmarkExpandedId = id;
+                    // 새 계정은 status:off 라 후보 섹션에 들어간다. 그 섹션이
+                    // 접혀 있으면 방금 추가한 계정이 화면에 안 나타나 "추가가
+                    // 안 됐나" 하게 된다. 추가할 때는 펼쳐 준다.
+                    benchmarkCandidatesCollapsed = false;
+                });
+                setBenchmarkStatusMessage('계정을 추가했습니다. 주소를 넣고 「주소 확인」을 누르세요.');
+            });
+        }
+        if (!listContainer) return;
+
+        listContainer.addEventListener('click', async (event) => {
+            const sectionHeading = event.target.closest('[data-bm-section]');
+            if (sectionHeading) {
+                benchmarkCandidatesCollapsed = !benchmarkCandidatesCollapsed;
+                renderBenchmarkAccountList();
+                return;
+            }
+
+            const trigger = event.target.closest('[data-bm-action]');
+            if (!trigger) return;
+            const row = trigger.closest('[data-bm-id]');
+            if (!row) return;
+            const accountId = row.dataset.bmId;
+            const account = benchmarkAccounts.find((a) => a.id === accountId);
+            if (!account) return;
+            const action = trigger.dataset.bmAction;
+
+            if (action === 'expand') {
+                benchmarkExpandedId = benchmarkExpandedId === accountId ? null : accountId;
+                renderBenchmarkAccountList();
+                return;
+            }
+
+            if (action === 'toggle') {
+                const turningOff = account.status === 'active';
+                if (turningOff) {
+                    // 끌 때 사라지는 건수를 숫자로 알린다. 안 알리면 글이 조용히
+                    // 사라진 것처럼 보인다. 계획: _docs/20260906_01 (D1)
+                    const hidden = countBenchmarkOnlyPosts(accountId);
+                    const ok = confirm(
+                        `「${account.name}」을 끄면 이 계정으로만 들어온 ${hidden}건이 안 보이게 됩니다.\n`
+                        + '내가 저장했던 글은 그대로 남고, 다시 켜면 되살아납니다.\n\n계속할까요?'
+                    );
+                    if (!ok) {
+                        trigger.checked = true;
+                        return;
+                    }
+                }
+                await persistBenchmarkChange(() => {
+                    account.status = turningOff ? 'off' : 'active';
+                    if (turningOff) {
+                        // 끄면 이 계정이 「수집 대상」에서 「후보」로 옮겨간다.
+                        // 후보가 접혀 있으면 방금 끈 계정이 화면에서 사라져
+                        // 「다시 켜기」로 가는 길이 막힌다 - 끄기와 켜기가
+                        // 비대칭이 된다. 끌 때는 후보를 펼쳐 둔다.
+                        benchmarkCandidatesCollapsed = false;
+                    }
+                });
+                return;
+            }
+
+            if (action === 'exclude') {
+                const hidden = countBenchmarkOnlyPosts(accountId);
+                const ok = confirm(
+                    `「${account.name}」을 후보에서 뺍니다.\n`
+                    + `이 계정으로만 들어온 ${hidden}건이 안 보이게 되고, 후보 목록에서도 사라집니다.\n`
+                    + '데이터는 지우지 않으며 「제외한 계정」에서 되돌릴 수 있습니다.\n\n계속할까요?'
+                );
+                if (!ok) return;
+                await persistBenchmarkChange(() => { account.status = 'excluded'; });
+                setBenchmarkStatusMessage(`「${account.name}」을 후보에서 뺐습니다. 「제외한 계정」에서 되돌릴 수 있습니다.`);
+                return;
+            }
+
+            if (action === 'restore') {
+                await persistBenchmarkChange(() => { account.status = 'off'; });
+                setBenchmarkStatusMessage(`「${account.name}」을 후보로 되돌렸습니다.`);
+                return;
+            }
+
+            if (action === 'verify') {
+                const resultEl = row.querySelector('[data-bm-verify-result]');
+                const handleInput = row.querySelector('[data-bm-channel="youtube"]');
+                const handle = (handleInput?.value || '').trim();
+                if (!handle) {
+                    if (resultEl) resultEl.textContent = '유튜브 주소를 먼저 넣으세요.';
+                    return;
+                }
+                if (resultEl) resultEl.textContent = '확인 중...';
+                try {
+                    const response = await fetch(
+                        `/api/verify-channel?platform=youtube&handle=${encodeURIComponent(handle)}`
+                    );
+                    const data = await response.json();
+                    if (data.ok) {
+                        if (resultEl) {
+                            resultEl.textContent = `확인됨: ${data.title} · 구독 ${Number(data.subscriber_count || 0).toLocaleString()}`;
+                        }
+                        row.dataset.bmVerifiedChannelId = data.channel_id || '';
+                    } else if (resultEl) {
+                        resultEl.textContent = data.reason === 'not_found'
+                            ? '그런 채널이 없습니다. 주소를 확인하세요.'
+                            : `확인 실패 (${data.reason})`;
+                        row.dataset.bmVerifiedChannelId = '';
+                    }
+                } catch (error) {
+                    if (resultEl) resultEl.textContent = '확인 중 오류가 발생했습니다.';
+                }
+                return;
+            }
+
+            if (action === 'save') {
+                const resultEl = row.querySelector('[data-bm-verify-result]');
+                const nextChannels = {};
+                BENCHMARK_PLATFORMS.forEach((platform) => {
+                    const value = (row.querySelector(`[data-bm-channel="${platform}"]`)?.value || '').trim();
+                    if (value) nextChannels[platform] = value;
+                });
+
+                // 확인을 통과하지 않은 유튜브 주소는 넣지 않는다. 통과한 것만
+                // 목록에 들어가야 「돌려봐야 안다」가 없어진다(SPEC D10 · R7).
+                const youtubeChanged = nextChannels.youtube
+                    && nextChannels.youtube !== (account.channels?.youtube || '');
+                const verifiedChannelId = row.dataset.bmVerifiedChannelId || '';
+                if (youtubeChanged && !verifiedChannelId) {
+                    if (resultEl) resultEl.textContent = '유튜브 주소는 「주소 확인」을 통과해야 저장됩니다.';
+                    return;
+                }
+
+                await persistBenchmarkChange(() => {
+                    account.channels = nextChannels;
+                    account.purpose = row.querySelector('[data-bm-field="purpose"]')?.value || account.purpose;
+                    account.limit = Number(row.querySelector('[data-bm-field="limit"]')?.value) || 5;
+                    account.memo = row.querySelector('[data-bm-field="memo"]')?.value || '';
+                    account.collectable = Object.keys(nextChannels).filter((p) => BENCHMARK_COLLECTABLE.has(p)).sort();
+                    if (verifiedChannelId) {
+                        account.match_keys = account.match_keys || {};
+                        const keys = new Set(account.match_keys.youtube || []);
+                        keys.add(verifiedChannelId);
+                        account.match_keys.youtube = Array.from(keys).sort();
+                    }
+                    benchmarkExpandedId = null;
+                });
+                setBenchmarkStatusMessage('저장했습니다.');
+            }
+        });
     }
 
     function getTagUsageCounts() {

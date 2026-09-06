@@ -30,6 +30,7 @@ OUTPUT_THREADS_DIR = os.path.join(PROJECT_ROOT, "output_threads", "python")
 OUTPUT_LINKEDIN_DIR = os.path.join(PROJECT_ROOT, "output_linkedin", "python")
 OUTPUT_TWITTER_DIR = os.path.join(PROJECT_ROOT, "output_twitter", "python")
 OUTPUT_YOUTUBE_DIR = os.path.join(PROJECT_ROOT, "output_youtube", "python")
+OUTPUT_YOUTUBE_BENCHMARK_DIR = os.path.join(PROJECT_ROOT, "output_youtube_user", "python")
 # 내 게시물 전용 출력. 저장글(output_linkedin)과 분리해 consumer 웨이브의
 # 쓰기 경합을 막는다. 계획: _docs/20260826_03 (3.4.1)
 OUTPUT_LINKEDIN_OWN_DIR = os.path.join(PROJECT_ROOT, "output_linkedin_own", "python")
@@ -541,10 +542,16 @@ def merge_results():
     # 여기서 읽지 않으면 통합본에서 영구 누락된다.
     latest_own = find_latest_full_file(OUTPUT_LINKEDIN_OWN_DIR, "linkedin_own_full_*.json")
     latest_threads_own = find_latest_full_file(OUTPUT_THREADS_OWN_DIR, "threads_own_full_*.json")
+    # 벤치마킹 계정 수집분. 저장글과 별도 파일에 산다(계획 _docs/20260906_01 D13).
+    # 여기서 읽지 않으면 통합본에 영원히 안 들어간다 - linkedin_own 과 같은 함정이다.
+    latest_youtube_bm = find_latest_full_file(
+        OUTPUT_YOUTUBE_BENCHMARK_DIR, "youtube_user_full_*.json"
+    )
 
     if (
         not latest_threads and not latest_linkedin and not latest_twitter
         and not latest_youtube and not latest_own and not latest_threads_own
+        and not latest_youtube_bm
     ):
         print("❌ 병합 가능한 Full 파일을 찾을 수 없습니다.")
         return None, 0, 0, 0, 0
@@ -580,6 +587,7 @@ def merge_results():
     youtube_data = load_json(latest_youtube) if latest_youtube else {}
     own_data = load_json(latest_own) if latest_own else {}
     threads_own_data = load_json(latest_threads_own) if latest_threads_own else {}
+    youtube_bm_data = load_json(latest_youtube_bm) if latest_youtube_bm else {}
 
     own_posts = own_data.get('posts', []) if isinstance(own_data, dict) else own_data
     threads_own_posts = (
@@ -589,6 +597,9 @@ def merge_results():
     linkedin_posts = linkedin_data.get('posts', []) if isinstance(linkedin_data, dict) else linkedin_data
     twitter_posts = twitter_data.get('posts', []) if isinstance(twitter_data, dict) else twitter_data
     youtube_posts = youtube_data.get('posts', []) if isinstance(youtube_data, dict) else youtube_data
+    youtube_bm_posts = (
+        youtube_bm_data.get('posts', []) if isinstance(youtube_bm_data, dict) else youtube_bm_data
+    )
     threads_posts = [
         post
         for post in threads_posts
@@ -608,6 +619,11 @@ def merge_results():
     for p in youtube_posts:
         p['sns_platform'] = 'youtube'
         p['platform_sequence_id'] = p.get('sequence_id', 0)
+    for p in youtube_bm_posts:
+        p['sns_platform'] = 'youtube'
+        p['platform_sequence_id'] = p.get('sequence_id', 0)
+        # 수집기가 이미 심지만, 레거시 파일이 섞여도 꺼지지 않게 고정한다.
+        p['is_saved'] = False
     for p in own_posts:
         p['sns_platform'] = 'linkedin'
         p['platform_sequence_id'] = p.get('sequence_id', 0)
@@ -632,27 +648,75 @@ def merge_results():
     # 내 게시물을 앞에 둔다. 같은 activity 가 저장글에도 있으면 중복 제거가
     # 먼저 나온 쪽을 남기는데, 내 글 레코드가 노출수와 is_own_post 를 갖고 있어
     # 더 풍부하다. 뒤에 두면 그 정보가 조용히 버려진다.
+    #
+    # 벤치마킹 수집분은 맨 뒤다. 기존 저장글이 더 풍부하고(source·태그 기준 키·
+    # is_own_post), 앞에 두면 그게 조용히 버려진다. 대신 아래 루프가 버리기 직전에
+    # 표식만 기존 레코드로 옮긴다 - drop 이 아니라 필드 병합이다.
+    # 계획: _docs/20260906_01 (D4-C, D13)
     all_posts = (
         own_posts + threads_own_posts
         + threads_posts + linkedin_posts + twitter_posts + youtube_posts
+        + youtube_bm_posts
     )
+
+    # pid → 살아남은 레코드. 중복으로 버려질 레코드의 표식을 여기로 옮긴다.
+    kept_by_id = {}
+    kept_by_pk = {}
+    benchmark_marks_merged = 0
+    is_saved_marks_merged = 0
+
+    def _absorb_benchmark_mark(survivor, dropped):
+        """버려지는 레코드의 벤치마킹 표식을 살아남은 레코드에 얹는다.
+
+        양방향이다.
+          - 벤치마킹 → 기존 저장글 : benchmark_accounts 를 합친다(R5)
+          - 저장글 → 기존 벤치마킹 : is_saved 를 True 로 올린다(D9-나)
+        한쪽만 만들면 「벤치마킹 글을 나중에 북마크」가 조용히 사라진다.
+        """
+        nonlocal benchmark_marks_merged, is_saved_marks_merged
+
+        incoming = dropped.get('benchmark_accounts') or []
+        if incoming:
+            current = list(survivor.get('benchmark_accounts') or [])
+            merged_ids = sorted(set(current) | set(incoming))
+            if merged_ids != current:
+                survivor['benchmark_accounts'] = merged_ids
+                benchmark_marks_merged += 1
+
+        # 어느 쪽이든 한 번이라도 저장글이었으면 저장글이다.
+        if dropped.get('is_saved') is not False and survivor.get('is_saved') is False:
+            survivor['is_saved'] = True
+            is_saved_marks_merged += 1
+
+        if dropped.get('channel_id') and not survivor.get('channel_id'):
+            survivor['channel_id'] = dropped['channel_id']
 
     for p in all_posts:
         pid = str(p.get('platform_id') or p.get('id') or p.get('code') or p.get('url'))
         if pid in seen_ids:
             dropped_by_id += 1
+            _absorb_benchmark_mark(kept_by_id[pid], p)
             continue
 
         pk = str(p.get('pk') or '')
         pk_key = (p.get('sns_platform'), pk) if pk else None
         if pk_key and pk_key in seen_pks:
             dropped_by_pk += 1
+            _absorb_benchmark_mark(kept_by_pk[pk_key], p)
             continue
 
         unique_posts.append(p)
         seen_ids.add(pid)
+        kept_by_id[pid] = p
         if pk_key:
             seen_pks.add(pk_key)
+            kept_by_pk[pk_key] = p
+
+    if benchmark_marks_merged or is_saved_marks_merged:
+        print(
+            f"   🔗 중복분 표식 병합: 벤치마킹 소속 {benchmark_marks_merged}건, "
+            f"저장글 복원 {is_saved_marks_merged}건"
+        )
 
     dropped = dropped_by_id + dropped_by_pk
     if dropped:
@@ -665,6 +729,8 @@ def merge_results():
         print(f"   🙋 내 게시물(LinkedIn) {len(own_posts)}건 병합")
     if threads_own_posts:
         print(f"   🧵 내 게시물(Threads) {len(threads_own_posts)}건 병합")
+    if youtube_bm_posts:
+        print(f"   🎯 벤치마킹 계정(YouTube) {len(youtube_bm_posts)}건 병합")
 
     return (
         unique_posts,
@@ -672,7 +738,9 @@ def merge_results():
         len(threads_posts) + len(threads_own_posts),
         len(linkedin_posts) + len(own_posts),
         len(twitter_posts),
-        len(youtube_posts),
+        # 벤치마킹 수집분도 유튜브 글이다. 여기서 빼면 뷰어 플랫폼 집계와
+        # 실제 표시 건수가 어긋난다.
+        len(youtube_posts) + len(youtube_bm_posts),
     )
 
 def _normalize_ts(value):

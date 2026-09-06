@@ -36,6 +36,19 @@ STANDARD_FIELD_ORDER = [
     # 의미가 꼬인다. username 매칭도 LinkedIn 저장글이 불투명 ID(ACoAA...)라 취약하다.
     # 계획: _docs/20260826_03 (3.5)
     "is_own_post",
+    # 내 북마크에 있는 글인지. 벤치마킹 계정 수집분(남의 계정을 통째로 긁은 것)과
+    # 갈라야 뷰어가 "계정을 꺼도 내가 저장했던 글은 남긴다"를 판정할 수 있다.
+    # source 로 대신하지 않는다 - 벤치마킹 글을 나중에 북마크하면 중복 제거에서
+    # source 가 benchmark 인 채 남아 "저장글 아님"으로 오판한다.
+    # 기본값이 True 인 이유는 defaults 주석 참조. 계획: _docs/20260906_01 (D14)
+    "is_saved",
+    # 이 글이 어느 벤치마킹 계정에서 왔나. 배열인 이유는 한 글이 두 계정에
+    # 걸칠 수 있어서다(리포스트·공동출연). 계획: _docs/20260906_01 (D9-다)
+    "benchmark_accounts",
+    # 유튜브 채널 식별자(UC...). username 은 채널 표시명이라 계정 주소(@handle)와
+    # 이어지지 않는다 - 실측으로 제어문자가 섞인 이름도 있었다(\x08헤이디_...).
+    # 벤치마킹 계정과 게시물을 잇는 유일한 안정 키다. 계획: _docs/20260906_01 (D12)
+    "channel_id",
 ]
 
 REQUIRED_FIELDS = ["sns_platform", "username", "url", "created_at"]
@@ -102,6 +115,12 @@ def normalize_post(post: dict) -> dict:
         # 대체할 수 없다 - 본문은 한 번 받으면 끝이지만 지표는 반복해서 읽는다.
         "metrics_updated_at": None,
         "is_own_post": False,
+        # True 가 기본이다. 이 필드가 없던 시절의 레코드는 전부 내 북마크였다.
+        # False 로 두면 뷰어의 `보임 = is_saved OR 켜진 벤치마킹 계정` 이 거짓이 되어
+        # 기존 2,685 건이 통째로 화면에서 사라진다. 안전한 쪽을 기본값으로 둔다.
+        "is_saved": True,
+        "benchmark_accounts": [],
+        "channel_id": "",
     }
     for field in STANDARD_FIELD_ORDER:
         if field in defaults and field not in out:

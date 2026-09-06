@@ -12,6 +12,8 @@ import tempfile
 import threading
 import time
 import unicodedata
+import urllib.parse
+import urllib.request
 from datetime import datetime, timedelta, timezone
 from flask import Flask, jsonify, send_from_directory, request, abort
 from flask_cors import CORS
@@ -959,6 +961,162 @@ def get_user_metadata():
         return jsonify({"error": "Failed to load user metadata"}), 500
 
 
+def _load_env_once():
+    """~/.env 를 읽어 필요한 키만 os.environ 에 채운다(값은 출력하지 않는다).
+
+    `youtube_scrap.py:136 load_env()` 와 같은 규칙이다. 서버는 VBS 런처로 뜨는
+    경우가 있어 셸 환경변수를 물려받지 못한다 - 그때 /api/verify-channel 이
+    missing_api_key 로만 답한다.
+    """
+    env_path = os.path.join(os.path.expanduser("~"), ".env")
+    if not os.path.exists(env_path):
+        return
+    with open(env_path, "r", encoding="utf-8-sig", errors="replace") as handle:
+        for line in handle:
+            line = line.strip()
+            if not line or line.startswith("#") or "=" not in line:
+                continue
+            key, _, value = line.partition("=")
+            key = key.strip()
+            value = value.strip().strip('"').strip("'")
+            if key and key not in os.environ:
+                os.environ[key] = value
+
+
+_load_env_once()
+
+
+def _get_benchmark_accounts_path():
+    return os.path.join(WEB_VIEWER_DIR, "benchmark_accounts.json")
+
+
+BENCHMARK_STATUSES = {"active", "off", "excluded"}
+
+
+@app.route("/api/get-benchmark-accounts", methods=["GET"])
+def get_benchmark_accounts():
+    """벤치마킹 계정 목록. 파일이 없어도 200 과 빈 목록을 준다.
+
+    동기화 스크립트를 한 번도 안 돌린 상태에서도 뷰어가 정상 동작해야 한다.
+    계획: _docs/20260906_01 (P1)
+    """
+    empty = {"accounts": []}
+    try:
+        export_path = _get_benchmark_accounts_path()
+        if not os.path.exists(export_path):
+            return jsonify(empty)
+        with open(export_path, "r", encoding="utf-8-sig") as f:
+            data = json.load(f)
+        if not isinstance(data, dict) or not isinstance(data.get("accounts"), list):
+            return jsonify(empty)
+        return jsonify(data)
+    except Exception:
+        logging.exception("Failed to load benchmark accounts")
+        return jsonify({"error": "Failed to load benchmark accounts"}), 500
+
+
+@app.route("/api/save-benchmark-accounts", methods=["POST"])
+def save_benchmark_accounts():
+    """화면에서 편집한 계정 목록을 파일로 저장한다.
+
+    status 값을 서버에서 검증한다. 오타가 들어가면 뷰어의
+    `보임 = is_saved OR (benchmark_accounts 중 status=="active")` 가 조용히
+    거짓이 되어 글이 사라진다 - 조용한 실패라 발견이 늦다.
+    """
+    try:
+        data = request.get_json(silent=True)
+        if data is None:
+            return jsonify({"status": "error", "message": "No data received"}), 400
+        if not isinstance(data, dict):
+            return jsonify({"status": "error", "message": "Invalid data format: expected JSON object"}), 400
+        accounts = data.get("accounts")
+        if not isinstance(accounts, list):
+            return jsonify({"status": "error", "message": "accounts must be a list"}), 400
+
+        seen_ids = set()
+        for index, account in enumerate(accounts):
+            if not isinstance(account, dict):
+                return jsonify({"status": "error", "message": f"accounts[{index}] must be an object"}), 400
+            account_id = str(account.get("id") or "").strip()
+            if not account_id:
+                return jsonify({"status": "error", "message": f"accounts[{index}].id is required"}), 400
+            if account_id in seen_ids:
+                return jsonify({"status": "error", "message": f"duplicate account id: {account_id}"}), 400
+            seen_ids.add(account_id)
+            status = str(account.get("status") or "")
+            if status not in BENCHMARK_STATUSES:
+                return jsonify({
+                    "status": "error",
+                    "message": f"accounts[{index}].status must be one of {sorted(BENCHMARK_STATUSES)}",
+                }), 400
+
+        _atomic_write_json(_get_benchmark_accounts_path(), data)
+        return jsonify({"status": "success", "message": "Benchmark accounts saved successfully"})
+    except Exception:
+        logging.exception("Failed to save benchmark accounts")
+        return jsonify({"status": "error", "message": "Failed to save benchmark accounts"}), 500
+
+
+@app.route("/api/verify-channel", methods=["GET"])
+def verify_channel():
+    """계정 주소가 실제로 열리는지 서버가 대신 확인한다.
+
+    브라우저에서 직접 못 한다 - YOUTUBE_API_KEY 는 ~/.env 에 있고 프런트로
+    내보내면 안 된다. 응답에는 조회 결과만 싣는다(키·원본 응답 금지).
+
+    오타를 입력 시점에 잡는 것이 목적이다. 사후에는 수집 0건의 원인을 알 수 없다.
+    계획: _docs/20260906_01 (P1, P4 / SPEC D3)
+    """
+    platform = (request.args.get("platform") or "").strip().lower()
+    handle = (request.args.get("handle") or "").strip()
+
+    if not handle:
+        return jsonify({"ok": False, "reason": "handle is required"}), 400
+    if platform != "youtube":
+        # 계정 단위 확인이 되는 것은 지금 YouTube 뿐이다. 나머지는 "확인 불가"를
+        # 정직하게 돌려준다 - 임의로 통과시키면 쓰레기 주소가 목록에 남는다.
+        return jsonify({
+            "ok": False,
+            "reason": "unsupported_platform",
+            "message": f"{platform or '(빈 값)'} 은 아직 자동 확인을 지원하지 않는다",
+        }), 200
+
+    api_key = os.environ.get("YOUTUBE_API_KEY", "")
+    if not api_key:
+        return jsonify({"ok": False, "reason": "missing_api_key"}), 503
+
+    normalized = handle if handle.startswith("@") else f"@{handle}"
+    try:
+        params = urllib.parse.urlencode({
+            "part": "snippet,statistics",
+            "forHandle": normalized,
+            "key": api_key,
+        })
+        url = f"https://www.googleapis.com/youtube/v3/channels?{params}"
+        with urllib.request.urlopen(url, timeout=15) as response:
+            payload = json.loads(response.read().decode("utf-8"))
+    except Exception:
+        logging.exception("Failed to verify youtube channel")
+        return jsonify({"ok": False, "reason": "lookup_failed"}), 502
+
+    items = payload.get("items") or []
+    if not items:
+        return jsonify({"ok": False, "reason": "not_found", "handle": normalized}), 200
+
+    item = items[0]
+    snippet = item.get("snippet") or {}
+    statistics = item.get("statistics") or {}
+    return jsonify({
+        "ok": True,
+        "platform": "youtube",
+        "handle": normalized,
+        "channel_id": item.get("id") or "",
+        "title": snippet.get("title") or "",
+        "subscriber_count": statistics.get("subscriberCount"),
+        "video_count": statistics.get("videoCount"),
+    })
+
+
 @app.route("/api/get-external-summaries", methods=["GET"])
 def get_external_summaries():
     """Lilys/LiveWiki 외부 요약 링크 매핑.
@@ -1481,11 +1639,21 @@ def search_posts():
         offset = 0
     offset = max(0, offset)
 
+    # 벤치마킹 글을 **자르기 전에** 거른다. limit(기본 500)로 자른 뒤 클라이언트가
+    # 거르면, 벤치마킹을 꺼둔 사용자에게 내 저장글이 예전보다 덜 나온다.
+    # 절단은 이미 지금도 일어난다 - 실측(2026-09-06): "AI" 1,921건 · "claude" 813건.
+    # 계획: _docs/20260906_01 (M2)
+    include_benchmark = str(request.args.get("include_benchmark") or "").lower() in {
+        "1", "true", "yes",
+    }
+
     try:
         cache = _load_latest_posts()
         matched_posts = []
         for post in cache["posts_full"]:
             if not _matches_platform_filter(post, platform):
+                continue
+            if not include_benchmark and post.get("is_saved") is False:
                 continue
             if _matches_search_query(post.get("_searchable"), q):
                 matched_posts.append(post)

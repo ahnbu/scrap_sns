@@ -78,6 +78,18 @@ scripts/*
 !scripts/verify_external_summary_links_headless.mjs
 !scripts/verify_linkedin_images_headless.mjs
 !scripts/backfill_twitter_created_at_kst.py
+
+# 벤치마킹 계정 수집·관리 (계획 _docs/20260906_01)
+!scripts/backfill_youtube_channel_id.py
+!scripts/sync_benchmark_accounts.py
+!scripts/data/
+!scripts/data/benchmark_seed.json
+!scripts/capture_viewer_evidence.mjs
+!scripts/verify_benchmark_settings_headless.mjs
+!scripts/verify_benchmark_handle_check.mjs
+!scripts/verify_benchmark_viewer_headless.mjs
+!scripts/verify_benchmark_ui_design.mjs
+!scripts/verify_benchmark_scenarios.mjs
 !scripts/verify_twitter_created_at_kst_headless.mjs
 
 # Terminal Paste Image folder

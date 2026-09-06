@@ -31,6 +31,7 @@ Options:
   --limit <N>             Limit results (default: 10)
   --format <json|brief|md> Output format (default: json; md is for export)
   --out <path>            Export output path
+  --benchmark <mode>      Benchmark posts: exclude (default) | include | only
   --help, -h              Show this help
 `);
 }
@@ -134,6 +135,10 @@ function parseArgs(argv) {
     limit: 10,
     format: 'json',
     out: '',
+    // 벤치마킹 계정 수집분은 내 북마크가 아니다. 기본은 제외 - 뷰어의 기본
+    // 화면과 같은 방향이라 CLI 결과에 남의 글이 소리 없이 섞이지 않는다.
+    // 계획: _docs/20260906_01 (P6, D16)
+    benchmark: 'exclude',
   };
 
   let index = 0;
@@ -158,6 +163,8 @@ function parseArgs(argv) {
       options.format = args[++index];
     } else if (value === '--out' && args[index + 1]) {
       options.out = args[++index];
+    } else if (value === '--benchmark' && args[index + 1]) {
+      options.benchmark = String(args[++index]).toLowerCase();
     } else if (!options.command) {
       options.command = value;
     } else {
@@ -166,6 +173,9 @@ function parseArgs(argv) {
     index += 1;
   }
 
+  if (!['exclude', 'include', 'only'].includes(options.benchmark)) {
+    fail(`Invalid --benchmark: ${options.benchmark} (exclude|include|only)`);
+  }
   if (!['json', 'brief', 'md'].includes(options.format)) {
     fail('invalid --format value. expected json, brief, or md');
   }
@@ -412,6 +422,15 @@ function applyFilters(posts, options) {
       return false;
     }
     if (options.to && postDate && postDate > options.to) {
+      return false;
+    }
+    // is_saved 가 명시적으로 false 인 것만 벤치마킹 수집분이다. 필드가 없는
+    // 레거시 레코드는 저장글로 본다(계획 D14 와 같은 기본값).
+    const isBenchmarkOnly = post.is_saved === false;
+    if (options.benchmark === 'exclude' && isBenchmarkOnly) {
+      return false;
+    }
+    if (options.benchmark === 'only' && !isBenchmarkOnly) {
       return false;
     }
     return true;

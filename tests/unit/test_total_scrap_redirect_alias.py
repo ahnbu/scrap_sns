@@ -52,6 +52,10 @@ total_scrap.OUTPUT_YOUTUBE_DIR = "output_youtube"
 # 실제 레포의 내 글이 이 테스트 결과에 섞인다(계획 _docs/20260826_03 3.4.1).
 total_scrap.OUTPUT_LINKEDIN_OWN_DIR = "output_linkedin_own"
 total_scrap.OUTPUT_THREADS_OWN_DIR = "output_threads_own"
+# 벤치마킹 수집분도 같은 이유로 격리한다. 안 하면 절대경로 기본값이 남아
+# 실제 레포의 벤치마킹 60건이 이 테스트 결과에 섞인다
+# (계획 _docs/20260906_01 D13).
+total_scrap.OUTPUT_YOUTUBE_BENCHMARK_DIR = "output_youtube_user"
 
 posts, threads_count, linkedin_count, twitter_count, youtube_count = total_scrap.merge_results()
 print(json.dumps({
