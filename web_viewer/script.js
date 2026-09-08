@@ -3769,13 +3769,6 @@ ${item.body}
         }
         container.classList.remove('hidden');
 
-        // 이 줄이 무엇인지 말한다. 라벨이 없으면 숫자만 늘어선 칩 줄이 하나 더
-        // 생긴 것으로만 읽힌다.
-        const label = document.createElement('span');
-        label.className = 'benchmark-row-label';
-        label.textContent = '벤치마킹 계정';
-        container.appendChild(label);
-
         const accounts = activeBenchmarkAccountsWithCounts();
         if (!accounts.length) {
             const hint = document.createElement('span');

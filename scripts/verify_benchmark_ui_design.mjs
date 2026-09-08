@@ -242,7 +242,6 @@ try {
       tagRow: tag.parentElement?.id || '',
       chipBorder: getComputedStyle(chip).borderColor,
       tagBorder: getComputedStyle(tag).borderColor,
-      hasLabel: Boolean(document.querySelector('.benchmark-row-label')),
     };
   });
 
@@ -252,8 +251,8 @@ try {
     record('D7 두 칩의 테두리 색이 다르다', false, '확인 불가');
   } else {
     record('D6 계정 칩과 태그 칩이 다른 줄에 있다',
-      !structure.sameParent && structure.chipRow === 'benchmarkChipsRow' && structure.hasLabel,
-      `계정줄 #${structure.chipRow} · 태그줄 #${structure.tagRow} · 라벨 ${structure.hasLabel}`);
+      !structure.sameParent && structure.chipRow === 'benchmarkChipsRow',
+      `계정줄 #${structure.chipRow} · 태그줄 #${structure.tagRow}`);
     record('D7 두 칩의 테두리 색이 다르다',
       structure.chipBorder !== structure.tagBorder,
       `계정 ${structure.chipBorder} · 태그 ${structure.tagBorder}`);

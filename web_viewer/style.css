@@ -1343,15 +1343,6 @@ input:checked + .toggle-slider:before {
   color: #5eead4;
   box-shadow: 0 0 15px rgba(45, 212, 191, 0.12);
 }
-/* 이 줄이 무엇인지 말한다. 칩이 아니므로 칩 규격을 쓰지 않는다. */
-.benchmark-row-label {
-  display: inline-flex;
-  align-items: center;
-  font-size: 0.72rem;
-  letter-spacing: 0.02em;
-  color: rgba(153, 246, 228, 0.6);
-  padding-right: 2px;
-}
 .benchmark-chip-hint {
   display: inline-flex;
   align-items: center;
