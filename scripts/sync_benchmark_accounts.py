@@ -369,6 +369,53 @@ def _merge_stats(current: dict, entry: dict) -> dict:
     }
 
 
+def _merge_channels(previous: dict, incoming: dict) -> dict:
+    """이미 들어 있는 주소를 시드 값으로 덮지 않는다.
+
+    왜 필요한가 - 시드는 「명단」이지 「주소의 정본」이 아니다. 시드에 적힌 주소가
+    실제로는 수집을 깨는 값인 경우가 있다. LinkedIn 이 그렇다: 수집기가 여는 주소는
+    `https://www.linkedin.com/in/<slug>/recent-activity/all/` 인데(linkedin_scrap_by_user.py)
+    시드의 kook0526·minjung_kim 은 slug 가 아니라 불투명 ID(ACoAA...)가 적혀 있었다.
+    화면에서 slug 로 고쳐 수집이 되던 것을 이 동기화가 매번 되돌려 놓았다.
+
+    그래서 규칙은 「빈 칸만 메운다」다. 시드에 새 플랫폼이 추가되면 그 칸은 들어오고,
+    이미 값이 있는 칸은 그대로 둔다. 주소를 바꾸려면 화면에서 바꾼다.
+    계획: _docs/20260908_01 (W3)
+    """
+    merged = dict(incoming.get("channels") or {})
+    # `--verify` 가 열리지 않는다고 비운 칸은 되살리지 않는다. 되살리면 확인의
+    # 의미가 사라진다.
+    unverified = set(incoming.get("unverified") or [])
+    for platform, value in (previous.get("channels") or {}).items():
+        if platform in unverified:
+            continue
+        if str(value or "").strip():
+            merged[platform] = value
+    return merged
+
+
+def _augment_match_keys(match_keys: dict, channels: dict) -> dict:
+    """주소를 보존했으면 그 주소도 매칭 키에 넣는다.
+
+    `match_keys` 는 incoming 기준으로 만들어지므로, 위에서 previous 주소를 지키면
+    그 값이 키에서 빠진다. LinkedIn slug 가 그렇다.
+
+    YouTube 는 넣지 않는다 - 그쪽 키는 channel_id(UC...)이고 channels 에 든 것은
+    @handle 이라 서로 다른 값이다(SPEC D12).
+    """
+    out = {platform: list(keys) for platform, keys in (match_keys or {}).items()}
+    for platform in ("linkedin", "threads", "x"):
+        handle = str((channels or {}).get(platform) or "").strip()
+        if not handle:
+            continue
+        key = handle.rstrip("/").split("/")[-1].lstrip("@")
+        if not key:
+            continue
+        out.setdefault(platform, [])
+        out[platform] = sorted({*out[platform], key})
+    return out
+
+
 def merge_preserving_user_settings(existing: list, incoming: list) -> tuple[list, dict]:
     by_id = {str(account.get("id")): account for account in existing if account.get("id")}
     result = []
@@ -378,6 +425,10 @@ def merge_preserving_user_settings(existing: list, incoming: list) -> tuple[list
         account_id = account["id"]
         previous = by_id.pop(account_id, None)
         if previous is None:
+            account = dict(account)
+            account["collectable"] = sorted(
+                set(account.get("channels") or {}) & COLLECTABLE_PLATFORMS
+            )
             result.append(account)
             report["added"] += 1
             continue
@@ -390,6 +441,11 @@ def merge_preserving_user_settings(existing: list, incoming: list) -> tuple[list
         for field in USER_OWNED_FIELDS:
             if field in previous:
                 merged[field] = previous[field]
+        merged["channels"] = _merge_channels(previous, account)
+        merged["match_keys"] = _augment_match_keys(
+            merged.get("match_keys") or {}, merged["channels"]
+        )
+        merged["collectable"] = sorted(set(merged["channels"]) & COLLECTABLE_PLATFORMS)
         result.append(merged)
         report["kept"] += 1
 

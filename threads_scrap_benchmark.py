@@ -25,7 +25,14 @@ import sys
 import tempfile
 from datetime import datetime
 
-from utils.common import load_json, save_json
+from utils.benchmark_store import (
+    KEEP_LIMIT,
+    atomic_save_json,
+    load_existing_posts,
+    merge_and_cap,
+    report_removed,
+)
+from utils.common import load_json
 from utils.post_schema import normalize_post
 from utils.threads_parser import iter_result_data_blocks, extract_posts_from_node
 
@@ -141,6 +148,13 @@ def collect(limit_override: int | None, dry_run: bool, only: str | None):
         print("ℹ️ 켜진 Threads 벤치마킹 계정이 없습니다.")
         return 0
 
+    # 가져오기를 scrap-my 스킬의 scrapling 러너에 맡긴다. 그 파일이 없으면 계정마다
+    # 똑같은 실패를 반복하며 원인이 stderr 안쪽에 묻힌다 - 먼저 한 번에 말한다.
+    if not dry_run and not os.path.exists(SCRAPLING_RUNNER):
+        print(f"❌ scrapling 러너가 없습니다: {SCRAPLING_RUNNER}")
+        print("   scrap-my 스킬이 설치돼 있는지 확인하세요. 수집을 중단합니다.")
+        return 0
+
     print(f"🎯 대상 계정 {len(accounts)}개")
     merged: list[dict] = []
     seen_codes: set[str] = set()
@@ -178,11 +192,17 @@ def collect(limit_override: int | None, dry_run: bool, only: str | None):
         collected_accounts += 1
         print(f"   ✅ {added}편 (페이지에서 {len(posts)}편 확인)")
 
-    if not merged:
-        print("\nℹ️ 통합본에 넣을 새 글이 없습니다.")
+    # 이번 수집분만 저장하면 직전 수집분이 통합본에서 사라진다 - merge_results()
+    # 가 이 폴더의 최신 파일 하나만 읽기 때문이다. 쌓아서 저장한다.
+    # 계획: _docs/20260908_01 (W1)
+    existing = load_existing_posts(OUTPUT_DIR, "threads_user_full_")
+    if not merged and not existing:
+        print("\nℹ️ 통합본에 넣을 글이 없습니다.")
         return 0
 
-    os.makedirs(OUTPUT_DIR, exist_ok=True)
+    posts, removed = merge_and_cap(existing, merged)
+    report_removed(removed)
+
     stamp = datetime.now().strftime("%Y%m%d")
     out_path = os.path.join(OUTPUT_DIR, f"threads_user_full_{stamp}.json")
     payload = {
@@ -191,13 +211,19 @@ def collect(limit_override: int | None, dry_run: bool, only: str | None):
             "crawl_mode": "benchmark",
             "platform": "threads",
             "account_count": collected_accounts,
-            "post_count": len(merged),
+            "post_count": len(posts),
+            "new_count": len(merged),
+            "keep_limit": KEEP_LIMIT,
         },
-        "posts": merged,
+        "posts": posts,
     }
-    save_json(out_path, payload)
-    print(f"\n💾 저장: {out_path} ({len(merged)}편 · 계정 {collected_accounts}개)")
-    return len(merged)
+    if not atomic_save_json(out_path, payload):
+        return 0
+    print(
+        f"\n💾 저장: {out_path} (누적 {len(posts)}편 · 이번 {len(merged)}편"
+        f" · 계정 {collected_accounts}개)"
+    )
+    return len(posts)
 
 
 def main():

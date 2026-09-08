@@ -57,6 +57,11 @@ PLATFORM_KEYS = {
     "MyPosts": "my_posts",
     # 내 Threads 게시물. 계획: _docs/20260827_02 (3.6)
     "MyThreads": "my_threads",
+    # 벤치마킹 계정 수집. 저장글과 실행 경로·실패 원인이 달라 따로 보고한다.
+    # 계획: _docs/20260908_01 (W2)
+    "BenchThreads": "bench_threads",
+    "BenchLinkedIn": "bench_linkedin",
+    "BenchYouTube": "bench_youtube",
 }
 SIGNAL_HANDLER_CALLED = False
 
@@ -222,6 +227,8 @@ def _phase_display_name(phase_name):
         return "Producer"
     if phase_name == "consumer":
         return "Consumer"
+    if phase_name == "benchmark":
+        return "Benchmark"
     return str(phase_name or "").title()
 
 
@@ -425,6 +432,28 @@ def run_scrapers_in_parallel(mode='update'):
                 # 내 글 수집 실패로 멈추면 안 된다.
                 # 계획: _docs/20260827_02 (3.6)
                 "MyThreads": "python -u my_threads_scrap.py",
+            },
+        ),
+        (
+            # 벤치마킹 계정 수집. 수집기 3개가 만들어져 있었는데 어디서도 호출되지
+            # 않아, 2026-09-06 에 손으로 돌린 파일이 매번 다시 병합되고 있었다.
+            # merge_results() 는 이미 세 산출물을 읽으므로 화면에는 글이 보인다 -
+            # 그래서 멈춘 것이 드러나지 않았다.
+            #
+            # 🔴 **별도 wave 인 이유**: `linkedin_scrap_benchmark.py` 가 부르는
+            #    `linkedin_scrap_by_user.py` 는 로그인 세션(storage_state)을 쓴다.
+            #    consumer 의 MyPosts 도 같은 세션을 쓰므로 그 wave 에 넣으면 같은
+            #    계정 세션 2개가 동시에 붙는다. 기존 슬롯에 `&&` 로 붙이는 것도
+            #    아니다 - 앞이 실패하면 뒤가 안 돌아, LinkedIn 로그인 만료가
+            #    관계없는 Threads 벤치마킹(비로그인)까지 멈춘다.
+            #    이 wave 안에서는 셋이 서로 다른 자원(비로그인 HTTP / 로그인 세션 /
+            #    YouTube API)을 써서 병렬이 안전하다.
+            # 계획: _docs/20260908_01 (W2)
+            "benchmark",
+            {
+                "BenchThreads": "python -u threads_scrap_benchmark.py",
+                "BenchLinkedIn": "python -u linkedin_scrap_benchmark.py",
+                "BenchYouTube": "python -u youtube_scrap.py --mode update --channel",
             },
         ),
     ]
@@ -1136,6 +1165,59 @@ def refresh_external_summaries_after_success():
     return all_ok
 
 
+def refresh_benchmark_accounts_after_success():
+    """벤치마킹 계정 카드의 저장 건수·최신 저장일을 통합본 기준으로 다시 채운다.
+
+    이 값들은 `scripts/sync_benchmark_accounts.py` 가 통합본을 훑어 넣는데, 그
+    스크립트에 자동 호출처가 없었다. 그래서 수집이 멈춰도 카드 숫자가 그대로라
+    **화면만 보고는 멈춘 것을 알 수 없었다** - 2026-09-06 에 벤치마킹 수집이
+    멈춘 것이 이틀 넘게 드러나지 않은 직접 원인이다.
+
+    `--verify` 는 붙이지 않는다. 그쪽은 YouTube API 와 페이지 열기를 타는데,
+    뷰어 「업데이트」 버튼은 동기 블로킹이라 외부 네트워크를 여기에 끌어들이면
+    버튼이 그만큼 묶인다. 주소 확인은 사람이 필요할 때 따로 돌린다.
+
+    이 스크립트는 `status`·`limit`·`memo`·`purpose` 를 보존하고 `excluded` 를
+    되살리지 않으므로(sync_benchmark_accounts.merge_preserving_user_settings)
+    화면에서 켠 설정은 그대로 남는다.
+
+    실패해도 수집 결과를 되돌리지 않는다. 카드 숫자는 표시용이고, 이것 때문에
+    수집분을 버리면 손해가 훨씬 크다.
+    계획: _docs/20260908_01 (W3)
+    """
+    repo_root = os.path.dirname(os.path.abspath(__file__))
+    script_path = os.path.join(repo_root, "scripts", "sync_benchmark_accounts.py")
+    if not os.path.exists(script_path):
+        print(f"⚠️ 벤치마킹 계정 동기화 스크립트를 찾을 수 없습니다: {script_path}")
+        return False
+
+    env = os.environ.copy()
+    env["PYTHONIOENCODING"] = "utf-8"
+    completed = subprocess.run(
+        [sys.executable, "-u", script_path],
+        cwd=repo_root,
+        text=True,
+        encoding="utf-8",
+        errors="replace",
+        capture_output=True,
+        check=False,
+        env=env,
+    )
+
+    if completed.stdout:
+        print(completed.stdout.strip())
+    if completed.stderr:
+        print(completed.stderr.strip())
+
+    if completed.returncode != 0:
+        print(f"⚠️ 벤치마킹 계정 카드 갱신에 실패했습니다. exit={completed.returncode}")
+        print("   수집 결과 자체는 정상입니다.")
+        return False
+
+    print("   ✅ 벤치마킹 계정 카드 갱신 완료")
+    return True
+
+
 def run(mode='update'):
     platform_results = {}
     try:
@@ -1165,6 +1247,7 @@ def run(mode='update'):
             )
             cleanup_old_output_json_after_success()
             refresh_external_summaries_after_success()
+            refresh_benchmark_accounts_after_success()
     finally:
         auth_required = [
             platform

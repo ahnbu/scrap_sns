@@ -22,7 +22,14 @@ import subprocess
 import sys
 from datetime import datetime
 
-from utils.common import load_json, save_json
+from utils.benchmark_store import (
+    KEEP_LIMIT,
+    atomic_save_json,
+    load_existing_posts,
+    merge_and_cap,
+    report_removed,
+)
+from utils.common import load_json
 from utils.post_schema import normalize_post
 
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -153,11 +160,17 @@ def collect(limit_override: int | None, dry_run: bool, only: str | None):
         collected_accounts += 1
         print(f"   ✅ {added}편 ({os.path.basename(full_file)})")
 
-    if not merged:
-        print("\nℹ️ 통합본에 넣을 새 글이 없습니다.")
+    # 이번 수집분만 저장하면 직전 수집분이 통합본에서 사라진다 - merge_results()
+    # 가 이 폴더의 최신 파일 하나만 읽기 때문이다. 쌓아서 저장한다.
+    # 계획: _docs/20260908_01 (W1)
+    existing = load_existing_posts(OUTPUT_DIR, "linkedin_user_full_")
+    if not merged and not existing:
+        print("\nℹ️ 통합본에 넣을 글이 없습니다.")
         return 0
 
-    os.makedirs(OUTPUT_DIR, exist_ok=True)
+    posts, removed = merge_and_cap(existing, merged)
+    report_removed(removed)
+
     stamp = datetime.now().strftime("%Y%m%d")
     out_path = os.path.join(OUTPUT_DIR, f"linkedin_user_full_{stamp}.json")
     payload = {
@@ -166,13 +179,19 @@ def collect(limit_override: int | None, dry_run: bool, only: str | None):
             "crawl_mode": "benchmark",
             "platform": "linkedin",
             "account_count": collected_accounts,
-            "post_count": len(merged),
+            "post_count": len(posts),
+            "new_count": len(merged),
+            "keep_limit": KEEP_LIMIT,
         },
-        "posts": merged,
+        "posts": posts,
     }
-    save_json(out_path, payload)
-    print(f"\n💾 저장: {out_path} ({len(merged)}편 · 계정 {collected_accounts}개)")
-    return len(merged)
+    if not atomic_save_json(out_path, payload):
+        return 0
+    print(
+        f"\n💾 저장: {out_path} (누적 {len(posts)}편 · 이번 {len(merged)}편"
+        f" · 계정 {collected_accounts}개)"
+    )
+    return len(posts)
 
 
 def main():

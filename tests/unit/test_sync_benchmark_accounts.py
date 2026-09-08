@@ -98,3 +98,70 @@ def test_merge_is_idempotent():
     second, _ = merge(first, incoming)
 
     assert first == second
+
+
+def test_existing_address_is_not_overwritten_by_seed():
+    """이미 들어 있는 주소를 시드 값으로 덮지 않는다.
+
+    시드는 명단이지 주소의 정본이 아니다. LinkedIn 수집기는
+    `/in/<slug>/recent-activity/` 를 여는데 시드에 불투명 ID(ACoAA...)가 적혀
+    있으면 그 계정 수집이 깨진다 - 화면에서 slug 로 고쳐도 동기화가 매번
+    되돌려 놓았다. 계획: _docs/20260908_01 (W3)
+    """
+    existing = [_incoming("k")]
+    existing[0]["channels"] = {"linkedin": "steve0530", "threads": "@k"}
+
+    incoming = _incoming("k")
+    incoming["channels"] = {"linkedin": "ACoAA_opaque_id", "threads": "@k"}
+    incoming["match_keys"] = {"linkedin": ["ACoAA_opaque_id"]}
+
+    merged, _ = merge(existing, [incoming])
+
+    assert merged[0]["channels"]["linkedin"] == "steve0530"
+    # 보존한 주소는 매칭 키에도 남는다 - 안 그러면 계정 필터가 그 글을 놓친다.
+    assert merged[0]["match_keys"]["linkedin"] == ["ACoAA_opaque_id", "steve0530"]
+
+
+def test_seed_fills_only_empty_channel_slots():
+    """시드에 새 플랫폼이 추가되면 그 칸은 들어온다."""
+    existing = [_incoming("k")]
+    existing[0]["channels"] = {"linkedin": "steve0530"}
+
+    incoming = _incoming("k")
+    incoming["channels"] = {"linkedin": "ACoAA_opaque_id", "threads": "@newly_added"}
+
+    merged, _ = merge(existing, [incoming])
+
+    assert merged[0]["channels"] == {
+        "linkedin": "steve0530",
+        "threads": "@newly_added",
+    }
+    assert "threads" in merged[0]["collectable"]
+
+
+def test_verify_emptied_channel_is_not_revived():
+    """`--verify` 가 열리지 않는다고 비운 칸은 되살리지 않는다."""
+    existing = [_incoming("k")]
+    existing[0]["channels"] = {"youtube": "@gone"}
+
+    incoming = _incoming("k")
+    incoming["channels"] = {}
+    incoming["unverified"] = ["youtube"]
+
+    merged, _ = merge(existing, [incoming])
+
+    assert merged[0]["channels"] == {}
+    assert merged[0]["collectable"] == []
+
+
+def test_youtube_handle_is_not_pushed_into_match_keys():
+    """YouTube 매칭 키는 channel_id 다 - @handle 을 섞으면 안 된다(SPEC D12)."""
+    existing = [_incoming("y")]
+    existing[0]["channels"] = {"youtube": "@handle_name"}
+
+    incoming = _incoming("y")
+    incoming["match_keys"] = {"youtube": ["UC_real_id"]}
+
+    merged, _ = merge(existing, [incoming])
+
+    assert merged[0]["match_keys"]["youtube"] == ["UC_real_id"]

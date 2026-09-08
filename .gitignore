@@ -95,6 +95,9 @@ scripts/*
 !scripts/verify_benchmark_platform.py
 !scripts/verify_twitter_created_at_kst_headless.mjs
 
+# 벤치마킹 수집 갱신 검증 (계획 _docs/20260908_01)
+!scripts/verify_benchmark_refresh_headless.mjs
+
 # 설정 모달 탭 세로 레일 전환 (계획 _docs/20260906_02)
 !scripts/verify_settings_tab_layout.mjs
 

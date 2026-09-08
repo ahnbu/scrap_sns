@@ -153,6 +153,14 @@ print(json.dumps({{"commands": launched_commands, "results": results}}, ensure_a
         # 내 글 수집 실패로 멈추지 않도록 consumer 에 둔다.
         # 계획: _docs/20260827_02 (3.6)
         "cmd /c python -u my_threads_scrap.py",
+        # 벤치마킹 계정 수집은 별도(3번째) wave 다. LinkedIn 벤치마킹이 로그인
+        # 세션을 쓰는데 consumer 의 MyPosts 도 같은 세션을 써서, 한 wave 에 두면
+        # 같은 계정 세션 2개가 동시에 붙는다. 기존 슬롯에 `&&` 로 붙이지도 않는다 -
+        # 앞이 실패하면 관계없는 Threads 벤치마킹(비로그인)까지 멈춘다.
+        # 계획: _docs/20260908_01 (W2)
+        "cmd /c python -u threads_scrap_benchmark.py",
+        "cmd /c python -u linkedin_scrap_benchmark.py",
+        "cmd /c python -u youtube_scrap.py --mode update --channel",
     ]
     assert payload["results"]["threads"]["status"] == "ok"
     assert payload["results"]["threads"]["phases"]["producer"]["status"] == "ok"
@@ -189,11 +197,23 @@ def fake_cleanup():
     events.append(["cleanup"])
     return True
 
+def fake_refresh_summaries():
+    events.append(["refresh_summaries"])
+    return True
+
+def fake_refresh_benchmark():
+    events.append(["refresh_benchmark"])
+    return True
+
 total_scrap.run_scrapers_in_parallel = fake_run_scrapers_in_parallel
 total_scrap.merge_results = fake_merge_results
 total_scrap.download_images = fake_download_images
 total_scrap.save_total = fake_save_total
 total_scrap.cleanup_old_output_json_after_success = fake_cleanup
+# 이 둘을 대역으로 막지 않으면 테스트가 실제 후처리를 돌려 레포의
+# web_viewer/benchmark_accounts.json 과 sns_external_summaries.json 을 덮어쓴다.
+total_scrap.refresh_external_summaries_after_success = fake_refresh_summaries
+total_scrap.refresh_benchmark_accounts_after_success = fake_refresh_benchmark
 
 total_scrap.run(mode="update")
 print(json.dumps(events, ensure_ascii=False))
@@ -208,6 +228,10 @@ print(json.dumps(events, ensure_ascii=False))
         ["download_images", 1],
         ["save_total", 1, 1, 0, 0, 0],
         ["cleanup"],
+        ["refresh_summaries"],
+        # 계정 카드 갱신은 저장이 끝난 뒤다 - 통합본을 훑어 숫자를 채우기 때문이다.
+        # 계획: _docs/20260908_01 (W3)
+        ["refresh_benchmark"],
     ]
 
 
@@ -260,6 +284,9 @@ total_scrap.merge_results = fake_merge_results
 total_scrap.download_images = fake_download_images
 total_scrap.save_total = fake_save_total
 total_scrap.cleanup_old_output_json_after_success = lambda: True
+# 실제 후처리가 돌면 레포의 web_viewer/*.json 을 덮어쓴다.
+total_scrap.refresh_external_summaries_after_success = lambda: True
+total_scrap.refresh_benchmark_accounts_after_success = lambda: True
 
 total_scrap.run(mode="update")
 print(json.dumps(events, ensure_ascii=False))
