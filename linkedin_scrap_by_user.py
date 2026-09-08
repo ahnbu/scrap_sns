@@ -1,15 +1,40 @@
 import json
+import shutil
+import sys
 import time
 import os
 import re
 import argparse
 from datetime import datetime, timedelta
+from pathlib import Path
+
 from playwright.sync_api import sync_playwright
+
+from utils.auth_paths import linkedin_storage
+from utils.auth_status import exit_auth_required, is_orchestrated_run
+from utils.benchmark_store import atomic_save_json
 from utils.json_to_md import convert_json_to_md
+
+# 창 정책·엔진 플래그는 이 파일이 정하지 않는다. 스킬 공용 정본이 정한다.
+# 설계 근거: _docs/20260908_02 (W2-4), 정본 설계: skills/_docs/20260831_01
+SKILLS_ROOT = Path.home() / ".claude" / "skills"
+if str(SKILLS_ROOT) not in sys.path:
+    sys.path.insert(0, str(SKILLS_ROOT))
+# 🔴 정본을 못 찾으면 조용히 다른 정책으로 돌지 않는다. 조용한 정책 분기가
+#    이 변경이 없애려는 문제 그 자체다 — 여기서 명확히 멈춘다.
+from _shared.browser_launch import decide as decide_browser_policy  # noqa: E402
 
 # --- 설정 ---
 LOGIN_URL = "https://www.linkedin.com/login"
-AUTH_FILE = "auth/auth_linkedin.json"
+# 인증 정본은 사용자 config auth runtime 이다. repo-local `auth/` 를 하드코딩하지 않는다
+# (utils/AGENTS.md 금지 조항). 저장글 수집기(linkedin_scrap.py)와 같은 함수를 쓴다.
+AUTH_FILE = str(linkedin_storage())
+AUTH_BACKUP_FILE = AUTH_FILE + ".bak"
+# 로그인 세션 + 창 없음으로 계정 활동목록이 정상 수집됨을 실측한 결과다.
+# 이 문자열이 `LAUNCH:` 줄의 reason= 칸에 실려 로그에 남는다.
+HEADLESS_MEASURED_REASON = (
+    "2026-09-08 실측: 로그인 세션 + headless 로 활동목록 13건·866KB 정상"
+)
 BASE_DATA_DIR = "output_linkedin_user"
 
 # CLI 인자 파싱
@@ -18,7 +43,12 @@ parser.add_argument('--user', required=True, help='LinkedIn User ID (slug)')
 parser.add_argument('--limit', type=int, default=0, help='Maximum number of posts to scrap (0 for unlimited)')
 parser.add_argument('--duration', type=str, help='Scrap range (e.g., 3d, 1m, 1y). Default unit is day if only number is given.')
 parser.add_argument('--after', type=str, help='Skip posts newer than this duration (e.g., 1m). Useful for picking up where you left off.')
+parser.add_argument('--no-headless', dest='no_headless', action='store_true',
+                    help='창을 띄운다. 세션이 만료돼 사람이 직접 로그인해야 할 때만 쓴다')
 args = parser.parse_args()
+
+# 사람이 조작할 창이 필요한가. 공용 정본의 human_operates 로 넘어간다.
+NEEDS_HUMAN_LOGIN = args.no_headless
 
 USER_ID = args.user
 TARGET_LIMIT = args.limit
@@ -33,9 +63,9 @@ TARGET_URL = f"https://www.linkedin.com/in/{USER_ID}/recent-activity/all/"
 CRAWL_START_TIME = datetime.now()
 INCLUDE_IMAGES = True
 
-# 브라우저 UI 설정
-WINDOW_X = 1000
-WINDOW_Y = 0
+# 브라우저 UI 설정.
+# 🔴 창 위치(WINDOW_X/Y)는 여기서 정하지 않는다 — `_shared/browser_launch.decide()` 가
+#    정한다. 아래 두 값은 페이지 렌더 크기(viewport)일 뿐 창 배치와 무관하다.
 WINDOW_WIDTH = 1000
 WINDOW_HEIGHT = 1000
 
@@ -205,12 +235,55 @@ class LinkedinUserScraper:
                 return
 
         print(f"🚨 로그인이 필요합니다! URL: {page.url}")
+
+        # 🔴 자동 실행에는 키보드 입력 통로가 없다. 아래 input() 은 사람을 기다리는 것이
+        #    아니라 즉시 EOFError 로 죽으면서 오류 추적만 남긴다(2026-09-08 실측: 0.0초).
+        #    total_scrap 이 부르는 경로는 여기서 인증 필요 신호로 끝낸다 —
+        #    저장글 수집기(linkedin_scrap.py:257)가 이미 쓰는 방식과 같다.
+        if is_orchestrated_run():
+            exit_auth_required(
+                "linkedin",
+                reason="login_required",
+                current_url=page.url,
+                auth_file=AUTH_FILE,
+            )
+
         page.goto(LOGIN_URL)
         input(">>> 로그인을 완료하고 엔터키를 눌러주세요: ")
-        page.context.storage_state(path=AUTH_FILE)
-        print("💾 새 세션 저장됨.")
+        self._save_storage_state(page)
         page.goto(TARGET_URL)
         time.sleep(3)
+
+    def _save_storage_state(self, page):
+        """새 세션을 공용 인증 파일에 안전하게 쓴다.
+
+        이 파일은 저장글 수집기도 함께 보는 **공용 자산**이고 레포 밖에 있어
+        git 으로 되돌릴 수 없다. 그래서 세 겹으로 막는다.
+          1. 받은 세션에 `li_at` 이 없으면 **기존 파일을 건드리지 않는다** (실질적 롤백)
+          2. 덮어쓰기 전 `.bak` 사본을 남긴다
+          3. 쓰기는 임시 파일 교체(원자적)로 한다 — 도중 실패해도 원본이 잘리지 않는다
+        """
+        state = page.context.storage_state()
+        cookies = state.get("cookies") or []
+        if not any(c.get("name") == "li_at" for c in cookies):
+            print("❌ 받은 세션에 li_at 쿠키가 없다 — 기존 인증 파일을 그대로 둔다.")
+            exit_auth_required(
+                "linkedin",
+                reason="invalid_session",
+                current_url=page.url,
+                auth_file=AUTH_FILE,
+            )
+
+        if os.path.exists(AUTH_FILE):
+            try:
+                shutil.copy2(AUTH_FILE, AUTH_BACKUP_FILE)
+            except OSError as error:
+                print(f"⚠️ 인증 백업 실패(진행은 계속한다): {error}")
+
+        if not atomic_save_json(AUTH_FILE, state):
+            print("❌ 인증 파일 저장 실패 — 기존 파일은 그대로다.")
+            sys.exit(1)
+        print("💾 새 세션 저장됨.")
 
     def handle_response(self, response):
         if self.stopped_early:
@@ -482,11 +555,25 @@ class LinkedinUserScraper:
         print(f"🔗 Target: {TARGET_URL}")
         
         with sync_playwright() as p:
-            browser = p.chromium.launch(headless=False, args=[f"--window-position={WINDOW_X},{WINDOW_Y}", f"--window-size={WINDOW_WIDTH},{WINDOW_HEIGHT}"])
-            context_options = {"viewport": {"width": WINDOW_WIDTH, "height": WINDOW_HEIGHT}}
+            # 창을 띄울지·어디에 띄울지는 여기서 정하지 않는다. 공용 정본이 정한다.
+            # 사람이 직접 로그인해야 할 때만 --no-headless 로 창을 부른다.
+            policy = decide_browser_policy(
+                human_operates=NEEDS_HUMAN_LOGIN,
+                headless_reason=None if NEEDS_HUMAN_LOGIN else HEADLESS_MEASURED_REASON,
+            )
+            print(policy.echo(), flush=True)
+            browser = p.chromium.launch(
+                headless=policy.headless,
+                args=list(policy.args),
+                ignore_default_args=list(policy.ignore_default_args),
+            )
+            context_options: dict = {
+                "viewport": {"width": WINDOW_WIDTH, "height": WINDOW_HEIGHT}
+            }
             if os.path.exists(AUTH_FILE):
                 context_options["storage_state"] = AUTH_FILE
-            
+
+
             context = browser.new_context(**context_options)
             page = context.new_page()
             page.on("response", self.handle_response)

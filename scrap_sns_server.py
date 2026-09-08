@@ -632,6 +632,24 @@ def _canonical_auth_platform(value):
     return ""
 
 
+def _canonical_auth_required_platform(value):
+    """인증 신호에서만 쓰는 정규화. 벤치마킹 슬롯도 같은 플랫폼으로 본다.
+
+    🔴 `_canonical_auth_platform` 자체를 고치면 안 된다 — 그 함수는 `platform_results`
+       정규화도 함께 쓰므로, 거기에 `bench_*` 매핑이 생기면 벤치마킹 결과와 저장글
+       결과가 같은 키를 두고 서로 덮어써 한쪽이 조용히 사라진다.
+
+    인증만 뭉쳐도 되는 이유: 벤치마킹과 저장글이 **같은 세션 파일 하나**를 본다.
+    한쪽이 만료면 다른 쪽도 만료이므로 「LinkedIn 재로그인 필요」는 정확한 안내다.
+    반면 수집 실패는 원인이 서로 달라 뭉치면 오인을 부른다 — 그래서 여기까지만이다.
+    계획: _docs/20260908_02 (W3)
+    """
+    text = str(value or "").strip().lower()
+    if text.startswith("bench_"):
+        text = text[len("bench_"):]
+    return _canonical_auth_platform(text)
+
+
 def _normalize_scrap_summary(summary):
     if not isinstance(summary, dict):
         return {"auth_required": [], "platform_results": {}}
@@ -646,6 +664,8 @@ def _normalize_scrap_summary(summary):
         else:
             platform_results[platform] = {"status": str(raw_result)}
 
+    # 여기부터가 인증 신호 경로다. total_scrap 은 벤치마킹을 `bench_linkedin` 같은
+    # 슬롯 이름으로 보내므로, 이 목록만 벤치마킹을 알아보는 정규화를 쓴다.
     auth_required = []
     raw_auth_required = summary.get("auth_required")
     if isinstance(raw_auth_required, list):
@@ -679,7 +699,7 @@ def _normalize_scrap_summary(summary):
     normalized_auth_required = []
     seen = set()
     for raw_platform in auth_required:
-        platform = _canonical_auth_platform(raw_platform)
+        platform = _canonical_auth_required_platform(raw_platform)
         if platform and platform not in seen:
             normalized_auth_required.append(platform)
             seen.add(platform)

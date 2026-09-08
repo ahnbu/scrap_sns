@@ -22,6 +22,7 @@ import subprocess
 import sys
 from datetime import datetime
 
+from utils.auth_status import AUTH_REQUIRED_EXIT_CODE
 from utils.benchmark_store import (
     KEEP_LIMIT,
     atomic_save_json,
@@ -73,8 +74,13 @@ def latest_full_file(slug: str):
     return os.path.join(directory, sorted(files)[-1])
 
 
-def run_collector(slug: str, limit: int, dry_run: bool) -> bool:
-    """기존 수집기를 그대로 부른다. 수집 로직을 여기서 다시 짜지 않는다."""
+def run_collector(slug: str, limit: int, dry_run: bool) -> int:
+    """기존 수집기를 그대로 부른다. 수집 로직을 여기서 다시 짜지 않는다.
+
+    🔴 **자식의 종료코드를 그대로 돌려준다.** 성공/실패로 뭉개면 인증 필요 신호
+       (`AUTH_REQUIRED_EXIT_CODE`)가 여기서 삼켜져 `total_scrap` 에 도달하지 못하고,
+       「업데이트」 결과창이 재로그인을 안내할 수 없다. 계획: _docs/20260908_02 (W2-5)
+    """
     command = [
         sys.executable, "-u", "linkedin_scrap_by_user.py",
         "--user", slug,
@@ -83,12 +89,13 @@ def run_collector(slug: str, limit: int, dry_run: bool) -> bool:
     print(f"   ▶ {' '.join(command)}")
     if dry_run:
         print("     (dry-run — 실행하지 않음)")
-        return True
+        return 0
     result = subprocess.run(command, cwd=PROJECT_ROOT)
-    if result.returncode != 0:
+    if result.returncode == AUTH_REQUIRED_EXIT_CODE:
+        print("   🔑 LinkedIn 인증이 필요하다 — 남은 계정도 같은 세션이라 여기서 멈춘다")
+    elif result.returncode != 0:
         print(f"   ⚠️ 수집기가 {result.returncode} 로 끝났다 — 이 계정은 건너뛴다")
-        return False
-    return True
+    return result.returncode
 
 
 def to_standard(raw: dict, account: dict, slug: str) -> dict:
@@ -116,18 +123,24 @@ def to_standard(raw: dict, account: dict, slug: str) -> dict:
     return normalized
 
 
-def collect(limit_override: int | None, dry_run: bool, only: str | None):
+def collect(limit_override: int | None, dry_run: bool, only: str | None) -> tuple[int, bool]:
+    """(통합본에 넣은 글 수, 인증 필요 여부)를 돌려준다.
+
+    인증 필요 여부를 따로 들고 나오는 이유: 이 값이 종료코드가 되어 `total_scrap` 까지
+    올라가야 「업데이트」 결과창이 재로그인을 안내할 수 있다. 계획: _docs/20260908_02 (W2-5)
+    """
     accounts = load_active_linkedin_accounts()
     if only:
         accounts = [a for a in accounts if a.get("id") == only]
     if not accounts:
         print("ℹ️ 켜진 LinkedIn 벤치마킹 계정이 없습니다.")
-        return 0
+        return 0, False
 
     print(f"🎯 대상 계정 {len(accounts)}개")
     merged: list[dict] = []
     seen_codes: set[str] = set()
     collected_accounts = 0
+    auth_required = False
 
     for account in accounts:
         slug = str((account.get("channels") or {}).get("linkedin") or "").strip()
@@ -136,7 +149,14 @@ def collect(limit_override: int | None, dry_run: bool, only: str | None):
         limit = limit_override or int(account.get("limit") or DEFAULT_LIMIT)
         print(f"\n📌 {account.get('name') or account.get('id')} ({slug}) · 최대 {limit}편")
 
-        if not run_collector(slug, limit, dry_run):
+        returncode = run_collector(slug, limit, dry_run)
+        if returncode == AUTH_REQUIRED_EXIT_CODE:
+            # 계정마다 같은 세션 파일을 쓴다. 하나가 만료면 나머지도 반드시 만료다 —
+            # 남은 계정을 도는 것은 실패를 반복하는 비용일 뿐이다. 여기까지 모은
+            # 것은 아래에서 정상 저장한다(누적 보존).
+            auth_required = True
+            break
+        if returncode != 0:
             continue
 
         full_file = latest_full_file(slug)
@@ -166,7 +186,7 @@ def collect(limit_override: int | None, dry_run: bool, only: str | None):
     existing = load_existing_posts(OUTPUT_DIR, "linkedin_user_full_")
     if not merged and not existing:
         print("\nℹ️ 통합본에 넣을 글이 없습니다.")
-        return 0
+        return 0, auth_required
 
     posts, removed = merge_and_cap(existing, merged)
     report_removed(removed)
@@ -186,12 +206,12 @@ def collect(limit_override: int | None, dry_run: bool, only: str | None):
         "posts": posts,
     }
     if not atomic_save_json(out_path, payload):
-        return 0
+        return 0, auth_required
     print(
         f"\n💾 저장: {out_path} (누적 {len(posts)}편 · 이번 {len(merged)}편"
         f" · 계정 {collected_accounts}개)"
     )
-    return len(posts)
+    return len(posts), auth_required
 
 
 def main():
@@ -206,7 +226,11 @@ def main():
                         help="수집기를 부르지 않고 대상만 출력한다")
     args = parser.parse_args()
 
-    count = collect(args.limit, args.dry_run, args.only)
+    count, auth_required = collect(args.limit, args.dry_run, args.only)
+    if auth_required:
+        # 수집한 만큼은 이미 저장했다. 종료코드로 인증 필요를 위에 알린다 —
+        # total_scrap 이 이 코드를 bench_linkedin 의 auth_required 로 기록한다.
+        return AUTH_REQUIRED_EXIT_CODE
     return 0 if count >= 0 else 1
 
 

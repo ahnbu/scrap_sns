@@ -1,0 +1,13 @@
+🎯 대상 계정 1개
+
+📌 빌더 조쉬 (uxjosh) · 최대 1편
+   ▶ C:\Users\ahnbu\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\python.exe -u linkedin_scrap_by_user.py --user uxjosh --limit 1
+📊 기존 데이터 23개 로드됨. max_sequence_id: 23
+🚀 링크드인 사용자 스크래퍼 시작: uxjosh
+🔗 Target: https://www.linkedin.com/in/uxjosh/recent-activity/all/
+LAUNCH: mode=light window=none automation_flag=removed engine=persistent reason=2026-09-08 실측: 로그인 세션 + headless 로 활동목록 13건·866KB 정상
+🚨 로그인이 필요합니다! URL: about:blank
+SNS_AUTH_REQUIRED {"platform": "linkedin", "reason": "login_required", "current_url": "about:blank", "auth_file": "C:\\Users\\ahnbu\\AppData\\Local\\Temp\\claude\\D--vibe-coding-scrap-sns\\3cce6ea2-c366-4085-ab8f-ad50f861771d\\scratchpad\\fake_auth_home\\linkedin\\storage_state.json", "timestamp": "2026-09-08T22:37:29+09:00"}
+   🔑 LinkedIn 인증이 필요하다 — 남은 계정도 같은 세션이라 여기서 멈춘다
+
+💾 저장: D:\vibe-coding\scrap_sns\output_linkedin_user\python\linkedin_user_full_20260908.json (누적 36편 · 이번 0편 · 계정 0개)

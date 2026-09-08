@@ -1,0 +1,33 @@
+🎯 대상 계정 1개
+
+📌 빌더 조쉬 (uxjosh) · 최대 3편
+   ▶ C:\Users\ahnbu\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\python.exe -u linkedin_scrap_by_user.py --user uxjosh --limit 3
+📊 기존 데이터 20개 로드됨. max_sequence_id: 20
+🚀 링크드인 사용자 스크래퍼 시작: uxjosh
+🔗 Target: https://www.linkedin.com/in/uxjosh/recent-activity/all/
+LAUNCH: mode=light window=none automation_flag=removed engine=persistent reason=2026-09-08 실측: 로그인 세션 + headless 로 활동목록 13건·866KB 정상
+📜 스크롤 및 데이터 수집 시작...
+   ⚡ [FeedUpdate] [7503082584923467777] (2026-09-08) Josh Kim: 디자이너로써 '디자인을 기가 막히게 ...
+   🖱️ '결과 더보기' 버튼 클릭
+   ⚡ [FeedUpdate] [7489958980635660288] (2026-08-03) Josh Kim: 제 책이 교보문고 IT종합베스트셀러 ...
+   ⚡ [FeedUpdate] [7489847092874612736] (2026-08-03) Josh Kim: 제가 운영하는 회사 '조슈아앤컴퍼니'...
+   🛑 개수 제한 도달 (3개) - 수집 중단 예정
+   🖱️ '결과 더보기' 버튼 클릭
+💾 업데이트 저장: output_linkedin_user\uxjosh\update\linkedin_uxjosh_update_20260908_223614.json (3개)
+💾 전체 데이터 저장 (정렬 완료): output_linkedin_user\uxjosh\linkedin_uxjosh_full_20260908.json (총 23개)
+📄 [JSON2MD] 변환 완료: output_linkedin_user\uxjosh\linkedin_uxjosh_full_20260908.md
+
+==================================================
+📊 스크래핑 결과 요약 (uxjosh)
+--------------------------------------------------
+⏱️  소요 시간: 0:00:33
+✅ 성공 건수: 3개
+❌ 실패 건수: 0개
+⏭️  범위 제외: 0개 (최신글 무시)
+💾 중복 제외: 20개 (기존 데이터)
+📦 최종 수집: 3개
+==================================================
+
+   ✅ 3편 (linkedin_uxjosh_full_20260908.json)
+
+💾 저장: D:\vibe-coding\scrap_sns\output_linkedin_user\python\linkedin_user_full_20260908.json (누적 36편 · 이번 3편 · 계정 1개)
