@@ -44,6 +44,13 @@ META_FIELDS = [
     "is_saved",
     "benchmark_accounts",
     "channel_id",
+    # 유튜브 카드가 "요약이 왜 없는지"를 한 줄로 그리려면 이 둘이 목록 응답에
+    # 실려야 한다. 위 is_own_post·is_saved 와 똑같은 함정이다 - 이 목록에 없으면
+    # /api/posts 가 값을 떨어뜨려 프런트가 항상 undefined 를 보고 사유 줄이
+    # 통째로 안 뜬다. 표시 문자열을 수집 데이터에 넣지 않고 뷰어에서 그리므로
+    # 이 두 상태값이 유일한 근거다. 계획: _docs/20260909_01 (W2 T2-a)
+    "transcript_status",
+    "summary_status",
 ]
 
 

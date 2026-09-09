@@ -11,7 +11,12 @@ from pathlib import Path
 from playwright.sync_api import sync_playwright
 
 from utils.auth_paths import linkedin_storage
-from utils.auth_status import exit_auth_required, is_orchestrated_run
+from utils.auth_status import (
+    AUTH_REQUIRED_EXIT_CODE,
+    AuthRequiredError,
+    is_orchestrated_run,
+    raise_auth_required,
+)
 from utils.benchmark_store import atomic_save_json
 from utils.json_to_md import convert_json_to_md
 
@@ -37,30 +42,13 @@ HEADLESS_MEASURED_REASON = (
 )
 BASE_DATA_DIR = "output_linkedin_user"
 
-# CLI 인자 파싱
-parser = argparse.ArgumentParser(description='LinkedIn User Activity Scraper')
-parser.add_argument('--user', required=True, help='LinkedIn User ID (slug)')
-parser.add_argument('--limit', type=int, default=0, help='Maximum number of posts to scrap (0 for unlimited)')
-parser.add_argument('--duration', type=str, help='Scrap range (e.g., 3d, 1m, 1y). Default unit is day if only number is given.')
-parser.add_argument('--after', type=str, help='Skip posts newer than this duration (e.g., 1m). Useful for picking up where you left off.')
-parser.add_argument('--no-headless', dest='no_headless', action='store_true',
-                    help='창을 띄운다. 세션이 만료돼 사람이 직접 로그인해야 할 때만 쓴다')
-args = parser.parse_args()
+# 🔴 여기서 argparse 를 실행하지 않는다. 모듈 최상단에서 parse_args() 를 부르면
+#    다른 파일이 이 모듈을 import 하는 순간 그 파일의 명령줄 인자를 읽고 죽는다.
+#    그래서 벤치마킹 러너가 계정마다 별도 프로세스를 띄울 수밖에 없었다(계정 5개 =
+#    브라우저 5개). 인자 파싱은 main() 안으로 내렸고, 값은 생성자 인자로 넘어간다.
+#    같은 수정 선례: CHANGELOG `fix(scraper): argparse 전역 실행 제거`
+#    계획: _docs/20260909_01 (W6 T6-b, T6-c)
 
-# 사람이 조작할 창이 필요한가. 공용 정본의 human_operates 로 넘어간다.
-NEEDS_HUMAN_LOGIN = args.no_headless
-
-USER_ID = args.user
-TARGET_LIMIT = args.limit
-DURATION_STR = args.duration
-AFTER_STR = args.after
-
-# 경로 설정
-USER_DATA_DIR = os.path.join(BASE_DATA_DIR, USER_ID)
-UPDATE_DIR = os.path.join(USER_DATA_DIR, "update")
-TARGET_URL = f"https://www.linkedin.com/in/{USER_ID}/recent-activity/all/"
-
-CRAWL_START_TIME = datetime.now()
 INCLUDE_IMAGES = True
 
 # 브라우저 UI 설정.
@@ -176,11 +164,70 @@ def get_date_from_snowflake_id(id_str):
     except:
         return None
 
+# --- 브라우저 기동 ---
+def launch_linkedin_browser(playwright, *, needs_human_login=False):
+    """창을 띄울지·어디에 띄울지는 여기서 정하지 않는다. 공용 정본이 정한다.
+
+    호출부가 여럿이라(단독 실행 · 벤치마킹 러너) 함수로 뺐다. 여기서 찍는
+    `LAUNCH:` 한 줄이 로그에 남고, 그 줄 수가 곧 브라우저 기동 횟수다 -
+    통합 효과(6회 → 2회)를 그 숫자로 잰다. 계획: _docs/20260909_01 (W6 T6-h, W6-1)
+    """
+    policy = decide_browser_policy(
+        human_operates=needs_human_login,
+        headless_reason=None if needs_human_login else HEADLESS_MEASURED_REASON,
+    )
+    print(policy.echo(), flush=True)
+    return playwright.chromium.launch(
+        headless=policy.headless,
+        args=list(policy.args),
+        ignore_default_args=list(policy.ignore_default_args),
+    )
+
+
+def new_linkedin_context(browser):
+    """로그인 세션을 실은 컨텍스트를 연다. 계정이 여럿이어도 이것 하나를 공유한다."""
+    context_options: dict = {
+        "viewport": {"width": WINDOW_WIDTH, "height": WINDOW_HEIGHT}
+    }
+    if os.path.exists(AUTH_FILE):
+        context_options["storage_state"] = AUTH_FILE
+    return browser.new_context(**context_options)
+
+
 # --- 메인 클래스 ---
 class LinkedinUserScraper:
-    def __init__(self):
+    """계정 하나의 활동 목록을 긁는다.
+
+    종전에는 모듈 전역 8개(사용자 id·대상 URL·수집 상한·기간·시작지점·데이터 폴더·
+    업데이트 폴더·창 필요 여부)를 파일 전체 18곳에서 읽었다. 그래서 한 프로세스에서
+    계정 둘을 돌릴 수 없었다 - 두 번째 계정이 첫 번째의 전역을 그대로 쓴다.
+    전부 생성자 인자로 옮겨 인스턴스마다 독립시켰다.
+    계획: _docs/20260909_01 (W6 T6-c)
+    """
+
+    def __init__(
+        self,
+        user_id,
+        *,
+        limit=0,
+        duration=None,
+        after=None,
+        needs_human_login=False,
+    ):
+        self.user_id = user_id
+        self.target_limit = limit or 0
+        self.duration_str = duration
+        self.after_str = after
+        # 사람이 조작할 창이 필요한가. 공용 정본의 human_operates 로 넘어간다.
+        self.needs_human_login = needs_human_login
+
+        self.user_data_dir = os.path.join(BASE_DATA_DIR, user_id)
+        self.update_dir = os.path.join(self.user_data_dir, "update")
+        self.target_url = f"https://www.linkedin.com/in/{user_id}/recent-activity/all/"
+        self.crawl_start_time = datetime.now()
+
         # 마이그레이션 실행
-        migrate_old_data(USER_ID)
+        migrate_old_data(self.user_id)
 
         self.posts = []
         self.collected_codes = set()
@@ -195,12 +242,12 @@ class LinkedinUserScraper:
         self.duplicate_count = 0 # 기존 데이터 중복에 의한 스킵
         
         # 기간 제한 설정
-        self.stop_duration = parse_duration(DURATION_STR)
-        self.stop_date = CRAWL_START_TIME - self.stop_duration if self.stop_duration else None
+        self.stop_duration = parse_duration(self.duration_str)
+        self.stop_date = self.crawl_start_time - self.stop_duration if self.stop_duration else None
         
         # 시작 지점 설정 (after)
-        self.after_duration = parse_duration(AFTER_STR)
-        self.after_date = CRAWL_START_TIME - self.after_duration if self.after_duration else None
+        self.after_duration = parse_duration(self.after_str)
+        self.after_date = self.crawl_start_time - self.after_duration if self.after_duration else None
         
         if self.stop_date:
             print(f"📅 수집 종료 기준: {self.stop_date.strftime('%Y-%m-%d %H:%M:%S')} 이전 글 발견 시 중단")
@@ -224,7 +271,7 @@ class LinkedinUserScraper:
     def manage_login(self, page):
         if os.path.exists(AUTH_FILE):
             try:
-                page.goto(TARGET_URL)
+                page.goto(self.target_url)
                 time.sleep(3)
             except Exception as e:
                 print(f"⚠️ 페이지 이동 중 에러: {e}")
@@ -240,8 +287,13 @@ class LinkedinUserScraper:
         #    아니라 즉시 EOFError 로 죽으면서 오류 추적만 남긴다(2026-09-08 실측: 0.0초).
         #    total_scrap 이 부르는 경로는 여기서 인증 필요 신호로 끝낸다 —
         #    저장글 수집기(linkedin_scrap.py:257)가 이미 쓰는 방식과 같다.
+        #    🔴 sys.exit 이 아니라 예외로 던진다. 벤치마킹 러너가 이 수집기를 한
+        #       프로세스 안에서 계정마다 부르므로, 여기서 프로세스를 죽이면 앞선
+        #       계정에서 모은 결과와 누적 저장이 통째로 날아간다. 종료코드 86 은
+        #       러너가 잡아서 낸다(linkedin_scrap_benchmark.py).
+        #       계획: _docs/20260909_01 (W6 T6-f)
         if is_orchestrated_run():
-            exit_auth_required(
+            raise_auth_required(
                 "linkedin",
                 reason="login_required",
                 current_url=page.url,
@@ -251,7 +303,7 @@ class LinkedinUserScraper:
         page.goto(LOGIN_URL)
         input(">>> 로그인을 완료하고 엔터키를 눌러주세요: ")
         self._save_storage_state(page)
-        page.goto(TARGET_URL)
+        page.goto(self.target_url)
         time.sleep(3)
 
     def _save_storage_state(self, page):
@@ -267,7 +319,7 @@ class LinkedinUserScraper:
         cookies = state.get("cookies") or []
         if not any(c.get("name") == "li_at" for c in cookies):
             print("❌ 받은 세션에 li_at 쿠키가 없다 — 기존 인증 파일을 그대로 둔다.")
-            exit_auth_required(
+            raise_auth_required(
                 "linkedin",
                 reason="invalid_session",
                 current_url=page.url,
@@ -361,8 +413,8 @@ class LinkedinUserScraper:
                 self.stopped_early = True
                 return
 
-            if TARGET_LIMIT > 0 and len(self.posts) >= TARGET_LIMIT:
-                print(f"   🛑 개수 제한 도달 ({TARGET_LIMIT}개) - 수집 중단 예정")
+            if self.target_limit > 0 and len(self.posts) >= self.target_limit:
+                print(f"   🛑 개수 제한 도달 ({self.target_limit}개) - 수집 중단 예정")
                 self.stopped_early = True
                 return
 
@@ -427,12 +479,12 @@ class LinkedinUserScraper:
                 "post_url": post_url,
                 "profile_slogan": profile_slogan,
                 "images": list(set(images)),
-                "user_link": f"https://www.linkedin.com/in/{USER_ID}",
+                "user_link": f"https://www.linkedin.com/in/{self.user_id}",
                 "like_count": counts.get("like_count"),
                 "comment_count": counts.get("comment_count"),
                 "share_count": counts.get("share_count"),
 
-                "crawled_at": CRAWL_START_TIME.isoformat(),
+                "crawled_at": self.crawl_start_time.isoformat(),
                 "content_type": "carousel" if len(images) > 1 else ("image" if images else "text"),
                 "source": "network_user_feed"
             }
@@ -470,8 +522,8 @@ class LinkedinUserScraper:
                 return
 
             # 개수 제한 확인
-            if TARGET_LIMIT > 0 and len(self.posts) >= TARGET_LIMIT:
-                print(f"   🛑 개수 제한 도달 ({TARGET_LIMIT}개) - 수집 중단 예정")
+            if self.target_limit > 0 and len(self.posts) >= self.target_limit:
+                print(f"   🛑 개수 제한 도달 ({self.target_limit}개) - 수집 중단 예정")
                 self.stopped_early = True
                 return
 
@@ -525,7 +577,7 @@ class LinkedinUserScraper:
                 "like_count": counts.get("like_count"),
                 "comment_count": counts.get("comment_count"),
                 "share_count": counts.get("share_count"),
-                "crawled_at": CRAWL_START_TIME.isoformat(),
+                "crawled_at": self.crawl_start_time.isoformat(),
                 "content_type": "carousel" if len(images) > 1 else ("image" if images else "text"),
                 "source": "network_user"
             }
@@ -540,93 +592,91 @@ class LinkedinUserScraper:
             pass
 
     def get_latest_full_file(self):
-        if not os.path.exists(USER_DATA_DIR):
+        if not os.path.exists(self.user_data_dir):
             return None
         # 새 규칙 우선 검색
-        files = [f for f in os.listdir(USER_DATA_DIR) if f.startswith(f"linkedin_{USER_ID}_full_") and f.endswith(".json")]
+        files = [f for f in os.listdir(self.user_data_dir) if f.startswith(f"linkedin_{self.user_id}_full_") and f.endswith(".json")]
         if not files:
             return None
         files.sort(reverse=True)
-        return os.path.join(USER_DATA_DIR, files[0])
+        return os.path.join(self.user_data_dir, files[0])
 
     def run(self):
-        start_time_dt = datetime.now()
-        print(f"🚀 링크드인 사용자 스크래퍼 시작: {USER_ID}")
-        print(f"🔗 Target: {TARGET_URL}")
-        
+        """브라우저를 스스로 열고 수집한다. 단독 실행(CLI) 경로다."""
         with sync_playwright() as p:
-            # 창을 띄울지·어디에 띄울지는 여기서 정하지 않는다. 공용 정본이 정한다.
-            # 사람이 직접 로그인해야 할 때만 --no-headless 로 창을 부른다.
-            policy = decide_browser_policy(
-                human_operates=NEEDS_HUMAN_LOGIN,
-                headless_reason=None if NEEDS_HUMAN_LOGIN else HEADLESS_MEASURED_REASON,
-            )
-            print(policy.echo(), flush=True)
-            browser = p.chromium.launch(
-                headless=policy.headless,
-                args=list(policy.args),
-                ignore_default_args=list(policy.ignore_default_args),
-            )
-            context_options: dict = {
-                "viewport": {"width": WINDOW_WIDTH, "height": WINDOW_HEIGHT}
-            }
-            if os.path.exists(AUTH_FILE):
-                context_options["storage_state"] = AUTH_FILE
-
-
-            context = browser.new_context(**context_options)
-            page = context.new_page()
-            page.on("response", self.handle_response)
-            self.manage_login(page)
-            
-            print("📜 스크롤 및 데이터 수집 시작...")
-            no_new_data_count = 0
-            last_count = self.success_count + self.skip_count
-            time.sleep(5)
-            
-            while not self.stopped_early:
+            browser = launch_linkedin_browser(p, needs_human_login=self.needs_human_login)
+            try:
+                context = new_linkedin_context(browser)
+                page = context.new_page()
                 try:
-                    # '결과 더보기' 버튼 탐지 (클래스 우선)
-                    load_more_btn = page.locator('button.scaffold-finite-scroll__load-button')
-                    
-                    # 텍스트 기반 폴백 탐색
-                    if load_more_btn.count() == 0:
-                        load_more_btn = page.locator('button:has-text("결과 더보기"), button:has-text("Show more results")')
+                    self.run_with_page(page)
+                finally:
+                    page.close()
+            finally:
+                browser.close()
 
-                    if load_more_btn.count() > 0 and load_more_btn.first.is_visible():
-                        print("   🖱️ '결과 더보기' 버튼 클릭")
-                        load_more_btn.first.click()
-                        time.sleep(3)
-                    else:
-                        page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-                        time.sleep(3)
-                except:
+    def run_with_page(self, page):
+        """이미 열린 page 로 수집한다.
+
+        벤치마킹 러너가 브라우저 하나·컨텍스트 하나를 열고 계정마다 이 함수를
+        부른다. page 를 계정 간에 재사용하지 않는 이유: 아래 `page.on("response", ...)`
+        가 인스턴스에 묶여 있어, 같은 page 에 두 인스턴스가 붙으면 앞 계정의
+        핸들러가 뒤 계정 응답까지 먹는다. 계획: _docs/20260909_01 (W6 T6-d·T6-e)
+        """
+        start_time_dt = datetime.now()
+        print(f"🚀 링크드인 사용자 스크래퍼 시작: {self.user_id}")
+        print(f"🔗 Target: {self.target_url}")
+
+        page.on("response", self.handle_response)
+        self.manage_login(page)
+
+        print("📜 스크롤 및 데이터 수집 시작...")
+        no_new_data_count = 0
+        last_count = self.success_count + self.skip_count
+        time.sleep(5)
+
+        while not self.stopped_early:
+            try:
+                # '결과 더보기' 버튼 탐지 (클래스 우선)
+                load_more_btn = page.locator('button.scaffold-finite-scroll__load-button')
+                
+                # 텍스트 기반 폴백 탐색
+                if load_more_btn.count() == 0:
+                    load_more_btn = page.locator('button:has-text("결과 더보기"), button:has-text("Show more results")')
+
+                if load_more_btn.count() > 0 and load_more_btn.first.is_visible():
+                    print("   🖱️ '결과 더보기' 버튼 클릭")
+                    load_more_btn.first.click()
+                    time.sleep(3)
+                else:
                     page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
                     time.sleep(3)
-                
-                current_total_count = self.success_count + self.skip_count
-                if current_total_count == last_count:
-                    no_new_data_count += 1
-                else:
-                    no_new_data_count = 0
-                    last_count = current_total_count
-                
-                if no_new_data_count >= 5:
-                    print("🛑 더 이상 새로운 데이터가 없습니다.")
-                    break
-                
-                if TARGET_LIMIT > 0 and len(self.posts) >= TARGET_LIMIT:
-                    break
+            except:
+                page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+                time.sleep(3)
+            
+            current_total_count = self.success_count + self.skip_count
+            if current_total_count == last_count:
+                no_new_data_count += 1
+            else:
+                no_new_data_count = 0
+                last_count = current_total_count
+            
+            if no_new_data_count >= 5:
+                print("🛑 더 이상 새로운 데이터가 없습니다.")
+                break
+            
+            if self.target_limit > 0 and len(self.posts) >= self.target_limit:
+                break
 
-            self.save_results()
-            browser.close()
+        self.save_results()
 
         end_time_dt = datetime.now()
         duration = end_time_dt - start_time_dt
         
         # 결과 요약 출력
         print("\n" + "="*50)
-        print(f"📊 스크래핑 결과 요약 ({USER_ID})")
+        print(f"📊 스크래핑 결과 요약 ({self.user_id})")
         print("-" * 50)
         print(f"⏱️  소요 시간: {str(duration).split('.')[0]}")
         print(f"✅ 성공 건수: {self.success_count}개")
@@ -655,8 +705,8 @@ class LinkedinUserScraper:
         # 여기서는 code 역순(최신순)으로 정렬하여 저장
         new_posts.sort(key=lambda x: int(x['code']), reverse=True)
         
-        timestamp = CRAWL_START_TIME.strftime("%Y%m%d_%H%M%S")
-        update_file = os.path.join(UPDATE_DIR, f"linkedin_{USER_ID}_update_{timestamp}.json")
+        timestamp = self.crawl_start_time.strftime("%Y%m%d_%H%M%S")
+        update_file = os.path.join(self.update_dir, f"linkedin_{self.user_id}_update_{timestamp}.json")
         save_json(update_file, [{"index": i+1, **p} for i, p in enumerate(new_posts)])
         print(f"💾 업데이트 저장: {update_file} ({len(new_posts)}개)")
         
@@ -712,21 +762,21 @@ class LinkedinUserScraper:
                 "new_items_count": new_items_count,
                 "duplicates_removed": len(self.posts) - new_items_count, # 이번 수집 내에서의 중복
                 "source_file": source_filename,
-                "user_id": USER_ID,
+                "user_id": self.user_id,
                 "note": "Sorted by Snowflake ID (code)"
             })
 
-        full_file = os.path.join(USER_DATA_DIR, f"linkedin_{USER_ID}_full_{CRAWL_START_TIME.strftime('%Y%m%d')}.json")
+        full_file = os.path.join(self.user_data_dir, f"linkedin_{self.user_id}_full_{self.crawl_start_time.strftime('%Y%m%d')}.json")
         
         full_data = {
             "metadata": {
                 "version": "1.1", # 버전 업
-                "user_id": USER_ID,
+                "user_id": self.user_id,
                 "crawled_at": datetime.now().isoformat(),
                 "total_count": len(final_posts),
                 "max_sequence_id": self.max_sequence_id,
-                "limit": TARGET_LIMIT,
-                "duration": DURATION_STR,
+                "limit": self.target_limit,
+                "duration": self.duration_str,
                 "merge_history": merge_history
             },
             "posts": final_posts
@@ -737,6 +787,36 @@ class LinkedinUserScraper:
         # Markdown 자동 변환
         convert_json_to_md(full_file)
 
+def main(argv=None):
+    """단독 실행 진입점.
+
+    인자 파싱이 여기 있는 이유: 모듈 최상단에서 하면 이 파일을 import 하는 다른
+    파일의 명령줄을 읽고 죽는다. 계획: _docs/20260909_01 (W6 T6-b)
+    """
+    parser = argparse.ArgumentParser(description='LinkedIn User Activity Scraper')
+    parser.add_argument('--user', required=True, help='LinkedIn User ID (slug)')
+    parser.add_argument('--limit', type=int, default=0, help='Maximum number of posts to scrap (0 for unlimited)')
+    parser.add_argument('--duration', type=str, help='Scrap range (e.g., 3d, 1m, 1y). Default unit is day if only number is given.')
+    parser.add_argument('--after', type=str, help='Skip posts newer than this duration (e.g., 1m). Useful for picking up where you left off.')
+    parser.add_argument('--no-headless', dest='no_headless', action='store_true',
+                        help='창을 띄운다. 세션이 만료돼 사람이 직접 로그인해야 할 때만 쓴다')
+    args = parser.parse_args(argv)
+
+    scraper = LinkedinUserScraper(
+        args.user,
+        limit=args.limit,
+        duration=args.duration,
+        after=args.after,
+        needs_human_login=args.no_headless,
+    )
+    try:
+        scraper.run()
+    except AuthRequiredError:
+        # 단독 실행에서는 종전과 같이 종료코드 86 으로 끝난다. 신호 줄은 이미
+        # raise_auth_required() 가 찍었다. 계획: _docs/20260909_01 (W6 T6-f)
+        return AUTH_REQUIRED_EXIT_CODE
+    return 0
+
+
 if __name__ == "__main__":
-    scraper = LinkedinUserScraper()
-    scraper.run()
+    sys.exit(main())

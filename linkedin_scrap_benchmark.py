@@ -18,11 +18,18 @@ from __future__ import annotations
 
 import argparse
 import os
-import subprocess
 import sys
+from contextlib import contextmanager
 from datetime import datetime
 
-from utils.auth_status import AUTH_REQUIRED_EXIT_CODE
+from playwright.sync_api import sync_playwright
+
+from linkedin_scrap_by_user import (
+    LinkedinUserScraper,
+    launch_linkedin_browser,
+    new_linkedin_context,
+)
+from utils.auth_status import AUTH_REQUIRED_EXIT_CODE, AuthRequiredError
 from utils.benchmark_store import (
     KEEP_LIMIT,
     atomic_save_json,
@@ -74,28 +81,43 @@ def latest_full_file(slug: str):
     return os.path.join(directory, sorted(files)[-1])
 
 
-def run_collector(slug: str, limit: int, dry_run: bool) -> int:
-    """기존 수집기를 그대로 부른다. 수집 로직을 여기서 다시 짜지 않는다.
+def run_collector(context, slug: str, limit: int, dry_run: bool) -> int:
+    """기존 수집기를 **같은 프로세스 안에서** 부른다. 수집 로직은 그대로 쓴다.
 
-    🔴 **자식의 종료코드를 그대로 돌려준다.** 성공/실패로 뭉개면 인증 필요 신호
-       (`AUTH_REQUIRED_EXIT_CODE`)가 여기서 삼켜져 `total_scrap` 에 도달하지 못하고,
-       「업데이트」 결과창이 재로그인을 안내할 수 없다. 계획: _docs/20260908_02 (W2-5)
+    종전에는 계정마다 자식 프로세스를 띄웠다(계정 5개 = 프로그램 5개 = 브라우저 5회).
+    그럴 수밖에 없었던 이유는 `linkedin_scrap_by_user.py` 가 모듈 최상단에서
+    `parse_args()` 를 불러 import 자체가 불가능했기 때문이다. 그 제약이 사라져
+    브라우저 하나를 공유한다. 계획: _docs/20260909_01 (W6 T6-e)
+
+    🔴 **종료코드 규약은 그대로다.** 인증 필요는 86, 그 밖의 실패는 1, 성공은 0.
+       이 값이 collect() → main() → total_scrap 으로 올라가야 「업데이트」 결과창이
+       재로그인을 안내한다. 계획: _docs/20260908_02 (W2-5)
+
+    🔴 **계정 하나의 오류를 여기서 가둔다.** 프로세스가 갈라져 있을 때는 OS 가
+       공짜로 해주던 격리다. 한 프로세스로 합쳤으니 코드가 대신한다.
     """
-    command = [
-        sys.executable, "-u", "linkedin_scrap_by_user.py",
-        "--user", slug,
-        "--limit", str(limit),
-    ]
-    print(f"   ▶ {' '.join(command)}")
+    print(f"   ▶ {slug} (limit {limit}) — 공용 브라우저로 수집")
     if dry_run:
         print("     (dry-run — 실행하지 않음)")
         return 0
-    result = subprocess.run(command, cwd=PROJECT_ROOT)
-    if result.returncode == AUTH_REQUIRED_EXIT_CODE:
+
+    page = context.new_page()
+    try:
+        scraper = LinkedinUserScraper(slug, limit=limit)
+        scraper.run_with_page(page)
+        return 0
+    except AuthRequiredError:
         print("   🔑 LinkedIn 인증이 필요하다 — 남은 계정도 같은 세션이라 여기서 멈춘다")
-    elif result.returncode != 0:
-        print(f"   ⚠️ 수집기가 {result.returncode} 로 끝났다 — 이 계정은 건너뛴다")
-    return result.returncode
+        return AUTH_REQUIRED_EXIT_CODE
+    except Exception as error:  # noqa: BLE001 - 계정 하나의 실패로 나머지를 멈추지 않는다
+        print(f"   ⚠️ 수집 중 오류 ({type(error).__name__}: {error}) — 이 계정은 건너뛴다")
+        return 1
+    finally:
+        # 닫지 않으면 계정 수만큼 페이지가 한 프로세스에 쌓인다.
+        try:
+            page.close()
+        except Exception:
+            pass
 
 
 def to_standard(raw: dict, account: dict, slug: str) -> dict:
@@ -123,6 +145,29 @@ def to_standard(raw: dict, account: dict, slug: str) -> dict:
     return normalized
 
 
+@contextmanager
+def _open_shared_browser(dry_run: bool):
+    """계정 전체가 함께 쓸 브라우저·컨텍스트를 연다.
+
+    dry-run 은 수집기를 부르지 않으므로 브라우저도 열지 않는다 - 대상만 출력하는
+    실행에서 창(또는 headless 프로세스)이 뜨면 목적이 어긋난다.
+    """
+    if dry_run:
+        yield None, None
+        return
+
+    with sync_playwright() as playwright:
+        browser = launch_linkedin_browser(playwright)
+        try:
+            context = new_linkedin_context(browser)
+            try:
+                yield browser, context
+            finally:
+                context.close()
+        finally:
+            browser.close()
+
+
 def collect(limit_override: int | None, dry_run: bool, only: str | None) -> tuple[int, bool]:
     """(통합본에 넣은 글 수, 인증 필요 여부)를 돌려준다.
 
@@ -142,43 +187,48 @@ def collect(limit_override: int | None, dry_run: bool, only: str | None) -> tupl
     collected_accounts = 0
     auth_required = False
 
-    for account in accounts:
-        slug = str((account.get("channels") or {}).get("linkedin") or "").strip()
-        if not slug:
-            continue
-        limit = limit_override or int(account.get("limit") or DEFAULT_LIMIT)
-        print(f"\n📌 {account.get('name') or account.get('id')} ({slug}) · 최대 {limit}편")
-
-        returncode = run_collector(slug, limit, dry_run)
-        if returncode == AUTH_REQUIRED_EXIT_CODE:
-            # 계정마다 같은 세션 파일을 쓴다. 하나가 만료면 나머지도 반드시 만료다 —
-            # 남은 계정을 도는 것은 실패를 반복하는 비용일 뿐이다. 여기까지 모은
-            # 것은 아래에서 정상 저장한다(누적 보존).
-            auth_required = True
-            break
-        if returncode != 0:
-            continue
-
-        full_file = latest_full_file(slug)
-        if not full_file:
-            print(f"   ⚠️ 산출물을 찾지 못했다: {os.path.join(USER_DATA_ROOT, slug)}")
-            continue
-
-        data = load_json(full_file, [])
-        raw_posts = data.get("posts", []) if isinstance(data, dict) else (data or [])
-        # 최신 limit 편만 통합본에 넣는다. 계정 폴더에는 과거 수집분이 쌓여 있어
-        # 그대로 넣으면 상한이 무의미해진다.
-        picked = raw_posts[:limit]
-        added = 0
-        for raw in picked:
-            code = str(raw.get("code") or "")
-            if not code or code in seen_codes:
+    # 브라우저 하나·컨텍스트 하나를 계정 전체가 공유한다. 종전에는 계정마다
+    # 프로세스가 떠서 브라우저도 그만큼 기동됐다(계정 5개 = 5회).
+    # 계정마다 page 만 새로 연다 - 응답 핸들러가 인스턴스에 묶여 있어서다.
+    # 계획: _docs/20260909_01 (W6 T6-e)
+    with _open_shared_browser(dry_run) as (_browser, context):
+        for account in accounts:
+            slug = str((account.get("channels") or {}).get("linkedin") or "").strip()
+            if not slug:
                 continue
-            seen_codes.add(code)
-            merged.append(to_standard(raw, account, slug))
-            added += 1
-        collected_accounts += 1
-        print(f"   ✅ {added}편 ({os.path.basename(full_file)})")
+            limit = limit_override or int(account.get("limit") or DEFAULT_LIMIT)
+            print(f"\n📌 {account.get('name') or account.get('id')} ({slug}) · 최대 {limit}편")
+
+            returncode = run_collector(context, slug, limit, dry_run)
+            if returncode == AUTH_REQUIRED_EXIT_CODE:
+                # 계정마다 같은 세션 파일을 쓴다. 하나가 만료면 나머지도 반드시 만료다 —
+                # 남은 계정을 도는 것은 실패를 반복하는 비용일 뿐이다. 여기까지 모은
+                # 것은 아래에서 정상 저장한다(누적 보존).
+                auth_required = True
+                break
+            if returncode != 0:
+                continue
+
+            full_file = latest_full_file(slug)
+            if not full_file:
+                print(f"   ⚠️ 산출물을 찾지 못했다: {os.path.join(USER_DATA_ROOT, slug)}")
+                continue
+
+            data = load_json(full_file, [])
+            raw_posts = data.get("posts", []) if isinstance(data, dict) else (data or [])
+            # 최신 limit 편만 통합본에 넣는다. 계정 폴더에는 과거 수집분이 쌓여 있어
+            # 그대로 넣으면 상한이 무의미해진다.
+            picked = raw_posts[:limit]
+            added = 0
+            for raw in picked:
+                code = str(raw.get("code") or "")
+                if not code or code in seen_codes:
+                    continue
+                seen_codes.add(code)
+                merged.append(to_standard(raw, account, slug))
+                added += 1
+            collected_accounts += 1
+            print(f"   ✅ {added}편 ({os.path.basename(full_file)})")
 
     # 이번 수집분만 저장하면 직전 수집분이 통합본에서 사라진다 - merge_results()
     # 가 이 폴더의 최신 파일 하나만 읽기 때문이다. 쌓아서 저장한다.
@@ -214,7 +264,7 @@ def collect(limit_override: int | None, dry_run: bool, only: str | None) -> tupl
     return len(posts), auth_required
 
 
-def main():
+def main(argv=None):
     parser = argparse.ArgumentParser(
         description="벤치마킹 계정의 LinkedIn 글 수집 (계정 단위)"
     )
@@ -224,7 +274,7 @@ def main():
                         help="계정 id 하나만 돌린다. 연결부 검증용")
     parser.add_argument("--dry-run", action="store_true",
                         help="수집기를 부르지 않고 대상만 출력한다")
-    args = parser.parse_args()
+    args = parser.parse_args(argv)
 
     count, auth_required = collect(args.limit, args.dry_run, args.only)
     if auth_required:

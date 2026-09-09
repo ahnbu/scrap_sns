@@ -652,7 +652,7 @@ def _canonical_auth_required_platform(value):
 
 def _normalize_scrap_summary(summary):
     if not isinstance(summary, dict):
-        return {"auth_required": [], "platform_results": {}}
+        return {"auth_required": [], "platform_results": {}, "warnings": []}
 
     platform_results = {}
     for raw_platform, raw_result in (summary.get("platform_results") or {}).items():
@@ -704,9 +704,16 @@ def _normalize_scrap_summary(summary):
             normalized_auth_required.append(platform)
             seen.add(platform)
 
+    # 🔴 도구 부재 경고는 플랫폼 정규화를 태우지 않는다. 그 정규화는 threads·
+    #    linkedin·x 만 인정해 youtube 를 버리는데, 이 경고의 주인공이 바로 youtube 다.
+    #    계획: _docs/20260909_01 (W5 T5-c)
+    raw_warnings = summary.get("warnings")
+    warnings = [item for item in raw_warnings if isinstance(item, dict)] if isinstance(raw_warnings, list) else []
+
     return {
         "auth_required": normalized_auth_required,
         "platform_results": platform_results,
+        "warnings": warnings,
     }
 
 
@@ -1448,6 +1455,9 @@ def run_scrap():
             "consistency_probe": consistency_probe,
             "auth_required": summary["auth_required"],
             "platform_results": summary["platform_results"],
+            # 자막 도구처럼 「수집은 됐는데 일부가 조용히 빈」 경우를 결과창까지 올린다.
+            # 계획: _docs/20260909_01 (W5)
+            "warnings": summary.get("warnings") or [],
         })
     except Exception as e:
         if progress_started:
@@ -1658,10 +1668,14 @@ def search_posts():
 
     platform = _normalize_platform_filter(request.args.get("platform"))
 
+    # 기본 상한 500 → 800. 벤치마킹 포함이 검색 기본이 되면서 흔한 검색어에서
+    # 내 저장글이 상한 밖으로 밀렸다 - 실측(2026-09-09) "AI" 492 → 370건(-24.8%).
+    # 계획이 미리 정한 기준(-5% 이하면 상향)에 걸렸다. 하드 상한 1000 은 그대로다.
+    # 계획: _docs/20260909_01 (W3-4, 위험 7)
     try:
-        limit = int(request.args.get("limit", 500))
+        limit = int(request.args.get("limit", 800))
     except (TypeError, ValueError):
-        limit = 500
+        limit = 800
     limit = max(1, min(limit, 1000))
 
     try:

@@ -1312,13 +1312,32 @@ input:checked + .toggle-slider:before {
 .bm-detail select:focus {
   border-color: rgba(127, 13, 242, 0.5);
 }
-/* 벤치마킹 배지. 외부 요약 배지와 같은 채도대를 쓴다 - 기존 팔레트 밖의
-   색을 새로 들이지 않는다(P7 합격 기준). primary 계열이라 "내 도구가 붙인
-   표시"로 읽힌다. 계획: _docs/20260906_01 (P6) */
-.external-summary-badge--benchmark {
+/* 벤치마킹 표시 - 날짜 줄 끝의 동그란 `B`.
+   푸터의 계정 이름 배지를 대신한다. 누를 수 없는 라벨이라 cursor 를 주지 않는다 -
+   진입점을 3개에서 2개로 줄이는 것이 이 변경의 목적이다.
+   지름 15px 는 날짜 글자(12px)보다 조금 크되 이름 줄을 침범하지 않는 크기다.
+   계획: _docs/20260909_01 (W4) */
+.benchmark-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 9999px;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 1;
   background-color: rgba(127, 13, 242, 0.2);
-  border-color: rgba(127, 13, 242, 0.3);
-  color: #7f0df2;
+  border: 1px solid rgba(127, 13, 242, 0.35);
+  color: #a855f7;
+}
+/* 내가 저장도 한 글(겹친 글 14건). 벤치마킹 전용분과 한눈에 갈려야
+   "이건 내가 고른 것"이 읽힌다. 계획: _docs/20260906_03 (W1) */
+.benchmark-mark--saved {
+  background-color: rgba(45, 212, 191, 0.18);
+  border-color: rgba(45, 212, 191, 0.5);
+  color: #5eead4;
 }
 
 /* 벤치마킹 계정 칩. 태그 칩(.global-tag-chip)과 같은 규격을 쓰고 색만 갈린다 -
@@ -1350,18 +1369,8 @@ input:checked + .toggle-slider:before {
   color: #6b7280;
   padding: 2px 4px;
 }
-/* 배지가 버튼이 됐다. 눌러서 그 계정만 볼 수 있다는 것이 보여야 한다. */
-button.external-summary-badge--benchmark {
-  cursor: pointer;
-  font-family: inherit;
-}
-/* 내가 저장도 한 글. 벤치마킹 전용분과 한눈에 갈려야 "이건 내가 고른 것"이
-   읽힌다. 별표와 같은 금색 계열을 써서 새 색을 늘리지 않는다.
-   계획: _docs/20260906_03 (W1) */
-button.external-summary-badge--benchmark-saved {
-  border-color: rgba(250, 204, 21, 0.45);
-  color: #facc15;
-}
+/* 푸터의 벤치마킹 배지 스타일 3종은 W4 에서 지웠다 - 배지 자체가 사라졌다.
+   구분 표시는 날짜 줄의 .benchmark-mark 가 맡는다. 계획: _docs/20260909_01 (W4) */
 /* .benchmark-chip-divider 는 W5 에서 지웠다 - 계정 칩이 전용 줄로 갈라져
    같은 줄 구분선이 필요 없어졌다. 줄바꿈 때 구분선이 줄 끝으로 밀려
    경계 역할을 못 하던 것이 애초의 문제였다. 계획: _docs/20260906_03 (W5) */

@@ -32,6 +32,7 @@ import requests
 
 from utils import metric_refresh
 from utils.agy_client import call_agy
+from utils.auth_status import emit_tool_unavailable
 from utils.common import load_json, save_json
 from utils.post_schema import normalize_post
 
@@ -266,6 +267,15 @@ def ensure_provider():
 
     if not os.path.exists(POT_PROVIDER_ENTRY):
         print(f"   ❌ PO token provider 를 찾을 수 없습니다: {POT_PROVIDER_ENTRY}")
+        # 사람용 경고만 남기면 또 조용히 지나간다. 2026-09-06에 이 폴더가 지워졌는데
+        # 9/9까지 아무도 몰랐다. 계획: _docs/20260909_01 (W5)
+        emit_tool_unavailable(
+            "bgutil-pot-provider",
+            platform="youtube",
+            reason="entry_missing",
+            impact="new_transcripts_blocked",
+            path=POT_PROVIDER_ENTRY,
+        )
         return False, None
 
     print("   🚀 PO token provider 기동 중...")
@@ -287,6 +297,14 @@ def ensure_provider():
         time.sleep(1)
 
     print(f"   ❌ PO token provider 가 {POT_READY_TIMEOUT_SECONDS}초 내 응답하지 않았습니다. 자막 수집을 건너뜁니다.")
+    emit_tool_unavailable(
+        "bgutil-pot-provider",
+        platform="youtube",
+        reason="port_unresponsive",
+        impact="new_transcripts_blocked",
+        path=POT_PROVIDER_URL,
+        extra={"timeout_seconds": POT_READY_TIMEOUT_SECONDS},
+    )
     try:
         process.terminate()
     except Exception:

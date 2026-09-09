@@ -181,16 +181,17 @@ function getInitialHideOwnPosts() {
     }
 }
 
-const SHOW_BENCHMARK_POSTS_STORAGE_KEY = 'sns_show_benchmark_posts';
+// 「목록에 벤치마킹 글 함께 보기」 토글이 쓰던 키. 토글을 없앴으므로 죽은 키다.
+// 남겨두면 다음 사람이 "이 값이 뭘 바꾸나" 하고 찾게 되므로 한 번 지우고 만다.
+// ALL 은 이제 항상 전부 보이고, 내 저장글만 보려면 상단 「저장」 버튼을 쓴다.
+// 계획: _docs/20260909_01 (W3 T3-i)
+const LEGACY_SHOW_BENCHMARK_POSTS_STORAGE_KEY = 'sns_show_benchmark_posts';
 
-function getInitialShowBenchmarkPosts() {
+function clearLegacyShowBenchmarkPosts() {
     try {
-        const stored = localStorage.getItem(SHOW_BENCHMARK_POSTS_STORAGE_KEY);
-        // 저장값이 없으면 꺼짐. hideOwnPostsToggle 과 반대 방향의 기본값이다 -
-        // 남의 글은 명시적으로 켜야 보인다. 계획: _docs/20260906_01 (A2)
-        return stored === null ? false : stored === 'true';
+        localStorage.removeItem(LEGACY_SHOW_BENCHMARK_POSTS_STORAGE_KEY);
     } catch (error) {
-        return false;
+        // 프라이빗 창 등에서 접근이 막혀도 화면 동작에는 영향이 없다.
     }
 }
 
@@ -268,7 +269,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // 남의 글로 덮이면 내 북마크를 찾을 때마다 헤집게 된다.
     // 계획: _docs/20260906_01 (A2, D9)
     let benchmarkAccounts = [];
-    let showBenchmarkPosts = getInitialShowBenchmarkPosts();
+    clearLegacyShowBenchmarkPosts();
+    // 「저장」 버튼. 남이 쓴 글 중 내가 저장한 것만 본다 - MY(내가 쓴 글)·벤치마킹
+    // (남의 계정에서 긁어온 글)과 셋이 전체를 정확히 나눈다(교집합 0, 겹친 글 제외).
+    // 저장하지 않는다 - MY·벤치마킹과 같은 규칙이다. 계획: _docs/20260909_01 (W3)
+    let showSavedOnly = false;
     // 「벤치마킹만 보기」. MY(showOwnPostsOnly)와 대칭이고 같은 규칙을 따른다 -
     // 저장하지 않는다. 뷰어를 열면 항상 내 저장글부터 시작한다.
     let showBenchmarkOnly = false;
@@ -398,15 +403,19 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 200);
     });
 
+    // 저장·MY·벤치마킹은 `filter-chip` 클래스를 쓰지만 플랫폼 선택이 아니다.
+    // 켜짐 표시를 얻으려고 그 클래스를 붙였을 뿐이고, 상태는 각자 자기 변수를 따른다.
+    // 🔴 새 범위 버튼을 만들면 이 목록에 반드시 넣는다 - 빠뜨리면 그 버튼을 누를 때
+    //    플랫폼 필터가 `undefined` 로 초기화되고, 켜짐 표시도 곧바로 지워진다.
+    //    실제로 「저장」 버튼에서 그 일이 났다(verify_saved_filter_headless.mjs S6).
+    // 계획: _docs/20260909_01 (W3), _docs/20260828_01 (T1-a)
+    const SCOPE_BUTTON_IDS = new Set(['savedPostsBtn', 'myPostsBtn', 'benchmarkBtn']);
+
     // 플랫폼 선택과 칩 켜짐 표시를 한 곳에서 맞춘다. 위임 핸들러와 MY 완화(T1)가 같이 쓴다.
-    // MY 버튼은 건드리지 않는다 - 자기 상태(showOwnPostsOnly)를 따르며
-    // syncMyPostsButtonState() 가 맡는다.
-    // 계획: _docs/20260828_01 (T1-a)
     function setPlatformFilter(name) {
         currentFilter = name;
         document.querySelectorAll('.filter-chip').forEach((b) => {
-            // MY·벤치마킹은 플랫폼 선택이 아니라 별도 토글이다. 자기 상태를 따른다.
-            if (b.id === 'myPostsBtn' || b.id === 'benchmarkBtn') return;
+            if (SCOPE_BUTTON_IDS.has(b.id)) return;
             b.classList.toggle('active', b.dataset.filter === name);
         });
     }
@@ -415,8 +424,7 @@ document.addEventListener('DOMContentLoaded', () => {
     filterContainer.addEventListener('click', (e) => {
         const btn = e.target.closest('.filter-chip');
         if (!btn) return;
-        // MY·벤치마킹도 filter-chip 이지만 플랫폼 선택이 아니다. 자기 핸들러가 처리한다.
-        if (btn.id === 'myPostsBtn' || btn.id === 'benchmarkBtn') return;
+        if (SCOPE_BUTTON_IDS.has(btn.id)) return;
 
         // 플랫폼을 골랐다는 건 그 플랫폼 글을 보겠다는 뜻이다. 내 글만 보는 상태를 유지하지 않는다.
         // 이게 없으면 MY 가 켜진 채로 X·YouTube 를 눌러 0건이 뜬다.
@@ -432,6 +440,17 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         renderPosts();
     });
+
+    // 저장 필터 - 남이 쓴 글 중 내가 저장한 것만 보기. MY·벤치마킹과 대칭이다.
+    // 「전부 / 내가 모은 것 / 내가 쓴 것 / 남이 쓴 것」으로 상단 줄이 완성된다.
+    // 계획: _docs/20260909_01 (W3)
+    const savedPostsBtn = document.getElementById('savedPostsBtn');
+
+    function syncSavedPostsButtonState() {
+        if (!savedPostsBtn) return;
+        savedPostsBtn.setAttribute('aria-pressed', showSavedOnly ? 'true' : 'false');
+        savedPostsBtn.classList.toggle('active', showSavedOnly);
+    }
 
     // MY 필터 - 내가 쓴 글만 보기. 계획: _docs/20260827_05 (T1~T3)
     const myPostsBtn = document.getElementById('myPostsBtn');
@@ -489,6 +508,48 @@ document.addEventListener('DOMContentLoaded', () => {
         if (relaxed.platform !== currentFilter) setPlatformFilter(relaxed.platform);
     }
 
+    /**
+     * 저장·MY·벤치마킹은 한 번에 하나만 켜진다.
+     *
+     * 셋이 전체를 정확히 나누므로(교집합 0) 둘을 켜면 겹친 글 14건 말고는 빈 화면이
+     * 된다. 종전에 MY↔벤치마킹만 이 규칙을 지켰고, 「저장」도 같은 규칙에 넣는다 -
+     * 규칙이 느는 게 아니라 일관돼진다. 계획: _docs/20260909_01 (W3 T3-c, A7)
+     */
+    function turnOffOtherScopeButtons(keep) {
+        if (keep !== 'saved') showSavedOnly = false;
+        if (keep !== 'own') showOwnPostsOnly = false;
+        if (keep !== 'benchmark') {
+            showBenchmarkOnly = false;
+            currentBenchmarkAccount = null;
+        }
+        syncSavedPostsButtonState();
+        syncMyPostsButtonState();
+        syncBenchmarkButtonState();
+    }
+
+    if (savedPostsBtn) {
+        syncSavedPostsButtonState();
+
+        savedPostsBtn.addEventListener('click', () => {
+            showSavedOnly = !showSavedOnly;
+            if (showSavedOnly) {
+                turnOffOtherScopeButtons('saved');
+            } else {
+                syncSavedPostsButtonState();
+            }
+            // 🔴 벤치마킹 버튼처럼 태그·작성자·플랫폼을 풀지 않는다.
+            //    벤치마킹은 163건이라 좁혀둔 상태에서 켜면 0건이 되기 쉬워 푸는 것이다.
+            //    저장은 2,647건이라 그럴 일이 없고, 풀면 사용자가 걸어둔 조건이
+            //    말없이 사라진다. 같은 처리를 복사하지 않는다. 계획: _docs/20260909_01 (V10)
+            clearSelection();
+            if (searchQuery) {
+                void runServerSearch(searchQuery);
+                return;
+            }
+            renderPosts();
+        });
+    }
+
     if (myPostsBtn) {
         syncMyPostsButtonState();
 
@@ -496,13 +557,12 @@ document.addEventListener('DOMContentLoaded', () => {
             showOwnPostsOnly = !showOwnPostsOnly;
             // 내 글과 남의 계정 글은 교집합이 0이다. 둘 다 켜면 항상 빈 화면이 된다.
             if (showOwnPostsOnly) {
-                showBenchmarkOnly = false;
-                currentBenchmarkAccount = null;
-                syncBenchmarkButtonState();
+                turnOffOtherScopeButtons('own');
+                relaxFiltersForOwnPosts();
+            } else {
+                // 끌 때는 아무 조건도 건드리지 않는다.
+                syncMyPostsButtonState();
             }
-            // 끌 때는 아무 조건도 건드리지 않는다.
-            if (showOwnPostsOnly) relaxFiltersForOwnPosts();
-            syncMyPostsButtonState();
             clearSelection();
             if (searchQuery) {
                 void runServerSearch(searchQuery);
@@ -516,18 +576,17 @@ document.addEventListener('DOMContentLoaded', () => {
         benchmarkBtn.addEventListener('click', () => {
             showBenchmarkOnly = !showBenchmarkOnly;
             if (showBenchmarkOnly) {
-                // MY 와 상호 배타. 그리고 플랫폼·태그·저자로 좁혀둔 상태에서 켜면
+                // MY·저장과 상호 배타. 그리고 플랫폼·태그·저자로 좁혀둔 상태에서 켜면
                 // 0건이 뜨기 쉽다 - MY 가 relaxFiltersForOwnPosts() 로 푸는 것과
                 // 같은 이유로 여기서도 푼다.
-                showOwnPostsOnly = false;
-                syncMyPostsButtonState();
+                turnOffOtherScopeButtons('benchmark');
                 currentTag = null;
                 currentAuthor = null;
                 setPlatformFilter('all');
             } else {
                 currentBenchmarkAccount = null;
+                syncBenchmarkButtonState();
             }
-            syncBenchmarkButtonState();
             clearSelection();
             if (searchQuery) {
                 void runServerSearch(searchQuery);
@@ -558,30 +617,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 목록에 벤치마킹 글 함께 보기. 기본은 꺼짐이다.
-    // 계획: _docs/20260906_01 (A2, P6)
-    const showBenchmarkPostsToggle = document.getElementById('showBenchmarkPostsToggle');
-    if (showBenchmarkPostsToggle) {
-        showBenchmarkPostsToggle.checked = showBenchmarkPosts;
-
-        showBenchmarkPostsToggle.addEventListener('change', () => {
-            showBenchmarkPosts = showBenchmarkPostsToggle.checked;
-            try {
-                localStorage.setItem(
-                    SHOW_BENCHMARK_POSTS_STORAGE_KEY,
-                    showBenchmarkPosts ? 'true' : 'false'
-                );
-            } catch (error) {
-                // 저장 실패는 이번 세션 동작을 막지 않는다.
-            }
-            clearSelection();
-            if (searchQuery) {
-                void runServerSearch(searchQuery);
-                return;
-            }
-            renderPosts();
-        });
-    }
+    // 「목록에 벤치마킹 글 함께 보기」 토글은 없앴다. 설정 안에 숨은 상태가 ALL 의
+    // 뜻을 바꿔 "왜 남의 글이 보이지"를 만들었다. ALL 은 이제 항상 전부 보이고,
+    // 내 저장글만 보려면 상단 「저장」 버튼을 켠다. 계획: _docs/20260909_01 (W3)
 
     // Sort Dropdown Toggle
     const sortBtn = document.getElementById('sortBtn');
@@ -894,10 +932,45 @@ document.addEventListener('DOMContentLoaded', () => {
             authLabels: authPlatforms.map(platform => authPlatformLabels[platform] || platform),
             failedLabels: failedPlatforms.map(platform => authPlatformLabels[platform] || platform),
             authPrompt: authPlatforms.length > 0 ? buildAuthRenewalPrompt(authPlatforms) : '',
+            warningLines: buildToolWarningLines(result),
             consistencyTitle: consistencyRows.length > 0 ? '정합성 확인' : '',
             consistencyStatus,
             consistencyRows
         };
+    }
+
+    /**
+     * 도구 부재 경고를 사람이 읽는 한 줄로 바꾼다.
+     *
+     * 서버가 보내는 것은 코드값(tool·reason·impact)이다. 문구를 여기서 만드는 이유는
+     * 요약없음 표기와 같다 - 수집 데이터와 신호에는 상태만 담고 표시 문자열은 뷰어가
+     * 만든다. 계획: _docs/20260909_01 (W5)
+     */
+    function buildToolWarningLines(result) {
+        // 표는 함수 안에 둔다. 이 파일의 결과창 헬퍼들은 테스트가 함수 하나씩
+        // 떼어내 eval 하는 방식으로 검증된다(tests/unit/test_web_viewer_scrap_result_helpers.py) -
+        // 밖의 상수를 참조하면 그 자리에서 ReferenceError 가 난다.
+        const labels = {
+            'bgutil-pot-provider': '유튜브 자막 도구',
+        };
+        const impacts = {
+            new_transcripts_blocked: '새 영상의 자막을 받지 못해 요약도 만들어지지 않았습니다',
+        };
+        const reasons = {
+            entry_missing: '설치 폴더를 찾지 못했습니다',
+            port_unresponsive: '실행됐지만 응답하지 않았습니다',
+        };
+
+        const warnings = Array.isArray(result?.warnings) ? result.warnings : [];
+        return warnings.map((warning) => {
+            const tool = String(warning?.tool || '');
+            const label = labels[tool] || tool || '수집 도구';
+            const reason = reasons[String(warning?.reason || '')] || '사용할 수 없습니다';
+            const impact = impacts[String(warning?.impact || '')] || '';
+            const path = String(warning?.path || '');
+            const tail = impact ? ` ${impact}.` : '';
+            return `${label}가 ${reason}.${tail}${path ? ` (${path})` : ''}`;
+        });
     }
 
     function hideScrapResultModal() {
@@ -976,6 +1049,20 @@ document.addEventListener('DOMContentLoaded', () => {
             `
             : '';
 
+        // 「수집은 됐는데 일부가 조용히 빈」 경우를 알린다. 자막 도구가 2026-09-06에
+        // 사라졌는데 9/9까지 아무도 몰랐다 - 수집이 성공으로 끝나 화면이 침묵했다.
+        // 계획: _docs/20260909_01 (W5 T5-d)
+        const warningsHtml = model.warningLines.length > 0
+            ? `
+                <div class="scrap-result-warnings mt-5 rounded-lg border border-amber-400/20 bg-amber-400/5 px-4 py-3">
+                    <p class="text-sm font-semibold text-amber-100">수집 도구 경고</p>
+                    ${model.warningLines.map(line => `
+                        <p class="scrap-result-warning-line text-xs text-gray-300 mt-2 leading-relaxed">${escapeHtml(line)}</p>
+                    `).join('')}
+                </div>
+            `
+            : '';
+
         scrapResultBody.innerHTML = `
             <section>
                 <div class="rounded-lg border border-white/10 bg-black/15 px-4 py-2">
@@ -983,6 +1070,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             </section>
             ${consistencyHtml}
+            ${warningsHtml}
             ${failedHtml}
             ${authHtml}
         `;
@@ -2079,27 +2167,48 @@ ${item.body}
         });
     }
 
-    async function prefetchDetail(sequenceId) {
-        // 스크랩 중에는 브라우저 4개가 동시에 뜨면서 Chrome 이 네트워크 상태 변화로
-        // 진행 중인 요청을 전부 끊는다(ERR_NETWORK_CHANGED). hover 프리페치는 없어도
-        // 클릭 시 ensurePostDetail 이 다시 가져오므로, 그동안은 아예 요청하지 않는다.
-        if (scrapRunInProgress) {
-            return;
+    /**
+     * 상세를 한 번 요청한다. 수집 중에는 Chrome 이 네트워크 상태 변화로 진행 중인
+     * 요청을 끊으므로(ERR_NETWORK_CHANGED) 1회만 다시 시도한다.
+     *
+     * 재시도를 수집 중으로 한정하는 이유: 평상시 실패는 서버 문제라 두 번 불러도
+     * 결과가 같고, 사용자가 기다리는 시간만 늘어난다. 계획: _docs/20260909_01 (W1 T1-c)
+     */
+    async function fetchPostDetailOnce(sequenceId) {
+        const response = await fetch(`/api/post/${sequenceId}`);
+        if (!response.ok) {
+            return null;
         }
+        return response.json();
+    }
+
+    async function prefetchDetail(sequenceId) {
+        // 🔴 여기에 scrapRunInProgress 가드를 두지 않는다.
+        //    ensurePostDetail() 이 이 함수를 지나므로, 여기서 막으면 사용자가 명시적으로
+        //    요구한 조회(Read more·복사·벌크 복사·이미지 캡션) 넷이 함께 막혀 본문이
+        //    200자(full_text_preview)로 잘린다. 실제로 그 결함이 있었다.
+        //    hover 프리페치만 막는 것이 원래 의도였고, 그 가드는 mouseenter 핸들러에 있다.
+        //    계획: _docs/20260909_01 (W1 T1-a·T1-b)
         if (!sequenceId || _postDetailCache.has(sequenceId) || _inFlightDetails.has(sequenceId)) {
             return;
         }
         _inFlightDetails.add(sequenceId);
         try {
-            const response = await fetch(`/api/post/${sequenceId}`);
-            if (!response.ok) {
+            let detail = null;
+            try {
+                detail = await fetchPostDetailOnce(sequenceId);
+            } catch (error) {
+                if (!scrapRunInProgress) throw error;
+                console.debug('Retrying post detail during scrap run:', error);
+                detail = await fetchPostDetailOnce(sequenceId);
+            }
+            if (!detail) {
                 return;
             }
-            const detail = await response.json();
             _postDetailCache.set(sequenceId, detail);
             mergeDetailIntoCollections(detail);
         } catch (error) {
-            // 프리페치 실패는 화면에 영향이 없다 - 클릭 시 ensurePostDetail 이 다시 가져온다.
+            // 프리페치 실패는 화면에 영향이 없다 - 미리보기 200자로 떨어질 뿐이다.
             // error 로 남기면 진짜 결함이 콘솔에서 묻힌다.
             console.debug('Failed to prefetch post detail:', error);
         } finally {
@@ -2387,11 +2496,20 @@ ${item.body}
                 q: nextQuery,
                 platform: getServerPlatformFilter(currentFilter),
                 sort: getServerSortParam(),
-                limit: '500',
+                // 500 → 800. 벤치마킹 포함이 기본이 되면서 흔한 검색어에서 내 저장글이
+                // 상한 밖으로 밀렸다 - 실측(2026-09-09) "AI" 492건 → 370건(-24.8%).
+                // 계획이 미리 정한 기준(-5% 이하면 상향)에 걸려 올린다.
+                // 서버 상한은 1000 이다. 계획: _docs/20260909_01 (W3-4, 위험 7)
+                limit: '800',
                 // 서버가 500건으로 자르기 전에 걸러야 한다. 여기서 안 넘기면
-                // 벤치마킹을 꺼둔 상태에서 광범위 검색 시 내 저장글이 예전보다
+                // 벤치마킹을 뺀 상태에서 광범위 검색 시 내 저장글이 예전보다
                 // 덜 나온다. 계획: _docs/20260906_01 (M2)
-                include_benchmark: showBenchmarkPosts ? 'true' : 'false',
+                //
+                // 기본은 「포함」이다. 이 검색의 원래 목적이 "내가 쓰려는 소재가 이미
+                // 풀렸나"를 한 번에 보는 것이라 남의 글을 빼면 확인이 성립하지 않는다.
+                // 「저장」 버튼을 켰을 때만 제외한다 - 목록과 같은 규칙이다.
+                // 서버 파라미터의 뜻(포함/제외)은 그대로다. 계획: _docs/20260909_01 (V3)
+                include_benchmark: showSavedOnly ? 'false' : 'true',
             });
             const response = await fetch(`/api/search?${params.toString()}`, {
                 signal: controller.signal,
@@ -2438,6 +2556,9 @@ ${item.body}
         }
         if (currentTag) parts.push(`태그 "${currentTag}"`);
         if (currentAuthor) parts.push(`작성자 ${currentAuthor.label}`);
+        // 새 버튼을 여기 안 넣으면 "왜 0건인지" 안내가 틀린다.
+        // 계획: _docs/20260909_01 (V1)
+        if (showSavedOnly) parts.push('저장');
         if (showOwnPostsOnly) parts.push('MY');
         if (showBenchmarkOnly) {
             const account = benchmarkAccounts.find((a) => a.id === currentBenchmarkAccount);
@@ -2481,7 +2602,7 @@ ${item.body}
                 ? isOwnPost(post)
                 : !(hideOwnPostsInAll && isOwnPost(post));
             return matchesFilter && matchesTag && matchesVisibility && matchesAuthor
-                && matchesOwn && isBenchmarkVisible(post);
+                && matchesOwn && matchesSavedFilter(post) && isBenchmarkVisible(post);
         });
     }
 
@@ -2513,8 +2634,25 @@ ${item.body}
         // 내 저장글은 어떤 상태에서도 계속 보인다(R8). 필드가 없는 레거시
         // 레코드도 여기로 떨어진다 - 서버가 기본값 true 를 채워 보낸다.
         if (!isBenchmarkOnlyPost) return true;
-        if (!showBenchmarkPosts) return false;
+
+        // ALL 에서는 벤치마킹 글도 그대로 보인다. 종전에는 설정 토글이 꺼져 있으면
+        // 여기서 잘랐는데, 화면에 안 보이는 상태가 ALL 의 뜻을 바꿔 "왜 남의 글이
+        // 보이지"를 만들었다. 내 저장글만 볼 수단은 상단 「저장」 버튼이다.
+        // 계획: _docs/20260909_01 (W3 T3-e)
         return matchesActiveBenchmarkAccount(post);
+    }
+
+    /**
+     * 「저장」 버튼 - 남이 쓴 글 중 내가 저장한 것.
+     *
+     * 조건이 둘이다. `is_saved !== false` 만으로는 내가 쓴 글 70건이 섞인다 -
+     * 그건 저장한 것이 아니라 성과 추적용으로 따로 수집한 내 글이다. 두 조건을
+     * 함께 걸면 저장·MY·벤치마킹이 전체를 정확히 나눈다(실측 2026-09-09:
+     * 2,647 + 70 + 163 = 2,880, 교집합 0). 계획: _docs/20260909_01 (W3 T3-b, A6)
+     */
+    function matchesSavedFilter(post) {
+        if (!showSavedOnly) return true;
+        return post?.is_saved !== false && post?.is_own_post !== true;
     }
 
     /** 켜진 계정에 속하나. 계정 하나를 고른 상태면 그 계정만. */
@@ -2814,35 +2952,63 @@ ${item.body}
     }
 
     /**
-     * 벤치마킹 배지. 외부 요약 배지와 같은 pill 규격을 쓴다.
+     * 벤치마킹 표시 - 날짜 줄 끝의 동그란 `B`.
      *
-     * A8 확정으로 벤치마킹 글에도 AI 요약이 붙는다 - 본문만 보면 내 저장글과
-     * 구별되지 않으므로 이 배지가 유일한 구분 수단이다. 누락되면 치명 결함이다.
-     * 계획: _docs/20260906_01 (P6, P7)
+     * 왜 라벨이고 버튼이 아닌가: 종전에는 카드 우측 하단에 계정 이름을 단 버튼이
+     * 있었고 누르면 그 계정만 보였다. 활성 계정 19개 중 17개(89%)에서 그 동작이
+     * 카드 이름 클릭과 겹쳤고, 그 중복을 위해 모든 카드의 푸터를 상시 점유했다.
+     * 진입점을 3개(이름 클릭·상단 버튼·카드 배지)에서 2개로 줄인다.
      *
-     * 푸터 폭 실측(2026-09-06): 카드 448px · 푸터 414px · 현재 사용 120px.
-     * 배지 3개가 겹치는 카드는 2건뿐이고 여유 294px 안에 들어간다.
+     * 왜 그래도 표시는 남기나: 벤치마킹 글에도 AI 요약이 붙어 본문만으로는 내
+     * 저장글과 구별되지 않는다. 「이 글이 어디서 왔나」는 날짜와 같은 층위의
+     * 메타정보라 날짜 줄에 둔다 - 이름 옆은 이름을 더 잘라먹는다(150px 에서
+     * 이미 잘리고 16자 이상이 42건).
+     *
+     * 겹친 글(내가 저장도 한 벤치마킹 글)에도 붙이고 색으로 구분한다.
+     * 계획: _docs/20260909_01 (W4), 선행: _docs/20260906_01 (P6), _docs/20260906_03 (W1)
      */
-    function buildBenchmarkBadge(post) {
+    function buildBenchmarkMark(post) {
         const names = activeBenchmarkNames(post);
         if (!names.length) return '';
-        const ids = (post.benchmark_accounts || []).filter((id) =>
-            benchmarkAccounts.some((a) => a.id === id && a.status === 'active'));
-        // 내가 저장도 한 글이면 그 사실을 배지가 말한다. 종전에는 이 글에
-        // 배지 자체가 안 붙어, 벤치마킹 뷰에 나와도 왜 나왔는지 알 수 없었다.
-        // 계획: _docs/20260906_03 (W1)
         const alsoSaved = post?.is_saved !== false;
-        const label = names.length === 1 ? names[0] : `벤치마킹 ${names.length}`;
+        // 글자 하나뿐이라 화면 낭독기가 뜻을 못 읽는다. aria-label 로 풀어 쓴다.
         const title = alsoSaved
-            ? `${names.join(', ')} — 내 저장글이기도 함 · 눌러서 이 계정 글만 보기`
-            : `${names.join(', ')} — 눌러서 이 계정 글만 보기`;
-        const savedFlag = alsoSaved ? ' external-summary-badge--benchmark-saved' : '';
-        // 배지를 눌러 그 계정만 보게 한다. 저자명 클릭으로 저자 필터를 거는
-        // 기존 동작과 같은 결이다 - 카드에서 바로 좁힐 수 있어야 쓸 수 있다.
-        return `<button type="button" class="external-summary-badge external-summary-badge--benchmark${savedFlag}"
-                      data-benchmark-badge="1" data-benchmark-account="${escapeHtml(ids[0] || '')}"
+            ? `벤치마킹 계정: ${names.join(', ')} — 내 저장글이기도 함`
+            : `벤치마킹 계정: ${names.join(', ')}`;
+        const savedFlag = alsoSaved ? ' benchmark-mark--saved' : '';
+        return `<span class="benchmark-mark${savedFlag}" data-benchmark-mark="1"
                       data-benchmark-also-saved="${alsoSaved ? '1' : '0'}"
-                      title="${escapeHtml(title)}" aria-label="${escapeHtml(title)}">${escapeHtml(label)}</button>`;
+                      title="${escapeHtml(title)}" aria-label="${escapeHtml(title)}">B</span>`;
+    }
+
+    /**
+     * 유튜브 요약이 없을 때 "왜 없는지"를 한 줄로 알린다.
+     *
+     * 표시 문자열을 수집 데이터(full_text)에 넣지 않고 여기서 그린다 - 자막이 나중에
+     * 붙어도 옛 문구가 통합본에 남아 거짓말하지 않는다. 근거는 목록 응답의
+     * summary_status·transcript_status 두 값뿐이므로 META_FIELDS 에 실려 있어야 한다.
+     * 계획: _docs/20260909_01 (W2, A3)
+     */
+    const SUMMARY_MISSING_NOTICES = {
+        blocked: '[요약없음] 자막을 못 받았습니다 (다음 수집에서 재시도)',
+        no_subtitle: '[요약없음] 이 영상에 자막이 없습니다',
+        members_only: '[요약없음] 멤버십 전용 영상입니다',
+    };
+    const SUMMARY_PENDING_NOTICE = '[요약대기] 다음 수집에서 요약합니다';
+
+    function buildSummaryStatusNotice(post) {
+        if (String(post?.sns_platform || '').toLowerCase() !== 'youtube') return '';
+
+        const summaryStatus = String(post?.summary_status || '');
+        // 값이 없으면 옛 수집분이다. 모르는 것을 아는 척하지 않는다.
+        if (!summaryStatus || summaryStatus === 'ok' || summaryStatus === 'skipped') return '';
+        if (summaryStatus === 'deferred' || summaryStatus === 'failed') return SUMMARY_PENDING_NOTICE;
+        if (summaryStatus !== 'no_transcript') return '';
+
+        // 요약할 재료(자막)를 못 받은 경우다. 사유는 자막 쪽 상태가 말한다.
+        // 「요약불가」가 아니라 「요약없음」이다 - blocked 는 다음 수집에서 풀릴 수 있다.
+        const transcriptStatus = String(post?.transcript_status || '');
+        return SUMMARY_MISSING_NOTICES[transcriptStatus] || SUMMARY_MISSING_NOTICES.blocked;
     }
 
     function buildCopyText(post) {
@@ -3188,8 +3354,9 @@ ${item.body}
                 ${iconHtml}
                 <div class="min-w-0">
                     <h3 class="author-link text-sm font-semibold text-white truncate max-w-[150px]">${escapeHtml(post.display_name || post.username || post.user || 'Unknown')}</h3>
-                    <p class="text-xs text-gray-400 truncate" title="${escapeHtml(post.created_at || post.crawled_at)}">
-                        ${escapeHtml(dateLabel)}
+                    <p class="text-xs text-gray-400 flex items-center gap-1.5" title="${escapeHtml(post.created_at || post.crawled_at)}">
+                        <span class="truncate">${escapeHtml(dateLabel)}</span>
+                        ${buildBenchmarkMark(post)}
                     </p>
                 </div>
             </div>
@@ -3363,6 +3530,21 @@ ${item.body}
                     toggleExpandableText(paragraph, indicator);
                 });
             }
+        }
+
+        // --- 요약 없음 사유 ---
+        // 요약이 안 붙은 유튜브 카드가 제목에서 [설명] 로 바로 넘어가 "왜 없는지"가
+        // 한 글자도 안 뜨던 것을 고친다. 계획: _docs/20260909_01 (W2)
+        const summaryNoticeText = buildSummaryStatusNotice(post);
+        let summaryNoticeDiv = null;
+        if (summaryNoticeText) {
+            summaryNoticeDiv = document.createElement('div');
+            // summary-status-line: 테스트·검증 스크립트가 이 줄을 특정하는 식별용 클래스.
+            summaryNoticeDiv.className = 'summary-status-line text-xs text-gray-500 font-light';
+            summaryNoticeDiv.dataset.summaryStatus = String(post.summary_status || '');
+            summaryNoticeDiv.dataset.transcriptStatus = String(post.transcript_status || '');
+            summaryNoticeDiv.textContent = summaryNoticeText;
+            if (isFolded) summaryNoticeDiv.classList.add('hidden-content');
         }
 
         // --- Engagement Metrics ---
@@ -3604,6 +3786,9 @@ ${item.body}
         
         article.appendChild(header);
         article.appendChild(content);
+        if (summaryNoticeDiv) {
+            article.appendChild(summaryNoticeDiv);
+        }
         if (imageDiv) {
             article.appendChild(imageDiv);
         }
@@ -3622,7 +3807,6 @@ ${item.body}
                 <span class="note-open-label">+note</span>
             </button>
             <div class="footer-links ml-auto flex items-center gap-1">
-                ${buildBenchmarkBadge(post)}
                 ${buildExternalSummaryLinks(post)}
                 <a href="${escapeHtml(postUrl || '#')}" target="_blank" rel="noopener"
                    class="footer-link-btn hover:text-primary transition-colors"
@@ -3638,22 +3822,10 @@ ${item.body}
             renderNoteSection(noteWrapper, post, { editing: true });
         });
 
-        // 배지를 누르면 그 계정 글만 본다. 저자명 클릭과 같은 결이다.
-        footer.querySelector('[data-benchmark-badge]')?.addEventListener('click', (event) => {
-            event.stopPropagation();
-            const accountId = event.currentTarget.dataset.benchmarkAccount;
-            if (!accountId) return;
-            showBenchmarkOnly = true;
-            showOwnPostsOnly = false;
-            currentBenchmarkAccount = currentBenchmarkAccount === accountId ? null : accountId;
-            currentTag = null;
-            currentAuthor = null;
-            setPlatformFilter('all');
-            syncMyPostsButtonState();
-            syncBenchmarkButtonState();
-            clearSelection();
-            renderPosts();
-        });
+        // 벤치마킹 배지 클릭 핸들러는 삭제했다. 카드에서 계정으로 좁히는 일은
+        // 이름 클릭과 상단 「벤치마킹」 버튼 + 계정 칩이 이미 한다. 딸려 사라진
+        // 부수효과 하나: 이 핸들러가 currentAuthor = null 로 작성자 필터를 풀었다.
+        // 계획: _docs/20260909_01 (W4 T4-b, V6)
 
         // *** Fold Toggle Handler ***
         const foldBtn = header.querySelector('.fold-btn');
@@ -3700,6 +3872,15 @@ ${item.body}
         });
 
         article.addEventListener('mouseenter', () => {
+            // 수집 중에는 hover 프리페치를 보내지 않는다. 브라우저 4개가 동시에 뜨면서
+            // Chrome 이 네트워크 상태 변화로 진행 중인 요청을 전부 끊는다
+            // (ERR_NETWORK_CHANGED). 사용자가 요구하지 않은 요청이라 포기해도 손해가 없다.
+            //
+            // 이 가드는 prefetchDetail() 안에 있으면 안 된다 - ensurePostDetail() 이
+            // 같은 함수를 지나므로 클릭·복사까지 함께 막힌다. 계획: _docs/20260909_01 (W1)
+            if (scrapRunInProgress) {
+                return;
+            }
             void prefetchDetail(post.sequence_id);
         }, { once: true });
 

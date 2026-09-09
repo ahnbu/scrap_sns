@@ -14,16 +14,28 @@ from datetime import datetime
 import io
 from urllib.parse import urlsplit, urlunsplit
 from utils.json_to_md import convert_json_to_md
-from utils.auth_status import AUTH_REQUIRED_EXIT_CODE
+from utils.auth_status import AUTH_REQUIRED_EXIT_CODE, TOOL_UNAVAILABLE_SIGNAL_PREFIX
 from utils.post_meta import build_post_key
 from utils.media_expiry import has_live_media_url
 from utils import metric_refresh
 from utils.own_post_order import assign_own_post_order, normalize_ts
 
-# Windows 터미널 인코딩 문제 해결
-if sys.platform == 'win32':
-    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
-    sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8', errors='replace')
+def configure_console_encoding():
+    """Windows 콘솔 인코딩 보정.
+
+    import 시점이 아니라 실행 진입점에서 부른다. 모듈 최상단에서 sys.stdout 을
+    갈아끼우면 이 모듈을 import 하는 테스트에서 pytest 의 캡처 객체를 덮어써
+    teardown 이 깨진다(ValueError: I/O operation on closed file).
+    같은 이유로 youtube_scrap.py 가 먼저 이 형태로 바뀌었다(:42).
+    계획: _docs/20260909_01 (W6-2 테스트)
+    """
+    if sys.platform != 'win32':
+        return
+    for name in ("stdout", "stderr"):
+        stream = getattr(sys, name)
+        buffer = getattr(stream, "buffer", None)
+        if buffer is not None and getattr(stream, "encoding", "").lower() != "utf-8":
+            setattr(sys, name, io.TextIOWrapper(buffer, encoding='utf-8', errors='replace'))
 
 PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
 OUTPUT_THREADS_DIR = os.path.join(PROJECT_ROOT, "output_threads", "python")
@@ -290,6 +302,50 @@ def _parse_auth_signal_line(line):
     return payload if isinstance(payload, dict) else None
 
 
+def _parse_tool_unavailable_line(line):
+    """`SNS_TOOL_UNAVAILABLE {json}` 한 줄을 읽는다.
+
+    인증 신호와 같은 규약이다. 다른 점은 종료코드가 0이어도 읽어야 한다는 것 -
+    도구가 없어도 수집 자체는 성공으로 끝나기 때문이다. 그래서 2026-09-06에
+    자막 도구가 사라진 것을 9/9까지 아무도 몰랐다.
+    계획: _docs/20260909_01 (W5)
+    """
+    text = str(line or "").strip()
+    prefix = TOOL_UNAVAILABLE_SIGNAL_PREFIX
+    if not text.startswith(prefix):
+        return None
+
+    raw_payload = text[len(prefix):].strip()
+    if not raw_payload:
+        return None
+
+    try:
+        payload = json.loads(raw_payload)
+    except json.JSONDecodeError:
+        return None
+
+    return payload if isinstance(payload, dict) else None
+
+
+def _read_tool_warnings_from_log(log_path, start_offset=0):
+    """이 실행 구간에서 나온 도구 부재 신호를 전부 모은다."""
+    if not log_path or not os.path.exists(log_path):
+        return []
+
+    warnings = []
+    try:
+        with open(log_path, "r", encoding="utf-8", errors="replace") as handle:
+            handle.seek(max(0, int(start_offset or 0)))
+            for line in handle:
+                payload = _parse_tool_unavailable_line(line)
+                if payload:
+                    warnings.append(payload)
+    except OSError:
+        return []
+
+    return warnings
+
+
 def _read_auth_signal_from_log(log_path, start_offset=0):
     if not log_path or not os.path.exists(log_path):
         return None
@@ -375,17 +431,15 @@ def should_run_consumer(platform):
     
     return len(final_targets) > 0
 
-def run_scrapers_in_parallel(mode='update'):
-    print(f"🚀 플랫폼별 스크래퍼 병렬 실행 시작 (2-wave 모드)... (모드: {mode})")
-    platform_results = {}
-    running_processes.clear()
-    opened_log_files.clear()
+def build_phase_commands(mode='update'):
+    """실행 웨이브 정의. 순서가 곧 실행 순서다.
 
-    log_dir = "logs"
-    os.makedirs(log_dir, exist_ok=True)
-
-    create_no_window = 0x08000000
-    phase_commands = [
+    함수로 뺀 이유: 이 구조가 실패 격리의 근거다. 웨이브는 앞 웨이브의 결과와
+    무관하게 순서대로 돈다 - 저장글 수집(producer)이 실패해도 벤치마킹
+    (benchmark)은 실행된다. 테스트가 그 구조를 직접 확인할 수 있어야 한다.
+    계획: _docs/20260909_01 (W6-2)
+    """
+    return [
         (
             "producer",
             {
@@ -458,6 +512,19 @@ def run_scrapers_in_parallel(mode='update'):
         ),
     ]
 
+
+def run_scrapers_in_parallel(mode='update'):
+    print(f"🚀 플랫폼별 스크래퍼 병렬 실행 시작 (2-wave 모드)... (모드: {mode})")
+    platform_results = {}
+    running_processes.clear()
+    opened_log_files.clear()
+
+    log_dir = "logs"
+    os.makedirs(log_dir, exist_ok=True)
+
+    create_no_window = 0x08000000
+    phase_commands = build_phase_commands(mode)
+
     log_handles = {}
 
     try:
@@ -514,6 +581,27 @@ def run_scrapers_in_parallel(mode='update'):
                 phase_result = result["phases"].setdefault(phase_name, {})
                 phase_result["returncode"] = p.returncode
                 phase_result["status"] = _status_from_returncode(p.returncode)
+
+                # 🔴 종료코드와 무관하게 읽는다. 도구가 없어도 수집은 0으로 끝나므로
+                #    성공한 실행에서만 나오는 신호다. 계획: _docs/20260909_01 (W5)
+                try:
+                    handle_for_flush = log_handles.get(platform)
+                    if handle_for_flush:
+                        handle_for_flush.flush()
+                except Exception:
+                    pass
+                tool_warnings = _read_tool_warnings_from_log(
+                    result.get("log"),
+                    phase_result.get("log_offset", 0),
+                )
+                if tool_warnings:
+                    phase_result["tool_warnings"] = tool_warnings
+                    for warning in tool_warnings:
+                        print(
+                            f"   ⚠️ {platform} {phase_label}: "
+                            f"{warning.get('tool')} 없음 ({warning.get('reason')})"
+                        )
+
                 if p.returncode == AUTH_REQUIRED_EXIT_CODE:
                     try:
                         file_handle = log_handles.get(platform)
@@ -1254,13 +1342,25 @@ def run(mode='update'):
             for platform, result in platform_results.items()
             if result.get("status") == "auth_required"
         ]
+        # 🔴 도구 부재 경고는 최상위 키로 낸다. platform_results 에만 담으면 화면까지
+        #    못 간다 - 서버의 _canonical_auth_platform 이 threads·linkedin·x 만 인정해
+        #    youtube 슬롯 결과를 통째로 버리기 때문이다. 그 함수를 고치면 벤치마킹
+        #    결과와 저장글 결과가 같은 키로 서로를 덮어써 더 나쁘다.
+        #    계획: _docs/20260909_01 (W5, N2)
+        tool_warnings = []
+        for platform, result in platform_results.items():
+            for phase_result in (result.get("phases") or {}).values():
+                for warning in (phase_result.get("tool_warnings") or []):
+                    tool_warnings.append({**warning, "slot": platform})
         summary = {
             "platform_results": platform_results,
             "auth_required": auth_required,
+            "warnings": tool_warnings,
         }
         print(f"SNS_SCRAP_SUMMARY {json.dumps(summary, ensure_ascii=False)}", flush=True)
 
 if __name__ == "__main__":
+    configure_console_encoding()
     parser = argparse.ArgumentParser(description='통합 SNS 스크래퍼 (멀티 윈도우 병렬 모드)')
     parser.add_argument('--mode', choices=['all', 'update'], default='update', help='크롤링 모드')
     args = parser.parse_args()

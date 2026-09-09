@@ -143,6 +143,19 @@
                   />
                 </svg>
               </button>
+              <!-- 내가 저장한 글만 보기. 설정 안에 숨어 있던 「목록에 벤치마킹 글 함께
+                   보기」 토글을 대신한다 - 화면에 안 보이는 상태가 ALL 의 뜻을 바꿔
+                   "왜 남의 글이 보이지"를 만들었다. MY·벤치마킹과 같은 모양·같은 규칙이다.
+                   계획: _docs/20260909_01 (W3) -->
+              <button
+                id="savedPostsBtn"
+                type="button"
+                aria-pressed="false"
+                class="filter-chip flex items-center px-3 py-2 rounded-full bg-surface-glass hover:bg-surface-glass-hover text-gray-300 hover:text-white text-sm font-medium border border-border-glass transition-all whitespace-nowrap"
+                title="내가 저장한 글만 보기 (벤치마킹 전용 글과 내가 쓴 글 제외)"
+              >
+                저장
+              </button>
               <!-- 내 게시물만 보기. filter-chip 클래스는 켜짐 상태를 보이게 하려고 붙였다 -
                    `.filter-chip.active` 가 유일한 활성 스타일이라 이게 없으면 켜도 티가 안 난다.
                    data-filter 는 붙이지 않는다. 플랫폼 선택이 아니라 별도 토글이다.
@@ -604,36 +617,10 @@
               </label>
             </div>
 
-            <!-- 벤치마킹 표시. 기본은 꺼둔다 - 기본 화면이 남의 글로 덮이면
-                 내 북마크를 찾을 때마다 헤집게 된다. 계획: _docs/20260906_01 (A2) -->
-            <div class="flex flex-col gap-5 p-6 bg-white/5 rounded-[24px] border border-white/5 shrink-0">
-              <div class="flex flex-col gap-2">
-                <h3 class="text-xs font-bold text-gray-500 tracking-[0.1em] uppercase">
-                  Benchmark Posts
-                </h3>
-                <p class="text-sm text-gray-300 leading-relaxed">
-                  벤치마킹 계정 글을 <strong class="text-white">내 저장글과 같은 목록에 섞어</strong> 보여줍니다.
-                  「내가 쓰려는 소재가 이미 풀렸나」를 한 번에 검색할 때 켭니다. 기본은 꺼둡니다.
-                </p>
-                <p class="text-xs text-gray-500 leading-relaxed">
-                  남의 글만 따로 보려면 이 설정이 아니라 상단의
-                  <strong class="text-gray-300">벤치마킹</strong> 버튼을 누르세요. 계정별로 골라 볼 수 있습니다.
-                </p>
-              </div>
-              <label
-                for="showBenchmarkPostsToggle"
-                class="flex items-center justify-between gap-4 cursor-pointer select-none"
-              >
-                <span class="text-sm font-medium text-white"
-                  >목록에 벤치마킹 글 함께 보기</span
-                >
-                <input
-                  id="showBenchmarkPostsToggle"
-                  type="checkbox"
-                  class="size-5 rounded accent-primary cursor-pointer"
-                />
-              </label>
-            </div>
+            <!-- 「목록에 벤치마킹 글 함께 보기」 토글은 삭제했다. 설정 속 숨은 상태가
+                 ALL 의 뜻을 바꿔 "왜 남의 글이 보이지"를 만들었다. ALL 은 항상 전부
+                 보이고, 내 저장글만 보려면 상단 「저장」 버튼을 켠다.
+                 계획: _docs/20260909_01 (W3) -->
           </div>
         </div>
 
