@@ -36,15 +36,15 @@
     "last_failed_at": "2026-08-25T20:03:37.045"
   },
   "7416455140850843648": {
-    "count": 2,
+    "count": 3,
     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7416455140850843648/",
     "reason": "no-metrics-in-dom",
-    "last_failed_at": "2026-08-27T20:03:34.832"
+    "last_failed_at": "2026-08-28T19:41:48.957"
   },
   "7407234823783821312": {
-    "count": 2,
+    "count": 3,
     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7407234823783821312/",
     "reason": "no-metrics-in-dom",
-    "last_failed_at": "2026-08-27T20:03:42.884"
+    "last_failed_at": "2026-08-28T19:41:57.969"
   }
 }

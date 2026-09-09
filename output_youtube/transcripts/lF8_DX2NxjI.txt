@@ -1,0 +1,459 @@
+[00:00]
+You can now teach yourself anything
+completely for free. That's the power of
+AI. You can get dangerously
+self-educated and build your own
+personal university right about now.
+I've been a monk in training, an MIT
+grad, a tech CEO, and I've seen this one
+pattern. The people who unlock real
+intelligence are almost always
+relentlessly curious and self-driven.
+So, today I'm giving you that precise
+learning system that nobody has shared
+so far. I call it the university in a
+box.
+Genius name, [music] right? But, it's a
+way to use AI to become a self-taught
+expert at almost anything. You'll be
+able to learn how to build your own
+personal curriculum from A to Z. So,
+let's get going. Uh a few months ago, I
+was in Los Angeles, and I had to give a
+keynote to a class of 120 incoming
+[01:00]
+interns at one of the largest media
+companies. And they were all from top
+universities and schools, very sharp,
+very hungry, [music] very young. And I
+opened my speech with a simple question.
+I said, "How many of you use AI for at
+least 30 minutes a day?" And I was
+expecting [music]
+each and every hand to go up, but I was
+thoroughly surprised. Less than maybe 30
+hands went up. And then I asked, "How
+many use Instagram for more than 30
+minutes a day?" Every single hand went
+up. Think about the tragedy hidden in
+this trend.
+Here's another surprising finding. Many
+of the world-class universities,
+including Harvard and MIT, Stanford,
+IIT, Oxford, LSE, many [music] others,
+they have put many of their entire
+courses online, the entire semester
+[02:00]
+worth of classes online for free.
+And 88% of all users who start those
+courses don't finish them. There's
+almost nine out of 10 of us. And it gets
+even better now because with AI today,
+you're holding a multi-million-dollar
+university in the same pocket with
+Instagram. The most powerful
+intelligence engine [music]
+in human history
+is waiting for you.
+And you don't even have to pay
+$250,000
+for that education. And that's the
+system we want to build today. And I
+don't mean some new Notion template or
+anything. Instead, we'll go through five
+radical roles that you can give AI. One
+easy way to remember these five roles is
+to arrange them by their first letters.
+It spells alter.
+[03:00]
+Which kind of fits, right? Because these
+roles alter the way you think, the way
+you learn, the way you behave,
+and the way you [music] graduate. So,
+let's build them one at a time. First
+things cool, you need an advisor. That's
+where we begin. To understand that
+concept a little better, let's go to
+Liverpool. In the '60s, there was a city
+full of shipyards and docks. And there
+were three teenagers who started a band
+called Johnny and the Moondogs. They
+didn't know then that they would change
+the world of music forever. John Lennon,
+Paul McCartney, George Harrison
+eventually went on to become the
+Beatles. But
+they were lost for a while. They got
+turned down by every label in London
+until they found their creative advisor,
+the fifth Beatle, George Martin. He
+became the music producer for the band,
+and he was able to hear what the four of
+them couldn't. [music] And the band went
+[04:00]
+on to create some of the most loved
+music ever made. And this story keeps
+repeating since the dawn of humanity. If
+you don't have Aristotle, you don't get
+Alexander the Great.
+Every great Michael Jordan needs a coach
+like Phil Jackson. Because good advisers
+study you, and they build a personalized
+path for you. If today all the
+universities started offering customized
+course wear for each and every student,
+they would all go bankrupt. If you go to
+a gym and every person walking in gets a
+personal trainer, they'll never make
+money. But here's why things are
+changing dramatically for all of us.
+Today's AI can become your perfect
+academic advisor when you're ready to
+learn anything. And how do you make AI a
+great advisor?
+Ask it for five decisions. First,
+destination. [music]
+[05:00]
+What do you want to know or do at the
+end when you're done learning it?
+Second,
+baseline. Where are you on this topic
+right now? Basic level, intermediate,
+nothing? Third, sequencing. What order
+do you learn this topic in? That's
+really important. [music] And fourth,
+cut list. What should you ignore for
+now?
+And fifth and final, milestones. What
+output from you will show that you
+mastered the topic and you're ready to
+move on.
+Let's make this concrete. Let's say if
+you wanted to learn
+business finance. Obviously, you're not
+going to give a prompt saying, "Teach me
+corporate finance." Instead,
+type, "Act as my elite academic advisor.
+We want to build a 6-week custom course.
+I want to learn about how finance works
+in business, so I can understand how to
+use those skills to build my own
+[06:00]
+business.
+First, interview me
+to find my weaknesses, my baseline.
+I want to define the destination, build
+the sequence, list what I should ignore
+for now, and also give me weekly
+milestones, so I can prove that I'm
+ready to move on.
+Ask me up to five questions for each of
+these five steps, one question at a
+time. Now, the exact prompt is not that
+important. In fact, you can ask AI to
+make you an even better prompt than the
+one I just gave you. The goal is to
+leverage AI to create the right personal
+curriculum for you. This doesn't have to
+be just business or finance or anything.
+What if you wanted to master something
+grounded in human judgment, in art, in
+taste, in style? What if you wanted to
+master design theory? You can use the
+same structure. In fact, you can use
+Gemini because it has the multimodal
+[07:00]
+capabilities. So, it's almost like
+giving a pair of eyes to your advisor.
+In all such self-education adventures,
+AI no longer remains as your lazy text
+generator.
+>> [music]
+>> It is an intelligence engine that
+becomes your path builder. But, even the
+best paths will break if the sources you
+learn from are garbage. That's where we
+go next. Once you build your curriculum,
+the next battle is sticking to it.
+Stanford researchers tested more than
+7,800
+students on how well they judged
+information online. The result was
+embarrassing. 82% of middle schoolers
+could not tell the difference between
+sponsored content and real news. Now,
+these are not some
+ancient villagers discovering the
+internet for the first time, right?
+[08:00]
+These were digital natives. They knew
+how to use the internet. They just
+didn't know how easily internet could
+abuse their trust. The algorithm and the
+feed is not interested in teaching you
+anything. It only cares about keeping
+you there. That's why the AI librarian
+matters. Their job is to defend the
+curriculum from distraction. It's a
+triaging function that tells you which
+10 sources deserve your attention,
+>> [music]
+>> your time, and which thousands you can
+ignore.
+It helps you figure out this belongs,
+this doesn't. This is credible, this is
+too advanced. This is signal, this is
+noise. So, let's see the librarian in
+action. Let's use Notebook LM. First,
+[music] build the shelf. Find the three
+or four sources that actually matter. Uh
+textbook, uh YouTube course, or a bunch
+of videos, a podcast, um an academic
+[09:00]
+paper, a bunch of newspaper articles,
+whatever it is that you can find. What
+if you don't know what sources to look
+for? Well, you can use deep research on
+Gemini or Claude or ChatGPT to find
+those sources. Then, load these
+documents to Google's Notebook LM.
+Nowadays, you can create a new notebook
+from Gemini itself. Now, your AI is not
+wandering homelessly across the open
+internet, it [music] is anchored to the
+ground truth you just gave it. But now,
+how do you make the most out of these
+documents? This is where Notebook LM
+changes the game. You can turn anything
+into a podcast or a video or a
+slideshow. Let's say you want to educate
+yourself on building great money habits.
+Okay, so let's do it live. I love this
+book called The Psychology of Money.
+It's by Morgan Housel and I've read this
+book. I grabbed a bunch of very good
+[10:00]
+videos from YouTube and interviews that
+the author himself has done and I put
+them into Notebook LM. And now I click
+on studio and then it's going to start a
+podcast
+>> [music]
+>> and you can listen to it during your
+walk, during your commute and you can
+even call in.
+>> Welcome to today's deep dive. We have a
+uh a really fascinating mission ahead of
+us today, entirely custom tailored for
+you listening right now.
+>> Yeah, it's a great one. We're looking at
+a huge stack of sources today.
+>> And they all point to one specific
+subject. So we are going to be
+summarizing the core lessons from Morgan
+Housel's incredibly popular book, The
+Psychology of Money.
+>> Now you can even call in.
+>> Read honestly.
+>> Oh, it really is. And the mission of
+this deep dive is to prove a premise
+that kind of Oh, hey, I think our
+listeners got something to say.
+>> Yes, I love your podcast. I just had a
+quick question. What's the one-line
+summary of the book?
+What's the key message?
+>> That is a brilliant question. We love it
+when you jump in like that.
+>> Seriously, it is the perfect way to kick
+[11:00]
+things off.
+>> If we had to boil it down to one key
+message, is this.
+>> Doing well with money has little to do
+with how smart you are.
+>> Exactly, it has everything to do with
+how you behave.
+>> Financial success is a soft skill, not a
+hard science.
+>> And the ultimate goal of that
+>> This is all AI. This is not some
+futuristic thing. It's all here,
+available right now. But a good source
+alone can't guarantee understanding. At
+some point the material will stop making
+sense to you and this is exactly when
+you need the tutor.
+A teacher and a tutor serve two
+different roles. The teacher explains
+it, the tutor [music]
+diagnoses your specific confusion
+one-on-one. A good tutor makes it harder
+for you to fake understanding. Tutoring
+has always been the luxury good of
+education. [music]
+Um, psychologist named Benjamin Bloom
+wrote about this in the '80s and it
+became known as the two-sigma problem.
+[12:00]
+And he found [music] that students with
+one-on-one tutoring performed way better
+than the rest of the students who sat in
+conventional classrooms. The average
+student who got tutored performed above
+98% of the students in the control
+class. That was one of the most
+important findings in education. And
+also one of the most frustrating because
+everybody got to know that tutoring
+works, but not everyone can afford a
+private tutor
+until now, that is. AI completely breaks
+the economics of human intelligence. A
+world-class tutor can now sit with you
+at midnight, ask you uncomfortable
+questions, refine your logic, and refuse
+to leave until the concept finally
+clicks. I use AI both as a teacher and a
+tutor. So, here's the tutor in action. I
+[13:00]
+usually use either ChatGPT voice or
+Gemini voice because tutoring should
+feel like the office hour. So, how do
+you actually do this? Just Let's do it
+live. I have Gemini voice mode on my
+iPhone right now. I'm going to hit voice
+mode and say the following.
+Be my tutor on the idea of enough
+from the book The Psychology of Money.
+Ask me one question at a time.
+Don't lecture me. Find the gap in my
+understanding. Be precise.
+Let's go.
+>> How does constantly comparing yourself
+to others make it difficult to define
+your own personal version of enough?
+>> Okay, you get it. So, that was a
+complete improvisation because I didn't
+know what the AI tutor was going to ask,
+but that's what would happen in real
+life as well. Sometimes, you will get
+questions you don't know the answers to,
+and you'll have to work with the tutor
+[14:00]
+to learn about it. That's the whole
+point. The two best commands in AI are
+teach me
+and test me.
+I love both of them. But, there is still
+one problem. Learning all the skills is
+great, but when you have to deliver
+something, you need honest feedback. You
+need refinements. That's why the next
+rule is so important, the editor. That's
+where we go next. A tutor helps you
+understand. An editor helps you deliver.
+A typical Formula 1 race is about 90
+minutes, but the difference between
+winning and losing can be just a few
+seconds. That's why a large team of
+engineers for every race car company
+monitor thousands of data points in real
+time, constantly feeding tiny
+corrections back to the driver. Because
+if you can shave off just a fraction of
+a second at every turn, you can change
+the outcome. Real-time feedback is
+[15:00]
+everything in that game because
+excellence lives in feedback.
+That's why authors have editors.
+Filmmakers have editors.
+Journalists have editors, too. Even CEOs
+have boards. They're editors. Your AI
+can be a great editor.
+When I write anything nowadays that's
+important. I usually take time to review
+it with chat GPT or Gemini or Claude.
+And I
+ask AI to challenge my thinking, my
+logic. Find the weakness in my
+arguments.
+Cut repetition, tighten the structure,
+make the language more precise or
+concrete. AI can be your powerful ally
+when it comes to editing your work.
+But you still have to fly the plane.
+And that brings us to the fifth and
+final rule, the roommate.
+>> [music]
+>> Because in the future that we're heading
+[16:00]
+into, your depth and your expertise will
+constantly be challenged.
+You'll have to renew them all the time.
+You will need range. And that comes from
+your roommate.
+That's where we go next. When I was
+living in a dorm, my roommate and I had
+absolutely nothing in common, but our
+late-night conversations were always
+wonderful. They were eye-opening for me.
+Because he would constantly talk about
+the economy of design, the aesthetic
+tradeoffs, the compromises, the
+craftsmanship.
+In fact, he taught me as much about
+entrepreneurship and taste and strategy
+as a business professor would. This is
+exactly what Pixar did when they started
+building their own in-house training
+school. The company put all of its
+animators in sculpting class. And the
+[17:00]
+accountants and security guards were put
+in drawing classes. Why? Because when
+you get a perspective from a world
+that's different than yours, it helps
+you understand your own world a little
+better. So the question is, how do you
+make AI that roommate that brings
+[music] you that fresh perspective?
+Well, ask it to talk about things that
+are completely outside of your field.
+What's the connection between cooking
+and finance?
+How does a jazz musician think about
+playing with others and how does that
+relate to building teams? Roommates help
+you ask questions you would never ask on
+your own. They hand you a stranger's
+lens so you can see the world for the
+first time again. So, that's your
+university in a box. The whole Alter
+framework, advisor, librarian, tutor,
+editor, and your roommate. And it's all
+just one prompt away.
+[18:00]
+Something you can start using tonight.
+So,
+what comes next?
+Let me leave you with one last story. A
+young, eager student arrived [music]
+at the riverside and she was in a real
+rush, a real hurry to go across the
+river.
+But, there was no bridge, just some
+boats lying around, all shapes and
+sizes.
+So, she asked the old boatman who was
+just standing there, "Sir,
+>> [music]
+>> which boat would get me across the river
+fastest?"
+And the boatman smiled and said, "The
+one you get into
+>> [music]
+>> and start rowing."
+I'll see you next week. Thank you. And I
+love you.

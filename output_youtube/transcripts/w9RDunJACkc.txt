@@ -1,0 +1,124 @@
+[00:00]
+I am running this AI at home, and it can
+do light simulations computing a
+beautiful image like this.
+>> [laughter]
+>> Look at that. Yummy caustics, too. Oh
+my.
+It can write up a fun strategy game. It
+can model a beautiful full 3D scene in
+free and open-source software like
+Blender. It is incredibly good, and
+anyone can have all this at the grand
+total of, let me see, hmm, nothing. Yes,
+it's free and open. Wait, this is called
+GLM 5.3 Flash. Plus, its big brother,
+GLM 5.3. Flash was first stealthily
+released under a different name, and I
+mean,
+>> [laughter]
+>> what?
+Look at that. It quickly overtook even
+DeepSeek in usage. I understand novelty
+and all, but this is crazy. And now,
+hold on to your papers, fellow scholars,
+because if you let it think for a while,
+[01:00]
+both the bigger and smaller models can
+get up close to Fable level on some
+benchmarks. In my opinion, this does not
+feel like Fable level in general, but
+some experiments, it is not that far
+away. I can't believe that I am saying
+this, but I think within this year, in a
+few months, Fable might be surpassed by
+free AI systems. What a time to be
+alive. Okay, so how is this black magic
+possible? How did they do it? Dear
+fellow scholars, this is Two Minute
+Papers with Dr. Károly Zsolnai-Fehér.
+Well, GLM 3.5 Flash is about cramming
+more intelligence into less compute. 320
+20 billion parameters, about activated
+per token. The number of layers was 92
+before. Now, it's roughly cut in half.
+And it has some new tricks up their
+sleeve. Instead of comparing every token
+[02:00]
+to every other one, it can summarize
+nearby context into a small package.
+They call this linear attention, and
+[clears throat] it is dramatically
+cheaper than sparse attention, which
+they also use.
+Also, ever experience talking to an AI
+in a session for a long while, and as
+you talk longer and longer, it gets
+worse and worse? Yes. If you have a
+bunch of documents, a huge code base, or
+a long discussion, searching through
+that context gets really expensive. This
+can compress an index of the stored
+context before searching it, so the
+model can look back far further and use
+less memory and compute. They call this
+index pool. And if you add this all
+together, you have a system that is
+built from the ground up to be fast,
+smart, and inexpensive. Now, it still
+needs beefy hardware in the order of
+thousands of dollars, but what I love
+about you brilliant fellow scholars is
+[03:00]
+that you are always tirelessly working
+on making it run on more modest
+hardware. This is once again an open
+weight system, a project that we should
+work on together and add to it. So,
+thank you so much to all of you who
+contribute by improving it, anyone who
+runs experiments with it to share with
+us, or just by talking about it and
+spreading the word. We have some of the
+most amazing audience on this channel,
+and it is an honor to make these videos
+for you. This is paper video number
+1,072,
+and I'm having more fun with you than
+ever. This is why I said no to millions
+of dollars from private equity firms
+that wanted to buy our channel. Every
+single other one they approached, I know
+and heard about, was sold, but
+we didn't sell. Although
+>> [laughter]
+>> I would have a great deal better
+hardware, that's for sure.
+[04:00]
+Yeah, yes, about that. The main
+limitation for me here is, of course,
+hardware. You need lots of firepower to
+run this. It's not in the billions
+anymore, which is fantastic, but it's
+still not cheap. I also don't have all
+the hardware to run the big one at home.
+Lambda helps though. So, many of us will
+use smaller compressed quantized
+versions, and these can start looping
+like crazy, like it did for me here. So,
+do not expect perfection, but expect to
+have a damn good time tinkering, and I
+am incredibly grateful for this. Thank
+you so much. I use Lambda to reproduce
+AI research papers often in minutes.
+It's also great to train your own models
+or fine-tune an existing one. Run
+inference or text-to-image or video,
+easy peasy. Running a deep sea chatbot
+or agent, super fast, super reliable.
+Lambda gives you powerful Nvidia GPUs to
+run your own experiments. I test ideas
+[05:00]
+from the papers I cover, and moments
+later, results. Love it. Seriously, try
+it out now at lambda.ai/papers.

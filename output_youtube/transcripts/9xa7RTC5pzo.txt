@@ -1,0 +1,1395 @@
+[01:00]
+All right. Welcome. Welcome.
+Yes, it is true. Let's see. I'm just
+[02:00]
+going to get my lighting all correct.
+Feel like this is the wrong camera. Yes,
+it is.
+Hold on.
+There we go. All right. Yes, it is true.
+GPT6,
+I almost said GTA 6. GPT6
+is here. I've had early access. I have
+so many demos to show you
+and it's the best model I've ever used.
+Like, bar none. Period. No. No, like no
+middle ground. It is the best model I've
+ever used.
+Um, okay. So, what we're going to do
+today, I'm going to tell you about the
+model.
+I'm going to uh show you some of the
+benchmarks, show you the pricing. I'm
+also going to show you a bunch of the
+demos that I created over the last week
+or two. Um, like couple dozen demos. So,
+[03:00]
+I'm really excited to show that to you.
+This is the closest we've ever gotten to
+prompt to full game. Full, but not just
+game. Full playable, fun,
+like actually a good game.
+Um, it is it is out. They just announced
+it.
+I've been playing with it for a little
+while now,
+and it should be rolling out to all paid
+users over the coming uh few days.
+Yeah. Uh, this is weird. Scores low on
+artificial analysis. Yes. We're going to
+go over all the benchmarks. Let me share
+my screen.
+Let's go over it.
+[04:00]
+All right. Here we are.
+Hold on.
+All right. Can you all see it pretty
+well?
+Going to need a quota reset. Absolutely.
+Okay.
+So, here it is. Here's the website. This
+is the blog post. First of all, look at
+those cool graphics. Astra. It's all
+about the stars. GPT Astra. That is the
+official name of GPT6.
+This is the brand new model from OpenAI.
+This is the absolute frontier, a brand
+new training run, the largest model that
+OpenAI has created to date.
+And I could just play with this all day.
+Um, okay.
+We're introducing GPT6 Astra, the
+world's most intelligent and aligned
+[05:00]
+model. And it actually is. And I I'll
+show you a few examples of why that is.
+Some of the benchmarks now have been
+completely saturated.
+So, let's go through some of the
+benchmarks. Now, what I like uh that all
+of the Frontier Labs are doing now, and
+really all of the labs, when they put
+out benchmarks, they're putting out not
+only kind of the the kind of raw
+benchmark score, but they're also
+putting out the cost per task completed
+uh or cost per benchmark. So, that's
+what we're seeing here on this is uh
+terminal bench science. So, test whether
+agents can complete scientific research
+workflows using code and terminal tools.
+And on the y-axis, what we're seeing is
+the resolution rate. So higher is
+better. On the x-axis, we're seeing the
+cost, the API cost. Um to the left is
+better.
+[06:00]
+Let me just make sure everything's
+recording. Yep. Um if you're looking for
+GPT6,
+it is rolling out to paid users over the
+next few days, so you might not have it
+yet.
+So, just a heads up and for those of you
+just joining GPT6 obviously here I've
+had access so I'm going to show you a
+bunch of uh different demos that I've
+created. Um and yeah, it's going to be a
+lot of fun. You you will be blown away
+blown away by some of these demos. They
+are are truly like nothing else that
+I've created here. Um okay, so what
+we're seeing here is a very nice jump.
+By the way, Claude Fable 5.1 right here.
+And we're seeing GPT6 Astro way up here.
+So around the same cost, a little bit
+less expensive overall, but you get a
+massive jump. All right, so that's
+number one. ARC AGI 3, the AGI
+benchmark, which you this benchmark
+[07:00]
+basically drops an agent. Oops.
+Okay. Yeah. This a this benchmark
+basically drops an agent into a game
+with no instructions other than beat the
+game. It doesn't tell it even the name
+of the game, let alone how to play it,
+what to do, what the different elements
+are, and it has to figure it out
+completely. And look at this. 99.9%
+completely
+saturated. Here's Claude Opus 5 at 30%.
+Which by the way, at the time when
+Claude Opus 5 got a 30% on RKGI3, that
+was incredible. That that was a massive
+leap from the previous GPT 5.6 Soul. So
+from Soul at 7.8 all the way up to Astra
+at 99.9.
+And if you think that's it, no. Frontier
+math has been completely saturated. We
+have a one well nearly 100%. And when
+you actually look at the benchmark
+[08:00]
+scores, they do say Frontier Math scored
+100%. But basically, completely
+saturated on Frontier Math Tier 4. This
+is the hardest math you can think of.
+Advanced mathematical reasoning on
+exceptionally difficult problems. And
+not only that, Astra has actually
+figured out new knowledge. Uh, and I'm
+going to get to that in a little bit.
+Here's Terminal Bench 4.0.
+This is another one of those benchmarks
+that really reflects the model's ability
+to obviously use the terminal, but it's
+really a good reflection of how well it
+codes overall.
+Okay, so what we're seeing here, 57.6
+six at the high end 57.9 I should say on
+high reasoning effort which here's
+Claude Fable 5.1
+even at so the max effort on Claude
+Fable 5.1 is 55.8 coming in at$950 for
+the API cost whereas the highest score
+[09:00]
+over here 57.9
+but comes in at a fraction of the price
+at $721.
+Really incredible work.
+And here's Automation Bench test whether
+agents can complete multi-step business
+workflows across applications.
+Here we go. Way up here, 41%.
+Here's Fable down here at 17%. So, there
+are a few things that this model does
+incredibly well. Number one, like
+obviously coding. And I have some
+amazing games that I created over the
+past few days that you'll see and you'll
+see how just complete they look. It's
+really good at knowledge work, creating
+presentations. It's much better at
+writing. It doesn't have n it doesn't
+have like no AI smell to the writing.
+There's still kind of a little bit of
+that slop there, but the it it is much
+much better. And it's very steerable as
+[10:00]
+well. Um, and by the way, if you're
+here, I would love it if you liked the
+stream, shared it with somebody who else
+could benefit from seeing Astra. So,
+thanks in advance for that. Um,
+okay. So, really good scores on these
+benchmarks.
+Um, it's also a much more aligned model.
+Okay, this is exploit gym honeypot.
+Basically kind of encouraging the model
+to do what it did in in like the hugging
+face scenario, hack, get out of its
+containment. And what we're seeing is
+for GPT 5.6 soul, 48% of the time it was
+an a successful exploit rate, 0% with
+GPT6 Astra. And so just keep in mind
+there's probably
+a version of Astra that does not have
+the guardrails on it. And what's
+interesting about that is that model
+[11:00]
+probably performs even better than Astra
+with guardrails because when you put
+guard rails on a model, it tends to
+perform worse.
+Very cool. Okay. So this icon is kind of
+the browser control. Ah, yes. Okay, one
+other thing I wanted to say. Uh, it is
+incredible at browser control. GPT 5.6
+and codecs was al already like this
+massive leap in browser control. I could
+finally trust the model to do things in
+the browser on my behalf. But now it's
+it's better. It's not as big of a jump
+from 5.5 to 5.6, but it's still better.
+But it's much faster. like tasks take
+half the amount of time. It's super
+super impressive. Um, okay. So, that's
+what we're seeing here. Computer use
+browser control. That's the icon.
+[12:00]
+So, a few more benchmarks. Here's agents
+last exam. Uh, complex professional
+tasks in real software.
+Uh, here's Claude Fable 5 down here.
+much more expensive. I think that's kind
+of the the vibe that OpenAI is going
+for. Incredible model, but also really
+costefficient. Um, sleeping troubles,
+thank you for the $5. I appreciate it.
+Um,
+screen uh screen spot pro test whether
+models can locate the correct interface
+element in high resolution screenshots.
+So, being able to like take a screenshot
+of your computer and know where to click
+things. And then of course OS World uh
+which is another computer use benchmark.
+Okay. Uh let's keep going. Here are some
+[13:00]
+examples. I'm not going to show these
+for too long because these are the
+examples or the demos that came with the
+blog post and I think I have better
+examples than this
+uh Excel competition.
+Yeah. I mean this is real time. Look how
+fast it's going.
+Game development. Okay. I created a Sim
+City. Uh,
+let's see. Oh, this is cool.
+So, this is like a Sim City variant
+where you can get in first person view
+as well. I have a better Sim City. Wait
+till you see that demo. Uh, filing a
+form. Uh, sorry. Filing in a form 1040.
+Where is this one? It's kind of missing.
+That's okay. DMV appointment. So, I
+actually used Astra to um like submit
+registration renewals for me. I also
+sold my car and the DMV didn't have a
+record of it. Used Astra to to tell the
+[14:00]
+DMV about it. It's the amount of time it
+saves you is incredible. Um I I'm such a
+big proponent of browser use.
+You know, it's interesting. Yeah, the
+the website's missing some of these
+demos.
+Opus 5.1 released. Is that true?
+I to be honest, this is what I care
+about right now.
+Whoa. Mark Bennett, thank you for the
+hundred, man. Much appreciated.
+Thank you. Thank you. Um,
+okay. Uh, okay. The other thing it's
+really good at is 3D. Whether it's 3D
+asset creation, 3D game development,
+spatial reasoning in 3D space, it is so
+good at all of these things. It is so
+[15:00]
+good. That was the thing that surprised
+me most of all. games where I had to
+usually give it a few prompts and nudge
+it in the right direction to get the 3D
+assets looking normal or to have
+different 3D assets within the world not
+colliding and clipping. It just does
+that out of the gate.
+And by the way, uh Brian and Alex from
+the Forward Future team are both in
+chat, so say hi to them. Uh they help on
+all of this stuff. They are awesome and
+as knowledgeable about all this AI stuff
+as I am, which is a lot of fun. Um,
+okay. So, that's why we're seeing Bench
+CAD right here, which is a 3D CAD
+creation benchmark. I mean, 95%
+really good, obviously.
+[16:00]
+Okay, give me one second. Okay. Um,
+browse comp. Pretty good. Oh, it's
+funny. This is kind of exactly what I
+felt. So, browse comp. You can see the
+light blue is GPT6 Astra. The darker
+blue is GPT 5.6 Soul. And this is
+obviously browser control. This is a
+browser control benchmark. And what
+we're seeing is it is better. It's just
+not massively better. And that's what I
+noticed except it's much faster.
+Uh, okay. I'm going to skip over the
+rest of these. Let's see.
+Here is uh a house in Blender. So, this
+is unfortunately
+um a a kind of category of tests that I
+really didn't explore. So, doing things
+in Blender, doing things in Unreal, and
+I think there's a lot of opportunity
+[17:00]
+there as we're seeing here. So, I'm
+going to get that ready and maybe I'll
+include that in another video, but for
+now, I don't have it. Uh here's a
+Blender model completely created by
+Astra. And here are some stills. Super
+nice. Here's a game. I'm going to skip
+over this because I have better games.
+Um,
+okay.
+Terminal bench. Okay, here here's the
+crazy one. So, this is the Deep Sweet
+benchmark, which
+until today
+was my preferred benchmark for
+reflecting what I think myself and the
+rest of the engineering community really
+felt about a model.
+But, Whoops. What it shows
+is that Astra
+is is equivalent with Gemini 3.8 Flash,
+which is which is kind of crazy. Look at
+this. Fable 5 um GPT 5.6 Soul on the
+[18:00]
+high higher reasoning efforts, Opus 5 at
+the higher reasoning efforts, and Gemini
+3.8 Flash. Google, I guess, cooked, but
+it's that's not my experience. Gemini
+3.8 A flash is great but boy Astra is
+just something different. It is just
+something different. Um what we are
+seeing is that it is more efficient. So
+on this X a so y-axis is the score.
+X-axis is the number of output tokens.
+Now that's only part of the total
+equation of cost per task completed. The
+number of output tokens is important but
+you need to multiply the number of
+output tokens by the actual cost per
+million tokens. And Gemini 3.8 Flash is
+a fraction of the price of GPT6 Astra.
+And I'm going to get to the price in a
+moment. So, this was really surprising
+to me. Uh, Ralffo, much appreciated.
+Thank you. Thank you.
+Let's see.
+[19:00]
+Um, same thing with the artificial
+analysis coding agent. And I'm gonna
+show you their tweet soon, but basically
+what you're seeing is like Astra, Soul,
+Fable, Opus, and it's like so
+surprising. Gemini 3.8 Flash, they are
+all um top tier coding models now. Uh I
+want to see Muse in here, by the way,
+because I have read and I've seen I
+haven't tested it myself yet, but uh
+Muse Spark by Meta is is a really good
+coding model.
+All right, we have some more benchmarks.
+GPQA, Diamond, Healthbench, Life
+Science. Okay, I want to skip forward a
+bit.
+Oh, yeah, it's missing some of these.
+Yeah, they got to update this uh
+website. See if I refresh the page if
+they've already updated it.
+No, they haven't. So they have uh
+[20:00]
+exploit bench exploit gym which if that
+sounds familiar that's the evaluation in
+which the opena model escaped
+containment and went and hacked hugging
+phase. Um they have exploit bench right
+here. So yeah it's just better overall.
+um
+circumventing auto review 0% so you
+don't ever want it like if you have auto
+review turned on on your prompts uh you
+don't want it to circumvent that so
+lower is better it's still like GPT 5.6
+soul was very low already uh now Astra
+0%.
+Um,
+okay. A few other things. GPT6 Astra is
+rolling out today uh to a limited set of
+organizations and will become available
+to all paid users over the coming days.
+We don't know how long that's going to
+be. I would probably guess over like the
+next week.
+[21:00]
+Uh, direct shot at anthropic. Astra
+supports uh zero data retention for
+eligible API customers.
+So very very important because Fable is
+not even with their new program it they
+still require you to save that data even
+though it's on your own server and they
+still [snorts] have to have access to it
+to look for malicious use.
+Check Sam Alman's latest tweet might
+come sooner than we think. Cool.
+Uh, El Elcaris
+smiles, thank you for the 50, man. Thank
+you.
+Much appreciated. Thank you very much.
+That's awesome. Um,
+okay. We got a bunch of benchmarks. Um,
+Icarus. Oh my god.
+Uh, yeah. Sorry, Brian. Icarus.
+[22:00]
+Obviously,
+I'm I'm going fast here. Okay, guys.
+Here's the blog if you want to go check
+it out. I just dropped it in chat. Um,
+all right. Let me show you artificial
+analysis. Now, this is kind of crazy.
+This is kind of crazy. Look. Okay. First
+place still Claude Fable 5.1.
+Second place Claude Opus 5. Third place
+Muse Spark 1.3.
+What?
+And here is GPT6 Astra under Claude
+Fable 5. Look at that.
+Just based on my usage of it, I would
+put it as the number one model. It is my
+favorite model. It is the best model
+that I've used on a number of different
+tasks, especially the tasks that I
+really care about, which is a lot of
+knowledge work, a lot of automating
+stuff that I'm doing daytoday.
+[23:00]
+Um, and just want to ask one more time
+if you're here, uh, like the stream. I
+would very much appreciate that. Thank
+you. Um, okay.
+So, the right artificial analysis
+intelligence index. This is an index
+against a number of different
+benchmarks. Here's the coding agent
+index. Same thing, right about the same
+score. Uh, let's talk about pricing
+because I didn't get there yet.
+Here we go. So, it's not cheap. That's
+the first thing you need to know. $10
+per million input tokens, $50 per
+million output tokens. Separate read uh
+separate rates apply for cash reads and
+writes. Great. You can also get 2 and a
+halfx the speed for 2x the standard
+price, which I actually think is quite
+good. Now again the the actual price of
+[24:00]
+input and output tokens is only one
+factor of many to determine how kind of
+expensive a model is. Um this from a
+pure cost per token perspective is on
+the expensive side. This is quite
+expensive actually. This is you know
+fable level expensive. But if it takes
+less tokens overall to achieve the same
+task, then it is for all intents and
+purposes cheaper than Fable. And and I
+think that's where it is. And we we're
+actually going to see that with the
+artificial analysis uh some of their um
+charts here.
+So
+GBT6 Astra defines a new paradial
+frontier for intelligence index versus
+output tokens per task 10% reduction in
+output tokens at max effort compared to
+5.6 soul. So over here you're seeing on
+the y-axis this is the score. So higher
+[25:00]
+better and over here output tokens per
+intelligence task uh to the left is
+better lower is better. So, where you
+want to be is in this quadrant in green
+right here. And what we're seeing is
+Astra is well within that quadrant.
+Here's Fable 5.1, but it's still like
+they just have it's a it's a less sorry,
+it is a more efficient model. Now, what
+this chart does not take into account is
+the cost per token. And so, that would
+look quite different. Now, let's try to
+find that.
+Here we go. GPT6 Astra is 75% more
+expensive than 5.6 soul at max effort.
+So here on this bottom chart, cost per
+intelligence, sorry, cost per
+intelligence index task. Just think
+about it as how much did it cost to
+actually complete that task at the very
+top by far. Claude Fable 5.1. Here's
+GPT6 at $167. Here's um that that's at
+max. Here's GPT6 Astra at extra high
+[26:00]
+A120. Here's it at medium.75 and down
+here at low 46. But look at GLM 5.3
+flash all the way down here at 9. Uh
+whereas Muse Spark 1.355.
+So uh the cost of the model is extremely
+important.
+All right. So there's that.
+Um
+it's interesting. Okay. Artificial
+analysis says the model shows mixed
+progress in agentic knowledge work. 80
+points in AA briefcase regressing a
+similar amount in GDP val which is open
+AAI's own internal benchmark for real
+world knowledge work. But I will tell
+you from my own use of this model, it is
+far superior to GPT 5.6 for knowledge
+work. That is stuff like create creating
+PDFs, doing research, data analysis,
+[27:00]
+PowerPoint presentations, even writing.
+So I have just found the model to be so
+so much better at those things,
+especially like creating PowerPoint
+slides. Um, I don't know if you guys
+have noticed, but over the last week or
+so, I've had um some slides in my
+videos, and those were almost
+exclusively created by Astra, and and
+like single prompt creation, too.
+Okay.
+Um,
+so I wrote a full review of it, which
+you can find at Forward Future. Um, and
+if you're not familiar with Forward
+Future, it's my company with uh, Alex
+and Brian and my partner Nick. Um, I
+dropped the full review right here, but
+I go into depth in this review if you
+[28:00]
+wanted to check it out.
+forwardfuture.com
+and then
+let's see. So, I'll go over some of
+these things,
+but I created Oh my god. Wait till I
+show you the Fall Guys demo. Okay, first
+let me show you this. Um, and by the
+way, you can play with all of these.
+Shout out to here.now now for um first
+of all uh helping me host all of this,
+making publishing really easy with all
+of my agents. Uh this website, all of
+these demos are all hosted on here. Now,
+and it was so easy to publish. So, shout
+out to them. Um here is seven different
+biomes and I've done this with uh GLM
+5.3. I completed this with Fable 5.1.
+Um, this is definitely at the top. It's
+hard to say whether it's better or not,
+but it it's perfect. Like, I don't see
+[29:00]
+any mistakes with it, and it is
+definitely at least equal to the best of
+the other ones that I've seen.
+Look at that. Okay. So, very cool.
+Now, check this out.
+This is I'm going to open the full game
+in a browser so you all can see it a
+little bit better. This is a fall, guys.
+This was one prompt. One prompt. Just a
+couple minutes.
+All right, check this out.
+All right, so it it's it has sound
+effects. Here's everybody else following
+me. Okay, I shouldn't look. I should
+just go. Uh, of course I have diving and
+it's actually fun to play. Um, this is
+actually the updated version of the
+game. So, it was one additional prompt
+provided by Brian. A little bit of
+feedback.
+[30:00]
+And if you want to play this game, you
+can play it right now. Oops. Okay. Don't
+don't look at that.
+All right. Can you beat my score? Let me
+know. 31 seconds.
+Um, it's not. Okay. Uh, M Mataas, it's I
+don't think it's available yet to
+everybody. It should be rolling out
+quite soon. What was the feedback given,
+Tim Cunningham? What was the feedback
+given? Um, let me pull that up.
+So, he said, "Make the camera move with
+the mouse." Um, make the balance
+platforms dip down further.
+Fix diving through edges. is there was
+just like a lot just a little bit of
+polishing. It really wasn't much. But
+now we have this like this is a fun
+game. Now I can imagine taking
+a few days with somebody who might
+actually have taste in creating games
+and putting a bunch of polish on this.
+[31:00]
+Like this is a really cool game that did
+not take long. And all of these things
+are generative. So this wasn't
+available. Oh gosh, you guys are
+probably cracking up. Um, this this is
+like I I'm so impressed with this uh
+game in particular.
+Okay, so there was that one.
+Okay, this is a really cool one. Uh, I
+had Astra create a 3D city using only
+asy characters. This is called After
+Hours.
+Okay, so you can walk through the city
+and if you look really closely, the
+entire city is just made of little
+characters. It's all asy characters. And
+this took, I think, two prompts, but you
+can see everybody's walking around.
+There's a lot of life. It's raining.
+There's a little mini map in the bottom
+right corner. I don't know if you can
+see that. Um I don't know. Yeah, I you
+[32:00]
+can't see that, but there's like a
+little mini map right there.
+Um and it's generative as well. So, I
+can walk infinitely and it'll just keep
+populating the world for me.
+Look at that. I think it's so cool. Um,
+this wasn't an original idea by me. I
+forgot. I saw it from somebody. I
+apologize. I can't give you credit, but
+I saw it from somebody and I was like,
+"Cool. I have to recreate that. That
+looks really cool." Um,
+the future of muds. My god, I used to
+play Muds growing up. That's That's a
+flashback you just gave me. Um,
+okay.
+So, there's that.
+Okay.
+Now, this is the one I'm really excited
+to show you. This is a full Sim City
+game that you can play right now. I did
+[33:00]
+SlashGole with Astra and it was running
+for five straight days.
+five days creating every single excuse
+me creating every single asset one by
+one. Every single building that you see
+here, the fire station, the police
+station, the hospital, nuclear energy
+plant, the university, everything you
+see here was created one by one and I
+watched it over 5 days. The funny thing
+is it wasn't even done after 5 days. I
+just had to ship it though. So, if I
+push play
+and I zoom in, I mean, the world is
+alive. You can see people walking. You
+can see cars driving, traffic. Um, and
+it is a fully playable game. And the
+level of of depth that you get in in
+this game, like the number of features,
+the the amount of functionality in this
+game is really good. And so as I was
+making it, I had noticed that the frames
+[34:00]
+per second were lagging so much because
+this is all HTML and JavaScript. But now
+look at it. There's no lag at all. I
+told it I said, "Hey, make sure you're
+optimizing for the browser. Make sure
+you're optimizing for frames per
+second."
+All right. So here we have Let's add
+some roads. I'll show you what it looks
+like.
+Add some roads. I mean, you know, the
+city's growing. I have funds. I have a
+population happiness. I get, you know,
+uh, emergencies. There's so much there.
+Okay. Then I'm going to go into zones.
+I'll add a residential zone right here.
+Boom. And we're going to watch it
+populate here. I'll fast forward a
+little bit more.
+Oh, maybe it won't on this side. Maybe
+I'm missing something.
+Let's add
+services. Let's add a neighborhood
+clinic right there.
+General Hospital on that side.
+I don't know why it's not uh people
+aren't moving into this zone, but they
+[35:00]
+definitely do. Um because I'll show you
+over here.
+Like all this uh I don't know if you can
+see. Oh, here we go. All this down here,
+this is all new population that I just
+added.
+So, it really does work and you can
+really go play it right now.
+Um, I'm going to drop the review site
+one more time in chat if you want to go
+check all of this out.
+So, I I I'm just very impressed by this.
+You can start a new game. So, let's say
+new city. You can choose the size. Uh,
+wait, where is it? There should be a way
+to choose the size. Oh, here we go. Uh,
+standard, large, expansive. You can, you
+know, just it's just so good. So, you
+get a brand new map. Look at the size of
+that map.
+I'm so impressed by this. This one took
+[36:00]
+5 days and it just kept working.
+Slashgo.
+Yes, we got GPT6 before GTA 6. That's
+right. Totally. Okay, so go check that
+one out. Um, okay. So, it also reports
+the benchmarks on here. Uh okay,
+knowledge work. So this is just a simple
+prompt I put in which was create a slide
+deck to talk about data centers and this
+is what it put together.
+I also told it to use our forward future
+branding which it is. How many tokens
+for Sim City? I'm not sure actually.
+My guess
+probably probably in the tens if not
+hundreds of millions of tokens. No,
+maybe not that much. Maybe in the tens
+of millions of tokens to to generate Sim
+City.
+Is it out for everybody? Not yet. It
+[37:00]
+will be soon for paid users. Uh in the
+next like few days, hopefully pretty
+soon. Somebody said Sam Alman
+posted something.
+We are working toward getting Astra in
+everyone's hands as quickly as we can. I
+know it's frustrating and I appreciate
+the patience. Should be quick.
+Okay.
+Yeah. By the way, did you all see the
+launch or kind of the teaser video
+leading up to the launch? Um, it's it
+was really cool. And this is really
+good. It's basically just people sitting
+and kind of
+>> dictating what they want changed to a
+computer that's being projected onto a
+screen. Super impressive. Um, but I
+don't want to get distracted. Let me get
+back to this. So, the slides came out
+really well. I know this isn't like
+super exciting, but for any of you who
+are doing knowledge work, this is
+incredible.
+[38:00]
+Uh, please wear your Only Murders
+tie-dye hoodie again. I don't know what
+Only Murders is, but I absolutely will
+wear that tie-dye hoodie again. Uh, Ian,
+much appreciated for the $5. Thank you
+so much. Really appreciate that. Um,
+okay, check this out.
+So, Astra is incredibly good at browser
+control and computer use. And
+specifically browser control is
+important to me because I don't want to
+do everything anymore. Like I don't want
+to make a DMV appointment and I don't
+want to, you know, sell things on eBay.
+Whatever it is, I don't want to do it.
+And so Astra's ability to actually
+control the browser and get real things
+done for me in the browser is
+incredible. So I'm going to show you a
+few examples of that. Now, the prompt
+that I gave it was, "Okay, do this task
+in the browser. Record yourself. Don't
+use QuickTime, but write your own
+browser recording software, record it,
+[39:00]
+and then put a timer on the screen." And
+it did that all watch this.
+Okay, so it's drawing a research
+workflow in Excaladraw. And you can see
+the timer going up. It is real time. It
+does skip ahead a couple times so you
+can just see how long things are taking
+in total. Um, but yeah, I think it's
+really good. Um, here it is doing uh
+searching eBay for uh three Pokemon
+listings and comparing them. And these
+are like kind of high-end Pokemon cards.
+So, here it goes on eBay
+and it's just researching Pikachu,
+expensive Pikachu cards.
+And yeah, it's just really good. 55
+seconds to do all of this comparison. I
+mean, it's all under like two minutes.
+Um, here it is creating a plan for a
+walk through Kyoto in Japan. So, here it
+[40:00]
+is. So, it opened Google Maps. It's
+putting together a multi-point path
+through Kyoto.
+You just watched my video about Astra.
+Thank you. Yeah, we we put all of this
+together at the same time. So, if you
+want to hang out on live, awesome. If
+you want to go watch the video, please
+do. Um, but the video will be there
+later, so don't worry. Um,
+okay. So, really good at browser
+control.
+Uh, some more comparisons. my take so
+far, the pricing. Okay, now I told you I
+created a lot of demos. Let me just show
+you. And if you you can see all of these
+are all playable. They're all they're
+all published using here.now. Shout out
+again. But look at all of these.
+[41:00]
+These are all demos that I created. Now,
+I want to actually pause here for a
+second. If you look at these kind of
+these three plus these two or these
+three, um, one thing I noticed there,
+there's a couple minor critiques of
+Astra. One, it still does have a little
+bit of that AI smell in the writing, but
+also in its design choice. And so, these
+are five, six separate projects, and
+they're all using some variation of
+forest green, right? And and I didn't
+tell it what to do in terms of design. I
+didn't tell it the color palette to use.
+It just has this desire to use the same
+color palette every time. A lot of flat
+design elements. That's also something
+like kind of the AI design smell, but it
+it looks good. It's just everybody's
+going to be creating the same thing.
+Now, the good thing is Astra is
+extremely steerable. So,
+[42:00]
+excuse me. With a little nudge, you can
+get a lot out of it. A lot of different
+design.
+Uh, okay. So, what do you what do you
+guys want to see first? Um,
+oh, how about the classic,
+right? A Rubik's cube. Of course,
+it nailed it. Okay. So, let's scramble.
+There it is.
+And will it be able to solve it?
+Of course. Like, this is saturated
+already. Rubik's Cube Bench is
+saturated. Um cost to make Sim City,
+Gavin. I I don't know. Um I'm going to
+guess. Okay. Yeah, Matt
+said over 5 days, $800 to $1,000
+according to GPT6 pricing. I'm not sure
+exactly to be honest. If I had to like
+[43:00]
+finger in the air, I'd say that probably
+sounds about right.
+Uh, now there will be a new benchmark
+for ArcGI. Yeah, they're going to need
+ArcGI4 now. Um, so it has a bunch of
+sliders that you can change what it
+looks like.
+Um, you can change the colors, change
+the atmosphere,
+everything. So impressive, but we've
+seen it before.
+Um, this is another one which I got the
+idea from a video I saw. There are 5
+million needles. Sorry, there are five
+million pieces of hay in this hay stack
+and one needle. And the point of the
+game is to go through them one by one
+until you find the needle.
+So, I thought this was so cool. I saw
+somebody else make this. This wasn't my
+idea. And apologies once again, of
+course, I just lost the reference. Uh,
+[44:00]
+so I can't give you a shout out. Uh, but
+here you go. Just one by one. If y'all
+want to play this, you can.
+Should I do like a a 48 hour live stream
+where I just go through this
+one by one?
+You should name those next time. The
+games, they all have names, I think.
+Yeah, this one's called Needle.
+Yes. Uh, I will give you the link once
+again.
+I just dropped the link to
+forwardfuture.com.
+Um,
+[laughter]
+it has all the games on there, all the
+all the demos. You can go check them
+out.
+48 hours won't be enough. Yeah, I think
+you're right. Um, okay, let me see.
+Okay, little planet. I thought this was
+really cool. Look at this.
+Look how beautiful this is. And then I
+zoom in and I actually have a little
+[45:00]
+dude walking around. Look at the detail.
+This is what I'm talking about with how
+good Astra is at 3D. Okay, so I don't
+see any clipping issues, right? Not even
+right there. Yeah. So, I can zoom around
+really easily. Everything just looks
+good. No clipping spaced out properly.
+Let's see if it lets me walk through
+stuff over here. No. So, it doesn't let
+me walk through that, but it did let me
+walk through the uh the brush. Here's a
+sheep. I can walk through that. But
+overall, like super impressive. Look at
+this. Yes, these are mostly one prompt.
+This one was one prompt,
+which is incredible. Maybe there a
+little bit of issue with these uh
+icebergs.
+Right.
+Yeah. A tiny bit of um I don't know what
+this is called. Maybe this is clipping,
+but little bit of an issue there, but
+otherwise
+[46:00]
+fantastic. Right. I don't see any other
+issues in this whole game. Let's see.
+Let's go to the beach.
+Why am I so excited about this? You
+should be, Chad. You absolutely should
+be. This is a lot of fun. Let's see what
+happens when we go in the water. Look at
+that. It doesn't just continue the
+walking animation in the water. It
+actually changes the animation. So, he's
+swimming now.
+Can I get in the boat? No, I can't get
+in the boat.
+So, I I was really impressed with this.
+Um,
+there's actually different way points
+and Oh, look at that. It will actually
+navigate there by itself. So, I can tell
+it a a waypoint to go to, and then it'll
+go there. And then it says, "Press E to
+see what happens." There we go.
+Very cool. Okay, let's try one more
+waypoint.
+All right, so it's walking. There's a
+[47:00]
+volcano.
+And let's see what happens. There it is.
+I don't know what this is. Some kind of
+uh radar measuring device.
+I think this is beautiful. Um, okay.
+What do I want to show you now? Commons.
+I don't think I had much time to play
+this, but this is a uh little city
+simulation game.
+So, we have number of residents. It's
+kind of like
+um
+like like Excel uh in a way like almost
+Excel management. This is just a
+simulation of what's happening in the
+Excel document. Um, so yeah, it's pretty
+cool. It's a full simulation and all of
+the agents in this little town were
+simulated by Astra and it's basically
+just replaying what happened in that in
+the town. So, we can see that right
+here. Uh, here's the economy. I mean, it
+really is like a full simulation of a
+little town.
+[48:00]
+Social fabric. Look at this.
+Oh, you can even record. You can run
+experiments. So, dry season, patient
+zero, the lights go out. I didn't tell
+it to do any of this. My prompt was
+really, really simple. Shout out to here
+now again. Yeah, hosted by them. Oh, it
+uses their old logo here. Oh, darn.
+All right. Um,
+okay. Let's see. Oh, yeah. Okay. This is
+cool. This took a few prompts. I'll be
+honest here. But this is a 3D liinal
+space horror game. Okay. So, let's go
+into it.
+And I think this looks fantastic.
+And I basically said hyperrealistic 3D
+liinal horror game. There should be a
+[49:00]
+baddie somewhere. Uh, I I said to make
+it very subtle and and to do jump scares
+later. So,
+um, I don't know, maybe it'll happen in
+this demo, but maybe it won't. Open your
+personnel file. Let's see.
+Okay. And it should get weirder, by the
+way.
+Let's see if I know how to get through
+here. Yeah, this was completely created
+by Astro. All the assets,
+um, the skins, everything, all created
+by Astro or sorry, not Astro, Astra,
+excuse me. All created by Astra.
+Here, let's see if I can put my laundry
+in there. Nope.
+I just think this is so cool.
+And I'm pretty sure it goes on forever.
+And and the longer you play, eventually
+you're start you're going to start to
+see the shadow guy.
+[50:00]
+Oh boy. The nursery.
+Yeah, I sorry. I could just play this
+forever. This is cool.
+A little pool.
+But yeah, all of this just easily easily
+created by Astra.
+Um,
+here is
+like a little mini GTA. I actually
+created a second GTA.
+Um, that was my first prompt with Astra
+and I got pretty far, but it was it was
+taking so long to complete it. Uh,
+here's a little manga
+that I created. I mean, this is super
+impressive.
+Yeah, very very cool. Is it available
+now? It it is not quite available to
+[51:00]
+everybody at the same time. It should be
+rolling out over the next few days.
+Here's some writing. I know this isn't
+super interesting, but if you want to
+read how it writes, go ahead. Um, let's
+see if there's anything else I want to
+show here. I think there was one more
+that I was kind of excited about. Oh,
+Brian was telling me this one's really
+good. This is a laundry mat simulator.
+I don't even know how to do this.
+Bring warm, dry laundry here for
+finishing touch. Do I already have
+laundry in there?
+Bring dirty laundry to this machine. I
+don't Does it not work? I swear it was
+working.
+Okay. So, yeah, it's a laundromat
+simulator. All right.
+Um
+I think Cloud Top Chaos, which is a Fall
+[52:00]
+Guys uh clone. I think that's by far the
+best. Like, that is just really fun.
+I'll come right back to that in a
+second. This is another one I wanted to
+show. Did any of you play Choo Choo
+Rocket growing up? It was a Sega game if
+I remember correctly. Um, it's this
+really fun game, multiplayer game in
+which you try to get all of your mice.
+What website is this? I'll drop the
+website. Hold on. Here it is again.
+These are all demos that I have created
+uh with the help of Astra. Really, Astra
+created with the help of me. Uh, and I
+put all of these on the
+forwardfeature.com website. Um, okay.
+So, again, this is Choo Choo Rocket.
+This is a clone of it. Basically, all of
+these little mice run around and your
+job is to get them to fall in your
+rocket. Um, and then so like I can place
+an arrow right here. So like they all
+run in a pattern and I'm trying to get
+them to land in my rocket and it's
+multiplayer and everybody else is
+scrambling to try to block the mice from
+[53:00]
+dropping in my rocket and to make them
+go into theirs.
+Yeah, these are these are much better
+games than I was able to create with
+Fable 5.1.
+All right.
+Yeah, I had a lot of fun making this
+one. This took a few prompts. Um,
+let's see. some basic websites that I
+created. This is for the Galaxy Zfold.
+Um, it's it's okay. You know, it still
+uses very flat design patterns.
+Um,
+here's one for an apple orchard.
+Let's see. Quack club. This is a rubber
+duck website. I don't really here. I
+[54:00]
+think the color might be off because I
+have dark mode on. There we go. That
+looks better. Yeah. So,
+you know, just a website for rubber
+ducks.
+And
+one, let's see.
+Yeah. So, Astra is really good. I think
+that's what you have to know. So, I'm
+going to do two more things right now.
+Um, I'm going to play Cloud Top Chaos
+one more time. Just if you missed it
+earlier. I I'm so impressed with it. And
+uh, yeah, if you want to ask any
+questions about the model, drop it in
+chat. Uh, happy to answer how my
+experience has been. Um, the websites,
+yes, the websites overin don't look
+fantastic. It was one prompt and, uh, a
+little bit of nudging. I think it'll go
+in the right direction. How can I use
+Astra Rookie? Um
+[55:00]
+uh just you have to be a paying
+subscriber and then
+um it'll it should roll out in the next
+few days.
+I'm going to answer questions while I
+play this game.
+Maybe I should add a multiplayer aspect
+to this so we can all play together. How
+cool would that be?
+Yeah, this is awesome. I mean, this is
+actually a fun game. And it took like of
+my time, I don't know, four minutes
+total.
+Uh, obviously it took much more time for
+Astra actually create this, but I think
+in total it probably took an hour to
+create this game.
+Shift to dive. Yep, I I did that.
+Here, round two. And you can see every
+time it's a new world. I I believe it's
+generative.
+Okay. Checkpoint.
+Any other questions? GPT7 when? Well, I
+[56:00]
+guarantee they're using GPT6 to train
+GPT7 now. Like without a doubt. And I I
+wonder why they didn't mention how much
+they used uh GPT 5.6 to train GPT6. Or
+when I say train, I mean create the
+infrastructure around it. Maybe create
+some synthetic data.
+On the image generation front, does it
+still use GPT image 2 or is GPT image
+2.5
+rolling out together with Astra? I have
+not heard of GPT 2.5. I still think it's
+using GPT image 2. Um I think
+uh Fiser, why don't you why don't you do
+any 3D CAD benchmarks like in FreeCAD or
+Open CAD? Yes, I should. I will I will
+do that for the next one. I just didn't
+get around to it this time. Um, that's
+all. I just didn't get around to it. Uh,
+I wanted to do something. I actually
+started creating something in
+[57:00]
+uh Blender. I started creating something
+in Blender, but it was slowing my
+computer down so much and I had to
+create all this other stuff and I just I
+couldn't do it. Um, how does it uh how
+is its front-end design compared to
+Fable? Sorry, I just saw this. How is it
+better? Um, oops. It's more steerable
+than Fable. Uh, I I think like if you're
+just measuring initial design,
+um, like initial no steering, straight
+out of the box design, I still think
+Fable is maybe a little bit better, but
+uh, Astra definitely has much more
+steerability to it.
+Uh A11, have you tried to make a
+maintainable extendable app game as
+opposed to a single and as opposed to
+the single file examples? Yes, I uh did
+[58:00]
+a I tried to make it make GTA 6 because
+of course um you know it was going for
+days and it it was pretty good. I think
+I think maybe the answer to your
+question is really not really. They're
+more single plate page games. Um, I
+should just turn on /goal and let it
+build in something that isn't just
+HTML/JavaScript
+because then it'll have much more
+flexibility in what it's able to create.
+Maybe I should have even pushed it
+towards using 3JS even though that would
+be uh usable in the browser. I think
+that might have been cool. Rubik's Cube
+demo does solve reverse scramble or a
+known technique. Oh. Um,
+I believe it's using a known algorithm
+for the solution, not just reversing.
+That would be kind of lame.
+Fable 5.1 or GPT6. GBT6.
+That's it. Period. GPT6. It's better.
+[59:00]
+It's more efficient. And it's less
+expensive.
+And when I say less expensive, I purely
+mean from a ta cost per task completion
+basis.
+Uh, what other questions do you have?
+Have you tried it with Hermes? I have
+not. I've only played with Hermes a
+couple times, admittedly. Um, I know how
+popular it is, but after Open Claw, I
+think I was like,
+it took so much time to just maintain it
+and set it up and get it working the way
+I wanted. I didn't want to go through
+all of that again with a new system. And
+to be honest, now I'm using Grockbot,
+which I'm really enjoying.
+Um, can we have the prompts you use to
+create the demos you've shown for us?
+Yes. Let me prepare that for you.
+[60:00]
+Okay. So, I started that off. I'll try
+to get it published on that website that
+I was showing you earlier. This one.
+I'll drop it again. Uh I I'll try to put
+it here at some point.
+Oops.
+Um
+is Astra fast? It is fast. Yes, it is
+fast. Um
+it's it's fast. It's certainly like it's
+not as fast as some of the really
+actually fast models. I haven't tested
+it with slashfast mode on. Um, and then
+I'm still waiting on ultraast. Where's
+that at? I got to play with ultraast,
+which is, you know, GPT powered by
+Cerebrous uh, chips and it was
+incredible, but it's still not released
+for some reason. I don't know why, or at
+least I haven't seen it. Yeah, by the
+way, new all-time high. Let's see what I
+got. No. Oh, 24 seconds. Yeah, buddy.
+[61:00]
+Um,
+have they explained what makes GPT6
+different under the hood? Not really,
+but my interpretation is this is a new
+training run. The this is the largest
+model they've created. It's probably on
+the order of like 6 to 10 billion par or
+sorry, 6 to 10 trillion parameters.
+Um, longest prompt in hours or days. How
+is it at endurance? So, it had this
+weird thing that it did. When I first
+started using it, it would go um it
+would basically go for 30 minutes. No
+matter how difficult the prompt is that
+I gave it, it would go for 30 minutes
+and stop. And it would complete the
+thing. It wouldn't be an incomplete
+project after 30 minutes, but it would
+just stop after 30 minutes. And then I
+kind of learned how to prompt it a
+[62:00]
+little bit better and I was able to get
+it go going for longer. Um I used
+slashgoal and so the longest prompt that
+I that I ever had running or the longest
+thread I should say was 5 days and it
+would have just kept going. I don't know
+when it would have stopped. Um I just
+stopped it. I think I it might actually
+still be running but that was the Sim
+City game. Um which was a lot of fun.
+Let's see what else.
+Are they going to release flash or
+cheaper of a cheaper model of GPT Astra?
+Absolutely. Absolutely. And they're
+going to use GPT Astra to create it,
+right? They're going to distill it. And
+you've probably heard about distillation
+attacks, distillation hacking.
+Distillation is a normal practice uh of
+taking a really big model and training a
+small model with the output from that
+really big model. And so they're
+absolutely going to do that. We are
+going to likely have the same flavors
+[63:00]
+that we had for GPT 5.6, something like
+a Soul and a Terra and a Luna.
+It might still be going. [laughter]
+I'll check. Hold on. Let me check.
+No, it's not currently running. I
+stopped it. I'm going to kick it off
+again. Why not?
+Yeah, I just kicked it off again.
+Holy cow, you suck. All right, you you
+try talking and playing at the same
+time.
+Um,
+it's not a cheap game. Yes. Uh, we need
+some sales or market research
+benchmarks. What what kind of sales
+benchmarks would that be? That's
+interesting. Market research. Um I think
+[64:00]
+that's probably included in GDP val
+is my guess. Uh the benchmark GDP val.
+Yeah, I do suck. Yes, that is true.
+Okay. Uh will Codeex give out a reset
+for downtime? Probably. That's my guess
+is probably. Where's TBO at when you
+need him? Right. Is GPT6 actually out?
+Yes, this game was created with GPT6.
+And if you want to see the full review,
+my full review, go to this website right
+here. I dropped it right there.
+Um,
+yeah, the
+I I have been just beyond impressed with
+Astra. And uh so that that's going to be
+it for today. Uh thank you for joining
+the stream. I appreciate it. Go
+subscribe to the channel if you're not
+already. Go check me out on
+Twitter,Matthew
+Berman. Um, forwardfuture.com for our
+newsletter. Stay up todate in all the
+latest AI trends and news and
+[65:00]
+everything. We have a bunch of awesome
+originals there as well.
+forwardfuture.com.
+Um, so thank you everybody. Much
+appreciated. This was a lot of fun. And
+look out for more GPT6 demo videos. That
+is coming soon. Uh, see you next time.

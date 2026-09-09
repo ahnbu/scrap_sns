@@ -1,0 +1,367 @@
+[00:00]
+All right, yes. It is true. GPT-6.
+I almost said GTA 6. GPT-6
+is here.
+I've had early access.
+I have so many demos to show you.
+And it's the best model I've ever used.
+Oh my god, wait till I show you the Fall
+Guys demo. And by the way, you can play
+with all of these All of these demos are
+all hosted on here.now. Here is seven
+different biomes, and I've done this
+with uh GLM 5.3. I completed this with
+Fable 5.1. This is definitely at the
+top. It's hard to say whether it's
+better or not, but it it's perfect.
+Like, I don't see any mistakes with it,
+and it is definitely at least equal to
+the best of the other ones that I've
+seen. Look at that. Okay, so very cool.
+Now, check this out. This is I'm going
+to open the full game in a browser so
+you all can see it a little bit better.
+This is a Fall Guys. This was one
+prompt. One prompt. Just a couple
+[01:00]
+minutes. All right, check this out. So,
+it it's it has sound effects. Here's
+everybody else following me. Okay, I
+shouldn't look. I should just go. Of
+course, I have diving. And it's actually
+fun to play. This is actually the
+updated version of the game, so it was
+one additional prompt provided by Brian,
+a little bit of feedback. And if you
+want to play this game, you can play it
+right now. Oops, okay. Don't don't look
+at that. All right, can you beat my
+score? Let me know. 31 seconds. Okay,
+this is a really cool one. I had Astra
+create a 3D city using only ASCII
+characters. This is called After Hours.
+Okay, so you can walk through the city,
+and if you look really closely, the
+entire city is just made of little
+characters. It's all ASCII characters.
+And this took, I think, two prompts. But
+you can see, everybody's walking around.
+There's a lot of life. It's raining.
+There's a little mini-map in the bottom
+right corner. I don't know if you can
+see that. I don't know Yeah, I don't You
+can't see that, but there's like a
+little mini map right there, and it's
+generative as well. So, I can walk
+[02:00]
+infinitely, and it will just keep
+populating the world for me. Look at
+that. I think it's so cool. This wasn't
+an original idea by me. I forgot I saw
+it from somebody. I apologize. I can't
+give you credit, but I saw it from
+somebody, and I was like, "Cool, I have
+to recreate that. That looks really
+cool." Okay, now this is the one I'm
+really excited to show you. This is a
+full SimCity game that you can play
+right now. I did {slash} goal with
+Astra, and it was running for 5 straight
+days. 5 days creating every single asset
+one by one. Every single building that
+you see here, the fire station, the
+police station, the hospital, nuclear
+energy plant, the university. Everything
+you see here was created one by one, and
+I watched it over 5 days. The funny
+thing is, it wasn't even done after 5
+days. I just had to ship it, though. So,
+if I push play, and I zoom in, I mean,
+the world is alive. You can see people
+walking, you can see cars driving,
+[03:00]
+traffic, and it is a fully playable
+game. And the level of of depth that you
+get in this game, like the number of
+features, the the amount of
+functionality in this game is really
+good. And so, as I was making it, I had
+noticed that the frames per second were
+lagging so much, cuz this is all HTML
+and JavaScript. But now, look at it.
+There's no lag at all. I told it, I
+said, "Hey, make sure you're optimizing
+for the browser. Make sure you're
+optimizing for frames per second." Let's
+add some roads. I'll show you what it
+looks like. I mean, you know, the city's
+growing. I have funds. I have a
+population, happiness. I get, you know,
+emergencies. There's so much there.
+Okay, then I'm going to go into zones.
+I'll add a residential zone right here.
+All this down here, this is all new
+population that I just added. So, it
+really does work, and you can really go
+play it right now. So,
+this is just a simple prompt I put in,
+which was create a slide deck to talk
+about data centers. And this is what it
+put together. I also told it to use our
+Ford future branding, which it is. The
+[04:00]
+slides came out really well. I know this
+isn't like super exciting, but for any
+of you who are doing knowledge work,
+this is incredible. Astra is incredibly
+good at browser control and computer
+use. And specifically browser control is
+important to me because I don't want to
+do everything anymore. Like I don't want
+to make a DMV appointment and I don't
+want to, you know, sell things on eBay.
+Whatever it is, I don't want to do it.
+And so, Astra's ability to actually
+control the browser and get real things
+done for me in the browser is
+incredible. So, I'm going to show you a
+few examples of that. Now, the prompt
+that I gave it was, "Okay, do this task
+in the browser, record yourself, don't
+use QuickTime, but write your own
+browser recording software, record it,
+and then put a timer on the screen." And
+it did that all. Watch this, okay? So,
+it's drawing a research workflow in
+Excalidraw, and you can see the timer
+going up. It is real-time. It does skip
+[05:00]
+ahead a couple times, so you can just
+see how long things are taking in total.
+But, yeah, I think it's really good.
+Here it is searching eBay for three
+Pokémon listings and comparing them. And
+these are like kind of high-end Pokémon
+cards. So, here it goes on eBay, and
+it's just researching Pikachu expensive
+Pikachu cards. And yeah, it's just
+really good. 55 seconds to do all of
+this comparison. I mean, it's all under
+like 2 minutes. Okay, and just in,
+box.com just released their own evals on
+Astra, and I want to show you that. They
+are sponsoring this video, so super
+excited to show you because this is all
+about knowledge work. Here is the box AI
+complex work eval for GPT-6 Astra. For
+the full data set, we get a 3%
+improvement. If we look specifically
+into the industry subsets for each of
+the evals, media and entertainment got a
+massive bump. Technology, a massive jump
+from 62 to 77. Legal, 64 to 72. And if
+[06:00]
+you remember, the legal benchmark for
+Astra was actually quite high. Consumer
+products, a modest 3% bump. And energy,
+a 77 to 86% jump. And if you're not
+familiar with Box, it's the easiest way
+to store all of your company's documents
+and actually get value out of them.
+Extract information from them, analyze
+them, and it's trusted by some of the
+biggest companies in the world. And so,
+if you want to try GPT Astra, it's going
+to be released soon with Box AI. They've
+been a great partner, so go check them
+out. I'm going to drop this benchmark
+down below so you can check it out and
+go sign up for Box. Thanks again to Box.
+Now, back to the video. Now, I told you
+I created a lot of demos. Now, I want to
+actually pause here for a second. If you
+look at these kind of these three plus
+these two or these three, one thing I
+noticed is a couple minor critiques of
+Astra. One, it still does have a little
+bit of that AI smell in the writing, but
+also in its design choice. And so, these
+[07:00]
+are five six separate projects and
+they're all using some variation of
+forest green, right? And And I didn't
+tell it what to do in terms of design. I
+didn't tell it the color palette to use.
+It just has this desire to use the same
+color palette every time. A lot of flat
+design elements, that's also something
+like kind of the AI design smell, but it
+it looks good. It's just everybody's
+going to be creating the same thing.
+Now, the good thing is Astra is
+extremely steerable. So, with a little
+nudge, you can get a lot out of it. A
+lot of different design. A Rubik's Cube,
+of course, it nailed it, okay? So, let's
+scramble. There it is. Will it be able
+to solve it?
+Of course. Like, this is saturated
+already. Rubik's Cube bench is
+saturated. So, it has a bunch of sliders
+that you can change what it looks like.
+You can change the colors, change the
+[08:00]
+atmosphere,
+everything. So, impressive, but we've
+seen it before. This is another one
+which I got the idea from a video I saw.
+There are 5 million pieces of hay in
+this haystack and one needle, and the
+point of the game is to go through them
+one by one until you find the needle.
+So, I thought this was so cool. I saw
+somebody else make this. This wasn't my
+idea, and apologies once again, of
+course, I just lost the reference, uh so
+I can't give you a shout out. But, here
+you go. Just one by one. If you all want
+to play this, you can. Should I do like
+a 48-hour live stream where I just go
+through this one by one? Okay, little
+planet. I thought this was really cool.
+Look at this. Look how beautiful this
+is. And then, I zoom in, and I actually
+have a little dude walking around. Look
+at the detail. This is what I'm talking
+about with how good Astra is at 3D.
+Okay, so I don't see any clipping
+issues, right? Not even right there.
+Yeah, so I can zoom around really
+easily. Everything just looks good. No
+[09:00]
+clipping, spaced out properly. Let's see
+if it lets me walk through stuff over
+here. No, so it doesn't let me walk
+through that, but it did let me walk
+through the the brush. Here's a sheep. I
+can walk through that. But, overall,
+like, super impressive. Look at this.
+Yes, these are mostly one prompt. This
+one was one prompt, which is incredible.
+Maybe there a little bit of issue with
+these uh icebergs. Yeah, a tiny bit of
+um I don't know what this is called.
+Maybe I This is clipping, but a little
+bit of an issue there. But, otherwise,
+fantastic, right? I don't see any other
+issues in this whole game. Let's see.
+Let's go to the beach. Why am I so
+excited about this? You should be, Chad.
+You absolutely should be. This is a lot
+of fun. Let's see what happens when we
+go in the water. Look at that. It
+doesn't just continue the walking
+animation in the water. It actually
+changes the animation, so he's swimming
+now. Can I get in the boat? No, I can't
+get in the boat. So, I I was really
+impressed with this. There's actually
+different waypoints, and oh, look at
+[10:00]
+that. It will actually navigate there by
+itself, so I can tell it a waypoint to
+go to, and then it'll go there. And then
+it says, "Press E to see what happens."
+There we go. Very cool. Okay, let's try
+one more waypoint. All right, so it's
+walking. There's a volcano, and let's
+see what happens. There it is. I don't
+know what this is. Some kind of radar
+measuring device. I think this is
+beautiful. What do I want to show you
+now? Commons. I don't think I had much
+time to play this, but this is a little
+city simulation game. So, we have number
+of residents. It's kind of like like
+like Excel in a way. Like almost Excel
+management. This is just a simulation of
+what's happening in the Excel document.
+So, yeah, it's pretty cool. It's a full
+simulation. All of the agents in this
+little town were simulated by Astra, and
+it's basically just replaying what
+happened in that in the town. So, we can
+see that right here. Here's the economy.
+I mean, it really is like a full
+simulation of a little town. Social
+fabric. Look at this. Oh, you can even
+record. You can run experiments. So, dry
+[11:00]
+season, patient zero, the lights go out.
+I didn't tell it to do any of this. My
+prompt was really really simple. Okay,
+let's see. Oh, yeah. Okay, this is cool.
+This took a few prompts. I'll be honest
+here. But, this is a 3D liminal space
+horror game. Okay? So, let's go into it,
+and I think this looks fantastic. And I
+basically said, "Hyperrealistic 3D
+liminal horror game. There should be a
+baddie somewhere." I I said to make it
+very subtle, and and to do jump scares
+later.
+So, I don't know, maybe it'll happen in
+this demo, but maybe it won't. And it
+should get weirder, by the way. Let's
+see if I know how to get through here.
+Yeah, this was completely created by
+Astra. All the assets, the skins,
+everything, all created by Astra. Or
+sorry, not Astra, Astra, excuse me. All
+created by Astra. Here, let's see if I
+can put my laundry in there. Nope. I
+just think this is so cool. And I'm
+pretty sure it goes on forever. And the
+longer you play, eventually you're start
+going to you're going to start to see
+the shadow guy. Oh boy, the nursery.
+[12:00]
+Yeah, I can Sorry, I could just play
+this forever. This is cool. A little
+pool. But yeah, all of this just easily
+easily created by Astra. Here is like a
+little mini GTA. I actually created a
+second GTA. That was my first prompt
+with Astra, and I got pretty far, but it
+was it was taking so long to complete
+it. Here's a little manga that I
+created. I mean, this is super
+impressive. Yeah, very very cool. This
+is another one I wanted to show. This is
+Choo Choo Rocket. This is a clone of it.
+Basically, all of these little mice run
+around, and your job is to get them to
+fall in your rocket. And then so like I
+can place an arrow right here. So like
+they all run run in a pattern, and I'm
+trying to get them to land in my rocket.
+And it's multiplayer, and everybody else
+is scrambling to try to block the mice
+from dropping in my rocket, and to make
+them go into theirs. Yeah, these are
+these are much better games than I was
+able to create with Fable 5.1. Some
+basic websites that I created. This is
+for the Galaxy Z Fold. It's It's okay.
+[13:00]
+You know, it still uses very flat design
+patterns. Here's one for an Apple
+Orchard. Let's see. Quack Club. This is
+a rubber duck website. I don't really
+Here, I think the color might be off cuz
+I have dark mode on. There we go. That
+looks better. Yeah, so, you know, just a
+website for rubber ducks.
+>> [music]
+[music]
+>> Mhm.

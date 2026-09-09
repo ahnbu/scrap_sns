@@ -1,0 +1,1205 @@
+[00:00]
+to first time there is a cancer vaccine
+working. But field has been doing that
+for 20 plus years, more than 1,000
+clinical trials that have all failed.
+>> What was different this time? What is it
+about mRNA technology that enables the
+immune system to learn in a way that
+other approaches were unable?
+>> We all have cancer cells all the time in
+our body. Our immune system is very well
+trained basically notice those cancer
+cells very early and get rid of them.
+But if your cancer grows, then the
+question is how can you re-teach the
+immune system? We're going to basically
+take a biopsy of your tumor. We're going
+to read all the letters of its DNA and
+then we're going to do the same things
+with a healthy cell of your body. And
+we're going to literally compare letter
+by letter, nucleotide by nucleotide. And
+then we're going to use an algorithm to
+identify which one of those mutations
+are the most relevant. And so when this
+is injected in your body, it teaches the
+immune system the signature of your
+cancer cell that it missed.
+>> What gets regulated here because every
+dose is different, so obviously every
+dose doesn't get approved.
+>> Basically
+>> Hi, um welcome to the a16z podcast. Uh
+[01:00]
+I'm Jorge Conde, a general partner on
+the a16z bio and health team. I am
+thrilled today to welcome back Moderna
+CEO Stéphane Bancel.
+Um for folks that have been long time
+listeners may recall
+uh Stéphane joined us on the a16z
+podcast back in December of 2020.
+Um when we were talking about all of the
+work Moderna did to uh bring us the the
+mRNA COVID vaccine.
+And at the time um if you can go back
+and listen to that episode, you'll hear
+um how quickly uh
+Moderna was able to react to the
+existence of the virus, to analyze it,
+uh to essentially print a vaccine um
+that would protect people against and
+against the the the COVID-19 uh vaccine
+and hence put us in a much better
+position uh, with respect to the to the
+COVID pandemic. We titled that that
+[02:00]
+episode the the machine that made the
+vaccine.
+And the reason why we're talking again
+today in August 2026,
+uh, is because Moderna has uh, put out
+news
+uh, on a really big advancement on what
+they can do with mRNA technology when it
+comes to cancer.
+And so I want to hand it over to you uh,
+Stephane. Uh, again a very big welcome.
+Thank you for coming back.
+But maybe the place to start is let's
+uh, let's lead with the news.
+Um, you uh, Moderna and Merck uh,
+announced uh, earlier this month in
+August that uh, you had uh,
+uh,
+conducted a phase three clinical trial
+in melanoma and have gotten uh, very
+encouraging results.
+So why don't I hand it over to you and
+tell us uh, what have you announced?
+What have you seen in this phase three
+trial? And then I do want to dig in into
+what Moderna is doing in cancer.
+>> Wonderful. So I thank you so much for
+[03:00]
+having us back. We're very happy to be
+to be with you. So indeed uh, last week
+now
+uh, we shared the news with our
+colleagues at Merck that after working
+10 years
+on the individualized
+uh, treatment against cancer using mRNA
+technology
+that the phase three was positive. It's
+a It's a first of many. It's a first
+time that there is an agent
+in melanoma that is better than Keytruda
+alone. So it's a big deal for patients
+of course with melanoma.
+Yeah, it's the first time there is a
+cancer vaccine working.
+Uh, the field as you know has been doing
+that for 20 plus years. I think more
+than 1,000 clinical trials that have all
+failed.
+Um,
+and um,
+if you look at the phase two data
+because what we announced last week is
+that we met the primary
+endpoint of a study, which was
+recurrence-free survival,
+i.e., people having the cancer back or
+dying,
+uh that we met. And then, to our own
+[04:00]
+surprise, because this was the first
+interim analysis. This is not the end of
+the study.
+It's the first interim analysis of the
+study. And what was a surprise even to
+us is we met the secondary endpoint,
+which was distant metastasis-free
+survival,
+which is of course takes more time to
+mature because it's means that you have
+distant distant metastases from your
+primary tumor.
+And we also met that
+uh endpoint, which was great. Again,
+unexpected from our side, but again,
+means it is really good. Um we will
+share the data very soon at a big
+medical oncology conference, which is as
+you know what the field does.
+But just to give you a sense, maybe to
+orient kind of directionally,
+we showed that ASCO, the big, you know,
+oncology conference uh in the spring of
+2026, a few months ago,
+that our phase two study, which was also
+randomized against Keytruda alone, so
+the same type of study,
+showed
+that around uh 50% of people
+had recurrence-free survival versus
+[05:00]
+people only getting Keytruda.
+And this is 5 years after treatment.
+And as you know, in oncology, 5 years is
+considered by doctor like a cure.
+Uh and so it's a big, big deal. And if
+you look at the data from again that
+phase two, you had around 80% of people
+that were disease-free 5 years after
+their treatment and their surgery of
+melanoma. And so, we are very excited
+about what it means for our field. Uh we
+are working very hard already with
+regulators to file so that the drug can
+be available to patients as soon as
+possible, and we hope in 2027, and we're
+going to try to make it as fast as we
+can.
+Uh the factory is ready in
+Massachusetts, but we have
+figured out how to make and scale a
+product for every human being at the at
+the time.
+>> Well, there's I mean, there's so much to
+to unpack here. So, I um this is an
+extraordinary uh advance uh for the the
+treatment of in this case melanoma and
+hopefully over time catches more
+broadly. Uh so, let's unpack some of
+this if we could, Stefan. Uh the first
+[06:00]
+one, um
+uh
+uh talk to us uh for folks that are less
+familiar with cancer treatments, uh why
+is Keytruda What is Keytruda and why is
+Keytruda alone not sufficient? Why was
+Moderna necessary the uh the this
+particular mRNA cancer vaccine necessary
+in conjunction with Keytruda?
+>> Sure. So, if you look at the Keytruda,
+which is kind of one of the leading uh
+immunotherapy that people might have
+heard of, is basically if I oversimplify
+for a non-biologist, it's basically a
+molecule that basically open the gates
+for letting the dogs out that are going
+to go and attack your cancer
+uh from your immune system, if you want.
+Um the
+the thing about the checkpoints is when
+they work, they're fantastic because
+those people 5 years after treatment are
+in the
+cured in the sense they have no
+uh remaining disease.
+Uh but only 60% of people
+uh disease-free after 5 years. If you
+[07:00]
+look at the
+phase three published data of Keytruda.
+So, again, for those 60% of people, it's
+amazing.
+But it means that there's 40% of people
+where you go through the treatment,
+you're fighting for cancer, and the
+treatment doesn't really work for you.
+And also, what is difficult is those
+treatments are wonderful, but they a lot
+of time come with very serious side
+effects.
+Very different from chemotherapy or
+radiotherapy. The side effects of
+immunotherapy are mostly immune
+diseases.
+So, you see people, if you look at the
+label of our clinical studies, people
+that get checkpoints, whether it's
+Keytruda or any other type of
+checkpoints from other companies, they
+end up having type 1 diabetes, lupus,
+Crohn's disease, these type of things.
+Of course, it's better to have those
+disease, but of course being dead from
+your cancer.
+Which is why those have become standard
+of care.
+But think about those 40% of people who
+don't respond to checkpoint. They get an
+autoimmune disease most of the time.
+And they don't get the benefit of a
+medicine. And so, what we try to do with
+Merck and it's really a technology that
+emerged from Moderna labs back in 2015
+[08:00]
+or 2016 when we did a partnership with
+Merck as we were looking for
+one of the best company in immunotherapy
+to partner and to have a complement
+approach.
+The idea that we have at the time using
+our infectious disease learning from our
+infectious disease vaccine, we learn a
+lot about the immune system and how mRNA
+interact with the immune system.
+We thought we could develop uh a
+mechanism of action
+that was totally orthogonal or very
+different from immunotherapy because you
+will be able to start from a sequence of
+your
+your tumor.
+>> Mhm.
+>> So that we could design a product to
+basically teach
+>> If I go back to the dog analogy, to
+teach those dogs
+what to look for.
+Very specifically. And that's really the
+the beauty of about our technology is if
+you think about the case you drive
+basically unleash the dogs,
+but they go a bit randomly sometime.
+It's your immune system. Whereas Moderna
+product is about about at the molecular
+level inside your immune system to very
+[09:00]
+specifically teach your T cell, this is
+what you need to look for, and that
+thing is actually on your cancer cell.
+So that those T cells go and basically
+attack your cancer cells.
+>> Okay, so now that that's where the the
+personalized cancer vaccine
+um uh technology will make a big impact
+on treating of melanoma. So that we'll
+come back to the personalized piece cuz
+I think that's just fascinating. Not
+only from a technological standpoint,
+but just from an operational standpoint.
+Uh so I do want to come back to that.
+But let's focus on the word vaccine. So,
+you know, you know, typically when you
+think of the word vaccine, uh it is to
+prevent a disease.
+Um here in this context, uh these
+patients already have cancer. So, what
+in a sense you are preventing something,
+you're preventing the cancer, what
+you're preventing is the return of the
+cancer.
+Um
+which is in and of itself uh an
+extraordinary thing to think about from
+a from a therapeutic intervention
+perspective.
+[10:00]
+Um so, number one, is that is that a
+fair characterization of how you would
+describe this?
+>> the reason that field as you said was
+vaccine, it was not us using it, we just
+followed the field. As I mentioned, a
+thousand plus clinical trial, is because
+it's about teaching your immune system.
+If you think about a COVID or flu shot,
+you teach your immune system before you
+get the virus infecting your body. Here,
+you teach your immune system not about a
+virus, but about basically the cancer
+signal
+that your immune system missed. Because
+what we know today in the field is that
+we all have cancer cells all the time in
+our body.
+But that's outside factors or just as
+you have cell replication and you have
+mistakes that happen that create
+mutation of DNA that are cancer cells.
+Uh our immune system is very well
+trained to basically
+notice those cancer cells very early
+and get rid of them.
+But if your cancer grows, then the
+question is how can you reteach your
+immune system? So, I think that's why
+the field used the word vaccine for that
+approach as well, even as you said it's
+[11:00]
+a therapeutic treatment approach post
+cancer. It's about the teaching of the
+immune system.
+>> Okay. And so, as you point out, the
+field has tried this many times before,
+a thousand on the order of a thousand
+clinical trials
+um have have tested this theory. They've
+all failed. Uh you and uh Moderna and
+Merck have succeeded here.
+Um what was different this time? What is
+it about mRNA technology that enables
+the immune system to learn in a way that
+other approaches uh were unable uh to be
+successful.
+>> Yeah, I think there's there are two
+components. One is the amount of
+technology and I think the other one is
+the individualization by
+designing a product for one human at a
+time. So, let me go through those two.
+On the technology of mRNA side, what we
+have known and published
+uh
+actually with Karolinska, as you know,
+the institute in Sweden that gave the
+Nobel Prize for medicine back in 2015,
+[12:00]
+is that with our technology, I cannot
+speak about other mRNA companies that
+have different mRNAs, different lipids,
+and so on. But, with our technology,
+when we inject our mRNA in a muscle,
+whether it's a COVID shot or flu shot or
+this cancer treatment,
+basically, the mRNA goes down to your
+lymph node
+and enters the APCs, the
+antigen-presenting cell, which as you
+know, are key component of your immune
+cells,
+and the mRNA gets inside the APCs. This
+we've demonstrated and proven
+at the time of Karolinska,
+and then it basically translate the
+message contained in the mRNA
+inside the APCs, inside your immune
+cells, and present it from within.
+So, we think it's a very important
+differentiation from most of the
+previous vaccine in cancer in the field
+that were made by protein or peptide
+that basically are made in reactors, are
+injected in the in the in the patient,
+but they basically turn into the blood
+because as you know, recombinant or
+protein, when you inject them, they just
+go into your blood and they turn around.
+[13:00]
+So, your immune system sees them, but
+not in the same manner from within
+as it's done with the mRNA. So, we think
+that's one very important component of
+uh immune presentation, if that makes
+sense. The other component is really the
+individualization. In the past, a lot of
+time people have tried with non-mRNA,
+i.e., protein technology or peptide,
+but also we tried a shared antigen.
+Whereas here, what we said is because
+DNA is a disease Sorry, cancer is a
+disease of DNA.
+Mhm. What we're going to do here,
+because the cost of sequencing is have
+dropped so much in the last 20 years,
+is we're going to basically take a
+biopsy of your tumor.
+We're going to read all the letters of
+its DNA, the 3 GB of
+uh of of its genes.
+And then we're going to do the same
+things with a healthy cell of your body.
+And we're going to literally compare
+letter by letter, nucleotide by
+nucleotide. And then we're going to use
+an algorithm to identify of your
+hundreds of thousands of mutation, which
+[14:00]
+one, based on the current knowledge of
+the field of immunology and cancer,
+which one of those mutations are the
+most relevant.
+We select the 34 that we believe are the
+most relevant. And we stitch them
+together into one big amount of
+molecule, which we make in 30 each days
+for you.
+That is injected then in a hospital
+intramuscularly. And so when this is
+injected in your body, basically, it
+teaches the immune system the signature
+of your cancer cell
+that it missed.
+Not the signature of every other patient
+with a shared antigen, but a very
+specific signature of your cancer cell.
+And what we we showed that at ASCO and
+we published from a phase two study, but
+we believe it's the same thing in the
+phase three, because it's mechanistic,
+is that around 90, 90% of the antigen
+are different patient to patient.
+Cuz when we started, we had no idea,
+because again, the field came from
+shared antigen. So when we started, we
+were like, we had no idea if we would
+get 2%, 5%, 90% of of same antigen
+across all of the patient. Actually, 90%
+[15:00]
+of the antigen are different from a
+human to another one.
+>> Wow.
+So the only way this can work is through
+personalization.
+>> With individualize, exactly.
+>> You know, assuming that that carries
+over. Um and so in that regard, uh
+uh
+you know, if you're doing, let's say,
+this normal to tumor comparison of of of
+of the genome,
+you find the differences. I'm curious
+how you arrive at 34 is up to 34 is the
+right number.
+Um, I'm sure there's a very good reason
+for that. Um, but what is the algorithm
+that enables you to do that? Is this
+something that's proprietary to Moderna
+or is this something that is known
+within the field? Help us understand,
+like help us look into that black box.
+>> Sure. So, I'm going to share a little
+bit about the black box, not too much,
+because there's a lot of know-how and
+and things are very confidential to us.
+But, basically, we started with of
+course what is known in the field.
+And so, we basically use a lot of
+database and publication and a lot of
+scientists and doctors kind of best in
+class in immunology and in in oncology.
+[16:00]
+And then, from that starting point, we
+use a lot of internal data that we
+generated over time. We also partnered
+with some companies that because they
+are in the diagnostic space or they are,
+let's say, cell therapy and other space
+in oncology, had access to a lot of
+data, a lot of T-cell mapping, and so
+on. That's what they were very useful
+for our learning. The The thing that is
+interesting about the data we shared
+last week is This is what I consider
+intismaran 1.0.
+Because the algorithm from a phase three
+was the same from a phase two, was the
+same from a phase one. But, because
+we've been doing this for 10 years, it's
+a 10-year-old algorithm.
+So, as you look at the data, it works
+pretty well, right? As we said about the
+phase two data, 80% of people are
+disease-free after 5 years. It's amazing
+for those patients.
+But, there's still 20% of patients that
+don't respond.
+And so, one of the things we're going to
+be doing now that we have access to the
+phase three patient data and samples
+is to go back and mine that data
+[17:00]
+to figure out why some patients
+responded and why some other patients
+did not respond, because we have access
+to all their blood sample, their
+sequence, everything.
+And we're going to try to see can we
+improve the algorithm uh and we will go
+to see FDA if we find
+scientific reason why we should change
+the algorithm to go from let's say 1.0
+to a 2.0 algorithm and then change it.
+Of course, we have to do that in a very
+controlled way
+to ensure we don't lose efficacy
+uh very obviously.
+But the way I think about it is like
+when we talk about AI, it's just we
+always joke that the current version of
+AI is the worst we're going to see in
+our lifetime. Well, it's exactly the
+same for Intis Maran, which is the
+current version of Intis Maran that
+Moderna is the worst version of Intis
+Maran you're going to see for the rest
+of medical history. And so that gives me
+a lot of hope.
+Not only in melanoma for those 20% of
+patients that don't respond, but also
+for potentially over tumors that have
+been really hard in the field like, you
+know, uh
+pancreas cancer and over else where
+immunotherapy doesn't work. We want to
+be able to learn a lot about the
+[18:00]
+technology using also what the field has
+learned in the last 10 years cuz the
+field has learned a lot, as you know.
+This is even not in Intis Maran 1.0. So,
+that's why I'm so excited about what's
+coming next.
+>> That's fantastic. So, um
+looking back, uh
+you and I have had We've known each
+other for a very long time.
+Uh I won't depress you or me by saying
+how long.
+>> But we you you were very young when you
+were in kindergarten.
+>> [laughter]
+>> But so, I've had the benefit of of of
+seeing the Moderna from the earliest
+days.
+>> Yes.
+>> And one thing that is true that was true
+then is true today is um you are Well,
+first of all, you are an engineer at
+heart. And um you have from the very
+very beginning been obsessed with
+process, with operations, with being
+efficient. Um and those things need to
+be absolutely true if you're going to
+attempt to do what you're trying to do
+here with personalized cancer vaccines
+and make a a you know, a medicine for
+each individual patient precisely
+[19:00]
+because in 90% of the cases there's no
+overlap uh uh in terms of the antigens.
+Um
+can you talk us uh talk walk us through
+a bit the operational lift that is
+required here that you've already had to
+do to even run the trial but that you
+would have to do if you eventually
+commercialize
+this product.
+>> Sure.
+>> Um and and let me maybe maybe one way to
+frame it is I think a lot of people
+think about the other big personalized
+therapy that exist in cancer is CAR T
+cell therapy. Right? And in that case,
+the thing that in CAR T cell therapy for
+folks that may not be familiar is this
+idea that you take a you take a
+patient's tumor
+um and then you take the patient's
+immune cells, you take them out of the
+body and you essentially reprogram the
+immune cells um and and re-engineer them
+to be reactive to the tumor and put them
+back into the patient. I mean, we're
+simplifying, of course,
+um but that's, you know, CAR T cell
+therapy in a in a very sort of in a
+simple nutshell.
+In this case, you're doing in some ways
+things that are very similar, right?
+[20:00]
+You're you're taking a piece of the
+tumor and that you have in the form of
+of a biopsy, presumably,
+um and and and you're trying to teach
+the um uh you're trying to sequence the
+tumor to generate a vaccine that is very
+specific uh to that patient's uh tumor.
+How do you think about um essentially
+the vein-to-vein time? Like, what needs
+to be true from the moment you, you
+know, sort of see a patient and get
+access to the tumor to the moment that
+patient receives their personalized
+vaccine?
+>> Sure.
+So, the time is around 42 days now,
+needle-to-needle, so from taking the
+biopsy to getting the vaccine in the
+hospital ready for you.
+I think we're going to be able to
+improve that as we still have a lot of
+efficiencies to work on and automations
+and robotics.
+Uh
+the
+place where this is very different from
+CAR T
+is that
+we don't have to take your immune cells,
+reprogram them ex vivo in a reactor in a
+factory in our factory and send them
+back to your hospital.
+[21:00]
+The only thing we need is the
+information.
+As you know, I talked about the
+beautiful thing of mRNA, it's an
+information molecule.
+And so, basically, what we get from the
+lab is the sequence of your healthy
+cells
+and the sequence of your cancer cells.
+So, we just get a file.
+Uh and then, we use that information to
+basically make the DNA. But, now we
+don't make it with plasmid
+uh growing E. coli or whatever. We make
+it all synthetic. So, it's all enzymatic
+in liquid in water. Then, we make the
+the RNA from the the template. Then, we
+put the lipid around it.
+And because of that, and that it's a
+synthetic process, it's much more like
+small molecule
+than a large molecule. If you think
+about CAR-T, for me, the analogy is the
+recombinant world.
+>> Mhm.
+>> Where you have, you know, cells and big
+reactors and you have big volumes.
+Because, as you know, the
+the reason you have big volumes in
+biotech industry is if you compress the
+cells too much, they die.
+You have the same issue with CAR-T. So,
+it's all everything is big. Whereas,
+here, because it's all in water and it's
+[22:00]
+all enzymatic, meaning it just it's very
+catalytic,
+the reactors are very, very tiny.
+And so, what we've been doing since
+before the clinic, because as you said,
+we had to start developing the
+technology to individualize it one human
+at a time to even do a phase one study,
+right?
+Is we shrunk everything down. So, the
+first version of the machine that looks
+like a big American fridge was a big big
+and cranky because we told the team,
+"Make it good enough so you have good
+quality, but we're not solving for
+efficiencies yet. Because, if it doesn't
+work in a clinic, what's the point of
+wasting time and
+making a beautiful, amazing, optimized
+robot if the science doesn't work,
+right? So, we told the team, "Make it
+good so that we have no quality issue
+and we don't have a false experiment or
+false negative in the clinic, cuz it
+would be terrible for patients if you
+build a robot kind of working, but not
+working. You run the study and it tells
+you the science doesn't work and you're
+done."
+Uh if it should have worked, right? That
+would be a disaster for humanity,
+[23:00]
+obviously. And so, the team did exactly
+that. They developed a robot
+that was good in terms of quality,
+but it was not very efficient.
+Uh and when we got the phase two data
+that this was working, the first interim
+of phase two data at only two years, now
+we have five years of data maturing
+beautifully for duration of efficacy,
+we told the team, "Okay, now we are
+behind. And you this was going to happen
+in case of success, which is a happy
+problem. And so, we dedicated a lot of
+very smart engineers to think about,
+"Okay, now how do you make a very
+efficient machine
+that you can compress even the volume of
+a machine because one of the important
+vector, of course, is time, as you
+mentioned, cycle time from needle to
+needle, but also cost.
+And so, one way to reduce the cost is
+reduce the footprint on the floor.
+Because if you have a fixed envelope of
+a clean room facility, and you can put,
+let's say, 2x or 10x more machines in
+that surface area, of course, you're
+going to get a bigger throughput and a
+much lower price on your fixed cost. And
+[24:00]
+so, we are obsessed about cycle time cuz
+the more I mean, the more you can reduce
+cycle time, the more you can get a turn
+around, let's say, in a year on your
+asset. And the second vector I'm
+obsessed about is square inches.
+>> [laughter]
+>> And literally, I'm always a pain about,
+sorry, uh when I go to the factory to
+look, you know, at all the space we can
+save, how we can be creative, how even
+we can move some compute out of the
+clean rooms just to shrink things as
+much as you can because it has a huge
+impact on cost of the product at the end
+of the day.
+>> And at um at scale, um how many
+roughly how many for let's say let's
+just focus on melanoma, yeah. How many
+doses would you need to produce in a
+given year
+>> So, if you produce we've already done
+thousands of doses because of the nine
+clinical studies that are ongoing.
+Uh the facility will be able to make the
+one in Marlborough, Mass., at tens of
+thousands of doses.
+Um and then, as we keep improving the
+technology that number is going to go up
+[25:00]
+in the same facility. And then we might
+need to build several other facilities.
+But if you look at the incidence of
+melanoma, if you are in the tens of
+thousands of doses, you're going to
+cover you're going to have easily the
+melanoma market.
+>> Yeah, I I can believe that. Um,
+have you disclosed how you think about
+cogs and price or is that something that
+>> not disclosed yet. Uh, we need first to
+disclose the data with our more
+colleagues. We need to engage with our
+payers once we can share the data with
+them in term of what is the value being
+driven there and so on.
+Um, but this has not been discussed yet.
+>> So maybe one place to focus is uh, on
+this concept of personalization.
+Uh, I'm sure you've seen uh, the story
+of the of the GitLab founder uh, who
+went founder mode on his on his own uh,
+osteosarcoma.
+Um,
+uh, number one,
+uh,
+do the future centralized world um, come
+to Moderna or is is this end of one
+phenomena something that you think will
+[26:00]
+just happen and exist in parallel?
+>> So I think they will come most of them
+to Moderna
+because it will just going to be easier
+and safer.
+Because as you know,
+uh, making an injectable product always
+carry risk of contamination of a
+product. If you inject to somebody a
+product that has even one copy of
+bacteria, you might give the patient
+sepsis.
+Then you always have a question of
+quality because when you have a
+multi-step process, a mistake can
+happen.
+And of course if it's industrialized and
+has been validated in term of good
+manufacturing practice kind of FDA
+standard, you have much less chance of
+this happening. So it's a bit like every
+tools in life which is, you know, do you
+make your first knife because there's no
+knife store and you are in a cave and
+you need to feed your family. Yes, of
+course you make your first knife because
+you have to feed your family, right?
+But when you have a a store making high
+quality knives down the street, you're
+going to use your time to do something
+else. So, I think it's a bit of the same
+phenomena, which is like in any
+technology, which is when you have
+industrial scale
+[27:00]
+uh of high quality product, you use your
+time as a human to do something else
+with your time, right?
+>> And in that world, um how does the how
+does the regulatory environment uh the
+regulatory apparatus function here? So,
+in other words, you you mentioned
+earlier uh you along with Merck will
+prepare um
+uh a regulatory filing soon. Um what
+gets regulated here? Because every dose
+is different, so obviously every dose
+doesn't get approved. Is it Is it
+obviously the the the process for
+synthesizing mRNA? Is it the algorithm?
+Is it a combination of the the entire
+system? Help us uh understand that and
+build intuition around how we think that
+these kinds of personalized medicines
+will be regulated in the future.
+>> Yes. So, the good news is there are
+precedents, as you mentioned, Kymriah.
+Kymriah was also
+uh approved in the same way as we
+believe in Tispreman will be, as a
+process BLA.
+Uh not a product BLA. So, as you know,
+Moderna has five products approved. So,
+uh that's really a product approval. On
+[28:00]
+this one, the whole process, since we
+started in the clinic, the IND was a
+process IND.
+Because we had to ask the FDA, "Can we
+go to the clinic? Do you think it's
+safe? And do you think we have a good
+control of the process so we can do
+safely a phase one study?" So, we
+already had that discussion just to go
+into the clinic years ago.
+And then, before we started every phase
+three, we need to have end of phase two
+meeting and agree with the design
+of the study, the the manufacturing
+protocol with the FDA. So, those
+discussions have happened for years. And
+so, it's not like we have not talked to
+the FDA for the last 10 years and we're
+going to show up at their, you know,
+front door,
+you know, in a week or two and tell
+them, "This is a new product." And
+they're going to be like, "Why is this?"
+Uh there's been a lot of discussion, a
+lot of engagement. Several time we've
+had technical question on manufacturing
+front uh where we basically requested
+additional meetings to ask the guidance,
+to also educate them on the technology,
+what we've learned and so on. So,
+there's already been a lot of
+discussions and there's a very clear
+[29:00]
+regulatory pathway in term of approving
+the entire process. Basically, all
+right, what did FDA wants to know, which
+is very legitimate, which I would want
+for my own family's sake, obviously,
+which is
+if you give if you get the same sample
+at the beginning but tomorrow
+and the blood, do you get the same
+product made at the end of a big black
+box?
+And that's what we have to demonstrate
+first to ourselves
+and then with the data that we have the
+FDA so that we have really robustness of
+a whole process. So, if we have a same
+input, we're going to get the same
+output going to patient as an
+individualized medicine.
+>> How do we think about uh moving beyond
+or how do you all think about moving
+beyond melanoma?
+Uh is this an approach that's going to
+be uh applicable to a broad range of
+cancers or there cancers that are much
+more likely where this is going to be a
+viable option versus others?
+Uh and sort of what's your uh
+I'll use the word, what's the ambition
+here for where cancer vaccines can can
+have an impact?
+[30:00]
+>> is pretty big because we believe we have
+demonstrated
+at least to ourselves and then we hope
+to the world. There's always will be
+skeptics, but that's that's always true.
+Uh
+that
+we are able to create
+an
+uh de novo education of T cell and this
+we showed it even at ASCO this year,
+where we took the blood before
+treatment, after treatment of cancer
+patient melanoma with our technology and
+we showed that not only we have an
+expansion of a T cells,
+but we have de novo, so new T cells
+being created that recognize what we
+code in the mRNA
+that was not in the patient's body
+before the treatment.
+So, we already, in my book, have proven
+to ourselves and to the clinical
+community
+that Moderna's mRNA technology can
+develop teach the immune system to
+develop new T cells to go
+attack your cancer.
+So, based on that, they are basically I
+would say three different vectors we're
+going after in term of expansion from
+[31:00]
+melanoma. So, this study, to remind
+people, was a
+cancer patient in stage two, stage
+three, and stage four. That's what
+enrolled in that phase three study.
+So, what we're doing is we're going
+first everywhere where Keytruda works.
+Because as I told you, we believe the
+mechanism of action of a PD-1 and
+Moderna's mRNA are totally orthogonal.
+So, we think these allow to have
+synergistic element and performance of
+efficacy for our patients. And so, we
+are in phase three for lung. Uh
+we're in phase two for kidney cancer,
+bladder cancer. So, we have a whole slew
+of studies ongoing where the world knows
+that Keytruda works because the Keytruda
+has been approved there.
+And we believe you're going to see a
+matter improvement versus Keytruda
+alone.
+Before you run the clinical experiment,
+it's impossible to know are you going to
+get 50% like we saw in the phase two
+of melanoma, or you're going to get 40%
+or 40% or another number. We have to run
+the studies. So, these are a lot
+ongoing.
+The second vector is to go early in
+[32:00]
+disease
+where checkpoint work.
+And the best example is we announced in
+the spring of 2026 starting a phase
+three study
+for patients with stage one lung cancer.
+But as INT mRNA, so Moderna's product,
+as a monotherapy without checkpoint.
+>> Mhm.
+>> And we are doing that because we believe
+when you go early in disease,
+checkpoints are not used because of a
+side effect that they bring.
+>> Mhm.
+>> Cuz if you have stage one cancer
+the medical field thinks
+it's worth monitoring your cancer versus
+giving you a checkpoint because not
+everybody is going to respond
+but everybody is going to get pretty
+serious lifelong side effects like
+autoimmune disease.
+But what if you could have an mRNA made
+for cancer patient that has lung disease
+stage one which you can find easily with
+x-ray let's say in former smokers is the
+easiest target population just screen
+regularly with x-ray your former smokers
+[33:00]
+and if you do it regularly you're going
+to go from not seeing the cancer to
+seeing the cancer.
+Uh and then the idea is do you do a
+surgery which is today's standard of
+care
+and you give in this marine monotherapy
+which the side effect is similar to a
+vaccine you know
+you might be feel tired for a day but
+that's it so in cancer it's pretty cool
+type of side effect right?
+Uh
+and that's another approach we have in
+term of clinical studies
+uh where checkpoints are not available
+today.
+The third vector is where checkpoint
+don't work so of course it's where you
+have a highest risk.
+Mhm uh but because the mechanism of
+action is different from a checkpoint
+we and work
+uh believe that there's a very good
+scientific rationale to go try so two
+places we're trying right now is
+pancreas cancer
+and also gastric cancer those two cancer
+type checkpoints and ketruda do not work
+the clinical studies have been run in
+the past and they were negative.
+But we think because again the mechanism
+of action is different from checkpoint
+[34:00]
+and we know now that we have a proof
+that we can create de novo we think it's
+an experiment worth running.
+If we have a good signal we'll think
+about combination as you know literally
+yesterday you know revolution medicine
+had a wonderful new medicine approved
+for pancreas cancer using the keras
+mutation what if you could combine that
+medicine and in this marine those are
+very orthogonal mechanism of action. For
+me it makes no scientific sense that if
+in this marine work and we should know
+soon in in pediatric sorry in
+pancreas cancer
+by itself
+and of course the revolution medicine
+does great improvement of survival
+in pancreas cancer. If you combine those
+two things, we believe it should have
+benefit again you need to run the
+clinical experiment to see how much but
+that's the type of things we're going to
+want to do so if you think about in this
+mariner medicine is going to be used
+with Keytruda
+is going to be used early in this is
+where Keytruda and maybe used in places
+[35:00]
+where Keytruda doesn't work
+but with over ages.
+>> Well, that that gives a lot of
+reason for I think cancer patients and
+their families have a lot of hope for
+for the future of
+novel therapies in this field.
+>> and on top of of what we just said
+remember this is in this mariner 1.0.
+So what I saw is very powerful and I'm
+really pushing our team
+to think really outside the box and to
+do a lot of analysis and to use the AI
+to look at that gigantic set of data
+where which is
+what are the things we can learn from
+the clinical studies
+to understand about the people that did
+not respond.
+Cuz I think you always learn more from
+things that don't work and things that
+work. So I want to obsess about the 20%
+of patients that do not respond 5 years
+out so we can understand why they did
+not respond and can we tweak anything in
+the algorithm or in the technology to be
+able to help them.
+>> Well, that's remarkable and I just to
+[36:00]
+just to wrap I think it's remarkable to
+see how you were able to take a
+technology platform that originally
+wasn't built for a you know a a pandemic
+a
+pointed at a pandemic create a vaccine
+for millions and millions and millions
+of people and then essentially pointed
+back towards
+treating some of the diseases that you
+had originally intended 10 years later
+as And as you described.
+>> remarkable and the piece that's going to
+be exciting all right. Maybe to close is
+before the end of the year. We should
+have
+pivotal studies or late stage study
+for rare genetic disease for kids that
+have rare genetic disease of the liver.
+So, it's another vertical that we're
+pointing the technology. The phase 1 2
+have shown kids 3 years on drugs doing
+fantastic. So, we'll see when we get
+that data. And in June, we had our
+annual science day. And we announced
+that the next mountain where we're
+pointing a more MRNA platform is
+autoimmune disease. Because if you think
+about it, we've learned a lot for
+[37:00]
+infectious disease which are, you know,
+mediated by the immune system. Cancer,
+we've just been talking a lot about
+immune system. So, we learned so much
+about the immune system that we think we
+have some very novel approach
+on how to treat the root cause of
+autoimmune disease, not the symptoms,
+which is what the pharma industry has
+been doing. It's of course very helpful
+to patient to treat the symptoms so they
+can have higher quality of life, but it
+doesn't treat the root cause. And we
+think we might have find ways to use the
+immune system to treat the root cause of
+autoimmune disease. So, there's still a
+lot of ways to point the platform. So,
+we're quite exciting about what's what's
+to come.
+>> Would the theory there be that you'd
+have a personalized autoimmune
+modulators?
+Or would this be more product or more
+process?
+>> So, we we're doing both. So, what we
+presented in the in the spring was a
+product that would be the same for
+everybody.
+But what I'm the most excited about,
+which is in the lab still,
+is the ability to do individualize
+autoimmune treatment where you target
+directly to the immune cells that are
+attacking your body as self when you
+[38:00]
+have an autoimmune disease. And so, we
+are basically part of your immune system
+going attacking those immune cells that
+are out of order so that
+you're able to take the symptom of the
+immune disease out. Again, it's still
+early days, but that's what I'm excited
+about today.
+>> Well, going from infectious disease to
+cancer to eventually autoimmune disease.
+We would love to have you back on the
+podcast to film episode 3 and complete
+the trilogy when you're ready.
+>> Wonderful.
+>> Stephan, thank you so much for joining
+us on the a16z podcast. It's always As
+always, it's great to see you.
+And congratulations.

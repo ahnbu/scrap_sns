@@ -1,0 +1,18 @@
+{
+    "video_id": "sOLFEc63US4",
+    "model": "gemini-3.7-flash-medium",
+    "prompt_version": "v2",
+    "prompt_sha1": "1a2446b042d7b917482477d5da5cda70874b56c5",
+    "generated_at": "2026-09-06 11:48:20",
+    "summary": "[요약] WebMCP는 AI 에이전트가 웹사이트를 쉽게 조작하도록 전용 도구를 제공하는 기술이다.\n\n- 기존 웹은 사람 중심이어서 AI가 화면을 직접 분석하고 조작 코드를 만들어야 하는 한계가 있었다.\n- WebMCP는 웹사이트 측에서 AI 전용 조작 도구를 미리 준비해 두어 AI가 분석 없이 즉시 기능을 쓰게 돕는다.\n- 웹사이트는 registerTool로 기능을 등록하고 AI는 getTools와 executeTool로 기능을 찾아 실행한다.\n- AI가 사람을 대신해 예약과 구매를 수행하는 시대에 필수적인 웹 인터페이스로 현재 스펙 논의가 활발하다.\n\n[상세]\nWebMCP의 등장 배경과 개념\n기존 웹사이트는 사람이 쓰기 편한 시각적 UI 위주로 구성되어 있어 AI가 다루려면 화면 구조를 분석해 코드를 직접 짜야 했습니다. 이 과정에서 사이트마다 구현 방식이 달라 화면 분석 실수나 오작동이 일어나는 문제가 발생했습니다. WebMCP는 웹사이트가 AI를 고려해 코드 형태의 조작 도구를 미리 마련해 둠으로써 AI가 사이트를 손쉽게 이용하도록 지원합니다.\n\nWebMCP 동작 원리와 주요 도구\nAI 전용 웹 브라우저에서 플래그를 켜 모델 콘텍스트를 활성화하면 WebMCP를 사용할 수 있습니다. 사이트 측은 registerTool 도구를 사용해 할 일 목록 조회나 추가 같은 AI용 조작 기능을 등록해 둡니다. 접속한 AI 에이전트는 getTools 도구로 준비된 도구 목록과 사용법을 확인한 후 executeTool 도구로 필요한 동작을 바로 실행합니다.\n\nWebMCP의 의의와 전망\nAI가 사용자를 대신해 상품을 탐색하고 예약 및 구매를 진행하는 환경에서 웹사이트가 AI 대리인을 맞이하는 통로가 됩니다. 백엔드 API만 남기 어려운 현실적인 웹 환경에서 기존 프런트엔드에 AI 조작용 인터페이스를 제공하는 실용적인 방식입니다. 현재 Web Machine Learning 깃허브 저장소를 중심으로 관련 스펙과 표준 논의가 활발히 이어지고 있습니다.",
+    "transcript_sha1": "5e81328da57c6a81a2a2c2f33563d7b2acaff666",
+    "usage": {
+        "input_tokens": 23532,
+        "output_tokens": 1878,
+        "thinking_tokens": 1413,
+        "cache_read_tokens": 0,
+        "total_tokens": 25410
+    },
+    "duration_seconds": 9.6191512,
+    "agy_conversation_id": "e07bd7f1-27c6-4e11-839f-ce43704350dc"
+}

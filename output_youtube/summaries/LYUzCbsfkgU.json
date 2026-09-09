@@ -1,0 +1,18 @@
+{
+    "video_id": "LYUzCbsfkgU",
+    "model": "gemini-3.7-flash-medium",
+    "prompt_version": "v2",
+    "prompt_sha1": "1a2446b042d7b917482477d5da5cda70874b56c5",
+    "generated_at": "2026-09-06 16:24:24",
+    "summary": "[요약] AI에게 생각을 맡기지 않고 반론을 유도해 주체적 사고를 날카롭게 다듬어야 한다.\n\n- 무조건 동의하는 AI보다 동료처럼 건설적인 반론을 제기하는 AI가 사고 발전에 도움을 줍니다.\n- AI가 모든 생각을 대신하도록 내버려 두어서는 안 됩니다.\n- 먼저 자신만의 주체적인 관점을 정립한 뒤 AI와 함께 검토하는 작업 방식을 취해야 합니다.\n- 협업의 전 과정에서 자신만의 판단 기준과 고유한 감각 및 톤을 일관되게 유지해야 합니다.\n\n[상세]\n동료로서의 AI와 반론의 가치\nAnthropic의 Dianne Penn은 사용자의 의견에 무조건 동의만 하는 AI는 지양해야 한다고 강조합니다. 아이디어가 완전히 다듬어지지 않았을 때 직장 동료처럼 비판적인 피드백과 반론을 제공하는 AI가 실질적인 발전을 이끕니다. Claude의 반론을 적극적으로 활용하면 자신의 사고를 훨씬 더 정교하고 날카롭게 발전시킬 수 있습니다.\n\n주체적 관점 정립과 통제권 유지\nClaude가 인간의 모든 생각을 대신하여 주도권을 쥐게 해서는 안 됩니다. 상황과 개인적인 판단의 필요성에 따라 먼저 자신만의 독자적인 관점을 정립해야 합니다. 확립한 관점을 바탕으로 Claude와 함께 논의를 발전시키며, 전 과정에서 자신의 고유한 감각과 톤을 지켜나가는 것이 중요합니다.",
+    "transcript_sha1": "f5c798532e94eea527cd610ffaacf296ca5cf042",
+    "usage": {
+        "input_tokens": 13162,
+        "output_tokens": 1513,
+        "thinking_tokens": 1174,
+        "cache_read_tokens": 8147,
+        "total_tokens": 14675
+    },
+    "duration_seconds": 7.2069477,
+    "agy_conversation_id": "1684e0f9-36ee-4a2c-99a4-01cabe8dabbb"
+}

@@ -1,0 +1,39 @@
+[00:00]
+I want to talk about ChatGPT the app
+briefly. So, I have it open right now.
+There's a drop down and there's ChatGPT
+and Codex. And then there's this toggle
+chat and work. Tara, what is going on?
+>> Our North Star here is that users do not
+need to make decisions between picking
+between all these different options.
+Ideally, there is no toggle here. That
+you go to the box, you type in your
+task, like I would like to build a
+really awesome app that helps my podcast
+guests do research before episodes, and
+it will pick the right harness, it'll
+pick the right model for you to be able
+to get that thing done. Ideally, the
+choice here is not on our users to have
+to pick between all these different
+concepts and understand not only what
+are they trying to do, but understand
+the limitations and capabilities of our
+products. In the near term, picking
+between ChatGPT and Codex is really a
+choice for do you want to stay in sort
+of like more development-oriented UI, or
+do you want to have the same power and
+capabilities in the ChatGPT mode? And
+then when you're in ChatGPT, if you want
+to have conversations, if you want to
+search, that's where chat mode is the
+[01:00]
+right thing. But in work mode, that's
+where under the covers, this is Codex.
+We've removed some of like the coding
+UI, but it is the same power to get
+things done. For example, generate like
+a really complex financial model, that's
+all possible in work mode.

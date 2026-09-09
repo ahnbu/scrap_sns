@@ -1,0 +1,18 @@
+{
+    "video_id": "-6aJv925E_o",
+    "model": "gemini-3.7-flash-medium",
+    "prompt_version": "v2",
+    "prompt_sha1": "1a2446b042d7b917482477d5da5cda70874b56c5",
+    "generated_at": "2026-09-06 16:22:24",
+    "summary": "[요약] 사용자가 옵션을 고민하지 않고 작업만 입력해 해결하는 것이 목표다.\n\n- OpenAI의 궁극적 비전은 사용자가 모델이나 하네스를 직접 선택하지 않게 하는 것이다.\n- 사용자가 작업만 입력하면 시스템이 최적의 실행 환경을 자동 선택하는 구조를 지향한다.\n- 현재 ChatGPT와 Codex의 구분은 개발 중심 UI 사용 여부에 따른 선택지다.\n- ChatGPT의 work 모드는 Codex 엔진을 기반으로 복잡한 작업을 지원한다.\n\n[상세]\nOpenAI가 지향하는 ChatGPT의 비전\nTara Seshan은 사용자가 여러 옵션과 제품의 한계를 고민하지 않게 만드는 것이 북극성이라고 밝혔습니다. 이상적인 환경에서는 복잡한 토글 없이 사용자가 원하는 작업 내용만 입력창에 작성하면 됩니다. 그러면 시스템이 최적의 하네스와 모델을 스스로 판단해 작업을 완수합니다.\n\n현재 제공되는 모드별 차이와 활용\n현재 ChatGPT와 Codex의 선택은 개발 지향적 UI를 유지할지 여부에 따른 구분입니다. ChatGPT 내에서 대화나 정보 검색을 진행할 때는 chat 모드가 적합합니다. 반면 work 모드는 코딩 UI를 덜어냈을 뿐 내부적으로 Codex를 활용해 복잡한 재무 모델 생성 같은 고난도 작업을 처리합니다.",
+    "transcript_sha1": "2a9f7702461ab858aa7c3d58dd6496cf0d6a7361",
+    "usage": {
+        "input_tokens": 21504,
+        "output_tokens": 1325,
+        "thinking_tokens": 1040,
+        "cache_read_tokens": 0,
+        "total_tokens": 22829
+    },
+    "duration_seconds": 6.7246148,
+    "agy_conversation_id": "77f4eed5-902e-4631-a838-b54fd0217584"
+}

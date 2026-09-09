@@ -1,0 +1,20 @@
+[00:00]
+There's some really interesting graphs
+in the original scaling law papers. As
+you add in more compute and data, what's
+called loss, aka the loss from next
+token prediction, goes down. And so,
+it's a very smooth linear curve of like
+the models get more intelligent as you
+scale them up. What's actually also
+interesting in that paper is there are
+these like very discontinuous emergent
+capabilities jump. So, the models go
+from 1 + 1 being a thing that it can't
+calculate to a thing that it can
+reliably calculate. And so, these
+emergent capabilities, not necessarily
+everyone knows exact moment, like you
+need a emails to be able to assess that,
+has actually always been a part of how
+this technology works.

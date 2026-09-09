@@ -1,8 +1,9 @@
 ﻿{
     "metadata": {
-        "updated_at": "2026-09-05T12:45:15.098274",
+        "updated_at": "2026-09-06T11:46:21.960941",
         "total_count": 95,
         "max_sequence_id": 95,
+        "duplicates_found": 0,
         "platform": "x"
     },
     "posts": [

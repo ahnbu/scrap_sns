@@ -1,0 +1,116 @@
+[00:00]
+Claude Fable 5.1 is here and you fellow
+scholars are having a super fun time
+creating little games with it. I took
+one for the team two with a subscription
+and also tried my hand to recreate a
+legendary game menu and that is
+incredible that we can do this today.
+Took 6 and a half minutes. Wow. But in
+the 200 page paper, I found three
+results that are much stranger than the
+headlines you see online. But first,
+they say that the frontier stuff even on
+low effort, it's better than the
+previous version maxed out. Very
+impressive. However, don't expect that
+kind of jump everywhere. The first
+independent benchmarks are also showing
+a great step forward especially that
+this is likely using the same core
+architecture with more pre and better
+post training. Likely, they won't say
+that. This is my best guess reading the
+paper. They also say things are cheaper.
+Now, this is marketing messaging. So,
+[01:00]
+you be the judge of that. My
+subscription burns so quickly, I am not
+sure I am seeing efficiency gains here.
+As always, I am just a student trying to
+separate the marketing layer from hard
+facts here. So, there is a 200 plus page
+paper. I've spent some quality time with
+it and found three really surprising
+things and two funny things I have not
+heard others talk about. One, they gave
+Mythos 5.1 a biology problem about RNA
+sequence modeling and design it hasn't
+seen yet. And get this, on one run, it
+performed better than every human in the
+test. This is shown in, listen, figure
+2.2.3.2.1A.
+>> [laughter]
+>> I wish I was kidding. Now, this is hard
+to read here. So, here is our cleaner
+version for you fellow scholars. Two, in
+another biology test, it largely deleted
+the expertise gap. This means that a
+[02:00]
+generalist plus AI can perform as well
+at a biology problem as a specialist.
+Professional graders couldn't tell the
+difference. It's kind of removing the
+modes around specialist knowledge, which
+is kind of crazy. Seven out of nine
+participants said they couldn't have
+done it without the AI. Three, in a
+test, it was given two jobs. Do a
+computer task, boring, and then do a
+secret harmful task. Ew. But, here's the
+catch. There is an AI watching you, and
+it should not see you solving it. And
+here's the bombshell. Even with another
+AI watching its every move, Claude
+secretly completed the forbidden task
+and got away with it 22% of the time.
+Even when Claude was barely allowed to
+reason out loud, it could still carry
+out the secret task. It seems to me that
+it didn't always need to write down the
+plan. It just executes it. I would like
+to draw attention to that. I think this
+[03:00]
+is super important, and I don't hear
+anyone talk about it. And once again,
+the important part is never in the media
+headlines. Now, two funny things. Dear
+fellow scholars, this is Two Minute
+Papers with Dr. Károly Zsolnai-Fehér. It
+ran this in a Linux command line.
+>> [laughter]
+>> This is comedy gold. This is basically
+trying to delete a black hole.
+Congratulations. Ah, about that. Now,
+hold on to your papers, fellow scholars,
+because at one point it invented a
+hallucinated human congratulating it. We
+humans could always use a bit of extra
+cheering. Apparently, AI systems, too.
+All right. So, these AI systems are
+getting smarter at a pace I can barely
+follow. They can be amazingly helpful
+for engineers, doctors, and students all
+around the world. Incredible. And don't
+forget, we might get a comparable system
+for free and own it forever in just a
+[04:00]
+few months. Fingers and papers crossed.
+What a time to be alive. Oh, almost
+forgot. This one, watermarks the text it
+generates. Yes, that is possible. The
+open free models probably won't. If you
+wish, subscribe, hit the bell, and leave
+a comment if you wish to hear how in a
+future video. I use Lambda to reproduce
+AI research papers often in minutes.
+It's also great to train your own models
+or fine-tune an existing one. Run
+inference or text to image or video,
+easy peasy. Running a deep seek chatbot
+or agent, super fast, super reliable.
+Lambda gives you powerful Nvidia GPUs to
+run your own experiments. I test ideas
+from the papers I cover and moments
+later, results. Love it. Seriously, try
+it out now at lambda.ai/papers.

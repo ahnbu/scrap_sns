@@ -1,0 +1,100 @@
+[00:00]
+This is the new Qwen 3.8 Flash Next AI
+and the first results look fantastic.
+Incredible system and we are lucky to
+get so many of these open and free AI
+systems that it's easy to confuse which
+is which. Fellow scholars, that is a
+very good problem to have and it seems
+that we can switch out paid closed
+systems to open weights AI that we can
+download and run ourselves forever. No
+subscriptions and we have a paper, too.
+We are spoiled here and I am really
+grateful and that is why I keep covering
+as many of these as I can. I want to
+show you how I and you fellow scholars
+are already using it out there in the
+wild. Now, there is Qwen 3.8 Max,
+incredibly huge, then the 27 billion.
+This runs on a very beefy laptop or a
+desktop. This is 3.8 Flash Next. This is
+in the middle, but it is so different.
+The small guy, 27B, is a dense model.
+[01:00]
+Now, this one is a mixture of experts
+model, very different. This means that
+for each token, it only uses a small
+part of the model. Great for systems
+with lots of memory and slower memory
+bandwidth, like the DGX Spark or two. I
+am running experiments with it on two
+Sparks. Day one, it runs about 38 tokens
+per second, very respectable. Thank you
+so much to Jensen, Brad, and Mark from
+Nvidia for the hardware. Now, you
+brilliant fellow scholars already found
+a way to run this on much more modest
+hardware. Now, 3.8 Flash Next is the
+first of their next generation model and
+has substantial innovations. Here's
+three. Dear fellow scholars, this is Two
+Minute Papers with Dr. Carola Zsolnai
+Feher. One, Qwen sparse attention. As we
+start adding documents or just keep
+talking to the AI longer, its memory, we
+call context, starts filling up. And
+[02:00]
+with that, things get really expensive.
+This is called full attention, and it
+has quadratic complexity. So, processing
+twice as much context is roughly four
+times as much work. DeepSeek tried to
+ease this with DSA, which picks only
+important individual tokens. Qwen's new
+QSA, however, goes further. It bundles
+these tokens up into tiny blocks, and
+only searches those blocks. Why? Well,
+because it makes this kind of growing
+context even cheaper. Two, for each
+token, the model carries additional
+information about that token. But here,
+the layers can step on each other's toes
+because they all keep rewriting the same
+running information. Now, here, instead
+they use not one, but four branches.
+Why? Because here, information can be
+left alone while the rest is changed.
+[03:00]
+They call it gated residual. And three,
+imagine a hot dog.
+Yummy. Now, the two words separately
+mean something quite different, right?
+Hot and dog does not equal hot dog. So,
+Qwen can bunch these short token
+combinations together and build lookup
+memory for them to retrieve from quickly
+and cheaply. They call it ngram
+embedding. It's a variant of what
+DeepSeek already does. DeepSeek spreads
+this lookup memory across multiple
+layers, while Qwen puts it into one huge
+lookup layer near the start. And these
+three give you a system that already
+outperforms some of the best open-weight
+AI systems, maybe even DeepSeek 4 Pro,
+that is much, much bigger. And all of
+just a few days after release. This is
+mind-blowing and we get all this for
+free forever. What a time to be alive.
+[04:00]
+We need new tools for the era of LLMs
+and weights and biases now has weave a
+lightweight toolkit to confidently
+iterate on LLM applications. Use traces
+to debug how data flows through each
+step of your app and use evaluations to
+measure your progress. It is the best.
+Try it out now at wnb.me/papers
+or click the link in the description
+below.
