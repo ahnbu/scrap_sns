@@ -3247,11 +3247,20 @@
     "https://www.linkedin.com/feed/update/urn:li:activity:7496810905842905088?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7496810905842905088%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드"
     ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7497197173046943744": [
+        "리서치",
+        "오픈클로"
+    ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7497502224214872064?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7497502224214872064%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "chatgpt",
         "이미지",
         "코덱스",
         "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7497606608613576704": [
+        "chatgpt",
+        "글로벌규칙",
+        "프롬프트"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7497608672445947904?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7497608672445947904%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "ppt",
@@ -3333,6 +3342,15 @@
     "https://www.linkedin.com/feed/update/urn:li:activity:7500064618686550016": [
         "SNS노하우"
     ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7500143251060936704?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7500143251060936704%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "SNS노하우",
+        "chatgpt",
+        "마케팅",
+        "오픈클로",
+        "클로드",
+        "프롬프트",
+        "하네스"
+    ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7500462280673984512?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7500462280673984512%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "기획",
         "클로드"
@@ -3389,6 +3407,10 @@
     "https://www.linkedin.com/feed/update/urn:li:activity:7501590948603420672/": [
         "마케팅"
     ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7501776129326854144": [
+        "마케팅",
+        "클로드"
+    ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7501868515495194624?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7501868515495194624%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "글쓰기"
     ],
@@ -3399,6 +3421,11 @@
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7501996182282366976": [
         "기획"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7502157375081107457": [
+        "SNS노하우",
+        "gemini",
+        "클로드"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7502175811945250816": [
         "chatgpt",
@@ -3413,9 +3440,18 @@
     "https://www.linkedin.com/feed/update/urn:li:activity:7502229046093746176": [
         "SNS노하우"
     ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7502315583888175104?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7502315583888175104%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "리서치",
+        "클로드"
+    ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7502499338405855232?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7502499338405855232%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "chatgpt",
         "이미지"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7502500930748100609": [
+        "SNS노하우",
+        "gemini",
+        "클로드"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7502634313574850560": [
         "SNS노하우",
@@ -3426,8 +3462,20 @@
         "클로드",
         "프롬프트"
     ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7502719138000375808?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7502719138000375808%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "프롬프트"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7502863310950891521": [
+        "chatgpt",
+        "마케팅",
+        "코덱스",
+        "클로드"
+    ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7502886893835960320": [
         "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7503082584923467777": [
+        "디자인"
     ],
     "https://www.threads.com/@06am_draw/post/DUy-OrTE1c5": [
         "클로드",
@@ -4526,6 +4574,26 @@
         "프롬프트",
         "바이브코딩"
     ],
+    "https://www.threads.com/@calmtiger_/post/Db8FdjnARgf": [
+        "바이브코딩"
+    ],
+    "https://www.threads.com/@calmtiger_/post/Dbu-DAuAdyr": [
+        "강사강의",
+        "바이브코딩"
+    ],
+    "https://www.threads.com/@calmtiger_/post/Dbx0ftXgS0Y": [
+        "기획",
+        "리서치",
+        "바이브코딩",
+        "이미지"
+    ],
+    "https://www.threads.com/@calmtiger_/post/DcN-vbeARtR": [
+        "SNS노하우"
+    ],
+    "https://www.threads.com/@calmtiger_/post/DclR9v-gZ64": [
+        "바이브코딩",
+        "프롬프트"
+    ],
     "https://www.threads.com/@careerhackeralex/post/DTUrjxHlL_-": [
         "클로드"
     ],
@@ -4804,6 +4872,17 @@
         "chatgpt",
         "코덱스",
         "클로드"
+    ],
+    "https://www.threads.com/@choi.openai/post/DdC_H8tjha4": [
+        "chatgpt",
+        "이미지",
+        "프롬프트"
+    ],
+    "https://www.threads.com/@choi.openai/post/DdDJHNUD04N": [
+        "chatgpt"
+    ],
+    "https://www.threads.com/@choi.openai/post/DdDJHlVDwzJ": [
+        "chatgpt"
     ],
     "https://www.threads.com/@choi_hyug_8110/post/DXMjhX4khj9": [
         "클로드",
@@ -5860,6 +5939,11 @@
         "chatgpt",
         "코덱스"
     ],
+    "https://www.threads.com/@gptaku_ai/post/DdBnIHEE0ak": [
+        "SNS노하우",
+        "chatgpt",
+        "코덱스"
+    ],
     "https://www.threads.com/@gptersorg/post/DUkNsjaEVmh": [
         "클로드",
         "chatgpt",
@@ -6527,6 +6611,9 @@
     "https://www.threads.com/@joshproductletter/post/DdA7gHjCQCD": [
         "마케팅"
     ],
+    "https://www.threads.com/@joshproductletter/post/DdBwdDTiSAa": [
+        "디자인"
+    ],
     "https://www.threads.com/@joyonghansleaker/post/DXQ8vCyEyUZ": [
         "클로드",
         "글로벌규칙"
@@ -6735,6 +6822,9 @@
         "이미지",
         "카드뉴스"
     ],
+    "https://www.threads.com/@kkongdon_story/post/DdB53wdmT-1": [
+        "SNS노하우"
+    ],
     "https://www.threads.com/@kook0526/post/DUFGgHkDj3G": [
         "이미지",
         "클로드",
@@ -6772,6 +6862,14 @@
         "프롬프트"
     ],
     "https://www.threads.com/@kook0526/post/DdAPdWZGnA_": [
+        "클로드"
+    ],
+    "https://www.threads.com/@kook0526/post/DdC-AZ9jX6n": [
+        "강사강의"
+    ],
+    "https://www.threads.com/@kook0526/post/DdC0RC8iQJ6": [
+        "기획",
+        "디자인",
         "클로드"
     ],
     "https://www.threads.com/@koyou_ax/post/DYUYmnJjiPY": [
@@ -7102,6 +7200,10 @@
     ],
     "https://www.threads.com/@marketer.ai.seulki/post/DdAi5X3D4lt": [
         "마케팅"
+    ],
+    "https://www.threads.com/@marketer.ai.seulki/post/DdDBQcPjyYz": [
+        "마케팅",
+        "클로드"
     ],
     "https://www.threads.com/@masterkeyai/post/DWnzQg5DyYg": [
         "클로드",
@@ -9811,6 +9913,10 @@
         "SNS노하우",
         "강사강의"
     ],
+    "https://www.youtube.com/watch?v=1JvyLGd2Sfs": [
+        "chatgpt",
+        "하네스"
+    ],
     "https://www.youtube.com/watch?v=1MMJMDsANrM": [
         "gemini",
         "기획",
@@ -11038,6 +11144,9 @@
         "강사강의",
         "글쓰기"
     ],
+    "https://www.youtube.com/watch?v=Nc3-IxL5yUs": [
+        "디자인"
+    ],
     "https://www.youtube.com/watch?v=NcliVkgif9Y": [
         "ppt",
         "이미지",
@@ -11146,6 +11255,11 @@
         "리서치",
         "이미지",
         "강사강의"
+    ],
+    "https://www.youtube.com/watch?v=PMUIi-2Nhlo": [
+        "chatgpt",
+        "글로벌규칙",
+        "하네스"
     ],
     "https://www.youtube.com/watch?v=PYpRfmwo92E": [
         "chatgpt",
@@ -11560,6 +11674,11 @@
         "chatgpt",
         "코덱스",
         "강사강의"
+    ],
+    "https://www.youtube.com/watch?v=X8kn17oun9I": [
+        "강사강의",
+        "마케팅",
+        "클로드"
     ],
     "https://www.youtube.com/watch?v=XG0oNrAYqoE": [
         "이미지"
@@ -11978,6 +12097,9 @@
         "오픈클로",
         "카드뉴스",
         "SNS노하우"
+    ],
+    "https://www.youtube.com/watch?v=dbXtevTiZto": [
+        "하네스"
     ],
     "https://www.youtube.com/watch?v=dcsvMlyhhAI": [
         "chatgpt",
@@ -12406,6 +12528,13 @@
     "https://www.youtube.com/watch?v=mQb1CTK3pKo": [
         "강사강의",
         "클로드"
+    ],
+    "https://www.youtube.com/watch?v=maSdsTLaMuU": [
+        "chatgpt",
+        "노션",
+        "마케팅",
+        "오픈클로",
+        "코덱스"
     ],
     "https://www.youtube.com/watch?v=meECgAvvdX4": [
         "디자인"
@@ -12970,6 +13099,11 @@
     ],
     "https://www.youtube.com/watch?v=wObw3m9h3js": [
         "클로드"
+    ],
+    "https://www.youtube.com/watch?v=wRgJPO_qIT4": [
+        "강사강의",
+        "바이브코딩",
+        "프롬프트"
     ],
     "https://www.youtube.com/watch?v=wSIy25_JWYI": [
         "강사강의",

@@ -1,0 +1,119 @@
+[00:00]
+Holy matter of papers, GPT-6 Astra has
+arrived and I am stunned. We talk a lot
+about open weights models getting closer
+to the frontier and for free and then
+this happens. This AI system is so good.
+It almost makes everything else look
+like a toy and wait until we look into
+the paper. Wow, I did super fun ray
+traced light simulations with it. Look
+at how beautiful this scene is. And this
+is not Unreal Engine. There are no 3D
+models, no geometry files, no textures,
+and no game engine. An AI wrote the ray
+tracer itself. Every pixel, every
+object, ray of light computed from
+scratch purely from computer code. This
+is what I did during my PhD years and
+these things took us years to understand
+and now anyone can do it in minutes.
+What a time to be alive. Now, I was
+studying advanced niche algorithms in
+[01:00]
+this area that very few people study and
+there is very little training data on it
+out there. So, this was a true test of
+capabilities and it is able to do it
+like the pros. Really stunning, but it
+gets better. I gave it this legendary
+research paper where scientists by hand
+wrote a simulator for honey coiling. I
+thought, can it reproduce both the
+algorithm from the paper and then the
+scene appearance, everything. Well, that
+can't be right? Well, hold on to your
+papers fellow scholars
+because here it is. I cannot believe
+this. It did it in less than an hour and
+with a higher token limit I reckon we
+could have gotten even closer and these
+are both in one page HTML files. You
+just click and it just goes. I don't
+have early access to open AI stuff, so I
+[02:00]
+took my time to run my own experiments
+to provide you a better video with some
+things you hopefully can't see
+elsewhere. It takes longer, fewer views,
+but I think it's the way to do it.
+Subscribe and hit the bell if you agree.
+Now, it is very expensive to run, both
+for open AI and for us in terms of token
+limits. The good news is that it is part
+of the $15 subscription, so at least
+trying it can be done for way less than
+100 bucks. And now,
+secrets from the little paper with 117
+pages.
+Dear fellow scholars, this is Two Minute
+Papers with Dr. Carola Feher. One, you
+can ask a question and then tell it to
+think about anything else.
+Maybe think about a mug. Previous
+versions did not do that. Must do the
+task. Now, this one does, and I think
+that is excellent.
+[03:00]
+You can also ask it to think in
+alternating upper and lower case
+letters. Previous says, "Nope." This one
+does it. Two, there was a previous
+incident where AI agents were
+coordinating with each other on a
+message board. This one sees the message
+board, too, but refuses to play along.
+Once again, I think that is excellent.
+Three, at higher reasoning effort, Astra
+becomes less successful at evading its
+thoughts being monitored. You know the
+cliché in the movies where the villain
+start monologuing instead of doing the
+thing.
+It's kind of like that. Four, GPT-6
+Astra is safer than its predecessors. I
+think they have taken this hugging face
+AI hacking controversy very seriously,
+and it shows. You have my respect for
+that. But, it gets weirder. Yes, it's
+safer, but at the same time, its
+[04:00]
+monitorability has decreased. So, it
+behaves better, but it is also better at
+controlling and concealing its
+reasoning. So, all in all, Open AI still
+got it. And GPT-6 Astra is an incredibly
+forward in capabilities. And just
+imagine what we will be able to do just
+two more papers down the line. Seeing
+these results, I feel excited, stunned,
+and occasionally speechless at the same
+time. Once again, I'm not an expert,
+just a student trying to learn. And we
+can only exist because of you, fellow
+scholars. So, thank you so much for
+being with us and supporting us for
+1,074
+videos now. I use Lambda to reproduce AI
+research papers often in minutes. It's
+also great to train your own models or
+fine-tune an existing one. Run inference
+or text to image or video, easy peasy.
+[05:00]
+Running a deep seek chatbot or agent,
+super fast, super reliable. Lambda gives
+you powerful NVIDIA GPUs to run your own
+experiments. I test ideas from the
+papers I cover, and moments later,
+results. Love it. Seriously, try it out
+now at lambda.ai/papers.

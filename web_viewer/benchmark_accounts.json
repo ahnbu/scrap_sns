@@ -9,7 +9,7 @@
             ],
             "group": "①해외원천",
             "id": "a16z",
-            "last_saved_at": "2026-09-05",
+            "last_saved_at": "2026-09-08",
             "limit": 5,
             "match_keys": {
                 "youtube": [
@@ -19,7 +19,7 @@
             "memo": "",
             "name": "a16z",
             "purpose": "선점소재",
-            "saved_count": 5,
+            "saved_count": 6,
             "sources": [
                 "seed",
                 "scrap_sns"
@@ -57,7 +57,7 @@
             "memo": "",
             "name": "빌더 조쉬",
             "purpose": "형식학습",
-            "saved_count": 40,
+            "saved_count": 42,
             "sources": [
                 "seed",
                 "scrap_sns"
@@ -74,7 +74,7 @@
             ],
             "group": "7월실측복원",
             "id": "chester_roh",
-            "last_saved_at": "2026-08-24",
+            "last_saved_at": "2026-09-09",
             "limit": 5,
             "match_keys": {
                 "youtube": [
@@ -84,7 +84,7 @@
             "memo": "",
             "name": "노정석",
             "purpose": "선점소재",
-            "saved_count": 10,
+            "saved_count": 11,
             "sources": [
                 "seed",
                 "scrap_sns"
@@ -101,7 +101,7 @@
             ],
             "group": "④바이럴",
             "id": "choi_openai",
-            "last_saved_at": "2026-09-08",
+            "last_saved_at": "2026-09-09",
             "limit": 5,
             "match_keys": {
                 "threads": [
@@ -111,7 +111,7 @@
             "memo": "",
             "name": "CHOI",
             "purpose": "형식학습",
-            "saved_count": 45,
+            "saved_count": 50,
             "sources": [
                 "seed",
                 "scrap_sns"
@@ -219,7 +219,7 @@
             "memo": "",
             "name": "지피타쿠",
             "purpose": "형식학습",
-            "saved_count": 29,
+            "saved_count": 30,
             "sources": [
                 "seed",
                 "scrap_sns"
@@ -347,7 +347,7 @@
             ],
             "group": "④바이럴",
             "id": "kkongdon_story",
-            "last_saved_at": "2026-09-08",
+            "last_saved_at": "2026-09-09",
             "limit": 5,
             "match_keys": {
                 "threads": [
@@ -357,7 +357,7 @@
             "memo": "",
             "name": "꽁돈",
             "purpose": "형식학습",
-            "saved_count": 24,
+            "saved_count": 27,
             "sources": [
                 "seed",
                 "scrap_sns",
@@ -377,7 +377,7 @@
             ],
             "group": "②B2B",
             "id": "kook0526",
-            "last_saved_at": "2026-09-08",
+            "last_saved_at": "2026-09-09",
             "limit": 5,
             "match_keys": {
                 "linkedin": [
@@ -391,7 +391,7 @@
             "memo": "멀티채널 - §4는 링크드인만 적었으나 쓰레드에도 있다. LinkedIn 주소는 불투명 ID다",
             "name": "한성국",
             "purpose": "선점판정",
-            "saved_count": 38,
+            "saved_count": 40,
             "sources": [
                 "seed",
                 "scrap_sns"
@@ -408,7 +408,7 @@
             ],
             "group": "①해외원천",
             "id": "lennys_podcast",
-            "last_saved_at": "2026-09-08",
+            "last_saved_at": "2026-09-09",
             "limit": 5,
             "match_keys": {
                 "youtube": [
@@ -418,7 +418,7 @@
             "memo": "",
             "name": "Lenny's Podcast",
             "purpose": "선점소재",
-            "saved_count": 9,
+            "saved_count": 12,
             "sources": [
                 "seed",
                 "scrap_sns"
@@ -435,7 +435,7 @@
             ],
             "group": "④바이럴",
             "id": "marketer_ai_seulki",
-            "last_saved_at": "2026-09-08",
+            "last_saved_at": "2026-09-09",
             "limit": 5,
             "match_keys": {
                 "threads": [
@@ -445,7 +445,7 @@
             "memo": "",
             "name": "강슬기",
             "purpose": "형식학습",
-            "saved_count": 17,
+            "saved_count": 18,
             "sources": [
                 "seed",
                 "scrap_sns",
@@ -722,7 +722,7 @@
             "memo": "",
             "name": "윤자동",
             "purpose": "형식학습",
-            "saved_count": 4,
+            "saved_count": 5,
             "sources": [
                 "seed",
                 "scrap_sns",
