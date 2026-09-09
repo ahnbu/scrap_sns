@@ -193,6 +193,7 @@ def test_build_scrap_result_view_model_includes_stats_and_auth_notice():
         eval(extractFunction('getFailedPlatforms'));
         eval(extractFunction('getScrapStats'));
         eval(extractFunction('buildAuthRenewalPrompt'));
+        eval(extractFunction('buildToolWarningLines'));
         eval(extractFunction('buildScrapResultViewModel'));
 
         const model = buildScrapResultViewModel({
@@ -353,6 +354,7 @@ def test_build_scrap_result_view_model_includes_consistency_steps():
         eval(extractFunction('getFailedPlatforms'));
         eval(extractFunction('getScrapStats'));
         eval(extractFunction('buildAuthRenewalPrompt'));
+        eval(extractFunction('buildToolWarningLines'));
         eval(extractFunction('buildScrapResultViewModel'));
 
         const model = buildScrapResultViewModel({
@@ -435,6 +437,7 @@ def test_build_scrap_result_view_model_hides_passed_consistency_steps():
         eval(extractFunction('getFailedPlatforms'));
         eval(extractFunction('getScrapStats'));
         eval(extractFunction('buildAuthRenewalPrompt'));
+        eval(extractFunction('buildToolWarningLines'));
         eval(extractFunction('buildScrapResultViewModel'));
 
         const model = buildScrapResultViewModel({

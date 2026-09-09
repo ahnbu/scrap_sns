@@ -102,6 +102,14 @@ scripts/*
 # 설정 모달 탭 세로 레일 전환 (계획 _docs/20260906_02)
 !scripts/verify_settings_tab_layout.mjs
 
+# 뷰어 표시 결함 수정과 LinkedIn 진입점 통합 (계획 _docs/20260909_01)
+!scripts/_json_http.mjs
+!scripts/verify_saved_filter_headless.mjs
+!scripts/verify_summary_status_headless.mjs
+!scripts/measure_search_benchmark_cap.mjs
+!scripts/measure_linkedin_launches.mjs
+!scripts/compare_bench_linkedin_output.mjs
+
 # Terminal Paste Image folder
 .cp-images/
 

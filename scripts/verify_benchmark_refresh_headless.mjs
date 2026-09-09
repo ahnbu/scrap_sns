@@ -104,7 +104,7 @@ try {
     const cards = [...document.querySelectorAll('.glass-card')];
     return {
       cards: cards.length,
-      withBadge: cards.filter((c) => c.querySelector('[data-benchmark-badge]')).length,
+      withBadge: cards.filter((c) => c.querySelector('[data-benchmark-mark]')).length,
     };
   });
   record(

@@ -8,7 +8,7 @@
  *   M2 누르면 남의 계정 글만 남는다 (내 저장글 0건)
  *   M3 계정 칩 줄이 나오고 켜진 계정 + 건수가 보인다
  *   M4 계정 칩을 누르면 그 계정 글만 남는다
- *   M5 카드 배지를 누르면 그 계정만 보기로 좁혀진다
+ *   (M5 는 삭제됐다 - 카드 배지 클릭 진입점을 없앴다. _docs/20260909_01 W4)
  *   M6 MY 와 상호 배타다 (둘 다 켜서 0건이 되지 않는다)
  *   M7 끄면 원래 화면으로 돌아온다
  *   M8 켠 계정이 없으면 안내 문구가 나온다
@@ -87,7 +87,7 @@ try {
     const cards = [...document.querySelectorAll('.glass-card')];
     return {
       cards: cards.length,
-      benchmarkBadges: document.querySelectorAll('[data-benchmark-badge]').length,
+      benchmarkMarks: document.querySelectorAll('[data-benchmark-mark]').length,
       chips: [...document.querySelectorAll('.benchmark-chip')].map((c) => c.textContent.trim()),
       activeChip: document.querySelector('.benchmark-chip.active')?.textContent.trim() || null,
       hint: document.querySelector('.benchmark-chip-hint')?.textContent.trim() || null,
@@ -116,7 +116,7 @@ try {
   const onlyState = await page.evaluate(async () => {
     // 화면에 렌더된 카드가 전부 벤치마킹 글인지 본다.
     const cards = [...document.querySelectorAll('.glass-card')];
-    const withBadge = cards.filter((c) => c.querySelector('[data-benchmark-badge]')).length;
+    const withBadge = cards.filter((c) => c.querySelector('[data-benchmark-mark]')).length;
     return { cards: cards.length, withBadge };
   });
   record('M2 누르면 남의 계정 글만 남는다',
@@ -140,15 +140,15 @@ try {
     await page.waitForTimeout(600);
     const filtered = await page.evaluate(() => {
       const cards = [...document.querySelectorAll('.glass-card')];
-      const labels = new Set(
-        cards.map((c) => c.querySelector('[data-benchmark-badge]')?.textContent.trim())
-      );
-      return { cards: cards.length, distinctBadges: [...labels].filter(Boolean) };
+      // 마크는 이제 계정 이름이 아니라 글자 `B` 하나다(_docs/20260909_01 W4).
+      // 계정 구분은 칩이 하고, 여기서는 「전부 벤치마킹 글인가」만 본다.
+      const withMark = cards.filter((c) => c.querySelector('[data-benchmark-mark]')).length;
+      return { cards: cards.length, withMark };
     });
     const expectedCount = Number(picked.split(' ').pop());
     record('M4 계정 칩을 누르면 그 계정 글만 남는다',
-      filtered.cards === expectedCount && filtered.distinctBadges.length === 1,
-      `"${picked}" → 카드 ${filtered.cards}개 · 배지 종류 ${filtered.distinctBadges.join(',')}`);
+      filtered.cards === expectedCount && filtered.withMark === filtered.cards,
+      `"${picked}" → 카드 ${filtered.cards}개 · 마크 ${filtered.withMark}개`);
     await page.screenshot({ path: path.join(shotDir, 'M4_account_filtered.png') });
 
     // 해제
@@ -158,20 +158,38 @@ try {
     record('M4 계정 칩을 누르면 그 계정 글만 남는다', false, '계정 칩이 없어 확인 불가');
   }
 
-  // M5 카드 배지 클릭
-  const badgeFlow = await page.evaluate(async () => {
-    const badge = document.querySelector('[data-benchmark-badge]');
-    if (!badge) return { skipped: true };
-    const accountId = badge.dataset.benchmarkAccount;
-    badge.click();
+  // M5 (재정의) 카드 마크는 눌리지 않는다
+  //
+  // 종전에는 배지를 누르면 그 계정만 보기로 좁혀졌다. 활성 계정 19개 중 17개에서
+  // 그 동작이 카드 이름 클릭과 겹쳐, 진입점을 3개에서 2개로 줄였다.
+  // 계획: _docs/20260909_01 (W4)
+  const markFlow = await page.evaluate(async () => {
+    const mark = document.querySelector('[data-benchmark-mark]');
+    if (!mark) return { skipped: true };
+    const before = document.querySelectorAll('.glass-card').length;
+    const beforeChip = document.querySelector('.benchmark-chip.active')?.textContent.trim() || null;
+    mark.click();
     await new Promise((r) => setTimeout(r, 600));
-    const active = document.querySelector('.benchmark-chip.active')?.textContent.trim() || null;
-    return { accountId, active };
+    return {
+      tag: mark.tagName,
+      label: mark.textContent.trim(),
+      title: mark.getAttribute('title') || '',
+      ariaLabel: mark.getAttribute('aria-label') || '',
+      before,
+      after: document.querySelectorAll('.glass-card').length,
+      beforeChip,
+      afterChip: document.querySelector('.benchmark-chip.active')?.textContent.trim() || null,
+    };
   });
-  record('M5 카드 배지를 누르면 그 계정만 보기로 좁혀진다',
-    !badgeFlow.skipped && Boolean(badgeFlow.active) && badgeFlow.active !== '전체',
-    badgeFlow.skipped ? '배지 없음' : `계정 ${badgeFlow.accountId} → 활성 칩 "${badgeFlow.active}"`);
-  await page.screenshot({ path: path.join(shotDir, 'M5_badge_click.png') });
+  record('M5 카드 마크는 눌러도 아무 일이 없다 (진입점 축소)',
+    !markFlow.skipped && markFlow.tag !== 'BUTTON'
+      && markFlow.before === markFlow.after && markFlow.beforeChip === markFlow.afterChip,
+    markFlow.skipped ? '마크 없음'
+      : `<${markFlow.tag}> "${markFlow.label}" · 카드 ${markFlow.before}→${markFlow.after} · 칩 ${markFlow.beforeChip}→${markFlow.afterChip}`);
+  record('M5-b 마크에 화면 낭독기용 설명이 붙어 있다',
+    !markFlow.skipped && markFlow.ariaLabel.includes('벤치마킹') && markFlow.title.includes('벤치마킹'),
+    markFlow.skipped ? '마크 없음' : `aria-label="${markFlow.ariaLabel}"`);
+  await page.screenshot({ path: path.join(shotDir, 'M5_mark_not_clickable.png') });
 
   // M6 MY 와 상호 배타
   await page.click('#myPostsBtn');
@@ -183,17 +201,16 @@ try {
 
   // M7 끄면 원래대로
   //
-  // 배지 총수 0 을 기대하지 않는다 - W1 이후 겹친 글(내 저장글이면서 벤치마킹
-  // 계정 소속)은 기본 화면에도 있고 배지를 단다. 벤치마킹 「전용」 글이
-  // 0건인지를 본다. 계획: _docs/20260906_03 (W1)
+  // 🔴 「벤치마킹 전용 글이 0건」을 더는 기대하지 않는다. ALL 은 이제 항상 전부
+  //    보인다(설정 토글 삭제, _docs/20260909_01 W3). 카드 수가 돌아오는지만 본다.
   await page.click('#myPostsBtn');
   await page.waitForTimeout(700);
   const restored = await snapshot();
-  const benchOnlyBadges = await page.evaluate(() =>
+  const benchOnlyMarks = await page.evaluate(() =>
     document.querySelectorAll('[data-benchmark-also-saved="0"]').length);
   record('M7 끄면 원래 화면으로 돌아온다',
-    restored.cards === before.cards && benchOnlyBadges === 0,
-    `카드 ${before.cards} → ${restored.cards} · 벤치마킹 전용 배지 ${benchOnlyBadges}개`);
+    restored.cards === before.cards,
+    `카드 ${before.cards} → ${restored.cards} · 벤치마킹 전용 마크 ${benchOnlyMarks}개(ALL 이므로 0이 아니어도 정상)`);
 
   // ── W1 회귀 가드 ────────────────────────────────────────────────
   // 기대값을 스크립트에 박지 않는다. 켠 계정이 바뀌면 숫자가 바뀌므로

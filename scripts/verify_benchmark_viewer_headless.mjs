@@ -5,8 +5,8 @@
  * 「쓰는 순서 전체」를 보는 반면, 여기서는 표시 판정식 하나만 좁게 본다 —
  * 어느 쪽이 깨졌는지 갈라 읽기 위해서다.
  *
- *   V1 기본 화면에서 벤치마킹 글이 안 보인다
- *   V2 토글을 켜면 보인다
+ *   V1 「저장」을 켜면 벤치마킹 전용 글이 안 보인다
+ *   V2 ALL 에서는 벤치마킹 글이 보인다
  *   V3 계정을 끄면 그 계정 전용분만 사라진다 (저장글은 하나도 안 사라진다)
  *   V4 다시 켜면 카드 집합이 끄기 전과 같다
  *   V5 수동 숨김이 안 묻힌다 (Hidden 탭 항목 수 무변화)
@@ -64,21 +64,17 @@ try {
     };
   });
 
-  const setToggle = async (want) => {
-    await page.evaluate(() => document.getElementById('settingsBtn')?.click());
-    await page.waitForTimeout(400);
-    await page.evaluate(() => {
-      [...document.querySelectorAll('.tab-btn')]
-        .find((b) => b.dataset.target === 'tabDisplay')?.click();
-    });
-    await page.waitForTimeout(300);
+  // 종전에는 설정 탭의 「목록에 벤치마킹 글 함께 보기」 토글을 켜고 껐다.
+  // 그 토글은 삭제됐다 - ALL 은 항상 전부 보이고, 내 저장글만 보려면 상단
+  // 「저장」 버튼을 켠다. 계획: _docs/20260909_01 (W3)
+  const setSavedOnly = async (want) => {
     await page.evaluate((on) => {
-      const toggle = document.getElementById('showBenchmarkPostsToggle');
-      if (toggle && toggle.checked !== on) toggle.click();
+      const btn = document.getElementById('savedPostsBtn');
+      if (!btn) return;
+      const pressed = btn.getAttribute('aria-pressed') === 'true';
+      if (pressed !== on) btn.click();
     }, want);
-    await page.waitForTimeout(500);
-    await page.evaluate(() => document.getElementById('closeManagementModal')?.click());
-    await page.waitForTimeout(500);
+    await page.waitForTimeout(700);
   };
 
   // DOM 배지 수는 스크롤 깊이에 따라 달라진다(lazy render). 판정에는
@@ -97,7 +93,7 @@ try {
   // selector 를 받는다. W1 이후 겹친 글(내 저장글이면서 벤치마킹 계정 소속)도
   // 배지를 달기 때문에, 「전용 글이 있나」와 「배지가 있나」가 갈렸다.
   // 계획: _docs/20260906_03 (W2)
-  const badgeCount = (selector = '[data-benchmark-badge]') => page.evaluate(async (sel) => {
+  const badgeCount = (selector = '[data-benchmark-mark]') => page.evaluate(async (sel) => {
     for (let i = 0; i < 6; i++) {
       window.scrollBy(0, 3000);
       await new Promise((r) => setTimeout(r, 200));
@@ -123,16 +119,18 @@ try {
   const stats = await evaluate();
   console.log(`데이터: 전체 ${stats.total} · 저장글 ${stats.saved} · 벤치마킹 전용 ${stats.benchmarkOnly}`);
 
-  await setToggle(false);
-  // 겹친 글은 내 저장글이라 꺼짐 상태에서도 보인다 - 「전용」 글만 0 이어야 한다.
-  const offBadges = await badgeCount('[data-benchmark-also-saved="0"]');
-  record('V1 기본(꺼짐)에서 벤치마킹 전용 글이 안 보인다', offBadges === 0, `전용 배지 ${offBadges}개`);
+  // V1 「저장」을 켜면 벤치마킹 전용 글이 사라진다 (겹친 글은 내 저장글이라 남는다)
+  await setSavedOnly(true);
+  const savedOnlyMarks = await badgeCount('[data-benchmark-also-saved="0"]');
+  record('V1 「저장」을 켜면 벤치마킹 전용 글이 안 보인다', savedOnlyMarks === 0,
+    `전용 마크 ${savedOnlyMarks}개`);
 
   const hiddenBefore = await hiddenTabCount();
 
-  await setToggle(true);
-  const onBadges = await badgeCount();
-  record('V2 토글을 켜면 보인다', onBadges > 0, `배지 ${onBadges}개`);
+  // V2 ALL 에서는 벤치마킹 글이 그대로 보인다 (숨은 상태가 없다)
+  await setSavedOnly(false);
+  const allMarks = await badgeCount();
+  record('V2 ALL 에서는 벤치마킹 글이 보인다', allMarks > 0, `마크 ${allMarks}개`);
 
   // V3·V4 계정 하나를 껐다 켠다
   const victim = await page.evaluate(async () => {

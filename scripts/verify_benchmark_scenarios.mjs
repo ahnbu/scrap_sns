@@ -65,17 +65,20 @@ try {
     await page.evaluate(() => document.getElementById('closeManagementModal')?.click());
     await page.waitForTimeout(400);
   };
-  const setBenchmarkToggle = async (on) => {
-    await openSettings('tabDisplay');
+  // 설정의 「목록에 벤치마킹 글 함께 보기」 토글은 삭제됐다. ALL 은 항상 전부
+  // 보이고, 내 저장글만 보려면 상단 「저장」 버튼을 켠다.
+  // 계획: _docs/20260909_01 (W3)
+  const setSavedOnly = async (on) => {
     await page.evaluate((want) => {
-      const toggle = document.getElementById('showBenchmarkPostsToggle');
-      if (toggle && toggle.checked !== want) toggle.click();
+      const btn = document.getElementById('savedPostsBtn');
+      if (!btn) return;
+      const pressed = btn.getAttribute('aria-pressed') === 'true';
+      if (pressed !== want) btn.click();
     }, on);
-    await page.waitForTimeout(600);
-    await closeSettings();
+    await page.waitForTimeout(700);
   };
   const visibleBenchmarkCards = () => page.evaluate(
-    () => document.querySelectorAll('[data-benchmark-badge]').length
+    () => document.querySelectorAll('[data-benchmark-mark]').length
   );
 
   await page.goto(BASE_URL, { waitUntil: 'networkidle', timeout: 90000 });
@@ -135,25 +138,29 @@ try {
     `전체 ${s3.total} · 벤치마킹 ${s3.benchmark} · 계정표식 ${s3.withAccount}`
     + ` · 조회수 ${s3.withViews} · 좋아요 ${s3.withLikes}(채널이 감추면 결측)`);
 
-  // ---- S4 기본 화면은 평소와 같다 (벤치마킹 글이 안 보인다)
-  await setBenchmarkToggle(false);
-  const s4Hidden = await visibleBenchmarkCards();
+  // ---- S4 「저장」을 켜면 벤치마킹 전용 글이 사라진다
+  await setSavedOnly(true);
+  for (let i = 0; i < 6; i++) { await page.mouse.wheel(0, 3000); await page.waitForTimeout(250); }
+  const s4Hidden = await page.evaluate(
+    () => document.querySelectorAll('[data-benchmark-also-saved="0"]').length
+  );
   const s4 = await page.evaluate(() => {
     const cards = [...document.querySelectorAll('.glass-card')];
     return { cards: cards.length };
   });
-  record('S4', '기본 화면에 벤치마킹 글이 안 보인다',
-    s4Hidden === 0, `벤치마킹 배지 ${s4Hidden}개 · 렌더 카드 ${s4.cards}개`);
-  await shot('S4_default_hidden');
+  record('S4', '「저장」을 켜면 벤치마킹 전용 글이 안 보인다',
+    s4Hidden === 0, `전용 마크 ${s4Hidden}개 · 렌더 카드 ${s4.cards}개`);
+  await shot('S4_saved_only');
+  await page.evaluate(() => window.scrollTo(0, 0));
 
-  // ---- S5 토글을 켜면 보이고 배지로 구분된다
-  await setBenchmarkToggle(true);
+  // ---- S5 ALL 에서는 벤치마킹 글이 보이고 마크로 구분된다
+  await setSavedOnly(false);
   await page.waitForTimeout(500);
   for (let i = 0; i < 6; i++) { await page.mouse.wheel(0, 3000); await page.waitForTimeout(250); }
   const s5Shown = await visibleBenchmarkCards();
-  record('S5', '토글을 켜면 보이고 배지로 구분된다',
-    s5Shown > 0, `벤치마킹 배지 ${s5Shown}개`);
-  await shot('S5_toggle_on_with_badge');
+  record('S5', 'ALL 에서 벤치마킹 글이 보이고 마크로 구분된다',
+    s5Shown > 0, `벤치마킹 마크 ${s5Shown}개`);
+  await shot('S5_all_with_mark');
   await page.evaluate(() => window.scrollTo(0, 0));
 
   // ---- S6 소재 검증 검색: 절단이 내 저장글을 줄이지 않는다

@@ -172,17 +172,9 @@ try {
   const page = await context.newPage();
   await page.goto(BASE_URL, { waitUntil: 'networkidle', timeout: 90000 });
   await page.waitForSelector('.glass-card', { timeout: 90000 });
-  // 벤치마킹 글을 켜야 배지가 겹치는 카드가 나온다.
-  await page.evaluate(() => {
-    document.getElementById('settingsBtn')?.click();
-  });
-  await page.waitForTimeout(400);
-  await page.evaluate(() => {
-    const toggle = document.getElementById('showBenchmarkPostsToggle');
-    if (toggle && !toggle.checked) toggle.click();
-    document.getElementById('closeManagementModal')?.click();
-  });
-  await page.waitForTimeout(700);
+  // 벤치마킹 글은 ALL 에 항상 보인다. 종전에는 설정 토글을 켜야 했는데
+  // 그 토글은 삭제됐다. 계획: _docs/20260909_01 (W3)
+  await page.waitForTimeout(300);
   for (let i = 0; i < 10; i++) {
     await page.mouse.wheel(0, 3000);
     await page.waitForTimeout(300);
@@ -205,7 +197,7 @@ try {
     return {
       maxBadges: worst.badges,
       cardsWithBadge: badged.length,
-      benchmarkBadges: document.querySelectorAll('[data-benchmark-badge]').length,
+      benchmarkMarks: document.querySelectorAll('[data-benchmark-mark]').length,
       scrollWidth: row.scrollWidth,
       clientWidth: row.clientWidth,
     };
