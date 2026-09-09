@@ -46,5 +46,17 @@
     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7407234823783821312/",
     "reason": "no-metrics-in-dom",
     "last_failed_at": "2026-08-28T19:41:57.969"
+  },
+  "ugcPost:7416455080675033088": {
+    "count": 1,
+    "url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7416455080675033088",
+    "reason": "no-metrics-in-dom",
+    "last_failed_at": "2026-09-09T14:52:46.315"
+  },
+  "share:7407234822894419969": {
+    "count": 1,
+    "url": "https://www.linkedin.com/feed/update/urn:li:share:7407234822894419969",
+    "reason": "no-metrics-in-dom",
+    "last_failed_at": "2026-09-09T14:52:54.752"
   }
 }

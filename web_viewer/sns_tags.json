@@ -454,7 +454,8 @@
     "https://www.linkedin.com/feed/update/urn:li:activity:7417789055347863552?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7417789055347863552%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "기획",
         "ppt",
-        "노트북LM"
+        "노트북LM",
+        "강사강의"
     ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7417813623470751745?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7417813623470751745%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "클로드",
@@ -3477,6 +3478,164 @@
     "https://www.linkedin.com/feed/update/urn:li:activity:7503082584923467777": [
         "디자인"
     ],
+    "https://www.linkedin.com/feed/update/urn:li:share:7408053312815656960": [
+        "강사강의"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:share:7413132714503004160": [
+        "chatgpt",
+        "gemini",
+        "리서치",
+        "마케팅",
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:share:7415384265393266688": [
+        "강사강의",
+        "리서치"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:share:7417789054294953985": [
+        "ppt",
+        "강사강의",
+        "기획",
+        "노트북LM"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:share:7420333848804335616": [
+        "강사강의",
+        "프롬프트"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:share:7420808105548222464": [
+        "gemini",
+        "강사강의",
+        "기획",
+        "리서치",
+        "안티그래비티",
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:share:7422144962227646464": [
+        "강사강의",
+        "기획"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:share:7422619153921925122": [
+        "gemini",
+        "기획",
+        "마케팅",
+        "안티그래비티"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:share:7424043247410421760": [
+        "기획",
+        "프롬프트"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:share:7427218045615620096": [
+        "chatgpt",
+        "gemini",
+        "클로드",
+        "프롬프트"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:share:7427933066079322113": [
+        "chatgpt"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:share:7428816094963957760": [
+        "gemini",
+        "프롬프트"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:share:7430217610429988865": [
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:share:7434523613170528256": [
+        "gemini",
+        "안티그래비티"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:share:7437793267099869185": [
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:share:7440211064002359297": [
+        "chatgpt",
+        "gemini",
+        "기획",
+        "디자인",
+        "이미지",
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:share:7440584130628808704": [
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:share:7460903868072136704": [
+        "chatgpt",
+        "글쓰기",
+        "리서치",
+        "이미지",
+        "코덱스",
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:share:7486376409331019776": [
+        "글로벌규칙"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:share:7501590947680591872": [
+        "마케팅"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:ugcPost:7403988981165522944": [
+        "chatgpt"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:ugcPost:7404853662210121728": [
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:ugcPost:7408392327742021634": [
+        "chatgpt",
+        "gemini"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:ugcPost:7410194500721176576": [
+        "기획"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:ugcPost:7416455080675033088": [
+        "ppt",
+        "노트북LM",
+        "이미지"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:ugcPost:7418654694719426560": [
+        "ppt",
+        "노트북LM",
+        "이미지",
+        "프롬프트"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:ugcPost:7430986561267294208": [
+        "SNS노하우",
+        "오픈클로",
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:ugcPost:7442813126615576577": [
+        "chatgpt",
+        "gemini",
+        "안티그래비티",
+        "코덱스",
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:ugcPost:7444699371797057536": [
+        "SNS노하우",
+        "강사강의",
+        "기획",
+        "디자인",
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:ugcPost:7452888144644976640": [
+        "디자인",
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:ugcPost:7457325776728895489": [
+        "chatgpt",
+        "gemini",
+        "디자인",
+        "코덱스",
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:ugcPost:7478698366520991745": [
+        "강사강의",
+        "기획"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:ugcPost:7497904074101723136": [
+        "gemini",
+        "강사강의",
+        "바이브코딩",
+        "클로드"
+    ],
     "https://www.threads.com/@06am_draw/post/DUy-OrTE1c5": [
         "클로드",
         "안티그래비티",
@@ -4396,149 +4555,6 @@
     "https://www.threads.com/@byunghwiyu/post/DYQsAa4k4vG": [
         "하네스",
         "바이브코딩"
-    ],
-    "https://www.threads.com/@byungwook.an/post/DSg-0FrkyFQ": [
-        "chatgpt",
-        "gemini"
-    ],
-    "https://www.threads.com/@byungwook.an/post/DStzsV9E8zQ": [
-        "기획"
-    ],
-    "https://www.threads.com/@byungwook.an/post/DT12rBeEymO": [
-        "강사강의"
-    ],
-    "https://www.threads.com/@byungwook.an/post/DT5MzJ-E2kQ": [
-        "gemini",
-        "기획",
-        "리서치",
-        "안티그래비티",
-        "클로드",
-        "강사강의"
-    ],
-    "https://www.threads.com/@byungwook.an/post/DTCranfk3aJ": [
-        "chatgpt",
-        "gemini",
-        "리서치",
-        "마케팅",
-        "클로드"
-    ],
-    "https://www.threads.com/@byungwook.an/post/DTSqLguE3Yk": [
-        "리서치"
-    ],
-    "https://www.threads.com/@byungwook.an/post/DTaRzLZkogO": [
-        "ppt",
-        "노트북LM",
-        "이미지"
-    ],
-    "https://www.threads.com/@byungwook.an/post/DTjw96Lk-UJ": [
-        "ppt",
-        "기획",
-        "강사강의"
-    ],
-    "https://www.threads.com/@byungwook.an/post/DTp6fk4EhKJ": [
-        "ppt",
-        "노트북LM",
-        "이미지",
-        "프롬프트"
-    ],
-    "https://www.threads.com/@byungwook.an/post/DU8Deq3kwtt": [
-        "클로드"
-    ],
-    "https://www.threads.com/@byungwook.an/post/DUCtKzoE_ll": [
-        "기획",
-        "강사강의"
-    ],
-    "https://www.threads.com/@byungwook.an/post/DUGExMHkzZt": [
-        "gemini",
-        "기획",
-        "마케팅",
-        "안티그래비티"
-    ],
-    "https://www.threads.com/@byungwook.an/post/DUQMZA6E09C": [
-        "기획",
-        "프롬프트"
-    ],
-    "https://www.threads.com/@byungwook.an/post/DUmvgS6E4a-": [
-        "chatgpt",
-        "gemini",
-        "클로드",
-        "프롬프트"
-    ],
-    "https://www.threads.com/@byungwook.an/post/DUrznC3Eypg": [
-        "chatgpt"
-    ],
-    "https://www.threads.com/@byungwook.an/post/DUyGX-Pk_89": [
-        "gemini",
-        "프롬프트"
-    ],
-    "https://www.threads.com/@byungwook.an/post/DVBhZELE1U_": [
-        "오픈클로",
-        "클로드",
-        "SNS노하우"
-    ],
-    "https://www.threads.com/@byungwook.an/post/DVapXpBk_f4": [
-        "gemini",
-        "안티그래비티"
-    ],
-    "https://www.threads.com/@byungwook.an/post/DVx5H52E9Q1": [
-        "클로드"
-    ],
-    "https://www.threads.com/@byungwook.an/post/DWDGf8-k-Dl": [
-        "chatgpt",
-        "gemini",
-        "클로드"
-    ],
-    "https://www.threads.com/@byungwook.an/post/DWFt2fdE0ws": [
-        "클로드"
-    ],
-    "https://www.threads.com/@byungwook.an/post/DWVjfKHkhT0": [
-        "chatgpt",
-        "gemini",
-        "안티그래비티",
-        "코덱스",
-        "클로드"
-    ],
-    "https://www.threads.com/@byungwook.an/post/DWi-PZ5k88n": [
-        "기획",
-        "디자인",
-        "클로드",
-        "SNS노하우",
-        "강사강의"
-    ],
-    "https://www.threads.com/@byungwook.an/post/DX8rQSxEwaN": [
-        "chatgpt",
-        "gemini",
-        "디자인",
-        "코덱스",
-        "클로드"
-    ],
-    "https://www.threads.com/@byungwook.an/post/DXdJVC6Exkg": [
-        "디자인",
-        "클로드"
-    ],
-    "https://www.threads.com/@byungwook.an/post/DYWG2zwExJE": [
-        "chatgpt",
-        "리서치",
-        "이미지",
-        "코덱스",
-        "클로드",
-        "글쓰기"
-    ],
-    "https://www.threads.com/@byungwook.an/post/DaUix2Uk2Cg": [
-        "기획",
-        "강사강의"
-    ],
-    "https://www.threads.com/@byungwook.an/post/DbLFk8VE6Kq": [
-        "글로벌규칙"
-    ],
-    "https://www.threads.com/@byungwook.an/post/Dc3LOziG3JK": [
-        "마케팅"
-    ],
-    "https://www.threads.com/@byungwook.an/post/Dcc_53EEsQG": [
-        "gemini",
-        "클로드",
-        "바이브코딩",
-        "강사강의"
     ],
     "https://www.threads.com/@c.reator_c/post/DUHJvgwE8QV": [
         "이미지",
@@ -9745,6 +9761,149 @@
         "클로드",
         "프롬프트"
     ],
+    "https://www.threads.com/@안병욱/post/DSg-0FrkyFQ": [
+        "chatgpt",
+        "gemini"
+    ],
+    "https://www.threads.com/@안병욱/post/DStzsV9E8zQ": [
+        "기획"
+    ],
+    "https://www.threads.com/@안병욱/post/DT12rBeEymO": [
+        "강사강의"
+    ],
+    "https://www.threads.com/@안병욱/post/DT5MzJ-E2kQ": [
+        "gemini",
+        "기획",
+        "리서치",
+        "안티그래비티",
+        "클로드",
+        "강사강의"
+    ],
+    "https://www.threads.com/@안병욱/post/DTCranfk3aJ": [
+        "chatgpt",
+        "gemini",
+        "리서치",
+        "마케팅",
+        "클로드"
+    ],
+    "https://www.threads.com/@안병욱/post/DTSqLguE3Yk": [
+        "리서치"
+    ],
+    "https://www.threads.com/@안병욱/post/DTaRzLZkogO": [
+        "ppt",
+        "노트북LM",
+        "이미지"
+    ],
+    "https://www.threads.com/@안병욱/post/DTjw96Lk-UJ": [
+        "ppt",
+        "기획",
+        "강사강의"
+    ],
+    "https://www.threads.com/@안병욱/post/DTp6fk4EhKJ": [
+        "ppt",
+        "노트북LM",
+        "이미지",
+        "프롬프트"
+    ],
+    "https://www.threads.com/@안병욱/post/DU8Deq3kwtt": [
+        "클로드"
+    ],
+    "https://www.threads.com/@안병욱/post/DUCtKzoE_ll": [
+        "기획",
+        "강사강의"
+    ],
+    "https://www.threads.com/@안병욱/post/DUGExMHkzZt": [
+        "gemini",
+        "기획",
+        "마케팅",
+        "안티그래비티"
+    ],
+    "https://www.threads.com/@안병욱/post/DUQMZA6E09C": [
+        "기획",
+        "프롬프트"
+    ],
+    "https://www.threads.com/@안병욱/post/DUmvgS6E4a-": [
+        "chatgpt",
+        "gemini",
+        "클로드",
+        "프롬프트"
+    ],
+    "https://www.threads.com/@안병욱/post/DUrznC3Eypg": [
+        "chatgpt"
+    ],
+    "https://www.threads.com/@안병욱/post/DUyGX-Pk_89": [
+        "gemini",
+        "프롬프트"
+    ],
+    "https://www.threads.com/@안병욱/post/DVBhZELE1U_": [
+        "오픈클로",
+        "클로드",
+        "SNS노하우"
+    ],
+    "https://www.threads.com/@안병욱/post/DVapXpBk_f4": [
+        "gemini",
+        "안티그래비티"
+    ],
+    "https://www.threads.com/@안병욱/post/DVx5H52E9Q1": [
+        "클로드"
+    ],
+    "https://www.threads.com/@안병욱/post/DWDGf8-k-Dl": [
+        "chatgpt",
+        "gemini",
+        "클로드"
+    ],
+    "https://www.threads.com/@안병욱/post/DWFt2fdE0ws": [
+        "클로드"
+    ],
+    "https://www.threads.com/@안병욱/post/DWVjfKHkhT0": [
+        "chatgpt",
+        "gemini",
+        "안티그래비티",
+        "코덱스",
+        "클로드"
+    ],
+    "https://www.threads.com/@안병욱/post/DWi-PZ5k88n": [
+        "기획",
+        "디자인",
+        "클로드",
+        "SNS노하우",
+        "강사강의"
+    ],
+    "https://www.threads.com/@안병욱/post/DX8rQSxEwaN": [
+        "chatgpt",
+        "gemini",
+        "디자인",
+        "코덱스",
+        "클로드"
+    ],
+    "https://www.threads.com/@안병욱/post/DXdJVC6Exkg": [
+        "디자인",
+        "클로드"
+    ],
+    "https://www.threads.com/@안병욱/post/DYWG2zwExJE": [
+        "chatgpt",
+        "리서치",
+        "이미지",
+        "코덱스",
+        "클로드",
+        "글쓰기"
+    ],
+    "https://www.threads.com/@안병욱/post/DaUix2Uk2Cg": [
+        "기획",
+        "강사강의"
+    ],
+    "https://www.threads.com/@안병욱/post/DbLFk8VE6Kq": [
+        "글로벌규칙"
+    ],
+    "https://www.threads.com/@안병욱/post/Dc3LOziG3JK": [
+        "마케팅"
+    ],
+    "https://www.threads.com/@안병욱/post/Dcc_53EEsQG": [
+        "gemini",
+        "클로드",
+        "바이브코딩",
+        "강사강의"
+    ],
     "https://www.threads.com/t/DT6r--5j5Pp": [
         "클로드"
     ],
@@ -10743,7 +10902,8 @@
     ],
     "https://www.youtube.com/watch?v=H4uIcL6gid0": [
         "ppt",
-        "강사강의"
+        "강사강의",
+        "이미지"
     ],
     "https://www.youtube.com/watch?v=H7Trml7qb5w": [
         "리서치",
@@ -11387,6 +11547,11 @@
         "SNS노하우",
         "강사강의"
     ],
+    "https://www.youtube.com/watch?v=SLDzLLQyBK8": [
+        "chatgpt",
+        "코덱스",
+        "클로드"
+    ],
     "https://www.youtube.com/watch?v=SSIGI9mm0DU": [
         "chatgpt",
         "리서치",
@@ -11755,6 +11920,9 @@
         "SNS노하우",
         "강사강의"
     ],
+    "https://www.youtube.com/watch?v=Y5rSSvXfL4g": [
+        "프롬프트"
+    ],
     "https://www.youtube.com/watch?v=Y8lGdEyNv-M": [
         "클로드",
         "바이브코딩"
@@ -11888,7 +12056,8 @@
     "https://www.youtube.com/watch?v=_c7Ku7qc-hI": [
         "바이브코딩",
         "클로드",
-        "프롬프트"
+        "프롬프트",
+        "기획"
     ],
     "https://www.youtube.com/watch?v=_d2HyrMAWAs": [
         "chatgpt",
@@ -12099,7 +12268,8 @@
         "SNS노하우"
     ],
     "https://www.youtube.com/watch?v=dbXtevTiZto": [
-        "하네스"
+        "하네스",
+        "기획"
     ],
     "https://www.youtube.com/watch?v=dcsvMlyhhAI": [
         "chatgpt",
