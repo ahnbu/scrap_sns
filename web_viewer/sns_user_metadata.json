@@ -24,6 +24,11 @@
         "favorite": true,
         "updated_at": "2026-07-07T11:46:58.113+09:00"
     },
+    "linkedin:7473342632916721664": {
+        "canonical_url": "https://www.linkedin.com/feed/update/urn:li:activity:7473342632916721664?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7473342632916721664%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29",
+        "favorite": true,
+        "updated_at": "2026-08-31T21:54:30.404+09:00"
+    },
     "threads:DX1fon8j7pE": {
         "canonical_url": "https://www.threads.com/@mjcho7/post/DX1fon8j7pE",
         "favorite": true,
@@ -58,5 +63,40 @@
         "canonical_url": "https://www.threads.com/@taehyeong_lim/post/DcYiZk5E0V8",
         "hidden": true,
         "updated_at": "2026-08-24T10:45:34.288+09:00"
+    },
+    "threads:DcaJkr0GvWw": {
+        "canonical_url": "https://www.threads.com/@revfactory1/post/DcaJkr0GvWw",
+        "note": "이미지생성의 시각임팩트가 있으면 ⇒ 링크가 본문에 있는 감점 요인이 있어도, 조회성과가 나오는구나",
+        "updated_at": "2026-09-05T09:44:18.236+09:00"
+    },
+    "threads:DcdkBvHE6O6": {
+        "canonical_url": "https://www.threads.com/@yun_ja_dong/post/DcdkBvHE6O6",
+        "note": "그냥 1줄로, 실제 생활에 ai를 자동화하는 것 자체가 임팩트",
+        "updated_at": "2026-09-05T09:44:46.976+09:00"
+    },
+    "threads:DcuOeW1E1OX": {
+        "canonical_url": "https://www.threads.com/@splendor.kim/post/DcuOeW1E1OX",
+        "note": "길필요도 없다. 짧게 + 이미지 + 임팩트 + 꿀팁... 된다",
+        "updated_at": "2026-09-05T10:01:25.553+09:00"
+    },
+    "threads:Dczo4vGGKIq": {
+        "canonical_url": "https://www.threads.com/@changmini.ai/post/Dczo4vGGKIq",
+        "note": "pptx 주제는 에버그린 주제인듯",
+        "updated_at": "2026-09-05T10:00:33.077+09:00"
+    },
+    "youtube:3hilsneulfM": {
+        "canonical_url": "https://www.youtube.com/watch?v=3hilsneulfM",
+        "favorite": true,
+        "updated_at": "2026-08-31T21:17:40.624+09:00"
+    },
+    "youtube:Uj3NF_4Z1ng": {
+        "canonical_url": "https://www.youtube.com/watch?v=Uj3NF_4Z1ng",
+        "favorite": true,
+        "updated_at": "2026-08-31T21:11:12.480+09:00"
+    },
+    "youtube:iJfRqfDetsI": {
+        "canonical_url": "https://www.youtube.com/watch?v=iJfRqfDetsI",
+        "favorite": true,
+        "updated_at": "2026-08-31T21:11:09.554+09:00"
     }
 }

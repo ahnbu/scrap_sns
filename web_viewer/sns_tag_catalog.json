@@ -1,4 +1,17 @@
 {
+    "SNS노하우": {
+        "aliases": [
+            "스레드",
+            "인스타",
+            "쓰레드",
+            "링크드인",
+            "블로그",
+            "Facebook",
+            "페북",
+            "페이스북"
+        ],
+        "primary": false
+    },
     "chatgpt": {
         "aliases": [
             "gpt",
@@ -31,12 +44,32 @@
         "aliases": [],
         "primary": false
     },
+    "강사강의": {
+        "aliases": [
+            "강사",
+            "강의",
+            "기업교육",
+            "강연",
+            "자문",
+            "코칭"
+        ],
+        "primary": false
+    },
     "글로벌규칙": {
         "aliases": [
             "claude.md",
             "agents.md",
             "gemini.md",
             "글로벌 규칙"
+        ],
+        "primary": false
+    },
+    "글쓰기": {
+        "aliases": [
+            "korean-humanizer",
+            "im-not-ai",
+            "korean-skills",
+            "fluent-korean"
         ],
         "primary": false
     },
@@ -92,6 +125,14 @@
         "aliases": [
             "vibe-coding",
             "바이브코더"
+        ],
+        "primary": false
+    },
+    "브라우저자동화": {
+        "aliases": [
+            "aside",
+            "playwright",
+            "cdp"
         ],
         "primary": false
     },

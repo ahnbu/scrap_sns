@@ -1,735 +1,735 @@
 {
-  "accounts": [
-    {
-      "channels": {
-        "youtube": "@a16z"
-      },
-      "collectable": [
-        "youtube"
-      ],
-      "group": "①해외원천",
-      "id": "a16z",
-      "last_saved_at": "2026-09-05",
-      "limit": 5,
-      "match_keys": {
-        "youtube": [
-          "UC9cn0TuPq4dnbTY-CBsm8XA"
-        ]
-      },
-      "memo": "",
-      "name": "a16z",
-      "purpose": "선점소재",
-      "saved_count": 5,
-      "sources": [
-        "seed",
-        "scrap_sns"
-      ],
-      "status": "active",
-      "unverified": []
-    },
-    {
-      "channels": {
-        "linkedin": "uxjosh",
-        "threads": "@joshproductletter",
-        "youtube": "@builderjoshkim"
-      },
-      "collectable": [
-        "linkedin",
-        "threads",
-        "youtube"
-      ],
-      "group": "③B2C",
-      "id": "builderjosh",
-      "last_saved_at": "2026-09-05",
-      "limit": 5,
-      "match_keys": {
-        "linkedin": [
-          "ACoAAAfst4QBZ_TBpSZb5m5EitKHc3H5PhUbe5E",
-          "uxjosh"
-        ],
-        "threads": [
-          "joshproductletter"
-        ],
-        "youtube": [
-          "UCxj3eVTAv9KLdrowXcuCFDQ"
-        ]
-      },
-      "memo": "",
-      "name": "빌더 조쉬",
-      "purpose": "형식학습",
-      "saved_count": 36,
-      "sources": [
-        "seed",
-        "scrap_sns"
-      ],
-      "status": "active",
-      "unverified": []
-    },
-    {
-      "channels": {
-        "youtube": "@chester_roh"
-      },
-      "collectable": [
-        "youtube"
-      ],
-      "group": "7월실측복원",
-      "id": "chester_roh",
-      "last_saved_at": "2026-08-24",
-      "limit": 5,
-      "match_keys": {
-        "youtube": [
-          "UCz-BiVywYdO6iXhjXkw_Kgw"
-        ]
-      },
-      "memo": "",
-      "name": "노정석",
-      "purpose": "선점소재",
-      "saved_count": 10,
-      "sources": [
-        "seed",
-        "scrap_sns"
-      ],
-      "status": "off",
-      "unverified": []
-    },
-    {
-      "channels": {
-        "threads": "@choi.openai"
-      },
-      "collectable": [
-        "threads"
-      ],
-      "group": "④바이럴",
-      "id": "choi_openai",
-      "last_saved_at": "2026-09-06",
-      "limit": 5,
-      "match_keys": {
-        "threads": [
-          "choi.openai"
-        ]
-      },
-      "memo": "",
-      "name": "CHOI",
-      "purpose": "형식학습",
-      "saved_count": 40,
-      "sources": [
-        "seed",
-        "scrap_sns"
-      ],
-      "status": "active",
-      "unverified": []
-    },
-    {
-      "channels": {
-        "youtube": "@citizendev9c"
-      },
-      "collectable": [
-        "youtube"
-      ],
-      "group": "⑤실무활용",
-      "id": "citizendev9c",
-      "last_saved_at": "2026-09-05",
-      "limit": 5,
-      "match_keys": {
-        "youtube": [
-          "UCDLlMjELbrJdETmSiAB68AA"
-        ]
-      },
-      "memo": "",
-      "name": "시민개발자 구씨",
-      "purpose": "형식학습",
-      "saved_count": 11,
-      "sources": [
-        "seed",
-        "scrap_sns"
-      ],
-      "status": "off",
-      "unverified": []
-    },
-    {
-      "channels": {
-        "youtube": "@editorp89"
-      },
-      "collectable": [
-        "youtube"
-      ],
-      "group": "7월실측복원",
-      "id": "editorp89",
-      "last_saved_at": "2026-08-12",
-      "limit": 5,
-      "match_keys": {
-        "youtube": [
-          "UC4PwAtNhPsuBYdavDJb4F0g"
-        ]
-      },
-      "memo": "",
-      "name": "편집자P",
-      "purpose": "형식학습",
-      "saved_count": 13,
-      "sources": [
-        "seed",
-        "scrap_sns"
-      ],
-      "status": "off",
-      "unverified": []
-    },
-    {
-      "channels": {
-        "youtube": "@Fireship"
-      },
-      "collectable": [
-        "youtube"
-      ],
-      "group": "①해외원천",
-      "id": "fireship",
-      "last_saved_at": "2026-09-05",
-      "limit": 5,
-      "match_keys": {
-        "youtube": [
-          "UCsBjURrPoezykLs9EqgamOA"
-        ]
-      },
-      "memo": "",
-      "name": "Fireship",
-      "purpose": "선점소재",
-      "saved_count": 5,
-      "sources": [
-        "seed",
-        "scrap_sns"
-      ],
-      "status": "active",
-      "unverified": []
-    },
-    {
-      "channels": {
-        "threads": "@gptaku_ai"
-      },
-      "collectable": [
-        "threads"
-      ],
-      "group": "④바이럴",
-      "id": "gptaku_ai",
-      "last_saved_at": "2026-09-06",
-      "limit": 5,
-      "match_keys": {
-        "threads": [
-          "gptaku_ai"
-        ]
-      },
-      "memo": "",
-      "name": "지피타쿠",
-      "purpose": "형식학습",
-      "saved_count": 26,
-      "sources": [
-        "seed",
-        "scrap_sns"
-      ],
-      "status": "active",
-      "unverified": []
-    },
-    {
-      "channels": {
-        "youtube": "@헤이디"
-      },
-      "collectable": [
-        "youtube"
-      ],
-      "group": "⑤실무활용",
-      "id": "heydi",
-      "last_saved_at": "2026-09-05",
-      "limit": 5,
-      "match_keys": {
-        "youtube": [
-          "UCWt2bPyw2ZNweIxpSnB36Ew"
-        ]
-      },
-      "memo": "",
-      "name": "헤이디",
-      "purpose": "형식학습",
-      "saved_count": 12,
-      "sources": [
-        "seed",
-        "scrap_sns",
-        "creator_profile"
-      ],
-      "status": "active",
-      "unverified": []
-    },
-    {
-      "channels": {
-        "youtube": "@jangpm"
-      },
-      "collectable": [
-        "youtube"
-      ],
-      "group": "③B2C",
-      "id": "jangpm",
-      "last_saved_at": "2026-08-31",
-      "limit": 5,
-      "match_keys": {
-        "youtube": [
-          "UCSkpTOEl_zW6b4Y7M_Prefg"
-        ]
-      },
-      "memo": "",
-      "name": "일잘러 장피엠",
-      "purpose": "형식학습",
-      "saved_count": 5,
-      "sources": [
-        "seed",
-        "scrap_sns"
-      ],
-      "status": "active",
-      "unverified": []
-    },
-    {
-      "channels": {
-        "youtube": "@jayychoii"
-      },
-      "collectable": [
-        "youtube"
-      ],
-      "group": "⑤실무활용",
-      "id": "jayychoii",
-      "last_saved_at": "2026-08-24",
-      "limit": 5,
-      "match_keys": {
-        "youtube": [
-          "UCFmYIak2sRBXt2M3ep6U3QA"
-        ]
-      },
-      "memo": "",
-      "name": "Jay Choi",
-      "purpose": "형식학습",
-      "saved_count": 12,
-      "sources": [
-        "seed",
-        "scrap_sns"
-      ],
-      "status": "active",
-      "unverified": []
-    },
-    {
-      "channels": {
-        "linkedin": "jiin-jinny-lee-15b4072b8"
-      },
-      "collectable": [
-        "linkedin"
-      ],
-      "group": "③B2C",
-      "id": "jiin_jinny_lee",
-      "last_saved_at": "2026-09-01",
-      "limit": 5,
-      "match_keys": {
-        "linkedin": [
-          "ACoAAEw8IBcBaoQDt-XJE3mEQljO6gDEp2CfOMI",
-          "jiin-jinny-lee-15b4072b8"
-        ]
-      },
-      "memo": "",
-      "name": "이지인",
-      "purpose": "형식학습",
-      "saved_count": 9,
-      "sources": [
-        "seed",
-        "scrap_sns",
-        "creator_profile"
-      ],
-      "status": "active",
-      "unverified": []
-    },
-    {
-      "channels": {
-        "threads": "@kkongdon_story"
-      },
-      "collectable": [
-        "threads"
-      ],
-      "group": "④바이럴",
-      "id": "kkongdon_story",
-      "last_saved_at": "2026-09-06",
-      "limit": 5,
-      "match_keys": {
-        "threads": [
-          "kkongdon_story"
-        ]
-      },
-      "memo": "",
-      "name": "꽁돈",
-      "purpose": "형식학습",
-      "saved_count": 21,
-      "sources": [
-        "seed",
-        "scrap_sns",
-        "creator_profile"
-      ],
-      "status": "active",
-      "unverified": []
-    },
-    {
-      "channels": {
-        "linkedin": "steve0530",
-        "threads": "@kook0526"
-      },
-      "collectable": [
-        "linkedin",
-        "threads"
-      ],
-      "group": "②B2B",
-      "id": "kook0526",
-      "last_saved_at": "2026-09-06",
-      "limit": 5,
-      "match_keys": {
-        "linkedin": [
-          "ACoAAEYsARgBdQazrHf4u7lcZ1nlSjTNE7YbpOs",
-          "steve0530"
-        ],
-        "threads": [
-          "kook0526"
-        ]
-      },
-      "memo": "멀티채널 - §4는 링크드인만 적었으나 쓰레드에도 있다. LinkedIn 주소는 불투명 ID다",
-      "name": "한성국",
-      "purpose": "선점판정",
-      "saved_count": 36,
-      "sources": [
-        "seed",
-        "scrap_sns"
-      ],
-      "status": "active",
-      "unverified": []
-    },
-    {
-      "channels": {
-        "youtube": "@LennysPodcast"
-      },
-      "collectable": [
-        "youtube"
-      ],
-      "group": "①해외원천",
-      "id": "lennys_podcast",
-      "last_saved_at": "2026-09-05",
-      "limit": 5,
-      "match_keys": {
-        "youtube": [
-          "UC6t1O76G0jYXOAoYCm153dA"
-        ]
-      },
-      "memo": "",
-      "name": "Lenny's Podcast",
-      "purpose": "선점소재",
-      "saved_count": 5,
-      "sources": [
-        "seed",
-        "scrap_sns"
-      ],
-      "status": "active",
-      "unverified": []
-    },
-    {
-      "channels": {
-        "threads": "@marketer.ai.seulki"
-      },
-      "collectable": [
-        "threads"
-      ],
-      "group": "④바이럴",
-      "id": "marketer_ai_seulki",
-      "last_saved_at": "2026-09-06",
-      "limit": 5,
-      "match_keys": {
-        "threads": [
-          "marketer.ai.seulki"
-        ]
-      },
-      "memo": "",
-      "name": "강슬기",
-      "purpose": "형식학습",
-      "saved_count": 14,
-      "sources": [
-        "seed",
-        "scrap_sns",
-        "creator_profile"
-      ],
-      "status": "active",
-      "unverified": []
-    },
-    {
-      "channels": {
-        "youtube": "@matthew_berman"
-      },
-      "collectable": [
-        "youtube"
-      ],
-      "group": "①해외원천",
-      "id": "matthew_berman",
-      "last_saved_at": "2026-09-05",
-      "limit": 5,
-      "match_keys": {
-        "youtube": [
-          "UCawZsQWqfGSbCI5yjkdVkTA"
-        ]
-      },
-      "memo": "",
-      "name": "Matthew Berman",
-      "purpose": "선점소재",
-      "saved_count": 5,
-      "sources": [
-        "seed",
-        "scrap_sns"
-      ],
-      "status": "active",
-      "unverified": []
-    },
-    {
-      "channels": {
-        "linkedin": "minjungkimcoco"
-      },
-      "collectable": [
-        "linkedin"
-      ],
-      "group": "②B2B",
-      "id": "minjung_kim",
-      "last_saved_at": "2026-08-24",
-      "limit": 5,
-      "match_keys": {
-        "linkedin": [
-          "ACoAADk-HPIB9Dfu21FvR7IWiubg2RoPiyFq_PY",
-          "minjungkimcoco"
-        ]
-      },
-      "memo": "LinkedIn 주소가 vanity slug 가 아니라 불투명 ID 다. 형태를 구분하지 않고 그대로 쓴다(SPEC D10)",
-      "name": "김민정",
-      "purpose": "선점판정",
-      "saved_count": 21,
-      "sources": [
-        "seed",
-        "scrap_sns"
-      ],
-      "status": "active",
-      "unverified": []
-    },
-    {
-      "channels": {
-        "youtube": "@pptpro"
-      },
-      "collectable": [
-        "youtube"
-      ],
-      "group": "⑤실무활용",
-      "id": "pptpro",
-      "last_saved_at": "2026-09-06",
-      "limit": 5,
-      "match_keys": {
-        "youtube": [
-          "UCWmuhz6LZ8u7QNYkITlNcpQ"
-        ]
-      },
-      "memo": "",
-      "name": "피프",
-      "purpose": "형식학습",
-      "saved_count": 13,
-      "sources": [
-        "seed",
-        "scrap_sns"
-      ],
-      "status": "active",
-      "unverified": []
-    },
-    {
-      "channels": {
-        "linkedin": "seungpil"
-      },
-      "collectable": [
-        "linkedin"
-      ],
-      "group": "②B2B",
-      "id": "seungpil",
-      "last_saved_at": "2026-08-31",
-      "limit": 5,
-      "match_keys": {
-        "linkedin": [
-          "ACoAAChsCqABHbZtEaJtYtkT7lT7f1V9dwBlyIE",
-          "seungpil"
-        ]
-      },
-      "memo": "",
-      "name": "이승필",
-      "purpose": "선점판정",
-      "saved_count": 25,
-      "sources": [
-        "seed",
-        "scrap_sns",
-        "creator_profile"
-      ],
-      "status": "active",
-      "unverified": []
-    },
-    {
-      "channels": {
-        "threads": "@sudo.gunn.kr",
-        "youtube": "@sudoremove"
-      },
-      "collectable": [
-        "threads",
-        "youtube"
-      ],
-      "group": "7월실측복원",
-      "id": "sudoremove",
-      "last_saved_at": "2026-08-20",
-      "limit": 5,
-      "match_keys": {
-        "threads": [
-          "sudo.gunn.kr"
-        ],
-        "youtube": [
-          "UCdwVtI_TclbVf7QRC_hvc_Q"
-        ]
-      },
-      "memo": "",
-      "name": "sudoremove",
-      "purpose": "선점소재",
-      "saved_count": 7,
-      "sources": [
-        "seed",
-        "scrap_sns"
-      ],
-      "status": "off",
-      "unverified": []
-    },
-    {
-      "channels": {},
-      "collectable": [],
-      "group": "7월실측복원",
-      "id": "themodellers",
-      "last_saved_at": "2026-06-28",
-      "limit": 5,
-      "match_keys": {
-        "youtube": [
-          "UCeXQhw-igqnmZLj-2CLwcjQ"
-        ]
-      },
-      "memo": "2026-09-06 제외. 누적 9건이나 최근 저장이 2026-06-28로 2개월 이상 오래됐다. 수집 데이터에 9건이 남아 있어 excluded 로 명시하지 않으면 동기화마다 후보로 되살아난다",
-      "name": "themodellers",
-      "purpose": "형식학습",
-      "saved_count": 9,
-      "sources": [
-        "seed",
-        "scrap_sns"
-      ],
-      "status": "excluded",
-      "unverified": [
-        "youtube"
-      ]
-    },
-    {
-      "channels": {
-        "youtube": "@TwoMinutePapers"
-      },
-      "collectable": [
-        "youtube"
-      ],
-      "group": "①해외원천",
-      "id": "two_minute_papers",
-      "last_saved_at": "2026-09-03",
-      "limit": 5,
-      "match_keys": {
-        "youtube": [
-          "UCbfYPyITQ-7l4upoX8nvctg"
-        ]
-      },
-      "memo": "",
-      "name": "Two Minute Papers",
-      "purpose": "선점소재",
-      "saved_count": 5,
-      "sources": [
-        "seed",
-        "scrap_sns"
-      ],
-      "status": "active",
-      "unverified": []
-    },
-    {
-      "channels": {
-        "youtube": "@wooseokjin"
-      },
-      "collectable": [
-        "youtube"
-      ],
-      "group": "⑤실무활용",
-      "id": "wooseokjin",
-      "last_saved_at": "2026-09-05",
-      "limit": 5,
-      "match_keys": {
-        "youtube": [
-          "UCMkQZ05GUz-f2sVo-Wryf3A"
-        ]
-      },
-      "memo": "",
-      "name": "우석지니",
-      "purpose": "형식학습",
-      "saved_count": 11,
-      "sources": [
-        "seed",
-        "scrap_sns"
-      ],
-      "status": "active",
-      "unverified": []
-    },
-    {
-      "channels": {
-        "youtube": "@yong_aiclass"
-      },
-      "collectable": [
-        "youtube"
-      ],
-      "group": "7월실측복원",
-      "id": "yong_aiclass",
-      "last_saved_at": "2026-08-27",
-      "limit": 5,
-      "match_keys": {
-        "youtube": [
-          "UCd07iiOqIt0RKgB1DleqChA"
-        ]
-      },
-      "memo": "",
-      "name": "김용성",
-      "purpose": "형식학습",
-      "saved_count": 12,
-      "sources": [
-        "seed",
-        "scrap_sns"
-      ],
-      "status": "off",
-      "unverified": []
-    },
-    {
-      "channels": {
-        "youtube": "@yunjadong"
-      },
-      "collectable": [
-        "youtube"
-      ],
-      "group": "④바이럴",
-      "id": "yunjadong",
-      "last_saved_at": "2026-06-03",
-      "limit": 5,
-      "match_keys": {
-        "youtube": [
-          "UCYg51KBo-UcA4QILcYl5LEw"
-        ]
-      },
-      "memo": "",
-      "name": "윤자동",
-      "purpose": "형식학습",
-      "saved_count": 3,
-      "sources": [
-        "seed",
-        "scrap_sns",
-        "creator_profile"
-      ],
-      "status": "off",
-      "unverified": []
-    }
-  ]
+    "accounts": [
+        {
+            "channels": {
+                "youtube": "@a16z"
+            },
+            "collectable": [
+                "youtube"
+            ],
+            "group": "①해외원천",
+            "id": "a16z",
+            "last_saved_at": "2026-09-05",
+            "limit": 5,
+            "match_keys": {
+                "youtube": [
+                    "UC9cn0TuPq4dnbTY-CBsm8XA"
+                ]
+            },
+            "memo": "",
+            "name": "a16z",
+            "purpose": "선점소재",
+            "saved_count": 5,
+            "sources": [
+                "seed",
+                "scrap_sns"
+            ],
+            "status": "active",
+            "unverified": []
+        },
+        {
+            "channels": {
+                "linkedin": "uxjosh",
+                "threads": "@joshproductletter",
+                "youtube": "@builderjoshkim"
+            },
+            "collectable": [
+                "linkedin",
+                "threads",
+                "youtube"
+            ],
+            "group": "③B2C",
+            "id": "builderjosh",
+            "last_saved_at": "2026-09-08",
+            "limit": 5,
+            "match_keys": {
+                "linkedin": [
+                    "ACoAAAfst4QBZ_TBpSZb5m5EitKHc3H5PhUbe5E",
+                    "uxjosh"
+                ],
+                "threads": [
+                    "joshproductletter"
+                ],
+                "youtube": [
+                    "UCxj3eVTAv9KLdrowXcuCFDQ"
+                ]
+            },
+            "memo": "",
+            "name": "빌더 조쉬",
+            "purpose": "형식학습",
+            "saved_count": 40,
+            "sources": [
+                "seed",
+                "scrap_sns"
+            ],
+            "status": "active",
+            "unverified": []
+        },
+        {
+            "channels": {
+                "youtube": "@chester_roh"
+            },
+            "collectable": [
+                "youtube"
+            ],
+            "group": "7월실측복원",
+            "id": "chester_roh",
+            "last_saved_at": "2026-08-24",
+            "limit": 5,
+            "match_keys": {
+                "youtube": [
+                    "UCz-BiVywYdO6iXhjXkw_Kgw"
+                ]
+            },
+            "memo": "",
+            "name": "노정석",
+            "purpose": "선점소재",
+            "saved_count": 10,
+            "sources": [
+                "seed",
+                "scrap_sns"
+            ],
+            "status": "off",
+            "unverified": []
+        },
+        {
+            "channels": {
+                "threads": "@choi.openai"
+            },
+            "collectable": [
+                "threads"
+            ],
+            "group": "④바이럴",
+            "id": "choi_openai",
+            "last_saved_at": "2026-09-08",
+            "limit": 5,
+            "match_keys": {
+                "threads": [
+                    "choi.openai"
+                ]
+            },
+            "memo": "",
+            "name": "CHOI",
+            "purpose": "형식학습",
+            "saved_count": 45,
+            "sources": [
+                "seed",
+                "scrap_sns"
+            ],
+            "status": "active",
+            "unverified": []
+        },
+        {
+            "channels": {
+                "youtube": "@citizendev9c"
+            },
+            "collectable": [
+                "youtube"
+            ],
+            "group": "⑤실무활용",
+            "id": "citizendev9c",
+            "last_saved_at": "2026-09-05",
+            "limit": 5,
+            "match_keys": {
+                "youtube": [
+                    "UCDLlMjELbrJdETmSiAB68AA"
+                ]
+            },
+            "memo": "",
+            "name": "시민개발자 구씨",
+            "purpose": "형식학습",
+            "saved_count": 11,
+            "sources": [
+                "seed",
+                "scrap_sns"
+            ],
+            "status": "off",
+            "unverified": []
+        },
+        {
+            "channels": {
+                "youtube": "@editorp89"
+            },
+            "collectable": [
+                "youtube"
+            ],
+            "group": "7월실측복원",
+            "id": "editorp89",
+            "last_saved_at": "2026-08-12",
+            "limit": 5,
+            "match_keys": {
+                "youtube": [
+                    "UC4PwAtNhPsuBYdavDJb4F0g"
+                ]
+            },
+            "memo": "",
+            "name": "편집자P",
+            "purpose": "형식학습",
+            "saved_count": 13,
+            "sources": [
+                "seed",
+                "scrap_sns"
+            ],
+            "status": "off",
+            "unverified": []
+        },
+        {
+            "channels": {
+                "youtube": "@Fireship"
+            },
+            "collectable": [
+                "youtube"
+            ],
+            "group": "①해외원천",
+            "id": "fireship",
+            "last_saved_at": "2026-09-08",
+            "limit": 5,
+            "match_keys": {
+                "youtube": [
+                    "UCsBjURrPoezykLs9EqgamOA"
+                ]
+            },
+            "memo": "",
+            "name": "Fireship",
+            "purpose": "선점소재",
+            "saved_count": 6,
+            "sources": [
+                "seed",
+                "scrap_sns"
+            ],
+            "status": "active",
+            "unverified": []
+        },
+        {
+            "channels": {
+                "threads": "@gptaku_ai"
+            },
+            "collectable": [
+                "threads"
+            ],
+            "group": "④바이럴",
+            "id": "gptaku_ai",
+            "last_saved_at": "2026-09-08",
+            "limit": 5,
+            "match_keys": {
+                "threads": [
+                    "gptaku_ai"
+                ]
+            },
+            "memo": "",
+            "name": "지피타쿠",
+            "purpose": "형식학습",
+            "saved_count": 29,
+            "sources": [
+                "seed",
+                "scrap_sns"
+            ],
+            "status": "active",
+            "unverified": []
+        },
+        {
+            "channels": {
+                "youtube": "@헤이디"
+            },
+            "collectable": [
+                "youtube"
+            ],
+            "group": "⑤실무활용",
+            "id": "heydi",
+            "last_saved_at": "2026-09-05",
+            "limit": 5,
+            "match_keys": {
+                "youtube": [
+                    "UCWt2bPyw2ZNweIxpSnB36Ew"
+                ]
+            },
+            "memo": "",
+            "name": "헤이디",
+            "purpose": "형식학습",
+            "saved_count": 12,
+            "sources": [
+                "seed",
+                "scrap_sns",
+                "creator_profile"
+            ],
+            "status": "active",
+            "unverified": []
+        },
+        {
+            "channels": {
+                "youtube": "@jangpm"
+            },
+            "collectable": [
+                "youtube"
+            ],
+            "group": "③B2C",
+            "id": "jangpm",
+            "last_saved_at": "2026-08-31",
+            "limit": 5,
+            "match_keys": {
+                "youtube": [
+                    "UCSkpTOEl_zW6b4Y7M_Prefg"
+                ]
+            },
+            "memo": "",
+            "name": "일잘러 장피엠",
+            "purpose": "형식학습",
+            "saved_count": 5,
+            "sources": [
+                "seed",
+                "scrap_sns"
+            ],
+            "status": "active",
+            "unverified": []
+        },
+        {
+            "channels": {
+                "youtube": "@jayychoii"
+            },
+            "collectable": [
+                "youtube"
+            ],
+            "group": "⑤실무활용",
+            "id": "jayychoii",
+            "last_saved_at": "2026-09-06",
+            "limit": 5,
+            "match_keys": {
+                "youtube": [
+                    "UCFmYIak2sRBXt2M3ep6U3QA"
+                ]
+            },
+            "memo": "",
+            "name": "Jay Choi",
+            "purpose": "형식학습",
+            "saved_count": 13,
+            "sources": [
+                "seed",
+                "scrap_sns"
+            ],
+            "status": "active",
+            "unverified": []
+        },
+        {
+            "channels": {
+                "linkedin": "jiin-jinny-lee-15b4072b8"
+            },
+            "collectable": [
+                "linkedin"
+            ],
+            "group": "③B2C",
+            "id": "jiin_jinny_lee",
+            "last_saved_at": "2026-09-01",
+            "limit": 5,
+            "match_keys": {
+                "linkedin": [
+                    "ACoAAEw8IBcBaoQDt-XJE3mEQljO6gDEp2CfOMI",
+                    "jiin-jinny-lee-15b4072b8"
+                ]
+            },
+            "memo": "",
+            "name": "이지인",
+            "purpose": "형식학습",
+            "saved_count": 9,
+            "sources": [
+                "seed",
+                "scrap_sns",
+                "creator_profile"
+            ],
+            "status": "active",
+            "unverified": []
+        },
+        {
+            "channels": {
+                "threads": "@kkongdon_story"
+            },
+            "collectable": [
+                "threads"
+            ],
+            "group": "④바이럴",
+            "id": "kkongdon_story",
+            "last_saved_at": "2026-09-08",
+            "limit": 5,
+            "match_keys": {
+                "threads": [
+                    "kkongdon_story"
+                ]
+            },
+            "memo": "",
+            "name": "꽁돈",
+            "purpose": "형식학습",
+            "saved_count": 24,
+            "sources": [
+                "seed",
+                "scrap_sns",
+                "creator_profile"
+            ],
+            "status": "active",
+            "unverified": []
+        },
+        {
+            "channels": {
+                "linkedin": "steve0530",
+                "threads": "@kook0526"
+            },
+            "collectable": [
+                "linkedin",
+                "threads"
+            ],
+            "group": "②B2B",
+            "id": "kook0526",
+            "last_saved_at": "2026-09-08",
+            "limit": 5,
+            "match_keys": {
+                "linkedin": [
+                    "ACoAAEYsARgBdQazrHf4u7lcZ1nlSjTNE7YbpOs",
+                    "steve0530"
+                ],
+                "threads": [
+                    "kook0526"
+                ]
+            },
+            "memo": "멀티채널 - §4는 링크드인만 적었으나 쓰레드에도 있다. LinkedIn 주소는 불투명 ID다",
+            "name": "한성국",
+            "purpose": "선점판정",
+            "saved_count": 38,
+            "sources": [
+                "seed",
+                "scrap_sns"
+            ],
+            "status": "active",
+            "unverified": []
+        },
+        {
+            "channels": {
+                "youtube": "@LennysPodcast"
+            },
+            "collectable": [
+                "youtube"
+            ],
+            "group": "①해외원천",
+            "id": "lennys_podcast",
+            "last_saved_at": "2026-09-08",
+            "limit": 5,
+            "match_keys": {
+                "youtube": [
+                    "UC6t1O76G0jYXOAoYCm153dA"
+                ]
+            },
+            "memo": "",
+            "name": "Lenny's Podcast",
+            "purpose": "선점소재",
+            "saved_count": 9,
+            "sources": [
+                "seed",
+                "scrap_sns"
+            ],
+            "status": "active",
+            "unverified": []
+        },
+        {
+            "channels": {
+                "threads": "@marketer.ai.seulki"
+            },
+            "collectable": [
+                "threads"
+            ],
+            "group": "④바이럴",
+            "id": "marketer_ai_seulki",
+            "last_saved_at": "2026-09-08",
+            "limit": 5,
+            "match_keys": {
+                "threads": [
+                    "marketer.ai.seulki"
+                ]
+            },
+            "memo": "",
+            "name": "강슬기",
+            "purpose": "형식학습",
+            "saved_count": 17,
+            "sources": [
+                "seed",
+                "scrap_sns",
+                "creator_profile"
+            ],
+            "status": "active",
+            "unverified": []
+        },
+        {
+            "channels": {
+                "youtube": "@matthew_berman"
+            },
+            "collectable": [
+                "youtube"
+            ],
+            "group": "①해외원천",
+            "id": "matthew_berman",
+            "last_saved_at": "2026-09-05",
+            "limit": 5,
+            "match_keys": {
+                "youtube": [
+                    "UCawZsQWqfGSbCI5yjkdVkTA"
+                ]
+            },
+            "memo": "",
+            "name": "Matthew Berman",
+            "purpose": "선점소재",
+            "saved_count": 5,
+            "sources": [
+                "seed",
+                "scrap_sns"
+            ],
+            "status": "active",
+            "unverified": []
+        },
+        {
+            "channels": {
+                "linkedin": "minjungkimcoco"
+            },
+            "collectable": [
+                "linkedin"
+            ],
+            "group": "②B2B",
+            "id": "minjung_kim",
+            "last_saved_at": "2026-08-24",
+            "limit": 5,
+            "match_keys": {
+                "linkedin": [
+                    "ACoAADk-HPIB9Dfu21FvR7IWiubg2RoPiyFq_PY",
+                    "minjungkimcoco"
+                ]
+            },
+            "memo": "LinkedIn 주소가 vanity slug 가 아니라 불투명 ID 다. 형태를 구분하지 않고 그대로 쓴다(SPEC D10)",
+            "name": "김민정",
+            "purpose": "선점판정",
+            "saved_count": 21,
+            "sources": [
+                "seed",
+                "scrap_sns"
+            ],
+            "status": "active",
+            "unverified": []
+        },
+        {
+            "channels": {
+                "youtube": "@pptpro"
+            },
+            "collectable": [
+                "youtube"
+            ],
+            "group": "⑤실무활용",
+            "id": "pptpro",
+            "last_saved_at": "2026-09-08",
+            "limit": 5,
+            "match_keys": {
+                "youtube": [
+                    "UCWmuhz6LZ8u7QNYkITlNcpQ"
+                ]
+            },
+            "memo": "",
+            "name": "피프",
+            "purpose": "형식학습",
+            "saved_count": 14,
+            "sources": [
+                "seed",
+                "scrap_sns"
+            ],
+            "status": "active",
+            "unverified": []
+        },
+        {
+            "channels": {
+                "linkedin": "seungpil"
+            },
+            "collectable": [
+                "linkedin"
+            ],
+            "group": "②B2B",
+            "id": "seungpil",
+            "last_saved_at": "2026-08-31",
+            "limit": 5,
+            "match_keys": {
+                "linkedin": [
+                    "ACoAAChsCqABHbZtEaJtYtkT7lT7f1V9dwBlyIE",
+                    "seungpil"
+                ]
+            },
+            "memo": "",
+            "name": "이승필",
+            "purpose": "선점판정",
+            "saved_count": 25,
+            "sources": [
+                "seed",
+                "scrap_sns",
+                "creator_profile"
+            ],
+            "status": "active",
+            "unverified": []
+        },
+        {
+            "channels": {
+                "threads": "@sudo.gunn.kr",
+                "youtube": "@sudoremove"
+            },
+            "collectable": [
+                "threads",
+                "youtube"
+            ],
+            "group": "7월실측복원",
+            "id": "sudoremove",
+            "last_saved_at": "2026-08-20",
+            "limit": 5,
+            "match_keys": {
+                "threads": [
+                    "sudo.gunn.kr"
+                ],
+                "youtube": [
+                    "UCdwVtI_TclbVf7QRC_hvc_Q"
+                ]
+            },
+            "memo": "",
+            "name": "sudoremove",
+            "purpose": "선점소재",
+            "saved_count": 7,
+            "sources": [
+                "seed",
+                "scrap_sns"
+            ],
+            "status": "off",
+            "unverified": []
+        },
+        {
+            "channels": {},
+            "collectable": [],
+            "group": "7월실측복원",
+            "id": "themodellers",
+            "last_saved_at": "2026-06-28",
+            "limit": 5,
+            "match_keys": {
+                "youtube": [
+                    "UCeXQhw-igqnmZLj-2CLwcjQ"
+                ]
+            },
+            "memo": "2026-09-06 제외. 누적 9건이나 최근 저장이 2026-06-28로 2개월 이상 오래됐다. 수집 데이터에 9건이 남아 있어 excluded 로 명시하지 않으면 동기화마다 후보로 되살아난다",
+            "name": "themodellers",
+            "purpose": "형식학습",
+            "saved_count": 9,
+            "sources": [
+                "seed",
+                "scrap_sns"
+            ],
+            "status": "excluded",
+            "unverified": [
+                "youtube"
+            ]
+        },
+        {
+            "channels": {
+                "youtube": "@TwoMinutePapers"
+            },
+            "collectable": [
+                "youtube"
+            ],
+            "group": "①해외원천",
+            "id": "two_minute_papers",
+            "last_saved_at": "2026-09-08",
+            "limit": 5,
+            "match_keys": {
+                "youtube": [
+                    "UCbfYPyITQ-7l4upoX8nvctg"
+                ]
+            },
+            "memo": "",
+            "name": "Two Minute Papers",
+            "purpose": "선점소재",
+            "saved_count": 6,
+            "sources": [
+                "seed",
+                "scrap_sns"
+            ],
+            "status": "active",
+            "unverified": []
+        },
+        {
+            "channels": {
+                "youtube": "@wooseokjin"
+            },
+            "collectable": [
+                "youtube"
+            ],
+            "group": "⑤실무활용",
+            "id": "wooseokjin",
+            "last_saved_at": "2026-09-05",
+            "limit": 5,
+            "match_keys": {
+                "youtube": [
+                    "UCMkQZ05GUz-f2sVo-Wryf3A"
+                ]
+            },
+            "memo": "",
+            "name": "우석지니",
+            "purpose": "형식학습",
+            "saved_count": 11,
+            "sources": [
+                "seed",
+                "scrap_sns"
+            ],
+            "status": "active",
+            "unverified": []
+        },
+        {
+            "channels": {
+                "youtube": "@yong_aiclass"
+            },
+            "collectable": [
+                "youtube"
+            ],
+            "group": "7월실측복원",
+            "id": "yong_aiclass",
+            "last_saved_at": "2026-09-03",
+            "limit": 5,
+            "match_keys": {
+                "youtube": [
+                    "UCd07iiOqIt0RKgB1DleqChA"
+                ]
+            },
+            "memo": "",
+            "name": "김용성",
+            "purpose": "형식학습",
+            "saved_count": 13,
+            "sources": [
+                "seed",
+                "scrap_sns"
+            ],
+            "status": "off",
+            "unverified": []
+        },
+        {
+            "channels": {
+                "youtube": "@yunjadong"
+            },
+            "collectable": [
+                "youtube"
+            ],
+            "group": "④바이럴",
+            "id": "yunjadong",
+            "last_saved_at": "2026-09-07",
+            "limit": 5,
+            "match_keys": {
+                "youtube": [
+                    "UCYg51KBo-UcA4QILcYl5LEw"
+                ]
+            },
+            "memo": "",
+            "name": "윤자동",
+            "purpose": "형식학습",
+            "saved_count": 4,
+            "sources": [
+                "seed",
+                "scrap_sns",
+                "creator_profile"
+            ],
+            "status": "off",
+            "unverified": []
+        }
+    ]
 }
