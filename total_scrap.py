@@ -465,9 +465,11 @@ def build_phase_commands(mode='update'):
                 # `--only saved`: 내 글은 MyPosts 슬롯 뒤에 붙여 직렬로 돈다(아래).
                 # 계획: _docs/20260825_01, _docs/20260827_04 (3.5 T5-b)
                 "LinkedIn": "python -u linkedin_metric_single.py --only saved",
-                # 내 게시물 노출수는 로그인 recent-activity 에서만 나온다.
-                # producer 가 아니라 여기 있는 이유는 producer 의 linkedin_scrap.py 도
-                # 로그인 세션을 쓰기 때문이다 - 같은 계정 세션 2개가 동시에 붙는 것을 피한다.
+                # ⚠️ 2026-09-09 정정: 내 게시물 수집은 Buffer 공식 API 로 바뀌어
+                #    **로그인 세션을 쓰지 않는다.** 옛 주석은 "로그인 recent-activity 라
+                #    producer 의 linkedin_scrap.py 와 세션이 겹친다"였는데 그 전제가 사라졌다.
+                #    이 슬롯이 consumer 에 남아 있는 이유는 이제 세션 충돌이 아니라
+                #    아래 `&&` 직렬화 하나뿐이다. 계획: _docs/20260909_02 (T1, T6, §4.5)
                 #
                 # 🔴 `&&` 로 지표 갱신을 뒤에 붙여 **직렬화**한다.
                 #    두 프로세스가 같은 linkedin_own_full 파일을 read-modify-write 하는데,
@@ -496,13 +498,18 @@ def build_phase_commands(mode='update'):
             #
             # 🔴 **별도 wave 인 이유**: `linkedin_scrap_benchmark.py` 가 부르는
             #    `linkedin_scrap_by_user.py` 는 로그인 세션(storage_state)을 쓴다.
-            #    consumer 의 MyPosts 도 같은 세션을 쓰므로 그 wave 에 넣으면 같은
-            #    계정 세션 2개가 동시에 붙는다. 기존 슬롯에 `&&` 로 붙이는 것도
+            #    producer 의 `linkedin_scrap.py` 도 같은 세션을 쓰므로 그 wave 에
+            #    넣으면 같은 계정 세션 2개가 동시에 붙는다. 기존 슬롯에 `&&` 로 붙이는 것도
             #    아니다 - 앞이 실패하면 뒤가 안 돌아, LinkedIn 로그인 만료가
             #    관계없는 Threads 벤치마킹(비로그인)까지 멈춘다.
             #    이 wave 안에서는 셋이 서로 다른 자원(비로그인 HTTP / 로그인 세션 /
             #    YouTube API)을 써서 병렬이 안전하다.
-            # 계획: _docs/20260908_01 (W2)
+            #
+            #    ⚠️ 2026-09-09 정정: 옛 주석은 "consumer 의 MyPosts 도 같은 세션을
+            #       쓴다"였다. MyPosts 가 Buffer API 로 바뀌어 로그인 세션을 쓰지
+            #       않으므로 그 근거는 사라졌고, producer 쪽 충돌만 남는다.
+            #       3-wave 유지 결론은 그대로다. 계획: _docs/20260909_02 (§4.5)
+            # 계획: _docs/20260908_01 (W2), _docs/20260909_02 (§4.5)
             "benchmark",
             {
                 "BenchThreads": "python -u threads_scrap_benchmark.py",

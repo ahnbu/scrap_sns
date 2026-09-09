@@ -1,14 +1,20 @@
-"""내 LinkedIn 게시물 성과 수집 - 로그인 recent-activity 경로.
+"""내 LinkedIn 게시물 성과 수집 - Buffer 공식 API 경로.
 
 계획: _docs/20260826_03_내-게시물-성과지표-통합-수집-계획.md (3.4)
+     _docs/20260909_02_내글수집기-Buffer전환대응과-Threads댓글수-부풀림-수행계획.md (T1)
 
 수집기 자체는 `D:/vibe-coding/sns_insight_update` 에 있고 이 스크립트는 그것을
 호출해 산출물만 받는다. 그 레포는 수정하지 않는다.
 
-⚠️ 이 경로만 노출수(impressions)를 준다. 비로그인 경로(`linkedin_metric_single.py`)는
-   반환값에 노출수가 아예 없다(계획 1.1 #5 실측). 반대로 로그인 카드는 반응수를
-   상위 몇 건만 렌더링한다(#8: reactions 5/36). 그래서 두 경로가 서로 다른 칸을
-   채우며, 이 스크립트는 `view_count` 만 쓰고 반응·댓글은 건드리지 않는다.
+⚠️ 2026-09-05 에 그 레포가 Playwright 로그인 수집을 Buffer 공식 API 로 바꾸고
+   옛 수집기를 `_archive/` 로 옮겼다. 여기가 옛 모듈명을 계속 불러 9/6 부터
+   `ModuleNotFoundError` 로 4회 연속 죽었다. 그래서 `buffer_cli` 로 옮겼다.
+
+⚠️ 노출수는 Buffer 가 전건 준다(실측 37/37). 옛 로그인 카드는 반응수를 상위 몇 건만
+   렌더링해서(5/36) 반응·댓글을 비로그인 경로에 맡겼는데, Buffer 는 셋 다 전건 준다.
+   다만 이번 복구는 **원래대로 되돌리는 것**이라 두 경로 분담을 그대로 둔다 -
+   이 스크립트는 여전히 `view_count` 만 쓰고 반응·댓글은 건드리지 않는다.
+   분담 정리는 별건이다(계획 §4.2).
 
 ⚠️ 출력은 저장글과 **다른 파일**이다. 같은 파일을 쓰면 consumer 웨이브에서
    `linkedin_metric_single.py` 와 동시에 read-modify-write 해 경합이 난다(계획 3.4.1).
@@ -48,9 +54,6 @@ INSIGHT_REPO = r"D:\vibe-coding\sns_insight_update"
 INSIGHT_SRC = os.path.join(INSIGHT_REPO, "src")
 
 OUTPUT_DIR = os.path.join(REPO_ROOT, "output_linkedin_own", "python")
-
-#: 전수 수집 기준. 내 글은 36건 규모라 39초면 끝난다(계획 1.1 #7·#9).
-DEFAULT_SCROLLS = 20
 
 #: 직전 파일 대비 이 비율 미만으로 줄면 저장을 거부한다.
 #: sns_insight_update 의 2026-07-15·07-24 데이터 소실 사고에서 가져온 가드다.
@@ -102,8 +105,11 @@ def check_regression(previous_count: int, incoming_count: int) -> None:
         )
 
 
-def collect(scrolls: int = DEFAULT_SCROLLS) -> list:
-    """insight 수집기를 호출한다. 인증 만료는 레포 표준 신호로 바꿔 던진다."""
+def collect() -> list:
+    """insight 수집기를 호출한다. 인증 실패는 레포 표준 신호로 바꿔 던진다.
+
+    Buffer 경로라 브라우저를 띄우지 않는다 - 옛 `scrolls`·`headed` 인자는 없다.
+    """
     if not os.path.isdir(INSIGHT_SRC):
         print(
             f"❌ [MyPosts] 수집기 경로를 찾을 수 없습니다: {INSIGHT_SRC}",
@@ -114,18 +120,18 @@ def collect(scrolls: int = DEFAULT_SCROLLS) -> list:
     if INSIGHT_SRC not in sys.path:
         sys.path.insert(0, INSIGHT_SRC)
 
-    from sns_insight_update.collectors.linkedin import (  # noqa: E402
-        AuthRequired,
+    from sns_insight_update.collectors.buffer_cli import (  # noqa: E402
+        BufferAuthRequired,
         collect_linkedin_posts,
     )
 
     try:
-        # headed=False 고정. 창이 뜨면 사용자 포커스를 뺏는다.
-        return collect_linkedin_posts(limit=None, scrolls=scrolls, headed=False)
-    except AuthRequired as exc:
+        return collect_linkedin_posts(limit=None)
+    except BufferAuthRequired as exc:
+        # exc 메시지에는 키 이름만 담기고 값은 담기지 않는다(buffer_cli 규약).
         exit_auth_required(
             "linkedin",
-            reason="login_required",
+            reason="buffer_api_key_required",
             auth_file=str(exc) or None,
             extra={"scope": "my_posts"},
         )
@@ -136,12 +142,11 @@ def main(argv=None) -> int:
     import argparse
 
     parser = argparse.ArgumentParser(description="내 LinkedIn 게시물 성과 수집")
-    parser.add_argument("--scrolls", type=int, default=DEFAULT_SCROLLS)
-    args = parser.parse_args(argv)
+    parser.parse_args(argv)
 
-    print("🙋 [MyPosts] 내 게시물 성과 수집 시작 (로그인 recent-activity)", flush=True)
+    print("🙋 [MyPosts] 내 게시물 성과 수집 시작 (Buffer API)", flush=True)
 
-    records = collect(scrolls=args.scrolls)
+    records = collect()
     incoming = to_standard_posts([r.to_dict() for r in records])
     print(f"   📥 [MyPosts] 수집 {len(incoming)}건", flush=True)
 
@@ -172,7 +177,7 @@ def main(argv=None) -> int:
         "metadata": {
             "updated_at": datetime.now().isoformat(),
             "total_count": len(merged),
-            "source": "sns_insight_update/collectors/linkedin",
+            "source": "sns_insight_update/collectors/buffer_cli",
         },
         "posts": sorted(merged, key=lambda p: p.get("sequence_id", 0)),
     })

@@ -213,19 +213,72 @@ def to_standard_posts(records, continuations_by_id=None) -> list[dict]:
     return out
 
 
+#: 🔴 수집 경로가 더 이상 채우지 못하는 필드. 비어 와도 기존 값을 지킨다.
+#:
+#: 2026-09-05 에 수집기가 Buffer API 로 바뀌면서 두 가지를 잃었다.
+#:   - 자기 답글: `get_thread_replies` 가 MCP 러너와 함께 창고로 갔다. Buffer 의
+#:     `metadata.thread.text` 는 Buffer 로 **발행한** 글에만 채워진다(실측 34건 중 2건).
+#:   - 미디어 URL: Buffer 레코드의 `raw` 에 `thread.media_url` 이 없다(실측 27건 보유).
+#:
+#: 계획: _docs/20260909_02 (T5, §4.3)
+BLANK_GUARDED_FIELDS = ("is_merged_thread", "media")
+
+
+def _is_blank(value) -> bool:
+    """빈 문자열·빈 리스트·None·False 를 「비었다」로 본다.
+
+    `is_merged_thread` 는 bool 이라 새 경로가 항상 False 로 온다. False 를 빈 값으로
+    보지 않으면 기존 True 가 지워진다.
+    """
+    if value is None:
+        return True
+    if isinstance(value, bool):
+        return value is False
+    if isinstance(value, (str, list, tuple, dict)):
+        return len(value) == 0
+    return False
+
+
+def keep_existing_body(existing: dict, incoming_text) -> bool:
+    """기존 본문을 지켜야 하는가.
+
+    🔴 `full_text` 는 **비어 오지 않는다.** 새 경로가 원글만 주므로 「짧게」 온다 -
+       빈 값 가드로는 못 막는다. 그래서 길이로 판정한다.
+
+    조건 둘을 모두 만족할 때만 지킨다.
+      - 기존이 합본이다 (`is_merged_thread`) - 합본이 아니면 지킬 이유가 없다
+      - 새 본문이 기존보다 짧다 - 길거나 같으면 새것이 더 온전하므로 그대로 받는다
+
+    이 가드가 없으면 22건에서 16,480자 → 9,352자로 **43% 가 사라진다**(실측
+    2026-09-09). 원글을 5분 안에 수정해 더 짧아진 경우는 옛 본문이 남지만,
+    합본 손실보다 작은 대가다.
+    """
+    if not existing.get("is_merged_thread"):
+        return False
+    return len(str(incoming_text or "")) < len(str(existing.get("full_text") or ""))
+
+
 def merge_own_post(existing: dict | None, incoming: dict) -> dict:
     """기존 레코드 위에 새 수집 결과를 얹는다.
 
-    지표는 매 실행마다 Graph API 가 전부 새로 주므로 원칙적으로 incoming 이 이긴다.
+    지표는 매 실행마다 수집기가 전부 새로 주므로 원칙적으로 incoming 이 이긴다.
     다만 부분 실패로 일부 지표가 None 으로 오는 경우가 있어, **None 이 기존 값을
     덮지는 않게** 한다. 있던 성과 수치가 조용히 사라지는 쪽이 더 나쁘다.
+
+    본문·합본표시·미디어는 한 겹 더 지킨다 - 새 경로가 채우지 못하는 것이라
+    그대로 덮으면 과거 수집분이 사라진다.
     """
     if not existing:
         return dict(incoming)
 
     merged = dict(existing)
+    protect_body = keep_existing_body(existing, incoming.get("full_text"))
     for key, value in incoming.items():
         if key == "sequence_id":
+            continue
+        if key == "full_text" and protect_body:
+            continue
+        if key in BLANK_GUARDED_FIELDS and _is_blank(value):
             continue
         if value is None and merged.get(key) is not None:
             continue

@@ -38,9 +38,17 @@ BROWSER_USER_AGENT = (
 BROWSER_LOCALE = "ko-KR"
 BROWSER_VIEWPORT = {"width": 1280, "height": 1000}
 
-POST_URL_TEMPLATE = "https://www.linkedin.com/feed/update/urn:li:activity:{activity_id}/"
+POST_URL_TEMPLATE = "https://www.linkedin.com/feed/update/urn:li:{urn_type}:{activity_id}/"
 
-_ACTIVITY_ID_RE = re.compile(r"activity:(\d+)")
+#: LinkedIn 글 URL 이 쓰는 URN 종류. 저장글은 `activity`, 내 글은 Buffer 전환 이후
+#: `share`·`ugcPost` 로 온다(실측 2026-09-09: 37건 전부 activity 아님).
+#: `activity` 만 받으면 내 글이 지표 대상에서 조용히 전건 빠진다 - 오류도 안 난다.
+#: 계획: _docs/20260909_02 (T4, §2.2)
+_ACTIVITY_ID_RE = re.compile(r"(activity|share|ugcPost):(\d+)")
+
+#: URN 종류를 잃지 않기 위해 activity 가 아닌 것만 접두사를 붙여 되돌린다.
+#: activity 는 접두사 없이 숫자만 - 기존 실패 이력 키와 테스트를 그대로 둔다.
+_DEFAULT_URN_TYPE = "activity"
 
 # 페이지에서 지표 속성을 읽는 스크립트.
 # 반응과 댓글이 서로 다른 요소에 붙어 있으므로 각각 조회한다.
@@ -64,16 +72,29 @@ _EXTRACT_JS = """() => {
 
 
 def extract_activity_id(url: str) -> str | None:
-    """게시글 URL에서 activity id를 뽑는다."""
+    """게시글 URL에서 글 식별자를 뽑는다.
+
+    `activity` 는 숫자만 돌려준다(`"7411204617524391938"`). 그 밖의 URN 종류는
+    종류를 잃으면 permalink 를 되만들 수 없으므로 접두사를 붙여 돌려준다
+    (`"share:7501590947680591872"`). `build_post_url()` 이 짝으로 되돌린다.
+    """
     if not url:
         return None
     match = _ACTIVITY_ID_RE.search(str(url))
-    return match.group(1) if match else None
+    if not match:
+        return None
+    urn_type, post_id = match.group(1), match.group(2)
+    return post_id if urn_type == _DEFAULT_URN_TYPE else f"{urn_type}:{post_id}"
 
 
 def build_post_url(activity_id: str) -> str:
-    """activity id로 공개 permalink를 만든다."""
-    return POST_URL_TEMPLATE.format(activity_id=activity_id)
+    """글 식별자로 공개 permalink를 만든다. `extract_activity_id()` 의 짝이다."""
+    text = str(activity_id or "")
+    urn_type, _, post_id = text.rpartition(":")
+    return POST_URL_TEMPLATE.format(
+        urn_type=urn_type or _DEFAULT_URN_TYPE,
+        activity_id=post_id or text,
+    )
 
 
 def _to_int(value) -> int | None:

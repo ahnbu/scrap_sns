@@ -320,13 +320,13 @@ def _install_fake_collector(monkeypatch, collect_impl):
     pkg.__path__ = []  # type: ignore[attr-defined]
     collectors = types.ModuleType("sns_insight_update.collectors")
     collectors.__path__ = []  # type: ignore[attr-defined]
-    threads = types.ModuleType("sns_insight_update.collectors.threads")
-    threads.ThreadsAuthRequired = _FakeAuthRequired  # type: ignore[attr-defined]
-    threads.collect_threads_posts = collect_impl  # type: ignore[attr-defined]
+    buffer_cli = types.ModuleType("sns_insight_update.collectors.buffer_cli")
+    buffer_cli.BufferAuthRequired = _FakeAuthRequired  # type: ignore[attr-defined]
+    buffer_cli.collect_threads_posts = collect_impl  # type: ignore[attr-defined]
 
     monkeypatch.setitem(sys.modules, "sns_insight_update", pkg)
     monkeypatch.setitem(sys.modules, "sns_insight_update.collectors", collectors)
-    monkeypatch.setitem(sys.modules, "sns_insight_update.collectors.threads", threads)
+    monkeypatch.setitem(sys.modules, "sns_insight_update.collectors.buffer_cli", buffer_cli)
 
 
 def test_auth_failure_emits_threads_platform_signal(monkeypatch, capsys):
@@ -349,7 +349,8 @@ def test_auth_failure_emits_threads_platform_signal(monkeypatch, capsys):
     )
     payload = json.loads(line.split(" ", 1)[1])
     assert payload["platform"] == "threads"
-    assert payload["reason"] == "login_required"
+    # Buffer 전환 이후 인증 실패는 로그인이 아니라 API 키 문제다(_docs/20260909_02 T2).
+    assert payload["reason"] == "buffer_api_key_required"
     assert payload["scope"] == "my_posts"
 
 
@@ -377,3 +378,64 @@ def test_regression_guard_allows_first_run_and_normal_run():
 
     my_threads_scrap.check_regression(0, 32)
     my_threads_scrap.check_regression(32, 31)
+
+
+# --- T5: 기존 합본 보존 (계획 _docs/20260909_02) ----------------------------
+#
+# Buffer 경로는 원글만 준다. 가드가 없으면 새 수집이 짧은 본문으로 기존 합본을
+# 덮어써 22건에서 16,480자 → 9,352자로 43%가 사라진다(2026-09-09 실측).
+
+
+def _merged_existing(body: str = "원글\n\n이어쓴 뒷부분입니다", media=("http://img/1.jpg",)):
+    return {
+        "platform_id": "ABC123",
+        "full_text": body,
+        "is_merged_thread": True,
+        "media": list(media),
+        "like_count": 3,
+    }
+
+
+def _buffer_incoming(body: str = "원글"):
+    """Buffer 가 주는 모습 - 원글만, 미디어 없음, 합본 표시 없음."""
+    return {
+        "platform_id": "ABC123",
+        "full_text": body,
+        "is_merged_thread": False,
+        "media": [],
+        "like_count": 5,
+    }
+
+
+def test_merge_keeps_merged_body_when_incoming_is_shorter():
+    merged = merge_own_post(_merged_existing(), _buffer_incoming())
+
+    assert merged["full_text"] == "원글\n\n이어쓴 뒷부분입니다"
+    assert merged["is_merged_thread"] is True
+    assert merged["media"] == ["http://img/1.jpg"]
+    # 지표는 새것이 이긴다 - 보존 대상이 아니다.
+    assert merged["like_count"] == 5
+
+
+def test_merge_takes_longer_incoming_body():
+    """새 본문이 더 길면 그대로 받는다. 무조건 옛것을 고집하지 않는다."""
+    longer = _buffer_incoming("원글\n\n이어쓴 뒷부분입니다\n\n더 붙은 세 번째")
+    merged = merge_own_post(_merged_existing(), longer)
+
+    assert merged["full_text"] == longer["full_text"]
+
+
+def test_merge_does_not_protect_body_when_existing_is_not_merged():
+    """합본이 아니면 지킬 이유가 없다 - 원글 수정이 반영돼야 한다."""
+    existing = dict(_merged_existing(body="긴 원글 본문입니다"), is_merged_thread=False)
+    merged = merge_own_post(existing, _buffer_incoming("짧게 고침"))
+
+    assert merged["full_text"] == "짧게 고침"
+
+
+def test_merge_still_lets_incoming_fill_empty_existing_media():
+    """보존은 「비어 온 것」만 막는다. 값이 있으면 새것이 이긴다."""
+    existing = dict(_merged_existing(), media=[])
+    incoming = dict(_buffer_incoming(), media=["http://img/2.jpg"])
+
+    assert merge_own_post(existing, incoming)["media"] == ["http://img/2.jpg"]

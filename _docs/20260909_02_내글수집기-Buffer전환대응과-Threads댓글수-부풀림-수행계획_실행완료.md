@@ -10,7 +10,7 @@ ai: claude
 
 - 작성일: 2026-09-09 (KST)
 - 세션 ID: `3e97a45d-e56a-4b50-a34d-01431958a1be`
-- 상태: **착수** — 선행 [[20260909_01_LinkedIn진입점통합과-뷰어표시결함-수행계획_실행완료]]이 커밋 `94a96e9`(2026-09-09 14:29)로 W1~W6 전부 완료·푸쉬됨. 착수 조건 충족
+- 상태: **실행 완료** (2026-09-09) — 선행 [[20260909_01_LinkedIn진입점통합과-뷰어표시결함-수행계획_실행완료]]이 커밋 `94a96e9`(14:29)로 W1~W6 완료·푸쉬된 뒤 착수. 실행 결과는 §7
 - 대상 레포: `D:\vibe-coding\scrap_sns`
 - 연관 외부 레포: `D:\vibe-coding\sns_insight_update` (수정 대상 아님)
 
@@ -123,6 +123,7 @@ W5(감시) 설계 시 **이번 사망 유형을 감시 대상에 넣을지 판�
 | T6 | P1 | [total_scrap.py](../total_scrap.py):480-482 | `&& linkedin_metric_single.py --only own` 유지 여부 결정 (§4.2). **결론: 유지** | 주석만 |
 | T7 | P1 | [utils/my_posts_adapter.py](../utils/my_posts_adapter.py):8-12, [my_posts_scrap.py](../my_posts_scrap.py):8-11 | "이 경로만 노출수를 준다"·"반응수는 상위 몇 건만" 전제가 거짓이 됐다. 주석 정정 | 문서 |
 | T8 | P2 | `utils/my_threads_adapter.py` | 댓글수 타래글 부풀림 정정. **이번 범위 밖 — 백로그**(§4.3 재검토 조건에 종속) | 이번엔 0 |
+| T9 | P0 | 신규 `scripts/verify_own_posts_headless.mjs` | 뷰어 화면 검증 스크립트 신설. 창을 띄우지 않고 단언 4개를 종료코드 0/1로 판정한다. 요건은 §5 8번 | ~120줄 |
 
 ### 3.2 T3 이관 방식 상세
 
@@ -265,9 +266,28 @@ Buffer 반응수가 비로그인 경로와 정확히 일치하므로 없앨 수 
 3-a. 🔴 **합본 보존 확인** — 실행 후 `is_merged_thread == True`인 22건의 `full_text` 총 길이가 **16,480자 이상**이고, `is_merged_thread`가 `False`로 뒤집힌 글이 **0건** (T5 실패 시 9,352자로 떨어진다)
 4. `linkedin_metric_single.py --only own` → 대상 건수 0건이 아님 (0이면 T4 실패)
 5. `merge_results()` → `download_images()` → `validate_local_image_links()` 통과
-6. 최신 `output_total/total_full_YYYYMMDD.json`의 `is_own_post` 건수 = 70건 내외 (140건이면 중복)
-7. 웹 뷰어 상단 총건수와 최신 JSON 게시글 수 일치
-8. `scripts/verify_*.mjs` 계열(창을 띄우지 않는 hidden browser)로 뷰어에서 내 글 검색 → 중복 없음 확인, 캡처 증거 저장
+6. 최신 통합본(`output_total/total_full_*.json` 중 파일명 최신)의 `is_own_post` 건수 = **70건 이상 80건 이하** (140건 근처면 T3 실패로 중복된 것)
+7. ~~웹 뷰어 상단 총건수와 최신 JSON 게시글 수 일치~~ → **전제가 틀려 기준을 바꿨다(2026-09-09 구현 중 확인).**
+
+   상단 라벨은 총계가 아니라 **지금 화면에 걸린 수**다([web_viewer/script.js](../web_viewer/script.js):342-364, `updateTotalPostsLabel(visibleCount)` — 주석이 "지금 화면에 몇 개가 걸렸는지만 말한다"고 밝히고 계획 `20260827_05` T5 를 근거로 든다). 비활성 벤치마킹 계정 글과 숨김 글이 [`isBenchmarkVisible()`](../web_viewer/script.js):2620 에서 빠지므로 파일보다 작은 것이 **정상**이다. 실측 2026-09-09: 파일 2,882 vs 라벨 2,804(차이 78).
+
+   → 바뀐 기준: **뷰어가 실제로 읽는 `/api/posts` 응답 건수 == 최신 통합본 게시글 수.** 「데이터가 다 실렸는가」를 재는 올바른 지점이다. 8번 스크립트의 단언 C 가 이것을 본다.
+
+   ⚠️ 같은 잘못된 전제 위에 선 기존 스크립트 `scripts/verify_viewer_total_count_headless.mjs` 도 지금 실패한다(파일 2,882 vs 라벨 2,804). **이번 변경이 깨뜨린 것이 아니다** — 벤치마킹 가시성 규칙(`20260906_01` D9)과 ALL 정책(`20260909_01` W3 T3-e)이 들어오면서 전제가 낡았다. 이번 범위 밖이라 고치지 않고 남긴다.
+8. **`scripts/verify_own_posts_headless.mjs`를 신설**한다. 이 레포에 내 글 전용 검증 스크립트가 없어 재사용할 대상이 없다(현재 `scripts/verify_*.mjs` 19개 중 own/my 대상 0개)
+
+**8번 스크립트 요건** — 기존 형식을 그대로 따른다(`verify_benchmark_mainview.mjs` 파일 끝 `process.exit(failed.length ? 1 : 0)`).
+
+| 항목 | 요건 |
+|---|---|
+| 실행 기반 | `C:/Users/ahnbu/.claude/skills/_shared/hidden-browser-verify-runner.mjs` — **창을 띄우지 않는다**. 창이 필요한 예외 없음 |
+| 판정 | 항목마다 `record(...)`로 참/거짓을 세고 **종료코드 0/1**로 끝낸다. `done-check`가 사람 눈 없이 종료코드만으로 판정할 수 있어야 한다 |
+| 단언 A | 「MY」 필터를 켠 뒤 렌더된 카드의 `platform_id`에 **중복 0건** (T3 실패 시 LinkedIn 글이 2배로 뜬다) |
+| 단언 B | MY 카드 수 == 최신 통합본의 `is_own_post` 건수 |
+| 단언 C | 뷰어 상단 총건수 == 최신 통합본 게시글 수 (7번) |
+| 단언 D | `is_merged_thread == true`인 Threads 내 글 카드의 본문 길이 합 **≥ 16,480자** (3-a를 화면에서 재확인) |
+| 캡처 | `_docs/evidence/20260909_02/` **하위**에 저장하고 **커밋에 포함한다.** `.gitignore:199-200`의 `_docs/evidence/*.png`·`*.log`는 최상위만 매칭하므로 하위 폴더는 추적된다(현재 126개 추적 중). 캡처는 증거의 보조이지 판정 근거가 아니다 — 판정은 종료코드다 |
+| 실행 전제 | `npm run restart`로 5000번 서버를 새로 띄운 뒤 실행한다 |
 
 ---
 
@@ -282,3 +302,70 @@ Buffer 반응수가 비로그인 경로와 정확히 일치하므로 없앨 수 
   - W5(자막 감시)와 사망 성격이 같다 → §3.0
 - 원 설계 계획: [[20260826_03_내-게시물-성과지표-통합-수집-계획_실행완료]], [[20260827_04_내-글-정렬-두-플랫폼-병합-계획_실행완료]]
 - 관련 선행 계획: [[20260825_01_LinkedIn-참여지표-비로그인-수집전환-계획_실행완료]], [[20260827_02_내-쓰레드-글-수집-계획_실행완료]]
+
+---
+
+## 7. 실행 결과 (2026-09-09)
+
+### 7.1 무엇이 바뀌었나
+
+| 작업 | 파일 | 한 일 |
+|---|---|---|
+| T1 | [my_posts_scrap.py](../my_posts_scrap.py) | `collectors.linkedin` → `collectors.buffer_cli`. `scrolls`·`headed` 인자와 `--scrolls` CLI 옵션 제거. `AuthRequired` → `BufferAuthRequired`, 신호 사유 `login_required` → `buffer_api_key_required` |
+| T2 | [my_threads_scrap.py](../my_threads_scrap.py) | 동일. `fetch_replies()`·`collect_continuations()`·`REPLY_FIELDS` 제거(T5-b), 진입 로그 「Graph API」→「Buffer API」 |
+| T3 | 신규 [scripts/migrate\_own\_linkedin\_ids.py](../scripts/migrate_own_linkedin_ids.py) | 게시 시각(분) 조인으로 activity URN → share/ugcPost URN 이관. dry-run 기본, `--apply` 로 저장. 원본 파일은 지우지 않는다 |
+| T4 | [utils/linkedin_metrics.py](../utils/linkedin_metrics.py) | `_ACTIVITY_ID_RE` 가 `share`·`ugcPost` 도 받는다. `build_post_url()` 이 URN 종류를 되돌린다 |
+| T5 | [utils/my\_threads\_adapter.py](../utils/my_threads_adapter.py) | `keep_existing_body()` 신설 — 기존이 합본이고 새 본문이 짧으면 본문을 지킨다. `BLANK_GUARDED_FIELDS`(`is_merged_thread`·`media`)는 빈 값이 기존 값을 못 덮게 한다 |
+| T6·T7 | [total_scrap.py](../total_scrap.py):468·499, [utils/my\_posts\_adapter.py](../utils/my_posts_adapter.py) | 낡은 전제 주석 정정(§4.5). `&&` 직렬화는 유지 |
+| T9 | 신규 [scripts/verify\_own\_posts\_headless.mjs](../scripts/verify_own_posts_headless.mjs) | 창 없이 단언 5건, 종료코드 0/1 |
+| — | [.gitignore](../.gitignore):112-114 | `scripts/` 는 명시 허용 목록 방식이라 새 스크립트 2개를 등록 |
+| — | `tests/unit/test_my_threads_adapter.py`, `tests/unit/test_linkedin_metrics.py` | 가짜 수집기 모듈명 교체 + **신규 12건**(T5 보존 4건, T4 URN 8건) |
+
+### 7.2 검증 결과
+
+| # | 기준 | 결과 |
+|---|---|---|
+| 1 | `pytest tests/unit tests/contract` | **547 passed** (착수 전 522) |
+| — | `pytest tests/smoke` | **6 passed** |
+| 2 | my_posts 저장 건수 37 (74면 T3 실패) | **37건** |
+| 3 | my_threads 33건 이상·노출수 전건 | **34건 / 노출수 34건** |
+| 3-a | 합본 22건·16,480자 이상·뒤집힘 0 | **22건 / 16,480자 / 뒤집힘 0** |
+| 4 | `linkedin_metric_single.py --only own` 대상 0건 아님 | **대상 2건** (T4 이전이면 0건) |
+| 5 | `merge_results()`→`download_images()`→`validate_local_image_links()` | 통과. 통합본 2,882건 저장 |
+| 6 | 통합본 `is_own_post` 70~80 | **71건** (LinkedIn 37 + Threads 34), 식별자 중복 0 |
+| 7 | (기준 변경 — 위 §5-7 참조) `/api/posts` == 통합본 건수 | **2,882 == 2,882** |
+| 8 | `node scripts/verify_own_posts_headless.mjs` | **종료코드 0**, 단언 5건 전부 통과 |
+
+캡처: `_docs/evidence/20260909_02/my_posts_no_duplicates.png` (커밋에 포함)
+
+### 7.3 실행 중 드러난 것
+
+**(1) 계획의 완료 기준 7번 전제가 틀렸다.** 뷰어 상단 라벨은 총계가 아니라 화면에 걸린 수다. 기준을 `/api/posts` 대조로 바꿨고 근거를 §5-7 에 남겼다. 같은 전제 위에 선 기존 스크립트 `scripts/verify_viewer_total_count_headless.mjs` 도 실패하지만 **이번 변경이 깨뜨린 것이 아니라** 벤치마킹 가시성 규칙이 들어오며 낡은 것이다. 범위 밖이라 고치지 않았다.
+
+**(2) 내 글 지표 갱신 2건이 `no-metrics-in-dom` 으로 실패한다.** URN 변경 탓이 아니다 — 같은 두 글이 옛 activity URL 로도 **3회씩 실패**했고 마지막이 2026-08-28 이다(`scrap_failures_linkedin.json`). 새 URN 이 정상 동작하는 것은 양성 대조로 확인했다: `share:7501590947680591872` → 8/2, `ugcPost:7497904074101723136` → 21/78, `share:7486376409331019776` → 60/1.
+
+**(3) Threads 리포스트 판정이 무력화됐다.** `is_repost()` 는 `raw.thread.media_type` 을 보는데 Buffer 레코드에는 그 필드가 없어 항상 거짓이다. 실측 34건에 리포스트가 없어 지금은 영향이 없다. 코드에 주석으로 남겼다([my_threads_scrap.py](../my_threads_scrap.py) `main()`).
+
+**(4) 이미지 18건 다운로드 실패.** Threads CDN URL 은 만료 토큰(`oe=...`)을 달고 있어 9/5 수집분이 이미 만료됐다. `validate_local_image_links()` 는 통과했고(선언한 로컬 파일이 다 있다) 이번 변경과 무관하다.
+
+### 7.4 남은 리스크
+
+| 리스크 | 상태 |
+|---|---|
+| 쓰레드 앱에서 직접 올리는 새 글의 타래글이 안 붙는다 | **의도한 결정**(§4.3). 34건 중 32건이 그 경로라 결손이 쌓인다. 재검토 조건과 후보 2개는 §4.3 에 있다 |
+| 내 글 댓글수가 자기 답글만큼 부풀려져 있다 | T8, 백로그. 선행 결함이라 이번 복구와 무관 |
+| `verify_viewer_total_count_headless.mjs` 실패 | 선행 결함. 위 (1) |
+
+**(5) 🔴 식별자 이관이 태그 키를 고아로 만들었다 — 완료검수 Advisory 추적 중 발견.** 계획 §3.2 는 사용자 상태 영향을 `web_viewer/sns_user_metadata.json`(별표·숨김·메모)만 확인했다. **태그는 `web_viewer/sns_tags.json` 에 URL 을 키로 따로 저장된다** — 이 파일을 이관 전에 보지 않았다.
+
+| 실측 (2026-09-09) | 값 |
+|---|---|
+| 옛 activity URL 을 키로 하는 내 글 태그 항목 | 34건 |
+| 그중 고아(가리키는 글이 통합본에 없음) | **33건**, 태그 92개 |
+| **태그 손실** | **0건** — 옛 URL 에 있던 태그가 새 URL 에 전부 있다(30/30, 부분집합 판정) |
+
+손실이 0인 이유는 이관 로직이 태그를 옮겼기 때문이 **아니다.** 뷰어가 데이터 변경을 감지하면 자동 태그 규칙을 다시 돌리는데([web_viewer/script.js](../web_viewer/script.js):2442 `applyAutoTagRules`), 본문이 같으니 새 URL 에도 같은 태그가 규칙으로 **재생성**됐다. 이번 검증에서 뷰어를 띄운 것이 그 방아쇠였다.
+
+⚠️ **규칙으로 재생성될 수 없는 태그(손으로만 붙인 태그)였다면 옮겨지지 않았을 것이다.** 이번에는 실측상 빠진 것이 없지만, 운이 좋았던 것에 가깝다. 같은 종류의 식별자 이관을 다시 할 때는 `sns_tags.json` 도 이관 대상에 넣어야 한다.
+
+고아 33건은 지금 아무 화면에도 영향을 주지 않는다(가리키는 글이 없다). **사용자 태그 데이터라 임의로 지우지 않았다.** 정리 여부는 사용자 판단으로 남긴다.

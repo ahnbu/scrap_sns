@@ -6,6 +6,8 @@
 
 from datetime import datetime, timedelta
 
+import pytest
+
 from utils.linkedin_metrics import (
     build_post_url,
     classify_target,
@@ -312,3 +314,64 @@ def test_parse_metrics_from_dom_stamps_timezone_aware_timestamp():
         f"타임존 없는 값이 어댑터의 +09:00 값과 한 파일에 섞인다: {stamped!r}"
     )
     assert parsed.utcoffset() == timedelta(hours=9)
+
+
+# --- Buffer 전환 대응: share·ugcPost URN (계획 _docs/20260909_02 T4) ---------
+#
+# 내 글이 Buffer 경로로 오면서 URL 의 URN 종류가 바뀌었다(실측 37건 전부).
+# `activity` 만 받으면 `extract_activity_id()` 가 None 을 돌려주고
+# `linkedin_metric_single.py:131` 의 `if not activity_id: continue` 에 걸려
+# 내 글 전건이 지표 대상에서 **조용히** 빠진다 - 오류도 실패 이력도 안 남는다.
+
+
+@pytest.mark.parametrize(
+    "url,expected",
+    [
+        (
+            "https://www.linkedin.com/feed/update/urn:li:share:7501590947680591872",
+            "share:7501590947680591872",
+        ),
+        (
+            "https://www.linkedin.com/feed/update/urn:li:ugcPost:7497904074101723136/",
+            "ugcPost:7497904074101723136",
+        ),
+    ],
+)
+def test_extract_activity_id_accepts_buffer_urn_types(url, expected):
+    assert extract_activity_id(url) == expected
+
+
+@pytest.mark.parametrize(
+    "post_id,expected",
+    [
+        (
+            "share:7501590947680591872",
+            "https://www.linkedin.com/feed/update/urn:li:share:7501590947680591872/",
+        ),
+        (
+            "ugcPost:7497904074101723136",
+            "https://www.linkedin.com/feed/update/urn:li:ugcPost:7497904074101723136/",
+        ),
+        (
+            "7411204617524391938",
+            "https://www.linkedin.com/feed/update/urn:li:activity:7411204617524391938/",
+        ),
+    ],
+)
+def test_build_post_url_restores_urn_type(post_id, expected):
+    assert build_post_url(post_id) == expected
+
+
+@pytest.mark.parametrize(
+    "url",
+    [
+        "https://www.linkedin.com/feed/update/urn:li:activity:7411204617524391938/",
+        "https://www.linkedin.com/feed/update/urn:li:share:7501590947680591872",
+        "https://www.linkedin.com/feed/update/urn:li:ugcPost:7497904074101723136",
+    ],
+)
+def test_extract_and_build_round_trip(url):
+    """뽑은 값으로 다시 만든 URL 이 같은 글을 가리켜야 한다."""
+    post_id = extract_activity_id(url)
+    assert post_id is not None
+    assert extract_activity_id(build_post_url(post_id)) == post_id
