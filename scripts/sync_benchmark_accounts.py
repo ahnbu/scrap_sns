@@ -184,8 +184,48 @@ def find_author(stats: dict, platform: str, needles: list[str]) -> dict | None:
 LINK_RE = re.compile(r"\[([^\]]*)\]\(([^)]+)\)")
 
 
+def _parse_front_aliases(front: str) -> list[str]:
+    """프론트매터 `aliases:` 의 항목들.
+
+    LinkedIn 매칭 키(불투명 ID)는 저장글을 **이름으로** 역추적해야 얻는다. 그
+    이름 후보를 시드 파일의 수기 `aliases` 에서만 가져오면, 시드에 영문 표기가
+    없는 사람은 채널 주소를 채워도 매칭 키가 끝내 비어 있다 - 강슬기가 그랬다
+    (`강슬기.md` 에 `Seulki Kang` 이 있는데 시드에는 없어 LinkedIn 8건이 미매칭).
+    계획: _docs/20260910_01 (W1 T1-d)
+    """
+    match = re.search(r"^aliases:\s*$", front, re.MULTILINE)
+    if not match:
+        # `aliases: [a, b]` 인라인 형태도 받는다.
+        inline = re.search(r"^aliases:\s*\[(.+)\]\s*$", front, re.MULTILINE)
+        if not inline:
+            return []
+        return [
+            item.strip().strip('"').strip("'")
+            for item in inline.group(1).split(",")
+            if item.strip()
+        ]
+
+    aliases: list[str] = []
+    for line in front[match.end():].split("\n"):
+        if not line.strip():
+            continue
+        if not line.startswith((" ", "\t")):
+            # 들여쓰기가 끝나면 다음 키다.
+            break
+        item = re.match(r"^\s*-\s+(.*)$", line)
+        if item:
+            value = item.group(1).strip().strip('"').strip("'")
+            if value:
+                aliases.append(value)
+    return aliases
+
+
 def parse_creator_profiles() -> dict:
-    """{정규화 이름: {platform: 주소}}. 프론트매터의 youtube/threads/linkedin/x."""
+    """{파일명: {"channels": {platform: 주소}, "aliases": [...]}}.
+
+    채널이 없고 별칭만 있는 프로필도 담는다 - 별칭만으로도 LinkedIn 매칭 키를
+    찾을 수 있어, 채널 유무로 거르면 그 경로가 막힌다.
+    """
     profiles: dict = {}
     if not os.path.isdir(CREATOR_DIR):
         return profiles
@@ -209,17 +249,29 @@ def parse_creator_profiles() -> dict:
             raw = match.group(1).strip().strip('"').strip("'")
             link = LINK_RE.search(raw)
             channels[platform] = link.group(2) if link else raw
-        if channels:
-            profiles[os.path.splitext(name)[0]] = channels
+        aliases = _parse_front_aliases(front)
+        if channels or aliases:
+            profiles[os.path.splitext(name)[0]] = {
+                "channels": channels,
+                "aliases": aliases,
+            }
     return profiles
 
 
-def profile_channels_for(profiles: dict, name: str) -> dict:
+def _profile_entry_for(profiles: dict, name: str) -> dict:
     needle = name.lower()
-    for key, channels in profiles.items():
+    for key, entry in profiles.items():
         if needle and needle in key.lower():
-            return channels
+            return entry
     return {}
+
+
+def profile_channels_for(profiles: dict, name: str) -> dict:
+    return _profile_entry_for(profiles, name).get("channels") or {}
+
+
+def profile_aliases_for(profiles: dict, name: str) -> list:
+    return _profile_entry_for(profiles, name).get("aliases") or []
 
 
 # ------------------------------------------------------------ 주소 유효성
@@ -264,7 +316,12 @@ def build_account(seed: dict, stats: dict, profiles: dict, verify: bool, api_key
     # 저장글의 표시명이 한글 이름과 다른 사람이 있다 - LinkedIn 은 영문 표기가
     # 흔하다(빌더 조쉬 → "Josh Kim"). 별칭이 없으면 그 사람의 저장글을 못 찾아
     # match_keys 가 비고, 결국 R5·R8 이 그 플랫폼에서 성립하지 않는다.
+    # 제작자 프로필의 `aliases` 도 후보에 넣는다. 시드에만 의존하면 영문 표기가
+    # 시드에 없는 사람의 LinkedIn 매칭 키가 끝내 비어 있다(_docs/20260910_01 T1-d).
     aliases = [name] + list(seed.get("aliases") or [])
+    for alias in profile_aliases_for(profiles, name):
+        if alias not in aliases:
+            aliases.append(alias)
     channels = dict(seed.get("channels") or {})
 
     # 제작자 파일에 있는 주소로 빈 칸을 메운다(소스에 있는 것을 덮지 않는다).
@@ -394,14 +451,49 @@ def _merge_channels(previous: dict, incoming: dict) -> dict:
     return merged
 
 
+def _preserve_verified_youtube_keys(match_keys: dict, previous: dict) -> dict:
+    """전에 확인해둔 YouTube channel_id 를 지키다.
+
+    왜 필요한가: `channel_id`(UC...)를 얻는 길은 둘뿐이다 - 이미 저장된 그 채널의
+    글에서 읽거나(`find_author`), YouTube API 로 확인하거나(`--verify`, 화면의
+    「주소 확인」). 그런데 자동 동기화는 `--verify` 를 붙이지 않는다(뷰어
+    「업데이트」가 동기 블로킹이라 외부 네트워크를 끌어들이지 않으려는 선택 -
+    `total_scrap.refresh_benchmark_accounts_after_success` 참조).
+
+    그 결과 **글을 아직 한 건도 수집하지 않은 채널**은 확인으로 얻은 키가 다음
+    수집에서 통째로 사라졌다. 실측 2026-09-10: `--verify` 직후 19계정이 키를
+    가졌는데 병합 한 번 뒤 18계정으로 줄었고, 강슬기 유튜브 키가 없어졌다.
+
+    🔴 **incoming 이 키를 하나도 못 만들었을 때만** 되살린다. incoming 에 값이
+    있으면 그쪽이 최신이므로 교체한다 - 채널이 바뀐 뒤에도 낡은 id 가 남으면
+    남의 글을 가져온다. 「코드 소유 필드는 갱신돼야 한다」는 기존 계약이 우선이고
+    (`tests/unit/test_sync_benchmark_accounts.test_resync_refreshes_code_owned_fields`),
+    여기는 그 계약이 닿지 않는 빈칸만 메운다.
+    계획: _docs/20260910_01 (W1 후속)
+    """
+    if (match_keys or {}).get("youtube"):
+        return match_keys
+    verified = [
+        str(key)
+        for key in (previous.get("match_keys") or {}).get("youtube") or []
+        if str(key).startswith("UC")
+    ]
+    if not verified:
+        return match_keys
+    out = {platform: list(keys) for platform, keys in (match_keys or {}).items()}
+    out["youtube"] = sorted(set(verified))
+    return out
+
+
 def _augment_match_keys(match_keys: dict, channels: dict) -> dict:
     """주소를 보존했으면 그 주소도 매칭 키에 넣는다.
 
     `match_keys` 는 incoming 기준으로 만들어지므로, 위에서 previous 주소를 지키면
     그 값이 키에서 빠진다. LinkedIn slug 가 그렇다.
 
-    YouTube 는 넣지 않는다 - 그쪽 키는 channel_id(UC...)이고 channels 에 든 것은
-    @handle 이라 서로 다른 값이다(SPEC D12).
+    YouTube 핸들은 넣지 않는다 - 그쪽 키는 channel_id(UC...)이고 channels 에 든
+    것은 @handle 이라 서로 다른 값이다(SPEC D12). 확인해둔 channel_id 의 보존은
+    `_preserve_verified_youtube_keys()` 가 따로 맡는다.
     """
     out = {platform: list(keys) for platform, keys in (match_keys or {}).items()}
     for platform in ("linkedin", "threads", "x"):
@@ -443,7 +535,8 @@ def merge_preserving_user_settings(existing: list, incoming: list) -> tuple[list
                 merged[field] = previous[field]
         merged["channels"] = _merge_channels(previous, account)
         merged["match_keys"] = _augment_match_keys(
-            merged.get("match_keys") or {}, merged["channels"]
+            _preserve_verified_youtube_keys(merged.get("match_keys") or {}, previous),
+            merged["channels"],
         )
         merged["collectable"] = sorted(set(merged["channels"]) & COLLECTABLE_PLATFORMS)
         result.append(merged)
@@ -487,7 +580,11 @@ def main() -> int:
     stats = collect_author_stats()
     print(f"   저자 {len(stats)}명")
     profiles = parse_creator_profiles()
-    print(f"소스 2 제작자 프로필: {len(profiles)}명 (주소 보유)")
+    _with_channels = sum(1 for entry in profiles.values() if entry.get("channels"))
+    print(
+        f"소스 2 제작자 프로필: {len(profiles)}명 "
+        f"(주소 보유 {_with_channels}명 · 별칭만 {len(profiles) - _with_channels}명)"
+    )
     print(f"소스 3 시드 명단: {len(seed_accounts)}계정\n")
 
     incoming = []

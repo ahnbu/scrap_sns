@@ -144,6 +144,14 @@ body.modal-open {
   pointer-events: auto;
 }
 
+/* 모달은 `hidden` 을 떼는 것만으로는 안 보인다 - 마크업이 `opacity-0
+   pointer-events-none` 으로 시작하므로 `.show` 규칙이 함께 있어야 한다.
+   계획: _docs/20260910_01 (W3 T3-c) */
+#creatorCardModal.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 .scrap-result-panel {
   max-height: calc(100vh - 48px);
 }
@@ -1275,6 +1283,107 @@ input:checked + .toggle-slider:before {
   border-color: rgba(127, 13, 242, 0.3);
   background: rgba(127, 13, 242, 0.2);
   color: #7f0df2;
+}
+/* 제작자 카드. 신규 색을 만들지 않는다 - bm-chan·bm-chan--collectable 이 쓰는
+   값을 그대로 쓴다. 계획: _docs/20260910_01 (W3 T3-c) */
+.creator-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1px;
+  border-radius: 6px;
+  color: #6b7280;
+  transition: color 0.15s, background 0.15s;
+  flex-shrink: 0;
+}
+.creator-btn:hover {
+  color: #7f0df2;
+  background: rgba(255, 255, 255, 0.08);
+}
+.creator-sec {
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.creator-sec:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+.creator-sec-title {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+}
+.creator-chan,
+.creator-stat {
+  display: inline-flex;
+  align-items: center;
+  min-height: 22px;
+  padding: 2px 9px;
+  border-radius: 999px;
+  border: 0.5px solid rgba(127, 13, 242, 0.3);
+  background: rgba(127, 13, 242, 0.2);
+  color: #7f0df2;
+  font-size: 11px;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+.creator-chan:hover {
+  background: rgba(127, 13, 242, 0.32);
+}
+.creator-stat {
+  border-color: rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  color: #9ca3af;
+}
+.creator-profile-text {
+  font-size: 0.8125rem;
+  line-height: 1.7;
+  color: #d1d5db;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.creator-open {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5px 11px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.creator-open:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* 「이 계정은 지금 글을 못 잡는다」 표시. 주소·매칭 키가 비어 있을 때만 뜬다.
+   빨강을 새로 만들지 않는다 - 화면이 이미 쓰는 red-400(#f87171)을 옅게 깐다.
+   계획: _docs/20260910_01 (W2 T2-c) */
+.bm-gap {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 3px;
+  padding: 1px 7px;
+  border-radius: 999px;
+  border: 0.5px solid rgba(248, 113, 113, 0.3);
+  background: rgba(248, 113, 113, 0.12);
+  color: #f87171;
+  font-size: 10.5px;
+  line-height: 1.5;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.bm-gap:hover {
+  background: rgba(248, 113, 113, 0.2);
 }
 .bm-section-title {
   font-size: 0.6875rem;

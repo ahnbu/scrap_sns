@@ -1095,6 +1095,147 @@ def save_benchmark_accounts():
         return jsonify({"status": "error", "message": "Failed to save benchmark accounts"}), 500
 
 
+CREATOR_PROFILE_DIR = os.path.join(
+    os.path.expanduser("~"), "cowork", "90_자료수집", "_제작자별_상세"
+)
+# 옵시디언 vault 루트. `.obsidian` 이 여기 있다 - vault 등록명이 폴더명과 다를 수
+# 있어 `obsidian://open?vault=` 대신 `?path=` 를 쓴다.
+OBSIDIAN_VAULT_ROOT = os.path.join(os.path.expanduser("~"), "cowork")
+
+
+def _creator_profile_path(account):
+    """계정에 대응하는 제작자 `.md` 절대경로. 없으면 None.
+
+    파일명·별칭으로 찾는다. 벤치마킹 계정의 `name` 은 사람 이름이고 제작자 파일은
+    `이승필_사용성연구소.md` 처럼 수식이 붙는 경우가 있어 부분 일치를 쓴다 -
+    `sync_benchmark_accounts.profile_channels_for()` 와 같은 규칙이다.
+    """
+    if not os.path.isdir(CREATOR_PROFILE_DIR):
+        return None
+
+    needles = [str(account.get("name") or "").strip()]
+    needles += [str(a).strip() for a in (account.get("aliases") or [])]
+    needles = [n.lower() for n in needles if n]
+    if not needles:
+        return None
+
+    for entry in sorted(os.listdir(CREATOR_PROFILE_DIR)):
+        if not entry.endswith(".md"):
+            continue
+        stem = os.path.splitext(entry)[0].lower()
+        if any(needle in stem for needle in needles):
+            return os.path.join(CREATOR_PROFILE_DIR, entry)
+    return None
+
+
+def _parse_creator_profile(path):
+    """제작자 md 에서 프론트매터 채널·별칭·전문분야와 `## 프로필` 본문을 뽑는다."""
+    with open(path, "r", encoding="utf-8-sig", errors="replace") as handle:
+        text = handle.read(20000)
+
+    front = ""
+    if text.startswith("---") and text.count("---") >= 2:
+        front = text.split("---", 2)[1]
+
+    link_re = re.compile(r"\[([^\]]*)\]\(([^)]+)\)")
+    channels = {}
+    for platform in ("threads", "youtube", "linkedin", "x", "blog", "service", "newsletter", "instagram"):
+        match = re.search(rf"^{platform}:\s*(.+)$", front, re.MULTILINE)
+        if not match:
+            continue
+        raw = match.group(1).strip().strip('"').strip("'")
+        link = link_re.search(raw)
+        channels[platform] = link.group(2) if link else raw
+
+    def _list_field(name):
+        head = re.search(rf"^{name}:\s*$", front, re.MULTILINE)
+        if not head:
+            return []
+        items = []
+        for line in front[head.end():].split("\n"):
+            if not line.strip():
+                continue
+            if not line.startswith((" ", "\t")):
+                break
+            item = re.match(r"^\s*-\s+(.*)$", line)
+            if item:
+                value = item.group(1).strip().strip('"').strip("'")
+                if value:
+                    items.append(value)
+        return items
+
+    body = ""
+    section = re.search(r"^##\s*프로필\s*$(.*?)^##\s", text, re.MULTILINE | re.DOTALL)
+    if section:
+        body = section.group(1).strip()
+
+    return {
+        "channels": channels,
+        "aliases": _list_field("aliases"),
+        "expertise": _list_field("expertise"),
+        "profile_text": body,
+    }
+
+
+@app.route("/api/creator-profile", methods=["GET"])
+def creator_profile():
+    """벤치마킹 계정 하나의 제작자 프로필. 읽기 전용이다.
+
+    뷰어의 제작자 카드가 쓴다. 파일이 없으면 404 가 아니라 200 + `found:false` 를
+    준다 - 프로필 문서가 없는 계정도 카드의 나머지(채널·글 건수)는 보여야 한다.
+
+    🔴 vault 밖 파일을 읽지 않는다. 경로는 `account_id` 로 **간접 조회**하며
+    클라이언트가 준 문자열을 경로로 쓰지 않는다. 그래도 `os.path.realpath` 로
+    한 번 더 가둔다 - 제작자 파일이 심볼릭 링크인 경우를 막는다.
+    계획: _docs/20260910_01 (W3 T3-a)
+    """
+    account_id = (request.args.get("account_id") or "").strip()
+    if not account_id:
+        return jsonify({"error": "account_id is required"}), 400
+
+    try:
+        path = _get_benchmark_accounts_path()
+        if not os.path.exists(path):
+            return jsonify({"found": False, "reason": "no_accounts_file"})
+        with open(path, "r", encoding="utf-8-sig") as handle:
+            data = json.load(handle)
+        accounts = data.get("accounts", []) if isinstance(data, dict) else []
+        account = next(
+            (a for a in accounts if isinstance(a, dict) and a.get("id") == account_id),
+            None,
+        )
+        if not account:
+            return jsonify({"found": False, "reason": "unknown_account"})
+
+        profile_path = _creator_profile_path(account)
+        if not profile_path:
+            return jsonify({"found": False, "reason": "no_profile_file"})
+
+        # 화이트리스트 밖이면 읽지 않는다.
+        resolved = os.path.realpath(profile_path)
+        allowed_root = os.path.realpath(CREATOR_PROFILE_DIR)
+        if os.path.commonpath([resolved, allowed_root]) != allowed_root:
+            logging.warning("creator profile outside vault: %s", resolved)
+            return jsonify({"found": False, "reason": "outside_vault"}), 403
+
+        parsed = _parse_creator_profile(resolved)
+        relative = os.path.relpath(resolved, os.path.realpath(OBSIDIAN_VAULT_ROOT))
+        return jsonify(
+            {
+                "found": True,
+                "account_id": account_id,
+                "file_name": os.path.basename(resolved),
+                "vault_relative_path": relative.replace("\\", "/"),
+                "obsidian_url": "obsidian://open?path="
+                + urllib.parse.quote(resolved.replace("\\", "/"), safe=""),
+                **parsed,
+            }
+        )
+    except Exception:
+        logging.exception("Failed to load creator profile")
+        return jsonify({"error": "Failed to load creator profile"}), 500
+
+
 @app.route("/api/verify-channel", methods=["GET"])
 def verify_channel():
     """계정 주소가 실제로 열리는지 서버가 대신 확인한다.

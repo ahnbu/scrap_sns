@@ -18,6 +18,7 @@ from utils.auth_status import AUTH_REQUIRED_EXIT_CODE, TOOL_UNAVAILABLE_SIGNAL_P
 from utils.post_meta import build_post_key
 from utils.media_expiry import has_live_media_url
 from utils import metric_refresh
+from utils.benchmark_match import apply_benchmark_marks, report_added
 from utils.own_post_order import assign_own_post_order, normalize_ts
 
 def configure_console_encoding():
@@ -657,6 +658,32 @@ def run_scrapers_in_parallel(mode='update'):
     return platform_results
 
 
+def _load_benchmark_accounts_for_match():
+    """표식 재계산에 쓸 계정 목록. 읽지 못하면 빈 목록이다.
+
+    계정 파일이 없거나 깨져 있다고 병합 자체를 실패시키지 않는다 - 표식은 표시용
+    파생값이고, 이것 때문에 수집분을 버리면 손해가 훨씬 크다.
+    """
+    path = os.path.join(PROJECT_ROOT, "web_viewer", "benchmark_accounts.json")
+    try:
+        with open(path, "r", encoding="utf-8-sig") as handle:
+            data = json.load(handle)
+    except (OSError, ValueError) as error:
+        print(f"   ⚠️ 벤치마킹 계정을 읽지 못해 표식 재계산을 건너뛴다: {error}")
+        return []
+    accounts = data.get("accounts", data) if isinstance(data, dict) else data
+    return accounts if isinstance(accounts, list) else []
+
+
+def _apply_benchmark_marks_to(posts):
+    """통합본에 벤치마킹 소속 표식을 채우고 결과를 출력한다."""
+    accounts = _load_benchmark_accounts_for_match()
+    if not accounts:
+        return
+    added = apply_benchmark_marks(posts, accounts)
+    report_added(added)
+
+
 def merge_results():
     print("\n📦 결과 병합 및 데이터 정규화 시작...")
     
@@ -876,6 +903,13 @@ def merge_results():
             f"   ⚠️ 중복 제거: {dropped}건 "
             f"(platform_id 기준 {dropped_by_id}건, pk 기준 {dropped_by_pk}건)"
         )
+
+    # 벤치마킹 표식 재계산. 1회성 백필이 아니라 매 병합의 항구 단계다 - 이 함수는
+    # upstream 파일들을 매번 다시 읽어 통합본을 새로 만들므로, 통합본에만 써둔
+    # 표식은 다음 실행에서 사라진다. 여기 두면 계정을 새로 켜거나 채널을 추가한
+    # 것이 다음 수집에서 자동으로 반영된다.
+    # 계획: _docs/20260910_01 (W1 T1-b·T1-c)
+    _apply_benchmark_marks_to(unique_posts)
 
     if own_posts:
         print(f"   🙋 내 게시물(LinkedIn) {len(own_posts)}건 병합")

@@ -120,6 +120,29 @@ def run_collector(context, slug: str, limit: int, dry_run: bool) -> int:
             pass
 
 
+def canonical_author_key(account: dict, slug: str, fallback: str = "") -> str:
+    """이 계정의 LinkedIn 저자 키. 피드 수집분과 같은 값이어야 한다.
+
+    왜 필요한가: 피드 수집(`linkedin_scrap.py`)은 `username` 에 불투명 ID
+    (`ACoAA...`)를 넣는데, 여기 수집기는 `actor.name.text` 즉 **표시명**을 넣었다
+    (`linkedin_scrap_by_user.py:428`). 그래서 한 사람이 두 저자로 갈렸다 - 실측
+    2026-09-10 기준 LinkedIn 769건 중 47건이 표시명 쪽이었고, 뷰어의
+    「이 저자만 보기」가 `(platform, username)` 동일성으로 판정하므로 이승필이
+    24건과 5건으로 쪼개졌다.
+
+    우선순위: 계정의 불투명 ID → vanity slug → 넘어온 값.
+    `post_key` 는 `platform:platform_id` 라 이 값을 바꿔도 별표·메모는 영향받지
+    않는다(`utils/post_meta.build_post_key`).
+    계획: _docs/20260910_01 (W2 T2-a)
+    """
+    for key in (account.get("match_keys") or {}).get("linkedin") or []:
+        if str(key).startswith("ACoAA"):
+            return str(key)
+    if slug:
+        return str(slug)
+    return str(fallback or "")
+
+
 def to_standard(raw: dict, account: dict, slug: str) -> dict:
     """수집기 레코드를 표준 스키마로 옮기고 벤치마킹 표식을 붙인다.
 
@@ -127,6 +150,13 @@ def to_standard(raw: dict, account: dict, slug: str) -> dict:
     `보임 = is_saved OR 켜진 계정` 판정에서 내 저장글과 구분되지 않는다.
     """
     post = dict(raw)
+    # 표시명은 display_name 에 남기고 username 은 계정 정본 키로 맞춘다.
+    display_from_scraper = str(post.get("username") or "").strip()
+    canonical = canonical_author_key(account, slug, fallback=display_from_scraper)
+    if canonical:
+        post["username"] = canonical
+        if display_from_scraper and not post.get("display_name"):
+            post["display_name"] = display_from_scraper
     # 수집기는 images 로 담는다. 표준은 media 다 — LEGACY_FIELD_MAP 에 없어
     # 여기서 옮기지 않으면 이미지가 통째로 사라진다.
     if post.get("images") and not post.get("media"):

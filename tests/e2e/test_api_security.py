@@ -129,3 +129,40 @@ class TestErrorInfoLeakage:
         assert "Traceback" not in body
         assert "scrap_sns" not in body
         assert "\\Users\\" not in body
+
+
+@pytest.mark.security
+class TestCreatorProfileAccess:
+    """S11~S13: 제작자 프로필 API 는 vault 밖을 읽지 않는다.
+
+    이 API 는 vault 의 파일을 연다. 경로를 클라이언트가 주지 않고 `account_id` 로
+    간접 조회하는 것이 1차 방어이고, `realpath` prefix 검사가 2차다.
+    계획: _docs/20260910_01 (W3 T3-a)
+    """
+
+    def test_s11_requires_account_id(self, client):
+        """S11: account_id 없이 부르면 400"""
+        resp = client.get('/api/creator-profile')
+        assert resp.status_code == 400
+
+    def test_s12_traversal_account_id_is_not_a_path(self, client):
+        """S12: 경로처럼 생긴 account_id 로 파일을 읽지 못한다"""
+        for probe in (
+            '../../../../.env',
+            '..%2F..%2Fetc%2Fpasswd',
+            'C:/Users/ahnbu/.env',
+            '/etc/passwd',
+        ):
+            resp = client.get('/api/creator-profile', query_string={'account_id': probe})
+            assert resp.status_code == 200
+            data = resp.get_json()
+            # 계정 목록에 없는 id 이므로 조회 자체가 성립하지 않는다.
+            assert data.get('found') is False, probe
+            assert 'profile_text' not in data, probe
+
+    def test_s13_no_internal_paths_on_unknown_account(self, client):
+        """S13: 없는 계정 응답에 내부 경로가 새지 않는다"""
+        resp = client.get('/api/creator-profile', query_string={'account_id': 'nope'})
+        body = resp.get_data(as_text=True)
+        assert "Traceback" not in body
+        assert "\\Users\\" not in body

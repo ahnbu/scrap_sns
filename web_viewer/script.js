@@ -2715,6 +2715,218 @@ ${item.body}
         renderPosts();
     }
 
+    // ─────────────────────────────────────────────── 제작자 카드
+    // SNS 글은 여기서, 파일·문서는 옵시디언에서 본다. 자료 목록을 뷰어에 다시
+    // 만들지 않는다 - 그것은 vault 의 dataviewjs 가 이미 하고 있고, 목록의 목적이
+    // 파일을 여는 것이라 어차피 옵시디언으로 넘어간다.
+    // 계획: _docs/20260910_01 (W3 T3-c·T3-d)
+
+    const creatorCardModal = document.getElementById('creatorCardModal');
+    const creatorCardTitle = document.getElementById('creatorCardTitle');
+    const creatorCardSubtitle = document.getElementById('creatorCardSubtitle');
+    const creatorCardBody = document.getElementById('creatorCardBody');
+
+    /** 이 계정의 글을 플랫폼별로 센다. 카드가 "무엇이 얼마나 있나"를 먼저 답한다. */
+    function creatorPostStats(accountId) {
+        const counts = new Map();
+        let total = 0;
+        allPosts.forEach((post) => {
+            if (!(post.benchmark_accounts || []).includes(accountId)) return;
+            const platform = String(post.sns_platform || 'unknown');
+            counts.set(platform, (counts.get(platform) || 0) + 1);
+            total += 1;
+        });
+        return { total, byPlatform: [...counts.entries()].sort((a, b) => b[1] - a[1]) };
+    }
+
+    function creatorChannelLinksHtml(account, profileChannels) {
+        // 계정 정보가 먼저다 - 그쪽이 수집에 실제로 쓰이는 값이다. 프로필 문서의
+        // 채널은 계정에 없는 것만 보탠다(블로그·뉴스레터 등은 계정에 칸이 없다).
+        const merged = new Map();
+        Object.entries(account?.channels || {}).forEach(([platform, value]) => {
+            if (value) merged.set(platform, { value, source: 'account' });
+        });
+        Object.entries(profileChannels || {}).forEach(([platform, value]) => {
+            if (value && !merged.has(platform)) merged.set(platform, { value, source: 'profile' });
+        });
+        if (!merged.size) {
+            return '<p class="text-xs text-gray-500">등록된 채널이 없습니다.</p>';
+        }
+
+        const toUrl = (platform, value) => {
+            const raw = String(value);
+            if (/^https?:\/\//i.test(raw)) return raw;
+            const handle = raw.replace(/^@/, '');
+            if (platform === 'threads') return `https://www.threads.com/@${handle}`;
+            if (platform === 'youtube') return `https://www.youtube.com/@${handle}`;
+            if (platform === 'linkedin') return `https://www.linkedin.com/in/${handle}/`;
+            if (platform === 'x') return `https://x.com/${handle}`;
+            return `https://${handle}`;
+        };
+
+        return `<div class="flex flex-wrap gap-1.5">${[...merged.entries()]
+            .map(([platform, entry]) => `
+                <a class="creator-chan" href="${escapeHtml(toUrl(platform, entry.value))}"
+                   target="_blank" rel="noopener noreferrer"
+                   title="${escapeHtml(`${platform} — ${entry.value}`)}">
+                    ${escapeHtml(platform)}
+                </a>`)
+            .join('')}</div>`;
+    }
+
+    /**
+     * 프로필 본문의 최소 마크다운만 렌더한다.
+     *
+     * vault 문서는 `- **정체성**: ...` 꼴이라 그대로 내보내면 별표가 화면에 남는다.
+     * 라이브러리를 들이지 않는다 - 필요한 것은 굵게와 불릿 둘뿐이다.
+     * 🔴 반드시 escape 를 먼저 한다. 그 뒤에 만드는 태그는 여기서 만든 것뿐이라
+     * 문서 내용이 마크업이 될 수 없다.
+     */
+    function renderProfileText(text) {
+        return escapeHtml(String(text || ''))
+            .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+            .replace(/^-\s+/gm, '· ');
+    }
+
+    function renderCreatorCard(account, profile) {
+        const stats = creatorPostStats(account.id);
+        const found = profile && profile.found;
+
+        const statsHtml = stats.total
+            ? `<div class="flex flex-wrap items-center gap-1.5">${stats.byPlatform
+                  .map(([platform, count]) => `<span class="creator-stat">${escapeHtml(platform)} ${count}</span>`)
+                  .join('')}</div>`
+            : '<p class="text-xs text-gray-500">수집된 글이 없습니다.</p>';
+
+        // 프로필 문서가 없는 계정은 ③⑤ 를 감춘다. 빈 칸이 뜨면 "왜 비었지"가 된다.
+        const profileHtml = found && profile.profile_text
+            ? `<section class="creator-sec">
+                   <h4 class="creator-sec-title">프로필</h4>
+                   <div class="creator-profile-text">${renderProfileText(profile.profile_text)}</div>
+               </section>`
+            : '';
+
+        const openHtml = found && profile.obsidian_url
+            ? `<a class="creator-open" href="${escapeHtml(profile.obsidian_url)}">
+                   <span class="material-symbols-outlined text-[16px]">folder_open</span>
+                   자료수집에서 열기
+               </a>
+               <span class="text-[11px] text-gray-500">${escapeHtml(profile.file_name || '')}</span>`
+            : `<span class="text-[11px] text-gray-500">자료수집에 제작자 문서가 없습니다.</span>`;
+
+        creatorCardTitle.textContent = account.name || account.id;
+        creatorCardSubtitle.textContent = [account.group, account.purpose, `글 ${stats.total}건`]
+            .filter(Boolean)
+            .join(' · ');
+
+        creatorCardBody.innerHTML = `
+            <section class="creator-sec">
+                <h4 class="creator-sec-title">채널</h4>
+                ${creatorChannelLinksHtml(account, found ? profile.channels : null)}
+            </section>
+            <section class="creator-sec">
+                <h4 class="creator-sec-title">수집된 글</h4>
+                ${statsHtml}
+                ${stats.total ? `<button type="button" class="creator-open mt-2" data-creator-filter="${escapeHtml(account.id)}">
+                    <span class="material-symbols-outlined text-[16px]">filter_alt</span>
+                    이 사람 글 전체 보기
+                </button>` : ''}
+            </section>
+            ${profileHtml}
+            <section class="creator-sec">
+                <h4 class="creator-sec-title">자료수집</h4>
+                <div class="flex items-center gap-2 flex-wrap">${openHtml}</div>
+            </section>`;
+
+        const filterBtn = creatorCardBody.querySelector('[data-creator-filter]');
+        if (filterBtn) {
+            filterBtn.addEventListener('click', () => {
+                // 「벤치마킹만」을 켜고 이 계정 칩을 고른 상태로 만든다. 좁혀둔
+                // 필터는 푼다 - 켜자마자 0건이 뜨는 것을 막으려고 benchmarkBtn
+                // 핸들러가 하는 것과 같다.
+                showBenchmarkOnly = true;
+                turnOffOtherScopeButtons('benchmark');
+                currentTag = null;
+                currentAuthor = null;
+                setPlatformFilter('all');
+                currentBenchmarkAccount = account.id;
+                syncBenchmarkButtonState();
+                clearSelection();
+                hideCreatorCard();
+                renderPosts();
+            });
+        }
+    }
+
+    function hideCreatorCard() {
+        if (!creatorCardModal) return;
+        creatorCardModal.classList.remove('show');
+        document.body.classList.remove('modal-open');
+        window.setTimeout(() => creatorCardModal.classList.add('hidden'), 300);
+    }
+
+    async function openCreatorCard(accountId) {
+        if (!creatorCardModal || !creatorCardBody) return;
+        const account = benchmarkAccounts.find((a) => a.id === accountId);
+        if (!account) return;
+
+        creatorCardTitle.textContent = account.name || accountId;
+        creatorCardSubtitle.textContent = '';
+        creatorCardBody.innerHTML = '<p class="text-xs text-gray-500">불러오는 중…</p>';
+        creatorCardModal.classList.remove('hidden');
+        window.setTimeout(() => {
+            creatorCardModal.classList.add('show');
+            document.body.classList.add('modal-open');
+        }, 10);
+
+        let profile = null;
+        try {
+            const response = await fetch(
+                `/api/creator-profile?account_id=${encodeURIComponent(accountId)}`,
+            );
+            if (response.ok) profile = await response.json();
+        } catch (error) {
+            // 프로필을 못 읽어도 카드의 나머지는 보여준다 - 채널·건수는 로컬 데이터다.
+            console.error('Failed to load creator profile:', error);
+        }
+        renderCreatorCard(account, profile);
+    }
+
+    if (creatorCardModal) {
+        document.getElementById('closeCreatorCardModal')?.addEventListener('click', hideCreatorCard);
+        creatorCardModal.addEventListener('click', (event) => {
+            if (event.target === creatorCardModal) hideCreatorCard();
+        });
+    }
+
+    /**
+     * 이름 옆 제작자 아이콘. 벤치마킹 계정에 매칭되는 글에만 붙인다.
+     *
+     * 매칭이 안 되는 글에 붙이면 눌러도 빈 카드가 뜬다 - 쓸 수 있을 때만 보이는
+     * 편이 낫다. 매칭 판정은 저장된 `benchmark_accounts` 를 그대로 쓴다(그 필드는
+     * 병합 단계에서 계정 정보 기준으로 다시 채워진다 - utils/benchmark_match.py).
+     * 계획: _docs/20260910_01 (W3 T3-b)
+     */
+    function buildCreatorButton(post) {
+        const accountId = (post?.benchmark_accounts || [])[0];
+        if (!accountId) return '';
+        const account = benchmarkAccounts.find((a) => a.id === accountId);
+        if (!account) return '';
+        return `<button type="button" class="creator-btn" data-creator-account="${escapeHtml(accountId)}"
+                        title="${escapeHtml(`${account.name || accountId} 제작자 카드`)}">
+                    <span class="material-symbols-outlined text-[16px]">account_circle</span>
+                </button>`;
+    }
+
+    function bindCreatorButton(header) {
+        const button = header.querySelector('[data-creator-account]');
+        if (!button) return;
+        button.addEventListener('click', (event) => {
+            event.stopPropagation();
+            openCreatorCard(button.dataset.creatorAccount);
+        });
+    }
+
     function bindAuthorLink(header, post) {
         const authorLink = header.querySelector('.author-link');
         if (!authorLink) return;
@@ -3353,7 +3565,10 @@ ${item.body}
             <div class="flex items-center gap-3 min-w-0">
                 ${iconHtml}
                 <div class="min-w-0">
-                    <h3 class="author-link text-sm font-semibold text-white truncate max-w-[150px]">${escapeHtml(post.display_name || post.username || post.user || 'Unknown')}</h3>
+                    <div class="flex items-center gap-1 min-w-0">
+                        <h3 class="author-link text-sm font-semibold text-white truncate max-w-[150px]">${escapeHtml(post.display_name || post.username || post.user || 'Unknown')}</h3>
+                        ${buildCreatorButton(post)}
+                    </div>
                     <p class="text-xs text-gray-400 flex items-center gap-1.5" title="${escapeHtml(post.created_at || post.crawled_at)}">
                         <span class="truncate">${escapeHtml(dateLabel)}</span>
                         ${buildBenchmarkMark(post)}
@@ -3387,6 +3602,7 @@ ${item.body}
 
 
         bindAuthorLink(header, post);
+        bindCreatorButton(header);
 
         const selectBtn = header.querySelector('.select-btn');
         selectBtn.addEventListener('click', (e) => {
@@ -4215,6 +4431,38 @@ ${item.body}
             .join('');
     }
 
+    /**
+     * 이 계정이 「지금 글을 못 잡는」 이유. 없으면 빈 문자열.
+     *
+     * 채널 주소가 하나도 없거나, 수집 가능한 플랫폼인데 매칭 키가 없으면 그 계정은
+     * 켜도 0건이다. 종전에는 그 사실이 화면 어디에도 없어 "등록했는데 왜 안 나오지"가
+     * 됐다 - 주소 입력란은 이미 상세에 있으니(benchmarkDetailHtml), 없는 것은
+     * 자동화가 아니라 「비어 있다」는 표시다.
+     * 계획: _docs/20260910_01 (W2 T2-c)
+     */
+    function benchmarkGapReason(account) {
+        if (account?.status === 'excluded') return '';
+        const channels = account?.channels || {};
+        const registered = BENCHMARK_PLATFORMS.filter((p) => channels[p]);
+        if (!registered.length) return '주소 없음 · 이 계정은 글이 잡히지 않습니다';
+
+        const matchKeys = account?.match_keys || {};
+        const blind = registered.filter(
+            (p) => BENCHMARK_COLLECTABLE.has(p) && !(matchKeys[p] || []).length,
+        );
+        if (blind.length) {
+            return `${blind.join('·')} 매칭 키 없음 · 그 플랫폼 글은 잡히지 않습니다`;
+        }
+        return '';
+    }
+
+    function benchmarkGapBadgeHtml(account) {
+        const reason = benchmarkGapReason(account);
+        if (!reason) return '';
+        return `<button type="button" class="bm-gap" data-bm-action="expand"
+                        title="누르면 주소 입력란이 열립니다">${escapeHtml(reason)}</button>`;
+    }
+
     function benchmarkDetailHtml(account) {
         const channelInputs = BENCHMARK_PLATFORMS.map((platform) => `
             <label>${escapeHtml(platform)} 주소
@@ -4267,6 +4515,7 @@ ${item.body}
                 <div class="min-w-0 flex-1">
                     <div class="bm-account-name truncate">${escapeHtml(account.name || account.id)}</div>
                     <div class="bm-account-sub truncate">${escapeHtml(account.group || '')} · ${savedNote}</div>
+                    ${benchmarkGapBadgeHtml(account)}
                 </div>
                 <div class="flex items-center gap-1 shrink-0">${benchmarkChannelBadges(account)}</div>
                 <div class="flex items-center gap-1 shrink-0">

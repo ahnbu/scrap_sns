@@ -376,6 +376,7 @@ python scripts/rebuild_total.py             # 통합본 재생성
 - `GET /api/get-user-metadata` / `POST /api/save-user-metadata`
 - `GET /api/get-external-summaries` — Lilys/LiveWiki 요약 링크 매핑. 쓰기 짝이 없다. 사용자 상태가 아니라 `scripts/build_external_summaries.mjs` 산출물이라 뷰어가 쓰지 않는다. 파일이 없어도 200 과 빈 `items` 를 준다
 - `GET /api/get-benchmark-accounts` / `POST /api/save-benchmark-accounts` — 벤치마킹 계정 목록(`web_viewer/benchmark_accounts.json`). 저장 시 `id` 중복과 `status` 값(`active`/`off`/`excluded`)을 서버가 검증한다. 오타가 통과하면 뷰어의 `보임 = is_saved OR (benchmark_accounts 중 status=="active")` 가 조용히 거짓이 되어 글이 사라진다
+- `GET /api/creator-profile` — 벤치마킹 계정 하나의 제작자 프로필(`account_id` 쿼리). 뷰어 제작자 카드가 쓴다. `C:/Users/ahnbu/cowork/90_자료수집/_제작자별_상세` 의 `.md` 를 **읽기 전용**으로 열어 프론트매터 채널·별칭·전문분야와 `## 프로필` 본문, 그리고 `obsidian://open?path=` 링크를 돌려준다. 계정 이름·별칭으로 파일을 간접 조회하며 클라이언트 문자열을 경로로 쓰지 않고, `realpath` 로 vault 밖 접근을 차단한다. 프로필 문서가 없으면 404 가 아니라 `{"found": false, "reason": ...}` 와 200 이다 — 문서가 없는 계정도 카드의 채널·글 건수는 보여야 한다
 - `GET /api/verify-channel` — 계정 주소 유효성 확인(`platform`·`handle` 쿼리). 브라우저가 직접 못 한다 — `YOUTUBE_API_KEY` 는 서버측 값이고 프런트로 내보내지 않는다. 응답에는 채널명·구독자수·`channel_id` 만 싣는다. 지금 확인이 되는 플랫폼은 YouTube 뿐이며 나머지는 `unsupported_platform` 을 정직하게 돌려준다
 - `POST /api/auto-tag/apply`
 

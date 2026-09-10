@@ -9,7 +9,7 @@
             ],
             "group": "①해외원천",
             "id": "a16z",
-            "last_saved_at": "2026-09-08",
+            "last_saved_at": "2026-09-10",
             "limit": 5,
             "match_keys": {
                 "youtube": [
@@ -19,7 +19,7 @@
             "memo": "",
             "name": "a16z",
             "purpose": "선점소재",
-            "saved_count": 6,
+            "saved_count": 8,
             "sources": [
                 "seed",
                 "scrap_sns"
@@ -57,7 +57,7 @@
             "memo": "",
             "name": "빌더 조쉬",
             "purpose": "형식학습",
-            "saved_count": 42,
+            "saved_count": 49,
             "sources": [
                 "seed",
                 "scrap_sns"
@@ -101,7 +101,7 @@
             ],
             "group": "④바이럴",
             "id": "choi_openai",
-            "last_saved_at": "2026-09-09",
+            "last_saved_at": "2026-09-10",
             "limit": 5,
             "match_keys": {
                 "threads": [
@@ -111,7 +111,7 @@
             "memo": "",
             "name": "CHOI",
             "purpose": "형식학습",
-            "saved_count": 50,
+            "saved_count": 55,
             "sources": [
                 "seed",
                 "scrap_sns"
@@ -182,7 +182,7 @@
             ],
             "group": "①해외원천",
             "id": "fireship",
-            "last_saved_at": "2026-09-08",
+            "last_saved_at": "2026-09-10",
             "limit": 5,
             "match_keys": {
                 "youtube": [
@@ -192,7 +192,7 @@
             "memo": "",
             "name": "Fireship",
             "purpose": "선점소재",
-            "saved_count": 6,
+            "saved_count": 7,
             "sources": [
                 "seed",
                 "scrap_sns"
@@ -209,7 +209,7 @@
             ],
             "group": "④바이럴",
             "id": "gptaku_ai",
-            "last_saved_at": "2026-09-08",
+            "last_saved_at": "2026-09-10",
             "limit": 5,
             "match_keys": {
                 "threads": [
@@ -219,7 +219,7 @@
             "memo": "",
             "name": "지피타쿠",
             "purpose": "형식학습",
-            "saved_count": 30,
+            "saved_count": 33,
             "sources": [
                 "seed",
                 "scrap_sns"
@@ -236,7 +236,7 @@
             ],
             "group": "⑤실무활용",
             "id": "heydi",
-            "last_saved_at": "2026-09-05",
+            "last_saved_at": "2026-08-16",
             "limit": 5,
             "match_keys": {
                 "youtube": [
@@ -246,7 +246,7 @@
             "memo": "",
             "name": "헤이디",
             "purpose": "형식학습",
-            "saved_count": 12,
+            "saved_count": 7,
             "sources": [
                 "seed",
                 "scrap_sns",
@@ -318,7 +318,7 @@
             ],
             "group": "③B2C",
             "id": "jiin_jinny_lee",
-            "last_saved_at": "2026-09-01",
+            "last_saved_at": "2026-09-07",
             "limit": 5,
             "match_keys": {
                 "linkedin": [
@@ -329,7 +329,7 @@
             "memo": "",
             "name": "이지인",
             "purpose": "형식학습",
-            "saved_count": 9,
+            "saved_count": 15,
             "sources": [
                 "seed",
                 "scrap_sns",
@@ -347,7 +347,7 @@
             ],
             "group": "④바이럴",
             "id": "kkongdon_story",
-            "last_saved_at": "2026-09-09",
+            "last_saved_at": "2026-09-10",
             "limit": 5,
             "match_keys": {
                 "threads": [
@@ -357,7 +357,7 @@
             "memo": "",
             "name": "꽁돈",
             "purpose": "형식학습",
-            "saved_count": 27,
+            "saved_count": 32,
             "sources": [
                 "seed",
                 "scrap_sns",
@@ -391,7 +391,7 @@
             "memo": "멀티채널 - §4는 링크드인만 적었으나 쓰레드에도 있다. LinkedIn 주소는 불투명 ID다",
             "name": "한성국",
             "purpose": "선점판정",
-            "saved_count": 40,
+            "saved_count": 52,
             "sources": [
                 "seed",
                 "scrap_sns"
@@ -408,7 +408,7 @@
             ],
             "group": "①해외원천",
             "id": "lennys_podcast",
-            "last_saved_at": "2026-09-09",
+            "last_saved_at": "2026-09-10",
             "limit": 5,
             "match_keys": {
                 "youtube": [
@@ -418,7 +418,7 @@
             "memo": "",
             "name": "Lenny's Podcast",
             "purpose": "선점소재",
-            "saved_count": 12,
+            "saved_count": 13,
             "sources": [
                 "seed",
                 "scrap_sns"
@@ -428,24 +428,35 @@
         },
         {
             "channels": {
-                "threads": "@marketer.ai.seulki"
+                "linkedin": "seulki-kang",
+                "threads": "@marketer.ai.seulki",
+                "youtube": "@marketer.ai.seulki"
             },
             "collectable": [
-                "threads"
+                "linkedin",
+                "threads",
+                "youtube"
             ],
             "group": "④바이럴",
             "id": "marketer_ai_seulki",
-            "last_saved_at": "2026-09-09",
+            "last_saved_at": "2026-09-10",
             "limit": 5,
             "match_keys": {
+                "linkedin": [
+                    "ACoAAAzvikMBPtpMCfQ_BZ0524Sd8TmynxCJifY",
+                    "seulki-kang"
+                ],
                 "threads": [
                     "marketer.ai.seulki"
+                ],
+                "youtube": [
+                    "UC3VyrNE736jxYfda3uaKdOg"
                 ]
             },
             "memo": "",
             "name": "강슬기",
             "purpose": "형식학습",
-            "saved_count": 18,
+            "saved_count": 30,
             "sources": [
                 "seed",
                 "scrap_sns",
@@ -463,7 +474,7 @@
             ],
             "group": "①해외원천",
             "id": "matthew_berman",
-            "last_saved_at": "2026-09-05",
+            "last_saved_at": "2026-09-10",
             "limit": 5,
             "match_keys": {
                 "youtube": [
@@ -473,7 +484,7 @@
             "memo": "",
             "name": "Matthew Berman",
             "purpose": "선점소재",
-            "saved_count": 5,
+            "saved_count": 8,
             "sources": [
                 "seed",
                 "scrap_sns"
@@ -490,7 +501,7 @@
             ],
             "group": "②B2B",
             "id": "minjung_kim",
-            "last_saved_at": "2026-08-24",
+            "last_saved_at": "2026-09-08",
             "limit": 5,
             "match_keys": {
                 "linkedin": [
@@ -501,7 +512,7 @@
             "memo": "LinkedIn 주소가 vanity slug 가 아니라 불투명 ID 다. 형태를 구분하지 않고 그대로 쓴다(SPEC D10)",
             "name": "김민정",
             "purpose": "선점판정",
-            "saved_count": 21,
+            "saved_count": 32,
             "sources": [
                 "seed",
                 "scrap_sns"
@@ -545,7 +556,7 @@
             ],
             "group": "②B2B",
             "id": "seungpil",
-            "last_saved_at": "2026-08-31",
+            "last_saved_at": "2026-09-08",
             "limit": 5,
             "match_keys": {
                 "linkedin": [
@@ -556,7 +567,7 @@
             "memo": "",
             "name": "이승필",
             "purpose": "선점판정",
-            "saved_count": 25,
+            "saved_count": 30,
             "sources": [
                 "seed",
                 "scrap_sns",

@@ -114,6 +114,10 @@ scripts/*
 !scripts/verify_own_posts_headless.mjs
 !scripts/compare_bench_linkedin_output.mjs
 
+# 벤치마킹 소급 표식·저자 키 통합·제작자 카드 (계획 _docs/20260910_01)
+!scripts/migrate_linkedin_author_key.py
+!scripts/verify_creator_card_headless.mjs
+
 # Terminal Paste Image folder
 .cp-images/
 
