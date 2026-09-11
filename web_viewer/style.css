@@ -1483,3 +1483,183 @@ input:checked + .toggle-slider:before {
 /* .benchmark-chip-divider 는 W5 에서 지웠다 - 계정 칩이 전용 줄로 갈라져
    같은 줄 구분선이 필요 없어졌다. 줄바꿈 때 구분선이 줄 끝으로 밀려
    경계 역할을 못 하던 것이 애초의 문제였다. 계획: _docs/20260906_03 (W5) */
+
+/* ─────────────────────────── 볼트 자료 카드·읽기 모달
+   새 색을 만들지 않는다 - 웹은 sky-400(#38bdf8), 파일은 amber-400(#fbbf24)로
+   Tailwind 기본 팔레트 값을 그대로 쓴다. tailwind-built.css 는 미리 빌드된 파일이라
+   새 유틸리티 클래스가 적용되지 않으므로 여기에 둔다(F33).
+   계획: _docs/20260911_01 (W2 T2-f·T2-g, W3) */
+.library-icon--web { color: #38bdf8; }
+.library-icon--file { color: #fbbf24; }
+
+/* `hidden` 만 떼면 안 보인다 - 마크업이 opacity-0 pointer-events-none 으로 시작한다.
+   병행 세션 제작자 카드가 이 규칙을 빠뜨려 열려도 안 보였다. */
+#libraryNoteModal.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.library-title {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  line-height: 1.45;
+  color: #fff;
+}
+.library-meta-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  align-items: center;
+  font-size: 11px;
+  color: #9ca3af;
+}
+.library-chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 20px;
+  padding: 1px 8px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  color: #9ca3af;
+  font-size: 11px;
+  white-space: nowrap;
+}
+.library-read-btn,
+.library-summary-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 2px 9px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.5;
+  white-space: nowrap;
+  cursor: pointer;
+  border: 1px solid rgba(56, 189, 248, 0.45);
+  background: rgba(56, 189, 248, 0.12);
+  color: #7dd3fc;
+}
+.library-read-btn:hover,
+.library-summary-badge:hover {
+  background: rgba(56, 189, 248, 0.22);
+}
+/* 「요약」 배지는 외부 요약 배지(Lilys·LiveWiki)와 같은 줄에 서므로 색으로 갈린다. */
+.library-summary-badge {
+  border-color: rgba(251, 191, 36, 0.5);
+  background: rgba(251, 191, 36, 0.12);
+  color: #fcd34d;
+}
+.library-summary-badge:hover {
+  background: rgba(251, 191, 36, 0.22);
+}
+
+/* 읽기 모달 본문. 렌더러가 만드는 태그만 스타일한다. */
+.library-md {
+  font-size: 0.875rem;
+  line-height: 1.75;
+  color: #d1d5db;
+  word-break: break-word;
+}
+.library-md h1, .library-md h2, .library-md h3,
+.library-md h4, .library-md h5, .library-md h6 {
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 1.25em 0 0.5em;
+}
+.library-md h1 { font-size: 1.35rem; }
+.library-md h2 { font-size: 1.15rem; border-bottom: 1px solid rgba(255, 255, 255, 0.08); padding-bottom: 0.3em; }
+.library-md h3 { font-size: 1rem; }
+.library-md h4, .library-md h5, .library-md h6 { font-size: 0.9rem; }
+.library-md > :first-child { margin-top: 0; }
+.library-md p { margin: 0.6em 0; }
+.library-md ul, .library-md ol { margin: 0.5em 0; padding-left: 1.4em; }
+.library-md ul { list-style: disc; }
+.library-md ol { list-style: decimal; }
+.library-md li { margin: 0.2em 0; }
+.library-md blockquote {
+  margin: 0.75em 0;
+  padding: 0.25em 0.9em;
+  border-left: 3px solid rgba(127, 13, 242, 0.5);
+  color: #9ca3af;
+}
+.library-md code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.8em;
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.08);
+}
+.library-md pre {
+  margin: 0.75em 0;
+  padding: 0.8em 1em;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.4);
+  overflow-x: auto;
+}
+.library-md pre code { padding: 0; background: none; font-size: 0.78rem; }
+.library-md hr { margin: 1.25em 0; border: 0; border-top: 1px solid rgba(255, 255, 255, 0.1); }
+.library-md a { color: #c4b5fd; text-decoration: underline; }
+.library-md img { max-width: 100%; border-radius: 8px; margin: 0.5em 0; }
+.library-md .library-table-wrap { overflow-x: auto; margin: 0.75em 0; }
+.library-md table { border-collapse: collapse; font-size: 0.8125rem; min-width: 60%; }
+.library-md th, .library-md td {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 0.35em 0.65em;
+  vertical-align: top;
+  text-align: left;
+}
+.library-md th { background: rgba(255, 255, 255, 0.06); color: #fff; font-weight: 700; }
+.library-md .library-wikilink { color: #c4b5fd; }
+/* 목록 들여쓰기 깊이. 렌더러가 붙이는 클래스(library-li-0~3)만 쓴다 -
+   인라인 style 을 만들지 않는다(escape-first 원칙). */
+.library-md li.library-li-1 { margin-left: 1.2em; }
+.library-md li.library-li-2 { margin-left: 2.4em; }
+.library-md li.library-li-3 { margin-left: 3.6em; }
+
+/* 저자 카드·계정 연결 패널. 제작자 카드(.creator-*)와 같은 규격을 쓴다.
+   계획: _docs/20260911_01 (W4 T4-e·T4-f) */
+.creator-btn--author { color: #4b5563; }
+.creator-stat--library {
+  border-color: rgba(56, 189, 248, 0.4);
+  background: rgba(56, 189, 248, 0.1);
+  color: #7dd3fc;
+}
+.author-slogan {
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  color: #d1d5db;
+  word-break: break-word;
+}
+.creator-link-panel { margin-top: 0.6rem; display: flex; flex-direction: column; gap: 0.4rem; }
+.creator-link-panel[hidden] { display: none; }
+.creator-link-input {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 0.4rem 0.6rem;
+  color: #fff;
+  font-size: 0.75rem;
+  outline: none;
+}
+.creator-link-input:focus { border-color: rgba(127, 13, 242, 0.5); }
+.creator-link-list { display: flex; flex-direction: column; gap: 3px; max-height: 220px; overflow-y: auto; }
+.creator-link-result {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+  padding: 4px 8px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.03);
+  color: #e5e7eb;
+  font-size: 12px;
+  text-align: left;
+  cursor: pointer;
+}
+.creator-link-result:hover { background: rgba(255, 255, 255, 0.08); }
+.creator-link-hint { font-size: 11px; color: #6b7280; }
+.creator-link-msg { font-size: 11px; color: #9ca3af; min-height: 1em; }

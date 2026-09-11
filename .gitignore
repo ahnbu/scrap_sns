@@ -210,3 +210,14 @@ output_total/*.bak
 output_linkedin/python/*.bak
 # X created_at KST 백필 백업 (local-only, Snowflake ID 로 재계산 가능)
 output_twitter/python/*.bak
+
+# 볼트(90_자료수집)에서 서버가 재생성하는 자료 인덱스. 본문을 담아 수 MB 다.
+# 계획: _docs/20260911_01 (W2 T2-k)
+web_viewer/sns_library_index.json
+web_viewer/sns_library_index.json.tmp
+
+# 볼트 자료 카드·제작자 프로필 (계획 _docs/20260911_01)
+!scripts/verify_library_cards_headless.mjs
+!scripts/_library_verify_server.mjs
+!scripts/build_creator_registry.py
+!scripts/creator_link_pilot.mjs

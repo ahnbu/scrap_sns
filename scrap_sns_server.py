@@ -18,6 +18,25 @@ from datetime import datetime, timedelta, timezone
 from flask import Flask, jsonify, send_from_directory, request, abort
 from flask_cors import CORS
 from utils.post_meta import META_FIELDS, build_post_meta, canonicalize_url
+from utils.library_index import (
+    LIBRARY_PLATFORMS,
+    build_library_posts,
+    get_vault_root,
+    link_library_posts,
+    vault_state,
+    write_index_file,
+)
+from utils.benchmark_match import normalize_key
+from utils.creator_registry import (
+    apply_links,
+    build_creator_match_index,
+    is_safe_creator_id,
+    load_links,
+    load_registry,
+    match_creator_id,
+    merge_link_request,
+    validate_link_request,
+)
 
 # Define project root explicitly
 PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
@@ -70,7 +89,45 @@ _POSTS_CACHE = {
     "posts_full": [],
     "posts_meta": [],
     "etag": "",
+    "library_state": None,
+    # 원문 SNS 카드가 이미 있는 자료. 목록에는 없고 「요약」 배지 → 상세 조회로만 연다.
+    "library_overlaps": {},
+    "library_count": 0,
 }
+# 볼트 상태(후보 노트 수·최대 수정시각)를 몇 초마다 다시 볼지. 캐시 키에 들어가므로
+# 이것이 없으면 볼트를 고쳐도 화면이 안 바뀐다. 300건 stat 이라 가볍지만 목록
+# 요청마다 할 일은 아니다. 계획: _docs/20260911_01 (W2 T2-c, 완료 기준 60초)
+LIBRARY_STATE_TTL_SECONDS = 30
+_LIBRARY_STATE = {"vault": "", "checked_at": None, "state": None, "written_state": None}
+
+
+def _get_library_state(now=None):
+    """(볼트 경로, 후보 노트 수, 최대 수정시각 ns). 30초 안에는 직전 값을 준다."""
+    vault = get_vault_root()
+    now = time.monotonic() if now is None else now
+    checked_at = _LIBRARY_STATE.get("checked_at")
+    if (
+        _LIBRARY_STATE.get("vault") == vault
+        and checked_at is not None
+        and now - checked_at < LIBRARY_STATE_TTL_SECONDS
+    ):
+        return _LIBRARY_STATE["state"]
+    count, max_mtime = vault_state(vault)
+    state = (vault, count, max_mtime)
+    _LIBRARY_STATE.update({"vault": vault, "checked_at": now, "state": state})
+    return state
+
+
+def _get_creators_path():
+    """제작자 레지스트리(scripts/build_creator_registry.py 산출물). 검증용으로 바꿔 끼울 수 있다."""
+    override = os.environ.get("SNS_CREATORS_PATH", "").strip()
+    return os.path.abspath(override) if override else os.path.join(WEB_VIEWER_DIR, "sns_creators.json")
+
+
+def _get_creator_links_path():
+    """사용자가 뷰어에서 확정한 계정 연결. 검증이 운영 파일을 건드리지 않게 바꿔 끼울 수 있다."""
+    override = os.environ.get("SNS_CREATOR_LINKS_PATH", "").strip()
+    return os.path.abspath(override) if override else os.path.join(WEB_VIEWER_DIR, "sns_creator_links.json")
 
 
 def _now_kst_iso():
@@ -537,7 +594,10 @@ def _normalize_platform_filter(raw):
         return ""
     if value == "x":
         return "twitter"
-    if value not in {"threads", "linkedin", "twitter", "youtube"}:
+    # web·file(볼트 자료)이 빠지면 "전체"로 취급돼, 흔한 검색어에서 상한(800)으로
+    # 자른 뒤에야 뷰어가 거른다 - 자료가 조용히 빠진다. 뷰어의
+    # getServerPlatformFilter() 와 같은 목록이다. 계획: _docs/20260911_01 (W2 T2-e, F25)
+    if value not in {"threads", "linkedin", "twitter", "youtube", *LIBRARY_PLATFORMS}:
         return ""
     return value
 
@@ -567,7 +627,12 @@ def _sort_search_matches(posts, sort):
     sort_value = str(sort or "").strip().lower()
 
     if sort_value == "sequence":
-        return sorted(posts, key=lambda post: post.get("sequence_id") or 0, reverse=True)
+        # 자료는 순번이 통합본 뒤에 붙으므로 sort_seq(수집 시각 사이 자리)로 센다.
+        return sorted(
+            posts,
+            key=lambda post: post.get("sort_seq") or post.get("sequence_id") or 0,
+            reverse=True,
+        )
 
     return sorted(
         posts,
@@ -847,6 +912,12 @@ def _load_latest_posts():
     mtime = stat.st_mtime_ns
     size = stat.st_size
     metadata_state = _get_file_state(_get_user_metadata_path())
+    library_state = _get_library_state()
+    # 레지스트리·연결 파일이 바뀌면 글마다 붙는 creator_id 가 달라진다.
+    creator_state = (
+        _get_file_state(_get_creators_path()),
+        _get_file_state(_get_creator_links_path()),
+    )
 
     if (
         _POSTS_CACHE["path"] == latest_file
@@ -855,6 +926,8 @@ def _load_latest_posts():
         and _POSTS_CACHE.get("metadata_path") == metadata_state["path"]
         and _POSTS_CACHE.get("metadata_mtime") == metadata_state["mtime"]
         and _POSTS_CACHE.get("metadata_size") == metadata_state["size"]
+        and _POSTS_CACHE.get("library_state") == library_state
+        and _POSTS_CACHE.get("creator_state") == creator_state
         and _POSTS_CACHE["posts_full"] is not None
         and _POSTS_CACHE["posts_meta"] is not None
     ):
@@ -863,10 +936,37 @@ def _load_latest_posts():
     with open(latest_file, 'r', encoding='utf-8-sig') as f:
         data = json.load(f)
 
+    raw_posts = data.get("posts", [])
+    # 볼트 자료를 합류시킨다. 통합본 파일에는 넣지 않는다 - 수집·병합(total_scrap)은
+    # 이 기능과 무관하게 돈다. 볼트를 못 읽어도 SNS 목록은 그대로 나와야 한다.
+    # 계획: _docs/20260911_01 (W2 T2-c)
+    visible_library, overlap_library = [], []
+    try:
+        start_seq = max((int(post.get("sequence_id") or 0) for post in raw_posts), default=0) + 1
+        visible_library, overlap_library = link_library_posts(
+            build_library_posts(library_state[0]), raw_posts, start_seq
+        )
+    except Exception:
+        logging.exception("Failed to load library notes")
+
+    # 모든 글에 사람 단위 id 를 붙인다 - 이름 옆 아이콘이 제작자 카드를 열 근거다.
+    # SNS 글은 레지스트리(볼트 프로필 채널 + 벤치마킹 계정 + 확정 연결) 키로 판정하고,
+    # 자료 카드는 frontmatter creator 를 그대로 쓴다. 계획: _docs/20260911_01 (W4 T4-c)
+    creators = []
+    try:
+        creators = apply_links(load_registry(_get_creators_path()), load_links(_get_creator_links_path()))
+    except Exception:
+        logging.exception("Failed to load creator registry")
+    creator_index = build_creator_match_index(creators)
+    for raw_post in raw_posts:
+        raw_post["creator_id"] = match_creator_id(raw_post, creator_index)
+    for note in [*visible_library, *overlap_library]:
+        note["creator_id"] = note.get("library_creator") or None
+
     posts_full = []
     posts_meta = []
     user_metadata = _load_user_metadata()
-    for raw_post in data.get("posts", []):
+    for raw_post in [*raw_posts, *visible_library]:
         meta = build_post_meta(raw_post)
         meta["canonical_url"] = meta.get("canonical_url") or canonicalize_url(raw_post)
         meta = {field: meta.get(field) for field in META_FIELDS}
@@ -876,6 +976,10 @@ def _load_latest_posts():
             str(raw_post.get("display_name") or ""),
             str(raw_post.get("username") or raw_post.get("user") or ""),
             user_note,
+            # 자료 카드는 제목·주제·태그로도 찾혀야 한다(본문에 제목이 없는 노트가 있다).
+            str(raw_post.get("library_title") or ""),
+            str(raw_post.get("library_topic") or ""),
+            " ".join(str(tag) for tag in (raw_post.get("library_tags") or [])),
         ]
         posts_full.append(
             {
@@ -895,7 +999,31 @@ def _load_latest_posts():
     _POSTS_CACHE["metadata_size"] = metadata_state["size"]
     _POSTS_CACHE["posts_full"] = posts_full
     _POSTS_CACHE["posts_meta"] = posts_meta
-    _POSTS_CACHE["etag"] = f'"{mtime}-{size}-{metadata_state["mtime"]}-{metadata_state["size"]}"'
+    _POSTS_CACHE["library_state"] = library_state
+    _POSTS_CACHE["creator_state"] = creator_state
+    _POSTS_CACHE["creators"] = {creator["id"]: creator for creator in creators}
+    _POSTS_CACHE["creator_index"] = creator_index
+    _POSTS_CACHE["library_count"] = len(visible_library)
+    _POSTS_CACHE["library_overlaps"] = {
+        note["sequence_id"]: {**note, **build_post_meta(note)} for note in overlap_library
+    }
+    # 볼트 상태가 ETag 에 없으면 브라우저가 304 로 옛 목록을 계속 쓴다.
+    _POSTS_CACHE["etag"] = (
+        f'"{mtime}-{size}-{metadata_state["mtime"]}-{metadata_state["size"]}'
+        f'-{library_state[1]}-{library_state[2]}'
+        f'-{creator_state[0]["mtime"]}-{creator_state[1]["mtime"]}"'
+    )
+    # CLI(utils/query-sns.mjs)가 읽는 파생 파일. 볼트 상태가 바뀔 때만 다시 쓴다.
+    # 검증 전용 서버(표본 볼트)가 운영 인덱스를 덮지 않게 경로를 바꿔 끼울 수 있다.
+    index_path = os.environ.get("SNS_LIBRARY_INDEX_PATH", "").strip() or os.path.join(
+        WEB_VIEWER_DIR, "sns_library_index.json"
+    )
+    if _LIBRARY_STATE.get("written_state") != (index_path, library_state) or not os.path.exists(index_path):
+        try:
+            write_index_file(index_path, visible_library, overlap_library, library_state[0])
+            _LIBRARY_STATE["written_state"] = (index_path, library_state)
+        except OSError:
+            logging.exception("Failed to write library index")
     return _POSTS_CACHE
 
 @app.route('/api/get-tags', methods=['GET'])
@@ -1188,7 +1316,14 @@ def creator_profile():
     클라이언트가 준 문자열을 경로로 쓰지 않는다. 그래도 `os.path.realpath` 로
     한 번 더 가둔다 - 제작자 파일이 심볼릭 링크인 경우를 막는다.
     계획: _docs/20260910_01 (W3 T3-a)
+
+    `creator_id` 경로(계획 _docs/20260911_01 W4 T4-d)는 벤치마킹 계정이 아닌 제작자도
+    받는다. 기존 `account_id` 경로는 그대로다.
     """
+    creator_id = request.args.get("creator_id")
+    if creator_id is not None:
+        return _creator_profile_by_creator_id(creator_id.strip())
+
     account_id = (request.args.get("account_id") or "").strip()
     if not account_id:
         return jsonify({"error": "account_id is required"}), 400
@@ -1234,6 +1369,95 @@ def creator_profile():
     except Exception:
         logging.exception("Failed to load creator profile")
         return jsonify({"error": "Failed to load creator profile"}), 500
+
+
+def _creator_profile_by_creator_id(creator_id):
+    """제작자 id(볼트 프로필 파일명) 하나의 프로필 + 레지스트리 정보.
+
+    🔴 경로를 조립하지 않는다. 프로필 폴더의 **파일 목록에 정확히 있는 이름**만
+    연다 - `../` 같은 값은 목록에 있을 수 없다. 모양부터 틀리면 400 이다.
+    realpath 가드도 기존 account_id 경로와 같게 유지한다.
+    """
+    if not is_safe_creator_id(creator_id):
+        return jsonify({"error": "invalid creator_id"}), 400
+    try:
+        cache = _load_latest_posts()
+        creator = (cache.get("creators") or {}).get(creator_id) or {}
+        base = {
+            "creator_id": creator_id,
+            "name": creator.get("name") or creator_id,
+            "in_registry": bool(creator),
+            "registry_channels": creator.get("channels") or {},
+            "benchmark_account": creator.get("benchmark_account"),
+            "linked_accounts": creator.get("linked_accounts") or [],
+        }
+        listing = os.listdir(CREATOR_PROFILE_DIR) if os.path.isdir(CREATOR_PROFILE_DIR) else []
+        file_name = f"{creator_id}.md"
+        if file_name not in listing:
+            return jsonify({"found": False, "reason": "no_profile_file", **base})
+
+        resolved = os.path.realpath(os.path.join(CREATOR_PROFILE_DIR, file_name))
+        allowed_root = os.path.realpath(CREATOR_PROFILE_DIR)
+        if os.path.commonpath([resolved, allowed_root]) != allowed_root:
+            logging.warning("creator profile outside vault: %s", resolved)
+            return jsonify({"found": False, "reason": "outside_vault"}), 403
+
+        parsed = _parse_creator_profile(resolved)
+        try:
+            relative = os.path.relpath(resolved, os.path.realpath(OBSIDIAN_VAULT_ROOT))
+        except ValueError:
+            # 표본 볼트처럼 드라이브가 다르면 상대경로를 만들 수 없다.
+            relative = os.path.basename(resolved)
+        return jsonify(
+            {
+                "found": True,
+                **base,
+                "file_name": os.path.basename(resolved),
+                "vault_relative_path": relative.replace("\\", "/"),
+                "obsidian_url": "obsidian://open?path="
+                + urllib.parse.quote(resolved.replace("\\", "/"), safe=""),
+                **parsed,
+            }
+        )
+    except Exception:
+        logging.exception("Failed to load creator profile by creator_id")
+        return jsonify({"error": "Failed to load creator profile"}), 500
+
+
+@app.route("/api/save-creator-links", methods=["POST"])
+def save_creator_links():
+    """뷰어 「다른 계정 연결」로 확정한 계정 연결을 저장한다.
+
+    이름·본문 링크로 찾은 후보는 여기 오지 않는다 - 사용자가 고른 것(`source: user`)과
+    본인이 게시한 링크(`self_declared`, W5)만 확정 연결이다(F23 동명이인 실측).
+    이미 다른 제작자에 속한 계정은 409 로 거절한다 - 판정 인덱스는 먼저 온 쪽이
+    이기므로, 받아도 효과가 없고 사용자는 "연결했는데 왜 안 합쳐지지"가 된다.
+    원자적 쓰기(임시 파일 → 교체). 계획: _docs/20260911_01 (W4 T4-b)
+    """
+    try:
+        payload = request.get_json(silent=True)
+        if payload is None:
+            return jsonify({"status": "error", "message": "No data received"}), 400
+        link_request, error = validate_link_request(payload)
+        if not link_request:
+            return jsonify({"status": "error", "message": error}), 400
+
+        cache = _load_latest_posts()
+        index = cache.get("creator_index") or {}
+        for account in link_request["accounts"]:
+            owner = index.get((account["platform"], normalize_key(account["key"])))
+            if owner and owner != link_request["creator_id"]:
+                return jsonify(
+                    {"status": "error", "message": "이미 다른 제작자에 연결된 계정이다", "creator_id": owner}
+                ), 409
+
+        path = _get_creator_links_path()
+        links, added = merge_link_request(load_links(path), link_request)
+        _atomic_write_json(path, {"links": links})
+        return jsonify({"status": "success", "creator_id": link_request["creator_id"], "added": added})
+    except Exception:
+        logging.exception("Failed to save creator links")
+        return jsonify({"status": "error", "message": "Failed to save creator links"}), 500
 
 
 @app.route("/api/verify-channel", methods=["GET"])
@@ -1417,7 +1641,12 @@ def _consistency_sample(post):
 def _build_consistency_probe(before_posts=None):
     """수집 후 프런트가 서버/화면 정합성을 확인할 때 사용할 기준값."""
     cache = _load_latest_posts()
-    posts = cache.get("posts_full") or []
+    # 수집 정합성은 통합본 기준이다. 볼트 자료는 순번이 가장 커서 빼지 않으면
+    # probe 가 자료 카드를 고른다.
+    posts = [
+        post for post in (cache.get("posts_full") or [])
+        if post.get("sns_platform") not in LIBRARY_PLATFORMS
+    ]
     metadata = {}
 
     if cache.get("path"):
@@ -1784,15 +2013,19 @@ def get_posts():
 def get_post_detail(sequence_id):
     try:
         cache = _load_latest_posts()
-        for post in cache["posts_full"]:
-            if post.get("sequence_id") == sequence_id:
-                return jsonify(
-                    {
-                        key: value
-                        for key, value in post.items()
-                        if key not in {"_searchable", "_user_note"}
-                    }
-                )
+        # 겹침 자료(원문 SNS 카드가 이미 있는 요약본)는 목록에 없고 여기서만 열린다.
+        found = next(
+            (post for post in cache["posts_full"] if post.get("sequence_id") == sequence_id),
+            None,
+        ) or (cache.get("library_overlaps") or {}).get(sequence_id)
+        if found:
+            return jsonify(
+                {
+                    key: value
+                    for key, value in found.items()
+                    if key not in {"_searchable", "_user_note"}
+                }
+            )
         return jsonify({"error": "Post not found"}), 404
     except FileNotFoundError:
         return jsonify({"error": "Data file not found"}), 404

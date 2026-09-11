@@ -1,0 +1,15 @@
+[
+  ["https://www.youtube.com/watch?v=ABCDEFGHIJK&t=30s", "youtube:ABCDEFGHIJK"],
+  ["https://youtu.be/ABCDEFGHIJK?si=xyz", "youtube:ABCDEFGHIJK"],
+  ["https://m.youtube.com/shorts/ABCDEFGHIJK", "youtube:ABCDEFGHIJK"],
+  ["https://www.threads.net/@hong/post/DAbc123XYZ?xmt=AQF0tracking", "threads:DAbc123XYZ"],
+  ["https://www.threads.com/@hong/post/DAbc123XYZ", "threads:DAbc123XYZ"],
+  ["https://www.linkedin.com/feed/update/urn:li:activity:7253208054928744448?updateEntityUrn=x", "linkedin:7253208054928744448"],
+  ["https://www.linkedin.com/posts/someone_title-activity-7449825131591286785-grCY/", "linkedin:7449825131591286785"],
+  ["https://x.com/someone/status/1890000000000000000?s=20", "x:1890000000000000000"],
+  ["https://blog.example.com/post/1/?utm_source=a&utm_medium=b&id=7", "url:https://blog.example.com/post/1?id=7"],
+  ["http://www.Example.com/", "url:https://example.com/"],
+  ["https://sepia-quartz.notion.site/3425c0?source=copy_link", "url:https://sepia-quartz.notion.site/3425c0"],
+  ["obsidian://open?path=x", ""],
+  ["", ""]
+]

@@ -9,6 +9,10 @@ const PROJECT_ROOT = path.resolve(__dirname, '..');
 const OUTPUT_TOTAL_DIR = path.join(PROJECT_ROOT, 'output_total');
 const TAGS_PATH = path.join(PROJECT_ROOT, 'web_viewer', 'sns_tags.json');
 const USER_METADATA_PATH = path.join(PROJECT_ROOT, 'web_viewer', 'sns_user_metadata.json');
+// 볼트(90_자료수집) 자료 인덱스. 서버가 볼트 변화를 감지해 다시 쓴다
+// (scrap_sns_server._load_latest_posts / python -m utils.library_index --write).
+// 계획: _docs/20260911_01 (W2 T2-i)
+const LIBRARY_INDEX_PATH = path.join(PROJECT_ROOT, 'web_viewer', 'sns_library_index.json');
 
 function printUsage() {
   process.stderr.write(`Usage: node utils/query-sns.mjs <command> [args] [options]
@@ -25,7 +29,8 @@ Commands:
   export <command> [args]
 
 Options:
-  --platform <platform>   Filter by platform
+  --platform <platform>   Filter by platform (threads|linkedin|x|youtube|web|file)
+                          web·file = 볼트(90_자료수집) 자료, web/sns_library_index.json
   --from <YYYY-MM-DD>     Include posts from this date
   --to <YYYY-MM-DD>       Include posts until this date
   --limit <N>             Limit results (default: 10)
@@ -71,7 +76,21 @@ function loadPosts() {
     throw new Error('latest data file does not contain a posts array');
   }
 
-  return { data, posts, file };
+  return { data, posts: [...posts, ...loadLibraryPosts()], file };
+}
+
+/**
+ * 볼트 자료(〈웹〉·〈파일〉). 원문 SNS 글이 이미 있는 겹침 자료(library_overlap_of)는
+ * 빼고 싣는다 - 뷰어와 같은 규칙이라 같은 글이 두 줄로 나오지 않는다(SPEC 성공 기준 7).
+ * 인덱스가 없으면 조용히 빈 목록이다. 서버를 한 번 띄우면 생긴다.
+ */
+function loadLibraryPosts() {
+  if (!fs.existsSync(LIBRARY_INDEX_PATH)) {
+    return [];
+  }
+  const data = readJson(LIBRARY_INDEX_PATH);
+  const posts = Array.isArray(data?.posts) ? data.posts : [];
+  return posts.filter((post) => !post.library_overlap_of);
 }
 
 function loadTags() {
@@ -99,6 +118,8 @@ function normalizePlatformName(value = '') {
   if (normalized === 'x' || normalized === 'twitter' || normalized === '트위터') return 'x';
   if (normalized === 'threads' || normalized === 'thread' || normalized === '스레드') return 'threads';
   if (normalized === 'linkedin' || normalized === '링크드인') return 'linkedin';
+  if (normalized === '웹') return 'web';
+  if (normalized === '파일') return 'file';
   return normalized;
 }
 
@@ -331,8 +352,20 @@ function postToResult(post, tags, extras = {}) {
     // 계획: _docs/20260826_03 (3.9 T7)
     is_own_post: post.is_own_post === true,
     tags,
+    ...libraryResultFields(post),
     ...restExtras,
   }, note);
+}
+
+// 자료 카드는 제목·주제·볼트 경로가 있어야 어느 노트인지 알 수 있다.
+function libraryResultFields(post) {
+  const platform = normalizePlatformName(post.sns_platform);
+  if (platform !== 'web' && platform !== 'file') return {};
+  return {
+    library_title: post.library_title || '',
+    library_topic: post.library_topic || '',
+    library_path: post.library_path || '',
+  };
 }
 
 function postToExportResult(post, tags, extras = {}) {
@@ -548,6 +581,9 @@ function cmdSearch(posts, tagsMap, userMetadata, keyword, options) {
 
       if (matchesSearchText(post.full_text, keyword)) {
         matchFields.push('full_text');
+      }
+      if (matchesSearchText(post.library_title, keyword)) {
+        matchFields.push('library_title');
       }
       if (matchesSearchText(post.display_name, keyword)) {
         matchFields.push('display_name');

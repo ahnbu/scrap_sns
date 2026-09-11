@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="web_viewer/tailwind-built.css" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="web_viewer/style.css?v=20260901-images" />
+    <link rel="stylesheet" href="web_viewer/style.css?v=20260911-library" />
   </head>
 
   <body class="font-display text-white ambient-bg min-h-screen flex flex-col">
@@ -142,6 +142,23 @@
                     d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
                   />
                 </svg>
+              </button>
+              <!-- 볼트(90_자료수집) 자료. 원본 URL 이 있으면 웹, 없으면 파일(SPEC D2).
+                   title 은 빈 화면 안내판(describeActiveFilters)이 이름으로 쓴다.
+                   계획: _docs/20260911_01 (W2 T2-f) -->
+              <button
+                data-filter="web"
+                class="filter-chip flex items-center justify-center size-10 rounded-full bg-surface-glass hover:bg-surface-glass-hover text-gray-300 hover:text-white border border-border-glass transition-all whitespace-nowrap group"
+                title="웹 자료"
+              >
+                <span class="material-symbols-outlined text-[18px] library-icon--web">language</span>
+              </button>
+              <button
+                data-filter="file"
+                class="filter-chip flex items-center justify-center size-10 rounded-full bg-surface-glass hover:bg-surface-glass-hover text-gray-300 hover:text-white border border-border-glass transition-all whitespace-nowrap group"
+                title="파일 자료"
+              >
+                <span class="material-symbols-outlined text-[18px] library-icon--file">description</span>
               </button>
               <!-- 내가 저장한 글만 보기. 설정 안에 숨어 있던 「목록에 벤치마킹 글 함께
                    보기」 토글을 대신한다 - 화면에 안 보이는 상태가 ALL 의 뜻을 바꿔
@@ -811,6 +828,40 @@
       </div>
     </div>
 
+    <!-- Library Note Modal — 볼트 자료 본문 읽기. 자료 카드 「읽기」와 원문 카드 「요약」
+         배지가 함께 쓴다. 본문은 script.js renderLibraryMarkdown() 이 escape 먼저 한 뒤
+         허용 태그만 만든다. 계획: _docs/20260911_01 (W2 T2-g) -->
+    <div
+      id="libraryNoteModal"
+      class="fixed inset-0 z-50 hidden bg-black/80 flex items-center justify-center p-4 md:p-8 transition-opacity duration-300 opacity-0 pointer-events-none"
+      aria-modal="true"
+      role="dialog"
+      aria-labelledby="libraryNoteTitle"
+    >
+      <div
+        class="relative w-full max-w-3xl bg-[#1E1E24] border border-white/10 rounded-2xl shadow-2xl flex flex-col overflow-hidden max-h-[90vh]"
+      >
+        <header class="px-6 py-4 border-b border-white/5 flex items-center justify-between gap-4 shrink-0">
+          <div class="min-w-0">
+            <h2 id="libraryNoteTitle" class="text-lg font-bold text-white tracking-tight truncate">자료</h2>
+            <p id="libraryNoteSubtitle" class="text-xs text-gray-400 mt-1 truncate"></p>
+          </div>
+          <div class="flex items-center gap-1 shrink-0">
+            <div id="libraryNoteLinks" class="flex items-center gap-1"></div>
+            <button
+              id="closeLibraryNoteModal"
+              type="button"
+              class="size-10 rounded-lg flex items-center justify-center text-gray-400 hover:text-white hover:bg-white/10 transition-all"
+              title="닫기"
+            >
+              <span class="material-symbols-outlined text-[24px]">close</span>
+            </button>
+          </div>
+        </header>
+        <div id="libraryNoteBody" class="library-md flex-1 overflow-y-auto px-6 py-5"></div>
+      </div>
+    </div>
+
     <!-- Scrap Result Modal -->
     <div
       id="scrapResultModal"
@@ -863,6 +914,6 @@
       </div>
     </div>
 
-    <script defer src="web_viewer/script.js?v=20260901-images"></script>
+    <script defer src="web_viewer/script.js?v=20260911-library"></script>
   </body>
 </html>

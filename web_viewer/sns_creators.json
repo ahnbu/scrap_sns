@@ -1,0 +1,2959 @@
+{
+    "creators": [
+        {
+            "aliases": [
+                "AI 매터스",
+                "AI matters",
+                "aimatters_official"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "youtube": "@aimatters_official"
+            },
+            "id": "AI매터스",
+            "match_keys": {
+                "youtube": [
+                    "UCr7tV8S5sMwMyFNYXyGsFbA"
+                ]
+            },
+            "name": "AI매터스",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {
+                "@aimatters_official": "UCr7tV8S5sMwMyFNYXyGsFbA"
+            }
+        },
+        {
+            "aliases": [
+                "AI커피챗(aicoffeechat)",
+                "AI커피챗"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "threads": "aicoffeechat"
+            },
+            "id": "AI커피챗_aicoffeechat",
+            "match_keys": {
+                "threads": [
+                    "aicoffeechat"
+                ]
+            },
+            "name": "AI커피챗_aicoffeechat",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "가장 쉬운 AI 활용 개발 with Boaz"
+            ],
+            "benchmark_account": null,
+            "channels": {},
+            "id": "Boaz",
+            "match_keys": {},
+            "name": "Boaz",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "Chase AI",
+                "Chase-H-AI",
+                "Tech Bridge"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "linkedin": "chasehannegan",
+                "x": "chaseai__",
+                "youtube": "@Chase-H-AI"
+            },
+            "id": "Chase-AI",
+            "match_keys": {
+                "x": [
+                    "chaseai__"
+                ],
+                "youtube": [
+                    "UCoy6cTJ7Tg0dqS-DI-_REsA"
+                ]
+            },
+            "name": "Chase AI",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {
+                "@chase-h-ai": "UCoy6cTJ7Tg0dqS-DI-_REsA"
+            }
+        },
+        {
+            "aliases": [
+                "Codex커뮤니티",
+                "Codex Community",
+                "note.sx"
+            ],
+            "benchmark_account": null,
+            "channels": {},
+            "id": "Codex커뮤니티",
+            "match_keys": {},
+            "name": "Codex커뮤니티",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "Jake Handy",
+                "HandyAI"
+            ],
+            "benchmark_account": null,
+            "channels": {},
+            "id": "Jake_Handy",
+            "match_keys": {},
+            "name": "Jake Handy",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "jeffrey-dongkyu"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "linkedin": "jeffrey-dongkyu"
+            },
+            "id": "Jeffrey_Kim",
+            "match_keys": {},
+            "name": "Jeffrey Kim",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "chatdaeri"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "linkedin": "chatdaeri"
+            },
+            "id": "Jinju_Park",
+            "match_keys": {},
+            "name": "Jinju Park",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "Starmorph AI"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "x": "starmorphai"
+            },
+            "id": "Starmorph_AI",
+            "match_keys": {
+                "x": [
+                    "starmorphai"
+                ]
+            },
+            "name": "Starmorph_AI",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [],
+            "benchmark_account": null,
+            "channels": {},
+            "id": "Tooldrop",
+            "match_keys": {},
+            "name": "Tooldrop",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [],
+            "benchmark_account": null,
+            "channels": {
+                "threads": "ai.winey_ny"
+            },
+            "id": "ai.winey_ny",
+            "match_keys": {
+                "threads": [
+                    "ai.winey_ny"
+                ]
+            },
+            "name": "ai.winey_ny",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [],
+            "benchmark_account": null,
+            "channels": {
+                "threads": "ai_younggle_man"
+            },
+            "id": "ai_younggle_man",
+            "match_keys": {
+                "threads": [
+                    "ai_younggle_man"
+                ]
+            },
+            "name": "ai_younggle_man",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [],
+            "benchmark_account": null,
+            "channels": {
+                "threads": "approval.sb"
+            },
+            "id": "approval.sb",
+            "match_keys": {
+                "threads": [
+                    "approval.sb"
+                ]
+            },
+            "name": "approval.sb",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [],
+            "benchmark_account": null,
+            "channels": {
+                "threads": "feelfree_ai"
+            },
+            "id": "feelfree_ai",
+            "match_keys": {
+                "threads": [
+                    "feelfree_ai"
+                ]
+            },
+            "name": "feelfree_ai",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [],
+            "benchmark_account": null,
+            "channels": {
+                "threads": "gemma3_27b"
+            },
+            "id": "gemma3_27b",
+            "match_keys": {
+                "threads": [
+                    "gemma3_27b"
+                ]
+            },
+            "name": "gemma3_27b",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [],
+            "benchmark_account": null,
+            "channels": {
+                "threads": "hyperexecutor"
+            },
+            "id": "hyperexecutor",
+            "match_keys": {
+                "threads": [
+                    "hyperexecutor"
+                ]
+            },
+            "name": "hyperexecutor",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [],
+            "benchmark_account": null,
+            "channels": {
+                "threads": "jisang0914"
+            },
+            "id": "jisang0914",
+            "match_keys": {
+                "threads": [
+                    "jisang0914"
+                ]
+            },
+            "name": "jisang0914",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [],
+            "benchmark_account": null,
+            "channels": {},
+            "id": "overtimesam",
+            "match_keys": {},
+            "name": "overtimesam",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "pna컴퍼니",
+                "since_1985_love",
+                "pna컴퍼니(since_1985_love)"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "threads": "since_1985_love"
+            },
+            "id": "pna컴퍼니_since_1985_love",
+            "match_keys": {
+                "threads": [
+                    "since_1985_love"
+                ]
+            },
+            "name": "pna컴퍼니_since_1985_love",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [],
+            "benchmark_account": null,
+            "channels": {},
+            "id": "ppt_egog",
+            "match_keys": {},
+            "name": "ppt_egog",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "강규석(ddg.kang)",
+                "ddg.kang"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "threads": "ddg.kang"
+            },
+            "id": "강규석",
+            "match_keys": {
+                "threads": [
+                    "ddg.kang"
+                ]
+            },
+            "name": "강규석",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "퇴근후AI",
+                "Seulki Kang",
+                "marketer.ai.seulki"
+            ],
+            "benchmark_account": "marketer_ai_seulki",
+            "channels": {
+                "linkedin": "seulki-kang",
+                "threads": "marketer.ai.seulki",
+                "youtube": "@marketer.ai.seulki"
+            },
+            "id": "강슬기",
+            "match_keys": {
+                "linkedin": [
+                    "ACoAAAzvikMBPtpMCfQ_BZ0524Sd8TmynxCJifY",
+                    "seulki-kang"
+                ],
+                "threads": [
+                    "marketer.ai.seulki"
+                ],
+                "youtube": [
+                    "UC3VyrNE736jxYfda3uaKdOg"
+                ]
+            },
+            "name": "강슬기",
+            "profile": true,
+            "sources": [
+                "vault_profile",
+                "benchmark:marketer_ai_seulki"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {
+                "@marketer.ai.seulki": "UC3VyrNE736jxYfda3uaKdOg"
+            }
+        },
+        {
+            "aliases": [
+                "강정석(catlovessubakba)",
+                "랄프 루프",
+                "강정석"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "threads": "catlovessubakba"
+            },
+            "id": "강정석",
+            "match_keys": {
+                "threads": [
+                    "catlovessubakba"
+                ]
+            },
+            "name": "강정석",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [],
+            "benchmark_account": null,
+            "channels": {
+                "linkedin": "honam-kang"
+            },
+            "id": "강호남",
+            "match_keys": {},
+            "name": "강호남",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "specal1849",
+                "공학 이야기를 풀어주는 고양이"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "threads": "specal1849"
+            },
+            "id": "공냥이",
+            "match_keys": {
+                "threads": [
+                    "specal1849"
+                ]
+            },
+            "name": "공냥이",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "Chang In, Kong",
+                "Chang In Kong",
+                "chang-in-kong-57060b171"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "linkedin": "chang-in-kong-57060b171"
+            },
+            "id": "공창인",
+            "match_keys": {},
+            "name": "공창인",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "구글공식",
+                "Google"
+            ],
+            "benchmark_account": null,
+            "channels": {},
+            "id": "구글공식_Google",
+            "match_keys": {},
+            "name": "구글공식_Google",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "긱메이커",
+                "geekmaker",
+                "geekmaker_"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "x": "geekmaker_"
+            },
+            "id": "긱메이커_geekmaker",
+            "match_keys": {
+                "x": [
+                    "geekmaker_"
+                ]
+            },
+            "name": "긱메이커",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "김건",
+                "sudo.gunn.kr",
+                "김건(sudo.gunn.kr)"
+            ],
+            "benchmark_account": "sudoremove",
+            "channels": {
+                "threads": "sudo.gunn.kr"
+            },
+            "id": "김건_sudo.gunn.kr",
+            "match_keys": {
+                "threads": [
+                    "sudo.gunn.kr"
+                ],
+                "youtube": [
+                    "UCdwVtI_TclbVf7QRC_hvc_Q"
+                ]
+            },
+            "name": "김건_sudo.gunn.kr",
+            "profile": true,
+            "sources": [
+                "vault_profile",
+                "benchmark:sudoremove"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "김경진 AI"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "threads": "kimkj008"
+            },
+            "id": "김경진",
+            "match_keys": {
+                "threads": [
+                    "kimkj008"
+                ]
+            },
+            "name": "김경진",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [],
+            "benchmark_account": null,
+            "channels": {
+                "youtube": "@kimdasol_ceo"
+            },
+            "id": "김다솔",
+            "match_keys": {
+                "youtube": [
+                    "UC8s9VGbVI2od-UlFfacV27Q"
+                ]
+            },
+            "name": "김다솔",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {
+                "@kimdasol_ceo": "UC8s9VGbVI2od-UlFfacV27Q"
+            }
+        },
+        {
+            "aliases": [
+                "duckjungkim",
+                "숙명여대 겸임교수",
+                "Firb AI 연구소장"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "linkedin": "duckjungkim"
+            },
+            "id": "김덕중",
+            "match_keys": {},
+            "name": "김덕중",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "김묘영",
+                "Myo young Kim",
+                "designermyo",
+                "Vice Versa design studio",
+                "묘묘ai"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "linkedin": "myo-young-kim-072bab170",
+                "threads": "designermyo",
+                "youtube": "@ViceVersadesignstudio"
+            },
+            "id": "김묘영_designermyo",
+            "match_keys": {
+                "threads": [
+                    "designermyo"
+                ],
+                "youtube": [
+                    "UCmzIXeKWO0U9n8mSg5AqdOQ"
+                ]
+            },
+            "name": "김묘영",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {
+                "@viceversadesignstudio": "UCmzIXeKWO0U9n8mSg5AqdOQ"
+            }
+        },
+        {
+            "aliases": [
+                "김수호",
+                "suho_hp",
+                "김수호(suho_hp)"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "threads": "suho_hp"
+            },
+            "id": "김수호_suho_hp",
+            "match_keys": {
+                "threads": [
+                    "suho_hp"
+                ]
+            },
+            "name": "김수호_suho_hp",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "Seunghan",
+                "seungha__n"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "threads": "seungha__n"
+            },
+            "id": "김승한_seungha__n",
+            "match_keys": {
+                "threads": [
+                    "seungha__n"
+                ]
+            },
+            "name": "김승한",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "김시현(Sihyun_Kim)",
+                "Sihyun Kim"
+            ],
+            "benchmark_account": null,
+            "channels": {},
+            "id": "김시현",
+            "match_keys": {},
+            "name": "김시현",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "김영동",
+                "Youngdong Kim",
+                "youngdongkim",
+                "lucas_flatwhite"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "linkedin": "youngdongkim",
+                "threads": "lucas_flatwhite",
+                "x": "lucas_flatwhite"
+            },
+            "id": "김영동_lucas_flatwhite",
+            "match_keys": {
+                "threads": [
+                    "lucas_flatwhite"
+                ],
+                "x": [
+                    "lucas_flatwhite"
+                ]
+            },
+            "name": "김영동",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "김이솝",
+                "김이솝의 AI 가이드",
+                "aesop_ai",
+                "김이삭"
+            ],
+            "benchmark_account": null,
+            "channels": {},
+            "id": "김이솝",
+            "match_keys": {},
+            "name": "김이솝",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "김재우",
+                "gaebalai"
+            ],
+            "benchmark_account": null,
+            "channels": {},
+            "id": "김재우_gaebalai",
+            "match_keys": {},
+            "name": "김재우_gaebalai",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "김종원_인문학작가",
+                "김종원",
+                "kim_jongwon"
+            ],
+            "benchmark_account": null,
+            "channels": {},
+            "id": "김종원_인문학작가",
+            "match_keys": {},
+            "name": "김종원_인문학작가",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "김태형"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "linkedin": "taekim34"
+            },
+            "id": "김태형",
+            "match_keys": {},
+            "name": "김태형",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "김효율",
+                "lean_kim"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "youtube": "@lean_kim"
+            },
+            "id": "김효율의_AI_개발단",
+            "match_keys": {
+                "youtube": [
+                    "UCzVC0uLYSZa780yJaGD8sxQ"
+                ]
+            },
+            "name": "김효율의 AI 개발단",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {
+                "@lean_kim": "UCzVC0uLYSZa780yJaGD8sxQ"
+            }
+        },
+        {
+            "aliases": [
+                "꽁돈",
+                "kkongdon_story",
+                "KKONGDON"
+            ],
+            "benchmark_account": "kkongdon_story",
+            "channels": {
+                "threads": "kkongdon_story"
+            },
+            "id": "꽁돈ai",
+            "match_keys": {
+                "threads": [
+                    "kkongdon_story"
+                ]
+            },
+            "name": "꽁돈ai",
+            "profile": true,
+            "sources": [
+                "vault_profile",
+                "benchmark:kkongdon_story"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "나둘",
+                "nadool",
+                "nadool__",
+                "나둘(nadool)"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "threads": "nadool__"
+            },
+            "id": "나둘_nadool",
+            "match_keys": {
+                "threads": [
+                    "nadool__"
+                ]
+            },
+            "name": "나둘_nadool",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "naminsoo_ai",
+                "AIMAX"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "threads": "naminsoo_ai"
+            },
+            "id": "나민수_AI",
+            "match_keys": {
+                "threads": [
+                    "naminsoo_ai"
+                ]
+            },
+            "name": "나민수 AI",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "남우진",
+                "PlanDoc",
+                "tree_jin99"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "threads": "tree_jin99"
+            },
+            "id": "남우진_plandoc",
+            "match_keys": {
+                "threads": [
+                    "tree_jin99"
+                ]
+            },
+            "name": "남우진_plandoc",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "단테_dante_ailab",
+                "단테",
+                "곽지호",
+                "Jiho Kwak",
+                "dante_ailab",
+                "dante-labs"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "linkedin": "jihokwak",
+                "threads": "dante_ailab",
+                "youtube": "@dante-labs"
+            },
+            "id": "단테_dante_ailab",
+            "match_keys": {
+                "threads": [
+                    "dante_ailab"
+                ],
+                "youtube": [
+                    "UCXKXULkq--aSgzScYeLYJog"
+                ]
+            },
+            "name": "단테",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {
+                "@dante-labs": "UCXKXULkq--aSgzScYeLYJog"
+            }
+        },
+        {
+            "aliases": [
+                "Demis Hassabis",
+                "데미스 하사비스"
+            ],
+            "benchmark_account": null,
+            "channels": {},
+            "id": "데미스하사비스",
+            "match_keys": {},
+            "name": "데미스하사비스",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "데브디자인(devdesigner)",
+                "퍼스널OS-Lab",
+                "PersonalOS Lab",
+                "데브디자인",
+                "창업한 개발자",
+                "devitez"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "threads": "devitez"
+            },
+            "id": "데브디자인",
+            "match_keys": {
+                "threads": [
+                    "devitez"
+                ]
+            },
+            "name": "데브디자인",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "리모션공식",
+                "remotion-dev",
+                "리모션공식(remotion-dev)"
+            ],
+            "benchmark_account": null,
+            "channels": {},
+            "id": "리모션공식_remotion-dev",
+            "match_keys": {},
+            "name": "리모션공식_remotion-dev",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "Marketer Grace",
+                "gracedomarketing",
+                "마케터 Grace",
+                "마케터Grace"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "threads": "gracedomarketing",
+                "youtube": "@gracemultifullife"
+            },
+            "id": "마케터Grace",
+            "match_keys": {
+                "threads": [
+                    "gracedomarketing"
+                ],
+                "youtube": [
+                    "UC6p6cyXKUYS12AEfd2a5jVw"
+                ]
+            },
+            "name": "마케터Grace",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {
+                "@gracemultifullife": "UC6p6cyXKUYS12AEfd2a5jVw"
+            }
+        },
+        {
+            "aliases": [
+                "steveaimkt",
+                "한성국"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "youtube": "@Marketing_Truman"
+            },
+            "id": "마케팅트루먼쇼",
+            "match_keys": {
+                "youtube": [
+                    "UCfEs5z2Woa_vaB-UtvUmyTw"
+                ]
+            },
+            "name": "마케팅트루먼쇼",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {
+                "@marketing_truman": "UCfEs5z2Woa_vaB-UtvUmyTw"
+            }
+        },
+        {
+            "aliases": [
+                "메라돔"
+            ],
+            "benchmark_account": null,
+            "channels": {},
+            "id": "메라킴",
+            "match_keys": {},
+            "name": "메라킴",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "에반",
+                "chacha95"
+            ],
+            "benchmark_account": null,
+            "channels": {},
+            "id": "메이커에반",
+            "match_keys": {},
+            "name": "메이커에반",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "makefamily",
+                "AIMAX",
+                "makefriends"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "threads": "makefamily_"
+            },
+            "id": "메이크패밀리",
+            "match_keys": {
+                "threads": [
+                    "makefamily_"
+                ]
+            },
+            "name": "메이크패밀리",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [],
+            "benchmark_account": null,
+            "channels": {},
+            "id": "메타코드M",
+            "match_keys": {},
+            "name": "메타코드M",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "뭉이",
+                "moongi",
+                "MOONGI",
+                "moongi_adventures",
+                "뭉이(moongi)"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "threads": "moongi_adventures"
+            },
+            "id": "뭉이_moongi",
+            "match_keys": {
+                "threads": [
+                    "moongi_adventures"
+                ]
+            },
+            "name": "뭉이_moongi",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "민제(gpt_minje)",
+                "gpt_minje"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "threads": "gpt_minje"
+            },
+            "id": "민제",
+            "match_keys": {
+                "threads": [
+                    "gpt_minje"
+                ]
+            },
+            "name": "민제",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "VibeLabs"
+            ],
+            "benchmark_account": null,
+            "channels": {},
+            "id": "바이브랩스",
+            "match_keys": {},
+            "name": "바이브랩스",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "박성훈_LeanX",
+                "박성훈",
+                "박성훈(LeanX)",
+                "FounderAI"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "threads": "leanx.official"
+            },
+            "id": "박성훈_LeanX",
+            "match_keys": {
+                "threads": [
+                    "leanx.official"
+                ]
+            },
+            "name": "박성훈_LeanX",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "배움의 달인",
+                "배움의달인",
+                "김문정"
+            ],
+            "benchmark_account": null,
+            "channels": {},
+            "id": "배움의달인",
+            "match_keys": {},
+            "name": "배움의 달인",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "빌더조쉬(builderjoshkim)",
+                "빌더 조쉬 Builder Josh",
+                "Builder Josh"
+            ],
+            "benchmark_account": "builderjosh",
+            "channels": {
+                "linkedin": "uxjosh",
+                "threads": "joshproductletter",
+                "youtube": "@builderjoshkim"
+            },
+            "id": "빌더조쉬",
+            "match_keys": {
+                "linkedin": [
+                    "ACoAAAfst4QBZ_TBpSZb5m5EitKHc3H5PhUbe5E",
+                    "uxjosh"
+                ],
+                "threads": [
+                    "joshproductletter"
+                ],
+                "youtube": [
+                    "UCxj3eVTAv9KLdrowXcuCFDQ"
+                ]
+            },
+            "name": "빌더조쉬",
+            "profile": true,
+            "sources": [
+                "vault_profile",
+                "benchmark:builderjosh"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {
+                "@builderjoshkim": "UCxj3eVTAv9KLdrowXcuCFDQ"
+            }
+        },
+        {
+            "aliases": [
+                "샘알트먼",
+                "Sam Altman",
+                "sam_altman"
+            ],
+            "benchmark_account": null,
+            "channels": {},
+            "id": "샘알트먼",
+            "match_keys": {},
+            "name": "샘알트먼",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "샘호트만(ai.sam_hottman)",
+                "샘 호트만 : AI 엔지니어의 시선",
+                "샘 호트만"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "youtube": "@ai.sam_hottman"
+            },
+            "id": "샘호트만",
+            "match_keys": {
+                "youtube": [
+                    "UCxZRFtsXhBlEsz9kSvNWaAQ"
+                ]
+            },
+            "name": "샘호트만",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {
+                "@ai.sam_hottman": "UCxZRFtsXhBlEsz9kSvNWaAQ"
+            }
+        },
+        {
+            "aliases": [
+                "서장원_똑똑한개발자",
+                "서대표",
+                "서장원",
+                "서장원 대표",
+                "AI 서대표",
+                "똑똑한개발자",
+                "TOKTOKHAN.DEV"
+            ],
+            "benchmark_account": null,
+            "channels": {},
+            "id": "서장원_똑똑한개발자",
+            "match_keys": {},
+            "name": "서장원_똑똑한개발자",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "송다혜",
+                "송다이",
+                "daht_mad",
+                "지피터스",
+                "뽀짝이"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "threads": "daht_mad"
+            },
+            "id": "송다혜_지피터스",
+            "match_keys": {
+                "threads": [
+                    "daht_mad"
+                ]
+            },
+            "name": "송다혜_지피터스",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "백준",
+                "Baek Jun"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "linkedin": "준-백-403007397"
+            },
+            "id": "스타라이트",
+            "match_keys": {},
+            "name": "스타라이트",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "시애나",
+                "AI 크리에이터 시애나",
+                "sienna__ai"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "threads": "sienna__ai"
+            },
+            "id": "시애나ai",
+            "match_keys": {
+                "threads": [
+                    "sienna__ai"
+                ]
+            },
+            "name": "시애나ai",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "신성진_CDSA대표",
+                "신성진",
+                "신성진 대표",
+                "신성진 이사",
+                "한국데이터사이언티스트협회",
+                "CDSA",
+                "workbyax",
+                "sungjinshinworkbyax"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "linkedin": "sungjinshinworkbyax",
+                "youtube": "@workbyax"
+            },
+            "id": "신성진_CDSA대표",
+            "match_keys": {
+                "youtube": [
+                    "UC2z8dKsrZIiuGiIVNsRfD1A"
+                ]
+            },
+            "name": "신성진_CDSA대표",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {
+                "@workbyax": "UC2z8dKsrZIiuGiIVNsRfD1A"
+            }
+        },
+        {
+            "aliases": [
+                "신수정",
+                "soojung_shin"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "linkedin": "soojung-shin-87163013"
+            },
+            "id": "신수정",
+            "match_keys": {},
+            "name": "신수정",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "신쌤",
+                "유튜브신쌤",
+                "youtubeshinssam",
+                "shinsaem"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "youtube": "@youtubeshinssam"
+            },
+            "id": "신쌤",
+            "match_keys": {
+                "youtube": [
+                    "UC-6DLwseTZG-l4JprVV2MIQ"
+                ]
+            },
+            "name": "신쌤",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {
+                "@youtubeshinssam": "UC-6DLwseTZG-l4JprVV2MIQ"
+            }
+        },
+        {
+            "aliases": [],
+            "benchmark_account": null,
+            "channels": {},
+            "id": "신영선",
+            "match_keys": {},
+            "name": "신영선",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "신주일_퇴사한아빠",
+                "퇴사한아빠",
+                "퇴사한 아빠",
+                "신주일",
+                "toesahanappa"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "youtube": "@toesahanappa"
+            },
+            "id": "신주일_퇴사한아빠",
+            "match_keys": {
+                "youtube": [
+                    "UCbRPfngJms9A4QOczFl6qqg"
+                ]
+            },
+            "name": "신주일_퇴사한아빠",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {
+                "@toesahanappa": "UCbRPfngJms9A4QOczFl6qqg"
+            }
+        },
+        {
+            "aliases": [
+                "신주혜",
+                "selfishclub",
+                "zemma"
+            ],
+            "benchmark_account": null,
+            "channels": {},
+            "id": "신주혜_selfishclub",
+            "match_keys": {},
+            "name": "신주혜_selfishclub",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "신태순",
+                "shintaesoon",
+                "콘텐츠가 월급주는 아빠"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "threads": "shintaesoon"
+            },
+            "id": "신태순",
+            "match_keys": {
+                "threads": [
+                    "shintaesoon"
+                ]
+            },
+            "name": "신태순",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "pragmatic-dev"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "youtube": "@pragmatic-dev"
+            },
+            "id": "실용주의_개발",
+            "match_keys": {
+                "youtube": [
+                    "UCYYxayhOPmXVCXjnMgUt3iQ"
+                ]
+            },
+            "name": "실용주의 개발",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {
+                "@pragmatic-dev": "UCYYxayhOPmXVCXjnMgUt3iQ"
+            }
+        },
+        {
+            "aliases": [
+                "안준혁_AItopia",
+                "안준혁",
+                "안준혁(joonhyeok-ahn)",
+                "joonhyeok-ahn",
+                "Joonhyeok Ahn",
+                "Jun",
+                "AIpreneur-J",
+                "AI Topia"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "linkedin": "joonhyeok-ahn",
+                "threads": "ai_topia_",
+                "youtube": "@AIpreneur-J"
+            },
+            "id": "안준혁_AItopia",
+            "match_keys": {
+                "threads": [
+                    "ai_topia_"
+                ]
+            },
+            "name": "안준혁_AItopia",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [
+                "youtube"
+            ],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "Changhyun Ahn",
+                "한림대학교"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "linkedin": "changhyun-ahn-828b72a6"
+            },
+            "id": "안창현",
+            "match_keys": {},
+            "name": "안창현",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "알렉스AI_Alexai",
+                "알렉스AI",
+                "Alex AI",
+                "Alexai",
+                "alex_ai_mcp",
+                "alexai_la"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "threads": "alex_ai_mcp",
+                "youtube": "@alexai_la"
+            },
+            "id": "알렉스AI_Alexai",
+            "match_keys": {
+                "threads": [
+                    "alex_ai_mcp"
+                ],
+                "youtube": [
+                    "UCcaGmtprQ8AOBtxo4zkEywA"
+                ]
+            },
+            "name": "알렉스AI",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {
+                "@alexai_la": "UCcaGmtprQ8AOBtxo4zkEywA"
+            }
+        },
+        {
+            "aliases": [
+                "양석원(ejang)",
+                "ejang",
+                "jayuskole"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "threads": "ejang"
+            },
+            "id": "양석원",
+            "match_keys": {
+                "threads": [
+                    "ejang"
+                ]
+            },
+            "name": "양석원",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "엄소영",
+                "haurlogs",
+                "SungYong EOM",
+                "SungYong, Eom",
+                "엄소영(haurlogs)"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "threads": "life.of.haru"
+            },
+            "id": "엄소영_haurlogs",
+            "match_keys": {
+                "threads": [
+                    "life.of.haru"
+                ]
+            },
+            "name": "엄소영_haurlogs",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "엉클잡스",
+                "unclejobs.ai",
+                "엉클잡스(unclejobs.ai)"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "threads": "unclejobs.ai"
+            },
+            "id": "엉클잡스_unclejobs.ai",
+            "match_keys": {
+                "threads": [
+                    "unclejobs.ai"
+                ]
+            },
+            "name": "엉클잡스_unclejobs.ai",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "에릭(seize.more)",
+                "씨즈모어",
+                "에릭"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "threads": "seize.more"
+            },
+            "id": "에릭",
+            "match_keys": {
+                "threads": [
+                    "seize.more"
+                ]
+            },
+            "name": "에릭",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "todaycode",
+                "TodayCode",
+                "오늘코드todaycode",
+                "corazzon"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "youtube": "@todaycode"
+            },
+            "id": "오늘코드_todaycode",
+            "match_keys": {
+                "youtube": [
+                    "UCLR3sD0KB_dWpvcsrLP0aUg"
+                ]
+            },
+            "name": "오늘코드",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {
+                "@todaycode": "UCLR3sD0KB_dWpvcsrLP0aUg"
+            }
+        },
+        {
+            "aliases": [
+                "안병욱"
+            ],
+            "benchmark_account": null,
+            "channels": {},
+            "id": "오즈코딩스쿨",
+            "match_keys": {},
+            "name": "오즈코딩스쿨",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "Opensurvey",
+                "오픈서베이 Opensurvey"
+            ],
+            "benchmark_account": null,
+            "channels": {},
+            "id": "오픈서베이",
+            "match_keys": {},
+            "name": "오픈서베이",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "옥토버",
+                "october.ai",
+                "옥토버(october.ai)"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "threads": "october.ai"
+            },
+            "id": "옥토버_october.ai",
+            "match_keys": {
+                "threads": [
+                    "october.ai"
+                ]
+            },
+            "name": "옥토버_october.ai",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "우주보스_김민욱",
+                "김민욱_우주보스",
+                "우주보스",
+                "김민욱",
+                "woojooboss",
+                "woojooboss_"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "youtube": "@woojooboss"
+            },
+            "id": "우주보스_김민욱",
+            "match_keys": {
+                "youtube": [
+                    "UCjceVQ4uGw6bpm3hH19qR9w"
+                ]
+            },
+            "name": "우주보스_김민욱",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {
+                "@woojooboss": "UCjceVQ4uGw6bpm3hH19qR9w"
+            }
+        },
+        {
+            "aliases": [
+                "원카",
+                "원카Ai",
+                "wonkalab",
+                "원카Wonka"
+            ],
+            "benchmark_account": null,
+            "channels": {},
+            "id": "원카",
+            "match_keys": {},
+            "name": "원카",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "윤자동",
+                "yunjadong",
+                "윤자동(yunjadong)"
+            ],
+            "benchmark_account": "yunjadong",
+            "channels": {
+                "youtube": "@yunjadong"
+            },
+            "id": "윤자동",
+            "match_keys": {
+                "youtube": [
+                    "UCYg51KBo-UcA4QILcYl5LEw"
+                ]
+            },
+            "name": "윤자동",
+            "profile": true,
+            "sources": [
+                "vault_profile",
+                "benchmark:yunjadong"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {
+                "@yunjadong": "UCYg51KBo-UcA4QILcYl5LEw"
+            }
+        },
+        {
+            "aliases": [
+                "Bumkyu Lee",
+                "스파르타클럽"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "linkedin": "bumkyu-lee-75b6338a"
+            },
+            "id": "이범규-스파르타클럽",
+            "match_keys": {},
+            "name": "이범규-스파르타클럽",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "이석호",
+                "이모카",
+                "하프노마드",
+                "half.nomad",
+                "바람의색상_헬조선공략집"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "threads": "half.nomad"
+            },
+            "id": "이석호_이모카",
+            "match_keys": {
+                "threads": [
+                    "half.nomad"
+                ]
+            },
+            "name": "이석호_이모카",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "이승필",
+                "이승필(Seungpil_Lee)",
+                "Seungpil Lee",
+                "seungpil"
+            ],
+            "benchmark_account": "seungpil",
+            "channels": {
+                "linkedin": "seungpil"
+            },
+            "id": "이승필_사용성연구소",
+            "match_keys": {
+                "linkedin": [
+                    "ACoAAChsCqABHbZtEaJtYtkT7lT7f1V9dwBlyIE",
+                    "seungpil"
+                ]
+            },
+            "name": "이승필_사용성연구소",
+            "profile": true,
+            "sources": [
+                "vault_profile",
+                "benchmark:seungpil"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "ee.yxx",
+                "이유",
+                "GDP-Studio"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "threads": "ee.yxx"
+            },
+            "id": "이유_ee.yxx_GDP-Studio",
+            "match_keys": {
+                "threads": [
+                    "ee.yxx"
+                ]
+            },
+            "name": "이유 (ee.yxx) — GDP-Studio",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "이정민(Jeongmin_Lee)",
+                "Jeongmin Lee"
+            ],
+            "benchmark_account": null,
+            "channels": {},
+            "id": "이정민",
+            "match_keys": {},
+            "name": "이정민",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "이종범_AI겸임교수",
+                "AI 겸임교수 이종범",
+                "AI 겸임교수",
+                "aiadjunct",
+                "다솔인",
+                "캠피엘"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "youtube": "@aiadjunct"
+            },
+            "id": "이종범_AI겸임교수",
+            "match_keys": {
+                "youtube": [
+                    "UCztt42h03X49HFRGW9--Bhg"
+                ]
+            },
+            "name": "이종범_AI겸임교수",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {
+                "@aiadjunct": "UCztt42h03X49HFRGW9--Bhg"
+            }
+        },
+        {
+            "aliases": [
+                "이종범_닥터프로스트",
+                "이종범 작가",
+                "닥터프로스트",
+                "웹툰스쿨 이종범",
+                "웹툰스쿨"
+            ],
+            "benchmark_account": null,
+            "channels": {},
+            "id": "이종범_닥터프로스트",
+            "match_keys": {},
+            "name": "이종범_닥터프로스트",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "이지인",
+                "이지인(jiin-jinny-lee)",
+                "Jiin (Jinny) Lee",
+                "DayFocus Lab",
+                "dayfocuslab",
+                "jiin-jinny-lee"
+            ],
+            "benchmark_account": "jiin_jinny_lee",
+            "channels": {
+                "linkedin": "jiin-jinny-lee-15b4072b8"
+            },
+            "id": "이지인_dayfocuslab",
+            "match_keys": {
+                "linkedin": [
+                    "ACoAAEw8IBcBaoQDt-XJE3mEQljO6gDEp2CfOMI",
+                    "jiin-jinny-lee-15b4072b8"
+                ]
+            },
+            "name": "이지인_dayfocuslab",
+            "profile": true,
+            "sources": [
+                "vault_profile",
+                "benchmark:jiin_jinny_lee"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "HoYeonLee",
+                "HoYeon Lee",
+                "hoyeonleekr",
+                "grab.frontier"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "linkedin": "hoyeonleekr",
+                "threads": "grab.frontier"
+            },
+            "id": "이호연_HoYeonLee",
+            "match_keys": {
+                "threads": [
+                    "grab.frontier"
+                ]
+            },
+            "name": "이호연",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "인생치트키 민님"
+            ],
+            "benchmark_account": null,
+            "channels": {},
+            "id": "인생치트키-민",
+            "match_keys": {},
+            "name": "인생치트키-민",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "일타 AI",
+                "1.ta.ai"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "threads": "1.ta.ai"
+            },
+            "id": "일타AI",
+            "match_keys": {
+                "threads": [
+                    "1.ta.ai"
+                ]
+            },
+            "name": "일타AI",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [],
+            "benchmark_account": null,
+            "channels": {
+                "linkedin": "keunyoung0924"
+            },
+            "id": "임근영",
+            "match_keys": {},
+            "name": "임근영",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "Zoon Chang"
+            ],
+            "benchmark_account": null,
+            "channels": {},
+            "id": "장원준",
+            "match_keys": {},
+            "name": "장원준",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "장피엠",
+                "jangpm",
+                "장피엠(jangpm)",
+                "일잘러 장피엠",
+                "1달러 장피엠",
+                "일잘러장PM",
+                "장PM",
+                "jang_pm"
+            ],
+            "benchmark_account": "jangpm",
+            "channels": {
+                "youtube": "@jangpm"
+            },
+            "id": "장피엠",
+            "match_keys": {
+                "youtube": [
+                    "UCSkpTOEl_zW6b4Y7M_Prefg"
+                ]
+            },
+            "name": "장피엠",
+            "profile": true,
+            "sources": [
+                "vault_profile",
+                "benchmark:jangpm"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {
+                "@jangpm": "UCSkpTOEl_zW6b4Y7M_Prefg"
+            }
+        },
+        {
+            "aliases": [
+                "financialmate"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "linkedin": "financialmate"
+            },
+            "id": "재무선배",
+            "match_keys": {},
+            "name": "재무선배",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "전한별",
+                "진한별",
+                "hanbyul_jeon"
+            ],
+            "benchmark_account": null,
+            "channels": {},
+            "id": "전한별",
+            "match_keys": {},
+            "name": "전한별",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "정구봉(gb-jeong)"
+            ],
+            "benchmark_account": null,
+            "channels": {},
+            "id": "정구봉",
+            "match_keys": {},
+            "name": "정구봉",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "Byeongjin Jeong"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "linkedin": "valueforyourbiz"
+            },
+            "id": "정병준",
+            "match_keys": {},
+            "name": "정병준",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "제레미어틀리",
+                "Jeremy Utley",
+                "jeremy_utley"
+            ],
+            "benchmark_account": null,
+            "channels": {},
+            "id": "제레미어틀리",
+            "match_keys": {},
+            "name": "제레미어틀리",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "chiftkey"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "threads": "chiftkey"
+            },
+            "id": "조현일",
+            "match_keys": {
+                "threads": [
+                    "chiftkey"
+                ]
+            },
+            "name": "조현일",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "전시진",
+                "시리얼",
+                "Sireal",
+                "진시진(sireal)"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "youtube": "@sirealco"
+            },
+            "id": "진시진_sireal",
+            "match_keys": {
+                "youtube": [
+                    "UCCsViUTlEcF93FtEZpFMciw"
+                ]
+            },
+            "name": "진시진_sireal",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {
+                "@sirealco": "UCCsViUTlEcF93FtEZpFMciw"
+            }
+        },
+        {
+            "aliases": [
+                "JimCoding"
+            ],
+            "benchmark_account": null,
+            "channels": {},
+            "id": "짐코딩",
+            "match_keys": {},
+            "name": "짐코딩",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "jingyoochoi",
+                "최진규(jingyoochoi)"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "linkedin": "jingyoochoi"
+            },
+            "id": "최진규",
+            "match_keys": {},
+            "name": "최진규",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "카피라이터 6인",
+                "카피라이터6인",
+                "6인 카피라이터"
+            ],
+            "benchmark_account": null,
+            "channels": {},
+            "id": "카피라이터6인",
+            "match_keys": {},
+            "name": "카피라이터6인",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "calmtiger_",
+                "캄타 | 비개발자의 AI 활용법"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "threads": "calmtiger_"
+            },
+            "id": "캄타_calmtiger_",
+            "match_keys": {
+                "threads": [
+                    "calmtiger_"
+                ]
+            },
+            "name": "캄타",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "커리어해커_알렉스",
+                "커리어해커 알렉스",
+                "careerhackeralex",
+                "Alex Sanghyeon Ahn",
+                "alexsanghyeonahn"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "linkedin": "alexsanghyeonahn",
+                "threads": "careerhackeralex"
+            },
+            "id": "커리어해커_알렉스",
+            "match_keys": {
+                "threads": [
+                    "careerhackeralex"
+                ]
+            },
+            "name": "커리어해커 알렉스",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "코드팩토리",
+                "codefactory",
+                "최원철"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "youtube": "@codefactory"
+            },
+            "id": "코드팩토리",
+            "match_keys": {
+                "youtube": [
+                    "UC3jwhbC80Txawp0Ulp9babQ"
+                ]
+            },
+            "name": "코드팩토리",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {
+                "@codefactory": "UC3jwhbC80Txawp0Ulp9babQ"
+            }
+        },
+        {
+            "aliases": [
+                "QuantumJumpClub",
+                "QJC"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "youtube": "@qjc_qjc"
+            },
+            "id": "퀀텀점프클럽",
+            "match_keys": {
+                "youtube": [
+                    "UCifUR1eEHhhXxK_Q_XoArPQ"
+                ]
+            },
+            "name": "퀀텀점프클럽",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {
+                "@qjc_qjc": "UCifUR1eEHhhXxK_Q_XoArPQ"
+            }
+        },
+        {
+            "aliases": [
+                "클로드공식",
+                "Anthropic"
+            ],
+            "benchmark_account": null,
+            "channels": {},
+            "id": "클로드공식_Anthropic",
+            "match_keys": {},
+            "name": "클로드공식_Anthropic",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [],
+            "benchmark_account": null,
+            "channels": {},
+            "id": "페이퍼로지",
+            "match_keys": {},
+            "name": "페이퍼로지",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [],
+            "benchmark_account": null,
+            "channels": {},
+            "id": "편집자P",
+            "match_keys": {},
+            "name": "편집자P",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "PitchTitan"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "youtube": "@PitchTitan"
+            },
+            "id": "피치타이탄",
+            "match_keys": {
+                "youtube": [
+                    "UChu2WO_hNTDa8zf2e6Yoh8A"
+                ]
+            },
+            "name": "피치타이탄",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {
+                "@pitchtitan": "UChu2WO_hNTDa8zf2e6Yoh8A"
+            }
+        },
+        {
+            "aliases": [],
+            "benchmark_account": null,
+            "channels": {},
+            "id": "필로소피AI",
+            "match_keys": {},
+            "name": "필로소피AI",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "한국웹기술",
+                "KWT",
+                "blog.kwt.co.kr"
+            ],
+            "benchmark_account": null,
+            "channels": {},
+            "id": "한국웹기술",
+            "match_keys": {},
+            "name": "한국웹기술",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "hangglwriter"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "youtube": "@hangglwriter"
+            },
+            "id": "행글라이터",
+            "match_keys": {
+                "youtube": [
+                    "UCv2q4s0ZAJW6eCb0ubzE08g"
+                ]
+            },
+            "name": "행글라이터",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {
+                "@hangglwriter": "UCv2q4s0ZAJW6eCb0ubzE08g"
+            }
+        },
+        {
+            "aliases": [],
+            "benchmark_account": null,
+            "channels": {},
+            "id": "헤이디",
+            "match_keys": {},
+            "name": "헤이디",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "홍아린",
+                "홍아린 AI",
+                "hong_arin"
+            ],
+            "benchmark_account": null,
+            "channels": {
+                "youtube": "@hong_arin"
+            },
+            "id": "홍아린",
+            "match_keys": {},
+            "name": "홍아린",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [
+                "youtube"
+            ],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [
+                "홍작가",
+                "sshong",
+                "홍작가(sshong)"
+            ],
+            "benchmark_account": null,
+            "channels": {},
+            "id": "홍작가_sshong",
+            "match_keys": {},
+            "name": "홍작가_sshong",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        },
+        {
+            "aliases": [],
+            "benchmark_account": null,
+            "channels": {},
+            "id": "황민호",
+            "match_keys": {},
+            "name": "황민호",
+            "profile": true,
+            "sources": [
+                "vault_profile"
+            ],
+            "status": "active",
+            "unverified": [],
+            "youtube_verified": {}
+        }
+    ],
+    "generated_at": "2026-09-11T10:27:08+09:00"
+}

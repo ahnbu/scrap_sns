@@ -5,6 +5,7 @@ Flask API 보안 테스트 (S1~S10)
 - save-tags 입력 검증
 - 에러 내부정보 미포함
 """
+import os
 import pytest
 import json
 from unittest.mock import patch, MagicMock
@@ -166,3 +167,66 @@ class TestCreatorProfileAccess:
         body = resp.get_data(as_text=True)
         assert "Traceback" not in body
         assert "\\Users\\" not in body
+
+
+_FIXTURE_VAULT = os.path.join("tests", "fixtures", "golden", "library", "vault")
+
+
+@pytest.fixture
+def fixture_vault(monkeypatch):
+    """운영 볼트 대신 표본 볼트를 읽게 바꿔 끼운다(S11~S13 과 같은 간접 조회 방식)."""
+    import scrap_sns_server as server
+
+    monkeypatch.setenv("SNS_LIBRARY_VAULT", os.path.abspath(_FIXTURE_VAULT))
+    monkeypatch.setattr(server, "CREATOR_PROFILE_DIR", os.path.abspath(os.path.join(_FIXTURE_VAULT, "_제작자별_상세")))
+    return server
+
+
+@pytest.mark.security
+class TestCreatorIdAccess:
+    """S14~S17: 제작자 id 경로와 계정 연결 저장. 계획: _docs/20260911_01 (W4 T4-b·T4-d)"""
+
+    def test_s14_traversal_creator_id_rejected(self, client, fixture_vault):
+        """S14: 경로처럼 생긴 creator_id 는 400 이다"""
+        for probe in ('../../../../.env', '..\\..\\x', 'a/b', '..', '.env', 'C:/Users/ahnbu/.env', ''):
+            resp = client.get('/api/creator-profile', query_string={'creator_id': probe})
+            assert resp.status_code == 400, probe
+            assert 'profile_text' not in resp.get_data(as_text=True), probe
+
+    def test_s15_unknown_creator_is_not_found(self, client, fixture_vault):
+        """S15: 목록에 없는 이름은 found:false 이고 내부 경로가 새지 않는다"""
+        resp = client.get('/api/creator-profile', query_string={'creator_id': '없는제작자'})
+        assert resp.status_code == 200
+        data = resp.get_json()
+        assert data['found'] is False and 'profile_text' not in data
+        body = resp.get_data(as_text=True)
+        assert "\\Users\\" not in body and "Traceback" not in body
+
+    def test_s16_listed_profile_opens(self, client, fixture_vault):
+        """S16: 프로필 폴더 목록에 있는 이름만 연다"""
+        resp = client.get('/api/creator-profile', query_string={'creator_id': '가나다'})
+        data = resp.get_json()
+        assert resp.status_code == 200 and data['found'] is True
+        assert data['file_name'] == '가나다.md'
+
+    def test_s17_save_creator_links_validates_and_writes(self, client, fixture_vault, tmp_path):
+        """S17: 연결 저장 입력 검증 + 원자적 저장"""
+        bad = [
+            [1, 2],
+            {'accounts': []},
+            {'accounts': [{'platform': 'facebook', 'key': 'a'}]},
+            {'creator_id': '../x', 'accounts': [{'platform': 'threads', 'key': 'a'}]},
+            {'source': 'auto', 'accounts': [{'platform': 'threads', 'key': 'a'}]},
+        ]
+        for payload in bad:
+            resp = client.post('/api/save-creator-links', data=json.dumps(payload), content_type='application/json')
+            assert resp.status_code == 400, payload
+        resp = client.post(
+            '/api/save-creator-links',
+            data=json.dumps({'name': '표본', 'accounts': [{'platform': 'threads', 'key': 'zz_verify_a'}, {'platform': 'x', 'key': 'zz_verify_b'}]}),
+            content_type='application/json',
+        )
+        assert resp.status_code == 200
+        assert resp.get_json()['creator_id'] == 'link_threads_zz_verify_a'
+        saved = json.loads((tmp_path / 'sns_creator_links.json').read_text(encoding='utf-8'))
+        assert {(l['platform'], l['key']) for l in saved['links']} == {('threads', 'zz_verify_a'), ('x', 'zz_verify_b')}

@@ -78,9 +78,15 @@ function main() {
     'non-export md 실패 메시지가 부정확합니다.'
   );
 
+  // stats 기본값은 벤치마킹 전용 글 제외(--benchmark exclude)이고, 볼트 자료 인덱스의
+  // 목록 자료(겹침 제외)를 함께 싣는다. 계획: _docs/20260906_01 (P6), _docs/20260911_01 (W2 T2-i)
+  const libraryIndexPath = path.join(projectRoot, 'web_viewer', 'sns_library_index.json');
+  const libraryPosts = fs.existsSync(libraryIndexPath)
+    ? (loadJson(libraryIndexPath).posts || []).filter((post) => !post.library_overlap_of)
+    : [];
   expectSuccess(['stats'], (payload) => {
     assert.equal(payload.command, 'stats');
-    assert.equal(payload.total_posts, posts.length);
+    assert.equal(payload.total_posts, posts.filter((post) => post.is_saved !== false).length + libraryPosts.length);
     assert.ok(payload.platform_counts, 'platform_counts가 없습니다.');
   });
 

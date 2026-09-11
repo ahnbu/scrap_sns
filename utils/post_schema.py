@@ -6,6 +6,11 @@ from __future__ import annotations
 STANDARD_FIELD_ORDER = [
     "sequence_id",
     "platform_id",
+    # 이름과 달리 SNS 가 아닌 값도 들어간다 - youtube 에 더해 볼트 자료 카드의
+    # `web`(원본 URL 있음)·`file`(없음). 새 필드를 만들지 않은 이유: 뷰어의 필터·정렬·
+    # 검색·건수가 이 필드 하나를 20여 곳에서 참조해, 새 필드는 그 전부를 고쳐야 한다.
+    # 자료는 통합본에 들어가지 않고 서버 적재 때 합류한다(utils/library_index.py).
+    # 계획: _docs/20260911_01 (SPEC D2, W2 T2-k)
     "sns_platform",
     "code",
     "urn",

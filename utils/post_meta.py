@@ -51,6 +51,29 @@ META_FIELDS = [
     # 이 두 상태값이 유일한 근거다. 계획: _docs/20260909_01 (W2 T2-a)
     "transcript_status",
     "summary_status",
+    # 볼트 자료 카드(〈웹〉·〈파일〉)가 쓰는 값. 위 is_own_post 와 같은 함정이다 -
+    # 이 목록에 없으면 /api/posts 가 값을 떨어뜨려 카드 제목·주제·옵시디언 링크가
+    # 조용히 사라진다. 값의 출처는 utils/library_index.note_to_post().
+    # sort_seq 는 「로컬수집순」 자리(자료를 SNS 수집 시각 사이에 끼운다),
+    # library_notes 는 원문 SNS 카드에 붙는 겹침 요약본 목록(「요약」 배지).
+    # 계획: _docs/20260911_01 (W2 T2-d, W3)
+    "library_title",
+    "library_path",
+    "library_topic",
+    "library_tags",
+    "library_source_type",
+    "library_creator",
+    "library_obsidian_url",
+    "library_has_source_file",
+    "library_source_file_url",
+    "sort_seq",
+    "library_notes",
+    # 이름 옆 아이콘이 모든 카드에서 사람 카드를 열려면 이 둘이 실려야 한다.
+    # creator_id 는 제작자 레지스트리 판정 결과(utils/creator_registry), profile_slogan 은
+    # 링크드인 저자 한 줄 소개(731/769건 보유) - 연결 없는 저자 카드가 비지 않게 한다.
+    # 계획: _docs/20260911_01 (W4 T4-c·T4-e)
+    "creator_id",
+    "profile_slogan",
 ]
 
 

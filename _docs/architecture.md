@@ -325,6 +325,9 @@ python scripts/rebuild_total.py             # 통합본 재생성
 | 게시물별 태그 | `web_viewer/sns_tags.json` |
 | 태그 카탈로그 | `web_viewer/sns_tag_catalog.json` |
 | 사용자 메타데이터 정본 | `web_viewer/sns_user_metadata.json` |
+| 볼트 자료 인덱스(파생, git 제외) | `web_viewer/sns_library_index.json` — 볼트에서 재생성, 손으로 고치지 않음 |
+| 제작자 레지스트리 | `web_viewer/sns_creators.json` — `scripts/build_creator_registry.py` 산출(볼트 프로필 + 벤치마킹 계정 채널 일치 + 확인한 유튜브 채널 ID 보존). 벤치마킹 계정 파일에 넣지 않는다(켜진 계정은 수집기가 계정째 긁는다) |
+| 계정 확정 연결 | `web_viewer/sns_creator_links.json` — 뷰어 「다른 계정 연결」(`POST /api/save-creator-links`) 산출. 사용자 상태라 손으로 고치지 않는다. 서버가 적재 때 레지스트리에 합친다 |
 | 사용자 메타데이터 캐시 | `localStorage.sns_user_metadata` |
 | 브라우저 상태 | `localStorage` |
 
@@ -347,6 +350,18 @@ python scripts/rebuild_total.py             # 통합본 재생성
 - 검색은 `GET /api/search`, 자동 태그 일괄 적용은 `POST /api/auto-tag/apply`를 사용한다.
 - `GET /api/search`는 `include_benchmark`(기본 false)를 받아 **`limit` 절단 전에** 벤치마킹 수집분을 거른다. 클라이언트에서 거르면 500건으로 자른 뒤라 저장글 노출이 줄어든다 — 실측(2026-09-06) `AI` 1,921건 · `claude` 813건이 이미 절단 대상이다.
 - 검색 매칭은 대소문자를 무시하고, `-`와 `_`를 공백처럼 정규화한 뒤 다단어 AND 부분일치를 적용한다. 오타 보정과 붙여쓰기 compact 검색은 지원하지 않는다.
+
+### 볼트 자료 카드(〈웹〉·〈파일〉)
+
+`C:/Users/ahnbu/cowork/90_자료수집` 옵시디언 볼트가 정본이고 뷰어는 읽기만 한다. 자료는 통합본에 들어가지 않고 서버 적재 단계(`_load_latest_posts()`)에서 합류한다. 규칙 정본은 `utils/library_index.py` 이며 서버와 CLI가 함께 쓴다.
+
+- **선별**: `_`·`.`로 시작하지 않는 최상위 폴더 바로 아래 `.md`(재귀 안 함) 중 frontmatter에 `topic`·`creator`가 있고 `type: creator`가 아닌 것. frontmatter 구분선은 줄 단위로 찾는다 — `split("---")`는 경로 속 `-----`에서 잘린다.
+- **유형**: `source_url`이 http(s)면 `sns_platform = web`, 없으면 `file`. `platform_id`는 web이면 URL 대조 키의 sha1 앞 16자, file이면 노트 파일명 — 별표·메모의 영구 키(`web:…`·`file:…`)다. 파일명을 바꾸면 사용자 메타가 떨어지므로 `python -m utils.library_index`가 고아 키를 경고한다.
+- **겹침**: URL 대조 키(유튜브 영상 ID·스레드 글 코드·링크드인 활동 ID·X 상태 ID·추적 파라미터 뗀 URL)가 통합본 글과 같으면 카드로 만들지 않는다. 원문 SNS 글에 `library_notes`로 연결하고 상세 조회용으로만 보관한다(「요약」 배지).
+- **순번**: 자료는 통합본 최대 `sequence_id` + 1부터 받는다(적재 단위 핸들, 영구 식별자 아님). 「로컬수집순」은 `sort_seq`(그 시각까지 수집된 SNS 글의 최대 순번 + 0.5)를 쓴다 — 순번대로면 자료가 기본 화면 맨 위를 덮는다.
+- **반영**: 서버 캐시 키와 ETag에 볼트 상태(후보 노트 수·최대 수정시각)가 들어간다. 볼트 상태는 30초마다 다시 본다(`LIBRARY_STATE_TTL_SECONDS`). 볼트가 바뀌면 `web_viewer/sns_library_index.json`(git 제외)을 다시 쓰고 CLI가 그 파일을 읽는다.
+- **바꿔 끼우기**: `SNS_LIBRARY_VAULT` 환경변수로 표본 볼트를 보게 할 수 있다(검증·테스트 전용).
+- **렌더**: 읽기 모달 `#libraryNoteModal`의 본문은 `renderLibraryMarkdown()`이 escape를 먼저 한 뒤 허용 태그만 만든다. 링크·이미지는 http(s)만, 위키링크·`obsidian://`·로컬 경로는 글자로 남긴다.
 
 ### 태그·상태 저장
 
@@ -377,6 +392,8 @@ python scripts/rebuild_total.py             # 통합본 재생성
 - `GET /api/get-external-summaries` — Lilys/LiveWiki 요약 링크 매핑. 쓰기 짝이 없다. 사용자 상태가 아니라 `scripts/build_external_summaries.mjs` 산출물이라 뷰어가 쓰지 않는다. 파일이 없어도 200 과 빈 `items` 를 준다
 - `GET /api/get-benchmark-accounts` / `POST /api/save-benchmark-accounts` — 벤치마킹 계정 목록(`web_viewer/benchmark_accounts.json`). 저장 시 `id` 중복과 `status` 값(`active`/`off`/`excluded`)을 서버가 검증한다. 오타가 통과하면 뷰어의 `보임 = is_saved OR (benchmark_accounts 중 status=="active")` 가 조용히 거짓이 되어 글이 사라진다
 - `GET /api/creator-profile` — 벤치마킹 계정 하나의 제작자 프로필(`account_id` 쿼리). 뷰어 제작자 카드가 쓴다. `C:/Users/ahnbu/cowork/90_자료수집/_제작자별_상세` 의 `.md` 를 **읽기 전용**으로 열어 프론트매터 채널·별칭·전문분야와 `## 프로필` 본문, 그리고 `obsidian://open?path=` 링크를 돌려준다. 계정 이름·별칭으로 파일을 간접 조회하며 클라이언트 문자열을 경로로 쓰지 않고, `realpath` 로 vault 밖 접근을 차단한다. 프로필 문서가 없으면 404 가 아니라 `{"found": false, "reason": ...}` 와 200 이다 — 문서가 없는 계정도 카드의 채널·글 건수는 보여야 한다
+  - `creator_id` 쿼리(제작자 레지스트리 id = 볼트 프로필 파일명)도 받는다. 벤치마킹 계정이 아닌 제작자용이다. 모양이 경로처럼 생기면(`../`·`/`·`\` 등) 400, 프로필 폴더의 **파일 목록에 정확히 있는 이름**만 열고 없으면 `found:false` 와 200 이다. 응답에 레지스트리 채널·확정 연결 목록이 함께 실린다
+- `POST /api/save-creator-links` — 뷰어 「다른 계정 연결」로 확정한 계정 연결을 `web_viewer/sns_creator_links.json` 에 원자적으로 저장한다. 입력은 `{creator_id?, name, accounts:[{platform, key}], source}` — `platform` 은 threads·x·linkedin·youtube, `source` 는 `user`(뷰어에서 고름)·`self_declared`(본인 게시 링크)만 받는다. 이미 다른 제작자에 속한 계정이면 409. 서버가 적재 때 레지스트리(`web_viewer/sns_creators.json`, `scripts/build_creator_registry.py` 산출)에 연결을 합쳐 글마다 `creator_id` 를 붙이므로 저장 즉시 반영된다
 - `GET /api/verify-channel` — 계정 주소 유효성 확인(`platform`·`handle` 쿼리). 브라우저가 직접 못 한다 — `YOUTUBE_API_KEY` 는 서버측 값이고 프런트로 내보내지 않는다. 응답에는 채널명·구독자수·`channel_id` 만 싣는다. 지금 확인이 되는 플랫폼은 YouTube 뿐이며 나머지는 `unsupported_platform` 을 정직하게 돌려준다
 - `POST /api/auto-tag/apply`
 
