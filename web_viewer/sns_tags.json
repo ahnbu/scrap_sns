@@ -1,4 +1,605 @@
 {
+    "https://12skills.vercel.app/": [
+        "기획",
+        "리서치",
+        "마케팅",
+        "클로드",
+        "프롬프트"
+    ],
+    "https://ai-agent-lecture.vercel.app/": [
+        "ppt",
+        "강사강의",
+        "글로벌규칙",
+        "클로드",
+        "프롬프트",
+        "하네스"
+    ],
+    "https://alkaline-tile-bbc.notion.site/22271a693e5480969444e1d53dba4521": [
+        "ppt",
+        "노션",
+        "디자인",
+        "기획"
+    ],
+    "https://app.notion.com/p/makefriends/2-2e4b31f1da55805fbbdbe1cb8fbe16ce": [
+        "글쓰기",
+        "노션",
+        "카드뉴스"
+    ],
+    "https://app.notion.com/p/makefriends/NotebookLM-10-PPT-304b31f1da5580878259ee15959f601a": [
+        "ppt",
+        "노션",
+        "노트북LM",
+        "프롬프트"
+    ],
+    "https://app.notion.com/p/zip-32aacca4dcc58042bf8ed3dd5c18ee90": [
+        "ppt",
+        "나노바나나",
+        "클로드",
+        "프롬프트",
+        "이미지"
+    ],
+    "https://bbojjak-viewer.vercel.app/guides/guide-01": [
+        "SNS노하우",
+        "오픈클로",
+        "디자인"
+    ],
+    "https://bbojjak-viewer.vercel.app/lessons/lesson-01": [
+        "SNS노하우",
+        "글로벌규칙",
+        "오픈클로",
+        "이미지",
+        "하네스"
+    ],
+    "https://bevel-boron-05c.notion.site/Claude-Code-A-to-Z-30844a48e2b180f4b178d852db998a80": [
+        "chatgpt",
+        "글로벌규칙",
+        "기획",
+        "클로드",
+        "프롬프트"
+    ],
+    "https://bevel-boron-05c.notion.site/Claude-in-PowerPoint-31144a48e2b18096ade6eafde543c5bc": [
+        "chatgpt",
+        "ppt",
+        "강사강의",
+        "기획",
+        "디자인",
+        "클로드",
+        "프롬프트"
+    ],
+    "https://bevel-boron-05c.notion.site/OpenClaw-30944a48e2b180e28faef8c3ab4e0134": [
+        "chatgpt",
+        "오픈클로"
+    ],
+    "https://bit.ly/4bQmUUl": [
+        "프롬프트"
+    ],
+    "https://bit.ly/4bTzF0H": [
+        "SNS노하우",
+        "나노바나나",
+        "이미지",
+        "프롬프트"
+    ],
+    "https://bit.ly/4c6Y1FZ": [
+        "글쓰기",
+        "프롬프트"
+    ],
+    "https://bit.ly/4sFkwql": [
+        "SNS노하우",
+        "글쓰기",
+        "기획",
+        "클로드",
+        "프롬프트"
+    ],
+    "https://bit.ly/4sTm6Wd": [
+        "글쓰기",
+        "기획",
+        "프롬프트"
+    ],
+    "https://bit.ly/4swI6pr": [
+        "SNS노하우",
+        "강사강의",
+        "글쓰기",
+        "기획",
+        "클로드",
+        "프롬프트"
+    ],
+    "https://blog.kwt.co.kr/%EB%A7%A5%EB%AF%B8%EB%8B%88-%EB%8C%80%EB%9E%80-openclaw%EA%B0%80-%EB%A7%8C%EB%93%A0-ai-%EC%84%9C%EB%B2%84-%EC%8B%9C%EB%8C%80-%EB%AA%A8%EB%8D%B8%EB%B3%84-%EA%B5%AC%EB%A7%A4-%EA%B0%80%EC%9D%B4/": [
+        "오픈클로"
+    ],
+    "https://blog.naver.com/wonkalab/224059350177": [
+        "이미지",
+        "프롬프트"
+    ],
+    "https://blog.naver.com/wonkalab/224110807354": [
+        "gemini",
+        "나노바나나",
+        "이미지",
+        "카드뉴스",
+        "프롬프트"
+    ],
+    "https://blog.naver.com/wonkalab/224125442236": [
+        "gemini",
+        "이미지",
+        "프롬프트"
+    ],
+    "https://blog.naver.com/wonkalab/224141523575": [
+        "프롬프트"
+    ],
+    "https://blog.naver.com/wonkalab/224158189622": [
+        "chatgpt",
+        "나노바나나",
+        "이미지",
+        "프롬프트"
+    ],
+    "https://blog.naver.com/wonkalab/224169479331": [
+        "나노바나나",
+        "이미지",
+        "프롬프트"
+    ],
+    "https://blog.opensurvey.co.kr/research-tips/ai-webinar-overview-2026-1-2/": [
+        "기획",
+        "리서치",
+        "프롬프트"
+    ],
+    "https://blog.opensurvey.co.kr/research-tips/google-forms-survey-analysis-01/": [
+        "SNS노하우",
+        "기획",
+        "리서치"
+    ],
+    "https://blog.opensurvey.co.kr/research-tips/research-to-action-guide/": [
+        "기획",
+        "리서치"
+    ],
+    "https://bossgift.vercel.app/archive.html": [
+        "chatgpt",
+        "노션",
+        "바이브코딩",
+        "클로드",
+        "프롬프트"
+    ],
+    "https://cafe.naver.com/f-e/cafes/26321967/articles/3774": [
+        "SNS노하우",
+        "기획",
+        "마케팅",
+        "글쓰기"
+    ],
+    "https://cafe.naver.com/jarek": [
+        "강사강의",
+        "마케팅",
+        "이미지",
+        "기획"
+    ],
+    "https://cafe.naver.com/westudyssat/4185": [
+        "SNS노하우",
+        "강사강의",
+        "마케팅"
+    ],
+    "https://cafe.naver.com/westudyssat/4194": [
+        "기획"
+    ],
+    "https://cafe.naver.com/wonkalab/117": [
+        "chatgpt",
+        "gemini",
+        "기획",
+        "나노바나나",
+        "이미지",
+        "프롬프트"
+    ],
+    "https://cafe.naver.com/wonkalab/14": [
+        "gemini",
+        "이미지",
+        "마케팅"
+    ],
+    "https://cafe.naver.com/wonkalab/17": [
+        "SNS노하우",
+        "나노바나나",
+        "이미지",
+        "프롬프트"
+    ],
+    "https://cafe.naver.com/wonkalab/197": [
+        "이미지",
+        "프롬프트"
+    ],
+    "https://cafe.naver.com/wonkalab/3": [
+        "SNS노하우",
+        "나노바나나",
+        "이미지",
+        "프롬프트"
+    ],
+    "https://cafe.naver.com/wonkalab/304": [
+        "나노바나나",
+        "이미지",
+        "프롬프트"
+    ],
+    "https://cafe.naver.com/wonkalab/422": [
+        "기획",
+        "나노바나나",
+        "이미지",
+        "프롬프트"
+    ],
+    "https://cafe.naver.com/wonkalab/510": [
+        "이미지",
+        "프롬프트"
+    ],
+    "https://cafe.naver.com/wonkalab/53": [
+        "gemini",
+        "이미지",
+        "프롬프트"
+    ],
+    "https://cafe.naver.com/wonkalab/610": [
+        "이미지",
+        "프롬프트"
+    ],
+    "https://cafe.naver.com/wonkalab/66": [
+        "이미지",
+        "프롬프트"
+    ],
+    "https://cafe.naver.com/wonkalab/699": [
+        "기획",
+        "이미지",
+        "프롬프트"
+    ],
+    "https://cafe.naver.com/wonkalab/7": [
+        "gemini",
+        "이미지",
+        "프롬프트"
+    ],
+    "https://cafe.naver.com/wonkalab/722": [
+        "gemini",
+        "이미지",
+        "클로드",
+        "프롬프트"
+    ],
+    "https://cafe.naver.com/wonkalab/757": [
+        "이미지",
+        "프롬프트"
+    ],
+    "https://cafe.naver.com/wonkalab/767": [
+        "기획",
+        "이미지",
+        "프롬프트"
+    ],
+    "https://cafe.naver.com/wonkalab/795": [
+        "ppt",
+        "강사강의",
+        "기획",
+        "나노바나나",
+        "디자인",
+        "클로드",
+        "프롬프트"
+    ],
+    "https://cafe.naver.com/wonkalab/815": [
+        "ppt",
+        "이미지",
+        "프롬프트"
+    ],
+    "https://cc-install-guide.vercel.app/": [
+        "클로드"
+    ],
+    "https://cctools5.vercel.app/": [
+        "노트북LM",
+        "디자인",
+        "클로드"
+    ],
+    "https://claude-cowork-kakaotalk.vercel.app/": [
+        "노션",
+        "클로드",
+        "프롬프트"
+    ],
+    "https://claude-prompts-kr.vercel.app/": [
+        "디자인",
+        "리서치",
+        "클로드",
+        "프롬프트"
+    ],
+    "https://claude.ai/chat/077f6f06-18c2-41e4-aa34-0fa6d266f387?artifactId=remixed-c0054e9c": [
+        "노션",
+        "노트북LM",
+        "디자인",
+        "클로드",
+        "카드뉴스"
+    ],
+    "https://claudedesign-ppt-guide.vercel.app/": [
+        "ppt",
+        "디자인",
+        "클로드",
+        "프롬프트"
+    ],
+    "https://cloud.google.com/discover/what-is-prompt-engineering?hl=ko": [
+        "프롬프트"
+    ],
+    "https://dante-labs.com/blog/harness-engineering-guide": [
+        "글로벌규칙",
+        "디자인",
+        "클로드",
+        "프롬프트",
+        "하네스"
+    ],
+    "https://dante-labs.com/blog/harness-vol2-role-separation": [
+        "디자인",
+        "리서치",
+        "프롬프트",
+        "하네스"
+    ],
+    "https://dante-labs.com/blog/harness-vol3-evaluation": [
+        "리서치",
+        "클로드",
+        "하네스"
+    ],
+    "https://dante-labs.com/blog/harness-vol4-tool-boundaries": [
+        "하네스"
+    ],
+    "https://docs.google.com/presentation/d/1J0Do_BnftoDQxMCYKdgaSboBeDgW8cLGzVFh13CYdM0/edit": [
+        "ppt",
+        "나노바나나",
+        "프롬프트",
+        "이미지"
+    ],
+    "https://drive.google.com/file/d/1AkRNTKV5rkNmX6LIOtxbXImQRIb2OAI1/view": [
+        "글로벌규칙",
+        "클로드",
+        "프롬프트",
+        "하네스"
+    ],
+    "https://ecommerce-market-data.vercel.app/resources": [
+        "클로드"
+    ],
+    "https://github.com/ahnbu/claude-consultant-kr": [
+        "SNS노하우",
+        "기획",
+        "클로드",
+        "프롬프트"
+    ],
+    "https://github.com/remotion-dev/remotion": [
+        "이미지"
+    ],
+    "https://gpt-56.vercel.app": [
+        "chatgpt",
+        "디자인",
+        "코덱스",
+        "프롬프트"
+    ],
+    "https://gpt55-prompting-guide.vercel.app/": [
+        "chatgpt",
+        "코덱스",
+        "프롬프트"
+    ],
+    "https://handyai.substack.com/p/your-ceo-is-suffering-from-ai-psychosis": [
+        "강사강의",
+        "바이브코딩"
+    ],
+    "https://harulogs.com/forum/blog/4407": [
+        "chatgpt",
+        "오픈클로",
+        "코덱스",
+        "클로드"
+    ],
+    "https://harulogs.com/forum/blog/claude-code%EB%A1%9C-%EC%9D%B8%EC%8A%A4%ED%83%80%EA%B7%B8%EB%9E%A8-%EC%B9%B4%EB%93%9C%EB%89%B4%EC%8A%A4-%EC%9E%90%EB%8F%99-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0-instagram-card-new-4412": [
+        "SNS노하우",
+        "ppt",
+        "리서치",
+        "마케팅",
+        "이미지",
+        "카드뉴스",
+        "클로드"
+    ],
+    "https://harulogs.com/forum/blog/korean-law-mcp-ai%EB%A1%9C-%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD-%EB%B2%95%EB%A0%B9-89%EA%B0%9C-%EB%8F%84%EA%B5%AC-%ED%95%9C-%EB%B2%88%EC%97%90-%EA%B2%80%EC%83%89%ED%95%98%EA%B8%B0-4416": [
+        "리서치",
+        "클로드"
+    ],
+    "https://hooks200.vercel.app/": [
+        "이미지"
+    ],
+    "https://imageprompt15.vercel.app/": [
+        "이미지",
+        "프롬프트"
+    ],
+    "https://instagram-protection.vercel.app/": [
+        "SNS노하우",
+        "마케팅",
+        "클로드"
+    ],
+    "https://keunyoung.gitbook.io/claude-prompt": [
+        "클로드",
+        "프롬프트"
+    ],
+    "https://kimkj.com/ai-board/?mod=document&uid=172": [
+        "ppt",
+        "클로드"
+    ],
+    "https://kimkj.com/ai-board/?mod=document&uid=176": [
+        "오픈클로",
+        "클로드",
+        "디자인"
+    ],
+    "https://kimkj.com/ai-board/?mod=document&uid=195": [
+        "기획",
+        "이미지",
+        "클로드"
+    ],
+    "https://kimkj.com/ai-board/?mod=document&uid=198": [
+        "기획",
+        "클로드",
+        "디자인"
+    ],
+    "https://kimkj.com/ai-board/?pageid=2&mod=document&uid=158": [
+        "강사강의",
+        "글로벌규칙",
+        "클로드"
+    ],
+    "https://kimkj.com/ai-board/?pageid=2&mod=document&uid=168": [
+        "글로벌규칙",
+        "클로드",
+        "프롬프트"
+    ],
+    "https://leanx.kr/founderai": [
+        "기획"
+    ],
+    "https://makefriends.notion.site/AI-35bb31f1da5581cfb849cefda6c4d4de": [
+        "chatgpt",
+        "노션",
+        "코덱스",
+        "클로드",
+        "프롬프트"
+    ],
+    "https://makefriends.notion.site/AI-366b31f1da5581c3b44ad7e8a519a329": [
+        "chatgpt",
+        "글쓰기",
+        "노션",
+        "리서치",
+        "이미지",
+        "클로드"
+    ],
+    "https://makefriends.notion.site/ChatGPT-100-366b31f1da558173a25fd1b2e4330614": [
+        "chatgpt",
+        "글쓰기",
+        "노션",
+        "프롬프트",
+        "코덱스",
+        "기획"
+    ],
+    "https://makefriends.notion.site/ChatGPT-Claude-366b31f1da5581ecbf04d56ba56409ea": [
+        "chatgpt",
+        "노션",
+        "클로드",
+        "프롬프트",
+        "코덱스"
+    ],
+    "https://makefriends.notion.site/Claude-10-366b31f1da5581509966c381e7e93614": [
+        "SNS노하우",
+        "노션",
+        "클로드",
+        "프롬프트"
+    ],
+    "https://makefriends.notion.site/Claude-366b31f1da55810a919cff550491fd6e": [
+        "SNS노하우",
+        "ppt",
+        "노션",
+        "디자인",
+        "카드뉴스",
+        "클로드",
+        "프롬프트"
+    ],
+    "https://makefriends.notion.site/Claude-Code-Remotion-366b31f1da5581209ebae727eadacbea": [
+        "강사강의",
+        "노션",
+        "클로드",
+        "프롬프트",
+        "이미지"
+    ],
+    "https://makefriends.notion.site/Claude-PPT-388b31f1da5581b78b46d1eadaa20b8b": [
+        "ppt",
+        "노션",
+        "클로드",
+        "프롬프트"
+    ],
+    "https://makefriends.notion.site/GPT-Image-2-34ab31f1da558152bb2cea7d56afc59b": [
+        "chatgpt",
+        "노션",
+        "이미지",
+        "프롬프트"
+    ],
+    "https://makefriends.notion.site/GPT-Image-2-34ab31f1da5581b29ccbca4f3994277e": [
+        "chatgpt",
+        "노션",
+        "디자인",
+        "이미지",
+        "프롬프트"
+    ],
+    "https://masterclaude1week.vercel.app/": [
+        "글쓰기",
+        "디자인",
+        "리서치",
+        "클로드",
+        "프롬프트"
+    ],
+    "https://publish.obsidian.md/overtimesam/03-projects/overtimesam/lectures/lectures": [
+        "강사강의",
+        "노션",
+        "옵시디언",
+        "클로드",
+        "프롬프트"
+    ],
+    "https://remotion-shorts-guide.vercel.app": [
+        "SNS노하우",
+        "노션",
+        "클로드",
+        "프롬프트",
+        "이미지"
+    ],
+    "https://sepia-quartz-81f.notion.site/3425c0a04646802eb495c887455f82ae?source=copy_link": [
+        "SNS노하우",
+        "기획",
+        "노션",
+        "이미지",
+        "클로드",
+        "프롬프트",
+        "마케팅"
+    ],
+    "https://share.note.sx/8npv2djo": [
+        "chatgpt",
+        "코덱스",
+        "프롬프트"
+    ],
+    "https://sireal.co/blog/how-to/claude-brand-design-system-guide": [
+        "gemini",
+        "ppt",
+        "디자인",
+        "카드뉴스",
+        "클로드",
+        "프롬프트"
+    ],
+    "https://sireal.co/blog/how-to/claude-code-slide-generator-skill-guide": [
+        "ppt",
+        "기획",
+        "디자인",
+        "이미지",
+        "클로드"
+    ],
+    "https://sunny-larkspur-2d5.notion.site/2e078e4bf5c980209e44cfc8912c69dc": [
+        "나노바나나",
+        "노션",
+        "카드뉴스",
+        "프롬프트",
+        "이미지"
+    ],
+    "https://vibecoding-glossary.vercel.app/": [
+        "바이브코딩",
+        "프롬프트",
+        "디자인"
+    ],
+    "https://writingclaudeskills5.vercel.app/": [
+        "글쓰기",
+        "클로드"
+    ],
+    "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents": [
+        "클로드",
+        "프롬프트"
+    ],
+    "https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents": [
+        "클로드",
+        "하네스"
+    ],
+    "https://www.anthropic.com/engineering/harness-design-long-running-apps": [
+        "디자인",
+        "클로드",
+        "프롬프트",
+        "하네스"
+    ],
+    "https://www.canva.com/design/DAG6_Zjwl_w/dJuYhdifXpdMFQ3hTSprSw/view": [
+        "나노바나나",
+        "프롬프트",
+        "이미지"
+    ],
+    "https://www.latpeed.com/products/cMlL2/reviews/create": [
+        "SNS노하우",
+        "gemini",
+        "글쓰기",
+        "마케팅",
+        "안티그래비티",
+        "카드뉴스",
+        "클로드"
+    ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7278585811854376960?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7278585811854376960%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "기획",
         "강사강의"
@@ -3360,6 +3961,11 @@
         "강사강의",
         "마케팅"
     ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7500516413506494464": [
+        "gemini",
+        "안티그래비티",
+        "클로드"
+    ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7500699133779914753?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7500699133779914753%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
         "프롬프트"
     ],
@@ -3475,8 +4081,28 @@
     "https://www.linkedin.com/feed/update/urn:li:activity:7502886893835960320": [
         "클로드"
     ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7503036318701010944": [
+        "chatgpt",
+        "오픈클로",
+        "코덱스",
+        "클로드"
+    ],
     "https://www.linkedin.com/feed/update/urn:li:activity:7503082584923467777": [
         "디자인"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7503225690876432384": [
+        "기획",
+        "디자인",
+        "클로드"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7503226531264135168?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7503226531264135168%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29": [
+        "기획",
+        "디자인"
+    ],
+    "https://www.linkedin.com/feed/update/urn:li:activity:7503247135413415936": [
+        "강사강의",
+        "마케팅",
+        "클로드"
     ],
     "https://www.linkedin.com/feed/update/urn:li:share:7408053312815656960": [
         "강사강의"
@@ -3635,6 +4261,219 @@
         "강사강의",
         "바이브코딩",
         "클로드"
+    ],
+    "https://www.linkedin.com/posts/%EC%A4%80-%EB%B0%B1-403007397_": [
+        "기획"
+    ],
+    "https://www.linkedin.com/posts/bumkyu-lee-75b6338a_ai-%ED%8C%8C%EC%9A%B4%EB%8D%94%EC%8A%A4-1%EA%B8%B0-4%EC%A3%BC%EB%A7%8C%EC%97%90-%EC%99%84%EC%84%B1%ED%95%98%EB%8A%94-%EB%82%B4-%EC%84%9C%EB%B9%84%EC%8A%A4-activity-7454785573342457856-ubT9": [
+        "기획"
+    ],
+    "https://www.linkedin.com/posts/chang-in-kong-57060b171_%ED%81%B4%EB%A1%9C%EB%93%9C-%EC%BD%94%EB%93%9C1-%ED%81%B4%EB%A1%9C%EB%93%9C-%EC%BD%94%EB%93%9C%EB%A1%9C-ppt-%EC%98%88%EC%81%98%EA%B2%8C-%EB%A7%8C%EB%93%A4%EA%B8%B0-1-%ED%81%B4%EB%A1%9C%EB%93%9C-%EC%BD%94%EB%93%9C-%ED%8F%AC%ED%95%A8-ugcPost-7445848005741604865-KNoB/": [
+        "ppt",
+        "디자인",
+        "클로드"
+    ],
+    "https://www.linkedin.com/posts/changhyun-ahn-828b72a6_%EB%8D%95%ED%85%8C%EC%9E%8E-gpt-image-2%EB%8A%94-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EB%AA%A8%EB%8D%B8%EC%9D%B4-%EC%95%84%EB%8B%88%EB%9D%BC-uxui-%ED%95%98%EB%84%A4%EC%8A%A4%EB%8B%A4-ugcPost-7452699495232008193-7S1s": [
+        "chatgpt",
+        "디자인",
+        "바이브코딩",
+        "이미지",
+        "코덱스",
+        "하네스"
+    ],
+    "https://www.linkedin.com/posts/chatdaeri_karpathy%EB%8F%84-%EC%B6%94%EC%B2%9C-%EB%AC%B4%EB%A3%8C-marp%EB%A1%9C-%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C-%EB%8B%A8%EC%88%A8%EC%97%90-%EB%A7%8C%EB%93%9C%EB%8A%94-%EB%B0%A9%EB%B2%95-share-7448274865003962368-M6H1": [
+        "ppt",
+        "클로드",
+        "프롬프트"
+    ],
+    "https://www.linkedin.com/posts/duckjungkim_": [
+        "chatgpt",
+        "ppt",
+        "노트북LM",
+        "프롬프트"
+    ],
+    "https://www.linkedin.com/posts/financialmate_gpt%EB%A1%9C-%EC%8B%A4%EC%8B%9C%EA%B0%84-%EB%8C%80%EC%8B%9C%EB%B3%B4%EB%93%9C%EB%A5%BC-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B4%A4%EC%8A%B5%EB%8B%88%EB%8B%A4-%EA%B8%B0%EC%A1%B4%EC%9D%98-%EC%97%91%EC%85%80%EB%B2%84%EC%A0%84%EC%9C%BC%EB%A1%9C-%EA%B0%80%EC%A7%80%EA%B3%A0-share-7454752573028347904-vuw-": [
+        "SNS노하우",
+        "chatgpt",
+        "코덱스"
+    ],
+    "https://www.linkedin.com/posts/gb-jeong_%EB%8B%A4%EB%93%A4-claude-code%EC%97%90%EC%84%9C-%EB%B3%B4%EC%9D%B4%EC%8A%A4-%EB%AA%A8%EB%93%9C-%EC%84%A0%ED%83%9D-%EB%B0%9B%EC%9C%BC%EC%85%A8%EB%82%98%EC%9A%94-%EC%A0%80%EB%8A%94-%EC%95%84%EC%A7%81-%EB%AA%BB-ugcPost-7434638009343553536-_mLg": [
+        "chatgpt",
+        "코덱스",
+        "클로드"
+    ],
+    "https://www.linkedin.com/posts/honam-kang_ukstectse-ai-claudecode-ugcPost-7454451934947770368-ZGlj": [
+        "디자인",
+        "클로드"
+    ],
+    "https://www.linkedin.com/posts/jeffrey-dongkyu_slides-grab-codex-%ED%95%98%ED%88%AC%ED%95%98-%EC%84%A4%EB%AA%85-activity-7443446765292339200-W7gL": [
+        "SNS노하우",
+        "chatgpt",
+        "ppt",
+        "디자인",
+        "코덱스",
+        "클로드",
+        "프롬프트",
+        "하네스"
+    ],
+    "https://www.linkedin.com/posts/jyoung105_%EB%B3%B4%EA%B3%A0%EC%84%9C-%EC%9D%B4%EC%A0%9C-%EB%B0%94%EB%A1%9C-ppt-%EA%B0%80-%EB%90%A9%EB%8B%88%EB%8B%A4-gpt-image-2-%EC%9D%98-%ED%99%9C%EC%9A%A9%EB%8F%84%EA%B0%80-ugcPost-7453044886607568899-rwXQ": [
+        "chatgpt",
+        "ppt",
+        "기획",
+        "디자인",
+        "이미지",
+        "코덱스",
+        "프롬프트",
+        "하네스"
+    ],
+    "https://www.linkedin.com/posts/jyoung105_%EC%A0%9C%EA%B0%80-%EC%A2%8B%EC%95%84%ED%95%98%EB%8A%94-ai-%EB%94%94%EC%9E%90%EC%9D%B8-%EA%B4%80%EB%A0%A8-%EB%A0%88%ED%8D%BC%EB%9F%B0%EC%8A%A4%EB%A5%BC-%EB%AA%A8%EB%91%90-%EB%AA%A8%EC%95%84-%EB%B3%B4%EC%95%98%EC%8A%B5%EB%8B%88%EB%8B%A4-ai-%EC%8B%9C%EB%8C%80-share-7459140356786507776-nVwm": [
+        "SNS노하우",
+        "디자인",
+        "클로드",
+        "마케팅"
+    ],
+    "https://www.linkedin.com/posts/jyoung105_claude-code-%EB%82%98-codex-%EC%93%B0%EB%A9%B4%EC%84%9C-%EC%9D%B4-2%EA%B0%9C-%EC%95%88-%EA%B9%94%EC%95%98%EC%9C%BC%EB%A9%B4-%EC%8B%9C%EA%B0%84-ugcPost-7434361681067065344-ws62": [
+        "chatgpt",
+        "코덱스",
+        "클로드",
+        "프롬프트"
+    ],
+    "https://www.linkedin.com/posts/jyoung105_gpt-taste-activity-7452948029885812736-UJul": [
+        "chatgpt",
+        "디자인",
+        "코덱스",
+        "프롬프트"
+    ],
+    "https://www.linkedin.com/posts/jyoung105_pdf-%EB%A5%BC-ppt-%EB%A1%9C-%EB%B0%94%EA%BE%B8%EB%8A%94-%EB%A7%8C%EB%8A%A5-%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8%EB%A5%BC-%EB%A7%8C%EB%93%A4%EC%97%88%EC%8A%B5%EB%8B%88%EB%8B%A4-%EC%A0%80%EB%8A%94-2%EC%A3%BC-%EC%A0%84-share-7467361027056283648-VUoo/": [
+        "ppt",
+        "이미지",
+        "프롬프트"
+    ],
+    "https://www.linkedin.com/posts/sihyun-adventure_claude-%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8-%EC%BA%90%EC%8B%B1%EC%9C%BC%EB%A1%9C-%EC%B1%97%EB%B4%87-%EB%A7%8C%EB%93%A4%EA%B8%B0-1-%EC%9A%94%EC%A6%98-cladue-code%EB%A5%BC-share-7430402669988454400-cK7L": [
+        "오픈클로",
+        "클로드",
+        "프롬프트"
+    ],
+    "https://www.linkedin.com/posts/taekim34_github-ww-w-aicc-token-saver-claude-code-share-7450806230744215552-JZlP": [
+        "클로드"
+    ],
+    "https://www.linkedin.com/pulse/ax-%EC%9D%B4%ED%9B%84%EC%9D%98-%EC%9D%BC%EA%B3%BC-%EC%A1%B0%EC%A7%81%EA%B5%AC%EC%A1%B0-1-%EB%91%90%EB%A0%A4%EC%9B%80%EC%9D%B4-%EC%95%84%EB%8B%8C-%EA%B8%B0%EB%8C%80%EA%B0%90%EC%9C%BC%EB%A1%9C-%EB%8D%B0%EC%9D%B4%ED%8F%AC%EC%BB%A4%EC%8A%A4%EB%9E%A9-%EC%9D%B4%EC%A7%80%EC%9D%B8-%EB%8C%80%ED%91%9C-recruitfirst-korea-1u5ac/?trackingId=TOz%2FGw%2BeTqacSPFoQs520g%3D%3D": [
+        "chatgpt",
+        "마케팅",
+        "클로드"
+    ],
+    "https://www.notion.so/15e0f4883e0c8004835dd0ef1afe6511": [
+        "ppt",
+        "기획",
+        "이미지"
+    ],
+    "https://www.notion.so/2070f4883e0c8098969fca39e2c8c101": [
+        "ppt",
+        "이미지"
+    ],
+    "https://www.notion.so/30d070c9f7208084b5b2cff0df7772e2": [
+        "ppt",
+        "디자인",
+        "이미지",
+        "클로드"
+    ],
+    "https://www.notion.so/7b1a5061ed1e443aad20b63533ad8f02": [
+        "ppt",
+        "강사강의",
+        "이미지",
+        "프롬프트"
+    ],
+    "https://www.notion.so/Claude-Code-Quick-Start-Guide-32321b86e1e68144bfdfc60caff149f3": [
+        "디자인",
+        "클로드",
+        "이미지"
+    ],
+    "https://www.notion.so/Claude-Code-v1-0-32821b86e1e681709894d78606d19f83": [
+        "클로드",
+        "프롬프트",
+        "이미지"
+    ],
+    "https://www.notion.so/LM-303070c9f72080fa95cbe2318a6eacef": [
+        "ppt",
+        "강사강의",
+        "기획",
+        "노션",
+        "노트북LM",
+        "리서치",
+        "이미지",
+        "프롬프트"
+    ],
+    "https://www.notion.so/devdesign-kr/31df8939a2c3800ebf35ed114d87eaaf": [
+        "ppt",
+        "디자인",
+        "이미지",
+        "카드뉴스",
+        "하네스"
+    ],
+    "https://www.notion.so/devdesign-kr/31ff8939a2c380269883c3ec430cb686": [
+        "chatgpt",
+        "노션",
+        "디자인",
+        "바이브코딩",
+        "클로드"
+    ],
+    "https://www.notion.so/devdesign-kr/322f8939a2c380098c5bf0e4541aea73": [
+        "디자인",
+        "옵시디언",
+        "노션"
+    ],
+    "https://www.notion.so/devdesign-kr/AI-31ff8939a2c38011ace6c8a7df6ff299": [
+        "디자인",
+        "프롬프트"
+    ],
+    "https://www.notion.so/devdesign-kr/AI-31ff8939a2c380f795e8da4575668e20": [
+        "디자인",
+        "바이브코딩",
+        "프롬프트"
+    ],
+    "https://www.notion.so/devdesign-kr/Claude-Code-321f8939a2c380289fe9ff24b4fbfcf4": [
+        "글로벌규칙",
+        "글쓰기",
+        "디자인",
+        "옵시디언",
+        "클로드",
+        "노션"
+    ],
+    "https://www.notion.so/eae070c9f72083719bd681573acae79d": [
+        "SNS노하우",
+        "노트북LM",
+        "카드뉴스",
+        "프롬프트"
+    ],
+    "https://www.perplexity.ai/enterprise/perplexity-at-work": [
+        "강사강의",
+        "리서치",
+        "프롬프트"
+    ],
+    "https://www.perplexity.ai/search/jeongbujiweon-saeobgyehoegseo-jouNxZ3ZSSuHlhotLssUmg": [
+        "기획",
+        "프롬프트"
+    ],
+    "https://www.re-builder.xyz/ai-junior/": [
+        "글쓰기"
+    ],
+    "https://www.re-builder.xyz/ai_transition/": [
+        "chatgpt",
+        "프롬프트"
+    ],
+    "https://www.re-builder.xyz/beyond-product/": [
+        "디자인"
+    ],
+    "https://www.re-builder.xyz/gtm_strategy/": [
+        "리서치",
+        "클로드"
+    ],
+    "https://www.romanceip.xyz/distribution_era/?ref=re-builder.xyz": [
+        "디자인"
+    ],
+    "https://www.skool.com/ai-topia-5405/these-7-claude-skills-grew-my-linkedin-from-0-to-10k-in-90-days?p=4e042b18": [
+        "클로드",
+        "마케팅"
     ],
     "https://www.threads.com/@06am_draw/post/DUy-OrTE1c5": [
         "클로드",
@@ -4266,6 +5105,10 @@
         "이미지",
         "기획"
     ],
+    "https://www.threads.com/@andytechcan/post/DdDdsE1gKJw": [
+        "chatgpt",
+        "바이브코딩"
+    ],
     "https://www.threads.com/@appcast/post/DU4UIw6EmHo": [
         "chatgpt",
         "코덱스"
@@ -4532,6 +5375,11 @@
         "gemini",
         "클로드"
     ],
+    "https://www.threads.com/@buildnwrite/post/DdDU9hrkb16": [
+        "chatgpt",
+        "ppt",
+        "코덱스"
+    ],
     "https://www.threads.com/@bunniesossdev/post/DWqyF3akYGX": [
         "ppt",
         "SNS노하우"
@@ -4583,6 +5431,9 @@
     "https://www.threads.com/@calmtiger_/post/DVnTtVQgRWo": [
         "클로드",
         "카드뉴스"
+    ],
+    "https://www.threads.com/@calmtiger_/post/DVxmbSlAQDT": [
+        "클로드"
     ],
     "https://www.threads.com/@calmtiger_/post/DXgwPXvgcRX": [
         "기획",
@@ -4900,6 +5751,15 @@
     "https://www.threads.com/@choi.openai/post/DdDJHlVDwzJ": [
         "chatgpt"
     ],
+    "https://www.threads.com/@choi.openai/post/DdF0iyqjhNk": [
+        "chatgpt"
+    ],
+    "https://www.threads.com/@choi.openai/post/DdF0kADDmHF": [
+        "chatgpt"
+    ],
+    "https://www.threads.com/@choi.openai/post/DdFsoLXjwNA": [
+        "chatgpt"
+    ],
     "https://www.threads.com/@choi_hyug_8110/post/DXMjhX4khj9": [
         "클로드",
         "노트북LM",
@@ -5038,6 +5898,10 @@
     "https://www.threads.com/@connie_daddy/post/DaSf83in68o": [
         "클로드",
         "하네스"
+    ],
+    "https://www.threads.com/@covergence_ai/post/DdBpwnnmuiV": [
+        "chatgpt",
+        "클로드"
     ],
     "https://www.threads.com/@crealwork/post/DWijabalbOA": [
         "클로드",
@@ -5386,6 +6250,13 @@
         "디자인",
         "글로벌규칙"
     ],
+    "https://www.threads.com/@devdesign.kr/post/DVyaoG0knoj": [
+        "글로벌규칙",
+        "노션",
+        "디자인",
+        "옵시디언",
+        "클로드"
+    ],
     "https://www.threads.com/@devdesign.kr/post/DWGqlw0Eo8v": [
         "클로드",
         "디자인"
@@ -5400,6 +6271,13 @@
         "디자인",
         "바이브코딩",
         "안티그래비티",
+        "클로드"
+    ],
+    "https://www.threads.com/@devitez/post/DVLLGq8Eqqe": [
+        "gemini",
+        "노션",
+        "디자인",
+        "카드뉴스",
         "클로드"
     ],
     "https://www.threads.com/@devitez/post/DXDs0GtEb6h": [
@@ -5678,6 +6556,10 @@
     ],
     "https://www.threads.com/@garibong.labs/post/DVNsMBMkwPG": [
         "오픈클로"
+    ],
+    "https://www.threads.com/@gemma3_27b/post/DVhxEdOE9U2": [
+        "기획",
+        "디자인"
     ],
     "https://www.threads.com/@gemma3_27b/post/DaARvfZCaFa": [
         "클로드",
@@ -5959,6 +6841,18 @@
         "SNS노하우",
         "chatgpt",
         "코덱스"
+    ],
+    "https://www.threads.com/@gptaku_ai/post/DdEDG2qkzwh": [
+        "SNS노하우",
+        "chatgpt"
+    ],
+    "https://www.threads.com/@gptaku_ai/post/DdFw3s1k3MC": [
+        "SNS노하우",
+        "chatgpt"
+    ],
+    "https://www.threads.com/@gptaku_ai/post/DdFzsJuE5p2": [
+        "SNS노하우",
+        "chatgpt"
     ],
     "https://www.threads.com/@gptersorg/post/DUkNsjaEVmh": [
         "클로드",
@@ -6531,6 +7425,10 @@
     "https://www.threads.com/@jisang0914/post/DThEbxXk726": [
         "클로드"
     ],
+    "https://www.threads.com/@jisang0914/post/DVyAhV9mhmL": [
+        "노션",
+        "옵시디언"
+    ],
     "https://www.threads.com/@jjlabsio/post/DVT8ntXD9b1": [
         "클로드"
     ],
@@ -6841,6 +7739,19 @@
     "https://www.threads.com/@kkongdon_story/post/DdB53wdmT-1": [
         "SNS노하우"
     ],
+    "https://www.threads.com/@kkongdon_story/post/DdFjxhUE3U6": [
+        "SNS노하우"
+    ],
+    "https://www.threads.com/@kkongdon_story/post/DdFjymVE9Q5": [
+        "강사강의",
+        "이미지"
+    ],
+    "https://www.threads.com/@kkongdon_story/post/DdFm8o-GUVU": [
+        "강사강의"
+    ],
+    "https://www.threads.com/@kkongdon_story/post/DdFrXBGGW-S": [
+        "SNS노하우"
+    ],
     "https://www.threads.com/@kook0526/post/DUFGgHkDj3G": [
         "이미지",
         "클로드",
@@ -6971,6 +7882,9 @@
         "마케팅",
         "강사강의"
     ],
+    "https://www.threads.com/@leaderpl.ai/post/DdCy1aYnz5W": [
+        "강사강의"
+    ],
     "https://www.threads.com/@lean._.kim/post/DVEARfHE-d2": [
         "클로드"
     ],
@@ -7037,6 +7951,10 @@
         "기획",
         "프롬프트"
     ],
+    "https://www.threads.com/@logodowner/post/DdENmqyAppd": [
+        "SNS노하우",
+        "프롬프트"
+    ],
     "https://www.threads.com/@lov_entp/post/DUQZfiwDzO2": [
         "gemini",
         "클로드",
@@ -7096,6 +8014,10 @@
     "https://www.threads.com/@maker.evan/post/DUr5HUHD_R4": [
         "디자인"
     ],
+    "https://www.threads.com/@maker.evan/post/DdDY5doj3dD": [
+        "chatgpt",
+        "코덱스"
+    ],
     "https://www.threads.com/@mangopeach0/post/DWZHwN-k9YY": [
         "클로드",
         "프롬프트",
@@ -7154,6 +8076,14 @@
         "글로벌규칙",
         "gemini",
         "마케팅"
+    ],
+    "https://www.threads.com/@marketer.ai.seulki/post/DVKs6HZD8XH": [
+        "SNS노하우",
+        "ppt",
+        "강사강의",
+        "이미지",
+        "클로드",
+        "프롬프트"
     ],
     "https://www.threads.com/@marketer.ai.seulki/post/DVKsy5mjwr1": [
         "클로드",
@@ -7220,6 +8150,25 @@
     "https://www.threads.com/@marketer.ai.seulki/post/DdDBQcPjyYz": [
         "마케팅",
         "클로드"
+    ],
+    "https://www.threads.com/@marketer.ai.seulki/post/DdFgw06j_Wy": [
+        "chatgpt",
+        "강사강의",
+        "나노바나나",
+        "마케팅",
+        "이미지",
+        "코덱스",
+        "클로드"
+    ],
+    "https://www.threads.com/@marketer.ai.seulki/post/DdFjFFlD6uV": [
+        "마케팅"
+    ],
+    "https://www.threads.com/@marketer.ai.seulki/post/DdFjKotj5of": [
+        "마케팅"
+    ],
+    "https://www.threads.com/@marketer.ai.seulki/post/DdFz3Plj5YI": [
+        "SNS노하우",
+        "마케팅"
     ],
     "https://www.threads.com/@masterkeyai/post/DWnzQg5DyYg": [
         "클로드",
@@ -7467,6 +8416,11 @@
         "오픈클로",
         "프롬프트",
         "강사강의"
+    ],
+    "https://www.threads.com/@nadool__/post/DWNmthZE92X": [
+        "chatgpt",
+        "코덱스",
+        "기획"
     ],
     "https://www.threads.com/@nakseo.growth/post/DV5RQ9nE2-K": [
         "클로드",
@@ -8128,6 +9082,11 @@
     "https://www.threads.com/@seedtax/post/DbZd2S6mH-a": [
         "클로드"
     ],
+    "https://www.threads.com/@seize.more/post/DWBXH9uEiU_": [
+        "클로드",
+        "프롬프트",
+        "이미지"
+    ],
     "https://www.threads.com/@senior_future/post/DayaFrmAmHU": [
         "디자인",
         "이미지"
@@ -8150,6 +9109,10 @@
     "https://www.threads.com/@seongdp/post/DYSDYOhGWeZ": [
         "마케팅",
         "SNS노하우"
+    ],
+    "https://www.threads.com/@seonggoos/post/DcV72otltVt": [
+        "카드뉴스",
+        "클로드"
     ],
     "https://www.threads.com/@seulgi.kaang/post/DT93hEfj7TV": [
         "클로드",
@@ -8184,6 +9147,13 @@
         "프롬프트",
         "바이브코딩",
         "SNS노하우"
+    ],
+    "https://www.threads.com/@sienna__ai/post/DWdYwPdiVO9": [
+        "SNS노하우",
+        "글쓰기",
+        "기획",
+        "마케팅",
+        "프롬프트"
     ],
     "https://www.threads.com/@sienna__ai/post/DXZH9DJia5p": [
         "디자인",
@@ -8763,6 +9733,9 @@
         "프롬프트",
         "SNS노하우"
     ],
+    "https://www.threads.com/@tadaki_toon/post/DdDXWfQEftX": [
+        "강사강의"
+    ],
     "https://www.threads.com/@taechajang/post/DbwuqrKD-UP": [
         "바이브코딩"
     ],
@@ -9054,11 +10027,19 @@
         "디자인",
         "클로드"
     ],
+    "https://www.threads.com/@tree_jin99/post/DUNKRPWErL6": [
+        "기획",
+        "카드뉴스",
+        "마케팅"
+    ],
     "https://www.threads.com/@tuberithm/post/DS_CJRHk-Lw": [
         "노트북LM",
         "리서치",
         "chatgpt",
         "카드뉴스"
+    ],
+    "https://www.threads.com/@tul_sung/post/DdBxr4SEhpv": [
+        "강사강의"
     ],
     "https://www.threads.com/@ultramarine.gy/post/DZJ9foekzli": [
         "바이브코딩",
@@ -9761,6 +10742,10 @@
         "클로드",
         "프롬프트"
     ],
+    "https://www.threads.com/@강규석(ddg.kang)/post/DVR0QSOE6dl": [
+        "SNS노하우",
+        "클로드"
+    ],
     "https://www.threads.com/@안병욱/post/DSg-0FrkyFQ": [
         "chatgpt",
         "gemini"
@@ -9937,6 +10922,11 @@
         "gemini",
         "클로드",
         "안티그래비티"
+    ],
+    "https://www.youtube.com/live/RWXLyYxkqQE": [
+        "노트북LM",
+        "클로드",
+        "이미지"
     ],
     "https://www.youtube.com/watch?v=-5RC9-uaVVQ": [
         "디자인",
@@ -10125,6 +11115,11 @@
         "클로드",
         "프롬프트"
     ],
+    "https://www.youtube.com/watch?v=2Xiljy4xzbc": [
+        "chatgpt",
+        "디자인",
+        "프롬프트"
+    ],
     "https://www.youtube.com/watch?v=2bBhnfh4StU": [
         "chatgpt",
         "기획"
@@ -10140,6 +11135,9 @@
         "노션",
         "gemini",
         "안티그래비티"
+    ],
+    "https://www.youtube.com/watch?v=2zWC1i3rie4": [
+        "SNS노하우"
     ],
     "https://www.youtube.com/watch?v=35ETAYfX0XM": [
         "gemini",
@@ -10280,7 +11278,8 @@
     "https://www.youtube.com/watch?v=4kXsF2S5MNY": [
         "강사강의",
         "글로벌규칙",
-        "클로드"
+        "클로드",
+        "기획"
     ],
     "https://www.youtube.com/watch?v=57Ppj4NZykE": [
         "클로드",
@@ -10335,6 +11334,16 @@
         "프롬프트",
         "강사강의"
     ],
+    "https://www.youtube.com/watch?v=5qxrY88lW_Q": [
+        "chatgpt",
+        "gemini",
+        "ppt",
+        "디자인",
+        "안티그래비티",
+        "코덱스",
+        "클로드",
+        "프롬프트"
+    ],
     "https://www.youtube.com/watch?v=5uTpUYw8Of4": [
         "chatgpt",
         "gemini",
@@ -10376,6 +11385,13 @@
         "클로드",
         "프롬프트",
         "강사강의"
+    ],
+    "https://www.youtube.com/watch?v=6A1Dtv14bOs": [
+        "ppt",
+        "노트북LM",
+        "디자인",
+        "클로드",
+        "프롬프트"
     ],
     "https://www.youtube.com/watch?v=6KF7jYXiypM": [
         "chatgpt",
@@ -10499,7 +11515,10 @@
         "이미지",
         "카드뉴스",
         "클로드",
-        "프롬프트"
+        "프롬프트",
+        "ppt",
+        "기획",
+        "마케팅"
     ],
     "https://www.youtube.com/watch?v=96BAQ3v3NhI": [
         "리서치",
@@ -10609,7 +11628,11 @@
         "chatgpt",
         "브라우저자동화",
         "코덱스",
-        "클로드"
+        "클로드",
+        "기획",
+        "디자인",
+        "마케팅",
+        "이미지"
     ],
     "https://www.youtube.com/watch?v=Aaebz-Q0OYY": [
         "디자인",
@@ -11056,6 +12079,14 @@
         "하네스",
         "강사강의"
     ],
+    "https://www.youtube.com/watch?v=JdwtRzZKlNg": [
+        "chatgpt",
+        "gemini",
+        "강사강의",
+        "클로드",
+        "프롬프트",
+        "코덱스"
+    ],
     "https://www.youtube.com/watch?v=Jpt954vPdPQ": [
         "ppt",
         "이미지",
@@ -11103,6 +12134,9 @@
         "chatgpt",
         "글쓰기",
         "프롬프트"
+    ],
+    "https://www.youtube.com/watch?v=KUzuQpMdQZo": [
+        "gemini"
     ],
     "https://www.youtube.com/watch?v=KWBYZHZaPd8": [
         "이미지",
@@ -11289,6 +12323,10 @@
         "클로드",
         "프롬프트"
     ],
+    "https://www.youtube.com/watch?v=NIXTycy26hI": [
+        "클로드",
+        "프롬프트"
+    ],
     "https://www.youtube.com/watch?v=NTlT3q7TFls": [
         "chatgpt",
         "디자인",
@@ -11335,6 +12373,12 @@
         "노션",
         "옵시디언"
     ],
+    "https://www.youtube.com/watch?v=OAqhSronDvs": [
+        "chatgpt",
+        "코덱스",
+        "클로드",
+        "프롬프트"
+    ],
     "https://www.youtube.com/watch?v=OGgZOmyTvfo": [
         "gemini",
         "기획",
@@ -11363,6 +12407,13 @@
         "글로벌규칙",
         "리서치",
         "이미지"
+    ],
+    "https://www.youtube.com/watch?v=OTVNUPLTIJs": [
+        "노트북LM",
+        "디자인",
+        "카드뉴스",
+        "클로드",
+        "프롬프트"
     ],
     "https://www.youtube.com/watch?v=OXg-0BXf_Yk": [
         "디자인",
@@ -11419,7 +12470,8 @@
     "https://www.youtube.com/watch?v=PMUIi-2Nhlo": [
         "chatgpt",
         "글로벌규칙",
-        "하네스"
+        "하네스",
+        "프롬프트"
     ],
     "https://www.youtube.com/watch?v=PYpRfmwo92E": [
         "chatgpt",
@@ -11529,6 +12581,9 @@
         "프롬프트",
         "기획"
     ],
+    "https://www.youtube.com/watch?v=RcW8icS4sgA": [
+        "chatgpt"
+    ],
     "https://www.youtube.com/watch?v=Ry0WHNxDbYA": [
         "기획",
         "하네스"
@@ -11551,6 +12606,10 @@
         "chatgpt",
         "코덱스",
         "클로드"
+    ],
+    "https://www.youtube.com/watch?v=SR6KTGPKMB0": [
+        "chatgpt",
+        "코덱스"
     ],
     "https://www.youtube.com/watch?v=SSIGI9mm0DU": [
         "chatgpt",
@@ -11728,7 +12787,8 @@
     ],
     "https://www.youtube.com/watch?v=V1lj9MZPE3w": [
         "SNS노하우",
-        "브라우저자동화"
+        "브라우저자동화",
+        "하네스"
     ],
     "https://www.youtube.com/watch?v=V2lEbLzmq8M": [
         "chatgpt",
@@ -11790,7 +12850,8 @@
         "기획"
     ],
     "https://www.youtube.com/watch?v=WVpz9nreCEM": [
-        "강사강의"
+        "강사강의",
+        "클로드"
     ],
     "https://www.youtube.com/watch?v=WXka6bp1aYw": [
         "오픈클로",
@@ -11843,7 +12904,15 @@
     "https://www.youtube.com/watch?v=X8kn17oun9I": [
         "강사강의",
         "마케팅",
-        "클로드"
+        "클로드",
+        "SNS노하우",
+        "chatgpt",
+        "기획",
+        "디자인",
+        "카드뉴스",
+        "코덱스",
+        "프롬프트",
+        "하네스"
     ],
     "https://www.youtube.com/watch?v=XG0oNrAYqoE": [
         "이미지"
@@ -12152,6 +13221,12 @@
         "클로드",
         "프롬프트"
     ],
+    "https://www.youtube.com/watch?v=bHMGKHVbJSk": [
+        "ppt",
+        "기획",
+        "클로드",
+        "프롬프트"
+    ],
     "https://www.youtube.com/watch?v=bWPXADZylm0": [
         "기획",
         "디자인",
@@ -12235,6 +13310,22 @@
         "프롬프트",
         "SNS노하우"
     ],
+    "https://www.youtube.com/watch?v=claude-code-20min-guide": [
+        "글로벌규칙",
+        "노션",
+        "클로드",
+        "프롬프트"
+    ],
+    "https://www.youtube.com/watch?v=claude-code-tutorial-yunjadong": [
+        "리서치",
+        "클로드"
+    ],
+    "https://www.youtube.com/watch?v=claude-code-windows-guide": [
+        "chatgpt",
+        "코덱스",
+        "클로드",
+        "이미지"
+    ],
     "https://www.youtube.com/watch?v=cmvIrTRzsoo": [
         "ppt",
         "기획",
@@ -12289,6 +13380,10 @@
         "디자인",
         "이미지",
         "프롬프트"
+    ],
+    "https://www.youtube.com/watch?v=e7t9HU2Z6t8": [
+        "chatgpt",
+        "코덱스"
     ],
     "https://www.youtube.com/watch?v=eC9-0venAr4": [
         "ppt",
@@ -12800,6 +13895,15 @@
         "디자인",
         "클로드"
     ],
+    "https://www.youtube.com/watch?v=pHfDgZ7cll0": [
+        "강사강의",
+        "기획",
+        "디자인",
+        "리서치",
+        "바이브코딩",
+        "클로드",
+        "하네스"
+    ],
     "https://www.youtube.com/watch?v=pS-Ay5-c1WM": [
         "chatgpt",
         "기획",
@@ -13029,6 +14133,13 @@
         "노션",
         "클로드"
     ],
+    "https://www.youtube.com/watch?v=tNFWXt43EL8": [
+        "SNS노하우",
+        "chatgpt",
+        "글쓰기",
+        "클로드",
+        "프롬프트"
+    ],
     "https://www.youtube.com/watch?v=tQI35CSNB08": [
         "리서치",
         "하네스"
@@ -13048,7 +14159,8 @@
     ],
     "https://www.youtube.com/watch?v=u0H-Sv7Y6vU": [
         "강사강의",
-        "마케팅"
+        "마케팅",
+        "기획"
     ],
     "https://www.youtube.com/watch?v=u51M2oS4xNY": [
         "ppt",
@@ -13103,6 +14215,9 @@
         "프롬프트",
         "하네스",
         "기획"
+    ],
+    "https://www.youtube.com/watch?v=uULvhQrKB_c": [
+        "클로드"
     ],
     "https://www.youtube.com/watch?v=uWLq4Q9YuBw": [
         "ppt",
@@ -13209,6 +14324,27 @@
         "이미지",
         "클로드"
     ],
+    "https://www.youtube.com/watch?v=vibecoding-13min": [
+        "chatgpt",
+        "디자인",
+        "바이브코딩",
+        "코덱스",
+        "클로드",
+        "프롬프트",
+        "하네스"
+    ],
+    "https://www.youtube.com/watch?v=vibecoding-map-part1": [
+        "기획",
+        "바이브코딩",
+        "클로드",
+        "하네스",
+        "디자인"
+    ],
+    "https://www.youtube.com/watch?v=vibecoding-map-part2": [
+        "바이브코딩",
+        "프롬프트",
+        "하네스"
+    ],
     "https://www.youtube.com/watch?v=vjSZIyYd0NI": [
         "리서치",
         "클로드",
@@ -13273,7 +14409,8 @@
     "https://www.youtube.com/watch?v=wRgJPO_qIT4": [
         "강사강의",
         "바이브코딩",
-        "프롬프트"
+        "프롬프트",
+        "기획"
     ],
     "https://www.youtube.com/watch?v=wSIy25_JWYI": [
         "강사강의",
@@ -13837,5 +14974,291 @@
     "https://x.com/yozm_it/status/2021492537861853558": [
         "클로드",
         "바이브코딩"
+    ],
+    "https://youtu.be/3NzCBIcIqD0": [
+        "클로드"
+    ],
+    "https://youtu.be/5pa7u21YkBg?si=tdZ6Xf2-fG6Vdoec": [
+        "ppt",
+        "디자인",
+        "클로드",
+        "프롬프트"
+    ],
+    "https://youtu.be/9ixYoSCeaEU?si=xwE695PDByCS0IQZ": [
+        "기획",
+        "오픈클로",
+        "클로드"
+    ],
+    "https://youtu.be/A8PMyC7W_vg?si=6Y8MpxZUgXmk01sG": [
+        "chatgpt",
+        "gemini",
+        "기획",
+        "디자인",
+        "코덱스",
+        "클로드",
+        "프롬프트",
+        "하네스"
+    ],
+    "https://youtu.be/Amw37UgJt_E?si=aG22gnt1K1hr4BcM": [
+        "강사강의",
+        "마케팅",
+        "글쓰기",
+        "이미지"
+    ],
+    "https://youtu.be/D-30PwiPa_M?si=1wYiCZiEASy9dGGP": [
+        "chatgpt",
+        "마케팅",
+        "코덱스",
+        "클로드",
+        "이미지"
+    ],
+    "https://youtu.be/H5QdzL-PtUY?si=TxEEgoyIpTT_MWDq": [
+        "chatgpt",
+        "gemini",
+        "ppt",
+        "강사강의",
+        "기획",
+        "리서치",
+        "프롬프트"
+    ],
+    "https://youtu.be/HDAy4MthSP8?si=zkXXxI6Bdmog-hq_": [
+        "ppt",
+        "강사강의",
+        "이미지",
+        "프롬프트"
+    ],
+    "https://youtu.be/Qr3pyVpd8CY?si=HHVRF_huoqTO94Vf": [
+        "글로벌규칙",
+        "리서치",
+        "클로드"
+    ],
+    "https://youtu.be/WevcrB9qslQ?si=vWxyVmvGQo_Nk6AZ": [
+        "SNS노하우",
+        "chatgpt",
+        "글쓰기",
+        "클로드",
+        "프롬프트"
+    ],
+    "https://youtu.be/c0ab-UxXAeA": [
+        "ppt",
+        "기획",
+        "노트북LM",
+        "카드뉴스"
+    ],
+    "https://youtu.be/lfqzDJWnzGk?si=zOSNCJxV4mWvsfbZ": [
+        "chatgpt",
+        "기획",
+        "디자인",
+        "프롬프트"
+    ],
+    "https://youtu.be/mX6Mwr1hCL0": [
+        "gemini",
+        "디자인",
+        "이미지"
+    ],
+    "https://youtu.be/p7_Phd7oASc?si=CqQA16qWAxTFARtB": [
+        "프롬프트",
+        "클로드"
+    ],
+    "https://youtu.be/rlVWuvgEftU?si=rCKmrmXedwXUldki": [
+        "ppt",
+        "노트북LM",
+        "프롬프트"
+    ],
+    "https://youtu.be/sMUmryBaj9A?si=NtwHJLjlxM_cRRcG": [
+        "ppt",
+        "강사강의",
+        "노트북LM",
+        "디자인",
+        "클로드",
+        "프롬프트"
+    ],
+    "https://youtu.be/sqSSKpZps3w?si=QGZgrviLNLsgrh0B": [
+        "클로드",
+        "프롬프트"
+    ],
+    "https://youtu.be/vLbzl5u5iwM?si=3IUM_yaPip_Q6JhR": [
+        "기획",
+        "디자인",
+        "리서치",
+        "클로드",
+        "하네스",
+        "이미지"
+    ],
+    "https://youtube.com/watch?v=BeSKY9jVwnQ": [
+        "ppt",
+        "노트북LM",
+        "리서치",
+        "클로드"
+    ],
+    "https://youtube.com/watch?v=uQPegX8CiyA": [
+        "SNS노하우",
+        "클로드",
+        "이미지"
+    ],
+    "obsidian://open?path=C%3A%2FUsers%2Fahnbu%2Fcowork%2F90_%EC%9E%90%EB%A3%8C%EC%88%98%EC%A7%91%2F%EA%B8%80%EC%93%B0%EA%B8%B0%2F20260506_%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%93%B0%EB%A0%88%EB%93%9C-%EC%A0%84%ED%99%98%EA%B8%80%EC%93%B0%EA%B8%B0-%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8_%EC%8B%A0%EC%98%81%EC%84%A0.md": [
+        "SNS노하우",
+        "강사강의",
+        "글쓰기",
+        "이미지",
+        "프롬프트",
+        "마케팅"
+    ],
+    "obsidian://open?path=C%3A%2FUsers%2Fahnbu%2Fcowork%2F90_%EC%9E%90%EB%A3%8C%EC%88%98%EC%A7%91%2F%EA%B8%B0%ED%9A%8D%EC%A0%9C%EC%95%88%2F20260506_%EC%A0%95%EB%B6%80%EC%A7%80%EC%9B%90%EC%82%AC%EC%97%85-%EC%84%A0%EC%A0%95-%EB%85%B8%ED%95%98%EC%9A%B0_%EC%98%A4%EC%A6%88%EC%BD%94%EB%94%A9%EC%8A%A4%EC%BF%A8.md": [
+        "ppt",
+        "강사강의",
+        "기획",
+        "디자인"
+    ],
+    "obsidian://open?path=C%3A%2FUsers%2Fahnbu%2Fcowork%2F90_%EC%9E%90%EB%A3%8C%EC%88%98%EC%A7%91%2F%EB%85%B8%ED%8A%B8%EB%B6%81LM%2F20260506_NotebookLM-%EC%9C%A0%ED%8A%9C%EB%B8%8C-%EC%9A%94%EC%95%BD-%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8_%EC%8B%A0%EC%98%81%EC%84%A0.md": [
+        "강사강의",
+        "노트북LM",
+        "리서치",
+        "프롬프트",
+        "이미지"
+    ],
+    "obsidian://open?path=C%3A%2FUsers%2Fahnbu%2Fcowork%2F90_%EC%9E%90%EB%A3%8C%EC%88%98%EC%A7%91%2F%EB%B9%84AI%EC%9D%BC%EB%B0%98%2F20250519_%EA%B9%80%EC%A2%85%EC%9B%90-%EC%9E%91%EA%B0%80-%EB%8F%84%EC%84%9C-%EB%AA%A9%EB%A1%9D-%EB%B0%8F-%EC%82%AC%EC%9C%A0-%EA%B8%80%EC%93%B0%EA%B8%B0-%EC%A0%95%EB%A6%AC_%EA%B9%80%EC%A2%85%EC%9B%90_%EC%9D%B8%EB%AC%B8%ED%95%99%EC%9E%91%EA%B0%80.md": [
+        "글쓰기"
+    ],
+    "obsidian://open?path=C%3A%2FUsers%2Fahnbu%2Fcowork%2F90_%EC%9E%90%EB%A3%8C%EC%88%98%EC%A7%91%2F%EB%B9%84AI%EC%9D%BC%EB%B0%98%2F20250722_%EC%A1%B0%EC%89%AC-%EB%B0%94%EC%9D%B4%EB%B8%8C%EC%BD%94%EB%94%A9-%EB%B9%84%EC%A6%88%EB%8B%88%EC%8A%A4-%EB%AA%A8%EB%8D%B8-%EB%B0%8F-%EB%89%B4%EC%8A%A4%EB%A0%88%ED%84%B0-%EB%B6%84%EC%84%9D_%EB%B9%8C%EB%8D%94%EC%A1%B0%EC%89%AC.md": [
+        "기획",
+        "바이브코딩",
+        "디자인",
+        "마케팅"
+    ],
+    "obsidian://open?path=C%3A%2FUsers%2Fahnbu%2Fcowork%2F90_%EC%9E%90%EB%A3%8C%EC%88%98%EC%A7%91%2F%EB%B9%84AI%EC%9D%BC%EB%B0%98%2F20260827_%EC%8B%A0%EC%88%98%EC%A0%95-%EB%A7%81%ED%81%AC%EB%93%9C%EC%9D%B8-%EC%BB%A4%EB%A6%AC%EC%96%B4-%EB%A6%AC%EB%8D%94%EC%8B%AD-%EC%9D%B8%EC%82%AC%EC%9D%B4%ED%8A%B8-%EC%BB%AC%EB%A0%89%EC%85%98_%EC%8B%A0%EC%88%98%EC%A0%95.md": [
+        "SNS노하우",
+        "강사강의",
+        "글쓰기",
+        "마케팅"
+    ],
+    "obsidian://open?path=C%3A%2FUsers%2Fahnbu%2Fcowork%2F90_%EC%9E%90%EB%A3%8C%EC%88%98%EC%A7%91%2F%EC%98%81%EC%83%81%EC%9D%B4%EB%AF%B8%EC%A7%80%2F20260506_%EB%82%98%EB%85%B8%EB%B0%94%EB%82%98%EB%82%98-%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8%EB%B6%81_AI%EB%A7%A4%ED%84%B0%EC%8A%A4.md": [
+        "gemini",
+        "나노바나나",
+        "디자인",
+        "마케팅",
+        "이미지",
+        "프롬프트"
+    ],
+    "obsidian://open?path=C%3A%2FUsers%2Fahnbu%2Fcowork%2F90_%EC%9E%90%EB%A3%8C%EC%88%98%EC%A7%91%2F%EC%98%A4%ED%94%88%ED%81%B4%EB%A1%9C-%ED%97%A4%EB%A5%B4%EB%A9%94%EC%8A%A4%2F20260604_Hermes-AX-Plugin-%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C%EC%9A%B0-%EB%8C%80%EC%8B%9C%EB%B3%B4%EB%93%9C_%EC%84%9C%EC%9E%A5%EC%9B%90_%EB%98%91%EB%98%91%ED%95%9C%EA%B0%9C%EB%B0%9C%EC%9E%90.md": [
+        "SNS노하우",
+        "마케팅",
+        "오픈클로",
+        "카드뉴스"
+    ],
+    "obsidian://open?path=C%3A%2FUsers%2Fahnbu%2Fcowork%2F90_%EC%9E%90%EB%A3%8C%EC%88%98%EC%A7%91%2F%EC%A0%9C%EB%AF%B8%EB%82%98%EC%9D%B4%2F20260615_%EC%A0%9C%EB%AF%B8%EB%82%98%EC%9D%B4-%EC%B1%85-%EC%A0%9C%EA%B3%B5-%EC%8B%A4%EB%AC%B4-%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8-%EB%B0%8F-%EC%9E%90%EB%A3%8C-%EB%AA%A8%EC%9D%8C_%EA%B3%B5%EB%83%A5%EC%9D%B4.md": [
+        "gemini",
+        "ppt",
+        "나노바나나",
+        "노트북LM",
+        "리서치",
+        "카드뉴스",
+        "프롬프트"
+    ],
+    "obsidian://open?path=C%3A%2FUsers%2Fahnbu%2Fcowork%2F90_%EC%9E%90%EB%A3%8C%EC%88%98%EC%A7%91%2F%EC%B1%97GPT%EC%BD%94%EB%8D%B1%EC%8A%A4%2F20240518_%EC%B1%97GPT-%EA%B3%A0%EA%B8%89-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D-%EC%8B%A4%EC%8A%B5-%EA%B5%90%EC%95%88-%EB%B0%8F-%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%85%8B_%EC%9D%BC%EC%9E%98%EB%9F%AC%EC%9E%A5PM.md": [
+        "chatgpt",
+        "코덱스",
+        "프롬프트"
+    ],
+    "obsidian://open?path=C%3A%2FUsers%2Fahnbu%2Fcowork%2F90_%EC%9E%90%EB%A3%8C%EC%88%98%EC%A7%91%2F%EC%B9%B4%EB%93%9C%EB%89%B4%EC%8A%A4%2F20260321_Gemini-%EC%B9%B4%EB%93%9C%EB%89%B4%EC%8A%A4%EB%A9%94%EC%9D%B4%EC%BB%A4_%EB%8D%B0%EB%B8%8C%EB%94%94%EC%9E%90%EC%9D%B8.md": [
+        "gemini",
+        "디자인",
+        "카드뉴스"
+    ],
+    "obsidian://open?path=C%3A%2FUsers%2Fahnbu%2Fcowork%2F90_%EC%9E%90%EB%A3%8C%EC%88%98%EC%A7%91%2F%ED%81%B4%EB%A1%9C%EB%93%9C%2F20260323_%ED%95%84%EB%A1%9C%EC%86%8C%ED%94%BCAI%EA%B5%90%EC%9C%A1-Claude-Code-%EC%84%A4%EC%B9%98-%ED%8A%9C%ED%86%A0%EB%A6%AC%EC%96%BC_%ED%95%84%EB%A1%9C%EC%86%8C%ED%94%BCAI.md": [
+        "클로드"
+    ],
+    "obsidian://open?path=C%3A%2FUsers%2Fahnbu%2Fcowork%2F90_%EC%9E%90%EB%A3%8C%EC%88%98%EC%A7%91%2F%ED%81%B4%EB%A1%9C%EB%93%9C%2F20260323_%ED%95%84%EB%A1%9C%EC%86%8C%ED%94%BCAI%EA%B5%90%EC%9C%A1-Obsidian-Claude-Code-%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8-%EC%A0%9C%EC%9E%91%ED%8C%80_%ED%95%84%EB%A1%9C%EC%86%8C%ED%94%BCAI.md": [
+        "옵시디언",
+        "클로드",
+        "프롬프트",
+        "노션"
+    ],
+    "obsidian://open?path=C%3A%2FUsers%2Fahnbu%2Fcowork%2F90_%EC%9E%90%EB%A3%8C%EC%88%98%EC%A7%91%2F%ED%81%B4%EB%A1%9C%EB%93%9C%2F20260420_%ED%81%B4%EB%A1%9C%EB%93%9C-%EC%8A%A4%ED%82%AC%EB%A1%9C-K-Startup-%EC%82%AC%EC%97%85%EA%B3%84%ED%9A%8D%EC%84%9C-%EB%A7%8C%EB%93%A4%EA%B8%B0-%EA%B0%80%EC%9D%B4%EB%93%9C_%ED%99%8D%EC%9E%91%EA%B0%80_sshong.md": [
+        "ppt",
+        "기획",
+        "리서치",
+        "클로드"
+    ],
+    "obsidian://open?path=C%3A%2FUsers%2Fahnbu%2Fcowork%2F90_%EC%9E%90%EB%A3%8C%EC%88%98%EC%A7%91%2F%ED%81%B4%EB%A1%9C%EB%93%9C%2F20260428_%ED%81%B4%EB%A1%9C%EB%93%9C-%EC%B4%88%EB%B3%B4%EC%9E%90-%ED%99%9C%EC%9A%A9%EB%B2%95-%EA%B0%80%EC%9D%B4%EB%93%9C-%EC%A0%84%EC%9E%90%EC%B1%85_%EC%A0%84%ED%95%9C%EB%B3%84.md": [
+        "SNS노하우",
+        "카드뉴스",
+        "클로드",
+        "프롬프트"
+    ],
+    "obsidian://open?path=C%3A%2FUsers%2Fahnbu%2Fcowork%2F90_%EC%9E%90%EB%A3%8C%EC%88%98%EC%A7%91%2F%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8%2F20250711_%EA%B9%80%EC%9D%B4%EC%86%9D%EC%9D%98-%EC%99%84%EB%B2%BD%ED%95%9C-%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8-%EA%B0%80%EC%9D%B4%EB%93%9C-8%EA%B0%80%EC%A7%80_%EA%B9%80%EC%9D%B4%EC%86%9D.md": [
+        "chatgpt",
+        "gemini",
+        "마케팅",
+        "프롬프트",
+        "코덱스"
+    ],
+    "obsidian://open?path=C%3A%2FUsers%2Fahnbu%2Fcowork%2F90_%EC%9E%90%EB%A3%8C%EC%88%98%EC%A7%91%2F%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8%2F20250712_%EC%B9%B4%ED%94%BC%EB%9D%BC%EC%9D%B4%ED%8C%85-GPTs-Gem-%EC%A0%9C%EC%9E%91%EC%9D%84-%EC%9C%84%ED%95%9C-6%EC%9D%B8-%EC%B9%B4%ED%94%BC%EB%9D%BC%EC%9D%B4%ED%84%B0-%EB%94%A5%EB%A6%AC%EC%84%9C%EC%B9%98-%EB%AA%A8%EC%9D%8C_%EC%B9%B4%ED%94%BC%EB%9D%BC%EC%9D%B4%ED%84%B06%EC%9D%B8.md": [
+        "chatgpt",
+        "gemini",
+        "ppt",
+        "리서치",
+        "프롬프트",
+        "마케팅"
+    ],
+    "obsidian://open?path=C%3A%2FUsers%2Fahnbu%2Fcowork%2F90_%EC%9E%90%EB%A3%8C%EC%88%98%EC%A7%91%2FAI%EC%9D%BC%EB%B0%98%2F20250513_%EC%8A%A4%ED%83%A0%ED%8F%AC%EB%93%9C-AI%EC%8B%9C%EB%8C%80-%EC%B0%BD%EC%9D%98%EB%A0%A5-%ED%9B%88%EB%A0%A8%EB%B2%95-%EB%B0%8F-%ED%94%84%EB%A1%AC%ED%94%84%ED%8C%85-%EB%B3%BC%EB%A5%A8_%EC%A0%9C%EB%A0%88%EB%AF%B8%EC%96%B4%ED%8B%80%EB%A6%AC.md": [
+        "강사강의",
+        "클로드",
+        "프롬프트"
+    ],
+    "obsidian://open?path=C%3A%2FUsers%2Fahnbu%2Fcowork%2F90_%EC%9E%90%EB%A3%8C%EC%88%98%EC%A7%91%2FAI%EC%9D%BC%EB%B0%98%2F20250601_%EC%83%98%EC%95%8C%ED%8A%B8%EB%A7%8C-%EA%B8%80%EC%93%B0%EA%B8%B0-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%B0%8F-AI-%EC%8B%9C%EB%8C%80-%EA%B8%80%EC%93%B0%EA%B8%B0-%EC%9D%B8%ED%84%B0%EB%B7%B0_%EC%83%98%EC%95%8C%ED%8A%B8%EB%A8%BC.md": [
+        "gemini",
+        "글로벌규칙",
+        "글쓰기"
+    ],
+    "obsidian://open?path=C%3A%2FUsers%2Fahnbu%2Fcowork%2F90_%EC%9E%90%EB%A3%8C%EC%88%98%EC%A7%91%2FAI%EC%9D%BC%EB%B0%98%2F20250718_%EC%A1%B0%EC%89%AC-%EB%89%B4%EC%8A%A4%EB%A0%88%ED%84%B0-%EC%9B%90%EB%AC%B8-%EB%AA%A8%EC%9D%8C_%EB%B9%8C%EB%8D%94%EC%A1%B0%EC%89%AC.md": [
+        "글쓰기",
+        "디자인",
+        "옵시디언",
+        "이미지"
+    ],
+    "obsidian://open?path=C%3A%2FUsers%2Fahnbu%2Fcowork%2F90_%EC%9E%90%EB%A3%8C%EC%88%98%EC%A7%91%2FAI%EC%9D%BC%EB%B0%98%2F20251218_%EC%B1%97GPT-%EC%9E%A5%ED%94%BC%EC%97%A0-%EC%9D%B8%EC%8B%9D%EA%B3%BC%ED%86%B5%EC%B0%B0-%EB%A7%88%EC%9D%B8%EB%93%9C%EC%85%8B-%EB%8C%80%EC%9D%91%EC%A0%84%EB%9E%B5_%EC%9E%A5%ED%94%BC%EC%97%A0.md": [
+        "프롬프트"
+    ],
+    "obsidian://open?path=C%3A%2FUsers%2Fahnbu%2Fcowork%2F90_%EC%9E%90%EB%A3%8C%EC%88%98%EC%A7%91%2FAI%EC%9D%BC%EB%B0%98%2F20260415_%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%9A%B0%EC%84%A0-%EC%8B%9C%EB%8C%80%EC%9D%98-%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81_%ED%95%98%EB%84%A4%EC%8A%A4_%EC%95%8C%EB%A0%89%EC%8A%A4AI_Alexai.md": [
+        "리서치",
+        "오픈클로",
+        "하네스",
+        "노트북LM"
+    ],
+    "obsidian://open?path=C%3A%2FUsers%2Fahnbu%2Fcowork%2F90_%EC%9E%90%EB%A3%8C%EC%88%98%EC%A7%91%2FAI%EC%9D%BC%EB%B0%98%2F20260506_AI-%EC%82%AC%EA%B3%A0%EA%B5%AC%EC%A1%B0-%EB%A9%94%ED%83%80%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8-%EB%AA%A8%EC%9D%8C_%EC%8B%A0%EC%98%81%EC%84%A0.md": [
+        "gemini",
+        "강사강의",
+        "기획",
+        "리서치",
+        "프롬프트"
+    ],
+    "obsidian://open?path=C%3A%2FUsers%2Fahnbu%2Fcowork%2F90_%EC%9E%90%EB%A3%8C%EC%88%98%EC%A7%91%2FAI%EC%9D%BC%EB%B0%98%2F20260506_OpenAI-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EB%B9%8C%EB%8D%94-%EC%99%95%EC%B4%88%EB%B3%B4-%EA%B0%80%EC%9D%B4%EB%93%9C_%EC%8B%A0%EC%98%81%EC%84%A0.md": [
+        "chatgpt",
+        "강사강의"
+    ],
+    "obsidian://open?path=C%3A%2FUsers%2Fahnbu%2Fcowork%2F90_%EC%9E%90%EB%A3%8C%EC%88%98%EC%A7%91%2FAI%EC%9D%BC%EB%B0%98%2F20260604_AX-%EC%A1%B0%EC%A7%81-%EC%A0%84%ED%99%98-%EC%9A%B4%EC%98%81%EC%B2%B4%EA%B3%84_%EC%84%9C%EB%8C%80%ED%91%9C.md": [
+        "chatgpt",
+        "강사강의",
+        "마케팅",
+        "오픈클로",
+        "프롬프트"
+    ],
+    "obsidian://open?path=C%3A%2FUsers%2Fahnbu%2Fcowork%2F90_%EC%9E%90%EB%A3%8C%EC%88%98%EC%A7%91%2FPPT%2F20260324_PPT-%ED%85%9C%ED%94%8C%EB%A6%BF-%EC%9E%90%EB%A3%8C-%EB%AA%A8%EC%9D%8C_notion_%ED%8E%98%EC%9D%B4%ED%8D%BC%EB%A1%9C%EC%A7%80.md": [
+        "ppt",
+        "노션",
+        "디자인",
+        "이미지",
+        "프롬프트",
+        "기획"
+    ],
+    "obsidian://open?path=C%3A%2FUsers%2Fahnbu%2Fcowork%2F90_%EC%9E%90%EB%A3%8C%EC%88%98%EC%A7%91%2FPPT%2F20260506_PPT-%EB%82%98%EB%85%B8%EB%B0%94%EB%82%98%EB%82%98-%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8_%EC%8B%A0%EC%98%81%EC%84%A0.md": [
+        "ppt",
+        "강사강의",
+        "나노바나나",
+        "디자인",
+        "이미지",
+        "카드뉴스",
+        "프롬프트"
     ]
 }
