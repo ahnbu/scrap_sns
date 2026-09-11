@@ -46,6 +46,14 @@ def test_build_post_meta_keeps_library_values():
     assert meta["full_text_preview"].startswith("# 파일 자료 표본")
 
 
+def test_library_preview_is_longer_than_sns_preview():
+    """자료 카드는 기호를 걷고 6줄을 보이므로 600자, SNS 글은 200자 그대로(계획 20260911_02 W4 T4-c)."""
+    body = "가" * 1000
+    assert len(build_post_meta({"sns_platform": "file", "platform_id": "a", "full_text": body})["full_text_preview"]) == 600
+    assert len(build_post_meta({"sns_platform": "web", "platform_id": "b", "full_text": body})["full_text_preview"]) == 600
+    assert len(build_post_meta({"sns_platform": "threads", "platform_id": "c", "full_text": body})["full_text_preview"]) == 200
+
+
 def test_sns_post_keeps_library_notes_link():
     meta = build_post_meta(
         {

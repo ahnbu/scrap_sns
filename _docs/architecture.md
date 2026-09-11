@@ -361,7 +361,10 @@ python scripts/rebuild_total.py             # 통합본 재생성
 - **순번**: 자료는 통합본 최대 `sequence_id` + 1부터 받는다(적재 단위 핸들, 영구 식별자 아님). 「로컬수집순」은 `sort_seq`(그 시각까지 수집된 SNS 글의 최대 순번 + 0.5)를 쓴다 — 순번대로면 자료가 기본 화면 맨 위를 덮는다.
 - **반영**: 서버 캐시 키와 ETag에 볼트 상태(후보 노트 수·최대 수정시각)가 들어간다. 볼트 상태는 30초마다 다시 본다(`LIBRARY_STATE_TTL_SECONDS`). 볼트가 바뀌면 `web_viewer/sns_library_index.json`(git 제외)을 다시 쓰고 CLI가 그 파일을 읽는다.
 - **바꿔 끼우기**: `SNS_LIBRARY_VAULT` 환경변수로 표본 볼트를 보게 할 수 있다(검증·테스트 전용).
-- **렌더**: 읽기 모달 `#libraryNoteModal`의 본문은 `renderLibraryMarkdown()`이 escape를 먼저 한 뒤 허용 태그만 만든다. 링크·이미지는 http(s)만, 위키링크·`obsidian://`·로컬 경로는 글자로 남긴다.
+- **렌더**: 읽기 모달 `#libraryNoteModal`의 본문은 `renderLibraryMarkdown()`이 escape를 먼저 한 뒤 허용 태그만 만든다. 링크·이미지는 http(s)만, 위키링크·`obsidian://`·로컬 경로는 글자로 남긴다. 모달 최대 폭은 880px(`.library-note-panel`), 제작자 카드는 576px(`.creator-card-panel`)로 고정이다 — 화면 비율로 줄이지 않는다.
+- **카드 미리보기**: 목록 응답의 자료 미리보기는 600자(SNS 글 200자, `utils/post_meta.LIBRARY_PREVIEW_CHARS`). 카드는 `buildLibraryPreviewText()`로 첫 제목·가로선·표 구분 줄·마크다운 기호를 걷고 줄바꿈을 살려 6줄을 보인다.
+- **태그**: 카드에 주제·자료 형태 칩을 따로 두지 않는다. 볼트 주제(`library_topic`)·노트 태그(`library_tags`)는 자동 태그로 카드 태그 줄에 합류한다(아래 「태그·상태 저장」). 주제·형태는 읽기 모달 부제에 남는다.
+- **이름 클릭**: 글에 `creator_id`가 있으면 이름 클릭이 제작자 필터(그 사람의 SNS + 자료 전체, 플랫폼 자동 ALL)를 켜고 끈다. 채널 칩·「저장」·「MY」·「벤치마킹」을 누르면 그 조건과 교집합이다. `creator_id`가 없는 저자는 종전대로 저자 필터(한 플랫폼)다. 이름 옆 아이콘도 `creator_id`가 있으면 벤치마킹 계정 글이라도 제작자 카드를 연다.
 
 ### 태그·상태 저장
 
@@ -370,6 +373,9 @@ python scripts/rebuild_total.py             # 통합본 재생성
 - 별표, 숨김, 메모는 `post_key` 기준으로 `web_viewer/sns_user_metadata.json`에 저장된다.
 - `canonical_url`은 원문 열기와 legacy 상태 migration 보조값으로 보존한다.
 - 기존 `localStorage.sns_auto_tag_rules`는 첫 로드 때 태그 카탈로그 alias로 1회 병합된다.
+- 자동 태그 규칙 정본은 `utils/auto_tag.py`다(서버 `POST /api/auto-tag/apply`와 정리 스크립트가 공유). 카탈로그 태그 이름 + 별칭이 키워드다. **자료 카드(web·file)는 제목 + 본문 앞 800자만** 훑고, 볼트 주제·노트 태그를 카탈로그 태그로 바꿔 더한다 — 카탈로그 이름·별칭과 완전히 같으면 그대로, 복합 주제는 `VAULT_TERM_MAP`(영상이미지→이미지, 챗GPT코덱스→chatgpt·코덱스 등). 카탈로그에 없는 태그는 내보내지 않는다.
+- 이미 붙은 자료 카드 태그를 새 범위로 맞추는 것은 `python scripts/migrate_library_auto_tags.py`(기본 dry-run, `--apply`로 적용·백업 `web_viewer/sns_tags_YYYYMMDD_HHMM.bak.json`, git 제외)다. 옛 범위가 붙였고 새 범위는 안 붙이는 태그만 빼고, 규칙으로 설명 안 되는 태그(손으로 붙인 것)는 남긴다. 겹침 노트는 원문 SNS 카드와 키를 공유하므로 대상에서 뺀다. 지울 키는 빈 배열로 둔다 — 뷰어 저장이 전체 맵을 통째로 보내므로 서버에서 키를 없애면 브라우저 사본이 되살린다. 뷰어는 로드 때 임시 검증 볼트 키(`sns-library-verify-`)를 버린다.
+- 태그·카탈로그·사용자메타 파일 경로는 `SNS_TAGS_PATH`·`SNS_TAG_CATALOG_PATH`·`SNS_USER_METADATA_PATH`로 바꿔 끼울 수 있다. 검증 전용 서버(`scripts/_library_verify_server.mjs`)가 운영 사본을 임시 폴더에 두고 가리킨다 — 검증 페이지의 자동 태그 저장이 운영 파일에 닿지 않는다.
 - `web_viewer/script.js`는 `resolvePostUrl()`과 `migrateLegacyTagKeys()`로 예전 Threads 키를 현재 canonical URL 키에 매핑한다. 이 덕분에 기존 태그를 유지하면서 `.threads.com` 기반으로 점진 전환할 수 있다.
 
 ### 서버 API surface
@@ -448,6 +454,10 @@ python scripts/rebuild_total.py             # 통합본 재생성
 - `tests/unit/test_migrate_threads_domain.py`
 - `tests/unit/test_web_viewer_resolve_post_url.py`
 - `tests/unit/test_web_viewer_auto_tagging.py`
+- `tests/unit/test_auto_tag.py` — 자료 카드 자동 태그 범위·볼트 분류 합류·정리 스크립트 규칙
+- `tests/unit/test_viewer_css_coverage.py` — 뷰어가 쓰는 Tailwind 유틸리티가 빌드 CSS·`style.css`에 정의돼 있는지
+- `tests/unit/test_web_viewer_library_preview.py` — 자료 카드 미리보기 줄바꿈·기호 제거
+- `tests/unit/test_viewer_state_paths.py` — 태그·카탈로그·사용자메타 경로 바꿔 끼우기
 - `tests/contract/test_schemas.py`
 - `tests/contract/test_api_surface.py`
 

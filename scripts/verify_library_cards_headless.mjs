@@ -262,11 +262,15 @@ try {
       title: document.getElementById('libraryNoteTitle')?.textContent?.trim() || '',
       bodyLength: document.getElementById('libraryNoteBody')?.textContent?.length || 0,
       obsidian: !!document.querySelector('#libraryNoteLinks [data-library-link="obsidian"]'),
+      // 보이는지만 보면 폭 제한이 통째로 무효여도 통과한다(실제로 1888px 로 퍼졌다).
+      // 계획: _docs/20260911_02 (W6 T6-b)
+      panelW: Math.round(document.querySelector('#libraryNoteModal > div')?.getBoundingClientRect().width || 0),
     }));
     record(
-      'W2-4 「읽기」 모달이 계산된 스타일로 보이고 본문이 렌더된다',
-      readState.open && readInfo.title === firstWeb.title && readInfo.bodyLength > 50 && readInfo.obsidian,
-      `opacity ${readState.opacity} · 제목 일치 ${readInfo.title === firstWeb.title} · 본문 ${readInfo.bodyLength}자`,
+      'W2-4 「읽기」 모달이 계산된 스타일로 보이고 본문이 렌더된다(패널 폭 ≤ 880px)',
+      readState.open && readInfo.title === firstWeb.title && readInfo.bodyLength > 50 && readInfo.obsidian
+        && readInfo.panelW > 0 && readInfo.panelW <= 881,
+      `opacity ${readState.opacity} · 제목 일치 ${readInfo.title === firstWeb.title} · 본문 ${readInfo.bodyLength}자 · 폭 ${readInfo.panelW}px`,
     );
     await shot(page, 'w2_read_modal');
     await closeLibraryModal(page);

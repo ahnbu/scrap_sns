@@ -5,9 +5,15 @@
  *   V1 벤치마킹을 켜고 이승필 칩을 누르면 그 사람 글이 전부 나온다 (칩 숫자 = 목록 수)
  *   V2 카드 이름 옆 제작자 아이콘이 있고, 누르면 카드가 열린다
  *   V3 카드에 채널·글 건수·프로필·「자료수집에서 열기」가 있다
- *   V4 「이 사람 글 전체 보기」가 그 계정으로 좁힌다
+ *   V4 「이 사람 글 전체 보기」가 그 사람 글(SNS + 자료) 전체로 좁힌다
+ *   V2b 제작자로 식별되지 않은 벤치마킹 계정은 여전히 옛 계정 카드를 연다
  *   V5 프로필 문서가 없는 계정에서도 카드가 깨지지 않는다
  *   V6 계정 목록의 결측 배지가 주소 없는 계정에만 뜬다
+ *
+ * 이승필은 벤치마킹 계정이자 제작자(creator_id)다. 2026-09-11 부터 제작자로 식별된
+ * 사람은 벤치마킹 계정 글도 제작자 카드(`data-creator-id`)를 연다 - 아이콘마다 다른
+ * 카드·다른 건수가 뜨던 것(빌더조쉬 49 vs 53)을 없앴다. 옛 계정 카드 경로는 V2b 가
+ * 제작자 아닌 계정으로 계속 본다. 계획: _docs/20260911_02 (W5 T5-c·T5-d)
  *
  * 판정은 사람 눈이 아니라 종료코드다 - 각 검사가 기대값과 대조하고, 하나라도
  * 어긋나면 exit 1 이다. 캡처는 증거로만 남긴다.
@@ -16,7 +22,7 @@
  * verify_benchmark_viewer_headless.mjs 처럼 전용 서버를 띄우지 않는다.
  *
  * Usage: node scripts/verify_creator_card_headless.mjs
- * 계획: _docs/20260910_01 (W1~W3 검증)
+ * 계획: _docs/20260910_01 (W1~W3 검증), _docs/20260911_02 (W5)
  */
 import fs from 'node:fs';
 import path from 'node:path';
@@ -25,6 +31,8 @@ import { pathToFileURL } from 'node:url';
 const BASE_URL = process.env.SNS_VIEWER_URL || 'http://localhost:5000';
 const EVIDENCE_DIR = path.join(process.cwd(), '_docs', 'evidence');
 const TARGET_ACCOUNT = 'seungpil';
+// 이승필의 제작자 id(볼트 프로필 파일명). 벤치마킹 계정 seungpil 과 같은 사람이다.
+const TARGET_CREATOR = '이승필_사용성연구소';
 
 fs.mkdirSync(EVIDENCE_DIR, { recursive: true });
 
@@ -93,17 +101,22 @@ try {
   );
   const v1Shot = await shot(page, 'v1_chip_filter');
 
-  // ── V2: 이름 옆 제작자 아이콘
-  const hasCreatorBtn = await page.evaluate(
-    (accountId) => !!document.querySelector(`[data-creator-account="${accountId}"]`),
-    TARGET_ACCOUNT,
+  // ── V2: 이름 옆 제작자 아이콘 — 제작자로 식별된 사람이라 제작자 카드(data-creator-id)를 연다
+  const iconInfo = await page.evaluate((creatorId) => ({
+    creator: document.querySelectorAll(`.glass-card [data-creator-id="${creatorId}"]`).length,
+    account: document.querySelectorAll('.glass-card [data-creator-account]').length,
+  }), TARGET_CREATOR);
+  record(
+    'V2 이름 옆 아이콘이 제작자 카드를 연다(옛 계정 카드 아님)',
+    iconInfo.creator > 0 && iconInfo.account === 0,
+    JSON.stringify(iconInfo),
   );
-  record('V2 이름 옆 제작자 아이콘이 있다', hasCreatorBtn);
 
-  await page.evaluate((accountId) => {
-    document.querySelector(`[data-creator-account="${accountId}"]`)?.click();
-  }, TARGET_ACCOUNT);
-  await page.waitForTimeout(1200);
+  await page.evaluate((creatorId) => {
+    document.querySelector(`[data-creator-id="${creatorId}"]`)?.click();
+  }, TARGET_CREATOR);
+  await page.waitForSelector('[data-creator-all]', { timeout: 15000 }).catch(() => {});
+  await page.waitForTimeout(600);
 
   // ── V3: 카드 내용
   const card = await page.evaluate(() => {
@@ -125,7 +138,7 @@ try {
       stats: [...(body?.querySelectorAll('.creator-stat') || [])].map((e) => e.textContent.trim()),
       hasProfileText: !!body?.querySelector('.creator-profile-text')?.textContent?.trim(),
       openHref: body?.querySelector('a.creator-open')?.getAttribute('href') || '',
-      hasFilterBtn: !!body?.querySelector('[data-creator-filter]'),
+      hasFilterBtn: !!body?.querySelector('[data-creator-all]'),
     };
   });
   record(
@@ -143,8 +156,14 @@ try {
   );
   const v3Shot = await shot(page, 'v3_creator_card');
 
-  // ── V4: 「이 사람 글 전체 보기」
-  await page.evaluate(() => document.querySelector('[data-creator-filter]')?.click());
+  // ── V4: 「이 사람 글 전체 보기」 — 제작자 필터라 그 사람의 SNS + 자료 전체다
+  // (사용자가 숨긴 글만 빠진다). 계획: _docs/20260911_02 (W5 T5-d)
+  const creatorCount = await page.evaluate(async (creatorId) => {
+    const posts = (await (await fetch('/api/posts')).json()).posts || [];
+    const meta = await (await fetch('/api/get-user-metadata')).json();
+    return posts.filter((p) => p.creator_id === creatorId && !(meta[p.post_key] || {}).hidden).length;
+  }, TARGET_CREATOR);
+  await page.evaluate(() => document.querySelector('[data-creator-all]')?.click());
   await page.waitForTimeout(1000);
   const afterFilter = await page.evaluate(async () => {
     for (let i = 0; i < 12; i += 1) {
@@ -157,11 +176,51 @@ try {
     return { count, modalClosed: !!modal && modal.classList.contains('hidden') };
   });
   record(
-    'V4 「이 사람 글 전체 보기」가 그 계정으로 좁힌다',
-    afterFilter.count === dataCount && afterFilter.modalClosed,
-    `${afterFilter.count}건 · 모달 닫힘 ${afterFilter.modalClosed}`,
+    'V4 「이 사람 글 전체 보기」가 그 사람 글(SNS + 자료) 전체로 좁힌다',
+    afterFilter.count === creatorCount && creatorCount >= dataCount && afterFilter.modalClosed,
+    `${afterFilter.count}건 · 기대 ${creatorCount}(벤치마킹 글 ${dataCount} 포함) · 모달 닫힘 ${afterFilter.modalClosed}`,
   );
   const v4Shot = await shot(page, 'v4_filter_applied');
+
+  // ── V2b: 제작자로 식별되지 않은 벤치마킹 계정은 여전히 옛 계정 카드를 연다
+  await page.evaluate(() => document.querySelector('.author-filter-badge')?.click());
+  await page.waitForTimeout(800);
+  const legacy = await page.evaluate(async () => {
+    const posts = (await (await fetch('/api/posts')).json()).posts || [];
+    const accounts = (await (await fetch('/api/get-benchmark-accounts')).json()).accounts || [];
+    const counts = new Map();
+    posts.forEach((p) => {
+      const id = (p.benchmark_accounts || [])[0];
+      if (!id || p.creator_id) return;
+      counts.set(id, (counts.get(id) || 0) + 1);
+    });
+    const withCreator = new Set(posts.filter((p) => p.creator_id).map((p) => (p.benchmark_accounts || [])[0]));
+    const pick = accounts
+      .filter((a) => a.status === 'active' && counts.get(a.id) && !withCreator.has(a.id))
+      .sort((a, b) => counts.get(b.id) - counts.get(a.id))[0];
+    return pick ? { id: pick.id, name: pick.name } : null;
+  });
+  let legacyInfo = { id: '', title: '' };
+  if (legacy) {
+    await page.evaluate(() => document.getElementById('benchmarkBtn')?.click());
+    await page.waitForTimeout(900);
+    await page.evaluate((name) => {
+      [...document.querySelectorAll('#benchmarkChipsRow .benchmark-chip')]
+        .find((c) => (c.textContent || '').startsWith(`${name} `))?.click();
+    }, legacy.name);
+    await page.waitForTimeout(900);
+    legacyInfo.id = await page.evaluate(() => document.querySelector('.glass-card .creator-btn')?.dataset.creatorAccount || '');
+    await page.evaluate(() => document.querySelector('.glass-card .creator-btn')?.click());
+    await page.waitForTimeout(1200);
+    legacyInfo.title = await page.evaluate(() => document.getElementById('creatorCardTitle')?.textContent?.trim() || '');
+    await page.evaluate(() => document.getElementById('closeCreatorCardModal')?.click());
+    await page.waitForTimeout(500);
+  }
+  record(
+    'V2b 제작자 아닌 벤치마킹 계정은 옛 계정 카드를 연다',
+    !!legacy && legacyInfo.id === legacy.id && legacyInfo.title === legacy.name,
+    legacy ? `${legacy.name}(${legacy.id}) · 아이콘 ${legacyInfo.id} · 제목 ${legacyInfo.title}` : '후보 없음',
+  );
 
   // ── V5: 프로필 문서가 없는 계정
   const noProfile = await page.evaluate(async () => {

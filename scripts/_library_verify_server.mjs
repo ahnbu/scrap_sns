@@ -52,6 +52,20 @@ export async function startLibraryVerifyServer(options = {}) {
   // 계정 연결 파일. 재시작 후 유지를 보려면 호출자가 작업 폴더 밖 경로를 넘긴다
   // (stop() 이 작업 폴더를 지우므로). 운영 web_viewer/sns_creator_links.json 은 쓰지 않는다.
   const linksPath = options.linksPath || path.join(workDir, 'sns_creator_links.json');
+  // 뷰어 상태 파일도 운영 사본을 작업 폴더에 두고 가리킨다. 검증 페이지는 로드 때 자동
+  // 태그를 적용해 태그 파일 전체를 저장하므로, 운영 파일을 같이 쓰면 표본 볼트 키가 운영
+  // 태그에 섞인다(2026-09-11 실측 4건 → 재실행으로 6건). 계획: _docs/20260911_02 (W2 T2-b)
+  const stateEnv = {};
+  for (const [envName, fileName] of [
+    ['SNS_TAGS_PATH', 'sns_tags.json'],
+    ['SNS_TAG_CATALOG_PATH', 'sns_tag_catalog.json'],
+    ['SNS_USER_METADATA_PATH', 'sns_user_metadata.json'],
+  ]) {
+    const source = path.join('web_viewer', fileName);
+    const target = path.join(workDir, fileName);
+    if (fs.existsSync(source)) fs.copyFileSync(source, target);
+    stateEnv[envName] = target;
+  }
 
   const child = spawn('python', ['scrap_sns_server.py'], {
     env: {
@@ -60,6 +74,7 @@ export async function startLibraryVerifyServer(options = {}) {
       SNS_LIBRARY_VAULT: vaultPath,
       SNS_LIBRARY_INDEX_PATH: indexPath,
       SNS_CREATOR_LINKS_PATH: linksPath,
+      ...stateEnv,
     },
     stdio: ['ignore', 'pipe', 'pipe'],
     windowsHide: true,

@@ -140,16 +140,23 @@ def build_thumbnail(post: dict) -> str | None:
     return f"https://wsrv.nl/?url={quote(first, safe='')}&output=webp"
 
 
+PREVIEW_CHARS = 200
+# 자료 카드(web·file)는 미리보기에서 첫 제목·구분선·마크다운 기호를 걷고 줄바꿈을 살려
+# 6줄을 보인다. 200자로는 걷어낸 뒤 3줄도 안 남는다. 계획: _docs/20260911_02 (W4 T4-c)
+LIBRARY_PREVIEW_CHARS = 600
+
+
 def build_post_meta(post: dict) -> dict:
     full_text = str(post.get("full_text") or "")
     media = post.get("media") or []
     local_images = post.get("local_images") or []
+    is_library = str(post.get("sns_platform") or "").lower() in ("web", "file")
 
     enriched = {
         **post,
         "post_key": build_post_key(post),
         "canonical_url": canonicalize_url(post),
-        "full_text_preview": full_text[:200],
+        "full_text_preview": full_text[:LIBRARY_PREVIEW_CHARS if is_library else PREVIEW_CHARS],
         "full_text_length": len(full_text),
         "media_count": len(media),
         "local_images_count": len(local_images),

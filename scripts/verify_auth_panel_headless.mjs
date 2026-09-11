@@ -118,6 +118,19 @@ async function main() {
         body: JSON.stringify({})
       });
     });
+    // 🔴 조회만 가짜로 바꾸고 저장을 실서버로 보내면, 새 프로필이 로드 때 자동 태그를
+    //    적용해 「빈 태그 + 자동 태그」로 운영 sns_tags.json 을 통째로 덮어쓴다(2026-09-11
+    //    SNS 태그 키 60건 유실·135건 축소 실측). 저장·자동 태그 요청도 가짜로 받는다.
+    //    계획: _docs/20260911_02 (§9 실행 중 발견)
+    for (const pattern of ['**/api/save-tags', '**/api/save-tag-catalog', '**/api/save-user-metadata']) {
+      await page.route(pattern, route => route.fulfill({
+        status: 200, contentType: 'application/json', body: JSON.stringify({ status: 'success' }),
+      }));
+    }
+    await page.route('**/api/auto-tag/apply', route => route.fulfill({
+      status: 200, contentType: 'application/json',
+      body: JSON.stringify({ url_to_auto_tags: {}, matched_post_count: 0, rule_count: 0 }),
+    }));
 
     await page.goto(BASE_URL, { waitUntil: 'domcontentloaded' });
     await page.evaluate(() => {

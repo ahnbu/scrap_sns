@@ -221,3 +221,9 @@ web_viewer/sns_library_index.json.tmp
 !scripts/_library_verify_server.mjs
 !scripts/build_creator_registry.py
 !scripts/creator_link_pilot.mjs
+
+# 자료수집 뷰어 후속개선 (계획 _docs/20260911_02)
+!scripts/verify_library_followup_headless.mjs
+!scripts/migrate_library_auto_tags.py
+# 태그 정리 스크립트의 적용 전 백업 (local-only). 이미 추적 중인 옛 백업 1건은 영향 없음
+web_viewer/sns_tags_*.bak.json

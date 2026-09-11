@@ -18,6 +18,7 @@ from datetime import datetime, timedelta, timezone
 from flask import Flask, jsonify, send_from_directory, request, abort
 from flask_cors import CORS
 from utils.post_meta import META_FIELDS, build_post_meta, canonicalize_url
+from utils.auto_tag import match_post as match_auto_tags
 from utils.library_index import (
     LIBRARY_PLATFORMS,
     build_library_posts,
@@ -876,8 +877,25 @@ def _get_latest_total_file():
     return files[0]
 
 
+def _state_path(env_name, file_name):
+    """뷰어 상태 파일 경로. 검증 전용 서버(scripts/_library_verify_server.mjs)가 운영 파일
+    대신 사본을 보게 환경변수로 바꿔 끼울 수 있다 - 검증 페이지는 로드 때 자동 태그를 적용해
+    태그 파일 전체를 저장하므로, 운영 파일을 같이 쓰면 표본 볼트 키가 섞인다.
+    계획: _docs/20260911_02 (W2 T2-a)"""
+    override = os.environ.get(env_name, "").strip()
+    return os.path.abspath(override) if override else os.path.join(WEB_VIEWER_DIR, file_name)
+
+
 def _get_user_metadata_path():
-    return os.path.join(WEB_VIEWER_DIR, "sns_user_metadata.json")
+    return _state_path("SNS_USER_METADATA_PATH", "sns_user_metadata.json")
+
+
+def _get_tags_path():
+    return _state_path("SNS_TAGS_PATH", "sns_tags.json")
+
+
+def _get_tag_catalog_path():
+    return _state_path("SNS_TAG_CATALOG_PATH", "sns_tag_catalog.json")
 
 
 def _get_file_state(path):
@@ -1029,7 +1047,7 @@ def _load_latest_posts():
 @app.route('/api/get-tags', methods=['GET'])
 def get_tags():
     try:
-        export_path = os.path.join(WEB_VIEWER_DIR, "sns_tags.json")
+        export_path = _get_tags_path()
         if not os.path.exists(export_path):
             return jsonify({})
         with open(export_path, 'r', encoding='utf-8') as f:
@@ -1049,7 +1067,7 @@ def save_tags():
             return jsonify({"status": "error", "message": "Invalid data format: expected JSON object"}), 400
         if not os.path.exists(WEB_VIEWER_DIR):
             os.makedirs(WEB_VIEWER_DIR)
-        export_path = os.path.join(WEB_VIEWER_DIR, "sns_tags.json")
+        export_path = _get_tags_path()
         with open(export_path, 'w', encoding='utf-8') as f:
             json.dump(data, f, indent=4, ensure_ascii=False, sort_keys=True)
         return jsonify({"status": "success", "message": "Tags saved successfully"})
@@ -1060,7 +1078,7 @@ def save_tags():
 @app.route('/api/get-tag-catalog', methods=['GET'])
 def get_tag_catalog():
     try:
-        export_path = os.path.join(WEB_VIEWER_DIR, "sns_tag_catalog.json")
+        export_path = _get_tag_catalog_path()
         if not os.path.exists(export_path):
             return jsonify({})
         with open(export_path, 'r', encoding='utf-8') as f:
@@ -1082,7 +1100,7 @@ def save_tag_catalog():
             return jsonify({"status": "error", "message": "Invalid data format: expected JSON object"}), 400
         if not os.path.exists(WEB_VIEWER_DIR):
             os.makedirs(WEB_VIEWER_DIR)
-        export_path = os.path.join(WEB_VIEWER_DIR, "sns_tag_catalog.json")
+        export_path = _get_tag_catalog_path()
         with open(export_path, 'w', encoding='utf-8') as f:
             json.dump(data, f, indent=4, ensure_ascii=False, sort_keys=True)
         return jsonify({"status": "success", "message": "Tag catalog saved successfully"})
@@ -1103,7 +1121,7 @@ def _atomic_write_json(path, data):
 @app.route("/api/get-user-metadata", methods=["GET"])
 def get_user_metadata():
     try:
-        export_path = os.path.join(WEB_VIEWER_DIR, "sns_user_metadata.json")
+        export_path = _get_user_metadata_path()
         if not os.path.exists(export_path):
             return jsonify({})
         with open(export_path, "r", encoding="utf-8") as f:
@@ -1552,7 +1570,7 @@ def save_user_metadata():
             return jsonify({"status": "error", "message": "No data received"}), 400
         if not isinstance(data, dict):
             return jsonify({"status": "error", "message": "Invalid data format: expected JSON object"}), 400
-        export_path = os.path.join(WEB_VIEWER_DIR, "sns_user_metadata.json")
+        export_path = _get_user_metadata_path()
         _atomic_write_json(export_path, data)
         return jsonify({"status": "success", "message": "User metadata saved successfully"})
     except Exception:
@@ -2108,34 +2126,10 @@ def apply_auto_tags():
         cache = _load_latest_posts()
         url_to_auto_tags = {}
 
+        # 규칙 정본은 utils/auto_tag.py 다 - 자료 카드는 제목 + 앞 800자만 훑고 볼트 주제·
+        # 노트 태그를 더한다. 정리 스크립트가 같은 함수를 쓴다. 계획: _docs/20260911_02 (W3 T3-b)
         for post in cache["posts_full"]:
-            matched_tags = []
-            for rule in rules:
-                if not isinstance(rule, dict):
-                    continue
-
-                keyword = str(rule.get("keyword") or "").strip().lower()
-                tag = str(rule.get("tag") or "").strip()
-                match_field = str(rule.get("match_field") or "all").strip().lower()
-                if not keyword or not tag:
-                    continue
-
-                haystack_parts = [
-                    str(post.get("full_text") or ""),
-                    str(post.get("_user_note") or ""),
-                ]
-                if match_field == "all":
-                    haystack_parts.extend(
-                        [
-                            str(post.get("display_name") or ""),
-                            str(post.get("username") or post.get("user") or ""),
-                        ]
-                    )
-                haystack = " ".join(part for part in haystack_parts if part).lower()
-
-                if keyword in haystack and tag not in matched_tags:
-                    matched_tags.append(tag)
-
+            matched_tags = match_auto_tags(post, rules)
             if matched_tags:
                 url_to_auto_tags[post["canonical_url"]] = matched_tags
 
